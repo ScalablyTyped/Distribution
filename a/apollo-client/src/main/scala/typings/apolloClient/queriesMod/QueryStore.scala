@@ -1,7 +1,7 @@
 package typings.apolloClient.queriesMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.apolloClient.AnonDocumentFetchMoreForQueryId
+import typings.apolloClient.AnonFetchMoreForQueryId
 import typings.graphql.executeMod.ExecutionResult
 import typings.graphql.executeMod.ExecutionResultDataDefault
 import typings.std.Error
@@ -15,7 +15,7 @@ class QueryStore () extends js.Object {
   var store: js.Any = js.native
   def get(queryId: String): QueryStoreValue = js.native
   def getStore(): StringDictionary[QueryStoreValue] = js.native
-  def initQuery(query: AnonDocumentFetchMoreForQueryId): Unit = js.native
+  def initQuery(query: AnonFetchMoreForQueryId): Unit = js.native
   def markQueryError(queryId: String, error: Error): Unit = js.native
   def markQueryError(queryId: String, error: Error, fetchMoreForQueryId: String): Unit = js.native
   def markQueryResult(queryId: String, result: ExecutionResult[ExecutionResultDataDefault]): Unit = js.native

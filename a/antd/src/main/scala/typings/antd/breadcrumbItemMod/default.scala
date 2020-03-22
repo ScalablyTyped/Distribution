@@ -1,6 +1,5 @@
 package typings.antd.breadcrumbItemMod
 
-import typings.antd.AnonHrefPrefixCls
 import typings.antd.AnonSeparator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,6 +15,5 @@ class default () extends BreadcrumbItem
 object default extends js.Object {
   var __ANT_BREADCRUMB_ITEM: Boolean = js.native
   var defaultProps: AnonSeparator = js.native
-  var propTypes: AnonHrefPrefixCls = js.native
 }
 

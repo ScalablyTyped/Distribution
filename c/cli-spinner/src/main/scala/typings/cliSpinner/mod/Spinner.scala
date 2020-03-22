@@ -1,6 +1,6 @@
 package typings.cliSpinner.mod
 
-import typings.cliSpinner.TypeofClassSpinner
+import typings.cliSpinner.TypeofSpinner
 import typings.node.NodeJS.WritableStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -27,8 +27,8 @@ class Spinner () extends js.Object {
 @JSImport("cli-spinner", "Spinner")
 @js.native
 object Spinner extends js.Object {
-  def setDefaultSpinnerDelay(spinnerDelay: Double): TypeofClassSpinner = js.native
-  def setDefaultSpinnerString(spinnerString: String): TypeofClassSpinner = js.native
-  def setDefaultSpinnerString(spinnerString: Double): TypeofClassSpinner = js.native
+  def setDefaultSpinnerDelay(spinnerDelay: Double): TypeofSpinner = js.native
+  def setDefaultSpinnerString(spinnerString: String): TypeofSpinner = js.native
+  def setDefaultSpinnerString(spinnerString: Double): TypeofSpinner = js.native
 }
 

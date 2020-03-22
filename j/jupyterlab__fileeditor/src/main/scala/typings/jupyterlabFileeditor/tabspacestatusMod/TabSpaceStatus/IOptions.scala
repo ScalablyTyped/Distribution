@@ -1,6 +1,6 @@
 package typings.jupyterlabFileeditor.tabspacestatusMod.TabSpaceStatus
 
-import typings.phosphorWidgets.mod.Menu
+import typings.luminoWidgets.mod.Menu
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

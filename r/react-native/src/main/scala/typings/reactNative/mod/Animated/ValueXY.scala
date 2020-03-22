@@ -2,7 +2,7 @@ package typings.reactNative.mod.Animated
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.reactNative.AnonX
-import typings.reactNative.AnonXY
+import typings.reactNative.AnonY
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ValueXY ()
   extends typings.reactNative.mod.Animated.Animated {
-  def this(valueIn: AnonXY) = this()
+  def this(valueIn: AnonY) = this()
   var x: AnimatedValue = js.native
   var y: AnimatedValue = js.native
   def addListener(callback: ValueXYListenerCallback): String = js.native

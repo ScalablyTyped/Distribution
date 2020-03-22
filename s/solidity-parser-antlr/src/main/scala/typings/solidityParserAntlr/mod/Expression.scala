@@ -27,20 +27,6 @@ trait Expression extends ASTNode
 
 object Expression {
   @scala.inline
-  def Conditional(
-    falseExpression: ASTNode,
-    trueExpression: ASTNode,
-    `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.Conditional,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): Expression = {
-    val __obj = js.Dynamic.literal(falseExpression = falseExpression.asInstanceOf[js.Any], trueExpression = trueExpression.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Expression]
-  }
-  @scala.inline
   def NumberLiteral(
     number: String,
     `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.NumberLiteral,
@@ -70,15 +56,43 @@ object Expression {
     __obj.asInstanceOf[Expression]
   }
   @scala.inline
-  def BinaryOperation(
-    left: Expression,
-    operator: BinOp,
-    right: Expression,
-    `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.BinaryOperation,
+  def FunctionCall(
+    arguments: js.Array[Expression],
+    expression: Expression,
+    names: js.Array[String],
+    `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.FunctionCall,
     loc: Location = null,
     range: js.Tuple2[Double, Double] = null
   ): Expression = {
-    val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], expression = expression.asInstanceOf[js.Any], names = names.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Expression]
+  }
+  @scala.inline
+  def MemberAccess(
+    expression: Expression,
+    memberName: String,
+    `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.MemberAccess,
+    loc: Location = null,
+    range: js.Tuple2[Double, Double] = null
+  ): Expression = {
+    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], memberName = memberName.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Expression]
+  }
+  @scala.inline
+  def Conditional(
+    falseExpression: ASTNode,
+    trueExpression: ASTNode,
+    `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.Conditional,
+    loc: Location = null,
+    range: js.Tuple2[Double, Double] = null
+  ): Expression = {
+    val __obj = js.Dynamic.literal(falseExpression = falseExpression.asInstanceOf[js.Any], trueExpression = trueExpression.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
@@ -93,21 +107,6 @@ object Expression {
     range: js.Tuple2[Double, Double] = null
   ): Expression = {
     val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Expression]
-  }
-  @scala.inline
-  def FunctionCall(
-    arguments: js.Array[Expression],
-    expression: Expression,
-    names: js.Array[String],
-    `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.FunctionCall,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): Expression = {
-    val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], expression = expression.asInstanceOf[js.Any], names = names.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
@@ -140,20 +139,6 @@ object Expression {
     __obj.asInstanceOf[Expression]
   }
   @scala.inline
-  def MemberAccess(
-    expression: Expression,
-    memberName: String,
-    `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.MemberAccess,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): Expression = {
-    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], memberName = memberName.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Expression]
-  }
-  @scala.inline
   def Identifier(
     name: String,
     `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.Identifier,
@@ -161,6 +146,21 @@ object Expression {
     range: js.Tuple2[Double, Double] = null
   ): Expression = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Expression]
+  }
+  @scala.inline
+  def BinaryOperation(
+    left: Expression,
+    operator: BinOp,
+    right: Expression,
+    `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.BinaryOperation,
+    loc: Location = null,
+    range: js.Tuple2[Double, Double] = null
+  ): Expression = {
+    val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])

@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ionic/angular/dist/directives/control-value-accessors/text-value-accessor", JSImport.Namespace)
+@JSImport("@ionic/angular/directives/control-value-accessors/text-value-accessor", JSImport.Namespace)
 @js.native
 object textValueAccessorMod extends js.Object {
   @js.native

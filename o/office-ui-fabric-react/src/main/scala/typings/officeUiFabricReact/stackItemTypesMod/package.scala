@@ -13,7 +13,6 @@ package object stackItemTypesMod {
     js.Object
   ]
   type IStackItemSlot = typings.uifabricFoundation.libIslotsMod.ISlotProp[typings.officeUiFabricReact.stackItemTypesMod.IStackItemProps, scala.Nothing]
-  type IStackItemStyles = typings.uifabricFoundation.libIcomponentMod.IComponentStyles[typings.officeUiFabricReact.stackItemTypesMod.IStackItemSlots]
   type IStackItemStylesReturnType = typings.std.ReturnType[
     typings.std.Extract[
       typings.uifabricFoundation.libIcomponentMod.IStylesFunctionOrObject[

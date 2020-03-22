@@ -51,10 +51,7 @@ object vectorBooleanMod extends js.Object {
       * @param first Input iterator of the first position.
       * @param last Input iteartor of the last position.
       */
-    def this(
-      first: IForwardIterator[Boolean, IForwardIterator[Boolean, _]],
-      last: IForwardIterator[Boolean, IForwardIterator[Boolean, _]]
-    ) = this()
+    def this(first: ReadonlyIForwardIteratorb, last: ReadonlyIForwardIteratorb) = this()
     /**
       * Fill Constructor.
       *

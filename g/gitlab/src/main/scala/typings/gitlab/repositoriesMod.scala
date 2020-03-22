@@ -26,9 +26,9 @@ object repositoriesMod extends js.Object {
     def mergeBase(projectId: Double, refs: js.Array[String]): js.Promise[GetResponse] = js.native
     def mergeBase(projectId: Double, refs: js.Array[String], options: Sudo): js.Promise[GetResponse] = js.native
     def showArchive(projectId: String): js.Promise[GetResponse] = js.native
-    def showArchive(projectId: String, options: AnonShaString with Sudo): js.Promise[GetResponse] = js.native
+    def showArchive(projectId: String, options: shastringSudo): js.Promise[GetResponse] = js.native
     def showArchive(projectId: Double): js.Promise[GetResponse] = js.native
-    def showArchive(projectId: Double, options: AnonShaString with Sudo): js.Promise[GetResponse] = js.native
+    def showArchive(projectId: Double, options: shastringSudo): js.Promise[GetResponse] = js.native
     def showBlob(projectId: String, sha: String): js.Promise[GetResponse] = js.native
     def showBlob(projectId: String, sha: String, options: Sudo): js.Promise[GetResponse] = js.native
     def showBlob(projectId: Double, sha: String): js.Promise[GetResponse] = js.native

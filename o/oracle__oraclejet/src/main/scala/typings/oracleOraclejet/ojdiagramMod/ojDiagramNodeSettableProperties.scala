@@ -1,7 +1,7 @@
 package typings.oracleOraclejet.ojdiagramMod
 
-import typings.oracleOraclejet.AnonBorderColorBorderRadiusBorderWidth
-import typings.oracleOraclejet.AnonIconAnonCircle
+import typings.oracleOraclejet.AnonIconAnonShape
+import typings.oracleOraclejet.AnonOpacity
 import typings.oracleOraclejet.mod.JetSettableProperties
 import typings.oracleOraclejet.oracleOraclejetStrings.auto
 import typings.oracleOraclejet.oracleOraclejetStrings.connected
@@ -16,10 +16,10 @@ import scala.scalajs.js.annotation._
 trait ojDiagramNodeSettableProperties extends JetSettableProperties {
   var categories: js.UndefOr[js.Array[String]] = js.undefined
   var descendantsConnectivity: js.UndefOr[connected | disjoint | unknown] = js.undefined
-  var icon: js.UndefOr[AnonBorderColorBorderRadiusBorderWidth] = js.undefined
+  var icon: js.UndefOr[AnonOpacity] = js.undefined
   var label: js.UndefOr[String] = js.undefined
   var labelStyle: js.UndefOr[js.Object | Null] = js.undefined
-  var overview: js.UndefOr[AnonIconAnonCircle] = js.undefined
+  var overview: js.UndefOr[AnonIconAnonShape] = js.undefined
   var selectable: js.UndefOr[auto | off] = js.undefined
   var shortDesc: js.UndefOr[String] = js.undefined
   var showDisclosure: js.UndefOr[on | off] = js.undefined
@@ -30,10 +30,10 @@ object ojDiagramNodeSettableProperties {
   def apply(
     categories: js.Array[String] = null,
     descendantsConnectivity: connected | disjoint | unknown = null,
-    icon: AnonBorderColorBorderRadiusBorderWidth = null,
+    icon: AnonOpacity = null,
     label: String = null,
     labelStyle: js.Object = null,
-    overview: AnonIconAnonCircle = null,
+    overview: AnonIconAnonShape = null,
     selectable: auto | off = null,
     shortDesc: String = null,
     showDisclosure: on | off = null

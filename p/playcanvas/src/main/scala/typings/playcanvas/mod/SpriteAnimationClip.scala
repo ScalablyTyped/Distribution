@@ -1,6 +1,6 @@
 package typings.playcanvas.mod
 
-import typings.playcanvas.AnonFpsLoop
+import typings.playcanvas.AnonLoop
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,6 +28,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class SpriteAnimationClip protected ()
   extends typings.playcanvas.pc.SpriteAnimationClip {
-  def this(component: typings.playcanvas.pc.SpriteComponent, data: AnonFpsLoop) = this()
+  def this(component: typings.playcanvas.pc.SpriteComponent, data: AnonLoop) = this()
 }
 

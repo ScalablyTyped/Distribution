@@ -1,14 +1,14 @@
 package typings.yandexMoneySdk.YandexMoneySDK.Wallet
 
 import typings.yandexMoneySdk.AnonArticle
-import typings.yandexMoneySdk.AnonKey
+import typings.yandexMoneySdk.AnonDictkey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ProcessPaymentResult extends js.Object {
   var account_unblock_uri: js.UndefOr[String] = js.undefined
-  var acs_params: js.UndefOr[AnonKey] = js.undefined
+  var acs_params: js.UndefOr[AnonDictkey] = js.undefined
   var acs_uri: js.UndefOr[String] = js.undefined
   var balance: js.UndefOr[Double] = js.undefined
   var credit_amount: js.UndefOr[Double] = js.undefined
@@ -28,7 +28,7 @@ object ProcessPaymentResult {
   def apply(
     status: String,
     account_unblock_uri: String = null,
-    acs_params: AnonKey = null,
+    acs_params: AnonDictkey = null,
     acs_uri: String = null,
     balance: Int | Double = null,
     credit_amount: Int | Double = null,

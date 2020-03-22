@@ -1,7 +1,7 @@
 
 # Scala.js typings for ecol
 
-Typings are for version 1.1.0
+Typings are for version 1.1.1
 
 ## Library description:
 Event Collections

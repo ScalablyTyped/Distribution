@@ -1,7 +1,7 @@
 package typings.firefoxWebextBrowser.browser.contextMenus
 
 import org.scalablytyped.runtime.TopLevel
-import typings.firefoxWebextBrowser.AnonContexts
+import typings.firefoxWebextBrowser.AnonEditable
 import typings.firefoxWebextBrowser.WebExtEvent
 import typings.firefoxWebextBrowser.browser.tabs.Tab
 import scala.scalajs.js
@@ -19,5 +19,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("browser.contextMenus.onShown")
 @js.native
 object onShown
-  extends TopLevel[WebExtEvent[js.Function2[/* info */ AnonContexts, /* tab */ Tab, Unit]]]
+  extends TopLevel[WebExtEvent[js.Function2[/* info */ AnonEditable, /* tab */ Tab, Unit]]]
 

@@ -1,7 +1,7 @@
 package typings.algoliasearch.mod
 
 import typings.algoliasearch.AnonAnchoring
-import typings.algoliasearch.AnonParams
+import typings.algoliasearch.AnonPromote
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +17,7 @@ trait Rule extends js.Object {
   /**
     * Consequence of the rule. At least one of the following must be used:
     */
-  var consequence: AnonParams
+  var consequence: AnonPromote
   /**
     * This field is intended for rule management purposes,
     * in particular to ease searching for rules and presenting them to human readers.
@@ -33,7 +33,7 @@ trait Rule extends js.Object {
 object Rule {
   @scala.inline
   def apply(
-    consequence: AnonParams,
+    consequence: AnonPromote,
     objectID: String,
     condition: AnonAnchoring = null,
     description: String = null

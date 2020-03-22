@@ -1,6 +1,6 @@
 package typings.hapiWreck.mod
 
-import typings.hapiWreck.AnonReq
+import typings.hapiWreck.PromiseIncomingMessagereq
 import typings.hapiWreck.mod.Client.Agents
 import typings.hapiWreck.mod.Client.Events
 import typings.hapiWreck.mod.Client.Options
@@ -128,8 +128,8 @@ trait Client_ extends js.Object {
     * 
     * @returns a promise resolving into an HTTP response object with a 'req' property holding a reference to the HTTP request object.
     */
-  def request(method: String, url: String): js.Promise[IncomingMessage] with AnonReq = js.native
-  def request(method: String, url: String, options: typings.hapiWreck.mod.Client.request.Options): js.Promise[IncomingMessage] with AnonReq = js.native
+  def request(method: String, url: String): PromiseIncomingMessagereq = js.native
+  def request(method: String, url: String, options: typings.hapiWreck.mod.Client.request.Options): PromiseIncomingMessagereq = js.native
   /**
     * Converts a buffer, string, or an array of them into a readable stream.
     * 

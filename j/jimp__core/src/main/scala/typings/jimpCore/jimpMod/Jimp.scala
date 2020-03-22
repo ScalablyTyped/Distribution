@@ -126,11 +126,16 @@ trait Jimp extends JimpConstructors {
   def parseBitmap(data: Buffer, path: String, cb: ImageCallback[this.type]): Unit = js.native
   def parseBitmap(data: Buffer, path: Null, cb: ImageCallback[this.type]): Unit = js.native
   def read(data: Buffer): js.Promise[this.type] = js.native
+  def read(data: Buffer, cb: ImageCallback[this.type]): js.Promise[this.type] = js.native
   def read(image: Jimp): js.Promise[this.type] = js.native
+  def read(image: Jimp, cb: ImageCallback[this.type]): js.Promise[this.type] = js.native
   def read(path: String): js.Promise[this.type] = js.native
+  def read(path: String, cb: ImageCallback[this.type]): js.Promise[this.type] = js.native
   def read(w: Double, h: Double): js.Promise[this.type] = js.native
   def read(w: Double, h: Double, background: String): js.Promise[this.type] = js.native
+  def read(w: Double, h: Double, background: String, cb: ImageCallback[this.type]): js.Promise[this.type] = js.native
   def read(w: Double, h: Double, background: Double): js.Promise[this.type] = js.native
+  def read(w: Double, h: Double, background: Double, cb: ImageCallback[this.type]): js.Promise[this.type] = js.native
   def rgba(bool: Boolean): this.type = js.native
   def rgba(bool: Boolean, cb: ImageCallback[this.type]): this.type = js.native
   def rgbaToInt(r: Double, g: Double, b: Double, a: Double, cb: GenericCallback[Double, _, this.type]): Double = js.native

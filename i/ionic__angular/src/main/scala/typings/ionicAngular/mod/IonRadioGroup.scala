@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/angular", "IonRadioGroup")
 @js.native
 class IonRadioGroup protected ()
-  extends typings.ionicAngular.distMod.IonRadioGroup {
+  extends typings.ionicAngular.proxiesMod.IonRadioGroup {
   def this(c: ChangeDetectorRef, r: ElementRef[_], z: NgZone) = this()
 }
 

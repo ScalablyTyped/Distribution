@@ -5,6 +5,7 @@ import typings.baseui.baseuiStrings.compact
 import typings.baseui.baseuiStrings.default_
 import typings.baseui.baseuiStrings.large_
 import typings.baseui.baseuiStrings.left
+import typings.baseui.baseuiStrings.mini
 import typings.baseui.baseuiStrings.none
 import typings.baseui.baseuiStrings.right
 import typings.react.mod.FocusEvent
@@ -45,7 +46,7 @@ trait BaseInputProps[T] extends js.Object {
   var positive: js.UndefOr[Boolean] = js.undefined
   var required: js.UndefOr[Boolean] = js.undefined
   var rows: js.UndefOr[Double] = js.undefined
-  var size: js.UndefOr[default_ | compact | large_] = js.undefined
+  var size: js.UndefOr[mini | default_ | compact | large_] = js.undefined
   var `type`: js.UndefOr[String] = js.undefined
   var value: js.UndefOr[String] = js.undefined
 }
@@ -79,7 +80,7 @@ object BaseInputProps {
     positive: js.UndefOr[Boolean] = js.undefined,
     required: js.UndefOr[Boolean] = js.undefined,
     rows: Int | Double = null,
-    size: default_ | compact | large_ = null,
+    size: mini | default_ | compact | large_ = null,
     `type`: String = null,
     value: String = null
   ): BaseInputProps[T] = {

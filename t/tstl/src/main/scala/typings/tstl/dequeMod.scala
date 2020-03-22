@@ -1,6 +1,8 @@
 package typings.tstl
 
 import org.scalablytyped.runtime.Instantiable0
+import typings.std.IterableIterator
+import typings.std.IteratorResult
 import typings.tstl.arrayContainerMod.ArrayContainer
 import typings.tstl.arrayIteratorMod.ArrayIterator
 import typings.tstl.arrayReverseIteratorMod.ArrayReverseIterator
@@ -185,6 +187,18 @@ object dequeMod extends js.Object {
   /* static members */
   @js.native
   object Deque extends js.Object {
+    /**
+      * @internal
+      */
+    @js.native
+    class ForOfAdaptor[T] protected () extends IterableIterator[T] {
+      def this(matrix: js.Array[js.Array[T]]) = this()
+      var col_ : js.Any = js.native
+      var matrix_ : js.Any = js.native
+      var row_ : js.Any = js.native
+      def next(): IteratorResult[T, _] = js.native
+    }
+    
     val Iterator: Instantiable0[
         ArrayIterator[
           js.Object, 

@@ -2,7 +2,7 @@ package typings.gapiClientCloudbilling.gapi.client.cloudbilling
 
 import typings.gapiClient.gapi.client.Request_
 import typings.gapiClientCloudbilling.AnonAccesstoken
-import typings.gapiClientCloudbilling.AnonAccesstokenAlt
+import typings.gapiClientCloudbilling.AnonAlt
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ trait ProjectsResource extends js.Object {
     * project](https://cloud.google.com/docs/permissions-overview#h.bgs0oxofvnoo
     * ).
     */
-  def getBillingInfo(request: AnonAccesstokenAlt): Request_[ProjectBillingInfo]
+  def getBillingInfo(request: AnonAlt): Request_[ProjectBillingInfo]
   /**
     * Lists the projects associated with a billing account. The current
     * authenticated user must be an [owner of the billing
@@ -54,15 +54,15 @@ trait ProjectsResource extends js.Object {
     * disable billing, you should always call this method with the name of an
     * &#42;open&#42; billing account.
     */
-  def updateBillingInfo(request: AnonAccesstokenAlt): Request_[ProjectBillingInfo]
+  def updateBillingInfo(request: AnonAlt): Request_[ProjectBillingInfo]
 }
 
 object ProjectsResource {
   @scala.inline
   def apply(
-    getBillingInfo: AnonAccesstokenAlt => Request_[ProjectBillingInfo],
+    getBillingInfo: AnonAlt => Request_[ProjectBillingInfo],
     list: AnonAccesstoken => Request_[ListProjectBillingInfoResponse],
-    updateBillingInfo: AnonAccesstokenAlt => Request_[ProjectBillingInfo]
+    updateBillingInfo: AnonAlt => Request_[ProjectBillingInfo]
   ): ProjectsResource = {
     val __obj = js.Dynamic.literal(getBillingInfo = js.Any.fromFunction1(getBillingInfo), list = js.Any.fromFunction1(list), updateBillingInfo = js.Any.fromFunction1(updateBillingInfo))
   

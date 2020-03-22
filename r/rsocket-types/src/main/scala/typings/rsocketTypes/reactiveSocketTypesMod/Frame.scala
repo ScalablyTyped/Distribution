@@ -41,10 +41,42 @@ trait Frame extends js.Object
 
 object Frame {
   @scala.inline
-  def CancelFrame(flags: Double, streamId: Double, `type`: `0x09`, length: Int | Double = null): Frame = {
-    val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any], streamId = streamId.asInstanceOf[js.Any])
+  def KeepAliveFrame(
+    flags: Double,
+    lastReceivedPosition: Double,
+    streamId: `0`,
+    `type`: `0x03`,
+    data: Encodable = null,
+    length: Int | Double = null
+  ): Frame = {
+    val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any], lastReceivedPosition = lastReceivedPosition.asInstanceOf[js.Any], streamId = streamId.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Frame]
+  }
+  @scala.inline
+  def SetupFrame(
+    dataMimeType: String,
+    flags: Double,
+    keepAlive: Double,
+    lifetime: Double,
+    majorVersion: Double,
+    metadataMimeType: String,
+    minorVersion: Double,
+    streamId: `0`,
+    `type`: `0x01`,
+    data: Encodable = null,
+    length: Int | Double = null,
+    metadata: Encodable = null,
+    resumeToken: Encodable = null
+  ): Frame = {
+    val __obj = js.Dynamic.literal(dataMimeType = dataMimeType.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], keepAlive = keepAlive.asInstanceOf[js.Any], lifetime = lifetime.asInstanceOf[js.Any], majorVersion = majorVersion.asInstanceOf[js.Any], metadataMimeType = metadataMimeType.asInstanceOf[js.Any], minorVersion = minorVersion.asInstanceOf[js.Any], streamId = streamId.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (resumeToken != null) __obj.updateDynamic("resumeToken")(resumeToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[Frame]
   }
   @scala.inline
@@ -59,21 +91,6 @@ object Frame {
   ): Frame = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], requestN = requestN.asInstanceOf[js.Any], streamId = streamId.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Frame]
-  }
-  @scala.inline
-  def KeepAliveFrame(
-    flags: Double,
-    lastReceivedPosition: Double,
-    streamId: `0`,
-    `type`: `0x03`,
-    data: Encodable = null,
-    length: Int | Double = null
-  ): Frame = {
-    val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any], lastReceivedPosition = lastReceivedPosition.asInstanceOf[js.Any], streamId = streamId.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
     __obj.asInstanceOf[Frame]
   }
@@ -96,6 +113,30 @@ object Frame {
   ): Frame = {
     val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any], requestCount = requestCount.asInstanceOf[js.Any], streamId = streamId.asInstanceOf[js.Any], ttl = ttl.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Frame]
+  }
+  @scala.inline
+  def CancelFrame(flags: Double, streamId: Double, `type`: `0x09`, length: Int | Double = null): Frame = {
+    val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any], streamId = streamId.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Frame]
+  }
+  @scala.inline
+  def RequestChannelFrame(
+    flags: Double,
+    requestN: Double,
+    streamId: Double,
+    `type`: `0x07`,
+    data: Encodable = null,
+    length: Int | Double = null,
+    metadata: Encodable = null
+  ): Frame = {
+    val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any], requestN = requestN.asInstanceOf[js.Any], streamId = streamId.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[Frame]
@@ -134,46 +175,6 @@ object Frame {
     __obj.asInstanceOf[Frame]
   }
   @scala.inline
-  def PayloadFrame(
-    flags: Double,
-    streamId: Double,
-    `type`: `0x0a`,
-    data: Encodable = null,
-    length: Int | Double = null,
-    metadata: Encodable = null
-  ): Frame = {
-    val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any], streamId = streamId.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Frame]
-  }
-  @scala.inline
-  def SetupFrame(
-    dataMimeType: String,
-    flags: Double,
-    keepAlive: Double,
-    lifetime: Double,
-    majorVersion: Double,
-    metadataMimeType: String,
-    minorVersion: Double,
-    streamId: `0`,
-    `type`: `0x01`,
-    data: Encodable = null,
-    length: Int | Double = null,
-    metadata: Encodable = null,
-    resumeToken: Encodable = null
-  ): Frame = {
-    val __obj = js.Dynamic.literal(dataMimeType = dataMimeType.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], keepAlive = keepAlive.asInstanceOf[js.Any], lifetime = lifetime.asInstanceOf[js.Any], majorVersion = majorVersion.asInstanceOf[js.Any], metadataMimeType = metadataMimeType.asInstanceOf[js.Any], minorVersion = minorVersion.asInstanceOf[js.Any], streamId = streamId.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (resumeToken != null) __obj.updateDynamic("resumeToken")(resumeToken.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Frame]
-  }
-  @scala.inline
   def RequestFnfFrame(
     flags: Double,
     streamId: Double,
@@ -197,6 +198,29 @@ object Frame {
     __obj.asInstanceOf[Frame]
   }
   @scala.inline
+  def ResumeOkFrame(clientPosition: Double, flags: Double, streamId: `0`, `type`: `0x0e`, length: Int | Double = null): Frame = {
+    val __obj = js.Dynamic.literal(clientPosition = clientPosition.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], streamId = streamId.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Frame]
+  }
+  @scala.inline
+  def PayloadFrame(
+    flags: Double,
+    streamId: Double,
+    `type`: `0x0a`,
+    data: Encodable = null,
+    length: Int | Double = null,
+    metadata: Encodable = null
+  ): Frame = {
+    val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any], streamId = streamId.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Frame]
+  }
+  @scala.inline
   def ErrorFrame(
     code: Double,
     flags: Double,
@@ -206,30 +230,6 @@ object Frame {
     length: Int | Double = null
   ): Frame = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], streamId = streamId.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Frame]
-  }
-  @scala.inline
-  def RequestChannelFrame(
-    flags: Double,
-    requestN: Double,
-    streamId: Double,
-    `type`: `0x07`,
-    data: Encodable = null,
-    length: Int | Double = null,
-    metadata: Encodable = null
-  ): Frame = {
-    val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any], requestN = requestN.asInstanceOf[js.Any], streamId = streamId.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Frame]
-  }
-  @scala.inline
-  def ResumeOkFrame(clientPosition: Double, flags: Double, streamId: `0`, `type`: `0x0e`, length: Int | Double = null): Frame = {
-    val __obj = js.Dynamic.literal(clientPosition = clientPosition.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], streamId = streamId.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
     __obj.asInstanceOf[Frame]

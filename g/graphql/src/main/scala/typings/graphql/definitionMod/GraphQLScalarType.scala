@@ -1,7 +1,7 @@
 package typings.graphql.definitionMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.graphql.AnonExtensionASTNodes
+import typings.graphql.GraphQLScalarTypeConfigan
 import typings.graphql.astMod.ScalarTypeDefinitionNode
 import typings.graphql.astMod.ScalarTypeExtensionNode
 import typings.graphql.astMod.ValueNode
@@ -36,7 +36,7 @@ class GraphQLScalarType protected ()
   def parseLiteral(valueNode: ValueNode, variables: Maybe[StringDictionary[_]]): Maybe[_] = js.native
   def parseValue(value: js.Any): Maybe[_] = js.native
   def serialize(value: js.Any): Maybe[_] = js.native
-  def toConfig(): (GraphQLScalarTypeConfig[_, _]) with AnonExtensionASTNodes = js.native
+  def toConfig(): GraphQLScalarTypeConfigan = js.native
   def toJSON(): String = js.native
 }
 

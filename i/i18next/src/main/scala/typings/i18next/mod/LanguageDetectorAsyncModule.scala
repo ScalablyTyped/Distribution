@@ -6,11 +6,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/**
-  * Used to detect language in user land.
-  * Can be provided as a singleton or as a prototype constructor (preferred for supporting multiple instances of i18next).
-  * For singleton set property `type` to `'languageDetector'` For a prototype constructor set static property.
-  */
 trait LanguageDetectorAsyncModule extends Module {
   /** Set to true to enable async detection */
   var async: `true`

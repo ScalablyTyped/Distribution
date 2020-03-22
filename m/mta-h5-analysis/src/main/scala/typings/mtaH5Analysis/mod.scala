@@ -14,7 +14,7 @@ object mod extends js.Object {
   def clickShare(channelId: String): Unit = js.native
   def clickStat(`type`: String): Unit = js.native
   def clickStat(`type`: String, params: StringDictionary[js.Any]): Unit = js.native
-  def init(params: Anon0): Unit = js.native
+  def init(params: AnonAutoReport): Unit = js.native
   def pgv(): Unit = js.native
   @js.native
   object conf extends js.Object {

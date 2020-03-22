@@ -51,9 +51,7 @@ trait ZAxisLabelsOptions extends js.Object {
     * can be retrieved by calling `this.axis.defaultLabelFormatter.call(this)`
     * within the function.
     *
-    * Defaults to:
-    *
-    *  (see online documentation for example)
+    * Defaults to: (see online documentation for example)
     */
   var formatter: js.UndefOr[FormatterCallbackFunction[AxisLabelsFormatterContextObject]] = js.undefined
   /**

@@ -11,7 +11,7 @@ import typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.ILinkHandler
 import typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.IRenderer
 import typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.IRendererFactory
 import typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.IResolver
-import typings.phosphorCoreutils.jsonMod.ReadonlyJSONObject
+import typings.luminoCoreutils.jsonMod.ReadonlyPartialJSONObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -103,13 +103,13 @@ trait IRenderMimeRegistry_ extends js.Object {
     * @returns The preferred mime type from the available factories,
     *   or `undefined` if the mime type cannot be rendered.
     */
-  def preferredMimeType(bundle: ReadonlyJSONObject): js.UndefOr[String] = js.native
+  def preferredMimeType(bundle: ReadonlyPartialJSONObject): js.UndefOr[String] = js.native
   @JSName("preferredMimeType")
-  def preferredMimeType_any(bundle: ReadonlyJSONObject, safe: any): js.UndefOr[String] = js.native
+  def preferredMimeType_any(bundle: ReadonlyPartialJSONObject, safe: any): js.UndefOr[String] = js.native
   @JSName("preferredMimeType")
-  def preferredMimeType_ensure(bundle: ReadonlyJSONObject, safe: ensure): js.UndefOr[String] = js.native
+  def preferredMimeType_ensure(bundle: ReadonlyPartialJSONObject, safe: ensure): js.UndefOr[String] = js.native
   @JSName("preferredMimeType")
-  def preferredMimeType_prefer(bundle: ReadonlyJSONObject, safe: prefer): js.UndefOr[String] = js.native
+  def preferredMimeType_prefer(bundle: ReadonlyPartialJSONObject, safe: prefer): js.UndefOr[String] = js.native
   /**
     * Remove a mime type.
     *

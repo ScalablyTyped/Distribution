@@ -29,6 +29,9 @@ trait storybookComponentsProps {
   def FlexBarProps: typings.storybookComponents.barMod.FlexBarProps.type = typings.storybookComponents.barMod.FlexBarProps
   type FlexBarProps = typings.storybookComponents.barMod.FlexBarProps
   @scala.inline
+  def FormFieldProps: typings.storybookComponents.fieldMod.FieldProps.type = typings.storybookComponents.fieldMod.FieldProps
+  type FormFieldProps = typings.storybookComponents.fieldMod.FieldProps
+  @scala.inline
   def IFrameProps: typings.storybookComponents.iframeMod.IFrameProps.type = typings.storybookComponents.iframeMod.IFrameProps
   type IFrameProps = typings.storybookComponents.iframeMod.IFrameProps
   @scala.inline
@@ -95,6 +98,12 @@ trait storybookComponentsProps {
   @scala.inline
   def TypesetProps: typings.storybookComponents.typesetMod.TypesetProps.type = typings.storybookComponents.typesetMod.TypesetProps
   type TypesetProps = typings.storybookComponents.typesetMod.TypesetProps
+  @scala.inline
+  def WithToolTipStateProps: WithTooltipPurePropsstart.type = typings.storybookComponents.WithTooltipPurePropsstart
+  type WithToolTipStateProps = WithTooltipPurePropsstart
+  @scala.inline
+  def WithTooltipProps: WithTooltipPurePropsstart.type = typings.storybookComponents.WithTooltipPurePropsstart
+  type WithTooltipProps = WithTooltipPurePropsstart
   @scala.inline
   def WithTooltipPureProps: typings.storybookComponents.withTooltipMod.WithTooltipPureProps.type = typings.storybookComponents.withTooltipMod.WithTooltipPureProps
   type WithTooltipPureProps = typings.storybookComponents.withTooltipMod.WithTooltipPureProps

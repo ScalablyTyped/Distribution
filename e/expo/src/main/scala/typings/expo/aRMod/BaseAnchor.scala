@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait BaseAnchor extends js.Object {
+trait BaseAnchor extends Anchor {
   var id: String
   var transform: Matrix
   var `type`: AnchorType

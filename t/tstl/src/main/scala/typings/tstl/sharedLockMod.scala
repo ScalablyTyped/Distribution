@@ -1,15 +1,6 @@
 package typings.tstl
 
 import typings.std.Date
-import typings.std.Partial
-import typings.std.Pick
-import typings.tstl.isharedlockableMod.ISharedLockable
-import typings.tstl.isharedtimedlockableMod.ISharedTimedLockable
-import typings.tstl.tstlStrings.lock_shared
-import typings.tstl.tstlStrings.try_lock_shared
-import typings.tstl.tstlStrings.try_lock_shared_for
-import typings.tstl.tstlStrings.try_lock_shared_until
-import typings.tstl.tstlStrings.unlock_shared
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,6 +8,31 @@ import scala.scalajs.js.annotation._
 @JSImport("tstl/thread/SharedLock", JSImport.Namespace)
 @js.native
 object sharedLockMod extends js.Object {
+  /* Inlined tstl.tstl/internal/thread/ISharedLockable.ISharedLockable & std.Partial<tstl.tstl/internal/thread/ISharedTimedLockable.ISharedTimedLockable> */
+  @js.native
+  trait IMutex extends js.Object {
+    @JSName("lock_shared")
+    var lock_shared_FIMutex: js.UndefOr[js.Function0[js.Promise[Unit]]] = js.native
+    @JSName("try_lock_shared")
+    var try_lock_shared_FIMutex: js.UndefOr[js.Function0[js.Promise[Boolean]]] = js.native
+    var try_lock_shared_for: js.UndefOr[js.Function1[/* ms */ Double, js.Promise[Boolean]]] = js.native
+    var try_lock_shared_until: js.UndefOr[js.Function1[/* at */ Date, js.Promise[Boolean]]] = js.native
+    @JSName("unlock_shared")
+    var unlock_shared_FIMutex: js.UndefOr[js.Function0[js.Promise[Unit]]] = js.native
+    /**
+      * Lock shared until be unlock shared.
+      */
+    def lock_shared(): js.Promise[Unit] = js.native
+    /**
+      * Try lock shared.
+      */
+    def try_lock_shared(): js.Promise[Boolean] = js.native
+    /**
+      * Unlock shared.
+      */
+    def unlock_shared(): js.Promise[Unit] = js.native
+  }
+  
   @js.native
   class SharedLock[Mutex /* <: IMutex */] protected () extends js.Object {
     def this(mutex: Mutex) = this()
@@ -29,16 +45,15 @@ object sharedLockMod extends js.Object {
   
   @js.native
   object SharedLock extends js.Object {
-    def lock[Mutex /* <: Pick[ISharedLockable, lock_shared | unlock_shared] */](mutex: Mutex, closure: Closure): js.Promise[Unit] = js.native
+    def lock[Mutex /* <: PickISharedLockablelocksh */](mutex: Mutex, closure: Closure): js.Promise[Unit] = js.native
     @JSName("try_lock")
-    def tryLock[Mutex /* <: Pick[ISharedLockable, try_lock_shared | unlock_shared] */](mutex: Mutex, closure: Closure): js.Promise[Boolean] = js.native
+    def tryLock[Mutex /* <: PickISharedLockabletryloc */](mutex: Mutex, closure: Closure): js.Promise[Boolean] = js.native
     @JSName("try_lock_for")
-    def tryLockFor[Mutex /* <: Pick[ISharedTimedLockable, try_lock_shared_for | unlock_shared] */](mutex: Mutex, ms: Double, closure: Closure): js.Promise[Boolean] = js.native
+    def tryLockFor[Mutex /* <: PickISharedTimedLockablet */](mutex: Mutex, ms: Double, closure: Closure): js.Promise[Boolean] = js.native
     @JSName("try_lock_until")
-    def tryLockUntil[Mutex /* <: Pick[ISharedTimedLockable, try_lock_shared_until | unlock_shared] */](mutex: Mutex, at: Date, closure: Closure): js.Promise[Boolean] = js.native
+    def tryLockUntil[Mutex /* <: PickISharedTimedLockabletTrylockshareduntil */](mutex: Mutex, at: Date, closure: Closure): js.Promise[Boolean] = js.native
   }
   
   type Closure = js.Function0[Unit | js.Promise[Unit]]
-  type IMutex = ISharedLockable with Partial[ISharedTimedLockable]
 }
 

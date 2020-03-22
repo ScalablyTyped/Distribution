@@ -10,7 +10,7 @@ trait IUpdateIntentRequest extends js.Object {
   /** UpdateIntentRequest intent */
   var intent: js.UndefOr[IIntent | Null] = js.undefined
   /** UpdateIntentRequest intentView */
-  var intentView: js.UndefOr[IntentView | Null] = js.undefined
+  var intentView: js.UndefOr[IntentView | String | Null] = js.undefined
   /** UpdateIntentRequest languageCode */
   var languageCode: js.UndefOr[String | Null] = js.undefined
   /** UpdateIntentRequest updateMask */
@@ -21,7 +21,7 @@ object IUpdateIntentRequest {
   @scala.inline
   def apply(
     intent: IIntent = null,
-    intentView: IntentView = null,
+    intentView: IntentView | String = null,
     languageCode: String = null,
     updateMask: IFieldMask = null
   ): IUpdateIntentRequest = {

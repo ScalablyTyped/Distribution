@@ -1,6 +1,6 @@
 package typings.reduxSagaCore.typesMod
 
-import typings.node.AnonHint
+import typings.node.AnonToPrimitive
 import typings.node.AnonValueOf
 import typings.node.BufferEncoding
 import typings.node.NodeJS.ArrayBufferView
@@ -158,9 +158,9 @@ object Buffer extends js.Object {
     */
   def from(data: js.Array[Double]): typings.node.Buffer = js.native
   def from(data: Uint8Array): typings.node.Buffer = js.native
-  def from(obj: AnonHint): typings.node.Buffer = js.native
-  def from(obj: AnonHint, byteOffset: Double): typings.node.Buffer = js.native
-  def from(obj: AnonHint, byteOffset: Double, length: Double): typings.node.Buffer = js.native
+  def from(obj: AnonToPrimitive): typings.node.Buffer = js.native
+  def from(obj: AnonToPrimitive, byteOffset: Double): typings.node.Buffer = js.native
+  def from(obj: AnonToPrimitive, byteOffset: Double, length: Double): typings.node.Buffer = js.native
   /**
     * Creates a new buffer containing the coerced value of an object
     * A `TypeError` will be thrown if {obj} has not mentioned methods or is not of other type appropriate for `Buffer.from()` variants.

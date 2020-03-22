@@ -1,14 +1,14 @@
 package typings.sxml
 
 import typings.sxml.xmlMod.XML
-import typings.tstl.mod.Vector
+import typings.tstl.vectorMod.Vector
 import typings.tstl.vectorMod.Vector.Iterator
 import typings.tstl.vectorMod.Vector.ReverseIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("sxml/lib/XMLList", JSImport.Namespace)
+@JSImport("sxml/lib/module/XMLList", JSImport.Namespace)
 @js.native
 object xmllistMod extends js.Object {
   @js.native

@@ -2,9 +2,9 @@ package typings.intercomClient.userMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.intercomClient.AnonCompanies
-import typings.intercomClient.AnonSegmentlist
-import typings.intercomClient.AnonSocialprofilelist
-import typings.intercomClient.AnonTaglist
+import typings.intercomClient.AnonSegments
+import typings.intercomClient.AnonSocialprofiles
+import typings.intercomClient.AnonTags
 import typings.intercomClient.intercomClientStrings.contact
 import typings.intercomClient.intercomClientStrings.user
 import scala.scalajs.js
@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation._
 trait User extends BaseUser {
   var companies: AnonCompanies
   var location_data: LocationData | js.Object
-  var segments: AnonSegmentlist
-  var social_profiles: AnonSocialprofilelist
-  var tags: AnonTaglist
+  var segments: AnonSegments
+  var social_profiles: AnonSocialprofiles
+  var tags: AnonTags
 }
 
 object User {
@@ -29,10 +29,10 @@ object User {
     custom_attributes: StringDictionary[js.Any],
     id: String,
     location_data: LocationData | js.Object,
-    segments: AnonSegmentlist,
+    segments: AnonSegments,
     session_count: Double,
-    social_profiles: AnonSocialprofilelist,
-    tags: AnonTaglist,
+    social_profiles: AnonSocialprofiles,
+    tags: AnonTags,
     `type`: user | contact,
     unsubscribed_from_emails: Boolean,
     updated_at: Double,

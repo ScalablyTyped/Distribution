@@ -1,5 +1,7 @@
 package typings.antd.operationMod
 
+import typings.antd.antdStrings.ltr
+import typings.antd.antdStrings.rtl
 import typings.react.mod.CSSProperties
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
@@ -11,6 +13,7 @@ import scala.scalajs.js.annotation._
 
 trait TransferOperationProps extends js.Object {
   var className: js.UndefOr[String] = js.undefined
+  var direction: js.UndefOr[ltr | rtl] = js.undefined
   var disabled: js.UndefOr[Boolean] = js.undefined
   var leftActive: js.UndefOr[Boolean] = js.undefined
   var leftArrowText: js.UndefOr[String] = js.undefined
@@ -25,6 +28,7 @@ object TransferOperationProps {
   @scala.inline
   def apply(
     className: String = null,
+    direction: ltr | rtl = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     leftActive: js.UndefOr[Boolean] = js.undefined,
     leftArrowText: String = null,
@@ -36,6 +40,7 @@ object TransferOperationProps {
   ): TransferOperationProps = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
     if (!js.isUndefined(leftActive)) __obj.updateDynamic("leftActive")(leftActive.asInstanceOf[js.Any])
     if (leftArrowText != null) __obj.updateDynamic("leftArrowText")(leftArrowText.asInstanceOf[js.Any])

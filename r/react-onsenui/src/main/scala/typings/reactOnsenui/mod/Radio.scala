@@ -1,6 +1,6 @@
 package typings.reactOnsenui.mod
 
-import typings.reactOnsenui.HTMLAttributesidclassNamestylemodifierstringdisablChecked
+import typings.reactOnsenui.HTMLAttributesidclassNameDefaultChecked
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-onsenui", "Radio")
 @js.native
 class Radio ()
-  extends typings.react.mod.Component[HTMLAttributesidclassNamestylemodifierstringdisablChecked, js.Any, js.Any]
+  extends typings.react.mod.Component[HTMLAttributesidclassNameDefaultChecked, js.Any, js.Any]
 

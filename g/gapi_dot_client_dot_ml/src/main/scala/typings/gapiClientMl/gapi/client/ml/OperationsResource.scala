@@ -2,7 +2,7 @@ package typings.gapiClientMl.gapi.client.ml
 
 import typings.gapiClient.gapi.client.Request_
 import typings.gapiClientMl.AnonAccesstoken
-import typings.gapiClientMl.AnonAccesstokenAltBearertokenCallbackFieldsFilter
+import typings.gapiClientMl.AnonFilter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,7 +46,7 @@ trait OperationsResource extends js.Object {
     * collection id, however overriding users must ensure the name binding
     * is the parent resource, without the operations collection id.
     */
-  def list(request: AnonAccesstokenAltBearertokenCallbackFieldsFilter): Request_[GoogleLongrunningListOperationsResponse]
+  def list(request: AnonFilter): Request_[GoogleLongrunningListOperationsResponse]
 }
 
 object OperationsResource {
@@ -55,7 +55,7 @@ object OperationsResource {
     cancel: AnonAccesstoken => Request_[js.Object],
     delete: AnonAccesstoken => Request_[js.Object],
     get: AnonAccesstoken => Request_[GoogleLongrunningOperation],
-    list: AnonAccesstokenAltBearertokenCallbackFieldsFilter => Request_[GoogleLongrunningListOperationsResponse]
+    list: AnonFilter => Request_[GoogleLongrunningListOperationsResponse]
   ): OperationsResource = {
     val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction1(cancel), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
   

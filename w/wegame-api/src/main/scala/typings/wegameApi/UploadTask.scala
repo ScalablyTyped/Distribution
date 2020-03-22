@@ -17,6 +17,6 @@ class UploadTask () extends js.Object {
     * @param callback.res.totalBytesSent 已经上传的数据长度，单位 Bytes
     * @param callback.res.totalBytesExpectedToSend 预期需要上传的数据总长度，单位 Bytes
     */
-  def onProgressUpdate(callback: js.Function1[/* res */ AnonProgressTotalBytesExpectedToSend, Unit]): Unit = js.native
+  def onProgressUpdate(callback: js.Function1[/* res */ AnonTotalBytesExpectedToSend, Unit]): Unit = js.native
 }
 

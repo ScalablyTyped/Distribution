@@ -1,6 +1,6 @@
 package typings.behavior3.b3
 
-import typings.behavior3.AnonChildMaxLoopBaseNode
+import typings.behavior3.AnonChildMaxLoop
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,6 +21,6 @@ import scala.scalajs.js.annotation._
   *
   */
 class RepeatUntilSuccess () extends Decorator {
-  def this(hasMaxLoopChild: AnonChildMaxLoopBaseNode) = this()
+  def this(hasMaxLoopChild: AnonChildMaxLoop) = this()
 }
 

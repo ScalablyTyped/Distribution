@@ -1,5 +1,7 @@
 package typings.vscodeLanguageclient.mod
 
+import typings.vscodeLanguageclient.vscodeLanguageclientStrings.completionItemSlashresolve
+import typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -7,9 +9,11 @@ import scala.scalajs.js.annotation._
 @JSImport("vscode-languageclient", "CompletionResolveRequest")
 @js.native
 object CompletionResolveRequest extends js.Object {
-  val `type`: typings.vscodeJsonrpc.mod.RequestType[
+  val method: completionItemSlashresolve = js.native
+  val `type`: ProtocolRequestType[
     typings.vscodeLanguageserverTypes.mod.CompletionItem, 
     typings.vscodeLanguageserverTypes.mod.CompletionItem, 
+    scala.Nothing, 
     Unit, 
     Unit
   ] = js.native

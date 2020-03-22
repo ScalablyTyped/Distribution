@@ -6,22 +6,26 @@ import scala.scalajs.js.annotation._
 
 trait AnonLineStyleShow extends js.Object {
   /**
-    * @see https://echarts.apache.org/en/option.html#series-pie.data.labelLine.emphasis.lineStyle
+    * The style of the axis line of gauge chart.
+    *
+    *
+    * @see https://echarts.apache.org/en/option.html#series-gauge.axisLine.lineStyle
     */
-  var lineStyle: js.UndefOr[AnonColorOpacityShadowBlur] = js.undefined
+  var lineStyle: js.UndefOr[AnonWidth] = js.undefined
   /**
-    * Whether to show the visual guide line in emphasis
-    * status.
+    * Whether to show the axis line of gauge chart.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-pie.data.labelLine.emphasis.show
+    * @default
+    * "true"
+    * @see https://echarts.apache.org/en/option.html#series-gauge.axisLine.show
     */
   var show: js.UndefOr[Boolean] = js.undefined
 }
 
 object AnonLineStyleShow {
   @scala.inline
-  def apply(lineStyle: AnonColorOpacityShadowBlur = null, show: js.UndefOr[Boolean] = js.undefined): AnonLineStyleShow = {
+  def apply(lineStyle: AnonWidth = null, show: js.UndefOr[Boolean] = js.undefined): AnonLineStyleShow = {
     val __obj = js.Dynamic.literal()
     if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle.asInstanceOf[js.Any])
     if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])

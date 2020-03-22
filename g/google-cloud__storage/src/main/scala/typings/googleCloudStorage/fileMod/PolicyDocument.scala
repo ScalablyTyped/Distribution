@@ -5,15 +5,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PolicyDocument extends js.Object {
-  var conditions: js.Array[js.Array[String | Double]]
-  var expiration: String
+  var base64: String
+  var signature: String
   var string: String
 }
 
 object PolicyDocument {
   @scala.inline
-  def apply(conditions: js.Array[js.Array[String | Double]], expiration: String, string: String): PolicyDocument = {
-    val __obj = js.Dynamic.literal(conditions = conditions.asInstanceOf[js.Any], expiration = expiration.asInstanceOf[js.Any], string = string.asInstanceOf[js.Any])
+  def apply(base64: String, signature: String, string: String): PolicyDocument = {
+    val __obj = js.Dynamic.literal(base64 = base64.asInstanceOf[js.Any], signature = signature.asInstanceOf[js.Any], string = string.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PolicyDocument]
   }

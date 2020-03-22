@@ -38,6 +38,9 @@ trait DescribeSecretResponse extends js.Object {
     * The user-provided friendly name of the secret.
     */
   var Name: js.UndefOr[SecretNameType] = js.native
+  /**
+    * Returns the name of the service that created this secret.
+    */
   var OwningService: js.UndefOr[OwningServiceType] = js.native
   /**
     * Specifies whether automatic rotation is enabled for this secret. To enable rotation, use RotateSecret with AutomaticallyRotateAfterDays set to a value greater than 0. To disable rotation, use CancelRotateSecret.

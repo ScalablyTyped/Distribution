@@ -1,7 +1,7 @@
 
 # Scala.js typings for emittery
 
-Typings are for version 0.4.1
+Typings are for version 0.5.1
 
 ## Library description:
 Simple and modern async event emitter

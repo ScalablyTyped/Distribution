@@ -1,9 +1,9 @@
 package typings.gracefulFs.mod
 
 import typings.gracefulFs.gracefulFsStrings.buffer
-import typings.node.AnonBufferEncoding
-import typings.node.AnonEncodingBufferEncoding
-import typings.node.AnonEncodingNull
+import typings.node.Anon2
+import typings.node.Anon3
+import typings.node.AnonEncoding
 import typings.node.Buffer
 import typings.node.BufferEncoding
 import typings.node.NodeJS.ErrnoException
@@ -51,7 +51,7 @@ object readlink extends js.Object {
     */
   def apply(
     path: PathLike,
-    options: AnonBufferEncoding,
+    options: Anon2,
     callback: js.Function2[/* err */ ErrnoException | Null, /* linkString */ Buffer, Unit]
   ): Unit = js.native
   /**
@@ -61,8 +61,8 @@ object readlink extends js.Object {
     */
   def apply(
     path: PathLike,
-    options: AnonEncodingBufferEncoding,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* linkString */ String, Unit]
+    options: Anon3,
+    callback: js.Function2[/* err */ ErrnoException | Null, /* linkString */ String | Buffer, Unit]
   ): Unit = js.native
   /**
     * Asynchronous readlink(2) - read value of a symbolic link.
@@ -71,8 +71,8 @@ object readlink extends js.Object {
     */
   def apply(
     path: PathLike,
-    options: AnonEncodingNull,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* linkString */ String | Buffer, Unit]
+    options: AnonEncoding,
+    callback: js.Function2[/* err */ ErrnoException | Null, /* linkString */ String, Unit]
   ): Unit = js.native
   def apply(
     path: PathLike,
@@ -94,11 +94,11 @@ object readlink extends js.Object {
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
   @JSName("__promisify__")
-  def promisify(path: PathLike, options: AnonBufferEncoding): js.Promise[Buffer] = js.native
+  def promisify(path: PathLike, options: Anon2): js.Promise[Buffer] = js.native
   @JSName("__promisify__")
-  def promisify(path: PathLike, options: AnonEncodingBufferEncoding): js.Promise[String] = js.native
+  def promisify(path: PathLike, options: Anon3): js.Promise[String | Buffer] = js.native
   @JSName("__promisify__")
-  def promisify(path: PathLike, options: AnonEncodingNull): js.Promise[String | Buffer] = js.native
+  def promisify(path: PathLike, options: AnonEncoding): js.Promise[String] = js.native
   @JSName("__promisify__")
   def promisify(path: PathLike, options: BufferEncoding): js.Promise[String] = js.native
   @JSName("__promisify__")

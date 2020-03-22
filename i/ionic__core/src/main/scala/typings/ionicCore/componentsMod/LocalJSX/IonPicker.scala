@@ -1,9 +1,9 @@
 package typings.ionicCore.componentsMod.LocalJSX
 
+import typings.ionicCore.animationInterfaceMod.Animation
+import typings.ionicCore.animationInterfaceMod.AnimationBuilder
 import typings.ionicCore.ionicCoreStrings.ios
 import typings.ionicCore.ionicCoreStrings.md
-import typings.ionicCore.oldAnimationAnimationInterfaceMod.Animation
-import typings.ionicCore.oldAnimationAnimationInterfaceMod.AnimationBuilder
 import typings.ionicCore.overlaysInterfaceMod.OverlayEventDetail
 import typings.ionicCore.pickerInterfaceMod.PickerButton
 import typings.ionicCore.pickerInterfaceMod.PickerColumn
@@ -84,9 +84,9 @@ object IonPicker {
     columns: js.Array[PickerColumn] = null,
     cssClass: String | js.Array[String] = null,
     duration: Int | Double = null,
-    enterAnimation: (/* Animation */ Animation, /* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => js.Promise[Animation] = null,
+    enterAnimation: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation = null,
     keyboardClose: js.UndefOr[Boolean] = js.undefined,
-    leaveAnimation: (/* Animation */ Animation, /* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => js.Promise[Animation] = null,
+    leaveAnimation: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation = null,
     mode: ios | md = null,
     onIonPickerDidDismiss: /* event */ CustomEvent[OverlayEventDetail[_]] => Unit = null,
     onIonPickerDidPresent: /* event */ CustomEvent[Unit] => Unit = null,
@@ -101,9 +101,9 @@ object IonPicker {
     if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (enterAnimation != null) __obj.updateDynamic("enterAnimation")(js.Any.fromFunction3(enterAnimation))
+    if (enterAnimation != null) __obj.updateDynamic("enterAnimation")(js.Any.fromFunction2(enterAnimation))
     if (!js.isUndefined(keyboardClose)) __obj.updateDynamic("keyboardClose")(keyboardClose.asInstanceOf[js.Any])
-    if (leaveAnimation != null) __obj.updateDynamic("leaveAnimation")(js.Any.fromFunction3(leaveAnimation))
+    if (leaveAnimation != null) __obj.updateDynamic("leaveAnimation")(js.Any.fromFunction2(leaveAnimation))
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (onIonPickerDidDismiss != null) __obj.updateDynamic("onIonPickerDidDismiss")(js.Any.fromFunction1(onIonPickerDidDismiss))
     if (onIonPickerDidPresent != null) __obj.updateDynamic("onIonPickerDidPresent")(js.Any.fromFunction1(onIonPickerDidPresent))

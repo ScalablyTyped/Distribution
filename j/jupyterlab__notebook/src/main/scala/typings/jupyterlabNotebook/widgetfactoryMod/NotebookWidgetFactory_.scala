@@ -24,22 +24,25 @@ class NotebookWidgetFactory_ protected () extends ABCWidgetFactory[NotebookPanel
   def this(options: IOptions[NotebookPanel]) = this()
   var _editorConfig: js.Any = js.native
   var _notebookConfig: js.Any = js.native
+  var _sessionDialogs: js.Any = js.native
   /**
     * The content factory used by the widget factory.
     */
   val contentFactory: IContentFactory = js.native
   /**
-    * A configuration object for cell editor settings.
-    */
-  var editorConfig: IEditorConfig = js.native
-  /**
     * The service used to look up mime types.
     */
   val mimeTypeService: IEditorMimeTypeService = js.native
+  val rendermime: IRenderMimeRegistry = js.native
+  /**
+    * A configuration object for cell editor settings.
+    */
+  def editorConfig(): IEditorConfig = js.native
+  def editorConfig(value: IEditorConfig): js.Any = js.native
   /**
     * A configuration object for notebook settings.
     */
-  var notebookConfig: INotebookConfig = js.native
-  val rendermime: IRenderMimeRegistry = js.native
+  def notebookConfig(): INotebookConfig = js.native
+  def notebookConfig(value: INotebookConfig): js.Any = js.native
 }
 

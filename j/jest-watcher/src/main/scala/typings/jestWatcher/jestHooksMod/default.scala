@@ -1,7 +1,7 @@
 package typings.jestWatcher.jestHooksMod
 
-import typings.jestWatcher.typesMod.JestHookEmitter
-import typings.jestWatcher.typesMod.JestHookSubscriber
+import typings.jestWatcher.ReadonlyJestHookEmitter
+import typings.jestWatcher.ReadonlyJestHookSubscribe
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +16,9 @@ class default () extends JestHooks {
   /* CompleteClass */
   override var _subscriber: js.Any = js.native
   /* CompleteClass */
-  override def getEmitter(): JestHookEmitter = js.native
+  override def getEmitter(): ReadonlyJestHookEmitter = js.native
   /* CompleteClass */
-  override def getSubscriber(): JestHookSubscriber = js.native
+  override def getSubscriber(): ReadonlyJestHookSubscribe = js.native
   /* CompleteClass */
   override def isUsed(hook: AvailableHooks): Double = js.native
 }

@@ -3,7 +3,7 @@ package typings.reactFocusLock.interfacesMod
 import typings.react.mod.ElementType
 import typings.react.mod.Ref
 import typings.react.mod.RefObject
-import typings.reactFocusLock.AnonChildren
+import typings.reactFocusLock.AnonChildrenChildrenType
 import typings.reactFocusLock.reactFocusLockStrings.tail
 import typings.std.FocusOptions
 import typings.std.HTMLElement
@@ -20,7 +20,7 @@ trait ReactFocusLockProps[ChildrenType, LockProps] extends js.Object {
   /**
     * Component to use, defaults to 'div'
     */
-  var as: js.UndefOr[String | (ElementType[LockProps with AnonChildren[ChildrenType]])] = js.undefined
+  var as: js.UndefOr[String | (ElementType[LockProps with AnonChildrenChildrenType[ChildrenType]])] = js.undefined
   /**
     * enables or disables autoFocusing feature.
     * If enabled - will move focus inside Lock, selecting the first or autoFocusable element
@@ -79,7 +79,7 @@ object ReactFocusLockProps {
   @scala.inline
   def apply[ChildrenType, LockProps](
     allowTextSelection: js.UndefOr[Boolean] = js.undefined,
-    as: String | (ElementType[LockProps with AnonChildren[ChildrenType]]) = null,
+    as: String | (ElementType[LockProps with AnonChildrenChildrenType[ChildrenType]]) = null,
     autoFocus: js.UndefOr[Boolean] = js.undefined,
     children: ChildrenType = null,
     className: String = null,

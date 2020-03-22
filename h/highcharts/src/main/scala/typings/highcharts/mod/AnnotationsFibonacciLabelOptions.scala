@@ -79,7 +79,7 @@ trait AnnotationsFibonacciLabelOptions extends js.Object {
   /**
     * (Highstock) Styles for the annotation's label.
     */
-  var style: js.UndefOr[AnnotationsFibonacciLabelStyleOptions] = js.undefined
+  var style: js.UndefOr[AnnotationsFibonacciLabelStyleOptions | CSSObject] = js.undefined
   /**
     * (Highstock) Alias for the format option.
     */
@@ -124,7 +124,7 @@ object AnnotationsFibonacciLabelOptions {
     padding: Int | Double = null,
     shadow: Boolean | ShadowOptionsObject = null,
     shape: String = null,
-    style: AnnotationsFibonacciLabelStyleOptions = null,
+    style: AnnotationsFibonacciLabelStyleOptions | CSSObject = null,
     text: String = null,
     useHTML: js.UndefOr[Boolean] = js.undefined,
     verticalAlign: String = null,

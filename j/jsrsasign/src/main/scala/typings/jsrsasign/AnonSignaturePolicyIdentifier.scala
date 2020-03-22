@@ -9,7 +9,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonSignaturePolicyIdentifier extends js.Object {
-  var SignaturePolicyIdentifier: AnonHashOid
+  var SignaturePolicyIdentifier: AnonOid
   var SigningCertificateV2: ArrayParam[String] | AnonArray | typings.jsrsasign.jsrsasign.KJUR.asn1.cms.SigningCertificateV2
   var SigningTime: TypeParam | StringParam
 }
@@ -17,7 +17,7 @@ trait AnonSignaturePolicyIdentifier extends js.Object {
 object AnonSignaturePolicyIdentifier {
   @scala.inline
   def apply(
-    SignaturePolicyIdentifier: AnonHashOid,
+    SignaturePolicyIdentifier: AnonOid,
     SigningCertificateV2: ArrayParam[String] | AnonArray | SigningCertificateV2,
     SigningTime: TypeParam | StringParam
   ): AnonSignaturePolicyIdentifier = {

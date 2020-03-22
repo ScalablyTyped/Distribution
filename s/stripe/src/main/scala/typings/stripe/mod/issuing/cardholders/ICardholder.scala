@@ -1,7 +1,7 @@
 package typings.stripe.mod.issuing.cardholders
 
 import typings.stripe.AnonAddressName
-import typings.stripe.AnonDisabledreasonListed
+import typings.stripe.AnonPastdue
 import typings.stripe.mod.IMetadata
 import typings.stripe.mod.IResourceObject
 import typings.stripe.stripeStrings.issuingDotcardholder
@@ -62,7 +62,7 @@ trait ICardholder extends IResourceObject {
   /**
     * Information about verification requirements for the cardholder, including what information needs to be collected.
     */
-  var requirements: AnonDisabledreasonListed
+  var requirements: AnonPastdue
   /**
     * One of active, inactive, or blocked.
     */
@@ -89,7 +89,7 @@ object ICardholder {
     name: String,
     `object`: issuingDotcardholder,
     phone_number: String,
-    requirements: AnonDisabledreasonListed,
+    requirements: AnonPastdue,
     status: CardholderStatus,
     `type`: CardholderType
   ): ICardholder = {

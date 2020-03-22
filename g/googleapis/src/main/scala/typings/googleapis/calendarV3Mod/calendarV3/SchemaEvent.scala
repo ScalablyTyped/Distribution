@@ -1,9 +1,9 @@
 package typings.googleapis.calendarV3Mod.calendarV3
 
 import typings.googleapis.AnonDisplay
-import typings.googleapis.AnonDisplayNameEmail
-import typings.googleapis.AnonKeyPrivate
 import typings.googleapis.AnonOverrides
+import typings.googleapis.AnonPrivate
+import typings.googleapis.AnonSelf
 import typings.googleapis.AnonTitleUrl
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -55,7 +55,7 @@ trait SchemaEvent extends js.Object {
   /**
     * The creator of the event. Read-only.
     */
-  var creator: js.UndefOr[AnonDisplayNameEmail] = js.native
+  var creator: js.UndefOr[AnonSelf] = js.native
   /**
     * Description of the event. Optional.
     */
@@ -78,7 +78,7 @@ trait SchemaEvent extends js.Object {
   /**
     * Extended properties of the event.
     */
-  var extendedProperties: js.UndefOr[AnonKeyPrivate] = js.native
+  var extendedProperties: js.UndefOr[AnonPrivate] = js.native
   /**
     * A gadget that extends this event.
     */
@@ -155,7 +155,7 @@ trait SchemaEvent extends js.Object {
     * to True. To change the organizer, use the move operation. Read-only,
     * except when importing an event.
     */
-  var organizer: js.UndefOr[AnonDisplayNameEmail] = js.native
+  var organizer: js.UndefOr[AnonSelf] = js.native
   /**
     * For an instance of a recurring event, this is the time at which this
     * event would start according to the recurrence data in the recurring event
@@ -270,12 +270,12 @@ object SchemaEvent {
     colorId: String = null,
     conferenceData: SchemaConferenceData = null,
     created: String = null,
-    creator: AnonDisplayNameEmail = null,
+    creator: AnonSelf = null,
     description: String = null,
     end: SchemaEventDateTime = null,
     endTimeUnspecified: js.UndefOr[Boolean] = js.undefined,
     etag: String = null,
-    extendedProperties: AnonKeyPrivate = null,
+    extendedProperties: AnonPrivate = null,
     gadget: AnonDisplay = null,
     guestsCanInviteOthers: js.UndefOr[Boolean] = js.undefined,
     guestsCanModify: js.UndefOr[Boolean] = js.undefined,
@@ -287,7 +287,7 @@ object SchemaEvent {
     kind: String = null,
     location: String = null,
     locked: js.UndefOr[Boolean] = js.undefined,
-    organizer: AnonDisplayNameEmail = null,
+    organizer: AnonSelf = null,
     originalStartTime: SchemaEventDateTime = null,
     privateCopy: js.UndefOr[Boolean] = js.undefined,
     recurrence: js.Array[String] = null,

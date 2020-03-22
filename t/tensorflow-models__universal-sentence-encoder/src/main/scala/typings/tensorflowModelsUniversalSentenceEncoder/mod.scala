@@ -1,5 +1,6 @@
 package typings.tensorflowModelsUniversalSentenceEncoder
 
+import typings.tensorflowModelsUniversalSentenceEncoder.tensorflowModelsUniversalSentenceEncoderStrings.`1Dot2Dot2`
 import typings.tensorflowModelsUniversalSentenceEncoder.tokenizerMod.Vocabulary
 import typings.tensorflowTfjsConverter.mod.GraphModel
 import typings.tensorflowTfjsCore.tensorMod.Tensor2D
@@ -26,6 +27,7 @@ object mod extends js.Object {
     def loadModel(): js.Promise[GraphModel] = js.native
   }
   
+  val version: `1Dot2Dot2` = js.native
   def load(): js.Promise[UniversalSentenceEncoder] = js.native
   def loadTokenizer(): js.Promise[typings.tensorflowModelsUniversalSentenceEncoder.tokenizerMod.Tokenizer] = js.native
   def loadTokenizer(pathToVocabulary: String): js.Promise[typings.tensorflowModelsUniversalSentenceEncoder.tokenizerMod.Tokenizer] = js.native

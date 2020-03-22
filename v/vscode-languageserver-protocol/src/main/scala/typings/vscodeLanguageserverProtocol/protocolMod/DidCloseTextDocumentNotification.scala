@@ -1,6 +1,7 @@
 package typings.vscodeLanguageserverProtocol.protocolMod
 
-import typings.vscodeJsonrpc.mod.NotificationType
+import typings.vscodeLanguageserverProtocol.messagesMod.ProtocolNotificationType
+import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.textDocumentSlashdidClose
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,6 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("vscode-languageserver-protocol/lib/protocol", "DidCloseTextDocumentNotification")
 @js.native
 object DidCloseTextDocumentNotification extends js.Object {
-  val `type`: NotificationType[DidCloseTextDocumentParams, TextDocumentRegistrationOptions] = js.native
+  val method: textDocumentSlashdidClose = js.native
+  val `type`: ProtocolNotificationType[DidCloseTextDocumentParams, TextDocumentRegistrationOptions] = js.native
 }
 

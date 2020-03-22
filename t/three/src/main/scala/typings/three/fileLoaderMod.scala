@@ -38,7 +38,7 @@ object fileLoaderMod extends js.Object {
     def setMimeType(mimeType: MimeType): FileLoader = js.native
     def setRequestHeader(value: StringDictionary[String]): FileLoader = js.native
     def setResponseType(responseType: String): FileLoader = js.native
-    def setWithCredentials(value: String): FileLoader = js.native
+    def setWithCredentials(value: Boolean): FileLoader = js.native
   }
   
 }

@@ -17,7 +17,6 @@ trait TransactionResponse
   var created_at: String
   var fee_charged: Double
   var fee_meta_xdr: String
-  var fee_paid: Double
   var id: String
   var max_fee: Double
   var memo: js.UndefOr[String] = js.undefined
@@ -39,7 +38,6 @@ object TransactionResponse {
     envelope_xdr: String,
     fee_charged: Double,
     fee_meta_xdr: String,
-    fee_paid: Double,
     hash: String,
     id: String,
     ledger: Double,
@@ -54,7 +52,7 @@ object TransactionResponse {
     source_account_sequence: String,
     memo: String = null
   ): TransactionResponse = {
-    val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], envelope_xdr = envelope_xdr.asInstanceOf[js.Any], fee_charged = fee_charged.asInstanceOf[js.Any], fee_meta_xdr = fee_meta_xdr.asInstanceOf[js.Any], fee_paid = fee_paid.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], ledger = ledger.asInstanceOf[js.Any], max_fee = max_fee.asInstanceOf[js.Any], memo_type = memo_type.asInstanceOf[js.Any], operation_count = operation_count.asInstanceOf[js.Any], paging_token = paging_token.asInstanceOf[js.Any], result_meta_xdr = result_meta_xdr.asInstanceOf[js.Any], result_xdr = result_xdr.asInstanceOf[js.Any], signatures = signatures.asInstanceOf[js.Any], source_account = source_account.asInstanceOf[js.Any], source_account_sequence = source_account_sequence.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], envelope_xdr = envelope_xdr.asInstanceOf[js.Any], fee_charged = fee_charged.asInstanceOf[js.Any], fee_meta_xdr = fee_meta_xdr.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], ledger = ledger.asInstanceOf[js.Any], max_fee = max_fee.asInstanceOf[js.Any], memo_type = memo_type.asInstanceOf[js.Any], operation_count = operation_count.asInstanceOf[js.Any], paging_token = paging_token.asInstanceOf[js.Any], result_meta_xdr = result_meta_xdr.asInstanceOf[js.Any], result_xdr = result_xdr.asInstanceOf[js.Any], signatures = signatures.asInstanceOf[js.Any], source_account = source_account.asInstanceOf[js.Any], source_account_sequence = source_account_sequence.asInstanceOf[js.Any])
     if (memo != null) __obj.updateDynamic("memo")(memo.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransactionResponse]
   }

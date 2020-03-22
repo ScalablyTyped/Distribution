@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DescribeStandardsControlsResponse extends js.Object {
   /**
-    * A list of compliance standards controls.
+    * A list of security standards controls.
     */
   var Controls: js.UndefOr[StandardsControls] = js.native
   /**

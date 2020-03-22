@@ -1,11 +1,11 @@
 package typings.oracleOraclejet.ojselectcomboboxMod
 
 import typings.oracleOraclejet.AnonAction
-import typings.oracleOraclejet.AnonActionElement
-import typings.oracleOraclejet.AnonChildKeysChildrenLabelValue
+import typings.oracleOraclejet.AnonChildrenLabel
 import typings.oracleOraclejet.AnonClass
-import typings.oracleOraclejet.AnonFilterFurtherMoreMatchesFound
+import typings.oracleOraclejet.AnonElement
 import typings.oracleOraclejet.AnonLabelValue
+import typings.oracleOraclejet.AnonMoreMatchesFound
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.ojdataproviderMod.DataProvider
 import typings.oracleOraclejet.ojselectcomboboxMod.ojSelect.OptionContext
@@ -67,7 +67,7 @@ trait ojSelectMany[K, D]
     ], 
     _
   ]) | Null = js.native
-  var onOptionsKeysChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonChildKeysChildrenLabelValue], _]) | Null = js.native
+  var onOptionsKeysChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonChildrenLabel], _]) | Null = js.native
   var onPickerAttributesChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonClass], _]) | Null = js.native
   var onPlaceholderChanged: (js.Function1[/* event */ JetElementCustomEvent[String | Null], _]) | Null = js.native
   var onReadOnlyChanged: (js.Function1[/* event */ JetElementCustomEvent[Boolean], _]) | Null = js.native
@@ -80,14 +80,14 @@ trait ojSelectMany[K, D]
   var options: (js.Array[
     typings.oracleOraclejet.ojselectcomboboxMod.ojSelect.Option | typings.oracleOraclejet.ojselectcomboboxMod.ojSelect.Optgroup
   ]) | (DataProvider[K, D]) | Null = js.native
-  var optionsKeys: AnonChildKeysChildrenLabelValue = js.native
+  var optionsKeys: AnonChildrenLabel = js.native
   var pickerAttributes: AnonClass = js.native
   var placeholder: String | Null = js.native
   var readOnly: Boolean = js.native
   var renderMode: jet | native = js.native
   var required: Boolean = js.native
   @JSName("translations")
-  var translations_ojSelectMany: AnonFilterFurtherMoreMatchesFound = js.native
+  var translations_ojSelectMany: AnonMoreMatchesFound = js.native
   var valueOptions: js.Array[AnonLabelValue] | Null = js.native
   @JSName("value")
   var value_ojSelectMany: js.Array[_] | Null = js.native
@@ -160,20 +160,12 @@ trait ojSelectMany[K, D]
   @JSName("addEventListener")
   def addEventListener_optionsKeysChanged(
     `type`: optionsKeysChanged,
-    listener: js.ThisFunction1[
-      /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[AnonChildKeysChildrenLabelValue], 
-      _
-    ]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonChildrenLabel], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_optionsKeysChanged(
     `type`: optionsKeysChanged,
-    listener: js.ThisFunction1[
-      /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[AnonChildKeysChildrenLabelValue], 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonChildrenLabel], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -248,7 +240,7 @@ trait ojSelectMany[K, D]
     typings.oracleOraclejet.ojselectcomboboxMod.ojSelect.Option | typings.oracleOraclejet.ojselectcomboboxMod.ojSelect.Optgroup
   ]) | (DataProvider[K, D]) | Null = js.native
   @JSName("getProperty")
-  def getProperty_optionsKeys(property: optionsKeys): AnonChildKeysChildrenLabelValue = js.native
+  def getProperty_optionsKeys(property: optionsKeys): AnonChildrenLabel = js.native
   @JSName("getProperty")
   def getProperty_pickerAttributes(property: pickerAttributes): AnonClass = js.native
   @JSName("getProperty")
@@ -282,7 +274,7 @@ trait ojSelectMany[K, D]
   @JSName("setProperty")
   def setProperty_options(property: options, value: DataProvider[K, D]): Unit = js.native
   @JSName("setProperty")
-  def setProperty_optionsKeys(property: optionsKeys, value: AnonChildKeysChildrenLabelValue): Unit = js.native
+  def setProperty_optionsKeys(property: optionsKeys, value: AnonChildrenLabel): Unit = js.native
   @JSName("setProperty")
   def setProperty_pickerAttributes(property: pickerAttributes, value: AnonClass): Unit = js.native
   @JSName("setProperty")
@@ -294,7 +286,7 @@ trait ojSelectMany[K, D]
   @JSName("setProperty")
   def setProperty_required(property: required, value: Boolean): Unit = js.native
   @JSName("setProperty")
-  def setProperty_translations(property: translations, value: AnonFilterFurtherMoreMatchesFound): Unit = js.native
+  def setProperty_translations(property: translations, value: AnonMoreMatchesFound): Unit = js.native
   @JSName("setProperty")
   def setProperty_value(property: value): Unit = js.native
   @JSName("setProperty")
@@ -309,6 +301,6 @@ trait ojSelectMany[K, D]
 @js.native
 object ojSelectMany extends js.Object {
   type ojAnimateEnd = CustomEvent[AnonAction]
-  type ojAnimateStart = CustomEvent[AnonActionElement]
+  type ojAnimateStart = CustomEvent[AnonElement]
 }
 

@@ -1,8 +1,8 @@
 package typings.materializeCss.M
 
 import typings.materializeCss.MElements
+import typings.materializeCss.PartialDropdownOptions
 import typings.std.Element
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -56,11 +56,11 @@ object Dropdown extends js.Object {
     * Init Dropdowns
     */
   def init(els: MElements): js.Array[Dropdown] = js.native
-  def init(els: MElements, options: Partial[DropdownOptions]): js.Array[Dropdown] = js.native
+  def init(els: MElements, options: PartialDropdownOptions): js.Array[Dropdown] = js.native
   /**
     * Init Dropdown
     */
   def init(els: Element): Dropdown = js.native
-  def init(els: Element, options: Partial[DropdownOptions]): Dropdown = js.native
+  def init(els: Element, options: PartialDropdownOptions): Dropdown = js.native
 }
 

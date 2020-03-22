@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 trait OnDestroy extends js.Object {
   /**
     * A callback method that performs custom clean-up, invoked immediately
-    * after a directive, pipe, or service instance is destroyed.
+    * before a directive, pipe, or service instance is destroyed.
     */
   def ngOnDestroy(): Unit
 }

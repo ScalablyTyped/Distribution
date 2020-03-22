@@ -6,10 +6,9 @@ import scala.scalajs.js.annotation._
 
 trait PlotWordcloudOptions extends js.Object {
   /**
-    * (Highcharts) Accessibility options for a series. Requires the
-    * accessibility module.
+    * (Highcharts) Accessibility options for a series.
     */
-  var accessibility: js.UndefOr[js.Object | PlotWordcloudAccessibilityOptions] = js.undefined
+  var accessibility: js.UndefOr[SeriesAccessibilityOptionsObject] = js.undefined
   /**
     * (Highcharts) If there is no space for a word on the playing field, then
     * this option will allow the playing field to be extended to fit the word.
@@ -45,7 +44,7 @@ trait PlotWordcloudOptions extends js.Object {
     * Due to poor performance, animation is disabled in old IE browsers for
     * several chart types.
     */
-  var animation: js.UndefOr[PlotWordcloudAnimationOptions] = js.undefined
+  var animation: js.UndefOr[Boolean | AnimationOptionsObject] = js.undefined
   /**
     * (Highcharts) For some series, there is a limit that shuts down initial
     * animation by default when the total number of points in the chart is too
@@ -133,18 +132,19 @@ trait PlotWordcloudOptions extends js.Object {
   var colors: js.UndefOr[js.Array[ColorString | GradientColorObject | PatternObject]] = js.undefined
   /**
     * (Highstock) Defines if comparison should start from the first point
-    * within the visible range or should start from the first point (see online
-    * documentation for example) the range. In other words, this flag
-    * determines if first point within the visible range will have 0%
-    * (`compareStart=true`) or should have been already calculated according to
-    * the previous point (`compareStart=false`).
+    * within the visible range or should start from the first point **before**
+    * the range.
+    *
+    * In other words, this flag determines if first point within the visible
+    * range will have 0% (`compareStart=true`) or should have been already
+    * calculated according to the previous point (`compareStart=false`).
     */
   var compareStart: js.UndefOr[Boolean] = js.undefined
   /**
     * (Gantt) Override Pathfinder connector options for a series. Requires
     * Highcharts Gantt to be loaded.
     */
-  var connectors: js.UndefOr[PlotWordcloudConnectorsOptions] = js.undefined
+  var connectors: js.UndefOr[SeriesConnectorsOptionsObject] = js.undefined
   /**
     * (Highcharts, Highstock, Gantt) When the series contains less points than
     * the crop threshold, all points are drawn, event if the points fall
@@ -166,6 +166,10 @@ trait PlotWordcloudOptions extends js.Object {
     */
   var cursor: js.UndefOr[String | CursorValue] = js.undefined
   /**
+    * (Highcharts, Highstock) Options for the series data sorting.
+    */
+  var dataSorting: js.UndefOr[DataSortingOptionsObject | PlotWordcloudDataSortingOptions] = js.undefined
+  /**
     * (Highcharts) A description of the series to add to the screen reader
     * information about the series.
     */
@@ -185,7 +189,7 @@ trait PlotWordcloudOptions extends js.Object {
     * hooks can also be attached to the series at run time using the
     * `Highcharts.addEvent` function.
     */
-  var events: js.UndefOr[PlotWordcloudEventsOptions] = js.undefined
+  var events: js.UndefOr[SeriesEventsOptionsObject] = js.undefined
   /**
     * (Highcharts) When set to `false` will prevent the series data from being
     * included in any form of data export.
@@ -209,20 +213,24 @@ trait PlotWordcloudOptions extends js.Object {
     * The series labels currently work with series types having a `graph` or an
     * `area`.
     */
-  var label: js.UndefOr[PlotWordcloudLabelOptions] = js.undefined
+  var label: js.UndefOr[SeriesLabelOptionsObject] = js.undefined
   /**
     * (Highstock) The line marks the last price from all points.
     */
-  var lastPrice: js.UndefOr[PlotWordcloudLastPriceOptions] = js.undefined
+  var lastPrice: js.UndefOr[SeriesLastPriceOptionsObject] = js.undefined
   /**
     * (Highstock) The line marks the last price from visible range of points.
     */
-  var lastVisiblePrice: js.UndefOr[PlotWordcloudLastVisiblePriceOptions] = js.undefined
+  var lastVisiblePrice: js.UndefOr[SeriesLastVisiblePriceOptionsObject] = js.undefined
   /**
     * (Highcharts, Highstock, Gantt) The id of another series to link to.
     * Additionally, the value can be ":previous" to link to the previous
     * series. When two series are linked, only the first one appears in the
     * legend. Toggling the visibility of this also toggles the linked series.
+    *
+    * If master series uses data sorting and linked series does not have its
+    * own sorting definition, the linked series will be sorted in the same
+    * order as the master one.
     */
   var linkedTo: js.UndefOr[String] = js.undefined
   /**
@@ -253,7 +261,7 @@ trait PlotWordcloudOptions extends js.Object {
   /**
     * (Highcharts) Properties for each single point.
     */
-  var point: js.UndefOr[PlotWordcloudPointOptions] = js.undefined
+  var point: js.UndefOr[PlotSeriesPointOptions] = js.undefined
   /**
     * (Highcharts) Same as accessibility.pointDescriptionFormatter, but for an
     * individual series. Overrides the chart wide configuration.
@@ -288,7 +296,7 @@ trait PlotWordcloudOptions extends js.Object {
     * in word cloud. Read more about it in our documentation
     */
   var spiral: js.UndefOr[String] = js.undefined
-  var states: js.UndefOr[PlotWordcloudStatesOptions] = js.undefined
+  var states: js.UndefOr[SeriesStatesOptionsObject] = js.undefined
   /**
     * (Highcharts) Sticky tracking of mouse events. When true, the `mouseOut`
     * event on a series isn't triggered until the mouse moves over another
@@ -312,7 +320,7 @@ trait PlotWordcloudOptions extends js.Object {
     * single series. Properties are inherited from tooltip, but only the
     * following properties can be defined on a series level.
     */
-  var tooltip: js.UndefOr[PlotWordcloudTooltipOptions] = js.undefined
+  var tooltip: js.UndefOr[SeriesTooltipOptionsObject] = js.undefined
   /**
     * (Highcharts, Highstock, Gantt) When a series contains a data array that
     * is longer than this, only one dimensional arrays of numbers, or two
@@ -338,10 +346,10 @@ trait PlotWordcloudOptions extends js.Object {
 object PlotWordcloudOptions {
   @scala.inline
   def apply(
-    accessibility: js.Object | PlotWordcloudAccessibilityOptions = null,
+    accessibility: SeriesAccessibilityOptionsObject = null,
     allowExtendPlayingField: js.UndefOr[Boolean] = js.undefined,
     allowPointSelect: js.UndefOr[Boolean] = js.undefined,
-    animation: PlotWordcloudAnimationOptions = null,
+    animation: Boolean | AnimationOptionsObject = null,
     animationLimit: Int | Double = null,
     boostBlending: OptionsBoostBlendingValue = null,
     borderColor: ColorString | GradientColorObject | PatternObject = null,
@@ -355,34 +363,35 @@ object PlotWordcloudOptions {
     colorKey: String = null,
     colors: js.Array[ColorString | GradientColorObject | PatternObject] = null,
     compareStart: js.UndefOr[Boolean] = js.undefined,
-    connectors: PlotWordcloudConnectorsOptions = null,
+    connectors: SeriesConnectorsOptionsObject = null,
     cropThreshold: Int | Double = null,
     cursor: String | CursorValue = null,
+    dataSorting: DataSortingOptionsObject | PlotWordcloudDataSortingOptions = null,
     description: String = null,
     edgeWidth: Int | Double = null,
     enableMouseTracking: js.UndefOr[Boolean] = js.undefined,
-    events: PlotWordcloudEventsOptions = null,
+    events: SeriesEventsOptionsObject = null,
     includeInDataExport: js.UndefOr[Boolean] = js.undefined,
     keys: js.Array[String] = null,
-    label: PlotWordcloudLabelOptions = null,
-    lastPrice: PlotWordcloudLastPriceOptions = null,
-    lastVisiblePrice: PlotWordcloudLastVisiblePriceOptions = null,
+    label: SeriesLabelOptionsObject = null,
+    lastPrice: SeriesLastPriceOptionsObject = null,
+    lastVisiblePrice: SeriesLastVisiblePriceOptionsObject = null,
     linkedTo: String = null,
     maxFontSize: Int | Double = null,
     minFontSize: Int | Double = null,
     opacity: Int | Double = null,
     placementStrategy: String = null,
-    point: PlotWordcloudPointOptions = null,
+    point: PlotSeriesPointOptions = null,
     pointDescriptionFormatter: js.Function = null,
     rotation: PlotWordcloudRotationOptions = null,
     selected: js.UndefOr[Boolean] = js.undefined,
     showInLegend: js.UndefOr[Boolean] = js.undefined,
     skipKeyboardNavigation: js.UndefOr[Boolean] = js.undefined,
     spiral: String = null,
-    states: PlotWordcloudStatesOptions = null,
+    states: SeriesStatesOptionsObject = null,
     stickyTracking: js.UndefOr[Boolean] = js.undefined,
     style: CSSObject = null,
-    tooltip: PlotWordcloudTooltipOptions = null,
+    tooltip: SeriesTooltipOptionsObject = null,
     turboThreshold: Int | Double = null,
     visible: js.UndefOr[Boolean] = js.undefined,
     zIndex: Int | Double = null
@@ -408,6 +417,7 @@ object PlotWordcloudOptions {
     if (connectors != null) __obj.updateDynamic("connectors")(connectors.asInstanceOf[js.Any])
     if (cropThreshold != null) __obj.updateDynamic("cropThreshold")(cropThreshold.asInstanceOf[js.Any])
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
+    if (dataSorting != null) __obj.updateDynamic("dataSorting")(dataSorting.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (edgeWidth != null) __obj.updateDynamic("edgeWidth")(edgeWidth.asInstanceOf[js.Any])
     if (!js.isUndefined(enableMouseTracking)) __obj.updateDynamic("enableMouseTracking")(enableMouseTracking.asInstanceOf[js.Any])

@@ -20,7 +20,7 @@ trait AnonAuthor extends js.Object {
   /**
     * The resourceId object encapsulates information that identifies the resource associated with a social network post.
     */
-  var resourceId: AnonChannelIdKindPlaylistId
+  var resourceId: AnonKindPlaylistId
   /**
     * The name of the social network.
     */
@@ -33,7 +33,7 @@ object AnonAuthor {
     author: String,
     imageUrl: String,
     referenceUrl: String,
-    resourceId: AnonChannelIdKindPlaylistId,
+    resourceId: AnonKindPlaylistId,
     `type`: String
   ): AnonAuthor = {
     val __obj = js.Dynamic.literal(author = author.asInstanceOf[js.Any], imageUrl = imageUrl.asInstanceOf[js.Any], referenceUrl = referenceUrl.asInstanceOf[js.Any], resourceId = resourceId.asInstanceOf[js.Any])

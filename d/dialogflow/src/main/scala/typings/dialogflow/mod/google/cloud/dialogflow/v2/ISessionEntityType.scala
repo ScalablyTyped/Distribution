@@ -11,7 +11,7 @@ trait ISessionEntityType extends js.Object {
   /** SessionEntityType entities */
   var entities: js.UndefOr[js.Array[IEntity] | Null] = js.undefined
   /** SessionEntityType entityOverrideMode */
-  var entityOverrideMode: js.UndefOr[EntityOverrideMode | Null] = js.undefined
+  var entityOverrideMode: js.UndefOr[EntityOverrideMode | String | Null] = js.undefined
   /** SessionEntityType name */
   var name: js.UndefOr[String | Null] = js.undefined
 }
@@ -20,7 +20,7 @@ object ISessionEntityType {
   @scala.inline
   def apply(
     entities: js.Array[IEntity] = null,
-    entityOverrideMode: EntityOverrideMode = null,
+    entityOverrideMode: EntityOverrideMode | String = null,
     name: String = null
   ): ISessionEntityType = {
     val __obj = js.Dynamic.literal()

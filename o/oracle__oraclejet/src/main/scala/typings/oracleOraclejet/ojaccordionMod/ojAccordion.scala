@@ -1,6 +1,6 @@
 package typings.oracleOraclejet.ojaccordionMod
 
-import typings.oracleOraclejet.AnonFromCollapsible
+import typings.oracleOraclejet.AnonDictpropName
 import typings.oracleOraclejet.AnonId
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.mod.baseComponent
@@ -110,9 +110,9 @@ trait ojAccordion extends baseComponent[ojAccordionSettableProperties] {
 @JSImport("@oracle/oraclejet/ojaccordion", "ojAccordion")
 @js.native
 object ojAccordion extends js.Object {
-  type ojBeforeCollapse = CustomEvent[AnonFromCollapsible]
-  type ojBeforeExpand = CustomEvent[AnonFromCollapsible]
-  type ojCollapse = CustomEvent[AnonFromCollapsible]
-  type ojExpand = CustomEvent[AnonFromCollapsible]
+  type ojBeforeCollapse = CustomEvent[AnonDictpropName]
+  type ojBeforeExpand = CustomEvent[AnonDictpropName]
+  type ojCollapse = CustomEvent[AnonDictpropName]
+  type ojExpand = CustomEvent[AnonDictpropName]
 }
 

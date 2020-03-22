@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait StartTranscriptionJobRequest extends js.Object {
   /**
+    * An object that contains the request parameters for content redaction.
+    */
+  var ContentRedaction: js.UndefOr[typings.awsSdk.transcribeserviceMod.ContentRedaction] = js.native
+  /**
     * Provides information about how a transcription job is executed. Use this field to indicate that the job can be queued for deferred execution if the concurrency limit is reached and there are no slots available to immediately run the job.
     */
   var JobExecutionSettings: js.UndefOr[typings.awsSdk.transcribeserviceMod.JobExecutionSettings] = js.native
@@ -27,7 +31,7 @@ trait StartTranscriptionJobRequest extends js.Object {
     */
   var MediaSampleRateHertz: js.UndefOr[typings.awsSdk.transcribeserviceMod.MediaSampleRateHertz] = js.native
   /**
-    * The location where the transcription is stored. If you set the OutputBucketName, Amazon Transcribe puts the transcription in the specified S3 bucket. When you call the GetTranscriptionJob operation, the operation returns this location in the TranscriptFileUri field. The S3 bucket must have permissions that allow Amazon Transcribe to put files in the bucket. For more information, see Permissions Required for IAM User Roles. You can specify an AWS Key Management Service (KMS) key to encrypt the output of your transcription using the OutputEncryptionKMSKeyId parameter. If you don't specify a KMS key, Amazon Transcribe uses the default Amazon S3 key for server-side encryption of transcripts that are placed in your S3 bucket. If you don't set the OutputBucketName, Amazon Transcribe generates a pre-signed URL, a shareable URL that provides secure access to your transcription, and returns it in the TranscriptFileUri field. Use this URL to download the transcription.
+    * The location where the transcription is stored. If you set the OutputBucketName, Amazon Transcribe puts the transcript in the specified S3 bucket. When you call the GetTranscriptionJob operation, the operation returns this location in the TranscriptFileUri field. If you enable content redaction, the redacted transcript appears in RedactedTranscriptFileUri. If you enable content redaction and choose to output an unredacted transcript, that transcript's location still appears in the TranscriptFileUri. The S3 bucket must have permissions that allow Amazon Transcribe to put files in the bucket. For more information, see Permissions Required for IAM User Roles. You can specify an AWS Key Management Service (KMS) key to encrypt the output of your transcription using the OutputEncryptionKMSKeyId parameter. If you don't specify a KMS key, Amazon Transcribe uses the default Amazon S3 key for server-side encryption of transcripts that are placed in your S3 bucket. If you don't set the OutputBucketName, Amazon Transcribe generates a pre-signed URL, a shareable URL that provides secure access to your transcription, and returns it in the TranscriptFileUri field. Use this URL to download the transcription.
     */
   var OutputBucketName: js.UndefOr[typings.awsSdk.transcribeserviceMod.OutputBucketName] = js.native
   /**
@@ -50,6 +54,7 @@ object StartTranscriptionJobRequest {
     LanguageCode: LanguageCode,
     Media: Media,
     TranscriptionJobName: TranscriptionJobName,
+    ContentRedaction: ContentRedaction = null,
     JobExecutionSettings: JobExecutionSettings = null,
     MediaFormat: MediaFormat = null,
     MediaSampleRateHertz: Int | Double = null,
@@ -58,6 +63,7 @@ object StartTranscriptionJobRequest {
     Settings: Settings = null
   ): StartTranscriptionJobRequest = {
     val __obj = js.Dynamic.literal(LanguageCode = LanguageCode.asInstanceOf[js.Any], Media = Media.asInstanceOf[js.Any], TranscriptionJobName = TranscriptionJobName.asInstanceOf[js.Any])
+    if (ContentRedaction != null) __obj.updateDynamic("ContentRedaction")(ContentRedaction.asInstanceOf[js.Any])
     if (JobExecutionSettings != null) __obj.updateDynamic("JobExecutionSettings")(JobExecutionSettings.asInstanceOf[js.Any])
     if (MediaFormat != null) __obj.updateDynamic("MediaFormat")(MediaFormat.asInstanceOf[js.Any])
     if (MediaSampleRateHertz != null) __obj.updateDynamic("MediaSampleRateHertz")(MediaSampleRateHertz.asInstanceOf[js.Any])

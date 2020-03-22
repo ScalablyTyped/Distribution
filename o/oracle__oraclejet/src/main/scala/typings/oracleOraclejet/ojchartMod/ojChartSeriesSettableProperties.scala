@@ -1,6 +1,6 @@
 package typings.oracleOraclejet.ojchartMod
 
-import typings.oracleOraclejet.AnonMedianSvgClassNameMedianSvgStyleQ2Color
+import typings.oracleOraclejet.AnonQ2Color
 import typings.oracleOraclejet.mod.JetSettableProperties
 import typings.oracleOraclejet.oracleOraclejetStrings.area
 import typings.oracleOraclejet.oracleOraclejetStrings.auto
@@ -53,7 +53,7 @@ trait ojChartSeriesSettableProperties extends JetSettableProperties {
   var assignedToY2: js.UndefOr[on | off] = js.undefined
   var borderColor: js.UndefOr[String] = js.undefined
   var borderWidth: js.UndefOr[Double] = js.undefined
-  var boxPlot: js.UndefOr[AnonMedianSvgClassNameMedianSvgStyleQ2Color] = js.undefined
+  var boxPlot: js.UndefOr[AnonQ2Color] = js.undefined
   var categories: js.UndefOr[js.Array[String]] = js.undefined
   var color: js.UndefOr[String] = js.undefined
   var displayInLegend: js.UndefOr[on | off | auto] = js.undefined
@@ -96,7 +96,7 @@ object ojChartSeriesSettableProperties {
     assignedToY2: on | off = null,
     borderColor: String = null,
     borderWidth: Int | Double = null,
-    boxPlot: AnonMedianSvgClassNameMedianSvgStyleQ2Color = null,
+    boxPlot: AnonQ2Color = null,
     categories: js.Array[String] = null,
     color: String = null,
     displayInLegend: on | off | auto = null,

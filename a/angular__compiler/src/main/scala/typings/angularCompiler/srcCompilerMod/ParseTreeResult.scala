@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@angular/compiler/src/compiler", "ParseTreeResult")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.angularCompiler.mlParserParserMod.ParseTreeResult because Already inherited
+- typings.angularCompiler.xmlParserMod.ParseTreeResult because Inheritance from two classes. Inlined  */ @JSImport("@angular/compiler/src/compiler", "ParseTreeResult")
 @js.native
 class ParseTreeResult protected ()
   extends typings.angularCompiler.htmlParserMod.ParseTreeResult {

@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait NavigationLeafRoute[Params] extends NavigationRoute[Params] {
+trait NavigationLeafRoute[Params] extends js.Object {
   /**
     * Index that represents the depth of the stack
     */

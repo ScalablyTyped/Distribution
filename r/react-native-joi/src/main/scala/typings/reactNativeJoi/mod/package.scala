@@ -5,12 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mod {
-  type ExtensionBoundSchema = typings.reactNativeJoi.mod.Schema with typings.reactNativeJoi.AnonContext
+  type ExtensionBoundSchema = typings.reactNativeJoi.mod.Schema with typings.reactNativeJoi.AnonCreateError
   type LanguageOptions = java.lang.String | scala.Boolean | scala.Null | (org.scalablytyped.runtime.StringDictionary[
     /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias react-native-joi.react-native-joi.LanguageOptions */ js.Object
-  ])
-  type LanguageRootOptions = typings.reactNativeJoi.AnonKey with (typings.std.Partial[
-    typings.std.Record[typings.reactNativeJoi.mod.Types, typings.reactNativeJoi.mod.LanguageOptions]
   ])
   type LazySchema = typings.reactNativeJoi.mod.AnySchema
   /* Rewritten from type alias, can be one of: 

@@ -2,7 +2,7 @@ package typings.steamClient.mod
 
 import typings.node.Buffer
 import typings.std.Error
-import typings.steamClient.AnonFalse
+import typings.steamClient.AnonMsg
 import typings.steamClient.steamClientBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -46,7 +46,7 @@ trait CMEventCallback extends js.Object {
     * The following fields are reserved for internal use and shall be ignored: steamid, client_sessionid, jobid_source, jobid_target.
     * (Note: pass an empty object if you don't need to set any fields)
     */
-  header: AnonFalse,
+  header: AnonMsg,
     /**
     * A Buffer or ByteBuffer containing the rest of the message
     */
@@ -58,7 +58,7 @@ trait CMEventCallback extends js.Object {
     * The following fields are reserved for internal use and shall be ignored: steamid, client_sessionid, jobid_source, jobid_target.
     * (Note: pass an empty object if you don't need to set any fields)
     */
-  header: AnonFalse,
+  header: AnonMsg,
     /**
     * A Buffer or ByteBuffer containing the rest of the message
     */
@@ -74,7 +74,7 @@ trait CMEventCallback extends js.Object {
     * The following fields are reserved for internal use and shall be ignored: steamid, client_sessionid, jobid_source, jobid_target.
     * (Note: pass an empty object if you don't need to set any fields)
     */
-  header: AnonFalse,
+  header: AnonMsg,
     /**
     * A Buffer or ByteBuffer containing the rest of the message
     */
@@ -86,7 +86,7 @@ trait CMEventCallback extends js.Object {
     * The following fields are reserved for internal use and shall be ignored: steamid, client_sessionid, jobid_source, jobid_target.
     * (Note: pass an empty object if you don't need to set any fields)
     */
-  header: AnonFalse,
+  header: AnonMsg,
     /**
     * A Buffer or ByteBuffer containing the rest of the message
     */
@@ -103,7 +103,7 @@ trait CMEventCallback extends js.Object {
     * The following fields are reserved for internal use and shall be ignored: steamid, client_sessionid, jobid_source, jobid_target.
     * (Note: pass an empty object if you don't need to set any fields)
     */
-  header: AnonFalse,
+  header: AnonMsg,
     /**
     * A Buffer or ByteBuffer containing the rest of the message
     */
@@ -120,7 +120,7 @@ trait CMEventCallback extends js.Object {
     * The following fields are reserved for internal use and shall be ignored: steamid, client_sessionid, jobid_source, jobid_target.
     * (Note: pass an empty object if you don't need to set any fields)
     */
-  header: AnonFalse,
+  header: AnonMsg,
     /**
     * A Buffer or ByteBuffer containing the rest of the message
     */

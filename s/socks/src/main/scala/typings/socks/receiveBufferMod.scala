@@ -14,9 +14,9 @@ object receiveBufferMod extends js.Object {
     var _buffer: js.Any = js.native
     var _offset: js.Any = js.native
     var _originalSize: js.Any = js.native
-    val length: Double = js.native
     def append(data: Buffer): Double = js.native
     def get(length: Double): Buffer = js.native
+    def length(): Double = js.native
     def peek(length: Double): Buffer = js.native
   }
   

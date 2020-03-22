@@ -12,7 +12,7 @@ object mod extends js.Object {
   @JSName("quadToNTriples")
   var quadToNTriples_Original: js.Function1[/* quad */ Quad, String] = js.native
   @JSName("termToNTriples")
-  var termToNTriples_Original: FnTerm = js.native
+  var termToNTriples_Original: FnCall = js.native
   def quadToNTriples(quad: Quad): String = js.native
   def termToNTriples(term: js.Any): js.UndefOr[scala.Nothing] = js.native
   def termToNTriples(term: Term): String = js.native

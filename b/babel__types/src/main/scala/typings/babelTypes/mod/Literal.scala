@@ -46,9 +46,8 @@ object Literal {
     __obj.asInstanceOf[Literal]
   }
   @scala.inline
-  def NumericLiteral_(
-    `type`: NumericLiteral,
-    value: Double,
+  def NullLiteral_(
+    `type`: NullLiteral,
     end: Int | Double = null,
     innerComments: js.Array[Comment] = null,
     leadingComments: js.Array[Comment] = null,
@@ -56,7 +55,7 @@ object Literal {
     start: Int | Double = null,
     trailingComments: js.Array[Comment] = null
   ): Literal = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
@@ -88,8 +87,9 @@ object Literal {
     __obj.asInstanceOf[Literal]
   }
   @scala.inline
-  def NullLiteral_(
-    `type`: NullLiteral,
+  def BigIntLiteral_(
+    `type`: BigIntLiteral,
+    value: String,
     end: Int | Double = null,
     innerComments: js.Array[Comment] = null,
     leadingComments: js.Array[Comment] = null,
@@ -97,7 +97,7 @@ object Literal {
     start: Int | Double = null,
     trailingComments: js.Array[Comment] = null
   ): Literal = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
@@ -108,9 +108,9 @@ object Literal {
     __obj.asInstanceOf[Literal]
   }
   @scala.inline
-  def BigIntLiteral_(
-    `type`: BigIntLiteral,
-    value: String,
+  def NumericLiteral_(
+    `type`: NumericLiteral,
+    value: Double,
     end: Int | Double = null,
     innerComments: js.Array[Comment] = null,
     leadingComments: js.Array[Comment] = null,

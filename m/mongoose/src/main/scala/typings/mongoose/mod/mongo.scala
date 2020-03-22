@@ -9,16 +9,16 @@ import typings.bson.mod.ObjectId
 import typings.mongodb.mod.MongoCallback
 import typings.mongodb.mod.MongoClient
 import typings.mongodb.mod.MongoClientOptions
-import typings.mongoose.TypeofClassBinary
-import typings.mongoose.TypeofClassDecimal128Bytes
-import typings.mongoose.TypeofClassLogger
-import typings.mongoose.TypeofClassLong
-import typings.mongoose.TypeofClassMongoClient
-import typings.mongoose.TypeofClassMongoError
-import typings.mongoose.TypeofClassObjectID_
-import typings.mongoose.TypeofClassObjectIdCacheHexString
-import typings.mongoose.TypeofClassReadPreference
-import typings.mongoose.TypeofClassTimestamp
+import typings.mongoose.TypeofBinary
+import typings.mongoose.TypeofDecimal128Instantiable
+import typings.mongoose.TypeofLogger
+import typings.mongoose.TypeofLong
+import typings.mongoose.TypeofMongoClient
+import typings.mongoose.TypeofMongoError
+import typings.mongoose.TypeofObjectID_
+import typings.mongoose.TypeofObjectIdInstantiable
+import typings.mongoose.TypeofReadPreference
+import typings.mongoose.TypeofTimestamp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -150,16 +150,16 @@ object mongo extends js.Object {
     def this(host: String, port: scala.Double) = this()
   }
   
-  var Binary: TypeofClassBinary = js.native
-  var Decimal128: TypeofClassDecimal128Bytes = js.native
-  var Logger: TypeofClassLogger = js.native
-  var Long: TypeofClassLong = js.native
-  var MongoClient: TypeofClassMongoClient = js.native
-  var MongoError: TypeofClassMongoError = js.native
-  var ObjectID: TypeofClassObjectID_ = js.native
-  var ObjectId: TypeofClassObjectIdCacheHexString = js.native
-  var ReadPreference: TypeofClassReadPreference = js.native
-  var Timestamp: TypeofClassTimestamp = js.native
+  var Binary: TypeofBinary = js.native
+  var Decimal128: TypeofDecimal128Instantiable = js.native
+  var Logger: TypeofLogger = js.native
+  var Long: TypeofLong = js.native
+  var MongoClient: TypeofMongoClient = js.native
+  var MongoError: TypeofMongoError = js.native
+  var ObjectID: TypeofObjectID_ = js.native
+  var ObjectId: TypeofObjectIdInstantiable = js.native
+  var ReadPreference: TypeofReadPreference = js.native
+  var Timestamp: TypeofTimestamp = js.native
   def connect(uri: String): js.Promise[MongoClient] = js.native
   def connect(uri: String, callback: MongoCallback[MongoClient]): Unit = js.native
   def connect(uri: String, options: MongoClientOptions): js.Promise[MongoClient] = js.native

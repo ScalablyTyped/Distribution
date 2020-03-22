@@ -14,7 +14,7 @@ object polyhedronGeometryMod extends js.Object {
     def this(vertices: js.Array[Double], indices: js.Array[Double]) = this()
     def this(vertices: js.Array[Double], indices: js.Array[Double], radius: Double) = this()
     def this(vertices: js.Array[Double], indices: js.Array[Double], radius: Double, detail: Double) = this()
-    var parameters: AnonDetailIndices = js.native
+    var parameters: AnonIndices = js.native
   }
   
   @js.native
@@ -22,7 +22,7 @@ object polyhedronGeometryMod extends js.Object {
     def this(vertices: js.Array[Double], indices: js.Array[Double]) = this()
     def this(vertices: js.Array[Double], indices: js.Array[Double], radius: Double) = this()
     def this(vertices: js.Array[Double], indices: js.Array[Double], radius: Double, detail: Double) = this()
-    var parameters: AnonDetailIndices = js.native
+    var parameters: AnonIndices = js.native
   }
   
 }

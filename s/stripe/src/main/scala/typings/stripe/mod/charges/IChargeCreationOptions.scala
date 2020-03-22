@@ -1,6 +1,6 @@
 package typings.stripe.mod.charges
 
-import typings.stripe.AnonAmountDestinationNumber
+import typings.stripe.AnonAmountDestination
 import typings.stripe.mod.IDataOptionsWithMetadata
 import typings.stripe.mod.IOptionsMetadata
 import typings.stripe.mod.IShippingInformation
@@ -97,7 +97,7 @@ trait IChargeCreationOptions extends IDataOptionsWithMetadata {
     * An optional dictionary including the account to automatically transfer
     * to as part of a destination charge. See the Connect documentation for details.
     */
-  var transfer_data: js.UndefOr[AnonAmountDestinationNumber] = js.undefined
+  var transfer_data: js.UndefOr[AnonAmountDestination] = js.undefined
   /**
     * A string that identifies this transaction as part of a group.
     * See the Connect documentation for details.
@@ -125,7 +125,7 @@ object IChargeCreationOptions {
     source: String | ICardSourceCreationOptions = null,
     statement_descriptor: String = null,
     statement_descriptor_suffix: String = null,
-    transfer_data: AnonAmountDestinationNumber = null,
+    transfer_data: AnonAmountDestination = null,
     transfer_group: String = null
   ): IChargeCreationOptions = {
     val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any])

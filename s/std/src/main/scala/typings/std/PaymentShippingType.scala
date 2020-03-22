@@ -5,9 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.std.stdStrings.shipping
   - typings.std.stdStrings.delivery
   - typings.std.stdStrings.pickup
+  - typings.std.stdStrings.shipping
 */
 trait PaymentShippingType extends js.Object
 

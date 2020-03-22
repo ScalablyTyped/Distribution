@@ -29,7 +29,7 @@ object pointsMod extends js.Object {
     	 * An instance of Geometry or BufferGeometry, where each vertex designates the position of a particle in the system.
     	 */
     var geometry: Geometry | BufferGeometry = js.native
-    var isPoints: `true` = js.native
+    val isPoints: `true` = js.native
     /**
     	 * An instance of Material, defining the object's appearance. Default is a PointsMaterial with randomised colour.
     	 */

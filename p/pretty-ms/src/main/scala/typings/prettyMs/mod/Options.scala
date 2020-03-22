@@ -17,7 +17,7 @@ trait Options extends js.Object {
   		*/
   val colonNotation: js.UndefOr[Boolean] = js.undefined
   /**
-  		Only show the first unit: `1h 10m` → `~1h`.
+  		Only show the first unit: `1h 10m` → `1h`.
   		Also ensures that `millisecondsDecimalDigits` and `secondsDecimalDigits` are both set to `0`.
   		@default false
   		*/

@@ -9,13 +9,16 @@ import typings.samchon.invokeMod.Invoke
 import typings.samchon.iprotocolMod.IProtocol
 import typings.samchon.serviceServerMod.Server
 import typings.samchon.webClientDriverMod.WebClientDriver
+import typings.tstl.binaryPredicatorMod.BinaryPredicator
 import typings.tstl.entryMod.Entry
 import typings.tstl.hashMapMod.HashMap
 import typings.tstl.hashMapMod.HashMap.Iterator
 import typings.tstl.hashMapMod.HashMap.ReverseIterator
+import typings.tstl.hasherMod.Hasher
 import typings.tstl.iforwarditeratorMod.IForwardIterator
 import typings.tstl.ipairMod.IPair
 import typings.tstl.mapContainerMod.MapContainer.InsertRet
+import typings.tstl.pairMod.Pair
 import typings.tstl.tstlBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -68,8 +71,18 @@ object userMod extends js.Object {
     /* InferMemberOverrides */
     /* protected */ override def _Erase_by_range(first: Iterator[Double, Client], last: Iterator[Double, Client]): Iterator[Double, Client] = js.native
     /* InferMemberOverrides */
+    /* protected */ override def _Handle_erase(
+      first: (Iterator[Double, Client]) | (typings.tstl.ihashmapMod.IHashMap.Iterator[Double, Client, `true`, HashMap[Double, Client]]),
+      last: (Iterator[Double, Client]) | (typings.tstl.ihashmapMod.IHashMap.Iterator[Double, Client, `true`, HashMap[Double, Client]])
+    ): Unit = js.native
+    /* InferMemberOverrides */
     /* InferMemberOverrides */
     /* protected */ override def _Handle_erase(first: Iterator[Double, Client], last: Iterator[Double, Client]): Unit = js.native
+    /* InferMemberOverrides */
+    /* protected */ override def _Handle_insert(
+      first: (Iterator[Double, Client]) | (typings.tstl.ihashmapMod.IHashMap.Iterator[Double, Client, `true`, HashMap[Double, Client]]),
+      last: (Iterator[Double, Client]) | (typings.tstl.ihashmapMod.IHashMap.Iterator[Double, Client, `true`, HashMap[Double, Client]])
+    ): Unit = js.native
     /* InferMemberOverrides */
     /* InferMemberOverrides */
     /* protected */ override def _Handle_insert(first: Iterator[Double, Client], last: Iterator[Double, Client]): Unit = js.native
@@ -93,6 +106,7 @@ object userMod extends js.Object {
       * @param last Input iterator of the last position.
       */
     /* InferMemberOverrides */
+    /* InferMemberOverrides */
     override def assign[InputIterator /* <: IForwardIterator[IPair[Double, Client], InputIterator] */](first: InputIterator, last: InputIterator): Unit = js.native
     /**
       * Iterator to the first element.
@@ -100,6 +114,7 @@ object userMod extends js.Object {
       * @return Iterator to the first element.
       */
     /* CompleteClass */
+    /* InferMemberOverrides */
     /* InferMemberOverrides */
     override def begin(): typings.tstl.icontainerMod.IContainer.Iterator[
         Entry[Double, Client], 
@@ -109,8 +124,59 @@ object userMod extends js.Object {
         IPair[Double, Client]
       ] = js.native
     /**
+      * Iterator to the first element in a specific bucket.
+      *
+      * @param index Index number of the specific bucket.
+      * @return Iterator from the specific bucket.
+      */
+    /* InferMemberOverrides */
+    override def begin(index: Double): typings.tstl.ihashmapMod.IHashMap.Iterator[Double, Client, `true`, HashMap[Double, Client]] = js.native
+    /**
       * @inheritDoc
       */
+    /* InferMemberOverrides */
+    @JSName("begin")
+    override def begin_Iterator(): Iterator[Double, Client] = js.native
+    /**
+      * @inheritDoc
+      */
+    /* InferMemberOverrides */
+    @JSName("begin")
+    override def begin_Iterator(index: Double): Iterator[Double, Client] = js.native
+    /**
+      * @inheritDoc
+      */
+    /**
+      * Compute bucket index for the *key*.
+      *
+      * @param key Target key.
+      * @return Index number.
+      */
+    /* InferMemberOverrides */
+    override def bucket(key: Double): Double = js.native
+    /**
+      * @inheritDoc
+      */
+    /**
+      * Get number of buckets.
+      */
+    /* InferMemberOverrides */
+    override def bucket_count(): Double = js.native
+    /**
+      * @inheritDoc
+      */
+    /**
+      * Get size of a specific bucket.
+      *
+      * @param index Specific position.
+      * @return Size of the specific bucket.
+      */
+    /* InferMemberOverrides */
+    override def bucket_size(index: Double): Double = js.native
+    /**
+      * @inheritDoc
+      */
+    /* InferMemberOverrides */
     /* InferMemberOverrides */
     override def clear(): Unit = js.native
     /**
@@ -180,11 +246,28 @@ object userMod extends js.Object {
         ReverseIterator[Double, Client]
       ] = js.native
     /* InferMemberOverrides */
+    @JSName("emplace")
+    override def emplace_InsertRet(key: Double, `val`: Client): InsertRet[
+        Double, 
+        Client, 
+        `true`, 
+        HashMap[Double, Client], 
+        typings.tstl.ihashmapMod.IHashMap.Iterator[Double, Client, `true`, HashMap[Double, Client]], 
+        typings.tstl.ihashmapMod.IHashMap.ReverseIterator[Double, Client, `true`, HashMap[Double, Client]]
+      ] = js.native
+    /* InferMemberOverrides */
     /* InferMemberOverrides */
     override def emplace_hint(hint: Iterator[Double, Client], key: Double, `val`: Client): Iterator[Double, Client] = js.native
     /**
+      * @inheritDoc
+      */
+    /* InferMemberOverrides */
+    @JSName("emplace_hint")
+    override def emplace_hint_Iterator(hint: Iterator[Double, Client], key: Double, `val`: Client): Iterator[Double, Client] = js.native
+    /**
       * Test whether container is empty.
       */
+    /* InferMemberOverrides */
     /* InferMemberOverrides */
     override def empty(): Boolean = js.native
     /**
@@ -194,6 +277,7 @@ object userMod extends js.Object {
       */
     /* CompleteClass */
     /* InferMemberOverrides */
+    /* InferMemberOverrides */
     override def end(): typings.tstl.icontainerMod.IContainer.Iterator[
         Entry[Double, Client], 
         HashMap[Double, Client], 
@@ -202,12 +286,33 @@ object userMod extends js.Object {
         IPair[Double, Client]
       ] = js.native
     /**
+      * Iterator to the end in a specific bucket.
+      *
+      * @param index Index number of the specific bucket.
+      * @return Iterator from the specific bucket.
+      */
+    /* InferMemberOverrides */
+    override def end(index: Double): typings.tstl.ihashmapMod.IHashMap.Iterator[Double, Client, `true`, HashMap[Double, Client]] = js.native
+    /**
+      * @inheritDoc
+      */
+    /* InferMemberOverrides */
+    @JSName("end")
+    override def end_Iterator(): Iterator[Double, Client] = js.native
+    /**
+      * @inheritDoc
+      */
+    /* InferMemberOverrides */
+    @JSName("end")
+    override def end_Iterator(index: Double): Iterator[Double, Client] = js.native
+    /**
       * Erase elements in range.
       *
       * @param first Range of the first position to erase.
       * @param last Rangee of the last position to erase.
       * @return Iterator following the last removed element, strained by the erasing.
       */
+    /* InferMemberOverrides */
     /* InferMemberOverrides */
     override def erase(first: Iterator[Double, Client], last: Iterator[Double, Client]): Iterator[Double, Client] = js.native
     /**
@@ -217,6 +322,7 @@ object userMod extends js.Object {
       * @return Iterator following the *pos*, strained by the erasing.
       */
     /* InferMemberOverrides */
+    /* InferMemberOverrides */
     override def erase(pos: Iterator[Double, Client]): Iterator[Double, Client] = js.native
     /**
       * @inheritDoc
@@ -225,6 +331,23 @@ object userMod extends js.Object {
     /* InferMemberOverrides */
     @JSName("erase")
     override def erase_IteratorT(it: Iterator[Double, Client]): Iterator[Double, Client] = js.native
+    /**
+      * Extract an element by key.
+      *
+      * @param key Key to search for.
+      * @return The extracted element.
+      */
+    /* InferMemberOverrides */
+    override def extract(key: Double): Entry[Double, Client] = js.native
+    /**
+      * Extract an element by iterator.
+      *
+      * @param pos The iterator to the element for extraction.
+      * @return Iterator following the *pos*, strained by the extraction.
+      */
+    /* InferMemberOverrides */
+    @JSName("extract")
+    override def extract_Iterator(pos: Iterator[Double, Client]): Iterator[Double, Client] = js.native
     /**
       * @inheritDoc
       */
@@ -237,6 +360,20 @@ object userMod extends js.Object {
     /* InferMemberOverrides */
     /* InferMemberOverrides */
     override def find(key: Double): Iterator[Double, Client] = js.native
+    /**
+      * @inheritDoc
+      */
+    /* InferMemberOverrides */
+    @JSName("find")
+    override def find_Iterator(key: Double): Iterator[Double, Client] = js.native
+    /**
+      * Get a value.
+      *
+      * @param key Key to search for.
+      * @return The value mapped by the key.
+      */
+    /* InferMemberOverrides */
+    override def get(key: Double): Client = js.native
     /**
       * Get account id.
       *
@@ -269,6 +406,16 @@ object userMod extends js.Object {
     override def has(key: Double): Boolean = js.native
     /* InferMemberOverrides */
     override def hasEventListener(`type`: Type): Boolean = js.native
+    /**
+      * @inheritDoc
+      */
+    /**
+      * Get hash function.
+      *
+      * @return The hash function.
+      */
+    /* InferMemberOverrides */
+    override def hash_function(): Hasher[Double] = js.native
     /* InferMemberOverrides */
     /* InferMemberOverrides */
     override def insert(hint: Iterator[Double, Client], pair: IPair[Double, Client]): Iterator[Double, Client] = js.native
@@ -286,6 +433,45 @@ object userMod extends js.Object {
     /* InferMemberOverrides */
     override def insert[InputIterator /* <: IForwardIterator[IPair[Double, Client], InputIterator] */](first: InputIterator, last: InputIterator): Unit = js.native
     /**
+      * Insert or assign an element with hint.
+      *
+      * @param hint Hint for the position where the element can be inserted.
+      * @param key Key to be mapped or search for.
+      * @param value Value to insert or assign.
+      * @return An iterator to the newly inserted element, if the specified key doesn't exist, otherwise an iterator to the ordinary element.
+      */
+    /* InferMemberOverrides */
+    override def insert_or_assign(hint: Iterator[Double, Client], key: Double, value: Client): Iterator[Double, Client] = js.native
+    /**
+      * Insert or assign an element.
+      *
+      * @param key Key to be mapped or search for.
+      * @param value Value to insert or assign.
+      * @return {@link Pair} of an iterator to the newly inserted element and `true`, if the specified *key* doesn't exist, otherwise {@link Pair} of iterator to the ordinary element and `false`.
+      */
+    /* InferMemberOverrides */
+    override def insert_or_assign(key: Double, value: Client): Pair[Iterator[Double, Client], Boolean] = js.native
+    /**
+      * @inheritDoc
+      */
+    /**
+      * Get key equality predicator.
+      *
+      * @return The key equality predicator.
+      */
+    /* InferMemberOverrides */
+    override def key_eq(): BinaryPredicator[Double, Double] = js.native
+    /**
+      * @inheritDoc
+      */
+    /**
+      * Compute load factor.
+      *
+      * @return `this.size() / this.bucket_count()`
+      */
+    /* InferMemberOverrides */
+    override def load_factor(): Double = js.native
+    /**
       * Log-out.
       *
       * This {@link logout logout()} method configures {@link getAccountID account id} to empty string and
@@ -296,6 +482,26 @@ object userMod extends js.Object {
       * with the ordinary {@link getAccountID account id} more.
       */
     def logout(): Unit = js.native
+    /**
+      * @inheritDoc
+      */
+    /**
+      * Get maximum load factor that allowable.
+      *
+      * @return The maximum load factor.
+      */
+    /* InferMemberOverrides */
+    override def max_load_factor(): Double = js.native
+    /**
+      * @inheritDoc
+      */
+    /**
+      * Set maximum load factor.
+      *
+      * @param z The new value to change.
+      */
+    /* InferMemberOverrides */
+    override def max_load_factor(z: Double): Unit = js.native
     /**
       * Merge two containers.
       *
@@ -311,15 +517,52 @@ object userMod extends js.Object {
       * @return Number of elements in the container after insertion.
       */
     /* InferMemberOverrides */
+    /* InferMemberOverrides */
     override def push(items: (IPair[Double, Client])*): Double = js.native
     /**
       * Reverse iterator to the first element in reverse.
       *
       * @return Reverse iterator to the first.
       */
-    /* CompleteClass */
+    /* InferMemberOverrides */
     /* InferMemberOverrides */
     override def rbegin(): ReverseIterator[Double, Client] = js.native
+    /**
+      * @inheritDoc
+      */
+    /* InferMemberOverrides */
+    override def rbegin(index: Double): ReverseIterator[Double, Client] = js.native
+    /**
+      * @inheritDoc
+      */
+    /* InferMemberOverrides */
+    @JSName("rbegin")
+    override def rbegin_ReverseIterator(): typings.tstl.ihashmapMod.IHashMap.ReverseIterator[Double, Client, `true`, HashMap[Double, Client]] = js.native
+    /**
+      * @inheritDoc
+      */
+    /* InferMemberOverrides */
+    override def refresh(): Unit = js.native
+    /**
+      * @inheritDoc
+      */
+    /* InferMemberOverrides */
+    override def refresh(first: Iterator[Double, Client], last: Iterator[Double, Client]): Unit = js.native
+    /**
+      * @inheritDoc
+      */
+    /* InferMemberOverrides */
+    override def refresh(it: Iterator[Double, Client]): Unit = js.native
+    /**
+      * @inheritDoc
+      */
+    /**
+      * Change of bucktes.
+      *
+      * @param n The number to change.
+      */
+    /* InferMemberOverrides */
+    override def rehash(n: Double): Unit = js.native
     /* InferMemberOverrides */
     override def removeEventListener(
       `type`: Type,
@@ -335,9 +578,20 @@ object userMod extends js.Object {
       *
       * @return Reverse iterator to the end.
       */
-    /* CompleteClass */
+    /* InferMemberOverrides */
     /* InferMemberOverrides */
     override def rend(): ReverseIterator[Double, Client] = js.native
+    /**
+      * @inheritDoc
+      */
+    /* InferMemberOverrides */
+    override def rend(index: Double): ReverseIterator[Double, Client] = js.native
+    /**
+      * @inheritDoc
+      */
+    /* InferMemberOverrides */
+    @JSName("rend")
+    override def rend_ReverseIterator(): typings.tstl.ihashmapMod.IHashMap.ReverseIterator[Double, Client, `true`, HashMap[Double, Client]] = js.native
     /**
       * Sending message.
       *
@@ -348,6 +602,16 @@ object userMod extends js.Object {
     /* CompleteClass */
     override def replyData(invoke: Invoke): Unit = js.native
     /**
+      * @inheritDoc
+      */
+    /**
+      * Reserve buckets enable to store *n* elements.
+      *
+      * @param n The capacity to reserve.
+      */
+    /* InferMemberOverrides */
+    override def reserve(n: Double): Unit = js.native
+    /**
       * Handling replied message.
       *
       * Handles replied message or shifts the responsibility to chain.
@@ -356,6 +620,14 @@ object userMod extends js.Object {
       */
     /* CompleteClass */
     override def sendData(invoke: Invoke): Unit = js.native
+    /**
+      * Set a value with key.
+      *
+      * @param key Key to be mapped or search for.
+      * @param val Value to insert or assign.
+      */
+    /* InferMemberOverrides */
+    override def set(key: Double, `val`: Client): Unit = js.native
     /**
       * Set *account id* and *authority*.
       *
@@ -380,6 +652,7 @@ object userMod extends js.Object {
       */
     /* CompleteClass */
     /* InferMemberOverrides */
+    /* InferMemberOverrides */
     override def size(): Double = js.native
     /**
       * Swap elements.
@@ -387,12 +660,14 @@ object userMod extends js.Object {
       * @param obj Target container to swap.
       */
     /* InferMemberOverrides */
+    /* InferMemberOverrides */
     override def swap(obj: HashMap[Double, Client]): Unit = js.native
     /**
       * Native function for `JSON.stringify()`.
       *
       * @return An array containing children elements.
       */
+    /* InferMemberOverrides */
     /* InferMemberOverrides */
     override def toJSON(): js.Array[Entry[Double, Client]] = js.native
   }

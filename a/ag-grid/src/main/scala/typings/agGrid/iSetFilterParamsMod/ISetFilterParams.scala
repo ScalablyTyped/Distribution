@@ -1,6 +1,6 @@
 package typings.agGrid.iSetFilterParamsMod
 
-import typings.agGrid.AnonICellRendererComp
+import typings.agGrid.AnonInstantiableICellRendererComp
 import typings.agGrid.componentResolverMod.ComponentHolder
 import typings.agGrid.iCellRendererMod.ICellRendererFunc
 import typings.agGrid.iFilterMod.IFilterParams
@@ -15,7 +15,7 @@ trait ISetFilterParams
   @JSName("apply")
   var apply: Boolean = js.native
   var cellHeight: Double = js.native
-  var cellRenderer: AnonICellRendererComp | ICellRendererFunc | String = js.native
+  var cellRenderer: AnonInstantiableICellRendererComp | ICellRendererFunc | String = js.native
   var comparator: js.UndefOr[js.Function2[/* a */ js.Any, /* b */ js.Any, Double]] = js.native
   var debounceMs: js.UndefOr[Double] = js.native
   var miniFilterSearchByRefDataKey: js.UndefOr[Boolean] = js.native

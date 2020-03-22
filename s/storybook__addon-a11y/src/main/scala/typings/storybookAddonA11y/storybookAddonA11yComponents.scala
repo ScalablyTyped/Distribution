@@ -1,6 +1,7 @@
 package typings.storybookAddonA11y
 
 import typings.react.mod.ComponentType
+import typings.react.mod._Global_.JSX.LibraryManagedAttributes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,6 +13,11 @@ object storybookAddonA11yComponents extends storybookAddonA11yProps {
   def ColorBlindness: ComponentType[js.Object] = typings.storybookAddonA11y.colorBlindnessMod.ColorBlindness.asInstanceOf[typings.react.mod.ComponentType[js.Object]]
   @scala.inline
   def Elements: ComponentType[ElementsProps] = typings.storybookAddonA11y.elementsMod.Elements.asInstanceOf[typings.react.mod.ComponentType[ElementsProps]]
+  @scala.inline
+  def HighlightToggle: ComponentType[HighlightToggleProps[LibraryManagedAttributes[TypeofHighlightToggle, js.Any]]] = typings.storybookAddonA11y.highlightToggleMod.default.asInstanceOf[typings.react.mod.ComponentType[
+  HighlightToggleProps[
+    typings.react.mod._Global_.JSX.LibraryManagedAttributes[typings.storybookAddonA11y.TypeofHighlightToggle, js.Any]
+  ]]]
   @scala.inline
   def Info: ComponentType[InfoProps] = typings.storybookAddonA11y.infoMod.Info.asInstanceOf[typings.react.mod.ComponentType[InfoProps]]
   @scala.inline

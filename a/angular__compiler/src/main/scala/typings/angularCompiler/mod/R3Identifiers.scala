@@ -13,11 +13,13 @@ class R3Identifiers ()
 @JSImport("@angular/compiler", "R3Identifiers")
 @js.native
 object R3Identifiers extends js.Object {
-  var BaseDef: typings.angularCompiler.outputAstMod.ExternalReference = js.native
   var ComponentDefWithMeta: typings.angularCompiler.outputAstMod.ExternalReference = js.native
+  var CopyDefinitionFeature: typings.angularCompiler.outputAstMod.ExternalReference = js.native
   var DirectiveDefWithMeta: typings.angularCompiler.outputAstMod.ExternalReference = js.native
+  var FactoryDef: typings.angularCompiler.outputAstMod.ExternalReference = js.native
   var InheritDefinitionFeature: typings.angularCompiler.outputAstMod.ExternalReference = js.native
   var InjectorDef: typings.angularCompiler.outputAstMod.ExternalReference = js.native
+  var ModuleWithProviders: typings.angularCompiler.outputAstMod.ExternalReference = js.native
   var NEW_METHOD: String = js.native
   var NgModuleDefWithMeta: typings.angularCompiler.outputAstMod.ExternalReference = js.native
   var NgOnChangesFeature: typings.angularCompiler.outputAstMod.ExternalReference = js.native
@@ -25,7 +27,7 @@ object R3Identifiers extends js.Object {
   var PipeDefWithMeta: typings.angularCompiler.outputAstMod.ExternalReference = js.native
   var ProvidersFeature: typings.angularCompiler.outputAstMod.ExternalReference = js.native
   var TRANSFORM_METHOD: String = js.native
-  var allocHostVars: typings.angularCompiler.outputAstMod.ExternalReference = js.native
+  var advance: typings.angularCompiler.outputAstMod.ExternalReference = js.native
   var attribute: typings.angularCompiler.outputAstMod.ExternalReference = js.native
   var attributeInterpolate1: typings.angularCompiler.outputAstMod.ExternalReference = js.native
   var attributeInterpolate2: typings.angularCompiler.outputAstMod.ExternalReference = js.native
@@ -51,7 +53,6 @@ object R3Identifiers extends js.Object {
   var containerCreate: typings.angularCompiler.outputAstMod.ExternalReference = js.native
   var contentQuery: typings.angularCompiler.outputAstMod.ExternalReference = js.native
   var defaultStyleSanitizer: typings.angularCompiler.outputAstMod.ExternalReference = js.native
-  var defineBase: typings.angularCompiler.outputAstMod.ExternalReference = js.native
   var defineComponent: typings.angularCompiler.outputAstMod.ExternalReference = js.native
   var defineDirective: typings.angularCompiler.outputAstMod.ExternalReference = js.native
   var defineInjector: typings.angularCompiler.outputAstMod.ExternalReference = js.native
@@ -64,7 +65,6 @@ object R3Identifiers extends js.Object {
   var elementContainerEnd: typings.angularCompiler.outputAstMod.ExternalReference = js.native
   var elementContainerStart: typings.angularCompiler.outputAstMod.ExternalReference = js.native
   var elementEnd: typings.angularCompiler.outputAstMod.ExternalReference = js.native
-  var elementHostAttrs: typings.angularCompiler.outputAstMod.ExternalReference = js.native
   var elementStart: typings.angularCompiler.outputAstMod.ExternalReference = js.native
   var enableBindings: typings.angularCompiler.outputAstMod.ExternalReference = js.native
   var getCurrentView: typings.angularCompiler.outputAstMod.ExternalReference = js.native
@@ -76,16 +76,15 @@ object R3Identifiers extends js.Object {
   var i18nAttributes: typings.angularCompiler.outputAstMod.ExternalReference = js.native
   var i18nEnd: typings.angularCompiler.outputAstMod.ExternalReference = js.native
   var i18nExp: typings.angularCompiler.outputAstMod.ExternalReference = js.native
-  var i18nLocalize: typings.angularCompiler.outputAstMod.ExternalReference = js.native
   var i18nPostprocess: typings.angularCompiler.outputAstMod.ExternalReference = js.native
   var i18nStart: typings.angularCompiler.outputAstMod.ExternalReference = js.native
   var inject: typings.angularCompiler.outputAstMod.ExternalReference = js.native
   var injectAttribute: typings.angularCompiler.outputAstMod.ExternalReference = js.native
   var injectPipeChangeDetectorRef: typings.angularCompiler.outputAstMod.ExternalReference = js.native
+  var invalidFactory: typings.angularCompiler.outputAstMod.ExternalReference = js.native
+  var invalidFactoryDep: typings.angularCompiler.outputAstMod.ExternalReference = js.native
   var listener: typings.angularCompiler.outputAstMod.ExternalReference = js.native
-  var load: typings.angularCompiler.outputAstMod.ExternalReference = js.native
-  var loadContentQuery: typings.angularCompiler.outputAstMod.ExternalReference = js.native
-  var loadViewQuery: typings.angularCompiler.outputAstMod.ExternalReference = js.native
+  var loadQuery: typings.angularCompiler.outputAstMod.ExternalReference = js.native
   var namespaceHTML: typings.angularCompiler.outputAstMod.ExternalReference = js.native
   var namespaceMathML: typings.angularCompiler.outputAstMod.ExternalReference = js.native
   var namespaceSVG: typings.angularCompiler.outputAstMod.ExternalReference = js.native
@@ -137,6 +136,15 @@ object R3Identifiers extends js.Object {
   var staticContentQuery: typings.angularCompiler.outputAstMod.ExternalReference = js.native
   var staticViewQuery: typings.angularCompiler.outputAstMod.ExternalReference = js.native
   var styleMap: typings.angularCompiler.outputAstMod.ExternalReference = js.native
+  var styleMapInterpolate1: typings.angularCompiler.outputAstMod.ExternalReference = js.native
+  var styleMapInterpolate2: typings.angularCompiler.outputAstMod.ExternalReference = js.native
+  var styleMapInterpolate3: typings.angularCompiler.outputAstMod.ExternalReference = js.native
+  var styleMapInterpolate4: typings.angularCompiler.outputAstMod.ExternalReference = js.native
+  var styleMapInterpolate5: typings.angularCompiler.outputAstMod.ExternalReference = js.native
+  var styleMapInterpolate6: typings.angularCompiler.outputAstMod.ExternalReference = js.native
+  var styleMapInterpolate7: typings.angularCompiler.outputAstMod.ExternalReference = js.native
+  var styleMapInterpolate8: typings.angularCompiler.outputAstMod.ExternalReference = js.native
+  var styleMapInterpolateV: typings.angularCompiler.outputAstMod.ExternalReference = js.native
   var styleProp: typings.angularCompiler.outputAstMod.ExternalReference = js.native
   var stylePropInterpolate1: typings.angularCompiler.outputAstMod.ExternalReference = js.native
   var stylePropInterpolate2: typings.angularCompiler.outputAstMod.ExternalReference = js.native
@@ -147,13 +155,9 @@ object R3Identifiers extends js.Object {
   var stylePropInterpolate7: typings.angularCompiler.outputAstMod.ExternalReference = js.native
   var stylePropInterpolate8: typings.angularCompiler.outputAstMod.ExternalReference = js.native
   var stylePropInterpolateV: typings.angularCompiler.outputAstMod.ExternalReference = js.native
-  var styleSanitizer: typings.angularCompiler.outputAstMod.ExternalReference = js.native
-  var styling: typings.angularCompiler.outputAstMod.ExternalReference = js.native
-  var stylingApply: typings.angularCompiler.outputAstMod.ExternalReference = js.native
   var templateCreate: typings.angularCompiler.outputAstMod.ExternalReference = js.native
   var templateRefExtractor: typings.angularCompiler.outputAstMod.ExternalReference = js.native
   var text: typings.angularCompiler.outputAstMod.ExternalReference = js.native
-  var textBinding: typings.angularCompiler.outputAstMod.ExternalReference = js.native
   var textInterpolate: typings.angularCompiler.outputAstMod.ExternalReference = js.native
   var textInterpolate1: typings.angularCompiler.outputAstMod.ExternalReference = js.native
   var textInterpolate2: typings.angularCompiler.outputAstMod.ExternalReference = js.native

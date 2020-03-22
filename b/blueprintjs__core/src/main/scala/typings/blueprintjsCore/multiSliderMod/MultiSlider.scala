@@ -3,7 +3,7 @@ package typings.blueprintjsCore.multiSliderMod
 import typings.blueprintjsCore.AnonLabelPrecision
 import typings.blueprintjsCore.commonMod.AbstractPureComponent2
 import typings.blueprintjsCore.handlePropsMod.IHandleProps
-import typings.react.mod.FunctionComponent
+import typings.react.mod.SFC
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -44,7 +44,7 @@ class MultiSlider ()
 @JSImport("@blueprintjs/core/lib/esm/components/slider/multiSlider", "MultiSlider")
 @js.native
 object MultiSlider extends js.Object {
-  var Handle: FunctionComponent[IHandleProps] = js.native
+  var Handle: SFC[IHandleProps] = js.native
   var defaultProps: IMultiSliderProps = js.native
   var defaultSliderProps: ISliderBaseProps = js.native
   var displayName: String = js.native

@@ -2,7 +2,7 @@ package typings.algoliasearch.mod.Places
 
 import typings.algoliasearch.AnonAdministrative
 import typings.algoliasearch.AnonDefault
-import typings.algoliasearch.AnonDefaultKey
+import typings.algoliasearch.AnonDictkey
 import typings.algoliasearch.AnonLat
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -34,12 +34,12 @@ trait HitInterface extends js.Object {
     * https://community.algolia.com/places/api-clients.html#api-suggestion-city
     * List of the associated city names. If no language parameter is specified, retrieves all of them.
     */
-  var city: js.UndefOr[AnonDefaultKey] = js.undefined
+  var city: js.UndefOr[AnonDefault] = js.undefined
   /**
     * Associated country name.
     * https://community.algolia.com/places/api-clients.html#api-suggestion-country
     */
-  var country: AnonDefault
+  var country: AnonDictkey
   /**
     * Two letters country code (ISO 639-1).
     * https://community.algolia.com/places/api-clients.html#api-suggestion-countryCode
@@ -49,7 +49,7 @@ trait HitInterface extends js.Object {
     * List of the associated county names. If no language parameter is specified, retrieves all of them.
     * https://community.algolia.com/places/api-clients.html#api-suggestion-county
     */
-  var county: js.UndefOr[AnonDefaultKey] = js.undefined
+  var county: js.UndefOr[AnonDefault] = js.undefined
   var district: js.UndefOr[String] = js.undefined
   var importance: Double
   var is_city: Boolean
@@ -61,7 +61,7 @@ trait HitInterface extends js.Object {
     * https://community.algolia.com/places/api-clients.html#api-suggestion-name
     * List of names of the place. If no language parameter is specified, retrieves all of them.
     */
-  var locale_names: AnonDefaultKey
+  var locale_names: AnonDefault
   var objectID: String
   /**
     * Associated population.
@@ -82,7 +82,7 @@ object HitInterface {
     _highlightResult: AnonAdministrative,
     _tags: js.Array[String],
     admin_level: Double,
-    country: AnonDefault,
+    country: AnonDictkey,
     country_code: String,
     importance: Double,
     is_city: Boolean,
@@ -90,11 +90,11 @@ object HitInterface {
     is_highway: Boolean,
     is_popular: Boolean,
     is_suburb: Boolean,
-    locale_names: AnonDefaultKey,
+    locale_names: AnonDefault,
     objectID: String,
     administrative: js.Array[String] = null,
-    city: AnonDefaultKey = null,
-    county: AnonDefaultKey = null,
+    city: AnonDefault = null,
+    county: AnonDefault = null,
     district: String = null,
     population: Int | Double = null,
     postcode: js.Array[String] = null

@@ -6,7 +6,7 @@ import typings.nodal.AnonColumns
 import typings.nodal.AnonConvert
 import typings.nodal.AnonCreatedat
 import typings.nodal.AnonParams
-import typings.nodal.TypeofClassModelCalcField
+import typings.nodal.TypeofModelInstantiable
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -37,7 +37,7 @@ class Model protected () extends js.Object {
   var _validationsList: js.Array[_] = js.native
   var _verificationsList: js.Any = js.native
   var aggregateBy: AnonCreatedat = js.native
-  var constructor: TypeofClassModelCalcField = js.native
+  var constructor: TypeofModelInstantiable = js.native
   var data: js.Any = js.native
   var db: Database | js.Any = js.native
   var externalInterface: js.Array[String] = js.native
@@ -381,7 +381,7 @@ object Model extends js.Object {
     *   "as": What to display the name of the child as when joined to the parent (default to camelCase of child name)
     *   "multiple": Whether the child exists in multiples for the parent (defaults to false)
     */
-  def joinsTo(modelClass: TypeofClassModelCalcField, options: AnonAs): RelationshipEdge | Null = js.native
+  def joinsTo(modelClass: TypeofModelInstantiable, options: AnonAs): RelationshipEdge | Null = js.native
   /**
     * Creates a new Composer (ORM) instance to begin a new query.
     * @param {optional Nodal.Database} db Deprecated - provide a database to query from. Set the model's db in its constructor file, instead.

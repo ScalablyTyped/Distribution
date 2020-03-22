@@ -2,13 +2,13 @@ package typings.arangodb.arangodbRequestMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.arangodb.AnonBearer
-import typings.arangodb.AnonPasswordUsername
+import typings.arangodb.AnonUsername
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RequestOptions extends js.Object {
-  var auth: js.UndefOr[AnonPasswordUsername | AnonBearer] = js.undefined
+  var auth: js.UndefOr[AnonUsername | AnonBearer] = js.undefined
   var body: js.UndefOr[js.Any] = js.undefined
   var encoding: js.UndefOr[String | Null] = js.undefined
   var followRedirect: js.UndefOr[Boolean] = js.undefined
@@ -26,7 +26,7 @@ trait RequestOptions extends js.Object {
 object RequestOptions {
   @scala.inline
   def apply(
-    auth: AnonPasswordUsername | AnonBearer = null,
+    auth: AnonUsername | AnonBearer = null,
     body: js.Any = null,
     encoding: String = null,
     followRedirect: js.UndefOr[Boolean] = js.undefined,

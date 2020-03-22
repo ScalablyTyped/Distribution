@@ -83,7 +83,8 @@ trait INavProps extends js.Object {
     */
   var onRenderLink: js.UndefOr[IRenderFunction[INavLink]] = js.undefined
   /**
-    * (Optional) The nav link selected state aria label.
+    * (Deprecated) Use ariaCurrent on links instead
+    * @deprecated Use ariaCurrent on links instead
     */
   var selectedAriaLabel: js.UndefOr[String] = js.undefined
   /**

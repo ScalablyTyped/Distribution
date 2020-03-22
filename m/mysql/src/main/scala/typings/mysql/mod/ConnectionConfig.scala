@@ -1,10 +1,9 @@
 package typings.mysql.mod
 
-import typings.mysql.AnonRejectUnauthorized
+import typings.mysql.SecureContextOptionsrejec
 import typings.mysql.mysqlStrings.DATE
 import typings.mysql.mysqlStrings.DATETIME
 import typings.mysql.mysqlStrings.TIMESTAMP
-import typings.node.tlsMod.SecureContextOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -70,7 +69,7 @@ trait ConnectionConfig extends ConnectionOptions {
   /**
     * object with ssl parameters or a string containing name of ssl profile
     */
-  var ssl: js.UndefOr[String | (SecureContextOptions with AnonRejectUnauthorized)] = js.undefined
+  var ssl: js.UndefOr[String | SecureContextOptionsrejec] = js.undefined
   /**
     * Stringify objects instead of converting to values. (Default: 'false')
     */
@@ -130,7 +129,7 @@ object ConnectionConfig {
     port: Int | Double = null,
     queryFormat: (/* query */ String, /* values */ js.Any) => String = null,
     socketPath: String = null,
-    ssl: String | (SecureContextOptions with AnonRejectUnauthorized) = null,
+    ssl: String | SecureContextOptionsrejec = null,
     stringifyObjects: js.UndefOr[Boolean] = js.undefined,
     supportBigNumbers: js.UndefOr[Boolean] = js.undefined,
     timeout: Int | Double = null,

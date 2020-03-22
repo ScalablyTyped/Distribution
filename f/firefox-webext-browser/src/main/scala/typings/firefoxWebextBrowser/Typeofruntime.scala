@@ -31,7 +31,7 @@ trait Typeofruntime extends js.Object {
     * Fired when the extension is first installed, when the extension is updated to a new version, and when the
     * browser is updated to a new version.
     */
-  val onInstalled: WebExtEvent[js.Function1[/* details */ AnonIdPreviousVersion, Unit]] = js.native
+  val onInstalled: WebExtEvent[js.Function1[/* details */ AnonPreviousVersion, Unit]] = js.native
   /**
     * Fired when a message is sent from either an extension process or a content script.
     *
@@ -192,7 +192,7 @@ trait Typeofruntime extends js.Object {
     *     your own extension/app. Required if sending messages from a web page for web messaging.
     */
   def sendMessage(extensionId: String, message: js.Any): js.Promise[_] = js.native
-  def sendMessage(extensionId: String, message: js.Any, options: AnonIncludeTlsChannelIdToProxyScript): js.Promise[_] = js.native
+  def sendMessage(extensionId: String, message: js.Any, options: AnonToProxyScript): js.Promise[_] = js.native
   /**
     * Sends a single message to event listeners within your extension/app or a different extension/app. Similar to
     * `runtime.connect` but only sends a single message, with an optional response. If sending to your extension, the
@@ -203,7 +203,7 @@ trait Typeofruntime extends js.Object {
     * Allowed in: Proxy scripts
     */
   def sendMessage(message: js.Any): js.Promise[_] = js.native
-  def sendMessage(message: js.Any, options: AnonIncludeTlsChannelIdToProxyScript): js.Promise[_] = js.native
+  def sendMessage(message: js.Any, options: AnonToProxyScript): js.Promise[_] = js.native
   /**
     * Send a single message to a native application.
     *

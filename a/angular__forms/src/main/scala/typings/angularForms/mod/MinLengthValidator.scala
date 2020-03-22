@@ -18,7 +18,7 @@ class MinLengthValidator ()
     * @description
     * Tracks changes to the the minimum length bound to this directive.
     */
-  var minlength: String = js.native
+  var minlength: String | Double = js.native
   /**
     * A callback method that is invoked immediately after the
     * default change detector has checked data-bound properties

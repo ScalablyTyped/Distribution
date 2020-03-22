@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object mod {
   type IToHaveNoViolations = js.Function1[
-    /* results */ js.UndefOr[typings.std.Partial[typings.axeCore.mod.AxeResults]], 
+    /* results */ js.UndefOr[typings.jestAxe.PartialAxeResults], 
     typings.jestAxe.mod.AssertionsResult
   ]
   type JestAxe = js.Function2[

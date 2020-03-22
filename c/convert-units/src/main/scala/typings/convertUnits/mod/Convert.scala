@@ -1,8 +1,8 @@
 package typings.convertUnits.mod
 
 import typings.convertUnits.AnonAbbr
-import typings.convertUnits.AnonAbbrMeasure
 import typings.convertUnits.AnonCutOffNumber
+import typings.convertUnits.AnonMeasure
 import typings.convertUnits.AnonPlural
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Convert extends js.Object {
-  def describe[T /* <: unit */](abbr: T): AnonAbbrMeasure[T] = js.native
+  def describe[T /* <: unit */](abbr: T): AnonMeasure[T] = js.native
   def from(from: unit): this.type = js.native
   def getUnit[T /* <: unit */](abbr: T): AnonAbbr[T] = js.native
   def list(): js.Array[unit] = js.native

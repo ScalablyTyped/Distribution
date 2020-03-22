@@ -1,15 +1,15 @@
 package typings.yandexMaps.mod.control
 
-import typings.yandexMaps.AnonCollapseOnBlur
 import typings.yandexMaps.AnonExpanded
 import typings.yandexMaps.AnonTitle
+import typings.yandexMaps.IBaseButtonParametersOptiAdjustMapMargin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IFullscreenControlParameters extends js.Object {
   var data: js.UndefOr[AnonTitle] = js.undefined
-  var options: js.UndefOr[IBaseButtonParametersOptions with AnonCollapseOnBlur] = js.undefined
+  var options: js.UndefOr[IBaseButtonParametersOptiAdjustMapMargin] = js.undefined
   var state: js.UndefOr[AnonExpanded] = js.undefined
 }
 
@@ -17,7 +17,7 @@ object IFullscreenControlParameters {
   @scala.inline
   def apply(
     data: AnonTitle = null,
-    options: IBaseButtonParametersOptions with AnonCollapseOnBlur = null,
+    options: IBaseButtonParametersOptiAdjustMapMargin = null,
     state: AnonExpanded = null
   ): IFullscreenControlParameters = {
     val __obj = js.Dynamic.literal()

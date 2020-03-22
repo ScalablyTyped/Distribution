@@ -1,7 +1,8 @@
 package typings.eggCore.mod
 
-import typings.eggCore.AnonPathType
-import typings.std.Partial
+import typings.eggCore.AnonType
+import typings.eggCore.PartialContextLoaderOptio
+import typings.eggCore.PartialFileLoaderOption
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -55,7 +56,7 @@ class EggLoader[T, Config] protected () extends js.Object {
     * @return {Array} loadUnits
     * @since 1.0.0
     */
-  def getLoadUnits(): js.Array[AnonPathType] = js.native
+  def getLoadUnits(): js.Array[AnonType] = js.native
   def getTypeFiles(filename: String): js.Array[String] = js.native
   /* protected */ def loadAgentExtend(): Unit = js.native
   /* protected */ def loadApplicationExtend(): Unit = js.native
@@ -63,7 +64,7 @@ class EggLoader[T, Config] protected () extends js.Object {
   /* protected */ def loadConfig(): Unit = js.native
   /* protected */ def loadContextExtend(): Unit = js.native
   /* protected */ def loadController(): Unit = js.native
-  /* protected */ def loadController(opt: Partial[FileLoaderOption]): Unit = js.native
+  /* protected */ def loadController(opt: PartialFileLoaderOption): Unit = js.native
   /* protected */ def loadCustomAgent(): Unit = js.native
   /* protected */ def loadCustomApp(): Unit = js.native
   /* protected */ def loadCustomLoader(): Unit = js.native
@@ -83,13 +84,13 @@ class EggLoader[T, Config] protected () extends js.Object {
   def loadFile[T](filepath: String, inject: js.Any*): T = js.native
   /* protected */ def loadHelperExtend(): Unit = js.native
   /* protected */ def loadMiddleware(): Unit = js.native
-  /* protected */ def loadMiddleware(opt: Partial[FileLoaderOption]): Unit = js.native
+  /* protected */ def loadMiddleware(opt: PartialFileLoaderOption): Unit = js.native
   /* protected */ def loadPlugin(): Unit = js.native
   /* protected */ def loadRequestExtend(): Unit = js.native
   /* protected */ def loadResponseExtend(): Unit = js.native
   /* protected */ def loadRouter(): Unit = js.native
   /* protected */ def loadService(): Unit = js.native
-  /* protected */ def loadService(opt: Partial[ContextLoaderOption]): Unit = js.native
+  /* protected */ def loadService(opt: PartialContextLoaderOptio): Unit = js.native
   /**
     * Load files using {@link FileLoader}, inject to {@link Application}
     * @param {String|Array} directory - see {@link FileLoader}
@@ -98,9 +99,9 @@ class EggLoader[T, Config] protected () extends js.Object {
     * @since 1.0.0
     */
   def loadToApp(directory: String, property: String): Unit = js.native
-  def loadToApp(directory: String, property: String, opt: Partial[FileLoaderOption]): Unit = js.native
+  def loadToApp(directory: String, property: String, opt: PartialFileLoaderOption): Unit = js.native
   def loadToApp(directory: js.Array[String], property: String): Unit = js.native
-  def loadToApp(directory: js.Array[String], property: String, opt: Partial[FileLoaderOption]): Unit = js.native
+  def loadToApp(directory: js.Array[String], property: String, opt: PartialFileLoaderOption): Unit = js.native
   /**
     * Load files using {@link ContextLoader}
     * @param {String|Array} directory - see {@link ContextLoader}
@@ -109,9 +110,9 @@ class EggLoader[T, Config] protected () extends js.Object {
     * @since 1.0.0
     */
   def loadToContext(directory: String, property: String): Unit = js.native
-  def loadToContext(directory: String, property: String, opt: Partial[ContextLoaderOption]): Unit = js.native
+  def loadToContext(directory: String, property: String, opt: PartialContextLoaderOptio): Unit = js.native
   def loadToContext(directory: js.Array[String], property: String): Unit = js.native
-  def loadToContext(directory: js.Array[String], property: String, opt: Partial[ContextLoaderOption]): Unit = js.native
+  def loadToContext(directory: js.Array[String], property: String, opt: PartialContextLoaderOptio): Unit = js.native
   def resolveModule(filepath: String): js.UndefOr[String] = js.native
 }
 

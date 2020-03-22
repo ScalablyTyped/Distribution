@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object serverRouterMod {
-  type DynamicRoutes = js.Array[typings.next.AnonMatch]
+  type DynamicRoutes = js.Array[typings.next.AnonPage]
   type PageChecker = js.Function1[/* pathname */ java.lang.String, js.Promise[scala.Boolean]]
   type Params = org.scalablytyped.runtime.StringDictionary[js.Any]
   type RouteMatch = js.Function1[

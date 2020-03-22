@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "builder-util" : "21.2.0"
+      "builder-util" : "22.3.2"
     }
   ],
   "test-dependencies" : [
     {
-      "builder-util" : "21.2.0"
+      "builder-util" : "22.3.2"
     }
   ],
   "compile-devDependencies" : [

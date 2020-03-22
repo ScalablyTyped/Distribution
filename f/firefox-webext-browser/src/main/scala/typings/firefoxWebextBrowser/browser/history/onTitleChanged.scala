@@ -1,7 +1,7 @@
 package typings.firefoxWebextBrowser.browser.history
 
 import org.scalablytyped.runtime.TopLevel
-import typings.firefoxWebextBrowser.AnonTitleUrlString
+import typings.firefoxWebextBrowser.AnonTitleString
 import typings.firefoxWebextBrowser.WebExtEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,5 +11,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("browser.history.onTitleChanged")
 @js.native
 object onTitleChanged
-  extends TopLevel[WebExtEvent[js.Function1[/* changed */ AnonTitleUrlString, Unit]]]
+  extends TopLevel[WebExtEvent[js.Function1[/* changed */ AnonTitleString, Unit]]]
 

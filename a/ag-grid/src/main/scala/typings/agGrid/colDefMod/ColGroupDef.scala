@@ -1,7 +1,7 @@
 package typings.agGrid.colDefMod
 
-import typings.agGrid.AnonAny1238347583
-import typings.agGrid.AnonIHeaderGroupComp
+import typings.agGrid.AnonInstantiableAny
+import typings.agGrid.AnonInstantiableIHeaderGroupComp
 import typings.agGrid.componentResolverMod.ComponentHolder
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,9 +15,9 @@ trait ColGroupDef
   /** Group ID */
   var groupId: js.UndefOr[String] = js.undefined
   /** The custom header group component to be used for rendering the component header. If none specified the default ag-Grid is used**/
-  var headerGroupComponent: js.UndefOr[String | AnonIHeaderGroupComp] = js.undefined
+  var headerGroupComponent: js.UndefOr[String | AnonInstantiableIHeaderGroupComp] = js.undefined
   /** The custom header group component to be used for rendering the component header in the hosting framework (ie: React/Angular). If none specified the default ag-Grid is used**/
-  var headerGroupComponentFramework: js.UndefOr[AnonAny1238347583] = js.undefined
+  var headerGroupComponentFramework: js.UndefOr[AnonInstantiableAny] = js.undefined
   /** The custom header group component to be used for rendering the component header. If none specified the default ag-Grid is used**/
   var headerGroupComponentParams: js.UndefOr[js.Any] = js.undefined
   /** If true, group cannot be broken up by column moving, child columns will always appear side by side, however you can rearrange child columns within the group */
@@ -33,8 +33,8 @@ object ColGroupDef {
     columnGroupShow: String = null,
     groupId: String = null,
     headerClass: String | js.Array[String] | (js.Function1[/* params */ js.Any, String | js.Array[String]]) = null,
-    headerGroupComponent: String | AnonIHeaderGroupComp = null,
-    headerGroupComponentFramework: AnonAny1238347583 = null,
+    headerGroupComponent: String | AnonInstantiableIHeaderGroupComp = null,
+    headerGroupComponentFramework: AnonInstantiableAny = null,
     headerGroupComponentParams: js.Any = null,
     headerName: String = null,
     headerTooltip: String = null,

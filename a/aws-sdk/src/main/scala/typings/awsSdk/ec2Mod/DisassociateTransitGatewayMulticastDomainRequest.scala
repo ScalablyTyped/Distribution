@@ -17,11 +17,11 @@ trait DisassociateTransitGatewayMulticastDomainRequest extends js.Object {
   /**
     * The ID of the attachment.
     */
-  var TransitGatewayAttachmentId: js.UndefOr[String] = js.native
+  var TransitGatewayAttachmentId: js.UndefOr[typings.awsSdk.ec2Mod.TransitGatewayAttachmentId] = js.native
   /**
     * The ID of the transit gateway multicast domain.
     */
-  var TransitGatewayMulticastDomainId: js.UndefOr[String] = js.native
+  var TransitGatewayMulticastDomainId: js.UndefOr[typings.awsSdk.ec2Mod.TransitGatewayMulticastDomainId] = js.native
 }
 
 object DisassociateTransitGatewayMulticastDomainRequest {
@@ -29,8 +29,8 @@ object DisassociateTransitGatewayMulticastDomainRequest {
   def apply(
     DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     SubnetIds: ValueStringList = null,
-    TransitGatewayAttachmentId: String = null,
-    TransitGatewayMulticastDomainId: String = null
+    TransitGatewayAttachmentId: TransitGatewayAttachmentId = null,
+    TransitGatewayMulticastDomainId: TransitGatewayMulticastDomainId = null
   ): DisassociateTransitGatewayMulticastDomainRequest = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])

@@ -44,7 +44,6 @@ import typings.domHelpers.domHelpersStrings.keyup
 import typings.domHelpers.domHelpersStrings.load
 import typings.domHelpers.domHelpersStrings.loadeddata
 import typings.domHelpers.domHelpersStrings.loadedmetadata
-import typings.domHelpers.domHelpersStrings.loadend
 import typings.domHelpers.domHelpersStrings.loadstart
 import typings.domHelpers.domHelpersStrings.lostpointercapture
 import typings.domHelpers.domHelpersStrings.mousedown
@@ -649,17 +648,6 @@ object addEventListenerMod extends js.Object {
     node: HTMLElement,
     eventName: loadedmetadata,
     handler: TaggedEventHandler[loadedmetadata],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("default")
-  def default_loadend(node: HTMLElement, eventName: loadend, handler: TaggedEventHandler[loadend]): Unit = js.native
-  @JSName("default")
-  def default_loadend(node: HTMLElement, eventName: loadend, handler: TaggedEventHandler[loadend], options: Boolean): Unit = js.native
-  @JSName("default")
-  def default_loadend(
-    node: HTMLElement,
-    eventName: loadend,
-    handler: TaggedEventHandler[loadend],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("default")

@@ -1,8 +1,8 @@
 package typings.jupyterlabRendermime.registryMod.RenderMimeRegistry
 
-import typings.jupyterlabApputils.clientsessionMod.IClientSession
+import typings.jupyterlabApputils.sessioncontextMod.ISessionContext
 import typings.jupyterlabServices.contentsMod.Contents.IManager
-import typings.jupyterlabServices.sessionSessionMod.Session.ISession
+import typings.jupyterlabServices.sessionSessionMod.ISessionConnection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,13 +17,16 @@ trait IUrlResolverOptions extends js.Object {
   var contents: IManager
   /**
     * The session used by the resolver.
+    *
+    * #### Notes
+    * For convenience, this can be a session context as well.
     */
-  var session: ISession | IClientSession
+  var session: ISessionContext | ISessionConnection
 }
 
 object IUrlResolverOptions {
   @scala.inline
-  def apply(contents: IManager, session: ISession | IClientSession): IUrlResolverOptions = {
+  def apply(contents: IManager, session: ISessionContext | ISessionConnection): IUrlResolverOptions = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], session = session.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IUrlResolverOptions]

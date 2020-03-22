@@ -1,7 +1,7 @@
 package typings.jupyterlabLogconsole.tokensMod
 
-import typings.jupyterlabCoreutils.nbformatMod.nbformat.IOutput
 import typings.jupyterlabLogconsole.jupyterlabLogconsoleStrings.output
+import typings.jupyterlabNbformat.mod.IOutput
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

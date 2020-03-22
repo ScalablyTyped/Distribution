@@ -6,5 +6,8 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("PageTransitionEvent")
 @js.native
-class PageTransitionEventCls () extends PageTransitionEvent
+class PageTransitionEventCls protected () extends PageTransitionEvent {
+  def this(`type`: java.lang.String) = this()
+  def this(`type`: java.lang.String, eventInitDict: PageTransitionEventInit) = this()
+}
 

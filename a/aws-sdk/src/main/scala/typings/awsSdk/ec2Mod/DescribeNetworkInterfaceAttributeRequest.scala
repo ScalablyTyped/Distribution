@@ -17,13 +17,13 @@ trait DescribeNetworkInterfaceAttributeRequest extends js.Object {
   /**
     * The ID of the network interface.
     */
-  var NetworkInterfaceId: String = js.native
+  var NetworkInterfaceId: typings.awsSdk.ec2Mod.NetworkInterfaceId = js.native
 }
 
 object DescribeNetworkInterfaceAttributeRequest {
   @scala.inline
   def apply(
-    NetworkInterfaceId: String,
+    NetworkInterfaceId: NetworkInterfaceId,
     Attribute: NetworkInterfaceAttribute = null,
     DryRun: js.UndefOr[scala.Boolean] = js.undefined
   ): DescribeNetworkInterfaceAttributeRequest = {

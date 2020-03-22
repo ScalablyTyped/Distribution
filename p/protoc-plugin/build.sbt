@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "protoc-plugin"
-version := "0.0-dt-20190314Z-c865f8"
+version := "0.0-dt-20190314Z-f545e5"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "google-protobuf" % "3.7-dt-20191126Z-2f95a0",
-  "org.scalablytyped" %%% "node" % "13.7-dt-20200211Z-d6af7e",
-  "org.scalablytyped" %%% "std" % "3.7-1b8369")
+  "org.scalablytyped" %%% "google-protobuf" % "3.7-dt-20191126Z-4e3358",
+  "org.scalablytyped" %%% "node" % "13.7-dt-20200211Z-b30bde",
+  "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

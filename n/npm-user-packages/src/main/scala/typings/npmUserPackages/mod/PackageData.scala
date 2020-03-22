@@ -2,7 +2,7 @@ package typings.npmUserPackages.mod
 
 import typings.npmUserPackages.AnonBugs
 import typings.npmUserPackages.AnonEmail
-import typings.npmUserPackages.AnonEmailUsername
+import typings.npmUserPackages.AnonUsername
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,9 +13,9 @@ trait PackageData extends js.Object {
   var description: String
   var keywords: js.Array[String]
   var links: AnonBugs
-  var maintainers: js.Array[AnonEmailUsername]
+  var maintainers: js.Array[AnonUsername]
   var name: String
-  var publisher: AnonEmailUsername
+  var publisher: AnonUsername
   var scope: String
   var version: String
 }
@@ -28,9 +28,9 @@ object PackageData {
     description: String,
     keywords: js.Array[String],
     links: AnonBugs,
-    maintainers: js.Array[AnonEmailUsername],
+    maintainers: js.Array[AnonUsername],
     name: String,
-    publisher: AnonEmailUsername,
+    publisher: AnonUsername,
     scope: String,
     version: String
   ): PackageData = {

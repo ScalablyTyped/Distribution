@@ -1,6 +1,6 @@
 package typings.amapJsApiMap3d.AMap.Object3D
 
-import typings.amapJsApiMap3d.AnonVertexNormals
+import typings.amapJsApiMap3d.MeshreadonlyvertexNormals
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class MeshAcceptLights () extends Mesh {
   @JSName("geometry")
-  val geometry_MeshAcceptLights: typings.amapJsApiMap3d.AMap.Geometry3D.Mesh with AnonVertexNormals = js.native
+  val geometry_MeshAcceptLights: MeshreadonlyvertexNormals = js.native
 }
 

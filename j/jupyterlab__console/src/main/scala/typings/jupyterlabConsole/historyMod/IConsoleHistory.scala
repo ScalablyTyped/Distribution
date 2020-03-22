@@ -1,8 +1,8 @@
 package typings.jupyterlabConsole.historyMod
 
-import typings.jupyterlabApputils.clientsessionMod.IClientSession
+import typings.jupyterlabApputils.sessioncontextMod.ISessionContext
 import typings.jupyterlabCodeeditor.editorMod.CodeEditor.IEditor
-import typings.phosphorDisposable.mod.IDisposable
+import typings.luminoDisposable.mod.IDisposable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,9 +17,9 @@ trait IConsoleHistory extends IDisposable {
     */
   val placeholder: String
   /**
-    * The client session used by the foreign handler.
+    * The session context used by the foreign handler.
     */
-  val session: IClientSession
+  val sessionContext: ISessionContext
   /**
     * Get the previous item in the console history.
     *
@@ -67,10 +67,10 @@ object IConsoleHistory {
     placeholder: String,
     push: String => Unit,
     reset: () => Unit,
-    session: IClientSession,
+    sessionContext: ISessionContext,
     editor: IEditor = null
   ): IConsoleHistory = {
-    val __obj = js.Dynamic.literal(back = js.Any.fromFunction1(back), dispose = js.Any.fromFunction0(dispose), forward = js.Any.fromFunction1(forward), isDisposed = isDisposed.asInstanceOf[js.Any], placeholder = placeholder.asInstanceOf[js.Any], push = js.Any.fromFunction1(push), reset = js.Any.fromFunction0(reset), session = session.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(back = js.Any.fromFunction1(back), dispose = js.Any.fromFunction0(dispose), forward = js.Any.fromFunction1(forward), isDisposed = isDisposed.asInstanceOf[js.Any], placeholder = placeholder.asInstanceOf[js.Any], push = js.Any.fromFunction1(push), reset = js.Any.fromFunction0(reset), sessionContext = sessionContext.asInstanceOf[js.Any])
     if (editor != null) __obj.updateDynamic("editor")(editor.asInstanceOf[js.Any])
     __obj.asInstanceOf[IConsoleHistory]
   }

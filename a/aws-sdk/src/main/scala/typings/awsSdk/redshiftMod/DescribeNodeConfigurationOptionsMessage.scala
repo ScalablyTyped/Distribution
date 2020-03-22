@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DescribeNodeConfigurationOptionsMessage extends js.Object {
   /**
-    * The action type to evaluate for possible node configurations. Specify "restore-cluster" to get configuration combinations based on an existing snapshot. Specify "recommend-node-config" to get configuration recommendations based on an existing cluster or snapshot. 
+    * The action type to evaluate for possible node configurations. Specify "restore-cluster" to get configuration combinations based on an existing snapshot. Specify "recommend-node-config" to get configuration recommendations based on an existing cluster or snapshot. Specify "resize-cluster" to get configuration combinations for elastic resize based on an existing cluster. 
     */
   var ActionType: typings.awsSdk.redshiftMod.ActionType = js.native
   /**

@@ -30,7 +30,7 @@ object keyframeTrackMod extends js.Object {
     def getValuesize(): Double = js.native
     def optimize(): KeyframeTrack = js.native
     def scale(timeScale: Double): KeyframeTrack = js.native
-    def setInterpolation(interpolation: InterpolationModes): Unit = js.native
+    def setInterpolation(interpolation: InterpolationModes): KeyframeTrack = js.native
     def shift(timeOffset: Double): KeyframeTrack = js.native
     def trim(startTime: Double, endTime: Double): KeyframeTrack = js.native
     def validate(): Boolean = js.native
@@ -39,7 +39,6 @@ object keyframeTrackMod extends js.Object {
   /* static members */
   @js.native
   object KeyframeTrack extends js.Object {
-    def parse(json: js.Any): KeyframeTrack = js.native
     def toJSON(track: KeyframeTrack): js.Any = js.native
   }
   

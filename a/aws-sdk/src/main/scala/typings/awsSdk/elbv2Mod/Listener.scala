@@ -31,7 +31,7 @@ trait Listener extends js.Object {
     */
   var Protocol: js.UndefOr[ProtocolEnum] = js.native
   /**
-    * [HTTPS or TLS listener] The security policy that defines which ciphers and protocols are supported. The default is the current predefined security policy.
+    * [HTTPS or TLS listener] The security policy that defines which protocols and ciphers are supported.
     */
   var SslPolicy: js.UndefOr[SslPolicyName] = js.native
 }

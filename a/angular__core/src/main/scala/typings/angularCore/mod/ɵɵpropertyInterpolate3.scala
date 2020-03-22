@@ -16,7 +16,18 @@ object ɵɵpropertyInterpolate3 extends js.Object {
     i1: String,
     v2: js.Any,
     suffix: String
-  ): TsickleIssue1009 = js.native
+  ): js.Function9[
+    /* propName */ String, 
+    /* prefix */ String, 
+    /* v0 */ js.Any, 
+    /* i0 */ String, 
+    /* v1 */ js.Any, 
+    /* i1 */ String, 
+    /* v2 */ js.Any, 
+    /* suffix */ String, 
+    /* sanitizer */ js.UndefOr[SanitizerFn], 
+    /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵpropertyInterpolate3 */ js.Any
+  ] = js.native
   def apply(
     propName: String,
     prefix: String,
@@ -27,6 +38,17 @@ object ɵɵpropertyInterpolate3 extends js.Object {
     v2: js.Any,
     suffix: String,
     sanitizer: SanitizerFn
-  ): TsickleIssue1009 = js.native
+  ): js.Function9[
+    /* propName */ String, 
+    /* prefix */ String, 
+    /* v0 */ js.Any, 
+    /* i0 */ String, 
+    /* v1 */ js.Any, 
+    /* i1 */ String, 
+    /* v2 */ js.Any, 
+    /* suffix */ String, 
+    /* sanitizer */ js.UndefOr[SanitizerFn], 
+    /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵpropertyInterpolate3 */ js.Any
+  ] = js.native
 }
 

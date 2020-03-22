@@ -1,11 +1,11 @@
 package typings.jupyterlabOutputarea.modelMod
 
-import typings.jupyterlabCoreutils.nbformatMod.nbformat.IOutput
+import typings.jupyterlabNbformat.mod.IOutput
 import typings.jupyterlabOutputarea.modelMod.IOutputAreaModel.ChangedArgs
 import typings.jupyterlabOutputarea.modelMod.IOutputAreaModel.IContentFactory
 import typings.jupyterlabRendermime.outputmodelMod.IOutputModel
-import typings.phosphorDisposable.mod.IDisposable
-import typings.phosphorSignaling.mod.ISignal
+import typings.luminoDisposable.mod.IDisposable
+import typings.luminoSignaling.mod.ISignal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

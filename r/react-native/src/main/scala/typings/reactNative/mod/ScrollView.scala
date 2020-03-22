@@ -3,7 +3,7 @@ package typings.reactNative.mod
 import typings.react.mod.Component
 import typings.react.mod._Global_.JSX.Element
 import typings.reactNative.AnonAnimated
-import typings.reactNative.AnonAnimatedBoolean1538133353
+import typings.reactNative.AnonAnimatedBoolean
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -53,6 +53,6 @@ class ScrollView ()
     * The animated prop defaults to true
     */
   def scrollToEnd(): Unit = js.native
-  def scrollToEnd(options: AnonAnimatedBoolean1538133353): Unit = js.native
+  def scrollToEnd(options: AnonAnimatedBoolean): Unit = js.native
 }
 

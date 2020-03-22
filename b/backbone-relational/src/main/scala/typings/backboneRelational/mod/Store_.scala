@@ -2,7 +2,7 @@ package typings.backboneRelational.mod
 
 import typings.backbone.mod.Collection
 import typings.backbone.mod.EventsMixin
-import typings.backboneRelational.TypeofClassModel
+import typings.backboneRelational.TypeofModel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,7 +26,7 @@ class Store_ () extends EventsMixin {
   def retroFitRelation(relation: Model, create: Boolean): Collection[typings.backbone.mod.Model] = js.native
   def setupSuperModel(modelType: Model): Unit = js.native
   def unregister(`type`: Collection[Model]): Unit = js.native
-  def unregister(`type`: TypeofClassModel): Unit = js.native
+  def unregister(`type`: TypeofModel): Unit = js.native
   // tslint:disable-next-line use-default-type-parameter
   def unregister(`type`: Model): Unit = js.native
   def update(model: Model): Unit = js.native

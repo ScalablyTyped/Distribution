@@ -1,38 +1,36 @@
 package typings.oracleOraclejet
 
-import typings.oracleOraclejet.ojtimeaxisMod.ojTimeAxis.Converters
-import typings.oracleOraclejet.ojvalidationBaseMod.Converter
-import typings.oracleOraclejet.oracleOraclejetStrings.days
-import typings.oracleOraclejet.oracleOraclejetStrings.hours
-import typings.oracleOraclejet.oracleOraclejetStrings.minutes
-import typings.oracleOraclejet.oracleOraclejetStrings.months
-import typings.oracleOraclejet.oracleOraclejetStrings.quarters
-import typings.oracleOraclejet.oracleOraclejetStrings.seconds
-import typings.oracleOraclejet.oracleOraclejetStrings.weeks
-import typings.oracleOraclejet.oracleOraclejetStrings.years
+import typings.oracleOraclejet.ojchartMod.ojChart.PieCenterContext
+import typings.oracleOraclejet.oracleOraclejetStrings.auto
+import typings.oracleOraclejet.oracleOraclejetStrings.billion
+import typings.oracleOraclejet.oracleOraclejetStrings.million
+import typings.oracleOraclejet.oracleOraclejetStrings.none
+import typings.oracleOraclejet.oracleOraclejetStrings.quadrillion
+import typings.oracleOraclejet.oracleOraclejetStrings.thousand
+import typings.oracleOraclejet.oracleOraclejetStrings.trillion
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonConverter extends js.Object {
-  var converter: js.UndefOr[Converters | Converter[String]] = js.undefined
-  var height: js.UndefOr[Double] = js.undefined
-  var scale: seconds | minutes | hours | days | weeks | months | quarters | years
-  var zoomOrder: js.UndefOr[js.Array[String]] = js.undefined
+  var converter: js.Object
+  var label: String
+  var labelStyle: js.Object
+  var scaling: none | thousand | million | billion | trillion | quadrillion | auto
+  def renderer(context: PieCenterContext): AnonInsert | AnonPreventDefault
 }
 
 object AnonConverter {
   @scala.inline
   def apply(
-    scale: seconds | minutes | hours | days | weeks | months | quarters | years,
-    converter: Converters | Converter[String] = null,
-    height: Int | Double = null,
-    zoomOrder: js.Array[String] = null
+    converter: js.Object,
+    label: String,
+    labelStyle: js.Object,
+    renderer: PieCenterContext => AnonInsert | AnonPreventDefault,
+    scaling: none | thousand | million | billion | trillion | quadrillion | auto
   ): AnonConverter = {
-    val __obj = js.Dynamic.literal(scale = scale.asInstanceOf[js.Any])
-    if (converter != null) __obj.updateDynamic("converter")(converter.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (zoomOrder != null) __obj.updateDynamic("zoomOrder")(zoomOrder.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(converter = converter.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], labelStyle = labelStyle.asInstanceOf[js.Any], renderer = js.Any.fromFunction1(renderer), scaling = scaling.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[AnonConverter]
   }
 }

@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation._
 
 trait AnonActive extends js.Object {
   var active: js.UndefOr[AnonBackgroundColor] = js.undefined
-  var animation: js.UndefOr[AnonDurationJiggle] = js.undefined
-  var borderSize: js.UndefOr[AnonLargeMedium] = js.undefined
-  var breakpoints: js.UndefOr[AnonLargeMediumSmall] = js.undefined
+  var animation: js.UndefOr[AnonJiggle] = js.undefined
+  var borderSize: js.UndefOr[AnonLarge] = js.undefined
+  var breakpoints: js.UndefOr[AnonMedium] = js.undefined
   var colors: js.UndefOr[Colors] = js.undefined
-  var control: js.UndefOr[AnonBorder] = js.undefined
+  var control: js.UndefOr[AnonBorderDisabled] = js.undefined
   var debounceDelay: js.UndefOr[Double] = js.undefined
   var deviceBreakpoints: js.UndefOr[AnonComputer] = js.undefined
-  var drop: js.UndefOr[AnonBackgroundBorderShadowSize] = js.undefined
-  var edgeSize: js.UndefOr[AnonHairLarge] = js.undefined
-  var elevation: js.UndefOr[AnonDarkLightAnonLargeMediumNone] = js.undefined
-  var focus: js.UndefOr[AnonBorderAnonColorColorType] = js.undefined
+  var drop: js.UndefOr[AnonShadowSize] = js.undefined
+  var edgeSize: js.UndefOr[AnonNone] = js.undefined
+  var elevation: js.UndefOr[AnonDarkAnonSmall] = js.undefined
+  var focus: js.UndefOr[AnonBorderAnon0] = js.undefined
   var font: js.UndefOr[AnonFace] = js.undefined
   var graph: js.UndefOr[AnonColors] = js.undefined
-  var hover: js.UndefOr[AnonBackgroundColorBackgroundType] = js.undefined
+  var hover: js.UndefOr[AnonBackgroundBackgroundType] = js.undefined
   var input: js.UndefOr[AnonPadding] = js.undefined
-  var opacity: js.UndefOr[AnonMedium] = js.undefined
-  var selected: js.UndefOr[AnonBackgroundColorBackgroundType] = js.undefined
-  var size: js.UndefOr[AnonFullLargeMedium] = js.undefined
+  var opacity: js.UndefOr[AnonStrong] = js.undefined
+  var selected: js.UndefOr[AnonBackgroundBackgroundType] = js.undefined
+  var size: js.UndefOr[AnonDictx] = js.undefined
   var spacing: js.UndefOr[String] = js.undefined
 }
 
@@ -32,24 +32,24 @@ object AnonActive {
   @scala.inline
   def apply(
     active: AnonBackgroundColor = null,
-    animation: AnonDurationJiggle = null,
-    borderSize: AnonLargeMedium = null,
-    breakpoints: AnonLargeMediumSmall = null,
+    animation: AnonJiggle = null,
+    borderSize: AnonLarge = null,
+    breakpoints: AnonMedium = null,
     colors: Colors = null,
-    control: AnonBorder = null,
+    control: AnonBorderDisabled = null,
     debounceDelay: Int | Double = null,
     deviceBreakpoints: AnonComputer = null,
-    drop: AnonBackgroundBorderShadowSize = null,
-    edgeSize: AnonHairLarge = null,
-    elevation: AnonDarkLightAnonLargeMediumNone = null,
-    focus: AnonBorderAnonColorColorType = null,
+    drop: AnonShadowSize = null,
+    edgeSize: AnonNone = null,
+    elevation: AnonDarkAnonSmall = null,
+    focus: AnonBorderAnon0 = null,
     font: AnonFace = null,
     graph: AnonColors = null,
-    hover: AnonBackgroundColorBackgroundType = null,
+    hover: AnonBackgroundBackgroundType = null,
     input: AnonPadding = null,
-    opacity: AnonMedium = null,
-    selected: AnonBackgroundColorBackgroundType = null,
-    size: AnonFullLargeMedium = null,
+    opacity: AnonStrong = null,
+    selected: AnonBackgroundBackgroundType = null,
+    size: AnonDictx = null,
     spacing: String = null
   ): AnonActive = {
     val __obj = js.Dynamic.literal()

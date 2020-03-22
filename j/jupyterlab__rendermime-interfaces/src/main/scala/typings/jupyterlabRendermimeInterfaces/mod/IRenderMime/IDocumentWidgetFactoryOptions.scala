@@ -40,7 +40,7 @@ trait IDocumentWidgetFactoryOptions extends js.Object {
   /**
     * A function returning a list of toolbar items to add to the toolbar.
     */
-  val toolbarFactory: js.UndefOr[js.Function1[/* widget */ IRenderer, js.Array[IToolbarItem]]] = js.undefined
+  val toolbarFactory: js.UndefOr[js.Function1[/* widget */ js.UndefOr[IRenderer], js.Array[IToolbarItem]]] = js.undefined
 }
 
 object IDocumentWidgetFactoryOptions {
@@ -52,7 +52,7 @@ object IDocumentWidgetFactoryOptions {
     defaultFor: js.Array[String] = null,
     defaultRendered: js.Array[String] = null,
     modelName: String = null,
-    toolbarFactory: /* widget */ IRenderer => js.Array[IToolbarItem] = null
+    toolbarFactory: /* widget */ js.UndefOr[IRenderer] => js.Array[IToolbarItem] = null
   ): IDocumentWidgetFactoryOptions = {
     val __obj = js.Dynamic.literal(fileTypes = fileTypes.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], primaryFileType = primaryFileType.asInstanceOf[js.Any])
     if (defaultFor != null) __obj.updateDynamic("defaultFor")(defaultFor.asInstanceOf[js.Any])

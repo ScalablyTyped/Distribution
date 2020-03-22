@@ -1,7 +1,7 @@
 package typings.firebaseFirestore
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.firebaseAppTypes.mod.FirebaseNamespace
+import typings.firebaseFirestore.mod.FirebaseNamespace
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

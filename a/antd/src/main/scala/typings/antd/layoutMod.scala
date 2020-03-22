@@ -44,7 +44,7 @@ object layoutMod extends js.Object {
     var displayName: js.UndefOr[String] = js.native
     var getDerivedStateFromError: js.UndefOr[GetDerivedStateFromError[BasicProps, ComponentState]] = js.native
     var getDerivedStateFromProps: js.UndefOr[GetDerivedStateFromProps[BasicProps, ComponentState]] = js.native
-    var propTypes: js.UndefOr[WeakValidationMapBasicProps] = js.native
+    var propTypes: js.UndefOr[WeakValidationMapBasicPro] = js.native
   }
   
 }

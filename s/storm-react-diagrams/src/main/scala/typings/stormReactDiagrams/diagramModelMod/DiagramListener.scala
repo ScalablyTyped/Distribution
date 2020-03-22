@@ -1,11 +1,11 @@
 package typings.stormReactDiagrams.diagramModelMod
 
-import typings.stormReactDiagrams.AnonIsCreated
-import typings.stormReactDiagrams.AnonIsCreatedLink
 import typings.stormReactDiagrams.AnonLocked
-import typings.stormReactDiagrams.AnonOffsetX
-import typings.stormReactDiagrams.AnonSize
-import typings.stormReactDiagrams.AnonZoom
+import typings.stormReactDiagrams.BaseEventDiagramModeloffs
+import typings.stormReactDiagrams.BaseEventDiagramModelsize
+import typings.stormReactDiagrams.BaseEventDiagramModelzoom
+import typings.stormReactDiagrams.BaseEventanylinkLinkModel
+import typings.stormReactDiagrams.BaseEventanynodeNodeModel
 import typings.stormReactDiagrams.baseEntityMod.BaseEvent
 import typings.stormReactDiagrams.baseEntityMod.BaseListener
 import scala.scalajs.js
@@ -14,22 +14,22 @@ import scala.scalajs.js.annotation._
 
 trait DiagramListener
   extends BaseListener[js.Any] {
-  var gridUpdated: js.UndefOr[js.Function1[/* event */ BaseEvent[DiagramModel] with AnonSize, Unit]] = js.undefined
-  var linksUpdated: js.UndefOr[js.Function1[/* event */ BaseEvent[_] with AnonIsCreatedLink, Unit]] = js.undefined
-  var nodesUpdated: js.UndefOr[js.Function1[/* event */ BaseEvent[_] with AnonIsCreated, Unit]] = js.undefined
-  var offsetUpdated: js.UndefOr[js.Function1[/* event */ BaseEvent[DiagramModel] with AnonOffsetX, Unit]] = js.undefined
-  var zoomUpdated: js.UndefOr[js.Function1[/* event */ BaseEvent[DiagramModel] with AnonZoom, Unit]] = js.undefined
+  var gridUpdated: js.UndefOr[js.Function1[/* event */ BaseEventDiagramModelsize, Unit]] = js.undefined
+  var linksUpdated: js.UndefOr[js.Function1[/* event */ BaseEventanylinkLinkModel, Unit]] = js.undefined
+  var nodesUpdated: js.UndefOr[js.Function1[/* event */ BaseEventanynodeNodeModel, Unit]] = js.undefined
+  var offsetUpdated: js.UndefOr[js.Function1[/* event */ BaseEventDiagramModeloffs, Unit]] = js.undefined
+  var zoomUpdated: js.UndefOr[js.Function1[/* event */ BaseEventDiagramModelzoom, Unit]] = js.undefined
 }
 
 object DiagramListener {
   @scala.inline
   def apply(
-    gridUpdated: /* event */ BaseEvent[DiagramModel] with AnonSize => Unit = null,
-    linksUpdated: /* event */ BaseEvent[_] with AnonIsCreatedLink => Unit = null,
+    gridUpdated: /* event */ BaseEventDiagramModelsize => Unit = null,
+    linksUpdated: /* event */ BaseEventanylinkLinkModel => Unit = null,
     lockChanged: /* event */ BaseEvent[js.Any] with AnonLocked => Unit = null,
-    nodesUpdated: /* event */ BaseEvent[_] with AnonIsCreated => Unit = null,
-    offsetUpdated: /* event */ BaseEvent[DiagramModel] with AnonOffsetX => Unit = null,
-    zoomUpdated: /* event */ BaseEvent[DiagramModel] with AnonZoom => Unit = null
+    nodesUpdated: /* event */ BaseEventanynodeNodeModel => Unit = null,
+    offsetUpdated: /* event */ BaseEventDiagramModeloffs => Unit = null,
+    zoomUpdated: /* event */ BaseEventDiagramModelzoom => Unit = null
   ): DiagramListener = {
     val __obj = js.Dynamic.literal()
     if (gridUpdated != null) __obj.updateDynamic("gridUpdated")(js.Any.fromFunction1(gridUpdated))

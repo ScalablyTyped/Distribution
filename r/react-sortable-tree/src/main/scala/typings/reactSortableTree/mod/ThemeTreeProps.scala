@@ -1,9 +1,8 @@
 package typings.reactSortableTree.mod
 
 import typings.react.mod.CSSProperties
-import typings.reactVirtualized.esListMod.ListProps
+import typings.reactSortableTree.PartialListProps
 import typings.reactVirtualized.mod.Index
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +11,7 @@ trait ThemeTreeProps extends js.Object {
   var innerStyle: js.UndefOr[CSSProperties] = js.undefined
   var nodeContentRenderer: js.UndefOr[NodeRenderer] = js.undefined
   var placeholderRenderer: js.UndefOr[PlaceholderRenderer] = js.undefined
-  var reactVirtualizedListProps: js.UndefOr[Partial[ListProps]] = js.undefined
+  var reactVirtualizedListProps: js.UndefOr[PartialListProps] = js.undefined
   var rowHeight: js.UndefOr[(js.Function1[/* info */ Index, Double]) | Double] = js.undefined
   var scaffoldBlockPxWidth: js.UndefOr[Double] = js.undefined
   var slideRegionSize: js.UndefOr[Double] = js.undefined
@@ -25,7 +24,7 @@ object ThemeTreeProps {
     innerStyle: CSSProperties = null,
     nodeContentRenderer: NodeRenderer = null,
     placeholderRenderer: PlaceholderRenderer = null,
-    reactVirtualizedListProps: Partial[ListProps] = null,
+    reactVirtualizedListProps: PartialListProps = null,
     rowHeight: (js.Function1[/* info */ Index, Double]) | Double = null,
     scaffoldBlockPxWidth: Int | Double = null,
     slideRegionSize: Int | Double = null,

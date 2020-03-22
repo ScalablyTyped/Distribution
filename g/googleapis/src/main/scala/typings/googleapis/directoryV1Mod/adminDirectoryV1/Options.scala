@@ -23,7 +23,8 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleapis.googleapisStrings.directory_v1
 import typings.googleapisCommon.apiMod.GlobalOptions
 import typings.googleapisCommon.apiMod.UserAgentDirective
-import typings.node.httpsMod.Agent
+import typings.node.httpMod.Agent
+import typings.node.urlMod.URL_
 import typings.std.AbortSignal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -39,7 +40,7 @@ object Options {
   def apply(
     version: directory_v1,
     adapter: /* options */ GaxiosOptions => GaxiosPromise[_] = null,
-    agent: Agent = null,
+    agent: Agent | (js.Function1[/* parsedUrl */ URL_, Agent]) = null,
     auth: OAuth2Client | String = null,
     baseURL: String = null,
     baseUrl: String = null,

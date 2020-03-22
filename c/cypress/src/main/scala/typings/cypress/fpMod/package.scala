@@ -957,7 +957,7 @@ package object fpMod {
   type LodashMinBy1x2[T] = js.Function1[/* iteratee */ typings.cypress.lodashMod.ValueIteratee[T], js.UndefOr[T]]
   type LodashMultiply1x1 = js.Function1[/* multiplicand */ scala.Double, scala.Double]
   type LodashMultiply1x2 = js.Function1[/* multiplier */ scala.Double, scala.Double]
-  type LodashNoConflict = js.Function0[typings.cypress.TypeofcypressTypesLodash]
+  type LodashNoConflict = js.Function0[typings.cypress.TypeofcypressTypesLodas]
   type LodashNoop = js.Function1[/* repeated */ js.Any, scala.Unit]
   type LodashNow = js.Function0[scala.Double]
   type LodashNth1x1 = js.Function1[

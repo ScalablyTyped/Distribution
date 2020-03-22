@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "dialogflow" : "0.12.2"
+      "dialogflow" : "1.2.0"
     }
   ],
   "test-dependencies" : [
     {
-      "dialogflow" : "0.12.2"
+      "dialogflow" : "1.2.0"
     }
   ],
   "compile-devDependencies" : [

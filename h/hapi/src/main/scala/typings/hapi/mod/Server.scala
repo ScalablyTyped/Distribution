@@ -2,10 +2,10 @@ package typings.hapi.mod
 
 import typings.catbox.mod.Policy
 import typings.hapi.AnonApply
+import typings.hapi.AnonApplyBoolean
 import typings.hapi.AnonApplyExtend
-import typings.hapi.AnonApplyExtendTrue
-import typings.hapi.AnonApplyExtendTrueBoolean
-import typings.hapi.AnonConcurrentEventLoopDelay
+import typings.hapi.AnonEventLoopDelay
+import typings.hapi.AnonExtend
 import typings.hapi.AnonMethod
 import typings.hapi.AnonRequest
 import typings.hapi.AnonTimeout
@@ -96,7 +96,7 @@ class Server () extends js.Object {
     * * rss - RSS memory usage.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-serverload)
     */
-  val load: AnonConcurrentEventLoopDelay = js.native
+  val load: AnonEventLoopDelay = js.native
   /**
     * Server methods are functions registered with the server and used throughout the application as a common utility.
     * Their advantage is in the ability to configure them to use the built-in cache and share across multiple request
@@ -237,18 +237,18 @@ class Server () extends js.Object {
   def decorate_request(
     `type`: request,
     property: DecorateName,
-    method: js.Function1[
-      /* existing */ js.Function1[/* repeated */ js.Any, _], 
-      js.Function1[/* request */ Request, DecorationMethod[Request]]
-    ],
+    method: js.Function1[/* request */ Request, DecorationMethod[Request]],
     options: AnonApplyExtend
   ): Unit = js.native
   @JSName("decorate")
   def decorate_request(
     `type`: request,
     property: DecorateName,
-    method: js.Function1[/* request */ Request, DecorationMethod[Request]],
-    options: AnonApplyExtendTrue
+    method: js.Function1[
+      /* existing */ js.Function1[/* repeated */ js.Any, _], 
+      js.Function1[/* request */ Request, DecorationMethod[Request]]
+    ],
+    options: AnonExtend
   ): Unit = js.native
   @JSName("decorate")
   def decorate_request(`type`: request, property: DecorateName, method: DecorationMethod[Request]): Unit = js.native
@@ -259,7 +259,7 @@ class Server () extends js.Object {
     `type`: server,
     property: DecorateName,
     method: js.Function1[/* existing */ js.Function1[/* repeated */ js.Any, _], DecorationMethod[this.type]],
-    options: AnonApplyExtendTrueBoolean
+    options: AnonApplyBoolean
   ): Unit = js.native
   @JSName("decorate")
   def decorate_server(`type`: server, property: DecorateName, method: DecorationMethod[Server]): Unit = js.native
@@ -273,7 +273,7 @@ class Server () extends js.Object {
       /* existing */ js.Function1[/* repeated */ js.Any, _], 
       DecorationMethod[ResponseToolkit]
     ],
-    options: AnonApplyExtendTrueBoolean
+    options: AnonApplyBoolean
   ): Unit = js.native
   @JSName("decorate")
   def decorate_toolkit(`type`: toolkit, property: DecorateName, method: DecorationMethod[ResponseToolkit]): Unit = js.native

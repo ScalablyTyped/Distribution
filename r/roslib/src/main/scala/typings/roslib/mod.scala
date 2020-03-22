@@ -358,7 +358,7 @@ object mod extends js.Object {
     		 *   * name - the service name, like /add_two_ints
     		 *   * serviceType - the service type, like 'rospy_tutorials/AddTwoInts'
     		 */
-    def this(data: AnonNameRos) = this()
+    def this(data: AnonRos) = this()
     // getter
     var name: String = js.native
     // getter

@@ -1,7 +1,7 @@
 
 # Scala.js typings for rollup-plugin-typescript2
 
-Typings are for version 0.25.2
+Typings are for version 0.25.3
 
 ## Library description:
 Seamless integration between Rollup and TypeScript. Now with errors.

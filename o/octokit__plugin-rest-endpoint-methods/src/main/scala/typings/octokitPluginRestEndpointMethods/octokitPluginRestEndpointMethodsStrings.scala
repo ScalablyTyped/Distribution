@@ -27,10 +27,10 @@ object octokitPluginRestEndpointMethodsStrings {
   sealed trait `160000` extends js.Object
   
   @js.native
-  sealed trait `2Dot4Dot0` extends js.Object
+  sealed trait `2fa_disabled` extends js.Object
   
   @js.native
-  sealed trait `2fa_disabled` extends js.Object
+  sealed trait `3Dot2Dot0` extends js.Object
   
   @js.native
   sealed trait APPROVE extends js.Object
@@ -419,9 +419,9 @@ object octokitPluginRestEndpointMethodsStrings {
   @scala.inline
   def `160000`: `160000` = "160000".asInstanceOf[`160000`]
   @scala.inline
-  def `2Dot4Dot0`: `2Dot4Dot0` = "2.4.0".asInstanceOf[`2Dot4Dot0`]
-  @scala.inline
   def `2fa_disabled`: `2fa_disabled` = "2fa_disabled".asInstanceOf[`2fa_disabled`]
+  @scala.inline
+  def `3Dot2Dot0`: `3Dot2Dot0` = "3.2.0".asInstanceOf[`3Dot2Dot0`]
   @scala.inline
   def APPROVE: APPROVE = "APPROVE".asInstanceOf[APPROVE]
   @scala.inline

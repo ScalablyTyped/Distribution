@@ -1,10 +1,10 @@
 package typings.blueprintjsCore.componentsMod
 
 import typings.blueprintjsCore.AnonSelectedTabId
-import typings.blueprintjsCore.TypeofClassTab
+import typings.blueprintjsCore.PartialITabsProps
+import typings.blueprintjsCore.TypeofTab
 import typings.blueprintjsCore.tabsMod.ITabsProps
-import typings.react.mod.FunctionComponent
-import typings.std.Partial
+import typings.react.mod.SFC
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,9 +21,9 @@ class Tabs ()
 @js.native
 object Tabs extends js.Object {
   /** Insert a `Tabs.Expander` between any two children to right-align all subsequent children. */
-  var Expander: FunctionComponent[js.Object] = js.native
-  var Tab: TypeofClassTab = js.native
-  var defaultProps: Partial[ITabsProps] = js.native
+  var Expander: SFC[js.Object] = js.native
+  var Tab: TypeofTab = js.native
+  var defaultProps: PartialITabsProps = js.native
   var displayName: String = js.native
   def getDerivedStateFromProps(hasSelectedTabId: ITabsProps): AnonSelectedTabId = js.native
 }

@@ -1,10 +1,8 @@
 package typings.reactAce
 
-import typings.propTypes.mod.ValidationMap
 import typings.reactAce.aceMod.IAceEditorProps
 import typings.reactAce.diffMod.IDiffEditorProps
 import typings.reactAce.splitMod.ISplitEditorProps
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,22 +31,22 @@ object mod extends js.Object {
   /* static members */
   @js.native
   object default extends js.Object {
-    var defaultProps: Partial[IAceEditorProps] = js.native
-    var propTypes: ValidationMap[IAceEditorProps] = js.native
+    var defaultProps: PartialIAceEditorProps = js.native
+    var propTypes: ValidationMapIAceEditorPr = js.native
   }
   
   /* static members */
   @js.native
   object diff extends js.Object {
-    var defaultProps: Partial[IDiffEditorProps] = js.native
-    var propTypes: ValidationMap[IDiffEditorProps] = js.native
+    var defaultProps: PartialIDiffEditorProps = js.native
+    var propTypes: ValidationMapIDiffEditorP = js.native
   }
   
   /* static members */
   @js.native
   object split extends js.Object {
-    var defaultProps: Partial[ISplitEditorProps] = js.native
-    var propTypes: ValidationMap[ISplitEditorProps] = js.native
+    var defaultProps: PartialISplitEditorProps = js.native
+    var propTypes: ValidationMapISplitEditor = js.native
   }
   
 }

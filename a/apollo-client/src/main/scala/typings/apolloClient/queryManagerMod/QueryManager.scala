@@ -2,9 +2,9 @@ package typings.apolloClient.queryManagerMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.apolloClient.AnonAssumeImmutableResults
-import typings.apolloClient.AnonClientQuery
 import typings.apolloClient.AnonData
 import typings.apolloClient.AnonDocument
+import typings.apolloClient.ReadonlydocumentReadonlyD
 import typings.apolloClient.localStateMod.LocalState
 import typings.apolloClient.mutationsMod.MutationStore
 import typings.apolloClient.observableMod.Observable
@@ -104,7 +104,7 @@ class QueryManager[TStore] protected () extends js.Object {
   def stopPollingQuery(queryId: String): Unit = js.native
   def stopQuery(queryId: String): Unit = js.native
   def stopQueryInStore(queryId: String): Unit = js.native
-  def transform(document: DocumentNode): AnonClientQuery = js.native
+  def transform(document: DocumentNode): ReadonlydocumentReadonlyD = js.native
   def updateQueryWatch(queryId: String, document: DocumentNode, options: WatchQueryOptions[OperationVariables]): js.Function0[Unit] = js.native
   def watchQuery[T, TVariables](options: WatchQueryOptions[OperationVariables]): ObservableQuery[T, TVariables] = js.native
   def watchQuery[T, TVariables](options: WatchQueryOptions[OperationVariables], shouldSubscribe: Boolean): ObservableQuery[T, TVariables] = js.native

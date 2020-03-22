@@ -1,7 +1,7 @@
 
 # Scala.js typings for stellar-base
 
-Typings are for version 2.1.4
+Typings are for version 2.1.6
 
 ## Library description:
 Low level stellar support library

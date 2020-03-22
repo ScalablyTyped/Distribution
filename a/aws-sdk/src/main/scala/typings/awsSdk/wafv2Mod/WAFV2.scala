@@ -13,12 +13,12 @@ trait WAFV2 extends Service {
   @JSName("config")
   var config_WAFV2: ConfigBase with ClientConfiguration = js.native
   /**
-    *  This is the latest version of AWS WAF, named AWS WAFV2, released in November, 2019. For information, including how to migrate your AWS WAF resources from the prior release, see the AWS WAF Developer Guide.   Associates a Web ACL with a regional application resource, to protect the resource. A regional application can be an Application Load Balancer (ALB) or an API Gateway stage.  For AWS CloudFront, you can associate the Web ACL by providing the Id of the WebACL to the CloudFront API call UpdateDistribution. For information, see UpdateDistribution.
+    *  This is the latest version of AWS WAF, named AWS WAFV2, released in November, 2019. For information, including how to migrate your AWS WAF resources from the prior release, see the AWS WAF Developer Guide.   Associates a Web ACL with a regional application resource, to protect the resource. A regional application can be an Application Load Balancer (ALB) or an API Gateway stage.  For AWS CloudFront, you can associate the Web ACL by providing the ARN of the WebACL to the CloudFront API call UpdateDistribution. For information, see UpdateDistribution.
     */
   def associateWebACL(): Request[AssociateWebACLResponse, AWSError] = js.native
   def associateWebACL(callback: js.Function2[/* err */ AWSError, /* data */ AssociateWebACLResponse, Unit]): Request[AssociateWebACLResponse, AWSError] = js.native
   /**
-    *  This is the latest version of AWS WAF, named AWS WAFV2, released in November, 2019. For information, including how to migrate your AWS WAF resources from the prior release, see the AWS WAF Developer Guide.   Associates a Web ACL with a regional application resource, to protect the resource. A regional application can be an Application Load Balancer (ALB) or an API Gateway stage.  For AWS CloudFront, you can associate the Web ACL by providing the Id of the WebACL to the CloudFront API call UpdateDistribution. For information, see UpdateDistribution.
+    *  This is the latest version of AWS WAF, named AWS WAFV2, released in November, 2019. For information, including how to migrate your AWS WAF resources from the prior release, see the AWS WAF Developer Guide.   Associates a Web ACL with a regional application resource, to protect the resource. A regional application can be an Application Load Balancer (ALB) or an API Gateway stage.  For AWS CloudFront, you can associate the Web ACL by providing the ARN of the WebACL to the CloudFront API call UpdateDistribution. For information, see UpdateDistribution.
     */
   def associateWebACL(params: AssociateWebACLRequest): Request[AssociateWebACLResponse, AWSError] = js.native
   def associateWebACL(
@@ -52,12 +52,12 @@ trait WAFV2 extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateIPSetResponse, Unit]
   ): Request[CreateIPSetResponse, AWSError] = js.native
   /**
-    *  This is the latest version of AWS WAF, named AWS WAFV2, released in November, 2019. For information, including how to migrate your AWS WAF resources from the prior release, see the AWS WAF Developer Guide.   Creates a RegexPatternSet per the specifications provided.
+    *  This is the latest version of AWS WAF, named AWS WAFV2, released in November, 2019. For information, including how to migrate your AWS WAF resources from the prior release, see the AWS WAF Developer Guide.   Creates a RegexPatternSet, which you reference in a RegexPatternSetReferenceStatement, to have AWS WAF inspect a web request component for the specified patterns.
     */
   def createRegexPatternSet(): Request[CreateRegexPatternSetResponse, AWSError] = js.native
   def createRegexPatternSet(callback: js.Function2[/* err */ AWSError, /* data */ CreateRegexPatternSetResponse, Unit]): Request[CreateRegexPatternSetResponse, AWSError] = js.native
   /**
-    *  This is the latest version of AWS WAF, named AWS WAFV2, released in November, 2019. For information, including how to migrate your AWS WAF resources from the prior release, see the AWS WAF Developer Guide.   Creates a RegexPatternSet per the specifications provided.
+    *  This is the latest version of AWS WAF, named AWS WAFV2, released in November, 2019. For information, including how to migrate your AWS WAF resources from the prior release, see the AWS WAF Developer Guide.   Creates a RegexPatternSet, which you reference in a RegexPatternSetReferenceStatement, to have AWS WAF inspect a web request component for the specified patterns.
     */
   def createRegexPatternSet(params: CreateRegexPatternSetRequest): Request[CreateRegexPatternSetResponse, AWSError] = js.native
   def createRegexPatternSet(
@@ -169,12 +169,12 @@ trait WAFV2 extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeManagedRuleGroupResponse, Unit]
   ): Request[DescribeManagedRuleGroupResponse, AWSError] = js.native
   /**
-    *  This is the latest version of AWS WAF, named AWS WAFV2, released in November, 2019. For information, including how to migrate your AWS WAF resources from the prior release, see the AWS WAF Developer Guide.   Disassociates a Web ACL from a regional application resource. A regional application can be an Application Load Balancer (ALB) or an API Gateway stage.  For AWS CloudFront, you can disassociate the Web ACL by providing an empty WebACLId in the CloudFront API call UpdateDistribution. For information, see UpdateDistribution.
+    *  This is the latest version of AWS WAF, named AWS WAFV2, released in November, 2019. For information, including how to migrate your AWS WAF resources from the prior release, see the AWS WAF Developer Guide.   Disassociates a Web ACL from a regional application resource. A regional application can be an Application Load Balancer (ALB) or an API Gateway stage.  For AWS CloudFront, you can disassociate the Web ACL by providing an empty web ACL ARN in the CloudFront API call UpdateDistribution. For information, see UpdateDistribution.
     */
   def disassociateWebACL(): Request[DisassociateWebACLResponse, AWSError] = js.native
   def disassociateWebACL(callback: js.Function2[/* err */ AWSError, /* data */ DisassociateWebACLResponse, Unit]): Request[DisassociateWebACLResponse, AWSError] = js.native
   /**
-    *  This is the latest version of AWS WAF, named AWS WAFV2, released in November, 2019. For information, including how to migrate your AWS WAF resources from the prior release, see the AWS WAF Developer Guide.   Disassociates a Web ACL from a regional application resource. A regional application can be an Application Load Balancer (ALB) or an API Gateway stage.  For AWS CloudFront, you can disassociate the Web ACL by providing an empty WebACLId in the CloudFront API call UpdateDistribution. For information, see UpdateDistribution.
+    *  This is the latest version of AWS WAF, named AWS WAFV2, released in November, 2019. For information, including how to migrate your AWS WAF resources from the prior release, see the AWS WAF Developer Guide.   Disassociates a Web ACL from a regional application resource. A regional application can be an Application Load Balancer (ALB) or an API Gateway stage.  For AWS CloudFront, you can disassociate the Web ACL by providing an empty web ACL ARN in the CloudFront API call UpdateDistribution. For information, see UpdateDistribution.
     */
   def disassociateWebACL(params: DisassociateWebACLRequest): Request[DisassociateWebACLResponse, AWSError] = js.native
   def disassociateWebACL(
@@ -288,14 +288,14 @@ trait WAFV2 extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetWebACLForResourceResponse, Unit]
   ): Request[GetWebACLForResourceResponse, AWSError] = js.native
   /**
-    *  This is the latest version of AWS WAF, named AWS WAFV2, released in November, 2019. For information, including how to migrate your AWS WAF resources from the prior release, see the AWS WAF Developer Guide.   Retrieves an array of managed rule groups that are available for you to use. This list includes all AWS managed rule groups and the AWS Marketplace managed rule groups that you're subscribed to.
+    *  This is the latest version of AWS WAF, named AWS WAFV2, released in November, 2019. For information, including how to migrate your AWS WAF resources from the prior release, see the AWS WAF Developer Guide.   Retrieves an array of managed rule groups that are available for you to use. This list includes all AWS Managed Rules rule groups and the AWS Marketplace managed rule groups that you're subscribed to.
     */
   def listAvailableManagedRuleGroups(): Request[ListAvailableManagedRuleGroupsResponse, AWSError] = js.native
   def listAvailableManagedRuleGroups(
     callback: js.Function2[/* err */ AWSError, /* data */ ListAvailableManagedRuleGroupsResponse, Unit]
   ): Request[ListAvailableManagedRuleGroupsResponse, AWSError] = js.native
   /**
-    *  This is the latest version of AWS WAF, named AWS WAFV2, released in November, 2019. For information, including how to migrate your AWS WAF resources from the prior release, see the AWS WAF Developer Guide.   Retrieves an array of managed rule groups that are available for you to use. This list includes all AWS managed rule groups and the AWS Marketplace managed rule groups that you're subscribed to.
+    *  This is the latest version of AWS WAF, named AWS WAFV2, released in November, 2019. For information, including how to migrate your AWS WAF resources from the prior release, see the AWS WAF Developer Guide.   Retrieves an array of managed rule groups that are available for you to use. This list includes all AWS Managed Rules rule groups and the AWS Marketplace managed rule groups that you're subscribed to.
     */
   def listAvailableManagedRuleGroups(params: ListAvailableManagedRuleGroupsRequest): Request[ListAvailableManagedRuleGroupsResponse, AWSError] = js.native
   def listAvailableManagedRuleGroups(

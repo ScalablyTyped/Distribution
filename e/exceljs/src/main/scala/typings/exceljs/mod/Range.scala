@@ -1,7 +1,6 @@
 package typings.exceljs.mod
 
-import typings.exceljs.AnonColRow
-import typings.std.Partial
+import typings.exceljs.PartialsheetNamestringrow
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,7 +22,7 @@ trait Range extends Location {
   var shortRange: String = js.native
   var tl: String = js.native
   def contains(addressStr: String): Boolean = js.native
-  def containsEx(address: Partial[AnonColRow]): Boolean = js.native
+  def containsEx(address: PartialsheetNamestringrow): Boolean = js.native
   def decode(): Unit = js.native
   def decode(tl: String, br: String): Unit = js.native
   def decode(tl: String, br: String, sheetName: String): Unit = js.native

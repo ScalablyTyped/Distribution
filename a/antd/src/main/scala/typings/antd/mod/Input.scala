@@ -1,13 +1,13 @@
 package typings.antd.mod
 
-import typings.antd.AnonAddonAfter
 import typings.antd.AnonType
-import typings.antd.AnonValueArray
-import typings.antd.TypeofClassPassword
-import typings.antd.TypeofClassSearch
-import typings.antd.TypeofClassTextArea
+import typings.antd.PartialInputState
+import typings.antd.TypeofPassword
+import typings.antd.TypeofSearch
+import typings.antd.TypeofTextArea
 import typings.antd.inputGroupMod.GroupProps
 import typings.antd.inputInputMod.InputProps
+import typings.antd.inputInputMod.InputState
 import typings.antd.inputMod.default
 import typings.react.mod.StatelessComponent
 import scala.scalajs.js
@@ -25,11 +25,10 @@ class Input protected () extends default {
 @js.native
 object Input extends js.Object {
   var Group: StatelessComponent[GroupProps] = js.native
-  var Password: TypeofClassPassword = js.native
-  var Search: TypeofClassSearch = js.native
-  var TextArea: TypeofClassTextArea = js.native
+  var Password: TypeofPassword = js.native
+  var Search: TypeofSearch = js.native
+  var TextArea: TypeofTextArea = js.native
   var defaultProps: AnonType = js.native
-  var propTypes: AnonAddonAfter = js.native
-  def getDerivedStateFromProps(nextProps: InputProps): AnonValueArray | Null = js.native
+  def getDerivedStateFromProps(nextProps: InputProps, hasPrevValue: InputState): PartialInputState = js.native
 }
 

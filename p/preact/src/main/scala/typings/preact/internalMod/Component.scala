@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Component[P, S]
   extends typings.preact.mod.Component[P, S] {
-   // Only class components
-  var _context: js.UndefOr[js.Any] = js.native
   var _dirty: Boolean = js.native
   var _force: js.UndefOr[Boolean] = js.native
+   // Only class components
+  var _globalContext: js.UndefOr[js.Any] = js.native
   var _nextState: js.UndefOr[S | Null] = js.native
   /**
   	 * Pointer to the parent dom node. This is only needed for top-level Fragment

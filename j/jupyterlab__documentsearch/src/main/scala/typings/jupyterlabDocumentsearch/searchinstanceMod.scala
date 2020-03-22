@@ -1,9 +1,9 @@
 package typings.jupyterlabDocumentsearch
 
 import typings.jupyterlabDocumentsearch.interfacesMod.ISearchProvider
-import typings.phosphorDisposable.mod.IDisposable
-import typings.phosphorSignaling.mod.ISignal
-import typings.phosphorWidgets.mod.Widget
+import typings.luminoDisposable.mod.IDisposable
+import typings.luminoSignaling.mod.ISignal
+import typings.luminoWidgets.mod.Widget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,10 +30,6 @@ object searchinstanceMod extends js.Object {
     var _updateDisplay: js.Any = js.native
     var _widget: js.Any = js.native
     /**
-      * A signal emitted when the object is disposed.
-      */
-    val disposed: ISignal[this.type, Unit] = js.native
-    /**
       * Test whether the object has been disposed.
       *
       * #### Notes
@@ -41,14 +37,6 @@ object searchinstanceMod extends js.Object {
       */
     /* CompleteClass */
     override val isDisposed: Boolean = js.native
-    /**
-      * The search provider.
-      */
-    val provider: ISearchProvider[Widget] = js.native
-    /**
-      * The search widget.
-      */
-    val searchWidget: Widget = js.native
     /**
       * Display search widget.
       */
@@ -67,9 +55,30 @@ object searchinstanceMod extends js.Object {
     /* CompleteClass */
     override def dispose(): Unit = js.native
     /**
+      * A signal emitted when the object is disposed.
+      */
+    def disposed(): ISignal[this.type, Unit] = js.native
+    /**
       * Focus the search widget input.
       */
     def focusInput(): Unit = js.native
+    /**
+      * Test if the object has been disposed.
+      */
+    @JSName("isDisposed")
+    def isDisposed_MSearchInstance(): Boolean = js.native
+    /**
+      * The search provider.
+      */
+    def provider(): ISearchProvider[Widget] = js.native
+    /**
+      * The search widget.
+      */
+    def searchWidget(): Widget = js.native
+    /**
+      * If there is a replace box, show it.
+      */
+    def showReplace(): Unit = js.native
     /**
       * Updates the match index and total display in the search widget.
       */

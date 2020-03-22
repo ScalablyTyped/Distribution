@@ -1,6 +1,6 @@
 package typings.awsSdk.cloudwatchMod
 
-import typings.awsSdk.AnonWaiter
+import typings.awsSdk.DescribeAlarmsInputwaiter
 import typings.awsSdk.awsSdkStrings.alarmExists
 import typings.awsSdk.configMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
@@ -396,11 +396,11 @@ trait CloudWatch extends Service {
     * Waits for the alarmExists state by periodically calling the underlying CloudWatch.describeAlarmsoperation every 5 seconds (at most 40 times).
     */
   @JSName("waitFor")
-  def waitFor_alarmExists(state: alarmExists, params: DescribeAlarmsInput with AnonWaiter): Request[DescribeAlarmsOutput, AWSError] = js.native
+  def waitFor_alarmExists(state: alarmExists, params: DescribeAlarmsInputwaiter): Request[DescribeAlarmsOutput, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_alarmExists(
     state: alarmExists,
-    params: DescribeAlarmsInput with AnonWaiter,
+    params: DescribeAlarmsInputwaiter,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeAlarmsOutput, Unit]
   ): Request[DescribeAlarmsOutput, AWSError] = js.native
 }

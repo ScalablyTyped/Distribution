@@ -1,26 +1,26 @@
 package typings.gapiClientBooks.gapi.client.books
 
 import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientBooks.AnonAltAndroidId
-import typings.gapiClientBooks.AnonAltAndroidIdDevice
-import typings.gapiClientBooks.AnonAltAndroidIdDeviceFields
+import typings.gapiClientBooks.AnonAndroidId
+import typings.gapiClientBooks.AnonDevice
+import typings.gapiClientBooks.AnonManufacturer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PromoofferResource extends js.Object {
-  def accept(request: AnonAltAndroidId): Request_[Unit]
-  def dismiss(request: AnonAltAndroidIdDevice): Request_[Unit]
+  def accept(request: AnonAndroidId): Request_[Unit]
+  def dismiss(request: AnonDevice): Request_[Unit]
   /** Returns a list of promo offers available to the user */
-  def get(request: AnonAltAndroidIdDeviceFields): Request_[Offers]
+  def get(request: AnonManufacturer): Request_[Offers]
 }
 
 object PromoofferResource {
   @scala.inline
   def apply(
-    accept: AnonAltAndroidId => Request_[Unit],
-    dismiss: AnonAltAndroidIdDevice => Request_[Unit],
-    get: AnonAltAndroidIdDeviceFields => Request_[Offers]
+    accept: AnonAndroidId => Request_[Unit],
+    dismiss: AnonDevice => Request_[Unit],
+    get: AnonManufacturer => Request_[Offers]
   ): PromoofferResource = {
     val __obj = js.Dynamic.literal(accept = js.Any.fromFunction1(accept), dismiss = js.Any.fromFunction1(dismiss), get = js.Any.fromFunction1(get))
   

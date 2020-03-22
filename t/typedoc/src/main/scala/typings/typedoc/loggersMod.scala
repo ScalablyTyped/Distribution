@@ -24,14 +24,17 @@ object loggersMod extends js.Object {
   @js.native
   class Logger () extends js.Object {
     var errorCount: Double = js.native
+    var warningCount: Double = js.native
     def diagnostic(diagnostic: Diagnostic): Unit = js.native
     def diagnostics(diagnostics: js.Array[Diagnostic]): Unit = js.native
     def error(text: String, args: String*): Unit = js.native
     def hasErrors(): Boolean = js.native
+    def hasWarnings(): Boolean = js.native
     def log(message: String): Unit = js.native
     def log(message: String, level: LogLevel): Unit = js.native
     def log(message: String, level: LogLevel, newLine: Boolean): Unit = js.native
     def resetErrors(): Unit = js.native
+    def resetWarnings(): Unit = js.native
     def success(text: String, args: String*): Unit = js.native
     def verbose(text: String, args: String*): Unit = js.native
     def warn(text: String, args: String*): Unit = js.native

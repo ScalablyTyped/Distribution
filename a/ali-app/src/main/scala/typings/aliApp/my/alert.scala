@@ -1,6 +1,6 @@
 package typings.aliApp.my
 
-import typings.std.Partial
+import typings.aliApp.PartialAlertOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSGlobal("my.alert")
 @js.native
 object alert extends js.Object {
-  def apply(options: Partial[AlertOptions]): Unit = js.native
+  def apply(options: PartialAlertOptions): Unit = js.native
 }
 

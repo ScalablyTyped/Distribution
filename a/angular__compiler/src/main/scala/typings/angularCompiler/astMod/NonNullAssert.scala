@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler/src/expression_parser/ast", "NonNullAssert")
 @js.native
 class NonNullAssert protected () extends AST {
-  def this(span: ParseSpan, expression: AST) = this()
+  def this(span: ParseSpan, sourceSpan: AbsoluteSourceSpan, expression: AST) = this()
   var expression: AST = js.native
 }
 

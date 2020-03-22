@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ImageUtils extends js.Object {
   var crossOrigin: String = js.native
+  def getDataURL(image: js.Any): String = js.native
   def loadTexture(url: String): typings.three.textureMod.Texture = js.native
   def loadTexture(url: String, mapping: typings.three.constantsMod.Mapping): typings.three.textureMod.Texture = js.native
   def loadTexture(

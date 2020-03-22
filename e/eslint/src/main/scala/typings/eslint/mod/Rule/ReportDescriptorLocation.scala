@@ -8,14 +8,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.eslint.AnonNode80921790
+  - typings.eslint.AnonNodeNode
   - typings.eslint.AnonLoc
 */
 trait ReportDescriptorLocation extends js.Object
 
 object ReportDescriptorLocation {
   @scala.inline
-  def AnonNode80921790(node: Node): ReportDescriptorLocation = {
+  def AnonNodeNode(node: Node): ReportDescriptorLocation = {
     val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReportDescriptorLocation]

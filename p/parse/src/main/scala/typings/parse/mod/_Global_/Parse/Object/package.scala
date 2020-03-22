@@ -12,7 +12,7 @@ package object Object {
     - js.Array[
   / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias parse.parse._Global_.Parse.Object.Encode<R> * / js.Object]
     - java.lang.String
-    - typings.parse.AnonDate
+    - typings.parse.AnonIso
     - typings.std.ReturnType[
   / * import warning: importer.ImportType#apply Failed type conversion: T['toJSON'] * / js.Any]
     - typings.parse.mod._Global_.Parse.Pointer

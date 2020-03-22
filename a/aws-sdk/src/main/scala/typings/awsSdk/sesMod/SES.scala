@@ -1,6 +1,6 @@
 package typings.awsSdk.sesMod
 
-import typings.awsSdk.AnonWaiter
+import typings.awsSdk.GetIdentityVerificationAt
 import typings.awsSdk.awsSdkStrings.identityExists
 import typings.awsSdk.configMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
@@ -955,11 +955,11 @@ trait SES extends Service {
     * Waits for the identityExists state by periodically calling the underlying SES.getIdentityVerificationAttributesoperation every 3 seconds (at most 20 times).
     */
   @JSName("waitFor")
-  def waitFor_identityExists(state: identityExists, params: GetIdentityVerificationAttributesRequest with AnonWaiter): Request[GetIdentityVerificationAttributesResponse, AWSError] = js.native
+  def waitFor_identityExists(state: identityExists, params: GetIdentityVerificationAt): Request[GetIdentityVerificationAttributesResponse, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_identityExists(
     state: identityExists,
-    params: GetIdentityVerificationAttributesRequest with AnonWaiter,
+    params: GetIdentityVerificationAt,
     callback: js.Function2[/* err */ AWSError, /* data */ GetIdentityVerificationAttributesResponse, Unit]
   ): Request[GetIdentityVerificationAttributesResponse, AWSError] = js.native
 }

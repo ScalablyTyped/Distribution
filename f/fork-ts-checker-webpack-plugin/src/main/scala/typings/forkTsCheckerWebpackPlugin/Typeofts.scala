@@ -3,14 +3,13 @@ package typings.forkTsCheckerWebpackPlugin
 import org.scalablytyped.runtime.Instantiable0
 import typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginBooleans.`false`
 import typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.`0Dot8`
-import typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.`3Dot7`
+import typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.`3Dot8`
 import typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.dts
 import typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.js_
 import typings.typescript.AnonConfig
 import typings.typescript.AnonErrors
-import typings.typescript.AnonErrorsOptions
 import typings.typescript.AnonFileExists
-import typings.typescript.FnCount
+import typings.typescript.AnonOptions
 import typings.typescript.mod.ArrayBindingElement
 import typings.typescript.mod.ArrayBindingPattern
 import typings.typescript.mod.ArrayLiteralExpression
@@ -133,6 +132,10 @@ import typings.typescript.mod.JSDocAugmentsTag
 import typings.typescript.mod.JSDocClassTag
 import typings.typescript.mod.JSDocEnumTag
 import typings.typescript.mod.JSDocParameterTag
+import typings.typescript.mod.JSDocPrivateTag
+import typings.typescript.mod.JSDocProtectedTag
+import typings.typescript.mod.JSDocPublicTag
+import typings.typescript.mod.JSDocReadonlyTag
 import typings.typescript.mod.JSDocReturnTag
 import typings.typescript.mod.JSDocTag
 import typings.typescript.mod.JSDocTemplateTag
@@ -178,9 +181,11 @@ import typings.typescript.mod.ModuleName
 import typings.typescript.mod.ModuleReference
 import typings.typescript.mod.ModuleResolutionCache
 import typings.typescript.mod.ModuleResolutionHost
+import typings.typescript.mod.NamedExportBindings
 import typings.typescript.mod.NamedExports
 import typings.typescript.mod.NamedImportBindings
 import typings.typescript.mod.NamedImports
+import typings.typescript.mod.NamespaceExport
 import typings.typescript.mod.NamespaceExportDeclaration
 import typings.typescript.mod.NamespaceImport
 import typings.typescript.mod.NewExpression
@@ -216,6 +221,7 @@ import typings.typescript.mod.PrimaryExpression
 import typings.typescript.mod.PrintHandlers
 import typings.typescript.mod.Printer
 import typings.typescript.mod.PrinterOptions
+import typings.typescript.mod.PrivateIdentifier
 import typings.typescript.mod.Program
 import typings.typescript.mod.ProjectReference
 import typings.typescript.mod.PropertyAccessChain
@@ -339,6 +345,7 @@ import typings.typescript.mod.WatchCompilerHostOfConfigFile
 import typings.typescript.mod.WatchCompilerHostOfFilesAndCompilerOptions
 import typings.typescript.mod.WatchOfConfigFile
 import typings.typescript.mod.WatchOfFilesAndCompilerOptions
+import typings.typescript.mod.WatchOptions
 import typings.typescript.mod.WatchStatusReporter
 import typings.typescript.mod.WhileStatement
 import typings.typescript.mod.WithStatement
@@ -351,7 +358,6 @@ import scala.scalajs.js.annotation._
 trait Typeofts extends js.Object {
   var OperationCanceledException: Instantiable0[typings.typescript.mod.OperationCanceledException] = js.native
   val ScriptSnapshot: TypeofScriptSnapshot = js.native
-  var disableIncrementalParsing: Boolean = js.native
   val server: js.Any = js.native
   /** The version of the language service API */
   val servicesVersion: `0Dot8` = js.native
@@ -359,7 +365,7 @@ trait Typeofts extends js.Object {
   var unchangedTextChangeRange: TextChangeRange = js.native
   /** The version of the TypeScript compiler release */
   val version: String = js.native
-  val versionMajorMinor: `3Dot7` = js.native
+  val versionMajorMinor: `3Dot8` = js.native
   /**
     * Adds an EmitHelper to a node.
     */
@@ -410,8 +416,8 @@ trait Typeofts extends js.Object {
   def convertCompilerOptionsFromJson(jsonOptions: js.Any, basePath: String): AnonErrors = js.native
   def convertCompilerOptionsFromJson(jsonOptions: js.Any, basePath: String, configFileName: String): AnonErrors = js.native
   def convertToObject(sourceFile: JsonSourceFile, errors: Push[Diagnostic]): js.Any = js.native
-  def convertTypeAcquisitionFromJson(jsonOptions: js.Any, basePath: String): AnonErrorsOptions = js.native
-  def convertTypeAcquisitionFromJson(jsonOptions: js.Any, basePath: String, configFileName: String): AnonErrorsOptions = js.native
+  def convertTypeAcquisitionFromJson(jsonOptions: js.Any, basePath: String): AnonOptions = js.native
+  def convertTypeAcquisitionFromJson(jsonOptions: js.Any, basePath: String, configFileName: String): AnonOptions = js.native
   def couldStartTrivia(text: String, pos: Double): Boolean = js.native
   def createAbstractBuilder(): BuilderProgram = js.native
   /**
@@ -1135,13 +1141,27 @@ trait Typeofts extends js.Object {
   def createExportDeclaration(
     decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
-    exportClause: NamedExports
+    exportClause: js.UndefOr[scala.Nothing],
+    moduleSpecifier: Expression,
+    isTypeOnly: Boolean
   ): ExportDeclaration = js.native
   def createExportDeclaration(
     decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
-    exportClause: NamedExports,
+    exportClause: NamedExportBindings
+  ): ExportDeclaration = js.native
+  def createExportDeclaration(
+    decorators: js.UndefOr[scala.Nothing],
+    modifiers: js.UndefOr[scala.Nothing],
+    exportClause: NamedExportBindings,
     moduleSpecifier: Expression
+  ): ExportDeclaration = js.native
+  def createExportDeclaration(
+    decorators: js.UndefOr[scala.Nothing],
+    modifiers: js.UndefOr[scala.Nothing],
+    exportClause: NamedExportBindings,
+    moduleSpecifier: Expression,
+    isTypeOnly: Boolean
   ): ExportDeclaration = js.native
   def createExportDeclaration(decorators: js.UndefOr[scala.Nothing], modifiers: js.Array[Modifier]): ExportDeclaration = js.native
   def createExportDeclaration(
@@ -1150,12 +1170,30 @@ trait Typeofts extends js.Object {
     exportClause: js.UndefOr[scala.Nothing],
     moduleSpecifier: Expression
   ): ExportDeclaration = js.native
-  def createExportDeclaration(decorators: js.UndefOr[scala.Nothing], modifiers: js.Array[Modifier], exportClause: NamedExports): ExportDeclaration = js.native
   def createExportDeclaration(
     decorators: js.UndefOr[scala.Nothing],
     modifiers: js.Array[Modifier],
-    exportClause: NamedExports,
+    exportClause: js.UndefOr[scala.Nothing],
+    moduleSpecifier: Expression,
+    isTypeOnly: Boolean
+  ): ExportDeclaration = js.native
+  def createExportDeclaration(
+    decorators: js.UndefOr[scala.Nothing],
+    modifiers: js.Array[Modifier],
+    exportClause: NamedExportBindings
+  ): ExportDeclaration = js.native
+  def createExportDeclaration(
+    decorators: js.UndefOr[scala.Nothing],
+    modifiers: js.Array[Modifier],
+    exportClause: NamedExportBindings,
     moduleSpecifier: Expression
+  ): ExportDeclaration = js.native
+  def createExportDeclaration(
+    decorators: js.UndefOr[scala.Nothing],
+    modifiers: js.Array[Modifier],
+    exportClause: NamedExportBindings,
+    moduleSpecifier: Expression,
+    isTypeOnly: Boolean
   ): ExportDeclaration = js.native
   def createExportDeclaration(decorators: js.Array[Decorator]): ExportDeclaration = js.native
   def createExportDeclaration(
@@ -1164,12 +1202,30 @@ trait Typeofts extends js.Object {
     exportClause: js.UndefOr[scala.Nothing],
     moduleSpecifier: Expression
   ): ExportDeclaration = js.native
-  def createExportDeclaration(decorators: js.Array[Decorator], modifiers: js.UndefOr[scala.Nothing], exportClause: NamedExports): ExportDeclaration = js.native
   def createExportDeclaration(
     decorators: js.Array[Decorator],
     modifiers: js.UndefOr[scala.Nothing],
-    exportClause: NamedExports,
+    exportClause: js.UndefOr[scala.Nothing],
+    moduleSpecifier: Expression,
+    isTypeOnly: Boolean
+  ): ExportDeclaration = js.native
+  def createExportDeclaration(
+    decorators: js.Array[Decorator],
+    modifiers: js.UndefOr[scala.Nothing],
+    exportClause: NamedExportBindings
+  ): ExportDeclaration = js.native
+  def createExportDeclaration(
+    decorators: js.Array[Decorator],
+    modifiers: js.UndefOr[scala.Nothing],
+    exportClause: NamedExportBindings,
     moduleSpecifier: Expression
+  ): ExportDeclaration = js.native
+  def createExportDeclaration(
+    decorators: js.Array[Decorator],
+    modifiers: js.UndefOr[scala.Nothing],
+    exportClause: NamedExportBindings,
+    moduleSpecifier: Expression,
+    isTypeOnly: Boolean
   ): ExportDeclaration = js.native
   def createExportDeclaration(decorators: js.Array[Decorator], modifiers: js.Array[Modifier]): ExportDeclaration = js.native
   def createExportDeclaration(
@@ -1178,12 +1234,26 @@ trait Typeofts extends js.Object {
     exportClause: js.UndefOr[scala.Nothing],
     moduleSpecifier: Expression
   ): ExportDeclaration = js.native
-  def createExportDeclaration(decorators: js.Array[Decorator], modifiers: js.Array[Modifier], exportClause: NamedExports): ExportDeclaration = js.native
   def createExportDeclaration(
     decorators: js.Array[Decorator],
     modifiers: js.Array[Modifier],
-    exportClause: NamedExports,
+    exportClause: js.UndefOr[scala.Nothing],
+    moduleSpecifier: Expression,
+    isTypeOnly: Boolean
+  ): ExportDeclaration = js.native
+  def createExportDeclaration(decorators: js.Array[Decorator], modifiers: js.Array[Modifier], exportClause: NamedExportBindings): ExportDeclaration = js.native
+  def createExportDeclaration(
+    decorators: js.Array[Decorator],
+    modifiers: js.Array[Modifier],
+    exportClause: NamedExportBindings,
     moduleSpecifier: Expression
+  ): ExportDeclaration = js.native
+  def createExportDeclaration(
+    decorators: js.Array[Decorator],
+    modifiers: js.Array[Modifier],
+    exportClause: NamedExportBindings,
+    moduleSpecifier: Expression,
+    isTypeOnly: Boolean
   ): ExportDeclaration = js.native
   def createExportDefault(expression: Expression): ExportAssignment = js.native
   def createExportSpecifier(propertyName: js.UndefOr[scala.Nothing], name: String): ExportSpecifier = js.native
@@ -1482,9 +1552,13 @@ trait Typeofts extends js.Object {
   def createImmediatelyInvokedFunctionExpression(statements: js.Array[Statement]): CallExpression = js.native
   def createImmediatelyInvokedFunctionExpression(statements: js.Array[Statement], param: ParameterDeclaration, paramValue: Expression): CallExpression = js.native
   def createImportClause(): ImportClause = js.native
+  def createImportClause(name: js.UndefOr[scala.Nothing], namedBindings: js.UndefOr[scala.Nothing], isTypeOnly: Boolean): ImportClause = js.native
   def createImportClause(name: js.UndefOr[scala.Nothing], namedBindings: NamedImportBindings): ImportClause = js.native
+  def createImportClause(name: js.UndefOr[scala.Nothing], namedBindings: NamedImportBindings, isTypeOnly: Boolean): ImportClause = js.native
   def createImportClause(name: Identifier): ImportClause = js.native
+  def createImportClause(name: Identifier, namedBindings: js.UndefOr[scala.Nothing], isTypeOnly: Boolean): ImportClause = js.native
   def createImportClause(name: Identifier, namedBindings: NamedImportBindings): ImportClause = js.native
+  def createImportClause(name: Identifier, namedBindings: NamedImportBindings, isTypeOnly: Boolean): ImportClause = js.native
   def createImportDeclaration(
     decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
@@ -2104,6 +2178,7 @@ trait Typeofts extends js.Object {
   ): ModuleResolutionCache = js.native
   def createNamedExports(elements: js.Array[ExportSpecifier]): NamedExports = js.native
   def createNamedImports(elements: js.Array[ImportSpecifier]): NamedImports = js.native
+  def createNamespaceExport(name: Identifier): NamespaceExport = js.native
   def createNamespaceExportDeclaration(name: String): NamespaceExportDeclaration = js.native
   def createNamespaceExportDeclaration(name: Identifier): NamespaceExportDeclaration = js.native
   def createNamespaceImport(name: Identifier): NamespaceImport = js.native
@@ -2641,6 +2716,7 @@ trait Typeofts extends js.Object {
   def createPrinter(): Printer = js.native
   def createPrinter(printerOptions: PrinterOptions): Printer = js.native
   def createPrinter(printerOptions: PrinterOptions, handlers: PrintHandlers): Printer = js.native
+  def createPrivateIdentifier(text: String): PrivateIdentifier = js.native
   def createProgram(createProgramOptions: CreateProgramOptions): Program = js.native
   def createProgram(rootNames: js.Array[String], options: CompilerOptions): Program = js.native
   def createProgram(rootNames: js.Array[String], options: CompilerOptions, host: CompilerHost): Program = js.native
@@ -2830,6 +2906,7 @@ trait Typeofts extends js.Object {
   ): PropertyDeclaration = js.native
   def createPropertyAccess(expression: Expression, name: String): PropertyAccessExpression = js.native
   def createPropertyAccess(expression: Expression, name: Identifier): PropertyAccessExpression = js.native
+  def createPropertyAccess(expression: Expression, name: PrivateIdentifier): PropertyAccessExpression = js.native
   def createPropertyAccessChain(expression: Expression, questionDotToken: js.UndefOr[scala.Nothing], name: String): PropertyAccessChain = js.native
   def createPropertyAccessChain(expression: Expression, questionDotToken: js.UndefOr[scala.Nothing], name: Identifier): PropertyAccessChain = js.native
   def createPropertyAccessChain(expression: Expression, questionDotToken: QuestionDotToken, name: String): PropertyAccessChain = js.native
@@ -3150,6 +3227,12 @@ trait Typeofts extends js.Object {
     reportErrorSummary: ReportEmitErrorSummary
   ): SolutionBuilderHost[T] = js.native
   def createSolutionBuilderWithWatch[T /* <: BuilderProgram */](host: SolutionBuilderWithWatchHost[T], rootNames: js.Array[String], defaultOptions: BuildOptions): SolutionBuilder[T] = js.native
+  def createSolutionBuilderWithWatch[T /* <: BuilderProgram */](
+    host: SolutionBuilderWithWatchHost[T],
+    rootNames: js.Array[String],
+    defaultOptions: BuildOptions,
+    baseWatchOptions: WatchOptions
+  ): SolutionBuilder[T] = js.native
   def createSolutionBuilderWithWatchHost[T /* <: BuilderProgram */](): SolutionBuilderWithWatchHost[T] = js.native
   def createSolutionBuilderWithWatchHost[T /* <: BuilderProgram */](system: System): SolutionBuilderWithWatchHost[T] = js.native
   def createSolutionBuilderWithWatchHost[T /* <: BuilderProgram */](system: System, createProgram: CreateProgram_[T]): SolutionBuilderWithWatchHost[T] = js.native
@@ -3418,6 +3501,15 @@ trait Typeofts extends js.Object {
     reportDiagnostic: DiagnosticReporter,
     reportWatchStatus: WatchStatusReporter
   ): WatchCompilerHostOfConfigFile[T] = js.native
+  def createWatchCompilerHost[T /* <: BuilderProgram */](
+    configFileName: String,
+    optionsToExtend: js.UndefOr[scala.Nothing],
+    system: System,
+    createProgram: CreateProgram_[T],
+    reportDiagnostic: DiagnosticReporter,
+    reportWatchStatus: WatchStatusReporter,
+    watchOptionsToExtend: WatchOptions
+  ): WatchCompilerHostOfConfigFile[T] = js.native
   /**
     * Create the watch compiler host for either configFile or fileNames and its options
     */
@@ -3442,6 +3534,15 @@ trait Typeofts extends js.Object {
     createProgram: CreateProgram_[T],
     reportDiagnostic: DiagnosticReporter,
     reportWatchStatus: WatchStatusReporter
+  ): WatchCompilerHostOfConfigFile[T] = js.native
+  def createWatchCompilerHost[T /* <: BuilderProgram */](
+    configFileName: String,
+    optionsToExtend: CompilerOptions,
+    system: System,
+    createProgram: CreateProgram_[T],
+    reportDiagnostic: DiagnosticReporter,
+    reportWatchStatus: WatchStatusReporter,
+    watchOptionsToExtend: WatchOptions
   ): WatchCompilerHostOfConfigFile[T] = js.native
   def createWatchCompilerHost[T /* <: BuilderProgram */](rootFiles: js.Array[String], options: CompilerOptions, system: System): WatchCompilerHostOfFilesAndCompilerOptions[T] = js.native
   def createWatchCompilerHost[T /* <: BuilderProgram */](
@@ -3473,6 +3574,16 @@ trait Typeofts extends js.Object {
     reportDiagnostic: DiagnosticReporter,
     reportWatchStatus: WatchStatusReporter,
     projectReferences: js.Array[ProjectReference]
+  ): WatchCompilerHostOfFilesAndCompilerOptions[T] = js.native
+  def createWatchCompilerHost[T /* <: BuilderProgram */](
+    rootFiles: js.Array[String],
+    options: CompilerOptions,
+    system: System,
+    createProgram: CreateProgram_[T],
+    reportDiagnostic: DiagnosticReporter,
+    reportWatchStatus: WatchStatusReporter,
+    projectReferences: js.Array[ProjectReference],
+    watchOptions: WatchOptions
   ): WatchCompilerHostOfFilesAndCompilerOptions[T] = js.native
   /**
     * Creates the watch from the host for config file
@@ -3629,6 +3740,14 @@ trait Typeofts extends js.Object {
     * For binding patterns, parameter tags are matched by position.
     */
   def getJSDocParameterTags(param: ParameterDeclaration): js.Array[JSDocParameterTag] = js.native
+  /** Gets the JSDoc private tag for the node if present */
+  def getJSDocPrivateTag(node: Node): js.UndefOr[JSDocPrivateTag] = js.native
+  /** Gets the JSDoc protected tag for the node if present */
+  def getJSDocProtectedTag(node: Node): js.UndefOr[JSDocProtectedTag] = js.native
+  /** Gets the JSDoc public tag for the node if present */
+  def getJSDocPublicTag(node: Node): js.UndefOr[JSDocPublicTag] = js.native
+  /** Gets the JSDoc protected tag for the node if present */
+  def getJSDocReadonlyTag(node: Node): js.UndefOr[JSDocReadonlyTag] = js.native
   /** Gets the JSDoc return tag for the node if present */
   def getJSDocReturnTag(node: Node): js.UndefOr[JSDocReturnTag] = js.native
   /**
@@ -3677,7 +3796,7 @@ trait Typeofts extends js.Object {
   def getMutableClone[T /* <: Node */](node: T): T = js.native
   def getNameOfDeclaration(declaration: Declaration): js.UndefOr[DeclarationName] = js.native
   def getNameOfDeclaration(declaration: Expression): js.UndefOr[DeclarationName] = js.native
-  def getNameOfJSDocTypedef(declaration: JSDocTypedefTag): js.UndefOr[Identifier] = js.native
+  def getNameOfJSDocTypedef(declaration: JSDocTypedefTag): js.UndefOr[Identifier | PrivateIdentifier] = js.native
   def getNodeMajorVersion(): js.UndefOr[Double] = js.native
   def getOriginalNode(): js.UndefOr[Node] = js.native
   def getOriginalNode(node: Node): js.UndefOr[Node] = js.native
@@ -3717,6 +3836,13 @@ trait Typeofts extends js.Object {
     host: ParseConfigFileHost,
     extendedConfigCache: Map[ExtendedConfigCacheEntry]
   ): js.UndefOr[ParsedCommandLine] = js.native
+  def getParsedCommandLineOfConfigFile(
+    configFileName: String,
+    optionsToExtend: CompilerOptions,
+    host: ParseConfigFileHost,
+    extendedConfigCache: Map[ExtendedConfigCacheEntry],
+    watchOptionsToExtend: WatchOptions
+  ): js.UndefOr[ParsedCommandLine] = js.native
   def getPositionOfLineAndCharacter(sourceFile: SourceFileLike, line: Double, character: Double): Double = js.native
   def getPreEmitDiagnostics(program: Program): js.Array[Diagnostic] = js.native
   def getPreEmitDiagnostics(program: Program, sourceFile: SourceFile): js.Array[Diagnostic] = js.native
@@ -3745,7 +3871,8 @@ trait Typeofts extends js.Object {
     */
   def hasJSDocParameterTags(node: FunctionLikeDeclaration): Boolean = js.native
   def hasJSDocParameterTags(node: SignatureDeclaration): Boolean = js.native
-  def idText(identifier: Identifier): String = js.native
+  def idText(identifierOrPrivateName: Identifier): String = js.native
+  def idText(identifierOrPrivateName: PrivateIdentifier): String = js.native
   def isAccessor(node: Node): /* is typescript.typescript.AccessorDeclaration */ Boolean = js.native
   def isArrayBindingPattern(node: Node): /* is typescript.typescript.ArrayBindingPattern */ Boolean = js.native
   def isArrayLiteralExpression(node: Node): /* is typescript.typescript.ArrayLiteralExpression */ Boolean = js.native
@@ -3817,6 +3944,7 @@ trait Typeofts extends js.Object {
   def isGetAccessorDeclaration(node: Node): /* is typescript.typescript.GetAccessorDeclaration */ Boolean = js.native
   def isHeritageClause(node: Node): /* is typescript.typescript.HeritageClause */ Boolean = js.native
   def isIdentifier(node: Node): /* is typescript.typescript.Identifier */ Boolean = js.native
+  def isIdentifierOrPrivateIdentifier(node: Node): Boolean = js.native
   def isIdentifierPart(ch: Double): Boolean = js.native
   def isIdentifierPart(ch: Double, languageVersion: ScriptTarget): Boolean = js.native
   def isIdentifierStart(ch: Double): Boolean = js.native
@@ -3850,8 +3978,12 @@ trait Typeofts extends js.Object {
   def isJSDocNullableType(node: Node): /* is typescript.typescript.JSDocNullableType */ Boolean = js.native
   def isJSDocOptionalType(node: Node): /* is typescript.typescript.JSDocOptionalType */ Boolean = js.native
   def isJSDocParameterTag(node: Node): /* is typescript.typescript.JSDocParameterTag */ Boolean = js.native
+  def isJSDocPrivateTag(node: Node): /* is typescript.typescript.JSDocPrivateTag */ Boolean = js.native
   def isJSDocPropertyLikeTag(node: Node): /* is typescript.typescript.JSDocPropertyLikeTag */ Boolean = js.native
   def isJSDocPropertyTag(node: Node): /* is typescript.typescript.JSDocPropertyTag */ Boolean = js.native
+  def isJSDocProtectedTag(node: Node): /* is typescript.typescript.JSDocProtectedTag */ Boolean = js.native
+  def isJSDocPublicTag(node: Node): /* is typescript.typescript.JSDocPublicTag */ Boolean = js.native
+  def isJSDocReadonlyTag(node: Node): /* is typescript.typescript.JSDocReadonlyTag */ Boolean = js.native
   def isJSDocReturnTag(node: Node): /* is typescript.typescript.JSDocReturnTag */ Boolean = js.native
   def isJSDocSignature(node: Node): /* is typescript.typescript.JSDocSignature */ Boolean = js.native
   def isJSDocTemplateTag(node: Node): /* is typescript.typescript.JSDocTemplateTag */ Boolean = js.native
@@ -3887,8 +4019,10 @@ trait Typeofts extends js.Object {
   def isModifier(node: Node): /* is typescript.typescript.Modifier */ Boolean = js.native
   def isModuleBlock(node: Node): /* is typescript.typescript.ModuleBlock */ Boolean = js.native
   def isModuleDeclaration(node: Node): /* is typescript.typescript.ModuleDeclaration */ Boolean = js.native
+  def isNamedExportBindings(node: Node): /* is typescript.typescript.NamedExportBindings */ Boolean = js.native
   def isNamedExports(node: Node): /* is typescript.typescript.NamedExports */ Boolean = js.native
   def isNamedImports(node: Node): /* is typescript.typescript.NamedImports */ Boolean = js.native
+  def isNamespaceExport(node: Node): /* is typescript.typescript.NamespaceExport */ Boolean = js.native
   def isNamespaceExportDeclaration(node: Node): /* is typescript.typescript.NamespaceExportDeclaration */ Boolean = js.native
   def isNamespaceImport(node: Node): /* is typescript.typescript.NamespaceImport */ Boolean = js.native
   def isNewExpression(node: Node): /* is typescript.typescript.NewExpression */ Boolean = js.native
@@ -3914,6 +4048,7 @@ trait Typeofts extends js.Object {
   def isParseTreeNode(node: Node): Boolean = js.native
   def isPostfixUnaryExpression(node: Node): /* is typescript.typescript.PostfixUnaryExpression */ Boolean = js.native
   def isPrefixUnaryExpression(node: Node): /* is typescript.typescript.PrefixUnaryExpression */ Boolean = js.native
+  def isPrivateIdentifier(node: Node): /* is typescript.typescript.PrivateIdentifier */ Boolean = js.native
   def isPropertyAccessChain(node: Node): /* is typescript.typescript.PropertyAccessChain */ Boolean = js.native
   def isPropertyAccessExpression(node: Node): /* is typescript.typescript.PropertyAccessExpression */ Boolean = js.native
   def isPropertyAccessOrQualifiedName(node: Node): Boolean = js.native
@@ -3965,6 +4100,7 @@ trait Typeofts extends js.Object {
     */
   def isTypeNode(node: Node): /* is typescript.typescript.TypeNode */ Boolean = js.native
   def isTypeOfExpression(node: Node): /* is typescript.typescript.TypeOfExpression */ Boolean = js.native
+  def isTypeOnlyImportOrExportDeclaration(node: Node): /* is typescript.typescript.TypeOnlyCompatibleAliasDeclaration */ Boolean = js.native
   def isTypeOperatorNode(node: Node): /* is typescript.typescript.TypeOperatorNode */ Boolean = js.native
   def isTypeParameterDeclaration(node: Node): /* is typescript.typescript.TypeParameterDeclaration */ Boolean = js.native
   def isTypePredicateNode(node: Node): /* is typescript.typescript.TypePredicateNode */ Boolean = js.native
@@ -4015,82 +4151,27 @@ trait Typeofts extends js.Object {
   def parseCommandLine(commandLine: js.Array[String], readFile: js.Function1[/* path */ String, js.UndefOr[String]]): ParsedCommandLine = js.native
   def parseConfigFileTextToJson(fileName: String, jsonText: String): AnonConfig = js.native
   def parseIsolatedEntityName(text: String, languageVersion: ScriptTarget): js.UndefOr[EntityName] = js.native
-  def parseJsonConfigFileContent(json: js.Any, host: ParseConfigHost, basePath: String): ParsedCommandLine = js.native
-  def parseJsonConfigFileContent(json: js.Any, host: ParseConfigHost, basePath: String, existingOptions: CompilerOptions): ParsedCommandLine = js.native
   def parseJsonConfigFileContent(
     json: js.Any,
     host: ParseConfigHost,
     basePath: String,
-    existingOptions: CompilerOptions,
-    configFileName: String
-  ): ParsedCommandLine = js.native
-  def parseJsonConfigFileContent(
-    json: js.Any,
-    host: ParseConfigHost,
-    basePath: String,
-    existingOptions: CompilerOptions,
-    configFileName: String,
-    resolutionStack: js.Array[Path]
-  ): ParsedCommandLine = js.native
-  def parseJsonConfigFileContent(
-    json: js.Any,
-    host: ParseConfigHost,
-    basePath: String,
-    existingOptions: CompilerOptions,
-    configFileName: String,
-    resolutionStack: js.Array[Path],
-    extraFileExtensions: js.Array[FileExtensionInfo]
-  ): ParsedCommandLine = js.native
-  def parseJsonConfigFileContent(
-    json: js.Any,
-    host: ParseConfigHost,
-    basePath: String,
-    existingOptions: CompilerOptions,
-    configFileName: String,
-    resolutionStack: js.Array[Path],
-    extraFileExtensions: js.Array[FileExtensionInfo],
-    extendedConfigCache: Map[ExtendedConfigCacheEntry]
-  ): ParsedCommandLine = js.native
-  def parseJsonSourceFileConfigFileContent(sourceFile: TsConfigSourceFile, host: ParseConfigHost, basePath: String): ParsedCommandLine = js.native
-  def parseJsonSourceFileConfigFileContent(
-    sourceFile: TsConfigSourceFile,
-    host: ParseConfigHost,
-    basePath: String,
-    existingOptions: CompilerOptions
+    existingOptions: js.UndefOr[CompilerOptions],
+    configFileName: js.UndefOr[String],
+    resolutionStack: js.UndefOr[js.Array[Path]],
+    extraFileExtensions: js.UndefOr[js.Array[FileExtensionInfo]],
+    extendedConfigCache: js.UndefOr[Map[ExtendedConfigCacheEntry]],
+    existingWatchOptions: js.UndefOr[WatchOptions]
   ): ParsedCommandLine = js.native
   def parseJsonSourceFileConfigFileContent(
     sourceFile: TsConfigSourceFile,
     host: ParseConfigHost,
     basePath: String,
-    existingOptions: CompilerOptions,
-    configFileName: String
-  ): ParsedCommandLine = js.native
-  def parseJsonSourceFileConfigFileContent(
-    sourceFile: TsConfigSourceFile,
-    host: ParseConfigHost,
-    basePath: String,
-    existingOptions: CompilerOptions,
-    configFileName: String,
-    resolutionStack: js.Array[Path]
-  ): ParsedCommandLine = js.native
-  def parseJsonSourceFileConfigFileContent(
-    sourceFile: TsConfigSourceFile,
-    host: ParseConfigHost,
-    basePath: String,
-    existingOptions: CompilerOptions,
-    configFileName: String,
-    resolutionStack: js.Array[Path],
-    extraFileExtensions: js.Array[FileExtensionInfo]
-  ): ParsedCommandLine = js.native
-  def parseJsonSourceFileConfigFileContent(
-    sourceFile: TsConfigSourceFile,
-    host: ParseConfigHost,
-    basePath: String,
-    existingOptions: CompilerOptions,
-    configFileName: String,
-    resolutionStack: js.Array[Path],
-    extraFileExtensions: js.Array[FileExtensionInfo],
-    extendedConfigCache: Map[ExtendedConfigCacheEntry]
+    existingOptions: js.UndefOr[CompilerOptions],
+    configFileName: js.UndefOr[String],
+    resolutionStack: js.UndefOr[js.Array[Path]],
+    extraFileExtensions: js.UndefOr[js.Array[FileExtensionInfo]],
+    extendedConfigCache: js.UndefOr[Map[ExtendedConfigCacheEntry]],
+    existingWatchOptions: js.UndefOr[WatchOptions]
   ): ParsedCommandLine = js.native
   def parseJsonText(fileName: String, sourceText: String): JsonSourceFile = js.native
   def preProcessFile(sourceText: String): PreProcessedFileInfo = js.native
@@ -4193,13 +4274,13 @@ trait Typeofts extends js.Object {
     * Sets a custom text range to use when emitting comments.
     */
   def setCommentRange[T /* <: Node */](node: T, range: TextRange): T = js.native
-  def setConstantValue(node: ElementAccessExpression, value: String): ElementAccessExpression | PropertyAccessExpression = js.native
-  def setConstantValue(node: ElementAccessExpression, value: Double): ElementAccessExpression | PropertyAccessExpression = js.native
+  def setConstantValue(node: ElementAccessExpression, value: String): PropertyAccessExpression | ElementAccessExpression = js.native
+  def setConstantValue(node: ElementAccessExpression, value: Double): PropertyAccessExpression | ElementAccessExpression = js.native
   /**
     * Sets the constant value to emit for an expression.
     */
-  def setConstantValue(node: PropertyAccessExpression, value: String): ElementAccessExpression | PropertyAccessExpression = js.native
-  def setConstantValue(node: PropertyAccessExpression, value: Double): ElementAccessExpression | PropertyAccessExpression = js.native
+  def setConstantValue(node: PropertyAccessExpression, value: String): PropertyAccessExpression | ElementAccessExpression = js.native
+  def setConstantValue(node: PropertyAccessExpression, value: Double): PropertyAccessExpression | ElementAccessExpression = js.native
   /**
     * Sets flags that control emit behavior of a node.
     */
@@ -4805,89 +4886,133 @@ trait Typeofts extends js.Object {
     modifiers: js.Array[Modifier],
     expression: Expression
   ): ExportAssignment = js.native
-  def updateExportDeclaration(node: ExportDeclaration): ExportDeclaration = js.native
   def updateExportDeclaration(
     node: ExportDeclaration,
     decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     exportClause: js.UndefOr[scala.Nothing],
-    moduleSpecifier: Expression
+    moduleSpecifier: js.UndefOr[scala.Nothing],
+    isTypeOnly: Boolean
   ): ExportDeclaration = js.native
   def updateExportDeclaration(
     node: ExportDeclaration,
     decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
-    exportClause: NamedExports
+    exportClause: js.UndefOr[scala.Nothing],
+    moduleSpecifier: Expression,
+    isTypeOnly: Boolean
   ): ExportDeclaration = js.native
   def updateExportDeclaration(
     node: ExportDeclaration,
     decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
-    exportClause: NamedExports,
-    moduleSpecifier: Expression
+    exportClause: NamedExportBindings,
+    moduleSpecifier: js.UndefOr[scala.Nothing],
+    isTypeOnly: Boolean
   ): ExportDeclaration = js.native
-  def updateExportDeclaration(node: ExportDeclaration, decorators: js.UndefOr[scala.Nothing], modifiers: js.Array[Modifier]): ExportDeclaration = js.native
+  def updateExportDeclaration(
+    node: ExportDeclaration,
+    decorators: js.UndefOr[scala.Nothing],
+    modifiers: js.UndefOr[scala.Nothing],
+    exportClause: NamedExportBindings,
+    moduleSpecifier: Expression,
+    isTypeOnly: Boolean
+  ): ExportDeclaration = js.native
   def updateExportDeclaration(
     node: ExportDeclaration,
     decorators: js.UndefOr[scala.Nothing],
     modifiers: js.Array[Modifier],
     exportClause: js.UndefOr[scala.Nothing],
-    moduleSpecifier: Expression
+    moduleSpecifier: js.UndefOr[scala.Nothing],
+    isTypeOnly: Boolean
   ): ExportDeclaration = js.native
   def updateExportDeclaration(
     node: ExportDeclaration,
     decorators: js.UndefOr[scala.Nothing],
     modifiers: js.Array[Modifier],
-    exportClause: NamedExports
+    exportClause: js.UndefOr[scala.Nothing],
+    moduleSpecifier: Expression,
+    isTypeOnly: Boolean
   ): ExportDeclaration = js.native
   def updateExportDeclaration(
     node: ExportDeclaration,
     decorators: js.UndefOr[scala.Nothing],
     modifiers: js.Array[Modifier],
-    exportClause: NamedExports,
-    moduleSpecifier: Expression
+    exportClause: NamedExportBindings,
+    moduleSpecifier: js.UndefOr[scala.Nothing],
+    isTypeOnly: Boolean
   ): ExportDeclaration = js.native
-  def updateExportDeclaration(node: ExportDeclaration, decorators: js.Array[Decorator]): ExportDeclaration = js.native
+  def updateExportDeclaration(
+    node: ExportDeclaration,
+    decorators: js.UndefOr[scala.Nothing],
+    modifiers: js.Array[Modifier],
+    exportClause: NamedExportBindings,
+    moduleSpecifier: Expression,
+    isTypeOnly: Boolean
+  ): ExportDeclaration = js.native
   def updateExportDeclaration(
     node: ExportDeclaration,
     decorators: js.Array[Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     exportClause: js.UndefOr[scala.Nothing],
-    moduleSpecifier: Expression
+    moduleSpecifier: js.UndefOr[scala.Nothing],
+    isTypeOnly: Boolean
   ): ExportDeclaration = js.native
   def updateExportDeclaration(
     node: ExportDeclaration,
     decorators: js.Array[Decorator],
     modifiers: js.UndefOr[scala.Nothing],
-    exportClause: NamedExports
+    exportClause: js.UndefOr[scala.Nothing],
+    moduleSpecifier: Expression,
+    isTypeOnly: Boolean
   ): ExportDeclaration = js.native
   def updateExportDeclaration(
     node: ExportDeclaration,
     decorators: js.Array[Decorator],
     modifiers: js.UndefOr[scala.Nothing],
-    exportClause: NamedExports,
-    moduleSpecifier: Expression
+    exportClause: NamedExportBindings,
+    moduleSpecifier: js.UndefOr[scala.Nothing],
+    isTypeOnly: Boolean
   ): ExportDeclaration = js.native
-  def updateExportDeclaration(node: ExportDeclaration, decorators: js.Array[Decorator], modifiers: js.Array[Modifier]): ExportDeclaration = js.native
+  def updateExportDeclaration(
+    node: ExportDeclaration,
+    decorators: js.Array[Decorator],
+    modifiers: js.UndefOr[scala.Nothing],
+    exportClause: NamedExportBindings,
+    moduleSpecifier: Expression,
+    isTypeOnly: Boolean
+  ): ExportDeclaration = js.native
   def updateExportDeclaration(
     node: ExportDeclaration,
     decorators: js.Array[Decorator],
     modifiers: js.Array[Modifier],
     exportClause: js.UndefOr[scala.Nothing],
-    moduleSpecifier: Expression
+    moduleSpecifier: js.UndefOr[scala.Nothing],
+    isTypeOnly: Boolean
   ): ExportDeclaration = js.native
   def updateExportDeclaration(
     node: ExportDeclaration,
     decorators: js.Array[Decorator],
     modifiers: js.Array[Modifier],
-    exportClause: NamedExports
+    exportClause: js.UndefOr[scala.Nothing],
+    moduleSpecifier: Expression,
+    isTypeOnly: Boolean
   ): ExportDeclaration = js.native
   def updateExportDeclaration(
     node: ExportDeclaration,
     decorators: js.Array[Decorator],
     modifiers: js.Array[Modifier],
-    exportClause: NamedExports,
-    moduleSpecifier: Expression
+    exportClause: NamedExportBindings,
+    moduleSpecifier: js.UndefOr[scala.Nothing],
+    isTypeOnly: Boolean
+  ): ExportDeclaration = js.native
+  def updateExportDeclaration(
+    node: ExportDeclaration,
+    decorators: js.Array[Decorator],
+    modifiers: js.Array[Modifier],
+    exportClause: NamedExportBindings,
+    moduleSpecifier: Expression,
+    isTypeOnly: Boolean
   ): ExportDeclaration = js.native
   def updateExportSpecifier(node: ExportSpecifier, propertyName: js.UndefOr[scala.Nothing], name: Identifier): ExportSpecifier = js.native
   def updateExportSpecifier(node: ExportSpecifier, propertyName: Identifier, name: Identifier): ExportSpecifier = js.native
@@ -5168,10 +5293,25 @@ trait Typeofts extends js.Object {
   def updateIdentifier(node: Identifier): Identifier = js.native
   def updateIf(node: IfStatement, expression: Expression, thenStatement: Statement): IfStatement = js.native
   def updateIf(node: IfStatement, expression: Expression, thenStatement: Statement, elseStatement: Statement): IfStatement = js.native
-  def updateImportClause(node: ImportClause): ImportClause = js.native
-  def updateImportClause(node: ImportClause, name: js.UndefOr[scala.Nothing], namedBindings: NamedImportBindings): ImportClause = js.native
-  def updateImportClause(node: ImportClause, name: Identifier): ImportClause = js.native
-  def updateImportClause(node: ImportClause, name: Identifier, namedBindings: NamedImportBindings): ImportClause = js.native
+  def updateImportClause(
+    node: ImportClause,
+    name: js.UndefOr[scala.Nothing],
+    namedBindings: js.UndefOr[scala.Nothing],
+    isTypeOnly: Boolean
+  ): ImportClause = js.native
+  def updateImportClause(
+    node: ImportClause,
+    name: js.UndefOr[scala.Nothing],
+    namedBindings: NamedImportBindings,
+    isTypeOnly: Boolean
+  ): ImportClause = js.native
+  def updateImportClause(
+    node: ImportClause,
+    name: Identifier,
+    namedBindings: js.UndefOr[scala.Nothing],
+    isTypeOnly: Boolean
+  ): ImportClause = js.native
+  def updateImportClause(node: ImportClause, name: Identifier, namedBindings: NamedImportBindings, isTypeOnly: Boolean): ImportClause = js.native
   def updateImportDeclaration(
     node: ImportDeclaration,
     decorators: js.UndefOr[scala.Nothing],
@@ -5680,6 +5820,7 @@ trait Typeofts extends js.Object {
   ): ModuleDeclaration = js.native
   def updateNamedExports(node: NamedExports, elements: js.Array[ExportSpecifier]): NamedExports = js.native
   def updateNamedImports(node: NamedImports, elements: js.Array[ImportSpecifier]): NamedImports = js.native
+  def updateNamespaceExport(node: NamespaceExport, name: Identifier): NamespaceExport = js.native
   def updateNamespaceExportDeclaration(node: NamespaceExportDeclaration, name: Identifier): NamespaceExportDeclaration = js.native
   def updateNamespaceImport(node: NamespaceImport, name: Identifier): NamespaceImport = js.native
   def updateNew(node: NewExpression, expression: Expression): NewExpression = js.native
@@ -6490,6 +6631,7 @@ trait Typeofts extends js.Object {
     initializer: Expression
   ): PropertyDeclaration = js.native
   def updatePropertyAccess(node: PropertyAccessExpression, expression: Expression, name: Identifier): PropertyAccessExpression = js.native
+  def updatePropertyAccess(node: PropertyAccessExpression, expression: Expression, name: PrivateIdentifier): PropertyAccessExpression = js.native
   def updatePropertyAccessChain(
     node: PropertyAccessChain,
     expression: Expression,
@@ -6887,12 +7029,12 @@ trait Typeofts extends js.Object {
     * @param context A lexical environment context for the visitor.
     */
   def visitEachChild[T /* <: Node */](node: T, visitor: Visitor, context: TransformationContext): js.UndefOr[T] = js.native
-  def visitEachChild[T /* <: Node */](node: T, visitor: Visitor, context: TransformationContext, nodesVisitor: FnCount): js.UndefOr[T] = js.native
+  def visitEachChild[T /* <: Node */](node: T, visitor: Visitor, context: TransformationContext, nodesVisitor: typings.typescript.FnCall): js.UndefOr[T] = js.native
   def visitEachChild[T /* <: Node */](
     node: T,
     visitor: Visitor,
     context: TransformationContext,
-    nodesVisitor: FnCount,
+    nodesVisitor: typings.typescript.FnCall,
     tokenVisitor: Visitor
   ): js.UndefOr[T] = js.native
   def visitEachChild[T /* <: Node */](node: js.UndefOr[scala.Nothing], visitor: Visitor, context: TransformationContext): js.UndefOr[T] = js.native
@@ -6900,13 +7042,13 @@ trait Typeofts extends js.Object {
     node: js.UndefOr[scala.Nothing],
     visitor: Visitor,
     context: TransformationContext,
-    nodesVisitor: FnCount
+    nodesVisitor: typings.typescript.FnCall
   ): js.UndefOr[T] = js.native
   def visitEachChild[T /* <: Node */](
     node: js.UndefOr[scala.Nothing],
     visitor: Visitor,
     context: TransformationContext,
-    nodesVisitor: FnCount,
+    nodesVisitor: typings.typescript.FnCall,
     tokenVisitor: Visitor
   ): js.UndefOr[T] = js.native
   /**
@@ -7130,7 +7272,7 @@ trait Typeofts extends js.Object {
     nodes: js.UndefOr[scala.Nothing],
     visitor: Visitor,
     context: TransformationContext,
-    nodesVisitor: FnCount
+    nodesVisitor: typings.typescript.FnCall
   ): NodeArray[ParameterDeclaration] = js.native
   /**
     * Starts a new lexical environment and visits a parameter list, suspending the lexical
@@ -7141,7 +7283,7 @@ trait Typeofts extends js.Object {
     nodes: NodeArray[ParameterDeclaration],
     visitor: Visitor,
     context: TransformationContext,
-    nodesVisitor: FnCount
+    nodesVisitor: typings.typescript.FnCall
   ): NodeArray[ParameterDeclaration] = js.native
   def walkUpBindingElementsAndPatterns(binding: BindingElement): VariableDeclaration | ParameterDeclaration = js.native
 }

@@ -8,10 +8,9 @@ import scala.scalajs.js.annotation._
 
 trait PlotVennOptions extends js.Object {
   /**
-    * (Highcharts) Accessibility options for a series. Requires the
-    * accessibility module.
+    * (Highcharts) Accessibility options for a series.
     */
-  var accessibility: js.UndefOr[js.Object | PlotVennAccessibilityOptions] = js.undefined
+  var accessibility: js.UndefOr[SeriesAccessibilityOptionsObject] = js.undefined
   /**
     * (Highmaps) Whether all areas of the map defined in `mapData` should be
     * rendered. If `true`, areas which don't correspond to a data point, are
@@ -44,7 +43,7 @@ trait PlotVennOptions extends js.Object {
     * Due to poor performance, animation is disabled in old IE browsers for
     * several chart types.
     */
-  var animation: js.UndefOr[Boolean | AnimationOptionsObject | PlotVennAnimationOptions] = js.undefined
+  var animation: js.UndefOr[Boolean | AnimationOptionsObject] = js.undefined
   /**
     * (Highcharts) For some series, there is a limit that shuts down initial
     * animation by default when the total number of points in the chart is too
@@ -103,6 +102,19 @@ trait PlotVennOptions extends js.Object {
     */
   var clip: js.UndefOr[Boolean] = js.undefined
   /**
+    * (Highcharts, Highmaps) Options for marker clusters, the concept of
+    * sampling the data values into larger blocks in order to ease readability
+    * and increase performance of the JavaScript charts.
+    *
+    * Note: marker clusters module is not working with `boost` and
+    * `draggable-points` modules.
+    *
+    * The marker clusters feature requires the marker-clusters.js file to be
+    * loaded, found in the modules directory of the download package, or online
+    * at code.highcharts.com/modules/marker-clusters.js.
+    */
+  var cluster: js.UndefOr[PlotVennClusterOptions] = js.undefined
+  /**
     * (Highcharts) The main color of the series. In line type series it applies
     * to the line and the point markers unless otherwise specified. In bar type
     * series it applies to the bars unless a color is specified per point. The
@@ -156,18 +168,19 @@ trait PlotVennOptions extends js.Object {
   var compareBase: js.UndefOr[`0` | `100`] = js.undefined
   /**
     * (Highstock) Defines if comparison should start from the first point
-    * within the visible range or should start from the first point (see online
-    * documentation for example) the range. In other words, this flag
-    * determines if first point within the visible range will have 0%
-    * (`compareStart=true`) or should have been already calculated according to
-    * the previous point (`compareStart=false`).
+    * within the visible range or should start from the first point **before**
+    * the range.
+    *
+    * In other words, this flag determines if first point within the visible
+    * range will have 0% (`compareStart=true`) or should have been already
+    * calculated according to the previous point (`compareStart=false`).
     */
   var compareStart: js.UndefOr[Boolean] = js.undefined
   /**
     * (Gantt) Override Pathfinder connector options for a series. Requires
     * Highcharts Gantt to be loaded.
     */
-  var connectors: js.UndefOr[PlotVennConnectorsOptions] = js.undefined
+  var connectors: js.UndefOr[SeriesConnectorsOptionsObject] = js.undefined
   /**
     * (Highcharts) You can set the cursor to "pointer" if you have click events
     * attached to the series, to signal to the user that the points and lines
@@ -199,10 +212,10 @@ trait PlotVennOptions extends js.Object {
     * of the first point instance are copied over to the group point. This can
     * be altered through a custom `approximation` callback function.
     */
-  var dataGrouping: js.UndefOr[PlotVennDataGroupingOptions] = js.undefined
+  var dataGrouping: js.UndefOr[DataGroupingOptionsObject] = js.undefined
   /**
-    * (Highcharts) Options for the series data labels, appearing next to each
-    * data point.
+    * (Highcharts, Highstock, Highmaps, Gantt) Options for the series data
+    * labels, appearing next to each data point.
     *
     * Since v6.2.0, multiple data labels can be applied to each single point by
     * defining them as an array of configs.
@@ -212,6 +225,10 @@ trait PlotVennOptions extends js.Object {
     * (see example).
     */
   var dataLabels: js.UndefOr[DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject]] = js.undefined
+  /**
+    * (Highcharts, Highstock) Options for the series data sorting.
+    */
+  var dataSorting: js.UndefOr[DataSortingOptionsObject | PlotVennDataSortingOptions] = js.undefined
   /**
     * (Highcharts) A description of the series to add to the screen reader
     * information about the series.
@@ -228,7 +245,7 @@ trait PlotVennOptions extends js.Object {
     * hooks can also be attached to the series at run time using the
     * `Highcharts.addEvent` function.
     */
-  var events: js.UndefOr[PlotVennEventsOptions] = js.undefined
+  var events: js.UndefOr[SeriesEventsOptionsObject] = js.undefined
   /**
     * (Highstock) Defines when to display a gap in the graph, together with the
     * gapUnit option.
@@ -292,11 +309,11 @@ trait PlotVennOptions extends js.Object {
   /**
     * (Highstock) The line marks the last price from all points.
     */
-  var lastPrice: js.UndefOr[PlotVennLastPriceOptions] = js.undefined
+  var lastPrice: js.UndefOr[SeriesLastPriceOptionsObject] = js.undefined
   /**
     * (Highstock) The line marks the last price from visible range of points.
     */
-  var lastVisiblePrice: js.UndefOr[PlotVennLastVisiblePriceOptions] = js.undefined
+  var lastVisiblePrice: js.UndefOr[SeriesLastVisiblePriceOptionsObject] = js.undefined
   var marker: js.UndefOr[Boolean] = js.undefined
   /**
     * (Highstock) Options for the corresponding navigator series if
@@ -315,7 +332,7 @@ trait PlotVennOptions extends js.Object {
   /**
     * (Highcharts) Properties for each single point.
     */
-  var point: js.UndefOr[PlotVennPointOptions] = js.undefined
+  var point: js.UndefOr[PlotSeriesPointOptions] = js.undefined
   /**
     * (Highcharts) Same as accessibility.pointDescriptionFormatter, but for an
     * individual series. Overrides the chart wide configuration.
@@ -359,7 +376,7 @@ trait PlotVennOptions extends js.Object {
     * the points in this series for keyboard navigation.
     */
   var skipKeyboardNavigation: js.UndefOr[Boolean] = js.undefined
-  var states: js.UndefOr[PlotVennStatesOptions] = js.undefined
+  var states: js.UndefOr[SeriesStatesOptionsObject] = js.undefined
   /**
     * (Highcharts, Highstock) Whether to apply steps to the line. Possible
     * values are `left`, `center` and `right`.
@@ -383,7 +400,7 @@ trait PlotVennOptions extends js.Object {
     * series.name by default shows in the headerFormat and point.x and point.y
     * in the pointFormat.
     */
-  var tooltip: js.UndefOr[PlotVennTooltipOptions] = js.undefined
+  var tooltip: js.UndefOr[SeriesTooltipOptionsObject] = js.undefined
   /**
     * (Highcharts, Highstock, Gantt) When a series contains a data array that
     * is longer than this, only one dimensional arrays of numbers, or two
@@ -409,10 +426,10 @@ trait PlotVennOptions extends js.Object {
 object PlotVennOptions {
   @scala.inline
   def apply(
-    accessibility: js.Object | PlotVennAccessibilityOptions = null,
+    accessibility: SeriesAccessibilityOptionsObject = null,
     allAreas: js.UndefOr[Boolean] = js.undefined,
     allowPointSelect: js.UndefOr[Boolean] = js.undefined,
-    animation: Boolean | AnimationOptionsObject | PlotVennAnimationOptions = null,
+    animation: Boolean | AnimationOptionsObject = null,
     animationLimit: Int | Double = null,
     boostBlending: OptionsBoostBlendingValue = null,
     boostThreshold: Int | Double = null,
@@ -422,6 +439,7 @@ object PlotVennOptions {
     brighten: Int | Double = null,
     className: String = null,
     clip: js.UndefOr[Boolean] = js.undefined,
+    cluster: PlotVennClusterOptions = null,
     color: ColorString | GradientColorObject | PatternObject = null,
     colorAxis: Boolean | Double | String = null,
     colorByPoint: js.UndefOr[Boolean] = js.undefined,
@@ -430,25 +448,26 @@ object PlotVennOptions {
     compare: String = null,
     compareBase: `0` | `100` = null,
     compareStart: js.UndefOr[Boolean] = js.undefined,
-    connectors: PlotVennConnectorsOptions = null,
+    connectors: SeriesConnectorsOptionsObject = null,
     cursor: String | CursorValue = null,
     dashStyle: DashStyleValue = null,
-    dataGrouping: PlotVennDataGroupingOptions = null,
+    dataGrouping: DataGroupingOptionsObject = null,
     dataLabels: DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject] = null,
+    dataSorting: DataSortingOptionsObject | PlotVennDataSortingOptions = null,
     description: String = null,
     enableMouseTracking: js.UndefOr[Boolean] = js.undefined,
-    events: PlotVennEventsOptions = null,
+    events: SeriesEventsOptionsObject = null,
     gapSize: Int | Double = null,
     gapUnit: OptionsGapUnitValue = null,
     includeInDataExport: js.UndefOr[Boolean] = js.undefined,
     joinBy: String | js.Array[String] = null,
     keys: js.Array[String] = null,
-    lastPrice: PlotVennLastPriceOptions = null,
-    lastVisiblePrice: PlotVennLastVisiblePriceOptions = null,
+    lastPrice: SeriesLastPriceOptionsObject = null,
+    lastVisiblePrice: SeriesLastVisiblePriceOptionsObject = null,
     marker: js.UndefOr[Boolean] = js.undefined,
     navigatorOptions: PlotSeriesOptions = null,
     opacity: Int | Double = null,
-    point: PlotVennPointOptions = null,
+    point: PlotSeriesPointOptions = null,
     pointDescriptionFormatter: js.Function = null,
     pointRange: Int | Double = null,
     selected: js.UndefOr[Boolean] = js.undefined,
@@ -456,10 +475,10 @@ object PlotVennOptions {
     showInLegend: js.UndefOr[Boolean] = js.undefined,
     showInNavigator: js.UndefOr[Boolean] = js.undefined,
     skipKeyboardNavigation: js.UndefOr[Boolean] = js.undefined,
-    states: PlotVennStatesOptions = null,
+    states: SeriesStatesOptionsObject = null,
     step: OptionsStepValue = null,
     stickyTracking: js.UndefOr[Boolean] = js.undefined,
-    tooltip: PlotVennTooltipOptions = null,
+    tooltip: SeriesTooltipOptionsObject = null,
     turboThreshold: Int | Double = null,
     visible: js.UndefOr[Boolean] = js.undefined,
     zIndex: Int | Double = null
@@ -478,6 +497,7 @@ object PlotVennOptions {
     if (brighten != null) __obj.updateDynamic("brighten")(brighten.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (!js.isUndefined(clip)) __obj.updateDynamic("clip")(clip.asInstanceOf[js.Any])
+    if (cluster != null) __obj.updateDynamic("cluster")(cluster.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (colorAxis != null) __obj.updateDynamic("colorAxis")(colorAxis.asInstanceOf[js.Any])
     if (!js.isUndefined(colorByPoint)) __obj.updateDynamic("colorByPoint")(colorByPoint.asInstanceOf[js.Any])
@@ -491,6 +511,7 @@ object PlotVennOptions {
     if (dashStyle != null) __obj.updateDynamic("dashStyle")(dashStyle.asInstanceOf[js.Any])
     if (dataGrouping != null) __obj.updateDynamic("dataGrouping")(dataGrouping.asInstanceOf[js.Any])
     if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
+    if (dataSorting != null) __obj.updateDynamic("dataSorting")(dataSorting.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (!js.isUndefined(enableMouseTracking)) __obj.updateDynamic("enableMouseTracking")(enableMouseTracking.asInstanceOf[js.Any])
     if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])

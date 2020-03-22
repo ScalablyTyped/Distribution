@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/angular", "IonMenuToggle")
 @js.native
 class IonMenuToggle protected ()
-  extends typings.ionicAngular.distMod.IonMenuToggle {
+  extends typings.ionicAngular.proxiesMod.IonMenuToggle {
   def this(c: ChangeDetectorRef, r: ElementRef[_], z: NgZone) = this()
 }
 

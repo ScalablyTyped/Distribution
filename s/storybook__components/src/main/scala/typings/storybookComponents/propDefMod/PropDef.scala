@@ -4,13 +4,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PropDef extends js.Object {
-  var defaultValue: js.UndefOr[PropDefaultValue] = js.undefined
-  var description: js.UndefOr[String] = js.undefined
-  var jsDocTags: js.UndefOr[JsDocTags] = js.undefined
-  var name: String
-  var required: Boolean
-  var `type`: PropType
+  var defaultValue: js.UndefOr[PropDefaultValue] = js.native
+  var description: js.UndefOr[String] = js.native
+  var jsDocTags: js.UndefOr[JsDocTags] = js.native
+  var name: String = js.native
+  var required: Boolean = js.native
+  var `type`: PropType = js.native
 }
 
 object PropDef {

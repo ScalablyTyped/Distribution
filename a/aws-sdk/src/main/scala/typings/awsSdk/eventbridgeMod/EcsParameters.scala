@@ -15,7 +15,7 @@ trait EcsParameters extends js.Object {
     */
   var LaunchType: js.UndefOr[typings.awsSdk.eventbridgeMod.LaunchType] = js.native
   /**
-    * Use this structure if the ECS task uses the awsvpc network mode. This structure specifies the VPC subnets and security groups associated with the task and whether a public IP address is to be used. This structure is required if LaunchType is FARGATE because the awsvpc mode is required for Fargate tasks. If you specify NetworkConfiguration when the target ECS task doesn't use the awsvpc network mode, the task fails.
+    * Use this structure if the ECS task uses the awsvpc network mode. This structure specifies the VPC subnets and security groups associated with the task, and whether a public IP address is to be used. This structure is required if LaunchType is FARGATE because the awsvpc mode is required for Fargate tasks. If you specify NetworkConfiguration when the target ECS task does not use the awsvpc network mode, the task fails.
     */
   var NetworkConfiguration: js.UndefOr[typings.awsSdk.eventbridgeMod.NetworkConfiguration] = js.native
   /**

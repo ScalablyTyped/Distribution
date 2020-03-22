@@ -1,7 +1,8 @@
 package typings.vscodeLanguageserverProtocol.mod
 
-import typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions
+import typings.vscodeLanguageserverProtocol.messagesMod.ProtocolNotificationType
 import typings.vscodeLanguageserverProtocol.protocolMod.WillSaveTextDocumentParams
+import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.textDocumentSlashwillSave
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +10,10 @@ import scala.scalajs.js.annotation._
 @JSImport("vscode-languageserver-protocol", "WillSaveTextDocumentNotification")
 @js.native
 object WillSaveTextDocumentNotification extends js.Object {
-  val `type`: typings.vscodeJsonrpc.mod.NotificationType[WillSaveTextDocumentParams, TextDocumentRegistrationOptions] = js.native
+  val method: textDocumentSlashwillSave = js.native
+  val `type`: ProtocolNotificationType[
+    WillSaveTextDocumentParams, 
+    typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions
+  ] = js.native
 }
 

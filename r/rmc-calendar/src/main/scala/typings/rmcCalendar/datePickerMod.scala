@@ -15,7 +15,7 @@ object datePickerMod extends js.Object {
   trait DatePicker
     extends typings.rmcCalendar.datePickerBaseMod.default {
     var panel: HTMLDivElement = js.native
-    var touchHandler: AnonEvt = js.native
+    var touchHandler: AnonOnFinish = js.native
     var transform: String = js.native
     def computeHeight(data: MonthData): Unit = js.native
     def computeHeight(data: MonthData, singleMonth: typings.rmcCalendar.singleMonthMod.default): Unit = js.native

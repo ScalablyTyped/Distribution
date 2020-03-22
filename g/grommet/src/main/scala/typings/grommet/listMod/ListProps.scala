@@ -1,7 +1,7 @@
 package typings.grommet.listMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.grommet.AnonBackgroundBorder
+import typings.grommet.AnonBorder
 import typings.grommet.AnonDarkLight
 import typings.grommet.AnonIndex
 import typings.grommet.utilsMod.A11yTitleType
@@ -23,7 +23,7 @@ trait ListProps extends js.Object {
   var border: js.UndefOr[BorderType] = js.undefined
   var data: js.UndefOr[js.Array[js.Object | String]] = js.undefined
   var gridArea: js.UndefOr[GridAreaType] = js.undefined
-  var itemProps: js.UndefOr[StringDictionary[AnonBackgroundBorder]] = js.undefined
+  var itemProps: js.UndefOr[StringDictionary[AnonBorder]] = js.undefined
   var margin: js.UndefOr[MarginType] = js.undefined
   var onClickItem: js.UndefOr[
     js.Function1[
@@ -48,7 +48,7 @@ object ListProps {
     border: BorderType = null,
     data: js.Array[js.Object | String] = null,
     gridArea: GridAreaType = null,
-    itemProps: StringDictionary[AnonBackgroundBorder] = null,
+    itemProps: StringDictionary[AnonBorder] = null,
     margin: MarginType = null,
     onClickItem: (/* event */ AnonIndex) | (/* event */ MouseEvent[Element, NativeMouseEvent]) => Unit = null,
     onMore: () => Unit = null,

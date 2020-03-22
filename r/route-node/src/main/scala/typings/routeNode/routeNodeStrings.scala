@@ -1,7 +1,7 @@
 package typings.routeNode
 
-import typings.routeNode.mod.QueryParamsMode
-import typings.routeNode.mod.TrailingSlashMode
+import typings.routeNode.routeNodeMod.QueryParamsMode
+import typings.routeNode.routeNodeMod.TrailingSlashMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

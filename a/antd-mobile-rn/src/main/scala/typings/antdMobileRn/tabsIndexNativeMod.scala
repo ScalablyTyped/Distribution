@@ -22,7 +22,7 @@ object tabsIndexNativeMod extends js.Object {
   /* static members */
   @js.native
   object default extends js.Object {
-    var DefaultTabBar: TypeofClassRMCDefaultTabBar = js.native
+    var DefaultTabBar: TypeofRMCDefaultTabBar = js.native
   }
   
 }

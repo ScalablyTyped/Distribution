@@ -1,7 +1,7 @@
 
 # Scala.js typings for mali
 
-Typings are for version 0.19.0
+Typings are for version 0.20.0
 
 ## Library description:
 Minimalistic gRPC microservice framework

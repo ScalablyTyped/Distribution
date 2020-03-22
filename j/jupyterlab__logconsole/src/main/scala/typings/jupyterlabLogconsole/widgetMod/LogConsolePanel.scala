@@ -4,8 +4,8 @@ import typings.jupyterlabCoreutils.interfacesMod.IChangedArgs
 import typings.jupyterlabLogconsole.jupyterlabLogconsoleStrings.source
 import typings.jupyterlabLogconsole.tokensMod.ILogger
 import typings.jupyterlabLogconsole.tokensMod.ILoggerRegistry
-import typings.phosphorSignaling.mod.ISignal
-import typings.phosphorWidgets.mod.StackedPanel
+import typings.luminoSignaling.mod.ISignal
+import typings.luminoWidgets.mod.StackedPanel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,26 +34,29 @@ class LogConsolePanel protected () extends StackedPanel {
   /**
     * The current logger.
     */
-  val logger: ILogger | Null = js.native
+  def logger(): ILogger | Null = js.native
   /**
     * The logger registry providing the logs.
     */
-  val loggerRegistry: ILoggerRegistry = js.native
-  /**
-    * The log source displayed
-    */
-  var source: String | Null = js.native
+  def loggerRegistry(): ILoggerRegistry = js.native
+  def source(): js.Any = js.native
+  def source(name: String): js.Any = js.native
   /**
     * Signal for source changes
     */
-  val sourceChanged: ISignal[this.type, IChangedArgs[String | Null, source]] = js.native
+  def sourceChanged(): ISignal[this.type, IChangedArgs[String | Null, String | Null, source]] = js.native
   /**
     * Signal for source changes
     */
-  val sourceDisplayed: ISignal[this.type, ISourceDisplayed] = js.native
+  def sourceDisplayed(): ISignal[this.type, ISourceDisplayed] = js.native
   /**
     * The source version displayed.
     */
-  val sourceVersion: Double | Null = js.native
+  def sourceVersion(): Double | Null = js.native
+  /**
+    * The log source displayed
+    */
+  @JSName("source")
+  def source_Union(): String | Null = js.native
 }
 

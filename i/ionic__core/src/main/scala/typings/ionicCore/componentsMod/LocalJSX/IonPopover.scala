@@ -1,11 +1,11 @@
 package typings.ionicCore.componentsMod.LocalJSX
 
+import typings.ionicCore.animationInterfaceMod.Animation
+import typings.ionicCore.animationInterfaceMod.AnimationBuilder
 import typings.ionicCore.ionicCoreStrings.ios
 import typings.ionicCore.ionicCoreStrings.md
 import typings.ionicCore.mod.ComponentProps
 import typings.ionicCore.mod.ComponentRef
-import typings.ionicCore.oldAnimationAnimationInterfaceMod.Animation
-import typings.ionicCore.oldAnimationAnimationInterfaceMod.AnimationBuilder
 import typings.ionicCore.overlaysInterfaceMod.OverlayEventDetail
 import typings.std.CustomEvent
 import scala.scalajs.js
@@ -87,10 +87,10 @@ object IonPopover {
     component: ComponentRef = null,
     componentProps: ComponentProps[Null] = null,
     cssClass: String | js.Array[String] = null,
-    enterAnimation: (/* Animation */ Animation, /* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => js.Promise[Animation] = null,
+    enterAnimation: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation = null,
     event: js.Any = null,
     keyboardClose: js.UndefOr[Boolean] = js.undefined,
-    leaveAnimation: (/* Animation */ Animation, /* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => js.Promise[Animation] = null,
+    leaveAnimation: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation = null,
     mode: ios | md = null,
     onIonPopoverDidDismiss: /* event */ CustomEvent[OverlayEventDetail[_]] => Unit = null,
     onIonPopoverDidPresent: /* event */ CustomEvent[Unit] => Unit = null,
@@ -105,10 +105,10 @@ object IonPopover {
     if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
     if (componentProps != null) __obj.updateDynamic("componentProps")(componentProps.asInstanceOf[js.Any])
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
-    if (enterAnimation != null) __obj.updateDynamic("enterAnimation")(js.Any.fromFunction3(enterAnimation))
+    if (enterAnimation != null) __obj.updateDynamic("enterAnimation")(js.Any.fromFunction2(enterAnimation))
     if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
     if (!js.isUndefined(keyboardClose)) __obj.updateDynamic("keyboardClose")(keyboardClose.asInstanceOf[js.Any])
-    if (leaveAnimation != null) __obj.updateDynamic("leaveAnimation")(js.Any.fromFunction3(leaveAnimation))
+    if (leaveAnimation != null) __obj.updateDynamic("leaveAnimation")(js.Any.fromFunction2(leaveAnimation))
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (onIonPopoverDidDismiss != null) __obj.updateDynamic("onIonPopoverDidDismiss")(js.Any.fromFunction1(onIonPopoverDidDismiss))
     if (onIonPopoverDidPresent != null) __obj.updateDynamic("onIonPopoverDidPresent")(js.Any.fromFunction1(onIonPopoverDidPresent))

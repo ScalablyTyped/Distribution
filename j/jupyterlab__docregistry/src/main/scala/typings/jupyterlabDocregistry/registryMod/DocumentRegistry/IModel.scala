@@ -1,9 +1,10 @@
 package typings.jupyterlabDocregistry.registryMod.DocumentRegistry
 
 import typings.jupyterlabObservables.modeldbMod.IModelDB
-import typings.phosphorCoreutils.jsonMod.JSONValue
-import typings.phosphorDisposable.mod.IDisposable
-import typings.phosphorSignaling.mod.ISignal
+import typings.luminoCoreutils.jsonMod.PartialJSONValue
+import typings.luminoCoreutils.jsonMod.ReadonlyPartialJSONValue
+import typings.luminoDisposable.mod.IDisposable
+import typings.luminoSignaling.mod.ISignal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -48,14 +49,14 @@ trait IModel extends IDisposable {
   /**
     * A signal emitted when the model state changes.
     */
-  var stateChanged: ISignal[this.type, typings.jupyterlabCoreutils.interfacesMod.IChangedArgs[_, String]]
+  var stateChanged: ISignal[this.type, typings.jupyterlabCoreutils.interfacesMod.IChangedArgs[_, _, String]]
   /**
     * Deserialize the model from JSON.
     *
     * #### Notes
     * Should emit a [contentChanged] signal.
     */
-  def fromJSON(value: js.Any): Unit
+  def fromJSON(value: ReadonlyPartialJSONValue): Unit
   /**
     * Deserialize the model from a string.
     *
@@ -74,7 +75,7 @@ trait IModel extends IDisposable {
   /**
     * Serialize the model to JSON.
     */
-  def toJSON(): JSONValue
+  def toJSON(): PartialJSONValue
 }
 
 object IModel {
@@ -85,14 +86,14 @@ object IModel {
     defaultKernelName: String,
     dirty: Boolean,
     dispose: () => Unit,
-    fromJSON: js.Any => Unit,
+    fromJSON: ReadonlyPartialJSONValue => Unit,
     fromString: String => Unit,
     initialize: () => Unit,
     isDisposed: Boolean,
     modelDB: IModelDB,
     readOnly: Boolean,
-    stateChanged: ISignal[IModel, typings.jupyterlabCoreutils.interfacesMod.IChangedArgs[_, String]],
-    toJSON: () => JSONValue
+    stateChanged: ISignal[IModel, typings.jupyterlabCoreutils.interfacesMod.IChangedArgs[_, _, String]],
+    toJSON: () => PartialJSONValue
   ): IModel = {
     val __obj = js.Dynamic.literal(contentChanged = contentChanged.asInstanceOf[js.Any], defaultKernelLanguage = defaultKernelLanguage.asInstanceOf[js.Any], defaultKernelName = defaultKernelName.asInstanceOf[js.Any], dirty = dirty.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), fromJSON = js.Any.fromFunction1(fromJSON), fromString = js.Any.fromFunction1(fromString), initialize = js.Any.fromFunction0(initialize), isDisposed = isDisposed.asInstanceOf[js.Any], modelDB = modelDB.asInstanceOf[js.Any], readOnly = readOnly.asInstanceOf[js.Any], stateChanged = stateChanged.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON))
   

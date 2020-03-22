@@ -36,7 +36,7 @@ object perspectiveCameraMod extends js.Object {
     	 * Camera frustum vertical field of view, from bottom to top of view, in degrees.
     	 */
     var fov: Double = js.native
-    var isPerspectiveCamera: `true` = js.native
+    val isPerspectiveCamera: `true` = js.native
     /**
     	 * Camera frustum near plane.
     	 */

@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ionic/angular/dist/directives/proxies", "IonInfiniteScrollContent")
+@JSImport("@ionic/angular/directives/proxies", "IonInfiniteScrollContent")
 @js.native
 class IonInfiniteScrollContent protected ()
   extends typings.ionicCore.componentsMod.Components.IonInfiniteScrollContent {

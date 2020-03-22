@@ -24,8 +24,6 @@ object tabButtonMod extends js.Object {
       */
     var disabled: Boolean = js.native
     var el: HTMLElement = js.native
-    val hasIcon: js.Any = js.native
-    val hasLabel: js.Any = js.native
     /**
       * Emitted when the tab bar is clicked
       * @internal
@@ -48,12 +46,14 @@ object tabButtonMod extends js.Object {
       * the selected tab or by the router to switch between them.
       */
     var tab: js.UndefOr[String] = js.native
-    val tabIndex: js.Any = js.native
     @JSName("componentWillLoad")
     def componentWillLoad_MTabButton(): Unit = js.native
+    /* private */ def hasIcon(): js.Any = js.native
+    /* private */ def hasLabel(): js.Any = js.native
     def onTabBarChanged(ev: CustomEvent[TabBarChangedEventDetail]): Unit = js.native
     @JSName("render")
     def render_MTabButton(): js.Any = js.native
+    /* private */ def tabIndex(): js.Any = js.native
   }
   
 }

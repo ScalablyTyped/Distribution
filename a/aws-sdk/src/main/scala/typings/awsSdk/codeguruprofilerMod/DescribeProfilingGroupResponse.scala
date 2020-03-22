@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait DescribeProfilingGroupResponse extends js.Object {
+  /**
+    * Information about a profiling group.
+    */
   var profilingGroup: ProfilingGroupDescription = js.native
 }
 

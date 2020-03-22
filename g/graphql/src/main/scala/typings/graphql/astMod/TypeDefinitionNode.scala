@@ -22,6 +22,36 @@ trait TypeDefinitionNode extends TypeSystemDefinitionNode
 
 object TypeDefinitionNode {
   @scala.inline
+  def InputObjectTypeDefinitionNode(
+    kind: InputObjectTypeDefinition,
+    name: NameNode,
+    description: StringValueNode = null,
+    directives: js.Array[DirectiveNode] = null,
+    fields: js.Array[InputValueDefinitionNode] = null,
+    loc: Location = null
+  ): TypeDefinitionNode = {
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (directives != null) __obj.updateDynamic("directives")(directives.asInstanceOf[js.Any])
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TypeDefinitionNode]
+  }
+  @scala.inline
+  def ScalarTypeDefinitionNode(
+    kind: ScalarTypeDefinition,
+    name: NameNode,
+    description: StringValueNode = null,
+    directives: js.Array[DirectiveNode] = null,
+    loc: Location = null
+  ): TypeDefinitionNode = {
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (directives != null) __obj.updateDynamic("directives")(directives.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TypeDefinitionNode]
+  }
+  @scala.inline
   def ObjectTypeDefinitionNode(
     kind: ObjectTypeDefinition,
     name: NameNode,
@@ -56,33 +86,19 @@ object TypeDefinitionNode {
     __obj.asInstanceOf[TypeDefinitionNode]
   }
   @scala.inline
-  def InputObjectTypeDefinitionNode(
-    kind: InputObjectTypeDefinition,
+  def EnumTypeDefinitionNode(
+    kind: EnumTypeDefinition,
     name: NameNode,
     description: StringValueNode = null,
     directives: js.Array[DirectiveNode] = null,
-    fields: js.Array[InputValueDefinitionNode] = null,
-    loc: Location = null
-  ): TypeDefinitionNode = {
-    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (directives != null) __obj.updateDynamic("directives")(directives.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    __obj.asInstanceOf[TypeDefinitionNode]
-  }
-  @scala.inline
-  def ScalarTypeDefinitionNode(
-    kind: ScalarTypeDefinition,
-    name: NameNode,
-    description: StringValueNode = null,
-    directives: js.Array[DirectiveNode] = null,
-    loc: Location = null
+    loc: Location = null,
+    values: js.Array[EnumValueDefinitionNode] = null
   ): TypeDefinitionNode = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (directives != null) __obj.updateDynamic("directives")(directives.asInstanceOf[js.Any])
     if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeDefinitionNode]
   }
   @scala.inline
@@ -99,22 +115,6 @@ object TypeDefinitionNode {
     if (directives != null) __obj.updateDynamic("directives")(directives.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    __obj.asInstanceOf[TypeDefinitionNode]
-  }
-  @scala.inline
-  def EnumTypeDefinitionNode(
-    kind: EnumTypeDefinition,
-    name: NameNode,
-    description: StringValueNode = null,
-    directives: js.Array[DirectiveNode] = null,
-    loc: Location = null,
-    values: js.Array[EnumValueDefinitionNode] = null
-  ): TypeDefinitionNode = {
-    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (directives != null) __obj.updateDynamic("directives")(directives.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeDefinitionNode]
   }
 }

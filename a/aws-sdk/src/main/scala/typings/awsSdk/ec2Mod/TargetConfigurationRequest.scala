@@ -13,12 +13,12 @@ trait TargetConfigurationRequest extends js.Object {
   /**
     * The Convertible Reserved Instance offering ID.
     */
-  var OfferingId: String = js.native
+  var OfferingId: ReservedInstancesOfferingId = js.native
 }
 
 object TargetConfigurationRequest {
   @scala.inline
-  def apply(OfferingId: String, InstanceCount: Int | scala.Double = null): TargetConfigurationRequest = {
+  def apply(OfferingId: ReservedInstancesOfferingId, InstanceCount: Int | scala.Double = null): TargetConfigurationRequest = {
     val __obj = js.Dynamic.literal(OfferingId = OfferingId.asInstanceOf[js.Any])
     if (InstanceCount != null) __obj.updateDynamic("InstanceCount")(InstanceCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetConfigurationRequest]

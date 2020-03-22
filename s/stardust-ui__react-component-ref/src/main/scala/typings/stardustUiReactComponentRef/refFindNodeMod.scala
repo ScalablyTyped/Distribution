@@ -29,7 +29,7 @@ object refFindNodeMod extends js.Object {
   @js.native
   object default extends js.Object {
     var displayName: String = js.native
-    var propTypes: AnonChildren | AnonChildrenInnerRef = js.native
+    var propTypes: AnonChildren | AnonInnerRef = js.native
   }
   
 }

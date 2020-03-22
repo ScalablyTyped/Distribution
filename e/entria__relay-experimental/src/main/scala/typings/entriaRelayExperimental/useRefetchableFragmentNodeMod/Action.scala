@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
   - typings.entriaRelayExperimental.AnonEnvironment
-  - typings.entriaRelayExperimental.AnonArgs
+  - typings.entriaRelayExperimental.AnonFetchPolicy
 */
 trait Action extends js.Object
 
@@ -23,7 +23,7 @@ object Action {
     __obj.asInstanceOf[Action]
   }
   @scala.inline
-  def AnonArgs(
+  def AnonFetchPolicy(
     environment: Environment,
     refetchVariables: Variables,
     `type`: String,

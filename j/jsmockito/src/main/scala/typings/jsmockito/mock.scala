@@ -36,6 +36,6 @@ object mock extends js.Object {
     * @param Obj {function} the constructor for the object to be mocked
     * @return {object} a mock object
     */
-  def apply[T](Obj: AnonT[T]): T = js.native
+  def apply[T](Obj: AnonInstantiable[T]): T = js.native
 }
 

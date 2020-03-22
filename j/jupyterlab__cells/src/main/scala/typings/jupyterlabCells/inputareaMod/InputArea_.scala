@@ -5,7 +5,7 @@ import typings.jupyterlabCells.inputareaMod.InputArea.IOptions
 import typings.jupyterlabCells.modelMod.ICellModel
 import typings.jupyterlabCodeeditor.editorMod.CodeEditor.IEditor
 import typings.jupyterlabCodeeditor.mod.CodeEditorWrapper
-import typings.phosphorWidgets.mod.Widget
+import typings.luminoWidgets.mod.Widget
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -26,21 +26,21 @@ class InputArea_ protected () extends Widget {
     */
   val contentFactory: IContentFactory = js.native
   /**
-    * Get the CodeEditor used by the cell.
-    */
-  val editor: IEditor = js.native
-  /**
-    * Get the CodeEditorWrapper used by the cell.
-    */
-  val editorWidget: CodeEditorWrapper = js.native
-  /**
     * The model used by the widget.
     */
   val model: ICellModel = js.native
   /**
+    * Get the CodeEditor used by the cell.
+    */
+  def editor(): IEditor = js.native
+  /**
+    * Get the CodeEditorWrapper used by the cell.
+    */
+  def editorWidget(): CodeEditorWrapper = js.native
+  /**
     * Get the prompt node used by the cell.
     */
-  val promptNode: HTMLElement = js.native
+  def promptNode(): HTMLElement = js.native
   /**
     * Render an input instead of the text editor.
     */

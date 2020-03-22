@@ -1,6 +1,6 @@
 package typings.proxyLists.mod
 
-import typings.std.Partial
+import typings.proxyLists.PartialOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object getProxies extends js.Object {
   def apply(): GetProxiesEventEmitter = js.native
-  def apply(options: Partial[Options]): GetProxiesEventEmitter = js.native
+  def apply(options: PartialOptions): GetProxiesEventEmitter = js.native
 }
 

@@ -1,7 +1,7 @@
 package typings.oracleOraclejet.ojdiagramMod
 
-import typings.oracleOraclejet.AnonBorderColorBorderRadiusBorderWidth
-import typings.oracleOraclejet.AnonIconAnonCircle
+import typings.oracleOraclejet.AnonIconAnonShape
+import typings.oracleOraclejet.AnonOpacity
 import typings.oracleOraclejet.mod.JetElement
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.mod.JetSetPropertyType
@@ -62,7 +62,6 @@ import typings.oracleOraclejet.oracleOraclejetStrings.labelStyleChanged
 import typings.oracleOraclejet.oracleOraclejetStrings.load
 import typings.oracleOraclejet.oracleOraclejetStrings.loadeddata
 import typings.oracleOraclejet.oracleOraclejetStrings.loadedmetadata
-import typings.oracleOraclejet.oracleOraclejetStrings.loadend
 import typings.oracleOraclejet.oracleOraclejetStrings.loadstart
 import typings.oracleOraclejet.oracleOraclejetStrings.lostpointercapture
 import typings.oracleOraclejet.oracleOraclejetStrings.mousedown
@@ -147,22 +146,19 @@ import scala.scalajs.js.annotation._
 trait ojDiagramNode extends JetElement[ojDiagramNodeSettableProperties] {
   var categories: js.UndefOr[js.Array[String]] = js.native
   var descendantsConnectivity: js.UndefOr[connected | disjoint | unknown] = js.native
-  var icon: js.UndefOr[AnonBorderColorBorderRadiusBorderWidth] = js.native
+  var icon: js.UndefOr[AnonOpacity] = js.native
   var label: js.UndefOr[String] = js.native
   var labelStyle: js.UndefOr[js.Object | Null] = js.native
   var onCategoriesChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[js.Array[String]]], _]) | Null = js.native
   var onDescendantsConnectivityChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[connected | disjoint | unknown]], _]) | Null = js.native
-  var onIconChanged: (js.Function1[
-    /* event */ JetElementCustomEvent[js.UndefOr[AnonBorderColorBorderRadiusBorderWidth]], 
-    _
-  ]) | Null = js.native
+  var onIconChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[AnonOpacity]], _]) | Null = js.native
   var onLabelChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[String]], _]) | Null = js.native
   var onLabelStyleChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[js.Object | Null]], _]) | Null = js.native
-  var onOverviewChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[AnonIconAnonCircle]], _]) | Null = js.native
+  var onOverviewChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[AnonIconAnonShape]], _]) | Null = js.native
   var onSelectableChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[auto | off]], _]) | Null = js.native
   var onShortDescChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[String]], _]) | Null = js.native
   var onShowDisclosureChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[on | off]], _]) | Null = js.native
-  var overview: js.UndefOr[AnonIconAnonCircle] = js.native
+  var overview: js.UndefOr[AnonIconAnonShape] = js.native
   var selectable: js.UndefOr[auto | off] = js.native
   var shortDesc: js.UndefOr[String] = js.native
   var showDisclosure: js.UndefOr[on | off] = js.native
@@ -526,20 +522,12 @@ trait ojDiagramNode extends JetElement[ojDiagramNodeSettableProperties] {
   @JSName("addEventListener")
   def addEventListener_iconChanged(
     `type`: iconChanged,
-    listener: js.ThisFunction1[
-      /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[js.UndefOr[AnonBorderColorBorderRadiusBorderWidth]], 
-      _
-    ]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.UndefOr[AnonOpacity]], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_iconChanged(
     `type`: iconChanged,
-    listener: js.ThisFunction1[
-      /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[js.UndefOr[AnonBorderColorBorderRadiusBorderWidth]], 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.UndefOr[AnonOpacity]], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -637,17 +625,6 @@ trait ojDiagramNode extends JetElement[ojDiagramNodeSettableProperties] {
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_loadend(
-    `type`: loadend,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent[EventTarget], _]
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_loadend(
-    `type`: loadend,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent[EventTarget], _],
-    useCapture: Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
   def addEventListener_loadstart(`type`: loadstart, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event_, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_loadstart(
@@ -727,7 +704,7 @@ trait ojDiagramNode extends JetElement[ojDiagramNodeSettableProperties] {
     `type`: overviewChanged,
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[js.UndefOr[AnonIconAnonCircle]], 
+      /* ev */ JetElementCustomEvent[js.UndefOr[AnonIconAnonShape]], 
       _
     ]
   ): Unit = js.native
@@ -736,7 +713,7 @@ trait ojDiagramNode extends JetElement[ojDiagramNodeSettableProperties] {
     `type`: overviewChanged,
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[js.UndefOr[AnonIconAnonCircle]], 
+      /* ev */ JetElementCustomEvent[js.UndefOr[AnonIconAnonShape]], 
       _
     ],
     useCapture: Boolean
@@ -1091,13 +1068,13 @@ trait ojDiagramNode extends JetElement[ojDiagramNodeSettableProperties] {
   @JSName("getProperty")
   def getProperty_descendantsConnectivity(property: descendantsConnectivity): js.UndefOr[connected | disjoint | unknown] = js.native
   @JSName("getProperty")
-  def getProperty_icon(property: icon): js.UndefOr[AnonBorderColorBorderRadiusBorderWidth] = js.native
+  def getProperty_icon(property: icon): js.UndefOr[AnonOpacity] = js.native
   @JSName("getProperty")
   def getProperty_label(property: label): js.UndefOr[String] = js.native
   @JSName("getProperty")
   def getProperty_labelStyle(property: labelStyle): js.UndefOr[js.Object | Null] = js.native
   @JSName("getProperty")
-  def getProperty_overview(property: overview): js.UndefOr[AnonIconAnonCircle] = js.native
+  def getProperty_overview(property: overview): js.UndefOr[AnonIconAnonShape] = js.native
   @JSName("getProperty")
   def getProperty_selectable(property: selectable): js.UndefOr[auto | off] = js.native
   @JSName("getProperty")
@@ -1116,7 +1093,7 @@ trait ojDiagramNode extends JetElement[ojDiagramNodeSettableProperties] {
   @JSName("setProperty")
   def setProperty_categories(property: categories, value: js.Array[String]): Unit = js.native
   @JSName("setProperty")
-  def setProperty_icon(property: icon, value: AnonBorderColorBorderRadiusBorderWidth): Unit = js.native
+  def setProperty_icon(property: icon, value: AnonOpacity): Unit = js.native
   @JSName("setProperty")
   def setProperty_label(property: label, value: String): Unit = js.native
   @JSName("setProperty")
@@ -1124,7 +1101,7 @@ trait ojDiagramNode extends JetElement[ojDiagramNodeSettableProperties] {
   @JSName("setProperty")
   def setProperty_labelStyle(property: labelStyle, value: js.Object): Unit = js.native
   @JSName("setProperty")
-  def setProperty_overview(property: overview, value: AnonIconAnonCircle): Unit = js.native
+  def setProperty_overview(property: overview, value: AnonIconAnonShape): Unit = js.native
   @JSName("setProperty")
   def setProperty_shortDesc(property: shortDesc, value: String): Unit = js.native
 }

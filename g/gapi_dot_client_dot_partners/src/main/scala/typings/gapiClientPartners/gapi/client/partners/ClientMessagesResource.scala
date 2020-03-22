@@ -1,7 +1,7 @@
 package typings.gapiClientPartners.gapi.client.partners
 
 import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientPartners.AnonAccesstokenAlt
+import typings.gapiClientPartners.AnonAlt
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,12 +12,12 @@ trait ClientMessagesResource extends js.Object {
     * `Failed to render component`, `Profile page is running slow`,
     * `More than 500 users have accessed this result.`, etc.
     */
-  def log(request: AnonAccesstokenAlt): Request_[LogMessageResponse]
+  def log(request: AnonAlt): Request_[LogMessageResponse]
 }
 
 object ClientMessagesResource {
   @scala.inline
-  def apply(log: AnonAccesstokenAlt => Request_[LogMessageResponse]): ClientMessagesResource = {
+  def apply(log: AnonAlt => Request_[LogMessageResponse]): ClientMessagesResource = {
     val __obj = js.Dynamic.literal(log = js.Any.fromFunction1(log))
   
     __obj.asInstanceOf[ClientMessagesResource]

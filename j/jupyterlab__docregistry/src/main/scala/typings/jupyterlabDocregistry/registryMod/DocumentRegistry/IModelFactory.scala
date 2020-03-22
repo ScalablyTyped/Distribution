@@ -3,7 +3,7 @@ package typings.jupyterlabDocregistry.registryMod.DocumentRegistry
 import typings.jupyterlabObservables.modeldbMod.IModelDB
 import typings.jupyterlabServices.contentsMod.Contents.ContentType
 import typings.jupyterlabServices.contentsMod.Contents.FileFormat
-import typings.phosphorDisposable.mod.IDisposable
+import typings.luminoDisposable.mod.IDisposable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

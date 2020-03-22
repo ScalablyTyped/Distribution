@@ -1,6 +1,6 @@
 package typings.bluebird.mod
 
-import typings.bluebird.FnError
+import typings.bluebird.FnCall
 import typings.bluebird.bluebirdStrings.Object
 import typings.std.Error
 import typings.std.Map
@@ -22,7 +22,7 @@ trait Bluebird[R]
     * Alias `.caught();` for compatibility with earlier ECMAScript version.
     */
   @JSName("caught")
-  var caught_Original: FnError[R] = js.native
+  var caught_Original: FnCall[R] = js.native
   @JSName("lastly")
   var lastly_Original: js.Function1[/* handler */ js.Function0[Resolvable[_]], Bluebird[R]] = js.native
   @JSName(scala.scalajs.js.Symbol.toStringTag)

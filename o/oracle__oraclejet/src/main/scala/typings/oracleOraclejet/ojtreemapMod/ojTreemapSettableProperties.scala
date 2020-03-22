@@ -1,9 +1,9 @@
 package typings.oracleOraclejet.ojtreemapMod
 
-import typings.oracleOraclejet.AnonBottomCenter
-import typings.oracleOraclejet.AnonComponentNameLabelAndValueLabelClearSelectionLabelColorLabelCountWithTotal
-import typings.oracleOraclejet.AnonContextRendererAnonInsertAnonPreventDefaultDK
-import typings.oracleOraclejet.AnonContextRendererAnonInsertDK
+import typings.oracleOraclejet.Anon26
+import typings.oracleOraclejet.Anon27
+import typings.oracleOraclejet.AnonGroupLabelDisplay
+import typings.oracleOraclejet.AnonLabelDataVisualization
 import typings.oracleOraclejet.ojdataproviderMod.DataProvider
 import typings.oracleOraclejet.ojdvtBaseMod.dvtBaseComponentSettableProperties
 import typings.oracleOraclejet.oracleOraclejetStrings.all
@@ -44,18 +44,18 @@ trait ojTreemapSettableProperties[K, D] extends dvtBaseComponentSettableProperti
   var hoverBehaviorDelay: Double
   var isolatedNode: js.Any
   var layout: sliceAndDiceHorizontal | sliceAndDiceVertical | squarified
-  var nodeContent: AnonContextRendererAnonInsertDK[K, D]
-  var nodeDefaults: AnonBottomCenter
+  var nodeContent: Anon26[K, D]
+  var nodeDefaults: AnonGroupLabelDisplay
   var nodeSeparators: bevels | gaps
   var rootNode: js.Any
   var selection: js.Array[_]
   var selectionMode: none | single | multiple
   var sizeLabel: String
   var sorting: on | off
-  var tooltip: AnonContextRendererAnonInsertAnonPreventDefaultDK[K, D]
+  var tooltip: Anon27[K, D]
   var touchResponse: touchStart | auto
   @JSName("translations")
-  var translations_ojTreemapSettableProperties: AnonComponentNameLabelAndValueLabelClearSelectionLabelColorLabelCountWithTotal
+  var translations_ojTreemapSettableProperties: AnonLabelDataVisualization
 }
 
 object ojTreemapSettableProperties {
@@ -77,18 +77,18 @@ object ojTreemapSettableProperties {
     hoverBehaviorDelay: Double,
     isolatedNode: js.Any,
     layout: sliceAndDiceHorizontal | sliceAndDiceVertical | squarified,
-    nodeContent: AnonContextRendererAnonInsertDK[K, D],
-    nodeDefaults: AnonBottomCenter,
+    nodeContent: Anon26[K, D],
+    nodeDefaults: AnonGroupLabelDisplay,
     nodeSeparators: bevels | gaps,
     rootNode: js.Any,
     selection: js.Array[_],
     selectionMode: none | single | multiple,
     sizeLabel: String,
     sorting: on | off,
-    tooltip: AnonContextRendererAnonInsertAnonPreventDefaultDK[K, D],
+    tooltip: Anon27[K, D],
     touchResponse: touchStart | auto,
     trackResize: on | off,
-    translations: AnonComponentNameLabelAndValueLabelClearSelectionLabelColorLabelCountWithTotal,
+    translations: AnonLabelDataVisualization,
     data: DataProvider[K, D] = null
   ): ojTreemapSettableProperties[K, D] = {
     val __obj = js.Dynamic.literal(animationDuration = animationDuration.asInstanceOf[js.Any], animationOnDataChange = animationOnDataChange.asInstanceOf[js.Any], animationOnDisplay = animationOnDisplay.asInstanceOf[js.Any], animationUpdateColor = animationUpdateColor.asInstanceOf[js.Any], as = as.asInstanceOf[js.Any], colorLabel = colorLabel.asInstanceOf[js.Any], displayLevels = displayLevels.asInstanceOf[js.Any], drilling = drilling.asInstanceOf[js.Any], groupGaps = groupGaps.asInstanceOf[js.Any], hiddenCategories = hiddenCategories.asInstanceOf[js.Any], highlightMatch = highlightMatch.asInstanceOf[js.Any], highlightedCategories = highlightedCategories.asInstanceOf[js.Any], hoverBehavior = hoverBehavior.asInstanceOf[js.Any], hoverBehaviorDelay = hoverBehaviorDelay.asInstanceOf[js.Any], isolatedNode = isolatedNode.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any], nodeContent = nodeContent.asInstanceOf[js.Any], nodeDefaults = nodeDefaults.asInstanceOf[js.Any], nodeSeparators = nodeSeparators.asInstanceOf[js.Any], rootNode = rootNode.asInstanceOf[js.Any], selection = selection.asInstanceOf[js.Any], selectionMode = selectionMode.asInstanceOf[js.Any], sizeLabel = sizeLabel.asInstanceOf[js.Any], sorting = sorting.asInstanceOf[js.Any], tooltip = tooltip.asInstanceOf[js.Any], touchResponse = touchResponse.asInstanceOf[js.Any], trackResize = trackResize.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any])

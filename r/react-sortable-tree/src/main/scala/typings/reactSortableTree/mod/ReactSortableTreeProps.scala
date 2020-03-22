@@ -2,11 +2,10 @@ package typings.reactSortableTree.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.CSSProperties
+import typings.reactSortableTree.PartialListProps
 import typings.reactSortableTree.reactSortableTreeStrings.ltr
 import typings.reactSortableTree.reactSortableTreeStrings.rtl
-import typings.reactVirtualized.esListMod.ListProps
 import typings.reactVirtualized.mod.Index
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -59,7 +58,7 @@ object ReactSortableTreeProps {
     onVisibilityToggle: /* data */ OnVisibilityToggleData => Unit = null,
     onlyExpandSearchedNodes: js.UndefOr[Boolean] = js.undefined,
     placeholderRenderer: PlaceholderRenderer = null,
-    reactVirtualizedListProps: Partial[ListProps] = null,
+    reactVirtualizedListProps: PartialListProps = null,
     rowDirection: ltr | rtl = null,
     rowHeight: (js.Function1[/* info */ Index, Double]) | Double = null,
     scaffoldBlockPxWidth: Int | Double = null,

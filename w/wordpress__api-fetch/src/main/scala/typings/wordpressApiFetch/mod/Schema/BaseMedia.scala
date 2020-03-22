@@ -1,8 +1,8 @@
 package typings.wordpressApiFetch.mod.Schema
 
 import typings.std.Record
-import typings.wordpressApiFetch.AnonFileHeight
-import typings.wordpressApiFetch.AnonHref
+import typings.wordpressApiFetch.AnonDictk
+import typings.wordpressApiFetch.AnonHeight
 import typings.wordpressApiFetch.wordpressApiFetchStrings.file
 import typings.wordpressApiFetch.wordpressApiFetchStrings.image
 import typings.wordpressApiFetch.wordpressApiFetchStrings.inherit
@@ -22,7 +22,7 @@ trait BaseMedia[T /* <: Context */] extends BaseResponse {
   var guid: Contextual[T, js.Object, js.Object]
   var id: Double
   var link: String
-  var media_details: AnonFileHeight
+  var media_details: AnonHeight
   var media_type: file | image
   var meta: js.Array[_]
   var mime_type: String
@@ -42,7 +42,7 @@ trait BaseMedia[T /* <: Context */] extends BaseResponse {
 object BaseMedia {
   @scala.inline
   def apply[T /* <: Context */](
-    _links: Record[String, js.Array[AnonHref]],
+    _links: Record[String, js.Array[AnonDictk]],
     alt_text: String,
     author: Double,
     caption: Contextual[T, js.Object, js.Object],
@@ -54,7 +54,7 @@ object BaseMedia {
     guid: Contextual[T, js.Object, js.Object],
     id: Double,
     link: String,
-    media_details: AnonFileHeight,
+    media_details: AnonHeight,
     media_type: file | image,
     meta: js.Array[_],
     mime_type: String,

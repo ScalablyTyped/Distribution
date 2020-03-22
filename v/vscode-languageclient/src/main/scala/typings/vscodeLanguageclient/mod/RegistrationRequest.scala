@@ -1,5 +1,6 @@
 package typings.vscodeLanguageclient.mod
 
+import typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType
 import typings.vscodeLanguageserverProtocol.protocolMod.RegistrationParams
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -8,6 +9,6 @@ import scala.scalajs.js.annotation._
 @JSImport("vscode-languageclient", "RegistrationRequest")
 @js.native
 object RegistrationRequest extends js.Object {
-  val `type`: typings.vscodeJsonrpc.mod.RequestType[RegistrationParams, Unit, Unit, Unit] = js.native
+  val `type`: ProtocolRequestType[RegistrationParams, Unit, scala.Nothing, Unit, Unit] = js.native
 }
 

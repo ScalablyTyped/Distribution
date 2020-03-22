@@ -1,6 +1,7 @@
 package typings.antd.buttonButtonMod
 
 import typings.antd.AnonDelay
+import typings.antd.sizeContextMod.SizeType
 import typings.react.mod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,12 +11,13 @@ trait BaseButtonProps extends js.Object {
   var block: js.UndefOr[Boolean] = js.undefined
   var children: js.UndefOr[ReactNode] = js.undefined
   var className: js.UndefOr[String] = js.undefined
+  var danger: js.UndefOr[Boolean] = js.undefined
   var ghost: js.UndefOr[Boolean] = js.undefined
-  var icon: js.UndefOr[String] = js.undefined
+  var icon: js.UndefOr[ReactNode] = js.undefined
   var loading: js.UndefOr[Boolean | AnonDelay] = js.undefined
   var prefixCls: js.UndefOr[String] = js.undefined
   var shape: js.UndefOr[ButtonShape] = js.undefined
-  var size: js.UndefOr[ButtonSize] = js.undefined
+  var size: js.UndefOr[SizeType] = js.undefined
   var `type`: js.UndefOr[ButtonType] = js.undefined
 }
 
@@ -25,18 +27,20 @@ object BaseButtonProps {
     block: js.UndefOr[Boolean] = js.undefined,
     children: ReactNode = null,
     className: String = null,
+    danger: js.UndefOr[Boolean] = js.undefined,
     ghost: js.UndefOr[Boolean] = js.undefined,
-    icon: String = null,
+    icon: ReactNode = null,
     loading: Boolean | AnonDelay = null,
     prefixCls: String = null,
     shape: ButtonShape = null,
-    size: ButtonSize = null,
+    size: SizeType = null,
     `type`: ButtonType = null
   ): BaseButtonProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(block)) __obj.updateDynamic("block")(block.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (!js.isUndefined(danger)) __obj.updateDynamic("danger")(danger.asInstanceOf[js.Any])
     if (!js.isUndefined(ghost)) __obj.updateDynamic("ghost")(ghost.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (loading != null) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])

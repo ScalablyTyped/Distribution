@@ -1,18 +1,30 @@
 package typings.yup.mod
 
+import typings.yup.AnonName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<'type' | 'label' | 'meta' | 'tests' | 'fields', 'fields'> ]: yup.yup.SchemaDescription[P]} */ trait SchemaFieldInnerTypeDescription extends SchemaFieldDescription {
+/* Inlined parent std.Pick<yup.yup.SchemaDescription, std.Exclude<keyof yup.yup.SchemaDescription, 'fields'>> */
+trait SchemaFieldInnerTypeDescription extends SchemaFieldDescription {
   var innerType: js.UndefOr[SchemaFieldDescription] = js.undefined
+  var label: String
+  var meta: js.Object
+  var tests: js.Array[AnonName]
+  var `type`: String
 }
 
 object SchemaFieldInnerTypeDescription {
   @scala.inline
-  def apply(innerType: SchemaFieldDescription = null): SchemaFieldInnerTypeDescription = {
-    val __obj = js.Dynamic.literal()
+  def apply(
+    label: String,
+    meta: js.Object,
+    tests: js.Array[AnonName],
+    `type`: String,
+    innerType: SchemaFieldDescription = null
+  ): SchemaFieldInnerTypeDescription = {
+    val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], tests = tests.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (innerType != null) __obj.updateDynamic("innerType")(innerType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaFieldInnerTypeDescription]
   }

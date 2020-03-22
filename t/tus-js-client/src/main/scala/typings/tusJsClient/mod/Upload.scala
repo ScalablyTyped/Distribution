@@ -3,9 +3,7 @@ package typings.tusJsClient.mod
 import typings.std.Blob
 import typings.std.Error
 import typings.std.File
-import typings.std.Pick
-import typings.std.ReadableStreamDefaultReader
-import typings.tusJsClient.tusJsClientStrings.read
+import typings.tusJsClient.PickReadableStreamDefault
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,8 +13,8 @@ import scala.scalajs.js.annotation._
 class Upload protected () extends js.Object {
   def this(file: Blob, options: UploadOptions) = this()
   def this(file: File, options: UploadOptions) = this()
-  def this(file: Pick[ReadableStreamDefaultReader[_], read], options: UploadOptions) = this()
-  var file: File | Blob | (Pick[ReadableStreamDefaultReader[_], read]) = js.native
+  def this(file: PickReadableStreamDefault, options: UploadOptions) = this()
+  var file: File | Blob | PickReadableStreamDefault = js.native
   var options: UploadOptions = js.native
   var url: String | Null = js.native
   def abort(): Unit = js.native

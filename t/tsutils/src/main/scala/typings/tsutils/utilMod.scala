@@ -84,7 +84,7 @@ object utilMod extends js.Object {
     declarationList: VariableDeclarationList,
     cb: js.Function1[/* element */ (VariableDeclaration | BindingElement) with AnonName, T]
   ): js.UndefOr[T] = js.native
-  def forEachDestructuringIdentifier[T](pattern: BindingPattern, fn: js.Function1[/* element */ BindingElement with AnonName, T]): js.UndefOr[T] = js.native
+  def forEachDestructuringIdentifier[T](pattern: BindingPattern, fn: js.Function1[/* element */ BindingElementnameIdentif, T]): js.UndefOr[T] = js.native
   def forEachToken(node: Node, cb: js.Function1[/* node */ Node, Unit]): Unit = js.native
   def forEachToken(node: Node, cb: js.Function1[/* node */ Node, Unit], sourceFile: SourceFile): Unit = js.native
   def forEachTokenWithTrivia(node: Node, cb: ForEachTokenCallback): Unit = js.native

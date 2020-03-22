@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 trait Display extends js.Object {
   // Docs: http://electronjs.org/docs/api/structures/display
   /**
-    * Can be available, unavailable, unknown.
+    * Can be `available`, `unavailable`, `unknown`.
     */
   var accelerometerSupport: available | unavailable | unknown_
   var bounds: Rectangle
@@ -32,7 +32,7 @@ trait Display extends js.Object {
     */
   var id: Double
   /**
-    * true for an internal display and false for an external display
+    * `true` for an internal display and `false` for an external display
     */
   var internal: Boolean
   /**
@@ -49,7 +49,7 @@ trait Display extends js.Object {
   var scaleFactor: Double
   var size: Size
   /**
-    * Can be available, unavailable, unknown.
+    * Can be `available`, `unavailable`, `unknown`.
     */
   var touchSupport: available | unavailable | unknown_
   var workArea: Rectangle

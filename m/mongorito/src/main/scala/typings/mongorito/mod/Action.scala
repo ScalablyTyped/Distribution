@@ -47,9 +47,10 @@ trait Action extends js.Object
 
 object Action {
   @scala.inline
-  def UnsetAction(keys: String | js.Array[String], `type`: UNSET): Action = {
-    val __obj = js.Dynamic.literal(keys = keys.asInstanceOf[js.Any])
+  def GetAction(`type`: GET, key: String = null): Action = {
+    val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     __obj.asInstanceOf[Action]
   }
   @scala.inline
@@ -59,81 +60,8 @@ object Action {
     __obj.asInstanceOf[Action]
   }
   @scala.inline
-  def GetAction(`type`: GET, key: String = null): Action = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Action]
-  }
-  @scala.inline
-  def CreateAction(id: js.Object, `type`: CREATE): Action = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Action]
-  }
-  @scala.inline
-  def RemovedAction(`type`: REMOVED): Action = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Action]
-  }
-  @scala.inline
-  def SaveAction(fields: js.Object, `type`: SAVE): Action = {
-    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Action]
-  }
-  @scala.inline
-  def CreatedAction(id: js.Object, `type`: CREATED): Action = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Action]
-  }
-  @scala.inline
   def DropIndexAction(args: js.Array[_], `type`: DROP_INDEX): Action = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Action]
-  }
-  @scala.inline
-  def UpdateAction(fields: js.Object, `type`: UPDATE): Action = {
-    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Action]
-  }
-  @scala.inline
-  def CreateIndexAction(args: js.Array[_], `type`: CREATE_INDEX): Action = {
-    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Action]
-  }
-  @scala.inline
-  def UpdatedAction(fields: js.Object, `type`: UPDATED): Action = {
-    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Action]
-  }
-  @scala.inline
-  def SetAction(fields: js.Object, `type`: SET): Action = {
-    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Action]
-  }
-  @scala.inline
-  def CallAction(args: js.Array[AnonArgs], method: String, `type`: CALL): Action = {
-    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Action]
-  }
-  @scala.inline
-  def RefreshAction(`type`: REFRESH): Action = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Action]
-  }
-  @scala.inline
-  def IncrementAction(fields: js.Object, `type`: INCREMENT): Action = {
-    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Action]
   }
@@ -150,8 +78,80 @@ object Action {
     __obj.asInstanceOf[Action]
   }
   @scala.inline
+  def UpdatedAction(fields: js.Object, `type`: UPDATED): Action = {
+    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Action]
+  }
+  @scala.inline
+  def SaveAction(fields: js.Object, `type`: SAVE): Action = {
+    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Action]
+  }
+  @scala.inline
+  def UnsetAction(keys: String | js.Array[String], `type`: UNSET): Action = {
+    val __obj = js.Dynamic.literal(keys = keys.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Action]
+  }
+  @scala.inline
+  def RefreshAction(`type`: REFRESH): Action = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Action]
+  }
+  @scala.inline
+  def SetAction(fields: js.Object, `type`: SET): Action = {
+    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Action]
+  }
+  @scala.inline
+  def RemovedAction(`type`: REMOVED): Action = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Action]
+  }
+  @scala.inline
+  def IncrementAction(fields: js.Object, `type`: INCREMENT): Action = {
+    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Action]
+  }
+  @scala.inline
   def RemoveAction(`type`: REMOVE): Action = {
     val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Action]
+  }
+  @scala.inline
+  def CreateIndexAction(args: js.Array[_], `type`: CREATE_INDEX): Action = {
+    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Action]
+  }
+  @scala.inline
+  def CreateAction(id: js.Object, `type`: CREATE): Action = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Action]
+  }
+  @scala.inline
+  def CallAction(args: js.Array[AnonArgs], method: String, `type`: CALL): Action = {
+    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Action]
+  }
+  @scala.inline
+  def UpdateAction(fields: js.Object, `type`: UPDATE): Action = {
+    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Action]
+  }
+  @scala.inline
+  def CreatedAction(id: js.Object, `type`: CREATED): Action = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Action]
   }

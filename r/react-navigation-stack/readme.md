@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-navigation-stack
 
-Typings are for version 1.10.3
+Typings are for version 2.2.2
 
 ## Library description:
 Stack navigator component for React Navigation

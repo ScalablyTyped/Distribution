@@ -1,7 +1,7 @@
 package typings.chromeApps.chrome.vpnProvider
 
 import org.scalablytyped.runtime.TopLevel
-import typings.chromeApps.AnonCONNECTEDConnectedDISCONNECTED
+import typings.chromeApps.AnonDISCONNECTED
 import typings.chromeApps.chrome.ToStringLiteral
 import typings.chromeApps.chrome.events.Event
 import typings.chromeApps.chromeAppsStrings.connected_
@@ -26,7 +26,7 @@ object onPlatformMessage
         js.Function3[
           /* id */ String, 
           /* message */ ToStringLiteral[
-            AnonCONNECTEDConnectedDISCONNECTED, 
+            AnonDISCONNECTED, 
             String, 
             Exclude[
               String, 

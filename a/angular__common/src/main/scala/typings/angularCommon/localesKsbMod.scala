@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 object localesKsbMod extends js.Object {
   val default: js.Array[
     js.UndefOr[
-      String | Double | (js.Array[js.UndefOr[js.Array[String] | Double | String]]) | (js.Function1[/* n */ Double, Double]) | AnonJPYTZS
+      String | Double | (js.Array[js.UndefOr[js.Array[String] | Double | String]]) | (js.Function1[/* n */ Double, Double]) | AnonTZS
     ]
   ] = js.native
 }

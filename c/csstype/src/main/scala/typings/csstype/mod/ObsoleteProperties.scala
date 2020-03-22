@@ -84,7 +84,7 @@ trait ObsoleteProperties[TLength] extends js.Object {
     *
     * @deprecated
     */
-  var KhtmlOpacity: js.UndefOr[GlobalsNumber] = js.undefined
+  var KhtmlOpacity: js.UndefOr[OpacityProperty] = js.undefined
   /**
     * The `**user-select**` CSS property controls whether the user can select text. This doesn't have any effect on content loaded as chrome, except in textboxes.
     *
@@ -134,6 +134,22 @@ trait ObsoleteProperties[TLength] extends js.Object {
     */
   var MozBinding: js.UndefOr[MozBindingProperty] = js.undefined
   /**
+    * In Mozilla applications like Firefox, the **`-moz-border-bottom-colors`** CSS property sets a list of colors for the bottom border.
+    *
+    * **Initial value**: `none`
+    *
+    * @deprecated
+    */
+  var MozBorderBottomColors: js.UndefOr[MozBorderBottomColorsProperty] = js.undefined
+  /**
+    * In Mozilla applications like Firefox, the **`-moz-border-left-colors`** CSS property sets a list of colors for the left border.
+    *
+    * **Initial value**: `none`
+    *
+    * @deprecated
+    */
+  var MozBorderLeftColors: js.UndefOr[MozBorderLeftColorsProperty] = js.undefined
+  /**
     * The **`border-radius`** CSS property rounds the corners of an element's outer border edge. You can set a single radius to make circular corners, or two radii to make elliptical corners.
     *
     * @deprecated
@@ -171,6 +187,22 @@ trait ObsoleteProperties[TLength] extends js.Object {
     * @deprecated
     */
   var MozBorderRadiusTopright: js.UndefOr[BorderTopRightRadiusProperty[TLength]] = js.undefined
+  /**
+    * In Mozilla applications like Firefox, the **`-moz-border-right-colors`** CSS property sets a list of colors for the right border.
+    *
+    * **Initial value**: `none`
+    *
+    * @deprecated
+    */
+  var MozBorderRightColors: js.UndefOr[MozBorderRightColorsProperty] = js.undefined
+  /**
+    * In Mozilla applications like Firefox, the **`-moz-border-top-colors`** CSS property sets a list of colors for the top border.
+    *
+    * **Initial value**: `none`
+    *
+    * @deprecated
+    */
+  var MozBorderTopColors: js.UndefOr[MozBorderTopColorsProperty] = js.undefined
   /**
     * The **`box-align`** CSS property specifies how an element aligns its contents across its layout in a perpendicular direction. The effect of the property is only visible if there is extra space in the box.
     *
@@ -234,7 +266,7 @@ trait ObsoleteProperties[TLength] extends js.Object {
     *
     * @deprecated
     */
-  var MozOpacity: js.UndefOr[GlobalsNumber] = js.undefined
+  var MozOpacity: js.UndefOr[OpacityProperty] = js.undefined
   /**
     * The **`outline`** CSS property is a shorthand to set various outline properties in a single declaration: `outline-style`, `outline-width`, and `outline-color`.
     *
@@ -656,6 +688,14 @@ trait ObsoleteProperties[TLength] extends js.Object {
     */
   var msImeMode: js.UndefOr[ImeModeProperty] = js.undefined
   /**
+    * The **`-ms-scrollbar-track-color`** CSS property is a Microsoft extension that specifies the color of the track element of a scrollbar.
+    *
+    * **Initial value**: `Scrollbar`
+    *
+    * @deprecated
+    */
+  var msScrollbarTrackColor: js.UndefOr[MsScrollbarTrackColorProperty] = js.undefined
+  /**
     * The **`inset-block`** CSS property defines the logical block start and end offsets of an element, which maps to physical offsets depending on the element's writing mode, directionality, and text orientation. It corresponds to the `top` and `bottom`, or `right` and `left` properties depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
     *
     * **Initial value**: `auto`
@@ -752,6 +792,14 @@ trait ObsoleteProperties[TLength] extends js.Object {
     */
   var scrollSnapTypeY: js.UndefOr[ScrollSnapTypeYProperty] = js.undefined
   /**
+    * The **`-ms-scrollbar-track-color`** CSS property is a Microsoft extension that specifies the color of the track element of a scrollbar.
+    *
+    * **Initial value**: `Scrollbar`
+    *
+    * @deprecated
+    */
+  var scrollbarTrackColor: js.UndefOr[MsScrollbarTrackColorProperty] = js.undefined
+  /**
     * The **`text-combine-upright`** CSS property sets the combination of characters into the space of a single character. If the combined text is wider than 1em, the user agent must fit the contents within 1em. The resulting composition is treated as a single upright glyph for layout and decoration. This property only has an effect in vertical writing modes.
     *
     * **Initial value**: `none`
@@ -773,18 +821,22 @@ object ObsoleteProperties {
     KhtmlBoxOrient: BoxOrientProperty = null,
     KhtmlBoxPack: BoxPackProperty = null,
     KhtmlLineBreak: LineBreakProperty = null,
-    KhtmlOpacity: GlobalsNumber = null,
+    KhtmlOpacity: OpacityProperty = null,
     KhtmlUserSelect: UserSelectProperty = null,
     MozBackgroundClip: BackgroundClipProperty = null,
     MozBackgroundInlinePolicy: BoxDecorationBreakProperty = null,
     MozBackgroundOrigin: BackgroundOriginProperty = null,
     MozBackgroundSize: BackgroundSizeProperty[TLength] = null,
     MozBinding: MozBindingProperty = null,
+    MozBorderBottomColors: MozBorderBottomColorsProperty = null,
+    MozBorderLeftColors: MozBorderLeftColorsProperty = null,
     MozBorderRadius: BorderRadiusProperty[TLength] = null,
     MozBorderRadiusBottomleft: BorderBottomLeftRadiusProperty[TLength] = null,
     MozBorderRadiusBottomright: BorderBottomRightRadiusProperty[TLength] = null,
     MozBorderRadiusTopleft: BorderTopLeftRadiusProperty[TLength] = null,
     MozBorderRadiusTopright: BorderTopRightRadiusProperty[TLength] = null,
+    MozBorderRightColors: MozBorderRightColorsProperty = null,
+    MozBorderTopColors: MozBorderTopColorsProperty = null,
     MozBoxAlign: BoxAlignProperty = null,
     MozBoxDirection: BoxDirectionProperty = null,
     MozBoxFlex: GlobalsNumber = null,
@@ -792,7 +844,7 @@ object ObsoleteProperties {
     MozBoxOrient: BoxOrientProperty = null,
     MozBoxPack: BoxPackProperty = null,
     MozBoxShadow: BoxShadowProperty = null,
-    MozOpacity: GlobalsNumber = null,
+    MozOpacity: OpacityProperty = null,
     MozOutline: OutlineProperty[TLength] = null,
     MozOutlineColor: OutlineColorProperty = null,
     MozOutlineRadius: MozOutlineRadiusProperty[TLength] = null,
@@ -847,6 +899,7 @@ object ObsoleteProperties {
     gridRowGap: GridRowGapProperty[TLength] = null,
     imeMode: ImeModeProperty = null,
     msImeMode: ImeModeProperty = null,
+    msScrollbarTrackColor: MsScrollbarTrackColorProperty = null,
     offsetBlock: InsetBlockProperty[TLength] = null,
     offsetBlockEnd: InsetBlockEndProperty[TLength] = null,
     offsetBlockStart: InsetBlockStartProperty[TLength] = null,
@@ -859,6 +912,7 @@ object ObsoleteProperties {
     scrollSnapPointsY: ScrollSnapPointsYProperty = null,
     scrollSnapTypeX: ScrollSnapTypeXProperty = null,
     scrollSnapTypeY: ScrollSnapTypeYProperty = null,
+    scrollbarTrackColor: MsScrollbarTrackColorProperty = null,
     textCombineHorizontal: TextCombineUprightProperty = null
   ): ObsoleteProperties[TLength] = {
     val __obj = js.Dynamic.literal()
@@ -878,11 +932,15 @@ object ObsoleteProperties {
     if (MozBackgroundOrigin != null) __obj.updateDynamic("MozBackgroundOrigin")(MozBackgroundOrigin.asInstanceOf[js.Any])
     if (MozBackgroundSize != null) __obj.updateDynamic("MozBackgroundSize")(MozBackgroundSize.asInstanceOf[js.Any])
     if (MozBinding != null) __obj.updateDynamic("MozBinding")(MozBinding.asInstanceOf[js.Any])
+    if (MozBorderBottomColors != null) __obj.updateDynamic("MozBorderBottomColors")(MozBorderBottomColors.asInstanceOf[js.Any])
+    if (MozBorderLeftColors != null) __obj.updateDynamic("MozBorderLeftColors")(MozBorderLeftColors.asInstanceOf[js.Any])
     if (MozBorderRadius != null) __obj.updateDynamic("MozBorderRadius")(MozBorderRadius.asInstanceOf[js.Any])
     if (MozBorderRadiusBottomleft != null) __obj.updateDynamic("MozBorderRadiusBottomleft")(MozBorderRadiusBottomleft.asInstanceOf[js.Any])
     if (MozBorderRadiusBottomright != null) __obj.updateDynamic("MozBorderRadiusBottomright")(MozBorderRadiusBottomright.asInstanceOf[js.Any])
     if (MozBorderRadiusTopleft != null) __obj.updateDynamic("MozBorderRadiusTopleft")(MozBorderRadiusTopleft.asInstanceOf[js.Any])
     if (MozBorderRadiusTopright != null) __obj.updateDynamic("MozBorderRadiusTopright")(MozBorderRadiusTopright.asInstanceOf[js.Any])
+    if (MozBorderRightColors != null) __obj.updateDynamic("MozBorderRightColors")(MozBorderRightColors.asInstanceOf[js.Any])
+    if (MozBorderTopColors != null) __obj.updateDynamic("MozBorderTopColors")(MozBorderTopColors.asInstanceOf[js.Any])
     if (MozBoxAlign != null) __obj.updateDynamic("MozBoxAlign")(MozBoxAlign.asInstanceOf[js.Any])
     if (MozBoxDirection != null) __obj.updateDynamic("MozBoxDirection")(MozBoxDirection.asInstanceOf[js.Any])
     if (MozBoxFlex != null) __obj.updateDynamic("MozBoxFlex")(MozBoxFlex.asInstanceOf[js.Any])
@@ -945,6 +1003,7 @@ object ObsoleteProperties {
     if (gridRowGap != null) __obj.updateDynamic("gridRowGap")(gridRowGap.asInstanceOf[js.Any])
     if (imeMode != null) __obj.updateDynamic("imeMode")(imeMode.asInstanceOf[js.Any])
     if (msImeMode != null) __obj.updateDynamic("msImeMode")(msImeMode.asInstanceOf[js.Any])
+    if (msScrollbarTrackColor != null) __obj.updateDynamic("msScrollbarTrackColor")(msScrollbarTrackColor.asInstanceOf[js.Any])
     if (offsetBlock != null) __obj.updateDynamic("offsetBlock")(offsetBlock.asInstanceOf[js.Any])
     if (offsetBlockEnd != null) __obj.updateDynamic("offsetBlockEnd")(offsetBlockEnd.asInstanceOf[js.Any])
     if (offsetBlockStart != null) __obj.updateDynamic("offsetBlockStart")(offsetBlockStart.asInstanceOf[js.Any])
@@ -957,6 +1016,7 @@ object ObsoleteProperties {
     if (scrollSnapPointsY != null) __obj.updateDynamic("scrollSnapPointsY")(scrollSnapPointsY.asInstanceOf[js.Any])
     if (scrollSnapTypeX != null) __obj.updateDynamic("scrollSnapTypeX")(scrollSnapTypeX.asInstanceOf[js.Any])
     if (scrollSnapTypeY != null) __obj.updateDynamic("scrollSnapTypeY")(scrollSnapTypeY.asInstanceOf[js.Any])
+    if (scrollbarTrackColor != null) __obj.updateDynamic("scrollbarTrackColor")(scrollbarTrackColor.asInstanceOf[js.Any])
     if (textCombineHorizontal != null) __obj.updateDynamic("textCombineHorizontal")(textCombineHorizontal.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObsoleteProperties[TLength]]
   }

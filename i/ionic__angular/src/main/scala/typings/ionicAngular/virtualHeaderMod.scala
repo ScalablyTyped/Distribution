@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ionic/angular/dist/directives/virtual-scroll/virtual-header", JSImport.Namespace)
+@JSImport("@ionic/angular/directives/virtual-scroll/virtual-header", JSImport.Namespace)
 @js.native
 object virtualHeaderMod extends js.Object {
   @js.native

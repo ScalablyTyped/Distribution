@@ -75,7 +75,7 @@ trait IonTextarea extends js.Object {
     */
   var onIonFocus: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.undefined
   /**
-    * Emitted when a keyboard input ocurred.
+    * Emitted when a keyboard input occurred.
     */
   var onIonInput: js.UndefOr[js.Function1[/* event */ CustomEvent[KeyboardEvent], Unit]] = js.undefined
   /**

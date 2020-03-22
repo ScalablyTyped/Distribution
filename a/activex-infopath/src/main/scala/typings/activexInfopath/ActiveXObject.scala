@@ -70,37 +70,37 @@ trait ActiveXObject extends js.Object {
     obj: ApplicationEvents,
     event: WindowActivate,
     argNames: js.Tuple2[pDocument, pWindow],
-    handler: js.ThisFunction1[/* this */ ApplicationEvents, /* parameter */ AnonPDocumentPWindow, Unit]
+    handler: js.ThisFunction1[/* this */ ApplicationEvents, /* parameter */ AnonPWindow, Unit]
   ): Unit = js.native
   def on(
     obj: ApplicationEvents,
     event: WindowDeactivate,
     argNames: js.Tuple2[pDocument, pWindow],
-    handler: js.ThisFunction1[/* this */ ApplicationEvents, /* parameter */ AnonPDocumentPWindow, Unit]
+    handler: js.ThisFunction1[/* this */ ApplicationEvents, /* parameter */ AnonPWindow, Unit]
   ): Unit = js.native
   def on(
     obj: ApplicationEvents,
     event: WindowSize,
     argNames: js.Tuple2[pDocument, pWindow],
-    handler: js.ThisFunction1[/* this */ ApplicationEvents, /* parameter */ AnonPDocumentPWindow, Unit]
+    handler: js.ThisFunction1[/* this */ ApplicationEvents, /* parameter */ AnonPWindow, Unit]
   ): Unit = js.native
   def on(
     obj: ApplicationEvents,
     event: XDocumentBeforeClose,
     argNames: js.Tuple2[pDocument, pfCancel],
-    handler: js.ThisFunction1[/* this */ ApplicationEvents, /* parameter */ AnonPDocumentPfCancel, Unit]
+    handler: js.ThisFunction1[/* this */ ApplicationEvents, /* parameter */ AnonPfCancel, Unit]
   ): Unit = js.native
   def on(
     obj: ApplicationEvents,
     event: XDocumentBeforePrint,
     argNames: js.Tuple2[pDocument, pfCancel],
-    handler: js.ThisFunction1[/* this */ ApplicationEvents, /* parameter */ AnonPDocumentPfCancel, Unit]
+    handler: js.ThisFunction1[/* this */ ApplicationEvents, /* parameter */ AnonPfCancel, Unit]
   ): Unit = js.native
   def on(
     obj: ApplicationEvents,
     event: XDocumentBeforeSave,
     argNames: js.Tuple2[pDocument, pfCancel],
-    handler: js.ThisFunction1[/* this */ ApplicationEvents, /* parameter */ AnonPDocumentPfCancel, Unit]
+    handler: js.ThisFunction1[/* this */ ApplicationEvents, /* parameter */ AnonPfCancel, Unit]
   ): Unit = js.native
   def on(
     obj: ApplicationEvents,

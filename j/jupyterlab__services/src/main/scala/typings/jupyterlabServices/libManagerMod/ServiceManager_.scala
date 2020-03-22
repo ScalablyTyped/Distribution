@@ -2,7 +2,7 @@ package typings.jupyterlabServices.libManagerMod
 
 import typings.jupyterlabServices.builderMod.BuildManager
 import typings.jupyterlabServices.contentsMod.ContentsManager
-import typings.jupyterlabServices.kernelKernelMod.Kernel.ISpecModels
+import typings.jupyterlabServices.kernelspecMod.KernelSpecManager
 import typings.jupyterlabServices.libManagerMod.ServiceManager.IManager
 import typings.jupyterlabServices.libManagerMod.ServiceManager.IOptions
 import typings.jupyterlabServices.nbconvertMod.NbConvertManager
@@ -11,7 +11,7 @@ import typings.jupyterlabServices.sessionMod.SessionManager
 import typings.jupyterlabServices.settingMod.SettingManager
 import typings.jupyterlabServices.terminalMod.TerminalManager
 import typings.jupyterlabServices.workspaceMod.WorkspaceManager
-import typings.phosphorSignaling.mod.ISignal
+import typings.luminoSignaling.mod.ISignal
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -29,7 +29,6 @@ class ServiceManager_ () extends IManager {
   var _isReady: js.Any = js.native
   var _onConnectionFailure: js.Any = js.native
   var _readyPromise: js.Any = js.native
-  var _specsChanged: js.Any = js.native
   /**
     * The builder for the manager.
     */
@@ -45,11 +44,6 @@ class ServiceManager_ () extends IManager {
     */
   /* CompleteClass */
   override val connectionFailure: ISignal[IManager, Error] = js.native
-  /**
-    * A signal emitted when there is a connection failure with the kernel.
-    */
-  @JSName("connectionFailure")
-  val connectionFailure_ServiceManager_ : ISignal[this.type, Error] = js.native
   /**
     * The contents manager for the manager.
     */
@@ -74,6 +68,16 @@ class ServiceManager_ () extends IManager {
   /* CompleteClass */
   override val isReady: Boolean = js.native
   /**
+    * The session manager for the manager.
+    */
+  /* CompleteClass */
+  override val kernelspecs: typings.jupyterlabServices.kernelspecKernelspecMod.IManager = js.native
+  /**
+    * Get the session manager instance.
+    */
+  @JSName("kernelspecs")
+  val kernelspecs_ServiceManager_ : KernelSpecManager = js.native
+  /**
     * The nbconvert manager for the manager.
     */
   /* CompleteClass */
@@ -97,7 +101,7 @@ class ServiceManager_ () extends IManager {
     * The session manager for the manager.
     */
   /* CompleteClass */
-  override val sessions: typings.jupyterlabServices.sessionSessionMod.Session.IManager = js.native
+  override val sessions: typings.jupyterlabServices.sessionSessionMod.IManager = js.native
   /**
     * Get the session manager instance.
     */
@@ -114,25 +118,10 @@ class ServiceManager_ () extends IManager {
   @JSName("settings")
   val settings_ServiceManager_ : SettingManager = js.native
   /**
-    * The kernel spec models.
-    */
-  /* CompleteClass */
-  override val specs: ISpecModels | Null = js.native
-  /**
-    * A signal emitted when the kernel specs change.
-    */
-  /* CompleteClass */
-  override val specsChanged: ISignal[IManager, ISpecModels] = js.native
-  /**
-    * A signal emitted when the kernel specs change.
-    */
-  @JSName("specsChanged")
-  val specsChanged_ServiceManager_ : ISignal[this.type, ISpecModels] = js.native
-  /**
     * The terminals manager for the manager.
     */
   /* CompleteClass */
-  override val terminals: typings.jupyterlabServices.terminalTerminalMod.TerminalSession.IManager = js.native
+  override val terminals: typings.jupyterlabServices.terminalTerminalMod.IManager = js.native
   /**
     * Get the terminal manager instance.
     */
@@ -149,6 +138,11 @@ class ServiceManager_ () extends IManager {
   @JSName("workspaces")
   val workspaces_ServiceManager_ : WorkspaceManager = js.native
   /**
+    * A signal emitted when there is a connection failure with the kernel.
+    */
+  @JSName("connectionFailure")
+  def connectionFailure_MServiceManager_(): ISignal[this.type, Error] = js.native
+  /**
     * Dispose of the resources held by the object.
     *
     * #### Notes
@@ -161,5 +155,20 @@ class ServiceManager_ () extends IManager {
     */
   /* CompleteClass */
   override def dispose(): Unit = js.native
+  /**
+    * Test whether the service manager is disposed.
+    */
+  @JSName("isDisposed")
+  def isDisposed_MServiceManager_(): Boolean = js.native
+  /**
+    * Test whether the manager is ready.
+    */
+  @JSName("isReady")
+  def isReady_MServiceManager_(): Boolean = js.native
+  /**
+    * A promise that fulfills when the manager is ready.
+    */
+  @JSName("ready")
+  def ready_MServiceManager_(): js.Promise[Unit] = js.native
 }
 

@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ExtraPoolOptions extends _PoolOptions {
+trait ExtraPoolOptions extends PoolOptions {
   var maxSockets: js.UndefOr[Double] = js.undefined
 }
 

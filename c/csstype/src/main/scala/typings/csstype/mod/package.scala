@@ -85,6 +85,12 @@ package object mod {
   type AnimationTimingFunctionProperty = typings.csstype.mod._AnimationTimingFunctionProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.csstype.mod.Globals
+    - typings.csstype.csstypeStrings.auto
+    - java.lang.String
+  */
+  type AspectRatioProperty = typings.csstype.mod._AspectRatioProperty | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.csstype.mod.Globals
     - typings.csstype.csstypeStrings.none
     - java.lang.String
   */
@@ -1055,6 +1061,7 @@ package object mod {
     - typings.csstype.mod.Globals
     - typings.csstype.mod.TrackBreadth[TLength]
     - typings.csstype.csstypeStrings.none
+    - typings.csstype.csstypeStrings.subgrid
     - java.lang.String
   */
   type GridTemplateColumnsProperty[TLength] = typings.csstype.mod._GridTemplateColumnsProperty[TLength] | java.lang.String | TLength
@@ -1068,6 +1075,7 @@ package object mod {
     - typings.csstype.mod.Globals
     - typings.csstype.mod.TrackBreadth[TLength]
     - typings.csstype.csstypeStrings.none
+    - typings.csstype.csstypeStrings.subgrid
     - java.lang.String
   */
   type GridTemplateRowsProperty[TLength] = typings.csstype.mod._GridTemplateRowsProperty[TLength] | java.lang.String | TLength
@@ -1086,6 +1094,7 @@ package object mod {
     - TLength
     - typings.csstype.csstypeStrings.`-moz-max-content`
     - typings.csstype.csstypeStrings.`-moz-min-content`
+    - typings.csstype.csstypeStrings.`-webkit-fit-content`
     - typings.csstype.csstypeStrings.auto
     - typings.csstype.csstypeStrings.available
     - typings.csstype.csstypeStrings.`fit-content`
@@ -1450,7 +1459,8 @@ package object mod {
   type MaskModeProperty = typings.csstype.mod._MaskModeProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.csstype.mod.Globals
-    - typings.csstype.mod.GeometryBox
+    - typings.csstype.mod.Box
+    - typings.csstype.csstypeStrings.`margin-box`
     - java.lang.String
   */
   type MaskOriginProperty = typings.csstype.mod._MaskOriginProperty | java.lang.String
@@ -1499,6 +1509,8 @@ package object mod {
     - typings.csstype.csstypeStrings.`-moz-max-content`
     - typings.csstype.csstypeStrings.`-moz-min-content`
     - typings.csstype.csstypeStrings.`-webkit-fit-content`
+    - typings.csstype.csstypeStrings.`-webkit-max-content`
+    - typings.csstype.csstypeStrings.`-webkit-min-content`
     - typings.csstype.csstypeStrings.`fill-available`
     - typings.csstype.csstypeStrings.`fit-content`
     - typings.csstype.csstypeStrings.intrinsic
@@ -1568,6 +1580,8 @@ package object mod {
     - typings.csstype.csstypeStrings.`-moz-max-content`
     - typings.csstype.csstypeStrings.`-moz-min-content`
     - typings.csstype.csstypeStrings.`-webkit-fit-content`
+    - typings.csstype.csstypeStrings.`-webkit-max-content`
+    - typings.csstype.csstypeStrings.`-webkit-min-content`
     - typings.csstype.csstypeStrings.auto
     - typings.csstype.csstypeStrings.`fill-available`
     - typings.csstype.csstypeStrings.`fit-content`
@@ -1584,8 +1598,6 @@ package object mod {
     - typings.csstype.csstypeStrings.`-moz-max-content`
     - typings.csstype.csstypeStrings.`-moz-min-content`
     - typings.csstype.csstypeStrings.`-webkit-fill-available`
-    - typings.csstype.csstypeStrings.`-webkit-max-content`
-    - typings.csstype.csstypeStrings.`-webkit-min-content`
     - typings.csstype.csstypeStrings.auto
     - typings.csstype.csstypeStrings.`fill-available`
     - typings.csstype.csstypeStrings.`fit-content`
@@ -1780,12 +1792,6 @@ package object mod {
   /* Rewritten from type alias, can be one of: 
     - typings.csstype.mod.Globals
     - typings.csstype.mod.Position[TLength]
-    - typings.csstype.csstypeStrings.auto
-  */
-  type OffsetPositionProperty[TLength] = typings.csstype.mod._OffsetPositionProperty[TLength] | TLength | java.lang.String
-  /* Rewritten from type alias, can be one of: 
-    - typings.csstype.mod.Globals
-    - typings.csstype.mod.Position[TLength]
     - typings.csstype.mod.GeometryBox
     - typings.csstype.csstypeStrings.auto
     - typings.csstype.csstypeStrings.none
@@ -1799,6 +1805,7 @@ package object mod {
     - java.lang.String
   */
   type OffsetRotateProperty = typings.csstype.mod._OffsetRotateProperty | java.lang.String
+  type OpacityProperty = typings.csstype.mod.Globals | java.lang.String | scala.Double
   /* Rewritten from type alias, can be one of: 
     - typings.csstype.mod.Globals
     - typings.csstype.mod.Color
@@ -1831,7 +1838,6 @@ package object mod {
   /* Rewritten from type alias, can be one of: 
     - typings.csstype.mod.Globals
     - typings.csstype.csstypeStrings.auto
-    - typings.csstype.csstypeStrings.clip
     - typings.csstype.csstypeStrings.hidden
     - typings.csstype.csstypeStrings.scroll
     - typings.csstype.csstypeStrings.visible
@@ -1857,14 +1863,6 @@ package object mod {
   type PaddingProperty[TLength] = typings.csstype.mod.Globals | TLength | java.lang.String
   type PaddingRightProperty[TLength] = typings.csstype.mod.Globals | TLength | java.lang.String
   type PaddingTopProperty[TLength] = typings.csstype.mod.Globals | TLength | java.lang.String
-  type PageBleedProperty[TLength] = TLength | typings.csstype.csstypeStrings.auto
-  /* Rewritten from type alias, can be one of: 
-    - typings.csstype.csstypeStrings.crop
-    - typings.csstype.csstypeStrings.cross
-    - typings.csstype.csstypeStrings.none
-    - java.lang.String
-  */
-  type PageMarksProperty = typings.csstype.mod._PageMarksProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.csstype.mod.Color
     - typings.csstype.csstypeStrings.child
@@ -1934,6 +1932,7 @@ package object mod {
   type Position[TLength] = typings.csstype.mod._Position[TLength] | TLength | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.csstype.mod.Globals
+    - typings.csstype.csstypeStrings.auto
     - typings.csstype.csstypeStrings.none
     - java.lang.String
   */
@@ -2115,6 +2114,7 @@ package object mod {
     - typings.csstype.csstypeStrings.light
   */
   type ScrollbarColorProperty = typings.csstype.mod._ScrollbarColorProperty | java.lang.String
+  type ShapeImageThresholdProperty = typings.csstype.mod.Globals | java.lang.String | scala.Double
   type ShapeMarginProperty[TLength] = typings.csstype.mod.Globals | TLength | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.csstype.mod.Globals
@@ -2185,9 +2185,11 @@ package object mod {
   /* Rewritten from type alias, can be one of: 
     - typings.csstype.mod.Globals
     - typings.csstype.csstypeStrings.blink
+    - typings.csstype.csstypeStrings.`grammar-error`
     - typings.csstype.csstypeStrings.`line-through`
     - typings.csstype.csstypeStrings.none
     - typings.csstype.csstypeStrings.overline
+    - typings.csstype.csstypeStrings.`spelling-error`
     - typings.csstype.csstypeStrings.underline
     - java.lang.String
   */
@@ -2195,19 +2197,24 @@ package object mod {
   /* Rewritten from type alias, can be one of: 
     - typings.csstype.mod.Globals
     - typings.csstype.mod.Color
+    - TLength
+    - typings.csstype.csstypeStrings.auto
     - typings.csstype.csstypeStrings.blink
     - typings.csstype.csstypeStrings.dashed
     - typings.csstype.csstypeStrings.dotted
     - typings.csstype.csstypeStrings.double
+    - typings.csstype.csstypeStrings.`from-font`
+    - typings.csstype.csstypeStrings.`grammar-error`
     - typings.csstype.csstypeStrings.`line-through`
     - typings.csstype.csstypeStrings.none
     - typings.csstype.csstypeStrings.overline
     - typings.csstype.csstypeStrings.solid
+    - typings.csstype.csstypeStrings.`spelling-error`
     - typings.csstype.csstypeStrings.underline
     - typings.csstype.csstypeStrings.wavy
     - java.lang.String
   */
-  type TextDecorationProperty = typings.csstype.mod._TextDecorationProperty | java.lang.String
+  type TextDecorationProperty[TLength] = typings.csstype.mod._TextDecorationProperty[TLength] | TLength | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.csstype.mod.Globals
     - typings.csstype.csstypeStrings.`box-decoration`
@@ -2220,6 +2227,13 @@ package object mod {
     - java.lang.String
   */
   type TextDecorationSkipProperty = typings.csstype.mod._TextDecorationSkipProperty | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.csstype.mod.Globals
+    - TLength
+    - typings.csstype.csstypeStrings.auto
+    - typings.csstype.csstypeStrings.`from-font`
+  */
+  type TextDecorationThicknessProperty[TLength] = typings.csstype.mod._TextDecorationThicknessProperty[TLength] | TLength
   /* Rewritten from type alias, can be one of: 
     - typings.csstype.mod.Globals
     - typings.csstype.mod.Color
@@ -2273,6 +2287,13 @@ package object mod {
     - java.lang.String
   */
   type TextSizeAdjustProperty = typings.csstype.mod._TextSizeAdjustProperty | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.csstype.mod.Globals
+    - TLength
+    - typings.csstype.csstypeStrings.auto
+    - typings.csstype.csstypeStrings.`from-font`
+  */
+  type TextUnderlineOffsetProperty[TLength] = typings.csstype.mod._TextUnderlineOffsetProperty[TLength] | TLength
   /* Rewritten from type alias, can be one of: 
     - typings.csstype.mod.Globals
     - typings.csstype.csstypeStrings.auto

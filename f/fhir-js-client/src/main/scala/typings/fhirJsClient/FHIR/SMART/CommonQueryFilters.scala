@@ -1,6 +1,6 @@
 package typings.fhirJsClient.FHIR.SMART
 
-import typings.fhirJsClient.AnonAt
+import typings.fhirJsClient.AnonDictpropName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ trait CommonQueryFilters extends js.Object {
   /**
     * Addition filters to be applied on the history query. The object will be converted into query string parameters.
     */
-  var params: js.UndefOr[AnonAt] = js.undefined
+  var params: js.UndefOr[AnonDictpropName] = js.undefined
   /**
     * Only include resource versions that were created at or after the given instant in time
     *
@@ -27,7 +27,7 @@ trait CommonQueryFilters extends js.Object {
 
 object CommonQueryFilters {
   @scala.inline
-  def apply(count: Int | Double = null, params: AnonAt = null, since: String = null): CommonQueryFilters = {
+  def apply(count: Int | Double = null, params: AnonDictpropName = null, since: String = null): CommonQueryFilters = {
     val __obj = js.Dynamic.literal()
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
     if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])

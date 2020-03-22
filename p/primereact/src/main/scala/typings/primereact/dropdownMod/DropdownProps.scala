@@ -1,6 +1,6 @@
 package typings.primereact.dropdownMod
 
-import typings.primereact.AnonOriginalEventValue
+import typings.primereact.AnonValue
 import typings.primereact.tooltipOptionsMod.TooltipOptions
 import typings.react.mod.ReactNode
 import typings.std.Event_
@@ -28,7 +28,7 @@ trait DropdownProps extends js.Object {
   var `lazy`: js.UndefOr[Boolean] = js.undefined
   var maxLength: js.UndefOr[Double] = js.undefined
   var name: js.UndefOr[String] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* e */ AnonOriginalEventValue, Unit]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* e */ AnonValue, Unit]] = js.undefined
   var onContextMenu: js.UndefOr[js.Function1[/* event */ Event_, Unit]] = js.undefined
   var onMouseDown: js.UndefOr[js.Function1[/* event */ Event_, Unit]] = js.undefined
   var optionLabel: js.UndefOr[String] = js.undefined
@@ -68,7 +68,7 @@ object DropdownProps {
     `lazy`: js.UndefOr[Boolean] = js.undefined,
     maxLength: Int | Double = null,
     name: String = null,
-    onChange: /* e */ AnonOriginalEventValue => Unit = null,
+    onChange: /* e */ AnonValue => Unit = null,
     onContextMenu: /* event */ Event_ => Unit = null,
     onMouseDown: /* event */ Event_ => Unit = null,
     optionLabel: String = null,

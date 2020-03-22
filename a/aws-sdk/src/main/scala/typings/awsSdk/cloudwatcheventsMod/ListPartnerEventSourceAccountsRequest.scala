@@ -11,7 +11,7 @@ trait ListPartnerEventSourceAccountsRequest extends js.Object {
     */
   var EventSourceName: typings.awsSdk.cloudwatcheventsMod.EventSourceName = js.native
   /**
-    * Specifying this limits the number of results returned by this operation. The operation also returns a NextToken that you can use in a subsequent operation to retrieve the next set of results.
+    * Specifying this limits the number of results returned by this operation. The operation also returns a NextToken which you can use in a subsequent operation to retrieve the next set of results.
     */
   var Limit: js.UndefOr[LimitMax100] = js.native
   /**

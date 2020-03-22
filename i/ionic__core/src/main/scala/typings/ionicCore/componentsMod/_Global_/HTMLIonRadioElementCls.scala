@@ -12,11 +12,6 @@ import scala.scalajs.js.annotation._
 class HTMLIonRadioElementCls () extends HTMLIonRadioElement {
   /* CompleteClass */
   override val assignedSlot: HTMLSlotElement | Null = js.native
-  /**
-    * If `true`, the radio is selected.
-    */
-  /* CompleteClass */
-  override var checked: Boolean = js.native
   /* CompleteClass */
   override var contentEditable: String = js.native
   /**

@@ -3,7 +3,7 @@ package typings.rehypeReact.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.ComponentType
 import typings.rehypeReact.AnonChildren
-import typings.rehypeReact.FnA
+import typings.rehypeReact.FnCall
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,14 +11,14 @@ import scala.scalajs.js.annotation._
 trait Options extends js.Object {
   var Fragment: js.UndefOr[ComponentType[AnonChildren]] = js.undefined
   var components: js.UndefOr[StringDictionary[ComponentType[_]]] = js.undefined
-  var createElement: FnA
+  var createElement: FnCall
   var prefix: js.UndefOr[String] = js.undefined
 }
 
 object Options {
   @scala.inline
   def apply(
-    createElement: FnA,
+    createElement: FnCall,
     Fragment: ComponentType[AnonChildren] = null,
     components: StringDictionary[ComponentType[_]] = null,
     prefix: String = null

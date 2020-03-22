@@ -5,7 +5,6 @@ import typings.graphql.definitionMod.GraphQLField
 import typings.graphql.definitionMod.GraphQLFieldResolver
 import typings.graphql.definitionMod.GraphQLResolveInfo
 import typings.graphql.mod.GraphQLError
-import typings.graphql.mod.GraphQLSchema
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -32,10 +31,7 @@ object mod extends js.Object {
         ]
       ] = js.native
     var willSendResponse: js.UndefOr[
-        js.Function1[
-          /* o */ AnonContextGraphqlResponse[TContext], 
-          Unit | AnonContextGraphqlResponse[TContext]
-        ]
+        js.Function1[/* o */ AnonGraphqlResponse[TContext], Unit | AnonGraphqlResponse[TContext]]
       ] = js.native
   }
   
@@ -49,13 +45,13 @@ object mod extends js.Object {
     def executionDidStart(o: AnonExecutionArgs): EndHandler = js.native
     def format(): js.Object = js.native
     def parsingDidStart(o: AnonQueryString): EndHandler = js.native
-    def requestDidStart(o: AnonContextExtensions[TContext]): EndHandler = js.native
+    def requestDidStart(o: AnonExtensions[TContext]): EndHandler = js.native
     def validationDidStart(): EndHandler = js.native
     def willResolveField(source: js.Any, args: StringDictionary[js.Any], context: TContext, info: GraphQLResolveInfo): js.Function2[/* error */ Error | Null, /* result */ js.UndefOr[js.Any], Unit] = js.native
-    def willSendResponse(o: AnonContextGraphqlResponse[TContext]): AnonContextGraphqlResponse[TContext] = js.native
+    def willSendResponse(o: AnonGraphqlResponse[TContext]): AnonGraphqlResponse[TContext] = js.native
   }
   
-  def enableGraphQLExtensions(schema: GraphQLSchema with AnonExtensionsEnabled): GraphQLSchema with AnonExtensionsEnabledBoolean = js.native
+  def enableGraphQLExtensions(schema: GraphQLSchemaextensionsEn): GraphQLSchemaextensionsEnAstNode = js.native
   type EndHandler = js.Function1[/* repeated */ Error, Unit]
   type FieldIteratorFn = js.Function3[
     /* fieldDef */ GraphQLField[js.Any, js.Any, StringDictionary[js.Any]], 

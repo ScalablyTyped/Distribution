@@ -2,10 +2,10 @@ package typings.gapiClientSpanner.gapi.client.spanner
 
 import typings.gapiClient.gapi.client.Request_
 import typings.gapiClientSpanner.AnonAccesstoken
-import typings.gapiClientSpanner.AnonAccesstokenAlt
-import typings.gapiClientSpanner.AnonAccesstokenAltBearertokenCallbackDatabase
-import typings.gapiClientSpanner.AnonAccesstokenAltBearertokenCallbackFields
-import typings.gapiClientSpanner.AnonAccesstokenAltBearertokenCallbackFieldsKey
+import typings.gapiClientSpanner.AnonAlt
+import typings.gapiClientSpanner.AnonDatabase
+import typings.gapiClientSpanner.AnonKey
+import typings.gapiClientSpanner.AnonOauthtoken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,9 +23,9 @@ trait DatabasesResource extends js.Object {
     * response field type is
     * Database, if successful.
     */
-  def create(request: AnonAccesstokenAltBearertokenCallbackFields): Request_[Operation]
+  def create(request: AnonKey): Request_[Operation]
   /** Drops (aka deletes) a Cloud Spanner database. */
-  def dropDatabase(request: AnonAccesstokenAltBearertokenCallbackDatabase): Request_[js.Object]
+  def dropDatabase(request: AnonDatabase): Request_[js.Object]
   /** Gets the state of a Cloud Spanner database. */
   def get(request: AnonAccesstoken): Request_[Database]
   /**
@@ -33,7 +33,7 @@ trait DatabasesResource extends js.Object {
     * DDL statements. This method does not show pending schema updates, those may
     * be queried using the Operations API.
     */
-  def getDdl(request: AnonAccesstokenAltBearertokenCallbackDatabase): Request_[GetDatabaseDdlResponse]
+  def getDdl(request: AnonDatabase): Request_[GetDatabaseDdlResponse]
   /**
     * Gets the access control policy for a database resource. Returns an empty
     * policy if a database exists but does not have a policy set.
@@ -41,9 +41,9 @@ trait DatabasesResource extends js.Object {
     * Authorization requires `spanner.databases.getIamPolicy` permission on
     * resource.
     */
-  def getIamPolicy(request: AnonAccesstokenAltBearertokenCallbackFieldsKey): Request_[Policy]
+  def getIamPolicy(request: AnonOauthtoken): Request_[Policy]
   /** Lists Cloud Spanner databases. */
-  def list(request: AnonAccesstokenAlt): Request_[ListDatabasesResponse]
+  def list(request: AnonAlt): Request_[ListDatabasesResponse]
   /**
     * Sets the access control policy on a database resource. Replaces any
     * existing policy.
@@ -51,7 +51,7 @@ trait DatabasesResource extends js.Object {
     * Authorization requires `spanner.databases.setIamPolicy` permission on
     * resource.
     */
-  def setIamPolicy(request: AnonAccesstokenAltBearertokenCallbackFieldsKey): Request_[Policy]
+  def setIamPolicy(request: AnonOauthtoken): Request_[Policy]
   /**
     * Returns permissions that the caller has on the specified database resource.
     *
@@ -60,7 +60,7 @@ trait DatabasesResource extends js.Object {
     * the containing Cloud Spanner instance. Otherwise returns an empty set of
     * permissions.
     */
-  def testIamPermissions(request: AnonAccesstokenAltBearertokenCallbackFieldsKey): Request_[TestIamPermissionsResponse]
+  def testIamPermissions(request: AnonOauthtoken): Request_[TestIamPermissionsResponse]
   /**
     * Updates the schema of a Cloud Spanner database by
     * creating/altering/dropping tables, columns, indexes, etc. The returned
@@ -70,23 +70,23 @@ trait DatabasesResource extends js.Object {
     * metadata field type is
     * UpdateDatabaseDdlMetadata.  The operation has no response.
     */
-  def updateDdl(request: AnonAccesstokenAltBearertokenCallbackDatabase): Request_[Operation]
+  def updateDdl(request: AnonDatabase): Request_[Operation]
 }
 
 object DatabasesResource {
   @scala.inline
   def apply(
-    create: AnonAccesstokenAltBearertokenCallbackFields => Request_[Operation],
-    dropDatabase: AnonAccesstokenAltBearertokenCallbackDatabase => Request_[js.Object],
+    create: AnonKey => Request_[Operation],
+    dropDatabase: AnonDatabase => Request_[js.Object],
     get: AnonAccesstoken => Request_[Database],
-    getDdl: AnonAccesstokenAltBearertokenCallbackDatabase => Request_[GetDatabaseDdlResponse],
-    getIamPolicy: AnonAccesstokenAltBearertokenCallbackFieldsKey => Request_[Policy],
-    list: AnonAccesstokenAlt => Request_[ListDatabasesResponse],
+    getDdl: AnonDatabase => Request_[GetDatabaseDdlResponse],
+    getIamPolicy: AnonOauthtoken => Request_[Policy],
+    list: AnonAlt => Request_[ListDatabasesResponse],
     operations: OperationsResource,
     sessions: SessionsResource,
-    setIamPolicy: AnonAccesstokenAltBearertokenCallbackFieldsKey => Request_[Policy],
-    testIamPermissions: AnonAccesstokenAltBearertokenCallbackFieldsKey => Request_[TestIamPermissionsResponse],
-    updateDdl: AnonAccesstokenAltBearertokenCallbackDatabase => Request_[Operation]
+    setIamPolicy: AnonOauthtoken => Request_[Policy],
+    testIamPermissions: AnonOauthtoken => Request_[TestIamPermissionsResponse],
+    updateDdl: AnonDatabase => Request_[Operation]
   ): DatabasesResource = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), dropDatabase = js.Any.fromFunction1(dropDatabase), get = js.Any.fromFunction1(get), getDdl = js.Any.fromFunction1(getDdl), getIamPolicy = js.Any.fromFunction1(getIamPolicy), list = js.Any.fromFunction1(list), operations = operations.asInstanceOf[js.Any], sessions = sessions.asInstanceOf[js.Any], setIamPolicy = js.Any.fromFunction1(setIamPolicy), testIamPermissions = js.Any.fromFunction1(testIamPermissions), updateDdl = js.Any.fromFunction1(updateDdl))
   

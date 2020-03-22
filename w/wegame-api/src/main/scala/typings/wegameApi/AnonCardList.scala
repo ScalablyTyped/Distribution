@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation._
 
 trait AnonCardList extends js.Object {
   /**
-    * 需要打开的卡券列表
+    * 卡券添加结果列表
     */
-  var cardList: js.Array[AnonCardId]
+  var cardList: js.Array[AnonIsSuccess]
 }
 
 object AnonCardList {
   @scala.inline
-  def apply(cardList: js.Array[AnonCardId]): AnonCardList = {
+  def apply(cardList: js.Array[AnonIsSuccess]): AnonCardList = {
     val __obj = js.Dynamic.literal(cardList = cardList.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AnonCardList]

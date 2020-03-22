@@ -3,8 +3,8 @@ package typings.reduxDevtoolsExtension.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.redux.mod.Action
 import typings.redux.mod.ActionCreator
-import typings.reduxDevtoolsExtension.AnonCustom
 import typings.reduxDevtoolsExtension.AnonDate
+import typings.reduxDevtoolsExtension.AnonDispatch
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -41,7 +41,7 @@ trait EnhancerOptions extends js.Object {
     * Note that except `true`/`false`, `import` and `export` can be set as `custom` (which is by default for Redux enhancer), meaning that the importing/exporting occurs on the client side.
     * Otherwise, you'll get/set the data right from the monitor part.
     */
-  var features: js.UndefOr[AnonCustom] = js.undefined
+  var features: js.UndefOr[AnonDispatch] = js.undefined
   /**
     * if more than one action is dispatched in the indicated interval, all new actions will be collected and sent at once.
     * It is the joint between performance and speed. When set to `0`, all actions will be sent instantly.
@@ -132,7 +132,7 @@ object EnhancerOptions {
     actionsBlacklist: String | js.Array[String] = null,
     actionsWhitelist: String | js.Array[String] = null,
     autoPause: js.UndefOr[Boolean] = js.undefined,
-    features: AnonCustom = null,
+    features: AnonDispatch = null,
     latency: Int | Double = null,
     maxAge: Int | Double = null,
     name: String = null,

@@ -1,8 +1,8 @@
 package typings.jupyterlabApputils.thememanagerMod.ThemeManager
 
 import typings.jupyterlabApputils.splashMod.ISplashScreen
-import typings.jupyterlabCoreutils.tokensMod.ISettingRegistry
-import typings.phosphorWidgets.mod.Widget
+import typings.jupyterlabSettingregistry.tokensMod.ISettingRegistry
+import typings.luminoWidgets.mod.Widget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,7 +1,7 @@
 package typings.echarts.echarts.EChartOption
 
-import typings.echarts.AnonColorIcon
-import typings.echarts.AnonColorOpacity
+import typings.echarts.AnonIcon
+import typings.echarts.AnonOpacity
 import typings.echarts.echarts.EChartOption.BasicComponents.CartesianAxis.Pointer
 import typings.echarts.echarts.EChartOption.BasicComponents.CartesianAxis.PointerLabel
 import typings.echarts.echartsStrings.click
@@ -76,12 +76,12 @@ trait AxisPointer extends Pointer {
 object AxisPointer {
   @scala.inline
   def apply(
-    handle: AnonColorIcon = null,
+    handle: AnonIcon = null,
     id: String = null,
     label: PointerLabel = null,
     lineStyle: LineStyle = null,
     link: js.Array[js.Object] = null,
-    shadowStyle: AnonColorOpacity = null,
+    shadowStyle: AnonOpacity = null,
     show: js.UndefOr[Boolean] = js.undefined,
     snap: js.UndefOr[Boolean] = js.undefined,
     status: js.UndefOr[Boolean] = js.undefined,

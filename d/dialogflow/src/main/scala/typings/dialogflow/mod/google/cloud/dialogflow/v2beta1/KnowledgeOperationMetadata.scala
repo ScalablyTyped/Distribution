@@ -22,7 +22,7 @@ class KnowledgeOperationMetadata () extends IKnowledgeOperationMetadata {
   def this(properties: IKnowledgeOperationMetadata) = this()
   /** KnowledgeOperationMetadata state. */
   @JSName("state")
-  var state_KnowledgeOperationMetadata: State = js.native
+  var state_KnowledgeOperationMetadata: State | String = js.native
   /**
     * Converts this KnowledgeOperationMetadata to JSON.
     * @returns JSON object

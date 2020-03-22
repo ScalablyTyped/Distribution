@@ -5,9 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TooltipLinkListProps extends js.Object {
-  var LinkWrapper: js.UndefOr[LinkWrapperType] = js.undefined
-  var links: js.Array[Link]
+  var LinkWrapper: js.UndefOr[LinkWrapperType] = js.native
+  var links: js.Array[Link] = js.native
 }
 
 object TooltipLinkListProps {

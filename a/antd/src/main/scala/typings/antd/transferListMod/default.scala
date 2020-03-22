@@ -1,6 +1,6 @@
 package typings.antd.transferListMod
 
-import typings.antd.AnonDataSource
+import typings.antd.AnonShowSearch
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,6 +15,6 @@ class default protected () extends TransferList {
 @JSImport("antd/lib/transfer/list", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: AnonDataSource = js.native
+  var defaultProps: AnonShowSearch = js.native
 }
 

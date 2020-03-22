@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-crypto__supports-web-crypto
 
-Typings are for version 0.1.0-preview.1
+Typings are for version 0.1.0-preview.4
 
 ## Library description:
 Provides functions for detecting if the host environment supports the WebCrypto API

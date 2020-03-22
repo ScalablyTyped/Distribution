@@ -1,6 +1,6 @@
 package typings.xstate.schedulerMod
 
-import typings.std.Partial
+import typings.xstate.PartialSchedulerOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("xstate/lib/scheduler", "Scheduler")
 @js.native
 class Scheduler () extends js.Object {
-  def this(options: Partial[SchedulerOptions]) = this()
+  def this(options: PartialSchedulerOptions) = this()
   var flushEvents: js.Any = js.native
   var initialized: js.Any = js.native
   var options: js.Any = js.native

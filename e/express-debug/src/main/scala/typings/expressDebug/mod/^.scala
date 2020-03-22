@@ -1,7 +1,7 @@
 package typings.expressDebug.mod
 
 import typings.express.mod.Application_
-import typings.expressDebug.AnonA
+import typings.expressDebug.AnonDepth
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,6 +13,6 @@ object ^ extends js.Object {
     * Node.js middleware for serving a favicon.
     */
   def apply(app: Application_): Unit = js.native
-  def apply(app: Application_, settings: AnonA): Unit = js.native
+  def apply(app: Application_, settings: AnonDepth): Unit = js.native
 }
 

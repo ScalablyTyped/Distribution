@@ -1,6 +1,6 @@
 package typings.asana.mod.resources
 
-import typings.asana.AnonWorkspace
+import typings.asana.CreateParamsworkspacenumb
 import typings.asana.mod.resources.Projects.CreateParams
 import typings.asana.mod.resources.Projects.FindAllParams
 import typings.asana.mod.resources.Projects.FindByParams
@@ -81,8 +81,8 @@ trait Projects_ extends Resource {
     * @param dispatchOptions?
     * @return
     */
-  def create(data: CreateParams with AnonWorkspace): typings.bluebird.mod.^[Type] = js.native
-  def create(data: CreateParams with AnonWorkspace, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
+  def create(data: CreateParamsworkspacenumb): typings.bluebird.mod.^[Type] = js.native
+  def create(data: CreateParamsworkspacenumb, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
   /**
     * * Creates a project shared with the given team.
     * *

@@ -19,7 +19,7 @@ trait ListFunctionsRequest extends js.Object {
     */
   var MasterRegion: js.UndefOr[typings.awsSdk.lambdaMod.MasterRegion] = js.native
   /**
-    * Specify a value between 1 and 50 to limit the number of functions in the response.
+    * The maximum number of functions to return.
     */
   var MaxItems: js.UndefOr[MaxListItems] = js.native
 }

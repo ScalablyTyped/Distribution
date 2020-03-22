@@ -33,6 +33,9 @@ object mapboxGlStrings {
   sealed trait ExclamationmarkEqualssign extends ExpressionName
   
   @js.native
+  sealed trait Feature extends js.Object
+  
+  @js.native
   sealed trait GET extends js.Object
   
   @js.native
@@ -118,9 +121,6 @@ object mapboxGlStrings {
   
   @js.native
   sealed trait background extends js.Object
-  
-  @js.native
-  sealed trait bearing extends js.Object
   
   @js.native
   sealed trait bevel extends js.Object
@@ -626,6 +626,8 @@ object mapboxGlStrings {
   @scala.inline
   def ExclamationmarkEqualssign: ExclamationmarkEqualssign = "!=".asInstanceOf[ExclamationmarkEqualssign]
   @scala.inline
+  def Feature: Feature = "Feature".asInstanceOf[Feature]
+  @scala.inline
   def GET: GET = "GET".asInstanceOf[GET]
   @scala.inline
   def Glyphs: Glyphs = "Glyphs".asInstanceOf[Glyphs]
@@ -683,8 +685,6 @@ object mapboxGlStrings {
   def auto: auto = "auto".asInstanceOf[auto]
   @scala.inline
   def background: background = "background".asInstanceOf[background]
-  @scala.inline
-  def bearing: bearing = "bearing".asInstanceOf[bearing]
   @scala.inline
   def bevel: bevel = "bevel".asInstanceOf[bevel]
   @scala.inline

@@ -1,13 +1,13 @@
 package typings.gestalt.mod
 
+import typings.gestalt.Anon2
+import typings.gestalt.Anon3
 import typings.gestalt.AnonDuration
-import typings.gestalt.AnonEventFullscreen
-import typings.gestalt.AnonEventHTMLDivElementSyntheticEvent
-import typings.gestalt.AnonEventHTMLVideoElement
-import typings.gestalt.AnonEventLoaded
-import typings.gestalt.AnonEventTime
-import typings.gestalt.AnonEventVolume
+import typings.gestalt.AnonFullscreen
+import typings.gestalt.AnonLoaded
 import typings.gestalt.AnonSrc
+import typings.gestalt.AnonTime
+import typings.gestalt.AnonVolume
 import typings.gestalt.gestaltStrings.auto
 import typings.gestalt.gestaltStrings.metadata
 import typings.gestalt.gestaltStrings.none
@@ -27,15 +27,15 @@ trait VideoProps extends js.Object {
   var controls: js.UndefOr[Boolean] = js.undefined
   var loop: js.UndefOr[Boolean] = js.undefined
   var onDurationChange: js.UndefOr[js.Function1[/* args */ AnonDuration, Unit]] = js.undefined
-  var onEnded: js.UndefOr[js.Function1[/* args */ AnonEventHTMLVideoElement, Unit]] = js.undefined
-  var onFullscreenChange: js.UndefOr[js.Function1[/* args */ AnonEventFullscreen, Unit]] = js.undefined
-  var onLoadedChange: js.UndefOr[js.Function1[/* args */ AnonEventLoaded, Unit]] = js.undefined
-  var onPause: js.UndefOr[js.Function1[/* args */ AnonEventHTMLDivElementSyntheticEvent, Unit]] = js.undefined
-  var onPlay: js.UndefOr[js.Function1[/* args */ AnonEventHTMLDivElementSyntheticEvent, Unit]] = js.undefined
-  var onReady: js.UndefOr[js.Function1[/* args */ AnonEventHTMLVideoElement, Unit]] = js.undefined
-  var onSeek: js.UndefOr[js.Function1[/* args */ AnonEventHTMLVideoElement, Unit]] = js.undefined
-  var onTimeChange: js.UndefOr[js.Function1[/* args */ AnonEventTime, Unit]] = js.undefined
-  var onVolumeChange: js.UndefOr[js.Function1[/* args */ AnonEventVolume, Unit]] = js.undefined
+  var onEnded: js.UndefOr[js.Function1[/* args */ Anon2, Unit]] = js.undefined
+  var onFullscreenChange: js.UndefOr[js.Function1[/* args */ AnonFullscreen, Unit]] = js.undefined
+  var onLoadedChange: js.UndefOr[js.Function1[/* args */ AnonLoaded, Unit]] = js.undefined
+  var onPause: js.UndefOr[js.Function1[/* args */ Anon3, Unit]] = js.undefined
+  var onPlay: js.UndefOr[js.Function1[/* args */ Anon3, Unit]] = js.undefined
+  var onReady: js.UndefOr[js.Function1[/* args */ Anon2, Unit]] = js.undefined
+  var onSeek: js.UndefOr[js.Function1[/* args */ Anon2, Unit]] = js.undefined
+  var onTimeChange: js.UndefOr[js.Function1[/* args */ AnonTime, Unit]] = js.undefined
+  var onVolumeChange: js.UndefOr[js.Function1[/* args */ AnonVolume, Unit]] = js.undefined
   var playbackRate: js.UndefOr[Double] = js.undefined
   var playing: js.UndefOr[Boolean] = js.undefined
   var playsInline: js.UndefOr[Boolean] = js.undefined
@@ -61,15 +61,15 @@ object VideoProps {
     controls: js.UndefOr[Boolean] = js.undefined,
     loop: js.UndefOr[Boolean] = js.undefined,
     onDurationChange: /* args */ AnonDuration => Unit = null,
-    onEnded: /* args */ AnonEventHTMLVideoElement => Unit = null,
-    onFullscreenChange: /* args */ AnonEventFullscreen => Unit = null,
-    onLoadedChange: /* args */ AnonEventLoaded => Unit = null,
-    onPause: /* args */ AnonEventHTMLDivElementSyntheticEvent => Unit = null,
-    onPlay: /* args */ AnonEventHTMLDivElementSyntheticEvent => Unit = null,
-    onReady: /* args */ AnonEventHTMLVideoElement => Unit = null,
-    onSeek: /* args */ AnonEventHTMLVideoElement => Unit = null,
-    onTimeChange: /* args */ AnonEventTime => Unit = null,
-    onVolumeChange: /* args */ AnonEventVolume => Unit = null,
+    onEnded: /* args */ Anon2 => Unit = null,
+    onFullscreenChange: /* args */ AnonFullscreen => Unit = null,
+    onLoadedChange: /* args */ AnonLoaded => Unit = null,
+    onPause: /* args */ Anon3 => Unit = null,
+    onPlay: /* args */ Anon3 => Unit = null,
+    onReady: /* args */ Anon2 => Unit = null,
+    onSeek: /* args */ Anon2 => Unit = null,
+    onTimeChange: /* args */ AnonTime => Unit = null,
+    onVolumeChange: /* args */ AnonVolume => Unit = null,
     playbackRate: Int | Double = null,
     playing: js.UndefOr[Boolean] = js.undefined,
     playsInline: js.UndefOr[Boolean] = js.undefined,

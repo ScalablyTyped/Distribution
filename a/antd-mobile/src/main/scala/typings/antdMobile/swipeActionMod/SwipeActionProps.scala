@@ -1,6 +1,6 @@
 package typings.antdMobile.swipeActionMod
 
-import typings.antdMobile.AnonClassNameOnPress
+import typings.antdMobile.AnonOnPress
 import typings.antdMobile.swipeActionPropsTypeMod.SwipeActionPropsType
 import typings.react.mod.CSSProperties
 import scala.scalajs.js
@@ -19,11 +19,11 @@ object SwipeActionProps {
     autoClose: js.UndefOr[Boolean] = js.undefined,
     className: String = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
-    left: js.Array[AnonClassNameOnPress[CSSProperties]] = null,
+    left: js.Array[AnonOnPress[CSSProperties]] = null,
     onClose: () => Unit = null,
     onOpen: () => Unit = null,
     prefixCls: String = null,
-    right: js.Array[AnonClassNameOnPress[CSSProperties]] = null,
+    right: js.Array[AnonOnPress[CSSProperties]] = null,
     style: CSSProperties = null,
     title: String = null
   ): SwipeActionProps = {

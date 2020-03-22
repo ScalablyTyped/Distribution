@@ -4,13 +4,13 @@ import typings.popperJs.mod.Data
 import typings.popperJs.mod.Modifiers
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
-import typings.reactFloater.AnonCenter
+import typings.reactFloater.AnonOffset
+import typings.reactFloater.PartialStyles
 import typings.reactFloater.reactFloaterStrings.click
 import typings.reactFloater.reactFloaterStrings.floater
 import typings.reactFloater.reactFloaterStrings.hover
 import typings.reactFloater.reactFloaterStrings.wrapper
 import typings.std.HTMLElement
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,10 +46,10 @@ object PropsWithComponent {
     placement: Placement = null,
     showCloseButton: js.UndefOr[Boolean] = js.undefined,
     style: CSSProperties = null,
-    styles: Partial[Styles] = null,
+    styles: PartialStyles = null,
     target: String | HTMLElement = null,
     title: ReactNode = null,
-    wrapperOptions: AnonCenter = null
+    wrapperOptions: AnonOffset = null
   ): PropsWithComponent = {
     val __obj = js.Dynamic.literal(component = js.Any.fromFunction1(component))
     if (!js.isUndefined(autoOpen)) __obj.updateDynamic("autoOpen")(autoOpen.asInstanceOf[js.Any])

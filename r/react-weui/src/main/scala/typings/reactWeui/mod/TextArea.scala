@@ -1,6 +1,6 @@
 package typings.reactWeui.mod
 
-import typings.reactWeui.AnonDefaultValueShowCounter
+import typings.reactWeui.AnonShowCounter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +17,7 @@ class TextArea protected () extends js.Object {
 @JSImport("react-weui", "TextArea")
 @js.native
 object TextArea extends js.Object {
-  var defaultProps: AnonDefaultValueShowCounter = js.native
+  var defaultProps: AnonShowCounter = js.native
   @js.native
   object propTypes extends js.Object {
     @js.native

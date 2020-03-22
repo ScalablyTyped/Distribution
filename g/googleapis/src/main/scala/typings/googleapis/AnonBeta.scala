@@ -12,7 +12,7 @@ trait AnonBeta extends js.Object {
   var localizedRuleName: js.UndefOr[String] = js.native
   var ruleImpact: js.UndefOr[Double] = js.native
   var summary: js.UndefOr[SchemaPagespeedApiFormatStringV4] = js.native
-  var urlBlocks: js.UndefOr[js.Array[AnonHeaderUrlsAnonDetailsResultArraySchemaPagespeedApiFormatStringV4]] = js.native
+  var urlBlocks: js.UndefOr[js.Array[AnonHeaderUrls]] = js.native
 }
 
 object AnonBeta {
@@ -23,7 +23,7 @@ object AnonBeta {
     localizedRuleName: String = null,
     ruleImpact: Int | Double = null,
     summary: SchemaPagespeedApiFormatStringV4 = null,
-    urlBlocks: js.Array[AnonHeaderUrlsAnonDetailsResultArraySchemaPagespeedApiFormatStringV4] = null
+    urlBlocks: js.Array[AnonHeaderUrls] = null
   ): AnonBeta = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(beta)) __obj.updateDynamic("beta")(beta.asInstanceOf[js.Any])

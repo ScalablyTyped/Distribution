@@ -5,9 +5,10 @@ import typings.node.Buffer
 import typings.node.httpMod.Agent
 import typings.node.streamMod.Stream
 import typings.npmPackageArg.mod.Result
+import typings.npmRegistryFetch.PartialAuthOptions
+import typings.npmRegistryFetch.PartialFetchRetryOptions
 import typings.npmlog.mod.Logger
 import typings.ssri.mod.Integrity
-import typings.std.Partial
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -111,11 +112,11 @@ trait FetchOptions
     * auth for a request, and the auth details in `opts.forceAuth` will be
     * used instead.
     */
-  var `force-auth`: js.UndefOr[Partial[AuthOptions]] = js.undefined
+  var `force-auth`: js.UndefOr[PartialAuthOptions] = js.undefined
   /**
     * Alias for `force-auth`
     */
-  var forceAuth: js.UndefOr[Partial[AuthOptions]] = js.undefined
+  var forceAuth: js.UndefOr[PartialAuthOptions] = js.undefined
   /**
     * If true, `npm-registry-fetch` will set the `Content-Encoding` header
     * to `gzip` and use `zlib.gzip()` or `zlib.createGzip()` to gzip-encode
@@ -305,7 +306,7 @@ trait FetchOptions
     * Single-object configuration for request retry settings. If passed in,
     * will override individually-passed `fetch-retry-*` settings.
     */
-  var retry: js.UndefOr[Partial[FetchRetryOptions]] = js.undefined
+  var retry: js.UndefOr[PartialFetchRetryOptions] = js.undefined
   /**
     * Associate an operation with a scope for a scoped registry. This
     * option can force lookup of scope-specific registries and
@@ -347,8 +348,8 @@ object FetchOptions {
     ca: String | Buffer | (js.Array[String | Buffer]) = null,
     cache: String = null,
     cert: String = null,
-    `force-auth`: Partial[AuthOptions] = null,
-    forceAuth: Partial[AuthOptions] = null,
+    `force-auth`: PartialAuthOptions = null,
+    forceAuth: PartialAuthOptions = null,
     gzip: js.UndefOr[Boolean] = js.undefined,
     headers: Record[String, String] = null,
     `ignore-body`: js.UndefOr[Boolean] = js.undefined,
@@ -378,7 +379,7 @@ object FetchOptions {
     refer: String = null,
     referer: String = null,
     registry: String = null,
-    retry: Partial[FetchRetryOptions] = null,
+    retry: PartialFetchRetryOptions = null,
     scope: String = null,
     spec: String | Result = null,
     `strict-ssl`: js.UndefOr[Boolean] = js.undefined,

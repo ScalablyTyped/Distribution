@@ -147,8 +147,8 @@ object plotMod extends js.Object {
       * single drawer (e.g. adding text drawing capabilities).
       */
     /* protected */ def _createNodesForDataset(dataset: Dataset): typings.plottable.drawersMod.ProxyDrawer = js.native
-    /* protected */ def _entityBounds(entity: ILightweightPlotEntity): AnonHeightWidthXY = js.native
-    /* protected */ def _entityBounds(entity: IPlotEntity): AnonHeightWidthXY = js.native
+    /* protected */ def _entityBounds(entity: ILightweightPlotEntity): AnonHeightWidth = js.native
+    /* protected */ def _entityBounds(entity: IPlotEntity): AnonHeightWidth = js.native
     /* protected */ def _filterForProperty(property: String): IAccessor[Boolean] = js.native
     /* protected */ def _generateAttrToProjector(): AttributeToProjector = js.native
     /* protected */ def _generateDrawSteps(): js.Array[DrawStep] = js.native

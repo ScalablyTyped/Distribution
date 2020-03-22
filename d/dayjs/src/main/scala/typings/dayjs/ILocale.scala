@@ -1,17 +1,16 @@
 package typings.dayjs
 
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ILocale extends js.Object {
-  var formats: Partial[AnonL]
+  var formats: PartialLTstringLTSstringL
   var months: js.UndefOr[js.Array[String]] = js.undefined
   var monthsShort: js.UndefOr[js.Array[String]] = js.undefined
   var name: String
   var ordinal: js.UndefOr[js.Function1[/* n */ Double, Double | String]] = js.undefined
-  var relativeTime: Partial[AnonD]
+  var relativeTime: Partialfuturestringpastst
   var weekStart: js.UndefOr[Double] = js.undefined
   var weekdays: js.UndefOr[js.Array[String]] = js.undefined
   var weekdaysMin: js.UndefOr[js.Array[String]] = js.undefined
@@ -21,9 +20,9 @@ trait ILocale extends js.Object {
 object ILocale {
   @scala.inline
   def apply(
-    formats: Partial[AnonL],
+    formats: PartialLTstringLTSstringL,
     name: String,
-    relativeTime: Partial[AnonD],
+    relativeTime: Partialfuturestringpastst,
     months: js.Array[String] = null,
     monthsShort: js.Array[String] = null,
     ordinal: /* n */ Double => Double | String = null,

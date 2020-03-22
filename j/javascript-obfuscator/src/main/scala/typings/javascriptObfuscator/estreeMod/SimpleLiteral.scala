@@ -1,6 +1,6 @@
 package typings.javascriptObfuscator.estreeMod
 
-import typings.javascriptObfuscator.mod.XVerbatimProperty
+import typings.javascriptObfuscator.escodegenMod.XVerbatimProperty
 import typings.std.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`

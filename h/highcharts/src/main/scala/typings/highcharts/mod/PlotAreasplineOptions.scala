@@ -8,10 +8,9 @@ import scala.scalajs.js.annotation._
 
 trait PlotAreasplineOptions extends js.Object {
   /**
-    * (Highcharts, Highstock) Accessibility options for a series. Requires the
-    * accessibility module.
+    * (Highcharts, Highstock) Accessibility options for a series.
     */
-  var accessibility: js.UndefOr[js.Object | PlotAreasplineAccessibilityOptions] = js.undefined
+  var accessibility: js.UndefOr[SeriesAccessibilityOptionsObject] = js.undefined
   /**
     * (Highmaps) Whether all areas of the map defined in `mapData` should be
     * rendered. If `true`, areas which don't correspond to a data point, are
@@ -45,7 +44,7 @@ trait PlotAreasplineOptions extends js.Object {
     * Due to poor performance, animation is disabled in old IE browsers for
     * several chart types.
     */
-  var animation: js.UndefOr[Boolean | AnimationOptionsObject | PlotAreasplineAnimationOptions] = js.undefined
+  var animation: js.UndefOr[Boolean | AnimationOptionsObject] = js.undefined
   /**
     * (Highcharts, Highstock) For some series, there is a limit that shuts down
     * initial animation by default when the total number of points in the chart
@@ -154,11 +153,12 @@ trait PlotAreasplineOptions extends js.Object {
   var compareBase: js.UndefOr[`0` | `100`] = js.undefined
   /**
     * (Highstock) Defines if comparison should start from the first point
-    * within the visible range or should start from the first point (see online
-    * documentation for example) the range. In other words, this flag
-    * determines if first point within the visible range will have 0%
-    * (`compareStart=true`) or should have been already calculated according to
-    * the previous point (`compareStart=false`).
+    * within the visible range or should start from the first point **before**
+    * the range.
+    *
+    * In other words, this flag determines if first point within the visible
+    * range will have 0% (`compareStart=true`) or should have been already
+    * calculated according to the previous point (`compareStart=false`).
     */
   var compareStart: js.UndefOr[Boolean] = js.undefined
   /**
@@ -176,7 +176,7 @@ trait PlotAreasplineOptions extends js.Object {
     * (Gantt) Override Pathfinder connector options for a series. Requires
     * Highcharts Gantt to be loaded.
     */
-  var connectors: js.UndefOr[PlotAreasplineConnectorsOptions] = js.undefined
+  var connectors: js.UndefOr[SeriesConnectorsOptionsObject] = js.undefined
   /**
     * (Highcharts, Highstock) When the series contains less points than the
     * crop threshold, all points are drawn, even if the points fall outside the
@@ -219,10 +219,10 @@ trait PlotAreasplineOptions extends js.Object {
     * of the first point instance are copied over to the group point. This can
     * be altered through a custom `approximation` callback function.
     */
-  var dataGrouping: js.UndefOr[PlotAreasplineDataGroupingOptions] = js.undefined
+  var dataGrouping: js.UndefOr[DataGroupingOptionsObject] = js.undefined
   /**
-    * (Highcharts, Highstock) Options for the series data labels, appearing
-    * next to each data point.
+    * (Highcharts, Highstock, Highmaps, Gantt) Options for the series data
+    * labels, appearing next to each data point.
     *
     * Since v6.2.0, multiple data labels can be applied to each single point by
     * defining them as an array of configs.
@@ -232,6 +232,10 @@ trait PlotAreasplineOptions extends js.Object {
     * (see example).
     */
   var dataLabels: js.UndefOr[DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject]] = js.undefined
+  /**
+    * (Highcharts, Highstock) Options for the series data sorting.
+    */
+  var dataSorting: js.UndefOr[DataSortingOptionsObject | PlotAreasplineDataSortingOptions] = js.undefined
   /**
     * (Highcharts, Highstock) A description of the series to add to the screen
     * reader information about the series.
@@ -243,7 +247,7 @@ trait PlotAreasplineOptions extends js.Object {
     * mentioned under the `dragDrop` API structure, the module fires three
     * events, point.dragStart, point.drag and point.drop.
     */
-  var dragDrop: js.UndefOr[PlotAreasplineDragDropOptions] = js.undefined
+  var dragDrop: js.UndefOr[SeriesDragDropOptionsObject] = js.undefined
   /**
     * (Highcharts, Highstock) Enable or disable the mouse tracking for a
     * specific series. This includes point tooltips and click events on graphs
@@ -255,7 +259,7 @@ trait PlotAreasplineOptions extends js.Object {
     * These event hooks can also be attached to the series at run time using
     * the `Highcharts.addEvent` function.
     */
-  var events: js.UndefOr[PlotAreasplineEventsOptions] = js.undefined
+  var events: js.UndefOr[SeriesEventsOptionsObject] = js.undefined
   /**
     * (Highcharts, Highstock) Fill color or gradient for the area. When `null`,
     * the series' `color` is used with the series' `fillOpacity`.
@@ -362,15 +366,15 @@ trait PlotAreasplineOptions extends js.Object {
     * The series labels currently work with series types having a `graph` or an
     * `area`.
     */
-  var label: js.UndefOr[PlotAreasplineLabelOptions] = js.undefined
+  var label: js.UndefOr[SeriesLabelOptionsObject] = js.undefined
   /**
     * (Highstock) The line marks the last price from all points.
     */
-  var lastPrice: js.UndefOr[PlotAreasplineLastPriceOptions] = js.undefined
+  var lastPrice: js.UndefOr[SeriesLastPriceOptionsObject] = js.undefined
   /**
     * (Highstock) The line marks the last price from visible range of points.
     */
-  var lastVisiblePrice: js.UndefOr[PlotAreasplineLastVisiblePriceOptions] = js.undefined
+  var lastVisiblePrice: js.UndefOr[SeriesLastVisiblePriceOptionsObject] = js.undefined
   /**
     * (Highcharts, Highstock) A separate color for the graph line. By default
     * the line takes the `color` of the series, but the lineColor setting
@@ -396,6 +400,10 @@ trait PlotAreasplineOptions extends js.Object {
     * Additionally, the value can be ":previous" to link to the previous
     * series. When two series are linked, only the first one appears in the
     * legend. Toggling the visibility of this also toggles the linked series.
+    *
+    * If master series uses data sorting and linked series does not have its
+    * own sorting definition, the linked series will be sorted in the same
+    * order as the master one.
     */
   var linkedTo: js.UndefOr[String] = js.undefined
   /**
@@ -408,7 +416,7 @@ trait PlotAreasplineOptions extends js.Object {
     * In styled mode, the markers can be styled with the `.highcharts-point`,
     * `.highcharts-point-hover` and `.highcharts-point-select` class names.
     */
-  var marker: js.UndefOr[PlotAreasplineMarkerOptions] = js.undefined
+  var marker: js.UndefOr[PointMarkerOptionsObject] = js.undefined
   /**
     * (Highstock) Options for the corresponding navigator series if
     * `showInNavigator` is `true` for this series. Available options are the
@@ -420,7 +428,9 @@ trait PlotAreasplineOptions extends js.Object {
   var navigatorOptions: js.UndefOr[PlotSeriesOptions] = js.undefined
   /**
     * (Highcharts, Highstock) The color for the parts of the graph or points
-    * that are below the threshold.
+    * that are below the threshold. Note that `zones` takes precedence over the
+    * negative color. Using `negativeColor` is equivalent to applying a zone
+    * with value of 0.
     */
   var negativeColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
@@ -438,7 +448,7 @@ trait PlotAreasplineOptions extends js.Object {
   /**
     * (Highcharts, Highstock) Properties for each single point.
     */
-  var point: js.UndefOr[PlotAreasplinePointOptions] = js.undefined
+  var point: js.UndefOr[PlotSeriesPointOptions] = js.undefined
   /**
     * (Highcharts, Highstock) Same as accessibility.pointDescriptionFormatter,
     * but for an individual series. Overrides the chart wide configuration.
@@ -566,7 +576,7 @@ trait PlotAreasplineOptions extends js.Object {
     * The second one is `"overlap"`, which only applies to waterfall series.
     */
   var stacking: js.UndefOr[OptionsStackingValue] = js.undefined
-  var states: js.UndefOr[PlotAreasplineStatesOptions] = js.undefined
+  var states: js.UndefOr[SeriesStatesOptionsObject] = js.undefined
   /**
     * (Highcharts, Highstock) Sticky tracking of mouse events. When true, the
     * `mouseOut` event on a series isn't triggered until the mouse moves over
@@ -600,7 +610,7 @@ trait PlotAreasplineOptions extends js.Object {
     * of each single series. Properties are inherited from tooltip, but only
     * the following properties can be defined on a series level.
     */
-  var tooltip: js.UndefOr[PlotAreasplineTooltipOptions] = js.undefined
+  var tooltip: js.UndefOr[SeriesTooltipOptionsObject] = js.undefined
   /**
     * (Highcharts, Highstock) Whether the whole area or just the line should
     * respond to mouseover tooltips and other mouse or touch events.
@@ -640,16 +650,16 @@ trait PlotAreasplineOptions extends js.Object {
     * `.highcharts-zone-{n}` class, or custom classed from the `className`
     * option (view live demo).
     */
-  var zones: js.UndefOr[js.Array[PlotAreasplineZonesOptions]] = js.undefined
+  var zones: js.UndefOr[js.Array[SeriesZonesOptionsObject]] = js.undefined
 }
 
 object PlotAreasplineOptions {
   @scala.inline
   def apply(
-    accessibility: js.Object | PlotAreasplineAccessibilityOptions = null,
+    accessibility: SeriesAccessibilityOptionsObject = null,
     allAreas: js.UndefOr[Boolean] = js.undefined,
     allowPointSelect: js.UndefOr[Boolean] = js.undefined,
-    animation: Boolean | AnimationOptionsObject | PlotAreasplineAnimationOptions = null,
+    animation: Boolean | AnimationOptionsObject = null,
     animationLimit: Int | Double = null,
     boostBlending: OptionsBoostBlendingValue = null,
     boostThreshold: Int | Double = null,
@@ -666,16 +676,17 @@ object PlotAreasplineOptions {
     compareStart: js.UndefOr[Boolean] = js.undefined,
     connectEnds: js.UndefOr[Boolean] = js.undefined,
     connectNulls: js.UndefOr[Boolean] = js.undefined,
-    connectors: PlotAreasplineConnectorsOptions = null,
+    connectors: SeriesConnectorsOptionsObject = null,
     cropThreshold: Int | Double = null,
     cursor: String | CursorValue = null,
     dashStyle: DashStyleValue = null,
-    dataGrouping: PlotAreasplineDataGroupingOptions = null,
+    dataGrouping: DataGroupingOptionsObject = null,
     dataLabels: DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject] = null,
+    dataSorting: DataSortingOptionsObject | PlotAreasplineDataSortingOptions = null,
     description: String = null,
-    dragDrop: PlotAreasplineDragDropOptions = null,
+    dragDrop: SeriesDragDropOptionsObject = null,
     enableMouseTracking: js.UndefOr[Boolean] = js.undefined,
-    events: PlotAreasplineEventsOptions = null,
+    events: SeriesEventsOptionsObject = null,
     fillColor: ColorString | GradientColorObject | PatternObject = null,
     fillOpacity: Int | Double = null,
     findNearestPointBy: OptionsFindNearestPointByValue = null,
@@ -685,19 +696,19 @@ object PlotAreasplineOptions {
     includeInDataExport: js.UndefOr[Boolean] = js.undefined,
     joinBy: String | js.Array[String] = null,
     keys: js.Array[String] = null,
-    label: PlotAreasplineLabelOptions = null,
-    lastPrice: PlotAreasplineLastPriceOptions = null,
-    lastVisiblePrice: PlotAreasplineLastVisiblePriceOptions = null,
+    label: SeriesLabelOptionsObject = null,
+    lastPrice: SeriesLastPriceOptionsObject = null,
+    lastVisiblePrice: SeriesLastVisiblePriceOptionsObject = null,
     lineColor: ColorString | GradientColorObject | PatternObject = null,
     lineWidth: Int | Double = null,
     linecap: SeriesLinecapValue = null,
     linkedTo: String = null,
-    marker: PlotAreasplineMarkerOptions = null,
+    marker: PointMarkerOptionsObject = null,
     navigatorOptions: PlotSeriesOptions = null,
     negativeColor: ColorString | GradientColorObject | PatternObject = null,
     negativeFillColor: ColorString | GradientColorObject | PatternObject = null,
     opacity: Int | Double = null,
-    point: PlotAreasplinePointOptions = null,
+    point: PlotSeriesPointOptions = null,
     pointDescriptionFormatter: js.Function = null,
     pointInterval: Int | Double = null,
     pointIntervalUnit: OptionsPointIntervalUnitValue = null,
@@ -712,16 +723,16 @@ object PlotAreasplineOptions {
     skipKeyboardNavigation: js.UndefOr[Boolean] = js.undefined,
     softThreshold: js.UndefOr[Boolean] = js.undefined,
     stacking: OptionsStackingValue = null,
-    states: PlotAreasplineStatesOptions = null,
+    states: SeriesStatesOptionsObject = null,
     stickyTracking: js.UndefOr[Boolean] = js.undefined,
     threshold: Int | Double = null,
-    tooltip: PlotAreasplineTooltipOptions = null,
+    tooltip: SeriesTooltipOptionsObject = null,
     trackByArea: js.UndefOr[Boolean] = js.undefined,
     turboThreshold: Int | Double = null,
     visible: js.UndefOr[Boolean] = js.undefined,
     zIndex: Int | Double = null,
     zoneAxis: String = null,
-    zones: js.Array[PlotAreasplineZonesOptions] = null
+    zones: js.Array[SeriesZonesOptionsObject] = null
   ): PlotAreasplineOptions = {
     val __obj = js.Dynamic.literal()
     if (accessibility != null) __obj.updateDynamic("accessibility")(accessibility.asInstanceOf[js.Any])
@@ -750,6 +761,7 @@ object PlotAreasplineOptions {
     if (dashStyle != null) __obj.updateDynamic("dashStyle")(dashStyle.asInstanceOf[js.Any])
     if (dataGrouping != null) __obj.updateDynamic("dataGrouping")(dataGrouping.asInstanceOf[js.Any])
     if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
+    if (dataSorting != null) __obj.updateDynamic("dataSorting")(dataSorting.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (dragDrop != null) __obj.updateDynamic("dragDrop")(dragDrop.asInstanceOf[js.Any])
     if (!js.isUndefined(enableMouseTracking)) __obj.updateDynamic("enableMouseTracking")(enableMouseTracking.asInstanceOf[js.Any])

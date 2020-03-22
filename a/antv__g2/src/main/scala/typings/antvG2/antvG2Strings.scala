@@ -225,9 +225,6 @@ object antvG2Strings {
   sealed trait loadedmetadata extends js.Object
   
   @js.native
-  sealed trait loadend extends js.Object
-  
-  @js.native
   sealed trait loadstart extends js.Object
   
   @js.native
@@ -426,13 +423,13 @@ object antvG2Strings {
   sealed trait top extends js.Object
   
   @js.native
-  sealed trait `top-bottom` extends js.Object
-  
-  @js.native
   sealed trait `top-center` extends js.Object
   
   @js.native
   sealed trait `top-left` extends js.Object
+  
+  @js.native
+  sealed trait `top-right` extends js.Object
   
   @js.native
   sealed trait touchcancel extends js.Object
@@ -629,8 +626,6 @@ object antvG2Strings {
   @scala.inline
   def loadedmetadata: loadedmetadata = "loadedmetadata".asInstanceOf[loadedmetadata]
   @scala.inline
-  def loadend: loadend = "loadend".asInstanceOf[loadend]
-  @scala.inline
   def loadstart: loadstart = "loadstart".asInstanceOf[loadstart]
   @scala.inline
   def log: log = "log".asInstanceOf[log]
@@ -763,11 +758,11 @@ object antvG2Strings {
   @scala.inline
   def top: top = "top".asInstanceOf[top]
   @scala.inline
-  def `top-bottom`: `top-bottom` = "top-bottom".asInstanceOf[`top-bottom`]
-  @scala.inline
   def `top-center`: `top-center` = "top-center".asInstanceOf[`top-center`]
   @scala.inline
   def `top-left`: `top-left` = "top-left".asInstanceOf[`top-left`]
+  @scala.inline
+  def `top-right`: `top-right` = "top-right".asInstanceOf[`top-right`]
   @scala.inline
   def touchcancel: touchcancel = "touchcancel".asInstanceOf[touchcancel]
   @scala.inline

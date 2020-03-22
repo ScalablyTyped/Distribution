@@ -2,7 +2,7 @@ package typings.gapiClientGmail.gapi.client.gmail
 
 import typings.gapiClient.gapi.client.Request_
 import typings.gapiClientGmail.AnonAlt
-import typings.gapiClientGmail.AnonAltFieldsForwardingEmail
+import typings.gapiClientGmail.AnonForwardingEmail
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,9 +20,9 @@ trait ForwardingAddressesResource extends js.Object {
     *
     * This method is only available to service account clients that have been delegated domain-wide authority.
     */
-  def delete(request: AnonAltFieldsForwardingEmail): Request_[Unit]
+  def delete(request: AnonForwardingEmail): Request_[Unit]
   /** Gets the specified forwarding address. */
-  def get(request: AnonAltFieldsForwardingEmail): Request_[ForwardingAddress]
+  def get(request: AnonForwardingEmail): Request_[ForwardingAddress]
   /** Lists the forwarding addresses for the specified account. */
   def list(request: AnonAlt): Request_[ListForwardingAddressesResponse]
 }
@@ -31,8 +31,8 @@ object ForwardingAddressesResource {
   @scala.inline
   def apply(
     create: AnonAlt => Request_[ForwardingAddress],
-    delete: AnonAltFieldsForwardingEmail => Request_[Unit],
-    get: AnonAltFieldsForwardingEmail => Request_[ForwardingAddress],
+    delete: AnonForwardingEmail => Request_[Unit],
+    get: AnonForwardingEmail => Request_[ForwardingAddress],
     list: AnonAlt => Request_[ListForwardingAddressesResponse]
   ): ForwardingAddressesResource = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))

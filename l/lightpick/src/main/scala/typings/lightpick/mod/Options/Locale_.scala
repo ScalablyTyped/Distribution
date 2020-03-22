@@ -1,9 +1,9 @@
 package typings.lightpick.mod.Options
 
+import typings.lightpick.PartialPluralizeFnLocale
 import typings.lightpick.mod.Options.Locale.Buttons
 import typings.lightpick.mod.Options.Locale.PluralizeFn
 import typings.lightpick.mod.Options.Locale.PluralizeFnLocale
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +17,7 @@ trait Locale_ extends js.Object {
   /**
     * Text for tooltip.
     */
-  var tooltip: js.UndefOr[Partial[PluralizeFnLocale]] = js.undefined
+  var tooltip: js.UndefOr[PartialPluralizeFnLocale] = js.undefined
   /**
     * Show tooltip text on disabled dates. (Eg. «Already booked»)
     */
@@ -29,7 +29,7 @@ object Locale_ {
   def apply(
     buttons: Buttons = null,
     pluralize: (/* i */ String | Double, /* locale */ PluralizeFnLocale) => String = null,
-    tooltip: Partial[PluralizeFnLocale] = null,
+    tooltip: PartialPluralizeFnLocale = null,
     tooltipOnDisabled: String = null
   ): Locale_ = {
     val __obj = js.Dynamic.literal()

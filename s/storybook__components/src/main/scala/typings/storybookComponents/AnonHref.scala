@@ -4,10 +4,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AnonHref extends js.Object {
-  var href: js.UndefOr[String] = js.undefined
-  var onClick: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var title: String
+  var href: js.UndefOr[String] = js.native
+  var onClick: js.UndefOr[js.Function0[Unit]] = js.native
+  var title: String = js.native
 }
 
 object AnonHref {

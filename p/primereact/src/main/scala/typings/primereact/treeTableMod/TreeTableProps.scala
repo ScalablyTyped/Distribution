@@ -1,12 +1,12 @@
 package typings.primereact.treeTableMod
 
-import typings.primereact.AnonColumnsDragIndex
 import typings.primereact.AnonDelta
+import typings.primereact.AnonDropIndex
 import typings.primereact.AnonFirst
 import typings.primereact.AnonMultiSortMeta
 import typings.primereact.AnonNode
 import typings.primereact.AnonNodeOriginalEvent
-import typings.primereact.AnonOriginalEventValue
+import typings.primereact.AnonValue
 import typings.primereact.treeNodeMod.TreeNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -39,19 +39,19 @@ trait TreeTableProps extends js.Object {
   var loadingIcon: js.UndefOr[String] = js.undefined
   var metaKeySelection: js.UndefOr[Boolean] = js.undefined
   var multiSortMeta: js.UndefOr[js.Array[_]] = js.undefined
-  var onColReorder: js.UndefOr[js.Function1[/* e */ AnonColumnsDragIndex, Unit]] = js.undefined
+  var onColReorder: js.UndefOr[js.Function1[/* e */ AnonDropIndex, Unit]] = js.undefined
   var onCollapse: js.UndefOr[js.Function1[/* e */ AnonNodeOriginalEvent, Unit]] = js.undefined
   var onColumnResizeEnd: js.UndefOr[js.Function1[/* e */ AnonDelta, Unit]] = js.undefined
   var onContextMenu: js.UndefOr[js.Function1[/* e */ AnonNode, Unit]] = js.undefined
-  var onContextMenuSelectionChange: js.UndefOr[js.Function1[/* e */ AnonOriginalEventValue, Unit]] = js.undefined
+  var onContextMenuSelectionChange: js.UndefOr[js.Function1[/* e */ AnonValue, Unit]] = js.undefined
   var onExpand: js.UndefOr[js.Function1[/* e */ AnonNodeOriginalEvent, Unit]] = js.undefined
   var onFilter: js.UndefOr[js.Function1[/* filters */ js.Array[_], Unit]] = js.undefined
   var onPage: js.UndefOr[js.Function1[/* e */ AnonFirst, Unit]] = js.undefined
   var onRowClick: js.UndefOr[js.Function1[/* e */ AnonNodeOriginalEvent, Unit]] = js.undefined
   var onSelect: js.UndefOr[js.Function1[/* e */ AnonNodeOriginalEvent, Unit]] = js.undefined
-  var onSelectionChange: js.UndefOr[js.Function1[/* e */ AnonOriginalEventValue, Unit]] = js.undefined
+  var onSelectionChange: js.UndefOr[js.Function1[/* e */ AnonValue, Unit]] = js.undefined
   var onSort: js.UndefOr[js.Function1[/* e */ AnonMultiSortMeta, Unit]] = js.undefined
-  var onToggle: js.UndefOr[js.Function1[/* e */ AnonOriginalEventValue, Unit]] = js.undefined
+  var onToggle: js.UndefOr[js.Function1[/* e */ AnonValue, Unit]] = js.undefined
   var onUnselect: js.UndefOr[js.Function1[/* e */ AnonNodeOriginalEvent, Unit]] = js.undefined
   var pageLinkSize: js.UndefOr[Double] = js.undefined
   var paginator: js.UndefOr[Boolean] = js.undefined
@@ -110,19 +110,19 @@ object TreeTableProps {
     loadingIcon: String = null,
     metaKeySelection: js.UndefOr[Boolean] = js.undefined,
     multiSortMeta: js.Array[_] = null,
-    onColReorder: /* e */ AnonColumnsDragIndex => Unit = null,
+    onColReorder: /* e */ AnonDropIndex => Unit = null,
     onCollapse: /* e */ AnonNodeOriginalEvent => Unit = null,
     onColumnResizeEnd: /* e */ AnonDelta => Unit = null,
     onContextMenu: /* e */ AnonNode => Unit = null,
-    onContextMenuSelectionChange: /* e */ AnonOriginalEventValue => Unit = null,
+    onContextMenuSelectionChange: /* e */ AnonValue => Unit = null,
     onExpand: /* e */ AnonNodeOriginalEvent => Unit = null,
     onFilter: /* filters */ js.Array[_] => Unit = null,
     onPage: /* e */ AnonFirst => Unit = null,
     onRowClick: /* e */ AnonNodeOriginalEvent => Unit = null,
     onSelect: /* e */ AnonNodeOriginalEvent => Unit = null,
-    onSelectionChange: /* e */ AnonOriginalEventValue => Unit = null,
+    onSelectionChange: /* e */ AnonValue => Unit = null,
     onSort: /* e */ AnonMultiSortMeta => Unit = null,
-    onToggle: /* e */ AnonOriginalEventValue => Unit = null,
+    onToggle: /* e */ AnonValue => Unit = null,
     onUnselect: /* e */ AnonNodeOriginalEvent => Unit = null,
     pageLinkSize: Int | Double = null,
     paginator: js.UndefOr[Boolean] = js.undefined,

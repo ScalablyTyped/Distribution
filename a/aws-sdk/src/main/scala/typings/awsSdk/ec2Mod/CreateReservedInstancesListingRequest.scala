@@ -21,7 +21,7 @@ trait CreateReservedInstancesListingRequest extends js.Object {
   /**
     * The ID of the active Standard Reserved Instance.
     */
-  var ReservedInstancesId: String = js.native
+  var ReservedInstancesId: ReservationId = js.native
 }
 
 object CreateReservedInstancesListingRequest {
@@ -30,7 +30,7 @@ object CreateReservedInstancesListingRequest {
     ClientToken: String,
     InstanceCount: Integer,
     PriceSchedules: PriceScheduleSpecificationList,
-    ReservedInstancesId: String
+    ReservedInstancesId: ReservationId
   ): CreateReservedInstancesListingRequest = {
     val __obj = js.Dynamic.literal(ClientToken = ClientToken.asInstanceOf[js.Any], InstanceCount = InstanceCount.asInstanceOf[js.Any], PriceSchedules = PriceSchedules.asInstanceOf[js.Any], ReservedInstancesId = ReservedInstancesId.asInstanceOf[js.Any])
   

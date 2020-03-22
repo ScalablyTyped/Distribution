@@ -15,7 +15,7 @@ trait AutoMLChannel extends js.Object {
     */
   var DataSource: AutoMLDataSource = js.native
   /**
-    * The name of the target variable in supervised learning, a.k.a. ‘y’.
+    * The name of the target variable in supervised learning, a.k.a. 'y'.
     */
   var TargetAttributeName: typings.awsSdk.sagemakerMod.TargetAttributeName = js.native
 }

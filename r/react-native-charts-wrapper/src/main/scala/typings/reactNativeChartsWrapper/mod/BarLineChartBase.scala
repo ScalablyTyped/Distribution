@@ -28,7 +28,7 @@ import typings.reactNativeChartsWrapper.AnonAxisDependency
 import typings.reactNativeChartsWrapper.AnonDataIndex
 import typings.reactNativeChartsWrapper.AnonDigits
 import typings.reactNativeChartsWrapper.AnonDurationX
-import typings.reactNativeChartsWrapper.AnonLeftRight
+import typings.reactNativeChartsWrapper.AnonRight
 import typings.reactNativeChartsWrapper.AnonX
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -59,7 +59,7 @@ trait BarLineChartBase extends ChartBase {
   var syncY: js.UndefOr[Boolean] = js.undefined
   var viewPortOffsets: js.UndefOr[Offsets] = js.undefined
   var visibleRange: js.UndefOr[AnonX] = js.undefined
-  var yAxis: js.UndefOr[AnonLeftRight] = js.undefined
+  var yAxis: js.UndefOr[AnonRight] = js.undefined
   var zoom: js.UndefOr[AnonAxisDependency] = js.undefined
 }
 
@@ -157,7 +157,7 @@ object BarLineChartBase {
     viewPortOffsets: Offsets = null,
     visibleRange: AnonX = null,
     xAxis: xAxis = null,
-    yAxis: AnonLeftRight = null,
+    yAxis: AnonRight = null,
     zoom: AnonAxisDependency = null
   ): BarLineChartBase = {
     val __obj = js.Dynamic.literal()

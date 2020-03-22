@@ -1,8 +1,8 @@
 package typings.gapiClientAdsense.gapi.client.adsense
 
 import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientAdsense.AnonAccountIdAltFieldsKeyOauthtokenPrettyPrint
 import typings.gapiClientAdsense.AnonAlt
+import typings.gapiClientAdsense.AnonTree
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +17,7 @@ trait AccountsResource extends js.Object {
   var savedadstyles: SavedadstylesResource
   var urlchannels: UrlchannelsResource
   /** Get information about the selected AdSense account. */
-  def get(request: AnonAccountIdAltFieldsKeyOauthtokenPrettyPrint): Request_[Account]
+  def get(request: AnonTree): Request_[Account]
   /** List all accounts available to this AdSense account. */
   def list(request: AnonAlt): Request_[Accounts]
 }
@@ -29,7 +29,7 @@ object AccountsResource {
     adunits: AdunitsResource,
     alerts: AlertsResource,
     customchannels: CustomchannelsResource,
-    get: AnonAccountIdAltFieldsKeyOauthtokenPrettyPrint => Request_[Account],
+    get: AnonTree => Request_[Account],
     list: AnonAlt => Request_[Accounts],
     payments: PaymentsResource,
     reports: ReportsResource,

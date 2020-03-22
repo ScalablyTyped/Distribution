@@ -3,8 +3,8 @@ package typings.jupyterlabObservables.modeldbMod
 import typings.jupyterlabObservables.observablejsonMod.IObservableJSON
 import typings.jupyterlabObservables.observablestringMod.IObservableString
 import typings.jupyterlabObservables.undoablelistMod.IObservableUndoableList
-import typings.phosphorCoreutils.jsonMod.JSONValue
-import typings.phosphorDisposable.mod.IDisposable
+import typings.luminoCoreutils.jsonMod.JSONValue
+import typings.luminoDisposable.mod.IDisposable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

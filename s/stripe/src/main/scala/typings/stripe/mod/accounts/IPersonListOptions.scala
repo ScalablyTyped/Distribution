@@ -1,19 +1,19 @@
 package typings.stripe.mod.accounts
 
-import typings.stripe.AnonDirectorExecutive
+import typings.stripe.AnonExecutive
 import typings.stripe.mod.IListOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IPersonListOptions extends IListOptions {
-  var relationship: AnonDirectorExecutive
+  var relationship: AnonExecutive
 }
 
 object IPersonListOptions {
   @scala.inline
   def apply(
-    relationship: AnonDirectorExecutive,
+    relationship: AnonExecutive,
     ending_before: String = null,
     expand: js.Array[String] = null,
     include: js.Array[String] = null,

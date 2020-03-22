@@ -6,34 +6,107 @@ import scala.scalajs.js.annotation._
 
 trait AnonHeight extends js.Object {
   /**
+    * Color filled in this element.
+    *
+    *
+    * @default
+    * '#000'
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_image.style.fill
+    */
+  var fill: js.UndefOr[String] = js.undefined
+  /**
     * The height of the shape of the element.
     *
+    * More attributes in `style` (for example,
+    * [rich text](https://echarts.apache.org/en/tutorial.html#Rich%20Text)
+    * ), see the `style` related attributes in
+    * [zrender/graphic/Displayable](https://ecomfe.github.io/zrender-doc/public/api.html#zrenderdisplayable)
+    * .
     *
-    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_rect.shape.height
+    * Notice, the attribute names of the `style` of graphic
+    * elements is derived from `zrender`, which may be
+    * different from the attribute names in `echarts label`,
+    * `echarts itemStyle`, etc.,
+    * although they have the same meaning. For example:
+    *
+    * + [itemStyle.color](https://echarts.apache.org/en/option.html#series-scatter.label.color)
+    * => `style.fill`
+    * + [itemStyle.borderColor](https://echarts.apache.org/en/option.html#series-scatter.label.color)
+    * => `style.stroke`
+    * + [label.color](https://echarts.apache.org/en/option.html#series-scatter.label.color)
+    * => `style.textFill`
+    * + [label.textBorderColor](https://echarts.apache.org/en/option.html#series-scatter.label.textBorderColor)
+    * => `style.textStroke`
+    * + ...
+    *
+    *
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_image.style.height
     */
   var height: js.UndefOr[Double] = js.undefined
   /**
-    * Specify border radius of the rectangular here.
-    * Generally, `r` should be `[topLeftRadius, topRightRadius,
-    * BottomRightRadius, bottomLeftRadius]`, where each
-    * item is a number.
-    *
-    * Abbreviation is enabled, for example:
-    *
-    * + `r`: `1` means `[1, 1, 1, 1]`
-    * + `r`: `[1]` means `[1, 1, 1, 1]`
-    * + `r`: `[1, 2]` means `[1, 2, 1, 2]`
-    * + `r`: `[1, 2, 3]` means `[1, 2, 3, 2]`
+    * Specify contant of the image, can be a URL, or
+    * [dataURI](https://tools.ietf.org/html/rfc2397)
+    * .
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_rect.shape.r
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_image.style.image
     */
-  var r: js.UndefOr[js.Array[_]] = js.undefined
+  var image: js.UndefOr[String] = js.undefined
+  /**
+    * Width of stroke.
+    *
+    *
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_image.style.lineWidth
+    */
+  var lineWidth: js.UndefOr[Double] = js.undefined
+  /**
+    * Width of shadow.
+    *
+    *
+    * @default
+    * "undefined"
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_image.style.shadowBlur
+    */
+  var shadowBlur: js.UndefOr[Double] = js.undefined
+  /**
+    * color of shadow.
+    *
+    *
+    * @default
+    * "undefined"
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_image.style.shadowColor
+    */
+  var shadowColor: js.UndefOr[Double] = js.undefined
+  /**
+    * X offset of shadow.
+    *
+    *
+    * @default
+    * "undefined"
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_image.style.shadowOffsetX
+    */
+  var shadowOffsetX: js.UndefOr[Double] = js.undefined
+  /**
+    * Y offset of shadow.
+    *
+    *
+    * @default
+    * "undefined"
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_image.style.shadowOffsetY
+    */
+  var shadowOffsetY: js.UndefOr[Double] = js.undefined
+  /**
+    * Color of stroke.
+    *
+    *
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_image.style.stroke
+    */
+  var stroke: js.UndefOr[String] = js.undefined
   /**
     * The width of the shape of the element.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_rect.shape.width
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_image.style.width
     */
   var width: js.UndefOr[Double] = js.undefined
   /**
@@ -41,7 +114,7 @@ trait AnonHeight extends js.Object {
     * in the coordinate system of its parent.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_rect.shape.x
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_image.style.x
     */
   var x: js.UndefOr[Double] = js.undefined
   /**
@@ -49,7 +122,7 @@ trait AnonHeight extends js.Object {
     * in the coordinate system of its parent.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_rect.shape.y
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_image.style.y
     */
   var y: js.UndefOr[Double] = js.undefined
 }
@@ -57,15 +130,29 @@ trait AnonHeight extends js.Object {
 object AnonHeight {
   @scala.inline
   def apply(
+    fill: String = null,
     height: Int | Double = null,
-    r: js.Array[_] = null,
+    image: String = null,
+    lineWidth: Int | Double = null,
+    shadowBlur: Int | Double = null,
+    shadowColor: Int | Double = null,
+    shadowOffsetX: Int | Double = null,
+    shadowOffsetY: Int | Double = null,
+    stroke: String = null,
     width: Int | Double = null,
     x: Int | Double = null,
     y: Int | Double = null
   ): AnonHeight = {
     val __obj = js.Dynamic.literal()
+    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (r != null) __obj.updateDynamic("r")(r.asInstanceOf[js.Any])
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
+    if (shadowBlur != null) __obj.updateDynamic("shadowBlur")(shadowBlur.asInstanceOf[js.Any])
+    if (shadowColor != null) __obj.updateDynamic("shadowColor")(shadowColor.asInstanceOf[js.Any])
+    if (shadowOffsetX != null) __obj.updateDynamic("shadowOffsetX")(shadowOffsetX.asInstanceOf[js.Any])
+    if (shadowOffsetY != null) __obj.updateDynamic("shadowOffsetY")(shadowOffsetY.asInstanceOf[js.Any])
+    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
     if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])

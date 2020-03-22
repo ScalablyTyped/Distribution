@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "swagger-tools"
-version := "0.10-dt-20180214Z-051538"
+version := "0.10-dt-20180214Z-1f56f6"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20191217Z-07dbf2",
-  "org.scalablytyped" %%% "node" % "13.7-dt-20200211Z-d6af7e",
-  "org.scalablytyped" %%% "std" % "3.7-1b8369")
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20191217Z-058a79",
+  "org.scalablytyped" %%% "node" % "13.7-dt-20200211Z-b30bde",
+  "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -25,13 +25,13 @@ trait ModifyInstanceMetadataOptionsRequest extends js.Object {
   /**
     * The ID of the instance.
     */
-  var InstanceId: String = js.native
+  var InstanceId: typings.awsSdk.ec2Mod.InstanceId = js.native
 }
 
 object ModifyInstanceMetadataOptionsRequest {
   @scala.inline
   def apply(
-    InstanceId: String,
+    InstanceId: InstanceId,
     DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     HttpEndpoint: InstanceMetadataEndpointState = null,
     HttpPutResponseHopLimit: Int | scala.Double = null,

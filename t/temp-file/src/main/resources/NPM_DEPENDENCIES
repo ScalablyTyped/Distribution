@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "temp-file" : "3.3.4"
+      "temp-file" : "3.3.6"
     }
   ],
   "test-dependencies" : [
     {
-      "temp-file" : "3.3.4"
+      "temp-file" : "3.3.6"
     }
   ],
   "compile-devDependencies" : [

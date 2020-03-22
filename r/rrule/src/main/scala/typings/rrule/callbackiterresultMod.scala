@@ -1,10 +1,8 @@
 package typings.rrule
 
-import typings.rrule.iterresultMod.IterArgs
 import typings.rrule.rruleStrings.all
 import typings.rrule.rruleStrings.between
 import typings.std.Date
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,8 +18,8 @@ object callbackiterresultMod extends js.Object {
   
   @js.native
   class default protected () extends CallbackIterResult {
-    def this(method: all, args: Partial[IterArgs], iterator: Iterator) = this()
-    def this(method: between, args: Partial[IterArgs], iterator: Iterator) = this()
+    def this(method: all, args: PartialIterArgs, iterator: Iterator) = this()
+    def this(method: between, args: PartialIterArgs, iterator: Iterator) = this()
   }
   
   type Iterator = js.Function2[/* d */ Date, /* len */ Double, Boolean]

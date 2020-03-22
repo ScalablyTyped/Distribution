@@ -1,8 +1,8 @@
 package typings.instagramPrivateApi.mediaConfigureToIgtvOptionsMod
 
-import typings.instagramPrivateApi.Anon3
-import typings.instagramPrivateApi.AnonAndroidreleaseAndroidversion
+import typings.instagramPrivateApi.AnonAndroidversion
 import typings.instagramPrivateApi.AnonCropbottom
+import typings.instagramPrivateApi.AnonLengthSourcetype
 import typings.instagramPrivateApi.AnonNumreupload
 import typings.instagramPrivateApi.AnonSourceheight
 import typings.instagramPrivateApi.instagramPrivateApiStrings.`0`
@@ -16,9 +16,9 @@ import scala.scalajs.js.annotation._
 trait MediaConfigureToIgtvOptions extends js.Object {
   var audio_muted: js.UndefOr[Boolean] = js.undefined
   var caption: js.UndefOr[String] = js.undefined
-  var clips: js.UndefOr[js.Array[Anon3]] = js.undefined
+  var clips: js.UndefOr[js.Array[AnonLengthSourcetype]] = js.undefined
   var date_time_original: js.UndefOr[String] = js.undefined
-  var device: js.UndefOr[AnonAndroidreleaseAndroidversion] = js.undefined
+  var device: js.UndefOr[AnonAndroidversion] = js.undefined
   var extra: AnonSourceheight
   var feed_preview_crop: js.UndefOr[AnonCropbottom | String] = js.undefined
   var filter_type: js.UndefOr[String] = js.undefined
@@ -42,9 +42,9 @@ object MediaConfigureToIgtvOptions {
     upload_id: String,
     audio_muted: js.UndefOr[Boolean] = js.undefined,
     caption: String = null,
-    clips: js.Array[Anon3] = null,
+    clips: js.Array[AnonLengthSourcetype] = null,
     date_time_original: String = null,
-    device: AnonAndroidreleaseAndroidversion = null,
+    device: AnonAndroidversion = null,
     feed_preview_crop: AnonCropbottom | String = null,
     filter_type: String = null,
     igtv_share_preview_to_feed: `1` | `0` = null,

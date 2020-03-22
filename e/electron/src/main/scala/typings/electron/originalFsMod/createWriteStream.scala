@@ -1,6 +1,6 @@
 package typings.electron.originalFsMod
 
-import typings.node.AnonAutoCloseEmitClose
+import typings.node.AnonEmitClose
 import typings.node.fsMod.PathLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,6 +16,6 @@ object createWriteStream extends js.Object {
     */
   def apply(path: PathLike): typings.node.fsMod.WriteStream = js.native
   def apply(path: PathLike, options: String): typings.node.fsMod.WriteStream = js.native
-  def apply(path: PathLike, options: AnonAutoCloseEmitClose): typings.node.fsMod.WriteStream = js.native
+  def apply(path: PathLike, options: AnonEmitClose): typings.node.fsMod.WriteStream = js.native
 }
 

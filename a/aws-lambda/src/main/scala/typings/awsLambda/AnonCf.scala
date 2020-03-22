@@ -1,17 +1,16 @@
 package typings.awsLambda
 
-import typings.awsLambda.cloudfrontMod.CloudFrontEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonCf extends js.Object {
-  var cf: CloudFrontEvent with AnonRequest
+  var cf: CloudFrontEventrequestClo
 }
 
 object AnonCf {
   @scala.inline
-  def apply(cf: CloudFrontEvent with AnonRequest): AnonCf = {
+  def apply(cf: CloudFrontEventrequestClo): AnonCf = {
     val __obj = js.Dynamic.literal(cf = cf.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AnonCf]

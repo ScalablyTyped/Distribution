@@ -35,10 +35,11 @@ trait System extends js.Object {
   ] = js.native
   var useCaseSensitiveFileNames: Boolean = js.native
   var watchDirectory: js.UndefOr[
-    js.Function3[
+    js.Function4[
       /* path */ java.lang.String, 
       /* callback */ DirectoryWatcherCallback, 
       /* recursive */ js.UndefOr[Boolean], 
+      /* options */ js.UndefOr[WatchOptions], 
       FileWatcher
     ]
   ] = js.native
@@ -47,10 +48,11 @@ trait System extends js.Object {
     * use native OS file watching
     */
   var watchFile: js.UndefOr[
-    js.Function3[
+    js.Function4[
       /* path */ java.lang.String, 
       /* callback */ FileWatcherCallback, 
       /* pollingInterval */ js.UndefOr[Double], 
+      /* options */ js.UndefOr[WatchOptions], 
       FileWatcher
     ]
   ] = js.native

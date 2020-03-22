@@ -1,6 +1,6 @@
 package typings.antDesignReactNative.inputNumberMod
 
-import typings.antDesignReactNative.AnonContainerDisabledStepTextColor
+import typings.antDesignReactNative.AnonDisabledStepTextColor
 import typings.antDesignReactNative.libStyleMod.Theme
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
@@ -27,7 +27,7 @@ trait InputNumberProps extends js.Object {
   var readOnly: js.UndefOr[Boolean] = js.undefined
   var step: js.UndefOr[String | Double] = js.undefined
   var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
-  var styles: ReturnType[js.Function1[/* theme */ Theme, AnonContainerDisabledStepTextColor]]
+  var styles: ReturnType[js.Function1[/* theme */ Theme, AnonDisabledStepTextColor]]
   var upStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   var value: js.UndefOr[Double] = js.undefined
 }
@@ -35,7 +35,7 @@ trait InputNumberProps extends js.Object {
 object InputNumberProps {
   @scala.inline
   def apply(
-    styles: ReturnType[js.Function1[/* theme */ Theme, AnonContainerDisabledStepTextColor]],
+    styles: ReturnType[js.Function1[/* theme */ Theme, AnonDisabledStepTextColor]],
     autoFocus: js.UndefOr[Boolean] = js.undefined,
     defaultValue: Int | Double = null,
     disabled: js.UndefOr[Boolean] = js.undefined,

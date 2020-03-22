@@ -1,7 +1,7 @@
 package typings.monacoEditor.mod
 
 import typings.monacoEditor.AnonAuthority
-import typings.monacoEditor.AnonAuthorityFragment
+import typings.monacoEditor.AnonFragment
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,6 +13,12 @@ class Uri () extends UriComponents {
   override var authority: String = js.native
   /* CompleteClass */
   override var fragment: String = js.native
+  /* CompleteClass */
+  override var path: String = js.native
+  /* CompleteClass */
+  override var query: String = js.native
+  /* CompleteClass */
+  override var scheme: String = js.native
   /**
     * Returns a string representing the corresponding file system path of this Uri.
     * Will handle UNC paths, normalizes windows drive letters to lower-case, and uses the
@@ -37,13 +43,7 @@ class Uri () extends UriComponents {
     * namely the server name, would be missing. Therefore `Uri#fsPath` exists - it's sugar to ease working
     * with URIs that represent files on disk (`file` scheme).
     */
-  val fsPath: String = js.native
-  /* CompleteClass */
-  override var path: String = js.native
-  /* CompleteClass */
-  override var query: String = js.native
-  /* CompleteClass */
-  override var scheme: String = js.native
+  def fsPath(): String = js.native
   def toJSON(): UriComponents = js.native
   def toString(skipEncoding: Boolean): String = js.native
   def `with`(change: AnonAuthority): Uri = js.native
@@ -75,7 +75,7 @@ object Uri extends js.Object {
     * @param path A file system path (see `Uri#fsPath`)
     */
   def file(path: String): Uri = js.native
-  def from(components: AnonAuthorityFragment): Uri = js.native
+  def from(components: AnonFragment): Uri = js.native
   def isUri(thing: js.Any): /* is monaco-editor.monaco-editor.Uri */ Boolean = js.native
   /**
     * Creates a new Uri from a string, e.g. `http://www.msft.com/some/path`,

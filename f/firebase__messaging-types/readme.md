@@ -1,7 +1,7 @@
 
 # Scala.js typings for firebase__messaging-types
 
-Typings are for version 0.4.2
+Typings are for version 0.4.3
 
 ## Library description:
 @firebase/messaging Types

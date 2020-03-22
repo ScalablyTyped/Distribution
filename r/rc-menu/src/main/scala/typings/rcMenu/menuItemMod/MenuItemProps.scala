@@ -1,7 +1,7 @@
 package typings.rcMenu.menuItemMod
 
-import typings.rcMenu.AnonDomEventKey
 import typings.rcMenu.AnonHover
+import typings.rcMenu.AnonKey
 import typings.rcMenu.interfaceMod.DestroyEventHandler
 import typings.rcMenu.interfaceMod.HoverEventHandler
 import typings.rcMenu.interfaceMod.LegacyFunctionRef
@@ -12,6 +12,8 @@ import typings.rcMenu.interfaceMod.MenuMode
 import typings.rcMenu.interfaceMod.RenderIconType
 import typings.rcMenu.interfaceMod.SelectEventHandler
 import typings.rcMenu.interfaceMod.SelectInfo
+import typings.rcMenu.rcMenuStrings.ltr
+import typings.rcMenu.rcMenuStrings.rtl
 import typings.react.mod.CSSProperties
 import typings.react.mod.Key
 import typings.react.mod.ReactInstance
@@ -27,6 +29,7 @@ trait MenuItemProps extends js.Object {
   var attribute: js.UndefOr[Record[String, String]] = js.undefined
   var children: js.UndefOr[ReactNode] = js.undefined
   var className: js.UndefOr[String] = js.undefined
+  var direction: js.UndefOr[ltr | rtl] = js.undefined
   var disabled: js.UndefOr[Boolean] = js.undefined
   var eventKey: js.UndefOr[Key] = js.undefined
   var inlineIndent: js.UndefOr[Double] = js.undefined
@@ -58,6 +61,7 @@ object MenuItemProps {
     attribute: Record[String, String] = null,
     children: ReactNode = null,
     className: String = null,
+    direction: ltr | rtl = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     eventKey: Key = null,
     inlineIndent: Int | Double = null,
@@ -71,8 +75,8 @@ object MenuItemProps {
     onDeselect: /* info */ SelectInfo => Unit = null,
     onDestroy: /* key */ Key => Unit = null,
     onItemHover: /* info */ AnonHover => Unit = null,
-    onMouseEnter: /* info */ AnonDomEventKey => Unit = null,
-    onMouseLeave: /* info */ AnonDomEventKey => Unit = null,
+    onMouseEnter: /* info */ AnonKey => Unit = null,
+    onMouseLeave: /* info */ AnonKey => Unit = null,
     onSelect: /* info */ SelectInfo => Unit = null,
     parentMenu: ReactInstance = null,
     role: String = null,
@@ -86,6 +90,7 @@ object MenuItemProps {
     if (attribute != null) __obj.updateDynamic("attribute")(attribute.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
     if (eventKey != null) __obj.updateDynamic("eventKey")(eventKey.asInstanceOf[js.Any])
     if (inlineIndent != null) __obj.updateDynamic("inlineIndent")(inlineIndent.asInstanceOf[js.Any])

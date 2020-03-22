@@ -1,8 +1,8 @@
 package typings.dockerode.mod
 
 import typings.dockerode.AnonDriverConfig
-import typings.dockerode.AnonMode
 import typings.dockerode.AnonPropagation
+import typings.dockerode.AnonSizeBytes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ trait MountSettings extends js.Object {
   var ReadOnly: js.UndefOr[Boolean] = js.undefined
   var Source: String
   var Target: String
-  var TmpfsOptions: js.UndefOr[AnonMode] = js.undefined
+  var TmpfsOptions: js.UndefOr[AnonSizeBytes] = js.undefined
   var Type: MountType
   var VolumeOptions: js.UndefOr[AnonDriverConfig] = js.undefined
 }
@@ -27,7 +27,7 @@ object MountSettings {
     BindOptions: AnonPropagation = null,
     Consistency: MountConsistency = null,
     ReadOnly: js.UndefOr[Boolean] = js.undefined,
-    TmpfsOptions: AnonMode = null,
+    TmpfsOptions: AnonSizeBytes = null,
     VolumeOptions: AnonDriverConfig = null
   ): MountSettings = {
     val __obj = js.Dynamic.literal(Source = Source.asInstanceOf[js.Any], Target = Target.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])

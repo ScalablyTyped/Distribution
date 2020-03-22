@@ -1,9 +1,9 @@
 package typings.kiiCloudSdk.KiiCloud
 
-import typings.kiiCloudSdk.AnonErrorFailure
-import typings.kiiCloudSdk.AnonErrorFailureResponse
-import typings.kiiCloudSdk.AnonErrorFailureResponseSuccess
-import typings.kiiCloudSdk.AnonErrorFailureResponseSuccessAny
+import typings.kiiCloudSdk.Anon19
+import typings.kiiCloudSdk.Anon2
+import typings.kiiCloudSdk.Anon20
+import typings.kiiCloudSdk.Anon21
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -51,7 +51,7 @@ class KiiPushInstallation () extends js.Object {
     *
     */
   def getMqttEndpoint(installationID: String): js.Promise[KiiMqttEndpoint] = js.native
-  def getMqttEndpoint(installationID: String, callbacks: AnonErrorFailureResponseSuccessAny): js.Promise[KiiMqttEndpoint] = js.native
+  def getMqttEndpoint(installationID: String, callbacks: Anon21): js.Promise[KiiMqttEndpoint] = js.native
   /**
     * Register the id issued by GCM to the Kii cloud for current logged in user.
     *
@@ -77,7 +77,7 @@ class KiiPushInstallation () extends js.Object {
     *
     */
   def installGcm(installationRegistrationID: String, development: Boolean): js.Promise[KiiGcmInstallationResponse] = js.native
-  def installGcm(installationRegistrationID: String, development: Boolean, callbacks: AnonErrorFailureResponse): js.Promise[KiiGcmInstallationResponse] = js.native
+  def installGcm(installationRegistrationID: String, development: Boolean, callbacks: Anon19): js.Promise[KiiGcmInstallationResponse] = js.native
   /**
     * Register a MQTT installation to the Kii cloud for current logged in user.
     *
@@ -103,7 +103,7 @@ class KiiPushInstallation () extends js.Object {
     *
     */
   def installMqtt(development: Boolean): js.Promise[KiiMqttInstallationResponse] = js.native
-  def installMqtt(development: Boolean, callbacks: AnonErrorFailureResponseSuccess): js.Promise[KiiMqttInstallationResponse] = js.native
+  def installMqtt(development: Boolean, callbacks: Anon20): js.Promise[KiiMqttInstallationResponse] = js.native
   /**
     * Unregister the push settings by the id(issued by push provider) that is used for installation.
     *
@@ -125,7 +125,7 @@ class KiiPushInstallation () extends js.Object {
     *
     */
   def uninstall(installationRegistrationID: String, deviceType: String): js.Promise[Unit] = js.native
-  def uninstall(installationRegistrationID: String, deviceType: String, callbacks: AnonErrorFailure): js.Promise[Unit] = js.native
+  def uninstall(installationRegistrationID: String, deviceType: String, callbacks: Anon2): js.Promise[Unit] = js.native
   /**
     * Unregister the push settings by the id(issued by KiiCloud) that is used for installation.
     *
@@ -146,6 +146,6 @@ class KiiPushInstallation () extends js.Object {
     *
     */
   def uninstallByInstallationID(installationID: String): js.Promise[Unit] = js.native
-  def uninstallByInstallationID(installationID: String, callbacks: AnonErrorFailure): js.Promise[Unit] = js.native
+  def uninstallByInstallationID(installationID: String, callbacks: Anon2): js.Promise[Unit] = js.native
 }
 

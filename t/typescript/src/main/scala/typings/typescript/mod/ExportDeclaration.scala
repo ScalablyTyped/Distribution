@@ -10,7 +10,8 @@ trait ExportDeclaration
      with JSDocContainer
      with _HasJSDoc {
   /** Will not be assigned in the case of `export * from "foo";` */
-  var exportClause: js.UndefOr[NamedExports] = js.native
+  var exportClause: js.UndefOr[NamedExportBindings] = js.native
+  var isTypeOnly: Boolean = js.native
   @JSName("kind")
   var kind_ExportDeclaration: typings.typescript.mod.SyntaxKind.ExportDeclaration = js.native
   /** If this is not a StringLiteral it will be a grammar error. */

@@ -1,7 +1,7 @@
 package typings.hapiWreck.mod.Client
 
 import typings.hapiBoom.mod.Boom
-import typings.hapiWreck.AnonReqRes
+import typings.hapiWreck.AnonReq
 import typings.hapiWreck.hapiWreckStrings.preRequest
 import typings.hapiWreck.hapiWreckStrings.response
 import typings.node.eventsMod.EventEmitter
@@ -46,6 +46,6 @@ trait Events extends EventEmitter {
 object Events extends js.Object {
   type preRequest = js.Function2[/* uri */ String, /* options */ Options, Unit]
   type request = js.Function1[/* req */ ClientRequest, Unit]
-  type response = js.Function2[/* err */ js.UndefOr[Boom[js.Any]], /* details */ AnonReqRes, Unit]
+  type response = js.Function2[/* err */ js.UndefOr[Boom[js.Any]], /* details */ AnonReq, Unit]
 }
 

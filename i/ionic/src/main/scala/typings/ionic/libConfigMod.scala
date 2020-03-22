@@ -1,6 +1,7 @@
 package typings.ionic
 
 import typings.ionic.definitionsMod.CommandMetadataOption
+import typings.ionic.definitionsMod.ConfigFile
 import typings.ionic.definitionsMod.IConfig
 import typings.ionic.ionicStrings.configDotjson
 import typings.ionicCliFramework.configMod.BaseConfigOptions
@@ -16,6 +17,7 @@ object libConfigMod extends js.Object {
   class Config protected () extends IConfig {
     def this(p: String) = this()
     def this(p: String, options: BaseConfigOptions) = this()
+    def provideDefaults(config: PartialConfigFile): ConfigFile = js.native
   }
   
   val CONFIG_FILE: configDotjson = js.native

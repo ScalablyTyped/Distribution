@@ -1,6 +1,6 @@
 package typings.fabric.fabricImplMod
 
-import typings.fabric.AnonBlBrTl
+import typings.fabric.AnonTl
 import typings.std.CanvasRenderingContext2D
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -143,7 +143,7 @@ trait IStaticCanvasOptions extends js.Object {
   	 * The coordinates get updated with @method calcViewportBoundaries.
   	 * @memberOf fabric.StaticCanvas.prototype
   	 */
-  var vptCoords: js.UndefOr[AnonBlBrTl] = js.undefined
+  var vptCoords: js.UndefOr[AnonTl] = js.undefined
 }
 
 object IStaticCanvasOptions {
@@ -167,7 +167,7 @@ object IStaticCanvasOptions {
     stateful: js.UndefOr[Boolean] = js.undefined,
     svgViewportTransformation: js.UndefOr[Boolean] = js.undefined,
     viewportTransform: js.Array[Double] = null,
-    vptCoords: AnonBlBrTl = null
+    vptCoords: AnonTl = null
   ): IStaticCanvasOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(allowTouchScrolling)) __obj.updateDynamic("allowTouchScrolling")(allowTouchScrolling.asInstanceOf[js.Any])

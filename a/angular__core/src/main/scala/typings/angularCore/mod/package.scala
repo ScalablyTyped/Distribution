@@ -87,7 +87,7 @@ package object mod {
     */
   type ExpandoInstructions = js.Array[scala.Double | typings.angularCore.mod.HostBindingsFunction[js.Any] | scala.Null]
   type ForwardRefFn = js.Function0[js.Any]
-  type GlobalTargetResolver = js.Function1[/* element */ js.Any, typings.angularCore.AnonNameTargetEventTarget]
+  type GlobalTargetResolver = js.Function1[/* element */ js.Any, typings.angularCore.AnonNameGlobalTargetName]
   /**
     * Array of hooks that should be executed for a view and their directive indices.
     *
@@ -101,12 +101,7 @@ package object mod {
     *  - a negative directive index flags an init hook (ngOnInit, ngAfterContentInit, ngAfterViewInit)
     */
   type HookData = js.Array[scala.Double | js.Function0[scala.Unit]]
-  type HostBindingsFunction[T] = js.Function3[
-    /* rf */ typings.angularCore.mod.ɵRenderFlags, 
-    /* ctx */ T, 
-    /* elementIndex */ scala.Double, 
-    scala.Unit
-  ]
+  type HostBindingsFunction[T] = js.Function2[/* rf */ typings.angularCore.mod.ɵRenderFlags, /* ctx */ T, scala.Unit]
   /** See CreateComponentOptions.hostFeatures */
   type HostFeature = js.Function2[
     /* component */ js.Any, 
@@ -206,10 +201,10 @@ package object mod {
     * Assume
     * ```ts
     *   if (rf & RenderFlags.Update) {
-    *    i18nExp(bind(ctx.exp1)); // If changed set mask bit 1
-    *    i18nExp(bind(ctx.exp2)); // If changed set mask bit 2
-    *    i18nExp(bind(ctx.exp3)); // If changed set mask bit 3
-    *    i18nExp(bind(ctx.exp4)); // If changed set mask bit 4
+    *    i18nExp(ctx.exp1); // If changed set mask bit 1
+    *    i18nExp(ctx.exp2); // If changed set mask bit 2
+    *    i18nExp(ctx.exp3); // If changed set mask bit 3
+    *    i18nExp(ctx.exp4); // If changed set mask bit 4
     *    i18nApply(0);            // Apply all changes by executing the OpCodes.
     *  }
     * ```
@@ -299,7 +294,7 @@ package object mod {
     */
   type LocalRefExtractor = js.Function2[
     /* tNode */ typings.angularCore.mod.TNodeWithLocalRefs, 
-    /* currentView */ typings.angularCore.mod.ɵangularPackagesCoreCoreBj, 
+    /* currentView */ typings.angularCore.mod.ɵangularPackagesCoreCoreBo, 
     js.Any
   ]
   type NgIterable[T] = js.Array[T] | typings.std.Iterable[T]
@@ -342,10 +337,9 @@ package object mod {
     * Store the runtime input or output names for all the directives.
     *
     * i+0: directive instance index
-    * i+1: publicName
-    * i+2: privateName
+    * i+1: privateName
     *
-    * e.g. [0, 'change', 'change-minified']
+    * e.g. [0, 'change-minified']
     */
   type PropertyAliasValue = js.Array[scala.Double | java.lang.String]
   /**
@@ -378,7 +372,6 @@ package object mod {
     /* propName */ js.UndefOr[java.lang.String], 
     java.lang.String
   ]
-  type Scope = js.Function1[/* repeated */ js.Any, js.Any]
   type SimpleChanges = org.scalablytyped.runtime.StringDictionary[typings.angularCore.mod.SimpleChange]
   /* Rewritten from type alias, can be one of: 
     - typings.angularCore.mod.ValueProvider
@@ -398,7 +391,7 @@ package object mod {
     */
   type StyleSanitizeFn = js.Function3[
     /* prop */ java.lang.String, 
-    /* value */ java.lang.String | scala.Null, 
+    /* value */ java.lang.String | typings.angularCore.mod.ɵSafeValue | scala.Null, 
     /* mode */ js.UndefOr[typings.angularCore.mod.StyleSanitizeMode], 
     js.Any
   ]
@@ -411,6 +404,12 @@ package object mod {
   type TAttributes = js.Array[
     java.lang.String | typings.angularCore.mod.ɵAttributeMarker | typings.angularCore.mod.CssSelector
   ]
+  /**
+    * Constants that are associated with a view. Includes:
+    * - Attribute arrays.
+    * - Local definition arrays.
+    */
+  type TConstants = js.Array[typings.angularCore.mod.TAttributes | java.lang.String]
   /**
     * Static data that corresponds to the instance-specific data array on an LView.
     *
@@ -439,15 +438,87 @@ package object mod {
     * Injector bloom filters are also stored here.
     */
   type TData = js.Array[
-    typings.angularCore.mod.TNode | typings.angularCore.mod.ɵPipeDef[js.Any] | typings.angularCore.mod.ɵDirectiveDef[js.Any] | typings.angularCore.mod.ɵComponentDef[js.Any] | scala.Double | typings.angularCore.mod.Type[js.Any] | typings.angularCore.mod.InjectionToken[js.Any] | typings.angularCore.mod.TI18n | typings.angularCore.mod.I18nUpdateOpCodes | scala.Null | java.lang.String
+    typings.angularCore.mod.TNode | typings.angularCore.mod.ɵPipeDef[js.Any] | typings.angularCore.mod.ɵDirectiveDef[js.Any] | typings.angularCore.mod.ɵComponentDef[js.Any] | scala.Double | typings.angularCore.mod.TStylingRange | typings.angularCore.mod.TStylingKey | typings.angularCore.mod.Type[js.Any] | typings.angularCore.mod.InjectionToken[js.Any] | typings.angularCore.mod.TI18n | typings.angularCore.mod.I18nUpdateOpCodes | scala.Null | java.lang.String
   ]
-  type TrackByFunction[T] = js.Function2[/* index */ scala.Double, /* item */ T, js.Any]
   /**
-    * Tsickle has a bug where it creates an infinite loop for a function returning itself.
-    * This is a temporary type that will be removed when the issue is resolved.
-    * https://github.com/angular/tsickle/issues/1009)
+    * Value stored in the `TData` which is needed to re-concatenate the styling.
+    *
+    * See: `TStylingKeyPrimitive` and `TStylingStatic`
     */
-  type TsickleIssue1009 = js.Any
+  type TStylingKey = typings.angularCore.mod.TStylingKeyPrimitive | typings.angularCore.mod.TStylingStatic
+  /**
+    * The primitive portion (`TStylingStatic` removed) of the value stored in the `TData` which is
+    * needed to re-concatenate the styling.
+    *
+    * - `string`: Stores the property name. Used with `ɵɵstyleProp`/`ɵɵclassProp` instruction.
+    * - `null`: Represents map, so there is no name. Used with `ɵɵstyleMap`/`ɵɵclassMap`.
+    * - `false`: Represents an ignore case. This happens when `ɵɵstyleProp`/`ɵɵclassProp` instruction
+    *   is combined with directive which shadows its input `@Input('class')`. That way the binding
+    *   should not participate in the styling resolution.
+    */
+  type TStylingKeyPrimitive = java.lang.String | scala.Null | typings.angularCore.angularCoreBooleans.`false`
+  /**
+    * Store the static values for the styling binding.
+    *
+    * The `TStylingStatic` is just `KeyValueArray` where key `""` (stored at location 0) contains the
+    * `TStylingKey` (stored at location 1). In other words this wraps the `TStylingKey` such that the
+    * `""` contains the wrapped value.
+    *
+    * When instructions are resolving styling they may need to look forward or backwards in the linked
+    * list to resolve the value. For this reason we have to make sure that he linked list also contains
+    * the static values. However the list only has space for one item per styling instruction. For this
+    * reason we store the static values here as part of the `TStylingKey`. This means that the
+    * resolution function when looking for a value needs to first look at the binding value, and than
+    * at `TStylingKey` (if it exists).
+    *
+    * Imagine we have:
+    *
+    * ```
+    * <div class="TEMPLATE" my-dir>
+    *
+    * @Directive({
+    *   host: {
+    *     class: 'DIR',
+    *     '[class.dynamic]': 'exp' // ɵɵclassProp('dynamic', ctx.exp);
+    *   }
+    * })
+    * ```
+    *
+    * In the above case the linked list will contain one item:
+    *
+    * ```
+    *   // assume binding location: 10 for `ɵɵclassProp('dynamic', ctx.exp);`
+    *   tData[10] = <TStylingStatic>[
+    *     '': 'dynamic', // This is the wrapped value of `TStylingKey`
+    *     'DIR': true,   // This is the default static value of directive binding.
+    *   ];
+    *   tData[10 + 1] = 0; // We don't have prev/next.
+    *
+    *   lView[10] = undefined;     // assume `ctx.exp` is `undefined`
+    *   lView[10 + 1] = undefined; // Just normalized `lView[10]`
+    * ```
+    *
+    * So when the function is resolving styling value, it first needs to look into the linked list
+    * (there is none) and than into the static `TStylingStatic` too see if there is a default value for
+    * `dynamic` (there is not). Therefore it is safe to remove it.
+    *
+    * If setting `true` case:
+    * ```
+    *   lView[10] = true;     // assume `ctx.exp` is `true`
+    *   lView[10 + 1] = true; // Just normalized `lView[10]`
+    * ```
+    * So when the function is resolving styling value, it first needs to look into the linked list
+    * (there is none) and than into `TNode.residualClass` (TNode.residualStyle) which contains
+    * ```
+    *   tNode.residualClass = [
+    *     'TEMPLATE': true,
+    *   ];
+    * ```
+    *
+    * This means that it is safe to add class.
+    */
+  type TStylingStatic = typings.angularCore.mod.KeyValueArray[js.Any]
+  type TrackByFunction[T] = js.Function2[/* index */ scala.Double, /* item */ T, js.Any]
   type TypeProvider = typings.angularCore.mod.Type[js.Any]
   type ViewChild = typings.angularCore.mod.Query
   type ViewChildren = typings.angularCore.mod.Query
@@ -467,14 +538,19 @@ package object mod {
     /* view */ typings.angularCore.mod.ViewData, 
     scala.Unit
   ]
-  type WtfScopeFn = js.Function2[/* arg0 */ js.UndefOr[js.Any], /* arg1 */ js.UndefOr[js.Any], js.Any]
   type viewEngineChangeDetectorRefInterface = typings.angularCore.mod.ChangeDetectorRef
   type ɵCssSelectorList = js.Array[typings.angularCore.mod.CssSelector]
   type ɵGetterFn = js.Function1[/* obj */ js.Any, js.Any]
   type ɵMethodFn = js.Function2[/* obj */ js.Any, /* args */ js.Array[js.Any], js.Any]
+  type ɵSafeHtml = typings.angularCore.mod.ɵSafeValue
+  type ɵSafeResourceUrl = typings.angularCore.mod.ɵSafeValue
+  type ɵSafeScript = typings.angularCore.mod.ɵSafeValue
+  type ɵSafeStyle = typings.angularCore.mod.ɵSafeValue
+  type ɵSafeUrl = typings.angularCore.mod.ɵSafeValue
   type ɵSetterFn = js.Function2[/* obj */ js.Any, /* value */ js.Any, scala.Unit]
   type ɵɵComponentDefWithMeta[T, Selector /* <: java.lang.String */, ExportAs /* <: js.Array[java.lang.String] */, InputMap /* <: org.scalablytyped.runtime.StringDictionary[java.lang.String] */, OutputMap /* <: org.scalablytyped.runtime.StringDictionary[java.lang.String] */, QueryFields /* <: js.Array[java.lang.String] */] = typings.angularCore.mod.ɵComponentDef[T]
   type ɵɵDirectiveDefWithMeta[T, Selector /* <: java.lang.String */, ExportAs /* <: js.Array[java.lang.String] */, InputMap /* <: org.scalablytyped.runtime.StringDictionary[java.lang.String] */, OutputMap /* <: org.scalablytyped.runtime.StringDictionary[java.lang.String] */, QueryFields /* <: js.Array[java.lang.String] */] = typings.angularCore.mod.ɵDirectiveDef[T]
+  type ɵɵFactoryDef[T] = js.Function0[T]
   type ɵɵNgModuleDefWithMeta[T, Declarations, Imports, Exports] = typings.angularCore.mod.ɵNgModuleDef[T]
   type ɵɵPipeDefWithMeta[T, Name /* <: java.lang.String */] = typings.angularCore.mod.ɵPipeDef[T]
 }

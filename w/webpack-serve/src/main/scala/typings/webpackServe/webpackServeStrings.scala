@@ -6,9 +6,6 @@ import scala.scalajs.js.annotation._
 
 object webpackServeStrings {
   @js.native
-  sealed trait OnOptions extends js.Object
-  
-  @js.native
   sealed trait `build-finished` extends js.Object
   
   @js.native
@@ -47,8 +44,6 @@ object webpackServeStrings {
   @js.native
   sealed trait warn extends js.Object
   
-  @scala.inline
-  def OnOptions: OnOptions = "OnOptions".asInstanceOf[OnOptions]
   @scala.inline
   def `build-finished`: `build-finished` = "build-finished".asInstanceOf[`build-finished`]
   @scala.inline

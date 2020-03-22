@@ -1,6 +1,7 @@
 package typings.cypress.cypressMod
 
-import typings.std.Partial
+import typings.cypress.PartialCypressOpenOptions
+import typings.cypress.PartialCypressRunOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,7 +23,7 @@ trait CypressNpmApi extends js.Object {
     * @see https://on.cypress.io/module-api#cypress-open
     */
   def open(): js.Promise[Unit] = js.native
-  def open(options: Partial[CypressOpenOptions]): js.Promise[Unit] = js.native
+  def open(options: PartialCypressOpenOptions): js.Promise[Unit] = js.native
   /**
     * Execute a headless Cypress test run.
     * @see https://on.cypress.io/module-api#cypress-run
@@ -38,6 +39,6 @@ trait CypressNpmApi extends js.Object {
     ```
     */
   def run(): js.Promise[CypressRunResult] = js.native
-  def run(options: Partial[CypressRunOptions]): js.Promise[CypressRunResult] = js.native
+  def run(options: PartialCypressRunOptions): js.Promise[CypressRunResult] = js.native
 }
 

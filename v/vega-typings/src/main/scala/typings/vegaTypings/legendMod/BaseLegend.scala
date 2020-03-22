@@ -234,7 +234,7 @@ trait BaseLegend extends js.Object {
     *
     * __Default value:__ `"circle"`.
     */
-  var symbolType: js.UndefOr[SymbolShapeValue] = js.undefined
+  var symbolType: js.UndefOr[SymbolShapeValue | SignalRef] = js.undefined
   /**
     * The desired number of tick values for quantitative legends.
     */
@@ -347,7 +347,7 @@ object BaseLegend {
     symbolSize: NumberValue = null,
     symbolStrokeColor: ColorValue = null,
     symbolStrokeWidth: NumberValue = null,
-    symbolType: SymbolShapeValue = null,
+    symbolType: SymbolShapeValue | SignalRef = null,
     tickCount: TickCount = null,
     titleAlign: AlignValue = null,
     titleAnchor: AnchorValue = null,

@@ -27,29 +27,11 @@ class FormControlDirective protected ()
   var _ngModelWarningConfig: js.Any = js.native
   /**
     * @description
-    * The `FormControl` bound to this directive.
-    */
-  @JSName("control")
-  val control_FormControlDirective: FormControl = js.native
-  /**
-    * @description
     * Tracks the `FormControl` instance bound to the directive.
     */
   var form: FormControl = js.native
-  /**
-    * @description
-    * Triggers a warning that this input should not be used with reactive forms.
-    */
-  var isDisabled: Boolean = js.native
   /** @deprecated as of v6 */
   var model: js.Any = js.native
-  /**
-    * @description
-    * Returns an array that represents the path from the top-level form to this control.
-    * Each index is the string name of the control on that level.
-    */
-  @JSName("path")
-  val path_FormControlDirective: js.Array[String] = js.native
   /** @deprecated as of v6 */
   var update: EventEmitter[_] = js.native
   /**
@@ -57,6 +39,11 @@ class FormControlDirective protected ()
     * Internal reference to the view model value.
     */
   var viewModel: js.Any = js.native
+  /**
+    * @description
+    * Triggers a warning that this input should not be used with reactive forms.
+    */
+  def isDisabled(isDisabled: Boolean): js.Any = js.native
   /**
     * A callback method that is invoked immediately after the
     * default change detector has checked data-bound properties

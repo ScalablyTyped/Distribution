@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "postcss-selector-parser" : "6.0.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "postcss-selector-parser" : "6.0.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

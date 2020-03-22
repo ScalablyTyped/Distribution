@@ -11,7 +11,7 @@ object mod extends js.Object {
   // declare function iterm2Version(): string | undefined;
   // export = iterm2Version;
   @JSName("default")
-  var default_Original: AnonDefault = js.native
+  var default_Original: AnonCall = js.native
   /**
   	Get the [iTerm2](https://www.iterm2.com) version.
   	@returns iTerm2 version. If you're running this on a different terminal or operating system, it will return `undefined`.

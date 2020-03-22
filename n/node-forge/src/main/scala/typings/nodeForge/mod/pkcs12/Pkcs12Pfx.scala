@@ -1,7 +1,7 @@
 package typings.nodeForge.mod.pkcs12
 
+import typings.nodeForge.AnonDictkey
 import typings.nodeForge.AnonEncrypted
-import typings.nodeForge.AnonFriendlyName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait Pkcs12Pfx extends js.Object {
   var safeContents: js.Array[AnonEncrypted]
   var version: String
-  def getBags(filter: BagsFilter): AnonFriendlyName
+  def getBags(filter: BagsFilter): AnonDictkey
   def getBagsByFriendlyName(fiendlyName: String, bagType: String): js.Array[Bag]
   def getBagsByLocalKeyId(localKeyId: String, bagType: String): js.Array[Bag]
 }
@@ -17,7 +17,7 @@ trait Pkcs12Pfx extends js.Object {
 object Pkcs12Pfx {
   @scala.inline
   def apply(
-    getBags: BagsFilter => AnonFriendlyName,
+    getBags: BagsFilter => AnonDictkey,
     getBagsByFriendlyName: (String, String) => js.Array[Bag],
     getBagsByLocalKeyId: (String, String) => js.Array[Bag],
     safeContents: js.Array[AnonEncrypted],

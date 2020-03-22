@@ -26,7 +26,7 @@ object mod extends js.Object {
     	 * Create a new test harness instance, which is a function like test(),
     	 * but with a new pending stack and test state.
     	 */
-    def createHarness(): AsyncTapeFunction with AnonCb = js.native
+    def createHarness(): AsyncTapeFunctionNoneoptsCreateHarness = js.native
     def only(cb: TestCase): Unit = js.native
     /**
     	 * Like test(name?, opts?, cb) except if you use .only this
@@ -82,7 +82,7 @@ object mod extends js.Object {
     def rejects(promise: js.Thenable[_], msg: String): js.Promise[Unit] = js.native
   }
   
-  def default(tapeTest: js.Any): AsyncTapeFunction with AnonCb = js.native
+  def default(tapeTest: js.Any): AsyncTapeFunctionNoneoptsCreateHarness = js.native
   type TestCase = js.Function1[/* test */ Test, Unit | js.Thenable[Unit]]
 }
 

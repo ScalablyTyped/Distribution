@@ -21,35 +21,32 @@ trait EndpointOptions extends js.Object {
   var dragProxy: js.UndefOr[String | js.Array[String]] = js.undefined
   var dropOptions: js.UndefOr[DropOptions] = js.undefined
   var enabled: js.UndefOr[Boolean] = js.undefined
-  var endpoint: js.UndefOr[Endpoint] = js.undefined
+  var endpoint: js.UndefOr[EndpointSpec] = js.undefined
   var hoverClass: js.UndefOr[String] = js.undefined
   var hoverPaintStyle: js.UndefOr[PaintStyle] = js.undefined
-  var id: String
+  var id: js.UndefOr[String] = js.undefined
   //= true
   var isSource: js.UndefOr[Boolean] = js.undefined
   //= false
   var isTarget: js.UndefOr[Boolean] = js.undefined
   var maxConnections: Double
+   // "Dot", etc.
+  var overlays: js.UndefOr[js.Array[OverlaySpec]] = js.undefined
   //= true
   var paintStyle: js.UndefOr[PaintStyle] = js.undefined
   //= false
-  var parameters: js.Object
+  var parameters: js.UndefOr[js.Object] = js.undefined
   //= false
   var reattach: js.UndefOr[Boolean] = js.undefined
-  var reattachConnections: Boolean
-  var scope: String
-  var `type`: String
+  var reattachConnections: js.UndefOr[Boolean] = js.undefined
+  var scope: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[String] = js.undefined
 }
 
 object EndpointOptions {
   @scala.inline
   def apply(
-    id: String,
     maxConnections: Double,
-    parameters: js.Object,
-    reattachConnections: Boolean,
-    scope: String,
-    `type`: String,
     anchor: AnchorSpec = null,
     connectionType: String = null,
     connectionsDetachable: js.UndefOr[Boolean] = js.undefined,
@@ -65,16 +62,21 @@ object EndpointOptions {
     dragProxy: String | js.Array[String] = null,
     dropOptions: DropOptions = null,
     enabled: js.UndefOr[Boolean] = js.undefined,
-    endpoint: Endpoint = null,
+    endpoint: EndpointSpec = null,
     hoverClass: String = null,
     hoverPaintStyle: PaintStyle = null,
+    id: String = null,
     isSource: js.UndefOr[Boolean] = js.undefined,
     isTarget: js.UndefOr[Boolean] = js.undefined,
+    overlays: js.Array[OverlaySpec] = null,
     paintStyle: PaintStyle = null,
-    reattach: js.UndefOr[Boolean] = js.undefined
+    parameters: js.Object = null,
+    reattach: js.UndefOr[Boolean] = js.undefined,
+    reattachConnections: js.UndefOr[Boolean] = js.undefined,
+    scope: String = null,
+    `type`: String = null
   ): EndpointOptions = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], maxConnections = maxConnections.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any], reattachConnections = reattachConnections.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(maxConnections = maxConnections.asInstanceOf[js.Any])
     if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
     if (connectionType != null) __obj.updateDynamic("connectionType")(connectionType.asInstanceOf[js.Any])
     if (!js.isUndefined(connectionsDetachable)) __obj.updateDynamic("connectionsDetachable")(connectionsDetachable.asInstanceOf[js.Any])
@@ -93,10 +95,16 @@ object EndpointOptions {
     if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
     if (hoverClass != null) __obj.updateDynamic("hoverClass")(hoverClass.asInstanceOf[js.Any])
     if (hoverPaintStyle != null) __obj.updateDynamic("hoverPaintStyle")(hoverPaintStyle.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (!js.isUndefined(isSource)) __obj.updateDynamic("isSource")(isSource.asInstanceOf[js.Any])
     if (!js.isUndefined(isTarget)) __obj.updateDynamic("isTarget")(isTarget.asInstanceOf[js.Any])
+    if (overlays != null) __obj.updateDynamic("overlays")(overlays.asInstanceOf[js.Any])
     if (paintStyle != null) __obj.updateDynamic("paintStyle")(paintStyle.asInstanceOf[js.Any])
+    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
     if (!js.isUndefined(reattach)) __obj.updateDynamic("reattach")(reattach.asInstanceOf[js.Any])
+    if (!js.isUndefined(reattachConnections)) __obj.updateDynamic("reattachConnections")(reattachConnections.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[EndpointOptions]
   }
 }

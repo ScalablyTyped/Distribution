@@ -1,9 +1,8 @@
 package typings.jupyterlabCells.widgetMod.RawCell
 
+import typings.jupyterlabCells.PartialIConfig
 import typings.jupyterlabCells.modelMod.ICellModel
 import typings.jupyterlabCells.widgetMod.Cell.IContentFactory
-import typings.jupyterlabCodeeditor.editorMod.CodeEditor.IConfig
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +18,7 @@ object IOptions {
   def apply(
     model: ICellModel,
     contentFactory: IContentFactory = null,
-    editorConfig: Partial[IConfig] = null,
+    editorConfig: PartialIConfig = null,
     updateEditorOnShow: js.UndefOr[Boolean] = js.undefined
   ): IOptions = {
     val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any])

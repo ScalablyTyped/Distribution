@@ -1,6 +1,6 @@
 package typings.jsforce.connectionMod
 
-import typings.std.Partial
+import typings.jsforce.PartialPartialOAuth2Optio
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ trait ConnectionOptions extends PartialOAuth2Options {
   var instanceUrl: js.UndefOr[String] = js.undefined
   var logLevel: js.UndefOr[String] = js.undefined
   var maxRequest: js.UndefOr[Double] = js.undefined
-  var oauth2: js.UndefOr[Partial[PartialOAuth2Options]] = js.undefined
+  var oauth2: js.UndefOr[PartialPartialOAuth2Optio] = js.undefined
   var proxyUrl: js.UndefOr[String] = js.undefined
   var refreshFn: js.UndefOr[
     js.Function2[/* conn */ Connection, /* callback */ Callback[UserInfo], js.Promise[UserInfo]]
@@ -34,7 +34,7 @@ object ConnectionOptions {
     logLevel: String = null,
     loginUrl: String = null,
     maxRequest: Int | Double = null,
-    oauth2: Partial[PartialOAuth2Options] = null,
+    oauth2: PartialPartialOAuth2Optio = null,
     proxyUrl: String = null,
     redirectUri: String = null,
     refreshFn: (/* conn */ Connection, /* callback */ Callback[UserInfo]) => js.Promise[UserInfo] = null,

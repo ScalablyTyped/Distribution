@@ -1,6 +1,6 @@
 package typings.reactVirtualized.mod
 
-import typings.reactVirtualized.Anon1
+import typings.reactVirtualized.AnonAutoHeight
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,6 +14,6 @@ class List ()
 @JSImport("react-virtualized", "List")
 @js.native
 object List extends js.Object {
-  var defaultProps: Anon1 = js.native
+  var defaultProps: AnonAutoHeight = js.native
 }
 

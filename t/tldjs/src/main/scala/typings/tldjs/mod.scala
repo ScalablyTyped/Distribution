@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object mod extends js.Object {
   def extractHostname(host: String): String | Null = js.native
-  def fromUserSettings(options: AnonExtractHostname): AnonExtractHostnameFromUserSettingsGetDomain = js.native
+  def fromUserSettings(options: AnonExtractHostname): AnonGetDomain = js.native
   def getDomain(host: String): String | Null = js.native
   def getPublicSuffix(host: String): String | Null = js.native
   def getSubdomain(host: String): String | Null = js.native

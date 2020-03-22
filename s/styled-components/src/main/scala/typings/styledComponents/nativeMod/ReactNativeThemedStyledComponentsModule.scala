@@ -1,12 +1,13 @@
 package typings.styledComponents.nativeMod
 
+import typings.react.mod.ComponentPropsWithRef
 import typings.react.mod.ComponentType
 import typings.react.mod.Consumer
 import typings.react.mod.Context
 import typings.react.mod.ForwardRefExoticComponent
-import typings.styledComponents.WithOptionalThemeComponentPropsWithRefCT
 import typings.styledComponents.styledComponentsMod.ThemeProviderComponent
 import typings.styledComponents.styledComponentsMod.ThemedCssFunction
+import typings.styledComponents.styledComponentsMod.WithOptionalTheme
 import typings.styledComponents.styledComponentsMod.WithThemeFnInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -36,7 +37,10 @@ object ReactNativeThemedStyledComponentsModule {
     default: ReactNativeStyledInterface[T],
     isStyledComponent: /* target */ js.Any => /* is styled-components.styled-components.StyledComponent<any, any, {}, never> */ Boolean,
     withTheme: /* component */ ComponentType[js.Any] => ForwardRefExoticComponent[
-      WithOptionalThemeComponentPropsWithRefCT[typings.styledComponents.styledComponentsMod.AnyIfEmpty[T]]
+      WithOptionalTheme[
+        ComponentPropsWithRef[ComponentType[js.Any]], 
+        typings.styledComponents.styledComponentsMod.AnyIfEmpty[T]
+      ]
     ]
   ): ReactNativeThemedStyledComponentsModule[T, U] = {
     val __obj = js.Dynamic.literal(ThemeConsumer = ThemeConsumer.asInstanceOf[js.Any], ThemeContext = ThemeContext.asInstanceOf[js.Any], ThemeProvider = ThemeProvider.asInstanceOf[js.Any], css = css.asInstanceOf[js.Any], default = default.asInstanceOf[js.Any], isStyledComponent = js.Any.fromFunction1(isStyledComponent), withTheme = js.Any.fromFunction1(withTheme))

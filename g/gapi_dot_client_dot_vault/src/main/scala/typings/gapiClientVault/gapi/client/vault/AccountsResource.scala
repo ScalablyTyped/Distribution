@@ -2,7 +2,7 @@ package typings.gapiClientVault.gapi.client.vault
 
 import typings.gapiClient.gapi.client.Request_
 import typings.gapiClientVault.AnonAccesstoken
-import typings.gapiClientVault.AnonAccesstokenAccountId
+import typings.gapiClientVault.AnonAccountId
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +18,7 @@ trait AccountsResource extends js.Object {
     * Removes a HeldAccount from a hold. If this request leaves the hold with
     * no held accounts, the hold will not apply to any accounts.
     */
-  def delete(request: AnonAccesstokenAccountId): Request_[js.Object]
+  def delete(request: AnonAccountId): Request_[js.Object]
   /**
     * Lists HeldAccounts for a hold. This will only list individually specified
     * held accounts. If the hold is on an OU, then use
@@ -32,7 +32,7 @@ object AccountsResource {
   @scala.inline
   def apply(
     create: AnonAccesstoken => Request_[HeldAccount],
-    delete: AnonAccesstokenAccountId => Request_[js.Object],
+    delete: AnonAccountId => Request_[js.Object],
     list: AnonAccesstoken => Request_[ListHeldAccountsResponse]
   ): AccountsResource = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), list = js.Any.fromFunction1(list))

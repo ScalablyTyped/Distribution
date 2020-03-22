@@ -10,7 +10,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object serializersTypesArrayMod extends js.Object {
   @js.native
-  class ArrayTypeSerializer () extends TypeSerializerComponent[ArrayType]
+  class ArrayTypeSerializer () extends TypeSerializerComponent[ArrayType] {
+    def toObject(`type`: ArrayType, obj: PickArrayTypetype): typings.typedoc.schemaMod.ArrayType = js.native
+  }
   
 }
 

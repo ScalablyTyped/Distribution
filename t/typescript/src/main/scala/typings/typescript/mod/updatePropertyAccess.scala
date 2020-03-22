@@ -8,5 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object updatePropertyAccess extends js.Object {
   def apply(node: PropertyAccessExpression, expression: Expression, name: Identifier): PropertyAccessExpression = js.native
+  def apply(node: PropertyAccessExpression, expression: Expression, name: PrivateIdentifier): PropertyAccessExpression = js.native
 }
 

@@ -1,13 +1,13 @@
 package typings.apostrophe.mod
 
-import typings.apostrophe.AnonCallback
+import typings.apostrophe.AnonForm
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AposType extends js.Object {
   var bless: js.UndefOr[js.Function2[/* req */ js.Any, /* field */ js.Any, Unit]] = js.undefined
-  var converters: AnonCallback
+  var converters: AnonForm
   var empty: js.UndefOr[js.Function2[/* field */ js.Any, /* value */ js.Any, Unit]] = js.undefined
   var name: String
   def index(value: js.Any, field: js.Any, texts: js.Any): Unit
@@ -16,7 +16,7 @@ trait AposType extends js.Object {
 object AposType {
   @scala.inline
   def apply(
-    converters: AnonCallback,
+    converters: AnonForm,
     index: (js.Any, js.Any, js.Any) => Unit,
     name: String,
     bless: (/* req */ js.Any, /* field */ js.Any) => Unit = null,

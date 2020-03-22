@@ -29,9 +29,6 @@ object arangodbStrings {
   sealed trait Document extends js.Object
   
   @js.native
-  sealed trait DocumentData extends js.Object
-  
-  @js.native
   sealed trait ERROR_AGENCY_CANNOT_REBUILD_DBS extends ErrorName
   
   @js.native
@@ -1266,8 +1263,6 @@ object arangodbStrings {
   def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
   @scala.inline
   def Document: Document = "Document".asInstanceOf[Document]
-  @scala.inline
-  def DocumentData: DocumentData = "DocumentData".asInstanceOf[DocumentData]
   @scala.inline
   def ERROR_AGENCY_CANNOT_REBUILD_DBS: ERROR_AGENCY_CANNOT_REBUILD_DBS = "ERROR_AGENCY_CANNOT_REBUILD_DBS".asInstanceOf[ERROR_AGENCY_CANNOT_REBUILD_DBS]
   @scala.inline

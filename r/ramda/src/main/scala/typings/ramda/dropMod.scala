@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object dropMod extends js.Object {
   def default(n: Double, xs: String): String = js.native
-  def default[T](n: Double): FnXs[T] = js.native
+  def default[T](n: Double): FnCall[T] = js.native
   def default[T](n: Double, xs: js.Array[T]): js.Array[T] = js.native
 }
 

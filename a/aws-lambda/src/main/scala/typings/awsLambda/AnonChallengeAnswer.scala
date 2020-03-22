@@ -13,7 +13,7 @@ trait AnonChallengeAnswer extends js.Object {
   var newDeviceUsed: js.UndefOr[Boolean] = js.undefined
   var password: js.UndefOr[String] = js.undefined
   var privateChallengeParameters: js.UndefOr[StringDictionary[String]] = js.undefined
-  var session: js.UndefOr[js.Array[AnonADMINNOSRPAUTH]] = js.undefined
+  var session: js.UndefOr[js.Array[AnonChallengeMetadata]] = js.undefined
   var userAttributes: StringDictionary[String]
   var usernameParameter: js.UndefOr[String] = js.undefined
   var validationData: js.UndefOr[StringDictionary[String]] = js.undefined
@@ -30,7 +30,7 @@ object AnonChallengeAnswer {
     newDeviceUsed: js.UndefOr[Boolean] = js.undefined,
     password: String = null,
     privateChallengeParameters: StringDictionary[String] = null,
-    session: js.Array[AnonADMINNOSRPAUTH] = null,
+    session: js.Array[AnonChallengeMetadata] = null,
     usernameParameter: String = null,
     validationData: StringDictionary[String] = null
   ): AnonChallengeAnswer = {

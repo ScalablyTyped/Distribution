@@ -15,6 +15,6 @@ class ValidationError protected () extends Error {
   /* CompleteClass */
   override var name: String = js.native
   var statusCode: Double = js.native
-  var `type`: ValidationErrorType = js.native
+  var `type`: ValidationErrorType | String = js.native
 }
 

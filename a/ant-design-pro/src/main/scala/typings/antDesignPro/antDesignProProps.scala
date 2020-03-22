@@ -25,7 +25,6 @@ import typings.bizcharts.mod.Guide.LineProps
 import typings.bizcharts.mod.Guide.RegionFilterProps
 import typings.bizcharts.mod.Guide.RegionProps
 import typings.bizcharts.mod.Guide.TextProps
-import typings.react.mod.Props
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,8 +42,6 @@ trait antDesignProProps {
   @scala.inline
   def AvatarListProps: typings.antDesignPro.avatarListMod.AvatarListProps.type = typings.antDesignPro.avatarListMod.AvatarListProps
   type AvatarListProps = typings.antDesignPro.avatarListMod.AvatarListProps
-  @scala.inline
-  def AxisProps: typings.bizcharts.mod.AxisProps.type = typings.bizcharts.mod.AxisProps
   type AxisProps = typings.bizcharts.mod.AxisProps
   @scala.inline
   def BarProps: IBarProps.type = typings.antDesignPro.barMod.IBarProps
@@ -52,14 +49,10 @@ trait antDesignProProps {
   @scala.inline
   def BreadcrumbProps: typings.antDesignPro.pageHeaderMod.PageHeaderProps.type = typings.antDesignPro.pageHeaderMod.PageHeaderProps
   type BreadcrumbProps = typings.antDesignPro.pageHeaderMod.PageHeaderProps
-  @scala.inline
-  def ChartProps: typings.bizcharts.mod.ChartProps.type = typings.bizcharts.mod.ChartProps
   type ChartProps = typings.bizcharts.mod.ChartProps
   @scala.inline
   def ChartCardProps: IChartCardProps.type = typings.antDesignPro.chartCardMod.IChartCardProps
   type ChartCardProps = IChartCardProps
-  @scala.inline
-  def CoordProps: typings.bizcharts.mod.CoordProps.type = typings.bizcharts.mod.CoordProps
   type CoordProps = typings.bizcharts.mod.CoordProps
   @scala.inline
   def CountDownProps: ICountDownProps.type = typings.antDesignPro.countDownMod.ICountDownProps
@@ -76,8 +69,6 @@ trait antDesignProProps {
   @scala.inline
   def ExceptionProps: typings.antDesignPro.exceptionMod.ExceptionProps.type = typings.antDesignPro.exceptionMod.ExceptionProps
   type ExceptionProps[L] = typings.antDesignPro.exceptionMod.ExceptionProps[L]
-  @scala.inline
-  def FacetProps: typings.bizcharts.mod.FacetProps.type = typings.bizcharts.mod.FacetProps
   type FacetProps = typings.bizcharts.mod.FacetProps
   @scala.inline
   def FieldProps: IFieldProps.type = typings.antDesignPro.fieldMod.IFieldProps
@@ -88,41 +79,19 @@ trait antDesignProProps {
   @scala.inline
   def GaugeProps: IGaugeProps.type = typings.antDesignPro.gaugeMod.IGaugeProps
   type GaugeProps = IGaugeProps
-  @scala.inline
-  def GeomProps: typings.bizcharts.mod.GeomProps.type = typings.bizcharts.mod.GeomProps
   type GeomProps = typings.bizcharts.mod.GeomProps
   @scala.inline
   def GlobalFooterProps: typings.antDesignPro.globalFooterMod.GlobalFooterProps.type = typings.antDesignPro.globalFooterMod.GlobalFooterProps
   type GlobalFooterProps = typings.antDesignPro.globalFooterMod.GlobalFooterProps
-  @scala.inline
-  def GuideProps: Props.type = typings.react.mod.Props
   type GuideProps = typings.bizcharts.mod.GuideProps
-  @scala.inline
-  def GuideArcProps: ArcProps.type = typings.bizcharts.mod.Guide.ArcProps
   type GuideArcProps = ArcProps
-  @scala.inline
-  def GuideDataMarkerProps: DataMarkerProps.type = typings.bizcharts.mod.Guide.DataMarkerProps
   type GuideDataMarkerProps = DataMarkerProps
-  @scala.inline
-  def GuideDataRegionProps: DataRegionProps.type = typings.bizcharts.mod.Guide.DataRegionProps
   type GuideDataRegionProps = DataRegionProps
-  @scala.inline
-  def GuideHtmlProps: HtmlProps.type = typings.bizcharts.mod.Guide.HtmlProps
   type GuideHtmlProps = HtmlProps
-  @scala.inline
-  def GuideImageProps: ImageProps.type = typings.bizcharts.mod.Guide.ImageProps
   type GuideImageProps = ImageProps
-  @scala.inline
-  def GuideLineProps: LineProps.type = typings.bizcharts.mod.Guide.LineProps
   type GuideLineProps = LineProps
-  @scala.inline
-  def GuideRegionProps: RegionProps.type = typings.bizcharts.mod.Guide.RegionProps
   type GuideRegionProps = RegionProps
-  @scala.inline
-  def GuideRegionFilterProps: RegionFilterProps.type = typings.bizcharts.mod.Guide.RegionFilterProps
   type GuideRegionFilterProps = RegionFilterProps
-  @scala.inline
-  def GuideTextProps: TextProps.type = typings.bizcharts.mod.Guide.TextProps
   type GuideTextProps = TextProps
   @scala.inline
   def HeaderDropdownProps: typings.antDesignPro.headerDropdownMod.HeaderDropdownProps.type = typings.antDesignPro.headerDropdownMod.HeaderDropdownProps
@@ -130,11 +99,7 @@ trait antDesignProProps {
   @scala.inline
   def HeaderSearchProps: typings.antDesignPro.headerSearchMod.HeaderSearchProps.type = typings.antDesignPro.headerSearchMod.HeaderSearchProps
   type HeaderSearchProps = typings.antDesignPro.headerSearchMod.HeaderSearchProps
-  @scala.inline
-  def LabelProps: typings.bizcharts.mod.LabelProps.type = typings.bizcharts.mod.LabelProps
   type LabelProps = typings.bizcharts.mod.LabelProps
-  @scala.inline
-  def LegendProps: typings.bizcharts.mod.LegendProps.type = typings.bizcharts.mod.LegendProps
   type LegendProps = typings.bizcharts.mod.LegendProps
   @scala.inline
   def LoginProps: typings.antDesignPro.loginMod.LoginProps.type = typings.antDesignPro.loginMod.LoginProps
@@ -199,14 +164,10 @@ trait antDesignProProps {
   @scala.inline
   def TimelineChartProps: ITimelineChartProps.type = typings.antDesignPro.timelineChartMod.ITimelineChartProps
   type TimelineChartProps = ITimelineChartProps
-  @scala.inline
-  def TooltipProps: typings.bizcharts.mod.TooltipProps.type = typings.bizcharts.mod.TooltipProps
   type TooltipProps = typings.bizcharts.mod.TooltipProps
   @scala.inline
   def TrendProps: ITrendProps.type = typings.antDesignPro.trendMod.ITrendProps
   type TrendProps = ITrendProps
-  @scala.inline
-  def ViewProps: typings.bizcharts.mod.ViewProps.type = typings.bizcharts.mod.ViewProps
   type ViewProps = typings.bizcharts.mod.ViewProps
   @scala.inline
   def WaterWaveProps: IWaterWaveProps.type = typings.antDesignPro.waterWaveMod.IWaterWaveProps

@@ -27,7 +27,7 @@ trait SpeechSynthesisUtterance extends EventTarget {
   var pitch: Double = js.native
   var rate: Double = js.native
   var text: java.lang.String = js.native
-  var voice: SpeechSynthesisVoice = js.native
+  var voice: SpeechSynthesisVoice | Null = js.native
   var volume: Double = js.native
   @JSName("addEventListener")
   def addEventListener_boundary(

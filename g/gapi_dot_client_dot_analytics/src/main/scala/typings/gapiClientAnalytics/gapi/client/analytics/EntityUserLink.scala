@@ -1,7 +1,7 @@
 package typings.gapiClientAnalytics.gapi.client.analytics
 
 import typings.gapiClientAnalytics.AnonAccountRef
-import typings.gapiClientAnalytics.AnonEffectiveLocal
+import typings.gapiClientAnalytics.AnonLocal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ trait EntityUserLink extends js.Object {
   /** Resource type for entity user link. */
   var kind: js.UndefOr[String] = js.undefined
   /** Permissions the user has for this entity. */
-  var permissions: js.UndefOr[AnonEffectiveLocal] = js.undefined
+  var permissions: js.UndefOr[AnonLocal] = js.undefined
   /** Self link for this resource. */
   var selfLink: js.UndefOr[String] = js.undefined
   /** User reference. */
@@ -27,7 +27,7 @@ object EntityUserLink {
     entity: AnonAccountRef = null,
     id: String = null,
     kind: String = null,
-    permissions: AnonEffectiveLocal = null,
+    permissions: AnonLocal = null,
     selfLink: String = null,
     userRef: UserRef = null
   ): EntityUserLink = {

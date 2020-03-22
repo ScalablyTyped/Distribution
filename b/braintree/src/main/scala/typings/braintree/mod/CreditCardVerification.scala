@@ -1,7 +1,7 @@
 package typings.braintree.mod
 
 import typings.braintree.AnonBin
-import typings.braintree.AnonCompanyCountryName
+import typings.braintree.AnonCountryName
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,7 +14,7 @@ class CreditCardVerification () extends js.Object {
   var avsErrorResponseCode: js.UndefOr[String] = js.native
   var avsPostalCodeResponseCode: js.UndefOr[String] = js.native
   var avsScreetAddressResponseCode: js.UndefOr[String] = js.native
-  var billing: js.UndefOr[AnonCompanyCountryName] = js.native
+  var billing: js.UndefOr[AnonCountryName] = js.native
   var createdAt: Date = js.native
   var creditCard: js.UndefOr[AnonBin] = js.native
   var currencyIsoCode: String = js.native

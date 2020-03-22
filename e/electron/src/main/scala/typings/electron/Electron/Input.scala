@@ -6,35 +6,35 @@ import scala.scalajs.js.annotation._
 
 trait Input extends js.Object {
   /**
-    * Equivalent to .
+    * Equivalent to KeyboardEvent.altKey.
     */
   var alt: Boolean
   /**
-    * Equivalent to .
+    * Equivalent to KeyboardEvent.code.
     */
   var code: String
   /**
-    * Equivalent to .
+    * Equivalent to KeyboardEvent.controlKey.
     */
   var control: Boolean
   /**
-    * Equivalent to .
+    * Equivalent to KeyboardEvent.repeat.
     */
   var isAutoRepeat: Boolean
   /**
-    * Equivalent to .
+    * Equivalent to KeyboardEvent.key.
     */
   var key: String
   /**
-    * Equivalent to .
+    * Equivalent to KeyboardEvent.metaKey.
     */
   var meta: Boolean
   /**
-    * Equivalent to .
+    * Equivalent to KeyboardEvent.shiftKey.
     */
   var shift: Boolean
   /**
-    * Either keyUp or keyDown.
+    * Either `keyUp` or `keyDown`.
     */
   var `type`: String
 }

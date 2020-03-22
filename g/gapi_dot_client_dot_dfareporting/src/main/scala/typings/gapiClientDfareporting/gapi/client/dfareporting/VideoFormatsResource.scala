@@ -1,25 +1,22 @@
 package typings.gapiClientDfareporting.gapi.client.dfareporting
 
 import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientDfareporting.AnonAltFieldsIdKey
-import typings.gapiClientDfareporting.AnonAltFieldsKey
+import typings.gapiClientDfareporting.AnonFieldsId
+import typings.gapiClientDfareporting.AnonKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait VideoFormatsResource extends js.Object {
   /** Gets one video format by ID. */
-  def get(request: AnonAltFieldsIdKey): Request_[VideoFormat]
+  def get(request: AnonFieldsId): Request_[VideoFormat]
   /** Lists available video formats. */
-  def list(request: AnonAltFieldsKey): Request_[VideoFormatsListResponse]
+  def list(request: AnonKey): Request_[VideoFormatsListResponse]
 }
 
 object VideoFormatsResource {
   @scala.inline
-  def apply(
-    get: AnonAltFieldsIdKey => Request_[VideoFormat],
-    list: AnonAltFieldsKey => Request_[VideoFormatsListResponse]
-  ): VideoFormatsResource = {
+  def apply(get: AnonFieldsId => Request_[VideoFormat], list: AnonKey => Request_[VideoFormatsListResponse]): VideoFormatsResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[VideoFormatsResource]

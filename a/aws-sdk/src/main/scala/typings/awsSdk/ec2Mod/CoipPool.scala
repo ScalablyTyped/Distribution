@@ -9,7 +9,7 @@ trait CoipPool extends js.Object {
   /**
     * The ID of the local gateway route table.
     */
-  var LocalGatewayRouteTableId: js.UndefOr[String] = js.native
+  var LocalGatewayRouteTableId: js.UndefOr[LocalGatewayRoutetableId] = js.native
   /**
     * The address ranges of the address pool.
     */
@@ -17,7 +17,7 @@ trait CoipPool extends js.Object {
   /**
     * The ID of the address pool.
     */
-  var PoolId: js.UndefOr[String] = js.native
+  var PoolId: js.UndefOr[CoipPoolId] = js.native
   /**
     * The tags.
     */
@@ -27,9 +27,9 @@ trait CoipPool extends js.Object {
 object CoipPool {
   @scala.inline
   def apply(
-    LocalGatewayRouteTableId: String = null,
+    LocalGatewayRouteTableId: LocalGatewayRoutetableId = null,
     PoolCidrs: ValueStringList = null,
-    PoolId: String = null,
+    PoolId: CoipPoolId = null,
     Tags: TagList = null
   ): CoipPool = {
     val __obj = js.Dynamic.literal()

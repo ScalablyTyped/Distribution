@@ -1,7 +1,7 @@
 package typings.reduxDoghouse.mod
 
 import typings.redux.mod.Dispatch
-import typings.reduxDoghouse.FnActionCreator
+import typings.reduxDoghouse.FnCall
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object bindScopedActionFactories extends js.Object {
   def apply[M /* <: ActionFactoriesMap */, S](actionFactories: M, dispatch: Dispatch[S]): M = js.native
-  def apply[M /* <: ActionFactoriesMap */, S](actionFactories: M, dispatch: Dispatch[S], bindFn: FnActionCreator): M = js.native
+  def apply[M /* <: ActionFactoriesMap */, S](actionFactories: M, dispatch: Dispatch[S], bindFn: FnCall): M = js.native
 }
 

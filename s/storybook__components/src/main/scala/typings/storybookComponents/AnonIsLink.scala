@@ -4,8 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AnonIsLink extends js.Object {
-  var isLink: Boolean
+  var isLink: Boolean = js.native
 }
 
 object AnonIsLink {

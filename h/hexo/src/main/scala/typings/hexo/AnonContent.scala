@@ -1,20 +1,19 @@
 package typings.hexo
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait AnonContent
-  extends /* key */ StringDictionary[js.Any] {
+trait AnonContent extends js.Object {
   var content: String
+  var path: String
 }
 
 object AnonContent {
   @scala.inline
-  def apply(content: String, StringDictionary: /* key */ StringDictionary[js.Any] = null): AnonContent = {
-    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+  def apply(content: String, path: String): AnonContent = {
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[AnonContent]
   }
 }

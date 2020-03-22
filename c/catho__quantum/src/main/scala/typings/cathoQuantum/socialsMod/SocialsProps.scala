@@ -1,24 +1,24 @@
 package typings.cathoQuantum.socialsMod
 
-import typings.cathoQuantum.AnonFacebook
-import typings.cathoQuantum.AnonSpacing
+import typings.cathoQuantum.AnonName
+import typings.cathoQuantum.AnonSpacingObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SocialsProps extends js.Object {
-  var items: NonEmptyArray[AnonFacebook]
+  var items: NonEmptyArray[AnonName]
   var size: js.UndefOr[String] = js.undefined
-  var theme: js.UndefOr[AnonSpacing] = js.undefined
+  var theme: js.UndefOr[AnonSpacingObject] = js.undefined
   var withBox: js.UndefOr[Boolean] = js.undefined
 }
 
 object SocialsProps {
   @scala.inline
   def apply(
-    items: NonEmptyArray[AnonFacebook],
+    items: NonEmptyArray[AnonName],
     size: String = null,
-    theme: AnonSpacing = null,
+    theme: AnonSpacingObject = null,
     withBox: js.UndefOr[Boolean] = js.undefined
   ): SocialsProps = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])

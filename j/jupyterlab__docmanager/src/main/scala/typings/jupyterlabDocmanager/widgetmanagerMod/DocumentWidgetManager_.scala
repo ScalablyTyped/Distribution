@@ -5,11 +5,11 @@ import typings.jupyterlabDocregistry.registryMod.DocumentRegistry.Context
 import typings.jupyterlabDocregistry.registryMod.DocumentRegistry.IModel
 import typings.jupyterlabDocregistry.registryMod.DocumentRegistry.WidgetFactory
 import typings.jupyterlabDocregistry.registryMod.IDocumentWidget
-import typings.phosphorDisposable.mod.IDisposable
-import typings.phosphorMessaging.mod.IMessageHandler
-import typings.phosphorMessaging.mod.Message
-import typings.phosphorSignaling.mod.ISignal
-import typings.phosphorWidgets.mod.Widget
+import typings.luminoDisposable.mod.IDisposable
+import typings.luminoMessaging.mod.IMessageHandler
+import typings.luminoMessaging.mod.Message
+import typings.luminoSignaling.mod.ISignal
+import typings.luminoWidgets.mod.Widget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -52,10 +52,6 @@ class DocumentWidgetManager_ protected () extends IDisposable {
     */
   var _widgetDisposed: js.Any = js.native
   /**
-    * A signal emitted when one of the documents is activated.
-    */
-  val activateRequested: ISignal[this.type, String] = js.native
-  /**
     * Test whether the object has been disposed.
     *
     * #### Notes
@@ -63,6 +59,10 @@ class DocumentWidgetManager_ protected () extends IDisposable {
     */
   /* CompleteClass */
   override val isDisposed: Boolean = js.native
+  /**
+    * A signal emitted when one of the documents is activated.
+    */
+  def activateRequested(): ISignal[this.type, String] = js.native
   /**
     * Install the message hook for the widget and add to list
     * of known widgets.
@@ -142,6 +142,11 @@ class DocumentWidgetManager_ protected () extends IDisposable {
     * a new widget.
     */
   def findWidget(context: Context, widgetName: String): js.UndefOr[IDocumentWidget[Widget, IModel]] = js.native
+  /**
+    * Test whether the document widget manager is disposed.
+    */
+  @JSName("isDisposed")
+  def isDisposed_MDocumentWidgetManager_(): Boolean = js.native
   /**
     * Filter a message sent to a message handler.
     *

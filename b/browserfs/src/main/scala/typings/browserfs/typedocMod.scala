@@ -19,7 +19,7 @@ object typedocMod extends js.Object {
       * Emulates Node's `require()` function for filesystem-related modules (`'fs'`, `'path'`, `'buffer'`, etc).
       */
     @JSName("BFSRequire")
-    var BFSRequire_Original: FnBfsutils = js.native
+    var BFSRequire_Original: FnCall = js.native
     /**
       * Exposes all of the file system backends available in BrowserFS.
       */

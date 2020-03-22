@@ -1,6 +1,6 @@
 package typings.jupyterlabServices
 
-import typings.phosphorCoreutils.jsonMod.JSONObject
+import typings.luminoCoreutils.jsonMod.JSONObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

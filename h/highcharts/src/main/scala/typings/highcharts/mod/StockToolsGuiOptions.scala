@@ -9,7 +9,7 @@ trait StockToolsGuiOptions extends js.Object {
     * (Highstock) A collection of strings pointing to config options for the
     * toolbar items. Each name refers to unique key from definitions object.
     */
-  var buttons: js.UndefOr[js.Array[_]] = js.undefined
+  var buttons: js.UndefOr[String] = js.undefined
   /**
     * (Highstock) A CSS class name to apply to the stocktools' div, allowing
     * unique CSS styling for each chart.
@@ -19,7 +19,7 @@ trait StockToolsGuiOptions extends js.Object {
     * (Highstock) An options object of the buttons definitions. Each name
     * refers to unique key from buttons array.
     */
-  var definitions: js.UndefOr[js.Object | StockToolsGuiDefinitionsOptions] = js.undefined
+  var definitions: js.UndefOr[StockToolsGuiDefinitionsOptions] = js.undefined
   /**
     * (Highstock) Enable or disable the stockTools gui.
     */
@@ -34,9 +34,9 @@ trait StockToolsGuiOptions extends js.Object {
 object StockToolsGuiOptions {
   @scala.inline
   def apply(
-    buttons: js.Array[_] = null,
+    buttons: String = null,
     className: String = null,
-    definitions: js.Object | StockToolsGuiDefinitionsOptions = null,
+    definitions: StockToolsGuiDefinitionsOptions = null,
     enabled: js.UndefOr[Boolean] = js.undefined,
     toolbarClassName: String = null
   ): StockToolsGuiOptions = {

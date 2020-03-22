@@ -1,6 +1,7 @@
 package typings.typedoc
 
 import typings.typedoc.reflectionsDeclarationMod.DeclarationReflection
+import typings.typedoc.typedocStrings.reflection
 import typings.typedoc.typesAbstractMod.Type
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,6 +14,8 @@ object reflectionMod extends js.Object {
   class ReflectionType protected () extends Type {
     def this(declaration: DeclarationReflection) = this()
     var declaration: DeclarationReflection = js.native
+    @JSName("type")
+    val type_ReflectionType: reflection = js.native
     def equals(`type`: ReflectionType): Boolean = js.native
   }
   

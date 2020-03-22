@@ -1,5 +1,8 @@
 package typings.objectGetownpropertydescriptors
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.objectGetownpropertydescriptors.objectGetownpropertydescriptorsStrings.^
+import typings.std.PropertyDescriptor
 import typings.std.ReturnType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,7 +15,7 @@ object mod extends js.Object {
     * Returns an object containing all own property descriptors of an object
     * @param o Object that contains the properties and methods. This can be an object that you created or an existing Document Object Model (DOM) object.
     */
-  def apply[T](o: T): AnonProperty[T] = js.native
+  def apply[T](o: T): ^  with T with StringDictionary[PropertyDescriptor] = js.native
   def getPolyfill(): ReturnType[
     js.Function0[
       /* import warning: importer.ImportType#apply Failed type conversion: typeof getOwnPropertyDescriptors */ js.Any
@@ -27,7 +30,7 @@ object mod extends js.Object {
   ] = js.native
   @js.native
   object implementation extends js.Object {
-    def apply[T](o: T): AnonProperty[T] = js.native
+    def apply[T](o: T): typings.objectGetownpropertydescriptors.objectGetownpropertydescriptorsStrings.implementation with T with StringDictionary[PropertyDescriptor] = js.native
   }
   
 }

@@ -1,7 +1,7 @@
 package typings.oracleOraclejet.ojswitchMod
 
 import typings.oracleOraclejet.AnonAction
-import typings.oracleOraclejet.AnonActionElement
+import typings.oracleOraclejet.AnonElement
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.ojeditablevalueMod.editableValue
 import typings.oracleOraclejet.ojswitchMod.ojSwitch.ojAnimateEnd
@@ -44,6 +44,6 @@ trait ojSwitch extends editableValue[Boolean, ojSwitchSettableProperties, Boolea
 @js.native
 object ojSwitch extends js.Object {
   type ojAnimateEnd = CustomEvent[AnonAction]
-  type ojAnimateStart = CustomEvent[AnonActionElement]
+  type ojAnimateStart = CustomEvent[AnonElement]
 }
 

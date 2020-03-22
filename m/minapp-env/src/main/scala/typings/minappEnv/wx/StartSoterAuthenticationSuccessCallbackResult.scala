@@ -1,0 +1,28 @@
+package typings.minappEnv.wx
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait StartSoterAuthenticationSuccessCallbackResult extends js.Object {
+  /** 生物认证方式 */
+  var authMode: String
+  /** 错误码 */
+  var errCode: Double
+  /** 错误信息 */
+  var errMsg: String
+  /** 在设备安全区域（TEE）内获得的本机安全信息（如TEE名称版本号等以及防重放参数）以及本次认证信息（仅Android支持，本次认证的指纹ID）。具体说明见下文 */
+  var resultJSON: String
+  /** 用SOTER安全密钥对 `resultJSON` 的签名(SHA256 with RSA/PSS, saltlen=20) */
+  var resultJSONSignature: String
+}
+
+object StartSoterAuthenticationSuccessCallbackResult {
+  @scala.inline
+  def apply(authMode: String, errCode: Double, errMsg: String, resultJSON: String, resultJSONSignature: String): StartSoterAuthenticationSuccessCallbackResult = {
+    val __obj = js.Dynamic.literal(authMode = authMode.asInstanceOf[js.Any], errCode = errCode.asInstanceOf[js.Any], errMsg = errMsg.asInstanceOf[js.Any], resultJSON = resultJSON.asInstanceOf[js.Any], resultJSONSignature = resultJSONSignature.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[StartSoterAuthenticationSuccessCallbackResult]
+  }
+}
+

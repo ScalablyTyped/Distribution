@@ -1,6 +1,9 @@
 package typings.awsSdk.machinelearningMod
 
-import typings.awsSdk.AnonWaiter
+import typings.awsSdk.DescribeBatchPredictionsI
+import typings.awsSdk.DescribeDataSourcesInputw
+import typings.awsSdk.DescribeEvaluationsInputw
+import typings.awsSdk.DescribeMLModelsInputwait
 import typings.awsSdk.awsSdkStrings.batchPredictionAvailable
 import typings.awsSdk.awsSdkStrings.dataSourceAvailable
 import typings.awsSdk.awsSdkStrings.evaluationAvailable
@@ -389,11 +392,11 @@ trait MachineLearning extends Service {
     * Waits for the batchPredictionAvailable state by periodically calling the underlying MachineLearning.describeBatchPredictionsoperation every 30 seconds (at most 60 times).
     */
   @JSName("waitFor")
-  def waitFor_batchPredictionAvailable(state: batchPredictionAvailable, params: DescribeBatchPredictionsInput with AnonWaiter): Request[DescribeBatchPredictionsOutput, AWSError] = js.native
+  def waitFor_batchPredictionAvailable(state: batchPredictionAvailable, params: DescribeBatchPredictionsI): Request[DescribeBatchPredictionsOutput, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_batchPredictionAvailable(
     state: batchPredictionAvailable,
-    params: DescribeBatchPredictionsInput with AnonWaiter,
+    params: DescribeBatchPredictionsI,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeBatchPredictionsOutput, Unit]
   ): Request[DescribeBatchPredictionsOutput, AWSError] = js.native
   /**
@@ -410,11 +413,11 @@ trait MachineLearning extends Service {
     * Waits for the dataSourceAvailable state by periodically calling the underlying MachineLearning.describeDataSourcesoperation every 30 seconds (at most 60 times).
     */
   @JSName("waitFor")
-  def waitFor_dataSourceAvailable(state: dataSourceAvailable, params: DescribeDataSourcesInput with AnonWaiter): Request[DescribeDataSourcesOutput, AWSError] = js.native
+  def waitFor_dataSourceAvailable(state: dataSourceAvailable, params: DescribeDataSourcesInputw): Request[DescribeDataSourcesOutput, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_dataSourceAvailable(
     state: dataSourceAvailable,
-    params: DescribeDataSourcesInput with AnonWaiter,
+    params: DescribeDataSourcesInputw,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeDataSourcesOutput, Unit]
   ): Request[DescribeDataSourcesOutput, AWSError] = js.native
   /**
@@ -431,11 +434,11 @@ trait MachineLearning extends Service {
     * Waits for the evaluationAvailable state by periodically calling the underlying MachineLearning.describeEvaluationsoperation every 30 seconds (at most 60 times).
     */
   @JSName("waitFor")
-  def waitFor_evaluationAvailable(state: evaluationAvailable, params: DescribeEvaluationsInput with AnonWaiter): Request[DescribeEvaluationsOutput, AWSError] = js.native
+  def waitFor_evaluationAvailable(state: evaluationAvailable, params: DescribeEvaluationsInputw): Request[DescribeEvaluationsOutput, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_evaluationAvailable(
     state: evaluationAvailable,
-    params: DescribeEvaluationsInput with AnonWaiter,
+    params: DescribeEvaluationsInputw,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeEvaluationsOutput, Unit]
   ): Request[DescribeEvaluationsOutput, AWSError] = js.native
   /**
@@ -452,11 +455,11 @@ trait MachineLearning extends Service {
     * Waits for the mLModelAvailable state by periodically calling the underlying MachineLearning.describeMLModelsoperation every 30 seconds (at most 60 times).
     */
   @JSName("waitFor")
-  def waitFor_mLModelAvailable(state: mLModelAvailable, params: DescribeMLModelsInput with AnonWaiter): Request[DescribeMLModelsOutput, AWSError] = js.native
+  def waitFor_mLModelAvailable(state: mLModelAvailable, params: DescribeMLModelsInputwait): Request[DescribeMLModelsOutput, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_mLModelAvailable(
     state: mLModelAvailable,
-    params: DescribeMLModelsInput with AnonWaiter,
+    params: DescribeMLModelsInputwait,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeMLModelsOutput, Unit]
   ): Request[DescribeMLModelsOutput, AWSError] = js.native
 }

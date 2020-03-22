@@ -31,7 +31,7 @@ class Waypoint protected () extends js.Object {
 object Waypoint extends js.Object {
   var Adapter: WaypointAdapter = js.native
   // Waypoint.Context
-  var Context: AnonElement = js.native
+  var Context: AnonFindByElement = js.native
   var adapters: AnonPush = js.native
    // actually `null` not string
   // Class Methods

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "menubar" : "7.2.0"
+      "menubar" : "8.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "menubar" : "7.2.0"
+      "menubar" : "8.0.0"
     }
   ],
   "compile-devDependencies" : [

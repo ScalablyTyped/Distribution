@@ -1,6 +1,6 @@
 package typings.antDesignIconsAngular
 
-import typings.antDesignIconsAngular.antDesignIconsAngularTypesMod.IconDefinition
+import typings.antDesignIconsAngular.typesMod.IconDefinition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

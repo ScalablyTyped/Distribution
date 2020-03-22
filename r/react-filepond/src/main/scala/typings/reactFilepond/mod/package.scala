@@ -5,12 +5,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mod {
-  // Note that this duplicates the JS File type declaration, but is necessary
-  // to avoid duplicating the name 'File' in this module
-  // see: https://developer.mozilla.org/en-US/docs/Web/API/File
-  // see: https://github.com/Microsoft/dtslint/issues/173
-  // see: https://stackoverflow.com/q/53876793/2517147
-  type ActualFileObject = typings.std.Blob with typings.reactFilepond.AnonLastModified
   type FetchServerConfigFunction = js.Function6[
     /* url */ java.lang.String, 
     /* load */ js.Function1[/* file */ typings.reactFilepond.mod.ActualFileObject, scala.Unit], 

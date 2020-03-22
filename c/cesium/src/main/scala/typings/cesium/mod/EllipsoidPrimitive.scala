@@ -1,6 +1,6 @@
 package typings.cesium.mod
 
-import typings.cesium.AnonCenterDebugShowBoundingVolume
+import typings.cesium.AnonDebugShowBoundingVolume
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("cesium", "EllipsoidPrimitive")
 @js.native
 class EllipsoidPrimitive () extends js.Object {
-  def this(options: AnonCenterDebugShowBoundingVolume) = this()
+  def this(options: AnonDebugShowBoundingVolume) = this()
   var center: Cartesian3 = js.native
   var debugShowBoundingVolume: Boolean = js.native
   var id: js.Any = js.native

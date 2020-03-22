@@ -1,7 +1,7 @@
 package typings.exceljs.mod.stream.xlsx
 
+import typings.exceljs.PartialArchiverZipOptions
 import typings.node.streamMod.Stream
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ trait WorkbookStreamWriterOptions extends WorkbookWriterOptions {
     * Specifies whether to add style information to the workbook.
     * Styles can add some performance overhead. Default is false
     */
-  var zip: Partial[ArchiverZipOptions]
+  var zip: PartialArchiverZipOptions
 }
 
 object WorkbookStreamWriterOptions {
@@ -21,7 +21,7 @@ object WorkbookStreamWriterOptions {
     stream: Stream,
     useSharedStrings: Boolean,
     useStyles: Boolean,
-    zip: Partial[ArchiverZipOptions]
+    zip: PartialArchiverZipOptions
   ): WorkbookStreamWriterOptions = {
     val __obj = js.Dynamic.literal(filename = filename.asInstanceOf[js.Any], stream = stream.asInstanceOf[js.Any], useSharedStrings = useSharedStrings.asInstanceOf[js.Any], useStyles = useStyles.asInstanceOf[js.Any], zip = zip.asInstanceOf[js.Any])
   

@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 object resolverMapMod extends js.Object {
   type GraphQLResolverMap[TContext] = StringDictionary[
     (StringDictionary[
-      AnonArgName[TContext] | Double | (GraphQLFieldResolver[js.Any, TContext, StringDictionary[js.Any]]) | String
+      AnonRequires[TContext] | Double | (GraphQLFieldResolver[js.Any, TContext, StringDictionary[js.Any]]) | String
     ]) | GraphQLScalarType
   ]
 }

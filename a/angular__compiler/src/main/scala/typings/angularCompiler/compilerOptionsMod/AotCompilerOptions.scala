@@ -1,7 +1,6 @@
 package typings.angularCompiler.compilerOptionsMod
 
 import typings.angularCompiler.angularCompilerStrings.ngtsc
-import typings.angularCompiler.angularCompilerStrings.tsc
 import typings.angularCompiler.coreMod.MissingTranslationStrategy
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait AotCompilerOptions extends js.Object {
   var allowEmptyCodegenFiles: js.UndefOr[Boolean] = js.undefined
   var createExternalSymbolFactoryReexports: js.UndefOr[Boolean] = js.undefined
-  var enableIvy: js.UndefOr[Boolean | ngtsc | tsc] = js.undefined
+  var enableIvy: js.UndefOr[Boolean | ngtsc] = js.undefined
   var enableSummariesForJit: js.UndefOr[Boolean] = js.undefined
   var fullTemplateTypeCheck: js.UndefOr[Boolean] = js.undefined
   var i18nFormat: js.UndefOr[String] = js.undefined
@@ -27,7 +26,7 @@ object AotCompilerOptions {
   def apply(
     allowEmptyCodegenFiles: js.UndefOr[Boolean] = js.undefined,
     createExternalSymbolFactoryReexports: js.UndefOr[Boolean] = js.undefined,
-    enableIvy: Boolean | ngtsc | tsc = null,
+    enableIvy: Boolean | ngtsc = null,
     enableSummariesForJit: js.UndefOr[Boolean] = js.undefined,
     fullTemplateTypeCheck: js.UndefOr[Boolean] = js.undefined,
     i18nFormat: String = null,

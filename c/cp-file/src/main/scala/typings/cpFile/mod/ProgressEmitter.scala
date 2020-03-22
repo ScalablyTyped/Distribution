@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ProgressEmitter extends js.Object {
   /**
-  		For empty files, the `progress` event is emitted only once.
+  		Note: For empty files, the `progress` event is emitted only once.
   		*/
   @JSName("on")
   def on_progress(event: progress, handler: js.Function1[/* data */ ProgressData, Unit]): js.Promise[Unit]

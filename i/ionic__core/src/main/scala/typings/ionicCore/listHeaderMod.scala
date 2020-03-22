@@ -1,5 +1,8 @@
 package typings.ionicCore
 
+import typings.ionicCore.ionicCoreStrings.full
+import typings.ionicCore.ionicCoreStrings.inset
+import typings.ionicCore.ionicCoreStrings.none
 import typings.ionicCore.mod.Color
 import typings.ionicCore.stencilCoreMod.ComponentInterface
 import scala.scalajs.js
@@ -17,6 +20,10 @@ object listHeaderMod extends js.Object {
       * For more information on colors, see [theming](/docs/theming/basics).
       */
     var color: js.UndefOr[Color] = js.native
+    /**
+      * How the bottom border should be displayed on the list header.
+      */
+    var lines: js.UndefOr[full | inset | none] = js.native
     @JSName("render")
     def render_MListHeader(): js.Any = js.native
   }

@@ -68,10 +68,10 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     *
     * _Supported in Flex Layout_
     *
-    * |  Chrome  | Firefox | Safari |  Edge  |   IE   |
-    * | :------: | :-----: | :----: | :----: | :----: |
-    * |  **36**  | **20**  | **9**  | **12** | **11** |
-    * | 21 _-x-_ |         |        |        |        |
+    * |  Chrome  | Firefox |  Safari   |  Edge  |   IE   |
+    * | :------: | :-----: | :-------: | :----: | :----: |
+    * |  **36**  | **20**  |   **9**   | **12** | **11** |
+    * | 21 _-x-_ |         | 6.1 _-x-_ |        |        |
     *
     * ---
     *
@@ -203,13 +203,25 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var appearance: js.UndefOr[AppearanceProperty | js.Array[AppearanceProperty]] = js.undefined
   /**
+    * The **`aspect-ratio`**    CSS property sets a _**preferred aspect ratio**_ for the box, which will be used in the calculation of auto sizes and some other layout functions.
+    *
+    * **Initial value**: `auto`
+    *
+    * | Chrome | Firefox | Safari | Edge | IE  |
+    * | :----: | :-----: | :----: | :--: | :-: |
+    * | **79** | **71**  |   No   |  No  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/aspect-ratio
+    */
+  var aspectRatio: js.UndefOr[AspectRatioProperty | js.Array[AspectRatioProperty]] = js.undefined
+  /**
     * The **`backdrop-filter`** CSS property lets you apply graphical effects such as blurring or color shifting to the area behind an element. Because it applies to everything _behind_ the element, to see the effect you must make the element or its background at least partially transparent.
     *
     * **Initial value**: `none`
     *
     * | Chrome | Firefox |   Safari    |  Edge  | IE  |
     * | :----: | :-----: | :---------: | :----: | :-: |
-    * | **76** |   No    | **9** _-x-_ | **17** | No  |
+    * | **76** |   n/a   | **9** _-x-_ | **17** | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/backdrop-filter
     */
@@ -219,10 +231,10 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     *
     * **Initial value**: `visible`
     *
-    * |  Chrome  | Firefox  | Safari |  Edge  |   IE   |
-    * | :------: | :------: | :----: | :----: | :----: |
-    * |  **36**  |  **16**  |  Yes   | **12** | **10** |
-    * | 12 _-x-_ | 10 _-x-_ |        |        |        |
+    * |  Chrome  | Firefox  |    Safari     |  Edge  |   IE   |
+    * | :------: | :------: | :-----------: | :----: | :----: |
+    * |  **36**  |  **16**  | **5.1** _-x-_ | **12** | **10** |
+    * | 12 _-x-_ | 10 _-x-_ |               |        |        |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/backface-visibility
     */
@@ -475,7 +487,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * |  n/a   | **66**  |   No   |  No  | No  |
+    * | **69** | **66**  |   No   |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/border-block-style
     */
@@ -487,7 +499,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * |  n/a   | **66**  |   No   |  No  | No  |
+    * | **69** | **66**  |   No   |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/border-block-width
     */
@@ -669,7 +681,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * |  n/a   | **66**  |   No   |  No  | No  |
+    * | **69** | **66**  |   No   |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/border-inline-color
     */
@@ -762,7 +774,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * |  n/a   | **66**  |   No   |  No  | No  |
+    * | **69** | **66**  |   No   |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/border-inline-style
     */
@@ -774,7 +786,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * |  n/a   | **66**  |   No   |  No  | No  |
+    * | **69** | **66**  |   No   |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/border-inline-width
     */
@@ -976,9 +988,9 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     *
     * **Initial value**: `slice`
     *
-    * |    Chrome    | Firefox | Safari  | Edge | IE  |
-    * | :----------: | :-----: | :-----: | :--: | :-: |
-    * | **22** _-x-_ | **32**  | **6.1** |  No  | No  |
+    * |    Chrome    | Firefox |    Safari     | Edge | IE  |
+    * | :----------: | :-----: | :-----------: | :--: | :-: |
+    * | **22** _-x-_ | **32**  | **6.1** _-x-_ |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/box-decoration-break
     */
@@ -1004,7 +1016,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     * | Chrome  | Firefox | Safari  |  Edge  |  IE   |
     * | :-----: | :-----: | :-----: | :----: | :---: |
     * | **10**  | **29**  | **5.1** | **12** | **8** |
-    * | 1 _-x-_ | 1 _-x-_ |         |        |       |
+    * | 1 _-x-_ | 1 _-x-_ | 3 _-x-_ |        |       |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/box-sizing
     */
@@ -1152,10 +1164,10 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     *
     * **Initial value**: `none`
     *
-    * |  Chrome  | Firefox |   Safari    |  Edge  |   IE   |
-    * | :------: | :-----: | :---------: | :----: | :----: |
-    * |  **55**  | **3.5** | **7** _-x-_ | **12** | **10** |
-    * | 24 _-x-_ |         |             |        |        |
+    * |  Chrome  | Firefox |  Safari   |  Edge  |   IE   |
+    * | :------: | :-----: | :-------: | :----: | :----: |
+    * |  **55**  | **3.5** |  **9.1**  | **12** | **10** |
+    * | 23 _-x-_ |         | 6.1 _-x-_ |        |        |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/clip-path
     */
@@ -1167,7 +1179,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari |  Edge  |  IE   |
     * | :----: | :-----: | :----: | :----: | :---: |
-    * | **1**  |  **1**  |  Yes   | **12** | **3** |
+    * | **1**  |  **1**  | **1**  | **12** | **3** |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/color
     */
@@ -1189,10 +1201,10 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     *
     * **Initial value**: `auto`
     *
-    * | Chrome |  Firefox  | Safari  |  Edge  |   IE   |
-    * | :----: | :-------: | :-----: | :----: | :----: |
-    * | **50** |  **52**   |  **9**  | **12** | **10** |
-    * |        | 1.5 _-x-_ | 3 _-x-_ |        |        |
+    * | Chrome  | Firefox | Safari  |  Edge  |   IE   |
+    * | :-----: | :-----: | :-----: | :----: | :----: |
+    * | **50**  | **52**  |  **9**  | **12** | **10** |
+    * | 1 _-x-_ |         | 3 _-x-_ |        |        |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/column-count
     */
@@ -1202,10 +1214,10 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     *
     * **Initial value**: `balance`
     *
-    * | Chrome | Firefox  | Safari  |  Edge  |   IE   |
-    * | :----: | :------: | :-----: | :----: | :----: |
-    * | **50** |  **52**  |  **9**  | **12** | **10** |
-    * |        | 13 _-x-_ | 8 _-x-_ |        |        |
+    * | Chrome | Firefox | Safari  |  Edge  |   IE   |
+    * | :----: | :-----: | :-----: | :----: | :----: |
+    * | **50** | **52**  |  **9**  | **12** | **10** |
+    * |        |         | 8 _-x-_ |        |        |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/column-fill
     */
@@ -1236,10 +1248,10 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     *
     * _Supported in Multi-column Layout_
     *
-    * | Chrome |  Firefox  | Safari  |  Edge  |   IE   |
-    * | :----: | :-------: | :-----: | :----: | :----: |
-    * | **50** |  **52**   | **10**  | **12** | **10** |
-    * |        | 1.5 _-x-_ | 3 _-x-_ |        |        |
+    * | Chrome  | Firefox | Safari  |  Edge  |   IE   |
+    * | :-----: | :-----: | :-----: | :----: | :----: |
+    * | **50**  | **52**  | **10**  | **12** | **10** |
+    * | 1 _-x-_ |         | 3 _-x-_ |        |        |
     *
     * ---
     *
@@ -1251,10 +1263,10 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     *
     * **Initial value**: `currentcolor`
     *
-    * | Chrome |  Firefox  | Safari  |  Edge  |   IE   |
-    * | :----: | :-------: | :-----: | :----: | :----: |
-    * | **50** |  **52**   |  **9**  | **12** | **10** |
-    * |        | 3.5 _-x-_ | 3 _-x-_ |        |        |
+    * | Chrome  | Firefox | Safari  |  Edge  |   IE   |
+    * | :-----: | :-----: | :-----: | :----: | :----: |
+    * | **50**  | **52**  |  **9**  | **12** | **10** |
+    * | 1 _-x-_ |         | 3 _-x-_ |        |        |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/column-rule-color
     */
@@ -1264,10 +1276,10 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     *
     * **Initial value**: `none`
     *
-    * | Chrome |  Firefox  | Safari  |  Edge  |   IE   |
-    * | :----: | :-------: | :-----: | :----: | :----: |
-    * | **50** |  **52**   |  **9**  | **12** | **10** |
-    * |        | 3.5 _-x-_ | 3 _-x-_ |        |        |
+    * | Chrome  | Firefox | Safari  |  Edge  |   IE   |
+    * | :-----: | :-----: | :-----: | :----: | :----: |
+    * | **50**  | **52**  |  **9**  | **12** | **10** |
+    * | 1 _-x-_ |         | 3 _-x-_ |        |        |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/column-rule-style
     */
@@ -1277,10 +1289,10 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     *
     * **Initial value**: `medium`
     *
-    * | Chrome |  Firefox  | Safari  |  Edge  |   IE   |
-    * | :----: | :-------: | :-----: | :----: | :----: |
-    * | **50** |  **50**   |  **9**  | **12** | **10** |
-    * |        | 3.5 _-x-_ | 3 _-x-_ |        |        |
+    * | Chrome  | Firefox | Safari  |  Edge  |   IE   |
+    * | :-----: | :-----: | :-----: | :----: | :----: |
+    * | **50**  | **52**  |  **9**  | **12** | **10** |
+    * | 1 _-x-_ |         | 3 _-x-_ |        |        |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/column-rule-width
     */
@@ -1292,7 +1304,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     *
     * | Chrome  | Firefox |  Safari   |  Edge  |   IE   |
     * | :-----: | :-----: | :-------: | :----: | :----: |
-    * | **50**  |   n/a   |   **9**   | **12** | **10** |
+    * | **50**  | **71**  |   **9**   | **12** | **10** |
     * | 6 _-x-_ |         | 5.1 _-x-_ |        |        |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/column-span
@@ -1303,10 +1315,10 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     *
     * **Initial value**: `auto`
     *
-    * | Chrome |  Firefox  | Safari  |  Edge  |   IE   |
-    * | :----: | :-------: | :-----: | :----: | :----: |
-    * | **50** |  **50**   |  **9**  | **12** | **10** |
-    * |        | 1.5 _-x-_ | 3 _-x-_ |        |        |
+    * | Chrome  | Firefox | Safari  |  Edge  |   IE   |
+    * | :-----: | :-----: | :-----: | :----: | :----: |
+    * | **50**  | **50**  |  **9**  | **12** | **10** |
+    * | 1 _-x-_ |         | 3 _-x-_ |        |        |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/column-width
     */
@@ -1318,7 +1330,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * | **52** |   n/a   |   No   |  No  | No  |
+    * | **52** | **69**  |   No   |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/contain
     */
@@ -1440,7 +1452,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     * |  Chrome  | Firefox | Safari  |  Edge  |   IE   |
     * | :------: | :-----: | :-----: | :----: | :----: |
     * |  **29**  | **22**  |  **9**  | **12** | **11** |
-    * | 21 _-x-_ |         | 7 _-x-_ |        |        |
+    * | 22 _-x-_ |         | 7 _-x-_ |        |        |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/flex-basis
     */
@@ -1466,7 +1478,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     * |  Chrome  | Firefox |  Safari   |  Edge  |            IE            |
     * | :------: | :-----: | :-------: | :----: | :----------------------: |
     * |  **29**  | **20**  |   **9**   | **12** |          **11**          |
-    * | 21 _-x-_ |         | 6.1 _-x-_ |        | 10 _(-ms-flex-positive)_ |
+    * | 22 _-x-_ |         | 6.1 _-x-_ |        | 10 _(-ms-flex-positive)_ |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/flex-grow
     */
@@ -1479,7 +1491,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     * |  Chrome  | Firefox | Safari  |  Edge  |   IE   |
     * | :------: | :-----: | :-----: | :----: | :----: |
     * |  **29**  | **20**  |  **9**  | **12** | **10** |
-    * | 21 _-x-_ |         | 8 _-x-_ |        |        |
+    * | 22 _-x-_ |         | 8 _-x-_ |        |        |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/flex-shrink
     */
@@ -1489,10 +1501,10 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     *
     * **Initial value**: `nowrap`
     *
-    * |  Chrome  | Firefox | Safari |  Edge  |   IE   |
-    * | :------: | :-----: | :----: | :----: | :----: |
-    * |  **29**  | **28**  | **9**  | **12** | **11** |
-    * | 21 _-x-_ |         |        |        |        |
+    * |  Chrome  | Firefox |  Safari   |  Edge  |   IE   |
+    * | :------: | :-----: | :-------: | :----: | :----: |
+    * |  **29**  | **28**  |   **9**   | **12** | **11** |
+    * | 21 _-x-_ |         | 6.1 _-x-_ |        |        |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/flex-wrap
     */
@@ -1566,7 +1578,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari |  Edge  | IE  |
     * | :----: | :-----: | :----: | :----: | :-: |
-    * |   No   | **62**  |  n/a   | **17** | No  |
+    * | **79** | **62**  | **11** | **17** | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/font-optical-sizing
     */
@@ -1590,7 +1602,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * |  n/a   |  **1**  |   No   |  No  | No  |
+    * | **54** |  **1**  |   No   |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/font-size-adjust
     */
@@ -1735,7 +1747,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     *
     * | Chrome | Firefox |  Safari  |          Edge           |             IE              |
     * | :----: | :-----: | :------: | :---------------------: | :-------------------------: |
-    * | **57** | **52**  | **10.1** |         **16**          | **10** _(-ms-grid-columns)_ |
+    * | **57** | **70**  | **10.1** |         **16**          | **10** _(-ms-grid-columns)_ |
     * |        |         |          | 12 _(-ms-grid-columns)_ |                             |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/grid-auto-columns
@@ -1760,7 +1772,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     *
     * | Chrome | Firefox |  Safari  |         Edge         |            IE            |
     * | :----: | :-----: | :------: | :------------------: | :----------------------: |
-    * | **57** | **52**  | **10.1** |        **16**        | **10** _(-ms-grid-rows)_ |
+    * | **57** | **70**  | **10.1** |        **16**        | **10** _(-ms-grid-rows)_ |
     * |        |         |          | 12 _(-ms-grid-rows)_ |                          |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/grid-auto-rows
@@ -1908,7 +1920,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * |  Yes   | **3.6** |  Yes   |  No  | No  |
+    * | **13** | **3.6** | **6**  |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/image-rendering
     */
@@ -2030,7 +2042,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * | **41** | **36**  |  Yes   |  No  | No  |
+    * | **41** | **36**  | **8**  |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/isolation
     */
@@ -2044,10 +2056,10 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     *
     * _Supported in Flex Layout_
     *
-    * |  Chrome  | Firefox | Safari |  Edge  |   IE   |
-    * | :------: | :-----: | :----: | :----: | :----: |
-    * |  **52**  | **20**  | **9**  | **12** | **11** |
-    * | 21 _-x-_ |         |        |        |        |
+    * |  Chrome  | Firefox |  Safari   |  Edge  |   IE   |
+    * | :------: | :-----: | :-------: | :----: | :----: |
+    * |  **52**  | **20**  |   **9**   | **12** | **11** |
+    * | 21 _-x-_ |         | 6.1 _-x-_ |        |        |
     *
     * ---
     *
@@ -2145,7 +2157,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     *
     * | Chrome  | Firefox |   Safari    |  Edge  |   IE    |
     * | :-----: | :-----: | :---------: | :----: | :-----: |
-    * | **58**  |   No    | **3** _-x-_ | **14** | **5.5** |
+    * | **58**  | **69**  | **3** _-x-_ | **14** | **5.5** |
     * | 1 _-x-_ |         |             |        |         |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/line-break
@@ -2218,7 +2230,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * |  n/a   | **66**  |   No   |  No  | No  |
+    * | **69** | **66**  |   No   |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/margin-block
     */
@@ -2266,7 +2278,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * |  n/a   | **66**  |   No   |  No  | No  |
+    * | **69** | **66**  |   No   |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/margin-inline
     */
@@ -2472,9 +2484,9 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     *
     * **Initial value**: `luminance`
     *
-    * | Chrome | Firefox | Safari | Edge | IE  |
-    * | :----: | :-----: | :----: | :--: | :-: |
-    * | **24** | **35**  |  n/a   |  No  | No  |
+    * | Chrome | Firefox | Safari  | Edge | IE  |
+    * | :----: | :-----: | :-----: | :--: | :-: |
+    * | **24** | **35**  | **6.1** |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/mask-type
     */
@@ -2597,7 +2609,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     *
     * |         Chrome         | Firefox | Safari | Edge | IE  |
     * | :--------------------: | :-----: | :----: | :--: | :-: |
-    * |         **55**         |   No    |   No   |  No  | No  |
+    * |         **55**         | **72**  |   No   |  No  | No  |
     * | 46 _(motion-distance)_ |         |        |      |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/offset-distance
@@ -2610,7 +2622,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     *
     * |       Chrome       | Firefox | Safari | Edge | IE  |
     * | :----------------: | :-----: | :----: | :--: | :-: |
-    * |       **55**       |   n/a   |   No   |  No  | No  |
+    * |       **55**       | **72**  |   No   |  No  | No  |
     * | 46 _(motion-path)_ |         |        |      |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/offset-path
@@ -2623,7 +2635,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     *
     * |         Chrome         | Firefox | Safari | Edge | IE  |
     * | :--------------------: | :-----: | :----: | :--: | :-: |
-    * |         **56**         |   No    |   No   |  No  | No  |
+    * |         **56**         | **72**  |   No   |  No  | No  |
     * | 46 _(motion-rotation)_ |         |        |      |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/offset-rotate
@@ -2653,7 +2665,15 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     * @see https://developer.mozilla.org/docs/Web/CSS/object-position
     */
   var objectPosition: js.UndefOr[ObjectPositionProperty[TLength] | js.Array[ObjectPositionProperty[TLength]]] = js.undefined
-  /** **Initial value**: `auto` */
+  /**
+    * **Initial value**: `auto`
+    *
+    * | Chrome | Firefox | Safari | Edge | IE  |
+    * | :----: | :-----: | :----: | :--: | :-: |
+    * | **79** | **72**  |   No   |  No  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/offset-anchor
+    */
   var offsetAnchor: js.UndefOr[OffsetAnchorProperty[TLength] | js.Array[OffsetAnchorProperty[TLength]]] = js.undefined
   /**
     * The **`offset-distance`** CSS property specifies a position along an `offset-path`.
@@ -2662,7 +2682,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     *
     * |         Chrome         | Firefox | Safari | Edge | IE  |
     * | :--------------------: | :-----: | :----: | :--: | :-: |
-    * |         **55**         |   No    |   No   |  No  | No  |
+    * |         **55**         | **72**  |   No   |  No  | No  |
     * | 46 _(motion-distance)_ |         |        |      |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/offset-distance
@@ -2675,14 +2695,12 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     *
     * |       Chrome       | Firefox | Safari | Edge | IE  |
     * | :----------------: | :-----: | :----: | :--: | :-: |
-    * |       **55**       |   n/a   |   No   |  No  | No  |
+    * |       **55**       | **72**  |   No   |  No  | No  |
     * | 46 _(motion-path)_ |         |        |      |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/offset-path
     */
   var offsetPath: js.UndefOr[OffsetPathProperty | js.Array[OffsetPathProperty]] = js.undefined
-  /** **Initial value**: `auto` */
-  var offsetPosition: js.UndefOr[OffsetPositionProperty[TLength] | js.Array[OffsetPositionProperty[TLength]]] = js.undefined
   /**
     * The **`offset-rotate`** CSS property defines the direction of the element while positioning along the offset path.
     *
@@ -2690,7 +2708,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     *
     * |         Chrome         | Firefox | Safari | Edge | IE  |
     * | :--------------------: | :-----: | :----: | :--: | :-: |
-    * |         **56**         |   No    |   No   |  No  | No  |
+    * |         **56**         | **72**  |   No   |  No  | No  |
     * | 46 _(motion-rotation)_ |         |        |      |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/offset-rotate
@@ -2703,7 +2721,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     *
     * |         Chrome         | Firefox | Safari | Edge | IE  |
     * | :--------------------: | :-----: | :----: | :--: | :-: |
-    * |         **56**         |   No    |   No   |  No  | No  |
+    * |         **56**         | **72**  |   No   |  No  | No  |
     * | 46 _(motion-rotation)_ |         |        |      |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/offset-rotate
@@ -2720,7 +2738,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/opacity
     */
-  var opacity: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
+  var opacity: js.UndefOr[OpacityProperty | js.Array[OpacityProperty]] = js.undefined
   /**
     * The **`order`** CSS property sets the order to lay out an item in a flex or grid container. Items in a container are sorted by ascending `order` value and then by their source code order.
     *
@@ -2898,6 +2916,30 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var overscrollBehavior: js.UndefOr[OverscrollBehaviorProperty | js.Array[OverscrollBehaviorProperty]] = js.undefined
   /**
+    * The **`overscroll-behavior-block`** CSS property sets the browser's behavior when the block direction boundary of a scrolling area is reached.
+    *
+    * **Initial value**: `auto`
+    *
+    * | Chrome | Firefox | Safari | Edge | IE  |
+    * | :----: | :-----: | :----: | :--: | :-: |
+    * | **77** | **73**  |   No   |  No  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/overscroll-behavior-block
+    */
+  var overscrollBehaviorBlock: js.UndefOr[OverscrollBehaviorBlockProperty | js.Array[OverscrollBehaviorBlockProperty]] = js.undefined
+  /**
+    * The **`overscroll-behavior-inline`** CSS property sets the browser's behavior when the inline direction boundary of a scrolling area is reached.
+    *
+    * **Initial value**: `auto`
+    *
+    * | Chrome | Firefox | Safari | Edge | IE  |
+    * | :----: | :-----: | :----: | :--: | :-: |
+    * | **77** | **73**  |   No   |  No  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/overscroll-behavior-inline
+    */
+  var overscrollBehaviorInline: js.UndefOr[OverscrollBehaviorInlineProperty | js.Array[OverscrollBehaviorInlineProperty]] = js.undefined
+  /**
     * The **`overscroll-behavior-x`** CSS property sets the browser's behavior when the horizontal boundary of a scrolling area is reached.
     *
     * **Initial value**: `auto`
@@ -2928,7 +2970,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * |  n/a   | **66**  |   No   |  No  | No  |
+    * | **69** | **66**  |   No   |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/padding-block
     */
@@ -2978,7 +3020,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * |  n/a   | **66**  |   No   |  No  | No  |
+    * | **69** | **66**  |   No   |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/padding-inline
     */
@@ -3090,7 +3132,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari |  Edge  | IE  |
     * | :----: | :-----: | :----: | :----: | :-: |
-    * | **35** | **60**  |  Yes   | **17** | No  |
+    * | **35** | **60**  | **8**  | **17** | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/paint-order
     */
@@ -3134,7 +3176,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * | **59** | **45**  |  Yes   |  No  | No  |
+    * | **59** | **45**  | **9**  |  No  | No  |
     *
     * ---
     *
@@ -3142,15 +3184,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * | **59** | **53**  |  Yes   |  No  | No  |
-    *
-    * ---
-    *
-    * _You can only specify a single value if it is valid for both <code>align-content</code> and <code>justify-content</code>_
-    *
-    * | Chrome | Firefox | Safari | Edge | IE  |
-    * | :----: | :-----: | :----: | :--: | :-: |
-    * |  Yes   | **60**  |  Yes   |  No  | No  |
+    * | **59** | **53**  | **11** |  No  | No  |
     *
     * ---
     *
@@ -3224,7 +3258,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * |   No   |   n/a   |   No   |  No  | No  |
+    * |   No   | **72**  |   No   |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/rotate
     */
@@ -3289,7 +3323,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * |   No   |   n/a   |   No   |  No  | No  |
+    * |   No   | **72**  |   No   |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/scale
     */
@@ -3682,7 +3716,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/shape-image-threshold
     */
-  var shapeImageThreshold: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
+  var shapeImageThreshold: js.UndefOr[ShapeImageThresholdProperty | js.Array[ShapeImageThresholdProperty]] = js.undefined
   /**
     * The **`shape-margin`** CSS property sets a margin for a CSS shape created using `shape-outside`.
     *
@@ -3760,9 +3794,10 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     *
     * **Initial value**: `none`
     *
-    * | Chrome | Firefox | Safari |                  Edge                  |                   IE                   |
-    * | :----: | :-----: | :----: | :------------------------------------: | :------------------------------------: |
-    * | **48** | **48**  |  Yes   | **12** _(-ms-text-combine-horizontal)_ | **11** _(-ms-text-combine-horizontal)_ |
+    * |           Chrome           | Firefox |              Safari              |                  Edge                  |                   IE                   |
+    * | :------------------------: | :-----: | :------------------------------: | :------------------------------------: | :------------------------------------: |
+    * |           **48**           | **48**  | **5.1** _(-webkit-text-combine)_ | **12** _(-ms-text-combine-horizontal)_ | **11** _(-ms-text-combine-horizontal)_ |
+    * | 9 _(-webkit-text-combine)_ |         |                                  |                                        |                                        |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/text-combine-upright
     */
@@ -3775,6 +3810,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     * | Chrome | Firefox |  Safari  | Edge | IE  |
     * | :----: | :-----: | :------: | :--: | :-: |
     * | **57** | **36**  | **12.1** |  No  | No  |
+    * |        |         | 8 _-x-_  |      |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/text-decoration-color
     */
@@ -3787,6 +3823,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     * | Chrome | Firefox |  Safari  | Edge | IE  |
     * | :----: | :-----: | :------: | :--: | :-: |
     * | **57** | **36**  | **12.1** |  No  | No  |
+    * |        |         | 8 _-x-_  |      |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/text-decoration-line
     */
@@ -3811,7 +3848,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * | **64** |   No    |   No   |  No  | No  |
+    * | **64** | **70**  |   No   |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/text-decoration-skip-ink
     */
@@ -3824,18 +3861,47 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     * | Chrome | Firefox |  Safari  | Edge | IE  |
     * | :----: | :-----: | :------: | :--: | :-: |
     * | **57** | **36**  | **12.1** |  No  | No  |
+    * |        |         | 8 _-x-_  |      |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/text-decoration-style
     */
   var textDecorationStyle: js.UndefOr[TextDecorationStyleProperty | js.Array[TextDecorationStyleProperty]] = js.undefined
   /**
+    * The **`text-decoration-thickness`** CSS property sets the thickness, or width, of the decoration line that is used on text in an element, such as a line-through, underline, or overline.
+    *
+    * **Initial value**: `auto`
+    *
+    * | Chrome | Firefox |  Safari  | Edge | IE  |
+    * | :----: | :-----: | :------: | :--: | :-: |
+    * |   No   | **70**  | **12.1** |  No  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/text-decoration-thickness
+    */
+  var textDecorationThickness: js.UndefOr[
+    TextDecorationThicknessProperty[TLength] | js.Array[TextDecorationThicknessProperty[TLength]]
+  ] = js.undefined
+  /**
+    * The **`text-decoration-thickness`** CSS property sets the thickness, or width, of the decoration line that is used on text in an element, such as a line-through, underline, or overline.
+    *
+    * **Initial value**: `auto`
+    *
+    * | Chrome | Firefox |  Safari  | Edge | IE  |
+    * | :----: | :-----: | :------: | :--: | :-: |
+    * |   No   | **70**  | **12.1** |  No  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/text-decoration-thickness
+    */
+  var textDecorationWidth: js.UndefOr[
+    TextDecorationThicknessProperty[TLength] | js.Array[TextDecorationThicknessProperty[TLength]]
+  ] = js.undefined
+  /**
     * The **`text-emphasis-color`** CSS property sets the color of emphasis marks. This value can also be set using the `text-emphasis` shorthand.
     *
     * **Initial value**: `currentcolor`
     *
-    * |    Chrome    | Firefox |    Safari     | Edge | IE  |
-    * | :----------: | :-----: | :-----------: | :--: | :-: |
-    * | **25** _-x-_ | **46**  | **6.1** _-x-_ |  No  | No  |
+    * | Chrome | Firefox | Safari  | Edge | IE  |
+    * | :----: | :-----: | :-----: | :--: | :-: |
+    * | **25** | **46**  | **6.1** |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/text-emphasis-color
     */
@@ -3845,9 +3911,9 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     *
     * **Initial value**: `over right`
     *
-    * |    Chrome    | Firefox |    Safari     | Edge | IE  |
-    * | :----------: | :-----: | :-----------: | :--: | :-: |
-    * | **25** _-x-_ | **46**  | **6.1** _-x-_ |  No  | No  |
+    * | Chrome | Firefox | Safari  | Edge | IE  |
+    * | :----: | :-----: | :-----: | :--: | :-: |
+    * | **25** | **46**  | **6.1** |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/text-emphasis-position
     */
@@ -3857,9 +3923,9 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     *
     * **Initial value**: `none`
     *
-    * |    Chrome    | Firefox |    Safari     | Edge | IE  |
-    * | :----------: | :-----: | :-----------: | :--: | :-: |
-    * | **25** _-x-_ | **46**  | **6.1** _-x-_ |  No  | No  |
+    * | Chrome | Firefox | Safari  | Edge | IE  |
+    * | :----: | :-----: | :-----: | :--: | :-: |
+    * | **25** | **46**  | **6.1** |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/text-emphasis-style
     */
@@ -3883,7 +3949,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari |  Edge  |   IE   |
     * | :----: | :-----: | :----: | :----: | :----: |
-    * |  n/a   | **55**  |   No   | **14** | **11** |
+    * |  n/a   | **55**  |   No   | **12** | **11** |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/text-justify
     */
@@ -3893,9 +3959,10 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     *
     * **Initial value**: `mixed`
     *
-    * | Chrome | Firefox | Safari | Edge | IE  |
-    * | :----: | :-----: | :----: | :--: | :-: |
-    * | **48** | **41**  |   No   |  No  | No  |
+    * |  Chrome  | Firefox |    Safari     | Edge | IE  |
+    * | :------: | :-----: | :-----------: | :--: | :-: |
+    * |  **48**  | **41**  | **5.1** _-x-_ |  No  | No  |
+    * | 11 _-x-_ |         |               |      |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/text-orientation
     */
@@ -3961,6 +4028,20 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var textTransform: js.UndefOr[TextTransformProperty | js.Array[TextTransformProperty]] = js.undefined
   /**
+    * The **`text-underline-offset`** CSS property sets the offset distance of an underline text decoration line (applied using `text-decoration`) from its original position.
+    *
+    * **Initial value**: `auto`
+    *
+    * | Chrome | Firefox |  Safari  | Edge | IE  |
+    * | :----: | :-----: | :------: | :--: | :-: |
+    * |   No   | **70**  | **12.1** |  No  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/text-underline-offset
+    */
+  var textUnderlineOffset: js.UndefOr[
+    TextUnderlineOffsetProperty[TLength] | js.Array[TextUnderlineOffsetProperty[TLength]]
+  ] = js.undefined
+  /**
     * The **`text-underline-position`** CSS property specifies the position of the underline which is set using the `text-decoration` property's `underline` value.
     *
     * **Initial value**: `auto`
@@ -4002,10 +4083,10 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     *
     * **Initial value**: `none`
     *
-    * | Chrome | Firefox |  Safari   |  Edge  |   IE    |
-    * | :----: | :-----: | :-------: | :----: | :-----: |
-    * | **36** | **16**  |   **9**   | **12** | **10**  |
-    * |        |         | 3.1 _-x-_ |        | 9 _-x-_ |
+    * | Chrome  | Firefox |  Safari   |  Edge  |   IE    |
+    * | :-----: | :-----: | :-------: | :----: | :-----: |
+    * | **36**  | **16**  |   **9**   | **12** | **10**  |
+    * | 1 _-x-_ |         | 3.1 _-x-_ |        | 9 _-x-_ |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/transform
     */
@@ -4017,7 +4098,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * | **64** | **55**  |  n/a   |  No  | No  |
+    * | **64** | **55**  | **11** |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/transform-box
     */
@@ -4027,10 +4108,10 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     *
     * **Initial value**: `50% 50% 0`
     *
-    * | Chrome |  Firefox  |  Safari   |  Edge  |   IE    |
-    * | :----: | :-------: | :-------: | :----: | :-----: |
-    * | **36** |  **16**   |   **9**   | **12** | **10**  |
-    * |        | 3.5 _-x-_ | 3.1 _-x-_ |        | 9 _-x-_ |
+    * | Chrome  |  Firefox  | Safari  |  Edge  |   IE    |
+    * | :-----: | :-------: | :-----: | :----: | :-----: |
+    * | **36**  |  **16**   |  **9**  | **12** | **10**  |
+    * | 1 _-x-_ | 3.5 _-x-_ | 2 _-x-_ |        | 9 _-x-_ |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/transform-origin
     */
@@ -4107,7 +4188,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * |   No   |   n/a   |   No   |  No  | No  |
+    * |   No   | **72**  |   No   |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/translate
     */
@@ -4132,7 +4213,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     * | Chrome  | Firefox |   Safari    |     Edge     |      IE      |
     * | :-----: | :-----: | :---------: | :----------: | :----------: |
     * | **54**  | **69**  | **3** _-x-_ | **12** _-x-_ | **10** _-x-_ |
-    * | 6 _-x-_ | 1 _-x-_ |             |              |              |
+    * | 1 _-x-_ | 1 _-x-_ |             |              |              |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/user-select
     */
@@ -4192,7 +4273,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari |  Edge  |  IE   |
     * | :----: | :-----: | :----: | :----: | :---: |
-    * |  Yes   |  **1**  | **1**  | **12** | **4** |
+    * | **1**  |  **1**  | **1**  | **12** | **4** |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/width
     */
@@ -4250,9 +4331,10 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     *
     * **Initial value**: `horizontal-tb`
     *
-    * |   Chrome    | Firefox |    Safari     |  Edge  |     IE      |
-    * | :---------: | :-----: | :-----------: | :----: | :---------: |
-    * | **8** _-x-_ | **41**  | **5.1** _-x-_ | **12** | **9** _-x-_ |
+    * | Chrome  | Firefox |  Safari   |  Edge  |     IE      |
+    * | :-----: | :-----: | :-------: | :----: | :---------: |
+    * | **48**  | **41**  | **10.1**  | **12** | **9** _-x-_ |
+    * | 8 _-x-_ |         | 5.1 _-x-_ |        |             |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/writing-mode
     */
@@ -4281,522 +4363,5 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     * @see https://developer.mozilla.org/docs/Web/CSS/zoom
     */
   var zoom: js.UndefOr[ZoomProperty | js.Array[ZoomProperty]] = js.undefined
-}
-
-object StandardLonghandPropertiesFallback {
-  @scala.inline
-  def apply[TLength](
-    alignContent: AlignContentProperty | js.Array[AlignContentProperty] = null,
-    alignItems: AlignItemsProperty | js.Array[AlignItemsProperty] = null,
-    alignSelf: AlignSelfProperty | js.Array[AlignSelfProperty] = null,
-    animationDelay: GlobalsString | js.Array[GlobalsString] = null,
-    animationDirection: AnimationDirectionProperty | js.Array[AnimationDirectionProperty] = null,
-    animationDuration: GlobalsString | js.Array[GlobalsString] = null,
-    animationFillMode: AnimationFillModeProperty | js.Array[AnimationFillModeProperty] = null,
-    animationIterationCount: AnimationIterationCountProperty | js.Array[AnimationIterationCountProperty] = null,
-    animationName: AnimationNameProperty | js.Array[AnimationNameProperty] = null,
-    animationPlayState: AnimationPlayStateProperty | js.Array[AnimationPlayStateProperty] = null,
-    animationTimingFunction: AnimationTimingFunctionProperty | js.Array[AnimationTimingFunctionProperty] = null,
-    appearance: AppearanceProperty | js.Array[AppearanceProperty] = null,
-    backdropFilter: BackdropFilterProperty | js.Array[BackdropFilterProperty] = null,
-    backfaceVisibility: BackfaceVisibilityProperty | js.Array[BackfaceVisibilityProperty] = null,
-    backgroundAttachment: BackgroundAttachmentProperty | js.Array[BackgroundAttachmentProperty] = null,
-    backgroundBlendMode: BackgroundBlendModeProperty | js.Array[BackgroundBlendModeProperty] = null,
-    backgroundClip: BackgroundClipProperty | js.Array[BackgroundClipProperty] = null,
-    backgroundColor: BackgroundColorProperty | js.Array[BackgroundColorProperty] = null,
-    backgroundImage: BackgroundImageProperty | js.Array[BackgroundImageProperty] = null,
-    backgroundOrigin: BackgroundOriginProperty | js.Array[BackgroundOriginProperty] = null,
-    backgroundPosition: BackgroundPositionProperty[TLength] | js.Array[BackgroundPositionProperty[TLength]] = null,
-    backgroundPositionX: BackgroundPositionXProperty[TLength] | js.Array[BackgroundPositionXProperty[TLength]] = null,
-    backgroundPositionY: BackgroundPositionYProperty[TLength] | js.Array[BackgroundPositionYProperty[TLength]] = null,
-    backgroundRepeat: BackgroundRepeatProperty | js.Array[BackgroundRepeatProperty] = null,
-    backgroundSize: BackgroundSizeProperty[TLength] | js.Array[BackgroundSizeProperty[TLength]] = null,
-    blockOverflow: BlockOverflowProperty | js.Array[BlockOverflowProperty] = null,
-    blockSize: BlockSizeProperty[TLength] | js.Array[BlockSizeProperty[TLength]] = null,
-    borderBlockColor: BorderBlockColorProperty | js.Array[BorderBlockColorProperty] = null,
-    borderBlockEndColor: BorderBlockEndColorProperty | js.Array[BorderBlockEndColorProperty] = null,
-    borderBlockEndStyle: BorderBlockEndStyleProperty | js.Array[BorderBlockEndStyleProperty] = null,
-    borderBlockEndWidth: BorderBlockEndWidthProperty[TLength] | js.Array[BorderBlockEndWidthProperty[TLength]] = null,
-    borderBlockStartColor: BorderBlockStartColorProperty | js.Array[BorderBlockStartColorProperty] = null,
-    borderBlockStartStyle: BorderBlockStartStyleProperty | js.Array[BorderBlockStartStyleProperty] = null,
-    borderBlockStartWidth: BorderBlockStartWidthProperty[TLength] | js.Array[BorderBlockStartWidthProperty[TLength]] = null,
-    borderBlockStyle: BorderBlockStyleProperty | js.Array[BorderBlockStyleProperty] = null,
-    borderBlockWidth: BorderBlockWidthProperty[TLength] | js.Array[BorderBlockWidthProperty[TLength]] = null,
-    borderBottomColor: BorderBottomColorProperty | js.Array[BorderBottomColorProperty] = null,
-    borderBottomLeftRadius: BorderBottomLeftRadiusProperty[TLength] | js.Array[BorderBottomLeftRadiusProperty[TLength]] = null,
-    borderBottomRightRadius: BorderBottomRightRadiusProperty[TLength] | js.Array[BorderBottomRightRadiusProperty[TLength]] = null,
-    borderBottomStyle: BorderBottomStyleProperty | js.Array[BorderBottomStyleProperty] = null,
-    borderBottomWidth: BorderBottomWidthProperty[TLength] | js.Array[BorderBottomWidthProperty[TLength]] = null,
-    borderCollapse: BorderCollapseProperty | js.Array[BorderCollapseProperty] = null,
-    borderEndEndRadius: BorderEndEndRadiusProperty[TLength] | js.Array[BorderEndEndRadiusProperty[TLength]] = null,
-    borderEndStartRadius: BorderEndStartRadiusProperty[TLength] | js.Array[BorderEndStartRadiusProperty[TLength]] = null,
-    borderImageOutset: BorderImageOutsetProperty[TLength] | js.Array[BorderImageOutsetProperty[TLength]] = null,
-    borderImageRepeat: BorderImageRepeatProperty | js.Array[BorderImageRepeatProperty] = null,
-    borderImageSlice: BorderImageSliceProperty | js.Array[BorderImageSliceProperty] = null,
-    borderImageSource: BorderImageSourceProperty | js.Array[BorderImageSourceProperty] = null,
-    borderImageWidth: BorderImageWidthProperty[TLength] | js.Array[BorderImageWidthProperty[TLength]] = null,
-    borderInlineColor: BorderInlineColorProperty | js.Array[BorderInlineColorProperty] = null,
-    borderInlineEndColor: BorderInlineEndColorProperty | js.Array[BorderInlineEndColorProperty] = null,
-    borderInlineEndStyle: BorderInlineEndStyleProperty | js.Array[BorderInlineEndStyleProperty] = null,
-    borderInlineEndWidth: BorderInlineEndWidthProperty[TLength] | js.Array[BorderInlineEndWidthProperty[TLength]] = null,
-    borderInlineStartColor: BorderInlineStartColorProperty | js.Array[BorderInlineStartColorProperty] = null,
-    borderInlineStartStyle: BorderInlineStartStyleProperty | js.Array[BorderInlineStartStyleProperty] = null,
-    borderInlineStartWidth: BorderInlineStartWidthProperty[TLength] | js.Array[BorderInlineStartWidthProperty[TLength]] = null,
-    borderInlineStyle: BorderInlineStyleProperty | js.Array[BorderInlineStyleProperty] = null,
-    borderInlineWidth: BorderInlineWidthProperty[TLength] | js.Array[BorderInlineWidthProperty[TLength]] = null,
-    borderLeftColor: BorderLeftColorProperty | js.Array[BorderLeftColorProperty] = null,
-    borderLeftStyle: BorderLeftStyleProperty | js.Array[BorderLeftStyleProperty] = null,
-    borderLeftWidth: BorderLeftWidthProperty[TLength] | js.Array[BorderLeftWidthProperty[TLength]] = null,
-    borderRightColor: BorderRightColorProperty | js.Array[BorderRightColorProperty] = null,
-    borderRightStyle: BorderRightStyleProperty | js.Array[BorderRightStyleProperty] = null,
-    borderRightWidth: BorderRightWidthProperty[TLength] | js.Array[BorderRightWidthProperty[TLength]] = null,
-    borderSpacing: BorderSpacingProperty[TLength] | js.Array[BorderSpacingProperty[TLength]] = null,
-    borderStartEndRadius: BorderStartEndRadiusProperty[TLength] | js.Array[BorderStartEndRadiusProperty[TLength]] = null,
-    borderStartStartRadius: BorderStartStartRadiusProperty[TLength] | js.Array[BorderStartStartRadiusProperty[TLength]] = null,
-    borderTopColor: BorderTopColorProperty | js.Array[BorderTopColorProperty] = null,
-    borderTopLeftRadius: BorderTopLeftRadiusProperty[TLength] | js.Array[BorderTopLeftRadiusProperty[TLength]] = null,
-    borderTopRightRadius: BorderTopRightRadiusProperty[TLength] | js.Array[BorderTopRightRadiusProperty[TLength]] = null,
-    borderTopStyle: BorderTopStyleProperty | js.Array[BorderTopStyleProperty] = null,
-    borderTopWidth: BorderTopWidthProperty[TLength] | js.Array[BorderTopWidthProperty[TLength]] = null,
-    bottom: BottomProperty[TLength] | js.Array[BottomProperty[TLength]] = null,
-    boxDecorationBreak: BoxDecorationBreakProperty | js.Array[BoxDecorationBreakProperty] = null,
-    boxShadow: BoxShadowProperty | js.Array[BoxShadowProperty] = null,
-    boxSizing: BoxSizingProperty | js.Array[BoxSizingProperty] = null,
-    breakAfter: BreakAfterProperty | js.Array[BreakAfterProperty] = null,
-    breakBefore: BreakBeforeProperty | js.Array[BreakBeforeProperty] = null,
-    breakInside: BreakInsideProperty | js.Array[BreakInsideProperty] = null,
-    captionSide: CaptionSideProperty | js.Array[CaptionSideProperty] = null,
-    caretColor: CaretColorProperty | js.Array[CaretColorProperty] = null,
-    clear: ClearProperty | js.Array[ClearProperty] = null,
-    clipPath: ClipPathProperty | js.Array[ClipPathProperty] = null,
-    color: ColorProperty | js.Array[ColorProperty] = null,
-    colorAdjust: ColorAdjustProperty | js.Array[ColorAdjustProperty] = null,
-    columnCount: ColumnCountProperty | js.Array[ColumnCountProperty] = null,
-    columnFill: ColumnFillProperty | js.Array[ColumnFillProperty] = null,
-    columnGap: ColumnGapProperty[TLength] | js.Array[ColumnGapProperty[TLength]] = null,
-    columnRuleColor: ColumnRuleColorProperty | js.Array[ColumnRuleColorProperty] = null,
-    columnRuleStyle: ColumnRuleStyleProperty | js.Array[ColumnRuleStyleProperty] = null,
-    columnRuleWidth: ColumnRuleWidthProperty[TLength] | js.Array[ColumnRuleWidthProperty[TLength]] = null,
-    columnSpan: ColumnSpanProperty | js.Array[ColumnSpanProperty] = null,
-    columnWidth: ColumnWidthProperty[TLength] | js.Array[ColumnWidthProperty[TLength]] = null,
-    contain: ContainProperty | js.Array[ContainProperty] = null,
-    content: ContentProperty | js.Array[ContentProperty] = null,
-    counterIncrement: CounterIncrementProperty | js.Array[CounterIncrementProperty] = null,
-    counterReset: CounterResetProperty | js.Array[CounterResetProperty] = null,
-    counterSet: CounterSetProperty | js.Array[CounterSetProperty] = null,
-    cursor: CursorProperty | js.Array[CursorProperty] = null,
-    direction: DirectionProperty | js.Array[DirectionProperty] = null,
-    display: DisplayProperty | js.Array[DisplayProperty] = null,
-    emptyCells: EmptyCellsProperty | js.Array[EmptyCellsProperty] = null,
-    filter: FilterProperty | js.Array[FilterProperty] = null,
-    flexBasis: FlexBasisProperty[TLength] | js.Array[FlexBasisProperty[TLength]] = null,
-    flexDirection: FlexDirectionProperty | js.Array[FlexDirectionProperty] = null,
-    flexGrow: GlobalsNumber | js.Array[GlobalsNumber] = null,
-    flexShrink: GlobalsNumber | js.Array[GlobalsNumber] = null,
-    flexWrap: FlexWrapProperty | js.Array[FlexWrapProperty] = null,
-    float: FloatProperty | js.Array[FloatProperty] = null,
-    fontFamily: FontFamilyProperty | js.Array[FontFamilyProperty] = null,
-    fontFeatureSettings: FontFeatureSettingsProperty | js.Array[FontFeatureSettingsProperty] = null,
-    fontKerning: FontKerningProperty | js.Array[FontKerningProperty] = null,
-    fontLanguageOverride: FontLanguageOverrideProperty | js.Array[FontLanguageOverrideProperty] = null,
-    fontOpticalSizing: FontOpticalSizingProperty | js.Array[FontOpticalSizingProperty] = null,
-    fontSize: FontSizeProperty[TLength] | js.Array[FontSizeProperty[TLength]] = null,
-    fontSizeAdjust: FontSizeAdjustProperty | js.Array[FontSizeAdjustProperty] = null,
-    fontStretch: FontStretchProperty | js.Array[FontStretchProperty] = null,
-    fontStyle: FontStyleProperty | js.Array[FontStyleProperty] = null,
-    fontSynthesis: FontSynthesisProperty | js.Array[FontSynthesisProperty] = null,
-    fontVariant: FontVariantProperty | js.Array[FontVariantProperty] = null,
-    fontVariantCaps: FontVariantCapsProperty | js.Array[FontVariantCapsProperty] = null,
-    fontVariantEastAsian: FontVariantEastAsianProperty | js.Array[FontVariantEastAsianProperty] = null,
-    fontVariantLigatures: FontVariantLigaturesProperty | js.Array[FontVariantLigaturesProperty] = null,
-    fontVariantNumeric: FontVariantNumericProperty | js.Array[FontVariantNumericProperty] = null,
-    fontVariantPosition: FontVariantPositionProperty | js.Array[FontVariantPositionProperty] = null,
-    fontVariationSettings: FontVariationSettingsProperty | js.Array[FontVariationSettingsProperty] = null,
-    fontWeight: FontWeightProperty | js.Array[FontWeightProperty] = null,
-    gridAutoColumns: GridAutoColumnsProperty[TLength] | js.Array[GridAutoColumnsProperty[TLength]] = null,
-    gridAutoFlow: GridAutoFlowProperty | js.Array[GridAutoFlowProperty] = null,
-    gridAutoRows: GridAutoRowsProperty[TLength] | js.Array[GridAutoRowsProperty[TLength]] = null,
-    gridColumnEnd: GridColumnEndProperty | js.Array[GridColumnEndProperty] = null,
-    gridColumnStart: GridColumnStartProperty | js.Array[GridColumnStartProperty] = null,
-    gridRowEnd: GridRowEndProperty | js.Array[GridRowEndProperty] = null,
-    gridRowStart: GridRowStartProperty | js.Array[GridRowStartProperty] = null,
-    gridTemplateAreas: GridTemplateAreasProperty | js.Array[GridTemplateAreasProperty] = null,
-    gridTemplateColumns: GridTemplateColumnsProperty[TLength] | js.Array[GridTemplateColumnsProperty[TLength]] = null,
-    gridTemplateRows: GridTemplateRowsProperty[TLength] | js.Array[GridTemplateRowsProperty[TLength]] = null,
-    hangingPunctuation: HangingPunctuationProperty | js.Array[HangingPunctuationProperty] = null,
-    height: HeightProperty[TLength] | js.Array[HeightProperty[TLength]] = null,
-    hyphens: HyphensProperty | js.Array[HyphensProperty] = null,
-    imageOrientation: ImageOrientationProperty | js.Array[ImageOrientationProperty] = null,
-    imageRendering: ImageRenderingProperty | js.Array[ImageRenderingProperty] = null,
-    imageResolution: ImageResolutionProperty | js.Array[ImageResolutionProperty] = null,
-    initialLetter: InitialLetterProperty | js.Array[InitialLetterProperty] = null,
-    inlineSize: InlineSizeProperty[TLength] | js.Array[InlineSizeProperty[TLength]] = null,
-    inset: InsetProperty[TLength] | js.Array[InsetProperty[TLength]] = null,
-    insetBlock: InsetBlockProperty[TLength] | js.Array[InsetBlockProperty[TLength]] = null,
-    insetBlockEnd: InsetBlockEndProperty[TLength] | js.Array[InsetBlockEndProperty[TLength]] = null,
-    insetBlockStart: InsetBlockStartProperty[TLength] | js.Array[InsetBlockStartProperty[TLength]] = null,
-    insetInline: InsetInlineProperty[TLength] | js.Array[InsetInlineProperty[TLength]] = null,
-    insetInlineEnd: InsetInlineEndProperty[TLength] | js.Array[InsetInlineEndProperty[TLength]] = null,
-    insetInlineStart: InsetInlineStartProperty[TLength] | js.Array[InsetInlineStartProperty[TLength]] = null,
-    isolation: IsolationProperty | js.Array[IsolationProperty] = null,
-    justifyContent: JustifyContentProperty | js.Array[JustifyContentProperty] = null,
-    justifyItems: JustifyItemsProperty | js.Array[JustifyItemsProperty] = null,
-    justifySelf: JustifySelfProperty | js.Array[JustifySelfProperty] = null,
-    left: LeftProperty[TLength] | js.Array[LeftProperty[TLength]] = null,
-    letterSpacing: LetterSpacingProperty[TLength] | js.Array[LetterSpacingProperty[TLength]] = null,
-    lineBreak: LineBreakProperty | js.Array[LineBreakProperty] = null,
-    lineHeight: LineHeightProperty[TLength] | js.Array[LineHeightProperty[TLength]] = null,
-    lineHeightStep: LineHeightStepProperty[TLength] | js.Array[LineHeightStepProperty[TLength]] = null,
-    listStyleImage: ListStyleImageProperty | js.Array[ListStyleImageProperty] = null,
-    listStylePosition: ListStylePositionProperty | js.Array[ListStylePositionProperty] = null,
-    listStyleType: ListStyleTypeProperty | js.Array[ListStyleTypeProperty] = null,
-    marginBlock: MarginBlockProperty[TLength] | js.Array[MarginBlockProperty[TLength]] = null,
-    marginBlockEnd: MarginBlockEndProperty[TLength] | js.Array[MarginBlockEndProperty[TLength]] = null,
-    marginBlockStart: MarginBlockStartProperty[TLength] | js.Array[MarginBlockStartProperty[TLength]] = null,
-    marginBottom: MarginBottomProperty[TLength] | js.Array[MarginBottomProperty[TLength]] = null,
-    marginInline: MarginInlineProperty[TLength] | js.Array[MarginInlineProperty[TLength]] = null,
-    marginInlineEnd: MarginInlineEndProperty[TLength] | js.Array[MarginInlineEndProperty[TLength]] = null,
-    marginInlineStart: MarginInlineStartProperty[TLength] | js.Array[MarginInlineStartProperty[TLength]] = null,
-    marginLeft: MarginLeftProperty[TLength] | js.Array[MarginLeftProperty[TLength]] = null,
-    marginRight: MarginRightProperty[TLength] | js.Array[MarginRightProperty[TLength]] = null,
-    marginTop: MarginTopProperty[TLength] | js.Array[MarginTopProperty[TLength]] = null,
-    maskBorderMode: MaskBorderModeProperty | js.Array[MaskBorderModeProperty] = null,
-    maskBorderOutset: MaskBorderOutsetProperty[TLength] | js.Array[MaskBorderOutsetProperty[TLength]] = null,
-    maskBorderRepeat: MaskBorderRepeatProperty | js.Array[MaskBorderRepeatProperty] = null,
-    maskBorderSlice: MaskBorderSliceProperty | js.Array[MaskBorderSliceProperty] = null,
-    maskBorderSource: MaskBorderSourceProperty | js.Array[MaskBorderSourceProperty] = null,
-    maskBorderWidth: MaskBorderWidthProperty[TLength] | js.Array[MaskBorderWidthProperty[TLength]] = null,
-    maskClip: MaskClipProperty | js.Array[MaskClipProperty] = null,
-    maskComposite: MaskCompositeProperty | js.Array[MaskCompositeProperty] = null,
-    maskImage: MaskImageProperty | js.Array[MaskImageProperty] = null,
-    maskMode: MaskModeProperty | js.Array[MaskModeProperty] = null,
-    maskOrigin: MaskOriginProperty | js.Array[MaskOriginProperty] = null,
-    maskPosition: MaskPositionProperty[TLength] | js.Array[MaskPositionProperty[TLength]] = null,
-    maskRepeat: MaskRepeatProperty | js.Array[MaskRepeatProperty] = null,
-    maskSize: MaskSizeProperty[TLength] | js.Array[MaskSizeProperty[TLength]] = null,
-    maskType: MaskTypeProperty | js.Array[MaskTypeProperty] = null,
-    maxBlockSize: MaxBlockSizeProperty[TLength] | js.Array[MaxBlockSizeProperty[TLength]] = null,
-    maxHeight: MaxHeightProperty[TLength] | js.Array[MaxHeightProperty[TLength]] = null,
-    maxInlineSize: MaxInlineSizeProperty[TLength] | js.Array[MaxInlineSizeProperty[TLength]] = null,
-    maxLines: MaxLinesProperty | js.Array[MaxLinesProperty] = null,
-    maxWidth: MaxWidthProperty[TLength] | js.Array[MaxWidthProperty[TLength]] = null,
-    minBlockSize: MinBlockSizeProperty[TLength] | js.Array[MinBlockSizeProperty[TLength]] = null,
-    minHeight: MinHeightProperty[TLength] | js.Array[MinHeightProperty[TLength]] = null,
-    minInlineSize: MinInlineSizeProperty[TLength] | js.Array[MinInlineSizeProperty[TLength]] = null,
-    minWidth: MinWidthProperty[TLength] | js.Array[MinWidthProperty[TLength]] = null,
-    mixBlendMode: MixBlendModeProperty | js.Array[MixBlendModeProperty] = null,
-    motionDistance: OffsetDistanceProperty[TLength] | js.Array[OffsetDistanceProperty[TLength]] = null,
-    motionPath: OffsetPathProperty | js.Array[OffsetPathProperty] = null,
-    motionRotation: OffsetRotateProperty | js.Array[OffsetRotateProperty] = null,
-    objectFit: ObjectFitProperty | js.Array[ObjectFitProperty] = null,
-    objectPosition: ObjectPositionProperty[TLength] | js.Array[ObjectPositionProperty[TLength]] = null,
-    offsetAnchor: OffsetAnchorProperty[TLength] | js.Array[OffsetAnchorProperty[TLength]] = null,
-    offsetDistance: OffsetDistanceProperty[TLength] | js.Array[OffsetDistanceProperty[TLength]] = null,
-    offsetPath: OffsetPathProperty | js.Array[OffsetPathProperty] = null,
-    offsetPosition: OffsetPositionProperty[TLength] | js.Array[OffsetPositionProperty[TLength]] = null,
-    offsetRotate: OffsetRotateProperty | js.Array[OffsetRotateProperty] = null,
-    offsetRotation: OffsetRotateProperty | js.Array[OffsetRotateProperty] = null,
-    opacity: GlobalsNumber | js.Array[GlobalsNumber] = null,
-    order: GlobalsNumber | js.Array[GlobalsNumber] = null,
-    orphans: GlobalsNumber | js.Array[GlobalsNumber] = null,
-    outlineColor: OutlineColorProperty | js.Array[OutlineColorProperty] = null,
-    outlineOffset: OutlineOffsetProperty[TLength] | js.Array[OutlineOffsetProperty[TLength]] = null,
-    outlineStyle: OutlineStyleProperty | js.Array[OutlineStyleProperty] = null,
-    outlineWidth: OutlineWidthProperty[TLength] | js.Array[OutlineWidthProperty[TLength]] = null,
-    overflow: OverflowProperty | js.Array[OverflowProperty] = null,
-    overflowAnchor: OverflowAnchorProperty | js.Array[OverflowAnchorProperty] = null,
-    overflowBlock: OverflowBlockProperty | js.Array[OverflowBlockProperty] = null,
-    overflowClipBox: OverflowClipBoxProperty | js.Array[OverflowClipBoxProperty] = null,
-    overflowInline: OverflowInlineProperty | js.Array[OverflowInlineProperty] = null,
-    overflowWrap: OverflowWrapProperty | js.Array[OverflowWrapProperty] = null,
-    overflowX: OverflowXProperty | js.Array[OverflowXProperty] = null,
-    overflowY: OverflowYProperty | js.Array[OverflowYProperty] = null,
-    overscrollBehavior: OverscrollBehaviorProperty | js.Array[OverscrollBehaviorProperty] = null,
-    overscrollBehaviorX: OverscrollBehaviorXProperty | js.Array[OverscrollBehaviorXProperty] = null,
-    overscrollBehaviorY: OverscrollBehaviorYProperty | js.Array[OverscrollBehaviorYProperty] = null,
-    paddingBlock: PaddingBlockProperty[TLength] | js.Array[PaddingBlockProperty[TLength]] = null,
-    paddingBlockEnd: PaddingBlockEndProperty[TLength] | js.Array[PaddingBlockEndProperty[TLength]] = null,
-    paddingBlockStart: PaddingBlockStartProperty[TLength] | js.Array[PaddingBlockStartProperty[TLength]] = null,
-    paddingBottom: PaddingBottomProperty[TLength] | js.Array[PaddingBottomProperty[TLength]] = null,
-    paddingInline: PaddingInlineProperty[TLength] | js.Array[PaddingInlineProperty[TLength]] = null,
-    paddingInlineEnd: PaddingInlineEndProperty[TLength] | js.Array[PaddingInlineEndProperty[TLength]] = null,
-    paddingInlineStart: PaddingInlineStartProperty[TLength] | js.Array[PaddingInlineStartProperty[TLength]] = null,
-    paddingLeft: PaddingLeftProperty[TLength] | js.Array[PaddingLeftProperty[TLength]] = null,
-    paddingRight: PaddingRightProperty[TLength] | js.Array[PaddingRightProperty[TLength]] = null,
-    paddingTop: PaddingTopProperty[TLength] | js.Array[PaddingTopProperty[TLength]] = null,
-    pageBreakAfter: PageBreakAfterProperty | js.Array[PageBreakAfterProperty] = null,
-    pageBreakBefore: PageBreakBeforeProperty | js.Array[PageBreakBeforeProperty] = null,
-    pageBreakInside: PageBreakInsideProperty | js.Array[PageBreakInsideProperty] = null,
-    paintOrder: PaintOrderProperty | js.Array[PaintOrderProperty] = null,
-    perspective: PerspectiveProperty[TLength] | js.Array[PerspectiveProperty[TLength]] = null,
-    perspectiveOrigin: PerspectiveOriginProperty[TLength] | js.Array[PerspectiveOriginProperty[TLength]] = null,
-    placeContent: PlaceContentProperty | js.Array[PlaceContentProperty] = null,
-    pointerEvents: PointerEventsProperty | js.Array[PointerEventsProperty] = null,
-    position: PositionProperty | js.Array[PositionProperty] = null,
-    quotes: QuotesProperty | js.Array[QuotesProperty] = null,
-    resize: ResizeProperty | js.Array[ResizeProperty] = null,
-    right: RightProperty[TLength] | js.Array[RightProperty[TLength]] = null,
-    rotate: RotateProperty | js.Array[RotateProperty] = null,
-    rowGap: RowGapProperty[TLength] | js.Array[RowGapProperty[TLength]] = null,
-    rubyAlign: RubyAlignProperty | js.Array[RubyAlignProperty] = null,
-    rubyMerge: RubyMergeProperty | js.Array[RubyMergeProperty] = null
-  ): StandardLonghandPropertiesFallback[TLength] = {
-    val __obj = js.Dynamic.literal()
-    if (alignContent != null) __obj.updateDynamic("alignContent")(alignContent.asInstanceOf[js.Any])
-    if (alignItems != null) __obj.updateDynamic("alignItems")(alignItems.asInstanceOf[js.Any])
-    if (alignSelf != null) __obj.updateDynamic("alignSelf")(alignSelf.asInstanceOf[js.Any])
-    if (animationDelay != null) __obj.updateDynamic("animationDelay")(animationDelay.asInstanceOf[js.Any])
-    if (animationDirection != null) __obj.updateDynamic("animationDirection")(animationDirection.asInstanceOf[js.Any])
-    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
-    if (animationFillMode != null) __obj.updateDynamic("animationFillMode")(animationFillMode.asInstanceOf[js.Any])
-    if (animationIterationCount != null) __obj.updateDynamic("animationIterationCount")(animationIterationCount.asInstanceOf[js.Any])
-    if (animationName != null) __obj.updateDynamic("animationName")(animationName.asInstanceOf[js.Any])
-    if (animationPlayState != null) __obj.updateDynamic("animationPlayState")(animationPlayState.asInstanceOf[js.Any])
-    if (animationTimingFunction != null) __obj.updateDynamic("animationTimingFunction")(animationTimingFunction.asInstanceOf[js.Any])
-    if (appearance != null) __obj.updateDynamic("appearance")(appearance.asInstanceOf[js.Any])
-    if (backdropFilter != null) __obj.updateDynamic("backdropFilter")(backdropFilter.asInstanceOf[js.Any])
-    if (backfaceVisibility != null) __obj.updateDynamic("backfaceVisibility")(backfaceVisibility.asInstanceOf[js.Any])
-    if (backgroundAttachment != null) __obj.updateDynamic("backgroundAttachment")(backgroundAttachment.asInstanceOf[js.Any])
-    if (backgroundBlendMode != null) __obj.updateDynamic("backgroundBlendMode")(backgroundBlendMode.asInstanceOf[js.Any])
-    if (backgroundClip != null) __obj.updateDynamic("backgroundClip")(backgroundClip.asInstanceOf[js.Any])
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (backgroundImage != null) __obj.updateDynamic("backgroundImage")(backgroundImage.asInstanceOf[js.Any])
-    if (backgroundOrigin != null) __obj.updateDynamic("backgroundOrigin")(backgroundOrigin.asInstanceOf[js.Any])
-    if (backgroundPosition != null) __obj.updateDynamic("backgroundPosition")(backgroundPosition.asInstanceOf[js.Any])
-    if (backgroundPositionX != null) __obj.updateDynamic("backgroundPositionX")(backgroundPositionX.asInstanceOf[js.Any])
-    if (backgroundPositionY != null) __obj.updateDynamic("backgroundPositionY")(backgroundPositionY.asInstanceOf[js.Any])
-    if (backgroundRepeat != null) __obj.updateDynamic("backgroundRepeat")(backgroundRepeat.asInstanceOf[js.Any])
-    if (backgroundSize != null) __obj.updateDynamic("backgroundSize")(backgroundSize.asInstanceOf[js.Any])
-    if (blockOverflow != null) __obj.updateDynamic("blockOverflow")(blockOverflow.asInstanceOf[js.Any])
-    if (blockSize != null) __obj.updateDynamic("blockSize")(blockSize.asInstanceOf[js.Any])
-    if (borderBlockColor != null) __obj.updateDynamic("borderBlockColor")(borderBlockColor.asInstanceOf[js.Any])
-    if (borderBlockEndColor != null) __obj.updateDynamic("borderBlockEndColor")(borderBlockEndColor.asInstanceOf[js.Any])
-    if (borderBlockEndStyle != null) __obj.updateDynamic("borderBlockEndStyle")(borderBlockEndStyle.asInstanceOf[js.Any])
-    if (borderBlockEndWidth != null) __obj.updateDynamic("borderBlockEndWidth")(borderBlockEndWidth.asInstanceOf[js.Any])
-    if (borderBlockStartColor != null) __obj.updateDynamic("borderBlockStartColor")(borderBlockStartColor.asInstanceOf[js.Any])
-    if (borderBlockStartStyle != null) __obj.updateDynamic("borderBlockStartStyle")(borderBlockStartStyle.asInstanceOf[js.Any])
-    if (borderBlockStartWidth != null) __obj.updateDynamic("borderBlockStartWidth")(borderBlockStartWidth.asInstanceOf[js.Any])
-    if (borderBlockStyle != null) __obj.updateDynamic("borderBlockStyle")(borderBlockStyle.asInstanceOf[js.Any])
-    if (borderBlockWidth != null) __obj.updateDynamic("borderBlockWidth")(borderBlockWidth.asInstanceOf[js.Any])
-    if (borderBottomColor != null) __obj.updateDynamic("borderBottomColor")(borderBottomColor.asInstanceOf[js.Any])
-    if (borderBottomLeftRadius != null) __obj.updateDynamic("borderBottomLeftRadius")(borderBottomLeftRadius.asInstanceOf[js.Any])
-    if (borderBottomRightRadius != null) __obj.updateDynamic("borderBottomRightRadius")(borderBottomRightRadius.asInstanceOf[js.Any])
-    if (borderBottomStyle != null) __obj.updateDynamic("borderBottomStyle")(borderBottomStyle.asInstanceOf[js.Any])
-    if (borderBottomWidth != null) __obj.updateDynamic("borderBottomWidth")(borderBottomWidth.asInstanceOf[js.Any])
-    if (borderCollapse != null) __obj.updateDynamic("borderCollapse")(borderCollapse.asInstanceOf[js.Any])
-    if (borderEndEndRadius != null) __obj.updateDynamic("borderEndEndRadius")(borderEndEndRadius.asInstanceOf[js.Any])
-    if (borderEndStartRadius != null) __obj.updateDynamic("borderEndStartRadius")(borderEndStartRadius.asInstanceOf[js.Any])
-    if (borderImageOutset != null) __obj.updateDynamic("borderImageOutset")(borderImageOutset.asInstanceOf[js.Any])
-    if (borderImageRepeat != null) __obj.updateDynamic("borderImageRepeat")(borderImageRepeat.asInstanceOf[js.Any])
-    if (borderImageSlice != null) __obj.updateDynamic("borderImageSlice")(borderImageSlice.asInstanceOf[js.Any])
-    if (borderImageSource != null) __obj.updateDynamic("borderImageSource")(borderImageSource.asInstanceOf[js.Any])
-    if (borderImageWidth != null) __obj.updateDynamic("borderImageWidth")(borderImageWidth.asInstanceOf[js.Any])
-    if (borderInlineColor != null) __obj.updateDynamic("borderInlineColor")(borderInlineColor.asInstanceOf[js.Any])
-    if (borderInlineEndColor != null) __obj.updateDynamic("borderInlineEndColor")(borderInlineEndColor.asInstanceOf[js.Any])
-    if (borderInlineEndStyle != null) __obj.updateDynamic("borderInlineEndStyle")(borderInlineEndStyle.asInstanceOf[js.Any])
-    if (borderInlineEndWidth != null) __obj.updateDynamic("borderInlineEndWidth")(borderInlineEndWidth.asInstanceOf[js.Any])
-    if (borderInlineStartColor != null) __obj.updateDynamic("borderInlineStartColor")(borderInlineStartColor.asInstanceOf[js.Any])
-    if (borderInlineStartStyle != null) __obj.updateDynamic("borderInlineStartStyle")(borderInlineStartStyle.asInstanceOf[js.Any])
-    if (borderInlineStartWidth != null) __obj.updateDynamic("borderInlineStartWidth")(borderInlineStartWidth.asInstanceOf[js.Any])
-    if (borderInlineStyle != null) __obj.updateDynamic("borderInlineStyle")(borderInlineStyle.asInstanceOf[js.Any])
-    if (borderInlineWidth != null) __obj.updateDynamic("borderInlineWidth")(borderInlineWidth.asInstanceOf[js.Any])
-    if (borderLeftColor != null) __obj.updateDynamic("borderLeftColor")(borderLeftColor.asInstanceOf[js.Any])
-    if (borderLeftStyle != null) __obj.updateDynamic("borderLeftStyle")(borderLeftStyle.asInstanceOf[js.Any])
-    if (borderLeftWidth != null) __obj.updateDynamic("borderLeftWidth")(borderLeftWidth.asInstanceOf[js.Any])
-    if (borderRightColor != null) __obj.updateDynamic("borderRightColor")(borderRightColor.asInstanceOf[js.Any])
-    if (borderRightStyle != null) __obj.updateDynamic("borderRightStyle")(borderRightStyle.asInstanceOf[js.Any])
-    if (borderRightWidth != null) __obj.updateDynamic("borderRightWidth")(borderRightWidth.asInstanceOf[js.Any])
-    if (borderSpacing != null) __obj.updateDynamic("borderSpacing")(borderSpacing.asInstanceOf[js.Any])
-    if (borderStartEndRadius != null) __obj.updateDynamic("borderStartEndRadius")(borderStartEndRadius.asInstanceOf[js.Any])
-    if (borderStartStartRadius != null) __obj.updateDynamic("borderStartStartRadius")(borderStartStartRadius.asInstanceOf[js.Any])
-    if (borderTopColor != null) __obj.updateDynamic("borderTopColor")(borderTopColor.asInstanceOf[js.Any])
-    if (borderTopLeftRadius != null) __obj.updateDynamic("borderTopLeftRadius")(borderTopLeftRadius.asInstanceOf[js.Any])
-    if (borderTopRightRadius != null) __obj.updateDynamic("borderTopRightRadius")(borderTopRightRadius.asInstanceOf[js.Any])
-    if (borderTopStyle != null) __obj.updateDynamic("borderTopStyle")(borderTopStyle.asInstanceOf[js.Any])
-    if (borderTopWidth != null) __obj.updateDynamic("borderTopWidth")(borderTopWidth.asInstanceOf[js.Any])
-    if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
-    if (boxDecorationBreak != null) __obj.updateDynamic("boxDecorationBreak")(boxDecorationBreak.asInstanceOf[js.Any])
-    if (boxShadow != null) __obj.updateDynamic("boxShadow")(boxShadow.asInstanceOf[js.Any])
-    if (boxSizing != null) __obj.updateDynamic("boxSizing")(boxSizing.asInstanceOf[js.Any])
-    if (breakAfter != null) __obj.updateDynamic("breakAfter")(breakAfter.asInstanceOf[js.Any])
-    if (breakBefore != null) __obj.updateDynamic("breakBefore")(breakBefore.asInstanceOf[js.Any])
-    if (breakInside != null) __obj.updateDynamic("breakInside")(breakInside.asInstanceOf[js.Any])
-    if (captionSide != null) __obj.updateDynamic("captionSide")(captionSide.asInstanceOf[js.Any])
-    if (caretColor != null) __obj.updateDynamic("caretColor")(caretColor.asInstanceOf[js.Any])
-    if (clear != null) __obj.updateDynamic("clear")(clear.asInstanceOf[js.Any])
-    if (clipPath != null) __obj.updateDynamic("clipPath")(clipPath.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (colorAdjust != null) __obj.updateDynamic("colorAdjust")(colorAdjust.asInstanceOf[js.Any])
-    if (columnCount != null) __obj.updateDynamic("columnCount")(columnCount.asInstanceOf[js.Any])
-    if (columnFill != null) __obj.updateDynamic("columnFill")(columnFill.asInstanceOf[js.Any])
-    if (columnGap != null) __obj.updateDynamic("columnGap")(columnGap.asInstanceOf[js.Any])
-    if (columnRuleColor != null) __obj.updateDynamic("columnRuleColor")(columnRuleColor.asInstanceOf[js.Any])
-    if (columnRuleStyle != null) __obj.updateDynamic("columnRuleStyle")(columnRuleStyle.asInstanceOf[js.Any])
-    if (columnRuleWidth != null) __obj.updateDynamic("columnRuleWidth")(columnRuleWidth.asInstanceOf[js.Any])
-    if (columnSpan != null) __obj.updateDynamic("columnSpan")(columnSpan.asInstanceOf[js.Any])
-    if (columnWidth != null) __obj.updateDynamic("columnWidth")(columnWidth.asInstanceOf[js.Any])
-    if (contain != null) __obj.updateDynamic("contain")(contain.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (counterIncrement != null) __obj.updateDynamic("counterIncrement")(counterIncrement.asInstanceOf[js.Any])
-    if (counterReset != null) __obj.updateDynamic("counterReset")(counterReset.asInstanceOf[js.Any])
-    if (counterSet != null) __obj.updateDynamic("counterSet")(counterSet.asInstanceOf[js.Any])
-    if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
-    if (emptyCells != null) __obj.updateDynamic("emptyCells")(emptyCells.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (flexBasis != null) __obj.updateDynamic("flexBasis")(flexBasis.asInstanceOf[js.Any])
-    if (flexDirection != null) __obj.updateDynamic("flexDirection")(flexDirection.asInstanceOf[js.Any])
-    if (flexGrow != null) __obj.updateDynamic("flexGrow")(flexGrow.asInstanceOf[js.Any])
-    if (flexShrink != null) __obj.updateDynamic("flexShrink")(flexShrink.asInstanceOf[js.Any])
-    if (flexWrap != null) __obj.updateDynamic("flexWrap")(flexWrap.asInstanceOf[js.Any])
-    if (float != null) __obj.updateDynamic("float")(float.asInstanceOf[js.Any])
-    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
-    if (fontFeatureSettings != null) __obj.updateDynamic("fontFeatureSettings")(fontFeatureSettings.asInstanceOf[js.Any])
-    if (fontKerning != null) __obj.updateDynamic("fontKerning")(fontKerning.asInstanceOf[js.Any])
-    if (fontLanguageOverride != null) __obj.updateDynamic("fontLanguageOverride")(fontLanguageOverride.asInstanceOf[js.Any])
-    if (fontOpticalSizing != null) __obj.updateDynamic("fontOpticalSizing")(fontOpticalSizing.asInstanceOf[js.Any])
-    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
-    if (fontSizeAdjust != null) __obj.updateDynamic("fontSizeAdjust")(fontSizeAdjust.asInstanceOf[js.Any])
-    if (fontStretch != null) __obj.updateDynamic("fontStretch")(fontStretch.asInstanceOf[js.Any])
-    if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle.asInstanceOf[js.Any])
-    if (fontSynthesis != null) __obj.updateDynamic("fontSynthesis")(fontSynthesis.asInstanceOf[js.Any])
-    if (fontVariant != null) __obj.updateDynamic("fontVariant")(fontVariant.asInstanceOf[js.Any])
-    if (fontVariantCaps != null) __obj.updateDynamic("fontVariantCaps")(fontVariantCaps.asInstanceOf[js.Any])
-    if (fontVariantEastAsian != null) __obj.updateDynamic("fontVariantEastAsian")(fontVariantEastAsian.asInstanceOf[js.Any])
-    if (fontVariantLigatures != null) __obj.updateDynamic("fontVariantLigatures")(fontVariantLigatures.asInstanceOf[js.Any])
-    if (fontVariantNumeric != null) __obj.updateDynamic("fontVariantNumeric")(fontVariantNumeric.asInstanceOf[js.Any])
-    if (fontVariantPosition != null) __obj.updateDynamic("fontVariantPosition")(fontVariantPosition.asInstanceOf[js.Any])
-    if (fontVariationSettings != null) __obj.updateDynamic("fontVariationSettings")(fontVariationSettings.asInstanceOf[js.Any])
-    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
-    if (gridAutoColumns != null) __obj.updateDynamic("gridAutoColumns")(gridAutoColumns.asInstanceOf[js.Any])
-    if (gridAutoFlow != null) __obj.updateDynamic("gridAutoFlow")(gridAutoFlow.asInstanceOf[js.Any])
-    if (gridAutoRows != null) __obj.updateDynamic("gridAutoRows")(gridAutoRows.asInstanceOf[js.Any])
-    if (gridColumnEnd != null) __obj.updateDynamic("gridColumnEnd")(gridColumnEnd.asInstanceOf[js.Any])
-    if (gridColumnStart != null) __obj.updateDynamic("gridColumnStart")(gridColumnStart.asInstanceOf[js.Any])
-    if (gridRowEnd != null) __obj.updateDynamic("gridRowEnd")(gridRowEnd.asInstanceOf[js.Any])
-    if (gridRowStart != null) __obj.updateDynamic("gridRowStart")(gridRowStart.asInstanceOf[js.Any])
-    if (gridTemplateAreas != null) __obj.updateDynamic("gridTemplateAreas")(gridTemplateAreas.asInstanceOf[js.Any])
-    if (gridTemplateColumns != null) __obj.updateDynamic("gridTemplateColumns")(gridTemplateColumns.asInstanceOf[js.Any])
-    if (gridTemplateRows != null) __obj.updateDynamic("gridTemplateRows")(gridTemplateRows.asInstanceOf[js.Any])
-    if (hangingPunctuation != null) __obj.updateDynamic("hangingPunctuation")(hangingPunctuation.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (hyphens != null) __obj.updateDynamic("hyphens")(hyphens.asInstanceOf[js.Any])
-    if (imageOrientation != null) __obj.updateDynamic("imageOrientation")(imageOrientation.asInstanceOf[js.Any])
-    if (imageRendering != null) __obj.updateDynamic("imageRendering")(imageRendering.asInstanceOf[js.Any])
-    if (imageResolution != null) __obj.updateDynamic("imageResolution")(imageResolution.asInstanceOf[js.Any])
-    if (initialLetter != null) __obj.updateDynamic("initialLetter")(initialLetter.asInstanceOf[js.Any])
-    if (inlineSize != null) __obj.updateDynamic("inlineSize")(inlineSize.asInstanceOf[js.Any])
-    if (inset != null) __obj.updateDynamic("inset")(inset.asInstanceOf[js.Any])
-    if (insetBlock != null) __obj.updateDynamic("insetBlock")(insetBlock.asInstanceOf[js.Any])
-    if (insetBlockEnd != null) __obj.updateDynamic("insetBlockEnd")(insetBlockEnd.asInstanceOf[js.Any])
-    if (insetBlockStart != null) __obj.updateDynamic("insetBlockStart")(insetBlockStart.asInstanceOf[js.Any])
-    if (insetInline != null) __obj.updateDynamic("insetInline")(insetInline.asInstanceOf[js.Any])
-    if (insetInlineEnd != null) __obj.updateDynamic("insetInlineEnd")(insetInlineEnd.asInstanceOf[js.Any])
-    if (insetInlineStart != null) __obj.updateDynamic("insetInlineStart")(insetInlineStart.asInstanceOf[js.Any])
-    if (isolation != null) __obj.updateDynamic("isolation")(isolation.asInstanceOf[js.Any])
-    if (justifyContent != null) __obj.updateDynamic("justifyContent")(justifyContent.asInstanceOf[js.Any])
-    if (justifyItems != null) __obj.updateDynamic("justifyItems")(justifyItems.asInstanceOf[js.Any])
-    if (justifySelf != null) __obj.updateDynamic("justifySelf")(justifySelf.asInstanceOf[js.Any])
-    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    if (letterSpacing != null) __obj.updateDynamic("letterSpacing")(letterSpacing.asInstanceOf[js.Any])
-    if (lineBreak != null) __obj.updateDynamic("lineBreak")(lineBreak.asInstanceOf[js.Any])
-    if (lineHeight != null) __obj.updateDynamic("lineHeight")(lineHeight.asInstanceOf[js.Any])
-    if (lineHeightStep != null) __obj.updateDynamic("lineHeightStep")(lineHeightStep.asInstanceOf[js.Any])
-    if (listStyleImage != null) __obj.updateDynamic("listStyleImage")(listStyleImage.asInstanceOf[js.Any])
-    if (listStylePosition != null) __obj.updateDynamic("listStylePosition")(listStylePosition.asInstanceOf[js.Any])
-    if (listStyleType != null) __obj.updateDynamic("listStyleType")(listStyleType.asInstanceOf[js.Any])
-    if (marginBlock != null) __obj.updateDynamic("marginBlock")(marginBlock.asInstanceOf[js.Any])
-    if (marginBlockEnd != null) __obj.updateDynamic("marginBlockEnd")(marginBlockEnd.asInstanceOf[js.Any])
-    if (marginBlockStart != null) __obj.updateDynamic("marginBlockStart")(marginBlockStart.asInstanceOf[js.Any])
-    if (marginBottom != null) __obj.updateDynamic("marginBottom")(marginBottom.asInstanceOf[js.Any])
-    if (marginInline != null) __obj.updateDynamic("marginInline")(marginInline.asInstanceOf[js.Any])
-    if (marginInlineEnd != null) __obj.updateDynamic("marginInlineEnd")(marginInlineEnd.asInstanceOf[js.Any])
-    if (marginInlineStart != null) __obj.updateDynamic("marginInlineStart")(marginInlineStart.asInstanceOf[js.Any])
-    if (marginLeft != null) __obj.updateDynamic("marginLeft")(marginLeft.asInstanceOf[js.Any])
-    if (marginRight != null) __obj.updateDynamic("marginRight")(marginRight.asInstanceOf[js.Any])
-    if (marginTop != null) __obj.updateDynamic("marginTop")(marginTop.asInstanceOf[js.Any])
-    if (maskBorderMode != null) __obj.updateDynamic("maskBorderMode")(maskBorderMode.asInstanceOf[js.Any])
-    if (maskBorderOutset != null) __obj.updateDynamic("maskBorderOutset")(maskBorderOutset.asInstanceOf[js.Any])
-    if (maskBorderRepeat != null) __obj.updateDynamic("maskBorderRepeat")(maskBorderRepeat.asInstanceOf[js.Any])
-    if (maskBorderSlice != null) __obj.updateDynamic("maskBorderSlice")(maskBorderSlice.asInstanceOf[js.Any])
-    if (maskBorderSource != null) __obj.updateDynamic("maskBorderSource")(maskBorderSource.asInstanceOf[js.Any])
-    if (maskBorderWidth != null) __obj.updateDynamic("maskBorderWidth")(maskBorderWidth.asInstanceOf[js.Any])
-    if (maskClip != null) __obj.updateDynamic("maskClip")(maskClip.asInstanceOf[js.Any])
-    if (maskComposite != null) __obj.updateDynamic("maskComposite")(maskComposite.asInstanceOf[js.Any])
-    if (maskImage != null) __obj.updateDynamic("maskImage")(maskImage.asInstanceOf[js.Any])
-    if (maskMode != null) __obj.updateDynamic("maskMode")(maskMode.asInstanceOf[js.Any])
-    if (maskOrigin != null) __obj.updateDynamic("maskOrigin")(maskOrigin.asInstanceOf[js.Any])
-    if (maskPosition != null) __obj.updateDynamic("maskPosition")(maskPosition.asInstanceOf[js.Any])
-    if (maskRepeat != null) __obj.updateDynamic("maskRepeat")(maskRepeat.asInstanceOf[js.Any])
-    if (maskSize != null) __obj.updateDynamic("maskSize")(maskSize.asInstanceOf[js.Any])
-    if (maskType != null) __obj.updateDynamic("maskType")(maskType.asInstanceOf[js.Any])
-    if (maxBlockSize != null) __obj.updateDynamic("maxBlockSize")(maxBlockSize.asInstanceOf[js.Any])
-    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
-    if (maxInlineSize != null) __obj.updateDynamic("maxInlineSize")(maxInlineSize.asInstanceOf[js.Any])
-    if (maxLines != null) __obj.updateDynamic("maxLines")(maxLines.asInstanceOf[js.Any])
-    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
-    if (minBlockSize != null) __obj.updateDynamic("minBlockSize")(minBlockSize.asInstanceOf[js.Any])
-    if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
-    if (minInlineSize != null) __obj.updateDynamic("minInlineSize")(minInlineSize.asInstanceOf[js.Any])
-    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
-    if (mixBlendMode != null) __obj.updateDynamic("mixBlendMode")(mixBlendMode.asInstanceOf[js.Any])
-    if (motionDistance != null) __obj.updateDynamic("motionDistance")(motionDistance.asInstanceOf[js.Any])
-    if (motionPath != null) __obj.updateDynamic("motionPath")(motionPath.asInstanceOf[js.Any])
-    if (motionRotation != null) __obj.updateDynamic("motionRotation")(motionRotation.asInstanceOf[js.Any])
-    if (objectFit != null) __obj.updateDynamic("objectFit")(objectFit.asInstanceOf[js.Any])
-    if (objectPosition != null) __obj.updateDynamic("objectPosition")(objectPosition.asInstanceOf[js.Any])
-    if (offsetAnchor != null) __obj.updateDynamic("offsetAnchor")(offsetAnchor.asInstanceOf[js.Any])
-    if (offsetDistance != null) __obj.updateDynamic("offsetDistance")(offsetDistance.asInstanceOf[js.Any])
-    if (offsetPath != null) __obj.updateDynamic("offsetPath")(offsetPath.asInstanceOf[js.Any])
-    if (offsetPosition != null) __obj.updateDynamic("offsetPosition")(offsetPosition.asInstanceOf[js.Any])
-    if (offsetRotate != null) __obj.updateDynamic("offsetRotate")(offsetRotate.asInstanceOf[js.Any])
-    if (offsetRotation != null) __obj.updateDynamic("offsetRotation")(offsetRotation.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
-    if (orphans != null) __obj.updateDynamic("orphans")(orphans.asInstanceOf[js.Any])
-    if (outlineColor != null) __obj.updateDynamic("outlineColor")(outlineColor.asInstanceOf[js.Any])
-    if (outlineOffset != null) __obj.updateDynamic("outlineOffset")(outlineOffset.asInstanceOf[js.Any])
-    if (outlineStyle != null) __obj.updateDynamic("outlineStyle")(outlineStyle.asInstanceOf[js.Any])
-    if (outlineWidth != null) __obj.updateDynamic("outlineWidth")(outlineWidth.asInstanceOf[js.Any])
-    if (overflow != null) __obj.updateDynamic("overflow")(overflow.asInstanceOf[js.Any])
-    if (overflowAnchor != null) __obj.updateDynamic("overflowAnchor")(overflowAnchor.asInstanceOf[js.Any])
-    if (overflowBlock != null) __obj.updateDynamic("overflowBlock")(overflowBlock.asInstanceOf[js.Any])
-    if (overflowClipBox != null) __obj.updateDynamic("overflowClipBox")(overflowClipBox.asInstanceOf[js.Any])
-    if (overflowInline != null) __obj.updateDynamic("overflowInline")(overflowInline.asInstanceOf[js.Any])
-    if (overflowWrap != null) __obj.updateDynamic("overflowWrap")(overflowWrap.asInstanceOf[js.Any])
-    if (overflowX != null) __obj.updateDynamic("overflowX")(overflowX.asInstanceOf[js.Any])
-    if (overflowY != null) __obj.updateDynamic("overflowY")(overflowY.asInstanceOf[js.Any])
-    if (overscrollBehavior != null) __obj.updateDynamic("overscrollBehavior")(overscrollBehavior.asInstanceOf[js.Any])
-    if (overscrollBehaviorX != null) __obj.updateDynamic("overscrollBehaviorX")(overscrollBehaviorX.asInstanceOf[js.Any])
-    if (overscrollBehaviorY != null) __obj.updateDynamic("overscrollBehaviorY")(overscrollBehaviorY.asInstanceOf[js.Any])
-    if (paddingBlock != null) __obj.updateDynamic("paddingBlock")(paddingBlock.asInstanceOf[js.Any])
-    if (paddingBlockEnd != null) __obj.updateDynamic("paddingBlockEnd")(paddingBlockEnd.asInstanceOf[js.Any])
-    if (paddingBlockStart != null) __obj.updateDynamic("paddingBlockStart")(paddingBlockStart.asInstanceOf[js.Any])
-    if (paddingBottom != null) __obj.updateDynamic("paddingBottom")(paddingBottom.asInstanceOf[js.Any])
-    if (paddingInline != null) __obj.updateDynamic("paddingInline")(paddingInline.asInstanceOf[js.Any])
-    if (paddingInlineEnd != null) __obj.updateDynamic("paddingInlineEnd")(paddingInlineEnd.asInstanceOf[js.Any])
-    if (paddingInlineStart != null) __obj.updateDynamic("paddingInlineStart")(paddingInlineStart.asInstanceOf[js.Any])
-    if (paddingLeft != null) __obj.updateDynamic("paddingLeft")(paddingLeft.asInstanceOf[js.Any])
-    if (paddingRight != null) __obj.updateDynamic("paddingRight")(paddingRight.asInstanceOf[js.Any])
-    if (paddingTop != null) __obj.updateDynamic("paddingTop")(paddingTop.asInstanceOf[js.Any])
-    if (pageBreakAfter != null) __obj.updateDynamic("pageBreakAfter")(pageBreakAfter.asInstanceOf[js.Any])
-    if (pageBreakBefore != null) __obj.updateDynamic("pageBreakBefore")(pageBreakBefore.asInstanceOf[js.Any])
-    if (pageBreakInside != null) __obj.updateDynamic("pageBreakInside")(pageBreakInside.asInstanceOf[js.Any])
-    if (paintOrder != null) __obj.updateDynamic("paintOrder")(paintOrder.asInstanceOf[js.Any])
-    if (perspective != null) __obj.updateDynamic("perspective")(perspective.asInstanceOf[js.Any])
-    if (perspectiveOrigin != null) __obj.updateDynamic("perspectiveOrigin")(perspectiveOrigin.asInstanceOf[js.Any])
-    if (placeContent != null) __obj.updateDynamic("placeContent")(placeContent.asInstanceOf[js.Any])
-    if (pointerEvents != null) __obj.updateDynamic("pointerEvents")(pointerEvents.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (quotes != null) __obj.updateDynamic("quotes")(quotes.asInstanceOf[js.Any])
-    if (resize != null) __obj.updateDynamic("resize")(resize.asInstanceOf[js.Any])
-    if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
-    if (rotate != null) __obj.updateDynamic("rotate")(rotate.asInstanceOf[js.Any])
-    if (rowGap != null) __obj.updateDynamic("rowGap")(rowGap.asInstanceOf[js.Any])
-    if (rubyAlign != null) __obj.updateDynamic("rubyAlign")(rubyAlign.asInstanceOf[js.Any])
-    if (rubyMerge != null) __obj.updateDynamic("rubyMerge")(rubyMerge.asInstanceOf[js.Any])
-    __obj.asInstanceOf[StandardLonghandPropertiesFallback[TLength]]
-  }
 }
 

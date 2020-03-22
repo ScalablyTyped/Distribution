@@ -1,6 +1,6 @@
 package typings.pgPromise.mod
 
-import typings.pgPromise.AnonC
+import typings.pgPromise.AnonFrom
 import typings.pgPromise.AnonPrefix
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -24,7 +24,7 @@ class ColumnSet protected () extends _QueryColumns {
   def assign(): String = js.native
   def assign(source: AnonPrefix): String = js.native
   def assignColumns(): String = js.native
-  def assignColumns(options: AnonC): String = js.native
+  def assignColumns(options: AnonFrom): String = js.native
   def extend(columns: js.Array[String | IColumnConfig | Column]): ColumnSet = js.native
   def extend(columns: Column): ColumnSet = js.native
   def extend(columns: ColumnSet): ColumnSet = js.native

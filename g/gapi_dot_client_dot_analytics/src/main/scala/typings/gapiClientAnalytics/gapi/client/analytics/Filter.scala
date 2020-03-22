@@ -1,8 +1,8 @@
 package typings.gapiClientAnalytics.gapi.client.analytics
 
 import typings.gapiClientAnalytics.AnonCaseSensitive
-import typings.gapiClientAnalytics.AnonCaseSensitiveField
 import typings.gapiClientAnalytics.AnonField
+import typings.gapiClientAnalytics.AnonFieldIndex
 import typings.gapiClientAnalytics.AnonHref
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -30,7 +30,7 @@ trait Filter extends js.Object {
   /** Parent link for this filter. Points to the account to which this filter belongs. */
   var parentLink: js.UndefOr[AnonHref] = js.undefined
   /** Details for the filter of the type SEARCH_AND_REPLACE. */
-  var searchAndReplaceDetails: js.UndefOr[AnonCaseSensitiveField] = js.undefined
+  var searchAndReplaceDetails: js.UndefOr[AnonFieldIndex] = js.undefined
   /** Link for this filter. */
   var selfLink: js.UndefOr[String] = js.undefined
   /** Type of this filter. Possible values are INCLUDE, EXCLUDE, LOWERCASE, UPPERCASE, SEARCH_AND_REPLACE and ADVANCED. */
@@ -54,7 +54,7 @@ object Filter {
     lowercaseDetails: AnonField = null,
     name: String = null,
     parentLink: AnonHref = null,
-    searchAndReplaceDetails: AnonCaseSensitiveField = null,
+    searchAndReplaceDetails: AnonFieldIndex = null,
     selfLink: String = null,
     `type`: String = null,
     updated: String = null,

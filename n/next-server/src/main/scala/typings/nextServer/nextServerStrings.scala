@@ -9,16 +9,25 @@ object nextServerStrings {
   sealed trait BUILD_ID extends js.Object
   
   @js.native
-  sealed trait back extends js.Object
-  
-  @js.native
-  sealed trait beforePopState extends js.Object
-  
-  @js.native
   sealed trait `build-manifestDotjson` extends js.Object
   
   @js.native
-  sealed trait events extends js.Object
+  sealed trait close extends js.Object
+  
+  @js.native
+  sealed trait data extends js.Object
+  
+  @js.native
+  sealed trait drain extends js.Object
+  
+  @js.native
+  sealed trait end extends js.Object
+  
+  @js.native
+  sealed trait error extends js.Object
+  
+  @js.native
+  sealed trait finish extends js.Object
   
   @js.native
   sealed trait hybrid extends js.Object
@@ -42,7 +51,7 @@ object nextServerStrings {
   sealed trait `phase-production-server` extends js.Object
   
   @js.native
-  sealed trait prefetch extends js.Object
+  sealed trait pipe extends js.Object
   
   @js.native
   sealed trait `prerender-manifestDotjson` extends js.Object
@@ -51,16 +60,10 @@ object nextServerStrings {
   sealed trait public extends js.Object
   
   @js.native
-  sealed trait push extends js.Object
-  
-  @js.native
   sealed trait `react-loadable-manifestDotjson` extends js.Object
   
   @js.native
-  sealed trait reload extends js.Object
-  
-  @js.native
-  sealed trait replace extends js.Object
+  sealed trait readable extends js.Object
   
   @js.native
   sealed trait runtime extends js.Object
@@ -74,16 +77,25 @@ object nextServerStrings {
   @js.native
   sealed trait static extends js.Object
   
+  @js.native
+  sealed trait unpipe extends js.Object
+  
   @scala.inline
   def BUILD_ID: BUILD_ID = "BUILD_ID".asInstanceOf[BUILD_ID]
   @scala.inline
-  def back: back = "back".asInstanceOf[back]
-  @scala.inline
-  def beforePopState: beforePopState = "beforePopState".asInstanceOf[beforePopState]
-  @scala.inline
   def `build-manifestDotjson`: `build-manifestDotjson` = "build-manifest.json".asInstanceOf[`build-manifestDotjson`]
   @scala.inline
-  def events: events = "events".asInstanceOf[events]
+  def close: close = "close".asInstanceOf[close]
+  @scala.inline
+  def data: data = "data".asInstanceOf[data]
+  @scala.inline
+  def drain: drain = "drain".asInstanceOf[drain]
+  @scala.inline
+  def end: end = "end".asInstanceOf[end]
+  @scala.inline
+  def error: error = "error".asInstanceOf[error]
+  @scala.inline
+  def finish: finish = "finish".asInstanceOf[finish]
   @scala.inline
   def hybrid: hybrid = "hybrid".asInstanceOf[hybrid]
   @scala.inline
@@ -99,19 +111,15 @@ object nextServerStrings {
   @scala.inline
   def `phase-production-server`: `phase-production-server` = "phase-production-server".asInstanceOf[`phase-production-server`]
   @scala.inline
-  def prefetch: prefetch = "prefetch".asInstanceOf[prefetch]
+  def pipe: pipe = "pipe".asInstanceOf[pipe]
   @scala.inline
   def `prerender-manifestDotjson`: `prerender-manifestDotjson` = "prerender-manifest.json".asInstanceOf[`prerender-manifestDotjson`]
   @scala.inline
   def public: public = "public".asInstanceOf[public]
   @scala.inline
-  def push: push = "push".asInstanceOf[push]
-  @scala.inline
   def `react-loadable-manifestDotjson`: `react-loadable-manifestDotjson` = "react-loadable-manifest.json".asInstanceOf[`react-loadable-manifestDotjson`]
   @scala.inline
-  def reload: reload = "reload".asInstanceOf[reload]
-  @scala.inline
-  def replace: replace = "replace".asInstanceOf[replace]
+  def readable: readable = "readable".asInstanceOf[readable]
   @scala.inline
   def runtime: runtime = "runtime".asInstanceOf[runtime]
   @scala.inline
@@ -120,5 +128,7 @@ object nextServerStrings {
   def serverless: serverless = "serverless".asInstanceOf[serverless]
   @scala.inline
   def static: static = "static".asInstanceOf[static]
+  @scala.inline
+  def unpipe: unpipe = "unpipe".asInstanceOf[unpipe]
 }
 

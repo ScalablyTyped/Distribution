@@ -1,8 +1,8 @@
 package typings.exceljs.mod
 
 import typings.exceljs.AnonAddress
+import typings.exceljs.PartialStyle
 import typings.std.Date
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -50,7 +50,7 @@ trait Cell
   /**
   	 * The styles of the cell
   	 */
-  var style: Partial[Style] = js.native
+  var style: PartialStyle = js.native
   	// todo
   val text: String = js.native
   /**

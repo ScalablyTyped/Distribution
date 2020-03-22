@@ -4,9 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait WrapperProps extends js.Object {
-  var absolute: js.UndefOr[Boolean] = js.undefined
-  var bordered: js.UndefOr[Boolean] = js.undefined
+  var absolute: js.UndefOr[Boolean] = js.native
+  var bordered: js.UndefOr[Boolean] = js.native
 }
 
 object WrapperProps {

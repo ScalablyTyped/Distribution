@@ -2,9 +2,9 @@ package typings.gapiClientBooks.gapi.client.books
 
 import typings.gapiClient.gapi.client.Request_
 import typings.gapiClientBooks.AnonAlt
-import typings.gapiClientBooks.AnonAltCountry
-import typings.gapiClientBooks.AnonAltCountryFields
-import typings.gapiClientBooks.AnonAltDownload
+import typings.gapiClientBooks.AnonCountry
+import typings.gapiClientBooks.AnonDownload
+import typings.gapiClientBooks.AnonFields
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,12 +16,12 @@ trait VolumesResource extends js.Object {
   var recommended: RecommendedResource = js.native
   var useruploaded: UseruploadedResource = js.native
   /** Gets volume information for a single volume. */
-  def get(request: AnonAltCountryFields): Request_[Volume] = js.native
+  def get(request: AnonFields): Request_[Volume] = js.native
   /** Retrieves volumes in a specific bookshelf for the specified user. */
   def list(request: AnonAlt): Request_[Volumes] = js.native
   /** Gets volume information for volumes on a bookshelf. */
-  def list(request: AnonAltCountry): Request_[Volumes] = js.native
+  def list(request: AnonCountry): Request_[Volumes] = js.native
   /** Performs a book search. */
-  def list(request: AnonAltDownload): Request_[Volumes] = js.native
+  def list(request: AnonDownload): Request_[Volumes] = js.native
 }
 

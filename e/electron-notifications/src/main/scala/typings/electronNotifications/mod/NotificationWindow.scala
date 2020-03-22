@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
 @JSImport("electron-notifications", "NotificationWindow")
 @js.native
 class NotificationWindow () extends BrowserWindow {
+  def on(event: String, listener: js.Function): this.type = js.native
   /** When any one of the buttons are clicked, it will trigger a buttonClicked event, and pass the text that was clicked to the handler. */
   @JSName("on")
   def on_buttonClicked(event: buttonClicked, listener: js.Function1[/* text */ String, Unit]): this.type = js.native

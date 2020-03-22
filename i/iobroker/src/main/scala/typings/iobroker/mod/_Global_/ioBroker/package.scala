@@ -29,7 +29,7 @@ package object ioBroker {
   type ErrorCallback = js.Function1[/* err */ js.UndefOr[java.lang.String], scala.Unit]
   type ExtendObjectCallback = js.Function3[
     /* err */ java.lang.String | scala.Null, 
-    /* result */ js.UndefOr[typings.iobroker.AnonIdValue], 
+    /* result */ js.UndefOr[typings.iobroker.AnonValue], 
     /* id */ js.UndefOr[java.lang.String], 
     scala.Unit
   ]
@@ -71,9 +71,7 @@ package object ioBroker {
     /* sessionId */ js.UndefOr[java.lang.String], 
     scala.Unit
   ]
-  type GetHistoryResult = js.Array[
-    typings.iobroker.mod._Global_.ioBroker.State with typings.iobroker.AnonIdStringOptional
-  ]
+  type GetHistoryResult = js.Array[typings.iobroker.Stateidstring]
   type GetObjectCallback = js.Function2[
     /* err */ java.lang.String | scala.Null, 
     /* obj */ js.UndefOr[typings.iobroker.mod._Global_.ioBroker.Object | scala.Null], 

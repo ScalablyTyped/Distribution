@@ -11,8 +11,10 @@ import scala.scalajs.js.annotation._
 @js.native
 class ^ protected ()
   extends Component[CanvasQRCodeProps | SvgQRCodeProps, ComponentState, js.Any] {
-  def this(props: CanvasQRCodeProps | SvgQRCodeProps) = this()
-  def this(props: CanvasQRCodeProps | SvgQRCodeProps, context: js.Any) = this()
+  def this(props: CanvasQRCodeProps) = this()
+  def this(props: SvgQRCodeProps) = this()
+  def this(props: CanvasQRCodeProps, context: js.Any) = this()
+  def this(props: SvgQRCodeProps, context: js.Any) = this()
 }
 
 @JSImport("qrcode.react", JSImport.Namespace)

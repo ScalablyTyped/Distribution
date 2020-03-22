@@ -15,13 +15,20 @@ trait ApplyWorkspaceEditResponse extends js.Object {
     * if the client signals a `failureHandlingStrategy` in its client capabilities.
     */
   var failedChange: js.UndefOr[Double] = js.undefined
+  /**
+    * An optional textual description for why the edit was not applied.
+    * This may be used by the server for diagnostic logging or to provide
+    * a suitable error for a request that triggered the edit.
+    */
+  var failureReason: js.UndefOr[String] = js.undefined
 }
 
 object ApplyWorkspaceEditResponse {
   @scala.inline
-  def apply(applied: Boolean, failedChange: Int | Double = null): ApplyWorkspaceEditResponse = {
+  def apply(applied: Boolean, failedChange: Int | Double = null, failureReason: String = null): ApplyWorkspaceEditResponse = {
     val __obj = js.Dynamic.literal(applied = applied.asInstanceOf[js.Any])
     if (failedChange != null) __obj.updateDynamic("failedChange")(failedChange.asInstanceOf[js.Any])
+    if (failureReason != null) __obj.updateDynamic("failureReason")(failureReason.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplyWorkspaceEditResponse]
   }
 }

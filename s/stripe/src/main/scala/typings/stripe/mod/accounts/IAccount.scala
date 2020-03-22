@@ -1,7 +1,7 @@
 package typings.stripe.mod.accounts
 
-import typings.stripe.AnonActive
 import typings.stripe.AnonBranding
+import typings.stripe.AnonCardpayments
 import typings.stripe.AnonDate
 import typings.stripe.AnonDisabledreason
 import typings.stripe.AnonMcc
@@ -26,7 +26,7 @@ trait IAccount
     * account and their associatedstates. Keys are names of capabilities.
     * You can see the full list here. Values may be active, inactive, or pending.
     */
-  var capabilities: js.UndefOr[AnonActive] = js.undefined
+  var capabilities: js.UndefOr[AnonCardpayments] = js.undefined
   /**
     * Whether or not the account can create live charges
     */
@@ -110,7 +110,7 @@ object IAccount {
     `type`: standard | express | custom,
     business_profile: AnonMcc = null,
     business_type: individual | company = null,
-    capabilities: AnonActive = null,
+    capabilities: AnonCardpayments = null,
     company: ICompany = null,
     created: Int | Double = null,
     default_currency: String = null,

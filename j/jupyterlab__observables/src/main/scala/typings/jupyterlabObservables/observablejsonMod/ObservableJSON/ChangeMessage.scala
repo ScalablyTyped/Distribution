@@ -1,7 +1,7 @@
 package typings.jupyterlabObservables.observablejsonMod.ObservableJSON
 
 import typings.jupyterlabObservables.observablejsonMod.IObservableJSON.IChangedArgs
-import typings.phosphorMessaging.mod.Message
+import typings.luminoMessaging.mod.Message
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

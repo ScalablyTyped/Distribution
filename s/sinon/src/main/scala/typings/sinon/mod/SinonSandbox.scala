@@ -1,7 +1,7 @@
 package typings.sinon.mod
 
+import typings.sinon.PartialSinonFakeTimersCon
 import typings.std.Date
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -197,8 +197,8 @@ trait SinonSandbox extends js.Object {
     */
   def useFakeTimers(): SinonFakeTimers = js.native
   def useFakeTimers(config: Double): SinonFakeTimers = js.native
+  def useFakeTimers(config: PartialSinonFakeTimersCon): SinonFakeTimers = js.native
   def useFakeTimers(config: Date): SinonFakeTimers = js.native
-  def useFakeTimers(config: Partial[SinonFakeTimersConfig]): SinonFakeTimers = js.native
   /**
     * Causes Sinon to replace the native XMLHttpRequest object in browsers that support it with a custom implementation which does not send actual requests.
     * In browsers that support ActiveXObject, this constructor is replaced, and fake objects are returned for XMLHTTP progIds.

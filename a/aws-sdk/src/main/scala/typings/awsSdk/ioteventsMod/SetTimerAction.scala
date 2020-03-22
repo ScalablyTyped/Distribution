@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait SetTimerAction extends js.Object {
   /**
-    * The number of seconds until the timer expires. The minimum value is 60 seconds to ensure accuracy.
+    * The number of seconds until the timer expires. The minimum value is 60 seconds to ensure accuracy. The maximum value is 31622400 seconds. 
     */
   var seconds: Seconds = js.native
   /**

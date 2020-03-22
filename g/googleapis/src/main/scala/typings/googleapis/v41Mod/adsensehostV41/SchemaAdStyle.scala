@@ -1,7 +1,7 @@
 package typings.googleapis.v41Mod.adsensehostV41
 
 import typings.googleapis.AnonBackground
-import typings.googleapis.AnonFamilySize
+import typings.googleapis.AnonSize
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,7 +22,7 @@ trait SchemaAdStyle extends js.Object {
   /**
     * The font which is included in the style.
     */
-  var font: js.UndefOr[AnonFamilySize] = js.native
+  var font: js.UndefOr[AnonSize] = js.native
   /**
     * Kind this is, in this case adsensehost#adStyle.
     */
@@ -31,12 +31,7 @@ trait SchemaAdStyle extends js.Object {
 
 object SchemaAdStyle {
   @scala.inline
-  def apply(
-    colors: AnonBackground = null,
-    corners: String = null,
-    font: AnonFamilySize = null,
-    kind: String = null
-  ): SchemaAdStyle = {
+  def apply(colors: AnonBackground = null, corners: String = null, font: AnonSize = null, kind: String = null): SchemaAdStyle = {
     val __obj = js.Dynamic.literal()
     if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
     if (corners != null) __obj.updateDynamic("corners")(corners.asInstanceOf[js.Any])

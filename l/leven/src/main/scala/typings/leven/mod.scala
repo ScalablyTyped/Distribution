@@ -11,7 +11,7 @@ object mod extends js.Object {
   // declare function leven(left: string, right: string): number;
   // export = leven;
   @JSName("default")
-  var default_Original: AnonDefault = js.native
+  var default_Original: AnonCall = js.native
   /**
   	Measure the difference between two strings.
   	@example

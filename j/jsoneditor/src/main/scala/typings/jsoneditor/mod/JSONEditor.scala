@@ -1,8 +1,8 @@
 package typings.jsoneditor.mod
 
 import typings.jsoneditor.AnonEnd
-import typings.jsoneditor.AnonEndStart
 import typings.jsoneditor.AnonPath
+import typings.jsoneditor.AnonStart
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,7 +22,7 @@ trait JSONEditor extends js.Object {
   def getNodesByRange(start: AnonPath, end: AnonPath): js.Array[SerializableNode] = js.native
   def getSelection(): AnonEnd = js.native
   def getText(): String = js.native
-  def getTextSelection(): AnonEndStart = js.native
+  def getTextSelection(): AnonStart = js.native
   def refresh(): Unit = js.native
   def set(json: js.Any): Unit = js.native
   def setMode(mode: JSONEditorMode): Unit = js.native

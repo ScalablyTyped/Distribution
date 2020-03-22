@@ -48,11 +48,11 @@ class ItemSliding () extends ComponentInterface {
   var tmr: js.Any = js.native
   var updateOptions: js.Any = js.native
   /**
-    * Close the sliding item. Items can also be closed from the [List](../../list/List).
+    * Close the sliding item. Items can also be closed from the [List](../list).
     */
   def close(): js.Promise[Unit] = js.native
   /**
-    * Close all of the sliding items in the list. Items can also be closed from the [List](../../list/List).
+    * Close all of the sliding items in the list. Items can also be closed from the [List](../list).
     */
   def closeOpened(): js.Promise[Boolean] = js.native
   @JSName("connectedCallback")

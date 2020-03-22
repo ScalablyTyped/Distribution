@@ -2,8 +2,8 @@ package typings.jupyterlabCompleter
 
 import org.scalablytyped.runtime.TopLevel
 import typings.jupyterlabCompleter.widgetMod.Completer.IOptions
-import typings.phosphorCoreutils.mod.Token
-import typings.phosphorMessaging.mod.Message
+import typings.luminoCoreutils.mod.Token
+import typings.luminoMessaging.mod.Message
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -61,7 +61,7 @@ object mod extends js.Object {
     /**
       * Create a new kernel connector for completion requests.
       *
-      * @param options - The instatiation options for the kernel connector.
+      * @param options - The instantiation options for the kernel connector.
       */
     def this(options: typings.jupyterlabCompleter.kernelconnectorMod.KernelConnector.IOptions) = this()
   }

@@ -36,7 +36,7 @@ package object mod {
   */
   type RouteOptionsAccessObject = typings.hapiHapi.mod._RouteOptionsAccessObject | (typings.hapiHapi.mod.RouteOptionsAccessScopeObject with typings.hapiHapi.mod.RouteOptionsAccessEntityObject)
   type RouteOptionsAccessScope = typings.hapiHapi.hapiHapiBooleans.`false` | java.lang.String | js.Array[java.lang.String]
-  type RouteOptionsCache = typings.hapiHapi.AnonDefault with (typings.hapiHapi.AnonExpiresAt | typings.hapiHapi.AnonExpiresAtExpiresIn | typings.hapiHapi.AnonExpiresAtExpiresInUndefined)
+  type RouteOptionsCache = typings.hapiHapi.AnonOtherwise with (typings.hapiHapi.AnonExpiresAt | typings.hapiHapi.AnonExpiresIn | typings.hapiHapi.AnonExpiresAtExpiresIn)
   type RouteOptionsPreAllOptions = typings.hapiHapi.mod.RouteOptionsPreObject | js.Array[typings.hapiHapi.mod.RouteOptionsPreObject] | typings.hapiHapi.mod.Lifecycle.Method
   type RouteOptionsPreArray = js.Array[typings.hapiHapi.mod.RouteOptionsPreAllOptions]
   type RouteOptionsResponseSchema = scala.Boolean | typings.hapiHapi.mod.ValidationObject | typings.hapiJoi.mod.Schema | (js.Function2[

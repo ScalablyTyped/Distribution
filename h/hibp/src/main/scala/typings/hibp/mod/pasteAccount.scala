@@ -1,6 +1,6 @@
 package typings.hibp.mod
 
-import typings.hibp.AnonApiKeyBaseUrl
+import typings.hibp.AnonUserAgent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object pasteAccount extends js.Object {
   def apply(email: String): js.Promise[js.Array[Paste] | Null] = js.native
-  def apply(email: String, options: AnonApiKeyBaseUrl): js.Promise[js.Array[Paste] | Null] = js.native
+  def apply(email: String, options: AnonUserAgent): js.Promise[js.Array[Paste] | Null] = js.native
 }
 

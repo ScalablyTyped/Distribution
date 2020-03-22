@@ -32,32 +32,32 @@ trait Typeofexpress extends js.Object {
     * @since 4.16.0
     */
   @JSName("json")
-  var json_Original: FnOptionsNextHandleFunctionOptionsJson = js.native
+  var json_Original: Fn0 = js.native
   /**
     * This is a built-in middleware function in Express. It parses incoming requests with Buffer payloads and is based on body-parser.
     * @since 4.17.0
     */
   @JSName("raw")
-  var raw_Original: FnOptionsNextHandleFunction179348451 = js.native
+  var raw_Original: Fn1 = js.native
   var request: Request_[ParamsDictionary] = js.native
   var response: Response_ = js.native
   /**
     * This is a built-in middleware function in Express. It serves static files and is based on serve-static.
     */
   @JSName("static")
-  var static_Original: AnonMime = js.native
+  var static_Original: AnonCall = js.native
   /**
     * This is a built-in middleware function in Express. It parses incoming requests with text payloads and is based on body-parser.
     * @since 4.17.0
     */
   @JSName("text")
-  var text_Original: FnOptionsNextHandleFunction = js.native
+  var text_Original: FnCallOptions = js.native
   /**
     * This is a built-in middleware function in Express. It parses incoming requests with urlencoded payloads and is based on body-parser.
     * @since 4.16.0
     */
   @JSName("urlencoded")
-  var urlencoded_Original: FnOptions = js.native
+  var urlencoded_Original: FnCall = js.native
   def Router(): typings.expressServeStaticCore.mod.Router = js.native
   def Router(options: RouterOptions): typings.expressServeStaticCore.mod.Router = js.native
   /**

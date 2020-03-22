@@ -1,6 +1,6 @@
 package typings.photoswipe.photoswipeUiDefaultMod
 
-import typings.photoswipe.AnonBottomTop
+import typings.photoswipe.AnonTop
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,7 +26,7 @@ object Item {
     msrc: String = null,
     src: String = null,
     title: String = null,
-    vGap: AnonBottomTop = null,
+    vGap: AnonTop = null,
     w: Int | Double = null
   ): Item = {
     val __obj = js.Dynamic.literal()

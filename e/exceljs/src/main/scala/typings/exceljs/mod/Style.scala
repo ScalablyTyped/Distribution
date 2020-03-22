@@ -1,28 +1,31 @@
 package typings.exceljs.mod
 
-import typings.std.Partial
+import typings.exceljs.PartialAlignment
+import typings.exceljs.PartialBorders
+import typings.exceljs.PartialFont
+import typings.exceljs.PartialProtection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Style extends js.Object {
-  var alignment: Partial[Alignment]
-  var border: Partial[Borders]
+  var alignment: PartialAlignment
+  var border: PartialBorders
   var fill: Fill
-  var font: Partial[Font]
+  var font: PartialFont
   var numFmt: String
-  var protection: Partial[Protection]
+  var protection: PartialProtection
 }
 
 object Style {
   @scala.inline
   def apply(
-    alignment: Partial[Alignment],
-    border: Partial[Borders],
+    alignment: PartialAlignment,
+    border: PartialBorders,
     fill: Fill,
-    font: Partial[Font],
+    font: PartialFont,
     numFmt: String,
-    protection: Partial[Protection]
+    protection: PartialProtection
   ): Style = {
     val __obj = js.Dynamic.literal(alignment = alignment.asInstanceOf[js.Any], border = border.asInstanceOf[js.Any], fill = fill.asInstanceOf[js.Any], font = font.asInstanceOf[js.Any], numFmt = numFmt.asInstanceOf[js.Any], protection = protection.asInstanceOf[js.Any])
   

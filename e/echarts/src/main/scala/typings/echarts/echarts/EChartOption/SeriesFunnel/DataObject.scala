@@ -1,10 +1,10 @@
 package typings.echarts.echarts.EChartOption.SeriesFunnel
 
-import typings.echarts.AnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyFontSizeFontStyle
-import typings.echarts.AnonBackgroundColorBorderColor
-import typings.echarts.AnonBorderColorBorderType
-import typings.echarts.AnonEmphasisLength
-import typings.echarts.AnonItemStyleLabelLabelLineAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyFontSizeFontStyleFontWeight
+import typings.echarts.AnonBorderType
+import typings.echarts.AnonExtraCssText
+import typings.echarts.AnonLabelLabelLine
+import typings.echarts.AnonLength
+import typings.echarts.AnonLineHeight
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,9 +13,7 @@ trait DataObject extends js.Object {
   /**
     * @see https://echarts.apache.org/en/option.html#series-funnel.data.emphasis
     */
-  var emphasis: js.UndefOr[
-    AnonItemStyleLabelLabelLineAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyFontSizeFontStyleFontWeight
-  ] = js.undefined
+  var emphasis: js.UndefOr[AnonLabelLabelLine] = js.undefined
   /**
     * Graphic style of , `emphasis` is the style when it is highlighted,
     * like being hovered by mouse, or highlighted via legend connect.
@@ -23,20 +21,18 @@ trait DataObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-funnel.data.itemStyle
     */
-  var itemStyle: js.UndefOr[AnonBorderColorBorderType] = js.undefined
+  var itemStyle: js.UndefOr[AnonBorderType] = js.undefined
   /**
     * The label configuration of a single data item.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-funnel.data.label
     */
-  var label: js.UndefOr[
-    AnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyFontSizeFontStyle
-  ] = js.undefined
+  var label: js.UndefOr[AnonLineHeight] = js.undefined
   /**
     * @see https://echarts.apache.org/en/option.html#series-funnel.data.labelLine
     */
-  var labelLine: js.UndefOr[AnonEmphasisLength] = js.undefined
+  var labelLine: js.UndefOr[AnonLength] = js.undefined
   /**
     * the name of data item.
     *
@@ -50,7 +46,7 @@ trait DataObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-funnel.data.tooltip
     */
-  var tooltip: js.UndefOr[AnonBackgroundColorBorderColor] = js.undefined
+  var tooltip: js.UndefOr[AnonExtraCssText] = js.undefined
   /**
     * data value.
     *
@@ -63,12 +59,12 @@ trait DataObject extends js.Object {
 object DataObject {
   @scala.inline
   def apply(
-    emphasis: AnonItemStyleLabelLabelLineAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyFontSizeFontStyleFontWeight = null,
-    itemStyle: AnonBorderColorBorderType = null,
-    label: AnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyFontSizeFontStyle = null,
-    labelLine: AnonEmphasisLength = null,
+    emphasis: AnonLabelLabelLine = null,
+    itemStyle: AnonBorderType = null,
+    label: AnonLineHeight = null,
+    labelLine: AnonLength = null,
     name: String = null,
-    tooltip: AnonBackgroundColorBorderColor = null,
+    tooltip: AnonExtraCssText = null,
     value: Int | Double = null
   ): DataObject = {
     val __obj = js.Dynamic.literal()

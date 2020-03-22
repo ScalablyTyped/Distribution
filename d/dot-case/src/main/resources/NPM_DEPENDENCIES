@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "dot-case" : "2.1.1"
+      "dot-case" : "3.0.3"
     }
   ],
   "test-dependencies" : [
     {
-      "dot-case" : "2.1.1"
+      "dot-case" : "3.0.3"
     }
   ],
   "compile-devDependencies" : [

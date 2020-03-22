@@ -7,9 +7,12 @@ import scala.scalajs.js.annotation._
 @js.native
 trait UpdateProfilingGroupRequest extends js.Object {
   /**
-    * Remote configuration to configure the agents of the profiling group.
+    * 
     */
   var agentOrchestrationConfig: AgentOrchestrationConfig = js.native
+  /**
+    * The name of the profiling group to update.
+    */
   var profilingGroupName: ProfilingGroupName = js.native
 }
 

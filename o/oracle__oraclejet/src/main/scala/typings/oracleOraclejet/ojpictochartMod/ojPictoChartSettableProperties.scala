@@ -1,7 +1,7 @@
 package typings.oracleOraclejet.ojpictochartMod
 
-import typings.oracleOraclejet.AnonComponentNameLabelAndValue
-import typings.oracleOraclejet.AnonContextRendererAnonInsertAnonPreventDefaultKNull
+import typings.oracleOraclejet.Anon14
+import typings.oracleOraclejet.AnonLabelAndValue
 import typings.oracleOraclejet.ojdataproviderMod.DataProvider
 import typings.oracleOraclejet.ojdvtBaseMod.dvtBaseComponentSettableProperties
 import typings.oracleOraclejet.oracleOraclejetStrings.all
@@ -46,9 +46,9 @@ trait ojPictoChartSettableProperties[K, D] extends dvtBaseComponentSettablePrope
   var rowHeight: Double | Null
   var selection: js.Array[K]
   var selectionMode: single | multiple | none
-  var tooltip: AnonContextRendererAnonInsertAnonPreventDefaultKNull[K]
+  var tooltip: Anon14[K]
   @JSName("translations")
-  var translations_ojPictoChartSettableProperties: AnonComponentNameLabelAndValue
+  var translations_ojPictoChartSettableProperties: AnonLabelAndValue
 }
 
 object ojPictoChartSettableProperties {
@@ -67,9 +67,9 @@ object ojPictoChartSettableProperties {
     layoutOrigin: topEnd | bottomStart | bottomEnd | topStart,
     selection: js.Array[K],
     selectionMode: single | multiple | none,
-    tooltip: AnonContextRendererAnonInsertAnonPreventDefaultKNull[K],
+    tooltip: Anon14[K],
     trackResize: on | off,
-    translations: AnonComponentNameLabelAndValue,
+    translations: AnonLabelAndValue,
     animationDuration: Int | Double = null,
     columnCount: Int | Double = null,
     columnWidth: Int | Double = null,

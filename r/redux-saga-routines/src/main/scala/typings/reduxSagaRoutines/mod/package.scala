@@ -22,7 +22,7 @@ package object mod {
   type ResolveFunctionArg3Type[TFunction] = js.UndefOr[scala.Nothing]
   type ResolveFunctionArg4Type[TFunction] = js.UndefOr[scala.Nothing]
   type ResolveFunctionReturnType[TFunction] = js.UndefOr[scala.Nothing]
-  type Routine[TTriggerActionCreator, TRequestActionCreator, TSuccessActionCreator, TFailureActionCreator, TFulfillActionCreator] = TTriggerActionCreator with typings.reduxSagaRoutines.reduxSagaRoutinesStrings.Routine with js.Any with (typings.reduxSagaRoutines.AnonFailure[
+  type Routine[TTriggerActionCreator, TRequestActionCreator, TSuccessActionCreator, TFailureActionCreator, TFulfillActionCreator] = TTriggerActionCreator with typings.reduxSagaRoutines.keyinRoutineStagesstring with (typings.reduxSagaRoutines.AnonFailure[
     TTriggerActionCreator, 
     TRequestActionCreator, 
     TSuccessActionCreator, 

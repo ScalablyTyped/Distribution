@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ionic/angular/dist/directives/proxies", "IonGrid")
+@JSImport("@ionic/angular/directives/proxies", "IonGrid")
 @js.native
 class IonGrid protected ()
   extends typings.ionicCore.componentsMod.Components.IonGrid {

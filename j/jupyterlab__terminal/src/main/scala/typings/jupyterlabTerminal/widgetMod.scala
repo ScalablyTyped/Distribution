@@ -1,10 +1,8 @@
 package typings.jupyterlabTerminal
 
-import typings.jupyterlabServices.terminalTerminalMod.TerminalSession.ISession
-import typings.jupyterlabTerminal.tokensMod.ITerminal.IOptions
+import typings.jupyterlabServices.terminalTerminalMod.ITerminalConnection
 import typings.jupyterlabTerminal.tokensMod.ITerminal.ITerminal
-import typings.phosphorWidgets.mod.Widget.ResizeMessage
-import typings.std.Partial
+import typings.luminoWidgets.mod.Widget.ResizeMessage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,8 +19,10 @@ object widgetMod extends js.Object {
       *
       * @param options - The terminal configuration options.
       */
-    def this(session: ISession) = this()
-    def this(session: ISession, options: Partial[IOptions]) = this()
+    def this(session: ITerminalConnection) = this()
+    def this(session: ITerminalConnection, options: PartialIOptions) = this()
+    val _fitAddon: js.Any = js.native
+    var _initialConnection: js.Any = js.native
     /**
       * Initialize the terminal object.
       */

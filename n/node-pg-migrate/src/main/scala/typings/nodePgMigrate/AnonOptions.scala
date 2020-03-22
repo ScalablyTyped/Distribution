@@ -1,7 +1,7 @@
 package typings.nodePgMigrate
 
-import typings.nodePgMigrate.mod.LikeOptions
-import typings.nodePgMigrate.mod.Name
+import typings.nodePgMigrate.generalTypesMod.Name
+import typings.nodePgMigrate.tablesTypesMod.LikeOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

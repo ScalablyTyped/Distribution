@@ -1,19 +1,19 @@
 package typings.yargs
 
-import typings.yargs.yargsStrings.count
+import typings.yargs.yargsBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonCount extends js.Object {
-  var `type`: count
+  var count: `true`
 }
 
 object AnonCount {
   @scala.inline
-  def apply(`type`: count): AnonCount = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(count: `true`): AnonCount = {
+    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[AnonCount]
   }
 }

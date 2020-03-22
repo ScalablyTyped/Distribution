@@ -1,20 +1,41 @@
 package typings.themeUi
 
+import typings.react.mod.AnchorHTMLAttributes
+import typings.react.mod.BlockquoteHTMLAttributes
 import typings.react.mod.ComponentType
+import typings.react.mod.DetailedHTMLProps
 import typings.react.mod.ElementType
+import typings.react.mod.HTMLAttributes
+import typings.react.mod.ImgHTMLAttributes
+import typings.react.mod.LiHTMLAttributes
+import typings.react.mod.OlHTMLAttributes
 import typings.react.mod.PropsWithoutRef
 import typings.react.mod.RefAttributes
+import typings.react.mod.TableHTMLAttributes
+import typings.react.mod.TdHTMLAttributes
+import typings.react.mod.ThHTMLAttributes
 import typings.std.HTMLAnchorElement
 import typings.std.HTMLButtonElement
 import typings.std.HTMLDivElement
+import typings.std.HTMLElement
+import typings.std.HTMLHRElement
 import typings.std.HTMLHeadingElement
 import typings.std.HTMLIFrameElement
 import typings.std.HTMLImageElement
 import typings.std.HTMLInputElement
+import typings.std.HTMLLIElement
 import typings.std.HTMLLabelElement
+import typings.std.HTMLOListElement
+import typings.std.HTMLParagraphElement
+import typings.std.HTMLPreElement
 import typings.std.HTMLProgressElement
 import typings.std.HTMLSelectElement
+import typings.std.HTMLTableDataCellElement
+import typings.std.HTMLTableElement
+import typings.std.HTMLTableHeaderCellElement
+import typings.std.HTMLTableRowElement
 import typings.std.HTMLTextAreaElement
+import typings.std.HTMLUListElement
 import typings.std.SVGSVGElement
 import typings.themeUi.mod.SxProps
 import typings.themeUiComponents.mod.AlertProps
@@ -146,6 +167,223 @@ object themeUiComponents extends themeUiProps {
     (/* import warning: importer.ImportType#apply Failed type conversion: react.react._Global_.JSX.IntrinsicElements['div'] */ js.Any) with SxProps with AnonAs
   ] = js.constructorOf[typings.themeUi.mod.Styled].asInstanceOf[typings.react.mod.ComponentType[
   (/* import warning: importer.ImportType#apply Failed type conversion: react.react._Global_.JSX.IntrinsicElements['div'] */ js.Any) with typings.themeUi.mod.SxProps with typings.themeUi.AnonAs]]
+  @scala.inline
+  def StyledA: ComponentType[
+    (DetailedHTMLProps[AnchorHTMLAttributes[HTMLAnchorElement], HTMLAnchorElement]) with SxProps with AnonAs
+  ] = typings.themeUi.mod.Styled.a.asInstanceOf[typings.react.mod.ComponentType[
+  (typings.react.mod.DetailedHTMLProps[
+    typings.react.mod.AnchorHTMLAttributes[typings.std.HTMLAnchorElement], 
+    typings.std.HTMLAnchorElement
+  ]) with typings.themeUi.mod.SxProps with typings.themeUi.AnonAs]]
+  @scala.inline
+  def StyledB: ComponentType[
+    (DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]) with SxProps with AnonAs
+  ] = typings.themeUi.mod.Styled.b.asInstanceOf[typings.react.mod.ComponentType[
+  (typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]) with typings.themeUi.mod.SxProps with typings.themeUi.AnonAs]]
+  @scala.inline
+  def StyledBlockquote: ComponentType[
+    (DetailedHTMLProps[BlockquoteHTMLAttributes[HTMLElement], HTMLElement]) with SxProps with AnonAs
+  ] = typings.themeUi.mod.Styled.blockquote.asInstanceOf[typings.react.mod.ComponentType[
+  (typings.react.mod.DetailedHTMLProps[
+    typings.react.mod.BlockquoteHTMLAttributes[typings.std.HTMLElement], 
+    typings.std.HTMLElement
+  ]) with typings.themeUi.mod.SxProps with typings.themeUi.AnonAs]]
+  @scala.inline
+  def StyledCode: ComponentType[
+    (DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]) with SxProps with AnonAs
+  ] = typings.themeUi.mod.Styled.code.asInstanceOf[typings.react.mod.ComponentType[
+  (typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]) with typings.themeUi.mod.SxProps with typings.themeUi.AnonAs]]
+  @scala.inline
+  def StyledDelete: ComponentType[
+    (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]) with SxProps with AnonAs
+  ] = typings.themeUi.mod.Styled.delete.asInstanceOf[typings.react.mod.ComponentType[
+  (typings.react.mod.DetailedHTMLProps[
+    typings.react.mod.HTMLAttributes[typings.std.HTMLDivElement], 
+    typings.std.HTMLDivElement
+  ]) with typings.themeUi.mod.SxProps with typings.themeUi.AnonAs]]
+  @scala.inline
+  def StyledDiv: ComponentType[
+    (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]) with SxProps with AnonAs
+  ] = typings.themeUi.mod.Styled.div.asInstanceOf[typings.react.mod.ComponentType[
+  (typings.react.mod.DetailedHTMLProps[
+    typings.react.mod.HTMLAttributes[typings.std.HTMLDivElement], 
+    typings.std.HTMLDivElement
+  ]) with typings.themeUi.mod.SxProps with typings.themeUi.AnonAs]]
+  @scala.inline
+  def StyledEm: ComponentType[
+    (DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]) with SxProps with AnonAs
+  ] = typings.themeUi.mod.Styled.em.asInstanceOf[typings.react.mod.ComponentType[
+  (typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]) with typings.themeUi.mod.SxProps with typings.themeUi.AnonAs]]
+  @scala.inline
+  def StyledH1: ComponentType[
+    (DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]) with SxProps with AnonAs
+  ] = typings.themeUi.mod.Styled.h1.asInstanceOf[typings.react.mod.ComponentType[
+  (typings.react.mod.DetailedHTMLProps[
+    typings.react.mod.HTMLAttributes[typings.std.HTMLHeadingElement], 
+    typings.std.HTMLHeadingElement
+  ]) with typings.themeUi.mod.SxProps with typings.themeUi.AnonAs]]
+  @scala.inline
+  def StyledH2: ComponentType[
+    (DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]) with SxProps with AnonAs
+  ] = typings.themeUi.mod.Styled.h2.asInstanceOf[typings.react.mod.ComponentType[
+  (typings.react.mod.DetailedHTMLProps[
+    typings.react.mod.HTMLAttributes[typings.std.HTMLHeadingElement], 
+    typings.std.HTMLHeadingElement
+  ]) with typings.themeUi.mod.SxProps with typings.themeUi.AnonAs]]
+  @scala.inline
+  def StyledH3: ComponentType[
+    (DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]) with SxProps with AnonAs
+  ] = typings.themeUi.mod.Styled.h3.asInstanceOf[typings.react.mod.ComponentType[
+  (typings.react.mod.DetailedHTMLProps[
+    typings.react.mod.HTMLAttributes[typings.std.HTMLHeadingElement], 
+    typings.std.HTMLHeadingElement
+  ]) with typings.themeUi.mod.SxProps with typings.themeUi.AnonAs]]
+  @scala.inline
+  def StyledH4: ComponentType[
+    (DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]) with SxProps with AnonAs
+  ] = typings.themeUi.mod.Styled.h4.asInstanceOf[typings.react.mod.ComponentType[
+  (typings.react.mod.DetailedHTMLProps[
+    typings.react.mod.HTMLAttributes[typings.std.HTMLHeadingElement], 
+    typings.std.HTMLHeadingElement
+  ]) with typings.themeUi.mod.SxProps with typings.themeUi.AnonAs]]
+  @scala.inline
+  def StyledH5: ComponentType[
+    (DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]) with SxProps with AnonAs
+  ] = typings.themeUi.mod.Styled.h5.asInstanceOf[typings.react.mod.ComponentType[
+  (typings.react.mod.DetailedHTMLProps[
+    typings.react.mod.HTMLAttributes[typings.std.HTMLHeadingElement], 
+    typings.std.HTMLHeadingElement
+  ]) with typings.themeUi.mod.SxProps with typings.themeUi.AnonAs]]
+  @scala.inline
+  def StyledH6: ComponentType[
+    (DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]) with SxProps with AnonAs
+  ] = typings.themeUi.mod.Styled.h6.asInstanceOf[typings.react.mod.ComponentType[
+  (typings.react.mod.DetailedHTMLProps[
+    typings.react.mod.HTMLAttributes[typings.std.HTMLHeadingElement], 
+    typings.std.HTMLHeadingElement
+  ]) with typings.themeUi.mod.SxProps with typings.themeUi.AnonAs]]
+  @scala.inline
+  def StyledHr: ComponentType[
+    (DetailedHTMLProps[HTMLAttributes[HTMLHRElement], HTMLHRElement]) with SxProps with AnonAs
+  ] = typings.themeUi.mod.Styled.hr.asInstanceOf[typings.react.mod.ComponentType[
+  (typings.react.mod.DetailedHTMLProps[
+    typings.react.mod.HTMLAttributes[typings.std.HTMLHRElement], 
+    typings.std.HTMLHRElement
+  ]) with typings.themeUi.mod.SxProps with typings.themeUi.AnonAs]]
+  @scala.inline
+  def StyledI: ComponentType[
+    (DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]) with SxProps with AnonAs
+  ] = typings.themeUi.mod.Styled.i.asInstanceOf[typings.react.mod.ComponentType[
+  (typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]) with typings.themeUi.mod.SxProps with typings.themeUi.AnonAs]]
+  @scala.inline
+  def StyledImg: ComponentType[
+    (DetailedHTMLProps[ImgHTMLAttributes[HTMLImageElement], HTMLImageElement]) with SxProps with AnonAs
+  ] = typings.themeUi.mod.Styled.img.asInstanceOf[typings.react.mod.ComponentType[
+  (typings.react.mod.DetailedHTMLProps[
+    typings.react.mod.ImgHTMLAttributes[typings.std.HTMLImageElement], 
+    typings.std.HTMLImageElement
+  ]) with typings.themeUi.mod.SxProps with typings.themeUi.AnonAs]]
+  @scala.inline
+  def StyledInlineCode: ComponentType[
+    (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]) with SxProps with AnonAs
+  ] = typings.themeUi.mod.Styled.inlineCode.asInstanceOf[typings.react.mod.ComponentType[
+  (typings.react.mod.DetailedHTMLProps[
+    typings.react.mod.HTMLAttributes[typings.std.HTMLDivElement], 
+    typings.std.HTMLDivElement
+  ]) with typings.themeUi.mod.SxProps with typings.themeUi.AnonAs]]
+  @scala.inline
+  def StyledLi: ComponentType[
+    (DetailedHTMLProps[LiHTMLAttributes[HTMLLIElement], HTMLLIElement]) with SxProps with AnonAs
+  ] = typings.themeUi.mod.Styled.li.asInstanceOf[typings.react.mod.ComponentType[
+  (typings.react.mod.DetailedHTMLProps[
+    typings.react.mod.LiHTMLAttributes[typings.std.HTMLLIElement], 
+    typings.std.HTMLLIElement
+  ]) with typings.themeUi.mod.SxProps with typings.themeUi.AnonAs]]
+  @scala.inline
+  def StyledOl: ComponentType[
+    (DetailedHTMLProps[OlHTMLAttributes[HTMLOListElement], HTMLOListElement]) with SxProps with AnonAs
+  ] = typings.themeUi.mod.Styled.ol.asInstanceOf[typings.react.mod.ComponentType[
+  (typings.react.mod.DetailedHTMLProps[
+    typings.react.mod.OlHTMLAttributes[typings.std.HTMLOListElement], 
+    typings.std.HTMLOListElement
+  ]) with typings.themeUi.mod.SxProps with typings.themeUi.AnonAs]]
+  @scala.inline
+  def StyledP: ComponentType[
+    (DetailedHTMLProps[HTMLAttributes[HTMLParagraphElement], HTMLParagraphElement]) with SxProps with AnonAs
+  ] = typings.themeUi.mod.Styled.p.asInstanceOf[typings.react.mod.ComponentType[
+  (typings.react.mod.DetailedHTMLProps[
+    typings.react.mod.HTMLAttributes[typings.std.HTMLParagraphElement], 
+    typings.std.HTMLParagraphElement
+  ]) with typings.themeUi.mod.SxProps with typings.themeUi.AnonAs]]
+  @scala.inline
+  def StyledPre: ComponentType[
+    (DetailedHTMLProps[HTMLAttributes[HTMLPreElement], HTMLPreElement]) with SxProps with AnonAs
+  ] = typings.themeUi.mod.Styled.pre.asInstanceOf[typings.react.mod.ComponentType[
+  (typings.react.mod.DetailedHTMLProps[
+    typings.react.mod.HTMLAttributes[typings.std.HTMLPreElement], 
+    typings.std.HTMLPreElement
+  ]) with typings.themeUi.mod.SxProps with typings.themeUi.AnonAs]]
+  @scala.inline
+  def StyledRoot: ComponentType[
+    (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]) with SxProps with AnonAs
+  ] = typings.themeUi.mod.Styled.root.asInstanceOf[typings.react.mod.ComponentType[
+  (typings.react.mod.DetailedHTMLProps[
+    typings.react.mod.HTMLAttributes[typings.std.HTMLDivElement], 
+    typings.std.HTMLDivElement
+  ]) with typings.themeUi.mod.SxProps with typings.themeUi.AnonAs]]
+  @scala.inline
+  def StyledStrong: ComponentType[
+    (DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]) with SxProps with AnonAs
+  ] = typings.themeUi.mod.Styled.strong.asInstanceOf[typings.react.mod.ComponentType[
+  (typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]) with typings.themeUi.mod.SxProps with typings.themeUi.AnonAs]]
+  @scala.inline
+  def StyledTable: ComponentType[
+    (DetailedHTMLProps[TableHTMLAttributes[HTMLTableElement], HTMLTableElement]) with SxProps with AnonAs
+  ] = typings.themeUi.mod.Styled.table.asInstanceOf[typings.react.mod.ComponentType[
+  (typings.react.mod.DetailedHTMLProps[
+    typings.react.mod.TableHTMLAttributes[typings.std.HTMLTableElement], 
+    typings.std.HTMLTableElement
+  ]) with typings.themeUi.mod.SxProps with typings.themeUi.AnonAs]]
+  @scala.inline
+  def StyledTd: ComponentType[
+    (DetailedHTMLProps[TdHTMLAttributes[HTMLTableDataCellElement], HTMLTableDataCellElement]) with SxProps with AnonAs
+  ] = typings.themeUi.mod.Styled.td.asInstanceOf[typings.react.mod.ComponentType[
+  (typings.react.mod.DetailedHTMLProps[
+    typings.react.mod.TdHTMLAttributes[typings.std.HTMLTableDataCellElement], 
+    typings.std.HTMLTableDataCellElement
+  ]) with typings.themeUi.mod.SxProps with typings.themeUi.AnonAs]]
+  @scala.inline
+  def StyledTh: ComponentType[
+    (DetailedHTMLProps[ThHTMLAttributes[HTMLTableHeaderCellElement], HTMLTableHeaderCellElement]) with SxProps with AnonAs
+  ] = typings.themeUi.mod.Styled.th.asInstanceOf[typings.react.mod.ComponentType[
+  (typings.react.mod.DetailedHTMLProps[
+    typings.react.mod.ThHTMLAttributes[typings.std.HTMLTableHeaderCellElement], 
+    typings.std.HTMLTableHeaderCellElement
+  ]) with typings.themeUi.mod.SxProps with typings.themeUi.AnonAs]]
+  @scala.inline
+  def StyledThematicBreak: ComponentType[
+    (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]) with SxProps with AnonAs
+  ] = typings.themeUi.mod.Styled.thematicBreak.asInstanceOf[typings.react.mod.ComponentType[
+  (typings.react.mod.DetailedHTMLProps[
+    typings.react.mod.HTMLAttributes[typings.std.HTMLDivElement], 
+    typings.std.HTMLDivElement
+  ]) with typings.themeUi.mod.SxProps with typings.themeUi.AnonAs]]
+  @scala.inline
+  def StyledTr: ComponentType[
+    (DetailedHTMLProps[HTMLAttributes[HTMLTableRowElement], HTMLTableRowElement]) with SxProps with AnonAs
+  ] = typings.themeUi.mod.Styled.tr.asInstanceOf[typings.react.mod.ComponentType[
+  (typings.react.mod.DetailedHTMLProps[
+    typings.react.mod.HTMLAttributes[typings.std.HTMLTableRowElement], 
+    typings.std.HTMLTableRowElement
+  ]) with typings.themeUi.mod.SxProps with typings.themeUi.AnonAs]]
+  @scala.inline
+  def StyledUl: ComponentType[
+    (DetailedHTMLProps[HTMLAttributes[HTMLUListElement], HTMLUListElement]) with SxProps with AnonAs
+  ] = typings.themeUi.mod.Styled.ul.asInstanceOf[typings.react.mod.ComponentType[
+  (typings.react.mod.DetailedHTMLProps[
+    typings.react.mod.HTMLAttributes[typings.std.HTMLUListElement], 
+    typings.std.HTMLUListElement
+  ]) with typings.themeUi.mod.SxProps with typings.themeUi.AnonAs]]
   @scala.inline
   def Text: ComponentType[PropsWithoutRef[BoxProps] with RefAttributes[HTMLDivElement]] = typings.themeUi.mod.Text.asInstanceOf[typings.react.mod.ComponentType[
   typings.react.mod.PropsWithoutRef[typings.themeUiComponents.mod.BoxProps] with typings.react.mod.RefAttributes[typings.std.HTMLDivElement]]]

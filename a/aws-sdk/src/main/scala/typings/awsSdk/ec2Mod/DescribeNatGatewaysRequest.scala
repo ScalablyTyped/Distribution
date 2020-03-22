@@ -17,7 +17,7 @@ trait DescribeNatGatewaysRequest extends js.Object {
   /**
     * One or more NAT gateway IDs.
     */
-  var NatGatewayIds: js.UndefOr[ValueStringList] = js.native
+  var NatGatewayIds: js.UndefOr[NatGatewayIdStringList] = js.native
   /**
     * The token for the next page of results.
     */
@@ -29,7 +29,7 @@ object DescribeNatGatewaysRequest {
   def apply(
     Filter: FilterList = null,
     MaxResults: Int | scala.Double = null,
-    NatGatewayIds: ValueStringList = null,
+    NatGatewayIds: NatGatewayIdStringList = null,
     NextToken: String = null
   ): DescribeNatGatewaysRequest = {
     val __obj = js.Dynamic.literal()

@@ -2,8 +2,9 @@ package typings.jupyterlabObservables.modeldbMod
 
 import typings.jupyterlabObservables.jupyterlabObservablesStrings.Value
 import typings.jupyterlabObservables.modeldbMod.ObservableValue.IChangedArgs
-import typings.phosphorCoreutils.jsonMod.JSONValue
-import typings.phosphorSignaling.mod.ISignal
+import typings.luminoCoreutils.jsonMod.JSONValue
+import typings.luminoCoreutils.jsonMod.PartialJSONValue
+import typings.luminoSignaling.mod.ISignal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,11 +27,6 @@ class ObservableValue () extends IObservableValue {
   /* CompleteClass */
   override val changed: ISignal[IObservableValue, IChangedArgs] = js.native
   /**
-    * The changed signal.
-    */
-  @JSName("changed")
-  val changed_ObservableValue: ISignal[this.type, IChangedArgs] = js.native
-  /**
     * Test whether the object has been disposed.
     *
     * #### Notes
@@ -50,6 +46,11 @@ class ObservableValue () extends IObservableValue {
   @JSName("type")
   override val type_IObservableValue: Value = js.native
   /**
+    * The changed signal.
+    */
+  @JSName("changed")
+  def changed_MObservableValue(): ISignal[this.type, IChangedArgs] = js.native
+  /**
     * Dispose of the resources held by the object.
     *
     * #### Notes
@@ -66,12 +67,22 @@ class ObservableValue () extends IObservableValue {
     * Get the current value, or `undefined` if it has not been set.
     */
   /* CompleteClass */
-  override def get(): js.UndefOr[JSONValue] = js.native
+  override def get(): js.UndefOr[PartialJSONValue] = js.native
+  /**
+    * Whether the value has been disposed.
+    */
+  @JSName("isDisposed")
+  def isDisposed_MObservableValue(): Boolean = js.native
   /**
     * Set the value.
     */
   /* CompleteClass */
-  override def set(value: JSONValue): Unit = js.native
+  override def set(value: PartialJSONValue): Unit = js.native
+  /**
+    * The observable type.
+    */
+  @JSName("type")
+  def type_MObservableValue(): Value = js.native
 }
 
 @JSImport("@jupyterlab/observables/lib/modeldb", "ObservableValue")

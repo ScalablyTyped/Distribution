@@ -315,28 +315,13 @@ object awsLambdaStrings {
   sealed trait base64 extends js.Object
   
   @js.native
-  sealed trait body extends js.Object
-  
-  @js.native
-  sealed trait clientIp extends js.Object
-  
-  @js.native
-  sealed trait headers extends js.Object
-  
-  @js.native
   sealed trait http extends js.Object
   
   @js.native
   sealed trait https extends js.Object
   
   @js.native
-  sealed trait method extends js.Object
-  
-  @js.native
   sealed trait none_ extends js.Object
-  
-  @js.native
-  sealed trait origin extends js.Object
   
   @js.native
   sealed trait `origin-access-identity` extends js.Object
@@ -348,9 +333,6 @@ object awsLambdaStrings {
   sealed trait `origin-response` extends js.Object
   
   @js.native
-  sealed trait querystring extends js.Object
-  
-  @js.native
   sealed trait `read-only` extends js.Object
   
   @js.native
@@ -358,9 +340,6 @@ object awsLambdaStrings {
   
   @js.native
   sealed trait text_ extends js.Object
-  
-  @js.native
-  sealed trait uri extends js.Object
   
   @js.native
   sealed trait `viewer-request` extends js.Object
@@ -561,21 +540,11 @@ object awsLambdaStrings {
   @scala.inline
   def base64: base64 = "base64".asInstanceOf[base64]
   @scala.inline
-  def body: body = "body".asInstanceOf[body]
-  @scala.inline
-  def clientIp: clientIp = "clientIp".asInstanceOf[clientIp]
-  @scala.inline
-  def headers: headers = "headers".asInstanceOf[headers]
-  @scala.inline
   def http: http = "http".asInstanceOf[http]
   @scala.inline
   def https: https = "https".asInstanceOf[https]
   @scala.inline
-  def method: method = "method".asInstanceOf[method]
-  @scala.inline
   def none_ : none_ = "none".asInstanceOf[none_]
-  @scala.inline
-  def origin: origin = "origin".asInstanceOf[origin]
   @scala.inline
   def `origin-access-identity`: `origin-access-identity` = "origin-access-identity".asInstanceOf[`origin-access-identity`]
   @scala.inline
@@ -583,15 +552,11 @@ object awsLambdaStrings {
   @scala.inline
   def `origin-response`: `origin-response` = "origin-response".asInstanceOf[`origin-response`]
   @scala.inline
-  def querystring: querystring = "querystring".asInstanceOf[querystring]
-  @scala.inline
   def `read-only`: `read-only` = "read-only".asInstanceOf[`read-only`]
   @scala.inline
   def replace: replace = "replace".asInstanceOf[replace]
   @scala.inline
   def text_ : text_ = "text".asInstanceOf[text_]
-  @scala.inline
-  def uri: uri = "uri".asInstanceOf[uri]
   @scala.inline
   def `viewer-request`: `viewer-request` = "viewer-request".asInstanceOf[`viewer-request`]
   @scala.inline

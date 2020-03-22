@@ -1,8 +1,8 @@
 package typings.aureliaPal.mod
 
-import typings.aureliaPal.AnonElement
-import typings.aureliaPal.AnonNodeList
-import typings.aureliaPal.AnonSVGElement
+import typings.aureliaPal.AnonInstantiableElement
+import typings.aureliaPal.AnonInstantiableNodeList
+import typings.aureliaPal.AnonInstantiableSVGElement
 import typings.std.Attr
 import typings.std.CSSStyleDeclaration
 import typings.std.Comment
@@ -27,15 +27,15 @@ trait Dom extends js.Object {
   /**
     * The global DOM Element type.
     */
-  var Element: AnonElement = js.native
+  var Element: AnonInstantiableElement = js.native
   /**
     * The global DOM NodeList type.
     */
-  var NodeList: AnonNodeList = js.native
+  var NodeList: AnonInstantiableNodeList = js.native
   /**
     * The global DOM SVGElement type.
     */
-  var SVGElement: AnonSVGElement = js.native
+  var SVGElement: AnonInstantiableSVGElement = js.native
   /**
     * The document's active/focused element.
     */

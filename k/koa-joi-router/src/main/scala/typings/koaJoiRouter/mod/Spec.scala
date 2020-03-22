@@ -1,6 +1,6 @@
 package typings.koaJoiRouter.mod
 
-import typings.koaJoiRouter.AnonBodyContinueOnError
+import typings.koaJoiRouter.AnonContinueOnError
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,7 +20,7 @@ object Spec {
     path: String | RegExp,
     meta: js.Any = null,
     pre: Handler = null,
-    validate: AnonBodyContinueOnError = null
+    validate: AnonContinueOnError = null
   ): Spec = {
     val __obj = js.Dynamic.literal(handler = handler.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
     if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])

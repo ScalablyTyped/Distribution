@@ -1,6 +1,7 @@
 package typings.awsSdk.eksMod
 
-import typings.awsSdk.AnonWaiter
+import typings.awsSdk.DescribeClusterRequestwai
+import typings.awsSdk.DescribeNodegroupRequestw
 import typings.awsSdk.awsSdkStrings.clusterActive
 import typings.awsSdk.awsSdkStrings.clusterDeleted
 import typings.awsSdk.awsSdkStrings.nodegroupActive
@@ -304,11 +305,11 @@ trait EKS extends Service {
     * Waits for the clusterActive state by periodically calling the underlying EKS.describeClusteroperation every 30 seconds (at most 40 times).
     */
   @JSName("waitFor")
-  def waitFor_clusterActive(state: clusterActive, params: DescribeClusterRequest with AnonWaiter): Request[DescribeClusterResponse, AWSError] = js.native
+  def waitFor_clusterActive(state: clusterActive, params: DescribeClusterRequestwai): Request[DescribeClusterResponse, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_clusterActive(
     state: clusterActive,
-    params: DescribeClusterRequest with AnonWaiter,
+    params: DescribeClusterRequestwai,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeClusterResponse, Unit]
   ): Request[DescribeClusterResponse, AWSError] = js.native
   /**
@@ -325,11 +326,11 @@ trait EKS extends Service {
     * Waits for the clusterDeleted state by periodically calling the underlying EKS.describeClusteroperation every 30 seconds (at most 40 times).
     */
   @JSName("waitFor")
-  def waitFor_clusterDeleted(state: clusterDeleted, params: DescribeClusterRequest with AnonWaiter): Request[DescribeClusterResponse, AWSError] = js.native
+  def waitFor_clusterDeleted(state: clusterDeleted, params: DescribeClusterRequestwai): Request[DescribeClusterResponse, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_clusterDeleted(
     state: clusterDeleted,
-    params: DescribeClusterRequest with AnonWaiter,
+    params: DescribeClusterRequestwai,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeClusterResponse, Unit]
   ): Request[DescribeClusterResponse, AWSError] = js.native
   /**
@@ -346,11 +347,11 @@ trait EKS extends Service {
     * Waits for the nodegroupActive state by periodically calling the underlying EKS.describeNodegroupoperation every 30 seconds (at most 80 times).
     */
   @JSName("waitFor")
-  def waitFor_nodegroupActive(state: nodegroupActive, params: DescribeNodegroupRequest with AnonWaiter): Request[DescribeNodegroupResponse, AWSError] = js.native
+  def waitFor_nodegroupActive(state: nodegroupActive, params: DescribeNodegroupRequestw): Request[DescribeNodegroupResponse, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_nodegroupActive(
     state: nodegroupActive,
-    params: DescribeNodegroupRequest with AnonWaiter,
+    params: DescribeNodegroupRequestw,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeNodegroupResponse, Unit]
   ): Request[DescribeNodegroupResponse, AWSError] = js.native
   /**
@@ -367,11 +368,11 @@ trait EKS extends Service {
     * Waits for the nodegroupDeleted state by periodically calling the underlying EKS.describeNodegroupoperation every 30 seconds (at most 40 times).
     */
   @JSName("waitFor")
-  def waitFor_nodegroupDeleted(state: nodegroupDeleted, params: DescribeNodegroupRequest with AnonWaiter): Request[DescribeNodegroupResponse, AWSError] = js.native
+  def waitFor_nodegroupDeleted(state: nodegroupDeleted, params: DescribeNodegroupRequestw): Request[DescribeNodegroupResponse, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_nodegroupDeleted(
     state: nodegroupDeleted,
-    params: DescribeNodegroupRequest with AnonWaiter,
+    params: DescribeNodegroupRequestw,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeNodegroupResponse, Unit]
   ): Request[DescribeNodegroupResponse, AWSError] = js.native
 }

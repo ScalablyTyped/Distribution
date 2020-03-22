@@ -19,7 +19,7 @@ package object mod {
   type KeyMap = org.scalablytyped.runtime.StringDictionary[
     typings.codemirror.codemirrorBooleans.`false` | java.lang.String | (js.Function1[
       /* instance */ typings.codemirror.mod.Editor, 
-      scala.Unit | typings.codemirror.AnonCodeMirrorPASS
+      scala.Unit | typings.codemirror.AnonToString
     ])
   ]
   /**

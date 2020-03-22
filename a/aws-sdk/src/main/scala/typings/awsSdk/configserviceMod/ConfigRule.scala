@@ -9,15 +9,15 @@ trait ConfigRule extends js.Object {
   /**
     * The Amazon Resource Name (ARN) of the AWS Config rule.
     */
-  var ConfigRuleArn: js.UndefOr[String] = js.native
+  var ConfigRuleArn: js.UndefOr[StringWithCharLimit256] = js.native
   /**
     * The ID of the AWS Config rule.
     */
-  var ConfigRuleId: js.UndefOr[String] = js.native
+  var ConfigRuleId: js.UndefOr[StringWithCharLimit64] = js.native
   /**
     * The name that you assign to the AWS Config rule. The name is required if you are adding a new rule.
     */
-  var ConfigRuleName: js.UndefOr[StringWithCharLimit64] = js.native
+  var ConfigRuleName: js.UndefOr[typings.awsSdk.configserviceMod.ConfigRuleName] = js.native
   /**
     * Indicates whether the AWS Config rule is active or is currently being deleted by AWS Config. It can also indicate the evaluation status for the AWS Config rule. AWS Config sets the state of the rule to EVALUATING temporarily after you use the StartConfigRulesEvaluation request to evaluate your resources against the AWS Config rule. AWS Config sets the state of the rule to DELETING_RESULTS temporarily after you use the DeleteEvaluationResults request to delete the current evaluation results for the AWS Config rule. AWS Config temporarily sets the state of a rule to DELETING after you use the DeleteConfigRule request to delete the rule. After AWS Config deletes the rule, the rule and all of its evaluations are erased and are no longer available.
     */
@@ -52,9 +52,9 @@ object ConfigRule {
   @scala.inline
   def apply(
     Source: Source,
-    ConfigRuleArn: String = null,
-    ConfigRuleId: String = null,
-    ConfigRuleName: StringWithCharLimit64 = null,
+    ConfigRuleArn: StringWithCharLimit256 = null,
+    ConfigRuleId: StringWithCharLimit64 = null,
+    ConfigRuleName: ConfigRuleName = null,
     ConfigRuleState: ConfigRuleState = null,
     CreatedBy: StringWithCharLimit256 = null,
     Description: EmptiableStringWithCharLimit256 = null,

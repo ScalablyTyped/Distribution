@@ -13,9 +13,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ScreenOrientation extends js.Object {
   def addOrientationChangeListener(listener: OrientationChangeListener): Subscription = js.native
-  def allow(orientationLock: OrientationLock): Unit = js.native
-  def allowAsync(orientationLock: OrientationLock): js.Promise[Unit] = js.native
-  def doesSupportAsync(orientationLock: OrientationLock): js.Promise[Boolean] = js.native
   def getOrientationAsync(): js.Promise[OrientationInfo] = js.native
   def getOrientationLockAsync(): js.Promise[OrientationLock] = js.native
   def getPlatformOrientationLockAsync(): js.Promise[PlatformOrientationInfo] = js.native

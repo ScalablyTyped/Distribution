@@ -13,9 +13,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ K in @testing-library/dom.@testing-library/dom/events.EventType ]: (element : std.Document | std.Element | std.Window, options? : {}): std.Promise<void>} */ @js.native
-trait VueFireObject extends js.Object {
+@js.native
+trait VueFireObject extends AsyncFireObject {
   def apply(element: Document_, event: Event_): js.Promise[Unit] = js.native
   def apply(element: Element, event: Event_): js.Promise[Unit] = js.native
   def apply(element: Window_, event: Event_): js.Promise[Unit] = js.native

@@ -1,6 +1,6 @@
 package typings.oracleOraclejet.ojcollapsibleMod
 
-import typings.oracleOraclejet.AnonContentHeader
+import typings.oracleOraclejet.AnonHeader
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.mod.baseComponent
 import typings.oracleOraclejet.ojcollapsibleMod.ojCollapsible.ojBeforeCollapse
@@ -126,9 +126,9 @@ trait ojCollapsible extends baseComponent[ojCollapsibleSettableProperties] {
 @JSImport("@oracle/oraclejet/ojcollapsible", "ojCollapsible")
 @js.native
 object ojCollapsible extends js.Object {
-  type ojBeforeCollapse = CustomEvent[AnonContentHeader]
-  type ojBeforeExpand = CustomEvent[AnonContentHeader]
-  type ojCollapse = CustomEvent[AnonContentHeader]
-  type ojExpand = CustomEvent[AnonContentHeader]
+  type ojBeforeCollapse = CustomEvent[AnonHeader]
+  type ojBeforeExpand = CustomEvent[AnonHeader]
+  type ojCollapse = CustomEvent[AnonHeader]
+  type ojExpand = CustomEvent[AnonHeader]
 }
 

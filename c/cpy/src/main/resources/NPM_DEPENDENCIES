@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "cpy" : "7.3.0"
+      "cpy" : "8.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "cpy" : "7.3.0"
+      "cpy" : "8.0.1"
     }
   ],
   "compile-devDependencies" : [

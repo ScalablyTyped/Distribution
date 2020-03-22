@@ -1,12 +1,12 @@
 package typings.ionic.definitionsMod
 
+import typings.ionic.RequiredProjectIntegratio
 import typings.ionic.libBuildMod.BuildRunner
 import typings.ionic.libGenerateMod.GenerateRunner
 import typings.ionic.libProjectMod.ProjectDetailsResult
 import typings.ionic.libServeMod.ServeRunner
 import typings.ionicCliFramework.definitionsMod.PackageJson
 import typings.ionicCliFramework.mod.BaseConfig
-import typings.std.Required
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,7 +27,7 @@ trait IProject extends js.Object {
   def getDocsUrl(): js.Promise[String] = js.native
   def getGenerateRunner(): js.Promise[js.UndefOr[GenerateRunner[_]]] = js.native
   def getInfo(): js.Promise[js.Array[InfoItem]] = js.native
-  def getIntegration(name: IntegrationName): js.UndefOr[Required[ProjectIntegration]] = js.native
+  def getIntegration(name: IntegrationName): js.UndefOr[RequiredProjectIntegratio] = js.native
   def getPackageJson(): js.Promise[js.Tuple2[js.UndefOr[PackageJson], js.UndefOr[String]]] = js.native
   def getPackageJson(pkgName: String): js.Promise[js.Tuple2[js.UndefOr[PackageJson], js.UndefOr[String]]] = js.native
   def getServeRunner(): js.Promise[js.UndefOr[ServeRunner[_]]] = js.native
@@ -38,7 +38,7 @@ trait IProject extends js.Object {
   def requireAppflowId(): js.Promise[String] = js.native
   def requireBuildRunner(): js.Promise[BuildRunner[_]] = js.native
   def requireGenerateRunner(): js.Promise[GenerateRunner[_]] = js.native
-  def requireIntegration(name: IntegrationName): Required[ProjectIntegration] = js.native
+  def requireIntegration(name: IntegrationName): RequiredProjectIntegratio = js.native
   def requirePackageJson(): js.Promise[PackageJson] = js.native
   def requirePackageJson(pkgName: String): js.Promise[PackageJson] = js.native
   def requireServeRunner(): js.Promise[ServeRunner[_]] = js.native

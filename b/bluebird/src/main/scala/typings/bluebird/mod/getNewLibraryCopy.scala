@@ -1,6 +1,6 @@
 package typings.bluebird.mod
 
-import typings.bluebird.TypeofClassBluebird
+import typings.bluebird.TypeofBluebird
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,6 +13,6 @@ object getNewLibraryCopy extends js.Object {
     *
     * This method should be used before you use any of the methods which would otherwise alter the global Bluebird object - to avoid polluting global state.
     */
-  def apply(): TypeofClassBluebird = js.native
+  def apply(): TypeofBluebird = js.native
 }
 

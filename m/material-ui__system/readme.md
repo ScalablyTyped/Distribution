@@ -1,7 +1,7 @@
 
 # Scala.js typings for material-ui__system
 
-Typings are for version 4.7.1
+Typings are for version 4.9.3
 
 ## Library description:
 Material-UI System - Design system for Material-UI.

@@ -1,29 +1,29 @@
 package typings.seleniumStandalone.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.seleniumStandalone.AnonInstallPath
+import typings.seleniumStandalone.AnonDictx
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait FsPaths
   extends /* x */ StringDictionary[js.Any] {
-  var chrome: js.UndefOr[AnonInstallPath] = js.undefined
-  var edge: js.UndefOr[AnonInstallPath] = js.undefined
-  var firefox: js.UndefOr[AnonInstallPath] = js.undefined
-  var ie: js.UndefOr[AnonInstallPath] = js.undefined
-  var selenium: js.UndefOr[AnonInstallPath] = js.undefined
+  var chrome: js.UndefOr[AnonDictx] = js.undefined
+  var edge: js.UndefOr[AnonDictx] = js.undefined
+  var firefox: js.UndefOr[AnonDictx] = js.undefined
+  var ie: js.UndefOr[AnonDictx] = js.undefined
+  var selenium: js.UndefOr[AnonDictx] = js.undefined
 }
 
 object FsPaths {
   @scala.inline
   def apply(
     StringDictionary: /* x */ StringDictionary[js.Any] = null,
-    chrome: AnonInstallPath = null,
-    edge: AnonInstallPath = null,
-    firefox: AnonInstallPath = null,
-    ie: AnonInstallPath = null,
-    selenium: AnonInstallPath = null
+    chrome: AnonDictx = null,
+    edge: AnonDictx = null,
+    firefox: AnonDictx = null,
+    ie: AnonDictx = null,
+    selenium: AnonDictx = null
   ): FsPaths = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)

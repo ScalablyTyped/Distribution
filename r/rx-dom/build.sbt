@@ -1,24 +1,24 @@
 organization := "org.scalablytyped"
 name := "rx-dom"
-version := "7.0-dt-20180214Z-47e3f1"
+version := "7.0-dt-20180214Z-e3b301"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "rx" % "4.1-dt-20190322Z-e98353",
-  "org.scalablytyped" %%% "rx-core" % "4.0-dt-20190322Z-9ca714",
-  "org.scalablytyped" %%% "rx-core-binding" % "4.0-dt-20190322Z-9f1fcd",
-  "org.scalablytyped" %%% "rx-lite" % "4.0-dt-20190322Z-0e39ea",
-  "org.scalablytyped" %%% "rx-lite-aggregates" % "4.0-dt-20190322Z-ba68fd",
-  "org.scalablytyped" %%% "rx-lite-async" % "4.0-dt-20181116Z-26db31",
-  "org.scalablytyped" %%% "rx-lite-backpressure" % "4.0-dt-20180214Z-37755f",
-  "org.scalablytyped" %%% "rx-lite-coincidence" % "4.0-dt-20190322Z-45a9d7",
-  "org.scalablytyped" %%% "rx-lite-experimental" % "4.0-dt-20180214Z-155e8c",
+  "org.scalablytyped" %%% "rx" % "4.1-dt-20190322Z-8752dd",
+  "org.scalablytyped" %%% "rx-core" % "4.0-dt-20190322Z-0759c8",
+  "org.scalablytyped" %%% "rx-core-binding" % "4.0-dt-20190322Z-9110c0",
+  "org.scalablytyped" %%% "rx-lite" % "4.0-dt-20190322Z-1f3e32",
+  "org.scalablytyped" %%% "rx-lite-aggregates" % "4.0-dt-20190322Z-32f9a9",
+  "org.scalablytyped" %%% "rx-lite-async" % "4.0-dt-20181116Z-6eb595",
+  "org.scalablytyped" %%% "rx-lite-backpressure" % "4.0-dt-20180214Z-6b1c48",
+  "org.scalablytyped" %%% "rx-lite-coincidence" % "4.0-dt-20190322Z-dab2d6",
+  "org.scalablytyped" %%% "rx-lite-experimental" % "4.0-dt-20180214Z-c8ad8e",
   "org.scalablytyped" %%% "rx-lite-joinpatterns" % "4.0-dt-20180214Z-cc532d",
-  "org.scalablytyped" %%% "rx-lite-testing" % "4.0-dt-20180214Z-d952d1",
-  "org.scalablytyped" %%% "rx-lite-time" % "4.0-dt-20190322Z-3d9e4f",
-  "org.scalablytyped" %%% "rx-lite-virtualtime" % "4.0-dt-20190322Z-4f3db9",
-  "org.scalablytyped" %%% "std" % "3.7-1b8369")
+  "org.scalablytyped" %%% "rx-lite-testing" % "4.0-dt-20180214Z-c75d6b",
+  "org.scalablytyped" %%% "rx-lite-time" % "4.0-dt-20190322Z-f8fa94",
+  "org.scalablytyped" %%% "rx-lite-virtualtime" % "4.0-dt-20190322Z-6899d3",
+  "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -1,7 +1,7 @@
 package typings.oracleOraclejet.ojinputnumberMod
 
 import typings.oracleOraclejet.AnonAction
-import typings.oracleOraclejet.AnonActionElement
+import typings.oracleOraclejet.AnonElement
 import typings.oracleOraclejet.AnonNumberRange
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.ojeditablevalueMod.editableValue
@@ -54,7 +54,6 @@ import scala.scalajs.js.annotation._
 trait ojInputNumber extends editableValue[Double | Null, ojInputNumberSettableProperties, Double | Null, String] {
   var asyncValidators: js.Array[AsyncValidator[Double]] = js.native
   var autocomplete: on | off | String = js.native
-  var autofocus: Boolean = js.native
   var converter: Converter[Double] | RegisteredConverter = js.native
   var max: Double | Null = js.native
   var min: Double | Null = js.native
@@ -335,6 +334,6 @@ trait ojInputNumber extends editableValue[Double | Null, ojInputNumberSettablePr
 @js.native
 object ojInputNumber extends js.Object {
   type ojAnimateEnd = CustomEvent[AnonAction]
-  type ojAnimateStart = CustomEvent[AnonActionElement]
+  type ojAnimateStart = CustomEvent[AnonElement]
 }
 

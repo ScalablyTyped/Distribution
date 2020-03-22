@@ -1,7 +1,7 @@
 
 # Scala.js typings for auto-bind
 
-Typings are for version 2.1.1
+Typings are for version 4.0.0
 
 ## Library description:
 Automatically bind methods to their class instance

@@ -2,7 +2,7 @@ package typings.gapiClientManufacturers.gapi.client.manufacturers
 
 import typings.gapiClient.gapi.client.Request_
 import typings.gapiClientManufacturers.AnonAccesstoken
-import typings.gapiClientManufacturers.AnonAccesstokenAlt
+import typings.gapiClientManufacturers.AnonAlt
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +21,7 @@ trait ProductsResource extends js.Object {
     */
   def get(request: AnonAccesstoken): Request_[Product]
   /** Lists all the products in a Manufacturer Center account. */
-  def list(request: AnonAccesstokenAlt): Request_[ListProductsResponse]
+  def list(request: AnonAlt): Request_[ListProductsResponse]
   /**
     * Inserts or updates the product in a Manufacturer Center account.
     *
@@ -44,7 +44,7 @@ object ProductsResource {
   def apply(
     delete: AnonAccesstoken => Request_[js.Object],
     get: AnonAccesstoken => Request_[Product],
-    list: AnonAccesstokenAlt => Request_[ListProductsResponse],
+    list: AnonAlt => Request_[ListProductsResponse],
     update: AnonAccesstoken => Request_[Product]
   ): ProductsResource = {
     val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), update = js.Any.fromFunction1(update))

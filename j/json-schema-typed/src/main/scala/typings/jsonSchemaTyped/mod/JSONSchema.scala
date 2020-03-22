@@ -458,7 +458,7 @@ trait JSONSchema extends js.Object {
     * An instance validates successfully against this keyword if it validates
     * successfully against exactly one schema defined by this keyword's value.
     */
-  var oneOf: js.UndefOr[JSONSchema | js.Array[Boolean]] = js.native
+  var oneOf: js.UndefOr[js.Array[JSONSchema | Boolean]] = js.native
   /**
     * The value of this keyword MUST be a string. This string SHOULD be a valid
     * regular expression, according to the ECMA 262 regular expression dialect.

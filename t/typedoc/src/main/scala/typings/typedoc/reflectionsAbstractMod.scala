@@ -10,7 +10,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object reflectionsAbstractMod extends js.Object {
   @js.native
-  class ReflectionSerializer () extends ReflectionSerializerComponent[Reflection]
+  class ReflectionSerializer () extends ReflectionSerializerComponent[Reflection] {
+    def toObject(reflection: Reflection, obj: PartialReflection): typings.typedoc.schemaMod.Reflection = js.native
+  }
   
   /* static members */
   @js.native

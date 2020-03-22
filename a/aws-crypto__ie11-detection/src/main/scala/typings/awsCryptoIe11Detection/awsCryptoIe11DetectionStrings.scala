@@ -36,13 +36,13 @@ object awsCryptoIe11DetectionStrings {
   sealed trait decrypt extends KeyUsage
   
   @js.native
-  sealed trait deriveBits extends KeyUsage
-  
-  @js.native
-  sealed trait deriveKey extends KeyUsage
+  sealed trait derive extends KeyUsage
   
   @js.native
   sealed trait encrypt extends KeyUsage
+  
+  @js.native
+  sealed trait importKey extends KeyUsage
   
   @js.native
   sealed trait sign extends KeyUsage
@@ -75,11 +75,11 @@ object awsCryptoIe11DetectionStrings {
   @scala.inline
   def decrypt: decrypt = "decrypt".asInstanceOf[decrypt]
   @scala.inline
-  def deriveBits: deriveBits = "deriveBits".asInstanceOf[deriveBits]
-  @scala.inline
-  def deriveKey: deriveKey = "deriveKey".asInstanceOf[deriveKey]
+  def derive: derive = "derive".asInstanceOf[derive]
   @scala.inline
   def encrypt: encrypt = "encrypt".asInstanceOf[encrypt]
+  @scala.inline
+  def importKey: importKey = "importKey".asInstanceOf[importKey]
   @scala.inline
   def sign: sign = "sign".asInstanceOf[sign]
   @scala.inline

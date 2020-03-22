@@ -21,9 +21,9 @@ trait Typeofself extends js.Object {
     * @since 4.16.0
     */
   @JSName("json")
-  var json_Original: FnOptions = js.native
+  var json_Original: FnCall = js.native
   @JSName("rest")
-  val rest_Original: AnonFormatter = js.native
+  val rest_Original: AnonCall = js.native
   /**
     * This is a built-in middleware function in Express. It serves static files and is based on serve-static.
     */
@@ -34,7 +34,7 @@ trait Typeofself extends js.Object {
     * @since 4.16.0
     */
   @JSName("urlencoded")
-  var urlencoded_Original: FnOptionsNextHandleFunction = js.native
+  var urlencoded_Original: FnCallOptions = js.native
   def Router(): typings.expressServeStaticCore.mod.Router = js.native
   def Router(options: RouterOptions): typings.expressServeStaticCore.mod.Router = js.native
   def default[T](app: Application[T]): typings.feathersjsExpress.mod.Application[T] = js.native

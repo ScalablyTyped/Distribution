@@ -10,7 +10,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ionic/angular/dist/directives/proxies", "IonSplitPane")
+@JSImport("@ionic/angular/directives/proxies", "IonSplitPane")
 @js.native
 class IonSplitPane protected ()
   extends typings.ionicCore.componentsMod.Components.IonSplitPane {

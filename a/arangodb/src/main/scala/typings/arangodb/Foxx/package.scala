@@ -12,7 +12,6 @@ package object Foxx {
   ]
   type Middleware = typings.arangodb.Foxx.SimpleMiddleware | typings.arangodb.Foxx.DelegateMiddleware
   type NextFunction = js.Function0[scala.Unit]
-  type Ranges = js.Array[typings.arangodb.AnonEnd] with typings.arangodb.AnonType
   type SimpleMiddleware = js.Function3[
     /* req */ typings.arangodb.Foxx.Request, 
     /* res */ typings.arangodb.Foxx.Response, 

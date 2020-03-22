@@ -23,5 +23,7 @@ object DeviceMotionEvent
       /* type */ java.lang.String, 
       /* eventInitDict */ DeviceMotionEventInit, 
       DeviceMotionEvent
-    ]
+    ] {
+  def requestPermission(): js.Promise[PermissionState] = js.native
+}
 

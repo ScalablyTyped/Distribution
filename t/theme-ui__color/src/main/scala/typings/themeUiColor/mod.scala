@@ -1,6 +1,6 @@
 package typings.themeUiColor
 
-import typings.polished.FnColor
+import typings.polished.FnCall
 import typings.polished.colorMod.ContrastScores
 import typings.polished.colorMod.HslColor
 import typings.polished.colorMod.HslaColor
@@ -139,10 +139,10 @@ object mod extends js.Object {
   def math(formula: String): String = js.native
   def math(formula: String, additionalSymbols: js.Object): String = js.native
   def meetsContrastGuidelines(color1: String, color2: String): ContrastScores = js.native
-  def mix(weight: String): FnColor = js.native
+  def mix(weight: String): FnCall = js.native
   def mix(weight: String, color: String): js.Function1[/* otherColor */ String, String] = js.native
   def mix(weight: String, color: String, otherColor: String): String = js.native
-  def mix(weight: Double): FnColor = js.native
+  def mix(weight: Double): FnCall = js.native
   def mix(weight: Double, color: String): js.Function1[/* otherColor */ String, String] = js.native
   def mix(weight: Double, color: String, otherColor: String): String = js.native
   def modularScale(steps: Double): String = js.native
@@ -158,7 +158,8 @@ object mod extends js.Object {
   def padding(values: (Null | Unit | String | Double)*): Styles = js.native
   def parseToHsl(color: String): HslColor | HslaColor = js.native
   def parseToRgb(color: String): RgbColor | RgbaColor = js.native
-  def position(positionKeyword: String, values: (Null | Unit | String | Double)*): Styles = js.native
+  def position(firstValue: String, values: (Null | Unit | String | Double)*): Styles = js.native
+  def position(firstValue: Double, values: (Null | Unit | String | Double)*): Styles = js.native
   def position(values: (Null | Unit | String | Double)*): Styles = js.native
   def radialGradient(hasColorStopsExtentFallbackPositionShape: RadialGradientConfiguration): Styles = js.native
   def readableColor(color: String): String = js.native

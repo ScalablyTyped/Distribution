@@ -2,8 +2,8 @@ package typings.normalizePackageData.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.normalizePackageData.AnonEmail
-import typings.normalizePackageData.AnonEmailUrl
 import typings.normalizePackageData.AnonType
+import typings.normalizePackageData.AnonUrl
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ trait Package
   var _id: String
   var author: js.UndefOr[Person] = js.undefined
   var bin: js.UndefOr[StringDictionary[String]] = js.undefined
-  var bugs: js.UndefOr[AnonEmail | AnonEmailUrl] = js.undefined
+  var bugs: js.UndefOr[AnonEmail | AnonUrl] = js.undefined
   var bundleDependencies: js.UndefOr[StringDictionary[String]] = js.undefined
   var contributors: js.UndefOr[js.Array[Person]] = js.undefined
   var dependencies: js.UndefOr[StringDictionary[String]] = js.undefined
@@ -44,7 +44,7 @@ object Package {
     StringDictionary: /* k */ StringDictionary[js.Any] = null,
     author: Person = null,
     bin: StringDictionary[String] = null,
-    bugs: AnonEmail | AnonEmailUrl = null,
+    bugs: AnonEmail | AnonUrl = null,
     bundleDependencies: StringDictionary[String] = null,
     contributors: js.Array[Person] = null,
     dependencies: StringDictionary[String] = null,

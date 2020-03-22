@@ -3,7 +3,9 @@ package typings.googleAuthLibrary
 import typings.googleAuthLibrary.computeclientMod.ComputeOptions
 import typings.googleAuthLibrary.googleAuthLibraryStrings.httpsColonSlashSlashoauth2DotgoogleapisDotcomSlashtokeninfo
 import typings.googleAuthLibrary.googleauthMod.GoogleAuthOptions
+import typings.googleAuthLibrary.idtokenclientMod.IdTokenOptions
 import typings.googleAuthLibrary.jwtclientMod.JWTOptions
+import typings.googleAuthLibrary.loginticketMod.TokenPayload
 import typings.googleAuthLibrary.oauth2clientMod.OAuth2ClientOptions
 import typings.googleAuthLibrary.refreshclientMod.UserRefreshClientOptions
 import scala.scalajs.js
@@ -46,6 +48,18 @@ object mod extends js.Object {
       * @constructor
       */
     def this(selector: String, token: String) = this()
+  }
+  
+  @js.native
+  class IdTokenClient protected ()
+    extends typings.googleAuthLibrary.idtokenclientMod.IdTokenClient {
+    /**
+      * Google ID Token client
+      *
+      * Retrieve access token from the metadata server.
+      * See: https://developers.google.com/compute/docs/authentication
+      */
+    def this(options: IdTokenOptions) = this()
   }
   
   @js.native
@@ -94,6 +108,20 @@ object mod extends js.Object {
     def this(email: String, key: Null, keyId: String) = this()
     def this(email: Null, key: String, keyId: String) = this()
     def this(email: Null, key: Null, keyId: String) = this()
+  }
+  
+  @js.native
+  /**
+    * Create a simple class to extract user ID from an ID Token
+    *
+    * @param {string} env Envelope of the jwt
+    * @param {TokenPayload} pay Payload of the jwt
+    * @constructor
+    */
+  class LoginTicket ()
+    extends typings.googleAuthLibrary.loginticketMod.LoginTicket {
+    def this(env: String) = this()
+    def this(env: String, pay: TokenPayload) = this()
   }
   
   @js.native
@@ -166,7 +194,7 @@ object mod extends js.Object {
     /**
       * Export DefaultTransporter as a static property of the class.
       */
-    var DefaultTransporter: TypeofClassDefaultTransporter = js.native
+    var DefaultTransporter: TypeofDefaultTransporter = js.native
   }
   
   /* static members */
@@ -188,6 +216,10 @@ object mod extends js.Object {
       * Google Sign on certificates in PEM format.
       */
     val GOOGLE_OAUTH2_FEDERATED_SIGNON_PEM_CERTS_URL_ : js.Any = js.native
+    /**
+      * Google Sign on certificates in JWK format.
+      */
+    val GOOGLE_OAUTH2_IAP_PUBLIC_KEY_URL_ : js.Any = js.native
     /**
       * The base endpoint to revoke tokens.
       */

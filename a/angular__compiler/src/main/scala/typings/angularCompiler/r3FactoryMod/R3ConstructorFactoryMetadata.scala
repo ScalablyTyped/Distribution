@@ -3,6 +3,7 @@ package typings.angularCompiler.r3FactoryMod
 import typings.angularCompiler.angularCompilerStrings.invalid
 import typings.angularCompiler.outputAstMod.Expression
 import typings.angularCompiler.outputAstMod.ExternalReference
+import typings.angularCompiler.render3UtilMod.R3Reference
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,28 +24,41 @@ trait R3ConstructorFactoryMetadata extends R3FactoryMetadata {
     */
   var injectFn: ExternalReference
   /**
+    * An expression representing the constructor type, intended for use within a class definition
+    * itself.
+    *
+    * This can differ from the outer `type` if the class is being compiled by ngcc and is inside
+    * an IIFE structure that uses a different name internally.
+    */
+  var internalType: Expression
+  /**
     * String name of the type being generated (used to name the factory function).
     */
   var name: String
   /**
-    * An expression representing the function (or constructor) which will instantiate the requested
-    * type.
-    *
-    * This could be a reference to a constructor type, or to a user-defined factory function. The
-    * `useNew` property determines whether it will be called as a constructor or not.
+    * Type of the target being created by the factory.
     */
-  var `type`: Expression
+  var target: R3FactoryTarget
+  /**
+    * An expression representing the interface type being constructed.
+    */
+  var `type`: R3Reference
+  /** Number of arguments for the `type`. */
+  var typeArgumentCount: Double
 }
 
 object R3ConstructorFactoryMetadata {
   @scala.inline
   def apply(
     injectFn: ExternalReference,
+    internalType: Expression,
     name: String,
-    `type`: Expression,
+    target: R3FactoryTarget,
+    `type`: R3Reference,
+    typeArgumentCount: Double,
     deps: js.Array[R3DependencyMetadata] | invalid = null
   ): R3ConstructorFactoryMetadata = {
-    val __obj = js.Dynamic.literal(injectFn = injectFn.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(injectFn = injectFn.asInstanceOf[js.Any], internalType = internalType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], typeArgumentCount = typeArgumentCount.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (deps != null) __obj.updateDynamic("deps")(deps.asInstanceOf[js.Any])
     __obj.asInstanceOf[R3ConstructorFactoryMetadata]

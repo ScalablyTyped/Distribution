@@ -1,6 +1,6 @@
 package typings.fhirKitClient
 
-import typings.fhir.fhir.HealthcareService
+import typings.fhir.fhir.ActivityDefinition
 import typings.request.mod.Headers
 import typings.request.mod.Options
 import scala.scalajs.js
@@ -8,17 +8,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonBodyHeaders extends js.Object {
-  var body: HealthcareService
+  var body: ActivityDefinition
   var headers: js.UndefOr[Headers] = js.undefined
   var options: js.UndefOr[Options] = js.undefined
-  var resourceType: typings.fhirKitClient.fhirKitClientStrings.HealthcareService
+  var resourceType: typings.fhirKitClient.fhirKitClientStrings.ActivityDefinition
 }
 
 object AnonBodyHeaders {
   @scala.inline
   def apply(
-    body: HealthcareService,
-    resourceType: typings.fhirKitClient.fhirKitClientStrings.HealthcareService,
+    body: ActivityDefinition,
+    resourceType: typings.fhirKitClient.fhirKitClientStrings.ActivityDefinition,
     headers: Headers = null,
     options: Options = null
   ): AnonBodyHeaders = {

@@ -1,7 +1,7 @@
 package typings.oracleOraclejet.ojinputtextMod
 
 import typings.oracleOraclejet.AnonAction
-import typings.oracleOraclejet.AnonActionElement
+import typings.oracleOraclejet.AnonElement
 import typings.oracleOraclejet.AnonRegexp
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.ojeditablevalueMod.editableValue
@@ -39,7 +39,6 @@ import scala.scalajs.js.annotation._
 trait inputBase[V, SP /* <: inputBaseSettableProperties[V, SV, V] */, SV, RV] extends editableValue[V, SP, SV, RV] {
   var asyncValidators: js.Array[AsyncValidator[V]] = js.native
   var autocomplete: on | off | String = js.native
-  var autofocus: Boolean = js.native
   var onAsyncValidatorsChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[AsyncValidator[V]]], _]) | Null = js.native
   var onAutocompleteChanged: (js.Function1[/* event */ JetElementCustomEvent[on | off | String], _]) | Null = js.native
   var onAutofocusChanged: (js.Function1[/* event */ JetElementCustomEvent[Boolean], _]) | Null = js.native
@@ -210,6 +209,6 @@ trait inputBase[V, SP /* <: inputBaseSettableProperties[V, SV, V] */, SV, RV] ex
 @js.native
 object inputBase extends js.Object {
   type ojAnimateEnd = CustomEvent[AnonAction]
-  type ojAnimateStart = CustomEvent[AnonActionElement]
+  type ojAnimateStart = CustomEvent[AnonElement]
 }
 

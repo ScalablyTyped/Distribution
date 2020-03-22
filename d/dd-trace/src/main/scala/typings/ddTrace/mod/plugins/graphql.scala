@@ -67,7 +67,7 @@ trait graphql
 object graphql {
   @scala.inline
   def apply(
-    analytics: Boolean | Double = null,
+    analytics: Boolean | Double | (StringDictionary[Boolean | Double]) = null,
     collapse: js.UndefOr[Boolean] = js.undefined,
     depth: Int | Double = null,
     enabled: js.UndefOr[Boolean] = js.undefined,

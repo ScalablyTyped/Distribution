@@ -1,6 +1,7 @@
 package typings.hoganJs.mod
 
-import typings.hoganJs.AnonAsStringTrue
+import typings.hoganJs.HoganOptionsasStringfalse
+import typings.hoganJs.HoganOptionsasStringtrue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +10,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object compile extends js.Object {
   def apply(text: String): String = js.native
-  def apply(text: String, options: HoganOptions with AnonAsStringTrue): String = js.native
+  def apply(text: String, options: HoganOptionsasStringfalse): HoganTemplate = js.native
+  def apply(text: String, options: HoganOptionsasStringtrue): String = js.native
+  def apply(text: String, options: HoganOptions): HoganTemplate | String = js.native
 }
 

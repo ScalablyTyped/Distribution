@@ -22,7 +22,7 @@ object mod extends js.Object {
     def apply(m: AnonExtensions): js.Any = js.native
     def apply(m: NodeModule): js.Any = js.native
     def install(): Unit = js.native
-    def install(m: AnonExtension): Unit = js.native
+    def install(m: AnonDictkey): Unit = js.native
   }
   
   val extensions: Extensions_ = js.native

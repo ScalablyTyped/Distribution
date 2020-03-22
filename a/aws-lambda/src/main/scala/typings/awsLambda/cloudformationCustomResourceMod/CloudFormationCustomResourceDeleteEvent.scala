@@ -1,6 +1,6 @@
 package typings.awsLambda.cloudformationCustomResourceMod
 
-import typings.awsLambda.AnonKeyServiceToken
+import typings.awsLambda.AnonDictKey
 import typings.awsLambda.awsLambdaStrings.Delete
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,7 +20,7 @@ object CloudFormationCustomResourceDeleteEvent {
     PhysicalResourceId: String,
     RequestId: String,
     RequestType: Delete,
-    ResourceProperties: AnonKeyServiceToken,
+    ResourceProperties: AnonDictKey,
     ResourceType: String,
     ResponseURL: String,
     ServiceToken: String,

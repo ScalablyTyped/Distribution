@@ -1,6 +1,6 @@
 package typings.namedRoutes.mod
 
-import typings.std.Partial
+import typings.namedRoutes.PartialRouterOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("named-routes", JSImport.Namespace)
 @js.native
 class ^ () extends NamedRouter {
-  def this(options: Partial[RouterOptions]) = this()
+  def this(options: PartialRouterOptions) = this()
 }
 

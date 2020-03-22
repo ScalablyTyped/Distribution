@@ -6,11 +6,11 @@ import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import typings.react.mod.ReactNode
 import typings.react.mod.SFC
+import typings.reactResponsive.PartialMediaQueryMatchers
 import typings.reactResponsive.reactResponsiveStrings.interlace
 import typings.reactResponsive.reactResponsiveStrings.landscape
 import typings.reactResponsive.reactResponsiveStrings.portrait
 import typings.reactResponsive.reactResponsiveStrings.progressive
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,7 +26,7 @@ trait MediaQueryProps
   var onChange: js.UndefOr[js.Function1[/* matches */ Boolean, Unit]] = js.undefined
   var query: js.UndefOr[String] = js.undefined
   var style: js.UndefOr[CSSProperties] = js.undefined
-  var values: js.UndefOr[Partial[MediaQueryMatchers]] = js.undefined
+  var values: js.UndefOr[PartialMediaQueryMatchers] = js.undefined
 }
 
 object MediaQueryProps {
@@ -83,7 +83,7 @@ object MediaQueryProps {
     tty: js.UndefOr[Boolean] = js.undefined,
     tv: js.UndefOr[Boolean] = js.undefined,
     `type`: MediaQueryType = null,
-    values: Partial[MediaQueryMatchers] = null,
+    values: PartialMediaQueryMatchers = null,
     width: Double | String = null
   ): MediaQueryProps = {
     val __obj = js.Dynamic.literal()

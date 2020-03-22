@@ -37,7 +37,7 @@ trait TypeofsyncFileSystem extends js.Object {
     * 'disabled'
     *  - The sync service is disabled and the content will never sync. (E.g. this could happen when the user has no account on the remote service or the sync service has had an unrecoverable error.)
     */
-  val ServiceStatus: Anon_AUTHENTICATIONREQUIRED = js.native
+  val ServiceStatus: AnonAUTHENTICATIONREQUIRED = js.native
   val SyncAction: AnonADDED = js.native
   val SyncDirection: AnonLOCALTOREMOTE = js.native
   /** Fired when a file has been updated by the background sync service. */

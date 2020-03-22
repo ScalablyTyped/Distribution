@@ -2,7 +2,7 @@ package typings.winrtUwp.Windows.Web.Http.Headers
 
 import typings.std.Array
 import typings.winrtUwp.AnonIndex
-import typings.winrtUwp.AnonItemsReturnValueHttpCookiePairHeaderValue
+import typings.winrtUwp.AnonItemsHttpCookiePairHeaderValue
 import typings.winrtUwp.Windows.Foundation.Collections.IIterator
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import scala.scalajs.js
@@ -37,7 +37,7 @@ abstract class HttpCookiePairHeaderValueCollection () extends Array[HttpCookiePa
     * Retrieves the HttpCookiePairHeaderValue items that start at the specified index in the collection.
     * @param startIndex The zero-based index of the start of the HttpCookiePairHeaderValue items in the HttpCookiePairHeaderValueCollection .
     */
-  def getMany(startIndex: Double): AnonItemsReturnValueHttpCookiePairHeaderValue = js.native
+  def getMany(startIndex: Double): AnonItemsHttpCookiePairHeaderValue = js.native
   /**
     * Returns an immutable view of the HttpCookiePairHeaderValueCollection .
     * @return The view of the HttpCookiePairHeaderValueCollection .

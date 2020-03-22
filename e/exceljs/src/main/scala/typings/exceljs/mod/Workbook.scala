@@ -1,7 +1,7 @@
 package typings.exceljs.mod
 
+import typings.exceljs.PartialAddWorksheetOption
 import typings.std.Date
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -47,7 +47,7 @@ class Workbook () extends js.Object {
   	 */
   def addWorksheet(): Worksheet = js.native
   def addWorksheet(name: String): Worksheet = js.native
-  def addWorksheet(name: String, options: Partial[AddWorksheetOptions]): Worksheet = js.native
+  def addWorksheet(name: String, options: PartialAddWorksheetOption): Worksheet = js.native
   def clearThemes(): Unit = js.native
   /**
   	 * Iterate over all sheets.

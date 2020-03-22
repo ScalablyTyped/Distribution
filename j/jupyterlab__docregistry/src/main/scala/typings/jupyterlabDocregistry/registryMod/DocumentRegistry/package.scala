@@ -25,7 +25,7 @@ package object DocumentRegistry {
     * A type alias for a standard widget extension.
     */
   type WidgetExtension = typings.jupyterlabDocregistry.registryMod.DocumentRegistry.IWidgetExtension[
-    typings.phosphorWidgets.mod.Widget, 
+    typings.luminoWidgets.mod.Widget, 
     typings.jupyterlabDocregistry.registryMod.DocumentRegistry.IModel
   ]
   /**
@@ -33,7 +33,7 @@ package object DocumentRegistry {
     */
   type WidgetFactory = typings.jupyterlabDocregistry.registryMod.DocumentRegistry.IWidgetFactory[
     typings.jupyterlabDocregistry.registryMod.IDocumentWidget[
-      typings.phosphorWidgets.mod.Widget, 
+      typings.luminoWidgets.mod.Widget, 
       typings.jupyterlabDocregistry.registryMod.DocumentRegistry.IModel
     ], 
     typings.jupyterlabDocregistry.registryMod.DocumentRegistry.IModel

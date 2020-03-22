@@ -20,7 +20,7 @@ trait ChocolateChipStatic extends js.Object {
     * Creates and initializes a slide out menu. Possible options: {dynamic: true, callback: function() { alert("Woohoo!");}}
     */
   @JSName("UISlideout")
-  var UISlideout_Original: AnonArray = js.native
+  var UISlideout_Original: AnonCall = js.native
   /**
     * The body tag wrapped and ready to use: $.body.css('background-color','orange')
     */
@@ -87,7 +87,7 @@ trait ChocolateChipStatic extends js.Object {
     * @return void
     */
   def UICreateSwitch(): Unit = js.native
-  def UICreateSwitch(options: AnonCallbackChecked): Unit = js.native
+  def UICreateSwitch(options: AnonChecked): Unit = js.native
   /**
     * Method to tell ChocolateChip-UI to register navigation history on Window hash.
     */
@@ -135,7 +135,7 @@ trait ChocolateChipStatic extends js.Object {
     * @return void
     */
   def UIPopover(): Unit = js.native
-  def UIPopover(options: AnonCallbackId): Unit = js.native
+  def UIPopover(options: AnonId): Unit = js.native
   /**
     * Close any currently visible popovers.
     *
@@ -196,7 +196,7 @@ trait ChocolateChipStatic extends js.Object {
     * Creates and initializes a slide out menu. Possible options: {dynamic: true, callback: function() { alert("Woohoo!");}}
     */
   def UISlideout(): js.Any = js.native
-  def UISlideout(options: AnonArgs): js.Any = js.native
+  def UISlideout(options: AnonDynamic): js.Any = js.native
   /**
     * Creates a tabbar. On iOS this is at the bottom of the screen. On Android and Windows, it is at the top.
     * Options: {id: 'mySpecialTabbar', tabs: 4, labels: ["Refresh", "Add", "Info", "Downloads", "Favorite"], icons: ["refresh", "add", "info", "downloads", "favorite"], selected: 2 }

@@ -1,5 +1,6 @@
 package typings.blueprintjsCore.popoverMod
 
+import typings.blueprintjsCore.IPopoverPropschildrenReac
 import typings.blueprintjsCore.commonMod.AbstractPureComponent2
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -56,6 +57,7 @@ class Popover ()
     * detects a resize).
     */
   def reposition(): Unit = js.native
+  /* protected */ def validateProps(props: IPopoverPropschildrenReac): Unit = js.native
 }
 
 /* static members */

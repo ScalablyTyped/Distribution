@@ -33,7 +33,7 @@ object FailureHandlingKind extends js.Object {
   val Transactional: FailureHandlingKind = js.native
   /**
     * The client tries to undo the operations already executed. But there is no
-    * guaruntee that this is succeeding.
+    * guarantee that this is succeeding.
     */
   val Undo: FailureHandlingKind = js.native
 }

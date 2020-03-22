@@ -6,7 +6,7 @@ import typings.expressServeStaticCore.mod.Request
 import typings.expressServeStaticCore.mod.Response
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
-import typings.std.Partial
+import typings.pollyjsNodeServer.PartialConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pollyjs/node-server", "Server")
 @js.native
 class Server () extends js.Object {
-  def this(options: Partial[Config]) = this()
+  def this(options: PartialConfig) = this()
   @JSName("app")
   var app_Original: Express = js.native
   var config: Config = js.native

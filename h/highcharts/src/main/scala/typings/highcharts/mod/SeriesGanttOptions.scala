@@ -8,13 +8,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.highcharts.mod.SeriesOptions because var conflicts: zIndex. Inlined id, index, legendIndex, mapData, name, stack, treemap, `type`, xAxis, yAxis */ trait SeriesGanttOptions
+- typings.highcharts.mod.SeriesOptions because var conflicts: zIndex. Inlined id, index, legendIndex, mapData, name, stack, `type`, xAxis, yAxis */ trait SeriesGanttOptions
   extends PlotGanttOptions
      with SeriesOptionsType {
   /**
     * (Gantt) Data for a Gantt series.
     */
-  var data: js.UndefOr[js.Array[SeriesGanttDataOptions]] = js.undefined
+  var data: js.UndefOr[js.Array[GanttPointOptionsObject]] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) An id for the series. This can
     * be used after render time to get a pointer to the series object through
@@ -50,7 +50,6 @@ import scala.scalajs.js.annotation._
     * string.
     */
   var stack: js.UndefOr[Double | String] = js.undefined
-  var treemap: js.UndefOr[SeriesTreemapOptions] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) This property is only in
     * TypeScript non-optional and might be `undefined` in series objects from
@@ -77,10 +76,10 @@ object SeriesGanttOptions {
   @scala.inline
   def apply(
     `type`: String | gantt,
-    accessibility: js.Object | PlotGanttAccessibilityOptions = null,
+    accessibility: SeriesAccessibilityOptionsObject = null,
     allAreas: js.UndefOr[Boolean] = js.undefined,
     allowPointSelect: js.UndefOr[Boolean] = js.undefined,
-    animation: Boolean | AnimationOptionsObject | PlotGanttAnimationOptions = null,
+    animation: Boolean | AnimationOptionsObject = null,
     animationLimit: Int | Double = null,
     boostBlending: OptionsBoostBlendingValue = null,
     borderColor: ColorString | GradientColorObject | PatternObject = null,
@@ -97,15 +96,16 @@ object SeriesGanttOptions {
     compare: String = null,
     compareBase: `0` | `100` = null,
     compareStart: js.UndefOr[Boolean] = js.undefined,
-    connectors: PlotGanttConnectorsOptions = null,
+    connectors: SeriesConnectorsOptionsObject = null,
     cursor: String | CursorValue = null,
-    data: js.Array[SeriesGanttDataOptions] = null,
-    dataGrouping: PlotGanttDataGroupingOptions = null,
-    dataLabels: js.Any = null,
+    data: js.Array[GanttPointOptionsObject] = null,
+    dataGrouping: DataGroupingOptionsObject = null,
+    dataLabels: DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject] = null,
+    dataSorting: DataSortingOptionsObject | PlotGanttDataSortingOptions = null,
     description: String = null,
-    dragDrop: PlotGanttDragDropOptions = null,
+    dragDrop: SeriesDragDropOptionsObject = null,
     enableMouseTracking: js.UndefOr[Boolean] = js.undefined,
-    events: PlotGanttEventsOptions = null,
+    events: SeriesEventsOptionsObject = null,
     groupPadding: Int | Double = null,
     groupZPadding: Int | Double = null,
     grouping: js.UndefOr[Boolean] = js.undefined,
@@ -114,9 +114,9 @@ object SeriesGanttOptions {
     index: Int | Double = null,
     joinBy: String | js.Array[String] = null,
     keys: js.Array[String] = null,
-    label: PlotGanttLabelOptions = null,
-    lastPrice: PlotGanttLastPriceOptions = null,
-    lastVisiblePrice: PlotGanttLastVisiblePriceOptions = null,
+    label: SeriesLabelOptionsObject = null,
+    lastPrice: SeriesLastPriceOptionsObject = null,
+    lastVisiblePrice: SeriesLastVisiblePriceOptionsObject = null,
     legendIndex: Int | Double = null,
     linkedTo: String = null,
     mapData: js.Array[SeriesMapDataOptions] | js.Any = null,
@@ -126,7 +126,7 @@ object SeriesGanttOptions {
     navigatorOptions: PlotSeriesOptions = null,
     opacity: Int | Double = null,
     partialFill: PlotGanttPartialFillOptions = null,
-    point: PlotGanttPointOptions = null,
+    point: PlotSeriesPointOptions = null,
     pointDescriptionFormatter: js.Function = null,
     pointPadding: Int | Double = null,
     pointRange: Int | Double = null,
@@ -138,17 +138,16 @@ object SeriesGanttOptions {
     showInNavigator: js.UndefOr[Boolean] = js.undefined,
     skipKeyboardNavigation: js.UndefOr[Boolean] = js.undefined,
     stack: Double | String = null,
-    states: PlotGanttStatesOptions = null,
+    states: SeriesStatesOptionsObject = null,
     stickyTracking: js.UndefOr[Boolean] = js.undefined,
-    tooltip: PlotGanttTooltipOptions = null,
-    treemap: SeriesTreemapOptions = null,
+    tooltip: SeriesTooltipOptionsObject = null,
     turboThreshold: Int | Double = null,
     visible: js.UndefOr[Boolean] = js.undefined,
     xAxis: Double | String = null,
     yAxis: Double | String = null,
     zIndex: Int | Double = null,
     zoneAxis: String = null,
-    zones: js.Array[PlotGanttZonesOptions] = null
+    zones: js.Array[SeriesZonesOptionsObject] = null
   ): SeriesGanttOptions = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -177,6 +176,7 @@ object SeriesGanttOptions {
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (dataGrouping != null) __obj.updateDynamic("dataGrouping")(dataGrouping.asInstanceOf[js.Any])
     if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
+    if (dataSorting != null) __obj.updateDynamic("dataSorting")(dataSorting.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (dragDrop != null) __obj.updateDynamic("dragDrop")(dragDrop.asInstanceOf[js.Any])
     if (!js.isUndefined(enableMouseTracking)) __obj.updateDynamic("enableMouseTracking")(enableMouseTracking.asInstanceOf[js.Any])
@@ -216,7 +216,6 @@ object SeriesGanttOptions {
     if (states != null) __obj.updateDynamic("states")(states.asInstanceOf[js.Any])
     if (!js.isUndefined(stickyTracking)) __obj.updateDynamic("stickyTracking")(stickyTracking.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (treemap != null) __obj.updateDynamic("treemap")(treemap.asInstanceOf[js.Any])
     if (turboThreshold != null) __obj.updateDynamic("turboThreshold")(turboThreshold.asInstanceOf[js.Any])
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     if (xAxis != null) __obj.updateDynamic("xAxis")(xAxis.asInstanceOf[js.Any])

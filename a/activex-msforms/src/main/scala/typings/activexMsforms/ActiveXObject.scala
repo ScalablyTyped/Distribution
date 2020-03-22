@@ -385,13 +385,13 @@ trait ActiveXObject extends js.Object {
     obj: MultiPage,
     event: AddControl,
     argNames: js.Tuple2[Index, typings.activexMsforms.activexMsformsStrings.Control],
-    handler: js.ThisFunction1[/* this */ MultiPage, /* parameter */ AnonControlIndex, Unit]
+    handler: js.ThisFunction1[/* this */ MultiPage, /* parameter */ AnonIndex, Unit]
   ): Unit = js.native
   def on(
     obj: MultiPage,
     event: Click,
     argNames: js.Array[Index],
-    handler: js.ThisFunction1[/* this */ MultiPage, /* parameter */ AnonIndex, Unit]
+    handler: js.ThisFunction1[/* this */ MultiPage, /* parameter */ AnonIndexNumber, Unit]
   ): Unit = js.native
   def on(
     obj: MultiPage,
@@ -421,31 +421,31 @@ trait ActiveXObject extends js.Object {
     obj: MultiPage,
     event: Layout,
     argNames: js.Array[Index],
-    handler: js.ThisFunction1[/* this */ MultiPage, /* parameter */ AnonIndex, Unit]
+    handler: js.ThisFunction1[/* this */ MultiPage, /* parameter */ AnonIndexNumber, Unit]
   ): Unit = js.native
   def on(
     obj: MultiPage,
     event: MouseDown,
     argNames: js.Tuple5[Index, Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ MultiPage, /* parameter */ AnonButtonIndex, Unit]
+    handler: js.ThisFunction1[/* this */ MultiPage, /* parameter */ AnonShift, Unit]
   ): Unit = js.native
   def on(
     obj: MultiPage,
     event: MouseMove,
     argNames: js.Tuple5[Index, Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ MultiPage, /* parameter */ AnonButtonIndex, Unit]
+    handler: js.ThisFunction1[/* this */ MultiPage, /* parameter */ AnonShift, Unit]
   ): Unit = js.native
   def on(
     obj: MultiPage,
     event: MouseUp,
     argNames: js.Tuple5[Index, Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ MultiPage, /* parameter */ AnonButtonIndex, Unit]
+    handler: js.ThisFunction1[/* this */ MultiPage, /* parameter */ AnonShift, Unit]
   ): Unit = js.native
   def on(
     obj: MultiPage,
     event: RemoveControl,
     argNames: js.Tuple2[Index, typings.activexMsforms.activexMsformsStrings.Control],
-    handler: js.ThisFunction1[/* this */ MultiPage, /* parameter */ AnonControlIndex, Unit]
+    handler: js.ThisFunction1[/* this */ MultiPage, /* parameter */ AnonIndex, Unit]
   ): Unit = js.native
   def on(
     obj: MultiPage,
@@ -535,7 +535,7 @@ trait ActiveXObject extends js.Object {
     obj: TabStrip,
     event: Click,
     argNames: js.Array[Index],
-    handler: js.ThisFunction1[/* this */ TabStrip, /* parameter */ AnonIndex, Unit]
+    handler: js.ThisFunction1[/* this */ TabStrip, /* parameter */ AnonIndexNumber, Unit]
   ): Unit = js.native
   def on(
     obj: TabStrip,
@@ -565,19 +565,19 @@ trait ActiveXObject extends js.Object {
     obj: TabStrip,
     event: MouseDown,
     argNames: js.Tuple5[Index, Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ TabStrip, /* parameter */ AnonButtonIndex, Unit]
+    handler: js.ThisFunction1[/* this */ TabStrip, /* parameter */ AnonShift, Unit]
   ): Unit = js.native
   def on(
     obj: TabStrip,
     event: MouseMove,
     argNames: js.Tuple5[Index, Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ TabStrip, /* parameter */ AnonButtonIndex, Unit]
+    handler: js.ThisFunction1[/* this */ TabStrip, /* parameter */ AnonShift, Unit]
   ): Unit = js.native
   def on(
     obj: TabStrip,
     event: MouseUp,
     argNames: js.Tuple5[Index, Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ TabStrip, /* parameter */ AnonButtonIndex, Unit]
+    handler: js.ThisFunction1[/* this */ TabStrip, /* parameter */ AnonShift, Unit]
   ): Unit = js.native
   def on(
     obj: TextBox,

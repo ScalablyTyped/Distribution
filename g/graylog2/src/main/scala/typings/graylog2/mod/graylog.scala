@@ -1,6 +1,7 @@
 package typings.graylog2.mod
 
-import typings.graylog2.Fn
+import typings.graylog2.FnCall
+import typings.graylog2.ReadonlyGraylogConfig
 import typings.node.eventsMod.EventEmitter
 import typings.std.Error
 import typings.std.Record
@@ -11,25 +12,25 @@ import scala.scalajs.js.annotation._
 @JSImport("graylog2", "graylog")
 @js.native
 class graylog protected () extends EventEmitter {
-  def this(config: GraylogConfig) = this()
+  def this(config: ReadonlyGraylogConfig) = this()
   @JSName("alert")
-  var alert_Original: Fn = js.native
+  var alert_Original: FnCall = js.native
   @JSName("critical")
-  var critical_Original: Fn = js.native
+  var critical_Original: FnCall = js.native
   @JSName("debug")
-  var debug_Original: Fn = js.native
+  var debug_Original: FnCall = js.native
   @JSName("emergency")
-  var emergency_Original: Fn = js.native
+  var emergency_Original: FnCall = js.native
   @JSName("error")
-  var error_Original: Fn = js.native
+  var error_Original: FnCall = js.native
   @JSName("info")
-  var info_Original: Fn = js.native
+  var info_Original: FnCall = js.native
   @JSName("notice")
-  var notice_Original: Fn = js.native
+  var notice_Original: FnCall = js.native
   @JSName("warn")
-  var warn_Original: Fn = js.native
+  var warn_Original: FnCall = js.native
   @JSName("warning")
-  var warning_Original: Fn = js.native
+  var warning_Original: FnCall = js.native
   def alert(message: String): Unit = js.native
   def alert(
     message: String,

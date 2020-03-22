@@ -1,10 +1,10 @@
 package typings.officeUiFabricReact.contextualMenuTypesMod
 
+import typings.fluentuiReactFocus.focusZoneTypesMod.IFocusZoneProps
 import typings.officeUiFabricReact.calloutTypesMod.ICalloutProps
 import typings.officeUiFabricReact.calloutTypesMod.Target
 import typings.officeUiFabricReact.contextualMenuClassNamesMod.IContextualMenuClassNames
 import typings.officeUiFabricReact.contextualMenuItemTypesMod.IContextualMenuItemProps
-import typings.officeUiFabricReact.focusZoneTypesMod.IFocusZoneProps
 import typings.officeUiFabricReact.withResponsiveModeMod.IWithResponsiveModeState
 import typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode
 import typings.react.mod.ComponentClass

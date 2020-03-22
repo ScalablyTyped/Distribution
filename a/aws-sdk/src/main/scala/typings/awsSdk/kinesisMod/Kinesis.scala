@@ -1,6 +1,6 @@
 package typings.awsSdk.kinesisMod
 
-import typings.awsSdk.AnonWaiter
+import typings.awsSdk.DescribeStreamInputwaiter
 import typings.awsSdk.awsSdkStrings.streamExists
 import typings.awsSdk.awsSdkStrings.streamNotExists
 import typings.awsSdk.configMod.ConfigBase
@@ -368,11 +368,11 @@ trait Kinesis extends Service {
     * Waits for the streamExists state by periodically calling the underlying Kinesis.describeStreamoperation every 10 seconds (at most 18 times).
     */
   @JSName("waitFor")
-  def waitFor_streamExists(state: streamExists, params: DescribeStreamInput with AnonWaiter): Request[DescribeStreamOutput, AWSError] = js.native
+  def waitFor_streamExists(state: streamExists, params: DescribeStreamInputwaiter): Request[DescribeStreamOutput, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_streamExists(
     state: streamExists,
-    params: DescribeStreamInput with AnonWaiter,
+    params: DescribeStreamInputwaiter,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeStreamOutput, Unit]
   ): Request[DescribeStreamOutput, AWSError] = js.native
   /**
@@ -389,11 +389,11 @@ trait Kinesis extends Service {
     * Waits for the streamNotExists state by periodically calling the underlying Kinesis.describeStreamoperation every 10 seconds (at most 18 times).
     */
   @JSName("waitFor")
-  def waitFor_streamNotExists(state: streamNotExists, params: DescribeStreamInput with AnonWaiter): Request[DescribeStreamOutput, AWSError] = js.native
+  def waitFor_streamNotExists(state: streamNotExists, params: DescribeStreamInputwaiter): Request[DescribeStreamOutput, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_streamNotExists(
     state: streamNotExists,
-    params: DescribeStreamInput with AnonWaiter,
+    params: DescribeStreamInputwaiter,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeStreamOutput, Unit]
   ): Request[DescribeStreamOutput, AWSError] = js.native
 }

@@ -1,30 +1,36 @@
 package typings.expressValidator
 
 import typings.expressValidator.baseMod.DynamicMessageCreator
-import typings.expressValidator.baseMod.Location
-import typings.expressValidator.expressValidatorBooleans.`true`
+import typings.expressValidator.schemaMod.ValidatorSchemaOptions
+import typings.std.Parameters
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait AnonErrorMessage extends js.Object {
+trait AnonErrorMessage[K /* <: String */] extends ValidatorSchemaOptions[K] {
   var errorMessage: js.UndefOr[DynamicMessageCreator | js.Any] = js.undefined
-  var in: js.UndefOr[Location | js.Array[Location]] = js.undefined
-  var optional: js.UndefOr[`true` | AnonOptions] = js.undefined
+  var negated: js.UndefOr[Boolean] = js.undefined
+  var options: js.UndefOr[
+    (Parameters[
+      /* import warning: importer.ImportType#apply Failed type conversion: express-validator.express-validator/src/chain/validators.Validators<any>[K] */ js.Any
+    ]) | (/* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<express-validator.express-validator/src/chain/validators.Validators<any>[K]>[0] */ js.Any)
+  ] = js.undefined
 }
 
 object AnonErrorMessage {
   @scala.inline
-  def apply(
+  def apply[K /* <: String */](
     errorMessage: DynamicMessageCreator | js.Any = null,
-    in: Location | js.Array[Location] = null,
-    optional: `true` | AnonOptions = null
-  ): AnonErrorMessage = {
+    negated: js.UndefOr[Boolean] = js.undefined,
+    options: (Parameters[
+      /* import warning: importer.ImportType#apply Failed type conversion: express-validator.express-validator/src/chain/validators.Validators<any>[K] */ js.Any
+    ]) | (/* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<express-validator.express-validator/src/chain/validators.Validators<any>[K]>[0] */ js.Any) = null
+  ): AnonErrorMessage[K] = {
     val __obj = js.Dynamic.literal()
     if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage.asInstanceOf[js.Any])
-    if (in != null) __obj.updateDynamic("in")(in.asInstanceOf[js.Any])
-    if (optional != null) __obj.updateDynamic("optional")(optional.asInstanceOf[js.Any])
-    __obj.asInstanceOf[AnonErrorMessage]
+    if (!js.isUndefined(negated)) __obj.updateDynamic("negated")(negated.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AnonErrorMessage[K]]
   }
 }
 

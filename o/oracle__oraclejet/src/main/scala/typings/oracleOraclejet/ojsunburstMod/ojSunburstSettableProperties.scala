@@ -1,9 +1,9 @@
 package typings.oracleOraclejet.ojsunburstMod
 
-import typings.oracleOraclejet.AnonAutoBorderColorBorderWidth
-import typings.oracleOraclejet.AnonComponentNameLabelAndValueLabelClearSelectionLabelColor
-import typings.oracleOraclejet.AnonContextRendererAnonInsertAnonPreventDefaultD
-import typings.oracleOraclejet.AnonContextRendererAnonInsertD
+import typings.oracleOraclejet.Anon16
+import typings.oracleOraclejet.Anon17
+import typings.oracleOraclejet.AnonHoverColor
+import typings.oracleOraclejet.AnonLabelColor
 import typings.oracleOraclejet.ojdataproviderMod.DataProvider
 import typings.oracleOraclejet.ojdvtBaseMod.dvtBaseComponentSettableProperties
 import typings.oracleOraclejet.ojkeysetMod.KeySet
@@ -37,19 +37,19 @@ trait ojSunburstSettableProperties[K, D] extends dvtBaseComponentSettablePropert
   var highlightedCategories: js.Array[String]
   var hoverBehavior: dim | none
   var hoverBehaviorDelay: Double
-  var nodeDefaults: AnonAutoBorderColorBorderWidth
+  var nodeDefaults: AnonHoverColor
   var rootNode: js.Any
-  var rootNodeContent: AnonContextRendererAnonInsertD[K, D]
+  var rootNodeContent: Anon16[K, D]
   var rotation: off | on
   var selection: js.Array[_]
   var selectionMode: none | single | multiple
   var sizeLabel: String
   var sorting: on | off
   var startAngle: Double
-  var tooltip: AnonContextRendererAnonInsertAnonPreventDefaultD[K, D]
+  var tooltip: Anon17[K, D]
   var touchResponse: touchStart | auto
   @JSName("translations")
-  var translations_ojSunburstSettableProperties: AnonComponentNameLabelAndValueLabelClearSelectionLabelColor
+  var translations_ojSunburstSettableProperties: AnonLabelColor
 }
 
 object ojSunburstSettableProperties {
@@ -69,19 +69,19 @@ object ojSunburstSettableProperties {
     highlightedCategories: js.Array[String],
     hoverBehavior: dim | none,
     hoverBehaviorDelay: Double,
-    nodeDefaults: AnonAutoBorderColorBorderWidth,
+    nodeDefaults: AnonHoverColor,
     rootNode: js.Any,
-    rootNodeContent: AnonContextRendererAnonInsertD[K, D],
+    rootNodeContent: Anon16[K, D],
     rotation: off | on,
     selection: js.Array[_],
     selectionMode: none | single | multiple,
     sizeLabel: String,
     sorting: on | off,
     startAngle: Double,
-    tooltip: AnonContextRendererAnonInsertAnonPreventDefaultD[K, D],
+    tooltip: Anon17[K, D],
     touchResponse: touchStart | auto,
     trackResize: on | off,
-    translations: AnonComponentNameLabelAndValueLabelClearSelectionLabelColor,
+    translations: AnonLabelColor,
     data: DataProvider[K, D] = null
   ): ojSunburstSettableProperties[K, D] = {
     val __obj = js.Dynamic.literal(animationDuration = animationDuration.asInstanceOf[js.Any], animationOnDataChange = animationOnDataChange.asInstanceOf[js.Any], animationOnDisplay = animationOnDisplay.asInstanceOf[js.Any], animationUpdateColor = animationUpdateColor.asInstanceOf[js.Any], as = as.asInstanceOf[js.Any], colorLabel = colorLabel.asInstanceOf[js.Any], displayLevels = displayLevels.asInstanceOf[js.Any], drilling = drilling.asInstanceOf[js.Any], expanded = expanded.asInstanceOf[js.Any], hiddenCategories = hiddenCategories.asInstanceOf[js.Any], highlightMatch = highlightMatch.asInstanceOf[js.Any], highlightedCategories = highlightedCategories.asInstanceOf[js.Any], hoverBehavior = hoverBehavior.asInstanceOf[js.Any], hoverBehaviorDelay = hoverBehaviorDelay.asInstanceOf[js.Any], nodeDefaults = nodeDefaults.asInstanceOf[js.Any], rootNode = rootNode.asInstanceOf[js.Any], rootNodeContent = rootNodeContent.asInstanceOf[js.Any], rotation = rotation.asInstanceOf[js.Any], selection = selection.asInstanceOf[js.Any], selectionMode = selectionMode.asInstanceOf[js.Any], sizeLabel = sizeLabel.asInstanceOf[js.Any], sorting = sorting.asInstanceOf[js.Any], startAngle = startAngle.asInstanceOf[js.Any], tooltip = tooltip.asInstanceOf[js.Any], touchResponse = touchResponse.asInstanceOf[js.Any], trackResize = trackResize.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any])

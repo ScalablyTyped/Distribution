@@ -1,6 +1,6 @@
 package typings.magicString.mod
 
-import typings.std.Partial
+import typings.magicString.PartialSourceMapOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,9 +14,9 @@ trait MagicString extends js.Object {
   def appendLeft(index: Double, content: String): MagicString = js.native
   def appendRight(index: Double, content: String): MagicString = js.native
   def generateDecodedMap(): DecodedSourceMap = js.native
-  def generateDecodedMap(options: Partial[SourceMapOptions]): DecodedSourceMap = js.native
+  def generateDecodedMap(options: PartialSourceMapOptions): DecodedSourceMap = js.native
   def generateMap(): SourceMap = js.native
-  def generateMap(options: Partial[SourceMapOptions]): SourceMap = js.native
+  def generateMap(options: PartialSourceMapOptions): SourceMap = js.native
   def getIndentString(): String = js.native
   def indent(): MagicString = js.native
   def indent(indentStr: String): MagicString = js.native

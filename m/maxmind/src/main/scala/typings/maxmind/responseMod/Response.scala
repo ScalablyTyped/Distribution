@@ -17,6 +17,12 @@ trait Response extends js.Object
 
 object Response {
   @scala.inline
+  def DomainResponse(domain: String, ip_address: String = null): Response = {
+    val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any])
+    if (ip_address != null) __obj.updateDynamic("ip_address")(ip_address.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Response]
+  }
+  @scala.inline
   def IspResponse(
     autonomous_system_number: Double,
     autonomous_system_organization: String,
@@ -26,6 +32,28 @@ object Response {
   ): Response = {
     val __obj = js.Dynamic.literal(autonomous_system_number = autonomous_system_number.asInstanceOf[js.Any], autonomous_system_organization = autonomous_system_organization.asInstanceOf[js.Any], isp = isp.asInstanceOf[js.Any], organization = organization.asInstanceOf[js.Any])
     if (ip_address != null) __obj.updateDynamic("ip_address")(ip_address.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Response]
+  }
+  @scala.inline
+  def ConnectionTypeResponse(connection_type: String, ip_address: String = null): Response = {
+    val __obj = js.Dynamic.literal(connection_type = connection_type.asInstanceOf[js.Any])
+    if (ip_address != null) __obj.updateDynamic("ip_address")(ip_address.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Response]
+  }
+  @scala.inline
+  def CountryResponse(
+    continent: ContinentRecord = null,
+    country: CountryRecord = null,
+    registered_country: RegisteredCountryRecord = null,
+    represented_country: RepresentedCountryRecord = null,
+    traits: TraitsRecord = null
+  ): Response = {
+    val __obj = js.Dynamic.literal()
+    if (continent != null) __obj.updateDynamic("continent")(continent.asInstanceOf[js.Any])
+    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
+    if (registered_country != null) __obj.updateDynamic("registered_country")(registered_country.asInstanceOf[js.Any])
+    if (represented_country != null) __obj.updateDynamic("represented_country")(represented_country.asInstanceOf[js.Any])
+    if (traits != null) __obj.updateDynamic("traits")(traits.asInstanceOf[js.Any])
     __obj.asInstanceOf[Response]
   }
   @scala.inline
@@ -73,40 +101,12 @@ object Response {
     __obj.asInstanceOf[Response]
   }
   @scala.inline
-  def CountryResponse(
-    continent: ContinentRecord = null,
-    country: CountryRecord = null,
-    registered_country: RegisteredCountryRecord = null,
-    represented_country: RepresentedCountryRecord = null,
-    traits: TraitsRecord = null
-  ): Response = {
-    val __obj = js.Dynamic.literal()
-    if (continent != null) __obj.updateDynamic("continent")(continent.asInstanceOf[js.Any])
-    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
-    if (registered_country != null) __obj.updateDynamic("registered_country")(registered_country.asInstanceOf[js.Any])
-    if (represented_country != null) __obj.updateDynamic("represented_country")(represented_country.asInstanceOf[js.Any])
-    if (traits != null) __obj.updateDynamic("traits")(traits.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Response]
-  }
-  @scala.inline
   def AsnResponse(
     autonomous_system_number: Double,
     autonomous_system_organization: String,
     ip_address: String = null
   ): Response = {
     val __obj = js.Dynamic.literal(autonomous_system_number = autonomous_system_number.asInstanceOf[js.Any], autonomous_system_organization = autonomous_system_organization.asInstanceOf[js.Any])
-    if (ip_address != null) __obj.updateDynamic("ip_address")(ip_address.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Response]
-  }
-  @scala.inline
-  def ConnectionTypeResponse(connection_type: String, ip_address: String = null): Response = {
-    val __obj = js.Dynamic.literal(connection_type = connection_type.asInstanceOf[js.Any])
-    if (ip_address != null) __obj.updateDynamic("ip_address")(ip_address.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Response]
-  }
-  @scala.inline
-  def DomainResponse(domain: String, ip_address: String = null): Response = {
-    val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any])
     if (ip_address != null) __obj.updateDynamic("ip_address")(ip_address.asInstanceOf[js.Any])
     __obj.asInstanceOf[Response]
   }

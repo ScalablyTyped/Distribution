@@ -1,8 +1,8 @@
 package typings.reduxForm.actionsMod
 
-import typings.reduxForm.FnData
-import typings.reduxForm.FnError
-import typings.reduxForm.FnForm
+import typings.reduxForm.FnCall
+import typings.reduxForm.FnCallFormSyncWarningsWarning
+import typings.reduxForm.FnCallFromSyncErrorsError
 import typings.reduxForm.mod.FieldType
 import typings.reduxForm.mod.FormErrors
 import scala.scalajs.js
@@ -69,7 +69,7 @@ object default extends js.Object {
   var clearSubmitErrors: js.Function1[/* form */ String, FormAction] = js.native
   var destroy: js.Function1[/* repeated */ String, FormAction] = js.native
   var focus: js.Function2[/* form */ String, /* field */ String, FormAction] = js.native
-  var initialize: FnData = js.native
+  var initialize: FnCall = js.native
   var registerField: js.Function3[/* form */ String, /* name */ String, /* type */ FieldType, FormAction] = js.native
   var reset: js.Function1[/* form */ String, FormAction] = js.native
   var setSubmitFailed: js.Function2[/* form */ String, /* repeated */ String, FormAction] = js.native
@@ -82,7 +82,7 @@ object default extends js.Object {
   var touch: js.Function2[/* form */ String, /* repeated */ String, FormAction] = js.native
   var unregisterField: js.Function2[/* form */ String, /* name */ String, FormAction] = js.native
   var untouch: js.Function2[/* form */ String, /* repeated */ String, FormAction] = js.native
-  var updateSyncErrors: FnError = js.native
-  var updateSyncWarnings: FnForm = js.native
+  var updateSyncErrors: FnCallFromSyncErrorsError = js.native
+  var updateSyncWarnings: FnCallFormSyncWarningsWarning = js.native
 }
 

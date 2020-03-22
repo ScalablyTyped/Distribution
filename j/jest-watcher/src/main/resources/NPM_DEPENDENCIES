@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "jest-watcher" : "24.9.0"
+      "jest-watcher" : "25.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "jest-watcher" : "24.9.0"
+      "jest-watcher" : "25.1.0"
     }
   ],
   "compile-devDependencies" : [

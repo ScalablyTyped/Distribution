@@ -5,13 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object ErrorSettings {
-  type Param = (typings.std.Pick[
-    typings.semanticUiTab.SemanticUI.Tab.ErrorSettings.Impl, 
-    typings.semanticUiTab.semanticUiTabStrings.api | typings.semanticUiTab.semanticUiTabStrings.method | typings.semanticUiTab.semanticUiTabStrings.missingTab | typings.semanticUiTab.semanticUiTabStrings.noContent | typings.semanticUiTab.semanticUiTabStrings.path | typings.semanticUiTab.semanticUiTabStrings.recursion | typings.semanticUiTab.semanticUiTabStrings.state
-  ]) with (typings.std.Partial[
-    typings.std.Pick[
-      typings.semanticUiTab.SemanticUI.Tab.ErrorSettings.Impl, 
-      typings.semanticUiTab.semanticUiTabStrings.api | typings.semanticUiTab.semanticUiTabStrings.method | typings.semanticUiTab.semanticUiTabStrings.missingTab | typings.semanticUiTab.semanticUiTabStrings.noContent | typings.semanticUiTab.semanticUiTabStrings.path | typings.semanticUiTab.semanticUiTabStrings.recursion | typings.semanticUiTab.semanticUiTabStrings.state
-    ]
-  ])
+  type Param = (typings.semanticUiTab.PickImplapi | typings.semanticUiTab.PickImplmethod | typings.semanticUiTab.PickImplmissingTab | typings.semanticUiTab.PickImplnoContent | typings.semanticUiTab.PickImplpathPath | typings.semanticUiTab.PickImplrecursion | typings.semanticUiTab.PickImplstate) with typings.semanticUiTab.PartialPickImplkeyofImplApi
 }

@@ -17,15 +17,6 @@ object feathersjsFeathersStrings {
   @js.native
   sealed trait error extends js.Object
   
-  @js.native
-  sealed trait max extends js.Object
-  
-  @js.native
-  sealed trait paginate extends js.Object
-  
-  @js.native
-  sealed trait query extends js.Object
-  
   @scala.inline
   def __feathersSkipHooks: __feathersSkipHooks = "__feathersSkipHooks".asInstanceOf[__feathersSkipHooks]
   @scala.inline
@@ -34,11 +25,5 @@ object feathersjsFeathersStrings {
   def before: before = "before".asInstanceOf[before]
   @scala.inline
   def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def max: max = "max".asInstanceOf[max]
-  @scala.inline
-  def paginate: paginate = "paginate".asInstanceOf[paginate]
-  @scala.inline
-  def query: query = "query".asInstanceOf[query]
 }
 

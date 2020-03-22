@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-display-name
 
-Typings are for version 0.2.4
+Typings are for version 0.2.5
 
 ## Library description:
 utility to return a react components display name

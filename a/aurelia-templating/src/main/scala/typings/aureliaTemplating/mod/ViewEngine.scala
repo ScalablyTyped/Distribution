@@ -125,5 +125,6 @@ object ViewEngine extends js.Object {
     * The metadata key for storing requires declared in a ViewModel.
     */
   var viewModelRequireMetadataKey: js.Any = js.native
+  def inject(): js.Any = js.native
 }
 

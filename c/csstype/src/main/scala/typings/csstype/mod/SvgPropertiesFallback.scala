@@ -41,7 +41,7 @@ trait SvgPropertiesFallback[TLength] extends js.Object {
   var markerMid: js.UndefOr[MarkerMidProperty | js.Array[MarkerMidProperty]] = js.undefined
   var markerStart: js.UndefOr[MarkerStartProperty | js.Array[MarkerStartProperty]] = js.undefined
   var mask: js.UndefOr[MaskProperty[TLength] | js.Array[MaskProperty[TLength]]] = js.undefined
-  var opacity: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
+  var opacity: js.UndefOr[OpacityProperty | js.Array[OpacityProperty]] = js.undefined
   var overflow: js.UndefOr[OverflowProperty | js.Array[OverflowProperty]] = js.undefined
   var paintOrder: js.UndefOr[PaintOrderProperty | js.Array[PaintOrderProperty]] = js.undefined
   var pointerEvents: js.UndefOr[PointerEventsProperty | js.Array[PointerEventsProperty]] = js.undefined
@@ -57,7 +57,7 @@ trait SvgPropertiesFallback[TLength] extends js.Object {
   var strokeOpacity: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
   var strokeWidth: js.UndefOr[StrokeWidthProperty[TLength] | js.Array[StrokeWidthProperty[TLength]]] = js.undefined
   var textAnchor: js.UndefOr[TextAnchorProperty | js.Array[TextAnchorProperty]] = js.undefined
-  var textDecoration: js.UndefOr[TextDecorationProperty | js.Array[TextDecorationProperty]] = js.undefined
+  var textDecoration: js.UndefOr[TextDecorationProperty[TLength] | js.Array[TextDecorationProperty[TLength]]] = js.undefined
   var textRendering: js.UndefOr[TextRenderingProperty | js.Array[TextRenderingProperty]] = js.undefined
   var unicodeBidi: js.UndefOr[UnicodeBidiProperty | js.Array[UnicodeBidiProperty]] = js.undefined
   var vectorEffect: js.UndefOr[VectorEffectProperty | js.Array[VectorEffectProperty]] = js.undefined
@@ -106,7 +106,7 @@ object SvgPropertiesFallback {
     markerMid: MarkerMidProperty | js.Array[MarkerMidProperty] = null,
     markerStart: MarkerStartProperty | js.Array[MarkerStartProperty] = null,
     mask: MaskProperty[TLength] | js.Array[MaskProperty[TLength]] = null,
-    opacity: GlobalsNumber | js.Array[GlobalsNumber] = null,
+    opacity: OpacityProperty | js.Array[OpacityProperty] = null,
     overflow: OverflowProperty | js.Array[OverflowProperty] = null,
     paintOrder: PaintOrderProperty | js.Array[PaintOrderProperty] = null,
     pointerEvents: PointerEventsProperty | js.Array[PointerEventsProperty] = null,
@@ -122,7 +122,7 @@ object SvgPropertiesFallback {
     strokeOpacity: GlobalsNumber | js.Array[GlobalsNumber] = null,
     strokeWidth: StrokeWidthProperty[TLength] | js.Array[StrokeWidthProperty[TLength]] = null,
     textAnchor: TextAnchorProperty | js.Array[TextAnchorProperty] = null,
-    textDecoration: TextDecorationProperty | js.Array[TextDecorationProperty] = null,
+    textDecoration: TextDecorationProperty[TLength] | js.Array[TextDecorationProperty[TLength]] = null,
     textRendering: TextRenderingProperty | js.Array[TextRenderingProperty] = null,
     unicodeBidi: UnicodeBidiProperty | js.Array[UnicodeBidiProperty] = null,
     vectorEffect: VectorEffectProperty | js.Array[VectorEffectProperty] = null,

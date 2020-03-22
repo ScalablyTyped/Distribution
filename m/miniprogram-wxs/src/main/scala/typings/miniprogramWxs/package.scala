@@ -92,7 +92,9 @@ package object miniprogramWxs {
   /**
     * Construct a type with a set of properties K of type T
     */
-  type Record[K /* <: java.lang.String */, T] = org.scalablytyped.runtime.StringDictionary[K]
+  type Record[K /* <: java.lang.String */, T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in K ]: T}
+    */ typings.miniprogramWxs.miniprogramWxsStrings.Record with js.Any
   /**
     * Make all properties in T required
     */

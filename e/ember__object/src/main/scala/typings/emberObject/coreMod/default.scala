@@ -1,6 +1,6 @@
 package typings.emberObject.coreMod
 
-import typings.emberObject.TypeofClassCoreObject
+import typings.emberObject.TypeofCoreObject
 import typings.emberObject.typesMod.EmberClassArguments
 import typings.emberObject.typesMod.EmberClassConstructor
 import typings.emberObject.typesMod.EmberInstanceArguments
@@ -74,13 +74,13 @@ class default () extends CoreObject {
 object default extends js.Object {
   var isClass: Boolean = js.native
   var isMethod: Boolean = js.native
-  def create[Class /* <: TypeofClassCoreObject */](): InstanceType[Class] = js.native
-  def create[Class /* <: TypeofClassCoreObject */, T1 /* <: EmberInstanceArguments[UnwrapComputedPropertySetters[InstanceType[Class]]] */](arg1: T1 with (ThisType[T1 with InstanceType[Class]])): InstanceType[Class] with T1 = js.native
-  def create[Class /* <: TypeofClassCoreObject */, T1 /* <: EmberInstanceArguments[UnwrapComputedPropertySetters[InstanceType[Class]]] */, T2 /* <: EmberInstanceArguments[UnwrapComputedPropertySetters[InstanceType[Class]]] */](
+  def create[Class /* <: TypeofCoreObject */](): InstanceType[Class] = js.native
+  def create[Class /* <: TypeofCoreObject */, T1 /* <: EmberInstanceArguments[UnwrapComputedPropertySetters[InstanceType[Class]]] */](arg1: T1 with (ThisType[T1 with InstanceType[Class]])): InstanceType[Class] with T1 = js.native
+  def create[Class /* <: TypeofCoreObject */, T1 /* <: EmberInstanceArguments[UnwrapComputedPropertySetters[InstanceType[Class]]] */, T2 /* <: EmberInstanceArguments[UnwrapComputedPropertySetters[InstanceType[Class]]] */](
     arg1: T1 with (ThisType[T1 with InstanceType[Class]]),
     arg2: T2 with (ThisType[T2 with InstanceType[Class]])
   ): InstanceType[Class] with T1 with T2 = js.native
-  def create[Class /* <: TypeofClassCoreObject */, T1 /* <: EmberInstanceArguments[UnwrapComputedPropertySetters[InstanceType[Class]]] */, T2 /* <: EmberInstanceArguments[UnwrapComputedPropertySetters[InstanceType[Class]]] */, T3 /* <: EmberInstanceArguments[UnwrapComputedPropertySetters[InstanceType[Class]]] */](
+  def create[Class /* <: TypeofCoreObject */, T1 /* <: EmberInstanceArguments[UnwrapComputedPropertySetters[InstanceType[Class]]] */, T2 /* <: EmberInstanceArguments[UnwrapComputedPropertySetters[InstanceType[Class]]] */, T3 /* <: EmberInstanceArguments[UnwrapComputedPropertySetters[InstanceType[Class]]] */](
     arg1: T1 with (ThisType[T1 with InstanceType[Class]]),
     arg2: T2 with (ThisType[T2 with InstanceType[Class]]),
     arg3: T3 with (ThisType[T3 with InstanceType[Class]])

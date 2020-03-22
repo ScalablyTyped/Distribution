@@ -1,22 +1,26 @@
 package typings.exceljs.mod
 
 import typings.exceljs.AnonIncludeEmpty
-import typings.std.Partial
+import typings.exceljs.PartialAlignment
+import typings.exceljs.PartialBorders
+import typings.exceljs.PartialFont
+import typings.exceljs.PartialProtection
+import typings.exceljs.PartialStyle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
 trait Column extends js.Object {
-  var alignment: Partial[Alignment] = js.native
-  var border: Partial[Borders] = js.native
+  var alignment: PartialAlignment = js.native
+  var border: PartialBorders = js.native
   /**
   	 * indicate the collapsed state based on outlineLevel
   	 */
   val collapsed: Boolean = js.native
   var defn: js.Any = js.native
   var fill: Fill = js.native
-  var font: Partial[Font] = js.native
+  var font: PartialFont = js.native
   /**
   	 * Can be a string to set one row high header or an array to set multi-row high header
   	 */
@@ -43,11 +47,11 @@ trait Column extends js.Object {
   	 * Set an outline level for columns
   	 */
   var outlineLevel: Double = js.native
-  var protection: Partial[Protection] = js.native
+  var protection: PartialProtection = js.native
   /**
   	 * Styles applied to the column
   	 */
-  var style: Partial[Style] = js.native
+  var style: PartialStyle = js.native
   /**
   	 * The cell values in the column
   	 */

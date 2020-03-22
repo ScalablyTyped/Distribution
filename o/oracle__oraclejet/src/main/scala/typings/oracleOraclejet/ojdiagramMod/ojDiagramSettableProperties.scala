@@ -1,11 +1,11 @@
 package typings.oracleOraclejet.ojdiagramMod
 
+import typings.oracleOraclejet.Anon5
 import typings.oracleOraclejet.AnonAnimationDuration
-import typings.oracleOraclejet.AnonBottom
-import typings.oracleOraclejet.AnonComponentNameLabelAndValueLabelClearSelection
-import typings.oracleOraclejet.AnonContextRendererAnonInsert
-import typings.oracleOraclejet.AnonDragDrop
+import typings.oracleOraclejet.AnonDrop
+import typings.oracleOraclejet.AnonHalign
 import typings.oracleOraclejet.AnonInsertSVGElement
+import typings.oracleOraclejet.AnonLabelClearSelection
 import typings.oracleOraclejet.ojdataproviderMod.DataProvider
 import typings.oracleOraclejet.ojdiagramMod.ojDiagram.RendererContext
 import typings.oracleOraclejet.ojdvtBaseMod.dvtBaseComponentSettableProperties
@@ -38,7 +38,7 @@ trait ojDiagramSettableProperties[K1, K2, D1, D2] extends dvtBaseComponentSettab
   var animationOnDataChange: auto | none
   var animationOnDisplay: auto | none
   var as: String
-  var dnd: AnonDragDrop
+  var dnd: AnonDrop
   var expanded: KeySet[K1]
   var focusRenderer: (js.Function1[/* context */ RendererContext[K1, D1], AnonInsertSVGElement | Unit]) | Null
   var hiddenCategories: js.Array[String]
@@ -52,7 +52,7 @@ trait ojDiagramSettableProperties[K1, K2, D1, D2] extends dvtBaseComponentSettab
   var minZoom: Double
   var nodeData: (DataProvider[K1, D1]) | Null
   var nodeHighlightMode: nodeAndIncomingLinks | nodeAndOutgoingLinks | nodeAndLinks | node
-  var overview: AnonBottom
+  var overview: AnonHalign
   var panDirection: x | y | auto
   var panning: auto | none
   var promotedLinkBehavior: none | full | `lazy`
@@ -60,10 +60,10 @@ trait ojDiagramSettableProperties[K1, K2, D1, D2] extends dvtBaseComponentSettab
   var selectionMode: single | multiple | none
   var selectionRenderer: (js.Function1[/* context */ RendererContext[K1, D1], AnonInsertSVGElement | Unit]) | Null
   var styleDefaults: AnonAnimationDuration
-  var tooltip: AnonContextRendererAnonInsert[K1, K2, D1, D2]
+  var tooltip: Anon5[K1, K2, D1, D2]
   var touchResponse: touchStart | auto
   @JSName("translations")
-  var translations_ojDiagramSettableProperties: AnonComponentNameLabelAndValueLabelClearSelection
+  var translations_ojDiagramSettableProperties: AnonLabelClearSelection
   var zoomRenderer: (js.Function1[/* context */ RendererContext[K1, D1], AnonInsertSVGElement | Unit]) | Null
   var zooming: auto | none
   def layout(param0: DvtDiagramLayoutContext): Unit
@@ -76,7 +76,7 @@ object ojDiagramSettableProperties {
     animationOnDataChange: auto | none,
     animationOnDisplay: auto | none,
     as: String,
-    dnd: AnonDragDrop,
+    dnd: AnonDrop,
     expanded: KeySet[K1],
     hiddenCategories: js.Array[String],
     highlightMatch: any | all,
@@ -87,7 +87,7 @@ object ojDiagramSettableProperties {
     maxZoom: Double,
     minZoom: Double,
     nodeHighlightMode: nodeAndIncomingLinks | nodeAndOutgoingLinks | nodeAndLinks | node,
-    overview: AnonBottom,
+    overview: AnonHalign,
     panDirection: x | y | auto,
     panning: auto | none,
     promotedLinkBehavior: none | full | `lazy`,
@@ -95,10 +95,10 @@ object ojDiagramSettableProperties {
     selection: js.Array[K1 | K2],
     selectionMode: single | multiple | none,
     styleDefaults: AnonAnimationDuration,
-    tooltip: AnonContextRendererAnonInsert[K1, K2, D1, D2],
+    tooltip: Anon5[K1, K2, D1, D2],
     touchResponse: touchStart | auto,
     trackResize: on | off,
-    translations: AnonComponentNameLabelAndValueLabelClearSelection,
+    translations: AnonLabelClearSelection,
     zooming: auto | none,
     focusRenderer: /* context */ RendererContext[K1, D1] => AnonInsertSVGElement | Unit = null,
     hoverRenderer: /* context */ RendererContext[K1, D1] => AnonInsertSVGElement | Unit = null,

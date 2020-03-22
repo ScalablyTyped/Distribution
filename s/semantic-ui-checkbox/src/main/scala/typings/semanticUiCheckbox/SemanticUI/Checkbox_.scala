@@ -1,6 +1,10 @@
 package typings.semanticUiCheckbox.SemanticUI
 
 import typings.semanticUiCheckbox.JQuery
+import typings.semanticUiCheckbox.SemanticUI.Checkbox.ClassNameSettings
+import typings.semanticUiCheckbox.SemanticUI.Checkbox.ErrorSettings
+import typings.semanticUiCheckbox.SemanticUI.Checkbox.SelectorSettings
+import typings.semanticUiCheckbox.semanticUiCheckboxBooleans.`false`
 import typings.semanticUiCheckbox.semanticUiCheckboxStrings.`attach events`
 import typings.semanticUiCheckbox.semanticUiCheckboxStrings.`can change`
 import typings.semanticUiCheckbox.semanticUiCheckboxStrings.`can uncheck`
@@ -17,14 +21,40 @@ import typings.semanticUiCheckbox.semanticUiCheckboxStrings.`should allow check`
 import typings.semanticUiCheckbox.semanticUiCheckboxStrings.`should allow determinate`
 import typings.semanticUiCheckbox.semanticUiCheckboxStrings.`should allow indeterminate`
 import typings.semanticUiCheckbox.semanticUiCheckboxStrings.`should allow uncheck`
+import typings.semanticUiCheckbox.semanticUiCheckboxStrings.auto
+import typings.semanticUiCheckbox.semanticUiCheckboxStrings.beforeChecked
+import typings.semanticUiCheckbox.semanticUiCheckboxStrings.beforeDeterminate
+import typings.semanticUiCheckbox.semanticUiCheckboxStrings.beforeIndeterminate
+import typings.semanticUiCheckbox.semanticUiCheckboxStrings.beforeUnchecked
 import typings.semanticUiCheckbox.semanticUiCheckboxStrings.check
+import typings.semanticUiCheckbox.semanticUiCheckboxStrings.className
+import typings.semanticUiCheckbox.semanticUiCheckboxStrings.debug
 import typings.semanticUiCheckbox.semanticUiCheckboxStrings.destroy
 import typings.semanticUiCheckbox.semanticUiCheckboxStrings.determinate
 import typings.semanticUiCheckbox.semanticUiCheckboxStrings.enable
+import typings.semanticUiCheckbox.semanticUiCheckboxStrings.error
+import typings.semanticUiCheckbox.semanticUiCheckboxStrings.fireOnInit
 import typings.semanticUiCheckbox.semanticUiCheckboxStrings.indeterminate
+import typings.semanticUiCheckbox.semanticUiCheckboxStrings.name
+import typings.semanticUiCheckbox.semanticUiCheckboxStrings.namespace
+import typings.semanticUiCheckbox.semanticUiCheckboxStrings.onChange
+import typings.semanticUiCheckbox.semanticUiCheckboxStrings.onChecked
+import typings.semanticUiCheckbox.semanticUiCheckboxStrings.onDeterminate
+import typings.semanticUiCheckbox.semanticUiCheckboxStrings.onDisable
+import typings.semanticUiCheckbox.semanticUiCheckboxStrings.onDisabled
+import typings.semanticUiCheckbox.semanticUiCheckboxStrings.onEnable
+import typings.semanticUiCheckbox.semanticUiCheckboxStrings.onEnabled
+import typings.semanticUiCheckbox.semanticUiCheckboxStrings.onIndeterminate
+import typings.semanticUiCheckbox.semanticUiCheckboxStrings.onUnchecked
+import typings.semanticUiCheckbox.semanticUiCheckboxStrings.performance
+import typings.semanticUiCheckbox.semanticUiCheckboxStrings.selector
 import typings.semanticUiCheckbox.semanticUiCheckboxStrings.setting
+import typings.semanticUiCheckbox.semanticUiCheckboxStrings.silent
 import typings.semanticUiCheckbox.semanticUiCheckboxStrings.toggle
 import typings.semanticUiCheckbox.semanticUiCheckboxStrings.uncheck
+import typings.semanticUiCheckbox.semanticUiCheckboxStrings.uncheckable
+import typings.semanticUiCheckbox.semanticUiCheckboxStrings.verbose
+import typings.std.HTMLInputElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -117,6 +147,75 @@ trait Checkbox_ extends js.Object {
     * Set as indeterminate checkbox
     */
   def apply(behavior: indeterminate): JQuery = js.native
+  def apply(behavior: setting, name: beforeChecked): js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`] = js.native
+  def apply(
+    behavior: setting,
+    name: beforeChecked,
+    value: js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]
+  ): JQuery = js.native
+  def apply(behavior: setting, name: beforeDeterminate): js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`] = js.native
+  def apply(
+    behavior: setting,
+    name: beforeDeterminate,
+    value: js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]
+  ): JQuery = js.native
+  def apply(behavior: setting, name: beforeIndeterminate): js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`] = js.native
+  def apply(
+    behavior: setting,
+    name: beforeIndeterminate,
+    value: js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]
+  ): JQuery = js.native
+  def apply(behavior: setting, name: beforeUnchecked): js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`] = js.native
+  def apply(
+    behavior: setting,
+    name: beforeUnchecked,
+    value: js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]
+  ): JQuery = js.native
+  def apply(behavior: setting, name: className): ClassNameSettings = js.native
+  def apply(behavior: setting, name: className, value: ClassNameSettings): JQuery = js.native
+  def apply(behavior: setting, name: debug): Boolean = js.native
+  def apply(behavior: setting, name: debug, value: Boolean): JQuery = js.native
+  def apply(behavior: setting, name: error): ErrorSettings = js.native
+  def apply(behavior: setting, name: error, value: ErrorSettings): JQuery = js.native
+  def apply(behavior: setting, name: fireOnInit): Boolean = js.native
+  def apply(behavior: setting, name: fireOnInit, value: Boolean): JQuery = js.native
+  def apply(behavior: setting, name: name): String = js.native
+  def apply(behavior: setting, name: namespace): String = js.native
+  def apply(behavior: setting, name: namespace, value: String): JQuery = js.native
+  def apply(behavior: setting, name: name, value: String): JQuery = js.native
+  def apply(behavior: setting, name: onChange): js.ThisFunction0[/* this */ HTMLInputElement, Unit] = js.native
+  def apply(behavior: setting, name: onChange, value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): JQuery = js.native
+  def apply(behavior: setting, name: onChecked): js.ThisFunction0[/* this */ HTMLInputElement, Unit] = js.native
+  def apply(behavior: setting, name: onChecked, value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): JQuery = js.native
+  def apply(behavior: setting, name: onDeterminate): js.ThisFunction0[/* this */ HTMLInputElement, Unit] = js.native
+  def apply(behavior: setting, name: onDeterminate, value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): JQuery = js.native
+  def apply(behavior: setting, name: onDisable): js.ThisFunction0[/* this */ HTMLInputElement, Unit] = js.native
+  def apply(behavior: setting, name: onDisabled): js.ThisFunction0[/* this */ HTMLInputElement, Unit] = js.native
+  def apply(behavior: setting, name: onDisabled, value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): JQuery = js.native
+  def apply(behavior: setting, name: onDisable, value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): JQuery = js.native
+  def apply(behavior: setting, name: onEnable): js.ThisFunction0[/* this */ HTMLInputElement, Unit] = js.native
+  def apply(behavior: setting, name: onEnabled): js.ThisFunction0[/* this */ HTMLInputElement, Unit] = js.native
+  def apply(behavior: setting, name: onEnabled, value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): JQuery = js.native
+  def apply(behavior: setting, name: onEnable, value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): JQuery = js.native
+  def apply(behavior: setting, name: onIndeterminate): js.ThisFunction0[/* this */ HTMLInputElement, Unit] = js.native
+  def apply(
+    behavior: setting,
+    name: onIndeterminate,
+    value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]
+  ): JQuery = js.native
+  def apply(behavior: setting, name: onUnchecked): js.ThisFunction0[/* this */ HTMLInputElement, Unit] = js.native
+  def apply(behavior: setting, name: onUnchecked, value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): JQuery = js.native
+  def apply(behavior: setting, name: performance): Boolean = js.native
+  def apply(behavior: setting, name: performance, value: Boolean): JQuery = js.native
+  def apply(behavior: setting, name: selector): SelectorSettings = js.native
+  def apply(behavior: setting, name: selector, value: SelectorSettings): JQuery = js.native
+  def apply(behavior: setting, name: silent): Boolean = js.native
+  def apply(behavior: setting, name: silent, value: Boolean): JQuery = js.native
+  def apply(behavior: setting, name: uncheckable): auto | Boolean = js.native
+  def apply(behavior: setting, name: uncheckable, value: Boolean): JQuery = js.native
+  def apply(behavior: setting, name: uncheckable, value: auto): JQuery = js.native
+  def apply(behavior: setting, name: verbose): Boolean = js.native
+  def apply(behavior: setting, name: verbose, value: Boolean): JQuery = js.native
   def apply(behavior: setting, value: CheckboxSettings): JQuery = js.native
   /**
     * Switches a checkbox from current state
@@ -127,11 +226,5 @@ trait Checkbox_ extends js.Object {
     */
   def apply(behavior: uncheck): JQuery = js.native
   def apply(settings: CheckboxSettings): JQuery = js.native
-  def apply[K /* <: String */](behavior: setting, name: K): /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-checkbox.SemanticUI.CheckboxSettings._Impl[K] */ js.Any = js.native
-  def apply[K /* <: String */](
-    behavior: setting,
-    name: K,
-    value: /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-checkbox.SemanticUI.CheckboxSettings._Impl[K] */ js.Any
-  ): JQuery = js.native
 }
 

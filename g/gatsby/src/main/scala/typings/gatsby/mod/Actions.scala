@@ -2,13 +2,13 @@ package typings.gatsby.mod
 
 import typings.gatsby.AnonArgs
 import typings.gatsby.AnonChild
-import typings.gatsby.AnonComponent
+import typings.gatsby.AnonDictkey
 import typings.gatsby.AnonFieldName
-import typings.gatsby.AnonForce
 import typings.gatsby.AnonId
 import typings.gatsby.AnonNameOptions
 import typings.gatsby.AnonNode
 import typings.gatsby.AnonNodeIdString
+import typings.gatsby.AnonPath
 import typings.gatsby.AnonSchema
 import typings.graphql.definitionMod.GraphQLOutputType
 import typings.std.Record
@@ -47,8 +47,8 @@ trait Actions extends js.Object {
   def createParentChildLink(args: AnonChild): Unit = js.native
   def createParentChildLink(args: AnonChild, plugin: ActionPlugin): Unit = js.native
   /** @see https://www.gatsbyjs.org/docs/actions/#createRedirect */
-  def createRedirect(redirect: AnonForce): Unit = js.native
-  def createRedirect(redirect: AnonForce, plugin: ActionPlugin): Unit = js.native
+  def createRedirect(redirect: AnonDictkey): Unit = js.native
+  def createRedirect(redirect: AnonDictkey, plugin: ActionPlugin): Unit = js.native
   /** @see https://www.gatsbyjs.org/docs/actions/#createTypes */
   def createTypes(types: String): Unit = js.native
   def createTypes(types: String, plugin: ActionPlugin): Unit = js.native
@@ -77,7 +77,7 @@ trait Actions extends js.Object {
   def deleteNodes(nodes: js.Array[String]): Unit = js.native
   def deleteNodes(nodes: js.Array[String], plugin: ActionPlugin): Unit = js.native
   /** @see https://www.gatsbyjs.org/docs/actions/#deletePage */
-  def deletePage(args: AnonComponent): Unit = js.native
+  def deletePage(args: AnonPath): Unit = js.native
   /** @see https://www.gatsbyjs.org/docs/actions/#endJob */
   def endJob(job: AnonId): Unit = js.native
   def endJob(job: AnonId, plugin: ActionPlugin): Unit = js.native

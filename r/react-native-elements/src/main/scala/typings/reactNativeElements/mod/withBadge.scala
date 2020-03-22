@@ -2,7 +2,7 @@ package typings.reactNativeElements.mod
 
 import typings.react.mod.ComponentType
 import typings.react.mod.ReactNode
-import typings.reactNativeElements.AnonBottom
+import typings.reactNativeElements.bottomnumberleftnumberrig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,7 +23,7 @@ object withBadge extends js.Object {
     /**
     * Options to configure the badge
     */
-  options: AnonBottom with BadgeProps
+  options: bottomnumberleftnumberrig
   ): js.Function1[/* WrappedComponent */ ComponentType[js.Object], ComponentType[js.Object]] = js.native
   def apply(/**
     * Text value to be displayed by badge
@@ -37,7 +37,7 @@ object withBadge extends js.Object {
     /**
     * Options to configure the badge
     */
-  options: AnonBottom with BadgeProps
+  options: bottomnumberleftnumberrig
   ): js.Function1[/* WrappedComponent */ ComponentType[js.Object], ComponentType[js.Object]] = js.native
 }
 

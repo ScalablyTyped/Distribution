@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "nuid" : "1.1.0"
+      "nuid" : "1.1.2"
     }
   ],
   "test-dependencies" : [
     {
-      "nuid" : "1.1.0"
+      "nuid" : "1.1.2"
     }
   ],
   "compile-devDependencies" : [

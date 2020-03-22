@@ -1,25 +1,25 @@
 package typings.zingchart.mod
 
-import typings.zingchart.AnonAlphaAlphaarea
-import typings.zingchart.AnonAlphaAlphaareaBackgroundcolor
-import typings.zingchart.AnonAlphaAngleBackgroundcolorBackgroundcolor1Backgroundcolor2BackgroundfitBackgroundimage
-import typings.zingchart.AnonAlphaAngleBackgroundcolorBackgroundcolor1Backgroundcolor2BackgroundfitBackgroundimageBackgroundposition
-import typings.zingchart.AnonAlphaAngleBackgroundcolorBackgroundcolor1Backgroundcolor2BackgroundfitBackgroundimageBackgroundpositionBackgroundrepeat
-import typings.zingchart.AnonAlphaAngleBackgroundcolorBackgroundcolor1Backgroundcolor2BackgroundfitBackgroundimageBackgroundpositionBackgroundrepeatBold
-import typings.zingchart.AnonAlphaAngleBackgroundcolorBackgroundcolor1Backgroundcolor2BackgroundfitBackgroundimageBackgroundpositionBackgroundrepeatBorderalphaBorderbottomBordercolor
-import typings.zingchart.AnonAlphaAngleBackgroundcolorBackgroundcolor1Backgroundcolor2BackgroundfitBackgroundimageBackgroundpositionBackgroundrepeatBorderalphaBordercolor
-import typings.zingchart.AnonAlphaAngleBackgroundcolorBackgroundcolor1Backgroundcolor2BackgroundfitBackgroundimageBackgroundpositionBackgroundrepeatBordercolor
-import typings.zingchart.AnonAlphaAngleBackgroundcolorBackgroundcolor1Backgroundcolor2BackgroundfitBackgroundimageBackgroundpositionBackgroundrepeatBordercolorBorderwidth
-import typings.zingchart.AnonAlphaAngleBackgroundcolorBackgroundcolor1Backgroundcolor2Backgroundimage
-import typings.zingchart.AnonAlphaBackgroundcolorBackgroundcolor1Backgroundcolor2BackgroundfitBackgroundimageBackgroundpositionBackgroundrepeat
-import typings.zingchart.AnonAlphaBackgroundcolorBordercolorBorderradiusBorderwidthHeightLinestyle
-import typings.zingchart.AnonAlphaBackgroundcolorBordercolorBorderwidth
-import typings.zingchart.AnonAlphaBackgroundcolorBordercolorBorderwidthFontcolor
-import typings.zingchart.AnonAlphaBackgroundcolorBordercolorBorderwidthLinecolor
-import typings.zingchart.AnonAlphaBackgroundcolorBordercolorBorderwidthLinecolorLinewidth
-import typings.zingchart.AnonAlphaLinecolorLinegapsize
+import typings.zingchart.AnonAlphaBackgroundcolor
+import typings.zingchart.AnonAlphaarea
+import typings.zingchart.AnonBordercolorBorderradius
+import typings.zingchart.AnonBorderradiusbottomleft
+import typings.zingchart.AnonBorderwidth
+import typings.zingchart.AnonCalloutposition
+import typings.zingchart.AnonCursor
 import typings.zingchart.AnonDelay
+import typings.zingchart.AnonFilloffsety
+import typings.zingchart.AnonFilltype
+import typings.zingchart.AnonFontsize
+import typings.zingchart.AnonGradientcolors
+import typings.zingchart.AnonGradientstops
+import typings.zingchart.AnonLinegapsize
+import typings.zingchart.AnonLinewidth
+import typings.zingchart.AnonOffsetx
+import typings.zingchart.AnonRtlrighttoleft
 import typings.zingchart.AnonRule
+import typings.zingchart.AnonShadow
+import typings.zingchart.AnonType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -61,9 +61,7 @@ trait series extends js.Object {
     * Sets a background image for the object. Value can be a local file or a web image's location. "image.png" | ...
     */
   var `background-image`: js.UndefOr[String] = js.undefined
-  var `background-marker`: js.UndefOr[
-    AnonAlphaAngleBackgroundcolorBackgroundcolor1Backgroundcolor2BackgroundfitBackgroundimage
-  ] = js.undefined
+  var `background-marker`: js.UndefOr[AnonFilloffsety] = js.undefined
   /**
     * Sets the position of the background when the "background-repeat" value is "no-repeat". "0 0" | "50 100" | "80% 60%" | ...
     */
@@ -72,9 +70,7 @@ trait series extends js.Object {
     * Sets the repeating mode for the background image. "no-repeat" | "repeat" | "repeat-x" | "repeat-y"
     */
   var `background-repeat`: js.UndefOr[String] = js.undefined
-  var `background-state`: js.UndefOr[
-    AnonAlphaAngleBackgroundcolorBackgroundcolor1Backgroundcolor2BackgroundfitBackgroundimageBackgroundposition
-  ] = js.undefined
+  var `background-state`: js.UndefOr[AnonFilltype] = js.undefined
   /**
     * Nested Pie Charts Only: This attribute is used to set the space between band in nested pie charts ("type":"nestedpie"). 5 | 10 | .
     * ..
@@ -201,7 +197,7 @@ trait series extends js.Object {
     * Text" | ...
     */
   var description: js.UndefOr[String] = js.undefined
-  var error: js.UndefOr[AnonAlphaLinecolorLinegapsize] = js.undefined
+  var error: js.UndefOr[AnonLinegapsize] = js.undefined
   var errors: js.UndefOr[js.Array[js.Object]] = js.undefined
   /**
     * By default ZingChart uses sampling when rendering charts. This helps improve rendering speeds and typically does not effect the ap
@@ -233,7 +229,7 @@ trait series extends js.Object {
     * Sets the background gradient fill type to either linear or radial. "linear" | "radial"
     */
   var `fill-type`: js.UndefOr[String] = js.undefined
-  var goal: js.UndefOr[AnonAlphaBackgroundcolorBordercolorBorderradiusBorderwidthHeightLinestyle] = js.undefined
+  var goal: js.UndefOr[AnonBordercolorBorderradius] = js.undefined
   /**
     * Bullet Charts Only: Accepts numerical values. Determines where goals are set for all plots. The "goals": [ ] values can also be se
     * t individually within each value set. [45, 70, 60]
@@ -254,23 +250,17 @@ trait series extends js.Object {
     * be set. true | false | 1 | 0
     */
   var `group-selections`: js.UndefOr[Boolean] = js.undefined
-  var `guide-label`: js.UndefOr[AnonAlphaBackgroundcolorBordercolorBorderwidthFontcolor] = js.undefined
-  var `highlight-marker`: js.UndefOr[AnonAlphaBackgroundcolorBordercolorBorderwidth] = js.undefined
-  var `highlight-state`: js.UndefOr[AnonAlphaBackgroundcolorBordercolorBorderwidthLinecolor] = js.undefined
-  var `hover-marker`: js.UndefOr[
-    AnonAlphaAngleBackgroundcolorBackgroundcolor1Backgroundcolor2BackgroundfitBackgroundimageBackgroundpositionBackgroundrepeat
-  ] = js.undefined
-  var `hover-state`: js.UndefOr[AnonAlphaAlphaarea] = js.undefined
+  var `guide-label`: js.UndefOr[AnonFontsize] = js.undefined
+  var `highlight-marker`: js.UndefOr[AnonBorderwidth] = js.undefined
+  var `highlight-state`: js.UndefOr[AnonLinewidth] = js.undefined
+  var `hover-marker`: js.UndefOr[AnonGradientcolors] = js.undefined
+  var `hover-state`: js.UndefOr[AnonAlphaarea] = js.undefined
   /**
     * Venn Diagrams Only: This attribute allow you to set the values for the area to be shared between each node. [30]
     */
   var join: js.UndefOr[js.Any] = js.undefined
-  var `legend-item`: js.UndefOr[
-    AnonAlphaAngleBackgroundcolorBackgroundcolor1Backgroundcolor2BackgroundfitBackgroundimageBackgroundpositionBackgroundrepeatBold
-  ] = js.undefined
-  var `legend-marker`: js.UndefOr[
-    AnonAlphaAngleBackgroundcolorBackgroundcolor1Backgroundcolor2BackgroundfitBackgroundimageBackgroundpositionBackgroundrepeatBordercolor
-  ] = js.undefined
+  var `legend-item`: js.UndefOr[AnonBorderradiusbottomleft] = js.undefined
+  var `legend-marker`: js.UndefOr[AnonCursor] = js.undefined
   /**
     * The "legend-text": attribute is typically used within "series": [ ] value sets. Using this attribute allows you to associate both
     * a "text":" " and "legend-text":" " to each value set "Some Text" | ...
@@ -299,9 +289,7 @@ trait series extends js.Object {
     * Sets the line width of the object, applicable on non-closed shapes. See also "border-width" for closed shapes. 4 | "6px" | ...
     */
   var `line-width`: js.UndefOr[js.Any] = js.undefined
-  var marker: js.UndefOr[
-    AnonAlphaAngleBackgroundcolorBackgroundcolor1Backgroundcolor2BackgroundfitBackgroundimageBackgroundpositionBackgroundrepeatBordercolorBorderwidth
-  ] = js.undefined
+  var marker: js.UndefOr[AnonGradientstops] = js.undefined
   /**
     * Applies to charts such as line and area which have markers. When there are too many markers for the chart ZingChart does not displ
     * ay all markers. Example 1000 nodes on a 300px wide chart. Setting max-nodes will override the default setting and force nodes to b
@@ -359,7 +347,7 @@ trait series extends js.Object {
     * Sets a Y offset to apply when positioning the object/shape. 4 | "6px" | ...
     */
   var `offset-y`: js.UndefOr[js.Any] = js.undefined
-  var preview: js.UndefOr[AnonAlphaAlphaareaBackgroundcolor] = js.undefined
+  var preview: js.UndefOr[AnonType] = js.undefined
   /**
     * Bar, Line and Area Charts only Include object in any series to override style displayed in the preview window. {...}
     */
@@ -403,10 +391,8 @@ trait series extends js.Object {
     * arkers only. true (default) | false
     */
   var `segment-trackers`: js.UndefOr[Boolean] = js.undefined
-  var `selected-marker`: js.UndefOr[AnonAlphaAngleBackgroundcolorBackgroundcolor1Backgroundcolor2Backgroundimage] = js.undefined
-  var `selected-state`: js.UndefOr[
-    AnonAlphaBackgroundcolorBackgroundcolor1Backgroundcolor2BackgroundfitBackgroundimageBackgroundpositionBackgroundrepeat
-  ] = js.undefined
+  var `selected-marker`: js.UndefOr[AnonOffsetx] = js.undefined
+  var `selected-state`: js.UndefOr[AnonShadow] = js.undefined
   /**
     * Sets whether the object's shadow is visible or not. Has limited effect on HTML5 implementation. true | false | 1 | 0
     */
@@ -486,24 +472,20 @@ trait series extends js.Object {
     * ata. Objects such as "scale-y": { }, "scale-x": { }, etc..., will need to be set separately. "." | "," | ...
     */
   var `thousands-separator`: js.UndefOr[String] = js.undefined
-  var tooltip: js.UndefOr[
-    AnonAlphaAngleBackgroundcolorBackgroundcolor1Backgroundcolor2BackgroundfitBackgroundimageBackgroundpositionBackgroundrepeatBorderalphaBorderbottomBordercolor
-  ] = js.undefined
+  var tooltip: js.UndefOr[AnonCalloutposition] = js.undefined
   /**
     * Using the "tooltip-text":" " attribute allows you to set text for tooltips. This can also be done using a variety of other tokens
     * "Some Text" | ...
     */
   var `tooltip-text`: js.UndefOr[String] = js.undefined
-  var `trend-down`: js.UndefOr[AnonAlphaBackgroundcolorBordercolorBorderwidthLinecolorLinewidth] = js.undefined
-  var `trend-equal`: js.UndefOr[AnonAlphaBackgroundcolorBordercolorBorderwidthLinecolorLinewidth] = js.undefined
-  var `trend-up`: js.UndefOr[AnonAlphaBackgroundcolorBordercolorBorderwidthLinecolorLinewidth] = js.undefined
+  var `trend-down`: js.UndefOr[AnonAlphaBackgroundcolor] = js.undefined
+  var `trend-equal`: js.UndefOr[AnonAlphaBackgroundcolor] = js.undefined
+  var `trend-up`: js.UndefOr[AnonAlphaBackgroundcolor] = js.undefined
   /**
     * Sets the URL for the link associated with the object. "http://www.domain.com/link.php" | "link.asp" | ...
     */
   var url: js.UndefOr[String] = js.undefined
-  var `value-box`: js.UndefOr[
-    AnonAlphaAngleBackgroundcolorBackgroundcolor1Backgroundcolor2BackgroundfitBackgroundimageBackgroundpositionBackgroundrepeatBorderalphaBordercolor
-  ] = js.undefined
+  var `value-box`: js.UndefOr[AnonRtlrighttoleft] = js.undefined
   var values: js.UndefOr[js.Any] = js.undefined
   /**
     * Sets the visibility of the object. Allows you to turn off the object without removing lines of JSON. true | false | 1 | 0
@@ -530,10 +512,10 @@ object series {
     `background-color-2`: String = null,
     `background-fit`: String = null,
     `background-image`: String = null,
-    `background-marker`: AnonAlphaAngleBackgroundcolorBackgroundcolor1Backgroundcolor2BackgroundfitBackgroundimage = null,
+    `background-marker`: AnonFilloffsety = null,
     `background-position`: String = null,
     `background-repeat`: String = null,
-    `background-state`: AnonAlphaAngleBackgroundcolorBackgroundcolor1Backgroundcolor2BackgroundfitBackgroundimageBackgroundposition = null,
+    `background-state`: AnonFilltype = null,
     `band-space`: Int | Double = null,
     `bar-space`: Int | Double = null,
     `bar-width`: Int | Double = null,
@@ -561,7 +543,7 @@ object series {
     decimals: Int | Double = null,
     `decimals-separator`: String = null,
     description: String = null,
-    error: AnonAlphaLinecolorLinegapsize = null,
+    error: AnonLinegapsize = null,
     errors: js.Array[js.Object] = null,
     exact: js.UndefOr[Boolean] = js.undefined,
     exponent: js.UndefOr[Boolean] = js.undefined,
@@ -570,26 +552,26 @@ object series {
     `fill-offset-x`: js.Any = null,
     `fill-offset-y`: js.Any = null,
     `fill-type`: String = null,
-    goal: AnonAlphaBackgroundcolorBordercolorBorderradiusBorderwidthHeightLinestyle = null,
+    goal: AnonBordercolorBorderradius = null,
     goals: js.Any = null,
     `gradient-colors`: String = null,
     `gradient-stops`: String = null,
     `group-selections`: js.UndefOr[Boolean] = js.undefined,
-    `guide-label`: AnonAlphaBackgroundcolorBordercolorBorderwidthFontcolor = null,
-    `highlight-marker`: AnonAlphaBackgroundcolorBordercolorBorderwidth = null,
-    `highlight-state`: AnonAlphaBackgroundcolorBordercolorBorderwidthLinecolor = null,
-    `hover-marker`: AnonAlphaAngleBackgroundcolorBackgroundcolor1Backgroundcolor2BackgroundfitBackgroundimageBackgroundpositionBackgroundrepeat = null,
-    `hover-state`: AnonAlphaAlphaarea = null,
+    `guide-label`: AnonFontsize = null,
+    `highlight-marker`: AnonBorderwidth = null,
+    `highlight-state`: AnonLinewidth = null,
+    `hover-marker`: AnonGradientcolors = null,
+    `hover-state`: AnonAlphaarea = null,
     join: js.Any = null,
-    `legend-item`: AnonAlphaAngleBackgroundcolorBackgroundcolor1Backgroundcolor2BackgroundfitBackgroundimageBackgroundpositionBackgroundrepeatBold = null,
-    `legend-marker`: AnonAlphaAngleBackgroundcolorBackgroundcolor1Backgroundcolor2BackgroundfitBackgroundimageBackgroundpositionBackgroundrepeatBordercolor = null,
+    `legend-item`: AnonBorderradiusbottomleft = null,
+    `legend-marker`: AnonCursor = null,
     `legend-text`: String = null,
     `line-color`: String = null,
     `line-gap-size`: js.Any = null,
     `line-segment-size`: js.Any = null,
     `line-style`: String = null,
     `line-width`: js.Any = null,
-    marker: AnonAlphaAngleBackgroundcolorBackgroundcolor1Backgroundcolor2BackgroundfitBackgroundimageBackgroundpositionBackgroundrepeatBordercolorBorderwidth = null,
+    marker: AnonGradientstops = null,
     `max-nodes`: Int | Double = null,
     `max-ratio`: Int | Double = null,
     `max-size`: Int | Double = null,
@@ -602,7 +584,7 @@ object series {
     negation: String = null,
     `offset-x`: js.Any = null,
     `offset-y`: js.Any = null,
-    preview: AnonAlphaAlphaareaBackgroundcolor = null,
+    preview: AnonType = null,
     `preview-state`: js.Any = null,
     `ref-angle`: Int | Double = null,
     reference: String = null,
@@ -612,8 +594,8 @@ object series {
     scaling: String = null,
     `scroll-step-multiplier`: Int | Double = null,
     `segment-trackers`: js.UndefOr[Boolean] = js.undefined,
-    `selected-marker`: AnonAlphaAngleBackgroundcolorBackgroundcolor1Backgroundcolor2Backgroundimage = null,
-    `selected-state`: AnonAlphaBackgroundcolorBackgroundcolor1Backgroundcolor2BackgroundfitBackgroundimageBackgroundpositionBackgroundrepeat = null,
+    `selected-marker`: AnonOffsetx = null,
+    `selected-state`: AnonShadow = null,
     shadow: js.UndefOr[Boolean] = js.undefined,
     `shadow-alpha`: Int | Double = null,
     `shadow-angle`: Int | Double = null,
@@ -631,13 +613,13 @@ object series {
     target: String = null,
     thickness: Int | Double = null,
     `thousands-separator`: String = null,
-    tooltip: AnonAlphaAngleBackgroundcolorBackgroundcolor1Backgroundcolor2BackgroundfitBackgroundimageBackgroundpositionBackgroundrepeatBorderalphaBorderbottomBordercolor = null,
+    tooltip: AnonCalloutposition = null,
     `tooltip-text`: String = null,
-    `trend-down`: AnonAlphaBackgroundcolorBordercolorBorderwidthLinecolorLinewidth = null,
-    `trend-equal`: AnonAlphaBackgroundcolorBordercolorBorderwidthLinecolorLinewidth = null,
-    `trend-up`: AnonAlphaBackgroundcolorBordercolorBorderwidthLinecolorLinewidth = null,
+    `trend-down`: AnonAlphaBackgroundcolor = null,
+    `trend-equal`: AnonAlphaBackgroundcolor = null,
+    `trend-up`: AnonAlphaBackgroundcolor = null,
     url: String = null,
-    `value-box`: AnonAlphaAngleBackgroundcolorBackgroundcolor1Backgroundcolor2BackgroundfitBackgroundimageBackgroundpositionBackgroundrepeatBorderalphaBordercolor = null,
+    `value-box`: AnonRtlrighttoleft = null,
     values: js.Any = null,
     visible: js.UndefOr[Boolean] = js.undefined,
     `z-end`: Int | Double = null,

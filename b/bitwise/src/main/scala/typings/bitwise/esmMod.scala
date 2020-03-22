@@ -70,11 +70,11 @@ object esmMod extends js.Object {
   @js.native
   object default extends js.Object {
     var bits: AnonAnd = js.native
-    var buffer: AnonA = js.native
-    var byte: AnonByte = js.native
+    var buffer: AnonCreate = js.native
+    var byte: AnonRead = js.native
     var integer: AnonGetBit = js.native
-    var nibble: AnonNibble = js.native
-    var string: AnonString = js.native
+    var nibble: AnonWrite = js.native
+    var string: AnonToBits = js.native
   }
   
   @js.native

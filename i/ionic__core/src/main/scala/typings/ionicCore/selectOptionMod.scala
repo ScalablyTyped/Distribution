@@ -18,10 +18,6 @@ object selectOptionMod extends js.Object {
     var el: HTMLElement = js.native
     var inputId: js.Any = js.native
     /**
-      * If `true`, the element is selected.
-      */
-    var selected: Boolean = js.native
-    /**
       * The text value of the option.
       */
     var value: js.UndefOr[js.Any | Null] = js.native

@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
   - typings.std.stdStrings._empty
   - typings.std.stdStrings.`no-referrer`
   - typings.std.stdStrings.`no-referrer-when-downgrade`
-  - typings.std.stdStrings.`same-origin`
   - typings.std.stdStrings.origin
-  - typings.std.stdStrings.`strict-origin`
   - typings.std.stdStrings.`origin-when-cross-origin`
+  - typings.std.stdStrings.`same-origin`
+  - typings.std.stdStrings.`strict-origin`
   - typings.std.stdStrings.`strict-origin-when-cross-origin`
   - typings.std.stdStrings.`unsafe-url`
 */

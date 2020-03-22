@@ -1,22 +1,22 @@
 package typings.instagramPrivateApi
 
+import typings.instagramPrivateApi.instagramPrivateApiStrings.CAROUSEL
+import typings.instagramPrivateApi.instagramPrivateApiStrings.PHOTO
+import typings.instagramPrivateApi.instagramPrivateApiStrings.VIDEO
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonMediaId extends js.Object {
   var mediaId: String
-  var module: js.UndefOr[String] = js.undefined
-  var replyToCommentId: js.UndefOr[String] = js.undefined
-  var text: String
+  var mediaType: js.UndefOr[PHOTO | VIDEO | CAROUSEL] = js.undefined
 }
 
 object AnonMediaId {
   @scala.inline
-  def apply(mediaId: String, text: String, module: String = null, replyToCommentId: String = null): AnonMediaId = {
-    val __obj = js.Dynamic.literal(mediaId = mediaId.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-    if (module != null) __obj.updateDynamic("module")(module.asInstanceOf[js.Any])
-    if (replyToCommentId != null) __obj.updateDynamic("replyToCommentId")(replyToCommentId.asInstanceOf[js.Any])
+  def apply(mediaId: String, mediaType: PHOTO | VIDEO | CAROUSEL = null): AnonMediaId = {
+    val __obj = js.Dynamic.literal(mediaId = mediaId.asInstanceOf[js.Any])
+    if (mediaType != null) __obj.updateDynamic("mediaType")(mediaType.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnonMediaId]
   }
 }

@@ -1,6 +1,6 @@
 package typings.angularAnimations.mod
 
-import typings.angularAnimations.AnonName
+import typings.angularAnimations.AnonParams
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ trait AnimationStateMetadata extends AnimationMetadata {
     * developer-defined parameters that provide styling defaults and
     * can be overridden on invocation.
     */
-  var options: js.UndefOr[AnonName] = js.undefined
+  var options: js.UndefOr[AnonParams] = js.undefined
   /**
     *  The CSS styles associated with this state.
     */
@@ -28,7 +28,7 @@ object AnimationStateMetadata {
     name: String,
     styles: AnimationStyleMetadata,
     `type`: AnimationMetadataType,
-    options: AnonName = null
+    options: AnonParams = null
   ): AnimationStateMetadata = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

@@ -15,9 +15,9 @@ class ElementElement () extends Element {
   @JSName("$lookupTypes")
   var $lookupTypes: js.UndefOr[js.Array[_]] = js.native
   @JSName("$maxOccurs")
-  var $maxOccurs: js.UndefOr[Double | String] = js.native
+  var $maxOccurs: js.UndefOr[String] = js.native
   @JSName("$minOccurs")
-  var $minOccurs: js.UndefOr[Double | String] = js.native
+  var $minOccurs: js.UndefOr[String] = js.native
   @JSName("$ref")
   var $ref: js.UndefOr[String] = js.native
   @JSName("$type")

@@ -1,6 +1,6 @@
 package typings.overlayscrollbars.mod
 
-import typings.overlayscrollbars.AnonIndex
+import typings.overlayscrollbars.AnonDictindex
 import typings.std.Element
 import typings.std.HTMLElement
 import typings.std.NodeListOf
@@ -43,7 +43,7 @@ trait OverlayScrollbarsStatic extends js.Object {
   def apply(element: HTMLElement, options: Options, extensions: Extensions): OverlayScrollbars = js.native
   def defaultOptions(): Options = js.native
   def defaultOptions(newDefaultOptions: Options): Unit = js.native
-  def extension(): AnonIndex = js.native
+  def extension(): AnonDictindex = js.native
   def extension(extensionName: String): ExtensionInfo = js.native
   def extension(
     extensionName: String,

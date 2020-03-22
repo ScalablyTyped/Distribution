@@ -1,6 +1,6 @@
 package typings.oracleOraclejet.ojselectcomboboxMod
 
-import typings.oracleOraclejet.AnonChildKeysChildren
+import typings.oracleOraclejet.AnonChildren
 import typings.oracleOraclejet.AnonClass
 import typings.oracleOraclejet.AnonConverterHint
 import typings.oracleOraclejet.AnonDefinition
@@ -34,7 +34,7 @@ trait ojComboboxManySettableProperties[K, D]
   var options: (js.Array[
     typings.oracleOraclejet.ojselectcomboboxMod.ojCombobox.Option | typings.oracleOraclejet.ojselectcomboboxMod.ojCombobox.Optgroup
   ]) | (DataProvider[K, D]) | Null
-  var optionsKeys: AnonChildKeysChildren
+  var optionsKeys: AnonChildren
   var pickerAttributes: AnonClass
   var placeholder: String | Null
   val rawValue: String | Null
@@ -59,7 +59,7 @@ object ojComboboxManySettableProperties {
     labelHint: String,
     messagesCustom: js.Array[^],
     minLength: Double,
-    optionsKeys: AnonChildKeysChildren,
+    optionsKeys: AnonChildren,
     pickerAttributes: AnonClass,
     readOnly: Boolean,
     required: Boolean,

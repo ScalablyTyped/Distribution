@@ -14,11 +14,13 @@ object Horizon extends js.Object {
     /* "bump_sequence" */ val bumpSequence: typings.stellarSdk.horizonApiMod.Horizon.OperationResponseType.bumpSequence with String = js.native
     /* "change_trust" */ val changeTrust: typings.stellarSdk.horizonApiMod.Horizon.OperationResponseType.changeTrust with String = js.native
     /* "create_account" */ val createAccount: typings.stellarSdk.horizonApiMod.Horizon.OperationResponseType.createAccount with String = js.native
-    /* "create_passive_offer" */ val createPassiveOffer: typings.stellarSdk.horizonApiMod.Horizon.OperationResponseType.createPassiveOffer with String = js.native
+    /* "create_passive_sell_offer" */ val createPassiveOffer: typings.stellarSdk.horizonApiMod.Horizon.OperationResponseType.createPassiveOffer with String = js.native
     /* "inflation" */ val inflation: typings.stellarSdk.horizonApiMod.Horizon.OperationResponseType.inflation with String = js.native
+    /* "manage_buy_offer" */ val manageBuyOffer: typings.stellarSdk.horizonApiMod.Horizon.OperationResponseType.manageBuyOffer with String = js.native
     /* "manage_data" */ val manageData: typings.stellarSdk.horizonApiMod.Horizon.OperationResponseType.manageData with String = js.native
-    /* "manage_offer" */ val manageOffer: typings.stellarSdk.horizonApiMod.Horizon.OperationResponseType.manageOffer with String = js.native
-    /* "path_payment" */ val pathPayment: typings.stellarSdk.horizonApiMod.Horizon.OperationResponseType.pathPayment with String = js.native
+    /* "manage_sell_offer" */ val manageOffer: typings.stellarSdk.horizonApiMod.Horizon.OperationResponseType.manageOffer with String = js.native
+    /* "path_payment_strict_receive" */ val pathPayment: typings.stellarSdk.horizonApiMod.Horizon.OperationResponseType.pathPayment with String = js.native
+    /* "path_payment_strict_send" */ val pathPaymentStrictSend: typings.stellarSdk.horizonApiMod.Horizon.OperationResponseType.pathPaymentStrictSend with String = js.native
     /* "payment" */ val payment: typings.stellarSdk.horizonApiMod.Horizon.OperationResponseType.payment with String = js.native
     /* "set_options" */ val setOptions: typings.stellarSdk.horizonApiMod.Horizon.OperationResponseType.setOptions with String = js.native
     @JSBracketAccess
@@ -34,9 +36,11 @@ object Horizon extends js.Object {
     /* 0 */ val createAccount: typings.stellarSdk.horizonApiMod.Horizon.OperationResponseTypeI.createAccount with Double = js.native
     /* 3 */ val createPassiveOffer: typings.stellarSdk.horizonApiMod.Horizon.OperationResponseTypeI.createPassiveOffer with Double = js.native
     /* 9 */ val inflation: typings.stellarSdk.horizonApiMod.Horizon.OperationResponseTypeI.inflation with Double = js.native
+    /* 12 */ val manageBuyOffer: typings.stellarSdk.horizonApiMod.Horizon.OperationResponseTypeI.manageBuyOffer with Double = js.native
     /* 10 */ val manageData: typings.stellarSdk.horizonApiMod.Horizon.OperationResponseTypeI.manageData with Double = js.native
     /* 4 */ val manageOffer: typings.stellarSdk.horizonApiMod.Horizon.OperationResponseTypeI.manageOffer with Double = js.native
     /* 2 */ val pathPayment: typings.stellarSdk.horizonApiMod.Horizon.OperationResponseTypeI.pathPayment with Double = js.native
+    /* 13 */ val pathPaymentStrictSend: typings.stellarSdk.horizonApiMod.Horizon.OperationResponseTypeI.pathPaymentStrictSend with Double = js.native
     /* 1 */ val payment: typings.stellarSdk.horizonApiMod.Horizon.OperationResponseTypeI.payment with Double = js.native
     /* 5 */ val setOptions: typings.stellarSdk.horizonApiMod.Horizon.OperationResponseTypeI.setOptions with Double = js.native
     @JSBracketAccess

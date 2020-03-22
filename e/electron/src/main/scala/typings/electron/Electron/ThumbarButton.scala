@@ -9,7 +9,7 @@ trait ThumbarButton extends js.Object {
   var click: js.Function
   /**
     * Control specific states and behaviors of the button. By default, it is
-    * ['enabled'].
+    * `['enabled']`.
     */
   var flags: js.UndefOr[js.Array[String]] = js.undefined
   /**

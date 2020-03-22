@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-collapsible
 
-Typings are for version 2.6.2
+Typings are for version 2.7.0
 
 ## Library description:
 React component to wrap content in Collapsible element with trigger to open and close.

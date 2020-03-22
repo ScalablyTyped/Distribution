@@ -1,31 +1,37 @@
 package typings.escpos
 
-import typings.escpos.escposNumbers.`3`
+import typings.escpos.escposStrings.InformationseparatorthreewAcknowledge
+import typings.escpos.escposStrings.InformationseparatorthreewEndoftext
+import typings.escpos.escposStrings.InformationseparatorthreewEndoftransmission
+import typings.escpos.escposStrings.InformationseparatorthreewEnquiry
+import typings.escpos.escposStrings.InformationseparatorthreewStartoftext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon3 extends js.Object {
-  var LEN_OFFSET: `3`
-  var LEVEL: AnonCMD
-  var PIXEL_SIZE: Anon1
-  var PRINTBUF: Anon1Q0
-  var SAVEBUF: Anon1P0
-  var VERSION: Anon116
+  var `1`: InformationseparatorthreewStartoftext
+  var `2`: InformationseparatorthreewEndoftext
+  var `3`: InformationseparatorthreewEndoftransmission
+  var `4`: InformationseparatorthreewEnquiry
+  var `5`: InformationseparatorthreewAcknowledge
 }
 
 object Anon3 {
   @scala.inline
   def apply(
-    LEN_OFFSET: `3`,
-    LEVEL: AnonCMD,
-    PIXEL_SIZE: Anon1,
-    PRINTBUF: Anon1Q0,
-    SAVEBUF: Anon1P0,
-    VERSION: Anon116
+    `1`: InformationseparatorthreewStartoftext,
+    `2`: InformationseparatorthreewEndoftext,
+    `3`: InformationseparatorthreewEndoftransmission,
+    `4`: InformationseparatorthreewEnquiry,
+    `5`: InformationseparatorthreewAcknowledge
   ): Anon3 = {
-    val __obj = js.Dynamic.literal(LEN_OFFSET = LEN_OFFSET.asInstanceOf[js.Any], LEVEL = LEVEL.asInstanceOf[js.Any], PIXEL_SIZE = PIXEL_SIZE.asInstanceOf[js.Any], PRINTBUF = PRINTBUF.asInstanceOf[js.Any], SAVEBUF = SAVEBUF.asInstanceOf[js.Any], VERSION = VERSION.asInstanceOf[js.Any])
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("1")(`1`.asInstanceOf[js.Any])
+    __obj.updateDynamic("2")(`2`.asInstanceOf[js.Any])
+    __obj.updateDynamic("3")(`3`.asInstanceOf[js.Any])
+    __obj.updateDynamic("4")(`4`.asInstanceOf[js.Any])
+    __obj.updateDynamic("5")(`5`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon3]
   }
 }

@@ -1,6 +1,6 @@
 package typings.meteor.Accounts
 
-import typings.meteor.Anon_Logout
+import typings.meteor.AnonLogout
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object setPassword extends js.Object {
   def apply(userId: String, newPassword: String): Unit = js.native
-  def apply(userId: String, newPassword: String, options: Anon_Logout): Unit = js.native
+  def apply(userId: String, newPassword: String, options: AnonLogout): Unit = js.native
 }
 

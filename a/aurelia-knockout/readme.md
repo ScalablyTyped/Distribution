@@ -1,7 +1,7 @@
 
 # Scala.js typings for aurelia-knockout
 
-Typings are for version 2.3.0
+Typings are for version 2.4.0
 
 ## Library description:
 A Knockout plugin for Aurelia.

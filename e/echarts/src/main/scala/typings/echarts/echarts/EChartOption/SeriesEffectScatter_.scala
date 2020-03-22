@@ -1,13 +1,13 @@
 package typings.echarts.echarts.EChartOption
 
-import typings.echarts.AnonAlignBackgroundColorBorderColor
-import typings.echarts.AnonAnimationAnimationDelay
-import typings.echarts.AnonAnimationAnimationDelayAnimationDelayUpdate
-import typings.echarts.AnonAnimationAnimationDelayAnimationDelayUpdateAnimationDuration
-import typings.echarts.AnonBackgroundColorBorderColor
-import typings.echarts.AnonBorderColorBorderTypeBorderWidthColor
+import typings.echarts.AnonAnimationDelay
+import typings.echarts.AnonAnimationDelayUpdate
+import typings.echarts.AnonAnimationDuration
+import typings.echarts.AnonBorderRadius
 import typings.echarts.AnonBrushType
+import typings.echarts.AnonExtraCssText
 import typings.echarts.AnonItemStyleLabel
+import typings.echarts.AnonShadowOffsetY
 import typings.echarts.echarts.EChartOption.SeriesEffectScatter.DataObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -451,7 +451,7 @@ trait SeriesEffectScatter_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-effectScatter.itemStyle
     */
-  var itemStyle: js.UndefOr[AnonBorderColorBorderTypeBorderWidthColor] = js.undefined
+  var itemStyle: js.UndefOr[AnonShadowOffsetY] = js.undefined
   /**
     * Text label of , to explain some data information about graphic
     * item like value, name and so on.
@@ -463,7 +463,7 @@ trait SeriesEffectScatter_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-effectScatter.label
     */
-  var label: js.UndefOr[AnonAlignBackgroundColorBorderColor] = js.undefined
+  var label: js.UndefOr[AnonBorderRadius] = js.undefined
   /**
     * Whether to enable highlighting chart when
     * [legend](https://echarts.apache.org/en/option.html#legend)
@@ -482,21 +482,21 @@ trait SeriesEffectScatter_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-effectScatter.markArea
     */
-  var markArea: js.UndefOr[AnonAnimationAnimationDelayAnimationDelayUpdate] = js.undefined
+  var markArea: js.UndefOr[AnonAnimationDelayUpdate] = js.undefined
   /**
     * Use a line in the chart to illustrate.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-effectScatter.markLine
     */
-  var markLine: js.UndefOr[AnonAnimationAnimationDelay] = js.undefined
+  var markLine: js.UndefOr[AnonAnimationDelay] = js.undefined
   /**
     * Mark point in a chart.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-effectScatter.markPoint
     */
-  var markPoint: js.UndefOr[AnonAnimationAnimationDelayAnimationDelayUpdateAnimationDuration] = js.undefined
+  var markPoint: js.UndefOr[AnonAnimationDuration] = js.undefined
   /**
     * Series name used for displaying in
     * [tooltip](https://echarts.apache.org/en/option.html#tooltip)
@@ -659,7 +659,7 @@ trait SeriesEffectScatter_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-effectScatter.tooltip
     */
-  var tooltip: js.UndefOr[AnonBackgroundColorBorderColor] = js.undefined
+  var tooltip: js.UndefOr[AnonExtraCssText] = js.undefined
   /**
     * @default
     * "effectScatter"
@@ -743,12 +743,12 @@ object SeriesEffectScatter_ {
     encode: js.Object = null,
     geoIndex: Int | Double = null,
     id: String = null,
-    itemStyle: AnonBorderColorBorderTypeBorderWidthColor = null,
-    label: AnonAlignBackgroundColorBorderColor = null,
+    itemStyle: AnonShadowOffsetY = null,
+    label: AnonBorderRadius = null,
     legendHoverLink: js.UndefOr[Boolean] = js.undefined,
-    markArea: AnonAnimationAnimationDelayAnimationDelayUpdate = null,
-    markLine: AnonAnimationAnimationDelay = null,
-    markPoint: AnonAnimationAnimationDelayAnimationDelayUpdateAnimationDuration = null,
+    markArea: AnonAnimationDelayUpdate = null,
+    markLine: AnonAnimationDelay = null,
+    markPoint: AnonAnimationDuration = null,
     name: String = null,
     polarIndex: Int | Double = null,
     rippleEffect: AnonBrushType = null,
@@ -759,7 +759,7 @@ object SeriesEffectScatter_ {
     symbolOffset: js.Array[_] = null,
     symbolRotate: Int | Double = null,
     symbolSize: js.Array[_] | Double = null,
-    tooltip: AnonBackgroundColorBorderColor = null,
+    tooltip: AnonExtraCssText = null,
     `type`: String = null,
     xAxisIndex: Int | Double = null,
     yAxisIndex: Int | Double = null,

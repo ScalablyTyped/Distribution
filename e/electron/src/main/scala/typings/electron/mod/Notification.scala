@@ -7,7 +7,10 @@ import scala.scalajs.js.annotation._
 
 @JSImport("electron", "Notification")
 @js.native
-class Notification protected ()
+/**
+  * Notification
+  */
+class Notification ()
   extends typings.electron.Electron.Notification {
   def this(options: NotificationConstructorOptions) = this()
 }
@@ -16,6 +19,9 @@ class Notification protected ()
 @JSImport("electron", "Notification")
 @js.native
 object Notification extends js.Object {
+  /**
+    * Whether or not desktop notifications are supported on the current system
+    */
   def isSupported(): Boolean = js.native
 }
 

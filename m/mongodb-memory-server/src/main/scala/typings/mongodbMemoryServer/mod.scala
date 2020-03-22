@@ -5,7 +5,6 @@ import typings.mongodbMemoryServerCore.mongoBinaryMod.MongoBinaryOpts
 import typings.mongodbMemoryServerCore.mongoInstanceMod.MongodOps
 import typings.mongodbMemoryServerCore.mongoMemoryReplSetMod.MongoMemoryReplSetOptsT
 import typings.mongodbMemoryServerCore.mongoMemoryServerMod.MongoMemoryServerOptsT
-import typings.mongodbMemoryServerCore.typesMod.DebugFn
 import typings.node.childProcessMod.ChildProcess
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -46,9 +45,6 @@ object mod extends js.Object {
   @js.native
   object MongoBinary extends js.Object {
     var cache: MongoBinaryCache = js.native
-    @JSName("debug")
-    var debug_Original: DebugFn = js.native
-    def debug(args: js.Any*): js.Any = js.native
     def getCachePath(version: String): js.Promise[String] = js.native
     def getDownloadPath(options: js.Any): js.Promise[String] = js.native
     def getPath(): js.Promise[String] = js.native

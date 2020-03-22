@@ -1,7 +1,5 @@
 package typings.jscodeshift
 
-import typings.astTypes.nodesMod.ASTNode
-import typings.astTypes.nodesMod.VariableDeclarator
 import typings.jscodeshift.collectionMod.Collection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -47,7 +45,9 @@ object nodeMod extends js.Object {
       * Returns a collection containing the paths that create the scope of the
       * currently selected paths. Dedupes the paths.
       */
-    def closestScope(): Collection[ASTNode] = js.native
+    def closestScope(): Collection[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify nodes.ASTNode */ _
+      ] = js.native
     /**
       * Find nodes of a specific type within the nodes of this collection.
       */
@@ -69,7 +69,9 @@ object nodeMod extends js.Object {
       *
       * If the callback returns a falsy value, the element is skipped.
       */
-    def getVariableDeclarators(nameGetter: js.Function1[/* repeated */ js.Any, _]): Collection[VariableDeclarator] = js.native
+    def getVariableDeclarators(nameGetter: js.Function1[/* repeated */ js.Any, _]): Collection[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify nodes.VariableDeclarator */ _
+      ] = js.native
   }
   
   def register(): Unit = js.native

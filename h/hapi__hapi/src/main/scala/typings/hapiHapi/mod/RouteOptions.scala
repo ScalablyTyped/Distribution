@@ -5,6 +5,7 @@ import typings.hapiHapi.AnonFailAction
 import typings.hapiHapi.AnonRelativeTo
 import typings.hapiHapi.AnonServer
 import typings.hapiHapi.hapiHapiBooleans.`false`
+import typings.hapiHapi.keyinRouteRequestExtTypeR
 import typings.hapiHapi.mod.Json.StringifyArguments
 import typings.hapiHapi.mod.Lifecycle.Method
 import typings.hapiHapi.mod.Util.Dictionary
@@ -33,9 +34,7 @@ object RouteOptions {
     compression: Dictionary[RouteCompressionEncoderSettings] = null,
     cors: Boolean | RouteOptionsCors = null,
     description: String = null,
-    ext: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in @hapi/hapi.@hapi/hapi.RouteRequestExtType ]:? @hapi/hapi.@hapi/hapi.RouteExtObject | std.Array<@hapi/hapi.@hapi/hapi.RouteExtObject>}
-    */ typings.hapiHapi.hapiHapiStrings.CommonRouteProperties with js.Any = null,
+    ext: keyinRouteRequestExtTypeR = null,
     files: AnonRelativeTo = null,
     handler: Method | js.Object = null,
     id: String = null,

@@ -4,8 +4,8 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.StringDictionary
-import typings.jszip.AnonDir
 import typings.jszip.AnonPromise
+import typings.jszip.JSZipFileOptionsdirtrue
 import typings.jszip.jszipStrings.array
 import typings.jszip.jszipStrings.arraybuffer
 import typings.jszip.jszipStrings.base64
@@ -67,7 +67,7 @@ Instantiable0[JSZip]
     data: js.Promise[js.Array[Double] | ArrayBuffer | Blob | ReadableStream | String | Uint8Array],
     options: JSZipFileOptions
   ): this.type = js.native
-  def file(path: String, data: Null, options: JSZipFileOptions with AnonDir): this.type = js.native
+  def file(path: String, data: Null, options: JSZipFileOptionsdirtrue): this.type = js.native
   def file(path: String, data: ReadableStream): this.type = js.native
   def file(path: String, data: ReadableStream, options: JSZipFileOptions): this.type = js.native
   def file(path: String, data: ArrayBuffer): this.type = js.native

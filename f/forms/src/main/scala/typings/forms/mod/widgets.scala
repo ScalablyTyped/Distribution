@@ -1,6 +1,6 @@
 package typings.forms.mod
 
-import typings.forms.AnonCols
+import typings.forms.WidgetParametersrowsnumbe
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,6 +37,6 @@ object widgets extends js.Object {
   def text(): Widget = js.native
   def text(params: WidgetParameters): Widget = js.native
   def textarea(): Widget = js.native
-  def textarea(params: WidgetParameters with AnonCols): Widget = js.native
+  def textarea(params: WidgetParametersrowsnumbe): Widget = js.native
 }
 

@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @js.native
 trait AnonCatch extends js.Object {
   @JSName("catch")
-  var catch_Original: FnOnrejected = js.native
+  var catch_Original: FnCallOnrejected = js.native
   @JSName("then")
-  var then_Original: FnOnfulfilled = js.native
+  var then_Original: FnCall = js.native
   def `catch`[TResult](): js.Promise[Connection_ | TResult] = js.native
   def `catch`[TResult](onrejected: js.Function1[/* reason */ js.Any, TResult | js.Thenable[TResult]]): js.Promise[Connection_ | TResult] = js.native
   def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2] = js.native

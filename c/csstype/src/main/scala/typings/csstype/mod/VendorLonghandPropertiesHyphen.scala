@@ -66,12 +66,6 @@ trait VendorLonghandPropertiesHyphen[TLength] extends js.Object {
     */
   var `-moz-backface-visibility`: js.UndefOr[BackfaceVisibilityProperty] = js.undefined
   /**
-    * In Mozilla applications like Firefox, the **`-moz-border-bottom-colors`** CSS property sets a list of colors for the bottom border.
-    *
-    * **Initial value**: `none`
-    */
-  var `-moz-border-bottom-colors`: js.UndefOr[MozBorderBottomColorsProperty] = js.undefined
-  /**
     * The **`border-inline-end-color`** CSS property defines the color of the logical inline-end border of an element, which maps to a physical border color depending on the element's writing mode, directionality, and text orientation. It corresponds to the `border-top-color`, `border-right-color`, `border-bottom-color`, or `border-left-color` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
     *
     * **Initial value**: `currentcolor`
@@ -90,18 +84,6 @@ trait VendorLonghandPropertiesHyphen[TLength] extends js.Object {
     */
   var `-moz-border-end-width`: js.UndefOr[BorderInlineEndWidthProperty[TLength]] = js.undefined
   /**
-    * In Mozilla applications like Firefox, the **`-moz-border-left-colors`** CSS property sets a list of colors for the left border.
-    *
-    * **Initial value**: `none`
-    */
-  var `-moz-border-left-colors`: js.UndefOr[MozBorderLeftColorsProperty] = js.undefined
-  /**
-    * In Mozilla applications like Firefox, the **`-moz-border-right-colors`** CSS property sets a list of colors for the right border.
-    *
-    * **Initial value**: `none`
-    */
-  var `-moz-border-right-colors`: js.UndefOr[MozBorderRightColorsProperty] = js.undefined
-  /**
     * The **`border-inline-start-color`** CSS property defines the color of the logical inline start border of an element, which maps to a physical border color depending on the element's writing mode, directionality, and text orientation. It corresponds to the `border-top-color`, `border-right-color`, `border-bottom-color`, or `border-left-color` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
     *
     * **Initial value**: `currentcolor`
@@ -113,12 +95,6 @@ trait VendorLonghandPropertiesHyphen[TLength] extends js.Object {
     * **Initial value**: `none`
     */
   var `-moz-border-start-style`: js.UndefOr[BorderInlineStartStyleProperty] = js.undefined
-  /**
-    * In Mozilla applications like Firefox, the **`-moz-border-top-colors`** CSS property sets a list of colors for the top border.
-    *
-    * **Initial value**: `none`
-    */
-  var `-moz-border-top-colors`: js.UndefOr[MozBorderTopColorsProperty] = js.undefined
   /**
     * The **`box-sizing`** CSS property defines how the user agent should calculate the total width and height of an element.
     *
@@ -617,12 +593,6 @@ trait VendorLonghandPropertiesHyphen[TLength] extends js.Object {
     * **Initial value**: `ThreeDDarkShadow`
     */
   var `-ms-scrollbar-shadow-color`: js.UndefOr[MsScrollbarShadowColorProperty] = js.undefined
-  /**
-    * The **`-ms-scrollbar-track-color`** CSS property is a Microsoft extension that specifies the color of the track element of a scrollbar.
-    *
-    * **Initial value**: `Scrollbar`
-    */
-  var `-ms-scrollbar-track-color`: js.UndefOr[MsScrollbarTrackColorProperty] = js.undefined
   /**
     * The **`-ms-text-autospace`** CSS property is a Microsoft extension that specifies the autospacing and narrow space width adjustment of text.
     *
@@ -1354,15 +1324,11 @@ object VendorLonghandPropertiesHyphen {
     `-moz-animation-timing-function`: AnimationTimingFunctionProperty = null,
     `-moz-appearance`: MozAppearanceProperty = null,
     `-moz-backface-visibility`: BackfaceVisibilityProperty = null,
-    `-moz-border-bottom-colors`: MozBorderBottomColorsProperty = null,
     `-moz-border-end-color`: BorderInlineEndColorProperty = null,
     `-moz-border-end-style`: BorderInlineEndStyleProperty = null,
     `-moz-border-end-width`: BorderInlineEndWidthProperty[TLength] = null,
-    `-moz-border-left-colors`: MozBorderLeftColorsProperty = null,
-    `-moz-border-right-colors`: MozBorderRightColorsProperty = null,
     `-moz-border-start-color`: BorderInlineStartColorProperty = null,
     `-moz-border-start-style`: BorderInlineStartStyleProperty = null,
-    `-moz-border-top-colors`: MozBorderTopColorsProperty = null,
     `-moz-box-sizing`: BoxSizingProperty = null,
     `-moz-column-count`: ColumnCountProperty = null,
     `-moz-column-fill`: ColumnFillProperty = null,
@@ -1446,7 +1412,6 @@ object VendorLonghandPropertiesHyphen {
     `-ms-scrollbar-face-color`: MsScrollbarFaceColorProperty = null,
     `-ms-scrollbar-highlight-color`: MsScrollbarHighlightColorProperty = null,
     `-ms-scrollbar-shadow-color`: MsScrollbarShadowColorProperty = null,
-    `-ms-scrollbar-track-color`: MsScrollbarTrackColorProperty = null,
     `-ms-text-autospace`: MsTextAutospaceProperty = null,
     `-ms-text-combine-horizontal`: TextCombineUprightProperty = null,
     `-ms-text-overflow`: TextOverflowProperty = null,
@@ -1581,15 +1546,11 @@ object VendorLonghandPropertiesHyphen {
     if (`-moz-animation-timing-function` != null) __obj.updateDynamic("-moz-animation-timing-function")(`-moz-animation-timing-function`.asInstanceOf[js.Any])
     if (`-moz-appearance` != null) __obj.updateDynamic("-moz-appearance")(`-moz-appearance`.asInstanceOf[js.Any])
     if (`-moz-backface-visibility` != null) __obj.updateDynamic("-moz-backface-visibility")(`-moz-backface-visibility`.asInstanceOf[js.Any])
-    if (`-moz-border-bottom-colors` != null) __obj.updateDynamic("-moz-border-bottom-colors")(`-moz-border-bottom-colors`.asInstanceOf[js.Any])
     if (`-moz-border-end-color` != null) __obj.updateDynamic("-moz-border-end-color")(`-moz-border-end-color`.asInstanceOf[js.Any])
     if (`-moz-border-end-style` != null) __obj.updateDynamic("-moz-border-end-style")(`-moz-border-end-style`.asInstanceOf[js.Any])
     if (`-moz-border-end-width` != null) __obj.updateDynamic("-moz-border-end-width")(`-moz-border-end-width`.asInstanceOf[js.Any])
-    if (`-moz-border-left-colors` != null) __obj.updateDynamic("-moz-border-left-colors")(`-moz-border-left-colors`.asInstanceOf[js.Any])
-    if (`-moz-border-right-colors` != null) __obj.updateDynamic("-moz-border-right-colors")(`-moz-border-right-colors`.asInstanceOf[js.Any])
     if (`-moz-border-start-color` != null) __obj.updateDynamic("-moz-border-start-color")(`-moz-border-start-color`.asInstanceOf[js.Any])
     if (`-moz-border-start-style` != null) __obj.updateDynamic("-moz-border-start-style")(`-moz-border-start-style`.asInstanceOf[js.Any])
-    if (`-moz-border-top-colors` != null) __obj.updateDynamic("-moz-border-top-colors")(`-moz-border-top-colors`.asInstanceOf[js.Any])
     if (`-moz-box-sizing` != null) __obj.updateDynamic("-moz-box-sizing")(`-moz-box-sizing`.asInstanceOf[js.Any])
     if (`-moz-column-count` != null) __obj.updateDynamic("-moz-column-count")(`-moz-column-count`.asInstanceOf[js.Any])
     if (`-moz-column-fill` != null) __obj.updateDynamic("-moz-column-fill")(`-moz-column-fill`.asInstanceOf[js.Any])
@@ -1673,7 +1634,6 @@ object VendorLonghandPropertiesHyphen {
     if (`-ms-scrollbar-face-color` != null) __obj.updateDynamic("-ms-scrollbar-face-color")(`-ms-scrollbar-face-color`.asInstanceOf[js.Any])
     if (`-ms-scrollbar-highlight-color` != null) __obj.updateDynamic("-ms-scrollbar-highlight-color")(`-ms-scrollbar-highlight-color`.asInstanceOf[js.Any])
     if (`-ms-scrollbar-shadow-color` != null) __obj.updateDynamic("-ms-scrollbar-shadow-color")(`-ms-scrollbar-shadow-color`.asInstanceOf[js.Any])
-    if (`-ms-scrollbar-track-color` != null) __obj.updateDynamic("-ms-scrollbar-track-color")(`-ms-scrollbar-track-color`.asInstanceOf[js.Any])
     if (`-ms-text-autospace` != null) __obj.updateDynamic("-ms-text-autospace")(`-ms-text-autospace`.asInstanceOf[js.Any])
     if (`-ms-text-combine-horizontal` != null) __obj.updateDynamic("-ms-text-combine-horizontal")(`-ms-text-combine-horizontal`.asInstanceOf[js.Any])
     if (`-ms-text-overflow` != null) __obj.updateDynamic("-ms-text-overflow")(`-ms-text-overflow`.asInstanceOf[js.Any])

@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonEncodingPersistent extends js.Object {
-  var encoding: js.UndefOr[BufferEncoding | Null] = js.undefined
+  var encoding: js.UndefOr[java.lang.String | Null] = js.undefined
   var persistent: js.UndefOr[Boolean] = js.undefined
   var recursive: js.UndefOr[Boolean] = js.undefined
 }
@@ -13,7 +13,7 @@ trait AnonEncodingPersistent extends js.Object {
 object AnonEncodingPersistent {
   @scala.inline
   def apply(
-    encoding: BufferEncoding = null,
+    encoding: java.lang.String = null,
     persistent: js.UndefOr[Boolean] = js.undefined,
     recursive: js.UndefOr[Boolean] = js.undefined
   ): AnonEncodingPersistent = {

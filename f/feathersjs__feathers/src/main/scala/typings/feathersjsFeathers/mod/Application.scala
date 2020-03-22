@@ -1,7 +1,8 @@
 package typings.feathersjsFeathers.mod
 
+import typings.feathersjsFeathers.PartialHooksObject
+import typings.feathersjsFeathers.PartialServiceMethodsanyS
 import typings.node.eventsMod.EventEmitter
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +16,7 @@ trait Application[ServiceTypes] extends EventEmitter {
   def enable(name: String): this.type = js.native
   def enabled(name: String): Boolean = js.native
   def get(name: String): js.Any = js.native
-  def hooks(hooks: Partial[HooksObject]): this.type = js.native
+  def hooks(hooks: PartialHooksObject): this.type = js.native
   def service(location: String): Service[_] = js.native
   def service[L /* <: String */](location: L): Service[
     /* import warning: importer.ImportType#apply Failed type conversion: ServiceTypes[L] */ js.Any
@@ -23,9 +24,9 @@ trait Application[ServiceTypes] extends EventEmitter {
   def set(name: String, value: js.Any): this.type = js.native
   def setup(): this.type = js.native
   def setup(server: js.Any): this.type = js.native
+  def use(path: String, service: PartialServiceMethodsanyS): this.type = js.native
+  def use(path: String, service: PartialServiceMethodsanyS, options: js.Any): this.type = js.native
   def use(path: String, service: Application[_]): this.type = js.native
   def use(path: String, service: Application[_], options: js.Any): this.type = js.native
-  def use(path: String, service: Partial[ServiceMethods[_] with SetupMethod]): this.type = js.native
-  def use(path: String, service: Partial[ServiceMethods[_] with SetupMethod], options: js.Any): this.type = js.native
 }
 

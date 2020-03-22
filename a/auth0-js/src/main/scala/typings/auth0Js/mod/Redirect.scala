@@ -1,7 +1,7 @@
 package typings.auth0Js.mod
 
 import typings.auth0Js.AnonConnection
-import typings.auth0Js.AnonFragment
+import typings.auth0Js.AnonRedirectUri
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ class Redirect protected () extends js.Object {
     * This method is not compatible with API Auth so if you need to fetch API tokens with audience
     * you should use {@link authorize} or {@link login}.
     */
-  def loginWithCredentials(options: AnonFragment, callback: Auth0Callback[_, Auth0Error]): Unit = js.native
+  def loginWithCredentials(options: AnonRedirectUri, callback: Auth0Callback[_, Auth0Error]): Unit = js.native
   /**
     * Signs up a new user and automatically logs the user in after the signup.
     */

@@ -19,19 +19,15 @@ object reverseIteratorMod extends js.Object {
       */
     def this(base: Base) = this()
     var base_ : Base = js.native
+    /* CompleteClass */
+    override val value: T = js.native
     /* protected */ def _Create_neighbor(base: Base): This = js.native
-    /**
-      * @inheritDoc
-      */
-    def base(): Base = js.native
-    /**
-      * @inheritDoc
-      */
-    def next(): This = js.native
-    /**
-      * @inheritDoc
-      */
-    def prev(): This = js.native
+    /* CompleteClass */
+    override def base(): Base = js.native
+    /* CompleteClass */
+    override def next(): This = js.native
+    /* CompleteClass */
+    override def prev(): This = js.native
     /**
       * Get source container.
       *
@@ -39,10 +35,6 @@ object reverseIteratorMod extends js.Object {
       */
     /* CompleteClass */
     override def source(): Source = js.native
-    /**
-      * @inheritDoc
-      */
-    def value(): T = js.native
   }
   
 }

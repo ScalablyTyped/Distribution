@@ -7,7 +7,9 @@ import typings.electron.Electron.App_
 import typings.electron.Electron.AutoUpdater_
 import typings.electron.Electron.BrowserWindowProxy
 import typings.electron.Electron.ClientRequest
+import typings.electron.Electron.ClientRequestConstructorOptions
 import typings.electron.Electron.Clipboard_
+import typings.electron.Electron.CommandLine
 import typings.electron.Electron.ContentTracing_
 import typings.electron.Electron.ContextBridge_
 import typings.electron.Electron.Cookies
@@ -15,8 +17,8 @@ import typings.electron.Electron.CrashReporter_
 import typings.electron.Electron.Debugger
 import typings.electron.Electron.DesktopCapturer_
 import typings.electron.Electron.Dialog_
+import typings.electron.Electron.Dock
 import typings.electron.Electron.DownloadItem
-import typings.electron.Electron.EventEmitter
 import typings.electron.Electron.GlobalShortcut_
 import typings.electron.Electron.InAppPurchase_
 import typings.electron.Electron.IncomingMessage
@@ -25,6 +27,7 @@ import typings.electron.Electron.IpcRenderer_
 import typings.electron.Electron.MenuItem
 import typings.electron.Electron.MenuItemConstructorOptions
 import typings.electron.Electron.NativeImage_
+import typings.electron.Electron.NativeTheme_
 import typings.electron.Electron.NetLog_
 import typings.electron.Electron.Net_
 import typings.electron.Electron.PowerMonitor_
@@ -56,41 +59,31 @@ import typings.electron.Electron.Tray
 import typings.electron.Electron.WebFrame_
 import typings.electron.Electron.WebRequest
 import typings.electron.Electron.WebviewTag_
-import typings.electron.electronStrings.host
-import typings.electron.electronStrings.hostname
-import typings.electron.electronStrings.method
-import typings.electron.electronStrings.partition
-import typings.electron.electronStrings.path
-import typings.electron.electronStrings.port
-import typings.electron.electronStrings.protocol
-import typings.electron.electronStrings.redirect
-import typings.electron.electronStrings.session
-import typings.electron.electronStrings.url
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TypeofElectron extends js.Object {
   var Accelerator: Instantiable0[typings.electron.Electron.Accelerator]
-  var BrowserView: TypeofClassBrowserView
-  var BrowserWindow: TypeofClassBrowserWindow
+  var BrowserView: TypeofBrowserView
+  var BrowserWindow: TypeofBrowserWindow
   var BrowserWindowProxy: Instantiable0[typings.electron.Electron.BrowserWindowProxy]
   var ClientRequest: Instantiable1[
-    /* options */ method | url | session | partition | typings.electron.electronStrings.protocol | host | hostname | port | path | redirect, 
+    /* options */ ClientRequestConstructorOptions | String, 
     typings.electron.Electron.ClientRequest
   ]
+  var CommandLine: Instantiable0[typings.electron.Electron.CommandLine]
   var Cookies: Instantiable0[typings.electron.Electron.Cookies]
   var Debugger: Instantiable0[typings.electron.Electron.Debugger]
+  var Dock: Instantiable0[typings.electron.Electron.Dock]
   var DownloadItem: Instantiable0[typings.electron.Electron.DownloadItem]
-  // TODO: Replace this declaration with NodeJS.EventEmitter
-  var EventEmitter: Instantiable0[typings.electron.Electron.EventEmitter]
   var IncomingMessage: Instantiable0[typings.electron.Electron.IncomingMessage]
-  var Menu: TypeofClassMenu
+  var Menu: TypeofMenu
   var MenuItem: Instantiable1[/* options */ MenuItemConstructorOptions, typings.electron.Electron.MenuItem]
-  var NativeImage: TypeofClassNativeImage
-  var Notification: TypeofClassNotification
-  var Session: TypeofClassSession
-  var TouchBar: TypeofClassTouchBar
+  var NativeImage: TypeofNativeImage
+  var Notification: TypeofNotification
+  var Session: TypeofSession
+  var TouchBar: TypeofTouchBar
   var TouchBarButton: Instantiable1[
     /* options */ TouchBarButtonConstructorOptions, 
     typings.electron.Electron.TouchBarButton
@@ -128,7 +121,7 @@ trait TypeofElectron extends js.Object {
     typings.electron.Electron.TouchBarSpacer
   ]
   var Tray: Instantiable1[/* image */ NativeImage_ | String, typings.electron.Electron.Tray]
-  var WebContents: TypeofClassWebContents
+  var WebContents: TypeofWebContents
   var WebRequest: Instantiable0[typings.electron.Electron.WebRequest]
   val app: App_
   val autoUpdater: AutoUpdater_
@@ -142,6 +135,7 @@ trait TypeofElectron extends js.Object {
   val inAppPurchase: InAppPurchase_
   val ipcMain: IpcMain_
   val ipcRenderer: IpcRenderer_
+  val nativeTheme: NativeTheme_
   val net: Net_
   val netLog: NetLog_
   val powerMonitor: PowerMonitor_
@@ -159,24 +153,22 @@ object TypeofElectron {
   @scala.inline
   def apply(
     Accelerator: Instantiable0[Accelerator],
-    BrowserView: TypeofClassBrowserView,
-    BrowserWindow: TypeofClassBrowserWindow,
+    BrowserView: TypeofBrowserView,
+    BrowserWindow: TypeofBrowserWindow,
     BrowserWindowProxy: Instantiable0[BrowserWindowProxy],
-    ClientRequest: Instantiable1[
-      /* options */ method | url | session | partition | protocol | host | hostname | port | path | redirect, 
-      ClientRequest
-    ],
+    ClientRequest: Instantiable1[/* options */ ClientRequestConstructorOptions | String, ClientRequest],
+    CommandLine: Instantiable0[CommandLine],
     Cookies: Instantiable0[Cookies],
     Debugger: Instantiable0[Debugger],
+    Dock: Instantiable0[Dock],
     DownloadItem: Instantiable0[DownloadItem],
-    EventEmitter: Instantiable0[EventEmitter],
     IncomingMessage: Instantiable0[IncomingMessage],
-    Menu: TypeofClassMenu,
+    Menu: TypeofMenu,
     MenuItem: Instantiable1[/* options */ MenuItemConstructorOptions, MenuItem],
-    NativeImage: TypeofClassNativeImage,
-    Notification: TypeofClassNotification,
-    Session: TypeofClassSession,
-    TouchBar: TypeofClassTouchBar,
+    NativeImage: TypeofNativeImage,
+    Notification: TypeofNotification,
+    Session: TypeofSession,
+    TouchBar: TypeofTouchBar,
     TouchBarButton: Instantiable1[/* options */ TouchBarButtonConstructorOptions, TouchBarButton],
     TouchBarColorPicker: Instantiable1[/* options */ TouchBarColorPickerConstructorOptions, TouchBarColorPicker],
     TouchBarGroup: Instantiable1[/* options */ TouchBarGroupConstructorOptions, TouchBarGroup],
@@ -187,7 +179,7 @@ object TypeofElectron {
     TouchBarSlider: Instantiable1[/* options */ TouchBarSliderConstructorOptions, TouchBarSlider],
     TouchBarSpacer: Instantiable1[/* options */ TouchBarSpacerConstructorOptions, TouchBarSpacer],
     Tray: Instantiable1[/* image */ NativeImage_ | String, Tray],
-    WebContents: TypeofClassWebContents,
+    WebContents: TypeofWebContents,
     WebRequest: Instantiable0[WebRequest],
     app: App_,
     autoUpdater: AutoUpdater_,
@@ -201,6 +193,7 @@ object TypeofElectron {
     inAppPurchase: InAppPurchase_,
     ipcMain: IpcMain_,
     ipcRenderer: IpcRenderer_,
+    nativeTheme: NativeTheme_,
     net: Net_,
     netLog: NetLog_,
     powerMonitor: PowerMonitor_,
@@ -213,7 +206,7 @@ object TypeofElectron {
     webFrame: WebFrame_,
     webviewTag: WebviewTag_
   ): TypeofElectron = {
-    val __obj = js.Dynamic.literal(Accelerator = Accelerator.asInstanceOf[js.Any], BrowserView = BrowserView.asInstanceOf[js.Any], BrowserWindow = BrowserWindow.asInstanceOf[js.Any], BrowserWindowProxy = BrowserWindowProxy.asInstanceOf[js.Any], ClientRequest = ClientRequest.asInstanceOf[js.Any], Cookies = Cookies.asInstanceOf[js.Any], Debugger = Debugger.asInstanceOf[js.Any], DownloadItem = DownloadItem.asInstanceOf[js.Any], EventEmitter = EventEmitter.asInstanceOf[js.Any], IncomingMessage = IncomingMessage.asInstanceOf[js.Any], Menu = Menu.asInstanceOf[js.Any], MenuItem = MenuItem.asInstanceOf[js.Any], NativeImage = NativeImage.asInstanceOf[js.Any], Notification = Notification.asInstanceOf[js.Any], Session = Session.asInstanceOf[js.Any], TouchBar = TouchBar.asInstanceOf[js.Any], TouchBarButton = TouchBarButton.asInstanceOf[js.Any], TouchBarColorPicker = TouchBarColorPicker.asInstanceOf[js.Any], TouchBarGroup = TouchBarGroup.asInstanceOf[js.Any], TouchBarLabel = TouchBarLabel.asInstanceOf[js.Any], TouchBarPopover = TouchBarPopover.asInstanceOf[js.Any], TouchBarScrubber = TouchBarScrubber.asInstanceOf[js.Any], TouchBarSegmentedControl = TouchBarSegmentedControl.asInstanceOf[js.Any], TouchBarSlider = TouchBarSlider.asInstanceOf[js.Any], TouchBarSpacer = TouchBarSpacer.asInstanceOf[js.Any], Tray = Tray.asInstanceOf[js.Any], WebContents = WebContents.asInstanceOf[js.Any], WebRequest = WebRequest.asInstanceOf[js.Any], app = app.asInstanceOf[js.Any], autoUpdater = autoUpdater.asInstanceOf[js.Any], clipboard = clipboard.asInstanceOf[js.Any], contentTracing = contentTracing.asInstanceOf[js.Any], contextBridge = contextBridge.asInstanceOf[js.Any], crashReporter = crashReporter.asInstanceOf[js.Any], desktopCapturer = desktopCapturer.asInstanceOf[js.Any], dialog = dialog.asInstanceOf[js.Any], globalShortcut = globalShortcut.asInstanceOf[js.Any], inAppPurchase = inAppPurchase.asInstanceOf[js.Any], ipcMain = ipcMain.asInstanceOf[js.Any], ipcRenderer = ipcRenderer.asInstanceOf[js.Any], net = net.asInstanceOf[js.Any], netLog = netLog.asInstanceOf[js.Any], powerMonitor = powerMonitor.asInstanceOf[js.Any], powerSaveBlocker = powerSaveBlocker.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], remote = remote.asInstanceOf[js.Any], screen = screen.asInstanceOf[js.Any], shell = shell.asInstanceOf[js.Any], systemPreferences = systemPreferences.asInstanceOf[js.Any], webFrame = webFrame.asInstanceOf[js.Any], webviewTag = webviewTag.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(Accelerator = Accelerator.asInstanceOf[js.Any], BrowserView = BrowserView.asInstanceOf[js.Any], BrowserWindow = BrowserWindow.asInstanceOf[js.Any], BrowserWindowProxy = BrowserWindowProxy.asInstanceOf[js.Any], ClientRequest = ClientRequest.asInstanceOf[js.Any], CommandLine = CommandLine.asInstanceOf[js.Any], Cookies = Cookies.asInstanceOf[js.Any], Debugger = Debugger.asInstanceOf[js.Any], Dock = Dock.asInstanceOf[js.Any], DownloadItem = DownloadItem.asInstanceOf[js.Any], IncomingMessage = IncomingMessage.asInstanceOf[js.Any], Menu = Menu.asInstanceOf[js.Any], MenuItem = MenuItem.asInstanceOf[js.Any], NativeImage = NativeImage.asInstanceOf[js.Any], Notification = Notification.asInstanceOf[js.Any], Session = Session.asInstanceOf[js.Any], TouchBar = TouchBar.asInstanceOf[js.Any], TouchBarButton = TouchBarButton.asInstanceOf[js.Any], TouchBarColorPicker = TouchBarColorPicker.asInstanceOf[js.Any], TouchBarGroup = TouchBarGroup.asInstanceOf[js.Any], TouchBarLabel = TouchBarLabel.asInstanceOf[js.Any], TouchBarPopover = TouchBarPopover.asInstanceOf[js.Any], TouchBarScrubber = TouchBarScrubber.asInstanceOf[js.Any], TouchBarSegmentedControl = TouchBarSegmentedControl.asInstanceOf[js.Any], TouchBarSlider = TouchBarSlider.asInstanceOf[js.Any], TouchBarSpacer = TouchBarSpacer.asInstanceOf[js.Any], Tray = Tray.asInstanceOf[js.Any], WebContents = WebContents.asInstanceOf[js.Any], WebRequest = WebRequest.asInstanceOf[js.Any], app = app.asInstanceOf[js.Any], autoUpdater = autoUpdater.asInstanceOf[js.Any], clipboard = clipboard.asInstanceOf[js.Any], contentTracing = contentTracing.asInstanceOf[js.Any], contextBridge = contextBridge.asInstanceOf[js.Any], crashReporter = crashReporter.asInstanceOf[js.Any], desktopCapturer = desktopCapturer.asInstanceOf[js.Any], dialog = dialog.asInstanceOf[js.Any], globalShortcut = globalShortcut.asInstanceOf[js.Any], inAppPurchase = inAppPurchase.asInstanceOf[js.Any], ipcMain = ipcMain.asInstanceOf[js.Any], ipcRenderer = ipcRenderer.asInstanceOf[js.Any], nativeTheme = nativeTheme.asInstanceOf[js.Any], net = net.asInstanceOf[js.Any], netLog = netLog.asInstanceOf[js.Any], powerMonitor = powerMonitor.asInstanceOf[js.Any], powerSaveBlocker = powerSaveBlocker.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], remote = remote.asInstanceOf[js.Any], screen = screen.asInstanceOf[js.Any], shell = shell.asInstanceOf[js.Any], systemPreferences = systemPreferences.asInstanceOf[js.Any], webFrame = webFrame.asInstanceOf[js.Any], webviewTag = webviewTag.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TypeofElectron]
   }

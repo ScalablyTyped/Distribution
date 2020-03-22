@@ -1,9 +1,9 @@
 package typings.kdbxweb.mod
 
 import typings.kdbxweb.AnonAes
-import typings.kdbxweb.AnonAesArgon2
 import typings.kdbxweb.AnonApple
 import typings.kdbxweb.AnonArcFourVariant
+import typings.kdbxweb.AnonArgon2
 import typings.kdbxweb.AnonBadSignature
 import typings.kdbxweb.AnonFileMagic
 import typings.kdbxweb.AnonGZip
@@ -23,7 +23,7 @@ object Consts extends js.Object {
   var Defaults: AnonHistoryMaxItems = js.native
   var ErrorCodes: AnonBadSignature = js.native
   var Icons: AnonApple = js.native
-  var KdfId: AnonAesArgon2 = js.native
+  var KdfId: AnonArgon2 = js.native
   var Signatures: AnonFileMagic = js.native
 }
 

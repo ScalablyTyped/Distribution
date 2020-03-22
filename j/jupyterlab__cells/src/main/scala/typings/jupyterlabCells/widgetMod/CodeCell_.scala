@@ -32,23 +32,7 @@ class CodeCell_ protected () extends Cell {
     * The model used by the widget.
     */
   @JSName("model")
-  val model_CodeCell_ : ICodeCellModel = js.native
-  /**
-    * Get the output area for the cell.
-    */
-  val outputArea: OutputArea = js.native
-  /**
-    * The view state of output being collapsed.
-    */
-  var outputHidden: Boolean = js.native
-  /**
-    * Whether the output is in a scrolled state?
-    */
-  var outputsScrolled: Boolean = js.native
-  /**
-    * Whether to sync the scrolled state to the cell model.
-    */
-  var syncScrolled: Boolean = js.native
+  val model_FCodeCell_ : ICodeCellModel = js.native
   /**
     * Clone the OutputArea alone, returning a simplified output area, using the same model.
     */
@@ -60,10 +44,29 @@ class CodeCell_ protected () extends Cell {
   /**
     * Handle changes in the model.
     */
-  /* protected */ def onStateChanged(model: ICellModel, args: IChangedArgs[_, String]): Unit = js.native
+  /* protected */ def onStateChanged(model: ICellModel, args: IChangedArgs[_, _, String]): Unit = js.native
+  /**
+    * Get the output area for the cell.
+    */
+  def outputArea(): OutputArea = js.native
+  /**
+    * The view state of output being collapsed.
+    */
+  def outputHidden(): Boolean = js.native
+  def outputHidden(value: Boolean): js.Any = js.native
+  /**
+    * Whether the output is in a scrolled state?
+    */
+  def outputsScrolled(): Boolean = js.native
+  def outputsScrolled(value: Boolean): js.Any = js.native
   /**
     * Save view collapse state to model
     */
   def saveScrolledState(): Unit = js.native
+  /**
+    * Whether to sync the scrolled state to the cell model.
+    */
+  def syncScrolled(): Boolean = js.native
+  def syncScrolled(value: Boolean): js.Any = js.native
 }
 

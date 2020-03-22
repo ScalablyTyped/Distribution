@@ -1,9 +1,9 @@
 package typings.firefoxWebextBrowser.browser
 
-import typings.firefoxWebextBrowser.AnonImageDataKey
+import typings.firefoxWebextBrowser.AnonPath
 import typings.firefoxWebextBrowser.AnonPopupTabId
 import typings.firefoxWebextBrowser.AnonTabIdNumber
-import typings.firefoxWebextBrowser.AnonTabIdTitleNull
+import typings.firefoxWebextBrowser.AnonTabIdTitle
 import typings.firefoxWebextBrowser.WebExtEvent
 import typings.firefoxWebextBrowser.browser.tabs.Tab
 import scala.scalajs.js
@@ -42,11 +42,11 @@ object pageAction extends js.Object {
     * data from a canvas element, or as dictionary of either one of those. Either the **path** or the **imageData**
     * property must be specified.
     */
-  def setIcon(details: AnonImageDataKey): js.Promise[Unit] = js.native
+  def setIcon(details: AnonPath): js.Promise[Unit] = js.native
   /** Sets the html document to be opened as a popup when the user clicks on the page action's icon. */
   def setPopup(details: AnonPopupTabId): Unit = js.native
   /** Sets the title of the page action. This is displayed in a tooltip over the page action. */
-  def setTitle(details: AnonTabIdTitleNull): Unit = js.native
+  def setTitle(details: AnonTabIdTitle): Unit = js.native
   /* pageAction functions */
   /**
     * Shows the page action. The page action is shown whenever the tab is selected.

@@ -12,7 +12,6 @@ package object inputTypeComposerMod {
   type ComposeInputType = typings.graphqlCompose.inputTypeComposerMod.InputTypeComposer[js.Any] | typings.graphqlCompose.enumTypeComposerMod.EnumTypeComposer[js.Any] | typings.graphqlCompose.scalarTypeComposerMod.ScalarTypeComposer[js.Any] | typings.graphql.definitionMod.GraphQLInputType | typings.graphqlCompose.typeMapperMod.TypeAsString | (js.Array[
     typings.graphqlCompose.inputTypeComposerMod.InputTypeComposer[js.Any] | typings.graphqlCompose.enumTypeComposerMod.EnumTypeComposer[js.Any] | typings.graphqlCompose.scalarTypeComposerMod.ScalarTypeComposer[js.Any] | typings.graphql.definitionMod.GraphQLInputType | typings.graphqlCompose.typeMapperMod.TypeAsString
   ])
-  type GraphQLInputObjectTypeExtended = typings.graphqlCompose.graphqlMod.GraphQLInputObjectType with typings.graphqlCompose.AnonGqcExtensionsGqcFields
   /* Rewritten from type alias, can be one of: 
     - typings.graphqlCompose.typeMapperMod.TypeAsString
     - typings.graphqlCompose.inputTypeComposerMod.ComposeInputObjectTypeConfig

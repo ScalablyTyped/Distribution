@@ -14,7 +14,7 @@ trait RangeSelectorButtonsOptions extends js.Object {
   /**
     * (Highstock) A custom data grouping object for each button.
     */
-  var dataGrouping: js.UndefOr[RangeSelectorButtonsDataGroupingOptions] = js.undefined
+  var dataGrouping: js.UndefOr[DataGroupingOptionsObject] = js.undefined
   var events: js.UndefOr[RangeSelectorButtonsEventsOptions] = js.undefined
   /**
     * (Highstock, Gantt) Additional range (in milliseconds) added to the end of
@@ -48,7 +48,7 @@ object RangeSelectorButtonsOptions {
   @scala.inline
   def apply(
     count: Int | Double = null,
-    dataGrouping: RangeSelectorButtonsDataGroupingOptions = null,
+    dataGrouping: DataGroupingOptionsObject = null,
     events: RangeSelectorButtonsEventsOptions = null,
     offsetMax: Int | Double = null,
     offsetMin: Int | Double = null,

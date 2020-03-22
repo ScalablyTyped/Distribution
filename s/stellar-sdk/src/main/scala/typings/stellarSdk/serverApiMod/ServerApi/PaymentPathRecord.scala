@@ -1,6 +1,6 @@
 package typings.stellarSdk.serverApiMod.ServerApi
 
-import typings.stellarSdk.AnonAssetcode
+import typings.stellarSdk.AnonAssetissuer
 import typings.stellarSdk.horizonApiMod.Horizon.BaseResponse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,7 +12,7 @@ trait PaymentPathRecord
   var destination_asset_code: String
   var destination_asset_issuer: String
   var destination_asset_type: String
-  var path: js.Array[AnonAssetcode]
+  var path: js.Array[AnonAssetissuer]
   var source_amount: String
   var source_asset_code: String
   var source_asset_issuer: String
@@ -29,7 +29,7 @@ object PaymentPathRecord {
     destination_asset_code: String,
     destination_asset_issuer: String,
     destination_asset_type: String,
-    path: js.Array[AnonAssetcode],
+    path: js.Array[AnonAssetissuer],
     source_amount: String,
     source_asset_code: String,
     source_asset_issuer: String,

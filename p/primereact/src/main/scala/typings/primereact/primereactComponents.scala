@@ -71,6 +71,12 @@ object primereactComponents extends primereactProps {
   @scala.inline
   def GMap: ComponentType[GMapProps] = js.constructorOf[typings.primereact.primereactGmapMod.GMap].asInstanceOf[typings.react.mod.ComponentType[GMapProps]]
   @scala.inline
+  def Galleria: ComponentType[GalleriaProps] = js.constructorOf[typings.primereact.primereactGalleriaMod.Galleria].asInstanceOf[typings.react.mod.ComponentType[GalleriaProps]]
+  @scala.inline
+  def GalleriaPreview: ComponentType[GalleriaPreviewProps] = js.constructorOf[typings.primereact.galleriaPreviewMod.GalleriaPreview].asInstanceOf[typings.react.mod.ComponentType[GalleriaPreviewProps]]
+  @scala.inline
+  def GalleriaThumbnails: ComponentType[GalleriaThumbnailsProps] = js.constructorOf[typings.primereact.galleriaThumbnailsMod.GalleriaThumbnails].asInstanceOf[typings.react.mod.ComponentType[GalleriaThumbnailsProps]]
+  @scala.inline
   def Growl: ComponentType[GrowlProps] = js.constructorOf[typings.primereact.primereactGrowlMod.Growl].asInstanceOf[typings.react.mod.ComponentType[GrowlProps]]
   @scala.inline
   def HeaderCell: ComponentType[HeaderCellProps] = js.constructorOf[typings.primereact.headerCellMod.HeaderCell].asInstanceOf[typings.react.mod.ComponentType[HeaderCellProps]]

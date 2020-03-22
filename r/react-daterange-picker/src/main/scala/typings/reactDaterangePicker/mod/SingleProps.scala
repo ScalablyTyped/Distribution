@@ -2,14 +2,13 @@ package typings.reactDaterangePicker.mod
 
 import typings.moment.mod.Moment
 import typings.momentRange.mod.DateRange
-import typings.momentRange.mod.MomentRange
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import typings.react.mod.Key
 import typings.react.mod.LegacyRef
 import typings.react.mod.ReactNode
 import typings.react.mod.SFC
-import typings.reactDaterangePicker.AnonCalendarFormat
+import typings.reactDaterangePicker.MomentRangeNoneinpMomentI
 import typings.reactDaterangePicker.reactDaterangePickerStrings.single
 import typings.std.Date
 import scala.scalajs.js
@@ -46,7 +45,7 @@ object SingleProps {
     onHighlightDate: /* date */ Date => Unit = null,
     onHighlightRange: /* date */ Date => Unit = null,
     onSelect: /* value */ Moment => Unit = null,
-    onSelectStart: /* value */ MomentRange with AnonCalendarFormat => Unit = null,
+    onSelectStart: /* value */ MomentRangeNoneinpMomentI => Unit = null,
     paginationArrowComponent: (ComponentClass[PaginationArrowProps[js.Object], ComponentState]) | SFC[PaginationArrowProps[js.Object]] = null,
     ref: LegacyRef[T] = null,
     selectedLabel: String = null,
@@ -54,7 +53,7 @@ object SingleProps {
     showLegend: js.UndefOr[Boolean] = js.undefined,
     singleDateRange: js.UndefOr[Boolean] = js.undefined,
     stateDefinitions: StateDefinitions = null,
-    value: (MomentRange with AnonCalendarFormat) | DateRange | Moment = null
+    value: MomentRangeNoneinpMomentI | DateRange | Moment = null
   ): SingleProps[T] = {
     val __obj = js.Dynamic.literal()
     if (bemBlock != null) __obj.updateDynamic("bemBlock")(bemBlock.asInstanceOf[js.Any])

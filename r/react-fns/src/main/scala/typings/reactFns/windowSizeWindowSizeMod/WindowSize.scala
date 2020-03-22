@@ -1,8 +1,8 @@
 package typings.reactFns.windowSizeWindowSizeMod
 
 import typings.react.mod.Component
+import typings.reactFns.PartialWindowSizeConfig
 import typings.reactFns.typesMod.SharedRenderProps
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,6 +22,6 @@ class WindowSize ()
 @JSImport("react-fns/dist/WindowSize/WindowSize", "WindowSize")
 @js.native
 object WindowSize extends js.Object {
-  var defaultProps: Partial[WindowSizeConfig] = js.native
+  var defaultProps: PartialWindowSizeConfig = js.native
 }
 

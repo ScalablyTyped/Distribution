@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "db-errors" : "0.2.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "db-errors" : "0.2.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

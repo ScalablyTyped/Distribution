@@ -1,6 +1,6 @@
 package typings.rcMenu.legacyUtilMod
 
-import typings.rcMenu.interfaceMod.MotionType
+import typings.rcTrigger.interfaceMod.MotionType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

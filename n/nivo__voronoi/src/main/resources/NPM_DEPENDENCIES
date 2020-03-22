@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@nivo/voronoi" : "0.59.3"
+      "@nivo/voronoi" : "0.61.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@nivo/voronoi" : "0.59.3"
+      "@nivo/voronoi" : "0.61.0"
     }
   ],
   "compile-devDependencies" : [

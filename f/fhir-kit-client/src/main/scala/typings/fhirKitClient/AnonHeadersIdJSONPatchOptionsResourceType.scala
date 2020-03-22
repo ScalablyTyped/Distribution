@@ -1,6 +1,6 @@
 package typings.fhirKitClient
 
-import typings.fhirKitClient.fhirKitClientStrings.RiskAssessment
+import typings.fhirKitClient.fhirKitClientStrings.Binary
 import typings.jsonPatch.mod.OpPatch
 import typings.request.mod.Headers
 import typings.request.mod.Options
@@ -13,7 +13,7 @@ trait AnonHeadersIdJSONPatchOptionsResourceType extends js.Object {
   var headers: js.UndefOr[Headers] = js.undefined
   var id: String
   var options: js.UndefOr[Options] = js.undefined
-  var resourceType: RiskAssessment
+  var resourceType: Binary
 }
 
 object AnonHeadersIdJSONPatchOptionsResourceType {
@@ -21,7 +21,7 @@ object AnonHeadersIdJSONPatchOptionsResourceType {
   def apply(
     JSONPatch: js.Array[OpPatch],
     id: String,
-    resourceType: RiskAssessment,
+    resourceType: Binary,
     headers: Headers = null,
     options: Options = null
   ): AnonHeadersIdJSONPatchOptionsResourceType = {

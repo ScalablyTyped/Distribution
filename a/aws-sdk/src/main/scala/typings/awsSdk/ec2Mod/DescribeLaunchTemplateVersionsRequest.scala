@@ -17,7 +17,7 @@ trait DescribeLaunchTemplateVersionsRequest extends js.Object {
   /**
     * The ID of the launch template. You must specify either the launch template ID or launch template name in the request.
     */
-  var LaunchTemplateId: js.UndefOr[String] = js.native
+  var LaunchTemplateId: js.UndefOr[typings.awsSdk.ec2Mod.LaunchTemplateId] = js.native
   /**
     * The name of the launch template. You must specify either the launch template ID or launch template name in the request.
     */
@@ -49,7 +49,7 @@ object DescribeLaunchTemplateVersionsRequest {
   def apply(
     DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     Filters: FilterList = null,
-    LaunchTemplateId: String = null,
+    LaunchTemplateId: LaunchTemplateId = null,
     LaunchTemplateName: LaunchTemplateName = null,
     MaxResults: Int | scala.Double = null,
     MaxVersion: String = null,

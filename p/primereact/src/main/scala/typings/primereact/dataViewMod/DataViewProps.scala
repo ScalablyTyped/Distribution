@@ -1,6 +1,6 @@
 package typings.primereact.dataViewMod
 
-import typings.primereact.AnonFirstOriginalEvent
+import typings.primereact.AnonRows
 import typings.primereact.primereactStrings.grid
 import typings.primereact.primereactStrings.list
 import typings.react.mod._Global_.JSX.Element
@@ -20,7 +20,7 @@ trait DataViewProps extends js.Object {
   var itemTemplate: js.UndefOr[js.Function2[/* item */ js.Any, /* layout */ grid | list, js.UndefOr[Element]]] = js.undefined
   var layout: js.UndefOr[String] = js.undefined
   var `lazy`: js.UndefOr[Boolean] = js.undefined
-  var onPage: js.UndefOr[js.Function1[/* e */ AnonFirstOriginalEvent, Unit]] = js.undefined
+  var onPage: js.UndefOr[js.Function1[/* e */ AnonRows, Unit]] = js.undefined
   var pageLinkSize: js.UndefOr[Double] = js.undefined
   var paginator: js.UndefOr[Boolean] = js.undefined
   var paginatorLeft: js.UndefOr[js.Any] = js.undefined
@@ -50,7 +50,7 @@ object DataViewProps {
     itemTemplate: (/* item */ js.Any, /* layout */ grid | list) => js.UndefOr[Element] = null,
     layout: String = null,
     `lazy`: js.UndefOr[Boolean] = js.undefined,
-    onPage: /* e */ AnonFirstOriginalEvent => Unit = null,
+    onPage: /* e */ AnonRows => Unit = null,
     pageLinkSize: Int | Double = null,
     paginator: js.UndefOr[Boolean] = js.undefined,
     paginatorLeft: js.Any = null,

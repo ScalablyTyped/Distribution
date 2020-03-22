@@ -1,6 +1,6 @@
 package typings.jupyterlabConsole.foreignMod.ForeignHandler
 
-import typings.jupyterlabApputils.clientsessionMod.IClientSession
+import typings.jupyterlabApputils.sessioncontextMod.ISessionContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,13 +16,13 @@ trait IOptions extends js.Object {
   /**
     * The client session used by the foreign handler.
     */
-  var session: IClientSession
+  var sessionContext: ISessionContext
 }
 
 object IOptions {
   @scala.inline
-  def apply(parent: IReceiver, session: IClientSession): IOptions = {
-    val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any], session = session.asInstanceOf[js.Any])
+  def apply(parent: IReceiver, sessionContext: ISessionContext): IOptions = {
+    val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any], sessionContext = sessionContext.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IOptions]
   }

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@material/tab-bar" : "3.2.0"
+      "@material/tab-bar" : "5.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@material/tab-bar" : "3.2.0"
+      "@material/tab-bar" : "5.1.0"
     }
   ],
   "compile-devDependencies" : [

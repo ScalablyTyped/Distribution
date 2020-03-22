@@ -1,6 +1,13 @@
 package typings.betterScroll.mod
 
-import typings.std.Partial
+import typings.betterScroll.PartialInfinityOption
+import typings.betterScroll.PartialMouseWheelOption
+import typings.betterScroll.PartialPullDownOption
+import typings.betterScroll.PartialPullUpOption
+import typings.betterScroll.PartialScrollBarOption
+import typings.betterScroll.PartialSlideOption
+import typings.betterScroll.PartialWheelOption
+import typings.betterScroll.PartialZoomOption
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,7 +29,7 @@ trait BsOption extends js.Object {
   var flickLimitTime: Double
   var freeScroll: Boolean
   // https://ustbhuangyi.github.io/better-scroll/doc/zh-hans/options-advanced.html
-  var infinity: Partial[InfinityOption] | Boolean
+  var infinity: PartialInfinityOption | Boolean
   var momentum: Boolean
   var momentumLimitDistance: Double
   var momentumLimitTime: Double
@@ -31,7 +38,7 @@ trait BsOption extends js.Object {
   //  invert: false,
   //  easeTime: 300
   // }
-  var mouseWheel: Partial[MouseWheelOption] | Boolean
+  var mouseWheel: PartialMouseWheelOption | Boolean
   var observeDOM: Boolean
   var preventDefault: Boolean
   var preventDefaultException: js.Object
@@ -43,14 +50,14 @@ trait BsOption extends js.Object {
     *   stop: 20
     * }
     */
-  var pullDownRefresh: Partial[PullDownOption] | Boolean
+  var pullDownRefresh: PartialPullDownOption | Boolean
   /**
     * for pull up and load
     * pullUpLoad: {
     *   threshold: 50
     * }
     */
-  var pullUpLoad: Partial[PullUpOption] | Boolean
+  var pullUpLoad: PartialPullUpOption | Boolean
   var resizePolling: Double
   var scrollX: Boolean
   var scrollY: Boolean
@@ -60,7 +67,7 @@ trait BsOption extends js.Object {
     *   fade: true
     * }
     */
-  var scrollbar: Partial[ScrollBarOption] | Boolean
+  var scrollbar: PartialScrollBarOption | Boolean
   /**
     * for slide
     * snap: {
@@ -72,7 +79,7 @@ trait BsOption extends js.Object {
     *   listenFlick: true
     * }
     */
-  var snap: Partial[SlideOption] | Boolean
+  var snap: PartialSlideOption | Boolean
   var startX: Double
   var startY: Double
   var stopPropagation: Boolean
@@ -89,13 +96,13 @@ trait BsOption extends js.Object {
     *   adjustTime: 400
     * }
     */
-  var wheel: Partial[WheelOption] | Boolean
+  var wheel: PartialWheelOption | Boolean
   // zoom: {
   //  start: 1,
   //  min: 1,
   //  max: 4
   // }
-  var zoom: Partial[ZoomOption] | Boolean
+  var zoom: PartialZoomOption | Boolean
 }
 
 object BsOption {
@@ -116,22 +123,22 @@ object BsOption {
     flickLimitDistance: Double,
     flickLimitTime: Double,
     freeScroll: Boolean,
-    infinity: Partial[InfinityOption] | Boolean,
+    infinity: PartialInfinityOption | Boolean,
     momentum: Boolean,
     momentumLimitDistance: Double,
     momentumLimitTime: Double,
-    mouseWheel: Partial[MouseWheelOption] | Boolean,
+    mouseWheel: PartialMouseWheelOption | Boolean,
     observeDOM: Boolean,
     preventDefault: Boolean,
     preventDefaultException: js.Object,
     probeType: Double,
-    pullDownRefresh: Partial[PullDownOption] | Boolean,
-    pullUpLoad: Partial[PullUpOption] | Boolean,
+    pullDownRefresh: PartialPullDownOption | Boolean,
+    pullUpLoad: PartialPullUpOption | Boolean,
     resizePolling: Double,
     scrollX: Boolean,
     scrollY: Boolean,
-    scrollbar: Partial[ScrollBarOption] | Boolean,
-    snap: Partial[SlideOption] | Boolean,
+    scrollbar: PartialScrollBarOption | Boolean,
+    snap: PartialSlideOption | Boolean,
     startX: Double,
     startY: Double,
     stopPropagation: Boolean,
@@ -140,8 +147,8 @@ object BsOption {
     tap: Boolean,
     useTransform: Boolean,
     useTransition: Boolean,
-    wheel: Partial[WheelOption] | Boolean,
-    zoom: Partial[ZoomOption] | Boolean
+    wheel: PartialWheelOption | Boolean,
+    zoom: PartialZoomOption | Boolean
   ): BsOption = {
     val __obj = js.Dynamic.literal(HWCompositing = HWCompositing.asInstanceOf[js.Any], autoBlur = autoBlur.asInstanceOf[js.Any], bindToWrapper = bindToWrapper.asInstanceOf[js.Any], bounce = bounce.asInstanceOf[js.Any], bounceTime = bounceTime.asInstanceOf[js.Any], click = click.asInstanceOf[js.Any], dblclick = dblclick.asInstanceOf[js.Any], deceleration = deceleration.asInstanceOf[js.Any], directionLockThreshold = directionLockThreshold.asInstanceOf[js.Any], disableMouse = disableMouse.asInstanceOf[js.Any], disableTouch = disableTouch.asInstanceOf[js.Any], eventPassthrough = eventPassthrough.asInstanceOf[js.Any], flickLimitDistance = flickLimitDistance.asInstanceOf[js.Any], flickLimitTime = flickLimitTime.asInstanceOf[js.Any], freeScroll = freeScroll.asInstanceOf[js.Any], infinity = infinity.asInstanceOf[js.Any], momentum = momentum.asInstanceOf[js.Any], momentumLimitDistance = momentumLimitDistance.asInstanceOf[js.Any], momentumLimitTime = momentumLimitTime.asInstanceOf[js.Any], mouseWheel = mouseWheel.asInstanceOf[js.Any], observeDOM = observeDOM.asInstanceOf[js.Any], preventDefault = preventDefault.asInstanceOf[js.Any], preventDefaultException = preventDefaultException.asInstanceOf[js.Any], probeType = probeType.asInstanceOf[js.Any], pullDownRefresh = pullDownRefresh.asInstanceOf[js.Any], pullUpLoad = pullUpLoad.asInstanceOf[js.Any], resizePolling = resizePolling.asInstanceOf[js.Any], scrollX = scrollX.asInstanceOf[js.Any], scrollY = scrollY.asInstanceOf[js.Any], scrollbar = scrollbar.asInstanceOf[js.Any], snap = snap.asInstanceOf[js.Any], startX = startX.asInstanceOf[js.Any], startY = startY.asInstanceOf[js.Any], stopPropagation = stopPropagation.asInstanceOf[js.Any], swipeBounceTime = swipeBounceTime.asInstanceOf[js.Any], swipeTime = swipeTime.asInstanceOf[js.Any], tap = tap.asInstanceOf[js.Any], useTransform = useTransform.asInstanceOf[js.Any], useTransition = useTransition.asInstanceOf[js.Any], wheel = wheel.asInstanceOf[js.Any], zoom = zoom.asInstanceOf[js.Any])
   

@@ -1,7 +1,7 @@
 package typings.reactDragtastic.mod
 
 import typings.react.mod.ReactNode
-import typings.reactDragtastic.AnonEventsIsOver
+import typings.reactDragtastic.StateisOverbooleanwillAcc
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,13 +28,13 @@ trait DroppableProps extends js.Object {
     * For example, you may pass ['type', 'data'] to only rerender if these keys change.
     */
   var subscribeTo: js.UndefOr[js.Array[String] | Null] = js.undefined
-  def children(arg: State with AnonEventsIsOver): ReactNode
+  def children(arg: StateisOverbooleanwillAcc): ReactNode
 }
 
 object DroppableProps {
   @scala.inline
   def apply(
-    children: State with AnonEventsIsOver => ReactNode,
+    children: StateisOverbooleanwillAcc => ReactNode,
     accepts: Accepts = null,
     id: Id = null,
     onDragEnter: () => Unit = null,

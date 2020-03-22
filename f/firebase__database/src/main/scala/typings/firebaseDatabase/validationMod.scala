@@ -40,7 +40,7 @@ object validationMod extends js.Object {
   def validatePriority(fnName: String, argumentNumber: Double, priority: js.Any, optional: Boolean): Unit = js.native
   def validateRootPathString(fnName: String, argumentNumber: Double, pathString: String, optional: Boolean): Unit = js.native
   def validateString(fnName: String, argumentNumber: Double, string: js.Any, optional: Boolean): Unit = js.native
-  def validateUrl(fnName: String, argumentNumber: Double, parsedUrl: AnonPathRepoInfo): Unit = js.native
+  def validateUrl(fnName: String, argumentNumber: Double, parsedUrl: AnonRepoInfo): Unit = js.native
   def validateWritablePath(fnName: String, path: Path): Unit = js.native
 }
 

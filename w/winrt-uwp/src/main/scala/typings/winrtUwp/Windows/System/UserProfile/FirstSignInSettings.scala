@@ -1,6 +1,6 @@
 package typings.winrtUwp.Windows.System.UserProfile
 
-import typings.winrtUwp.AnonFirstSecond
+import typings.winrtUwp.AnonSecond
 import typings.winrtUwp.Windows.Foundation.Collections.IIterator
 import typings.winrtUwp.Windows.Foundation.Collections.IKeyValuePair
 import scala.scalajs.js
@@ -33,7 +33,7 @@ abstract class FirstSignInSettings () extends js.Object {
   /**
     * Splits the map view into two views.
     */
-  def split(): AnonFirstSecond = js.native
+  def split(): AnonSecond = js.native
 }
 
 /* static members */

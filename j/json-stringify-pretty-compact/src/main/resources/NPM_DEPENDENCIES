@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "json-stringify-pretty-compact" : "2.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "json-stringify-pretty-compact" : "2.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

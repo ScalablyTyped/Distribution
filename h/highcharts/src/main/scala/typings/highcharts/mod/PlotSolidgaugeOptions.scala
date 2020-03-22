@@ -8,10 +8,9 @@ import scala.scalajs.js.annotation._
 
 trait PlotSolidgaugeOptions extends js.Object {
   /**
-    * (Highcharts) Accessibility options for a series. Requires the
-    * accessibility module.
+    * (Highcharts) Accessibility options for a series.
     */
-  var accessibility: js.UndefOr[js.Object | PlotSolidgaugeAccessibilityOptions] = js.undefined
+  var accessibility: js.UndefOr[SeriesAccessibilityOptionsObject] = js.undefined
   /**
     * (Highmaps) Whether all areas of the map defined in `mapData` should be
     * rendered. If `true`, areas which don't correspond to a data point, are
@@ -44,7 +43,7 @@ trait PlotSolidgaugeOptions extends js.Object {
     * Due to poor performance, animation is disabled in old IE browsers for
     * several chart types.
     */
-  var animation: js.UndefOr[Boolean | AnimationOptionsObject | PlotSolidgaugeAnimationOptions] = js.undefined
+  var animation: js.UndefOr[Boolean | AnimationOptionsObject] = js.undefined
   /**
     * (Highcharts) Sets the color blending in the boost module.
     */
@@ -115,18 +114,19 @@ trait PlotSolidgaugeOptions extends js.Object {
   var compareBase: js.UndefOr[`0` | `100`] = js.undefined
   /**
     * (Highstock) Defines if comparison should start from the first point
-    * within the visible range or should start from the first point (see online
-    * documentation for example) the range. In other words, this flag
-    * determines if first point within the visible range will have 0%
-    * (`compareStart=true`) or should have been already calculated according to
-    * the previous point (`compareStart=false`).
+    * within the visible range or should start from the first point **before**
+    * the range.
+    *
+    * In other words, this flag determines if first point within the visible
+    * range will have 0% (`compareStart=true`) or should have been already
+    * calculated according to the previous point (`compareStart=false`).
     */
   var compareStart: js.UndefOr[Boolean] = js.undefined
   /**
     * (Gantt) Override Pathfinder connector options for a series. Requires
     * Highcharts Gantt to be loaded.
     */
-  var connectors: js.UndefOr[PlotSolidgaugeConnectorsOptions] = js.undefined
+  var connectors: js.UndefOr[SeriesConnectorsOptionsObject] = js.undefined
   /**
     * (Highcharts) You can set the cursor to "pointer" if you have click events
     * attached to the series, to signal to the user that the points and lines
@@ -150,12 +150,16 @@ trait PlotSolidgaugeOptions extends js.Object {
     * of the first point instance are copied over to the group point. This can
     * be altered through a custom `approximation` callback function.
     */
-  var dataGrouping: js.UndefOr[PlotSolidgaugeDataGroupingOptions] = js.undefined
+  var dataGrouping: js.UndefOr[DataGroupingOptionsObject] = js.undefined
   /**
     * (Highcharts) Data labels for the gauge. For gauges, the data labels are
     * enabled by default and shown in a bordered box below the point.
     */
   var dataLabels: js.UndefOr[DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject]] = js.undefined
+  /**
+    * (Highcharts, Highstock) Options for the series data sorting.
+    */
+  var dataSorting: js.UndefOr[DataSortingOptionsObject | PlotSolidgaugeDataSortingOptions] = js.undefined
   /**
     * (Highcharts) A description of the series to add to the screen reader
     * information about the series.
@@ -172,7 +176,7 @@ trait PlotSolidgaugeOptions extends js.Object {
     * hooks can also be attached to the series at run time using the
     * `Highcharts.addEvent` function.
     */
-  var events: js.UndefOr[PlotSolidgaugeEventsOptions] = js.undefined
+  var events: js.UndefOr[SeriesEventsOptionsObject] = js.undefined
   /**
     * (Highstock) Defines when to display a gap in the graph, together with the
     * gapUnit option.
@@ -247,15 +251,15 @@ trait PlotSolidgaugeOptions extends js.Object {
     * The series labels currently work with series types having a `graph` or an
     * `area`.
     */
-  var label: js.UndefOr[PlotSolidgaugeLabelOptions] = js.undefined
+  var label: js.UndefOr[SeriesLabelOptionsObject] = js.undefined
   /**
     * (Highstock) The line marks the last price from all points.
     */
-  var lastPrice: js.UndefOr[PlotSolidgaugeLastPriceOptions] = js.undefined
+  var lastPrice: js.UndefOr[SeriesLastPriceOptionsObject] = js.undefined
   /**
     * (Highstock) The line marks the last price from visible range of points.
     */
-  var lastVisiblePrice: js.UndefOr[PlotSolidgaugeLastVisiblePriceOptions] = js.undefined
+  var lastVisiblePrice: js.UndefOr[SeriesLastVisiblePriceOptionsObject] = js.undefined
   /**
     * (Highcharts, Highstock) Pixel width of the graph line.
     */
@@ -270,6 +274,10 @@ trait PlotSolidgaugeOptions extends js.Object {
     * Additionally, the value can be ":previous" to link to the previous
     * series. When two series are linked, only the first one appears in the
     * legend. Toggling the visibility of this also toggles the linked series.
+    *
+    * If master series uses data sorting and linked series does not have its
+    * own sorting definition, the linked series will be sorted in the same
+    * order as the master one.
     */
   var linkedTo: js.UndefOr[String] = js.undefined
   /**
@@ -296,7 +304,7 @@ trait PlotSolidgaugeOptions extends js.Object {
   /**
     * (Highcharts) Properties for each single point.
     */
-  var point: js.UndefOr[PlotSolidgaugePointOptions] = js.undefined
+  var point: js.UndefOr[PlotSeriesPointOptions] = js.undefined
   /**
     * (Highcharts) Same as accessibility.pointDescriptionFormatter, but for an
     * individual series. Overrides the chart wide configuration.
@@ -403,7 +411,7 @@ trait PlotSolidgaugeOptions extends js.Object {
     * single series. Properties are inherited from tooltip, but only the
     * following properties can be defined on a series level.
     */
-  var tooltip: js.UndefOr[PlotSolidgaugeTooltipOptions] = js.undefined
+  var tooltip: js.UndefOr[SeriesTooltipOptionsObject] = js.undefined
   /**
     * (Highstock) The parameter allows setting line series type and use OHLC
     * indicators. Data in OHLC format is required.
@@ -422,10 +430,10 @@ trait PlotSolidgaugeOptions extends js.Object {
 object PlotSolidgaugeOptions {
   @scala.inline
   def apply(
-    accessibility: js.Object | PlotSolidgaugeAccessibilityOptions = null,
+    accessibility: SeriesAccessibilityOptionsObject = null,
     allAreas: js.UndefOr[Boolean] = js.undefined,
     allowPointSelect: js.UndefOr[Boolean] = js.undefined,
-    animation: Boolean | AnimationOptionsObject | PlotSolidgaugeAnimationOptions = null,
+    animation: Boolean | AnimationOptionsObject = null,
     boostBlending: OptionsBoostBlendingValue = null,
     borderColor: ColorString | GradientColorObject | PatternObject = null,
     borderWidth: Int | Double = null,
@@ -437,29 +445,30 @@ object PlotSolidgaugeOptions {
     compare: String = null,
     compareBase: `0` | `100` = null,
     compareStart: js.UndefOr[Boolean] = js.undefined,
-    connectors: PlotSolidgaugeConnectorsOptions = null,
+    connectors: SeriesConnectorsOptionsObject = null,
     cursor: String | CursorValue = null,
-    dataGrouping: PlotSolidgaugeDataGroupingOptions = null,
+    dataGrouping: DataGroupingOptionsObject = null,
     dataLabels: DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject] = null,
+    dataSorting: DataSortingOptionsObject | PlotSolidgaugeDataSortingOptions = null,
     description: String = null,
     enableMouseTracking: js.UndefOr[Boolean] = js.undefined,
-    events: PlotSolidgaugeEventsOptions = null,
+    events: SeriesEventsOptionsObject = null,
     gapSize: Int | Double = null,
     gapUnit: OptionsGapUnitValue = null,
     includeInDataExport: js.UndefOr[Boolean] = js.undefined,
     innerRadius: Double | String = null,
     joinBy: String | js.Array[String] = null,
     keys: js.Array[String] = null,
-    label: PlotSolidgaugeLabelOptions = null,
-    lastPrice: PlotSolidgaugeLastPriceOptions = null,
-    lastVisiblePrice: PlotSolidgaugeLastVisiblePriceOptions = null,
+    label: SeriesLabelOptionsObject = null,
+    lastPrice: SeriesLastPriceOptionsObject = null,
+    lastVisiblePrice: SeriesLastVisiblePriceOptionsObject = null,
     lineWidth: Int | Double = null,
     linecap: OptionsLinecapValue = null,
     linkedTo: String = null,
     navigatorOptions: PlotSeriesOptions = null,
     opacity: Int | Double = null,
     overshoot: Int | Double = null,
-    point: PlotSolidgaugePointOptions = null,
+    point: PlotSeriesPointOptions = null,
     pointDescriptionFormatter: js.Function = null,
     pointInterval: Int | Double = null,
     pointIntervalUnit: OptionsPointIntervalUnitValue = null,
@@ -474,7 +483,7 @@ object PlotSolidgaugeOptions {
     skipKeyboardNavigation: js.UndefOr[Boolean] = js.undefined,
     stickyTracking: js.UndefOr[Boolean] = js.undefined,
     threshold: Int | Double = null,
-    tooltip: PlotSolidgaugeTooltipOptions = null,
+    tooltip: SeriesTooltipOptionsObject = null,
     useOhlcData: js.UndefOr[Boolean] = js.undefined,
     visible: js.UndefOr[Boolean] = js.undefined,
     zIndex: Int | Double = null
@@ -499,6 +508,7 @@ object PlotSolidgaugeOptions {
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
     if (dataGrouping != null) __obj.updateDynamic("dataGrouping")(dataGrouping.asInstanceOf[js.Any])
     if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
+    if (dataSorting != null) __obj.updateDynamic("dataSorting")(dataSorting.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (!js.isUndefined(enableMouseTracking)) __obj.updateDynamic("enableMouseTracking")(enableMouseTracking.asInstanceOf[js.Any])
     if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])

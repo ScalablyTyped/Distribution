@@ -5,7 +5,6 @@ import typings.ionicCore.alertInterfaceMod.AlertInput
 import typings.ionicCore.componentsMod._Global_.HTMLIonAlertElement
 import typings.ionicCore.ionicCoreStrings.ios
 import typings.ionicCore.ionicCoreStrings.md
-import typings.ionicCore.oldAnimationAnimationInterfaceMod.Animation
 import typings.ionicCore.overlaysInterfaceMod.OverlayEventDetail
 import typings.ionicCore.overlaysInterfaceMod.OverlayInterface
 import typings.ionicCore.stencilCoreMod.ComponentInterface
@@ -21,8 +20,6 @@ object alertMod extends js.Object {
     extends ComponentInterface
        with OverlayInterface {
     var activeId: js.UndefOr[js.Any] = js.native
-    @JSName("animation")
-    var animation_Alert: js.UndefOr[Animation] = js.native
     /**
       * If `true`, the alert will be dismissed when the backdrop is clicked.
       */

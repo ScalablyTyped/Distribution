@@ -20,6 +20,22 @@ object cathoQuantumComponents extends cathoQuantumProps {
   @scala.inline
   def Card: ComponentType[CardProps] = js.constructorOf[typings.cathoQuantum.cardMod.default].asInstanceOf[typings.react.mod.ComponentType[CardProps]]
   @scala.inline
+  def CardContent: ComponentType[CardContentProps[AnonTheme]] = typings.cathoQuantum.mod.Card.Content.asInstanceOf[typings.react.mod.ComponentType[CardContentProps[typings.cathoQuantum.AnonTheme]]]
+  @scala.inline
+  def CardDescription: ComponentType[CardDescriptionProps[AnonSmall]] = typings.cathoQuantum.mod.Card.Description.asInstanceOf[typings.react.mod.ComponentType[CardDescriptionProps[typings.cathoQuantum.AnonSmall]]]
+  @scala.inline
+  def CardFooter: ComponentType[CardFooterProps[AnonThemeAnonSpacingObject]] = typings.cathoQuantum.mod.Card.Footer.asInstanceOf[typings.react.mod.ComponentType[CardFooterProps[typings.cathoQuantum.AnonThemeAnonSpacingObject]]]
+  @scala.inline
+  def CardHeader: ComponentType[CardHeaderProps[AnonThemeAnonSpacingObject]] = typings.cathoQuantum.mod.Card.Header.asInstanceOf[typings.react.mod.ComponentType[CardHeaderProps[typings.cathoQuantum.AnonThemeAnonSpacingObject]]]
+  @scala.inline
+  def CardHeaderText: ComponentType[CardHeaderTextProps[js.Object]] = typings.cathoQuantum.mod.Card.HeaderText.asInstanceOf[typings.react.mod.ComponentType[CardHeaderTextProps[js.Object]]]
+  @scala.inline
+  def CardMedia: ComponentType[CardMediaProps[AnonClassName]] = typings.cathoQuantum.mod.Card.Media.asInstanceOf[typings.react.mod.ComponentType[CardMediaProps[typings.cathoQuantum.AnonClassName]]]
+  @scala.inline
+  def CardThumbnail: ComponentType[CardThumbnailProps[AnonAlt]] = typings.cathoQuantum.mod.Card.Thumbnail.asInstanceOf[typings.react.mod.ComponentType[CardThumbnailProps[typings.cathoQuantum.AnonAlt]]]
+  @scala.inline
+  def CardTitle: ComponentType[CardTitleProps[AnonSmallTheme]] = typings.cathoQuantum.mod.Card.Title.asInstanceOf[typings.react.mod.ComponentType[CardTitleProps[typings.cathoQuantum.AnonSmallTheme]]]
+  @scala.inline
   def Checkbox[T]: ComponentType[CheckboxProps[T]] = js.constructorOf[typings.cathoQuantum.mod.Checkbox[T]].asInstanceOf[typings.react.mod.ComponentType[CheckboxProps[T]]]
   @scala.inline
   def CheckboxGroup[T]: ComponentType[CheckboxGroupProps[T]] = js.constructorOf[typings.cathoQuantum.mod.CheckboxGroup[T]].asInstanceOf[typings.react.mod.ComponentType[CheckboxGroupProps[T]]]

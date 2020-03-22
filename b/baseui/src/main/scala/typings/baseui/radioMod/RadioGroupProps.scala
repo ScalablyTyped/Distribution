@@ -21,6 +21,8 @@ import scala.scalajs.js.annotation._
 
 trait RadioGroupProps extends js.Object {
   var align: js.UndefOr[horizontal | vertical] = js.undefined
+  var `aria-describedby`: js.UndefOr[String] = js.undefined
+  var `aria-errormessage`: js.UndefOr[String] = js.undefined
   var `aria-label`: js.UndefOr[String] = js.undefined
   var `aria-labelledby`: js.UndefOr[String] = js.undefined
   var autoFocus: js.UndefOr[Boolean] = js.undefined
@@ -43,6 +45,8 @@ object RadioGroupProps {
   @scala.inline
   def apply(
     align: horizontal | vertical = null,
+    `aria-describedby`: String = null,
+    `aria-errormessage`: String = null,
     `aria-label`: String = null,
     `aria-labelledby`: String = null,
     autoFocus: js.UndefOr[Boolean] = js.undefined,
@@ -62,6 +66,8 @@ object RadioGroupProps {
   ): RadioGroupProps = {
     val __obj = js.Dynamic.literal()
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
+    if (`aria-describedby` != null) __obj.updateDynamic("aria-describedby")(`aria-describedby`.asInstanceOf[js.Any])
+    if (`aria-errormessage` != null) __obj.updateDynamic("aria-errormessage")(`aria-errormessage`.asInstanceOf[js.Any])
     if (`aria-label` != null) __obj.updateDynamic("aria-label")(`aria-label`.asInstanceOf[js.Any])
     if (`aria-labelledby` != null) __obj.updateDynamic("aria-labelledby")(`aria-labelledby`.asInstanceOf[js.Any])
     if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.asInstanceOf[js.Any])

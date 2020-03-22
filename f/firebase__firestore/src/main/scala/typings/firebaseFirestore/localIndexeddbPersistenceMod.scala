@@ -363,7 +363,7 @@ object localIndexeddbPersistenceMod extends js.Object {
       */
     def buildStoragePrefix(databaseInfo: DatabaseInfo): String = js.native
     def clearPersistence(persistenceKey: String): js.Promise[Unit] = js.native
-    def createIndexedDbPersistence(options: AnonAllowTabSynchronizationClientId): js.Promise[IndexedDbPersistence] = js.native
+    def createIndexedDbPersistence(options: AnonClientId): js.Promise[IndexedDbPersistence] = js.native
     def getStore[Key /* <: IDBValidKey */, Value](txn: PersistenceTransaction, store: String): SimpleDbStore[Key, Value] = js.native
     def isAvailable(): Boolean = js.native
   }

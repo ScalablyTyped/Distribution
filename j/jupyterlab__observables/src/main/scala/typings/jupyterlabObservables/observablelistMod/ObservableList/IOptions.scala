@@ -1,6 +1,6 @@
 package typings.jupyterlabObservables.observablelistMod.ObservableList
 
-import typings.phosphorAlgorithm.iterMod.IterableOrArrayLike
+import typings.luminoAlgorithm.iterMod.IterableOrArrayLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,6 @@
 package typings.jupyterlabExtensionmanager.companionsMod
 
-import typings.jupyterlabServices.kernelKernelMod.Kernel.ISpecModel
+import typings.jupyterlabServices.restapiMod.ISpecModel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

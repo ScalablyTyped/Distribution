@@ -7,29 +7,17 @@ import scala.scalajs.js.annotation._
 trait AnonAltBroadcastStatus extends js.Object {
   /** Data format for the response. */
   var alt: js.UndefOr[String] = js.undefined
-  /** The broadcastStatus parameter filters the API response to only include broadcasts with the specified status. */
-  var broadcastStatus: js.UndefOr[String] = js.undefined
   /**
-    * The broadcastType parameter filters the API response to only include broadcasts with the specified type. This is only compatible with the mine filter
-    * for now.
+    * The broadcastStatus parameter identifies the state to which the broadcast is changing. Note that to transition a broadcast to either the testing or
+    * live state, the status.streamStatus must be active for the stream that the broadcast is bound to.
     */
-  var broadcastType: js.UndefOr[String] = js.undefined
+  var broadcastStatus: String
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
-  /**
-    * The id parameter specifies a comma-separated list of YouTube broadcast IDs that identify the broadcasts being retrieved. In a liveBroadcast resource,
-    * the id property specifies the broadcast's ID.
-    */
-  var id: js.UndefOr[String] = js.undefined
+  /** The id parameter specifies the unique ID of the broadcast that is transitioning to another status. */
+  var id: String
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
-  /** The maxResults parameter specifies the maximum number of items that should be returned in the result set. */
-  var maxResults: js.UndefOr[Double] = js.undefined
-  /**
-    * The mine parameter can be used to instruct the API to only return broadcasts owned by the authenticated user. Set the parameter value to true to only
-    * retrieve your own broadcasts.
-    */
-  var mine: js.UndefOr[Boolean] = js.undefined
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   /**
@@ -56,11 +44,6 @@ trait AnonAltBroadcastStatus extends js.Object {
     */
   var onBehalfOfContentOwnerChannel: js.UndefOr[String] = js.undefined
   /**
-    * The pageToken parameter identifies a specific page in the result set that should be returned. In an API response, the nextPageToken and prevPageToken
-    * properties identify other pages that could be retrieved.
-    */
-  var pageToken: js.UndefOr[String] = js.undefined
-  /**
     * The part parameter specifies a comma-separated list of one or more liveBroadcast resource properties that the API response will include. The part names
     * that you can include in the parameter value are id, snippet, contentDetails, and status.
     */
@@ -79,36 +62,26 @@ trait AnonAltBroadcastStatus extends js.Object {
 object AnonAltBroadcastStatus {
   @scala.inline
   def apply(
+    broadcastStatus: String,
+    id: String,
     part: String,
     alt: String = null,
-    broadcastStatus: String = null,
-    broadcastType: String = null,
     fields: String = null,
-    id: String = null,
     key: String = null,
-    maxResults: Int | Double = null,
-    mine: js.UndefOr[Boolean] = js.undefined,
     oauth_token: String = null,
     onBehalfOfContentOwner: String = null,
     onBehalfOfContentOwnerChannel: String = null,
-    pageToken: String = null,
     prettyPrint: js.UndefOr[Boolean] = js.undefined,
     quotaUser: String = null,
     userIp: String = null
   ): AnonAltBroadcastStatus = {
-    val __obj = js.Dynamic.literal(part = part.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(broadcastStatus = broadcastStatus.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], part = part.asInstanceOf[js.Any])
     if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (broadcastStatus != null) __obj.updateDynamic("broadcastStatus")(broadcastStatus.asInstanceOf[js.Any])
-    if (broadcastType != null) __obj.updateDynamic("broadcastType")(broadcastType.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
-    if (!js.isUndefined(mine)) __obj.updateDynamic("mine")(mine.asInstanceOf[js.Any])
     if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
     if (onBehalfOfContentOwner != null) __obj.updateDynamic("onBehalfOfContentOwner")(onBehalfOfContentOwner.asInstanceOf[js.Any])
     if (onBehalfOfContentOwnerChannel != null) __obj.updateDynamic("onBehalfOfContentOwnerChannel")(onBehalfOfContentOwnerChannel.asInstanceOf[js.Any])
-    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
     if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
     if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
     if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])

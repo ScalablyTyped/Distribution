@@ -1,6 +1,6 @@
 package typings.stripe.mod.orders
 
-import typings.stripe.AnonCanceledFulfilled
+import typings.stripe.AnonFulfilled
 import typings.stripe.mod.IDateFilter
 import typings.stripe.mod.IListOptionsCreated
 import scala.scalajs.js
@@ -23,7 +23,7 @@ trait IOrderListOptions extends IListOptionsCreated {
   /**
     * Filter orders based on when they were "paid", "fulfilled", "canceled", or "returned"
     */
-  var status_transitions: js.UndefOr[AnonCanceledFulfilled] = js.undefined
+  var status_transitions: js.UndefOr[AnonFulfilled] = js.undefined
 }
 
 object IOrderListOptions {
@@ -38,7 +38,7 @@ object IOrderListOptions {
     include: js.Array[String] = null,
     limit: Int | Double = null,
     starting_after: String = null,
-    status_transitions: AnonCanceledFulfilled = null
+    status_transitions: AnonFulfilled = null
   ): IOrderListOptions = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
     if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])

@@ -26,9 +26,37 @@ trait ArmOperand extends js.Object
 
 object ArmOperand {
   @scala.inline
-  def ArmImmOperand(
+  def ArmMemOperand(
     subtracted: Boolean,
-    `type`: imm,
+    `type`: mem,
+    value: AnonDisp,
+    shift: AnonType = null,
+    vectorIndex: Int | Double = null
+  ): ArmOperand = {
+    val __obj = js.Dynamic.literal(subtracted = subtracted.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (shift != null) __obj.updateDynamic("shift")(shift.asInstanceOf[js.Any])
+    if (vectorIndex != null) __obj.updateDynamic("vectorIndex")(vectorIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ArmOperand]
+  }
+  @scala.inline
+  def ArmPimmOperand(
+    subtracted: Boolean,
+    `type`: pimm,
+    value: Double,
+    shift: AnonType = null,
+    vectorIndex: Int | Double = null
+  ): ArmOperand = {
+    val __obj = js.Dynamic.literal(subtracted = subtracted.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (shift != null) __obj.updateDynamic("shift")(shift.asInstanceOf[js.Any])
+    if (vectorIndex != null) __obj.updateDynamic("vectorIndex")(vectorIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ArmOperand]
+  }
+  @scala.inline
+  def ArmCimmOperand(
+    subtracted: Boolean,
+    `type`: cimm,
     value: Double,
     shift: AnonType = null,
     vectorIndex: Int | Double = null
@@ -54,52 +82,24 @@ object ArmOperand {
     __obj.asInstanceOf[ArmOperand]
   }
   @scala.inline
+  def ArmImmOperand(
+    subtracted: Boolean,
+    `type`: imm,
+    value: Double,
+    shift: AnonType = null,
+    vectorIndex: Int | Double = null
+  ): ArmOperand = {
+    val __obj = js.Dynamic.literal(subtracted = subtracted.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (shift != null) __obj.updateDynamic("shift")(shift.asInstanceOf[js.Any])
+    if (vectorIndex != null) __obj.updateDynamic("vectorIndex")(vectorIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ArmOperand]
+  }
+  @scala.inline
   def ArmFpOperand(
     subtracted: Boolean,
     `type`: fp,
     value: Double,
-    shift: AnonType = null,
-    vectorIndex: Int | Double = null
-  ): ArmOperand = {
-    val __obj = js.Dynamic.literal(subtracted = subtracted.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (shift != null) __obj.updateDynamic("shift")(shift.asInstanceOf[js.Any])
-    if (vectorIndex != null) __obj.updateDynamic("vectorIndex")(vectorIndex.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ArmOperand]
-  }
-  @scala.inline
-  def ArmPimmOperand(
-    subtracted: Boolean,
-    `type`: pimm,
-    value: Double,
-    shift: AnonType = null,
-    vectorIndex: Int | Double = null
-  ): ArmOperand = {
-    val __obj = js.Dynamic.literal(subtracted = subtracted.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (shift != null) __obj.updateDynamic("shift")(shift.asInstanceOf[js.Any])
-    if (vectorIndex != null) __obj.updateDynamic("vectorIndex")(vectorIndex.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ArmOperand]
-  }
-  @scala.inline
-  def ArmRegOperand(
-    subtracted: Boolean,
-    `type`: reg,
-    value: ArmRegister,
-    shift: AnonType = null,
-    vectorIndex: Int | Double = null
-  ): ArmOperand = {
-    val __obj = js.Dynamic.literal(subtracted = subtracted.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (shift != null) __obj.updateDynamic("shift")(shift.asInstanceOf[js.Any])
-    if (vectorIndex != null) __obj.updateDynamic("vectorIndex")(vectorIndex.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ArmOperand]
-  }
-  @scala.inline
-  def ArmMemOperand(
-    subtracted: Boolean,
-    `type`: mem,
-    value: AnonBaseDisp,
     shift: AnonType = null,
     vectorIndex: Int | Double = null
   ): ArmOperand = {
@@ -124,10 +124,10 @@ object ArmOperand {
     __obj.asInstanceOf[ArmOperand]
   }
   @scala.inline
-  def ArmCimmOperand(
+  def ArmRegOperand(
     subtracted: Boolean,
-    `type`: cimm,
-    value: Double,
+    `type`: reg,
+    value: ArmRegister,
     shift: AnonType = null,
     vectorIndex: Int | Double = null
   ): ArmOperand = {

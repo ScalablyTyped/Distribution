@@ -1,6 +1,6 @@
 package typings.popperJs.mod
 
-import typings.popperJs.AnonName
+import typings.popperJs.BaseModifiernamestring
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -36,7 +36,7 @@ class default protected () extends Popper {
 @js.native
 object default extends js.Object {
   var Defaults: PopperOptions = js.native
-  var modifiers: js.Array[BaseModifier with AnonName] = js.native
+  var modifiers: js.Array[BaseModifiernamestring] = js.native
   var placements: js.Array[Placement] = js.native
 }
 

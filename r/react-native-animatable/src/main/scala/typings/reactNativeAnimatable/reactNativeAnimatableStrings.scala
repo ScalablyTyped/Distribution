@@ -9,9 +9,6 @@ import scala.scalajs.js.annotation._
 
 object reactNativeAnimatableStrings {
   @js.native
-  sealed trait AnimatableAnimationMethods extends js.Object
-  
-  @js.native
   sealed trait alternate extends Direction
   
   @js.native
@@ -299,8 +296,6 @@ object reactNativeAnimatableStrings {
   @js.native
   sealed trait zoomOutUp extends Animation
   
-  @scala.inline
-  def AnimatableAnimationMethods: AnimatableAnimationMethods = "AnimatableAnimationMethods".asInstanceOf[AnimatableAnimationMethods]
   @scala.inline
   def alternate: alternate = "alternate".asInstanceOf[alternate]
   @scala.inline

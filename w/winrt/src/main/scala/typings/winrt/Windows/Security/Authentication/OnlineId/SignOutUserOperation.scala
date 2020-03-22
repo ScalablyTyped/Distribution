@@ -1,6 +1,6 @@
 package typings.winrt.Windows.Security.Authentication.OnlineId
 
-import typings.winrt.AnonCompletedGetResultsAny
+import typings.winrt.AnonCompletedGetResults
 import typings.winrt.Windows.Foundation.AsyncStatus
 import typings.winrt.Windows.Foundation.IAsyncAction
 import scala.scalajs.js
@@ -14,7 +14,7 @@ class SignOutUserOperation () extends IAsyncAction {
   override var errorCode: Double = js.native
   /* CompleteClass */
   override var id: Double = js.native
-  var operation: AnonCompletedGetResultsAny = js.native
+  var operation: AnonCompletedGetResults = js.native
   /* CompleteClass */
   override var status: AsyncStatus = js.native
   /* CompleteClass */

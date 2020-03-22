@@ -25,7 +25,7 @@ trait DescribePrefixListsRequest extends js.Object {
   /**
     * One or more prefix list IDs.
     */
-  var PrefixListIds: js.UndefOr[ValueStringList] = js.native
+  var PrefixListIds: js.UndefOr[PrefixListResourceIdStringList] = js.native
 }
 
 object DescribePrefixListsRequest {
@@ -35,7 +35,7 @@ object DescribePrefixListsRequest {
     Filters: FilterList = null,
     MaxResults: Int | scala.Double = null,
     NextToken: String = null,
-    PrefixListIds: ValueStringList = null
+    PrefixListIds: PrefixListResourceIdStringList = null
   ): DescribePrefixListsRequest = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])

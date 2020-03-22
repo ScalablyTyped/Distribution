@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "pg-packet-stream" : "1.1.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "pg-packet-stream" : "1.1.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,7 +1,6 @@
 package typings.vscodeLanguageclient.clientMod
 
 import typings.vscodeLanguageserverProtocol.protocolMod.ClientCapabilities
-import typings.vscodeLanguageserverProtocol.protocolMod.DocumentSelector
 import typings.vscodeLanguageserverProtocol.protocolMod.InitializeParams
 import typings.vscodeLanguageserverProtocol.protocolMod.ServerCapabilities
 import scala.scalajs.js
@@ -9,7 +8,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait DynamicFeature[T] extends js.Object {
+trait DynamicFeature[RO] extends js.Object {
   /**
     * Called to fill the initialize params.
     *
@@ -31,7 +30,7 @@ trait DynamicFeature[T] extends js.Object {
     * @param capabilities The client capabilities to fill.
     */
   def fillClientCapabilities(capabilities: ClientCapabilities): Unit = js.native
-  def initialize(capabilities: ServerCapabilities): Unit = js.native
+  def initialize(capabilities: ServerCapabilities[_]): Unit = js.native
   /**
     * Initialize the feature. This method is called on a feature instance
     * when the client has successfully received the initalize request from
@@ -42,14 +41,17 @@ trait DynamicFeature[T] extends js.Object {
     * @param documentSelector the document selector pass to the client's constuctor.
     *  May be `undefined` if the client was created without a selector.
     */
-  def initialize(capabilities: ServerCapabilities, documentSelector: DocumentSelector): Unit = js.native
+  def initialize(
+    capabilities: ServerCapabilities[_],
+    documentSelector: typings.vscodeLanguageserverProtocol.protocolMod.DocumentSelector
+  ): Unit = js.native
   /**
     * Is called when the server send a register request for the given message.
     *
     * @param message the message to register for.
     * @param data additional registration data as defined in the protocol.
     */
-  def register(message: typings.vscodeJsonrpc.messagesMod.MessageType, data: RegistrationData[T]): Unit = js.native
+  def register(message: typings.vscodeJsonrpc.messagesMod.MessageType, data: RegistrationData[RO]): Unit = js.native
   /**
     * Is called when the server wants to unregister a feature.
     *

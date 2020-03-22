@@ -1,13 +1,15 @@
 package typings.exceljs.mod
 
+import typings.exceljs.PartialPageSetup
+import typings.exceljs.PartialWorksheetPropertie
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AddWorksheetOptions extends js.Object {
-  var pageSetup: Partial[PageSetup]
-  var properties: Partial[WorksheetProperties]
+  var pageSetup: PartialPageSetup
+  var properties: PartialWorksheetPropertie
   var state: WorksheetState
   var views: js.Array[Partial[WorksheetView]]
 }
@@ -15,8 +17,8 @@ trait AddWorksheetOptions extends js.Object {
 object AddWorksheetOptions {
   @scala.inline
   def apply(
-    pageSetup: Partial[PageSetup],
-    properties: Partial[WorksheetProperties],
+    pageSetup: PartialPageSetup,
+    properties: PartialWorksheetPropertie,
     state: WorksheetState,
     views: js.Array[Partial[WorksheetView]]
   ): AddWorksheetOptions = {

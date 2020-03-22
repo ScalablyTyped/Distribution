@@ -39,9 +39,6 @@ object reactVirtualizedStrings {
   sealed trait horizontal extends ScrollDirection
   
   @js.native
-  sealed trait rowIndex extends js.Object
-  
-  @js.native
   sealed trait rowgroup extends js.Object
   
   @js.native
@@ -70,8 +67,6 @@ object reactVirtualizedStrings {
   def grid: grid = "grid".asInstanceOf[grid]
   @scala.inline
   def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
-  @scala.inline
-  def rowIndex: rowIndex = "rowIndex".asInstanceOf[rowIndex]
   @scala.inline
   def rowgroup: rowgroup = "rowgroup".asInstanceOf[rowgroup]
   @scala.inline

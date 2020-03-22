@@ -1,9 +1,9 @@
 package typings.victory.mod
 
 import typings.react.mod.ReactElement
-import typings.victory.AnonXY
-import typings.victory.AnonXYBoolean
-import typings.victory.AnonXYD3ScaleScalePropType
+import typings.victory.Anon1
+import typings.victory.AnonXBoolean
+import typings.victory.AnonY
 import typings.victory.victoryStrings.data
 import typings.victory.victoryStrings.labels
 import typings.victory.victoryStrings.parent
@@ -103,13 +103,13 @@ object VictoryLineProps {
     label: String | (js.Function1[/* data */ js.Any, String]) = null,
     labelComponent: ReactElement = null,
     labels: (js.Array[Double | String]) | js.Function = null,
-    maxDomain: Double | AnonXY = null,
-    minDomain: Double | AnonXY = null,
+    maxDomain: Double | AnonY = null,
+    minDomain: Double | AnonY = null,
     name: String = null,
     padding: PaddingProps = null,
     samples: Int | Double = null,
-    scale: ScalePropType | D3Scale | AnonXYD3ScaleScalePropType = null,
-    singleQuadrantDomainPadding: Boolean | AnonXYBoolean = null,
+    scale: ScalePropType | D3Scale | Anon1 = null,
+    singleQuadrantDomainPadding: Boolean | AnonXBoolean = null,
     sortKey: String | js.Array[String] | js.Function = null,
     standalone: js.UndefOr[Boolean] = js.undefined,
     style: VictoryStyleInterface = null,

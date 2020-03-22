@@ -1,6 +1,6 @@
 package typings.baiduApp.swan
 
-import typings.baiduApp.AnonWidth
+import typings.baiduApp.AnonWidthString
 import typings.baiduApp.baiduAppStrings.bottom
 import typings.baiduApp.baiduAppStrings.center
 import typings.baiduApp.baiduAppStrings.left
@@ -212,7 +212,7 @@ trait CanvasContext extends js.Object {
   		 * 测量文本尺寸信息，目前仅返回文本宽度。同步接口。
   		 * @param text 要测量的文本
   		 */
-  def measureText(text: String): AnonWidth = js.native
+  def measureText(text: String): AnonWidthString = js.native
   /**
   		 * 把路径移动到画布中的指定点，但不创建线条。
   		 *

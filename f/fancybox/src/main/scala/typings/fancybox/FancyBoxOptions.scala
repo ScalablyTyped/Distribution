@@ -212,7 +212,7 @@ trait FancyBoxOptions extends js.Object {
     * Custom CSS class for slide element
     */
   var slideClass: js.UndefOr[String] = js.undefined
-  var slideShow: js.UndefOr[Anon_AutoStart] = js.undefined
+  var slideShow: js.UndefOr[AnonAutoStart_] = js.undefined
   /**
     * Should display close button (using `btnTpl.smallBtn` template) over the content
     * Can be true, false, "auto"
@@ -320,7 +320,7 @@ object FancyBoxOptions {
     preventCaptionOverlap: js.UndefOr[Boolean] = js.undefined,
     protect: js.UndefOr[Boolean] = js.undefined,
     slideClass: String = null,
-    slideShow: Anon_AutoStart = null,
+    slideShow: AnonAutoStart_ = null,
     smallBtn: Boolean | auto = null,
     spinnerTpl: String = null,
     thumbs: FancyThumbsOptions = null,

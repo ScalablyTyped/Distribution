@@ -1,7 +1,7 @@
 package typings.reactBigScheduler.mod
 
 import typings.moment.mod.Moment
-import typings.reactBigScheduler.AnonCalendarFormat
+import typings.reactBigScheduler.AnonCall
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ class SchedulerData protected () extends js.Object {
     isEventPerspective: js.UndefOr[Boolean],
     newConfig: js.UndefOr[SchedulerDataConfig],
     newBehaviours: js.UndefOr[js.Object],
-    localeMoment: js.UndefOr[AnonCalendarFormat]
+    localeMoment: js.UndefOr[AnonCall]
   ) = this()
   var cellUnit: CellUnits = js.native
   var startDate: String = js.native

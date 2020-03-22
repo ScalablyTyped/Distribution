@@ -1,7 +1,7 @@
 package typings.antd.actionButtonMod
 
-import typings.antd.buttonButtonMod.ButtonProps
 import typings.antd.buttonButtonMod.ButtonType
+import typings.antd.buttonButtonMod.NativeButtonProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait ActionButtonProps extends js.Object {
   var actionFn: js.UndefOr[js.Function1[/* repeated */ js.Any, _ | js.Thenable[_]]] = js.undefined
   var autoFocus: js.UndefOr[Boolean] = js.undefined
-  var buttonProps: js.UndefOr[ButtonProps] = js.undefined
+  var buttonProps: js.UndefOr[NativeButtonProps] = js.undefined
   var closeModal: js.Function
   var `type`: js.UndefOr[ButtonType] = js.undefined
 }
@@ -20,7 +20,7 @@ object ActionButtonProps {
     closeModal: js.Function,
     actionFn: /* repeated */ js.Any => _ | js.Thenable[_] = null,
     autoFocus: js.UndefOr[Boolean] = js.undefined,
-    buttonProps: ButtonProps = null,
+    buttonProps: NativeButtonProps = null,
     `type`: ButtonType = null
   ): ActionButtonProps = {
     val __obj = js.Dynamic.literal(closeModal = closeModal.asInstanceOf[js.Any])

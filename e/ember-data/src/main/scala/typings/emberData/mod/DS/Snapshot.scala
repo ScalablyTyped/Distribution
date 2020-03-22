@@ -1,6 +1,6 @@
 package typings.emberData.mod.DS
 
-import typings.emberData.AnonFalse
+import typings.emberData.Anon0
 import typings.emberData.AnonId
 import typings.emberData.AnonIds
 import typings.emberData.mod.AttributeMeta
@@ -92,10 +92,10 @@ class Snapshot[K /* <: String */] () extends js.Object {
   ] */](keyName: L): js.UndefOr[js.Array[Snapshot[_]]] = js.native
   def hasMany[L /* <: RelationshipsFor[
     /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
-  ] */](keyName: L, options: AnonFalse): js.UndefOr[js.Array[Snapshot[_]]] = js.native
+  ] */](keyName: L, options: Anon0): js.UndefOr[js.Array[String]] = js.native
   def hasMany[L /* <: RelationshipsFor[
     /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
-  ] */](keyName: L, options: AnonIds): js.UndefOr[js.Array[String]] = js.native
+  ] */](keyName: L, options: AnonIds): js.UndefOr[js.Array[Snapshot[_]]] = js.native
   /**
     * Serializes the snapshot using the serializer for the model.
     */

@@ -42,24 +42,8 @@ object ResponseObject {
     __obj.asInstanceOf[ResponseObject]
   }
   @scala.inline
-  def RankingsResponseObject(
-    ap: Double,
-    ccwm: Double,
-    division: String,
-    dpr: Double,
-    losses: Double,
-    max_score: Double,
-    opr: Double,
-    rank: Double,
-    sku: String,
-    sp: Double,
-    team: String,
-    ties: Double,
-    trsp: Double,
-    wins: Double,
-    wp: Double
-  ): ResponseObject = {
-    val __obj = js.Dynamic.literal(ap = ap.asInstanceOf[js.Any], ccwm = ccwm.asInstanceOf[js.Any], division = division.asInstanceOf[js.Any], dpr = dpr.asInstanceOf[js.Any], losses = losses.asInstanceOf[js.Any], max_score = max_score.asInstanceOf[js.Any], opr = opr.asInstanceOf[js.Any], rank = rank.asInstanceOf[js.Any], sku = sku.asInstanceOf[js.Any], sp = sp.asInstanceOf[js.Any], team = team.asInstanceOf[js.Any], ties = ties.asInstanceOf[js.Any], trsp = trsp.asInstanceOf[js.Any], wins = wins.asInstanceOf[js.Any], wp = wp.asInstanceOf[js.Any])
+  def SeasonRankingsResponseObject(program: String, season: String, team: String, vrating: Double, vrating_rank: Double): ResponseObject = {
+    val __obj = js.Dynamic.literal(program = program.asInstanceOf[js.Any], season = season.asInstanceOf[js.Any], team = team.asInstanceOf[js.Any], vrating = vrating.asInstanceOf[js.Any], vrating_rank = vrating_rank.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ResponseObject]
   }
@@ -86,6 +70,28 @@ object ResponseObject {
     __obj.asInstanceOf[ResponseObject]
   }
   @scala.inline
+  def RankingsResponseObject(
+    ap: Double,
+    ccwm: Double,
+    division: String,
+    dpr: Double,
+    losses: Double,
+    max_score: Double,
+    opr: Double,
+    rank: Double,
+    sku: String,
+    sp: Double,
+    team: String,
+    ties: Double,
+    trsp: Double,
+    wins: Double,
+    wp: Double
+  ): ResponseObject = {
+    val __obj = js.Dynamic.literal(ap = ap.asInstanceOf[js.Any], ccwm = ccwm.asInstanceOf[js.Any], division = division.asInstanceOf[js.Any], dpr = dpr.asInstanceOf[js.Any], losses = losses.asInstanceOf[js.Any], max_score = max_score.asInstanceOf[js.Any], opr = opr.asInstanceOf[js.Any], rank = rank.asInstanceOf[js.Any], sku = sku.asInstanceOf[js.Any], sp = sp.asInstanceOf[js.Any], team = team.asInstanceOf[js.Any], ties = ties.asInstanceOf[js.Any], trsp = trsp.asInstanceOf[js.Any], wins = wins.asInstanceOf[js.Any], wp = wp.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[ResponseObject]
+  }
+  @scala.inline
   def SkillsResponseObject(
     attempts: Double,
     program: String,
@@ -102,12 +108,6 @@ object ResponseObject {
   @scala.inline
   def AwardsResponseObject(name: String, order: Double, qualifies: js.Array[String], sku: String, team: String): ResponseObject = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], order = order.asInstanceOf[js.Any], qualifies = qualifies.asInstanceOf[js.Any], sku = sku.asInstanceOf[js.Any], team = team.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[ResponseObject]
-  }
-  @scala.inline
-  def SeasonRankingsResponseObject(program: String, season: String, team: String, vrating: Double, vrating_rank: Double): ResponseObject = {
-    val __obj = js.Dynamic.literal(program = program.asInstanceOf[js.Any], season = season.asInstanceOf[js.Any], team = team.asInstanceOf[js.Any], vrating = vrating.asInstanceOf[js.Any], vrating_rank = vrating_rank.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ResponseObject]
   }

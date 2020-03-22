@@ -1,8 +1,8 @@
 package typings.ionicCore.navInterfaceMod
 
+import typings.ionicCore.animationInterfaceMod.Animation
 import typings.ionicCore.mod.FrameworkDelegate
 import typings.ionicCore.mod.Mode
-import typings.ionicCore.oldAnimationAnimationInterfaceMod.Animation
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,7 +18,7 @@ object NavOptions {
   @scala.inline
   def apply(
     animated: js.UndefOr[Boolean] = js.undefined,
-    animationBuilder: (/* Animation */ Animation, /* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => js.Promise[Animation] = null,
+    animationBuilder: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation = null,
     deepWait: js.UndefOr[Boolean] = js.undefined,
     delegate: FrameworkDelegate = null,
     direction: NavDirection = null,
@@ -34,7 +34,7 @@ object NavOptions {
   ): NavOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.asInstanceOf[js.Any])
-    if (animationBuilder != null) __obj.updateDynamic("animationBuilder")(js.Any.fromFunction3(animationBuilder))
+    if (animationBuilder != null) __obj.updateDynamic("animationBuilder")(js.Any.fromFunction2(animationBuilder))
     if (!js.isUndefined(deepWait)) __obj.updateDynamic("deepWait")(deepWait.asInstanceOf[js.Any])
     if (delegate != null) __obj.updateDynamic("delegate")(delegate.asInstanceOf[js.Any])
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])

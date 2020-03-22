@@ -1,6 +1,6 @@
 package typings.primereact.pickListItemMod
 
-import typings.primereact.AnonOriginalEventValue
+import typings.primereact.AnonValue
 import typings.react.mod._Global_.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait PickListItemProps extends js.Object {
   var className: js.UndefOr[String] = js.undefined
-  var onClick: js.UndefOr[js.Function1[/* e */ AnonOriginalEventValue, Unit]] = js.undefined
+  var onClick: js.UndefOr[js.Function1[/* e */ AnonValue, Unit]] = js.undefined
   var selected: js.UndefOr[Boolean] = js.undefined
   var template: js.UndefOr[js.Function1[/* item */ js.Any, js.UndefOr[Element]]] = js.undefined
   var value: js.UndefOr[js.Any] = js.undefined
@@ -18,7 +18,7 @@ object PickListItemProps {
   @scala.inline
   def apply(
     className: String = null,
-    onClick: /* e */ AnonOriginalEventValue => Unit = null,
+    onClick: /* e */ AnonValue => Unit = null,
     selected: js.UndefOr[Boolean] = js.undefined,
     template: /* item */ js.Any => js.UndefOr[Element] = null,
     value: js.Any = null

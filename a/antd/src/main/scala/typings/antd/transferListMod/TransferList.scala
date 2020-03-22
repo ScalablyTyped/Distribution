@@ -45,7 +45,6 @@ trait TransferList
     filterValue: String,
     filteredItems: js.Array[TransferItem],
     notFoundContent: ReactNode,
-    bodyDom: ReactNode,
     filteredRenderItems: js.Array[RenderedItem],
     checkedKeys: js.Array[String]
   ): ReactNode = js.native
@@ -55,7 +54,6 @@ trait TransferList
     filterValue: String,
     filteredItems: js.Array[TransferItem],
     notFoundContent: ReactNode,
-    bodyDom: ReactNode,
     filteredRenderItems: js.Array[RenderedItem],
     checkedKeys: js.Array[String],
     renderList: RenderListFunction
@@ -66,7 +64,6 @@ trait TransferList
     filterValue: String,
     filteredItems: js.Array[TransferItem],
     notFoundContent: ReactNode,
-    bodyDom: ReactNode,
     filteredRenderItems: js.Array[RenderedItem],
     checkedKeys: js.Array[String],
     renderList: RenderListFunction,
@@ -78,13 +75,13 @@ trait TransferList
     filterValue: String,
     filteredItems: js.Array[TransferItem],
     notFoundContent: ReactNode,
-    bodyDom: ReactNode,
     filteredRenderItems: js.Array[RenderedItem],
     checkedKeys: js.Array[String],
     renderList: RenderListFunction,
     showSearch: Boolean,
     disabled: Boolean
   ): ReactNode = js.native
+  def getSelectAllLabel(selectedCount: Double, totalCount: Double): ReactNode = js.native
   def handleClear(): Unit = js.native
   def handleFilter(e: ChangeEvent[HTMLInputElement]): Unit = js.native
   def matchFilter(text: String, item: TransferItem): Boolean = js.native

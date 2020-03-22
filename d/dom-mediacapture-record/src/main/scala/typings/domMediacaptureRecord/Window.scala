@@ -11,7 +11,7 @@ trait Window extends js.Object {
     /* eventInitDict */ BlobEventInit, 
     typings.domMediacaptureRecord.BlobEvent
   ]
-  var MediaRecorder: TypeofClassMediaRecorder
+  var MediaRecorder: TypeofMediaRecorder
   var MediaRecorderErrorEvent: Instantiable2[
     /* type */ String, 
     /* eventInitDict */ MediaRecorderErrorEventInit, 
@@ -23,7 +23,7 @@ object Window {
   @scala.inline
   def apply(
     BlobEvent: Instantiable2[/* type */ String, /* eventInitDict */ BlobEventInit, BlobEvent],
-    MediaRecorder: TypeofClassMediaRecorder,
+    MediaRecorder: TypeofMediaRecorder,
     MediaRecorderErrorEvent: Instantiable2[
       /* type */ String, 
       /* eventInitDict */ MediaRecorderErrorEventInit, 

@@ -1,7 +1,7 @@
 
 # Scala.js typings for ractive
 
-Typings are for version 1.3.10
+Typings are for version 1.3.11
 
 ## Library description:
 Next-generation DOM manipulation

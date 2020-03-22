@@ -24,19 +24,10 @@ object jestJasmine2Strings {
   sealed trait get extends js.Object
   
   @js.native
-  sealed trait getResult extends js.Object
-  
-  @js.native
-  sealed trait parentSuite extends js.Object
-  
-  @js.native
   sealed trait passed extends js.Object
   
   @js.native
   sealed trait pending extends js.Object
-  
-  @js.native
-  sealed trait result extends js.Object
   
   @js.native
   sealed trait set extends js.Object
@@ -63,15 +54,9 @@ object jestJasmine2Strings {
   @scala.inline
   def get: get = "get".asInstanceOf[get]
   @scala.inline
-  def getResult: getResult = "getResult".asInstanceOf[getResult]
-  @scala.inline
-  def parentSuite: parentSuite = "parentSuite".asInstanceOf[parentSuite]
-  @scala.inline
   def passed: passed = "passed".asInstanceOf[passed]
   @scala.inline
   def pending: pending = "pending".asInstanceOf[pending]
-  @scala.inline
-  def result: result = "result".asInstanceOf[result]
   @scala.inline
   def set: set = "set".asInstanceOf[set]
   @scala.inline

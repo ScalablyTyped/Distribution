@@ -1,8 +1,8 @@
 package typings.blueprintjsCore.mod
 
 import org.scalablytyped.runtime.Instantiable1
+import typings.blueprintjsCore.PartialIOverflowListPropsClassName
 import typings.blueprintjsCore.overflowListMod.IOverflowListProps
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ class OverflowList[T] ()
 @JSImport("@blueprintjs/core", "OverflowList")
 @js.native
 object OverflowList extends js.Object {
-  var defaultProps: Partial[IOverflowListProps[_]] = js.native
+  var defaultProps: PartialIOverflowListPropsClassName = js.native
   var displayName: String = js.native
   def ofType[T](): Instantiable1[
     /* props */ IOverflowListProps[T], 

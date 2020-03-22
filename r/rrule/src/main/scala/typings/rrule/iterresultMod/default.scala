@@ -1,9 +1,9 @@
 package typings.rrule.iterresultMod
 
+import typings.rrule.PartialIterArgs
 import typings.rrule.typesMod.IterResultType
 import typings.rrule.typesMod.QueryMethodTypes
 import typings.std.Date
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,11 +11,11 @@ import scala.scalajs.js.annotation._
 @JSImport("rrule/dist/esm/src/iterresult", JSImport.Default)
 @js.native
 class default[M /* <: QueryMethodTypes */] protected () extends IterResult[M] {
-  def this(method: M, args: Partial[IterArgs]) = this()
+  def this(method: M, args: PartialIterArgs) = this()
   /* CompleteClass */
   override var _result: js.Array[Date] = js.native
   /* CompleteClass */
-  override val args: Partial[IterArgs] = js.native
+  override val args: PartialIterArgs = js.native
   /* CompleteClass */
   override val maxDate: Date | Null = js.native
   /* CompleteClass */

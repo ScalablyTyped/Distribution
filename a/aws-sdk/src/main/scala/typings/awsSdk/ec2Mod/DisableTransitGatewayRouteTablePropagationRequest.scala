@@ -13,18 +13,18 @@ trait DisableTransitGatewayRouteTablePropagationRequest extends js.Object {
   /**
     * The ID of the attachment.
     */
-  var TransitGatewayAttachmentId: String = js.native
+  var TransitGatewayAttachmentId: typings.awsSdk.ec2Mod.TransitGatewayAttachmentId = js.native
   /**
     * The ID of the propagation route table.
     */
-  var TransitGatewayRouteTableId: String = js.native
+  var TransitGatewayRouteTableId: typings.awsSdk.ec2Mod.TransitGatewayRouteTableId = js.native
 }
 
 object DisableTransitGatewayRouteTablePropagationRequest {
   @scala.inline
   def apply(
-    TransitGatewayAttachmentId: String,
-    TransitGatewayRouteTableId: String,
+    TransitGatewayAttachmentId: TransitGatewayAttachmentId,
+    TransitGatewayRouteTableId: TransitGatewayRouteTableId,
     DryRun: js.UndefOr[scala.Boolean] = js.undefined
   ): DisableTransitGatewayRouteTablePropagationRequest = {
     val __obj = js.Dynamic.literal(TransitGatewayAttachmentId = TransitGatewayAttachmentId.asInstanceOf[js.Any], TransitGatewayRouteTableId = TransitGatewayRouteTableId.asInstanceOf[js.Any])

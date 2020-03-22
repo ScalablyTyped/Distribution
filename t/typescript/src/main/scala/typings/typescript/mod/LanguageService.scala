@@ -1,5 +1,6 @@
 package typings.typescript.mod
 
+import typings.typescript.WithMetadataCompletionInf
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -133,8 +134,8 @@ trait LanguageService extends js.Object {
   ): js.UndefOr[CompletionEntryDetails] = js.native
   def getCompletionEntrySymbol(fileName: java.lang.String, position: Double, name: java.lang.String): js.UndefOr[Symbol] = js.native
   def getCompletionEntrySymbol(fileName: java.lang.String, position: Double, name: java.lang.String, source: java.lang.String): js.UndefOr[Symbol] = js.native
-  def getCompletionsAtPosition(fileName: java.lang.String, position: Double): js.UndefOr[WithMetadata[CompletionInfo]] = js.native
-  def getCompletionsAtPosition(fileName: java.lang.String, position: Double, options: GetCompletionsAtPositionOptions): js.UndefOr[WithMetadata[CompletionInfo]] = js.native
+  def getCompletionsAtPosition(fileName: java.lang.String, position: Double): js.UndefOr[WithMetadataCompletionInf] = js.native
+  def getCompletionsAtPosition(fileName: java.lang.String, position: Double, options: GetCompletionsAtPositionOptions): js.UndefOr[WithMetadataCompletionInf] = js.native
   def getDefinitionAndBoundSpan(fileName: java.lang.String, position: Double): js.UndefOr[DefinitionInfoAndBoundSpan] = js.native
   def getDefinitionAtPosition(fileName: java.lang.String, position: Double): js.UndefOr[js.Array[DefinitionInfo]] = js.native
   def getDocCommentTemplateAtPosition(fileName: java.lang.String, position: Double): js.UndefOr[TextInsertion] = js.native
@@ -236,5 +237,8 @@ trait LanguageService extends js.Object {
   def isValidBraceCompletionAtPosition(fileName: java.lang.String, position: Double, openingBrace: Double): Boolean = js.native
   def organizeImports(scope: OrganizeImportsScope, formatOptions: FormatCodeSettings): js.Array[FileTextChanges] = js.native
   def organizeImports(scope: OrganizeImportsScope, formatOptions: FormatCodeSettings, preferences: UserPreferences): js.Array[FileTextChanges] = js.native
+  def prepareCallHierarchy(fileName: java.lang.String, position: Double): js.UndefOr[CallHierarchyItem | js.Array[CallHierarchyItem]] = js.native
+  def provideCallHierarchyIncomingCalls(fileName: java.lang.String, position: Double): js.Array[CallHierarchyIncomingCall] = js.native
+  def provideCallHierarchyOutgoingCalls(fileName: java.lang.String, position: Double): js.Array[CallHierarchyOutgoingCall] = js.native
 }
 

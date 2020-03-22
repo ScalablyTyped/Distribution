@@ -21,7 +21,7 @@ object directGeometryMod extends js.Object {
     var boundingSphere: Sphere = js.native
     var colors: js.Array[Color] = js.native
     var colorsNeedUpdate: Boolean = js.native
-    var groups: js.Array[AnonMaterialIndex] = js.native
+    var groups: js.Array[AnonMaterialIndexStart] = js.native
     var groupsNeedUpdate: Boolean = js.native
     var id: Double = js.native
     var indices: js.Array[Double] = js.native

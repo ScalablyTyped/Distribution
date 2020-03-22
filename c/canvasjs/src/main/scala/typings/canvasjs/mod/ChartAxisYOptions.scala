@@ -1,6 +1,6 @@
 package typings.canvasjs.mod
 
-import typings.canvasjs.AnonAxisChart
+import typings.canvasjs.AnonLabel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,7 +34,7 @@ object ChartAxisYOptions {
     labelFontSize: Int | Double = null,
     labelFontStyle: String = null,
     labelFontWeight: String = null,
-    labelFormatter: /* e */ AnonAxisChart => String = null,
+    labelFormatter: /* e */ AnonLabel => String = null,
     labelMaxWidth: Int | Double = null,
     labelWrap: js.UndefOr[Boolean] = js.undefined,
     lineColor: String = null,

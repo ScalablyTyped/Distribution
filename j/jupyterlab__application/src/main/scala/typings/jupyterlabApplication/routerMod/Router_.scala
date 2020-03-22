@@ -3,7 +3,7 @@ package typings.jupyterlabApplication.routerMod
 import typings.jupyterlabApplication.routerMod.Router.IOptions
 import typings.jupyterlabApplication.tokensMod.IRouter
 import typings.jupyterlabApplication.tokensMod.IRouter.ILocation
-import typings.phosphorSignaling.mod.ISignal
+import typings.luminoSignaling.mod.ISignal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,10 +18,10 @@ class Router_ protected () extends IRouter {
   var _routed: js.Any = js.native
   var _rules: js.Any = js.native
   /**
-    * A signal emitted when the router routes a route.
+    * Returns the parsed current URL of the application.
     */
-  @JSName("routed")
-  val routed_Router_ : ISignal[this.type, ILocation] = js.native
+  @JSName("current")
+  def current_MRouter_(): ILocation = js.native
   /**
     * Route a specific path to an action.
     *
@@ -30,5 +30,10 @@ class Router_ protected () extends IRouter {
     * match the `IRouter.ILocation` interface.
     */
   def route(): js.Promise[Unit] = js.native
+  /**
+    * A signal emitted when the router routes a route.
+    */
+  @JSName("routed")
+  def routed_MRouter_(): ISignal[this.type, ILocation] = js.native
 }
 

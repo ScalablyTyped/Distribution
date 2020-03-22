@@ -13,12 +13,12 @@ trait CodeGuruProfiler extends Service {
   @JSName("config")
   var config_CodeGuruProfiler: ConfigBase with ClientConfiguration = js.native
   /**
-    * Provides the configuration to use for an agent of the profiling group.
+    * 
     */
   def configureAgent(): Request[ConfigureAgentResponse, AWSError] = js.native
   def configureAgent(callback: js.Function2[/* err */ AWSError, /* data */ ConfigureAgentResponse, Unit]): Request[ConfigureAgentResponse, AWSError] = js.native
   /**
-    * Provides the configuration to use for an agent of the profiling group.
+    * 
     */
   def configureAgent(params: ConfigureAgentRequest): Request[ConfigureAgentResponse, AWSError] = js.native
   def configureAgent(
@@ -26,12 +26,12 @@ trait CodeGuruProfiler extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ConfigureAgentResponse, Unit]
   ): Request[ConfigureAgentResponse, AWSError] = js.native
   /**
-    * Create a profiling group.
+    * Creates a profiling group.
     */
   def createProfilingGroup(): Request[CreateProfilingGroupResponse, AWSError] = js.native
   def createProfilingGroup(callback: js.Function2[/* err */ AWSError, /* data */ CreateProfilingGroupResponse, Unit]): Request[CreateProfilingGroupResponse, AWSError] = js.native
   /**
-    * Create a profiling group.
+    * Creates a profiling group.
     */
   def createProfilingGroup(params: CreateProfilingGroupRequest): Request[CreateProfilingGroupResponse, AWSError] = js.native
   def createProfilingGroup(
@@ -39,12 +39,12 @@ trait CodeGuruProfiler extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateProfilingGroupResponse, Unit]
   ): Request[CreateProfilingGroupResponse, AWSError] = js.native
   /**
-    * Delete a profiling group.
+    * Deletes a profiling group.
     */
   def deleteProfilingGroup(): Request[DeleteProfilingGroupResponse, AWSError] = js.native
   def deleteProfilingGroup(callback: js.Function2[/* err */ AWSError, /* data */ DeleteProfilingGroupResponse, Unit]): Request[DeleteProfilingGroupResponse, AWSError] = js.native
   /**
-    * Delete a profiling group.
+    * Deletes a profiling group.
     */
   def deleteProfilingGroup(params: DeleteProfilingGroupRequest): Request[DeleteProfilingGroupResponse, AWSError] = js.native
   def deleteProfilingGroup(
@@ -52,12 +52,12 @@ trait CodeGuruProfiler extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteProfilingGroupResponse, Unit]
   ): Request[DeleteProfilingGroupResponse, AWSError] = js.native
   /**
-    * Describe a profiling group.
+    * Describes a profiling group.
     */
   def describeProfilingGroup(): Request[DescribeProfilingGroupResponse, AWSError] = js.native
   def describeProfilingGroup(callback: js.Function2[/* err */ AWSError, /* data */ DescribeProfilingGroupResponse, Unit]): Request[DescribeProfilingGroupResponse, AWSError] = js.native
   /**
-    * Describe a profiling group.
+    * Describes a profiling group.
     */
   def describeProfilingGroup(params: DescribeProfilingGroupRequest): Request[DescribeProfilingGroupResponse, AWSError] = js.native
   def describeProfilingGroup(
@@ -65,12 +65,12 @@ trait CodeGuruProfiler extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeProfilingGroupResponse, Unit]
   ): Request[DescribeProfilingGroupResponse, AWSError] = js.native
   /**
-    * Get the aggregated profile of a profiling group for the specified time range. If the requested time range does not align with the available aggregated profiles, it will be expanded to attain alignment. If aggregated profiles are available only for part of the period requested, the profile is returned from the earliest available to the latest within the requested time range. For instance, if the requested time range is from 00:00 to 00:20 and the available profiles are from 00:15 to 00:25, then the returned profile will be from 00:15 to 00:20.
+    * Gets the aggregated profile of a profiling group for the specified time range. If the requested time range does not align with the available aggregated profiles, it is expanded to attain alignment. If aggregated profiles are available only for part of the period requested, the profile is returned from the earliest available to the latest within the requested time range.  For example, if the requested time range is from 00:00 to 00:20 and the available profiles are from 00:15 to 00:25, the returned profile will be from 00:15 to 00:20.  You must specify exactly two of the following parameters: startTime, period, and endTime. 
     */
   def getProfile(): Request[GetProfileResponse, AWSError] = js.native
   def getProfile(callback: js.Function2[/* err */ AWSError, /* data */ GetProfileResponse, Unit]): Request[GetProfileResponse, AWSError] = js.native
   /**
-    * Get the aggregated profile of a profiling group for the specified time range. If the requested time range does not align with the available aggregated profiles, it will be expanded to attain alignment. If aggregated profiles are available only for part of the period requested, the profile is returned from the earliest available to the latest within the requested time range. For instance, if the requested time range is from 00:00 to 00:20 and the available profiles are from 00:15 to 00:25, then the returned profile will be from 00:15 to 00:20.
+    * Gets the aggregated profile of a profiling group for the specified time range. If the requested time range does not align with the available aggregated profiles, it is expanded to attain alignment. If aggregated profiles are available only for part of the period requested, the profile is returned from the earliest available to the latest within the requested time range.  For example, if the requested time range is from 00:00 to 00:20 and the available profiles are from 00:15 to 00:25, the returned profile will be from 00:15 to 00:20.  You must specify exactly two of the following parameters: startTime, period, and endTime. 
     */
   def getProfile(params: GetProfileRequest): Request[GetProfileResponse, AWSError] = js.native
   def getProfile(
@@ -91,12 +91,12 @@ trait CodeGuruProfiler extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListProfileTimesResponse, Unit]
   ): Request[ListProfileTimesResponse, AWSError] = js.native
   /**
-    * List profiling groups in the account.
+    * Lists profiling groups.
     */
   def listProfilingGroups(): Request[ListProfilingGroupsResponse, AWSError] = js.native
   def listProfilingGroups(callback: js.Function2[/* err */ AWSError, /* data */ ListProfilingGroupsResponse, Unit]): Request[ListProfilingGroupsResponse, AWSError] = js.native
   /**
-    * List profiling groups in the account.
+    * Lists profiling groups.
     */
   def listProfilingGroups(params: ListProfilingGroupsRequest): Request[ListProfilingGroupsResponse, AWSError] = js.native
   def listProfilingGroups(
@@ -104,12 +104,12 @@ trait CodeGuruProfiler extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListProfilingGroupsResponse, Unit]
   ): Request[ListProfilingGroupsResponse, AWSError] = js.native
   /**
-    * Submit profile collected by an agent belonging to a profiling group for aggregation.
+    * 
     */
   def postAgentProfile(): Request[PostAgentProfileResponse, AWSError] = js.native
   def postAgentProfile(callback: js.Function2[/* err */ AWSError, /* data */ PostAgentProfileResponse, Unit]): Request[PostAgentProfileResponse, AWSError] = js.native
   /**
-    * Submit profile collected by an agent belonging to a profiling group for aggregation.
+    * 
     */
   def postAgentProfile(params: PostAgentProfileRequest): Request[PostAgentProfileResponse, AWSError] = js.native
   def postAgentProfile(
@@ -117,12 +117,12 @@ trait CodeGuruProfiler extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ PostAgentProfileResponse, Unit]
   ): Request[PostAgentProfileResponse, AWSError] = js.native
   /**
-    * Update a profiling group.
+    * Updates a profiling group.
     */
   def updateProfilingGroup(): Request[UpdateProfilingGroupResponse, AWSError] = js.native
   def updateProfilingGroup(callback: js.Function2[/* err */ AWSError, /* data */ UpdateProfilingGroupResponse, Unit]): Request[UpdateProfilingGroupResponse, AWSError] = js.native
   /**
-    * Update a profiling group.
+    * Updates a profiling group.
     */
   def updateProfilingGroup(params: UpdateProfilingGroupRequest): Request[UpdateProfilingGroupResponse, AWSError] = js.native
   def updateProfilingGroup(

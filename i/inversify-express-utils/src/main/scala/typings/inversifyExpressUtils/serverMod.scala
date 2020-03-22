@@ -37,56 +37,56 @@ object serverMod extends js.Object {
       customRouter: Null,
       routingConfig: Null,
       customApp: Null,
-      authProvider: AnonAuthProvider
+      authProvider: AnonInstantiable
     ) = this()
     def this(
       container: Container,
       customRouter: Null,
       routingConfig: Null,
       customApp: Application_,
-      authProvider: AnonAuthProvider
+      authProvider: AnonInstantiable
     ) = this()
     def this(
       container: Container,
       customRouter: Null,
       routingConfig: RoutingConfig,
       customApp: Null,
-      authProvider: AnonAuthProvider
+      authProvider: AnonInstantiable
     ) = this()
     def this(
       container: Container,
       customRouter: Null,
       routingConfig: RoutingConfig,
       customApp: Application_,
-      authProvider: AnonAuthProvider
+      authProvider: AnonInstantiable
     ) = this()
     def this(
       container: Container,
       customRouter: Router,
       routingConfig: Null,
       customApp: Null,
-      authProvider: AnonAuthProvider
+      authProvider: AnonInstantiable
     ) = this()
     def this(
       container: Container,
       customRouter: Router,
       routingConfig: Null,
       customApp: Application_,
-      authProvider: AnonAuthProvider
+      authProvider: AnonInstantiable
     ) = this()
     def this(
       container: Container,
       customRouter: Router,
       routingConfig: RoutingConfig,
       customApp: Null,
-      authProvider: AnonAuthProvider
+      authProvider: AnonInstantiable
     ) = this()
     def this(
       container: Container,
       customRouter: Router,
       routingConfig: RoutingConfig,
       customApp: Application_,
-      authProvider: AnonAuthProvider
+      authProvider: AnonInstantiable
     ) = this()
     def this(
       container: Container,
@@ -101,7 +101,7 @@ object serverMod extends js.Object {
       customRouter: Null,
       routingConfig: Null,
       customApp: Null,
-      authProvider: AnonAuthProvider,
+      authProvider: AnonInstantiable,
       forceControllers: Boolean
     ) = this()
     def this(
@@ -117,7 +117,7 @@ object serverMod extends js.Object {
       customRouter: Null,
       routingConfig: Null,
       customApp: Application_,
-      authProvider: AnonAuthProvider,
+      authProvider: AnonInstantiable,
       forceControllers: Boolean
     ) = this()
     def this(
@@ -133,7 +133,7 @@ object serverMod extends js.Object {
       customRouter: Null,
       routingConfig: RoutingConfig,
       customApp: Null,
-      authProvider: AnonAuthProvider,
+      authProvider: AnonInstantiable,
       forceControllers: Boolean
     ) = this()
     def this(
@@ -149,7 +149,7 @@ object serverMod extends js.Object {
       customRouter: Null,
       routingConfig: RoutingConfig,
       customApp: Application_,
-      authProvider: AnonAuthProvider,
+      authProvider: AnonInstantiable,
       forceControllers: Boolean
     ) = this()
     def this(
@@ -165,7 +165,7 @@ object serverMod extends js.Object {
       customRouter: Router,
       routingConfig: Null,
       customApp: Null,
-      authProvider: AnonAuthProvider,
+      authProvider: AnonInstantiable,
       forceControllers: Boolean
     ) = this()
     def this(
@@ -181,7 +181,7 @@ object serverMod extends js.Object {
       customRouter: Router,
       routingConfig: Null,
       customApp: Application_,
-      authProvider: AnonAuthProvider,
+      authProvider: AnonInstantiable,
       forceControllers: Boolean
     ) = this()
     def this(
@@ -197,7 +197,7 @@ object serverMod extends js.Object {
       customRouter: Router,
       routingConfig: RoutingConfig,
       customApp: Null,
-      authProvider: AnonAuthProvider,
+      authProvider: AnonInstantiable,
       forceControllers: Boolean
     ) = this()
     def this(
@@ -213,7 +213,7 @@ object serverMod extends js.Object {
       customRouter: Router,
       routingConfig: RoutingConfig,
       customApp: Application_,
-      authProvider: AnonAuthProvider,
+      authProvider: AnonInstantiable,
       forceControllers: Boolean
     ) = this()
     var _AuthProvider: js.Any = js.native

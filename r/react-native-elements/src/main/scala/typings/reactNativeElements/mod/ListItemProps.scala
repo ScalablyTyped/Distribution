@@ -30,7 +30,8 @@ import typings.reactNative.reactNativeStrings.polite
 import typings.reactNative.reactNativeStrings.radiobutton_checked
 import typings.reactNative.reactNativeStrings.radiobutton_unchecked
 import typings.reactNative.reactNativeStrings.yes
-import typings.std.Partial
+import typings.reactNativeElements.PartialAvatarProps
+import typings.reactNativeElements.PartialIconProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -42,20 +43,20 @@ trait ListItemProps extends TouchableHighlightProps {
   var bottomDivider: js.UndefOr[Boolean] = js.undefined
   var buttonGroup: js.UndefOr[ButtonGroupProps] = js.undefined
   var checkBox: js.UndefOr[CheckBoxProps] = js.undefined
-  var checkmark: js.UndefOr[Boolean | Partial[IconProps] | ReactElement] = js.undefined
-  var chevron: js.UndefOr[Boolean | Partial[IconProps] | ReactElement] = js.undefined
+  var checkmark: js.UndefOr[Boolean | PartialIconProps | ReactElement] = js.undefined
+  var chevron: js.UndefOr[Boolean | PartialIconProps | ReactElement] = js.undefined
   var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   var contentContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   var disabledStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   var input: js.UndefOr[InputProps] = js.undefined
-  var leftAvatar: js.UndefOr[Partial[AvatarProps] | ReactElement] = js.undefined
+  var leftAvatar: js.UndefOr[PartialAvatarProps | ReactElement] = js.undefined
   var leftElement: js.UndefOr[ReactElement] = js.undefined
-  var leftIcon: js.UndefOr[Partial[IconProps] | ReactElement] = js.undefined
+  var leftIcon: js.UndefOr[PartialIconProps | ReactElement] = js.undefined
   var pad: js.UndefOr[Double] = js.undefined
-  var rightAvatar: js.UndefOr[Partial[AvatarProps] | ReactElement] = js.undefined
+  var rightAvatar: js.UndefOr[PartialAvatarProps | ReactElement] = js.undefined
   var rightContentContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   var rightElement: js.UndefOr[ReactElement] = js.undefined
-  var rightIcon: js.UndefOr[Partial[IconProps] | ReactElement] = js.undefined
+  var rightIcon: js.UndefOr[PartialIconProps | ReactElement] = js.undefined
   var rightSubtitle: js.UndefOr[String | ReactElement] = js.undefined
   var rightSubtitleProps: js.UndefOr[TextProperties] = js.undefined
   var rightSubtitleStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
@@ -96,8 +97,8 @@ object ListItemProps {
     bottomDivider: js.UndefOr[Boolean] = js.undefined,
     buttonGroup: ButtonGroupProps = null,
     checkBox: CheckBoxProps = null,
-    checkmark: Boolean | Partial[IconProps] | ReactElement = null,
-    chevron: Boolean | Partial[IconProps] | ReactElement = null,
+    checkmark: Boolean | PartialIconProps | ReactElement = null,
+    chevron: Boolean | PartialIconProps | ReactElement = null,
     containerStyle: StyleProp[ViewStyle] = null,
     contentContainerStyle: StyleProp[ViewStyle] = null,
     delayLongPress: Int | Double = null,
@@ -109,9 +110,9 @@ object ListItemProps {
     hitSlop: Insets = null,
     importantForAccessibility: auto | yes | no | `no-hide-descendants` = null,
     input: InputProps = null,
-    leftAvatar: Partial[AvatarProps] | ReactElement = null,
+    leftAvatar: PartialAvatarProps | ReactElement = null,
     leftElement: ReactElement = null,
-    leftIcon: Partial[IconProps] | ReactElement = null,
+    leftIcon: PartialIconProps | ReactElement = null,
     onAccessibilityAction: /* event */ AccessibilityActionEvent => Unit = null,
     onAccessibilityTap: () => Unit = null,
     onBlur: /* e */ NativeSyntheticEvent[TargetedEvent] => Unit = null,
@@ -126,10 +127,10 @@ object ListItemProps {
     onShowUnderlay: () => Unit = null,
     pad: Int | Double = null,
     pressRetentionOffset: Insets = null,
-    rightAvatar: Partial[AvatarProps] | ReactElement = null,
+    rightAvatar: PartialAvatarProps | ReactElement = null,
     rightContentContainerStyle: StyleProp[ViewStyle] = null,
     rightElement: ReactElement = null,
-    rightIcon: Partial[IconProps] | ReactElement = null,
+    rightIcon: PartialIconProps | ReactElement = null,
     rightSubtitle: String | ReactElement = null,
     rightSubtitleProps: TextProperties = null,
     rightSubtitleStyle: StyleProp[TextStyle] = null,

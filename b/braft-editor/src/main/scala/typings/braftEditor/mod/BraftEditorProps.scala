@@ -1,6 +1,7 @@
 package typings.braftEditor.mod
 
 import typings.braftEditor.AnonFamily
+import typings.braftEditor.braftEditorStrings.`vi-vn`
 import typings.braftEditor.braftEditorStrings.`zh-hant`
 import typings.braftEditor.braftEditorStrings.center
 import typings.braftEditor.braftEditorStrings.en
@@ -56,9 +57,10 @@ trait BraftEditorProps extends js.Object {
   var hooks: js.UndefOr[HooksType] = js.undefined
   var id: js.UndefOr[String] = js.undefined
   var imageControls: js.UndefOr[js.Array[ImageControlType]] = js.undefined
+  var imageEqualRatio: js.UndefOr[Boolean] = js.undefined
   var imageResizable: js.UndefOr[Boolean] = js.undefined
   var language: js.UndefOr[
-    zh | `zh-hant` | en | tr | ru | jpn | kr | pl | fr | (js.Function2[/* languages */ js.Any, /* context */ js.Any, _])
+    zh | `zh-hant` | en | tr | ru | jpn | kr | pl | fr | `vi-vn` | (js.Function2[/* languages */ js.Any, /* context */ js.Any, _])
   ] = js.undefined
   var letterSpacings: js.UndefOr[js.Array[Double]] = js.undefined
   var lineHeights: js.UndefOr[js.Array[Double]] = js.undefined
@@ -114,8 +116,9 @@ object BraftEditorProps {
     hooks: HooksType = null,
     id: String = null,
     imageControls: js.Array[ImageControlType] = null,
+    imageEqualRatio: js.UndefOr[Boolean] = js.undefined,
     imageResizable: js.UndefOr[Boolean] = js.undefined,
-    language: zh | `zh-hant` | en | tr | ru | jpn | kr | pl | fr | (js.Function2[/* languages */ js.Any, /* context */ js.Any, _]) = null,
+    language: zh | `zh-hant` | en | tr | ru | jpn | kr | pl | fr | `vi-vn` | (js.Function2[/* languages */ js.Any, /* context */ js.Any, _]) = null,
     letterSpacings: js.Array[Double] = null,
     lineHeights: js.Array[Double] = null,
     media: MediaType = null,
@@ -167,6 +170,7 @@ object BraftEditorProps {
     if (hooks != null) __obj.updateDynamic("hooks")(hooks.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (imageControls != null) __obj.updateDynamic("imageControls")(imageControls.asInstanceOf[js.Any])
+    if (!js.isUndefined(imageEqualRatio)) __obj.updateDynamic("imageEqualRatio")(imageEqualRatio.asInstanceOf[js.Any])
     if (!js.isUndefined(imageResizable)) __obj.updateDynamic("imageResizable")(imageResizable.asInstanceOf[js.Any])
     if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     if (letterSpacings != null) __obj.updateDynamic("letterSpacings")(letterSpacings.asInstanceOf[js.Any])

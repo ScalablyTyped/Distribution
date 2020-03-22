@@ -1,12 +1,14 @@
 package typings.wordpressApiFetch.mod.Schema
 
 import typings.std.Record
-import typings.wordpressApiFetch.AnonHref
+import typings.wordpressApiFetch.AnonDictk
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait BaseStatus extends BaseResponse {
+trait BaseStatus
+  extends BaseResponse
+     with Status[js.Any] {
   var name: String
   var `private`: Boolean
   var `protected`: Boolean
@@ -19,7 +21,7 @@ trait BaseStatus extends BaseResponse {
 object BaseStatus {
   @scala.inline
   def apply(
-    _links: Record[String, js.Array[AnonHref]],
+    _links: Record[String, js.Array[AnonDictk]],
     name: String,
     `private`: Boolean,
     `protected`: Boolean,

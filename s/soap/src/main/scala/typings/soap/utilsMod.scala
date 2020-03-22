@@ -11,6 +11,6 @@ object utilsMod extends js.Object {
   val TNS_PREFIX: __tns__ = js.native
   def findPrefix(xmlnsMapping: js.Any, nsURI: js.Any): String = js.native
   def passwordDigest(nonce: String, created: String, password: String): String = js.native
-  def splitQName[T](nsName: T): AnonName[T] | AnonNamePrefix = js.native
+  def splitQName[T](nsName: T): AnonName[T] | AnonPrefix = js.native
 }
 

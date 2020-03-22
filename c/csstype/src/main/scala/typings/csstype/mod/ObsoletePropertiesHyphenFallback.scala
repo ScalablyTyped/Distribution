@@ -84,7 +84,7 @@ trait ObsoletePropertiesHyphenFallback[TLength] extends js.Object {
     *
     * @deprecated
     */
-  var `-khtml-opacity`: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
+  var `-khtml-opacity`: js.UndefOr[OpacityProperty | js.Array[OpacityProperty]] = js.undefined
   /**
     * The `**user-select**` CSS property controls whether the user can select text. This doesn't have any effect on content loaded as chrome, except in textboxes.
     *
@@ -134,6 +134,22 @@ trait ObsoletePropertiesHyphenFallback[TLength] extends js.Object {
     */
   var `-moz-binding`: js.UndefOr[MozBindingProperty | js.Array[MozBindingProperty]] = js.undefined
   /**
+    * In Mozilla applications like Firefox, the **`-moz-border-bottom-colors`** CSS property sets a list of colors for the bottom border.
+    *
+    * **Initial value**: `none`
+    *
+    * @deprecated
+    */
+  var `-moz-border-bottom-colors`: js.UndefOr[MozBorderBottomColorsProperty | js.Array[MozBorderBottomColorsProperty]] = js.undefined
+  /**
+    * In Mozilla applications like Firefox, the **`-moz-border-left-colors`** CSS property sets a list of colors for the left border.
+    *
+    * **Initial value**: `none`
+    *
+    * @deprecated
+    */
+  var `-moz-border-left-colors`: js.UndefOr[MozBorderLeftColorsProperty | js.Array[MozBorderLeftColorsProperty]] = js.undefined
+  /**
     * The **`border-radius`** CSS property rounds the corners of an element's outer border edge. You can set a single radius to make circular corners, or two radii to make elliptical corners.
     *
     * @deprecated
@@ -179,6 +195,22 @@ trait ObsoletePropertiesHyphenFallback[TLength] extends js.Object {
   var `-moz-border-radius-topright`: js.UndefOr[
     BorderTopRightRadiusProperty[TLength] | js.Array[BorderTopRightRadiusProperty[TLength]]
   ] = js.undefined
+  /**
+    * In Mozilla applications like Firefox, the **`-moz-border-right-colors`** CSS property sets a list of colors for the right border.
+    *
+    * **Initial value**: `none`
+    *
+    * @deprecated
+    */
+  var `-moz-border-right-colors`: js.UndefOr[MozBorderRightColorsProperty | js.Array[MozBorderRightColorsProperty]] = js.undefined
+  /**
+    * In Mozilla applications like Firefox, the **`-moz-border-top-colors`** CSS property sets a list of colors for the top border.
+    *
+    * **Initial value**: `none`
+    *
+    * @deprecated
+    */
+  var `-moz-border-top-colors`: js.UndefOr[MozBorderTopColorsProperty | js.Array[MozBorderTopColorsProperty]] = js.undefined
   /**
     * The **`box-align`** CSS property specifies how an element aligns its contents across its layout in a perpendicular direction. The effect of the property is only visible if there is extra space in the box.
     *
@@ -242,7 +274,7 @@ trait ObsoletePropertiesHyphenFallback[TLength] extends js.Object {
     *
     * @deprecated
     */
-  var `-moz-opacity`: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
+  var `-moz-opacity`: js.UndefOr[OpacityProperty | js.Array[OpacityProperty]] = js.undefined
   /**
     * The **`outline`** CSS property is a shorthand to set various outline properties in a single declaration: `outline-style`, `outline-width`, and `outline-color`.
     *
@@ -343,6 +375,14 @@ trait ObsoletePropertiesHyphenFallback[TLength] extends js.Object {
     * @deprecated
     */
   var `-ms-ime-mode`: js.UndefOr[ImeModeProperty | js.Array[ImeModeProperty]] = js.undefined
+  /**
+    * The **`-ms-scrollbar-track-color`** CSS property is a Microsoft extension that specifies the color of the track element of a scrollbar.
+    *
+    * **Initial value**: `Scrollbar`
+    *
+    * @deprecated
+    */
+  var `-ms-scrollbar-track-color`: js.UndefOr[MsScrollbarTrackColorProperty | js.Array[MsScrollbarTrackColorProperty]] = js.undefined
   /**
     * The **`animation`** shorthand CSS property sets an animated transition between styles. It is a shorthand for `animation-name`, `animation-duration`, `animation-timing-function`, `animation-delay`, `animation-iteration-count`, `animation-direction`, `animation-fill-mode`, and `animation-play-state`.
     *
@@ -764,6 +804,14 @@ trait ObsoletePropertiesHyphenFallback[TLength] extends js.Object {
     */
   var `scroll-snap-type-y`: js.UndefOr[ScrollSnapTypeYProperty | js.Array[ScrollSnapTypeYProperty]] = js.undefined
   /**
+    * The **`-ms-scrollbar-track-color`** CSS property is a Microsoft extension that specifies the color of the track element of a scrollbar.
+    *
+    * **Initial value**: `Scrollbar`
+    *
+    * @deprecated
+    */
+  var `scrollbar-track-color`: js.UndefOr[MsScrollbarTrackColorProperty | js.Array[MsScrollbarTrackColorProperty]] = js.undefined
+  /**
     * The **`text-combine-upright`** CSS property sets the combination of characters into the space of a single character. If the combined text is wider than 1em, the user agent must fit the contents within 1em. The resulting composition is treated as a single upright glyph for layout and decoration. This property only has an effect in vertical writing modes.
     *
     * **Initial value**: `none`
@@ -785,18 +833,22 @@ object ObsoletePropertiesHyphenFallback {
     `-khtml-box-orient`: BoxOrientProperty | js.Array[BoxOrientProperty] = null,
     `-khtml-box-pack`: BoxPackProperty | js.Array[BoxPackProperty] = null,
     `-khtml-line-break`: LineBreakProperty | js.Array[LineBreakProperty] = null,
-    `-khtml-opacity`: GlobalsNumber | js.Array[GlobalsNumber] = null,
+    `-khtml-opacity`: OpacityProperty | js.Array[OpacityProperty] = null,
     `-khtml-user-select`: UserSelectProperty | js.Array[UserSelectProperty] = null,
     `-moz-background-clip`: BackgroundClipProperty | js.Array[BackgroundClipProperty] = null,
     `-moz-background-inline-policy`: BoxDecorationBreakProperty | js.Array[BoxDecorationBreakProperty] = null,
     `-moz-background-origin`: BackgroundOriginProperty | js.Array[BackgroundOriginProperty] = null,
     `-moz-background-size`: BackgroundSizeProperty[TLength] | js.Array[BackgroundSizeProperty[TLength]] = null,
     `-moz-binding`: MozBindingProperty | js.Array[MozBindingProperty] = null,
+    `-moz-border-bottom-colors`: MozBorderBottomColorsProperty | js.Array[MozBorderBottomColorsProperty] = null,
+    `-moz-border-left-colors`: MozBorderLeftColorsProperty | js.Array[MozBorderLeftColorsProperty] = null,
     `-moz-border-radius`: BorderRadiusProperty[TLength] | js.Array[BorderRadiusProperty[TLength]] = null,
     `-moz-border-radius-bottomleft`: BorderBottomLeftRadiusProperty[TLength] | js.Array[BorderBottomLeftRadiusProperty[TLength]] = null,
     `-moz-border-radius-bottomright`: BorderBottomRightRadiusProperty[TLength] | js.Array[BorderBottomRightRadiusProperty[TLength]] = null,
     `-moz-border-radius-topleft`: BorderTopLeftRadiusProperty[TLength] | js.Array[BorderTopLeftRadiusProperty[TLength]] = null,
     `-moz-border-radius-topright`: BorderTopRightRadiusProperty[TLength] | js.Array[BorderTopRightRadiusProperty[TLength]] = null,
+    `-moz-border-right-colors`: MozBorderRightColorsProperty | js.Array[MozBorderRightColorsProperty] = null,
+    `-moz-border-top-colors`: MozBorderTopColorsProperty | js.Array[MozBorderTopColorsProperty] = null,
     `-moz-box-align`: BoxAlignProperty | js.Array[BoxAlignProperty] = null,
     `-moz-box-direction`: BoxDirectionProperty | js.Array[BoxDirectionProperty] = null,
     `-moz-box-flex`: GlobalsNumber | js.Array[GlobalsNumber] = null,
@@ -804,7 +856,7 @@ object ObsoletePropertiesHyphenFallback {
     `-moz-box-orient`: BoxOrientProperty | js.Array[BoxOrientProperty] = null,
     `-moz-box-pack`: BoxPackProperty | js.Array[BoxPackProperty] = null,
     `-moz-box-shadow`: BoxShadowProperty | js.Array[BoxShadowProperty] = null,
-    `-moz-opacity`: GlobalsNumber | js.Array[GlobalsNumber] = null,
+    `-moz-opacity`: OpacityProperty | js.Array[OpacityProperty] = null,
     `-moz-outline`: OutlineProperty[TLength] | js.Array[OutlineProperty[TLength]] = null,
     `-moz-outline-color`: OutlineColorProperty | js.Array[OutlineColorProperty] = null,
     `-moz-outline-radius`: MozOutlineRadiusProperty[TLength] | js.Array[MozOutlineRadiusProperty[TLength]] = null,
@@ -818,6 +870,7 @@ object ObsoletePropertiesHyphenFallback {
     `-moz-user-input`: MozUserInputProperty | js.Array[MozUserInputProperty] = null,
     `-moz-window-shadow`: MozWindowShadowProperty | js.Array[MozWindowShadowProperty] = null,
     `-ms-ime-mode`: ImeModeProperty | js.Array[ImeModeProperty] = null,
+    `-ms-scrollbar-track-color`: MsScrollbarTrackColorProperty | js.Array[MsScrollbarTrackColorProperty] = null,
     `-o-animation`: AnimationProperty | js.Array[AnimationProperty] = null,
     `-o-animation-delay`: GlobalsString | js.Array[GlobalsString] = null,
     `-o-animation-direction`: AnimationDirectionProperty | js.Array[AnimationDirectionProperty] = null,
@@ -871,6 +924,7 @@ object ObsoletePropertiesHyphenFallback {
     `scroll-snap-points-y`: ScrollSnapPointsYProperty | js.Array[ScrollSnapPointsYProperty] = null,
     `scroll-snap-type-x`: ScrollSnapTypeXProperty | js.Array[ScrollSnapTypeXProperty] = null,
     `scroll-snap-type-y`: ScrollSnapTypeYProperty | js.Array[ScrollSnapTypeYProperty] = null,
+    `scrollbar-track-color`: MsScrollbarTrackColorProperty | js.Array[MsScrollbarTrackColorProperty] = null,
     `text-combine-horizontal`: TextCombineUprightProperty | js.Array[TextCombineUprightProperty] = null
   ): ObsoletePropertiesHyphenFallback[TLength] = {
     val __obj = js.Dynamic.literal()
@@ -890,11 +944,15 @@ object ObsoletePropertiesHyphenFallback {
     if (`-moz-background-origin` != null) __obj.updateDynamic("-moz-background-origin")(`-moz-background-origin`.asInstanceOf[js.Any])
     if (`-moz-background-size` != null) __obj.updateDynamic("-moz-background-size")(`-moz-background-size`.asInstanceOf[js.Any])
     if (`-moz-binding` != null) __obj.updateDynamic("-moz-binding")(`-moz-binding`.asInstanceOf[js.Any])
+    if (`-moz-border-bottom-colors` != null) __obj.updateDynamic("-moz-border-bottom-colors")(`-moz-border-bottom-colors`.asInstanceOf[js.Any])
+    if (`-moz-border-left-colors` != null) __obj.updateDynamic("-moz-border-left-colors")(`-moz-border-left-colors`.asInstanceOf[js.Any])
     if (`-moz-border-radius` != null) __obj.updateDynamic("-moz-border-radius")(`-moz-border-radius`.asInstanceOf[js.Any])
     if (`-moz-border-radius-bottomleft` != null) __obj.updateDynamic("-moz-border-radius-bottomleft")(`-moz-border-radius-bottomleft`.asInstanceOf[js.Any])
     if (`-moz-border-radius-bottomright` != null) __obj.updateDynamic("-moz-border-radius-bottomright")(`-moz-border-radius-bottomright`.asInstanceOf[js.Any])
     if (`-moz-border-radius-topleft` != null) __obj.updateDynamic("-moz-border-radius-topleft")(`-moz-border-radius-topleft`.asInstanceOf[js.Any])
     if (`-moz-border-radius-topright` != null) __obj.updateDynamic("-moz-border-radius-topright")(`-moz-border-radius-topright`.asInstanceOf[js.Any])
+    if (`-moz-border-right-colors` != null) __obj.updateDynamic("-moz-border-right-colors")(`-moz-border-right-colors`.asInstanceOf[js.Any])
+    if (`-moz-border-top-colors` != null) __obj.updateDynamic("-moz-border-top-colors")(`-moz-border-top-colors`.asInstanceOf[js.Any])
     if (`-moz-box-align` != null) __obj.updateDynamic("-moz-box-align")(`-moz-box-align`.asInstanceOf[js.Any])
     if (`-moz-box-direction` != null) __obj.updateDynamic("-moz-box-direction")(`-moz-box-direction`.asInstanceOf[js.Any])
     if (`-moz-box-flex` != null) __obj.updateDynamic("-moz-box-flex")(`-moz-box-flex`.asInstanceOf[js.Any])
@@ -916,6 +974,7 @@ object ObsoletePropertiesHyphenFallback {
     if (`-moz-user-input` != null) __obj.updateDynamic("-moz-user-input")(`-moz-user-input`.asInstanceOf[js.Any])
     if (`-moz-window-shadow` != null) __obj.updateDynamic("-moz-window-shadow")(`-moz-window-shadow`.asInstanceOf[js.Any])
     if (`-ms-ime-mode` != null) __obj.updateDynamic("-ms-ime-mode")(`-ms-ime-mode`.asInstanceOf[js.Any])
+    if (`-ms-scrollbar-track-color` != null) __obj.updateDynamic("-ms-scrollbar-track-color")(`-ms-scrollbar-track-color`.asInstanceOf[js.Any])
     if (`-o-animation` != null) __obj.updateDynamic("-o-animation")(`-o-animation`.asInstanceOf[js.Any])
     if (`-o-animation-delay` != null) __obj.updateDynamic("-o-animation-delay")(`-o-animation-delay`.asInstanceOf[js.Any])
     if (`-o-animation-direction` != null) __obj.updateDynamic("-o-animation-direction")(`-o-animation-direction`.asInstanceOf[js.Any])
@@ -969,6 +1028,7 @@ object ObsoletePropertiesHyphenFallback {
     if (`scroll-snap-points-y` != null) __obj.updateDynamic("scroll-snap-points-y")(`scroll-snap-points-y`.asInstanceOf[js.Any])
     if (`scroll-snap-type-x` != null) __obj.updateDynamic("scroll-snap-type-x")(`scroll-snap-type-x`.asInstanceOf[js.Any])
     if (`scroll-snap-type-y` != null) __obj.updateDynamic("scroll-snap-type-y")(`scroll-snap-type-y`.asInstanceOf[js.Any])
+    if (`scrollbar-track-color` != null) __obj.updateDynamic("scrollbar-track-color")(`scrollbar-track-color`.asInstanceOf[js.Any])
     if (`text-combine-horizontal` != null) __obj.updateDynamic("text-combine-horizontal")(`text-combine-horizontal`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObsoletePropertiesHyphenFallback[TLength]]
   }

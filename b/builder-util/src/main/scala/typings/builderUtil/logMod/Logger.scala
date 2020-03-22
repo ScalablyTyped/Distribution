@@ -11,7 +11,6 @@ class Logger protected () extends js.Object {
   def this(stream: WritableStream) = this()
   var _doLog: js.Any = js.native
   var doLog: js.Any = js.native
-  val isDebugEnabled: Boolean = js.native
   val stream: WritableStream = js.native
   def debug(fields: Null, message: String): Unit = js.native
   def debug(fields: Fields, message: String): Unit = js.native
@@ -28,6 +27,7 @@ class Logger protected () extends js.Object {
   def info(messageOrFields: Null, message: String): Unit = js.native
   def info(messageOrFields: Fields): Unit = js.native
   def info(messageOrFields: Fields, message: String): Unit = js.native
+  def isDebugEnabled(): Boolean = js.native
   def log(message: String): Unit = js.native
   def messageTransformer(message: String, level: LogLevel): String = js.native
   def warn(): Unit = js.native

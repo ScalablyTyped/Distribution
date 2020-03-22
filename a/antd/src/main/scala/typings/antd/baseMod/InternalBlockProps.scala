@@ -28,6 +28,7 @@ object InternalBlockProps {
     prefixCls: String = null,
     strong: js.UndefOr[Boolean] = js.undefined,
     style: CSSProperties = null,
+    title: String = null,
     `type`: BaseType = null,
     underline: js.UndefOr[Boolean] = js.undefined
   ): InternalBlockProps = {
@@ -46,6 +47,7 @@ object InternalBlockProps {
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
     if (!js.isUndefined(strong)) __obj.updateDynamic("strong")(strong.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (!js.isUndefined(underline)) __obj.updateDynamic("underline")(underline.asInstanceOf[js.Any])
     __obj.asInstanceOf[InternalBlockProps]

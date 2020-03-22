@@ -3,7 +3,7 @@ package typings.jupyterlabConsole
 import typings.jupyterlabConsole.widgetMod.CodeConsole.IContentFactory
 import typings.jupyterlabConsole.widgetMod.CodeConsole.IModelFactoryOptions
 import typings.jupyterlabConsole.widgetMod.CodeConsole.IOptions
-import typings.phosphorCoreutils.mod.Token
+import typings.luminoCoreutils.mod.Token
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

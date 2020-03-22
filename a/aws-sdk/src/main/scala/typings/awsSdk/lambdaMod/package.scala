@@ -136,6 +136,7 @@ package object lambdaMod {
     - typings.awsSdk.awsSdkStrings.`nodejs4Dot3-edge`
     - typings.awsSdk.awsSdkStrings.go1Dotx
     - typings.awsSdk.awsSdkStrings.ruby2Dot5
+    - typings.awsSdk.awsSdkStrings.ruby2Dot7
     - typings.awsSdk.awsSdkStrings.provided
     - java.lang.String
   */

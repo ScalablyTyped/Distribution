@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/angular", "IonReorderGroup")
 @js.native
 class IonReorderGroup protected ()
-  extends typings.ionicAngular.distMod.IonReorderGroup {
+  extends typings.ionicAngular.proxiesMod.IonReorderGroup {
   def this(c: ChangeDetectorRef, r: ElementRef[_], z: NgZone) = this()
 }
 

@@ -6,9 +6,9 @@ import typings.jupyterlabObservables.jupyterlabObservablesStrings.List
 import typings.jupyterlabObservables.modeldbMod.IModelDB
 import typings.jupyterlabObservables.observablelistMod.IObservableList.IChangedArgs
 import typings.jupyterlabObservables.undoablelistMod.IObservableUndoableList
-import typings.phosphorAlgorithm.iterMod.IIterator
-import typings.phosphorAlgorithm.iterMod.IterableOrArrayLike
-import typings.phosphorSignaling.mod.ISignal
+import typings.luminoAlgorithm.iterMod.IIterator
+import typings.luminoAlgorithm.iterMod.IterableOrArrayLike
+import typings.luminoSignaling.mod.ISignal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -42,21 +42,6 @@ object celllistMod extends js.Object {
     /* CompleteClass */
     override val isDisposed: Boolean = js.native
     /**
-      * Test whether the list is empty.
-      *
-      * @returns `true` if the cell list is empty, `false` otherwise.
-      *
-      * #### Notes
-      * This is a read-only property.
-      *
-      * #### Complexity
-      * Constant.
-      *
-      * #### Iterator Validity
-      * No changes.
-      */
-    val isEmpty: Boolean = js.native
-    /**
       * The length of the list.
       *
       * #### Notes
@@ -71,6 +56,21 @@ object celllistMod extends js.Object {
     override val `type`: List = js.native
     @JSName("type")
     var type_CellList: typings.jupyterlabNotebook.jupyterlabNotebookStrings.List = js.native
+    /**
+      * Whether the object can redo changes.
+      */
+    @JSName("canRedo")
+    def canRedo_MCellList(): Boolean = js.native
+    /**
+      * Whether the object can undo changes.
+      */
+    @JSName("canUndo")
+    def canUndo_MCellList(): Boolean = js.native
+    /**
+      * A signal emitted when the cell list has changed.
+      */
+    @JSName("changed")
+    def changed_MCellList(): ISignal[this.type, IChangedArgs[ICellModel]] = js.native
     /**
       * Remove all values from the list.
       *
@@ -106,7 +106,7 @@ object celllistMod extends js.Object {
       * An `index` which is non-integral or out of range.
       */
     /* CompleteClass */
-    override def get(index: Double): js.UndefOr[ICellModel] = js.native
+    override def get(index: Double): ICellModel = js.native
     /**
       * Insert a value into the list at a specific index.
       *
@@ -150,6 +150,26 @@ object celllistMod extends js.Object {
     /* CompleteClass */
     override def insertAll(index: Double, values: IterableOrArrayLike[ICellModel]): Unit = js.native
     /**
+      * Test whether the cell list has been disposed.
+      */
+    @JSName("isDisposed")
+    def isDisposed_MCellList(): Boolean = js.native
+    /**
+      * Test whether the list is empty.
+      *
+      * @returns `true` if the cell list is empty, `false` otherwise.
+      *
+      * #### Notes
+      * This is a read-only property.
+      *
+      * #### Complexity
+      * Constant.
+      *
+      * #### Iterator Validity
+      * No changes.
+      */
+    def isEmpty(): Boolean = js.native
+    /**
       * Create an iterator over the values in the list.
       *
       * @returns A new iterator starting at the front of the list.
@@ -162,6 +182,22 @@ object celllistMod extends js.Object {
       */
     /* CompleteClass */
     override def iter(): IIterator[ICellModel] = js.native
+    /**
+      * Get the length of the cell list.
+      *
+      * @return The number of cells in the cell list.
+      *
+      * #### Notes
+      * This is a read-only property.
+      *
+      * #### Complexity
+      * Constant.
+      *
+      * #### Iterator Validity
+      * No changes.
+      */
+    @JSName("length")
+    def length_MCellList(): Double = js.native
     /**
       * Move a value from one index to another.
       *

@@ -8,7 +8,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.highcharts.mod.SeriesOptions because var conflicts: zIndex. Inlined id, index, legendIndex, mapData, name, stack, treemap, `type`, xAxis, yAxis */ trait SeriesSankeyOptions
+- typings.highcharts.mod.SeriesOptions because var conflicts: zIndex. Inlined id, index, legendIndex, mapData, name, stack, `type`, xAxis, yAxis */ trait SeriesSankeyOptions
   extends PlotSankeyOptions
      with SeriesOptionsType {
   /**
@@ -28,7 +28,7 @@ import scala.scalajs.js.annotation._
     * data points exceeds the series' turboThreshold, this option is not
     * available. (see online documentation for example)
     */
-  var data: js.UndefOr[js.Array[SeriesSankeyDataOptions]] = js.undefined
+  var data: js.UndefOr[js.Array[SeriesSankeyPointOptionsObject]] = js.undefined
   /**
     * Not available
     */
@@ -98,7 +98,7 @@ import scala.scalajs.js.annotation._
     * in a sankey diagram are auto-generated instances of `Highcharts.Point`,
     * but options can be applied here and linked by the `id`.
     */
-  var nodes: js.UndefOr[js.Array[SeriesSankeyNodesOptions]] = js.undefined
+  var nodes: js.UndefOr[js.Array[SeriesSankeyNodesOptionsObject]] = js.undefined
   /**
     * Not available
     */
@@ -114,7 +114,6 @@ import scala.scalajs.js.annotation._
     * string.
     */
   var stack: js.UndefOr[Double | String] = js.undefined
-  var treemap: js.UndefOr[SeriesTreemapOptions] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) This property is only in
     * TypeScript non-optional and might be `undefined` in series objects from
@@ -141,10 +140,10 @@ object SeriesSankeyOptions {
   @scala.inline
   def apply(
     `type`: String | sankey,
-    accessibility: js.Object | PlotSankeyAccessibilityOptions = null,
+    accessibility: SeriesAccessibilityOptionsObject = null,
     allAreas: js.UndefOr[Boolean] = js.undefined,
     allowPointSelect: js.UndefOr[Boolean] = js.undefined,
-    animation: Boolean | AnimationOptionsObject | PlotSankeyAnimationOptions = null,
+    animation: Boolean | AnimationOptionsObject = null,
     boostBlending: OptionsBoostBlendingValue = null,
     borderColor: ColorString | GradientColorObject | PatternObject = null,
     borderRadius: js.UndefOr[scala.Nothing] = js.undefined,
@@ -158,21 +157,22 @@ object SeriesSankeyOptions {
     compare: String = null,
     compareBase: `0` | `100` = null,
     compareStart: js.UndefOr[Boolean] = js.undefined,
-    connectors: PlotSankeyConnectorsOptions = null,
+    connectors: SeriesConnectorsOptionsObject = null,
     crisp: js.UndefOr[scala.Nothing] = js.undefined,
     cursor: String | CursorValue = null,
     curveFactor: Int | Double = null,
-    data: js.Array[SeriesSankeyDataOptions] = null,
-    dataGrouping: PlotSankeyDataGroupingOptions = null,
+    data: js.Array[SeriesSankeyPointOptionsObject] = null,
+    dataGrouping: DataGroupingOptionsObject = null,
     dataLabels: SeriesSankeyDataLabelsOptionsObject | js.Array[SeriesSankeyDataLabelsOptionsObject] = null,
     dataParser: js.UndefOr[scala.Nothing] = js.undefined,
+    dataSorting: DataSortingOptionsObject | PlotSankeyDataSortingOptions = null,
     dataURL: js.UndefOr[scala.Nothing] = js.undefined,
     depth: js.UndefOr[scala.Nothing] = js.undefined,
     description: String = null,
     edgeColor: js.UndefOr[scala.Nothing] = js.undefined,
     edgeWidth: js.UndefOr[scala.Nothing] = js.undefined,
     enableMouseTracking: js.UndefOr[Boolean] = js.undefined,
-    events: PlotSankeyEventsOptions = null,
+    events: SeriesEventsOptionsObject = null,
     getExtremesFromAll: js.UndefOr[Boolean] = js.undefined,
     groupPadding: js.UndefOr[scala.Nothing] = js.undefined,
     groupZPadding: js.UndefOr[scala.Nothing] = js.undefined,
@@ -182,9 +182,9 @@ object SeriesSankeyOptions {
     index: Int | Double = null,
     joinBy: String | js.Array[String] = null,
     keys: js.Array[String] = null,
-    label: PlotSankeyLabelOptions = null,
-    lastPrice: PlotSankeyLastPriceOptions = null,
-    lastVisiblePrice: PlotSankeyLastVisiblePriceOptions = null,
+    label: SeriesLabelOptionsObject = null,
+    lastPrice: SeriesLastPriceOptionsObject = null,
+    lastVisiblePrice: SeriesLastVisiblePriceOptionsObject = null,
     legendIndex: Int | Double = null,
     levels: js.Array[PlotSankeyLevelsOptions] = null,
     linkOpacity: Int | Double = null,
@@ -196,9 +196,9 @@ object SeriesSankeyOptions {
     navigatorOptions: PlotSeriesOptions = null,
     nodePadding: Int | Double = null,
     nodeWidth: Int | Double = null,
-    nodes: js.Array[SeriesSankeyNodesOptions] = null,
+    nodes: js.Array[SeriesSankeyNodesOptionsObject] = null,
     opacity: Int | Double = null,
-    point: PlotSankeyPointOptions = null,
+    point: PlotSeriesPointOptions = null,
     pointDescriptionFormatter: js.Function = null,
     pointPadding: js.UndefOr[scala.Nothing] = js.undefined,
     pointWidth: js.UndefOr[scala.Nothing] = js.undefined,
@@ -208,10 +208,9 @@ object SeriesSankeyOptions {
     showInNavigator: js.UndefOr[Boolean] = js.undefined,
     skipKeyboardNavigation: js.UndefOr[Boolean] = js.undefined,
     stack: Double | String = null,
-    states: PlotSankeyStatesOptions = null,
+    states: SeriesStatesOptionsObject = null,
     stickyTracking: js.UndefOr[Boolean] = js.undefined,
-    tooltip: PlotSankeyTooltipOptions = null,
-    treemap: SeriesTreemapOptions = null,
+    tooltip: SeriesTooltipOptionsObject = null,
     turboThreshold: Int | Double = null,
     visible: js.UndefOr[Boolean] = js.undefined,
     xAxis: Double | String = null,
@@ -245,6 +244,7 @@ object SeriesSankeyOptions {
     if (dataGrouping != null) __obj.updateDynamic("dataGrouping")(dataGrouping.asInstanceOf[js.Any])
     if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
     if (!js.isUndefined(dataParser)) __obj.updateDynamic("dataParser")(dataParser.asInstanceOf[js.Any])
+    if (dataSorting != null) __obj.updateDynamic("dataSorting")(dataSorting.asInstanceOf[js.Any])
     if (!js.isUndefined(dataURL)) __obj.updateDynamic("dataURL")(dataURL.asInstanceOf[js.Any])
     if (!js.isUndefined(depth)) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
@@ -290,7 +290,6 @@ object SeriesSankeyOptions {
     if (states != null) __obj.updateDynamic("states")(states.asInstanceOf[js.Any])
     if (!js.isUndefined(stickyTracking)) __obj.updateDynamic("stickyTracking")(stickyTracking.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (treemap != null) __obj.updateDynamic("treemap")(treemap.asInstanceOf[js.Any])
     if (turboThreshold != null) __obj.updateDynamic("turboThreshold")(turboThreshold.asInstanceOf[js.Any])
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     if (xAxis != null) __obj.updateDynamic("xAxis")(xAxis.asInstanceOf[js.Any])

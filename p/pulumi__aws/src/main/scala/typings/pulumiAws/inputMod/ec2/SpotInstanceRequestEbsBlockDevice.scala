@@ -43,7 +43,7 @@ trait SpotInstanceRequestEbsBlockDevice extends js.Object {
   var volumeSize: js.UndefOr[Input[Double]] = js.native
   /**
     * The type of volume. Can be `"standard"`, `"gp2"`,
-    * or `"io1"`. (Default: `"standard"`).
+    * or `"io1"`. (Default: `"gp2"`).
     */
   var volumeType: js.UndefOr[Input[String]] = js.native
 }

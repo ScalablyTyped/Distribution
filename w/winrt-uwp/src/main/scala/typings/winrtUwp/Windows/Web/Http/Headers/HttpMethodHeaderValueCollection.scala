@@ -2,7 +2,7 @@ package typings.winrtUwp.Windows.Web.Http.Headers
 
 import typings.std.Array
 import typings.winrtUwp.AnonIndex
-import typings.winrtUwp.AnonItemsReturnValueHttpMethod
+import typings.winrtUwp.AnonItemsHttpMethod
 import typings.winrtUwp.Windows.Foundation.Collections.IIterator
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Web.Http.HttpMethod
@@ -38,7 +38,7 @@ abstract class HttpMethodHeaderValueCollection () extends Array[HttpMethod] {
     * Retrieves the HttpMethod items that start at the specified index in the collection.
     * @param startIndex The zero-based index of the start of the HttpMethod items in the HttpMethodHeaderValueCollection .
     */
-  def getMany(startIndex: Double): AnonItemsReturnValueHttpMethod = js.native
+  def getMany(startIndex: Double): AnonItemsHttpMethod = js.native
   /**
     * Returns an immutable view of the HttpMethodHeaderValueCollection .
     * @return The view of the HttpMethodHeaderValueCollection .

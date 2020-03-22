@@ -1,6 +1,6 @@
 package typings.jupyterlabSettingeditor.raweditorMod.RawEditor
 
-import typings.phosphorCommands.mod.CommandRegistry
+import typings.luminoCommands.mod.CommandRegistry
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

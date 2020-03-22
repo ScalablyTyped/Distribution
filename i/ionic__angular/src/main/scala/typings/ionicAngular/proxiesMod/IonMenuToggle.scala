@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ionic/angular/dist/directives/proxies", "IonMenuToggle")
+@JSImport("@ionic/angular/directives/proxies", "IonMenuToggle")
 @js.native
 class IonMenuToggle protected ()
   extends typings.ionicCore.componentsMod.Components.IonMenuToggle {

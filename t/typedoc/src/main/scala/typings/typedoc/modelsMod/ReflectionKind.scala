@@ -29,6 +29,7 @@ object ReflectionKind extends js.Object {
   /* 2097152 */ val ObjectLiteral: typings.typedoc.abstractMod.ReflectionKind.ObjectLiteral with Double = js.native
   /* 32768 */ val Parameter: typings.typedoc.abstractMod.ReflectionKind.Parameter with Double = js.native
   /* 1024 */ val Property: typings.typedoc.abstractMod.ReflectionKind.Property with Double = js.native
+  /* 16777216 */ val Reference: typings.typedoc.abstractMod.ReflectionKind.Reference with Double = js.native
   /* 1048576 */ val SetSignature: typings.typedoc.abstractMod.ReflectionKind.SetSignature with Double = js.native
   /* 3 */ val SomeModule: typings.typedoc.abstractMod.ReflectionKind.SomeModule with Double = js.native
   /* 1601536 */ val SomeSignature: typings.typedoc.abstractMod.ReflectionKind.SomeSignature with Double = js.native

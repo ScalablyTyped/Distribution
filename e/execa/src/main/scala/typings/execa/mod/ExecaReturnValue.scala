@@ -16,8 +16,11 @@ import scala.scalajs.js.annotation._
 trait ExecaReturnValue[StdoutErrorType] extends ExecaReturnBase[StdoutErrorType] {
   /**
   		The output of the process with `stdout` and `stderr` interleaved.
+  		This is `undefined` if either:
+  		- the `all` option is `false` (default value)
+  		- `execa.sync()` was used
   		*/
-  var all: StdoutErrorType
+  var all: js.UndefOr[StdoutErrorType] = js.undefined
   /**
   		Whether the process was canceled.
   		*/
@@ -27,20 +30,22 @@ trait ExecaReturnValue[StdoutErrorType] extends ExecaReturnBase[StdoutErrorType]
 object ExecaReturnValue {
   @scala.inline
   def apply[StdoutErrorType](
-    all: StdoutErrorType,
     command: String,
     exitCode: Double,
-    exitCodeName: String,
     failed: Boolean,
     isCanceled: Boolean,
     killed: Boolean,
     stderr: StdoutErrorType,
     stdout: StdoutErrorType,
     timedOut: Boolean,
-    signal: String = null
+    all: StdoutErrorType = null,
+    signal: String = null,
+    signalDescription: String = null
   ): ExecaReturnValue[StdoutErrorType] = {
-    val __obj = js.Dynamic.literal(all = all.asInstanceOf[js.Any], command = command.asInstanceOf[js.Any], exitCode = exitCode.asInstanceOf[js.Any], exitCodeName = exitCodeName.asInstanceOf[js.Any], failed = failed.asInstanceOf[js.Any], isCanceled = isCanceled.asInstanceOf[js.Any], killed = killed.asInstanceOf[js.Any], stderr = stderr.asInstanceOf[js.Any], stdout = stdout.asInstanceOf[js.Any], timedOut = timedOut.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], exitCode = exitCode.asInstanceOf[js.Any], failed = failed.asInstanceOf[js.Any], isCanceled = isCanceled.asInstanceOf[js.Any], killed = killed.asInstanceOf[js.Any], stderr = stderr.asInstanceOf[js.Any], stdout = stdout.asInstanceOf[js.Any], timedOut = timedOut.asInstanceOf[js.Any])
+    if (all != null) __obj.updateDynamic("all")(all.asInstanceOf[js.Any])
     if (signal != null) __obj.updateDynamic("signal")(signal.asInstanceOf[js.Any])
+    if (signalDescription != null) __obj.updateDynamic("signalDescription")(signalDescription.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecaReturnValue[StdoutErrorType]]
   }
 }

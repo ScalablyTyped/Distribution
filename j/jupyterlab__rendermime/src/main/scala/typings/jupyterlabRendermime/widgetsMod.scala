@@ -25,7 +25,7 @@ object widgetsMod extends js.Object {
     /**
       * The latexTypesetter.
       */
-    val latexTypesetter: ILatexTypesetter = js.native
+    val latexTypesetter: ILatexTypesetter | Null = js.native
     /**
       * The link handler.
       */

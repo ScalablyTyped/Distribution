@@ -1,30 +1,38 @@
 package typings.grommet
 
-import typings.grommet.grommetStrings.full
-import typings.grommet.grommetStrings.large
-import typings.grommet.grommetStrings.medium
-import typings.grommet.grommetStrings.small
-import typings.grommet.grommetStrings.xlarge
-import typings.grommet.grommetStrings.xsmall
-import typings.grommet.grommetStrings.xxsmall
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonFull extends js.Object {
-  var height: js.UndefOr[xxsmall | xsmall | small | medium | large | xlarge | full | String] = js.undefined
-  var width: js.UndefOr[xxsmall | xsmall | small | medium | large | xlarge | full | String] = js.undefined
+  var full: js.UndefOr[String] = js.undefined
+  var large: js.UndefOr[String] = js.undefined
+  var medium: js.UndefOr[String] = js.undefined
+  var small: js.UndefOr[String] = js.undefined
+  var xlarge: js.UndefOr[String] = js.undefined
+  var xsmall: js.UndefOr[String] = js.undefined
+  var xxsmall: js.UndefOr[String] = js.undefined
 }
 
 object AnonFull {
   @scala.inline
   def apply(
-    height: xxsmall | xsmall | small | medium | large | xlarge | full | String = null,
-    width: xxsmall | xsmall | small | medium | large | xlarge | full | String = null
+    full: String = null,
+    large: String = null,
+    medium: String = null,
+    small: String = null,
+    xlarge: String = null,
+    xsmall: String = null,
+    xxsmall: String = null
   ): AnonFull = {
     val __obj = js.Dynamic.literal()
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (full != null) __obj.updateDynamic("full")(full.asInstanceOf[js.Any])
+    if (large != null) __obj.updateDynamic("large")(large.asInstanceOf[js.Any])
+    if (medium != null) __obj.updateDynamic("medium")(medium.asInstanceOf[js.Any])
+    if (small != null) __obj.updateDynamic("small")(small.asInstanceOf[js.Any])
+    if (xlarge != null) __obj.updateDynamic("xlarge")(xlarge.asInstanceOf[js.Any])
+    if (xsmall != null) __obj.updateDynamic("xsmall")(xsmall.asInstanceOf[js.Any])
+    if (xxsmall != null) __obj.updateDynamic("xxsmall")(xxsmall.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnonFull]
   }
 }

@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RollupOutput extends js.Object {
-  var output: js.Array[OutputChunk | OutputAsset]
+  var output: Array[OutputChunk | OutputAsset]
 }
 
 object RollupOutput {
   @scala.inline
-  def apply(output: js.Array[OutputChunk | OutputAsset]): RollupOutput = {
+  def apply(output: Array[OutputChunk | OutputAsset]): RollupOutput = {
     val __obj = js.Dynamic.literal(output = output.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RollupOutput]

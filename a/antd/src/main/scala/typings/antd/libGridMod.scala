@@ -1,6 +1,6 @@
 package typings.antd
 
-import typings.antd.gridColMod.default
+import typings.antd.gridRowMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,23 +9,16 @@ import scala.scalajs.js.annotation._
 @js.native
 object libGridMod extends js.Object {
   @js.native
-  class Col () extends default
+  class Col ()
+    extends typings.antd.gridColMod.Col
   
   @js.native
-  class Row ()
-    extends typings.antd.rowMod.default
-  
-  /* static members */
-  @js.native
-  object Col extends js.Object {
-    var propTypes: AnonChildren = js.native
-  }
+  class Row () extends default
   
   /* static members */
   @js.native
   object Row extends js.Object {
     var defaultProps: AnonGutter = js.native
-    var propTypes: AnonAlign = js.native
   }
   
 }

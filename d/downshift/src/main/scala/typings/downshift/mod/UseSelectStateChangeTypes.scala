@@ -12,9 +12,6 @@ sealed trait UseSelectStateChangeTypes extends js.Object
 @js.native
 object UseSelectStateChangeTypes extends js.Object {
   @js.native
-  sealed trait FunctionClearKeysSoFar extends UseSelectStateChangeTypes
-  
-  @js.native
   sealed trait FunctionCloseMenu extends UseSelectStateChangeTypes
   
   @js.native
@@ -28,6 +25,9 @@ object UseSelectStateChangeTypes extends js.Object {
   
   @js.native
   sealed trait FunctionSetHighlightedIndex extends UseSelectStateChangeTypes
+  
+  @js.native
+  sealed trait FunctionSetInputValue extends UseSelectStateChangeTypes
   
   @js.native
   sealed trait FunctionToggleMenu extends UseSelectStateChangeTypes
@@ -63,6 +63,9 @@ object UseSelectStateChangeTypes extends js.Object {
   sealed trait MenuKeyDownHome extends UseSelectStateChangeTypes
   
   @js.native
+  sealed trait MenuKeyDownSpaceButton extends UseSelectStateChangeTypes
+  
+  @js.native
   sealed trait MenuMouseLeave extends UseSelectStateChangeTypes
   
   @js.native
@@ -79,9 +82,6 @@ object UseSelectStateChangeTypes extends js.Object {
   
   @JSBracketAccess
   def apply(value: String): js.UndefOr[UseSelectStateChangeTypes with String] = js.native
-  /* "__function_clear_keys_so_far__" */ @js.native
-  object FunctionClearKeysSoFar extends TopLevel[FunctionClearKeysSoFar with String]
-  
   /* "__function_close_menu__" */ @js.native
   object FunctionCloseMenu extends TopLevel[FunctionCloseMenu with String]
   
@@ -96,6 +96,9 @@ object UseSelectStateChangeTypes extends js.Object {
   
   /* "__function_set_highlighted_index__" */ @js.native
   object FunctionSetHighlightedIndex extends TopLevel[FunctionSetHighlightedIndex with String]
+  
+  /* "__function_set_input_value__" */ @js.native
+  object FunctionSetInputValue extends TopLevel[FunctionSetInputValue with String]
   
   /* "__function_toggle_menu__" */ @js.native
   object FunctionToggleMenu extends TopLevel[FunctionToggleMenu with String]
@@ -129,6 +132,9 @@ object UseSelectStateChangeTypes extends js.Object {
   
   /* "__menu_keydown_home__" */ @js.native
   object MenuKeyDownHome extends TopLevel[MenuKeyDownHome with String]
+  
+  /* "__menu_keydown_space_button__" */ @js.native
+  object MenuKeyDownSpaceButton extends TopLevel[MenuKeyDownSpaceButton with String]
   
   /* "__menu_mouse_leave__" */ @js.native
   object MenuMouseLeave extends TopLevel[MenuMouseLeave with String]

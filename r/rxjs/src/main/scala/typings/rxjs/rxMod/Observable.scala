@@ -1,6 +1,6 @@
 package typings.rxjs.rxMod
 
-import typings.rxjs.FnCondition
+import typings.rxjs.FnCall
 import typings.rxjs.typesMod.SchedulerLike
 import typings.rxjs.typesMod.SubscribableOrPromise
 import typings.rxjs.typesMod.TeardownLogic
@@ -46,7 +46,7 @@ object Observable extends js.Object {
     * @deprecated In favor of iif creation function: import { iif } from 'rxjs';
     */
   @JSName("if")
-  var if_Original: FnCondition = js.native
+  var if_Original: FnCall = js.native
   /**
     * @nocollapse
     * @deprecated In favor of throwError creation function: import { throwError } from 'rxjs';

@@ -9,6 +9,8 @@ object nivoTooltipComponents extends nivoTooltipProps {
   @scala.inline
   def BasicTooltip: ComponentType[BasicTooltipProps] = js.constructorOf[typings.nivoTooltip.mod.BasicTooltip].asInstanceOf[typings.react.mod.ComponentType[BasicTooltipProps]]
   @scala.inline
+  def Chip: ComponentType[ChipProps] = js.constructorOf[typings.nivoTooltip.mod.Chip].asInstanceOf[typings.react.mod.ComponentType[ChipProps]]
+  @scala.inline
   def TableTooltip: ComponentType[TableTooltipProps] = js.constructorOf[typings.nivoTooltip.mod.TableTooltip].asInstanceOf[typings.react.mod.ComponentType[TableTooltipProps]]
 }
 

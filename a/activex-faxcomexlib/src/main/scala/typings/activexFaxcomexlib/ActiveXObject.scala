@@ -101,7 +101,7 @@ trait ActiveXObject extends js.Object {
     obj: FaxAccount,
     event: OnIncomingJobChanged,
     argNames: js.Tuple3[pFaxAccount, bstrJobId, pJobStatus],
-    handler: js.ThisFunction1[/* this */ FaxAccount, /* parameter */ AnonBstrJobIdPFaxAccount, Unit]
+    handler: js.ThisFunction1[/* this */ FaxAccount, /* parameter */ AnonPFaxAccount, Unit]
   ): Unit = js.native
   def on(
     obj: FaxAccount,
@@ -119,11 +119,7 @@ trait ActiveXObject extends js.Object {
     obj: FaxAccount,
     event: OnIncomingMessageRemoved,
     argNames: js.Tuple3[pFaxAccount, bstrMessageId, fRemovedFromReceiveFolder],
-    handler: js.ThisFunction1[
-      /* this */ FaxAccount, 
-      /* parameter */ AnonBstrMessageIdFRemovedFromReceiveFolder, 
-      Unit
-    ]
+    handler: js.ThisFunction1[/* this */ FaxAccount, /* parameter */ AnonFRemovedFromReceiveFolder, Unit]
   ): Unit = js.native
   def on(
     obj: FaxAccount,
@@ -135,7 +131,7 @@ trait ActiveXObject extends js.Object {
     obj: FaxAccount,
     event: OnOutgoingJobChanged,
     argNames: js.Tuple3[pFaxAccount, bstrJobId, pJobStatus],
-    handler: js.ThisFunction1[/* this */ FaxAccount, /* parameter */ AnonBstrJobIdPFaxAccount, Unit]
+    handler: js.ThisFunction1[/* this */ FaxAccount, /* parameter */ AnonPFaxAccount, Unit]
   ): Unit = js.native
   def on(
     obj: FaxAccount,
@@ -201,7 +197,7 @@ trait ActiveXObject extends js.Object {
     obj: FaxServer,
     event: OnIncomingJobChanged,
     argNames: js.Tuple3[pFaxServer, bstrJobId, pJobStatus],
-    handler: js.ThisFunction1[/* this */ FaxServer, /* parameter */ AnonBstrJobIdPFaxServerPJobStatus, Unit]
+    handler: js.ThisFunction1[/* this */ FaxServer, /* parameter */ AnonPJobStatus, Unit]
   ): Unit = js.native
   def on(
     obj: FaxServer,
@@ -237,7 +233,7 @@ trait ActiveXObject extends js.Object {
     obj: FaxServer,
     event: OnOutgoingJobChanged,
     argNames: js.Tuple3[pFaxServer, bstrJobId, pJobStatus],
-    handler: js.ThisFunction1[/* this */ FaxServer, /* parameter */ AnonBstrJobIdPFaxServerPJobStatus, Unit]
+    handler: js.ThisFunction1[/* this */ FaxServer, /* parameter */ AnonPJobStatus, Unit]
   ): Unit = js.native
   def on(
     obj: FaxServer,

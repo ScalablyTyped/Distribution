@@ -2,10 +2,10 @@ package typings.jupyterlabObservables.observablelistMod
 
 import typings.jupyterlabObservables.jupyterlabObservablesStrings.List
 import typings.jupyterlabObservables.observablelistMod.IObservableList.IChangedArgs
-import typings.phosphorAlgorithm.iterMod.IIterator
-import typings.phosphorAlgorithm.iterMod.IterableOrArrayLike
-import typings.phosphorDisposable.mod.IDisposable
-import typings.phosphorSignaling.mod.ISignal
+import typings.luminoAlgorithm.iterMod.IIterator
+import typings.luminoAlgorithm.iterMod.IterableOrArrayLike
+import typings.luminoDisposable.mod.IDisposable
+import typings.luminoSignaling.mod.ISignal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,7 +46,7 @@ trait IObservableList_[T] extends IDisposable {
     * #### Undefined Behavior
     * An `index` which is non-integral or out of range.
     */
-  def get(index: Double): js.UndefOr[T]
+  def get(index: Double): T
   /**
     * Insert a value into the list at a specific index.
     *
@@ -222,7 +222,7 @@ object IObservableList_ {
     changed: ISignal[IObservableList_[T], IChangedArgs[T]],
     clear: () => Unit,
     dispose: () => Unit,
-    get: Double => js.UndefOr[T],
+    get: Double => T,
     insert: (Double, T) => Unit,
     insertAll: (Double, IterableOrArrayLike[T]) => Unit,
     isDisposed: Boolean,

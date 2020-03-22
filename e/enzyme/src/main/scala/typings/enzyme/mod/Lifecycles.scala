@@ -1,7 +1,7 @@
 package typings.enzyme.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.enzyme.AnonCalledByRenderer
+import typings.enzyme.AnonDictkey
 import typings.enzyme.AnonHasShouldComponentUpdateBug
 import typings.enzyme.AnonOnSetState
 import scala.scalajs.js
@@ -12,7 +12,7 @@ trait Lifecycles
   extends // TODO Maybe some life cycle are missing
 /* lifecycleName */ StringDictionary[js.Any] {
   var componentDidUpdate: js.UndefOr[AnonOnSetState] = js.undefined
-  var getChildContext: js.UndefOr[AnonCalledByRenderer] = js.undefined
+  var getChildContext: js.UndefOr[AnonDictkey] = js.undefined
   var getDerivedStateFromProps: js.UndefOr[AnonHasShouldComponentUpdateBug | Boolean] = js.undefined
   var setState: js.UndefOr[js.Any] = js.undefined
 }
@@ -23,7 +23,7 @@ object Lifecycles {
     StringDictionary: // TODO Maybe some life cycle are missing
   /* lifecycleName */ StringDictionary[js.Any] = null,
     componentDidUpdate: AnonOnSetState = null,
-    getChildContext: AnonCalledByRenderer = null,
+    getChildContext: AnonDictkey = null,
     getDerivedStateFromProps: AnonHasShouldComponentUpdateBug | Boolean = null,
     setState: js.Any = null
   ): Lifecycles = {

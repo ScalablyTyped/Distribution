@@ -1,6 +1,6 @@
 package typings.jsrsasign.jsrsasign.KJUR.asn1.x509
 
-import typings.jsrsasign.AnonArrayUri
+import typings.jsrsasign.AnonUri
 import typings.jsrsasign.jsrsasign.KJUR.asn1.ASN1Object
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -39,7 +39,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("jsrsasign.KJUR.asn1.x509.CRLDistributionPoints")
 @js.native
 class CRLDistributionPoints () extends Extension {
-  def this(params: AnonArrayUri) = this()
+  def this(params: AnonUri) = this()
   def getExtnValueHex(): String = js.native
   def setByDPArray(dpArray: js.Array[ASN1Object]): Unit = js.native
   def setByOneURI(uri: String): Unit = js.native

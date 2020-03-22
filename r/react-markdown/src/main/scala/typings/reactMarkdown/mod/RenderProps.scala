@@ -3,7 +3,7 @@ package typings.reactMarkdown.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.ReactNode
 import typings.react.mod.ReactType
-import typings.std.Partial
+import typings.reactMarkdown.PartialRemarkParseOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,7 +24,7 @@ object RenderProps {
     escapeHtml: js.UndefOr[Boolean] = js.undefined,
     includeNodeIndex: js.UndefOr[Boolean] = js.undefined,
     linkTarget: String | LinkTargetResolver = null,
-    parserOptions: Partial[RemarkParseOptions] = null,
+    parserOptions: PartialRemarkParseOptions = null,
     plugins: js.Array[_] | js.Function0[Unit] = null,
     rawSourcePos: js.UndefOr[Boolean] = js.undefined,
     renderers: StringDictionary[ReactType[_]] = null,

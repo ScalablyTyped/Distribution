@@ -5,7 +5,7 @@ import typings.react.mod.ReactNode
 import typings.react.mod._Global_.JSX.Element
 import typings.reactNative.mod.ScrollView
 import typings.rmcTabs.AnonComponent
-import typings.rmcTabs.TypeofClassDefaultTabBar
+import typings.rmcTabs.TypeofDefaultTabBar
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -45,7 +45,7 @@ class Tabs protected ()
 @JSImport("rmc-tabs/lib/Tabs.native", "Tabs")
 @js.native
 object Tabs extends js.Object {
-  var DefaultTabBar: TypeofClassDefaultTabBar = js.native
+  var DefaultTabBar: TypeofDefaultTabBar = js.native
   var defaultProps: PropsType = js.native
 }
 

@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "intl-messageformat-parser"
-version := "3.6.4-40a278"
+version := "3.6.4-c9c832"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "formatjs__intl-unified-numberformat" % "3.2.0-56864f",
-  "org.scalablytyped" %%% "formatjs__intl-utils" % "2.2.0-edddcf",
-  "org.scalablytyped" %%% "std" % "3.7-1b8369")
+  "org.scalablytyped" %%% "formatjs__intl-unified-numberformat" % "3.2.0-3a616d",
+  "org.scalablytyped" %%% "formatjs__intl-utils" % "2.2.0-c390d6",
+  "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

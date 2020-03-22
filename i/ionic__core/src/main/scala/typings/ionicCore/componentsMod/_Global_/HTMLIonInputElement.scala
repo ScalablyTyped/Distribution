@@ -22,7 +22,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.ionicCore.componentsMod.Components.IonInput because var conflicts: autocapitalize, spellcheck. Inlined accept, autocomplete, autocorrect, autofocus, clearInput, clearOnEdit, color, debounce, disabled, getInputElement, inputmode, max, maxlength, min, minlength, mode, multiple, name, pattern, placeholder, readonly, required, setFocus, size, step, `type`, value */ @js.native
+- typings.ionicCore.componentsMod.Components.IonInput because var conflicts: autocapitalize, autofocus, spellcheck. Inlined accept, autocomplete, autocorrect, clearInput, clearOnEdit, color, debounce, disabled, getInputElement, inputmode, max, maxlength, min, minlength, mode, multiple, name, pattern, placeholder, readonly, required, setFocus, size, step, `type`, value */ @js.native
 trait HTMLIonInputElement extends HTMLStencilElement {
   /**
     * If the value of the type attribute is `"file"`, then this attribute will indicate the types of files that the server accepts, otherwise it will be ignored. The value must be a comma-separated list of unique content type specifiers.
@@ -36,10 +36,6 @@ trait HTMLIonInputElement extends HTMLStencilElement {
     * Whether auto correction should be enabled when the user is entering/editing the text value.
     */
   var autocorrect: on | off = js.native
-  /**
-    * This Boolean attribute lets you specify that a form control should have input focus when the page loads.
-    */
-  var autofocus: Boolean = js.native
   /**
     * If `true`, a clear icon will appear in the input when there is a value. Clicking it clears the input.
     */
@@ -123,7 +119,7 @@ trait HTMLIonInputElement extends HTMLStencilElement {
   /**
     * The value of the input.
     */
-  var value: js.UndefOr[String | Null] = js.native
+  var value: js.UndefOr[String | Double | Null] = js.native
   /**
     * Returns the native `<input>` element used under the hood.
     */

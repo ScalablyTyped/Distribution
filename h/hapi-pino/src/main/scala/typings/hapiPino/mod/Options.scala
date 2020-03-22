@@ -1,8 +1,9 @@
 package typings.hapiPino.mod
 
 import typings.hapiHapi.mod.Request
-import typings.hapiPino.AnonKey
+import typings.hapiPino.AnonDictkey
 import typings.hapiPino.hapiPinoBooleans.`false`
+import typings.hapiPino.keyinLevelstring
 import typings.node.processMod._Global_.NodeJS.WriteStream
 import typings.pino.mod.Level
 import typings.pino.mod.Logger
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
   var allTags: js.UndefOr[Level] = js.undefined
-  var getChildBindings: js.UndefOr[js.Function1[/* req */ Request, AnonKey]] = js.undefined
+  var getChildBindings: js.UndefOr[js.Function1[/* req */ Request, AnonDictkey]] = js.undefined
   var ignorePaths: js.UndefOr[js.Array[String]] = js.undefined
   var instance: js.UndefOr[Logger] = js.undefined
   var level: js.UndefOr[Level] = js.undefined
@@ -28,18 +29,14 @@ trait Options extends js.Object {
   var redact: js.UndefOr[js.Array[String] | redactOptions] = js.undefined
   var serializers: js.UndefOr[Serializers] = js.undefined
   var stream: js.UndefOr[WriteStream] = js.undefined
-  var tags: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in pino.pino.Level ]:? string}
-    */ typings.hapiPino.hapiPinoStrings.Options with js.Any
-  ] = js.undefined
+  var tags: js.UndefOr[keyinLevelstring] = js.undefined
 }
 
 object Options {
   @scala.inline
   def apply(
     allTags: Level = null,
-    getChildBindings: /* req */ Request => AnonKey = null,
+    getChildBindings: /* req */ Request => AnonDictkey = null,
     ignorePaths: js.Array[String] = null,
     instance: Logger = null,
     level: Level = null,
@@ -53,9 +50,7 @@ object Options {
     redact: js.Array[String] | redactOptions = null,
     serializers: Serializers = null,
     stream: WriteStream = null,
-    tags: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in pino.pino.Level ]:? string}
-    */ typings.hapiPino.hapiPinoStrings.Options with js.Any = null
+    tags: keyinLevelstring = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (allTags != null) __obj.updateDynamic("allTags")(allTags.asInstanceOf[js.Any])

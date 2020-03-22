@@ -2,9 +2,9 @@ package typings.gapiClientMl.gapi.client.ml
 
 import typings.gapiClient.gapi.client.Request_
 import typings.gapiClientMl.AnonAccesstoken
-import typings.gapiClientMl.AnonAccesstokenAlt
-import typings.gapiClientMl.AnonAccesstokenAltBearertokenCallbackFields
-import typings.gapiClientMl.AnonAccesstokenAltBearertokenCallbackFieldsKey
+import typings.gapiClientMl.AnonAlt
+import typings.gapiClientMl.AnonFields
+import typings.gapiClientMl.AnonKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,7 +20,7 @@ trait VersionsResource extends js.Object {
     * new version to be the default, you must call
     * [projects.models.versions.setDefault](/ml-engine/reference/rest/v1/projects.models.versions/setDefault).
     */
-  def create(request: AnonAccesstokenAlt): Request_[GoogleLongrunningOperation]
+  def create(request: AnonAlt): Request_[GoogleLongrunningOperation]
   /**
     * Deletes a model version.
     *
@@ -47,13 +47,13 @@ trait VersionsResource extends js.Object {
     * only a limited number of results at a time, you can request that the list
     * be retrieved in batches (called pages):
     */
-  def list(request: AnonAccesstokenAltBearertokenCallbackFields): Request_[GoogleCloudMlV1ListVersionsResponse]
+  def list(request: AnonFields): Request_[GoogleCloudMlV1ListVersionsResponse]
   /**
     * Updates the specified Version resource.
     *
     * Currently the only supported field to update is `description`.
     */
-  def patch(request: AnonAccesstokenAltBearertokenCallbackFieldsKey): Request_[GoogleLongrunningOperation]
+  def patch(request: AnonKey): Request_[GoogleLongrunningOperation]
   /**
     * Designates a version to be the default for the model.
     *
@@ -70,11 +70,11 @@ trait VersionsResource extends js.Object {
 object VersionsResource {
   @scala.inline
   def apply(
-    create: AnonAccesstokenAlt => Request_[GoogleLongrunningOperation],
+    create: AnonAlt => Request_[GoogleLongrunningOperation],
     delete: AnonAccesstoken => Request_[GoogleLongrunningOperation],
     get: AnonAccesstoken => Request_[GoogleCloudMlV1Version],
-    list: AnonAccesstokenAltBearertokenCallbackFields => Request_[GoogleCloudMlV1ListVersionsResponse],
-    patch: AnonAccesstokenAltBearertokenCallbackFieldsKey => Request_[GoogleLongrunningOperation],
+    list: AnonFields => Request_[GoogleCloudMlV1ListVersionsResponse],
+    patch: AnonKey => Request_[GoogleLongrunningOperation],
     setDefault: AnonAccesstoken => Request_[GoogleCloudMlV1Version]
   ): VersionsResource = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), setDefault = js.Any.fromFunction1(setDefault))

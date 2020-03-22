@@ -1,7 +1,7 @@
 
 # Scala.js typings for stellar-sdk
 
-Typings are for version 3.3.0
+Typings are for version 4.0.1
 
 ## Library description:
 stellar-sdk is a library for working with the Stellar Horizon server.

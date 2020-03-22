@@ -1,56 +1,32 @@
 package typings.fastGlob.readerMod
 
-import typings.fastGlob.entriesMod.Entry
-import typings.fastGlob.entriesMod.EntryItem
-import typings.fastGlob.optionsMod.IOptions
-import typings.fastGlob.tasksMod.ITask
-import typings.micromatch.mod.Options
-import typings.node.NodeJS.ErrnoException
+import typings.fastGlob.typesMod.Entry
+import typings.fastGlob.typesMod.ErrnoException
+import typings.fastGlob.typesMod.Pattern
+import typings.fastGlob.typesMod.ReaderOptions
+import typings.node.fsMod.Stats
+import typings.nodelibFsStat.mod.Settings
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("fast-glob/out/providers/reader", JSImport.Default)
+@JSImport("fast-glob/out/readers/reader", JSImport.Default)
 @js.native
 abstract class default[T] protected () extends Reader[T] {
-  def this(options: IOptions[EntryItem]) = this()
+  def this(_settings: typings.fastGlob.settingsMod.default) = this()
   /* CompleteClass */
-  override val deepFilter: typings.fastGlob.deepMod.default = js.native
+  override val _fsStatSettings: Settings = js.native
   /* CompleteClass */
-  override val entryFilter: typings.fastGlob.entryMod.default = js.native
+  override val _settings: typings.fastGlob.settingsMod.default = js.native
   /* CompleteClass */
-  override val micromatchOptions: js.Any = js.native
+  /* protected */ override def _getFullEntryPath(filepath: String): String = js.native
   /* CompleteClass */
-  override val options: IOptions[EntryItem] = js.native
-  /**
-    * Returns options for micromatch.
-    */
+  /* protected */ override def _isFatalError(error: ErrnoException): Boolean = js.native
   /* CompleteClass */
-  override def getMicromatchOptions(): Options = js.native
-  /**
-    * Returns options for reader.
-    */
+  /* protected */ override def _makeEntry(stats: Stats, pattern: Pattern): Entry = js.native
   /* CompleteClass */
-  override def getReaderOptions(task: ITask): typings.mrmlncReaddirEnhanced.mod.Options = js.native
-  /**
-    * Returns root path to scanner.
-    */
+  override def dynamic(root: String, options: ReaderOptions): T = js.native
   /* CompleteClass */
-  override def getRootDirectory(task: ITask): String = js.native
-  /**
-    * Returns true if error has ENOENT code.
-    */
-  /* CompleteClass */
-  override def isEnoentCodeError(err: ErrnoException): Boolean = js.native
-  /**
-    * The main logic of reading the directories that must be implemented by each providers.
-    */
-  /* CompleteClass */
-  override def read(_task: ITask): T = js.native
-  /**
-    * Returns transformed entry.
-    */
-  /* CompleteClass */
-  override def transform(entry: Entry): EntryItem = js.native
+  override def static(patterns: js.Array[Pattern], options: ReaderOptions): T = js.native
 }
 

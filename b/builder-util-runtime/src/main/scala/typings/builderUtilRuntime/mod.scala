@@ -124,10 +124,10 @@ object mod extends js.Object {
   @js.native
   object UUID extends js.Object {
     val OID: Buffer = js.native
-    def check(uuid: String): `false` | AnonFormat | AnonFormatVariant = js.native
-    def check(uuid: String, offset: Double): `false` | AnonFormat | AnonFormatVariant = js.native
-    def check(uuid: Buffer): `false` | AnonFormat | AnonFormatVariant = js.native
-    def check(uuid: Buffer, offset: Double): `false` | AnonFormat | AnonFormatVariant = js.native
+    def check(uuid: String): `false` | AnonFormat | AnonVariant = js.native
+    def check(uuid: String, offset: Double): `false` | AnonFormat | AnonVariant = js.native
+    def check(uuid: Buffer): `false` | AnonFormat | AnonVariant = js.native
+    def check(uuid: Buffer, offset: Double): `false` | AnonFormat | AnonVariant = js.native
     def parse(input: String): Buffer = js.native
     def v5(name: String, namespace: Buffer): js.Any = js.native
     def v5(name: Buffer, namespace: Buffer): js.Any = js.native

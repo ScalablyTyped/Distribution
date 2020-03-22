@@ -1,40 +1,56 @@
 package typings.reactNavigationStack
 
-import typings.react.mod.ComponentProps
-import typings.reactNavigationStack.backButtonWebMod.Props
+import typings.reactNavigationStack.borderlessButtonMod.Props
+import typings.reactNavigationStack.vendorTypesMod.StackHeaderLeftButtonProps
+import typings.reactNavigationStack.vendorTypesMod.StackHeaderProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait reactNavigationStackProps {
   @scala.inline
-  def BackButtonWebProps: Props.type = typings.reactNavigationStack.backButtonWebMod.Props
-  type BackButtonWebProps = Props
+  def BorderlessButtonProps: Props.type = typings.reactNavigationStack.borderlessButtonMod.Props
+  type BorderlessButtonProps = Props
   @scala.inline
-  def BorderlessButtonProps: typings.reactNavigationStack.borderlessButtonMod.Props.type = typings.reactNavigationStack.borderlessButtonMod.Props
-  type BorderlessButtonProps = typings.reactNavigationStack.borderlessButtonMod.Props
+  def CardProps: typings.reactNavigationStack.cardMod.Props.type = typings.reactNavigationStack.cardMod.Props
+  type CardProps = typings.reactNavigationStack.cardMod.Props
+  type CardContainerProps[T0, R] = js.Function1[T0, R]
   @scala.inline
-  def HeaderProps: PickPropsscenenavigationpositionlayoutPresetbackTi.type = typings.reactNavigationStack.PickPropsscenenavigationpositionlayoutPresetbackTi
-  type HeaderProps = PickPropsscenenavigationpositionlayoutPresetbackTi
+  def CardStackProps: typings.reactNavigationStack.cardStackMod.Props.type = typings.reactNavigationStack.cardStackMod.Props
+  type CardStackProps = typings.reactNavigationStack.cardStackMod.Props
   @scala.inline
-  def HeaderBackButtonProps: typings.reactNavigationStack.headerBackButtonMod.Props.type = typings.reactNavigationStack.headerBackButtonMod.Props
+  def HeaderProps: StackHeaderProps.type = typings.reactNavigationStack.vendorTypesMod.StackHeaderProps
+  type HeaderProps = StackHeaderProps
+  @scala.inline
+  def HeaderBackButtonProps: StackHeaderLeftButtonProps.type = typings.reactNavigationStack.vendorTypesMod.StackHeaderLeftButtonProps
   type HeaderBackButtonProps = typings.reactNavigationStack.headerBackButtonMod.Props
-  type HeaderTitleProps[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */] = ComponentProps[T]
   @scala.inline
-  def ModularHeaderBackButtonProps: typings.reactNavigationStack.modularHeaderBackButtonMod.Props.type = typings.reactNavigationStack.modularHeaderBackButtonMod.Props
-  type ModularHeaderBackButtonProps = typings.reactNavigationStack.modularHeaderBackButtonMod.Props
+  def HeaderBackgroundProps: typings.reactNavigationStack.headerBackgroundMod.Props.type = typings.reactNavigationStack.headerBackgroundMod.Props
+  type HeaderBackgroundProps = typings.reactNavigationStack.headerBackgroundMod.Props
   @scala.inline
-  def StackViewProps: typings.reactNavigationStack.stackViewMod.Props.type = typings.reactNavigationStack.stackViewMod.Props
-  type StackViewProps = typings.reactNavigationStack.stackViewMod.Props
+  def HeaderContainerProps: typings.reactNavigationStack.headerContainerMod.Props.type = typings.reactNavigationStack.headerContainerMod.Props
+  type HeaderContainerProps = typings.reactNavigationStack.headerContainerMod.Props
+  type HeaderSegmentProps = typings.reactNavigationStack.headerSegmentMod.Props
   @scala.inline
-  def StackViewCardProps: PickPropsstylechildrenscenenavigationrealPositiona.type = typings.reactNavigationStack.PickPropsstylechildrenscenenavigationrealPositiona
-  type StackViewCardProps = PickPropsstylechildrenscenenavigationrealPositiona
+  def HeaderTitleProps: typings.reactNavigationStack.headerTitleMod.Props.type = typings.reactNavigationStack.headerTitleMod.Props
+  type HeaderTitleProps = typings.reactNavigationStack.headerTitleMod.Props
   @scala.inline
-  def StackViewLayoutProps: PickPropsmodeheaderModeheaderLayoutPresetheaderTra.type = typings.reactNavigationStack.PickPropsmodeheaderModeheaderLayoutPresetheaderTra
-  type StackViewLayoutProps = PickPropsmodeheaderModeheaderLayoutPresetheaderTra
+  def KeyboardManagerProps: typings.reactNavigationStack.keyboardManagerMod.Props.type = typings.reactNavigationStack.keyboardManagerMod.Props
+  type KeyboardManagerProps = typings.reactNavigationStack.keyboardManagerMod.Props
+  @scala.inline
+  def MaskedViewProps: typings.reactNavigationStack.maskedViewMod.Props.type = typings.reactNavigationStack.maskedViewMod.Props
+  type MaskedViewProps = typings.reactNavigationStack.maskedViewMod.Props
+  @scala.inline
+  def MaskedViewDotnativeProps: typings.reactNavigationStack.maskedViewNativeMod.Props.type = typings.reactNavigationStack.maskedViewNativeMod.Props
+  type MaskedViewDotnativeProps = typings.reactNavigationStack.maskedViewNativeMod.Props
+  @scala.inline
+  def SafeAreaProviderCompatProps: typings.reactNavigationStack.safeAreaProviderCompatMod.Props.type = typings.reactNavigationStack.safeAreaProviderCompatMod.Props
+  type SafeAreaProviderCompatProps = typings.reactNavigationStack.safeAreaProviderCompatMod.Props
+  @scala.inline
+  def StackViewProps: typings.reactNavigationStack.viewsStackViewMod.Props.type = typings.reactNavigationStack.viewsStackViewMod.Props
+  type StackViewProps = typings.reactNavigationStack.viewsStackViewMod.Props
   @scala.inline
   def TouchableItemProps: typings.reactNavigationStack.touchableItemMod.Props.type = typings.reactNavigationStack.touchableItemMod.Props
   type TouchableItemProps = typings.reactNavigationStack.touchableItemMod.Props
-  type TransitionerProps = typings.reactNavigationStack.transitionerMod.Props
 }
 

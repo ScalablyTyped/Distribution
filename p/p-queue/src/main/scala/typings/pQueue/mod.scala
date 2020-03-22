@@ -5,6 +5,7 @@ import typings.pQueue.optionsMod.Options
 import typings.pQueue.optionsMod.QueueAddOptions
 import typings.pQueue.pQueueStrings.active
 import typings.pQueue.queueMod.Queue
+import typings.pQueue.queueMod.RunFunction
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object mod extends js.Object {
   @js.native
-  trait PQueue[QueueType /* <: Queue[EnqueueOptionsType] */, EnqueueOptionsType /* <: QueueAddOptions */] extends ^[active] {
+  trait PQueue[QueueType /* <: Queue[RunFunction, EnqueueOptionsType] */, EnqueueOptionsType /* <: QueueAddOptions */] extends ^[active] {
     val _carryoverConcurrencyCount: js.Any = js.native
     var _concurrency: js.Any = js.native
     var _initializeIntervalIfNeeded: js.Any = js.native
@@ -89,6 +90,11 @@ object mod extends js.Object {
       */
     def size(): Double = js.native
     /**
+      Size of the queue, filtered by the given options.
+      For example, this can be used to find the number of items remaining in the queue with a specific priority level.
+      */
+    def sizeBy(options: Partial[EnqueueOptionsType]): Double = js.native
+    /**
       Start (or resume) executing enqueued tasks within concurrency limit. No need to call this if queue is not paused (via `options.autoStart = false` or by `.pause()` method.)
       */
     def start(): this.type = js.native
@@ -102,7 +108,7 @@ object mod extends js.Object {
   }
   
   @js.native
-  class default[QueueType /* <: Queue[EnqueueOptionsType] */, EnqueueOptionsType /* <: QueueAddOptions */] () extends PQueue[QueueType, EnqueueOptionsType] {
+  class default[QueueType /* <: Queue[RunFunction, EnqueueOptionsType] */, EnqueueOptionsType /* <: QueueAddOptions */] () extends PQueue[QueueType, EnqueueOptionsType] {
     def this(options: Options[QueueType, EnqueueOptionsType]) = this()
   }
   

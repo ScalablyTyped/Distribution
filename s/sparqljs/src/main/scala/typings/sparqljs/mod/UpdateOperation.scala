@@ -24,6 +24,24 @@ trait UpdateOperation extends js.Object
 
 object UpdateOperation {
   @scala.inline
+  def LoadOperation(destination: String | `false`, silent: Boolean, source: String, `type`: load): UpdateOperation = {
+    val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[UpdateOperation]
+  }
+  @scala.inline
+  def ClearDropOperation(graph: GraphReference, silent: Boolean, `type`: clear | drop): UpdateOperation = {
+    val __obj = js.Dynamic.literal(graph = graph.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[UpdateOperation]
+  }
+  @scala.inline
+  def CreateOperation(graph: String, silent: Boolean, `type`: create): UpdateOperation = {
+    val __obj = js.Dynamic.literal(graph = graph.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[UpdateOperation]
+  }
+  @scala.inline
   def InsertDeleteOperation(
     updateType: insert | delete | deletewhere | insertdelete,
     delete: js.Array[Quads] = null,
@@ -39,26 +57,8 @@ object UpdateOperation {
     __obj.asInstanceOf[UpdateOperation]
   }
   @scala.inline
-  def ClearDropOperation(graph: GraphReference, silent: Boolean, `type`: clear | drop): UpdateOperation = {
-    val __obj = js.Dynamic.literal(graph = graph.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[UpdateOperation]
-  }
-  @scala.inline
-  def LoadOperation(destination: String | `false`, silent: Boolean, source: String, `type`: load): UpdateOperation = {
-    val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[UpdateOperation]
-  }
-  @scala.inline
   def CopyMoveAddOperation(destination: GraphOrDefault, silent: Boolean, source: GraphOrDefault, `type`: copy | move | add): UpdateOperation = {
     val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[UpdateOperation]
-  }
-  @scala.inline
-  def CreateOperation(graph: String, silent: Boolean, `type`: create): UpdateOperation = {
-    val __obj = js.Dynamic.literal(graph = graph.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateOperation]
   }

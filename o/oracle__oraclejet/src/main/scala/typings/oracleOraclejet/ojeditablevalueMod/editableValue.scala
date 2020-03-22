@@ -1,9 +1,9 @@
 package typings.oracleOraclejet.ojeditablevalueMod
 
 import typings.oracleOraclejet.AnonAction
-import typings.oracleOraclejet.AnonActionElement
 import typings.oracleOraclejet.AnonConverterHint
 import typings.oracleOraclejet.AnonDefinition
+import typings.oracleOraclejet.AnonElement
 import typings.oracleOraclejet.AnonInstruction
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.mod.baseComponent
@@ -247,6 +247,6 @@ trait editableValue[V, SP /* <: editableValueSettableProperties[V, SV, RV] */, S
 @js.native
 object editableValue extends js.Object {
   type ojAnimateEnd = CustomEvent[AnonAction]
-  type ojAnimateStart = CustomEvent[AnonActionElement]
+  type ojAnimateStart = CustomEvent[AnonElement]
 }
 

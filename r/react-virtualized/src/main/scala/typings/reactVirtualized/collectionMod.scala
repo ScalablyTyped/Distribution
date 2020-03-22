@@ -14,7 +14,7 @@ object collectionMod extends js.Object {
   /* static members */
   @js.native
   object Collection extends js.Object {
-    var defaultProps: AnonArialabelCellGroupRenderer = js.native
+    var defaultProps: AnonCellGroupRenderer = js.native
     var propTypes: AnonArialabel = js.native
   }
   

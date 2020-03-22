@@ -1,10 +1,6 @@
 package typings.oauth2Server.mod
 
-import typings.oauth2Server.oauth2ServerStrings.authorizationCode
-import typings.oauth2Server.oauth2ServerStrings.expiresAt
-import typings.oauth2Server.oauth2ServerStrings.redirectUri
-import typings.oauth2Server.oauth2ServerStrings.scope
-import typings.std.Pick
+import typings.oauth2Server.PickAuthorizationCodeauth
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -68,16 +64,7 @@ trait AuthorizationCodeModel
     * Invoked to save an authorization code.
     *
     */
-  def saveAuthorizationCode(
-    code: Pick[AuthorizationCode, authorizationCode | expiresAt | redirectUri | scope],
-    client: Client,
-    user: User
-  ): js.Promise[AuthorizationCode | Falsey] = js.native
-  def saveAuthorizationCode(
-    code: Pick[AuthorizationCode, authorizationCode | expiresAt | redirectUri | scope],
-    client: Client,
-    user: User,
-    callback: Callback[AuthorizationCode]
-  ): js.Promise[AuthorizationCode | Falsey] = js.native
+  def saveAuthorizationCode(code: PickAuthorizationCodeauth, client: Client, user: User): js.Promise[AuthorizationCode | Falsey] = js.native
+  def saveAuthorizationCode(code: PickAuthorizationCodeauth, client: Client, user: User, callback: Callback[AuthorizationCode]): js.Promise[AuthorizationCode | Falsey] = js.native
 }
 

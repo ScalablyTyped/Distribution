@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 object mod extends js.Object {
   // TODO: Remove this for the next major release
   @JSName("default")
-  var default_Original: AnonArray = js.native
+  var default_Original: AnonCall = js.native
   /**
   	Move an array item to a different position.
   	@param array - The array to move the item in.

@@ -1,6 +1,6 @@
 package typings.vsoNodeApi.policyInterfacesMod
 
-import typings.vsoNodeApi.AnonEnumValuesAnonApprovedBroken
+import typings.vsoNodeApi.AnonEnumValuesAnonBroken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 object TypeInfo extends js.Object {
   var PolicyConfiguration: js.Any = js.native
   var PolicyEvaluationRecord: js.Any = js.native
-  var PolicyEvaluationStatus: AnonEnumValuesAnonApprovedBroken = js.native
+  var PolicyEvaluationStatus: AnonEnumValuesAnonBroken = js.native
 }
 

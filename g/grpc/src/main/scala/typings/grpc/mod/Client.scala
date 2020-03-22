@@ -117,7 +117,7 @@ class Client protected () extends js.Object {
     serialize: serialize[RequestType],
     deserialize: deserialize[ResponseType],
     argument: RequestType
-  ): ClientReadableStream[RequestType] = js.native
+  ): ClientReadableStream[ResponseType] = js.native
   def makeServerStreamRequest[RequestType, ResponseType](
     method: String,
     serialize: serialize[RequestType],
@@ -125,14 +125,14 @@ class Client protected () extends js.Object {
     argument: RequestType,
     metadata: Null,
     options: CallOptions
-  ): ClientReadableStream[RequestType] = js.native
+  ): ClientReadableStream[ResponseType] = js.native
   def makeServerStreamRequest[RequestType, ResponseType](
     method: String,
     serialize: serialize[RequestType],
     deserialize: deserialize[ResponseType],
     argument: RequestType,
     metadata: Metadata
-  ): ClientReadableStream[RequestType] = js.native
+  ): ClientReadableStream[ResponseType] = js.native
   def makeServerStreamRequest[RequestType, ResponseType](
     method: String,
     serialize: serialize[RequestType],
@@ -140,7 +140,7 @@ class Client protected () extends js.Object {
     argument: RequestType,
     metadata: Metadata,
     options: CallOptions
-  ): ClientReadableStream[RequestType] = js.native
+  ): ClientReadableStream[ResponseType] = js.native
   def makeUnaryRequest[RequestType, ResponseType](
     method: String,
     serialize: serialize[RequestType],

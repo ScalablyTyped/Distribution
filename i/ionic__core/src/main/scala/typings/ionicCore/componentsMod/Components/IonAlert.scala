@@ -2,9 +2,9 @@ package typings.ionicCore.componentsMod.Components
 
 import typings.ionicCore.alertInterfaceMod.AlertButton
 import typings.ionicCore.alertInterfaceMod.AlertInput
+import typings.ionicCore.animationInterfaceMod.AnimationBuilder
 import typings.ionicCore.ionicCoreStrings.ios
 import typings.ionicCore.ionicCoreStrings.md
-import typings.ionicCore.oldAnimationAnimationInterfaceMod.AnimationBuilder
 import typings.ionicCore.overlaysInterfaceMod.OverlayEventDetail
 import scala.scalajs.js
 import scala.scalajs.js.`|`

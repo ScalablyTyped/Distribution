@@ -16,7 +16,7 @@ TBase, // Union of keys to be selected
 // In intermediate stages this may be never.
 TKeys /* <: String */, // Changes how the resolution should behave if TKeys is never.
 // If true, then we assume that some keys were selected, and if TKeys is never, we will fall back to any.
-// If false, and TKeys is never, then we select TBase in its entirity
+// If false, and TKeys is never, then we select TBase in its entirety
 THasSelect /* <: `true` | `false` */, // Mapping of aliases <key in result> -> <key in TBase>
 TAliasMapping /* <: js.Object */, // If enabled, then instead of extracting a partial, during resolution
 // we will pick just a single property.

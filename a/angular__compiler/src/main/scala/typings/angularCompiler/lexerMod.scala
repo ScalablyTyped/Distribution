@@ -15,7 +15,8 @@ object lexerMod extends js.Object {
   
   @js.native
   class Token protected () extends js.Object {
-    def this(index: Double, `type`: TokenType, numValue: Double, strValue: String) = this()
+    def this(index: Double, end: Double, `type`: TokenType, numValue: Double, strValue: String) = this()
+    var end: Double = js.native
     var index: Double = js.native
     var numValue: Double = js.native
     var strValue: String = js.native

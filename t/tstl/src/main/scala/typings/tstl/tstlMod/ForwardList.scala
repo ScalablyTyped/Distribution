@@ -1,6 +1,7 @@
 package typings.tstl.tstlMod
 
 import typings.tstl.iforwarditeratorMod.IForwardIterator
+import typings.tstl.ipointerMod.IPointer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -54,6 +55,30 @@ object ForwardList extends js.Object {
   @js.native
   class Iterator[T] protected ()
     extends typings.tstl.forwardListMod.ForwardList.Iterator[T]
+  
+  /* static members */
+  @js.native
+  object Iterator extends js.Object {
+    /**
+      * @internal
+      */
+    def _Set_next[T](
+      it: typings.tstl.forwardListMod.ForwardList.Iterator[T],
+      next: typings.tstl.forwardListMod.ForwardList.Iterator[T]
+    ): Unit = js.native
+    /**
+      * @internal
+      */
+    def create[T](
+      source: IPointer[typings.tstl.forwardListMod.ForwardList[T]],
+      next: typings.tstl.forwardListMod.ForwardList.Iterator[T]
+    ): typings.tstl.forwardListMod.ForwardList.Iterator[T] = js.native
+    def create[T](
+      source: IPointer[typings.tstl.forwardListMod.ForwardList[T]],
+      next: typings.tstl.forwardListMod.ForwardList.Iterator[T],
+      value: T
+    ): typings.tstl.forwardListMod.ForwardList.Iterator[T] = js.native
+  }
   
 }
 

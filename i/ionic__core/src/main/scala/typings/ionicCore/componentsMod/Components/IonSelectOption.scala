@@ -10,10 +10,6 @@ trait IonSelectOption extends js.Object {
     */
   var disabled: Boolean
   /**
-    * If `true`, the element is selected.
-    */
-  var selected: Boolean
-  /**
     * The text value of the option.
     */
   var value: js.UndefOr[js.Any | Null] = js.undefined
@@ -21,8 +17,8 @@ trait IonSelectOption extends js.Object {
 
 object IonSelectOption {
   @scala.inline
-  def apply(disabled: Boolean, selected: Boolean, value: js.Any = null): IonSelectOption = {
-    val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any])
+  def apply(disabled: Boolean, value: js.Any = null): IonSelectOption = {
+    val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonSelectOption]
   }

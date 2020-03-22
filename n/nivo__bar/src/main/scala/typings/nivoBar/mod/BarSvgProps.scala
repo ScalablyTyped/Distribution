@@ -1,6 +1,6 @@
 package typings.nivoBar.mod
 
-import typings.nivoBar.dataFromindexeskeysLegendProps
+import typings.nivoBar.dataFromindexeskeysLegend
 import typings.nivoBar.nivoBarStrings.auto
 import typings.nivoBar.nivoBarStrings.grouped
 import typings.nivoBar.nivoBarStrings.horizontal
@@ -8,7 +8,7 @@ import typings.nivoBar.nivoBarStrings.stacked
 import typings.nivoBar.nivoBarStrings.vertical
 import typings.nivoColors.mod.InheritedColorProp
 import typings.nivoColors.mod.OrdinalColorsInstruction
-import typings.nivoCore.Anon
+import typings.nivoCore.AnonDictkey
 import typings.nivoCore.AnonId
 import typings.nivoCore.mod.Box
 import typings.nivoCore.mod.CartesianMarkerProps
@@ -29,15 +29,16 @@ trait BarSvgProps extends js.Object {
   var axisRight: js.UndefOr[Axis] = js.undefined
   var axisTop: js.UndefOr[Axis] = js.undefined
   var barComponent: js.UndefOr[StatelessComponent[BarItemProps]] = js.undefined
+  var borderColor: js.UndefOr[InheritedColorProp[BarDatumWithColor]] = js.undefined
   var borderRadius: js.UndefOr[Double] = js.undefined
   var borderWidth: js.UndefOr[Double] = js.undefined
   var colors: js.UndefOr[OrdinalColorsInstruction[_]] = js.undefined
   var data: js.Array[js.Object]
-  var defs: js.UndefOr[js.Array[AnonId]] = js.undefined
+  var defs: js.UndefOr[js.Array[AnonDictkey]] = js.undefined
   var enableGridX: js.UndefOr[Boolean] = js.undefined
   var enableGridY: js.UndefOr[Boolean] = js.undefined
   var enableLabel: js.UndefOr[Boolean] = js.undefined
-  var fill: js.UndefOr[js.Array[Anon[BarDatum]]] = js.undefined
+  var fill: js.UndefOr[js.Array[AnonId[BarDatum]]] = js.undefined
   var groupMode: js.UndefOr[stacked | grouped] = js.undefined
   var indexBy: js.UndefOr[String | IndexByFunc] = js.undefined
   var innerPadding: js.UndefOr[Double] = js.undefined
@@ -51,7 +52,7 @@ trait BarSvgProps extends js.Object {
   var labelTextColor: js.UndefOr[InheritedColorProp[BarDatumWithColor]] = js.undefined
   var layers: js.UndefOr[js.Array[Layer]] = js.undefined
   var layout: js.UndefOr[horizontal | vertical] = js.undefined
-  var legends: js.UndefOr[js.Array[dataFromindexeskeysLegendProps]] = js.undefined
+  var legends: js.UndefOr[js.Array[dataFromindexeskeysLegend]] = js.undefined
   var margin: js.UndefOr[Box] = js.undefined
   var markers: js.UndefOr[js.Array[CartesianMarkerProps]] = js.undefined
   var maxValue: js.UndefOr[Double | auto] = js.undefined
@@ -82,14 +83,15 @@ object BarSvgProps {
     axisRight: Axis = null,
     axisTop: Axis = null,
     barComponent: StatelessComponent[BarItemProps] = null,
+    borderColor: InheritedColorProp[BarDatumWithColor] = null,
     borderRadius: Int | Double = null,
     borderWidth: Int | Double = null,
     colors: OrdinalColorsInstruction[_] = null,
-    defs: js.Array[AnonId] = null,
+    defs: js.Array[AnonDictkey] = null,
     enableGridX: js.UndefOr[Boolean] = js.undefined,
     enableGridY: js.UndefOr[Boolean] = js.undefined,
     enableLabel: js.UndefOr[Boolean] = js.undefined,
-    fill: js.Array[Anon[BarDatum]] = null,
+    fill: js.Array[AnonId[BarDatum]] = null,
     groupMode: stacked | grouped = null,
     indexBy: String | IndexByFunc = null,
     innerPadding: Int | Double = null,
@@ -103,7 +105,7 @@ object BarSvgProps {
     labelTextColor: InheritedColorProp[BarDatumWithColor] = null,
     layers: js.Array[Layer] = null,
     layout: horizontal | vertical = null,
-    legends: js.Array[dataFromindexeskeysLegendProps] = null,
+    legends: js.Array[dataFromindexeskeysLegend] = null,
     margin: Box = null,
     markers: js.Array[CartesianMarkerProps] = null,
     maxValue: Double | auto = null,
@@ -124,6 +126,7 @@ object BarSvgProps {
     if (axisRight != null) __obj.updateDynamic("axisRight")(axisRight.asInstanceOf[js.Any])
     if (axisTop != null) __obj.updateDynamic("axisTop")(axisTop.asInstanceOf[js.Any])
     if (barComponent != null) __obj.updateDynamic("barComponent")(barComponent.asInstanceOf[js.Any])
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
     if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
     if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
     if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])

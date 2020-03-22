@@ -1,7 +1,7 @@
 
 # Scala.js typings for snake-case
 
-Typings are for version 2.1.0
+Typings are for version 3.0.3
 
 ## Library description:
 Transform into a lower case string with underscores between words

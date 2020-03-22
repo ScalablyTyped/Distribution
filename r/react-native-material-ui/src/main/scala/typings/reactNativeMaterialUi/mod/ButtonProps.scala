@@ -1,7 +1,7 @@
 package typings.reactNativeMaterialUi.mod
 
 import typings.react.mod._Global_.JSX.Element
-import typings.reactNativeMaterialUi.AnonContainerText
+import typings.reactNativeMaterialUi.AnonText
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ trait ButtonProps extends js.Object {
   var onPress: js.UndefOr[js.Function0[Unit]] = js.undefined
   var primary: js.UndefOr[Boolean] = js.undefined
   var raised: js.UndefOr[Boolean] = js.undefined
-  var style: js.UndefOr[AnonContainerText] = js.undefined
+  var style: js.UndefOr[AnonText] = js.undefined
   var testID: js.UndefOr[String] = js.undefined
   var text: String
   var upperCase: js.UndefOr[Boolean] = js.undefined
@@ -31,7 +31,7 @@ object ButtonProps {
     onPress: () => Unit = null,
     primary: js.UndefOr[Boolean] = js.undefined,
     raised: js.UndefOr[Boolean] = js.undefined,
-    style: AnonContainerText = null,
+    style: AnonText = null,
     testID: String = null,
     upperCase: js.UndefOr[Boolean] = js.undefined
   ): ButtonProps = {

@@ -1,7 +1,7 @@
 package typings.reactNavigation.mod
 
-import typings.reactNavigation.AnonActionKey
-import typings.reactNavigation.AnonParamsOptional
+import typings.reactNavigation.AnonKey
+import typings.reactNavigation.AnonParamsParams
 import typings.reactNavigation.reactNavigationStrings.refocus
 import typings.std.NonNullable
 import typings.std.Partial
@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 trait NavigationSwitchProp[State, Params] extends js.Object {
   var dispatch: NavigationDispatch = js.native
   var router: js.UndefOr[NavigationRouter[NavigationState, js.Object]] = js.native
-  var state: State with AnonParamsOptional[Params] = js.native
+  var state: State with AnonParamsParams[Params] = js.native
   def addListener(eventName: String, callback: NavigationEventCallback): NavigationEventSubscription = js.native
   def dangerouslyGetParent(): js.UndefOr[NavigationScreenProp[State, NavigationParams]] = js.native
   def dismiss(): Boolean = js.native
@@ -35,7 +35,7 @@ trait NavigationSwitchProp[State, Params] extends js.Object {
   def isFocused(): Boolean = js.native
   def jumpTo(routeName: String): Unit = js.native
   def jumpTo(routeName: String, key: String): Unit = js.native
-  def navigate[T /* <: NavigationParams */](options: AnonActionKey[T]): Boolean = js.native
+  def navigate[T /* <: NavigationParams */](options: AnonKey[T]): Boolean = js.native
   def navigate[T /* <: NavigationParams */](routeNameOrOptions: String): Boolean = js.native
   def navigate[T /* <: NavigationParams */](routeNameOrOptions: String, params: T): Boolean = js.native
   def navigate[T /* <: NavigationParams */](routeNameOrOptions: String, params: T, action: NavigationAction): Boolean = js.native

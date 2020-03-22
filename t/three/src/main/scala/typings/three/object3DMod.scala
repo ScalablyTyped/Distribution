@@ -58,7 +58,7 @@ object object3DMod extends js.Object {
     	 * Used to check whether this or derived classes are Object3Ds. Default is true.
     	 * You should not change this, as it is used internally for optimisation.
     	 */
-    var isObject3D: `true` = js.native
+    val isObject3D: `true` = js.native
     var layers: Layers = js.native
     /**
     	 * Local transform.
@@ -76,12 +76,12 @@ object object3DMod extends js.Object {
     	 * When this is set, it calculates the matrixWorld in that frame and resets this property to false.
     	 */
     var matrixWorldNeedsUpdate: Boolean = js.native
-    var modelViewMatrix: Matrix4 = js.native
+    val modelViewMatrix: Matrix4 = js.native
     /**
     	 * Optional name of the object (doesn't need to be unique).
     	 */
     var name: String = js.native
-    var normalMatrix: Matrix3 = js.native
+    val normalMatrix: Matrix3 = js.native
     /**
     	 * Object's parent in the scene graph.
     	 */
@@ -89,11 +89,11 @@ object object3DMod extends js.Object {
     /**
     	 * Object's local position.
     	 */
-    var position: Vector3 = js.native
+    val position: Vector3 = js.native
     /**
     	 * Global rotation.
     	 */
-    var quaternion: Quaternion = js.native
+    val quaternion: Quaternion = js.native
     /**
     	 * Material gets baked in shadow receiving.
     	 */
@@ -105,11 +105,11 @@ object object3DMod extends js.Object {
     /**
     	 * Object's local rotation (Euler angles), in radians.
     	 */
-    var rotation: Euler = js.native
+    val rotation: Euler = js.native
     /**
     	 * Object's local scale.
     	 */
-    var scale: Vector3 = js.native
+    val scale: Vector3 = js.native
     var `type`: String = js.native
     /**
     	 * Up direction.
@@ -134,7 +134,7 @@ object object3DMod extends js.Object {
     /**
     	 * This updates the position, rotation and scale with the matrix.
     	 */
-    def applyMatrix(matrix: Matrix4): Unit = js.native
+    def applyMatrix4(matrix: Matrix4): Unit = js.native
     def applyQuaternion(quaternion: Quaternion): this.type = js.native
     /**
     	 * Adds object as a child of this, while maintaining the object's world transform.

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 /** Properties of a ListIntentsRequest. */
 trait IListIntentsRequest extends js.Object {
   /** ListIntentsRequest intentView */
-  var intentView: js.UndefOr[IntentView | Null] = js.undefined
+  var intentView: js.UndefOr[IntentView | String | Null] = js.undefined
   /** ListIntentsRequest languageCode */
   var languageCode: js.UndefOr[String | Null] = js.undefined
   /** ListIntentsRequest pageSize */
@@ -21,7 +21,7 @@ trait IListIntentsRequest extends js.Object {
 object IListIntentsRequest {
   @scala.inline
   def apply(
-    intentView: IntentView = null,
+    intentView: IntentView | String = null,
     languageCode: String = null,
     pageSize: Int | Double = null,
     pageToken: String = null,

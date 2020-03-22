@@ -1,7 +1,9 @@
 package typings.reactNativeElements.mod
 
 import typings.react.mod.ReactElement
-import typings.reactNative.mod.ModalProps
+import typings.reactNative.mod.ModalBaseProps
+import typings.reactNative.mod.ModalPropsAndroid
+import typings.reactNative.mod.ModalPropsIOS
 import typings.reactNative.mod.NativeSyntheticEvent
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
@@ -21,7 +23,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait OverlayProps extends ModalProps {
+trait OverlayProps
+  extends ModalBaseProps
+     with ModalPropsIOS
+     with ModalPropsAndroid {
   /**
     * Border radius for the overlay
     *

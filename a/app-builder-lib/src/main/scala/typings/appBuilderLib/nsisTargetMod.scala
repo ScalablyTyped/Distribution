@@ -27,11 +27,6 @@ object nsisTargetMod extends js.Object {
     var configureDefinesForAllTypeOfInstaller: js.Any = js.native
     var executeMakensis: js.Any = js.native
     var getPreCompressedFileExtensions: js.Any = js.native
-    val installerFilenamePattern: String = js.native
-    val isBuildDifferentialAware: Boolean = js.native
-    val isPortable: js.Any = js.native
-    val isUnicodeEnabled: js.Any = js.native
-    val isWebInstaller: Boolean = js.native
     @JSName("options")
     val options_NsisTarget: NsisOptions = js.native
     val packageHelper: AppPackageHelper = js.native
@@ -40,6 +35,11 @@ object nsisTargetMod extends js.Object {
     def buildAppPackage(appOutDir: String, arch: Arch): js.Promise[PackageFileInfo] = js.native
     /* protected */ def configureDefines(oneClick: Boolean, defines: js.Any): js.Promise[_] = js.native
     /* protected */ def generateGitHubInstallerName(): String = js.native
+    /* protected */ def installerFilenamePattern(): String = js.native
+    def isBuildDifferentialAware(): Boolean = js.native
+    /* private */ def isPortable(): js.Any = js.native
+    /* private */ def isUnicodeEnabled(): js.Any = js.native
+    def isWebInstaller(): Boolean = js.native
   }
   
 }

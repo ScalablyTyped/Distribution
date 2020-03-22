@@ -1,9 +1,9 @@
 package typings.echarts.echarts.EChartOption
 
 import typings.echarts.AnonArguments
-import typings.echarts.AnonBackgroundColorBorderColor
-import typings.echarts.AnonBorderColorBorderType
-import typings.echarts.AnonItemStyleAnonBorderColorBorderType
+import typings.echarts.AnonBorderType
+import typings.echarts.AnonExtraCssText
+import typings.echarts.AnonItemStyleAnonBorderType
 import typings.echarts.echarts.EChartOption.SeriesCustom.DataObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -488,7 +488,7 @@ trait SeriesCustom_ extends js.Object {
   /**
     * @see https://echarts.apache.org/en/option.html#series-custom.emphasis
     */
-  var emphasis: js.UndefOr[AnonItemStyleAnonBorderColorBorderType] = js.undefined
+  var emphasis: js.UndefOr[AnonItemStyleAnonBorderType] = js.undefined
   /**
     * Define what is encoded to for each dimension of `data`.
     * For example:
@@ -552,7 +552,7 @@ trait SeriesCustom_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.itemStyle
     */
-  var itemStyle: js.UndefOr[AnonBorderColorBorderType] = js.undefined
+  var itemStyle: js.UndefOr[AnonBorderType] = js.undefined
   /**
     * Whether to enable highlighting chart when
     * [legend](https://echarts.apache.org/en/option.html#legend)
@@ -685,7 +685,7 @@ trait SeriesCustom_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.tooltip
     */
-  var tooltip: js.UndefOr[AnonBackgroundColorBorderColor] = js.undefined
+  var tooltip: js.UndefOr[AnonExtraCssText] = js.undefined
   /**
     * @default
     * "custom"
@@ -763,18 +763,18 @@ object SeriesCustom_ {
     ] = null,
     datasetIndex: Int | Double = null,
     dimensions: js.Array[_] = null,
-    emphasis: AnonItemStyleAnonBorderColorBorderType = null,
+    emphasis: AnonItemStyleAnonBorderType = null,
     encode: js.Object = null,
     geoIndex: Int | Double = null,
     id: String = null,
-    itemStyle: AnonBorderColorBorderType = null,
+    itemStyle: AnonBorderType = null,
     legendHoverLink: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
     polarIndex: Int | Double = null,
     renderItem: AnonArguments = null,
     seriesLayoutBy: String = null,
     silent: js.UndefOr[Boolean] = js.undefined,
-    tooltip: AnonBackgroundColorBorderColor = null,
+    tooltip: AnonExtraCssText = null,
     `type`: String = null,
     xAxisIndex: Int | Double = null,
     yAxisIndex: Int | Double = null,

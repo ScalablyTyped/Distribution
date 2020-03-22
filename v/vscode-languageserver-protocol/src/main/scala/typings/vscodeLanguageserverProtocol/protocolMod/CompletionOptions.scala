@@ -4,7 +4,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait CompletionOptions extends js.Object {
+trait CompletionOptions extends WorkDoneProgressOptions {
+  /**
+    * The list of all possible characters that commit a completion. This field can be used
+    * if clients don't support individual commmit characters per completion item. See
+    * `ClientCapabilities.textDocument.completion.completionItem.commitCharactersSupport`
+    *
+    * If a server provides both `allCommitCharacters` and commit characters on an individual
+    * completion item the ones on the completion item win.
+    *
+    * @since 3.2.0
+    */
+  var allCommitCharacters: js.UndefOr[js.Array[String]] = js.undefined
   /**
     * The server provides support to resolve additional
     * information for a completion item.
@@ -25,10 +36,17 @@ trait CompletionOptions extends js.Object {
 
 object CompletionOptions {
   @scala.inline
-  def apply(resolveProvider: js.UndefOr[Boolean] = js.undefined, triggerCharacters: js.Array[String] = null): CompletionOptions = {
+  def apply(
+    allCommitCharacters: js.Array[String] = null,
+    resolveProvider: js.UndefOr[Boolean] = js.undefined,
+    triggerCharacters: js.Array[String] = null,
+    workDoneProgress: js.UndefOr[Boolean] = js.undefined
+  ): CompletionOptions = {
     val __obj = js.Dynamic.literal()
+    if (allCommitCharacters != null) __obj.updateDynamic("allCommitCharacters")(allCommitCharacters.asInstanceOf[js.Any])
     if (!js.isUndefined(resolveProvider)) __obj.updateDynamic("resolveProvider")(resolveProvider.asInstanceOf[js.Any])
     if (triggerCharacters != null) __obj.updateDynamic("triggerCharacters")(triggerCharacters.asInstanceOf[js.Any])
+    if (!js.isUndefined(workDoneProgress)) __obj.updateDynamic("workDoneProgress")(workDoneProgress.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompletionOptions]
   }
 }

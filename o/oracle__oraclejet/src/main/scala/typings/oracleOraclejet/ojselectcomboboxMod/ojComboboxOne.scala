@@ -1,12 +1,12 @@
 package typings.oracleOraclejet.ojselectcomboboxMod
 
 import typings.oracleOraclejet.AnonAction
-import typings.oracleOraclejet.AnonActionElement
-import typings.oracleOraclejet.AnonChildKeysChildren
+import typings.oracleOraclejet.AnonChildren
 import typings.oracleOraclejet.AnonClass
+import typings.oracleOraclejet.AnonDictpropNamePreviousValue
+import typings.oracleOraclejet.AnonElement
 import typings.oracleOraclejet.AnonFilterFurther
 import typings.oracleOraclejet.AnonLabelValue
-import typings.oracleOraclejet.AnonPreviousValue
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.ojdataproviderMod.DataProvider
 import typings.oracleOraclejet.ojselectcomboboxMod.ojCombobox.OptionContext
@@ -86,7 +86,7 @@ trait ojComboboxOne[K, D]
     ], 
     _
   ]) | Null = js.native
-  var onOptionsKeysChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonChildKeysChildren], _]) | Null = js.native
+  var onOptionsKeysChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonChildren], _]) | Null = js.native
   var onPickerAttributesChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonClass], _]) | Null = js.native
   var onPlaceholderChanged: (js.Function1[/* event */ JetElementCustomEvent[String | Null], _]) | Null = js.native
   var onRawValueChanged: (js.Function1[/* event */ JetElementCustomEvent[String | Null], _]) | Null = js.native
@@ -101,7 +101,7 @@ trait ojComboboxOne[K, D]
   var options: (js.Array[
     typings.oracleOraclejet.ojselectcomboboxMod.ojCombobox.Option | typings.oracleOraclejet.ojselectcomboboxMod.ojCombobox.Optgroup
   ]) | (DataProvider[K, D]) | Null = js.native
-  var optionsKeys: AnonChildKeysChildren = js.native
+  var optionsKeys: AnonChildren = js.native
   var pickerAttributes: AnonClass = js.native
   var placeholder: String | Null = js.native
   val rawValue: String | Null = js.native
@@ -258,12 +258,12 @@ trait ojComboboxOne[K, D]
   @JSName("addEventListener")
   def addEventListener_optionsKeysChanged(
     `type`: optionsKeysChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonChildKeysChildren], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonChildren], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_optionsKeysChanged(
     `type`: optionsKeysChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonChildKeysChildren], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonChildren], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -366,7 +366,7 @@ trait ojComboboxOne[K, D]
     typings.oracleOraclejet.ojselectcomboboxMod.ojCombobox.Option | typings.oracleOraclejet.ojselectcomboboxMod.ojCombobox.Optgroup
   ]) | (DataProvider[K, D]) | Null = js.native
   @JSName("getProperty")
-  def getProperty_optionsKeys(property: optionsKeys): AnonChildKeysChildren = js.native
+  def getProperty_optionsKeys(property: optionsKeys): AnonChildren = js.native
   @JSName("getProperty")
   def getProperty_pickerAttributes(property: pickerAttributes): AnonClass = js.native
   @JSName("getProperty")
@@ -410,7 +410,7 @@ trait ojComboboxOne[K, D]
   @JSName("setProperty")
   def setProperty_options(property: options, value: DataProvider[K, D]): Unit = js.native
   @JSName("setProperty")
-  def setProperty_optionsKeys(property: optionsKeys, value: AnonChildKeysChildren): Unit = js.native
+  def setProperty_optionsKeys(property: optionsKeys, value: AnonChildren): Unit = js.native
   @JSName("setProperty")
   def setProperty_pickerAttributes(property: pickerAttributes, value: AnonClass): Unit = js.native
   @JSName("setProperty")
@@ -439,7 +439,7 @@ trait ojComboboxOne[K, D]
 @js.native
 object ojComboboxOne extends js.Object {
   type ojAnimateEnd = CustomEvent[AnonAction]
-  type ojAnimateStart = CustomEvent[AnonActionElement]
-  type ojValueUpdated = CustomEvent[AnonPreviousValue]
+  type ojAnimateStart = CustomEvent[AnonElement]
+  type ojValueUpdated = CustomEvent[AnonDictpropNamePreviousValue]
 }
 

@@ -73,7 +73,7 @@ object ChartOptions {
     responsive: ResponsiveOptions = null,
     scrollbar: ScrollbarOptions = null,
     series: js.Array[SeriesOptionsType] = null,
-    stockTools: js.Object | StockToolsOptions = null,
+    stockTools: StockToolsOptions = null,
     subtitle: SubtitleOptions = null,
     time: TimeOptions = null,
     title: TitleOptions = null,

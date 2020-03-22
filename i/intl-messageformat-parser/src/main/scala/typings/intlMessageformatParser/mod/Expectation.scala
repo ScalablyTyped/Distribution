@@ -26,8 +26,8 @@ object Expectation {
     __obj.asInstanceOf[Expectation]
   }
   @scala.inline
-  def IEndExpectation(`type`: end): Expectation = {
-    val __obj = js.Dynamic.literal()
+  def IClassExpectation(ignoreCase: Boolean, inverted: Boolean, parts: IClassParts, `type`: `class`): Expectation = {
+    val __obj = js.Dynamic.literal(ignoreCase = ignoreCase.asInstanceOf[js.Any], inverted = inverted.asInstanceOf[js.Any], parts = parts.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expectation]
   }
@@ -38,14 +38,14 @@ object Expectation {
     __obj.asInstanceOf[Expectation]
   }
   @scala.inline
-  def IAnyExpectation(`type`: any): Expectation = {
+  def IEndExpectation(`type`: end): Expectation = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expectation]
   }
   @scala.inline
-  def IClassExpectation(ignoreCase: Boolean, inverted: Boolean, parts: IClassParts, `type`: `class`): Expectation = {
-    val __obj = js.Dynamic.literal(ignoreCase = ignoreCase.asInstanceOf[js.Any], inverted = inverted.asInstanceOf[js.Any], parts = parts.asInstanceOf[js.Any])
+  def IAnyExpectation(`type`: any): Expectation = {
+    val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expectation]
   }

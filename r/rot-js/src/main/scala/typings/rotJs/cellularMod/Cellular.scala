@@ -1,7 +1,7 @@
 package typings.rotJs.cellularMod
 
+import typings.rotJs.PartialOptionsBorn
 import typings.rotJs.mapMapMod.CreateCallback
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -68,6 +68,6 @@ trait Cellular
     * Change options.
     * @see ROT.Map.Cellular
     */
-  def setOptions(options: Partial[Options]): Unit = js.native
+  def setOptions(options: PartialOptionsBorn): Unit = js.native
 }
 

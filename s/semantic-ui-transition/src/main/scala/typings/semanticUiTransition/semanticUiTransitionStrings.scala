@@ -9,9 +9,6 @@ object semanticUiTransitionStrings {
   sealed trait allowRepeats extends js.Object
   
   @js.native
-  sealed trait animating extends js.Object
-  
-  @js.native
   sealed trait animation extends js.Object
   
   @js.native
@@ -31,9 +28,6 @@ object semanticUiTransitionStrings {
   
   @js.native
   sealed trait disable extends js.Object
-  
-  @js.native
-  sealed trait disabled extends js.Object
   
   @js.native
   sealed trait displayType extends js.Object
@@ -57,16 +51,10 @@ object semanticUiTransitionStrings {
   sealed trait `get animation name` extends js.Object
   
   @js.native
-  sealed trait hidden extends js.Object
-  
-  @js.native
   sealed trait hide extends js.Object
   
   @js.native
   sealed trait interval extends js.Object
-  
-  @js.native
-  sealed trait inward extends js.Object
   
   @js.native
   sealed trait `is animating` extends js.Object
@@ -81,22 +69,13 @@ object semanticUiTransitionStrings {
   sealed trait `is visible` extends js.Object
   
   @js.native
-  sealed trait loading extends js.Object
-  
-  @js.native
   sealed trait looping extends js.Object
-  
-  @js.native
-  sealed trait method extends js.Object
   
   @js.native
   sealed trait name extends js.Object
   
   @js.native
   sealed trait namespace extends js.Object
-  
-  @js.native
-  sealed trait noAnimation extends js.Object
   
   @js.native
   sealed trait onComplete extends js.Object
@@ -109,9 +88,6 @@ object semanticUiTransitionStrings {
   
   @js.native
   sealed trait onStart extends js.Object
-  
-  @js.native
-  sealed trait outward extends js.Object
   
   @js.native
   sealed trait performance extends js.Object
@@ -159,21 +135,13 @@ object semanticUiTransitionStrings {
   sealed trait toggle extends js.Object
   
   @js.native
-  sealed trait transition extends js.Object
-  
-  @js.native
   sealed trait useFailSafe extends js.Object
   
   @js.native
   sealed trait verbose extends js.Object
   
-  @js.native
-  sealed trait visible extends js.Object
-  
   @scala.inline
   def allowRepeats: allowRepeats = "allowRepeats".asInstanceOf[allowRepeats]
-  @scala.inline
-  def animating: animating = "animating".asInstanceOf[animating]
   @scala.inline
   def animation: animation = "animation".asInstanceOf[animation]
   @scala.inline
@@ -189,8 +157,6 @@ object semanticUiTransitionStrings {
   @scala.inline
   def disable: disable = "disable".asInstanceOf[disable]
   @scala.inline
-  def disabled: disabled = "disabled".asInstanceOf[disabled]
-  @scala.inline
   def displayType: displayType = "displayType".asInstanceOf[displayType]
   @scala.inline
   def duration: duration = "duration".asInstanceOf[duration]
@@ -205,13 +171,9 @@ object semanticUiTransitionStrings {
   @scala.inline
   def `get animation name`: `get animation name` = "get animation name".asInstanceOf[`get animation name`]
   @scala.inline
-  def hidden: hidden = "hidden".asInstanceOf[hidden]
-  @scala.inline
   def hide: hide = "hide".asInstanceOf[hide]
   @scala.inline
   def interval: interval = "interval".asInstanceOf[interval]
-  @scala.inline
-  def inward: inward = "inward".asInstanceOf[inward]
   @scala.inline
   def `is animating`: `is animating` = "is animating".asInstanceOf[`is animating`]
   @scala.inline
@@ -221,17 +183,11 @@ object semanticUiTransitionStrings {
   @scala.inline
   def `is visible`: `is visible` = "is visible".asInstanceOf[`is visible`]
   @scala.inline
-  def loading: loading = "loading".asInstanceOf[loading]
-  @scala.inline
   def looping: looping = "looping".asInstanceOf[looping]
-  @scala.inline
-  def method: method = "method".asInstanceOf[method]
   @scala.inline
   def name: name = "name".asInstanceOf[name]
   @scala.inline
   def namespace: namespace = "namespace".asInstanceOf[namespace]
-  @scala.inline
-  def noAnimation: noAnimation = "noAnimation".asInstanceOf[noAnimation]
   @scala.inline
   def onComplete: onComplete = "onComplete".asInstanceOf[onComplete]
   @scala.inline
@@ -240,8 +196,6 @@ object semanticUiTransitionStrings {
   def onShow: onShow = "onShow".asInstanceOf[onShow]
   @scala.inline
   def onStart: onStart = "onStart".asInstanceOf[onStart]
-  @scala.inline
-  def outward: outward = "outward".asInstanceOf[outward]
   @scala.inline
   def performance: performance = "performance".asInstanceOf[performance]
   @scala.inline
@@ -273,12 +227,8 @@ object semanticUiTransitionStrings {
   @scala.inline
   def toggle: toggle = "toggle".asInstanceOf[toggle]
   @scala.inline
-  def transition: transition = "transition".asInstanceOf[transition]
-  @scala.inline
   def useFailSafe: useFailSafe = "useFailSafe".asInstanceOf[useFailSafe]
   @scala.inline
   def verbose: verbose = "verbose".asInstanceOf[verbose]
-  @scala.inline
-  def visible: visible = "visible".asInstanceOf[visible]
 }
 

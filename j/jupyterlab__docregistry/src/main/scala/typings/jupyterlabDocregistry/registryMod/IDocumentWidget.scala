@@ -3,7 +3,7 @@ package typings.jupyterlabDocregistry.registryMod
 import typings.jupyterlabApputils.mod.Toolbar
 import typings.jupyterlabDocregistry.registryMod.DocumentRegistry.IContext
 import typings.jupyterlabDocregistry.registryMod.DocumentRegistry.IModel
-import typings.phosphorWidgets.mod.Widget
+import typings.luminoWidgets.mod.Widget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

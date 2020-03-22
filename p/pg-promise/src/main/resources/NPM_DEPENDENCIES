@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "pg-promise" : "9.3.6"
+      "pg-promise" : "10.4.4"
     }
   ],
   "test-dependencies" : [
     {
-      "pg-promise" : "9.3.6"
+      "pg-promise" : "10.4.4"
     }
   ],
   "compile-devDependencies" : [

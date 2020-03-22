@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object inMemoryLRUCacheMod extends js.Object {
   @js.native
   class InMemoryLRUCache[V] () extends TestableKeyValueCache[V] {
-    def this(hasMaxSizeSizeCalculatorOnDispose: AnonKey[V]) = this()
+    def this(hasMaxSizeSizeCalculatorOnDispose: AnonMaxSize[V]) = this()
     var store: js.Any = js.native
     @JSName("flush")
     def flush_MInMemoryLRUCache(): js.Promise[Unit] = js.native

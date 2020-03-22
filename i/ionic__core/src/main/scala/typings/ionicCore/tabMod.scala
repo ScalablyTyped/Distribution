@@ -29,8 +29,9 @@ object tabMod extends js.Object {
       * the selected tab or by the router to switch between them.
       */
     var tab: String = js.native
+    def changeActive(isActive: Boolean): Unit = js.native
     @JSName("componentWillLoad")
-    def componentWillLoad_MTab(): Unit = js.native
+    def componentWillLoad_MTab(): js.Promise[Unit] = js.native
     @JSName("render")
     def render_MTab(): js.Any = js.native
     /** Set the active component for the tab */

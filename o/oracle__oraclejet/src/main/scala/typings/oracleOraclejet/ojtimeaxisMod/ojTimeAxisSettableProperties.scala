@@ -1,6 +1,6 @@
 package typings.oracleOraclejet.ojtimeaxisMod
 
-import typings.oracleOraclejet.AnonComponentNameLabelAndValue
+import typings.oracleOraclejet.AnonLabelAndValue
 import typings.oracleOraclejet.ojdvtBaseMod.dvtBaseComponentSettableProperties
 import typings.oracleOraclejet.ojtimeaxisMod.ojTimeAxis.Converters
 import typings.oracleOraclejet.ojvalidationBaseMod.Converter
@@ -24,7 +24,7 @@ trait ojTimeAxisSettableProperties extends dvtBaseComponentSettableProperties {
   var scale: seconds | minutes | hours | days | weeks | months | quarters | years
   var start: String
   @JSName("translations")
-  var translations_ojTimeAxisSettableProperties: AnonComponentNameLabelAndValue
+  var translations_ojTimeAxisSettableProperties: AnonLabelAndValue
 }
 
 object ojTimeAxisSettableProperties {
@@ -35,7 +35,7 @@ object ojTimeAxisSettableProperties {
     scale: seconds | minutes | hours | days | weeks | months | quarters | years,
     start: String,
     trackResize: on | off,
-    translations: AnonComponentNameLabelAndValue
+    translations: AnonLabelAndValue
   ): ojTimeAxisSettableProperties = {
     val __obj = js.Dynamic.literal(converter = converter.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], trackResize = trackResize.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any])
   

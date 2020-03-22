@@ -1,6 +1,6 @@
 package typings.jupyterlabStatusbar.kernelStatusMod
 
-import typings.jupyterlabApputils.vdomMod.VDomRenderer
+import typings.jupyterlabApputils.mod.VDomRenderer
 import typings.jupyterlabStatusbar.kernelStatusMod.KernelStatus.IOptions
 import typings.jupyterlabStatusbar.kernelStatusMod.KernelStatus.Model
 import scala.scalajs.js

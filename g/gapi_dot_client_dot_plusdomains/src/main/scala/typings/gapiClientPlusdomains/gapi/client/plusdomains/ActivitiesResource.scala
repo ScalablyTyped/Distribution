@@ -3,7 +3,7 @@ package typings.gapiClientPlusdomains.gapi.client.plusdomains
 import typings.gapiClient.gapi.client.Request_
 import typings.gapiClientPlusdomains.AnonActivityId
 import typings.gapiClientPlusdomains.AnonAlt
-import typings.gapiClientPlusdomains.AnonAltCollection
+import typings.gapiClientPlusdomains.AnonCollection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ trait ActivitiesResource extends js.Object {
   /** Create a new activity for the authenticated user. */
   def insert(request: AnonAlt): Request_[Activity]
   /** List all of the activities in the specified collection for a particular user. */
-  def list(request: AnonAltCollection): Request_[ActivityFeed]
+  def list(request: AnonCollection): Request_[ActivityFeed]
 }
 
 object ActivitiesResource {
@@ -22,7 +22,7 @@ object ActivitiesResource {
   def apply(
     get: AnonActivityId => Request_[Activity],
     insert: AnonAlt => Request_[Activity],
-    list: AnonAltCollection => Request_[ActivityFeed]
+    list: AnonCollection => Request_[ActivityFeed]
   ): ActivitiesResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list))
   

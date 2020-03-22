@@ -2,7 +2,7 @@ package typings.jupyterlabMarkdownviewer
 
 import typings.jupyterlabMarkdownviewer.widgetMod.MarkdownViewer.IConfig
 import typings.jupyterlabMarkdownviewer.widgetMod.MarkdownViewer.IOptions
-import typings.phosphorCoreutils.mod.Token
+import typings.luminoCoreutils.mod.Token
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,7 +27,7 @@ object mod extends js.Object {
   class MarkdownViewerFactory protected ()
     extends typings.jupyterlabMarkdownviewer.widgetMod.MarkdownViewerFactory {
     /**
-      * Construct a new mimetype widget factory.
+      * Construct a new markdown viewer widget factory.
       */
     def this(options: typings.jupyterlabMarkdownviewer.widgetMod.MarkdownViewerFactory.IOptions) = this()
   }

@@ -40,9 +40,6 @@ object webpackStrings {
   sealed trait `@source-map` extends _Devtool
   
   @js.native
-  sealed trait AuxiliaryCommentObject extends js.Object
-  
-  @js.native
   sealed trait `Numbersign@cheap-eval-source-map` extends _Devtool
   
   @js.native
@@ -437,8 +434,6 @@ object webpackStrings {
   def `@nosources-source-map`: `@nosources-source-map` = "@nosources-source-map".asInstanceOf[`@nosources-source-map`]
   @scala.inline
   def `@source-map`: `@source-map` = "@source-map".asInstanceOf[`@source-map`]
-  @scala.inline
-  def AuxiliaryCommentObject: AuxiliaryCommentObject = "AuxiliaryCommentObject".asInstanceOf[AuxiliaryCommentObject]
   @scala.inline
   def `Numbersign@cheap-eval-source-map`: `Numbersign@cheap-eval-source-map` = "#@cheap-eval-source-map".asInstanceOf[`Numbersign@cheap-eval-source-map`]
   @scala.inline

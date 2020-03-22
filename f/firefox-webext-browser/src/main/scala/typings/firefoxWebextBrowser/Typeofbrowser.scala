@@ -97,7 +97,7 @@ trait Typeofbrowser extends js.Object {
     *
     * Not allowed in: Content scripts, Devtools pages
     */
-  val contextualIdentities: TypeofcontextualIdentities
+  val contextualIdentities: TypeofcontextualIdentitie
   /**
     * Use the `browser.cookies` API to query and modify cookies, and to be notified when they change.
     *
@@ -402,7 +402,7 @@ object Typeofbrowser {
     commands: Typeofcommands,
     contentScripts: TypeofcontentScripts,
     contextMenus: TypeofcontextMenus,
-    contextualIdentities: TypeofcontextualIdentities,
+    contextualIdentities: TypeofcontextualIdentitie,
     cookies: Typeofcookies,
     devtools: Typeofdevtools,
     dns: Typeofdns,

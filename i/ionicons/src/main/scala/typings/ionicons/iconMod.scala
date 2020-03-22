@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("ionicons/dist/types/icon/icon", JSImport.Namespace)
+@JSImport("ionicons/dist/types/components/icon/icon", JSImport.Namespace)
 @js.native
 object iconMod extends js.Object {
   @js.native
@@ -44,6 +44,9 @@ object iconMod extends js.Object {
       * Specifies which icon to use on `md` mode.
       */
     var md: js.UndefOr[String] = js.native
+    /**
+      * The mode determines which platform styles to use.
+      */
     var mode: String = js.native
     /**
       * Specifies which icon to use from the built-in set of icons.

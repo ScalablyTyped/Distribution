@@ -1,7 +1,7 @@
 
 # Scala.js typings for express-openapi
 
-Typings are for version 5.0.0
+Typings are for version 6.0.0
 
 ## Library description:
 An unopinionated OpenAPI framework for express

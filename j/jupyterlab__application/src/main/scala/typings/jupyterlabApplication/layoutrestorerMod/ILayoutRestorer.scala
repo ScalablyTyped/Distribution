@@ -2,12 +2,12 @@ package typings.jupyterlabApplication.layoutrestorerMod
 
 import org.scalablytyped.runtime.TopLevel
 import typings.jupyterlabApputils.mod.WidgetTracker
-import typings.jupyterlabCoreutils.interfacesMod.IRestorable
-import typings.jupyterlabCoreutils.interfacesMod.IRestorer
-import typings.jupyterlabCoreutils.interfacesMod.IRestorer.IOptions
-import typings.phosphorCoreutils.mod.Token
-import typings.phosphorDisposable.mod.IObservableDisposable
-import typings.phosphorWidgets.mod.Widget
+import typings.jupyterlabStatedb.interfacesMod.IRestorable
+import typings.jupyterlabStatedb.interfacesMod.IRestorer
+import typings.jupyterlabStatedb.interfacesMod.IRestorer.IOptions
+import typings.luminoCoreutils.mod.Token
+import typings.luminoDisposable.mod.IObservableDisposable
+import typings.luminoWidgets.mod.Widget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -8,10 +8,9 @@ import scala.scalajs.js.annotation._
 
 trait PlotItemOptions extends js.Object {
   /**
-    * (Highcharts) Accessibility options for a series. Requires the
-    * accessibility module.
+    * (Highcharts) Accessibility options for a series.
     */
-  var accessibility: js.UndefOr[js.Object | PlotItemAccessibilityOptions] = js.undefined
+  var accessibility: js.UndefOr[SeriesAccessibilityOptionsObject] = js.undefined
   /**
     * (Highmaps) Whether all areas of the map defined in `mapData` should be
     * rendered. If `true`, areas which don't correspond to a data point, are
@@ -44,7 +43,7 @@ trait PlotItemOptions extends js.Object {
     * Due to poor performance, animation is disabled in old IE browsers for
     * several chart types.
     */
-  var animation: js.UndefOr[Boolean | AnimationOptionsObject | PlotItemAnimationOptions] = js.undefined
+  var animation: js.UndefOr[Boolean | AnimationOptionsObject] = js.undefined
   /**
     * (Highcharts) Sets the color blending in the boost module.
     */
@@ -128,18 +127,19 @@ trait PlotItemOptions extends js.Object {
   var compareBase: js.UndefOr[`0` | `100`] = js.undefined
   /**
     * (Highstock) Defines if comparison should start from the first point
-    * within the visible range or should start from the first point (see online
-    * documentation for example) the range. In other words, this flag
-    * determines if first point within the visible range will have 0%
-    * (`compareStart=true`) or should have been already calculated according to
-    * the previous point (`compareStart=false`).
+    * within the visible range or should start from the first point **before**
+    * the range.
+    *
+    * In other words, this flag determines if first point within the visible
+    * range will have 0% (`compareStart=true`) or should have been already
+    * calculated according to the previous point (`compareStart=false`).
     */
   var compareStart: js.UndefOr[Boolean] = js.undefined
   /**
     * (Gantt) Override Pathfinder connector options for a series. Requires
     * Highcharts Gantt to be loaded.
     */
-  var connectors: js.UndefOr[PlotItemConnectorsOptions] = js.undefined
+  var connectors: js.UndefOr[SeriesConnectorsOptionsObject] = js.undefined
   /**
     * (Highcharts) You can set the cursor to "pointer" if you have click events
     * attached to the series, to signal to the user that the points and lines
@@ -163,10 +163,10 @@ trait PlotItemOptions extends js.Object {
     * of the first point instance are copied over to the group point. This can
     * be altered through a custom `approximation` callback function.
     */
-  var dataGrouping: js.UndefOr[PlotItemDataGroupingOptions] = js.undefined
+  var dataGrouping: js.UndefOr[DataGroupingOptionsObject] = js.undefined
   /**
-    * (Highcharts) Options for the series data labels, appearing next to each
-    * data point.
+    * (Highcharts, Highstock, Highmaps, Gantt) Options for the series data
+    * labels, appearing next to each data point.
     *
     * Since v6.2.0, multiple data labels can be applied to each single point by
     * defining them as an array of configs.
@@ -175,7 +175,7 @@ trait PlotItemOptions extends js.Object {
     * `.highcharts-data-label-box` and `.highcharts-data-label` class names
     * (see example).
     */
-  var dataLabels: js.UndefOr[SeriesPieDataLabelsOptionsObject] = js.undefined
+  var dataLabels: js.UndefOr[SeriesPieDataLabelsOptionsObject | js.Array[SeriesPieDataLabelsOptionsObject]] = js.undefined
   /**
     * (Highcharts) A description of the series to add to the screen reader
     * information about the series.
@@ -197,7 +197,7 @@ trait PlotItemOptions extends js.Object {
     * hooks can also be attached to the series at run time using the
     * `Highcharts.addEvent` function.
     */
-  var events: js.UndefOr[PlotItemEventsOptions] = js.undefined
+  var events: js.UndefOr[SeriesEventsOptionsObject] = js.undefined
   /**
     * (Highcharts) If the total sum of the pie's values is 0, the series is
     * represented as an empty circle . The `fillColor` option defines the color
@@ -287,11 +287,11 @@ trait PlotItemOptions extends js.Object {
   /**
     * (Highstock) The line marks the last price from all points.
     */
-  var lastPrice: js.UndefOr[PlotItemLastPriceOptions] = js.undefined
+  var lastPrice: js.UndefOr[SeriesLastPriceOptionsObject] = js.undefined
   /**
     * (Highstock) The line marks the last price from visible range of points.
     */
-  var lastVisiblePrice: js.UndefOr[PlotItemLastVisiblePriceOptions] = js.undefined
+  var lastVisiblePrice: js.UndefOr[SeriesLastVisiblePriceOptionsObject] = js.undefined
   /**
     * (Highcharts) The layout of the items in rectangular view. Can be either
     * `horizontal` or `vertical`.
@@ -302,6 +302,10 @@ trait PlotItemOptions extends js.Object {
     * Additionally, the value can be ":previous" to link to the previous
     * series. When two series are linked, only the first one appears in the
     * legend. Toggling the visibility of this also toggles the linked series.
+    *
+    * If master series uses data sorting and linked series does not have its
+    * own sorting definition, the linked series will be sorted in the same
+    * order as the master one.
     */
   var linkedTo: js.UndefOr[String] = js.undefined
   /**
@@ -313,7 +317,7 @@ trait PlotItemOptions extends js.Object {
     * In styled mode, the markers can be styled with the `.highcharts-point`,
     * `.highcharts-point-hover` and `.highcharts-point-select` class names.
     */
-  var marker: js.UndefOr[PlotItemMarkerOptions] = js.undefined
+  var marker: js.UndefOr[PointMarkerOptionsObject] = js.undefined
   /**
     * (Highcharts) The minimum size for a pie in response to auto margins. The
     * pie will try to shrink to make room for data labels in side the plot
@@ -337,7 +341,7 @@ trait PlotItemOptions extends js.Object {
   /**
     * (Highcharts) Properties for each single point.
     */
-  var point: js.UndefOr[PlotItemPointOptions] = js.undefined
+  var point: js.UndefOr[PlotSeriesPointOptions] = js.undefined
   /**
     * (Highcharts) Same as accessibility.pointDescriptionFormatter, but for an
     * individual series. Overrides the chart wide configuration.
@@ -400,7 +404,7 @@ trait PlotItemOptions extends js.Object {
     * degrees where 0 is up.
     */
   var startAngle: js.UndefOr[Double] = js.undefined
-  var states: js.UndefOr[PlotItemStatesOptions] = js.undefined
+  var states: js.UndefOr[SeriesStatesOptionsObject] = js.undefined
   /**
     * (Highcharts) Sticky tracking of mouse events. When true, the `mouseOut`
     * event on a series isn't triggered until the mouse moves over another
@@ -416,7 +420,7 @@ trait PlotItemOptions extends js.Object {
     * single series. Properties are inherited from tooltip, but only the
     * following properties can be defined on a series level.
     */
-  var tooltip: js.UndefOr[PlotItemTooltipOptions] = js.undefined
+  var tooltip: js.UndefOr[SeriesTooltipOptionsObject] = js.undefined
   /**
     * (Highstock) The parameter allows setting line series type and use OHLC
     * indicators. Data in OHLC format is required.
@@ -435,10 +439,10 @@ trait PlotItemOptions extends js.Object {
 object PlotItemOptions {
   @scala.inline
   def apply(
-    accessibility: js.Object | PlotItemAccessibilityOptions = null,
+    accessibility: SeriesAccessibilityOptionsObject = null,
     allAreas: js.UndefOr[Boolean] = js.undefined,
     allowPointSelect: js.UndefOr[Boolean] = js.undefined,
-    animation: Boolean | AnimationOptionsObject | PlotItemAnimationOptions = null,
+    animation: Boolean | AnimationOptionsObject = null,
     boostBlending: OptionsBoostBlendingValue = null,
     center: js.Tuple2[Double | String | Null, Double | String | Null] = null,
     className: String = null,
@@ -451,14 +455,14 @@ object PlotItemOptions {
     compare: String = null,
     compareBase: `0` | `100` = null,
     compareStart: js.UndefOr[Boolean] = js.undefined,
-    connectors: PlotItemConnectorsOptions = null,
+    connectors: SeriesConnectorsOptionsObject = null,
     cursor: String | CursorValue = null,
-    dataGrouping: PlotItemDataGroupingOptions = null,
-    dataLabels: SeriesPieDataLabelsOptionsObject = null,
+    dataGrouping: DataGroupingOptionsObject = null,
+    dataLabels: SeriesPieDataLabelsOptionsObject | js.Array[SeriesPieDataLabelsOptionsObject] = null,
     description: String = null,
     enableMouseTracking: js.UndefOr[Boolean] = js.undefined,
     endAngle: Int | Double = null,
-    events: PlotItemEventsOptions = null,
+    events: SeriesEventsOptionsObject = null,
     fillColor: ColorString | GradientColorObject | PatternObject = null,
     gapSize: Int | Double = null,
     gapUnit: OptionsGapUnitValue = null,
@@ -468,15 +472,15 @@ object PlotItemOptions {
     itemPadding: Int | Double = null,
     joinBy: String | js.Array[String] = null,
     keys: js.Array[String] = null,
-    lastPrice: PlotItemLastPriceOptions = null,
-    lastVisiblePrice: PlotItemLastVisiblePriceOptions = null,
+    lastPrice: SeriesLastPriceOptionsObject = null,
+    lastVisiblePrice: SeriesLastVisiblePriceOptionsObject = null,
     layout: String = null,
     linkedTo: String = null,
-    marker: PlotItemMarkerOptions = null,
+    marker: PointMarkerOptionsObject = null,
     minSize: Double | String = null,
     navigatorOptions: PlotSeriesOptions = null,
     opacity: Int | Double = null,
-    point: PlotItemPointOptions = null,
+    point: PlotSeriesPointOptions = null,
     pointDescriptionFormatter: js.Function = null,
     pointRange: Int | Double = null,
     rows: Int | Double = null,
@@ -487,9 +491,9 @@ object PlotItemOptions {
     size: Double | String = null,
     skipKeyboardNavigation: js.UndefOr[Boolean] = js.undefined,
     startAngle: Int | Double = null,
-    states: PlotItemStatesOptions = null,
+    states: SeriesStatesOptionsObject = null,
     stickyTracking: js.UndefOr[Boolean] = js.undefined,
-    tooltip: PlotItemTooltipOptions = null,
+    tooltip: SeriesTooltipOptionsObject = null,
     useOhlcData: js.UndefOr[Boolean] = js.undefined,
     visible: js.UndefOr[Boolean] = js.undefined,
     zIndex: Int | Double = null

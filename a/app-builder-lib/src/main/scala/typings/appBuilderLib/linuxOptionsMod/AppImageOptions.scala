@@ -22,6 +22,7 @@ object AppImageOptions {
     category: String = null,
     description: String = null,
     desktop: js.Any = null,
+    executableArgs: js.Array[String] = null,
     license: String = null,
     mimeTypes: js.Array[String] = null,
     publish: Publish = null,
@@ -32,6 +33,7 @@ object AppImageOptions {
     if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (desktop != null) __obj.updateDynamic("desktop")(desktop.asInstanceOf[js.Any])
+    if (executableArgs != null) __obj.updateDynamic("executableArgs")(executableArgs.asInstanceOf[js.Any])
     if (license != null) __obj.updateDynamic("license")(license.asInstanceOf[js.Any])
     if (mimeTypes != null) __obj.updateDynamic("mimeTypes")(mimeTypes.asInstanceOf[js.Any])
     if (publish != null) __obj.updateDynamic("publish")(publish.asInstanceOf[js.Any])

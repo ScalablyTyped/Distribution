@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object localesOsMod extends js.Object {
   val default: js.Array[
-    String | Double | (js.Array[js.UndefOr[js.Array[String] | Double | String]]) | (js.Function1[/* n */ Double, Double]) | AnonGEL
+    String | Double | (js.Array[js.UndefOr[js.Array[String] | Double | String]]) | (js.Function1[/* n */ Double, Double]) | AnonGELJPY
   ] = js.native
 }
 

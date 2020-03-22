@@ -29,63 +29,6 @@ trait SerializationModel extends js.Object
 
 object SerializationModel {
   @scala.inline
-  def Map(
-    key: Member,
-    `type`: map,
-    value: Member,
-    flattened: js.UndefOr[scala.Boolean] = js.undefined,
-    sensitive: js.UndefOr[scala.Boolean] = js.undefined
-  ): SerializationModel = {
-    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(flattened)) __obj.updateDynamic("flattened")(flattened.asInstanceOf[js.Any])
-    if (!js.isUndefined(sensitive)) __obj.updateDynamic("sensitive")(sensitive.asInstanceOf[js.Any])
-    __obj.asInstanceOf[SerializationModel]
-  }
-  @scala.inline
-  def List(
-    member: Member,
-    `type`: list,
-    flattened: js.UndefOr[scala.Boolean] = js.undefined,
-    min: Int | Double = null,
-    sensitive: js.UndefOr[scala.Boolean] = js.undefined
-  ): SerializationModel = {
-    val __obj = js.Dynamic.literal(member = member.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(flattened)) __obj.updateDynamic("flattened")(flattened.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (!js.isUndefined(sensitive)) __obj.updateDynamic("sensitive")(sensitive.asInstanceOf[js.Any])
-    __obj.asInstanceOf[SerializationModel]
-  }
-  @scala.inline
-  def String(
-    `type`: string,
-    idempotencyToken: js.UndefOr[scala.Boolean] = js.undefined,
-    jsonValue: js.UndefOr[scala.Boolean] = js.undefined,
-    min: Int | Double = null,
-    sensitive: js.UndefOr[scala.Boolean] = js.undefined
-  ): SerializationModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(idempotencyToken)) __obj.updateDynamic("idempotencyToken")(idempotencyToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(jsonValue)) __obj.updateDynamic("jsonValue")(jsonValue.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (!js.isUndefined(sensitive)) __obj.updateDynamic("sensitive")(sensitive.asInstanceOf[js.Any])
-    __obj.asInstanceOf[SerializationModel]
-  }
-  @scala.inline
-  def Blob(
-    `type`: blob,
-    sensitive: js.UndefOr[scala.Boolean] = js.undefined,
-    streaming: js.UndefOr[scala.Boolean] = js.undefined
-  ): SerializationModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(sensitive)) __obj.updateDynamic("sensitive")(sensitive.asInstanceOf[js.Any])
-    if (!js.isUndefined(streaming)) __obj.updateDynamic("streaming")(streaming.asInstanceOf[js.Any])
-    __obj.asInstanceOf[SerializationModel]
-  }
-  @scala.inline
   def Timestamp(
     `type`: timestamp,
     sensitive: js.UndefOr[scala.Boolean] = js.undefined,
@@ -95,14 +38,6 @@ object SerializationModel {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (!js.isUndefined(sensitive)) __obj.updateDynamic("sensitive")(sensitive.asInstanceOf[js.Any])
     if (timestampFormat != null) __obj.updateDynamic("timestampFormat")(timestampFormat.asInstanceOf[js.Any])
-    __obj.asInstanceOf[SerializationModel]
-  }
-  @scala.inline
-  def Integer(`type`: integer, min: Int | Double = null, sensitive: js.UndefOr[scala.Boolean] = js.undefined): SerializationModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (!js.isUndefined(sensitive)) __obj.updateDynamic("sensitive")(sensitive.asInstanceOf[js.Any])
     __obj.asInstanceOf[SerializationModel]
   }
   @scala.inline
@@ -124,7 +59,33 @@ object SerializationModel {
     __obj.asInstanceOf[SerializationModel]
   }
   @scala.inline
-  def Float(`type`: float, min: Int | Double = null, sensitive: js.UndefOr[scala.Boolean] = js.undefined): SerializationModel = {
+  def Blob(
+    `type`: blob,
+    sensitive: js.UndefOr[scala.Boolean] = js.undefined,
+    streaming: js.UndefOr[scala.Boolean] = js.undefined
+  ): SerializationModel = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(sensitive)) __obj.updateDynamic("sensitive")(sensitive.asInstanceOf[js.Any])
+    if (!js.isUndefined(streaming)) __obj.updateDynamic("streaming")(streaming.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SerializationModel]
+  }
+  @scala.inline
+  def Map(
+    key: Member,
+    `type`: map,
+    value: Member,
+    flattened: js.UndefOr[scala.Boolean] = js.undefined,
+    sensitive: js.UndefOr[scala.Boolean] = js.undefined
+  ): SerializationModel = {
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(flattened)) __obj.updateDynamic("flattened")(flattened.asInstanceOf[js.Any])
+    if (!js.isUndefined(sensitive)) __obj.updateDynamic("sensitive")(sensitive.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SerializationModel]
+  }
+  @scala.inline
+  def Integer(`type`: integer, min: Int | Double = null, sensitive: js.UndefOr[scala.Boolean] = js.undefined): SerializationModel = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
@@ -135,6 +96,45 @@ object SerializationModel {
   def Boolean(`type`: boolean, sensitive: js.UndefOr[scala.Boolean] = js.undefined): SerializationModel = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(sensitive)) __obj.updateDynamic("sensitive")(sensitive.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SerializationModel]
+  }
+  @scala.inline
+  def String(
+    `type`: string,
+    idempotencyToken: js.UndefOr[scala.Boolean] = js.undefined,
+    jsonValue: js.UndefOr[scala.Boolean] = js.undefined,
+    min: Int | Double = null,
+    sensitive: js.UndefOr[scala.Boolean] = js.undefined
+  ): SerializationModel = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(idempotencyToken)) __obj.updateDynamic("idempotencyToken")(idempotencyToken.asInstanceOf[js.Any])
+    if (!js.isUndefined(jsonValue)) __obj.updateDynamic("jsonValue")(jsonValue.asInstanceOf[js.Any])
+    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (!js.isUndefined(sensitive)) __obj.updateDynamic("sensitive")(sensitive.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SerializationModel]
+  }
+  @scala.inline
+  def List(
+    member: Member,
+    `type`: list,
+    flattened: js.UndefOr[scala.Boolean] = js.undefined,
+    min: Int | Double = null,
+    sensitive: js.UndefOr[scala.Boolean] = js.undefined
+  ): SerializationModel = {
+    val __obj = js.Dynamic.literal(member = member.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(flattened)) __obj.updateDynamic("flattened")(flattened.asInstanceOf[js.Any])
+    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (!js.isUndefined(sensitive)) __obj.updateDynamic("sensitive")(sensitive.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SerializationModel]
+  }
+  @scala.inline
+  def Float(`type`: float, min: Int | Double = null, sensitive: js.UndefOr[scala.Boolean] = js.undefined): SerializationModel = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     if (!js.isUndefined(sensitive)) __obj.updateDynamic("sensitive")(sensitive.asInstanceOf[js.Any])
     __obj.asInstanceOf[SerializationModel]
   }

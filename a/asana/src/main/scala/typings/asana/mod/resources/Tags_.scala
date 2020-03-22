@@ -1,6 +1,6 @@
 package typings.asana.mod.resources
 
-import typings.asana.AnonWorkspaceString
+import typings.asana.Typeworkspacestring
 import typings.asana.mod.resources.Tags.FindAllParams
 import typings.asana.mod.resources.Tags.Type
 import scala.scalajs.js
@@ -37,8 +37,8 @@ trait Tags_ extends Resource {
     * @param dispatchOptions?
     * @return
     */
-  def create(data: Type with AnonWorkspaceString): typings.bluebird.mod.^[Type] = js.native
-  def create(data: Type with AnonWorkspaceString, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
+  def create(data: Typeworkspacestring): typings.bluebird.mod.^[Type] = js.native
+  def create(data: Typeworkspacestring, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
   /**
     * * Creates a new tag in a workspace or organization.
     * *

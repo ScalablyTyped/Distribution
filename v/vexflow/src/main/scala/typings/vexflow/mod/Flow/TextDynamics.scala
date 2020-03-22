@@ -1,6 +1,6 @@
 package typings.vexflow.mod.Flow
 
-import typings.vexflow.AnonDurationLine
+import typings.vexflow.AnonLineText
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class TextDynamics protected ()
   extends typings.vexflow.Vex.Flow.TextDynamics {
-  def this(text_struct: AnonDurationLine) = this()
+  def this(text_struct: AnonLineText) = this()
 }
 
 /* static members */

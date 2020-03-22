@@ -4,7 +4,7 @@ import typings.jupyterlabObservables.modeldbMod.ModelDB.ICreateOptions
 import typings.jupyterlabObservables.observablejsonMod.IObservableJSON.IChangedArgs
 import typings.jupyterlabObservables.observablejsonMod.ObservableJSON.IOptions
 import typings.jupyterlabObservables.undoablelistMod.ISerializer
-import typings.phosphorCoreutils.jsonMod.JSONValue
+import typings.luminoCoreutils.jsonMod.JSONValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

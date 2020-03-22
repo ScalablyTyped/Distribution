@@ -1,7 +1,7 @@
 package typings.cassandraDriver.metadataMod.metadata
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.cassandraDriver.AnonClass
+import typings.cassandraDriver.AnonDictoption
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ trait DataCollection extends js.Object {
   var comment: String
   var compactionClass: String
   var compactionOptions: StringDictionary[js.Any]
-  var compression: AnonClass
+  var compression: AnonDictoption
   var crcCheckChange: js.UndefOr[Double] = js.undefined
   var defaultTtl: Double
   var extensions: StringDictionary[js.Any]
@@ -43,7 +43,7 @@ object DataCollection {
     comment: String,
     compactionClass: String,
     compactionOptions: StringDictionary[js.Any],
-    compression: AnonClass,
+    compression: AnonDictoption,
     defaultTtl: Double,
     extensions: StringDictionary[js.Any],
     gcGraceSeconds: Double,

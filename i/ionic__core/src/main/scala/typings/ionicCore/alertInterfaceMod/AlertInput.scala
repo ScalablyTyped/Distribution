@@ -2,6 +2,7 @@ package typings.ionicCore.alertInterfaceMod
 
 import typings.ionicCore.ionicCoreStrings.checkbox
 import typings.ionicCore.ionicCoreStrings.radio
+import typings.ionicCore.ionicCoreStrings.textarea
 import typings.ionicCore.mod.TextFieldTypes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,7 +18,7 @@ trait AlertInput extends js.Object {
   var min: js.UndefOr[String | Double] = js.undefined
   var name: js.UndefOr[String] = js.undefined
   var placeholder: js.UndefOr[String] = js.undefined
-  var `type`: js.UndefOr[TextFieldTypes | checkbox | radio] = js.undefined
+  var `type`: js.UndefOr[TextFieldTypes | checkbox | radio | textarea] = js.undefined
   var value: js.UndefOr[js.Any] = js.undefined
 }
 
@@ -33,7 +34,7 @@ object AlertInput {
     min: String | Double = null,
     name: String = null,
     placeholder: String = null,
-    `type`: TextFieldTypes | checkbox | radio = null,
+    `type`: TextFieldTypes | checkbox | radio | textarea = null,
     value: js.Any = null
   ): AlertInput = {
     val __obj = js.Dynamic.literal()

@@ -1,6 +1,6 @@
 package typings.cathoQuantum.checkboxMod
 
-import typings.cathoQuantum.AnonColors
+import typings.cathoQuantum.AnonColorsSpacing
 import typings.cathoQuantum.cathoQuantumStrings.button
 import typings.cathoQuantum.cathoQuantumStrings.checkbox
 import typings.react.mod.ChangeEvent
@@ -17,7 +17,7 @@ trait CheckboxGroupProps[T] extends js.Object {
     js.Function2[/* items */ js.UndefOr[Options], /* event */ js.UndefOr[ChangeEvent[T]], Unit]
   ] = js.undefined
   var options: js.UndefOr[Options] = js.undefined
-  var theme: js.UndefOr[AnonColors] = js.undefined
+  var theme: js.UndefOr[AnonColorsSpacing] = js.undefined
   var `type`: checkbox | button
 }
 
@@ -30,7 +30,7 @@ object CheckboxGroupProps {
     `inline`: js.UndefOr[Boolean] = js.undefined,
     onChange: (/* items */ js.UndefOr[Options], /* event */ js.UndefOr[ChangeEvent[T]]) => Unit = null,
     options: Options = null,
-    theme: AnonColors = null
+    theme: AnonColorsSpacing = null
   ): CheckboxGroupProps[T] = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

@@ -25,7 +25,7 @@ trait DescribeVpcEndpointServiceConfigurationsRequest extends js.Object {
   /**
     * The IDs of one or more services.
     */
-  var ServiceIds: js.UndefOr[ValueStringList] = js.native
+  var ServiceIds: js.UndefOr[VpcEndpointServiceIdList] = js.native
 }
 
 object DescribeVpcEndpointServiceConfigurationsRequest {
@@ -35,7 +35,7 @@ object DescribeVpcEndpointServiceConfigurationsRequest {
     Filters: FilterList = null,
     MaxResults: Int | scala.Double = null,
     NextToken: String = null,
-    ServiceIds: ValueStringList = null
+    ServiceIds: VpcEndpointServiceIdList = null
   ): DescribeVpcEndpointServiceConfigurationsRequest = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])

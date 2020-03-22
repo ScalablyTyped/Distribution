@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait Data extends js.Object {
   /**
-    * The title of the URL at text.
+    * The title of the URL at `text`.
     */
   var bookmark: js.UndefOr[String] = js.undefined
   var html: js.UndefOr[String] = js.undefined

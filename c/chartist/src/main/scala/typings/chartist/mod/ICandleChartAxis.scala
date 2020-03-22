@@ -1,6 +1,6 @@
 package typings.chartist.mod
 
-import typings.chartist.AnonXY
+import typings.chartist.AnonY
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ trait ICandleChartAxis extends js.Object {
   /**
     * Allows you to correct label positioning on this axis by positive or negative x and y offset.
     */
-  var labelOffset: js.UndefOr[AnonXY] = js.undefined
+  var labelOffset: js.UndefOr[AnonY] = js.undefined
   /**
     * The offset of the chart drawing area to the border of the container
     */
@@ -40,7 +40,7 @@ object ICandleChartAxis {
   @scala.inline
   def apply(
     labelInterpolationFnc: js.Function = null,
-    labelOffset: AnonXY = null,
+    labelOffset: AnonY = null,
     offset: Int | Double = null,
     position: String = null,
     showGrid: js.UndefOr[Boolean] = js.undefined,

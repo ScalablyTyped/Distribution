@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-from-dom
 
-Typings are for version 0.3.0
+Typings are for version 0.3.1
 
 ## Library description:
 Convert HTML/XML source code or DOM nodes to React elements

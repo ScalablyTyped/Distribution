@@ -1,7 +1,7 @@
 package typings.nivoWaffle.mod
 
 import typings.nivoColors.mod.InheritedColorProp
-import typings.nivoCore.Anon
+import typings.nivoCore.AnonDictkey
 import typings.nivoCore.AnonId
 import typings.nivoCore.mod.Box
 import typings.nivoCore.mod.Colors
@@ -24,11 +24,11 @@ trait WaffleSvgProps extends js.Object {
   var colors: js.UndefOr[Colors] = js.undefined
   var columns: Double
   var data: js.Array[js.Object]
-  var defs: js.UndefOr[js.Array[AnonId]] = js.undefined
+  var defs: js.UndefOr[js.Array[AnonDictkey]] = js.undefined
   var emptyColor: js.UndefOr[String] = js.undefined
   var emptyOpacity: js.UndefOr[Double] = js.undefined
   var enableLabels: js.UndefOr[Boolean] = js.undefined
-  var fill: js.UndefOr[js.Array[Anon[WaffleDatum]]] = js.undefined
+  var fill: js.UndefOr[js.Array[AnonId[WaffleDatum]]] = js.undefined
   var fillDirection: js.UndefOr[WaffleFillDirection] = js.undefined
   var isInteractive: js.UndefOr[Boolean] = js.undefined
   var margin: js.UndefOr[Box] = js.undefined
@@ -61,11 +61,11 @@ object WaffleSvgProps {
     borderWidth: Int | Double = null,
     colorBy: String | GetColor[WaffleDatum] = null,
     colors: Colors = null,
-    defs: js.Array[AnonId] = null,
+    defs: js.Array[AnonDictkey] = null,
     emptyColor: String = null,
     emptyOpacity: Int | Double = null,
     enableLabels: js.UndefOr[Boolean] = js.undefined,
-    fill: js.Array[Anon[WaffleDatum]] = null,
+    fill: js.Array[AnonId[WaffleDatum]] = null,
     fillDirection: WaffleFillDirection = null,
     isInteractive: js.UndefOr[Boolean] = js.undefined,
     margin: Box = null,

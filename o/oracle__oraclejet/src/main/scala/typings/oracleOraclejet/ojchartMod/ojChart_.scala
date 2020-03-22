@@ -1,19 +1,19 @@
 package typings.oracleOraclejet.ojchartMod
 
-import typings.oracleOraclejet.AnonAboveMarker
 import typings.oracleOraclejet.AnonAlignTickMarks
-import typings.oracleOraclejet.AnonAsNeeded
-import typings.oracleOraclejet.AnonAuto
-import typings.oracleOraclejet.AnonAutoAxisLine
+import typings.oracleOraclejet.AnonAnimationDownColor
 import typings.oracleOraclejet.AnonAxisLine
 import typings.oracleOraclejet.AnonBackgroundColor
+import typings.oracleOraclejet.AnonBaselineScaling
+import typings.oracleOraclejet.AnonBorderWidth
 import typings.oracleOraclejet.AnonClose
 import typings.oracleOraclejet.AnonComponentName
 import typings.oracleOraclejet.AnonContent
-import typings.oracleOraclejet.AnonContext
+import typings.oracleOraclejet.AnonConverter
 import typings.oracleOraclejet.AnonDrag
 import typings.oracleOraclejet.AnonInsert
 import typings.oracleOraclejet.AnonPreventDefault
+import typings.oracleOraclejet.AnonRenderer
 import typings.oracleOraclejet.AnonX
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.ojchartMod.ojChart.AxisTitleContext
@@ -201,7 +201,7 @@ trait ojChart_[K, D] extends dvtBaseComponent[ojChartSettableProperties[K, D]] {
   var highlightedCategories: js.Array[String] = js.native
   var hoverBehavior: dim | none = js.native
   var initialZooming: first | last | none = js.native
-  var legend: AnonAsNeeded = js.native
+  var legend: AnonBackgroundColor = js.native
   var onAnimationOnDataChangeChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | slideToLeft | slideToRight | none], _]) | Null = js.native
   var onAnimationOnDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | alphaFade | zoom | none], _]) | Null = js.native
   var onAsChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
@@ -227,7 +227,7 @@ trait ojChart_[K, D] extends dvtBaseComponent[ojChartSettableProperties[K, D]] {
   var onHighlightedCategoriesChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[String]], _]) | Null = js.native
   var onHoverBehaviorChanged: (js.Function1[/* event */ JetElementCustomEvent[dim | none], _]) | Null = js.native
   var onInitialZoomingChanged: (js.Function1[/* event */ JetElementCustomEvent[first | last | none], _]) | Null = js.native
-  var onLegendChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonAsNeeded], _]) | Null = js.native
+  var onLegendChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonBackgroundColor], _]) | Null = js.native
   var onOjDrill: (js.Function1[/* event */ ojDrill, _]) | Null = js.native
   var onOjSelectInput: (js.Function1[/* event */ ojSelectInput, _]) | Null = js.native
   var onOjViewportChange: (js.Function1[/* event */ ojViewportChange, _]) | Null = js.native
@@ -235,8 +235,8 @@ trait ojChart_[K, D] extends dvtBaseComponent[ojChartSettableProperties[K, D]] {
   var onOrientationChanged: (js.Function1[/* event */ JetElementCustomEvent[horizontal | vertical], _]) | Null = js.native
   var onOtherThresholdChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
   var onOverviewChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonContent], _]) | Null = js.native
-  var onPieCenterChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonAuto], _]) | Null = js.native
-  var onPlotAreaChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonBackgroundColor], _]) | Null = js.native
+  var onPieCenterChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonConverter], _]) | Null = js.native
+  var onPlotAreaChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonBorderWidth], _]) | Null = js.native
   var onPolarGridShapeChanged: (js.Function1[/* event */ JetElementCustomEvent[polygon | circle], _]) | Null = js.native
   var onSelectionChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[K]], _]) | Null = js.native
   var onSelectionModeChanged: (js.Function1[/* event */ JetElementCustomEvent[single | multiple | none], _]) | Null = js.native
@@ -249,12 +249,12 @@ trait ojChart_[K, D] extends dvtBaseComponent[ojChartSettableProperties[K, D]] {
   var onSplitterPositionChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
   var onStackChanged: (js.Function1[/* event */ JetElementCustomEvent[on | off], _]) | Null = js.native
   var onStackLabelChanged: (js.Function1[/* event */ JetElementCustomEvent[on | off], _]) | Null = js.native
-  var onStyleDefaultsChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonAboveMarker], _]) | Null = js.native
+  var onStyleDefaultsChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonAnimationDownColor], _]) | Null = js.native
   var onTimeAxisTypeChanged: (js.Function1[
     /* event */ JetElementCustomEvent[enabled | mixedFrequency | skipGaps | disabled | auto], 
     _
   ]) | Null = js.native
-  var onTooltipChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonContext], _]) | Null = js.native
+  var onTooltipChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonRenderer], _]) | Null = js.native
   var onTouchResponseChanged: (js.Function1[/* event */ JetElementCustomEvent[touchStart | auto], _]) | Null = js.native
   var onTypeChanged: (js.Function1[
     /* event */ JetElementCustomEvent[
@@ -265,7 +265,7 @@ trait ojChart_[K, D] extends dvtBaseComponent[ojChartSettableProperties[K, D]] {
   var onValueFormatsChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonClose], _]) | Null = js.native
   var onXAxisChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonAxisLine], _]) | Null = js.native
   var onY2AxisChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonAlignTickMarks], _]) | Null = js.native
-  var onYAxisChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonAutoAxisLine], _]) | Null = js.native
+  var onYAxisChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonBaselineScaling], _]) | Null = js.native
   var onZoomAndScrollChanged: (js.Function1[
     /* event */ JetElementCustomEvent[delayedScrollOnly | liveScrollOnly | delayed | live | off], 
     _
@@ -274,8 +274,8 @@ trait ojChart_[K, D] extends dvtBaseComponent[ojChartSettableProperties[K, D]] {
   var orientation: horizontal | vertical = js.native
   var otherThreshold: Double = js.native
   var overview: AnonContent = js.native
-  var pieCenter: AnonAuto = js.native
-  var plotArea: AnonBackgroundColor = js.native
+  var pieCenter: AnonConverter = js.native
+  var plotArea: AnonBorderWidth = js.native
   var polarGridShape: polygon | circle = js.native
   var selection: js.Array[K] = js.native
   var selectionMode: single | multiple | none = js.native
@@ -285,9 +285,9 @@ trait ojChart_[K, D] extends dvtBaseComponent[ojChartSettableProperties[K, D]] {
   var splitterPosition: Double = js.native
   var stack: on | off = js.native
   var stackLabel: on | off = js.native
-  var styleDefaults: AnonAboveMarker = js.native
+  var styleDefaults: AnonAnimationDownColor = js.native
   var timeAxisType: enabled | mixedFrequency | skipGaps | disabled | auto = js.native
-  var tooltip: AnonContext = js.native
+  var tooltip: AnonRenderer = js.native
   var touchResponse: touchStart | auto = js.native
   @JSName("translations")
   var translations_ojChart_ : AnonComponentName = js.native
@@ -295,7 +295,7 @@ trait ojChart_[K, D] extends dvtBaseComponent[ojChartSettableProperties[K, D]] {
   var valueFormats: AnonClose = js.native
   var xAxis: AnonAxisLine = js.native
   var y2Axis: AnonAlignTickMarks = js.native
-  var yAxis: AnonAutoAxisLine = js.native
+  var yAxis: AnonBaselineScaling = js.native
   var zoomAndScroll: delayedScrollOnly | liveScrollOnly | delayed | live | off = js.native
   var zoomDirection: x | y | auto = js.native
   def addEventListener(
@@ -696,12 +696,12 @@ trait ojChart_[K, D] extends dvtBaseComponent[ojChartSettableProperties[K, D]] {
   @JSName("addEventListener")
   def addEventListener_legendChanged(
     `type`: legendChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonAsNeeded], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonBackgroundColor], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_legendChanged(
     `type`: legendChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonAsNeeded], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonBackgroundColor], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -773,23 +773,23 @@ trait ojChart_[K, D] extends dvtBaseComponent[ojChartSettableProperties[K, D]] {
   @JSName("addEventListener")
   def addEventListener_pieCenterChanged(
     `type`: pieCenterChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonAuto], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonConverter], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_pieCenterChanged(
     `type`: pieCenterChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonAuto], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonConverter], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_plotAreaChanged(
     `type`: plotAreaChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonBackgroundColor], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonBorderWidth], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_plotAreaChanged(
     `type`: plotAreaChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonBackgroundColor], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonBorderWidth], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -836,23 +836,23 @@ trait ojChart_[K, D] extends dvtBaseComponent[ojChartSettableProperties[K, D]] {
   @JSName("addEventListener")
   def addEventListener_styleDefaultsChanged(
     `type`: styleDefaultsChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonAboveMarker], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonAnimationDownColor], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_styleDefaultsChanged(
     `type`: styleDefaultsChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonAboveMarker], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonAnimationDownColor], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_tooltipChanged(
     `type`: tooltipChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonContext], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonRenderer], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_tooltipChanged(
     `type`: tooltipChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonContext], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonRenderer], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -891,12 +891,12 @@ trait ojChart_[K, D] extends dvtBaseComponent[ojChartSettableProperties[K, D]] {
   @JSName("addEventListener")
   def addEventListener_yAxisChanged(
     `type`: yAxisChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonAutoAxisLine], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonBaselineScaling], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_yAxisChanged(
     `type`: yAxisChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonAutoAxisLine], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonBaselineScaling], _],
     useCapture: Boolean
   ): Unit = js.native
   def dataLabel(context: DataLabelContext): AnonInsert | AnonPreventDefault = js.native
@@ -943,7 +943,7 @@ trait ojChart_[K, D] extends dvtBaseComponent[ojChartSettableProperties[K, D]] {
   @JSName("getProperty")
   def getProperty_initialZooming(property: initialZooming): first | last | none = js.native
   @JSName("getProperty")
-  def getProperty_legend(property: legend): AnonAsNeeded = js.native
+  def getProperty_legend(property: legend): AnonBackgroundColor = js.native
   @JSName("getProperty")
   def getProperty_orientation(property: orientation): horizontal | vertical = js.native
   @JSName("getProperty")
@@ -951,9 +951,9 @@ trait ojChart_[K, D] extends dvtBaseComponent[ojChartSettableProperties[K, D]] {
   @JSName("getProperty")
   def getProperty_overview(property: overview): AnonContent = js.native
   @JSName("getProperty")
-  def getProperty_pieCenter(property: pieCenter): AnonAuto = js.native
+  def getProperty_pieCenter(property: pieCenter): AnonConverter = js.native
   @JSName("getProperty")
-  def getProperty_plotArea(property: plotArea): AnonBackgroundColor = js.native
+  def getProperty_plotArea(property: plotArea): AnonBorderWidth = js.native
   @JSName("getProperty")
   def getProperty_polarGridShape(property: polarGridShape): polygon | circle = js.native
   @JSName("getProperty")
@@ -973,11 +973,11 @@ trait ojChart_[K, D] extends dvtBaseComponent[ojChartSettableProperties[K, D]] {
   @JSName("getProperty")
   def getProperty_stackLabel(property: stackLabel): on | off = js.native
   @JSName("getProperty")
-  def getProperty_styleDefaults(property: styleDefaults): AnonAboveMarker = js.native
+  def getProperty_styleDefaults(property: styleDefaults): AnonAnimationDownColor = js.native
   @JSName("getProperty")
   def getProperty_timeAxisType(property: timeAxisType): enabled | mixedFrequency | skipGaps | disabled | auto = js.native
   @JSName("getProperty")
-  def getProperty_tooltip(property: tooltip): AnonContext = js.native
+  def getProperty_tooltip(property: tooltip): AnonRenderer = js.native
   @JSName("getProperty")
   def getProperty_touchResponse(property: touchResponse): touchStart | auto = js.native
   @JSName("getProperty")
@@ -989,7 +989,7 @@ trait ojChart_[K, D] extends dvtBaseComponent[ojChartSettableProperties[K, D]] {
   @JSName("getProperty")
   def getProperty_y2Axis(property: y2Axis): AnonAlignTickMarks = js.native
   @JSName("getProperty")
-  def getProperty_yAxis(property: yAxis): AnonAutoAxisLine = js.native
+  def getProperty_yAxis(property: yAxis): AnonBaselineScaling = js.native
   @JSName("getProperty")
   def getProperty_zoomAndScroll(property: zoomAndScroll): delayedScrollOnly | liveScrollOnly | delayed | live | off = js.native
   @JSName("getProperty")
@@ -1094,15 +1094,15 @@ trait ojChart_[K, D] extends dvtBaseComponent[ojChartSettableProperties[K, D]] {
   @JSName("setProperty")
   def setProperty_highlightedCategories(property: highlightedCategories, value: js.Array[String]): Unit = js.native
   @JSName("setProperty")
-  def setProperty_legend(property: legend, value: AnonAsNeeded): Unit = js.native
+  def setProperty_legend(property: legend, value: AnonBackgroundColor): Unit = js.native
   @JSName("setProperty")
   def setProperty_otherThreshold(property: otherThreshold, value: Double): Unit = js.native
   @JSName("setProperty")
   def setProperty_overview(property: overview, value: AnonContent): Unit = js.native
   @JSName("setProperty")
-  def setProperty_pieCenter(property: pieCenter, value: AnonAuto): Unit = js.native
+  def setProperty_pieCenter(property: pieCenter, value: AnonConverter): Unit = js.native
   @JSName("setProperty")
-  def setProperty_plotArea(property: plotArea, value: AnonBackgroundColor): Unit = js.native
+  def setProperty_plotArea(property: plotArea, value: AnonBorderWidth): Unit = js.native
   @JSName("setProperty")
   def setProperty_selection(property: selection, value: js.Array[K]): Unit = js.native
   @JSName("setProperty")
@@ -1115,9 +1115,9 @@ trait ojChart_[K, D] extends dvtBaseComponent[ojChartSettableProperties[K, D]] {
   @JSName("setProperty")
   def setProperty_splitterPosition(property: splitterPosition, value: Double): Unit = js.native
   @JSName("setProperty")
-  def setProperty_styleDefaults(property: styleDefaults, value: AnonAboveMarker): Unit = js.native
+  def setProperty_styleDefaults(property: styleDefaults, value: AnonAnimationDownColor): Unit = js.native
   @JSName("setProperty")
-  def setProperty_tooltip(property: tooltip, value: AnonContext): Unit = js.native
+  def setProperty_tooltip(property: tooltip, value: AnonRenderer): Unit = js.native
   @JSName("setProperty")
   def setProperty_translations(property: translations, value: AnonComponentName): Unit = js.native
   @JSName("setProperty")
@@ -1127,6 +1127,6 @@ trait ojChart_[K, D] extends dvtBaseComponent[ojChartSettableProperties[K, D]] {
   @JSName("setProperty")
   def setProperty_y2Axis(property: y2Axis, value: AnonAlignTickMarks): Unit = js.native
   @JSName("setProperty")
-  def setProperty_yAxis(property: yAxis, value: AnonAutoAxisLine): Unit = js.native
+  def setProperty_yAxis(property: yAxis, value: AnonBaselineScaling): Unit = js.native
 }
 

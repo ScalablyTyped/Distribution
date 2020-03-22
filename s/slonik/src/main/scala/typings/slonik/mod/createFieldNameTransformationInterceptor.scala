@@ -1,6 +1,6 @@
 package typings.slonik.mod
 
-import typings.slonik.AnonField
+import typings.slonik.AnonFormat
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("slonik", "createFieldNameTransformationInterceptor")
 @js.native
 object createFieldNameTransformationInterceptor extends js.Object {
-  def apply(configuration: AnonField): InterceptorType = js.native
+  def apply(configuration: AnonFormat): InterceptorType = js.native
 }
 

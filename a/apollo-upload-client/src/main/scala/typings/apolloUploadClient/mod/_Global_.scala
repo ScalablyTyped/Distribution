@@ -1,6 +1,6 @@
 package typings.apolloUploadClient.mod
 
-import typings.apolloUploadClient.FnInit
+import typings.apolloUploadClient.FnCall
 import typings.std.RequestInfo
 import typings.std.RequestInit
 import typings.std.Response
@@ -14,7 +14,7 @@ object _Global_ extends js.Object {
   @js.native
   trait GlobalFetch extends js.Object {
     @JSName("fetch")
-    var fetch_Original: FnInit = js.native
+    var fetch_Original: FnCall = js.native
     def fetch(input: RequestInfo): js.Promise[Response] = js.native
     def fetch(input: RequestInfo, init: RequestInit): js.Promise[Response] = js.native
   }

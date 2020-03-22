@@ -8,7 +8,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.highcharts.mod.SeriesOptions because var conflicts: zIndex. Inlined id, index, legendIndex, mapData, name, stack, treemap, `type`, xAxis, yAxis */ trait SeriesTilemapOptions
+- typings.highcharts.mod.SeriesOptions because var conflicts: zIndex. Inlined id, index, legendIndex, mapData, name, stack, `type`, xAxis, yAxis */ trait SeriesTilemapOptions
   extends PlotTilemapOptions
      with SeriesOptionsType {
   /**
@@ -32,7 +32,7 @@ import scala.scalajs.js.annotation._
     */
   var data: js.UndefOr[
     js.Array[
-      (js.Tuple2[Double | String, Double]) | (js.Tuple3[Double | String, Double, Double]) | SeriesTilemapDataOptions
+      (js.Tuple2[Double | String, Double]) | (js.Tuple3[Double | String, Double, Double]) | PointOptionsObject
     ]
   ] = js.undefined
   /**
@@ -73,7 +73,6 @@ import scala.scalajs.js.annotation._
     * Not available
     */
   var stack: js.UndefOr[Double | String] = js.undefined
-  var treemap: js.UndefOr[SeriesTreemapOptions] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) This property is only in
     * TypeScript non-optional and might be `undefined` in series objects from
@@ -100,9 +99,9 @@ object SeriesTilemapOptions {
   @scala.inline
   def apply(
     `type`: String | tilemap,
-    accessibility: js.Object | PlotTilemapAccessibilityOptions = null,
+    accessibility: SeriesAccessibilityOptionsObject = null,
     allowPointSelect: js.UndefOr[Boolean] = js.undefined,
-    animation: Boolean | PlotTilemapAnimationOptions = null,
+    animation: js.UndefOr[Boolean] = js.undefined,
     boostBlending: OptionsBoostBlendingValue = null,
     boostThreshold: Int | Double = null,
     borderColor: ColorString | GradientColorObject | PatternObject = null,
@@ -117,29 +116,30 @@ object SeriesTilemapOptions {
     compare: String = null,
     compareBase: `0` | `100` = null,
     compareStart: js.UndefOr[Boolean] = js.undefined,
-    connectors: PlotTilemapConnectorsOptions = null,
+    connectors: SeriesConnectorsOptionsObject = null,
     cropThreshold: Int | Double = null,
     cursor: String | CursorValue = null,
     data: js.Array[
-      (js.Tuple2[Double | String, Double]) | (js.Tuple3[Double | String, Double, Double]) | SeriesTilemapDataOptions
+      (js.Tuple2[Double | String, Double]) | (js.Tuple3[Double | String, Double, Double]) | PointOptionsObject
     ] = null,
-    dataGrouping: PlotTilemapDataGroupingOptions = null,
+    dataGrouping: DataGroupingOptionsObject = null,
     dataLabels: DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject] = null,
     dataParser: js.UndefOr[scala.Nothing] = js.undefined,
+    dataSorting: DataSortingOptionsObject | PlotTilemapDataSortingOptions = null,
     dataURL: js.UndefOr[scala.Nothing] = js.undefined,
     description: String = null,
-    dragDrop: PlotTilemapDragDropOptions = null,
+    dragDrop: SeriesDragDropOptionsObject = null,
     enableMouseTracking: js.UndefOr[Boolean] = js.undefined,
-    events: PlotTilemapEventsOptions = null,
+    events: SeriesEventsOptionsObject = null,
     gapSize: Int | Double = null,
     gapUnit: OptionsGapUnitValue = null,
     id: String = null,
     includeInDataExport: js.UndefOr[Boolean] = js.undefined,
     index: Int | Double = null,
     keys: js.Array[String] = null,
-    label: PlotTilemapLabelOptions = null,
-    lastPrice: PlotTilemapLastPriceOptions = null,
-    lastVisiblePrice: PlotTilemapLastVisiblePriceOptions = null,
+    label: SeriesLabelOptionsObject = null,
+    lastPrice: SeriesLastPriceOptionsObject = null,
+    lastVisiblePrice: SeriesLastVisiblePriceOptionsObject = null,
     legendIndex: Int | Double = null,
     linkedTo: String = null,
     mapData: js.Any | js.Array[SeriesMapDataOptions] | scala.Nothing = null,
@@ -148,7 +148,7 @@ object SeriesTilemapOptions {
     negativeColor: ColorString | GradientColorObject | PatternObject = null,
     nullColor: ColorString | GradientColorObject | PatternObject = null,
     opacity: Int | Double = null,
-    point: PlotTilemapPointOptions = null,
+    point: PlotSeriesPointOptions = null,
     pointDescriptionFormatter: js.Function = null,
     pointPadding: Int | Double = null,
     rowsize: Int | Double = null,
@@ -158,24 +158,23 @@ object SeriesTilemapOptions {
     showInNavigator: js.UndefOr[Boolean] = js.undefined,
     skipKeyboardNavigation: js.UndefOr[Boolean] = js.undefined,
     stack: Double | scala.Nothing | String = null,
-    states: PlotTilemapStatesOptions = null,
+    states: SeriesStatesOptionsObject = null,
     stickyTracking: js.UndefOr[Boolean] = js.undefined,
     tileShape: TilemapShapeValue = null,
-    tooltip: PlotTilemapTooltipOptions = null,
-    treemap: SeriesTreemapOptions = null,
+    tooltip: SeriesTooltipOptionsObject = null,
     turboThreshold: Int | Double = null,
     visible: js.UndefOr[Boolean] = js.undefined,
     xAxis: Double | String = null,
     yAxis: Double | String = null,
     zIndex: Int | Double = null,
     zoneAxis: String = null,
-    zones: js.Array[PlotTilemapZonesOptions] = null
+    zones: js.Array[SeriesZonesOptionsObject] = null
   ): SeriesTilemapOptions = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (accessibility != null) __obj.updateDynamic("accessibility")(accessibility.asInstanceOf[js.Any])
     if (!js.isUndefined(allowPointSelect)) __obj.updateDynamic("allowPointSelect")(allowPointSelect.asInstanceOf[js.Any])
-    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
+    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
     if (boostBlending != null) __obj.updateDynamic("boostBlending")(boostBlending.asInstanceOf[js.Any])
     if (boostThreshold != null) __obj.updateDynamic("boostThreshold")(boostThreshold.asInstanceOf[js.Any])
     if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
@@ -197,6 +196,7 @@ object SeriesTilemapOptions {
     if (dataGrouping != null) __obj.updateDynamic("dataGrouping")(dataGrouping.asInstanceOf[js.Any])
     if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
     if (!js.isUndefined(dataParser)) __obj.updateDynamic("dataParser")(dataParser.asInstanceOf[js.Any])
+    if (dataSorting != null) __obj.updateDynamic("dataSorting")(dataSorting.asInstanceOf[js.Any])
     if (!js.isUndefined(dataURL)) __obj.updateDynamic("dataURL")(dataURL.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (dragDrop != null) __obj.updateDynamic("dragDrop")(dragDrop.asInstanceOf[js.Any])
@@ -233,7 +233,6 @@ object SeriesTilemapOptions {
     if (!js.isUndefined(stickyTracking)) __obj.updateDynamic("stickyTracking")(stickyTracking.asInstanceOf[js.Any])
     if (tileShape != null) __obj.updateDynamic("tileShape")(tileShape.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (treemap != null) __obj.updateDynamic("treemap")(treemap.asInstanceOf[js.Any])
     if (turboThreshold != null) __obj.updateDynamic("turboThreshold")(turboThreshold.asInstanceOf[js.Any])
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     if (xAxis != null) __obj.updateDynamic("xAxis")(xAxis.asInstanceOf[js.Any])

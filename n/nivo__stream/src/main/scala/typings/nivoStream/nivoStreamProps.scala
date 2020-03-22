@@ -1,16 +1,14 @@
 package typings.nivoStream
 
+import typings.nivoStream.mod.StreamProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait nivoStreamProps {
   @scala.inline
-  def ResponsiveStreamProps: typings.nivoStream.mod.StreamProps.type = typings.nivoStream.mod.StreamProps
-  type ResponsiveStreamProps[T] = typings.nivoStream.mod.StreamProps[T]
-  @scala.inline
-  def StreamProps: StreamPropsTDimensions.type = typings.nivoStream.StreamPropsTDimensions
-  type StreamProps[T] = StreamPropsTDimensions[T]
+  def ResponsiveStreamProps: StreamProps.type = typings.nivoStream.mod.StreamProps
+  type ResponsiveStreamProps[T] = StreamProps[T]
   @scala.inline
   def StreamDotsItemProps: typings.nivoStream.mod.StreamDotsItemProps.type = typings.nivoStream.mod.StreamDotsItemProps
   type StreamDotsItemProps = typings.nivoStream.mod.StreamDotsItemProps

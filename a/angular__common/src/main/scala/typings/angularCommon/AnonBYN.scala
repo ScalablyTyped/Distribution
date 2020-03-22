@@ -15,6 +15,7 @@ trait AnonBYN extends js.Object {
   var SEK: js.Array[scala.Nothing]
   var THB: js.Array[String]
   var TWD: js.Array[String]
+  var XXX: js.Array[scala.Nothing]
 }
 
 object AnonBYN {
@@ -29,9 +30,10 @@ object AnonBYN {
     RUR: js.Array[scala.Nothing],
     SEK: js.Array[scala.Nothing],
     THB: js.Array[String],
-    TWD: js.Array[String]
+    TWD: js.Array[String],
+    XXX: js.Array[scala.Nothing]
   ): AnonBYN = {
-    val __obj = js.Dynamic.literal(BYN = BYN.asInstanceOf[js.Any], DKK = DKK.asInstanceOf[js.Any], HRK = HRK.asInstanceOf[js.Any], ISK = ISK.asInstanceOf[js.Any], NOK = NOK.asInstanceOf[js.Any], PLN = PLN.asInstanceOf[js.Any], RUR = RUR.asInstanceOf[js.Any], SEK = SEK.asInstanceOf[js.Any], THB = THB.asInstanceOf[js.Any], TWD = TWD.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(BYN = BYN.asInstanceOf[js.Any], DKK = DKK.asInstanceOf[js.Any], HRK = HRK.asInstanceOf[js.Any], ISK = ISK.asInstanceOf[js.Any], NOK = NOK.asInstanceOf[js.Any], PLN = PLN.asInstanceOf[js.Any], RUR = RUR.asInstanceOf[js.Any], SEK = SEK.asInstanceOf[js.Any], THB = THB.asInstanceOf[js.Any], TWD = TWD.asInstanceOf[js.Any], XXX = XXX.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AnonBYN]
   }

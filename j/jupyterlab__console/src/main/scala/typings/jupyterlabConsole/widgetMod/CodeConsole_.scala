@@ -1,17 +1,17 @@
 package typings.jupyterlabConsole.widgetMod
 
-import typings.jupyterlabApputils.clientsessionMod.IClientSession
+import typings.jupyterlabApputils.sessioncontextMod.ISessionContext
 import typings.jupyterlabCells.mod.Cell
 import typings.jupyterlabCells.mod.CodeCell
 import typings.jupyterlabConsole.widgetMod.CodeConsole.IContentFactory
 import typings.jupyterlabConsole.widgetMod.CodeConsole.IModelFactory
 import typings.jupyterlabConsole.widgetMod.CodeConsole.IOptions
-import typings.jupyterlabCoreutils.nbformatMod.nbformat.ICodeCell
+import typings.jupyterlabNbformat.mod.ICodeCell
 import typings.jupyterlabObservables.observablelistMod.IObservableList
 import typings.jupyterlabRendermime.tokensMod.IRenderMimeRegistry
-import typings.phosphorCoreutils.jsonMod.JSONObject
-import typings.phosphorSignaling.mod.ISignal
-import typings.phosphorWidgets.mod.Widget
+import typings.luminoCoreutils.jsonMod.JSONObject
+import typings.luminoSignaling.mod.ISignal
+import typings.luminoWidgets.mod.Widget
 import typings.std.Date
 import typings.std.Event_
 import scala.scalajs.js
@@ -92,30 +92,13 @@ class CodeConsole_ protected () extends Widget {
     */
   var _startDrag: js.Any = js.native
   /**
-    * The list of content cells in the console.
-    *
-    * #### Notes
-    * This list does not include the current banner or the prompt for a console.
-    * It may include previous banners as raw cells.
-    */
-  val cells: IObservableList[Cell] = js.native
-  /**
     * The content factory used by the console.
     */
   val contentFactory: IContentFactory = js.native
   /**
-    * A signal emitted when the console finished executing its prompt cell.
-    */
-  val executed: ISignal[this.type, Date] = js.native
-  /**
     * The model factory for the console widget.
     */
   val modelFactory: IModelFactory = js.native
-  val promptCell: CodeCell | Null = js.native
-  /**
-    * A signal emitted when a new prompt cell is created.
-    */
-  val promptCellCreated: ISignal[this.type, CodeCell] = js.native
   /**
     * The rendermime instance used by the console.
     */
@@ -123,7 +106,7 @@ class CodeConsole_ protected () extends Widget {
   /**
     * The client session used by the console.
     */
-  val session: IClientSession = js.native
+  val sessionContext: ISessionContext = js.native
   /**
     * Add a banner cell.
     */
@@ -143,6 +126,14 @@ class CodeConsole_ protected () extends Widget {
     */
   def addCell(cell: CodeCell): Unit = js.native
   def addCell(cell: CodeCell, msgId: String): Unit = js.native
+  /**
+    * The list of content cells in the console.
+    *
+    * #### Notes
+    * This list does not include the current banner or the prompt for a console.
+    * It may include previous banners as raw cells.
+    */
+  def cells(): IObservableList[Cell] = js.native
   /**
     * Clear the code cells.
     */
@@ -164,6 +155,10 @@ class CodeConsole_ protected () extends Widget {
   def execute(): js.Promise[Unit] = js.native
   def execute(force: Boolean): js.Promise[Unit] = js.native
   def execute(force: Boolean, timeout: Double): js.Promise[Unit] = js.native
+  /**
+    * A signal emitted when the console finished executing its prompt cell.
+    */
+  def executed(): ISignal[this.type, Date] = js.native
   /**
     * Get a cell given a message id.
     *
@@ -198,6 +193,11 @@ class CodeConsole_ protected () extends Widget {
     * Make a new prompt cell.
     */
   /* protected */ def newPromptCell(): Unit = js.native
+  def promptCell(): CodeCell | Null = js.native
+  /**
+    * A signal emitted when a new prompt cell is created.
+    */
+  def promptCellCreated(): ISignal[this.type, CodeCell] = js.native
   /**
     * Serialize the output.
     *

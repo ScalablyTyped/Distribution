@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.highcharts.mod.SeriesOptions because var conflicts: name, zIndex. Inlined id, index, legendIndex, mapData, stack, treemap, `type`, xAxis, yAxis */ trait SeriesKeltnerchannelsOptions
+- typings.highcharts.mod.SeriesOptions because var conflicts: name, zIndex. Inlined id, index, legendIndex, mapData, stack, `type`, xAxis, yAxis */ trait SeriesKeltnerchannelsOptions
   extends PlotKeltnerchannelsOptions
      with SeriesOptionsType {
   /**
@@ -47,7 +47,6 @@ import scala.scalajs.js.annotation._
     * string.
     */
   var stack: js.UndefOr[Double | String] = js.undefined
-  var treemap: js.UndefOr[SeriesTreemapOptions] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) This property is only in
     * TypeScript non-optional and might be `undefined` in series objects from
@@ -74,9 +73,9 @@ object SeriesKeltnerchannelsOptions {
   @scala.inline
   def apply(
     `type`: String | keltnerchannels,
-    accessibility: js.Object | PlotKeltnerchannelsAccessibilityOptions = null,
+    accessibility: SeriesAccessibilityOptionsObject = null,
     allowPointSelect: js.UndefOr[Boolean] = js.undefined,
-    animation: Boolean | AnimationOptionsObject | PlotKeltnerchannelsAnimationOptions = null,
+    animation: Boolean | AnimationOptionsObject = null,
     animationLimit: Int | Double = null,
     boostBlending: OptionsBoostBlendingValue = null,
     boostThreshold: Int | Double = null,
@@ -92,17 +91,18 @@ object SeriesKeltnerchannelsOptions {
     compareToMain: js.UndefOr[Boolean] = js.undefined,
     connectEnds: js.UndefOr[Boolean] = js.undefined,
     connectNulls: js.UndefOr[Boolean] = js.undefined,
-    connectors: PlotKeltnerchannelsConnectorsOptions = null,
+    connectors: SeriesConnectorsOptionsObject = null,
     cropThreshold: Int | Double = null,
     cursor: String | CursorValue = null,
     dashStyle: DashStyleValue = null,
-    dataGrouping: PlotKeltnerchannelsDataGroupingOptions = null,
+    dataGrouping: DataGroupingOptionsObject = null,
     dataLabels: DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject] = null,
     dataParser: js.UndefOr[scala.Nothing] = js.undefined,
+    dataSorting: DataSortingOptionsObject | PlotKeltnerchannelsDataSortingOptions = null,
     dataURL: js.UndefOr[scala.Nothing] = js.undefined,
     description: String = null,
     enableMouseTracking: js.UndefOr[Boolean] = js.undefined,
-    events: PlotKeltnerchannelsEventsOptions = null,
+    events: SeriesEventsOptionsObject = null,
     findNearestPointBy: OptionsFindNearestPointByValue = null,
     gapSize: Int | Double = null,
     gapUnit: OptionsGapUnitValue = null,
@@ -110,20 +110,20 @@ object SeriesKeltnerchannelsOptions {
     id: String = null,
     includeInDataExport: js.UndefOr[Boolean] = js.undefined,
     index: Int | Double = null,
-    label: PlotKeltnerchannelsLabelOptions = null,
-    lastPrice: PlotKeltnerchannelsLastPriceOptions = null,
-    lastVisiblePrice: PlotKeltnerchannelsLastVisiblePriceOptions = null,
+    label: SeriesLabelOptionsObject = null,
+    lastPrice: SeriesLastPriceOptionsObject = null,
+    lastVisiblePrice: SeriesLastVisiblePriceOptionsObject = null,
     legendIndex: Int | Double = null,
     lineWidth: Int | Double = null,
     linecap: SeriesLinecapValue = null,
     linkedTo: String = null,
     mapData: js.Array[SeriesMapDataOptions] | js.Any = null,
-    marker: PlotKeltnerchannelsMarkerOptions = null,
+    marker: PointMarkerOptionsObject = null,
     name: String = null,
     negativeColor: ColorString | GradientColorObject | PatternObject = null,
     opacity: Int | Double = null,
     params: PlotKeltnerchannelsParamsOptions = null,
-    point: PlotKeltnerchannelsPointOptions = null,
+    point: PlotSeriesPointOptions = null,
     pointDescriptionFormatter: js.Function = null,
     selected: js.UndefOr[Boolean] = js.undefined,
     shadow: Boolean | ShadowOptionsObject = null,
@@ -132,20 +132,19 @@ object SeriesKeltnerchannelsOptions {
     skipKeyboardNavigation: js.UndefOr[Boolean] = js.undefined,
     softThreshold: js.UndefOr[Boolean] = js.undefined,
     stack: Double | String = null,
-    states: PlotKeltnerchannelsStatesOptions = null,
+    states: SeriesStatesOptionsObject = null,
     step: OptionsStepValue = null,
     stickyTracking: js.UndefOr[Boolean] = js.undefined,
     threshold: Int | Double = null,
-    tooltip: PlotKeltnerchannelsTooltipOptions = null,
+    tooltip: SeriesTooltipOptionsObject = null,
     topLine: PlotKeltnerchannelsTopLineOptions = null,
-    treemap: SeriesTreemapOptions = null,
     turboThreshold: Int | Double = null,
     visible: js.UndefOr[Boolean] = js.undefined,
     xAxis: Double | String = null,
     yAxis: Double | String = null,
     zIndex: Int | Double = null,
     zoneAxis: String = null,
-    zones: js.Array[PlotKeltnerchannelsZonesOptions] = null
+    zones: js.Array[SeriesZonesOptionsObject] = null
   ): SeriesKeltnerchannelsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -174,6 +173,7 @@ object SeriesKeltnerchannelsOptions {
     if (dataGrouping != null) __obj.updateDynamic("dataGrouping")(dataGrouping.asInstanceOf[js.Any])
     if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
     if (!js.isUndefined(dataParser)) __obj.updateDynamic("dataParser")(dataParser.asInstanceOf[js.Any])
+    if (dataSorting != null) __obj.updateDynamic("dataSorting")(dataSorting.asInstanceOf[js.Any])
     if (!js.isUndefined(dataURL)) __obj.updateDynamic("dataURL")(dataURL.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (!js.isUndefined(enableMouseTracking)) __obj.updateDynamic("enableMouseTracking")(enableMouseTracking.asInstanceOf[js.Any])
@@ -213,7 +213,6 @@ object SeriesKeltnerchannelsOptions {
     if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     if (topLine != null) __obj.updateDynamic("topLine")(topLine.asInstanceOf[js.Any])
-    if (treemap != null) __obj.updateDynamic("treemap")(treemap.asInstanceOf[js.Any])
     if (turboThreshold != null) __obj.updateDynamic("turboThreshold")(turboThreshold.asInstanceOf[js.Any])
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     if (xAxis != null) __obj.updateDynamic("xAxis")(xAxis.asInstanceOf[js.Any])

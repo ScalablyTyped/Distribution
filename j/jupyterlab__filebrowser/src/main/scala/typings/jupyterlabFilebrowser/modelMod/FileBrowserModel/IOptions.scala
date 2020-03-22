@@ -1,9 +1,8 @@
 package typings.jupyterlabFilebrowser.modelMod.FileBrowserModel
 
-import typings.jupyterlabCoreutils.tokensMod.IStateDB
 import typings.jupyterlabDocmanager.tokensMod.IDocumentManager
-import typings.jupyterlabUiComponents.interfacesMod.IIconRegistry
-import typings.phosphorCoreutils.jsonMod.ReadonlyJSONValue
+import typings.jupyterlabStatedb.tokensMod.IStateDB
+import typings.luminoCoreutils.jsonMod.ReadonlyPartialJSONValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,15 +12,16 @@ import scala.scalajs.js.annotation._
   */
 trait IOptions extends js.Object {
   /**
+    * Whether a file browser automatically loads its initial path.
+    * The default is `true`.
+    */
+  var auto: js.UndefOr[Boolean] = js.undefined
+  /**
     * An optional `Contents.IDrive` name for the model.
     * If given, the model will prepend `driveName:` to
     * all paths used in file operations.
     */
   var driveName: js.UndefOr[String] = js.undefined
-  /**
-    * An icon registry instance.
-    */
-  var iconRegistry: IIconRegistry
   /**
     * A document manager instance.
     */
@@ -34,19 +34,20 @@ trait IOptions extends js.Object {
     * An optional state database. If provided, the model will restore which
     * folder was last opened when it is restored.
     */
-  var state: js.UndefOr[IStateDB[ReadonlyJSONValue]] = js.undefined
+  var state: js.UndefOr[IStateDB[ReadonlyPartialJSONValue]] = js.undefined
 }
 
 object IOptions {
   @scala.inline
   def apply(
-    iconRegistry: IIconRegistry,
     manager: IDocumentManager,
+    auto: js.UndefOr[Boolean] = js.undefined,
     driveName: String = null,
     refreshInterval: Int | Double = null,
-    state: IStateDB[ReadonlyJSONValue] = null
+    state: IStateDB[ReadonlyPartialJSONValue] = null
   ): IOptions = {
-    val __obj = js.Dynamic.literal(iconRegistry = iconRegistry.asInstanceOf[js.Any], manager = manager.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(manager = manager.asInstanceOf[js.Any])
+    if (!js.isUndefined(auto)) __obj.updateDynamic("auto")(auto.asInstanceOf[js.Any])
     if (driveName != null) __obj.updateDynamic("driveName")(driveName.asInstanceOf[js.Any])
     if (refreshInterval != null) __obj.updateDynamic("refreshInterval")(refreshInterval.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])

@@ -24,7 +24,6 @@ object titleMod extends js.Object {
     var color: js.UndefOr[Color] = js.native
     var el: HTMLElement = js.native
     var emitStyle: js.Any = js.native
-    var getMode: js.Any = js.native
     var getSize: js.Any = js.native
     /**
       * Emitted when the styles change.

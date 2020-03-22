@@ -1,8 +1,8 @@
 package typings.echarts.echarts.EChartOption
 
-import typings.echarts.AnonBackgroundColorBorderColor
-import typings.echarts.AnonColorOpacityShadowBlur
-import typings.echarts.AnonLineStyleAnonColorOpacityShadowBlur
+import typings.echarts.AnonExtraCssText
+import typings.echarts.AnonLineStyleAnonShadowBlur
+import typings.echarts.AnonShadowBlur
 import typings.echarts.echarts.EChartOption.SeriesParallel.DataObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -267,7 +267,7 @@ trait SeriesParallel_ extends js.Object {
   /**
     * @see https://echarts.apache.org/en/option.html#series-parallel.emphasis
     */
-  var emphasis: js.UndefOr[AnonLineStyleAnonColorOpacityShadowBlur] = js.undefined
+  var emphasis: js.UndefOr[AnonLineStyleAnonShadowBlur] = js.undefined
   /**
     * Component ID, not specified by default.
     * If specified, it can be used to refer the component in option
@@ -293,7 +293,7 @@ trait SeriesParallel_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-parallel.lineStyle
     */
-  var lineStyle: js.UndefOr[AnonColorOpacityShadowBlur] = js.undefined
+  var lineStyle: js.UndefOr[AnonShadowBlur] = js.undefined
   /**
     * Series name used for displaying in
     * [tooltip](https://echarts.apache.org/en/option.html#tooltip)
@@ -389,7 +389,7 @@ trait SeriesParallel_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-parallel.tooltip
     */
-  var tooltip: js.UndefOr[AnonBackgroundColorBorderColor] = js.undefined
+  var tooltip: js.UndefOr[AnonExtraCssText] = js.undefined
   /**
     * @default
     * "parallel"
@@ -445,10 +445,10 @@ object SeriesParallel_ {
     animationThreshold: Int | Double = null,
     coordinateSystem: String = null,
     data: js.Array[(js.Array[Double | String | DataObject]) | DataObject | Double | String] = null,
-    emphasis: AnonLineStyleAnonColorOpacityShadowBlur = null,
+    emphasis: AnonLineStyleAnonShadowBlur = null,
     id: String = null,
     inactiveOpacity: Int | Double = null,
-    lineStyle: AnonColorOpacityShadowBlur = null,
+    lineStyle: AnonShadowBlur = null,
     name: String = null,
     parallelIndex: Int | Double = null,
     progressive: Int | Double = null,
@@ -457,7 +457,7 @@ object SeriesParallel_ {
     realtime: js.UndefOr[Boolean] = js.undefined,
     silent: js.UndefOr[Boolean] = js.undefined,
     smooth: Boolean | Double = null,
-    tooltip: AnonBackgroundColorBorderColor = null,
+    tooltip: AnonExtraCssText = null,
     `type`: String = null,
     z: Int | Double = null,
     zlevel: Int | Double = null

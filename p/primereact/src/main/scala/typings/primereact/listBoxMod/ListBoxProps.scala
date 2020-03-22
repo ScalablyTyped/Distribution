@@ -1,6 +1,6 @@
 package typings.primereact.listBoxMod
 
-import typings.primereact.AnonOriginalEventValue
+import typings.primereact.AnonValue
 import typings.primereact.tooltipOptionsMod.TooltipOptions
 import typings.react.mod._Global_.JSX.Element
 import scala.scalajs.js
@@ -18,7 +18,7 @@ trait ListBoxProps extends js.Object {
   var listStyle: js.UndefOr[js.Object] = js.undefined
   var metaKeySelection: js.UndefOr[Boolean] = js.undefined
   var multiple: js.UndefOr[Boolean] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* e */ AnonOriginalEventValue, Unit]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* e */ AnonValue, Unit]] = js.undefined
   var optionLabel: js.UndefOr[String] = js.undefined
   var options: js.UndefOr[js.Array[_]] = js.undefined
   var style: js.UndefOr[js.Object] = js.undefined
@@ -41,7 +41,7 @@ object ListBoxProps {
     listStyle: js.Object = null,
     metaKeySelection: js.UndefOr[Boolean] = js.undefined,
     multiple: js.UndefOr[Boolean] = js.undefined,
-    onChange: /* e */ AnonOriginalEventValue => Unit = null,
+    onChange: /* e */ AnonValue => Unit = null,
     optionLabel: String = null,
     options: js.Array[_] = null,
     style: js.Object = null,

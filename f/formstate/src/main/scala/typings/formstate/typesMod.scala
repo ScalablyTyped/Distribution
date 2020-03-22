@@ -30,7 +30,7 @@ object typesMod extends js.Object {
     var validating: Boolean = js.native
     def disableAutoValidation(): Unit = js.native
     def enableAutoValidation(): Unit = js.native
-    def validate(): js.Promise[AnonHasError | AnonFalse[TValue]] = js.native
+    def validate(): js.Promise[AnonHasError | AnonValue[TValue]] = js.native
   }
   
   def applyValidators[TValue](value: TValue, validators: js.Array[Validator[TValue]]): js.Promise[js.UndefOr[String | Null]] = js.native

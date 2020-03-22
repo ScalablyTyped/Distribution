@@ -1,6 +1,6 @@
 package typings.blueprintjsCore.portalMod
 
-import typings.propTypes.mod.ValidationMap
+import typings.blueprintjsCore.ValidationMapIPortalConte
 import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -27,7 +27,7 @@ class Portal ()
 @JSImport("@blueprintjs/core/lib/esm/components/portal/portal", "Portal")
 @js.native
 object Portal extends js.Object {
-  var contextTypes: ValidationMap[IPortalContext] = js.native
+  var contextTypes: ValidationMapIPortalConte = js.native
   var defaultProps: IPortalProps = js.native
   var displayName: String = js.native
 }

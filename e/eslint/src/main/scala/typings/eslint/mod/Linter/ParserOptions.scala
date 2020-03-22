@@ -1,7 +1,7 @@
 package typings.eslint.mod.Linter
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.eslint.AnonExperimentalObjectRestSpread
+import typings.eslint.AnonDictkey
 import typings.eslint.eslintNumbers.`10`
 import typings.eslint.eslintNumbers.`11`
 import typings.eslint.eslintNumbers.`2015`
@@ -24,7 +24,7 @@ import scala.scalajs.js.annotation._
 
 trait ParserOptions
   extends /* key */ StringDictionary[js.Any] {
-  var ecmaFeatures: js.UndefOr[AnonExperimentalObjectRestSpread] = js.undefined
+  var ecmaFeatures: js.UndefOr[AnonDictkey] = js.undefined
   var ecmaVersion: js.UndefOr[
     `3` | `5` | `6` | `7` | `8` | `9` | `10` | `11` | `2015` | `2016` | `2017` | `2018` | `2019` | `2020`
   ] = js.undefined
@@ -35,7 +35,7 @@ object ParserOptions {
   @scala.inline
   def apply(
     StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    ecmaFeatures: AnonExperimentalObjectRestSpread = null,
+    ecmaFeatures: AnonDictkey = null,
     ecmaVersion: `3` | `5` | `6` | `7` | `8` | `9` | `10` | `11` | `2015` | `2016` | `2017` | `2018` | `2019` | `2020` = null,
     sourceType: script | module = null
   ): ParserOptions = {

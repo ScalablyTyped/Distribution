@@ -4,9 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ K in keyof @emotion/serialize.@emotion/serialize.CSSProperties ]: @emotion/serialize.@emotion/serialize.CSSProperties[K] | std.Array<std.Extract<@emotion/serialize.@emotion/serialize.CSSProperties[K], string>>}
-- Dropped {[ K in csstype.csstype.Pseudos ]:? @emotion/serialize.@emotion/serialize.CSSObject} */ trait CSSObject
+trait CSSObject
   extends CSSOthersObjectForCSSObject
+     with CSSPropertiesWithMultiValues
+     with CSSPseudosForCSSObject
      with _CSSInterpolation
+
+object CSSObject {
+  @scala.inline
+  def apply(
+    CSSPropertiesWithMultiValues: CSSPropertiesWithMultiValues = null,
+    CSSPseudosForCSSObject: CSSPseudosForCSSObject = null,
+    _CSSInterpolation: _CSSInterpolation = null
+  ): CSSObject = {
+    val __obj = js.Dynamic.literal()
+    if (CSSPropertiesWithMultiValues != null) js.Dynamic.global.Object.assign(__obj, CSSPropertiesWithMultiValues)
+    if (CSSPseudosForCSSObject != null) js.Dynamic.global.Object.assign(__obj, CSSPseudosForCSSObject)
+    if (_CSSInterpolation != null) js.Dynamic.global.Object.assign(__obj, _CSSInterpolation)
+    __obj.asInstanceOf[CSSObject]
+  }
+}
 

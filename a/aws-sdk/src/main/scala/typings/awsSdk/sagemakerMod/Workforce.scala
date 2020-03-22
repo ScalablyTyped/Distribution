@@ -19,7 +19,7 @@ trait Workforce extends js.Object {
     */
   var WorkforceArn: typings.awsSdk.sagemakerMod.WorkforceArn = js.native
   /**
-    * The name of the private workforce whose access you want to restrict. WorkforceName is automatically set to "default" when a workforce is created and cannot be modified. 
+    * The name of the private workforce whose access you want to restrict. WorkforceName is automatically set to default when a workforce is created and cannot be modified. 
     */
   var WorkforceName: typings.awsSdk.sagemakerMod.WorkforceName = js.native
 }

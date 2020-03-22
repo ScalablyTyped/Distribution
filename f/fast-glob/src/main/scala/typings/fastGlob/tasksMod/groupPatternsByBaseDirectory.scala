@@ -1,7 +1,7 @@
 package typings.fastGlob.tasksMod
 
-import typings.fastGlob.patternsMod.Pattern
-import typings.fastGlob.patternsMod.PatternsGroup
+import typings.fastGlob.typesMod.Pattern
+import typings.fastGlob.typesMod.PatternsGroup
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

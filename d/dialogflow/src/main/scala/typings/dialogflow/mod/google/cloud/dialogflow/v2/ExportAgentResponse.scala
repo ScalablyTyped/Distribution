@@ -24,7 +24,7 @@ class ExportAgentResponse () extends IExportAgentResponse {
   var agent: js.UndefOr[agentUri | agentContent] = js.native
   /** ExportAgentResponse agentContent. */
   @JSName("agentContent")
-  var agentContent_ExportAgentResponse: Uint8Array = js.native
+  var agentContent_ExportAgentResponse: Uint8Array | String = js.native
   /** ExportAgentResponse agentUri. */
   @JSName("agentUri")
   var agentUri_ExportAgentResponse: String = js.native

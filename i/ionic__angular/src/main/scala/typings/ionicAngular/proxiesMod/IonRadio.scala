@@ -10,16 +10,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ionic/angular/dist/directives/proxies", "IonRadio")
+@JSImport("@ionic/angular/directives/proxies", "IonRadio")
 @js.native
 class IonRadio protected ()
   extends typings.ionicCore.componentsMod.Components.IonRadio {
   def this(c: ChangeDetectorRef, r: ElementRef[_], z: NgZone) = this()
-  /**
-    * If `true`, the radio is selected.
-    */
-  /* CompleteClass */
-  override var checked: Boolean = js.native
   /**
     * If `true`, the user cannot interact with the radio.
     */
@@ -28,7 +23,6 @@ class IonRadio protected ()
   var el: HTMLElement = js.native
   var ionBlur: EventEmitter[CustomEvent[_]] = js.native
   var ionFocus: EventEmitter[CustomEvent[_]] = js.native
-  var ionSelect: EventEmitter[CustomEvent[_]] = js.native
   /**
     * The name of the control, which is submitted with the form data.
     */

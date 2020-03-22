@@ -1,6 +1,6 @@
 package typings.nonogramSolver.mod
 
-import typings.std.Required
+import typings.nonogramSolver.RequiredInput
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,6 +19,6 @@ class Puzzle protected () extends js.Object {
   val svg: String = js.native
   var width: Double = js.native
   def `import`(puzzle: Puzzle): Unit = js.native
-  def toJSON(): Required[Input] = js.native
+  def toJSON(): RequiredInput = js.native
 }
 

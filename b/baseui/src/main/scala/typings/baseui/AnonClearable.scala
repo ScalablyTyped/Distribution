@@ -3,6 +3,7 @@ package typings.baseui
 import typings.baseui.baseuiStrings.compact
 import typings.baseui.baseuiStrings.default_
 import typings.baseui.baseuiStrings.large_
+import typings.baseui.baseuiStrings.mini
 import typings.baseui.baseuiStrings.search
 import typings.baseui.baseuiStrings.select
 import scala.scalajs.js
@@ -36,7 +37,7 @@ trait AnonClearable extends js.Object {
   @JSName("$searchable")
   var $searchable: Boolean = js.native
   @JSName("$size")
-  var $size: default_ | compact | large_ = js.native
+  var $size: mini | default_ | compact | large_ = js.native
   @JSName("$type")
   var $type: select | search = js.native
 }

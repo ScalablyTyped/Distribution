@@ -1,10 +1,10 @@
 package typings.gapiClientToolresults.gapi.client.toolresults
 
 import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientToolresults.AnonAltExecutionId
-import typings.gapiClientToolresults.AnonAltExecutionIdFieldsHistoryIdKeyOauthtokenPrettyPrint
-import typings.gapiClientToolresults.AnonAltFields
-import typings.gapiClientToolresults.AnonAltFieldsHistoryId
+import typings.gapiClientToolresults.AnonExecutionId
+import typings.gapiClientToolresults.AnonPageToken
+import typings.gapiClientToolresults.AnonPrettyPrint
+import typings.gapiClientToolresults.AnonQuotaUser
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,7 +22,7 @@ trait ExecutionsResource extends js.Object {
     * - PERMISSION_DENIED - if the user is not authorized to write to project - INVALID_ARGUMENT - if the request is malformed - NOT_FOUND - if the
     * containing History does not exist
     */
-  def create(request: AnonAltFields): Request_[Execution]
+  def create(request: AnonQuotaUser): Request_[Execution]
   /**
     * Gets an Execution.
     *
@@ -31,7 +31,7 @@ trait ExecutionsResource extends js.Object {
     * - PERMISSION_DENIED - if the user is not authorized to write to project - INVALID_ARGUMENT - if the request is malformed - NOT_FOUND - if the Execution
     * does not exist
     */
-  def get(request: AnonAltExecutionId): Request_[Execution]
+  def get(request: AnonExecutionId): Request_[Execution]
   /**
     * Lists Histories for a given Project.
     *
@@ -42,7 +42,7 @@ trait ExecutionsResource extends js.Object {
     * - PERMISSION_DENIED - if the user is not authorized to read project - INVALID_ARGUMENT - if the request is malformed - NOT_FOUND - if the containing
     * History does not exist
     */
-  def list(request: AnonAltFieldsHistoryId): Request_[ListExecutionsResponse]
+  def list(request: AnonPageToken): Request_[ListExecutionsResponse]
   /**
     * Updates an existing Execution with the supplied partial entity.
     *
@@ -51,17 +51,17 @@ trait ExecutionsResource extends js.Object {
     * - PERMISSION_DENIED - if the user is not authorized to write to project - INVALID_ARGUMENT - if the request is malformed - FAILED_PRECONDITION - if the
     * requested state transition is illegal - NOT_FOUND - if the containing History does not exist
     */
-  def patch(request: AnonAltExecutionIdFieldsHistoryIdKeyOauthtokenPrettyPrint): Request_[Execution]
+  def patch(request: AnonPrettyPrint): Request_[Execution]
 }
 
 object ExecutionsResource {
   @scala.inline
   def apply(
     clusters: ClustersResource,
-    create: AnonAltFields => Request_[Execution],
-    get: AnonAltExecutionId => Request_[Execution],
-    list: AnonAltFieldsHistoryId => Request_[ListExecutionsResponse],
-    patch: AnonAltExecutionIdFieldsHistoryIdKeyOauthtokenPrettyPrint => Request_[Execution],
+    create: AnonQuotaUser => Request_[Execution],
+    get: AnonExecutionId => Request_[Execution],
+    list: AnonPageToken => Request_[ListExecutionsResponse],
+    patch: AnonPrettyPrint => Request_[Execution],
     steps: StepsResource
   ): ExecutionsResource = {
     val __obj = js.Dynamic.literal(clusters = clusters.asInstanceOf[js.Any], create = js.Any.fromFunction1(create), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), steps = steps.asInstanceOf[js.Any])

@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ionic/angular/dist/directives/proxies", "IonTitle")
+@JSImport("@ionic/angular/directives/proxies", "IonTitle")
 @js.native
 class IonTitle protected ()
   extends typings.ionicCore.componentsMod.Components.IonTitle {

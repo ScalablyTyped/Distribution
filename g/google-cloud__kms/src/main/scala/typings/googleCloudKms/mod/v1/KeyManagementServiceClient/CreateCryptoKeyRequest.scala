@@ -1,16 +1,12 @@
 package typings.googleCloudKms.mod.v1.KeyManagementServiceClient
 
-import typings.googleCloudKms.AnonPurpose
-import typings.googleCloudKms.googleCloudKmsStrings.purpose
-import typings.googleCloudKms.mod.v1.CryptoKey
-import typings.googleCloudKms.mod.v1.Omit
-import typings.std.Partial
+import typings.googleCloudKms.PartialOmitCryptoKeypurpo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CreateCryptoKeyRequest extends js.Object {
-  var cryptoKey: (Partial[Omit[CryptoKey, purpose]]) with AnonPurpose
+  var cryptoKey: PartialOmitCryptoKeypurpo
   var cryptoKeyId: String
   var parent: String
   var skipInitialVersionCreation: js.UndefOr[Boolean] = js.undefined
@@ -19,7 +15,7 @@ trait CreateCryptoKeyRequest extends js.Object {
 object CreateCryptoKeyRequest {
   @scala.inline
   def apply(
-    cryptoKey: (Partial[Omit[CryptoKey, purpose]]) with AnonPurpose,
+    cryptoKey: PartialOmitCryptoKeypurpo,
     cryptoKeyId: String,
     parent: String,
     skipInitialVersionCreation: js.UndefOr[Boolean] = js.undefined

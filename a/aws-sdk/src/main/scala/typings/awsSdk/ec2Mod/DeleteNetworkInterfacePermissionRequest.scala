@@ -17,13 +17,13 @@ trait DeleteNetworkInterfacePermissionRequest extends js.Object {
   /**
     * The ID of the network interface permission.
     */
-  var NetworkInterfacePermissionId: String = js.native
+  var NetworkInterfacePermissionId: typings.awsSdk.ec2Mod.NetworkInterfacePermissionId = js.native
 }
 
 object DeleteNetworkInterfacePermissionRequest {
   @scala.inline
   def apply(
-    NetworkInterfacePermissionId: String,
+    NetworkInterfacePermissionId: NetworkInterfacePermissionId,
     DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     Force: js.UndefOr[scala.Boolean] = js.undefined
   ): DeleteNetworkInterfacePermissionRequest = {

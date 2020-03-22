@@ -20,7 +20,7 @@ trait ResourceShareAccepterState extends js.Object {
     */
   val resources: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
-    * The account ID of the sender account which extends the invitation.
+    * The account ID of the sender account which submits the invitation.
     */
   val senderAccountId: js.UndefOr[Input[String]] = js.native
   /**
@@ -36,7 +36,7 @@ trait ResourceShareAccepterState extends js.Object {
     */
   val shareName: js.UndefOr[Input[String]] = js.native
   /**
-    * The status of the invitation (e.g., ACCEPTED, REJECTED).
+    * The status of the resource share (ACTIVE, PENDING, FAILED, DELETING, DELETED).
     */
   val status: js.UndefOr[Input[String]] = js.native
 }

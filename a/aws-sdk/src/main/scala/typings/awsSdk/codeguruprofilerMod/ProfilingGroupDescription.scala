@@ -6,16 +6,28 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ProfilingGroupDescription extends js.Object {
+  /**
+    * 
+    */
   var agentOrchestrationConfig: js.UndefOr[AgentOrchestrationConfig] = js.native
+  /**
+    * The Amazon Resource Name (ARN) identifying the profiling group.
+    */
   var arn: js.UndefOr[ProfilingGroupArn] = js.native
   /**
-    * The timestamp of when the profiling group was created.
+    * The time, in milliseconds since the epoch, when the profiling group was created.
     */
   var createdAt: js.UndefOr[Timestamp] = js.native
+  /**
+    * The name of the profiling group.
+    */
   var name: js.UndefOr[ProfilingGroupName] = js.native
+  /**
+    * The status of the profiling group.
+    */
   var profilingStatus: js.UndefOr[ProfilingStatus] = js.native
   /**
-    * The timestamp of when the profiling group was last updated.
+    * The time, in milliseconds since the epoch, when the profiling group was last updated.
     */
   var updatedAt: js.UndefOr[Timestamp] = js.native
 }

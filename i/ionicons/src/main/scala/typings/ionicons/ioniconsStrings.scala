@@ -54,9 +54,6 @@ object ioniconsStrings {
   sealed trait initial extends js.Object
   
   @js.native
-  sealed trait ios extends js.Object
-  
-  @js.native
   sealed trait isolated extends js.Object
   
   @js.native
@@ -70,9 +67,6 @@ object ioniconsStrings {
   
   @js.native
   sealed trait mathematical extends js.Object
-  
-  @js.native
-  sealed trait md extends js.Object
   
   @js.native
   sealed trait medial extends js.Object
@@ -155,8 +149,6 @@ object ioniconsStrings {
   @scala.inline
   def initial: initial = "initial".asInstanceOf[initial]
   @scala.inline
-  def ios: ios = "ios".asInstanceOf[ios]
-  @scala.inline
   def isolated: isolated = "isolated".asInstanceOf[isolated]
   @scala.inline
   def `lazy`: `lazy` = "lazy".asInstanceOf[`lazy`]
@@ -166,8 +158,6 @@ object ioniconsStrings {
   def low: low = "low".asInstanceOf[low]
   @scala.inline
   def mathematical: mathematical = "mathematical".asInstanceOf[mathematical]
-  @scala.inline
-  def md: md = "md".asInstanceOf[md]
   @scala.inline
   def medial: medial = "medial".asInstanceOf[medial]
   @scala.inline

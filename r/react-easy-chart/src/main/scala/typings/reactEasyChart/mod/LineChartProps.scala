@@ -1,7 +1,7 @@
 package typings.reactEasyChart.mod
 
 import typings.reactEasyChart.AnonBottom
-import typings.reactEasyChart.AnonXY
+import typings.reactEasyChart.AnonY
 import typings.reactEasyChart.reactEasyChartStrings.`basis-closed`
 import typings.reactEasyChart.reactEasyChartStrings.`basis-open`
 import typings.reactEasyChart.reactEasyChartStrings.`cardinal-closed`
@@ -27,7 +27,7 @@ trait LineChartProps extends js.Object {
   /** Whether to show axis labels */
   var axes: js.UndefOr[Boolean] = js.undefined
   /** Labels for each of the axis */
-  var axisLabels: js.UndefOr[AnonXY] = js.undefined
+  var axisLabels: js.UndefOr[AnonY] = js.undefined
   var clickHandler: js.UndefOr[js.Function2[/* data */ LineData, /* mouseEvent */ MouseEvent, _]] = js.undefined
   var data: js.Array[js.Array[LineData]]
   /** Whether to show circles on the data points */
@@ -73,7 +73,7 @@ object LineChartProps {
   def apply(
     data: js.Array[js.Array[LineData]],
     axes: js.UndefOr[Boolean] = js.undefined,
-    axisLabels: AnonXY = null,
+    axisLabels: AnonY = null,
     clickHandler: (/* data */ LineData, /* mouseEvent */ MouseEvent) => _ = null,
     dataPoints: js.UndefOr[Boolean] = js.undefined,
     grid: js.UndefOr[Boolean] = js.undefined,

@@ -1,9 +1,9 @@
 package typings.tern.inferMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.tern.AnonBool
-import typings.tern.AnonName
-import typings.tern.AnonNameString
+import typings.tern.Primnamebool
+import typings.tern.Primnamenumber
+import typings.tern.Primnamestring
 import typings.tern.ternMod.Server
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,12 +11,12 @@ import scala.scalajs.js.annotation._
 
 trait Context extends js.Object {
   /** The primitive boolean type. */
-  var bool: Prim with AnonBool
+  var bool: Primnamebool
   /** The primitive number type. */
-  var num: Prim with AnonName
+  var num: Primnamenumber
   var parent: js.UndefOr[Server] = js.undefined
   /** The primitive string type. */
-  var str: Prim with AnonNameString
+  var str: Primnamestring
   var topScope: Scope
 }
 

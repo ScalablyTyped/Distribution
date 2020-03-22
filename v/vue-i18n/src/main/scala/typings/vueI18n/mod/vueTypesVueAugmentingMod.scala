@@ -2,10 +2,10 @@ package typings.vueI18n.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Date
-import typings.vueI18n.FnArgs
-import typings.vueI18n.FnArgsKey
-import typings.vueI18n.FnChoice
-import typings.vueI18n.FnKey
+import typings.vueI18n.Fn0
+import typings.vueI18n.FnCall
+import typings.vueI18n.FnCallKeyChoiceLocaleValues
+import typings.vueI18n.FnCallValueKeyLocale
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,15 +16,15 @@ object vueTypesVueAugmentingMod extends js.Object {
   @js.native
   trait Vue extends js.Object {
     @JSName("$d")
-    var $d_Original: FnArgs = js.native
+    var $d_Original: FnCallValueKeyLocale = js.native
     @JSName("$i18n")
     val $i18n: VueI18n with IVueI18n = js.native
     @JSName("$n")
-    var $n_Original: FnArgsKey = js.native
+    var $n_Original: Fn0 = js.native
     @JSName("$t")
-    var $t_Original: FnKey = js.native
+    var $t_Original: FnCall = js.native
     @JSName("$tc")
-    var $tc_Original: FnChoice = js.native
+    var $tc_Original: FnCallKeyChoiceLocaleValues = js.native
     @JSName("$te")
     var $te_Original: js.Function2[
         /* key */ typings.vueI18n.mod.VueI18n.Path, 

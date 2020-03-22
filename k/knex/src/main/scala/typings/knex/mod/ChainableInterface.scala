@@ -3,16 +3,13 @@ package typings.knex.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.node.NodeJS.WritableStream
 import typings.node.streamMod.PassThrough
-import typings.std.Promise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-//
-// Chainable interface
-//
-@js.native
-trait ChainableInterface[T] extends Promise[T] {
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in keyof std.Promise<T> & knex.knex.ExposedPromiseKeys ]: std.Promise<T>[P]} */ @js.native
+trait ChainableInterface[T] extends js.Object {
   def asCallback(callback: js.Function): this.type = js.native
   def connection(connection: js.Any): this.type = js.native
   def debug(enabled: Boolean): this.type = js.native

@@ -186,7 +186,7 @@ object callbackApiMod extends js.Object {
   @js.native
   object credentials extends js.Object {
     def external(): AnonMechanism = js.native
-    def plain(username: String, password: String): AnonMechanismPassword = js.native
+    def plain(username: String, password: String): AnonPassword = js.native
   }
   
 }

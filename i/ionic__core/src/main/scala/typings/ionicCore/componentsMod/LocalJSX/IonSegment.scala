@@ -23,11 +23,11 @@ trait IonSegment extends js.Object {
     */
   var mode: js.UndefOr[ios | md] = js.undefined
   /**
-    * Emitted when the value property has changed.
+    * Emitted when the value property has changed and any dragging pointer has been released from `ion-segment`.
     */
   var onIonChange: js.UndefOr[js.Function1[/* event */ CustomEvent[SegmentChangeEventDetail], Unit]] = js.undefined
   /**
-    * If `true`, the segment buttons will overflow and the user can swipe to see them.
+    * If `true`, the segment buttons will overflow and the user can swipe to see them. In addition, this will disable the gesture to drag the indicator between the buttons in order to swipe to see hidden buttons.
     */
   var scrollable: js.UndefOr[Boolean] = js.undefined
   /**

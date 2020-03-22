@@ -1,8 +1,10 @@
 package typings.graphqlCompose
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.graphql.AnonDescription
 import typings.graphql.AnonDirectives
 import typings.graphql.AnonMaxErrors
+import typings.graphql.VisitorKeyMapASTKindToNod
 import typings.graphql.astMod.ASTKindToNode
 import typings.graphql.astMod.ASTNode
 import typings.graphql.astMod.ArgumentNode
@@ -102,10 +104,10 @@ import typings.graphql.typeInfoMod.getFieldDef
 import typings.graphql.validationContextMod.ValidationRule
 import typings.graphql.visitorMod.VisitFn
 import typings.graphql.visitorMod.Visitor
-import typings.graphql.visitorMod.VisitorKeyMap
 import typings.graphqlCompose.enumTypeComposerMod._EnumTypeComposeDefinition
 import typings.graphqlCompose.graphqlComposeStrings.`No longer supported`
 import typings.graphqlCompose.inputTypeComposerMod._InputTypeComposeDefinition
+import typings.graphqlCompose.scalarTypeComposerMod._ScalarTypeComposeDefinition
 import typings.std.AsyncIterable
 import typings.std.AsyncIterableIterator
 import typings.std.Error
@@ -177,7 +179,8 @@ object graphqlMod extends js.Object {
   
   @js.native
   class GraphQLScalarType protected ()
-    extends typings.graphql.mod.GraphQLScalarType {
+    extends typings.graphql.mod.GraphQLScalarType
+       with _ScalarTypeComposeDefinition {
     def this(config: GraphQLScalarTypeConfig[_, _]) = this()
   }
   
@@ -385,7 +388,7 @@ object graphqlMod extends js.Object {
   ): js.Array[DangerousChange] = js.native
   def findDeprecatedUsages(schema: typings.graphql.schemaMod.GraphQLSchema, ast: DocumentNode): js.Array[typings.graphql.graphQLErrorMod.GraphQLError] = js.native
   def formatError(error: typings.graphql.graphQLErrorMod.GraphQLError): GraphQLFormattedError[Record[String, _]] = js.native
-  def getDescription(node: typings.graphql.AnonDescription, options: Maybe[BuildSchemaOptions]): js.UndefOr[String] = js.native
+  def getDescription(node: AnonDescription, options: Maybe[BuildSchemaOptions]): js.UndefOr[String] = js.native
   def getDirectiveValues(directiveDef: typings.graphql.directivesMod.GraphQLDirective, node: AnonDirectives): js.UndefOr[StringDictionary[js.Any]] = js.native
   def getDirectiveValues(
     directiveDef: typings.graphql.directivesMod.GraphQLDirective,
@@ -584,7 +587,7 @@ object graphqlMod extends js.Object {
       EnumValueDefinitionNode | ObjectValueNode | FieldDefinitionNode | SchemaDefinitionNode | InputObjectTypeDefinitionNode | DocumentNode | DirectiveDefinitionNode | InputValueDefinitionNode | ListValueNode | ScalarTypeDefinitionNode | IntValueNode | OperationDefinitionNode | ArgumentNode | FragmentDefinitionNode | OperationTypeDefinitionNode | FieldNode | StringValueNode | NameNode | ObjectFieldNode | EnumValueNode | SchemaExtensionNode | UnionTypeExtensionNode | VariableDefinitionNode | VariableNode | ObjectTypeDefinitionNode | EnumTypeExtensionNode | InterfaceTypeDefinitionNode | FloatValueNode | NonNullTypeNode | DirectiveNode | SelectionSetNode | InputObjectTypeExtensionNode | ScalarTypeExtensionNode | UnionTypeDefinitionNode | NullValueNode | InterfaceTypeExtensionNode | InlineFragmentNode | EnumTypeDefinitionNode | NamedTypeNode | BooleanValueNode | ListTypeNode | ObjectTypeExtensionNode | FragmentSpreadNode
     ],
      // default: QueryDocumentKeys
-  visitorKeys: VisitorKeyMap[ASTKindToNode]
+  visitorKeys: VisitorKeyMapASTKindToNod
   ): js.Any = js.native
   def visitInParallel(
     visitors: js.Array[

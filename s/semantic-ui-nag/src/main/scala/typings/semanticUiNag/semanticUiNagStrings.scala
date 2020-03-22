@@ -9,16 +9,10 @@ object semanticUiNagStrings {
   sealed trait animation extends js.Object
   
   @js.native
-  sealed trait bottom extends js.Object
-  
-  @js.native
   sealed trait className extends js.Object
   
   @js.native
   sealed trait clear extends js.Object
-  
-  @js.native
-  sealed trait close extends js.Object
   
   @js.native
   sealed trait context extends js.Object
@@ -51,9 +45,6 @@ object semanticUiNagStrings {
   sealed trait expires extends js.Object
   
   @js.native
-  sealed trait fixed extends js.Object
-  
-  @js.native
   sealed trait hide extends js.Object
   
   @js.native
@@ -63,19 +54,10 @@ object semanticUiNagStrings {
   sealed trait localstorage extends js.Object
   
   @js.native
-  sealed trait method extends js.Object
-  
-  @js.native
   sealed trait name extends js.Object
   
   @js.native
   sealed trait namespace extends js.Object
-  
-  @js.native
-  sealed trait noCookieStorage extends js.Object
-  
-  @js.native
-  sealed trait noStorage extends js.Object
   
   @js.native
   sealed trait onHide extends js.Object
@@ -119,13 +101,9 @@ object semanticUiNagStrings {
   @scala.inline
   def animation: animation = "animation".asInstanceOf[animation]
   @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
-  @scala.inline
   def className: className = "className".asInstanceOf[className]
   @scala.inline
   def clear: clear = "clear".asInstanceOf[clear]
-  @scala.inline
-  def close: close = "close".asInstanceOf[close]
   @scala.inline
   def context: context = "context".asInstanceOf[context]
   @scala.inline
@@ -147,23 +125,15 @@ object semanticUiNagStrings {
   @scala.inline
   def expires: expires = "expires".asInstanceOf[expires]
   @scala.inline
-  def fixed: fixed = "fixed".asInstanceOf[fixed]
-  @scala.inline
   def hide: hide = "hide".asInstanceOf[hide]
   @scala.inline
   def key: key = "key".asInstanceOf[key]
   @scala.inline
   def localstorage: localstorage = "localstorage".asInstanceOf[localstorage]
   @scala.inline
-  def method: method = "method".asInstanceOf[method]
-  @scala.inline
   def name: name = "name".asInstanceOf[name]
   @scala.inline
   def namespace: namespace = "namespace".asInstanceOf[namespace]
-  @scala.inline
-  def noCookieStorage: noCookieStorage = "noCookieStorage".asInstanceOf[noCookieStorage]
-  @scala.inline
-  def noStorage: noStorage = "noStorage".asInstanceOf[noStorage]
   @scala.inline
   def onHide: onHide = "onHide".asInstanceOf[onHide]
   @scala.inline

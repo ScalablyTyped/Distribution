@@ -11,7 +11,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ionic/angular/dist/providers/popover-controller", JSImport.Namespace)
+@JSImport("@ionic/angular/providers/popover-controller", JSImport.Namespace)
 @js.native
 object popoverControllerMod extends js.Object {
   @js.native

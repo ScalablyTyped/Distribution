@@ -1,10 +1,10 @@
 package typings.oracleOraclejet.ojthematicmapMod
 
+import typings.oracleOraclejet.Anon25
 import typings.oracleOraclejet.AnonAreaSvgStyle
-import typings.oracleOraclejet.AnonComponentNameLabelAndValue
-import typings.oracleOraclejet.AnonContextRendererAnonInsertAnonPreventDefaultD1
 import typings.oracleOraclejet.AnonGeo
 import typings.oracleOraclejet.AnonInsertSVGElement
+import typings.oracleOraclejet.AnonLabelAndValue
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.ojdataproviderMod.DataProvider
 import typings.oracleOraclejet.ojdvtBaseMod.dvtBaseComponent
@@ -158,10 +158,7 @@ trait ojThematicMap_[K1, K2, K3, D1, D2, D3] extends dvtBaseComponent[ojThematic
     _
   ]) | Null = js.native
   var onStyleDefaultsChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonAreaSvgStyle], _]) | Null = js.native
-  var onTooltipChanged: (js.Function1[
-    /* event */ JetElementCustomEvent[AnonContextRendererAnonInsertAnonPreventDefaultD1[K1, K2, K3, D1, D2, D3]], 
-    _
-  ]) | Null = js.native
+  var onTooltipChanged: (js.Function1[/* event */ JetElementCustomEvent[Anon25[K1, K2, K3, D1, D2, D3]], _]) | Null = js.native
   var onTooltipDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | labelAndShortDesc | none | shortDesc], _]) | Null = js.native
   var onTouchResponseChanged: (js.Function1[/* event */ JetElementCustomEvent[touchStart | auto], _]) | Null = js.native
   var onZoomingChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none], _]) | Null = js.native
@@ -171,11 +168,11 @@ trait ojThematicMap_[K1, K2, K3, D1, D2, D3] extends dvtBaseComponent[ojThematic
   var selectionMode: single | multiple | none = js.native
   var selectionRenderer: (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], AnonInsertSVGElement | Unit]) | Null = js.native
   var styleDefaults: AnonAreaSvgStyle = js.native
-  var tooltip: AnonContextRendererAnonInsertAnonPreventDefaultD1[K1, K2, K3, D1, D2, D3] = js.native
+  var tooltip: Anon25[K1, K2, K3, D1, D2, D3] = js.native
   var tooltipDisplay: auto | labelAndShortDesc | none | shortDesc = js.native
   var touchResponse: touchStart | auto = js.native
   @JSName("translations")
-  var translations_ojThematicMap_ : AnonComponentNameLabelAndValue = js.native
+  var translations_ojThematicMap_ : AnonLabelAndValue = js.native
   var zooming: auto | none = js.native
   def addEventListener(
     `type`: animationOnDisplayChanged,
@@ -546,7 +543,7 @@ trait ojThematicMap_[K1, K2, K3, D1, D2, D3] extends dvtBaseComponent[ojThematic
     `type`: tooltipChanged,
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[AnonContextRendererAnonInsertAnonPreventDefaultD1[K1, K2, K3, D1, D2, D3]], 
+      /* ev */ JetElementCustomEvent[Anon25[K1, K2, K3, D1, D2, D3]], 
       _
     ]
   ): Unit = js.native
@@ -555,7 +552,7 @@ trait ojThematicMap_[K1, K2, K3, D1, D2, D3] extends dvtBaseComponent[ojThematic
     `type`: tooltipChanged,
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[AnonContextRendererAnonInsertAnonPreventDefaultD1[K1, K2, K3, D1, D2, D3]], 
+      /* ev */ JetElementCustomEvent[Anon25[K1, K2, K3, D1, D2, D3]], 
       _
     ],
     useCapture: Boolean
@@ -615,7 +612,7 @@ trait ojThematicMap_[K1, K2, K3, D1, D2, D3] extends dvtBaseComponent[ojThematic
   @JSName("getProperty")
   def getProperty_styleDefaults(property: styleDefaults): AnonAreaSvgStyle = js.native
   @JSName("getProperty")
-  def getProperty_tooltip(property: tooltip): AnonContextRendererAnonInsertAnonPreventDefaultD1[K1, K2, K3, D1, D2, D3] = js.native
+  def getProperty_tooltip(property: tooltip): Anon25[K1, K2, K3, D1, D2, D3] = js.native
   @JSName("getProperty")
   def getProperty_tooltipDisplay(property: tooltipDisplay): auto | labelAndShortDesc | none | shortDesc = js.native
   @JSName("getProperty")
@@ -710,11 +707,8 @@ trait ojThematicMap_[K1, K2, K3, D1, D2, D3] extends dvtBaseComponent[ojThematic
   @JSName("setProperty")
   def setProperty_styleDefaults(property: styleDefaults, value: AnonAreaSvgStyle): Unit = js.native
   @JSName("setProperty")
-  def setProperty_tooltip(
-    property: tooltip,
-    value: AnonContextRendererAnonInsertAnonPreventDefaultD1[K1, K2, K3, D1, D2, D3]
-  ): Unit = js.native
+  def setProperty_tooltip(property: tooltip, value: Anon25[K1, K2, K3, D1, D2, D3]): Unit = js.native
   @JSName("setProperty")
-  def setProperty_translations(property: translations, value: AnonComponentNameLabelAndValue): Unit = js.native
+  def setProperty_translations(property: translations, value: AnonLabelAndValue): Unit = js.native
 }
 

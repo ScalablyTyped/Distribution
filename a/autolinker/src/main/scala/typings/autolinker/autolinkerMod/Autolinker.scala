@@ -1,6 +1,6 @@
 package typings.autolinker.autolinkerMod
 
-import typings.autolinker.autolinkerStrings.`3Dot12Dot0`
+import typings.autolinker.autolinkerStrings.`3Dot13Dot0`
 import typings.autolinker.matchMatchMod.Match
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -372,7 +372,7 @@ trait Autolinker extends js.Object {
     *
     * Ex: 0.25.1
     */
-  val version: `3Dot12Dot0`
+  val version: `3Dot13Dot0`
   /**
     * Automatically links URLs, Email addresses, Phone numbers, Hashtags,
     * and Mentions (Twitter, Instagram, Soundcloud) found in the given chunk of HTML. Does not link
@@ -455,7 +455,7 @@ object Autolinker {
     tagBuilder: js.Any,
     truncate: js.Any,
     urls: js.Any,
-    version: `3Dot12Dot0`
+    version: `3Dot13Dot0`
   ): Autolinker = {
     val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], compactMatches = compactMatches.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], createMatchReturnVal = createMatchReturnVal.asInstanceOf[js.Any], decodePercentEncoding = decodePercentEncoding.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], getMatchers = getMatchers.asInstanceOf[js.Any], getTagBuilder = getTagBuilder.asInstanceOf[js.Any], hashtag = hashtag.asInstanceOf[js.Any], link = js.Any.fromFunction1(link), matchers = matchers.asInstanceOf[js.Any], mention = mention.asInstanceOf[js.Any], newWindow = newWindow.asInstanceOf[js.Any], normalizeStripPrefixCfg = normalizeStripPrefixCfg.asInstanceOf[js.Any], normalizeTruncateCfg = normalizeTruncateCfg.asInstanceOf[js.Any], normalizeUrlsCfg = normalizeUrlsCfg.asInstanceOf[js.Any], parse = js.Any.fromFunction1(parse), parseText = parseText.asInstanceOf[js.Any], phone = phone.asInstanceOf[js.Any], removeUnwantedMatches = removeUnwantedMatches.asInstanceOf[js.Any], replaceFn = replaceFn.asInstanceOf[js.Any], stripPrefix = stripPrefix.asInstanceOf[js.Any], stripTrailingSlash = stripTrailingSlash.asInstanceOf[js.Any], tagBuilder = tagBuilder.asInstanceOf[js.Any], truncate = truncate.asInstanceOf[js.Any], urls = urls.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
   

@@ -5,6 +5,7 @@ import typings.reactNativeGestureHandler.drawerLayoutMod.DrawerLockMode
 import typings.reactNativeGestureHandler.drawerLayoutMod.DrawerPosition
 import typings.reactNativeGestureHandler.drawerLayoutMod.DrawerState
 import typings.reactNativeGestureHandler.drawerLayoutMod.DrawerType
+import typings.reactNativeGestureHandler.swipeableMod.SwipeableExcludes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,25 +21,34 @@ object reactNativeGestureHandlerStrings {
   sealed trait Settling extends DrawerState
   
   @js.native
-  sealed trait activeOffsetX extends js.Object
+  sealed trait activeOffsetX extends SwipeableExcludes
   
   @js.native
-  sealed trait activeOffsetY extends js.Object
+  sealed trait activeOffsetY extends SwipeableExcludes
   
   @js.native
-  sealed trait avgTouches extends js.Object
+  sealed trait avgTouches extends SwipeableExcludes
   
   @js.native
   sealed trait back extends DrawerType
   
   @js.native
-  sealed trait failOffsetX extends js.Object
+  sealed trait enabled extends SwipeableExcludes
   
   @js.native
-  sealed trait failOffsetY extends js.Object
+  sealed trait failOffsetX extends SwipeableExcludes
+  
+  @js.native
+  sealed trait failOffsetY extends SwipeableExcludes
   
   @js.native
   sealed trait front extends DrawerType
+  
+  @js.native
+  sealed trait hitSlop extends SwipeableExcludes
+  
+  @js.native
+  sealed trait id extends SwipeableExcludes
   
   @js.native
   sealed trait left extends DrawerPosition
@@ -50,40 +60,40 @@ object reactNativeGestureHandlerStrings {
   sealed trait `locked-open` extends DrawerLockMode
   
   @js.native
-  sealed trait maxDeltaX extends js.Object
+  sealed trait maxDeltaX extends SwipeableExcludes
   
   @js.native
-  sealed trait maxDeltaY extends js.Object
+  sealed trait maxDeltaY extends SwipeableExcludes
   
   @js.native
-  sealed trait maxPointers extends js.Object
+  sealed trait maxPointers extends SwipeableExcludes
   
   @js.native
-  sealed trait minDeltaX extends js.Object
+  sealed trait minDeltaX extends SwipeableExcludes
   
   @js.native
-  sealed trait minDeltaY extends js.Object
+  sealed trait minDeltaY extends SwipeableExcludes
   
   @js.native
-  sealed trait minDist extends js.Object
+  sealed trait minDist extends SwipeableExcludes
   
   @js.native
-  sealed trait minOffsetX extends js.Object
+  sealed trait minOffsetX extends SwipeableExcludes
   
   @js.native
-  sealed trait minOffsetY extends js.Object
+  sealed trait minOffsetY extends SwipeableExcludes
   
   @js.native
-  sealed trait minPointers extends js.Object
+  sealed trait minPointers extends SwipeableExcludes
   
   @js.native
-  sealed trait minVelocity extends js.Object
+  sealed trait minVelocity extends SwipeableExcludes
   
   @js.native
-  sealed trait minVelocityX extends js.Object
+  sealed trait minVelocityX extends SwipeableExcludes
   
   @js.native
-  sealed trait minVelocityY extends js.Object
+  sealed trait minVelocityY extends SwipeableExcludes
   
   @js.native
   sealed trait none extends DrawerKeyboardDismissMode
@@ -92,19 +102,22 @@ object reactNativeGestureHandlerStrings {
   sealed trait `on-drag` extends DrawerKeyboardDismissMode
   
   @js.native
-  sealed trait onGestureEvent extends js.Object
-  
-  @js.native
-  sealed trait onHandlerStateChange extends js.Object
-  
-  @js.native
   sealed trait right extends DrawerPosition
+  
+  @js.native
+  sealed trait shouldCancelWhenOutside extends SwipeableExcludes
+  
+  @js.native
+  sealed trait simultaneousHandlers extends SwipeableExcludes
   
   @js.native
   sealed trait slide extends DrawerType
   
   @js.native
   sealed trait unlocked extends DrawerLockMode
+  
+  @js.native
+  sealed trait waitFor extends SwipeableExcludes
   
   @scala.inline
   def Dragging: Dragging = "Dragging".asInstanceOf[Dragging]
@@ -121,11 +134,17 @@ object reactNativeGestureHandlerStrings {
   @scala.inline
   def back: back = "back".asInstanceOf[back]
   @scala.inline
+  def enabled: enabled = "enabled".asInstanceOf[enabled]
+  @scala.inline
   def failOffsetX: failOffsetX = "failOffsetX".asInstanceOf[failOffsetX]
   @scala.inline
   def failOffsetY: failOffsetY = "failOffsetY".asInstanceOf[failOffsetY]
   @scala.inline
   def front: front = "front".asInstanceOf[front]
+  @scala.inline
+  def hitSlop: hitSlop = "hitSlop".asInstanceOf[hitSlop]
+  @scala.inline
+  def id: id = "id".asInstanceOf[id]
   @scala.inline
   def left: left = "left".asInstanceOf[left]
   @scala.inline
@@ -161,14 +180,16 @@ object reactNativeGestureHandlerStrings {
   @scala.inline
   def `on-drag`: `on-drag` = "on-drag".asInstanceOf[`on-drag`]
   @scala.inline
-  def onGestureEvent: onGestureEvent = "onGestureEvent".asInstanceOf[onGestureEvent]
-  @scala.inline
-  def onHandlerStateChange: onHandlerStateChange = "onHandlerStateChange".asInstanceOf[onHandlerStateChange]
-  @scala.inline
   def right: right = "right".asInstanceOf[right]
+  @scala.inline
+  def shouldCancelWhenOutside: shouldCancelWhenOutside = "shouldCancelWhenOutside".asInstanceOf[shouldCancelWhenOutside]
+  @scala.inline
+  def simultaneousHandlers: simultaneousHandlers = "simultaneousHandlers".asInstanceOf[simultaneousHandlers]
   @scala.inline
   def slide: slide = "slide".asInstanceOf[slide]
   @scala.inline
   def unlocked: unlocked = "unlocked".asInstanceOf[unlocked]
+  @scala.inline
+  def waitFor: waitFor = "waitFor".asInstanceOf[waitFor]
 }
 

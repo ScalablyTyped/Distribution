@@ -13,11 +13,19 @@ trait IDisplayState extends js.Object {
   /**
     * The index of the currently selected match
     */
-  var currentIndex: Double
+  var currentIndex: Double | Null
   /**
     * An error message (used for bad regex syntax)
     */
   var errorMessage: String
+  /**
+    * What should we include when we search?
+    */
+  var filters: IFiltersType
+  /**
+    * Is the filters view open?
+    */
+  var filtersOpen: Boolean
   /**
     * Should the focus forced into the input on the next render?
     */
@@ -25,7 +33,7 @@ trait IDisplayState extends js.Object {
   /**
     * The query constructed from the text and the case/regex flags
     */
-  var query: RegExp
+  var query: RegExp | Null
   /**
     * Whether or not the replace entry row is visible
     */
@@ -60,20 +68,23 @@ object IDisplayState {
   @scala.inline
   def apply(
     caseSensitive: Boolean,
-    currentIndex: Double,
     errorMessage: String,
+    filters: IFiltersType,
+    filtersOpen: Boolean,
     forceFocus: Boolean,
-    query: RegExp,
     replaceEntryShown: Boolean,
     replaceInputFocused: Boolean,
     replaceText: String,
     searchInputFocused: Boolean,
     searchText: String,
     totalMatches: Double,
-    useRegex: Boolean
+    useRegex: Boolean,
+    currentIndex: Int | Double = null,
+    query: RegExp = null
   ): IDisplayState = {
-    val __obj = js.Dynamic.literal(caseSensitive = caseSensitive.asInstanceOf[js.Any], currentIndex = currentIndex.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any], forceFocus = forceFocus.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], replaceEntryShown = replaceEntryShown.asInstanceOf[js.Any], replaceInputFocused = replaceInputFocused.asInstanceOf[js.Any], replaceText = replaceText.asInstanceOf[js.Any], searchInputFocused = searchInputFocused.asInstanceOf[js.Any], searchText = searchText.asInstanceOf[js.Any], totalMatches = totalMatches.asInstanceOf[js.Any], useRegex = useRegex.asInstanceOf[js.Any])
-  
+    val __obj = js.Dynamic.literal(caseSensitive = caseSensitive.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any], filters = filters.asInstanceOf[js.Any], filtersOpen = filtersOpen.asInstanceOf[js.Any], forceFocus = forceFocus.asInstanceOf[js.Any], replaceEntryShown = replaceEntryShown.asInstanceOf[js.Any], replaceInputFocused = replaceInputFocused.asInstanceOf[js.Any], replaceText = replaceText.asInstanceOf[js.Any], searchInputFocused = searchInputFocused.asInstanceOf[js.Any], searchText = searchText.asInstanceOf[js.Any], totalMatches = totalMatches.asInstanceOf[js.Any], useRegex = useRegex.asInstanceOf[js.Any])
+    if (currentIndex != null) __obj.updateDynamic("currentIndex")(currentIndex.asInstanceOf[js.Any])
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDisplayState]
   }
 }

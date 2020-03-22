@@ -1,7 +1,6 @@
 package typings.officeUiFabricReact.indexBundleMod
 
-import typings.officeUiFabricReact.colorPickerGridCellTypesMod.IColorPickerGridCellProps
-import typings.std.Partial
+import typings.officeUiFabricReact.PartialIColorPickerGridCe
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,6 +14,6 @@ class ColorPickerGridCellBase ()
 @JSImport("office-ui-fabric-react/lib/index.bundle", "ColorPickerGridCellBase")
 @js.native
 object ColorPickerGridCellBase extends js.Object {
-  var defaultProps: Partial[IColorPickerGridCellProps] = js.native
+  var defaultProps: PartialIColorPickerGridCe = js.native
 }
 

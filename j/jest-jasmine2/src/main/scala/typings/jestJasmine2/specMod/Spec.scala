@@ -47,8 +47,8 @@ trait Spec extends js.Object {
   def pend(): Unit = js.native
   def pend(message: String): Unit = js.native
   def resultCallback(result: SpecResult): Unit = js.native
-  def status(): disabled | pending | failed | passed | todo = js.native
-  def status(enabled: Boolean): disabled | pending | failed | passed | todo = js.native
+  def status(): todo | passed | failed | pending | disabled = js.native
+  def status(enabled: Boolean): todo | passed | failed | pending | disabled = js.native
   def todo(): Unit = js.native
   def userContext(): js.Any = js.native
 }

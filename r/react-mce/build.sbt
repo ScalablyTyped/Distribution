@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "react-mce"
-version := "0.6-dt-20180806Z-c5213c"
+version := "0.6-dt-20180806Z-1960c2"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "csstype" % "2.6.6-ffacbb",
-  "org.scalablytyped" %%% "jquery" % "3.3-dt-20200204Z-ce7107",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-05a52c",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20200122Z-b17eee",
-  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-a68146",
-  "org.scalablytyped" %%% "std" % "3.7-1b8369",
-  "org.scalablytyped" %%% "tinymce" % "4.5-dt-20190821Z-dec8ff")
+  "org.scalablytyped" %%% "csstype" % "2.6.9-2d2033",
+  "org.scalablytyped" %%% "jquery" % "3.3-dt-20200204Z-2d3992",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-ece683",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20200122Z-fc5268",
+  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-3d9ead",
+  "org.scalablytyped" %%% "std" % "3.8-a0108c",
+  "org.scalablytyped" %%% "tinymce" % "4.5-dt-20190821Z-ed47af")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

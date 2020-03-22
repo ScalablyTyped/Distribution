@@ -25,7 +25,7 @@ import scala.scalajs.js.annotation._
 trait Typeofbackbone extends js.Object {
   @JSName("$")
   var $_Original: JQueryStatic = js.native
-  var Collection: TypeofClassCollection = js.native
+  var Collection: TypeofCollection = js.native
   val Events: typings.backbone.mod.Events = js.native
   /**
     * Helper to avoid code repetition in type declarations.
@@ -38,11 +38,11 @@ trait Typeofbackbone extends js.Object {
     * Events_* interfaces above.
     */
   var EventsMixin: Instantiable0[typings.backbone.mod.EventsMixin] = js.native
-  var History: TypeofClassHistory = js.native
-  var Model: TypeofClassModel = js.native
+  var History: TypeofHistory = js.native
+  var Model: TypeofModel = js.native
   var ModelBase: Instantiable0[typings.backbone.mod.ModelBase] = js.native
-  var Router: TypeofClassRouter = js.native
-  var View: TypeofClassView = js.native
+  var Router: TypeofRouter = js.native
+  var View: TypeofView = js.native
   var emulateHTTP: Boolean = js.native
   var emulateJSON: Boolean = js.native
   var history: History_ = js.native

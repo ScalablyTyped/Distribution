@@ -1,21 +1,19 @@
 package typings.jestTypes
 
 import typings.jestTypes.circusMod.Event
-import typings.jestTypes.circusMod.TestEntry
-import typings.jestTypes.jestTypesStrings.test_fn_start
+import typings.jestTypes.jestTypesStrings.include_test_location_in_result
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonName extends Event {
-  var name: test_fn_start
-  var test: TestEntry
+  var name: include_test_location_in_result
 }
 
 object AnonName {
   @scala.inline
-  def apply(name: test_fn_start, test: TestEntry): AnonName = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
+  def apply(name: include_test_location_in_result): AnonName = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AnonName]
   }

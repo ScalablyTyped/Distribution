@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mod {
-  type Arguments[T] = T with typings.yargs.Anon
+  type Arguments[T] = T with typings.yargs.AnonDictargName
   type AsyncCompletionFunction = js.Function3[
     /* current */ java.lang.String, 
     /* argv */ js.Any, 
@@ -32,7 +32,6 @@ package object mod {
     /* output */ java.lang.String, 
     scala.Unit
   ]
-  type ParserConfigurationOptions = typings.yargsParser.mod.Configuration with typings.yargs.AnonSortcommands
   type PromiseCompletionFunction = js.Function2[
     /* current */ java.lang.String, 
     /* argv */ js.Any, 

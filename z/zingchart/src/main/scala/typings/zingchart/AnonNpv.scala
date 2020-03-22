@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation._
 
 trait AnonNpv extends js.Object {
   var npv: js.UndefOr[AnonDecimals] = js.undefined
-  var title: js.UndefOr[AnonFontcolorFontfamily] = js.undefined
-  var value: js.UndefOr[AnonFontcolorFontfamily] = js.undefined
+  var title: js.UndefOr[AnonFontfamily] = js.undefined
+  var value: js.UndefOr[AnonFontfamily] = js.undefined
   /**
     * To set the visibility of the object. true | false
     */
@@ -18,8 +18,8 @@ object AnonNpv {
   @scala.inline
   def apply(
     npv: AnonDecimals = null,
-    title: AnonFontcolorFontfamily = null,
-    value: AnonFontcolorFontfamily = null,
+    title: AnonFontfamily = null,
+    value: AnonFontfamily = null,
     visible: js.UndefOr[Boolean] = js.undefined
   ): AnonNpv = {
     val __obj = js.Dynamic.literal()

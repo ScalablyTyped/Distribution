@@ -57,7 +57,7 @@ object servicesS3Mod extends js.Object {
   /* static members */
   @js.native
   object S3Customizations extends js.Object {
-    var ManagedUpload: TypeofClassManagedUpload = js.native
+    var ManagedUpload: TypeofManagedUpload = js.native
   }
   
 }

@@ -1,7 +1,7 @@
 package typings.rivets.mod.Rivets
 
 import typings.jquery.JQuery_
-import typings.rivets.AnonBiding
+import typings.rivets.AnonHandler
 import typings.std.Event_
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -33,7 +33,7 @@ trait Rivets extends js.Object {
   def bind(element: HTMLElement, models: js.Object): View = js.native
   def bind(element: HTMLElement, models: js.Object, options: js.Object): View = js.native
   def configure(): Unit = js.native
-  def configure(options: AnonBiding): Unit = js.native
+  def configure(options: AnonHandler): Unit = js.native
   def handler(context: js.Any, ev: Event_, biding: js.Any): Unit = js.native
 }
 

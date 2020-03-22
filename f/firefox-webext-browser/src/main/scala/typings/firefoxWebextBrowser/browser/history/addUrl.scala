@@ -1,6 +1,6 @@
 package typings.firefoxWebextBrowser.browser.history
 
-import typings.firefoxWebextBrowser.AnonTitleTransition
+import typings.firefoxWebextBrowser.AnonTransition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,6 +11,6 @@ object addUrl extends js.Object {
   /**
     * Adds a URL to the history with a default visitTime of the current time and a default transition type of "link".
     */
-  def apply(details: AnonTitleTransition): js.Promise[Unit] = js.native
+  def apply(details: AnonTransition): js.Promise[Unit] = js.native
 }
 

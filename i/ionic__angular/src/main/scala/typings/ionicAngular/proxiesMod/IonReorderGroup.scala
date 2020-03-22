@@ -10,7 +10,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ionic/angular/dist/directives/proxies", "IonReorderGroup")
+@JSImport("@ionic/angular/directives/proxies", "IonReorderGroup")
 @js.native
 class IonReorderGroup protected ()
   extends typings.ionicCore.componentsMod.Components.IonReorderGroup {

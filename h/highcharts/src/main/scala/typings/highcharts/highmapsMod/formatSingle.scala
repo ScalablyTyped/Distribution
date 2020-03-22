@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object formatSingle extends js.Object {
   def apply(format: String, `val`: js.Any): String = js.native
-  def apply(format: String, `val`: js.Any, time: typings.highcharts.mod.Time_): String = js.native
+  def apply(format: String, `val`: js.Any, chart: typings.highcharts.mod.Chart_): String = js.native
 }
 

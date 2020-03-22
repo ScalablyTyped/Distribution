@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GetActiveNamesRequest extends js.Object {
   /**
-    * A token used for paginating results from your get active names request.
+    * The token to advance to the next page of results from your request. To get a page token, perform an initial GetActiveNames request. If your results are paginated, the response will return a next page token that you can specify as the page token in a subsequent request.
     */
   var pageToken: js.UndefOr[String] = js.native
 }

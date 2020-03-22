@@ -1,14 +1,14 @@
 package typings.recharts.mod
 
 import typings.react.mod.ReactElement
-import typings.recharts.AnonHeightWidth
+import typings.recharts.AnonWidth
+import typings.recharts.PartialMargin
 import typings.recharts.rechartsStrings.bottom
 import typings.recharts.rechartsStrings.center
 import typings.recharts.rechartsStrings.left
 import typings.recharts.rechartsStrings.middle
 import typings.recharts.rechartsStrings.right
 import typings.recharts.rechartsStrings.top
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,7 +23,7 @@ trait LegendProps extends js.Object {
   var iconSize: js.UndefOr[Double] = js.undefined
   var iconType: js.UndefOr[IconType] = js.undefined
   var layout: js.UndefOr[LayoutType] = js.undefined
-  var margin: js.UndefOr[Partial[Margin]] = js.undefined
+  var margin: js.UndefOr[PartialMargin] = js.undefined
   var onBBoxUpdate: js.UndefOr[BBoxUpdateCallback] = js.undefined
   var onClick: js.UndefOr[RechartsFunction] = js.undefined
   var onMouseEnter: js.UndefOr[RechartsFunction] = js.undefined
@@ -48,8 +48,8 @@ object LegendProps {
     iconSize: Int | Double = null,
     iconType: IconType = null,
     layout: LayoutType = null,
-    margin: Partial[Margin] = null,
-    onBBoxUpdate: /* box */ AnonHeightWidth => Unit = null,
+    margin: PartialMargin = null,
+    onBBoxUpdate: /* box */ AnonWidth => Unit = null,
     onClick: /* repeated */ js.Any => Unit = null,
     onMouseEnter: /* repeated */ js.Any => Unit = null,
     onMouseLeave: /* repeated */ js.Any => Unit = null,

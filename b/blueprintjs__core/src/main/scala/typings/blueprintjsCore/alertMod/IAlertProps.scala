@@ -42,7 +42,7 @@ trait IAlertProps
   /** Name of a Blueprint UI icon (or an icon element) to display on the left side. */
   var icon: js.UndefOr[IconName | MaybeElement] = js.undefined
   /**
-    * The intent to be applied to the confirm (right-most) button.
+    * The intent to be applied to the confirm (right-most) button and the icon (if provided).
     */
   var intent: js.UndefOr[Intent] = js.undefined
   /**

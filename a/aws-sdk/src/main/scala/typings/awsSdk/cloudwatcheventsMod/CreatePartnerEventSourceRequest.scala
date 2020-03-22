@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CreatePartnerEventSourceRequest extends js.Object {
   /**
-    * The AWS account ID of the customer who is permitted to create a matching partner event bus for this partner event source.
+    * The AWS account ID that is permitted to create a matching partner event bus for this partner event source.
     */
   var Account: AccountId = js.native
   /**

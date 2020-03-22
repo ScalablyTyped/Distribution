@@ -14,13 +14,13 @@ object _CategoryPropType {
     __obj.asInstanceOf[_CategoryPropType]
   }
   @scala.inline
-  def AnonY(y: js.Array[String]): _CategoryPropType = {
+  def AnonYArray(y: js.Array[String]): _CategoryPropType = {
     val __obj = js.Dynamic.literal(y = y.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_CategoryPropType]
   }
   @scala.inline
-  def AnonXYArray(x: js.Array[String], y: js.Array[String]): _CategoryPropType = {
+  def AnonXArrayYArray(x: js.Array[String], y: js.Array[String]): _CategoryPropType = {
     val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_CategoryPropType]

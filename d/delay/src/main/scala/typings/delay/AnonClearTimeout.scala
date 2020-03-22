@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @js.native
 trait AnonClearTimeout extends js.Object {
   @JSName("clearTimeout")
-  var clearTimeout_Original: FnHandle = js.native
+  var clearTimeout_Original: FnCall = js.native
   @JSName("setTimeout")
-  var setTimeout_Original: FnArguments = js.native
+  var setTimeout_Original: FnCallHandlerTimeoutArguments = js.native
   def clearTimeout(): Unit = js.native
   def clearTimeout(handle: Double): Unit = js.native
   def setTimeout(handler: TimerHandler): Double = js.native

@@ -1,11 +1,14 @@
 package typings.rcMenu.subMenuMod
 
-import typings.rcMenu.AnonDomEventItem
-import typings.rcMenu.AnonManualRefMode
+import typings.rcMenu.AnonItem
+import typings.rcMenu.AnonMode
 import typings.rcMenu.interfaceMod.MenuInfo
+import typings.rcMenu.interfaceMod.MenuMode
 import typings.rcMenu.interfaceMod.OpenEventHandler
 import typings.rcMenu.interfaceMod.SelectEventHandler
 import typings.rcMenu.menuItemMod.MenuItem
+import typings.rcMenu.subPopupMenuMod.SubPopupMenuProps
+import typings.rcTrigger.interfaceMod.MotionType
 import typings.react.mod.Component
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.KeyboardEventHandler
@@ -49,7 +52,7 @@ class SubMenu protected ()
   var onTitleMouseEnter: MouseEventHandler[HTMLElement] = js.native
   var onTitleMouseLeave: MouseEventHandler[HTMLElement] = js.native
   var subMenuTitle: HTMLElement = js.native
-  def addKeyPath(info: MenuInfo): AnonDomEventItem = js.native
+  def addKeyPath(info: MenuInfo): AnonItem = js.native
   def adjustWidth(): Unit = js.native
   @JSName("componentDidMount")
   def componentDidMount_MSubMenu(): Unit = js.native
@@ -58,7 +61,9 @@ class SubMenu protected ()
   @JSName("componentWillUnmount")
   def componentWillUnmount_MSubMenu(): Unit = js.native
   def getActiveClassName(): String = js.native
+  def getBaseProps(): SubPopupMenuProps = js.native
   def getDisabledClassName(): String = js.native
+  def getMotion(mode: MenuMode, visible: Boolean): MotionType = js.native
   def getOpenClassName(): String = js.native
   def getPrefixCls(): String = js.native
   def getSelectedClassName(): String = js.native
@@ -80,6 +85,6 @@ class SubMenu protected ()
 @JSImport("rc-menu/lib/SubMenu", "SubMenu")
 @js.native
 object SubMenu extends js.Object {
-  var defaultProps: AnonManualRefMode = js.native
+  var defaultProps: AnonMode = js.native
 }
 

@@ -18,13 +18,9 @@ trait AnonAutofit extends js.Object {
     * Sets the number of decimals that will be displayed when using scientific notation. Use with the 'exponent' attribute. 5 | 10 | ...
     */
   var `exponent-decimals`: js.UndefOr[Double] = js.undefined
-  var guide: js.UndefOr[AnonAlphaBackgroundcolorBackgroundcolor1Backgroundcolor2Items] = js.undefined
-  var item: js.UndefOr[
-    AnonAlphaAngleBackgroundcolorBackgroundcolor1Backgroundcolor2BackgroundfitBackgroundimageBackgroundpositionBackgroundrepeatBoldBorderbottom
-  ] = js.undefined
-  var label: js.UndefOr[
-    AnonAlphaAngleBackgroundcolorBackgroundcolor1Backgroundcolor2BackgroundfitBackgroundimageBackgroundpositionBackgroundrepeatBoldBorderbottom
-  ] = js.undefined
+  var guide: js.UndefOr[AnonLinesegmentsize] = js.undefined
+  var item: js.UndefOr[AnonBorderradiustopleft] = js.undefined
+  var label: js.UndefOr[AnonBorderradiustopleft] = js.undefined
   /**
     * ''horizontal' | 'h' | 'vertical' | 'v' | 'row x col' | 'x col' | 'row x' | 'float''
     */
@@ -66,11 +62,7 @@ trait AnonAutofit extends js.Object {
     * Sets the object's top margin. 4 | '6px' | ...
     */
   var `margin-top`: js.UndefOr[js.Any] = js.undefined
-  var markers: js.UndefOr[
-    js.Array[
-      AnonAlphaAngleBackgroundcolorBackgroundcolor1Backgroundcolor2BackgroundfitBackgroundimageBackgroundpositionBackgroundrepeatBordercolorBorderwidthFillangle
-    ]
-  ] = js.undefined
+  var markers: js.UndefOr[js.Array[AnonLabelalignment]] = js.undefined
   /**
     * Sets the maximum number of labels that will display along the axis. 5 | 10 | ...
     */
@@ -84,8 +76,8 @@ trait AnonAutofit extends js.Object {
     *  series data. Also see 'mix-value': and 'step': 4 | '6px' | ...
     */
   var `max-value`: js.UndefOr[Double] = js.undefined
-  var `minor-guide`: js.UndefOr[AnonAlphaLinecolorLinegapsizeLinesegmentsize] = js.undefined
-  var `minor-tick`: js.UndefOr[AnonAlphaLinecolorLinegapsizeLinesegmentsizeLinestyle] = js.undefined
+  var `minor-guide`: js.UndefOr[AnonLinecolorLinegapsize] = js.undefined
+  var `minor-tick`: js.UndefOr[AnonLinegapsizeLinesegmentsize] = js.undefined
   /**
     * Sets the number of minor tick marks displayed between the major tick marks. Note that this attribute is required to style the mino
     * r tick marks and/or guides. 5 | 10 | ...
@@ -125,7 +117,7 @@ trait AnonAutofit extends js.Object {
     * Used on radial charts (pie, radar, gauge) to specify the starting angle of the nodes. -45 | 115 | ...
     */
   var `ref-angle`: js.UndefOr[Double] = js.undefined
-  var `ref-line`: js.UndefOr[AnonAlphaLinecolorLinegapsizeLinesegmentsize] = js.undefined
+  var `ref-line`: js.UndefOr[AnonLinecolorLinegapsize] = js.undefined
   /**
     * To set the value the reference line is drawn at. 1 | 5 | 10 | ...
     */
@@ -152,8 +144,8 @@ trait AnonAutofit extends js.Object {
     * Sets the size of the object/shape. 4 | '6px' | ...
     */
   var size: js.UndefOr[js.Any] = js.undefined
-  var tick: js.UndefOr[AnonAlphaLinecolorLinegapsizeLinesegmentsizeLinestyleLinewidth] = js.undefined
-  var tooltip: js.UndefOr[AnonAlphaBackgroundcolorBorderalphaBordercolorBorderradius] = js.undefined
+  var tick: js.UndefOr[AnonShadowalpha] = js.undefined
+  var tooltip: js.UndefOr[AnonFontweight] = js.undefined
   var transform: js.UndefOr[AnonA] = js.undefined
   /**
     * An alternative way to create category scale labels. Similar to a 'labels' array, the 'values' array also acts as a maximum scale v
@@ -180,9 +172,9 @@ object AnonAutofit {
     `auto-fit`: js.UndefOr[Boolean] = js.undefined,
     exponent: js.UndefOr[Boolean] = js.undefined,
     `exponent-decimals`: Int | Double = null,
-    guide: AnonAlphaBackgroundcolorBackgroundcolor1Backgroundcolor2Items = null,
-    item: AnonAlphaAngleBackgroundcolorBackgroundcolor1Backgroundcolor2BackgroundfitBackgroundimageBackgroundpositionBackgroundrepeatBoldBorderbottom = null,
-    label: AnonAlphaAngleBackgroundcolorBackgroundcolor1Backgroundcolor2BackgroundfitBackgroundimageBackgroundpositionBackgroundrepeatBoldBorderbottom = null,
+    guide: AnonLinesegmentsize = null,
+    item: AnonBorderradiustopleft = null,
+    label: AnonBorderradiustopleft = null,
     layout: String = null,
     `line-color`: String = null,
     `line-gap-size`: js.Any = null,
@@ -193,14 +185,12 @@ object AnonAutofit {
     `margin-left`: js.Any = null,
     `margin-right`: js.Any = null,
     `margin-top`: js.Any = null,
-    markers: js.Array[
-      AnonAlphaAngleBackgroundcolorBackgroundcolor1Backgroundcolor2BackgroundfitBackgroundimageBackgroundpositionBackgroundrepeatBordercolorBorderwidthFillangle
-    ] = null,
+    markers: js.Array[AnonLabelalignment] = null,
     `max-labels`: Int | Double = null,
     `max-ticks`: Int | Double = null,
     `max-value`: Int | Double = null,
-    `minor-guide`: AnonAlphaLinecolorLinegapsizeLinesegmentsize = null,
-    `minor-tick`: AnonAlphaLinecolorLinegapsizeLinesegmentsizeLinestyle = null,
+    `minor-guide`: AnonLinecolorLinegapsize = null,
+    `minor-tick`: AnonLinegapsizeLinesegmentsize = null,
     `minor-ticks`: Int | Double = null,
     mirrored: js.UndefOr[Boolean] = js.undefined,
     negation: String = null,
@@ -210,7 +200,7 @@ object AnonAutofit {
     placement: String = null,
     progression: String = null,
     `ref-angle`: Int | Double = null,
-    `ref-line`: AnonAlphaLinecolorLinegapsizeLinesegmentsize = null,
+    `ref-line`: AnonLinecolorLinegapsize = null,
     `ref-value`: Int | Double = null,
     rules: js.Array[AnonRule] = null,
     `scale-factor`: Int | Double = null,
@@ -218,8 +208,8 @@ object AnonAutofit {
     `short-unit`: String = null,
     `show-labels`: js.Any = null,
     size: js.Any = null,
-    tick: AnonAlphaLinecolorLinegapsizeLinesegmentsizeLinestyleLinewidth = null,
-    tooltip: AnonAlphaBackgroundcolorBorderalphaBordercolorBorderradius = null,
+    tick: AnonShadowalpha = null,
+    tooltip: AnonFontweight = null,
     transform: AnonA = null,
     values: js.Any = null,
     visible: js.UndefOr[Boolean] = js.undefined,

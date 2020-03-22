@@ -1,6 +1,6 @@
 package typings.childProcessPromise.mod
 
-import typings.node.childProcessMod.ForkOptions
+import typings.childProcessPromise.ReadonlyOptionsForkOption
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 object fork extends js.Object {
   def apply(modulePath: String): ChildProcessPromise[SpawnPromiseResult] = js.native
   def apply(modulePath: String, args: js.Array[String]): ChildProcessPromise[SpawnPromiseResult] = js.native
-  def apply(modulePath: String, args: js.Array[String], options: Options with ForkOptions): ChildProcessPromise[SpawnPromiseResult] = js.native
+  def apply(modulePath: String, args: js.Array[String], options: ReadonlyOptionsForkOption): ChildProcessPromise[SpawnPromiseResult] = js.native
 }
 

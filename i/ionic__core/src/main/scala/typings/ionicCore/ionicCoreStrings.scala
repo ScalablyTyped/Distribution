@@ -10,6 +10,7 @@ import typings.ionicCore.mod.Side
 import typings.ionicCore.mod.TextFieldTypes
 import typings.ionicCore.navInterfaceMod.NavDirection
 import typings.ionicCore.rangeInterfaceMod._KnobName
+import typings.ionicCore.refresherUtilsMod.RefresherAnimationType
 import typings.ionicCore.segmentSegmentInterfaceMod.SegmentButtonLayout
 import typings.ionicCore.selectInterfaceMod.SelectInterface
 import typings.ionicCore.tabBarInterfaceMod.TabButtonLayout
@@ -63,6 +64,9 @@ object ionicCoreStrings {
   
   @js.native
   sealed trait `alternate-reverse` extends AnimationDirection
+  
+  @js.native
+  sealed trait always extends js.Object
   
   @js.native
   sealed trait android extends js.Object
@@ -196,6 +200,9 @@ object ionicCoreStrings {
   
   @js.native
   sealed trait floating extends js.Object
+  
+  @js.native
+  sealed trait focus extends js.Object
   
   @js.native
   sealed trait footer extends CellType
@@ -395,6 +402,9 @@ object ionicCoreStrings {
   sealed trait navAnimation extends js.Object
   
   @js.native
+  sealed trait never extends js.Object
+  
+  @js.native
   sealed trait no extends js.Object
   
   @js.native
@@ -482,6 +492,9 @@ object ionicCoreStrings {
   sealed trait sRGB extends js.Object
   
   @js.native
+  sealed trait scale extends RefresherAnimationType
+  
+  @js.native
   sealed trait scrollAssist extends js.Object
   
   @js.native
@@ -562,6 +575,9 @@ object ionicCoreStrings {
   sealed trait `text-before-edge` extends js.Object
   
   @js.native
+  sealed trait textarea extends js.Object
+  
+  @js.native
   sealed trait time extends TextFieldTypes
   
   @js.native
@@ -572,6 +588,9 @@ object ionicCoreStrings {
   
   @js.native
   sealed trait top extends js.Object
+  
+  @js.native
+  sealed trait translate extends RefresherAnimationType
   
   @js.native
   sealed trait unbounded extends js.Object
@@ -621,6 +640,8 @@ object ionicCoreStrings {
   def alternate: alternate = "alternate".asInstanceOf[alternate]
   @scala.inline
   def `alternate-reverse`: `alternate-reverse` = "alternate-reverse".asInstanceOf[`alternate-reverse`]
+  @scala.inline
+  def always: always = "always".asInstanceOf[always]
   @scala.inline
   def android: android = "android".asInstanceOf[android]
   @scala.inline
@@ -707,6 +728,8 @@ object ionicCoreStrings {
   def fixed: fixed = "fixed".asInstanceOf[fixed]
   @scala.inline
   def floating: floating = "floating".asInstanceOf[floating]
+  @scala.inline
+  def focus: focus = "focus".asInstanceOf[focus]
   @scala.inline
   def footer: footer = "footer".asInstanceOf[footer]
   @scala.inline
@@ -826,6 +849,8 @@ object ionicCoreStrings {
   @scala.inline
   def navAnimation: navAnimation = "navAnimation".asInstanceOf[navAnimation]
   @scala.inline
+  def never: never = "never".asInstanceOf[never]
+  @scala.inline
   def no: no = "no".asInstanceOf[no]
   @scala.inline
   def none: none = "none".asInstanceOf[none]
@@ -884,6 +909,8 @@ object ionicCoreStrings {
   @scala.inline
   def sRGB: sRGB = "sRGB".asInstanceOf[sRGB]
   @scala.inline
+  def scale: scale = "scale".asInstanceOf[scale]
+  @scala.inline
   def scrollAssist: scrollAssist = "scrollAssist".asInstanceOf[scrollAssist]
   @scala.inline
   def scrollPadding: scrollPadding = "scrollPadding".asInstanceOf[scrollPadding]
@@ -936,6 +963,8 @@ object ionicCoreStrings {
   @scala.inline
   def `text-before-edge`: `text-before-edge` = "text-before-edge".asInstanceOf[`text-before-edge`]
   @scala.inline
+  def textarea: textarea = "textarea".asInstanceOf[textarea]
+  @scala.inline
   def time: time = "time".asInstanceOf[time]
   @scala.inline
   def toastEnter: toastEnter = "toastEnter".asInstanceOf[toastEnter]
@@ -943,6 +972,8 @@ object ionicCoreStrings {
   def toastLeave: toastLeave = "toastLeave".asInstanceOf[toastLeave]
   @scala.inline
   def top: top = "top".asInstanceOf[top]
+  @scala.inline
+  def translate: translate = "translate".asInstanceOf[translate]
   @scala.inline
   def unbounded: unbounded = "unbounded".asInstanceOf[unbounded]
   @scala.inline

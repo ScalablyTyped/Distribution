@@ -1,7 +1,7 @@
 package typings.reactAce.splitMod
 
-import typings.propTypes.mod.ValidationMap
-import typings.std.Partial
+import typings.reactAce.PartialISplitEditorProps
+import typings.reactAce.ValidationMapISplitEditor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ class default protected () extends SplitComponent {
 @JSImport("react-ace/lib/split", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: Partial[ISplitEditorProps] = js.native
-  var propTypes: ValidationMap[ISplitEditorProps] = js.native
+  var defaultProps: PartialISplitEditorProps = js.native
+  var propTypes: ValidationMapISplitEditor = js.native
 }
 

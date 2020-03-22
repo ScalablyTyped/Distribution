@@ -1,6 +1,6 @@
 package typings.stylelint.mod
 
-import typings.std.Partial
+import typings.stylelint.PartialLinterOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object lint extends js.Object {
   def apply(): js.Promise[LinterResult] = js.native
-  def apply(options: Partial[LinterOptions]): js.Promise[LinterResult] = js.native
+  def apply(options: PartialLinterOptions): js.Promise[LinterResult] = js.native
 }
 

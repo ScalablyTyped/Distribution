@@ -1,8 +1,8 @@
 package typings.yargsParser.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Partial
 import typings.yargsParser.AnonBoolean
+import typings.yargsParser.PartialConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,7 +26,7 @@ trait Options extends js.Object {
   /** Indicate a key that represents a path to a configuration file (this file will be loaded and parsed). */
   var config: js.UndefOr[String | js.Array[String] | StringDictionary[Boolean]] = js.undefined
   /** Provide configuration options to the yargs-parser. */
-  var configuration: js.UndefOr[Partial[Configuration]] = js.undefined
+  var configuration: js.UndefOr[PartialConfiguration] = js.undefined
   /** Indicate a key that should be used as a counter, e.g., `-vvv = {v: 3}`. */
   var count: js.UndefOr[js.Array[String]] = js.undefined
   /** Provide default values for keys: `{ default: { x: 33, y: 'hello world!' } }`. */
@@ -51,7 +51,7 @@ object Options {
     boolean: js.Array[String] = null,
     coerce: StringDictionary[js.Function1[/* arg */ js.Any, _]] = null,
     config: String | js.Array[String] | StringDictionary[Boolean] = null,
-    configuration: Partial[Configuration] = null,
+    configuration: PartialConfiguration = null,
     count: js.Array[String] = null,
     default: StringDictionary[js.Any] = null,
     envPrefix: String = null,

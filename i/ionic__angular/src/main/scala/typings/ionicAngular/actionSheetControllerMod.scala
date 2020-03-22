@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ionic/angular/dist/providers/action-sheet-controller", JSImport.Namespace)
+@JSImport("@ionic/angular/providers/action-sheet-controller", JSImport.Namespace)
 @js.native
 object actionSheetControllerMod extends js.Object {
   @js.native

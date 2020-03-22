@@ -19,6 +19,7 @@ trait MenuI extends js.Object {
   var menuCtrl: js.UndefOr[MenuControllerI] = js.native
   var menuId: js.UndefOr[String] = js.native
   var menuInnerEl: js.UndefOr[HTMLElement] = js.native
+  var mode: String = js.native
   var side: Side = js.native
   var width: Double = js.native
   def _setOpen(shouldOpen: Boolean): js.Promise[Boolean] = js.native

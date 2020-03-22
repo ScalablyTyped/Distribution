@@ -8,11 +8,11 @@ trait AnonBulletin extends js.Object {
   /**
     * The bulletin object contains details about a channel bulletin post. This object is only present if the snippet.type is bulletin.
     */
-  var bulletin: AnonResourceIdAnonChannelIdKindPlaylistId
+  var bulletin: AnonResourceIdAnonKindPlaylistId
   /**
     * The channelItem object contains details about a resource that was added to a channel. This property is only present if the snippet.type is channelItem.
     */
-  var channelItem: AnonResourceId130624907
+  var channelItem: Anon0
   /**
     * The comment object contains information about a resource that received a comment. This property is only present if the snippet.type is comment.
     */
@@ -40,7 +40,7 @@ trait AnonBulletin extends js.Object {
   /**
     * The subscription object contains information about a channel that a user subscribed to. This property is only present if the snippet.type is subscription.
     */
-  var subscription: AnonResourceIdAnonChannelIdKindString
+  var subscription: AnonResourceIdAnonChannelIdString
   /**
     * The upload object contains information about the uploaded video. This property is only present if the snippet.type is upload.
     */
@@ -50,15 +50,15 @@ trait AnonBulletin extends js.Object {
 object AnonBulletin {
   @scala.inline
   def apply(
-    bulletin: AnonResourceIdAnonChannelIdKindPlaylistId,
-    channelItem: AnonResourceId130624907,
+    bulletin: AnonResourceIdAnonKindPlaylistId,
+    channelItem: Anon0,
     comment: AnonResourceIdAnonChannelIdKind,
     favorite: AnonResourceId,
     like: AnonResourceId,
     playlistItem: AnonPlaylistId,
     recommendation: AnonReason,
     social: AnonAuthor,
-    subscription: AnonResourceIdAnonChannelIdKindString,
+    subscription: AnonResourceIdAnonChannelIdString,
     upload: AnonVideoId
   ): AnonBulletin = {
     val __obj = js.Dynamic.literal(bulletin = bulletin.asInstanceOf[js.Any], channelItem = channelItem.asInstanceOf[js.Any], comment = comment.asInstanceOf[js.Any], favorite = favorite.asInstanceOf[js.Any], like = like.asInstanceOf[js.Any], playlistItem = playlistItem.asInstanceOf[js.Any], recommendation = recommendation.asInstanceOf[js.Any], social = social.asInstanceOf[js.Any], subscription = subscription.asInstanceOf[js.Any], upload = upload.asInstanceOf[js.Any])

@@ -10,7 +10,7 @@ object findByExtension extends js.Object {
   /**
     * Find a codemirror mode by extension.
     */
-  def apply(ext: String): ISpec = js.native
-  def apply(ext: js.Array[String]): ISpec = js.native
+  def apply(ext: String): ISpec | Null = js.native
+  def apply(ext: js.Array[String]): ISpec | Null = js.native
 }
 

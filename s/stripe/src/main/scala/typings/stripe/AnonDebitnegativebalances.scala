@@ -17,7 +17,7 @@ trait AnonDebitnegativebalances extends js.Object {
     * to an external account. See our Setting Bank and Debit Card Payouts
     * documentation for details.
     */
-  var schedule: js.UndefOr[AnonDaily] = js.undefined
+  var schedule: js.UndefOr[AnonDelaydays] = js.undefined
   /**
     * The text that appears on the bank account statement for payouts. If not set,
     * this defaults to the platform’s bank descriptor as set in the Dashboard.
@@ -29,7 +29,7 @@ object AnonDebitnegativebalances {
   @scala.inline
   def apply(
     debit_negative_balances: js.UndefOr[Boolean] = js.undefined,
-    schedule: AnonDaily = null,
+    schedule: AnonDelaydays = null,
     statement_descriptor: String = null
   ): AnonDebitnegativebalances = {
     val __obj = js.Dynamic.literal()

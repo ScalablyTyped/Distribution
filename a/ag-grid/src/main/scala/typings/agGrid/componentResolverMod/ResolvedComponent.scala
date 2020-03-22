@@ -1,14 +1,14 @@
 package typings.agGrid.componentResolverMod
 
-import typings.agGrid.AnonA1737000091
-import typings.agGrid.AnonB
+import typings.agGrid.Anon1
+import typings.agGrid.AnonInstantiableB
 import typings.agGrid.iComponentMod.IComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ResolvedComponent[A /* <: IComponent[_] with B */, B] extends js.Object {
-  var component: AnonA1737000091[A] | AnonB[B]
+  var component: Anon1[A] | AnonInstantiableB[B]
   var dynamicParams: js.Any
   var source: ComponentSource
   var `type`: ComponentType
@@ -17,7 +17,7 @@ trait ResolvedComponent[A /* <: IComponent[_] with B */, B] extends js.Object {
 object ResolvedComponent {
   @scala.inline
   def apply[A /* <: IComponent[_] with B */, B](
-    component: AnonA1737000091[A] | AnonB[B],
+    component: Anon1[A] | AnonInstantiableB[B],
     dynamicParams: js.Any,
     source: ComponentSource,
     `type`: ComponentType

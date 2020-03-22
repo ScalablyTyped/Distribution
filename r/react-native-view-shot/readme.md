@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-view-shot
 
-Typings are for version 2.6.0
+Typings are for version 3.0.2
 
 ## Library description:
 Capture a React Native view to an image

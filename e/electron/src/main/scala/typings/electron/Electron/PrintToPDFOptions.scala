@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait PrintToPDFOptions extends js.Object {
   /**
-    * true for landscape, false for portrait.
+    * `true` for landscape, `false` for portrait.
     */
   var landscape: js.UndefOr[Boolean] = js.undefined
   /**
@@ -15,8 +15,8 @@ trait PrintToPDFOptions extends js.Object {
     */
   var marginsType: js.UndefOr[Double] = js.undefined
   /**
-    * Specify page size of the generated PDF. Can be A3, A4, A5, Legal, Letter,
-    * Tabloid or an Object containing height and width in microns.
+    * Specify page size of the generated PDF. Can be `A3`, `A4`, `A5`, `Legal`,
+    * `Letter`, `Tabloid` or an Object containing `height` and `width` in microns.
     */
   var pageSize: js.UndefOr[String | Size] = js.undefined
   /**

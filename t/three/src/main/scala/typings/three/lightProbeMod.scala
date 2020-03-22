@@ -14,7 +14,7 @@ object lightProbeMod extends js.Object {
   class LightProbe () extends Light {
     def this(sh: SphericalHarmonics3) = this()
     def this(sh: SphericalHarmonics3, intensity: Double) = this()
-    var isLightProbe: `true` = js.native
+    val isLightProbe: `true` = js.native
     var sh: SphericalHarmonics3 = js.native
   }
   

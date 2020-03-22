@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
 object packagePluginMod extends js.Object {
   @js.native
   class PackagePlugin () extends AbstractComponent[Converter] {
+    var includeVersion: Boolean = js.native
     var noReadmeFile: js.UndefOr[js.Any] = js.native
     var onBegin: js.Any = js.native
     var onBeginDocument: js.Any = js.native

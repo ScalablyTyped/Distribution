@@ -240,7 +240,7 @@ package object std {
   /**
     * Construct a type with a set of properties K of type T
     */
-  type Record[K /* <: java.lang.String */, T] = org.scalablytyped.runtime.StringDictionary[K]
+  type Record[K /* <: java.lang.String */, T] = org.scalablytyped.runtime.StringDictionary[T]
   type ReferenceError = typings.std.Error
   type RequestInfo = typings.std.Request | java.lang.String
   /**

@@ -21,9 +21,49 @@ class Time_ protected () extends js.Object {
   def this(options: TimeOptions) = this()
   /**
     * Formats a JavaScript date timestamp (milliseconds since Jan 1st 1970)
-    * into a human readable date string. The format is a subset of the formats
-    * for PHP's strftime function. Additional formats can be given in the
-    * Highcharts.dateFormats hook.
+    * into a human readable date string. The available format keys are listed
+    * below. Additional formats can be given in the Highcharts.dateFormats
+    * hook.
+    *
+    * Supported format keys:
+    *
+    * - `%a`: Short weekday, like 'Mon'
+    *
+    * - `%A`: Long weekday, like 'Monday'
+    *
+    * - `%d`: Two digit day of the month, 01 to 31
+    *
+    * - `%e`: Day of the month, 1 through 31
+    *
+    * - `%w`: Day of the week, 0 through 6
+    *
+    * - `%b`: Short month, like 'Jan'
+    *
+    * - `%B`: Long month, like 'January'
+    *
+    * - `%m`: Two digit month number, 01 through 12
+    *
+    * - `%y`: Two digits year, like 09 for 2009
+    *
+    * - `%Y`: Four digits year, like 2009
+    *
+    * - `%H`: Two digits hours in 24h format, 00 through 23
+    *
+    * - `%k`: Hours in 24h format, 0 through 23
+    *
+    * - `%I`: Two digits hours in 12h format, 00 through 11
+    *
+    * - `%l`: Hours in 12h format, 1 through 12
+    *
+    * - `%M`: Two digits minutes, 00 through 59
+    *
+    * - `%p`: Upper case AM or PM
+    *
+    * - `%P`: Lower case AM or PM
+    *
+    * - `%S`: Two digits seconds, 00 through 59
+    *
+    * - `%L`: Milliseconds (naming from Ruby)
     *
     * @param format
     *        The desired format where various time representations are prefixed
@@ -41,9 +81,49 @@ class Time_ protected () extends js.Object {
   def dateFormat(format: String, timestamp: Double, capitalize: Boolean): String = js.native
   /**
     * Formats a JavaScript date timestamp (milliseconds since Jan 1st 1970)
-    * into a human readable date string. The format is a subset of the formats
-    * for PHP's strftime function. Additional formats can be given in the
-    * Highcharts.dateFormats hook.
+    * into a human readable date string. The available format keys are listed
+    * below. Additional formats can be given in the Highcharts.dateFormats
+    * hook.
+    *
+    * Supported format keys:
+    *
+    * - `%a`: Short weekday, like 'Mon'
+    *
+    * - `%A`: Long weekday, like 'Monday'
+    *
+    * - `%d`: Two digit day of the month, 01 to 31
+    *
+    * - `%e`: Day of the month, 1 through 31
+    *
+    * - `%w`: Day of the week, 0 through 6
+    *
+    * - `%b`: Short month, like 'Jan'
+    *
+    * - `%B`: Long month, like 'January'
+    *
+    * - `%m`: Two digit month number, 01 through 12
+    *
+    * - `%y`: Two digits year, like 09 for 2009
+    *
+    * - `%Y`: Four digits year, like 2009
+    *
+    * - `%H`: Two digits hours in 24h format, 00 through 23
+    *
+    * - `%k`: Hours in 24h format, 0 through 23
+    *
+    * - `%I`: Two digits hours in 12h format, 00 through 11
+    *
+    * - `%l`: Hours in 12h format, 1 through 12
+    *
+    * - `%M`: Two digits minutes, 00 through 59
+    *
+    * - `%p`: Upper case AM or PM
+    *
+    * - `%P`: Lower case AM or PM
+    *
+    * - `%S`: Two digits seconds, 00 through 59
+    *
+    * - `%L`: Milliseconds (naming from Ruby)
     *
     * @param timestamp
     *        The JavaScript timestamp.

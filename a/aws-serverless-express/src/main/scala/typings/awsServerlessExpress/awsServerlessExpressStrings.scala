@@ -14,16 +14,11 @@ object awsServerlessExpressStrings {
   @js.native
   sealed trait PROMISE extends js.Object
   
-  @js.native
-  sealed trait body extends js.Object
-  
   @scala.inline
   def CALLBACK: CALLBACK = "CALLBACK".asInstanceOf[CALLBACK]
   @scala.inline
   def CONTEXT_SUCCEED: CONTEXT_SUCCEED = "CONTEXT_SUCCEED".asInstanceOf[CONTEXT_SUCCEED]
   @scala.inline
   def PROMISE: PROMISE = "PROMISE".asInstanceOf[PROMISE]
-  @scala.inline
-  def body: body = "body".asInstanceOf[body]
 }
 

@@ -1,7 +1,7 @@
 package typings.flatpickr.localeMod
 
 import typings.flatpickr.AnonLonghand
-import typings.flatpickr.AnonLonghandShorthand
+import typings.flatpickr.AnonShorthand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ trait CustomLocale extends js.Object {
   var firstDayOfWeek: js.UndefOr[Double] = js.undefined
   var hourAriaLabel: js.UndefOr[String] = js.undefined
   var minuteAriaLabel: js.UndefOr[String] = js.undefined
-  var months: AnonLonghandShorthand
+  var months: AnonShorthand
   var ordinal: js.UndefOr[js.Function1[/* nth */ Double, String]] = js.undefined
   var rangeSeparator: js.UndefOr[String] = js.undefined
   var scrollTitle: js.UndefOr[String] = js.undefined
@@ -28,7 +28,7 @@ trait CustomLocale extends js.Object {
 object CustomLocale {
   @scala.inline
   def apply(
-    months: AnonLonghandShorthand,
+    months: AnonShorthand,
     weekdays: AnonLonghand,
     amPM: js.Tuple2[String, String] = null,
     daysInMonth: js.Tuple12[Double, Double, Double, Double, Double, Double, Double, Double, Double, Double, Double, Double] = null,

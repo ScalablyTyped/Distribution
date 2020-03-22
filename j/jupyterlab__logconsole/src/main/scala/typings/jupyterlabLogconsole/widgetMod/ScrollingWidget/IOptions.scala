@@ -1,13 +1,13 @@
 package typings.jupyterlabLogconsole.widgetMod.ScrollingWidget
 
-import typings.phosphorWidgets.mod.Widget
+import typings.luminoWidgets.mod.Widget
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IOptions[T /* <: Widget */]
-  extends typings.phosphorWidgets.widgetMod.Widget.IOptions {
+  extends typings.luminoWidgets.widgetMod.Widget.IOptions {
   var content: T
 }
 

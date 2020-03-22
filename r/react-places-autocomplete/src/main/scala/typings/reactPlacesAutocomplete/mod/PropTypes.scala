@@ -2,7 +2,7 @@ package typings.reactPlacesAutocomplete.mod
 
 import typings.react.mod.ReactNode
 import typings.reactPlacesAutocomplete.AnonBounds
-import typings.reactPlacesAutocomplete.AnonGetInputProps
+import typings.reactPlacesAutocomplete.Readonlyloadingbooleansug
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,13 +19,13 @@ trait PropTypes extends js.Object {
   var searchOptions: js.UndefOr[AnonBounds] = js.undefined
   var shouldFetchSuggestions: js.UndefOr[Boolean] = js.undefined
   var value: js.UndefOr[String] = js.undefined
-  def children(opts: AnonGetInputProps): ReactNode
+  def children(opts: Readonlyloadingbooleansug): ReactNode
 }
 
 object PropTypes {
   @scala.inline
   def apply(
-    children: AnonGetInputProps => ReactNode,
+    children: Readonlyloadingbooleansug => ReactNode,
     debounce: Int | Double = null,
     googleCallbackName: String = null,
     highlightFirstSuggestion: js.UndefOr[Boolean] = js.undefined,

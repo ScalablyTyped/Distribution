@@ -441,6 +441,7 @@ object iconNameMod extends js.Object {
     - typings.blueprintjsIcons.blueprintjsIconsStrings.`expand-all`
     - typings.blueprintjsIcons.blueprintjsIconsStrings.error
     - typings.blueprintjsIcons.blueprintjsIconsStrings.`search-text`
+    - typings.blueprintjsIcons.blueprintjsIconsStrings.`lab-test`
     - typings.blueprintjsIcons.blueprintjsIconsStrings.grid
     - typings.blueprintjsIcons.blueprintjsIconsStrings.`panel-table`
     - typings.blueprintjsIcons.blueprintjsIconsStrings.`series-search`
@@ -488,6 +489,7 @@ object iconNameMod extends js.Object {
     - typings.blueprintjsIcons.blueprintjsIconsStrings.eject
     - typings.blueprintjsIcons.blueprintjsIconsStrings.share
     - typings.blueprintjsIcons.blueprintjsIconsStrings.chat
+    - typings.blueprintjsIcons.blueprintjsIconsStrings.diagnosis
     - typings.blueprintjsIcons.blueprintjsIconsStrings.`layout-hierarchy`
     - typings.blueprintjsIcons.blueprintjsIconsStrings.`alignment-bottom`
     - typings.blueprintjsIcons.blueprintjsIconsStrings.delta

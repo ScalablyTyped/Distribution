@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 @js.native
 trait UpdateStandardsControlRequest extends js.Object {
   /**
-    * The updated status of the compliance standard control.
+    * The updated status of the security standard control.
     */
   var ControlStatus: js.UndefOr[typings.awsSdk.securityhubMod.ControlStatus] = js.native
   /**
-    * A description of the reason why you are disabling a compliance standard control.
+    * A description of the reason why you are disabling a security standard control.
     */
   var DisabledReason: js.UndefOr[NonEmptyString] = js.native
   /**
-    * The ARN of the compliance standard control to enable or disable.
+    * The ARN of the security standard control to enable or disable.
     */
   var StandardsControlArn: NonEmptyString = js.native
 }

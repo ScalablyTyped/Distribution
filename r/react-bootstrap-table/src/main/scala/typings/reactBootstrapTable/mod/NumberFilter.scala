@@ -1,7 +1,7 @@
 package typings.reactBootstrapTable.mod
 
 import typings.reactBootstrapTable.AnonComparator
-import typings.reactBootstrapTable.AnonComparatorNumber
+import typings.reactBootstrapTable.AnonNumber
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,7 +30,7 @@ trait NumberFilter extends _Filter {
   /**
   	 * CSS Style to use for the select filter.
   	 */
-  var style: js.UndefOr[AnonComparatorNumber] = js.undefined
+  var style: js.UndefOr[AnonNumber] = js.undefined
   /**
   	 * Filter type must be 'NumberFilter'
   	 */
@@ -58,7 +58,7 @@ object NumberFilter {
     numberComparators: js.Array[FilterComparator] = null,
     options: js.Array[Double] = null,
     placeholder: String = null,
-    style: AnonComparatorNumber = null,
+    style: AnonNumber = null,
     withoutEmptyComparatorOption: js.UndefOr[Boolean] = js.undefined,
     withoutEmptyNumberOption: js.UndefOr[Boolean] = js.undefined,
     withoutEmptyOption: js.UndefOr[Boolean] = js.undefined

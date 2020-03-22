@@ -2,6 +2,7 @@ package typings.three
 
 import typings.three.lightShadowMod.LightShadow
 import typings.three.orthographicCameraMod.OrthographicCamera
+import typings.three.threeBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,6 +14,7 @@ object directionalLightShadowMod extends js.Object {
   class DirectionalLightShadow () extends LightShadow {
     @JSName("camera")
     var camera_DirectionalLightShadow: OrthographicCamera = js.native
+    val isDirectionalLightShadow: `true` = js.native
   }
   
 }

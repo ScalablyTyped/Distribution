@@ -26,6 +26,7 @@ object fillGlyphMap extends js.Object {
   var bell: Double = js.native
   var book: Double = js.native
   var `box-plot`: Double = js.native
+  var bug: Double = js.native
   var build: Double = js.native
   var bulb: Double = js.native
   var calculator: Double = js.native
@@ -101,6 +102,7 @@ object fillGlyphMap extends js.Object {
   var folder: Double = js.native
   var `folder-add`: Double = js.native
   var `folder-open`: Double = js.native
+  var `format-painter`: Double = js.native
   var forward: Double = js.native
   var frown: Double = js.native
   var fund: Double = js.native
@@ -108,6 +110,7 @@ object fillGlyphMap extends js.Object {
   var gift: Double = js.native
   var github: Double = js.native
   var gitlab: Double = js.native
+  var gold: Double = js.native
   var golden: Double = js.native
   var `google-circle`: Double = js.native
   var `google-plus-circle`: Double = js.native
@@ -125,13 +128,14 @@ object fillGlyphMap extends js.Object {
   var `info-circle`: Double = js.native
   var instagram: Double = js.native
   var insurance: Double = js.native
-  var interation: Double = js.native
+  var interaction: Double = js.native
   var layout: Double = js.native
   var `left-circle`: Double = js.native
   var `left-square`: Double = js.native
   var like: Double = js.native
   var linkedin: Double = js.native
   var lock: Double = js.native
+  var `mac-command`: Double = js.native
   var mail: Double = js.native
   var `medicine-box`: Double = js.native
   var `medium-circle`: Double = js.native
@@ -169,6 +173,7 @@ object fillGlyphMap extends js.Object {
   var rest: Double = js.native
   var `right-circle`: Double = js.native
   var `right-square`: Double = js.native
+  var robot: Double = js.native
   var rocket: Double = js.native
   var `safety-certificate`: Double = js.native
   var save: Double = js.native
@@ -177,6 +182,7 @@ object fillGlyphMap extends js.Object {
   var setting: Double = js.native
   var shop: Double = js.native
   var shopping: Double = js.native
+  var signal: Double = js.native
   var `sketch-circle`: Double = js.native
   var `sketch-square`: Double = js.native
   var skin: Double = js.native

@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 object localeProviderEsESMod extends js.Object {
   @js.native
   object default extends js.Object {
-    var DatePicker: AnonDatePickerLocaleDismissTextExtra = js.native
+    var DatePicker: AnonOkText = js.native
     var DatePickerView: AnonCalendar = js.native
     var InputItem: AnonBackspaceLabel = js.native
     var ListView: AnonDone = js.native
     var Pagination: AnonNextText = js.native
-    var Picker: AnonDismissText = js.native
+    var Picker: AnonExtra = js.native
     var SearchBar: AnonCancelText = js.native
     var locale: String = js.native
   }

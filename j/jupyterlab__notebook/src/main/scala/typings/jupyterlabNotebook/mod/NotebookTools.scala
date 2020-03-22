@@ -1,9 +1,8 @@
 package typings.jupyterlabNotebook.mod
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.jupyterlabNotebook.notebooktoolsMod.NotebookTools.IOptions
-import typings.phosphorCoreutils.jsonMod.JSONValue
-import typings.phosphorMessaging.mod.ConflatableMessage
+import typings.luminoCoreutils.jsonMod.ReadonlyPartialJSONObject
+import typings.luminoMessaging.mod.ConflatableMessage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -95,7 +94,7 @@ object NotebookTools extends js.Object {
   /**
     * Create an nbconvert selector.
     */
-  def createNBConvertSelector(optionsMap: StringDictionary[JSONValue]): typings.jupyterlabNotebook.notebooktoolsMod.NotebookTools.KeySelector = js.native
+  def createNBConvertSelector(optionsMap: ReadonlyPartialJSONObject): typings.jupyterlabNotebook.notebooktoolsMod.NotebookTools.KeySelector = js.native
   /**
     * Create a slideshow selector.
     */

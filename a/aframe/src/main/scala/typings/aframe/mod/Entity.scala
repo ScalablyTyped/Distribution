@@ -3,7 +3,7 @@ package typings.aframe.mod
 import typings.aframe.AnonComponentName
 import typings.aframe.AnonEl
 import typings.aframe.AnonId
-import typings.aframe.AnonIdName
+import typings.aframe.AnonName
 import typings.aframe.AnonState
 import typings.aframe.aframeStrings.`child-attached`
 import typings.aframe.aframeStrings.`child-detached`
@@ -69,12 +69,12 @@ trait Entity[C] extends ANode {
   @JSName("addEventListener")
   def addEventListener_componentremoved(
     `type`: componentremoved,
-    listener: js.Function1[/* event */ Event_ with DetailEvent[AnonIdName], Unit]
+    listener: js.Function1[/* event */ Event_ with DetailEvent[AnonName], Unit]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_componentremoved(
     `type`: componentremoved,
-    listener: js.Function1[/* event */ Event_ with DetailEvent[AnonIdName], Unit],
+    listener: js.Function1[/* event */ Event_ with DetailEvent[AnonName], Unit],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")

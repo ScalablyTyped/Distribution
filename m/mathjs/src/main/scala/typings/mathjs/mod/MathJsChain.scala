@@ -1,6 +1,6 @@
 package typings.mathjs.mod
 
-import typings.mathjs.AnonLR
+import typings.mathjs.AnonR
 import typings.mathjs.AnonSimplify
 import typings.mathjs.mathjsStrings.asc
 import typings.mathjs.mathjsStrings.biased
@@ -1257,8 +1257,8 @@ trait MathJsChain extends js.Object {
     * @param scope Scope to variables
     */
   def simplify(): MathJsChain = js.native
-  def simplify(rules: js.Array[AnonLR | String | (js.Function1[/* node */ MathNode, MathNode])]): MathJsChain = js.native
-  def simplify(rules: js.Array[AnonLR | String | (js.Function1[/* node */ MathNode, MathNode])], scope: js.Object): MathJsChain = js.native
+  def simplify(rules: js.Array[AnonR | String | (js.Function1[/* node */ MathNode, MathNode])]): MathJsChain = js.native
+  def simplify(rules: js.Array[AnonR | String | (js.Function1[/* node */ MathNode, MathNode])], scope: js.Object): MathJsChain = js.native
   /**
     * Calculate the sine of a value. For matrices, the function is
     * evaluated element wise.

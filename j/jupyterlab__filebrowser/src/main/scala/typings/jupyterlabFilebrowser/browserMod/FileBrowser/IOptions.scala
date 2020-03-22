@@ -24,13 +24,28 @@ trait IOptions extends js.Object {
     * The default is a shared instance of `DirListing.Renderer`.
     */
   var renderer: js.UndefOr[IRenderer] = js.undefined
+  /**
+    * Whether a file browser automatically restores state when instantiated.
+    * The default is `true`.
+    *
+    * #### Notes
+    * The file browser model will need to be restored manually for the file
+    * browser to be able to save its state.
+    */
+  var restore: js.UndefOr[Boolean] = js.undefined
 }
 
 object IOptions {
   @scala.inline
-  def apply(id: String, model: FileBrowserModel, renderer: IRenderer = null): IOptions = {
+  def apply(
+    id: String,
+    model: FileBrowserModel,
+    renderer: IRenderer = null,
+    restore: js.UndefOr[Boolean] = js.undefined
+  ): IOptions = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], model = model.asInstanceOf[js.Any])
     if (renderer != null) __obj.updateDynamic("renderer")(renderer.asInstanceOf[js.Any])
+    if (!js.isUndefined(restore)) __obj.updateDynamic("restore")(restore.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

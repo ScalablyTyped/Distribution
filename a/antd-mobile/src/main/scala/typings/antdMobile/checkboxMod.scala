@@ -16,7 +16,7 @@ object checkboxMod extends js.Object {
   object default extends js.Object {
     var AgreeItem: js.Any = js.native
     var CheckboxItem: js.Any = js.native
-    var defaultProps: AnonPrefixClsWrapLabel = js.native
+    var defaultProps: AnonWrapLabel = js.native
   }
   
 }

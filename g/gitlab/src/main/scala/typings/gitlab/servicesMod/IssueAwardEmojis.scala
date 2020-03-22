@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("gitlab/dist/types/core/services", "IssueAwardEmojis")
 @js.native
-class IssueAwardEmojis ()
+class IssueAwardEmojis protected ()
   extends typings.gitlab.issueAwardEmojisMod.IssueAwardEmojis {
   def this(options: BaseServiceOptions) = this()
 }

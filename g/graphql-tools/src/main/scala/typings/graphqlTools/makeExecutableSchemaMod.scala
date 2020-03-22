@@ -65,7 +65,7 @@ object makeExecutableSchemaMod extends js.Object {
   def decorateWithLogger(fn: js.UndefOr[scala.Nothing], logger: ILogger, hint: String): GraphQLFieldResolver[_, _, StringDictionary[_]] = js.native
   def decorateWithLogger(fn: GraphQLFieldResolver[_, _, StringDictionary[_]], logger: ILogger, hint: String): GraphQLFieldResolver[_, _, StringDictionary[_]] = js.native
   def extendResolversFromInterfaces(schema: GraphQLSchema, resolvers: IResolvers[_, _]): IResolvers[_, _] = js.native
-  def extractExtensionDefinitions(ast: DocumentNode): DocumentNode with AnonDefinitions = js.native
+  def extractExtensionDefinitions(ast: DocumentNode): DocumentNodedefinitionsAr = js.native
   def forEachField(schema: GraphQLSchema, fn: IFieldIteratorFn): Unit = js.native
   def makeExecutableSchema[TContext](
     hasTypeDefsResolversConnectorsLoggerAllowUndefinedInResolveResolverValidationOptionsDirectiveResolversSchemaDirectivesParseOptionsInheritResolversFromInterfaces: IExecutableSchemaDefinition[TContext]

@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@angular/common", "NgIf")
 @js.native
-class NgIf protected () extends js.Object {
-  def this(_viewContainer: ViewContainerRef, templateRef: TemplateRef[NgIfContext]) = this()
+class NgIf[T] protected () extends js.Object {
+  def this(_viewContainer: ViewContainerRef, templateRef: TemplateRef[NgIfContext[T]]) = this()
   var _context: js.Any = js.native
   var _elseTemplateRef: js.Any = js.native
   var _elseViewRef: js.Any = js.native
@@ -21,15 +21,17 @@ class NgIf protected () extends js.Object {
   /**
     * The Boolean expression to evaluate as the condition for showing a template.
     */
-  var ngIf: js.Any = js.native
+  def ngIf(condition: T): js.Any = js.native
+  def ngIfElse(): js.Any = js.native
   /**
     * A template to show if the condition expression evaluates to false.
     */
-  var ngIfElse: TemplateRef[NgIfContext] | Null = js.native
+  def ngIfElse(templateRef: TemplateRef[NgIfContext[T]]): js.Any = js.native
+  def ngIfThen(): js.Any = js.native
   /**
     * A template to show if the condition expression evaluates to true.
     */
-  var ngIfThen: TemplateRef[NgIfContext] | Null = js.native
+  def ngIfThen(templateRef: TemplateRef[NgIfContext[T]]): js.Any = js.native
 }
 
 /* static members */
@@ -45,5 +47,12 @@ object NgIf extends js.Object {
     * narrow its type, which allows the strictNullChecks feature of TypeScript to work with `NgIf`.
     */
   var ngTemplateGuard_ngIf: binding = js.native
+  /**
+    * Asserts the correct type of the context for the template that `NgIf` will render.
+    *
+    * The presence of this method is a signal to the Ivy template type-check compiler that the
+    * `NgIf` structural directive renders its template with a specific context type.
+    */
+  def ngTemplateContextGuard[T](dir: NgIf[T], ctx: js.Any): /* is @angular/common.@angular/common.NgIfContext<T> */ Boolean = js.native
 }
 

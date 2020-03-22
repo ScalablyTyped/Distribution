@@ -18,7 +18,6 @@ import typings.antd.antdStrings.grammar
 import typings.antd.antdStrings.grid
 import typings.antd.antdStrings.horizontal
 import typings.antd.antdStrings.inherit
-import typings.antd.antdStrings.large
 import typings.antd.antdStrings.link
 import typings.antd.antdStrings.list
 import typings.antd.antdStrings.listbox
@@ -37,7 +36,6 @@ import typings.antd.antdStrings.polite
 import typings.antd.antdStrings.popup
 import typings.antd.antdStrings.removals
 import typings.antd.antdStrings.search
-import typings.antd.antdStrings.small
 import typings.antd.antdStrings.spelling
 import typings.antd.antdStrings.step
 import typings.antd.antdStrings.tel
@@ -47,6 +45,7 @@ import typings.antd.antdStrings.tree
 import typings.antd.antdStrings.url
 import typings.antd.antdStrings.vertical
 import typings.antd.antdStrings.yes
+import typings.antd.sizeContextMod.SizeType
 import typings.react.AnonHtml
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
@@ -281,7 +280,7 @@ trait InputNumberProps extends js.Object {
   var results: js.UndefOr[Double] = js.undefined
   var role: js.UndefOr[String] = js.undefined
   var security: js.UndefOr[String] = js.undefined
-  var size: js.UndefOr[large | small | typings.antd.antdStrings.default] = js.undefined
+  var size: js.UndefOr[SizeType] = js.undefined
   var slot: js.UndefOr[String] = js.undefined
   var spellCheck: js.UndefOr[Booleanish] = js.undefined
   var src: js.UndefOr[String] = js.undefined
@@ -496,7 +495,7 @@ object InputNumberProps {
     results: Int | Double = null,
     role: String = null,
     security: String = null,
-    size: large | small | typings.antd.antdStrings.default = null,
+    size: SizeType = null,
     slot: String = null,
     spellCheck: js.UndefOr[Boolean] = js.undefined,
     src: String = null,

@@ -171,48 +171,15 @@ trait Assertions extends js.Object {
   def snapshot(expected: js.Any, options: SnapshotOptions, message: String): Unit = js.native
   /**
   	 * Assert that the function throws [an error](https://www.npmjs.com/package/is-error). If so, returns the error value.
-  	 */
-  /**
-  	 * Assert that the function throws [an error](https://www.npmjs.com/package/is-error). If so, returns the error value.
-  	 */
-  def throws[ThrownError /* <: Error */](fn: js.Function0[_]): ThrownError = js.native
-  /**
-  	 * Assert that the function throws [an error](https://www.npmjs.com/package/is-error). If so, returns the error value.
-  	 * The error must be an instance of the given constructor.
-  	 */
-  /**
-  	 * Assert that the function throws [an error](https://www.npmjs.com/package/is-error). If so, returns the error value.
-  	 */
-  def throws[ThrownError /* <: Error */](fn: js.Function0[_], constructor: Constructor): ThrownError = js.native
-  def throws[ThrownError /* <: Error */](fn: js.Function0[_], constructor: Constructor, message: String): ThrownError = js.native
-  /**
-  	 * Assert that the function throws [an error](https://www.npmjs.com/package/is-error). If so, returns the error value.
-  	 * The error must have a message equal to `errorMessage`.
-  	 */
-  /**
-  	 * Assert that the function throws [an error](https://www.npmjs.com/package/is-error). If so, returns the error value.
-  	 */
-  def throws[ThrownError /* <: Error */](fn: js.Function0[_], errorMessage: String): ThrownError = js.native
-  def throws[ThrownError /* <: Error */](fn: js.Function0[_], errorMessage: String, message: String): ThrownError = js.native
-  def throws[ThrownError /* <: Error */](fn: js.Function0[_], expectations: Null, message: String): ThrownError = js.native
-  /**
-  	 * Assert that the function throws [an error](https://www.npmjs.com/package/is-error). If so, returns the error value.
   	 * The error must satisfy all expectations.
   	 */
   /**
   	 * Assert that the function throws [an error](https://www.npmjs.com/package/is-error). If so, returns the error value.
   	 */
+  def throws[ThrownError /* <: Error */](fn: js.Function0[_]): ThrownError = js.native
+  def throws[ThrownError /* <: Error */](fn: js.Function0[_], expectations: Null, message: String): ThrownError = js.native
   def throws[ThrownError /* <: Error */](fn: js.Function0[_], expectations: ThrowsExpectation): ThrownError = js.native
   def throws[ThrownError /* <: Error */](fn: js.Function0[_], expectations: ThrowsExpectation, message: String): ThrownError = js.native
-  /**
-  	 * Assert that the function throws [an error](https://www.npmjs.com/package/is-error). If so, returns the error value.
-  	 * The error must have a message that matches the regular expression.
-  	 */
-  /**
-  	 * Assert that the function throws [an error](https://www.npmjs.com/package/is-error). If so, returns the error value.
-  	 */
-  def throws[ThrownError /* <: Error */](fn: js.Function0[_], regex: RegExp): ThrownError = js.native
-  def throws[ThrownError /* <: Error */](fn: js.Function0[_], regex: RegExp, message: String): ThrownError = js.native
   /**
   	 * Assert that the async function throws [an error](https://www.npmjs.com/package/is-error). If so, returns the error
   	 * value. You must await the result.
@@ -222,26 +189,6 @@ trait Assertions extends js.Object {
   	 * with one. If so, returns a promise for the error value, which must be awaited.
   	 */
   def throwsAsync[ThrownError /* <: Error */](fn: js.Function0[js.Thenable[_]]): js.Promise[ThrownError] = js.native
-  /**
-  	 * Assert that the async function throws [an error](https://www.npmjs.com/package/is-error). If so, returns the error
-  	 * value. You must await the result. The error must be an instance of the given constructor.
-  	 */
-  /**
-  	 * Assert that the async function throws [an error](https://www.npmjs.com/package/is-error), or the promise rejects
-  	 * with one. If so, returns a promise for the error value, which must be awaited.
-  	 */
-  def throwsAsync[ThrownError /* <: Error */](fn: js.Function0[js.Thenable[_]], constructor: Constructor): js.Promise[ThrownError] = js.native
-  def throwsAsync[ThrownError /* <: Error */](fn: js.Function0[js.Thenable[_]], constructor: Constructor, message: String): js.Promise[ThrownError] = js.native
-  /**
-  	 * Assert that the async function throws [an error](https://www.npmjs.com/package/is-error). If so, returns the error
-  	 * value. You must await the result. The error must have a message equal to `errorMessage`.
-  	 */
-  /**
-  	 * Assert that the async function throws [an error](https://www.npmjs.com/package/is-error), or the promise rejects
-  	 * with one. If so, returns a promise for the error value, which must be awaited.
-  	 */
-  def throwsAsync[ThrownError /* <: Error */](fn: js.Function0[js.Thenable[_]], errorMessage: String): js.Promise[ThrownError] = js.native
-  def throwsAsync[ThrownError /* <: Error */](fn: js.Function0[js.Thenable[_]], errorMessage: String, message: String): js.Promise[ThrownError] = js.native
   def throwsAsync[ThrownError /* <: Error */](fn: js.Function0[js.Thenable[_]], expectations: Null, message: String): js.Promise[ThrownError] = js.native
   /**
   	 * Assert that the async function throws [an error](https://www.npmjs.com/package/is-error). If so, returns the error
@@ -254,16 +201,6 @@ trait Assertions extends js.Object {
   def throwsAsync[ThrownError /* <: Error */](fn: js.Function0[js.Thenable[_]], expectations: ThrowsExpectation): js.Promise[ThrownError] = js.native
   def throwsAsync[ThrownError /* <: Error */](fn: js.Function0[js.Thenable[_]], expectations: ThrowsExpectation, message: String): js.Promise[ThrownError] = js.native
   /**
-  	 * Assert that the async function throws [an error](https://www.npmjs.com/package/is-error). If so, returns the error
-  	 * value. You must await the result. The error must have a message that matches the regular expression.
-  	 */
-  /**
-  	 * Assert that the async function throws [an error](https://www.npmjs.com/package/is-error), or the promise rejects
-  	 * with one. If so, returns a promise for the error value, which must be awaited.
-  	 */
-  def throwsAsync[ThrownError /* <: Error */](fn: js.Function0[js.Thenable[_]], regex: RegExp): js.Promise[ThrownError] = js.native
-  def throwsAsync[ThrownError /* <: Error */](fn: js.Function0[js.Thenable[_]], regex: RegExp, message: String): js.Promise[ThrownError] = js.native
-  /**
   	 * Assert that the promise rejects with [an error](https://www.npmjs.com/package/is-error). If so, returns the
   	 * rejection reason. You must await the result.
   	 */
@@ -272,26 +209,6 @@ trait Assertions extends js.Object {
   	 * with one. If so, returns a promise for the error value, which must be awaited.
   	 */
   def throwsAsync[ThrownError /* <: Error */](promise: js.Thenable[_]): js.Promise[ThrownError] = js.native
-  /**
-  	 * Assert that the promise rejects with [an error](https://www.npmjs.com/package/is-error). If so, returns the
-  	 * rejection reason. You must await the result. The error must be an instance of the given constructor.
-  	 */
-  /**
-  	 * Assert that the async function throws [an error](https://www.npmjs.com/package/is-error), or the promise rejects
-  	 * with one. If so, returns a promise for the error value, which must be awaited.
-  	 */
-  def throwsAsync[ThrownError /* <: Error */](promise: js.Thenable[_], constructor: Constructor): js.Promise[ThrownError] = js.native
-  def throwsAsync[ThrownError /* <: Error */](promise: js.Thenable[_], constructor: Constructor, message: String): js.Promise[ThrownError] = js.native
-  /**
-  	 * Assert that the promise rejects with [an error](https://www.npmjs.com/package/is-error). If so, returns the
-  	 * rejection reason. You must await the result. The error must have a message equal to `errorMessage`.
-  	 */
-  /**
-  	 * Assert that the async function throws [an error](https://www.npmjs.com/package/is-error), or the promise rejects
-  	 * with one. If so, returns a promise for the error value, which must be awaited.
-  	 */
-  def throwsAsync[ThrownError /* <: Error */](promise: js.Thenable[_], errorMessage: String): js.Promise[ThrownError] = js.native
-  def throwsAsync[ThrownError /* <: Error */](promise: js.Thenable[_], errorMessage: String, message: String): js.Promise[ThrownError] = js.native
   def throwsAsync[ThrownError /* <: Error */](promise: js.Thenable[_], expectations: Null, message: String): js.Promise[ThrownError] = js.native
   /**
   	 * Assert that the promise rejects with [an error](https://www.npmjs.com/package/is-error). If so, returns the
@@ -303,16 +220,6 @@ trait Assertions extends js.Object {
   	 */
   def throwsAsync[ThrownError /* <: Error */](promise: js.Thenable[_], expectations: ThrowsExpectation): js.Promise[ThrownError] = js.native
   def throwsAsync[ThrownError /* <: Error */](promise: js.Thenable[_], expectations: ThrowsExpectation, message: String): js.Promise[ThrownError] = js.native
-  /**
-  	 * Assert that the promise rejects with [an error](https://www.npmjs.com/package/is-error). If so, returns the
-  	 * rejection reason. You must await the result. The error must have a message that matches the regular expression.
-  	 */
-  /**
-  	 * Assert that the async function throws [an error](https://www.npmjs.com/package/is-error), or the promise rejects
-  	 * with one. If so, returns a promise for the error value, which must be awaited.
-  	 */
-  def throwsAsync[ThrownError /* <: Error */](promise: js.Thenable[_], regex: RegExp): js.Promise[ThrownError] = js.native
-  def throwsAsync[ThrownError /* <: Error */](promise: js.Thenable[_], regex: RegExp, message: String): js.Promise[ThrownError] = js.native
   /** Assert that `actual` is strictly true. */
   /** Assert that `actual` is strictly true. */
   def `true`(actual: js.Any): Unit = js.native

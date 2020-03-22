@@ -4,7 +4,7 @@ import typings.react.mod.Component
 import typings.reactNative.mod.PanResponderGestureState
 import typings.reactNative.mod.PanResponderInstance
 import typings.reactNativeModal.AnonAnimationIn
-import typings.reactNativeModal.AnonAnimationInAnimationInTiming
+import typings.reactNativeModal.AnonAnimationInTiming
 import typings.reactNativeModal.AnonIsVisible
 import typings.reactNativeModal.reactNativeModalStrings.down
 import typings.reactNativeModal.reactNativeModalStrings.left
@@ -51,7 +51,7 @@ class ReactNativeModal protected ()
 @JSImport("react-native-modal/dist/modal", "ReactNativeModal")
 @js.native
 object ReactNativeModal extends js.Object {
-  var defaultProps: AnonAnimationInAnimationInTiming = js.native
+  var defaultProps: AnonAnimationInTiming = js.native
   var propTypes: AnonAnimationIn = js.native
   def getDerivedStateFromProps(nextProps: ModalProps, state: State): AnonIsVisible | Null = js.native
 }

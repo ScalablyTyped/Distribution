@@ -3,9 +3,9 @@ package typings.tensorflowTfjsCore.tensorMod
 import typings.std.Float32Array
 import typings.std.Int32Array
 import typings.std.Uint8Array
-import typings.tensorflowTfjsCore.AnonAlignCorners
 import typings.tensorflowTfjsCore.AnonFft
 import typings.tensorflowTfjsCore.AnonIndices
+import typings.tensorflowTfjsCore.AnonResizeBilinear
 import typings.tensorflowTfjsCore.distTypesMod.DataType
 import typings.tensorflowTfjsCore.distTypesMod.Rank
 import typings.tensorflowTfjsCore.distTypesMod.Rank.R2
@@ -39,7 +39,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait OpHandler extends js.Object {
-  var image: AnonAlignCorners = js.native
+  var image: AnonResizeBilinear = js.native
   var spectral: AnonFft = js.native
   def abs[T /* <: Tensor[Rank] */](x: T): T = js.native
   def acos[T /* <: Tensor[Rank] */](x: T): T = js.native

@@ -1,6 +1,6 @@
 package typings.wegameApi.wx
 
-import typings.wegameApi.AnonEncryptedDataIv
+import typings.wegameApi.AnonIv
 import typings.wegameApi.wx.types.CallbacksWithType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,6 +13,6 @@ object getWeRunData extends js.Object {
   /**
     * 获取用户过去三十天微信运动步数，需要先调用 wx.login 接口。需要用户授权 scope.werun。
     */
-  def apply(p: CallbacksWithType[AnonEncryptedDataIv]): Unit = js.native
+  def apply(p: CallbacksWithType[AnonIv]): Unit = js.native
 }
 

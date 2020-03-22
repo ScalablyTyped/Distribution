@@ -1,24 +1,23 @@
 package typings.reactIntl
 
 import typings.react.mod.ReactElement
-import typings.std.Intl.NumberFormatPart
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon0 extends js.Object {
+  var children: js.UndefOr[js.Function1[/* val */ String, ReactElement | Null]] = js.undefined
   var value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<(value : std.Parameters<std.Intl.NumberFormat['format']>[0], opts ? : react-intl.react-intl/lib/types.FormatNumberOptions): string>[0] */ js.Any
-  def children(`val`: js.Array[NumberFormatPart]): ReactElement | Null
 }
 
 object Anon0 {
   @scala.inline
   def apply(
-    children: js.Array[NumberFormatPart] => ReactElement | Null,
-    value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<(value : std.Parameters<std.Intl.NumberFormat['format']>[0], opts ? : react-intl.react-intl/lib/types.FormatNumberOptions): string>[0] */ js.Any
+    value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<(value : std.Parameters<std.Intl.NumberFormat['format']>[0], opts ? : react-intl.react-intl/lib/types.FormatNumberOptions): string>[0] */ js.Any,
+    children: /* val */ String => ReactElement | Null = null
   ): Anon0 = {
-    val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children), value = value.asInstanceOf[js.Any])
-  
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(js.Any.fromFunction1(children))
     __obj.asInstanceOf[Anon0]
   }
 }

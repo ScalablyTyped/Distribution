@@ -1,8 +1,8 @@
 package typings.openpgp.mod.key
 
 import typings.openpgp.AnonKeyid
-import typings.openpgp.AnonKeyidUserid
 import typings.openpgp.AnonSelfCertification
+import typings.openpgp.AnonUserid
 import typings.openpgp.mod.Infinity
 import typings.openpgp.mod.`type`.keyid.Keyid
 import typings.openpgp.mod.enums.keyStatus
@@ -251,7 +251,7 @@ class Key protected () extends js.Object {
     * @param keys array of keys to verify certificate signatures
     * @returns list of userid, signer's keyid and validity of signature
     */
-  def verifyAllUsers(keys: js.Array[_]): js.Promise[js.Array[AnonKeyidUserid]] = js.native
+  def verifyAllUsers(keys: js.Array[_]): js.Promise[js.Array[AnonUserid]] = js.native
   /**
     * Verify primary key. Checks for revocation signatures, expiration time
     * and valid self signature

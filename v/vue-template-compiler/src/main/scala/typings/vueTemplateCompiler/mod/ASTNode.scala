@@ -3,7 +3,7 @@ package typings.vueTemplateCompiler.mod
 import typings.std.Record
 import typings.vueTemplateCompiler.AnonCallback
 import typings.vueTemplateCompiler.AnonName
-import typings.vueTemplateCompiler.AnonNameValue
+import typings.vueTemplateCompiler.AnonValue
 import typings.vueTemplateCompiler.vueTemplateCompilerBooleans.`true`
 import typings.vueTemplateCompiler.vueTemplateCompilerNumbers.`1`
 import typings.vueTemplateCompiler.vueTemplateCompilerNumbers.`2`
@@ -56,7 +56,7 @@ object ASTNode {
     plain: js.UndefOr[Boolean] = js.undefined,
     pre: `true` = null,
     processed: `true` = null,
-    props: js.Array[AnonNameValue] = null,
+    props: js.Array[AnonValue] = null,
     ref: String = null,
     refInFor: js.UndefOr[Boolean] = js.undefined,
     scopedSlots: Record[String, typings.vueTemplateCompiler.mod.ASTElement] = null,

@@ -20,6 +20,10 @@ object mod extends js.Object {
   def await(v: js.Any): js.Any = js.native
   @JSName("__awaiter")
   def awaiter(thisArg: js.Any, _arguments: js.Any, P: js.Function, generator: js.Function): js.Any = js.native
+  @JSName("__classPrivateFieldGet")
+  def classPrivateFieldGet[T /* <: js.Object */, V](receiver: T, privateMap: AnonGet[T, V]): V = js.native
+  @JSName("__classPrivateFieldSet")
+  def classPrivateFieldSet[T /* <: js.Object */, V](receiver: T, privateMap: AnonHas[T, V], value: V): V = js.native
   @JSName("__decorate")
   def decorate(decorators: js.Array[js.Function], target: js.Any): js.Any = js.native
   @JSName("__decorate")

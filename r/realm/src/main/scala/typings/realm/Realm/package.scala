@@ -21,11 +21,6 @@ package object Realm {
   ]
   // object props type
   type ObjectPropsType = org.scalablytyped.runtime.StringDictionary[js.Any]
-  /**
-    * realm configuration used for overriding default configuration values.
-    * @see { @link https://realm.io/docs/javascript/latest/api/Realm.html#~Configuration }
-    */
-  type PartialConfiguration = typings.std.Partial[typings.realm.Realm.Configuration]
   // properties types
   type PropertiesTypes = org.scalablytyped.runtime.StringDictionary[typings.realm.Realm.PropertyType | typings.realm.Realm.ObjectSchemaProperty]
   /**

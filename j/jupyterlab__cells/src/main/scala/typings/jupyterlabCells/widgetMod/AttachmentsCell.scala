@@ -21,7 +21,7 @@ abstract class AttachmentsCell () extends Cell {
   var _attachFiles: js.Any = js.native
   var _evtDragOver: js.Any = js.native
   /**
-    * Handle the `'p-drop'` event for the widget.
+    * Handle the `'lm-drop'` event for the widget.
     */
   var _evtDrop: js.Any = js.native
   /**
@@ -36,7 +36,7 @@ abstract class AttachmentsCell () extends Cell {
     * The model used by the widget.
     */
   @JSName("model")
-  val model_AttachmentsCell: IAttachmentsCellModel = js.native
+  val model_FAttachmentsCell: IAttachmentsCellModel = js.native
   /**
     * Handle the DOM events for the widget.
     *

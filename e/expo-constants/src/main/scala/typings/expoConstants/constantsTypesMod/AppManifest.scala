@@ -1,10 +1,10 @@
 package typings.expoConstants.constantsTypesMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.expoConstants.AnonColor
 import typings.expoConstants.AnonDev
+import typings.expoConstants.AnonDictkey
 import typings.expoConstants.AnonIcon
-import typings.expoConstants.AnonKey
+import typings.expoConstants.AnonTool
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,14 +14,14 @@ trait AppManifest
   var bundleUrl: String
   var debuggerHost: js.UndefOr[String] = js.undefined
   var description: js.UndefOr[String] = js.undefined
-  var developer: js.UndefOr[AnonKey] = js.undefined
+  var developer: js.UndefOr[AnonTool] = js.undefined
   var entryPoint: js.UndefOr[String] = js.undefined
   var icon: js.UndefOr[String] = js.undefined
   var loading: js.UndefOr[AnonIcon] = js.undefined
   var logUrl: js.UndefOr[String] = js.undefined
   var mainModuleName: js.UndefOr[String] = js.undefined
   var name: js.UndefOr[String] = js.undefined
-  var notification: js.UndefOr[AnonColor] = js.undefined
+  var notification: js.UndefOr[AnonDictkey] = js.undefined
   var orientation: js.UndefOr[String] = js.undefined
   var packagerOpts: js.UndefOr[AnonDev] = js.undefined
   var primaryColor: js.UndefOr[String] = js.undefined
@@ -40,14 +40,14 @@ object AppManifest {
     StringDictionary: /* key */ StringDictionary[js.Any] = null,
     debuggerHost: String = null,
     description: String = null,
-    developer: AnonKey = null,
+    developer: AnonTool = null,
     entryPoint: String = null,
     icon: String = null,
     loading: AnonIcon = null,
     logUrl: String = null,
     mainModuleName: String = null,
     name: String = null,
-    notification: AnonColor = null,
+    notification: AnonDictkey = null,
     orientation: String = null,
     packagerOpts: AnonDev = null,
     primaryColor: String = null,

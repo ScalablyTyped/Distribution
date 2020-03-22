@@ -36,18 +36,6 @@ trait Plugin extends NodeCommon[TransformNodeInfo] {
     * is not needed, set needsCache to false when calling broccoli-plugin constructor.
     */
   var cachePath: js.UndefOr[String] = js.native
-  val input: FS = js.native
-  /**
-    * An array of paths on disk corresponding to each node in inputNodes.
-    * Your plugin will read files from these paths.
-    */
-  val inputPaths: js.Array[String] = js.native
-  val output: FSOutput = js.native
-  /**
-    * The path on disk corresponding to this plugin instance (this node).
-    * Your plugin will write files to this path. This directory is emptied by Broccoli before each build, unless the persistentOutput options is true.
-    */
-  val outputPath: String = js.native
   var rebuild: js.UndefOr[js.Any] = js.native
   def __broccoliGetInfo__(): TransformNodeInfo = js.native
   /**
@@ -78,6 +66,18 @@ trait Plugin extends NodeCommon[TransformNodeInfo] {
     * @returns [[CallbackObject]]
     */
   def getCallbackObject(): CallbackObject = js.native
+  def input(): FS = js.native
+  /**
+    * An array of paths on disk corresponding to each node in inputNodes.
+    * Your plugin will read files from these paths.
+    */
+  def inputPaths(): js.Array[String] = js.native
+  def output(): FSOutput = js.native
+  /**
+    * The path on disk corresponding to this plugin instance (this node).
+    * Your plugin will write files to this path. This directory is emptied by Broccoli before each build, unless the persistentOutput options is true.
+    */
+  def outputPath(): String = js.native
   def read(readTree: MapSeriesIterator[InputNode]): js.UndefOr[js.Promise[String]] = js.native
 }
 

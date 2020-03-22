@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait TypeoffileSystem extends js.Object {
   /** @enum */
-  val ChildChangeType: AnonCHANGEDCREATED = js.native
+  val ChildChangeType: AnonCREATED = js.native
   /**
     * **openFile**
     *  - Prompts the user to open an existing file and returns a FileEntry on success.

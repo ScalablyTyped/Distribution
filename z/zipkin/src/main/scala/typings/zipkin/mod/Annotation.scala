@@ -2,7 +2,7 @@ package typings.zipkin.mod
 
 import typings.zipkin.AnonHost
 import typings.zipkin.AnonHostPort
-import typings.zipkin.AnonHostPortInetAddress
+import typings.zipkin.AnonPort
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +21,7 @@ object Annotation extends js.Object {
   
   @js.native
   class ClientAddr protected () extends IAnnotation {
-    def this(args: AnonHostPort) = this()
+    def this(args: AnonPort) = this()
     /* CompleteClass */
     override val annotationType: String = js.native
   }
@@ -52,7 +52,7 @@ object Annotation extends js.Object {
   
   @js.native
   class LocalAddr () extends IAnnotation {
-    def this(args: AnonHostPortInetAddress) = this()
+    def this(args: AnonHostPort) = this()
     /* CompleteClass */
     override val annotationType: String = js.native
     var host: InetAddress = js.native

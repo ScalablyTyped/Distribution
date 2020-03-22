@@ -9,7 +9,7 @@ import typings.jupyterlabMarkdownviewer.jupyterlabMarkdownviewerStrings.lineWidt
 import typings.jupyterlabMarkdownviewer.jupyterlabMarkdownviewerStrings.renderTimeout
 import typings.jupyterlabMarkdownviewer.widgetMod.MarkdownViewer.IOptions
 import typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.IRenderer
-import typings.phosphorWidgets.mod.Widget
+import typings.luminoWidgets.mod.Widget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,11 +32,11 @@ class MarkdownViewer_ protected () extends Widget {
   var _render: js.Any = js.native
   var _renderRequested: js.Any = js.native
   val context: Context = js.native
+  val renderer: IRenderer = js.native
   /**
     * A promise that resolves when the markdown viewer is ready.
     */
-  val ready: js.Promise[Unit] = js.native
-  val renderer: IRenderer = js.native
+  def ready(): js.Promise[Unit] = js.native
   /**
     * Set URI fragment identifier.
     */

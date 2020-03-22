@@ -1,7 +1,7 @@
 
 # Scala.js typings for nuid
 
-Typings are for version 1.1.0
+Typings are for version 1.1.2
 
 ## Library description:
 NUID - A highly performant unique identifier generator.

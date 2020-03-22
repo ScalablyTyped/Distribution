@@ -5,15 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonHorizontal extends js.Object {
-  var horizontal: Double
-  var vertical: Double
+  var horizontal: js.UndefOr[Double] = js.undefined
+  var vertical: js.UndefOr[Double] = js.undefined
 }
 
 object AnonHorizontal {
   @scala.inline
-  def apply(horizontal: Double, vertical: Double): AnonHorizontal = {
-    val __obj = js.Dynamic.literal(horizontal = horizontal.asInstanceOf[js.Any], vertical = vertical.asInstanceOf[js.Any])
-  
+  def apply(horizontal: Int | Double = null, vertical: Int | Double = null): AnonHorizontal = {
+    val __obj = js.Dynamic.literal()
+    if (horizontal != null) __obj.updateDynamic("horizontal")(horizontal.asInstanceOf[js.Any])
+    if (vertical != null) __obj.updateDynamic("vertical")(vertical.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnonHorizontal]
   }
 }

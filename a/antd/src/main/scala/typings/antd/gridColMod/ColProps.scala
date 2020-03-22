@@ -72,6 +72,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ColProps extends HTMLAttributes[HTMLDivElement] {
+  var flex: js.UndefOr[FlexType] = js.undefined
   var lg: js.UndefOr[ColSpanType | ColSize] = js.undefined
   var md: js.UndefOr[ColSpanType | ColSize] = js.undefined
   var offset: js.UndefOr[ColSpanType] = js.undefined
@@ -153,6 +154,7 @@ object ColProps {
     defaultValue: String | Double | js.Array[String] = null,
     dir: String = null,
     draggable: js.UndefOr[Boolean] = js.undefined,
+    flex: FlexType = null,
     hidden: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
     inlist: js.Any = null,
@@ -340,6 +342,7 @@ object ColProps {
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
     if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
+    if (flex != null) __obj.updateDynamic("flex")(flex.asInstanceOf[js.Any])
     if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (inlist != null) __obj.updateDynamic("inlist")(inlist.asInstanceOf[js.Any])

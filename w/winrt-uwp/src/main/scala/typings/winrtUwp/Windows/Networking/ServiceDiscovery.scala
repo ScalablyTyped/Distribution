@@ -3,7 +3,7 @@ package typings.winrtUwp.Windows.Networking
 import org.scalablytyped.runtime.TopLevel
 import typings.std.Array
 import typings.winrtUwp.AnonIndex
-import typings.winrtUwp.AnonItemsReturnValueDnssdServiceInstance
+import typings.winrtUwp.AnonItemsDnssdServiceInstance
 import typings.winrtUwp.Windows.Foundation.Collections.IIterator
 import typings.winrtUwp.Windows.Foundation.Collections.IMap
 import typings.winrtUwp.Windows.Foundation.EventHandler
@@ -111,7 +111,7 @@ object ServiceDiscovery extends js.Object {
         * Gets multiple DnssdServiceInstance objects from a DNS-SD service instance collection.
         * @param startIndex Index of the first collection item to be retrieved.
         */
-      def getMany(startIndex: Double): AnonItemsReturnValueDnssdServiceInstance = js.native
+      def getMany(startIndex: Double): AnonItemsDnssdServiceInstance = js.native
       def indexOf(value: DnssdServiceInstance, extra: js.Any*): AnonIndex = js.native
       /* hack */
       @JSName("indexOf")

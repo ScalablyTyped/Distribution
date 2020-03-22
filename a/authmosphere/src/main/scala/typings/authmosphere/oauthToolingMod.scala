@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.authmosphere.getTokenInfoMod.GetTokenInfo
 import typings.authmosphere.loggerMod.Logger
 import typings.authmosphere.oauthconfigMod.OAuthConfig
-import typings.authmosphere.tokenMod.Token
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -52,7 +51,7 @@ object oauthToolingMod extends js.Object {
     * @param logger - optional logger
     * @returns {Promise<T>}
     */
-  def getAccessToken(options: OAuthConfig): js.Promise[Token[js.Object]] = js.native
-  def getAccessToken(options: OAuthConfig, logger: Logger): js.Promise[Token[js.Object]] = js.native
+  def getAccessToken(options: OAuthConfig): js.Promise[Token] = js.native
+  def getAccessToken(options: OAuthConfig, logger: Logger): js.Promise[Token] = js.native
 }
 

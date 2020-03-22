@@ -1,6 +1,6 @@
 package typings.mongoose.mod
 
-import typings.mongoose.AnonCatch
+import typings.mongoose.ConnectionthenPromiseConnCatch
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object createConnection extends js.Object {
   def apply(): Connection_ = js.native
-  def apply(uri: String): Connection_ with AnonCatch = js.native
-  def apply(uri: String, options: ConnectionOptions): Connection_ with AnonCatch = js.native
+  def apply(uri: String): ConnectionthenPromiseConnCatch = js.native
+  def apply(uri: String, options: ConnectionOptions): ConnectionthenPromiseConnCatch = js.native
 }
 

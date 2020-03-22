@@ -20,7 +20,7 @@ object lineLoopMod extends js.Object {
     def this(geometry: BufferGeometry, material: Material) = this()
     def this(geometry: Geometry, material: js.Array[Material]) = this()
     def this(geometry: Geometry, material: Material) = this()
-    var isLineLoop: `true` = js.native
+    val isLineLoop: `true` = js.native
     @JSName("type")
     var type_LineLoop: typings.three.threeStrings.LineLoop = js.native
   }

@@ -2,10 +2,9 @@ package typings.reactAriaModal.mod
 
 import typings.react.mod.Component
 import typings.react.mod.ReactType
-import typings.reactAriaModal.reactAriaModalStrings.titleId
-import typings.reactAriaModal.reactAriaModalStrings.titleText
+import typings.reactAriaModal.PickAriaModalPropstitleId
+import typings.reactAriaModal.PickAriaModalPropstitleTe
 import typings.std.HTMLElement
-import typings.std.Pick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +13,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class default ()
   extends Component[
-      AriaModalProps with (RequiredAriaTypes[Pick[AriaModalProps, titleId], Pick[AriaModalProps, titleText]]), 
+      AriaModalProps with (RequiredAriaTypes[PickAriaModalPropstitleId, PickAriaModalPropstitleTe]), 
       js.Object, 
       js.Any
     ]

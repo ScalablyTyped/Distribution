@@ -54,6 +54,9 @@ object TypeFormatFlags extends js.Object {
   sealed trait UseFullyQualifiedType extends TypeFormatFlags
   
   @js.native
+  sealed trait UseSingleQuotesForStringLiteralType extends TypeFormatFlags
+  
+  @js.native
   sealed trait UseStructuralFallback extends TypeFormatFlags
   
   @js.native
@@ -100,7 +103,7 @@ object TypeFormatFlags extends js.Object {
   /* 1 */ @js.native
   object NoTruncation extends TopLevel[NoTruncation with Double]
   
-  /* 9469291 */ @js.native
+  /* 277904747 */ @js.native
   object NodeBuilderFlagsMask extends TopLevel[NodeBuilderFlagsMask with Double]
   
   /* 0 */ @js.native
@@ -117,6 +120,9 @@ object TypeFormatFlags extends js.Object {
   
   /* 64 */ @js.native
   object UseFullyQualifiedType extends TopLevel[UseFullyQualifiedType with Double]
+  
+  /* 268435456 */ @js.native
+  object UseSingleQuotesForStringLiteralType extends TopLevel[UseSingleQuotesForStringLiteralType with Double]
   
   /* 8 */ @js.native
   object UseStructuralFallback extends TopLevel[UseStructuralFallback with Double]

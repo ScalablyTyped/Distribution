@@ -5,8 +5,8 @@ import typings.jupyterlabApplication.layoutrestorerMod.ILayoutRestorer
 import typings.jupyterlabApplication.mod.JupyterFrontEnd
 import typings.jupyterlabApputils.commandpaletteMod.ICommandPalette
 import typings.jupyterlabApputils.commandpaletteMod.IPaletteItem
-import typings.phosphorDisposable.mod.IDisposable
-import typings.phosphorWidgets.mod.CommandPalette
+import typings.luminoDisposable.mod.IDisposable
+import typings.luminoWidgets.mod.CommandPalette
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,6 +40,13 @@ object paletteMod extends js.Object {
       */
     /* CompleteClass */
     override def addItem(options: IPaletteItem): IDisposable = js.native
+    @JSName("placeholder")
+    def placeholder_MPalette(): String = js.native
+    /**
+      * The placeholder text of the command palette's search input.
+      */
+    @JSName("placeholder")
+    def placeholder_MPalette(placeholder: String): js.Any = js.native
   }
   
   @js.native

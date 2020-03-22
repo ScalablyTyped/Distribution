@@ -1,6 +1,6 @@
 package typings.rotJs.fovFovMod
 
-import typings.std.Partial
+import typings.rotJs.PartialOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,6 +15,6 @@ abstract class default protected () extends FOV {
     * @param {int} [options.topology=8] 4/6/8
     */
   def this(lightPassesCallback: LightPassesCallback) = this()
-  def this(lightPassesCallback: LightPassesCallback, options: Partial[Options]) = this()
+  def this(lightPassesCallback: LightPassesCallback, options: PartialOptions) = this()
 }
 

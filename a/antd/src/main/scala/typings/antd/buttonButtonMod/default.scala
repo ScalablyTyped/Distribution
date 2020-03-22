@@ -1,8 +1,9 @@
 package typings.antd.buttonButtonMod
 
-import typings.antd.AnonArgs
 import typings.antd.AnonBlock
 import typings.antd.buttonGroupMod.ButtonGroupProps
+import typings.antd.contextMod.ConfigConsumerProps
+import typings.react.mod.Context
 import typings.react.mod.SFC
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,7 +21,7 @@ class default protected () extends Button {
 object default extends js.Object {
   var Group: SFC[ButtonGroupProps] = js.native
   var __ANT_BUTTON: Boolean = js.native
+  var contextType: Context[ConfigConsumerProps] = js.native
   var defaultProps: AnonBlock = js.native
-  var propTypes: AnonArgs = js.native
 }
 

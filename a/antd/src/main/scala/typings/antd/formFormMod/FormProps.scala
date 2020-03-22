@@ -1,92 +1,303 @@
 package typings.antd.formFormMod
 
-import typings.antd.formItemMod.FormLabelAlign
+import typings.antd.antdBooleans.`false`
+import typings.antd.antdStrings.`additions text`
+import typings.antd.antdStrings.`inline`
+import typings.antd.antdStrings.additions
+import typings.antd.antdStrings.all
+import typings.antd.antdStrings.ascending
+import typings.antd.antdStrings.assertive
+import typings.antd.antdStrings.both
+import typings.antd.antdStrings.copy
+import typings.antd.antdStrings.date
+import typings.antd.antdStrings.decimal
+import typings.antd.antdStrings.descending
+import typings.antd.antdStrings.dialog
+import typings.antd.antdStrings.email
+import typings.antd.antdStrings.execute
+import typings.antd.antdStrings.grammar
+import typings.antd.antdStrings.grid
+import typings.antd.antdStrings.horizontal
+import typings.antd.antdStrings.inherit
+import typings.antd.antdStrings.link
+import typings.antd.antdStrings.list
+import typings.antd.antdStrings.listbox
+import typings.antd.antdStrings.location
+import typings.antd.antdStrings.menu
+import typings.antd.antdStrings.mixed
+import typings.antd.antdStrings.move
+import typings.antd.antdStrings.no
+import typings.antd.antdStrings.none
+import typings.antd.antdStrings.numeric
+import typings.antd.antdStrings.off
+import typings.antd.antdStrings.on
+import typings.antd.antdStrings.other
+import typings.antd.antdStrings.page
+import typings.antd.antdStrings.polite
+import typings.antd.antdStrings.popup
+import typings.antd.antdStrings.removals
+import typings.antd.antdStrings.search
+import typings.antd.antdStrings.spelling
+import typings.antd.antdStrings.step
+import typings.antd.antdStrings.tel
+import typings.antd.antdStrings.text
+import typings.antd.antdStrings.time
+import typings.antd.antdStrings.tree
+import typings.antd.antdStrings.url
+import typings.antd.antdStrings.vertical
+import typings.antd.antdStrings.yes
+import typings.antd.formUtilMod.FormInstance
 import typings.antd.gridColMod.ColProps
+import typings.antd.interfaceMod.FormLabelAlign
+import typings.antd.sizeContextMod.SizeType
+import typings.rcFieldForm.formMod.RenderProps
+import typings.rcFieldForm.interfaceMod.FieldData
+import typings.rcFieldForm.interfaceMod.Store
+import typings.rcFieldForm.interfaceMod.ValidateErrorEntity
+import typings.rcFieldForm.interfaceMod.ValidateMessages
 import typings.react.AnonHtml
 import typings.react.mod.AnimationEvent
+import typings.react.mod.AnimationEventHandler
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
 import typings.react.mod.ClipboardEvent
+import typings.react.mod.ClipboardEventHandler
+import typings.react.mod.ComponentClass
+import typings.react.mod.ComponentState
 import typings.react.mod.CompositionEvent
+import typings.react.mod.CompositionEventHandler
 import typings.react.mod.DragEvent
+import typings.react.mod.DragEventHandler
+import typings.react.mod.FC
 import typings.react.mod.FocusEvent
+import typings.react.mod.FocusEventHandler
 import typings.react.mod.FormEvent
-import typings.react.mod.FormHTMLAttributes
+import typings.react.mod.FormEventHandler
 import typings.react.mod.KeyboardEvent
+import typings.react.mod.KeyboardEventHandler
 import typings.react.mod.MouseEvent
+import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.PointerEvent
+import typings.react.mod.PointerEventHandler
+import typings.react.mod.ReactEventHandler
 import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
 import typings.react.mod.TouchEvent
+import typings.react.mod.TouchEventHandler
 import typings.react.mod.TransitionEvent
+import typings.react.mod.TransitionEventHandler
 import typings.react.mod.UIEvent
+import typings.react.mod.UIEventHandler
 import typings.react.mod.WheelEvent
-import typings.react.reactStrings.`additions text`
-import typings.react.reactStrings.`inline`
-import typings.react.reactStrings.additions
-import typings.react.reactStrings.all
-import typings.react.reactStrings.ascending
-import typings.react.reactStrings.assertive
-import typings.react.reactStrings.both
-import typings.react.reactStrings.copy
-import typings.react.reactStrings.date
-import typings.react.reactStrings.decimal
-import typings.react.reactStrings.descending
-import typings.react.reactStrings.dialog
-import typings.react.reactStrings.email
-import typings.react.reactStrings.execute
-import typings.react.reactStrings.grammar
-import typings.react.reactStrings.grid
-import typings.react.reactStrings.horizontal
-import typings.react.reactStrings.inherit
-import typings.react.reactStrings.link
-import typings.react.reactStrings.list
-import typings.react.reactStrings.listbox
-import typings.react.reactStrings.location
-import typings.react.reactStrings.menu
-import typings.react.reactStrings.mixed
-import typings.react.reactStrings.move
-import typings.react.reactStrings.no
-import typings.react.reactStrings.none
-import typings.react.reactStrings.numeric
-import typings.react.reactStrings.off
-import typings.react.reactStrings.on
-import typings.react.reactStrings.other
-import typings.react.reactStrings.page
-import typings.react.reactStrings.polite
-import typings.react.reactStrings.popup
-import typings.react.reactStrings.removals
-import typings.react.reactStrings.search
-import typings.react.reactStrings.spelling
-import typings.react.reactStrings.step
-import typings.react.reactStrings.tel
-import typings.react.reactStrings.text
-import typings.react.reactStrings.time
-import typings.react.reactStrings.tree
-import typings.react.reactStrings.url
-import typings.react.reactStrings.vertical
-import typings.react.reactStrings.yes
+import typings.react.mod.WheelEventHandler
 import typings.std.Event_
 import typings.std.HTMLFormElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait FormProps extends FormHTMLAttributes[HTMLFormElement] {
-  /**
-    * @since 3.15.0
-    */
+/* Inlined parent std.Omit<rc-field-form.rc-field-form/lib/Form.FormProps, 'form'> */
+trait FormProps extends js.Object {
+  var about: js.UndefOr[String] = js.undefined
+  var acceptCharset: js.UndefOr[String] = js.undefined
+  var accessKey: js.UndefOr[String] = js.undefined
+  var action: js.UndefOr[String] = js.undefined
+  var `aria-activedescendant`: js.UndefOr[String] = js.undefined
+  var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
+  var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
+  var `aria-busy`: js.UndefOr[Boolean] = js.undefined
+  var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
+  var `aria-colcount`: js.UndefOr[Double] = js.undefined
+  var `aria-colindex`: js.UndefOr[Double] = js.undefined
+  var `aria-colspan`: js.UndefOr[Double] = js.undefined
+  var `aria-controls`: js.UndefOr[String] = js.undefined
+  var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.undefined
+  var `aria-describedby`: js.UndefOr[String] = js.undefined
+  var `aria-details`: js.UndefOr[String] = js.undefined
+  var `aria-disabled`: js.UndefOr[Boolean] = js.undefined
+  var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
+  var `aria-errormessage`: js.UndefOr[String] = js.undefined
+  var `aria-expanded`: js.UndefOr[Boolean] = js.undefined
+  var `aria-flowto`: js.UndefOr[String] = js.undefined
+  var `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
+  var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
+  var `aria-hidden`: js.UndefOr[Boolean] = js.undefined
+  var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
+  var `aria-keyshortcuts`: js.UndefOr[String] = js.undefined
+  var `aria-label`: js.UndefOr[String] = js.undefined
+  var `aria-labelledby`: js.UndefOr[String] = js.undefined
+  var `aria-level`: js.UndefOr[Double] = js.undefined
+  var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
+  var `aria-modal`: js.UndefOr[Boolean] = js.undefined
+  var `aria-multiline`: js.UndefOr[Boolean] = js.undefined
+  var `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined
+  var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
+  var `aria-owns`: js.UndefOr[String] = js.undefined
+  var `aria-placeholder`: js.UndefOr[String] = js.undefined
+  var `aria-posinset`: js.UndefOr[Double] = js.undefined
+  var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
+  var `aria-readonly`: js.UndefOr[Boolean] = js.undefined
+  var `aria-relevant`: js.UndefOr[additions | (`additions text`) | all | removals | text] = js.undefined
+  var `aria-required`: js.UndefOr[Boolean] = js.undefined
+  var `aria-roledescription`: js.UndefOr[String] = js.undefined
+  var `aria-rowcount`: js.UndefOr[Double] = js.undefined
+  var `aria-rowindex`: js.UndefOr[Double] = js.undefined
+  var `aria-rowspan`: js.UndefOr[Double] = js.undefined
+  var `aria-selected`: js.UndefOr[Boolean] = js.undefined
+  var `aria-setsize`: js.UndefOr[Double] = js.undefined
+  var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.undefined
+  var `aria-valuemax`: js.UndefOr[Double] = js.undefined
+  var `aria-valuemin`: js.UndefOr[Double] = js.undefined
+  var `aria-valuenow`: js.UndefOr[Double] = js.undefined
+  var `aria-valuetext`: js.UndefOr[String] = js.undefined
+  var autoCapitalize: js.UndefOr[String] = js.undefined
+  var autoComplete: js.UndefOr[String] = js.undefined
+  var autoCorrect: js.UndefOr[String] = js.undefined
+  var autoSave: js.UndefOr[String] = js.undefined
+  var children: js.UndefOr[RenderProps | ReactNode] = js.undefined
+  var className: js.UndefOr[String] = js.undefined
   var colon: js.UndefOr[Boolean] = js.undefined
-  var form: js.UndefOr[WrappedFormUtils[_]] = js.undefined
+  var color: js.UndefOr[String] = js.undefined
+  var component: js.UndefOr[`false` | String | FC[_] | (ComponentClass[_, ComponentState])] = js.undefined
+  var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
+  var contextMenu: js.UndefOr[String] = js.undefined
+  var dangerouslySetInnerHTML: js.UndefOr[AnonHtml] = js.undefined
+  var datatype: js.UndefOr[String] = js.undefined
+  var defaultChecked: js.UndefOr[Boolean] = js.undefined
+  var defaultValue: js.UndefOr[String | Double | js.Array[String]] = js.undefined
+  var dir: js.UndefOr[String] = js.undefined
+  var draggable: js.UndefOr[Booleanish] = js.undefined
+  var encType: js.UndefOr[String] = js.undefined
+  var fields: js.UndefOr[js.Array[FieldData]] = js.undefined
+  var form: js.UndefOr[FormInstance] = js.undefined
+  var hidden: js.UndefOr[Boolean] = js.undefined
   var hideRequiredMark: js.UndefOr[Boolean] = js.undefined
+  var id: js.UndefOr[String] = js.undefined
+  var initialValues: js.UndefOr[Store] = js.undefined
+  var inlist: js.UndefOr[js.Any] = js.undefined
+  var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
+  var is: js.UndefOr[String] = js.undefined
+  var itemID: js.UndefOr[String] = js.undefined
+  var itemProp: js.UndefOr[String] = js.undefined
+  var itemRef: js.UndefOr[String] = js.undefined
+  var itemScope: js.UndefOr[Boolean] = js.undefined
+  var itemType: js.UndefOr[String] = js.undefined
   var labelAlign: js.UndefOr[FormLabelAlign] = js.undefined
   var labelCol: js.UndefOr[ColProps] = js.undefined
+  var lang: js.UndefOr[String] = js.undefined
   var layout: js.UndefOr[FormLayout] = js.undefined
+  var method: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.undefined
+  var noValidate: js.UndefOr[Boolean] = js.undefined
+  var onAbort: js.UndefOr[ReactEventHandler[HTMLFormElement]] = js.undefined
+  var onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLFormElement]] = js.undefined
+  var onAnimationIteration: js.UndefOr[AnimationEventHandler[HTMLFormElement]] = js.undefined
+  var onAnimationStart: js.UndefOr[AnimationEventHandler[HTMLFormElement]] = js.undefined
+  var onAuxClick: js.UndefOr[MouseEventHandler[HTMLFormElement]] = js.undefined
+  var onBeforeInput: js.UndefOr[FormEventHandler[HTMLFormElement]] = js.undefined
+  var onBlur: js.UndefOr[FocusEventHandler[HTMLFormElement]] = js.undefined
+  var onCanPlay: js.UndefOr[ReactEventHandler[HTMLFormElement]] = js.undefined
+  var onCanPlayThrough: js.UndefOr[ReactEventHandler[HTMLFormElement]] = js.undefined
+  var onChange: js.UndefOr[FormEventHandler[HTMLFormElement]] = js.undefined
+  var onClick: js.UndefOr[MouseEventHandler[HTMLFormElement]] = js.undefined
+  var onCompositionEnd: js.UndefOr[CompositionEventHandler[HTMLFormElement]] = js.undefined
+  var onCompositionStart: js.UndefOr[CompositionEventHandler[HTMLFormElement]] = js.undefined
+  var onCompositionUpdate: js.UndefOr[CompositionEventHandler[HTMLFormElement]] = js.undefined
+  var onContextMenu: js.UndefOr[MouseEventHandler[HTMLFormElement]] = js.undefined
+  var onCopy: js.UndefOr[ClipboardEventHandler[HTMLFormElement]] = js.undefined
+  var onCut: js.UndefOr[ClipboardEventHandler[HTMLFormElement]] = js.undefined
+  var onDoubleClick: js.UndefOr[MouseEventHandler[HTMLFormElement]] = js.undefined
+  var onDrag: js.UndefOr[DragEventHandler[HTMLFormElement]] = js.undefined
+  var onDragEnd: js.UndefOr[DragEventHandler[HTMLFormElement]] = js.undefined
+  var onDragEnter: js.UndefOr[DragEventHandler[HTMLFormElement]] = js.undefined
+  var onDragExit: js.UndefOr[DragEventHandler[HTMLFormElement]] = js.undefined
+  var onDragLeave: js.UndefOr[DragEventHandler[HTMLFormElement]] = js.undefined
+  var onDragOver: js.UndefOr[DragEventHandler[HTMLFormElement]] = js.undefined
+  var onDragStart: js.UndefOr[DragEventHandler[HTMLFormElement]] = js.undefined
+  var onDrop: js.UndefOr[DragEventHandler[HTMLFormElement]] = js.undefined
+  var onDurationChange: js.UndefOr[ReactEventHandler[HTMLFormElement]] = js.undefined
+  var onEmptied: js.UndefOr[ReactEventHandler[HTMLFormElement]] = js.undefined
+  var onEncrypted: js.UndefOr[ReactEventHandler[HTMLFormElement]] = js.undefined
+  var onEnded: js.UndefOr[ReactEventHandler[HTMLFormElement]] = js.undefined
+  var onError: js.UndefOr[ReactEventHandler[HTMLFormElement]] = js.undefined
+  var onFieldsChange: js.UndefOr[
+    js.Function2[/* changedFields */ js.Array[FieldData], /* allFields */ js.Array[FieldData], Unit]
+  ] = js.undefined
+  var onFinish: js.UndefOr[js.Function1[/* values */ Store, Unit]] = js.undefined
+  var onFinishFailed: js.UndefOr[js.Function1[/* errorInfo */ ValidateErrorEntity, Unit]] = js.undefined
+  var onFocus: js.UndefOr[FocusEventHandler[HTMLFormElement]] = js.undefined
+  var onInput: js.UndefOr[FormEventHandler[HTMLFormElement]] = js.undefined
+  var onInvalid: js.UndefOr[FormEventHandler[HTMLFormElement]] = js.undefined
+  var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLFormElement]] = js.undefined
+  var onKeyPress: js.UndefOr[KeyboardEventHandler[HTMLFormElement]] = js.undefined
+  var onKeyUp: js.UndefOr[KeyboardEventHandler[HTMLFormElement]] = js.undefined
+  var onLoad: js.UndefOr[ReactEventHandler[HTMLFormElement]] = js.undefined
+  var onLoadStart: js.UndefOr[ReactEventHandler[HTMLFormElement]] = js.undefined
+  var onLoadedData: js.UndefOr[ReactEventHandler[HTMLFormElement]] = js.undefined
+  var onLoadedMetadata: js.UndefOr[ReactEventHandler[HTMLFormElement]] = js.undefined
+  var onMouseDown: js.UndefOr[MouseEventHandler[HTMLFormElement]] = js.undefined
+  var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLFormElement]] = js.undefined
+  var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLFormElement]] = js.undefined
+  var onMouseMove: js.UndefOr[MouseEventHandler[HTMLFormElement]] = js.undefined
+  var onMouseOut: js.UndefOr[MouseEventHandler[HTMLFormElement]] = js.undefined
+  var onMouseOver: js.UndefOr[MouseEventHandler[HTMLFormElement]] = js.undefined
+  var onMouseUp: js.UndefOr[MouseEventHandler[HTMLFormElement]] = js.undefined
+  var onPaste: js.UndefOr[ClipboardEventHandler[HTMLFormElement]] = js.undefined
+  var onPause: js.UndefOr[ReactEventHandler[HTMLFormElement]] = js.undefined
+  var onPlay: js.UndefOr[ReactEventHandler[HTMLFormElement]] = js.undefined
+  var onPlaying: js.UndefOr[ReactEventHandler[HTMLFormElement]] = js.undefined
+  var onPointerCancel: js.UndefOr[PointerEventHandler[HTMLFormElement]] = js.undefined
+  var onPointerDown: js.UndefOr[PointerEventHandler[HTMLFormElement]] = js.undefined
+  var onPointerEnter: js.UndefOr[PointerEventHandler[HTMLFormElement]] = js.undefined
+  var onPointerLeave: js.UndefOr[PointerEventHandler[HTMLFormElement]] = js.undefined
+  var onPointerMove: js.UndefOr[PointerEventHandler[HTMLFormElement]] = js.undefined
+  var onPointerOut: js.UndefOr[PointerEventHandler[HTMLFormElement]] = js.undefined
+  var onPointerOver: js.UndefOr[PointerEventHandler[HTMLFormElement]] = js.undefined
+  var onPointerUp: js.UndefOr[PointerEventHandler[HTMLFormElement]] = js.undefined
+  var onProgress: js.UndefOr[ReactEventHandler[HTMLFormElement]] = js.undefined
+  var onRateChange: js.UndefOr[ReactEventHandler[HTMLFormElement]] = js.undefined
+  var onReset: js.UndefOr[FormEventHandler[HTMLFormElement]] = js.undefined
+  var onScroll: js.UndefOr[UIEventHandler[HTMLFormElement]] = js.undefined
+  var onSeeked: js.UndefOr[ReactEventHandler[HTMLFormElement]] = js.undefined
+  var onSeeking: js.UndefOr[ReactEventHandler[HTMLFormElement]] = js.undefined
+  var onSelect: js.UndefOr[ReactEventHandler[HTMLFormElement]] = js.undefined
+  var onStalled: js.UndefOr[ReactEventHandler[HTMLFormElement]] = js.undefined
+  var onSuspend: js.UndefOr[ReactEventHandler[HTMLFormElement]] = js.undefined
+  var onTimeUpdate: js.UndefOr[ReactEventHandler[HTMLFormElement]] = js.undefined
+  var onTouchCancel: js.UndefOr[TouchEventHandler[HTMLFormElement]] = js.undefined
+  var onTouchEnd: js.UndefOr[TouchEventHandler[HTMLFormElement]] = js.undefined
+  var onTouchMove: js.UndefOr[TouchEventHandler[HTMLFormElement]] = js.undefined
+  var onTouchStart: js.UndefOr[TouchEventHandler[HTMLFormElement]] = js.undefined
+  var onTransitionEnd: js.UndefOr[TransitionEventHandler[HTMLFormElement]] = js.undefined
+  var onValuesChange: js.UndefOr[js.Function2[/* changedValues */ Store, /* values */ Store, Unit]] = js.undefined
+  var onVolumeChange: js.UndefOr[ReactEventHandler[HTMLFormElement]] = js.undefined
+  var onWaiting: js.UndefOr[ReactEventHandler[HTMLFormElement]] = js.undefined
+  var onWheel: js.UndefOr[WheelEventHandler[HTMLFormElement]] = js.undefined
+  var placeholder: js.UndefOr[String] = js.undefined
+  var prefix: js.UndefOr[String] = js.undefined
   var prefixCls: js.UndefOr[String] = js.undefined
-  /**
-    * @since 3.14.0
-    */
+  var property: js.UndefOr[String] = js.undefined
+  var radioGroup: js.UndefOr[String] = js.undefined
+  var resource: js.UndefOr[String] = js.undefined
+  var results: js.UndefOr[Double] = js.undefined
+  var role: js.UndefOr[String] = js.undefined
+  var scrollToFirstError: js.UndefOr[Boolean] = js.undefined
+  var security: js.UndefOr[String] = js.undefined
+  var size: js.UndefOr[SizeType] = js.undefined
+  var slot: js.UndefOr[String] = js.undefined
+  var spellCheck: js.UndefOr[Booleanish] = js.undefined
+  var style: js.UndefOr[CSSProperties] = js.undefined
+  var suppressContentEditableWarning: js.UndefOr[Boolean] = js.undefined
+  var suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined
+  var tabIndex: js.UndefOr[Double] = js.undefined
+  var target: js.UndefOr[String] = js.undefined
+  var title: js.UndefOr[String] = js.undefined
+  var translate: js.UndefOr[yes | no] = js.undefined
+  var typeof: js.UndefOr[String] = js.undefined
+  var unselectable: js.UndefOr[on | off] = js.undefined
+  var validateMessages: js.UndefOr[ValidateMessages] = js.undefined
+  var vocab: js.UndefOr[String] = js.undefined
   var wrapperCol: js.UndefOr[ColProps] = js.undefined
 }
 
@@ -149,10 +360,11 @@ object FormProps {
     autoComplete: String = null,
     autoCorrect: String = null,
     autoSave: String = null,
-    children: ReactNode = null,
+    children: RenderProps | ReactNode = null,
     className: String = null,
     colon: js.UndefOr[Boolean] = js.undefined,
     color: String = null,
+    component: `false` | String | FC[_] | (ComponentClass[_, ComponentState]) = null,
     contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,
     dangerouslySetInnerHTML: AnonHtml = null,
@@ -162,10 +374,12 @@ object FormProps {
     dir: String = null,
     draggable: js.UndefOr[Boolean] = js.undefined,
     encType: String = null,
-    form: WrappedFormUtils[_] = null,
+    fields: js.Array[FieldData] = null,
+    form: FormInstance = null,
     hidden: js.UndefOr[Boolean] = js.undefined,
     hideRequiredMark: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
+    initialValues: Store = null,
     inlist: js.Any = null,
     inputMode: none | text | tel | url | email | numeric | decimal | search = null,
     is: String = null,
@@ -212,6 +426,9 @@ object FormProps {
     onEncrypted: SyntheticEvent[HTMLFormElement, Event_] => Unit = null,
     onEnded: SyntheticEvent[HTMLFormElement, Event_] => Unit = null,
     onError: SyntheticEvent[HTMLFormElement, Event_] => Unit = null,
+    onFieldsChange: (/* changedFields */ js.Array[FieldData], /* allFields */ js.Array[FieldData]) => Unit = null,
+    onFinish: /* values */ Store => Unit = null,
+    onFinishFailed: /* errorInfo */ ValidateErrorEntity => Unit = null,
     onFocus: FocusEvent[HTMLFormElement] => Unit = null,
     onInput: FormEvent[HTMLFormElement] => Unit = null,
     onInvalid: FormEvent[HTMLFormElement] => Unit = null,
@@ -249,7 +466,6 @@ object FormProps {
     onSeeking: SyntheticEvent[HTMLFormElement, Event_] => Unit = null,
     onSelect: SyntheticEvent[HTMLFormElement, Event_] => Unit = null,
     onStalled: SyntheticEvent[HTMLFormElement, Event_] => Unit = null,
-    onSubmit: FormEvent[HTMLFormElement] => Unit = null,
     onSuspend: SyntheticEvent[HTMLFormElement, Event_] => Unit = null,
     onTimeUpdate: SyntheticEvent[HTMLFormElement, Event_] => Unit = null,
     onTouchCancel: TouchEvent[HTMLFormElement] => Unit = null,
@@ -257,6 +473,7 @@ object FormProps {
     onTouchMove: TouchEvent[HTMLFormElement] => Unit = null,
     onTouchStart: TouchEvent[HTMLFormElement] => Unit = null,
     onTransitionEnd: TransitionEvent[HTMLFormElement] => Unit = null,
+    onValuesChange: (/* changedValues */ Store, /* values */ Store) => Unit = null,
     onVolumeChange: SyntheticEvent[HTMLFormElement, Event_] => Unit = null,
     onWaiting: SyntheticEvent[HTMLFormElement, Event_] => Unit = null,
     onWheel: WheelEvent[HTMLFormElement] => Unit = null,
@@ -268,7 +485,9 @@ object FormProps {
     resource: String = null,
     results: Int | Double = null,
     role: String = null,
+    scrollToFirstError: js.UndefOr[Boolean] = js.undefined,
     security: String = null,
+    size: SizeType = null,
     slot: String = null,
     spellCheck: js.UndefOr[Boolean] = js.undefined,
     style: CSSProperties = null,
@@ -280,6 +499,7 @@ object FormProps {
     translate: yes | no = null,
     typeof: String = null,
     unselectable: on | off = null,
+    validateMessages: ValidateMessages = null,
     vocab: String = null,
     wrapperCol: ColProps = null
   ): FormProps = {
@@ -344,6 +564,7 @@ object FormProps {
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (!js.isUndefined(colon)) __obj.updateDynamic("colon")(colon.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
     if (contentEditable != null) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
     if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu.asInstanceOf[js.Any])
     if (dangerouslySetInnerHTML != null) __obj.updateDynamic("dangerouslySetInnerHTML")(dangerouslySetInnerHTML.asInstanceOf[js.Any])
@@ -353,10 +574,12 @@ object FormProps {
     if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
     if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
     if (encType != null) __obj.updateDynamic("encType")(encType.asInstanceOf[js.Any])
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     if (form != null) __obj.updateDynamic("form")(form.asInstanceOf[js.Any])
     if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
     if (!js.isUndefined(hideRequiredMark)) __obj.updateDynamic("hideRequiredMark")(hideRequiredMark.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (initialValues != null) __obj.updateDynamic("initialValues")(initialValues.asInstanceOf[js.Any])
     if (inlist != null) __obj.updateDynamic("inlist")(inlist.asInstanceOf[js.Any])
     if (inputMode != null) __obj.updateDynamic("inputMode")(inputMode.asInstanceOf[js.Any])
     if (is != null) __obj.updateDynamic("is")(is.asInstanceOf[js.Any])
@@ -403,6 +626,9 @@ object FormProps {
     if (onEncrypted != null) __obj.updateDynamic("onEncrypted")(js.Any.fromFunction1(onEncrypted))
     if (onEnded != null) __obj.updateDynamic("onEnded")(js.Any.fromFunction1(onEnded))
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
+    if (onFieldsChange != null) __obj.updateDynamic("onFieldsChange")(js.Any.fromFunction2(onFieldsChange))
+    if (onFinish != null) __obj.updateDynamic("onFinish")(js.Any.fromFunction1(onFinish))
+    if (onFinishFailed != null) __obj.updateDynamic("onFinishFailed")(js.Any.fromFunction1(onFinishFailed))
     if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
     if (onInput != null) __obj.updateDynamic("onInput")(js.Any.fromFunction1(onInput))
     if (onInvalid != null) __obj.updateDynamic("onInvalid")(js.Any.fromFunction1(onInvalid))
@@ -440,7 +666,6 @@ object FormProps {
     if (onSeeking != null) __obj.updateDynamic("onSeeking")(js.Any.fromFunction1(onSeeking))
     if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1(onSelect))
     if (onStalled != null) __obj.updateDynamic("onStalled")(js.Any.fromFunction1(onStalled))
-    if (onSubmit != null) __obj.updateDynamic("onSubmit")(js.Any.fromFunction1(onSubmit))
     if (onSuspend != null) __obj.updateDynamic("onSuspend")(js.Any.fromFunction1(onSuspend))
     if (onTimeUpdate != null) __obj.updateDynamic("onTimeUpdate")(js.Any.fromFunction1(onTimeUpdate))
     if (onTouchCancel != null) __obj.updateDynamic("onTouchCancel")(js.Any.fromFunction1(onTouchCancel))
@@ -448,6 +673,7 @@ object FormProps {
     if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(js.Any.fromFunction1(onTouchMove))
     if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(js.Any.fromFunction1(onTouchStart))
     if (onTransitionEnd != null) __obj.updateDynamic("onTransitionEnd")(js.Any.fromFunction1(onTransitionEnd))
+    if (onValuesChange != null) __obj.updateDynamic("onValuesChange")(js.Any.fromFunction2(onValuesChange))
     if (onVolumeChange != null) __obj.updateDynamic("onVolumeChange")(js.Any.fromFunction1(onVolumeChange))
     if (onWaiting != null) __obj.updateDynamic("onWaiting")(js.Any.fromFunction1(onWaiting))
     if (onWheel != null) __obj.updateDynamic("onWheel")(js.Any.fromFunction1(onWheel))
@@ -459,7 +685,9 @@ object FormProps {
     if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
     if (results != null) __obj.updateDynamic("results")(results.asInstanceOf[js.Any])
     if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollToFirstError)) __obj.updateDynamic("scrollToFirstError")(scrollToFirstError.asInstanceOf[js.Any])
     if (security != null) __obj.updateDynamic("security")(security.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (slot != null) __obj.updateDynamic("slot")(slot.asInstanceOf[js.Any])
     if (!js.isUndefined(spellCheck)) __obj.updateDynamic("spellCheck")(spellCheck.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
@@ -471,6 +699,7 @@ object FormProps {
     if (translate != null) __obj.updateDynamic("translate")(translate.asInstanceOf[js.Any])
     if (typeof != null) __obj.updateDynamic("typeof")(typeof.asInstanceOf[js.Any])
     if (unselectable != null) __obj.updateDynamic("unselectable")(unselectable.asInstanceOf[js.Any])
+    if (validateMessages != null) __obj.updateDynamic("validateMessages")(validateMessages.asInstanceOf[js.Any])
     if (vocab != null) __obj.updateDynamic("vocab")(vocab.asInstanceOf[js.Any])
     if (wrapperCol != null) __obj.updateDynamic("wrapperCol")(wrapperCol.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormProps]

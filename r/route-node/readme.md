@@ -1,7 +1,7 @@
 
 # Scala.js typings for route-node
 
-Typings are for version 3.4.2
+Typings are for version 4.1.1
 
 ## Library description:
 A package to create a tree of named routes

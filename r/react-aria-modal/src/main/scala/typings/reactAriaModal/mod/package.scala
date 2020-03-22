@@ -7,14 +7,8 @@ import scala.scalajs.js.annotation._
 package object mod {
   type AriaModal = typings.react.mod.Component[
     typings.reactAriaModal.mod.AriaModalProps with (typings.reactAriaModal.mod.RequiredAriaTypes[
-      typings.std.Pick[
-        typings.reactAriaModal.mod.AriaModalProps, 
-        typings.reactAriaModal.reactAriaModalStrings.titleId
-      ], 
-      typings.std.Pick[
-        typings.reactAriaModal.mod.AriaModalProps, 
-        typings.reactAriaModal.reactAriaModalStrings.titleText
-      ]
+      typings.reactAriaModal.PickAriaModalPropstitleId, 
+      typings.reactAriaModal.PickAriaModalPropstitleTe
     ]), 
     js.Object, 
     js.Any

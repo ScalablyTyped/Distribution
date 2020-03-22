@@ -7,9 +7,6 @@ import scala.scalajs.js.annotation._
 
 object serverStrings {
   @js.native
-  sealed trait Context extends js.Object
-  
-  @js.native
   sealed trait alert extends LogLevel
   
   @js.native
@@ -33,8 +30,6 @@ object serverStrings {
   @js.native
   sealed trait warning extends LogLevel
   
-  @scala.inline
-  def Context: Context = "Context".asInstanceOf[Context]
   @scala.inline
   def alert: alert = "alert".asInstanceOf[alert]
   @scala.inline

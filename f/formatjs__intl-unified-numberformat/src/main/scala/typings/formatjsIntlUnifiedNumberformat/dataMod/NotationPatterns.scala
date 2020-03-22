@@ -1,32 +1,44 @@
 package typings.formatjsIntlUnifiedNumberformat.dataMod
 
+import typings.formatjsIntlUnifiedNumberformat.RecordDecimalFormatNumSig
 import typings.formatjsIntlUnifiedNumberformat.formatjsIntlUnifiedNumberformatStrings.compactLong
 import typings.formatjsIntlUnifiedNumberformat.formatjsIntlUnifiedNumberformatStrings.compactShort
+import typings.formatjsIntlUtils.numberTypesMod.CompactSignPattern
 import typings.formatjsIntlUtils.numberTypesMod.DecimalFormatNum
 import typings.formatjsIntlUtils.numberTypesMod.SignPattern
-import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in @formatjs/intl-utils.@formatjs/intl-utils/dist/number-types.DecimalFormatNum ]: @formatjs/intl-utils.@formatjs/intl-utils/dist/number-types.SignPattern} */ trait NotationPatterns extends js.Object {
+trait NotationPatterns extends CompactSignPattern {
   var decimalNum: js.UndefOr[DecimalFormatNum] = js.undefined
   var notation: js.UndefOr[compactShort | compactLong] = js.undefined
-  def `1000`(): SignPattern
-  def `10000`(): SignPattern
-  def `100000`(): SignPattern
-  def `1000000`(): SignPattern
-  def `10000000`(): SignPattern
-  def `100000000`(): SignPattern
-  def `1000000000`(): SignPattern
-  def `10000000000`(): SignPattern
-  def `100000000000`(): SignPattern
-  def `1000000000000`(): SignPattern
-  def `10000000000000`(): SignPattern
-  def `100000000000000`(): SignPattern
-  def compactLong(): Record[DecimalFormatNum, SignPattern]
-  def compactShort(): Record[DecimalFormatNum, SignPattern]
+  @JSName("100000000000000")
+  def `100000000000000_MNotationPatterns`(): SignPattern
+  @JSName("10000000000000")
+  def `10000000000000_MNotationPatterns`(): SignPattern
+  @JSName("1000000000000")
+  def `1000000000000_MNotationPatterns`(): SignPattern
+  @JSName("100000000000")
+  def `100000000000_MNotationPatterns`(): SignPattern
+  @JSName("10000000000")
+  def `10000000000_MNotationPatterns`(): SignPattern
+  @JSName("1000000000")
+  def `1000000000_MNotationPatterns`(): SignPattern
+  @JSName("100000000")
+  def `100000000_MNotationPatterns`(): SignPattern
+  @JSName("10000000")
+  def `10000000_MNotationPatterns`(): SignPattern
+  @JSName("1000000")
+  def `1000000_MNotationPatterns`(): SignPattern
+  @JSName("100000")
+  def `100000_MNotationPatterns`(): SignPattern
+  @JSName("10000")
+  def `10000_MNotationPatterns`(): SignPattern
+  @JSName("1000")
+  def `1000_MNotationPatterns`(): SignPattern
+  def compactLong(): RecordDecimalFormatNumSig
+  def compactShort(): RecordDecimalFormatNumSig
   def produceCompactSignPattern(decimalNum: DecimalFormatNum): SignPattern
 }
 
@@ -45,8 +57,8 @@ object NotationPatterns {
     `1000000000000`: () => SignPattern,
     `10000000000000`: () => SignPattern,
     `100000000000000`: () => SignPattern,
-    compactLong: () => Record[DecimalFormatNum, SignPattern],
-    compactShort: () => Record[DecimalFormatNum, SignPattern],
+    compactLong: () => RecordDecimalFormatNumSig,
+    compactShort: () => RecordDecimalFormatNumSig,
     produceCompactSignPattern: DecimalFormatNum => SignPattern,
     decimalNum: DecimalFormatNum = null,
     notation: compactShort | compactLong = null

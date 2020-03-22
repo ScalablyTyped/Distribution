@@ -6,25 +6,25 @@ import scala.scalajs.js.annotation._
 
 trait PointStatesSelectOptionsObject extends js.Object {
   /**
-    * Enable or disable visible feedback for selection.
+    * (Highcharts, Highstock) Enable or disable visible feedback for selection.
     */
   var enabled: js.UndefOr[Boolean] = js.undefined
   /**
-    * The fill color of the point marker.
+    * (Highcharts, Highstock) The fill color of the point marker.
     */
   var fillColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
-    * The color of the point marker's outline. When `undefined`, the series' or
-    * point's color is used.
+    * (Highcharts, Highstock) The color of the point marker's outline. When
+    * `undefined`, the series' or point's color is used.
     */
   var lineColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
-    * The width of the point marker's outline.
+    * (Highcharts, Highstock) The width of the point marker's outline.
     */
   var lineWidth: js.UndefOr[Double] = js.undefined
   /**
-    * The radius of the point marker. In hover state, it defaults to the normal
-    * state's radius + 2.
+    * (Highcharts, Highstock) The radius of the point marker. In hover state,
+    * it defaults to the normal state's radius + 2.
     */
   var radius: js.UndefOr[Double] = js.undefined
 }

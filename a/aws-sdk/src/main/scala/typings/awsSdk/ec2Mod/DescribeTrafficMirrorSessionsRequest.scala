@@ -25,7 +25,7 @@ trait DescribeTrafficMirrorSessionsRequest extends js.Object {
   /**
     * The ID of the Traffic Mirror session.
     */
-  var TrafficMirrorSessionIds: js.UndefOr[ValueStringList] = js.native
+  var TrafficMirrorSessionIds: js.UndefOr[TrafficMirrorSessionIdList] = js.native
 }
 
 object DescribeTrafficMirrorSessionsRequest {
@@ -35,7 +35,7 @@ object DescribeTrafficMirrorSessionsRequest {
     Filters: FilterList = null,
     MaxResults: Int | scala.Double = null,
     NextToken: NextToken = null,
-    TrafficMirrorSessionIds: ValueStringList = null
+    TrafficMirrorSessionIds: TrafficMirrorSessionIdList = null
   ): DescribeTrafficMirrorSessionsRequest = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])

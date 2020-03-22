@@ -1,8 +1,8 @@
 package typings.node.dnsMod
 
 import typings.node.AnonHostname
-import typings.node.FnA
-import typings.node.FnHostname
+import typings.node.FnCall
+import typings.node.FnCallHostnameOptions
 import typings.node.nodeStrings.A
 import typings.node.nodeStrings.AAAA
 import typings.node.nodeStrings.ANY
@@ -26,9 +26,9 @@ object promises extends js.Object {
     @JSName("getServers")
     var getServers_Original: js.Function0[js.Array[String]] = js.native
     @JSName("resolve4")
-    var resolve4_Original: FnHostname = js.native
+    var resolve4_Original: FnCallHostnameOptions = js.native
     @JSName("resolve6")
-    var resolve6_Original: FnHostname = js.native
+    var resolve6_Original: FnCallHostnameOptions = js.native
     @JSName("resolveAny")
     var resolveAny_Original: js.Function1[/* hostname */ String, js.Promise[js.Array[AnyRecord]]] = js.native
     @JSName("resolveCname")
@@ -48,7 +48,7 @@ object promises extends js.Object {
     @JSName("resolveTxt")
     var resolveTxt_Original: js.Function1[/* hostname */ String, js.Promise[js.Array[js.Array[String]]]] = js.native
     @JSName("resolve")
-    var resolve_Original: FnA = js.native
+    var resolve_Original: FnCall = js.native
     @JSName("reverse")
     var reverse_Original: js.Function1[/* ip */ String, js.Promise[js.Array[String]]] = js.native
     @JSName("setServers")

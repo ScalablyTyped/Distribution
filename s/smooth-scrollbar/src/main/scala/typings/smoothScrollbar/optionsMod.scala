@@ -1,8 +1,6 @@
 package typings.smoothScrollbar
 
-import typings.smoothScrollbar.scrollbarMod.ScrollbarOptions
 import typings.std.EventTarget
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +10,7 @@ import scala.scalajs.js.annotation._
 object optionsMod extends js.Object {
   @js.native
   class Options () extends js.Object {
-    def this(config: Partial[ScrollbarOptions]) = this()
+    def this(config: PartialScrollbarOptions) = this()
     /**
       * Keep scrollbar tracks visible
       */

@@ -1,7 +1,7 @@
 package typings.mongodb.mod
 
 import typings.mongodb.AnonIdObjectId
-import typings.mongodb.AnonNNModified
+import typings.mongodb.AnonNModified
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ trait UpdateWriteOpResult extends js.Object {
   var connection: js.Any
   var matchedCount: scala.Double
   var modifiedCount: scala.Double
-  var result: AnonNNModified
+  var result: AnonNModified
   var upsertedCount: scala.Double
   var upsertedId: AnonIdObjectId
 }
@@ -21,7 +21,7 @@ object UpdateWriteOpResult {
     connection: js.Any,
     matchedCount: scala.Double,
     modifiedCount: scala.Double,
-    result: AnonNNModified,
+    result: AnonNModified,
     upsertedCount: scala.Double,
     upsertedId: AnonIdObjectId
   ): UpdateWriteOpResult = {

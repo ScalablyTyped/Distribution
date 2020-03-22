@@ -1,7 +1,7 @@
 package typings.jupyterlabServices.configMod
 
 import typings.jupyterlabServices.configMod.ConfigWithDefaults.IOptions
-import typings.phosphorCoreutils.jsonMod.JSONValue
+import typings.luminoCoreutils.jsonMod.JSONValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -16,7 +16,7 @@ object mod extends js.Object {
   @js.native
   trait DefaultExport extends WxEnhances {
     @JSName("$copy")
-    var $copy_Original: FnDeep = js.native
+    var $copy_Original: FnCall = js.native
     @JSName("$createApp")
     var $createApp_Original: js.Function2[
         /* appClass */ AppConstructor, 

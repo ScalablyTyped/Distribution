@@ -1,8 +1,8 @@
 package typings.gapiClientSlides.gapi.client.slides
 
 import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientSlides.AnonAccesstokenAltBearertoken
-import typings.gapiClientSlides.AnonAccesstokenAltBearertokenCallback
+import typings.gapiClientSlides.AnonBearertoken
+import typings.gapiClientSlides.AnonCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,23 +32,23 @@ trait PresentationsResource extends js.Object {
     * the updates in your request are guaranteed to be applied together
     * atomically.
     */
-  def batchUpdate(request: AnonAccesstokenAltBearertoken): Request_[BatchUpdatePresentationResponse]
+  def batchUpdate(request: AnonBearertoken): Request_[BatchUpdatePresentationResponse]
   /**
     * Creates a new presentation using the title given in the request. Other
     * fields in the request are ignored.
     * Returns the created presentation.
     */
-  def create(request: AnonAccesstokenAltBearertokenCallback): Request_[Presentation]
+  def create(request: AnonCallback): Request_[Presentation]
   /** Gets the latest version of the specified presentation. */
-  def get(request: AnonAccesstokenAltBearertoken): Request_[Presentation]
+  def get(request: AnonBearertoken): Request_[Presentation]
 }
 
 object PresentationsResource {
   @scala.inline
   def apply(
-    batchUpdate: AnonAccesstokenAltBearertoken => Request_[BatchUpdatePresentationResponse],
-    create: AnonAccesstokenAltBearertokenCallback => Request_[Presentation],
-    get: AnonAccesstokenAltBearertoken => Request_[Presentation],
+    batchUpdate: AnonBearertoken => Request_[BatchUpdatePresentationResponse],
+    create: AnonCallback => Request_[Presentation],
+    get: AnonBearertoken => Request_[Presentation],
     pages: PagesResource
   ): PresentationsResource = {
     val __obj = js.Dynamic.literal(batchUpdate = js.Any.fromFunction1(batchUpdate), create = js.Any.fromFunction1(create), get = js.Any.fromFunction1(get), pages = pages.asInstanceOf[js.Any])

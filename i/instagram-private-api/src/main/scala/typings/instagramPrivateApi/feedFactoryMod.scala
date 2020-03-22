@@ -73,8 +73,8 @@ object feedFactoryMod extends js.Object {
     def blockedUsers(): BlockedUsersFeed = js.native
     def directInbox(): DirectInboxFeed = js.native
     def directPending(): DirectPendingInboxFeed = js.native
-    def directThread(options: PickDirectInboxFeedResponseThreadsItemthreadidolde): DirectThreadFeed = js.native
-    def directThread(options: PickDirectInboxFeedResponseThreadsItemthreadidolde, seqId: Double): DirectThreadFeed = js.native
+    def directThread(options: PickDirectInboxFeedRespon): DirectThreadFeed = js.native
+    def directThread(options: PickDirectInboxFeedRespon, seqId: Double): DirectThreadFeed = js.native
     def discover(): DiscoverFeed = js.native
     def igtvBrowse(): IgtvBrowseFeed = js.native
     def igtvBrowse(isPrefetch: Boolean): IgtvBrowseFeed = js.native

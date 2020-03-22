@@ -1,7 +1,7 @@
 package typings.jupyterlabNotebook
 
+import typings.jupyterlabApputils.mod.VDomRenderer
 import typings.jupyterlabApputils.vdomMod.VDomModel
-import typings.jupyterlabApputils.vdomMod.VDomRenderer
 import typings.jupyterlabNotebook.mod.Notebook
 import typings.jupyterlabNotebook.modestatusMod.CommandEditStatus.Model
 import typings.jupyterlabNotebook.widgetMod.NotebookMode
@@ -35,14 +35,15 @@ object modestatusMod extends js.Object {
         * Trigger a state change for the renderer.
         */
       var _triggerChange: js.Any = js.native
+      def notebook(): js.Any = js.native
       /**
         * Set the current notebook for the model.
         */
-      var notebook: Notebook | Null = js.native
+      def notebook(notebook: Notebook): js.Any = js.native
       /**
         * The current mode of the current notebook.
         */
-      val notebookMode: NotebookMode = js.native
+      def notebookMode(): NotebookMode = js.native
     }
     
   }

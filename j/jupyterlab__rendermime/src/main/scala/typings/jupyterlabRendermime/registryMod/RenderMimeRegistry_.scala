@@ -19,5 +19,10 @@ class RenderMimeRegistry_ () extends IRenderMimeRegistry {
   var _id: js.Any = js.native
   var _ranks: js.Any = js.native
   var _types: js.Any = js.native
+  /**
+    * The ordered list of mimeTypes.
+    */
+  @JSName("mimeTypes")
+  def mimeTypes_MRenderMimeRegistry_(): js.Array[String] = js.native
 }
 

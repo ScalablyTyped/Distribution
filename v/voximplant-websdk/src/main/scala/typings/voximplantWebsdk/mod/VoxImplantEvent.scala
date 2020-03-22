@@ -20,6 +20,18 @@ trait VoxImplantEvent extends js.Object
 
 object VoxImplantEvent {
   @scala.inline
+  def IncomingCall(call: Call, headers: js.Object = null): VoxImplantEvent = {
+    val __obj = js.Dynamic.literal(call = call.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VoxImplantEvent]
+  }
+  @scala.inline
+  def NetStatsReceived(stats: NetworkInfo): VoxImplantEvent = {
+    val __obj = js.Dynamic.literal(stats = stats.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[VoxImplantEvent]
+  }
+  @scala.inline
   def MicAccessResult(result: Boolean): VoxImplantEvent = {
     val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any])
   
@@ -47,21 +59,9 @@ object VoxImplantEvent {
     __obj.asInstanceOf[VoxImplantEvent]
   }
   @scala.inline
-  def NetStatsReceived(stats: NetworkInfo): VoxImplantEvent = {
-    val __obj = js.Dynamic.literal(stats = stats.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[VoxImplantEvent]
-  }
-  @scala.inline
   def ConnectionFailed(message: String): VoxImplantEvent = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
   
-    __obj.asInstanceOf[VoxImplantEvent]
-  }
-  @scala.inline
-  def IncomingCall(call: Call, headers: js.Object = null): VoxImplantEvent = {
-    val __obj = js.Dynamic.literal(call = call.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     __obj.asInstanceOf[VoxImplantEvent]
   }
 }

@@ -1,6 +1,7 @@
 package typings.ddTrace.mod.plugins
 
-import typings.ddTrace.AnonReqRequestRes
+import org.scalablytyped.runtime.StringDictionary
+import typings.ddTrace.Anon1
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,7 +19,7 @@ import scala.scalajs.js.annotation._
 - typings.ddTrace.mod.Analyzable because Already inherited
 - typings.ddTrace.mod.plugins.Integration because Already inherited
 - typings.ddTrace.mod.plugins.Http_ because Already inherited
-- typings.ddTrace.mod.plugins.HttpServer because var conflicts: analytics, blacklist, enabled, headers, hooks, service, validateStatus, whitelist. Inlined  */ trait http extends HttpClient {
+- typings.ddTrace.mod.plugins.HttpServer because var conflicts: analytics, blacklist, enabled, headers, hooks, service, validateStatus, whitelist. Inlined middleware */ trait http extends HttpClient {
   /**
     * Configuration for HTTP clients.
     */
@@ -27,7 +28,13 @@ import scala.scalajs.js.annotation._
     * Hooks to run before spans are finished.
     */
   @JSName("hooks")
-  var hooks_http: js.UndefOr[AnonReqRequestRes] = js.undefined
+  var hooks_http: js.UndefOr[Anon1] = js.undefined
+  /**
+    * Whether to enable instrumention of <plugin>.middleware spans
+    *
+    * @default true
+    */
+  var middleware: js.UndefOr[Boolean] = js.undefined
   /**
     * Configuration for HTTP servers.
     */
@@ -37,12 +44,13 @@ import scala.scalajs.js.annotation._
 object http {
   @scala.inline
   def apply(
-    analytics: Boolean | Double = null,
+    analytics: Boolean | Double | (StringDictionary[Boolean | Double]) = null,
     blacklist: String | RegExp | (js.Function1[/* url */ String, Boolean]) | (js.Array[String | RegExp | (js.Function1[/* url */ String, Boolean])]) = null,
     client: HttpClient = null,
     enabled: js.UndefOr[Boolean] = js.undefined,
     headers: js.Array[String] = null,
-    hooks: AnonReqRequestRes = null,
+    hooks: Anon1 = null,
+    middleware: js.UndefOr[Boolean] = js.undefined,
     server: HttpServer = null,
     service: String = null,
     splitByDomain: js.UndefOr[Boolean] = js.undefined,
@@ -56,6 +64,7 @@ object http {
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (hooks != null) __obj.updateDynamic("hooks")(hooks.asInstanceOf[js.Any])
+    if (!js.isUndefined(middleware)) __obj.updateDynamic("middleware")(middleware.asInstanceOf[js.Any])
     if (server != null) __obj.updateDynamic("server")(server.asInstanceOf[js.Any])
     if (service != null) __obj.updateDynamic("service")(service.asInstanceOf[js.Any])
     if (!js.isUndefined(splitByDomain)) __obj.updateDynamic("splitByDomain")(splitByDomain.asInstanceOf[js.Any])

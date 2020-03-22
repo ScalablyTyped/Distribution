@@ -1,8 +1,8 @@
 package typings.relayRuntime.relayStoreTypesMod
 
 import typings.relayRuntime.AnonCacheConfig
-import typings.relayRuntime.AnonKey
 import typings.relayRuntime.AnonOperation
+import typings.relayRuntime.AnonSource
 import typings.relayRuntime.relayNetworkTypesMod.GraphQLResponse
 import typings.relayRuntime.relayNetworkTypesMod.Network
 import typings.relayRuntime.relayNetworkTypesMod.PayloadData
@@ -67,7 +67,7 @@ trait Environment extends js.Object {
     * the result is subscribed to:
     * environment.executeMutation({...}).subscribe({...}).
     */
-  def executeMutation(hasOperationOptimisticUpdaterOptimisticResponseUpdaterUploadables: AnonKey): RelayObservable[GraphQLResponse] = js.native
+  def executeMutation(hasOperationOptimisticUpdaterOptimisticResponseUpdaterUploadables: AnonOperation): RelayObservable[GraphQLResponse] = js.native
   /**
     * Returns an Observable of GraphQLResponse resulting from executing the
     * provided Query or Subscription operation responses, the result of which is
@@ -77,7 +77,7 @@ trait Environment extends js.Object {
     * the result is subscribed to:
     * environment.executeWithSource({...}).subscribe({...}).
     */
-  def executeWithSource(hasOperationSource: AnonOperation): RelayObservable[GraphQLResponse] = js.native
+  def executeWithSource(hasOperationSource: AnonSource): RelayObservable[GraphQLResponse] = js.native
   /**
     * Get the environment's internal Network.
     */

@@ -82,7 +82,7 @@ trait Directive extends js.Object {
     * class BankAccount {
     *   bankName: string;
     *   id: string;
-    *
+    * }
     * ```
     *
     */

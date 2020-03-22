@@ -12,5 +12,11 @@ object createSolutionBuilderWithWatch extends js.Object {
     rootNames: js.Array[java.lang.String],
     defaultOptions: BuildOptions
   ): SolutionBuilder[T] = js.native
+  def apply[T /* <: BuilderProgram */](
+    host: SolutionBuilderWithWatchHost[T],
+    rootNames: js.Array[java.lang.String],
+    defaultOptions: BuildOptions,
+    baseWatchOptions: WatchOptions
+  ): SolutionBuilder[T] = js.native
 }
 

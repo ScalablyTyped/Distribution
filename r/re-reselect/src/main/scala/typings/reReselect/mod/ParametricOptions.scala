@@ -1,6 +1,6 @@
 package typings.reReselect.mod
 
-import typings.reReselect.AnonInputSelectorsKeySelector
+import typings.reReselect.AnonKeySelector
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +17,7 @@ object ParametricOptions {
   def apply[S, P, C, D](
     cacheObject: ICacheObject = null,
     keySelector: (S, P, /* repeated */ js.Any) => js.Any = null,
-    keySelectorCreator: /* selectorInputs */ AnonInputSelectorsKeySelector[D, C, S, P] => ParametricKeySelector[S, P] = null,
+    keySelectorCreator: /* selectorInputs */ AnonKeySelector[D, C, S, P] => ParametricKeySelector[S, P] = null,
     selectorCreator: CreateSelectorInstance = null
   ): ParametricOptions[S, P, C, D] = {
     val __obj = js.Dynamic.literal()

@@ -10,6 +10,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class TrayCls protected () extends Tray {
   def this(image: String) = this()
+  /**
+    * Tray
+    */
   def this(image: NativeImage_) = this()
 }
 

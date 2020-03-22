@@ -1,6 +1,6 @@
 package typings.perfectScrollbar.mod
 
-import typings.perfectScrollbar.AnonEnd
+import typings.perfectScrollbar.AnonX
 import typings.perfectScrollbar.mod.PerfectScrollbar.Options
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -29,7 +29,7 @@ trait PerfectScrollbar_ extends js.Object {
   var railYHeight: Double
   var railYMarginHeight: Double
   var railYRatio: Double
-  var reach: AnonEnd
+  var reach: AnonX
   var scrollbarX: HTMLElement
   var scrollbarXActive: Boolean
   var scrollbarXBottom: Double
@@ -73,7 +73,7 @@ object PerfectScrollbar_ {
     railYHeight: Double,
     railYMarginHeight: Double,
     railYRatio: Double,
-    reach: AnonEnd,
+    reach: AnonX,
     scrollbarX: HTMLElement,
     scrollbarXActive: Boolean,
     scrollbarXBottom: Double,

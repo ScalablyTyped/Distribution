@@ -1,22 +1,32 @@
 package typings.awsSdkBuildTypes.treeModelMod
 
-import typings.awsSdkTypes.protocolMod.Member
 import typings.awsSdkTypes.protocolMod.MemberLocation
 import typings.awsSdkTypes.protocolMod.XmlNamespace
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in keyof @aws-sdk/build-types.@aws-sdk/build-types/build/TreeModel.Documented ]:? @aws-sdk/build-types.@aws-sdk/build-types/build/TreeModel.Documented[P]} */ trait TreeModelMember extends Member {
-  @JSName("shape")
-  var shape_TreeModelMember: TreeModelShape
+/* Inlined parent std.Partial<@aws-sdk/build-types.@aws-sdk/build-types/build/TreeModel.Documented> */
+/* Inlined parent @aws-sdk/types.@aws-sdk/types.Member */
+trait TreeModelMember extends js.Object {
+  var documentation: js.UndefOr[String] = js.undefined
+  var flattened: js.UndefOr[Boolean] = js.undefined
+  var location: js.UndefOr[MemberLocation] = js.undefined
+  var locationName: js.UndefOr[String] = js.undefined
+  var queryName: js.UndefOr[String] = js.undefined
+  var resultWrapper: js.UndefOr[String] = js.undefined
+  var sensitive: js.UndefOr[Boolean] = js.undefined
+  var shape: TreeModelShape
+  var streaming: js.UndefOr[Boolean] = js.undefined
+  var xmlAttribute: js.UndefOr[Boolean] = js.undefined
+  var xmlNamespace: js.UndefOr[XmlNamespace] = js.undefined
 }
 
 object TreeModelMember {
   @scala.inline
   def apply(
     shape: TreeModelShape,
+    documentation: String = null,
     flattened: js.UndefOr[Boolean] = js.undefined,
     location: MemberLocation = null,
     locationName: String = null,
@@ -28,6 +38,7 @@ object TreeModelMember {
     xmlNamespace: XmlNamespace = null
   ): TreeModelMember = {
     val __obj = js.Dynamic.literal(shape = shape.asInstanceOf[js.Any])
+    if (documentation != null) __obj.updateDynamic("documentation")(documentation.asInstanceOf[js.Any])
     if (!js.isUndefined(flattened)) __obj.updateDynamic("flattened")(flattened.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (locationName != null) __obj.updateDynamic("locationName")(locationName.asInstanceOf[js.Any])

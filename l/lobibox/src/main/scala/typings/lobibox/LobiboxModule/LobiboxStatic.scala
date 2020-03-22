@@ -1,12 +1,12 @@
 package typings.lobibox.LobiboxModule
 
+import typings.lobibox.AnonCall
+import typings.lobibox.AnonCallDEFAULTS
+import typings.lobibox.AnonCallOptions
 import typings.lobibox.AnonDEFAULTS
-import typings.lobibox.AnonDEFAULTSOptions
-import typings.lobibox.AnonDEFAULTSOptionsConfirmOptions
-import typings.lobibox.AnonDEFAULTSOptionsMessageBoxesDefault
-import typings.lobibox.AnonDEFAULTSOptionsMessageBoxesDefaultT
-import typings.lobibox.AnonDEFAULTSOptionsType
-import typings.lobibox.Anon_DEFAULTSOPTIONS
+import typings.lobibox.AnonDEFAULTSProgressOptions
+import typings.lobibox.AnonDEFAULTSWindowOptions
+import typings.lobibox.AnonOPTIONS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,18 +14,18 @@ import scala.scalajs.js.annotation._
 @js.native
 trait LobiboxStatic extends js.Object {
   @JSName("alert")
-  var alert_Original: AnonDEFAULTSOptions = js.native
+  var alert_Original: AnonCall = js.native
   var base: AnonDEFAULTS = js.native
   @JSName("confirm")
-  var confirm_Original: AnonDEFAULTSOptionsConfirmOptions = js.native
+  var confirm_Original: AnonCallOptions = js.native
   @JSName("notify")
-  var notify_Original: Anon_DEFAULTSOPTIONS = js.native
+  var notify_Original: AnonOPTIONS = js.native
   @JSName("progress")
-  var progress_Original: AnonDEFAULTSOptionsMessageBoxesDefault = js.native
+  var progress_Original: AnonDEFAULTSProgressOptions = js.native
   @JSName("prompt")
-  var prompt_Original: AnonDEFAULTSOptionsType = js.native
+  var prompt_Original: AnonCallDEFAULTS = js.native
   @JSName("window")
-  var window_Original: AnonDEFAULTSOptionsMessageBoxesDefaultT = js.native
+  var window_Original: AnonDEFAULTSWindowOptions = js.native
   def alert[T /* <: MessageBoxesDefault */](`type`: String): LobiboxStatic = js.native
   def alert[T /* <: MessageBoxesDefault */](`type`: String, options: T): LobiboxStatic = js.native
   def confirm[T /* <: MessageBoxesDefault */](): T = js.native

@@ -1,5 +1,6 @@
 package typings.officeUiFabricReact
 
+import typings.fluentuiReactFocus.focusZoneTypesMod.IFocusZoneProps
 import typings.officeUiFabricReact.activityItemTypesMod.IActivityItemProps
 import typings.officeUiFabricReact.announcedLazyLoadingExampleMod.IAnnouncedLazyLoadingExampleProps
 import typings.officeUiFabricReact.announcedTypesMod.IAnnouncedProps
@@ -63,7 +64,6 @@ import typings.officeUiFabricReact.facepileTypesMod.IFacepileProps
 import typings.officeUiFabricReact.floatingPeoplePickerMod.IPeopleFloatingPickerProps
 import typings.officeUiFabricReact.focusTrapCalloutTypesMod.IFocusTrapCalloutProps
 import typings.officeUiFabricReact.focusTrapZoneTypesMod.IFocusTrapZoneProps
-import typings.officeUiFabricReact.focusZoneTypesMod.IFocusZoneProps
 import typings.officeUiFabricReact.gridTypesMod.IGridProps
 import typings.officeUiFabricReact.groupFooterTypesMod.IGroupFooterProps
 import typings.officeUiFabricReact.groupHeaderTypesMod.IGroupHeaderProps
@@ -353,8 +353,6 @@ trait officeUiFabricReactProps {
   @scala.inline
   def ContextualMenuSplitButtonProps: IContextualMenuItemWrapperProps.type = typings.officeUiFabricReact.contextualMenuItemWrapperTypesMod.IContextualMenuItemWrapperProps
   type ContextualMenuSplitButtonProps = IContextualMenuItemWrapperProps
-  @scala.inline
-  def CustomizerProps: ICustomizerProps.type = typings.uifabricUtilities.customizerTypesMod.ICustomizerProps
   type CustomizerProps = ICustomizerProps
   @scala.inline
   def DatePickerProps: IDatePickerProps.type = typings.officeUiFabricReact.datePickerTypesMod.IDatePickerProps
@@ -365,8 +363,6 @@ trait officeUiFabricReactProps {
   @scala.inline
   def DefaultButtonProps: IButtonProps.type = typings.officeUiFabricReact.buttonTypesMod.IButtonProps
   type DefaultButtonProps = IButtonProps
-  @scala.inline
-  def DelayedRenderProps: IDelayedRenderProps.type = typings.uifabricUtilities.delayedRenderMod.IDelayedRenderProps
   type DelayedRenderProps = IDelayedRenderProps
   @scala.inline
   def DetailsColumnProps: IDetailsColumnProps.type = typings.officeUiFabricReact.detailsColumnTypesMod.IDetailsColumnProps
@@ -522,8 +518,6 @@ trait officeUiFabricReactProps {
   @scala.inline
   def FocusTrapZoneProps: IFocusTrapZoneProps.type = typings.officeUiFabricReact.focusTrapZoneTypesMod.IFocusTrapZoneProps
   type FocusTrapZoneProps = IFocusTrapZoneProps
-  @scala.inline
-  def FocusZoneProps: IFocusZoneProps.type = typings.officeUiFabricReact.focusZoneTypesMod.IFocusZoneProps
   type FocusZoneProps = IFocusZoneProps
   @scala.inline
   def FontIconProps: IFontIconProps.type = typings.officeUiFabricReact.iconTypesMod.IFontIconProps
@@ -901,8 +895,6 @@ trait officeUiFabricReactProps {
   @scala.inline
   def TextFieldBaseProps: ITextFieldProps.type = typings.officeUiFabricReact.textFieldTypesMod.ITextFieldProps
   type TextFieldBaseProps = ITextFieldProps
-  @scala.inline
-  def ThemeProviderProps: IThemeProviderProps.type = typings.uifabricFoundation.themeProviderMod.IThemeProviderProps
   type ThemeProviderProps = IThemeProviderProps
   @scala.inline
   def ToggleProps: IToggleProps.type = typings.officeUiFabricReact.toggleTypesMod.IToggleProps

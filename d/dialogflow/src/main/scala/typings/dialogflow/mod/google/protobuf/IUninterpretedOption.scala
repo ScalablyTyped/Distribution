@@ -1,6 +1,7 @@
 package typings.dialogflow.mod.google.protobuf
 
 import typings.dialogflow.mod.google.protobuf.UninterpretedOption.INamePart
+import typings.long.mod.Long
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,15 +18,11 @@ trait IUninterpretedOption extends js.Object {
   /** UninterpretedOption name */
   var name: js.UndefOr[js.Array[INamePart] | Null] = js.undefined
   /** UninterpretedOption negativeIntValue */
-  var negativeIntValue: js.UndefOr[
-    Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) | Null
-  ] = js.undefined
+  var negativeIntValue: js.UndefOr[Double | Long | String | Null] = js.undefined
   /** UninterpretedOption positiveIntValue */
-  var positiveIntValue: js.UndefOr[
-    Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) | Null
-  ] = js.undefined
+  var positiveIntValue: js.UndefOr[Double | Long | String | Null] = js.undefined
   /** UninterpretedOption stringValue */
-  var stringValue: js.UndefOr[Uint8Array | Null] = js.undefined
+  var stringValue: js.UndefOr[Uint8Array | String | Null] = js.undefined
 }
 
 object IUninterpretedOption {
@@ -35,9 +32,9 @@ object IUninterpretedOption {
     doubleValue: Int | Double = null,
     identifierValue: String = null,
     name: js.Array[INamePart] = null,
-    negativeIntValue: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) = null,
-    positiveIntValue: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) = null,
-    stringValue: Uint8Array = null
+    negativeIntValue: Double | Long | String = null,
+    positiveIntValue: Double | Long | String = null,
+    stringValue: Uint8Array | String = null
   ): IUninterpretedOption = {
     val __obj = js.Dynamic.literal()
     if (aggregateValue != null) __obj.updateDynamic("aggregateValue")(aggregateValue.asInstanceOf[js.Any])

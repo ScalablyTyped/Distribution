@@ -1,40 +1,27 @@
 package typings.jupyterlabMainmenu.kernelMod
 
+import typings.jupyterlabMainmenu.kernelMod.IKernelMenu.IKernelUser
 import typings.jupyterlabMainmenu.labmenuMod.JupyterLabMenu
-import typings.phosphorWidgets.menuMod.Menu.IOptions
+import typings.luminoWidgets.menuMod.Menu.IOptions
+import typings.luminoWidgets.mod.Widget
+import typings.std.Set
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@jupyterlab/mainmenu/lib/kernel", "KernelMenu")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.luminoDisposable.mod.IDisposable because Already inherited
+- typings.jupyterlabMainmenu.labmenuMod.IJupyterLabMenu because Already inherited
+- typings.jupyterlabMainmenu.kernelMod.IKernelMenu because var conflicts: isDisposed. Inlined kernelUsers */ @JSImport("@jupyterlab/mainmenu/lib/kernel", "KernelMenu")
 @js.native
-class KernelMenu protected ()
-  extends JupyterLabMenu
-     with IKernelMenu {
+class KernelMenu protected () extends JupyterLabMenu {
   /**
     * Construct the kernel menu.
     */
   def this(options: IOptions) = this()
   /**
-    * Test whether the object has been disposed.
-    *
-    * #### Notes
-    * This property is always safe to access.
+    * A set storing IKernelUsers for the Kernel menu.
     */
-  /* CompleteClass */
-  override val isDisposed: Boolean = js.native
-  /**
-    * Dispose of the resources held by the object.
-    *
-    * #### Notes
-    * If the object's `dispose` method is called more than once, all
-    * calls made after the first will be a no-op.
-    *
-    * #### Undefined Behavior
-    * It is undefined behavior to use any functionality of the object
-    * after it has been disposed unless otherwise explicitly noted.
-    */
-  /* CompleteClass */
-  override def dispose(): Unit = js.native
+  val kernelUsers: Set[IKernelUser[Widget]] = js.native
 }
 

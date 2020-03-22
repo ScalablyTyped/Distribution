@@ -14,7 +14,7 @@ object datePickerDatepickerMod extends js.Object {
   /* static members */
   @js.native
   object default extends js.Object {
-    var defaultProps: AnonDisabled = js.native
+    var defaultProps: AnonLocale = js.native
   }
   
 }

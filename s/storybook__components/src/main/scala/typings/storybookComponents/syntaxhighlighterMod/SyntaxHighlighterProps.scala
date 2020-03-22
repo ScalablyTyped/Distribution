@@ -4,13 +4,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SyntaxHighlighterProps extends js.Object {
-  var bordered: js.UndefOr[Boolean] = js.undefined
-  var className: js.UndefOr[String] = js.undefined
-  var copyable: js.UndefOr[Boolean] = js.undefined
-  var format: js.UndefOr[Boolean] = js.undefined
-  var language: String
-  var padded: js.UndefOr[Boolean] = js.undefined
+  var bordered: js.UndefOr[Boolean] = js.native
+  var className: js.UndefOr[String] = js.native
+  var copyable: js.UndefOr[Boolean] = js.native
+  var format: js.UndefOr[Boolean] = js.native
+  var language: String = js.native
+  var padded: js.UndefOr[Boolean] = js.native
 }
 
 object SyntaxHighlighterProps {

@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation._
 
 object immerStrings {
   @js.native
+  sealed trait Draft extends js.Object
+  
+  @js.native
   sealed trait DraftTuple extends js.Object
   
   @js.native
@@ -17,6 +20,8 @@ object immerStrings {
   @js.native
   sealed trait replace extends js.Object
   
+  @scala.inline
+  def Draft: Draft = "Draft".asInstanceOf[Draft]
   @scala.inline
   def DraftTuple: DraftTuple = "DraftTuple".asInstanceOf[DraftTuple]
   @scala.inline

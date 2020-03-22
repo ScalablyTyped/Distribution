@@ -1,18 +1,18 @@
 package typings.screeps
 
-import typings.screeps.screepsNumbers.`7`
+import typings.screeps.screepsStrings.UHO2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon7 extends js.Object {
-  var harvest: `7`
+  var OH: UHO2
 }
 
 object Anon7 {
   @scala.inline
-  def apply(harvest: `7`): Anon7 = {
-    val __obj = js.Dynamic.literal(harvest = harvest.asInstanceOf[js.Any])
+  def apply(OH: UHO2): Anon7 = {
+    val __obj = js.Dynamic.literal(OH = OH.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon7]
   }

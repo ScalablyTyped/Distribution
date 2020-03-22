@@ -9,7 +9,7 @@ trait NavigatorYAxisOptions extends js.Object {
     * (Highstock, Gantt) Accessibility options for an axis. Requires the
     * accessibility module.
     */
-  var accessibility: js.UndefOr[js.Object | NavigatorYAxisAccessibilityOptions] = js.undefined
+  var accessibility: js.UndefOr[AxisAccessibilityOptionsObject] = js.undefined
   /**
     * (Highcharts, Highstock, Gantt) When using multiple axis, the ticks of two
     * or more opposite axes will automatically be aligned by adding ticks to
@@ -40,7 +40,8 @@ trait NavigatorYAxisOptions extends js.Object {
     * (Highcharts) In a polar chart, this is the angle of the Y axis in
     * degrees, where 0 is up and 90 is right. The angle determines the position
     * of the axis line and the labels, though the coordinate system is
-    * unaffected.
+    * unaffected. Since v8.0.0 this option is also applicable for X axis
+    * (inverted polar).
     */
   var angle: js.UndefOr[Double] = js.undefined
   /**
@@ -51,14 +52,13 @@ trait NavigatorYAxisOptions extends js.Object {
   var breaks: js.UndefOr[js.Array[NavigatorYAxisBreaksOptions]] = js.undefined
   /**
     * (Highcharts, Gantt) If categories are present for the xAxis, names are
-    * used instead of numbers for that axis. Since Highcharts 3.0, categories
-    * can also be extracted by giving each point a name and setting axis type
-    * to `category`. However, if you have multiple series, best practice
-    * remains defining the `categories` array.
+    * used instead of numbers for that axis.
     *
-    * Example:
+    * Since Highcharts 3.0, categories can also be extracted by giving each
+    * point a name and setting axis type to `category`. However, if you have
+    * multiple series, best practice remains defining the `categories` array.
     *
-    *  (see online documentation for example)
+    * Example: `categories: ['Apples', 'Bananas', 'Oranges']`
     */
   var categories: js.UndefOr[js.Array[String]] = js.undefined
   /**
@@ -79,7 +79,7 @@ trait NavigatorYAxisOptions extends js.Object {
     * In styled mode, the crosshairs are styled in the `.highcharts-crosshair`,
     * `.highcharts-crosshair-thin` or `.highcharts-xaxis-category` classes.
     */
-  var crosshair: js.UndefOr[Boolean | NavigatorYAxisCrosshairOptions] = js.undefined
+  var crosshair: js.UndefOr[Boolean | AxisCrosshairOptions] = js.undefined
   /**
     * (Highcharts, Highstock, Gantt) For a datetime axis, the scale will
     * automatically adjust to the appropriate unit. This member gives the
@@ -87,11 +87,10 @@ trait NavigatorYAxisOptions extends js.Object {
     * values, different units may be used, for example the `day` unit can be
     * used on midnight and `hour` unit be used for intermediate values on the
     * same axis. For an overview of the replacement codes, see dateFormat.
-    * Defaults to:
     *
-    *  (see online documentation for example)
+    * Defaults to: (see online documentation for example)
     */
-  var dateTimeLabelFormats: js.UndefOr[NavigatorYAxisDateTimeLabelFormatsOptions] = js.undefined
+  var dateTimeLabelFormats: js.UndefOr[AxisDateTimeLabelFormatsOptions] = js.undefined
   /**
     * (Highstock, Gantt) Whether to force the axis to end on a tick. Use this
     * option with the `maxPadding` option to control the axis end.
@@ -125,7 +124,8 @@ trait NavigatorYAxisOptions extends js.Object {
   /**
     * (Highcharts) Polar charts only. Whether the grid lines should draw as a
     * polygon with straight lines between categories, or as circles. Can be
-    * either `circle` or `polygon`.
+    * either `circle` or `polygon`. Since v8.0.0 this option is also applicable
+    * for X axis (inverted polar).
     */
   var gridLineInterpolation: js.UndefOr[OptionsGridLineInterpolationValue] = js.undefined
   /**
@@ -148,8 +148,19 @@ trait NavigatorYAxisOptions extends js.Object {
   /**
     * (Highstock, Gantt) The axis labels show the number or category for each
     * tick.
+    *
+    * Since v8.0.0: Labels are animated in categorized x-axis with updating
+    * data if `tickInterval` and `step` is set to 1.
     */
   var labels: js.UndefOr[NavigatorYAxisLabelsOptions] = js.undefined
+  /**
+    * (Highcharts, Highstock) The left position as the horizontal axis. If it's
+    * a number, it is interpreted as pixel position relative to the chart.
+    *
+    * Since Highcharts v5.0.13: If it's a percentage string, it is interpreted
+    * as percentages of the plot width, offset from plot area left.
+    */
+  var left: js.UndefOr[Double | String] = js.undefined
   /**
     * (Highstock, Gantt) The color of the line marking the axis itself.
     *
@@ -536,6 +547,14 @@ trait NavigatorYAxisOptions extends js.Object {
     */
   var visible: js.UndefOr[Boolean] = js.undefined
   /**
+    * (Highcharts, Highstock) The width as the horizontal axis. If it's a
+    * number, it is interpreted as pixels.
+    *
+    * Since Highcharts v5.0.13: If it's a percentage string, it is interpreted
+    * as percentages of the total plot width.
+    */
+  var width: js.UndefOr[Double | String] = js.undefined
+  /**
     * (Highstock, Gantt) Whether to zoom axis. If `chart.zoomType` is set, the
     * option allows to disable zooming on an individual axis.
     */
@@ -545,7 +564,7 @@ trait NavigatorYAxisOptions extends js.Object {
 object NavigatorYAxisOptions {
   @scala.inline
   def apply(
-    accessibility: js.Object | NavigatorYAxisAccessibilityOptions = null,
+    accessibility: AxisAccessibilityOptionsObject = null,
     alignTicks: js.UndefOr[Boolean] = js.undefined,
     allowDecimals: js.UndefOr[Boolean] = js.undefined,
     alternateGridColor: ColorString | GradientColorObject | PatternObject = null,
@@ -554,8 +573,8 @@ object NavigatorYAxisOptions {
     categories: js.Array[String] = null,
     ceiling: Int | Double = null,
     className: String = null,
-    crosshair: Boolean | NavigatorYAxisCrosshairOptions = null,
-    dateTimeLabelFormats: NavigatorYAxisDateTimeLabelFormatsOptions = null,
+    crosshair: Boolean | AxisCrosshairOptions = null,
+    dateTimeLabelFormats: AxisDateTimeLabelFormatsOptions = null,
     endOnTick: js.UndefOr[Boolean] = js.undefined,
     events: NavigatorYAxisEventsOptions = null,
     floor: Int | Double = null,
@@ -567,6 +586,7 @@ object NavigatorYAxisOptions {
     gridZIndex: Int | Double = null,
     id: String = null,
     labels: NavigatorYAxisLabelsOptions = null,
+    left: Double | String = null,
     lineColor: ColorString | GradientColorObject | PatternObject = null,
     lineWidth: Int | Double = null,
     margin: Int | Double = null,
@@ -617,6 +637,7 @@ object NavigatorYAxisOptions {
     `type`: AxisTypeValue = null,
     uniqueNames: js.UndefOr[Boolean] = js.undefined,
     visible: js.UndefOr[Boolean] = js.undefined,
+    width: Double | String = null,
     zoomEnabled: js.UndefOr[Boolean] = js.undefined
   ): NavigatorYAxisOptions = {
     val __obj = js.Dynamic.literal()
@@ -642,6 +663,7 @@ object NavigatorYAxisOptions {
     if (gridZIndex != null) __obj.updateDynamic("gridZIndex")(gridZIndex.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
+    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
     if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor.asInstanceOf[js.Any])
     if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
@@ -692,6 +714,7 @@ object NavigatorYAxisOptions {
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (!js.isUndefined(uniqueNames)) __obj.updateDynamic("uniqueNames")(uniqueNames.asInstanceOf[js.Any])
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     if (!js.isUndefined(zoomEnabled)) __obj.updateDynamic("zoomEnabled")(zoomEnabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigatorYAxisOptions]
   }

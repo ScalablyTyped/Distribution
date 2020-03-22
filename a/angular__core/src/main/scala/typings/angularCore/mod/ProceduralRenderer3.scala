@@ -45,7 +45,9 @@ trait ProceduralRenderer3 extends Renderer3 {
   def removeStyle(el: RElement, style: String, flags: RendererStyleFlags2): Unit = js.native
   def removeStyle(el: RElement, style: String, flags: RendererStyleFlags3): Unit = js.native
   def selectRootElement(selectorOrNode: String): RElement = js.native
+  def selectRootElement(selectorOrNode: String, preserveContent: Boolean): RElement = js.native
   def selectRootElement(selectorOrNode: js.Any): RElement = js.native
+  def selectRootElement(selectorOrNode: js.Any, preserveContent: Boolean): RElement = js.native
   def setAttribute(el: RElement, name: String, value: String): Unit = js.native
   def setAttribute(el: RElement, name: String, value: String, namespace: String): Unit = js.native
   def setProperty(el: RElement, name: String, value: js.Any): Unit = js.native

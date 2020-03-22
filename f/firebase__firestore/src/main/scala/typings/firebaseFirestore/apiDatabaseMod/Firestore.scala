@@ -1,6 +1,5 @@
 package typings.firebaseFirestore.apiDatabaseMod
 
-import typings.firebaseAppTypes.mod.FirebaseApp
 import typings.firebaseAuthInteropTypes.mod.FirebaseAuthInternalName
 import typings.firebaseComponent.mod.Provider
 import typings.firebaseFirestore.AnonDelete
@@ -9,6 +8,7 @@ import typings.firebaseFirestore.apiObserverMod.Unsubscribe
 import typings.firebaseFirestore.apiUserDataConverterMod.UserDataConverter
 import typings.firebaseFirestore.coreDatabaseInfoMod.DatabaseId
 import typings.firebaseFirestore.coreFirestoreClientMod.FirestoreClient
+import typings.firebaseFirestore.mod.FirebaseApp
 import typings.firebaseFirestore.utilAsyncQueueMod.AsyncQueue
 import typings.firebaseFirestoreTypes.mod.FirebaseFirestore
 import typings.firebaseFirestoreTypes.mod.LogLevel
@@ -20,8 +20,8 @@ import scala.scalajs.js.annotation._
 - typings.firebaseAppTypes.privateMod.FirebaseService because var conflicts: INTERNAL, app. Inlined  */ @JSImport("@firebase/firestore/dist/src/api/database", "Firestore")
 @js.native
 class Firestore protected () extends FirebaseFirestore {
-  def this(databaseIdOrApp: FirebaseApp, authProvider: Provider[FirebaseAuthInternalName]) = this()
   def this(databaseIdOrApp: FirestoreDatabase, authProvider: Provider[FirebaseAuthInternalName]) = this()
+  def this(databaseIdOrApp: FirebaseApp, authProvider: Provider[FirebaseAuthInternalName]) = this()
   @JSName("INTERNAL")
   var INTERNAL_Firestore: AnonDelete = js.native
   var _credentials: js.Any = js.native

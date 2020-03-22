@@ -6,10 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait HTMLElementTagNameMap extends js.Object {
   var `ion-action-sheet`: HTMLIonActionSheetElement
-  var `ion-action-sheet-controller`: HTMLIonActionSheetControllerElement
   var `ion-alert`: HTMLIonAlertElement
-  var `ion-alert-controller`: HTMLIonAlertControllerElement
-  var `ion-anchor`: HTMLIonAnchorElement
   var `ion-app`: HTMLIonAppElement
   var `ion-avatar`: HTMLIonAvatarElement
   var `ion-back-button`: HTMLIonBackButtonElement
@@ -47,24 +44,16 @@ trait HTMLElementTagNameMap extends js.Object {
   var `ion-list`: HTMLIonListElement
   var `ion-list-header`: HTMLIonListHeaderElement
   var `ion-loading`: HTMLIonLoadingElement
-  var `ion-loading-controller`: HTMLIonLoadingControllerElement
   var `ion-menu`: HTMLIonMenuElement
   var `ion-menu-button`: HTMLIonMenuButtonElement
-  var `ion-menu-controller`: HTMLIonMenuControllerElement
   var `ion-menu-toggle`: HTMLIonMenuToggleElement
   var `ion-modal`: HTMLIonModalElement
-  var `ion-modal-controller`: HTMLIonModalControllerElement
   var `ion-nav`: HTMLIonNavElement
   var `ion-nav-link`: HTMLIonNavLinkElement
-  var `ion-nav-pop`: HTMLIonNavPopElement
-  var `ion-nav-push`: HTMLIonNavPushElement
-  var `ion-nav-set-root`: HTMLIonNavSetRootElement
   var `ion-note`: HTMLIonNoteElement
   var `ion-picker`: HTMLIonPickerElement
   var `ion-picker-column`: HTMLIonPickerColumnElement
-  var `ion-picker-controller`: HTMLIonPickerControllerElement
   var `ion-popover`: HTMLIonPopoverElement
-  var `ion-popover-controller`: HTMLIonPopoverControllerElement
   var `ion-progress-bar`: HTMLIonProgressBarElement
   var `ion-radio`: HTMLIonRadioElement
   var `ion-radio-group`: HTMLIonRadioGroupElement
@@ -100,7 +89,6 @@ trait HTMLElementTagNameMap extends js.Object {
   var `ion-thumbnail`: HTMLIonThumbnailElement
   var `ion-title`: HTMLIonTitleElement
   var `ion-toast`: HTMLIonToastElement
-  var `ion-toast-controller`: HTMLIonToastControllerElement
   var `ion-toggle`: HTMLIonToggleElement
   var `ion-toolbar`: HTMLIonToolbarElement
   var `ion-virtual-scroll`: HTMLIonVirtualScrollElement
@@ -110,10 +98,7 @@ object HTMLElementTagNameMap {
   @scala.inline
   def apply(
     `ion-action-sheet`: HTMLIonActionSheetElement,
-    `ion-action-sheet-controller`: HTMLIonActionSheetControllerElement,
     `ion-alert`: HTMLIonAlertElement,
-    `ion-alert-controller`: HTMLIonAlertControllerElement,
-    `ion-anchor`: HTMLIonAnchorElement,
     `ion-app`: HTMLIonAppElement,
     `ion-avatar`: HTMLIonAvatarElement,
     `ion-back-button`: HTMLIonBackButtonElement,
@@ -151,24 +136,16 @@ object HTMLElementTagNameMap {
     `ion-list`: HTMLIonListElement,
     `ion-list-header`: HTMLIonListHeaderElement,
     `ion-loading`: HTMLIonLoadingElement,
-    `ion-loading-controller`: HTMLIonLoadingControllerElement,
     `ion-menu`: HTMLIonMenuElement,
     `ion-menu-button`: HTMLIonMenuButtonElement,
-    `ion-menu-controller`: HTMLIonMenuControllerElement,
     `ion-menu-toggle`: HTMLIonMenuToggleElement,
     `ion-modal`: HTMLIonModalElement,
-    `ion-modal-controller`: HTMLIonModalControllerElement,
     `ion-nav`: HTMLIonNavElement,
     `ion-nav-link`: HTMLIonNavLinkElement,
-    `ion-nav-pop`: HTMLIonNavPopElement,
-    `ion-nav-push`: HTMLIonNavPushElement,
-    `ion-nav-set-root`: HTMLIonNavSetRootElement,
     `ion-note`: HTMLIonNoteElement,
     `ion-picker`: HTMLIonPickerElement,
     `ion-picker-column`: HTMLIonPickerColumnElement,
-    `ion-picker-controller`: HTMLIonPickerControllerElement,
     `ion-popover`: HTMLIonPopoverElement,
-    `ion-popover-controller`: HTMLIonPopoverControllerElement,
     `ion-progress-bar`: HTMLIonProgressBarElement,
     `ion-radio`: HTMLIonRadioElement,
     `ion-radio-group`: HTMLIonRadioGroupElement,
@@ -204,17 +181,13 @@ object HTMLElementTagNameMap {
     `ion-thumbnail`: HTMLIonThumbnailElement,
     `ion-title`: HTMLIonTitleElement,
     `ion-toast`: HTMLIonToastElement,
-    `ion-toast-controller`: HTMLIonToastControllerElement,
     `ion-toggle`: HTMLIonToggleElement,
     `ion-toolbar`: HTMLIonToolbarElement,
     `ion-virtual-scroll`: HTMLIonVirtualScrollElement
   ): HTMLElementTagNameMap = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("ion-action-sheet")(`ion-action-sheet`.asInstanceOf[js.Any])
-    __obj.updateDynamic("ion-action-sheet-controller")(`ion-action-sheet-controller`.asInstanceOf[js.Any])
     __obj.updateDynamic("ion-alert")(`ion-alert`.asInstanceOf[js.Any])
-    __obj.updateDynamic("ion-alert-controller")(`ion-alert-controller`.asInstanceOf[js.Any])
-    __obj.updateDynamic("ion-anchor")(`ion-anchor`.asInstanceOf[js.Any])
     __obj.updateDynamic("ion-app")(`ion-app`.asInstanceOf[js.Any])
     __obj.updateDynamic("ion-avatar")(`ion-avatar`.asInstanceOf[js.Any])
     __obj.updateDynamic("ion-back-button")(`ion-back-button`.asInstanceOf[js.Any])
@@ -252,24 +225,16 @@ object HTMLElementTagNameMap {
     __obj.updateDynamic("ion-list")(`ion-list`.asInstanceOf[js.Any])
     __obj.updateDynamic("ion-list-header")(`ion-list-header`.asInstanceOf[js.Any])
     __obj.updateDynamic("ion-loading")(`ion-loading`.asInstanceOf[js.Any])
-    __obj.updateDynamic("ion-loading-controller")(`ion-loading-controller`.asInstanceOf[js.Any])
     __obj.updateDynamic("ion-menu")(`ion-menu`.asInstanceOf[js.Any])
     __obj.updateDynamic("ion-menu-button")(`ion-menu-button`.asInstanceOf[js.Any])
-    __obj.updateDynamic("ion-menu-controller")(`ion-menu-controller`.asInstanceOf[js.Any])
     __obj.updateDynamic("ion-menu-toggle")(`ion-menu-toggle`.asInstanceOf[js.Any])
     __obj.updateDynamic("ion-modal")(`ion-modal`.asInstanceOf[js.Any])
-    __obj.updateDynamic("ion-modal-controller")(`ion-modal-controller`.asInstanceOf[js.Any])
     __obj.updateDynamic("ion-nav")(`ion-nav`.asInstanceOf[js.Any])
     __obj.updateDynamic("ion-nav-link")(`ion-nav-link`.asInstanceOf[js.Any])
-    __obj.updateDynamic("ion-nav-pop")(`ion-nav-pop`.asInstanceOf[js.Any])
-    __obj.updateDynamic("ion-nav-push")(`ion-nav-push`.asInstanceOf[js.Any])
-    __obj.updateDynamic("ion-nav-set-root")(`ion-nav-set-root`.asInstanceOf[js.Any])
     __obj.updateDynamic("ion-note")(`ion-note`.asInstanceOf[js.Any])
     __obj.updateDynamic("ion-picker")(`ion-picker`.asInstanceOf[js.Any])
     __obj.updateDynamic("ion-picker-column")(`ion-picker-column`.asInstanceOf[js.Any])
-    __obj.updateDynamic("ion-picker-controller")(`ion-picker-controller`.asInstanceOf[js.Any])
     __obj.updateDynamic("ion-popover")(`ion-popover`.asInstanceOf[js.Any])
-    __obj.updateDynamic("ion-popover-controller")(`ion-popover-controller`.asInstanceOf[js.Any])
     __obj.updateDynamic("ion-progress-bar")(`ion-progress-bar`.asInstanceOf[js.Any])
     __obj.updateDynamic("ion-radio")(`ion-radio`.asInstanceOf[js.Any])
     __obj.updateDynamic("ion-radio-group")(`ion-radio-group`.asInstanceOf[js.Any])
@@ -305,7 +270,6 @@ object HTMLElementTagNameMap {
     __obj.updateDynamic("ion-thumbnail")(`ion-thumbnail`.asInstanceOf[js.Any])
     __obj.updateDynamic("ion-title")(`ion-title`.asInstanceOf[js.Any])
     __obj.updateDynamic("ion-toast")(`ion-toast`.asInstanceOf[js.Any])
-    __obj.updateDynamic("ion-toast-controller")(`ion-toast-controller`.asInstanceOf[js.Any])
     __obj.updateDynamic("ion-toggle")(`ion-toggle`.asInstanceOf[js.Any])
     __obj.updateDynamic("ion-toolbar")(`ion-toolbar`.asInstanceOf[js.Any])
     __obj.updateDynamic("ion-virtual-scroll")(`ion-virtual-scroll`.asInstanceOf[js.Any])

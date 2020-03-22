@@ -12,9 +12,9 @@ object isMod extends js.Object {
   def error(value: js.Any): /* is std.Error */ Boolean = js.native
   def func(value: js.Any): /* is std.Function */ Boolean = js.native
   def number(value: js.Any): /* is number */ Boolean = js.native
+  def objectLiteral(value: js.Any): /* is object */ Boolean = js.native
   def string(value: js.Any): /* is string */ Boolean = js.native
   def stringArray(value: js.Any): /* is std.Array<string> */ Boolean = js.native
-  def thenable[T](value: js.Any): /* is vscode-jsonrpc.Thenable<T> */ Boolean = js.native
   def typedArray[T](value: js.Any, check: js.Function1[/* value */ js.Any, Boolean]): /* is std.Array<T> */ Boolean = js.native
 }
 

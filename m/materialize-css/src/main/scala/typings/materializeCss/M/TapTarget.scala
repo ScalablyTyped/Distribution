@@ -1,8 +1,8 @@
 package typings.materializeCss.M
 
 import typings.materializeCss.MElements
+import typings.materializeCss.PartialTapTargetOptions
 import typings.std.Element
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -36,11 +36,11 @@ object TapTarget extends js.Object {
     * Init TapTargets
     */
   def init(els: MElements): js.Array[TapTarget] = js.native
-  def init(els: MElements, options: Partial[TapTargetOptions]): js.Array[TapTarget] = js.native
+  def init(els: MElements, options: PartialTapTargetOptions): js.Array[TapTarget] = js.native
   /**
     * Init TapTarget
     */
   def init(els: Element): TapTarget = js.native
-  def init(els: Element, options: Partial[TapTargetOptions]): TapTarget = js.native
+  def init(els: Element, options: PartialTapTargetOptions): TapTarget = js.native
 }
 

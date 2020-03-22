@@ -46,9 +46,6 @@ object formatjsIntlRelativetimeformatStrings {
        with typings.formatjsIntlRelativetimeformat.typesMod.Units
   
   @js.native
-  sealed trait localeMatcher extends js.Object
-  
-  @js.native
   sealed trait long extends js.Object
   
   @js.native
@@ -158,8 +155,6 @@ object formatjsIntlRelativetimeformatStrings {
   def hour: hour = "hour".asInstanceOf[hour]
   @scala.inline
   def hours: hours = "hours".asInstanceOf[hours]
-  @scala.inline
-  def localeMatcher: localeMatcher = "localeMatcher".asInstanceOf[localeMatcher]
   @scala.inline
   def long: long = "long".asInstanceOf[long]
   @scala.inline

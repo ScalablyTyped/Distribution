@@ -1,7 +1,7 @@
 
 # Scala.js typings for upper-case-first
 
-Typings are for version 1.1.2
+Typings are for version 2.0.1
 
 ## Library description:
 Transforms the string with the first character in upper cased

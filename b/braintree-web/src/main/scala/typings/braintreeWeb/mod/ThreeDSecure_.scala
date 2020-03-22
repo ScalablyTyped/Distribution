@@ -1,10 +1,10 @@
 package typings.braintreeWeb.mod
 
 import typings.braintreeWeb.AnonAddFrame
-import typings.braintreeWeb.AnonAddFrameAmount
 import typings.braintreeWeb.AnonBin
 import typings.braintreeWeb.AnonClient
-import typings.braintreeWeb.AnonClientVersion
+import typings.braintreeWeb.AnonRemoveFrame
+import typings.braintreeWeb.AnonVersion
 import typings.std.HTMLIFrameElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -60,9 +60,9 @@ trait ThreeDSecure_ extends js.Object {
     * }, callback);
     */
   def create(options: AnonClient): js.Promise[ThreeDSecure_] = js.native
-  def create(options: AnonClientVersion): js.Promise[ThreeDSecure_] = js.native
-  def create(options: AnonClientVersion, callback: callback): Unit = js.native
   def create(options: AnonClient, callback: callback): Unit = js.native
+  def create(options: AnonVersion): js.Promise[ThreeDSecure_] = js.native
+  def create(options: AnonVersion, callback: callback): Unit = js.native
   /**
     * Gather the data needed for a 3D Secure lookup call.
     *
@@ -148,6 +148,6 @@ trait ThreeDSecure_ extends js.Object {
     * });
     */
   def verifyCard(options: AnonAddFrame): js.Promise[ThreeDSecureVerifyPayload] = js.native
-  def verifyCard(options: AnonAddFrameAmount, callback: callback): Unit = js.native
+  def verifyCard(options: AnonRemoveFrame, callback: callback): Unit = js.native
 }
 

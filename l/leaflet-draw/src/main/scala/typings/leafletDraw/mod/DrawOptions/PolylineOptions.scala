@@ -3,7 +3,7 @@ package typings.leafletDraw.mod.DrawOptions
 import typings.leaflet.mod.DivIcon_
 import typings.leaflet.mod.IconOptions
 import typings.leaflet.mod.Icon_
-import typings.leafletDraw.AnonClickable
+import typings.leafletDraw.PolylineOptionsclickableb
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -69,7 +69,7 @@ trait PolylineOptions extends SimpleShapeOptions {
     *
     * @default { stroke: true, color: '#3388ff', weight: 4, opacity: 0.5, fill: false, clickable: true }
     */
-  var shapeOptions: js.UndefOr[typings.leaflet.mod.PolylineOptions with AnonClickable] = js.undefined
+  var shapeOptions: js.UndefOr[PolylineOptionsclickableb] = js.undefined
   /**
     * Whether to display distance in the tooltip
     *
@@ -99,7 +99,7 @@ object PolylineOptions {
     metric: js.UndefOr[Boolean] = js.undefined,
     nautic: js.UndefOr[Boolean] = js.undefined,
     repeatMode: js.UndefOr[Boolean] = js.undefined,
-    shapeOptions: typings.leaflet.mod.PolylineOptions with AnonClickable = null,
+    shapeOptions: PolylineOptionsclickableb = null,
     showLength: js.UndefOr[Boolean] = js.undefined,
     touchIcon: Icon_[IconOptions] | DivIcon_ = null,
     zIndexOffset: Int | Double = null

@@ -1,6 +1,6 @@
 package typings.hlsParser.mod
 
-import typings.std.Partial
+import typings.hlsParser.PartialOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("hls-parser", "setOptions")
 @js.native
 object setOptions extends js.Object {
-  def apply(overrides: Partial[Options]): Unit = js.native
+  def apply(overrides: PartialOptions): Unit = js.native
 }
 

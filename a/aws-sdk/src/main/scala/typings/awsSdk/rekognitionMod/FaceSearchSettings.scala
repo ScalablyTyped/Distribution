@@ -11,7 +11,7 @@ trait FaceSearchSettings extends js.Object {
     */
   var CollectionId: js.UndefOr[typings.awsSdk.rekognitionMod.CollectionId] = js.native
   /**
-    * Minimum face match confidence score that must be met to return a result for a recognized face. Default is 70. 0 is the lowest confidence. 100 is the highest confidence.
+    * Minimum face match confidence score that must be met to return a result for a recognized face. Default is 80. 0 is the lowest confidence. 100 is the highest confidence.
     */
   var FaceMatchThreshold: js.UndefOr[Percent] = js.native
 }

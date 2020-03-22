@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/react/dist/types/lifecycle/IonLifeCycleHOC", JSImport.Namespace)
 @js.native
 object ionLifeCycleHOCMod extends js.Object {
-  def withIonLifeCycle(WrappedComponent: ComponentType[_]): AnonContextType = js.native
+  def withIonLifeCycle(WrappedComponent: ComponentType[_]): AnonInstantiable = js.native
 }
 

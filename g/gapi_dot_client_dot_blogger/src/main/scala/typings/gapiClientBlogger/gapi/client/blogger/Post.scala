@@ -2,8 +2,8 @@ package typings.gapiClientBlogger.gapi.client.blogger
 
 import typings.gapiClientBlogger.AnonDisplayName
 import typings.gapiClientBlogger.AnonId
-import typings.gapiClientBlogger.AnonItemsSelfLink
 import typings.gapiClientBlogger.AnonLat
+import typings.gapiClientBlogger.AnonTotalItems
 import typings.gapiClientBlogger.AnonUrl
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -35,7 +35,7 @@ trait Post extends js.Object {
   /** Comment control and display setting for readers of this post. */
   var readerComments: js.UndefOr[String] = js.undefined
   /** The container of comments on this Post. */
-  var replies: js.UndefOr[AnonItemsSelfLink] = js.undefined
+  var replies: js.UndefOr[AnonTotalItems] = js.undefined
   /** The API REST URL to fetch this resource from. */
   var selfLink: js.UndefOr[String] = js.undefined
   /** Status of the post. Only set for admin-level requests */
@@ -65,7 +65,7 @@ object Post {
     location: AnonLat = null,
     published: String = null,
     readerComments: String = null,
-    replies: AnonItemsSelfLink = null,
+    replies: AnonTotalItems = null,
     selfLink: String = null,
     status: String = null,
     title: String = null,

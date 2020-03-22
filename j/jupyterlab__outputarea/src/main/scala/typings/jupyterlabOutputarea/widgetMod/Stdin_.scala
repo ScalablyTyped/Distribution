@@ -28,5 +28,10 @@ class Stdin_ protected () extends IStdin {
     * not be called directly by user code.
     */
   def handleEvent(event: Event_): Unit = js.native
+  /**
+    * The value of the widget.
+    */
+  @JSName("value")
+  def value_MStdin_(): js.Promise[String] = js.native
 }
 

@@ -1,7 +1,6 @@
 package typings.reactContentLoader
 
 import typings.reactContentLoader.mod.IContentLoaderProps
-import typings.reactContentLoader.svgMod.RequiredIContentLoaderProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,23 +13,20 @@ trait reactContentLoaderProps {
   def BulletListStyleProps: IContentLoaderProps.type = typings.reactContentLoader.mod.IContentLoaderProps
   type BulletListStyleProps = IContentLoaderProps
   @scala.inline
-  def CircleProps: typings.reactNativeSvg.mod.CircleProps.type = typings.reactNativeSvg.mod.CircleProps
-  type CircleProps = typings.reactNativeSvg.mod.CircleProps
-  @scala.inline
   def CodeProps: IContentLoaderProps.type = typings.reactContentLoader.mod.IContentLoaderProps
   type CodeProps = IContentLoaderProps
   @scala.inline
   def CodeStyleProps: IContentLoaderProps.type = typings.reactContentLoader.mod.IContentLoaderProps
   type CodeStyleProps = IContentLoaderProps
   @scala.inline
+  def ContentLoaderProps: IContentLoaderProps.type = typings.reactContentLoader.mod.IContentLoaderProps
+  type ContentLoaderProps = IContentLoaderProps
+  @scala.inline
   def FacebookProps: IContentLoaderProps.type = typings.reactContentLoader.mod.IContentLoaderProps
   type FacebookProps = IContentLoaderProps
   @scala.inline
   def FacebookStyleProps: IContentLoaderProps.type = typings.reactContentLoader.mod.IContentLoaderProps
   type FacebookStyleProps = IContentLoaderProps
-  @scala.inline
-  def HolderProps: typings.reactContentLoader.interfaceMod.IContentLoaderProps.type = typings.reactContentLoader.interfaceMod.IContentLoaderProps
-  type HolderProps = typings.reactContentLoader.interfaceMod.IContentLoaderProps
   @scala.inline
   def InstagramProps: IContentLoaderProps.type = typings.reactContentLoader.mod.IContentLoaderProps
   type InstagramProps = IContentLoaderProps
@@ -44,14 +40,10 @@ trait reactContentLoaderProps {
   def ListStyleProps: IContentLoaderProps.type = typings.reactContentLoader.mod.IContentLoaderProps
   type ListStyleProps = IContentLoaderProps
   @scala.inline
-  def NativeProps: typings.reactContentLoader.interfaceMod.IContentLoaderProps.type = typings.reactContentLoader.interfaceMod.IContentLoaderProps
-  type NativeProps = typings.reactContentLoader.interfaceMod.IContentLoaderProps
-  @scala.inline
   def ReactContentLoaderProps: IContentLoaderProps.type = typings.reactContentLoader.mod.IContentLoaderProps
   type ReactContentLoaderProps = IContentLoaderProps
   @scala.inline
-  def RectProps: typings.reactNativeSvg.mod.RectProps.type = typings.reactNativeSvg.mod.RectProps
-  type RectProps = typings.reactNativeSvg.mod.RectProps
-  type SvgProps = RequiredIContentLoaderProps
+  def SvgProps: IContentLoaderProps.type = typings.reactContentLoader.mod.IContentLoaderProps
+  type SvgProps = IContentLoaderProps
 }
 

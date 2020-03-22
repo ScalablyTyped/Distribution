@@ -1,14 +1,14 @@
 package typings.activedirectory2.mod
 
-import typings.activedirectory2.AnonCn
 import typings.activedirectory2.AnonEnabled
+import typings.activedirectory2.AnonGroup
 import typings.activedirectory2.activedirectory2Numbers.`1000`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ADProperties extends js.Object {
-  var attributes: js.UndefOr[AnonCn] = js.undefined
+  var attributes: js.UndefOr[AnonGroup] = js.undefined
   var baseDN: String
   var entryParser: js.UndefOr[
     js.Function3[
@@ -32,7 +32,7 @@ object ADProperties {
     password: String,
     url: String,
     username: String,
-    attributes: AnonCn = null,
+    attributes: AnonGroup = null,
     entryParser: (/* entry */ js.Object, /* raw */ String, /* cb */ js.Function1[/* entry */ js.Object, Unit]) => Unit = null,
     pageSize: `1000` = null,
     referrals: AnonEnabled = null

@@ -52,14 +52,14 @@ trait Lightsail extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ AttachInstancesToLoadBalancerResult, Unit]
   ): Request[AttachInstancesToLoadBalancerResult, AWSError] = js.native
   /**
-    * Attaches a Transport Layer Security (TLS) certificate to your load balancer. TLS is just an updated, more secure version of Secure Socket Layer (SSL). Once you create and validate your certificate, you can attach it to your load balancer. You can also use this API to rotate the certificates on your account. Use the attach load balancer tls certificate operation with the non-attached certificate, and it will replace the existing one and become the attached certificate. The attach load balancer tls certificate operation supports tag-based access control via resource tags applied to the resource identified by load balancer name. For more information, see the Lightsail Dev Guide.
+    * Attaches a Transport Layer Security (TLS) certificate to your load balancer. TLS is just an updated, more secure version of Secure Socket Layer (SSL). Once you create and validate your certificate, you can attach it to your load balancer. You can also use this API to rotate the certificates on your account. Use the AttachLoadBalancerTlsCertificate action with the non-attached certificate, and it will replace the existing one and become the attached certificate. The AttachLoadBalancerTlsCertificate operation supports tag-based access control via resource tags applied to the resource identified by load balancer name. For more information, see the Lightsail Dev Guide.
     */
   def attachLoadBalancerTlsCertificate(): Request[AttachLoadBalancerTlsCertificateResult, AWSError] = js.native
   def attachLoadBalancerTlsCertificate(
     callback: js.Function2[/* err */ AWSError, /* data */ AttachLoadBalancerTlsCertificateResult, Unit]
   ): Request[AttachLoadBalancerTlsCertificateResult, AWSError] = js.native
   /**
-    * Attaches a Transport Layer Security (TLS) certificate to your load balancer. TLS is just an updated, more secure version of Secure Socket Layer (SSL). Once you create and validate your certificate, you can attach it to your load balancer. You can also use this API to rotate the certificates on your account. Use the attach load balancer tls certificate operation with the non-attached certificate, and it will replace the existing one and become the attached certificate. The attach load balancer tls certificate operation supports tag-based access control via resource tags applied to the resource identified by load balancer name. For more information, see the Lightsail Dev Guide.
+    * Attaches a Transport Layer Security (TLS) certificate to your load balancer. TLS is just an updated, more secure version of Secure Socket Layer (SSL). Once you create and validate your certificate, you can attach it to your load balancer. You can also use this API to rotate the certificates on your account. Use the AttachLoadBalancerTlsCertificate action with the non-attached certificate, and it will replace the existing one and become the attached certificate. The AttachLoadBalancerTlsCertificate operation supports tag-based access control via resource tags applied to the resource identified by load balancer name. For more information, see the Lightsail Dev Guide.
     */
   def attachLoadBalancerTlsCertificate(params: AttachLoadBalancerTlsCertificateRequest): Request[AttachLoadBalancerTlsCertificateResult, AWSError] = js.native
   def attachLoadBalancerTlsCertificate(
@@ -118,6 +118,19 @@ trait Lightsail extends Service {
     params: CreateCloudFormationStackRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateCloudFormationStackResult, Unit]
   ): Request[CreateCloudFormationStackResult, AWSError] = js.native
+  /**
+    * Creates an email or SMS text message contact method. A contact method is used to send you notifications about your Amazon Lightsail resources. You can add one email address and one mobile phone number contact method in each AWS Region. However, SMS text messaging is not supported in some AWS Regions, and SMS text messages cannot be sent to some countries/regions. For more information, see Notifications in Amazon Lightsail.
+    */
+  def createContactMethod(): Request[CreateContactMethodResult, AWSError] = js.native
+  def createContactMethod(callback: js.Function2[/* err */ AWSError, /* data */ CreateContactMethodResult, Unit]): Request[CreateContactMethodResult, AWSError] = js.native
+  /**
+    * Creates an email or SMS text message contact method. A contact method is used to send you notifications about your Amazon Lightsail resources. You can add one email address and one mobile phone number contact method in each AWS Region. However, SMS text messaging is not supported in some AWS Regions, and SMS text messages cannot be sent to some countries/regions. For more information, see Notifications in Amazon Lightsail.
+    */
+  def createContactMethod(params: CreateContactMethodRequest): Request[CreateContactMethodResult, AWSError] = js.native
+  def createContactMethod(
+    params: CreateContactMethodRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateContactMethodResult, Unit]
+  ): Request[CreateContactMethodResult, AWSError] = js.native
   /**
     * Creates a block storage disk that can be attached to an Amazon Lightsail instance in the same Availability Zone (e.g., us-east-2a). The create disk operation supports tag-based access control via request tags. For more information, see the Lightsail Dev Guide.
     */
@@ -249,14 +262,14 @@ trait Lightsail extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateLoadBalancerResult, Unit]
   ): Request[CreateLoadBalancerResult, AWSError] = js.native
   /**
-    * Creates a Lightsail load balancer TLS certificate. TLS is just an updated, more secure version of Secure Socket Layer (SSL). The create load balancer tls certificate operation supports tag-based access control via resource tags applied to the resource identified by load balancer name. For more information, see the Lightsail Dev Guide.
+    * Creates a Lightsail load balancer TLS certificate. TLS is just an updated, more secure version of Secure Socket Layer (SSL). The CreateLoadBalancerTlsCertificate operation supports tag-based access control via resource tags applied to the resource identified by load balancer name. For more information, see the Lightsail Dev Guide.
     */
   def createLoadBalancerTlsCertificate(): Request[CreateLoadBalancerTlsCertificateResult, AWSError] = js.native
   def createLoadBalancerTlsCertificate(
     callback: js.Function2[/* err */ AWSError, /* data */ CreateLoadBalancerTlsCertificateResult, Unit]
   ): Request[CreateLoadBalancerTlsCertificateResult, AWSError] = js.native
   /**
-    * Creates a Lightsail load balancer TLS certificate. TLS is just an updated, more secure version of Secure Socket Layer (SSL). The create load balancer tls certificate operation supports tag-based access control via resource tags applied to the resource identified by load balancer name. For more information, see the Lightsail Dev Guide.
+    * Creates a Lightsail load balancer TLS certificate. TLS is just an updated, more secure version of Secure Socket Layer (SSL). The CreateLoadBalancerTlsCertificate operation supports tag-based access control via resource tags applied to the resource identified by load balancer name. For more information, see the Lightsail Dev Guide.
     */
   def createLoadBalancerTlsCertificate(params: CreateLoadBalancerTlsCertificateRequest): Request[CreateLoadBalancerTlsCertificateResult, AWSError] = js.native
   def createLoadBalancerTlsCertificate(
@@ -307,6 +320,19 @@ trait Lightsail extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateRelationalDatabaseSnapshotResult, Unit]
   ): Request[CreateRelationalDatabaseSnapshotResult, AWSError] = js.native
   /**
+    * Deletes an alarm. An alarm is used to monitor a single metric for one of your resources. When a metric condition is met, the alarm can notify you by email, SMS text message, and a banner displayed on the Amazon Lightsail console. For more information, see Alarms in Amazon Lightsail.
+    */
+  def deleteAlarm(): Request[DeleteAlarmResult, AWSError] = js.native
+  def deleteAlarm(callback: js.Function2[/* err */ AWSError, /* data */ DeleteAlarmResult, Unit]): Request[DeleteAlarmResult, AWSError] = js.native
+  /**
+    * Deletes an alarm. An alarm is used to monitor a single metric for one of your resources. When a metric condition is met, the alarm can notify you by email, SMS text message, and a banner displayed on the Amazon Lightsail console. For more information, see Alarms in Amazon Lightsail.
+    */
+  def deleteAlarm(params: DeleteAlarmRequest): Request[DeleteAlarmResult, AWSError] = js.native
+  def deleteAlarm(
+    params: DeleteAlarmRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteAlarmResult, Unit]
+  ): Request[DeleteAlarmResult, AWSError] = js.native
+  /**
     * Deletes an automatic snapshot of an instance or disk. For more information, see the Lightsail Dev Guide.
     */
   def deleteAutoSnapshot(): Request[DeleteAutoSnapshotResult, AWSError] = js.native
@@ -319,6 +345,19 @@ trait Lightsail extends Service {
     params: DeleteAutoSnapshotRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteAutoSnapshotResult, Unit]
   ): Request[DeleteAutoSnapshotResult, AWSError] = js.native
+  /**
+    * Deletes a contact method. A contact method is used to send you notifications about your Amazon Lightsail resources. You can add one email address and one mobile phone number contact method in each AWS Region. However, SMS text messaging is not supported in some AWS Regions, and SMS text messages cannot be sent to some countries/regions. For more information, see Notifications in Amazon Lightsail.
+    */
+  def deleteContactMethod(): Request[DeleteContactMethodResult, AWSError] = js.native
+  def deleteContactMethod(callback: js.Function2[/* err */ AWSError, /* data */ DeleteContactMethodResult, Unit]): Request[DeleteContactMethodResult, AWSError] = js.native
+  /**
+    * Deletes a contact method. A contact method is used to send you notifications about your Amazon Lightsail resources. You can add one email address and one mobile phone number contact method in each AWS Region. However, SMS text messaging is not supported in some AWS Regions, and SMS text messages cannot be sent to some countries/regions. For more information, see Notifications in Amazon Lightsail.
+    */
+  def deleteContactMethod(params: DeleteContactMethodRequest): Request[DeleteContactMethodResult, AWSError] = js.native
+  def deleteContactMethod(
+    params: DeleteContactMethodRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteContactMethodResult, Unit]
+  ): Request[DeleteContactMethodResult, AWSError] = js.native
   /**
     * Deletes the specified block storage disk. The disk must be in the available state (not attached to a Lightsail instance).  The disk may remain in the deleting state for several minutes.  The delete disk operation supports tag-based access control via resource tags applied to the resource identified by disk name. For more information, see the Lightsail Dev Guide.
     */
@@ -437,14 +476,14 @@ trait Lightsail extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteLoadBalancerResult, Unit]
   ): Request[DeleteLoadBalancerResult, AWSError] = js.native
   /**
-    * Deletes an SSL/TLS certificate associated with a Lightsail load balancer. The delete load balancer tls certificate operation supports tag-based access control via resource tags applied to the resource identified by load balancer name. For more information, see the Lightsail Dev Guide.
+    * Deletes an SSL/TLS certificate associated with a Lightsail load balancer. The DeleteLoadBalancerTlsCertificate operation supports tag-based access control via resource tags applied to the resource identified by load balancer name. For more information, see the Lightsail Dev Guide.
     */
   def deleteLoadBalancerTlsCertificate(): Request[DeleteLoadBalancerTlsCertificateResult, AWSError] = js.native
   def deleteLoadBalancerTlsCertificate(
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteLoadBalancerTlsCertificateResult, Unit]
   ): Request[DeleteLoadBalancerTlsCertificateResult, AWSError] = js.native
   /**
-    * Deletes an SSL/TLS certificate associated with a Lightsail load balancer. The delete load balancer tls certificate operation supports tag-based access control via resource tags applied to the resource identified by load balancer name. For more information, see the Lightsail Dev Guide.
+    * Deletes an SSL/TLS certificate associated with a Lightsail load balancer. The DeleteLoadBalancerTlsCertificate operation supports tag-based access control via resource tags applied to the resource identified by load balancer name. For more information, see the Lightsail Dev Guide.
     */
   def deleteLoadBalancerTlsCertificate(params: DeleteLoadBalancerTlsCertificateRequest): Request[DeleteLoadBalancerTlsCertificateResult, AWSError] = js.native
   def deleteLoadBalancerTlsCertificate(
@@ -584,6 +623,19 @@ trait Lightsail extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetActiveNamesResult, Unit]
   ): Request[GetActiveNamesResult, AWSError] = js.native
   /**
+    * Returns information about the configured alarms. Specify an alarm name in your request to return information about a specific alarm, or specify a monitored resource name to return information about all alarms for a specific resource. An alarm is used to monitor a single metric for one of your resources. When a metric condition is met, the alarm can notify you by email, SMS text message, and a banner displayed on the Amazon Lightsail console. For more information, see Alarms in Amazon Lightsail.
+    */
+  def getAlarms(): Request[GetAlarmsResult, AWSError] = js.native
+  def getAlarms(callback: js.Function2[/* err */ AWSError, /* data */ GetAlarmsResult, Unit]): Request[GetAlarmsResult, AWSError] = js.native
+  /**
+    * Returns information about the configured alarms. Specify an alarm name in your request to return information about a specific alarm, or specify a monitored resource name to return information about all alarms for a specific resource. An alarm is used to monitor a single metric for one of your resources. When a metric condition is met, the alarm can notify you by email, SMS text message, and a banner displayed on the Amazon Lightsail console. For more information, see Alarms in Amazon Lightsail.
+    */
+  def getAlarms(params: GetAlarmsRequest): Request[GetAlarmsResult, AWSError] = js.native
+  def getAlarms(
+    params: GetAlarmsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetAlarmsResult, Unit]
+  ): Request[GetAlarmsResult, AWSError] = js.native
+  /**
     * Returns the available automatic snapshots for an instance or disk. For more information, see the Lightsail Dev Guide.
     */
   def getAutoSnapshots(): Request[GetAutoSnapshotsResult, AWSError] = js.native
@@ -636,6 +688,19 @@ trait Lightsail extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetCloudFormationStackRecordsResult, Unit]
   ): Request[GetCloudFormationStackRecordsResult, AWSError] = js.native
   /**
+    * Returns information about the configured contact methods. Specify a protocol in your request to return information about a specific contact method. A contact method is used to send you notifications about your Amazon Lightsail resources. You can add one email address and one mobile phone number contact method in each AWS Region. However, SMS text messaging is not supported in some AWS Regions, and SMS text messages cannot be sent to some countries/regions. For more information, see Notifications in Amazon Lightsail.
+    */
+  def getContactMethods(): Request[GetContactMethodsResult, AWSError] = js.native
+  def getContactMethods(callback: js.Function2[/* err */ AWSError, /* data */ GetContactMethodsResult, Unit]): Request[GetContactMethodsResult, AWSError] = js.native
+  /**
+    * Returns information about the configured contact methods. Specify a protocol in your request to return information about a specific contact method. A contact method is used to send you notifications about your Amazon Lightsail resources. You can add one email address and one mobile phone number contact method in each AWS Region. However, SMS text messaging is not supported in some AWS Regions, and SMS text messages cannot be sent to some countries/regions. For more information, see Notifications in Amazon Lightsail.
+    */
+  def getContactMethods(params: GetContactMethodsRequest): Request[GetContactMethodsResult, AWSError] = js.native
+  def getContactMethods(
+    params: GetContactMethodsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetContactMethodsResult, Unit]
+  ): Request[GetContactMethodsResult, AWSError] = js.native
+  /**
     * Returns information about a specific block storage disk.
     */
   def getDisk(): Request[GetDiskResult, AWSError] = js.native
@@ -659,12 +724,12 @@ trait Lightsail extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetDiskSnapshotResult, Unit]
   ): Request[GetDiskSnapshotResult, AWSError] = js.native
   /**
-    * Returns information about all block storage disk snapshots in your AWS account and region. If you are describing a long list of disk snapshots, you can paginate the output to make the list more manageable. You can use the pageToken and nextPageToken values to retrieve the next items in the list.
+    * Returns information about all block storage disk snapshots in your AWS account and region.
     */
   def getDiskSnapshots(): Request[GetDiskSnapshotsResult, AWSError] = js.native
   def getDiskSnapshots(callback: js.Function2[/* err */ AWSError, /* data */ GetDiskSnapshotsResult, Unit]): Request[GetDiskSnapshotsResult, AWSError] = js.native
   /**
-    * Returns information about all block storage disk snapshots in your AWS account and region. If you are describing a long list of disk snapshots, you can paginate the output to make the list more manageable. You can use the pageToken and nextPageToken values to retrieve the next items in the list.
+    * Returns information about all block storage disk snapshots in your AWS account and region.
     */
   def getDiskSnapshots(params: GetDiskSnapshotsRequest): Request[GetDiskSnapshotsResult, AWSError] = js.native
   def getDiskSnapshots(
@@ -672,12 +737,12 @@ trait Lightsail extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetDiskSnapshotsResult, Unit]
   ): Request[GetDiskSnapshotsResult, AWSError] = js.native
   /**
-    * Returns information about all block storage disks in your AWS account and region. If you are describing a long list of disks, you can paginate the output to make the list more manageable. You can use the pageToken and nextPageToken values to retrieve the next items in the list.
+    * Returns information about all block storage disks in your AWS account and region.
     */
   def getDisks(): Request[GetDisksResult, AWSError] = js.native
   def getDisks(callback: js.Function2[/* err */ AWSError, /* data */ GetDisksResult, Unit]): Request[GetDisksResult, AWSError] = js.native
   /**
-    * Returns information about all block storage disks in your AWS account and region. If you are describing a long list of disks, you can paginate the output to make the list more manageable. You can use the pageToken and nextPageToken values to retrieve the next items in the list.
+    * Returns information about all block storage disks in your AWS account and region.
     */
   def getDisks(params: GetDisksRequest): Request[GetDisksResult, AWSError] = js.native
   def getDisks(
@@ -893,12 +958,12 @@ trait Lightsail extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetLoadBalancerTlsCertificatesResult, Unit]
   ): Request[GetLoadBalancerTlsCertificatesResult, AWSError] = js.native
   /**
-    * Returns information about all load balancers in an account. If you are describing a long list of load balancers, you can paginate the output to make the list more manageable. You can use the pageToken and nextPageToken values to retrieve the next items in the list.
+    * Returns information about all load balancers in an account.
     */
   def getLoadBalancers(): Request[GetLoadBalancersResult, AWSError] = js.native
   def getLoadBalancers(callback: js.Function2[/* err */ AWSError, /* data */ GetLoadBalancersResult, Unit]): Request[GetLoadBalancersResult, AWSError] = js.native
   /**
-    * Returns information about all load balancers in an account. If you are describing a long list of load balancers, you can paginate the output to make the list more manageable. You can use the pageToken and nextPageToken values to retrieve the next items in the list.
+    * Returns information about all load balancers in an account.
     */
   def getLoadBalancers(params: GetLoadBalancersRequest): Request[GetLoadBalancersResult, AWSError] = js.native
   def getLoadBalancers(
@@ -1191,6 +1256,19 @@ trait Lightsail extends Service {
   def peerVpc(params: PeerVpcRequest): Request[PeerVpcResult, AWSError] = js.native
   def peerVpc(params: PeerVpcRequest, callback: js.Function2[/* err */ AWSError, /* data */ PeerVpcResult, Unit]): Request[PeerVpcResult, AWSError] = js.native
   /**
+    * Creates or updates an alarm, and associates it with the specified metric. An alarm is used to monitor a single metric for one of your resources. When a metric condition is met, the alarm can notify you by email, SMS text message, and a banner displayed on the Amazon Lightsail console. For more information, see Alarms in Amazon Lightsail. When this action creates an alarm, the alarm state is immediately set to INSUFFICIENT_DATA. The alarm is then evaluated and its state is set appropriately. Any actions associated with the new state are then executed. When you update an existing alarm, its state is left unchanged, but the update completely overwrites the previous configuration of the alarm. The alarm is then evaluated with the updated configuration.
+    */
+  def putAlarm(): Request[PutAlarmResult, AWSError] = js.native
+  def putAlarm(callback: js.Function2[/* err */ AWSError, /* data */ PutAlarmResult, Unit]): Request[PutAlarmResult, AWSError] = js.native
+  /**
+    * Creates or updates an alarm, and associates it with the specified metric. An alarm is used to monitor a single metric for one of your resources. When a metric condition is met, the alarm can notify you by email, SMS text message, and a banner displayed on the Amazon Lightsail console. For more information, see Alarms in Amazon Lightsail. When this action creates an alarm, the alarm state is immediately set to INSUFFICIENT_DATA. The alarm is then evaluated and its state is set appropriately. Any actions associated with the new state are then executed. When you update an existing alarm, its state is left unchanged, but the update completely overwrites the previous configuration of the alarm. The alarm is then evaluated with the updated configuration.
+    */
+  def putAlarm(params: PutAlarmRequest): Request[PutAlarmResult, AWSError] = js.native
+  def putAlarm(
+    params: PutAlarmRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ PutAlarmResult, Unit]
+  ): Request[PutAlarmResult, AWSError] = js.native
+  /**
     * Sets the specified open ports for an Amazon Lightsail instance, and closes all ports for every protocol not included in the current request. The put instance public ports operation supports tag-based access control via resource tags applied to the resource identified by instance name. For more information, see the Lightsail Dev Guide.
     */
   def putInstancePublicPorts(): Request[PutInstancePublicPortsResult, AWSError] = js.native
@@ -1242,6 +1320,19 @@ trait Lightsail extends Service {
     params: ReleaseStaticIpRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ReleaseStaticIpResult, Unit]
   ): Request[ReleaseStaticIpResult, AWSError] = js.native
+  /**
+    * Sends a verification request to an email contact method to ensure it’s owned by the requester. SMS contact methods don’t need to be verified. A contact method is used to send you notifications about your Amazon Lightsail resources. You can add one email address and one mobile phone number contact method in each AWS Region. However, SMS text messaging is not supported in some AWS Regions, and SMS text messages cannot be sent to some countries/regions. For more information, see Notifications in Amazon Lightsail. A verification request is sent to the contact method when you initially create it. Use this action to send another verification request if a previous verification request was deleted, or has expired.  Notifications are not sent to an email contact method until after it is verified, and confirmed as valid. 
+    */
+  def sendContactMethodVerification(): Request[SendContactMethodVerificationResult, AWSError] = js.native
+  def sendContactMethodVerification(callback: js.Function2[/* err */ AWSError, /* data */ SendContactMethodVerificationResult, Unit]): Request[SendContactMethodVerificationResult, AWSError] = js.native
+  /**
+    * Sends a verification request to an email contact method to ensure it’s owned by the requester. SMS contact methods don’t need to be verified. A contact method is used to send you notifications about your Amazon Lightsail resources. You can add one email address and one mobile phone number contact method in each AWS Region. However, SMS text messaging is not supported in some AWS Regions, and SMS text messages cannot be sent to some countries/regions. For more information, see Notifications in Amazon Lightsail. A verification request is sent to the contact method when you initially create it. Use this action to send another verification request if a previous verification request was deleted, or has expired.  Notifications are not sent to an email contact method until after it is verified, and confirmed as valid. 
+    */
+  def sendContactMethodVerification(params: SendContactMethodVerificationRequest): Request[SendContactMethodVerificationResult, AWSError] = js.native
+  def sendContactMethodVerification(
+    params: SendContactMethodVerificationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ SendContactMethodVerificationResult, Unit]
+  ): Request[SendContactMethodVerificationResult, AWSError] = js.native
   /**
     * Starts a specific Amazon Lightsail instance from a stopped state. To restart an instance, use the reboot instance operation.  When you start a stopped instance, Lightsail assigns a new public IP address to the instance. To use the same IP address after stopping and starting an instance, create a static IP address and attach it to the instance. For more information, see the Lightsail Dev Guide.  The start instance operation supports tag-based access control via resource tags applied to the resource identified by instance name. For more information, see the Lightsail Dev Guide.
     */
@@ -1307,6 +1398,19 @@ trait Lightsail extends Service {
     params: TagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResult, Unit]
   ): Request[TagResourceResult, AWSError] = js.native
+  /**
+    * Tests an alarm by displaying a banner on the Amazon Lightsail console. If a notification trigger is configured for the specified alarm, the test also sends a notification to the notification protocol (Email and/or SMS) configured for the alarm. An alarm is used to monitor a single metric for one of your resources. When a metric condition is met, the alarm can notify you by email, SMS text message, and a banner displayed on the Amazon Lightsail console. For more information, see Alarms in Amazon Lightsail.
+    */
+  def testAlarm(): Request[TestAlarmResult, AWSError] = js.native
+  def testAlarm(callback: js.Function2[/* err */ AWSError, /* data */ TestAlarmResult, Unit]): Request[TestAlarmResult, AWSError] = js.native
+  /**
+    * Tests an alarm by displaying a banner on the Amazon Lightsail console. If a notification trigger is configured for the specified alarm, the test also sends a notification to the notification protocol (Email and/or SMS) configured for the alarm. An alarm is used to monitor a single metric for one of your resources. When a metric condition is met, the alarm can notify you by email, SMS text message, and a banner displayed on the Amazon Lightsail console. For more information, see Alarms in Amazon Lightsail.
+    */
+  def testAlarm(params: TestAlarmRequest): Request[TestAlarmResult, AWSError] = js.native
+  def testAlarm(
+    params: TestAlarmRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ TestAlarmResult, Unit]
+  ): Request[TestAlarmResult, AWSError] = js.native
   /**
     * Attempts to unpeer the Lightsail VPC from the user's default VPC.
     */

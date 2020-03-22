@@ -1,12 +1,12 @@
 package typings.serviceWorkerMock.mod
 
-import typings.serviceWorkerMock.FnArgs
+import typings.serviceWorkerMock.FnCall
+import typings.serviceWorkerMock.PartialMessageEvent
 import typings.serviceWorkerMock.serviceWorkerMockStrings.fetch
 import typings.serviceWorkerMock.serviceWorkerMockStrings.message
 import typings.serviceWorkerMock.serviceWorkerMockStrings.notificationclick
 import typings.serviceWorkerMock.serviceWorkerMockStrings.notificationclose
 import typings.serviceWorkerMock.serviceWorkerMockStrings.push
-import typings.std.MessageEvent
 import typings.std.Notification
 import typings.std.Partial
 import typings.std.Request
@@ -23,7 +23,7 @@ object _Global_ extends js.Object {
     @JSName("snapshot")
     var snapshot_Original: js.Function0[Snapshot] = js.native
     @JSName("trigger")
-    var trigger_Original: FnArgs = js.native
+    var trigger_Original: FnCall = js.native
     def snapshot(): Snapshot = js.native
     def trigger(`type`: String): js.Promise[Unit] = js.native
     @JSName("trigger")
@@ -31,7 +31,7 @@ object _Global_ extends js.Object {
     @JSName("trigger")
     def trigger_fetch(name: fetch, request: Request): js.Promise[Unit] = js.native
     @JSName("trigger")
-    def trigger_message(name: message, args: Partial[MessageEvent]): js.Promise[Unit] = js.native
+    def trigger_message(name: message, args: PartialMessageEvent): js.Promise[Unit] = js.native
     @JSName("trigger")
     def trigger_notificationclick(name: notificationclick, args: Notification): js.Promise[Unit] = js.native
     @JSName("trigger")
@@ -62,7 +62,7 @@ object _Global_ extends js.Object {
   @JSName("trigger")
   def trigger_fetch(name: fetch, request: Request): js.Promise[Unit] = js.native
   @JSName("trigger")
-  def trigger_message(name: message, args: Partial[MessageEvent]): js.Promise[Unit] = js.native
+  def trigger_message(name: message, args: PartialMessageEvent): js.Promise[Unit] = js.native
   @JSName("trigger")
   def trigger_notificationclick(name: notificationclick, args: Notification): js.Promise[Unit] = js.native
   @JSName("trigger")

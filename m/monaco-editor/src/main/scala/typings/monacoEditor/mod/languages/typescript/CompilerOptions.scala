@@ -9,6 +9,7 @@ trait CompilerOptions
   extends /* option */ StringDictionary[js.UndefOr[CompilerOptionsValue]] {
   var allowJs: js.UndefOr[Boolean] = js.undefined
   var allowSyntheticDefaultImports: js.UndefOr[Boolean] = js.undefined
+  var allowUmdGlobalAccess: js.UndefOr[Boolean] = js.undefined
   var allowUnreachableCode: js.UndefOr[Boolean] = js.undefined
   var allowUnusedLabels: js.UndefOr[Boolean] = js.undefined
   var alwaysStrict: js.UndefOr[Boolean] = js.undefined
@@ -20,6 +21,7 @@ trait CompilerOptions
   var declarationDir: js.UndefOr[String] = js.undefined
   var declarationMap: js.UndefOr[Boolean] = js.undefined
   var disableSizeLimit: js.UndefOr[Boolean] = js.undefined
+  var disableSourceOfProjectReferenceRedirect: js.UndefOr[Boolean] = js.undefined
   var downlevelIteration: js.UndefOr[Boolean] = js.undefined
   var emitBOM: js.UndefOr[Boolean] = js.undefined
   var emitDeclarationOnly: js.UndefOr[Boolean] = js.undefined
@@ -72,9 +74,11 @@ trait CompilerOptions
   var sourceMap: js.UndefOr[Boolean] = js.undefined
   var sourceRoot: js.UndefOr[String] = js.undefined
   var strict: js.UndefOr[Boolean] = js.undefined
+  var strictBindCallApply: js.UndefOr[Boolean] = js.undefined
   var strictFunctionTypes: js.UndefOr[Boolean] = js.undefined
   var strictNullChecks: js.UndefOr[Boolean] = js.undefined
   var strictPropertyInitialization: js.UndefOr[Boolean] = js.undefined
+  var stripInternal: js.UndefOr[Boolean] = js.undefined
   var suppressExcessPropertyErrors: js.UndefOr[Boolean] = js.undefined
   var suppressImplicitAnyIndexErrors: js.UndefOr[Boolean] = js.undefined
   var target: js.UndefOr[ScriptTarget] = js.undefined
@@ -82,6 +86,7 @@ trait CompilerOptions
   /** Paths used to compute primary types search locations */
   var typeRoots: js.UndefOr[js.Array[String]] = js.undefined
   var types: js.UndefOr[js.Array[String]] = js.undefined
+  var useDefineForClassFields: js.UndefOr[Boolean] = js.undefined
 }
 
 object CompilerOptions {
@@ -90,6 +95,7 @@ object CompilerOptions {
     StringDictionary: /* option */ StringDictionary[js.UndefOr[CompilerOptionsValue]] = null,
     allowJs: js.UndefOr[Boolean] = js.undefined,
     allowSyntheticDefaultImports: js.UndefOr[Boolean] = js.undefined,
+    allowUmdGlobalAccess: js.UndefOr[Boolean] = js.undefined,
     allowUnreachableCode: js.UndefOr[Boolean] = js.undefined,
     allowUnusedLabels: js.UndefOr[Boolean] = js.undefined,
     alwaysStrict: js.UndefOr[Boolean] = js.undefined,
@@ -101,6 +107,7 @@ object CompilerOptions {
     declarationDir: String = null,
     declarationMap: js.UndefOr[Boolean] = js.undefined,
     disableSizeLimit: js.UndefOr[Boolean] = js.undefined,
+    disableSourceOfProjectReferenceRedirect: js.UndefOr[Boolean] = js.undefined,
     downlevelIteration: js.UndefOr[Boolean] = js.undefined,
     emitBOM: js.UndefOr[Boolean] = js.undefined,
     emitDeclarationOnly: js.UndefOr[Boolean] = js.undefined,
@@ -153,20 +160,24 @@ object CompilerOptions {
     sourceMap: js.UndefOr[Boolean] = js.undefined,
     sourceRoot: String = null,
     strict: js.UndefOr[Boolean] = js.undefined,
+    strictBindCallApply: js.UndefOr[Boolean] = js.undefined,
     strictFunctionTypes: js.UndefOr[Boolean] = js.undefined,
     strictNullChecks: js.UndefOr[Boolean] = js.undefined,
     strictPropertyInitialization: js.UndefOr[Boolean] = js.undefined,
+    stripInternal: js.UndefOr[Boolean] = js.undefined,
     suppressExcessPropertyErrors: js.UndefOr[Boolean] = js.undefined,
     suppressImplicitAnyIndexErrors: js.UndefOr[Boolean] = js.undefined,
     target: ScriptTarget = null,
     traceResolution: js.UndefOr[Boolean] = js.undefined,
     typeRoots: js.Array[String] = null,
-    types: js.Array[String] = null
+    types: js.Array[String] = null,
+    useDefineForClassFields: js.UndefOr[Boolean] = js.undefined
   ): CompilerOptions = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (!js.isUndefined(allowJs)) __obj.updateDynamic("allowJs")(allowJs.asInstanceOf[js.Any])
     if (!js.isUndefined(allowSyntheticDefaultImports)) __obj.updateDynamic("allowSyntheticDefaultImports")(allowSyntheticDefaultImports.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowUmdGlobalAccess)) __obj.updateDynamic("allowUmdGlobalAccess")(allowUmdGlobalAccess.asInstanceOf[js.Any])
     if (!js.isUndefined(allowUnreachableCode)) __obj.updateDynamic("allowUnreachableCode")(allowUnreachableCode.asInstanceOf[js.Any])
     if (!js.isUndefined(allowUnusedLabels)) __obj.updateDynamic("allowUnusedLabels")(allowUnusedLabels.asInstanceOf[js.Any])
     if (!js.isUndefined(alwaysStrict)) __obj.updateDynamic("alwaysStrict")(alwaysStrict.asInstanceOf[js.Any])
@@ -178,6 +189,7 @@ object CompilerOptions {
     if (declarationDir != null) __obj.updateDynamic("declarationDir")(declarationDir.asInstanceOf[js.Any])
     if (!js.isUndefined(declarationMap)) __obj.updateDynamic("declarationMap")(declarationMap.asInstanceOf[js.Any])
     if (!js.isUndefined(disableSizeLimit)) __obj.updateDynamic("disableSizeLimit")(disableSizeLimit.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableSourceOfProjectReferenceRedirect)) __obj.updateDynamic("disableSourceOfProjectReferenceRedirect")(disableSourceOfProjectReferenceRedirect.asInstanceOf[js.Any])
     if (!js.isUndefined(downlevelIteration)) __obj.updateDynamic("downlevelIteration")(downlevelIteration.asInstanceOf[js.Any])
     if (!js.isUndefined(emitBOM)) __obj.updateDynamic("emitBOM")(emitBOM.asInstanceOf[js.Any])
     if (!js.isUndefined(emitDeclarationOnly)) __obj.updateDynamic("emitDeclarationOnly")(emitDeclarationOnly.asInstanceOf[js.Any])
@@ -230,15 +242,18 @@ object CompilerOptions {
     if (!js.isUndefined(sourceMap)) __obj.updateDynamic("sourceMap")(sourceMap.asInstanceOf[js.Any])
     if (sourceRoot != null) __obj.updateDynamic("sourceRoot")(sourceRoot.asInstanceOf[js.Any])
     if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
+    if (!js.isUndefined(strictBindCallApply)) __obj.updateDynamic("strictBindCallApply")(strictBindCallApply.asInstanceOf[js.Any])
     if (!js.isUndefined(strictFunctionTypes)) __obj.updateDynamic("strictFunctionTypes")(strictFunctionTypes.asInstanceOf[js.Any])
     if (!js.isUndefined(strictNullChecks)) __obj.updateDynamic("strictNullChecks")(strictNullChecks.asInstanceOf[js.Any])
     if (!js.isUndefined(strictPropertyInitialization)) __obj.updateDynamic("strictPropertyInitialization")(strictPropertyInitialization.asInstanceOf[js.Any])
+    if (!js.isUndefined(stripInternal)) __obj.updateDynamic("stripInternal")(stripInternal.asInstanceOf[js.Any])
     if (!js.isUndefined(suppressExcessPropertyErrors)) __obj.updateDynamic("suppressExcessPropertyErrors")(suppressExcessPropertyErrors.asInstanceOf[js.Any])
     if (!js.isUndefined(suppressImplicitAnyIndexErrors)) __obj.updateDynamic("suppressImplicitAnyIndexErrors")(suppressImplicitAnyIndexErrors.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     if (!js.isUndefined(traceResolution)) __obj.updateDynamic("traceResolution")(traceResolution.asInstanceOf[js.Any])
     if (typeRoots != null) __obj.updateDynamic("typeRoots")(typeRoots.asInstanceOf[js.Any])
     if (types != null) __obj.updateDynamic("types")(types.asInstanceOf[js.Any])
+    if (!js.isUndefined(useDefineForClassFields)) __obj.updateDynamic("useDefineForClassFields")(useDefineForClassFields.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompilerOptions]
   }
 }

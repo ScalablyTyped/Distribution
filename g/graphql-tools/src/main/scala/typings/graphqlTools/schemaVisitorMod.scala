@@ -33,11 +33,11 @@ object schemaVisitorMod extends js.Object {
   @js.native
   abstract class SchemaVisitor () extends js.Object {
     var schema: GraphQLSchema = js.native
-    def visitArgumentDefinition(argument: GraphQLArgument, details: AnonFieldKey): GraphQLArgument | Unit | Null = js.native
+    def visitArgumentDefinition(argument: GraphQLArgument, details: AnonFieldObjectType): GraphQLArgument | Unit | Null = js.native
     def visitEnum(`type`: GraphQLEnumType): GraphQLEnumType | Unit | Null = js.native
     def visitEnumValue(value: GraphQLEnumValue, details: AnonEnumType): GraphQLEnumValue | Unit | Null = js.native
-    def visitFieldDefinition(field: GraphQLField[_, _, StringDictionary[_]], details: AnonKey): (GraphQLField[_, _, StringDictionary[_]]) | Unit | Null = js.native
-    def visitInputFieldDefinition(field: GraphQLInputField, details: AnonObjectType): GraphQLInputField | Unit | Null = js.native
+    def visitFieldDefinition(field: GraphQLField[_, _, StringDictionary[_]], details: AnonObjectType): (GraphQLField[_, _, StringDictionary[_]]) | Unit | Null = js.native
+    def visitInputFieldDefinition(field: GraphQLInputField, details: AnonObjectTypeGraphQLInputObjectType): GraphQLInputField | Unit | Null = js.native
     def visitInputObject(`object`: GraphQLInputObjectType): GraphQLInputObjectType | Unit | Null = js.native
     def visitInterface(iface: GraphQLInterfaceType): GraphQLInterfaceType | Unit | Null = js.native
     def visitObject(`object`: GraphQLObjectType[_, _, StringDictionary[_]]): (GraphQLObjectType[_, _, StringDictionary[_]]) | Unit | Null = js.native
@@ -54,12 +54,12 @@ object schemaVisitorMod extends js.Object {
   /* static members */
   @js.native
   object SchemaDirectiveVisitor extends js.Object {
-    /* protected */ def getDeclaredDirectives(schema: GraphQLSchema, directiveVisitors: StringDictionary[TypeofClassSchemaDirectiveVisitor]): StringDictionary[GraphQLDirective] = js.native
+    /* protected */ def getDeclaredDirectives(schema: GraphQLSchema, directiveVisitors: StringDictionary[TypeofSchemaDirectiveVisi]): StringDictionary[GraphQLDirective] = js.native
     def getDirectiveDeclaration(directiveName: String, schema: GraphQLSchema): GraphQLDirective = js.native
-    def visitSchemaDirectives(schema: GraphQLSchema, directiveVisitors: StringDictionary[TypeofClassSchemaDirectiveVisitor]): StringDictionary[js.Array[SchemaDirectiveVisitor]] = js.native
+    def visitSchemaDirectives(schema: GraphQLSchema, directiveVisitors: StringDictionary[TypeofSchemaDirectiveVisi]): StringDictionary[js.Array[SchemaDirectiveVisitor]] = js.native
     def visitSchemaDirectives(
       schema: GraphQLSchema,
-      directiveVisitors: StringDictionary[TypeofClassSchemaDirectiveVisitor],
+      directiveVisitors: StringDictionary[TypeofSchemaDirectiveVisi],
       context: StringDictionary[js.Any]
     ): StringDictionary[js.Array[SchemaDirectiveVisitor]] = js.native
   }

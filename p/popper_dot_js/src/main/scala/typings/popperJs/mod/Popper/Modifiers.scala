@@ -1,12 +1,12 @@
 package typings.popperJs.mod.Popper
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.popperJs.AnonBehavior
-import typings.popperJs.AnonBottom
-import typings.popperJs.AnonBoundariesElement
-import typings.popperJs.AnonElement
-import typings.popperJs.AnonGpuAcceleration
-import typings.popperJs.AnonOffset
+import typings.popperJs.BaseModifierbehaviorBehav
+import typings.popperJs.BaseModifierelementstring
+import typings.popperJs.BaseModifiergpuAccelerati
+import typings.popperJs.BaseModifieroffsetnumbers
+import typings.popperJs.BaseModifieronLoadFunctio
+import typings.popperJs.BaseModifierpriorityArray
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,15 +14,15 @@ import scala.scalajs.js.annotation._
 
 trait Modifiers
   extends /* name */ StringDictionary[js.UndefOr[BaseModifier with (Record[String, _])]] {
-  var applyStyle: js.UndefOr[BaseModifier with AnonGpuAcceleration] = js.undefined
-  var arrow: js.UndefOr[BaseModifier with AnonElement] = js.undefined
-  var computeStyle: js.UndefOr[BaseModifier with AnonBottom] = js.undefined
-  var flip: js.UndefOr[BaseModifier with AnonBehavior] = js.undefined
+  var applyStyle: js.UndefOr[BaseModifieronLoadFunctio] = js.undefined
+  var arrow: js.UndefOr[BaseModifierelementstring] = js.undefined
+  var computeStyle: js.UndefOr[BaseModifiergpuAccelerati] = js.undefined
+  var flip: js.UndefOr[BaseModifierbehaviorBehav] = js.undefined
   var hide: js.UndefOr[BaseModifier] = js.undefined
   var inner: js.UndefOr[BaseModifier] = js.undefined
   var keepTogether: js.UndefOr[BaseModifier] = js.undefined
-  var offset: js.UndefOr[BaseModifier with AnonOffset] = js.undefined
-  var preventOverflow: js.UndefOr[BaseModifier with AnonBoundariesElement] = js.undefined
+  var offset: js.UndefOr[BaseModifieroffsetnumbers] = js.undefined
+  var preventOverflow: js.UndefOr[BaseModifierpriorityArray] = js.undefined
   var shift: js.UndefOr[BaseModifier] = js.undefined
 }
 
@@ -30,15 +30,15 @@ object Modifiers {
   @scala.inline
   def apply(
     StringDictionary: /* name */ StringDictionary[js.UndefOr[BaseModifier with (Record[String, _])]] = null,
-    applyStyle: BaseModifier with AnonGpuAcceleration = null,
-    arrow: BaseModifier with AnonElement = null,
-    computeStyle: BaseModifier with AnonBottom = null,
-    flip: BaseModifier with AnonBehavior = null,
+    applyStyle: BaseModifieronLoadFunctio = null,
+    arrow: BaseModifierelementstring = null,
+    computeStyle: BaseModifiergpuAccelerati = null,
+    flip: BaseModifierbehaviorBehav = null,
     hide: BaseModifier = null,
     inner: BaseModifier = null,
     keepTogether: BaseModifier = null,
-    offset: BaseModifier with AnonOffset = null,
-    preventOverflow: BaseModifier with AnonBoundariesElement = null,
+    offset: BaseModifieroffsetnumbers = null,
+    preventOverflow: BaseModifierpriorityArray = null,
     shift: BaseModifier = null
   ): Modifiers = {
     val __obj = js.Dynamic.literal()

@@ -15,19 +15,20 @@ class RouterLink protected () extends js.Object {
   var fragment: String = js.native
   var preserve: js.Any = js.native
   var preserveFragment: Boolean = js.native
-  /**
-    * @deprecated 4.0.0 use `queryParamsHandling` instead.
-    */
-  var preserveQueryParams: Boolean = js.native
   var queryParams: StringDictionary[js.Any] = js.native
   var queryParamsHandling: QueryParamsHandling = js.native
   var replaceUrl: Boolean = js.native
   var route: js.Any = js.native
   var router: js.Any = js.native
-  var routerLink: js.Array[_] | String = js.native
   var skipLocationChange: Boolean = js.native
   var state: js.UndefOr[StringDictionary[js.Any]] = js.native
-  val urlTree: UrlTree = js.native
   def onClick(): Boolean = js.native
+  /**
+    * @deprecated 4.0.0 use `queryParamsHandling` instead.
+    */
+  def preserveQueryParams(value: Boolean): js.Any = js.native
+  def routerLink(commands: String): js.Any = js.native
+  def routerLink(commands: js.Array[_]): js.Any = js.native
+  def urlTree(): UrlTree = js.native
 }
 

@@ -1,8 +1,8 @@
 package typings.jupyterlabLogconsole.tokensMod
 
 import typings.jupyterlabRendermime.tokensMod.IRenderMimeRegistry
-import typings.phosphorDisposable.mod.IDisposable
-import typings.phosphorSignaling.mod.ISignal
+import typings.luminoDisposable.mod.IDisposable
+import typings.luminoSignaling.mod.ISignal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,7 +31,7 @@ trait ILogger extends IDisposable {
   /**
     * Rendermime to use when rendering outputs logged.
     */
-  var rendermime: IRenderMimeRegistry
+  var rendermime: IRenderMimeRegistry | Null
   /**
     * The name of the log source.
     */
@@ -73,13 +73,13 @@ object ILogger {
     log: ILogPayload => Unit,
     maxLength: Double,
     outputAreaModel: ILoggerOutputAreaModel,
-    rendermime: IRenderMimeRegistry,
     source: String,
     stateChanged: ISignal[ILogger, IStateChange],
-    version: Double
+    version: Double,
+    rendermime: IRenderMimeRegistry = null
   ): ILogger = {
-    val __obj = js.Dynamic.literal(checkpoint = js.Any.fromFunction0(checkpoint), clear = js.Any.fromFunction0(clear), contentChanged = contentChanged.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), isDisposed = isDisposed.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], log = js.Any.fromFunction1(log), maxLength = maxLength.asInstanceOf[js.Any], outputAreaModel = outputAreaModel.asInstanceOf[js.Any], rendermime = rendermime.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], stateChanged = stateChanged.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-  
+    val __obj = js.Dynamic.literal(checkpoint = js.Any.fromFunction0(checkpoint), clear = js.Any.fromFunction0(clear), contentChanged = contentChanged.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), isDisposed = isDisposed.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], log = js.Any.fromFunction1(log), maxLength = maxLength.asInstanceOf[js.Any], outputAreaModel = outputAreaModel.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], stateChanged = stateChanged.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    if (rendermime != null) __obj.updateDynamic("rendermime")(rendermime.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILogger]
   }
 }

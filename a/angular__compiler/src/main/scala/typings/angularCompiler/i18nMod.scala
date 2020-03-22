@@ -82,6 +82,8 @@ object i18nMod extends js.Object {
   class Xtb ()
     extends typings.angularCompiler.xtbMod.Xtb
   
+  def computeMsgId(msg: String): String = js.native
+  def computeMsgId(msg: String, meaning: String): String = js.native
   /* static members */
   @js.native
   object Extractor extends js.Object {

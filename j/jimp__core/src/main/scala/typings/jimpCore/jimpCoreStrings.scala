@@ -48,9 +48,6 @@ object jimpCoreStrings {
   sealed trait initialized extends ListenableName
   
   @js.native
-  sealed trait mime extends js.Object
-  
-  @js.native
   sealed trait scan
     extends ChangeName
        with ListenableName
@@ -77,8 +74,6 @@ object jimpCoreStrings {
   def crop: crop = "crop".asInstanceOf[crop]
   @scala.inline
   def initialized: initialized = "initialized".asInstanceOf[initialized]
-  @scala.inline
-  def mime: mime = "mime".asInstanceOf[mime]
   @scala.inline
   def scan: scan = "scan".asInstanceOf[scan]
 }

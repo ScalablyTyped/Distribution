@@ -3,10 +3,10 @@ package typings.reactPlyr.mod
 import typings.reactPlyr.AnonActive
 import typings.reactPlyr.AnonControls
 import typings.reactPlyr.AnonDefault
-import typings.reactPlyr.AnonDefaultKey
 import typings.reactPlyr.AnonEnabled
-import typings.reactPlyr.AnonEnabledKey
 import typings.reactPlyr.AnonFocused
+import typings.reactPlyr.AnonKey
+import typings.reactPlyr.AnonKind
 import typings.reactPlyr.AnonOptions
 import typings.reactPlyr.AnonSize
 import typings.reactPlyr.reactPlyrStrings.audio
@@ -21,7 +21,7 @@ trait Props extends js.Object {
   var autopause: js.UndefOr[Boolean] = js.undefined
   var autoplay: js.UndefOr[Boolean] = js.undefined
   var blankVideo: js.UndefOr[String] = js.undefined
-  var captions: js.UndefOr[js.Array[AnonDefaultKey]] = js.undefined
+  var captions: js.UndefOr[js.Array[AnonKind]] = js.undefined
   var className: js.UndefOr[String] = js.undefined
   var clickToPlay: js.UndefOr[Boolean] = js.undefined
   var controls: js.UndefOr[js.Array[String]] = js.undefined
@@ -59,7 +59,7 @@ trait Props extends js.Object {
   var settings: js.UndefOr[js.Array[String]] = js.undefined
   var sources: js.UndefOr[js.Array[AnonSize]] = js.undefined
   var speed: js.UndefOr[AnonOptions] = js.undefined
-  var storage: js.UndefOr[AnonEnabledKey] = js.undefined
+  var storage: js.UndefOr[AnonKey] = js.undefined
   var title: js.UndefOr[String] = js.undefined
   var toggleInvert: js.UndefOr[Boolean] = js.undefined
   var tooltips: js.UndefOr[AnonControls] = js.undefined
@@ -75,7 +75,7 @@ object Props {
     autopause: js.UndefOr[Boolean] = js.undefined,
     autoplay: js.UndefOr[Boolean] = js.undefined,
     blankVideo: String = null,
-    captions: js.Array[AnonDefaultKey] = null,
+    captions: js.Array[AnonKind] = null,
     className: String = null,
     clickToPlay: js.UndefOr[Boolean] = js.undefined,
     controls: js.Array[String] = null,
@@ -113,7 +113,7 @@ object Props {
     settings: js.Array[String] = null,
     sources: js.Array[AnonSize] = null,
     speed: AnonOptions = null,
-    storage: AnonEnabledKey = null,
+    storage: AnonKey = null,
     title: String = null,
     toggleInvert: js.UndefOr[Boolean] = js.undefined,
     tooltips: AnonControls = null,

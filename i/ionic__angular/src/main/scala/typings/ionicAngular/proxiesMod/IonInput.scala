@@ -14,7 +14,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ionic/angular/dist/directives/proxies", "IonInput")
+@JSImport("@ionic/angular/directives/proxies", "IonInput")
 @js.native
 class IonInput protected ()
   extends typings.ionicCore.componentsMod.Components.IonInput {

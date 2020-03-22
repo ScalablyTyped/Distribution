@@ -2,7 +2,6 @@ package typings.bookshelf.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.knex.mod.QueryBuilder
-import typings.knex.mod.SafePartial
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -33,8 +32,8 @@ class Collection[T /* <: Model[_] */] () extends CollectionBase[T] {
   def orderBy(column: String): Collection[T] = js.native
   def orderBy(column: String, order: SortOrder): Collection[T] = js.native
   // Declaration order matters otherwise TypeScript gets confused between query() and query(...query: string[])
-  def query(): QueryBuilder[_, js.Array[SafePartial[_]]] = js.native
-  def query(callback: js.Function1[/* qb */ QueryBuilder[_, js.Array[SafePartial[_]]], Unit]): Collection[T] = js.native
+  def query(): QueryBuilder[_, _] = js.native
+  def query(callback: js.Function1[/* qb */ QueryBuilder[_, _], Unit]): Collection[T] = js.native
   def query(query: String*): Collection[T] = js.native
   def query(query: StringDictionary[js.Any]): Collection[T] = js.native
   def resetQuery(): Collection[T] = js.native

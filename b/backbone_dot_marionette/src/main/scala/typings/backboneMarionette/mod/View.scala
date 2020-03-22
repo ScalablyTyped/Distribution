@@ -3,7 +3,7 @@ package typings.backboneMarionette.mod
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
 import typings.backbone.mod.Model
-import typings.backboneMarionette.AnonBehaviorClass
+import typings.backboneMarionette.AnonDictindex
 import typings.backboneMarionette.backboneMarionetteBooleans.`false`
 import typings.jquery.JQuery_
 import typings.std.HTMLElement
@@ -31,7 +31,7 @@ class View[TModel /* <: Model */] ()
   /**
     * Behavior objects to assign to this View.
     */
-  var behaviors: (js.Array[AnonBehaviorClass | Behavior]) | (StringDictionary[Instantiable1[js.UndefOr[/* options */ js.Any], Behavior]]) = js.native
+  var behaviors: (js.Array[AnonDictindex | Behavior]) | (StringDictionary[Instantiable1[js.UndefOr[/* options */ js.Any], Behavior]]) = js.native
   /* CompleteClass */
   override var bindEvents: js.Any = js.native
   /**

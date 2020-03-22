@@ -5,16 +5,17 @@ import typings.jupyterlabApplication.frontendMod.JupyterFrontEndPlugin
 import typings.jupyterlabApplication.mod.JupyterFrontEnd
 import typings.jupyterlabApputils.commandpaletteMod.ICommandPalette
 import typings.jupyterlabApputils.mod.WidgetTracker
+import typings.jupyterlabApputils.tokensMod.ISessionContextDialogs
 import typings.jupyterlabConsole.tokensMod.IConsoleTracker
-import typings.jupyterlabCoreutils.tokensMod.ISettingRegistry
-import typings.jupyterlabCoreutils.tokensMod.ISettingRegistry.ISettings
 import typings.jupyterlabDocregistry.registryMod.DocumentRegistry.IModel
 import typings.jupyterlabDocregistry.registryMod.IDocumentWidget
 import typings.jupyterlabFilebrowser.tokensMod.IFileBrowserFactory
 import typings.jupyterlabFileeditor.mod.FileEditor
 import typings.jupyterlabLauncher.mod.ILauncher
 import typings.jupyterlabMainmenu.tokensMod.IMainMenu
-import typings.phosphorCommands.mod.CommandRegistry
+import typings.jupyterlabSettingregistry.tokensMod.ISettingRegistry
+import typings.jupyterlabSettingregistry.tokensMod.ISettingRegistry.ISettings
+import typings.luminoCommands.mod.CommandRegistry
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -49,6 +50,12 @@ object mod extends js.Object {
       * Add commands to change the tab indentation to the File Editor palette
       */
     def addChangeTabsCommandsToPalette(palette: ICommandPalette): Unit = js.native
+    def addCodeRunnersToRunMenu(
+      menu: IMainMenu,
+      commands: CommandRegistry,
+      tracker: WidgetTracker[IDocumentWidget[FileEditor, IModel]],
+      consoleTracker: IConsoleTracker
+    ): Unit = js.native
     /**
       * Add a File Editor code runner to the Run menu
       */
@@ -56,7 +63,8 @@ object mod extends js.Object {
       menu: IMainMenu,
       commands: CommandRegistry,
       tracker: WidgetTracker[IDocumentWidget[FileEditor, IModel]],
-      consoleTracker: IConsoleTracker
+      consoleTracker: IConsoleTracker,
+      sessionDialogs: ISessionContextDialogs
     ): Unit = js.native
     /**
       * Wrapper function for adding the default File Editor commands
@@ -164,6 +172,12 @@ object mod extends js.Object {
       id: String,
       isEnabled: js.Function0[Boolean]
     ): Unit = js.native
+    def addMenuItems(
+      menu: IMainMenu,
+      commands: CommandRegistry,
+      tracker: WidgetTracker[IDocumentWidget[FileEditor, IModel]],
+      consoleTracker: IConsoleTracker
+    ): Unit = js.native
     /**
       * Wrapper function for adding the default menu items for File Editor
       */
@@ -171,7 +185,8 @@ object mod extends js.Object {
       menu: IMainMenu,
       commands: CommandRegistry,
       tracker: WidgetTracker[IDocumentWidget[FileEditor, IModel]],
-      consoleTracker: IConsoleTracker
+      consoleTracker: IConsoleTracker,
+      sessionDialogs: ISessionContextDialogs
     ): Unit = js.native
     /**
       * Wrapper function for adding the default items to the File Editor palette
@@ -216,6 +231,7 @@ object mod extends js.Object {
     def updateTracker(tracker: WidgetTracker[IDocumentWidget[FileEditor, IModel]]): Unit = js.native
     /**
       * Update the settings of a widget.
+      * Skip global settings for transient editor specific configs.
       */
     def updateWidget(widget: FileEditor): Unit = js.native
   }

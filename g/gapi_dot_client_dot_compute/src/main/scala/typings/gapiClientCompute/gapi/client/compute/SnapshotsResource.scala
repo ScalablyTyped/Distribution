@@ -2,9 +2,9 @@ package typings.gapiClientCompute.gapi.client.compute
 
 import typings.gapiClient.gapi.client.Request_
 import typings.gapiClientCompute.AnonAlt
-import typings.gapiClientCompute.AnonAltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserRequestIdSnapshot
-import typings.gapiClientCompute.AnonAltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserResource
-import typings.gapiClientCompute.AnonAltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserSnapshot
+import typings.gapiClientCompute.AnonKeyOauthtoken
+import typings.gapiClientCompute.AnonQuotaUserSnapshot
+import typings.gapiClientCompute.AnonSnapshot
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,22 +16,22 @@ trait SnapshotsResource extends js.Object {
     *
     * For more information, see Deleting snaphots.
     */
-  def delete(request: AnonAltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserRequestIdSnapshot): Request_[Operation]
+  def delete(request: AnonSnapshot): Request_[Operation]
   /** Returns the specified Snapshot resource. Get a list of available snapshots by making a list() request. */
-  def get(request: AnonAltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserSnapshot): Request_[Snapshot]
+  def get(request: AnonQuotaUserSnapshot): Request_[Snapshot]
   /** Retrieves the list of Snapshot resources contained within the specified project. */
   def list(request: AnonAlt): Request_[SnapshotList]
   /** Sets the labels on a snapshot. To learn more about labels, read the Labeling Resources documentation. */
-  def setLabels(request: AnonAltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserResource): Request_[Operation]
+  def setLabels(request: AnonKeyOauthtoken): Request_[Operation]
 }
 
 object SnapshotsResource {
   @scala.inline
   def apply(
-    delete: AnonAltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserRequestIdSnapshot => Request_[Operation],
-    get: AnonAltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserSnapshot => Request_[Snapshot],
+    delete: AnonSnapshot => Request_[Operation],
+    get: AnonQuotaUserSnapshot => Request_[Snapshot],
     list: AnonAlt => Request_[SnapshotList],
-    setLabels: AnonAltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserResource => Request_[Operation]
+    setLabels: AnonKeyOauthtoken => Request_[Operation]
   ): SnapshotsResource = {
     val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), setLabels = js.Any.fromFunction1(setLabels))
   

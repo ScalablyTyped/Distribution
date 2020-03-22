@@ -31,7 +31,7 @@ package object mod {
     * Some mongoose classes have the same name as the native JS classes
     * Keep references to native classes using a "Native" prefix
     */
-  type NativeBuffer = typings.node.TypeofClassBuffer
+  type NativeBuffer = typings.node.TypeofBuffer
   type NativeDate = typings.std.DateConstructor
   type NativeError = typings.std.ErrorConstructor
   /*

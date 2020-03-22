@@ -2,7 +2,7 @@ package typings.jupyterlabConsole
 
 import typings.jupyterlabApputils.widgettrackerMod.IWidgetTracker
 import typings.jupyterlabConsole.panelMod.ConsolePanel
-import typings.phosphorCoreutils.mod.Token
+import typings.luminoCoreutils.mod.Token
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

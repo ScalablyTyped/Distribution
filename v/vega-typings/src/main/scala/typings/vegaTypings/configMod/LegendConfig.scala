@@ -124,7 +124,7 @@ object LegendConfig {
     symbolSize: NumberValue = null,
     symbolStrokeColor: ColorValue = null,
     symbolStrokeWidth: NumberValue = null,
-    symbolType: SymbolShapeValue = null,
+    symbolType: SymbolShapeValue | SignalRef = null,
     tickCount: TickCount = null,
     titleAlign: AlignValue = null,
     titleAnchor: AnchorValue = null,

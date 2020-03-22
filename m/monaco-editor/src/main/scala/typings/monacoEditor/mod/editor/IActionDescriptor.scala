@@ -43,7 +43,7 @@ trait IActionDescriptor extends js.Object {
     * Method that will be executed when the action is triggered.
     * @param editor The editor instance is passed in as a convenience
     */
-  def run(editor: ICodeEditor): Unit | js.Promise[Unit]
+  def run(editor: ICodeEditor, args: js.Any*): Unit | js.Promise[Unit]
 }
 
 object IActionDescriptor {
@@ -51,14 +51,14 @@ object IActionDescriptor {
   def apply(
     id: String,
     label: String,
-    run: ICodeEditor => Unit | js.Promise[Unit],
+    run: (ICodeEditor, /* repeated */ js.Any) => Unit | js.Promise[Unit],
     contextMenuGroupId: String = null,
     contextMenuOrder: Int | Double = null,
     keybindingContext: String = null,
     keybindings: js.Array[Double] = null,
     precondition: String = null
   ): IActionDescriptor = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], run = js.Any.fromFunction1(run))
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], run = js.Any.fromFunction2(run))
     if (contextMenuGroupId != null) __obj.updateDynamic("contextMenuGroupId")(contextMenuGroupId.asInstanceOf[js.Any])
     if (contextMenuOrder != null) __obj.updateDynamic("contextMenuOrder")(contextMenuOrder.asInstanceOf[js.Any])
     if (keybindingContext != null) __obj.updateDynamic("keybindingContext")(keybindingContext.asInstanceOf[js.Any])

@@ -116,7 +116,7 @@ trait Typeofmaps extends js.Object {
   /**
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#Marker Maps JavaScript API}
     */
-  var Marker: TypeofClassMarker
+  var Marker: TypeofMarker
   var MaxZoomService: Instantiable0[typings.googlemaps.google.maps.MaxZoomService]
   var OverlayView: Instantiable0[typings.googlemaps.google.maps.OverlayView]
   var Point: Instantiable2[/* x */ Double, /* y */ Double, typings.googlemaps.google.maps.Point]
@@ -177,7 +177,7 @@ object Typeofmaps {
     ],
     MapCanvasProjection: Instantiable0[MapCanvasProjection],
     MapTypeRegistry: Instantiable0[MapTypeRegistry],
-    Marker: TypeofClassMarker,
+    Marker: TypeofMarker,
     MaxZoomService: Instantiable0[MaxZoomService],
     OverlayView: Instantiable0[OverlayView],
     Point: Instantiable2[/* x */ Double, /* y */ Double, Point],

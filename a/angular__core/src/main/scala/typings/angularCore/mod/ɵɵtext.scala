@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ɵɵtext extends js.Object {
   def apply(index: Double): Unit = js.native
-  def apply(index: Double, value: js.Any): Unit = js.native
+  def apply(index: Double, value: String): Unit = js.native
 }
 

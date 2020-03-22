@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import typings.tinycolor2.Anon000
-import typings.tinycolor2.Anon000000080
+import typings.tinycolor2.AnonAliceblue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,12 +23,12 @@ Instantiable0[Instance]
     * key: hex value
     * value: string name ex. hexnames["f00"] --> "red"
     */
-  var hexNames: Anon000000080 = js.native
+  var hexNames: Anon000 = js.native
   /**
     * key: 'real' color name
     * value: hex value ex. names["red"] --> "f00"
     */
-  var names: Anon000 = js.native
+  var names: AnonAliceblue = js.native
   def apply(): Instance = js.native
   def apply(color: ColorInput): Instance = js.native
   def apply(color: ColorInput, opts: ConstructorOptions): Instance = js.native

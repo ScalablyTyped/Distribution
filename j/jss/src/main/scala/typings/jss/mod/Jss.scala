@@ -1,5 +1,6 @@
 package typings.jss.mod
 
+import typings.jss.PartialJssOptions
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,7 +16,7 @@ trait Jss extends js.Object {
   def createStyleSheet[Name /* <: String | Double | js.Symbol */](styles: Partial[Styles[Name]], options: StyleSheetFactoryOptions): StyleSheet[Name] = js.native
   def removeStyleSheet(sheet: StyleSheet[String | Double | js.Symbol]): this.type = js.native
   def setup(): this.type = js.native
-  def setup(options: Partial[JssOptions]): this.type = js.native
+  def setup(options: PartialJssOptions): this.type = js.native
   def use(plugins: Plugin*): this.type = js.native
 }
 

@@ -1,6 +1,6 @@
 package typings.simmerjs.mod
 
-import typings.simmerjs.AnonNoConflict
+import typings.simmerjs.SimmernoConflictany
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -19,7 +19,7 @@ object _Global_ extends js.Object {
       * was originally written.
       */
     @JSName("Simmer")
-    var Simmer_Original: Simmer with AnonNoConflict = js.native
+    var Simmer_Original: SimmernoConflictany = js.native
     /**
       * Analyze an element and produce a unique CSS selector for it.
       */

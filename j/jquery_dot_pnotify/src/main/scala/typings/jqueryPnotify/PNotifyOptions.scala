@@ -22,7 +22,7 @@ trait PNotifyOptions extends js.Object {
     * Display the notice when it is created. Turn this off to add notifications to the history without displaying them.
     */
   var auto_display: js.UndefOr[Boolean] = js.undefined
-  var buttons: js.UndefOr[AnonCloserCloserhover] = js.undefined
+  var buttons: js.UndefOr[AnonCloserhover] = js.undefined
   /**
     * Support for PNotifyconfirm options
     */
@@ -125,7 +125,7 @@ object PNotifyOptions {
     animate_speed: String = null,
     animation: String = null,
     auto_display: js.UndefOr[Boolean] = js.undefined,
-    buttons: AnonCloserCloserhover = null,
+    buttons: AnonCloserhover = null,
     confirm: PNotifyconfirm = null,
     cornerclass: String = null,
     delay: Int | Double = null,

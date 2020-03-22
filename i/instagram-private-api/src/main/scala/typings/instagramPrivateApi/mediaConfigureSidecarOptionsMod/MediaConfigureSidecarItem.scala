@@ -1,6 +1,6 @@
 package typings.instagramPrivateApi.mediaConfigureSidecarOptionsMod
 
-import typings.instagramPrivateApi.AnonAndroidreleaseAndroidversion
+import typings.instagramPrivateApi.AnonAndroidversion
 import typings.instagramPrivateApi.AnonCropcenter
 import typings.instagramPrivateApi.AnonSourceheight
 import typings.instagramPrivateApi.postingOptionsMod.PostingUsertags
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 
 trait MediaConfigureSidecarItem extends js.Object {
   var caption: js.UndefOr[Null] = js.undefined
-  var device: js.UndefOr[AnonAndroidreleaseAndroidversion | String] = js.undefined
+  var device: js.UndefOr[AnonAndroidversion | String] = js.undefined
   var edits: js.UndefOr[AnonCropcenter | String] = js.undefined
   var extra: js.UndefOr[AnonSourceheight | String] = js.undefined
   var height: Double
@@ -28,7 +28,7 @@ object MediaConfigureSidecarItem {
     upload_id: String,
     width: Double,
     caption: js.UndefOr[scala.Nothing] = js.undefined,
-    device: AnonAndroidreleaseAndroidversion | String = null,
+    device: AnonAndroidversion | String = null,
     edits: AnonCropcenter | String = null,
     extra: AnonSourceheight | String = null,
     source_type: String = null,

@@ -9,7 +9,7 @@ trait StartHumanLoopRequest extends js.Object {
   /**
     * Attributes of the data specified by the customer.
     */
-  var DataAttributes: js.UndefOr[HumanReviewDataAttributes] = js.native
+  var DataAttributes: js.UndefOr[HumanLoopDataAttributes] = js.native
   /**
     * The Amazon Resource Name (ARN) of the flow definition.
     */
@@ -17,7 +17,7 @@ trait StartHumanLoopRequest extends js.Object {
   /**
     * An object containing information about the human loop.
     */
-  var HumanLoopInput: HumanLoopInputContent = js.native
+  var HumanLoopInput: typings.awsSdk.augmentedairuntimeMod.HumanLoopInput = js.native
   /**
     * The name of the human loop.
     */
@@ -28,9 +28,9 @@ object StartHumanLoopRequest {
   @scala.inline
   def apply(
     FlowDefinitionArn: FlowDefinitionArn,
-    HumanLoopInput: HumanLoopInputContent,
+    HumanLoopInput: HumanLoopInput,
     HumanLoopName: HumanLoopName,
-    DataAttributes: HumanReviewDataAttributes = null
+    DataAttributes: HumanLoopDataAttributes = null
   ): StartHumanLoopRequest = {
     val __obj = js.Dynamic.literal(FlowDefinitionArn = FlowDefinitionArn.asInstanceOf[js.Any], HumanLoopInput = HumanLoopInput.asInstanceOf[js.Any], HumanLoopName = HumanLoopName.asInstanceOf[js.Any])
     if (DataAttributes != null) __obj.updateDynamic("DataAttributes")(DataAttributes.asInstanceOf[js.Any])

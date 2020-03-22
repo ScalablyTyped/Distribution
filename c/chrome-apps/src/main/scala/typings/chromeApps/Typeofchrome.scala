@@ -16,7 +16,7 @@ trait Typeofchrome extends js.Object {
     * New Chrome Event
     * @constructor
     */
-  val Event: AnonEvent
+  val Event: AnonInstantiable
   // #endregion internal
   // #region chrome.accessibilityFeatures
   ////////////////////////////
@@ -36,7 +36,7 @@ trait Typeofchrome extends js.Object {
     * For modifying feature state, the extension needs accessibilityFeatures.modify permission.
     * Note that accessibilityFeatures.modify does not imply accessibilityFeatures.read permission.
     */
-  val accessibilityFeatures: TypeofaccessibilityFeatures
+  val accessibilityFeatures: TypeofaccessibilityFeatur
   // #endregion
   // #region chrome.alarms
   ////////////
@@ -530,7 +530,7 @@ trait Typeofchrome extends js.Object {
     * E.g. this allows usage of platform managed certificates in third party VPNs
     * @see chrome.vpnProvider
     */
-  val platformKeys: TypeofplatformKeysCallback
+  val platformKeys: TypeofplatformKeysClientCertificateType
   // #endregion
   // #region chrome.power
   ///////////
@@ -565,7 +565,7 @@ trait Typeofchrome extends js.Object {
     * Use the chrome.runtime API to retrieve the background page, return details about the manifest, and listen for and respond to events in the app lifecycle. You can also use this API to convert the relative path of URLs to fully-qualified URLs.
     * @since Chrome 22
     */
-  val runtime: TypeofruntimeApplication
+  val runtime: TypeofruntimeConnect
   // #endregion
   // #region chrome.serial
   ////////////
@@ -754,8 +754,8 @@ trait Typeofchrome extends js.Object {
 object Typeofchrome {
   @scala.inline
   def apply(
-    Event: AnonEvent,
-    accessibilityFeatures: TypeofaccessibilityFeatures,
+    Event: AnonInstantiable,
+    accessibilityFeatures: TypeofaccessibilityFeatur,
     alarms: Typeofalarms,
     app: Typeofapp,
     audio: Typeofaudio,
@@ -793,10 +793,10 @@ object Typeofchrome {
     networking: Typeofnetworking,
     notifications: Typeofnotifications,
     permissions: Typeofpermissions,
-    platformKeys: TypeofplatformKeysCallback,
+    platformKeys: TypeofplatformKeysClientCertificateType,
     power: Typeofpower,
     printerProvider: TypeofprinterProvider,
-    runtime: TypeofruntimeApplication,
+    runtime: TypeofruntimeConnect,
     serial: deprecated,
     signedInDevices: TypeofsignedInDevices,
     sockets: Typeofsockets,

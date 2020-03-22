@@ -7,7 +7,7 @@ import typings.express.mod.Request_
 import typings.express.mod.Response_
 import typings.express.mod.Router
 import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.std.Partial
+import typings.namedRoutes.PartialRouteOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +19,14 @@ trait NamedRouter extends js.Object {
     method: String,
     path: String,
     callbacks: js.Array[RequestHandler[ParamsDictionary]],
-    options: Partial[RouteOptions]
+    options: PartialRouteOptions
   ): Unit = js.native
   def add(method: String, path: String, callbacks: RequestHandler[ParamsDictionary]): Unit = js.native
   def add(
     method: String,
     path: String,
     callbacks: RequestHandler[ParamsDictionary],
-    options: Partial[RouteOptions]
+    options: PartialRouteOptions
   ): Unit = js.native
   def build(name: String): String = js.native
   def build(name: String, params: RouteParams): String = js.native

@@ -7,9 +7,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Link extends ListItemProps {
-  var id: String
-  var isGatsby: js.UndefOr[Boolean] = js.undefined
+  var id: String = js.native
+  var isGatsby: js.UndefOr[Boolean] = js.native
 }
 
 object Link {

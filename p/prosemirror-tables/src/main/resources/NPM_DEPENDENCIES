@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "prosemirror-tables" : "0.9.5"
+      "prosemirror-tables" : "1.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "prosemirror-tables" : "0.9.5"
+      "prosemirror-tables" : "1.0.0"
     }
   ],
   "compile-devDependencies" : [

@@ -1,7 +1,6 @@
 package typings.dragselect.mod
 
-import typings.dragselect.AnonAltKey
-import typings.std.Partial
+import typings.dragselect.PartialareaHTMLElementSVG
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,6 +32,6 @@ import scala.scalajs.js.annotation._
   *     off the functionality.
   */
 class ^ () extends DragSelect {
-  def this(options: Partial[AnonAltKey]) = this()
+  def this(options: PartialareaHTMLElementSVG) = this()
 }
 

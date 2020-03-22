@@ -1,14 +1,15 @@
 package typings.meteor.Mongo
 
-import typings.meteor.Anon_Connection
+import typings.meteor.AnonConnection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSGlobal("Mongo.Collection")
 @js.native
-class CollectionCls[T] protected () extends Collection[T] {
+class CollectionCls[T] () extends Collection[T] {
   def this(name: String) = this()
-  def this(name: String, options: Anon_Connection) = this()
+  def this(name: String, options: AnonConnection) = this()
+  def this(name: Null, options: AnonConnection) = this()
 }
 

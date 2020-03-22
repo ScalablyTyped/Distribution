@@ -1,6 +1,6 @@
 package typings.winrtUwp.Windows.ApplicationModel.DataTransfer
 
-import typings.winrtUwp.AnonFirstSecond
+import typings.winrtUwp.AnonSecond
 import typings.winrtUwp.Windows.Foundation.Collections.IIterator
 import typings.winrtUwp.Windows.Foundation.Collections.IKeyValuePair
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
@@ -62,6 +62,6 @@ abstract class DataPackagePropertySetView () extends js.Object {
   /**
     * Divides the object into two views
     */
-  def split(): AnonFirstSecond = js.native
+  def split(): AnonSecond = js.native
 }
 

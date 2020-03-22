@@ -9,6 +9,7 @@ package object redshiftMod {
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.`restore-cluster`
     - typings.awsSdk.awsSdkStrings.`recommend-node-config`
+    - typings.awsSdk.awsSdkStrings.`resize-cluster`
     - java.lang.String
   */
   type ActionType = typings.awsSdk.redshiftMod._ActionType | java.lang.String

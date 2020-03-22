@@ -25,7 +25,7 @@ class RbmMedia () extends IRbmMedia {
   var fileUri_RbmMedia: String = js.native
   /** RbmMedia height. */
   @JSName("height")
-  var height_RbmMedia: Height = js.native
+  var height_RbmMedia: Height | String = js.native
   /** RbmMedia thumbnailUri. */
   @JSName("thumbnailUri")
   var thumbnailUri_RbmMedia: String = js.native

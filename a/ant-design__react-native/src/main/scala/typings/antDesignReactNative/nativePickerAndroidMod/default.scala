@@ -2,7 +2,7 @@ package typings.antDesignReactNative.nativePickerAndroidMod
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.antDesignReactNative.AnonCallBackCallback
+import typings.antDesignReactNative.AnonComputeChildIndex
 import typings.antDesignReactNative.AnonValueAny
 import typings.antDesignReactNative.ReadonlyPickerProps
 import typings.antDesignReactNative.pickerTypesMod.PickerProps
@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@ant-design/react-native/lib/picker/NativePicker.android", JSImport.Default)
 @js.native
-class default protected () extends AnonCallBackCallback {
+class default protected () extends AnonComputeChildIndex {
   def this(props: ReadonlyPickerProps) = this()
   def this(props: PickerProps) = this()
   def this(props: PickerProps, context: js.Any) = this()
@@ -24,9 +24,9 @@ class default protected () extends AnonCallBackCallback {
 object default
   extends Instantiable1[
       (/* props */ PickerProps) | (/* props */ ReadonlyPickerProps), 
-      AnonCallBackCallback
+      AnonComputeChildIndex
     ]
-     with Instantiable2[/* props */ PickerProps, /* context */ js.Any, AnonCallBackCallback] {
+     with Instantiable2[/* props */ PickerProps, /* context */ js.Any, AnonComputeChildIndex] {
   var contextType: js.UndefOr[Context[_]] = js.native
   def Item(_props: AnonValueAny): Null = js.native
 }

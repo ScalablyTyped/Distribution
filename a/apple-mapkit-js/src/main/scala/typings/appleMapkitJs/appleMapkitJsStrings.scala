@@ -44,9 +44,6 @@ object appleMapkitJsStrings {
   sealed trait error extends InitializationEventType
   
   @js.native
-  sealed trait language extends js.Object
-  
-  @js.native
   sealed trait `long-press` extends js.Object
   
   @js.native
@@ -106,8 +103,6 @@ object appleMapkitJsStrings {
   def dragging: dragging = "dragging".asInstanceOf[dragging]
   @scala.inline
   def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def language: language = "language".asInstanceOf[language]
   @scala.inline
   def `long-press`: `long-press` = "long-press".asInstanceOf[`long-press`]
   @scala.inline

@@ -1,8 +1,8 @@
 package typings.zchatBrowser
 
+import typings.zchatBrowser.mod.EventData
 import typings.zchatBrowser.mod.EventName
 import typings.zchatBrowser.mod.SendFileErrorMessage
-import typings.zchatBrowser.mod._EventData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -54,7 +54,7 @@ object zchatBrowserStrings {
   sealed trait agent_update extends EventName
   
   @js.native
-  sealed trait away extends _EventData
+  sealed trait away extends EventData
   
   @js.native
   sealed trait bad extends js.Object
@@ -87,13 +87,13 @@ object zchatBrowserStrings {
   sealed trait chatDotrequestDotrating extends js.Object
   
   @js.native
-  sealed trait closed extends _EventData
+  sealed trait closed extends EventData
   
   @js.native
-  sealed trait connected extends _EventData
+  sealed trait connected extends EventData
   
   @js.native
-  sealed trait connecting extends _EventData
+  sealed trait connecting extends EventData
   
   @js.native
   sealed trait connection_update extends EventName
@@ -114,10 +114,10 @@ object zchatBrowserStrings {
   sealed trait last_read extends js.Object
   
   @js.native
-  sealed trait offline extends _EventData
+  sealed trait offline extends EventData
   
   @js.native
-  sealed trait online extends _EventData
+  sealed trait online extends EventData
   
   @js.native
   sealed trait typing extends EventName

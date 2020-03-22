@@ -18,6 +18,9 @@ class ListSelect_ () extends IListSelect {
   /** ListSelect items. */
   @JSName("items")
   var items_ListSelect_ : js.Array[IItem] = js.native
+  /** ListSelect subtitle. */
+  @JSName("subtitle")
+  var subtitle_ListSelect_ : String = js.native
   /** ListSelect title. */
   @JSName("title")
   var title_ListSelect_ : String = js.native

@@ -177,9 +177,6 @@ object babelPluginMacrosStrings {
   sealed trait plus extends js.Object
   
   @js.native
-  sealed trait property extends js.Object
-  
-  @js.native
   sealed trait script extends js.Object
   
   @js.native
@@ -320,8 +317,6 @@ object babelPluginMacrosStrings {
   def `object`: `object` = "object".asInstanceOf[`object`]
   @scala.inline
   def plus: plus = "plus".asInstanceOf[plus]
-  @scala.inline
-  def property: property = "property".asInstanceOf[property]
   @scala.inline
   def script: script = "script".asInstanceOf[script]
   @scala.inline

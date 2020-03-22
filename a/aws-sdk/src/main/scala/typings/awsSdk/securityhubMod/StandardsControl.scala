@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation._
 @js.native
 trait StandardsControl extends js.Object {
   /**
-    * The identifier of the compliance standard control.
+    * The identifier of the security standard control.
     */
   var ControlId: js.UndefOr[NonEmptyString] = js.native
   /**
-    * The current status of the compliance standard control. Indicates whether the control is enabled or disabled. Security Hub does not check against disabled controls.
+    * The current status of the security standard control. Indicates whether the control is enabled or disabled. Security Hub does not check against disabled controls.
     */
   var ControlStatus: js.UndefOr[typings.awsSdk.securityhubMod.ControlStatus] = js.native
   /**
-    * The date and time that the status of the compliance standard control was most recently updated.
+    * The date and time that the status of the security standard control was most recently updated.
     */
   var ControlStatusUpdatedAt: js.UndefOr[Timestamp] = js.native
   /**
-    * The longer description of the compliance standard control. Provides information about what the control is checking for.
+    * The longer description of the security standard control. Provides information about what the control is checking for.
     */
   var Description: js.UndefOr[NonEmptyString] = js.native
   /**
@@ -35,15 +35,15 @@ trait StandardsControl extends js.Object {
     */
   var RemediationUrl: js.UndefOr[NonEmptyString] = js.native
   /**
-    * The severity of findings generated from this compliance standard control. The finding severity is based on an assessment of how easy it would be to compromise AWS resources if the compliance issue is detected.
+    * The severity of findings generated from this security standard control. The finding severity is based on an assessment of how easy it would be to compromise AWS resources if the issue is detected.
     */
   var SeverityRating: js.UndefOr[typings.awsSdk.securityhubMod.SeverityRating] = js.native
   /**
-    * The ARN of the compliance standard control.
+    * The ARN of the security standard control.
     */
   var StandardsControlArn: js.UndefOr[NonEmptyString] = js.native
   /**
-    * The title of the compliance standard control.
+    * The title of the security standard control.
     */
   var Title: js.UndefOr[NonEmptyString] = js.native
 }

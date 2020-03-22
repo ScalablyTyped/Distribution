@@ -10,4 +10,5 @@ package object mod {
     /* options */ typings.nextReduxWrapper.mod.MakeStoreOptions, 
     typings.redux.mod.Store[js.Any, typings.redux.mod.AnyAction]
   ]
+  type MakeStoreOptions = typings.nextReduxWrapper.mod.Config with typings.next.utilsMod.NextPageContext
 }

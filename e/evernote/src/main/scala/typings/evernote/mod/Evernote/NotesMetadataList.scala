@@ -1,6 +1,6 @@
 package typings.evernote.mod.Evernote
 
-import typings.evernote.AnonNotesSearchedWords
+import typings.evernote.AnonSearchedWords
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -62,7 +62,7 @@ import scala.scalajs.js.annotation._
 @JSImport("evernote", "Evernote.NotesMetadataList")
 @js.native
 class NotesMetadataList () extends js.Object {
-  def this(args: AnonNotesSearchedWords) = this()
+  def this(args: AnonSearchedWords) = this()
   var notes: js.Array[NoteMetadata] = js.native
   var searchedWords: js.Array[String] = js.native
   var startIndex: Double = js.native

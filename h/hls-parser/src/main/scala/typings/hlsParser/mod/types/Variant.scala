@@ -1,8 +1,8 @@
 package typings.hlsParser.mod.types
 
 import typings.hlsParser.AnonAudio
+import typings.hlsParser.AnonAverageBandwidth
 import typings.hlsParser.AnonHeight
-import typings.hlsParser.Anon_AUDIO
 import typings.hlsParser.hlsParserStrings.AUDIO
 import typings.hlsParser.hlsParserStrings.SUBTITLES
 import typings.hlsParser.hlsParserStrings.VIDEO
@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 @JSImport("hls-parser", "types.Variant")
 @js.native
 class Variant protected () extends js.Object {
-  def this(properties: Anon_AUDIO) = this()
+  def this(properties: AnonAverageBandwidth) = this()
   var audio: js.Array[Rendition[AUDIO]] = js.native
   var averageBandwidth: js.UndefOr[Double] = js.native
   var bandwidth: Double = js.native

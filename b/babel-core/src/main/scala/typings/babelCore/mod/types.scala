@@ -38,7 +38,7 @@ import typings.babelCore.babelCoreStrings.method
 import typings.babelCore.babelCoreStrings.set
 import typings.babelCore.babelCoreStrings.typeof
 import typings.babelCore.babelCoreStrings.void
-import typings.babelTypes.AnonCookedRaw
+import typings.babelTypes.AnonRaw
 import typings.babelTypes.mod.AnyTypeAnnotation_
 import typings.babelTypes.mod.ArrayExpression_
 import typings.babelTypes.mod.ArrayPattern_
@@ -3207,8 +3207,8 @@ object types extends js.Object {
   def taggedTemplateExpression(tag: Expression): TaggedTemplateExpression_ = js.native
   def taggedTemplateExpression(tag: Expression, quasi: TemplateLiteral_): TaggedTemplateExpression_ = js.native
   def templateElement(): TemplateElement_ = js.native
-  def templateElement(value: AnonCookedRaw): TemplateElement_ = js.native
-  def templateElement(value: AnonCookedRaw, tail: Boolean): TemplateElement_ = js.native
+  def templateElement(value: AnonRaw): TemplateElement_ = js.native
+  def templateElement(value: AnonRaw, tail: Boolean): TemplateElement_ = js.native
   def templateLiteral(): TemplateLiteral_ = js.native
   def templateLiteral(quasis: js.Array[TemplateElement_]): TemplateLiteral_ = js.native
   def templateLiteral(quasis: js.Array[TemplateElement_], expressions: js.Array[Expression]): TemplateLiteral_ = js.native

@@ -1,7 +1,7 @@
 package typings.antdMobileRn.promptContainerNativeMod
 
 import typings.antdMobileRn.AnonAntLocale
-import typings.antdMobileRn.AnonDefaultValueStyles
+import typings.antdMobileRn.AnonType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,6 +17,6 @@ class default protected () extends PropmptContainer {
 @js.native
 object default extends js.Object {
   var contextTypes: AnonAntLocale = js.native
-  var defaultProps: AnonDefaultValueStyles = js.native
+  var defaultProps: AnonType = js.native
 }
 

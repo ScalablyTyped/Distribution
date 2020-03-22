@@ -9,20 +9,8 @@ trait _Modifier extends js.Object
 
 object _Modifier {
   @scala.inline
-  def AfterModifier(after: Date): _Modifier = {
-    val __obj = js.Dynamic.literal(after = after.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[_Modifier]
-  }
-  @scala.inline
-  def BeforeModifier(before: Date): _Modifier = {
-    val __obj = js.Dynamic.literal(before = before.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[_Modifier]
-  }
-  @scala.inline
-  def DaysOfWeekModifier(daysOfWeek: js.Array[Double]): _Modifier = {
-    val __obj = js.Dynamic.literal(daysOfWeek = daysOfWeek.asInstanceOf[js.Any])
+  def RangeModifier(from: Date, to: Date): _Modifier = {
+    val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_Modifier]
   }
@@ -33,8 +21,20 @@ object _Modifier {
     __obj.asInstanceOf[_Modifier]
   }
   @scala.inline
-  def RangeModifier(from: Date, to: Date): _Modifier = {
-    val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
+  def DaysOfWeekModifier(daysOfWeek: js.Array[Double]): _Modifier = {
+    val __obj = js.Dynamic.literal(daysOfWeek = daysOfWeek.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[_Modifier]
+  }
+  @scala.inline
+  def AfterModifier(after: Date): _Modifier = {
+    val __obj = js.Dynamic.literal(after = after.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[_Modifier]
+  }
+  @scala.inline
+  def BeforeModifier(before: Date): _Modifier = {
+    val __obj = js.Dynamic.literal(before = before.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_Modifier]
   }

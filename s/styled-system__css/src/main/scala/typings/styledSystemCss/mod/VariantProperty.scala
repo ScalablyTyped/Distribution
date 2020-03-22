@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait VariantProperty extends _SystemStyleObject {
+trait VariantProperty extends SystemStyleObject {
   /**
     * **`Variants`** can be useful for applying complex styles to a component based on a single prop.
     *

@@ -1,6 +1,6 @@
 package typings.typescript.mod
 
-import typings.typescript.FnCount
+import typings.typescript.FnCall
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ object visitParameterList extends js.Object {
     nodes: js.UndefOr[scala.Nothing],
     visitor: Visitor,
     context: TransformationContext,
-    nodesVisitor: FnCount
+    nodesVisitor: FnCall
   ): NodeArray[ParameterDeclaration] = js.native
   /**
     * Starts a new lexical environment and visits a parameter list, suspending the lexical
@@ -24,7 +24,7 @@ object visitParameterList extends js.Object {
     nodes: NodeArray[ParameterDeclaration],
     visitor: Visitor,
     context: TransformationContext,
-    nodesVisitor: FnCount
+    nodesVisitor: FnCall
   ): NodeArray[ParameterDeclaration] = js.native
 }
 

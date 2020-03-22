@@ -1,7 +1,7 @@
 package typings.googleapis.reportsV1Mod.adminReportsV1
 
-import typings.googleapis.AnonBoolValueDatetimeValue
 import typings.googleapis.AnonCustomerId
+import typings.googleapis.AnonDatetimeValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,7 +30,7 @@ trait SchemaUsageReport extends js.Object {
   /**
     * Parameter value pairs for various applications.
     */
-  var parameters: js.UndefOr[js.Array[AnonBoolValueDatetimeValue]] = js.native
+  var parameters: js.UndefOr[js.Array[AnonDatetimeValue]] = js.native
 }
 
 object SchemaUsageReport {
@@ -40,7 +40,7 @@ object SchemaUsageReport {
     entity: AnonCustomerId = null,
     etag: String = null,
     kind: String = null,
-    parameters: js.Array[AnonBoolValueDatetimeValue] = null
+    parameters: js.Array[AnonDatetimeValue] = null
   ): SchemaUsageReport = {
     val __obj = js.Dynamic.literal()
     if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])

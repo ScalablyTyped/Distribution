@@ -1,8 +1,8 @@
 package typings.blueprintjsCore.navbarMod
 
-import typings.blueprintjsCore.TypeofClassNavbarDivider
-import typings.blueprintjsCore.TypeofClassNavbarGroup
-import typings.blueprintjsCore.TypeofClassNavbarHeading
+import typings.blueprintjsCore.TypeofNavbarDivider
+import typings.blueprintjsCore.TypeofNavbarGroup
+import typings.blueprintjsCore.TypeofNavbarHeading
 import typings.blueprintjsCore.commonMod.AbstractPureComponent2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,9 +17,9 @@ class Navbar ()
 @JSImport("@blueprintjs/core/lib/esm/components/navbar/navbar", "Navbar")
 @js.native
 object Navbar extends js.Object {
-  var Divider: TypeofClassNavbarDivider = js.native
-  var Group: TypeofClassNavbarGroup = js.native
-  var Heading: TypeofClassNavbarHeading = js.native
+  var Divider: TypeofNavbarDivider = js.native
+  var Group: TypeofNavbarGroup = js.native
+  var Heading: TypeofNavbarHeading = js.native
   var displayName: String = js.native
 }
 

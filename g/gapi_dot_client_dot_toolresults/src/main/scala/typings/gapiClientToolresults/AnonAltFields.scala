@@ -9,12 +9,6 @@ trait AnonAltFields extends js.Object {
   var alt: js.UndefOr[String] = js.undefined
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
-  /**
-    * A History id.
-    *
-    * Required.
-    */
-  var historyId: String
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   /** OAuth 2.0 token for the current user. */
@@ -32,12 +26,6 @@ trait AnonAltFields extends js.Object {
     * Overrides userIp if both are provided.
     */
   var quotaUser: js.UndefOr[String] = js.undefined
-  /**
-    * A unique request ID for server to detect duplicated requests. For example, a UUID.
-    *
-    * Optional, but strongly recommended.
-    */
-  var requestId: js.UndefOr[String] = js.undefined
   /** IP address of the site where the request originates. Use this if you want to enforce per-user limits. */
   var userIp: js.UndefOr[String] = js.undefined
 }
@@ -45,7 +33,6 @@ trait AnonAltFields extends js.Object {
 object AnonAltFields {
   @scala.inline
   def apply(
-    historyId: String,
     projectId: String,
     alt: String = null,
     fields: String = null,
@@ -53,17 +40,15 @@ object AnonAltFields {
     oauth_token: String = null,
     prettyPrint: js.UndefOr[Boolean] = js.undefined,
     quotaUser: String = null,
-    requestId: String = null,
     userIp: String = null
   ): AnonAltFields = {
-    val __obj = js.Dynamic.literal(historyId = historyId.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(projectId = projectId.asInstanceOf[js.Any])
     if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
     if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
     if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
-    if (requestId != null) __obj.updateDynamic("requestId")(requestId.asInstanceOf[js.Any])
     if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnonAltFields]
   }

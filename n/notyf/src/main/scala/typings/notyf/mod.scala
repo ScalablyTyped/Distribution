@@ -1,10 +1,7 @@
 package typings.notyf
 
 import typings.notyf.notyfMod.default
-import typings.notyf.notyfOptionsMod.DeepPartial
-import typings.notyf.notyfOptionsMod.INotyfNotificationOptions
 import typings.notyf.notyfOptionsMod.INotyfOptions
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +11,7 @@ import scala.scalajs.js.annotation._
 object mod extends js.Object {
   @js.native
   class Notyf () extends default {
-    def this(opts: Partial[INotyfOptions]) = this()
+    def this(opts: PartialINotyfOptions) = this()
   }
   
   @js.native
@@ -24,7 +21,7 @@ object mod extends js.Object {
   @js.native
   class NotyfNotification protected ()
     extends typings.notyf.notyfModelsMod.NotyfNotification {
-    def this(options: DeepPartial[INotyfNotificationOptions]) = this()
+    def this(options: DeepPartialINotyfNotifica) = this()
   }
   
   @js.native

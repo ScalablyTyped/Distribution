@@ -1,10 +1,9 @@
 package typings.mysql.mod
 
-import typings.mysql.AnonRejectUnauthorized
+import typings.mysql.SecureContextOptionsrejec
 import typings.mysql.mysqlStrings.DATE
 import typings.mysql.mysqlStrings.DATETIME
 import typings.mysql.mysqlStrings.TIMESTAMP
-import typings.node.tlsMod.SecureContextOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -53,7 +52,7 @@ object PoolConfig {
     queryFormat: (/* query */ String, /* values */ js.Any) => String = null,
     queueLimit: Int | Double = null,
     socketPath: String = null,
-    ssl: String | (SecureContextOptions with AnonRejectUnauthorized) = null,
+    ssl: String | SecureContextOptionsrejec = null,
     stringifyObjects: js.UndefOr[Boolean] = js.undefined,
     supportBigNumbers: js.UndefOr[Boolean] = js.undefined,
     timeout: Int | Double = null,

@@ -464,9 +464,9 @@ object Highcharts extends js.Object {
   def fireEvent[T](el: T, `type`: String, eventArguments: Event_, defaultFunction: js.Function): Unit = js.native
   def fireEvent[T](el: T, `type`: String, eventArguments: Event_, defaultFunction: EventCallbackFunction[T]): Unit = js.native
   def format(str: String, ctx: js.Any): String = js.native
-  def format(str: String, ctx: js.Any, time: Time_): String = js.native
+  def format(str: String, ctx: js.Any, chart: Chart_): String = js.native
   def formatSingle(format: String, `val`: js.Any): String = js.native
-  def formatSingle(format: String, `val`: js.Any, time: Time_): String = js.native
+  def formatSingle(format: String, `val`: js.Any, chart: Chart_): String = js.native
   def getMagnitude(num: Double): Double = js.native
   def getOptions(): Options = js.native
   def getStyle(el: HTMLDOMElement, prop: String): Double | String = js.native

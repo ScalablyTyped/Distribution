@@ -2,22 +2,22 @@ package typings.grasp
 
 import org.scalablytyped.runtime.Instantiable0
 import typings.grasp.graspStrings.buffer
+import typings.node.Anon2
+import typings.node.Anon3
+import typings.node.Anon4
+import typings.node.Anon5
 import typings.node.AnonAutoClose
-import typings.node.AnonAutoCloseEmitClose
-import typings.node.AnonBufferEncoding
-import typings.node.AnonBufferEncodingFalse
-import typings.node.AnonBufferEncodingPersistent
-import typings.node.AnonEncodingBufferEncoding
-import typings.node.AnonEncodingFalse
-import typings.node.AnonEncodingFalseWithFileTypes
+import typings.node.AnonEmitClose
+import typings.node.AnonEncoding
 import typings.node.AnonEncodingFlag
-import typings.node.AnonEncodingFlagNull
-import typings.node.AnonEncodingFlagString
-import typings.node.AnonEncodingNull
 import typings.node.AnonEncodingPersistent
-import typings.node.AnonEncodingPersistentRecursive
-import typings.node.AnonEncodingTrue
+import typings.node.AnonEncodingWithFileTypes
+import typings.node.AnonFlag
+import typings.node.AnonFlagString
 import typings.node.AnonInterval
+import typings.node.AnonPersistent
+import typings.node.AnonRecursive
+import typings.node.AnonWithFileTypes
 import typings.node.Buffer
 import typings.node.BufferEncoding
 import typings.node.NodeJS.ArrayBufferView
@@ -190,7 +190,7 @@ trait Typeoffs extends js.Object {
     */
   def createWriteStream(path: PathLike): WriteStream = js.native
   def createWriteStream(path: PathLike, options: String): WriteStream = js.native
-  def createWriteStream(path: PathLike, options: AnonAutoCloseEmitClose): WriteStream = js.native
+  def createWriteStream(path: PathLike, options: AnonEmitClose): WriteStream = js.native
   /**
     * Synchronously tests whether or not the given path exists by checking with the file system.
     * @param path A path to a file or directory. If a URL is provided, it must use the `file:` protocol.
@@ -291,9 +291,9 @@ trait Typeoffs extends js.Object {
     * Generates six random characters to be appended behind a required prefix to create a unique temporary directory.
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
-  def mkdtempSync(prefix: String, options: AnonBufferEncoding): Buffer = js.native
-  def mkdtempSync(prefix: String, options: AnonEncodingBufferEncoding): String = js.native
-  def mkdtempSync(prefix: String, options: AnonEncodingNull): String | Buffer = js.native
+  def mkdtempSync(prefix: String, options: Anon2): Buffer = js.native
+  def mkdtempSync(prefix: String, options: Anon3): String | Buffer = js.native
+  def mkdtempSync(prefix: String, options: AnonEncoding): String = js.native
   def mkdtempSync(prefix: String, options: BufferEncoding): String = js.native
   /**
     * Synchronously creates a unique temporary directory.
@@ -319,9 +319,9 @@ trait Typeoffs extends js.Object {
   def opendirSync(path: String, options: OpenDirOptions): Dir = js.native
   def readFileSync(path: Double): String | Buffer = js.native
   def readFileSync(path: Double, options: String): String = js.native
-  def readFileSync(path: Double, options: AnonEncodingFlag): Buffer = js.native
-  def readFileSync(path: Double, options: AnonEncodingFlagNull): String | Buffer = js.native
-  def readFileSync(path: Double, options: AnonEncodingFlagString): String = js.native
+  def readFileSync(path: Double, options: AnonEncodingFlag): String = js.native
+  def readFileSync(path: Double, options: AnonFlag): Buffer = js.native
+  def readFileSync(path: Double, options: AnonFlagString): String | Buffer = js.native
   /**
     * Synchronously reads the entire contents of a file.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
@@ -332,8 +332,6 @@ trait Typeoffs extends js.Object {
     */
   def readFileSync(path: PathLike): String | Buffer = js.native
   def readFileSync(path: PathLike, options: String): String = js.native
-  def readFileSync(path: PathLike, options: AnonEncodingFlag): Buffer = js.native
-  def readFileSync(path: PathLike, options: AnonEncodingFlagNull): String | Buffer = js.native
   /**
     * Synchronously reads the entire contents of a file.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
@@ -342,7 +340,9 @@ trait Typeoffs extends js.Object {
     * @param options Either the encoding for the result, or an object that contains the encoding and an optional flag.
     * If a flag is not provided, it defaults to `'r'`.
     */
-  def readFileSync(path: PathLike, options: AnonEncodingFlagString): String = js.native
+  def readFileSync(path: PathLike, options: AnonEncodingFlag): String = js.native
+  def readFileSync(path: PathLike, options: AnonFlag): Buffer = js.native
+  def readFileSync(path: PathLike, options: AnonFlagString): String | Buffer = js.native
   @JSName("readFileSync")
   def readFileSync_Buffer(path: Double): Buffer = js.native
   /**
@@ -375,20 +375,20 @@ trait Typeoffs extends js.Object {
     */
   def readdirSync(path: PathLike): js.Array[String] = js.native
   def readdirSync(path: PathLike, options: String): js.Array[Buffer | String] = js.native
-  /**
-    * Synchronous readdir(3) - read a directory.
-    * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
-    * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
-    */
-  def readdirSync(path: PathLike, options: AnonBufferEncodingFalse): js.Array[Buffer] = js.native
-  def readdirSync(path: PathLike, options: AnonEncodingFalse): js.Array[String] = js.native
-  def readdirSync(path: PathLike, options: AnonEncodingFalseWithFileTypes): js.Array[Buffer | String] = js.native
+  def readdirSync(path: PathLike, options: Anon4): js.Array[Buffer | String] = js.native
   /**
     * Synchronous readdir(3) - read a directory.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     * @param options If called with `withFileTypes: true` the result data will be an array of Dirent.
     */
-  def readdirSync(path: PathLike, options: AnonEncodingTrue): js.Array[Dirent] = js.native
+  def readdirSync(path: PathLike, options: Anon5): js.Array[Dirent] = js.native
+  /**
+    * Synchronous readdir(3) - read a directory.
+    * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
+    * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
+    */
+  def readdirSync(path: PathLike, options: AnonEncodingWithFileTypes): js.Array[Buffer] = js.native
+  def readdirSync(path: PathLike, options: AnonWithFileTypes): js.Array[String] = js.native
   def readdirSync(path: PathLike, options: BufferEncoding): js.Array[String] = js.native
   @JSName("readdirSync")
   def readdirSync_buffer(path: PathLike, options: buffer): js.Array[Buffer] = js.native
@@ -404,9 +404,9 @@ trait Typeoffs extends js.Object {
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
-  def readlinkSync(path: PathLike, options: AnonBufferEncoding): Buffer = js.native
-  def readlinkSync(path: PathLike, options: AnonEncodingBufferEncoding): String = js.native
-  def readlinkSync(path: PathLike, options: AnonEncodingNull): String | Buffer = js.native
+  def readlinkSync(path: PathLike, options: Anon2): Buffer = js.native
+  def readlinkSync(path: PathLike, options: Anon3): String | Buffer = js.native
+  def readlinkSync(path: PathLike, options: AnonEncoding): String = js.native
   def readlinkSync(path: PathLike, options: BufferEncoding): String = js.native
   /**
     * Synchronous readlink(2) - read value of a symbolic link.
@@ -506,41 +506,41 @@ trait Typeoffs extends js.Object {
     * If `persistent` is not supplied, the default of `true` is used.
     * If `recursive` is not supplied, the default of `false` is used.
     */
-  def watch(filename: PathLike, options: AnonBufferEncodingPersistent): FSWatcher = js.native
-  def watch(
-    filename: PathLike,
-    options: AnonBufferEncodingPersistent,
-    listener: js.Function2[/* event */ String, /* filename */ Buffer, Unit]
-  ): FSWatcher = js.native
-  /**
-    * Watch for changes on `filename`, where `filename` is either a file or a directory, returning an `FSWatcher`.
-    * @param filename A path to a file or directory. If a URL is provided, it must use the `file:` protocol.
-    * URL support is _experimental_.
-    * @param options Either the encoding for the filename provided to the listener, or an object optionally specifying encoding, persistent, and recursive options.
-    * If `encoding` is not supplied, the default of `'utf8'` is used.
-    * If `persistent` is not supplied, the default of `true` is used.
-    * If `recursive` is not supplied, the default of `false` is used.
-    */
   def watch(filename: PathLike, options: AnonEncodingPersistent): FSWatcher = js.native
-  /**
-    * Watch for changes on `filename`, where `filename` is either a file or a directory, returning an `FSWatcher`.
-    * @param filename A path to a file or directory. If a URL is provided, it must use the `file:` protocol.
-    * URL support is _experimental_.
-    * @param options Either the encoding for the filename provided to the listener, or an object optionally specifying encoding, persistent, and recursive options.
-    * If `encoding` is not supplied, the default of `'utf8'` is used.
-    * If `persistent` is not supplied, the default of `true` is used.
-    * If `recursive` is not supplied, the default of `false` is used.
-    */
-  def watch(filename: PathLike, options: AnonEncodingPersistentRecursive): FSWatcher = js.native
-  def watch(
-    filename: PathLike,
-    options: AnonEncodingPersistentRecursive,
-    listener: js.Function2[/* event */ String, /* filename */ String | Buffer, Unit]
-  ): FSWatcher = js.native
   def watch(
     filename: PathLike,
     options: AnonEncodingPersistent,
+    listener: js.Function2[/* event */ String, /* filename */ String | Buffer, Unit]
+  ): FSWatcher = js.native
+  /**
+    * Watch for changes on `filename`, where `filename` is either a file or a directory, returning an `FSWatcher`.
+    * @param filename A path to a file or directory. If a URL is provided, it must use the `file:` protocol.
+    * URL support is _experimental_.
+    * @param options Either the encoding for the filename provided to the listener, or an object optionally specifying encoding, persistent, and recursive options.
+    * If `encoding` is not supplied, the default of `'utf8'` is used.
+    * If `persistent` is not supplied, the default of `true` is used.
+    * If `recursive` is not supplied, the default of `false` is used.
+    */
+  def watch(filename: PathLike, options: AnonPersistent): FSWatcher = js.native
+  def watch(
+    filename: PathLike,
+    options: AnonPersistent,
     listener: js.Function2[/* event */ String, /* filename */ String, Unit]
+  ): FSWatcher = js.native
+  /**
+    * Watch for changes on `filename`, where `filename` is either a file or a directory, returning an `FSWatcher`.
+    * @param filename A path to a file or directory. If a URL is provided, it must use the `file:` protocol.
+    * URL support is _experimental_.
+    * @param options Either the encoding for the filename provided to the listener, or an object optionally specifying encoding, persistent, and recursive options.
+    * If `encoding` is not supplied, the default of `'utf8'` is used.
+    * If `persistent` is not supplied, the default of `true` is used.
+    * If `recursive` is not supplied, the default of `false` is used.
+    */
+  def watch(filename: PathLike, options: AnonRecursive): FSWatcher = js.native
+  def watch(
+    filename: PathLike,
+    options: AnonRecursive,
+    listener: js.Function2[/* event */ String, /* filename */ Buffer, Unit]
   ): FSWatcher = js.native
   def watch(filename: PathLike, options: BufferEncoding): FSWatcher = js.native
   def watch(

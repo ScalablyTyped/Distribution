@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@tensorflow-models/universal-sentence-encoder" : "1.2.0"
+      "@tensorflow-models/universal-sentence-encoder" : "1.2.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@tensorflow-models/universal-sentence-encoder" : "1.2.0"
+      "@tensorflow-models/universal-sentence-encoder" : "1.2.2"
     }
   ],
   "compile-devDependencies" : [

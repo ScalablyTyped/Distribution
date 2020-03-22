@@ -1,6 +1,6 @@
 package typings.gapiClientIdentitytoolkit.gapi.client.identitytoolkit
 
-import typings.gapiClientIdentitytoolkit.AnonDisplayNameEmail
+import typings.gapiClientIdentitytoolkit.AnonEmail
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,7 +33,7 @@ trait UserInfo extends js.Object {
   /** The URL of the user profile photo. */
   var photoUrl: js.UndefOr[String] = js.undefined
   /** The IDP of the user. */
-  var providerUserInfo: js.UndefOr[js.Array[AnonDisplayNameEmail]] = js.undefined
+  var providerUserInfo: js.UndefOr[js.Array[AnonEmail]] = js.undefined
   /** The user's plain text password. */
   var rawPassword: js.UndefOr[String] = js.undefined
   /** The user's password salt. */
@@ -62,7 +62,7 @@ object UserInfo {
     passwordUpdatedAt: Int | Double = null,
     phoneNumber: String = null,
     photoUrl: String = null,
-    providerUserInfo: js.Array[AnonDisplayNameEmail] = null,
+    providerUserInfo: js.Array[AnonEmail] = null,
     rawPassword: String = null,
     salt: String = null,
     screenName: String = null,

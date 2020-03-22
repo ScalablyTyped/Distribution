@@ -17,6 +17,10 @@ import scala.scalajs.js.annotation._
 
 trait TouchBarSegmentedControlConstructorOptions extends js.Object {
   /**
+    * Called when the user selects a new segment.
+    */
+  var change: js.UndefOr[js.Function2[/* selectedIndex */ Double, /* isSelected */ Boolean, Unit]] = js.undefined
+  /**
     * The selection mode of the control:
     */
   var mode: js.UndefOr[single | multiple | buttons] = js.undefined
@@ -32,25 +36,22 @@ trait TouchBarSegmentedControlConstructorOptions extends js.Object {
   var segments: js.Array[SegmentedControlSegment]
   /**
     * The index of the currently selected segment, will update automatically with user
-    * interaction. When the mode is multiple it will be the last selected item.
+    * interaction. When the mode is `multiple` it will be the last selected item.
     */
   var selectedIndex: js.UndefOr[Double] = js.undefined
-  /**
-    * Called when the user selects a new segment.
-    */
-  def change(selectedIndex: Double, isSelected: Boolean): Unit
 }
 
 object TouchBarSegmentedControlConstructorOptions {
   @scala.inline
   def apply(
-    change: (Double, Boolean) => Unit,
     segments: js.Array[SegmentedControlSegment],
+    change: (/* selectedIndex */ Double, /* isSelected */ Boolean) => Unit = null,
     mode: single | multiple | buttons = null,
     segmentStyle: automatic | rounded | `textured-rounded` | `round-rect` | `textured-square` | capsule | `small-square` | separated = null,
     selectedIndex: Int | Double = null
   ): TouchBarSegmentedControlConstructorOptions = {
-    val __obj = js.Dynamic.literal(change = js.Any.fromFunction2(change), segments = segments.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(segments = segments.asInstanceOf[js.Any])
+    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction2(change))
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (segmentStyle != null) __obj.updateDynamic("segmentStyle")(segmentStyle.asInstanceOf[js.Any])
     if (selectedIndex != null) __obj.updateDynamic("selectedIndex")(selectedIndex.asInstanceOf[js.Any])

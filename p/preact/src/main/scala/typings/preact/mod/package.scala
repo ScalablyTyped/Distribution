@@ -15,7 +15,7 @@ package object mod {
   //
   // Context
   // -----------------------------------
-  type Consumer[T] = typings.preact.mod.FunctionComponent[typings.preact.AnonChildrenValue[T]]
+  type Consumer[T] = typings.preact.mod.FunctionComponent[typings.preact.Anon0[T]]
   type FunctionalComponent[P] = typings.preact.mod.FunctionComponent[P]
   //
   // Preact Component interface
@@ -24,8 +24,8 @@ package object mod {
   type PreactConsumer[T] = typings.preact.mod.Consumer[T]
   type PreactContext[T] = typings.preact.mod.Context[T]
   type PreactProvider[T] = typings.preact.mod.Provider[T]
-  type Provider[T] = typings.preact.mod.FunctionComponent[typings.preact.AnonChildrenValueComponentChildren[T]]
+  type Provider[T] = typings.preact.mod.FunctionComponent[typings.preact.AnonValue[T]]
   type Ref[T] = typings.preact.mod.RefObject[T] | typings.preact.mod.RefCallback[T]
   type RefCallback[T] = js.Function1[/* instance */ T | scala.Null, scala.Unit]
-  type RenderableProps[P, RefType] = P with typings.preact.mod.Attributes with typings.preact.AnonChildrenRef[RefType]
+  type RenderableProps[P, RefType] = P with typings.preact.mod.Attributes with typings.preact.AnonRef[RefType]
 }

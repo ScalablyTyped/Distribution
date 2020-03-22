@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ionic/angular/dist/directives/proxies", "IonSpinner")
+@JSImport("@ionic/angular/directives/proxies", "IonSpinner")
 @js.native
 class IonSpinner protected ()
   extends typings.ionicCore.componentsMod.Components.IonSpinner {

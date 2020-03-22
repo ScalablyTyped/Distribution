@@ -53,7 +53,7 @@ object computedMod extends js.Object {
   def collect(dependentKeys: String*): ComputedProperty[js.Array[_], js.Array[_]] = js.native
   def deprecatingAlias(dependentKey: String): ComputedProperty[_, _] = js.native
   def deprecatingAlias(dependentKey: String, options: AnonId): ComputedProperty[_, _] = js.native
-  def deprecatingAlias(dependentKey: String, options: AnonIdUntil): ComputedProperty[_, _] = js.native
+  def deprecatingAlias(dependentKey: String, options: AnonUntil): ComputedProperty[_, _] = js.native
   def empty(dependentKey: String): ComputedProperty[Boolean, Boolean] = js.native
   def equal(dependentKey: String, value: js.Any): ComputedProperty[Boolean, Boolean] = js.native
   def expandProperties(pattern: String, callback: js.Function1[/* expanded */ String, Unit]): Unit = js.native

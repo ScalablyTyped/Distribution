@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "socks" : "2.3.2"
+      "socks" : "2.3.3"
     }
   ],
   "test-dependencies" : [
     {
-      "socks" : "2.3.2"
+      "socks" : "2.3.3"
     }
   ],
   "compile-devDependencies" : [

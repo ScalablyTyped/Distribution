@@ -3,7 +3,7 @@ package typings.angularOdataResources.OData
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
-import typings.angularOdataResources.TypeofClassPredicate
+import typings.angularOdataResources.TypeofPredicate
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,7 +28,7 @@ class Global protected () extends js.Object {
   ] = js.native
   var Func: Instantiable2[/* methodName */ String, /* args (repeated) */ js.Any, MethodCall] = js.native
   var OrderBy: Instantiable2[/* propertyName */ String, js.UndefOr[/* sortOrder */ String], OrderByStatement] = js.native
-  var Predicate: TypeofClassPredicate = js.native
+  var Predicate: TypeofPredicate = js.native
   var Property: Instantiable1[/* value */ String, typings.angularOdataResources.OData.Property] = js.native
   var Provider: typings.angularOdataResources.OData.Provider[_] = js.native
   var Value: Instantiable2[

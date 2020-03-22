@@ -37,7 +37,7 @@ object portalMod extends js.Object {
   /* static members */
   @js.native
   object default extends js.Object {
-    var Host: TypeofClassPortalHost = js.native
+    var Host: TypeofPortalHost = js.native
     def add(e: ReactNode): Double = js.native
     def remove(key: Double): Unit = js.native
   }

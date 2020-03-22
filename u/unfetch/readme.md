@@ -1,7 +1,7 @@
 
 # Scala.js typings for unfetch
 
-Typings are for version 3.1.2
+Typings are for version 4.1.0
 
 ## Library description:
 Bare minimum fetch polyfill in 500 bytes

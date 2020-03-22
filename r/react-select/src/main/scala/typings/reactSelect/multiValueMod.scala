@@ -33,7 +33,7 @@ object multiValueMod extends js.Object {
     var isMulti: Boolean = js.native
     var onExited: fn = js.native
     var options: OptionsType[OptionType] = js.native
-    var removeProps: AnonEvent = js.native
+    var removeProps: AnonOnClick = js.native
     var selectProps: Props[OptionType] = js.native
     def clearValue(): Unit = js.native
     def cx(): String | Unit = js.native

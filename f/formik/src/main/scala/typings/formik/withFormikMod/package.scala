@@ -10,7 +10,6 @@ package object withFormikMod {
     typings.react.mod.ComponentType[TOwnProps]
   ]
   type CompositeComponent[P] = (typings.react.mod.ComponentClass[P, typings.react.mod.ComponentState]) | typings.react.mod.StatelessComponent[P]
-  type FormikBag[P, V] = typings.formik.AnonProps[P] with typings.formik.typesMod.FormikActions[V]
   type InferableComponentDecorator[TOwnProps] = js.Function1[
     /* component */ typings.formik.withFormikMod.CompositeComponent[TOwnProps], 
     typings.formik.withFormikMod.CompositeComponent[TOwnProps]

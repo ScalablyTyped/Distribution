@@ -5,7 +5,6 @@ import typings.koa.mod.DefaultContext
 import typings.koa.mod.DefaultState
 import typings.koa.mod.Middleware
 import typings.pathToRegexp.mod.ParseOptions
-import typings.pathToRegexp.mod.RegExpOptions
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,7 +17,11 @@ object KoaRoute extends js.Object {
   trait Method extends js.Object {
     def apply(path: Path): CreateRoute = js.native
     def apply(path: Path, fn: Handler): Middleware[DefaultState, DefaultContext] = js.native
-    def apply(path: Path, fn: Handler, opts: ParseOptions with RegExpOptions): Middleware[DefaultState, DefaultContext] = js.native
+    def apply(
+      path: Path,
+      fn: Handler,
+      opts: ParseOptions with (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify pathToRegexp.RegExpOptions */ js.Any)
+    ): Middleware[DefaultState, DefaultContext] = js.native
   }
   
   @js.native
@@ -95,109 +98,249 @@ object KoaRoute extends js.Object {
     var unsubscribe_Original: Method = js.native
     def acl(path: Path): CreateRoute = js.native
     def acl(path: Path, fn: Handler): Middleware[DefaultState, DefaultContext] = js.native
-    def acl(path: Path, fn: Handler, opts: ParseOptions with RegExpOptions): Middleware[DefaultState, DefaultContext] = js.native
+    def acl(
+      path: Path,
+      fn: Handler,
+      opts: ParseOptions with (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify pathToRegexp.RegExpOptions */ js.Any)
+    ): Middleware[DefaultState, DefaultContext] = js.native
     def all(path: Path): CreateRoute = js.native
     def all(path: Path, fn: Handler): Middleware[DefaultState, DefaultContext] = js.native
-    def all(path: Path, fn: Handler, opts: ParseOptions with RegExpOptions): Middleware[DefaultState, DefaultContext] = js.native
+    def all(
+      path: Path,
+      fn: Handler,
+      opts: ParseOptions with (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify pathToRegexp.RegExpOptions */ js.Any)
+    ): Middleware[DefaultState, DefaultContext] = js.native
     def bind(path: Path): CreateRoute = js.native
     def bind(path: Path, fn: Handler): Middleware[DefaultState, DefaultContext] = js.native
-    def bind(path: Path, fn: Handler, opts: ParseOptions with RegExpOptions): Middleware[DefaultState, DefaultContext] = js.native
+    def bind(
+      path: Path,
+      fn: Handler,
+      opts: ParseOptions with (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify pathToRegexp.RegExpOptions */ js.Any)
+    ): Middleware[DefaultState, DefaultContext] = js.native
     def checkout(path: Path): CreateRoute = js.native
     def checkout(path: Path, fn: Handler): Middleware[DefaultState, DefaultContext] = js.native
-    def checkout(path: Path, fn: Handler, opts: ParseOptions with RegExpOptions): Middleware[DefaultState, DefaultContext] = js.native
+    def checkout(
+      path: Path,
+      fn: Handler,
+      opts: ParseOptions with (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify pathToRegexp.RegExpOptions */ js.Any)
+    ): Middleware[DefaultState, DefaultContext] = js.native
     def connect(path: Path): CreateRoute = js.native
     def connect(path: Path, fn: Handler): Middleware[DefaultState, DefaultContext] = js.native
-    def connect(path: Path, fn: Handler, opts: ParseOptions with RegExpOptions): Middleware[DefaultState, DefaultContext] = js.native
+    def connect(
+      path: Path,
+      fn: Handler,
+      opts: ParseOptions with (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify pathToRegexp.RegExpOptions */ js.Any)
+    ): Middleware[DefaultState, DefaultContext] = js.native
     def copy(path: Path): CreateRoute = js.native
     def copy(path: Path, fn: Handler): Middleware[DefaultState, DefaultContext] = js.native
-    def copy(path: Path, fn: Handler, opts: ParseOptions with RegExpOptions): Middleware[DefaultState, DefaultContext] = js.native
+    def copy(
+      path: Path,
+      fn: Handler,
+      opts: ParseOptions with (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify pathToRegexp.RegExpOptions */ js.Any)
+    ): Middleware[DefaultState, DefaultContext] = js.native
     def del(path: Path): CreateRoute = js.native
     def del(path: Path, fn: Handler): Middleware[DefaultState, DefaultContext] = js.native
-    def del(path: Path, fn: Handler, opts: ParseOptions with RegExpOptions): Middleware[DefaultState, DefaultContext] = js.native
+    def del(
+      path: Path,
+      fn: Handler,
+      opts: ParseOptions with (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify pathToRegexp.RegExpOptions */ js.Any)
+    ): Middleware[DefaultState, DefaultContext] = js.native
     def delete(path: Path): CreateRoute = js.native
     def delete(path: Path, fn: Handler): Middleware[DefaultState, DefaultContext] = js.native
-    def delete(path: Path, fn: Handler, opts: ParseOptions with RegExpOptions): Middleware[DefaultState, DefaultContext] = js.native
+    def delete(
+      path: Path,
+      fn: Handler,
+      opts: ParseOptions with (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify pathToRegexp.RegExpOptions */ js.Any)
+    ): Middleware[DefaultState, DefaultContext] = js.native
     def get(path: Path): CreateRoute = js.native
     def get(path: Path, fn: Handler): Middleware[DefaultState, DefaultContext] = js.native
-    def get(path: Path, fn: Handler, opts: ParseOptions with RegExpOptions): Middleware[DefaultState, DefaultContext] = js.native
+    def get(
+      path: Path,
+      fn: Handler,
+      opts: ParseOptions with (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify pathToRegexp.RegExpOptions */ js.Any)
+    ): Middleware[DefaultState, DefaultContext] = js.native
     def head(path: Path): CreateRoute = js.native
     def head(path: Path, fn: Handler): Middleware[DefaultState, DefaultContext] = js.native
-    def head(path: Path, fn: Handler, opts: ParseOptions with RegExpOptions): Middleware[DefaultState, DefaultContext] = js.native
+    def head(
+      path: Path,
+      fn: Handler,
+      opts: ParseOptions with (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify pathToRegexp.RegExpOptions */ js.Any)
+    ): Middleware[DefaultState, DefaultContext] = js.native
     def link(path: Path): CreateRoute = js.native
     def link(path: Path, fn: Handler): Middleware[DefaultState, DefaultContext] = js.native
-    def link(path: Path, fn: Handler, opts: ParseOptions with RegExpOptions): Middleware[DefaultState, DefaultContext] = js.native
+    def link(
+      path: Path,
+      fn: Handler,
+      opts: ParseOptions with (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify pathToRegexp.RegExpOptions */ js.Any)
+    ): Middleware[DefaultState, DefaultContext] = js.native
     def lock(path: Path): CreateRoute = js.native
     def lock(path: Path, fn: Handler): Middleware[DefaultState, DefaultContext] = js.native
-    def lock(path: Path, fn: Handler, opts: ParseOptions with RegExpOptions): Middleware[DefaultState, DefaultContext] = js.native
+    def lock(
+      path: Path,
+      fn: Handler,
+      opts: ParseOptions with (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify pathToRegexp.RegExpOptions */ js.Any)
+    ): Middleware[DefaultState, DefaultContext] = js.native
     def merge(path: Path): CreateRoute = js.native
     def merge(path: Path, fn: Handler): Middleware[DefaultState, DefaultContext] = js.native
-    def merge(path: Path, fn: Handler, opts: ParseOptions with RegExpOptions): Middleware[DefaultState, DefaultContext] = js.native
+    def merge(
+      path: Path,
+      fn: Handler,
+      opts: ParseOptions with (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify pathToRegexp.RegExpOptions */ js.Any)
+    ): Middleware[DefaultState, DefaultContext] = js.native
     def mkactivity(path: Path): CreateRoute = js.native
     def mkactivity(path: Path, fn: Handler): Middleware[DefaultState, DefaultContext] = js.native
-    def mkactivity(path: Path, fn: Handler, opts: ParseOptions with RegExpOptions): Middleware[DefaultState, DefaultContext] = js.native
+    def mkactivity(
+      path: Path,
+      fn: Handler,
+      opts: ParseOptions with (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify pathToRegexp.RegExpOptions */ js.Any)
+    ): Middleware[DefaultState, DefaultContext] = js.native
     def mkcalendar(path: Path): CreateRoute = js.native
     def mkcalendar(path: Path, fn: Handler): Middleware[DefaultState, DefaultContext] = js.native
-    def mkcalendar(path: Path, fn: Handler, opts: ParseOptions with RegExpOptions): Middleware[DefaultState, DefaultContext] = js.native
+    def mkcalendar(
+      path: Path,
+      fn: Handler,
+      opts: ParseOptions with (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify pathToRegexp.RegExpOptions */ js.Any)
+    ): Middleware[DefaultState, DefaultContext] = js.native
     def mkcol(path: Path): CreateRoute = js.native
     def mkcol(path: Path, fn: Handler): Middleware[DefaultState, DefaultContext] = js.native
-    def mkcol(path: Path, fn: Handler, opts: ParseOptions with RegExpOptions): Middleware[DefaultState, DefaultContext] = js.native
+    def mkcol(
+      path: Path,
+      fn: Handler,
+      opts: ParseOptions with (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify pathToRegexp.RegExpOptions */ js.Any)
+    ): Middleware[DefaultState, DefaultContext] = js.native
     def move(path: Path): CreateRoute = js.native
     def move(path: Path, fn: Handler): Middleware[DefaultState, DefaultContext] = js.native
-    def move(path: Path, fn: Handler, opts: ParseOptions with RegExpOptions): Middleware[DefaultState, DefaultContext] = js.native
+    def move(
+      path: Path,
+      fn: Handler,
+      opts: ParseOptions with (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify pathToRegexp.RegExpOptions */ js.Any)
+    ): Middleware[DefaultState, DefaultContext] = js.native
     def msearch(path: Path): CreateRoute = js.native
     def msearch(path: Path, fn: Handler): Middleware[DefaultState, DefaultContext] = js.native
-    def msearch(path: Path, fn: Handler, opts: ParseOptions with RegExpOptions): Middleware[DefaultState, DefaultContext] = js.native
+    def msearch(
+      path: Path,
+      fn: Handler,
+      opts: ParseOptions with (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify pathToRegexp.RegExpOptions */ js.Any)
+    ): Middleware[DefaultState, DefaultContext] = js.native
     def notify(path: Path): CreateRoute = js.native
     def notify(path: Path, fn: Handler): Middleware[DefaultState, DefaultContext] = js.native
-    def notify(path: Path, fn: Handler, opts: ParseOptions with RegExpOptions): Middleware[DefaultState, DefaultContext] = js.native
+    def notify(
+      path: Path,
+      fn: Handler,
+      opts: ParseOptions with (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify pathToRegexp.RegExpOptions */ js.Any)
+    ): Middleware[DefaultState, DefaultContext] = js.native
     def options(path: Path): CreateRoute = js.native
     def options(path: Path, fn: Handler): Middleware[DefaultState, DefaultContext] = js.native
-    def options(path: Path, fn: Handler, opts: ParseOptions with RegExpOptions): Middleware[DefaultState, DefaultContext] = js.native
+    def options(
+      path: Path,
+      fn: Handler,
+      opts: ParseOptions with (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify pathToRegexp.RegExpOptions */ js.Any)
+    ): Middleware[DefaultState, DefaultContext] = js.native
     def patch(path: Path): CreateRoute = js.native
     def patch(path: Path, fn: Handler): Middleware[DefaultState, DefaultContext] = js.native
-    def patch(path: Path, fn: Handler, opts: ParseOptions with RegExpOptions): Middleware[DefaultState, DefaultContext] = js.native
+    def patch(
+      path: Path,
+      fn: Handler,
+      opts: ParseOptions with (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify pathToRegexp.RegExpOptions */ js.Any)
+    ): Middleware[DefaultState, DefaultContext] = js.native
     def post(path: Path): CreateRoute = js.native
     def post(path: Path, fn: Handler): Middleware[DefaultState, DefaultContext] = js.native
-    def post(path: Path, fn: Handler, opts: ParseOptions with RegExpOptions): Middleware[DefaultState, DefaultContext] = js.native
+    def post(
+      path: Path,
+      fn: Handler,
+      opts: ParseOptions with (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify pathToRegexp.RegExpOptions */ js.Any)
+    ): Middleware[DefaultState, DefaultContext] = js.native
     def propfind(path: Path): CreateRoute = js.native
     def propfind(path: Path, fn: Handler): Middleware[DefaultState, DefaultContext] = js.native
-    def propfind(path: Path, fn: Handler, opts: ParseOptions with RegExpOptions): Middleware[DefaultState, DefaultContext] = js.native
+    def propfind(
+      path: Path,
+      fn: Handler,
+      opts: ParseOptions with (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify pathToRegexp.RegExpOptions */ js.Any)
+    ): Middleware[DefaultState, DefaultContext] = js.native
     def proppatch(path: Path): CreateRoute = js.native
     def proppatch(path: Path, fn: Handler): Middleware[DefaultState, DefaultContext] = js.native
-    def proppatch(path: Path, fn: Handler, opts: ParseOptions with RegExpOptions): Middleware[DefaultState, DefaultContext] = js.native
+    def proppatch(
+      path: Path,
+      fn: Handler,
+      opts: ParseOptions with (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify pathToRegexp.RegExpOptions */ js.Any)
+    ): Middleware[DefaultState, DefaultContext] = js.native
     def purge(path: Path): CreateRoute = js.native
     def purge(path: Path, fn: Handler): Middleware[DefaultState, DefaultContext] = js.native
-    def purge(path: Path, fn: Handler, opts: ParseOptions with RegExpOptions): Middleware[DefaultState, DefaultContext] = js.native
+    def purge(
+      path: Path,
+      fn: Handler,
+      opts: ParseOptions with (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify pathToRegexp.RegExpOptions */ js.Any)
+    ): Middleware[DefaultState, DefaultContext] = js.native
     def put(path: Path): CreateRoute = js.native
     def put(path: Path, fn: Handler): Middleware[DefaultState, DefaultContext] = js.native
-    def put(path: Path, fn: Handler, opts: ParseOptions with RegExpOptions): Middleware[DefaultState, DefaultContext] = js.native
+    def put(
+      path: Path,
+      fn: Handler,
+      opts: ParseOptions with (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify pathToRegexp.RegExpOptions */ js.Any)
+    ): Middleware[DefaultState, DefaultContext] = js.native
     def rebind(path: Path): CreateRoute = js.native
     def rebind(path: Path, fn: Handler): Middleware[DefaultState, DefaultContext] = js.native
-    def rebind(path: Path, fn: Handler, opts: ParseOptions with RegExpOptions): Middleware[DefaultState, DefaultContext] = js.native
+    def rebind(
+      path: Path,
+      fn: Handler,
+      opts: ParseOptions with (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify pathToRegexp.RegExpOptions */ js.Any)
+    ): Middleware[DefaultState, DefaultContext] = js.native
     def report(path: Path): CreateRoute = js.native
     def report(path: Path, fn: Handler): Middleware[DefaultState, DefaultContext] = js.native
-    def report(path: Path, fn: Handler, opts: ParseOptions with RegExpOptions): Middleware[DefaultState, DefaultContext] = js.native
+    def report(
+      path: Path,
+      fn: Handler,
+      opts: ParseOptions with (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify pathToRegexp.RegExpOptions */ js.Any)
+    ): Middleware[DefaultState, DefaultContext] = js.native
     def search(path: Path): CreateRoute = js.native
     def search(path: Path, fn: Handler): Middleware[DefaultState, DefaultContext] = js.native
-    def search(path: Path, fn: Handler, opts: ParseOptions with RegExpOptions): Middleware[DefaultState, DefaultContext] = js.native
+    def search(
+      path: Path,
+      fn: Handler,
+      opts: ParseOptions with (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify pathToRegexp.RegExpOptions */ js.Any)
+    ): Middleware[DefaultState, DefaultContext] = js.native
     def subscribe(path: Path): CreateRoute = js.native
     def subscribe(path: Path, fn: Handler): Middleware[DefaultState, DefaultContext] = js.native
-    def subscribe(path: Path, fn: Handler, opts: ParseOptions with RegExpOptions): Middleware[DefaultState, DefaultContext] = js.native
+    def subscribe(
+      path: Path,
+      fn: Handler,
+      opts: ParseOptions with (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify pathToRegexp.RegExpOptions */ js.Any)
+    ): Middleware[DefaultState, DefaultContext] = js.native
     def trace(path: Path): CreateRoute = js.native
     def trace(path: Path, fn: Handler): Middleware[DefaultState, DefaultContext] = js.native
-    def trace(path: Path, fn: Handler, opts: ParseOptions with RegExpOptions): Middleware[DefaultState, DefaultContext] = js.native
+    def trace(
+      path: Path,
+      fn: Handler,
+      opts: ParseOptions with (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify pathToRegexp.RegExpOptions */ js.Any)
+    ): Middleware[DefaultState, DefaultContext] = js.native
     def unbind(path: Path): CreateRoute = js.native
     def unbind(path: Path, fn: Handler): Middleware[DefaultState, DefaultContext] = js.native
-    def unbind(path: Path, fn: Handler, opts: ParseOptions with RegExpOptions): Middleware[DefaultState, DefaultContext] = js.native
+    def unbind(
+      path: Path,
+      fn: Handler,
+      opts: ParseOptions with (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify pathToRegexp.RegExpOptions */ js.Any)
+    ): Middleware[DefaultState, DefaultContext] = js.native
     def unlink(path: Path): CreateRoute = js.native
     def unlink(path: Path, fn: Handler): Middleware[DefaultState, DefaultContext] = js.native
-    def unlink(path: Path, fn: Handler, opts: ParseOptions with RegExpOptions): Middleware[DefaultState, DefaultContext] = js.native
+    def unlink(
+      path: Path,
+      fn: Handler,
+      opts: ParseOptions with (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify pathToRegexp.RegExpOptions */ js.Any)
+    ): Middleware[DefaultState, DefaultContext] = js.native
     def unlock(path: Path): CreateRoute = js.native
     def unlock(path: Path, fn: Handler): Middleware[DefaultState, DefaultContext] = js.native
-    def unlock(path: Path, fn: Handler, opts: ParseOptions with RegExpOptions): Middleware[DefaultState, DefaultContext] = js.native
+    def unlock(
+      path: Path,
+      fn: Handler,
+      opts: ParseOptions with (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify pathToRegexp.RegExpOptions */ js.Any)
+    ): Middleware[DefaultState, DefaultContext] = js.native
     def unsubscribe(path: Path): CreateRoute = js.native
     def unsubscribe(path: Path, fn: Handler): Middleware[DefaultState, DefaultContext] = js.native
-    def unsubscribe(path: Path, fn: Handler, opts: ParseOptions with RegExpOptions): Middleware[DefaultState, DefaultContext] = js.native
+    def unsubscribe(
+      path: Path,
+      fn: Handler,
+      opts: ParseOptions with (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify pathToRegexp.RegExpOptions */ js.Any)
+    ): Middleware[DefaultState, DefaultContext] = js.native
   }
   
   type CreateMethod = js.Function1[/* method */ String, Method]

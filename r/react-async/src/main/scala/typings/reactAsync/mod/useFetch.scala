@@ -1,6 +1,5 @@
 package typings.reactAsync.mod
 
-import typings.reactAsync.reactAsyncStrings.run
 import typings.std.RequestInfo
 import typings.std.RequestInit
 import scala.scalajs.js
@@ -10,8 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-async", "useFetch")
 @js.native
 object useFetch extends js.Object {
-  def apply[T](input: RequestInfo): (AsyncInitialWithout[run, T]) with FetchRun[T] = js.native
-  def apply[T](input: RequestInfo, init: RequestInit): (AsyncInitialWithout[run, T]) with FetchRun[T] = js.native
-  def apply[T](input: RequestInfo, init: RequestInit, options: FetchOptions[T]): (AsyncInitialWithout[run, T]) with FetchRun[T] = js.native
+  def apply[T](resource: RequestInfo, init: RequestInit): AsyncState[T, FetchRun[T]] = js.native
+  def apply[T](resource: RequestInfo, init: RequestInit, hasDeferJsonOptions: FetchOptions[T]): AsyncState[T, FetchRun[T]] = js.native
 }
 

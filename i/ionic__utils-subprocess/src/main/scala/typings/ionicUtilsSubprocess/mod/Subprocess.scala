@@ -1,6 +1,7 @@
 package typings.ionicUtilsSubprocess.mod
 
-import typings.ionicUtilsSubprocess.AnonP
+import typings.ionicUtilsSubprocess.PromisevoidpChildProcess
+import typings.ionicUtilsSubprocess.ReadonlySpawnOptions
 import typings.node.childProcessMod.ChildProcess
 import typings.node.childProcessMod.SpawnOptions
 import scala.scalajs.js
@@ -21,9 +22,9 @@ class Subprocess protected () extends js.Object {
   def bashifyArg(arg: String): String = js.native
   def combinedOutput(): js.Promise[String] = js.native
   def maskArg(arg: String): String = js.native
-  def options(): SpawnOptions = js.native
+  def options(): ReadonlySpawnOptions = js.native
   def output(): js.Promise[String] = js.native
-  def run(): js.Promise[Unit] with AnonP = js.native
+  def run(): PromisevoidpChildProcess = js.native
   def spawn(): ChildProcess = js.native
 }
 

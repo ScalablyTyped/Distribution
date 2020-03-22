@@ -41,7 +41,7 @@ object poseElementMod extends js.Object {
     def flushChildren(): Unit = js.native
     def getFirstPose(): CurrentPose | Unit = js.native
     def getInitialPose(): CurrentPose | Unit = js.native
-    def getSetProps(): AnonChildren = js.native
+    def getSetProps(): AnonDictkey = js.native
     @JSName("getSnapshotBeforeUpdate")
     def getSnapshotBeforeUpdate_MPoseElement(): Null = js.native
     def initPoser(poser: DomPopmotionPoser): Unit = js.native

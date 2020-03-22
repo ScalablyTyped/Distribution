@@ -7,9 +7,9 @@ import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
 import typings.react.mod.TouchEvent
-import typings.reactSelect.AnonAction
+import typings.reactSelect.AnonClearValue
 import typings.reactSelect.AnonContext
-import typings.reactSelect.AnonContextEvent
+import typings.reactSelect.AnonEvent
 import typings.reactSelect.componentsMod.PlaceholderOrValue
 import typings.reactSelect.componentsMod.SelectComponents
 import typings.reactSelect.reactSelectStrings.first
@@ -60,7 +60,7 @@ trait Select[OptionType /* <: OptionTypeBase */]
   var openAfterFocus: Boolean = js.native
   var scrollToFocusedOptionOnUpdate: Boolean = js.native
   var userIsDragging: Boolean | Null = js.native
-  def announceAriaLiveContext(props: AnonContextEvent): Unit = js.native
+  def announceAriaLiveContext(props: AnonEvent): Unit = js.native
   // ==============================
   // Helpers
   // ==============================
@@ -97,7 +97,7 @@ trait Select[OptionType /* <: OptionTypeBase */]
   // ==============================
   // Getters
   // ==============================
-  def getCommonProps(): AnonAction[OptionType] = js.native
+  def getCommonProps(): AnonClearValue[OptionType] = js.native
   def getControlRef(ref: HTMLElement): Unit = js.native
   @JSName("getElementId")
   def getElementId_group(element: group): String = js.native

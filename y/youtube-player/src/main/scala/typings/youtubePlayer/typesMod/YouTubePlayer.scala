@@ -2,10 +2,10 @@ package typings.youtubePlayer.typesMod
 
 import typings.std.CustomEvent
 import typings.std.HTMLIFrameElement
-import typings.youtubePlayer.AnonData
 import typings.youtubePlayer.AnonEndSeconds
-import typings.youtubePlayer.AnonEndSecondsMediaContentUrl
 import typings.youtubePlayer.AnonIndex
+import typings.youtubePlayer.AnonMediaContentUrl
+import typings.youtubePlayer.CustomEventanydatanumber
 import typings.youtubePlayer.eventNamesMod.EventType
 import typings.youtubePlayer.playerStatesMod.PlayerStates
 import typings.youtubePlayer.youtubePlayerStrings.stateChange
@@ -32,7 +32,7 @@ trait YouTubePlayer extends js.Object {
   def cueVideoByUrl(mediaContentUrl: String): Unit = js.native
   def cueVideoByUrl(mediaContentUrl: String, startSeconds: Double): Unit = js.native
   def cueVideoByUrl(mediaContentUrl: String, startSeconds: Double, suggestedQuality: String): Unit = js.native
-  def cueVideoByUrl(video: AnonEndSecondsMediaContentUrl): Unit = js.native
+  def cueVideoByUrl(video: AnonMediaContentUrl): Unit = js.native
   def destroy(): Unit = js.native
   def getAvailablePlaybackRates(): js.Array[Double] = js.native
   def getAvailableQualityLevels(): js.Array[String] = js.native
@@ -68,12 +68,12 @@ trait YouTubePlayer extends js.Object {
   def loadVideoByUrl(mediaContentUrl: String): Unit = js.native
   def loadVideoByUrl(mediaContentUrl: String, startSeconds: Double): Unit = js.native
   def loadVideoByUrl(mediaContentUrl: String, startSeconds: Double, suggestedQuality: String): Unit = js.native
-  def loadVideoByUrl(video: AnonEndSecondsMediaContentUrl): Unit = js.native
+  def loadVideoByUrl(video: AnonMediaContentUrl): Unit = js.native
   def mute(): Unit = js.native
   def nextVideo(): Unit = js.native
   def on(eventType: EventType, listener: js.Function1[/* event */ CustomEvent[_], Unit]): Unit = js.native
   @JSName("on")
-  def on_stateChange(eventType: stateChange, listener: js.Function1[/* event */ CustomEvent[_] with AnonData, Unit]): Unit = js.native
+  def on_stateChange(eventType: stateChange, listener: js.Function1[/* event */ CustomEventanydatanumber, Unit]): Unit = js.native
   def pauseVideo(): Unit = js.native
   def playVideo(): Unit = js.native
   def playVideoAt(index: Double): Unit = js.native

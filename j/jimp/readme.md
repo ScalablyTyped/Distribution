@@ -1,7 +1,7 @@
 
 # Scala.js typings for jimp
 
-Typings are for version 0.8.5
+Typings are for version 0.9.3
 
 ## Library description:
 An image processing library written entirely in JavaScript (i.e. zero external or native dependencies)

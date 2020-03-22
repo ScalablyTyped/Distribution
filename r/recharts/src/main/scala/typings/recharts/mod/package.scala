@@ -22,7 +22,7 @@ package object mod {
     - typings.recharts.rechartsStrings.preserveStartEnd
   */
   type AxisInterval = typings.recharts.mod._AxisInterval | scala.Double
-  type BBoxUpdateCallback = js.Function1[/* box */ typings.recharts.AnonHeightWidth, scala.Unit]
+  type BBoxUpdateCallback = js.Function1[/* box */ typings.recharts.AnonWidth, scala.Unit]
   type BarChartProps = typings.recharts.mod.CategoricalChartWrapper[typings.recharts.mod.LayoutType] with typings.recharts.mod.EventAttributes
   /* Rewritten from type alias, can be one of: 
     - scala.Double

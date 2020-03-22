@@ -1,14 +1,12 @@
 package typings.reactIntl
 
-import typings.formatjsIntlDisplaynames.libMod.DisplayNamesOptions
-import typings.formatjsIntlListformat.mod.IntlListFormatOptions
-import typings.formatjsIntlUnifiedNumberformat.mod.UnifiedNumberFormatOptions
 import typings.react.mod.ComponentType
 import typings.react.mod.Context
 import typings.react.mod.FC
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.PropsWithoutRef
 import typings.react.mod.Provider
+import typings.react.mod.ReactElement
 import typings.react.mod.RefAttributes
 import typings.reactIntl.htmlMessageMod.default
 import typings.reactIntl.injectIntlMod.Opts
@@ -17,35 +15,11 @@ import typings.reactIntl.injectIntlMod.WrappedComponentProps
 import typings.reactIntl.providerMod.OptionalIntlConfig
 import typings.reactIntl.reactIntlBooleans.`false`
 import typings.reactIntl.reactIntlBooleans.`true`
-import typings.reactIntl.reactIntlStrings.`type`
-import typings.reactIntl.reactIntlStrings.children
-import typings.reactIntl.reactIntlStrings.defaultFormats
-import typings.reactIntl.reactIntlStrings.defaultLocale
-import typings.reactIntl.reactIntlStrings.few
-import typings.reactIntl.reactIntlStrings.format
-import typings.reactIntl.reactIntlStrings.formats
-import typings.reactIntl.reactIntlStrings.localeMatcher
-import typings.reactIntl.reactIntlStrings.many
-import typings.reactIntl.reactIntlStrings.messages
-import typings.reactIntl.reactIntlStrings.onError
-import typings.reactIntl.reactIntlStrings.one
-import typings.reactIntl.reactIntlStrings.other
-import typings.reactIntl.reactIntlStrings.textComponent
-import typings.reactIntl.reactIntlStrings.timeZone
-import typings.reactIntl.reactIntlStrings.two
-import typings.reactIntl.reactIntlStrings.unit
-import typings.reactIntl.reactIntlStrings.value
-import typings.reactIntl.reactIntlStrings.zero
 import typings.reactIntl.relativeMod.Props
 import typings.reactIntl.relativeMod.State
-import typings.reactIntl.typesMod.CustomFormatConfig
 import typings.reactIntl.typesMod.FormatNumberOptions
 import typings.reactIntl.typesMod.IntlCache
-import typings.reactIntl.typesMod.IntlConfig
 import typings.reactIntl.typesMod.IntlShape
-import typings.std.Intl.DateTimeFormatOptions
-import typings.std.Partial
-import typings.std.Pick
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -71,20 +45,14 @@ object libMod extends js.Object {
   class IntlProvider ()
     extends typings.reactIntl.providerMod.default
   
-  val FormattedDate: FC[DateTimeFormatOptions with CustomFormatConfig with AnonValue] = js.native
-  val FormattedDateParts: FC[DateTimeFormatOptions with CustomFormatConfig with AnonChildren] = js.native
-  val FormattedDisplayName: FC[DisplayNamesOptions with AnonValueNumberObject] = js.native
-  val FormattedList: FC[IntlListFormatOptions with AnonValueArray] = js.native
-  val FormattedNumber: FC[UnifiedNumberFormatOptions with CustomFormatConfig with AnonValueNumber] = js.native
-  val FormattedNumberParts: FC[FormatNumberOptions with Anon0] = js.native
-  val FormattedPlural: (ForwardRefExoticComponent[
-    (Pick[
-      typings.reactIntl.pluralMod.Props, 
-      children | other | zero | one | two | few | many | format | localeMatcher | `type` | value
-    ]) with AnonForwardedRefInstance with RefAttributes[_]
-  ]) with AnonWrappedComponentComponentType = js.native
-  val FormattedTime: FC[DateTimeFormatOptions with CustomFormatConfig with AnonValue] = js.native
-  val FormattedTimeParts: FC[DateTimeFormatOptions with CustomFormatConfig with AnonChildren] = js.native
+  val FormattedDate: FC[DateTimeFormatOptionsCust] = js.native
+  val FormattedDateParts: FC[DateTimeFormatOptionsCustChildren] = js.native
+  val FormattedDisplayName: FC[DisplayNamesOptionsvalues] = js.native
+  val FormattedList: FC[IntlListFormatOptionsvalu] = js.native
+  val FormattedNumber: FC[UnifiedNumberFormatOption] = js.native
+  val FormattedNumberParts: FC[FormatNumberOptions with AnonChildren] = js.native
+  val FormattedTime: FC[DateTimeFormatOptionsCust] = js.native
+  val FormattedTimeParts: FC[DateTimeFormatOptionsCustChildren] = js.native
   val IntlContext: Context[IntlShape] = js.native
   val RawIntlProvider: Provider[IntlShape] = js.native
   def createIntl(config: OptionalIntlConfig): IntlShape = js.native
@@ -102,7 +70,7 @@ object libMod extends js.Object {
   /* static members */
   @js.native
   object FormattedHTMLMessage extends js.Object {
-    var defaultProps: AnonSpan = js.native
+    var defaultProps: AnonTagName = js.native
     var displayName: String = js.native
   }
   
@@ -113,23 +81,34 @@ object libMod extends js.Object {
     var displayName: String = js.native
   }
   
+  @js.native
+  object FormattedPlural extends js.Object {
+    @JSName("$$typeof")
+    val DollarDollartypeof: js.Symbol = js.native
+    var WrappedComponent: ComponentType[typings.reactIntl.pluralMod.Props] = js.native
+    var defaultProps: js.UndefOr[PartialPickPropschildreno] = js.native
+    var displayName: js.UndefOr[String] = js.native
+    var propTypes: js.UndefOr[WeakValidationMapPickProp] = js.native
+    /**
+      * **NOTE**: Exotic components are not callable.
+      */
+    def apply(props: PickPropschildrenotherzer): ReactElement | Null = js.native
+  }
+  
   /* static members */
   @js.native
   object FormattedRelativeTime extends js.Object {
-    var defaultProps: Pick[Props, unit | value] = js.native
+    var defaultProps: PickPropsunitvalue = js.native
     var displayName: String = js.native
-    def getDerivedStateFromProps(props: Props, state: State): Partial[State] | Null = js.native
+    def getDerivedStateFromProps(props: Props, state: State): PartialStateCurrentValueInSeconds | Null = js.native
   }
   
   /* static members */
   @js.native
   object IntlProvider extends js.Object {
-    var defaultProps: Pick[
-        IntlConfig, 
-        formats | messages | timeZone | textComponent | defaultLocale | defaultFormats | onError
-      ] = js.native
+    var defaultProps: PickIntlConfigformatsmess = js.native
     var displayName: String = js.native
-    def getDerivedStateFromProps(props: OptionalIntlConfig, hasPrevConfigCache: typings.reactIntl.providerMod.State): Partial[typings.reactIntl.providerMod.State] | Null = js.native
+    def getDerivedStateFromProps(props: OptionalIntlConfig, hasPrevConfigCache: typings.reactIntl.providerMod.State): PartialState | Null = js.native
   }
   
 }

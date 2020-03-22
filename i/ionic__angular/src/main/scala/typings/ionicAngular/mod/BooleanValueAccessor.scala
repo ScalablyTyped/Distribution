@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/angular", "BooleanValueAccessor")
 @js.native
 class BooleanValueAccessor protected ()
-  extends typings.ionicAngular.distMod.BooleanValueAccessor {
+  extends typings.ionicAngular.booleanValueAccessorMod.BooleanValueAccessor {
   def this(el: ElementRef[_]) = this()
 }
 

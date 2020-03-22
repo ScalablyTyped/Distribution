@@ -1,6 +1,6 @@
 package typings.nano.mod
 
-import typings.node.eventsMod.EventEmitter
+import typings.nano.AnonDisable
 import typings.request.mod.Request
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait DatabaseScope extends js.Object {
+  var replication: AnonDisable = js.native
   // http://docs.couchdb.org/en/latest/api/database/changes.html#get--db-_changes
   def changes(name: String): js.Promise[DatabaseChangesResponse] = js.native
   def changes(name: String, callback: Callback[DatabaseChangesResponse]): js.Promise[DatabaseChangesResponse] = js.native
@@ -30,13 +31,13 @@ trait DatabaseScope extends js.Object {
   // http://docs.couchdb.org/en/latest/api/database/common.html#delete--db
   def destroy(name: String): js.Promise[OkResponse] = js.native
   def destroy(name: String, callback: Callback[OkResponse]): js.Promise[OkResponse] = js.native
-  def follow(source: String): EventEmitter = js.native
-  def follow(source: String, callback: Callback[_]): EventEmitter = js.native
-  def follow(source: String, params: DatabaseScopeFollowUpdatesParams): EventEmitter = js.native
-  def follow(source: String, params: DatabaseScopeFollowUpdatesParams, callback: Callback[_]): EventEmitter = js.native
-  def followUpdates(): EventEmitter = js.native
-  def followUpdates(params: js.Any): EventEmitter = js.native
-  def followUpdates(params: js.Any, callback: Callback[_]): EventEmitter = js.native
+  def follow(source: String): FollowEmitter = js.native
+  def follow(source: String, params: DatabaseScopeFollowUpdatesParams): FollowEmitter = js.native
+  def follow(source: String, params: DatabaseScopeFollowUpdatesParams, callback: Callback[_]): Unit = js.native
+  def followUpdates(): FollowEmitter = js.native
+  def followUpdates(callback: Callback[_]): Unit = js.native
+  def followUpdates(params: js.Any): FollowEmitter = js.native
+  def followUpdates(params: DatabaseScopeFollowUpdatesParams, callback: Callback[_]): Unit = js.native
   // http://docs.couchdb.org/en/latest/api/database/common.html#get--db
   def get(name: String): js.Promise[DatabaseGetResponse] = js.native
   def get(name: String, callback: Callback[DatabaseGetResponse]): js.Promise[DatabaseGetResponse] = js.native

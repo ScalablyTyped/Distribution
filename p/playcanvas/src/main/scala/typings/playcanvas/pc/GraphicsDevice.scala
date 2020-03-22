@@ -92,6 +92,13 @@ class GraphicsDevice protected () extends EventHandler {
   var scope: ScopeSpace = js.native
   /**
     * @readonly
+    * @name pc.GraphicsDevice#supportsInstancing
+    * @type {boolean}
+    * @description True if hardware instancing is supported.
+    */
+  val supportsInstancing: Boolean = js.native
+  /**
+    * @readonly
     * @name pc.GraphicsDevice#textureFloatHighPrecision
     * @type {number}
     * @description Check if high precision floating-point textures are supported.

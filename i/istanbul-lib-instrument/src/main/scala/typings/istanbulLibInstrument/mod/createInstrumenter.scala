@@ -1,6 +1,6 @@
 package typings.istanbulLibInstrument.mod
 
-import typings.std.Partial
+import typings.istanbulLibInstrument.PartialInstrumenterOption
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object createInstrumenter extends js.Object {
   def apply(): Instrumenter = js.native
-  def apply(options: Partial[InstrumenterOptions]): Instrumenter = js.native
+  def apply(options: PartialInstrumenterOption): Instrumenter = js.native
 }
 

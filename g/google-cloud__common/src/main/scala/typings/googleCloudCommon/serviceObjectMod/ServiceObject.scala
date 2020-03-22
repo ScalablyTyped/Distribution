@@ -33,6 +33,7 @@ class ServiceObject[T] protected () extends EventEmitter {
   var metadata: Metadata = js.native
   var methods: Methods = js.native
   var parent: ServiceObjectParent = js.native
+  var pollIntervalMs: js.UndefOr[Double] = js.native
   /**
     * Make an authenticated API request.
     *

@@ -28,6 +28,9 @@ trait reactSpinnersProps {
   def ClipLoaderProps: LoaderSizeProps.type = typings.reactSpinners.interfacesMod.LoaderSizeProps
   type ClipLoaderProps = LoaderSizeProps
   @scala.inline
+  def ClockLoaderProps: LoaderSizeProps.type = typings.reactSpinners.interfacesMod.LoaderSizeProps
+  type ClockLoaderProps = LoaderSizeProps
+  @scala.inline
   def DotLoaderProps: LoaderSizeProps.type = typings.reactSpinners.interfacesMod.LoaderSizeProps
   type DotLoaderProps = LoaderSizeProps
   @scala.inline

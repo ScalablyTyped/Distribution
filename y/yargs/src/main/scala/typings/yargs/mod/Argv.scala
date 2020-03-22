@@ -2,7 +2,7 @@ package typings.yargs.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Error
-import typings.std.Partial
+import typings.yargs.PartialParserConfiguratio
 import typings.yargs.yargsBooleans.`false`
 import typings.yargs.yargsBooleans.`true`
 import typings.yargsParser.mod.DetailedArguments
@@ -525,7 +525,7 @@ trait Argv[T] extends js.Object {
   {[ key in keyof yargs.yargs.Arguments<T> ]: yargs.yargs.Arguments<T>[key]}
     */ typings.yargs.yargsStrings.Argv with Arguments[T] = js.native
   /** Allows to configure advanced yargs features. */
-  def parserConfiguration(configuration: Partial[ParserConfigurationOptions]): Argv[T] = js.native
+  def parserConfiguration(configuration: PartialParserConfiguratio): Argv[T] = js.native
   /**
     * Similar to `config()`, indicates that yargs should interpret the object from the specified key in package.json as a configuration object.
     * @param [cwd] If provided, the package.json will be read from this location

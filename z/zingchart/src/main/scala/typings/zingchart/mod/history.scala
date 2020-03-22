@@ -1,6 +1,6 @@
 package typings.zingchart.mod
 
-import typings.zingchart.AnonAlphaBackgroundcolorBackgroundcolor1Backgroundcolor2BackgroundfitBackgroundimageBackgroundpositionBackgroundrepeat
+import typings.zingchart.AnonShadow
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -157,12 +157,8 @@ trait history extends js.Object {
     * Sets the object's height. 10 | "20px" | 0.3 | "30%" | ...
     */
   var height: js.UndefOr[js.Any] = js.undefined
-  var item: js.UndefOr[
-    AnonAlphaBackgroundcolorBackgroundcolor1Backgroundcolor2BackgroundfitBackgroundimageBackgroundpositionBackgroundrepeat
-  ] = js.undefined
-  var `item-off`: js.UndefOr[
-    AnonAlphaBackgroundcolorBackgroundcolor1Backgroundcolor2BackgroundfitBackgroundimageBackgroundpositionBackgroundrepeat
-  ] = js.undefined
+  var item: js.UndefOr[AnonShadow] = js.undefined
+  var `item-off`: js.UndefOr[AnonShadow] = js.undefined
   /**
     * Sets the object's margin/s. 10 | "5px" | "10 20" | "5px 10px 15px 20px" | ...
     */
@@ -267,8 +263,8 @@ object history {
     `gradient-colors`: String = null,
     `gradient-stops`: String = null,
     height: js.Any = null,
-    item: AnonAlphaBackgroundcolorBackgroundcolor1Backgroundcolor2BackgroundfitBackgroundimageBackgroundpositionBackgroundrepeat = null,
-    `item-off`: AnonAlphaBackgroundcolorBackgroundcolor1Backgroundcolor2BackgroundfitBackgroundimageBackgroundpositionBackgroundrepeat = null,
+    item: AnonShadow = null,
+    `item-off`: AnonShadow = null,
     margin: js.Any = null,
     `margin-bottom`: js.Any = null,
     `margin-left`: js.Any = null,

@@ -2,11 +2,11 @@ package typings.jupyterlabSettingeditor.settingeditorMod.SettingEditor
 
 import typings.jupyterlabCodeeditor.editorMod.CodeEditor.Factory
 import typings.jupyterlabCodeeditor.editorMod.CodeEditor.IEditor
-import typings.jupyterlabCoreutils.tokensMod.ISettingRegistry
-import typings.jupyterlabCoreutils.tokensMod.IStateDB
 import typings.jupyterlabRendermime.tokensMod.IRenderMimeRegistry
 import typings.jupyterlabSettingeditor.AnonRegistry
-import typings.phosphorCoreutils.jsonMod.ReadonlyJSONValue
+import typings.jupyterlabSettingregistry.tokensMod.ISettingRegistry
+import typings.jupyterlabStatedb.tokensMod.IStateDB
+import typings.luminoCoreutils.jsonMod.ReadonlyPartialJSONValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -38,7 +38,7 @@ trait IOptions extends js.Object {
   /**
     * The state database used to store layout.
     */
-  var state: IStateDB[ReadonlyJSONValue]
+  var state: IStateDB[ReadonlyPartialJSONValue]
   /**
     * The point after which the editor should restore its state.
     */
@@ -52,7 +52,7 @@ object IOptions {
     editorFactory: /* options */ typings.jupyterlabCodeeditor.editorMod.CodeEditor.IOptions => IEditor,
     key: String,
     registry: ISettingRegistry,
-    state: IStateDB[ReadonlyJSONValue],
+    state: IStateDB[ReadonlyPartialJSONValue],
     rendermime: IRenderMimeRegistry = null,
     when: js.Promise[_] | js.Array[js.Promise[_]] = null
   ): IOptions = {

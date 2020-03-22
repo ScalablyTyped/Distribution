@@ -4,8 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TooltipNoteProps extends js.Object {
-  var note: String
+  var note: String = js.native
 }
 
 object TooltipNoteProps {

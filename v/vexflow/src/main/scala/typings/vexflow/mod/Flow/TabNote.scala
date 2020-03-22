@@ -1,6 +1,6 @@
 package typings.vexflow.mod.Flow
 
-import typings.vexflow.AnonDotsDurationPositions
+import typings.vexflow.AnonPositions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class TabNote protected ()
   extends typings.vexflow.Vex.Flow.TabNote {
-  def this(tab_struct: AnonDotsDurationPositions) = this()
-  def this(tab_struct: AnonDotsDurationPositions, draw_stem: Boolean) = this()
+  def this(tab_struct: AnonPositions) = this()
+  def this(tab_struct: AnonPositions, draw_stem: Boolean) = this()
 }
 

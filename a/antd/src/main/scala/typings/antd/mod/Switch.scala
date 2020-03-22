@@ -1,6 +1,5 @@
 package typings.antd.mod
 
-import typings.antd.AnonClassNameDefault
 import typings.antd.switchMod.SwitchProps
 import typings.antd.switchMod.default
 import scala.scalajs.js
@@ -18,6 +17,5 @@ class Switch protected () extends default {
 @js.native
 object Switch extends js.Object {
   var __ANT_SWITCH: Boolean = js.native
-  var propTypes: AnonClassNameDefault = js.native
 }
 

@@ -1,6 +1,6 @@
 package typings.jqueryColorpicker.JQueryColorpickerStatic
 
-import typings.jqueryColorpicker.AnonAB
+import typings.jqueryColorpicker.AnonA
 import typings.jqueryColorpicker.AnonCmyk
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,7 +13,7 @@ trait Color extends js.Object {
   def equals(color: Color): Boolean
   def getAlpha(): Double
   def getCMYK(): CMYK
-  def getChannels(): AnonAB
+  def getChannels(): AnonA
   def getHSL(): HSL
   def getHSV(): HSV
   def getLAB(): LAB
@@ -40,7 +40,7 @@ object Color {
     equals: Color => Boolean,
     getAlpha: () => Double,
     getCMYK: () => CMYK,
-    getChannels: () => AnonAB,
+    getChannels: () => AnonA,
     getHSL: () => HSL,
     getHSV: () => HSV,
     getLAB: () => LAB,

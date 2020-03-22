@@ -13,8 +13,8 @@ package object mod {
   /* Rewritten from type alias, can be one of: 
     - js.Array[java.lang.String]
     - typings.victory.AnonXArray
-    - typings.victory.AnonY
-    - typings.victory.AnonXYArray
+    - typings.victory.AnonYArray
+    - typings.victory.AnonXArrayYArray
   */
   type CategoryPropType = typings.victory.mod._CategoryPropType | js.Array[java.lang.String]
   /* Rewritten from type alias, can be one of: 
@@ -36,11 +36,11 @@ package object mod {
   /**
     * Domain padding
     */
-  type DomainPaddingPropType = scala.Double | typings.victory.AnonXYNumber
+  type DomainPaddingPropType = scala.Double | typings.victory.Anon0
   /* Rewritten from type alias, can be one of: 
     - typings.victory.mod.DomainTuple
-    - typings.victory.AnonXYDomainTuple
-    - typings.victory.AnonXYDomainTupleOptional
+    - typings.victory.AnonXDomainTuple
+    - typings.victory.AnonYDomainTuple
   */
   type DomainPropType = typings.victory.mod._DomainPropType | typings.victory.mod.DomainTuple
   /**
@@ -57,7 +57,4 @@ package object mod {
   type StringOrNumberOrCallback = java.lang.String | scala.Double | typings.victory.mod.VictoryStringOrNumberCallback
   type VictoryNumberCallback = js.Function1[/* args */ typings.victory.mod.CallbackArgs, scala.Double]
   type VictoryStringOrNumberCallback = js.Function1[/* args */ typings.victory.mod.CallbackArgs, java.lang.String | scala.Double]
-  type VictoryStyleObject = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof react.react.CSSProperties ]: victory.victory.StringOrNumberOrCallback}
-    */ typings.victory.victoryStrings.VictoryStyleObject with js.Any
 }

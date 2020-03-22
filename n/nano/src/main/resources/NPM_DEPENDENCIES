@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "nano" : "8.1.0"
+      "nano" : "8.2.1"
     }
   ],
   "test-dependencies" : [
     {
-      "nano" : "8.1.0"
+      "nano" : "8.2.1"
     }
   ],
   "compile-devDependencies" : [

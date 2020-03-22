@@ -1,7 +1,7 @@
 package typings.jupyterlabTooltip.widgetMod
 
 import typings.jupyterlabTooltip.widgetMod.Tooltip.IOptions
-import typings.phosphorWidgets.mod.Widget
+import typings.luminoWidgets.mod.Widget
 import typings.std.Event_
 import scala.scalajs.js
 import scala.scalajs.js.`|`

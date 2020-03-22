@@ -17,7 +17,7 @@ trait Cookie extends js.Object {
     */
   var expirationDate: js.UndefOr[Double] = js.undefined
   /**
-    * Whether the cookie is a host-only cookie; this will only be true if no domain
+    * Whether the cookie is a host-only cookie; this will only be `true` if no domain
     * was passed.
     */
   var hostOnly: js.UndefOr[Boolean] = js.undefined

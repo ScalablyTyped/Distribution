@@ -11,11 +11,11 @@ trait GetOperationsForResourceResult extends js.Object {
     */
   var nextPageCount: js.UndefOr[String] = js.native
   /**
-    * An identifier that was returned from the previous call to this operation, which can be used to return the next set of items in the list.
+    * The token to advance to the next page of resutls from your request. A next page token is not returned if there are no more results to display. To get the next page of results, perform another GetOperationsForResource request and specify the next page token using the pageToken parameter.
     */
   var nextPageToken: js.UndefOr[String] = js.native
   /**
-    * An array of key-value pairs containing information about the results of your get operations for resource request.
+    * An array of objects that describe the result of the action, such as the status of the request, the time stamp of the request, and the resources affected by the request.
     */
   var operations: js.UndefOr[OperationList] = js.native
 }

@@ -83,7 +83,7 @@ package object typesMod {
     /* onReceive */ typings.xstate.typesMod.Receiver[typings.xstate.typesMod.EventObject], 
     js.Any
   ]
-  type InvokeConfig[TContext, TEvent /* <: typings.xstate.typesMod.EventObject */] = (typings.xstate.AnonAutoForwardData[TContext, TEvent]) | (typings.xstate.typesMod.StateMachine[js.Any, js.Any, js.Any, js.Any])
+  type InvokeConfig[TContext, TEvent /* <: typings.xstate.typesMod.EventObject */] = (typings.xstate.AnonData[TContext, TEvent]) | (typings.xstate.typesMod.StateMachine[js.Any, js.Any, js.Any, js.Any])
   type InvokeCreator[TContext, TEvent, TFinalContext] = js.Function2[
     /* context */ TContext, 
     /* event */ TEvent, 
@@ -97,9 +97,6 @@ package object typesMod {
   type PropertyAssigner[TContext, TEvent /* <: typings.xstate.typesMod.EventObject */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof TContext ]:? (context : TContext, event : TEvent, meta : xstate.xstate/lib/types.AssignMeta<TContext, TEvent>): TContext[K] | TContext[K]}
     */ typings.xstate.xstateStrings.PropertyAssigner with js.Any
-  type PropertyMapper[TContext, TEvent /* <: typings.xstate.typesMod.EventObject */] = typings.std.Partial[
-    org.scalablytyped.runtime.StringDictionary[(js.Function2[/* context */ TContext, /* event */ TEvent, js.Any]) | js.Any]
-  ]
   type Receiver[TEvent /* <: typings.xstate.typesMod.EventObject */] = js.Function1[/* listener */ js.Function1[/* event */ TEvent, scala.Unit], scala.Unit]
   type SendExpr[TContext, TEvent /* <: typings.xstate.typesMod.EventObject */] = typings.xstate.typesMod.ExprWithMeta[TContext, TEvent, TEvent]
   type Sender[TEvent /* <: typings.xstate.typesMod.EventObject */] = js.Function1[/* event */ typings.xstate.typesMod.Event[TEvent], scala.Unit]

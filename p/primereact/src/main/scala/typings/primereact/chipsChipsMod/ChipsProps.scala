@@ -1,6 +1,6 @@
 package typings.primereact.chipsChipsMod
 
-import typings.primereact.AnonOriginalEventValue
+import typings.primereact.AnonValue
 import typings.primereact.tooltipOptionsMod.TooltipOptions
 import typings.react.mod._Global_.JSX.Element
 import typings.std.Event_
@@ -16,11 +16,11 @@ trait ChipsProps extends js.Object {
   var itemTemplate: js.UndefOr[js.Function1[/* item */ js.Any, js.UndefOr[Element]]] = js.undefined
   var max: js.UndefOr[Double] = js.undefined
   var name: js.UndefOr[String] = js.undefined
-  var onAdd: js.UndefOr[js.Function1[/* e */ AnonOriginalEventValue, Unit]] = js.undefined
+  var onAdd: js.UndefOr[js.Function1[/* e */ AnonValue, Unit]] = js.undefined
   var onBlur: js.UndefOr[js.Function1[/* event */ Event_, Unit]] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* e */ AnonOriginalEventValue, Unit]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* e */ AnonValue, Unit]] = js.undefined
   var onFocus: js.UndefOr[js.Function1[/* event */ Event_, Unit]] = js.undefined
-  var onRemove: js.UndefOr[js.Function1[/* e */ AnonOriginalEventValue, Unit]] = js.undefined
+  var onRemove: js.UndefOr[js.Function1[/* e */ AnonValue, Unit]] = js.undefined
   var placeholder: js.UndefOr[String] = js.undefined
   var style: js.UndefOr[js.Object] = js.undefined
   var tooltip: js.UndefOr[js.Any] = js.undefined
@@ -38,11 +38,11 @@ object ChipsProps {
     itemTemplate: /* item */ js.Any => js.UndefOr[Element] = null,
     max: Int | Double = null,
     name: String = null,
-    onAdd: /* e */ AnonOriginalEventValue => Unit = null,
+    onAdd: /* e */ AnonValue => Unit = null,
     onBlur: /* event */ Event_ => Unit = null,
-    onChange: /* e */ AnonOriginalEventValue => Unit = null,
+    onChange: /* e */ AnonValue => Unit = null,
     onFocus: /* event */ Event_ => Unit = null,
-    onRemove: /* e */ AnonOriginalEventValue => Unit = null,
+    onRemove: /* e */ AnonValue => Unit = null,
     placeholder: String = null,
     style: js.Object = null,
     tooltip: js.Any = null,

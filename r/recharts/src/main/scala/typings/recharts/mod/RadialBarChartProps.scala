@@ -1,8 +1,8 @@
 package typings.recharts.mod
 
 import typings.react.mod.ReactNode
+import typings.recharts.PartialMargin
 import typings.recharts.rechartsStrings.radial
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,7 +33,7 @@ object RadialBarChartProps {
     height: Int | Double = null,
     innerRadius: String | Double = null,
     layout: radial = null,
-    margin: Partial[Margin] = null,
+    margin: PartialMargin = null,
     maxBarSize: Int | Double = null,
     onClick: /* repeated */ js.Any => Unit = null,
     onMouseDown: /* repeated */ js.Any => Unit = null,

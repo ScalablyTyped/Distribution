@@ -9,6 +9,7 @@ trait MariaSslConfiguration extends js.Object {
   var capath: js.UndefOr[String] = js.undefined
   var cert: js.UndefOr[String] = js.undefined
   var cipher: js.UndefOr[String] = js.undefined
+  var expirationChecker: js.UndefOr[js.Function0[Boolean]] = js.undefined
   var key: js.UndefOr[String] = js.undefined
   var rejectUnauthorized: js.UndefOr[Boolean] = js.undefined
 }
@@ -20,6 +21,7 @@ object MariaSslConfiguration {
     capath: String = null,
     cert: String = null,
     cipher: String = null,
+    expirationChecker: () => Boolean = null,
     key: String = null,
     rejectUnauthorized: js.UndefOr[Boolean] = js.undefined
   ): MariaSslConfiguration = {
@@ -28,6 +30,7 @@ object MariaSslConfiguration {
     if (capath != null) __obj.updateDynamic("capath")(capath.asInstanceOf[js.Any])
     if (cert != null) __obj.updateDynamic("cert")(cert.asInstanceOf[js.Any])
     if (cipher != null) __obj.updateDynamic("cipher")(cipher.asInstanceOf[js.Any])
+    if (expirationChecker != null) __obj.updateDynamic("expirationChecker")(js.Any.fromFunction0(expirationChecker))
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized.asInstanceOf[js.Any])
     __obj.asInstanceOf[MariaSslConfiguration]

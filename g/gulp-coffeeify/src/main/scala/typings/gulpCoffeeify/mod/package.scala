@@ -10,5 +10,5 @@ package object mod {
     /* option */ js.UndefOr[typings.gulpCoffeeify.mod.Option], 
     typings.node.NodeJS.ReadWriteStream
   ]
-  type Transforms = js.Array[typings.gulpCoffeeify.AnonData]
+  type Transforms = js.Array[typings.gulpCoffeeify.AnonExt]
 }

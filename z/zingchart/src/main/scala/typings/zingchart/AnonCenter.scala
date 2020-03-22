@@ -5,23 +5,23 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonCenter extends js.Object {
-  var center: js.UndefOr[AnonAlphaBackgroundcolorBordercolorBorderwidthSize] = js.undefined
-  var guide: js.UndefOr[AnonAlphaBackgroundcolorLinecolor] = js.undefined
-  var item: js.UndefOr[AnonAlphaAngleBackgroundcolorBordercolorBorderradius] = js.undefined
+  var center: js.UndefOr[AnonSize] = js.undefined
+  var guide: js.UndefOr[AnonVisible] = js.undefined
+  var item: js.UndefOr[AnonOffsetR] = js.undefined
   /**
     * Gauge Charts Only: To set custom labels that correspond to each tick mark on the scale. If there are more tick marks than labels,
     * the default scale values will be used for the remaining labels. ['A', 'B', 'C', 'D', 'E'] | ...
     */
   var labels: js.UndefOr[js.Any] = js.undefined
-  var markers: js.UndefOr[js.Array[AnonAlphaBackgroundcolorBordercolorBorderradiusBorderwidthLabel]] = js.undefined
-  var `minor-guide`: js.UndefOr[AnonAlphaLinecolorLinestyleLinewidthNumber] = js.undefined
-  var `minor-tick`: js.UndefOr[AnonAlphaLinecolorLinestyleLinewidth] = js.undefined
+  var markers: js.UndefOr[js.Array[AnonLabel]] = js.undefined
+  var `minor-guide`: js.UndefOr[AnonLinecolorLinestyle] = js.undefined
+  var `minor-tick`: js.UndefOr[AnonPlacement] = js.undefined
   /**
     * Gauge Charts Only: To set the number of minor tick marks displayed between the major tick marks. 9 | 5 | 2 | ...
     */
   var `minor-ticks`: js.UndefOr[Double] = js.undefined
-  var ring: js.UndefOr[AnonAlphaBackgroundcolorBordercolorBorderwidthItems] = js.undefined
-  var tick: js.UndefOr[AnonAlphaLinecolorLinestyleLinewidth] = js.undefined
+  var ring: js.UndefOr[AnonBorderwidthItems] = js.undefined
+  var tick: js.UndefOr[AnonPlacement] = js.undefined
   /**
     * Gauge Charts Only: To set the minimum, maximum, and step scale values. '0:10' | '0:25:5' | ...
     */
@@ -31,16 +31,16 @@ trait AnonCenter extends js.Object {
 object AnonCenter {
   @scala.inline
   def apply(
-    center: AnonAlphaBackgroundcolorBordercolorBorderwidthSize = null,
-    guide: AnonAlphaBackgroundcolorLinecolor = null,
-    item: AnonAlphaAngleBackgroundcolorBordercolorBorderradius = null,
+    center: AnonSize = null,
+    guide: AnonVisible = null,
+    item: AnonOffsetR = null,
     labels: js.Any = null,
-    markers: js.Array[AnonAlphaBackgroundcolorBordercolorBorderradiusBorderwidthLabel] = null,
-    `minor-guide`: AnonAlphaLinecolorLinestyleLinewidthNumber = null,
-    `minor-tick`: AnonAlphaLinecolorLinestyleLinewidth = null,
+    markers: js.Array[AnonLabel] = null,
+    `minor-guide`: AnonLinecolorLinestyle = null,
+    `minor-tick`: AnonPlacement = null,
     `minor-ticks`: Int | Double = null,
-    ring: AnonAlphaBackgroundcolorBordercolorBorderwidthItems = null,
-    tick: AnonAlphaLinecolorLinestyleLinewidth = null,
+    ring: AnonBorderwidthItems = null,
+    tick: AnonPlacement = null,
     values: js.Any = null
   ): AnonCenter = {
     val __obj = js.Dynamic.literal()

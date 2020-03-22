@@ -1,6 +1,6 @@
 package typings.overlayscrollbars.mod
 
-import typings.overlayscrollbars.AnonXYEasing
+import typings.overlayscrollbars.AnonXEasing
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,11 +32,11 @@ trait OverlayScrollbars extends js.Object {
     easing: js.Tuple2[Easing, Easing],
     complete: js.Function1[/* repeated */ js.Any, _]
   ): Unit = js.native
-  def scroll(coordinates: Coordinates, duration: Double, easing: AnonXYEasing): Unit = js.native
+  def scroll(coordinates: Coordinates, duration: Double, easing: AnonXEasing): Unit = js.native
   def scroll(
     coordinates: Coordinates,
     duration: Double,
-    easing: AnonXYEasing,
+    easing: AnonXEasing,
     complete: js.Function1[/* repeated */ js.Any, _]
   ): Unit = js.native
   def scroll(coordinates: Coordinates, duration: Double, easing: Easing): Unit = js.native

@@ -1,13 +1,13 @@
 package typings.requestIp.mod
 
 import typings.requestIp.AnonRemoteAddress
-import typings.requestIp.AnonRemoteAddressSocket
+import typings.requestIp.AnonSocket
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Request extends js.Object {
-  var connection: AnonRemoteAddressSocket
+  var connection: AnonSocket
   var headers: RequestHeaders
   var info: js.UndefOr[AnonRemoteAddress] = js.undefined
   var socket: js.UndefOr[AnonRemoteAddress] = js.undefined
@@ -16,7 +16,7 @@ trait Request extends js.Object {
 object Request {
   @scala.inline
   def apply(
-    connection: AnonRemoteAddressSocket,
+    connection: AnonSocket,
     headers: RequestHeaders,
     info: AnonRemoteAddress = null,
     socket: AnonRemoteAddress = null

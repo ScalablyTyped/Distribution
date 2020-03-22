@@ -1,7 +1,7 @@
 package typings.fabric.fabricImplMod
 
-import typings.fabric.AnonBlBrMbMl
-import typings.fabric.AnonBlBrTlTr
+import typings.fabric.AnonMl
+import typings.fabric.AnonTr
 import typings.fabric.fabricStrings.circle
 import typings.fabric.fabricStrings.rect
 import scala.scalajs.js
@@ -21,7 +21,7 @@ trait IObjectOptions extends js.Object {
   	 * You can calculate them without updating with @method calcCoords(true);
   	 * @memberOf fabric.Object.prototype
   	 */
-  var aCoords: js.UndefOr[AnonBlBrTlTr] = js.undefined
+  var aCoords: js.UndefOr[AnonTr] = js.undefined
   /**
   	 * Meaningful ONLY when the object is used as clipPath.
   	 * if true, the clipPath will have its top and left relative to canvas, and will
@@ -269,7 +269,7 @@ trait IObjectOptions extends js.Object {
   	 * You can calculate them without updating with @method calcCoords;
   	 * @memberOf fabric.Object.prototype
   	 */
-  var oCoords: js.UndefOr[AnonBlBrMbMl] = js.undefined
+  var oCoords: js.UndefOr[AnonMl] = js.undefined
   /**
   	 * When `true`, object is cached on an additional canvas.
   	 */
@@ -435,7 +435,7 @@ trait IObjectOptions extends js.Object {
 object IObjectOptions {
   @scala.inline
   def apply(
-    aCoords: AnonBlBrTlTr = null,
+    aCoords: AnonTr = null,
     absolutePositioned: js.UndefOr[Boolean] = js.undefined,
     angle: Int | Double = null,
     backgroundColor: String = null,
@@ -486,7 +486,7 @@ object IObjectOptions {
     moveCursor: String = null,
     name: String = null,
     noScaleCache: js.UndefOr[Boolean] = js.undefined,
-    oCoords: AnonBlBrMbMl = null,
+    oCoords: AnonMl = null,
     objectCaching: js.UndefOr[Boolean] = js.undefined,
     opacity: Int | Double = null,
     originX: String = null,

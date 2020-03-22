@@ -1,7 +1,7 @@
 package typings.go.mod
 
 import typings.go.AnonBackground
-import typings.go.AnonBackgroundDocument
+import typings.go.AnonDocument
 import typings.std.Event_
 import typings.std.HTMLDivElement
 import typings.std.HTMLImageElement
@@ -577,7 +577,7 @@ class Diagram () extends js.Object {
     * @return {SVGElement}
     */
   def makeSvg(): SVGElement = js.native
-  def makeSvg(properties: AnonBackgroundDocument): SVGElement = js.native
+  def makeSvg(properties: AnonDocument): SVGElement = js.native
     // undocumented
   def maybeUpdate(): Unit = js.native
   /**Gets or sets the function to execute when the user is dragging the selection in the background of the Diagram during a DraggingTool drag-and-drop, not over any GraphObjects.*/

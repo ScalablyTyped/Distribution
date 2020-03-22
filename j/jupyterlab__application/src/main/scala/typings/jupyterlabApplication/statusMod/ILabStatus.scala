@@ -3,9 +3,9 @@ package typings.jupyterlabApplication.statusMod
 import org.scalablytyped.runtime.TopLevel
 import typings.jupyterlabApplication.frontendMod.JupyterFrontEnd
 import typings.jupyterlabApplication.frontendMod.JupyterFrontEnd.IShell
-import typings.phosphorCoreutils.mod.Token
-import typings.phosphorDisposable.mod.IDisposable
-import typings.phosphorSignaling.mod.ISignal
+import typings.luminoCoreutils.mod.Token
+import typings.luminoDisposable.mod.IDisposable
+import typings.luminoSignaling.mod.ISignal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

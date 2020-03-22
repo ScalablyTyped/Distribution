@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "next" : "9.2.1"
+      "next" : "9.2.2"
     }
   ],
   "test-dependencies" : [
     {
-      "next" : "9.2.1"
+      "next" : "9.2.2"
     }
   ],
   "compile-devDependencies" : [

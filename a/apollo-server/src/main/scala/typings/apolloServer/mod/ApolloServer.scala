@@ -1,7 +1,6 @@
 package typings.apolloServer.mod
 
-import typings.apolloServer.AnonCors
-import typings.apolloServerExpress.apolloServerMod.ApolloServerExpressConfig
+import typings.apolloServer.ApolloServerExpressConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ApolloServer protected ()
   extends typings.apolloServerExpress.mod.ApolloServer {
-  def this(config: ApolloServerExpressConfig with AnonCors) = this()
+  def this(config: ApolloServerExpressConfig) = this()
   var cors: js.UndefOr[js.Any] = js.native
   var createServerInfo: js.Any = js.native
   var httpServer: js.UndefOr[js.Any] = js.native

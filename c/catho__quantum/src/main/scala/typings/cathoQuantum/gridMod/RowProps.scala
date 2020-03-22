@@ -1,6 +1,6 @@
 package typings.cathoQuantum.gridMod
 
-import typings.cathoQuantum.AnonBreakpointsObjectOptional
+import typings.cathoQuantum.Anon7
 import typings.react.mod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,7 +10,7 @@ trait RowProps extends js.Object {
   var children: js.Array[ReactNode] | ReactNode
   var hide: js.UndefOr[BreakpointsType | js.Array[BreakpointsType]] = js.undefined
   var `no-gutters`: js.UndefOr[Boolean] = js.undefined
-  var theme: js.UndefOr[AnonBreakpointsObjectOptional] = js.undefined
+  var theme: js.UndefOr[Anon7] = js.undefined
 }
 
 object RowProps {
@@ -19,7 +19,7 @@ object RowProps {
     children: js.Array[ReactNode] | ReactNode = null,
     hide: BreakpointsType | js.Array[BreakpointsType] = null,
     `no-gutters`: js.UndefOr[Boolean] = js.undefined,
-    theme: AnonBreakpointsObjectOptional = null
+    theme: Anon7 = null
   ): RowProps = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])

@@ -1,7 +1,7 @@
 package typings.fundamentalReact.timeMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.fundamentalReact.Anon0
+import typings.fundamentalReact.AnonHour
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,7 +23,7 @@ trait TimeBaseProps extends js.Object {
     **hour** (with values from 01 to 12 when `format12Hours` is true or 00 to 23 when `format12Hours` is false),
     **minute** (with values from 00 to 59), **second** (with values from 00 to 59),
     **meridiem** (with values 0 for AM or 1 for PM). */
-  var time: js.UndefOr[Anon0] = js.undefined
+  var time: js.UndefOr[AnonHour] = js.undefined
 }
 
 object TimeBaseProps {
@@ -36,7 +36,7 @@ object TimeBaseProps {
     showMinute: js.UndefOr[Boolean] = js.undefined,
     showSecond: js.UndefOr[Boolean] = js.undefined,
     spinners: js.UndefOr[Boolean] = js.undefined,
-    time: Anon0 = null
+    time: AnonHour = null
   ): TimeBaseProps = {
     val __obj = js.Dynamic.literal()
     if (customStyles != null) __obj.updateDynamic("customStyles")(customStyles.asInstanceOf[js.Any])

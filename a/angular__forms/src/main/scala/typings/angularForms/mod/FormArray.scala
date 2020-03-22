@@ -64,10 +64,6 @@ class FormArray protected () extends AbstractControl {
   var _registerControl: js.Any = js.native
   var controls: js.Array[AbstractControl] = js.native
   /**
-    * Length of the control array.
-    */
-  val length: Double = js.native
-  /**
     * Get the `AbstractControl` at the given `index` in the array.
     *
     * @param index Index in the array to retrieve the control
@@ -118,6 +114,10 @@ class FormArray protected () extends AbstractControl {
     * @param control Form control to be inserted
     */
   def insert(index: Double, control: AbstractControl): Unit = js.native
+  /**
+    * Length of the control array.
+    */
+  def length(): Double = js.native
   /**
     * Patches the value of the `FormArray`. It accepts an array that matches the
     * structure of the control, and does its best to match the values to the correct

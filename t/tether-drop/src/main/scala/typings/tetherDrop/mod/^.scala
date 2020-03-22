@@ -1,6 +1,6 @@
 package typings.tetherDrop.mod
 
-import typings.tetherDrop.TypeofClassDrop
+import typings.tetherDrop.TypeofDrop
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,6 +15,6 @@ class ^ protected () extends Drop {
 @JSImport("tether-drop", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def createContext(options: IDropContextOptions): TypeofClassDrop = js.native
+  def createContext(options: IDropContextOptions): TypeofDrop = js.native
 }
 

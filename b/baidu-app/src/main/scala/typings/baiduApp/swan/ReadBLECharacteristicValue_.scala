@@ -1,6 +1,6 @@
 package typings.baiduApp.swan
 
-import typings.baiduApp.AnonCharacteristic
+import typings.baiduApp.characteristiccharacteris
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,7 +20,7 @@ trait ReadBLECharacteristicValue_
   		 */
   var serviceId: String
   @JSName("success")
-  def success_MReadBLECharacteristicValue_(res: AnonCharacteristic with ErrMsgResponse): Unit
+  def success_MReadBLECharacteristicValue_(res: characteristiccharacteris): Unit
 }
 
 object ReadBLECharacteristicValue_ {
@@ -29,7 +29,7 @@ object ReadBLECharacteristicValue_ {
     characteristicId: String,
     deviceId: String,
     serviceId: String,
-    success: AnonCharacteristic with ErrMsgResponse => Unit,
+    success: characteristiccharacteris => Unit,
     complete: /* res */ js.Any => Unit = null,
     fail: js.Any => Unit = null
   ): ReadBLECharacteristicValue_ = {

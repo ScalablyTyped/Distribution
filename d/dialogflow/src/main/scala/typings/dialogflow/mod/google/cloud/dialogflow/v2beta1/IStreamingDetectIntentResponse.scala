@@ -11,7 +11,7 @@ trait IStreamingDetectIntentResponse extends js.Object {
   /** StreamingDetectIntentResponse alternativeQueryResults */
   var alternativeQueryResults: js.UndefOr[js.Array[IQueryResult] | Null] = js.undefined
   /** StreamingDetectIntentResponse outputAudio */
-  var outputAudio: js.UndefOr[Uint8Array | Null] = js.undefined
+  var outputAudio: js.UndefOr[Uint8Array | String | Null] = js.undefined
   /** StreamingDetectIntentResponse outputAudioConfig */
   var outputAudioConfig: js.UndefOr[IOutputAudioConfig | Null] = js.undefined
   /** StreamingDetectIntentResponse queryResult */
@@ -28,7 +28,7 @@ object IStreamingDetectIntentResponse {
   @scala.inline
   def apply(
     alternativeQueryResults: js.Array[IQueryResult] = null,
-    outputAudio: Uint8Array = null,
+    outputAudio: Uint8Array | String = null,
     outputAudioConfig: IOutputAudioConfig = null,
     queryResult: IQueryResult = null,
     recognitionResult: IStreamingRecognitionResult = null,

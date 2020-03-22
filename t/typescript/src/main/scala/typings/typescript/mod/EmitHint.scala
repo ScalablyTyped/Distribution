@@ -21,6 +21,9 @@ object EmitHint extends js.Object {
   sealed trait IdentifierName extends EmitHint
   
   @js.native
+  sealed trait JsxAttributeValue extends EmitHint
+  
+  @js.native
   sealed trait MappedTypeParameter extends EmitHint
   
   @js.native
@@ -40,6 +43,9 @@ object EmitHint extends js.Object {
   
   /* 2 */ @js.native
   object IdentifierName extends TopLevel[IdentifierName with Double]
+  
+  /* 6 */ @js.native
+  object JsxAttributeValue extends TopLevel[JsxAttributeValue with Double]
   
   /* 3 */ @js.native
   object MappedTypeParameter extends TopLevel[MappedTypeParameter with Double]

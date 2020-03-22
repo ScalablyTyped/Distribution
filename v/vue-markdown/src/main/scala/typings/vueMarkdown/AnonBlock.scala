@@ -11,7 +11,7 @@ trait AnonBlock extends js.Object {
   var disable: js.Any
   var enable: js.Any
   var helpers: AnonParseLinkDestination
-  var `inline`: AnonParseRuler
+  var `inline`: AnonRuler
   var linkify: AnonAdd
   var normalizeLink: js.Any
   var normalizeLinkText: js.Any
@@ -36,7 +36,7 @@ object AnonBlock {
     disable: js.Any,
     enable: js.Any,
     helpers: AnonParseLinkDestination,
-    `inline`: AnonParseRuler,
+    `inline`: AnonRuler,
     linkify: AnonAdd,
     normalizeLink: js.Any,
     normalizeLinkText: js.Any,

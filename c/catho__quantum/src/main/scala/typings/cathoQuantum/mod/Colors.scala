@@ -1,6 +1,6 @@
 package typings.cathoQuantum.mod
 
-import typings.cathoQuantum.Anon0
+import typings.cathoQuantum.ColorsTones0string1000str
 import typings.cathoQuantum.colorsMod.ColorsTones
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object Colors extends js.Object {
   var error: ColorsTones = js.native
-  var neutral: ColorsTones with Anon0 = js.native
+  var neutral: ColorsTones0string1000str = js.native
   var primary: ColorsTones = js.native
   var secondary: ColorsTones = js.native
   var success: ColorsTones = js.native

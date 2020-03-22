@@ -1,6 +1,6 @@
 package typings.fhirJsClient.FHIR.SMART
 
-import typings.fhirJsClient.AnonAt
+import typings.fhirJsClient.AnonDictpropName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +21,7 @@ object HistoryParams {
   def apply(
     count: Int | Double = null,
     id: String = null,
-    params: AnonAt = null,
+    params: AnonDictpropName = null,
     since: String = null,
     `type`: String = null
   ): HistoryParams = {

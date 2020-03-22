@@ -1,10 +1,10 @@
 package typings.nprogress.mod
 
+import typings.nprogress.PartialNProgressOptions
 import typings.nprogress.nprogressStrings.margin
 import typings.nprogress.nprogressStrings.translate
 import typings.nprogress.nprogressStrings.translate3d
 import typings.std.HTMLDivElement
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ trait NProgress extends js.Object {
   var settings: NProgressOptions = js.native
   var status: Double | Null = js.native
   var version: String = js.native
-  def configure(options: Partial[NProgressOptions]): NProgress = js.native
+  def configure(options: PartialNProgressOptions): NProgress = js.native
   def done(): NProgress = js.native
   def done(force: Boolean): NProgress = js.native
   def getPositioningCSS(): translate3d | translate | margin = js.native

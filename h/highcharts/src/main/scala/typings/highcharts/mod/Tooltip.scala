@@ -48,8 +48,8 @@ class Tooltip protected () extends js.Object {
     */
   val shared: js.UndefOr[Boolean] = js.native
   /**
-    * True, if the tooltip is splitted into one label per series, with the
-    * header close to the axis.
+    * True, if the tooltip is split into one label per series, with the header
+    * close to the axis.
     */
   val split: js.UndefOr[Boolean] = js.native
   /**

@@ -9,11 +9,12 @@ import scala.scalajs.js.annotation._
 class EmailValidator () extends Validator {
   var _enabled: js.Any = js.native
   var _onChange: js.Any = js.native
+  def email(value: String): js.Any = js.native
   /**
     * @description
     * Tracks changes to the email attribute bound to this directive.
     */
-  var email: Boolean | String = js.native
+  def email(value: Boolean): js.Any = js.native
   /**
     * @description
     * Registers a callback function to call when the validator inputs change.

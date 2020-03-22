@@ -2,8 +2,8 @@ package typings.gapiClientSheets.gapi.client.sheets
 
 import typings.gapiClient.gapi.client.Request_
 import typings.gapiClientSheets.AnonAccesstoken
-import typings.gapiClientSheets.AnonAccesstokenAlt
-import typings.gapiClientSheets.AnonAccesstokenAltCallback
+import typings.gapiClientSheets.AnonAlt
+import typings.gapiClientSheets.AnonCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,7 +23,7 @@ trait DeveloperMetadataResource extends js.Object {
     * DataFilter represents a location in a spreadsheet, this will return all
     * developer metadata associated with locations intersecting that region.
     */
-  def search(request: AnonAccesstokenAlt): Request_[SearchDeveloperMetadataResponse] = js.native
-  def search(request: AnonAccesstokenAltCallback, body: SearchDeveloperMetadataRequest): Request_[SearchDeveloperMetadataResponse] = js.native
+  def search(request: AnonAlt): Request_[SearchDeveloperMetadataResponse] = js.native
+  def search(request: AnonCallback, body: SearchDeveloperMetadataRequest): Request_[SearchDeveloperMetadataResponse] = js.native
 }
 

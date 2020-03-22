@@ -12,7 +12,7 @@ trait Services extends js.Object {
   var languageUtils: js.Any
   var logger: js.Any
   var pluralResolver: js.Any
-  var resourceStore: Resource
+  var resourceStore: ResourceStore
 }
 
 object Services {
@@ -25,7 +25,7 @@ object Services {
     languageUtils: js.Any,
     logger: js.Any,
     pluralResolver: js.Any,
-    resourceStore: Resource
+    resourceStore: ResourceStore
   ): Services = {
     val __obj = js.Dynamic.literal(backendConnector = backendConnector.asInstanceOf[js.Any], i18nFormat = i18nFormat.asInstanceOf[js.Any], interpolator = interpolator.asInstanceOf[js.Any], languageDetector = languageDetector.asInstanceOf[js.Any], languageUtils = languageUtils.asInstanceOf[js.Any], logger = logger.asInstanceOf[js.Any], pluralResolver = pluralResolver.asInstanceOf[js.Any], resourceStore = resourceStore.asInstanceOf[js.Any])
   

@@ -20,7 +20,7 @@ class OutputAudioConfig () extends IOutputAudioConfig {
   def this(properties: IOutputAudioConfig) = this()
   /** OutputAudioConfig audioEncoding. */
   @JSName("audioEncoding")
-  var audioEncoding_OutputAudioConfig: OutputAudioEncoding = js.native
+  var audioEncoding_OutputAudioConfig: OutputAudioEncoding | String = js.native
   /** OutputAudioConfig sampleRateHertz. */
   @JSName("sampleRateHertz")
   var sampleRateHertz_OutputAudioConfig: Double = js.native

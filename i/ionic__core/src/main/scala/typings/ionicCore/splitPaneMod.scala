@@ -14,8 +14,6 @@ object splitPaneMod extends js.Object {
   class SplitPane () extends ComponentInterface {
     /**
       * The content `id` of the split-pane's main content.
-      * This property can be used instead of the `[main]` attribute to select the `main`
-      * content of the split-pane.
       */
     var contentId: js.UndefOr[String] = js.native
     /**
@@ -37,8 +35,6 @@ object splitPaneMod extends js.Object {
       * Can also be a boolean expression.
       */
     var when: String | Boolean = js.native
-    @JSName("componentWillLoad")
-    def componentWillLoad_MSplitPane(): Unit = js.native
     @JSName("connectedCallback")
     def connectedCallback_MSplitPane(): Unit = js.native
     @JSName("disconnectedCallback")

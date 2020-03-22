@@ -21,7 +21,7 @@ trait IDocument extends js.Object {
   /** Document name */
   var name: js.UndefOr[String | Null] = js.undefined
   /** Document rawContent */
-  var rawContent: js.UndefOr[Uint8Array | Null] = js.undefined
+  var rawContent: js.UndefOr[Uint8Array | String | Null] = js.undefined
 }
 
 object IDocument {
@@ -33,7 +33,7 @@ object IDocument {
     knowledgeTypes: js.Array[KnowledgeType] = null,
     mimeType: String = null,
     name: String = null,
-    rawContent: Uint8Array = null
+    rawContent: Uint8Array | String = null
   ): IDocument = {
     val __obj = js.Dynamic.literal()
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])

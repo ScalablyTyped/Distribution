@@ -51,7 +51,7 @@ trait AnonBarBorderColor
     * "auto"
     * @see https://echarts.apache.org/en/option.html#series-bar.itemStyle.color
     */
-  var color: js.UndefOr[String | AnonColorStops | AnonColorStopsGlobal] = js.undefined
+  var color: js.UndefOr[String | AnonColorStops | AnonGlobal] = js.undefined
   /**
     * Opacity of the component.
     * Supports value from 0 to 1, and the component will not be
@@ -108,7 +108,7 @@ object AnonBarBorderColor {
     barBorderColor: String = null,
     barBorderRadius: js.Array[_] | Double = null,
     barBorderWidth: Int | Double = null,
-    color: String | AnonColorStops | AnonColorStopsGlobal = null,
+    color: String | AnonColorStops | AnonGlobal = null,
     opacity: Int | Double = null,
     shadowBlur: Int | Double = null,
     shadowColor: String = null,

@@ -9,10 +9,10 @@ object jestStrings {
   sealed trait CustomAsyncMatchers extends js.Object
   
   @js.native
-  sealed trait ExpectProperties extends js.Object
+  sealed trait ExtendedMatchers extends js.Object
   
   @js.native
-  sealed trait ExtendedMatchers extends js.Object
+  sealed trait JestMatchers extends js.Object
   
   @js.native
   sealed trait Matchers extends js.Object
@@ -47,9 +47,9 @@ object jestStrings {
   @scala.inline
   def CustomAsyncMatchers: CustomAsyncMatchers = "CustomAsyncMatchers".asInstanceOf[CustomAsyncMatchers]
   @scala.inline
-  def ExpectProperties: ExpectProperties = "ExpectProperties".asInstanceOf[ExpectProperties]
-  @scala.inline
   def ExtendedMatchers: ExtendedMatchers = "ExtendedMatchers".asInstanceOf[ExtendedMatchers]
+  @scala.inline
+  def JestMatchers: JestMatchers = "JestMatchers".asInstanceOf[JestMatchers]
   @scala.inline
   def Matchers: Matchers = "Matchers".asInstanceOf[Matchers]
   @scala.inline

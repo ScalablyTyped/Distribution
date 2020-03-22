@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@storybook/addon-centered" : "5.3.13"
+      "@storybook/addon-centered" : "5.3.14"
     }
   ],
   "test-dependencies" : [
     {
-      "@storybook/addon-centered" : "5.3.13"
+      "@storybook/addon-centered" : "5.3.14"
     }
   ],
   "compile-devDependencies" : [

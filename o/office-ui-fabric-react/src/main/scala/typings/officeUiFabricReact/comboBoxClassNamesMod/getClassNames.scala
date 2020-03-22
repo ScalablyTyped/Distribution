@@ -1,7 +1,6 @@
 package typings.officeUiFabricReact.comboBoxClassNamesMod
 
-import typings.officeUiFabricReact.comboBoxTypesMod.IComboBoxStyles
-import typings.std.Partial
+import typings.officeUiFabricReact.PartialIComboBoxStyles
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object getClassNames extends js.Object {
   def apply(
-    styles: Partial[IComboBoxStyles],
+    styles: PartialIComboBoxStyles,
     className: String,
     isOpen: Boolean,
     disabled: Boolean,

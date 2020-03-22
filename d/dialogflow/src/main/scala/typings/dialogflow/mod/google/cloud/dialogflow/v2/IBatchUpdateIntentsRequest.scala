@@ -12,7 +12,7 @@ trait IBatchUpdateIntentsRequest extends js.Object {
   /** BatchUpdateIntentsRequest intentBatchUri */
   var intentBatchUri: js.UndefOr[String | Null] = js.undefined
   /** BatchUpdateIntentsRequest intentView */
-  var intentView: js.UndefOr[IntentView | Null] = js.undefined
+  var intentView: js.UndefOr[IntentView | String | Null] = js.undefined
   /** BatchUpdateIntentsRequest languageCode */
   var languageCode: js.UndefOr[String | Null] = js.undefined
   /** BatchUpdateIntentsRequest parent */
@@ -26,7 +26,7 @@ object IBatchUpdateIntentsRequest {
   def apply(
     intentBatchInline: IIntentBatch = null,
     intentBatchUri: String = null,
-    intentView: IntentView = null,
+    intentView: IntentView | String = null,
     languageCode: String = null,
     parent: String = null,
     updateMask: IFieldMask = null

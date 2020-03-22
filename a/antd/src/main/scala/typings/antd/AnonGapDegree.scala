@@ -10,7 +10,7 @@ trait AnonGapDegree extends js.Object {
   var showInfo: Boolean
   var size: String
   var strokeLinecap: String
-  var trailColor: String
+  var trailColor: Null
   var `type`: String
 }
 
@@ -22,7 +22,7 @@ object AnonGapDegree {
     showInfo: Boolean,
     size: String,
     strokeLinecap: String,
-    trailColor: String,
+    trailColor: Null,
     `type`: String
   ): AnonGapDegree = {
     val __obj = js.Dynamic.literal(gapDegree = gapDegree.asInstanceOf[js.Any], percent = percent.asInstanceOf[js.Any], showInfo = showInfo.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], strokeLinecap = strokeLinecap.asInstanceOf[js.Any], trailColor = trailColor.asInstanceOf[js.Any])

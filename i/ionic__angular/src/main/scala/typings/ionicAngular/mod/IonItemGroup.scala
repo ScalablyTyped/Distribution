@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/angular", "IonItemGroup")
 @js.native
 class IonItemGroup protected ()
-  extends typings.ionicAngular.distMod.IonItemGroup {
+  extends typings.ionicAngular.proxiesMod.IonItemGroup {
   def this(c: ChangeDetectorRef, r: ElementRef[_], z: NgZone) = this()
 }
 

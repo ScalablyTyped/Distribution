@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @JSImport("rc-gesture/lib/util", JSImport.Namespace)
 @js.native
 object utilMod extends js.Object {
-  def calcMoveStatus(startTouches: js.Any, touches: js.Any, time: js.Any): AnonAngleTime = js.native
+  def calcMoveStatus(startTouches: js.Any, touches: js.Any, time: js.Any): AnonTime = js.native
   def calcMutliFingerStatus(touches: js.Any): js.UndefOr[AnonAngle] = js.native
   def calcRotation(startMutliFingerStatus: js.Any, mutliFingerStatus: js.Any): Double = js.native
   def getDirection(x: js.Any, y: js.Any): `1` | `2` | `4` | `8` | `16` = js.native

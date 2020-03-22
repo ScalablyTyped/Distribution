@@ -1,6 +1,6 @@
 package typings.jupyterlabApputils.vdomMod
 
-import typings.phosphorSignaling.mod.ISignal
+import typings.luminoSignaling.mod.ISignal
 import typings.react.mod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,12 +1,12 @@
 package typings.oracleOraclejet.ojselectcomboboxMod
 
-import typings.oracleOraclejet.AnonChildKeysChildrenLabelValue
+import typings.oracleOraclejet.AnonChildrenLabel
 import typings.oracleOraclejet.AnonClass
 import typings.oracleOraclejet.AnonConverterHint
 import typings.oracleOraclejet.AnonDefinition
-import typings.oracleOraclejet.AnonFilterFurtherMoreMatchesFound
 import typings.oracleOraclejet.AnonInstruction
 import typings.oracleOraclejet.AnonLabelValue
+import typings.oracleOraclejet.AnonMoreMatchesFound
 import typings.oracleOraclejet.ojdataproviderMod.DataProvider
 import typings.oracleOraclejet.ojeditablevalueMod.editableValueSettableProperties
 import typings.oracleOraclejet.ojmessagingMod.^
@@ -29,14 +29,14 @@ trait ojSelectManySettableProperties[K, D]
   var options: (js.Array[
     typings.oracleOraclejet.ojselectcomboboxMod.ojSelect.Option | typings.oracleOraclejet.ojselectcomboboxMod.ojSelect.Optgroup
   ]) | (DataProvider[K, D]) | Null
-  var optionsKeys: AnonChildKeysChildrenLabelValue
+  var optionsKeys: AnonChildrenLabel
   var pickerAttributes: AnonClass
   var placeholder: String | Null
   var readOnly: Boolean
   var renderMode: jet | native
   var required: Boolean
   @JSName("translations")
-  var translations_ojSelectManySettableProperties: AnonFilterFurtherMoreMatchesFound
+  var translations_ojSelectManySettableProperties: AnonMoreMatchesFound
   var valueOptions: js.Array[AnonLabelValue] | Null
   @JSName("value")
   var value_ojSelectManySettableProperties: js.Array[_] | Null
@@ -52,12 +52,12 @@ object ojSelectManySettableProperties {
     labelHint: String,
     messagesCustom: js.Array[^],
     minimumResultsForSearch: Double,
-    optionsKeys: AnonChildKeysChildrenLabelValue,
+    optionsKeys: AnonChildrenLabel,
     pickerAttributes: AnonClass,
     readOnly: Boolean,
     renderMode: jet | native,
     required: Boolean,
-    translations: AnonFilterFurtherMoreMatchesFound,
+    translations: AnonMoreMatchesFound,
     valid: valid | pending | invalidHidden | invalidShown,
     describedBy: String = null,
     optionRenderer: /* param0 */ OptionContext => Element = null,

@@ -1,7 +1,7 @@
 
 # Scala.js typings for header-case
 
-Typings are for version 1.0.1
+Typings are for version 2.0.3
 
 ## Library description:
 Transform into a dash separated string of capitalized words

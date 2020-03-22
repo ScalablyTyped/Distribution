@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait MessageBoxReturnValue extends js.Object {
   /**
-    * The checked state of the checkbox if checkboxLabel was set. Otherwise false.
+    * The checked state of the checkbox if `checkboxLabel` was set. Otherwise `false`.
     */
   var checkboxChecked: Boolean
   /**

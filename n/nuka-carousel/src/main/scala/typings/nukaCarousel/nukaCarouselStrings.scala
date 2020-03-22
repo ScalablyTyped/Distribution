@@ -20,9 +20,6 @@ object nukaCarouselStrings {
   sealed trait BottomRight extends CarouselControlContainerProp
   
   @js.native
-  sealed trait CarouselProps extends js.Object
-  
-  @js.native
   sealed trait CenterCenter extends CarouselControlContainerProp
   
   @js.native
@@ -94,8 +91,6 @@ object nukaCarouselStrings {
   def BottomLeft: BottomLeft = "BottomLeft".asInstanceOf[BottomLeft]
   @scala.inline
   def BottomRight: BottomRight = "BottomRight".asInstanceOf[BottomRight]
-  @scala.inline
-  def CarouselProps: CarouselProps = "CarouselProps".asInstanceOf[CarouselProps]
   @scala.inline
   def CenterCenter: CenterCenter = "CenterCenter".asInstanceOf[CenterCenter]
   @scala.inline

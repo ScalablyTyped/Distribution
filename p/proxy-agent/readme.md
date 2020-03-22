@@ -1,7 +1,7 @@
 
 # Scala.js typings for proxy-agent
 
-Typings are for version 3.1.0
+Typings are for version 3.1.1
 
 ## Library description:
 Maps proxy protocols to `http.Agent` implementations

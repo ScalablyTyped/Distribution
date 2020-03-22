@@ -1,7 +1,6 @@
 package typings.graphqlConfig
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.graphql.introspectionQueryMod.IntrospectionQuery_
 import typings.graphql.mod.GraphQLSchema
 import typings.graphqlConfig.typesMod.GraphQLConfigData
 import typings.graphqlConfig.typesMod.IntrospectionResult
@@ -13,7 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object utilsMod extends js.Object {
   def getSchemaExtensions(path: String): StringDictionary[String] = js.native
-  def introspectionToSchema(introspection: IntrospectionQuery_ with AnonData): GraphQLSchema = js.native
+  def introspectionToSchema(introspection: IntrospectionQueryerrorsu): GraphQLSchema = js.native
   def introspectionToSchema(introspection: IntrospectionResult): GraphQLSchema = js.native
   def matchesGlobs(filePath: String, configDir: String): Boolean = js.native
   def matchesGlobs(filePath: String, configDir: String, globs: js.Array[String]): Boolean = js.native

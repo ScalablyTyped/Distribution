@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation._
 object ed25519 extends js.Object {
   /* Rewritten from type alias, can be one of: 
     - typings.nodeForge.AnonMessage
-    - typings.nodeForge.AnonBinary
+    - typings.nodeForge.AnonEncoding
   */
   trait ToNativeBufferParameters extends js.Object
   

@@ -1,11 +1,11 @@
 package typings.victory.mod
 
 import typings.react.mod.ReactElement
+import typings.victory.Anon1
 import typings.victory.AnonActive
-import typings.victory.AnonDataEndAngle
-import typings.victory.AnonXY
-import typings.victory.AnonXYBoolean
-import typings.victory.AnonXYD3ScaleScalePropType
+import typings.victory.AnonEndAngle
+import typings.victory.AnonXBoolean
+import typings.victory.AnonY
 import typings.victory.victoryStrings.cornerRadius
 import typings.victory.victoryStrings.padAngle
 import typings.victory.victoryStrings.radius
@@ -62,7 +62,7 @@ trait VictorySliceProps extends VictoryCommonProps {
     * an object specifying the `startAngle`, `endAngle`, `padAngle`,
     * and `data` of the slice
     */
-  var slice: AnonDataEndAngle
+  var slice: AnonEndAngle
   /**
     * the end angle the slice.
     * When this prop is given as a function it will be called
@@ -84,7 +84,7 @@ trait VictorySliceProps extends VictoryCommonProps {
 object VictorySliceProps {
   @scala.inline
   def apply(
-    slice: AnonDataEndAngle,
+    slice: AnonEndAngle,
     animate: Boolean | AnimatePropTypeInterface = null,
     containerComponent: ReactElement = null,
     cornerRadius: SliceNumberOrCallback[VictorySliceProps, cornerRadius] = null,
@@ -93,16 +93,16 @@ object VictorySliceProps {
     height: Int | Double = null,
     horizontal: js.UndefOr[Boolean] = js.undefined,
     innerRadius: Double | (js.Function1[/* props */ AnonActive, Double]) = null,
-    maxDomain: Double | AnonXY = null,
-    minDomain: Double | AnonXY = null,
+    maxDomain: Double | AnonY = null,
+    minDomain: Double | AnonY = null,
     name: String = null,
     padAngle: SliceNumberOrCallback[VictorySliceProps, padAngle] = null,
     padding: PaddingProps = null,
     pathComponent: ReactElement = null,
     pathFunction: /* props */ VictorySliceProps => String = null,
     radius: SliceNumberOrCallback[VictorySliceProps, radius] = null,
-    scale: ScalePropType | D3Scale | AnonXYD3ScaleScalePropType = null,
-    singleQuadrantDomainPadding: Boolean | AnonXYBoolean = null,
+    scale: ScalePropType | D3Scale | Anon1 = null,
+    singleQuadrantDomainPadding: Boolean | AnonXBoolean = null,
     sliceEndAngle: SliceNumberOrCallback[VictorySliceProps, sliceEndAngle] = null,
     sliceStartAngle: SliceNumberOrCallback[VictorySliceProps, sliceStartAngle] = null,
     standalone: js.UndefOr[Boolean] = js.undefined,

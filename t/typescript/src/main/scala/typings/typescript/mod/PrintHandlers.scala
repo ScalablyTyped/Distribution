@@ -11,6 +11,11 @@ trait PrintHandlers extends js.Object {
     */
   var hasGlobalName: js.UndefOr[js.Function1[/* name */ java.lang.String, Boolean]] = js.undefined
   /**
+    * A hook used to check if an emit notification is required for a node.
+    * @param node The node to emit.
+    */
+  var isEmitNotificationEnabled: js.UndefOr[js.Function1[/* node */ js.UndefOr[Node], Boolean]] = js.undefined
+  /**
     * A hook used by the Printer to provide notifications prior to emitting a node. A
     * compatible implementation **must** invoke `emitCallback` with the provided `hint` and
     * `node` values.
@@ -59,11 +64,13 @@ object PrintHandlers {
   @scala.inline
   def apply(
     hasGlobalName: /* name */ java.lang.String => Boolean = null,
+    isEmitNotificationEnabled: /* node */ js.UndefOr[Node] => Boolean = null,
     onEmitNode: (/* hint */ EmitHint, /* node */ js.UndefOr[Node], /* emitCallback */ js.Function2[/* hint */ EmitHint, /* node */ js.UndefOr[Node], Unit]) => Unit = null,
     substituteNode: (/* hint */ EmitHint, /* node */ Node) => Node = null
   ): PrintHandlers = {
     val __obj = js.Dynamic.literal()
     if (hasGlobalName != null) __obj.updateDynamic("hasGlobalName")(js.Any.fromFunction1(hasGlobalName))
+    if (isEmitNotificationEnabled != null) __obj.updateDynamic("isEmitNotificationEnabled")(js.Any.fromFunction1(isEmitNotificationEnabled))
     if (onEmitNode != null) __obj.updateDynamic("onEmitNode")(js.Any.fromFunction3(onEmitNode))
     if (substituteNode != null) __obj.updateDynamic("substituteNode")(js.Any.fromFunction2(substituteNode))
     __obj.asInstanceOf[PrintHandlers]

@@ -6,7 +6,6 @@ import typings.ionicCore.ionicCoreStrings.md
 import typings.ionicCore.mod.ComponentProps
 import typings.ionicCore.mod.ComponentRef
 import typings.ionicCore.mod.FrameworkDelegate
-import typings.ionicCore.oldAnimationAnimationInterfaceMod.Animation
 import typings.ionicCore.overlaysInterfaceMod.OverlayEventDetail
 import typings.ionicCore.overlaysInterfaceMod.OverlayInterface
 import typings.ionicCore.stencilCoreMod.ComponentInterface
@@ -21,8 +20,6 @@ object popoverMod extends js.Object {
   class Popover ()
     extends ComponentInterface
        with OverlayInterface {
-    @JSName("animation")
-    var animation_Popover: js.UndefOr[Animation] = js.native
     /**
       * If `true`, the popover will be dismissed when the backdrop is clicked.
       */

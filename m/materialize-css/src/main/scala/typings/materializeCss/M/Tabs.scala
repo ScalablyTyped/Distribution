@@ -1,8 +1,8 @@
 package typings.materializeCss.M
 
 import typings.materializeCss.MElements
+import typings.materializeCss.PartialTabsOptions
 import typings.std.Element
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,11 +37,11 @@ object Tabs extends js.Object {
     * Init Tabses
     */
   def init(els: MElements): js.Array[Tabs] = js.native
-  def init(els: MElements, options: Partial[TabsOptions]): js.Array[Tabs] = js.native
+  def init(els: MElements, options: PartialTabsOptions): js.Array[Tabs] = js.native
   /**
     * Init Tabs
     */
   def init(els: Element): Tabs = js.native
-  def init(els: Element, options: Partial[TabsOptions]): Tabs = js.native
+  def init(els: Element, options: PartialTabsOptions): Tabs = js.native
 }
 

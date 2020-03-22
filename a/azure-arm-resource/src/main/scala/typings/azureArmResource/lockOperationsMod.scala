@@ -1317,10 +1317,10 @@ object lockOperationsMod extends js.Object {
       */
     def listAtResourceGroupLevel(resourceGroupName: String): js.Promise[ManagementLockListResult] = js.native
     def listAtResourceGroupLevel(resourceGroupName: String, callback: ServiceCallback[ManagementLockListResult]): Unit = js.native
-    def listAtResourceGroupLevel(resourceGroupName: String, options: AnonCustomHeadersFilter): js.Promise[ManagementLockListResult] = js.native
+    def listAtResourceGroupLevel(resourceGroupName: String, options: AnonFilter): js.Promise[ManagementLockListResult] = js.native
     def listAtResourceGroupLevel(
       resourceGroupName: String,
-      options: AnonCustomHeadersFilter,
+      options: AnonFilter,
       callback: ServiceCallback[ManagementLockListResult]
     ): Unit = js.native
     /**
@@ -1404,7 +1404,7 @@ object lockOperationsMod extends js.Object {
       * @reject {Error|ServiceError} - The error object.
       */
     def listAtResourceGroupLevelWithHttpOperationResponse(resourceGroupName: String): js.Promise[HttpOperationResponse[ManagementLockListResult]] = js.native
-    def listAtResourceGroupLevelWithHttpOperationResponse(resourceGroupName: String, options: AnonCustomHeadersFilter): js.Promise[HttpOperationResponse[ManagementLockListResult]] = js.native
+    def listAtResourceGroupLevelWithHttpOperationResponse(resourceGroupName: String, options: AnonFilter): js.Promise[HttpOperationResponse[ManagementLockListResult]] = js.native
     /**
       * Gets all the management locks for a resource or any level below resource.
       *
@@ -1471,7 +1471,7 @@ object lockOperationsMod extends js.Object {
       parentResourcePath: String,
       resourceType: String,
       resourceName: String,
-      options: AnonCustomHeadersFilter
+      options: AnonFilter
     ): js.Promise[ManagementLockListResult] = js.native
     def listAtResourceLevel(
       resourceGroupName: String,
@@ -1479,7 +1479,7 @@ object lockOperationsMod extends js.Object {
       parentResourcePath: String,
       resourceType: String,
       resourceName: String,
-      options: AnonCustomHeadersFilter,
+      options: AnonFilter,
       callback: ServiceCallback[ManagementLockListResult]
     ): Unit = js.native
     /**
@@ -1584,7 +1584,7 @@ object lockOperationsMod extends js.Object {
       parentResourcePath: String,
       resourceType: String,
       resourceName: String,
-      options: AnonCustomHeadersFilter
+      options: AnonFilter
     ): js.Promise[HttpOperationResponse[ManagementLockListResult]] = js.native
     /**
       * Gets all the management locks for a subscription.
@@ -1621,8 +1621,8 @@ object lockOperationsMod extends js.Object {
       */
     def listAtSubscriptionLevel(): js.Promise[ManagementLockListResult] = js.native
     def listAtSubscriptionLevel(callback: ServiceCallback[ManagementLockListResult]): Unit = js.native
-    def listAtSubscriptionLevel(options: AnonCustomHeadersFilter): js.Promise[ManagementLockListResult] = js.native
-    def listAtSubscriptionLevel(options: AnonCustomHeadersFilter, callback: ServiceCallback[ManagementLockListResult]): Unit = js.native
+    def listAtSubscriptionLevel(options: AnonFilter): js.Promise[ManagementLockListResult] = js.native
+    def listAtSubscriptionLevel(options: AnonFilter, callback: ServiceCallback[ManagementLockListResult]): Unit = js.native
     /**
       * Gets all the management locks for a subscription.
       *
@@ -1701,7 +1701,7 @@ object lockOperationsMod extends js.Object {
       * @reject {Error|ServiceError} - The error object.
       */
     def listAtSubscriptionLevelWithHttpOperationResponse(): js.Promise[HttpOperationResponse[ManagementLockListResult]] = js.native
-    def listAtSubscriptionLevelWithHttpOperationResponse(options: AnonCustomHeadersFilter): js.Promise[HttpOperationResponse[ManagementLockListResult]] = js.native
+    def listAtSubscriptionLevelWithHttpOperationResponse(options: AnonFilter): js.Promise[HttpOperationResponse[ManagementLockListResult]] = js.native
   }
   
 }

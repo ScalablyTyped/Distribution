@@ -1,11 +1,17 @@
 package typings.graphqlCompose
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.graphql.GraphQLScalarTypeConfigan
+import typings.graphql.astMod.ScalarTypeDefinitionNode
+import typings.graphql.astMod.ScalarTypeExtensionNode
+import typings.graphql.astMod.ValueNode
 import typings.graphql.definitionMod.GraphQLList
 import typings.graphql.definitionMod.GraphQLNonNull
 import typings.graphql.definitionMod.GraphQLScalarLiteralParser
 import typings.graphql.definitionMod.GraphQLScalarSerializer
 import typings.graphql.definitionMod.GraphQLScalarTypeConfig
 import typings.graphql.definitionMod.GraphQLScalarValueParser
+import typings.graphql.maybeMod.Maybe
 import typings.graphqlCompose.definitionsMod.DirectiveArgs
 import typings.graphqlCompose.definitionsMod.Extensions
 import typings.graphqlCompose.definitionsMod.ExtensionsDirective
@@ -15,6 +21,7 @@ import typings.graphqlCompose.schemaComposerMod.SchemaComposer
 import typings.graphqlCompose.schemaComposerMod._AnyComposeType
 import typings.graphqlCompose.schemaComposerMod._AnyType
 import typings.graphqlCompose.typeMapperMod.TypeAsString
+import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,6 +29,48 @@ import scala.scalajs.js.annotation._
 @JSImport("graphql-compose/lib/ScalarTypeComposer", JSImport.Namespace)
 @js.native
 object scalarTypeComposerMod extends js.Object {
+  /* Inlined graphql-compose.graphql-compose/lib/graphql.GraphQLScalarTypeConfig<any, any> & {  extensions ? :graphql-compose.graphql-compose/lib/utils/definitions.Extensions} */
+  @js.native
+  trait ComposeScalarTypeConfig extends _ScalarTypeComposeDefinition {
+    var astNode: js.UndefOr[Maybe[ScalarTypeDefinitionNode]] = js.native
+    var description: js.UndefOr[Maybe[String]] = js.native
+    var extensionASTNodes: js.UndefOr[Maybe[js.Array[ScalarTypeExtensionNode]]] = js.native
+    var extensions: js.UndefOr[(Maybe[Record[String, _]]) with Extensions] = js.native
+    var name: String = js.native
+    // Parses an externally provided literal value to use as an input.
+    var parseLiteral: js.UndefOr[GraphQLScalarLiteralParser[_]] = js.native
+    // Parses an externally provided value to use as an input.
+    var parseValue: js.UndefOr[GraphQLScalarValueParser[_]] = js.native
+    // Serializes an internal value to include in a response.
+    @JSName("serialize")
+    var serialize_Original: GraphQLScalarSerializer[_] = js.native
+    // Serializes an internal value to include in a response.
+    def serialize(value: js.Any): Maybe[_] = js.native
+  }
+  
+  /* Inlined graphql-compose.graphql-compose/lib/graphql.GraphQLScalarType & {  _gqcExtensions ? :graphql-compose.graphql-compose/lib/utils/definitions.Extensions} */
+  @js.native
+  trait GraphQLScalarTypeExtended extends js.Object {
+    var _gqcExtensions: js.UndefOr[Extensions] = js.native
+    var astNode: Maybe[ScalarTypeDefinitionNode] = js.native
+    var description: Maybe[String] = js.native
+    var extensionASTNodes: Maybe[js.Array[ScalarTypeExtensionNode]] = js.native
+    var extensions: Maybe[Record[String, _]] = js.native
+    var name: String = js.native
+    @JSName("parseLiteral")
+    var parseLiteral_Original: GraphQLScalarLiteralParser[_] = js.native
+    @JSName("parseValue")
+    var parseValue_Original: GraphQLScalarValueParser[_] = js.native
+    @JSName("serialize")
+    var serialize_Original: GraphQLScalarSerializer[_] = js.native
+    def inspect(): String = js.native
+    def parseLiteral(valueNode: ValueNode, variables: Maybe[StringDictionary[_]]): Maybe[_] = js.native
+    def parseValue(value: js.Any): Maybe[_] = js.native
+    def serialize(value: js.Any): Maybe[_] = js.native
+    def toConfig(): GraphQLScalarTypeConfigan = js.native
+    def toJSON(): String = js.native
+  }
+  
   @js.native
   class ScalarTypeComposer[TContext] protected ()
     extends _AnyComposeType[TContext]
@@ -82,6 +131,8 @@ object scalarTypeComposerMod extends js.Object {
     def setTypeName(name: String): this.type = js.native
   }
   
+  trait _ScalarTypeComposeDefinition extends js.Object
+  
   /* static members */
   @js.native
   object ScalarTypeComposer extends js.Object {
@@ -96,8 +147,11 @@ object scalarTypeComposerMod extends js.Object {
     def createTemp[TCtx](typeDef: ScalarTypeComposeDefinition, schemaComposer: SchemaComposer[TCtx]): ScalarTypeComposer[TCtx] = js.native
   }
   
-  type ComposeScalarTypeConfig = (GraphQLScalarTypeConfig[_, _]) with AnonExtensions
-  type GraphQLScalarTypeExtended = GraphQLScalarType with AnonGqcExtensions
-  type ScalarTypeComposeDefinition = TypeAsString | ComposeScalarTypeConfig | GraphQLScalarType
+  /* Rewritten from type alias, can be one of: 
+    - typings.graphqlCompose.typeMapperMod.TypeAsString
+    - typings.graphqlCompose.scalarTypeComposerMod.ComposeScalarTypeConfig
+    - typings.graphqlCompose.graphqlMod.GraphQLScalarType
+  */
+  type ScalarTypeComposeDefinition = _ScalarTypeComposeDefinition | TypeAsString
 }
 

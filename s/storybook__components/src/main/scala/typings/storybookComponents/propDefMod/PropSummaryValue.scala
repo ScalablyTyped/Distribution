@@ -4,9 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PropSummaryValue extends js.Object {
-  var detail: js.UndefOr[String] = js.undefined
-  var summary: String
+  var detail: js.UndefOr[String] = js.native
+  var summary: String = js.native
 }
 
 object PropSummaryValue {

@@ -8,5 +8,12 @@ import scala.scalajs.js.annotation._
 @js.native
 class NgModelGroup protected () extends AbstractFormGroupDirective {
   def this(parent: ControlContainer, validators: js.Array[_], asyncValidators: js.Array[_]) = this()
+  /**
+    * @description
+    * Tracks the name of the `NgModelGroup` bound to the directive. The name corresponds
+    * to a key in the parent `NgForm`.
+    */
+  @JSName("name")
+  var name_NgModelGroup: String = js.native
 }
 

@@ -16,9 +16,6 @@ object reduxSagaRoutinesStrings {
   sealed trait REQUEST extends RoutineStages
   
   @js.native
-  sealed trait Routine extends js.Object
-  
-  @js.native
   sealed trait SUCCESS extends RoutineStages
   
   @js.native
@@ -30,8 +27,6 @@ object reduxSagaRoutinesStrings {
   def FULFILL: FULFILL = "FULFILL".asInstanceOf[FULFILL]
   @scala.inline
   def REQUEST: REQUEST = "REQUEST".asInstanceOf[REQUEST]
-  @scala.inline
-  def Routine: Routine = "Routine".asInstanceOf[Routine]
   @scala.inline
   def SUCCESS: SUCCESS = "SUCCESS".asInstanceOf[SUCCESS]
   @scala.inline

@@ -1,7 +1,7 @@
 
 # Scala.js typings for import-fresh
 
-Typings are for version 3.1.0
+Typings are for version 3.2.1
 
 ## Library description:
 Import a module while bypassing the cache

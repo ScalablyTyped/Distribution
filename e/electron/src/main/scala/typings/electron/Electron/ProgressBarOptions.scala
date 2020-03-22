@@ -11,7 +11,10 @@ import scala.scalajs.js.annotation._
 
 trait ProgressBarOptions extends js.Object {
   /**
-    * Mode for the progress bar. Can be none, normal, indeterminate, error or paused.
+    * Mode for the progress bar. Can be `none`, `normal`, `indeterminate`, `error` or
+    * `paused`.
+    *
+    * @platform win32
     */
   var mode: none | normal | indeterminate | error | paused
 }

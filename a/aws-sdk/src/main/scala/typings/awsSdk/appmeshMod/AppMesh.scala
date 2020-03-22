@@ -42,6 +42,7 @@ trait AppMesh extends Service {
     /metrics.
     If your route matches a request, you can distribute traffic to one or more target
     virtual nodes with relative weighting.
+    For more information about routes, see Routes.
     */
   def createRoute(): Request[CreateRouteOutput, AWSError] = js.native
   def createRoute(callback: js.Function2[/* err */ AWSError, /* data */ CreateRouteOutput, Unit]): Request[CreateRouteOutput, AWSError] = js.native
@@ -54,6 +55,7 @@ trait AppMesh extends Service {
     /metrics.
     If your route matches a request, you can distribute traffic to one or more target
     virtual nodes with relative weighting.
+    For more information about routes, see Routes.
     */
   def createRoute(params: CreateRouteInput): Request[CreateRouteOutput, AWSError] = js.native
   def createRoute(
@@ -80,6 +82,7 @@ trait AppMesh extends Service {
     APPMESH_VIRTUAL_NODE_NAME with the
     APPMESH_VIRTUAL_NODE_CLUSTER environment variable.
     
+    For more information about virtual nodes, see Virtual Nodes.
     */
   def createVirtualNode(): Request[CreateVirtualNodeOutput, AWSError] = js.native
   def createVirtualNode(callback: js.Function2[/* err */ AWSError, /* data */ CreateVirtualNodeOutput, Unit]): Request[CreateVirtualNodeOutput, AWSError] = js.native
@@ -103,6 +106,7 @@ trait AppMesh extends Service {
     APPMESH_VIRTUAL_NODE_NAME with the
     APPMESH_VIRTUAL_NODE_CLUSTER environment variable.
     
+    For more information about virtual nodes, see Virtual Nodes.
     */
   def createVirtualNode(params: CreateVirtualNodeInput): Request[CreateVirtualNodeOutput, AWSError] = js.native
   def createVirtualNode(
@@ -116,6 +120,7 @@ trait AppMesh extends Service {
     Virtual routers handle traffic for one or more virtual services within your mesh. After
     you create your virtual router, create and associate routes for your virtual router that
     direct incoming requests to different virtual nodes.
+    For more information about virtual routers, see Virtual Routers.
     */
   def createVirtualRouter(): Request[CreateVirtualRouterOutput, AWSError] = js.native
   def createVirtualRouter(callback: js.Function2[/* err */ AWSError, /* data */ CreateVirtualRouterOutput, Unit]): Request[CreateVirtualRouterOutput, AWSError] = js.native
@@ -126,6 +131,7 @@ trait AppMesh extends Service {
     Virtual routers handle traffic for one or more virtual services within your mesh. After
     you create your virtual router, create and associate routes for your virtual router that
     direct incoming requests to different virtual nodes.
+    For more information about virtual routers, see Virtual Routers.
     */
   def createVirtualRouter(params: CreateVirtualRouterInput): Request[CreateVirtualRouterOutput, AWSError] = js.native
   def createVirtualRouter(
@@ -139,6 +145,7 @@ trait AppMesh extends Service {
     service by its virtualServiceName, and those requests are routed to the
     virtual node or virtual router that is specified as the provider for the virtual
     service.
+    For more information about virtual services, see Virtual Services.
     */
   def createVirtualService(): Request[CreateVirtualServiceOutput, AWSError] = js.native
   def createVirtualService(callback: js.Function2[/* err */ AWSError, /* data */ CreateVirtualServiceOutput, Unit]): Request[CreateVirtualServiceOutput, AWSError] = js.native
@@ -149,6 +156,7 @@ trait AppMesh extends Service {
     service by its virtualServiceName, and those requests are routed to the
     virtual node or virtual router that is specified as the provider for the virtual
     service.
+    For more information about virtual services, see Virtual Services.
     */
   def createVirtualService(params: CreateVirtualServiceInput): Request[CreateVirtualServiceOutput, AWSError] = js.native
   def createVirtualService(

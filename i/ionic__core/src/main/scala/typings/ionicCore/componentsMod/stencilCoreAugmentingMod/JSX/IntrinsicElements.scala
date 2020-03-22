@@ -1,10 +1,7 @@
 package typings.ionicCore.componentsMod.stencilCoreAugmentingMod.JSX
 
 import typings.ionicCore.componentsMod.LocalJSX.IonActionSheet
-import typings.ionicCore.componentsMod.LocalJSX.IonActionSheetController
 import typings.ionicCore.componentsMod.LocalJSX.IonAlert
-import typings.ionicCore.componentsMod.LocalJSX.IonAlertController
-import typings.ionicCore.componentsMod.LocalJSX.IonAnchor
 import typings.ionicCore.componentsMod.LocalJSX.IonApp
 import typings.ionicCore.componentsMod.LocalJSX.IonAvatar
 import typings.ionicCore.componentsMod.LocalJSX.IonBackButton
@@ -42,24 +39,16 @@ import typings.ionicCore.componentsMod.LocalJSX.IonLabel
 import typings.ionicCore.componentsMod.LocalJSX.IonList
 import typings.ionicCore.componentsMod.LocalJSX.IonListHeader
 import typings.ionicCore.componentsMod.LocalJSX.IonLoading
-import typings.ionicCore.componentsMod.LocalJSX.IonLoadingController
 import typings.ionicCore.componentsMod.LocalJSX.IonMenu
 import typings.ionicCore.componentsMod.LocalJSX.IonMenuButton
-import typings.ionicCore.componentsMod.LocalJSX.IonMenuController
 import typings.ionicCore.componentsMod.LocalJSX.IonMenuToggle
 import typings.ionicCore.componentsMod.LocalJSX.IonModal
-import typings.ionicCore.componentsMod.LocalJSX.IonModalController
 import typings.ionicCore.componentsMod.LocalJSX.IonNav
 import typings.ionicCore.componentsMod.LocalJSX.IonNavLink
-import typings.ionicCore.componentsMod.LocalJSX.IonNavPop
-import typings.ionicCore.componentsMod.LocalJSX.IonNavPush
-import typings.ionicCore.componentsMod.LocalJSX.IonNavSetRoot
 import typings.ionicCore.componentsMod.LocalJSX.IonNote
 import typings.ionicCore.componentsMod.LocalJSX.IonPicker
 import typings.ionicCore.componentsMod.LocalJSX.IonPickerColumn
-import typings.ionicCore.componentsMod.LocalJSX.IonPickerController
 import typings.ionicCore.componentsMod.LocalJSX.IonPopover
-import typings.ionicCore.componentsMod.LocalJSX.IonPopoverController
 import typings.ionicCore.componentsMod.LocalJSX.IonProgressBar
 import typings.ionicCore.componentsMod.LocalJSX.IonRadio
 import typings.ionicCore.componentsMod.LocalJSX.IonRadioGroup
@@ -95,15 +84,11 @@ import typings.ionicCore.componentsMod.LocalJSX.IonTextarea
 import typings.ionicCore.componentsMod.LocalJSX.IonThumbnail
 import typings.ionicCore.componentsMod.LocalJSX.IonTitle
 import typings.ionicCore.componentsMod.LocalJSX.IonToast
-import typings.ionicCore.componentsMod.LocalJSX.IonToastController
 import typings.ionicCore.componentsMod.LocalJSX.IonToggle
 import typings.ionicCore.componentsMod.LocalJSX.IonToolbar
 import typings.ionicCore.componentsMod.LocalJSX.IonVirtualScroll
-import typings.ionicCore.componentsMod._Global_.HTMLIonActionSheetControllerElement
 import typings.ionicCore.componentsMod._Global_.HTMLIonActionSheetElement
-import typings.ionicCore.componentsMod._Global_.HTMLIonAlertControllerElement
 import typings.ionicCore.componentsMod._Global_.HTMLIonAlertElement
-import typings.ionicCore.componentsMod._Global_.HTMLIonAnchorElement
 import typings.ionicCore.componentsMod._Global_.HTMLIonAppElement
 import typings.ionicCore.componentsMod._Global_.HTMLIonAvatarElement
 import typings.ionicCore.componentsMod._Global_.HTMLIonBackButtonElement
@@ -140,24 +125,16 @@ import typings.ionicCore.componentsMod._Global_.HTMLIonItemSlidingElement
 import typings.ionicCore.componentsMod._Global_.HTMLIonLabelElement
 import typings.ionicCore.componentsMod._Global_.HTMLIonListElement
 import typings.ionicCore.componentsMod._Global_.HTMLIonListHeaderElement
-import typings.ionicCore.componentsMod._Global_.HTMLIonLoadingControllerElement
 import typings.ionicCore.componentsMod._Global_.HTMLIonLoadingElement
 import typings.ionicCore.componentsMod._Global_.HTMLIonMenuButtonElement
-import typings.ionicCore.componentsMod._Global_.HTMLIonMenuControllerElement
 import typings.ionicCore.componentsMod._Global_.HTMLIonMenuElement
 import typings.ionicCore.componentsMod._Global_.HTMLIonMenuToggleElement
-import typings.ionicCore.componentsMod._Global_.HTMLIonModalControllerElement
 import typings.ionicCore.componentsMod._Global_.HTMLIonModalElement
 import typings.ionicCore.componentsMod._Global_.HTMLIonNavElement
 import typings.ionicCore.componentsMod._Global_.HTMLIonNavLinkElement
-import typings.ionicCore.componentsMod._Global_.HTMLIonNavPopElement
-import typings.ionicCore.componentsMod._Global_.HTMLIonNavPushElement
-import typings.ionicCore.componentsMod._Global_.HTMLIonNavSetRootElement
 import typings.ionicCore.componentsMod._Global_.HTMLIonNoteElement
 import typings.ionicCore.componentsMod._Global_.HTMLIonPickerColumnElement
-import typings.ionicCore.componentsMod._Global_.HTMLIonPickerControllerElement
 import typings.ionicCore.componentsMod._Global_.HTMLIonPickerElement
-import typings.ionicCore.componentsMod._Global_.HTMLIonPopoverControllerElement
 import typings.ionicCore.componentsMod._Global_.HTMLIonPopoverElement
 import typings.ionicCore.componentsMod._Global_.HTMLIonProgressBarElement
 import typings.ionicCore.componentsMod._Global_.HTMLIonRadioElement
@@ -193,7 +170,6 @@ import typings.ionicCore.componentsMod._Global_.HTMLIonTextElement
 import typings.ionicCore.componentsMod._Global_.HTMLIonTextareaElement
 import typings.ionicCore.componentsMod._Global_.HTMLIonThumbnailElement
 import typings.ionicCore.componentsMod._Global_.HTMLIonTitleElement
-import typings.ionicCore.componentsMod._Global_.HTMLIonToastControllerElement
 import typings.ionicCore.componentsMod._Global_.HTMLIonToastElement
 import typings.ionicCore.componentsMod._Global_.HTMLIonToggleElement
 import typings.ionicCore.componentsMod._Global_.HTMLIonToolbarElement
@@ -205,10 +181,7 @@ import scala.scalajs.js.annotation._
 
 trait IntrinsicElements extends js.Object {
   var `ion-action-sheet`: IonActionSheet with HTMLAttributes[HTMLIonActionSheetElement]
-  var `ion-action-sheet-controller`: IonActionSheetController with HTMLAttributes[HTMLIonActionSheetControllerElement]
   var `ion-alert`: IonAlert with HTMLAttributes[HTMLIonAlertElement]
-  var `ion-alert-controller`: IonAlertController with HTMLAttributes[HTMLIonAlertControllerElement]
-  var `ion-anchor`: IonAnchor with HTMLAttributes[HTMLIonAnchorElement]
   var `ion-app`: IonApp with HTMLAttributes[HTMLIonAppElement]
   var `ion-avatar`: IonAvatar with HTMLAttributes[HTMLIonAvatarElement]
   var `ion-back-button`: IonBackButton with HTMLAttributes[HTMLIonBackButtonElement]
@@ -246,24 +219,16 @@ trait IntrinsicElements extends js.Object {
   var `ion-list`: IonList with HTMLAttributes[HTMLIonListElement]
   var `ion-list-header`: IonListHeader with HTMLAttributes[HTMLIonListHeaderElement]
   var `ion-loading`: IonLoading with HTMLAttributes[HTMLIonLoadingElement]
-  var `ion-loading-controller`: IonLoadingController with HTMLAttributes[HTMLIonLoadingControllerElement]
   var `ion-menu`: IonMenu with HTMLAttributes[HTMLIonMenuElement]
   var `ion-menu-button`: IonMenuButton with HTMLAttributes[HTMLIonMenuButtonElement]
-  var `ion-menu-controller`: IonMenuController with HTMLAttributes[HTMLIonMenuControllerElement]
   var `ion-menu-toggle`: IonMenuToggle with HTMLAttributes[HTMLIonMenuToggleElement]
   var `ion-modal`: IonModal with HTMLAttributes[HTMLIonModalElement]
-  var `ion-modal-controller`: IonModalController with HTMLAttributes[HTMLIonModalControllerElement]
   var `ion-nav`: IonNav with HTMLAttributes[HTMLIonNavElement]
   var `ion-nav-link`: IonNavLink with HTMLAttributes[HTMLIonNavLinkElement]
-  var `ion-nav-pop`: IonNavPop with HTMLAttributes[HTMLIonNavPopElement]
-  var `ion-nav-push`: IonNavPush with HTMLAttributes[HTMLIonNavPushElement]
-  var `ion-nav-set-root`: IonNavSetRoot with HTMLAttributes[HTMLIonNavSetRootElement]
   var `ion-note`: IonNote with HTMLAttributes[HTMLIonNoteElement]
   var `ion-picker`: IonPicker with HTMLAttributes[HTMLIonPickerElement]
   var `ion-picker-column`: IonPickerColumn with HTMLAttributes[HTMLIonPickerColumnElement]
-  var `ion-picker-controller`: IonPickerController with HTMLAttributes[HTMLIonPickerControllerElement]
   var `ion-popover`: IonPopover with HTMLAttributes[HTMLIonPopoverElement]
-  var `ion-popover-controller`: IonPopoverController with HTMLAttributes[HTMLIonPopoverControllerElement]
   var `ion-progress-bar`: IonProgressBar with HTMLAttributes[HTMLIonProgressBarElement]
   var `ion-radio`: IonRadio with HTMLAttributes[HTMLIonRadioElement]
   var `ion-radio-group`: IonRadioGroup with HTMLAttributes[HTMLIonRadioGroupElement]
@@ -299,7 +264,6 @@ trait IntrinsicElements extends js.Object {
   var `ion-thumbnail`: IonThumbnail with HTMLAttributes[HTMLIonThumbnailElement]
   var `ion-title`: IonTitle with HTMLAttributes[HTMLIonTitleElement]
   var `ion-toast`: IonToast with HTMLAttributes[HTMLIonToastElement]
-  var `ion-toast-controller`: IonToastController with HTMLAttributes[HTMLIonToastControllerElement]
   var `ion-toggle`: IonToggle with HTMLAttributes[HTMLIonToggleElement]
   var `ion-toolbar`: IonToolbar with HTMLAttributes[HTMLIonToolbarElement]
   var `ion-virtual-scroll`: IonVirtualScroll with HTMLAttributes[HTMLIonVirtualScrollElement]
@@ -309,10 +273,7 @@ object IntrinsicElements {
   @scala.inline
   def apply(
     `ion-action-sheet`: IonActionSheet with HTMLAttributes[HTMLIonActionSheetElement],
-    `ion-action-sheet-controller`: IonActionSheetController with HTMLAttributes[HTMLIonActionSheetControllerElement],
     `ion-alert`: IonAlert with HTMLAttributes[HTMLIonAlertElement],
-    `ion-alert-controller`: IonAlertController with HTMLAttributes[HTMLIonAlertControllerElement],
-    `ion-anchor`: IonAnchor with HTMLAttributes[HTMLIonAnchorElement],
     `ion-app`: IonApp with HTMLAttributes[HTMLIonAppElement],
     `ion-avatar`: IonAvatar with HTMLAttributes[HTMLIonAvatarElement],
     `ion-back-button`: IonBackButton with HTMLAttributes[HTMLIonBackButtonElement],
@@ -350,24 +311,16 @@ object IntrinsicElements {
     `ion-list`: IonList with HTMLAttributes[HTMLIonListElement],
     `ion-list-header`: IonListHeader with HTMLAttributes[HTMLIonListHeaderElement],
     `ion-loading`: IonLoading with HTMLAttributes[HTMLIonLoadingElement],
-    `ion-loading-controller`: IonLoadingController with HTMLAttributes[HTMLIonLoadingControllerElement],
     `ion-menu`: IonMenu with HTMLAttributes[HTMLIonMenuElement],
     `ion-menu-button`: IonMenuButton with HTMLAttributes[HTMLIonMenuButtonElement],
-    `ion-menu-controller`: IonMenuController with HTMLAttributes[HTMLIonMenuControllerElement],
     `ion-menu-toggle`: IonMenuToggle with HTMLAttributes[HTMLIonMenuToggleElement],
     `ion-modal`: IonModal with HTMLAttributes[HTMLIonModalElement],
-    `ion-modal-controller`: IonModalController with HTMLAttributes[HTMLIonModalControllerElement],
     `ion-nav`: IonNav with HTMLAttributes[HTMLIonNavElement],
     `ion-nav-link`: IonNavLink with HTMLAttributes[HTMLIonNavLinkElement],
-    `ion-nav-pop`: IonNavPop with HTMLAttributes[HTMLIonNavPopElement],
-    `ion-nav-push`: IonNavPush with HTMLAttributes[HTMLIonNavPushElement],
-    `ion-nav-set-root`: IonNavSetRoot with HTMLAttributes[HTMLIonNavSetRootElement],
     `ion-note`: IonNote with HTMLAttributes[HTMLIonNoteElement],
     `ion-picker`: IonPicker with HTMLAttributes[HTMLIonPickerElement],
     `ion-picker-column`: IonPickerColumn with HTMLAttributes[HTMLIonPickerColumnElement],
-    `ion-picker-controller`: IonPickerController with HTMLAttributes[HTMLIonPickerControllerElement],
     `ion-popover`: IonPopover with HTMLAttributes[HTMLIonPopoverElement],
-    `ion-popover-controller`: IonPopoverController with HTMLAttributes[HTMLIonPopoverControllerElement],
     `ion-progress-bar`: IonProgressBar with HTMLAttributes[HTMLIonProgressBarElement],
     `ion-radio`: IonRadio with HTMLAttributes[HTMLIonRadioElement],
     `ion-radio-group`: IonRadioGroup with HTMLAttributes[HTMLIonRadioGroupElement],
@@ -403,17 +356,13 @@ object IntrinsicElements {
     `ion-thumbnail`: IonThumbnail with HTMLAttributes[HTMLIonThumbnailElement],
     `ion-title`: IonTitle with HTMLAttributes[HTMLIonTitleElement],
     `ion-toast`: IonToast with HTMLAttributes[HTMLIonToastElement],
-    `ion-toast-controller`: IonToastController with HTMLAttributes[HTMLIonToastControllerElement],
     `ion-toggle`: IonToggle with HTMLAttributes[HTMLIonToggleElement],
     `ion-toolbar`: IonToolbar with HTMLAttributes[HTMLIonToolbarElement],
     `ion-virtual-scroll`: IonVirtualScroll with HTMLAttributes[HTMLIonVirtualScrollElement]
   ): IntrinsicElements = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("ion-action-sheet")(`ion-action-sheet`.asInstanceOf[js.Any])
-    __obj.updateDynamic("ion-action-sheet-controller")(`ion-action-sheet-controller`.asInstanceOf[js.Any])
     __obj.updateDynamic("ion-alert")(`ion-alert`.asInstanceOf[js.Any])
-    __obj.updateDynamic("ion-alert-controller")(`ion-alert-controller`.asInstanceOf[js.Any])
-    __obj.updateDynamic("ion-anchor")(`ion-anchor`.asInstanceOf[js.Any])
     __obj.updateDynamic("ion-app")(`ion-app`.asInstanceOf[js.Any])
     __obj.updateDynamic("ion-avatar")(`ion-avatar`.asInstanceOf[js.Any])
     __obj.updateDynamic("ion-back-button")(`ion-back-button`.asInstanceOf[js.Any])
@@ -451,24 +400,16 @@ object IntrinsicElements {
     __obj.updateDynamic("ion-list")(`ion-list`.asInstanceOf[js.Any])
     __obj.updateDynamic("ion-list-header")(`ion-list-header`.asInstanceOf[js.Any])
     __obj.updateDynamic("ion-loading")(`ion-loading`.asInstanceOf[js.Any])
-    __obj.updateDynamic("ion-loading-controller")(`ion-loading-controller`.asInstanceOf[js.Any])
     __obj.updateDynamic("ion-menu")(`ion-menu`.asInstanceOf[js.Any])
     __obj.updateDynamic("ion-menu-button")(`ion-menu-button`.asInstanceOf[js.Any])
-    __obj.updateDynamic("ion-menu-controller")(`ion-menu-controller`.asInstanceOf[js.Any])
     __obj.updateDynamic("ion-menu-toggle")(`ion-menu-toggle`.asInstanceOf[js.Any])
     __obj.updateDynamic("ion-modal")(`ion-modal`.asInstanceOf[js.Any])
-    __obj.updateDynamic("ion-modal-controller")(`ion-modal-controller`.asInstanceOf[js.Any])
     __obj.updateDynamic("ion-nav")(`ion-nav`.asInstanceOf[js.Any])
     __obj.updateDynamic("ion-nav-link")(`ion-nav-link`.asInstanceOf[js.Any])
-    __obj.updateDynamic("ion-nav-pop")(`ion-nav-pop`.asInstanceOf[js.Any])
-    __obj.updateDynamic("ion-nav-push")(`ion-nav-push`.asInstanceOf[js.Any])
-    __obj.updateDynamic("ion-nav-set-root")(`ion-nav-set-root`.asInstanceOf[js.Any])
     __obj.updateDynamic("ion-note")(`ion-note`.asInstanceOf[js.Any])
     __obj.updateDynamic("ion-picker")(`ion-picker`.asInstanceOf[js.Any])
     __obj.updateDynamic("ion-picker-column")(`ion-picker-column`.asInstanceOf[js.Any])
-    __obj.updateDynamic("ion-picker-controller")(`ion-picker-controller`.asInstanceOf[js.Any])
     __obj.updateDynamic("ion-popover")(`ion-popover`.asInstanceOf[js.Any])
-    __obj.updateDynamic("ion-popover-controller")(`ion-popover-controller`.asInstanceOf[js.Any])
     __obj.updateDynamic("ion-progress-bar")(`ion-progress-bar`.asInstanceOf[js.Any])
     __obj.updateDynamic("ion-radio")(`ion-radio`.asInstanceOf[js.Any])
     __obj.updateDynamic("ion-radio-group")(`ion-radio-group`.asInstanceOf[js.Any])
@@ -504,7 +445,6 @@ object IntrinsicElements {
     __obj.updateDynamic("ion-thumbnail")(`ion-thumbnail`.asInstanceOf[js.Any])
     __obj.updateDynamic("ion-title")(`ion-title`.asInstanceOf[js.Any])
     __obj.updateDynamic("ion-toast")(`ion-toast`.asInstanceOf[js.Any])
-    __obj.updateDynamic("ion-toast-controller")(`ion-toast-controller`.asInstanceOf[js.Any])
     __obj.updateDynamic("ion-toggle")(`ion-toggle`.asInstanceOf[js.Any])
     __obj.updateDynamic("ion-toolbar")(`ion-toolbar`.asInstanceOf[js.Any])
     __obj.updateDynamic("ion-virtual-scroll")(`ion-virtual-scroll`.asInstanceOf[js.Any])

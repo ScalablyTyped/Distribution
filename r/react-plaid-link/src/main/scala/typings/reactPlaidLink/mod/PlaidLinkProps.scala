@@ -1,11 +1,11 @@
 package typings.reactPlaidLink.mod
 
 import typings.react.mod.CSSProperties
-import typings.reactPlaidLink.AnonAPIERROR
-import typings.reactPlaidLink.AnonAPIERRORASSETREPORTERROR
 import typings.reactPlaidLink.AnonAccounts
-import typings.reactPlaidLink.AnonChoosedevice
+import typings.reactPlaidLink.AnonDisplaymessage
 import typings.reactPlaidLink.AnonEmailAddress
+import typings.reactPlaidLink.AnonErrorcode
+import typings.reactPlaidLink.AnonInstitution
 import typings.reactPlaidLink.reactPlaidLinkStrings.ERROR
 import typings.reactPlaidLink.reactPlaidLinkStrings.EXIT
 import typings.reactPlaidLink.reactPlaidLinkStrings.HANDOFF
@@ -50,13 +50,13 @@ trait PlaidLinkProps extends js.Object {
   var onEvent: js.UndefOr[
     js.Function2[
       /* eventName */ ERROR | EXIT | HANDOFF | OPEN | OPEN_MY_PLAID | SEARCH_INSTITUTION | SELECT_INSTITUTION | SUBMIT_CREDENTIALS | SUBMIT_MFA | TRANSITION_VIEW, 
-      /* metadata */ AnonAPIERRORASSETREPORTERROR, 
+      /* metadata */ AnonErrorcode, 
       Unit
     ]
   ] = js.undefined
   // A function that is called when a user has specifically exited Link flow
   var onExit: js.UndefOr[
-    js.Function2[/* error */ AnonAPIERROR | Null, /* metadata */ AnonChoosedevice, Unit]
+    js.Function2[/* error */ AnonDisplaymessage | Null, /* metadata */ AnonInstitution, Unit]
   ] = js.undefined
   // A function that is called when the Link module has finished loading.
   // Calls to plaidLinkHandler.open() prior to the onLoad callback will be
@@ -104,8 +104,8 @@ object PlaidLinkProps {
     apiVersion: String = null,
     className: String = null,
     institution: String = null,
-    onEvent: (/* eventName */ ERROR | EXIT | HANDOFF | OPEN | OPEN_MY_PLAID | SEARCH_INSTITUTION | SELECT_INSTITUTION | SUBMIT_CREDENTIALS | SUBMIT_MFA | TRANSITION_VIEW, /* metadata */ AnonAPIERRORASSETREPORTERROR) => Unit = null,
-    onExit: (/* error */ AnonAPIERROR | Null, /* metadata */ AnonChoosedevice) => Unit = null,
+    onEvent: (/* eventName */ ERROR | EXIT | HANDOFF | OPEN | OPEN_MY_PLAID | SEARCH_INSTITUTION | SELECT_INSTITUTION | SUBMIT_CREDENTIALS | SUBMIT_MFA | TRANSITION_VIEW, /* metadata */ AnonErrorcode) => Unit = null,
+    onExit: (/* error */ AnonDisplaymessage | Null, /* metadata */ AnonInstitution) => Unit = null,
     onLoad: () => Unit = null,
     selectAccount: js.UndefOr[Boolean] = js.undefined,
     style: CSSProperties = null,

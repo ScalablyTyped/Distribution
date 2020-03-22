@@ -5,7 +5,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mod {
-  type FontStyleConfig = typings.std.Partial[typings.canvaskitWasm.mod.FontStyle]
   type SkAffinity = typings.canvaskitWasm.mod.SkEnumValue
   type SkAlphaType = typings.canvaskitWasm.mod.SkEnumValue
   type SkBlendMode = typings.canvaskitWasm.mod.SkEnumValue

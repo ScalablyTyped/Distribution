@@ -3,10 +3,10 @@ package typings.jupyterlabApplication.tokensMod
 import typings.jupyterlabApplication.tokensMod.IRouter.ILocation
 import typings.jupyterlabApplication.tokensMod.IRouter.INavOptions
 import typings.jupyterlabApplication.tokensMod.IRouter.IRegisterOptions
-import typings.phosphorCommands.mod.CommandRegistry
-import typings.phosphorCoreutils.mod.Token
-import typings.phosphorDisposable.mod.IDisposable
-import typings.phosphorSignaling.mod.ISignal
+import typings.luminoCommands.mod.CommandRegistry
+import typings.luminoCoreutils.mod.Token
+import typings.luminoDisposable.mod.IDisposable
+import typings.luminoSignaling.mod.ISignal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

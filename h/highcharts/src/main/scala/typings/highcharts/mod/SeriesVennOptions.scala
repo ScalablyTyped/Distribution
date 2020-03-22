@@ -8,7 +8,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.highcharts.mod.SeriesOptions because var conflicts: zIndex. Inlined id, index, legendIndex, mapData, name, stack, treemap, `type`, xAxis, yAxis */ trait SeriesVennOptions
+- typings.highcharts.mod.SeriesOptions because var conflicts: zIndex. Inlined id, index, legendIndex, mapData, name, stack, `type`, xAxis, yAxis */ trait SeriesVennOptions
   extends PlotVennOptions
      with SeriesOptionsType {
   /**
@@ -32,7 +32,7 @@ import scala.scalajs.js.annotation._
     * number of data points exceeds the series' turboThreshold, this option is
     * not available. (see online documentation for example)
     */
-  var data: js.UndefOr[js.Array[SeriesVennDataOptions]] = js.undefined
+  var data: js.UndefOr[js.Array[PointOptionsObject]] = js.undefined
   /**
     * Not available
     */
@@ -77,7 +77,6 @@ import scala.scalajs.js.annotation._
     * Not available
     */
   var steps: js.UndefOr[scala.Nothing] = js.undefined
-  var treemap: js.UndefOr[SeriesTreemapOptions] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) This property is only in
     * TypeScript non-optional and might be `undefined` in series objects from
@@ -98,10 +97,10 @@ object SeriesVennOptions {
   @scala.inline
   def apply(
     `type`: String | venn,
-    accessibility: js.Object | PlotVennAccessibilityOptions = null,
+    accessibility: SeriesAccessibilityOptionsObject = null,
     allAreas: js.UndefOr[Boolean] = js.undefined,
     allowPointSelect: js.UndefOr[Boolean] = js.undefined,
-    animation: Boolean | AnimationOptionsObject | PlotVennAnimationOptions = null,
+    animation: Boolean | AnimationOptionsObject = null,
     animationLimit: Int | Double = null,
     boostBlending: OptionsBoostBlendingValue = null,
     boostThreshold: Int | Double = null,
@@ -111,6 +110,7 @@ object SeriesVennOptions {
     brighten: Int | Double = null,
     className: String = null,
     clip: js.UndefOr[Boolean] = js.undefined,
+    cluster: PlotVennClusterOptions = null,
     color: ColorString | GradientColorObject | PatternObject = null,
     colorAxis: Boolean | Double | String = null,
     colorByPoint: js.UndefOr[Boolean] = js.undefined,
@@ -119,17 +119,18 @@ object SeriesVennOptions {
     compare: String = null,
     compareBase: `0` | `100` = null,
     compareStart: js.UndefOr[Boolean] = js.undefined,
-    connectors: PlotVennConnectorsOptions = null,
+    connectors: SeriesConnectorsOptionsObject = null,
     cursor: String | CursorValue = null,
     dashStyle: DashStyleValue = null,
-    data: js.Array[SeriesVennDataOptions] = null,
-    dataGrouping: PlotVennDataGroupingOptions = null,
+    data: js.Array[PointOptionsObject] = null,
+    dataGrouping: DataGroupingOptionsObject = null,
     dataLabels: DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject] = null,
     dataParser: js.UndefOr[scala.Nothing] = js.undefined,
+    dataSorting: DataSortingOptionsObject | PlotVennDataSortingOptions = null,
     dataURL: js.UndefOr[scala.Nothing] = js.undefined,
     description: String = null,
     enableMouseTracking: js.UndefOr[Boolean] = js.undefined,
-    events: PlotVennEventsOptions = null,
+    events: SeriesEventsOptionsObject = null,
     gapSize: Int | Double = null,
     gapUnit: OptionsGapUnitValue = null,
     id: String = null,
@@ -137,15 +138,15 @@ object SeriesVennOptions {
     index: Int | Double = null,
     joinBy: String | js.Array[String] = null,
     keys: js.Array[String] = null,
-    lastPrice: PlotVennLastPriceOptions = null,
-    lastVisiblePrice: PlotVennLastVisiblePriceOptions = null,
+    lastPrice: SeriesLastPriceOptionsObject = null,
+    lastVisiblePrice: SeriesLastVisiblePriceOptionsObject = null,
     legendIndex: Int | Double = null,
     mapData: js.Array[SeriesMapDataOptions] | js.Any = null,
     marker: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
     navigatorOptions: PlotSeriesOptions = null,
     opacity: Int | Double = null,
-    point: PlotVennPointOptions = null,
+    point: PlotSeriesPointOptions = null,
     pointDescriptionFormatter: js.Function = null,
     pointRange: Int | Double = null,
     selected: js.UndefOr[Boolean] = js.undefined,
@@ -154,12 +155,11 @@ object SeriesVennOptions {
     showInNavigator: js.UndefOr[Boolean] = js.undefined,
     skipKeyboardNavigation: js.UndefOr[Boolean] = js.undefined,
     stack: Double | scala.Nothing | String = null,
-    states: PlotVennStatesOptions = null,
+    states: SeriesStatesOptionsObject = null,
     step: OptionsStepValue = null,
     steps: js.UndefOr[scala.Nothing] = js.undefined,
     stickyTracking: js.UndefOr[Boolean] = js.undefined,
-    tooltip: PlotVennTooltipOptions = null,
-    treemap: SeriesTreemapOptions = null,
+    tooltip: SeriesTooltipOptionsObject = null,
     turboThreshold: Int | Double = null,
     visible: js.UndefOr[Boolean] = js.undefined,
     xAxis: Double | scala.Nothing | String = null,
@@ -181,6 +181,7 @@ object SeriesVennOptions {
     if (brighten != null) __obj.updateDynamic("brighten")(brighten.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (!js.isUndefined(clip)) __obj.updateDynamic("clip")(clip.asInstanceOf[js.Any])
+    if (cluster != null) __obj.updateDynamic("cluster")(cluster.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (colorAxis != null) __obj.updateDynamic("colorAxis")(colorAxis.asInstanceOf[js.Any])
     if (!js.isUndefined(colorByPoint)) __obj.updateDynamic("colorByPoint")(colorByPoint.asInstanceOf[js.Any])
@@ -196,6 +197,7 @@ object SeriesVennOptions {
     if (dataGrouping != null) __obj.updateDynamic("dataGrouping")(dataGrouping.asInstanceOf[js.Any])
     if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
     if (!js.isUndefined(dataParser)) __obj.updateDynamic("dataParser")(dataParser.asInstanceOf[js.Any])
+    if (dataSorting != null) __obj.updateDynamic("dataSorting")(dataSorting.asInstanceOf[js.Any])
     if (!js.isUndefined(dataURL)) __obj.updateDynamic("dataURL")(dataURL.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (!js.isUndefined(enableMouseTracking)) __obj.updateDynamic("enableMouseTracking")(enableMouseTracking.asInstanceOf[js.Any])
@@ -229,7 +231,6 @@ object SeriesVennOptions {
     if (!js.isUndefined(steps)) __obj.updateDynamic("steps")(steps.asInstanceOf[js.Any])
     if (!js.isUndefined(stickyTracking)) __obj.updateDynamic("stickyTracking")(stickyTracking.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (treemap != null) __obj.updateDynamic("treemap")(treemap.asInstanceOf[js.Any])
     if (turboThreshold != null) __obj.updateDynamic("turboThreshold")(turboThreshold.asInstanceOf[js.Any])
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     if (xAxis != null) __obj.updateDynamic("xAxis")(xAxis.asInstanceOf[js.Any])

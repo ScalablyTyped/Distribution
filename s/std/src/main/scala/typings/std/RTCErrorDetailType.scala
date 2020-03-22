@@ -8,6 +8,8 @@ import scala.scalajs.js.annotation._
   - typings.std.stdStrings.`data-channel-failure`
   - typings.std.stdStrings.`dtls-failure`
   - typings.std.stdStrings.`fingerprint-failure`
+  - typings.std.stdStrings.`hardware-encoder-error`
+  - typings.std.stdStrings.`hardware-encoder-not-available`
   - typings.std.stdStrings.`idp-bad-script-failure`
   - typings.std.stdStrings.`idp-execution-failure`
   - typings.std.stdStrings.`idp-load-failure`
@@ -18,8 +20,6 @@ import scala.scalajs.js.annotation._
   - typings.std.stdStrings.`idp-token-invalid`
   - typings.std.stdStrings.`sctp-failure`
   - typings.std.stdStrings.`sdp-syntax-error`
-  - typings.std.stdStrings.`hardware-encoder-not-available`
-  - typings.std.stdStrings.`hardware-encoder-error`
 */
 trait RTCErrorDetailType extends js.Object
 

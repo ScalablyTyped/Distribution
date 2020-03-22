@@ -1,6 +1,6 @@
 package typings.officeJsPreview.Office
 
-import typings.officeJsPreview.AnonIsInline
+import typings.officeJsPreview.AsyncContextOptionsisInli
 import typings.officeJsPreview.Office.MailboxEnums.ItemType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -253,11 +253,11 @@ trait MessageCompose extends Item {
     attachmentName: String,
     callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]
   ): Unit = js.native
-  def addFileAttachmentAsync(uri: String, attachmentName: String, options: AsyncContextOptions with AnonIsInline): Unit = js.native
+  def addFileAttachmentAsync(uri: String, attachmentName: String, options: AsyncContextOptionsisInli): Unit = js.native
   def addFileAttachmentAsync(
     uri: String,
     attachmentName: String,
-    options: AsyncContextOptions with AnonIsInline,
+    options: AsyncContextOptionsisInli,
     callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]
   ): Unit = js.native
   /**
@@ -302,11 +302,11 @@ trait MessageCompose extends Item {
     attachmentName: String,
     callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]
   ): Unit = js.native
-  def addFileAttachmentFromBase64Async(base64File: String, attachmentName: String, options: AsyncContextOptions with AnonIsInline): Unit = js.native
+  def addFileAttachmentFromBase64Async(base64File: String, attachmentName: String, options: AsyncContextOptionsisInli): Unit = js.native
   def addFileAttachmentFromBase64Async(
     base64File: String,
     attachmentName: String,
-    options: AsyncContextOptions with AnonIsInline,
+    options: AsyncContextOptionsisInli,
     callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]
   ): Unit = js.native
   def addHandlerAsync(eventType: String, handler: js.Any): Unit = js.native

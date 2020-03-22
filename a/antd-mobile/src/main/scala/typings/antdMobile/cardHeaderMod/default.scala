@@ -1,6 +1,6 @@
 package typings.antdMobile.cardHeaderMod
 
-import typings.antdMobile.AnonPrefixClsThumbStyle
+import typings.antdMobile.AnonThumbStyle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,6 +13,6 @@ class default () extends CardHeader
 @JSImport("antd-mobile/lib/card/CardHeader", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: AnonPrefixClsThumbStyle = js.native
+  var defaultProps: AnonThumbStyle = js.native
 }
 

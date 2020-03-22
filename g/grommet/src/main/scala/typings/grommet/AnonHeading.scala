@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait AnonHeading extends js.Object {
   var heading: js.UndefOr[AnonLevel] = js.undefined
-  var icons: js.UndefOr[AnonNextPrevious] = js.undefined
+  var icons: js.UndefOr[AnonPrevious] = js.undefined
   var large: js.UndefOr[AnonDaySize] = js.undefined
   var medium: js.UndefOr[AnonDaySize] = js.undefined
   var small: js.UndefOr[AnonDaySize] = js.undefined
@@ -16,7 +16,7 @@ object AnonHeading {
   @scala.inline
   def apply(
     heading: AnonLevel = null,
-    icons: AnonNextPrevious = null,
+    icons: AnonPrevious = null,
     large: AnonDaySize = null,
     medium: AnonDaySize = null,
     small: AnonDaySize = null

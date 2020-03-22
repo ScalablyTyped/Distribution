@@ -4,8 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PreProps extends js.Object {
-  var padded: js.UndefOr[Boolean] = js.undefined
+  var padded: js.UndefOr[Boolean] = js.native
 }
 
 object PreProps {

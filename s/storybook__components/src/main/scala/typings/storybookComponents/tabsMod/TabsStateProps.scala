@@ -5,12 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TabsStateProps extends js.Object {
-  var absolute: Boolean
-  var backgroundColor: String
-  var bordered: Boolean
-  var children: js.Array[ReactNode | FuncChilden]
-  var initial: String
+  var absolute: Boolean = js.native
+  var backgroundColor: String = js.native
+  var bordered: Boolean = js.native
+  var children: js.Array[ReactNode | FuncChilden] = js.native
+  var initial: String = js.native
 }
 
 object TabsStateProps {

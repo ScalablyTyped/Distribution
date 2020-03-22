@@ -1,6 +1,6 @@
 package typings.googleapis.driveV3Mod.driveV3
 
-import typings.googleapis.AnonInherited
+import typings.googleapis.AnonInheritedFrom
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -65,7 +65,7 @@ trait SchemaPermission extends js.Object {
     * or directly on this item. This is an output-only field which is present
     * only for Team Drive items.
     */
-  var teamDrivePermissionDetails: js.UndefOr[js.Array[AnonInherited]] = js.native
+  var teamDrivePermissionDetails: js.UndefOr[js.Array[AnonInheritedFrom]] = js.native
   /**
     * The type of the grantee. Valid values are:   - user  - group  - domain  -
     * anyone
@@ -86,7 +86,7 @@ object SchemaPermission {
     kind: String = null,
     photoLink: String = null,
     role: String = null,
-    teamDrivePermissionDetails: js.Array[AnonInherited] = null,
+    teamDrivePermissionDetails: js.Array[AnonInheritedFrom] = null,
     `type`: String = null
   ): SchemaPermission = {
     val __obj = js.Dynamic.literal()

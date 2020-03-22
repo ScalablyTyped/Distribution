@@ -1,6 +1,6 @@
 package typings.antd.skeletonAvatarMod
 
-import typings.antd.PartialSkeletonAvatarProps
+import typings.antd.PartialAvatarProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,6 +13,6 @@ class default () extends SkeletonAvatar
 @JSImport("antd/lib/skeleton/Avatar", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: PartialSkeletonAvatarProps = js.native
+  var defaultProps: PartialAvatarProps = js.native
 }
 

@@ -1,8 +1,8 @@
 package typings.flexmonster.mod
 
 import typings.flexmonster.AnonColumn
-import typings.flexmonster.AnonColumnsDrillAll
-import typings.flexmonster.AnonColumnsExpandAll
+import typings.flexmonster.AnonDrillAll
+import typings.flexmonster.AnonExpandAll
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 trait Slice extends js.Object {
   var columns: js.UndefOr[js.Array[Hierarchy]] = js.undefined
   var drillThrough: js.UndefOr[js.Array[String]] = js.undefined
-  var drills: js.UndefOr[AnonColumnsDrillAll] = js.undefined
-  var expands: js.UndefOr[AnonColumnsExpandAll] = js.undefined
+  var drills: js.UndefOr[AnonDrillAll] = js.undefined
+  var expands: js.UndefOr[AnonExpandAll] = js.undefined
   var flatOrder: js.UndefOr[js.Array[String]] = js.undefined
   var measures: js.UndefOr[js.Array[Measure]] = js.undefined
   var reportFilters: js.UndefOr[js.Array[Hierarchy]] = js.undefined
@@ -24,8 +24,8 @@ object Slice {
   def apply(
     columns: js.Array[Hierarchy] = null,
     drillThrough: js.Array[String] = null,
-    drills: AnonColumnsDrillAll = null,
-    expands: AnonColumnsExpandAll = null,
+    drills: AnonDrillAll = null,
+    expands: AnonExpandAll = null,
     flatOrder: js.Array[String] = null,
     measures: js.Array[Measure] = null,
     reportFilters: js.Array[Hierarchy] = null,

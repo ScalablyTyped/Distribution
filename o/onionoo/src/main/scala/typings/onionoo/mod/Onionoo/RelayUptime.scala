@@ -1,13 +1,7 @@
 package typings.onionoo.mod.Onionoo
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.onionoo.onionooStrings.`1_month`
-import typings.onionoo.onionooStrings.`1_week`
-import typings.onionoo.onionooStrings.`1_year`
-import typings.onionoo.onionooStrings.`5_years`
-import typings.onionoo.onionooStrings.`6_months`
-import typings.std.Partial
-import typings.std.Record
+import typings.onionoo.PartialRecord1week1month6
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +16,7 @@ trait RelayUptime extends js.Object {
     * `Running` or `Exit`, values are objects similar to the uptime field above, again with keys like
     * `1_week` etc. If a relay never had a given relay flag assigned, no object is included for that flag.
     */
-  var flags: js.UndefOr[
-    StringDictionary[
-      Partial[Record[`1_week` | `1_month` | `6_months` | `1_year` | `5_years`, Histogram]]
-    ]
-  ] = js.undefined
+  var flags: js.UndefOr[StringDictionary[PartialRecord1week1month6]] = js.undefined
   /**
     * Object containing graph history objects with the fractional uptime of this relay. Keys are string
     * representation of the time period covered by the graph history object. Keys are fixed strings
@@ -37,19 +27,15 @@ trait RelayUptime extends js.Object {
     * Contained graph history objects may contain null values if less than 20% of network statuses have been
     * processed for a given time period.
     */
-  var uptime: js.UndefOr[
-    Partial[Record[`1_week` | `1_month` | `6_months` | `1_year` | `5_years`, Histogram]]
-  ] = js.undefined
+  var uptime: js.UndefOr[PartialRecord1week1month6] = js.undefined
 }
 
 object RelayUptime {
   @scala.inline
   def apply(
     fingerprint: String,
-    flags: StringDictionary[
-      Partial[Record[`1_week` | `1_month` | `6_months` | `1_year` | `5_years`, Histogram]]
-    ] = null,
-    uptime: Partial[Record[`1_week` | `1_month` | `6_months` | `1_year` | `5_years`, Histogram]] = null
+    flags: StringDictionary[PartialRecord1week1month6] = null,
+    uptime: PartialRecord1week1month6 = null
   ): RelayUptime = {
     val __obj = js.Dynamic.literal(fingerprint = fingerprint.asInstanceOf[js.Any])
     if (flags != null) __obj.updateDynamic("flags")(flags.asInstanceOf[js.Any])

@@ -38,9 +38,6 @@ object materialDrawerStrings {
   @js.native
   sealed trait `mdc-drawer--opening` extends js.Object
   
-  @js.native
-  sealed trait onActivate extends js.Object
-  
   @scala.inline
   def `Dotmdc-drawer-app-content`: `Dotmdc-drawer-app-content` = ".mdc-drawer-app-content".asInstanceOf[`Dotmdc-drawer-app-content`]
   @scala.inline
@@ -63,7 +60,5 @@ object materialDrawerStrings {
   def `mdc-drawer--open`: `mdc-drawer--open` = "mdc-drawer--open".asInstanceOf[`mdc-drawer--open`]
   @scala.inline
   def `mdc-drawer--opening`: `mdc-drawer--opening` = "mdc-drawer--opening".asInstanceOf[`mdc-drawer--opening`]
-  @scala.inline
-  def onActivate: onActivate = "onActivate".asInstanceOf[onActivate]
 }
 

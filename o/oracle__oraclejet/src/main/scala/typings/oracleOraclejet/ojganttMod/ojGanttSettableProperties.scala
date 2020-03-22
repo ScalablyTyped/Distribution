@@ -1,15 +1,15 @@
 package typings.oracleOraclejet.ojganttMod
 
+import typings.oracleOraclejet.Anon7
 import typings.oracleOraclejet.AnonAccessibleDependencyInfo
-import typings.oracleOraclejet.AnonAutoBaseline
-import typings.oracleOraclejet.AnonAutoHidden
+import typings.oracleOraclejet.AnonBaseline
 import typings.oracleOraclejet.AnonBaselineDate
-import typings.oracleOraclejet.AnonContextRendererAnonInsertAnonPreventDefault
-import typings.oracleOraclejet.AnonConverter
 import typings.oracleOraclejet.AnonHeightNumber
-import typings.oracleOraclejet.AnonLabel
+import typings.oracleOraclejet.AnonMaxWidth
 import typings.oracleOraclejet.AnonMove
 import typings.oracleOraclejet.AnonOffsetY
+import typings.oracleOraclejet.AnonScale
+import typings.oracleOraclejet.AnonVertical
 import typings.oracleOraclejet.ojdataproviderMod.DataProvider
 import typings.oracleOraclejet.ojdvtBaseMod.dvtBaseComponentSettableProperties
 import typings.oracleOraclejet.ojganttMod.ojGantt.ReferenceObject
@@ -33,19 +33,19 @@ trait ojGanttSettableProperties[K1, K2, D1, D2] extends dvtBaseComponentSettable
   var dependencyData: js.UndefOr[DataProvider[K1, D1]] = js.undefined
   var dnd: AnonMove
   var end: String
-  var gridlines: AnonAutoHidden
-  var majorAxis: AnonConverter
-  var minorAxis: AnonConverter
+  var gridlines: AnonVertical
+  var majorAxis: AnonScale
+  var minorAxis: AnonScale
   var referenceObjects: js.Array[ReferenceObject]
-  var rowAxis: AnonLabel[K2, D2]
+  var rowAxis: AnonMaxWidth[K2, D2]
   var rowDefaults: AnonHeightNumber
   var scrollPosition: AnonOffsetY
   var selection: js.Array[K2]
   var selectionMode: single | multiple | none
   var start: String
   var taskData: js.UndefOr[DataProvider[K2, D2]] = js.undefined
-  var taskDefaults: AnonAutoBaseline
-  var tooltip: AnonContextRendererAnonInsertAnonPreventDefault[K2, D2]
+  var taskDefaults: AnonBaseline
+  var tooltip: Anon7[K2, D2]
   @JSName("translations")
   var translations_ojGanttSettableProperties: AnonAccessibleDependencyInfo
   var valueFormats: AnonBaselineDate
@@ -62,18 +62,18 @@ object ojGanttSettableProperties {
     axisPosition: bottom | top,
     dnd: AnonMove,
     end: String,
-    gridlines: AnonAutoHidden,
-    majorAxis: AnonConverter,
-    minorAxis: AnonConverter,
+    gridlines: AnonVertical,
+    majorAxis: AnonScale,
+    minorAxis: AnonScale,
     referenceObjects: js.Array[ReferenceObject],
-    rowAxis: AnonLabel[K2, D2],
+    rowAxis: AnonMaxWidth[K2, D2],
     rowDefaults: AnonHeightNumber,
     scrollPosition: AnonOffsetY,
     selection: js.Array[K2],
     selectionMode: single | multiple | none,
     start: String,
-    taskDefaults: AnonAutoBaseline,
-    tooltip: AnonContextRendererAnonInsertAnonPreventDefault[K2, D2],
+    taskDefaults: AnonBaseline,
+    tooltip: Anon7[K2, D2],
     trackResize: on | off,
     translations: AnonAccessibleDependencyInfo,
     valueFormats: AnonBaselineDate,

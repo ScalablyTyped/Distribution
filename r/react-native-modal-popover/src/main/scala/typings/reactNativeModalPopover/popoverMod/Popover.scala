@@ -1,8 +1,8 @@
 package typings.reactNativeModalPopover.popoverMod
 
 import typings.react.mod.Component
-import typings.reactNativeModalPopover.AnonArgs
-import typings.std.Partial
+import typings.reactNativeModalPopover.AnonArrowSize
+import typings.reactNativeModalPopover.PartialPopoverProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,8 +33,8 @@ class Popover protected ()
 @JSImport("react-native-modal-popover/lib/Popover", "Popover")
 @js.native
 object Popover extends js.Object {
-  var defaultProps: Partial[PopoverProps] = js.native
+  var defaultProps: PartialPopoverProps = js.native
   var displayName: String = js.native
-  var propTypes: AnonArgs = js.native
+  var propTypes: AnonArrowSize = js.native
 }
 

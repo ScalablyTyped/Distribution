@@ -1,7 +1,7 @@
 package typings.jupyterlabStatusbar.tokensMod.IStatusBar
 
-import typings.phosphorSignaling.mod.ISignal
-import typings.phosphorWidgets.mod.Widget
+import typings.luminoSignaling.mod.ISignal
+import typings.luminoWidgets.mod.Widget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

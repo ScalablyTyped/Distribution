@@ -9,23 +9,23 @@ trait ExperimentConfig extends js.Object {
   /**
     * The name of the experiment.
     */
-  var ExperimentName: js.UndefOr[ExperimentConfigName] = js.native
+  var ExperimentName: js.UndefOr[ExperimentEntityName] = js.native
   /**
     * Display name for the trial component.
     */
-  var TrialComponentDisplayName: js.UndefOr[ExperimentConfigName] = js.native
+  var TrialComponentDisplayName: js.UndefOr[ExperimentEntityName] = js.native
   /**
     * The name of the trial.
     */
-  var TrialName: js.UndefOr[ExperimentConfigName] = js.native
+  var TrialName: js.UndefOr[ExperimentEntityName] = js.native
 }
 
 object ExperimentConfig {
   @scala.inline
   def apply(
-    ExperimentName: ExperimentConfigName = null,
-    TrialComponentDisplayName: ExperimentConfigName = null,
-    TrialName: ExperimentConfigName = null
+    ExperimentName: ExperimentEntityName = null,
+    TrialComponentDisplayName: ExperimentEntityName = null,
+    TrialName: ExperimentEntityName = null
   ): ExperimentConfig = {
     val __obj = js.Dynamic.literal()
     if (ExperimentName != null) __obj.updateDynamic("ExperimentName")(ExperimentName.asInstanceOf[js.Any])

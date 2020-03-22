@@ -2,6 +2,7 @@ package typings.appBuilderLib.snapStorePublisherMod
 
 import typings.builderUtilRuntime.publishOptionsMod.PublishConfiguration
 import typings.builderUtilRuntime.publishOptionsMod.PublishProvider
+import typings.node.httpMod.OutgoingHttpHeaders
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,12 +22,14 @@ object SnapStoreOptions {
     channels: String | js.Array[String] = null,
     publishAutoUpdate: js.UndefOr[Boolean] = js.undefined,
     publisherName: js.Array[String] = null,
+    requestHeaders: OutgoingHttpHeaders = null,
     updaterCacheDirName: String = null
   ): SnapStoreOptions = {
     val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any])
     if (channels != null) __obj.updateDynamic("channels")(channels.asInstanceOf[js.Any])
     if (!js.isUndefined(publishAutoUpdate)) __obj.updateDynamic("publishAutoUpdate")(publishAutoUpdate.asInstanceOf[js.Any])
     if (publisherName != null) __obj.updateDynamic("publisherName")(publisherName.asInstanceOf[js.Any])
+    if (requestHeaders != null) __obj.updateDynamic("requestHeaders")(requestHeaders.asInstanceOf[js.Any])
     if (updaterCacheDirName != null) __obj.updateDynamic("updaterCacheDirName")(updaterCacheDirName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SnapStoreOptions]
   }

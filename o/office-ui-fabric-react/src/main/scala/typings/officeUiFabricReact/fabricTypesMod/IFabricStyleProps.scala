@@ -10,6 +10,7 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.ClipboardEvent
 import typings.react.mod.CompositionEvent
 import typings.react.mod.DragEvent
+import typings.react.mod.ElementType
 import typings.react.mod.FocusEvent
 import typings.react.mod.FormEvent
 import typings.react.mod.KeyboardEvent
@@ -17,7 +18,6 @@ import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.ReactNode
-import typings.react.mod.ReactType
 import typings.react.mod.SyntheticEvent
 import typings.react.mod.TouchEvent
 import typings.react.mod.TransitionEvent
@@ -140,7 +140,7 @@ object IFabricStyleProps {
     `aria-valuemin`: Int | Double = null,
     `aria-valuenow`: Int | Double = null,
     `aria-valuetext`: String = null,
-    as: ReactType[_] = null,
+    as: ElementType[_] = null,
     autoCapitalize: String = null,
     autoCorrect: String = null,
     autoSave: String = null,

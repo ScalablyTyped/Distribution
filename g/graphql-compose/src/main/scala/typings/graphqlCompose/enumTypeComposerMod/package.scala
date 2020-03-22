@@ -13,5 +13,4 @@ package object enumTypeComposerMod {
     - typings.graphqlCompose.graphqlMod.GraphQLEnumType
   */
   type EnumTypeComposeDefinition = typings.graphqlCompose.enumTypeComposerMod._EnumTypeComposeDefinition | typings.graphqlCompose.typeMapperMod.TypeAsString
-  type GraphQLEnumTypeExtended = typings.graphqlCompose.graphqlMod.GraphQLEnumType with typings.graphqlCompose.AnonGqcExtensions
 }

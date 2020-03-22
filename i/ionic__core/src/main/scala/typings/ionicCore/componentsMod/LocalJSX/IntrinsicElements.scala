@@ -6,10 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait IntrinsicElements extends js.Object {
   var `ion-action-sheet`: IonActionSheet
-  var `ion-action-sheet-controller`: IonActionSheetController
   var `ion-alert`: IonAlert
-  var `ion-alert-controller`: IonAlertController
-  var `ion-anchor`: IonAnchor
   var `ion-app`: IonApp
   var `ion-avatar`: IonAvatar
   var `ion-back-button`: IonBackButton
@@ -47,24 +44,16 @@ trait IntrinsicElements extends js.Object {
   var `ion-list`: IonList
   var `ion-list-header`: IonListHeader
   var `ion-loading`: IonLoading
-  var `ion-loading-controller`: IonLoadingController
   var `ion-menu`: IonMenu
   var `ion-menu-button`: IonMenuButton
-  var `ion-menu-controller`: IonMenuController
   var `ion-menu-toggle`: IonMenuToggle
   var `ion-modal`: IonModal
-  var `ion-modal-controller`: IonModalController
   var `ion-nav`: IonNav
   var `ion-nav-link`: IonNavLink
-  var `ion-nav-pop`: IonNavPop
-  var `ion-nav-push`: IonNavPush
-  var `ion-nav-set-root`: IonNavSetRoot
   var `ion-note`: IonNote
   var `ion-picker`: IonPicker
   var `ion-picker-column`: IonPickerColumn
-  var `ion-picker-controller`: IonPickerController
   var `ion-popover`: IonPopover
-  var `ion-popover-controller`: IonPopoverController
   var `ion-progress-bar`: IonProgressBar
   var `ion-radio`: IonRadio
   var `ion-radio-group`: IonRadioGroup
@@ -100,7 +89,6 @@ trait IntrinsicElements extends js.Object {
   var `ion-thumbnail`: IonThumbnail
   var `ion-title`: IonTitle
   var `ion-toast`: IonToast
-  var `ion-toast-controller`: IonToastController
   var `ion-toggle`: IonToggle
   var `ion-toolbar`: IonToolbar
   var `ion-virtual-scroll`: IonVirtualScroll
@@ -110,10 +98,7 @@ object IntrinsicElements {
   @scala.inline
   def apply(
     `ion-action-sheet`: IonActionSheet,
-    `ion-action-sheet-controller`: IonActionSheetController,
     `ion-alert`: IonAlert,
-    `ion-alert-controller`: IonAlertController,
-    `ion-anchor`: IonAnchor,
     `ion-app`: IonApp,
     `ion-avatar`: IonAvatar,
     `ion-back-button`: IonBackButton,
@@ -151,24 +136,16 @@ object IntrinsicElements {
     `ion-list`: IonList,
     `ion-list-header`: IonListHeader,
     `ion-loading`: IonLoading,
-    `ion-loading-controller`: IonLoadingController,
     `ion-menu`: IonMenu,
     `ion-menu-button`: IonMenuButton,
-    `ion-menu-controller`: IonMenuController,
     `ion-menu-toggle`: IonMenuToggle,
     `ion-modal`: IonModal,
-    `ion-modal-controller`: IonModalController,
     `ion-nav`: IonNav,
     `ion-nav-link`: IonNavLink,
-    `ion-nav-pop`: IonNavPop,
-    `ion-nav-push`: IonNavPush,
-    `ion-nav-set-root`: IonNavSetRoot,
     `ion-note`: IonNote,
     `ion-picker`: IonPicker,
     `ion-picker-column`: IonPickerColumn,
-    `ion-picker-controller`: IonPickerController,
     `ion-popover`: IonPopover,
-    `ion-popover-controller`: IonPopoverController,
     `ion-progress-bar`: IonProgressBar,
     `ion-radio`: IonRadio,
     `ion-radio-group`: IonRadioGroup,
@@ -204,17 +181,13 @@ object IntrinsicElements {
     `ion-thumbnail`: IonThumbnail,
     `ion-title`: IonTitle,
     `ion-toast`: IonToast,
-    `ion-toast-controller`: IonToastController,
     `ion-toggle`: IonToggle,
     `ion-toolbar`: IonToolbar,
     `ion-virtual-scroll`: IonVirtualScroll
   ): IntrinsicElements = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("ion-action-sheet")(`ion-action-sheet`.asInstanceOf[js.Any])
-    __obj.updateDynamic("ion-action-sheet-controller")(`ion-action-sheet-controller`.asInstanceOf[js.Any])
     __obj.updateDynamic("ion-alert")(`ion-alert`.asInstanceOf[js.Any])
-    __obj.updateDynamic("ion-alert-controller")(`ion-alert-controller`.asInstanceOf[js.Any])
-    __obj.updateDynamic("ion-anchor")(`ion-anchor`.asInstanceOf[js.Any])
     __obj.updateDynamic("ion-app")(`ion-app`.asInstanceOf[js.Any])
     __obj.updateDynamic("ion-avatar")(`ion-avatar`.asInstanceOf[js.Any])
     __obj.updateDynamic("ion-back-button")(`ion-back-button`.asInstanceOf[js.Any])
@@ -252,24 +225,16 @@ object IntrinsicElements {
     __obj.updateDynamic("ion-list")(`ion-list`.asInstanceOf[js.Any])
     __obj.updateDynamic("ion-list-header")(`ion-list-header`.asInstanceOf[js.Any])
     __obj.updateDynamic("ion-loading")(`ion-loading`.asInstanceOf[js.Any])
-    __obj.updateDynamic("ion-loading-controller")(`ion-loading-controller`.asInstanceOf[js.Any])
     __obj.updateDynamic("ion-menu")(`ion-menu`.asInstanceOf[js.Any])
     __obj.updateDynamic("ion-menu-button")(`ion-menu-button`.asInstanceOf[js.Any])
-    __obj.updateDynamic("ion-menu-controller")(`ion-menu-controller`.asInstanceOf[js.Any])
     __obj.updateDynamic("ion-menu-toggle")(`ion-menu-toggle`.asInstanceOf[js.Any])
     __obj.updateDynamic("ion-modal")(`ion-modal`.asInstanceOf[js.Any])
-    __obj.updateDynamic("ion-modal-controller")(`ion-modal-controller`.asInstanceOf[js.Any])
     __obj.updateDynamic("ion-nav")(`ion-nav`.asInstanceOf[js.Any])
     __obj.updateDynamic("ion-nav-link")(`ion-nav-link`.asInstanceOf[js.Any])
-    __obj.updateDynamic("ion-nav-pop")(`ion-nav-pop`.asInstanceOf[js.Any])
-    __obj.updateDynamic("ion-nav-push")(`ion-nav-push`.asInstanceOf[js.Any])
-    __obj.updateDynamic("ion-nav-set-root")(`ion-nav-set-root`.asInstanceOf[js.Any])
     __obj.updateDynamic("ion-note")(`ion-note`.asInstanceOf[js.Any])
     __obj.updateDynamic("ion-picker")(`ion-picker`.asInstanceOf[js.Any])
     __obj.updateDynamic("ion-picker-column")(`ion-picker-column`.asInstanceOf[js.Any])
-    __obj.updateDynamic("ion-picker-controller")(`ion-picker-controller`.asInstanceOf[js.Any])
     __obj.updateDynamic("ion-popover")(`ion-popover`.asInstanceOf[js.Any])
-    __obj.updateDynamic("ion-popover-controller")(`ion-popover-controller`.asInstanceOf[js.Any])
     __obj.updateDynamic("ion-progress-bar")(`ion-progress-bar`.asInstanceOf[js.Any])
     __obj.updateDynamic("ion-radio")(`ion-radio`.asInstanceOf[js.Any])
     __obj.updateDynamic("ion-radio-group")(`ion-radio-group`.asInstanceOf[js.Any])
@@ -305,7 +270,6 @@ object IntrinsicElements {
     __obj.updateDynamic("ion-thumbnail")(`ion-thumbnail`.asInstanceOf[js.Any])
     __obj.updateDynamic("ion-title")(`ion-title`.asInstanceOf[js.Any])
     __obj.updateDynamic("ion-toast")(`ion-toast`.asInstanceOf[js.Any])
-    __obj.updateDynamic("ion-toast-controller")(`ion-toast-controller`.asInstanceOf[js.Any])
     __obj.updateDynamic("ion-toggle")(`ion-toggle`.asInstanceOf[js.Any])
     __obj.updateDynamic("ion-toolbar")(`ion-toolbar`.asInstanceOf[js.Any])
     __obj.updateDynamic("ion-virtual-scroll")(`ion-virtual-scroll`.asInstanceOf[js.Any])

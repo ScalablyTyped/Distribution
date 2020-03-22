@@ -1,6 +1,8 @@
 package typings.jupyterlabNotebook.notebooktoolsMod
 
+import typings.jupyterlabCells.mod.Cell
 import typings.jupyterlabNotebook.notebooktoolsMod.NotebookTools.IOptions
+import typings.jupyterlabNotebook.panelMod.NotebookPanel
 import typings.jupyterlabNotebook.tokensMod.INotebookTools
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -39,5 +41,20 @@ class NotebookTools_ protected () extends INotebookTools {
   var _prevActiveNotebookModel: js.Any = js.native
   var _toolChildren: js.Any = js.native
   var _tracker: js.Any = js.native
+  /**
+    * The active cell widget.
+    */
+  @JSName("activeCell")
+  def activeCell_MNotebookTools_(): Cell | Null = js.native
+  /**
+    * The current notebook.
+    */
+  @JSName("activeNotebookPanel")
+  def activeNotebookPanel_MNotebookTools_(): NotebookPanel | Null = js.native
+  /**
+    * The currently selected cells.
+    */
+  @JSName("selectedCells")
+  def selectedCells_MNotebookTools_(): js.Array[Cell] = js.native
 }
 

@@ -7,7 +7,9 @@ import scala.scalajs.js.annotation._
 package object mod {
   type ArrayMethod = typings.std.Exclude[java.lang.String, scala.Double]
   type AtomicObject = js.Function | (typings.std.Map[js.Any, js.Any]) | (typings.std.WeakMap[js.Any, js.Any]) | typings.std.Set[js.Any] | typings.std.WeakSet[js.Any] | js.Promise[js.Any] | typings.std.Date | typings.std.RegExp | scala.Boolean | typings.std.Number | java.lang.String
-  type Draft[T] = T | typings.immer.AnonReadonly[T] | typings.immer.mod.DraftTuple[T] | typings.immer.mod.DraftArray[T]
+  type Draft[T] = T | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {-readonly [ P in keyof T ]: / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias immer.immer.Draft<T[P]> * / object}
+    */ typings.immer.immerStrings.Draft with js.Any) | typings.immer.mod.DraftTuple[T] | typings.immer.mod.DraftArray[T]
   type DraftArray[T /* <: js.Array[_] */] = js.Array[
     /* import warning: importer.ImportType#apply Failed type conversion: {[ P in immer.immer.Indices<T> ]: immer.immer.Draft<T[P]>}[immer.immer.Indices<T>] */ js.Any
   ]

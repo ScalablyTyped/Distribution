@@ -2,7 +2,7 @@ package typings.backboneMarionette.mod
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
-import typings.backboneMarionette.AnonBehaviorClass
+import typings.backboneMarionette.AnonDictindex
 import typings.jquery.JQuery_
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -22,7 +22,7 @@ class Behavior () extends Object {
     * The behaviors key allows a behavior to group multiple behaviors
     * together.
     */
-  var behaviors: (js.Array[AnonBehaviorClass | Behavior]) | (StringDictionary[Instantiable1[js.UndefOr[/* options */ js.Any], Behavior]]) = js.native
+  var behaviors: (js.Array[AnonDictindex | Behavior]) | (StringDictionary[Instantiable1[js.UndefOr[/* options */ js.Any], Behavior]]) = js.native
   /**
     * collectionEvents will respond to the view's collection events.
     */

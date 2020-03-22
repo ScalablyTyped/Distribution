@@ -1,20 +1,20 @@
 package typings.sdpTransform.mod
 
-import typings.sdpTransform.AnonAS
 import typings.sdpTransform.AnonAddress
 import typings.sdpTransform.AnonAddressTypes
-import typings.sdpTransform.AnonConfig
 import typings.sdpTransform.AnonHash
 import typings.sdpTransform.AnonIp
+import typings.sdpTransform.AnonLimit
 import typings.sdpTransform.AnonMids
-import typings.sdpTransform.AnonPayloads
 import typings.sdpTransform.AnonSemantic
 import typings.sdpTransform.AnonStart
-import typings.sdpTransform.AnonValue
+import typings.sdpTransform.AnonUri
+import typings.sdpTransform.AnonValueString
 import typings.sdpTransform.sdpTransformStrings.inactive
 import typings.sdpTransform.sdpTransformStrings.recvonly
 import typings.sdpTransform.sdpTransformStrings.sendonly
 import typings.sdpTransform.sdpTransformStrings.sendrecv
+import typings.sdpTransform.typestringportnumberproto
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,7 +25,7 @@ trait SessionDescription
   // e=
   var email: js.UndefOr[String] = js.undefined
   // m=
-  var media: js.Array[AnonPayloads with MediaDescription]
+  var media: js.Array[typestringportnumberproto]
   // s=
   var name: js.UndefOr[String] = js.undefined
   // o=
@@ -46,21 +46,21 @@ trait SessionDescription
 object SessionDescription {
   @scala.inline
   def apply(
-    media: js.Array[AnonPayloads with MediaDescription],
-    bandwidth: AnonAS = null,
+    media: js.Array[typestringportnumberproto],
+    bandwidth: AnonLimit = null,
     connection: AnonIp = null,
     control: String = null,
     description: String = null,
     direction: sendrecv | recvonly | sendonly | inactive = null,
     email: String = null,
-    ext: js.Array[AnonConfig] = null,
+    ext: js.Array[AnonUri] = null,
     fingerprint: AnonHash = null,
     groups: js.Array[AnonMids] = null,
     iceOptions: String = null,
     icePwd: String = null,
     iceUfrag: String = null,
     icelite: String = null,
-    invalid: js.Array[AnonValue] = null,
+    invalid: js.Array[AnonValueString] = null,
     msidSemantic: AnonSemantic = null,
     name: String = null,
     origin: AnonAddress = null,

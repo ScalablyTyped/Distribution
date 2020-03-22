@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object parserMod extends js.Object {
   def parseDatabaseURL(dataURL: String): AnonDomain = js.native
-  def parseRepoInfo(dataURL: String): AnonPathRepoInfo = js.native
+  def parseRepoInfo(dataURL: String): AnonRepoInfo = js.native
 }
 

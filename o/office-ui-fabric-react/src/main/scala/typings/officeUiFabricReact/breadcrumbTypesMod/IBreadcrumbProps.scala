@@ -1,7 +1,7 @@
 package typings.officeUiFabricReact.breadcrumbTypesMod
 
+import typings.fluentuiReactFocus.focusZoneTypesMod.IFocusZoneProps
 import typings.officeUiFabricReact.buttonTypesMod.IButtonProps
-import typings.officeUiFabricReact.focusZoneTypesMod.IFocusZoneProps
 import typings.officeUiFabricReact.tooltipHostTypesMod.ITooltipHostProps
 import typings.react.AnonHtml
 import typings.react.mod.AnimationEvent

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@jupyterlab/property-inspector" : "2.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@jupyterlab/property-inspector" : "2.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -5,11 +5,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mod {
-  type AnimatableAnimationMethods = typings.std.Partial[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ k in react-native-animatable.react-native-animatable.Animation ]: (duration? : number): std.Promise<{  finished  :boolean}>}
-    */ typings.reactNativeAnimatable.reactNativeAnimatableStrings.AnimatableAnimationMethods with js.Any
-  ]
   /* Rewritten from type alias, can be one of: 
     - typings.reactNativeAnimatable.reactNativeAnimatableStrings.linear
     - typings.reactNativeAnimatable.reactNativeAnimatableStrings.ease

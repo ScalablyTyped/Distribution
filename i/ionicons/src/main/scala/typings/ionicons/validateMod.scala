@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("ionicons/dist/types/icon/validate", JSImport.Namespace)
+@JSImport("ionicons/dist/types/components/icon/validate", JSImport.Namespace)
 @js.native
 object validateMod extends js.Object {
   def isValid(elm: HTMLElement): Boolean = js.native

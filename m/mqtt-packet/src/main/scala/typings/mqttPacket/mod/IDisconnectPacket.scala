@@ -1,6 +1,6 @@
 package typings.mqttPacket.mod
 
-import typings.mqttPacket.AnonReasonStringServerReference
+import typings.mqttPacket.AnonServerReference
 import typings.mqttPacket.mqttPacketStrings.disconnect
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,7 +11,7 @@ trait IDisconnectPacket
      with Packet {
   @JSName("cmd")
   var cmd_IDisconnectPacket: disconnect
-  var properties: js.UndefOr[AnonReasonStringServerReference] = js.undefined
+  var properties: js.UndefOr[AnonServerReference] = js.undefined
 }
 
 object IDisconnectPacket {
@@ -20,7 +20,7 @@ object IDisconnectPacket {
     cmd: disconnect,
     length: Int | Double = null,
     messageId: Int | Double = null,
-    properties: AnonReasonStringServerReference = null
+    properties: AnonServerReference = null
   ): IDisconnectPacket = {
     val __obj = js.Dynamic.literal(cmd = cmd.asInstanceOf[js.Any])
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])

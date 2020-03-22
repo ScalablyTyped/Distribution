@@ -6,7 +6,7 @@ import typings.react.mod.FunctionComponent
 import typings.react.mod.ReactElement
 import typings.react.mod.WeakValidationMap
 import typings.std.Partial
-import typings.styledComponents.AnonA
+import typings.styledComponents.AnonAs
 import typings.styledComponents.styledComponentsStrings.`object`
 import typings.styledComponents.styledComponentsStrings.`var`
 import typings.styledComponents.styledComponentsStrings.a
@@ -205,7 +205,7 @@ trait StyledComponentBase[C /* <: /* import warning: LimitUnionLength.leaveTypeR
   //   props: StyledComponentPropsWithAs<AsC, T, O, A>
   // ): React.ReactElement<StyledComponentPropsWithAs<AsC, T, O, A>>
   // TODO (TypeScript 3.2): delete this overload
-  def apply(props: (StyledComponentProps[C, T, O, A]) with AnonA): ReactElement = js.native
+  def apply(props: (StyledComponentProps[C, T, O, A]) with AnonAs): ReactElement = js.native
   def withComponent[WithC /* <: (ComponentClass[_, ComponentState]) | FunctionComponent[_] */](component: WithC): StyledComponent[WithC, T, O, A] = js.native
   @JSName("withComponent")
   def withComponent_WithC_AnyStyledComponent[WithC /* <: AnyStyledComponent */](component: WithC): StyledComponent[

@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact.choiceGroupTypesMod
 
-import typings.officeUiFabricReact.AnonHeightWidth
+import typings.officeUiFabricReact.AnonWidth
 import typings.officeUiFabricReact.choiceGroupOptionTypesMod.IChoiceGroupOptionStyleProps
 import typings.officeUiFabricReact.choiceGroupOptionTypesMod.IChoiceGroupOptionStyles
 import typings.officeUiFabricReact.iconTypesMod.IIconProps
@@ -98,7 +98,7 @@ trait IChoiceGroupOption extends InputHTMLAttributes[HTMLElement | HTMLInputElem
     * The width and height of the image in px for choice field.
     * @defaultvalue `{ width: 32, height: 32 }`
     */
-  var imageSize: js.UndefOr[AnonHeightWidth] = js.undefined
+  var imageSize: js.UndefOr[AnonWidth] = js.undefined
   /**
     * Image to display with this option.
     */
@@ -222,7 +222,7 @@ object IChoiceGroupOption {
     iconProps: IIconProps = null,
     id: String = null,
     imageAlt: String = null,
-    imageSize: AnonHeightWidth = null,
+    imageSize: AnonWidth = null,
     imageSrc: String = null,
     inlist: js.Any = null,
     inputMode: none | text | tel | url | email | numeric | decimal | search = null,

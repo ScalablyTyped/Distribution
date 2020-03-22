@@ -11,9 +11,9 @@ import scala.scalajs.js.annotation._
 trait TypeofpowerAssert extends js.Object {
   var AssertionError: Instantiable1[js.UndefOr[/* options */ AnonActual], typings.powerAssert.mod.AssertionError] = js.native
   @JSName("doesNotThrow")
-  var doesNotThrow_Original: FnBlock = js.native
+  var doesNotThrow_Original: FnCall = js.native
   @JSName("throws")
-  var throws_Original: FnBlock = js.native
+  var throws_Original: FnCall = js.native
   def apply(value: js.Any): Unit = js.native
   def apply(value: js.Any, message: String): Unit = js.native
   def customize(options: Options): /* import warning: importer.ImportType#apply Failed type conversion: typeof assert */ js.Any = js.native

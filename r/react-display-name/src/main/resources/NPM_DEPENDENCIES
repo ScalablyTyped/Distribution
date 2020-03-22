@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-display-name" : "0.2.4"
+      "react-display-name" : "0.2.5"
     }
   ],
   "test-dependencies" : [
     {
-      "react-display-name" : "0.2.4"
+      "react-display-name" : "0.2.5"
     }
   ],
   "compile-devDependencies" : [

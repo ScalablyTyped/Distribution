@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "app-builder-lib" : "21.2.0"
+      "app-builder-lib" : "22.3.2"
     }
   ],
   "test-dependencies" : [
     {
-      "app-builder-lib" : "21.2.0"
+      "app-builder-lib" : "22.3.2"
     }
   ],
   "compile-devDependencies" : [

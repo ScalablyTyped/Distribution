@@ -11,7 +11,7 @@ object variableMod extends js.Object {
   @js.native
   trait VariableExt extends Variable {
     def toCanonical(): String = js.native
-    def toJSON(): AnonTermTypeValuePropType = js.native
+    def toJSON(): AnonTermTypePropType = js.native
   }
   
 }

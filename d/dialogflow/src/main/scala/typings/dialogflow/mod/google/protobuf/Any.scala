@@ -23,7 +23,7 @@ class Any () extends IAny {
   var type_url_Any: String = js.native
   /** Any value. */
   @JSName("value")
-  var value_Any: Uint8Array = js.native
+  var value_Any: Uint8Array | String = js.native
   /**
     * Converts this Any to JSON.
     * @returns JSON object

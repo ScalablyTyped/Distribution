@@ -56,8 +56,8 @@ object buttonMod extends js.Object {
       */
     var fill: js.UndefOr[clear | outline | solid | default] = js.native
     var handleClick: js.Any = js.native
-    val hasIconOnly: js.Any = js.native
     var inItem: js.Any = js.native
+    var inListHeader: js.Any = js.native
     var inToolbar: js.Any = js.native
     /**
       * Emitted when the button loses focus.
@@ -69,7 +69,6 @@ object buttonMod extends js.Object {
     var ionFocus: EventEmitter[Unit] = js.native
     var onBlur: js.Any = js.native
     var onFocus: js.Any = js.native
-    val rippleType: js.Any = js.native
     /**
       * When using a router, it specifies the transition direction when navigating to
       * another page using `href`.
@@ -91,8 +90,10 @@ object buttonMod extends js.Object {
     override var `type`: submit | reset | button = js.native
     @JSName("componentWillLoad")
     def componentWillLoad_MButton(): Unit = js.native
+    /* private */ def hasIconOnly(): js.Any = js.native
     @JSName("render")
     def render_MButton(): js.Any = js.native
+    /* private */ def rippleType(): js.Any = js.native
   }
   
 }

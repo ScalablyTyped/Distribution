@@ -56,5 +56,10 @@ class ContentFactory_ () extends IContentFactory {
     */
   /* CompleteClass */
   override def createStdin(options: typings.jupyterlabOutputarea.widgetMod.Stdin.IOptions): IStdin = js.native
+  /**
+    * The readonly editor factory that create code editors
+    */
+  @JSName("editorFactory")
+  def editorFactory_MContentFactory_(): Factory = js.native
 }
 

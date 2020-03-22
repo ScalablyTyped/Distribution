@@ -1,7 +1,7 @@
 package typings.firefoxWebextBrowser.browser.bookmarks
 
 import org.scalablytyped.runtime.TopLevel
-import typings.firefoxWebextBrowser.AnonIndexNode
+import typings.firefoxWebextBrowser.AnonNode
 import typings.firefoxWebextBrowser.WebExtEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,5 +14,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("browser.bookmarks.onRemoved")
 @js.native
 object onRemoved
-  extends TopLevel[WebExtEvent[js.Function2[/* id */ String, /* removeInfo */ AnonIndexNode, Unit]]]
+  extends TopLevel[WebExtEvent[js.Function2[/* id */ String, /* removeInfo */ AnonNode, Unit]]]
 

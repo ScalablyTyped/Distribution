@@ -2,7 +2,7 @@ package typings.reactNativeAutocompleteInput.mod
 
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
-import typings.reactNative.AnonEndStart
+import typings.reactNative.AnonStart
 import typings.reactNative.mod.AccessibilityActionEvent
 import typings.reactNative.mod.AccessibilityActionInfo
 import typings.reactNative.mod.AccessibilityRole
@@ -277,7 +277,7 @@ object AutocompleteProps {
     scrollEnabled: js.UndefOr[Boolean] = js.undefined,
     secureTextEntry: js.UndefOr[Boolean] = js.undefined,
     selectTextOnFocus: js.UndefOr[Boolean] = js.undefined,
-    selection: AnonEndStart = null,
+    selection: AnonStart = null,
     selectionColor: String = null,
     selectionState: DocumentSelectionState = null,
     shouldRasterizeIOS: js.UndefOr[Boolean] = js.undefined,

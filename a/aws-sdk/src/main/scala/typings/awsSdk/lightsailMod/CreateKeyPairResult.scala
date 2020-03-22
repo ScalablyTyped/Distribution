@@ -11,7 +11,7 @@ trait CreateKeyPairResult extends js.Object {
     */
   var keyPair: js.UndefOr[KeyPair] = js.native
   /**
-    * An array of key-value pairs containing information about the results of your create key pair request.
+    * An array of objects that describe the result of the action, such as the status of the request, the time stamp of the request, and the resources affected by the request.
     */
   var operation: js.UndefOr[Operation] = js.native
   /**

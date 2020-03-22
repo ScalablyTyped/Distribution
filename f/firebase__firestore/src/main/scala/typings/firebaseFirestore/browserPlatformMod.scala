@@ -4,10 +4,8 @@ import typings.firebaseFirestore.connectionMod.Connection
 import typings.firebaseFirestore.connectivityMonitorMod.ConnectivityMonitor
 import typings.firebaseFirestore.databaseInfoMod.DatabaseId
 import typings.firebaseFirestore.databaseInfoMod.DatabaseInfo
-import typings.firebaseFirestore.firebaseFirestoreStrings._empty
 import typings.firebaseFirestore.platformMod.Platform
 import typings.firebaseFirestore.serializerMod.JsonProtoSerializer
-import typings.firebaseFirestore.typesMod.ProtoByteString
 import typings.std.Document_
 import typings.std.Window_
 import scala.scalajs.js
@@ -25,10 +23,6 @@ object browserPlatformMod extends js.Object {
     /** The Platform's 'document' implementation or null if not available. */
     /* CompleteClass */
     override val document: Document_ | Null = js.native
-    /* CompleteClass */
-    override val emptyByteString: ProtoByteString = js.native
-    @JSName("emptyByteString")
-    val emptyByteString_BrowserPlatform: _empty = js.native
     /** The Platform's 'window' implementation or null if not available. */
     /* CompleteClass */
     override val window: Window_ | Null = js.native

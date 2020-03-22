@@ -1,7 +1,7 @@
 package typings.ckeditorCkeditor5Core.mod.editor
 
+import typings.ckeditorCkeditor5Core.Anon0
 import typings.ckeditorCkeditor5Core.AnonPriority
-import typings.ckeditorCkeditor5Core.AnonPriorityNumber
 import typings.ckeditorCkeditor5Core.mod.ComponentFactory
 import typings.ckeditorCkeditor5Core.mod.EditorUIView
 import typings.ckeditorCkeditor5Utils.mod.Emitter
@@ -21,8 +21,8 @@ class EditorUI protected () extends Emitter {
   val view: EditorUIView = js.native
   def destroy(): Unit = js.native
   def listenTo(emitter: Emitter, event: String, callback: js.Function, options: AnonPriority): Unit = js.native
-  def on(event: String, callback: js.Function, options: AnonPriorityNumber): Unit = js.native
-  def once(event: String, callback: js.Function, options: AnonPriorityNumber): Unit = js.native
+  def on(event: String, callback: js.Function, options: Anon0): Unit = js.native
+  def once(event: String, callback: js.Function, options: Anon0): Unit = js.native
   def update(): Unit = js.native
 }
 

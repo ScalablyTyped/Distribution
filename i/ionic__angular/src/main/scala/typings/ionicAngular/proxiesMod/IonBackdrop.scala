@@ -10,7 +10,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ionic/angular/dist/directives/proxies", "IonBackdrop")
+@JSImport("@ionic/angular/directives/proxies", "IonBackdrop")
 @js.native
 class IonBackdrop protected ()
   extends typings.ionicCore.componentsMod.Components.IonBackdrop {

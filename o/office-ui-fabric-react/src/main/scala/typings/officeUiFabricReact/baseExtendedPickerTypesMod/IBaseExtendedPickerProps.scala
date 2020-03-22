@@ -1,9 +1,9 @@
 package typings.officeUiFabricReact.baseExtendedPickerTypesMod
 
+import typings.fluentuiReactFocus.focusZoneTypesMod.IFocusZoneProps
 import typings.officeUiFabricReact.baseFloatingPickerTypesMod.IBaseFloatingPickerProps
 import typings.officeUiFabricReact.basePickerTypesMod.IInputProps
 import typings.officeUiFabricReact.baseSelectedItemsListTypesMod.IBaseSelectedItemsListProps
-import typings.officeUiFabricReact.focusZoneTypesMod.IFocusZoneProps
 import typings.officeUiFabricReact.libAutofillMod.Autofill
 import typings.react.mod.ComponentType
 import typings.react.mod.FocusEvent

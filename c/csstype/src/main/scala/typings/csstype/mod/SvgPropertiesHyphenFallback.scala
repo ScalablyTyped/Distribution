@@ -41,7 +41,7 @@ trait SvgPropertiesHyphenFallback[TLength] extends js.Object {
   var `marker-mid`: js.UndefOr[MarkerMidProperty | js.Array[MarkerMidProperty]] = js.undefined
   var `marker-start`: js.UndefOr[MarkerStartProperty | js.Array[MarkerStartProperty]] = js.undefined
   var mask: js.UndefOr[MaskProperty[TLength] | js.Array[MaskProperty[TLength]]] = js.undefined
-  var opacity: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
+  var opacity: js.UndefOr[OpacityProperty | js.Array[OpacityProperty]] = js.undefined
   var overflow: js.UndefOr[OverflowProperty | js.Array[OverflowProperty]] = js.undefined
   var `paint-order`: js.UndefOr[PaintOrderProperty | js.Array[PaintOrderProperty]] = js.undefined
   var `pointer-events`: js.UndefOr[PointerEventsProperty | js.Array[PointerEventsProperty]] = js.undefined
@@ -57,7 +57,7 @@ trait SvgPropertiesHyphenFallback[TLength] extends js.Object {
   var `stroke-opacity`: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
   var `stroke-width`: js.UndefOr[StrokeWidthProperty[TLength] | js.Array[StrokeWidthProperty[TLength]]] = js.undefined
   var `text-anchor`: js.UndefOr[TextAnchorProperty | js.Array[TextAnchorProperty]] = js.undefined
-  var `text-decoration`: js.UndefOr[TextDecorationProperty | js.Array[TextDecorationProperty]] = js.undefined
+  var `text-decoration`: js.UndefOr[TextDecorationProperty[TLength] | js.Array[TextDecorationProperty[TLength]]] = js.undefined
   var `text-rendering`: js.UndefOr[TextRenderingProperty | js.Array[TextRenderingProperty]] = js.undefined
   var `unicode-bidi`: js.UndefOr[UnicodeBidiProperty | js.Array[UnicodeBidiProperty]] = js.undefined
   var `vector-effect`: js.UndefOr[VectorEffectProperty | js.Array[VectorEffectProperty]] = js.undefined
@@ -106,7 +106,7 @@ object SvgPropertiesHyphenFallback {
     `marker-mid`: MarkerMidProperty | js.Array[MarkerMidProperty] = null,
     `marker-start`: MarkerStartProperty | js.Array[MarkerStartProperty] = null,
     mask: MaskProperty[TLength] | js.Array[MaskProperty[TLength]] = null,
-    opacity: GlobalsNumber | js.Array[GlobalsNumber] = null,
+    opacity: OpacityProperty | js.Array[OpacityProperty] = null,
     overflow: OverflowProperty | js.Array[OverflowProperty] = null,
     `paint-order`: PaintOrderProperty | js.Array[PaintOrderProperty] = null,
     `pointer-events`: PointerEventsProperty | js.Array[PointerEventsProperty] = null,
@@ -122,7 +122,7 @@ object SvgPropertiesHyphenFallback {
     `stroke-opacity`: GlobalsNumber | js.Array[GlobalsNumber] = null,
     `stroke-width`: StrokeWidthProperty[TLength] | js.Array[StrokeWidthProperty[TLength]] = null,
     `text-anchor`: TextAnchorProperty | js.Array[TextAnchorProperty] = null,
-    `text-decoration`: TextDecorationProperty | js.Array[TextDecorationProperty] = null,
+    `text-decoration`: TextDecorationProperty[TLength] | js.Array[TextDecorationProperty[TLength]] = null,
     `text-rendering`: TextRenderingProperty | js.Array[TextRenderingProperty] = null,
     `unicode-bidi`: UnicodeBidiProperty | js.Array[UnicodeBidiProperty] = null,
     `vector-effect`: VectorEffectProperty | js.Array[VectorEffectProperty] = null,

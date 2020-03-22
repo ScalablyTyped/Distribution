@@ -3,6 +3,7 @@ package typings.cathoQuantum
 import typings.cathoQuantum.checkboxMod.CheckboxButtonProps
 import typings.cathoQuantum.iconButtonMod.IconButtonProps
 import typings.cathoQuantum.radioGroupMod.RadioButtonProps
+import typings.react.mod.ComponentType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,6 +25,14 @@ trait cathoQuantumProps {
   @scala.inline
   def CardProps: AnonThemeAnonColorsObject.type = typings.cathoQuantum.AnonThemeAnonColorsObject
   type CardProps = AnonThemeAnonColorsObject
+  type CardContentProps[P] = ComponentType[P]
+  type CardDescriptionProps[P] = ComponentType[P]
+  type CardFooterProps[P] = ComponentType[P]
+  type CardHeaderProps[P] = ComponentType[P]
+  type CardHeaderTextProps[P] = ComponentType[P]
+  type CardMediaProps[P] = ComponentType[P]
+  type CardThumbnailProps[P] = ComponentType[P]
+  type CardTitleProps[P] = ComponentType[P]
   @scala.inline
   def CheckboxProps: typings.cathoQuantum.checkboxMod.CheckboxProps.type = typings.cathoQuantum.checkboxMod.CheckboxProps
   type CheckboxProps[T] = typings.cathoQuantum.checkboxMod.CheckboxProps[T]

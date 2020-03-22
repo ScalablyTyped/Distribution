@@ -1,6 +1,6 @@
 package typings.gapiClientPlus.gapi.client.plus
 
-import typings.gapiClientPlus.AnonFormatted
+import typings.gapiClientPlus.AnonFormattedString
 import typings.gapiClientPlus.AnonLatitude
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait Place extends js.Object {
   /** The physical address of the place. */
-  var address: js.UndefOr[AnonFormatted] = js.undefined
+  var address: js.UndefOr[AnonFormattedString] = js.undefined
   /** The display name of the place. */
   var displayName: js.UndefOr[String] = js.undefined
   /** The id of the place. */
@@ -22,7 +22,7 @@ trait Place extends js.Object {
 object Place {
   @scala.inline
   def apply(
-    address: AnonFormatted = null,
+    address: AnonFormattedString = null,
     displayName: String = null,
     id: String = null,
     kind: String = null,

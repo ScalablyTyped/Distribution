@@ -45,7 +45,7 @@ object cryptoMod extends js.Object {
        with Instantiable1[/* secret */ SourceData, Hash]
   
   type SourceData = String | ArrayBuffer | ArrayBufferView
-  type StreamHasher[StreamType] = js.Function2[/* hashCtor */ AnonHash, /* stream */ StreamType, js.Promise[Uint8Array]]
+  type StreamHasher[StreamType] = js.Function2[/* hashCtor */ AnonInstantiable, /* stream */ StreamType, js.Promise[Uint8Array]]
   type randomValues = js.Function1[/* byteLength */ Double, js.Promise[Uint8Array]]
 }
 

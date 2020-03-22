@@ -57,11 +57,11 @@ object childProcessMod extends js.Object {
       Unit
     ]
   ): ChildProcess = js.native
-  def execFile(file: String, args: js.Array[String], options: AnonCustomFdsCwd): ChildProcess = js.native
+  def execFile(file: String, args: js.Array[String], options: AnonCwd): ChildProcess = js.native
   def execFile(
     file: String,
     args: js.Array[String],
-    options: AnonCustomFdsCwd,
+    options: AnonCwd,
     callback: js.Function3[
       /* error */ Error, 
       /* stdout */ typings.node.Buffer, 
@@ -80,12 +80,12 @@ object childProcessMod extends js.Object {
   ): ChildProcess = js.native
   def execFileSync(command: String): ChildProcess = js.native
   def execFileSync(command: String, args: js.Array[String]): ChildProcess = js.native
-  def execFileSync(command: String, args: js.Array[String], options: AnonCwdEncoding): ChildProcess = js.native
+  def execFileSync(command: String, args: js.Array[String], options: AnonEnv): ChildProcess = js.native
   def execSync(command: String): ChildProcess = js.native
-  def execSync(command: String, options: AnonCwdEncoding): ChildProcess = js.native
+  def execSync(command: String, options: AnonEnv): ChildProcess = js.native
   def fork(modulePath: String): ChildProcess = js.native
   def fork(modulePath: String, args: js.Array[String]): ChildProcess = js.native
-  def fork(modulePath: String, args: js.Array[String], options: AnonCwd): ChildProcess = js.native
+  def fork(modulePath: String, args: js.Array[String], options: AnonEncoding): ChildProcess = js.native
   def spawn(command: String): ChildProcess = js.native
   def spawn(command: String, args: js.Array[String]): ChildProcess = js.native
   def spawn(command: String, args: js.Array[String], options: AnonCustom): ChildProcess = js.native

@@ -14,6 +14,7 @@ import typings.cypress.cypressStrings.logColonchanged
 import typings.cypress.cypressStrings.scrolled
 import typings.cypress.cypressStrings.testColonafterColonrun
 import typings.cypress.cypressStrings.testColonbeforeColonrun
+import typings.cypress.cypressStrings.testColonbeforeColonrunColonasync
 import typings.cypress.cypressStrings.uncaughtColonexception
 import typings.cypress.cypressStrings.urlColonchanged
 import typings.cypress.cypressStrings.viewportColonchanged
@@ -90,6 +91,13 @@ trait Actions extends js.Object {
   def apply(
     action: testColonafterColonrun,
     fn: js.Function2[/* attributes */ ObjectLike, /* test */ ITest, Unit]
+  ): Unit = js.native
+  /**
+    * Fires before the test and all **before** and **beforeEach** hooks run. If a `Promise` is returned, it will be awaited before proceeding.
+    */
+  def apply(
+    action: testColonbeforeColonrunColonasync,
+    fn: js.Function2[/* attributes */ ObjectLike, /* test */ ITest, Unit | js.Promise[_]]
   ): Unit = js.native
   /**
     * Fires before the test and all **before** and **beforeEach** hooks run.

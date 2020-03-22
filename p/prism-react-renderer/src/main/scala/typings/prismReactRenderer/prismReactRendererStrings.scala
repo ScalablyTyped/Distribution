@@ -34,9 +34,6 @@ object prismReactRendererStrings {
   sealed trait `900` extends js.Object
   
   @js.native
-  sealed trait LanguageDict extends js.Object
-  
-  @js.native
   sealed trait actionscript extends Language
   
   @js.native
@@ -171,8 +168,6 @@ object prismReactRendererStrings {
   def `800`: `800` = "800".asInstanceOf[`800`]
   @scala.inline
   def `900`: `900` = "900".asInstanceOf[`900`]
-  @scala.inline
-  def LanguageDict: LanguageDict = "LanguageDict".asInstanceOf[LanguageDict]
   @scala.inline
   def actionscript: actionscript = "actionscript".asInstanceOf[actionscript]
   @scala.inline

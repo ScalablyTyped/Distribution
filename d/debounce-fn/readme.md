@@ -1,7 +1,7 @@
 
 # Scala.js typings for debounce-fn
 
-Typings are for version 3.0.1
+Typings are for version 4.0.0
 
 ## Library description:
 Debounce a function

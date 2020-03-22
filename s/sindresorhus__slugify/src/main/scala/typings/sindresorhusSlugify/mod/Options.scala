@@ -6,8 +6,9 @@ import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
   /**
-  		Specifying this only replaces the default if you set an item with the same key, like `&`.
+  		Add your own custom replacements.
   		The replacements are run on the original string before any other transformations.
+  		This only overrides a default replacement if you set an item with the same key, like `&`.
   		Add a leading and trailing space to the replacement to have it separated by dashes.
   		@default [ ['&', ' and '], ['🦄', ' unicorn '], ['♥', ' love '] ]
   		@example
@@ -25,6 +26,12 @@ trait Options extends js.Object {
   			]
   		});
   		//=> 'foo-at-unicorn'
+  		slugify('I love 🐶', {
+  			customReplacements: [
+  				['🐶', 'dogs']
+  			]
+  		});
+  		//=> 'i-love-dogs'
   		```
   		*/
   val customReplacements: js.UndefOr[js.Array[js.Tuple2[String, String]]] = js.undefined
@@ -55,6 +62,20 @@ trait Options extends js.Object {
   		*/
   val lowercase: js.UndefOr[Boolean] = js.undefined
   /**
+  		If your string starts with an underscore, it will be preserved in the slugified string.
+  		Sometimes leading underscores are intentional, for example, filenames representing hidden paths on a website.
+  		@default false
+  		@example
+  		```
+  		import slugify = require('@sindresorhus/slugify');
+  		slugify('_foo_bar');
+  		//=> 'foo-bar'
+  		slugify('_foo_bar', {preserveLeadingUnderscore: true});
+  		//=> '_foo-bar'
+  		```
+  		*/
+  val preserveLeadingUnderscore: js.UndefOr[Boolean] = js.undefined
+  /**
   		@default '-'
   		@example
   		```
@@ -74,12 +95,14 @@ object Options {
     customReplacements: js.Array[js.Tuple2[String, String]] = null,
     decamelize: js.UndefOr[Boolean] = js.undefined,
     lowercase: js.UndefOr[Boolean] = js.undefined,
+    preserveLeadingUnderscore: js.UndefOr[Boolean] = js.undefined,
     separator: String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (customReplacements != null) __obj.updateDynamic("customReplacements")(customReplacements.asInstanceOf[js.Any])
     if (!js.isUndefined(decamelize)) __obj.updateDynamic("decamelize")(decamelize.asInstanceOf[js.Any])
     if (!js.isUndefined(lowercase)) __obj.updateDynamic("lowercase")(lowercase.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveLeadingUnderscore)) __obj.updateDynamic("preserveLeadingUnderscore")(preserveLeadingUnderscore.asInstanceOf[js.Any])
     if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

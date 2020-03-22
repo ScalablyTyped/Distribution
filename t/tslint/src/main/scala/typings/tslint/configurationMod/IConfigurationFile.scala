@@ -1,9 +1,8 @@
 package typings.tslint.configurationMod
 
 import typings.std.Map
-import typings.std.Partial
-import typings.tslint.AnonExclude
-import typings.tslint.ruleMod.IOptions
+import typings.tslint.PartialIOptions
+import typings.tslint.PartialexcludeArraystring
 import typings.tslint.ruleMod.RuleSeverity
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -25,15 +24,15 @@ trait IConfigurationFile extends js.Object {
   /**
     * Rules that are used to lint to JavaScript files.
     */
-  var jsRules: Map[String, Partial[IOptions]]
+  var jsRules: Map[String, PartialIOptions]
   /**
     * A subset of the CLI options.
     */
-  var linterOptions: js.UndefOr[Partial[AnonExclude]] = js.undefined
+  var linterOptions: js.UndefOr[PartialexcludeArraystring] = js.undefined
   /**
     * Rules that are used to lint TypeScript files.
     */
-  var rules: Map[String, Partial[IOptions]]
+  var rules: Map[String, PartialIOptions]
   /**
     * Directories containing custom rules. Resolved using node module semantics.
     */
@@ -44,11 +43,11 @@ object IConfigurationFile {
   @scala.inline
   def apply(
     `extends`: js.Array[String],
-    jsRules: Map[String, Partial[IOptions]],
-    rules: Map[String, Partial[IOptions]],
+    jsRules: Map[String, PartialIOptions],
+    rules: Map[String, PartialIOptions],
     rulesDirectory: js.Array[String],
     defaultSeverity: RuleSeverity = null,
-    linterOptions: Partial[AnonExclude] = null
+    linterOptions: PartialexcludeArraystring = null
   ): IConfigurationFile = {
     val __obj = js.Dynamic.literal(jsRules = jsRules.asInstanceOf[js.Any], rules = rules.asInstanceOf[js.Any], rulesDirectory = rulesDirectory.asInstanceOf[js.Any])
     __obj.updateDynamic("extends")(`extends`.asInstanceOf[js.Any])

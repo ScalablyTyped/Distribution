@@ -7,10 +7,14 @@ import scala.scalajs.js.annotation._
 trait LoginItemSettingsOptions extends js.Object {
   /**
     * The command-line arguments to compare against. Defaults to an empty array.
+    *
+    * @platform win32
     */
   var args: js.UndefOr[js.Array[String]] = js.undefined
   /**
-    * The executable path to compare against. Defaults to process.execPath.
+    * The executable path to compare against. Defaults to `process.execPath`.
+    *
+    * @platform win32
     */
   var path: js.UndefOr[String] = js.undefined
 }

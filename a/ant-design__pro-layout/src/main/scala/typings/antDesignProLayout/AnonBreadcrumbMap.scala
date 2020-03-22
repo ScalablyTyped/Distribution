@@ -10,14 +10,14 @@ import scala.scalajs.js.annotation._
 
 trait AnonBreadcrumbMap extends js.Object {
   var breadcrumbMap: js.UndefOr[Map[String, MenuDataItem]] = js.undefined
-  var location: js.UndefOr[Location[PoorMansUnknown] | AnonPathnameString] = js.undefined
+  var location: js.UndefOr[Location[PoorMansUnknown] | Anon0] = js.undefined
 }
 
 object AnonBreadcrumbMap {
   @scala.inline
   def apply(
     breadcrumbMap: Map[String, MenuDataItem] = null,
-    location: Location[PoorMansUnknown] | AnonPathnameString = null
+    location: Location[PoorMansUnknown] | Anon0 = null
   ): AnonBreadcrumbMap = {
     val __obj = js.Dynamic.literal()
     if (breadcrumbMap != null) __obj.updateDynamic("breadcrumbMap")(breadcrumbMap.asInstanceOf[js.Any])

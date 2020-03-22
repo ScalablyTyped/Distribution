@@ -1,6 +1,6 @@
 package typings.reactOnsenui.mod
 
-import typings.reactOnsenui.HTMLAttributesidclassNamestylemodifierstringdisablCheckedClassName
+import typings.reactOnsenui.HTMLAttributesidclassNameInputId
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-onsenui", "Checkbox")
 @js.native
 class Checkbox ()
-  extends typings.react.mod.Component[HTMLAttributesidclassNamestylemodifierstringdisablCheckedClassName, js.Any, js.Any]
+  extends typings.react.mod.Component[HTMLAttributesidclassNameInputId, js.Any, js.Any]
 

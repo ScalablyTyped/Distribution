@@ -39,9 +39,9 @@ object linterMod extends js.Object {
   object Linter extends js.Object {
     var VERSION: String = js.native
     @JSName("findConfigurationPath")
-    var findConfigurationPath_Original: FnInputFilePath = js.native
+    var findConfigurationPath_Original: FnCallSuppliedConfigFilePathInputFilePath = js.native
     @JSName("findConfiguration")
-    var findConfiguration_Original: FnConfigFile = js.native
+    var findConfiguration_Original: FnCall = js.native
     @JSName("getRulesDirectories")
     var getRulesDirectories_Original: js.Function2[
         /* directories */ js.UndefOr[String | js.Array[String]], 

@@ -21,7 +21,7 @@ object commentsCommentMod extends js.Object {
     def getTag(tagName: String, paramName: String): js.UndefOr[CommentTag] = js.native
     def hasTag(tagName: String): Boolean = js.native
     def hasVisibleComponent(): Boolean = js.native
-    def toObject(): js.Any = js.native
+    def removeTags(tagName: String): Unit = js.native
   }
   
 }

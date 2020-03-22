@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object groupBadgesMod extends js.Object {
   @js.native
-  class GroupBadges () extends ResourceBadges {
+  class GroupBadges protected () extends ResourceBadges {
     def this(options: BaseServiceOptions) = this()
   }
   

@@ -8,6 +8,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class Interpolation protected ()
   extends typings.angularCompiler.astMod.Interpolation {
-  def this(span: typings.angularCompiler.astMod.ParseSpan, strings: js.Array[_], expressions: js.Array[_]) = this()
+  def this(
+    span: typings.angularCompiler.astMod.ParseSpan,
+    sourceSpan: typings.angularCompiler.astMod.AbsoluteSourceSpan,
+    strings: js.Array[_],
+    expressions: js.Array[_]
+  ) = this()
 }
 

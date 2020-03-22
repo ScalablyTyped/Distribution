@@ -1,7 +1,7 @@
 
 # Scala.js typings for router5
 
-Typings are for version 7.0.2
+Typings are for version 8.0.0
 
 ## Library description:
 A simple, powerful, view-agnostic, modular and extensible router

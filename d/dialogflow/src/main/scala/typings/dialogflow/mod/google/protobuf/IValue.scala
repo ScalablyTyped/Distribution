@@ -11,7 +11,7 @@ trait IValue extends js.Object {
   /** Value listValue */
   var listValue: js.UndefOr[IListValue | Null] = js.undefined
   /** Value nullValue */
-  var nullValue: js.UndefOr[NullValue | Null] = js.undefined
+  var nullValue: js.UndefOr[NullValue | String | Null] = js.undefined
   /** Value numberValue */
   var numberValue: js.UndefOr[Double | Null] = js.undefined
   /** Value stringValue */
@@ -25,7 +25,7 @@ object IValue {
   def apply(
     boolValue: js.UndefOr[Boolean] = js.undefined,
     listValue: IListValue = null,
-    nullValue: NullValue = null,
+    nullValue: NullValue | String = null,
     numberValue: Int | Double = null,
     stringValue: String = null,
     structValue: IStruct = null

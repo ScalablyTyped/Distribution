@@ -1,6 +1,6 @@
 package typings.sipJs.publisherOptionsMod
 
-import typings.sipJs.AnonFromDisplayNameFromTag
+import typings.sipJs.AnonFromTag
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,7 +20,7 @@ trait PublisherOptions extends js.Object {
     */
   var extraHeaders: js.UndefOr[js.Array[String]] = js.undefined
   /** @deprecated TODO: provide alternative. */
-  var params: js.UndefOr[AnonFromDisplayNameFromTag] = js.undefined
+  var params: js.UndefOr[AnonFromTag] = js.undefined
   /**
     * If set true, UA will gracefully unpublish for the event on UA close.
     * @defaultValue true
@@ -35,7 +35,7 @@ object PublisherOptions {
     contentType: String = null,
     expires: Int | Double = null,
     extraHeaders: js.Array[String] = null,
-    params: AnonFromDisplayNameFromTag = null,
+    params: AnonFromTag = null,
     unpublishOnClose: js.UndefOr[Boolean] = js.undefined
   ): PublisherOptions = {
     val __obj = js.Dynamic.literal()

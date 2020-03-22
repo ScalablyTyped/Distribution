@@ -1,6 +1,6 @@
 package typings.echarts.echarts.EChartOption.SeriesParallel
 
-import typings.echarts.AnonLineStyleAnonColorOpacityShadowBlur
+import typings.echarts.AnonLineStyleAnonShadowBlur
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,7 +28,7 @@ trait DataObject extends js.Object {
   /**
     * @see https://echarts.apache.org/en/option.html#series-parallel.data.emphasis
     */
-  var emphasis: js.UndefOr[AnonLineStyleAnonColorOpacityShadowBlur] = js.undefined
+  var emphasis: js.UndefOr[AnonLineStyleAnonShadowBlur] = js.undefined
   /**
     * Line style.
     *
@@ -125,7 +125,7 @@ object DataObject {
   @scala.inline
   def apply(
     color: String = null,
-    emphasis: AnonLineStyleAnonColorOpacityShadowBlur = null,
+    emphasis: AnonLineStyleAnonShadowBlur = null,
     lineStyle: js.Object = null,
     name: String = null,
     opacity: Int | Double = null,

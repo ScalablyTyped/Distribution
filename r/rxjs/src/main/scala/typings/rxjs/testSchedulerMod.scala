@@ -17,7 +17,7 @@ object testSchedulerMod extends js.Object {
   @js.native
   trait RunHelpers extends js.Object {
     @JSName("cold")
-    var cold_Original: FnError = js.native
+    var cold_Original: FnCallMarblesValuesError = js.native
     @JSName("expectObservable")
     var expectObservable_Original: js.Function2[
         /* observable */ Observable[_], 
@@ -32,7 +32,7 @@ object testSchedulerMod extends js.Object {
     @JSName("flush")
     var flush_Original: js.Function0[Unit] = js.native
     @JSName("hot")
-    var hot_Original: FnErrorMarble = js.native
+    var hot_Original: Fn0 = js.native
     def cold[T](marbles: String): ColdObservable[T] = js.native
     def cold[T](marbles: String, values: StringDictionary[T]): ColdObservable[T] = js.native
     def cold[T](marbles: String, values: StringDictionary[T], error: js.Any): ColdObservable[T] = js.native

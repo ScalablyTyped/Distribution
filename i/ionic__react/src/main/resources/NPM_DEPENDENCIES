@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@ionic/react" : "4.11.10"
+      "@ionic/react" : "5.0.4"
     }
   ],
   "test-dependencies" : [
     {
-      "@ionic/react" : "4.11.10"
+      "@ionic/react" : "5.0.4"
     }
   ],
   "compile-devDependencies" : [

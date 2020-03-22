@@ -17,7 +17,7 @@ object spriteMod extends js.Object {
     def this(material: SpriteMaterial) = this()
     var center: Vector2 = js.native
     var geometry: BufferGeometry = js.native
-    var isSprite: `true` = js.native
+    val isSprite: `true` = js.native
     var material: SpriteMaterial = js.native
     @JSName("type")
     var type_Sprite: typings.three.threeStrings.Sprite = js.native

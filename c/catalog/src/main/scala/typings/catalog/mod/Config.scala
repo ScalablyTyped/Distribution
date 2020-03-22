@@ -1,7 +1,7 @@
 package typings.catalog.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Partial
+import typings.catalog.PartialTheme
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ trait Config extends js.Object {
   var responsiveSizes: js.UndefOr[js.Array[ConfigResponsiveSize]] = js.undefined
   var scripts: js.UndefOr[js.Array[String]] = js.undefined
   var styles: js.UndefOr[js.Array[String]] = js.undefined
-  var theme: js.UndefOr[Partial[Theme]] = js.undefined
+  var theme: js.UndefOr[PartialTheme] = js.undefined
   var title: String
   var useBrowserHistory: js.UndefOr[Boolean] = js.undefined
 }
@@ -30,7 +30,7 @@ object Config {
     responsiveSizes: js.Array[ConfigResponsiveSize] = null,
     scripts: js.Array[String] = null,
     styles: js.Array[String] = null,
-    theme: Partial[Theme] = null,
+    theme: PartialTheme = null,
     useBrowserHistory: js.UndefOr[Boolean] = js.undefined
   ): Config = {
     val __obj = js.Dynamic.literal(pages = pages.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])

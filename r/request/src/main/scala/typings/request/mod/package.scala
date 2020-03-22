@@ -12,12 +12,6 @@ package object mod {
   type Options = typings.request.mod.OptionsWithUri | typings.request.mod.OptionsWithUrl
   type OptionsWithUri = typings.request.mod.UriOptions with typings.request.mod.CoreOptions
   type OptionsWithUrl = typings.request.mod.UrlOptions with typings.request.mod.CoreOptions
-  /* Rewritten from type alias, can be one of: 
-    - typings.request.requestBooleans.`false`
-    - (org.scalablytyped.runtime.StringDictionary[typings.node.httpMod.Agent | typings.node.httpsMod.Agent]) with typings.request.mod.ExtraPoolOptions
-    - typings.request.mod.ExtraPoolOptions
-  */
-  type PoolOptions = typings.request.mod._PoolOptions | ((org.scalablytyped.runtime.StringDictionary[typings.node.httpMod.Agent | typings.node.httpsMod.Agent]) with typings.request.mod.ExtraPoolOptions)
   type RequestCallback = js.Function3[
     /* error */ js.Any, 
     /* response */ typings.request.mod.Response, 

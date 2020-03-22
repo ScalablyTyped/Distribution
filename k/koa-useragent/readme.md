@@ -1,7 +1,7 @@
 
 # Scala.js typings for koa-useragent
 
-Typings are for version 2.1.3
+Typings are for version 4.0.0
 
 ## Library description:
 Koa.js middleware for useragent detection

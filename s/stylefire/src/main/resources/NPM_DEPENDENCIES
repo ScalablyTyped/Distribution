@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "stylefire" : "7.0.1"
+      "stylefire" : "7.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "stylefire" : "7.0.1"
+      "stylefire" : "7.0.2"
     }
   ],
   "compile-devDependencies" : [

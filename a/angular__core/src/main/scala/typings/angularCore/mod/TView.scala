@@ -16,13 +16,15 @@ trait TView extends js.Object {
     * starts to store bindings only. Saving this value ensures that we
     * will begin reading bindings at the correct point in the array when
     * we are in update mode.
+    *
+    * -1 means that it has not been initialized.
     */
   var bindingStartIndex: Double
   /**
     * This is a blueprint used to generate LView instances for this TView. Copying this
     * blueprint is faster than creating a new LView from scratch.
     */
-  var blueprint: ɵangularPackagesCoreCoreBj
+  var blueprint: ɵangularPackagesCoreCoreBo
   /**
     * When a view is destroyed, listeners need to be released and outputs need to be
     * unsubscribed. This cleanup array stores both listener data (in chunks of 4)
@@ -57,6 +59,11 @@ trait TView extends js.Object {
     *
     */
   var components: js.Array[Double] | Null
+  /**
+    * Array of constants for the view. Includes attribute arrays, local definition arrays etc.
+    * Used for directive matching, attribute bindings, local definitions and more.
+    */
+  var consts: TConstants | Null
   /**
     * Array of ngAfterContentChecked hooks that should be executed for this view in update
     * mode.
@@ -109,7 +116,7 @@ trait TView extends js.Object {
   /**
     * The index where the "expando" section of `LView` begins. The expando
     * section contains injectors, directive instances, and host binding values.
-    * Unlike the "consts" and "vars" sections of `LView`, the length of this
+    * Unlike the "decls" and "vars" sections of `LView`, the length of this
     * section cannot be calculated at compile-time because directives are matched
     * at runtime to preserve locality.
     *
@@ -121,8 +128,20 @@ trait TView extends js.Object {
     * A reference to the first child node located in the view.
     */
   var firstChild: TNode | Null
-  /** Whether or not this template has been processed. */
-  var firstTemplatePass: Boolean
+  /** Whether or not this template has been processed in creation mode. */
+  var firstCreatePass: Boolean
+  /**
+    *  Whether or not this template has been processed in update mode (e.g. change detected)
+    *
+    * `firstUpdatePass` is used by styling to set up `TData` to contain metadata about the styling
+    * instructions. (Mainly to build up a linked list of styling priority order.)
+    *
+    * Typically this function gets cleared after first execution. If exception is thrown then this
+    * flag can remain turned un until there is first successful (no exception) pass. This means that
+    * individual styling instructions keep track of if they have already been added to the linked
+    * list to prevent double adding.
+    */
+  var firstUpdatePass: Boolean
   /**
     * ID for inline views to determine whether a view is the same as the previous view
     * in a certain position. If it's not, we know the new view needs to be inserted
@@ -146,7 +165,7 @@ trait TView extends js.Object {
     * different host TNodes, depending on where the component is being used. These host
     * TNodes cannot be shared (due to different indices, etc).
     */
-  var node: TViewNode | ɵangularPackagesCoreCoreBf | Null
+  var node: TViewNode | ɵangularPackagesCoreCoreBe | Null
   /**
     * Full registry of pipes that may be found in this view.
     *
@@ -200,6 +219,10 @@ trait TView extends js.Object {
     */
   var template: ComponentTemplate[js.Object] | Null
   /**
+    * Type of `TView` (`Root`|`Component`|`Embedded`).
+    */
+  var `type`: TViewType
+  /**
     * Array of ngAfterViewChecked hooks that should be executed for this view in
     * update mode.
     *
@@ -225,15 +248,18 @@ object TView {
   @scala.inline
   def apply(
     bindingStartIndex: Double,
-    blueprint: ɵangularPackagesCoreCoreBj,
+    blueprint: ɵangularPackagesCoreCoreBo,
     data: TData,
     expandoStartIndex: Double,
-    firstTemplatePass: Boolean,
+    firstCreatePass: Boolean,
+    firstUpdatePass: Boolean,
     id: Double,
     staticContentQueries: Boolean,
     staticViewQueries: Boolean,
+    `type`: TViewType,
     cleanup: js.Array[_] = null,
     components: js.Array[Double] = null,
+    consts: TConstants = null,
     contentCheckHooks: HookData = null,
     contentHooks: HookData = null,
     contentQueries: js.Array[Double] = null,
@@ -241,7 +267,7 @@ object TView {
     directiveRegistry: DirectiveDefList = null,
     expandoInstructions: ExpandoInstructions = null,
     firstChild: TNode = null,
-    node: TViewNode | ɵangularPackagesCoreCoreBf = null,
+    node: TViewNode | ɵangularPackagesCoreCoreBe = null,
     pipeRegistry: PipeDefList = null,
     preOrderCheckHooks: HookData = null,
     preOrderHooks: HookData = null,
@@ -252,9 +278,11 @@ object TView {
     viewHooks: HookData = null,
     viewQuery: (/* rf */ ɵRenderFlags, js.Object) => Unit = null
   ): TView = {
-    val __obj = js.Dynamic.literal(bindingStartIndex = bindingStartIndex.asInstanceOf[js.Any], blueprint = blueprint.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], expandoStartIndex = expandoStartIndex.asInstanceOf[js.Any], firstTemplatePass = firstTemplatePass.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], staticContentQueries = staticContentQueries.asInstanceOf[js.Any], staticViewQueries = staticViewQueries.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(bindingStartIndex = bindingStartIndex.asInstanceOf[js.Any], blueprint = blueprint.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], expandoStartIndex = expandoStartIndex.asInstanceOf[js.Any], firstCreatePass = firstCreatePass.asInstanceOf[js.Any], firstUpdatePass = firstUpdatePass.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], staticContentQueries = staticContentQueries.asInstanceOf[js.Any], staticViewQueries = staticViewQueries.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (cleanup != null) __obj.updateDynamic("cleanup")(cleanup.asInstanceOf[js.Any])
     if (components != null) __obj.updateDynamic("components")(components.asInstanceOf[js.Any])
+    if (consts != null) __obj.updateDynamic("consts")(consts.asInstanceOf[js.Any])
     if (contentCheckHooks != null) __obj.updateDynamic("contentCheckHooks")(contentCheckHooks.asInstanceOf[js.Any])
     if (contentHooks != null) __obj.updateDynamic("contentHooks")(contentHooks.asInstanceOf[js.Any])
     if (contentQueries != null) __obj.updateDynamic("contentQueries")(contentQueries.asInstanceOf[js.Any])

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/angular", "IonRange")
 @js.native
 class IonRange protected ()
-  extends typings.ionicAngular.distMod.IonRange {
+  extends typings.ionicAngular.proxiesMod.IonRange {
   def this(c: ChangeDetectorRef, r: ElementRef[_], z: NgZone) = this()
 }
 

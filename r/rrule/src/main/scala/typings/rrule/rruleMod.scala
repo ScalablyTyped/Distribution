@@ -3,7 +3,6 @@ package typings.rrule
 import typings.rrule.cacheMod.Cache
 import typings.rrule.cacheMod.CacheKeys
 import typings.rrule.i18nMod.Language
-import typings.rrule.iterresultMod.IterArgs
 import typings.rrule.rruleStrings.all
 import typings.rrule.rruleStrings.byeaster
 import typings.rrule.rruleStrings.byhour
@@ -33,7 +32,6 @@ import typings.rrule.typesMod.QueryMethodTypes
 import typings.rrule.typesMod.QueryMethods
 import typings.rrule.weekdayMod.Weekday
 import typings.std.Date
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,25 +44,25 @@ object rruleMod extends js.Object {
     var _cache: Cache | Null = js.native
     var _cacheGet: js.Any = js.native
     var options: ParsedOptions = js.native
-    var origOptions: Partial[Options] = js.native
+    var origOptions: PartialOptions = js.native
     def _cacheAdd(what: CacheKeys): Unit = js.native
     def _cacheAdd(what: CacheKeys, value: js.Array[Date]): Unit = js.native
-    def _cacheAdd(what: CacheKeys, value: js.Array[Date], args: Partial[IterArgs]): Unit = js.native
-    def _cacheAdd(what: CacheKeys, value: Null, args: Partial[IterArgs]): Unit = js.native
+    def _cacheAdd(what: CacheKeys, value: js.Array[Date], args: PartialIterArgs): Unit = js.native
+    def _cacheAdd(what: CacheKeys, value: Null, args: PartialIterArgs): Unit = js.native
     def _cacheAdd(what: CacheKeys, value: Date): Unit = js.native
-    def _cacheAdd(what: CacheKeys, value: Date, args: Partial[IterArgs]): Unit = js.native
+    def _cacheAdd(what: CacheKeys, value: Date, args: PartialIterArgs): Unit = js.native
     @JSName("_cacheAdd")
     def _cacheAdd_all(what: all): Unit = js.native
     @JSName("_cacheAdd")
     def _cacheAdd_all(what: all, value: js.Array[Date]): Unit = js.native
     @JSName("_cacheAdd")
-    def _cacheAdd_all(what: all, value: js.Array[Date], args: Partial[IterArgs]): Unit = js.native
+    def _cacheAdd_all(what: all, value: js.Array[Date], args: PartialIterArgs): Unit = js.native
     @JSName("_cacheAdd")
-    def _cacheAdd_all(what: all, value: Null, args: Partial[IterArgs]): Unit = js.native
+    def _cacheAdd_all(what: all, value: Null, args: PartialIterArgs): Unit = js.native
     @JSName("_cacheAdd")
     def _cacheAdd_all(what: all, value: Date): Unit = js.native
     @JSName("_cacheAdd")
-    def _cacheAdd_all(what: all, value: Date, args: Partial[IterArgs]): Unit = js.native
+    def _cacheAdd_all(what: all, value: Date, args: PartialIterArgs): Unit = js.native
     /* protected */ def _iter[M /* <: QueryMethodTypes */](iterResult: typings.rrule.iterresultMod.default[M]): IterResultType[M] = js.native
     /**
       * Returns the first recurrence after the given datetime instance.
@@ -113,8 +111,8 @@ object rruleMod extends js.Object {
   
   @js.native
   class default () extends RRule {
-    def this(options: Partial[Options]) = this()
-    def this(options: Partial[Options], noCache: Boolean) = this()
+    def this(options: PartialOptions) = this()
+    def this(options: PartialOptions, noCache: Boolean) = this()
     /* CompleteClass */
     override def after(date: Date, inc: Boolean): Date = js.native
     /* CompleteClass */
@@ -159,16 +157,16 @@ object rruleMod extends js.Object {
     val WEEKLY: String | Double = js.native
     val YEARLY: String | Double = js.native
     @JSName("optionsToString")
-    var optionsToString_Original: js.Function1[/* options */ Partial[Options], String] = js.native
+    var optionsToString_Original: js.Function1[/* options */ PartialOptions, String] = js.native
     @JSName("parseString")
-    var parseString_Original: js.Function1[/* rfcString */ String, Partial[Options]] = js.native
+    var parseString_Original: js.Function1[/* rfcString */ String, PartialOptions] = js.native
     def fromString(str: String): RRule = js.native
     def fromText(text: String): RRule = js.native
     def fromText(text: String, language: Language): RRule = js.native
-    def optionsToString(options: Partial[Options]): String = js.native
-    def parseString(rfcString: String): Partial[Options] = js.native
-    def parseText(text: String): Partial[Options] | Null = js.native
-    def parseText(text: String, language: Language): Partial[Options] | Null = js.native
+    def optionsToString(options: PartialOptions): String = js.native
+    def parseString(rfcString: String): PartialOptions = js.native
+    def parseText(text: String): PartialOptions | Null = js.native
+    def parseText(text: String, language: Language): PartialOptions | Null = js.native
   }
   
 }

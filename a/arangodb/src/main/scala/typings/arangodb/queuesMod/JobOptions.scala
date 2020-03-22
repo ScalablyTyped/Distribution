@@ -1,6 +1,6 @@
 package typings.arangodb.queuesMod
 
-import typings.arangodb.ArangoDB.Document
+import typings.arangodb.DocumentJob
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -22,12 +22,12 @@ object JobOptions {
   def apply(
     backOff: (js.Function1[/* failureCount */ Double, Double]) | Double = null,
     delayUntil: Double | Date = null,
-    failure: (/* result */ js.Any, /* jobData */ js.Any, /* job */ Document[Job]) => Unit = null,
+    failure: (/* result */ js.Any, /* jobData */ js.Any, /* job */ DocumentJob) => Unit = null,
     maxFailures: Int | Double = null,
     repeatDelay: Int | Double = null,
     repeatTimes: Int | Double = null,
     repeatUntil: Double | Date = null,
-    success: (/* result */ js.Any, /* jobData */ js.Any, /* job */ Document[Job]) => Unit = null
+    success: (/* result */ js.Any, /* jobData */ js.Any, /* job */ DocumentJob) => Unit = null
   ): JobOptions = {
     val __obj = js.Dynamic.literal()
     if (backOff != null) __obj.updateDynamic("backOff")(backOff.asInstanceOf[js.Any])

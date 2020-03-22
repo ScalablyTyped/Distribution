@@ -5,9 +5,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object jasmine {
-  // Use trick with prototype to allow abstract classes.
-  // More info: https://stackoverflow.com/a/38642922/2009373
-  type Constructor = js.Function with js.Object
   type CustomEqualityTester = js.Function2[/* first */ js.Any, /* second */ js.Any, scala.Boolean | scala.Unit]
   type CustomMatcherFactories = org.scalablytyped.runtime.StringDictionary[typings.jasmine.jasmine.CustomMatcherFactory]
   type CustomMatcherFactory = js.Function2[

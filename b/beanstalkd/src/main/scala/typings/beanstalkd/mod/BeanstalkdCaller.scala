@@ -15,11 +15,11 @@ trait BeanstalkdCaller extends js.Object {
   ] */](
     fn: K,
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type ArgsType<Required<BeanstalkdClient>[K]> is not an array type */ args: ArgsType[
-      /* import warning: importer.ImportType#apply Failed type conversion: std.Required<beanstalkd.beanstalkd.BeanstalkdClient>[K] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: beanstalkd.RequiredBeanstalkdClient[K] */ js.Any
     ]
   ): (MergePromise[
     ReturnType[
-      /* import warning: importer.ImportType#apply Failed type conversion: std.Required<beanstalkd.beanstalkd.BeanstalkdClient>[K] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: beanstalkd.RequiredBeanstalkdClient[K] */ js.Any
     ]
   ]) with BeanstalkdCaller
 }
@@ -28,10 +28,10 @@ object BeanstalkdCaller {
   @scala.inline
   def apply(
     call: (js.Any, ArgsType[
-      /* import warning: importer.ImportType#apply Failed type conversion: std.Required<beanstalkd.beanstalkd.BeanstalkdClient>[K] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: beanstalkd.RequiredBeanstalkdClient[K] */ js.Any
     ]) => (MergePromise[
       ReturnType[
-        /* import warning: importer.ImportType#apply Failed type conversion: std.Required<beanstalkd.beanstalkd.BeanstalkdClient>[K] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: beanstalkd.RequiredBeanstalkdClient[K] */ js.Any
       ]
     ]) with BeanstalkdCaller
   ): BeanstalkdCaller = {

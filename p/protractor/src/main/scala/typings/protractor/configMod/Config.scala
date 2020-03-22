@@ -1,10 +1,10 @@
 package typings.protractor.configMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.protractor.AnonArgsJvmArgs
-import typings.protractor.AnonBrowserName
 import typings.protractor.AnonDefaultTimeoutInterval
-import typings.protractor.AnonKey
+import typings.protractor.AnonDictkey
+import typings.protractor.AnonJvmArgs
+import typings.protractor.AnonReporter
 import typings.protractor.pluginsMod.PluginConfig
 import typings.protractor.protractorStrings.DEBUG
 import typings.protractor.protractorStrings.ERROR
@@ -113,7 +113,7 @@ trait Config
     *   seleniumAddress: 'http://localhost:4444/wd/hub'
     * }
     */
-  var capabilities: js.UndefOr[AnonBrowserName] = js.undefined
+  var capabilities: js.UndefOr[AnonDictkey] = js.undefined
   /**
     * ChromeDriver location is used to help find the chromedriver binary. This will be passed to the
     * Selenium jar as the system property webdriver.chrome.driver. If the value is not set when
@@ -237,7 +237,7 @@ trait Config
     * values set via the deprecated config values `seleniumPort` and
     * `seleniumArgs`.
     */
-  var localSeleniumStandaloneOpts: js.UndefOr[AnonArgsJvmArgs] = js.undefined
+  var localSeleniumStandaloneOpts: js.UndefOr[AnonJvmArgs] = js.undefined
   /**
     * Protractor log level
     *
@@ -255,7 +255,7 @@ trait Config
     *
     * See the full list at http://mochajs.org/
     */
-  var mochaOpts: js.UndefOr[AnonKey] = js.undefined
+  var mochaOpts: js.UndefOr[AnonReporter] = js.undefined
   var mockSelenium: js.UndefOr[Boolean] = js.undefined
   /**
     * If you would like to run more than one instance of WebDriver on the same
@@ -549,7 +549,7 @@ object Config {
     browserstackKey: String = null,
     browserstackProxy: String = null,
     browserstackUser: String = null,
-    capabilities: AnonBrowserName = null,
+    capabilities: AnonDictkey = null,
     chromeDriver: String = null,
     configDir: String = null,
     debug: js.UndefOr[Boolean] = js.undefined,
@@ -571,10 +571,10 @@ object Config {
     jvmArgs: js.Array[String] = null,
     kobitonKey: String = null,
     kobitonUser: String = null,
-    localSeleniumStandaloneOpts: AnonArgsJvmArgs = null,
+    localSeleniumStandaloneOpts: AnonJvmArgs = null,
     logLevel: ERROR | WARN | INFO | DEBUG = null,
     maxSessions: Int | Double = null,
-    mochaOpts: AnonKey = null,
+    mochaOpts: AnonReporter = null,
     mockSelenium: js.UndefOr[Boolean] = js.undefined,
     multiCapabilities: js.Array[_] = null,
     ng12Hybrid: js.UndefOr[Boolean] = js.undefined,

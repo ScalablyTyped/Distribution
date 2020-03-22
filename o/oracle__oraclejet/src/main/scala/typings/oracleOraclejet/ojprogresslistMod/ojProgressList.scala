@@ -50,7 +50,6 @@ import typings.oracleOraclejet.oracleOraclejetStrings.keyup
 import typings.oracleOraclejet.oracleOraclejetStrings.load
 import typings.oracleOraclejet.oracleOraclejetStrings.loadeddata
 import typings.oracleOraclejet.oracleOraclejetStrings.loadedmetadata
-import typings.oracleOraclejet.oracleOraclejetStrings.loadend
 import typings.oracleOraclejet.oracleOraclejetStrings.loadstart
 import typings.oracleOraclejet.oracleOraclejetStrings.lostpointercapture
 import typings.oracleOraclejet.oracleOraclejetStrings.mousedown
@@ -508,17 +507,6 @@ trait ojProgressList extends JetElement[ojProgressListSettableProperties] {
   def addEventListener_loadedmetadata(
     `type`: loadedmetadata,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event_, _],
-    useCapture: Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_loadend(
-    `type`: loadend,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent[EventTarget], _]
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_loadend(
-    `type`: loadend,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent[EventTarget], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")

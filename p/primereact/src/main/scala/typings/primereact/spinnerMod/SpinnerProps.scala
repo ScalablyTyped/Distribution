@@ -1,6 +1,6 @@
 package typings.primereact.spinnerMod
 
-import typings.primereact.AnonValue
+import typings.primereact.Anon0
 import typings.primereact.tooltipOptionsMod.TooltipOptions
 import typings.std.Event_
 import scala.scalajs.js
@@ -22,7 +22,7 @@ trait SpinnerProps extends js.Object {
   var min: js.UndefOr[Double] = js.undefined
   var name: js.UndefOr[String] = js.undefined
   var onBlur: js.UndefOr[js.Function1[/* e */ Event_, Unit]] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* e */ AnonValue, Unit]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* e */ Anon0, Unit]] = js.undefined
   var pattern: js.UndefOr[String] = js.undefined
   var placeholder: js.UndefOr[String] = js.undefined
   var readonly: js.UndefOr[Boolean] = js.undefined
@@ -54,7 +54,7 @@ object SpinnerProps {
     min: Int | Double = null,
     name: String = null,
     onBlur: /* e */ Event_ => Unit = null,
-    onChange: /* e */ AnonValue => Unit = null,
+    onChange: /* e */ Anon0 => Unit = null,
     pattern: String = null,
     placeholder: String = null,
     readonly: js.UndefOr[Boolean] = js.undefined,

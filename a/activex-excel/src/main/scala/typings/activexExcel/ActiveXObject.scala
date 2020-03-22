@@ -248,13 +248,13 @@ trait ActiveXObject extends js.Object {
     obj: Application,
     event: SheetBeforeDoubleClick,
     argNames: js.Tuple3[Sh, Target, Cancel],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonCancelSh, Unit]
+    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonTarget, Unit]
   ): Unit = js.native
   def on(
     obj: Application,
     event: SheetBeforeRightClick,
     argNames: js.Tuple3[Sh, Target, Cancel],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonCancelSh, Unit]
+    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonTarget, Unit]
   ): Unit = js.native
   def on(
     obj: Application,
@@ -278,37 +278,37 @@ trait ActiveXObject extends js.Object {
     obj: Application,
     event: SheetFollowHyperlink,
     argNames: js.Tuple2[Sh, Target],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonShTargetHyperlink, Unit]
+    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonShWorksheet, Unit]
   ): Unit = js.native
   def on(
     obj: Application,
     event: SheetPivotTableAfterValueChange,
     argNames: js.Tuple3[Sh, TargetPivotTable, TargetRange],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonShTargetPivotTable, Unit]
+    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonTargetPivotTable, Unit]
   ): Unit = js.native
   def on(
     obj: Application,
     event: SheetPivotTableBeforeAllocateChanges,
     argNames: js.Tuple5[Sh, TargetPivotTable, ValueChangeStart, ValueChangeEnd, Cancel],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonCancelShTargetPivotTable, Unit]
+    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonValueChangeEnd, Unit]
   ): Unit = js.native
   def on(
     obj: Application,
     event: SheetPivotTableBeforeCommitChanges,
     argNames: js.Tuple5[Sh, TargetPivotTable, ValueChangeStart, ValueChangeEnd, Cancel],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonCancelShTargetPivotTable, Unit]
+    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonValueChangeEnd, Unit]
   ): Unit = js.native
   def on(
     obj: Application,
     event: SheetPivotTableBeforeDiscardChanges,
     argNames: js.Tuple4[Sh, TargetPivotTable, ValueChangeStart, ValueChangeEnd],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonShTargetPivotTableValueChangeEnd, Unit]
+    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonValueChangeStart, Unit]
   ): Unit = js.native
   def on(
     obj: Application,
     event: SheetPivotTableUpdate,
     argNames: js.Tuple2[Sh, Target],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonShTargetPivotTableWorksheet, Unit]
+    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonShWorksheetTargetPivotTable, Unit]
   ): Unit = js.native
   def on(
     obj: Application,
@@ -320,19 +320,19 @@ trait ActiveXObject extends js.Object {
     obj: Application,
     event: WindowActivate,
     argNames: js.Tuple2[Wb, Wn],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonWbWn, Unit]
+    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonWn, Unit]
   ): Unit = js.native
   def on(
     obj: Application,
     event: WindowDeactivate,
     argNames: js.Tuple2[Wb, Wn],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonWbWn, Unit]
+    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonWn, Unit]
   ): Unit = js.native
   def on(
     obj: Application,
     event: WindowResize,
     argNames: js.Tuple2[Wb, Wn],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonWbWn, Unit]
+    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonWn, Unit]
   ): Unit = js.native
   def on(
     obj: Application,
@@ -386,13 +386,13 @@ trait ActiveXObject extends js.Object {
     obj: Application,
     event: WorkbookBeforeSave,
     argNames: js.Tuple3[Wb, SaveAsUI, Cancel],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonCancelSaveAsUI, Unit]
+    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonSaveAsUI, Unit]
   ): Unit = js.native
   def on(
     obj: Application,
     event: WorkbookBeforeXmlExport,
     argNames: js.Tuple4[Wb, Map, Url, Cancel],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonCancelMap, Unit]
+    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonUrl, Unit]
   ): Unit = js.native
   def on(
     obj: Application,
@@ -428,13 +428,13 @@ trait ActiveXObject extends js.Object {
     obj: Application,
     event: WorkbookPivotTableCloseConnection,
     argNames: js.Tuple2[Wb, Target],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonTarget, Unit]
+    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonTargetWb, Unit]
   ): Unit = js.native
   def on(
     obj: Application,
     event: WorkbookPivotTableOpenConnection,
     argNames: js.Tuple2[Wb, Target],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonTarget, Unit]
+    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonTargetWb, Unit]
   ): Unit = js.native
   def on(
     obj: Application,
@@ -506,7 +506,7 @@ trait ActiveXObject extends js.Object {
     obj: Chart,
     event: Select,
     argNames: js.Tuple3[ElementID, Arg1, Arg2],
-    handler: js.ThisFunction1[/* this */ Chart, /* parameter */ AnonArg1Arg2, Unit]
+    handler: js.ThisFunction1[/* this */ Chart, /* parameter */ AnonArg2, Unit]
   ): Unit = js.native
   def on(
     obj: Chart,
@@ -584,7 +584,7 @@ trait ActiveXObject extends js.Object {
     obj: Workbook,
     event: AfterXmlExport,
     argNames: js.Tuple3[Map, Url, Result],
-    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ AnonMapResult, Unit]
+    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ AnonResult, Unit]
   ): Unit = js.native
   def on(
     obj: Workbook,
@@ -608,19 +608,19 @@ trait ActiveXObject extends js.Object {
     obj: Workbook,
     event: BeforeSave,
     argNames: js.Tuple2[SaveAsUI, Cancel],
-    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ AnonCancelSaveAsUIBoolean, Unit]
+    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ AnonCancelSaveAsUI, Unit]
   ): Unit = js.native
   def on(
     obj: Workbook,
     event: BeforeXmlExport,
     argNames: js.Tuple3[Map, Url, Cancel],
-    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ AnonCancelMapUrl, Unit]
+    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ AnonCancelMap, Unit]
   ): Unit = js.native
   def on(
     obj: Workbook,
     event: BeforeXmlImport,
     argNames: js.Tuple4[Map, Url, IsRefresh, Cancel],
-    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ AnonCancelIsRefreshMap, Unit]
+    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ AnonMapUrl, Unit]
   ): Unit = js.native
   def on(
     obj: Workbook,
@@ -656,13 +656,13 @@ trait ActiveXObject extends js.Object {
     obj: Workbook,
     event: PivotTableCloseConnection,
     argNames: js.Array[Target],
-    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ AnonTargetPivotTable, Unit]
+    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ Anon0, Unit]
   ): Unit = js.native
   def on(
     obj: Workbook,
     event: PivotTableOpenConnection,
     argNames: js.Array[Target],
-    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ AnonTargetPivotTable, Unit]
+    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ Anon0, Unit]
   ): Unit = js.native
   def on(
     obj: Workbook,
@@ -674,7 +674,7 @@ trait ActiveXObject extends js.Object {
     obj: Workbook,
     event: RowsetComplete,
     argNames: js.Tuple3[Description, Sheet, Success],
-    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ AnonDescriptionSheet, Unit]
+    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ AnonSheet, Unit]
   ): Unit = js.native
   def on(
     obj: Workbook,
@@ -686,13 +686,13 @@ trait ActiveXObject extends js.Object {
     obj: Workbook,
     event: SheetBeforeDoubleClick,
     argNames: js.Tuple3[Sh, Target, Cancel],
-    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ AnonCancelSh, Unit]
+    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ AnonTarget, Unit]
   ): Unit = js.native
   def on(
     obj: Workbook,
     event: SheetBeforeRightClick,
     argNames: js.Tuple3[Sh, Target, Cancel],
-    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ AnonCancelSh, Unit]
+    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ AnonTarget, Unit]
   ): Unit = js.native
   def on(
     obj: Workbook,
@@ -716,43 +716,43 @@ trait ActiveXObject extends js.Object {
     obj: Workbook,
     event: SheetFollowHyperlink,
     argNames: js.Tuple2[Sh, Target],
-    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ AnonShTargetHyperlink, Unit]
+    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ AnonShWorksheet, Unit]
   ): Unit = js.native
   def on(
     obj: Workbook,
     event: SheetPivotTableAfterValueChange,
     argNames: js.Tuple3[Sh, TargetPivotTable, TargetRange],
-    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ AnonShTargetPivotTable, Unit]
+    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ AnonTargetPivotTable, Unit]
   ): Unit = js.native
   def on(
     obj: Workbook,
     event: SheetPivotTableBeforeAllocateChanges,
     argNames: js.Tuple5[Sh, TargetPivotTable, ValueChangeStart, ValueChangeEnd, Cancel],
-    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ AnonCancelShTargetPivotTable, Unit]
+    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ AnonValueChangeEnd, Unit]
   ): Unit = js.native
   def on(
     obj: Workbook,
     event: SheetPivotTableBeforeCommitChanges,
     argNames: js.Tuple5[Sh, TargetPivotTable, ValueChangeStart, ValueChangeEnd, Cancel],
-    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ AnonCancelShTargetPivotTable, Unit]
+    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ AnonValueChangeEnd, Unit]
   ): Unit = js.native
   def on(
     obj: Workbook,
     event: SheetPivotTableBeforeDiscardChanges,
     argNames: js.Tuple4[Sh, TargetPivotTable, ValueChangeStart, ValueChangeEnd],
-    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ AnonShTargetPivotTableValueChangeEnd, Unit]
+    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ AnonValueChangeStart, Unit]
   ): Unit = js.native
   def on(
     obj: Workbook,
     event: SheetPivotTableChangeSync,
     argNames: js.Tuple2[Sh, Target],
-    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ AnonShTargetPivotTableWorksheet, Unit]
+    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ AnonShWorksheetTargetPivotTable, Unit]
   ): Unit = js.native
   def on(
     obj: Workbook,
     event: SheetPivotTableUpdate,
     argNames: js.Tuple2[Sh, Target],
-    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ AnonShTargetPivotTableWorksheet, Unit]
+    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ AnonShWorksheetTargetPivotTable, Unit]
   ): Unit = js.native
   def on(
     obj: Workbook,
@@ -770,19 +770,19 @@ trait ActiveXObject extends js.Object {
     obj: Workbook,
     event: WindowActivate,
     argNames: js.Array[Wn],
-    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ AnonWn, Unit]
+    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ AnonWnWindow, Unit]
   ): Unit = js.native
   def on(
     obj: Workbook,
     event: WindowDeactivate,
     argNames: js.Array[Wn],
-    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ AnonWn, Unit]
+    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ AnonWnWindow, Unit]
   ): Unit = js.native
   def on(
     obj: Workbook,
     event: WindowResize,
     argNames: js.Array[Wn],
-    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ AnonWn, Unit]
+    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ AnonWnWindow, Unit]
   ): Unit = js.native
   def on(
     obj: Worksheet,
@@ -854,13 +854,13 @@ trait ActiveXObject extends js.Object {
     obj: Worksheet,
     event: PivotTableChangeSync,
     argNames: js.Array[Target],
-    handler: js.ThisFunction1[/* this */ Worksheet, /* parameter */ AnonTargetPivotTable, Unit]
+    handler: js.ThisFunction1[/* this */ Worksheet, /* parameter */ Anon0, Unit]
   ): Unit = js.native
   def on(
     obj: Worksheet,
     event: PivotTableUpdate,
     argNames: js.Array[Target],
-    handler: js.ThisFunction1[/* this */ Worksheet, /* parameter */ AnonTargetPivotTable, Unit]
+    handler: js.ThisFunction1[/* this */ Worksheet, /* parameter */ Anon0, Unit]
   ): Unit = js.native
   def on(
     obj: Worksheet,

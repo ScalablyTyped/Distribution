@@ -40,5 +40,13 @@ object iassociativecontainerMod extends js.Object {
     def has(key: Key): Boolean = js.native
   }
   
+  @js.native
+  object IAssociativeContainer extends js.Object {
+    /**
+      * @internal
+      */
+    def construct[Key, T /* <: Elem */, SourceT /* <: IAssociativeContainer[Key, T, SourceT, IteratorT, ReverseIteratorT, Elem] */, IteratorT /* <: Iterator[T, SourceT, IteratorT, ReverseIteratorT, Elem] */, ReverseIteratorT /* <: ReverseIterator[T, SourceT, IteratorT, ReverseIteratorT, Elem] */, Elem](source: SourceT, args: js.Any*): AnonRamda = js.native
+  }
+  
 }
 

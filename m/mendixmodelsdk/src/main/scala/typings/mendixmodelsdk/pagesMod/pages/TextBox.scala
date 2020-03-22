@@ -40,6 +40,11 @@ class TextBox protected () extends TextWidget {
     */
   def keyboardType(): KeyboardType = js.native
   def keyboardType(newValue: KeyboardType): js.Any = js.native
+  /**
+    * In version 8.7.0: introduced
+    */
+  def onEnterKeyPressAction(): ClientAction = js.native
+  def onEnterKeyPressAction(newValue: ClientAction): js.Any = js.native
 }
 
 /* static members */

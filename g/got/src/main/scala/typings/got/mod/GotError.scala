@@ -27,6 +27,58 @@ trait GotError extends js.Object
 
 object GotError {
   @scala.inline
+  def CancelError(
+    message: String,
+    name: typings.got.gotStrings.CancelError,
+    code: String = null,
+    host: String = null,
+    hostname: String = null,
+    method: String = null,
+    path: String = null,
+    protocol: String = null,
+    response: js.Any = null,
+    stack: String = null,
+    url: String = null
+  ): GotError = {
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (hostname != null) __obj.updateDynamic("hostname")(hostname.asInstanceOf[js.Any])
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
+    if (response != null) __obj.updateDynamic("response")(response.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GotError]
+  }
+  @scala.inline
+  def ReadError(
+    message: String,
+    name: typings.got.gotStrings.ReadError,
+    code: String = null,
+    host: String = null,
+    hostname: String = null,
+    method: String = null,
+    path: String = null,
+    protocol: String = null,
+    response: js.Any = null,
+    stack: String = null,
+    url: String = null
+  ): GotError = {
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (hostname != null) __obj.updateDynamic("hostname")(hostname.asInstanceOf[js.Any])
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
+    if (response != null) __obj.updateDynamic("response")(response.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GotError]
+  }
+  @scala.inline
   def ParseError(
     message: String,
     name: typings.got.gotStrings.ParseError,
@@ -43,32 +95,6 @@ object GotError {
     url: String = null
   ): GotError = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any], statusMessage = statusMessage.asInstanceOf[js.Any])
-    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (hostname != null) __obj.updateDynamic("hostname")(hostname.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
-    if (response != null) __obj.updateDynamic("response")(response.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    __obj.asInstanceOf[GotError]
-  }
-  @scala.inline
-  def RequestError(
-    message: String,
-    name: typings.got.gotStrings.RequestError,
-    code: String = null,
-    host: String = null,
-    hostname: String = null,
-    method: String = null,
-    path: String = null,
-    protocol: String = null,
-    response: js.Any = null,
-    stack: String = null,
-    url: String = null
-  ): GotError = {
-    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     if (hostname != null) __obj.updateDynamic("hostname")(hostname.asInstanceOf[js.Any])
@@ -108,32 +134,6 @@ object GotError {
     __obj.asInstanceOf[GotError]
   }
   @scala.inline
-  def ReadError(
-    message: String,
-    name: typings.got.gotStrings.ReadError,
-    code: String = null,
-    host: String = null,
-    hostname: String = null,
-    method: String = null,
-    path: String = null,
-    protocol: String = null,
-    response: js.Any = null,
-    stack: String = null,
-    url: String = null
-  ): GotError = {
-    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (hostname != null) __obj.updateDynamic("hostname")(hostname.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
-    if (response != null) __obj.updateDynamic("response")(response.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    __obj.asInstanceOf[GotError]
-  }
-  @scala.inline
   def UnsupportedProtocolError(
     message: String,
     name: typings.got.gotStrings.UnsupportedProtocolError,
@@ -160,12 +160,9 @@ object GotError {
     __obj.asInstanceOf[GotError]
   }
   @scala.inline
-  def MaxRedirectsError(
+  def RequestError(
     message: String,
-    name: typings.got.gotStrings.MaxRedirectsError,
-    redirectUrls: js.Array[String],
-    statusCode: Double,
-    statusMessage: String,
+    name: typings.got.gotStrings.RequestError,
     code: String = null,
     host: String = null,
     hostname: String = null,
@@ -176,7 +173,7 @@ object GotError {
     stack: String = null,
     url: String = null
   ): GotError = {
-    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], redirectUrls = redirectUrls.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any], statusMessage = statusMessage.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     if (hostname != null) __obj.updateDynamic("hostname")(hostname.asInstanceOf[js.Any])
@@ -219,9 +216,12 @@ object GotError {
     __obj.asInstanceOf[GotError]
   }
   @scala.inline
-  def CancelError(
+  def MaxRedirectsError(
     message: String,
-    name: typings.got.gotStrings.CancelError,
+    name: typings.got.gotStrings.MaxRedirectsError,
+    redirectUrls: js.Array[String],
+    statusCode: Double,
+    statusMessage: String,
     code: String = null,
     host: String = null,
     hostname: String = null,
@@ -232,7 +232,7 @@ object GotError {
     stack: String = null,
     url: String = null
   ): GotError = {
-    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], redirectUrls = redirectUrls.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any], statusMessage = statusMessage.asInstanceOf[js.Any])
     if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     if (hostname != null) __obj.updateDynamic("hostname")(hostname.asInstanceOf[js.Any])

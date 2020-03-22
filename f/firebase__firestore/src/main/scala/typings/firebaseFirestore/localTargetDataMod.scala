@@ -4,8 +4,8 @@ import org.scalablytyped.runtime.TopLevel
 import typings.firebaseFirestore.coreSnapshotVersionMod.SnapshotVersion
 import typings.firebaseFirestore.coreTargetMod.Target
 import typings.firebaseFirestore.coreTypesMod.ListenSequenceNumber
-import typings.firebaseFirestore.coreTypesMod.ProtoByteString
 import typings.firebaseFirestore.coreTypesMod.TargetId
+import typings.firebaseFirestore.utilByteStringMod.ByteString
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -100,7 +100,7 @@ object localTargetDataMod extends js.Object {
       * matches the target. The resume token essentially identifies a point in
       * time from which the server should resume sending results.
       */
-    resumeToken: ProtoByteString
+    resumeToken: ByteString
     ) = this()
     /**
       * The maximum snapshot version at which the associated view
@@ -115,7 +115,7 @@ object localTargetDataMod extends js.Object {
       * matches the target. The resume token essentially identifies a point in
       * time from which the server should resume sending results.
       */
-    val resumeToken: ProtoByteString = js.native
+    val resumeToken: ByteString = js.native
     /**
       * The sequence number of the last transaction during which this target data
       * was modified.
@@ -140,7 +140,7 @@ object localTargetDataMod extends js.Object {
       * Creates a new target data instance with an updated resume token and
       * snapshot version.
       */
-    def withResumeToken(resumeToken: ProtoByteString, snapshotVersion: SnapshotVersion): TargetData = js.native
+    def withResumeToken(resumeToken: ByteString, snapshotVersion: SnapshotVersion): TargetData = js.native
     /** Creates a new target data instance with an updated sequence number. */
     def withSequenceNumber(sequenceNumber: Double): TargetData = js.native
   }

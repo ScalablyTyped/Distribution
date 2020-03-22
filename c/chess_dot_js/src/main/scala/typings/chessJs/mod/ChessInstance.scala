@@ -1,17 +1,17 @@
 package typings.chessJs.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.chessJs.AnonB
+import typings.chessJs.Anon0
+import typings.chessJs.Anon1
+import typings.chessJs.AnonBIGPAWN
 import typings.chessJs.AnonError
-import typings.chessJs.AnonFalse
-import typings.chessJs.AnonFalseVerbose
 import typings.chessJs.AnonMaxwidth
 import typings.chessJs.AnonNewlinechar
 import typings.chessJs.AnonSloppy
 import typings.chessJs.AnonSquare
 import typings.chessJs.AnonSquareVerbose
-import typings.chessJs.AnonTrue
 import typings.chessJs.AnonVerbose
+import typings.chessJs.AnonVerboseBoolean
 import typings.chessJs.chessJsStrings.b
 import typings.chessJs.chessJsStrings.dark
 import typings.chessJs.chessJsStrings.k
@@ -32,7 +32,7 @@ trait ChessInstance extends js.Object {
   /** The string that represents the Black color side */
   val BLACK: b = js.native
   /** Flags used to build flag strings for moves */
-  val FLAGS: AnonB = js.native
+  val FLAGS: AnonBIGPAWN = js.native
   /** The string that represents a King */
   val KING: k = js.native
   /** The string that represents a Knight */
@@ -94,7 +94,7 @@ trait ChessInstance extends js.Object {
     * if not passed the verbose flag.
     */
   def history(): js.Array[String] = js.native
-  def history(options: AnonFalseVerbose): js.Array[String] = js.native
+  def history(options: Anon0): js.Array[String] = js.native
   /**
     * Returns a list containing the moves of the current game.
     * Options is an optional parameter which may contain a 'verbose' flag.
@@ -103,8 +103,8 @@ trait ChessInstance extends js.Object {
     * @returns a list of all moves of the current game. They will be strings
     * if not passed the verbose flag.
     */
-  def history(options: AnonTrue): js.Array[Move] = js.native
-  def history(options: AnonVerbose): js.Array[Move | String] = js.native
+  def history(options: Anon1): js.Array[Move] = js.native
+  def history(options: AnonVerboseBoolean): js.Array[Move | String] = js.native
   /**
     * Returns true or false if the side to move is in check.
     * @returns true or false if the side to move is in check.
@@ -189,7 +189,6 @@ trait ChessInstance extends js.Object {
     * verbose objects.
     */
   def moves(): js.Array[String] = js.native
-  def moves(options: AnonFalse): js.Array[String] = js.native
   /**
     * Returns a list of legal moves from the current position.
     * The function takes an optional parameter which controls the
@@ -201,6 +200,7 @@ trait ChessInstance extends js.Object {
     */
   def moves(options: AnonSquare): js.Array[Move] = js.native
   def moves(options: AnonSquareVerbose): js.Array[Move | String] = js.native
+  def moves(options: AnonVerbose): js.Array[String] = js.native
   /**
     * Returns the game in PGN format.
     * Options is an optional parameter which may include max width and/or a

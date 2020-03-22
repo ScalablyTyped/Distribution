@@ -51,9 +51,13 @@ trait CreateJobRequest extends js.Object {
     */
   var SnowballCapacityPreference: js.UndefOr[SnowballCapacity] = js.native
   /**
-    * The type of AWS Snowball device to use for this job. Currently, the only supported device type for cluster jobs is EDGE.
+    * The type of AWS Snowball device to use for this job. Currently, the only supported device type for cluster jobs is EDGE. For more information, see Snowball Edge Device Options in the Snowball Edge Developer Guide.
     */
   var SnowballType: js.UndefOr[typings.awsSdk.snowballMod.SnowballType] = js.native
+  /**
+    * The tax documents required in your AWS Region.
+    */
+  var TaxDocuments: js.UndefOr[typings.awsSdk.snowballMod.TaxDocuments] = js.native
 }
 
 object CreateJobRequest {
@@ -70,7 +74,8 @@ object CreateJobRequest {
     RoleARN: RoleARN = null,
     ShippingOption: ShippingOption = null,
     SnowballCapacityPreference: SnowballCapacity = null,
-    SnowballType: SnowballType = null
+    SnowballType: SnowballType = null,
+    TaxDocuments: TaxDocuments = null
   ): CreateJobRequest = {
     val __obj = js.Dynamic.literal()
     if (AddressId != null) __obj.updateDynamic("AddressId")(AddressId.asInstanceOf[js.Any])
@@ -85,6 +90,7 @@ object CreateJobRequest {
     if (ShippingOption != null) __obj.updateDynamic("ShippingOption")(ShippingOption.asInstanceOf[js.Any])
     if (SnowballCapacityPreference != null) __obj.updateDynamic("SnowballCapacityPreference")(SnowballCapacityPreference.asInstanceOf[js.Any])
     if (SnowballType != null) __obj.updateDynamic("SnowballType")(SnowballType.asInstanceOf[js.Any])
+    if (TaxDocuments != null) __obj.updateDynamic("TaxDocuments")(TaxDocuments.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateJobRequest]
   }
 }

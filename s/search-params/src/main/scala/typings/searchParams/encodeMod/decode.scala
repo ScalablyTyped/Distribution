@@ -4,9 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("search-params/typings/encode", "decode")
+@JSImport("search-params/dist/encode", "decode")
 @js.native
 object decode extends js.Object {
-  def apply(value: js.Any, opts: IFinalOptions): String | Boolean = js.native
+  def apply(value: js.Any, opts: IFinalOptions): String | Boolean | Null = js.native
 }
 

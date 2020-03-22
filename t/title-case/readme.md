@@ -1,7 +1,7 @@
 
 # Scala.js typings for title-case
 
-Typings are for version 2.1.1
+Typings are for version 3.0.2
 
 ## Library description:
 Transform a string into title case following English rules

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class MarkdownViewerFactory_ protected () extends ABCWidgetFactory[MarkdownDocument, IModel] {
   /**
-    * Construct a new mimetype widget factory.
+    * Construct a new markdown viewer widget factory.
     */
   def this(options: IOptions) = this()
   var _fileType: js.Any = js.native

@@ -1,8 +1,7 @@
 package typings.blueprintjsTable.mod
 
+import typings.blueprintjsTable.ValidationMapIColumnInter
 import typings.blueprintjsTable.columnHeaderCellMod.IColumnHeaderCellProps
-import typings.blueprintjsTable.contextMod.IColumnInteractionBarContextTypes
-import typings.react.mod.ValidationMap
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,7 +16,7 @@ class ColumnHeaderCell ()
 @JSImport("@blueprintjs/table", "ColumnHeaderCell")
 @js.native
 object ColumnHeaderCell extends js.Object {
-  var contextTypes: ValidationMap[IColumnInteractionBarContextTypes] = js.native
+  var contextTypes: ValidationMapIColumnInter = js.native
   var defaultProps: IColumnHeaderCellProps = js.native
   /**
     * This method determines if a `MouseEvent` was triggered on a target that

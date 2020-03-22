@@ -1,7 +1,7 @@
 package typings.vexflow.Vex.Flow
 
 import typings.vexflow.AnonAlignrests
-import typings.vexflow.AnonAlignrestsContext
+import typings.vexflow.AnonContext
 import typings.vexflow.Vex.IRenderContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,9 +14,9 @@ class Formatter () extends js.Object {
   def createModifierContexts(voices: js.Array[Voice]): js.Array[ModifierContext] = js.native
   def createTickContexts(voices: js.Array[Voice]): js.Array[TickContext] = js.native
   def format(voices: js.Array[Voice], justifyWidth: Double): Formatter = js.native
-  def format(voices: js.Array[Voice], justifyWidth: Double, options: AnonAlignrestsContext): Formatter = js.native
+  def format(voices: js.Array[Voice], justifyWidth: Double, options: AnonContext): Formatter = js.native
   def formatToStave(voices: js.Array[Voice], stave: Stave): Formatter = js.native
-  def formatToStave(voices: js.Array[Voice], stave: Stave, options: AnonAlignrestsContext): Formatter = js.native
+  def formatToStave(voices: js.Array[Voice], stave: Stave, options: AnonContext): Formatter = js.native
   def getMinTotalWidth(): Double = js.native
   def joinVoices(voices: js.Array[Voice]): Formatter = js.native
   def postFormat(): Formatter = js.native

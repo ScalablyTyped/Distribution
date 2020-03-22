@@ -1,7 +1,7 @@
 package typings.googleAnalytics.UniversalAnalytics
 
 import typings.googleAnalytics.AnonEventAction
-import typings.googleAnalytics.AnonEventActionEventCategory
+import typings.googleAnalytics.AnonEventCategory
 import typings.googleAnalytics.AnonSocialAction
 import typings.googleAnalytics.AnonTimingCategory
 import typings.googleAnalytics.googleAnalyticsStrings.create
@@ -41,7 +41,7 @@ trait ga extends js.Object {
   def apply(command: remove): Unit = js.native
   def apply(command: require, pluginName: String): Unit = js.native
   def apply(command: require, pluginName: String, pluginOptions: js.Any): Unit = js.native
-  def apply(command: send, fieldsObject: AnonEventActionEventCategory): Unit = js.native
+  def apply(command: send, fieldsObject: AnonEventCategory): Unit = js.native
   def apply(command: send, fieldsObject: FieldsObject): Unit = js.native
   def apply(command: send, hitType: event, eventCategory: String, eventAction: String): Unit = js.native
   def apply(command: send, hitType: event, eventCategory: String, eventAction: String, eventLabel: String): Unit = js.native

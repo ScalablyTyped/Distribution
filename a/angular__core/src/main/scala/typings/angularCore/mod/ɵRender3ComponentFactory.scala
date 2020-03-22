@@ -14,8 +14,14 @@ class ɵRender3ComponentFactory[T] protected () extends ComponentFactory[T] {
   def this(componentDef: ɵComponentDef[_]) = this()
   def this(componentDef: ɵComponentDef[_], ngModule: NgModuleRef[_]) = this()
   var componentDef: js.Any = js.native
+  @JSName("componentType")
+  var componentType_FɵRender3ComponentFactory: Type[_] = js.native
   var isBoundToModule: Boolean = js.native
+  @JSName("ngContentSelectors")
+  var ngContentSelectors_FɵRender3ComponentFactory: js.Array[String] = js.native
   var ngModule: js.UndefOr[js.Any] = js.native
+  @JSName("selector")
+  var selector_FɵRender3ComponentFactory: String = js.native
   def create(injector: Injector, projectableNodes: js.UndefOr[scala.Nothing], rootSelectorOrNode: js.Any): ComponentRef[T] = js.native
   def create(
     injector: Injector,

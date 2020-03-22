@@ -76,7 +76,7 @@ trait Axis extends BaseAxis {
     */
   var values: js.UndefOr[js.Array[_] | SignalRef] = js.undefined
   /**
-    * The integer z-index indicating the layering of the legend group relative to other axis, mark, and legend groups.
+    * The integer z-index indicating the layering of the axis group relative to other axis, mark, and legend groups.
     *
     * @TJS-type integer
     * @minimum 0

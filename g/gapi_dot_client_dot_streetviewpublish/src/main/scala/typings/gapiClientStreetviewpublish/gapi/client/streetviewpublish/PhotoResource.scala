@@ -2,9 +2,9 @@ package typings.gapiClientStreetviewpublish.gapi.client.streetviewpublish
 
 import typings.gapiClient.gapi.client.Request_
 import typings.gapiClientStreetviewpublish.AnonAccesstoken
-import typings.gapiClientStreetviewpublish.AnonAccesstokenAlt
-import typings.gapiClientStreetviewpublish.AnonAccesstokenAltBearertoken
-import typings.gapiClientStreetviewpublish.AnonAccesstokenAltBearertokenCallback
+import typings.gapiClientStreetviewpublish.AnonAlt
+import typings.gapiClientStreetviewpublish.AnonBearertoken
+import typings.gapiClientStreetviewpublish.AnonCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -41,7 +41,7 @@ trait PhotoResource extends js.Object {
     * create the requested photo.
     * &#42; google.rpc.Code.NOT_FOUND if the photo ID does not exist.
     */
-  def delete(request: AnonAccesstokenAlt): Request_[js.Object]
+  def delete(request: AnonAlt): Request_[js.Object]
   /**
     * Gets the metadata of the specified
     * Photo.
@@ -53,7 +53,7 @@ trait PhotoResource extends js.Object {
     * &#42; google.rpc.Code.NOT_FOUND if the requested
     * Photo does not exist.
     */
-  def get(request: AnonAccesstokenAltBearertoken): Request_[Photo]
+  def get(request: AnonBearertoken): Request_[Photo]
   /**
     * Creates an upload session to start uploading photo bytes. The upload URL of
     * the returned UploadRef is used to
@@ -98,17 +98,17 @@ trait PhotoResource extends js.Object {
     * &#42; google.rpc.Code.INVALID_ARGUMENT if the request is malformed.
     * &#42; google.rpc.Code.NOT_FOUND if the requested photo does not exist.
     */
-  def update(request: AnonAccesstokenAltBearertokenCallback): Request_[Photo]
+  def update(request: AnonCallback): Request_[Photo]
 }
 
 object PhotoResource {
   @scala.inline
   def apply(
     create: AnonAccesstoken => Request_[Photo],
-    delete: AnonAccesstokenAlt => Request_[js.Object],
-    get: AnonAccesstokenAltBearertoken => Request_[Photo],
+    delete: AnonAlt => Request_[js.Object],
+    get: AnonBearertoken => Request_[Photo],
     startUpload: AnonAccesstoken => Request_[UploadRef],
-    update: AnonAccesstokenAltBearertokenCallback => Request_[Photo]
+    update: AnonCallback => Request_[Photo]
   ): PhotoResource = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), startUpload = js.Any.fromFunction1(startUpload), update = js.Any.fromFunction1(update))
   

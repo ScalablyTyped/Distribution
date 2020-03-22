@@ -1,6 +1,24 @@
 package typings.awsSdk.ec2Mod
 
-import typings.awsSdk.AnonWaiter
+import typings.awsSdk.DescribeBundleTasksReques
+import typings.awsSdk.DescribeConversionTasksRe
+import typings.awsSdk.DescribeCustomerGatewaysR
+import typings.awsSdk.DescribeExportTasksReques
+import typings.awsSdk.DescribeImagesRequestwait
+import typings.awsSdk.DescribeInstanceStatusReq
+import typings.awsSdk.DescribeInstancesRequestw
+import typings.awsSdk.DescribeKeyPairsRequestwa
+import typings.awsSdk.DescribeNatGatewaysReques
+import typings.awsSdk.DescribeNetworkInterfaces
+import typings.awsSdk.DescribeSecurityGroupsReq
+import typings.awsSdk.DescribeSnapshotsRequestw
+import typings.awsSdk.DescribeSpotInstanceReque
+import typings.awsSdk.DescribeSubnetsRequestwai
+import typings.awsSdk.DescribeVolumesRequestwai
+import typings.awsSdk.DescribeVpcPeeringConnect
+import typings.awsSdk.DescribeVpcsRequestwaiter
+import typings.awsSdk.DescribeVpnConnectionsReq
+import typings.awsSdk.GetPasswordDataRequestwai
 import typings.awsSdk.awsSdkStrings.bundleTaskComplete
 import typings.awsSdk.awsSdkStrings.conversionTaskCancelled
 import typings.awsSdk.awsSdkStrings.conversionTaskCompleted
@@ -313,12 +331,12 @@ trait EC2 extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ AssociateTransitGatewayRouteTableResult, Unit]
   ): Request[AssociateTransitGatewayRouteTableResult, AWSError] = js.native
   /**
-    * Associates a CIDR block with your VPC. You can associate a secondary IPv4 CIDR block, an Amazon-provided IPv6 CIDR block, or an IPv6 CIDR block from an IPv6 address pool that you provisioned through bring your own IP addresses (BYOIP). The IPv6 CIDR block size is fixed at /56. For more information about associating CIDR blocks with your VPC and applicable restrictions, see VPC and Subnet Sizing in the Amazon Virtual Private Cloud User Guide.
+    * Associates a CIDR block with your VPC. You can associate a secondary IPv4 CIDR block, an Amazon-provided IPv6 CIDR block, or an IPv6 CIDR block from an IPv6 address pool that you provisioned through bring your own IP addresses (BYOIP). The IPv6 CIDR block size is fixed at /56. You must specify one of the following in the request: an IPv4 CIDR block, an IPv6 pool, or an Amazon-provided IPv6 CIDR block. For more information about associating CIDR blocks with your VPC and applicable restrictions, see VPC and Subnet Sizing in the Amazon Virtual Private Cloud User Guide.
     */
   def associateVpcCidrBlock(): Request[AssociateVpcCidrBlockResult, AWSError] = js.native
   def associateVpcCidrBlock(callback: js.Function2[/* err */ AWSError, /* data */ AssociateVpcCidrBlockResult, Unit]): Request[AssociateVpcCidrBlockResult, AWSError] = js.native
   /**
-    * Associates a CIDR block with your VPC. You can associate a secondary IPv4 CIDR block, an Amazon-provided IPv6 CIDR block, or an IPv6 CIDR block from an IPv6 address pool that you provisioned through bring your own IP addresses (BYOIP). The IPv6 CIDR block size is fixed at /56. For more information about associating CIDR blocks with your VPC and applicable restrictions, see VPC and Subnet Sizing in the Amazon Virtual Private Cloud User Guide.
+    * Associates a CIDR block with your VPC. You can associate a secondary IPv4 CIDR block, an Amazon-provided IPv6 CIDR block, or an IPv6 CIDR block from an IPv6 address pool that you provisioned through bring your own IP addresses (BYOIP). The IPv6 CIDR block size is fixed at /56. You must specify one of the following in the request: an IPv4 CIDR block, an IPv6 pool, or an Amazon-provided IPv6 CIDR block. For more information about associating CIDR blocks with your VPC and applicable restrictions, see VPC and Subnet Sizing in the Amazon Virtual Private Cloud User Guide.
     */
   def associateVpcCidrBlock(params: AssociateVpcCidrBlockRequest): Request[AssociateVpcCidrBlockResult, AWSError] = js.native
   def associateVpcCidrBlock(
@@ -5120,12 +5138,12 @@ trait EC2 extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   /**
-    * Creates a Spot Fleet request. The Spot Fleet request specifies the total target capacity and the On-Demand target capacity. Amazon EC2 calculates the difference between the total capacity and On-Demand capacity, and launches the difference as Spot capacity. You can submit a single request that includes multiple launch specifications that vary by instance type, AMI, Availability Zone, or subnet. By default, the Spot Fleet requests Spot Instances in the Spot Instance pool where the price per unit is the lowest. Each launch specification can include its own instance weighting that reflects the value of the instance type to your application workload. Alternatively, you can specify that the Spot Fleet distribute the target capacity across the Spot pools included in its launch specifications. By ensuring that the Spot Instances in your Spot Fleet are in different Spot pools, you can improve the availability of your fleet. You can specify tags for the Spot Fleet and Spot Instances. You cannot tag other resource types in a Spot Fleet request because only the spot-fleet-request and instance resource types are supported. For more information, see Spot Fleet Requests in the Amazon EC2 User Guide for Linux Instances.
+    * Creates a Spot Fleet request. The Spot Fleet request specifies the total target capacity and the On-Demand target capacity. Amazon EC2 calculates the difference between the total capacity and On-Demand capacity, and launches the difference as Spot capacity. You can submit a single request that includes multiple launch specifications that vary by instance type, AMI, Availability Zone, or subnet. By default, the Spot Fleet requests Spot Instances in the Spot Instance pool where the price per unit is the lowest. Each launch specification can include its own instance weighting that reflects the value of the instance type to your application workload. Alternatively, you can specify that the Spot Fleet distribute the target capacity across the Spot pools included in its launch specifications. By ensuring that the Spot Instances in your Spot Fleet are in different Spot pools, you can improve the availability of your fleet. You can specify tags for the Spot Fleet request and instances launched by the fleet. You cannot tag other resource types in a Spot Fleet request because only the spot-fleet-request and instance resource types are supported. For more information, see Spot Fleet Requests in the Amazon EC2 User Guide for Linux Instances.
     */
   def requestSpotFleet(): Request[RequestSpotFleetResponse, AWSError] = js.native
   def requestSpotFleet(callback: js.Function2[/* err */ AWSError, /* data */ RequestSpotFleetResponse, Unit]): Request[RequestSpotFleetResponse, AWSError] = js.native
   /**
-    * Creates a Spot Fleet request. The Spot Fleet request specifies the total target capacity and the On-Demand target capacity. Amazon EC2 calculates the difference between the total capacity and On-Demand capacity, and launches the difference as Spot capacity. You can submit a single request that includes multiple launch specifications that vary by instance type, AMI, Availability Zone, or subnet. By default, the Spot Fleet requests Spot Instances in the Spot Instance pool where the price per unit is the lowest. Each launch specification can include its own instance weighting that reflects the value of the instance type to your application workload. Alternatively, you can specify that the Spot Fleet distribute the target capacity across the Spot pools included in its launch specifications. By ensuring that the Spot Instances in your Spot Fleet are in different Spot pools, you can improve the availability of your fleet. You can specify tags for the Spot Fleet and Spot Instances. You cannot tag other resource types in a Spot Fleet request because only the spot-fleet-request and instance resource types are supported. For more information, see Spot Fleet Requests in the Amazon EC2 User Guide for Linux Instances.
+    * Creates a Spot Fleet request. The Spot Fleet request specifies the total target capacity and the On-Demand target capacity. Amazon EC2 calculates the difference between the total capacity and On-Demand capacity, and launches the difference as Spot capacity. You can submit a single request that includes multiple launch specifications that vary by instance type, AMI, Availability Zone, or subnet. By default, the Spot Fleet requests Spot Instances in the Spot Instance pool where the price per unit is the lowest. Each launch specification can include its own instance weighting that reflects the value of the instance type to your application workload. Alternatively, you can specify that the Spot Fleet distribute the target capacity across the Spot pools included in its launch specifications. By ensuring that the Spot Instances in your Spot Fleet are in different Spot pools, you can improve the availability of your fleet. You can specify tags for the Spot Fleet request and instances launched by the fleet. You cannot tag other resource types in a Spot Fleet request because only the spot-fleet-request and instance resource types are supported. For more information, see Spot Fleet Requests in the Amazon EC2 User Guide for Linux Instances.
     */
   def requestSpotFleet(params: RequestSpotFleetRequest): Request[RequestSpotFleetResponse, AWSError] = js.native
   def requestSpotFleet(
@@ -5521,11 +5539,11 @@ trait EC2 extends Service {
     * Waits for the bundleTaskComplete state by periodically calling the underlying EC2.describeBundleTasksoperation every 15 seconds (at most 40 times).
     */
   @JSName("waitFor")
-  def waitFor_bundleTaskComplete(state: bundleTaskComplete, params: DescribeBundleTasksRequest with AnonWaiter): Request[DescribeBundleTasksResult, AWSError] = js.native
+  def waitFor_bundleTaskComplete(state: bundleTaskComplete, params: DescribeBundleTasksReques): Request[DescribeBundleTasksResult, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_bundleTaskComplete(
     state: bundleTaskComplete,
-    params: DescribeBundleTasksRequest with AnonWaiter,
+    params: DescribeBundleTasksReques,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeBundleTasksResult, Unit]
   ): Request[DescribeBundleTasksResult, AWSError] = js.native
   /**
@@ -5542,11 +5560,11 @@ trait EC2 extends Service {
     * Waits for the conversionTaskCancelled state by periodically calling the underlying EC2.describeConversionTasksoperation every 15 seconds (at most 40 times).
     */
   @JSName("waitFor")
-  def waitFor_conversionTaskCancelled(state: conversionTaskCancelled, params: DescribeConversionTasksRequest with AnonWaiter): Request[DescribeConversionTasksResult, AWSError] = js.native
+  def waitFor_conversionTaskCancelled(state: conversionTaskCancelled, params: DescribeConversionTasksRe): Request[DescribeConversionTasksResult, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_conversionTaskCancelled(
     state: conversionTaskCancelled,
-    params: DescribeConversionTasksRequest with AnonWaiter,
+    params: DescribeConversionTasksRe,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeConversionTasksResult, Unit]
   ): Request[DescribeConversionTasksResult, AWSError] = js.native
   /**
@@ -5563,11 +5581,11 @@ trait EC2 extends Service {
     * Waits for the conversionTaskCompleted state by periodically calling the underlying EC2.describeConversionTasksoperation every 15 seconds (at most 40 times).
     */
   @JSName("waitFor")
-  def waitFor_conversionTaskCompleted(state: conversionTaskCompleted, params: DescribeConversionTasksRequest with AnonWaiter): Request[DescribeConversionTasksResult, AWSError] = js.native
+  def waitFor_conversionTaskCompleted(state: conversionTaskCompleted, params: DescribeConversionTasksRe): Request[DescribeConversionTasksResult, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_conversionTaskCompleted(
     state: conversionTaskCompleted,
-    params: DescribeConversionTasksRequest with AnonWaiter,
+    params: DescribeConversionTasksRe,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeConversionTasksResult, Unit]
   ): Request[DescribeConversionTasksResult, AWSError] = js.native
   /**
@@ -5584,11 +5602,11 @@ trait EC2 extends Service {
     * Waits for the conversionTaskDeleted state by periodically calling the underlying EC2.describeConversionTasksoperation every 15 seconds (at most 40 times).
     */
   @JSName("waitFor")
-  def waitFor_conversionTaskDeleted(state: conversionTaskDeleted, params: DescribeConversionTasksRequest with AnonWaiter): Request[DescribeConversionTasksResult, AWSError] = js.native
+  def waitFor_conversionTaskDeleted(state: conversionTaskDeleted, params: DescribeConversionTasksRe): Request[DescribeConversionTasksResult, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_conversionTaskDeleted(
     state: conversionTaskDeleted,
-    params: DescribeConversionTasksRequest with AnonWaiter,
+    params: DescribeConversionTasksRe,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeConversionTasksResult, Unit]
   ): Request[DescribeConversionTasksResult, AWSError] = js.native
   /**
@@ -5605,11 +5623,11 @@ trait EC2 extends Service {
     * Waits for the customerGatewayAvailable state by periodically calling the underlying EC2.describeCustomerGatewaysoperation every 15 seconds (at most 40 times).
     */
   @JSName("waitFor")
-  def waitFor_customerGatewayAvailable(state: customerGatewayAvailable, params: DescribeCustomerGatewaysRequest with AnonWaiter): Request[DescribeCustomerGatewaysResult, AWSError] = js.native
+  def waitFor_customerGatewayAvailable(state: customerGatewayAvailable, params: DescribeCustomerGatewaysR): Request[DescribeCustomerGatewaysResult, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_customerGatewayAvailable(
     state: customerGatewayAvailable,
-    params: DescribeCustomerGatewaysRequest with AnonWaiter,
+    params: DescribeCustomerGatewaysR,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeCustomerGatewaysResult, Unit]
   ): Request[DescribeCustomerGatewaysResult, AWSError] = js.native
   /**
@@ -5626,11 +5644,11 @@ trait EC2 extends Service {
     * Waits for the exportTaskCancelled state by periodically calling the underlying EC2.describeExportTasksoperation every 15 seconds (at most 40 times).
     */
   @JSName("waitFor")
-  def waitFor_exportTaskCancelled(state: exportTaskCancelled, params: DescribeExportTasksRequest with AnonWaiter): Request[DescribeExportTasksResult, AWSError] = js.native
+  def waitFor_exportTaskCancelled(state: exportTaskCancelled, params: DescribeExportTasksReques): Request[DescribeExportTasksResult, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_exportTaskCancelled(
     state: exportTaskCancelled,
-    params: DescribeExportTasksRequest with AnonWaiter,
+    params: DescribeExportTasksReques,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeExportTasksResult, Unit]
   ): Request[DescribeExportTasksResult, AWSError] = js.native
   /**
@@ -5647,11 +5665,11 @@ trait EC2 extends Service {
     * Waits for the exportTaskCompleted state by periodically calling the underlying EC2.describeExportTasksoperation every 15 seconds (at most 40 times).
     */
   @JSName("waitFor")
-  def waitFor_exportTaskCompleted(state: exportTaskCompleted, params: DescribeExportTasksRequest with AnonWaiter): Request[DescribeExportTasksResult, AWSError] = js.native
+  def waitFor_exportTaskCompleted(state: exportTaskCompleted, params: DescribeExportTasksReques): Request[DescribeExportTasksResult, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_exportTaskCompleted(
     state: exportTaskCompleted,
-    params: DescribeExportTasksRequest with AnonWaiter,
+    params: DescribeExportTasksReques,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeExportTasksResult, Unit]
   ): Request[DescribeExportTasksResult, AWSError] = js.native
   /**
@@ -5668,11 +5686,11 @@ trait EC2 extends Service {
     * Waits for the imageAvailable state by periodically calling the underlying EC2.describeImagesoperation every 15 seconds (at most 40 times).
     */
   @JSName("waitFor")
-  def waitFor_imageAvailable(state: imageAvailable, params: DescribeImagesRequest with AnonWaiter): Request[DescribeImagesResult, AWSError] = js.native
+  def waitFor_imageAvailable(state: imageAvailable, params: DescribeImagesRequestwait): Request[DescribeImagesResult, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_imageAvailable(
     state: imageAvailable,
-    params: DescribeImagesRequest with AnonWaiter,
+    params: DescribeImagesRequestwait,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeImagesResult, Unit]
   ): Request[DescribeImagesResult, AWSError] = js.native
   /**
@@ -5689,11 +5707,11 @@ trait EC2 extends Service {
     * Waits for the imageExists state by periodically calling the underlying EC2.describeImagesoperation every 15 seconds (at most 40 times).
     */
   @JSName("waitFor")
-  def waitFor_imageExists(state: imageExists, params: DescribeImagesRequest with AnonWaiter): Request[DescribeImagesResult, AWSError] = js.native
+  def waitFor_imageExists(state: imageExists, params: DescribeImagesRequestwait): Request[DescribeImagesResult, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_imageExists(
     state: imageExists,
-    params: DescribeImagesRequest with AnonWaiter,
+    params: DescribeImagesRequestwait,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeImagesResult, Unit]
   ): Request[DescribeImagesResult, AWSError] = js.native
   /**
@@ -5710,11 +5728,11 @@ trait EC2 extends Service {
     * Waits for the instanceExists state by periodically calling the underlying EC2.describeInstancesoperation every 5 seconds (at most 40 times).
     */
   @JSName("waitFor")
-  def waitFor_instanceExists(state: instanceExists, params: DescribeInstancesRequest with AnonWaiter): Request[DescribeInstancesResult, AWSError] = js.native
+  def waitFor_instanceExists(state: instanceExists, params: DescribeInstancesRequestw): Request[DescribeInstancesResult, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_instanceExists(
     state: instanceExists,
-    params: DescribeInstancesRequest with AnonWaiter,
+    params: DescribeInstancesRequestw,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeInstancesResult, Unit]
   ): Request[DescribeInstancesResult, AWSError] = js.native
   /**
@@ -5731,11 +5749,11 @@ trait EC2 extends Service {
     * Waits for the instanceRunning state by periodically calling the underlying EC2.describeInstancesoperation every 15 seconds (at most 40 times).
     */
   @JSName("waitFor")
-  def waitFor_instanceRunning(state: instanceRunning, params: DescribeInstancesRequest with AnonWaiter): Request[DescribeInstancesResult, AWSError] = js.native
+  def waitFor_instanceRunning(state: instanceRunning, params: DescribeInstancesRequestw): Request[DescribeInstancesResult, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_instanceRunning(
     state: instanceRunning,
-    params: DescribeInstancesRequest with AnonWaiter,
+    params: DescribeInstancesRequestw,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeInstancesResult, Unit]
   ): Request[DescribeInstancesResult, AWSError] = js.native
   /**
@@ -5752,11 +5770,11 @@ trait EC2 extends Service {
     * Waits for the instanceStatusOk state by periodically calling the underlying EC2.describeInstanceStatusoperation every 15 seconds (at most 40 times).
     */
   @JSName("waitFor")
-  def waitFor_instanceStatusOk(state: instanceStatusOk, params: DescribeInstanceStatusRequest with AnonWaiter): Request[DescribeInstanceStatusResult, AWSError] = js.native
+  def waitFor_instanceStatusOk(state: instanceStatusOk, params: DescribeInstanceStatusReq): Request[DescribeInstanceStatusResult, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_instanceStatusOk(
     state: instanceStatusOk,
-    params: DescribeInstanceStatusRequest with AnonWaiter,
+    params: DescribeInstanceStatusReq,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeInstanceStatusResult, Unit]
   ): Request[DescribeInstanceStatusResult, AWSError] = js.native
   /**
@@ -5773,11 +5791,11 @@ trait EC2 extends Service {
     * Waits for the instanceStopped state by periodically calling the underlying EC2.describeInstancesoperation every 15 seconds (at most 40 times).
     */
   @JSName("waitFor")
-  def waitFor_instanceStopped(state: instanceStopped, params: DescribeInstancesRequest with AnonWaiter): Request[DescribeInstancesResult, AWSError] = js.native
+  def waitFor_instanceStopped(state: instanceStopped, params: DescribeInstancesRequestw): Request[DescribeInstancesResult, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_instanceStopped(
     state: instanceStopped,
-    params: DescribeInstancesRequest with AnonWaiter,
+    params: DescribeInstancesRequestw,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeInstancesResult, Unit]
   ): Request[DescribeInstancesResult, AWSError] = js.native
   /**
@@ -5794,11 +5812,11 @@ trait EC2 extends Service {
     * Waits for the instanceTerminated state by periodically calling the underlying EC2.describeInstancesoperation every 15 seconds (at most 40 times).
     */
   @JSName("waitFor")
-  def waitFor_instanceTerminated(state: instanceTerminated, params: DescribeInstancesRequest with AnonWaiter): Request[DescribeInstancesResult, AWSError] = js.native
+  def waitFor_instanceTerminated(state: instanceTerminated, params: DescribeInstancesRequestw): Request[DescribeInstancesResult, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_instanceTerminated(
     state: instanceTerminated,
-    params: DescribeInstancesRequest with AnonWaiter,
+    params: DescribeInstancesRequestw,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeInstancesResult, Unit]
   ): Request[DescribeInstancesResult, AWSError] = js.native
   /**
@@ -5815,11 +5833,11 @@ trait EC2 extends Service {
     * Waits for the keyPairExists state by periodically calling the underlying EC2.describeKeyPairsoperation every 5 seconds (at most 6 times).
     */
   @JSName("waitFor")
-  def waitFor_keyPairExists(state: keyPairExists, params: DescribeKeyPairsRequest with AnonWaiter): Request[DescribeKeyPairsResult, AWSError] = js.native
+  def waitFor_keyPairExists(state: keyPairExists, params: DescribeKeyPairsRequestwa): Request[DescribeKeyPairsResult, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_keyPairExists(
     state: keyPairExists,
-    params: DescribeKeyPairsRequest with AnonWaiter,
+    params: DescribeKeyPairsRequestwa,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeKeyPairsResult, Unit]
   ): Request[DescribeKeyPairsResult, AWSError] = js.native
   /**
@@ -5836,11 +5854,11 @@ trait EC2 extends Service {
     * Waits for the natGatewayAvailable state by periodically calling the underlying EC2.describeNatGatewaysoperation every 15 seconds (at most 40 times).
     */
   @JSName("waitFor")
-  def waitFor_natGatewayAvailable(state: natGatewayAvailable, params: DescribeNatGatewaysRequest with AnonWaiter): Request[DescribeNatGatewaysResult, AWSError] = js.native
+  def waitFor_natGatewayAvailable(state: natGatewayAvailable, params: DescribeNatGatewaysReques): Request[DescribeNatGatewaysResult, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_natGatewayAvailable(
     state: natGatewayAvailable,
-    params: DescribeNatGatewaysRequest with AnonWaiter,
+    params: DescribeNatGatewaysReques,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeNatGatewaysResult, Unit]
   ): Request[DescribeNatGatewaysResult, AWSError] = js.native
   /**
@@ -5857,11 +5875,11 @@ trait EC2 extends Service {
     * Waits for the networkInterfaceAvailable state by periodically calling the underlying EC2.describeNetworkInterfacesoperation every 20 seconds (at most 10 times).
     */
   @JSName("waitFor")
-  def waitFor_networkInterfaceAvailable(state: networkInterfaceAvailable, params: DescribeNetworkInterfacesRequest with AnonWaiter): Request[DescribeNetworkInterfacesResult, AWSError] = js.native
+  def waitFor_networkInterfaceAvailable(state: networkInterfaceAvailable, params: DescribeNetworkInterfaces): Request[DescribeNetworkInterfacesResult, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_networkInterfaceAvailable(
     state: networkInterfaceAvailable,
-    params: DescribeNetworkInterfacesRequest with AnonWaiter,
+    params: DescribeNetworkInterfaces,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeNetworkInterfacesResult, Unit]
   ): Request[DescribeNetworkInterfacesResult, AWSError] = js.native
   /**
@@ -5878,11 +5896,11 @@ trait EC2 extends Service {
     * Waits for the passwordDataAvailable state by periodically calling the underlying EC2.getPasswordDataoperation every 15 seconds (at most 40 times).
     */
   @JSName("waitFor")
-  def waitFor_passwordDataAvailable(state: passwordDataAvailable, params: GetPasswordDataRequest with AnonWaiter): Request[GetPasswordDataResult, AWSError] = js.native
+  def waitFor_passwordDataAvailable(state: passwordDataAvailable, params: GetPasswordDataRequestwai): Request[GetPasswordDataResult, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_passwordDataAvailable(
     state: passwordDataAvailable,
-    params: GetPasswordDataRequest with AnonWaiter,
+    params: GetPasswordDataRequestwai,
     callback: js.Function2[/* err */ AWSError, /* data */ GetPasswordDataResult, Unit]
   ): Request[GetPasswordDataResult, AWSError] = js.native
   /**
@@ -5899,11 +5917,11 @@ trait EC2 extends Service {
     * Waits for the securityGroupExists state by periodically calling the underlying EC2.describeSecurityGroupsoperation every 5 seconds (at most 6 times).
     */
   @JSName("waitFor")
-  def waitFor_securityGroupExists(state: securityGroupExists, params: DescribeSecurityGroupsRequest with AnonWaiter): Request[DescribeSecurityGroupsResult, AWSError] = js.native
+  def waitFor_securityGroupExists(state: securityGroupExists, params: DescribeSecurityGroupsReq): Request[DescribeSecurityGroupsResult, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_securityGroupExists(
     state: securityGroupExists,
-    params: DescribeSecurityGroupsRequest with AnonWaiter,
+    params: DescribeSecurityGroupsReq,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeSecurityGroupsResult, Unit]
   ): Request[DescribeSecurityGroupsResult, AWSError] = js.native
   /**
@@ -5920,11 +5938,11 @@ trait EC2 extends Service {
     * Waits for the snapshotCompleted state by periodically calling the underlying EC2.describeSnapshotsoperation every 15 seconds (at most 40 times).
     */
   @JSName("waitFor")
-  def waitFor_snapshotCompleted(state: snapshotCompleted, params: DescribeSnapshotsRequest with AnonWaiter): Request[DescribeSnapshotsResult, AWSError] = js.native
+  def waitFor_snapshotCompleted(state: snapshotCompleted, params: DescribeSnapshotsRequestw): Request[DescribeSnapshotsResult, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_snapshotCompleted(
     state: snapshotCompleted,
-    params: DescribeSnapshotsRequest with AnonWaiter,
+    params: DescribeSnapshotsRequestw,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeSnapshotsResult, Unit]
   ): Request[DescribeSnapshotsResult, AWSError] = js.native
   /**
@@ -5941,11 +5959,11 @@ trait EC2 extends Service {
     * Waits for the spotInstanceRequestFulfilled state by periodically calling the underlying EC2.describeSpotInstanceRequestsoperation every 15 seconds (at most 40 times).
     */
   @JSName("waitFor")
-  def waitFor_spotInstanceRequestFulfilled(state: spotInstanceRequestFulfilled, params: DescribeSpotInstanceRequestsRequest with AnonWaiter): Request[DescribeSpotInstanceRequestsResult, AWSError] = js.native
+  def waitFor_spotInstanceRequestFulfilled(state: spotInstanceRequestFulfilled, params: DescribeSpotInstanceReque): Request[DescribeSpotInstanceRequestsResult, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_spotInstanceRequestFulfilled(
     state: spotInstanceRequestFulfilled,
-    params: DescribeSpotInstanceRequestsRequest with AnonWaiter,
+    params: DescribeSpotInstanceReque,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeSpotInstanceRequestsResult, Unit]
   ): Request[DescribeSpotInstanceRequestsResult, AWSError] = js.native
   /**
@@ -5962,11 +5980,11 @@ trait EC2 extends Service {
     * Waits for the subnetAvailable state by periodically calling the underlying EC2.describeSubnetsoperation every 15 seconds (at most 40 times).
     */
   @JSName("waitFor")
-  def waitFor_subnetAvailable(state: subnetAvailable, params: DescribeSubnetsRequest with AnonWaiter): Request[DescribeSubnetsResult, AWSError] = js.native
+  def waitFor_subnetAvailable(state: subnetAvailable, params: DescribeSubnetsRequestwai): Request[DescribeSubnetsResult, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_subnetAvailable(
     state: subnetAvailable,
-    params: DescribeSubnetsRequest with AnonWaiter,
+    params: DescribeSubnetsRequestwai,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeSubnetsResult, Unit]
   ): Request[DescribeSubnetsResult, AWSError] = js.native
   /**
@@ -5983,11 +6001,11 @@ trait EC2 extends Service {
     * Waits for the systemStatusOk state by periodically calling the underlying EC2.describeInstanceStatusoperation every 15 seconds (at most 40 times).
     */
   @JSName("waitFor")
-  def waitFor_systemStatusOk(state: systemStatusOk, params: DescribeInstanceStatusRequest with AnonWaiter): Request[DescribeInstanceStatusResult, AWSError] = js.native
+  def waitFor_systemStatusOk(state: systemStatusOk, params: DescribeInstanceStatusReq): Request[DescribeInstanceStatusResult, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_systemStatusOk(
     state: systemStatusOk,
-    params: DescribeInstanceStatusRequest with AnonWaiter,
+    params: DescribeInstanceStatusReq,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeInstanceStatusResult, Unit]
   ): Request[DescribeInstanceStatusResult, AWSError] = js.native
   /**
@@ -6004,11 +6022,11 @@ trait EC2 extends Service {
     * Waits for the volumeAvailable state by periodically calling the underlying EC2.describeVolumesoperation every 15 seconds (at most 40 times).
     */
   @JSName("waitFor")
-  def waitFor_volumeAvailable(state: volumeAvailable, params: DescribeVolumesRequest with AnonWaiter): Request[DescribeVolumesResult, AWSError] = js.native
+  def waitFor_volumeAvailable(state: volumeAvailable, params: DescribeVolumesRequestwai): Request[DescribeVolumesResult, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_volumeAvailable(
     state: volumeAvailable,
-    params: DescribeVolumesRequest with AnonWaiter,
+    params: DescribeVolumesRequestwai,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeVolumesResult, Unit]
   ): Request[DescribeVolumesResult, AWSError] = js.native
   /**
@@ -6025,11 +6043,11 @@ trait EC2 extends Service {
     * Waits for the volumeDeleted state by periodically calling the underlying EC2.describeVolumesoperation every 15 seconds (at most 40 times).
     */
   @JSName("waitFor")
-  def waitFor_volumeDeleted(state: volumeDeleted, params: DescribeVolumesRequest with AnonWaiter): Request[DescribeVolumesResult, AWSError] = js.native
+  def waitFor_volumeDeleted(state: volumeDeleted, params: DescribeVolumesRequestwai): Request[DescribeVolumesResult, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_volumeDeleted(
     state: volumeDeleted,
-    params: DescribeVolumesRequest with AnonWaiter,
+    params: DescribeVolumesRequestwai,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeVolumesResult, Unit]
   ): Request[DescribeVolumesResult, AWSError] = js.native
   /**
@@ -6046,11 +6064,11 @@ trait EC2 extends Service {
     * Waits for the volumeInUse state by periodically calling the underlying EC2.describeVolumesoperation every 15 seconds (at most 40 times).
     */
   @JSName("waitFor")
-  def waitFor_volumeInUse(state: volumeInUse, params: DescribeVolumesRequest with AnonWaiter): Request[DescribeVolumesResult, AWSError] = js.native
+  def waitFor_volumeInUse(state: volumeInUse, params: DescribeVolumesRequestwai): Request[DescribeVolumesResult, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_volumeInUse(
     state: volumeInUse,
-    params: DescribeVolumesRequest with AnonWaiter,
+    params: DescribeVolumesRequestwai,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeVolumesResult, Unit]
   ): Request[DescribeVolumesResult, AWSError] = js.native
   /**
@@ -6067,11 +6085,11 @@ trait EC2 extends Service {
     * Waits for the vpcAvailable state by periodically calling the underlying EC2.describeVpcsoperation every 15 seconds (at most 40 times).
     */
   @JSName("waitFor")
-  def waitFor_vpcAvailable(state: vpcAvailable, params: DescribeVpcsRequest with AnonWaiter): Request[DescribeVpcsResult, AWSError] = js.native
+  def waitFor_vpcAvailable(state: vpcAvailable, params: DescribeVpcsRequestwaiter): Request[DescribeVpcsResult, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_vpcAvailable(
     state: vpcAvailable,
-    params: DescribeVpcsRequest with AnonWaiter,
+    params: DescribeVpcsRequestwaiter,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeVpcsResult, Unit]
   ): Request[DescribeVpcsResult, AWSError] = js.native
   /**
@@ -6085,11 +6103,11 @@ trait EC2 extends Service {
     * Waits for the vpcExists state by periodically calling the underlying EC2.describeVpcsoperation every 1 seconds (at most 5 times).
     */
   @JSName("waitFor")
-  def waitFor_vpcExists(state: vpcExists, params: DescribeVpcsRequest with AnonWaiter): Request[DescribeVpcsResult, AWSError] = js.native
+  def waitFor_vpcExists(state: vpcExists, params: DescribeVpcsRequestwaiter): Request[DescribeVpcsResult, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_vpcExists(
     state: vpcExists,
-    params: DescribeVpcsRequest with AnonWaiter,
+    params: DescribeVpcsRequestwaiter,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeVpcsResult, Unit]
   ): Request[DescribeVpcsResult, AWSError] = js.native
   /**
@@ -6106,11 +6124,11 @@ trait EC2 extends Service {
     * Waits for the vpcPeeringConnectionDeleted state by periodically calling the underlying EC2.describeVpcPeeringConnectionsoperation every 15 seconds (at most 40 times).
     */
   @JSName("waitFor")
-  def waitFor_vpcPeeringConnectionDeleted(state: vpcPeeringConnectionDeleted, params: DescribeVpcPeeringConnectionsRequest with AnonWaiter): Request[DescribeVpcPeeringConnectionsResult, AWSError] = js.native
+  def waitFor_vpcPeeringConnectionDeleted(state: vpcPeeringConnectionDeleted, params: DescribeVpcPeeringConnect): Request[DescribeVpcPeeringConnectionsResult, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_vpcPeeringConnectionDeleted(
     state: vpcPeeringConnectionDeleted,
-    params: DescribeVpcPeeringConnectionsRequest with AnonWaiter,
+    params: DescribeVpcPeeringConnect,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeVpcPeeringConnectionsResult, Unit]
   ): Request[DescribeVpcPeeringConnectionsResult, AWSError] = js.native
   /**
@@ -6127,11 +6145,11 @@ trait EC2 extends Service {
     * Waits for the vpcPeeringConnectionExists state by periodically calling the underlying EC2.describeVpcPeeringConnectionsoperation every 15 seconds (at most 40 times).
     */
   @JSName("waitFor")
-  def waitFor_vpcPeeringConnectionExists(state: vpcPeeringConnectionExists, params: DescribeVpcPeeringConnectionsRequest with AnonWaiter): Request[DescribeVpcPeeringConnectionsResult, AWSError] = js.native
+  def waitFor_vpcPeeringConnectionExists(state: vpcPeeringConnectionExists, params: DescribeVpcPeeringConnect): Request[DescribeVpcPeeringConnectionsResult, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_vpcPeeringConnectionExists(
     state: vpcPeeringConnectionExists,
-    params: DescribeVpcPeeringConnectionsRequest with AnonWaiter,
+    params: DescribeVpcPeeringConnect,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeVpcPeeringConnectionsResult, Unit]
   ): Request[DescribeVpcPeeringConnectionsResult, AWSError] = js.native
   /**
@@ -6148,11 +6166,11 @@ trait EC2 extends Service {
     * Waits for the vpnConnectionAvailable state by periodically calling the underlying EC2.describeVpnConnectionsoperation every 15 seconds (at most 40 times).
     */
   @JSName("waitFor")
-  def waitFor_vpnConnectionAvailable(state: vpnConnectionAvailable, params: DescribeVpnConnectionsRequest with AnonWaiter): Request[DescribeVpnConnectionsResult, AWSError] = js.native
+  def waitFor_vpnConnectionAvailable(state: vpnConnectionAvailable, params: DescribeVpnConnectionsReq): Request[DescribeVpnConnectionsResult, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_vpnConnectionAvailable(
     state: vpnConnectionAvailable,
-    params: DescribeVpnConnectionsRequest with AnonWaiter,
+    params: DescribeVpnConnectionsReq,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeVpnConnectionsResult, Unit]
   ): Request[DescribeVpnConnectionsResult, AWSError] = js.native
   /**
@@ -6169,11 +6187,11 @@ trait EC2 extends Service {
     * Waits for the vpnConnectionDeleted state by periodically calling the underlying EC2.describeVpnConnectionsoperation every 15 seconds (at most 40 times).
     */
   @JSName("waitFor")
-  def waitFor_vpnConnectionDeleted(state: vpnConnectionDeleted, params: DescribeVpnConnectionsRequest with AnonWaiter): Request[DescribeVpnConnectionsResult, AWSError] = js.native
+  def waitFor_vpnConnectionDeleted(state: vpnConnectionDeleted, params: DescribeVpnConnectionsReq): Request[DescribeVpnConnectionsResult, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_vpnConnectionDeleted(
     state: vpnConnectionDeleted,
-    params: DescribeVpnConnectionsRequest with AnonWaiter,
+    params: DescribeVpnConnectionsReq,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeVpnConnectionsResult, Unit]
   ): Request[DescribeVpnConnectionsResult, AWSError] = js.native
   /**

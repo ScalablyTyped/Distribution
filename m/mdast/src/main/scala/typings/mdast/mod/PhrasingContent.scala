@@ -28,64 +28,12 @@ trait PhrasingContent extends _Content
 
 object PhrasingContent {
   @scala.inline
-  def HTML(`type`: html, value: js.Any, data: Data = null, position: Position = null): PhrasingContent = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    __obj.asInstanceOf[PhrasingContent]
-  }
-  @scala.inline
-  def InlineCode(`type`: inlineCode, value: js.Any, data: Data = null, position: Position = null): PhrasingContent = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    __obj.asInstanceOf[PhrasingContent]
-  }
-  @scala.inline
-  def Image(
-    `type`: image,
-    url: String,
-    alt: String = null,
+  def Footnote(
+    children: js.Array[PhrasingContent],
+    `type`: footnote,
     data: Data = null,
-    position: Position = null,
-    title: String = null
+    position: Position = null
   ): PhrasingContent = {
-    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    __obj.asInstanceOf[PhrasingContent]
-  }
-  @scala.inline
-  def Text(`type`: text, value: js.Any, data: Data = null, position: Position = null): PhrasingContent = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    __obj.asInstanceOf[PhrasingContent]
-  }
-  @scala.inline
-  def Link(
-    children: js.Array[StaticPhrasingContent],
-    `type`: link,
-    url: String,
-    data: Data = null,
-    position: Position = null,
-    title: String = null
-  ): PhrasingContent = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    __obj.asInstanceOf[PhrasingContent]
-  }
-  @scala.inline
-  def Strong(children: js.Array[PhrasingContent], `type`: strong, data: Data = null, position: Position = null): PhrasingContent = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
@@ -106,37 +54,30 @@ object PhrasingContent {
     __obj.asInstanceOf[PhrasingContent]
   }
   @scala.inline
-  def Delete(children: js.Array[PhrasingContent], `type`: delete, data: Data = null, position: Position = null): PhrasingContent = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+  def HTML(`type`: html, value: js.Any, data: Data = null, position: Position = null): PhrasingContent = {
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[PhrasingContent]
   }
   @scala.inline
-  def Footnote(
-    children: js.Array[PhrasingContent],
-    `type`: footnote,
-    data: Data = null,
-    position: Position = null
-  ): PhrasingContent = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+  def Break(`type`: break, data: Data = null, position: Position = null): PhrasingContent = {
+    val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[PhrasingContent]
   }
   @scala.inline
-  def LinkReference(
-    children: js.Array[StaticPhrasingContent],
+  def FootnoteReference(
     identifier: String,
-    referenceType: ReferenceType,
-    `type`: linkReference,
+    `type`: footnoteReference,
     data: Data = null,
     label: String = null,
     position: Position = null
   ): PhrasingContent = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], identifier = identifier.asInstanceOf[js.Any], referenceType = referenceType.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(identifier = identifier.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
@@ -144,8 +85,8 @@ object PhrasingContent {
     __obj.asInstanceOf[PhrasingContent]
   }
   @scala.inline
-  def Break(`type`: break, data: Data = null, position: Position = null): PhrasingContent = {
-    val __obj = js.Dynamic.literal()
+  def InlineCode(`type`: inlineCode, value: js.Any, data: Data = null, position: Position = null): PhrasingContent = {
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
@@ -170,18 +111,77 @@ object PhrasingContent {
     __obj.asInstanceOf[PhrasingContent]
   }
   @scala.inline
-  def FootnoteReference(
+  def Delete(children: js.Array[PhrasingContent], `type`: delete, data: Data = null, position: Position = null): PhrasingContent = {
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PhrasingContent]
+  }
+  @scala.inline
+  def Link(
+    children: js.Array[StaticPhrasingContent],
+    `type`: link,
+    url: String,
+    data: Data = null,
+    position: Position = null,
+    title: String = null
+  ): PhrasingContent = {
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PhrasingContent]
+  }
+  @scala.inline
+  def Text(`type`: text, value: js.Any, data: Data = null, position: Position = null): PhrasingContent = {
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PhrasingContent]
+  }
+  @scala.inline
+  def Strong(children: js.Array[PhrasingContent], `type`: strong, data: Data = null, position: Position = null): PhrasingContent = {
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PhrasingContent]
+  }
+  @scala.inline
+  def LinkReference(
+    children: js.Array[StaticPhrasingContent],
     identifier: String,
-    `type`: footnoteReference,
+    referenceType: ReferenceType,
+    `type`: linkReference,
     data: Data = null,
     label: String = null,
     position: Position = null
   ): PhrasingContent = {
-    val __obj = js.Dynamic.literal(identifier = identifier.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], identifier = identifier.asInstanceOf[js.Any], referenceType = referenceType.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PhrasingContent]
+  }
+  @scala.inline
+  def Image(
+    `type`: image,
+    url: String,
+    alt: String = null,
+    data: Data = null,
+    position: Position = null,
+    title: String = null
+  ): PhrasingContent = {
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[PhrasingContent]
   }
 }

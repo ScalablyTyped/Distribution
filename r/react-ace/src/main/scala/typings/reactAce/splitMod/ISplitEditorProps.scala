@@ -1,8 +1,8 @@
 package typings.reactAce.splitMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.brace.mod.Annotation
 import typings.reactAce.typesMod.IAceOptions
+import typings.reactAce.typesMod.IAnnotation
 import typings.reactAce.typesMod.ICommand
 import typings.reactAce.typesMod.IEditorProps
 import typings.reactAce.typesMod.IMarker
@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 
 trait ISplitEditorProps
   extends /* index */ StringDictionary[js.Any] {
-  var annotations: js.UndefOr[js.Array[js.Array[Annotation]]] = js.undefined
+  var annotations: js.UndefOr[js.Array[js.Array[IAnnotation]]] = js.undefined
   var className: js.UndefOr[String] = js.undefined
   var commands: js.UndefOr[js.Array[ICommand]] = js.undefined
   var cursorStart: js.UndefOr[Double] = js.undefined
@@ -67,7 +67,7 @@ object ISplitEditorProps {
     splits: Double,
     style: js.Any,
     StringDictionary: /* index */ StringDictionary[js.Any] = null,
-    annotations: js.Array[js.Array[Annotation]] = null,
+    annotations: js.Array[js.Array[IAnnotation]] = null,
     className: String = null,
     commands: js.Array[ICommand] = null,
     cursorStart: Int | Double = null,

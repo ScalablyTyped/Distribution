@@ -10,9 +10,6 @@ package object mod {
     /* result */ js.UndefOr[java.lang.String], 
     scala.Unit
   ]
-  type Nssm = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in nssm.nssm.Command ]: nssm.nssm.NssmCommandFn}
-    */ typings.nssm.nssmStrings.Nssm with js.Any
   type NssmCatch[T] = js.Function1[
     /* onrejected */ js.UndefOr[
       (js.Function2[

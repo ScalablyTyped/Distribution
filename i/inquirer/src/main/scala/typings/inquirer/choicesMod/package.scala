@@ -27,5 +27,5 @@ package object choicesMod {
     * @template T
     * The type of the answers.
     */
-  type RealChoice[T] = typings.std.Exclude[typings.inquirer.choicesMod.DistinctChoice[T], typings.inquirer.AnonSeparator]
+  type RealChoice[T] = typings.std.Exclude[typings.inquirer.choicesMod.DistinctChoice[T], typings.inquirer.AnonType]
 }

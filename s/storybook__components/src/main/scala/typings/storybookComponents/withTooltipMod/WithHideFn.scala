@@ -4,8 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait WithHideFn extends js.Object {
-  def onHide(): Unit
+  def onHide(): Unit = js.native
 }
 
 object WithHideFn {

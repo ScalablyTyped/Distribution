@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object mod extends js.Object {
   def default(): js.Function1[/* history */ History[LocationState], js.Object] = js.native
-  def default(options: AnonLocationState): js.Function1[/* history */ History[LocationState], js.Object] = js.native
+  def default(options: AnonManual): js.Function1[/* history */ History[LocationState], js.Object] = js.native
 }
 

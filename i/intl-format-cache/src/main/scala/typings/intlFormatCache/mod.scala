@@ -15,9 +15,9 @@ object mod extends js.Object {
   val default: MemoizeFormatConstructorFn = js.native
   type CacheValue = NumberFormat | DateTimeFormat | PluralRules | js.Any
   type MemoizeFormatConstructorFn = js.Function2[
-    /* constructor */ AnonArgs, 
+    /* constructor */ AnonInstantiable, 
     /* cache */ js.UndefOr[Record[String, CacheValue]], 
-    js.Function1[/* args */ ConstructorParameters[AnonArgs], js.Any]
+    js.Function1[/* args */ ConstructorParameters[AnonInstantiable], js.Any]
   ]
 }
 

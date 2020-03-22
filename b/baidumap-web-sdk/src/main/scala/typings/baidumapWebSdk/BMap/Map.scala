@@ -2,7 +2,7 @@ package typings.baidumapWebSdk.BMap
 
 import typings.baidumapWebSdk.AnonOverlay
 import typings.baidumapWebSdk.AnonPixel
-import typings.baidumapWebSdk.AnonPixelPoint
+import typings.baidumapWebSdk.AnonPoint
 import typings.baidumapWebSdk.AnonSize
 import typings.baidumapWebSdk.AnonSpots
 import typings.baidumapWebSdk.AnonTarget
@@ -75,7 +75,7 @@ class Map protected () extends js.Object {
   def onhotspotclick(event: AnonSpots): Unit = js.native
   def onhotspotout(event: AnonSpots): Unit = js.native
   def onhotspotover(event: AnonSpots): Unit = js.native
-  def onload(event: AnonPixelPoint): Unit = js.native
+  def onload(event: AnonPoint): Unit = js.native
   def onlongpress(event: AnonPixel): Unit = js.native
   def onmaptypechange(event: AnonTarget): Unit = js.native
   def onmousemove(event: AnonOverlay): Unit = js.native

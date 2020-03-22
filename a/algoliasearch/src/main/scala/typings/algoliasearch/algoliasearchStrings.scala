@@ -6,9 +6,6 @@ import scala.scalajs.js.annotation._
 
 object algoliasearchStrings {
   @js.native
-  sealed trait IndexSettings extends js.Object
-  
-  @js.native
   sealed trait addObject extends js.Object
   
   @js.native
@@ -37,12 +34,6 @@ object algoliasearchStrings {
   
   @js.native
   sealed trait attribute extends js.Object
-  
-  @js.native
-  sealed trait attributesToHighlight extends js.Object
-  
-  @js.native
-  sealed trait attributesToSnippet extends js.Object
   
   @js.native
   sealed trait az extends js.Object
@@ -99,9 +90,6 @@ object algoliasearchStrings {
   sealed trait deleteObject extends js.Object
   
   @js.native
-  sealed trait distinct extends js.Object
-  
-  @js.native
   sealed trait editSettings extends js.Object
   
   @js.native
@@ -135,9 +123,6 @@ object algoliasearchStrings {
   sealed trait fa extends js.Object
   
   @js.native
-  sealed trait facets extends js.Object
-  
-  @js.native
   sealed trait fi extends js.Object
   
   @js.native
@@ -151,9 +136,6 @@ object algoliasearchStrings {
   
   @js.native
   sealed trait ga extends js.Object
-  
-  @js.native
-  sealed trait getRankingInfo extends js.Object
   
   @js.native
   sealed trait gl extends js.Object
@@ -369,9 +351,6 @@ object algoliasearchStrings {
   sealed trait tt extends js.Object
   
   @js.native
-  sealed trait typoTolerance extends js.Object
-  
-  @js.native
   sealed trait uk extends js.Object
   
   @js.native
@@ -389,8 +368,6 @@ object algoliasearchStrings {
   @js.native
   sealed trait zh extends js.Object
   
-  @scala.inline
-  def IndexSettings: IndexSettings = "IndexSettings".asInstanceOf[IndexSettings]
   @scala.inline
   def addObject: addObject = "addObject".asInstanceOf[addObject]
   @scala.inline
@@ -411,10 +388,6 @@ object algoliasearchStrings {
   def ar: ar = "ar".asInstanceOf[ar]
   @scala.inline
   def attribute: attribute = "attribute".asInstanceOf[attribute]
-  @scala.inline
-  def attributesToHighlight: attributesToHighlight = "attributesToHighlight".asInstanceOf[attributesToHighlight]
-  @scala.inline
-  def attributesToSnippet: attributesToSnippet = "attributesToSnippet".asInstanceOf[attributesToSnippet]
   @scala.inline
   def az: az = "az".asInstanceOf[az]
   @scala.inline
@@ -452,8 +425,6 @@ object algoliasearchStrings {
   @scala.inline
   def deleteObject: deleteObject = "deleteObject".asInstanceOf[deleteObject]
   @scala.inline
-  def distinct: distinct = "distinct".asInstanceOf[distinct]
-  @scala.inline
   def editSettings: editSettings = "editSettings".asInstanceOf[editSettings]
   @scala.inline
   def el: el = "el".asInstanceOf[el]
@@ -476,8 +447,6 @@ object algoliasearchStrings {
   @scala.inline
   def fa: fa = "fa".asInstanceOf[fa]
   @scala.inline
-  def facets: facets = "facets".asInstanceOf[facets]
-  @scala.inline
   def fi: fi = "fi".asInstanceOf[fi]
   @scala.inline
   def firstWords: firstWords = "firstWords".asInstanceOf[firstWords]
@@ -487,8 +456,6 @@ object algoliasearchStrings {
   def fr: fr = "fr".asInstanceOf[fr]
   @scala.inline
   def ga: ga = "ga".asInstanceOf[ga]
-  @scala.inline
-  def getRankingInfo: getRankingInfo = "getRankingInfo".asInstanceOf[getRankingInfo]
   @scala.inline
   def gl: gl = "gl".asInstanceOf[gl]
   @scala.inline
@@ -631,8 +598,6 @@ object algoliasearchStrings {
   def trainStation: trainStation = "trainStation".asInstanceOf[trainStation]
   @scala.inline
   def tt: tt = "tt".asInstanceOf[tt]
-  @scala.inline
-  def typoTolerance: typoTolerance = "typoTolerance".asInstanceOf[typoTolerance]
   @scala.inline
   def uk: uk = "uk".asInstanceOf[uk]
   @scala.inline

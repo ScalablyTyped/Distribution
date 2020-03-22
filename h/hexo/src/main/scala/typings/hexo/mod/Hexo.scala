@@ -2,7 +2,7 @@ package typings.hexo.mod
 
 import typings.hexo.AnonArgs
 import typings.hexo.AnonConsole
-import typings.hexo.AnonContentPath
+import typings.hexo.AnonContent
 import typings.hexo.hexoStrings.`new`
 import typings.hexo.hexoStrings.create
 import typings.hexo.hexoStrings.delete
@@ -125,7 +125,7 @@ trait Hexo extends EventEmitter {
     * Emitted after a new post has been created. This event returns the post data:
     */
   @JSName("on")
-  def on_new(ev: `new`, fn: js.Function1[/* post */ AnonContentPath, Unit]): this.type = js.native
+  def on_new(ev: `new`, fn: js.Function1[/* post */ AnonContent, Unit]): this.type = js.native
   /**
     * Emitted after initialization finishes.
     */

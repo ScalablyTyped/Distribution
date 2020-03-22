@@ -6,10 +6,9 @@ import typings.d3Shape.mod.CurveFactory
 import typings.d3Shape.mod.CurveGenerator
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativeSvg.mod.PathProps
 import typings.reactNativeSvgCharts.AnonBottom
+import typings.reactNativeSvgCharts.PartialPathProps
 import typings.std.CanvasRenderingContext2D
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,7 +25,7 @@ trait ChartProps[T] extends js.Object {
   var height: js.UndefOr[Double] = js.undefined
   var numberOfTicks: js.UndefOr[Double] = js.undefined
   var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
-  var svg: js.UndefOr[Partial[PathProps]] = js.undefined
+  var svg: js.UndefOr[PartialPathProps] = js.undefined
   var width: js.UndefOr[Double] = js.undefined
   var xAccessor: js.UndefOr[AccessorFunction[T, Double]] = js.undefined
   var xMax: js.UndefOr[Double] = js.undefined
@@ -52,7 +51,7 @@ object ChartProps {
     height: Int | Double = null,
     numberOfTicks: Int | Double = null,
     style: StyleProp[ViewStyle] = null,
-    svg: Partial[PathProps] = null,
+    svg: PartialPathProps = null,
     width: Int | Double = null,
     xAccessor: /* props */ AccessorFunctionProps[T] => Double = null,
     xMax: Int | Double = null,

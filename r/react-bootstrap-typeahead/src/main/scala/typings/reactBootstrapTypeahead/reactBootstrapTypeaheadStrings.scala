@@ -18,13 +18,22 @@ object reactBootstrapTypeaheadStrings {
   sealed trait activeIndex extends MenuItemContextKeys
   
   @js.native
-  sealed trait align extends js.Object
+  sealed trait additions extends js.Object
+  
+  @js.native
+  sealed trait `additions text` extends js.Object
+  
+  @js.native
+  sealed trait all extends js.Object
+  
+  @js.native
+  sealed trait ascending extends js.Object
+  
+  @js.native
+  sealed trait assertive extends js.Object
   
   @js.native
   sealed trait both extends js.Object
-  
-  @js.native
-  sealed trait boxSizing extends js.Object
   
   @js.native
   sealed trait bsSize extends TypeaheadInputPropKeys
@@ -33,10 +42,22 @@ object reactBootstrapTypeaheadStrings {
   sealed trait button extends js.Object
   
   @js.native
-  sealed trait className extends js.Object
+  sealed trait combobox extends js.Object
   
   @js.native
-  sealed trait combobox extends js.Object
+  sealed trait copy extends js.Object
+  
+  @js.native
+  sealed trait date extends js.Object
+  
+  @js.native
+  sealed trait decimal extends js.Object
+  
+  @js.native
+  sealed trait descending extends js.Object
+  
+  @js.native
+  sealed trait dialog extends js.Object
   
   @js.native
   sealed trait disabled extends TypeaheadInputPropKeys
@@ -45,16 +66,31 @@ object reactBootstrapTypeaheadStrings {
   sealed trait div extends js.Object
   
   @js.native
-  sealed trait dropup extends js.Object
+  sealed trait email extends js.Object
   
   @js.native
-  sealed trait flip extends js.Object
+  sealed trait execute extends js.Object
+  
+  @js.native
+  sealed trait grammar extends js.Object
+  
+  @js.native
+  sealed trait grid extends js.Object
   
   @js.native
   sealed trait hintText extends HintedInputContextKeys
   
   @js.native
+  sealed trait horizontal extends js.Object
+  
+  @js.native
+  sealed trait inherit extends js.Object
+  
+  @js.native
   sealed trait initialItem extends HintedInputContextKeys
+  
+  @js.native
+  sealed trait `inline` extends js.Object
   
   @js.native
   sealed trait input extends js.Object
@@ -86,16 +122,46 @@ object reactBootstrapTypeaheadStrings {
   sealed trait li extends js.Object
   
   @js.native
+  sealed trait link extends js.Object
+  
+  @js.native
   sealed trait list extends js.Object
   
   @js.native
   sealed trait listbox extends js.Object
   
   @js.native
+  sealed trait location extends js.Object
+  
+  @js.native
+  sealed trait menu extends js.Object
+  
+  @js.native
+  sealed trait mixed extends js.Object
+  
+  @js.native
+  sealed trait move extends js.Object
+  
+  @js.native
   sealed trait multiple extends TypeaheadInputPropKeys
   
   @js.native
   sealed trait newSelectionPrefix extends TypeaheadMenuPropsPick
+  
+  @js.native
+  sealed trait no extends js.Object
+  
+  @js.native
+  sealed trait none extends js.Object
+  
+  @js.native
+  sealed trait numeric extends js.Object
+  
+  @js.native
+  sealed trait off extends js.Object
+  
+  @js.native
+  sealed trait on extends js.Object
   
   @js.native
   sealed trait onActiveItemChange extends MenuItemContextKeys
@@ -119,22 +185,28 @@ object reactBootstrapTypeaheadStrings {
   sealed trait onKeyDown extends TypeaheadInputPropKeys
   
   @js.native
-  sealed trait onMenuHide extends js.Object
-  
-  @js.native
   sealed trait onMenuItemClick extends MenuItemContextKeys
-  
-  @js.native
-  sealed trait onMenuShow extends js.Object
-  
-  @js.native
-  sealed trait onMenuToggle extends js.Object
   
   @js.native
   sealed trait options extends TypeaheadMenuPropsPick
   
   @js.native
+  sealed trait other extends js.Object
+  
+  @js.native
+  sealed trait page extends js.Object
+  
+  @js.native
   sealed trait placeholder extends TypeaheadInputPropKeys
+  
+  @js.native
+  sealed trait polite extends js.Object
+  
+  @js.native
+  sealed trait popup extends js.Object
+  
+  @js.native
+  sealed trait removals extends js.Object
   
   @js.native
   sealed trait renderMenuItemChildren extends TypeaheadMenuPropsPick
@@ -144,6 +216,9 @@ object reactBootstrapTypeaheadStrings {
   
   @js.native
   sealed trait right extends TypeaheadAlign
+  
+  @js.native
+  sealed trait search extends js.Object
   
   @js.native
   sealed trait selectHintOnEnter extends HintedInputContextKeys
@@ -158,41 +233,86 @@ object reactBootstrapTypeaheadStrings {
   sealed trait small extends TypeaheadBsSizes
   
   @js.native
+  sealed trait spelling extends js.Object
+  
+  @js.native
+  sealed trait step extends js.Object
+  
+  @js.native
+  sealed trait tel extends js.Object
+  
+  @js.native
   sealed trait text extends js.Object
   
   @js.native
-  sealed trait width extends js.Object
+  sealed trait time extends js.Object
+  
+  @js.native
+  sealed trait tree extends js.Object
+  
+  @js.native
+  sealed trait url extends js.Object
+  
+  @js.native
+  sealed trait vertical extends js.Object
+  
+  @js.native
+  sealed trait yes extends js.Object
   
   @scala.inline
   def _empty: _empty = "".asInstanceOf[_empty]
   @scala.inline
   def activeIndex: activeIndex = "activeIndex".asInstanceOf[activeIndex]
   @scala.inline
-  def align: align = "align".asInstanceOf[align]
+  def additions: additions = "additions".asInstanceOf[additions]
+  @scala.inline
+  def `additions text`: `additions text` = "additions text".asInstanceOf[`additions text`]
+  @scala.inline
+  def all: all = "all".asInstanceOf[all]
+  @scala.inline
+  def ascending: ascending = "ascending".asInstanceOf[ascending]
+  @scala.inline
+  def assertive: assertive = "assertive".asInstanceOf[assertive]
   @scala.inline
   def both: both = "both".asInstanceOf[both]
-  @scala.inline
-  def boxSizing: boxSizing = "boxSizing".asInstanceOf[boxSizing]
   @scala.inline
   def bsSize: bsSize = "bsSize".asInstanceOf[bsSize]
   @scala.inline
   def button: button = "button".asInstanceOf[button]
   @scala.inline
-  def className: className = "className".asInstanceOf[className]
-  @scala.inline
   def combobox: combobox = "combobox".asInstanceOf[combobox]
+  @scala.inline
+  def copy: copy = "copy".asInstanceOf[copy]
+  @scala.inline
+  def date: date = "date".asInstanceOf[date]
+  @scala.inline
+  def decimal: decimal = "decimal".asInstanceOf[decimal]
+  @scala.inline
+  def descending: descending = "descending".asInstanceOf[descending]
+  @scala.inline
+  def dialog: dialog = "dialog".asInstanceOf[dialog]
   @scala.inline
   def disabled: disabled = "disabled".asInstanceOf[disabled]
   @scala.inline
   def div: div = "div".asInstanceOf[div]
   @scala.inline
-  def dropup: dropup = "dropup".asInstanceOf[dropup]
+  def email: email = "email".asInstanceOf[email]
   @scala.inline
-  def flip: flip = "flip".asInstanceOf[flip]
+  def execute: execute = "execute".asInstanceOf[execute]
+  @scala.inline
+  def grammar: grammar = "grammar".asInstanceOf[grammar]
+  @scala.inline
+  def grid: grid = "grid".asInstanceOf[grid]
   @scala.inline
   def hintText: hintText = "hintText".asInstanceOf[hintText]
   @scala.inline
+  def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
+  @scala.inline
+  def inherit: inherit = "inherit".asInstanceOf[inherit]
+  @scala.inline
   def initialItem: initialItem = "initialItem".asInstanceOf[initialItem]
+  @scala.inline
+  def `inline`: `inline` = "inline".asInstanceOf[`inline`]
   @scala.inline
   def input: input = "input".asInstanceOf[input]
   @scala.inline
@@ -212,13 +332,33 @@ object reactBootstrapTypeaheadStrings {
   @scala.inline
   def li: li = "li".asInstanceOf[li]
   @scala.inline
+  def link: link = "link".asInstanceOf[link]
+  @scala.inline
   def list: list = "list".asInstanceOf[list]
   @scala.inline
   def listbox: listbox = "listbox".asInstanceOf[listbox]
   @scala.inline
+  def location: location = "location".asInstanceOf[location]
+  @scala.inline
+  def menu: menu = "menu".asInstanceOf[menu]
+  @scala.inline
+  def mixed: mixed = "mixed".asInstanceOf[mixed]
+  @scala.inline
+  def move: move = "move".asInstanceOf[move]
+  @scala.inline
   def multiple: multiple = "multiple".asInstanceOf[multiple]
   @scala.inline
   def newSelectionPrefix: newSelectionPrefix = "newSelectionPrefix".asInstanceOf[newSelectionPrefix]
+  @scala.inline
+  def no: no = "no".asInstanceOf[no]
+  @scala.inline
+  def none: none = "none".asInstanceOf[none]
+  @scala.inline
+  def numeric: numeric = "numeric".asInstanceOf[numeric]
+  @scala.inline
+  def off: off = "off".asInstanceOf[off]
+  @scala.inline
+  def on: on = "on".asInstanceOf[on]
   @scala.inline
   def onActiveItemChange: onActiveItemChange = "onActiveItemChange".asInstanceOf[onActiveItemChange]
   @scala.inline
@@ -234,23 +374,29 @@ object reactBootstrapTypeaheadStrings {
   @scala.inline
   def onKeyDown: onKeyDown = "onKeyDown".asInstanceOf[onKeyDown]
   @scala.inline
-  def onMenuHide: onMenuHide = "onMenuHide".asInstanceOf[onMenuHide]
-  @scala.inline
   def onMenuItemClick: onMenuItemClick = "onMenuItemClick".asInstanceOf[onMenuItemClick]
-  @scala.inline
-  def onMenuShow: onMenuShow = "onMenuShow".asInstanceOf[onMenuShow]
-  @scala.inline
-  def onMenuToggle: onMenuToggle = "onMenuToggle".asInstanceOf[onMenuToggle]
   @scala.inline
   def options: options = "options".asInstanceOf[options]
   @scala.inline
+  def other: other = "other".asInstanceOf[other]
+  @scala.inline
+  def page: page = "page".asInstanceOf[page]
+  @scala.inline
   def placeholder: placeholder = "placeholder".asInstanceOf[placeholder]
+  @scala.inline
+  def polite: polite = "polite".asInstanceOf[polite]
+  @scala.inline
+  def popup: popup = "popup".asInstanceOf[popup]
+  @scala.inline
+  def removals: removals = "removals".asInstanceOf[removals]
   @scala.inline
   def renderMenuItemChildren: renderMenuItemChildren = "renderMenuItemChildren".asInstanceOf[renderMenuItemChildren]
   @scala.inline
   def renderToken: renderToken = "renderToken".asInstanceOf[renderToken]
   @scala.inline
   def right: right = "right".asInstanceOf[right]
+  @scala.inline
+  def search: search = "search".asInstanceOf[search]
   @scala.inline
   def selectHintOnEnter: selectHintOnEnter = "selectHintOnEnter".asInstanceOf[selectHintOnEnter]
   @scala.inline
@@ -260,8 +406,22 @@ object reactBootstrapTypeaheadStrings {
   @scala.inline
   def small: small = "small".asInstanceOf[small]
   @scala.inline
+  def spelling: spelling = "spelling".asInstanceOf[spelling]
+  @scala.inline
+  def step: step = "step".asInstanceOf[step]
+  @scala.inline
+  def tel: tel = "tel".asInstanceOf[tel]
+  @scala.inline
   def text: text = "text".asInstanceOf[text]
   @scala.inline
-  def width: width = "width".asInstanceOf[width]
+  def time: time = "time".asInstanceOf[time]
+  @scala.inline
+  def tree: tree = "tree".asInstanceOf[tree]
+  @scala.inline
+  def url: url = "url".asInstanceOf[url]
+  @scala.inline
+  def vertical: vertical = "vertical".asInstanceOf[vertical]
+  @scala.inline
+  def yes: yes = "yes".asInstanceOf[yes]
 }
 

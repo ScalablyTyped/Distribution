@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "p-progress" : "0.4.1"
+      "p-progress" : "0.4.2"
     }
   ],
   "test-dependencies" : [
     {
-      "p-progress" : "0.4.1"
+      "p-progress" : "0.4.2"
     }
   ],
   "compile-devDependencies" : [

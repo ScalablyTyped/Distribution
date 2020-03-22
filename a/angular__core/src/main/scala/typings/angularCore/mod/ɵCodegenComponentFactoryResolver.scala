@@ -1,6 +1,6 @@
 package typings.angularCore.mod
 
-import typings.angularCore.AnonArgs
+import typings.angularCore.AnonInstantiable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,6 +16,6 @@ class ɵCodegenComponentFactoryResolver protected () extends ComponentFactoryRes
   var _factories: js.Any = js.native
   var _ngModule: js.Any = js.native
   var _parent: js.Any = js.native
-  def resolveComponentFactory[T](component: AnonArgs[T]): ComponentFactory[T] = js.native
+  def resolveComponentFactory[T](component: AnonInstantiable[T]): ComponentFactory[T] = js.native
 }
 

@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 trait mjmlReactProps {
   @scala.inline
-  def MjmlAllProps: AnonChildrenKey.type = typings.mjmlReact.AnonChildrenKey
-  type MjmlAllProps = AnonChildrenKey
+  def MjmlAllProps: AnonDictkey.type = typings.mjmlReact.AnonDictkey
+  type MjmlAllProps = AnonDictkey
   @scala.inline
   def MjmlAttributesProps: RequiredChildrenProps.type = typings.mjmlReact.mod.RequiredChildrenProps
   type MjmlAttributesProps = RequiredChildrenProps
@@ -16,14 +16,14 @@ trait mjmlReactProps {
   def MjmlBreakpointProps: typings.mjmlReact.mod.MjmlBreakpointProps.type = typings.mjmlReact.mod.MjmlBreakpointProps
   type MjmlBreakpointProps = typings.mjmlReact.mod.MjmlBreakpointProps
   @scala.inline
-  def MjmlClassProps: AnonChildrenKeyName.type = typings.mjmlReact.AnonChildrenKeyName
-  type MjmlClassProps = AnonChildrenKeyName
+  def MjmlClassProps: AnonName.type = typings.mjmlReact.AnonName
+  type MjmlClassProps = AnonName
   @scala.inline
   def MjmlCommentProps: AnonChildren.type = typings.mjmlReact.AnonChildren
   type MjmlCommentProps = AnonChildren
   @scala.inline
-  def MjmlConditionalCommentProps: AnonChildrenCondition.type = typings.mjmlReact.AnonChildrenCondition
-  type MjmlConditionalCommentProps = AnonChildrenCondition
+  def MjmlConditionalCommentProps: AnonCondition.type = typings.mjmlReact.AnonCondition
+  type MjmlConditionalCommentProps = AnonCondition
   @scala.inline
   def MjmlFontProps: typings.mjmlReact.mod.MjmlFontProps.type = typings.mjmlReact.mod.MjmlFontProps
   type MjmlFontProps = typings.mjmlReact.mod.MjmlFontProps
@@ -37,8 +37,8 @@ trait mjmlReactProps {
   def MjmlRawProps: RequiredChildrenProps.type = typings.mjmlReact.mod.RequiredChildrenProps
   type MjmlRawProps = RequiredChildrenProps
   @scala.inline
-  def MjmlStyleProps: AnonChildrenInline.type = typings.mjmlReact.AnonChildrenInline
-  type MjmlStyleProps = AnonChildrenInline
+  def MjmlStyleProps: AnonInline.type = typings.mjmlReact.AnonInline
+  type MjmlStyleProps = AnonInline
   @scala.inline
   def MjmlTitleProps: AnonChildren.type = typings.mjmlReact.AnonChildren
   type MjmlTitleProps = AnonChildren

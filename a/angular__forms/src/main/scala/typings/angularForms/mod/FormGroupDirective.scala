@@ -23,12 +23,6 @@ class FormGroupDirective protected ()
   var _validators: js.Any = js.native
   /**
     * @description
-    * Returns the `FormGroup` bound to this directive.
-    */
-  @JSName("control")
-  val control_FormGroupDirective: FormGroup = js.native
-  /**
-    * @description
     * Tracks the list of added `FormControlName` instances
     */
   var directives: js.Array[FormControlName] = js.native
@@ -39,22 +33,9 @@ class FormGroupDirective protected ()
   var form: FormGroup = js.native
   /**
     * @description
-    * Returns this directive's instance.
-    */
-  @JSName("formDirective")
-  val formDirective_FormGroupDirective: Form = js.native
-  /**
-    * @description
     * Emits an event when the form submission has been triggered.
     */
   var ngSubmit: EventEmitter[_] = js.native
-  /**
-    * @description
-    * Returns an array representing the path to this group. Because this directive
-    * always lives at the top level of a form, it always an empty array.
-    */
-  @JSName("path")
-  val path_FormGroupDirective: js.Array[String] = js.native
   /**
     * @description
     * Reports whether the form submission has been triggered.

@@ -1,6 +1,6 @@
 package typings.jupyterlabCoreutils.activitymonitorMod.ActivityMonitor
 
-import typings.phosphorSignaling.mod.ISignal
+import typings.luminoSignaling.mod.ISignal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

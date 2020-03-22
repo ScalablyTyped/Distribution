@@ -1,9 +1,9 @@
 package typings.echarts.echarts.EChartOption.SeriesTree
 
-import typings.echarts.AnonAlignBackgroundColorBorderColorBorderRadiusBorderWidth
-import typings.echarts.AnonBackgroundColorBorderColor
-import typings.echarts.AnonBorderColorBorderType
-import typings.echarts.AnonItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidth
+import typings.echarts.AnonBorderType
+import typings.echarts.AnonDistance
+import typings.echarts.AnonExtraCssText
+import typings.echarts.AnonLabelAnonDistance
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -111,21 +111,21 @@ trait DataObject extends js.Object {
   /**
     * @see https://echarts.apache.org/en/option.html#series-tree.data.emphasis
     */
-  var emphasis: js.UndefOr[AnonItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidth] = js.undefined
+  var emphasis: js.UndefOr[AnonLabelAnonDistance] = js.undefined
   /**
     * The style of the node.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-tree.data.itemStyle
     */
-  var itemStyle: js.UndefOr[AnonBorderColorBorderType] = js.undefined
+  var itemStyle: js.UndefOr[AnonBorderType] = js.undefined
   /**
     * The label of the node.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-tree.data.label
     */
-  var label: js.UndefOr[AnonAlignBackgroundColorBorderColorBorderRadiusBorderWidth] = js.undefined
+  var label: js.UndefOr[AnonDistance] = js.undefined
   /**
     * The name of the tree node, used to identify each node.
     *
@@ -139,7 +139,7 @@ trait DataObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-tree.data.tooltip
     */
-  var tooltip: js.UndefOr[AnonBackgroundColorBorderColor] = js.undefined
+  var tooltip: js.UndefOr[AnonExtraCssText] = js.undefined
   /**
     * The value of the node, displayed in the tooltip.
     *
@@ -161,11 +161,11 @@ object DataObject {
     animationEasingUpdate: String = null,
     animationThreshold: Int | Double = null,
     children: js.Array[DataObject] = null,
-    emphasis: AnonItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidth = null,
-    itemStyle: AnonBorderColorBorderType = null,
-    label: AnonAlignBackgroundColorBorderColorBorderRadiusBorderWidth = null,
+    emphasis: AnonLabelAnonDistance = null,
+    itemStyle: AnonBorderType = null,
+    label: AnonDistance = null,
     name: String = null,
-    tooltip: AnonBackgroundColorBorderColor = null,
+    tooltip: AnonExtraCssText = null,
     value: Int | Double = null
   ): DataObject = {
     val __obj = js.Dynamic.literal()

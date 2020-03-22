@@ -1,7 +1,7 @@
 package typings.jupyterlabCells.celldragutilsMod.CellDragUtils
 
 import typings.jupyterlabCells.widgetMod.Cell
-import typings.phosphorAlgorithm.iterMod.IterableOrArrayLike
+import typings.luminoAlgorithm.iterMod.IterableOrArrayLike
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

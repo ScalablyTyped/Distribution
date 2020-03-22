@@ -1,7 +1,7 @@
 package typings.reactLazylog.linePartMod
 
 import typings.react.mod.Component
-import typings.std.Partial
+import typings.reactLazylog.PartialLinePartProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,6 +15,6 @@ class default ()
 @JSImport("react-lazylog/build/LinePart", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: Partial[LinePartProps] = js.native
+  var defaultProps: PartialLinePartProps = js.native
 }
 

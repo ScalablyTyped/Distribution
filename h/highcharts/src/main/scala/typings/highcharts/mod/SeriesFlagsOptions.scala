@@ -8,7 +8,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.highcharts.mod.SeriesOptions because var conflicts: zIndex. Inlined id, index, legendIndex, mapData, name, stack, treemap, `type`, xAxis, yAxis */ trait SeriesFlagsOptions
+- typings.highcharts.mod.SeriesOptions because var conflicts: zIndex. Inlined id, index, legendIndex, mapData, name, stack, `type`, xAxis, yAxis */ trait SeriesFlagsOptions
   extends PlotFlagsOptions
      with SeriesOptionsType {
   /**
@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation._
     * number of data points exceeds the series' turboThreshold, this option is
     * not available. (see online documentation for example)
     */
-  var data: js.UndefOr[js.Array[SeriesFlagsDataOptions]] = js.undefined
+  var data: js.UndefOr[js.Array[PointOptionsObject]] = js.undefined
   /**
     * Not available
     */
@@ -64,7 +64,6 @@ import scala.scalajs.js.annotation._
     * string.
     */
   var stack: js.UndefOr[Double | String] = js.undefined
-  var treemap: js.UndefOr[SeriesTreemapOptions] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) This property is only in
     * TypeScript non-optional and might be `undefined` in series objects from
@@ -91,7 +90,7 @@ object SeriesFlagsOptions {
   @scala.inline
   def apply(
     `type`: String | flags,
-    accessibility: js.Object | PlotFlagsAccessibilityOptions = null,
+    accessibility: SeriesAccessibilityOptionsObject = null,
     allAreas: js.UndefOr[Boolean] = js.undefined,
     allowOverlapX: js.UndefOr[Boolean] = js.undefined,
     allowPointSelect: js.UndefOr[Boolean] = js.undefined,
@@ -108,21 +107,22 @@ object SeriesFlagsOptions {
     compare: String = null,
     compareBase: `0` | `100` = null,
     compareStart: js.UndefOr[Boolean] = js.undefined,
-    connectors: PlotFlagsConnectorsOptions = null,
+    connectors: SeriesConnectorsOptionsObject = null,
     crisp: js.UndefOr[Boolean] = js.undefined,
     cropThreshold: Int | Double = null,
     cursor: String | CursorValue = null,
-    data: js.Array[SeriesFlagsDataOptions] = null,
-    dataLabels: js.Any = null,
+    data: js.Array[PointOptionsObject] = null,
+    dataLabels: DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject] = null,
     dataParser: js.UndefOr[scala.Nothing] = js.undefined,
+    dataSorting: DataSortingOptionsObject | PlotFlagsDataSortingOptions = null,
     dataURL: js.UndefOr[scala.Nothing] = js.undefined,
     depth: Int | Double = null,
     description: String = null,
-    dragDrop: PlotFlagsDragDropOptions = null,
+    dragDrop: SeriesDragDropOptionsObject = null,
     edgeColor: ColorString = null,
     edgeWidth: Int | Double = null,
     enableMouseTracking: js.UndefOr[Boolean] = js.undefined,
-    events: PlotFlagsEventsOptions = null,
+    events: SeriesEventsOptionsObject = null,
     fillColor: ColorString | GradientColorObject | PatternObject = null,
     findNearestPointBy: OptionsFindNearestPointByValue = null,
     getExtremesFromAll: js.UndefOr[Boolean] = js.undefined,
@@ -135,9 +135,9 @@ object SeriesFlagsOptions {
     index: Int | Double = null,
     joinBy: String | js.Array[String] = null,
     keys: js.Array[String] = null,
-    label: PlotFlagsLabelOptions = null,
-    lastPrice: PlotFlagsLastPriceOptions = null,
-    lastVisiblePrice: PlotFlagsLastVisiblePriceOptions = null,
+    label: SeriesLabelOptionsObject = null,
+    lastPrice: SeriesLastPriceOptionsObject = null,
+    lastVisiblePrice: SeriesLastVisiblePriceOptionsObject = null,
     legendIndex: Int | Double = null,
     lineColor: ColorString | GradientColorObject | PatternObject = null,
     lineWidth: Int | Double = null,
@@ -151,7 +151,7 @@ object SeriesFlagsOptions {
     onKey: OptionsOnKeyValue = null,
     onSeries: String = null,
     opacity: Int | Double = null,
-    point: PlotFlagsPointOptions = null,
+    point: PlotSeriesPointOptions = null,
     pointDescriptionFormatter: js.Function = null,
     pointInterval: Int | Double = null,
     pointIntervalUnit: OptionsPointIntervalUnitValue = null,
@@ -169,14 +169,13 @@ object SeriesFlagsOptions {
     stack: Double | String = null,
     stackDistance: Int | Double = null,
     stacking: OptionsStackingValue = null,
-    states: PlotFlagsStatesOptions = null,
+    states: SeriesStatesOptionsObject = null,
     stickyTracking: js.UndefOr[Boolean] = js.undefined,
     style: CSSObject = null,
     textAlign: OptionsTextAlignValue = null,
-    threshold: js.Any = null,
+    threshold: Int | Double = null,
     title: String = null,
-    tooltip: PlotFlagsTooltipOptions = null,
-    treemap: SeriesTreemapOptions = null,
+    tooltip: SeriesTooltipOptionsObject = null,
     useHTML: js.UndefOr[Boolean] = js.undefined,
     visible: js.UndefOr[Boolean] = js.undefined,
     width: Int | Double = null,
@@ -185,7 +184,7 @@ object SeriesFlagsOptions {
     yAxis: Double | String = null,
     zIndex: Int | Double = null,
     zoneAxis: String = null,
-    zones: js.Array[PlotFlagsZonesOptions] = null
+    zones: js.Array[SeriesZonesOptionsObject] = null
   ): SeriesFlagsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -213,6 +212,7 @@ object SeriesFlagsOptions {
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
     if (!js.isUndefined(dataParser)) __obj.updateDynamic("dataParser")(dataParser.asInstanceOf[js.Any])
+    if (dataSorting != null) __obj.updateDynamic("dataSorting")(dataSorting.asInstanceOf[js.Any])
     if (!js.isUndefined(dataURL)) __obj.updateDynamic("dataURL")(dataURL.asInstanceOf[js.Any])
     if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
@@ -274,7 +274,6 @@ object SeriesFlagsOptions {
     if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (treemap != null) __obj.updateDynamic("treemap")(treemap.asInstanceOf[js.Any])
     if (!js.isUndefined(useHTML)) __obj.updateDynamic("useHTML")(useHTML.asInstanceOf[js.Any])
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])

@@ -1,10 +1,7 @@
 package typings.officeUiFabricReact
 
-import typings.officeUiFabricReact.officeUiFabricReactStrings.clearButtonProps
-import typings.officeUiFabricReact.officeUiFabricReactStrings.disableAnimation
 import typings.officeUiFabricReact.searchBoxTypesMod.ISearchBoxProps
 import typings.react.mod.FunctionComponent
-import typings.std.Pick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,7 +19,7 @@ object searchBoxMod extends js.Object {
   /* static members */
   @js.native
   object SearchBoxBase extends js.Object {
-    var defaultProps: Pick[ISearchBoxProps, disableAnimation | clearButtonProps] = js.native
+    var defaultProps: PickISearchBoxPropsdisabl = js.native
   }
   
 }

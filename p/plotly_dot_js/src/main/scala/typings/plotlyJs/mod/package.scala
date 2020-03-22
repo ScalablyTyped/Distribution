@@ -16,13 +16,10 @@ package object mod {
     ]
   ])
   type ColorScale = java.lang.String | (js.Array[java.lang.String | (js.Tuple2[scala.Double, java.lang.String])])
-  type Data = typings.std.Partial[typings.plotlyJs.mod.PlotData]
-  type DataTransform = typings.std.Partial[typings.plotlyJs.mod.Transform]
   type Datum = java.lang.String | scala.Double | typings.std.Date | scala.Null
-  type ErrorBar = typings.std.Partial[typings.plotlyJs.mod.ErrorOptions] with (typings.plotlyJs.AnonConstant | typings.plotlyJs.AnonArray)
+  type ErrorBar = typings.plotlyJs.PartialErrorOptions with (typings.plotlyJs.AnonType | typings.plotlyJs.AnonArray)
   type MarkerSymbol = java.lang.String | scala.Double | (js.Array[java.lang.String | scala.Double])
   type PlotRestyleEvent = js.Tuple2[js.Any, js.Array[scala.Double]]
-  type PlotSelectedData = typings.std.Partial[typings.plotlyJs.mod.PlotDatum]
   type Root = java.lang.String | typings.std.HTMLElement
   type ScatterData = typings.plotlyJs.mod.PlotData
   type ScatterMarker = typings.plotlyJs.mod.PlotMarker

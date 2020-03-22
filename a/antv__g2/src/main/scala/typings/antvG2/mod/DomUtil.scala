@@ -1,6 +1,6 @@
 package typings.antvG2.mod
 
-import typings.antvG2.AnonBottomLeft
+import typings.antvG2.AnonLeft
 import typings.antvG2.antvG2Strings.abort
 import typings.antvG2.antvG2Strings.animationcancel
 import typings.antvG2.antvG2Strings.animationend
@@ -45,7 +45,6 @@ import typings.antvG2.antvG2Strings.keyup
 import typings.antvG2.antvG2Strings.load
 import typings.antvG2.antvG2Strings.loadeddata
 import typings.antvG2.antvG2Strings.loadedmetadata
-import typings.antvG2.antvG2Strings.loadend
 import typings.antvG2.antvG2Strings.loadstart
 import typings.antvG2.antvG2Strings.lostpointercapture
 import typings.antvG2.antvG2Strings.mousedown
@@ -385,12 +384,6 @@ class DomUtil () extends js.Object {
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event_, _]
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_loadend(
-    target: HTMLElement,
-    eventType: loadend,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent[EventTarget], _]
-  ): Unit = js.native
-  @JSName("addEventListener")
   def addEventListener_loadstart(
     target: HTMLElement,
     eventType: loadstart,
@@ -679,7 +672,7 @@ class DomUtil () extends js.Object {
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ WheelEvent, _]
   ): Unit = js.native
   def createDom(str: String): HTMLElement = js.native
-  def getBoundingClientRect(node: Element): AnonBottomLeft = js.native
+  def getBoundingClientRect(node: Element): AnonLeft = js.native
   def getHeight(el: HTMLElement): Double = js.native
   def getOuterHeight(el: HTMLElement): Double = js.native
   def getOuterWidth(el: HTMLElement): Double = js.native

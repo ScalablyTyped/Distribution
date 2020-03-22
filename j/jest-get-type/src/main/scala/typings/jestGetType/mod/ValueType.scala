@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
   - typings.jestGetType.jestGetTypeStrings.array
+  - typings.jestGetType.jestGetTypeStrings.bigint
   - typings.jestGetType.jestGetTypeStrings.boolean
   - typings.jestGetType.jestGetTypeStrings.function
   - typings.jestGetType.jestGetTypeStrings.`null`
@@ -24,6 +25,8 @@ trait ValueType extends js.Object
 object ValueType {
   @scala.inline
   def array: typings.jestGetType.jestGetTypeStrings.array = this.cast("array")
+  @scala.inline
+  def bigint: typings.jestGetType.jestGetTypeStrings.bigint = this.cast("bigint")
   @scala.inline
   def boolean: typings.jestGetType.jestGetTypeStrings.boolean = this.cast("boolean")
   @scala.inline

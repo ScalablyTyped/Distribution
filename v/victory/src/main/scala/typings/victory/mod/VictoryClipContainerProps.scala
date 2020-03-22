@@ -2,7 +2,7 @@ package typings.victory.mod
 
 import typings.react.mod.DOMAttributes
 import typings.react.mod.ReactElement
-import typings.victory.AnonXY
+import typings.victory.AnonY
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -71,7 +71,7 @@ trait VictoryClipContainerProps extends js.Object {
     * Victory components will pass an `origin` prop is to define the center point in svg coordinates for polar charts.
     * **This prop should not be set manually.**
     */
-  var origin: js.UndefOr[AnonXY] = js.undefined
+  var origin: js.UndefOr[AnonY] = js.undefined
   /**
     * Victory components can pass a boolean `polar` prop to specify whether a label is part of a polar chart.
     * **This prop should not be set manually.**
@@ -116,7 +116,7 @@ object VictoryClipContainerProps {
     clipWidth: Int | Double = null,
     events: DOMAttributes[_] = null,
     groupComponent: ReactElement = null,
-    origin: AnonXY = null,
+    origin: AnonY = null,
     polar: js.UndefOr[Boolean] = js.undefined,
     radius: Int | Double = null,
     rectComponent: ReactElement = null,

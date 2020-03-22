@@ -2,8 +2,8 @@ package typings.zapierPlatformCore.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.node.Buffer
+import typings.node.NodeJS.ReadableStream
 import typings.node.httpMod.Agent
-import typings.std.ReadableStream
 import typings.zapierPlatformCore.AnonBody
 import typings.zapierPlatformCore.zapierPlatformCoreStrings.error
 import typings.zapierPlatformCore.zapierPlatformCoreStrings.follow
@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 
 trait HttpRequestOptions extends js.Object {
   var agent: js.UndefOr[Agent] = js.undefined
-  var body: js.UndefOr[String | Buffer | ReadableStream[_] | js.Object] = js.undefined
+  var body: js.UndefOr[String | Buffer | ReadableStream | js.Object] = js.undefined
   var compress: js.UndefOr[Boolean] = js.undefined
   var follow: js.UndefOr[Double] = js.undefined
   var form: js.UndefOr[js.Object] = js.undefined
@@ -34,7 +34,7 @@ object HttpRequestOptions {
   @scala.inline
   def apply(
     agent: Agent = null,
-    body: String | Buffer | ReadableStream[_] | js.Object = null,
+    body: String | Buffer | ReadableStream | js.Object = null,
     compress: js.UndefOr[Boolean] = js.undefined,
     follow: Int | Double = null,
     form: js.Object = null,

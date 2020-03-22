@@ -1,8 +1,6 @@
 package typings.tabulatorTables.Tabulator
 
-import typings.std.Pick
-import typings.tabulatorTables.tabulatorTablesStrings.field
-import typings.tabulatorTables.tabulatorTablesStrings.value
+import typings.tabulatorTables.PickFilterfieldvalue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +15,7 @@ trait OptionsFiltering extends js.Object {
   /** Array of filters to be applied on load.	 */
   var initialFilter: js.UndefOr[js.Array[Filter]] = js.undefined
   /** array of initial values for header filters.	 */
-  var initialHeaderFilter: js.UndefOr[js.Array[Pick[Filter, field | value]]] = js.undefined
+  var initialHeaderFilter: js.UndefOr[js.Array[PickFilterfieldvalue]] = js.undefined
 }
 
 object OptionsFiltering {
@@ -26,7 +24,7 @@ object OptionsFiltering {
     dataFiltered: (/* filters */ js.Array[Filter], /* rows */ js.Array[RowComponent]) => Unit = null,
     dataFiltering: /* filters */ js.Array[Filter] => Unit = null,
     initialFilter: js.Array[Filter] = null,
-    initialHeaderFilter: js.Array[Pick[Filter, field | value]] = null
+    initialHeaderFilter: js.Array[PickFilterfieldvalue] = null
   ): OptionsFiltering = {
     val __obj = js.Dynamic.literal()
     if (dataFiltered != null) __obj.updateDynamic("dataFiltered")(js.Any.fromFunction2(dataFiltered))

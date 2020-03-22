@@ -1,19 +1,18 @@
 package typings.reactFlipMove.mod.FlipMove
 
-import typings.std.CSSStyleDeclaration
-import typings.std.Partial
+import typings.reactFlipMove.PartialCSSStyleDeclaratio
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Animation extends _AnimationProp {
-  var from: Partial[CSSStyleDeclaration]
-  var to: Partial[CSSStyleDeclaration]
+  var from: PartialCSSStyleDeclaratio
+  var to: PartialCSSStyleDeclaratio
 }
 
 object Animation {
   @scala.inline
-  def apply(from: Partial[CSSStyleDeclaration], to: Partial[CSSStyleDeclaration]): Animation = {
+  def apply(from: PartialCSSStyleDeclaratio, to: PartialCSSStyleDeclaratio): Animation = {
     val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Animation]

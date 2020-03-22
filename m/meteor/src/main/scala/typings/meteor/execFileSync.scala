@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 object execFileSync extends js.Object {
   def apply(command: String): String = js.native
   def apply(command: String, args: js.Array[_]): String = js.native
-  def apply(command: String, args: js.Array[_], options: Anon_Cwd): String = js.native
+  def apply(command: String, args: js.Array[_], options: AnonCwd): String = js.native
 }
 

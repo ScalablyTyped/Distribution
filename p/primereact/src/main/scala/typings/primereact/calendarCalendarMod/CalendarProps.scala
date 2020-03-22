@@ -1,7 +1,7 @@
 package typings.primereact.calendarCalendarMod
 
-import typings.primereact.AnonOriginalEventValueArray
-import typings.primereact.AnonOriginalEventValueDate
+import typings.primereact.AnonOriginalEventEvent
+import typings.primereact.AnonOriginalEventValue
 import typings.primereact.tooltipOptionsMod.TooltipOptions
 import typings.react.mod.ReactNode
 import typings.std.Date
@@ -32,6 +32,7 @@ trait CalendarProps extends js.Object {
   var inputClassName: js.UndefOr[String] = js.undefined
   var inputId: js.UndefOr[String] = js.undefined
   var inputStyle: js.UndefOr[js.Object] = js.undefined
+  var keepInvalid: js.UndefOr[Boolean] = js.undefined
   var locale: js.UndefOr[LocaleSettings] = js.undefined
   var maxDate: js.UndefOr[Date] = js.undefined
   var maxDateCount: js.UndefOr[Double] = js.undefined
@@ -40,13 +41,13 @@ trait CalendarProps extends js.Object {
   var name: js.UndefOr[String] = js.undefined
   var numberOfMonths: js.UndefOr[Double] = js.undefined
   var onBlur: js.UndefOr[js.Function1[/* event */ Event_, Unit]] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* e */ AnonOriginalEventValueArray, Unit]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* e */ AnonOriginalEventEvent, Unit]] = js.undefined
   var onClearButtonClick: js.UndefOr[js.Function1[/* event */ Event_, Unit]] = js.undefined
   var onFocus: js.UndefOr[js.Function1[/* event */ Event_, Unit]] = js.undefined
   var onInput: js.UndefOr[js.Function1[/* event */ Event_, Unit]] = js.undefined
-  var onSelect: js.UndefOr[js.Function1[/* e */ AnonOriginalEventValueDate, Unit]] = js.undefined
+  var onSelect: js.UndefOr[js.Function1[/* e */ AnonOriginalEventValue, Unit]] = js.undefined
   var onTodayButtonClick: js.UndefOr[js.Function1[/* event */ Event_, Unit]] = js.undefined
-  var onViewDateChange: js.UndefOr[js.Function1[/* e */ AnonOriginalEventValueDate, Unit]] = js.undefined
+  var onViewDateChange: js.UndefOr[js.Function1[/* e */ AnonOriginalEventValue, Unit]] = js.undefined
   var panelClassName: js.UndefOr[String] = js.undefined
   var panelStyle: js.UndefOr[js.Object] = js.undefined
   var placeholder: js.UndefOr[String] = js.undefined
@@ -103,6 +104,7 @@ object CalendarProps {
     inputClassName: String = null,
     inputId: String = null,
     inputStyle: js.Object = null,
+    keepInvalid: js.UndefOr[Boolean] = js.undefined,
     locale: LocaleSettings = null,
     maxDate: Date = null,
     maxDateCount: Int | Double = null,
@@ -111,13 +113,13 @@ object CalendarProps {
     name: String = null,
     numberOfMonths: Int | Double = null,
     onBlur: /* event */ Event_ => Unit = null,
-    onChange: /* e */ AnonOriginalEventValueArray => Unit = null,
+    onChange: /* e */ AnonOriginalEventEvent => Unit = null,
     onClearButtonClick: /* event */ Event_ => Unit = null,
     onFocus: /* event */ Event_ => Unit = null,
     onInput: /* event */ Event_ => Unit = null,
-    onSelect: /* e */ AnonOriginalEventValueDate => Unit = null,
+    onSelect: /* e */ AnonOriginalEventValue => Unit = null,
     onTodayButtonClick: /* event */ Event_ => Unit = null,
-    onViewDateChange: /* e */ AnonOriginalEventValueDate => Unit = null,
+    onViewDateChange: /* e */ AnonOriginalEventValue => Unit = null,
     panelClassName: String = null,
     panelStyle: js.Object = null,
     placeholder: String = null,
@@ -171,6 +173,7 @@ object CalendarProps {
     if (inputClassName != null) __obj.updateDynamic("inputClassName")(inputClassName.asInstanceOf[js.Any])
     if (inputId != null) __obj.updateDynamic("inputId")(inputId.asInstanceOf[js.Any])
     if (inputStyle != null) __obj.updateDynamic("inputStyle")(inputStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepInvalid)) __obj.updateDynamic("keepInvalid")(keepInvalid.asInstanceOf[js.Any])
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])
     if (maxDateCount != null) __obj.updateDynamic("maxDateCount")(maxDateCount.asInstanceOf[js.Any])

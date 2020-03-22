@@ -2,10 +2,10 @@ package typings.gapiClientPubsub.gapi.client.pubsub
 
 import typings.gapiClient.gapi.client.Request_
 import typings.gapiClientPubsub.AnonAccesstoken
-import typings.gapiClientPubsub.AnonAccesstokenAlt
-import typings.gapiClientPubsub.AnonAccesstokenAltBearertoken
-import typings.gapiClientPubsub.AnonAccesstokenAltBearertokenCallback
-import typings.gapiClientPubsub.AnonAccesstokenAltBearertokenCallbackFields
+import typings.gapiClientPubsub.AnonAlt
+import typings.gapiClientPubsub.AnonBearertoken
+import typings.gapiClientPubsub.AnonCallback
+import typings.gapiClientPubsub.AnonFields
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +21,7 @@ trait SubscriptionsResource extends js.Object {
     * but such a message may be redelivered later. Acknowledging a message more
     * than once will not result in an error.
     */
-  def acknowledge(request: AnonAccesstokenAlt): Request_[js.Object] = js.native
+  def acknowledge(request: AnonAlt): Request_[js.Object] = js.native
   /**
     * Creates a subscription to a given topic.
     * If the subscription already exists, returns `ALREADY_EXISTS`.
@@ -34,7 +34,7 @@ trait SubscriptionsResource extends js.Object {
     * The generated name is populated in the returned Subscription object.
     * Note that for REST API requests, you must specify a name in the request.
     */
-  def create(request: AnonAccesstokenAltBearertoken): Request_[Subscription] = js.native
+  def create(request: AnonBearertoken): Request_[Subscription] = js.native
   /**
     * Deletes an existing subscription. All messages retained in the subscription
     * are immediately dropped. Calls to `Pull` after deletion will return
@@ -42,9 +42,9 @@ trait SubscriptionsResource extends js.Object {
     * the same name, but the new one has no association with the old
     * subscription or its topic unless the same topic is specified.
     */
-  def delete(request: AnonAccesstokenAlt): Request_[js.Object] = js.native
+  def delete(request: AnonAlt): Request_[js.Object] = js.native
   /** Gets the configuration details of a subscription. */
-  def get(request: AnonAccesstokenAlt): Request_[Subscription] = js.native
+  def get(request: AnonAlt): Request_[Subscription] = js.native
   /**
     * Gets the access control policy for a resource.
     * Returns an empty policy if the resource exists and does not have a policy
@@ -52,9 +52,9 @@ trait SubscriptionsResource extends js.Object {
     */
   def getIamPolicy(request: AnonAccesstoken): Request_[Policy] = js.native
   /** Lists matching subscriptions. */
-  def list(request: AnonAccesstokenAltBearertokenCallback): Request_[ListSubscriptionsResponse] = js.native
+  def list(request: AnonCallback): Request_[ListSubscriptionsResponse] = js.native
   /** Lists the name of the subscriptions for this topic. */
-  def list(request: AnonAccesstokenAltBearertokenCallbackFields): Request_[ListTopicSubscriptionsResponse] = js.native
+  def list(request: AnonFields): Request_[ListTopicSubscriptionsResponse] = js.native
   /**
     * Modifies the ack deadline for a specific message. This method is useful
     * to indicate that more time is needed to process a message by the
@@ -62,7 +62,7 @@ trait SubscriptionsResource extends js.Object {
     * processing was interrupted. Note that this does not modify the
     * subscription-level `ackDeadlineSeconds` used for subsequent messages.
     */
-  def modifyAckDeadline(request: AnonAccesstokenAlt): Request_[js.Object] = js.native
+  def modifyAckDeadline(request: AnonAlt): Request_[js.Object] = js.native
   /**
     * Modifies the `PushConfig` for a specified subscription.
     *
@@ -71,14 +71,14 @@ trait SubscriptionsResource extends js.Object {
     * attributes of a push subscription. Messages will accumulate for delivery
     * continuously through the call regardless of changes to the `PushConfig`.
     */
-  def modifyPushConfig(request: AnonAccesstokenAlt): Request_[js.Object] = js.native
+  def modifyPushConfig(request: AnonAlt): Request_[js.Object] = js.native
   /**
     * Pulls messages from the server. Returns an empty list if there are no
     * messages available in the backlog. The server may return `UNAVAILABLE` if
     * there are too many concurrent pull requests pending for the given
     * subscription.
     */
-  def pull(request: AnonAccesstokenAlt): Request_[PullResponse] = js.native
+  def pull(request: AnonAlt): Request_[PullResponse] = js.native
   /**
     * Sets the access control policy on the specified resource. Replaces any
     * existing policy.

@@ -1,7 +1,7 @@
 package typings.jestHasteMap.mod
 
 import org.scalablytyped.runtime.Instantiable2
-import typings.jestHasteMap.TypeofClassHasteModuleMap
+import typings.jestHasteMap.TypeofHasteModuleMap
 import typings.jestHasteMap.moduleMapMod.default
 import typings.jestHasteMap.typesMod.InternalHasteMap
 import typings.jestTypes.configMod.Path
@@ -179,7 +179,7 @@ object ^ extends js.Object {
     typings.jestHasteMap.mod.DuplicateError
   ] = js.native
   var H: HType = js.native
-  var ModuleMap: TypeofClassHasteModuleMap = js.native
+  var ModuleMap: TypeofHasteModuleMap = js.native
   def getCacheFilePath(tmpdir: Path, name: String, extra: String*): String = js.native
 }
 

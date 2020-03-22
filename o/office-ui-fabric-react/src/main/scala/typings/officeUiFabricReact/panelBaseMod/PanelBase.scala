@@ -1,12 +1,14 @@
 package typings.officeUiFabricReact.panelBaseMod
 
+import typings.officeUiFabricReact.PartialIPanelState
+import typings.officeUiFabricReact.ReadonlyIPanelProps
+import typings.officeUiFabricReact.ReadonlyIPanelState
 import typings.officeUiFabricReact.panelTypesMod.IPanel
 import typings.officeUiFabricReact.panelTypesMod.IPanelProps
 import typings.officeUiFabricReact.utilitiesMod.BaseComponent
 import typings.react.mod.SyntheticEvent
 import typings.std.Event_
 import typings.std.HTMLElement
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -52,6 +54,6 @@ class PanelBase protected ()
 @js.native
 object PanelBase extends js.Object {
   var defaultProps: IPanelProps = js.native
-  def getDerivedStateFromProps(nextProps: IPanelProps, prevState: IPanelState): Partial[IPanelState] | Null = js.native
+  def getDerivedStateFromProps(nextProps: ReadonlyIPanelProps, prevState: ReadonlyIPanelState): PartialIPanelState | Null = js.native
 }
 

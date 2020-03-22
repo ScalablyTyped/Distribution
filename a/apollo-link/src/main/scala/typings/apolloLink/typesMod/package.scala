@@ -5,7 +5,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object typesMod {
-  type FetchResult[TData, C, E] = typings.graphql.executeMod.ExecutionResult[TData] with (typings.apolloLink.AnonContext[E, C])
   type NextLink = js.Function1[
     /* operation */ typings.apolloLink.typesMod.Operation, 
     typings.zenObservableTs.zenObservableMod.Observable[

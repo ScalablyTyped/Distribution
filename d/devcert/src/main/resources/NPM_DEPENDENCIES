@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "devcert" : "1.1.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "devcert" : "1.1.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -5,7 +5,8 @@ import typings.graphql.definitionMod.GraphQLFieldConfig
 import typings.graphql.definitionMod.GraphQLInputType
 import typings.graphql.definitionMod.GraphQLOutputType
 import typings.graphqlCompose.AnonParams
-import typings.graphqlCompose.AnonProjectionProjectionType
+import typings.graphqlCompose.AnonProjection
+import typings.graphqlCompose.PartialComposeArgumentCon
 import typings.graphqlCompose.definitionsMod.Extensions
 import typings.graphqlCompose.inputTypeComposerMod.InputTypeComposer
 import typings.graphqlCompose.objectTypeComposerMod.ComposeArgumentConfig
@@ -53,7 +54,7 @@ class Resolver[TSource, TContext, TArgs, TReturn] protected () extends js.Object
   def debugPayload(filterPaths: js.Array[String]): Resolver[TSource, TContext, TArgs, _] = js.native
   def debugPayload(filterPaths: js.Array[String], opts: ResolveDebugOpts): Resolver[TSource, TContext, TArgs, _] = js.native
   def debugPayload(filterPaths: Null, opts: ResolveDebugOpts): Resolver[TSource, TContext, TArgs, _] = js.native
-  def extendArg(argName: String, partialArgConfig: Partial[ComposeArgumentConfigAsObject]): this.type = js.native
+  def extendArg(argName: String, partialArgConfig: PartialComposeArgumentCon): this.type = js.native
   def get(path: String): js.Any = js.native
   def get(path: js.Array[String]): js.Any = js.native
   def getArg(argName: String): ComposeArgumentConfigAsObject = js.native
@@ -69,7 +70,7 @@ class Resolver[TSource, TContext, TArgs, TReturn] protected () extends js.Object
     * -----------------------------------------------
     */
   def getFieldConfig(): GraphQLFieldConfig[TSource, TContext, TArgs] = js.native
-  def getFieldConfig(opts: AnonProjectionProjectionType): GraphQLFieldConfig[TSource, TContext, TArgs] = js.native
+  def getFieldConfig(opts: AnonProjection): GraphQLFieldConfig[TSource, TContext, TArgs] = js.native
   def getKind(): ResolverKinds | Unit = js.native
   /**
     * -----------------------------------------------

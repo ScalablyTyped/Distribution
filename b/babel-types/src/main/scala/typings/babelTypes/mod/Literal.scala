@@ -42,17 +42,16 @@ object Literal {
     __obj.asInstanceOf[Literal]
   }
   @scala.inline
-  def NumericLiteral_(
+  def NullLiteral_(
     end: Double,
     loc: SourceLocation,
     start: Double,
-    `type`: NumericLiteral,
-    value: Double,
+    `type`: NullLiteral,
     innerComments: js.Array[Comment] = null,
     leadingComments: js.Array[Comment] = null,
     trailingComments: js.Array[Comment] = null
   ): Literal = {
-    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
@@ -78,16 +77,17 @@ object Literal {
     __obj.asInstanceOf[Literal]
   }
   @scala.inline
-  def NullLiteral_(
+  def NumericLiteral_(
     end: Double,
     loc: SourceLocation,
     start: Double,
-    `type`: NullLiteral,
+    `type`: NumericLiteral,
+    value: Double,
     innerComments: js.Array[Comment] = null,
     leadingComments: js.Array[Comment] = null,
     trailingComments: js.Array[Comment] = null
   ): Literal = {
-    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])

@@ -13,15 +13,15 @@ trait LocalGatewayRouteTableVirtualInterfaceGroupAssociation extends js.Object {
   /**
     * The ID of the local gateway route table.
     */
-  var LocalGatewayRouteTableId: js.UndefOr[String] = js.native
+  var LocalGatewayRouteTableId: js.UndefOr[LocalGatewayId] = js.native
   /**
     * The ID of the association.
     */
-  var LocalGatewayRouteTableVirtualInterfaceGroupAssociationId: js.UndefOr[String] = js.native
+  var LocalGatewayRouteTableVirtualInterfaceGroupAssociationId: js.UndefOr[typings.awsSdk.ec2Mod.LocalGatewayRouteTableVirtualInterfaceGroupAssociationId] = js.native
   /**
     * The ID of the virtual interface group.
     */
-  var LocalGatewayVirtualInterfaceGroupId: js.UndefOr[String] = js.native
+  var LocalGatewayVirtualInterfaceGroupId: js.UndefOr[typings.awsSdk.ec2Mod.LocalGatewayVirtualInterfaceGroupId] = js.native
   /**
     * The state of the association.
     */
@@ -36,9 +36,9 @@ object LocalGatewayRouteTableVirtualInterfaceGroupAssociation {
   @scala.inline
   def apply(
     LocalGatewayId: String = null,
-    LocalGatewayRouteTableId: String = null,
-    LocalGatewayRouteTableVirtualInterfaceGroupAssociationId: String = null,
-    LocalGatewayVirtualInterfaceGroupId: String = null,
+    LocalGatewayRouteTableId: LocalGatewayId = null,
+    LocalGatewayRouteTableVirtualInterfaceGroupAssociationId: LocalGatewayRouteTableVirtualInterfaceGroupAssociationId = null,
+    LocalGatewayVirtualInterfaceGroupId: LocalGatewayVirtualInterfaceGroupId = null,
     State: String = null,
     Tags: TagList = null
   ): LocalGatewayRouteTableVirtualInterfaceGroupAssociation = {

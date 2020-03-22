@@ -6,7 +6,7 @@ import typings.react.mod.LegacyRef
 import typings.react.mod.Props
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
-import typings.reactBootstrapTable.AnonAttr
+import typings.reactBootstrapTable.AnonGetElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -109,7 +109,7 @@ trait TableHeaderColumnProps extends Props[TableHeaderColumn] {
   	 * The function should return either a JSX element for the field, or false to default back to the standard edit
   	 * element.
   	 */
-  var customInsertEditor: js.UndefOr[AnonAttr] = js.undefined
+  var customInsertEditor: js.UndefOr[AnonGetElement] = js.undefined
   /**
   	 * Set the text alignment in the column, possible values are 'left', 'center', 'right', 'start' and 'end'.
   	 */
@@ -343,7 +343,7 @@ object TableHeaderColumnProps {
     csvFormatExtraData: js.Any = null,
     csvHeader: String = null,
     customEditor: CustomEditor[_, _] = null,
-    customInsertEditor: AnonAttr = null,
+    customInsertEditor: AnonGetElement = null,
     dataAlign: DataAlignType = null,
     dataField: String = null,
     dataFormat: (/* cell */ js.Any, /* row */ js.Any, /* formatExtraData */ js.Any, /* rowIndex */ Double) => String | ReactElement = null,

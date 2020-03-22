@@ -1,6 +1,6 @@
 package typings.kendoUi.kendo.data
 
-import typings.kendoUi.TypeofClassGanttDependency
+import typings.kendoUi.TypeofGanttDependency
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,7 +20,7 @@ class GanttDependency () extends Model {
 object GanttDependency extends js.Object {
   var fields: DataSourceSchemaModelFields = js.native
   var idField: String = js.native
-  def define(options: DataSourceSchemaModelWithFieldsArray): TypeofClassGanttDependency = js.native
-  def define(options: DataSourceSchemaModelWithFieldsObject): TypeofClassGanttDependency = js.native
+  def define(options: DataSourceSchemaModelWithFieldsArray): TypeofGanttDependency = js.native
+  def define(options: DataSourceSchemaModelWithFieldsObject): TypeofGanttDependency = js.native
 }
 

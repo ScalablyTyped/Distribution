@@ -10,6 +10,9 @@ import scala.scalajs.js.annotation._
 class MenuItem protected ()
   extends typings.electron.Electron.MenuItem {
   // Docs: http://electronjs.org/docs/api/menu-item
+  /**
+    * MenuItem
+    */
   def this(options: MenuItemConstructorOptions) = this()
 }
 

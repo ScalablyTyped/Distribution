@@ -112,6 +112,9 @@ object reactNativeStrings {
   sealed trait Photos extends CameraRollAssetType
   
   @js.native
+  sealed trait PlatformStatic extends js.Object
+  
+  @js.native
   sealed trait RippleAndroid extends js.Object
   
   @js.native
@@ -1352,6 +1355,8 @@ object reactNativeStrings {
   def PhotoStream: PhotoStream = "PhotoStream".asInstanceOf[PhotoStream]
   @scala.inline
   def Photos: Photos = "Photos".asInstanceOf[Photos]
+  @scala.inline
+  def PlatformStatic: PlatformStatic = "PlatformStatic".asInstanceOf[PlatformStatic]
   @scala.inline
   def RippleAndroid: RippleAndroid = "RippleAndroid".asInstanceOf[RippleAndroid]
   @scala.inline

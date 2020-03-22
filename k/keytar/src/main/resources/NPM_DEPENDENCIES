@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "keytar" : "5.2.0"
+      "keytar" : "5.4.0"
     }
   ],
   "test-dependencies" : [
     {
-      "keytar" : "5.2.0"
+      "keytar" : "5.4.0"
     }
   ],
   "compile-devDependencies" : [

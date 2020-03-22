@@ -7,7 +7,6 @@ import typings.std.ArrayBuffer
 import typings.std.Blob
 import typings.std.Document_
 import typings.std.HTMLImageElement
-import typings.std.Partial
 import typings.std.RequestInit
 import typings.std.XMLDocument
 import scala.scalajs.js
@@ -68,7 +67,7 @@ object mod extends js.Object {
   def html(url: String): js.Promise[Document_] = js.native
   def html(url: String, init: RequestInit): js.Promise[Document_] = js.native
   def image(url: String): js.Promise[HTMLImageElement] = js.native
-  def image(url: String, init: Partial[HTMLImageElement]): js.Promise[HTMLImageElement] = js.native
+  def image(url: String, init: PartialHTMLImageElement): js.Promise[HTMLImageElement] = js.native
   def json[ParsedJSONObject /* <: js.Any */](url: String): js.Promise[ParsedJSONObject] = js.native
   def json[ParsedJSONObject /* <: js.Any */](url: String, init: RequestInit): js.Promise[ParsedJSONObject] = js.native
   def svg(url: String): js.Promise[Document_] = js.native

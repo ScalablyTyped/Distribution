@@ -1,7 +1,7 @@
 package typings.videoJs.mod.videojs
 
 import typings.videoJs.AnonAll
-import typings.videoJs.AnonClear
+import typings.videoJs.AnonCall
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Log extends js.Object {
   @JSName("history")
-  var history_Original: AnonClear = js.native
+  var history_Original: AnonCall = js.native
   /**
     * Enumeration of available logging levels, where the keys are the level names
     * and the values are `|`-separated strings containing logging methods allowed

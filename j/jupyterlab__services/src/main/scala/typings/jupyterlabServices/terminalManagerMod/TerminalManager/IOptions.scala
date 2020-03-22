@@ -1,7 +1,7 @@
 package typings.jupyterlabServices.terminalManagerMod.TerminalManager
 
-import typings.jupyterlabCoreutils.pollMod.Poll.Standby
 import typings.jupyterlabServices.serverconnectionMod.ServerConnection.ISettings
+import typings.luminoPolling.pollMod.Poll.Standby
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,11 +9,8 @@ import scala.scalajs.js.annotation._
 /**
   * The options used to initialize a terminal manager.
   */
-trait IOptions extends js.Object {
-  /**
-    * The server settings used by the manager.
-    */
-  var serverSettings: js.UndefOr[ISettings] = js.undefined
+trait IOptions
+  extends typings.jupyterlabServices.basemanagerMod.BaseManager.IOptions {
   /**
     * When the manager stops polling the API. Defaults to `when-hidden`.
     */

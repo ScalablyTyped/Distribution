@@ -1,5 +1,6 @@
 package typings.dialogflow.mod.google.cloud.dialogflow.v2beta1
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.dialogflow.mod.google.`type`.ILatLng
 import typings.dialogflow.mod.google.protobuf.IStruct
 import scala.scalajs.js
@@ -24,6 +25,8 @@ trait IQueryParameters extends js.Object {
   var sessionEntityTypes: js.UndefOr[js.Array[ISessionEntityType] | Null] = js.undefined
   /** QueryParameters timeZone */
   var timeZone: js.UndefOr[String | Null] = js.undefined
+  /** QueryParameters webhookHeaders */
+  var webhookHeaders: js.UndefOr[StringDictionary[String] | Null] = js.undefined
 }
 
 object IQueryParameters {
@@ -36,7 +39,8 @@ object IQueryParameters {
     resetContexts: js.UndefOr[Boolean] = js.undefined,
     sentimentAnalysisRequestConfig: ISentimentAnalysisRequestConfig = null,
     sessionEntityTypes: js.Array[ISessionEntityType] = null,
-    timeZone: String = null
+    timeZone: String = null,
+    webhookHeaders: StringDictionary[String] = null
   ): IQueryParameters = {
     val __obj = js.Dynamic.literal()
     if (contexts != null) __obj.updateDynamic("contexts")(contexts.asInstanceOf[js.Any])
@@ -47,6 +51,7 @@ object IQueryParameters {
     if (sentimentAnalysisRequestConfig != null) __obj.updateDynamic("sentimentAnalysisRequestConfig")(sentimentAnalysisRequestConfig.asInstanceOf[js.Any])
     if (sessionEntityTypes != null) __obj.updateDynamic("sessionEntityTypes")(sessionEntityTypes.asInstanceOf[js.Any])
     if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone.asInstanceOf[js.Any])
+    if (webhookHeaders != null) __obj.updateDynamic("webhookHeaders")(webhookHeaders.asInstanceOf[js.Any])
     __obj.asInstanceOf[IQueryParameters]
   }
 }

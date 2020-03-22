@@ -1,5 +1,6 @@
 package typings.vscodeLanguageclient.clientMod
 
+import typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -7,9 +8,10 @@ import scala.scalajs.js.annotation._
 @JSImport("vscode-languageclient/lib/client", "DocumentLinkResolveRequest")
 @js.native
 object DocumentLinkResolveRequest extends js.Object {
-  val `type`: typings.vscodeJsonrpc.mod.RequestType[
+  val `type`: ProtocolRequestType[
     typings.vscodeLanguageserverTypes.mod.DocumentLink, 
     typings.vscodeLanguageserverTypes.mod.DocumentLink, 
+    scala.Nothing, 
     Unit, 
     Unit
   ] = js.native

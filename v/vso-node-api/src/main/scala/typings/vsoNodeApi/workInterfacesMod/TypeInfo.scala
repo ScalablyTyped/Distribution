@@ -4,10 +4,10 @@ import typings.vsoNodeApi.AnonEnumValuesAnonAllPermissions
 import typings.vsoNodeApi.AnonEnumValuesAnonAsRequirements
 import typings.vsoNodeApi.AnonEnumValuesAnonAvatarAndFullName
 import typings.vsoNodeApi.AnonEnumValuesAnonBacklogInError
-import typings.vsoNodeApi.AnonEnumValuesAnonBooleanDateTimeDouble
 import typings.vsoNodeApi.AnonEnumValuesAnonCurrent
 import typings.vsoNodeApi.AnonEnumValuesAnonDeliveryTimelineView
-import typings.vsoNodeApi.AnonEnumValuesAnonInProgress
+import typings.vsoNodeApi.AnonEnumValuesAnonDouble
+import typings.vsoNodeApi.AnonEnumValuesAnonIncoming
 import typings.vsoNodeApi.AnonEnumValuesAnonInvalidFilterClause
 import typings.vsoNodeApi.AnonEnumValuesAnonIsOverlapping
 import scala.scalajs.js
@@ -20,7 +20,7 @@ object TypeInfo extends js.Object {
   var BacklogConfiguration: js.Any = js.native
   var Board: js.Any = js.native
   var BoardColumn: js.Any = js.native
-  var BoardColumnType: AnonEnumValuesAnonInProgress = js.native
+  var BoardColumnType: AnonEnumValuesAnonIncoming = js.native
   var BugsBehavior: AnonEnumValuesAnonAsRequirements = js.native
   var CapacityPatch: js.Any = js.native
   var CardFieldSettings: js.Any = js.native
@@ -30,7 +30,7 @@ object TypeInfo extends js.Object {
   var DeliveryViewData: js.Any = js.native
   var DeliveryViewPropertyCollection: js.Any = js.native
   var FieldInfo: js.Any = js.native
-  var FieldType: AnonEnumValuesAnonBooleanDateTimeDouble = js.native
+  var FieldType: AnonEnumValuesAnonDouble = js.native
   var IdentityDisplayFormat: AnonEnumValuesAnonAvatarAndFullName = js.native
   var Marker: js.Any = js.native
   var Plan: js.Any = js.native

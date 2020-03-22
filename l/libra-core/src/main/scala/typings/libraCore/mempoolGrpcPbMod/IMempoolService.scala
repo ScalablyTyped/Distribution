@@ -4,8 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {readonly [ I in keyof grpc.grpc.UntypedServiceImplementation ]: grpc.grpc.MethodDefinition<any, any>} */ trait IMempoolService extends js.Object {
+/* Inlined parent grpc.grpc.ServiceDefinition<grpc.grpc.UntypedServiceImplementation> */
+trait IMempoolService extends js.Object {
   var addTransactionWithValidation: IMempoolServiceIAddTransactionWithValidation
   var commitTransactions: IMempoolServiceICommitTransactions
   var getBlock: IMempoolServiceIGetBlock

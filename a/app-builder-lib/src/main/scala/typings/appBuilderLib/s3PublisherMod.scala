@@ -15,7 +15,7 @@ object s3PublisherMod extends js.Object {
   trait S3Publisher extends BaseS3Publisher {
     val info: js.Any = js.native
     @JSName("providerName")
-    val providerName_S3Publisher: S3 = js.native
+    val providerName_FS3Publisher: S3 = js.native
   }
   
   @js.native

@@ -1,7 +1,7 @@
 package typings.saslExternal.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.saslExternal.TypeofClassExternalMechanism
+import typings.saslExternal.TypeofExternalMechanism
 import typings.saslExternal.saslExternalBooleans.`true`
 import typings.saslExternal.saslExternalStrings.EXTERNAL
 import scala.scalajs.js
@@ -29,6 +29,6 @@ class ^ () extends ExternalMechanism {
 @JSImport("sasl-external", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  var Mechanism: TypeofClassExternalMechanism = js.native
+  var Mechanism: TypeofExternalMechanism = js.native
 }
 

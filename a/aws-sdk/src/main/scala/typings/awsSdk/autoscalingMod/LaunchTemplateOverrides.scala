@@ -11,7 +11,7 @@ trait LaunchTemplateOverrides extends js.Object {
     */
   var InstanceType: js.UndefOr[XmlStringMaxLen255] = js.native
   /**
-    * The number of capacity units, which gives the instance type a proportional weight to other instance types. For example, larger instance types are generally weighted more than smaller instance types. These are the same units that you chose to set the desired capacity in terms of instances, or a performance attribute such as vCPUs, memory, or I/O. Valid Range: Minimum value of 1. Maximum value of 999.
+    * The number of capacity units, which gives the instance type a proportional weight to other instance types. For example, larger instance types are generally weighted more than smaller instance types. These are the same units that you chose to set the desired capacity in terms of instances, or a performance attribute such as vCPUs, memory, or I/O. For more information, see Instance Weighting for Amazon EC2 Auto Scaling in the Amazon EC2 Auto Scaling User Guide. Valid Range: Minimum value of 1. Maximum value of 999.
     */
   var WeightedCapacity: js.UndefOr[XmlStringMaxLen32] = js.native
 }

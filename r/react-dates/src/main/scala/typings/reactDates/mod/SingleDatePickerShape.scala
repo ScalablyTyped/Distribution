@@ -1,9 +1,9 @@
 package typings.reactDates.mod
 
 import typings.react.mod._Global_.JSX.Element
-import typings.reactDates.AnonCurrentMonth
 import typings.reactDates.AnonDate
 import typings.reactDates.AnonFocused
+import typings.reactDates.AnonIsVisible
 import typings.reactDates.mod.momentPropTypes.momentObj
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -60,7 +60,7 @@ trait SingleDatePickerShape extends js.Object {
   var renderCalendarDay: js.UndefOr[js.Function1[/* day */ momentObj, String | Element]] = js.native
   var renderCalendarInfo: js.UndefOr[js.Function0[String | Element]] = js.native
   var renderDayContents: js.UndefOr[js.Function1[/* day */ momentObj, String | Element]] = js.native
-  var renderMonthElement: js.UndefOr[js.Function1[/* props */ AnonCurrentMonth, String | Element]] = js.native
+  var renderMonthElement: js.UndefOr[js.Function1[/* props */ AnonIsVisible, String | Element]] = js.native
   // calendar presentation and interaction related props
   var renderMonthText: js.UndefOr[js.Function1[/* day */ momentObj, String | Element]] = js.native
   var reopenPickerOnClearDates: js.UndefOr[Boolean] = js.native

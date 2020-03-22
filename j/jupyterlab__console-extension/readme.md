@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__console-extension
 
-Typings are for version 1.2.2
+Typings are for version 2.0.0
 
 ## Library description:
 JupyterLab - Code Console Extension

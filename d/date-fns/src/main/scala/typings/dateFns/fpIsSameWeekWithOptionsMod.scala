@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object fpIsSameWeekWithOptionsMod extends js.Object {
   @js.native
-  object default extends TopLevel[CurriedFn3[Anon012345, Date | Double, Date | Double, Boolean]]
+  object default extends TopLevel[CurriedFn3[AnonLocaleWeekStartsOn, Date | Double, Date | Double, Boolean]]
   
 }
 

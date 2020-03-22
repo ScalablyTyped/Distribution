@@ -1,7 +1,7 @@
 package typings.storybookApi.mod
 
 import typings.reachRouter.mod.NavigateFn
-import typings.storybookApi.WindowLocation
+import typings.reachRouter.mod.WindowLocation
 import typings.storybookApi.storeMod.default
 import typings.storybookApi.storybookApiStrings.development
 import typings.storybookApi.storybookApiStrings.production

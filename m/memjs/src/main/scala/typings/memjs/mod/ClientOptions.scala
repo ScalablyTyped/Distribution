@@ -1,6 +1,6 @@
 package typings.memjs.mod
 
-import typings.memjs.AnonArgs
+import typings.memjs.AnonLog
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,7 +22,7 @@ trait ClientOptions extends js.Object {
     * A logger object that responds to `log(string)` method calls.
     * @default console
     */
-  var logger: js.UndefOr[AnonArgs] = js.undefined
+  var logger: js.UndefOr[AnonLog] = js.undefined
   /**
     * The number of times to retry an operation in lieu of failures.
     * @default 2
@@ -39,7 +39,7 @@ object ClientOptions {
   def apply(
     expires: Int | Double = null,
     failoverTime: Int | Double = null,
-    logger: AnonArgs = null,
+    logger: AnonLog = null,
     retries: Int | Double = null,
     retry_delay: Int | Double = null
   ): ClientOptions = {

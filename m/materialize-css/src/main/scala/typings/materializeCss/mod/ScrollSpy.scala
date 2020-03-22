@@ -1,9 +1,8 @@
 package typings.materializeCss.mod
 
-import typings.materializeCss.M.ScrollSpyOptions
 import typings.materializeCss.MElements
+import typings.materializeCss.PartialScrollSpyOptions
 import typings.std.Element
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,11 +24,11 @@ object ScrollSpy extends js.Object {
     * Init ScrollSpies
     */
   def init(els: MElements): js.Array[typings.materializeCss.M.ScrollSpy] = js.native
-  def init(els: MElements, options: Partial[ScrollSpyOptions]): js.Array[typings.materializeCss.M.ScrollSpy] = js.native
+  def init(els: MElements, options: PartialScrollSpyOptions): js.Array[typings.materializeCss.M.ScrollSpy] = js.native
   /**
     * Init ScrollSpy
     */
   def init(els: Element): typings.materializeCss.M.ScrollSpy = js.native
-  def init(els: Element, options: Partial[ScrollSpyOptions]): typings.materializeCss.M.ScrollSpy = js.native
+  def init(els: Element, options: PartialScrollSpyOptions): typings.materializeCss.M.ScrollSpy = js.native
 }
 

@@ -4,9 +4,9 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.ReactElement
 import typings.reactCountup.AnonPauseResume
 import typings.reactCountup.AnonPauseResumeReset
-import typings.reactCountup.AnonPauseResumeResetStart
-import typings.reactCountup.AnonPauseResumeStart
 import typings.reactCountup.AnonReset
+import typings.reactCountup.AnonStart
+import typings.reactCountup.AnonUpdate
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,10 +25,10 @@ trait Props extends js.Object {
   var formattingFn: js.UndefOr[js.Function1[/* value */ Double, String]] = js.undefined
   var onComplete: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onEnd: js.UndefOr[js.Function1[/* providedFn */ AnonPauseResume, Unit]] = js.undefined
-  var onPauseResume: js.UndefOr[js.Function0[js.Function1[/* providedFn */ AnonReset, Unit]]] = js.undefined
-  var onReset: js.UndefOr[js.Function0[js.Function1[/* providedFn */ AnonPauseResumeStart, Unit]]] = js.undefined
-  var onStart: js.UndefOr[js.Function1[/* providedFn */ AnonPauseResumeReset, Unit]] = js.undefined
-  var onUpdate: js.UndefOr[js.Function1[/* providedFn */ AnonPauseResumeResetStart, Unit]] = js.undefined
+  var onPauseResume: js.UndefOr[js.Function0[js.Function1[/* providedFn */ AnonStart, Unit]]] = js.undefined
+  var onReset: js.UndefOr[js.Function0[js.Function1[/* providedFn */ AnonUpdate, Unit]]] = js.undefined
+  var onStart: js.UndefOr[js.Function1[/* providedFn */ AnonReset, Unit]] = js.undefined
+  var onUpdate: js.UndefOr[js.Function1[/* providedFn */ AnonPauseResumeReset, Unit]] = js.undefined
   var prefix: js.UndefOr[String] = js.undefined
   var redraw: js.UndefOr[Boolean] = js.undefined
   var separator: js.UndefOr[String] = js.undefined
@@ -52,10 +52,10 @@ object Props {
     formattingFn: /* value */ Double => String = null,
     onComplete: () => Unit = null,
     onEnd: /* providedFn */ AnonPauseResume => Unit = null,
-    onPauseResume: () => js.Function1[/* providedFn */ AnonReset, Unit] = null,
-    onReset: () => js.Function1[/* providedFn */ AnonPauseResumeStart, Unit] = null,
-    onStart: /* providedFn */ AnonPauseResumeReset => Unit = null,
-    onUpdate: /* providedFn */ AnonPauseResumeResetStart => Unit = null,
+    onPauseResume: () => js.Function1[/* providedFn */ AnonStart, Unit] = null,
+    onReset: () => js.Function1[/* providedFn */ AnonUpdate, Unit] = null,
+    onStart: /* providedFn */ AnonReset => Unit = null,
+    onUpdate: /* providedFn */ AnonPauseResumeReset => Unit = null,
     prefix: String = null,
     redraw: js.UndefOr[Boolean] = js.undefined,
     separator: String = null,

@@ -121,7 +121,6 @@ object allMod extends js.Object {
     var `no-unsafe-any`: Boolean = js.native
     var `no-unsafe-finally`: Boolean = js.native
     var `no-unused-expression`: Boolean = js.native
-    var `no-use-before-declare`: Boolean = js.native
     var `no-var-keyword`: Boolean = js.native
     var `no-var-requires`: Boolean = js.native
     var `no-void-expression`: Boolean = js.native
@@ -162,7 +161,7 @@ object allMod extends js.Object {
     var `triple-equals`: Boolean = js.native
     var `type-literal-delimiter`: Boolean = js.native
     var typedef: AnonOptionsArray = js.native
-    var `typedef-whitespace`: AnonOptionsAnonCallsignature = js.native
+    var `typedef-whitespace`: Anon0 = js.native
     var `unified-signatures`: Boolean = js.native
     var `unnecessary-bind`: Boolean = js.native
     var `unnecessary-constructor`: Boolean = js.native

@@ -7,16 +7,17 @@ import typings.jpushReactNative.AnonCode
 import typings.jpushReactNative.AnonConnectEnable
 import typings.jpushReactNative.AnonContent
 import typings.jpushReactNative.AnonContentExtras
-import typings.jpushReactNative.AnonContentExtrasMessageID
+import typings.jpushReactNative.AnonExtras
 import typings.jpushReactNative.AnonGeoFenceID
 import typings.jpushReactNative.AnonGeoFenceMaxNumber
 import typings.jpushReactNative.AnonMessageID
-import typings.jpushReactNative.AnonMobileNumber
 import typings.jpushReactNative.AnonNotificationMaxNumber
 import typings.jpushReactNative.AnonPushTimeDays
 import typings.jpushReactNative.AnonRegisterID
 import typings.jpushReactNative.AnonSilenceTimeEndHour
-import typings.jpushReactNative.AnonTagEnable
+import typings.jpushReactNative.TagtagEnableboolean
+import typings.jpushReactNative.codenumberSequence
+import typings.jpushReactNative.mobileNumberstringSequenc
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,7 +36,7 @@ object default extends js.Object {
   /**
     * 自定义消息事件
     */
-  def addCustomMessagegListener(callback: Callback[AnonContentExtrasMessageID]): Unit = js.native
+  def addCustomMessagegListener(callback: Callback[AnonContentExtras]): Unit = js.native
   //***************************************本地通知***************************************
   /**
     * 添加一个本地通知
@@ -55,11 +56,11 @@ object default extends js.Object {
     *
     * 注意：应用在存活状态下点击通知不会有跳转行为,应用在被杀死状态下点击通知会启动应用
     */
-  def addLocalNotificationListener(callback: Callback[AnonContentExtras]): Unit = js.native
+  def addLocalNotificationListener(callback: Callback[AnonExtras]): Unit = js.native
   /**
     * 手机号码事件
     */
-  def addMobileNumberListener(callback: Callback[AnonCode with Sequence]): Unit = js.native
+  def addMobileNumberListener(callback: Callback[codenumberSequence]): Unit = js.native
   /**
     * 通知事件
     *
@@ -69,7 +70,7 @@ object default extends js.Object {
   /**
     * tag alias事件
     */
-  def addTagAliasListener(callback: Callback[AnonCode with Sequence with (Tags | Alias | (Tag with AnonTagEnable))]): Unit = js.native
+  def addTagAliasListener(callback: Callback[AnonCode with Sequence with (Tags | Alias | TagtagEnableboolean)]): Unit = js.native
   /**
     * 新增标签
     *
@@ -212,7 +213,7 @@ object default extends js.Object {
   /**
     * 设置手机号码。该接口会控制调用频率,频率为 10s 之内最多 3 次
     */
-  def setMobileNumber(params: AnonMobileNumber with Sequence): Unit = js.native
+  def setMobileNumber(params: mobileNumberstringSequenc): Unit = js.native
   /**
     * 设置允许推送时间
     *

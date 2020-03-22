@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@catho/quantum/components/Card/Title", JSImport.Namespace)
 @js.native
 object titleMod extends js.Object {
-  type Title = ComponentType[AnonSmallTheme] with AnonCardTitle
+  type Title = ComponentType[AnonSmallTheme] with Anon6
 }
 

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait RaycasterParameters extends js.Object {
   var LOD: js.UndefOr[js.Any] = js.undefined
-  var Line: js.UndefOr[js.Any] = js.undefined
+  var Line: js.UndefOr[AnonThreshold] = js.undefined
   var Mesh: js.UndefOr[js.Any] = js.undefined
   var Points: js.UndefOr[AnonThreshold] = js.undefined
   var Sprite: js.UndefOr[js.Any] = js.undefined
@@ -17,7 +17,7 @@ object RaycasterParameters {
   @scala.inline
   def apply(
     LOD: js.Any = null,
-    Line: js.Any = null,
+    Line: AnonThreshold = null,
     Mesh: js.Any = null,
     Points: AnonThreshold = null,
     Sprite: js.Any = null

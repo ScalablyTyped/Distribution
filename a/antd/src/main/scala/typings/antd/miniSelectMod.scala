@@ -1,7 +1,5 @@
 package typings.antd
 
-import typings.antd.selectMod.OptionProps
-import typings.react.mod.ClassicComponentClass
 import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,7 +18,7 @@ object miniSelectMod extends js.Object {
   /* static members */
   @js.native
   object default extends js.Object {
-    var Option: ClassicComponentClass[OptionProps] = js.native
+    var Option: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_Option.OptionFC */ js.Any = js.native
   }
   
 }

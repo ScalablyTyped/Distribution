@@ -1,13 +1,10 @@
 package typings.reactNativeElements
 
-import typings.reactNative.mod.ViewProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait reactNativeElementsProps {
-  @scala.inline
-  def AirbnbRatingProps: typings.reactNativeRatings.mod.AirbnbRatingProps.type = typings.reactNativeRatings.mod.AirbnbRatingProps
   type AirbnbRatingProps = typings.reactNativeRatings.mod.AirbnbRatingProps
   @scala.inline
   def AvatarProps: typings.reactNativeElements.mod.AvatarProps.type = typings.reactNativeElements.mod.AvatarProps
@@ -27,8 +24,6 @@ trait reactNativeElementsProps {
   @scala.inline
   def CheckBoxProps: typings.reactNativeElements.mod.CheckBoxProps.type = typings.reactNativeElements.mod.CheckBoxProps
   type CheckBoxProps = typings.reactNativeElements.mod.CheckBoxProps
-  @scala.inline
-  def DividerProps: ViewProps.type = typings.reactNative.mod.ViewProps
   type DividerProps = typings.reactNativeElements.mod.DividerProps
   @scala.inline
   def HeaderProps: typings.reactNativeElements.mod.HeaderProps.type = typings.reactNativeElements.mod.HeaderProps
@@ -51,8 +46,6 @@ trait reactNativeElementsProps {
   @scala.inline
   def PricingCardProps: typings.reactNativeElements.mod.PricingCardProps.type = typings.reactNativeElements.mod.PricingCardProps
   type PricingCardProps = typings.reactNativeElements.mod.PricingCardProps
-  @scala.inline
-  def RatingProps: typings.reactNativeRatings.mod.RatingProps.type = typings.reactNativeRatings.mod.RatingProps
   type RatingProps = typings.reactNativeRatings.mod.RatingProps
   type SearchBarProps = typings.reactNativeElements.mod.SearchBarProps
   @scala.inline

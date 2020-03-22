@@ -3,7 +3,7 @@ package typings.jupyterlabApplication.frontendMod.JupyterFrontEnd
 import typings.jupyterlabApputils.mod.CommandLinker
 import typings.jupyterlabDocregistry.mod.DocumentRegistry
 import typings.jupyterlabServices.mod.ServiceManager
-import typings.phosphorWidgets.menuMod.Menu.IRenderer
+import typings.luminoWidgets.menuMod.Menu.IRenderer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
   * The options used to initialize a JupyterFrontEnd.
   */
 trait IOptions[T /* <: IShell */, U]
-  extends typings.phosphorApplication.mod.Application.IOptions[T] {
+  extends typings.luminoApplication.mod.Application.IOptions[T] {
   /**
     * The command linker used by the application.
     */

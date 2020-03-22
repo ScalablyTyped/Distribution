@@ -25,7 +25,7 @@ trait ReplaceRouteRequest extends js.Object {
   /**
     * The ID of an internet gateway or virtual private gateway.
     */
-  var GatewayId: js.UndefOr[RouteTableGatewayId] = js.native
+  var GatewayId: js.UndefOr[RouteGatewayId] = js.native
   /**
     * The ID of a NAT instance in your VPC.
     */
@@ -33,7 +33,7 @@ trait ReplaceRouteRequest extends js.Object {
   /**
     * The ID of the local gateway.
     */
-  var LocalGatewayId: js.UndefOr[String] = js.native
+  var LocalGatewayId: js.UndefOr[typings.awsSdk.ec2Mod.LocalGatewayId] = js.native
   /**
     * Specifies whether to reset the local route to its default target (local).
     */
@@ -68,9 +68,9 @@ object ReplaceRouteRequest {
     DestinationIpv6CidrBlock: String = null,
     DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     EgressOnlyInternetGatewayId: EgressOnlyInternetGatewayId = null,
-    GatewayId: RouteTableGatewayId = null,
+    GatewayId: RouteGatewayId = null,
     InstanceId: InstanceId = null,
-    LocalGatewayId: String = null,
+    LocalGatewayId: LocalGatewayId = null,
     LocalTarget: js.UndefOr[scala.Boolean] = js.undefined,
     NatGatewayId: NatGatewayId = null,
     NetworkInterfaceId: NetworkInterfaceId = null,

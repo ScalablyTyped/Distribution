@@ -41,7 +41,7 @@ class Message_ () extends IMessage {
   ] = js.native
   /** Message platform. */
   @JSName("platform")
-  var platform_Message_ : Platform = js.native
+  var platform_Message_ : Platform | String = js.native
   /**
     * Converts this Message to JSON.
     * @returns JSON object

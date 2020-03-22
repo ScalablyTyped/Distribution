@@ -28,11 +28,8 @@ object ^ extends js.Object {
   	//=> 2
   	```
   	*/
-  def apply[ArgumentsType /* <: js.Array[_] */, ReturnType, CacheKeyType](fn: js.Function1[/* arguments */ ArgumentsType, ReturnType]): js.Function1[/* arguments */ ArgumentsType, ReturnType] = js.native
-  def apply[ArgumentsType /* <: js.Array[_] */, ReturnType, CacheKeyType](
-    fn: js.Function1[/* arguments */ ArgumentsType, ReturnType],
-    options: Options[ArgumentsType, CacheKeyType, ReturnType]
-  ): js.Function1[/* arguments */ ArgumentsType, ReturnType] = js.native
+  def apply[ArgumentsType /* <: js.Array[_] */, ReturnType, CacheKeyType, FunctionToMemoize](fn: FunctionToMemoize): FunctionToMemoize = js.native
+  def apply[ArgumentsType /* <: js.Array[_] */, ReturnType, CacheKeyType, FunctionToMemoize](fn: FunctionToMemoize, options: Options[ArgumentsType, CacheKeyType, ReturnType]): FunctionToMemoize = js.native
   /**
   	Clear all cached data of a memoized function.
   	@param fn - Memoized function.

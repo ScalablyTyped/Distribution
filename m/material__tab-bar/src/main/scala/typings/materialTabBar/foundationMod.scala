@@ -3,7 +3,6 @@ package typings.materialTabBar
 import typings.materialBase.foundationMod.MDCFoundation
 import typings.materialTabBar.adapterMod.MDCTabBarAdapter
 import typings.std.KeyboardEvent
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +12,7 @@ import scala.scalajs.js.annotation._
 object foundationMod extends js.Object {
   @js.native
   class MDCTabBarFoundation () extends MDCFoundation[MDCTabBarAdapter] {
-    def this(adapter: Partial[MDCTabBarAdapter]) = this()
+    def this(adapter: PartialMDCTabBarAdapter) = this()
     def activateTab(index: Double): Unit = js.native
     // Subclasses should override this method to perform de-initialization routines (de-registering events, etc.)
     /* CompleteClass */
@@ -42,7 +41,7 @@ object foundationMod extends js.Object {
   
   @js.native
   class default () extends MDCTabBarFoundation {
-    def this(adapter: Partial[MDCTabBarAdapter]) = this()
+    def this(adapter: PartialMDCTabBarAdapter) = this()
   }
   
   /* static members */

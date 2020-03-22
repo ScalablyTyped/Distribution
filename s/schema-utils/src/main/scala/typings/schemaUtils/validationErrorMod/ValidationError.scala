@@ -1,8 +1,7 @@
 package typings.schemaUtils.validationErrorMod
 
-import typings.ajv.mod.ErrorObject
 import typings.jsonSchema.mod.JSONSchema4
-import typings.schemaUtils.AnonChildren
+import typings.schemaUtils.ErrorObjectchildrenArrayE
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -35,12 +34,12 @@ trait ValidationError extends Error {
     * @param {SchemaUtilErrorObject} error
     * @returns {string}
     */
-  def formatValidationError(error: ErrorObject with AnonChildren): String = js.native
+  def formatValidationError(error: ErrorObjectchildrenArrayE): String = js.native
   /**
     * @param {Array<SchemaUtilErrorObject>} errors
     * @returns {string}
     */
-  def formatValidationErrors(errors: js.Array[ErrorObject with AnonChildren]): String = js.native
+  def formatValidationErrors(errors: js.Array[ErrorObjectchildrenArrayE]): String = js.native
   /**
     * @param {string} path
     * @returns {Schema}

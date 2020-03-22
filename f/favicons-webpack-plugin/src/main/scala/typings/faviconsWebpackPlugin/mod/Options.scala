@@ -1,8 +1,7 @@
 package typings.faviconsWebpackPlugin.mod
 
-import typings.favicons.mod.Configuration
-import typings.faviconsWebpackPlugin.AnonOptions
-import typings.std.Partial
+import typings.faviconsWebpackPlugin.PartialConfiguration
+import typings.faviconsWebpackPlugin.optionsOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,10 +9,8 @@ import scala.scalajs.js.annotation._
 trait Options extends js.Object {
   var cache: js.UndefOr[Boolean] = js.undefined
   var devMode: js.UndefOr[Mode] = js.undefined
-  var favicons: js.UndefOr[Partial[Configuration]] = js.undefined
-  var inject: js.UndefOr[
-    Boolean | (js.Function1[/* htmlPlugin */ typings.htmlWebpackPlugin.mod.^  with AnonOptions, Boolean])
-  ] = js.undefined
+  var favicons: js.UndefOr[PartialConfiguration] = js.undefined
+  var inject: js.UndefOr[Boolean | (js.Function1[/* htmlPlugin */ optionsOptions, Boolean])] = js.undefined
   var logo: String
   var mode: js.UndefOr[Mode] = js.undefined
   var outputPath: js.UndefOr[String] = js.undefined
@@ -27,8 +24,8 @@ object Options {
     logo: String,
     cache: js.UndefOr[Boolean] = js.undefined,
     devMode: Mode = null,
-    favicons: Partial[Configuration] = null,
-    inject: Boolean | (js.Function1[/* htmlPlugin */ typings.htmlWebpackPlugin.mod.^  with AnonOptions, Boolean]) = null,
+    favicons: PartialConfiguration = null,
+    inject: Boolean | (js.Function1[/* htmlPlugin */ optionsOptions, Boolean]) = null,
     mode: Mode = null,
     outputPath: String = null,
     prefix: String = null,

@@ -34,15 +34,8 @@ object frustumMod extends js.Object {
     def intersectsObject(`object`: Object3D): Boolean = js.native
     def intersectsSphere(sphere: Sphere): Boolean = js.native
     def intersectsSprite(sprite: Sprite): Boolean = js.native
-    def set(
-      p0: js.UndefOr[Double],
-      p1: js.UndefOr[Double],
-      p2: js.UndefOr[Double],
-      p3: js.UndefOr[Double],
-      p4: js.UndefOr[Double],
-      p5: js.UndefOr[Double]
-    ): Frustum = js.native
-    def setFromMatrix(m: Matrix4): Frustum = js.native
+    def set(p0: Plane, p1: Plane, p2: Plane, p3: Plane, p4: Plane, p5: Plane): Frustum = js.native
+    def setFromProjectionMatrix(m: Matrix4): this.type = js.native
   }
   
 }

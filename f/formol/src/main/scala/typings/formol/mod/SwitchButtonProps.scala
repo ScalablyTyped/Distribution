@@ -1,6 +1,6 @@
 package typings.formol.mod
 
-import typings.formol.AnonK
+import typings.formol.AnonDictk
 import typings.react.mod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait SwitchButtonProps extends js.Object {
   var className: js.UndefOr[String] = js.undefined
-  var i18n: js.UndefOr[AnonK] = js.undefined
+  var i18n: js.UndefOr[AnonDictk] = js.undefined
   var leftLabel: js.UndefOr[ReactNode] = js.undefined
   var rightLabel: js.UndefOr[ReactNode] = js.undefined
   var `type`: js.UndefOr[String] = js.undefined
@@ -18,7 +18,7 @@ object SwitchButtonProps {
   @scala.inline
   def apply(
     className: String = null,
-    i18n: AnonK = null,
+    i18n: AnonDictk = null,
     leftLabel: ReactNode = null,
     rightLabel: ReactNode = null,
     `type`: String = null

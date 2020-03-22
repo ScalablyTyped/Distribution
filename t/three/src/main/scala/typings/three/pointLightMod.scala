@@ -2,8 +2,7 @@ package typings.three
 
 import typings.three.colorMod.Color
 import typings.three.lightMod.Light
-import typings.three.lightShadowMod.LightShadow
-import typings.three.perspectiveCameraMod.PerspectiveCamera
+import typings.three.pointLightShadowMod.PointLightShadow
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,18 +27,12 @@ object pointLightMod extends js.Object {
     var decay: Double = js.native
     /**
     	 * If non-zero, light will attenuate linearly from maximum intensity at light position down to zero at distance.
-    	 * Default — 0.0.
+    	 * Default - 0.0.
     	 */
     var distance: Double = js.native
     var power: Double = js.native
     @JSName("shadow")
     var shadow_PointLight: PointLightShadow = js.native
-  }
-  
-  @js.native
-  class PointLightShadow () extends LightShadow {
-    @JSName("camera")
-    var camera_PointLightShadow: PerspectiveCamera = js.native
   }
   
 }

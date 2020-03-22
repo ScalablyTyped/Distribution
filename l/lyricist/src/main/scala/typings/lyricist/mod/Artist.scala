@@ -1,6 +1,6 @@
 package typings.lyricist.mod
 
-import typings.lyricist.AnonExcludedpermissionsInteractionsPermissions
+import typings.lyricist.AnonPermissions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait Artist extends js.Object {
   var alternate_names: js.Array[_]
   var api_path: String
-  var current_user_metadata: AnonExcludedpermissionsInteractionsPermissions
+  var current_user_metadata: AnonPermissions
   var description: Description
   var description_annotation: DescriptionAnnotation
   var facebook_name: String
@@ -32,7 +32,7 @@ object Artist {
   def apply(
     alternate_names: js.Array[_],
     api_path: String,
-    current_user_metadata: AnonExcludedpermissionsInteractionsPermissions,
+    current_user_metadata: AnonPermissions,
     description: Description,
     description_annotation: DescriptionAnnotation,
     facebook_name: String,

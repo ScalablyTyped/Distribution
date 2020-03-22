@@ -1,6 +1,7 @@
 package typings.swiper.mod
 
 import org.scalablytyped.runtime.NumberDictionary
+import typings.swiper.keyinSwiperEventvoid
 import typings.swiper.swiperStrings.auto
 import typings.swiper.swiperStrings.column
 import typings.swiper.swiperStrings.container
@@ -149,11 +150,7 @@ trait SwiperOptions extends js.Object {
   /**
     * Register event handlers.
     */
-  var on: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in swiper.swiper.SwiperEvent ]:? (): void}
-    */ typings.swiper.swiperStrings.SwiperOptions with js.Any
-  ] = js.undefined
+  var on: js.UndefOr[keyinSwiperEventvoid] = js.undefined
   var pagination: js.UndefOr[PaginationOptions] = js.undefined
   var parallax: js.UndefOr[Boolean] = js.undefined
   /**
@@ -381,9 +378,7 @@ object SwiperOptions {
     normalizeSlideIndex: js.UndefOr[Boolean] = js.undefined,
     observeParents: js.UndefOr[Boolean] = js.undefined,
     observer: js.UndefOr[Boolean] = js.undefined,
-    on: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in swiper.swiper.SwiperEvent ]:? (): void}
-    */ typings.swiper.swiperStrings.SwiperOptions with js.Any = null,
+    on: keyinSwiperEventvoid = null,
     pagination: PaginationOptions = null,
     parallax: js.UndefOr[Boolean] = js.undefined,
     passiveListeners: js.UndefOr[Boolean] = js.undefined,

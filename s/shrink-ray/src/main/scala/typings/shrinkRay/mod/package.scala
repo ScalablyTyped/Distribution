@@ -10,5 +10,4 @@ package object mod {
     /* res */ typings.express.mod.Response_, 
     scala.Boolean
   ]
-  type Options = typings.std.Partial[typings.shrinkRay.AnonBrotli]
 }

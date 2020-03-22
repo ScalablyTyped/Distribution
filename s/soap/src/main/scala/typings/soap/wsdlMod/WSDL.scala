@@ -31,6 +31,7 @@ class WSDL protected () extends js.Object {
   var xml: js.Any = js.native
   var xmlKey: String = js.native
   var xmlnsInEnvelope: String = js.native
+  var xmlnsInHeader: String = js.native
   def describeServices(): js.Object = js.native
   def filterOutIgnoredNameSpace(ns: String): String = js.native
   def findChildSchemaObject(parameterTypeObj: js.Any, childName: js.Any): js.Any = js.native

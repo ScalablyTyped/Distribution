@@ -1,7 +1,7 @@
 package typings.antDesignPro.pageHeaderMod
 
-import typings.antDesignPro.AnonHrefTitle
 import typings.antDesignPro.AnonKey
+import typings.antDesignPro.AnonTitle
 import typings.history.mod.Location
 import typings.history.mod.LocationState
 import typings.react.mod.CSSProperties
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 
 trait PageHeaderProps extends js.Object {
   var action: js.UndefOr[ReactNode | String] = js.undefined
-  var breadcrumbList: js.UndefOr[js.Array[AnonHrefTitle]] = js.undefined
+  var breadcrumbList: js.UndefOr[js.Array[AnonTitle]] = js.undefined
   var breadcrumbNameMap: js.UndefOr[js.Any] = js.undefined
   var breadcrumbSeparator: js.UndefOr[ReactNode] = js.undefined
   var className: js.UndefOr[String] = js.undefined
@@ -42,7 +42,7 @@ object PageHeaderProps {
   def apply(
     itemRender: js.Any => ReactNode,
     action: ReactNode | String = null,
-    breadcrumbList: js.Array[AnonHrefTitle] = null,
+    breadcrumbList: js.Array[AnonTitle] = null,
     breadcrumbNameMap: js.Any = null,
     breadcrumbSeparator: ReactNode = null,
     className: String = null,

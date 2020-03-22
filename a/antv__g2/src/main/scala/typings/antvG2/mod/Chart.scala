@@ -1,9 +1,10 @@
 package typings.antvG2.mod
 
-import typings.antvG2.AnonAnimateEnd
 import typings.antvG2.AnonAutoSetAxis
 import typings.antvG2.AnonBottom
+import typings.antvG2.AnonPadding
 import typings.antvG2.AnonX
+import typings.antvG2.PartialChartProps
 import typings.antvG2.antvG2Strings.animate
 import typings.antvG2.antvG2Strings.background
 import typings.antvG2.antvG2Strings.container
@@ -21,7 +22,6 @@ import typings.antvG2.antvG2Strings.theme
 import typings.antvG2.antvG2Strings.tree
 import typings.antvG2.antvG2Strings.width
 import typings.std.HTMLDivElement
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,7 +29,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@antv/g2", "Chart")
 @js.native
 class Chart protected () extends BashView {
-  def this(config: Partial[ChartProps]) = this()
+  def this(config: PartialChartProps) = this()
   def changeHeight(height: Double): this.type = js.native
   def changeSize(width: Double, height: Double): this.type = js.native
   def changeWidth(width: Double): this.type = js.native
@@ -81,6 +81,6 @@ class Chart protected () extends BashView {
   def tooltip(tooltipConfig: Boolean): this.type = js.native
   def tooltip(tooltipConfig: TooltipConfig): this.type = js.native
   def view(): View = js.native
-  def view(option: AnonAnimateEnd): View = js.native
+  def view(option: AnonPadding): View = js.native
 }
 

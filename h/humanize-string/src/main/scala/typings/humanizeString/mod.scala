@@ -11,7 +11,7 @@ object mod extends js.Object {
   // declare function humanizeString(text: string): string;
   // export = humanizeString;
   @JSName("default")
-  var default_Original: AnonDefault = js.native
+  var default_Original: AnonCall = js.native
   /**
   	Convert a camelized/dasherized/underscored string into a humanized one: `fooBar-Baz_Faz` → `Foo bar baz faz`.
   	@param text - The string to make human readable.

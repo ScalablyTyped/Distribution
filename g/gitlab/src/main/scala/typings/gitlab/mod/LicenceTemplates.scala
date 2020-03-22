@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("gitlab", "LicenceTemplates")
 @js.native
-class LicenceTemplates ()
+class LicenceTemplates protected ()
   extends typings.gitlab.servicesMod.LicenceTemplates {
   def this(options: BaseServiceOptions) = this()
 }

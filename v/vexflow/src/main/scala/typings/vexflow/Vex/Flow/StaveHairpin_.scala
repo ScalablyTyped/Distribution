@@ -2,7 +2,7 @@ package typings.vexflow.Vex.Flow
 
 import typings.vexflow.AnonFirstnote
 import typings.vexflow.AnonFirstx
-import typings.vexflow.AnonHeightLeftshiftpx
+import typings.vexflow.AnonLeftshiftpx
 import typings.vexflow.Vex.Flow.Modifier.Position
 import typings.vexflow.Vex.Flow.StaveHairpin.`type`
 import typings.vexflow.Vex.IRenderContext
@@ -19,6 +19,6 @@ class StaveHairpin_ protected () extends js.Object {
   def setContext(context: IRenderContext): StaveHairpin = js.native
   def setNotes(notes: AnonFirstnote): StaveHairpin = js.native
   def setPosition(position: Position): StaveHairpin = js.native
-  def setRenderOptions(options: AnonHeightLeftshiftpx): StaveHairpin = js.native
+  def setRenderOptions(options: AnonLeftshiftpx): StaveHairpin = js.native
 }
 

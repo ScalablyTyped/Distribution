@@ -31,9 +31,9 @@ object referenceMod extends js.Object {
       */
     def this(repo: Repo, path: Path) = this()
     @JSName("catch")
-    var catch_Original: FnOnrejected = js.native
+    var catch_Original: FnCallOnrejected = js.native
     @JSName("then")
-    var then_Original: FnOnfulfilled = js.native
+    var then_Original: FnCallOnfulfilledOnrejected = js.native
     def `catch`[TResult](): js.Promise[Reference | TResult] = js.native
     def `catch`[TResult](onrejected: js.Function1[/* reason */ js.Any, TResult | js.Thenable[TResult]]): js.Promise[Reference | TResult] = js.native
     /**

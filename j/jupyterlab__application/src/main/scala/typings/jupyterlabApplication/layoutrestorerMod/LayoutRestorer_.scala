@@ -3,9 +3,9 @@ package typings.jupyterlabApplication.layoutrestorerMod
 import typings.jupyterlabApplication.layoutrestorerMod.LayoutRestorer.IOptions
 import typings.jupyterlabApplication.shellMod.ILabShell.ILayout
 import typings.jupyterlabApputils.mod.WidgetTracker
-import typings.jupyterlabCoreutils.interfacesMod.IRestorable
-import typings.phosphorDisposable.mod.IObservableDisposable
-import typings.phosphorWidgets.mod.Widget
+import typings.jupyterlabStatedb.interfacesMod.IRestorable
+import typings.luminoDisposable.mod.IObservableDisposable
+import typings.luminoWidgets.mod.Widget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -91,7 +91,7 @@ class LayoutRestorer_ protected () extends ILayoutRestorer {
   /* CompleteClass */
   override def restore(
     restorable: IRestorable[IObservableDisposable, js.Any],
-    options: typings.jupyterlabCoreutils.interfacesMod.IRestorable.IOptions[IObservableDisposable]
+    options: typings.jupyterlabStatedb.interfacesMod.IRestorable.IOptions[IObservableDisposable]
   ): js.Promise[js.Any] = js.native
   /**
     * Restore the widgets of a particular widget tracker.
@@ -101,10 +101,12 @@ class LayoutRestorer_ protected () extends ILayoutRestorer {
     * @param options - The restoration options.
     */
   /* CompleteClass */
-  override def restore[T /* <: Widget */](
-    tracker: WidgetTracker[T],
-    options: typings.jupyterlabCoreutils.interfacesMod.IRestorer.IOptions[T]
-  ): js.Promise[_] = js.native
+  override def restore[T /* <: Widget */](tracker: WidgetTracker[T], options: typings.jupyterlabStatedb.interfacesMod.IRestorer.IOptions[T]): js.Promise[_] = js.native
+  /**
+    * A promise resolved when the layout restorer is ready to receive signals.
+    */
+  @JSName("restored")
+  def restored_MLayoutRestorer_(): js.Promise[Unit] = js.native
   /**
     * Save the layout state for the application.
     */

@@ -1,7 +1,7 @@
 package typings.gapiYoutube.gapi.client.youtube
 
 import typings.gapi.gapi.client.HttpRequest
-import typings.gapiYoutube.AnonChannelIdForChannelId
+import typings.gapiYoutube.AnonForChannelId
 import typings.gapiYoutube.AnonId
 import typings.gapiYoutube.AnonPartRequestBody
 import typings.gapiYoutube.GoogleApiYouTubePaginationInfo
@@ -22,7 +22,7 @@ trait subscriptions extends js.Object {
   /**
     * Returns subscription resources that match the API request criteria.
     */
-  def list(`object`: AnonChannelIdForChannelId): HttpRequest[GoogleApiYouTubePaginationInfo[GoogleApiYouTubeSubscriptionResource]]
+  def list(`object`: AnonForChannelId): HttpRequest[GoogleApiYouTubePaginationInfo[GoogleApiYouTubeSubscriptionResource]]
 }
 
 object subscriptions {
@@ -30,7 +30,7 @@ object subscriptions {
   def apply(
     delete: AnonId => HttpRequest[GoogleApiYouTubeSubscriptionResource],
     insert: AnonPartRequestBody => HttpRequest[GoogleApiYouTubeSubscriptionResource],
-    list: AnonChannelIdForChannelId => HttpRequest[GoogleApiYouTubePaginationInfo[GoogleApiYouTubeSubscriptionResource]]
+    list: AnonForChannelId => HttpRequest[GoogleApiYouTubePaginationInfo[GoogleApiYouTubeSubscriptionResource]]
   ): subscriptions = {
     val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list))
   

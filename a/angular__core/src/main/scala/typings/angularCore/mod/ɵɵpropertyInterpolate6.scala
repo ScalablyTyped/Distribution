@@ -22,7 +22,24 @@ object ɵɵpropertyInterpolate6 extends js.Object {
     i4: String,
     v5: js.Any,
     suffix: String
-  ): TsickleIssue1009 = js.native
+  ): js.Function15[
+    /* propName */ String, 
+    /* prefix */ String, 
+    /* v0 */ js.Any, 
+    /* i0 */ String, 
+    /* v1 */ js.Any, 
+    /* i1 */ String, 
+    /* v2 */ js.Any, 
+    /* i2 */ String, 
+    /* v3 */ js.Any, 
+    /* i3 */ String, 
+    /* v4 */ js.Any, 
+    /* i4 */ String, 
+    /* v5 */ js.Any, 
+    /* suffix */ String, 
+    /* sanitizer */ js.UndefOr[SanitizerFn], 
+    /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵpropertyInterpolate6 */ js.Any
+  ] = js.native
   def apply(
     propName: String,
     prefix: String,
@@ -39,6 +56,23 @@ object ɵɵpropertyInterpolate6 extends js.Object {
     v5: js.Any,
     suffix: String,
     sanitizer: SanitizerFn
-  ): TsickleIssue1009 = js.native
+  ): js.Function15[
+    /* propName */ String, 
+    /* prefix */ String, 
+    /* v0 */ js.Any, 
+    /* i0 */ String, 
+    /* v1 */ js.Any, 
+    /* i1 */ String, 
+    /* v2 */ js.Any, 
+    /* i2 */ String, 
+    /* v3 */ js.Any, 
+    /* i3 */ String, 
+    /* v4 */ js.Any, 
+    /* i4 */ String, 
+    /* v5 */ js.Any, 
+    /* suffix */ String, 
+    /* sanitizer */ js.UndefOr[SanitizerFn], 
+    /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵpropertyInterpolate6 */ js.Any
+  ] = js.native
 }
 

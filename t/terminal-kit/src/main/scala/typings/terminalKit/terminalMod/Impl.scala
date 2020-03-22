@@ -1,15 +1,15 @@
 package typings.terminalKit.terminalMod
 
+import typings.terminalKit.Anon0
 import typings.terminalKit.AnonAbort
 import typings.terminalKit.AnonB
 import typings.terminalKit.AnonBarStyle
-import typings.terminalKit.AnonButton
 import typings.terminalKit.AnonContinue
 import typings.terminalKit.AnonDelay
+import typings.terminalKit.AnonMouse
 import typings.terminalKit.AnonNoAlternate
 import typings.terminalKit.AnonPromise
-import typings.terminalKit.AnonPromiseGridMenuResponse
-import typings.terminalKit.AnonPromiseSingleColumnMenuResponse
+import typings.terminalKit.AnonPromisePromise
 import typings.terminalKit.AnonShrinkAnonHeight
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -414,8 +414,8 @@ trait Impl extends js.Object {
   def getPalette(register: Double, callback: Callback[Palette]): Unit = js.native
   def grabInput(options: Boolean): Unit = js.native
   def grabInput(options: Boolean, safeCallback: Boolean): Unit = js.native
-  def grabInput(options: AnonButton): Unit = js.native
-  def grabInput(options: AnonButton, safeCallback: Boolean): Unit = js.native
+  def grabInput(options: AnonMouse): Unit = js.native
+  def grabInput(options: AnonMouse, safeCallback: Boolean): Unit = js.native
   def gray(): Terminal = js.native
   def gray(args: js.Any*): Terminal = js.native
   def gray(str: String): Terminal = js.native
@@ -425,9 +425,9 @@ trait Impl extends js.Object {
   def grey(): Terminal = js.native
   def grey(args: js.Any*): Terminal = js.native
   def grey(str: String): Terminal = js.native
-  def gridMenu(menuItems: js.Array[String]): AnonPromiseGridMenuResponse = js.native
+  def gridMenu(menuItems: js.Array[String]): Anon0 = js.native
   def gridMenu(menuItems: js.Array[String], callback: Callback[GridMenuResponse]): Unit = js.native
-  def gridMenu(menuItems: js.Array[String], options: GridMenuOptions): AnonPromiseGridMenuResponse = js.native
+  def gridMenu(menuItems: js.Array[String], options: GridMenuOptions): Anon0 = js.native
   def gridMenu(menuItems: js.Array[String], options: GridMenuOptions, callback: Callback[GridMenuResponse]): Unit = js.native
   def hidden(): Terminal = js.native
   def hidden(args: js.Any*): Terminal = js.native
@@ -529,9 +529,9 @@ trait Impl extends js.Object {
   def setHighlightBgColorRgb(r: Double, g: Double, b: Double): Terminal = js.native
   def setPalette(palette: String): Unit = js.native
   def setPalette(palette: Palette): Unit = js.native
-  def singleColumnMenu(menuItems: js.Array[String]): AnonPromiseSingleColumnMenuResponse = js.native
+  def singleColumnMenu(menuItems: js.Array[String]): AnonPromisePromise = js.native
   def singleColumnMenu(menuItems: js.Array[String], callback: Callback[SingleColumnMenuResponse]): Unit = js.native
-  def singleColumnMenu(menuItems: js.Array[String], options: SingleColumnMenuOptions): AnonPromiseSingleColumnMenuResponse = js.native
+  def singleColumnMenu(menuItems: js.Array[String], options: SingleColumnMenuOptions): AnonPromisePromise = js.native
   def singleColumnMenu(
     menuItems: js.Array[String],
     options: SingleColumnMenuOptions,

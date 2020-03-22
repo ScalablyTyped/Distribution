@@ -1,6 +1,6 @@
 package typings.cesium.mod
 
-import typings.cesium.AnonCornerTypeExtrudedHeight
+import typings.cesium.AnonFill
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("cesium", "CorridorGraphics")
 @js.native
 class CorridorGraphics () extends js.Object {
-  def this(options: AnonCornerTypeExtrudedHeight) = this()
+  def this(options: AnonFill) = this()
   var cornerType: Property = js.native
   var definitionChanged: Event[js.Array[_]] = js.native
   var extrudedHeight: Property = js.native

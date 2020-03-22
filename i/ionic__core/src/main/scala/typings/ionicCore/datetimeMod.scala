@@ -56,6 +56,13 @@ object datetimeMod extends js.Object {
       */
     var displayFormat: String = js.native
     /**
+      * The timezone to use for display purposes only. See
+      * [Date.prototype.toLocaleString()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleString)
+      * for a list of supported timezones. If no value is provided, the
+      * component will default to displaying times in the user's local timezone.
+      */
+    var displayTimezone: js.UndefOr[String] = js.native
+    /**
       * The text to display on the picker's "Done" button.
       */
     var doneText: String = js.native
@@ -171,7 +178,6 @@ object datetimeMod extends js.Object {
       */
     var readonly: Boolean = js.native
     var setFocus: js.Any = js.native
-    val text: js.Any = js.native
     var updateDatetimeValue: js.Any = js.native
     var validateColumn: js.Any = js.native
     var validateColumns: js.Any = js.native
@@ -196,6 +202,7 @@ object datetimeMod extends js.Object {
     def open(): js.Promise[Unit] = js.native
     @JSName("render")
     def render_MDatetime(): js.Any = js.native
+    /* private */ def text(): js.Any = js.native
     /**
       * Update the datetime value when the value changes
       */

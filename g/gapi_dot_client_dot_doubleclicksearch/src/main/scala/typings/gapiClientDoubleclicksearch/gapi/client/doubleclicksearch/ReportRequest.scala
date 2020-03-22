@@ -3,7 +3,7 @@ package typings.gapiClientDoubleclicksearch.gapi.client.doubleclicksearch
 import typings.gapiClientDoubleclicksearch.AnonAdGroupId
 import typings.gapiClientDoubleclicksearch.AnonChangedAttributesSinceTimestamp
 import typings.gapiClientDoubleclicksearch.AnonColumn
-import typings.gapiClientDoubleclicksearch.AnonColumnSortOrder
+import typings.gapiClientDoubleclicksearch.AnonSortOrder
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,7 +29,7 @@ trait ReportRequest extends js.Object {
     */
   var maxRowsPerFile: js.UndefOr[Double] = js.undefined
   /** Synchronous report only. A list of columns and directions defining sorting to be performed on the report rows. */
-  var orderBy: js.UndefOr[js.Array[AnonColumnSortOrder]] = js.undefined
+  var orderBy: js.UndefOr[js.Array[AnonSortOrder]] = js.undefined
   /**
     * The reportScope is a set of IDs that are used to determine which subset of entities will be returned in the report. The full lineage of IDs from the
     * lowest scoped level desired up through agency is required.
@@ -67,7 +67,7 @@ object ReportRequest {
     includeDeletedEntities: js.UndefOr[Boolean] = js.undefined,
     includeRemovedEntities: js.UndefOr[Boolean] = js.undefined,
     maxRowsPerFile: Int | Double = null,
-    orderBy: js.Array[AnonColumnSortOrder] = null,
+    orderBy: js.Array[AnonSortOrder] = null,
     reportScope: AnonAdGroupId = null,
     reportType: String = null,
     rowCount: Int | Double = null,

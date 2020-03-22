@@ -16,11 +16,8 @@ object radioGroupMod extends js.Object {
   @js.native
   trait RadioGroup
     extends Component[RadioGroupProps, RadioGroupState, js.Any] {
-    def getChildContext(): AnonRadioGroupAnonDisabledEv = js.native
     def onRadioChange(ev: RadioChangeEvent): Unit = js.native
-    def renderGroup(hasGetPrefixCls: ConfigConsumerProps): Element = js.native
-    @JSName("shouldComponentUpdate")
-    def shouldComponentUpdate_MRadioGroup(nextProps: RadioGroupProps, nextState: RadioGroupState): Boolean = js.native
+    def renderGroup(hasGetPrefixClsDirection: ConfigConsumerProps): Element = js.native
   }
   
   @js.native
@@ -31,7 +28,6 @@ object radioGroupMod extends js.Object {
   /* static members */
   @js.native
   object default extends js.Object {
-    var childContextTypes: AnonRadioGroup = js.native
     var defaultProps: AnonButtonStyle = js.native
     def getDerivedStateFromProps(nextProps: RadioGroupProps): AnonValueAny | Null = js.native
   }

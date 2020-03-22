@@ -1,31 +1,33 @@
 package typings.rcTable.tableMod
 
-import typings.rcTable.AnonBodyStyle
-import typings.rcTable.AnonChildren
-import typings.rcTable.AnonChildrenColumns
-import typings.rcTable.AnonComponents
-import typings.rcTable.TypeofClassColumnGroup
+import typings.rcTable.columnGroupMod.ColumnGroupProps
 import typings.rcTable.columnMod.ColumnProps
-import typings.rcTable.interfaceMod.DefaultValueType
-import typings.react.mod.FC
+import typings.rcTable.interfaceMod.DefaultRecordType
+import typings.react.mod._Global_.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("rc-table/lib/Table", JSImport.Default)
 @js.native
-class default[ValueType] protected () extends Table[ValueType] {
-  def this(props: TableProps[ValueType]) = this()
-}
-
-/* static members */
-@JSImport("rc-table/lib/Table", JSImport.Default)
-@js.native
 object default extends js.Object {
-  var Column: FC[ColumnProps] = js.native
-  var ColumnGroup: TypeofClassColumnGroup = js.native
-  var childContextTypes: AnonComponents = js.native
-  var defaultProps: AnonBodyStyle = js.native
-  def getDerivedStateFromProps(nextProps: TableProps[DefaultValueType], prevState: TableState): AnonChildren | AnonChildrenColumns = js.native
+  def apply[RecordType /* <: DefaultRecordType */](props: TableProps[RecordType]): Element = js.native
+  @js.native
+  object Column extends js.Object {
+    def apply[RecordType](_underscore: ColumnProps[RecordType]): js.Any = js.native
+  }
+  
+  @js.native
+  object ColumnGroup extends js.Object {
+    def apply[RecordType](_underscore: ColumnGroupProps[RecordType]): js.Any = js.native
+  }
+  
+  @js.native
+  object defaultProps extends js.Object {
+    var prefixCls: String = js.native
+    var rowKey: String = js.native
+    def emptyText(): String = js.native
+  }
+  
 }
 

@@ -1,10 +1,10 @@
 package typings.appleMapkitJs.mapkit
 
 import typings.appleMapkitJs.AnonAnnotation
-import typings.appleMapkitJs.AnonAnnotation56480231
-import typings.appleMapkitJs.AnonAnnotationCoordinate
+import typings.appleMapkitJs.AnonAnnotationAnnotation
 import typings.appleMapkitJs.AnonCode
 import typings.appleMapkitJs.AnonCoordinate
+import typings.appleMapkitJs.AnonTimestamp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,9 +13,9 @@ import scala.scalajs.js.annotation._
 trait MapEvents[T] extends js.Object {
   var deselect: EventBase[T] with AnonAnnotation
   var `double-tap`: EventBase[T]
-  var `drag-end`: EventBase[T] with AnonAnnotation56480231
-  var `drag-start`: EventBase[T] with AnonAnnotation56480231
-  var dragging: EventBase[T] with AnonAnnotationCoordinate
+  var `drag-end`: EventBase[T] with AnonAnnotationAnnotation
+  var `drag-start`: EventBase[T] with AnonAnnotationAnnotation
+  var dragging: EventBase[T] with AnonCoordinate
   var `long-press`: EventBase[T]
   var `map-type-change`: EventBase[T]
   var `region-change-end`: EventBase[T]
@@ -26,7 +26,7 @@ trait MapEvents[T] extends js.Object {
   var select: EventBase[T] with AnonAnnotation
   var `single-tap`: EventBase[T]
   // User Location Events
-  var `user-location-change`: EventBase[T] with AnonCoordinate
+  var `user-location-change`: EventBase[T] with AnonTimestamp
   var `user-location-error`: EventBase[T] with AnonCode
   var `zoom-end`: EventBase[T]
   var `zoom-start`: EventBase[T]
@@ -37,9 +37,9 @@ object MapEvents {
   def apply[T](
     deselect: EventBase[T] with AnonAnnotation,
     `double-tap`: EventBase[T],
-    `drag-end`: EventBase[T] with AnonAnnotation56480231,
-    `drag-start`: EventBase[T] with AnonAnnotation56480231,
-    dragging: EventBase[T] with AnonAnnotationCoordinate,
+    `drag-end`: EventBase[T] with AnonAnnotationAnnotation,
+    `drag-start`: EventBase[T] with AnonAnnotationAnnotation,
+    dragging: EventBase[T] with AnonCoordinate,
     `long-press`: EventBase[T],
     `map-type-change`: EventBase[T],
     `region-change-end`: EventBase[T],
@@ -48,7 +48,7 @@ object MapEvents {
     `scroll-start`: EventBase[T],
     select: EventBase[T] with AnonAnnotation,
     `single-tap`: EventBase[T],
-    `user-location-change`: EventBase[T] with AnonCoordinate,
+    `user-location-change`: EventBase[T] with AnonTimestamp,
     `user-location-error`: EventBase[T] with AnonCode,
     `zoom-end`: EventBase[T],
     `zoom-start`: EventBase[T]

@@ -1,9 +1,9 @@
 package typings.tabulatorTables.Tabulator
 
 import typings.std.HTMLElement
-import typings.std.Pick
 import typings.std.Record
 import typings.tabulatorTables.AnonColumnCalcs
+import typings.tabulatorTables.PickFilterfieldvalue
 import typings.tabulatorTables.tabulatorTablesBooleans.`false`
 import typings.tabulatorTables.tabulatorTablesBooleans.`true`
 import typings.tabulatorTables.tabulatorTablesStrings.active
@@ -18,7 +18,6 @@ import typings.tabulatorTables.tabulatorTablesStrings.columns
 import typings.tabulatorTables.tabulatorTablesStrings.cookie
 import typings.tabulatorTables.tabulatorTablesStrings.copy
 import typings.tabulatorTables.tabulatorTablesStrings.delete
-import typings.tabulatorTables.tabulatorTablesStrings.field
 import typings.tabulatorTables.tabulatorTablesStrings.filter
 import typings.tabulatorTables.tabulatorTablesStrings.fitColumns
 import typings.tabulatorTables.tabulatorTablesStrings.fitData
@@ -44,7 +43,6 @@ import typings.tabulatorTables.tabulatorTablesStrings.sort
 import typings.tabulatorTables.tabulatorTablesStrings.table
 import typings.tabulatorTables.tabulatorTablesStrings.top
 import typings.tabulatorTables.tabulatorTablesStrings.update
-import typings.tabulatorTables.tabulatorTablesStrings.value
 import typings.tabulatorTables.tabulatorTablesStrings.visible
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -190,7 +188,7 @@ object Options {
     htmlOutputConfig: AddditionalExportOptions = null,
     index: Double | String = null,
     initialFilter: js.Array[Filter] = null,
-    initialHeaderFilter: js.Array[Pick[Filter, field | value]] = null,
+    initialHeaderFilter: js.Array[PickFilterfieldvalue] = null,
     initialSort: js.Array[Sorter] = null,
     invalidOptionWarnings: js.UndefOr[Boolean] = js.undefined,
     keybindings: `false` | KeyBinding = null,

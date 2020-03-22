@@ -3,7 +3,7 @@ package typings.jupyterlabApputils.iframeMod
 import typings.jupyterlabApputils.iframeMod.IFrame.IOptions
 import typings.jupyterlabApputils.iframeMod.IFrame.ReferrerPolicy
 import typings.jupyterlabApputils.iframeMod.IFrame.SandboxExceptions
-import typings.phosphorWidgets.mod.Widget
+import typings.luminoWidgets.mod.Widget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,7 +26,8 @@ class IFrame_ () extends Widget {
     * For more information, see
     * https://developer.mozilla.org/en-US/docs/Web/API/HTMLIFrameElement/referrerPolicy
     */
-  var referrerPolicy: ReferrerPolicy = js.native
+  def referrerPolicy(): ReferrerPolicy = js.native
+  def referrerPolicy(value: ReferrerPolicy): js.Any = js.native
   /**
     * Exceptions to the sandboxing.
     *
@@ -40,10 +41,12 @@ class IFrame_ () extends Widget {
     * For more information, see
     * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe
     */
-  var sandbox: js.Array[SandboxExceptions] = js.native
+  def sandbox(): js.Array[SandboxExceptions] = js.native
+  def sandbox(values: js.Array[SandboxExceptions]): js.Any = js.native
   /**
     * The url of the IFrame.
     */
-  var url: String = js.native
+  def url(): String = js.native
+  def url(url: String): js.Any = js.native
 }
 

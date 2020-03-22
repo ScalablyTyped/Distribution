@@ -2,8 +2,8 @@ package typings.breeze.breeze
 
 import typings.breeze.AnonExpression
 import typings.breeze.AnonMaxLength
-import typings.breeze.AnonMaxLengthMessageTemplate
 import typings.breeze.AnonMessageTemplate
+import typings.breeze.AnonMinLength
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -84,7 +84,7 @@ object Validator extends js.Object {
   def single(): Validator = js.native
   def single(context: AnonMessageTemplate): Validator = js.native
   def string(): Validator = js.native
-  def stringLength(context: AnonMaxLengthMessageTemplate): Validator = js.native
+  def stringLength(context: AnonMinLength): Validator = js.native
   /** Returns the URL (protocol required) validator */
   def url(): Validator = js.native
   def url(context: AnonMessageTemplate): Validator = js.native

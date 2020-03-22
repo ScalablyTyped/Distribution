@@ -161,9 +161,6 @@ object expressValidatorStrings {
   sealed trait SI extends PostalCodeLocale
   
   @js.native
-  sealed trait SanitizersSchema extends js.Object
-  
-  @js.native
   sealed trait TN extends PostalCodeLocale
   
   @js.native
@@ -176,9 +173,6 @@ object expressValidatorStrings {
   sealed trait US extends PostalCodeLocale
   
   @js.native
-  sealed trait ValidatorsSchema extends js.Object
-  
-  @js.native
   sealed trait ZA extends PostalCodeLocale
   
   @js.native
@@ -186,12 +180,6 @@ object expressValidatorStrings {
   
   @js.native
   sealed trait _error extends js.Object
-  
-  @js.native
-  sealed trait addError extends js.Object
-  
-  @js.native
-  sealed trait addFieldInstances extends js.Object
   
   @js.native
   sealed trait all extends UUIDVersion
@@ -315,10 +303,16 @@ object expressValidatorStrings {
   sealed trait bindAll extends js.Object
   
   @js.native
+  sealed trait blacklist extends js.Object
+  
+  @js.native
   sealed trait `bn-BD` extends MobilePhoneLocale
   
   @js.native
   sealed trait body extends Location
+  
+  @js.native
+  sealed trait contains extends js.Object
   
   @js.native
   sealed trait cookies extends Location
@@ -334,6 +328,12 @@ object expressValidatorStrings {
     extends AlphaLocale
        with AlphanumericLocale
        with MobilePhoneLocale
+  
+  @js.native
+  sealed trait custom extends js.Object
+  
+  @js.native
+  sealed trait customSanitizer extends js.Object
   
   @js.native
   sealed trait `da-DK`
@@ -444,6 +444,9 @@ object expressValidatorStrings {
        with MobilePhoneLocale
   
   @js.native
+  sealed trait equals extends js.Object
+  
+  @js.native
   sealed trait `es-CL` extends MobilePhoneLocale
   
   @js.native
@@ -468,7 +471,13 @@ object expressValidatorStrings {
   sealed trait `es-UY` extends MobilePhoneLocale
   
   @js.native
+  sealed trait escape extends js.Object
+  
+  @js.native
   sealed trait `et-EE` extends MobilePhoneLocale
+  
+  @js.native
+  sealed trait exists extends js.Object
   
   @js.native
   sealed trait `express-validatorNumbersigncontexts` extends js.Object
@@ -541,6 +550,192 @@ object expressValidatorStrings {
   sealed trait `id-ID` extends MobilePhoneLocale
   
   @js.native
+  sealed trait isAfter extends js.Object
+  
+  @js.native
+  sealed trait isAlpha extends js.Object
+  
+  @js.native
+  sealed trait isAlphanumeric extends js.Object
+  
+  @js.native
+  sealed trait isArray extends js.Object
+  
+  @js.native
+  sealed trait isAscii extends js.Object
+  
+  @js.native
+  sealed trait isBIC extends js.Object
+  
+  @js.native
+  sealed trait isBase32 extends js.Object
+  
+  @js.native
+  sealed trait isBase64 extends js.Object
+  
+  @js.native
+  sealed trait isBefore extends js.Object
+  
+  @js.native
+  sealed trait isBoolean extends js.Object
+  
+  @js.native
+  sealed trait isByteLength extends js.Object
+  
+  @js.native
+  sealed trait isCreditCard extends js.Object
+  
+  @js.native
+  sealed trait isCurrency extends js.Object
+  
+  @js.native
+  sealed trait isDataURI extends js.Object
+  
+  @js.native
+  sealed trait isDecimal extends js.Object
+  
+  @js.native
+  sealed trait isDivisibleBy extends js.Object
+  
+  @js.native
+  sealed trait isEmail extends js.Object
+  
+  @js.native
+  sealed trait isEmpty extends js.Object
+  
+  @js.native
+  sealed trait isFQDN extends js.Object
+  
+  @js.native
+  sealed trait isFloat extends js.Object
+  
+  @js.native
+  sealed trait isFullWidth extends js.Object
+  
+  @js.native
+  sealed trait isHalfWidth extends js.Object
+  
+  @js.native
+  sealed trait isHash extends js.Object
+  
+  @js.native
+  sealed trait isHexColor extends js.Object
+  
+  @js.native
+  sealed trait isHexadecimal extends js.Object
+  
+  @js.native
+  sealed trait isIP extends js.Object
+  
+  @js.native
+  sealed trait isIPRange extends js.Object
+  
+  @js.native
+  sealed trait isISBN extends js.Object
+  
+  @js.native
+  sealed trait isISIN extends js.Object
+  
+  @js.native
+  sealed trait isISO31661Alpha2 extends js.Object
+  
+  @js.native
+  sealed trait isISO31661Alpha3 extends js.Object
+  
+  @js.native
+  sealed trait isISO8601 extends js.Object
+  
+  @js.native
+  sealed trait isISRC extends js.Object
+  
+  @js.native
+  sealed trait isISSN extends js.Object
+  
+  @js.native
+  sealed trait isIdentityCard extends js.Object
+  
+  @js.native
+  sealed trait isIn extends js.Object
+  
+  @js.native
+  sealed trait isInt extends js.Object
+  
+  @js.native
+  sealed trait isJSON extends js.Object
+  
+  @js.native
+  sealed trait isJWT extends js.Object
+  
+  @js.native
+  sealed trait isLatLong extends js.Object
+  
+  @js.native
+  sealed trait isLength extends js.Object
+  
+  @js.native
+  sealed trait isLowercase extends js.Object
+  
+  @js.native
+  sealed trait isMACAddress extends js.Object
+  
+  @js.native
+  sealed trait isMD5 extends js.Object
+  
+  @js.native
+  sealed trait isMagnetURI extends js.Object
+  
+  @js.native
+  sealed trait isMimeType extends js.Object
+  
+  @js.native
+  sealed trait isMobilePhone extends js.Object
+  
+  @js.native
+  sealed trait isMongoId extends js.Object
+  
+  @js.native
+  sealed trait isMultibyte extends js.Object
+  
+  @js.native
+  sealed trait isNumeric extends js.Object
+  
+  @js.native
+  sealed trait isOctal extends js.Object
+  
+  @js.native
+  sealed trait isPort extends js.Object
+  
+  @js.native
+  sealed trait isPostalCode extends js.Object
+  
+  @js.native
+  sealed trait isRFC3339 extends js.Object
+  
+  @js.native
+  sealed trait isSlug extends js.Object
+  
+  @js.native
+  sealed trait isString extends js.Object
+  
+  @js.native
+  sealed trait isSurrogatePair extends js.Object
+  
+  @js.native
+  sealed trait isURL extends js.Object
+  
+  @js.native
+  sealed trait isUUID extends js.Object
+  
+  @js.native
+  sealed trait isUppercase extends js.Object
+  
+  @js.native
+  sealed trait isVariableWidth extends js.Object
+  
+  @js.native
+  sealed trait isWhitelisted extends js.Object
+  
+  @js.native
   sealed trait `it-IT`
     extends AlphaLocale
        with AlphanumericLocale
@@ -562,6 +757,12 @@ object expressValidatorStrings {
   
   @js.native
   sealed trait `lt-LT` extends MobilePhoneLocale
+  
+  @js.native
+  sealed trait ltrim extends js.Object
+  
+  @js.native
+  sealed trait matches extends js.Object
   
   @js.native
   sealed trait md4 extends HashAlgorithm
@@ -597,6 +798,15 @@ object expressValidatorStrings {
        with MobilePhoneLocale
   
   @js.native
+  sealed trait normalizeEmail extends js.Object
+  
+  @js.native
+  sealed trait not extends js.Object
+  
+  @js.native
+  sealed trait notEmpty extends js.Object
+  
+  @js.native
   sealed trait params extends Location
   
   @js.native
@@ -630,13 +840,13 @@ object expressValidatorStrings {
   sealed trait `ro-RO` extends MobilePhoneLocale
   
   @js.native
+  sealed trait rtrim extends js.Object
+  
+  @js.native
   sealed trait `ru-RU`
     extends AlphaLocale
        with AlphanumericLocale
        with MobilePhoneLocale
-  
-  @js.native
-  sealed trait setData extends js.Object
   
   @js.native
   sealed trait sha1 extends HashAlgorithm
@@ -674,6 +884,9 @@ object expressValidatorStrings {
        with AlphanumericLocale
   
   @js.native
+  sealed trait stripLow extends js.Object
+  
+  @js.native
   sealed trait `sv-SE`
     extends AlphaLocale
        with AlphanumericLocale
@@ -692,10 +905,28 @@ object expressValidatorStrings {
   sealed trait tiger192 extends HashAlgorithm
   
   @js.native
+  sealed trait toArray extends js.Object
+  
+  @js.native
+  sealed trait toBoolean extends js.Object
+  
+  @js.native
+  sealed trait toDate extends js.Object
+  
+  @js.native
+  sealed trait toFloat extends js.Object
+  
+  @js.native
+  sealed trait toInt extends js.Object
+  
+  @js.native
   sealed trait `tr-TR`
     extends AlphaLocale
        with AlphanumericLocale
        with MobilePhoneLocale
+  
+  @js.native
+  sealed trait trim extends js.Object
   
   @js.native
   sealed trait `uk-UA`
@@ -704,7 +935,16 @@ object expressValidatorStrings {
        with MobilePhoneLocale
   
   @js.native
+  sealed trait unescape extends js.Object
+  
+  @js.native
   sealed trait `vi-VN` extends MobilePhoneLocale
+  
+  @js.native
+  sealed trait whitelist extends js.Object
+  
+  @js.native
+  sealed trait withMessage extends js.Object
   
   @js.native
   sealed trait `zh-CN` extends MobilePhoneLocale
@@ -814,8 +1054,6 @@ object expressValidatorStrings {
   @scala.inline
   def SI: SI = "SI".asInstanceOf[SI]
   @scala.inline
-  def SanitizersSchema: SanitizersSchema = "SanitizersSchema".asInstanceOf[SanitizersSchema]
-  @scala.inline
   def TN: TN = "TN".asInstanceOf[TN]
   @scala.inline
   def TW: TW = "TW".asInstanceOf[TW]
@@ -824,17 +1062,11 @@ object expressValidatorStrings {
   @scala.inline
   def US: US = "US".asInstanceOf[US]
   @scala.inline
-  def ValidatorsSchema: ValidatorsSchema = "ValidatorsSchema".asInstanceOf[ValidatorsSchema]
-  @scala.inline
   def ZA: ZA = "ZA".asInstanceOf[ZA]
   @scala.inline
   def ZM: ZM = "ZM".asInstanceOf[ZM]
   @scala.inline
   def _error: _error = "_error".asInstanceOf[_error]
-  @scala.inline
-  def addError: addError = "addError".asInstanceOf[addError]
-  @scala.inline
-  def addFieldInstances: addFieldInstances = "addFieldInstances".asInstanceOf[addFieldInstances]
   @scala.inline
   def all: all = "all".asInstanceOf[all]
   @scala.inline
@@ -882,9 +1114,13 @@ object expressValidatorStrings {
   @scala.inline
   def bindAll: bindAll = "bindAll".asInstanceOf[bindAll]
   @scala.inline
+  def blacklist: blacklist = "blacklist".asInstanceOf[blacklist]
+  @scala.inline
   def `bn-BD`: `bn-BD` = "bn-BD".asInstanceOf[`bn-BD`]
   @scala.inline
   def body: body = "body".asInstanceOf[body]
+  @scala.inline
+  def contains: contains = "contains".asInstanceOf[contains]
   @scala.inline
   def cookies: cookies = "cookies".asInstanceOf[cookies]
   @scala.inline
@@ -893,6 +1129,10 @@ object expressValidatorStrings {
   def crc32b: crc32b = "crc32b".asInstanceOf[crc32b]
   @scala.inline
   def `cs-CZ`: `cs-CZ` = "cs-CZ".asInstanceOf[`cs-CZ`]
+  @scala.inline
+  def custom: custom = "custom".asInstanceOf[custom]
+  @scala.inline
+  def customSanitizer: customSanitizer = "customSanitizer".asInstanceOf[customSanitizer]
   @scala.inline
   def `da-DK`: `da-DK` = "da-DK".asInstanceOf[`da-DK`]
   @scala.inline
@@ -944,6 +1184,8 @@ object expressValidatorStrings {
   @scala.inline
   def `en-ZM`: `en-ZM` = "en-ZM".asInstanceOf[`en-ZM`]
   @scala.inline
+  def equals: equals = "equals".asInstanceOf[equals]
+  @scala.inline
   def `es-CL`: `es-CL` = "es-CL".asInstanceOf[`es-CL`]
   @scala.inline
   def `es-EC`: `es-EC` = "es-EC".asInstanceOf[`es-EC`]
@@ -958,7 +1200,11 @@ object expressValidatorStrings {
   @scala.inline
   def `es-UY`: `es-UY` = "es-UY".asInstanceOf[`es-UY`]
   @scala.inline
+  def escape: escape = "escape".asInstanceOf[escape]
+  @scala.inline
   def `et-EE`: `et-EE` = "et-EE".asInstanceOf[`et-EE`]
+  @scala.inline
+  def exists: exists = "exists".asInstanceOf[exists]
   @scala.inline
   def `express-validatorNumbersigncontexts`: `express-validatorNumbersigncontexts` = "express-validator#contexts".asInstanceOf[`express-validatorNumbersigncontexts`]
   @scala.inline
@@ -998,6 +1244,130 @@ object expressValidatorStrings {
   @scala.inline
   def `id-ID`: `id-ID` = "id-ID".asInstanceOf[`id-ID`]
   @scala.inline
+  def isAfter: isAfter = "isAfter".asInstanceOf[isAfter]
+  @scala.inline
+  def isAlpha: isAlpha = "isAlpha".asInstanceOf[isAlpha]
+  @scala.inline
+  def isAlphanumeric: isAlphanumeric = "isAlphanumeric".asInstanceOf[isAlphanumeric]
+  @scala.inline
+  def isArray: isArray = "isArray".asInstanceOf[isArray]
+  @scala.inline
+  def isAscii: isAscii = "isAscii".asInstanceOf[isAscii]
+  @scala.inline
+  def isBIC: isBIC = "isBIC".asInstanceOf[isBIC]
+  @scala.inline
+  def isBase32: isBase32 = "isBase32".asInstanceOf[isBase32]
+  @scala.inline
+  def isBase64: isBase64 = "isBase64".asInstanceOf[isBase64]
+  @scala.inline
+  def isBefore: isBefore = "isBefore".asInstanceOf[isBefore]
+  @scala.inline
+  def isBoolean: isBoolean = "isBoolean".asInstanceOf[isBoolean]
+  @scala.inline
+  def isByteLength: isByteLength = "isByteLength".asInstanceOf[isByteLength]
+  @scala.inline
+  def isCreditCard: isCreditCard = "isCreditCard".asInstanceOf[isCreditCard]
+  @scala.inline
+  def isCurrency: isCurrency = "isCurrency".asInstanceOf[isCurrency]
+  @scala.inline
+  def isDataURI: isDataURI = "isDataURI".asInstanceOf[isDataURI]
+  @scala.inline
+  def isDecimal: isDecimal = "isDecimal".asInstanceOf[isDecimal]
+  @scala.inline
+  def isDivisibleBy: isDivisibleBy = "isDivisibleBy".asInstanceOf[isDivisibleBy]
+  @scala.inline
+  def isEmail: isEmail = "isEmail".asInstanceOf[isEmail]
+  @scala.inline
+  def isEmpty: isEmpty = "isEmpty".asInstanceOf[isEmpty]
+  @scala.inline
+  def isFQDN: isFQDN = "isFQDN".asInstanceOf[isFQDN]
+  @scala.inline
+  def isFloat: isFloat = "isFloat".asInstanceOf[isFloat]
+  @scala.inline
+  def isFullWidth: isFullWidth = "isFullWidth".asInstanceOf[isFullWidth]
+  @scala.inline
+  def isHalfWidth: isHalfWidth = "isHalfWidth".asInstanceOf[isHalfWidth]
+  @scala.inline
+  def isHash: isHash = "isHash".asInstanceOf[isHash]
+  @scala.inline
+  def isHexColor: isHexColor = "isHexColor".asInstanceOf[isHexColor]
+  @scala.inline
+  def isHexadecimal: isHexadecimal = "isHexadecimal".asInstanceOf[isHexadecimal]
+  @scala.inline
+  def isIP: isIP = "isIP".asInstanceOf[isIP]
+  @scala.inline
+  def isIPRange: isIPRange = "isIPRange".asInstanceOf[isIPRange]
+  @scala.inline
+  def isISBN: isISBN = "isISBN".asInstanceOf[isISBN]
+  @scala.inline
+  def isISIN: isISIN = "isISIN".asInstanceOf[isISIN]
+  @scala.inline
+  def isISO31661Alpha2: isISO31661Alpha2 = "isISO31661Alpha2".asInstanceOf[isISO31661Alpha2]
+  @scala.inline
+  def isISO31661Alpha3: isISO31661Alpha3 = "isISO31661Alpha3".asInstanceOf[isISO31661Alpha3]
+  @scala.inline
+  def isISO8601: isISO8601 = "isISO8601".asInstanceOf[isISO8601]
+  @scala.inline
+  def isISRC: isISRC = "isISRC".asInstanceOf[isISRC]
+  @scala.inline
+  def isISSN: isISSN = "isISSN".asInstanceOf[isISSN]
+  @scala.inline
+  def isIdentityCard: isIdentityCard = "isIdentityCard".asInstanceOf[isIdentityCard]
+  @scala.inline
+  def isIn: isIn = "isIn".asInstanceOf[isIn]
+  @scala.inline
+  def isInt: isInt = "isInt".asInstanceOf[isInt]
+  @scala.inline
+  def isJSON: isJSON = "isJSON".asInstanceOf[isJSON]
+  @scala.inline
+  def isJWT: isJWT = "isJWT".asInstanceOf[isJWT]
+  @scala.inline
+  def isLatLong: isLatLong = "isLatLong".asInstanceOf[isLatLong]
+  @scala.inline
+  def isLength: isLength = "isLength".asInstanceOf[isLength]
+  @scala.inline
+  def isLowercase: isLowercase = "isLowercase".asInstanceOf[isLowercase]
+  @scala.inline
+  def isMACAddress: isMACAddress = "isMACAddress".asInstanceOf[isMACAddress]
+  @scala.inline
+  def isMD5: isMD5 = "isMD5".asInstanceOf[isMD5]
+  @scala.inline
+  def isMagnetURI: isMagnetURI = "isMagnetURI".asInstanceOf[isMagnetURI]
+  @scala.inline
+  def isMimeType: isMimeType = "isMimeType".asInstanceOf[isMimeType]
+  @scala.inline
+  def isMobilePhone: isMobilePhone = "isMobilePhone".asInstanceOf[isMobilePhone]
+  @scala.inline
+  def isMongoId: isMongoId = "isMongoId".asInstanceOf[isMongoId]
+  @scala.inline
+  def isMultibyte: isMultibyte = "isMultibyte".asInstanceOf[isMultibyte]
+  @scala.inline
+  def isNumeric: isNumeric = "isNumeric".asInstanceOf[isNumeric]
+  @scala.inline
+  def isOctal: isOctal = "isOctal".asInstanceOf[isOctal]
+  @scala.inline
+  def isPort: isPort = "isPort".asInstanceOf[isPort]
+  @scala.inline
+  def isPostalCode: isPostalCode = "isPostalCode".asInstanceOf[isPostalCode]
+  @scala.inline
+  def isRFC3339: isRFC3339 = "isRFC3339".asInstanceOf[isRFC3339]
+  @scala.inline
+  def isSlug: isSlug = "isSlug".asInstanceOf[isSlug]
+  @scala.inline
+  def isString: isString = "isString".asInstanceOf[isString]
+  @scala.inline
+  def isSurrogatePair: isSurrogatePair = "isSurrogatePair".asInstanceOf[isSurrogatePair]
+  @scala.inline
+  def isURL: isURL = "isURL".asInstanceOf[isURL]
+  @scala.inline
+  def isUUID: isUUID = "isUUID".asInstanceOf[isUUID]
+  @scala.inline
+  def isUppercase: isUppercase = "isUppercase".asInstanceOf[isUppercase]
+  @scala.inline
+  def isVariableWidth: isVariableWidth = "isVariableWidth".asInstanceOf[isVariableWidth]
+  @scala.inline
+  def isWhitelisted: isWhitelisted = "isWhitelisted".asInstanceOf[isWhitelisted]
+  @scala.inline
   def `it-IT`: `it-IT` = "it-IT".asInstanceOf[`it-IT`]
   @scala.inline
   def `ja-JP`: `ja-JP` = "ja-JP".asInstanceOf[`ja-JP`]
@@ -1009,6 +1379,10 @@ object expressValidatorStrings {
   def `ku-IQ`: `ku-IQ` = "ku-IQ".asInstanceOf[`ku-IQ`]
   @scala.inline
   def `lt-LT`: `lt-LT` = "lt-LT".asInstanceOf[`lt-LT`]
+  @scala.inline
+  def ltrim: ltrim = "ltrim".asInstanceOf[ltrim]
+  @scala.inline
+  def matches: matches = "matches".asInstanceOf[matches]
   @scala.inline
   def md4: md4 = "md4".asInstanceOf[md4]
   @scala.inline
@@ -1026,6 +1400,12 @@ object expressValidatorStrings {
   @scala.inline
   def `nn-NO`: `nn-NO` = "nn-NO".asInstanceOf[`nn-NO`]
   @scala.inline
+  def normalizeEmail: normalizeEmail = "normalizeEmail".asInstanceOf[normalizeEmail]
+  @scala.inline
+  def not: not = "not".asInstanceOf[not]
+  @scala.inline
+  def notEmpty: notEmpty = "notEmpty".asInstanceOf[notEmpty]
+  @scala.inline
   def params: params = "params".asInstanceOf[params]
   @scala.inline
   def `pl-PL`: `pl-PL` = "pl-PL".asInstanceOf[`pl-PL`]
@@ -1042,9 +1422,9 @@ object expressValidatorStrings {
   @scala.inline
   def `ro-RO`: `ro-RO` = "ro-RO".asInstanceOf[`ro-RO`]
   @scala.inline
-  def `ru-RU`: `ru-RU` = "ru-RU".asInstanceOf[`ru-RU`]
+  def rtrim: rtrim = "rtrim".asInstanceOf[rtrim]
   @scala.inline
-  def setData: setData = "setData".asInstanceOf[setData]
+  def `ru-RU`: `ru-RU` = "ru-RU".asInstanceOf[`ru-RU`]
   @scala.inline
   def sha1: sha1 = "sha1".asInstanceOf[sha1]
   @scala.inline
@@ -1062,6 +1442,8 @@ object expressValidatorStrings {
   @scala.inline
   def `sr-RS@latin`: `sr-RS@latin` = "sr-RS@latin".asInstanceOf[`sr-RS@latin`]
   @scala.inline
+  def stripLow: stripLow = "stripLow".asInstanceOf[stripLow]
+  @scala.inline
   def `sv-SE`: `sv-SE` = "sv-SE".asInstanceOf[`sv-SE`]
   @scala.inline
   def `th-TH`: `th-TH` = "th-TH".asInstanceOf[`th-TH`]
@@ -1072,11 +1454,29 @@ object expressValidatorStrings {
   @scala.inline
   def tiger192: tiger192 = "tiger192".asInstanceOf[tiger192]
   @scala.inline
+  def toArray: toArray = "toArray".asInstanceOf[toArray]
+  @scala.inline
+  def toBoolean: toBoolean = "toBoolean".asInstanceOf[toBoolean]
+  @scala.inline
+  def toDate: toDate = "toDate".asInstanceOf[toDate]
+  @scala.inline
+  def toFloat: toFloat = "toFloat".asInstanceOf[toFloat]
+  @scala.inline
+  def toInt: toInt = "toInt".asInstanceOf[toInt]
+  @scala.inline
   def `tr-TR`: `tr-TR` = "tr-TR".asInstanceOf[`tr-TR`]
+  @scala.inline
+  def trim: trim = "trim".asInstanceOf[trim]
   @scala.inline
   def `uk-UA`: `uk-UA` = "uk-UA".asInstanceOf[`uk-UA`]
   @scala.inline
+  def unescape: unescape = "unescape".asInstanceOf[unescape]
+  @scala.inline
   def `vi-VN`: `vi-VN` = "vi-VN".asInstanceOf[`vi-VN`]
+  @scala.inline
+  def whitelist: whitelist = "whitelist".asInstanceOf[whitelist]
+  @scala.inline
+  def withMessage: withMessage = "withMessage".asInstanceOf[withMessage]
   @scala.inline
   def `zh-CN`: `zh-CN` = "zh-CN".asInstanceOf[`zh-CN`]
   @scala.inline

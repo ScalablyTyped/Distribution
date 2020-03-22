@@ -18,7 +18,7 @@ trait Result extends js.Object {
   /**
     * Coordinates of first match region.
     */
-  var selectionArea: SelectionArea
+  var selectionArea: Rectangle
 }
 
 object Result {
@@ -28,7 +28,7 @@ object Result {
     finalUpdate: Boolean,
     matches: Double,
     requestId: Double,
-    selectionArea: SelectionArea
+    selectionArea: Rectangle
   ): Result = {
     val __obj = js.Dynamic.literal(activeMatchOrdinal = activeMatchOrdinal.asInstanceOf[js.Any], finalUpdate = finalUpdate.asInstanceOf[js.Any], matches = matches.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any], selectionArea = selectionArea.asInstanceOf[js.Any])
   

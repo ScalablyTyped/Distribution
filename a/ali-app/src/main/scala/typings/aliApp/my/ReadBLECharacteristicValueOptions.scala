@@ -1,6 +1,6 @@
 package typings.aliApp.my
 
-import typings.aliApp.AnonCharacteristic
+import typings.aliApp.characteristiccharacteris
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,7 +20,7 @@ trait ReadBLECharacteristicValueOptions
   		 */
   var serviceId: String
   @JSName("success")
-  def success_MReadBLECharacteristicValueOptions(res: AnonCharacteristic with ErrMsgResponse): Unit
+  def success_MReadBLECharacteristicValueOptions(res: characteristiccharacteris): Unit
 }
 
 object ReadBLECharacteristicValueOptions {
@@ -29,7 +29,7 @@ object ReadBLECharacteristicValueOptions {
     characteristicId: String,
     deviceId: String,
     serviceId: String,
-    success: AnonCharacteristic with ErrMsgResponse => Unit,
+    success: characteristiccharacteris => Unit,
     complete: /* res */ js.Any => Unit = null,
     fail: js.Any => Unit = null
   ): ReadBLECharacteristicValueOptions = {

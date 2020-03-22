@@ -8,9 +8,6 @@ import scala.scalajs.js.annotation._
 
 object emojiMartStrings {
   @js.native
-  sealed trait EmojiEntry extends js.Object
-  
-  @js.native
   sealed trait _empty extends js.Object
   
   @js.native
@@ -38,16 +35,10 @@ object emojiMartStrings {
   sealed trait google extends EmojiSet
   
   @js.native
-  sealed trait id extends js.Object
-  
-  @js.native
   sealed trait messenger extends EmojiSet
   
   @js.native
   sealed trait nature extends CategoryName
-  
-  @js.native
-  sealed trait notfound extends js.Object
   
   @js.native
   sealed trait objects extends CategoryName
@@ -71,8 +62,6 @@ object emojiMartStrings {
   sealed trait twitter extends EmojiSet
   
   @scala.inline
-  def EmojiEntry: EmojiEntry = "EmojiEntry".asInstanceOf[EmojiEntry]
-  @scala.inline
   def _empty: _empty = "".asInstanceOf[_empty]
   @scala.inline
   def activity: activity = "activity".asInstanceOf[activity]
@@ -91,13 +80,9 @@ object emojiMartStrings {
   @scala.inline
   def google: google = "google".asInstanceOf[google]
   @scala.inline
-  def id: id = "id".asInstanceOf[id]
-  @scala.inline
   def messenger: messenger = "messenger".asInstanceOf[messenger]
   @scala.inline
   def nature: nature = "nature".asInstanceOf[nature]
-  @scala.inline
-  def notfound: notfound = "notfound".asInstanceOf[notfound]
   @scala.inline
   def objects: objects = "objects".asInstanceOf[objects]
   @scala.inline

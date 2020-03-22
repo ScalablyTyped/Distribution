@@ -92,7 +92,7 @@ class Chart_ protected () extends js.Object {
   /**
     * Index position of the chart in the Highcharts#charts property.
     */
-  var index: Double = js.native
+  val index: Double = js.native
   /**
     * The flag is set to `true` if a series of the chart is inverted.
     */
@@ -101,6 +101,12 @@ class Chart_ protected () extends js.Object {
     * The overview of the chart's series.
     */
   var legend: Legend = js.native
+  /**
+    * Callback function to override the default function that formats all the
+    * numbers in the chart. Returns a string with the formatted number.
+    */
+  @JSName("numberFormatter")
+  var numberFormatter_Original: NumberFormatterCallbackFunction = js.native
   /**
     * The options structure for the chart after merging #defaultOptions and
     * #userOptions. It contains members for the sub elements like series,
@@ -561,6 +567,13 @@ class Chart_ protected () extends js.Object {
   def mapZoom(howMuch: Double, centerX: Double, centerY: Double): Unit = js.native
   def mapZoom(howMuch: Double, centerX: Double, centerY: Double, mouseX: Double): Unit = js.native
   def mapZoom(howMuch: Double, centerX: Double, centerY: Double, mouseX: Double, mouseY: Double): Unit = js.native
+  /**
+    * Callback function to override the default function that formats all the
+    * numbers in the chart. Returns a string with the formatted number.
+    */
+  def numberFormatter(number: Double, decimals: Double): String = js.native
+  def numberFormatter(number: Double, decimals: Double, decimalPoint: String): String = js.native
+  def numberFormatter(number: Double, decimals: Double, decimalPoint: String, thousandsSep: String): String = js.native
   /**
     * Experimental function to send a chart's config to the Cloud for
     * editing.

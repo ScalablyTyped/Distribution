@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/core", "NgZone")
 @js.native
 class NgZone protected () extends js.Object {
-  def this(hasEnableLongStackTrace: AnonEnableLongStackTrace) = this()
+  def this(hasEnableLongStackTraceShouldCoalesceEventChangeDetection: AnonEnableLongStackTrace) = this()
   val hasPendingMacrotasks: Boolean = js.native
   val hasPendingMicrotasks: Boolean = js.native
   /**

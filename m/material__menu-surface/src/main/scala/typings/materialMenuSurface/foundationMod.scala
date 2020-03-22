@@ -3,10 +3,8 @@ package typings.materialMenuSurface
 import typings.materialBase.foundationMod.MDCFoundation
 import typings.materialMenuSurface.adapterMod.MDCMenuSurfaceAdapter
 import typings.materialMenuSurface.constantsMod.Corner
-import typings.materialMenuSurface.typesMod.MDCMenuDistance
 import typings.std.KeyboardEvent
 import typings.std.MouseEvent
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +14,7 @@ import scala.scalajs.js.annotation._
 object foundationMod extends js.Object {
   @js.native
   class MDCMenuSurfaceFoundation () extends MDCFoundation[MDCMenuSurfaceAdapter] {
-    def this(adapter: Partial[MDCMenuSurfaceAdapter]) = this()
+    def this(adapter: PartialMDCMenuSurfaceAdap) = this()
     /**
       * Closes the menu surface.
       */
@@ -46,7 +44,7 @@ object foundationMod extends js.Object {
     /**
       * @param margin Set of margin values from anchor.
       */
-    def setAnchorMargin(margin: Partial[MDCMenuDistance]): Unit = js.native
+    def setAnchorMargin(margin: PartialMDCMenuDistance): Unit = js.native
     /** Used to set the menu-surface calculations based on a fixed position menu. */
     def setFixedPosition(isFixedPosition: Boolean): Unit = js.native
     /** Used to indicate if the menu-surface is hoisted to the body. */
@@ -56,7 +54,7 @@ object foundationMod extends js.Object {
   
   @js.native
   class default () extends MDCMenuSurfaceFoundation {
-    def this(adapter: Partial[MDCMenuSurfaceAdapter]) = this()
+    def this(adapter: PartialMDCMenuSurfaceAdap) = this()
   }
   
   /* static members */

@@ -11,9 +11,6 @@ import scala.scalajs.js.annotation._
 
 object swiperStrings {
   @js.native
-  sealed trait SwiperOptions extends js.Object
-  
-  @js.native
   sealed trait auto extends js.Object
   
   @js.native
@@ -231,8 +228,6 @@ object swiperStrings {
   @js.native
   sealed trait wrapper extends js.Object
   
-  @scala.inline
-  def SwiperOptions: SwiperOptions = "SwiperOptions".asInstanceOf[SwiperOptions]
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
   @scala.inline

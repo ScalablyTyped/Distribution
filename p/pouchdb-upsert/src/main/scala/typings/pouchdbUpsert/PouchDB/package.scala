@@ -18,6 +18,6 @@ package object PouchDB {
   // `{} | Core.Document<Content>` to `Core.Document<Content>`.
   type UpsertDiffCallback[Content /* <: js.Object */] = js.Function1[
     /* doc */ typings.std.Partial[typings.pouchdbCore.PouchDB.Core.Document[Content]], 
-    (Content with typings.std.Partial[typings.pouchdbCore.PouchDB.Core.IdMeta]) | typings.pouchdbUpsert.PouchDB.CancelUpsert
+    (Content with typings.pouchdbUpsert.PartialIdMeta) | typings.pouchdbUpsert.PouchDB.CancelUpsert
   ]
 }

@@ -1,6 +1,6 @@
 package typings.zingchart.mod
 
-import typings.zingchart.AnonAlphaAngleBackgroundcolorBackgroundcolor1Backgroundcolor2BackgroundfitBackgroundimageBackgroundpositionBackgroundrepeatBoldBorderbottomBordercolorBorderleft
+import typings.zingchart.AnonCalloutoffset
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,9 +10,7 @@ trait refresh extends js.Object {
     * Enabling true will allow dynamic value range of the scale pertaining to the values. false (default) | true
     */
   var `adjust-scale`: js.UndefOr[Boolean] = js.undefined
-  var curtain: js.UndefOr[
-    AnonAlphaAngleBackgroundcolorBackgroundcolor1Backgroundcolor2BackgroundfitBackgroundimageBackgroundpositionBackgroundrepeatBoldBorderbottomBordercolorBorderleft
-  ] = js.undefined
+  var curtain: js.UndefOr[AnonCalloutoffset] = js.undefined
   /**
     * Sets the timeout between two refresh operations. If value is smaller than 50, seconds are assumed, otherwise milliseconds are assu
     * med. 5 | 10 | ...
@@ -44,7 +42,7 @@ object refresh {
   @scala.inline
   def apply(
     `adjust-scale`: js.UndefOr[Boolean] = js.undefined,
-    curtain: AnonAlphaAngleBackgroundcolorBackgroundcolor1Backgroundcolor2BackgroundfitBackgroundimageBackgroundpositionBackgroundrepeatBoldBorderbottomBordercolorBorderleft = null,
+    curtain: AnonCalloutoffset = null,
     interval: Int | Double = null,
     `max-ticks`: Int | Double = null,
     `reset-timeout`: Int | Double = null,

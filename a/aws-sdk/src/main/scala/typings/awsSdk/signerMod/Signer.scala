@@ -1,6 +1,5 @@
 package typings.awsSdk.signerMod
 
-import typings.awsSdk.AnonWaiter
 import typings.awsSdk.awsSdkStrings.successfulSigningJob
 import typings.awsSdk.configMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
@@ -184,11 +183,11 @@ trait Signer extends Service {
     * Waits for the successfulSigningJob state by periodically calling the underlying Signer.describeSigningJoboperation every 20 seconds (at most 25 times).
     */
   @JSName("waitFor")
-  def waitFor_successfulSigningJob(state: successfulSigningJob, params: DescribeSigningJobRequest with AnonWaiter): Request[DescribeSigningJobResponse, AWSError] = js.native
+  def waitFor_successfulSigningJob(state: successfulSigningJob, params: typings.awsSdk.DescribeSigningJobRequest): Request[DescribeSigningJobResponse, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_successfulSigningJob(
     state: successfulSigningJob,
-    params: DescribeSigningJobRequest with AnonWaiter,
+    params: typings.awsSdk.DescribeSigningJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeSigningJobResponse, Unit]
   ): Request[DescribeSigningJobResponse, AWSError] = js.native
 }

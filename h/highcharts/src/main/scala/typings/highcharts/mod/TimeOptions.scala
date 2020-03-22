@@ -18,7 +18,7 @@ trait TimeOptions extends js.Object {
     * using their local DST crossover dates, with the help of external
     * libraries.
     */
-  var getTimezoneOffset: js.UndefOr[js.Any] = js.undefined
+  var getTimezoneOffset: js.UndefOr[String] = js.undefined
   /**
     * (Highcharts, Highstock, Gantt) Requires moment.js. If the timezone option
     * is specified, it creates a default getTimezoneOffset function that looks
@@ -49,7 +49,7 @@ object TimeOptions {
   @scala.inline
   def apply(
     Date: js.Any = null,
-    getTimezoneOffset: js.Any = null,
+    getTimezoneOffset: String = null,
     timezone: String = null,
     timezoneOffset: Int | Double = null,
     useUTC: js.UndefOr[Boolean] = js.undefined

@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/core", "\u0275angular_packages_core_core_bc")
 @js.native
 object ɵangularPackagesCoreCoreBc extends js.Object {
-  def apply(): ɵangularPackagesCoreCoreBj = js.native
+  def apply(): Double = js.native
 }
 

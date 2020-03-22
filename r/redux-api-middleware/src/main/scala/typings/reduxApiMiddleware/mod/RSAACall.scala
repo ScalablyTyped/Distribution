@@ -1,6 +1,6 @@
 package typings.reduxApiMiddleware.mod
 
-import typings.reduxApiMiddleware.FnInit
+import typings.reduxApiMiddleware.FnCall
 import typings.reduxApiMiddleware.reduxApiMiddlewareStrings.DELETE
 import typings.reduxApiMiddleware.reduxApiMiddlewareStrings.GET
 import typings.reduxApiMiddleware.reduxApiMiddlewareStrings.HEAD
@@ -22,7 +22,7 @@ trait RSAACall[State, Payload, Meta] extends js.Object {
   var body: js.UndefOr[TypeOrResolver[State, BodyInit | Null]] = js.undefined
   var credentials: js.UndefOr[RequestCredentials] = js.undefined
   var endpoint: TypeOrResolver[State, String]
-  var fetch: js.UndefOr[FnInit] = js.undefined
+  var fetch: js.UndefOr[FnCall] = js.undefined
   var headers: js.UndefOr[TypeOrResolver[State, HeadersInit]] = js.undefined
   // `redux-api-middleware` strictly allows only this methods
   var method: GET | HEAD | POST | PUT | PATCH | DELETE | OPTIONS
@@ -48,7 +48,7 @@ object RSAACall {
     bailout: TypeOrResolver[State, Boolean] = null,
     body: TypeOrResolver[State, BodyInit | Null] = null,
     credentials: RequestCredentials = null,
-    fetch: FnInit = null,
+    fetch: FnCall = null,
     headers: TypeOrResolver[State, HeadersInit] = null,
     ok: /* res */ Response => Boolean = null,
     options: TypeOrResolver[State, RequestInit] = null

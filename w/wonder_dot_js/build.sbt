@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "wonder_dot_js"
-version := "0.1.0-dt-20190322Z-4c0054"
+version := "0.1.0-dt-20190322Z-ccb686"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "std" % "3.7-1b8369",
-  "org.scalablytyped" %%% "wonder-frp" % "0.1.26-cf52f2")
+  "org.scalablytyped" %%% "std" % "3.8-a0108c",
+  "org.scalablytyped" %%% "wonder-frp" % "0.1.26-7ad602")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

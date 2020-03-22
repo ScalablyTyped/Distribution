@@ -2,6 +2,7 @@ package typings.officeUiFabricReact.toggleTypesMod
 
 import typings.officeUiFabricReact.keytipTypesMod.IKeytipProps
 import typings.officeUiFabricReact.officeUiFabricReactStrings.checkbox
+import typings.officeUiFabricReact.officeUiFabricReactStrings.menuitemcheckbox
 import typings.officeUiFabricReact.officeUiFabricReactStrings.switch
 import typings.react.AnonHtml
 import typings.react.mod.AnimationEvent
@@ -153,7 +154,7 @@ trait IToggleProps extends HTMLAttributes[HTMLElement] {
     * If unspecified, defaults to "switch".
     */
   @JSName("role")
-  var role_IToggleProps: js.UndefOr[checkbox | switch] = js.undefined
+  var role_IToggleProps: js.UndefOr[checkbox | switch | menuitemcheckbox] = js.undefined
   /**
     * Optional styles for the component.
     */
@@ -340,7 +341,7 @@ object IToggleProps {
     radioGroup: String = null,
     resource: String = null,
     results: Int | Double = null,
-    role: checkbox | switch = null,
+    role: checkbox | switch | menuitemcheckbox = null,
     security: String = null,
     slot: String = null,
     spellCheck: js.UndefOr[Boolean] = js.undefined,

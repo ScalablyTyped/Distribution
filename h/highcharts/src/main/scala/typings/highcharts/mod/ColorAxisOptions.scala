@@ -9,12 +9,20 @@ trait ColorAxisOptions extends js.Object {
     * (Highcharts, Highstock, Highmaps) Accessibility options for an axis.
     * Requires the accessibility module.
     */
-  var accessibility: js.UndefOr[js.Object | ColorAxisAccessibilityOptions] = js.undefined
+  var accessibility: js.UndefOr[AxisAccessibilityOptionsObject] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps) Whether to allow decimals on the color
     * axis.
     */
   var allowDecimals: js.UndefOr[Boolean] = js.undefined
+  /**
+    * (Highcharts) In a polar chart, this is the angle of the Y axis in
+    * degrees, where 0 is up and 90 is right. The angle determines the position
+    * of the axis line and the labels, though the coordinate system is
+    * unaffected. Since v8.0.0 this option is also applicable for X axis
+    * (inverted polar).
+    */
+  var angle: js.UndefOr[Double] = js.undefined
   /**
     * (Highcharts, Highstock, Gantt) The highest allowed value for
     * automatically computed axis extremes.
@@ -30,7 +38,7 @@ trait ColorAxisOptions extends js.Object {
     * (Gantt) Show an indicator on the axis for the current date and time. Can
     * be a boolean or a configuration object similar to xAxis.plotLines.
     */
-  var currentDateIndicator: js.UndefOr[Boolean | ColorAxisCurrentDateIndicatorOptions] = js.undefined
+  var currentDateIndicator: js.UndefOr[Boolean | AxisCurrentDateIndicatorOptions] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps) Determines how to set each data class'
     * color if no individual color is set. The default value, `tween`, computes
@@ -73,6 +81,13 @@ trait ColorAxisOptions extends js.Object {
     * lines. For possible values, see this demonstration.
     */
   var gridLineDashStyle: js.UndefOr[DashStyleValue] = js.undefined
+  /**
+    * (Highcharts) Polar charts only. Whether the grid lines should draw as a
+    * polygon with straight lines between categories, or as circles. Can be
+    * either `circle` or `polygon`. Since v8.0.0 this option is also applicable
+    * for X axis (inverted polar).
+    */
+  var gridLineInterpolation: js.UndefOr[OptionsGridLineInterpolationValue] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps) The width of the grid lines extending
     * from the axis across the gradient of a scalar color axis.
@@ -121,7 +136,7 @@ trait ColorAxisOptions extends js.Object {
     * axis that points to the value of the hovered area. To disable the marker,
     * set `marker: null`.
     */
-  var marker: js.UndefOr[ColorAxisMarkerOptions] = js.undefined
+  var marker: js.UndefOr[PointMarkerOptionsObject] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps) The maximum value of the axis in terms
     * of map point values. If `null`, the max value is automatically
@@ -411,9 +426,9 @@ trait ColorAxisOptions extends js.Object {
     * (Highcharts, Highstock, Gantt) Datetime axis only. An array determining
     * what time intervals the ticks are allowed to fall on. Each array item is
     * an array where the first value is the time unit and the second value
-    * another array of allowed multiples. Defaults to:
+    * another array of allowed multiples.
     *
-    *  (see online documentation for example)
+    * Defaults to: (see online documentation for example)
     */
   var units: js.UndefOr[js.Array[js.Tuple2[String, js.Array[Double] | Null]]] = js.undefined
   /**
@@ -426,11 +441,12 @@ trait ColorAxisOptions extends js.Object {
 object ColorAxisOptions {
   @scala.inline
   def apply(
-    accessibility: js.Object | ColorAxisAccessibilityOptions = null,
+    accessibility: AxisAccessibilityOptionsObject = null,
     allowDecimals: js.UndefOr[Boolean] = js.undefined,
+    angle: Int | Double = null,
     ceiling: Int | Double = null,
     className: String = null,
-    currentDateIndicator: Boolean | ColorAxisCurrentDateIndicatorOptions = null,
+    currentDateIndicator: Boolean | AxisCurrentDateIndicatorOptions = null,
     dataClassColor: OptionsDataClassColorValue = null,
     dataClasses: js.Array[ColorAxisDataClassesOptions] = null,
     endOnTick: js.UndefOr[Boolean] = js.undefined,
@@ -439,6 +455,7 @@ object ColorAxisOptions {
     grid: ColorAxisGridOptions = null,
     gridLineColor: ColorString | GradientColorObject | PatternObject = null,
     gridLineDashStyle: DashStyleValue = null,
+    gridLineInterpolation: OptionsGridLineInterpolationValue = null,
     gridLineWidth: Int | Double = null,
     gridZIndex: Int | Double = null,
     id: String = null,
@@ -446,7 +463,7 @@ object ColorAxisOptions {
     layout: String = null,
     lineColor: ColorString | GradientColorObject | PatternObject = null,
     margin: Int | Double = null,
-    marker: ColorAxisMarkerOptions = null,
+    marker: PointMarkerOptionsObject = null,
     max: Int | Double = null,
     maxColor: ColorString | GradientColorObject | PatternObject = null,
     maxPadding: Int | Double = null,
@@ -494,6 +511,7 @@ object ColorAxisOptions {
     val __obj = js.Dynamic.literal()
     if (accessibility != null) __obj.updateDynamic("accessibility")(accessibility.asInstanceOf[js.Any])
     if (!js.isUndefined(allowDecimals)) __obj.updateDynamic("allowDecimals")(allowDecimals.asInstanceOf[js.Any])
+    if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
     if (ceiling != null) __obj.updateDynamic("ceiling")(ceiling.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (currentDateIndicator != null) __obj.updateDynamic("currentDateIndicator")(currentDateIndicator.asInstanceOf[js.Any])
@@ -505,6 +523,7 @@ object ColorAxisOptions {
     if (grid != null) __obj.updateDynamic("grid")(grid.asInstanceOf[js.Any])
     if (gridLineColor != null) __obj.updateDynamic("gridLineColor")(gridLineColor.asInstanceOf[js.Any])
     if (gridLineDashStyle != null) __obj.updateDynamic("gridLineDashStyle")(gridLineDashStyle.asInstanceOf[js.Any])
+    if (gridLineInterpolation != null) __obj.updateDynamic("gridLineInterpolation")(gridLineInterpolation.asInstanceOf[js.Any])
     if (gridLineWidth != null) __obj.updateDynamic("gridLineWidth")(gridLineWidth.asInstanceOf[js.Any])
     if (gridZIndex != null) __obj.updateDynamic("gridZIndex")(gridZIndex.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])

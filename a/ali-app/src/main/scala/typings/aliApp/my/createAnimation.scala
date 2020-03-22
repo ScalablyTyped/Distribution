@@ -1,6 +1,6 @@
 package typings.aliApp.my
 
-import typings.std.Partial
+import typings.aliApp.PartialCreateAnimationOpt
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,6 +13,6 @@ object createAnimation extends js.Object {
   	 *
   	 * 注意: export 方法每次调用后会清掉之前的动画操作
   	 */
-  def apply(options: Partial[CreateAnimationOptions]): Animation = js.native
+  def apply(options: PartialCreateAnimationOpt): Animation = js.native
 }
 

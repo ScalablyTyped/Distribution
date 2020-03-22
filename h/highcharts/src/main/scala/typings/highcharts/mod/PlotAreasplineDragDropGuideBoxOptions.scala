@@ -8,12 +8,12 @@ trait PlotAreasplineDragDropGuideBoxOptions extends js.Object {
   /**
     * (Highcharts, Highstock) Style options for the guide box default state.
     */
-  var default: js.UndefOr[PlotAreasplineDragDropGuideBoxDefaultOptions] = js.undefined
+  var default: js.UndefOr[DragDropGuideBoxOptionsObject] = js.undefined
 }
 
 object PlotAreasplineDragDropGuideBoxOptions {
   @scala.inline
-  def apply(default: PlotAreasplineDragDropGuideBoxDefaultOptions = null): PlotAreasplineDragDropGuideBoxOptions = {
+  def apply(default: DragDropGuideBoxOptionsObject = null): PlotAreasplineDragDropGuideBoxOptions = {
     val __obj = js.Dynamic.literal()
     if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotAreasplineDragDropGuideBoxOptions]

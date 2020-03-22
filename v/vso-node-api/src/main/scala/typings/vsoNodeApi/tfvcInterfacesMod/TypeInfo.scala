@@ -1,10 +1,10 @@
 package typings.vsoNodeApi.tfvcInterfacesMod
 
-import typings.vsoNodeApi.AnonEnumValuesAnonAddAll
 import typings.vsoNodeApi.AnonEnumValuesAnonBase64Encoded
 import typings.vsoNodeApi.AnonEnumValuesAnonChange
+import typings.vsoNodeApi.AnonEnumValuesAnonEncoding
 import typings.vsoNodeApi.AnonEnumValuesAnonFull
-import typings.vsoNodeApi.AnonEnumValuesAnonNonePrevious
+import typings.vsoNodeApi.AnonEnumValuesAnonPrevious
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,9 +30,9 @@ object TypeInfo extends js.Object {
   var TfvcShelveset: js.Any = js.native
   var TfvcShelvesetRef: js.Any = js.native
   var TfvcVersionDescriptor: js.Any = js.native
-  var TfvcVersionOption: AnonEnumValuesAnonNonePrevious = js.native
+  var TfvcVersionOption: AnonEnumValuesAnonPrevious = js.native
   var TfvcVersionType: AnonEnumValuesAnonChange = js.native
-  var VersionControlChangeType: AnonEnumValuesAnonAddAll = js.native
+  var VersionControlChangeType: AnonEnumValuesAnonEncoding = js.native
   var VersionControlProjectInfo: js.Any = js.native
   var VersionControlRecursionType: AnonEnumValuesAnonFull = js.native
 }

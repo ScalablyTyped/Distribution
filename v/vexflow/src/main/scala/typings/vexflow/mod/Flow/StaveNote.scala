@@ -1,6 +1,6 @@
 package typings.vexflow.mod.Flow
 
-import typings.vexflow.AnonAutostemClef
+import typings.vexflow.AnonClef
 import typings.vexflow.AnonLeftshift
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class StaveNote protected ()
   extends typings.vexflow.Vex.Flow.StaveNote {
-  def this(note_struct: AnonAutostemClef) = this()
+  def this(note_struct: AnonClef) = this()
 }
 
 /* static members */

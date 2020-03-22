@@ -21,8 +21,9 @@ object animationClipMod extends js.Object {
     var tracks: js.Array[KeyframeTrack] = js.native
     var uuid: String = js.native
     def optimize(): AnimationClip = js.native
-    def resetDuration(): Unit = js.native
+    def resetDuration(): AnimationClip = js.native
     def trim(): AnimationClip = js.native
+    def validate(): Boolean = js.native
   }
   
   /* static members */

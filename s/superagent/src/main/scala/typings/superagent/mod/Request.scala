@@ -5,11 +5,11 @@ import typings.node.Buffer
 import typings.node.NodeJS.WritableStream
 import typings.node.streamMod.Writable
 import typings.std.Promise
-import typings.superagent.AnonAuto
-import typings.superagent.AnonBearer
+import typings.superagent.Anon0
 import typings.superagent.AnonContentType
 import typings.superagent.AnonDeadline
 import typings.superagent.AnonPassphrase
+import typings.superagent.AnonType
 import typings.superagent.superagentStrings.Cookie
 import typings.superagent.superagentStrings.error
 import typings.superagent.superagentStrings.progress
@@ -25,9 +25,9 @@ trait Request extends Promise[Response] {
   def attach(field: String, file: MultipartValueSingle): this.type = js.native
   def attach(field: String, file: MultipartValueSingle, options: String): this.type = js.native
   def attach(field: String, file: MultipartValueSingle, options: AnonContentType): this.type = js.native
-  def auth(token: String, options: AnonBearer): this.type = js.native
+  def auth(token: String, options: Anon0): this.type = js.native
   def auth(user: String, pass: String): this.type = js.native
-  def auth(user: String, pass: String, options: AnonAuto): this.type = js.native
+  def auth(user: String, pass: String, options: AnonType): this.type = js.native
   def buffer(): this.type = js.native
   def buffer(`val`: Boolean): this.type = js.native
   def ca(cert: String): this.type = js.native

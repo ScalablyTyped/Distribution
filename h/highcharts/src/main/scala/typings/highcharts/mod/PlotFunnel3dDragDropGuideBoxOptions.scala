@@ -8,12 +8,12 @@ trait PlotFunnel3dDragDropGuideBoxOptions extends js.Object {
   /**
     * (Highcharts) Style options for the guide box default state.
     */
-  var default: js.UndefOr[PlotFunnel3dDragDropGuideBoxDefaultOptions] = js.undefined
+  var default: js.UndefOr[DragDropGuideBoxOptionsObject] = js.undefined
 }
 
 object PlotFunnel3dDragDropGuideBoxOptions {
   @scala.inline
-  def apply(default: PlotFunnel3dDragDropGuideBoxDefaultOptions = null): PlotFunnel3dDragDropGuideBoxOptions = {
+  def apply(default: DragDropGuideBoxOptionsObject = null): PlotFunnel3dDragDropGuideBoxOptions = {
     val __obj = js.Dynamic.literal()
     if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotFunnel3dDragDropGuideBoxOptions]

@@ -1,27 +1,16 @@
 package typings.highchartsReactOfficial.mod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.highchartsReactOfficial.AnonChart
 import typings.highchartsReactOfficial.mod.HighchartsReact.Props
+import typings.react.mod.ForwardRefExoticComponent
+import typings.react.mod.PropsWithoutRef
+import typings.react.mod.RefAttributes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/**
-  * Highcharts component for React
-  */
 @JSImport("highcharts-react-official", JSImport.Default)
 @js.native
-class default protected () extends HighchartsReact {
-  /* *
-    *
-    *  Constructor
-    *
-    * */
-  /**
-    * Creates a new Highcharts component.
-    *
-    * @param props
-    *        Optional React props
-    */
-  def this(props: Props) = this()
-}
+object default extends TopLevel[ForwardRefExoticComponent[PropsWithoutRef[Props] with RefAttributes[AnonChart]]]
 

@@ -2,7 +2,7 @@ package typings.winrtUwp.Windows.Storage.Pickers
 
 import typings.std.Array
 import typings.winrtUwp.AnonIndex
-import typings.winrtUwp.AnonItemsReturnValueNumberStorageFile
+import typings.winrtUwp.AnonItemsStorageFile
 import typings.winrtUwp.Windows.Foundation.Collections.IIterator
 import typings.winrtUwp.Windows.Storage.StorageFile
 import scala.scalajs.js
@@ -30,7 +30,7 @@ abstract class FilePickerSelectedFilesArray () extends Array[StorageFile] {
     * Retrieves the StorageFile objects that start at the specified index in the collection.
     * @param startIndex The zero-based index of the start of the objects in the collection to return.
     */
-  def getMany(startIndex: Double): AnonItemsReturnValueNumberStorageFile = js.native
+  def getMany(startIndex: Double): AnonItemsStorageFile = js.native
   def indexOf(value: StorageFile, extra: js.Any*): AnonIndex = js.native
   /* hack */
   @JSName("indexOf")

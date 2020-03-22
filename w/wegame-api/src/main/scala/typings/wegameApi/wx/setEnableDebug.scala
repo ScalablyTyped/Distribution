@@ -1,6 +1,6 @@
 package typings.wegameApi.wx
 
-import typings.wegameApi.AnonCompleteEnableDebug
+import typings.wegameApi.AnonEnableDebug
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object setEnableDebug extends js.Object {
   // --调试
-  def apply(p: AnonCompleteEnableDebug): Unit = js.native
+  def apply(p: AnonEnableDebug): Unit = js.native
 }
 

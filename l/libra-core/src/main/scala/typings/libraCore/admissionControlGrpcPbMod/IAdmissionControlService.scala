@@ -4,8 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {readonly [ I in keyof grpc.grpc.UntypedServiceImplementation ]: grpc.grpc.MethodDefinition<any, any>} */ trait IAdmissionControlService extends js.Object {
+/* Inlined parent grpc.grpc.ServiceDefinition<grpc.grpc.UntypedServiceImplementation> */
+trait IAdmissionControlService extends js.Object {
   var submitTransaction: IAdmissionControlServiceISubmitTransaction
   var updateToLatestLedger: IAdmissionControlServiceIUpdateToLatestLedger
 }

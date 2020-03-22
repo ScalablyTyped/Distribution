@@ -1,6 +1,6 @@
 package typings.kendoUi.kendo.data
 
-import typings.kendoUi.TypeofClassGanttTask
+import typings.kendoUi.TypeofGanttTask
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -26,7 +26,7 @@ class GanttTask () extends Model {
 object GanttTask extends js.Object {
   var fields: DataSourceSchemaModelFields = js.native
   var idField: String = js.native
-  def define(options: DataSourceSchemaModelWithFieldsArray): TypeofClassGanttTask = js.native
-  def define(options: DataSourceSchemaModelWithFieldsObject): TypeofClassGanttTask = js.native
+  def define(options: DataSourceSchemaModelWithFieldsArray): TypeofGanttTask = js.native
+  def define(options: DataSourceSchemaModelWithFieldsObject): TypeofGanttTask = js.native
 }
 

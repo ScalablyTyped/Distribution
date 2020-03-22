@@ -11,7 +11,7 @@ trait UpdateProvisioningArtifactInput extends js.Object {
     */
   var AcceptLanguage: js.UndefOr[typings.awsSdk.servicecatalogMod.AcceptLanguage] = js.native
   /**
-    * Indicates whether the product version is active.
+    * Indicates whether the product version is active. Inactive provisioning artifacts are invisible to end users. End users cannot launch or update a provisioned product from an inactive provisioning artifact.
     */
   var Active: js.UndefOr[ProvisioningArtifactActive] = js.native
   /**

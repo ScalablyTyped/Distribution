@@ -19,23 +19,7 @@ trait ComponentFactory[C] extends js.Object {
   /**
     * The type of component the factory will create.
     */
-  val componentType: Type[_] = js.native
-  /**
-    * The inputs of the component.
-    */
-  val inputs: js.Array[AnonPropName] = js.native
-  /**
-    * Selector for all <ng-content> elements in the component.
-    */
-  val ngContentSelectors: js.Array[String] = js.native
-  /**
-    * The outputs of the component.
-    */
-  val outputs: js.Array[AnonPropName] = js.native
-  /**
-    * The component's HTML selector.
-    */
-  val selector: String = js.native
+  def componentType(): Type[_] = js.native
   /**
     * Creates a new component.
     */
@@ -55,5 +39,21 @@ trait ComponentFactory[C] extends js.Object {
     rootSelectorOrNode: js.Any,
     ngModule: NgModuleRef[_]
   ): ComponentRef[C] = js.native
+  /**
+    * The inputs of the component.
+    */
+  def inputs(): js.Array[AnonPropName] = js.native
+  /**
+    * Selector for all <ng-content> elements in the component.
+    */
+  def ngContentSelectors(): js.Array[String] = js.native
+  /**
+    * The outputs of the component.
+    */
+  def outputs(): js.Array[AnonPropName] = js.native
+  /**
+    * The component's HTML selector.
+    */
+  def selector(): String = js.native
 }
 

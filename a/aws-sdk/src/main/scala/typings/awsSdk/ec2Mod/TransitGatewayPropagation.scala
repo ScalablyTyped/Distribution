@@ -21,7 +21,7 @@ trait TransitGatewayPropagation extends js.Object {
   /**
     * The ID of the attachment.
     */
-  var TransitGatewayAttachmentId: js.UndefOr[String] = js.native
+  var TransitGatewayAttachmentId: js.UndefOr[typings.awsSdk.ec2Mod.TransitGatewayAttachmentId] = js.native
   /**
     * The ID of the transit gateway route table.
     */
@@ -34,7 +34,7 @@ object TransitGatewayPropagation {
     ResourceId: String = null,
     ResourceType: TransitGatewayAttachmentResourceType = null,
     State: TransitGatewayPropagationState = null,
-    TransitGatewayAttachmentId: String = null,
+    TransitGatewayAttachmentId: TransitGatewayAttachmentId = null,
     TransitGatewayRouteTableId: String = null
   ): TransitGatewayPropagation = {
     val __obj = js.Dynamic.literal()

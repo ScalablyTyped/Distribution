@@ -1,0 +1,57 @@
+package typings.hdrHistogramJs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("hdr-histogram-js/packedarray/PackedArray", JSImport.Namespace)
+@js.native
+object packedArrayMod extends js.Object {
+  @js.native
+  class PackedArray protected () extends js.Object {
+    def this(virtualLength: Double) = this()
+    def this(virtualLength: Double, initialPhysicalLength: Double) = this()
+    var arrayContext: js.Any = js.native
+    var safeGetPackedIndexgetPackedIndex: js.Any = js.native
+    /**
+      * Add to a value at a virtual index in the array
+      * @param index the virtual index of the value to be added to
+      * @param value the value to add
+      */
+    def add(index: Double, value: Double): Unit = js.native
+    /**
+      * Clear the array contents
+      */
+    def clear(): Unit = js.native
+    /**
+      * Get value at virtual index in the array
+      * @param index the virtual array index
+      * @return the array value at the virtual index given
+      */
+    def get(index: Double): Double = js.native
+    /**
+      * Get the current physical length (in longs) of the array's backing storage
+      * @return the current physical length (in longs) of the array's current backing storage
+      */
+    def getPhysicalLength(): Double = js.native
+    /**
+      * Increment value at a virrual index in the array
+      * @param index virtual index of value to increment
+      */
+    def increment(index: Double): Unit = js.native
+    /**
+      * Get the (virtual) length of the array
+      * @return the (virtual) length of the array
+      */
+    def length(): Double = js.native
+    /**
+      * Set the value at a virtual index in the array
+      * @param index the virtual index of the value to set
+      * @param value the value to set
+      */
+    def set(index: Double, value: Double): Unit = js.native
+    def setVirtualLength(newVirtualArrayLength: Double): Unit = js.native
+  }
+  
+}
+

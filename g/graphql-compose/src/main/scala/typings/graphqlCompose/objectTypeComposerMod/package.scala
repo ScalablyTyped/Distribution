@@ -38,8 +38,6 @@ package object objectTypeComposerMod {
     typings.graphql.definitionMod.GraphQLOutputType | (typings.graphqlCompose.objectTypeComposerMod.ObjectTypeComposer[TReturn, TContext]) | typings.graphqlCompose.enumTypeComposerMod.EnumTypeComposer[TContext] | typings.graphqlCompose.scalarTypeComposerMod.ScalarTypeComposer[TContext] | typings.graphqlCompose.typeMapperMod.TypeAsString | (typings.graphqlCompose.resolverMod.Resolver[js.Any, TContext, js.Any, js.Any]) | (typings.graphqlCompose.interfaceTypeComposerMod.InterfaceTypeComposer[TReturn, TContext]) | (typings.graphqlCompose.unionTypeComposerMod.UnionTypeComposer[TReturn, TContext])
   ]) | typings.graphql.definitionMod.GraphQLOutputType | typings.graphqlCompose.typeMapperMod.TypeAsString
   type GetRecordIdFn[TSource, TContext] = js.Function3[/* source */ TSource, /* args */ js.Any, /* context */ TContext, java.lang.String]
-  type GraphQLObjectTypeExtended[TSource, TContext] = (typings.graphql.mod.GraphQLObjectType[_, _, org.scalablytyped.runtime.StringDictionary[_]]) with (typings.graphqlCompose.AnonDescription[TContext, TSource])
-  type GraphqlFieldConfigExtended[TSource, TContext] = (typings.graphql.definitionMod.GraphQLFieldConfig[TSource, TContext, org.scalablytyped.runtime.StringDictionary[_]]) with typings.graphqlCompose.AnonProjection
   type ObjectTypeComposeDefinition[TSource, TContext] = typings.graphqlCompose.typeMapperMod.TypeAsString | (typings.graphqlCompose.objectTypeComposerMod.ComposeObjectTypeConfig[TSource, TContext]) | (typings.graphql.mod.GraphQLObjectType[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]])
   type RelationArgsMapper[TSource, TContext, TArgs] = org.scalablytyped.runtime.StringDictionary[
     org.scalablytyped.runtime.StringDictionary[js.Any] | (typings.graphqlCompose.objectTypeComposerMod.RelationArgsMapperFn[TSource, TContext, TArgs]) | scala.Null | scala.Unit | java.lang.String | scala.Double | js.Array[js.Any]
@@ -51,8 +49,6 @@ package object objectTypeComposerMod {
     /* info */ typings.graphql.definitionMod.GraphQLResolveInfo, 
     js.Any
   ]
-  type RelationOpts[TRelationSource, TSource, TContext, TArgs] = (typings.graphqlCompose.objectTypeComposerMod.RelationOptsWithResolver[TRelationSource, TSource, TContext, TArgs]) | (typings.graphqlCompose.objectTypeComposerMod.RelationOptsWithFieldConfig[TSource, TContext, TArgs])
-  type RelationOptsWithFieldConfig[TSource, TContext, TArgs] = (typings.graphqlCompose.objectTypeComposerMod.ComposeFieldConfigAsObject[TSource, TContext, TArgs]) with (typings.graphqlCompose.AnonResolve[TSource, TContext, TArgs])
   type RelationThunkMap[TSource, TContext] = org.scalablytyped.runtime.StringDictionary[
     typings.graphqlCompose.definitionsMod.Thunk[
       typings.graphqlCompose.objectTypeComposerMod.RelationOpts[

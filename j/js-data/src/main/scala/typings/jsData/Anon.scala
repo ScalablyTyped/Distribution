@@ -5,6 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon extends js.Object {
+  @JSName("=")
+  def Equalssign(value: js.Any, predicate: js.Any): Boolean
   @JSName("==")
   def EqualssignEqualssign(value: js.Any, predicate: js.Any): Boolean
   @JSName("===")
@@ -32,6 +34,7 @@ trait Anon extends js.Object {
 object Anon {
   @scala.inline
   def apply(
+    Equalssign: (js.Any, js.Any) => Boolean,
     EqualssignEqualssign: (js.Any, js.Any) => Boolean,
     EqualssignEqualssignEqualssign: (js.Any, js.Any) => Boolean,
     ExclamationmarkEqualssign: (js.Any, js.Any) => Boolean,
@@ -48,6 +51,7 @@ object Anon {
     notIn: (js.Any, js.Any) => Boolean
   ): Anon = {
     val __obj = js.Dynamic.literal(contains = js.Any.fromFunction2(contains), in = js.Any.fromFunction2(in), isectEmpty = js.Any.fromFunction2(isectEmpty), isectNotEmpty = js.Any.fromFunction2(isectNotEmpty), notContains = js.Any.fromFunction2(notContains), notIn = js.Any.fromFunction2(notIn))
+    __obj.updateDynamic("=")(js.Any.fromFunction2(Equalssign))
     __obj.updateDynamic("==")(js.Any.fromFunction2(EqualssignEqualssign))
     __obj.updateDynamic("===")(js.Any.fromFunction2(EqualssignEqualssignEqualssign))
     __obj.updateDynamic("!=")(js.Any.fromFunction2(ExclamationmarkEqualssign))

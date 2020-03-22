@@ -15,8 +15,6 @@ trait cswAasJsProps {
   @scala.inline
   def ClientRoleProps: typings.cswAasJs.clientRoleMod.ClientRoleProps.type = typings.cswAasJs.clientRoleMod.ClientRoleProps
   type ClientRoleProps = typings.cswAasJs.clientRoleMod.ClientRoleProps
-  @scala.inline
-  def ProviderProps: typings.react.mod.ProviderProps.type = typings.react.mod.ProviderProps
   type ProviderProps[T] = typings.react.mod.ProviderProps[T]
   @scala.inline
   def RealmRoleProps: typings.cswAasJs.realmRoleMod.RealmRoleProps.type = typings.cswAasJs.realmRoleMod.RealmRoleProps

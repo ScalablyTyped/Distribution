@@ -4,10 +4,13 @@ import typings.vegaTypings.colorMod.Color
 import typings.vegaTypings.encodeMod.Align
 import typings.vegaTypings.encodeMod.FontStyle
 import typings.vegaTypings.encodeMod.FontWeight
+import typings.vegaTypings.encodeMod.Gradient
 import typings.vegaTypings.encodeMod.Interpolate
 import typings.vegaTypings.encodeMod.Orientation
 import typings.vegaTypings.encodeMod.SymbolShape
+import typings.vegaTypings.encodeMod.Text
 import typings.vegaTypings.encodeMod.TextBaseline
+import typings.vegaTypings.encodeMod.TextDirection
 import typings.vegaTypings.signalMod.SignalRef
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -27,16 +30,57 @@ trait MarkConfig extends js.Object {
     */
   var angle: js.UndefOr[Double | SignalRef] = js.undefined
   /**
+    * Whether to keep aspect ratio of image marks.
+    */
+  var aspect: js.UndefOr[Boolean] = js.undefined
+  /**
     * The vertical alignment of the text. One of `"top"`, `"bottom"`, `"middle"`, `"alphabetic"`.
     *
     * __Default value:__ `"middle"`
     *
     */
   var baseline: js.UndefOr[TextBaseline | SignalRef] = js.undefined
+  // ---------- Corner Radius: Bar, Tick, Rect ----------
+  /**
+    * The radius in pixels of rounded rectangle corners.
+    *
+    * __Default value:__ `0`
+    */
+  var cornerRadius: js.UndefOr[Double] = js.undefined
+  /**
+    * The radius in pixels of rounded rectangle bottom left corner.
+    *
+    * __Default value:__ `0`
+    */
+  var cornerRadiusBottomLeft: js.UndefOr[Double] = js.undefined
+  /**
+    * The radius in pixels of rounded rectangle bottom right corner.
+    *
+    * __Default value:__ `0`
+    */
+  var cornerRadiusBottomRight: js.UndefOr[Double] = js.undefined
+  /**
+    * The radius in pixels of rounded rectangle top right corner.
+    *
+    * __Default value:__ `0`
+    */
+  var cornerRadiusTopLeft: js.UndefOr[Double] = js.undefined
+  /**
+    * The radius in pixels of rounded rectangle top left corner.
+    *
+    * __Default value:__ `0`
+    */
+  var cornerRadiusTopRight: js.UndefOr[Double] = js.undefined
   /**
     * The mouse cursor used over the mark. Any valid [CSS cursor type](https://developer.mozilla.org/en-US/docs/Web/CSS/cursor#Values) can be used.
     */
   var cursor: js.UndefOr[Cursor | SignalRef] = js.undefined
+  /**
+    * The direction of the text. One of `"ltr"` (left-to-right) or `"rtl"` (right-to-left). This property determines on which side is truncated in response to the limit parameter.
+    *
+    * __Default value:__ `"ltr"`
+    */
+  var dir: js.UndefOr[TextDirection] = js.undefined
   /**
     * The horizontal offset, in pixels, between the text label and its anchor point. The offset is applied after rotation by the _angle_ property.
     */
@@ -46,12 +90,18 @@ trait MarkConfig extends js.Object {
     */
   var dy: js.UndefOr[Double | SignalRef] = js.undefined
   /**
+    * The ellipsis string for text truncated in response to the limit parameter.
+    *
+    * __Default value:__ `"…"`
+    */
+  var ellipsis: js.UndefOr[String] = js.undefined
+  /**
     * Default fill color.
     *
     * __Default value:__ (None)
     *
     */
-  var fill: js.UndefOr[Color | Null | SignalRef] = js.undefined
+  var fill: js.UndefOr[Color | Gradient | Null | SignalRef] = js.undefined
   /**
     * The fill opacity (value between [0,1]).
     *
@@ -68,7 +118,9 @@ trait MarkConfig extends js.Object {
   /**
     * The font size, in pixels.
     *
-    * @minimum 0
+    * __Default value:__ `11`
+    *
+    *  @minimum 0
     */
   var fontSize: js.UndefOr[Double | SignalRef] = js.undefined
   /**
@@ -80,6 +132,10 @@ trait MarkConfig extends js.Object {
     * This can be either a string (e.g `"bold"`, `"normal"`) or a number (`100`, `200`, `300`, ..., `900` where `"normal"` = `400` and `"bold"` = `700`).
     */
   var fontWeight: js.UndefOr[FontWeight | SignalRef] = js.undefined
+  /**
+    * Height of the marks.
+    */
+  var height: js.UndefOr[Double | SignalRef] = js.undefined
   /**
     * A URL to load upon mouse click. If defined, the mark acts as a hyperlink.
     *
@@ -105,7 +161,9 @@ trait MarkConfig extends js.Object {
     */
   var interpolate: js.UndefOr[Interpolate | SignalRef] = js.undefined
   /**
-    * The maximum length of the text mark in pixels (default 0, indicating no limit). The text value will be automatically truncated if the rendered size exceeds the limit.
+    * The maximum length of the text mark in pixels. The text value will be automatically truncated if the rendered size exceeds the limit.
+    *
+    * __Default value:__ `0` -- indicating no limit
     */
   var limit: js.UndefOr[Double | SignalRef] = js.undefined
   /**
@@ -124,17 +182,8 @@ trait MarkConfig extends js.Object {
     * @maximum 1
     */
   var opacity: js.UndefOr[Double | SignalRef] = js.undefined
-  // ---------- Orientation: Bar, Tick, Line, Area ----------
   /**
-    * The orientation of a non-stacked bar, tick, area, and line charts.
-    * The value is either horizontal (default) or vertical.
-    * - For bar, rule and tick, this determines whether the size of the bar and tick
-    * should be applied to x or y dimension.
-    * - For area, this property determines the orient property of the Vega output.
-    * - For line, this property determines the sort order of the points in the line
-    * if `config.sortLineBy` is not specified.
-    * For stacked charts, this is always determined by the orientation of the stack;
-    * therefore explicitly specified value will be ignored.
+    * The orientation of the area mark. One of `horizontal` or `vertical` (the default). With a vertical orientation, an area mark is defined by the `x`, `y`, and (`y2` or `height`) properties; with a horizontal orientation, the `y`, `x` and (`x2` or `width`) properties must be specified instead.
     */
   var orient: js.UndefOr[Orientation | SignalRef] = js.undefined
   /**
@@ -144,15 +193,17 @@ trait MarkConfig extends js.Object {
     */
   var radius: js.UndefOr[Double | SignalRef] = js.undefined
   /**
-    * The default symbol shape to use. One of: `"circle"` (default), `"square"`, `"cross"`, `"diamond"`, `"triangle-up"`, or `"triangle-down"`, or a custom SVG path.
+    * Shape of the point marks. Supported values include:
+    * - plotting shapes: `"circle"`, `"square"`, `"cross"`, `"diamond"`, `"triangle-up"`, `"triangle-down"`, `"triangle-right"`, or `"triangle-left"`.
+    * - the line symbol `"stroke"`
+    * - centered directional shapes `"arrow"`, `"wedge"`, or `"triangle"`
+    * - a custom [SVG path string](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths) (For correct sizing, custom shape paths should be defined within a square bounding box with coordinates ranging from -1 to 1 along both the x and y dimensions.)
     *
     * __Default value:__ `"circle"`
-    *
     */
-  var shape: js.UndefOr[SymbolShape | SignalRef] = js.undefined
+  var shape: js.UndefOr[SymbolShape | String | SignalRef] = js.undefined
   /**
-    * The pixel area each the point/circle/square.
-    * For example: in the case of circles, the radius is determined in part by the square root of the size value.
+    * The area in pixels of the symbols bounding box. Note that this value sets the area of the symbol; the side lengths will increase with the square root of this value.
     *
     * __Default value:__ `30`
     *
@@ -165,11 +216,11 @@ trait MarkConfig extends js.Object {
     * __Default value:__ (None)
     *
     */
-  var stroke: js.UndefOr[Color | Null | SignalRef] = js.undefined
+  var stroke: js.UndefOr[Color | Gradient | Null | SignalRef] = js.undefined
   /**
-    * The stroke cap for line ending style.
+    * The stroke cap for line ending style. One of `"butt"`, `"round"`, or `"square"`.
     *
-    * __Default value:__ `butt`
+    * __Default value:__ `"butt"`
     *
     */
   var strokeCap: js.UndefOr[String | SignalRef] = js.undefined
@@ -182,9 +233,9 @@ trait MarkConfig extends js.Object {
     */
   var strokeDashOffset: js.UndefOr[Double | SignalRef] = js.undefined
   /**
-    * The stroke line join method.
+    * The stroke line join method. One of `"miter"`, `"round"` or `"bevel"`.
     *
-    * __Default value:__ `miter`
+    * __Default value:__ `"miter"`
     *
     */
   var strokeJoin: js.UndefOr[String | SignalRef] = js.undefined
@@ -219,11 +270,19 @@ trait MarkConfig extends js.Object {
   /**
     * Placeholder text if the `text` channel is not specified
     */
-  var text: js.UndefOr[String | SignalRef] = js.undefined
+  var text: js.UndefOr[Text | SignalRef] = js.undefined
   /**
     * Polar coordinate angle, in radians, of the text label from the origin determined by the `x` and `y` properties. Values for `theta` follow the same convention of `arc` mark `startAngle` and `endAngle` properties: angles are measured in radians, with `0` indicating "north".
     */
   var theta: js.UndefOr[Double | SignalRef] = js.undefined
+  /**
+    * The tooltip text to show upon mouse hover.
+    */
+  var tooltip: js.UndefOr[String | SignalRef] = js.undefined
+  /**
+    * Width of the marks.
+    */
+  var width: js.UndefOr[Double | SignalRef] = js.undefined
 }
 
 object MarkConfig {
@@ -231,16 +290,25 @@ object MarkConfig {
   def apply(
     align: Align | SignalRef = null,
     angle: Double | SignalRef = null,
+    aspect: js.UndefOr[Boolean] = js.undefined,
     baseline: TextBaseline | SignalRef = null,
+    cornerRadius: Int | Double = null,
+    cornerRadiusBottomLeft: Int | Double = null,
+    cornerRadiusBottomRight: Int | Double = null,
+    cornerRadiusTopLeft: Int | Double = null,
+    cornerRadiusTopRight: Int | Double = null,
     cursor: Cursor | SignalRef = null,
+    dir: TextDirection = null,
     dx: Double | SignalRef = null,
     dy: Double | SignalRef = null,
-    fill: Color | SignalRef = null,
+    ellipsis: String = null,
+    fill: Color | Gradient | SignalRef = null,
     fillOpacity: Double | SignalRef = null,
     font: String | SignalRef = null,
     fontSize: Double | SignalRef = null,
     fontStyle: FontStyle | SignalRef = null,
     fontWeight: FontWeight | SignalRef = null,
+    height: Double | SignalRef = null,
     href: String | SignalRef = null,
     interpolate: Interpolate | SignalRef = null,
     limit: Double | SignalRef = null,
@@ -249,9 +317,9 @@ object MarkConfig {
     opacity: Double | SignalRef = null,
     orient: Orientation | SignalRef = null,
     radius: Double | SignalRef = null,
-    shape: SymbolShape | SignalRef = null,
+    shape: SymbolShape | String | SignalRef = null,
     size: Double | SignalRef = null,
-    stroke: Color | SignalRef = null,
+    stroke: Color | Gradient | SignalRef = null,
     strokeCap: String | SignalRef = null,
     strokeDash: js.Array[Double] | SignalRef = null,
     strokeDashOffset: Double | SignalRef = null,
@@ -261,22 +329,33 @@ object MarkConfig {
     strokeOpacity: Double | SignalRef = null,
     strokeWidth: Double | SignalRef = null,
     tension: Double | SignalRef = null,
-    text: String | SignalRef = null,
-    theta: Double | SignalRef = null
+    text: Text | SignalRef = null,
+    theta: Double | SignalRef = null,
+    tooltip: String | SignalRef = null,
+    width: Double | SignalRef = null
   ): MarkConfig = {
     val __obj = js.Dynamic.literal()
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
+    if (!js.isUndefined(aspect)) __obj.updateDynamic("aspect")(aspect.asInstanceOf[js.Any])
     if (baseline != null) __obj.updateDynamic("baseline")(baseline.asInstanceOf[js.Any])
+    if (cornerRadius != null) __obj.updateDynamic("cornerRadius")(cornerRadius.asInstanceOf[js.Any])
+    if (cornerRadiusBottomLeft != null) __obj.updateDynamic("cornerRadiusBottomLeft")(cornerRadiusBottomLeft.asInstanceOf[js.Any])
+    if (cornerRadiusBottomRight != null) __obj.updateDynamic("cornerRadiusBottomRight")(cornerRadiusBottomRight.asInstanceOf[js.Any])
+    if (cornerRadiusTopLeft != null) __obj.updateDynamic("cornerRadiusTopLeft")(cornerRadiusTopLeft.asInstanceOf[js.Any])
+    if (cornerRadiusTopRight != null) __obj.updateDynamic("cornerRadiusTopRight")(cornerRadiusTopRight.asInstanceOf[js.Any])
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
+    if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
     if (dx != null) __obj.updateDynamic("dx")(dx.asInstanceOf[js.Any])
     if (dy != null) __obj.updateDynamic("dy")(dy.asInstanceOf[js.Any])
+    if (ellipsis != null) __obj.updateDynamic("ellipsis")(ellipsis.asInstanceOf[js.Any])
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
     if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
     if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
     if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle.asInstanceOf[js.Any])
     if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
     if (interpolate != null) __obj.updateDynamic("interpolate")(interpolate.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
@@ -299,6 +378,8 @@ object MarkConfig {
     if (tension != null) __obj.updateDynamic("tension")(tension.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (theta != null) __obj.updateDynamic("theta")(theta.asInstanceOf[js.Any])
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarkConfig]
   }
 }

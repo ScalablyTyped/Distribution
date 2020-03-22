@@ -1,6 +1,5 @@
 package typings.lokijs
 
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,12 +30,12 @@ class DynamicView[E /* <: js.Object */] protected () extends LokiEventEmitter {
     * @see {@link Collection#addDynamicView} to construct instances of DynamicView
     */
   def this(collection: Collection[E], name: String) = this()
-  def this(collection: Collection[E], name: String, options: Partial[DynamicViewOptions]) = this()
+  def this(collection: Collection[E], name: String, options: PartialDynamicViewOptions) = this()
   var cachedresultset: Resultset[E] | Null = js.native
   var collection: Collection[E] = js.native
-  var filterPipeline: js.Array[AnonFind] = js.native
+  var filterPipeline: js.Array[AnonType] = js.native
   var name: String = js.native
-  var options: Partial[DynamicViewOptions] = js.native
+  var options: PartialDynamicViewOptions = js.native
   var rebuildPending: Boolean = js.native
   var resultdata: js.Array[E with LokiObj] = js.native
   var resultsdirty: Boolean = js.native
@@ -50,7 +49,7 @@ class DynamicView[E /* <: js.Object */] protected () extends LokiEventEmitter {
     *
     * @param filter - The filter object. Refer to applyFilter() for extra details.
     */
-  def _addFilter(filter: AnonFind): Unit = js.native
+  def _addFilter(filter: AnonType): Unit = js.native
   /**
     * Implementation detail.
     * _indexOfFilterWithId() - Find the index of a filter in the pipeline, by that filter's ID.
@@ -68,7 +67,7 @@ class DynamicView[E /* <: js.Object */] protected () extends LokiEventEmitter {
     *    The object is in the format { 'type': filter_type, 'val', filter_param, 'uid', optional_filter_id }
     * @returns this DynamicView object, for further chain ops.
     */
-  def applyFilter(filter: AnonFind): this.type = js.native
+  def applyFilter(filter: AnonType): this.type = js.native
   /**
     * applyFind() - Adds or updates a mongo-style query option in the DynamicView filter pipeline
     *
@@ -94,7 +93,7 @@ class DynamicView[E /* <: js.Object */] protected () extends LokiEventEmitter {
     */
   def applySimpleSort(propname: String): this.type = js.native
   def applySimpleSort(propname: String, options: Boolean): this.type = js.native
-  def applySimpleSort(propname: String, options: Partial[SimplesortOptions]): this.type = js.native
+  def applySimpleSort(propname: String, options: PartialSimplesortOptions): this.type = js.native
   /**
     * applySort() - Used to apply a sort to the dynamic view
     * @example
@@ -170,7 +169,7 @@ class DynamicView[E /* <: js.Object */] protected () extends LokiEventEmitter {
     * @returns An array of documents representing the current DynamicView contents.
     */
   def data(): js.Array[E with LokiObj] = js.native
-  def data(options: Partial[GetDataOptions]): js.Array[E with LokiObj] = js.native
+  def data(options: PartialGetDataOptions): js.Array[E with LokiObj] = js.native
   def evaluateDocument(objIndex: String): Unit = js.native
   def evaluateDocument(objIndex: String, isNew: Boolean): Unit = js.native
   /**

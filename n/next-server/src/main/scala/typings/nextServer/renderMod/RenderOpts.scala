@@ -1,7 +1,7 @@
 package typings.nextServer.renderMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.nextServer.AnonError1603833299
+import typings.nextServer.AnonErrorError
 import typings.nextServer.getPageFilesMod.BuildManifest
 import typings.nextServer.libUtilsMod.AppType
 import typings.nextServer.libUtilsMod.DocumentType
@@ -17,7 +17,7 @@ trait RenderOpts extends js.Object {
   var App: AppType
   var Component: ComponentType[js.Object]
   var Document: DocumentType
-  var ErrorDebug: js.UndefOr[ComponentType[AnonError1603833299]] = js.undefined
+  var ErrorDebug: js.UndefOr[ComponentType[AnonErrorError]] = js.undefined
   var ampBindInitData: Boolean
   var ampMode: js.UndefOr[js.Any] = js.undefined
   var ampPath: js.UndefOr[String] = js.undefined
@@ -58,7 +58,7 @@ object RenderOpts {
     pageConfig: PageConfig,
     reactLoadableManifest: ReactLoadableManifest,
     staticMarkup: Boolean,
-    ErrorDebug: ComponentType[AnonError1603833299] = null,
+    ErrorDebug: ComponentType[AnonErrorError] = null,
     ampMode: js.Any = null,
     ampPath: String = null,
     ampValidator: (/* html */ String, /* pathname */ String) => js.Promise[Unit] = null,

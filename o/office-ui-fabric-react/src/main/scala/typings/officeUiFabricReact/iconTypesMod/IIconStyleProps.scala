@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact.iconTypesMod
 
-import typings.std.Partial
+import typings.officeUiFabricReact.PartialIIconStyles
 import typings.uifabricStyling.ithemeMod.ITheme
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,7 +11,7 @@ trait IIconStyleProps extends js.Object {
   var iconClassName: js.UndefOr[String] = js.undefined
   var isImage: Boolean
   var isPlaceholder: Boolean
-  var styles: js.UndefOr[Partial[IIconStyles]] = js.undefined
+  var styles: js.UndefOr[PartialIIconStyles] = js.undefined
   var theme: js.UndefOr[ITheme] = js.undefined
 }
 
@@ -22,7 +22,7 @@ object IIconStyleProps {
     isPlaceholder: Boolean,
     className: String = null,
     iconClassName: String = null,
-    styles: Partial[IIconStyles] = null,
+    styles: PartialIIconStyles = null,
     theme: ITheme = null
   ): IIconStyleProps = {
     val __obj = js.Dynamic.literal(isImage = isImage.asInstanceOf[js.Any], isPlaceholder = isPlaceholder.asInstanceOf[js.Any])

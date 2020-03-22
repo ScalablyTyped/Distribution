@@ -1,6 +1,6 @@
 package typings.reactOnsenui.mod
 
-import typings.reactOnsenui.HTMLAttributesidclassNamestyle
+import typings.reactOnsenui.HTMLAttributesidclassName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-onsenui", "TabInactive")
 @js.native
 class TabInactive ()
-  extends typings.react.mod.Component[HTMLAttributesidclassNamestyle, js.Object, js.Any]
+  extends typings.react.mod.Component[HTMLAttributesidclassName, js.Object, js.Any]
 

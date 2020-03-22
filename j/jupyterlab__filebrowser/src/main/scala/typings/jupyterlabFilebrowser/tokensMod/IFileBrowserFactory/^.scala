@@ -1,7 +1,7 @@
 package typings.jupyterlabFilebrowser.tokensMod.IFileBrowserFactory
 
 import org.scalablytyped.runtime.TopLevel
-import typings.phosphorCoreutils.mod.Token
+import typings.luminoCoreutils.mod.Token
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

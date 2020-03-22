@@ -1,5 +1,6 @@
 package typings.ionicCore.componentsMod.Components
 
+import typings.ionicCore.animationInterfaceMod.AnimationBuilder
 import typings.ionicCore.interfaceMod.RouteID
 import typings.ionicCore.interfaceMod.RouteWrite
 import typings.ionicCore.interfaceMod.RouterDirection
@@ -9,7 +10,6 @@ import typings.ionicCore.mod.ComponentProps
 import typings.ionicCore.mod.FrameworkDelegate
 import typings.ionicCore.navInterfaceMod.RouterOutletOptions
 import typings.ionicCore.navInterfaceMod.SwipeGestureHandler
-import typings.ionicCore.oldAnimationAnimationInterfaceMod.AnimationBuilder
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

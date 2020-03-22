@@ -1,10 +1,10 @@
 package typings.cypress.lodashMod
 
-import typings.cypress.AnonArgs
-import typings.cypress.FnArray
-import typings.cypress.FnCollection
-import typings.cypress.FnValue
-import typings.cypress.TypeofcypressTypesLodash
+import typings.cypress.AnonCall
+import typings.cypress.FnCallArray
+import typings.cypress.FnCallCollectionIteratee
+import typings.cypress.FnCallValue
+import typings.cypress.TypeofcypressTypesLodas
 import typings.cypress.cypressBooleans.`false`
 import typings.cypress.cypressBooleans.`true`
 import typings.cypress.cypressNumbers.`0`
@@ -355,11 +355,11 @@ trait LoDashStatic extends js.Object {
   @JSName("curry")
   var curry_Original: Curry = js.native
   @JSName("eachRight")
-  var eachRight_Original: FnCollection = js.native
+  var eachRight_Original: FnCallCollectionIteratee = js.native
   @JSName("each")
-  var each_Original: FnCollection = js.native
+  var each_Original: FnCallCollectionIteratee = js.native
   @JSName("first")
-  var first_Original: FnArray = js.native
+  var first_Original: FnCallArray = js.native
   /**
     * Creates a function that memoizes the result of func. If resolver is provided it determines the cache key for
     * storing the result based on the arguments provided to the memoized function. By default, the first argument
@@ -371,7 +371,7 @@ trait LoDashStatic extends js.Object {
     * @return Returns the new memoizing function.
     */
   @JSName("memoize")
-  var memoize_Original: AnonArgs = js.native
+  var memoize_Original: AnonCall = js.native
   /**
     * This method is like _.partial except that partial arguments are appended to those provided
     * to the new function.
@@ -3752,7 +3752,7 @@ trait LoDashStatic extends js.Object {
   /**
     * @see _.isArrayLike
     */
-  def isArrayLike(value: js.Any): /* is cypress.Anon_LengthNumber */ Boolean = js.native
+  def isArrayLike(value: js.Any): /* is cypress.AnonLengthNumber */ Boolean = js.native
    // should only match if T = any
   /**
     * @see _.isArrayLike
@@ -4260,7 +4260,7 @@ trait LoDashStatic extends js.Object {
   /**
     * @see _.iteratee
     */
-  def iteratee(): FnValue = js.native
+  def iteratee(): FnCallValue = js.native
   /**
     * @see _.iteratee
     */
@@ -4988,7 +4988,7 @@ trait LoDashStatic extends js.Object {
     *
     * @return Returns the lodash function.
     */
-  def noConflict(): TypeofcypressTypesLodash = js.native
+  def noConflict(): TypeofcypressTypesLodas = js.native
   /**
     * A no-operation function that returns undefined regardless of the arguments it receives.
     *

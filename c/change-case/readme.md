@@ -1,7 +1,7 @@
 
 # Scala.js typings for change-case
 
-Typings are for version 3.1.0
+Typings are for version 4.1.1
 
 ## Library description:
 Transform a string between `camelCase`, `PascalCase`, `Capital Case`, `snake_case`, `param-case`, `CONSTANT_CASE` and others

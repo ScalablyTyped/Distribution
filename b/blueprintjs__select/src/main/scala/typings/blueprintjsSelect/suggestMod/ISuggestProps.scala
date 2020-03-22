@@ -1,10 +1,9 @@
 package typings.blueprintjsSelect.suggestMod
 
 import typings.blueprintjsCore.inputGroupMod.IInputGroupProps
-import typings.blueprintjsCore.popoverMod.IPopoverProps
 import typings.blueprintjsCore.propsMod.HTMLInputProps
+import typings.blueprintjsSelect.PartialIPopoverProps
 import typings.blueprintjsSelect.listItemsPropsMod.IListItemsProps
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,7 +39,7 @@ trait ISuggestProps[T] extends IListItemsProps[T] {
     */
   var openOnKeyDown: js.UndefOr[Boolean] = js.native
   /** Props to spread to `Popover`. Note that `content` cannot be changed. */
-  var popoverProps: js.UndefOr[Partial[IPopoverProps] with js.Object] = js.native
+  var popoverProps: js.UndefOr[PartialIPopoverProps with js.Object] = js.native
   /**
     * Whether the active item should be reset to the first matching item _when
     * the popover closes_. The query will also be reset to the empty string.

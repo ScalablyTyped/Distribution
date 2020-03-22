@@ -1,6 +1,6 @@
 package typings.amcharts.stockLegendMod
 
-import typings.amcharts.AnonChartDataItem
+import typings.amcharts.AnonDataItem
 import typings.amcharts.amLegendMod.AmLegend
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -28,7 +28,7 @@ trait StockLegend extends AmLegend {
 object StockLegend {
   @scala.inline
   def apply(
-    addListener: (String, js.Function1[/* e */ AnonChartDataItem, Unit]) => Unit,
+    addListener: (String, js.Function1[/* e */ AnonDataItem, Unit]) => Unit,
     align: String,
     autoMargins: Boolean,
     backgroundAlpha: Double,

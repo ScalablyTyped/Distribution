@@ -6,10 +6,10 @@ import typings.koa.mod.DefaultState
 import typings.koa.mod.Middleware
 import typings.koaPassport.AnonPauseStream
 import typings.koaPassport.AnonUserProperty
-import typings.koaPassport.FnDone
-import typings.koaPassport.FnDoneErr
+import typings.koaPassport.FnCall
+import typings.koaPassport.FnCallFn
 import typings.node.httpMod.IncomingMessage
-import typings.passport.AnonAny
+import typings.passport.AnonInstantiable
 import typings.passport.mod.AuthenticateOptions
 import typings.passport.mod.Framework
 import typings.passport.mod.Strategy
@@ -28,9 +28,9 @@ object KoaPassport extends js.Object {
   @js.native
   trait KoaPassport extends js.Object {
     @JSName("deserializeUser")
-    var deserializeUser_Original: FnDoneErr = js.native
+    var deserializeUser_Original: FnCallFn = js.native
     @JSName("serializeUser")
-    var serializeUser_Original: FnDone = js.native
+    var serializeUser_Original: FnCall = js.native
     @JSName("transformAuthInfo")
     var transformAuthInfo_Original: js.Function1[
         /* fn */ js.Function2[
@@ -114,9 +114,9 @@ object KoaPassport extends js.Object {
   @js.native
   trait Static
     extends typings.koaPassport.mod.KoaPassport.KoaPassport {
-    var Authenticator: AnonAny = js.native
+    var Authenticator: AnonInstantiable = js.native
     var KoaPassport: Instantiable0[typings.koaPassport.mod.KoaPassport.KoaPassport] = js.native
-    var Passport: AnonAny = js.native
+    var Passport: AnonInstantiable = js.native
   }
   
 }

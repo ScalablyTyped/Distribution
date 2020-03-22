@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait NamedExports
   extends Node
+     with NamedExportBindings
      with NamedImportsOrExports {
   var elements: NodeArray[ExportSpecifier] = js.native
   @JSName("kind")

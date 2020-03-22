@@ -1,8 +1,8 @@
 package typings.oracleOraclejet.ojtagcloudMod
 
-import typings.oracleOraclejet.AnonAnimationDurationHoverBehaviorDelay
-import typings.oracleOraclejet.AnonComponentNameLabelAndValue
-import typings.oracleOraclejet.AnonContextRendererAnonInsertAnonPreventDefaultKTooltipContext
+import typings.oracleOraclejet.Anon24
+import typings.oracleOraclejet.AnonHoverBehaviorDelay
+import typings.oracleOraclejet.AnonLabelAndValue
 import typings.oracleOraclejet.ojdataproviderMod.DataProvider
 import typings.oracleOraclejet.ojdvtBaseMod.dvtBaseComponentSettableProperties
 import typings.oracleOraclejet.oracleOraclejetStrings.all
@@ -33,11 +33,11 @@ trait ojTagCloudSettableProperties[K, D] extends dvtBaseComponentSettablePropert
   var layout: cloud | rectangular
   var selection: js.Array[K]
   var selectionMode: single | multiple | none
-  var styleDefaults: AnonAnimationDurationHoverBehaviorDelay
-  var tooltip: AnonContextRendererAnonInsertAnonPreventDefaultKTooltipContext[K]
+  var styleDefaults: AnonHoverBehaviorDelay
+  var tooltip: Anon24[K]
   var touchResponse: touchStart | auto
   @JSName("translations")
-  var translations_ojTagCloudSettableProperties: AnonComponentNameLabelAndValue
+  var translations_ojTagCloudSettableProperties: AnonLabelAndValue
 }
 
 object ojTagCloudSettableProperties {
@@ -53,11 +53,11 @@ object ojTagCloudSettableProperties {
     layout: cloud | rectangular,
     selection: js.Array[K],
     selectionMode: single | multiple | none,
-    styleDefaults: AnonAnimationDurationHoverBehaviorDelay,
-    tooltip: AnonContextRendererAnonInsertAnonPreventDefaultKTooltipContext[K],
+    styleDefaults: AnonHoverBehaviorDelay,
+    tooltip: Anon24[K],
     touchResponse: touchStart | auto,
     trackResize: on | off,
-    translations: AnonComponentNameLabelAndValue,
+    translations: AnonLabelAndValue,
     data: DataProvider[K, D] = null
   ): ojTagCloudSettableProperties[K, D] = {
     val __obj = js.Dynamic.literal(animationOnDataChange = animationOnDataChange.asInstanceOf[js.Any], animationOnDisplay = animationOnDisplay.asInstanceOf[js.Any], as = as.asInstanceOf[js.Any], hiddenCategories = hiddenCategories.asInstanceOf[js.Any], highlightMatch = highlightMatch.asInstanceOf[js.Any], highlightedCategories = highlightedCategories.asInstanceOf[js.Any], hoverBehavior = hoverBehavior.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any], selection = selection.asInstanceOf[js.Any], selectionMode = selectionMode.asInstanceOf[js.Any], styleDefaults = styleDefaults.asInstanceOf[js.Any], tooltip = tooltip.asInstanceOf[js.Any], touchResponse = touchResponse.asInstanceOf[js.Any], trackResize = trackResize.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any])

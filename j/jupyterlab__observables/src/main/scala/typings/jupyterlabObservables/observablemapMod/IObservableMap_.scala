@@ -3,7 +3,7 @@ package typings.jupyterlabObservables.observablemapMod
 import typings.jupyterlabObservables.jupyterlabObservablesStrings.Map
 import typings.jupyterlabObservables.modeldbMod.IObservable
 import typings.jupyterlabObservables.observablemapMod.IObservableMap.IChangedArgs
-import typings.phosphorSignaling.mod.ISignal
+import typings.luminoSignaling.mod.ISignal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

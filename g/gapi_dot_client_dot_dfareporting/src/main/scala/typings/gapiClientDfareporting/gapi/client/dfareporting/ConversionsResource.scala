@@ -1,23 +1,23 @@
 package typings.gapiClientDfareporting.gapi.client.dfareporting
 
 import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientDfareporting.AnonAltFieldsKey
+import typings.gapiClientDfareporting.AnonKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ConversionsResource extends js.Object {
   /** Inserts conversions. */
-  def batchinsert(request: AnonAltFieldsKey): Request_[ConversionsBatchInsertResponse]
+  def batchinsert(request: AnonKey): Request_[ConversionsBatchInsertResponse]
   /** Updates existing conversions. */
-  def batchupdate(request: AnonAltFieldsKey): Request_[ConversionsBatchUpdateResponse]
+  def batchupdate(request: AnonKey): Request_[ConversionsBatchUpdateResponse]
 }
 
 object ConversionsResource {
   @scala.inline
   def apply(
-    batchinsert: AnonAltFieldsKey => Request_[ConversionsBatchInsertResponse],
-    batchupdate: AnonAltFieldsKey => Request_[ConversionsBatchUpdateResponse]
+    batchinsert: AnonKey => Request_[ConversionsBatchInsertResponse],
+    batchupdate: AnonKey => Request_[ConversionsBatchUpdateResponse]
   ): ConversionsResource = {
     val __obj = js.Dynamic.literal(batchinsert = js.Any.fromFunction1(batchinsert), batchupdate = js.Any.fromFunction1(batchupdate))
   

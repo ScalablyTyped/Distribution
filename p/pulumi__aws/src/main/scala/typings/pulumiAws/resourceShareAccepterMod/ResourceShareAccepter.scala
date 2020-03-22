@@ -34,7 +34,7 @@ class ResourceShareAccepter protected () extends CustomResource {
     */
   val resources: Output_[js.Array[String]] = js.native
   /**
-    * The account ID of the sender account which extends the invitation.
+    * The account ID of the sender account which submits the invitation.
     */
   val senderAccountId: Output_[String] = js.native
   /**
@@ -50,7 +50,7 @@ class ResourceShareAccepter protected () extends CustomResource {
     */
   val shareName: Output_[String] = js.native
   /**
-    * The status of the invitation (e.g., ACCEPTED, REJECTED).
+    * The status of the resource share (ACTIVE, PENDING, FAILED, DELETING, DELETED).
     */
   val status: Output_[String] = js.native
 }

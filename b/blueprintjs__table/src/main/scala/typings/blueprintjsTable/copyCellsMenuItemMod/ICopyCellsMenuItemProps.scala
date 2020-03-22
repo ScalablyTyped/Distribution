@@ -1,8 +1,8 @@
 package typings.blueprintjsTable.copyCellsMenuItemMod
 
+import typings.blueprintjsCore.PartialIPopoverProps
 import typings.blueprintjsCore.intentMod.Intent
 import typings.blueprintjsCore.menuItemMod.IMenuItemProps
-import typings.blueprintjsCore.popoverMod.IPopoverProps
 import typings.blueprintjsCore.propsMod.MaybeElement
 import typings.blueprintjsIcons.iconNameMod.IconName
 import typings.blueprintjsTable.menuContextMod.IMenuContext
@@ -10,7 +10,6 @@ import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
 import typings.std.HTMLElement
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -56,7 +55,7 @@ object ICopyCellsMenuItemProps {
     multiline: js.UndefOr[Boolean] = js.undefined,
     onClick: /* event */ MouseEvent[HTMLElement, NativeMouseEvent] => Unit = null,
     onCopy: /* success */ Boolean => Unit = null,
-    popoverProps: Partial[IPopoverProps] = null,
+    popoverProps: PartialIPopoverProps = null,
     shouldDismissPopover: js.UndefOr[Boolean] = js.undefined,
     tagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any = null,
     target: String = null,

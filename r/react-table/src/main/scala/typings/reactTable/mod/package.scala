@@ -18,12 +18,10 @@ package object mod {
   type CellPropGetter[D /* <: js.Object */] = typings.reactTable.mod.PropGetter[
     D, 
     typings.reactTable.mod.TableCellProps, 
-    typings.reactTable.AnonCellD[D], 
-    typings.std.Partial[typings.reactTable.mod.TableCellProps]
+    typings.reactTable.AnonCell[D], 
+    typings.reactTable.PartialTableCellProps
   ]
-  type CellProps[D /* <: js.Object */] = typings.reactTable.mod.TableInstance[D] with typings.reactTable.AnonCellColumn[D]
   type CellValue = js.Any
-  type FilterProps[D /* <: js.Object */] = typings.reactTable.mod.HeaderProps[D]
   type FilterTypes[D /* <: js.Object */] = typings.std.Record[java.lang.String, typings.reactTable.mod.FilterValue]
   type FilterValue = js.Any
   type Filters[D /* <: js.Object */] = js.Array[typings.reactTable.AnonId[D]]
@@ -31,27 +29,26 @@ package object mod {
     D, 
     typings.reactTable.mod.TableFooterGroupProps, 
     typings.reactTable.AnonColumn[D], 
-    typings.std.Partial[typings.reactTable.mod.TableFooterGroupProps]
+    typings.reactTable.PartialTableFooterGroupPr
   ]
   type FooterPropGetter[D /* <: js.Object */] = typings.reactTable.mod.PropGetter[
     D, 
     typings.reactTable.mod.TableFooterProps, 
     typings.reactTable.AnonColumn[D], 
-    typings.std.Partial[typings.reactTable.mod.TableFooterProps]
+    typings.reactTable.PartialTableFooterProps
   ]
   type HeaderGroupPropGetter[D /* <: js.Object */] = typings.reactTable.mod.PropGetter[
     D, 
     typings.reactTable.mod.TableHeaderGroupProps, 
     typings.reactTable.AnonColumn[D], 
-    typings.std.Partial[typings.reactTable.mod.TableHeaderGroupProps]
+    typings.reactTable.PartialTableHeaderGroupPr
   ]
   type HeaderPropGetter[D /* <: js.Object */] = typings.reactTable.mod.PropGetter[
     D, 
     typings.reactTable.mod.TableHeaderProps, 
     typings.reactTable.AnonColumn[D], 
-    typings.std.Partial[typings.reactTable.mod.TableHeaderProps]
+    typings.reactTable.PartialTableHeaderProps
   ]
-  type HeaderProps[D /* <: js.Object */] = typings.reactTable.mod.TableInstance[D] with typings.reactTable.AnonColumnColumnInstance[D]
   type Hooks[D /* <: js.Object */] = typings.reactTable.mod.UseTableHooks[D]
   type IdType[D] = typings.reactTable.mod.StringKey[D] | java.lang.String
   type Meta[D /* <: js.Object */, Extension, M] = (M with Extension) | M
@@ -66,7 +63,7 @@ package object mod {
     D, 
     typings.reactTable.mod.TableRowProps, 
     typings.reactTable.AnonRow[D], 
-    typings.std.Partial[typings.reactTable.mod.TableRowProps]
+    typings.reactTable.PartialTableRowProps
   ]
   type SortByFn[D /* <: js.Object */] = js.Function3[
     /* rowA */ typings.reactTable.mod.Row[D], 
@@ -79,7 +76,7 @@ package object mod {
     D, 
     typings.reactTable.mod.TableBodyProps, 
     scala.Nothing, 
-    typings.std.Partial[typings.reactTable.mod.TableBodyProps]
+    typings.reactTable.PartialTableBodyProps
   ]
   type TableBodyProps = typings.reactTable.mod.TableCommonProps
   type TableCellProps = typings.reactTable.mod.TableKeyedProps
@@ -89,11 +86,12 @@ package object mod {
   type TableFooterProps = typings.reactTable.mod.TableKeyedProps
   type TableHeaderGroupProps = typings.reactTable.mod.TableKeyedProps
   type TableHeaderProps = typings.reactTable.mod.TableKeyedProps
+  type TableOptions[D /* <: js.Object */] = typings.reactTable.mod.UseTableOptions[D]
   type TablePropGetter[D /* <: js.Object */] = typings.reactTable.mod.PropGetter[
     D, 
     typings.reactTable.mod.TableProps, 
     scala.Nothing, 
-    typings.std.Partial[typings.reactTable.mod.TableProps]
+    typings.reactTable.PartialTableProps
   ]
   type TableProps = typings.reactTable.mod.TableCommonProps
   type TableRowProps = typings.reactTable.mod.TableKeyedProps
@@ -104,18 +102,6 @@ package object mod {
     /* oldHidden */ js.Array[typings.reactTable.mod.IdType[D]], 
     js.Array[typings.reactTable.mod.IdType[D]]
   ]
-  type UseExpandedOptions[D /* <: js.Object */] = typings.std.Partial[typings.reactTable.AnonAutoResetExpanded[D]]
-  type UseFiltersColumnOptions[D /* <: js.Object */] = typings.std.Partial[typings.reactTable.AnonDefaultCanFilter[D]]
-  type UseFiltersOptions[D /* <: js.Object */] = typings.std.Partial[typings.reactTable.AnonAutoResetFilters[D]]
-  type UseGlobalFiltersOptions[D /* <: js.Object */] = typings.std.Partial[typings.reactTable.AnonAutoResetGlobalFilter[D]]
-  type UseGroupByColumnOptions[D /* <: js.Object */] = typings.std.Partial[typings.reactTable.AnonAggregate[D]]
-  type UseGroupByOptions[D /* <: js.Object */] = typings.std.Partial[typings.reactTable.AnonAggregations[D]]
-  type UsePaginationOptions[D /* <: js.Object */] = typings.std.Partial[typings.reactTable.AnonAutoResetPage]
-  type UseRowSelectOptions[D /* <: js.Object */] = typings.std.Partial[typings.reactTable.AnonAutoResetSelectedRows[D]]
   type UseRowStateLocalState[D /* <: js.Object */, T] = typings.std.Record[typings.reactTable.mod.IdType[D], T]
-  type UseRowStateOptions[D /* <: js.Object */] = typings.std.Partial[typings.reactTable.AnonAutoResetRowState[D]]
   type UseRowUpdater[T] = T | (js.Function1[/* prev */ T, T])
-  type UseSortByColumnOptions[D /* <: js.Object */] = typings.std.Partial[typings.reactTable.AnonDefaultCanSort[D]]
-  type UseSortByOptions[D /* <: js.Object */] = typings.std.Partial[typings.reactTable.AnonAutoResetSortBy[D]]
-  type UseTableOptions[D /* <: js.Object */] = typings.reactTable.AnonColumns[D] with typings.std.Partial[typings.reactTable.AnonAction[D]]
 }

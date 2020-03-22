@@ -1,10 +1,10 @@
 package typings.victory.mod
 
 import typings.react.mod.ReactElement
+import typings.victory.Anon1
 import typings.victory.AnonBottom
-import typings.victory.AnonXY
-import typings.victory.AnonXYBoolean
-import typings.victory.AnonXYD3ScaleScalePropType
+import typings.victory.AnonXBoolean
+import typings.victory.AnonY
 import typings.victory.victoryStrings.data
 import typings.victory.victoryStrings.end
 import typings.victory.victoryStrings.labels
@@ -124,12 +124,12 @@ object VictoryBarProps {
     horizontal: js.UndefOr[Boolean] = js.undefined,
     labelComponent: ReactElement = null,
     labels: js.Array[String] | (js.Function1[/* data */ js.Any, String]) = null,
-    maxDomain: Double | AnonXY = null,
-    minDomain: Double | AnonXY = null,
+    maxDomain: Double | AnonY = null,
+    minDomain: Double | AnonY = null,
     name: String = null,
     padding: PaddingProps = null,
-    scale: ScalePropType | D3Scale | AnonXYD3ScaleScalePropType = null,
-    singleQuadrantDomainPadding: Boolean | AnonXYBoolean = null,
+    scale: ScalePropType | D3Scale | Anon1 = null,
+    singleQuadrantDomainPadding: Boolean | AnonXBoolean = null,
     standalone: js.UndefOr[Boolean] = js.undefined,
     style: VictoryStyleInterface = null,
     theme: VictoryThemeDefinition = null,

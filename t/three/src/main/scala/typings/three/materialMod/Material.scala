@@ -4,13 +4,13 @@ import typings.three.constantsMod.Blending
 import typings.three.constantsMod.BlendingDstFactor
 import typings.three.constantsMod.BlendingEquation
 import typings.three.constantsMod.BlendingSrcFactor
-import typings.three.constantsMod.Colors
 import typings.three.constantsMod.DepthModes
 import typings.three.constantsMod.Side
 import typings.three.constantsMod.StencilFunc
 import typings.three.constantsMod.StencilOp
 import typings.three.eventDispatcherMod.EventDispatcher
 import typings.three.shaderLibMod.Shader
+import typings.three.threeBooleans.`true`
 import typings.three.threeStrings.highp
 import typings.three.threeStrings.lowp
 import typings.three.threeStrings.mediump
@@ -71,6 +71,11 @@ class Material () extends EventDispatcher {
   	 */
   var colorWrite: Boolean = js.native
   /**
+  	 * Custom defines to be injected into the shader. These are passed in form of an object literal, with key/value pairs. { MY_CUSTOM_DEFINE: '' , PI2: Math.PI * 2 }.
+  	 * The pairs are defined in both vertex and fragment shaders. Default is undefined.
+  	 */
+  var defines: js.Any = js.native
+  /**
   	 * Which depth function to use. Default is {@link LessEqualDepth}. See the depth mode constants for all possible values.
   	 */
   var depthFunc: DepthModes = js.native
@@ -103,7 +108,7 @@ class Material () extends EventDispatcher {
   	 * Used to check whether this or derived classes are materials. Default is true.
   	 * You should not change this, as it used internally for optimisation.
   	 */
-  var isMaterial: Boolean = js.native
+  val isMaterial: `true` = js.native
   /**
   	 * Material name. Default is an empty string.
   	 */
@@ -117,10 +122,6 @@ class Material () extends EventDispatcher {
   	 * Opacity. Default is 1.
   	 */
   var opacity: Double = js.native
-  /**
-  	 * Enables/disables overdraw. If greater than zero, polygons are drawn slightly bigger in order to fix antialiasing gaps when using the CanvasRenderer. Default is 0.
-  	 */
-  var overdraw: Double = js.native
   /**
   	 * Whether to use polygon offset. Default is false. This corresponds to the POLYGON_OFFSET_FILL WebGL feature.
   	 */
@@ -141,6 +142,11 @@ class Material () extends EventDispatcher {
   	 * Whether to premultiply the alpha (transparency) value. See WebGL / Materials / Transparency for an example of the difference. Default is false.
   	 */
   var premultipliedAlpha: Boolean = js.native
+  /**
+  	 * Defines which of the face sides will cast shadows. Default is *null*.
+  	 * If *null*, the value is opposite that of side, above.
+  	 */
+  var shadowSide: Side = js.native
   /**
   	 * Defines which of the face sides will be rendered - front, back or both.
   	 * Default is THREE.FrontSide. Other options are THREE.BackSide and THREE.DoubleSide.
@@ -198,13 +204,13 @@ class Material () extends EventDispatcher {
   	 */
   var uuid: String = js.native
   /**
-  	 * Defines whether vertex coloring is used. Default is THREE.NoColors. Other options are THREE.VertexColors and THREE.FaceColors.
+  	 * This starts at 0 and counts how many times .needsUpdate is set to true.
   	 */
-  var vertexColors: Colors = js.native
+  var version: Double = js.native
   /**
-  	 * Defines whether precomputed vertex tangents are used. Default is false.
+  	 * Defines whether vertex coloring is used. Default is false.
   	 */
-  var vertexTangents: Boolean = js.native
+  var vertexColors: Boolean = js.native
   /**
   	 * Defines whether this material is visible. Default is true.
   	 */

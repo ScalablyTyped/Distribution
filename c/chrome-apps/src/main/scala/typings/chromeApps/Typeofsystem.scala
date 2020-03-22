@@ -60,7 +60,7 @@ trait Typeofsystem extends js.Object {
     * @requires Permissions: 'system.storage'
     * @since Chrome 30.
     */
-  val storage: TypeofstorageCallback
+  val storage: TypeofstorageEjectDevice
 }
 
 object Typeofsystem {
@@ -71,7 +71,7 @@ object Typeofsystem {
     memory: Typeofmemory,
     network: Typeofnetwork,
     powerSource: TypeofpowerSource,
-    storage: TypeofstorageCallback
+    storage: TypeofstorageEjectDevice
   ): Typeofsystem = {
     val __obj = js.Dynamic.literal(cpu = cpu.asInstanceOf[js.Any], display = display.asInstanceOf[js.Any], memory = memory.asInstanceOf[js.Any], network = network.asInstanceOf[js.Any], powerSource = powerSource.asInstanceOf[js.Any], storage = storage.asInstanceOf[js.Any])
   

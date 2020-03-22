@@ -1,7 +1,7 @@
 
 # Scala.js typings for npm-run-path
 
-Typings are for version 3.1.0
+Typings are for version 4.0.1
 
 ## Library description:
 Get your PATH prepended with locally installed binaries

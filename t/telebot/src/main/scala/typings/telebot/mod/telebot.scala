@@ -6,23 +6,23 @@ import typings.std.Error
 import typings.std.RegExp
 import typings.telebot.AnonCacheTime
 import typings.telebot.AnonCaption
-import typings.telebot.AnonCaptionDuration
-import typings.telebot.AnonCaptionDurationFileName
-import typings.telebot.AnonCaptionDurationFileNameNotification
 import typings.telebot.AnonChatId
-import typings.telebot.AnonChatIdInlineMessageId
-import typings.telebot.AnonChatIdInlineMsgId
-import typings.telebot.AnonChatIdInlineMsgIdMessageId
 import typings.telebot.AnonCurrency
 import typings.telebot.AnonDuration
 import typings.telebot.AnonErrorMessage
 import typings.telebot.AnonErrorMessageString
 import typings.telebot.AnonFileName
 import typings.telebot.AnonFoursquareId
+import typings.telebot.AnonHeight
+import typings.telebot.AnonInlineMessageId
+import typings.telebot.AnonInlineMsgId
 import typings.telebot.AnonLimit
+import typings.telebot.AnonMessageId
 import typings.telebot.AnonNotification
 import typings.telebot.AnonNotificationBoolean
 import typings.telebot.AnonNotificationReplyMarkup
+import typings.telebot.AnonReplyMarkup
+import typings.telebot.AnonReplyToMessage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,12 +46,12 @@ trait telebot extends js.Object {
   def deleteMessage(chat_id: Double, from_message_id: Double): Boolean = js.native
   def deleteWebhook(): Boolean = js.native
   def destroyEvent(`type`: String): Boolean = js.native
-  def editMessageCaption(config: AnonChatIdInlineMsgIdMessageId, caption: String): js.Any | Boolean = js.native
-  def editMessageCaption(config: AnonChatIdInlineMsgId, caption: String): js.Any | Boolean = js.native
-  def editMessageReplyMarkup(config: AnonChatIdInlineMsgIdMessageId, replyMarkup: js.Any): js.Any | Boolean = js.native
-  def editMessageReplyMarkup(config: AnonChatIdInlineMsgId, replyMarkup: js.Any): js.Any | Boolean = js.native
-  def editMessageText(config: AnonChatIdInlineMsgIdMessageId, text: String): js.Any | Boolean = js.native
-  def editMessageText(config: AnonChatIdInlineMsgId, text: String): js.Any | Boolean = js.native
+  def editMessageCaption(config: AnonInlineMsgId, caption: String): js.Any | Boolean = js.native
+  def editMessageCaption(config: AnonMessageId, caption: String): js.Any | Boolean = js.native
+  def editMessageReplyMarkup(config: AnonInlineMsgId, replyMarkup: js.Any): js.Any | Boolean = js.native
+  def editMessageReplyMarkup(config: AnonMessageId, replyMarkup: js.Any): js.Any | Boolean = js.native
+  def editMessageText(config: AnonInlineMsgId, text: String): js.Any | Boolean = js.native
+  def editMessageText(config: AnonMessageId, text: String): js.Any | Boolean = js.native
   def event(types: String, data: js.Any): js.Promise[_] = js.native
   def event(types: String, data: js.Any, self: js.Any): js.Promise[_] = js.native
   def event(types: js.Array[String], data: js.Any): js.Promise[_] = js.native
@@ -74,7 +74,7 @@ trait telebot extends js.Object {
   def getChatMembersCount(chat_id: Double): Double = js.native
   def getFile(file_id: String): js.Any = js.native
   def getGameHighScores(user_id: Double): js.Array[_] = js.native
-  def getGameHighScores(user_id: Double, opt: AnonChatIdInlineMessageId): js.Array[_] = js.native
+  def getGameHighScores(user_id: Double, opt: AnonInlineMessageId): js.Array[_] = js.native
   // Telegram API
   def getMe(): js.Any = js.native
   def getUpdates(offset: Double, limit: Double, timeout: Double, allowed_updates: String): Unit = js.native
@@ -111,21 +111,21 @@ trait telebot extends js.Object {
   def sendAction(chat_id: String, action: String): Boolean = js.native
   def sendAction(chat_id: Double, action: String): Boolean = js.native
   def sendAudio(chat_id: String, file: String): js.Any = js.native
-  def sendAudio(chat_id: String, file: String, opt: AnonCaptionDuration): js.Any = js.native
+  def sendAudio(chat_id: String, file: String, opt: AnonDuration): js.Any = js.native
   def sendAudio(chat_id: String, file: js.Any): js.Any = js.native
-  def sendAudio(chat_id: String, file: js.Any, opt: AnonCaptionDuration): js.Any = js.native
+  def sendAudio(chat_id: String, file: js.Any, opt: AnonDuration): js.Any = js.native
   def sendAudio(chat_id: String, file: Buffer): js.Any = js.native
-  def sendAudio(chat_id: String, file: Buffer, opt: AnonCaptionDuration): js.Any = js.native
+  def sendAudio(chat_id: String, file: Buffer, opt: AnonDuration): js.Any = js.native
   def sendAudio(chat_id: String, file: ReadableStream): js.Any = js.native
-  def sendAudio(chat_id: String, file: ReadableStream, opt: AnonCaptionDuration): js.Any = js.native
+  def sendAudio(chat_id: String, file: ReadableStream, opt: AnonDuration): js.Any = js.native
   def sendAudio(chat_id: Double, file: String): js.Any = js.native
-  def sendAudio(chat_id: Double, file: String, opt: AnonCaptionDuration): js.Any = js.native
+  def sendAudio(chat_id: Double, file: String, opt: AnonDuration): js.Any = js.native
   def sendAudio(chat_id: Double, file: js.Any): js.Any = js.native
-  def sendAudio(chat_id: Double, file: js.Any, opt: AnonCaptionDuration): js.Any = js.native
+  def sendAudio(chat_id: Double, file: js.Any, opt: AnonDuration): js.Any = js.native
   def sendAudio(chat_id: Double, file: Buffer): js.Any = js.native
-  def sendAudio(chat_id: Double, file: Buffer, opt: AnonCaptionDuration): js.Any = js.native
+  def sendAudio(chat_id: Double, file: Buffer, opt: AnonDuration): js.Any = js.native
   def sendAudio(chat_id: Double, file: ReadableStream): js.Any = js.native
-  def sendAudio(chat_id: Double, file: ReadableStream, opt: AnonCaptionDuration): js.Any = js.native
+  def sendAudio(chat_id: Double, file: ReadableStream, opt: AnonDuration): js.Any = js.native
   def sendContact(chat_id: String, number: String, firstName: String): js.Any = js.native
   def sendContact(chat_id: String, number: String, firstName: String, lastName: String): js.Any = js.native
   def sendContact(
@@ -223,53 +223,53 @@ trait telebot extends js.Object {
     opt: AnonFoursquareId
   ): js.Any = js.native
   def sendVideo(chat_id: String, file: String): js.Any = js.native
-  def sendVideo(chat_id: String, file: String, opt: AnonCaptionDurationFileName): js.Any = js.native
+  def sendVideo(chat_id: String, file: String, opt: AnonHeight): js.Any = js.native
   def sendVideo(chat_id: String, file: js.Any): js.Any = js.native
-  def sendVideo(chat_id: String, file: js.Any, opt: AnonCaptionDurationFileName): js.Any = js.native
+  def sendVideo(chat_id: String, file: js.Any, opt: AnonHeight): js.Any = js.native
   def sendVideo(chat_id: String, file: Buffer): js.Any = js.native
-  def sendVideo(chat_id: String, file: Buffer, opt: AnonCaptionDurationFileName): js.Any = js.native
+  def sendVideo(chat_id: String, file: Buffer, opt: AnonHeight): js.Any = js.native
   def sendVideo(chat_id: String, file: ReadableStream): js.Any = js.native
-  def sendVideo(chat_id: String, file: ReadableStream, opt: AnonCaptionDurationFileName): js.Any = js.native
+  def sendVideo(chat_id: String, file: ReadableStream, opt: AnonHeight): js.Any = js.native
   def sendVideo(chat_id: Double, file: String): js.Any = js.native
-  def sendVideo(chat_id: Double, file: String, opt: AnonCaptionDurationFileName): js.Any = js.native
+  def sendVideo(chat_id: Double, file: String, opt: AnonHeight): js.Any = js.native
   def sendVideo(chat_id: Double, file: js.Any): js.Any = js.native
-  def sendVideo(chat_id: Double, file: js.Any, opt: AnonCaptionDurationFileName): js.Any = js.native
+  def sendVideo(chat_id: Double, file: js.Any, opt: AnonHeight): js.Any = js.native
   def sendVideo(chat_id: Double, file: Buffer): js.Any = js.native
-  def sendVideo(chat_id: Double, file: Buffer, opt: AnonCaptionDurationFileName): js.Any = js.native
+  def sendVideo(chat_id: Double, file: Buffer, opt: AnonHeight): js.Any = js.native
   def sendVideo(chat_id: Double, file: ReadableStream): js.Any = js.native
-  def sendVideo(chat_id: Double, file: ReadableStream, opt: AnonCaptionDurationFileName): js.Any = js.native
+  def sendVideo(chat_id: Double, file: ReadableStream, opt: AnonHeight): js.Any = js.native
   def sendVideoNote(chat_id: String, file: String): js.Any = js.native
-  def sendVideoNote(chat_id: String, file: String, opt: AnonDuration): js.Any = js.native
+  def sendVideoNote(chat_id: String, file: String, opt: AnonReplyMarkup): js.Any = js.native
   def sendVideoNote(chat_id: String, file: js.Any): js.Any = js.native
-  def sendVideoNote(chat_id: String, file: js.Any, opt: AnonDuration): js.Any = js.native
+  def sendVideoNote(chat_id: String, file: js.Any, opt: AnonReplyMarkup): js.Any = js.native
   def sendVideoNote(chat_id: String, file: Buffer): js.Any = js.native
-  def sendVideoNote(chat_id: String, file: Buffer, opt: AnonDuration): js.Any = js.native
+  def sendVideoNote(chat_id: String, file: Buffer, opt: AnonReplyMarkup): js.Any = js.native
   def sendVideoNote(chat_id: String, file: ReadableStream): js.Any = js.native
-  def sendVideoNote(chat_id: String, file: ReadableStream, opt: AnonDuration): js.Any = js.native
+  def sendVideoNote(chat_id: String, file: ReadableStream, opt: AnonReplyMarkup): js.Any = js.native
   def sendVideoNote(chat_id: Double, file: String): js.Any = js.native
-  def sendVideoNote(chat_id: Double, file: String, opt: AnonDuration): js.Any = js.native
+  def sendVideoNote(chat_id: Double, file: String, opt: AnonReplyMarkup): js.Any = js.native
   def sendVideoNote(chat_id: Double, file: js.Any): js.Any = js.native
-  def sendVideoNote(chat_id: Double, file: js.Any, opt: AnonDuration): js.Any = js.native
+  def sendVideoNote(chat_id: Double, file: js.Any, opt: AnonReplyMarkup): js.Any = js.native
   def sendVideoNote(chat_id: Double, file: Buffer): js.Any = js.native
-  def sendVideoNote(chat_id: Double, file: Buffer, opt: AnonDuration): js.Any = js.native
+  def sendVideoNote(chat_id: Double, file: Buffer, opt: AnonReplyMarkup): js.Any = js.native
   def sendVideoNote(chat_id: Double, file: ReadableStream): js.Any = js.native
-  def sendVideoNote(chat_id: Double, file: ReadableStream, opt: AnonDuration): js.Any = js.native
+  def sendVideoNote(chat_id: Double, file: ReadableStream, opt: AnonReplyMarkup): js.Any = js.native
   def sendVoice(chat_id: String, file: String): js.Any = js.native
-  def sendVoice(chat_id: String, file: String, opt: AnonCaptionDurationFileNameNotification): js.Any = js.native
+  def sendVoice(chat_id: String, file: String, opt: AnonReplyToMessage): js.Any = js.native
   def sendVoice(chat_id: String, file: js.Any): js.Any = js.native
-  def sendVoice(chat_id: String, file: js.Any, opt: AnonCaptionDurationFileNameNotification): js.Any = js.native
+  def sendVoice(chat_id: String, file: js.Any, opt: AnonReplyToMessage): js.Any = js.native
   def sendVoice(chat_id: String, file: Buffer): js.Any = js.native
-  def sendVoice(chat_id: String, file: Buffer, opt: AnonCaptionDurationFileNameNotification): js.Any = js.native
+  def sendVoice(chat_id: String, file: Buffer, opt: AnonReplyToMessage): js.Any = js.native
   def sendVoice(chat_id: String, file: ReadableStream): js.Any = js.native
-  def sendVoice(chat_id: String, file: ReadableStream, opt: AnonCaptionDurationFileNameNotification): js.Any = js.native
+  def sendVoice(chat_id: String, file: ReadableStream, opt: AnonReplyToMessage): js.Any = js.native
   def sendVoice(chat_id: Double, file: String): js.Any = js.native
-  def sendVoice(chat_id: Double, file: String, opt: AnonCaptionDurationFileNameNotification): js.Any = js.native
+  def sendVoice(chat_id: Double, file: String, opt: AnonReplyToMessage): js.Any = js.native
   def sendVoice(chat_id: Double, file: js.Any): js.Any = js.native
-  def sendVoice(chat_id: Double, file: js.Any, opt: AnonCaptionDurationFileNameNotification): js.Any = js.native
+  def sendVoice(chat_id: Double, file: js.Any, opt: AnonReplyToMessage): js.Any = js.native
   def sendVoice(chat_id: Double, file: Buffer): js.Any = js.native
-  def sendVoice(chat_id: Double, file: Buffer, opt: AnonCaptionDurationFileNameNotification): js.Any = js.native
+  def sendVoice(chat_id: Double, file: Buffer, opt: AnonReplyToMessage): js.Any = js.native
   def sendVoice(chat_id: Double, file: ReadableStream): js.Any = js.native
-  def sendVoice(chat_id: Double, file: ReadableStream, opt: AnonCaptionDurationFileNameNotification): js.Any = js.native
+  def sendVoice(chat_id: Double, file: ReadableStream, opt: AnonReplyToMessage): js.Any = js.native
   def setGameScore(user_id: Double, score: Double): Boolean | Error | js.Any = js.native
   def setGameScore(user_id: Double, score: Double, opt: AnonChatId): Boolean | Error | js.Any = js.native
   def setWebhook(url: String): Boolean = js.native

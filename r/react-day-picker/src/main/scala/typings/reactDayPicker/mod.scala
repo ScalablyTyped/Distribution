@@ -46,7 +46,7 @@ object mod extends js.Object {
     var DayModifiers: typings.reactDayPicker.commonMod.DayModifiers = js.native
     var LocaleUtils: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LocaleUtils */ js.Any = js.native
     var Modifiers: typings.reactDayPicker.commonMod.Modifiers = js.native
-    var ModifiersUtils: AnonDay = js.native
+    var ModifiersUtils: AnonDayMatchesModifier = js.native
     var VERSION: String = js.native
   }
   

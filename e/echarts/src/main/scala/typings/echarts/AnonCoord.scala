@@ -53,11 +53,11 @@ trait AnonCoord extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-scatter.markPoint.data.itemStyle
     */
-  var itemStyle: js.UndefOr[AnonBorderColorBorderTypeBorderWidth] = js.undefined
+  var itemStyle: js.UndefOr[AnonEmphasis] = js.undefined
   /**
     * @see https://echarts.apache.org/en/option.html#series-scatter.markPoint.data.label
     */
-  var label: js.UndefOr[AnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColor] = js.undefined
+  var label: js.UndefOr[AnonFontFamily] = js.undefined
   /**
     * Mark point name.
     *
@@ -224,8 +224,8 @@ object AnonCoord {
   @scala.inline
   def apply(
     coord: js.Array[_] = null,
-    itemStyle: AnonBorderColorBorderTypeBorderWidth = null,
-    label: AnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColor = null,
+    itemStyle: AnonEmphasis = null,
+    label: AnonFontFamily = null,
     name: String = null,
     symbol: String = null,
     symbolKeepAspect: js.UndefOr[Boolean] = js.undefined,

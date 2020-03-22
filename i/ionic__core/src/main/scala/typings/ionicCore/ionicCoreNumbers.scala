@@ -14,6 +14,9 @@ object ionicCoreNumbers {
   sealed trait `1` extends ReorderGroupState
   
   @js.native
+  sealed trait `100` extends js.Object
+  
+  @js.native
   sealed trait `16` extends SlidingState
   
   @js.native
@@ -31,18 +34,20 @@ object ionicCoreNumbers {
   sealed trait `4` extends SlidingState
   
   @js.native
-  sealed trait `400` extends js.Object
-  
-  @js.native
   sealed trait `64` extends SlidingState
   
   @js.native
   sealed trait `8` extends SlidingState
   
+  @js.native
+  sealed trait `99` extends js.Object
+  
   @scala.inline
   def `0`: `0` = 0.asInstanceOf[`0`]
   @scala.inline
   def `1`: `1` = 1.asInstanceOf[`1`]
+  @scala.inline
+  def `100`: `100` = 100.asInstanceOf[`100`]
   @scala.inline
   def `16`: `16` = 16.asInstanceOf[`16`]
   @scala.inline
@@ -54,10 +59,10 @@ object ionicCoreNumbers {
   @scala.inline
   def `4`: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def `400`: `400` = 400.asInstanceOf[`400`]
-  @scala.inline
   def `64`: `64` = 64.asInstanceOf[`64`]
   @scala.inline
   def `8`: `8` = 8.asInstanceOf[`8`]
+  @scala.inline
+  def `99`: `99` = 99.asInstanceOf[`99`]
 }
 

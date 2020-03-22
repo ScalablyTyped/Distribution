@@ -1,6 +1,11 @@
 package typings.otplib
 
-import org.scalablytyped.runtime.TopLevel
+import typings.otplibCore.authenticatorMod.AuthenticatorOptions_
+import typings.otplibCore.hotpMod.HOTPOptions_
+import typings.otplibCore.mod.Authenticator
+import typings.otplibCore.mod.HOTP
+import typings.otplibCore.mod.TOTP
+import typings.otplibCore.totpMod.TOTPOptions_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,44 +13,8 @@ import scala.scalajs.js.annotation._
 @JSImport("otplib", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
-  @js.native
-  object authenticator
-    extends TopLevel[typings.otplib.Authenticator] {
-    @js.native
-    class Authenticator ()
-      extends typings.otplib.Authenticator
-    
-    @js.native
-    class HOTP ()
-      extends typings.otplib.HOTP
-    
-    @js.native
-    class TOTP ()
-      extends typings.otplib.TOTP
-    
-  }
-  
-  @js.native
-  object hotp
-    extends TopLevel[typings.otplib.HOTP] {
-    @js.native
-    class HOTP ()
-      extends typings.otplib.HOTP
-    
-  }
-  
-  @js.native
-  object totp
-    extends TopLevel[typings.otplib.TOTP] {
-    @js.native
-    class HOTP ()
-      extends typings.otplib.HOTP
-    
-    @js.native
-    class TOTP ()
-      extends typings.otplib.TOTP
-    
-  }
-  
+  val authenticator: Authenticator[AuthenticatorOptions_[String]] = js.native
+  val hotp: HOTP[HOTPOptions_[String]] = js.native
+  val totp: TOTP[TOTPOptions_[String]] = js.native
 }
 

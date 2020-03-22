@@ -5,6 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonCode extends js.Object {
+  /**
+    * 结果, 0为操作成功
+    */
   var code: Double
 }
 

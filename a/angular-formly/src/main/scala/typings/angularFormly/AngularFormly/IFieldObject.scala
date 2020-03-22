@@ -9,7 +9,7 @@ import typings.angular.mod.IFormController
 import typings.angular.mod.IPromise
 import typings.angular.mod.IScope
 import typings.angular.mod.ITranscludeFunction
-import typings.angularFormly.AnonAttribute
+import typings.angularFormly.AnonDictkey
 import typings.angularFormly.AnonErrorExistsAndShouldBeVisible
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -138,7 +138,7 @@ trait IFieldObject extends js.Object {
   		 *
   		 * see http://docs.angular-formly.com/docs/field-configuration-object#ngmodelattrs-object
   		 */
-  var ngModelAttrs: js.UndefOr[AnonAttribute] = js.undefined
+  var ngModelAttrs: js.UndefOr[AnonDictkey] = js.undefined
   /**
   		 * This allows you to place attributes with string values on the ng-model element.
   		 * Easy to use alternative to ngModelAttrs option.
@@ -290,7 +290,7 @@ object IFieldObject {
     link: (IScope, JQLite, IAttributes, /* controller */ js.UndefOr[IController], /* transclude */ js.UndefOr[ITranscludeFunction]) => Unit = null,
     modelOptions: IModelOptions = null,
     name: String = null,
-    ngModelAttrs: AnonAttribute = null,
+    ngModelAttrs: AnonDictkey = null,
     ngModelElAttrs: StringDictionary[String] = null,
     noFormControl: js.UndefOr[Boolean] = js.undefined,
     optionsTypes: String | js.Array[String] = null,

@@ -4,17 +4,21 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait AnonContextFn[Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ js.Any, _] */] extends js.Object {
+trait AnonContextFn[Ctx /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+{[ P in Name ]: (this : Ctx, args : ...any): void}
+  */ typings.reduxSagaCore.reduxSagaCoreStrings.AnonContextFn with js.Any */, Name /* <: String */] extends js.Object {
   var context: Ctx
-  var fn: Fn
+  var fn: Name
 }
 
 object AnonContextFn {
   @scala.inline
-  def apply[Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ js.Any, _] */](context: Ctx, fn: Fn): AnonContextFn[Ctx, Fn] = {
+  def apply[Ctx /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in Name ]: (this : Ctx, args : ...any): void}
+    */ typings.reduxSagaCore.reduxSagaCoreStrings.AnonContextFn with js.Any */, Name /* <: String */](context: Ctx, fn: Name): AnonContextFn[Ctx, Name] = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
   
-    __obj.asInstanceOf[AnonContextFn[Ctx, Fn]]
+    __obj.asInstanceOf[AnonContextFn[Ctx, Name]]
   }
 }
 

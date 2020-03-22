@@ -1,5 +1,6 @@
 package typings.storybookAddonA11y
 
+import typings.react.mod.NamedExoticComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,6 +12,7 @@ trait storybookAddonA11yProps {
   @scala.inline
   def ElementsProps: typings.storybookAddonA11y.elementsMod.ElementsProps.type = typings.storybookAddonA11y.elementsMod.ElementsProps
   type ElementsProps = typings.storybookAddonA11y.elementsMod.ElementsProps
+  type HighlightToggleProps[P] = NamedExoticComponent[P]
   @scala.inline
   def InfoProps: typings.storybookAddonA11y.infoMod.InfoProps.type = typings.storybookAddonA11y.infoMod.InfoProps
   type InfoProps = typings.storybookAddonA11y.infoMod.InfoProps

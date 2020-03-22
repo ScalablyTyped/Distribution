@@ -5,15 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonMaterialIndex extends js.Object {
-  var materialIndex: Double
+  var count: Double
+  var materialIndex: js.UndefOr[Double] = js.undefined
   var start: Double
 }
 
 object AnonMaterialIndex {
   @scala.inline
-  def apply(materialIndex: Double, start: Double): AnonMaterialIndex = {
-    val __obj = js.Dynamic.literal(materialIndex = materialIndex.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-  
+  def apply(count: Double, start: Double, materialIndex: Int | Double = null): AnonMaterialIndex = {
+    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
+    if (materialIndex != null) __obj.updateDynamic("materialIndex")(materialIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnonMaterialIndex]
   }
 }

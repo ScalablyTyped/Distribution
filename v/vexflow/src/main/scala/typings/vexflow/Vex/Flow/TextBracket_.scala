@@ -1,7 +1,7 @@
 package typings.vexflow.Vex.Flow
 
-import typings.vexflow.AnonFamilySize
 import typings.vexflow.AnonPosition
+import typings.vexflow.AnonSize
 import typings.vexflow.Vex.Flow.TextBracket.Positions
 import typings.vexflow.Vex.IRenderContext
 import scala.scalajs.js
@@ -20,7 +20,7 @@ class TextBracket_ protected () extends js.Object {
   def setContext(context: IRenderContext): TextBracket = js.native
   def setDashed(dashed: Boolean): TextBracket = js.native
   def setDashed(dashed: Boolean, dash: js.Array[Double]): TextBracket = js.native
-  def setFont(font: AnonFamilySize): TextBracket = js.native
+  def setFont(font: AnonSize): TextBracket = js.native
   def setLine(line: Double): TextBracket = js.native
 }
 

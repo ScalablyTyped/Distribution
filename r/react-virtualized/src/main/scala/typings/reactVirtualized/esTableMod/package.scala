@@ -19,7 +19,6 @@ package object esTableMod {
     /* props */ typings.reactVirtualized.esTableMod.TableHeaderRowProps, 
     typings.react.mod.ReactNode
   ]
-  type TableProps = typings.reactVirtualized.esGridMod.GridCoreProps with typings.reactVirtualized.AnonArialabelAutoHeightChildren
   type TableRowRenderer = js.Function1[
     /* props */ typings.reactVirtualized.esTableMod.TableRowProps, 
     typings.react.mod.ReactNode

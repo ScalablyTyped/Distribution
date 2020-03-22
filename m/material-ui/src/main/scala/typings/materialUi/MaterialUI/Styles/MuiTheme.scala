@@ -1,47 +1,47 @@
 package typings.materialUi.MaterialUI.Styles
 
 import typings.materialUi.AnonAccentColor
-import typings.materialUi.AnonAccentColorClockCircleColor
 import typings.materialUi.AnonActionColor
 import typings.materialUi.AnonBackgroundColor
-import typings.materialUi.AnonBackgroundColorBorderColor
-import typings.materialUi.AnonBackgroundColorBorderColorDisabledTextColor
 import typings.materialUi.AnonBackgroundColorColor
-import typings.materialUi.AnonBackgroundColorColorHeight
-import typings.materialUi.AnonBackgroundColorColorZDepthShadows
-import typings.materialUi.AnonBackgroundColorConnectorLineColor
-import typings.materialUi.AnonBackgroundColorContainerBackgroundColor
-import typings.materialUi.AnonBackgroundColorDeleteIconColor
-import typings.materialUi.AnonBackgroundColorSelectedTextColor
 import typings.materialUi.AnonBackgroundColorString
 import typings.materialUi.AnonBodyColor
 import typings.materialUi.AnonBorderColor
-import typings.materialUi.AnonBorderColorHeight
 import typings.materialUi.AnonBorderColorString
 import typings.materialUi.AnonBorderColorTextColor
 import typings.materialUi.AnonBoxColor
 import typings.materialUi.AnonButtonFilterColor
 import typings.materialUi.AnonButtonSize
 import typings.materialUi.AnonCalendarTextColor
+import typings.materialUi.AnonCheckedColor
+import typings.materialUi.AnonClockCircleColor
 import typings.materialUi.AnonColor
-import typings.materialUi.AnonColorDisabledColor
 import typings.materialUi.AnonColorFontWeight
-import typings.materialUi.AnonColorFontWeightNumber
-import typings.materialUi.AnonColorOverlayContentBackground
-import typings.materialUi.AnonColorRippleBackgroundColor
 import typings.materialUi.AnonColorString
-import typings.materialUi.AnonColorWidth
+import typings.materialUi.AnonConnectorLineColor
+import typings.materialUi.AnonContainerBackgroundColor
 import typings.materialUi.AnonDataHeight
+import typings.materialUi.AnonDeleteIconColor
+import typings.materialUi.AnonDisabledColor
+import typings.materialUi.AnonDisabledTextColor
 import typings.materialUi.AnonFontWeight
 import typings.materialUi.AnonHandleColorZero
 import typings.materialUi.AnonHeight
 import typings.materialUi.AnonHeightSpacing
-import typings.materialUi.AnonHeightSpacingNumber
+import typings.materialUi.AnonHoverColor
+import typings.materialUi.AnonIconColor
 import typings.materialUi.AnonLabelColor
 import typings.materialUi.AnonLeftIconColor
 import typings.materialUi.AnonLoadingStrokeColor
+import typings.materialUi.AnonOverlayContentBackground
+import typings.materialUi.AnonRippleBackgroundColor
+import typings.materialUi.AnonSelectedTextColor
+import typings.materialUi.AnonSpacing
+import typings.materialUi.AnonSubtitleColor
 import typings.materialUi.AnonTapHighlightColor
 import typings.materialUi.AnonTextColor
+import typings.materialUi.AnonWidth
+import typings.materialUi.AnonZDepthShadows
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -49,17 +49,17 @@ import scala.scalajs.js.annotation._
 trait MuiTheme extends js.Object {
   var appBar: js.UndefOr[AnonColor] = js.undefined
   var avatar: js.UndefOr[AnonBackgroundColor] = js.undefined
-  var badge: js.UndefOr[AnonColorFontWeight] = js.undefined
+  var badge: js.UndefOr[AnonFontWeight] = js.undefined
   var baseTheme: js.UndefOr[RawTheme] = js.undefined
   var button: js.UndefOr[AnonHeight] = js.undefined
-  var card: js.UndefOr[AnonFontWeight] = js.undefined
-  var cardMedia: js.UndefOr[AnonColorOverlayContentBackground] = js.undefined
+  var card: js.UndefOr[AnonSubtitleColor] = js.undefined
+  var cardMedia: js.UndefOr[AnonOverlayContentBackground] = js.undefined
   var cardText: js.UndefOr[AnonTextColor] = js.undefined
   var checkbox: js.UndefOr[AnonBoxColor] = js.undefined
-  var chip: js.UndefOr[AnonBackgroundColorDeleteIconColor] = js.undefined
+  var chip: js.UndefOr[AnonDeleteIconColor] = js.undefined
   var datePicker: js.UndefOr[AnonCalendarTextColor] = js.undefined
   var dialog: js.UndefOr[AnonBodyColor] = js.undefined
-  var drawer: js.UndefOr[AnonColorWidth] = js.undefined
+  var drawer: js.UndefOr[AnonWidth] = js.undefined
   var dropDownMenu: js.UndefOr[AnonAccentColor] = js.undefined
   var enhancedButton: js.UndefOr[AnonTapHighlightColor] = js.undefined
   var flatButton: js.UndefOr[AnonButtonFilterColor] = js.undefined
@@ -70,35 +70,35 @@ trait MuiTheme extends js.Object {
   var inkBar: js.UndefOr[AnonBackgroundColorString] = js.undefined
   var isRtl: js.UndefOr[Boolean] = js.undefined
   var listItem: js.UndefOr[AnonLeftIconColor] = js.undefined
-  var menu: js.UndefOr[AnonBackgroundColorContainerBackgroundColor] = js.undefined
+  var menu: js.UndefOr[AnonContainerBackgroundColor] = js.undefined
   var menuItem: js.UndefOr[AnonDataHeight] = js.undefined
   var menuSubheader: js.UndefOr[AnonBorderColor] = js.undefined
   var overlay: js.UndefOr[AnonBackgroundColorString] = js.undefined
   var palette: js.UndefOr[ThemePalette] = js.undefined
-  var paper: js.UndefOr[AnonBackgroundColorColorZDepthShadows] = js.undefined
-  var radioButton: js.UndefOr[AnonBackgroundColorBorderColor] = js.undefined
-  var raisedButton: js.UndefOr[AnonColorDisabledColor] = js.undefined
+  var paper: js.UndefOr[AnonZDepthShadows] = js.undefined
+  var radioButton: js.UndefOr[AnonCheckedColor] = js.undefined
+  var raisedButton: js.UndefOr[AnonDisabledColor] = js.undefined
   var rawTheme: js.UndefOr[RawTheme] = js.undefined
   var refreshIndicator: js.UndefOr[AnonLoadingStrokeColor] = js.undefined
   var ripple: js.UndefOr[AnonColorString] = js.undefined
   var slider: js.UndefOr[AnonHandleColorZero] = js.undefined
   var snackbar: js.UndefOr[AnonActionColor] = js.undefined
   var spacing: js.UndefOr[Spacing] = js.undefined
-  var stepper: js.UndefOr[AnonBackgroundColorConnectorLineColor] = js.undefined
-  var subheader: js.UndefOr[AnonColorFontWeightNumber] = js.undefined
+  var stepper: js.UndefOr[AnonConnectorLineColor] = js.undefined
+  var subheader: js.UndefOr[AnonColorFontWeight] = js.undefined
   var svgIcon: js.UndefOr[AnonColorString] = js.undefined
   var table: js.UndefOr[AnonBackgroundColorString] = js.undefined
   var tableFooter: js.UndefOr[AnonBorderColorTextColor] = js.undefined
   var tableHeader: js.UndefOr[AnonBorderColorString] = js.undefined
-  var tableHeaderColumn: js.UndefOr[AnonHeightSpacing] = js.undefined
-  var tableRow: js.UndefOr[AnonBorderColorHeight] = js.undefined
-  var tableRowColumn: js.UndefOr[AnonHeightSpacingNumber] = js.undefined
-  var tabs: js.UndefOr[AnonBackgroundColorSelectedTextColor] = js.undefined
-  var textField: js.UndefOr[AnonBackgroundColorBorderColorDisabledTextColor] = js.undefined
-  var timePicker: js.UndefOr[AnonAccentColorClockCircleColor] = js.undefined
+  var tableHeaderColumn: js.UndefOr[AnonSpacing] = js.undefined
+  var tableRow: js.UndefOr[AnonHoverColor] = js.undefined
+  var tableRowColumn: js.UndefOr[AnonHeightSpacing] = js.undefined
+  var tabs: js.UndefOr[AnonSelectedTextColor] = js.undefined
+  var textField: js.UndefOr[AnonDisabledTextColor] = js.undefined
+  var timePicker: js.UndefOr[AnonClockCircleColor] = js.undefined
   var toggle: js.UndefOr[AnonLabelColor] = js.undefined
-  var toolbar: js.UndefOr[AnonBackgroundColorColorHeight] = js.undefined
-  var tooltip: js.UndefOr[AnonColorRippleBackgroundColor] = js.undefined
+  var toolbar: js.UndefOr[AnonIconColor] = js.undefined
+  var tooltip: js.UndefOr[AnonRippleBackgroundColor] = js.undefined
   var userAgent: js.UndefOr[String | Boolean] = js.undefined
   var zIndex: js.UndefOr[typings.materialUi.MaterialUI.Styles.zIndex] = js.undefined
 }
@@ -108,17 +108,17 @@ object MuiTheme {
   def apply(
     appBar: AnonColor = null,
     avatar: AnonBackgroundColor = null,
-    badge: AnonColorFontWeight = null,
+    badge: AnonFontWeight = null,
     baseTheme: RawTheme = null,
     button: AnonHeight = null,
-    card: AnonFontWeight = null,
-    cardMedia: AnonColorOverlayContentBackground = null,
+    card: AnonSubtitleColor = null,
+    cardMedia: AnonOverlayContentBackground = null,
     cardText: AnonTextColor = null,
     checkbox: AnonBoxColor = null,
-    chip: AnonBackgroundColorDeleteIconColor = null,
+    chip: AnonDeleteIconColor = null,
     datePicker: AnonCalendarTextColor = null,
     dialog: AnonBodyColor = null,
-    drawer: AnonColorWidth = null,
+    drawer: AnonWidth = null,
     dropDownMenu: AnonAccentColor = null,
     enhancedButton: AnonTapHighlightColor = null,
     flatButton: AnonButtonFilterColor = null,
@@ -129,35 +129,35 @@ object MuiTheme {
     inkBar: AnonBackgroundColorString = null,
     isRtl: js.UndefOr[Boolean] = js.undefined,
     listItem: AnonLeftIconColor = null,
-    menu: AnonBackgroundColorContainerBackgroundColor = null,
+    menu: AnonContainerBackgroundColor = null,
     menuItem: AnonDataHeight = null,
     menuSubheader: AnonBorderColor = null,
     overlay: AnonBackgroundColorString = null,
     palette: ThemePalette = null,
-    paper: AnonBackgroundColorColorZDepthShadows = null,
-    radioButton: AnonBackgroundColorBorderColor = null,
-    raisedButton: AnonColorDisabledColor = null,
+    paper: AnonZDepthShadows = null,
+    radioButton: AnonCheckedColor = null,
+    raisedButton: AnonDisabledColor = null,
     rawTheme: RawTheme = null,
     refreshIndicator: AnonLoadingStrokeColor = null,
     ripple: AnonColorString = null,
     slider: AnonHandleColorZero = null,
     snackbar: AnonActionColor = null,
     spacing: Spacing = null,
-    stepper: AnonBackgroundColorConnectorLineColor = null,
-    subheader: AnonColorFontWeightNumber = null,
+    stepper: AnonConnectorLineColor = null,
+    subheader: AnonColorFontWeight = null,
     svgIcon: AnonColorString = null,
     table: AnonBackgroundColorString = null,
     tableFooter: AnonBorderColorTextColor = null,
     tableHeader: AnonBorderColorString = null,
-    tableHeaderColumn: AnonHeightSpacing = null,
-    tableRow: AnonBorderColorHeight = null,
-    tableRowColumn: AnonHeightSpacingNumber = null,
-    tabs: AnonBackgroundColorSelectedTextColor = null,
-    textField: AnonBackgroundColorBorderColorDisabledTextColor = null,
-    timePicker: AnonAccentColorClockCircleColor = null,
+    tableHeaderColumn: AnonSpacing = null,
+    tableRow: AnonHoverColor = null,
+    tableRowColumn: AnonHeightSpacing = null,
+    tabs: AnonSelectedTextColor = null,
+    textField: AnonDisabledTextColor = null,
+    timePicker: AnonClockCircleColor = null,
     toggle: AnonLabelColor = null,
-    toolbar: AnonBackgroundColorColorHeight = null,
-    tooltip: AnonColorRippleBackgroundColor = null,
+    toolbar: AnonIconColor = null,
+    tooltip: AnonRippleBackgroundColor = null,
     userAgent: String | Boolean = null,
     zIndex: zIndex = null
   ): MuiTheme = {

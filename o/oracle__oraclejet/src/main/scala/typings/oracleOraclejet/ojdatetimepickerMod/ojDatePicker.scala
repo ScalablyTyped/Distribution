@@ -1,7 +1,7 @@
 package typings.oracleOraclejet.ojdatetimepickerMod
 
 import typings.oracleOraclejet.AnonAction
-import typings.oracleOraclejet.AnonActionElement
+import typings.oracleOraclejet.AnonElement
 import typings.oracleOraclejet.ojdatetimepickerMod.ojDatePicker.ojAnimateEnd
 import typings.oracleOraclejet.ojdatetimepickerMod.ojDatePicker.ojAnimateStart
 import typings.oracleOraclejet.oracleOraclejetStrings.disabled
@@ -28,6 +28,6 @@ trait ojDatePicker extends ojInputDate[ojDatePickerSettableProperties] {
 @js.native
 object ojDatePicker extends js.Object {
   type ojAnimateEnd = CustomEvent[AnonAction]
-  type ojAnimateStart = CustomEvent[AnonActionElement]
+  type ojAnimateStart = CustomEvent[AnonElement]
 }
 

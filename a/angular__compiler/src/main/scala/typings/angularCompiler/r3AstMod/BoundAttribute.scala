@@ -4,6 +4,7 @@ import typings.angularCompiler.astMod.AST
 import typings.angularCompiler.astMod.BindingType
 import typings.angularCompiler.astMod.BoundElementProperty
 import typings.angularCompiler.coreMod.SecurityContext
+import typings.angularCompiler.i18nAstMod.I18nMeta
 import typings.angularCompiler.i18nAstMod.Message
 import typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
 import scala.scalajs.js
@@ -145,6 +146,6 @@ class BoundAttribute protected () extends Node {
 @js.native
 object BoundAttribute extends js.Object {
   def fromBoundElementProperty(prop: BoundElementProperty): BoundAttribute = js.native
-  def fromBoundElementProperty(prop: BoundElementProperty, i18n: typings.angularCompiler.i18nAstMod.AST): BoundAttribute = js.native
+  def fromBoundElementProperty(prop: BoundElementProperty, i18n: I18nMeta): BoundAttribute = js.native
 }
 

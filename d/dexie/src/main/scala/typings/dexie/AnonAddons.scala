@@ -7,7 +7,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonAddons extends js.Object {
-  var IDBKeyRange: js.UndefOr[AnonIDBKeyRange] = js.undefined
+  var IDBKeyRange: js.UndefOr[AnonInstantiable] = js.undefined
   var addons: js.UndefOr[js.Array[js.Function1[/* db */ Dexie, Unit]]] = js.undefined
   var autoOpen: js.UndefOr[Boolean] = js.undefined
   var indexedDB: js.UndefOr[IDBFactory] = js.undefined
@@ -16,7 +16,7 @@ trait AnonAddons extends js.Object {
 object AnonAddons {
   @scala.inline
   def apply(
-    IDBKeyRange: AnonIDBKeyRange = null,
+    IDBKeyRange: AnonInstantiable = null,
     addons: js.Array[js.Function1[/* db */ Dexie, Unit]] = null,
     autoOpen: js.UndefOr[Boolean] = js.undefined,
     indexedDB: IDBFactory = null

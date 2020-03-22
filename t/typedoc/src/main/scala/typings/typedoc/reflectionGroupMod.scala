@@ -25,7 +25,6 @@ object reflectionGroupMod extends js.Object {
     var kind: ReflectionKind = js.native
     var someChildrenAreExported: js.UndefOr[Boolean] = js.native
     var title: String = js.native
-    def toObject(): js.Any = js.native
   }
   
 }

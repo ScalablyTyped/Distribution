@@ -7,12 +7,15 @@ import typings.cypress.JQuery_._Duration
 import typings.cypress.JQuery_._Falsy
 import typings.cypress.Mocha_.Interface
 import typings.cypress.Mocha_.Reporter
+import typings.cypress.cypressMod.Cypress.BrowserFamily
 import typings.cypress.cypressMod.Cypress.Encodings
 import typings.cypress.cypressMod.Cypress.HistoryDirection
 import typings.cypress.cypressMod.Cypress.PositionType
 import typings.cypress.cypressMod.Cypress.PrevSubject
 import typings.cypress.cypressMod.Cypress.ViewportOrientation
 import typings.cypress.cypressMod.Cypress.ViewportPreset
+import typings.cypress.cypressMod.Cypress._BrowserChannel
+import typings.cypress.cypressMod.Cypress._BrowserName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,15 +28,6 @@ object cypressStrings {
   sealed trait Base extends Reporter
   
   @js.native
-  sealed trait Canary extends js.Object
-  
-  @js.native
-  sealed trait Chrome extends js.Object
-  
-  @js.native
-  sealed trait Chromium extends js.Object
-  
-  @js.native
   sealed trait ConformsPredicateObject extends js.Object
   
   @js.native
@@ -41,12 +35,6 @@ object cypressStrings {
   
   @js.native
   sealed trait Dot extends Reporter
-  
-  @js.native
-  sealed trait Electron extends js.Object
-  
-  @js.native
-  sealed trait FireFox extends js.Object
   
   @js.native
   sealed trait GET extends js.Object
@@ -136,9 +124,6 @@ object cypressStrings {
   sealed trait XUnit extends Reporter
   
   @js.native
-  sealed trait _TypeEventHandlers extends js.Object
-  
-  @js.native
   sealed trait _empty extends _Falsy
   
   @js.native
@@ -160,6 +145,9 @@ object cypressStrings {
   
   @js.native
   sealed trait afterAll extends js.Object
+  
+  @js.native
+  sealed trait afterColonscreenshot extends js.Object
   
   @js.native
   sealed trait afterEach extends js.Object
@@ -366,7 +354,13 @@ object cypressStrings {
   sealed trait beforeAll extends js.Object
   
   @js.native
+  sealed trait beforeColonbrowserColonlaunch extends js.Object
+  
+  @js.native
   sealed trait beforeEach extends js.Object
+  
+  @js.native
+  sealed trait beta extends _BrowserChannel
   
   @js.native
   sealed trait binary extends Encodings
@@ -402,7 +396,7 @@ object cypressStrings {
   sealed trait button extends js.Object
   
   @js.native
-  sealed trait canary_ extends js.Object
+  sealed trait canary extends _BrowserChannel
   
   @js.native
   sealed trait cancel extends js.Object
@@ -426,13 +420,15 @@ object cypressStrings {
   sealed trait change extends js.Object
   
   @js.native
+  sealed trait chrome extends _BrowserName
+  
+  @js.native
   sealed trait chromeWebSecurity extends js.Object
   
   @js.native
-  sealed trait chrome_ extends js.Object
-  
-  @js.native
-  sealed trait chromium_ extends js.Object
+  sealed trait chromium
+    extends BrowserFamily
+       with _BrowserName
   
   @js.native
   sealed trait cite extends js.Object
@@ -528,6 +524,9 @@ object cypressStrings {
   sealed trait details extends js.Object
   
   @js.native
+  sealed trait dev extends _BrowserChannel
+  
+  @js.native
   sealed trait dfn extends js.Object
   
   @js.native
@@ -582,7 +581,10 @@ object cypressStrings {
   sealed trait durationchange extends js.Object
   
   @js.native
-  sealed trait electron_ extends js.Object
+  sealed trait edge extends _BrowserName
+  
+  @js.native
+  sealed trait electron extends _BrowserName
   
   @js.native
   sealed trait element extends PrevSubject
@@ -647,10 +649,21 @@ object cypressStrings {
   sealed trait figure extends js.Object
   
   @js.native
+  sealed trait fileColonpreprocessor extends js.Object
+  
+  @js.native
   sealed trait fileServerFolder extends js.Object
   
   @js.native
-  sealed trait firefox_ extends js.Object
+  sealed trait firefox
+    extends BrowserFamily
+       with _BrowserName
+  
+  @js.native
+  sealed trait firefoxColonforceColongc extends js.Object
+  
+  @js.native
+  sealed trait firefoxGcInterval extends js.Object
   
   @js.native
   sealed trait fixturesFolder extends js.Object
@@ -971,9 +984,6 @@ object cypressStrings {
   sealed trait loadedmetadata extends js.Object
   
   @js.native
-  sealed trait loadend extends js.Object
-  
-  @js.native
   sealed trait loadstart extends js.Object
   
   @js.native
@@ -1056,6 +1066,9 @@ object cypressStrings {
   
   @js.native
   sealed trait nav extends js.Object
+  
+  @js.native
+  sealed trait nightly extends _BrowserChannel
   
   @js.native
   sealed trait nocontent
@@ -1619,6 +1632,9 @@ object cypressStrings {
   sealed trait spec_ extends Reporter
   
   @js.native
+  sealed trait stable extends _BrowserChannel
+  
+  @js.native
   sealed trait stalled extends js.Object
   
   @js.native
@@ -1678,6 +1694,9 @@ object cypressStrings {
   sealed trait tap_ extends Reporter
   
   @js.native
+  sealed trait task extends js.Object
+  
+  @js.native
   sealed trait tbody extends js.Object
   
   @js.native
@@ -1700,6 +1719,9 @@ object cypressStrings {
   
   @js.native
   sealed trait testColonbeforeColonrun extends js.Object
+  
+  @js.native
+  sealed trait testColonbeforeColonrunColonasync extends js.Object
   
   @js.native
   sealed trait text extends js.Object
@@ -1894,21 +1916,11 @@ object cypressStrings {
   @scala.inline
   def Base: Base = "Base".asInstanceOf[Base]
   @scala.inline
-  def Canary: Canary = "Canary".asInstanceOf[Canary]
-  @scala.inline
-  def Chrome: Chrome = "Chrome".asInstanceOf[Chrome]
-  @scala.inline
-  def Chromium: Chromium = "Chromium".asInstanceOf[Chromium]
-  @scala.inline
   def ConformsPredicateObject: ConformsPredicateObject = "ConformsPredicateObject".asInstanceOf[ConformsPredicateObject]
   @scala.inline
   def Date: Date = "Date".asInstanceOf[Date]
   @scala.inline
   def Dot: Dot = "Dot".asInstanceOf[Dot]
-  @scala.inline
-  def Electron: Electron = "Electron".asInstanceOf[Electron]
-  @scala.inline
-  def FireFox: FireFox = "FireFox".asInstanceOf[FireFox]
   @scala.inline
   def GET: GET = "GET".asInstanceOf[GET]
   @scala.inline
@@ -1968,8 +1980,6 @@ object cypressStrings {
   @scala.inline
   def XUnit: XUnit = "XUnit".asInstanceOf[XUnit]
   @scala.inline
-  def _TypeEventHandlers: _TypeEventHandlers = "_TypeEventHandlers".asInstanceOf[_TypeEventHandlers]
-  @scala.inline
   def _empty: _empty = "".asInstanceOf[_empty]
   @scala.inline
   def a: a = "a".asInstanceOf[a]
@@ -1983,6 +1993,8 @@ object cypressStrings {
   def after: after = "after".asInstanceOf[after]
   @scala.inline
   def afterAll: afterAll = "afterAll".asInstanceOf[afterAll]
+  @scala.inline
+  def afterColonscreenshot: afterColonscreenshot = "after:screenshot".asInstanceOf[afterColonscreenshot]
   @scala.inline
   def afterEach: afterEach = "afterEach".asInstanceOf[afterEach]
   @scala.inline
@@ -2120,7 +2132,11 @@ object cypressStrings {
   @scala.inline
   def beforeAll: beforeAll = "beforeAll".asInstanceOf[beforeAll]
   @scala.inline
+  def beforeColonbrowserColonlaunch: beforeColonbrowserColonlaunch = "before:browser:launch".asInstanceOf[beforeColonbrowserColonlaunch]
+  @scala.inline
   def beforeEach: beforeEach = "beforeEach".asInstanceOf[beforeEach]
+  @scala.inline
+  def beta: beta = "beta".asInstanceOf[beta]
   @scala.inline
   def binary: binary = "binary".asInstanceOf[binary]
   @scala.inline
@@ -2144,7 +2160,7 @@ object cypressStrings {
   @scala.inline
   def button: button = "button".asInstanceOf[button]
   @scala.inline
-  def canary_ : canary_ = "canary".asInstanceOf[canary_]
+  def canary: canary = "canary".asInstanceOf[canary]
   @scala.inline
   def cancel: cancel = "cancel".asInstanceOf[cancel]
   @scala.inline
@@ -2160,11 +2176,11 @@ object cypressStrings {
   @scala.inline
   def change: change = "change".asInstanceOf[change]
   @scala.inline
+  def chrome: chrome = "chrome".asInstanceOf[chrome]
+  @scala.inline
   def chromeWebSecurity: chromeWebSecurity = "chromeWebSecurity".asInstanceOf[chromeWebSecurity]
   @scala.inline
-  def chrome_ : chrome_ = "chrome".asInstanceOf[chrome_]
-  @scala.inline
-  def chromium_ : chromium_ = "chromium".asInstanceOf[chromium_]
+  def chromium: chromium = "chromium".asInstanceOf[chromium]
   @scala.inline
   def cite: cite = "cite".asInstanceOf[cite]
   @scala.inline
@@ -2228,6 +2244,8 @@ object cypressStrings {
   @scala.inline
   def details: details = "details".asInstanceOf[details]
   @scala.inline
+  def dev: dev = "dev".asInstanceOf[dev]
+  @scala.inline
   def dfn: dfn = "dfn".asInstanceOf[dfn]
   @scala.inline
   def dialog: dialog = "dialog".asInstanceOf[dialog]
@@ -2264,7 +2282,9 @@ object cypressStrings {
   @scala.inline
   def durationchange: durationchange = "durationchange".asInstanceOf[durationchange]
   @scala.inline
-  def electron_ : electron_ = "electron".asInstanceOf[electron_]
+  def edge: edge = "edge".asInstanceOf[edge]
+  @scala.inline
+  def electron: electron = "electron".asInstanceOf[electron]
   @scala.inline
   def element: element = "element".asInstanceOf[element]
   @scala.inline
@@ -2306,9 +2326,15 @@ object cypressStrings {
   @scala.inline
   def figure: figure = "figure".asInstanceOf[figure]
   @scala.inline
+  def fileColonpreprocessor: fileColonpreprocessor = "file:preprocessor".asInstanceOf[fileColonpreprocessor]
+  @scala.inline
   def fileServerFolder: fileServerFolder = "fileServerFolder".asInstanceOf[fileServerFolder]
   @scala.inline
-  def firefox_ : firefox_ = "firefox".asInstanceOf[firefox_]
+  def firefox: firefox = "firefox".asInstanceOf[firefox]
+  @scala.inline
+  def firefoxColonforceColongc: firefoxColonforceColongc = "firefox:force:gc".asInstanceOf[firefoxColonforceColongc]
+  @scala.inline
+  def firefoxGcInterval: firefoxGcInterval = "firefoxGcInterval".asInstanceOf[firefoxGcInterval]
   @scala.inline
   def fixturesFolder: fixturesFolder = "fixturesFolder".asInstanceOf[fixturesFolder]
   @scala.inline
@@ -2522,8 +2548,6 @@ object cypressStrings {
   @scala.inline
   def loadedmetadata: loadedmetadata = "loadedmetadata".asInstanceOf[loadedmetadata]
   @scala.inline
-  def loadend: loadend = "loadend".asInstanceOf[loadend]
-  @scala.inline
   def loadstart: loadstart = "loadstart".asInstanceOf[loadstart]
   @scala.inline
   def logColonadded: logColonadded = "log:added".asInstanceOf[logColonadded]
@@ -2579,6 +2603,8 @@ object cypressStrings {
   def name: name = "name".asInstanceOf[name]
   @scala.inline
   def nav: nav = "nav".asInstanceOf[nav]
+  @scala.inline
+  def nightly: nightly = "nightly".asInstanceOf[nightly]
   @scala.inline
   def nocontent: nocontent = "nocontent".asInstanceOf[nocontent]
   @scala.inline
@@ -2950,6 +2976,8 @@ object cypressStrings {
   @scala.inline
   def spec_ : spec_ = "spec".asInstanceOf[spec_]
   @scala.inline
+  def stable: stable = "stable".asInstanceOf[stable]
+  @scala.inline
   def stalled: stalled = "stalled".asInstanceOf[stalled]
   @scala.inline
   def start: start = "start".asInstanceOf[start]
@@ -2988,6 +3016,8 @@ object cypressStrings {
   @scala.inline
   def tap_ : tap_ = "tap".asInstanceOf[tap_]
   @scala.inline
+  def task: task = "task".asInstanceOf[task]
+  @scala.inline
   def tbody: tbody = "tbody".asInstanceOf[tbody]
   @scala.inline
   def td: td = "td".asInstanceOf[td]
@@ -3003,6 +3033,8 @@ object cypressStrings {
   def testColonafterColonrun: testColonafterColonrun = "test:after:run".asInstanceOf[testColonafterColonrun]
   @scala.inline
   def testColonbeforeColonrun: testColonbeforeColonrun = "test:before:run".asInstanceOf[testColonbeforeColonrun]
+  @scala.inline
+  def testColonbeforeColonrunColonasync: testColonbeforeColonrunColonasync = "test:before:run:async".asInstanceOf[testColonbeforeColonrunColonasync]
   @scala.inline
   def text: text = "text".asInstanceOf[text]
   @scala.inline

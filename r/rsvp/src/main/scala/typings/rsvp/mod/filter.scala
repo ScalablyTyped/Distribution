@@ -1,6 +1,6 @@
 package typings.rsvp.mod
 
-import typings.rsvp.Anon6
+import typings.rsvp.Anon3
 import typings.rsvp.mod.RSVP.Arg
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -47,12 +47,12 @@ object filter extends js.Object {
   def apply[T1, T2, T3, T4, T5, T6](
     entries: js.Tuple6[Arg[T1], Arg[T2], Arg[T3], Arg[T4], Arg[T5], Arg[T6]],
     filterFn: js.Function1[/* item */ T1 | T2 | T3 | T4 | T5 | T6, Boolean]
-  ): typings.rsvp.mod.RSVP.Promise[(js.Array[T1 | T2 | T3 | T4 | T5 | T6]) with Anon6] = js.native
+  ): typings.rsvp.mod.RSVP.Promise[(js.Array[T1 | T2 | T3 | T4 | T5 | T6]) with Anon3] = js.native
   def apply[T1, T2, T3, T4, T5, T6](
     entries: js.Tuple6[Arg[T1], Arg[T2], Arg[T3], Arg[T4], Arg[T5], Arg[T6]],
     filterFn: js.Function1[/* item */ T1 | T2 | T3 | T4 | T5 | T6, Boolean],
     label: String
-  ): typings.rsvp.mod.RSVP.Promise[(js.Array[T1 | T2 | T3 | T4 | T5 | T6]) with Anon6] = js.native
+  ): typings.rsvp.mod.RSVP.Promise[(js.Array[T1 | T2 | T3 | T4 | T5 | T6]) with Anon3] = js.native
   def apply[T1, T2, T3, T4, T5, T6, T7](
     entries: js.Tuple7[Arg[T1], Arg[T2], Arg[T3], Arg[T4], Arg[T5], Arg[T6], Arg[T7]],
     filterFn: js.Function1[/* item */ T1 | T2 | T3 | T4 | T5 | T6 | T7, Boolean]

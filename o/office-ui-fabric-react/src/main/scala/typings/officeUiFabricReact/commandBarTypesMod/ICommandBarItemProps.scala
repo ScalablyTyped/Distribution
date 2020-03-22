@@ -1,5 +1,6 @@
 package typings.officeUiFabricReact.commandBarTypesMod
 
+import typings.officeUiFabricReact.PartialIContextualMenuIte
 import typings.officeUiFabricReact.buttonTypesMod.IButtonStyles
 import typings.officeUiFabricReact.contextualMenuClassNamesMod.IMenuItemClassNames
 import typings.officeUiFabricReact.contextualMenuItemTypesMod.IContextualMenuItemProps
@@ -19,7 +20,6 @@ import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
 import typings.react.mod._Global_.JSX.Element
 import typings.std.HTMLElement
-import typings.std.Partial
 import typings.uifabricStyling.ithemeMod.ITheme
 import typings.uifabricUtilities.createRefMod.IRefObject
 import typings.uifabricUtilities.icomponentasMod.IComponentAs
@@ -81,7 +81,7 @@ object ICommandBarItemProps {
     iconOnly: js.UndefOr[Boolean] = js.undefined,
     iconProps: IIconProps = null,
     inactive: js.UndefOr[Boolean] = js.undefined,
-    itemProps: Partial[IContextualMenuItemProps] = null,
+    itemProps: PartialIContextualMenuIte = null,
     itemType: ContextualMenuItemType = null,
     keytipProps: IKeytipProps = null,
     name: String = null,

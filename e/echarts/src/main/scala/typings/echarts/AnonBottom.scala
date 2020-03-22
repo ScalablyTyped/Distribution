@@ -22,7 +22,7 @@ trait AnonBottom extends js.Object {
   /**
     * @see https://echarts.apache.org/en/option.html#series-treemap.breadcrumb.emphasis
     */
-  var emphasis: js.UndefOr[AnonItemStyleAnonBorderColorBorderTypeBorderWidthColorOpacityShadowBlur] = js.undefined
+  var emphasis: js.UndefOr[AnonItemStyleAnonTextStyle] = js.undefined
   /**
     * When is no content in breadcrumb, this minimal width need
     * to be set up.
@@ -49,7 +49,7 @@ trait AnonBottom extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.breadcrumb.itemStyle
     */
-  var itemStyle: js.UndefOr[AnonBorderColorBorderTypeBorderWidthColorOpacityShadowBlur] = js.undefined
+  var itemStyle: js.UndefOr[AnonTextStyle] = js.undefined
   /**
     * Distance between asdf component and the left side of the
     * container.
@@ -116,10 +116,10 @@ object AnonBottom {
   @scala.inline
   def apply(
     bottom: Double | String = null,
-    emphasis: AnonItemStyleAnonBorderColorBorderTypeBorderWidthColorOpacityShadowBlur = null,
+    emphasis: AnonItemStyleAnonTextStyle = null,
     emptyItemWidth: Int | Double = null,
     height: Int | Double = null,
-    itemStyle: AnonBorderColorBorderTypeBorderWidthColorOpacityShadowBlur = null,
+    itemStyle: AnonTextStyle = null,
     left: Double | String = null,
     right: Double | String = null,
     show: js.UndefOr[Boolean] = js.undefined,

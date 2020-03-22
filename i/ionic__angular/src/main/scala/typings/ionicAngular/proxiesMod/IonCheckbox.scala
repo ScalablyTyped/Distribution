@@ -10,7 +10,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ionic/angular/dist/directives/proxies", "IonCheckbox")
+@JSImport("@ionic/angular/directives/proxies", "IonCheckbox")
 @js.native
 class IonCheckbox protected ()
   extends typings.ionicCore.componentsMod.Components.IonCheckbox {

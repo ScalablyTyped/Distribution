@@ -1,6 +1,6 @@
 package typings.googleapis.betaMod.computeBeta
 
-import typings.googleapis.AnonErrorsAnonCodeLocation
+import typings.googleapis.AnonErrorsArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,12 +11,12 @@ trait SchemaManagedInstanceLastAttempt extends js.Object {
     * [Output Only] Encountered errors during the last attempt to create or
     * delete the instance.
     */
-  var errors: js.UndefOr[AnonErrorsAnonCodeLocation] = js.native
+  var errors: js.UndefOr[AnonErrorsArray] = js.native
 }
 
 object SchemaManagedInstanceLastAttempt {
   @scala.inline
-  def apply(errors: AnonErrorsAnonCodeLocation = null): SchemaManagedInstanceLastAttempt = {
+  def apply(errors: AnonErrorsArray = null): SchemaManagedInstanceLastAttempt = {
     val __obj = js.Dynamic.literal()
     if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaManagedInstanceLastAttempt]

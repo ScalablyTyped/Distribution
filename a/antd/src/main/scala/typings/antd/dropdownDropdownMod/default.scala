@@ -1,7 +1,7 @@
 package typings.antd.dropdownDropdownMod
 
-import typings.antd.AnonBottomCenterBottomLeft
-import typings.antd.TypeofClassDropdownButton
+import typings.antd.AnonMouseEnterDelay
+import typings.antd.TypeofDropdownButton
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ class default () extends Dropdown
 @JSImport("antd/lib/dropdown/dropdown", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var Button: TypeofClassDropdownButton = js.native
-  var defaultProps: AnonBottomCenterBottomLeft = js.native
+  var Button: TypeofDropdownButton = js.native
+  var defaultProps: AnonMouseEnterDelay = js.native
 }
 

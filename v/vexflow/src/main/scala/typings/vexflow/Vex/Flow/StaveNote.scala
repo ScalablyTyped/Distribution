@@ -1,11 +1,11 @@
 package typings.vexflow.Vex.Flow
 
 import typings.vexflow.AnonAccidental
-import typings.vexflow.AnonAutostemClef
+import typings.vexflow.AnonClef
+import typings.vexflow.AnonFillStyle_
 import typings.vexflow.AnonHighestline
 import typings.vexflow.AnonLeftshift
 import typings.vexflow.AnonX
-import typings.vexflow.Anon_FillStyle
 import typings.vexflow.Vex.Flow.Modifier.Position
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Vex.Flow.StaveNote")
 @js.native
 class StaveNote protected () extends StemmableNote {
-  def this(note_struct: AnonAutostemClef) = this()
+  def this(note_struct: AnonClef) = this()
   var x_shift: Double = js.native
   def addAccidental(index: Double, accidental: Accidental): StaveNote = js.native
   def addAnnotation(index: Double, annotation: Annotation): StaveNote = js.native
@@ -54,13 +54,13 @@ class StaveNote protected () extends StemmableNote {
   def isChord(): Boolean = js.native
   def isDisplaced(): Boolean = js.native
   def setKeyLine(index: Double, line: Double): StaveNote = js.native
-  def setKeyStyle(index: Double, style: Anon_FillStyle): StaveNote = js.native
+  def setKeyStyle(index: Double, style: AnonFillStyle_): StaveNote = js.native
   def setNoteDisplaced(displaced: Boolean): StaveNote = js.native
   @JSName("setStave")
   def setStave_Note(stave: Stave): Note = js.native
    // inconsistent type: void -> StaveNote
-  def setStemStyle(style: Anon_FillStyle): Unit = js.native
-  def setStyle(style: Anon_FillStyle): Unit = js.native
+  def setStemStyle(style: AnonFillStyle_): Unit = js.native
+  def setStyle(style: AnonFillStyle_): Unit = js.native
 }
 
 /* static members */

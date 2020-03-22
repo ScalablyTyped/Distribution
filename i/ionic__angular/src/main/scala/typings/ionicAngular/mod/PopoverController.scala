@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/angular", "PopoverController")
 @js.native
 class PopoverController protected ()
-  extends typings.ionicAngular.distMod.PopoverController {
+  extends typings.ionicAngular.popoverControllerMod.PopoverController {
   def this(
     angularDelegate: typings.ionicAngular.angularDelegateMod.AngularDelegate,
     resolver: ComponentFactoryResolver,

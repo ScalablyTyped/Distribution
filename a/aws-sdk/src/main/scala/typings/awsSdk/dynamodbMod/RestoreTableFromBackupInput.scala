@@ -27,6 +27,10 @@ trait RestoreTableFromBackupInput extends js.Object {
     */
   var ProvisionedThroughputOverride: js.UndefOr[ProvisionedThroughput] = js.native
   /**
+    * The new server-side encryption settings for the restored table.
+    */
+  var SSESpecificationOverride: js.UndefOr[SSESpecification] = js.native
+  /**
     * The name of the new table to which the backup must be restored.
     */
   var TargetTableName: TableName = js.native
@@ -40,13 +44,15 @@ object RestoreTableFromBackupInput {
     BillingModeOverride: BillingMode = null,
     GlobalSecondaryIndexOverride: GlobalSecondaryIndexList = null,
     LocalSecondaryIndexOverride: LocalSecondaryIndexList = null,
-    ProvisionedThroughputOverride: ProvisionedThroughput = null
+    ProvisionedThroughputOverride: ProvisionedThroughput = null,
+    SSESpecificationOverride: SSESpecification = null
   ): RestoreTableFromBackupInput = {
     val __obj = js.Dynamic.literal(BackupArn = BackupArn.asInstanceOf[js.Any], TargetTableName = TargetTableName.asInstanceOf[js.Any])
     if (BillingModeOverride != null) __obj.updateDynamic("BillingModeOverride")(BillingModeOverride.asInstanceOf[js.Any])
     if (GlobalSecondaryIndexOverride != null) __obj.updateDynamic("GlobalSecondaryIndexOverride")(GlobalSecondaryIndexOverride.asInstanceOf[js.Any])
     if (LocalSecondaryIndexOverride != null) __obj.updateDynamic("LocalSecondaryIndexOverride")(LocalSecondaryIndexOverride.asInstanceOf[js.Any])
     if (ProvisionedThroughputOverride != null) __obj.updateDynamic("ProvisionedThroughputOverride")(ProvisionedThroughputOverride.asInstanceOf[js.Any])
+    if (SSESpecificationOverride != null) __obj.updateDynamic("SSESpecificationOverride")(SSESpecificationOverride.asInstanceOf[js.Any])
     __obj.asInstanceOf[RestoreTableFromBackupInput]
   }
 }

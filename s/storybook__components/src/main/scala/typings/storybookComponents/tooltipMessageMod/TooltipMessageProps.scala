@@ -6,10 +6,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TooltipMessageProps extends js.Object {
-  var desc: js.UndefOr[ReactNode] = js.undefined
-  var links: js.UndefOr[js.Array[AnonHref]] = js.undefined
-  var title: js.UndefOr[ReactNode] = js.undefined
+  var desc: js.UndefOr[ReactNode] = js.native
+  var links: js.UndefOr[js.Array[AnonHref]] = js.native
+  var title: js.UndefOr[ReactNode] = js.native
 }
 
 object TooltipMessageProps {

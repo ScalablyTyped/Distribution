@@ -3,9 +3,9 @@ package typings.htmlPdf.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.htmlPdf.AnonBottom
 import typings.htmlPdf.AnonContents
-import typings.htmlPdf.AnonContentsHeight
 import typings.htmlPdf.AnonDetached
 import typings.htmlPdf.AnonDomain
+import typings.htmlPdf.AnonHeight
 import typings.htmlPdf.htmlPdfStrings.A3
 import typings.htmlPdf.htmlPdfStrings.A4
 import typings.htmlPdf.htmlPdfStrings.A5
@@ -31,7 +31,7 @@ trait CreateOptions extends js.Object {
   var childProcessOptions: js.UndefOr[AnonDetached] = js.undefined
   // Export options
   var directory: js.UndefOr[String] = js.undefined
-  var footer: js.UndefOr[AnonContentsHeight] = js.undefined
+  var footer: js.UndefOr[AnonHeight] = js.undefined
   var format: js.UndefOr[A3 | A4 | A5 | Legal | Letter | Tabloid] = js.undefined
   var header: js.UndefOr[AnonContents] = js.undefined
   // Papersize Options: http://phantomjs.org/api/webpage/property/paper-size.html
@@ -64,7 +64,7 @@ object CreateOptions {
     border: String | AnonBottom = null,
     childProcessOptions: AnonDetached = null,
     directory: String = null,
-    footer: AnonContentsHeight = null,
+    footer: AnonHeight = null,
     format: A3 | A4 | A5 | Legal | Letter | Tabloid = null,
     header: AnonContents = null,
     height: String = null,

@@ -1,9 +1,9 @@
 package typings.baseui.selectMod
 
 import typings.baseui.AnonClearable
-import typings.baseui.AnonItem
-import typings.baseui.AnonOption1413309453
-import typings.baseui.AnonOptionOptionState
+import typings.baseui.AnonItemOption
+import typings.baseui.AnonOptionOption
+import typings.baseui.AnonOptionState
 import typings.dateFns.Locale
 import typings.react.mod.Component
 import typings.react.mod.FocusEvent
@@ -31,10 +31,10 @@ class Select ()
   def filterOption(): Value = js.native
   def filterOption(excludeOptions: Value): Value = js.native
   def focus(): Unit = js.native
-  def getOptionLabel(locale: Locale, hasOption: AnonOptionOptionState): ReactNode = js.native
+  def getOptionLabel(locale: Locale, hasOption: AnonOptionState): ReactNode = js.native
   def getSharedProps(): AnonClearable = js.native
   def getValueArray(value: Value): js.Array[Option] = js.native
-  def getValueLabel(hasOption: AnonOption1413309453): ReactNode = js.native
+  def getValueLabel(hasOption: AnonOptionOption): ReactNode = js.native
   def handleBlur(event: Event_): Unit = js.native
   def handleClick(event: MouseEvent): Unit = js.native
   def handleClick(event: TouchEvent): Unit = js.native
@@ -55,7 +55,7 @@ class Select ()
   def renderLoading(): ReactNode = js.native
   def renderSearch(): ReactNode = js.native
   def renderValue(valueArray: Value, isOpen: Boolean, locale: Locale): ReactNode = js.native
-  def selectValue(hasItem: AnonItem): Unit = js.native
+  def selectValue(hasItem: AnonItemOption): Unit = js.native
   def setValue(value: Value, option: Option, `type`: ChangeAction): Unit = js.native
 }
 

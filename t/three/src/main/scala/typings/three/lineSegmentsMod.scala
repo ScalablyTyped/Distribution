@@ -24,7 +24,7 @@ object lineSegmentsMod extends js.Object {
     def this(geometry: BufferGeometry, material: Material, mode: Double) = this()
     def this(geometry: Geometry, material: js.Array[Material], mode: Double) = this()
     def this(geometry: Geometry, material: Material, mode: Double) = this()
-    var isLineSegments: `true` = js.native
+    val isLineSegments: `true` = js.native
     @JSName("type")
     var type_LineSegments: typings.three.threeStrings.LineSegments = js.native
   }

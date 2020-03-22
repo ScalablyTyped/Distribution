@@ -33,9 +33,6 @@ object semanticUiCheckboxStrings {
   sealed trait check extends js.Object
   
   @js.native
-  sealed trait checked extends js.Object
-  
-  @js.native
   sealed trait className extends js.Object
   
   @js.native
@@ -46,9 +43,6 @@ object semanticUiCheckboxStrings {
   
   @js.native
   sealed trait determinate extends js.Object
-  
-  @js.native
-  sealed trait disabled extends js.Object
   
   @js.native
   sealed trait enable extends js.Object
@@ -63,9 +57,6 @@ object semanticUiCheckboxStrings {
   sealed trait indeterminate extends js.Object
   
   @js.native
-  sealed trait input extends js.Object
-  
-  @js.native
   sealed trait `is checked` extends js.Object
   
   @js.native
@@ -73,12 +64,6 @@ object semanticUiCheckboxStrings {
   
   @js.native
   sealed trait `is unchecked` extends js.Object
-  
-  @js.native
-  sealed trait label extends js.Object
-  
-  @js.native
-  sealed trait method extends js.Object
   
   @js.native
   sealed trait name extends js.Object
@@ -115,12 +100,6 @@ object semanticUiCheckboxStrings {
   
   @js.native
   sealed trait performance extends js.Object
-  
-  @js.native
-  sealed trait radio extends js.Object
-  
-  @js.native
-  sealed trait readOnly extends js.Object
   
   @js.native
   sealed trait selector extends js.Object
@@ -192,8 +171,6 @@ object semanticUiCheckboxStrings {
   @scala.inline
   def check: check = "check".asInstanceOf[check]
   @scala.inline
-  def checked: checked = "checked".asInstanceOf[checked]
-  @scala.inline
   def className: className = "className".asInstanceOf[className]
   @scala.inline
   def debug: debug = "debug".asInstanceOf[debug]
@@ -201,8 +178,6 @@ object semanticUiCheckboxStrings {
   def destroy: destroy = "destroy".asInstanceOf[destroy]
   @scala.inline
   def determinate: determinate = "determinate".asInstanceOf[determinate]
-  @scala.inline
-  def disabled: disabled = "disabled".asInstanceOf[disabled]
   @scala.inline
   def enable: enable = "enable".asInstanceOf[enable]
   @scala.inline
@@ -212,17 +187,11 @@ object semanticUiCheckboxStrings {
   @scala.inline
   def indeterminate: indeterminate = "indeterminate".asInstanceOf[indeterminate]
   @scala.inline
-  def input: input = "input".asInstanceOf[input]
-  @scala.inline
   def `is checked`: `is checked` = "is checked".asInstanceOf[`is checked`]
   @scala.inline
   def `is radio`: `is radio` = "is radio".asInstanceOf[`is radio`]
   @scala.inline
   def `is unchecked`: `is unchecked` = "is unchecked".asInstanceOf[`is unchecked`]
-  @scala.inline
-  def label: label = "label".asInstanceOf[label]
-  @scala.inline
-  def method: method = "method".asInstanceOf[method]
   @scala.inline
   def name: name = "name".asInstanceOf[name]
   @scala.inline
@@ -247,10 +216,6 @@ object semanticUiCheckboxStrings {
   def onUnchecked: onUnchecked = "onUnchecked".asInstanceOf[onUnchecked]
   @scala.inline
   def performance: performance = "performance".asInstanceOf[performance]
-  @scala.inline
-  def radio: radio = "radio".asInstanceOf[radio]
-  @scala.inline
-  def readOnly: readOnly = "readOnly".asInstanceOf[readOnly]
   @scala.inline
   def selector: selector = "selector".asInstanceOf[selector]
   @scala.inline

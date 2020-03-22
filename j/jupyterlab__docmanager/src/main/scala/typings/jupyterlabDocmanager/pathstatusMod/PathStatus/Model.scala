@@ -2,7 +2,7 @@ package typings.jupyterlabDocmanager.pathstatusMod.PathStatus
 
 import typings.jupyterlabApputils.vdomMod.VDomModel
 import typings.jupyterlabDocmanager.tokensMod.IDocumentManager
-import typings.phosphorWidgets.mod.Widget
+import typings.luminoWidgets.mod.Widget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,14 +43,17 @@ class Model protected () extends VDomModel {
   /**
     * The name of the current activity.
     */
-  val name: String = js.native
+  def name(): String = js.native
   /**
     * The current path for the application.
     */
-  val path: String = js.native
+  def path(): String = js.native
+  def widget(): js.Any = js.native
+  def widget(widget: Widget): js.Any = js.native
   /**
     * The current widget for the application.
     */
-  var widget: Widget | Null = js.native
+  @JSName("widget")
+  def widget_Union(): Widget | Null = js.native
 }
 

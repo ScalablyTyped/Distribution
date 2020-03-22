@@ -12,6 +12,9 @@ object apolloClientStrings {
   sealed trait `2Dot6Dot8` extends js.Object
   
   @js.native
+  sealed trait Document extends js.Object
+  
+  @js.native
   sealed trait all extends ErrorPolicy
   
   @js.native
@@ -50,6 +53,8 @@ object apolloClientStrings {
   
   @scala.inline
   def `2Dot6Dot8`: `2Dot6Dot8` = "2.6.8".asInstanceOf[`2Dot6Dot8`]
+  @scala.inline
+  def Document: Document = "Document".asInstanceOf[Document]
   @scala.inline
   def all: all = "all".asInstanceOf[all]
   @scala.inline

@@ -1,6 +1,6 @@
 package typings.cesium.mod
 
-import typings.cesium.AnonEllipsoidNumberOfLevelZeroTilesX
+import typings.cesium.AnonNumberOfLevelZeroTilesX
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("cesium", "GeographicTilingScheme")
 @js.native
 class GeographicTilingScheme () extends js.Object {
-  def this(options: AnonEllipsoidNumberOfLevelZeroTilesX) = this()
+  def this(options: AnonNumberOfLevelZeroTilesX) = this()
   var ellipsoid: Ellipsoid = js.native
   var projection: MapProjection = js.native
   var rectangle: Rectangle = js.native

@@ -4,8 +4,8 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.mapboxGl.AnonData
 import typings.mapboxGl.AnonDiff
 import typings.mapboxGl.AnonFilter
-import typings.mapboxGl.AnonFilterSourceLayer
 import typings.mapboxGl.AnonPixelRatio
+import typings.mapboxGl.AnonSourceLayer
 import typings.mapboxGl.mapboxGlStrings.`bottom-left`
 import typings.mapboxGl.mapboxGlStrings.`bottom-right`
 import typings.mapboxGl.mapboxGlStrings.`top-left`
@@ -963,7 +963,7 @@ class Map () extends Evented {
     * @param parameters
     */
   def querySourceFeatures(sourceID: String): js.Array[MapboxGeoJSONFeature] = js.native
-  def querySourceFeatures(sourceID: String, parameters: AnonFilterSourceLayer): js.Array[MapboxGeoJSONFeature] = js.native
+  def querySourceFeatures(sourceID: String, parameters: AnonSourceLayer): js.Array[MapboxGeoJSONFeature] = js.native
   def remove(): Unit = js.native
   def removeControl(control: Control): this.type = js.native
   def removeControl(control: IControl): this.type = js.native

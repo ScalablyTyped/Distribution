@@ -22,12 +22,7 @@ package object mod {
   type JsonRoot = typings.postcss.mod.JsonContainer
   type Parser = js.Function2[
     /* css */ typings.postcss.mod.ParserInput, 
-    /* opts */ js.UndefOr[
-      typings.std.Pick[
-        typings.postcss.mod.ProcessOptions, 
-        typings.postcss.postcssStrings.map | typings.postcss.postcssStrings.from
-      ]
-    ], 
+    /* opts */ js.UndefOr[typings.postcss.PickProcessOptionsmapfrom], 
     typings.postcss.mod.Root_
   ]
   type ParserInput = java.lang.String | typings.postcss.AnonToString

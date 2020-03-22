@@ -7,8 +7,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait fundamentalReactProps {
+  @scala.inline
+  def AlertProps: typings.fundamentalReact.alertMod.AlertProps.type = typings.fundamentalReact.alertMod.AlertProps
   type AlertProps = typings.fundamentalReact.alertMod.AlertProps
   type BadgeProps = HTMLDivElement
+  @scala.inline
+  def CalendarProps: typings.fundamentalReact.calendarMod.CalendarProps.type = typings.fundamentalReact.calendarMod.CalendarProps
   type CalendarProps = typings.fundamentalReact.calendarMod.CalendarProps
   @scala.inline
   def ComboboxInputProps: typings.fundamentalReact.comboboxInputMod.ComboboxInputProps.type = typings.fundamentalReact.comboboxInputMod.ComboboxInputProps
@@ -16,6 +20,8 @@ trait fundamentalReactProps {
   @scala.inline
   def CounterProps: typings.fundamentalReact.counterMod.CounterProps.type = typings.fundamentalReact.counterMod.CounterProps
   type CounterProps = typings.fundamentalReact.counterMod.CounterProps
+  @scala.inline
+  def DatePickerProps: typings.fundamentalReact.datePickerMod.DatePickerProps.type = typings.fundamentalReact.datePickerMod.DatePickerProps
   type DatePickerProps = typings.fundamentalReact.datePickerMod.DatePickerProps
   @scala.inline
   def DropdownProps: typings.fundamentalReact.dropdownMod.DropdownProps.type = typings.fundamentalReact.dropdownMod.DropdownProps
@@ -81,6 +87,8 @@ trait fundamentalReactProps {
   @scala.inline
   def PaginationProps: typings.fundamentalReact.paginationMod.PaginationProps.type = typings.fundamentalReact.paginationMod.PaginationProps
   type PaginationProps = typings.fundamentalReact.paginationMod.PaginationProps
+  @scala.inline
+  def PopoverProps: typings.fundamentalReact.popoverMod.PopoverProps.type = typings.fundamentalReact.popoverMod.PopoverProps
   type PopoverProps = typings.fundamentalReact.popoverMod.PopoverProps
   @scala.inline
   def SearchInputProps: typings.fundamentalReact.searchInputMod.SearchInputProps.type = typings.fundamentalReact.searchInputMod.SearchInputProps
@@ -97,10 +105,20 @@ trait fundamentalReactProps {
   @scala.inline
   def TabGroupProps: typings.fundamentalReact.tabGroupMod.TabGroupProps.type = typings.fundamentalReact.tabGroupMod.TabGroupProps
   type TabGroupProps = typings.fundamentalReact.tabGroupMod.TabGroupProps
+  @scala.inline
+  def TimeProps: typings.fundamentalReact.timeMod.TimeProps.type = typings.fundamentalReact.timeMod.TimeProps
   type TimeProps = typings.fundamentalReact.timeMod.TimeProps
+  @scala.inline
+  def TimePickerProps: typings.fundamentalReact.timePickerMod.TimePickerProps.type = typings.fundamentalReact.timePickerMod.TimePickerProps
   type TimePickerProps = typings.fundamentalReact.timePickerMod.TimePickerProps
+  @scala.inline
+  def ToggleProps: typings.fundamentalReact.toggleMod.ToggleProps.type = typings.fundamentalReact.toggleMod.ToggleProps
   type ToggleProps = typings.fundamentalReact.toggleMod.ToggleProps
+  @scala.inline
+  def TokenProps: typings.fundamentalReact.tokenMod.TokenProps.type = typings.fundamentalReact.tokenMod.TokenProps
   type TokenProps = typings.fundamentalReact.tokenMod.TokenProps
+  @scala.inline
+  def TreeViewProps: typings.fundamentalReact.treeViewMod.TreeViewProps.type = typings.fundamentalReact.treeViewMod.TreeViewProps
   type TreeViewProps = typings.fundamentalReact.treeViewMod.TreeViewProps
 }
 

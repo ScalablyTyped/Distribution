@@ -1,6 +1,6 @@
 package typings.rotJs.pathPathMod
 
-import typings.std.Partial
+import typings.rotJs.PartialOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class default protected () extends Path {
   def this(toX: Double, toY: Double, passableCallback: PassableCallback) = this()
-  def this(toX: Double, toY: Double, passableCallback: PassableCallback, options: Partial[Options]) = this()
+  def this(toX: Double, toY: Double, passableCallback: PassableCallback, options: PartialOptions) = this()
 }
 

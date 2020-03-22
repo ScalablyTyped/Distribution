@@ -1,5 +1,6 @@
 package typings.baseui.layoutGridMod
 
+import typings.baseui.AnonGrid
 import typings.react.mod.ReactElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,6 +18,7 @@ trait GridProps extends js.Object {
   var gridUnit: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSLengthUnitT */ js.Any
   ] = js.undefined
+  var overrides: js.UndefOr[AnonGrid] = js.undefined
 }
 
 object GridProps {
@@ -30,7 +32,8 @@ object GridProps {
     gridGutters: Responsive[Double] = null,
     gridMargins: Responsive[Double] = null,
     gridMaxWidth: Int | Double = null,
-    gridUnit: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSLengthUnitT */ js.Any = null
+    gridUnit: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSLengthUnitT */ js.Any = null,
+    overrides: AnonGrid = null
   ): GridProps = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
@@ -41,6 +44,7 @@ object GridProps {
     if (gridMargins != null) __obj.updateDynamic("gridMargins")(gridMargins.asInstanceOf[js.Any])
     if (gridMaxWidth != null) __obj.updateDynamic("gridMaxWidth")(gridMaxWidth.asInstanceOf[js.Any])
     if (gridUnit != null) __obj.updateDynamic("gridUnit")(gridUnit.asInstanceOf[js.Any])
+    if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridProps]
   }
 }

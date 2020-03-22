@@ -1,53 +1,53 @@
 package typings.victory.mod
 
-import typings.victory.AnonBorderWidth
-import typings.victory.AnonBoxWidth
-import typings.victory.AnonCandleColors
 import typings.victory.AnonCornerRadius
-import typings.victory.AnonGutter
-import typings.victory.AnonStyle
-import typings.victory.AnonStyleAnonAxis
-import typings.victory.AnonStyleAnonDataFlyout
+import typings.victory.borderWidthnumberstyledat
+import typings.victory.gutternumberorientationve
+import typings.victory.styleaxisCSSPropertiesaxi
+import typings.victory.styledataCSSPropertieslab
+import typings.victory.styledataCSSPropertieslabCandleColors
+import typings.victory.styledataCSSPropertieslabColorScale
+import typings.victory.stylemaxCSSPropertiesmaxL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait VictoryThemeDefinition extends js.Object {
-  var area: js.UndefOr[AnonStyle with ThemeBaseProps] = js.undefined
-  var axis: js.UndefOr[AnonStyleAnonAxis with ThemeBaseProps] = js.undefined
-  var bar: js.UndefOr[AnonStyle with ThemeBaseProps] = js.undefined
-  var boxplot: js.UndefOr[AnonBoxWidth with ThemeBaseProps] = js.undefined
-  var candlestick: js.UndefOr[AnonCandleColors with ThemeBaseProps] = js.undefined
+  var area: js.UndefOr[styledataCSSPropertieslab] = js.undefined
+  var axis: js.UndefOr[styleaxisCSSPropertiesaxi] = js.undefined
+  var bar: js.UndefOr[styledataCSSPropertieslab] = js.undefined
+  var boxplot: js.UndefOr[stylemaxCSSPropertiesmaxL] = js.undefined
+  var candlestick: js.UndefOr[styledataCSSPropertieslabCandleColors] = js.undefined
   var chart: js.UndefOr[ThemeBaseProps] = js.undefined
-  var errorbar: js.UndefOr[AnonBorderWidth with ThemeBaseProps] = js.undefined
+  var errorbar: js.UndefOr[borderWidthnumberstyledat] = js.undefined
   var group: js.UndefOr[ThemeBaseProps] = js.undefined
-  var legend: js.UndefOr[AnonGutter with ThemeBaseProps] = js.undefined
-  var line: js.UndefOr[AnonStyle with ThemeBaseProps] = js.undefined
-  var pie: js.UndefOr[AnonStyle with ThemeBaseProps] = js.undefined
-  var scatter: js.UndefOr[AnonStyle with ThemeBaseProps] = js.undefined
+  var legend: js.UndefOr[gutternumberorientationve] = js.undefined
+  var line: js.UndefOr[styledataCSSPropertieslab] = js.undefined
+  var pie: js.UndefOr[styledataCSSPropertieslab] = js.undefined
+  var scatter: js.UndefOr[styledataCSSPropertieslab] = js.undefined
   var stack: js.UndefOr[ThemeBaseProps] = js.undefined
   var tooltip: js.UndefOr[AnonCornerRadius] = js.undefined
-  var voronoi: js.UndefOr[AnonStyleAnonDataFlyout with ThemeBaseProps] = js.undefined
+  var voronoi: js.UndefOr[styledataCSSPropertieslabColorScale] = js.undefined
 }
 
 object VictoryThemeDefinition {
   @scala.inline
   def apply(
-    area: AnonStyle with ThemeBaseProps = null,
-    axis: AnonStyleAnonAxis with ThemeBaseProps = null,
-    bar: AnonStyle with ThemeBaseProps = null,
-    boxplot: AnonBoxWidth with ThemeBaseProps = null,
-    candlestick: AnonCandleColors with ThemeBaseProps = null,
+    area: styledataCSSPropertieslab = null,
+    axis: styleaxisCSSPropertiesaxi = null,
+    bar: styledataCSSPropertieslab = null,
+    boxplot: stylemaxCSSPropertiesmaxL = null,
+    candlestick: styledataCSSPropertieslabCandleColors = null,
     chart: ThemeBaseProps = null,
-    errorbar: AnonBorderWidth with ThemeBaseProps = null,
+    errorbar: borderWidthnumberstyledat = null,
     group: ThemeBaseProps = null,
-    legend: AnonGutter with ThemeBaseProps = null,
-    line: AnonStyle with ThemeBaseProps = null,
-    pie: AnonStyle with ThemeBaseProps = null,
-    scatter: AnonStyle with ThemeBaseProps = null,
+    legend: gutternumberorientationve = null,
+    line: styledataCSSPropertieslab = null,
+    pie: styledataCSSPropertieslab = null,
+    scatter: styledataCSSPropertieslab = null,
     stack: ThemeBaseProps = null,
     tooltip: AnonCornerRadius = null,
-    voronoi: AnonStyleAnonDataFlyout with ThemeBaseProps = null
+    voronoi: styledataCSSPropertieslabColorScale = null
   ): VictoryThemeDefinition = {
     val __obj = js.Dynamic.literal()
     if (area != null) __obj.updateDynamic("area")(area.asInstanceOf[js.Any])

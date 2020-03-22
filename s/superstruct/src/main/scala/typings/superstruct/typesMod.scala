@@ -1,8 +1,6 @@
 package typings.superstruct
 
-import typings.std.Partial
 import typings.superstruct.structErrorMod.Branch
-import typings.superstruct.structErrorMod.Failure
 import typings.superstruct.structErrorMod.Path
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -229,7 +227,7 @@ object typesMod extends js.Object {
     /* value */ js.Any, 
     /* branch */ Branch, 
     /* path */ Path, 
-    js.Array[Partial[Failure]] | Partial[Failure] | Boolean
+    js.Array[PartialFailure] | PartialFailure | Boolean
   ]
 }
 

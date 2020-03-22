@@ -1,7 +1,6 @@
 package typings.antd.mod
 
-import typings.antd.AnonClassName
-import typings.antd.AnonDefault
+import typings.antd.AnonSpinning
 import typings.antd.spinMod.SpinProps
 import typings.antd.spinMod.default
 import typings.react.mod.ReactNode
@@ -19,8 +18,7 @@ class Spin protected () extends default {
 @JSImport("antd", "Spin")
 @js.native
 object Spin extends js.Object {
-  var defaultProps: AnonDefault = js.native
-  var propTypes: AnonClassName = js.native
+  var defaultProps: AnonSpinning = js.native
   def setDefaultIndicator(indicator: ReactNode): Unit = js.native
 }
 

@@ -1,6 +1,6 @@
 package typings.braintreeWeb.mod
 
-import typings.braintreeWeb.AnonClientKount
+import typings.braintreeWeb.AnonKount
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,8 +31,8 @@ trait DataCollector_ extends js.Object {
     * @param {callback} callback The second argument, `data`, is the {@link DataCollector} instance.
     * @returns {void}
     */
-  def create(options: AnonClientKount): js.Promise[DataCollector_] = js.native
-  def create(options: AnonClientKount, callback: callback): Unit = js.native
+  def create(options: AnonKount): js.Promise[DataCollector_] = js.native
+  def create(options: AnonKount, callback: callback): Unit = js.native
   /**
     * @memberof DataCollector
     * @name teardown

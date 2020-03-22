@@ -1,6 +1,6 @@
 package typings.licenseCheckerWebpackPlugin.mod
 
-import typings.std.Partial
+import typings.licenseCheckerWebpackPlugin.PartialDependency
 import typings.std.Record
 import typings.std.RegExp
 import scala.scalajs.js
@@ -48,7 +48,7 @@ trait Options extends js.Object {
     *
     * Default: `{}`
     */
-  var `override`: Record[String, Partial[Dependency]]
+  var `override`: Record[String, PartialDependency]
 }
 
 object Options {
@@ -60,7 +60,7 @@ object Options {
     ignore: js.Array[String],
     outputFilename: String,
     outputWriter: String | OutputWriter,
-    `override`: Record[String, Partial[Dependency]]
+    `override`: Record[String, PartialDependency]
   ): Options = {
     val __obj = js.Dynamic.literal(allow = allow.asInstanceOf[js.Any], emitError = emitError.asInstanceOf[js.Any], filter = filter.asInstanceOf[js.Any], ignore = ignore.asInstanceOf[js.Any], outputFilename = outputFilename.asInstanceOf[js.Any], outputWriter = outputWriter.asInstanceOf[js.Any])
     __obj.updateDynamic("override")(`override`.asInstanceOf[js.Any])

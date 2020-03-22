@@ -1,7 +1,7 @@
 package typings.linq.mod
 
+import typings.linq.AnonDictx
 import typings.linq.AnonKey
-import typings.linq.AnonLength
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ object from extends js.Object {
   def apply(obj: Boolean): IEnumerable[Boolean] = js.native
   def apply(obj: Double): IEnumerable[Double] = js.native
   def apply[T](obj: js.Array[T]): IEnumerable[T] = js.native
-  def apply[T](obj: AnonLength[T]): IEnumerable[T] = js.native
+  def apply[T](obj: AnonDictx[T]): IEnumerable[T] = js.native
   def apply[T](obj: IEnumerable[T]): IEnumerable[T] = js.native
 }
 

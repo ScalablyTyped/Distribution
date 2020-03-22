@@ -15,14 +15,15 @@ object audioListenerMod extends js.Object {
     var context: AudioContext = js.native
     var filter: Null | js.Any = js.native
     var gain: GainNode = js.native
+    var timeDelta: Double = js.native
     @JSName("type")
     var type_AudioListener: typings.three.threeStrings.AudioListener = js.native
     def getFilter(): js.Any = js.native
     def getInput(): GainNode = js.native
     def getMasterVolume(): Double = js.native
-    def removeFilter(): Unit = js.native
-    def setFilter(value: js.Any): Unit = js.native
-    def setMasterVolume(value: Double): Unit = js.native
+    def removeFilter(): this.type = js.native
+    def setFilter(value: js.Any): this.type = js.native
+    def setMasterVolume(value: Double): this.type = js.native
   }
   
 }

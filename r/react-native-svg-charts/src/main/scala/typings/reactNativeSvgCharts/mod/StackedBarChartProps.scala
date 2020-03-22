@@ -8,12 +8,11 @@ import typings.react.mod.Component
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import typings.reactNativeSvg.mod.LinearGradientProps
-import typings.reactNativeSvg.mod.PathProps
 import typings.reactNativeSvg.mod.RadialGradientProps
 import typings.reactNativeSvgCharts.AnonBottom
 import typings.reactNativeSvgCharts.AnonId
+import typings.reactNativeSvgCharts.PartialPathProps
 import typings.std.CanvasRenderingContext2D
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -64,7 +63,7 @@ object StackedBarChartProps {
     spacingOuter: Int | Double = null,
     strokeColor: String = null,
     style: StyleProp[ViewStyle] = null,
-    svg: Partial[PathProps] = null,
+    svg: PartialPathProps = null,
     width: Int | Double = null,
     xAccessor: /* props */ AccessorFunctionProps[T] => Double = null,
     xMax: Int | Double = null,

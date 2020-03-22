@@ -9,7 +9,7 @@ trait AnonFs
   extends /* key */ StringDictionary[js.Any] {
   var fs: js.UndefOr[AnonRecordingsDir] = js.undefined
   var keepUnusedRequests: js.UndefOr[Boolean] = js.undefined
-  var `local-storage`: js.UndefOr[AnonContextKey] = js.undefined
+  var `local-storage`: js.UndefOr[AnonKey] = js.undefined
   var rest: js.UndefOr[AnonApiNamespace] = js.undefined
 }
 
@@ -19,7 +19,7 @@ object AnonFs {
     StringDictionary: /* key */ StringDictionary[js.Any] = null,
     fs: AnonRecordingsDir = null,
     keepUnusedRequests: js.UndefOr[Boolean] = js.undefined,
-    `local-storage`: AnonContextKey = null,
+    `local-storage`: AnonKey = null,
     rest: AnonApiNamespace = null
   ): AnonFs = {
     val __obj = js.Dynamic.literal()

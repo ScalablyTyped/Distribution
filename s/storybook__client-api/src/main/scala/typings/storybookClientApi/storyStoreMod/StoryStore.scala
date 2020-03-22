@@ -5,8 +5,8 @@ import typings.lodash.mod.Cancelable
 import typings.storybookChannels.mod.Channel
 import typings.storybookClientApi.AnonApplyDecorators
 import typings.storybookClientApi.AnonKind
-import typings.storybookClientApi.AnonKindStories
 import typings.storybookClientApi.AnonParameters
+import typings.storybookClientApi.AnonStories
 import typings.storybookClientApi.typesMod.AddStoryArgs
 import typings.storybookClientApi.typesMod.ErrorLike
 import typings.storybookClientApi.typesMod.LegacyData
@@ -33,7 +33,7 @@ trait StoryStore
   def clean(): Unit = js.native
   def cleanHooks(id: String): Unit = js.native
   def cleanHooksForKind(kind: String): Unit = js.native
-  def dumpStoryBook(): js.Array[AnonKindStories] = js.native
+  def dumpStoryBook(): js.Array[AnonStories] = js.native
   def extract(): js.Object = js.native
   def extract(options: StoryOptions): js.Object = js.native
   def fromId(id: String): StoreItem = js.native

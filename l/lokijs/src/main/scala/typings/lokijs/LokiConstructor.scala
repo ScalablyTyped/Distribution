@@ -1,6 +1,5 @@
 package typings.lokijs
 
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,10 +13,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class LokiConstructor protected () extends Loki {
   def this(filename: String) = this()
-  def this(
-    filename: String,
-    options: Partial[LokiConstructorOptions] with Partial[LokiConfigOptions] with Partial[ThrottledSaveDrainOptions]
-  ) = this()
+  def this(filename: String, options: PartialLokiConstructorOptAdapter) = this()
 }
 
 @JSGlobal("LokiConstructor")

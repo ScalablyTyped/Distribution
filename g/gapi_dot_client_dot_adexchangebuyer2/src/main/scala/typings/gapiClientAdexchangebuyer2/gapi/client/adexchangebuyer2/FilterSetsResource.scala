@@ -1,9 +1,9 @@
 package typings.gapiClientAdexchangebuyer2.gapi.client.adexchangebuyer2
 
 import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientAdexchangebuyer2.AnonAccesstokenAccountIdAltBearertokenCallbackFields
-import typings.gapiClientAdexchangebuyer2.AnonAccesstokenAccountIdAltBearertokenCallbackFieldsFilterSetIdKey
-import typings.gapiClientAdexchangebuyer2.AnonAccesstokenAccountIdAltBearertokenCallbackFieldsIsTransient
+import typings.gapiClientAdexchangebuyer2.AnonFields
+import typings.gapiClientAdexchangebuyer2.AnonIsTransient
+import typings.gapiClientAdexchangebuyer2.AnonPp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,19 +18,19 @@ trait FilterSetsResource extends js.Object {
   var losingBids: LosingBidsResource
   var nonBillableWinningBids: NonBillableWinningBidsResource
   /** Creates the specified filter set for the account with the given account ID. */
-  def create(request: AnonAccesstokenAccountIdAltBearertokenCallbackFieldsIsTransient): Request_[FilterSet]
+  def create(request: AnonIsTransient): Request_[FilterSet]
   /**
     * Deletes the requested filter set from the account with the given account
     * ID.
     */
-  def delete(request: AnonAccesstokenAccountIdAltBearertokenCallbackFieldsFilterSetIdKey): Request_[js.Object]
+  def delete(request: AnonPp): Request_[js.Object]
   /**
     * Retrieves the requested filter set for the account with the given account
     * ID.
     */
-  def get(request: AnonAccesstokenAccountIdAltBearertokenCallbackFieldsFilterSetIdKey): Request_[FilterSet]
+  def get(request: AnonPp): Request_[FilterSet]
   /** Lists all filter sets for the account with the given account ID. */
-  def list(request: AnonAccesstokenAccountIdAltBearertokenCallbackFields): Request_[ListFilterSetsResponse]
+  def list(request: AnonFields): Request_[ListFilterSetsResponse]
 }
 
 object FilterSetsResource {
@@ -39,13 +39,13 @@ object FilterSetsResource {
     bidMetrics: BidMetricsResource,
     bidResponseErrors: BidResponseErrorsResource,
     bidResponsesWithoutBids: BidResponsesWithoutBidsResource,
-    create: AnonAccesstokenAccountIdAltBearertokenCallbackFieldsIsTransient => Request_[FilterSet],
-    delete: AnonAccesstokenAccountIdAltBearertokenCallbackFieldsFilterSetIdKey => Request_[js.Object],
+    create: AnonIsTransient => Request_[FilterSet],
+    delete: AnonPp => Request_[js.Object],
     filteredBidRequests: FilteredBidRequestsResource,
     filteredBids: FilteredBidsResource,
-    get: AnonAccesstokenAccountIdAltBearertokenCallbackFieldsFilterSetIdKey => Request_[FilterSet],
+    get: AnonPp => Request_[FilterSet],
     impressionMetrics: ImpressionMetricsResource,
-    list: AnonAccesstokenAccountIdAltBearertokenCallbackFields => Request_[ListFilterSetsResponse],
+    list: AnonFields => Request_[ListFilterSetsResponse],
     losingBids: LosingBidsResource,
     nonBillableWinningBids: NonBillableWinningBidsResource
   ): FilterSetsResource = {

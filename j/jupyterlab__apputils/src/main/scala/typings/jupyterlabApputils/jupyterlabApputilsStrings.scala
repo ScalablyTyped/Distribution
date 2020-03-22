@@ -2,11 +2,15 @@ package typings.jupyterlabApputils
 
 import typings.jupyterlabApputils.iframeMod.IFrame.ReferrerPolicy
 import typings.jupyterlabApputils.iframeMod.IFrame.SandboxExceptions
+import typings.jupyterlabApputils.sessioncontextMod.ISessionContext._KernelDisplayStatus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object jupyterlabApputilsStrings {
+  @js.native
+  sealed trait _empty extends _KernelDisplayStatus
+  
   @js.native
   sealed trait above extends js.Object
   
@@ -62,6 +66,12 @@ object jupyterlabApputilsStrings {
   sealed trait forceBelow extends js.Object
   
   @js.native
+  sealed trait initializing extends _KernelDisplayStatus
+  
+  @js.native
+  sealed trait kernel extends js.Object
+  
+  @js.native
   sealed trait name extends js.Object
   
   @js.native
@@ -86,6 +96,9 @@ object jupyterlabApputilsStrings {
   sealed trait `same-origin` extends ReferrerPolicy
   
   @js.native
+  sealed trait session extends js.Object
+  
+  @js.native
   sealed trait `strict-origin` extends ReferrerPolicy
   
   @js.native
@@ -100,6 +113,8 @@ object jupyterlabApputilsStrings {
   @js.native
   sealed trait warn extends js.Object
   
+  @scala.inline
+  def _empty: _empty = "".asInstanceOf[_empty]
   @scala.inline
   def above: above = "above".asInstanceOf[above]
   @scala.inline
@@ -137,6 +152,10 @@ object jupyterlabApputilsStrings {
   @scala.inline
   def forceBelow: forceBelow = "forceBelow".asInstanceOf[forceBelow]
   @scala.inline
+  def initializing: initializing = "initializing".asInstanceOf[initializing]
+  @scala.inline
+  def kernel: kernel = "kernel".asInstanceOf[kernel]
+  @scala.inline
   def name: name = "name".asInstanceOf[name]
   @scala.inline
   def `no-referrer`: `no-referrer` = "no-referrer".asInstanceOf[`no-referrer`]
@@ -152,6 +171,8 @@ object jupyterlabApputilsStrings {
   def `popups-to-escape-sandbox`: `popups-to-escape-sandbox` = "popups-to-escape-sandbox".asInstanceOf[`popups-to-escape-sandbox`]
   @scala.inline
   def `same-origin`: `same-origin` = "same-origin".asInstanceOf[`same-origin`]
+  @scala.inline
+  def session: session = "session".asInstanceOf[session]
   @scala.inline
   def `strict-origin`: `strict-origin` = "strict-origin".asInstanceOf[`strict-origin`]
   @scala.inline

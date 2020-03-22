@@ -1,6 +1,6 @@
 package typings.edtrIoMathquill.mod
 
-import typings.edtrIoMathquill.AnonDirection
+import typings.edtrIoMathquill.AnonEdit
 import typings.std.HTMLTextAreaElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,7 +11,7 @@ trait Config extends js.Object {
   var autoOperatorNames: js.UndefOr[String] = js.undefined
   var autoSubscriptNumerals: js.UndefOr[Boolean] = js.undefined
   var charsThatBreakOutOfSupSub: js.UndefOr[String] = js.undefined
-  var handlers: js.UndefOr[AnonDirection] = js.undefined
+  var handlers: js.UndefOr[AnonEdit] = js.undefined
   var leftRightIntoCmdGoes: js.UndefOr[String] = js.undefined
   var maxDepth: js.UndefOr[Double] = js.undefined
   var restrictMismatchedBrackets: js.UndefOr[Boolean] = js.undefined
@@ -28,7 +28,7 @@ object Config {
     autoOperatorNames: String = null,
     autoSubscriptNumerals: js.UndefOr[Boolean] = js.undefined,
     charsThatBreakOutOfSupSub: String = null,
-    handlers: AnonDirection = null,
+    handlers: AnonEdit = null,
     leftRightIntoCmdGoes: String = null,
     maxDepth: Int | Double = null,
     restrictMismatchedBrackets: js.UndefOr[Boolean] = js.undefined,

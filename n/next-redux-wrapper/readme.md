@@ -1,7 +1,7 @@
 
 # Scala.js typings for next-redux-wrapper
 
-Typings are for version 4.0.1
+Typings are for version 5.0.0
 
 ## Library description:
 Redux wrapper for Next.js

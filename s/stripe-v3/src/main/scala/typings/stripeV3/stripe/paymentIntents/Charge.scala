@@ -1,7 +1,7 @@
 package typings.stripeV3.stripe.paymentIntents
 
-import typings.stripeV3.AnonApprovedbynetwork
-import typings.stripeV3.AnonFraudulent
+import typings.stripeV3.AnonNetworkstatus
+import typings.stripeV3.AnonStripereport
 import typings.stripeV3.stripe.BillingDetails
 import typings.stripeV3.stripe.List
 import typings.stripeV3.stripe.Metadata
@@ -87,7 +87,7 @@ trait Charge extends js.Object {
   /**
     * Hash with information on fraud assessments for the charge.
     */
-  var fraud_details: AnonFraudulent
+  var fraud_details: AnonStripereport
   /**
     * Unique identifier for the object.
     */
@@ -121,7 +121,7 @@ trait Charge extends js.Object {
     * Details about whether the payment was accepted, and why. See
     * understanding declines for details.
     */
-  var outcome: AnonApprovedbynetwork | Null
+  var outcome: AnonNetworkstatus | Null
   /**
     * true if the charge succeeded, or was successfully authorized for later capture.
     */
@@ -207,7 +207,7 @@ object Charge {
     captured: Boolean,
     created: Double,
     currency: String,
-    fraud_details: AnonFraudulent,
+    fraud_details: AnonStripereport,
     id: String,
     livemode: Boolean,
     metadata: Metadata,
@@ -230,7 +230,7 @@ object Charge {
     invoice: String = null,
     on_behalf_of: String = null,
     order: String = null,
-    outcome: AnonApprovedbynetwork = null,
+    outcome: AnonNetworkstatus = null,
     payment_method: String = null,
     receipt_email: String = null,
     receipt_number: String = null,

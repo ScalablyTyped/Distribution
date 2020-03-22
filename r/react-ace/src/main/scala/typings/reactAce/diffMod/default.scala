@@ -1,7 +1,7 @@
 package typings.reactAce.diffMod
 
-import typings.propTypes.mod.ValidationMap
-import typings.std.Partial
+import typings.reactAce.PartialIDiffEditorProps
+import typings.reactAce.ValidationMapIDiffEditorP
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ class default protected () extends DiffComponent {
 @JSImport("react-ace/lib/diff", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: Partial[IDiffEditorProps] = js.native
-  var propTypes: ValidationMap[IDiffEditorProps] = js.native
+  var defaultProps: PartialIDiffEditorProps = js.native
+  var propTypes: ValidationMapIDiffEditorP = js.native
 }
 

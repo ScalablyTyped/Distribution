@@ -1,8 +1,8 @@
 package typings.jsonSchemaRefParser.mod
 
 import typings.jsonSchemaRefParser.AnonCircular
+import typings.jsonSchemaRefParser.AnonDictkey
 import typings.jsonSchemaRefParser.AnonExternal
-import typings.jsonSchemaRefParser.AnonJson
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +17,7 @@ trait Options extends js.Object {
     *
     * JSON Schema `$Ref` Parser comes with built-in JSON, YAML, plain-text, and binary parsers, any of which you can configure or disable. You can also add your own custom parsers if you want.
     */
-  var parse: js.UndefOr[AnonJson] = js.undefined
+  var parse: js.UndefOr[AnonDictkey] = js.undefined
   /**
     * The `resolve` options control how JSON Schema $Ref Parser will resolve file paths and URLs, and how those files will be read/downloaded.
     *
@@ -28,7 +28,7 @@ trait Options extends js.Object {
 
 object Options {
   @scala.inline
-  def apply(dereference: AnonCircular = null, parse: AnonJson = null, resolve: AnonExternal = null): Options = {
+  def apply(dereference: AnonCircular = null, parse: AnonDictkey = null, resolve: AnonExternal = null): Options = {
     val __obj = js.Dynamic.literal()
     if (dereference != null) __obj.updateDynamic("dereference")(dereference.asInstanceOf[js.Any])
     if (parse != null) __obj.updateDynamic("parse")(parse.asInstanceOf[js.Any])

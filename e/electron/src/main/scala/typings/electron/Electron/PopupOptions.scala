@@ -12,6 +12,8 @@ trait PopupOptions extends js.Object {
   /**
     * The index of the menu item to be positioned under the mouse cursor at the
     * specified coordinates. Default is -1.
+    *
+    * @platform darwin
     */
   var positioningItem: js.UndefOr[Double] = js.undefined
   /**
@@ -19,11 +21,13 @@ trait PopupOptions extends js.Object {
     */
   var window: js.UndefOr[BrowserWindow] = js.undefined
   /**
-    * Default is the current mouse cursor position. Must be declared if y is declared.
+    * Default is the current mouse cursor position. Must be declared if `y` is
+    * declared.
     */
   var x: js.UndefOr[Double] = js.undefined
   /**
-    * Default is the current mouse cursor position. Must be declared if x is declared.
+    * Default is the current mouse cursor position. Must be declared if `x` is
+    * declared.
     */
   var y: js.UndefOr[Double] = js.undefined
 }

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "vega-schema-url-parser" : "1.1.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "vega-schema-url-parser" : "1.1.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

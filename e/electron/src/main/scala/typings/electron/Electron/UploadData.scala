@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 trait UploadData extends js.Object {
   // Docs: http://electronjs.org/docs/api/structures/upload-data
   /**
-    * UUID of blob data. Use method to retrieve the data.
+    * UUID of blob data. Use ses.getBlobData method to retrieve the data.
     */
-  var blobUUID: String
+  var blobUUID: js.UndefOr[String] = js.undefined
   /**
     * Content being sent.
     */
@@ -18,14 +18,15 @@ trait UploadData extends js.Object {
   /**
     * Path of file being uploaded.
     */
-  var file: String
+  var file: js.UndefOr[String] = js.undefined
 }
 
 object UploadData {
   @scala.inline
-  def apply(blobUUID: String, bytes: Buffer, file: String): UploadData = {
-    val __obj = js.Dynamic.literal(blobUUID = blobUUID.asInstanceOf[js.Any], bytes = bytes.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any])
-  
+  def apply(bytes: Buffer, blobUUID: String = null, file: String = null): UploadData = {
+    val __obj = js.Dynamic.literal(bytes = bytes.asInstanceOf[js.Any])
+    if (blobUUID != null) __obj.updateDynamic("blobUUID")(blobUUID.asInstanceOf[js.Any])
+    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadData]
   }
 }

@@ -510,6 +510,25 @@ trait PlotOptions extends js.Object {
     */
   var dpo: js.UndefOr[PlotDpoOptions] = js.undefined
   /**
+    * (Highcharts, Highstock) The dumbbell series is a cartesian series with
+    * higher and lower values for each point along an X axis, connected with a
+    * line between the values. Requires `highcharts-more.js` and
+    * `modules/dumbbell.js`.
+    *
+    * In TypeScript the type option must always be set.
+    *
+    * Configuration options for the series are given in three levels:
+    *
+    * 1. Options for all series in a chart are defined in the
+    * plotOptions.series object.
+    *
+    * 2. Options for all `dumbbell` series are defined in plotOptions.dumbbell.
+    *
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
+    */
+  var dumbbell: js.UndefOr[PlotDumbbellOptions] = js.undefined
+  /**
     * (Highstock) Exponential moving average indicator (EMA). This series
     * requires the `linkedTo` option to be set.
     *
@@ -821,6 +840,25 @@ trait PlotOptions extends js.Object {
     */
   var linearregressionslope: js.UndefOr[PlotLinearregressionslopeOptions] = js.undefined
   /**
+    * (Highcharts, Highstock) The lollipop series is a carteseian series with a
+    * line anchored from the x axis and a dot at the end to mark the value.
+    * Requires `highcharts-more.js`, `modules/dumbbell.js` and
+    * `modules/lollipop.js`.
+    *
+    * In TypeScript the type option must always be set.
+    *
+    * Configuration options for the series are given in three levels:
+    *
+    * 1. Options for all series in a chart are defined in the
+    * plotOptions.series object.
+    *
+    * 2. Options for all `lollipop` series are defined in plotOptions.lollipop.
+    *
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
+    */
+  var lollipop: js.UndefOr[PlotLollipopOptions] = js.undefined
+  /**
     * (Highstock) Moving Average Convergence Divergence (MACD). This series
     * requires `linkedTo` option to be set and should be loaded after the
     * `stock/indicators/indicators.js` and `stock/indicators/ema.js`.
@@ -1016,6 +1054,7 @@ trait PlotOptions extends js.Object {
     * (see online documentation for example)
     */
   var organization: js.UndefOr[PlotOrganizationOptions] = js.undefined
+  var packedBubble: js.UndefOr[PlotPackedBubbleOptions_] = js.undefined
   /**
     * (Highcharts) A packed bubble series is a two dimensional series type,
     * where each point renders a value in X, Y position. Each point is drawn as
@@ -1330,6 +1369,26 @@ trait PlotOptions extends js.Object {
     * (see online documentation for example)
     */
   var series: js.UndefOr[PlotSeriesOptions] = js.undefined
+  /**
+    * (Highstock) Slow Stochastic oscillator. This series requires the
+    * `linkedTo` option to be set and should be loaded after
+    * `stock/indicators/indicators.js` and `stock/indicators/stochastic.js`
+    * files.
+    *
+    * In TypeScript the type option must always be set.
+    *
+    * Configuration options for the series are given in three levels:
+    *
+    * 1. Options for all series in a chart are defined in the
+    * plotOptions.series object.
+    *
+    * 2. Options for all `slowstochastic` series are defined in
+    * plotOptions.slowstochastic.
+    *
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
+    */
+  var slowstochastic: js.UndefOr[PlotSlowstochasticOptions] = js.undefined
   /**
     * (Highstock) Simple moving average indicator (SMA). This series requires
     * `linkedTo` option to be set.
@@ -1836,6 +1895,7 @@ object PlotOptions {
     dema: PlotDemaOptions = null,
     dependencywheel: PlotDependencywheelOptions = null,
     dpo: PlotDpoOptions = null,
+    dumbbell: PlotDumbbellOptions = null,
     ema: PlotEmaOptions = null,
     errorbar: PlotErrorbarOptions = null,
     flags: PlotFlagsOptions = null,
@@ -1853,6 +1913,7 @@ object PlotOptions {
     linearregressionangle: PlotLinearregressionangleOptions = null,
     linearregressionintercept: PlotLinearregressioninterceptOptions = null,
     linearregressionslope: PlotLinearregressionslopeOptions = null,
+    lollipop: PlotLollipopOptions = null,
     macd: PlotMacdOptions = null,
     map: PlotMapOptions = null,
     mapbubble: PlotMapbubbleOptions = null,
@@ -1864,6 +1925,7 @@ object PlotOptions {
     networkgraph: PlotNetworkgraphOptions = null,
     ohlc: PlotOhlcOptions = null,
     organization: PlotOrganizationOptions = null,
+    packedBubble: PlotPackedBubbleOptions_ = null,
     packedbubble: PlotPackedbubbleOptions = null,
     pareto: PlotParetoOptions = null,
     pc: PlotPcOptions = null,
@@ -1881,6 +1943,7 @@ object PlotOptions {
     scatter: PlotScatterOptions = null,
     scatter3d: PlotScatter3dOptions = null,
     series: PlotSeriesOptions = null,
+    slowstochastic: PlotSlowstochasticOptions = null,
     sma: PlotSmaOptions = null,
     solidgauge: PlotSolidgaugeOptions = null,
     spline: PlotSplineOptions = null,
@@ -1937,6 +2000,7 @@ object PlotOptions {
     if (dema != null) __obj.updateDynamic("dema")(dema.asInstanceOf[js.Any])
     if (dependencywheel != null) __obj.updateDynamic("dependencywheel")(dependencywheel.asInstanceOf[js.Any])
     if (dpo != null) __obj.updateDynamic("dpo")(dpo.asInstanceOf[js.Any])
+    if (dumbbell != null) __obj.updateDynamic("dumbbell")(dumbbell.asInstanceOf[js.Any])
     if (ema != null) __obj.updateDynamic("ema")(ema.asInstanceOf[js.Any])
     if (errorbar != null) __obj.updateDynamic("errorbar")(errorbar.asInstanceOf[js.Any])
     if (flags != null) __obj.updateDynamic("flags")(flags.asInstanceOf[js.Any])
@@ -1954,6 +2018,7 @@ object PlotOptions {
     if (linearregressionangle != null) __obj.updateDynamic("linearregressionangle")(linearregressionangle.asInstanceOf[js.Any])
     if (linearregressionintercept != null) __obj.updateDynamic("linearregressionintercept")(linearregressionintercept.asInstanceOf[js.Any])
     if (linearregressionslope != null) __obj.updateDynamic("linearregressionslope")(linearregressionslope.asInstanceOf[js.Any])
+    if (lollipop != null) __obj.updateDynamic("lollipop")(lollipop.asInstanceOf[js.Any])
     if (macd != null) __obj.updateDynamic("macd")(macd.asInstanceOf[js.Any])
     if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
     if (mapbubble != null) __obj.updateDynamic("mapbubble")(mapbubble.asInstanceOf[js.Any])
@@ -1965,6 +2030,7 @@ object PlotOptions {
     if (networkgraph != null) __obj.updateDynamic("networkgraph")(networkgraph.asInstanceOf[js.Any])
     if (ohlc != null) __obj.updateDynamic("ohlc")(ohlc.asInstanceOf[js.Any])
     if (organization != null) __obj.updateDynamic("organization")(organization.asInstanceOf[js.Any])
+    if (packedBubble != null) __obj.updateDynamic("packedBubble")(packedBubble.asInstanceOf[js.Any])
     if (packedbubble != null) __obj.updateDynamic("packedbubble")(packedbubble.asInstanceOf[js.Any])
     if (pareto != null) __obj.updateDynamic("pareto")(pareto.asInstanceOf[js.Any])
     if (pc != null) __obj.updateDynamic("pc")(pc.asInstanceOf[js.Any])
@@ -1982,6 +2048,7 @@ object PlotOptions {
     if (scatter != null) __obj.updateDynamic("scatter")(scatter.asInstanceOf[js.Any])
     if (scatter3d != null) __obj.updateDynamic("scatter3d")(scatter3d.asInstanceOf[js.Any])
     if (series != null) __obj.updateDynamic("series")(series.asInstanceOf[js.Any])
+    if (slowstochastic != null) __obj.updateDynamic("slowstochastic")(slowstochastic.asInstanceOf[js.Any])
     if (sma != null) __obj.updateDynamic("sma")(sma.asInstanceOf[js.Any])
     if (solidgauge != null) __obj.updateDynamic("solidgauge")(solidgauge.asInstanceOf[js.Any])
     if (spline != null) __obj.updateDynamic("spline")(spline.asInstanceOf[js.Any])

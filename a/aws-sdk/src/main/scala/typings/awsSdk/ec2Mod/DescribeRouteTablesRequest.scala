@@ -25,7 +25,7 @@ trait DescribeRouteTablesRequest extends js.Object {
   /**
     * One or more route table IDs. Default: Describes all your route tables.
     */
-  var RouteTableIds: js.UndefOr[ValueStringList] = js.native
+  var RouteTableIds: js.UndefOr[RouteTableIdStringList] = js.native
 }
 
 object DescribeRouteTablesRequest {
@@ -35,7 +35,7 @@ object DescribeRouteTablesRequest {
     Filters: FilterList = null,
     MaxResults: Int | scala.Double = null,
     NextToken: String = null,
-    RouteTableIds: ValueStringList = null
+    RouteTableIds: RouteTableIdStringList = null
   ): DescribeRouteTablesRequest = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])

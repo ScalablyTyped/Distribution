@@ -1,12 +1,11 @@
 package typings.blueprintjsCore.breadcrumbsMod
 
+import typings.blueprintjsCore.PartialIOverflowListProps
 import typings.blueprintjsCore.boundaryMod.Boundary
 import typings.blueprintjsCore.breadcrumbMod.IBreadcrumbProps
-import typings.blueprintjsCore.overflowListMod.IOverflowListProps
 import typings.blueprintjsCore.popoverMod.IPopoverProps
 import typings.blueprintjsCore.propsMod.IProps
 import typings.react.mod._Global_.JSX.Element
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -47,7 +46,7 @@ trait IBreadcrumbsProps extends IProps {
     * Props to spread to `OverflowList`. Note that `items`,
     * `overflowRenderer`, and `visibleItemRenderer` cannot be changed.
     */
-  var overflowListProps: js.UndefOr[Partial[IOverflowListProps[IBreadcrumbProps]]] = js.undefined
+  var overflowListProps: js.UndefOr[PartialIOverflowListProps] = js.undefined
   /**
     * Props to spread to the `Popover` showing the overflow menu.
     */
@@ -63,7 +62,7 @@ object IBreadcrumbsProps {
     collapseFrom: Boundary = null,
     currentBreadcrumbRenderer: /* props */ IBreadcrumbProps => Element = null,
     minVisibleItems: Int | Double = null,
-    overflowListProps: Partial[IOverflowListProps[IBreadcrumbProps]] = null,
+    overflowListProps: PartialIOverflowListProps = null,
     popoverProps: IPopoverProps = null
   ): IBreadcrumbsProps = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])

@@ -9,6 +9,11 @@ import scala.scalajs.js.annotation._
 
 trait IEditorScrollbarOptions extends js.Object {
   /**
+    * Always consume mouse wheel events (always call preventDefault() and stopPropagation() on the browser events).
+    * Defaults to true.
+    */
+  var alwaysConsumeMouseWheel: js.UndefOr[Boolean] = js.undefined
+  /**
     * The size of arrows (if displayed).
     * Defaults to 11.
     */
@@ -68,6 +73,7 @@ trait IEditorScrollbarOptions extends js.Object {
 object IEditorScrollbarOptions {
   @scala.inline
   def apply(
+    alwaysConsumeMouseWheel: js.UndefOr[Boolean] = js.undefined,
     arrowSize: Int | Double = null,
     handleMouseWheel: js.UndefOr[Boolean] = js.undefined,
     horizontal: auto | visible | hidden = null,
@@ -81,6 +87,7 @@ object IEditorScrollbarOptions {
     verticalSliderSize: Int | Double = null
   ): IEditorScrollbarOptions = {
     val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(alwaysConsumeMouseWheel)) __obj.updateDynamic("alwaysConsumeMouseWheel")(alwaysConsumeMouseWheel.asInstanceOf[js.Any])
     if (arrowSize != null) __obj.updateDynamic("arrowSize")(arrowSize.asInstanceOf[js.Any])
     if (!js.isUndefined(handleMouseWheel)) __obj.updateDynamic("handleMouseWheel")(handleMouseWheel.asInstanceOf[js.Any])
     if (horizontal != null) __obj.updateDynamic("horizontal")(horizontal.asInstanceOf[js.Any])

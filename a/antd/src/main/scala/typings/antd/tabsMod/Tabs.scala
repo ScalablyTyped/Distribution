@@ -17,6 +17,6 @@ trait Tabs
   def createNewTab(targetKey: typings.react.mod.MouseEvent[HTMLElement, MouseEvent]): Unit = js.native
   def handleChange(activeKey: String): Unit = js.native
   def removeTab(targetKey: String, e: typings.react.mod.MouseEvent[HTMLElement, MouseEvent]): Unit = js.native
-  def renderTabs(hasGetPrefixCls: ConfigConsumerProps): Element = js.native
+  def renderTabs(hasGetPrefixClsDirection: ConfigConsumerProps): Element = js.native
 }
 

@@ -1,7 +1,7 @@
 
 # Scala.js typings for npm-name
 
-Typings are for version 5.5.0
+Typings are for version 6.0.0
 
 ## Library description:
 Check whether a package or organization name is available on npm

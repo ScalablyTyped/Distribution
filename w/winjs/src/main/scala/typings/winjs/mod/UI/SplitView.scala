@@ -1,9 +1,9 @@
 package typings.winjs.mod.UI
 
 import typings.std.HTMLElement
-import typings.winjs.AnonBottomLeft
 import typings.winjs.AnonInline
-import typings.winjs.AnonInlineOverlay
+import typings.winjs.AnonLeft
+import typings.winjs.AnonOverlay
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -36,11 +36,11 @@ object SplitView extends js.Object {
   /**
     * Display options for a SplitView's pane when it is open.
     **/
-  var OpenedDisplayMode: AnonInlineOverlay = js.native
+  var OpenedDisplayMode: AnonOverlay = js.native
   /**
     * Placement options for a SplitView's pane.
     **/
-  var PanePlacement: AnonBottomLeft = js.native
+  var PanePlacement: AnonLeft = js.native
   /**
     * Indicates that the object is compatibile with declarative processing.
     **/

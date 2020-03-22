@@ -23,6 +23,7 @@ import typings.angularCompiler.outputAstMod.JSDocCommentStmt
 import typings.angularCompiler.outputAstMod.LiteralArrayExpr
 import typings.angularCompiler.outputAstMod.LiteralExpr
 import typings.angularCompiler.outputAstMod.LiteralMapExpr
+import typings.angularCompiler.outputAstMod.LocalizedString_
 import typings.angularCompiler.outputAstMod.NotExpr
 import typings.angularCompiler.outputAstMod.ReadKeyExpr
 import typings.angularCompiler.outputAstMod.ReadPropExpr
@@ -120,6 +121,9 @@ object abstractEmitterMod extends js.Object {
     override def visitLiteralMapExpr(ast: LiteralMapExpr, context: js.Any): js.Any = js.native
     def visitLiteralMapExpr(ast: LiteralMapExpr, ctx: EmitterVisitorContext): js.Any = js.native
     /* CompleteClass */
+    override def visitLocalizedString(ast: LocalizedString_, context: js.Any): js.Any = js.native
+    def visitLocalizedString(ast: LocalizedString_, ctx: EmitterVisitorContext): js.Any = js.native
+    /* CompleteClass */
     override def visitNotExpr(ast: NotExpr, context: js.Any): js.Any = js.native
     def visitNotExpr(ast: NotExpr, ctx: EmitterVisitorContext): js.Any = js.native
     /* CompleteClass */
@@ -161,12 +165,10 @@ object abstractEmitterMod extends js.Object {
   class EmitterVisitorContext protected () extends js.Object {
     def this(_indent: Double) = this()
     var _classes: js.Any = js.native
-    val _currentLine: js.Any = js.native
     var _indent: js.Any = js.native
     var _lines: js.Any = js.native
     var _preambleLineCount: js.Any = js.native
-    val currentClass: ClassStmt | Null = js.native
-    val sourceLines: js.Any = js.native
+    def currentClass(): ClassStmt | Null = js.native
     def decIndent(): Unit = js.native
     def incIndent(): Unit = js.native
     def lineIsEmpty(): Boolean = js.native

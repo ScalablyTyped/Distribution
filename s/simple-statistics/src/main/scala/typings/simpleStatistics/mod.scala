@@ -130,7 +130,7 @@ object mod extends js.Object {
   def kernelDensityEstimation(X: js.Array[Double], kernel: Kernels, bandwidthMethod: Double): js.Function1[/* x */ Double, Double] = js.native
   def kernelDensityEstimation(X: js.Array[Double], kernel: Kernels, bandwidthMethod: BandwidthMethods): js.Function1[/* x */ Double, Double] = js.native
   def linearRegression(data: js.Array[js.Array[Double]]): AnonB = js.native
-  def linearRegressionLine(mb: AnonBM): js.Function1[/* x */ Double, Double] = js.native
+  def linearRegressionLine(mb: AnonM): js.Function1[/* x */ Double, Double] = js.native
   def mad(x: js.Array[Double]): Double = js.native
   def max(x: js.Array[Double]): Double = js.native
   def maxSorted(x: js.Array[Double]): Double = js.native

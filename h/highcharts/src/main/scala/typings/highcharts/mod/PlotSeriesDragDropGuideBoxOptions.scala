@@ -9,12 +9,12 @@ trait PlotSeriesDragDropGuideBoxOptions extends js.Object {
     * (Highcharts, Highstock, Highmaps, Gantt) Style options for the guide box
     * default state.
     */
-  var default: js.UndefOr[PlotSeriesDragDropGuideBoxDefaultOptions] = js.undefined
+  var default: js.UndefOr[DragDropGuideBoxOptionsObject] = js.undefined
 }
 
 object PlotSeriesDragDropGuideBoxOptions {
   @scala.inline
-  def apply(default: PlotSeriesDragDropGuideBoxDefaultOptions = null): PlotSeriesDragDropGuideBoxOptions = {
+  def apply(default: DragDropGuideBoxOptionsObject = null): PlotSeriesDragDropGuideBoxOptions = {
     val __obj = js.Dynamic.literal()
     if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotSeriesDragDropGuideBoxOptions]

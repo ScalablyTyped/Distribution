@@ -1,7 +1,7 @@
 
 # Scala.js typings for futoin-hkdf
 
-Typings are for version 1.2.1
+Typings are for version 1.3.1
 
 ## Library description:
 RFC5869: HMAC-based Extract-and-Expand Key Derivation Function (HKDF)

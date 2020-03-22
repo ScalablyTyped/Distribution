@@ -1,7 +1,7 @@
 package typings.atom.linterMod
 
 import typings.atom.AnonFile
-import typings.atom.AnonFilePosition
+import typings.atom.AnonPosition
 import typings.atom.atomStrings.error
 import typings.atom.atomStrings.info
 import typings.atom.atomStrings.warning
@@ -24,7 +24,7 @@ trait Message extends js.Object {
   /** The location of the issue (aka where to highlight). */
   var location: AnonFile
   /** A reference to a different location in the editor. */
-  var reference: js.UndefOr[AnonFilePosition] = js.undefined
+  var reference: js.UndefOr[AnonPosition] = js.undefined
   /** The severity level for the message. */
   var severity: error | warning | info
   /** Possible solutions (which the user can invoke at will). */
@@ -42,7 +42,7 @@ object Message {
     description: String | (js.Function0[js.Promise[String] | String]) = null,
     icon: String = null,
     linterName: String = null,
-    reference: AnonFilePosition = null,
+    reference: AnonPosition = null,
     solutions: js.Array[ReplacementSolution | CallbackSolution] = null,
     url: String = null
   ): Message = {

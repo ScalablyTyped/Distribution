@@ -18,6 +18,9 @@ object InferencePriority extends js.Object {
   sealed trait Circularity extends InferencePriority
   
   @js.native
+  sealed trait ContravariantConditional extends InferencePriority
+  
+  @js.native
   sealed trait HomomorphicMappedType extends InferencePriority
   
   @js.native
@@ -46,37 +49,40 @@ object InferencePriority extends js.Object {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[InferencePriority with Double] = js.native
-  /* 128 */ @js.native
+  /* 256 */ @js.native
   object AlwaysStrict extends TopLevel[AlwaysStrict with Double]
   
   /* -1 */ @js.native
   object Circularity extends TopLevel[Circularity with Double]
   
+  /* 16 */ @js.native
+  object ContravariantConditional extends TopLevel[ContravariantConditional with Double]
+  
   /* 2 */ @js.native
   object HomomorphicMappedType extends TopLevel[HomomorphicMappedType with Double]
   
-  /* 32 */ @js.native
+  /* 64 */ @js.native
   object LiteralKeyof extends TopLevel[LiteralKeyof with Double]
   
   /* 8 */ @js.native
   object MappedTypeConstraint extends TopLevel[MappedTypeConstraint with Double]
   
-  /* 256 */ @js.native
+  /* 512 */ @js.native
   object MaxValue extends TopLevel[MaxValue with Double]
   
   /* 1 */ @js.native
   object NakedTypeVariable extends TopLevel[NakedTypeVariable with Double]
   
-  /* 64 */ @js.native
+  /* 128 */ @js.native
   object NoConstraints extends TopLevel[NoConstraints with Double]
   
   /* 4 */ @js.native
   object PartialHomomorphicMappedType extends TopLevel[PartialHomomorphicMappedType with Double]
   
-  /* 56 */ @js.native
+  /* 104 */ @js.native
   object PriorityImpliesCombination extends TopLevel[PriorityImpliesCombination with Double]
   
-  /* 16 */ @js.native
+  /* 32 */ @js.native
   object ReturnType extends TopLevel[ReturnType with Double]
   
 }

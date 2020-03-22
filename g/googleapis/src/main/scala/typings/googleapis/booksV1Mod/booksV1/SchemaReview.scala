@@ -1,7 +1,7 @@
 package typings.googleapis.booksV1Mod.booksV1
 
-import typings.googleapis.AnonDescriptionExtraDescription
 import typings.googleapis.AnonDisplayNameString
+import typings.googleapis.AnonExtraDescription
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,7 +37,7 @@ trait SchemaReview extends js.Object {
     * Information regarding the source of this review, when the review is not
     * from a Google Books user.
     */
-  var source: js.UndefOr[AnonDescriptionExtraDescription] = js.native
+  var source: js.UndefOr[AnonExtraDescription] = js.native
   /**
     * Title for this review.
     */
@@ -62,7 +62,7 @@ object SchemaReview {
     fullTextUrl: String = null,
     kind: String = null,
     rating: String = null,
-    source: AnonDescriptionExtraDescription = null,
+    source: AnonExtraDescription = null,
     title: String = null,
     `type`: String = null,
     volumeId: String = null

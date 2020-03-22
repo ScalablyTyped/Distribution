@@ -6,64 +6,102 @@ import scala.scalajs.js.annotation._
 
 trait AnonARSAUD extends js.Object {
   var ARS: js.Array[String]
-  var AUD: js.Array[js.UndefOr[String]]
-  var BRL: js.Array[js.UndefOr[String]]
-  var CAD: js.Array[js.UndefOr[String]]
+  var AUD: js.Array[String]
+  var BEF: js.Array[String]
+  var BMD: js.Array[String]
+  var BND: js.Array[String]
+  var BZD: js.Array[String]
+  var CAD: js.Array[String]
+  var CLP: js.Array[String]
   var CNY: js.Array[js.UndefOr[String]]
-  var ESP: js.Array[String]
-  var EUR: js.Array[js.UndefOr[String]]
-  var FKP: js.Array[js.UndefOr[String]]
-  var GBP: js.Array[js.UndefOr[String]]
+  var COP: js.Array[String]
+  var CYP: js.Array[String]
+  var EGP: js.Array[js.UndefOr[String]]
+  var FJD: js.Array[String]
+  var FKP: js.Array[String]
+  var FRF: js.Array[String]
+  var GBP: js.Array[String]
+  var GIP: js.Array[String]
   var HKD: js.Array[js.UndefOr[String]]
-  var ILS: js.Array[js.UndefOr[String]]
-  var INR: js.Array[js.UndefOr[String]]
+  var IEP: js.Array[String]
+  var ILP: js.Array[String]
+  var ITL: js.Array[String]
   var JPY: js.Array[js.UndefOr[String]]
-  var KRW: js.Array[js.UndefOr[String]]
-  var MXN: js.Array[js.UndefOr[String]]
-  var NZD: js.Array[js.UndefOr[String]]
+  var KMF: js.Array[js.UndefOr[String]]
+  var LBP: js.Array[String]
+  var MTP: js.Array[String]
+  var MXN: js.Array[String]
+  var NAD: js.Array[String]
+  var NIO: js.Array[js.UndefOr[String]]
+  var NZD: js.Array[String]
+  var RHD: js.Array[String]
   var RON: js.Array[js.UndefOr[String]]
-  var SSP: js.Array[js.UndefOr[String]]
-  var SYP: js.Array[js.UndefOr[String]]
+  var RWF: js.Array[js.UndefOr[String]]
+  var SBD: js.Array[String]
+  var SGD: js.Array[String]
+  var SRD: js.Array[String]
+  var TOP: js.Array[js.UndefOr[String]]
+  var TTD: js.Array[String]
   var TWD: js.Array[js.UndefOr[String]]
   var USD: js.Array[String]
-  var VEF: js.Array[js.UndefOr[String]]
-  var VND: js.Array[js.UndefOr[String]]
-  var XAF: js.Array[scala.Nothing]
+  var UYU: js.Array[String]
+  var VUV: js.Array[String]
+  var WST: js.Array[String]
   var XCD: js.Array[js.UndefOr[String]]
-  var XOF: js.Array[scala.Nothing]
+  var XPF: js.Array[String]
+  var ZMW: js.Array[js.UndefOr[String]]
 }
 
 object AnonARSAUD {
   @scala.inline
   def apply(
     ARS: js.Array[String],
-    AUD: js.Array[js.UndefOr[String]],
-    BRL: js.Array[js.UndefOr[String]],
-    CAD: js.Array[js.UndefOr[String]],
+    AUD: js.Array[String],
+    BEF: js.Array[String],
+    BMD: js.Array[String],
+    BND: js.Array[String],
+    BZD: js.Array[String],
+    CAD: js.Array[String],
+    CLP: js.Array[String],
     CNY: js.Array[js.UndefOr[String]],
-    ESP: js.Array[String],
-    EUR: js.Array[js.UndefOr[String]],
-    FKP: js.Array[js.UndefOr[String]],
-    GBP: js.Array[js.UndefOr[String]],
+    COP: js.Array[String],
+    CYP: js.Array[String],
+    EGP: js.Array[js.UndefOr[String]],
+    FJD: js.Array[String],
+    FKP: js.Array[String],
+    FRF: js.Array[String],
+    GBP: js.Array[String],
+    GIP: js.Array[String],
     HKD: js.Array[js.UndefOr[String]],
-    ILS: js.Array[js.UndefOr[String]],
-    INR: js.Array[js.UndefOr[String]],
+    IEP: js.Array[String],
+    ILP: js.Array[String],
+    ITL: js.Array[String],
     JPY: js.Array[js.UndefOr[String]],
-    KRW: js.Array[js.UndefOr[String]],
-    MXN: js.Array[js.UndefOr[String]],
-    NZD: js.Array[js.UndefOr[String]],
+    KMF: js.Array[js.UndefOr[String]],
+    LBP: js.Array[String],
+    MTP: js.Array[String],
+    MXN: js.Array[String],
+    NAD: js.Array[String],
+    NIO: js.Array[js.UndefOr[String]],
+    NZD: js.Array[String],
+    RHD: js.Array[String],
     RON: js.Array[js.UndefOr[String]],
-    SSP: js.Array[js.UndefOr[String]],
-    SYP: js.Array[js.UndefOr[String]],
+    RWF: js.Array[js.UndefOr[String]],
+    SBD: js.Array[String],
+    SGD: js.Array[String],
+    SRD: js.Array[String],
+    TOP: js.Array[js.UndefOr[String]],
+    TTD: js.Array[String],
     TWD: js.Array[js.UndefOr[String]],
     USD: js.Array[String],
-    VEF: js.Array[js.UndefOr[String]],
-    VND: js.Array[js.UndefOr[String]],
-    XAF: js.Array[scala.Nothing],
+    UYU: js.Array[String],
+    VUV: js.Array[String],
+    WST: js.Array[String],
     XCD: js.Array[js.UndefOr[String]],
-    XOF: js.Array[scala.Nothing]
+    XPF: js.Array[String],
+    ZMW: js.Array[js.UndefOr[String]]
   ): AnonARSAUD = {
-    val __obj = js.Dynamic.literal(ARS = ARS.asInstanceOf[js.Any], AUD = AUD.asInstanceOf[js.Any], BRL = BRL.asInstanceOf[js.Any], CAD = CAD.asInstanceOf[js.Any], CNY = CNY.asInstanceOf[js.Any], ESP = ESP.asInstanceOf[js.Any], EUR = EUR.asInstanceOf[js.Any], FKP = FKP.asInstanceOf[js.Any], GBP = GBP.asInstanceOf[js.Any], HKD = HKD.asInstanceOf[js.Any], ILS = ILS.asInstanceOf[js.Any], INR = INR.asInstanceOf[js.Any], JPY = JPY.asInstanceOf[js.Any], KRW = KRW.asInstanceOf[js.Any], MXN = MXN.asInstanceOf[js.Any], NZD = NZD.asInstanceOf[js.Any], RON = RON.asInstanceOf[js.Any], SSP = SSP.asInstanceOf[js.Any], SYP = SYP.asInstanceOf[js.Any], TWD = TWD.asInstanceOf[js.Any], USD = USD.asInstanceOf[js.Any], VEF = VEF.asInstanceOf[js.Any], VND = VND.asInstanceOf[js.Any], XAF = XAF.asInstanceOf[js.Any], XCD = XCD.asInstanceOf[js.Any], XOF = XOF.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(ARS = ARS.asInstanceOf[js.Any], AUD = AUD.asInstanceOf[js.Any], BEF = BEF.asInstanceOf[js.Any], BMD = BMD.asInstanceOf[js.Any], BND = BND.asInstanceOf[js.Any], BZD = BZD.asInstanceOf[js.Any], CAD = CAD.asInstanceOf[js.Any], CLP = CLP.asInstanceOf[js.Any], CNY = CNY.asInstanceOf[js.Any], COP = COP.asInstanceOf[js.Any], CYP = CYP.asInstanceOf[js.Any], EGP = EGP.asInstanceOf[js.Any], FJD = FJD.asInstanceOf[js.Any], FKP = FKP.asInstanceOf[js.Any], FRF = FRF.asInstanceOf[js.Any], GBP = GBP.asInstanceOf[js.Any], GIP = GIP.asInstanceOf[js.Any], HKD = HKD.asInstanceOf[js.Any], IEP = IEP.asInstanceOf[js.Any], ILP = ILP.asInstanceOf[js.Any], ITL = ITL.asInstanceOf[js.Any], JPY = JPY.asInstanceOf[js.Any], KMF = KMF.asInstanceOf[js.Any], LBP = LBP.asInstanceOf[js.Any], MTP = MTP.asInstanceOf[js.Any], MXN = MXN.asInstanceOf[js.Any], NAD = NAD.asInstanceOf[js.Any], NIO = NIO.asInstanceOf[js.Any], NZD = NZD.asInstanceOf[js.Any], RHD = RHD.asInstanceOf[js.Any], RON = RON.asInstanceOf[js.Any], RWF = RWF.asInstanceOf[js.Any], SBD = SBD.asInstanceOf[js.Any], SGD = SGD.asInstanceOf[js.Any], SRD = SRD.asInstanceOf[js.Any], TOP = TOP.asInstanceOf[js.Any], TTD = TTD.asInstanceOf[js.Any], TWD = TWD.asInstanceOf[js.Any], USD = USD.asInstanceOf[js.Any], UYU = UYU.asInstanceOf[js.Any], VUV = VUV.asInstanceOf[js.Any], WST = WST.asInstanceOf[js.Any], XCD = XCD.asInstanceOf[js.Any], XPF = XPF.asInstanceOf[js.Any], ZMW = ZMW.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AnonARSAUD]
   }

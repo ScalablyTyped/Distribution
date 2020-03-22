@@ -9,9 +9,7 @@ trait AnonClassName[K, D] extends js.Object {
   var className: js.UndefOr[
     (js.Function1[/* context */ CellContext[K, D], String | Unit | Null]) | String | Null
   ] = js.undefined
-  var renderer: js.UndefOr[
-    (js.Function1[/* context */ CellContext[K, D], AnonInsertHTMLElement | Unit | Null]) | Null
-  ] = js.undefined
+  var renderer: js.UndefOr[(js.Function1[/* context */ CellContext[K, D], Anon1 | Unit | Null]) | Null] = js.undefined
   var style: js.UndefOr[
     (js.Function1[/* context */ CellContext[K, D], String | Unit | Null]) | String | Null
   ] = js.undefined
@@ -21,7 +19,7 @@ object AnonClassName {
   @scala.inline
   def apply[K, D](
     className: (js.Function1[/* context */ CellContext[K, D], String | Unit | Null]) | String = null,
-    renderer: /* context */ CellContext[K, D] => AnonInsertHTMLElement | Unit | Null = null,
+    renderer: /* context */ CellContext[K, D] => Anon1 | Unit | Null = null,
     style: (js.Function1[/* context */ CellContext[K, D], String | Unit | Null]) | String = null
   ): AnonClassName[K, D] = {
     val __obj = js.Dynamic.literal()

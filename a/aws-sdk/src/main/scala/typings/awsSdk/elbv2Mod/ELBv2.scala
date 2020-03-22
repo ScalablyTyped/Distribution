@@ -1,6 +1,6 @@
 package typings.awsSdk.elbv2Mod
 
-import typings.awsSdk.AnonWaiter
+import typings.awsSdk.DescribeLoadBalancersInpu
 import typings.awsSdk.awsSdkStrings.loadBalancerAvailable
 import typings.awsSdk.awsSdkStrings.loadBalancerExists
 import typings.awsSdk.awsSdkStrings.loadBalancersDeleted
@@ -471,11 +471,11 @@ trait ELBv2 extends Service {
     * Waits for the loadBalancerAvailable state by periodically calling the underlying ELBv2.describeLoadBalancersoperation every 15 seconds (at most 40 times).
     */
   @JSName("waitFor")
-  def waitFor_loadBalancerAvailable(state: loadBalancerAvailable, params: DescribeLoadBalancersInput with AnonWaiter): Request[DescribeLoadBalancersOutput, AWSError] = js.native
+  def waitFor_loadBalancerAvailable(state: loadBalancerAvailable, params: DescribeLoadBalancersInpu): Request[DescribeLoadBalancersOutput, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_loadBalancerAvailable(
     state: loadBalancerAvailable,
-    params: DescribeLoadBalancersInput with AnonWaiter,
+    params: DescribeLoadBalancersInpu,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeLoadBalancersOutput, Unit]
   ): Request[DescribeLoadBalancersOutput, AWSError] = js.native
   /**
@@ -492,11 +492,11 @@ trait ELBv2 extends Service {
     * Waits for the loadBalancerExists state by periodically calling the underlying ELBv2.describeLoadBalancersoperation every 15 seconds (at most 40 times).
     */
   @JSName("waitFor")
-  def waitFor_loadBalancerExists(state: loadBalancerExists, params: DescribeLoadBalancersInput with AnonWaiter): Request[DescribeLoadBalancersOutput, AWSError] = js.native
+  def waitFor_loadBalancerExists(state: loadBalancerExists, params: DescribeLoadBalancersInpu): Request[DescribeLoadBalancersOutput, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_loadBalancerExists(
     state: loadBalancerExists,
-    params: DescribeLoadBalancersInput with AnonWaiter,
+    params: DescribeLoadBalancersInpu,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeLoadBalancersOutput, Unit]
   ): Request[DescribeLoadBalancersOutput, AWSError] = js.native
   /**
@@ -513,11 +513,11 @@ trait ELBv2 extends Service {
     * Waits for the loadBalancersDeleted state by periodically calling the underlying ELBv2.describeLoadBalancersoperation every 15 seconds (at most 40 times).
     */
   @JSName("waitFor")
-  def waitFor_loadBalancersDeleted(state: loadBalancersDeleted, params: DescribeLoadBalancersInput with AnonWaiter): Request[DescribeLoadBalancersOutput, AWSError] = js.native
+  def waitFor_loadBalancersDeleted(state: loadBalancersDeleted, params: DescribeLoadBalancersInpu): Request[DescribeLoadBalancersOutput, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_loadBalancersDeleted(
     state: loadBalancersDeleted,
-    params: DescribeLoadBalancersInput with AnonWaiter,
+    params: DescribeLoadBalancersInpu,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeLoadBalancersOutput, Unit]
   ): Request[DescribeLoadBalancersOutput, AWSError] = js.native
   /**
@@ -534,11 +534,11 @@ trait ELBv2 extends Service {
     * Waits for the targetDeregistered state by periodically calling the underlying ELBv2.describeTargetHealthoperation every 15 seconds (at most 40 times).
     */
   @JSName("waitFor")
-  def waitFor_targetDeregistered(state: targetDeregistered, params: DescribeTargetHealthInput with AnonWaiter): Request[DescribeTargetHealthOutput, AWSError] = js.native
+  def waitFor_targetDeregistered(state: targetDeregistered, params: typings.awsSdk.DescribeTargetHealthInput): Request[DescribeTargetHealthOutput, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_targetDeregistered(
     state: targetDeregistered,
-    params: DescribeTargetHealthInput with AnonWaiter,
+    params: typings.awsSdk.DescribeTargetHealthInput,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeTargetHealthOutput, Unit]
   ): Request[DescribeTargetHealthOutput, AWSError] = js.native
   /**
@@ -555,11 +555,11 @@ trait ELBv2 extends Service {
     * Waits for the targetInService state by periodically calling the underlying ELBv2.describeTargetHealthoperation every 15 seconds (at most 40 times).
     */
   @JSName("waitFor")
-  def waitFor_targetInService(state: targetInService, params: DescribeTargetHealthInput with AnonWaiter): Request[DescribeTargetHealthOutput, AWSError] = js.native
+  def waitFor_targetInService(state: targetInService, params: typings.awsSdk.DescribeTargetHealthInput): Request[DescribeTargetHealthOutput, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_targetInService(
     state: targetInService,
-    params: DescribeTargetHealthInput with AnonWaiter,
+    params: typings.awsSdk.DescribeTargetHealthInput,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeTargetHealthOutput, Unit]
   ): Request[DescribeTargetHealthOutput, AWSError] = js.native
 }

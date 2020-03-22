@@ -11,7 +11,6 @@ import scala.scalajs.js.annotation._
 trait AffixProps extends js.Object {
   var children: ReactElement
   var className: js.UndefOr[String] = js.undefined
-  var offset: js.UndefOr[Double] = js.undefined
   /** 距离窗口底部达到指定偏移量后触发 */
   var offsetBottom: js.UndefOr[Double] = js.undefined
   /**
@@ -31,7 +30,6 @@ object AffixProps {
   def apply(
     children: ReactElement,
     className: String = null,
-    offset: Int | Double = null,
     offsetBottom: Int | Double = null,
     offsetTop: Int | Double = null,
     onChange: /* affixed */ js.UndefOr[Boolean] => Unit = null,
@@ -41,7 +39,6 @@ object AffixProps {
   ): AffixProps = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (offsetBottom != null) __obj.updateDynamic("offsetBottom")(offsetBottom.asInstanceOf[js.Any])
     if (offsetTop != null) __obj.updateDynamic("offsetTop")(offsetTop.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))

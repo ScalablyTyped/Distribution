@@ -16,6 +16,8 @@ trait DrawerProps extends js.Object {
   var destroyOnClose: js.UndefOr[Boolean] = js.undefined
   /** wrapper dom node style of header and body */
   var drawerStyle: js.UndefOr[CSSProperties] = js.undefined
+  var footer: js.UndefOr[ReactNode] = js.undefined
+  var footerStyle: js.UndefOr[CSSProperties] = js.undefined
   var getContainer: js.UndefOr[String | HTMLElement | getContainerFunc | `false`] = js.undefined
   var handler: js.UndefOr[ReactNode] = js.undefined
   var headerStyle: js.UndefOr[CSSProperties] = js.undefined
@@ -32,7 +34,6 @@ trait DrawerProps extends js.Object {
   var title: js.UndefOr[ReactNode] = js.undefined
   var visible: js.UndefOr[Boolean] = js.undefined
   var width: js.UndefOr[Double | String] = js.undefined
-  var wrapClassName: js.UndefOr[String] = js.undefined
   var zIndex: js.UndefOr[Double] = js.undefined
 }
 
@@ -45,6 +46,8 @@ object DrawerProps {
     closable: js.UndefOr[Boolean] = js.undefined,
     destroyOnClose: js.UndefOr[Boolean] = js.undefined,
     drawerStyle: CSSProperties = null,
+    footer: ReactNode = null,
+    footerStyle: CSSProperties = null,
     getContainer: String | HTMLElement | getContainerFunc | `false` = null,
     handler: ReactNode = null,
     headerStyle: CSSProperties = null,
@@ -61,7 +64,6 @@ object DrawerProps {
     title: ReactNode = null,
     visible: js.UndefOr[Boolean] = js.undefined,
     width: Double | String = null,
-    wrapClassName: String = null,
     zIndex: Int | Double = null
   ): DrawerProps = {
     val __obj = js.Dynamic.literal()
@@ -71,6 +73,8 @@ object DrawerProps {
     if (!js.isUndefined(closable)) __obj.updateDynamic("closable")(closable.asInstanceOf[js.Any])
     if (!js.isUndefined(destroyOnClose)) __obj.updateDynamic("destroyOnClose")(destroyOnClose.asInstanceOf[js.Any])
     if (drawerStyle != null) __obj.updateDynamic("drawerStyle")(drawerStyle.asInstanceOf[js.Any])
+    if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
+    if (footerStyle != null) __obj.updateDynamic("footerStyle")(footerStyle.asInstanceOf[js.Any])
     if (getContainer != null) __obj.updateDynamic("getContainer")(getContainer.asInstanceOf[js.Any])
     if (handler != null) __obj.updateDynamic("handler")(handler.asInstanceOf[js.Any])
     if (headerStyle != null) __obj.updateDynamic("headerStyle")(headerStyle.asInstanceOf[js.Any])
@@ -87,7 +91,6 @@ object DrawerProps {
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (wrapClassName != null) __obj.updateDynamic("wrapClassName")(wrapClassName.asInstanceOf[js.Any])
     if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrawerProps]
   }

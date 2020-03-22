@@ -13,7 +13,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object integrationsEnterpriseMod extends js.Object {
   @js.native
-  class EnterpriseIntegrationConfig () extends BaseConfig[EnterpriseProjectIntegration]
+  class EnterpriseIntegrationConfig () extends BaseConfig[EnterpriseProjectIntegration] {
+    def provideDefaults(c: PartialReadonlyEnterprise): EnterpriseProjectIntegration = js.native
+  }
   
   @js.native
   class Integration ()

@@ -31,6 +31,9 @@ trait grommetProps {
   def NavProps: BoxProps.type = typings.grommet.boxMod.BoxProps
   type NavProps = BoxProps
   @scala.inline
+  def RoutedAnchorProps: RoutedAnchorPropsOmitAnch.type = typings.grommet.RoutedAnchorPropsOmitAnch
+  type RoutedAnchorProps = RoutedAnchorPropsOmitAnch
+  @scala.inline
   def SelectProps: typings.grommet.selectMod.SelectProps.type = typings.grommet.selectMod.SelectProps
   type SelectProps = typings.grommet.selectMod.SelectProps
   @scala.inline

@@ -1,15 +1,13 @@
 organization := "org.scalablytyped"
 name := "saxes"
-version := "3.1.9-74912e"
-scalaVersion := "2.12.8"
+version := "3.1.11-eb0cbb"
+scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
-  "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "std" % "3.4-d52857",
-  "org.scalablytyped" %%% "xmlchars" % "1.3.1-342a94")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
+  "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false
-scalacOptions += "-P:scalajs:sjsDefinedByDefault"
+scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
-        
+resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

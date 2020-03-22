@@ -9,14 +9,14 @@ import scala.scalajs.js.annotation._
 object libLocaleArEGMod extends js.Object {
   @js.native
   object default extends js.Object {
-    var Calendar: AnonDateFormat = js.native
-    var DatePicker: AnonDateFormat = js.native
+    var Calendar: AnonDateTimeFormat = js.native
+    var DatePicker: AnonDateTimeFormat = js.native
     var Empty: AnonDescription = js.native
     var Modal: AnonCancelText = js.native
     var Pagination: js.Any = js.native
-    var Popconfirm: AnonCancelTextOkText = js.native
+    var Popconfirm: AnonOkText = js.native
     var Table: AnonFilterConfirm = js.native
-    var TimePicker: AnonPlaceholder = js.native
+    var TimePicker: AnonPlaceholderString = js.native
     var Transfer: AnonItemUnit = js.native
     var Upload: AnonDownloadFile = js.native
     var locale: String = js.native

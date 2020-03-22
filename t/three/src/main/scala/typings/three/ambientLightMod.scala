@@ -2,6 +2,7 @@ package typings.three
 
 import typings.three.colorMod.Color
 import typings.three.lightMod.Light
+import typings.three.threeBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,6 +22,7 @@ object ambientLightMod extends js.Object {
     def this(color: String, intensity: Double) = this()
     def this(color: Double, intensity: Double) = this()
     def this(color: Color, intensity: Double) = this()
+    val isAmbientLight: `true` = js.native
   }
   
 }

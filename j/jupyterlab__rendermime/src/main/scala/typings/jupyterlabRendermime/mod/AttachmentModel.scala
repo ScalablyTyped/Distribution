@@ -1,8 +1,8 @@
 package typings.jupyterlabRendermime.mod
 
-import typings.jupyterlabCoreutils.nbformatMod.nbformat.IMimeBundle
+import typings.jupyterlabNbformat.mod.IMimeBundle
 import typings.jupyterlabRendermime.attachmentmodelMod.IAttachmentModel.IOptions
-import typings.phosphorCoreutils.jsonMod.JSONObject
+import typings.luminoCoreutils.jsonMod.PartialJSONObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,6 +27,6 @@ object AttachmentModel extends js.Object {
     *
     * @returns - The data for the payload.
     */
-  def getData(bundle: IMimeBundle): JSONObject = js.native
+  def getData(bundle: IMimeBundle): PartialJSONObject = js.native
 }
 

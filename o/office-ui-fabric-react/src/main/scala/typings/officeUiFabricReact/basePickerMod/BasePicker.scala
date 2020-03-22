@@ -1,11 +1,11 @@
 package typings.officeUiFabricReact.basePickerMod
 
 import org.scalablytyped.runtime.Instantiable1
+import typings.fluentuiReactFocus.focusZoneTypesMod.IFocusZone
 import typings.officeUiFabricReact.autofillMod.Autofill
 import typings.officeUiFabricReact.autofillTypesMod.IAutofill
 import typings.officeUiFabricReact.basePickerTypesMod.IBasePicker
 import typings.officeUiFabricReact.basePickerTypesMod.IBasePickerProps
-import typings.officeUiFabricReact.focusZoneTypesMod.IFocusZone
 import typings.officeUiFabricReact.pickerItemTypesMod.IPickerItemProps
 import typings.officeUiFabricReact.selectionMod.Selection
 import typings.officeUiFabricReact.suggestionsControllerMod.SuggestionsController

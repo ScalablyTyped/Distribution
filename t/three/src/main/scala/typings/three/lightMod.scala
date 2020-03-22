@@ -19,7 +19,7 @@ object lightMod extends js.Object {
     def this(hex: Double, intensity: Double) = this()
     var color: Color = js.native
     var intensity: Double = js.native
-    var isLight: `true` = js.native
+    val isLight: `true` = js.native
     var shadow: LightShadow = js.native
     /**
     	 * @deprecated Use shadow.bias instead.

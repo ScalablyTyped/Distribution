@@ -8,10 +8,9 @@ import scala.scalajs.js.annotation._
 
 trait PlotTimelineOptions extends js.Object {
   /**
-    * (Highcharts) Accessibility options for a series. Requires the
-    * accessibility module.
+    * (Highcharts) Accessibility options for a series.
     */
-  var accessibility: js.UndefOr[js.Object | PlotTimelineAccessibilityOptions] = js.undefined
+  var accessibility: js.UndefOr[SeriesAccessibilityOptionsObject] = js.undefined
   /**
     * (Highmaps) Whether all areas of the map defined in `mapData` should be
     * rendered. If `true`, areas which don't correspond to a data point, are
@@ -44,7 +43,7 @@ trait PlotTimelineOptions extends js.Object {
     * Due to poor performance, animation is disabled in old IE browsers for
     * several chart types.
     */
-  var animation: js.UndefOr[Boolean | AnimationOptionsObject | PlotTimelineAnimationOptions] = js.undefined
+  var animation: js.UndefOr[Boolean | AnimationOptionsObject] = js.undefined
   /**
     * (Highcharts) Sets the color blending in the boost module.
     */
@@ -130,18 +129,19 @@ trait PlotTimelineOptions extends js.Object {
   var compareBase: js.UndefOr[`0` | `100`] = js.undefined
   /**
     * (Highstock) Defines if comparison should start from the first point
-    * within the visible range or should start from the first point (see online
-    * documentation for example) the range. In other words, this flag
-    * determines if first point within the visible range will have 0%
-    * (`compareStart=true`) or should have been already calculated according to
-    * the previous point (`compareStart=false`).
+    * within the visible range or should start from the first point **before**
+    * the range.
+    *
+    * In other words, this flag determines if first point within the visible
+    * range will have 0% (`compareStart=true`) or should have been already
+    * calculated according to the previous point (`compareStart=false`).
     */
   var compareStart: js.UndefOr[Boolean] = js.undefined
   /**
     * (Gantt) Override Pathfinder connector options for a series. Requires
     * Highcharts Gantt to be loaded.
     */
-  var connectors: js.UndefOr[PlotTimelineConnectorsOptions] = js.undefined
+  var connectors: js.UndefOr[SeriesConnectorsOptionsObject] = js.undefined
   /**
     * (Highcharts) You can set the cursor to "pointer" if you have click events
     * attached to the series, to signal to the user that the points and lines
@@ -165,10 +165,10 @@ trait PlotTimelineOptions extends js.Object {
     * of the first point instance are copied over to the group point. This can
     * be altered through a custom `approximation` callback function.
     */
-  var dataGrouping: js.UndefOr[PlotTimelineDataGroupingOptions] = js.undefined
+  var dataGrouping: js.UndefOr[DataGroupingOptionsObject] = js.undefined
   /**
-    * (Highcharts) Options for the series data labels, appearing next to each
-    * data point.
+    * (Highcharts, Highstock, Highmaps, Gantt) Options for the series data
+    * labels, appearing next to each data point.
     *
     * Since v6.2.0, multiple data labels can be applied to each single point by
     * defining them as an array of configs.
@@ -177,9 +177,11 @@ trait PlotTimelineOptions extends js.Object {
     * `.highcharts-data-label-box` and `.highcharts-data-label` class names
     * (see example).
     */
-  var dataLabels: js.UndefOr[
-    PlotTimelineDataLabelsOptions | TimelineDataLabelsOptionsObject | js.Array[TimelineDataLabelsOptionsObject]
-  ] = js.undefined
+  var dataLabels: js.UndefOr[TimelineDataLabelsOptionsObject | js.Array[TimelineDataLabelsOptionsObject]] = js.undefined
+  /**
+    * (Highcharts, Highstock) Options for the series data sorting.
+    */
+  var dataSorting: js.UndefOr[DataSortingOptionsObject | PlotTimelineDataSortingOptions] = js.undefined
   /**
     * (Highcharts) A description of the series to add to the screen reader
     * information about the series.
@@ -191,7 +193,7 @@ trait PlotTimelineOptions extends js.Object {
     * `dragDrop` API structure, the module fires three events, point.dragStart,
     * point.drag and point.drop.
     */
-  var dragDrop: js.UndefOr[PlotTimelineDragDropOptions] = js.undefined
+  var dragDrop: js.UndefOr[SeriesDragDropOptionsObject] = js.undefined
   /**
     * (Highcharts) Enable or disable the mouse tracking for a specific series.
     * This includes point tooltips and click events on graphs and points. For
@@ -203,7 +205,7 @@ trait PlotTimelineOptions extends js.Object {
     * hooks can also be attached to the series at run time using the
     * `Highcharts.addEvent` function.
     */
-  var events: js.UndefOr[PlotTimelineEventsOptions] = js.undefined
+  var events: js.UndefOr[SeriesEventsOptionsObject] = js.undefined
   /**
     * (Highstock) Defines when to display a gap in the graph, together with the
     * gapUnit option.
@@ -274,15 +276,15 @@ trait PlotTimelineOptions extends js.Object {
     * The series labels currently work with series types having a `graph` or an
     * `area`.
     */
-  var label: js.UndefOr[PlotTimelineLabelOptions] = js.undefined
+  var label: js.UndefOr[SeriesLabelOptionsObject] = js.undefined
   /**
     * (Highstock) The line marks the last price from all points.
     */
-  var lastPrice: js.UndefOr[PlotTimelineLastPriceOptions] = js.undefined
+  var lastPrice: js.UndefOr[SeriesLastPriceOptionsObject] = js.undefined
   /**
     * (Highstock) The line marks the last price from visible range of points.
     */
-  var lastVisiblePrice: js.UndefOr[PlotTimelineLastVisiblePriceOptions] = js.undefined
+  var lastVisiblePrice: js.UndefOr[SeriesLastVisiblePriceOptionsObject] = js.undefined
   var legendType: js.UndefOr[String] = js.undefined
   var lineWidth: js.UndefOr[Double] = js.undefined
   /**
@@ -296,6 +298,10 @@ trait PlotTimelineOptions extends js.Object {
     * Additionally, the value can be ":previous" to link to the previous
     * series. When two series are linked, only the first one appears in the
     * legend. Toggling the visibility of this also toggles the linked series.
+    *
+    * If master series uses data sorting and linked series does not have its
+    * own sorting definition, the linked series will be sorted in the same
+    * order as the master one.
     */
   var linkedTo: js.UndefOr[String] = js.undefined
   /**
@@ -307,7 +313,7 @@ trait PlotTimelineOptions extends js.Object {
     * In styled mode, the markers can be styled with the `.highcharts-point`,
     * `.highcharts-point-hover` and `.highcharts-point-select` class names.
     */
-  var marker: js.UndefOr[PlotTimelineMarkerOptions] = js.undefined
+  var marker: js.UndefOr[PointMarkerOptionsObject] = js.undefined
   /**
     * (Highstock) Options for the corresponding navigator series if
     * `showInNavigator` is `true` for this series. Available options are the
@@ -325,7 +331,7 @@ trait PlotTimelineOptions extends js.Object {
   /**
     * (Highcharts) Properties for each single point.
     */
-  var point: js.UndefOr[PlotTimelinePointOptions] = js.undefined
+  var point: js.UndefOr[PlotSeriesPointOptions] = js.undefined
   /**
     * (Highcharts) Same as accessibility.pointDescriptionFormatter, but for an
     * individual series. Overrides the chart wide configuration.
@@ -375,7 +381,7 @@ trait PlotTimelineOptions extends js.Object {
     * the points in this series for keyboard navigation.
     */
   var skipKeyboardNavigation: js.UndefOr[Boolean] = js.undefined
-  var states: js.UndefOr[PlotTimelineStatesOptions] = js.undefined
+  var states: js.UndefOr[SeriesStatesOptionsObject] = js.undefined
   /**
     * (Highcharts) Sticky tracking of mouse events. When true, the `mouseOut`
     * event on a series isn't triggered until the mouse moves over another
@@ -395,7 +401,7 @@ trait PlotTimelineOptions extends js.Object {
     * single series. Properties are inherited from tooltip, but only the
     * following properties can be defined on a series level.
     */
-  var tooltip: js.UndefOr[PlotTimelineTooltipOptions] = js.undefined
+  var tooltip: js.UndefOr[SeriesTooltipOptionsObject] = js.undefined
   /**
     * (Highstock) The parameter allows setting line series type and use OHLC
     * indicators. Data in OHLC format is required.
@@ -414,10 +420,10 @@ trait PlotTimelineOptions extends js.Object {
 object PlotTimelineOptions {
   @scala.inline
   def apply(
-    accessibility: js.Object | PlotTimelineAccessibilityOptions = null,
+    accessibility: SeriesAccessibilityOptionsObject = null,
     allAreas: js.UndefOr[Boolean] = js.undefined,
     allowPointSelect: js.UndefOr[Boolean] = js.undefined,
-    animation: Boolean | AnimationOptionsObject | PlotTimelineAnimationOptions = null,
+    animation: Boolean | AnimationOptionsObject = null,
     boostBlending: OptionsBoostBlendingValue = null,
     borderColor: ColorString | GradientColorObject | PatternObject = null,
     borderWidth: Int | Double = null,
@@ -431,31 +437,32 @@ object PlotTimelineOptions {
     compare: String = null,
     compareBase: `0` | `100` = null,
     compareStart: js.UndefOr[Boolean] = js.undefined,
-    connectors: PlotTimelineConnectorsOptions = null,
+    connectors: SeriesConnectorsOptionsObject = null,
     cursor: String | CursorValue = null,
-    dataGrouping: PlotTimelineDataGroupingOptions = null,
-    dataLabels: PlotTimelineDataLabelsOptions | TimelineDataLabelsOptionsObject | js.Array[TimelineDataLabelsOptionsObject] = null,
+    dataGrouping: DataGroupingOptionsObject = null,
+    dataLabels: TimelineDataLabelsOptionsObject | js.Array[TimelineDataLabelsOptionsObject] = null,
+    dataSorting: DataSortingOptionsObject | PlotTimelineDataSortingOptions = null,
     description: String = null,
-    dragDrop: PlotTimelineDragDropOptions = null,
+    dragDrop: SeriesDragDropOptionsObject = null,
     enableMouseTracking: js.UndefOr[Boolean] = js.undefined,
-    events: PlotTimelineEventsOptions = null,
+    events: SeriesEventsOptionsObject = null,
     gapSize: Int | Double = null,
     gapUnit: OptionsGapUnitValue = null,
     ignoreHiddenPoint: js.UndefOr[Boolean] = js.undefined,
     includeInDataExport: js.UndefOr[Boolean] = js.undefined,
     joinBy: String | js.Array[String] = null,
     keys: js.Array[String] = null,
-    label: PlotTimelineLabelOptions = null,
-    lastPrice: PlotTimelineLastPriceOptions = null,
-    lastVisiblePrice: PlotTimelineLastVisiblePriceOptions = null,
+    label: SeriesLabelOptionsObject = null,
+    lastPrice: SeriesLastPriceOptionsObject = null,
+    lastVisiblePrice: SeriesLastVisiblePriceOptionsObject = null,
     legendType: String = null,
     lineWidth: Int | Double = null,
     linecap: SeriesLinecapValue = null,
     linkedTo: String = null,
-    marker: PlotTimelineMarkerOptions = null,
+    marker: PointMarkerOptionsObject = null,
     navigatorOptions: PlotSeriesOptions = null,
     opacity: Int | Double = null,
-    point: PlotTimelinePointOptions = null,
+    point: PlotSeriesPointOptions = null,
     pointDescriptionFormatter: js.Function = null,
     pointRange: Int | Double = null,
     selected: js.UndefOr[Boolean] = js.undefined,
@@ -464,9 +471,9 @@ object PlotTimelineOptions {
     showInLegend: js.UndefOr[Boolean] = js.undefined,
     showInNavigator: js.UndefOr[Boolean] = js.undefined,
     skipKeyboardNavigation: js.UndefOr[Boolean] = js.undefined,
-    states: PlotTimelineStatesOptions = null,
+    states: SeriesStatesOptionsObject = null,
     stickyTracking: js.UndefOr[Boolean] = js.undefined,
-    tooltip: PlotTimelineTooltipOptions = null,
+    tooltip: SeriesTooltipOptionsObject = null,
     useOhlcData: js.UndefOr[Boolean] = js.undefined,
     visible: js.UndefOr[Boolean] = js.undefined,
     zIndex: Int | Double = null
@@ -493,6 +500,7 @@ object PlotTimelineOptions {
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
     if (dataGrouping != null) __obj.updateDynamic("dataGrouping")(dataGrouping.asInstanceOf[js.Any])
     if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
+    if (dataSorting != null) __obj.updateDynamic("dataSorting")(dataSorting.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (dragDrop != null) __obj.updateDynamic("dragDrop")(dragDrop.asInstanceOf[js.Any])
     if (!js.isUndefined(enableMouseTracking)) __obj.updateDynamic("enableMouseTracking")(enableMouseTracking.asInstanceOf[js.Any])

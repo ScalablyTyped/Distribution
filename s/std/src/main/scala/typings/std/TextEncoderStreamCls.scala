@@ -17,8 +17,11 @@ class TextEncoderStreamCls () extends TextEncoderStream {
     */
   /* CompleteClass */
   override val readable: ReadableStream[_] = js.native
+  /* CompleteClass */
+  @JSName("readable")
+  override val readable_TextEncoderStream: ReadableStream[Uint8Array] = js.native
   /**
-    * Returns a writable stream which accepts BufferSource chunks and runs them through encoding's decoder before making them available to readable.
+    * Returns a writable stream which accepts [AllowShared] BufferSource chunks and runs them through encoding's decoder before making them available to readable.
     * 
     * Typically this will be used via the pipeThrough() method on a ReadableStream source.
     * 
@@ -33,5 +36,8 @@ class TextEncoderStreamCls () extends TextEncoderStream {
     */
   /* CompleteClass */
   override val writable: WritableStream[_] = js.native
+  /* CompleteClass */
+  @JSName("writable")
+  override val writable_TextEncoderStream: WritableStream[java.lang.String] = js.native
 }
 

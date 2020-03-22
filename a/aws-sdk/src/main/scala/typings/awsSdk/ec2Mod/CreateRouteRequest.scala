@@ -25,7 +25,7 @@ trait CreateRouteRequest extends js.Object {
   /**
     * The ID of an internet gateway or virtual private gateway attached to your VPC.
     */
-  var GatewayId: js.UndefOr[RouteTableGatewayId] = js.native
+  var GatewayId: js.UndefOr[RouteGatewayId] = js.native
   /**
     * The ID of a NAT instance in your VPC. The operation fails if you specify an instance ID unless exactly one network interface is attached.
     */
@@ -33,7 +33,7 @@ trait CreateRouteRequest extends js.Object {
   /**
     * The ID of the local gateway.
     */
-  var LocalGatewayId: js.UndefOr[String] = js.native
+  var LocalGatewayId: js.UndefOr[typings.awsSdk.ec2Mod.LocalGatewayId] = js.native
   /**
     * [IPv4 traffic only] The ID of a NAT gateway.
     */
@@ -64,9 +64,9 @@ object CreateRouteRequest {
     DestinationIpv6CidrBlock: String = null,
     DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     EgressOnlyInternetGatewayId: EgressOnlyInternetGatewayId = null,
-    GatewayId: RouteTableGatewayId = null,
+    GatewayId: RouteGatewayId = null,
     InstanceId: InstanceId = null,
-    LocalGatewayId: String = null,
+    LocalGatewayId: LocalGatewayId = null,
     NatGatewayId: NatGatewayId = null,
     NetworkInterfaceId: NetworkInterfaceId = null,
     TransitGatewayId: TransitGatewayId = null,

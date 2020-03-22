@@ -1,12 +1,12 @@
 package typings.echarts.echarts.EChartOption
 
-import typings.echarts.AnonAlignBackgroundColorBorderColorBorderRadius
-import typings.echarts.AnonAnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdateAnimationThresholdData
-import typings.echarts.AnonAnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdateAnimationThresholdDataItemStyle
-import typings.echarts.AnonAnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdateAnimationThresholdDataLabel
+import typings.echarts.AnonAnimationAnimationDelay
+import typings.echarts.AnonAnimationDelayAnimationDelayUpdate
 import typings.echarts.AnonAreaColorEmphasis
-import typings.echarts.AnonBackgroundColorBorderColor
-import typings.echarts.AnonMaxMin
+import typings.echarts.AnonBorderWidth
+import typings.echarts.AnonExtraCssText
+import typings.echarts.AnonMin
+import typings.echarts.AnonPrecision
 import typings.echarts.echarts.EChartOption.SeriesMap.DataObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -191,7 +191,7 @@ trait SeriesMap_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-map.label
     */
-  var label: js.UndefOr[AnonAlignBackgroundColorBorderColorBorderRadius] = js.undefined
+  var label: js.UndefOr[AnonBorderWidth] = js.undefined
   /**
     * `layoutCenter` and `layoutSize` provides layout strategy other
     * than `left/right/top/bottom/width/height`.
@@ -304,27 +304,21 @@ trait SeriesMap_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-map.markArea
     */
-  var markArea: js.UndefOr[
-    AnonAnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdateAnimationThresholdDataItemStyle
-  ] = js.undefined
+  var markArea: js.UndefOr[AnonAnimationDelayAnimationDelayUpdate] = js.undefined
   /**
     * Use a line in the chart to illustrate.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-map.markLine
     */
-  var markLine: js.UndefOr[
-    AnonAnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdateAnimationThresholdDataLabel
-  ] = js.undefined
+  var markLine: js.UndefOr[AnonPrecision] = js.undefined
   /**
     * Mark point in a chart.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-map.markPoint
     */
-  var markPoint: js.UndefOr[
-    AnonAnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdateAnimationThresholdData
-  ] = js.undefined
+  var markPoint: js.UndefOr[AnonAnimationAnimationDelay] = js.undefined
   /**
     * Series name used for displaying in
     * [tooltip](https://echarts.apache.org/en/option.html#tooltip)
@@ -381,7 +375,7 @@ trait SeriesMap_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-map.scaleLimit
     */
-  var scaleLimit: js.UndefOr[AnonMaxMin] = js.undefined
+  var scaleLimit: js.UndefOr[AnonMin] = js.undefined
   /**
     * Selected mode decides whether multiple selecting is supported.
     * By default, `false` is used for disabling selection.
@@ -439,7 +433,7 @@ trait SeriesMap_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-map.tooltip
     */
-  var tooltip: js.UndefOr[AnonBackgroundColorBorderColor] = js.undefined
+  var tooltip: js.UndefOr[AnonExtraCssText] = js.undefined
   /**
     * Distance between component and the top side of the container.
     *
@@ -518,25 +512,25 @@ object SeriesMap_ {
     geoIndex: Int | Double = null,
     id: String = null,
     itemStyle: AnonAreaColorEmphasis = null,
-    label: AnonAlignBackgroundColorBorderColorBorderRadius = null,
+    label: AnonBorderWidth = null,
     layoutCenter: js.Array[_] = null,
     layoutSize: Double | String = null,
     left: Double | String = null,
     map: String = null,
     mapValueCalculation: String = null,
-    markArea: AnonAnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdateAnimationThresholdDataItemStyle = null,
-    markLine: AnonAnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdateAnimationThresholdDataLabel = null,
-    markPoint: AnonAnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdateAnimationThresholdData = null,
+    markArea: AnonAnimationDelayAnimationDelayUpdate = null,
+    markLine: AnonPrecision = null,
+    markPoint: AnonAnimationAnimationDelay = null,
     name: String = null,
     nameMap: js.Object = null,
     right: Double | String = null,
     roam: Boolean | String = null,
-    scaleLimit: AnonMaxMin = null,
+    scaleLimit: AnonMin = null,
     selectedMode: Boolean | String = null,
     seriesLayoutBy: String = null,
     showLegendSymbol: js.UndefOr[Boolean] = js.undefined,
     silent: js.UndefOr[Boolean] = js.undefined,
-    tooltip: AnonBackgroundColorBorderColor = null,
+    tooltip: AnonExtraCssText = null,
     top: Double | String = null,
     `type`: String = null,
     z: Int | Double = null,

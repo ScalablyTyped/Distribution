@@ -2,8 +2,8 @@ package typings.jupyterlabTooltip.tokensMod.ITooltipManager
 
 import typings.jupyterlabCodeeditor.editorMod.CodeEditor.IEditor
 import typings.jupyterlabRendermime.tokensMod.IRenderMimeRegistry
-import typings.jupyterlabServices.kernelKernelMod.Kernel.IKernelConnection
-import typings.phosphorWidgets.mod.Widget
+import typings.jupyterlabServices.kernelKernelMod.IKernelConnection
+import typings.luminoWidgets.mod.Widget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

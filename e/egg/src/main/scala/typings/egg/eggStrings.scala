@@ -25,10 +25,19 @@ object eggStrings {
   sealed trait ctx extends js.Object
   
   @js.native
+  sealed trait duplicate extends js.Object
+  
+  @js.native
+  sealed trait ignore extends js.Object
+  
+  @js.native
   sealed trait local extends _EggEnvType
   
   @js.native
   sealed trait prod extends _EggEnvType
+  
+  @js.native
+  sealed trait redirect extends js.Object
   
   @js.native
   sealed trait unittest extends _EggEnvType
@@ -46,9 +55,15 @@ object eggStrings {
   @scala.inline
   def ctx: ctx = "ctx".asInstanceOf[ctx]
   @scala.inline
+  def duplicate: duplicate = "duplicate".asInstanceOf[duplicate]
+  @scala.inline
+  def ignore: ignore = "ignore".asInstanceOf[ignore]
+  @scala.inline
   def local: local = "local".asInstanceOf[local]
   @scala.inline
   def prod: prod = "prod".asInstanceOf[prod]
+  @scala.inline
+  def redirect: redirect = "redirect".asInstanceOf[redirect]
   @scala.inline
   def unittest: unittest = "unittest".asInstanceOf[unittest]
 }

@@ -23,6 +23,7 @@ import typings.react.mod.LegacyRef
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.PointerEvent
+import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
 import typings.react.mod.TouchEvent
@@ -30,7 +31,6 @@ import typings.react.mod.TransitionEvent
 import typings.react.mod.UIEvent
 import typings.react.mod.WheelEvent
 import typings.std.Event_
-import typings.std.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -64,7 +64,7 @@ import scala.scalajs.js.annotation._
     String | AnonBottom | Double | (js.Tuple4[Double, Double, Double, Double]) | (js.Tuple2[String, String])
   ] = js.undefined
   var pixelRatio: js.UndefOr[Double] = js.undefined
-  var placeholder: js.UndefOr[Node | String | Boolean] = js.undefined
+  var placeholder: js.UndefOr[ReactElement | String | Boolean] = js.undefined
   var plotBackground: js.UndefOr[background] = js.undefined
   var ref: js.UndefOr[LegacyRef[js.Any]] = js.undefined
   var scale: js.UndefOr[js.Any] = js.undefined
@@ -179,7 +179,7 @@ object ChartProps {
     onWheel: WheelEvent[js.Object] => Unit = null,
     padding: String | AnonBottom | Double | (js.Tuple4[Double, Double, Double, Double]) | (js.Tuple2[String, String]) = null,
     pixelRatio: Int | Double = null,
-    placeholder: Node | String | Boolean = null,
+    placeholder: ReactElement | String | Boolean = null,
     plotBackground: background = null,
     ref: LegacyRef[js.Any] = null,
     scale: js.Any = null,

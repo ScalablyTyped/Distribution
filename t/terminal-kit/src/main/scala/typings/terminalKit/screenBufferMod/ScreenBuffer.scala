@@ -1,7 +1,7 @@
 package typings.terminalKit.screenBufferMod
 
 import typings.terminalKit.AnonAttr
-import typings.terminalKit.AnonAttrChar
+import typings.terminalKit.AnonChar
 import typings.terminalKit.AnonDst
 import typings.terminalKit.AnonX
 import typings.terminalKit.screenBufferHDMod.IsBlending
@@ -26,8 +26,8 @@ trait ScreenBuffer
   def dumpChars(): String = js.native
   def fill(): Unit = js.native
   def fill(options: AnonAttr): Unit = js.native
-  def get(): AnonAttrChar = js.native
-  def get(options: AnonX): AnonAttrChar = js.native
+  def get(): AnonChar = js.native
+  def get(options: AnonX): AnonChar = js.native
   def moveTo(x: Double, y: Double): Unit = js.native
   def object2attr(attrObject: Attributes): Unit = js.native
   def put(options: PutOptions, format: String, formatArgumets: js.Any*): Unit = js.native

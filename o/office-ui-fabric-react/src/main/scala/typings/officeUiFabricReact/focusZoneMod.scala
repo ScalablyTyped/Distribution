@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact
 
-import typings.officeUiFabricReact.focusZoneTypesMod.IFocusZoneProps
+import typings.fluentuiReactFocus.focusZoneTypesMod.IFocusZoneProps
 import typings.officeUiFabricReact.officeUiFabricReactNumbers.`0`
 import typings.officeUiFabricReact.officeUiFabricReactNumbers.`1`
 import typings.officeUiFabricReact.officeUiFabricReactNumbers.`2`
@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 object focusZoneMod extends js.Object {
   @js.native
   class FocusZone protected ()
-    extends typings.officeUiFabricReact.focusZoneFocusZoneMod.FocusZone {
+    extends typings.fluentuiReactFocus.mod.FocusZone {
     def this(props: IFocusZoneProps) = this()
   }
   
@@ -27,12 +27,12 @@ object focusZoneMod extends js.Object {
   
   @js.native
   object FocusZoneDirection extends js.Object {
-    /* 2 */ val bidirectional: typings.officeUiFabricReact.focusZoneTypesMod.FocusZoneDirection.bidirectional with Double = js.native
-    /* 3 */ val domOrder: typings.officeUiFabricReact.focusZoneTypesMod.FocusZoneDirection.domOrder with Double = js.native
-    /* 1 */ val horizontal: typings.officeUiFabricReact.focusZoneTypesMod.FocusZoneDirection.horizontal with Double = js.native
-    /* 0 */ val vertical: typings.officeUiFabricReact.focusZoneTypesMod.FocusZoneDirection.vertical with Double = js.native
+    /* 2 */ val bidirectional: typings.fluentuiReactFocus.focusZoneTypesMod.FocusZoneDirection.bidirectional with Double = js.native
+    /* 3 */ val domOrder: typings.fluentuiReactFocus.focusZoneTypesMod.FocusZoneDirection.domOrder with Double = js.native
+    /* 1 */ val horizontal: typings.fluentuiReactFocus.focusZoneTypesMod.FocusZoneDirection.horizontal with Double = js.native
+    /* 0 */ val vertical: typings.fluentuiReactFocus.focusZoneTypesMod.FocusZoneDirection.vertical with Double = js.native
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.focusZoneTypesMod.FocusZoneDirection with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.fluentuiReactFocus.focusZoneTypesMod.FocusZoneDirection with Double] = js.native
   }
   
   @js.native

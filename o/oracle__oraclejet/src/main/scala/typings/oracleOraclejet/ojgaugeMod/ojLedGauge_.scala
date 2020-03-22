@@ -1,8 +1,8 @@
 package typings.oracleOraclejet.ojgaugeMod
 
-import typings.oracleOraclejet.AnonAutoBillionConverterMillionNone
-import typings.oracleOraclejet.AnonContextRendererAnonInsertAnonPreventDefaultTooltipContext
-import typings.oracleOraclejet.AnonStyle
+import typings.oracleOraclejet.Anon8
+import typings.oracleOraclejet.AnonText
+import typings.oracleOraclejet.AnonTextType
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.ojgaugeMod.ojLedGauge.Threshold
 import typings.oracleOraclejet.oracleOraclejetNumbers.`0`
@@ -58,15 +58,15 @@ import scala.scalajs.js.annotation._
 trait ojLedGauge_ extends dvtBaseGauge[ojLedGaugeSettableProperties] {
   var borderColor: String = js.native
   var color: String = js.native
-  var label: AnonStyle = js.native
+  var label: AnonText = js.native
   var max: Double = js.native
-  var metricLabel: AnonAutoBillionConverterMillionNone = js.native
+  var metricLabel: AnonTextType = js.native
   var min: Double = js.native
   var onBorderColorChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
   var onColorChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
-  var onLabelChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonStyle], _]) | Null = js.native
+  var onLabelChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonText], _]) | Null = js.native
   var onMaxChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
-  var onMetricLabelChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonAutoBillionConverterMillionNone], _]) | Null = js.native
+  var onMetricLabelChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonTextType], _]) | Null = js.native
   var onMinChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
   var onRotationChanged: (js.Function1[/* event */ JetElementCustomEvent[`90` | `180` | `270` | `0`], _]) | Null = js.native
   var onSizeChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
@@ -78,10 +78,7 @@ trait ojLedGauge_ extends dvtBaseGauge[ojLedGaugeSettableProperties] {
     _
   ]) | Null = js.native
   var onThresholdsChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[Threshold]], _]) | Null = js.native
-  var onTooltipChanged: (js.Function1[
-    /* event */ JetElementCustomEvent[AnonContextRendererAnonInsertAnonPreventDefaultTooltipContext], 
-    _
-  ]) | Null = js.native
+  var onTooltipChanged: (js.Function1[/* event */ JetElementCustomEvent[Anon8], _]) | Null = js.native
   var onTypeChanged: (js.Function1[
     /* event */ JetElementCustomEvent[arrow | diamond | square | rectangle | triangle | star | human | circle], 
     _
@@ -93,7 +90,7 @@ trait ojLedGauge_ extends dvtBaseGauge[ojLedGaugeSettableProperties] {
   var svgClassName: String = js.native
   var svgStyle: js.Object = js.native
   var thresholds: js.Array[Threshold] = js.native
-  var tooltip: AnonContextRendererAnonInsertAnonPreventDefaultTooltipContext = js.native
+  var tooltip: Anon8 = js.native
   var `type`: arrow | diamond | square | rectangle | triangle | star | human | circle = js.native
   var value: Double | Null = js.native
   var visualEffects: none | auto = js.native
@@ -186,12 +183,12 @@ trait ojLedGauge_ extends dvtBaseGauge[ojLedGaugeSettableProperties] {
   @JSName("addEventListener")
   def addEventListener_labelChanged(
     `type`: labelChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonStyle], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonText], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_labelChanged(
     `type`: labelChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonStyle], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonText], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -208,20 +205,12 @@ trait ojLedGauge_ extends dvtBaseGauge[ojLedGaugeSettableProperties] {
   @JSName("addEventListener")
   def addEventListener_metricLabelChanged(
     `type`: metricLabelChanged,
-    listener: js.ThisFunction1[
-      /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[AnonAutoBillionConverterMillionNone], 
-      _
-    ]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonTextType], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_metricLabelChanged(
     `type`: metricLabelChanged,
-    listener: js.ThisFunction1[
-      /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[AnonAutoBillionConverterMillionNone], 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonTextType], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -271,20 +260,12 @@ trait ojLedGauge_ extends dvtBaseGauge[ojLedGaugeSettableProperties] {
   @JSName("addEventListener")
   def addEventListener_tooltipChanged(
     `type`: tooltipChanged,
-    listener: js.ThisFunction1[
-      /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[AnonContextRendererAnonInsertAnonPreventDefaultTooltipContext], 
-      _
-    ]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Anon8], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_tooltipChanged(
     `type`: tooltipChanged,
-    listener: js.ThisFunction1[
-      /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[AnonContextRendererAnonInsertAnonPreventDefaultTooltipContext], 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Anon8], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -304,11 +285,11 @@ trait ojLedGauge_ extends dvtBaseGauge[ojLedGaugeSettableProperties] {
   @JSName("getProperty")
   def getProperty_color(property: color): String = js.native
   @JSName("getProperty")
-  def getProperty_label(property: label): AnonStyle = js.native
+  def getProperty_label(property: label): AnonText = js.native
   @JSName("getProperty")
   def getProperty_max(property: max): Double = js.native
   @JSName("getProperty")
-  def getProperty_metricLabel(property: metricLabel): AnonAutoBillionConverterMillionNone = js.native
+  def getProperty_metricLabel(property: metricLabel): AnonTextType = js.native
   @JSName("getProperty")
   def getProperty_min(property: min): Double = js.native
   @JSName("getProperty")
@@ -322,7 +303,7 @@ trait ojLedGauge_ extends dvtBaseGauge[ojLedGaugeSettableProperties] {
   @JSName("getProperty")
   def getProperty_thresholds(property: thresholds): js.Array[Threshold] = js.native
   @JSName("getProperty")
-  def getProperty_tooltip(property: tooltip): AnonContextRendererAnonInsertAnonPreventDefaultTooltipContext = js.native
+  def getProperty_tooltip(property: tooltip): Anon8 = js.native
   @JSName("getProperty")
   def getProperty_type(property: `type`): arrow | diamond | square | rectangle | triangle | star | human | circle = js.native
   @JSName("getProperty")
@@ -349,11 +330,11 @@ trait ojLedGauge_ extends dvtBaseGauge[ojLedGaugeSettableProperties] {
   @JSName("setProperty")
   def setProperty_color(property: color, value: String): Unit = js.native
   @JSName("setProperty")
-  def setProperty_label(property: label, value: AnonStyle): Unit = js.native
+  def setProperty_label(property: label, value: AnonText): Unit = js.native
   @JSName("setProperty")
   def setProperty_max(property: max, value: Double): Unit = js.native
   @JSName("setProperty")
-  def setProperty_metricLabel(property: metricLabel, value: AnonAutoBillionConverterMillionNone): Unit = js.native
+  def setProperty_metricLabel(property: metricLabel, value: AnonTextType): Unit = js.native
   @JSName("setProperty")
   def setProperty_min(property: min, value: Double): Unit = js.native
   @JSName("setProperty")
@@ -365,7 +346,7 @@ trait ojLedGauge_ extends dvtBaseGauge[ojLedGaugeSettableProperties] {
   @JSName("setProperty")
   def setProperty_thresholds(property: thresholds, value: js.Array[Threshold]): Unit = js.native
   @JSName("setProperty")
-  def setProperty_tooltip(property: tooltip, value: AnonContextRendererAnonInsertAnonPreventDefaultTooltipContext): Unit = js.native
+  def setProperty_tooltip(property: tooltip, value: Anon8): Unit = js.native
   @JSName("setProperty")
   def setProperty_value(property: value): Unit = js.native
   @JSName("setProperty")

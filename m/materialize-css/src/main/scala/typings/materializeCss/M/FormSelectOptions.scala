@@ -1,6 +1,6 @@
 package typings.materializeCss.M
 
-import typings.std.Partial
+import typings.materializeCss.PartialDropdownOptionsAlignment
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,12 +15,12 @@ trait FormSelectOptions extends js.Object {
     * Pass options object to select dropdown initialization
     * @default {}
     */
-  var dropdownOptions: Partial[DropdownOptions]
+  var dropdownOptions: PartialDropdownOptionsAlignment
 }
 
 object FormSelectOptions {
   @scala.inline
-  def apply(classes: String, dropdownOptions: Partial[DropdownOptions]): FormSelectOptions = {
+  def apply(classes: String, dropdownOptions: PartialDropdownOptionsAlignment): FormSelectOptions = {
     val __obj = js.Dynamic.literal(classes = classes.asInstanceOf[js.Any], dropdownOptions = dropdownOptions.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FormSelectOptions]

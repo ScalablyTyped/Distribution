@@ -14,13 +14,13 @@ trait Resolvers[Schema /* <: JSONSchema */] extends js.Object {
   @JSName("$id")
   def $id_id(
     values: js.Array[
-      /* import warning: importer.ImportType#apply Failed type conversion: std.Extract<Schema, json-schema-merge-allof.Anon_Id>['$id'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: std.Extract<Schema, json-schema-merge-allof.AnonId>['$id'] */ js.Any
     ],
     path: js.Array[String],
     mergeSchemas: MergeSchemas,
     options: Options_[Schema]
   ): NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: std.Extract<Schema, json-schema-merge-allof.Anon_Id>['$id'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: std.Extract<Schema, json-schema-merge-allof.AnonId>['$id'] */ js.Any
   ] = js.native
   @JSName("$ref")
   def $ref_ref(
@@ -80,13 +80,13 @@ trait Resolvers[Schema /* <: JSONSchema */] extends js.Object {
   @JSName("contains")
   def contains_contains(
     values: js.Array[
-      /* import warning: importer.ImportType#apply Failed type conversion: std.Extract<Schema, json-schema-merge-allof.Anon_Contains>['contains'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: std.Extract<Schema, json-schema-merge-allof.AnonContains>['contains'] */ js.Any
     ],
     path: js.Array[String],
     mergeSchemas: MergeSchemas,
     options: Options_[Schema]
   ): NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: std.Extract<Schema, json-schema-merge-allof.Anon_Contains>['contains'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: std.Extract<Schema, json-schema-merge-allof.AnonContains>['contains'] */ js.Any
   ] = js.native
   @JSName("default")
   def default_default(
@@ -146,13 +146,13 @@ trait Resolvers[Schema /* <: JSONSchema */] extends js.Object {
   @JSName("examples")
   def examples_examples(
     values: js.Array[
-      /* import warning: importer.ImportType#apply Failed type conversion: std.Extract<Schema, json-schema-merge-allof.Anon_Examples>['examples'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: std.Extract<Schema, json-schema-merge-allof.AnonExamples>['examples'] */ js.Any
     ],
     path: js.Array[String],
     mergeSchemas: MergeSchemas,
     options: Options_[Schema]
   ): NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: std.Extract<Schema, json-schema-merge-allof.Anon_Examples>['examples'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: std.Extract<Schema, json-schema-merge-allof.AnonExamples>['examples'] */ js.Any
   ] = js.native
   @JSName("exclusiveMaximum")
   def exclusiveMaximum_exclusiveMaximum(
@@ -368,13 +368,13 @@ trait Resolvers[Schema /* <: JSONSchema */] extends js.Object {
   @JSName("propertyNames")
   def propertyNames_propertyNames(
     values: js.Array[
-      /* import warning: importer.ImportType#apply Failed type conversion: std.Extract<Schema, json-schema-merge-allof.Anon_PropertyNames>['propertyNames'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: std.Extract<Schema, json-schema-merge-allof.AnonPropertyNames>['propertyNames'] */ js.Any
     ],
     path: js.Array[String],
     mergeSchemas: MergeSchemas,
     options: Options_[Schema]
   ): NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: std.Extract<Schema, json-schema-merge-allof.Anon_PropertyNames>['propertyNames'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: std.Extract<Schema, json-schema-merge-allof.AnonPropertyNames>['propertyNames'] */ js.Any
   ] = js.native
   @JSName("required")
   def required_required(

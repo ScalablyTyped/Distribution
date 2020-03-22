@@ -13,12 +13,12 @@ trait PutComponentPolicyRequest extends js.Object {
   /**
     *  The policy to apply. 
     */
-  var policy: NonEmptyString = js.native
+  var policy: ResourcePolicyDocument = js.native
 }
 
 object PutComponentPolicyRequest {
   @scala.inline
-  def apply(componentArn: ComponentBuildVersionArn, policy: NonEmptyString): PutComponentPolicyRequest = {
+  def apply(componentArn: ComponentBuildVersionArn, policy: ResourcePolicyDocument): PutComponentPolicyRequest = {
     val __obj = js.Dynamic.literal(componentArn = componentArn.asInstanceOf[js.Any], policy = policy.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PutComponentPolicyRequest]

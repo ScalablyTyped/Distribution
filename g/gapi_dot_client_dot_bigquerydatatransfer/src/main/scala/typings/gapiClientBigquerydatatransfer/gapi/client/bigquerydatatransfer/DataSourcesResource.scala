@@ -2,7 +2,7 @@ package typings.gapiClientBigquerydatatransfer.gapi.client.bigquerydatatransfer
 
 import typings.gapiClient.gapi.client.Request_
 import typings.gapiClientBigquerydatatransfer.AnonAccesstoken
-import typings.gapiClientBigquerydatatransfer.AnonAccesstokenAlt
+import typings.gapiClientBigquerydatatransfer.AnonAlt
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,7 +26,7 @@ trait DataSourcesResource extends js.Object {
     * Lists supported data sources and returns their settings,
     * which can be used for UI rendering.
     */
-  def list(request: AnonAccesstokenAlt): Request_[ListDataSourcesResponse]
+  def list(request: AnonAlt): Request_[ListDataSourcesResponse]
 }
 
 object DataSourcesResource {
@@ -34,7 +34,7 @@ object DataSourcesResource {
   def apply(
     checkValidCreds: AnonAccesstoken => Request_[CheckValidCredsResponse],
     get: AnonAccesstoken => Request_[DataSource],
-    list: AnonAccesstokenAlt => Request_[ListDataSourcesResponse]
+    list: AnonAlt => Request_[ListDataSourcesResponse]
   ): DataSourcesResource = {
     val __obj = js.Dynamic.literal(checkValidCreds = js.Any.fromFunction1(checkValidCreds), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
   

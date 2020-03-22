@@ -8,10 +8,9 @@ import scala.scalajs.js.annotation._
 
 trait PlotScatter3dOptions extends js.Object {
   /**
-    * (Highcharts) Accessibility options for a series. Requires the
-    * accessibility module.
+    * (Highcharts) Accessibility options for a series.
     */
-  var accessibility: js.UndefOr[js.Object | PlotScatter3dAccessibilityOptions] = js.undefined
+  var accessibility: js.UndefOr[SeriesAccessibilityOptionsObject] = js.undefined
   /**
     * (Highmaps) Whether all areas of the map defined in `mapData` should be
     * rendered. If `true`, areas which don't correspond to a data point, are
@@ -44,7 +43,7 @@ trait PlotScatter3dOptions extends js.Object {
     * Due to poor performance, animation is disabled in old IE browsers for
     * several chart types.
     */
-  var animation: js.UndefOr[Boolean | AnimationOptionsObject | PlotScatter3dAnimationOptions] = js.undefined
+  var animation: js.UndefOr[Boolean | AnimationOptionsObject] = js.undefined
   /**
     * (Highcharts) For some series, there is a limit that shuts down initial
     * animation by default when the total number of points in the chart is too
@@ -153,11 +152,12 @@ trait PlotScatter3dOptions extends js.Object {
   var compareBase: js.UndefOr[`0` | `100`] = js.undefined
   /**
     * (Highstock) Defines if comparison should start from the first point
-    * within the visible range or should start from the first point (see online
-    * documentation for example) the range. In other words, this flag
-    * determines if first point within the visible range will have 0%
-    * (`compareStart=true`) or should have been already calculated according to
-    * the previous point (`compareStart=false`).
+    * within the visible range or should start from the first point **before**
+    * the range.
+    *
+    * In other words, this flag determines if first point within the visible
+    * range will have 0% (`compareStart=true`) or should have been already
+    * calculated according to the previous point (`compareStart=false`).
     */
   var compareStart: js.UndefOr[Boolean] = js.undefined
   /**
@@ -175,7 +175,7 @@ trait PlotScatter3dOptions extends js.Object {
     * (Gantt) Override Pathfinder connector options for a series. Requires
     * Highcharts Gantt to be loaded.
     */
-  var connectors: js.UndefOr[PlotScatter3dConnectorsOptions] = js.undefined
+  var connectors: js.UndefOr[SeriesConnectorsOptionsObject] = js.undefined
   /**
     * (Highcharts, Highstock) When the series contains less points than the
     * crop threshold, all points are drawn, even if the points fall outside the
@@ -218,10 +218,10 @@ trait PlotScatter3dOptions extends js.Object {
     * of the first point instance are copied over to the group point. This can
     * be altered through a custom `approximation` callback function.
     */
-  var dataGrouping: js.UndefOr[PlotScatter3dDataGroupingOptions] = js.undefined
+  var dataGrouping: js.UndefOr[DataGroupingOptionsObject] = js.undefined
   /**
-    * (Highcharts) Options for the series data labels, appearing next to each
-    * data point.
+    * (Highcharts, Highstock, Highmaps, Gantt) Options for the series data
+    * labels, appearing next to each data point.
     *
     * Since v6.2.0, multiple data labels can be applied to each single point by
     * defining them as an array of configs.
@@ -231,6 +231,10 @@ trait PlotScatter3dOptions extends js.Object {
     * (see example).
     */
   var dataLabels: js.UndefOr[DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject]] = js.undefined
+  /**
+    * (Highcharts, Highstock) Options for the series data sorting.
+    */
+  var dataSorting: js.UndefOr[DataSortingOptionsObject | PlotScatter3dDataSortingOptions] = js.undefined
   /**
     * (Highcharts) A description of the series to add to the screen reader
     * information about the series.
@@ -247,7 +251,7 @@ trait PlotScatter3dOptions extends js.Object {
     * hooks can also be attached to the series at run time using the
     * `Highcharts.addEvent` function.
     */
-  var events: js.UndefOr[PlotScatter3dEventsOptions] = js.undefined
+  var events: js.UndefOr[SeriesEventsOptionsObject] = js.undefined
   /**
     * (Highcharts) Determines whether the series should look for the nearest
     * point in both dimensions or just the x-dimension when hovering the
@@ -350,15 +354,15 @@ trait PlotScatter3dOptions extends js.Object {
     * The series labels currently work with series types having a `graph` or an
     * `area`.
     */
-  var label: js.UndefOr[PlotScatter3dLabelOptions] = js.undefined
+  var label: js.UndefOr[SeriesLabelOptionsObject] = js.undefined
   /**
     * (Highstock) The line marks the last price from all points.
     */
-  var lastPrice: js.UndefOr[PlotScatter3dLastPriceOptions] = js.undefined
+  var lastPrice: js.UndefOr[SeriesLastPriceOptionsObject] = js.undefined
   /**
     * (Highstock) The line marks the last price from visible range of points.
     */
-  var lastVisiblePrice: js.UndefOr[PlotScatter3dLastVisiblePriceOptions] = js.undefined
+  var lastVisiblePrice: js.UndefOr[SeriesLastVisiblePriceOptionsObject] = js.undefined
   /**
     * (Highcharts, Highstock) The width of the line connecting the data points.
     */
@@ -374,6 +378,10 @@ trait PlotScatter3dOptions extends js.Object {
     * Additionally, the value can be ":previous" to link to the previous
     * series. When two series are linked, only the first one appears in the
     * legend. Toggling the visibility of this also toggles the linked series.
+    *
+    * If master series uses data sorting and linked series does not have its
+    * own sorting definition, the linked series will be sorted in the same
+    * order as the master one.
     */
   var linkedTo: js.UndefOr[String] = js.undefined
   /**
@@ -385,7 +393,7 @@ trait PlotScatter3dOptions extends js.Object {
     * In styled mode, the markers can be styled with the `.highcharts-point`,
     * `.highcharts-point-hover` and `.highcharts-point-select` class names.
     */
-  var marker: js.UndefOr[PlotScatter3dMarkerOptions] = js.undefined
+  var marker: js.UndefOr[PointMarkerOptionsObject] = js.undefined
   /**
     * (Highstock) Options for the corresponding navigator series if
     * `showInNavigator` is `true` for this series. Available options are the
@@ -397,7 +405,9 @@ trait PlotScatter3dOptions extends js.Object {
   var navigatorOptions: js.UndefOr[PlotSeriesOptions] = js.undefined
   /**
     * (Highcharts) The color for the parts of the graph or points that are
-    * below the threshold.
+    * below the threshold. Note that `zones` takes precedence over the negative
+    * color. Using `negativeColor` is equivalent to applying a zone with value
+    * of 0.
     */
   var negativeColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
@@ -408,7 +418,7 @@ trait PlotScatter3dOptions extends js.Object {
   /**
     * (Highcharts) Properties for each single point.
     */
-  var point: js.UndefOr[PlotScatter3dPointOptions] = js.undefined
+  var point: js.UndefOr[PlotSeriesPointOptions] = js.undefined
   /**
     * (Highcharts) Same as accessibility.pointDescriptionFormatter, but for an
     * individual series. Overrides the chart wide configuration.
@@ -504,7 +514,7 @@ trait PlotScatter3dOptions extends js.Object {
     * The second one is `"overlap"`, which only applies to waterfall series.
     */
   var stacking: js.UndefOr[OptionsStackingValue] = js.undefined
-  var states: js.UndefOr[PlotScatter3dStatesOptions] = js.undefined
+  var states: js.UndefOr[SeriesStatesOptionsObject] = js.undefined
   /**
     * (Highcharts, Highstock) Whether to apply steps to the line. Possible
     * values are `left`, `center` and `right`.
@@ -534,7 +544,7 @@ trait PlotScatter3dOptions extends js.Object {
     * series.name by default shows in the headerFormat and point.x and point.y
     * in the pointFormat.
     */
-  var tooltip: js.UndefOr[PlotScatter3dTooltipOptions] = js.undefined
+  var tooltip: js.UndefOr[SeriesTooltipOptionsObject] = js.undefined
   /**
     * (Highcharts, Highstock, Gantt) When a series contains a data array that
     * is longer than this, only one dimensional arrays of numbers, or two
@@ -569,16 +579,16 @@ trait PlotScatter3dOptions extends js.Object {
     * `.highcharts-zone-{n}` class, or custom classed from the `className`
     * option (view live demo).
     */
-  var zones: js.UndefOr[js.Array[PlotScatter3dZonesOptions]] = js.undefined
+  var zones: js.UndefOr[js.Array[SeriesZonesOptionsObject]] = js.undefined
 }
 
 object PlotScatter3dOptions {
   @scala.inline
   def apply(
-    accessibility: js.Object | PlotScatter3dAccessibilityOptions = null,
+    accessibility: SeriesAccessibilityOptionsObject = null,
     allAreas: js.UndefOr[Boolean] = js.undefined,
     allowPointSelect: js.UndefOr[Boolean] = js.undefined,
-    animation: Boolean | AnimationOptionsObject | PlotScatter3dAnimationOptions = null,
+    animation: Boolean | AnimationOptionsObject = null,
     animationLimit: Int | Double = null,
     boostBlending: OptionsBoostBlendingValue = null,
     boostThreshold: Int | Double = null,
@@ -595,15 +605,16 @@ object PlotScatter3dOptions {
     compareStart: js.UndefOr[Boolean] = js.undefined,
     connectEnds: js.UndefOr[Boolean] = js.undefined,
     connectNulls: js.UndefOr[Boolean] = js.undefined,
-    connectors: PlotScatter3dConnectorsOptions = null,
+    connectors: SeriesConnectorsOptionsObject = null,
     cropThreshold: Int | Double = null,
     cursor: String | CursorValue = null,
     dashStyle: DashStyleValue = null,
-    dataGrouping: PlotScatter3dDataGroupingOptions = null,
+    dataGrouping: DataGroupingOptionsObject = null,
     dataLabels: DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject] = null,
+    dataSorting: DataSortingOptionsObject | PlotScatter3dDataSortingOptions = null,
     description: String = null,
     enableMouseTracking: js.UndefOr[Boolean] = js.undefined,
-    events: PlotScatter3dEventsOptions = null,
+    events: SeriesEventsOptionsObject = null,
     findNearestPointBy: OptionsFindNearestPointByValue = null,
     gapSize: Int | Double = null,
     gapUnit: OptionsGapUnitValue = null,
@@ -612,17 +623,17 @@ object PlotScatter3dOptions {
     jitter: PlotScatter3dJitterOptions = null,
     joinBy: String | js.Array[String] = null,
     keys: js.Array[String] = null,
-    label: PlotScatter3dLabelOptions = null,
-    lastPrice: PlotScatter3dLastPriceOptions = null,
-    lastVisiblePrice: PlotScatter3dLastVisiblePriceOptions = null,
+    label: SeriesLabelOptionsObject = null,
+    lastPrice: SeriesLastPriceOptionsObject = null,
+    lastVisiblePrice: SeriesLastVisiblePriceOptionsObject = null,
     lineWidth: Int | Double = null,
     linecap: SeriesLinecapValue = null,
     linkedTo: String = null,
-    marker: PlotScatter3dMarkerOptions = null,
+    marker: PointMarkerOptionsObject = null,
     navigatorOptions: PlotSeriesOptions = null,
     negativeColor: ColorString | GradientColorObject | PatternObject = null,
     opacity: Int | Double = null,
-    point: PlotScatter3dPointOptions = null,
+    point: PlotSeriesPointOptions = null,
     pointDescriptionFormatter: js.Function = null,
     pointInterval: Int | Double = null,
     pointIntervalUnit: OptionsPointIntervalUnitValue = null,
@@ -635,16 +646,16 @@ object PlotScatter3dOptions {
     skipKeyboardNavigation: js.UndefOr[Boolean] = js.undefined,
     softThreshold: js.UndefOr[Boolean] = js.undefined,
     stacking: OptionsStackingValue = null,
-    states: PlotScatter3dStatesOptions = null,
+    states: SeriesStatesOptionsObject = null,
     step: OptionsStepValue = null,
     stickyTracking: js.UndefOr[Boolean] = js.undefined,
     threshold: Int | Double = null,
-    tooltip: PlotScatter3dTooltipOptions = null,
+    tooltip: SeriesTooltipOptionsObject = null,
     turboThreshold: Int | Double = null,
     visible: js.UndefOr[Boolean] = js.undefined,
     zIndex: Int | Double = null,
     zoneAxis: String = null,
-    zones: js.Array[PlotScatter3dZonesOptions] = null
+    zones: js.Array[SeriesZonesOptionsObject] = null
   ): PlotScatter3dOptions = {
     val __obj = js.Dynamic.literal()
     if (accessibility != null) __obj.updateDynamic("accessibility")(accessibility.asInstanceOf[js.Any])
@@ -673,6 +684,7 @@ object PlotScatter3dOptions {
     if (dashStyle != null) __obj.updateDynamic("dashStyle")(dashStyle.asInstanceOf[js.Any])
     if (dataGrouping != null) __obj.updateDynamic("dataGrouping")(dataGrouping.asInstanceOf[js.Any])
     if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
+    if (dataSorting != null) __obj.updateDynamic("dataSorting")(dataSorting.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (!js.isUndefined(enableMouseTracking)) __obj.updateDynamic("enableMouseTracking")(enableMouseTracking.asInstanceOf[js.Any])
     if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])

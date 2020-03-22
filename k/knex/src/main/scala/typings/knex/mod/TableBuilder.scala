@@ -25,6 +25,8 @@ trait TableBuilder extends js.Object {
   def dropColumns(columnNames: String*): TableBuilder = js.native
   def dropForeign(columnNames: js.Array[String]): TableBuilder = js.native
   def dropForeign(columnNames: js.Array[String], foreignKeyName: String): TableBuilder = js.native
+  def dropIndex(columnNames: String): TableBuilder = js.native
+  def dropIndex(columnNames: String, indexName: String): TableBuilder = js.native
   def dropIndex(columnNames: js.Array[String | Raw[_]]): TableBuilder = js.native
   def dropIndex(columnNames: js.Array[String | Raw[_]], indexName: String): TableBuilder = js.native
   def dropPrimary(): TableBuilder = js.native
@@ -45,6 +47,9 @@ trait TableBuilder extends js.Object {
   def foreign(columns: js.Array[String], foreignKeyName: String): MultikeyForeignConstraintBuilder = js.native
   def increments(): ColumnBuilder = js.native
   def increments(columnName: String): ColumnBuilder = js.native
+  def index(columnNames: String): TableBuilder = js.native
+  def index(columnNames: String, indexName: String): TableBuilder = js.native
+  def index(columnNames: String, indexName: String, indexType: String): TableBuilder = js.native
   def index(columnNames: js.Array[String | Raw[_]]): TableBuilder = js.native
   def index(columnNames: js.Array[String | Raw[_]], indexName: String): TableBuilder = js.native
   def index(columnNames: js.Array[String | Raw[_]], indexName: String, indexType: String): TableBuilder = js.native

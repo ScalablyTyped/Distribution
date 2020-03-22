@@ -2,7 +2,7 @@ package typings.vscode.mod
 
 import typings.std.Uint8Array
 import typings.vscode.AnonOverwriteBoolean
-import typings.vscode.AnonRecursiveUseTrash
+import typings.vscode.AnonUseTrash
 import typings.vscode.Thenable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -35,7 +35,7 @@ trait FileSystem extends js.Object {
   		 * @param options Defines if trash can should be used and if deletion of folders is recursive
   		 */
   def delete(uri: Uri): Thenable[Unit] = js.native
-  def delete(uri: Uri, options: AnonRecursiveUseTrash): Thenable[Unit] = js.native
+  def delete(uri: Uri, options: AnonUseTrash): Thenable[Unit] = js.native
   /**
   		 * Retrieve all entries of a [directory](#FileType.Directory).
   		 *

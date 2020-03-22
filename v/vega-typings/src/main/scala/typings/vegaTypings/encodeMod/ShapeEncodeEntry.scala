@@ -32,7 +32,8 @@ object ShapeEncodeEntry {
     xc: ProductionRule[NumericValueRef] = null,
     y: ProductionRule[NumericValueRef] = null,
     y2: ProductionRule[NumericValueRef] = null,
-    yc: ProductionRule[NumericValueRef] = null
+    yc: ProductionRule[NumericValueRef] = null,
+    zindex: ProductionRule[NumericValueRef] = null
   ): ShapeEncodeEntry = {
     val __obj = js.Dynamic.literal()
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
@@ -57,6 +58,7 @@ object ShapeEncodeEntry {
     if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     if (y2 != null) __obj.updateDynamic("y2")(y2.asInstanceOf[js.Any])
     if (yc != null) __obj.updateDynamic("yc")(yc.asInstanceOf[js.Any])
+    if (zindex != null) __obj.updateDynamic("zindex")(zindex.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShapeEncodeEntry]
   }
 }

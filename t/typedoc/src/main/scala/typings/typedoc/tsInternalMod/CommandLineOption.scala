@@ -1,10 +1,10 @@
 package typings.typedoc.tsInternalMod
 
 import typings.std.Map
+import typings.typedoc.typedocStrings.`object`
 import typings.typedoc.typedocStrings.boolean
 import typings.typedoc.typedocStrings.list
 import typings.typedoc.typedocStrings.number
-import typings.typedoc.typedocStrings.object_
 import typings.typedoc.typedocStrings.string
 import typings.typescript.mod.DiagnosticMessage
 import scala.scalajs.js
@@ -65,7 +65,7 @@ object CommandLineOption {
   @scala.inline
   def TsConfigOnlyOption(
     name: String,
-    `type`: object_,
+    `type`: `object`,
     description: DiagnosticMessage = null,
     experimental: js.UndefOr[Boolean] = js.undefined,
     isFilePath: js.UndefOr[Boolean] = js.undefined,

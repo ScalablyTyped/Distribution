@@ -5,17 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ListItemProps extends js.Object {
-  var LinkWrapper: js.UndefOr[LinkWrapperType] = js.undefined
-  var active: js.UndefOr[Boolean] = js.undefined
-  var center: js.UndefOr[ReactNode] = js.undefined
-  var disabled: js.UndefOr[Boolean] = js.undefined
-  var href: js.UndefOr[String | js.Object] = js.undefined
-  var left: js.UndefOr[ReactNode] = js.undefined
-  var loading: js.UndefOr[Boolean] = js.undefined
-  var onClick: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var right: js.UndefOr[ReactNode] = js.undefined
-  var title: js.UndefOr[ReactNode] = js.undefined
+  var LinkWrapper: js.UndefOr[LinkWrapperType] = js.native
+  var active: js.UndefOr[Boolean] = js.native
+  var center: js.UndefOr[ReactNode] = js.native
+  var disabled: js.UndefOr[Boolean] = js.native
+  var href: js.UndefOr[String | js.Object] = js.native
+  var left: js.UndefOr[ReactNode] = js.native
+  var loading: js.UndefOr[Boolean] = js.native
+  var onClick: js.UndefOr[js.Function0[Unit]] = js.native
+  var right: js.UndefOr[ReactNode] = js.native
+  var title: js.UndefOr[ReactNode] = js.native
 }
 
 object ListItemProps {

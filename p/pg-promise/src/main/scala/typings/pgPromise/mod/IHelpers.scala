@@ -3,7 +3,7 @@ package typings.pgPromise.mod
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import typings.pgPromise.AnonEmptyUpdate
-import typings.pgPromise.AnonOptionsQuery
+import typings.pgPromise.AnonOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +19,7 @@ trait IHelpers extends js.Object {
     typings.pgPromise.mod.ColumnSet
   ] = js.native
   var TableName: Instantiable1[/* table */ String | ITable, typings.pgPromise.mod.TableName] = js.native
-  def concat(queries: js.Array[String | QueryFile | AnonOptionsQuery]): String = js.native
+  def concat(queries: js.Array[String | QueryFile | AnonOptions]): String = js.native
   def insert(data: js.Array[js.Object]): String = js.native
   def insert(data: js.Array[js.Object], columns: QueryColumns): String = js.native
   def insert(data: js.Array[js.Object], columns: QueryColumns, table: String): String = js.native

@@ -33,11 +33,11 @@ object mod extends js.Object {
   def getAsync(types: PermissionType*): js.Promise[PermissionResponse] = js.native
   @js.native
   object PermissionStatus extends js.Object {
-    /* "denied" */ val DENIED: typings.expoPermissions.permissionsTypesMod.PermissionStatus.DENIED with String = js.native
-    /* "granted" */ val GRANTED: typings.expoPermissions.permissionsTypesMod.PermissionStatus.GRANTED with String = js.native
-    /* "undetermined" */ val UNDETERMINED: typings.expoPermissions.permissionsTypesMod.PermissionStatus.UNDETERMINED with String = js.native
+    /* "denied" */ val DENIED: typings.unimodulesPermissionsInterface.mod.PermissionStatus.DENIED with String = js.native
+    /* "granted" */ val GRANTED: typings.unimodulesPermissionsInterface.mod.PermissionStatus.GRANTED with String = js.native
+    /* "undetermined" */ val UNDETERMINED: typings.unimodulesPermissionsInterface.mod.PermissionStatus.UNDETERMINED with String = js.native
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.expoPermissions.permissionsTypesMod.PermissionStatus with String] = js.native
+    def apply(value: String): js.UndefOr[typings.unimodulesPermissionsInterface.mod.PermissionStatus with String] = js.native
   }
   
 }

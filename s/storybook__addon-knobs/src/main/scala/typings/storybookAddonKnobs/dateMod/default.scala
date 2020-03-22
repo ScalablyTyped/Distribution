@@ -1,6 +1,6 @@
 package typings.storybookAddonKnobs.dateMod
 
-import typings.storybookAddonKnobs.AnonKnobOnChangeValue
+import typings.storybookAddonKnobs.AnonKnobOnChange
 import typings.storybookAddonKnobs.AnonValid
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,7 +15,7 @@ class default () extends DateType
 @js.native
 object default extends js.Object {
   var defaultProps: DateTypeProps = js.native
-  var propTypes: AnonKnobOnChangeValue = js.native
+  var propTypes: AnonKnobOnChange = js.native
   def deserialize(value: Double): Double = js.native
   def getDerivedStateFromProps(): AnonValid = js.native
   def serialize(value: Double): Double = js.native

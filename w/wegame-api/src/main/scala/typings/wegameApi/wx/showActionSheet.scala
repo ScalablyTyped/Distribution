@@ -1,6 +1,6 @@
 package typings.wegameApi.wx
 
-import typings.wegameApi.AnonCompleteFailItemColor
+import typings.wegameApi.AnonItemColor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,6 +11,6 @@ object showActionSheet extends js.Object {
   /**
     * 显示选择器
     */
-  def apply(params: AnonCompleteFailItemColor): Unit = js.native
+  def apply(params: AnonItemColor): Unit = js.native
 }
 

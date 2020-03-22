@@ -3,7 +3,6 @@ package typings.firebaseFirestore
 import typings.firebaseFirestore.apiTimestampMod.Timestamp
 import typings.firebaseFirestore.coreSnapshotVersionMod.SnapshotVersion
 import typings.firebaseFirestore.coreTypesMod.BatchId
-import typings.firebaseFirestore.coreTypesMod.ProtoByteString
 import typings.firebaseFirestore.firebaseFirestoreNumbers.`-1`
 import typings.firebaseFirestore.modelCollectionsMod.DocumentKeySet_
 import typings.firebaseFirestore.modelCollectionsMod.DocumentVersionMap_
@@ -12,6 +11,7 @@ import typings.firebaseFirestore.modelDocumentKeyMod.DocumentKey
 import typings.firebaseFirestore.modelDocumentMod.MaybeDocument
 import typings.firebaseFirestore.modelMutationMod.Mutation
 import typings.firebaseFirestore.modelMutationMod.MutationResult
+import typings.firebaseFirestore.utilByteStringMod.ByteString
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -81,7 +81,7 @@ object modelMutationBatchMod extends js.Object {
       */
     val docVersions: DocumentVersionMap_ = js.native
     val mutationResults: js.Array[MutationResult] = js.native
-    val streamToken: ProtoByteString = js.native
+    val streamToken: ByteString = js.native
   }
   
   val BATCHID_UNKNOWN: `-1` = js.native
@@ -97,7 +97,7 @@ object modelMutationBatchMod extends js.Object {
       batch: MutationBatch,
       commitVersion: SnapshotVersion,
       results: js.Array[MutationResult],
-      streamToken: ProtoByteString
+      streamToken: ByteString
     ): MutationBatchResult = js.native
   }
   

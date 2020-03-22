@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PropsTableRowsProps extends PropsTableProps {
-  var rows: js.Array[PropDef]
+  var rows: js.Array[PropDef] = js.native
 }
 
 object PropsTableRowsProps {

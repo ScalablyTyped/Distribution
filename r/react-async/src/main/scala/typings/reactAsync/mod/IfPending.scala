@@ -1,7 +1,8 @@
 package typings.reactAsync.mod
 
 import typings.react.mod._Global_.JSX.Element
-import typings.reactAsync.AnonChildrenInitialState
+import typings.reactAsync.AnonChildrenInitial
+import typings.reactAsync.AnonInitial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-async", "IfPending")
 @js.native
 object IfPending extends js.Object {
-  def apply[T](props: AnonChildrenInitialState[T]): Element = js.native
+  var propTypes: AnonChildrenInitial = js.native
+  def apply[T /* <: js.Object */](hasChildrenInitialState: AnonInitial[T]): Element = js.native
 }
 

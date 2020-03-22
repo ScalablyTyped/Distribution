@@ -1,7 +1,7 @@
 package typings.cypress.bluebirdMod
 
 import typings.cypress.AnonCancellation
-import typings.cypress.TypeofClassBluebird
+import typings.cypress.TypeofBluebird
 import typings.std.Error
 import typings.std.Iterable
 import typings.std.IterableIterator
@@ -69,7 +69,7 @@ object ^ extends js.Object {
     * Create a new promise. The passed in function will receive functions `resolve` and `reject` as its arguments which can be called to seal the fate of the created promise.
     * If promise cancellation is enabled, passed in function will receive one more function argument `onCancel` that allows to register an optional cancellation callback.
     */
-  var Promise: TypeofClassBluebird = js.native
+  var Promise: TypeofBluebird = js.native
   /**
     * The version number of the library
     */

@@ -1,7 +1,7 @@
 package typings.postcss.mod
 
-import typings.postcss.FnOnfulfilled
-import typings.postcss.FnOnrejected
+import typings.postcss.FnCall
+import typings.postcss.FnCallOnrejected
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ trait LazyResult extends js.Object {
     * @param onRejected Called if any plugin throws an error.
     */
   @JSName("catch")
-  var catch_Original: FnOnrejected = js.native
+  var catch_Original: FnCallOnrejected = js.native
   /**
     * Alias for css property to use when syntaxes generate non-CSS output.
     */
@@ -62,7 +62,7 @@ trait LazyResult extends js.Object {
     * @param onRejected Called if any plugin throws an error.
     */
   @JSName("then")
-  var then_Original: FnOnfulfilled = js.native
+  var then_Original: FnCall = js.native
   /**
     * Processes input CSS through synchronous and asynchronous plugins.
     * @param onRejected Called if any plugin throws an error.

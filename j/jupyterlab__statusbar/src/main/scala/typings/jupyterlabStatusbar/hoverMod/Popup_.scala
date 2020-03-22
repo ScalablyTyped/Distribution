@@ -1,7 +1,7 @@
 package typings.jupyterlabStatusbar.hoverMod
 
 import typings.jupyterlabStatusbar.hoverMod.Popup.IOptions
-import typings.phosphorWidgets.mod.Widget
+import typings.luminoWidgets.mod.Widget
 import typings.std.Event_
 import scala.scalajs.js
 import scala.scalajs.js.`|`

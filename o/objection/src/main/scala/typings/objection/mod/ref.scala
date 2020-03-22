@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("objection", "ref")
 @js.native
-object ref extends TopLevel[ReferenceBuilder]
+object ref extends TopLevel[ReferenceFunction]
 

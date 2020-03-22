@@ -1,7 +1,7 @@
 package typings.jsreportChromePdf.mod
 
+import typings.jsreportChromePdf.PartialOptions
 import typings.jsreportCore.mod.ExtensionDefinition
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(): ExtensionDefinition = js.native
-  def apply(options: Partial[Options]): ExtensionDefinition = js.native
+  def apply(options: PartialOptions): ExtensionDefinition = js.native
 }
 

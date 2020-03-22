@@ -1,9 +1,9 @@
 package typings.victory.mod
 
 import typings.react.mod.ReactElement
-import typings.victory.AnonXY
-import typings.victory.AnonXYBoolean
-import typings.victory.AnonXYD3ScaleScalePropType
+import typings.victory.Anon1
+import typings.victory.AnonXBoolean
+import typings.victory.AnonY
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -65,7 +65,7 @@ trait VictoryCommonProps extends js.Object {
     * and the y value refers to the dependent variable. This may cause confusion in
     * horizontal charts, as the independent variable will corresponds to the y axis.
     */
-  var maxDomain: js.UndefOr[Double | AnonXY] = js.undefined
+  var maxDomain: js.UndefOr[Double | AnonY] = js.undefined
   /**
     * The minDomain prop defines a minimum domain value for a chart. This prop is useful in
     * situations where the minimum domain of a chart is static, while the maximum value
@@ -76,7 +76,7 @@ trait VictoryCommonProps extends js.Object {
     * and the y value refers to the dependent variable. This may cause confusion in
     * horizontal charts, as the independent variable will corresponds to the y axis.
     */
-  var minDomain: js.UndefOr[Double | AnonXY] = js.undefined
+  var minDomain: js.UndefOr[Double | AnonY] = js.undefined
   /**
     * The name prop is used to reference a component instance when defining shared events.
     */
@@ -96,7 +96,7 @@ trait VictoryCommonProps extends js.Object {
     * @example d3Scale.time(), {x: "linear", y: "log"}
     * @default "linear"
     */
-  var scale: js.UndefOr[ScalePropType | D3Scale | AnonXYD3ScaleScalePropType] = js.undefined
+  var scale: js.UndefOr[ScalePropType | D3Scale | Anon1] = js.undefined
   /**
     * By default `domainPadding` is coerced to existing quadrants. This means that if a given domain only
     * includes positive values, no amount of padding applied by `domainPadding` will result in a domain with
@@ -110,7 +110,7 @@ trait VictoryCommonProps extends js.Object {
     * and the `y` value refers to the *dependent* variable. This may cause confusion in horizontal charts, as the
     * independent variable will corresponds to the y axis.
     */
-  var singleQuadrantDomainPadding: js.UndefOr[Boolean | AnonXYBoolean] = js.undefined
+  var singleQuadrantDomainPadding: js.UndefOr[Boolean | AnonXBoolean] = js.undefined
   /**
     * The standalone prop determines whether the component will render a standalone svg
     * or a <g> tag that will be included in an external svg. Set standalone to false to
@@ -143,12 +143,12 @@ object VictoryCommonProps {
     groupComponent: ReactElement = null,
     height: Int | Double = null,
     horizontal: js.UndefOr[Boolean] = js.undefined,
-    maxDomain: Double | AnonXY = null,
-    minDomain: Double | AnonXY = null,
+    maxDomain: Double | AnonY = null,
+    minDomain: Double | AnonY = null,
     name: String = null,
     padding: PaddingProps = null,
-    scale: ScalePropType | D3Scale | AnonXYD3ScaleScalePropType = null,
-    singleQuadrantDomainPadding: Boolean | AnonXYBoolean = null,
+    scale: ScalePropType | D3Scale | Anon1 = null,
+    singleQuadrantDomainPadding: Boolean | AnonXBoolean = null,
     standalone: js.UndefOr[Boolean] = js.undefined,
     theme: VictoryThemeDefinition = null,
     width: Int | Double = null

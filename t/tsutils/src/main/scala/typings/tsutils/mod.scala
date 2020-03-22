@@ -84,7 +84,7 @@ object mod extends js.Object {
     declarationList: VariableDeclarationList,
     cb: js.Function1[/* element */ (VariableDeclaration | BindingElement) with AnonName, T]
   ): js.UndefOr[T] = js.native
-  def forEachDestructuringIdentifier[T](pattern: BindingPattern, fn: js.Function1[/* element */ BindingElement with AnonName, T]): js.UndefOr[T] = js.native
+  def forEachDestructuringIdentifier[T](pattern: BindingPattern, fn: js.Function1[/* element */ BindingElementnameIdentif, T]): js.UndefOr[T] = js.native
   def forEachToken(node: Node, cb: js.Function1[/* node */ Node, Unit]): Unit = js.native
   def forEachToken(node: Node, cb: js.Function1[/* node */ Node, Unit], sourceFile: SourceFile): Unit = js.native
   def forEachTokenWithTrivia(node: Node, cb: ForEachTokenCallback): Unit = js.native
@@ -347,7 +347,7 @@ object mod extends js.Object {
   def isTryStatement(node: Node): /* is typescript.typescript.TryStatement */ Boolean = js.native
   def isTupleType(`type`: Type): /* is typescript.typescript.TupleType */ Boolean = js.native
   def isTupleTypeNode(node: Node): /* is typescript.typescript.TupleTypeNode */ Boolean = js.native
-  def isTupleTypeReference(`type`: Type): Boolean = js.native
+  def isTupleTypeReference(`type`: Type): /* is tsutils.TypeReferencetargetTupleT */ Boolean = js.native
   def isTypeAliasDeclaration(node: Node): /* is typescript.typescript.TypeAliasDeclaration */ Boolean = js.native
   def isTypeAssertion(node: Node): /* is typescript.typescript.TypeAssertion */ Boolean = js.native
   def isTypeAssignableToNumber(checker: TypeChecker, `type`: Type): Boolean = js.native

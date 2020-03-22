@@ -7,11 +7,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // Config object for mssql: see https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/mssql/index.d.ts
-trait MsSqlConnectionConfig extends js.Object {
+trait MsSqlConnectionConfig extends _StaticConnectionConfig {
   var connectionTimeout: js.UndefOr[Double] = js.undefined
   var database: String
   var domain: js.UndefOr[String] = js.undefined
   var driver: js.UndefOr[String] = js.undefined
+  var expirationChecker: js.UndefOr[js.Function0[Boolean]] = js.undefined
   var options: js.UndefOr[AnonAbortTransactionOnError] = js.undefined
   var parseJSON: js.UndefOr[Boolean] = js.undefined
   var password: js.UndefOr[String] = js.undefined
@@ -31,6 +32,7 @@ object MsSqlConnectionConfig {
     connectionTimeout: Int | Double = null,
     domain: String = null,
     driver: String = null,
+    expirationChecker: () => Boolean = null,
     options: AnonAbortTransactionOnError = null,
     parseJSON: js.UndefOr[Boolean] = js.undefined,
     password: String = null,
@@ -44,6 +46,7 @@ object MsSqlConnectionConfig {
     if (connectionTimeout != null) __obj.updateDynamic("connectionTimeout")(connectionTimeout.asInstanceOf[js.Any])
     if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
     if (driver != null) __obj.updateDynamic("driver")(driver.asInstanceOf[js.Any])
+    if (expirationChecker != null) __obj.updateDynamic("expirationChecker")(js.Any.fromFunction0(expirationChecker))
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (!js.isUndefined(parseJSON)) __obj.updateDynamic("parseJSON")(parseJSON.asInstanceOf[js.Any])
     if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])

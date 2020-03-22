@@ -12,7 +12,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ionic/angular/dist/providers/angular-delegate", JSImport.Namespace)
+@JSImport("@ionic/angular/providers/angular-delegate", JSImport.Namespace)
 @js.native
 object angularDelegateMod extends js.Object {
   @js.native
@@ -49,43 +49,6 @@ object angularDelegateMod extends js.Object {
     var zone: js.Any = js.native
   }
   
-  def attachView(
-    zone: NgZone,
-    resolver: ComponentFactoryResolver,
-    injector: Injector,
-    location: js.UndefOr[scala.Nothing],
-    appRef: ApplicationRef,
-    elRefMap: WeakMap[HTMLElement, _],
-    elEventsMap: WeakMap[HTMLElement, js.Function0[Unit]],
-    container: js.Any,
-    component: js.Any,
-    params: js.Any
-  ): js.Any = js.native
-  def attachView(
-    zone: NgZone,
-    resolver: ComponentFactoryResolver,
-    injector: Injector,
-    location: js.UndefOr[scala.Nothing],
-    appRef: ApplicationRef,
-    elRefMap: WeakMap[HTMLElement, _],
-    elEventsMap: WeakMap[HTMLElement, js.Function0[Unit]],
-    container: js.Any,
-    component: js.Any,
-    params: js.Any,
-    cssClasses: js.Array[String]
-  ): js.Any = js.native
-  def attachView(
-    zone: NgZone,
-    resolver: ComponentFactoryResolver,
-    injector: Injector,
-    location: ViewContainerRef,
-    appRef: ApplicationRef,
-    elRefMap: WeakMap[HTMLElement, _],
-    elEventsMap: WeakMap[HTMLElement, js.Function0[Unit]],
-    container: js.Any,
-    component: js.Any,
-    params: js.Any
-  ): js.Any = js.native
   def attachView(
     zone: NgZone,
     resolver: ComponentFactoryResolver,

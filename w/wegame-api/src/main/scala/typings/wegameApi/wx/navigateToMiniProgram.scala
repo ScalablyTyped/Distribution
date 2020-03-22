@@ -1,7 +1,6 @@
 package typings.wegameApi.wx
 
-import typings.wegameApi.AnonAppId
-import typings.wegameApi.wx.types.Callbacks
+import typings.wegameApi.appIdstringpathstringextr
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,6 +13,6 @@ object navigateToMiniProgram extends js.Object {
     * 打开另一个小程序
     * @param param 跳转参数
     */
-  def apply(param: AnonAppId with Callbacks): Unit = js.native
+  def apply(param: appIdstringpathstringextr): Unit = js.native
 }
 

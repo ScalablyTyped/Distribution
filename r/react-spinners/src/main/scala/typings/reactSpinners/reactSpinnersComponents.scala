@@ -19,6 +19,8 @@ object reactSpinnersComponents extends reactSpinnersProps {
   @scala.inline
   def ClipLoader: ComponentType[ClipLoaderProps] = js.constructorOf[typings.reactSpinners.clipLoaderMod.default].asInstanceOf[typings.react.mod.ComponentType[ClipLoaderProps]]
   @scala.inline
+  def ClockLoader: ComponentType[ClockLoaderProps] = js.constructorOf[typings.reactSpinners.clockLoaderMod.default].asInstanceOf[typings.react.mod.ComponentType[ClockLoaderProps]]
+  @scala.inline
   def DotLoader: ComponentType[DotLoaderProps] = js.constructorOf[typings.reactSpinners.dotLoaderMod.default].asInstanceOf[typings.react.mod.ComponentType[DotLoaderProps]]
   @scala.inline
   def FadeLoader: ComponentType[FadeLoaderProps] = js.constructorOf[typings.reactSpinners.fadeLoaderMod.default].asInstanceOf[typings.react.mod.ComponentType[FadeLoaderProps]]

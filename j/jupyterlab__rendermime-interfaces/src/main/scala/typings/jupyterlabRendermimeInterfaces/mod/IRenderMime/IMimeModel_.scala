@@ -1,7 +1,7 @@
 package typings.jupyterlabRendermimeInterfaces.mod.IRenderMime
 
 import typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.IMimeModel.ISetDataOptions
-import typings.phosphorCoreutils.jsonMod.ReadonlyJSONObject
+import typings.luminoCoreutils.jsonMod.ReadonlyPartialJSONObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,14 +13,14 @@ trait IMimeModel_ extends js.Object {
   /**
     * The data associated with the model.
     */
-  val data: ReadonlyJSONObject
+  val data: ReadonlyPartialJSONObject
   /**
     * The metadata associated with the model.
     *
     * Among others, it can include an attribute named `fragment`
     * that stores a URI fragment identifier for the MIME resource.
     */
-  val metadata: ReadonlyJSONObject
+  val metadata: ReadonlyPartialJSONObject
   /**
     * Whether the data in the model is trusted.
     */
@@ -39,8 +39,8 @@ trait IMimeModel_ extends js.Object {
 object IMimeModel_ {
   @scala.inline
   def apply(
-    data: ReadonlyJSONObject,
-    metadata: ReadonlyJSONObject,
+    data: ReadonlyPartialJSONObject,
+    metadata: ReadonlyPartialJSONObject,
     setData: ISetDataOptions => Unit,
     trusted: Boolean
   ): IMimeModel_ = {

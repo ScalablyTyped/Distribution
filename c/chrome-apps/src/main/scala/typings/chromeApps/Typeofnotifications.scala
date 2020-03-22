@@ -7,7 +7,6 @@ import typings.chromeApps.chrome.integer
 import typings.chromeApps.chrome.notifications.NotificationOptions
 import typings.chromeApps.chromeAppsBooleans.`true`
 import typings.std.Exclude
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -114,10 +113,10 @@ trait Typeofnotifications extends js.Object {
     * @param options Contents of the notification to update to.
     * @param [callback] Called to indicate whether a matching notification existed.
     */
-  def update(notificationId: String, options: Partial[NotificationOptions]): Unit = js.native
+  def update(notificationId: String, options: PartialNotificationOption): Unit = js.native
   def update(
     notificationId: String,
-    options: Partial[NotificationOptions],
+    options: PartialNotificationOption,
     callback: js.Function1[/* wasUpdated */ Boolean, Unit]
   ): Unit = js.native
 }

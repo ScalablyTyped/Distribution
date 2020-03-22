@@ -1,6 +1,6 @@
 package typings.weixinApp.wx
 
-import typings.weixinApp.AnonProgressTotalBytesExpectedToWrite
+import typings.weixinApp.AnonTotalBytesExpectedToWrite
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,6 +17,6 @@ trait DownloadTask extends js.Object {
   		 * @version 1.4.0
   		 */
   def onProgressUpdate(): Unit = js.native
-  def onProgressUpdate(callback: js.Function1[/* res */ AnonProgressTotalBytesExpectedToWrite, Unit]): Unit = js.native
+  def onProgressUpdate(callback: js.Function1[/* res */ AnonTotalBytesExpectedToWrite, Unit]): Unit = js.native
 }
 

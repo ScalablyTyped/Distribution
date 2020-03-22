@@ -94,9 +94,9 @@ trait Ajv extends js.Object {
   /**
     * Get compiled schema from the instance by `key` or `ref`.
     * @param  {string} keyRef `key` that was passed to `addSchema` or full schema reference (`schema.id` or resolved id).
-    * @return {Function} schema validating function (with property `schema`).
+    * @return {Function} schema validating function (with property `schema`). Returns undefined if keyRef can't be resolved to an existing schema.
     */
-  def getSchema(keyRef: String): ValidateFunction = js.native
+  def getSchema(keyRef: String): js.UndefOr[ValidateFunction] = js.native
   /**
     * Remove keyword
     * @this  Ajv

@@ -7,7 +7,12 @@ import scala.scalajs.js.annotation._
 
 trait TextEncoderStream
   extends GenericTransformStream
-     with TextEncoderCommon
+     with TextEncoderCommon {
+  @JSName("readable")
+  val readable_TextEncoderStream: ReadableStream[Uint8Array]
+  @JSName("writable")
+  val writable_TextEncoderStream: WritableStream[java.lang.String]
+}
 
 @JSGlobal("TextEncoderStream")
 @js.native

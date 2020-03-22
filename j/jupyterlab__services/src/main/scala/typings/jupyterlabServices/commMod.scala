@@ -1,12 +1,16 @@
 package typings.jupyterlabServices
 
-import typings.jupyterlabServices.kernelKernelMod.Kernel.IComm
-import typings.jupyterlabServices.kernelKernelMod.Kernel.IKernel
-import typings.jupyterlabServices.kernelKernelMod.Kernel.IShellFuture
-import typings.jupyterlabServices.messagesMod.KernelMessage.IShellMessage
-import typings.jupyterlabServices.messagesMod.KernelMessage.ShellMessageType
-import typings.phosphorCoreutils.jsonMod.JSONObject
-import typings.phosphorDisposable.mod.DisposableDelegate
+import typings.jupyterlabServices.jupyterlabServicesStrings.iopub
+import typings.jupyterlabServices.jupyterlabServicesStrings.shell
+import typings.jupyterlabServices.kernelKernelMod.IComm
+import typings.jupyterlabServices.kernelKernelMod.IKernelConnection
+import typings.jupyterlabServices.kernelKernelMod.IShellFuture
+import typings.jupyterlabServices.messagesMod.ICommCloseMsg
+import typings.jupyterlabServices.messagesMod.ICommMsgMsg
+import typings.jupyterlabServices.messagesMod.IShellMessage
+import typings.jupyterlabServices.messagesMod.ShellMessageType
+import typings.luminoCoreutils.jsonMod.JSONObject
+import typings.luminoDisposable.mod.DisposableDelegate
 import typings.std.ArrayBuffer
 import typings.std.ArrayBufferView
 import scala.scalajs.js
@@ -23,7 +27,7 @@ object commMod extends js.Object {
     /**
       * Construct a new comm channel.
       */
-    def this(target: String, id: String, kernel: IKernel, disposeCb: js.Function0[Unit]) = this()
+    def this(target: String, id: String, kernel: IKernelConnection, disposeCb: js.Function0[Unit]) = this()
     var _id: js.Any = js.native
     var _kernel: js.Any = js.native
     var _onClose: js.Any = js.native
@@ -41,6 +45,11 @@ object commMod extends js.Object {
     def close(data: JSONObject, metadata: JSONObject): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
     def close(data: JSONObject, metadata: JSONObject, buffers: js.Array[ArrayBuffer | ArrayBufferView]): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
     /**
+      * The unique id for the comm channel.
+      */
+    @JSName("commId")
+    def commId_MCommHandler(): String = js.native
+    /**
       * Dispose of the resources held by the object.
       *
       * #### Notes
@@ -54,6 +63,39 @@ object commMod extends js.Object {
     /* CompleteClass */
     /* InferMemberOverrides */
     override def dispose(): Unit = js.native
+    /**
+      * Get the callback for a comm close event.
+      *
+      * #### Notes
+      * This is called when the comm is closed from either the server or client.
+      *
+      * **See also:** [[ICommClose]], [[close]]
+      */
+    def onClose(): js.Function1[/* msg */ ICommCloseMsg[iopub | shell], Unit | js.Thenable[Unit]] = js.native
+    /**
+      * Set the callback for a comm close event.
+      *
+      * #### Notes
+      * This is called when the comm is closed from either the server or client. If
+      * the function returns a promise, and the kernel was closed from the server,
+      * kernel message processing will pause until the returned promise is
+      * fulfilled.
+      *
+      * **See also:** [[close]]
+      */
+    def onClose(cb: js.Function1[/* msg */ ICommCloseMsg[iopub | shell], Unit | js.Thenable[Unit]]): Unit | js.Thenable[Unit] = js.native
+    /**
+      * Get the callback for a comm message received event.
+      */
+    def onMsg(): js.Function1[/* msg */ ICommMsgMsg[iopub | shell], Unit | js.Thenable[Unit]] = js.native
+    /**
+      * Set the callback for a comm message received event.
+      *
+      * #### Notes
+      * This is called when a comm message is received. If the function returns a
+      * promise, kernel message processing will pause until it is fulfilled.
+      */
+    def onMsg(cb: js.Function1[/* msg */ ICommMsgMsg[iopub | shell], Unit | js.Thenable[Unit]]): Unit | js.Thenable[Unit] = js.native
     def open(data: JSONObject): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
     def open(data: JSONObject, metadata: JSONObject): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
     def open(data: JSONObject, metadata: JSONObject, buffers: js.Array[ArrayBuffer | ArrayBufferView]): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
@@ -74,6 +116,11 @@ object commMod extends js.Object {
       buffers: js.Array[ArrayBuffer | ArrayBufferView],
       disposeOnDone: Boolean
     ): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
+    /**
+      * The target name for the comm channel.
+      */
+    @JSName("targetName")
+    def targetName_MCommHandler(): String = js.native
   }
   
 }

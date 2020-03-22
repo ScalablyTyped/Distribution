@@ -1,9 +1,9 @@
 package typings.lodash.mod
 
-import typings.lodash.AnonArgs
-import typings.lodash.FnArray
-import typings.lodash.FnCollection
-import typings.lodash.FnValue
+import typings.lodash.AnonCall
+import typings.lodash.FnCall
+import typings.lodash.FnCallCollectionIteratee
+import typings.lodash.FnCallValue
 import typings.lodash.Typeoflodash
 import typings.lodash.lodashBooleans.`false`
 import typings.lodash.lodashBooleans.`true`
@@ -355,11 +355,11 @@ trait LoDashStatic extends js.Object {
   @JSName("curry")
   var curry_Original: Curry = js.native
   @JSName("eachRight")
-  var eachRight_Original: FnCollection = js.native
+  var eachRight_Original: FnCallCollectionIteratee = js.native
   @JSName("each")
-  var each_Original: FnCollection = js.native
+  var each_Original: FnCallCollectionIteratee = js.native
   @JSName("first")
-  var first_Original: FnArray = js.native
+  var first_Original: FnCall = js.native
   /**
     * Creates a function that memoizes the result of func. If resolver is provided it determines the cache key for
     * storing the result based on the arguments provided to the memoized function. By default, the first argument
@@ -371,7 +371,7 @@ trait LoDashStatic extends js.Object {
     * @return Returns the new memoizing function.
     */
   @JSName("memoize")
-  var memoize_Original: AnonArgs = js.native
+  var memoize_Original: AnonCall = js.native
   /**
     * This method is like _.partial except that partial arguments are appended to those provided
     * to the new function.
@@ -3752,7 +3752,7 @@ trait LoDashStatic extends js.Object {
   /**
     * @see _.isArrayLike
     */
-  def isArrayLike(value: js.Any): /* is lodash.Anon_Length */ Boolean = js.native
+  def isArrayLike(value: js.Any): /* is lodash.AnonLength */ Boolean = js.native
    // should only match if T = any
   /**
     * @see _.isArrayLike
@@ -4260,7 +4260,7 @@ trait LoDashStatic extends js.Object {
   /**
     * @see _.iteratee
     */
-  def iteratee(): FnValue = js.native
+  def iteratee(): FnCallValue = js.native
   /**
     * @see _.iteratee
     */

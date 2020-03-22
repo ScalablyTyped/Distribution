@@ -9,7 +9,7 @@ trait AnnotationsElliottWaveTypeOptions extends js.Object {
     * (Highstock) Line options.
     */
   var line: js.UndefOr[AnnotationsElliottWaveTypeLineOptions] = js.undefined
-  var points: js.UndefOr[AnnotationsElliottWaveTypePointsOptions] = js.undefined
+  var points: js.UndefOr[js.Array[AnnotationsElliottWaveTypePointsOptions]] = js.undefined
   /**
     * (Highstock) This number defines which xAxis the point is connected to. It
     * refers to either the axis id or the index of the axis in the xAxis array.
@@ -26,7 +26,7 @@ object AnnotationsElliottWaveTypeOptions {
   @scala.inline
   def apply(
     line: AnnotationsElliottWaveTypeLineOptions = null,
-    points: AnnotationsElliottWaveTypePointsOptions = null,
+    points: js.Array[AnnotationsElliottWaveTypePointsOptions] = null,
     xAxis: Int | Double = null,
     yAxis: Int | Double = null
   ): AnnotationsElliottWaveTypeOptions = {

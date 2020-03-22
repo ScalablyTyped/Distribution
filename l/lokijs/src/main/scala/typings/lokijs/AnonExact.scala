@@ -1,6 +1,5 @@
 package typings.lokijs
 
-import typings.lokijs.lokijsStrings.Anon_Exact
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,10 +7,10 @@ import scala.scalajs.js.annotation._
 trait AnonExact[E /* <: js.Object */] extends js.Object {
   var exact: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof E ]: lokijs.ExactIndex<E>}
-    */ Anon_Exact with js.Any
+    */ typings.lokijs.lokijsStrings.AnonExact with js.Any
   var unique: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof E ]: lokijs.UniqueIndex<E>}
-    */ Anon_Exact with js.Any
+    */ typings.lokijs.lokijsStrings.AnonExact with js.Any
 }
 
 object AnonExact {
@@ -19,10 +18,10 @@ object AnonExact {
   def apply[E /* <: js.Object */](
     exact: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof E ]: lokijs.ExactIndex<E>}
-    */ Anon_Exact with js.Any,
+    */ typings.lokijs.lokijsStrings.AnonExact with js.Any,
     unique: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof E ]: lokijs.UniqueIndex<E>}
-    */ Anon_Exact with js.Any
+    */ typings.lokijs.lokijsStrings.AnonExact with js.Any
   ): AnonExact[E] = {
     val __obj = js.Dynamic.literal(exact = exact.asInstanceOf[js.Any], unique = unique.asInstanceOf[js.Any])
   

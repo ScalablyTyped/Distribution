@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GetResourcesRequest extends js.Object {
   /**
-    * The Amazon WorkDocs authentication token. Do not set this field when using administrative API actions, as in accessing the API operation using AWS credentials.
+    * The Amazon WorkDocs authentication token. Not required when using AWS administrator credentials to access the API.
     */
   var AuthenticationToken: js.UndefOr[AuthenticationHeaderType] = js.native
   /**

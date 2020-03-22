@@ -46,6 +46,7 @@ import typings.antd.antdStrings.tree
 import typings.antd.antdStrings.url
 import typings.antd.antdStrings.vertical
 import typings.antd.antdStrings.yes
+import typings.antd.sizeContextMod.SizeType
 import typings.react.AnonHtml
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
@@ -146,6 +147,7 @@ trait AnchorButtonProps extends js.Object {
   var color: js.UndefOr[String] = js.undefined
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
   var contextMenu: js.UndefOr[String] = js.undefined
+  var danger: js.UndefOr[Boolean] = js.undefined
   var dangerouslySetInnerHTML: js.UndefOr[AnonHtml] = js.undefined
   var datatype: js.UndefOr[String] = js.undefined
   var defaultChecked: js.UndefOr[Boolean] = js.undefined
@@ -157,7 +159,7 @@ trait AnchorButtonProps extends js.Object {
   var hidden: js.UndefOr[Boolean] = js.undefined
   var href: js.UndefOr[String] = js.undefined
   var hrefLang: js.UndefOr[String] = js.undefined
-  var icon: js.UndefOr[String] = js.undefined
+  var icon: js.UndefOr[ReactNode] = js.undefined
   var id: js.UndefOr[String] = js.undefined
   var inlist: js.UndefOr[js.Any] = js.undefined
   var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
@@ -262,7 +264,7 @@ trait AnchorButtonProps extends js.Object {
   var role: js.UndefOr[String] = js.undefined
   var security: js.UndefOr[String] = js.undefined
   var shape: js.UndefOr[ButtonShape] = js.undefined
-  var size: js.UndefOr[ButtonSize] = js.undefined
+  var size: js.UndefOr[SizeType] = js.undefined
   var slot: js.UndefOr[String] = js.undefined
   var spellCheck: js.UndefOr[Booleanish] = js.undefined
   var style: js.UndefOr[CSSProperties] = js.undefined
@@ -340,6 +342,7 @@ object AnchorButtonProps {
     color: String = null,
     contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,
+    danger: js.UndefOr[Boolean] = js.undefined,
     dangerouslySetInnerHTML: AnonHtml = null,
     datatype: String = null,
     defaultChecked: js.UndefOr[Boolean] = js.undefined,
@@ -351,7 +354,7 @@ object AnchorButtonProps {
     hidden: js.UndefOr[Boolean] = js.undefined,
     href: String = null,
     hrefLang: String = null,
-    icon: String = null,
+    icon: ReactNode = null,
     id: String = null,
     inlist: js.Any = null,
     inputMode: none | text | tel | url | email | numeric | decimal | search = null,
@@ -456,7 +459,7 @@ object AnchorButtonProps {
     role: String = null,
     security: String = null,
     shape: ButtonShape = null,
-    size: ButtonSize = null,
+    size: SizeType = null,
     slot: String = null,
     spellCheck: js.UndefOr[Boolean] = js.undefined,
     style: CSSProperties = null,
@@ -531,6 +534,7 @@ object AnchorButtonProps {
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (contentEditable != null) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
     if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu.asInstanceOf[js.Any])
+    if (!js.isUndefined(danger)) __obj.updateDynamic("danger")(danger.asInstanceOf[js.Any])
     if (dangerouslySetInnerHTML != null) __obj.updateDynamic("dangerouslySetInnerHTML")(dangerouslySetInnerHTML.asInstanceOf[js.Any])
     if (datatype != null) __obj.updateDynamic("datatype")(datatype.asInstanceOf[js.Any])
     if (!js.isUndefined(defaultChecked)) __obj.updateDynamic("defaultChecked")(defaultChecked.asInstanceOf[js.Any])

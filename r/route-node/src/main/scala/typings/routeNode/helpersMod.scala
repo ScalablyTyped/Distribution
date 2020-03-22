@@ -1,23 +1,23 @@
 package typings.routeNode
 
-import typings.routeNode.mod.BuildOptions
-import typings.routeNode.mod.MatchResponse
-import typings.routeNode.mod.RouteNodeState
-import typings.routeNode.mod.RouteNodeStateMeta
-import typings.routeNode.mod.default
+import typings.routeNode.routeNodeMod.BuildOptions
+import typings.routeNode.routeNodeMod.MatchResponse
+import typings.routeNode.routeNodeMod.RouteNode
+import typings.routeNode.routeNodeMod.RouteNodeState
+import typings.routeNode.routeNodeMod.RouteNodeStateMeta
+import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("route-node/typings/helpers", JSImport.Namespace)
+@JSImport("route-node/dist/helpers", JSImport.Namespace)
 @js.native
 object helpersMod extends js.Object {
-  def buildPathFromSegments(): String = js.native
-  def buildPathFromSegments(segments: js.Array[default]): String = js.native
-  def buildPathFromSegments(segments: js.Array[default], params: js.Object): String = js.native
-  def buildPathFromSegments(segments: js.Array[default], params: js.Object, options: BuildOptions): String = js.native
-  def buildStateFromMatch(`match`: MatchResponse): RouteNodeState = js.native
-  def getMetaFromSegments(segments: js.Array[default]): RouteNodeStateMeta = js.native
-  def getPathFromSegments(segments: js.Array[default]): String = js.native
+  def buildPathFromSegments(segments: js.Array[RouteNode]): String = js.native
+  def buildPathFromSegments(segments: js.Array[RouteNode], params: Record[String, _]): String = js.native
+  def buildPathFromSegments(segments: js.Array[RouteNode], params: Record[String, _], options: BuildOptions): String = js.native
+  def buildStateFromMatch(`match`: MatchResponse): RouteNodeState | Null = js.native
+  def getMetaFromSegments(segments: js.Array[RouteNode]): RouteNodeStateMeta = js.native
+  def getPathFromSegments(segments: js.Array[RouteNode]): String | Null = js.native
 }
 

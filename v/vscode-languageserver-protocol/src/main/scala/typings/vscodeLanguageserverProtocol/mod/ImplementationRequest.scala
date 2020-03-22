@@ -1,7 +1,9 @@
 package typings.vscodeLanguageserverProtocol.mod
 
-import typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentPositionParams
-import typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions
+import typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType
+import typings.vscodeLanguageserverProtocol.protocolImplementationMod.ImplementationParams
+import typings.vscodeLanguageserverProtocol.protocolImplementationMod.ImplementationRegistrationOptions
+import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.textDocumentSlashimplementation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,13 +11,23 @@ import scala.scalajs.js.annotation._
 @JSImport("vscode-languageserver-protocol", "ImplementationRequest")
 @js.native
 object ImplementationRequest extends js.Object {
-  val `type`: typings.vscodeJsonrpc.mod.RequestType[
-    TextDocumentPositionParams, 
+  val method: textDocumentSlashimplementation = js.native
+  /** @deprecated Use ImplementationRequest.type */
+  val resultType: typings.vscodeJsonrpc.mod.ProgressType[
+    js.Array[
+      typings.vscodeLanguageserverTypes.mod.Location | typings.vscodeLanguageserverTypes.mod.LocationLink
+    ]
+  ] = js.native
+  val `type`: ProtocolRequestType[
+    ImplementationParams, 
     typings.vscodeLanguageserverTypes.mod.Location | (js.Array[
       typings.vscodeLanguageserverTypes.mod.Location | typings.vscodeLanguageserverTypes.mod.LocationLink
     ]) | Null, 
+    js.Array[
+      typings.vscodeLanguageserverTypes.mod.Location | typings.vscodeLanguageserverTypes.mod.LocationLink
+    ], 
     Unit, 
-    TextDocumentRegistrationOptions
+    ImplementationRegistrationOptions
   ] = js.native
 }
 

@@ -3,7 +3,6 @@ package typings.materialTabIndicator
 import typings.materialBase.foundationMod.MDCFoundation
 import typings.materialTabIndicator.adapterMod.MDCTabIndicatorAdapter
 import typings.std.ClientRect
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +12,7 @@ import scala.scalajs.js.annotation._
 object foundationMod extends js.Object {
   @js.native
   abstract class MDCTabIndicatorFoundation () extends MDCFoundation[MDCTabIndicatorAdapter] {
-    def this(adapter: Partial[MDCTabIndicatorAdapter]) = this()
+    def this(adapter: PartialMDCTabIndicatorAda) = this()
     def activate(): Unit = js.native
     def activate(previousIndicatorClientRect: ClientRect): Unit = js.native
     def computeContentClientRect(): ClientRect = js.native
@@ -28,7 +27,7 @@ object foundationMod extends js.Object {
   
   @js.native
   abstract class default () extends MDCTabIndicatorFoundation {
-    def this(adapter: Partial[MDCTabIndicatorAdapter]) = this()
+    def this(adapter: PartialMDCTabIndicatorAda) = this()
   }
   
   /* static members */

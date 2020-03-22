@@ -1,6 +1,6 @@
 package typings.ckeditorCkeditor5Engine.mod.model
 
-import typings.ckeditorCkeditor5Engine.AnonBackward
+import typings.ckeditorCkeditor5Engine.AnonDirection
 import typings.ckeditorCkeditor5Engine.AnonDoNotResetEntireContent
 import typings.std.Iterable
 import scala.scalajs.js
@@ -32,8 +32,8 @@ object utils extends js.Object {
   def insertContent(model: Model, content: Item, selectable: Selection): Unit = js.native
   def insertContent(model: Model, content: Item, selectable: Iterable[Range]): Unit = js.native
   def modifySelection(model: Model, selection: DocumentSelection): Unit = js.native
-  def modifySelection(model: Model, selection: DocumentSelection, options: AnonBackward): Unit = js.native
+  def modifySelection(model: Model, selection: DocumentSelection, options: AnonDirection): Unit = js.native
   def modifySelection(model: Model, selection: Selection): Unit = js.native
-  def modifySelection(model: Model, selection: Selection, options: AnonBackward): Unit = js.native
+  def modifySelection(model: Model, selection: Selection, options: AnonDirection): Unit = js.native
 }
 

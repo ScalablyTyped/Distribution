@@ -1,7 +1,7 @@
 package typings.ckeditorCkeditor5Engine.mod
 
+import typings.ckeditorCkeditor5Engine.Anon0
 import typings.ckeditorCkeditor5Engine.AnonPriority
-import typings.ckeditorCkeditor5Engine.AnonPriorityNumber
 import typings.ckeditorCkeditor5Engine.mod.conversion.DowncastDispatcher
 import typings.ckeditorCkeditor5Engine.mod.conversion.Mapper
 import typings.ckeditorCkeditor5Engine.mod.conversion.UpcastDispatcher
@@ -36,8 +36,8 @@ object controller extends js.Object {
     def init(data: String): js.Promise[_] = js.native
     def init(data: String, rootName: String): js.Promise[_] = js.native
     def listenTo(emitter: Emitter, event: String, callback: js.Function, options: AnonPriority): Unit = js.native
-    def on(event: String, callback: js.Function, options: AnonPriorityNumber): Unit = js.native
-    def once(event: String, callback: js.Function, options: AnonPriorityNumber): Unit = js.native
+    def on(event: String, callback: js.Function, options: Anon0): Unit = js.native
+    def once(event: String, callback: js.Function, options: Anon0): Unit = js.native
     def parse(data: String): DocumentFragment = js.native
     def parse(data: String, context: SchemaContextDefinition): DocumentFragment = js.native
     def stringify(modelElementOrFragment: DocumentFragment): String = js.native
@@ -60,8 +60,8 @@ object controller extends js.Object {
     val view: View = js.native
     def destroy(): Unit = js.native
     def listenTo(emitter: Emitter, event: String, callback: js.Function, options: AnonPriority): Unit = js.native
-    def on(event: String, callback: js.Function, options: AnonPriorityNumber): Unit = js.native
-    def once(event: String, callback: js.Function, options: AnonPriorityNumber): Unit = js.native
+    def on(event: String, callback: js.Function, options: Anon0): Unit = js.native
+    def once(event: String, callback: js.Function, options: Anon0): Unit = js.native
   }
   
 }

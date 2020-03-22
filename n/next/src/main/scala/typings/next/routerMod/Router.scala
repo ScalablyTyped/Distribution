@@ -18,13 +18,14 @@ trait Router extends BaseRouter {
     */
   var components: StringDictionary[RouteInfo] = js.native
   var events: MittEmitter = js.native
+  var isFallback: Boolean = js.native
   var isSsr: Boolean = js.native
   var pageLoader: js.Any = js.native
   var sdc: StringDictionary[js.Object] = js.native
   var sub: Subscription = js.native
   def _getData[T](fn: js.Function0[js.Promise[T]]): js.Promise[T] = js.native
+  def _getServerData(asPath: String): js.Promise[js.Object] = js.native
   def _getStaticData(asPath: String): js.Promise[js.Object] = js.native
-  def _getStaticData(asPath: String, _cachedData: js.Object): js.Promise[js.Object] = js.native
   def _wrapApp(App: ComponentType[js.Object]): js.Any = js.native
   def abortComponentLoad(as: String): Unit = js.native
   /**
@@ -36,9 +37,9 @@ trait Router extends BaseRouter {
     * @param cb callback to be executed
     */
   def beforePopState(cb: BeforePopStateCallback): Unit = js.native
-  def change(method: String, _url: Url, _as: Url, options: js.Any): js.Promise[Boolean] = js.native
-  def changeState(method: String, url: String, as: String): Unit = js.native
-  def changeState(method: String, url: String, as: String, options: js.Object): Unit = js.native
+  def change(method: HistoryMethod, _url: Url, _as: Url, options: js.Any): js.Promise[Boolean] = js.native
+  def changeState(method: HistoryMethod, url: String, as: String): Unit = js.native
+  def changeState(method: HistoryMethod, url: String, as: String, options: js.Object): Unit = js.native
   def fetchComponent(route: String): js.Promise[ComponentType[js.Object]] = js.native
   def getInitialProps(Component: ComponentType[js.Object], ctx: NextPageContext): js.Promise[_] = js.native
   def getRouteInfo(route: String, pathname: String, query: js.Any, as: String): js.Promise[RouteInfo] = js.native
@@ -47,11 +48,14 @@ trait Router extends BaseRouter {
   def onPopState(e: PopStateEvent): Unit = js.native
   def onlyAHashChange(as: String): Boolean = js.native
   /**
-    * Prefetch `page` code, you may wait for the data during `page` rendering.
+    * Prefetch page code, you may wait for the data during page rendering.
     * This feature only works in production!
-    * @param url of prefetched `page`
+    * @param url the href of prefetched page
+    * @param asPath the as path of the prefetched page
     */
   def prefetch(url: String): js.Promise[Unit] = js.native
+  def prefetch(url: String, asPath: String): js.Promise[Unit] = js.native
+  def prefetch(url: String, asPath: String, options: PrefetchOptions): js.Promise[Unit] = js.native
   /**
     * Performs a `pushState` with arguments
     * @param url of the route

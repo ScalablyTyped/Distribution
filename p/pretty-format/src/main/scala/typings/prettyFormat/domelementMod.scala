@@ -3,6 +3,7 @@ package typings.prettyFormat
 import typings.prettyFormat.typesMod.Config
 import typings.prettyFormat.typesMod.NewPlugin
 import typings.prettyFormat.typesMod.Printer
+import typings.prettyFormat.typesMod.Refs
 import typings.std.Comment
 import typings.std.DocumentFragment
 import typings.std.Element
@@ -20,7 +21,7 @@ object domelementMod extends js.Object {
     config: Config,
     indentation: String,
     depth: Double,
-    refs: js.Array[_],
+    refs: Refs,
     printer: Printer
   ): String = js.native
   def test(`val`: js.Any): Boolean = js.native

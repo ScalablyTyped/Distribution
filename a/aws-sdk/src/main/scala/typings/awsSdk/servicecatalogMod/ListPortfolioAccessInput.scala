@@ -11,6 +11,18 @@ trait ListPortfolioAccessInput extends js.Object {
     */
   var AcceptLanguage: js.UndefOr[typings.awsSdk.servicecatalogMod.AcceptLanguage] = js.native
   /**
+    * The ID of an organization node the portfolio is shared with. All children of this node with an inherited portfolio share will be returned.
+    */
+  var OrganizationParentId: js.UndefOr[Id] = js.native
+  /**
+    * The maximum number of items to return with this call.
+    */
+  var PageSize: js.UndefOr[typings.awsSdk.servicecatalogMod.PageSize] = js.native
+  /**
+    * The page token for the next set of results. To retrieve the first set of results, use null.
+    */
+  var PageToken: js.UndefOr[typings.awsSdk.servicecatalogMod.PageToken] = js.native
+  /**
     * The portfolio identifier.
     */
   var PortfolioId: Id = js.native
@@ -18,9 +30,18 @@ trait ListPortfolioAccessInput extends js.Object {
 
 object ListPortfolioAccessInput {
   @scala.inline
-  def apply(PortfolioId: Id, AcceptLanguage: AcceptLanguage = null): ListPortfolioAccessInput = {
+  def apply(
+    PortfolioId: Id,
+    AcceptLanguage: AcceptLanguage = null,
+    OrganizationParentId: Id = null,
+    PageSize: Int | Double = null,
+    PageToken: PageToken = null
+  ): ListPortfolioAccessInput = {
     val __obj = js.Dynamic.literal(PortfolioId = PortfolioId.asInstanceOf[js.Any])
     if (AcceptLanguage != null) __obj.updateDynamic("AcceptLanguage")(AcceptLanguage.asInstanceOf[js.Any])
+    if (OrganizationParentId != null) __obj.updateDynamic("OrganizationParentId")(OrganizationParentId.asInstanceOf[js.Any])
+    if (PageSize != null) __obj.updateDynamic("PageSize")(PageSize.asInstanceOf[js.Any])
+    if (PageToken != null) __obj.updateDynamic("PageToken")(PageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListPortfolioAccessInput]
   }
 }

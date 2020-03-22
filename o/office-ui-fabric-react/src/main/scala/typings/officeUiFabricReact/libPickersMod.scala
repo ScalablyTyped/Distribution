@@ -5,7 +5,6 @@ import typings.officeUiFabricReact.basePickerTypesMod.IBasePickerProps
 import typings.officeUiFabricReact.basePickerTypesMod.ValidationState
 import typings.officeUiFabricReact.peoplePickerItemTypesMod.IPeoplePickerItemSelectedProps
 import typings.officeUiFabricReact.peoplePickerItemTypesMod.IPeoplePickerItemSuggestionProps
-import typings.officeUiFabricReact.peoplePickerMod.IGenericItem
 import typings.officeUiFabricReact.peoplePickerMod.IPeoplePickerProps
 import typings.officeUiFabricReact.personaTypesMod.IPersonaProps
 import typings.officeUiFabricReact.suggestionsTypesMod.ISuggestionsProps
@@ -91,7 +90,7 @@ object libPickersMod extends js.Object {
   def PeoplePickerItemSuggestionBase(props: IPeoplePickerItemSuggestionProps): Element = js.native
   def TagItemBase(props: ITagItemProps): Element = js.native
   def TagItemSuggestionBase(props: ITagItemSuggestionProps): Element = js.native
-  def createGenericItem(name: String, currentValidationState: ValidationState): IGenericItem with AnonKey = js.native
+  def createGenericItem(name: String, currentValidationState: ValidationState): IGenericItemkeyKey = js.native
   /* static members */
   @js.native
   object Autofill extends js.Object {

@@ -3,9 +3,8 @@ package typings.reactNativeSvgCharts.mod
 import typings.d3Scale.mod.ScaleBand_
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativeSvg.mod.TextProps
 import typings.reactNativeSvgCharts.AnonLeft
-import typings.std.Partial
+import typings.reactNativeSvgCharts.PartialTextProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,7 +25,7 @@ object XAxisProps {
     spacingInner: Int | Double = null,
     spacingOuter: Int | Double = null,
     style: StyleProp[ViewStyle] = null,
-    svg: Partial[TextProps] = null,
+    svg: PartialTextProps = null,
     xAccessor: /* props */ AccessorFunctionProps[T] => _ = null
   ): XAxisProps[T] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])

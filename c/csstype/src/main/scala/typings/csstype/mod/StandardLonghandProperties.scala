@@ -68,10 +68,10 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * _Supported in Flex Layout_
     *
-    * |  Chrome  | Firefox | Safari |  Edge  |   IE   |
-    * | :------: | :-----: | :----: | :----: | :----: |
-    * |  **36**  | **20**  | **9**  | **12** | **11** |
-    * | 21 _-x-_ |         |        |        |        |
+    * |  Chrome  | Firefox |  Safari   |  Edge  |   IE   |
+    * | :------: | :-----: | :-------: | :----: | :----: |
+    * |  **36**  | **20**  |   **9**   | **12** | **11** |
+    * | 21 _-x-_ |         | 6.1 _-x-_ |        |        |
     *
     * ---
     *
@@ -203,13 +203,25 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     */
   var appearance: js.UndefOr[AppearanceProperty] = js.undefined
   /**
+    * The **`aspect-ratio`**    CSS property sets a _**preferred aspect ratio**_ for the box, which will be used in the calculation of auto sizes and some other layout functions.
+    *
+    * **Initial value**: `auto`
+    *
+    * | Chrome | Firefox | Safari | Edge | IE  |
+    * | :----: | :-----: | :----: | :--: | :-: |
+    * | **79** | **71**  |   No   |  No  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/aspect-ratio
+    */
+  var aspectRatio: js.UndefOr[AspectRatioProperty] = js.undefined
+  /**
     * The **`backdrop-filter`** CSS property lets you apply graphical effects such as blurring or color shifting to the area behind an element. Because it applies to everything _behind_ the element, to see the effect you must make the element or its background at least partially transparent.
     *
     * **Initial value**: `none`
     *
     * | Chrome | Firefox |   Safari    |  Edge  | IE  |
     * | :----: | :-----: | :---------: | :----: | :-: |
-    * | **76** |   No    | **9** _-x-_ | **17** | No  |
+    * | **76** |   n/a   | **9** _-x-_ | **17** | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/backdrop-filter
     */
@@ -219,10 +231,10 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `visible`
     *
-    * |  Chrome  | Firefox  | Safari |  Edge  |   IE   |
-    * | :------: | :------: | :----: | :----: | :----: |
-    * |  **36**  |  **16**  |  Yes   | **12** | **10** |
-    * | 12 _-x-_ | 10 _-x-_ |        |        |        |
+    * |  Chrome  | Firefox  |    Safari     |  Edge  |   IE   |
+    * | :------: | :------: | :-----------: | :----: | :----: |
+    * |  **36**  |  **16**  | **5.1** _-x-_ | **12** | **10** |
+    * | 12 _-x-_ | 10 _-x-_ |               |        |        |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/backface-visibility
     */
@@ -465,7 +477,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * |  n/a   | **66**  |   No   |  No  | No  |
+    * | **69** | **66**  |   No   |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/border-block-style
     */
@@ -477,7 +489,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * |  n/a   | **66**  |   No   |  No  | No  |
+    * | **69** | **66**  |   No   |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/border-block-width
     */
@@ -647,7 +659,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * |  n/a   | **66**  |   No   |  No  | No  |
+    * | **69** | **66**  |   No   |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/border-inline-color
     */
@@ -736,7 +748,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * |  n/a   | **66**  |   No   |  No  | No  |
+    * | **69** | **66**  |   No   |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/border-inline-style
     */
@@ -748,7 +760,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * |  n/a   | **66**  |   No   |  No  | No  |
+    * | **69** | **66**  |   No   |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/border-inline-width
     */
@@ -940,9 +952,9 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `slice`
     *
-    * |    Chrome    | Firefox | Safari  | Edge | IE  |
-    * | :----------: | :-----: | :-----: | :--: | :-: |
-    * | **22** _-x-_ | **32**  | **6.1** |  No  | No  |
+    * |    Chrome    | Firefox |    Safari     | Edge | IE  |
+    * | :----------: | :-----: | :-----------: | :--: | :-: |
+    * | **22** _-x-_ | **32**  | **6.1** _-x-_ |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/box-decoration-break
     */
@@ -968,7 +980,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     * | Chrome  | Firefox | Safari  |  Edge  |  IE   |
     * | :-----: | :-----: | :-----: | :----: | :---: |
     * | **10**  | **29**  | **5.1** | **12** | **8** |
-    * | 1 _-x-_ | 1 _-x-_ |         |        |       |
+    * | 1 _-x-_ | 1 _-x-_ | 3 _-x-_ |        |       |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/box-sizing
     */
@@ -1116,10 +1128,10 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `none`
     *
-    * |  Chrome  | Firefox |   Safari    |  Edge  |   IE   |
-    * | :------: | :-----: | :---------: | :----: | :----: |
-    * |  **55**  | **3.5** | **7** _-x-_ | **12** | **10** |
-    * | 24 _-x-_ |         |             |        |        |
+    * |  Chrome  | Firefox |  Safari   |  Edge  |   IE   |
+    * | :------: | :-----: | :-------: | :----: | :----: |
+    * |  **55**  | **3.5** |  **9.1**  | **12** | **10** |
+    * | 23 _-x-_ |         | 6.1 _-x-_ |        |        |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/clip-path
     */
@@ -1131,7 +1143,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari |  Edge  |  IE   |
     * | :----: | :-----: | :----: | :----: | :---: |
-    * | **1**  |  **1**  |  Yes   | **12** | **3** |
+    * | **1**  |  **1**  | **1**  | **12** | **3** |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/color
     */
@@ -1153,10 +1165,10 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `auto`
     *
-    * | Chrome |  Firefox  | Safari  |  Edge  |   IE   |
-    * | :----: | :-------: | :-----: | :----: | :----: |
-    * | **50** |  **52**   |  **9**  | **12** | **10** |
-    * |        | 1.5 _-x-_ | 3 _-x-_ |        |        |
+    * | Chrome  | Firefox | Safari  |  Edge  |   IE   |
+    * | :-----: | :-----: | :-----: | :----: | :----: |
+    * | **50**  | **52**  |  **9**  | **12** | **10** |
+    * | 1 _-x-_ |         | 3 _-x-_ |        |        |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/column-count
     */
@@ -1166,10 +1178,10 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `balance`
     *
-    * | Chrome | Firefox  | Safari  |  Edge  |   IE   |
-    * | :----: | :------: | :-----: | :----: | :----: |
-    * | **50** |  **52**  |  **9**  | **12** | **10** |
-    * |        | 13 _-x-_ | 8 _-x-_ |        |        |
+    * | Chrome | Firefox | Safari  |  Edge  |   IE   |
+    * | :----: | :-----: | :-----: | :----: | :----: |
+    * | **50** | **52**  |  **9**  | **12** | **10** |
+    * |        |         | 8 _-x-_ |        |        |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/column-fill
     */
@@ -1200,10 +1212,10 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * _Supported in Multi-column Layout_
     *
-    * | Chrome |  Firefox  | Safari  |  Edge  |   IE   |
-    * | :----: | :-------: | :-----: | :----: | :----: |
-    * | **50** |  **52**   | **10**  | **12** | **10** |
-    * |        | 1.5 _-x-_ | 3 _-x-_ |        |        |
+    * | Chrome  | Firefox | Safari  |  Edge  |   IE   |
+    * | :-----: | :-----: | :-----: | :----: | :----: |
+    * | **50**  | **52**  | **10**  | **12** | **10** |
+    * | 1 _-x-_ |         | 3 _-x-_ |        |        |
     *
     * ---
     *
@@ -1215,10 +1227,10 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `currentcolor`
     *
-    * | Chrome |  Firefox  | Safari  |  Edge  |   IE   |
-    * | :----: | :-------: | :-----: | :----: | :----: |
-    * | **50** |  **52**   |  **9**  | **12** | **10** |
-    * |        | 3.5 _-x-_ | 3 _-x-_ |        |        |
+    * | Chrome  | Firefox | Safari  |  Edge  |   IE   |
+    * | :-----: | :-----: | :-----: | :----: | :----: |
+    * | **50**  | **52**  |  **9**  | **12** | **10** |
+    * | 1 _-x-_ |         | 3 _-x-_ |        |        |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/column-rule-color
     */
@@ -1228,10 +1240,10 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `none`
     *
-    * | Chrome |  Firefox  | Safari  |  Edge  |   IE   |
-    * | :----: | :-------: | :-----: | :----: | :----: |
-    * | **50** |  **52**   |  **9**  | **12** | **10** |
-    * |        | 3.5 _-x-_ | 3 _-x-_ |        |        |
+    * | Chrome  | Firefox | Safari  |  Edge  |   IE   |
+    * | :-----: | :-----: | :-----: | :----: | :----: |
+    * | **50**  | **52**  |  **9**  | **12** | **10** |
+    * | 1 _-x-_ |         | 3 _-x-_ |        |        |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/column-rule-style
     */
@@ -1241,10 +1253,10 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `medium`
     *
-    * | Chrome |  Firefox  | Safari  |  Edge  |   IE   |
-    * | :----: | :-------: | :-----: | :----: | :----: |
-    * | **50** |  **50**   |  **9**  | **12** | **10** |
-    * |        | 3.5 _-x-_ | 3 _-x-_ |        |        |
+    * | Chrome  | Firefox | Safari  |  Edge  |   IE   |
+    * | :-----: | :-----: | :-----: | :----: | :----: |
+    * | **50**  | **52**  |  **9**  | **12** | **10** |
+    * | 1 _-x-_ |         | 3 _-x-_ |        |        |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/column-rule-width
     */
@@ -1256,7 +1268,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * | Chrome  | Firefox |  Safari   |  Edge  |   IE   |
     * | :-----: | :-----: | :-------: | :----: | :----: |
-    * | **50**  |   n/a   |   **9**   | **12** | **10** |
+    * | **50**  | **71**  |   **9**   | **12** | **10** |
     * | 6 _-x-_ |         | 5.1 _-x-_ |        |        |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/column-span
@@ -1267,10 +1279,10 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `auto`
     *
-    * | Chrome |  Firefox  | Safari  |  Edge  |   IE   |
-    * | :----: | :-------: | :-----: | :----: | :----: |
-    * | **50** |  **50**   |  **9**  | **12** | **10** |
-    * |        | 1.5 _-x-_ | 3 _-x-_ |        |        |
+    * | Chrome  | Firefox | Safari  |  Edge  |   IE   |
+    * | :-----: | :-----: | :-----: | :----: | :----: |
+    * | **50**  | **50**  |  **9**  | **12** | **10** |
+    * | 1 _-x-_ |         | 3 _-x-_ |        |        |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/column-width
     */
@@ -1282,7 +1294,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * | **52** |   n/a   |   No   |  No  | No  |
+    * | **52** | **69**  |   No   |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/contain
     */
@@ -1404,7 +1416,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     * |  Chrome  | Firefox | Safari  |  Edge  |   IE   |
     * | :------: | :-----: | :-----: | :----: | :----: |
     * |  **29**  | **22**  |  **9**  | **12** | **11** |
-    * | 21 _-x-_ |         | 7 _-x-_ |        |        |
+    * | 22 _-x-_ |         | 7 _-x-_ |        |        |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/flex-basis
     */
@@ -1430,7 +1442,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     * |  Chrome  | Firefox |  Safari   |  Edge  |            IE            |
     * | :------: | :-----: | :-------: | :----: | :----------------------: |
     * |  **29**  | **20**  |   **9**   | **12** |          **11**          |
-    * | 21 _-x-_ |         | 6.1 _-x-_ |        | 10 _(-ms-flex-positive)_ |
+    * | 22 _-x-_ |         | 6.1 _-x-_ |        | 10 _(-ms-flex-positive)_ |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/flex-grow
     */
@@ -1443,7 +1455,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     * |  Chrome  | Firefox | Safari  |  Edge  |   IE   |
     * | :------: | :-----: | :-----: | :----: | :----: |
     * |  **29**  | **20**  |  **9**  | **12** | **10** |
-    * | 21 _-x-_ |         | 8 _-x-_ |        |        |
+    * | 22 _-x-_ |         | 8 _-x-_ |        |        |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/flex-shrink
     */
@@ -1453,10 +1465,10 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `nowrap`
     *
-    * |  Chrome  | Firefox | Safari |  Edge  |   IE   |
-    * | :------: | :-----: | :----: | :----: | :----: |
-    * |  **29**  | **28**  | **9**  | **12** | **11** |
-    * | 21 _-x-_ |         |        |        |        |
+    * |  Chrome  | Firefox |  Safari   |  Edge  |   IE   |
+    * | :------: | :-----: | :-------: | :----: | :----: |
+    * |  **29**  | **28**  |   **9**   | **12** | **11** |
+    * | 21 _-x-_ |         | 6.1 _-x-_ |        |        |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/flex-wrap
     */
@@ -1530,7 +1542,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari |  Edge  | IE  |
     * | :----: | :-----: | :----: | :----: | :-: |
-    * |   No   | **62**  |  n/a   | **17** | No  |
+    * | **79** | **62**  | **11** | **17** | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/font-optical-sizing
     */
@@ -1554,7 +1566,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * |  n/a   |  **1**  |   No   |  No  | No  |
+    * | **54** |  **1**  |   No   |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/font-size-adjust
     */
@@ -1699,7 +1711,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * | Chrome | Firefox |  Safari  |          Edge           |             IE              |
     * | :----: | :-----: | :------: | :---------------------: | :-------------------------: |
-    * | **57** | **52**  | **10.1** |         **16**          | **10** _(-ms-grid-columns)_ |
+    * | **57** | **70**  | **10.1** |         **16**          | **10** _(-ms-grid-columns)_ |
     * |        |         |          | 12 _(-ms-grid-columns)_ |                             |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/grid-auto-columns
@@ -1724,7 +1736,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * | Chrome | Firefox |  Safari  |         Edge         |            IE            |
     * | :----: | :-----: | :------: | :------------------: | :----------------------: |
-    * | **57** | **52**  | **10.1** |        **16**        | **10** _(-ms-grid-rows)_ |
+    * | **57** | **70**  | **10.1** |        **16**        | **10** _(-ms-grid-rows)_ |
     * |        |         |          | 12 _(-ms-grid-rows)_ |                          |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/grid-auto-rows
@@ -1870,7 +1882,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * |  Yes   | **3.6** |  Yes   |  No  | No  |
+    * | **13** | **3.6** | **6**  |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/image-rendering
     */
@@ -1992,7 +2004,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * | **41** | **36**  |  Yes   |  No  | No  |
+    * | **41** | **36**  | **8**  |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/isolation
     */
@@ -2006,10 +2018,10 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * _Supported in Flex Layout_
     *
-    * |  Chrome  | Firefox | Safari |  Edge  |   IE   |
-    * | :------: | :-----: | :----: | :----: | :----: |
-    * |  **52**  | **20**  | **9**  | **12** | **11** |
-    * | 21 _-x-_ |         |        |        |        |
+    * |  Chrome  | Firefox |  Safari   |  Edge  |   IE   |
+    * | :------: | :-----: | :-------: | :----: | :----: |
+    * |  **52**  | **20**  |   **9**   | **12** | **11** |
+    * | 21 _-x-_ |         | 6.1 _-x-_ |        |        |
     *
     * ---
     *
@@ -2107,7 +2119,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * | Chrome  | Firefox |   Safari    |  Edge  |   IE    |
     * | :-----: | :-----: | :---------: | :----: | :-----: |
-    * | **58**  |   No    | **3** _-x-_ | **14** | **5.5** |
+    * | **58**  | **69**  | **3** _-x-_ | **14** | **5.5** |
     * | 1 _-x-_ |         |             |        |         |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/line-break
@@ -2180,7 +2192,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * |  n/a   | **66**  |   No   |  No  | No  |
+    * | **69** | **66**  |   No   |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/margin-block
     */
@@ -2228,7 +2240,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * |  n/a   | **66**  |   No   |  No  | No  |
+    * | **69** | **66**  |   No   |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/margin-inline
     */
@@ -2432,9 +2444,9 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `luminance`
     *
-    * | Chrome | Firefox | Safari | Edge | IE  |
-    * | :----: | :-----: | :----: | :--: | :-: |
-    * | **24** | **35**  |  n/a   |  No  | No  |
+    * | Chrome | Firefox | Safari  | Edge | IE  |
+    * | :----: | :-----: | :-----: | :--: | :-: |
+    * | **24** | **35**  | **6.1** |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/mask-type
     */
@@ -2557,7 +2569,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * |         Chrome         | Firefox | Safari | Edge | IE  |
     * | :--------------------: | :-----: | :----: | :--: | :-: |
-    * |         **55**         |   No    |   No   |  No  | No  |
+    * |         **55**         | **72**  |   No   |  No  | No  |
     * | 46 _(motion-distance)_ |         |        |      |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/offset-distance
@@ -2570,7 +2582,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * |       Chrome       | Firefox | Safari | Edge | IE  |
     * | :----------------: | :-----: | :----: | :--: | :-: |
-    * |       **55**       |   n/a   |   No   |  No  | No  |
+    * |       **55**       | **72**  |   No   |  No  | No  |
     * | 46 _(motion-path)_ |         |        |      |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/offset-path
@@ -2583,7 +2595,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * |         Chrome         | Firefox | Safari | Edge | IE  |
     * | :--------------------: | :-----: | :----: | :--: | :-: |
-    * |         **56**         |   No    |   No   |  No  | No  |
+    * |         **56**         | **72**  |   No   |  No  | No  |
     * | 46 _(motion-rotation)_ |         |        |      |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/offset-rotate
@@ -2613,7 +2625,15 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     * @see https://developer.mozilla.org/docs/Web/CSS/object-position
     */
   var objectPosition: js.UndefOr[ObjectPositionProperty[TLength]] = js.undefined
-  /** **Initial value**: `auto` */
+  /**
+    * **Initial value**: `auto`
+    *
+    * | Chrome | Firefox | Safari | Edge | IE  |
+    * | :----: | :-----: | :----: | :--: | :-: |
+    * | **79** | **72**  |   No   |  No  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/offset-anchor
+    */
   var offsetAnchor: js.UndefOr[OffsetAnchorProperty[TLength]] = js.undefined
   /**
     * The **`offset-distance`** CSS property specifies a position along an `offset-path`.
@@ -2622,7 +2642,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * |         Chrome         | Firefox | Safari | Edge | IE  |
     * | :--------------------: | :-----: | :----: | :--: | :-: |
-    * |         **55**         |   No    |   No   |  No  | No  |
+    * |         **55**         | **72**  |   No   |  No  | No  |
     * | 46 _(motion-distance)_ |         |        |      |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/offset-distance
@@ -2635,14 +2655,12 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * |       Chrome       | Firefox | Safari | Edge | IE  |
     * | :----------------: | :-----: | :----: | :--: | :-: |
-    * |       **55**       |   n/a   |   No   |  No  | No  |
+    * |       **55**       | **72**  |   No   |  No  | No  |
     * | 46 _(motion-path)_ |         |        |      |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/offset-path
     */
   var offsetPath: js.UndefOr[OffsetPathProperty] = js.undefined
-  /** **Initial value**: `auto` */
-  var offsetPosition: js.UndefOr[OffsetPositionProperty[TLength]] = js.undefined
   /**
     * The **`offset-rotate`** CSS property defines the direction of the element while positioning along the offset path.
     *
@@ -2650,7 +2668,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * |         Chrome         | Firefox | Safari | Edge | IE  |
     * | :--------------------: | :-----: | :----: | :--: | :-: |
-    * |         **56**         |   No    |   No   |  No  | No  |
+    * |         **56**         | **72**  |   No   |  No  | No  |
     * | 46 _(motion-rotation)_ |         |        |      |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/offset-rotate
@@ -2663,7 +2681,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * |         Chrome         | Firefox | Safari | Edge | IE  |
     * | :--------------------: | :-----: | :----: | :--: | :-: |
-    * |         **56**         |   No    |   No   |  No  | No  |
+    * |         **56**         | **72**  |   No   |  No  | No  |
     * | 46 _(motion-rotation)_ |         |        |      |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/offset-rotate
@@ -2680,7 +2698,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/opacity
     */
-  var opacity: js.UndefOr[GlobalsNumber] = js.undefined
+  var opacity: js.UndefOr[OpacityProperty] = js.undefined
   /**
     * The **`order`** CSS property sets the order to lay out an item in a flex or grid container. Items in a container are sorted by ascending `order` value and then by their source code order.
     *
@@ -2858,6 +2876,30 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     */
   var overscrollBehavior: js.UndefOr[OverscrollBehaviorProperty] = js.undefined
   /**
+    * The **`overscroll-behavior-block`** CSS property sets the browser's behavior when the block direction boundary of a scrolling area is reached.
+    *
+    * **Initial value**: `auto`
+    *
+    * | Chrome | Firefox | Safari | Edge | IE  |
+    * | :----: | :-----: | :----: | :--: | :-: |
+    * | **77** | **73**  |   No   |  No  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/overscroll-behavior-block
+    */
+  var overscrollBehaviorBlock: js.UndefOr[OverscrollBehaviorBlockProperty] = js.undefined
+  /**
+    * The **`overscroll-behavior-inline`** CSS property sets the browser's behavior when the inline direction boundary of a scrolling area is reached.
+    *
+    * **Initial value**: `auto`
+    *
+    * | Chrome | Firefox | Safari | Edge | IE  |
+    * | :----: | :-----: | :----: | :--: | :-: |
+    * | **77** | **73**  |   No   |  No  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/overscroll-behavior-inline
+    */
+  var overscrollBehaviorInline: js.UndefOr[OverscrollBehaviorInlineProperty] = js.undefined
+  /**
     * The **`overscroll-behavior-x`** CSS property sets the browser's behavior when the horizontal boundary of a scrolling area is reached.
     *
     * **Initial value**: `auto`
@@ -2888,7 +2930,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * |  n/a   | **66**  |   No   |  No  | No  |
+    * | **69** | **66**  |   No   |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/padding-block
     */
@@ -2936,7 +2978,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * |  n/a   | **66**  |   No   |  No  | No  |
+    * | **69** | **66**  |   No   |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/padding-inline
     */
@@ -3046,7 +3088,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari |  Edge  | IE  |
     * | :----: | :-----: | :----: | :----: | :-: |
-    * | **35** | **60**  |  Yes   | **17** | No  |
+    * | **35** | **60**  | **8**  | **17** | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/paint-order
     */
@@ -3088,7 +3130,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * | **59** | **45**  |  Yes   |  No  | No  |
+    * | **59** | **45**  | **9**  |  No  | No  |
     *
     * ---
     *
@@ -3096,15 +3138,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * | **59** | **53**  |  Yes   |  No  | No  |
-    *
-    * ---
-    *
-    * _You can only specify a single value if it is valid for both <code>align-content</code> and <code>justify-content</code>_
-    *
-    * | Chrome | Firefox | Safari | Edge | IE  |
-    * | :----: | :-----: | :----: | :--: | :-: |
-    * |  Yes   | **60**  |  Yes   |  No  | No  |
+    * | **59** | **53**  | **11** |  No  | No  |
     *
     * ---
     *
@@ -3178,7 +3212,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * |   No   |   n/a   |   No   |  No  | No  |
+    * |   No   | **72**  |   No   |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/rotate
     */
@@ -3243,7 +3277,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * |   No   |   n/a   |   No   |  No  | No  |
+    * |   No   | **72**  |   No   |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/scale
     */
@@ -3602,7 +3636,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/shape-image-threshold
     */
-  var shapeImageThreshold: js.UndefOr[GlobalsNumber] = js.undefined
+  var shapeImageThreshold: js.UndefOr[ShapeImageThresholdProperty] = js.undefined
   /**
     * The **`shape-margin`** CSS property sets a margin for a CSS shape created using `shape-outside`.
     *
@@ -3680,9 +3714,10 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `none`
     *
-    * | Chrome | Firefox | Safari |                  Edge                  |                   IE                   |
-    * | :----: | :-----: | :----: | :------------------------------------: | :------------------------------------: |
-    * | **48** | **48**  |  Yes   | **12** _(-ms-text-combine-horizontal)_ | **11** _(-ms-text-combine-horizontal)_ |
+    * |           Chrome           | Firefox |              Safari              |                  Edge                  |                   IE                   |
+    * | :------------------------: | :-----: | :------------------------------: | :------------------------------------: | :------------------------------------: |
+    * |           **48**           | **48**  | **5.1** _(-webkit-text-combine)_ | **12** _(-ms-text-combine-horizontal)_ | **11** _(-ms-text-combine-horizontal)_ |
+    * | 9 _(-webkit-text-combine)_ |         |                                  |                                        |                                        |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/text-combine-upright
     */
@@ -3695,6 +3730,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     * | Chrome | Firefox |  Safari  | Edge | IE  |
     * | :----: | :-----: | :------: | :--: | :-: |
     * | **57** | **36**  | **12.1** |  No  | No  |
+    * |        |         | 8 _-x-_  |      |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/text-decoration-color
     */
@@ -3707,6 +3743,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     * | Chrome | Firefox |  Safari  | Edge | IE  |
     * | :----: | :-----: | :------: | :--: | :-: |
     * | **57** | **36**  | **12.1** |  No  | No  |
+    * |        |         | 8 _-x-_  |      |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/text-decoration-line
     */
@@ -3731,7 +3768,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * | **64** |   No    |   No   |  No  | No  |
+    * | **64** | **70**  |   No   |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/text-decoration-skip-ink
     */
@@ -3744,18 +3781,43 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     * | Chrome | Firefox |  Safari  | Edge | IE  |
     * | :----: | :-----: | :------: | :--: | :-: |
     * | **57** | **36**  | **12.1** |  No  | No  |
+    * |        |         | 8 _-x-_  |      |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/text-decoration-style
     */
   var textDecorationStyle: js.UndefOr[TextDecorationStyleProperty] = js.undefined
   /**
+    * The **`text-decoration-thickness`** CSS property sets the thickness, or width, of the decoration line that is used on text in an element, such as a line-through, underline, or overline.
+    *
+    * **Initial value**: `auto`
+    *
+    * | Chrome | Firefox |  Safari  | Edge | IE  |
+    * | :----: | :-----: | :------: | :--: | :-: |
+    * |   No   | **70**  | **12.1** |  No  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/text-decoration-thickness
+    */
+  var textDecorationThickness: js.UndefOr[TextDecorationThicknessProperty[TLength]] = js.undefined
+  /**
+    * The **`text-decoration-thickness`** CSS property sets the thickness, or width, of the decoration line that is used on text in an element, such as a line-through, underline, or overline.
+    *
+    * **Initial value**: `auto`
+    *
+    * | Chrome | Firefox |  Safari  | Edge | IE  |
+    * | :----: | :-----: | :------: | :--: | :-: |
+    * |   No   | **70**  | **12.1** |  No  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/text-decoration-thickness
+    */
+  var textDecorationWidth: js.UndefOr[TextDecorationThicknessProperty[TLength]] = js.undefined
+  /**
     * The **`text-emphasis-color`** CSS property sets the color of emphasis marks. This value can also be set using the `text-emphasis` shorthand.
     *
     * **Initial value**: `currentcolor`
     *
-    * |    Chrome    | Firefox |    Safari     | Edge | IE  |
-    * | :----------: | :-----: | :-----------: | :--: | :-: |
-    * | **25** _-x-_ | **46**  | **6.1** _-x-_ |  No  | No  |
+    * | Chrome | Firefox | Safari  | Edge | IE  |
+    * | :----: | :-----: | :-----: | :--: | :-: |
+    * | **25** | **46**  | **6.1** |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/text-emphasis-color
     */
@@ -3765,9 +3827,9 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `over right`
     *
-    * |    Chrome    | Firefox |    Safari     | Edge | IE  |
-    * | :----------: | :-----: | :-----------: | :--: | :-: |
-    * | **25** _-x-_ | **46**  | **6.1** _-x-_ |  No  | No  |
+    * | Chrome | Firefox | Safari  | Edge | IE  |
+    * | :----: | :-----: | :-----: | :--: | :-: |
+    * | **25** | **46**  | **6.1** |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/text-emphasis-position
     */
@@ -3777,9 +3839,9 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `none`
     *
-    * |    Chrome    | Firefox |    Safari     | Edge | IE  |
-    * | :----------: | :-----: | :-----------: | :--: | :-: |
-    * | **25** _-x-_ | **46**  | **6.1** _-x-_ |  No  | No  |
+    * | Chrome | Firefox | Safari  | Edge | IE  |
+    * | :----: | :-----: | :-----: | :--: | :-: |
+    * | **25** | **46**  | **6.1** |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/text-emphasis-style
     */
@@ -3803,7 +3865,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari |  Edge  |   IE   |
     * | :----: | :-----: | :----: | :----: | :----: |
-    * |  n/a   | **55**  |   No   | **14** | **11** |
+    * |  n/a   | **55**  |   No   | **12** | **11** |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/text-justify
     */
@@ -3813,9 +3875,10 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `mixed`
     *
-    * | Chrome | Firefox | Safari | Edge | IE  |
-    * | :----: | :-----: | :----: | :--: | :-: |
-    * | **48** | **41**  |   No   |  No  | No  |
+    * |  Chrome  | Firefox |    Safari     | Edge | IE  |
+    * | :------: | :-----: | :-----------: | :--: | :-: |
+    * |  **48**  | **41**  | **5.1** _-x-_ |  No  | No  |
+    * | 11 _-x-_ |         |               |      |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/text-orientation
     */
@@ -3881,6 +3944,18 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     */
   var textTransform: js.UndefOr[TextTransformProperty] = js.undefined
   /**
+    * The **`text-underline-offset`** CSS property sets the offset distance of an underline text decoration line (applied using `text-decoration`) from its original position.
+    *
+    * **Initial value**: `auto`
+    *
+    * | Chrome | Firefox |  Safari  | Edge | IE  |
+    * | :----: | :-----: | :------: | :--: | :-: |
+    * |   No   | **70**  | **12.1** |  No  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/text-underline-offset
+    */
+  var textUnderlineOffset: js.UndefOr[TextUnderlineOffsetProperty[TLength]] = js.undefined
+  /**
     * The **`text-underline-position`** CSS property specifies the position of the underline which is set using the `text-decoration` property's `underline` value.
     *
     * **Initial value**: `auto`
@@ -3922,10 +3997,10 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `none`
     *
-    * | Chrome | Firefox |  Safari   |  Edge  |   IE    |
-    * | :----: | :-----: | :-------: | :----: | :-----: |
-    * | **36** | **16**  |   **9**   | **12** | **10**  |
-    * |        |         | 3.1 _-x-_ |        | 9 _-x-_ |
+    * | Chrome  | Firefox |  Safari   |  Edge  |   IE    |
+    * | :-----: | :-----: | :-------: | :----: | :-----: |
+    * | **36**  | **16**  |   **9**   | **12** | **10**  |
+    * | 1 _-x-_ |         | 3.1 _-x-_ |        | 9 _-x-_ |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/transform
     */
@@ -3937,7 +4012,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * | **64** | **55**  |  n/a   |  No  | No  |
+    * | **64** | **55**  | **11** |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/transform-box
     */
@@ -3947,10 +4022,10 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `50% 50% 0`
     *
-    * | Chrome |  Firefox  |  Safari   |  Edge  |   IE    |
-    * | :----: | :-------: | :-------: | :----: | :-----: |
-    * | **36** |  **16**   |   **9**   | **12** | **10**  |
-    * |        | 3.5 _-x-_ | 3.1 _-x-_ |        | 9 _-x-_ |
+    * | Chrome  |  Firefox  | Safari  |  Edge  |   IE    |
+    * | :-----: | :-------: | :-----: | :----: | :-----: |
+    * | **36**  |  **16**   |  **9**  | **12** | **10**  |
+    * | 1 _-x-_ | 3.5 _-x-_ | 2 _-x-_ |        | 9 _-x-_ |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/transform-origin
     */
@@ -4027,7 +4102,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * |   No   |   n/a   |   No   |  No  | No  |
+    * |   No   | **72**  |   No   |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/translate
     */
@@ -4052,7 +4127,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     * | Chrome  | Firefox |   Safari    |     Edge     |      IE      |
     * | :-----: | :-----: | :---------: | :----------: | :----------: |
     * | **54**  | **69**  | **3** _-x-_ | **12** _-x-_ | **10** _-x-_ |
-    * | 6 _-x-_ | 1 _-x-_ |             |              |              |
+    * | 1 _-x-_ | 1 _-x-_ |             |              |              |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/user-select
     */
@@ -4112,7 +4187,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari |  Edge  |  IE   |
     * | :----: | :-----: | :----: | :----: | :---: |
-    * |  Yes   |  **1**  | **1**  | **12** | **4** |
+    * | **1**  |  **1**  | **1**  | **12** | **4** |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/width
     */
@@ -4170,9 +4245,10 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `horizontal-tb`
     *
-    * |   Chrome    | Firefox |    Safari     |  Edge  |     IE      |
-    * | :---------: | :-----: | :-----------: | :----: | :---------: |
-    * | **8** _-x-_ | **41**  | **5.1** _-x-_ | **12** | **9** _-x-_ |
+    * | Chrome  | Firefox |  Safari   |  Edge  |     IE      |
+    * | :-----: | :-----: | :-------: | :----: | :---------: |
+    * | **48**  | **41**  | **10.1**  | **12** | **9** _-x-_ |
+    * | 8 _-x-_ |         | 5.1 _-x-_ |        |             |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/writing-mode
     */
@@ -4218,6 +4294,7 @@ object StandardLonghandProperties {
     animationPlayState: AnimationPlayStateProperty = null,
     animationTimingFunction: AnimationTimingFunctionProperty = null,
     appearance: AppearanceProperty = null,
+    aspectRatio: AspectRatioProperty = null,
     backdropFilter: BackdropFilterProperty = null,
     backfaceVisibility: BackfaceVisibilityProperty = null,
     backgroundAttachment: BackgroundAttachmentProperty = null,
@@ -4413,10 +4490,9 @@ object StandardLonghandProperties {
     offsetAnchor: OffsetAnchorProperty[TLength] = null,
     offsetDistance: OffsetDistanceProperty[TLength] = null,
     offsetPath: OffsetPathProperty = null,
-    offsetPosition: OffsetPositionProperty[TLength] = null,
     offsetRotate: OffsetRotateProperty = null,
     offsetRotation: OffsetRotateProperty = null,
-    opacity: GlobalsNumber = null,
+    opacity: OpacityProperty = null,
     order: GlobalsNumber = null,
     orphans: GlobalsNumber = null,
     outlineColor: OutlineColorProperty = null,
@@ -4432,6 +4508,8 @@ object StandardLonghandProperties {
     overflowX: OverflowXProperty = null,
     overflowY: OverflowYProperty = null,
     overscrollBehavior: OverscrollBehaviorProperty = null,
+    overscrollBehaviorBlock: OverscrollBehaviorBlockProperty = null,
+    overscrollBehaviorInline: OverscrollBehaviorInlineProperty = null,
     overscrollBehaviorX: OverscrollBehaviorXProperty = null,
     overscrollBehaviorY: OverscrollBehaviorYProperty = null,
     paddingBlock: PaddingBlockProperty[TLength] = null,
@@ -4457,9 +4535,7 @@ object StandardLonghandProperties {
     resize: ResizeProperty = null,
     right: RightProperty[TLength] = null,
     rotate: RotateProperty = null,
-    rowGap: RowGapProperty[TLength] = null,
-    rubyAlign: RubyAlignProperty = null,
-    rubyMerge: RubyMergeProperty = null
+    rowGap: RowGapProperty[TLength] = null
   ): StandardLonghandProperties[TLength] = {
     val __obj = js.Dynamic.literal()
     if (alignContent != null) __obj.updateDynamic("alignContent")(alignContent.asInstanceOf[js.Any])
@@ -4474,6 +4550,7 @@ object StandardLonghandProperties {
     if (animationPlayState != null) __obj.updateDynamic("animationPlayState")(animationPlayState.asInstanceOf[js.Any])
     if (animationTimingFunction != null) __obj.updateDynamic("animationTimingFunction")(animationTimingFunction.asInstanceOf[js.Any])
     if (appearance != null) __obj.updateDynamic("appearance")(appearance.asInstanceOf[js.Any])
+    if (aspectRatio != null) __obj.updateDynamic("aspectRatio")(aspectRatio.asInstanceOf[js.Any])
     if (backdropFilter != null) __obj.updateDynamic("backdropFilter")(backdropFilter.asInstanceOf[js.Any])
     if (backfaceVisibility != null) __obj.updateDynamic("backfaceVisibility")(backfaceVisibility.asInstanceOf[js.Any])
     if (backgroundAttachment != null) __obj.updateDynamic("backgroundAttachment")(backgroundAttachment.asInstanceOf[js.Any])
@@ -4669,7 +4746,6 @@ object StandardLonghandProperties {
     if (offsetAnchor != null) __obj.updateDynamic("offsetAnchor")(offsetAnchor.asInstanceOf[js.Any])
     if (offsetDistance != null) __obj.updateDynamic("offsetDistance")(offsetDistance.asInstanceOf[js.Any])
     if (offsetPath != null) __obj.updateDynamic("offsetPath")(offsetPath.asInstanceOf[js.Any])
-    if (offsetPosition != null) __obj.updateDynamic("offsetPosition")(offsetPosition.asInstanceOf[js.Any])
     if (offsetRotate != null) __obj.updateDynamic("offsetRotate")(offsetRotate.asInstanceOf[js.Any])
     if (offsetRotation != null) __obj.updateDynamic("offsetRotation")(offsetRotation.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
@@ -4688,6 +4764,8 @@ object StandardLonghandProperties {
     if (overflowX != null) __obj.updateDynamic("overflowX")(overflowX.asInstanceOf[js.Any])
     if (overflowY != null) __obj.updateDynamic("overflowY")(overflowY.asInstanceOf[js.Any])
     if (overscrollBehavior != null) __obj.updateDynamic("overscrollBehavior")(overscrollBehavior.asInstanceOf[js.Any])
+    if (overscrollBehaviorBlock != null) __obj.updateDynamic("overscrollBehaviorBlock")(overscrollBehaviorBlock.asInstanceOf[js.Any])
+    if (overscrollBehaviorInline != null) __obj.updateDynamic("overscrollBehaviorInline")(overscrollBehaviorInline.asInstanceOf[js.Any])
     if (overscrollBehaviorX != null) __obj.updateDynamic("overscrollBehaviorX")(overscrollBehaviorX.asInstanceOf[js.Any])
     if (overscrollBehaviorY != null) __obj.updateDynamic("overscrollBehaviorY")(overscrollBehaviorY.asInstanceOf[js.Any])
     if (paddingBlock != null) __obj.updateDynamic("paddingBlock")(paddingBlock.asInstanceOf[js.Any])
@@ -4714,8 +4792,6 @@ object StandardLonghandProperties {
     if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
     if (rotate != null) __obj.updateDynamic("rotate")(rotate.asInstanceOf[js.Any])
     if (rowGap != null) __obj.updateDynamic("rowGap")(rowGap.asInstanceOf[js.Any])
-    if (rubyAlign != null) __obj.updateDynamic("rubyAlign")(rubyAlign.asInstanceOf[js.Any])
-    if (rubyMerge != null) __obj.updateDynamic("rubyMerge")(rubyMerge.asInstanceOf[js.Any])
     __obj.asInstanceOf[StandardLonghandProperties[TLength]]
   }
 }

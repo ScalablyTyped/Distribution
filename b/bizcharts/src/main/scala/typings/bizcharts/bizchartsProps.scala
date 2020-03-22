@@ -9,7 +9,6 @@ import typings.bizcharts.mod.Guide.LineProps
 import typings.bizcharts.mod.Guide.RegionFilterProps
 import typings.bizcharts.mod.Guide.RegionProps
 import typings.bizcharts.mod.Guide.TextProps
-import typings.react.mod.Props
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,8 +29,6 @@ trait bizchartsProps {
   @scala.inline
   def GeomProps: typings.bizcharts.mod.GeomProps.type = typings.bizcharts.mod.GeomProps
   type GeomProps = typings.bizcharts.mod.GeomProps
-  @scala.inline
-  def GuideProps: Props.type = typings.react.mod.Props
   type GuideProps = typings.bizcharts.mod.GuideProps
   @scala.inline
   def GuideArcProps: ArcProps.type = typings.bizcharts.mod.Guide.ArcProps

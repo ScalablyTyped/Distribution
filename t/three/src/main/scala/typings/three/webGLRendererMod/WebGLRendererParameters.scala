@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 
 trait WebGLRendererParameters extends js.Object {
   /**
-  	 * default is true.
+  	 * default is false.
   	 */
   var alpha: js.UndefOr[Boolean] = js.undefined
   /**

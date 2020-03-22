@@ -11,7 +11,7 @@ object mod extends js.Object {
   // declare function sdbm(string: string): number;
   // export = sdbm;
   @JSName("default")
-  var default_Original: AnonDefault = js.native
+  var default_Original: AnonCall = js.native
   /**
   	[SDBM](http://www.cse.yorku.ca/~oz/hash.html#sdbm) non-cryptographic hash function.
   	@returns The hash as a positive integer.

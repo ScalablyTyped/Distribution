@@ -2,9 +2,9 @@ package typings.gapiClientCloudresourcemanager.gapi.client.cloudresourcemanager
 
 import typings.gapiClient.gapi.client.Request_
 import typings.gapiClientCloudresourcemanager.AnonAccesstoken
-import typings.gapiClientCloudresourcemanager.AnonAccesstokenAlt
-import typings.gapiClientCloudresourcemanager.AnonAccesstokenAltBearertokenCallbackFields
-import typings.gapiClientCloudresourcemanager.AnonAccesstokenAltBearertokenCallbackFieldsFilter
+import typings.gapiClientCloudresourcemanager.AnonAlt
+import typings.gapiClientCloudresourcemanager.AnonFields
+import typings.gapiClientCloudresourcemanager.AnonFilter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,7 +26,7 @@ trait ProjectsResource extends js.Object {
     * `resourcemanager.projects.create` on the specified parent for the new
     * project.
     */
-  def create(request: AnonAccesstokenAlt): Request_[Operation]
+  def create(request: AnonAlt): Request_[Operation]
   /**
     * Marks the Project identified by the specified
     * `project_id` (for example, `my-project-123`) for deletion.
@@ -53,21 +53,21 @@ trait ProjectsResource extends js.Object {
     *
     * The caller must have modify permissions for this Project.
     */
-  def delete(request: AnonAccesstokenAltBearertokenCallbackFields): Request_[js.Object]
+  def delete(request: AnonFields): Request_[js.Object]
   /**
     * Retrieves the Project identified by the specified
     * `project_id` (for example, `my-project-123`).
     *
     * The caller must have read permissions for this Project.
     */
-  def get(request: AnonAccesstokenAltBearertokenCallbackFields): Request_[Project]
+  def get(request: AnonFields): Request_[Project]
   /**
     * Gets a list of ancestors in the resource hierarchy for the Project
     * identified by the specified `project_id` (for example, `my-project-123`).
     *
     * The caller must have read permissions for this Project.
     */
-  def getAncestry(request: AnonAccesstokenAltBearertokenCallbackFields): Request_[GetAncestryResponse]
+  def getAncestry(request: AnonFields): Request_[GetAncestryResponse]
   /**
     * Gets the effective `Policy` on a resource. This is the result of merging
     * `Policies` in the resource hierarchy. The returned `Policy` will not have
@@ -96,7 +96,7 @@ trait ProjectsResource extends js.Object {
     * specified filter. This method returns Projects in an unspecified order.
     * New Projects do not necessarily appear at the end of the list.
     */
-  def list(request: AnonAccesstokenAltBearertokenCallbackFieldsFilter): Request_[ListProjectsResponse]
+  def list(request: AnonFilter): Request_[ListProjectsResponse]
   /** Lists `Constraints` that could be applied on the specified resource. */
   def listAvailableOrgPolicyConstraints(request: AnonAccesstoken): Request_[ListAvailableOrgPolicyConstraintsResponse]
   /** Lists all the `Policies` set for a particular resource. */
@@ -169,35 +169,35 @@ trait ProjectsResource extends js.Object {
     *
     * The caller must have modify permissions for this Project.
     */
-  def undelete(request: AnonAccesstokenAltBearertokenCallbackFields): Request_[js.Object]
+  def undelete(request: AnonFields): Request_[js.Object]
   /**
     * Updates the attributes of the Project identified by the specified
     * `project_id` (for example, `my-project-123`).
     *
     * The caller must have modify permissions for this Project.
     */
-  def update(request: AnonAccesstokenAltBearertokenCallbackFields): Request_[Project]
+  def update(request: AnonFields): Request_[Project]
 }
 
 object ProjectsResource {
   @scala.inline
   def apply(
     clearOrgPolicy: AnonAccesstoken => Request_[js.Object],
-    create: AnonAccesstokenAlt => Request_[Operation],
-    delete: AnonAccesstokenAltBearertokenCallbackFields => Request_[js.Object],
-    get: AnonAccesstokenAltBearertokenCallbackFields => Request_[Project],
-    getAncestry: AnonAccesstokenAltBearertokenCallbackFields => Request_[GetAncestryResponse],
+    create: AnonAlt => Request_[Operation],
+    delete: AnonFields => Request_[js.Object],
+    get: AnonFields => Request_[Project],
+    getAncestry: AnonFields => Request_[GetAncestryResponse],
     getEffectiveOrgPolicy: AnonAccesstoken => Request_[OrgPolicy],
     getIamPolicy: AnonAccesstoken => Request_[Policy],
     getOrgPolicy: AnonAccesstoken => Request_[OrgPolicy],
-    list: AnonAccesstokenAltBearertokenCallbackFieldsFilter => Request_[ListProjectsResponse],
+    list: AnonFilter => Request_[ListProjectsResponse],
     listAvailableOrgPolicyConstraints: AnonAccesstoken => Request_[ListAvailableOrgPolicyConstraintsResponse],
     listOrgPolicies: AnonAccesstoken => Request_[ListOrgPoliciesResponse],
     setIamPolicy: AnonAccesstoken => Request_[Policy],
     setOrgPolicy: AnonAccesstoken => Request_[OrgPolicy],
     testIamPermissions: AnonAccesstoken => Request_[TestIamPermissionsResponse],
-    undelete: AnonAccesstokenAltBearertokenCallbackFields => Request_[js.Object],
-    update: AnonAccesstokenAltBearertokenCallbackFields => Request_[Project]
+    undelete: AnonFields => Request_[js.Object],
+    update: AnonFields => Request_[Project]
   ): ProjectsResource = {
     val __obj = js.Dynamic.literal(clearOrgPolicy = js.Any.fromFunction1(clearOrgPolicy), create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), getAncestry = js.Any.fromFunction1(getAncestry), getEffectiveOrgPolicy = js.Any.fromFunction1(getEffectiveOrgPolicy), getIamPolicy = js.Any.fromFunction1(getIamPolicy), getOrgPolicy = js.Any.fromFunction1(getOrgPolicy), list = js.Any.fromFunction1(list), listAvailableOrgPolicyConstraints = js.Any.fromFunction1(listAvailableOrgPolicyConstraints), listOrgPolicies = js.Any.fromFunction1(listOrgPolicies), setIamPolicy = js.Any.fromFunction1(setIamPolicy), setOrgPolicy = js.Any.fromFunction1(setOrgPolicy), testIamPermissions = js.Any.fromFunction1(testIamPermissions), undelete = js.Any.fromFunction1(undelete), update = js.Any.fromFunction1(update))
   

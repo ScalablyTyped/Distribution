@@ -1,6 +1,7 @@
 package typings.awsSdk.ecrMod
 
-import typings.awsSdk.AnonWaiter
+import typings.awsSdk.DescribeImageScanFindings
+import typings.awsSdk.GetLifecyclePolicyPreview
 import typings.awsSdk.awsSdkStrings.imageScanComplete
 import typings.awsSdk.awsSdkStrings.lifecyclePolicyPreviewComplete
 import typings.awsSdk.configMod.ConfigBase
@@ -406,11 +407,11 @@ trait ECR extends Service {
     * Waits for the imageScanComplete state by periodically calling the underlying ECR.describeImageScanFindingsoperation every 5 seconds (at most 60 times). Wait until an image scan is complete and findings can be accessed
     */
   @JSName("waitFor")
-  def waitFor_imageScanComplete(state: imageScanComplete, params: DescribeImageScanFindingsRequest with AnonWaiter): Request[DescribeImageScanFindingsResponse, AWSError] = js.native
+  def waitFor_imageScanComplete(state: imageScanComplete, params: DescribeImageScanFindings): Request[DescribeImageScanFindingsResponse, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_imageScanComplete(
     state: imageScanComplete,
-    params: DescribeImageScanFindingsRequest with AnonWaiter,
+    params: DescribeImageScanFindings,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeImageScanFindingsResponse, Unit]
   ): Request[DescribeImageScanFindingsResponse, AWSError] = js.native
   /**
@@ -427,11 +428,11 @@ trait ECR extends Service {
     * Waits for the lifecyclePolicyPreviewComplete state by periodically calling the underlying ECR.getLifecyclePolicyPreviewoperation every 5 seconds (at most 20 times). Wait until a lifecycle policy preview request is complete and results can be accessed
     */
   @JSName("waitFor")
-  def waitFor_lifecyclePolicyPreviewComplete(state: lifecyclePolicyPreviewComplete, params: GetLifecyclePolicyPreviewRequest with AnonWaiter): Request[GetLifecyclePolicyPreviewResponse, AWSError] = js.native
+  def waitFor_lifecyclePolicyPreviewComplete(state: lifecyclePolicyPreviewComplete, params: GetLifecyclePolicyPreview): Request[GetLifecyclePolicyPreviewResponse, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_lifecyclePolicyPreviewComplete(
     state: lifecyclePolicyPreviewComplete,
-    params: GetLifecyclePolicyPreviewRequest with AnonWaiter,
+    params: GetLifecyclePolicyPreview,
     callback: js.Function2[/* err */ AWSError, /* data */ GetLifecyclePolicyPreviewResponse, Unit]
   ): Request[GetLifecyclePolicyPreviewResponse, AWSError] = js.native
 }

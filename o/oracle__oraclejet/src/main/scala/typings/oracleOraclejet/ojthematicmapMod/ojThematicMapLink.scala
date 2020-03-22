@@ -1,6 +1,6 @@
 package typings.oracleOraclejet.ojthematicmapMod
 
-import typings.oracleOraclejet.AnonIdLocation
+import typings.oracleOraclejet.AnonLocation
 import typings.oracleOraclejet.mod.JetElement
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.mod.JetSetPropertyType
@@ -55,7 +55,6 @@ import typings.oracleOraclejet.oracleOraclejetStrings.keyup
 import typings.oracleOraclejet.oracleOraclejetStrings.load
 import typings.oracleOraclejet.oracleOraclejetStrings.loadeddata
 import typings.oracleOraclejet.oracleOraclejetStrings.loadedmetadata
-import typings.oracleOraclejet.oracleOraclejetStrings.loadend
 import typings.oracleOraclejet.oracleOraclejetStrings.loadstart
 import typings.oracleOraclejet.oracleOraclejetStrings.lostpointercapture
 import typings.oracleOraclejet.oracleOraclejetStrings.mousedown
@@ -142,13 +141,13 @@ import scala.scalajs.js.annotation._
 trait ojThematicMapLink extends JetElement[ojThematicMapLinkSettableProperties] {
   var categories: js.Array[String] = js.native
   var color: String = js.native
-  var endLocation: AnonIdLocation = js.native
+  var endLocation: AnonLocation = js.native
   var onCategoriesChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[String]], _]) | Null = js.native
   var onColorChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
-  var onEndLocationChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonIdLocation], _]) | Null = js.native
+  var onEndLocationChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonLocation], _]) | Null = js.native
   var onSelectableChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | off], _]) | Null = js.native
   var onShortDescChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
-  var onStartLocationChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonIdLocation], _]) | Null = js.native
+  var onStartLocationChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonLocation], _]) | Null = js.native
   var onSvgClassNameChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
   var onSvgStyleChanged: (js.Function1[
     /* event */ JetElementCustomEvent[
@@ -159,7 +158,7 @@ trait ojThematicMapLink extends JetElement[ojThematicMapLinkSettableProperties] 
   var onWidthChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
   var selectable: auto | off = js.native
   var shortDesc: String = js.native
-  var startLocation: AnonIdLocation = js.native
+  var startLocation: AnonLocation = js.native
   var svgClassName: String = js.native
   var svgStyle: js.Object = js.native
   var width: Double = js.native
@@ -454,12 +453,12 @@ trait ojThematicMapLink extends JetElement[ojThematicMapLinkSettableProperties] 
   @JSName("addEventListener")
   def addEventListener_endLocationChanged(
     `type`: endLocationChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonIdLocation], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonLocation], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_endLocationChanged(
     `type`: endLocationChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonIdLocation], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonLocation], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -591,17 +590,6 @@ trait ojThematicMapLink extends JetElement[ojThematicMapLinkSettableProperties] 
   def addEventListener_loadedmetadata(
     `type`: loadedmetadata,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event_, _],
-    useCapture: Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_loadend(
-    `type`: loadend,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent[EventTarget], _]
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_loadend(
-    `type`: loadend,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent[EventTarget], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -894,12 +882,12 @@ trait ojThematicMapLink extends JetElement[ojThematicMapLinkSettableProperties] 
   @JSName("addEventListener")
   def addEventListener_startLocationChanged(
     `type`: startLocationChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonIdLocation], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonLocation], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_startLocationChanged(
     `type`: startLocationChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonIdLocation], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonLocation], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -1062,13 +1050,13 @@ trait ojThematicMapLink extends JetElement[ojThematicMapLinkSettableProperties] 
   @JSName("getProperty")
   def getProperty_color(property: color): String = js.native
   @JSName("getProperty")
-  def getProperty_endLocation(property: endLocation): AnonIdLocation = js.native
+  def getProperty_endLocation(property: endLocation): AnonLocation = js.native
   @JSName("getProperty")
   def getProperty_selectable(property: selectable): auto | off = js.native
   @JSName("getProperty")
   def getProperty_shortDesc(property: shortDesc): String = js.native
   @JSName("getProperty")
-  def getProperty_startLocation(property: startLocation): AnonIdLocation = js.native
+  def getProperty_startLocation(property: startLocation): AnonLocation = js.native
   @JSName("getProperty")
   def getProperty_svgClassName(property: svgClassName): String = js.native
   @JSName("getProperty")
@@ -1084,11 +1072,11 @@ trait ojThematicMapLink extends JetElement[ojThematicMapLinkSettableProperties] 
   @JSName("setProperty")
   def setProperty_color(property: color, value: String): Unit = js.native
   @JSName("setProperty")
-  def setProperty_endLocation(property: endLocation, value: AnonIdLocation): Unit = js.native
+  def setProperty_endLocation(property: endLocation, value: AnonLocation): Unit = js.native
   @JSName("setProperty")
   def setProperty_shortDesc(property: shortDesc, value: String): Unit = js.native
   @JSName("setProperty")
-  def setProperty_startLocation(property: startLocation, value: AnonIdLocation): Unit = js.native
+  def setProperty_startLocation(property: startLocation, value: AnonLocation): Unit = js.native
   @JSName("setProperty")
   def setProperty_svgClassName(property: svgClassName, value: String): Unit = js.native
   @JSName("setProperty")

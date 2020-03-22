@@ -1,5 +1,6 @@
 package typings.firebaseFirestore
 
+import typings.firebaseFirestore.byteStringMod.ByteString
 import typings.firebaseFirestore.collectionsMod.DocumentKeySet_
 import typings.firebaseFirestore.documentKeyMod.DocumentKey
 import typings.firebaseFirestore.indexManagerMod.IndexManager
@@ -15,7 +16,6 @@ import typings.firebaseFirestore.simpleDbMod.SimpleDbTransaction
 import typings.firebaseFirestore.sortedMapMod.SortedMap
 import typings.firebaseFirestore.timestampMod.Timestamp
 import typings.firebaseFirestore.typesMod.BatchId
-import typings.firebaseFirestore.typesMod.ProtoByteString
 import typings.firebaseFirestore.userMod.User
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -63,7 +63,7 @@ object indexeddbMutationQueueMod extends js.Object {
       * Acknowledges the given batch.
       */
     /* CompleteClass */
-    override def acknowledgeBatch(transaction: PersistenceTransaction, batch: MutationBatch, streamToken: ProtoByteString): PersistencePromise[Unit] = js.native
+    override def acknowledgeBatch(transaction: PersistenceTransaction, batch: MutationBatch, streamToken: ByteString): PersistencePromise[Unit] = js.native
     /**
       * Creates a new mutation batch and adds it to this mutation queue.
       *
@@ -143,7 +143,7 @@ object indexeddbMutationQueueMod extends js.Object {
     override def getHighestUnacknowledgedBatchId(transaction: PersistenceTransaction): PersistencePromise[BatchId] = js.native
     /** Returns the current stream token for this mutation queue. */
     /* CompleteClass */
-    override def getLastStreamToken(transaction: PersistenceTransaction): PersistencePromise[ProtoByteString] = js.native
+    override def getLastStreamToken(transaction: PersistenceTransaction): PersistencePromise[ByteString] = js.native
     /**
       * Gets the first unacknowledged mutation batch after the passed in batchId
       * in the mutation queue or null if empty.
@@ -197,7 +197,7 @@ object indexeddbMutationQueueMod extends js.Object {
     override def removeMutationBatch(transaction: PersistenceTransaction, batch: MutationBatch): PersistencePromise[Unit] = js.native
     /** Sets the stream token for this mutation queue. */
     /* CompleteClass */
-    override def setLastStreamToken(transaction: PersistenceTransaction, streamToken: ProtoByteString): PersistencePromise[Unit] = js.native
+    override def setLastStreamToken(transaction: PersistenceTransaction, streamToken: ByteString): PersistencePromise[Unit] = js.native
   }
   
   def mutationQueuesContainKey(txn: PersistenceTransaction, docKey: DocumentKey): PersistencePromise[Boolean] = js.native

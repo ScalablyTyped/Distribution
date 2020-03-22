@@ -430,7 +430,7 @@ trait TypeofUI extends js.Object {
   /**
   		 * A set of constants for the styles available for <Titanium.UI.ActivityIndicator> objects.
   		 */
-  val ActivityIndicatorStyle: TypeofActivityIndicatorStyle = js.native
+  val ActivityIndicatorStyle: TypeofActivityIndicatorSt = js.native
   /**
   		 * The Android-specific UI capabilities. All properties, methods and events in this namespace will
   		 * only work on Android systems.

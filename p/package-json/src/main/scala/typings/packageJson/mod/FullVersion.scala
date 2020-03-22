@@ -2,9 +2,9 @@ package typings.packageJson.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.packageJson.AnonEmail
-import typings.packageJson.AnonEmailUrl
 import typings.packageJson.AnonIntegrity
 import typings.packageJson.AnonType
+import typings.packageJson.AnonUrl
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,7 +39,7 @@ object FullVersion {
     _hasShrinkwrap: js.UndefOr[Boolean] = js.undefined,
     author: Person = null,
     bin: StringDictionary[String] = null,
-    bugs: AnonEmail | AnonEmailUrl = null,
+    bugs: AnonEmail | AnonUrl = null,
     bundleDependencies: StringDictionary[String] = null,
     contributors: js.Array[Person] = null,
     dependencies: StringDictionary[String] = null,

@@ -20,7 +20,7 @@ trait IReceiver extends js.Object {
   /**
     * Get a cell associated with a message id.
     */
-  def getCell(msgId: String): CodeCell
+  def getCell(msgId: String): js.UndefOr[CodeCell]
   /**
     * Trigger a rendering update on the receiver.
     */
@@ -32,7 +32,7 @@ object IReceiver {
   def apply(
     addCell: (CodeCell, String) => Unit,
     createCodeCell: () => CodeCell,
-    getCell: String => CodeCell,
+    getCell: String => js.UndefOr[CodeCell],
     update: () => Unit
   ): IReceiver = {
     val __obj = js.Dynamic.literal(addCell = js.Any.fromFunction2(addCell), createCodeCell = js.Any.fromFunction0(createCodeCell), getCell = js.Any.fromFunction1(getCell), update = js.Any.fromFunction0(update))

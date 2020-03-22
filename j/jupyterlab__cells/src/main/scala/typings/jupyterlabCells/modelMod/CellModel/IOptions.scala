@@ -1,6 +1,6 @@
 package typings.jupyterlabCells.modelMod.CellModel
 
-import typings.jupyterlabCoreutils.nbformatMod.nbformat.IBaseCell
+import typings.jupyterlabNbformat.mod.IBaseCell
 import typings.jupyterlabObservables.modeldbMod.IModelDB
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,22 +1,28 @@
 package typings.rcMenu
 
-import typings.react.mod.Key
 import typings.react.mod.ReactInstance
+import typings.std.HTMLElement
+import typings.std.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonItem extends js.Object {
+  var domEvent: typings.react.mod.MouseEvent[HTMLElement, MouseEvent]
   var item: ReactInstance
-  var key: Key
-  var open: Boolean
-  var trigger: String
+  var key: String | Double
+  var keyPath: js.Array[String | Double]
 }
 
 object AnonItem {
   @scala.inline
-  def apply(item: ReactInstance, key: Key, open: Boolean, trigger: String): AnonItem = {
-    val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any], trigger = trigger.asInstanceOf[js.Any])
+  def apply(
+    domEvent: typings.react.mod.MouseEvent[HTMLElement, MouseEvent],
+    item: ReactInstance,
+    key: String | Double,
+    keyPath: js.Array[String | Double]
+  ): AnonItem = {
+    val __obj = js.Dynamic.literal(domEvent = domEvent.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], keyPath = keyPath.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AnonItem]
   }

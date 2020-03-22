@@ -35,11 +35,6 @@ class HTMLIonSelectOptionElementCls () extends HTMLIonSelectOptionElement {
     */
   /* CompleteClass */
   override val previousElementSibling: Element | Null = js.native
-  /**
-    * If `true`, the element is selected.
-    */
-  /* CompleteClass */
-  override var selected: Boolean = js.native
   /* CompleteClass */
   override val style: CSSStyleDeclaration = js.native
 }

@@ -30,7 +30,7 @@ object distOrganizationMod extends js.Object {
     /* CompleteClass */
     override var membersCanCreateRepositories: Boolean = js.native
     /* CompleteClass */
-    override var plan: AnonCollaboratorsName = js.native
+    override var plan: AnonName = js.native
     /* CompleteClass */
     override var privateGists: Double = js.native
     /* CompleteClass */

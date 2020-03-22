@@ -57,6 +57,9 @@ object ObjectFlags extends js.Object {
   sealed trait ObjectLiteralPatternWithComputedProperties extends ObjectFlags
   
   @js.native
+  sealed trait ObjectRestType extends ObjectFlags
+  
+  @js.native
   sealed trait Reference extends ObjectFlags
   
   @js.native
@@ -112,6 +115,9 @@ object ObjectFlags extends js.Object {
   
   /* 512 */ @js.native
   object ObjectLiteralPatternWithComputedProperties extends TopLevel[ObjectLiteralPatternWithComputedProperties with Double]
+  
+  /* 131072 */ @js.native
+  object ObjectRestType extends TopLevel[ObjectRestType with Double]
   
   /* 4 */ @js.native
   object Reference extends TopLevel[Reference with Double]

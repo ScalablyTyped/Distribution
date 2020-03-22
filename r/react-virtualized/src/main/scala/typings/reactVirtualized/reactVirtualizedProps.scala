@@ -23,6 +23,8 @@ trait reactVirtualizedProps {
   @scala.inline
   def ColumnSizerProps: typings.reactVirtualized.esColumnSizerMod.ColumnSizerProps.type = typings.reactVirtualized.esColumnSizerMod.ColumnSizerProps
   type ColumnSizerProps = typings.reactVirtualized.esColumnSizerMod.ColumnSizerProps
+  @scala.inline
+  def GridProps: typings.reactVirtualized.esGridMod.GridProps.type = typings.reactVirtualized.esGridMod.GridProps
   type GridProps = typings.reactVirtualized.esGridMod.GridProps
   @scala.inline
   def InfiniteLoaderProps: typings.reactVirtualized.esInfiniteLoaderMod.InfiniteLoaderProps.type = typings.reactVirtualized.esInfiniteLoaderMod.InfiniteLoaderProps
@@ -31,6 +33,8 @@ trait reactVirtualizedProps {
   @scala.inline
   def MasonryProps: typings.reactVirtualized.esMasonryMod.MasonryProps.type = typings.reactVirtualized.esMasonryMod.MasonryProps
   type MasonryProps = typings.reactVirtualized.esMasonryMod.MasonryProps
+  @scala.inline
+  def MultiGridProps: typings.reactVirtualized.esMultiGridMod.MultiGridProps.type = typings.reactVirtualized.esMultiGridMod.MultiGridProps
   type MultiGridProps = typings.reactVirtualized.esMultiGridMod.MultiGridProps
   @scala.inline
   def ScrollSyncProps: typings.reactVirtualized.esScrollSyncMod.ScrollSyncProps.type = typings.reactVirtualized.esScrollSyncMod.ScrollSyncProps

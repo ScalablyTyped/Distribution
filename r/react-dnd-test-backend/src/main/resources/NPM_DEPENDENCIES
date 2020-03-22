@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-dnd-test-backend" : "9.5.1"
+      "react-dnd-test-backend" : "10.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "react-dnd-test-backend" : "9.5.1"
+      "react-dnd-test-backend" : "10.0.2"
     }
   ],
   "compile-devDependencies" : [

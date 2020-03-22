@@ -319,6 +319,9 @@ object stdStrings {
   sealed trait ProgressEvent extends js.Object
   
   @js.native
+  sealed trait PromiseConstructor extends js.Object
+  
+  @js.native
   sealed trait PromiseRejectionEvent extends js.Object
   
   @js.native
@@ -386,9 +389,6 @@ object stdStrings {
   
   @js.native
   sealed trait SharedArrayBuffer extends js.Object
-  
-  @js.native
-  sealed trait SpeechRecognitionError extends js.Object
   
   @js.native
   sealed trait SpeechRecognitionEvent extends js.Object
@@ -496,9 +496,6 @@ object stdStrings {
   
   @js.native
   sealed trait abort extends js.Object
-  
-  @js.native
-  sealed trait aborted extends SpeechRecognitionErrorCode
   
   @js.native
   sealed trait accelerometer extends PermissionName
@@ -628,9 +625,6 @@ object stdStrings {
   sealed trait `audio-busy` extends SpeechSynthesisErrorCode
   
   @js.native
-  sealed trait `audio-capture` extends SpeechRecognitionErrorCode
-  
-  @js.native
   sealed trait `audio-hardware` extends SpeechSynthesisErrorCode
   
   @js.native
@@ -682,9 +676,6 @@ object stdStrings {
   
   @js.native
   sealed trait backwards extends FillMode
-  
-  @js.native
-  sealed trait `bad-grammar` extends SpeechRecognitionErrorCode
   
   @js.native
   sealed trait balanced
@@ -1375,6 +1366,9 @@ object stdStrings {
   sealed trait frozen extends RTCStatsIceCandidatePairState
   
   @js.native
+  sealed trait fulfilled extends js.Object
+  
+  @js.native
   sealed trait fullscreenchange extends js.Object
   
   @js.native
@@ -1684,9 +1678,6 @@ object stdStrings {
        with OrientationType
   
   @js.native
-  sealed trait `language-not-supported` extends SpeechRecognitionErrorCode
-  
-  @js.native
   sealed trait `language-unavailable` extends SpeechSynthesisErrorCode
   
   @js.native
@@ -1961,7 +1952,6 @@ object stdStrings {
   @js.native
   sealed trait network
     extends EndOfStreamError
-       with SpeechRecognitionErrorCode
        with SpeechSynthesisErrorCode
   
   @js.native
@@ -1997,9 +1987,6 @@ object stdStrings {
   sealed trait `no-referrer-when-downgrade` extends ReferrerPolicy
   
   @js.native
-  sealed trait `no-speech` extends SpeechRecognitionErrorCode
-  
-  @js.native
   sealed trait `no-store` extends RequestCache
   
   @js.native
@@ -2027,7 +2014,7 @@ object stdStrings {
   @js.native
   sealed trait `not-allowed`
     extends MediaKeysRequirement
-       with SpeechRecognitionErrorCode
+       with SpeechSynthesisErrorCode
   
   @js.native
   sealed trait `not-equal` extends js.Object
@@ -2138,6 +2125,9 @@ object stdStrings {
   
   @js.native
   sealed trait param extends js.Object
+  
+  @js.native
+  sealed trait parsed extends ServiceWorkerState
   
   @js.native
   sealed trait passive extends RTCIceTcpCandidateType
@@ -2344,6 +2334,9 @@ object stdStrings {
   sealed trait redundant extends ServiceWorkerState
   
   @js.native
+  sealed trait rejected extends js.Object
+  
+  @js.native
   sealed trait rejectionhandled extends js.Object
   
   @js.native
@@ -2531,9 +2524,6 @@ object stdStrings {
   sealed trait serverreflexive extends RTCStatsIceCandidateType
   
   @js.native
-  sealed trait `service-not-allowed` extends SpeechRecognitionErrorCode
-  
-  @js.native
   sealed trait session extends RTCStatsType
   
   @js.native
@@ -2652,6 +2642,9 @@ object stdStrings {
   
   @js.native
   sealed trait stop extends js.Object
+  
+  @js.native
+  sealed trait stopped extends RTCRtpTransceiverDirection
   
   @js.native
   sealed trait storage extends js.Object
@@ -2851,6 +2844,7 @@ object stdStrings {
   sealed trait unknown
     extends MSWebViewPermissionState
        with PaymentComplete
+       with RTCIceRole
   
   @js.native
   sealed trait unlimitedIndexedDBQuota extends MSWebViewPermissionType
@@ -3226,6 +3220,8 @@ object stdStrings {
   @scala.inline
   def ProgressEvent: ProgressEvent = "ProgressEvent".asInstanceOf[ProgressEvent]
   @scala.inline
+  def PromiseConstructor: PromiseConstructor = "PromiseConstructor".asInstanceOf[PromiseConstructor]
+  @scala.inline
   def PromiseRejectionEvent: PromiseRejectionEvent = "PromiseRejectionEvent".asInstanceOf[PromiseRejectionEvent]
   @scala.inline
   def RTCDTMFToneChangeEvent: RTCDTMFToneChangeEvent = "RTCDTMFToneChangeEvent".asInstanceOf[RTCDTMFToneChangeEvent]
@@ -3271,8 +3267,6 @@ object stdStrings {
   def ServiceWorkerMessageEvent: ServiceWorkerMessageEvent = "ServiceWorkerMessageEvent".asInstanceOf[ServiceWorkerMessageEvent]
   @scala.inline
   def SharedArrayBuffer: SharedArrayBuffer = "SharedArrayBuffer".asInstanceOf[SharedArrayBuffer]
-  @scala.inline
-  def SpeechRecognitionError: SpeechRecognitionError = "SpeechRecognitionError".asInstanceOf[SpeechRecognitionError]
   @scala.inline
   def SpeechRecognitionEvent: SpeechRecognitionEvent = "SpeechRecognitionEvent".asInstanceOf[SpeechRecognitionEvent]
   @scala.inline
@@ -3339,8 +3333,6 @@ object stdStrings {
   def abbr: abbr = "abbr".asInstanceOf[abbr]
   @scala.inline
   def abort: abort = "abort".asInstanceOf[abort]
-  @scala.inline
-  def aborted: aborted = "aborted".asInstanceOf[aborted]
   @scala.inline
   def accelerometer: accelerometer = "accelerometer".asInstanceOf[accelerometer]
   @scala.inline
@@ -3418,8 +3410,6 @@ object stdStrings {
   @scala.inline
   def `audio-busy`: `audio-busy` = "audio-busy".asInstanceOf[`audio-busy`]
   @scala.inline
-  def `audio-capture`: `audio-capture` = "audio-capture".asInstanceOf[`audio-capture`]
-  @scala.inline
   def `audio-hardware`: `audio-hardware` = "audio-hardware".asInstanceOf[`audio-hardware`]
   @scala.inline
   def audioend: audioend = "audioend".asInstanceOf[audioend]
@@ -3449,8 +3439,6 @@ object stdStrings {
   def backward: backward = "backward".asInstanceOf[backward]
   @scala.inline
   def backwards: backwards = "backwards".asInstanceOf[backwards]
-  @scala.inline
-  def `bad-grammar`: `bad-grammar` = "bad-grammar".asInstanceOf[`bad-grammar`]
   @scala.inline
   def balanced: balanced = "balanced".asInstanceOf[balanced]
   @scala.inline
@@ -3864,6 +3852,8 @@ object stdStrings {
   @scala.inline
   def frozen: frozen = "frozen".asInstanceOf[frozen]
   @scala.inline
+  def fulfilled: fulfilled = "fulfilled".asInstanceOf[fulfilled]
+  @scala.inline
   def fullscreenchange: fullscreenchange = "fullscreenchange".asInstanceOf[fullscreenchange]
   @scala.inline
   def fullscreenerror: fullscreenerror = "fullscreenerror".asInstanceOf[fullscreenerror]
@@ -4056,8 +4046,6 @@ object stdStrings {
   @scala.inline
   def `landscape-secondary`: `landscape-secondary` = "landscape-secondary".asInstanceOf[`landscape-secondary`]
   @scala.inline
-  def `language-not-supported`: `language-not-supported` = "language-not-supported".asInstanceOf[`language-not-supported`]
-  @scala.inline
   def `language-unavailable`: `language-unavailable` = "language-unavailable".asInstanceOf[`language-unavailable`]
   @scala.inline
   def languagechange: languagechange = "languagechange".asInstanceOf[languagechange]
@@ -4246,8 +4234,6 @@ object stdStrings {
   @scala.inline
   def `no-referrer-when-downgrade`: `no-referrer-when-downgrade` = "no-referrer-when-downgrade".asInstanceOf[`no-referrer-when-downgrade`]
   @scala.inline
-  def `no-speech`: `no-speech` = "no-speech".asInstanceOf[`no-speech`]
-  @scala.inline
   def `no-store`: `no-store` = "no-store".asInstanceOf[`no-store`]
   @scala.inline
   def nohost: nohost = "nohost".asInstanceOf[nohost]
@@ -4333,6 +4319,8 @@ object stdStrings {
   def paintworklet: paintworklet = "paintworklet".asInstanceOf[paintworklet]
   @scala.inline
   def param: param = "param".asInstanceOf[param]
+  @scala.inline
+  def parsed: parsed = "parsed".asInstanceOf[parsed]
   @scala.inline
   def passive: passive = "passive".asInstanceOf[passive]
   @scala.inline
@@ -4466,6 +4454,8 @@ object stdStrings {
   @scala.inline
   def redundant: redundant = "redundant".asInstanceOf[redundant]
   @scala.inline
+  def rejected: rejected = "rejected".asInstanceOf[rejected]
+  @scala.inline
   def rejectionhandled: rejectionhandled = "rejectionhandled".asInstanceOf[rejectionhandled]
   @scala.inline
   def relay: relay = "relay".asInstanceOf[relay]
@@ -4574,8 +4564,6 @@ object stdStrings {
   @scala.inline
   def serverreflexive: serverreflexive = "serverreflexive".asInstanceOf[serverreflexive]
   @scala.inline
-  def `service-not-allowed`: `service-not-allowed` = "service-not-allowed".asInstanceOf[`service-not-allowed`]
-  @scala.inline
   def session: session = "session".asInstanceOf[session]
   @scala.inline
   def sharedworker: sharedworker = "sharedworker".asInstanceOf[sharedworker]
@@ -4649,6 +4637,8 @@ object stdStrings {
   def `status-pending`: `status-pending` = "status-pending".asInstanceOf[`status-pending`]
   @scala.inline
   def stop: stop = "stop".asInstanceOf[stop]
+  @scala.inline
+  def stopped: stopped = "stopped".asInstanceOf[stopped]
   @scala.inline
   def storage: storage = "storage".asInstanceOf[storage]
   @scala.inline

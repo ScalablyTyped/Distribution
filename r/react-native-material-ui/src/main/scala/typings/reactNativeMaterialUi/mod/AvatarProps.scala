@@ -1,7 +1,7 @@
 package typings.reactNativeMaterialUi.mod
 
 import typings.reactNative.mod.Image
-import typings.reactNativeMaterialUi.AnonContainerContent
+import typings.reactNativeMaterialUi.AnonContent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ trait AvatarProps extends js.Object {
   var iconSize: js.UndefOr[Double] = js.undefined
   var image: js.UndefOr[Image] = js.undefined
   var size: js.UndefOr[Double] = js.undefined
-  var style: js.UndefOr[AnonContainerContent] = js.undefined
+  var style: js.UndefOr[AnonContent] = js.undefined
   var text: js.UndefOr[String] = js.undefined
 }
 
@@ -24,7 +24,7 @@ object AvatarProps {
     iconSize: Int | Double = null,
     image: Image = null,
     size: Int | Double = null,
-    style: AnonContainerContent = null,
+    style: AnonContent = null,
     text: String = null
   ): AvatarProps = {
     val __obj = js.Dynamic.literal()

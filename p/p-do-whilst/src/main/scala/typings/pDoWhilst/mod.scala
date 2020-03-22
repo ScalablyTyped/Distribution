@@ -14,7 +14,7 @@ object mod extends js.Object {
   // ): Promise<void>;
   // export = pDoWhilst;
   @JSName("default")
-  var default_Original: AnonAction = js.native
+  var default_Original: AnonCall = js.native
   /**
   	Executes `action` repeatedly while `condition` returns `true` and then resolves the promise. Rejects if `action` returns a promise that rejects or if an error is thrown anywhere.
   	@param action - Action to run for each iteration. You can return a promise and it will be handled.

@@ -2,14 +2,13 @@ package typings.intlMessageformat.coreMod
 
 import typings.intlMessageformat.AnonDate
 import typings.intlMessageformat.AnonLocale
-import typings.intlMessageformat.FnInput
+import typings.intlMessageformat.FnCall
+import typings.intlMessageformat.PartialFormats
 import typings.intlMessageformat.formattersMod.FormatXMLElementFn
-import typings.intlMessageformat.formattersMod.Formats
 import typings.intlMessageformat.formattersMod.MessageFormatPart
 import typings.intlMessageformat.formattersMod.PrimitiveType
 import typings.intlMessageformatParser.mod.MessageFormatElement
 import typings.std.Date
-import typings.std.Partial
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -24,26 +23,26 @@ class IntlMessageFormat protected () extends js.Object {
   def this(message: String, locales: js.Array[String]) = this()
   def this(message: js.Array[MessageFormatElement], locales: String) = this()
   def this(message: js.Array[MessageFormatElement], locales: js.Array[String]) = this()
-  def this(message: String, locales: String, overrideFormats: Partial[Formats]) = this()
-  def this(message: String, locales: js.Array[String], overrideFormats: Partial[Formats]) = this()
-  def this(message: js.Array[MessageFormatElement], locales: String, overrideFormats: Partial[Formats]) = this()
+  def this(message: String, locales: String, overrideFormats: PartialFormats) = this()
+  def this(message: String, locales: js.Array[String], overrideFormats: PartialFormats) = this()
+  def this(message: js.Array[MessageFormatElement], locales: String, overrideFormats: PartialFormats) = this()
   def this(
     message: js.Array[MessageFormatElement],
     locales: js.Array[String],
-    overrideFormats: Partial[Formats]
+    overrideFormats: PartialFormats
   ) = this()
-  def this(message: String, locales: String, overrideFormats: Partial[Formats], opts: Options) = this()
-  def this(message: String, locales: js.Array[String], overrideFormats: Partial[Formats], opts: Options) = this()
+  def this(message: String, locales: String, overrideFormats: PartialFormats, opts: Options) = this()
+  def this(message: String, locales: js.Array[String], overrideFormats: PartialFormats, opts: Options) = this()
   def this(
     message: js.Array[MessageFormatElement],
     locales: String,
-    overrideFormats: Partial[Formats],
+    overrideFormats: PartialFormats,
     opts: Options
   ) = this()
   def this(
     message: js.Array[MessageFormatElement],
     locales: js.Array[String],
-    overrideFormats: Partial[Formats],
+    overrideFormats: PartialFormats,
     opts: Options
   ) = this()
   val ast: js.Any = js.native
@@ -71,7 +70,7 @@ class IntlMessageFormat protected () extends js.Object {
 @JSImport("intl-messageformat/lib/core", "IntlMessageFormat")
 @js.native
 object IntlMessageFormat extends js.Object {
-  var __parse: js.UndefOr[FnInput] = js.native
+  var __parse: js.UndefOr[FnCall] = js.native
   var defaultLocale: String = js.native
   var formats: AnonDate = js.native
 }

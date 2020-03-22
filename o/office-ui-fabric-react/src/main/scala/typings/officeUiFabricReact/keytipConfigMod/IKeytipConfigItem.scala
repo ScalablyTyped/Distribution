@@ -1,7 +1,6 @@
 package typings.officeUiFabricReact.keytipConfigMod
 
-import typings.officeUiFabricReact.keytipTypesMod.IKeytipProps
-import typings.std.Partial
+import typings.officeUiFabricReact.PartialIKeytipProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,7 +21,7 @@ trait IKeytipConfigItem extends js.Object {
   /**
     * Optional props in IKeytipProps
     */
-  var optionalProps: js.UndefOr[Partial[IKeytipProps]] = js.undefined
+  var optionalProps: js.UndefOr[PartialIKeytipProps] = js.undefined
   /**
     * Key Sequence for this keytip only
     * If sequence is not defined it will be derived from the content string
@@ -36,7 +35,7 @@ object IKeytipConfigItem {
     content: String,
     id: String,
     children: js.Array[IKeytipConfigItem] = null,
-    optionalProps: Partial[IKeytipProps] = null,
+    optionalProps: PartialIKeytipProps = null,
     sequence: String = null
   ): IKeytipConfigItem = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])

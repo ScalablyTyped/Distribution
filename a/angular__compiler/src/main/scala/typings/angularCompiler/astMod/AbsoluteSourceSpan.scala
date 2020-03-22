@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class AbsoluteSourceSpan protected () extends js.Object {
   def this(start: Double, end: Double) = this()
-  var end: Double = js.native
-  var start: Double = js.native
+  val end: Double = js.native
+  val start: Double = js.native
 }
 

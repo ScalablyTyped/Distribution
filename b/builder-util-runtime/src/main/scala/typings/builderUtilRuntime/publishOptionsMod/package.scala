@@ -15,5 +15,4 @@ package object publishOptionsMod {
     - typings.builderUtilRuntime.publishOptionsMod.CustomPublishOptions
   */
   type AllPublishOptions = typings.builderUtilRuntime.publishOptionsMod._AllPublishOptions | java.lang.String
-  type Publish = typings.builderUtilRuntime.publishOptionsMod.AllPublishOptions | js.Array[typings.builderUtilRuntime.publishOptionsMod.AllPublishOptions] | scala.Null
 }

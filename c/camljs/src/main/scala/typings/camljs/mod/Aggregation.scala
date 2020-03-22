@@ -17,14 +17,14 @@ trait Aggregation extends js.Object
 
 object Aggregation {
   @scala.inline
-  def AnonMin(min: String): Aggregation = {
-    val __obj = js.Dynamic.literal(min = min.asInstanceOf[js.Any])
-  
+  def AnonVar(`var`: String): Aggregation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("var")(`var`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Aggregation]
   }
   @scala.inline
-  def AnonSum(sum: String): Aggregation = {
-    val __obj = js.Dynamic.literal(sum = sum.asInstanceOf[js.Any])
+  def AnonStdev(stdev: String): Aggregation = {
+    val __obj = js.Dynamic.literal(stdev = stdev.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Aggregation]
   }
@@ -35,9 +35,9 @@ object Aggregation {
     __obj.asInstanceOf[Aggregation]
   }
   @scala.inline
-  def AnonVar(`var`: String): Aggregation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("var")(`var`.asInstanceOf[js.Any])
+  def AnonMin(min: String): Aggregation = {
+    val __obj = js.Dynamic.literal(min = min.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Aggregation]
   }
   @scala.inline
@@ -47,14 +47,14 @@ object Aggregation {
     __obj.asInstanceOf[Aggregation]
   }
   @scala.inline
-  def AnonStdev(stdev: String): Aggregation = {
-    val __obj = js.Dynamic.literal(stdev = stdev.asInstanceOf[js.Any])
+  def AnonAvg(avg: String): Aggregation = {
+    val __obj = js.Dynamic.literal(avg = avg.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Aggregation]
   }
   @scala.inline
-  def AnonAvg(avg: String): Aggregation = {
-    val __obj = js.Dynamic.literal(avg = avg.asInstanceOf[js.Any])
+  def AnonSum(sum: String): Aggregation = {
+    val __obj = js.Dynamic.literal(sum = sum.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Aggregation]
   }

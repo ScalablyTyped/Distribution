@@ -2,9 +2,9 @@ package typings.antDesignReactNative.tabsTabsMod
 
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
-import typings.antDesignReactNative.AnonActiveTabAnimated
+import typings.antDesignReactNative.AnonAnimated
 import typings.antDesignReactNative.AnonComponent
-import typings.antDesignReactNative.TypeofClassDefaultTabBar
+import typings.antDesignReactNative.TypeofDefaultTabBar
 import typings.antDesignReactNative.antDesignReactNativeStrings.horizontal
 import typings.antDesignReactNative.antDesignReactNativeStrings.vertical
 import typings.antDesignReactNative.tabsPropsTypeMod.PropsType
@@ -65,7 +65,7 @@ class Tabs protected ()
     /* allPrefix */ js.UndefOr[String], 
     StringDictionary[ReactNode]
   ] = js.native
-  def getTabBarBaseProps(): AnonActiveTabAnimated = js.native
+  def getTabBarBaseProps(): AnonAnimated = js.native
   def getTabIndex(props: PropsType): Double = js.native
   def goToTab(index: Double): Boolean = js.native
   def goToTab(index: Double, force: Boolean): Boolean = js.native
@@ -97,7 +97,7 @@ class Tabs protected ()
 @JSImport("@ant-design/react-native/lib/tabs/Tabs", "Tabs")
 @js.native
 object Tabs extends js.Object {
-  var DefaultTabBar: TypeofClassDefaultTabBar = js.native
+  var DefaultTabBar: TypeofDefaultTabBar = js.native
   var defaultProps: PropsType = js.native
 }
 

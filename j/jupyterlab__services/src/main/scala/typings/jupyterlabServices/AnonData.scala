@@ -1,7 +1,7 @@
 package typings.jupyterlabServices
 
-import typings.jupyterlabCoreutils.nbformatMod.nbformat.IMimeBundle
-import typings.jupyterlabCoreutils.nbformatMod.nbformat.OutputMetadata
+import typings.jupyterlabNbformat.mod.IMimeBundle
+import typings.jupyterlabNbformat.mod.OutputMetadata
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

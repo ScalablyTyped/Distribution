@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
   - typings.csstype.csstypeStrings.`-moz-pre-wrap`
+  - typings.csstype.csstypeStrings.`break-spaces`
   - typings.csstype.csstypeStrings.normal
   - typings.csstype.csstypeStrings.nowrap
   - typings.csstype.csstypeStrings.pre
@@ -24,6 +25,8 @@ object WhiteSpaceProperty {
   def `-moz-initial`: typings.csstype.csstypeStrings.`-moz-initial` = this.cast("-moz-initial")
   @scala.inline
   def `-moz-pre-wrap`: typings.csstype.csstypeStrings.`-moz-pre-wrap` = this.cast("-moz-pre-wrap")
+  @scala.inline
+  def `break-spaces`: typings.csstype.csstypeStrings.`break-spaces` = this.cast("break-spaces")
   @scala.inline
   /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
   @scala.inline

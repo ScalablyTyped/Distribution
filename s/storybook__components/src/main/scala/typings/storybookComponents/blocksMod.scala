@@ -9,7 +9,6 @@ import typings.react.mod.TableHTMLAttributes
 import typings.std.HTMLDivElement
 import typings.std.HTMLHeadingElement
 import typings.std.HTMLTableElement
-import typings.std.Pick
 import typings.storybookComponents.colorPaletteMod.ColorProps
 import typings.storybookComponents.descriptionMod.DescriptionProps
 import typings.storybookComponents.iconGalleryMod.IconItemProps
@@ -35,10 +34,7 @@ object blocksMod extends js.Object {
   val Description: FunctionComponent[DescriptionProps] = js.native
   val DocsContent: StyledComponent[
     DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement], 
-    Pick[
-      DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement], 
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 255 */ js.Any
-    ], 
+    PickDetailedHTMLPropsHTML, 
     Theme
   ] = js.native
   val DocsPageWrapper: FunctionComponent[js.Object] = js.native

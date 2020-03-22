@@ -1,5 +1,6 @@
 package typings.graphql.mod
 
+import typings.graphql.VisitorKeyMapASTKindToNod
 import typings.graphql.astMod.ASTKindToNode
 import typings.graphql.astMod.ASTNode
 import typings.graphql.astMod.ArgumentNode
@@ -46,7 +47,6 @@ import typings.graphql.astMod.UnionTypeExtensionNode
 import typings.graphql.astMod.VariableDefinitionNode
 import typings.graphql.astMod.VariableNode
 import typings.graphql.visitorMod.Visitor
-import typings.graphql.visitorMod.VisitorKeyMap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -68,7 +68,7 @@ object visit extends js.Object {
       EnumValueDefinitionNode | ObjectValueNode | FieldDefinitionNode | SchemaDefinitionNode | InputObjectTypeDefinitionNode | DocumentNode | DirectiveDefinitionNode | InputValueDefinitionNode | ListValueNode | ScalarTypeDefinitionNode | IntValueNode | OperationDefinitionNode | ArgumentNode | FragmentDefinitionNode | OperationTypeDefinitionNode | FieldNode | StringValueNode | NameNode | ObjectFieldNode | EnumValueNode | SchemaExtensionNode | UnionTypeExtensionNode | VariableDefinitionNode | VariableNode | ObjectTypeDefinitionNode | EnumTypeExtensionNode | InterfaceTypeDefinitionNode | FloatValueNode | NonNullTypeNode | DirectiveNode | SelectionSetNode | InputObjectTypeExtensionNode | ScalarTypeExtensionNode | UnionTypeDefinitionNode | NullValueNode | InterfaceTypeExtensionNode | InlineFragmentNode | EnumTypeDefinitionNode | NamedTypeNode | BooleanValueNode | ListTypeNode | ObjectTypeExtensionNode | FragmentSpreadNode
     ],
      // default: QueryDocumentKeys
-  visitorKeys: VisitorKeyMap[ASTKindToNode]
+  visitorKeys: VisitorKeyMapASTKindToNod
   ): js.Any = js.native
 }
 

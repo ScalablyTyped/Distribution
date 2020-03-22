@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "workbox-strategies"
-version := "4.3-dt-20191126Z-e7fa55"
+version := "4.3-dt-20191126Z-5c5e2d"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "std" % "3.7-1b8369",
-  "org.scalablytyped" %%% "workbox-core" % "4.3-dt-20191126Z-296fc6",
-  "org.scalablytyped" %%% "workbox-routing" % "4.3-dt-20191126Z-391f3f")
+  "org.scalablytyped" %%% "std" % "3.8-a0108c",
+  "org.scalablytyped" %%% "workbox-core" % "4.3-dt-20191126Z-f648ac",
+  "org.scalablytyped" %%% "workbox-routing" % "4.3-dt-20191126Z-48dcc9")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

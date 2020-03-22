@@ -63,7 +63,7 @@ object optionsMod extends js.Object {
   object rtlDefaults extends js.Object {
     var buttonIcons: AnonNext = js.native
     var header: AnonCenter = js.native
-    var themeButtonIcons: AnonNextNextYear = js.native
+    var themeButtonIcons: AnonNextYear = js.native
   }
   
 }

@@ -9,5 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object generateConfigFileMod extends js.Object {
   def default(results: Record[String, _]): String = js.native
+  def default(results: Record[String, _], generateEsm: Boolean): String = js.native
 }
 

@@ -17,13 +17,13 @@ trait CreateTransitGatewayRouteTableRequest extends js.Object {
   /**
     * The ID of the transit gateway.
     */
-  var TransitGatewayId: String = js.native
+  var TransitGatewayId: typings.awsSdk.ec2Mod.TransitGatewayId = js.native
 }
 
 object CreateTransitGatewayRouteTableRequest {
   @scala.inline
   def apply(
-    TransitGatewayId: String,
+    TransitGatewayId: TransitGatewayId,
     DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     TagSpecifications: TagSpecificationList = null
   ): CreateTransitGatewayRouteTableRequest = {

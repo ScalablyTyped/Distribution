@@ -1,6 +1,6 @@
 package typings.makeError.mod
 
-import typings.makeError.AnonArgs
+import typings.makeError.AnonInstantiable
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,7 +13,7 @@ object ^ extends js.Object {
   /**
     * Set the constructor prototype to `BaseError`.
     */
-  def apply[T /* <: Error */](super_ : AnonArgs[T]): Constructor[T with BaseError] = js.native
+  def apply[T /* <: Error */](super_ : AnonInstantiable[T]): Constructor[T with BaseError] = js.native
   /**
     * Create a specialized error instance.
     */

@@ -43,7 +43,6 @@ package object mod {
   ]
   type ReplyHeaderValue = java.lang.String | js.Array[java.lang.String] | typings.nock.mod.ReplyHeaderFunction
   type ReplyHeaders = (typings.std.Record[java.lang.String, typings.nock.mod.ReplyHeaderValue]) | (typings.std.Map[java.lang.String, typings.nock.mod.ReplyHeaderValue]) | js.Array[typings.nock.mod.ReplyHeaderValue]
-  type ReqOptions = typings.node.httpMod.RequestOptions with typings.nock.AnonProto
   /* Rewritten from type alias, can be one of: 
     - java.lang.String
     - typings.node.Buffer

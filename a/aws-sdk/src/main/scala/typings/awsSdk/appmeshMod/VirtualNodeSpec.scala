@@ -7,11 +7,15 @@ import scala.scalajs.js.annotation._
 @js.native
 trait VirtualNodeSpec extends js.Object {
   /**
+    * A reference to an object that represents the defaults for backends.
+    */
+  var backendDefaults: js.UndefOr[BackendDefaults] = js.native
+  /**
     * The backends that the virtual node is expected to send outbound traffic to.
     */
   var backends: js.UndefOr[Backends] = js.native
   /**
-    * The listeners that the virtual node is expected to receive inbound traffic from.
+    * The listener that the virtual node is expected to receive inbound traffic from.
     You can specify one listener.
     */
   var listeners: js.UndefOr[Listeners] = js.native
@@ -21,7 +25,8 @@ trait VirtualNodeSpec extends js.Object {
   var logging: js.UndefOr[Logging] = js.native
   /**
     * The service discovery information for the virtual node. If your virtual node does not
-    expect ingress traffic, you can omit this parameter.
+    expect ingress traffic, you can omit this parameter. If you specify a listener,
+    then you must specify service discovery information.
     */
   var serviceDiscovery: js.UndefOr[ServiceDiscovery] = js.native
 }
@@ -29,12 +34,14 @@ trait VirtualNodeSpec extends js.Object {
 object VirtualNodeSpec {
   @scala.inline
   def apply(
+    backendDefaults: BackendDefaults = null,
     backends: Backends = null,
     listeners: Listeners = null,
     logging: Logging = null,
     serviceDiscovery: ServiceDiscovery = null
   ): VirtualNodeSpec = {
     val __obj = js.Dynamic.literal()
+    if (backendDefaults != null) __obj.updateDynamic("backendDefaults")(backendDefaults.asInstanceOf[js.Any])
     if (backends != null) __obj.updateDynamic("backends")(backends.asInstanceOf[js.Any])
     if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
     if (logging != null) __obj.updateDynamic("logging")(logging.asInstanceOf[js.Any])

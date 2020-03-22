@@ -1,18 +1,18 @@
 package typings.antdMobileRn.tagStyleIndexNativeMod
 
-import typings.antdMobileRn.AnonBackgroundColorBorderColor
-import typings.antdMobileRn.AnonBackgroundColorBorderRadiusFlexDirection
 import typings.antdMobileRn.AnonBackgroundColorBorderWidth
-import typings.antdMobileRn.AnonBackgroundColorPositionString
+import typings.antdMobileRn.AnonBackgroundColorPosition
+import typings.antdMobileRn.AnonBorderColor
 import typings.antdMobileRn.AnonBorderRadiusBorderStyle
+import typings.antdMobileRn.AnonBorderRadiusFlexDirection
 import typings.antdMobileRn.AnonBorderRadiusHeight
-import typings.antdMobileRn.AnonColorFontSizeLineHeight
 import typings.antdMobileRn.AnonColorString
-import typings.antdMobileRn.AnonFontSize
-import typings.antdMobileRn.AnonFontSizeTextAlignNumber
-import typings.antdMobileRn.AnonHeightLeftTop
-import typings.antdMobileRn.AnonPaddingHorizontal
-import typings.antdMobileRn.AnonTransform
+import typings.antdMobileRn.AnonFontSizeLineHeight
+import typings.antdMobileRn.AnonFontSizeNumber
+import typings.antdMobileRn.AnonFontSizeNumberTextAlignString
+import typings.antdMobileRn.AnonHeightLeft
+import typings.antdMobileRn.AnonPaddingHorizontalPaddingVertical
+import typings.antdMobileRn.AnonTransformArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,20 +21,20 @@ import scala.scalajs.js.annotation._
 @js.native
 object default extends js.Object {
   var activeText: AnonColorString = js.native
-  var activeWrap: AnonBackgroundColorBorderColor = js.native
-  var close: AnonBackgroundColorPositionString = js.native
-  var closeAndroid: AnonHeightLeftTop = js.native
+  var activeWrap: AnonBorderColor = js.native
+  var close: AnonBackgroundColorPosition = js.native
+  var closeAndroid: AnonHeightLeft = js.native
   var closeIOS: AnonBorderRadiusHeight = js.native
-  var closeText: AnonColorFontSizeLineHeight = js.native
-  var closeTransform: AnonTransform = js.native
+  var closeText: AnonFontSizeLineHeight = js.native
+  var closeTransform: AnonTransformArray = js.native
   var disabledText: AnonColorString = js.native
   var disabledWrap: AnonBackgroundColorBorderWidth = js.native
   var normalText: AnonColorString = js.native
-  var normalWrap: AnonBackgroundColorBorderColor = js.native
-  var tag: AnonBackgroundColorBorderRadiusFlexDirection = js.native
-  var text: AnonFontSizeTextAlignNumber = js.native
-  var textSmall: AnonFontSize = js.native
+  var normalWrap: AnonBorderColor = js.native
+  var tag: AnonBorderRadiusFlexDirection = js.native
+  var text: AnonFontSizeNumberTextAlignString = js.native
+  var textSmall: AnonFontSizeNumber = js.native
   var wrap: AnonBorderRadiusBorderStyle = js.native
-  var wrapSmall: AnonPaddingHorizontal = js.native
+  var wrapSmall: AnonPaddingHorizontalPaddingVertical = js.native
 }
 

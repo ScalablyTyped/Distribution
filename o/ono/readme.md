@@ -1,7 +1,7 @@
 
 # Scala.js typings for ono
 
-Typings are for version 6.0.0
+Typings are for version 6.0.1
 
 ## Library description:
 Throw better errors.

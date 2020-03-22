@@ -2,6 +2,7 @@ package typings.dialogflow.mod.google.protobuf
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.dialogflow.mod.google.protobuf.UninterpretedOption.INamePart
+import typings.long.mod.Long
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -30,13 +31,13 @@ class UninterpretedOption_ () extends IUninterpretedOption {
   var name_UninterpretedOption_ : js.Array[INamePart] = js.native
   /** UninterpretedOption negativeIntValue. */
   @JSName("negativeIntValue")
-  var negativeIntValue_UninterpretedOption_ : Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) = js.native
+  var negativeIntValue_UninterpretedOption_ : Double | Long | String = js.native
   /** UninterpretedOption positiveIntValue. */
   @JSName("positiveIntValue")
-  var positiveIntValue_UninterpretedOption_ : Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) = js.native
+  var positiveIntValue_UninterpretedOption_ : Double | Long | String = js.native
   /** UninterpretedOption stringValue. */
   @JSName("stringValue")
-  var stringValue_UninterpretedOption_ : Uint8Array = js.native
+  var stringValue_UninterpretedOption_ : Uint8Array | String = js.native
   /**
     * Converts this UninterpretedOption to JSON.
     * @returns JSON object

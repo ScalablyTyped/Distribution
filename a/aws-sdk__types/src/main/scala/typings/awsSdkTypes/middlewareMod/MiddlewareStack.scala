@@ -1,6 +1,6 @@
 package typings.awsSdkTypes.middlewareMod
 
-import typings.awsSdkTypes.AnonInitialize
+import typings.awsSdkTypes.HandlerOptionsstepinitial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +21,7 @@ trait MiddlewareStack[Input /* <: js.Object */, Output /* <: js.Object */, Strea
     * Add middleware to the list, optionally specifying a priority and tags.
     */
   def add(middleware: Middleware[Input, Output]): Unit = js.native
-  def add(middleware: Middleware[Input, Output], options: HandlerOptions with AnonInitialize): Unit = js.native
+  def add(middleware: Middleware[Input, Output], options: HandlerOptionsstepinitial): Unit = js.native
   /**
     * Add middleware to the list to be executed during the "serialize" phase,
     * optionally specifying a priority and tags.

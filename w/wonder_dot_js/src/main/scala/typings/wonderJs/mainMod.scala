@@ -13,8 +13,8 @@ object mainMod extends js.Object {
   /* static members */
   @js.native
   object Main extends js.Object {
-    def init(): TypeofClassMain = js.native
-    def setConfig(hasCanvasIdIsTestScreenSizeUseDevicePixelRatioContextConfig: AnonCanvasId): TypeofClassMain = js.native
+    def init(): TypeofMain = js.native
+    def setConfig(hasCanvasIdIsTestScreenSizeUseDevicePixelRatioContextConfig: AnonCanvasId): TypeofMain = js.native
   }
   
 }

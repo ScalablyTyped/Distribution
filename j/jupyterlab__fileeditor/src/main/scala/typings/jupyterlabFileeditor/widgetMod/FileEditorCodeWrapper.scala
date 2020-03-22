@@ -32,10 +32,10 @@ class FileEditorCodeWrapper protected () extends CodeEditorWrapper {
   /**
     * Get the context for the editor widget.
     */
-  val context: Context = js.native
+  def context(): Context = js.native
   /**
     * A promise that resolves when the file editor is ready.
     */
-  val ready: js.Promise[Unit] = js.native
+  def ready(): js.Promise[Unit] = js.native
 }
 

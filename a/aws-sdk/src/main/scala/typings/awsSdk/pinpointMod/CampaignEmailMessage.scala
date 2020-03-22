@@ -21,16 +21,17 @@ trait CampaignEmailMessage extends js.Object {
   /**
     * The subject line, or title, of the email.
     */
-  var Title: string = js.native
+  var Title: js.UndefOr[string] = js.native
 }
 
 object CampaignEmailMessage {
   @scala.inline
-  def apply(Title: string, Body: string = null, FromAddress: string = null, HtmlBody: string = null): CampaignEmailMessage = {
-    val __obj = js.Dynamic.literal(Title = Title.asInstanceOf[js.Any])
+  def apply(Body: string = null, FromAddress: string = null, HtmlBody: string = null, Title: string = null): CampaignEmailMessage = {
+    val __obj = js.Dynamic.literal()
     if (Body != null) __obj.updateDynamic("Body")(Body.asInstanceOf[js.Any])
     if (FromAddress != null) __obj.updateDynamic("FromAddress")(FromAddress.asInstanceOf[js.Any])
     if (HtmlBody != null) __obj.updateDynamic("HtmlBody")(HtmlBody.asInstanceOf[js.Any])
+    if (Title != null) __obj.updateDynamic("Title")(Title.asInstanceOf[js.Any])
     __obj.asInstanceOf[CampaignEmailMessage]
   }
 }

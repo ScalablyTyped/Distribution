@@ -1,7 +1,7 @@
 
 # Scala.js typings for sindresorhus__fnv1a
 
-Typings are for version 1.2.0
+Typings are for version 2.0.0
 
 ## Library description:
 FNV-1a non-cryptographic hash function

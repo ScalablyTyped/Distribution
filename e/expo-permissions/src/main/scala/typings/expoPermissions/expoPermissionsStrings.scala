@@ -34,9 +34,6 @@ object expoPermissionsStrings {
   sealed trait location extends PermissionType
   
   @js.native
-  sealed trait never extends js.Object
-  
-  @js.native
   sealed trait none extends js.Object
   
   @js.native
@@ -72,8 +69,6 @@ object expoPermissionsStrings {
   def fine: fine = "fine".asInstanceOf[fine]
   @scala.inline
   def location: location = "location".asInstanceOf[location]
-  @scala.inline
-  def never: never = "never".asInstanceOf[never]
   @scala.inline
   def none: none = "none".asInstanceOf[none]
   @scala.inline

@@ -406,7 +406,6 @@ package object sagemakerMod {
   type ExecutionStatus = typings.awsSdk.sagemakerMod._ExecutionStatus | java.lang.String
   type ExitMessage = java.lang.String
   type ExperimentArn = java.lang.String
-  type ExperimentConfigName = java.lang.String
   type ExperimentDescription = java.lang.String
   type ExperimentEntityName = java.lang.String
   type ExperimentSourceArn = java.lang.String
@@ -1159,7 +1158,9 @@ package object sagemakerMod {
     - typings.awsSdk.awsSdkStrings.jetson_tx1
     - typings.awsSdk.awsSdkStrings.jetson_tx2
     - typings.awsSdk.awsSdkStrings.jetson_nano
+    - typings.awsSdk.awsSdkStrings.jetson_xavier
     - typings.awsSdk.awsSdkStrings.rasp3b
+    - typings.awsSdk.awsSdkStrings.imx8qm
     - typings.awsSdk.awsSdkStrings.deeplens
     - typings.awsSdk.awsSdkStrings.rk3399
     - typings.awsSdk.awsSdkStrings.rk3288
@@ -1167,6 +1168,7 @@ package object sagemakerMod {
     - typings.awsSdk.awsSdkStrings.sbe_c
     - typings.awsSdk.awsSdkStrings.qcs605
     - typings.awsSdk.awsSdkStrings.qcs603
+    - typings.awsSdk.awsSdkStrings.amba_cv22
     - java.lang.String
   */
   type TargetDevice = typings.awsSdk.sagemakerMod._TargetDevice | java.lang.String
@@ -1344,6 +1346,14 @@ package object sagemakerMod {
   */
   type UserProfileStatus = typings.awsSdk.sagemakerMod._UserProfileStatus | java.lang.String
   type VariantName = java.lang.String
+  type VariantPropertyList = js.Array[typings.awsSdk.sagemakerMod.VariantProperty]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.DesiredInstanceCount
+    - typings.awsSdk.awsSdkStrings.DesiredWeight
+    - typings.awsSdk.awsSdkStrings.DataCaptureConfig
+    - java.lang.String
+  */
+  type VariantPropertyType = typings.awsSdk.sagemakerMod._VariantPropertyType | java.lang.String
   type VariantWeight = scala.Double
   type VolumeSizeInGB = scala.Double
   type VpcId = java.lang.String

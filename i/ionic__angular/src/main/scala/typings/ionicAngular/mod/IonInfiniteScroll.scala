@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/angular", "IonInfiniteScroll")
 @js.native
 class IonInfiniteScroll protected ()
-  extends typings.ionicAngular.distMod.IonInfiniteScroll {
+  extends typings.ionicAngular.proxiesMod.IonInfiniteScroll {
   def this(c: ChangeDetectorRef, r: ElementRef[_], z: NgZone) = this()
 }
 

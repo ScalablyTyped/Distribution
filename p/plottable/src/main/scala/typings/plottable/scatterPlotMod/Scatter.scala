@@ -1,6 +1,6 @@
 package typings.plottable.scatterPlotMod
 
-import typings.plottable.AnonHeightWidthXY
+import typings.plottable.AnonHeightWidth
 import typings.plottable.commonsMod.IAccessorScaleBinding
 import typings.plottable.commonsMod.ITransformableAccessorScaleBinding
 import typings.plottable.datasetMod.Dataset
@@ -29,7 +29,7 @@ class Scatter[X, Y] () extends XYPlot[X, Y] {
   /* private */ def _createLabelContainer(labelArea: js.Any, labelContainerOrigin: js.Any, labelOrigin: js.Any, measurement: js.Any): js.Any = js.native
   /* private */ def _drawLabel(datum: js.Any, index: js.Any, dataset: js.Any, attrToProjector: js.Any): js.Any = js.native
   /* protected */ def _drawLabels(): Unit = js.native
-  /* protected */ def _entityBounds(entity: ILightweightScatterPlotEntity): AnonHeightWidthXY = js.native
+  /* protected */ def _entityBounds(entity: ILightweightScatterPlotEntity): AnonHeightWidth = js.native
   /* protected */ def _entityVisibleOnPlot(entity: ILightweightScatterPlotEntity, bounds: Bounds): Boolean = js.native
   /**
     * Get whether bar labels are enabled.

@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
   - typings.mobx.AnonName[K, V]
-  - typings.mobx.AnonAdd[K, V]
-  - typings.mobx.AnonDelete[K, V]
+  - typings.mobx.AnonNewValue[K, V]
+  - typings.mobx.AnonObject[K, V]
 */
 trait IMapDidChange[K, V] extends js.Object
 
@@ -23,14 +23,14 @@ object IMapDidChange {
     __obj.asInstanceOf[IMapDidChange[K, V]]
   }
   @scala.inline
-  def AnonAdd[K, V](name: K, newValue: V, `object`: ObservableMap[K, V], `type`: add): IMapDidChange[K, V] = {
+  def AnonNewValue[K, V](name: K, newValue: V, `object`: ObservableMap[K, V], `type`: add): IMapDidChange[K, V] = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMapDidChange[K, V]]
   }
   @scala.inline
-  def AnonDelete[K, V](name: K, `object`: ObservableMap[K, V], oldValue: V, `type`: delete): IMapDidChange[K, V] = {
+  def AnonObject[K, V](name: K, `object`: ObservableMap[K, V], oldValue: V, `type`: delete): IMapDidChange[K, V] = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], oldValue = oldValue.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

@@ -1,6 +1,6 @@
 package typings.reactQuery.mod
 
-import typings.reactQuery.AnonForceIncludeInactive
+import typings.reactQuery.AnonIncludeInactive
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object refetchAllQueries extends js.Object {
   def apply(): js.Promise[Unit] = js.native
-  def apply(options: AnonForceIncludeInactive): js.Promise[Unit] = js.native
+  def apply(options: AnonIncludeInactive): js.Promise[Unit] = js.native
 }
 

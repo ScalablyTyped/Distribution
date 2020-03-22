@@ -6,6 +6,7 @@ import typings.nivoCore.mod.Box
 import typings.nivoCore.mod.CartesianMarkerProps
 import typings.nivoCore.mod.Theme
 import typings.nivoLegends.mod.LegendProps
+import typings.nivoLine.ReadonlyPointSymbolProps
 import typings.nivoLine.nivoLineBooleans.`false`
 import typings.nivoLine.nivoLineStrings.linear
 import typings.nivoLine.nivoLineStrings.monotoneX
@@ -18,13 +19,17 @@ import typings.nivoLine.nivoLineStrings.x
 import typings.nivoLine.nivoLineStrings.y
 import typings.nivoScales.mod.Scale
 import typings.nivoTooltip.mod.CrosshairType
+import typings.react.mod.MouseEvent
+import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
+import typings.std.Date
+import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait LineProps extends js.Object {
-  var areaBaselineValue: js.UndefOr[LineValue] = js.undefined
+  var areaBaseDatumValue: js.UndefOr[DatumValue] = js.undefined
   var areaOpacity: js.UndefOr[Double] = js.undefined
   var axisBottom: js.UndefOr[AxisProps | Null] = js.undefined
   var axisLeft: js.UndefOr[AxisProps | Null] = js.undefined
@@ -33,7 +38,7 @@ trait LineProps extends js.Object {
   var colors: js.UndefOr[OrdinalColorsInstruction[_]] = js.undefined
   var crosshairType: js.UndefOr[CrosshairType] = js.undefined
   var curve: js.UndefOr[linear | monotoneX | monotoneY | natural | stepBefore | step | stepAfter] = js.undefined
-  var data: js.Array[LineSerieData]
+  var data: js.Array[Serie]
   var debugMesh: js.UndefOr[Boolean] = js.undefined
   var debugSlices: js.UndefOr[Boolean] = js.undefined
   var enableArea: js.UndefOr[Boolean] = js.undefined
@@ -42,19 +47,26 @@ trait LineProps extends js.Object {
   var enableGridY: js.UndefOr[Boolean] = js.undefined
   var enablePoints: js.UndefOr[Boolean] = js.undefined
   var enableSlices: js.UndefOr[x | y | `false`] = js.undefined
+  var gridXValues: js.UndefOr[Double | (js.Array[Date | Double | String])] = js.undefined
+  var gridYValues: js.UndefOr[Double | (js.Array[Date | Double | String])] = js.undefined
   var isInteractive: js.UndefOr[Boolean] = js.undefined
   var layers: js.UndefOr[js.Array[Layer]] = js.undefined
   var legends: js.UndefOr[js.Array[LegendProps]] = js.undefined
   var lineWidth: js.UndefOr[Double] = js.undefined
   var margin: js.UndefOr[Box] = js.undefined
   var markers: js.UndefOr[js.Array[CartesianMarkerProps]] = js.undefined
+  var onClick: js.UndefOr[PointMouseHandler] = js.undefined
+  var onMouseEnter: js.UndefOr[PointMouseHandler] = js.undefined
+  var onMouseLeave: js.UndefOr[PointMouseHandler] = js.undefined
+  var onMouseMove: js.UndefOr[PointMouseHandler] = js.undefined
   var pointBorderColor: js.UndefOr[js.Any] = js.undefined
   var pointBorderWidth: js.UndefOr[Double] = js.undefined
   var pointColor: js.UndefOr[js.Any] = js.undefined
   var pointSize: js.UndefOr[Double] = js.undefined
-  var sliceTooltip: js.UndefOr[js.Function1[/* data */ LineSliceData, ReactNode]] = js.undefined
+  var pointSymbol: js.UndefOr[js.Function1[/* props */ ReadonlyPointSymbolProps, ReactNode]] = js.undefined
+  var sliceTooltip: js.UndefOr[SliceTooltip] = js.undefined
   var theme: js.UndefOr[Theme] = js.undefined
-  var tooltip: js.UndefOr[TooltipProp] = js.undefined
+  var tooltip: js.UndefOr[PointTooltip] = js.undefined
   var tooltipFormat: js.UndefOr[TooltipFormatter | String] = js.undefined
   var xFormat: js.UndefOr[String | DataFormatter] = js.undefined
   var xScale: js.UndefOr[Scale] = js.undefined
@@ -65,8 +77,8 @@ trait LineProps extends js.Object {
 object LineProps {
   @scala.inline
   def apply(
-    data: js.Array[LineSerieData],
-    areaBaselineValue: LineValue = null,
+    data: js.Array[Serie],
+    areaBaseDatumValue: DatumValue = null,
     areaOpacity: Int | Double = null,
     axisBottom: AxisProps = null,
     axisLeft: AxisProps = null,
@@ -83,19 +95,26 @@ object LineProps {
     enableGridY: js.UndefOr[Boolean] = js.undefined,
     enablePoints: js.UndefOr[Boolean] = js.undefined,
     enableSlices: x | y | `false` = null,
+    gridXValues: Double | (js.Array[Date | Double | String]) = null,
+    gridYValues: Double | (js.Array[Date | Double | String]) = null,
     isInteractive: js.UndefOr[Boolean] = js.undefined,
     layers: js.Array[Layer] = null,
     legends: js.Array[LegendProps] = null,
     lineWidth: Int | Double = null,
     margin: Box = null,
     markers: js.Array[CartesianMarkerProps] = null,
+    onClick: (/* point */ Point, /* event */ MouseEvent[Element, NativeMouseEvent]) => Unit = null,
+    onMouseEnter: (/* point */ Point, /* event */ MouseEvent[Element, NativeMouseEvent]) => Unit = null,
+    onMouseLeave: (/* point */ Point, /* event */ MouseEvent[Element, NativeMouseEvent]) => Unit = null,
+    onMouseMove: (/* point */ Point, /* event */ MouseEvent[Element, NativeMouseEvent]) => Unit = null,
     pointBorderColor: js.Any = null,
     pointBorderWidth: Int | Double = null,
     pointColor: js.Any = null,
     pointSize: Int | Double = null,
-    sliceTooltip: /* data */ LineSliceData => ReactNode = null,
+    pointSymbol: /* props */ ReadonlyPointSymbolProps => ReactNode = null,
+    sliceTooltip: SliceTooltip = null,
     theme: Theme = null,
-    tooltip: TooltipProp = null,
+    tooltip: PointTooltip = null,
     tooltipFormat: TooltipFormatter | String = null,
     xFormat: String | DataFormatter = null,
     xScale: Scale = null,
@@ -103,7 +122,7 @@ object LineProps {
     yScale: Scale = null
   ): LineProps = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
-    if (areaBaselineValue != null) __obj.updateDynamic("areaBaselineValue")(areaBaselineValue.asInstanceOf[js.Any])
+    if (areaBaseDatumValue != null) __obj.updateDynamic("areaBaseDatumValue")(areaBaseDatumValue.asInstanceOf[js.Any])
     if (areaOpacity != null) __obj.updateDynamic("areaOpacity")(areaOpacity.asInstanceOf[js.Any])
     if (axisBottom != null) __obj.updateDynamic("axisBottom")(axisBottom.asInstanceOf[js.Any])
     if (axisLeft != null) __obj.updateDynamic("axisLeft")(axisLeft.asInstanceOf[js.Any])
@@ -120,17 +139,24 @@ object LineProps {
     if (!js.isUndefined(enableGridY)) __obj.updateDynamic("enableGridY")(enableGridY.asInstanceOf[js.Any])
     if (!js.isUndefined(enablePoints)) __obj.updateDynamic("enablePoints")(enablePoints.asInstanceOf[js.Any])
     if (enableSlices != null) __obj.updateDynamic("enableSlices")(enableSlices.asInstanceOf[js.Any])
+    if (gridXValues != null) __obj.updateDynamic("gridXValues")(gridXValues.asInstanceOf[js.Any])
+    if (gridYValues != null) __obj.updateDynamic("gridYValues")(gridYValues.asInstanceOf[js.Any])
     if (!js.isUndefined(isInteractive)) __obj.updateDynamic("isInteractive")(isInteractive.asInstanceOf[js.Any])
     if (layers != null) __obj.updateDynamic("layers")(layers.asInstanceOf[js.Any])
     if (legends != null) __obj.updateDynamic("legends")(legends.asInstanceOf[js.Any])
     if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
     if (markers != null) __obj.updateDynamic("markers")(markers.asInstanceOf[js.Any])
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction2(onClick))
+    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction2(onMouseEnter))
+    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction2(onMouseLeave))
+    if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(js.Any.fromFunction2(onMouseMove))
     if (pointBorderColor != null) __obj.updateDynamic("pointBorderColor")(pointBorderColor.asInstanceOf[js.Any])
     if (pointBorderWidth != null) __obj.updateDynamic("pointBorderWidth")(pointBorderWidth.asInstanceOf[js.Any])
     if (pointColor != null) __obj.updateDynamic("pointColor")(pointColor.asInstanceOf[js.Any])
     if (pointSize != null) __obj.updateDynamic("pointSize")(pointSize.asInstanceOf[js.Any])
-    if (sliceTooltip != null) __obj.updateDynamic("sliceTooltip")(js.Any.fromFunction1(sliceTooltip))
+    if (pointSymbol != null) __obj.updateDynamic("pointSymbol")(js.Any.fromFunction1(pointSymbol))
+    if (sliceTooltip != null) __obj.updateDynamic("sliceTooltip")(sliceTooltip.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     if (tooltipFormat != null) __obj.updateDynamic("tooltipFormat")(tooltipFormat.asInstanceOf[js.Any])

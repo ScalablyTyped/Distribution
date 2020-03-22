@@ -1,16 +1,15 @@
 package typings.blueprintjsDatetime.dateInputMod
 
 import typings.blueprintjsCore.inputGroupMod.IInputGroupProps
-import typings.blueprintjsCore.popoverMod.IPopoverProps
 import typings.blueprintjsCore.propsMod.HTMLInputProps
 import typings.blueprintjsCore.propsMod.IProps
+import typings.blueprintjsDatetime.PartialIPopoverProps
 import typings.blueprintjsDatetime.blueprintjsDatetimeBooleans.`false`
 import typings.blueprintjsDatetime.datePickerCoreMod.IDatePickerBaseProps
 import typings.blueprintjsDatetime.shortcutsMod.IDatePickerShortcut
 import typings.react.mod._Global_.JSX.Element
 import typings.reactDayPicker.propsMod.DayPickerProps
 import typings.std.Date
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -97,7 +96,7 @@ trait IDateInputProps
     * Props to pass to the `Popover`.
     * Note that `content`, `autoFocus`, and `enforceFocus` cannot be changed.
     */
-  var popoverProps: js.UndefOr[Partial[IPopoverProps] with js.Object] = js.native
+  var popoverProps: js.UndefOr[PartialIPopoverProps with js.Object] = js.native
   /**
     * Element to render on right side of input.
     */

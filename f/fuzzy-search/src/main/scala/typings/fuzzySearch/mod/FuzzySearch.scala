@@ -1,6 +1,6 @@
 package typings.fuzzySearch.mod
 
-import typings.std.Required
+import typings.fuzzySearch.RequiredOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait FuzzySearch[T /* <: js.Object | String */] extends js.Object {
   var haystack: js.Array[T] = js.native
   var keys: js.Array[String] = js.native
-  var options: Required[Options] = js.native
+  var options: RequiredOptions = js.native
   def search(): js.Array[T] = js.native
   def search(needle: String): js.Array[T] = js.native
 }

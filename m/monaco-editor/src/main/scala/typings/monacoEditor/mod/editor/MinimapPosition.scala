@@ -12,10 +12,16 @@ sealed trait MinimapPosition extends js.Object
 @js.native
 object MinimapPosition extends js.Object {
   @js.native
+  sealed trait Gutter extends MinimapPosition
+  
+  @js.native
   sealed trait Inline extends MinimapPosition
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[MinimapPosition with Double] = js.native
+  /* 2 */ @js.native
+  object Gutter extends TopLevel[Gutter with Double]
+  
   /* 1 */ @js.native
   object Inline extends TopLevel[Inline with Double]
   

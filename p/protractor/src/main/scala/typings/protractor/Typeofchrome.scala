@@ -8,8 +8,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Typeofchrome extends js.Object {
-  var Driver: TypeofClassDriverCreateSession
-  var Options: TypeofClassOptions
+  var Driver: TypeofDriverInstantiable
+  var Options: TypeofOptions
   var ServiceBuilder: Instantiable0[typings.seleniumWebdriver.chromeMod.ServiceBuilder]
   def getDefaultService(): DriverService
   def setDefaultService(service: DriverService): Unit
@@ -18,8 +18,8 @@ trait Typeofchrome extends js.Object {
 object Typeofchrome {
   @scala.inline
   def apply(
-    Driver: TypeofClassDriverCreateSession,
-    Options: TypeofClassOptions,
+    Driver: TypeofDriverInstantiable,
+    Options: TypeofOptions,
     ServiceBuilder: Instantiable0[ServiceBuilder],
     getDefaultService: () => DriverService,
     setDefaultService: DriverService => Unit

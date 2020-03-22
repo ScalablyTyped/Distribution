@@ -2,6 +2,7 @@ package typings.reactNavigationDrawer
 
 import typings.react.mod.Context
 import typings.react.mod.RefObject
+import typings.reactNavigation.mod.CreateNavigatorConfig
 import typings.reactNavigation.mod.NavigationParams
 import typings.reactNavigation.mod.NavigationRoute
 import typings.reactNavigation.mod.NavigationRouteConfigMap
@@ -17,8 +18,10 @@ import typings.reactNavigationDrawer.reactNavigationDrawerStrings.NavigationSlas
 import typings.reactNavigationDrawer.reactNavigationDrawerStrings.NavigationSlashMARK_DRAWER_SETTLING
 import typings.reactNavigationDrawer.reactNavigationDrawerStrings.NavigationSlashOPEN_DRAWER
 import typings.reactNavigationDrawer.reactNavigationDrawerStrings.NavigationSlashTOGGLE_DRAWER
+import typings.reactNavigationDrawer.typesMod.NavigationDrawerConfig
 import typings.reactNavigationDrawer.typesMod.NavigationDrawerOptions
 import typings.reactNavigationDrawer.typesMod.NavigationDrawerProp
+import typings.reactNavigationDrawer.typesMod.NavigationDrawerRouterConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -47,8 +50,8 @@ object mod extends js.Object {
   val DrawerProgressContext: Context[
     (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Animated.Node<number> */ js.Any) | Null
   ] = js.native
-  def DrawerRouter(routeConfigs: NavigationRouteConfigMap[_, _, _]): AnonAction = js.native
-  def DrawerRouter(routeConfigs: NavigationRouteConfigMap[_, _, _], config: AnonInitialRouteName): AnonAction = js.native
+  def DrawerRouter(routeConfigs: NavigationRouteConfigMap[_, _, _]): AnonGetActionCreators = js.native
+  def DrawerRouter(routeConfigs: NavigationRouteConfigMap[_, _, _], config: AnonInitialRouteName): AnonGetActionCreators = js.native
   def createDrawerNavigator(
     routeConfigs: NavigationRouteConfigMap[
       NavigationDrawerOptions, 
@@ -62,7 +65,12 @@ object mod extends js.Object {
       NavigationDrawerProp[NavigationRoute[NavigationParams], _], 
       _
     ],
-    config: CreateNavigatorConfigNavigationDrawerConfigNavigat
+    config: CreateNavigatorConfig[
+      NavigationDrawerConfig, 
+      NavigationDrawerRouterConfig, 
+      NavigationDrawerOptions, 
+      NavigationDrawerProp[NavigationRoute[NavigationParams], _]
+    ]
   ): js.Any = js.native
   @js.native
   object DrawerActions extends js.Object {

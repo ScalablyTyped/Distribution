@@ -51,12 +51,14 @@ object Scale {
   def TimeScale(
     `type`: time,
     format: String = null,
-    precision: millisecond | second | minute | hour | month | year | day = null
+    precision: millisecond | second | minute | hour | month | year | day = null,
+    useUTC: js.UndefOr[Boolean] = js.undefined
   ): Scale = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
+    if (!js.isUndefined(useUTC)) __obj.updateDynamic("useUTC")(useUTC.asInstanceOf[js.Any])
     __obj.asInstanceOf[Scale]
   }
   @scala.inline

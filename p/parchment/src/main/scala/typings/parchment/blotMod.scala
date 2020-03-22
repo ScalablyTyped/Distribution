@@ -66,9 +66,9 @@ object blotMod extends js.Object {
     var domNode_Parent: HTMLElement = js.native
     def appendChild(child: Blot): Unit = js.native
     def descendant[T](matcher: js.Function1[/* blot */ Blot, Boolean], index: Double): js.Tuple2[T, Double] = js.native
-    def descendant[T](`type`: AnonT[T], index: Double): js.Tuple2[T, Double] = js.native
+    def descendant[T](`type`: AnonInstantiable[T], index: Double): js.Tuple2[T, Double] = js.native
     def descendants[T](matcher: js.Function1[/* blot */ Blot, Boolean], index: Double, length: Double): js.Array[T] = js.native
-    def descendants[T](`type`: AnonT[T], index: Double, length: Double): js.Array[T] = js.native
+    def descendants[T](`type`: AnonInstantiable[T], index: Double, length: Double): js.Array[T] = js.native
     def insertBefore(child: Blot): Unit = js.native
     def insertBefore(child: Blot, refNode: Blot): Unit = js.native
     def moveChildren(parent: Parent): Unit = js.native

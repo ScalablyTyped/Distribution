@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class WSSecurityCert protected () extends ISecurity {
   def this(privatePEM: js.Any, publicP12PEM: js.Any, password: js.Any) = this()
   def this(privatePEM: js.Any, publicP12PEM: js.Any, password: js.Any, options: IWSSecurityCertOptions) = this()
+  var additionalReferences: js.Any = js.native
   var created: js.Any = js.native
   var expires: js.Any = js.native
   var hasTimeStamp: js.Any = js.native

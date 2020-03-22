@@ -1,11 +1,11 @@
 package typings.kefir.mod
 
 import typings.kefir.AnonConvert
-import typings.kefir.AnonConvertValue
 import typings.kefir.AnonFlushOnChange
 import typings.kefir.AnonFlushOnEnd
 import typings.kefir.AnonImmediate
 import typings.kefir.AnonLeading
+import typings.kefir.AnonValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,7 +39,7 @@ class Observable[T, S] () extends js.Object {
   def diff(fn: js.Function2[/* prev */ T, /* next */ T, T], seed: T): Observable[T, S] = js.native
   def endOnError(): Observable[T, S] = js.native
   def errorsToValues[U](): Observable[T | U, scala.Nothing] = js.native
-  def errorsToValues[U](handler: js.Function1[/* error */ S, AnonConvertValue[U]]): Observable[T | U, scala.Nothing] = js.native
+  def errorsToValues[U](handler: js.Function1[/* error */ S, AnonValue[U]]): Observable[T | U, scala.Nothing] = js.native
   def filter(): Observable[T, S] = js.native
   def filter(predicate: js.Function1[/* value */ T, Boolean]): Observable[T, S] = js.native
   // Combine two streams

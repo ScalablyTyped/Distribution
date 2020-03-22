@@ -2,7 +2,7 @@ package typings.jestTypes.globalMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.istanbulLibCoverage.mod.CoverageMapData
-import typings.jestTypes.AnonConcurrent
+import typings.jestTypes.ItBaseconcurrentItConcurr
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +17,7 @@ trait Global
   @JSName("fdescribe")
   var fdescribe_Original: DescribeBase = js.native
   @JSName("fit")
-  var fit_Original: ItBase with AnonConcurrent = js.native
+  var fit_Original: ItBaseconcurrentItConcurr = js.native
   @JSName("it")
   var it_Original: ItConcurrent = js.native
   var jasmine: Jasmine = js.native

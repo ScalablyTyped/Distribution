@@ -6,8 +6,17 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ExecutionParameter extends js.Object {
+  /**
+    * The default values for the execution parameter.
+    */
   var DefaultValues: js.UndefOr[ExecutionParameterValueList] = js.native
+  /**
+    * The name of the execution parameter.
+    */
   var Name: js.UndefOr[ExecutionParameterKey] = js.native
+  /**
+    * The execution parameter type.
+    */
   var Type: js.UndefOr[ExecutionParameterType] = js.native
 }
 

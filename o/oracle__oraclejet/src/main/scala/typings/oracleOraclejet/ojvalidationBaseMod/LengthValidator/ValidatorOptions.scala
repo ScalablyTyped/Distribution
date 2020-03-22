@@ -1,6 +1,6 @@
 package typings.oracleOraclejet.ojvalidationBaseMod.LengthValidator
 
-import typings.oracleOraclejet.AnonExactInRange
+import typings.oracleOraclejet.AnonMax
 import typings.oracleOraclejet.AnonTooLong
 import typings.oracleOraclejet.oracleOraclejetStrings.codePoint
 import typings.oracleOraclejet.oracleOraclejetStrings.codeUnit
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 // tslint:disable-next-line interface-over-type-literal
 trait ValidatorOptions extends js.Object {
   var countBy: js.UndefOr[codeUnit | codePoint] = js.undefined
-  var hint: js.UndefOr[AnonExactInRange] = js.undefined
+  var hint: js.UndefOr[AnonMax] = js.undefined
   var max: js.UndefOr[Double] = js.undefined
   var messageDetail: js.UndefOr[AnonTooLong] = js.undefined
   var messageSummary: js.UndefOr[AnonTooLong] = js.undefined
@@ -22,7 +22,7 @@ object ValidatorOptions {
   @scala.inline
   def apply(
     countBy: codeUnit | codePoint = null,
-    hint: AnonExactInRange = null,
+    hint: AnonMax = null,
     max: Int | Double = null,
     messageDetail: AnonTooLong = null,
     messageSummary: AnonTooLong = null,

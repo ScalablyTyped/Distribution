@@ -1,5 +1,6 @@
 package typings.evaporate
 
+import typings.evaporate.mod.AddOverrideOptionKeys
 import typings.evaporate.mod.ImmutableOptionKeys
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,7 +14,7 @@ object evaporateStrings {
   sealed trait `4` extends js.Object
   
   @js.native
-  sealed trait abortCompletionThrottlingMs extends js.Object
+  sealed trait abortCompletionThrottlingMs extends AddOverrideOptionKeys
   
   @js.native
   sealed trait allowS3ExistenceOptimization extends ImmutableOptionKeys
@@ -25,13 +26,13 @@ object evaporateStrings {
   sealed trait awsSignatureVersion extends ImmutableOptionKeys
   
   @js.native
-  sealed trait aws_key extends js.Object
+  sealed trait aws_key extends AddOverrideOptionKeys
   
   @js.native
-  sealed trait aws_url extends js.Object
+  sealed trait aws_url extends AddOverrideOptionKeys
   
   @js.native
-  sealed trait bucket extends js.Object
+  sealed trait bucket extends AddOverrideOptionKeys
   
   @js.native
   sealed trait cloudfront extends ImmutableOptionKeys
@@ -46,7 +47,7 @@ object evaporateStrings {
   sealed trait cryptoMd5Method extends ImmutableOptionKeys
   
   @js.native
-  sealed trait customAuthMethod extends js.Object
+  sealed trait customAuthMethod extends AddOverrideOptionKeys
   
   @js.native
   sealed trait encodeFilename extends ImmutableOptionKeys
@@ -55,7 +56,7 @@ object evaporateStrings {
   sealed trait evaporateChanged extends ImmutableOptionKeys
   
   @js.native
-  sealed trait localTimeOffset extends js.Object
+  sealed trait localTimeOffset extends AddOverrideOptionKeys
   
   @js.native
   sealed trait logging extends ImmutableOptionKeys
@@ -64,58 +65,58 @@ object evaporateStrings {
   sealed trait maxConcurrentParts extends ImmutableOptionKeys
   
   @js.native
-  sealed trait maxFileSize extends js.Object
+  sealed trait maxFileSize extends AddOverrideOptionKeys
   
   @js.native
-  sealed trait maxRetryBackoffSecs extends js.Object
+  sealed trait maxRetryBackoffSecs extends AddOverrideOptionKeys
   
   @js.native
-  sealed trait mockLocalStorage extends js.Object
+  sealed trait mockLocalStorage extends AddOverrideOptionKeys
   
   @js.native
   sealed trait onlyRetryForSameFileName extends ImmutableOptionKeys
   
   @js.native
-  sealed trait partSize extends js.Object
+  sealed trait partSize extends AddOverrideOptionKeys
   
   @js.native
-  sealed trait progressIntervalMS extends js.Object
+  sealed trait progressIntervalMS extends AddOverrideOptionKeys
   
   @js.native
-  sealed trait readableStreamPartMethod extends js.Object
+  sealed trait readableStreamPartMethod extends AddOverrideOptionKeys
   
   @js.native
-  sealed trait readableStreams extends js.Object
+  sealed trait readableStreams extends AddOverrideOptionKeys
   
   @js.native
-  sealed trait retryBackoffPower extends js.Object
+  sealed trait retryBackoffPower extends AddOverrideOptionKeys
   
   @js.native
-  sealed trait s3Acceleration extends js.Object
+  sealed trait s3Acceleration extends AddOverrideOptionKeys
   
   @js.native
-  sealed trait s3FileCacheHoursAgo extends js.Object
+  sealed trait s3FileCacheHoursAgo extends AddOverrideOptionKeys
   
   @js.native
-  sealed trait sendCanonicalRequestToSignerUrl extends js.Object
+  sealed trait sendCanonicalRequestToSignerUrl extends AddOverrideOptionKeys
   
   @js.native
-  sealed trait signHeaders extends js.Object
+  sealed trait signHeaders extends AddOverrideOptionKeys
   
   @js.native
-  sealed trait signParams extends js.Object
+  sealed trait signParams extends AddOverrideOptionKeys
   
   @js.native
-  sealed trait signResponseHandler extends js.Object
+  sealed trait signResponseHandler extends AddOverrideOptionKeys
   
   @js.native
-  sealed trait signerUrl extends js.Object
+  sealed trait signerUrl extends AddOverrideOptionKeys
   
   @js.native
   sealed trait timeUrl extends ImmutableOptionKeys
   
   @js.native
-  sealed trait xhrWithCredentials extends js.Object
+  sealed trait xhrWithCredentials extends AddOverrideOptionKeys
   
   @scala.inline
   def `2`: `2` = "2".asInstanceOf[`2`]

@@ -20,7 +20,7 @@ object utilsMod extends js.Object {
   def getError(info: Diagnostic, typescript: Typeofts, file: File): TypeScriptError = js.native
   def message(title: String, alternative: String): Unit = js.native
   def message(title: String, alternative: String, description: String): Unit = js.native
-  def normalizePath(pathString: String): String = js.native
+  def normalizePath(caseSensitive: Boolean, pathString: String): String = js.native
   def splitExtension(fileName: String): js.Tuple2[String, String] = js.native
   def splitExtension(fileName: String, knownExtensions: js.Array[String]): js.Tuple2[String, String] = js.native
   type Map[T] = StringDictionary[T]

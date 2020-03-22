@@ -1,7 +1,7 @@
 package typings.hexoUtil.mod
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.hexoUtil.Anon0
+import typings.hexoUtil.AnonDictindex
 import typings.std.RegExp
 import typings.std.RegExpMatchArray
 import scala.scalajs.js
@@ -18,6 +18,6 @@ trait Pattern[T] extends js.Object {
 object Pattern
   extends Instantiable1[
       (/* rule */ js.Function1[/* str */ String, js.Object]) | (/* rule */ Pattern[js.Object]) | (/* rule */ RegExp) | (/* rule */ String), 
-      Pattern[js.UndefOr[Anon0 | Null | js.Object | RegExpMatchArray]]
+      Pattern[js.UndefOr[AnonDictindex | Null | js.Object | RegExpMatchArray]]
     ]
 

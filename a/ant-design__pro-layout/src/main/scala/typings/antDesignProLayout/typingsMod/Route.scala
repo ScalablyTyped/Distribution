@@ -1,5 +1,6 @@
 package typings.antDesignProLayout.typingsMod
 
+import typings.react.mod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +16,7 @@ object Route {
     children: js.Array[MenuDataItem] = null,
     hideChildrenInMenu: js.UndefOr[Boolean] = js.undefined,
     hideInMenu: js.UndefOr[Boolean] = js.undefined,
-    icon: String = null,
+    icon: ReactNode = null,
     key: String = null,
     locale: String = null,
     name: String = null,

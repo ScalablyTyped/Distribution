@@ -12,9 +12,9 @@ trait TypeofSeq extends js.Object {
   /**
     * `Seq` which represents an ordered indexed list of values.
     */
-  val Indexed: TypeofIndexedCollection = js.native
-  val Keyed: TypeofKeyedCollection = js.native
-  val Set: TypeofSetCollection = js.native
+  val Indexed: TypeofIndexedOf = js.native
+  val Keyed: TypeofKeyed0 = js.native
+  val Set: TypeofSetOf = js.native
   def apply(): Seq[_, _] = js.native
   def apply[T](collection: typings.immutable.Immutable.Collection.Indexed[T]): typings.immutable.Immutable.Seq.Indexed[T] = js.native
   def apply[T](collection: typings.immutable.Immutable.Collection.Set[T]): typings.immutable.Immutable.Seq.Set[T] = js.native

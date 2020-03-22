@@ -1,15 +1,12 @@
 package typings.angularCompiler.templateMod
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.angularCompiler.constantPoolMod.ConstantPool
 import typings.angularCompiler.contextMod.I18nContext
 import typings.angularCompiler.expressionConverterMod.LocalResolver
-import typings.angularCompiler.i18nAstMod.AST
-import typings.angularCompiler.i18nAstMod.Message
+import typings.angularCompiler.i18nAstMod.I18nMeta
 import typings.angularCompiler.outputAstMod.Expression
 import typings.angularCompiler.outputAstMod.ExternalReference
 import typings.angularCompiler.outputAstMod.FunctionExpr
-import typings.angularCompiler.outputAstMod.ReadVarExpr
 import typings.angularCompiler.outputAstMod.Statement
 import typings.angularCompiler.r3AstMod.BoundAttribute
 import typings.angularCompiler.r3AstMod.BoundEvent
@@ -25,7 +22,6 @@ import typings.angularCompiler.r3AstMod.TextAttribute
 import typings.angularCompiler.r3AstMod.Variable
 import typings.angularCompiler.r3AstMod.Visitor
 import typings.angularCompiler.selectorMod.SelectorMatcher
-import typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
 import typings.std.Map
 import typings.std.Set
 import scala.scalajs.js
@@ -53,6 +49,23 @@ class TemplateDefinitionBuilder protected ()
     relativeContextFilePath: String,
     i18nUseExternalIds: Boolean
   ) = this()
+  def this(
+    constantPool: ConstantPool,
+    parentBindingScope: BindingScope,
+    level: Double,
+    contextName: String | Null,
+    i18nContext: I18nContext | Null,
+    templateIndex: Double | Null,
+    templateName: String | Null,
+    directiveMatcher: SelectorMatcher[_] | Null,
+    directives: Set[Expression],
+    pipeTypeByName: Map[String, Expression],
+    pipes: Set[Expression],
+    _namespace: ExternalReference,
+    relativeContextFilePath: String,
+    i18nUseExternalIds: Boolean,
+    _constants: js.Array[Expression]
+  ) = this()
   var _bindingContext: js.Any = js.native
   /**
     * This scope contains local variables declared in the update mode block of the template.
@@ -60,20 +73,17 @@ class TemplateDefinitionBuilder protected ()
     */
   var _bindingScope: js.Any = js.native
   var _bindingSlots: js.Any = js.native
+  var _constants: js.Any = js.native
   /**
     * List of callbacks to generate creation mode instructions. We store them here as we process
     * the template so bindings in listeners are resolved only once all nodes have been visited.
     * This ensures all local refs and context variables are available for matching.
     */
   var _creationCodeFns: js.Any = js.native
+  /** Index of the currently-selected node. */
+  var _currentIndex: js.Any = js.native
   var _dataIndex: js.Any = js.native
   var _implicitReceiverExpr: js.Any = js.native
-  /**
-    * Memorizes the last node index for which a select instruction has been generated.
-    * We're initializing this to -1 to ensure the `select(0)` instruction is generated before any
-    * relevant update instructions.
-    */
-  var _lastNodeIndexWithFlush: js.Any = js.native
   var _namespace: js.Any = js.native
   /**
     * List of callbacks to build nested templates. Nested templates must not be visited until
@@ -96,40 +106,22 @@ class TemplateDefinitionBuilder protected ()
     */
   var _updateCodeFns: js.Any = js.native
   var _valueConverter: js.Any = js.native
-  var addSelectInstructionIfNecessary: js.Any = js.native
+  var addAdvanceInstructionIfNecessary: js.Any = js.native
+  var addAttrsToConsts: js.Any = js.native
+  var addNamespaceInstruction: js.Any = js.native
+  var addToConsts: js.Any = js.native
   var allocateBindingSlots: js.Any = js.native
   var allocateDataSlot: js.Any = js.native
   var allocatePureFunctionSlots: js.Any = js.native
   var bindingContext: js.Any = js.native
   var constantPool: js.Any = js.native
   var contextName: js.Any = js.native
-  var convertExpressionBinding: js.Any = js.native
   var convertPropertyBinding: js.Any = js.native
   var creationInstruction: js.Any = js.native
+  var creationInstructionChain: js.Any = js.native
   var directiveMatcher: js.Any = js.native
   var directives: js.Any = js.native
   var fileBasedI18nSuffix: js.Any = js.native
-  /**
-    * Gets an expression that refers to the implicit receiver. The implicit
-    * receiver is always the root level context.
-    */
-  var getImplicitReceiverExpr: js.Any = js.native
-  /**
-    * Gets a list of argument expressions to pass to an update instruction expression. Also updates
-    * the temp variables state with temp variables that were identified as needing to be created
-    * while visiting the arguments.
-    * @param value The original expression we will be resolving an arguments list from.
-    */
-  var getUpdateInstructionArguments: js.Any = js.native
-  var i18n: js.Any = js.native
-  var i18nContext: js.Any = js.native
-  var i18nUseExternalIds: js.Any = js.native
-  var instructionFn: js.Any = js.native
-  var level: js.Any = js.native
-  var matchDirectives: js.Any = js.native
-  var pipeTypeByName: js.Any = js.native
-  var pipes: js.Any = js.native
-  var prepareListenerParameter: js.Any = js.native
   /**
     * Prepares all attribute expression values for the `TAttributes` array.
     *
@@ -142,6 +134,7 @@ class TemplateDefinitionBuilder protected ()
     *
     * ```
     * attrs = [prop, value, prop2, value2,
+    *   PROJECT_AS, selector,
     *   CLASSES, class1, class2,
     *   STYLES, style1, value1, style2, value2,
     *   BINDINGS, name1, name2, name3,
@@ -152,67 +145,67 @@ class TemplateDefinitionBuilder protected ()
     * Note that this function will fully ignore all synthetic (@foo) attribute values
     * because those values are intended to always be generated as property instructions.
     */
-  var prepareNonRenderAttrs: js.Any = js.native
-  var prepareRefsParameter: js.Any = js.native
-  var processStylingInstruction: js.Any = js.native
-  var relativeContextFilePath: js.Any = js.native
-  var templateIndex: js.Any = js.native
-  var templateName: js.Any = js.native
-  var templatePropertyBindings: js.Any = js.native
-  var toAttrsParam: js.Any = js.native
-  var updateInstruction: js.Any = js.native
-  var updateInstructionChain: js.Any = js.native
-  def addNamespaceInstruction(nsInstruction: ExternalReference, element: Element): Unit = js.native
-  def buildTemplateFunction(nodes: js.Array[Node], variables: js.Array[Variable]): FunctionExpr = js.native
-  def buildTemplateFunction(nodes: js.Array[Node], variables: js.Array[Variable], ngContentSelectorsOffset: Double): FunctionExpr = js.native
-  def buildTemplateFunction(nodes: js.Array[Node], variables: js.Array[Variable], ngContentSelectorsOffset: Double, i18n: AST): FunctionExpr = js.native
-  def getConstCount(): Double = js.native
-  /* CompleteClass */
-  override def getLocal(name: String): Expression | Null = js.native
-  def getNamespaceInstruction(): ExternalReference = js.native
-  def getNamespaceInstruction(namespaceKey: String): ExternalReference = js.native
-  def getNgContentSelectors(): Expression | Null = js.native
-  def getVarCount(): Double = js.native
-  def i18nAppendBindings(expressions: js.Array[typings.angularCompiler.astMod.AST]): Unit = js.native
-  def i18nBindProps(props: StringDictionary[Text | BoundText]): StringDictionary[Expression] = js.native
-  def i18nEnd(): Unit = js.native
-  def i18nEnd(span: Null, selfClosing: Boolean): Unit = js.native
-  def i18nEnd(span: ParseSourceSpan): Unit = js.native
-  def i18nEnd(span: ParseSourceSpan, selfClosing: Boolean): Unit = js.native
-  def i18nFormatPlaceholderNames(params: js.UndefOr[scala.Nothing], useCamelCase: Boolean): StringDictionary[Expression] = js.native
-  def i18nFormatPlaceholderNames(params: StringDictionary[Expression], useCamelCase: Boolean): StringDictionary[Expression] = js.native
-  def i18nGenerateClosureVar(messageId: String): ReadVarExpr = js.native
-  def i18nStart(span: js.UndefOr[scala.Nothing], meta: AST): Unit = js.native
-  def i18nStart(span: js.UndefOr[scala.Nothing], meta: AST, selfClosing: Boolean): Unit = js.native
-  def i18nStart(span: Null, meta: AST): Unit = js.native
-  def i18nStart(span: Null, meta: AST, selfClosing: Boolean): Unit = js.native
-  def i18nStart(span: ParseSourceSpan, meta: AST): Unit = js.native
-  def i18nStart(span: ParseSourceSpan, meta: AST, selfClosing: Boolean): Unit = js.native
-  def i18nTranslate(message: Message): ReadVarExpr = js.native
-  def i18nTranslate(message: Message, params: StringDictionary[Expression]): ReadVarExpr = js.native
-  def i18nTranslate(message: Message, params: StringDictionary[Expression], ref: ReadVarExpr): ReadVarExpr = js.native
-  def i18nTranslate(
-    message: Message,
-    params: StringDictionary[Expression],
-    ref: ReadVarExpr,
-    transformFn: js.Function1[/* raw */ ReadVarExpr, Expression]
-  ): ReadVarExpr = js.native
-  def i18nUpdateRef(context: I18nContext): Unit = js.native
+  var getAttributeExpressions: js.Any = js.native
+  /**
+    * Gets an expression that refers to the implicit receiver. The implicit
+    * receiver is always the root level context.
+    */
+  var getImplicitReceiverExpr: js.Any = js.native
+  var getNamespaceInstruction: js.Any = js.native
+  /**
+    * Gets a list of argument expressions to pass to an update instruction expression. Also updates
+    * the temp variables state with temp variables that were identified as needing to be created
+    * while visiting the arguments.
+    * @param value The original expression we will be resolving an arguments list from.
+    */
+  var getUpdateInstructionArguments: js.Any = js.native
+  var i18n: js.Any = js.native
+  var i18nAppendBindings: js.Any = js.native
+  var i18nBindProps: js.Any = js.native
+  var i18nContext: js.Any = js.native
+  var i18nEnd: js.Any = js.native
+  var i18nGenerateClosureVar: js.Any = js.native
+  var i18nStart: js.Any = js.native
+  var i18nTranslate: js.Any = js.native
+  var i18nUpdateRef: js.Any = js.native
+  var i18nUseExternalIds: js.Any = js.native
+  var instructionFn: js.Any = js.native
   /**
     * Adds an update instruction for an interpolated property or attribute, such as
     * `prop="{{value}}"` or `attr.title="{{value}}"`
     */
-  def interpolatedUpdateInstruction(
-    instruction: ExternalReference,
-    elementIndex: Double,
-    attrName: String,
-    input: BoundAttribute,
-    value: js.Any,
-    params: js.Array[_]
-  ): Unit = js.native
+  var interpolatedUpdateInstruction: js.Any = js.native
+  var level: js.Any = js.native
+  var matchDirectives: js.Any = js.native
+  var pipeTypeByName: js.Any = js.native
+  var pipes: js.Any = js.native
+  var prepareListenerParameter: js.Any = js.native
+  var prepareRefsArray: js.Any = js.native
+  var processStylingUpdateInstruction: js.Any = js.native
+  var registerContextVariables: js.Any = js.native
+  var templateIndex: js.Any = js.native
+  var templateName: js.Any = js.native
+  var templatePropertyBindings: js.Any = js.native
+  var updateInstruction: js.Any = js.native
+  var updateInstructionChain: js.Any = js.native
+  var updateInstructionChainWithAdvance: js.Any = js.native
+  var updateInstructionWithAdvance: js.Any = js.native
+  def buildTemplateFunction(nodes: js.Array[Node], variables: js.Array[Variable]): FunctionExpr = js.native
+  def buildTemplateFunction(nodes: js.Array[Node], variables: js.Array[Variable], ngContentSelectorsOffset: Double): FunctionExpr = js.native
+  def buildTemplateFunction(
+    nodes: js.Array[Node],
+    variables: js.Array[Variable],
+    ngContentSelectorsOffset: Double,
+    i18n: I18nMeta
+  ): FunctionExpr = js.native
+  def getConstCount(): Double = js.native
+  def getConsts(): js.Array[Expression] = js.native
+  /* CompleteClass */
+  override def getLocal(name: String): Expression | Null = js.native
+  def getNgContentSelectors(): Expression | Null = js.native
+  def getVarCount(): Double = js.native
   /* CompleteClass */
   override def notifyImplicitReceiverUse(): Unit = js.native
-  def registerContextVariables(variable: Variable): Unit = js.native
   /* CompleteClass */
   override def visitBoundAttribute(attribute: BoundAttribute): Unit = js.native
   def visitBoundAttribute[T](arg: Expression): scala.Nothing = js.native

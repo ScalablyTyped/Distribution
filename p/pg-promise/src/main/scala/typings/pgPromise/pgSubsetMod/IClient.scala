@@ -10,8 +10,7 @@ import scala.scalajs.js.annotation._
 trait IClient extends EventEmitter {
   var activeQuery: IQuery = js.native
   var binary: Boolean = js.native
-  //////////////////////////////////////////////////////////////
-  // Properties below are not available within Native Bindings:
+  // PostgreSQL Server to which the client is connected
   var connection: IConnection = js.native
   var connectionParameters: IConnectionParameters[IClient] = js.native
   var database: String = js.native
@@ -23,6 +22,9 @@ trait IClient extends EventEmitter {
   var queryQueue: js.Array[IQuery] = js.native
   var readyForQuery: Boolean = js.native
   var secretKey: Double = js.native
+  //////////////////////////////////////////////////////////////
+  // Properties below are not available within Native Bindings:
+  val serverVersion: String = js.native
   var ssl: Boolean | ISSLConfig = js.native
   var user: String = js.native
   def query(config: js.Any): js.Promise[IResult] = js.native

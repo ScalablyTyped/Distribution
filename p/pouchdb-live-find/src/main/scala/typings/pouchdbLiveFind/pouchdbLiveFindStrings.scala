@@ -15,22 +15,19 @@ object pouchdbLiveFindStrings {
   sealed trait UPDATE extends js.Object
   
   @js.native
+  sealed trait asc extends js.Object
+  
+  @js.native
   sealed trait cancelled extends js.Object
+  
+  @js.native
+  sealed trait desc extends js.Object
   
   @js.native
   sealed trait error extends js.Object
   
   @js.native
-  sealed trait limit extends js.Object
-  
-  @js.native
   sealed trait ready extends js.Object
-  
-  @js.native
-  sealed trait skip extends js.Object
-  
-  @js.native
-  sealed trait sort extends js.Object
   
   @js.native
   sealed trait update_ extends js.Object
@@ -42,17 +39,15 @@ object pouchdbLiveFindStrings {
   @scala.inline
   def UPDATE: UPDATE = "UPDATE".asInstanceOf[UPDATE]
   @scala.inline
+  def asc: asc = "asc".asInstanceOf[asc]
+  @scala.inline
   def cancelled: cancelled = "cancelled".asInstanceOf[cancelled]
+  @scala.inline
+  def desc: desc = "desc".asInstanceOf[desc]
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   @scala.inline
-  def limit: limit = "limit".asInstanceOf[limit]
-  @scala.inline
   def ready: ready = "ready".asInstanceOf[ready]
-  @scala.inline
-  def skip: skip = "skip".asInstanceOf[skip]
-  @scala.inline
-  def sort: sort = "sort".asInstanceOf[sort]
   @scala.inline
   def update_ : update_ = "update".asInstanceOf[update_]
 }

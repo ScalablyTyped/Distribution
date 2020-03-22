@@ -11,18 +11,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait WithTooltipPureProps extends js.Object {
-  var children: ReactNode
-  var closeOnClick: js.UndefOr[Boolean] = js.undefined
-  var hasChrome: js.UndefOr[Boolean] = js.undefined
-  var modifiers: js.UndefOr[Modifiers] = js.undefined
-  var onDoubleClick: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onVisibilityChange: js.UndefOr[js.Function1[/* visibility */ Boolean, Unit]] = js.undefined
-  var placement: js.UndefOr[Placement] = js.undefined
-  var svg: js.UndefOr[Boolean] = js.undefined
-  var tooltip: ReactNode | (js.Function1[/* p */ WithHideFn, ReactNode])
-  var tooltipShown: js.UndefOr[Boolean] = js.undefined
-  var trigger: js.UndefOr[none | hover | click | `right-click`] = js.undefined
+  var children: ReactNode = js.native
+  var closeOnClick: js.UndefOr[Boolean] = js.native
+  var hasChrome: js.UndefOr[Boolean] = js.native
+  var modifiers: js.UndefOr[Modifiers] = js.native
+  var onDoubleClick: js.UndefOr[js.Function0[Unit]] = js.native
+  var onVisibilityChange: js.UndefOr[js.Function1[/* visibility */ Boolean, Unit]] = js.native
+  var placement: js.UndefOr[Placement] = js.native
+  var svg: js.UndefOr[Boolean] = js.native
+  var tooltip: ReactNode | (js.Function1[/* p */ WithHideFn, ReactNode]) = js.native
+  var tooltipShown: js.UndefOr[Boolean] = js.native
+  var trigger: js.UndefOr[none | hover | click | `right-click`] = js.native
 }
 
 object WithTooltipPureProps {

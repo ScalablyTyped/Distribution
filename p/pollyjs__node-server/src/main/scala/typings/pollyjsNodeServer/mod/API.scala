@@ -1,7 +1,6 @@
 package typings.pollyjsNodeServer.mod
 
-import typings.pollyjsNodeServer.pollyjsNodeServerStrings.recordingsDir
-import typings.std.Pick
+import typings.pollyjsNodeServer.PickConfigrecordingsDir
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pollyjs/node-server", "API")
 @js.native
 class API protected () extends js.Object {
-  def this(options: Pick[Config, recordingsDir]) = this()
+  def this(options: PickConfigrecordingsDir) = this()
   def deleteRecording(recording: String): APIResponse = js.native
   def filenameFor(recording: String): String = js.native
   def getRecordings(recording: String): APIResponse = js.native

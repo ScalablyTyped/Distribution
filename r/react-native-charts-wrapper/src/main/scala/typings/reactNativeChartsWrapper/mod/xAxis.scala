@@ -1,6 +1,6 @@
 package typings.reactNativeChartsWrapper.mod
 
-import typings.reactNativeChartsWrapper.AnonLEFTBOTTOM
+import typings.reactNativeChartsWrapper.AnonLabel
 import typings.reactNativeChartsWrapper.AnonLineLength
 import typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.BOTH_SIDED
 import typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.BOTTOM
@@ -48,7 +48,7 @@ object xAxis {
     labelCount: Int | Double = null,
     labelCountForce: js.UndefOr[Boolean] = js.undefined,
     labelRotationAngle: Int | Double = null,
-    limitLines: js.Array[AnonLEFTBOTTOM] = null,
+    limitLines: js.Array[AnonLabel] = null,
     position: TOP | BOTTOM | BOTH_SIDED | TOP_INSIDE | BOTTOM_INSIDE = null,
     since: Int | Double = null,
     textColor: Int | Double = null,

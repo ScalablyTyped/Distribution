@@ -1,6 +1,6 @@
 package typings.lyricist.mod
 
-import typings.lyricist.AnonExcludedpermissionsInteractions
+import typings.lyricist.AnonInteractions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ trait Annotation extends js.Object {
   var comment_count: Double
   var community: Boolean
   var cosigned_by: js.Array[_]
-  var current_user_metadata: AnonExcludedpermissionsInteractions
+  var current_user_metadata: AnonInteractions
   var custom_preview: js.UndefOr[js.Any] = js.undefined
   var has_voters: Boolean
   var id: Double
@@ -36,7 +36,7 @@ object Annotation {
     comment_count: Double,
     community: Boolean,
     cosigned_by: js.Array[_],
-    current_user_metadata: AnonExcludedpermissionsInteractions,
+    current_user_metadata: AnonInteractions,
     has_voters: Boolean,
     id: Double,
     pinned: Boolean,

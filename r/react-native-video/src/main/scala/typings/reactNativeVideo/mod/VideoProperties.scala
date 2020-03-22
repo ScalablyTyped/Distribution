@@ -24,11 +24,11 @@ import typings.reactNative.reactNativeStrings.polite
 import typings.reactNative.reactNativeStrings.radiobutton_checked
 import typings.reactNative.reactNativeStrings.radiobutton_unchecked
 import typings.reactNative.reactNativeStrings.yes
-import typings.reactNativeVideo.AnonApplicationttmlxml
-import typings.reactNativeVideo.AnonAuto
 import typings.reactNativeVideo.AnonBufferForPlaybackAfterRebufferMs
-import typings.reactNativeVideo.AnonDisabled
+import typings.reactNativeVideo.AnonLanguage
+import typings.reactNativeVideo.AnonType
 import typings.reactNativeVideo.AnonUri
+import typings.reactNativeVideo.AnonValue
 import typings.reactNativeVideo.reactNativeVideoStrings.all
 import typings.reactNativeVideo.reactNativeVideoStrings.contain
 import typings.reactNativeVideo.reactNativeVideoStrings.cover
@@ -111,16 +111,16 @@ trait VideoProperties extends ViewProps {
   var scaleX: js.UndefOr[Double] = js.undefined
   var scaleY: js.UndefOr[Double] = js.undefined
   var seek: js.UndefOr[Double] = js.undefined
-  var selectedAudioTrack: js.UndefOr[AnonDisabled] = js.undefined
-  var selectedTextTrack: js.UndefOr[AnonDisabled] = js.undefined
-  var selectedVideoTrack: js.UndefOr[AnonAuto] = js.undefined
+  var selectedAudioTrack: js.UndefOr[AnonType] = js.undefined
+  var selectedTextTrack: js.UndefOr[AnonType] = js.undefined
+  var selectedVideoTrack: js.UndefOr[AnonValue] = js.undefined
   /* Wrapper component */
   // Opaque type returned by require('./video.mp4')
   var source: AnonUri | Double
   /* Native only */
   var src: js.UndefOr[js.Any] = js.undefined
   var stereoPan: js.UndefOr[Double] = js.undefined
-  var textTracks: js.UndefOr[js.Array[AnonApplicationttmlxml]] = js.undefined
+  var textTracks: js.UndefOr[js.Array[AnonLanguage]] = js.undefined
   var translateX: js.UndefOr[Double] = js.undefined
   var translateY: js.UndefOr[Double] = js.undefined
   var useTextureView: js.UndefOr[Boolean] = js.undefined
@@ -240,15 +240,15 @@ object VideoProperties {
     scaleX: Int | Double = null,
     scaleY: Int | Double = null,
     seek: Int | Double = null,
-    selectedAudioTrack: AnonDisabled = null,
-    selectedTextTrack: AnonDisabled = null,
-    selectedVideoTrack: AnonAuto = null,
+    selectedAudioTrack: AnonType = null,
+    selectedTextTrack: AnonType = null,
+    selectedVideoTrack: AnonValue = null,
     shouldRasterizeIOS: js.UndefOr[Boolean] = js.undefined,
     src: js.Any = null,
     stereoPan: Int | Double = null,
     style: StyleProp[ViewStyle] = null,
     testID: String = null,
-    textTracks: js.Array[AnonApplicationttmlxml] = null,
+    textTracks: js.Array[AnonLanguage] = null,
     translateX: Int | Double = null,
     translateY: Int | Double = null,
     tvParallaxMagnification: Int | Double = null,

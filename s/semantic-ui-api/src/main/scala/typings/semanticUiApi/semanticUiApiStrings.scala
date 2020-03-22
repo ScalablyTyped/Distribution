@@ -6,9 +6,6 @@ import scala.scalajs.js.annotation._
 
 object semanticUiApiStrings {
   @js.native
-  sealed trait JSONParse extends js.Object
-  
-  @js.native
   sealed trait abort extends js.Object
   
   @js.native
@@ -57,9 +54,6 @@ object semanticUiApiStrings {
   sealed trait destroy extends js.Object
   
   @js.native
-  sealed trait disabled extends js.Object
-  
-  @js.native
   sealed trait encodeParameters extends js.Object
   
   @js.native
@@ -67,12 +61,6 @@ object semanticUiApiStrings {
   
   @js.native
   sealed trait errorDuration extends js.Object
-  
-  @js.native
-  sealed trait exitConditions extends js.Object
-  
-  @js.native
-  sealed trait form extends js.Object
   
   @js.native
   sealed trait get extends js.Object
@@ -114,12 +102,6 @@ object semanticUiApiStrings {
   sealed trait jsonp extends js.Object
   
   @js.native
-  sealed trait legacyParameters extends js.Object
-  
-  @js.native
-  sealed trait loading extends js.Object
-  
-  @js.native
   sealed trait loadingDuration extends js.Object
   
   @js.native
@@ -132,15 +114,6 @@ object semanticUiApiStrings {
   sealed trait method extends js.Object
   
   @js.native
-  sealed trait missingAction extends js.Object
-  
-  @js.native
-  sealed trait missingSerialize extends js.Object
-  
-  @js.native
-  sealed trait missingURL extends js.Object
-  
-  @js.native
   sealed trait mockResponse extends js.Object
   
   @js.native
@@ -151,9 +124,6 @@ object semanticUiApiStrings {
   
   @js.native
   sealed trait namespace extends js.Object
-  
-  @js.native
-  sealed trait noReturnedValue extends js.Object
   
   @js.native
   sealed trait on extends js.Object
@@ -180,13 +150,7 @@ object semanticUiApiStrings {
   sealed trait onSuccess extends js.Object
   
   @js.native
-  sealed trait optional extends js.Object
-  
-  @js.native
   sealed trait options extends js.Object
-  
-  @js.native
-  sealed trait parseError extends js.Object
   
   @js.native
   sealed trait patch extends js.Object
@@ -214,12 +178,6 @@ object semanticUiApiStrings {
   
   @js.native
   sealed trait `remove loading` extends js.Object
-  
-  @js.native
-  sealed trait required extends js.Object
-  
-  @js.native
-  sealed trait requiredParameter extends js.Object
   
   @js.native
   sealed trait reset extends js.Object
@@ -255,9 +213,6 @@ object semanticUiApiStrings {
   sealed trait stateContext extends js.Object
   
   @js.native
-  sealed trait statusMessage extends js.Object
-  
-  @js.native
   sealed trait successTest extends js.Object
   
   @js.native
@@ -268,9 +223,6 @@ object semanticUiApiStrings {
   
   @js.native
   sealed trait throttleFirstRequest extends js.Object
-  
-  @js.native
-  sealed trait timeout extends js.Object
   
   @js.native
   sealed trait url extends js.Object
@@ -299,8 +251,6 @@ object semanticUiApiStrings {
   @js.native
   sealed trait xml extends js.Object
   
-  @scala.inline
-  def JSONParse: JSONParse = "JSONParse".asInstanceOf[JSONParse]
   @scala.inline
   def abort: abort = "abort".asInstanceOf[abort]
   @scala.inline
@@ -334,17 +284,11 @@ object semanticUiApiStrings {
   @scala.inline
   def destroy: destroy = "destroy".asInstanceOf[destroy]
   @scala.inline
-  def disabled: disabled = "disabled".asInstanceOf[disabled]
-  @scala.inline
   def encodeParameters: encodeParameters = "encodeParameters".asInstanceOf[encodeParameters]
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   @scala.inline
   def errorDuration: errorDuration = "errorDuration".asInstanceOf[errorDuration]
-  @scala.inline
-  def exitConditions: exitConditions = "exitConditions".asInstanceOf[exitConditions]
-  @scala.inline
-  def form: form = "form".asInstanceOf[form]
   @scala.inline
   def get: get = "get".asInstanceOf[get]
   @scala.inline
@@ -372,10 +316,6 @@ object semanticUiApiStrings {
   @scala.inline
   def jsonp: jsonp = "jsonp".asInstanceOf[jsonp]
   @scala.inline
-  def legacyParameters: legacyParameters = "legacyParameters".asInstanceOf[legacyParameters]
-  @scala.inline
-  def loading: loading = "loading".asInstanceOf[loading]
-  @scala.inline
   def loadingDuration: loadingDuration = "loadingDuration".asInstanceOf[loadingDuration]
   @scala.inline
   def local: local = "local".asInstanceOf[local]
@@ -384,12 +324,6 @@ object semanticUiApiStrings {
   @scala.inline
   def method: method = "method".asInstanceOf[method]
   @scala.inline
-  def missingAction: missingAction = "missingAction".asInstanceOf[missingAction]
-  @scala.inline
-  def missingSerialize: missingSerialize = "missingSerialize".asInstanceOf[missingSerialize]
-  @scala.inline
-  def missingURL: missingURL = "missingURL".asInstanceOf[missingURL]
-  @scala.inline
   def mockResponse: mockResponse = "mockResponse".asInstanceOf[mockResponse]
   @scala.inline
   def mockResponseAsync: mockResponseAsync = "mockResponseAsync".asInstanceOf[mockResponseAsync]
@@ -397,8 +331,6 @@ object semanticUiApiStrings {
   def name: name = "name".asInstanceOf[name]
   @scala.inline
   def namespace: namespace = "namespace".asInstanceOf[namespace]
-  @scala.inline
-  def noReturnedValue: noReturnedValue = "noReturnedValue".asInstanceOf[noReturnedValue]
   @scala.inline
   def on: on = "on".asInstanceOf[on]
   @scala.inline
@@ -416,11 +348,7 @@ object semanticUiApiStrings {
   @scala.inline
   def onSuccess: onSuccess = "onSuccess".asInstanceOf[onSuccess]
   @scala.inline
-  def optional: optional = "optional".asInstanceOf[optional]
-  @scala.inline
   def options: options = "options".asInstanceOf[options]
-  @scala.inline
-  def parseError: parseError = "parseError".asInstanceOf[parseError]
   @scala.inline
   def patch: patch = "patch".asInstanceOf[patch]
   @scala.inline
@@ -439,10 +367,6 @@ object semanticUiApiStrings {
   def `remove error`: `remove error` = "remove error".asInstanceOf[`remove error`]
   @scala.inline
   def `remove loading`: `remove loading` = "remove loading".asInstanceOf[`remove loading`]
-  @scala.inline
-  def required: required = "required".asInstanceOf[required]
-  @scala.inline
-  def requiredParameter: requiredParameter = "requiredParameter".asInstanceOf[requiredParameter]
   @scala.inline
   def reset: reset = "reset".asInstanceOf[reset]
   @scala.inline
@@ -466,8 +390,6 @@ object semanticUiApiStrings {
   @scala.inline
   def stateContext: stateContext = "stateContext".asInstanceOf[stateContext]
   @scala.inline
-  def statusMessage: statusMessage = "statusMessage".asInstanceOf[statusMessage]
-  @scala.inline
   def successTest: successTest = "successTest".asInstanceOf[successTest]
   @scala.inline
   def text: text = "text".asInstanceOf[text]
@@ -475,8 +397,6 @@ object semanticUiApiStrings {
   def throttle: throttle = "throttle".asInstanceOf[throttle]
   @scala.inline
   def throttleFirstRequest: throttleFirstRequest = "throttleFirstRequest".asInstanceOf[throttleFirstRequest]
-  @scala.inline
-  def timeout: timeout = "timeout".asInstanceOf[timeout]
   @scala.inline
   def url: url = "url".asInstanceOf[url]
   @scala.inline

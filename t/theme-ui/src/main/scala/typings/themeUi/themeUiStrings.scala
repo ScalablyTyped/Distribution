@@ -7,15 +7,6 @@ import scala.scalajs.js.annotation._
 
 object themeUiStrings {
   @js.native
-  sealed trait Styled extends js.Object
-  
-  @js.native
-  sealed trait Theme extends js.Object
-  
-  @js.native
-  sealed trait ThemeUIContext extends js.Object
-  
-  @js.native
   sealed trait a extends StyledTags
   
   @js.native
@@ -537,12 +528,6 @@ object themeUiStrings {
   @js.native
   sealed trait webview extends js.Object
   
-  @scala.inline
-  def Styled: Styled = "Styled".asInstanceOf[Styled]
-  @scala.inline
-  def Theme: Theme = "Theme".asInstanceOf[Theme]
-  @scala.inline
-  def ThemeUIContext: ThemeUIContext = "ThemeUIContext".asInstanceOf[ThemeUIContext]
   @scala.inline
   def a: a = "a".asInstanceOf[a]
   @scala.inline

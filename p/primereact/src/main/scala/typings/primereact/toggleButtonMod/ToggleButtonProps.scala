@@ -1,6 +1,6 @@
 package typings.primereact.toggleButtonMod
 
-import typings.primereact.AnonOriginalEventValueBoolean
+import typings.primereact.AnonValueBoolean
 import typings.primereact.tooltipOptionsMod.TooltipOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,7 +13,7 @@ trait ToggleButtonProps extends js.Object {
   var id: js.UndefOr[String] = js.undefined
   var offIcon: js.UndefOr[String] = js.undefined
   var offLabel: js.UndefOr[String] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* e */ AnonOriginalEventValueBoolean, Unit]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* e */ AnonValueBoolean, Unit]] = js.undefined
   var onIcon: js.UndefOr[String] = js.undefined
   var onLabel: js.UndefOr[String] = js.undefined
   var style: js.UndefOr[js.Object] = js.undefined
@@ -31,7 +31,7 @@ object ToggleButtonProps {
     id: String = null,
     offIcon: String = null,
     offLabel: String = null,
-    onChange: /* e */ AnonOriginalEventValueBoolean => Unit = null,
+    onChange: /* e */ AnonValueBoolean => Unit = null,
     onIcon: String = null,
     onLabel: String = null,
     style: js.Object = null,

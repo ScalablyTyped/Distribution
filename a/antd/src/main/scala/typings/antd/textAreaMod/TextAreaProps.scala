@@ -1,5 +1,6 @@
 package typings.antd.textAreaMod
 
+import typings.antd.AnonHeight
 import typings.antd.resizableTextAreaMod.AutoSizeType
 import typings.react.AnonHtml
 import typings.react.mod.AnimationEvent
@@ -77,8 +78,8 @@ import scala.scalajs.js.annotation._
 trait TextAreaProps extends TextareaHTMLAttributes[HTMLTextAreaElement] {
   var allowClear: js.UndefOr[Boolean] = js.undefined
   var autoSize: js.UndefOr[Boolean | AutoSizeType] = js.undefined
-  var autosize: js.UndefOr[Boolean | AutoSizeType] = js.undefined
   var onPressEnter: js.UndefOr[KeyboardEventHandler[HTMLTextAreaElement]] = js.undefined
+  var onResize: js.UndefOr[js.Function1[/* size */ AnonHeight, Unit]] = js.undefined
   var prefixCls: js.UndefOr[String] = js.undefined
 }
 
@@ -142,7 +143,6 @@ object TextAreaProps {
     autoFocus: js.UndefOr[Boolean] = js.undefined,
     autoSave: String = null,
     autoSize: Boolean | AutoSizeType = null,
-    autosize: Boolean | AutoSizeType = null,
     children: ReactNode = null,
     className: String = null,
     color: String = null,
@@ -236,6 +236,7 @@ object TextAreaProps {
     onProgress: SyntheticEvent[HTMLTextAreaElement, Event_] => Unit = null,
     onRateChange: SyntheticEvent[HTMLTextAreaElement, Event_] => Unit = null,
     onReset: FormEvent[HTMLTextAreaElement] => Unit = null,
+    onResize: /* size */ AnonHeight => Unit = null,
     onScroll: UIEvent[HTMLTextAreaElement] => Unit = null,
     onSeeked: SyntheticEvent[HTMLTextAreaElement, Event_] => Unit = null,
     onSeeking: SyntheticEvent[HTMLTextAreaElement, Event_] => Unit = null,
@@ -336,7 +337,6 @@ object TextAreaProps {
     if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.asInstanceOf[js.Any])
     if (autoSave != null) __obj.updateDynamic("autoSave")(autoSave.asInstanceOf[js.Any])
     if (autoSize != null) __obj.updateDynamic("autoSize")(autoSize.asInstanceOf[js.Any])
-    if (autosize != null) __obj.updateDynamic("autosize")(autosize.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
@@ -430,6 +430,7 @@ object TextAreaProps {
     if (onProgress != null) __obj.updateDynamic("onProgress")(js.Any.fromFunction1(onProgress))
     if (onRateChange != null) __obj.updateDynamic("onRateChange")(js.Any.fromFunction1(onRateChange))
     if (onReset != null) __obj.updateDynamic("onReset")(js.Any.fromFunction1(onReset))
+    if (onResize != null) __obj.updateDynamic("onResize")(js.Any.fromFunction1(onResize))
     if (onScroll != null) __obj.updateDynamic("onScroll")(js.Any.fromFunction1(onScroll))
     if (onSeeked != null) __obj.updateDynamic("onSeeked")(js.Any.fromFunction1(onSeeked))
     if (onSeeking != null) __obj.updateDynamic("onSeeking")(js.Any.fromFunction1(onSeeking))

@@ -13,12 +13,12 @@ trait CreateKeyPairRequest extends js.Object {
   /**
     * A unique name for the key pair. Constraints: Up to 255 ASCII characters
     */
-  var KeyName: KeyPairName = js.native
+  var KeyName: String = js.native
 }
 
 object CreateKeyPairRequest {
   @scala.inline
-  def apply(KeyName: KeyPairName, DryRun: js.UndefOr[scala.Boolean] = js.undefined): CreateKeyPairRequest = {
+  def apply(KeyName: String, DryRun: js.UndefOr[scala.Boolean] = js.undefined): CreateKeyPairRequest = {
     val __obj = js.Dynamic.literal(KeyName = KeyName.asInstanceOf[js.Any])
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateKeyPairRequest]

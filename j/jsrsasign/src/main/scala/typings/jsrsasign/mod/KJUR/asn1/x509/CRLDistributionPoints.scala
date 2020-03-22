@@ -1,6 +1,6 @@
 package typings.jsrsasign.mod.KJUR.asn1.x509
 
-import typings.jsrsasign.AnonArrayUri
+import typings.jsrsasign.AnonUri
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,6 +39,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class CRLDistributionPoints ()
   extends typings.jsrsasign.jsrsasign.KJUR.asn1.x509.CRLDistributionPoints {
-  def this(params: AnonArrayUri) = this()
+  def this(params: AnonUri) = this()
 }
 

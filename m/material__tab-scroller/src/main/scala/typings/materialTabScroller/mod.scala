@@ -3,7 +3,6 @@ package typings.materialTabScroller
 import typings.materialTabScroller.adapterMod.MDCTabScrollerAdapter
 import typings.std.Document_
 import typings.std.Element
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +17,7 @@ object mod extends js.Object {
   @js.native
   class MDCTabScrollerFoundation ()
     extends typings.materialTabScroller.foundationMod.MDCTabScrollerFoundation {
-    def this(adapter: Partial[MDCTabScrollerAdapter]) = this()
+    def this(adapter: PartialMDCTabScrollerAdap) = this()
   }
   
   /* static members */

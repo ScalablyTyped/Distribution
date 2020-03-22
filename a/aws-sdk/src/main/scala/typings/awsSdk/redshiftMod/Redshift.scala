@@ -1,6 +1,7 @@
 package typings.awsSdk.redshiftMod
 
-import typings.awsSdk.AnonWaiter
+import typings.awsSdk.DescribeClusterSnapshotsM
+import typings.awsSdk.DescribeClustersMessagewa
 import typings.awsSdk.awsSdkStrings.clusterAvailable
 import typings.awsSdk.awsSdkStrings.clusterDeleted
 import typings.awsSdk.awsSdkStrings.clusterRestored
@@ -1151,11 +1152,11 @@ trait Redshift extends Service {
     * Waits for the clusterAvailable state by periodically calling the underlying Redshift.describeClustersoperation every 60 seconds (at most 30 times).
     */
   @JSName("waitFor")
-  def waitFor_clusterAvailable(state: clusterAvailable, params: DescribeClustersMessage with AnonWaiter): Request[ClustersMessage, AWSError] = js.native
+  def waitFor_clusterAvailable(state: clusterAvailable, params: DescribeClustersMessagewa): Request[ClustersMessage, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_clusterAvailable(
     state: clusterAvailable,
-    params: DescribeClustersMessage with AnonWaiter,
+    params: DescribeClustersMessagewa,
     callback: js.Function2[/* err */ AWSError, /* data */ ClustersMessage, Unit]
   ): Request[ClustersMessage, AWSError] = js.native
   /**
@@ -1172,11 +1173,11 @@ trait Redshift extends Service {
     * Waits for the clusterDeleted state by periodically calling the underlying Redshift.describeClustersoperation every 60 seconds (at most 30 times).
     */
   @JSName("waitFor")
-  def waitFor_clusterDeleted(state: clusterDeleted, params: DescribeClustersMessage with AnonWaiter): Request[ClustersMessage, AWSError] = js.native
+  def waitFor_clusterDeleted(state: clusterDeleted, params: DescribeClustersMessagewa): Request[ClustersMessage, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_clusterDeleted(
     state: clusterDeleted,
-    params: DescribeClustersMessage with AnonWaiter,
+    params: DescribeClustersMessagewa,
     callback: js.Function2[/* err */ AWSError, /* data */ ClustersMessage, Unit]
   ): Request[ClustersMessage, AWSError] = js.native
   /**
@@ -1193,11 +1194,11 @@ trait Redshift extends Service {
     * Waits for the clusterRestored state by periodically calling the underlying Redshift.describeClustersoperation every 60 seconds (at most 30 times).
     */
   @JSName("waitFor")
-  def waitFor_clusterRestored(state: clusterRestored, params: DescribeClustersMessage with AnonWaiter): Request[ClustersMessage, AWSError] = js.native
+  def waitFor_clusterRestored(state: clusterRestored, params: DescribeClustersMessagewa): Request[ClustersMessage, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_clusterRestored(
     state: clusterRestored,
-    params: DescribeClustersMessage with AnonWaiter,
+    params: DescribeClustersMessagewa,
     callback: js.Function2[/* err */ AWSError, /* data */ ClustersMessage, Unit]
   ): Request[ClustersMessage, AWSError] = js.native
   /**
@@ -1214,11 +1215,11 @@ trait Redshift extends Service {
     * Waits for the snapshotAvailable state by periodically calling the underlying Redshift.describeClusterSnapshotsoperation every 15 seconds (at most 20 times).
     */
   @JSName("waitFor")
-  def waitFor_snapshotAvailable(state: snapshotAvailable, params: DescribeClusterSnapshotsMessage with AnonWaiter): Request[SnapshotMessage, AWSError] = js.native
+  def waitFor_snapshotAvailable(state: snapshotAvailable, params: DescribeClusterSnapshotsM): Request[SnapshotMessage, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_snapshotAvailable(
     state: snapshotAvailable,
-    params: DescribeClusterSnapshotsMessage with AnonWaiter,
+    params: DescribeClusterSnapshotsM,
     callback: js.Function2[/* err */ AWSError, /* data */ SnapshotMessage, Unit]
   ): Request[SnapshotMessage, AWSError] = js.native
 }

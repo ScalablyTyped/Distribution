@@ -1,6 +1,6 @@
 package typings.reactSketchapp.typesMod
 
-import typings.reactSketchapp.AnonHeightWidth
+import typings.reactSketchapp.AnonWidth
 import typings.reactSketchapp.reactSketchappStrings.`column-reverse`
 import typings.reactSketchapp.reactSketchappStrings.`flex-end`
 import typings.reactSketchapp.reactSketchappStrings.`flex-start`
@@ -85,7 +85,7 @@ trait ViewStyle extends js.Object {
   var right: js.UndefOr[Double] = js.undefined
   var shadowColor: js.UndefOr[Color] = js.undefined
   var shadowInner: js.UndefOr[Boolean] = js.undefined
-  var shadowOffset: js.UndefOr[AnonHeightWidth] = js.undefined
+  var shadowOffset: js.UndefOr[AnonWidth] = js.undefined
   var shadowOpacity: js.UndefOr[Double] = js.undefined
   var shadowRadius: js.UndefOr[Double] = js.undefined
   var shadowSpread: js.UndefOr[Double] = js.undefined
@@ -161,7 +161,7 @@ object ViewStyle {
     right: Int | Double = null,
     shadowColor: Color = null,
     shadowInner: js.UndefOr[Boolean] = js.undefined,
-    shadowOffset: AnonHeightWidth = null,
+    shadowOffset: AnonWidth = null,
     shadowOpacity: Int | Double = null,
     shadowRadius: Int | Double = null,
     shadowSpread: Int | Double = null,

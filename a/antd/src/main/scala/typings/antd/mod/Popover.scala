@@ -1,6 +1,6 @@
 package typings.antd.mod
 
-import typings.antd.AnonMouseEnterDelay
+import typings.antd.AnonMouseLeaveDelay
 import typings.antd.popoverMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,6 +14,6 @@ class Popover () extends default
 @JSImport("antd", "Popover")
 @js.native
 object Popover extends js.Object {
-  var defaultProps: AnonMouseEnterDelay = js.native
+  var defaultProps: AnonMouseLeaveDelay = js.native
 }
 

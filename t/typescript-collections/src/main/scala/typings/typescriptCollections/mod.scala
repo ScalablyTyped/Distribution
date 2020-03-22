@@ -254,7 +254,7 @@ object mod extends js.Object {
     *
     * <pre>
     * function petToString(pet) {
-    *  return pet.name;
+    *     return pet.name;
     * }
     * </pre>
     * <p>If the values are custom objects a function to check equality between values
@@ -262,7 +262,7 @@ object mod extends js.Object {
     *
     * <pre>
     * function petsAreEqualByAge(pet1,pet2) {
-    *  return pet1.age===pet2.age;
+    *     return pet1.age === pet2.age;
     * }
     * </pre>
     * @constructor

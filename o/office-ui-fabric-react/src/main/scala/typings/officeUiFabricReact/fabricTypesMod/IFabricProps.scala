@@ -10,6 +10,7 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.ClipboardEvent
 import typings.react.mod.CompositionEvent
 import typings.react.mod.DragEvent
+import typings.react.mod.ElementType
 import typings.react.mod.FocusEvent
 import typings.react.mod.FormEvent
 import typings.react.mod.HTMLAttributes
@@ -18,7 +19,6 @@ import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.ReactNode
-import typings.react.mod.ReactType
 import typings.react.mod.SyntheticEvent
 import typings.react.mod.TouchEvent
 import typings.react.mod.TransitionEvent
@@ -90,7 +90,7 @@ trait IFabricProps extends HTMLAttributes[HTMLDivElement] {
   /**
     * Overrides the root element type, defaults to `div`.
     */
-  var as: js.UndefOr[ReactType[_]] = js.undefined
+  var as: js.UndefOr[ElementType[_]] = js.undefined
   var componentRef: js.UndefOr[IRefObject[js.Object]] = js.undefined
   /**
     * Specifies the direction of the content. Will inject a `dir` attribute, and also ensure that the `rtl` flag of the
@@ -163,7 +163,7 @@ object IFabricProps {
     `aria-valuemin`: Int | Double = null,
     `aria-valuenow`: Int | Double = null,
     `aria-valuetext`: String = null,
-    as: ReactType[_] = null,
+    as: ElementType[_] = null,
     autoCapitalize: String = null,
     autoCorrect: String = null,
     autoSave: String = null,

@@ -204,7 +204,7 @@ class File protected () extends ServiceObject[File] {
     *
     * //-
     * // To limit the downloaded data to only a byte range, pass an options
-    * object.
+    * // object.
     * //-
     * const logFile = myBucket.file('access_log');
     * logFile.createReadStream({
@@ -234,8 +234,8 @@ class File protected () extends ServiceObject[File] {
   /**
     * @typedef {object} CreateWriteStreamOptions Configuration options for File#createWriteStream().
     * @property {string} [configPath] **This only applies to resumable
-    *     uploads.** Where the `gcs-resumable-upload` configuration file should
-    * be stored on your system. This maps to the [configstore option by the same
+    *     uploads.** A full JSON file path to use with `gcs-resumable-upload`.
+    *     This maps to the [configstore option by the same
     * name](https://github.com/yeoman/configstore/tree/0df1ec950d952b1f0dfb39ce22af8e505dffc71a#configpath).
     * @property {string} [contentType] Alias for
     *     `options.metadata.contentType`. If set to `auto`, the file name is used
@@ -288,6 +288,8 @@ class File protected () extends ServiceObject[File] {
     *     supported for composite objects. An error will be raised if MD5 is
     *     specified but is not available. You may also choose to skip validation
     *     completely, however this is **not recommended**.
+    *     NOTE: Validation is automatically skipped for objects that were
+    *     uploaded using the `gzip` option and have already compressed content.
     */
   /**
     * Create a writable stream to overwrite the contents of the file in your

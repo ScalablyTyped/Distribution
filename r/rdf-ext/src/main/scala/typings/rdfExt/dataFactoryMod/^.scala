@@ -1,7 +1,7 @@
 package typings.rdfExt.dataFactoryMod
 
 import typings.rdfExt.AnonBlankNode
-import typings.rdfExt.TypeofClassDataFactoryExt
+import typings.rdfExt.TypeofDataFactoryExt
 import typings.rdfExt.blankNodeMod.BlankNodeExt
 import typings.rdfExt.datasetMod.DatasetExt
 import typings.rdfExt.defaultGraphMod.DefaultGraphExt
@@ -29,7 +29,7 @@ class ^ () extends DataFactoryExt
 @js.native
 object ^ extends js.Object {
   var defaults: AnonBlankNode = js.native
-  var factory: TypeofClassDataFactoryExt = js.native
+  var factory: TypeofDataFactoryExt = js.native
   def blankNode(): BlankNodeExt = js.native
   def blankNode(value: String): BlankNodeExt = js.native
   def dataset(): DatasetExt = js.native

@@ -13,6 +13,8 @@ object boxHelperMod extends js.Object {
   @js.native
   class BoxHelper protected () extends LineSegments {
     def this(`object`: Object3D) = this()
+    def this(`object`: Object3D, color: String) = this()
+    def this(`object`: Object3D, color: Double) = this()
     def this(`object`: Object3D, color: Color) = this()
     def setFromObject(`object`: Object3D): this.type = js.native
     def update(): Unit = js.native

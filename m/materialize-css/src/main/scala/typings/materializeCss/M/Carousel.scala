@@ -1,8 +1,8 @@
 package typings.materializeCss.M
 
 import typings.materializeCss.MElements
+import typings.materializeCss.PartialCarouselOptions
 import typings.std.Element
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -54,11 +54,11 @@ object Carousel extends js.Object {
     * Init carousels
     */
   def init(els: MElements): js.Array[Carousel] = js.native
-  def init(els: MElements, options: Partial[CarouselOptions]): js.Array[Carousel] = js.native
+  def init(els: MElements, options: PartialCarouselOptions): js.Array[Carousel] = js.native
   /**
     * Init carousel
     */
   def init(els: Element): Carousel = js.native
-  def init(els: Element, options: Partial[CarouselOptions]): Carousel = js.native
+  def init(els: Element, options: PartialCarouselOptions): Carousel = js.native
 }
 

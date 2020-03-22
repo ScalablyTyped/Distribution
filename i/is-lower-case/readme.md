@@ -1,7 +1,7 @@
 
 # Scala.js typings for is-lower-case
 
-Typings are for version 1.1.3
+Typings are for version 2.0.1
 
 ## Library description:
 Returns `true` if the string is lower case only

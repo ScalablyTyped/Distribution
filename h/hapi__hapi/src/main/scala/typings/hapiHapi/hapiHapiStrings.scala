@@ -22,9 +22,6 @@ object hapiHapiStrings {
   sealed trait Asterisk extends js.Object
   
   @js.native
-  sealed trait CommonRouteProperties extends js.Object
-  
-  @js.native
   sealed trait DELETE
     extends HTTP_METHODS
        with HTTP_METHODS_PARTIAL
@@ -332,8 +329,6 @@ object hapiHapiStrings {
   
   @scala.inline
   def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
-  @scala.inline
-  def CommonRouteProperties: CommonRouteProperties = "CommonRouteProperties".asInstanceOf[CommonRouteProperties]
   @scala.inline
   def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
   @scala.inline

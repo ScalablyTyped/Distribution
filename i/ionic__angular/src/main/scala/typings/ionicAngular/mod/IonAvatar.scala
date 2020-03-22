@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/angular", "IonAvatar")
 @js.native
 class IonAvatar protected ()
-  extends typings.ionicAngular.distMod.IonAvatar {
+  extends typings.ionicAngular.proxiesMod.IonAvatar {
   def this(c: ChangeDetectorRef, r: ElementRef[_], z: NgZone) = this()
 }
 

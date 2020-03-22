@@ -13,7 +13,6 @@ import scala.scalajs.js.annotation._
 object uploadUtilsMod extends js.Object {
   def T(): Boolean = js.native
   def fileToObject(file: RcFile): UploadFile[_] = js.native
-  def genPercentAdd(): js.Function1[/* s */ Double, Double] = js.native
   def getFileItem(file: UploadFile[_], fileList: js.Array[UploadFile[_]]): UploadFile[_] = js.native
   def isImageUrl(file: UploadFile[_]): Boolean = js.native
   def previewImage(file: Blob): js.Promise[String] = js.native

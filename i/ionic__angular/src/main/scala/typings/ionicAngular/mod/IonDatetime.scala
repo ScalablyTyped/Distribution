@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/angular", "IonDatetime")
 @js.native
 class IonDatetime protected ()
-  extends typings.ionicAngular.distMod.IonDatetime {
+  extends typings.ionicAngular.proxiesMod.IonDatetime {
   def this(c: ChangeDetectorRef, r: ElementRef[_], z: NgZone) = this()
 }
 

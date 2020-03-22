@@ -11,7 +11,7 @@ trait AwsSecurityFinding extends js.Object {
     */
   var AwsAccountId: NonEmptyString = js.native
   /**
-    * This data type is exclusive to findings that are generated as the result of a check run against a specific rule in a supported standard, such as CIS AWS Foundations. Contains compliance-related finding details.
+    * This data type is exclusive to findings that are generated as the result of a check run against a specific rule in a supported security standard, such as CIS AWS Foundations. Contains security standard-related finding details.
     */
   var Compliance: js.UndefOr[typings.awsSdk.securityhubMod.Compliance] = js.native
   /**

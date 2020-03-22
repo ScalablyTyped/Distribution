@@ -1,9 +1,7 @@
 package typings.fundamentalReact.mod
 
-import typings.fundamentalReact.AnonDisplayName
-import typings.fundamentalReact.inputGroupMod.InputGroupAddonProps
+import typings.fundamentalReact.FunctionComponentInputGro
 import typings.fundamentalReact.inputGroupMod.default
-import typings.react.mod.FunctionComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +14,7 @@ class InputGroup () extends default
 @JSImport("fundamental-react", "InputGroup")
 @js.native
 object InputGroup extends js.Object {
-  var Addon: FunctionComponent[InputGroupAddonProps] with AnonDisplayName = js.native
+  var Addon: FunctionComponentInputGro = js.native
   var displayName: typings.fundamentalReact.fundamentalReactStrings.InputGroup = js.native
 }
 

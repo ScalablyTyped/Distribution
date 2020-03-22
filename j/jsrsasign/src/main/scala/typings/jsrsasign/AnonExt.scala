@@ -1,7 +1,5 @@
 package typings.jsrsasign
 
-import typings.jsrsasign.jsrsasign.KJUR.asn1.StringParam
-import typings.jsrsasign.jsrsasign.KJUR.asn1.x509.X500NameParam
 import typings.jsrsasign.jsrsasign.KJUR.crypto.DSA
 import typings.jsrsasign.jsrsasign.KJUR.crypto.ECDSA
 import typings.jsrsasign.jsrsasign.KJUR.jws.JWS.JsonWebKey
@@ -15,7 +13,7 @@ trait AnonExt extends js.Object {
   var sbjprvkey: RSAKey | ECDSA | DSA | JsonWebKey | AnonE | String
   var sbjpubkey: RSAKey | ECDSA | DSA | JsonWebKey | AnonE | String
   var sigalg: String
-  var subject: (StringParam with AnonCertissuer) | (X500NameParam with AnonCertissuer) | AnonCertissuerCertsubject
+  var subject: StringParamcertissuerstri | X500NameParamcertissuerst | AnonCertissuer
 }
 
 object AnonExt {
@@ -24,7 +22,7 @@ object AnonExt {
     sbjprvkey: RSAKey | ECDSA | DSA | JsonWebKey | AnonE | String,
     sbjpubkey: RSAKey | ECDSA | DSA | JsonWebKey | AnonE | String,
     sigalg: String,
-    subject: (StringParam with AnonCertissuer) | (X500NameParam with AnonCertissuer) | AnonCertissuerCertsubject,
+    subject: StringParamcertissuerstri | X500NameParamcertissuerst | AnonCertissuer,
     ext: js.Array[AnonSubjectAltName] = null
   ): AnonExt = {
     val __obj = js.Dynamic.literal(sbjprvkey = sbjprvkey.asInstanceOf[js.Any], sbjpubkey = sbjpubkey.asInstanceOf[js.Any], sigalg = sigalg.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any])

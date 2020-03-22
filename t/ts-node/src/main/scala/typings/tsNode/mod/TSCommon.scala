@@ -1,11 +1,10 @@
 package typings.tsNode.mod
 
-import typings.tsNode.FnBasePath
-import typings.tsNode.FnCancellationToken
-import typings.tsNode.FnConfigName
-import typings.tsNode.FnDiag
-import typings.tsNode.FnDisplayParts
-import typings.tsNode.FnDocumentRegistry
+import typings.tsNode.FnCall
+import typings.tsNode.FnCallDiagNewLineIndent
+import typings.tsNode.FnCallHostDocumentRegistrySyntaxOnly
+import typings.tsNode.FnCallProgramSourceFileCancellationToken
+import typings.tsNode.FnCallSearchPathFileExistsConfigName
 import typings.tsNode.TypeofScriptSnapshot
 import typings.typescript.AnonConfig
 import typings.typescript.mod.CancellationToken
@@ -28,6 +27,7 @@ import typings.typescript.mod.SymbolDisplayPart
 import typings.typescript.mod.System
 import typings.typescript.mod.TranspileOptions
 import typings.typescript.mod.TranspileOutput
+import typings.typescript.mod.WatchOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -38,13 +38,13 @@ trait TSCommon extends js.Object {
   var ScriptSnapshot: TypeofScriptSnapshot = js.native
   var ScriptTarget: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof _ts.ScriptTarget */ js.Any = js.native
   @JSName("createLanguageService")
-  var createLanguageService_Original: FnDocumentRegistry = js.native
+  var createLanguageService_Original: FnCallHostDocumentRegistrySyntaxOnly = js.native
   @JSName("displayPartsToString")
-  var displayPartsToString_Original: FnDisplayParts = js.native
+  var displayPartsToString_Original: FnCall = js.native
   @JSName("findConfigFile")
-  var findConfigFile_Original: FnConfigName = js.native
+  var findConfigFile_Original: FnCallSearchPathFileExistsConfigName = js.native
   @JSName("flattenDiagnosticMessageText")
-  var flattenDiagnosticMessageText_Original: FnDiag = js.native
+  var flattenDiagnosticMessageText_Original: FnCallDiagNewLineIndent = js.native
   @JSName("formatDiagnosticsWithColorAndContext")
   var formatDiagnosticsWithColorAndContext_Original: js.Function2[/* diagnostics */ js.Array[Diagnostic], /* host */ FormatDiagnosticsHost, String] = js.native
   @JSName("formatDiagnostics")
@@ -52,9 +52,20 @@ trait TSCommon extends js.Object {
   @JSName("getDefaultLibFilePath")
   var getDefaultLibFilePath_Original: js.Function1[/* options */ CompilerOptions, String] = js.native
   @JSName("getPreEmitDiagnostics")
-  var getPreEmitDiagnostics_Original: FnCancellationToken = js.native
+  var getPreEmitDiagnostics_Original: FnCallProgramSourceFileCancellationToken = js.native
   @JSName("parseJsonConfigFileContent")
-  var parseJsonConfigFileContent_Original: FnBasePath = js.native
+  var parseJsonConfigFileContent_Original: js.Function9[
+    /* json */ js.Any, 
+    /* host */ ParseConfigHost, 
+    /* basePath */ String, 
+    /* existingOptions */ js.UndefOr[CompilerOptions], 
+    /* configFileName */ js.UndefOr[String], 
+    /* resolutionStack */ js.UndefOr[js.Array[Path]], 
+    /* extraFileExtensions */ js.UndefOr[js.Array[FileExtensionInfo]], 
+    /* extendedConfigCache */ js.UndefOr[Map[ExtendedConfigCacheEntry]], 
+    /* existingWatchOptions */ js.UndefOr[WatchOptions], 
+    ParsedCommandLine
+  ] = js.native
   @JSName("readConfigFile")
   var readConfigFile_Original: js.Function2[
     /* fileName */ String, 
@@ -84,41 +95,16 @@ trait TSCommon extends js.Object {
   def getPreEmitDiagnostics(program: Program): js.Array[Diagnostic] = js.native
   def getPreEmitDiagnostics(program: Program, sourceFile: SourceFile): js.Array[Diagnostic] = js.native
   def getPreEmitDiagnostics(program: Program, sourceFile: SourceFile, cancellationToken: CancellationToken): js.Array[Diagnostic] = js.native
-  def parseJsonConfigFileContent(json: js.Any, host: ParseConfigHost, basePath: String): ParsedCommandLine = js.native
-  def parseJsonConfigFileContent(json: js.Any, host: ParseConfigHost, basePath: String, existingOptions: CompilerOptions): ParsedCommandLine = js.native
   def parseJsonConfigFileContent(
     json: js.Any,
     host: ParseConfigHost,
     basePath: String,
-    existingOptions: CompilerOptions,
-    configFileName: String
-  ): ParsedCommandLine = js.native
-  def parseJsonConfigFileContent(
-    json: js.Any,
-    host: ParseConfigHost,
-    basePath: String,
-    existingOptions: CompilerOptions,
-    configFileName: String,
-    resolutionStack: js.Array[Path]
-  ): ParsedCommandLine = js.native
-  def parseJsonConfigFileContent(
-    json: js.Any,
-    host: ParseConfigHost,
-    basePath: String,
-    existingOptions: CompilerOptions,
-    configFileName: String,
-    resolutionStack: js.Array[Path],
-    extraFileExtensions: js.Array[FileExtensionInfo]
-  ): ParsedCommandLine = js.native
-  def parseJsonConfigFileContent(
-    json: js.Any,
-    host: ParseConfigHost,
-    basePath: String,
-    existingOptions: CompilerOptions,
-    configFileName: String,
-    resolutionStack: js.Array[Path],
-    extraFileExtensions: js.Array[FileExtensionInfo],
-    extendedConfigCache: Map[ExtendedConfigCacheEntry]
+    existingOptions: js.UndefOr[CompilerOptions],
+    configFileName: js.UndefOr[String],
+    resolutionStack: js.UndefOr[js.Array[Path]],
+    extraFileExtensions: js.UndefOr[js.Array[FileExtensionInfo]],
+    extendedConfigCache: js.UndefOr[Map[ExtendedConfigCacheEntry]],
+    existingWatchOptions: js.UndefOr[WatchOptions]
   ): ParsedCommandLine = js.native
   def readConfigFile(fileName: String, readFile: js.Function1[/* path */ String, js.UndefOr[String]]): AnonConfig = js.native
   def transpileModule(input: String, transpileOptions: TranspileOptions): TranspileOutput = js.native

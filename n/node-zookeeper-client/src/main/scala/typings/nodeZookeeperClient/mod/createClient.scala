@@ -1,6 +1,6 @@
 package typings.nodeZookeeperClient.mod
 
-import typings.std.Partial
+import typings.nodeZookeeperClient.PartialOption
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object createClient extends js.Object {
   def apply(connectionString: String): Client = js.native
-  def apply(connectionString: String, options: Partial[Option]): Client = js.native
+  def apply(connectionString: String, options: PartialOption): Client = js.native
 }
 

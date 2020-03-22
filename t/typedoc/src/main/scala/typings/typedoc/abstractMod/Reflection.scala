@@ -38,12 +38,11 @@ abstract class Reflection protected () extends js.Object {
   def getFullName(separator: String): String = js.native
   def hasComment(): Boolean = js.native
   def hasGetterOrSetter(): Boolean = js.native
-  def isProject(): Boolean = js.native
+  def isProject(): /* is typedoc.typedoc/dist/lib/models/reflections/project.ProjectReflection */ Boolean = js.native
   def kindOf(kind: js.Array[ReflectionKind]): Boolean = js.native
   def kindOf(kind: ReflectionKind): Boolean = js.native
   def setFlag(flag: ReflectionFlag): Unit = js.native
   def setFlag(flag: ReflectionFlag, value: Boolean): Unit = js.native
-  def toObject(): js.Any = js.native
   def toStringHierarchy(): String = js.native
   def toStringHierarchy(indent: String): String = js.native
   def traverse(callback: TraverseCallback): Unit = js.native

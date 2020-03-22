@@ -1,6 +1,6 @@
 package typings.reduxForm.actionsMod
 
-import typings.std.Partial
+import typings.reduxForm.PartialInitializeOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object initialize extends js.Object {
   def apply(form: String, data: js.Any): FormAction = js.native
   def apply(form: String, data: js.Any, keepDirty: Boolean): FormAction = js.native
-  def apply(form: String, data: js.Any, keepDirty: Boolean, options: Partial[InitializeOptions]): FormAction = js.native
-  def apply(form: String, data: js.Any, options: Partial[InitializeOptions]): FormAction = js.native
+  def apply(form: String, data: js.Any, keepDirty: Boolean, options: PartialInitializeOptions): FormAction = js.native
+  def apply(form: String, data: js.Any, options: PartialInitializeOptions): FormAction = js.native
 }
 

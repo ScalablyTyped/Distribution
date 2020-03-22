@@ -1,5 +1,6 @@
 package typings.officeUiFabricReact.coachmarkBaseMod
 
+import typings.officeUiFabricReact.PartialICoachmarkProps
 import typings.officeUiFabricReact.coachmarkTypesMod.ICoachmark
 import typings.officeUiFabricReact.coachmarkTypesMod.ICoachmarkProps
 import typings.officeUiFabricReact.utilitiesMod.BaseComponent
@@ -7,7 +8,6 @@ import typings.react.mod.KeyboardEvent
 import typings.std.Event_
 import typings.std.HTMLElement
 import typings.std.MouseEvent
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -67,6 +67,6 @@ class CoachmarkBase protected ()
 @JSImport("office-ui-fabric-react/lib/components/Coachmark/Coachmark.base", "CoachmarkBase")
 @js.native
 object CoachmarkBase extends js.Object {
-  var defaultProps: Partial[ICoachmarkProps] = js.native
+  var defaultProps: PartialICoachmarkProps = js.native
 }
 

@@ -1,6 +1,6 @@
 package typings.inputmask.mod
 
-import typings.inputmask.AnonEndStart
+import typings.inputmask.AnonStart
 import typings.inputmask.inputmaskBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -27,7 +27,7 @@ trait CommandObject extends js.Object {
     * * `true` => refresh validPositions from the complete buffer .
     * * `{ start: , end: }` => refresh from start to end.
     */
-  var refreshFromBuffer: js.UndefOr[`true` | AnonEndStart] = js.undefined
+  var refreshFromBuffer: js.UndefOr[`true` | AnonStart] = js.undefined
   /**
     * Position(s) to remove.
     */
@@ -41,7 +41,7 @@ object CommandObject {
     caret: Int | Double = null,
     insert: InsertPosition | js.Array[InsertPosition] = null,
     pos: Int | Double = null,
-    refreshFromBuffer: `true` | AnonEndStart = null,
+    refreshFromBuffer: `true` | AnonStart = null,
     remove: Double | js.Array[Double] = null
   ): CommandObject = {
     val __obj = js.Dynamic.literal()

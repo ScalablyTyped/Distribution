@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "handsontable" : "7.4.0"
+      "handsontable" : "7.4.2"
     }
   ],
   "test-dependencies" : [
     {
-      "handsontable" : "7.4.0"
+      "handsontable" : "7.4.2"
     }
   ],
   "compile-devDependencies" : [

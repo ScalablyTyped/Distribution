@@ -1,24 +1,24 @@
 package typings.meteor
 
-import typings.meteor.Meteor.User
+import typings.meteor.Meteor.User_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait EmailFields extends js.Object {
   var from: js.UndefOr[js.Function0[String]] = js.undefined
-  var html: js.UndefOr[js.Function2[/* user */ User, /* url */ String, String]] = js.undefined
-  var subject: js.UndefOr[js.Function1[/* user */ User, String]] = js.undefined
-  var text: js.UndefOr[js.Function2[/* user */ User, /* url */ String, String]] = js.undefined
+  var html: js.UndefOr[js.Function2[/* user */ User_, /* url */ String, String]] = js.undefined
+  var subject: js.UndefOr[js.Function1[/* user */ User_, String]] = js.undefined
+  var text: js.UndefOr[js.Function2[/* user */ User_, /* url */ String, String]] = js.undefined
 }
 
 object EmailFields {
   @scala.inline
   def apply(
     from: () => String = null,
-    html: (/* user */ User, /* url */ String) => String = null,
-    subject: /* user */ User => String = null,
-    text: (/* user */ User, /* url */ String) => String = null
+    html: (/* user */ User_, /* url */ String) => String = null,
+    subject: /* user */ User_ => String = null,
+    text: (/* user */ User_, /* url */ String) => String = null
   ): EmailFields = {
     val __obj = js.Dynamic.literal()
     if (from != null) __obj.updateDynamic("from")(js.Any.fromFunction0(from))

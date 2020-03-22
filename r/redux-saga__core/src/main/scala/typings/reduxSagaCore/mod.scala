@@ -82,7 +82,7 @@ object mod extends js.Object {
     ]
   ): CallEffect = js.native
   def call[Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ js.Any, _] */](
-    ctxAndFn: AnonContextFn[Ctx, Fn],
+    ctxAndFn: AnonFn[Ctx, Fn],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<Fn> is not an array type */ args: Parameters[Fn]
   ): CallEffect = js.native
   @JSName("call")
@@ -108,7 +108,7 @@ object mod extends js.Object {
   def cps[Ctx /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in Name ]: (this : Ctx, args : ...any): void}
     */ cps_ with js.Any */, Name /* <: String */](
-    ctxAndFnName: AnonContextFnCtx[Ctx, Name],
+    ctxAndFnName: AnonContextFn[Ctx, Name],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type CpsFunctionParameters<Ctx[Name]> is not an array type */ args: CpsFunctionParameters[
       /* import warning: importer.ImportType#apply Failed type conversion: Ctx[Name] */ js.Any
     ]
@@ -118,7 +118,7 @@ object mod extends js.Object {
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type CpsFunctionParameters<Fn> is not an array type */ args: CpsFunctionParameters[Fn]
   ): CpsEffect = js.native
   def cps[Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ js.Any, Unit] */](
-    ctxAndFn: AnonContextFnCtx36630743[Ctx, Fn],
+    ctxAndFn: AnonContextCtx[Ctx, Fn],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type CpsFunctionParameters<Fn> is not an array type */ args: CpsFunctionParameters[Fn]
   ): CpsEffect = js.native
   @JSName("cps")
@@ -189,7 +189,7 @@ object mod extends js.Object {
     ]
   ): ForkEffect = js.native
   def fork[Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ js.Any, _] */](
-    ctxAndFn: AnonContextFn[Ctx, Fn],
+    ctxAndFn: AnonFn[Ctx, Fn],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<Fn> is not an array type */ args: Parameters[Fn]
   ): ForkEffect = js.native
   @JSName("fork")
@@ -244,7 +244,7 @@ object mod extends js.Object {
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<Fn> is not an array type */ args: Parameters[Fn]
   ): ForkEffect = js.native
   def spawn[Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ js.Any, _] */](
-    ctxAndFn: AnonContextFn[Ctx, Fn],
+    ctxAndFn: AnonFn[Ctx, Fn],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<Fn> is not an array type */ args: Parameters[Fn]
   ): ForkEffect = js.native
   @JSName("spawn")

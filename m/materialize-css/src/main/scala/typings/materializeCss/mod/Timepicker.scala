@@ -1,9 +1,8 @@
 package typings.materializeCss.mod
 
-import typings.materializeCss.M.TimepickerOptions
 import typings.materializeCss.MElements
+import typings.materializeCss.PartialTimepickerOptions
 import typings.std.Element
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,11 +24,11 @@ object Timepicker extends js.Object {
     * Init Timepickers
     */
   def init(els: MElements): js.Array[typings.materializeCss.M.Timepicker] = js.native
-  def init(els: MElements, options: Partial[TimepickerOptions]): js.Array[typings.materializeCss.M.Timepicker] = js.native
+  def init(els: MElements, options: PartialTimepickerOptions): js.Array[typings.materializeCss.M.Timepicker] = js.native
   /**
     * Init Timepicker
     */
   def init(els: Element): typings.materializeCss.M.Timepicker = js.native
-  def init(els: Element, options: Partial[TimepickerOptions]): typings.materializeCss.M.Timepicker = js.native
+  def init(els: Element, options: PartialTimepickerOptions): typings.materializeCss.M.Timepicker = js.native
 }
 

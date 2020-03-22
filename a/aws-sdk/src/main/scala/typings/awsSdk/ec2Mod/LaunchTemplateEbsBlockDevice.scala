@@ -21,11 +21,11 @@ trait LaunchTemplateEbsBlockDevice extends js.Object {
   /**
     * The ARN of the AWS Key Management Service (AWS KMS) CMK used for encryption.
     */
-  var KmsKeyId: js.UndefOr[String] = js.native
+  var KmsKeyId: js.UndefOr[typings.awsSdk.ec2Mod.KmsKeyId] = js.native
   /**
     * The ID of the snapshot.
     */
-  var SnapshotId: js.UndefOr[String] = js.native
+  var SnapshotId: js.UndefOr[typings.awsSdk.ec2Mod.SnapshotId] = js.native
   /**
     * The size of the volume, in GiB.
     */
@@ -42,8 +42,8 @@ object LaunchTemplateEbsBlockDevice {
     DeleteOnTermination: js.UndefOr[scala.Boolean] = js.undefined,
     Encrypted: js.UndefOr[scala.Boolean] = js.undefined,
     Iops: Int | scala.Double = null,
-    KmsKeyId: String = null,
-    SnapshotId: String = null,
+    KmsKeyId: KmsKeyId = null,
+    SnapshotId: SnapshotId = null,
     VolumeSize: Int | scala.Double = null,
     VolumeType: VolumeType = null
   ): LaunchTemplateEbsBlockDevice = {

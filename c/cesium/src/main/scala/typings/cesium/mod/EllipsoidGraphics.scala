@@ -1,6 +1,6 @@
 package typings.cesium.mod
 
-import typings.cesium.AnonFill
+import typings.cesium.AnonOutlineColor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("cesium", "EllipsoidGraphics")
 @js.native
 class EllipsoidGraphics () extends js.Object {
-  def this(options: AnonFill) = this()
+  def this(options: AnonOutlineColor) = this()
   var definitionChanged: Event[js.Array[_]] = js.native
   var fill: Property = js.native
   var material: MaterialProperty = js.native

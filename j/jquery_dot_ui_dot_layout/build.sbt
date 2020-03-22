@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_ui_dot_layout"
-version := "0.0-unknown-dt-20190322Z-8695a8"
+version := "0.0-unknown-dt-20190322Z-c5c235"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "jquery" % "3.3-dt-20200204Z-ce7107",
-  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-a68146",
-  "org.scalablytyped" %%% "std" % "3.7-1b8369")
+  "org.scalablytyped" %%% "jquery" % "3.3-dt-20200204Z-2d3992",
+  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-3d9ead",
+  "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

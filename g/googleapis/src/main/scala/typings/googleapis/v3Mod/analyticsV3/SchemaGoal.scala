@@ -1,8 +1,8 @@
 package typings.googleapis.v3Mod.analyticsV3
 
-import typings.googleapis.AnonCaseSensitiveFirstStepRequired
-import typings.googleapis.AnonComparisonTypeComparisonValue
+import typings.googleapis.AnonComparisonValue
 import typings.googleapis.AnonEventConditions
+import typings.googleapis.AnonFirstStepRequired
 import typings.googleapis.AnonHref
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -70,7 +70,7 @@ trait SchemaGoal extends js.Object {
   /**
     * Details for the goal of the type URL_DESTINATION.
     */
-  var urlDestinationDetails: js.UndefOr[AnonCaseSensitiveFirstStepRequired] = js.native
+  var urlDestinationDetails: js.UndefOr[AnonFirstStepRequired] = js.native
   /**
     * Goal value.
     */
@@ -78,11 +78,11 @@ trait SchemaGoal extends js.Object {
   /**
     * Details for the goal of the type VISIT_NUM_PAGES.
     */
-  var visitNumPagesDetails: js.UndefOr[AnonComparisonTypeComparisonValue] = js.native
+  var visitNumPagesDetails: js.UndefOr[AnonComparisonValue] = js.native
   /**
     * Details for the goal of the type VISIT_TIME_ON_SITE.
     */
-  var visitTimeOnSiteDetails: js.UndefOr[AnonComparisonTypeComparisonValue] = js.native
+  var visitTimeOnSiteDetails: js.UndefOr[AnonComparisonValue] = js.native
   /**
     * Web property ID to which this goal belongs. The web property ID is of the
     * form UA-XXXXX-YY.
@@ -106,10 +106,10 @@ object SchemaGoal {
     selfLink: String = null,
     `type`: String = null,
     updated: String = null,
-    urlDestinationDetails: AnonCaseSensitiveFirstStepRequired = null,
+    urlDestinationDetails: AnonFirstStepRequired = null,
     value: Int | Double = null,
-    visitNumPagesDetails: AnonComparisonTypeComparisonValue = null,
-    visitTimeOnSiteDetails: AnonComparisonTypeComparisonValue = null,
+    visitNumPagesDetails: AnonComparisonValue = null,
+    visitTimeOnSiteDetails: AnonComparisonValue = null,
     webPropertyId: String = null
   ): SchemaGoal = {
     val __obj = js.Dynamic.literal()

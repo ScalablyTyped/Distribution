@@ -58,7 +58,7 @@ class FileOptions () extends IFileOptions {
   var objcClassPrefix_FileOptions: String = js.native
   /** FileOptions optimizeFor. */
   @JSName("optimizeFor")
-  var optimizeFor_FileOptions: OptimizeMode = js.native
+  var optimizeFor_FileOptions: OptimizeMode | String = js.native
   /** FileOptions phpClassPrefix. */
   @JSName("phpClassPrefix")
   var phpClassPrefix_FileOptions: String = js.native

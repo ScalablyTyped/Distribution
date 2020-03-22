@@ -2,8 +2,8 @@ package typings.gapiClientGenomics.gapi.client.genomics
 
 import typings.gapiClient.gapi.client.Request_
 import typings.gapiClientGenomics.AnonAccesstoken
-import typings.gapiClientGenomics.AnonAccesstokenAltBearertoken
-import typings.gapiClientGenomics.AnonAccesstokenAltBearertokenCallSetId
+import typings.gapiClientGenomics.AnonCallSetId
+import typings.gapiClientGenomics.AnonCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,7 +24,7 @@ trait CallsetsResource extends js.Object {
     * [Fundamentals of Google
     * Genomics](https://cloud.google.com/genomics/fundamentals-of-google-genomics)
     */
-  def delete(request: AnonAccesstokenAltBearertoken): Request_[js.Object]
+  def delete(request: AnonCallSetId): Request_[js.Object]
   /**
     * Gets a call set by ID.
     *
@@ -32,7 +32,7 @@ trait CallsetsResource extends js.Object {
     * [Fundamentals of Google
     * Genomics](https://cloud.google.com/genomics/fundamentals-of-google-genomics)
     */
-  def get(request: AnonAccesstokenAltBearertoken): Request_[CallSet]
+  def get(request: AnonCallSetId): Request_[CallSet]
   /**
     * Updates a call set.
     *
@@ -42,7 +42,7 @@ trait CallsetsResource extends js.Object {
     *
     * This method supports patch semantics.
     */
-  def patch(request: AnonAccesstokenAltBearertokenCallSetId): Request_[CallSet]
+  def patch(request: AnonCallback): Request_[CallSet]
   /**
     * Gets a list of call sets matching the criteria.
     *
@@ -60,9 +60,9 @@ object CallsetsResource {
   @scala.inline
   def apply(
     create: AnonAccesstoken => Request_[CallSet],
-    delete: AnonAccesstokenAltBearertoken => Request_[js.Object],
-    get: AnonAccesstokenAltBearertoken => Request_[CallSet],
-    patch: AnonAccesstokenAltBearertokenCallSetId => Request_[CallSet],
+    delete: AnonCallSetId => Request_[js.Object],
+    get: AnonCallSetId => Request_[CallSet],
+    patch: AnonCallback => Request_[CallSet],
     search: AnonAccesstoken => Request_[SearchCallSetsResponse]
   ): CallsetsResource = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), patch = js.Any.fromFunction1(patch), search = js.Any.fromFunction1(search))

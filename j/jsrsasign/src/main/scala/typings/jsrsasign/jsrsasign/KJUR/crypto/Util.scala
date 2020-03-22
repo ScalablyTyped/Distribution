@@ -2,7 +2,7 @@ package typings.jsrsasign.jsrsasign.KJUR.crypto
 
 import typings.jsrsasign.AnonHmacmd5
 import typings.jsrsasign.AnonMd2
-import typings.jsrsasign.AnonMd5Ripemd160
+import typings.jsrsasign.AnonRipemd160
 import typings.jsrsasign.jsrsasign.BigInteger
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("jsrsasign.KJUR.crypto.Util")
 @js.native
 object Util extends js.Object {
-  var CRYPTOJSMESSAGEDIGESTNAME: AnonMd5Ripemd160 = js.native
+  var CRYPTOJSMESSAGEDIGESTNAME: AnonRipemd160 = js.native
   /** associative array of default provider name for each hash and signature algorithms */
   var DEFAULTPROVIDER: AnonHmacmd5 = js.native
   /** PKCS#1 DigestInfo heading hexadecimal bytes for each hash algorithms */

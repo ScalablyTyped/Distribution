@@ -2,7 +2,7 @@ package typings.gapiClientIdentitytoolkit.gapi.client.identitytoolkit
 
 import typings.gapiClient.gapi.client.Request_
 import typings.gapiClientIdentitytoolkit.AnonAlt
-import typings.gapiClientIdentitytoolkit.AnonAltDelegatedProjectNumber
+import typings.gapiClientIdentitytoolkit.AnonDelegatedProjectNumber
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +21,7 @@ trait RelyingpartyResource extends js.Object {
   /** Get a code for user action confirmation. */
   def getOobConfirmationCode(request: AnonAlt): Request_[GetOobConfirmationCodeResponse]
   /** Get project configuration. */
-  def getProjectConfig(request: AnonAltDelegatedProjectNumber): Request_[IdentitytoolkitRelyingpartyGetProjectConfigResponse]
+  def getProjectConfig(request: AnonDelegatedProjectNumber): Request_[IdentitytoolkitRelyingpartyGetProjectConfigResponse]
   /** Get token signing public key. */
   def getPublicKeys(request: AnonAlt): Request_[js.Object]
   /** Get recaptcha secure param. */
@@ -59,7 +59,7 @@ object RelyingpartyResource {
     emailLinkSignin: AnonAlt => Request_[EmailLinkSigninResponse],
     getAccountInfo: AnonAlt => Request_[GetAccountInfoResponse],
     getOobConfirmationCode: AnonAlt => Request_[GetOobConfirmationCodeResponse],
-    getProjectConfig: AnonAltDelegatedProjectNumber => Request_[IdentitytoolkitRelyingpartyGetProjectConfigResponse],
+    getProjectConfig: AnonDelegatedProjectNumber => Request_[IdentitytoolkitRelyingpartyGetProjectConfigResponse],
     getPublicKeys: AnonAlt => Request_[js.Object],
     getRecaptchaParam: AnonAlt => Request_[GetRecaptchaParamResponse],
     resetPassword: AnonAlt => Request_[ResetPasswordResponse],

@@ -1,6 +1,6 @@
 package typings.kendoUi.kendo.data
 
-import typings.kendoUi.TypeofClassTreeListModel
+import typings.kendoUi.TypeofTreeListModel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,7 +20,7 @@ class TreeListModel () extends Model {
 object TreeListModel extends js.Object {
   var fields: DataSourceSchemaModelFields = js.native
   var idField: String = js.native
-  def define(options: DataSourceSchemaModelWithFieldsArray): TypeofClassTreeListModel = js.native
-  def define(options: DataSourceSchemaModelWithFieldsObject): TypeofClassTreeListModel = js.native
+  def define(options: DataSourceSchemaModelWithFieldsArray): TypeofTreeListModel = js.native
+  def define(options: DataSourceSchemaModelWithFieldsObject): TypeofTreeListModel = js.native
 }
 

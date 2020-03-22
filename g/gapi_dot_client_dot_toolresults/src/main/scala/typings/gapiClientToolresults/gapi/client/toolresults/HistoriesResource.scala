@@ -1,9 +1,9 @@
 package typings.gapiClientToolresults.gapi.client.toolresults
 
 import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientToolresults.AnonAltFieldsFilterByName
-import typings.gapiClientToolresults.AnonAltFieldsHistoryIdKey
-import typings.gapiClientToolresults.AnonAltFieldsKey
+import typings.gapiClientToolresults.AnonFilterByName
+import typings.gapiClientToolresults.AnonRequestId
+import typings.gapiClientToolresults.AnonUserIp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,7 +20,7 @@ trait HistoriesResource extends js.Object {
     * - PERMISSION_DENIED - if the user is not authorized to write to project - INVALID_ARGUMENT - if the request is malformed - NOT_FOUND - if the
     * containing project does not exist
     */
-  def create(request: AnonAltFieldsKey): Request_[History]
+  def create(request: AnonRequestId): Request_[History]
   /**
     * Gets a History.
     *
@@ -29,7 +29,7 @@ trait HistoriesResource extends js.Object {
     * - PERMISSION_DENIED - if the user is not authorized to read project - INVALID_ARGUMENT - if the request is malformed - NOT_FOUND - if the History does
     * not exist
     */
-  def get(request: AnonAltFieldsHistoryIdKey): Request_[History]
+  def get(request: AnonUserIp): Request_[History]
   /**
     * Lists Histories for a given Project.
     *
@@ -41,16 +41,16 @@ trait HistoriesResource extends js.Object {
     * - PERMISSION_DENIED - if the user is not authorized to read project - INVALID_ARGUMENT - if the request is malformed - NOT_FOUND - if the History does
     * not exist
     */
-  def list(request: AnonAltFieldsFilterByName): Request_[ListHistoriesResponse]
+  def list(request: AnonFilterByName): Request_[ListHistoriesResponse]
 }
 
 object HistoriesResource {
   @scala.inline
   def apply(
-    create: AnonAltFieldsKey => Request_[History],
+    create: AnonRequestId => Request_[History],
     executions: ExecutionsResource,
-    get: AnonAltFieldsHistoryIdKey => Request_[History],
-    list: AnonAltFieldsFilterByName => Request_[ListHistoriesResponse]
+    get: AnonUserIp => Request_[History],
+    list: AnonFilterByName => Request_[ListHistoriesResponse]
   ): HistoriesResource = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), executions = executions.asInstanceOf[js.Any], get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
   

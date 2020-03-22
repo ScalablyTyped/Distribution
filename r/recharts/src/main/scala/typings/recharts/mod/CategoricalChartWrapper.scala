@@ -1,7 +1,7 @@
 package typings.recharts.mod
 
 import typings.react.mod.ReactNode
-import typings.std.Partial
+import typings.recharts.PartialMargin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +17,7 @@ trait CategoricalChartWrapper[L] extends js.Object {
   var data: js.UndefOr[js.Array[js.Object]] = js.undefined
   var height: js.UndefOr[Double] = js.undefined
   var layout: js.UndefOr[L] = js.undefined
-  var margin: js.UndefOr[Partial[Margin]] = js.undefined
+  var margin: js.UndefOr[PartialMargin] = js.undefined
   var maxBarSize: js.UndefOr[Double] = js.undefined
   var onClick: js.UndefOr[RechartsFunction] = js.undefined
   var onMouseDown: js.UndefOr[RechartsFunction] = js.undefined
@@ -46,7 +46,7 @@ object CategoricalChartWrapper {
     data: js.Array[js.Object] = null,
     height: Int | Double = null,
     layout: L = null,
-    margin: Partial[Margin] = null,
+    margin: PartialMargin = null,
     maxBarSize: Int | Double = null,
     onClick: /* repeated */ js.Any => Unit = null,
     onMouseDown: /* repeated */ js.Any => Unit = null,

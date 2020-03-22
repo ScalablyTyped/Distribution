@@ -1,6 +1,6 @@
 package typings.reactQuery.mod
 
-import typings.reactQuery.AnonArgs
+import typings.reactQuery.AnonDisableThrow
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,6 +15,6 @@ trait QueryResult[TResult, TVariables] extends js.Object {
   var isFetching: Boolean = js.native
   var isLoading: Boolean = js.native
   def refetch(): js.Promise[Unit] = js.native
-  def refetch(arg: AnonArgs[TVariables]): js.Promise[Unit] = js.native
+  def refetch(arg: AnonDisableThrow[TVariables]): js.Promise[Unit] = js.native
 }
 

@@ -43,7 +43,7 @@ trait AnonCacheFile extends js.Object {
   /**
     * Object containing functions relevant to preprocessing data.
     */
-  var preprocess: js.UndefOr[AnonCssImportPaths] = js.undefined
+  var preprocess: js.UndefOr[AnonImportPaths] = js.undefined
   /**
     * Options for the less render.
     */
@@ -72,7 +72,7 @@ object AnonCacheFile {
     once: js.UndefOr[Boolean] = js.undefined,
     pathRoot: String = null,
     postprocess: AnonCss = null,
-    preprocess: AnonCssImportPaths = null,
+    preprocess: AnonImportPaths = null,
     render: AnonCompress = null,
     storeCss: (/* pathname */ String, /* css */ String, /* req */ Request_[ParamsDictionary], /* next */ js.Function) => Unit = null
   ): AnonCacheFile = {

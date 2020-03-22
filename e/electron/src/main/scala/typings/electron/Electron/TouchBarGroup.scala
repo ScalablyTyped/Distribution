@@ -1,5 +1,6 @@
 package typings.electron.Electron
 
+import typings.node.NodeJS.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,6 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class TouchBarGroup protected () extends EventEmitter {
   // Docs: http://electronjs.org/docs/api/touch-bar-group
+  /**
+    * TouchBarGroup
+    */
   def this(options: TouchBarGroupConstructorOptions) = this()
 }
 

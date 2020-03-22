@@ -5,12 +5,12 @@ import typings.primereact.AnonData
 import typings.primereact.AnonDataField
 import typings.primereact.AnonDataIndex
 import typings.primereact.AnonDataOriginalEvent
-import typings.primereact.AnonDataOriginalEventAny
 import typings.primereact.AnonDelta
 import typings.primereact.AnonDragIndex
 import typings.primereact.AnonFirst
 import typings.primereact.AnonMultiSortMeta
-import typings.primereact.AnonOriginalEventValue
+import typings.primereact.AnonType
+import typings.primereact.AnonValue
 import typings.react.mod.ReactNode
 import typings.react.mod._Global_.JSX.Element
 import scala.scalajs.js
@@ -54,22 +54,22 @@ trait DataTableProps extends js.Object {
   var multiSortMeta: js.UndefOr[js.Array[_]] = js.undefined
   var onColReorder: js.UndefOr[js.Function1[/* e */ AnonColumns, Unit]] = js.undefined
   var onColumnResizeEnd: js.UndefOr[js.Function1[/* e */ AnonDelta, Unit]] = js.undefined
-  var onContextMenu: js.UndefOr[js.Function1[/* e */ AnonDataOriginalEventAny, Unit]] = js.undefined
-  var onContextMenuSelectionChange: js.UndefOr[js.Function1[/* e */ AnonOriginalEventValue, Unit]] = js.undefined
-  var onFilter: js.UndefOr[js.Function1[/* filters */ js.Array[_], Unit]] = js.undefined
+  var onContextMenu: js.UndefOr[js.Function1[/* e */ AnonDataOriginalEvent, Unit]] = js.undefined
+  var onContextMenuSelectionChange: js.UndefOr[js.Function1[/* e */ AnonValue, Unit]] = js.undefined
+  var onFilter: js.UndefOr[js.Function1[/* filters */ js.Object, Unit]] = js.undefined
   var onPage: js.UndefOr[js.Function1[/* e */ AnonFirst, Unit]] = js.undefined
   var onRowClick: js.UndefOr[js.Function1[/* e */ AnonDataIndex, Unit]] = js.undefined
-  var onRowCollapse: js.UndefOr[js.Function1[/* e */ AnonDataOriginalEventAny, Unit]] = js.undefined
+  var onRowCollapse: js.UndefOr[js.Function1[/* e */ AnonDataOriginalEvent, Unit]] = js.undefined
   var onRowDoubleClick: js.UndefOr[js.Function1[/* e */ AnonDataIndex, Unit]] = js.undefined
   var onRowEditCancel: js.UndefOr[js.Function1[/* e */ AnonDataIndex, Unit]] = js.undefined
-  var onRowEditInit: js.UndefOr[js.Function1[/* e */ AnonDataOriginalEventAny, Unit]] = js.undefined
-  var onRowEditSave: js.UndefOr[js.Function1[/* e */ AnonDataOriginalEventAny, Unit]] = js.undefined
-  var onRowExpand: js.UndefOr[js.Function1[/* e */ AnonDataOriginalEventAny, Unit]] = js.undefined
+  var onRowEditInit: js.UndefOr[js.Function1[/* e */ AnonDataOriginalEvent, Unit]] = js.undefined
+  var onRowEditSave: js.UndefOr[js.Function1[/* e */ AnonDataOriginalEvent, Unit]] = js.undefined
+  var onRowExpand: js.UndefOr[js.Function1[/* e */ AnonDataOriginalEvent, Unit]] = js.undefined
   var onRowReorder: js.UndefOr[js.Function1[/* e */ AnonDragIndex, Unit]] = js.undefined
-  var onRowSelect: js.UndefOr[js.Function1[/* e */ AnonDataOriginalEvent, Unit]] = js.undefined
+  var onRowSelect: js.UndefOr[js.Function1[/* e */ AnonType, Unit]] = js.undefined
   var onRowToggle: js.UndefOr[js.Function1[/* e */ AnonData, Unit]] = js.undefined
-  var onRowUnselect: js.UndefOr[js.Function1[/* e */ AnonDataOriginalEvent, Unit]] = js.undefined
-  var onSelectionChange: js.UndefOr[js.Function1[/* e */ AnonOriginalEventValue, Unit]] = js.undefined
+  var onRowUnselect: js.UndefOr[js.Function1[/* e */ AnonType, Unit]] = js.undefined
+  var onSelectionChange: js.UndefOr[js.Function1[/* e */ AnonValue, Unit]] = js.undefined
   var onSort: js.UndefOr[js.Function1[/* e */ AnonMultiSortMeta, Unit]] = js.undefined
   var onValueChange: js.UndefOr[js.Function1[/* value */ js.Array[_], Unit]] = js.undefined
   var onVirtualScroll: js.UndefOr[js.Function1[/* e */ AnonFirst, Unit]] = js.undefined
@@ -150,22 +150,22 @@ object DataTableProps {
     multiSortMeta: js.Array[_] = null,
     onColReorder: /* e */ AnonColumns => Unit = null,
     onColumnResizeEnd: /* e */ AnonDelta => Unit = null,
-    onContextMenu: /* e */ AnonDataOriginalEventAny => Unit = null,
-    onContextMenuSelectionChange: /* e */ AnonOriginalEventValue => Unit = null,
-    onFilter: /* filters */ js.Array[_] => Unit = null,
+    onContextMenu: /* e */ AnonDataOriginalEvent => Unit = null,
+    onContextMenuSelectionChange: /* e */ AnonValue => Unit = null,
+    onFilter: /* filters */ js.Object => Unit = null,
     onPage: /* e */ AnonFirst => Unit = null,
     onRowClick: /* e */ AnonDataIndex => Unit = null,
-    onRowCollapse: /* e */ AnonDataOriginalEventAny => Unit = null,
+    onRowCollapse: /* e */ AnonDataOriginalEvent => Unit = null,
     onRowDoubleClick: /* e */ AnonDataIndex => Unit = null,
     onRowEditCancel: /* e */ AnonDataIndex => Unit = null,
-    onRowEditInit: /* e */ AnonDataOriginalEventAny => Unit = null,
-    onRowEditSave: /* e */ AnonDataOriginalEventAny => Unit = null,
-    onRowExpand: /* e */ AnonDataOriginalEventAny => Unit = null,
+    onRowEditInit: /* e */ AnonDataOriginalEvent => Unit = null,
+    onRowEditSave: /* e */ AnonDataOriginalEvent => Unit = null,
+    onRowExpand: /* e */ AnonDataOriginalEvent => Unit = null,
     onRowReorder: /* e */ AnonDragIndex => Unit = null,
-    onRowSelect: /* e */ AnonDataOriginalEvent => Unit = null,
+    onRowSelect: /* e */ AnonType => Unit = null,
     onRowToggle: /* e */ AnonData => Unit = null,
-    onRowUnselect: /* e */ AnonDataOriginalEvent => Unit = null,
-    onSelectionChange: /* e */ AnonOriginalEventValue => Unit = null,
+    onRowUnselect: /* e */ AnonType => Unit = null,
+    onSelectionChange: /* e */ AnonValue => Unit = null,
     onSort: /* e */ AnonMultiSortMeta => Unit = null,
     onValueChange: /* value */ js.Array[_] => Unit = null,
     onVirtualScroll: /* e */ AnonFirst => Unit = null,

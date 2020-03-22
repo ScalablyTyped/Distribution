@@ -2,7 +2,6 @@ package typings.three
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.three.bufferGeometryMod.BufferGeometry
-import typings.three.constantsMod.TrianglesDrawModes
 import typings.three.geometryMod.Geometry
 import typings.three.materialMod.Material
 import typings.three.object3DMod.Object3D
@@ -22,13 +21,11 @@ object meshMod extends js.Object {
     def this(geometry: BufferGeometry, material: Material) = this()
     def this(geometry: Geometry, material: js.Array[Material]) = this()
     def this(geometry: Geometry, material: Material) = this()
-    var drawMode: TrianglesDrawModes = js.native
     var geometry: Geometry | BufferGeometry = js.native
-    var isMesh: `true` = js.native
+    val isMesh: `true` = js.native
     var material: Material | js.Array[Material] = js.native
     var morphTargetDictionary: js.UndefOr[StringDictionary[Double]] = js.native
     var morphTargetInfluences: js.UndefOr[js.Array[Double]] = js.native
-    def setDrawMode(drawMode: TrianglesDrawModes): Unit = js.native
     def updateMorphTargets(): Unit = js.native
   }
   

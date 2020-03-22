@@ -1,6 +1,6 @@
 package typings.evernote.mod.Evernote
 
-import typings.evernote.AnonAscendingOrder
+import typings.evernote.AnonOrder
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -49,7 +49,7 @@ import scala.scalajs.js.annotation._
 @JSImport("evernote", "Evernote.Publishing")
 @js.native
 class Publishing () extends js.Object {
-  def this(args: AnonAscendingOrder) = this()
+  def this(args: AnonOrder) = this()
   var ascending: Boolean = js.native
   var order: NoteSortOrder = js.native
   var publicDescription: String = js.native

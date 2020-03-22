@@ -4,5 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait reactSimpleCodeEditorProps
+trait reactSimpleCodeEditorProps {
+  type ReactSimpleCodeEditorProps = DetailedHTMLPropsHTMLAttr
+}
 

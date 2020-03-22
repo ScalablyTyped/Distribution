@@ -5,6 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
+  - typings.csstype.csstypeStrings.anywhere
   - typings.csstype.csstypeStrings.auto
   - typings.csstype.csstypeStrings.loose
   - typings.csstype.csstypeStrings.normal
@@ -20,6 +21,8 @@ trait LineBreakProperty extends js.Object
 object LineBreakProperty {
   @scala.inline
   def `-moz-initial`: typings.csstype.csstypeStrings.`-moz-initial` = this.cast("-moz-initial")
+  @scala.inline
+  def anywhere: typings.csstype.csstypeStrings.anywhere = this.cast("anywhere")
   @scala.inline
   def auto: typings.csstype.csstypeStrings.auto = this.cast("auto")
   @scala.inline

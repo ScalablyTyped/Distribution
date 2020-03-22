@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "cp-file" : "7.0.0"
+      "cp-file" : "8.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "cp-file" : "7.0.0"
+      "cp-file" : "8.0.1"
     }
   ],
   "compile-devDependencies" : [

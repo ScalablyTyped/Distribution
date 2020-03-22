@@ -9,8 +9,12 @@ trait ConnectionParams extends js.Object {
   var autoConnect: js.UndefOr[Boolean] = js.undefined
   /** the host to connect to (default: 127.0.0.1) */
   var host: String
+  /** wether query clients should be ignored allover (clientList, events, etc) */
+  var ignoreQueries: Boolean
   /** wether a keepalive should get sent (default: true) */
   var keepAlive: Boolean
+  /** sends the keepalive after x seconds of inactivity (default: 250s) */
+  var keepAliveTimeout: Double
   /** local address the socket should connect from */
   var localAddress: js.UndefOr[String] = js.undefined
   /** the nickname to connect with */
@@ -33,7 +37,9 @@ object ConnectionParams {
   @scala.inline
   def apply(
     host: String,
+    ignoreQueries: Boolean,
     keepAlive: Boolean,
+    keepAliveTimeout: Double,
     protocol: typings.ts3NodejsLibrary.enumMod.QueryProtocol,
     queryport: Double,
     readyTimeout: Double,
@@ -44,7 +50,7 @@ object ConnectionParams {
     serverport: Int | Double = null,
     username: String = null
   ): ConnectionParams = {
-    val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], keepAlive = keepAlive.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], queryport = queryport.asInstanceOf[js.Any], readyTimeout = readyTimeout.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], ignoreQueries = ignoreQueries.asInstanceOf[js.Any], keepAlive = keepAlive.asInstanceOf[js.Any], keepAliveTimeout = keepAliveTimeout.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], queryport = queryport.asInstanceOf[js.Any], readyTimeout = readyTimeout.asInstanceOf[js.Any])
     if (!js.isUndefined(autoConnect)) __obj.updateDynamic("autoConnect")(autoConnect.asInstanceOf[js.Any])
     if (localAddress != null) __obj.updateDynamic("localAddress")(localAddress.asInstanceOf[js.Any])
     if (nickname != null) __obj.updateDynamic("nickname")(nickname.asInstanceOf[js.Any])

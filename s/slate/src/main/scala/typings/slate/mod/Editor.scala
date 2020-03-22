@@ -3,6 +3,8 @@ package typings.slate.mod
 import typings.immutable.Immutable.List
 import typings.slate.AnonNormalize
 import typings.slate.AnonOperations
+import typings.slate.PartialMarkJSON
+import typings.slate.PartialMarkProperties
 import typings.slate.slateStrings.editor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -92,11 +94,77 @@ class Editor protected () extends Controller {
   def replaceTextByKey(key: String, node: Inline): Editor = js.native
   def replaceTextByKey(key: String, node: Text): Editor = js.native
   def setMarkByKey(key: String, offset: Double, length: Double, properties: String, newProperties: String): Editor = js.native
+  def setMarkByKey(key: String, offset: Double, length: Double, properties: String, newProperties: PartialMarkJSON): Editor = js.native
+  def setMarkByKey(
+    key: String,
+    offset: Double,
+    length: Double,
+    properties: String,
+    newProperties: PartialMarkProperties
+  ): Editor = js.native
   def setMarkByKey(key: String, offset: Double, length: Double, properties: MarkJSON, newProperties: String): Editor = js.native
+  def setMarkByKey(key: String, offset: Double, length: Double, properties: MarkJSON, newProperties: PartialMarkJSON): Editor = js.native
+  def setMarkByKey(
+    key: String,
+    offset: Double,
+    length: Double,
+    properties: MarkJSON,
+    newProperties: PartialMarkProperties
+  ): Editor = js.native
   def setMarkByKey(key: String, offset: Double, length: Double, properties: MarkProperties, newProperties: String): Editor = js.native
+  def setMarkByKey(
+    key: String,
+    offset: Double,
+    length: Double,
+    properties: MarkProperties,
+    newProperties: PartialMarkJSON
+  ): Editor = js.native
+  def setMarkByKey(
+    key: String,
+    offset: Double,
+    length: Double,
+    properties: MarkProperties,
+    newProperties: PartialMarkProperties
+  ): Editor = js.native
   def setMarkByKey(key: String, offset: Double, length: Double, properties: Mark, newProperties: String): Editor = js.native
+  def setMarkByKey(key: String, offset: Double, length: Double, properties: Mark, newProperties: PartialMarkJSON): Editor = js.native
+  def setMarkByKey(
+    key: String,
+    offset: Double,
+    length: Double,
+    properties: Mark,
+    newProperties: PartialMarkProperties
+  ): Editor = js.native
   def setMarkByPath(path: List[Double], offset: Double, length: Double, properties: String, newProperties: String): Editor = js.native
+  def setMarkByPath(
+    path: List[Double],
+    offset: Double,
+    length: Double,
+    properties: String,
+    newProperties: PartialMarkJSON
+  ): Editor = js.native
+  def setMarkByPath(
+    path: List[Double],
+    offset: Double,
+    length: Double,
+    properties: String,
+    newProperties: PartialMarkProperties
+  ): Editor = js.native
   def setMarkByPath(path: List[Double], offset: Double, length: Double, properties: MarkJSON, newProperties: String): Editor = js.native
+  def setMarkByPath(
+    path: List[Double],
+    offset: Double,
+    length: Double,
+    properties: MarkJSON,
+    newProperties: PartialMarkJSON
+  ): Editor = js.native
+  def setMarkByPath(
+    path: List[Double],
+    offset: Double,
+    length: Double,
+    properties: MarkJSON,
+    newProperties: PartialMarkProperties
+  ): Editor = js.native
   def setMarkByPath(
     path: List[Double],
     offset: Double,
@@ -104,7 +172,35 @@ class Editor protected () extends Controller {
     properties: MarkProperties,
     newProperties: String
   ): Editor = js.native
+  def setMarkByPath(
+    path: List[Double],
+    offset: Double,
+    length: Double,
+    properties: MarkProperties,
+    newProperties: PartialMarkJSON
+  ): Editor = js.native
+  def setMarkByPath(
+    path: List[Double],
+    offset: Double,
+    length: Double,
+    properties: MarkProperties,
+    newProperties: PartialMarkProperties
+  ): Editor = js.native
   def setMarkByPath(path: List[Double], offset: Double, length: Double, properties: Mark, newProperties: String): Editor = js.native
+  def setMarkByPath(
+    path: List[Double],
+    offset: Double,
+    length: Double,
+    properties: Mark,
+    newProperties: PartialMarkJSON
+  ): Editor = js.native
+  def setMarkByPath(
+    path: List[Double],
+    offset: Double,
+    length: Double,
+    properties: Mark,
+    newProperties: PartialMarkProperties
+  ): Editor = js.native
   def setReadOnly(readOnly: Boolean): Editor = js.native
   /**
     * Set the editor's value state.

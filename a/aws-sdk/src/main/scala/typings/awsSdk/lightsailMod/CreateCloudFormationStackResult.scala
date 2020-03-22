@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CreateCloudFormationStackResult extends js.Object {
   /**
-    * A list of objects describing the API operation.
+    * An array of objects that describe the result of the action, such as the status of the request, the time stamp of the request, and the resources affected by the request.
     */
   var operations: js.UndefOr[OperationList] = js.native
 }

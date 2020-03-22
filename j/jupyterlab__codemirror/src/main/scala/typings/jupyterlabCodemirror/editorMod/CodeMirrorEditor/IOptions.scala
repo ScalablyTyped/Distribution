@@ -1,9 +1,9 @@
 package typings.jupyterlabCodemirror.editorMod.CodeMirrorEditor
 
+import typings.jupyterlabCodeeditor.PartialIConfig
+import typings.jupyterlabCodeeditor.PartialISelectionStyle
 import typings.jupyterlabCodeeditor.editorMod.CodeEditor.IModel
-import typings.jupyterlabCodeeditor.editorMod.CodeEditor.ISelectionStyle
 import typings.std.HTMLElement
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,8 +19,8 @@ object IOptions {
   def apply(
     host: HTMLElement,
     model: IModel,
-    config: Partial[typings.jupyterlabCodeeditor.editorMod.CodeEditor.IConfig] = null,
-    selectionStyle: Partial[ISelectionStyle] = null,
+    config: PartialIConfig = null,
+    selectionStyle: PartialISelectionStyle = null,
     uuid: String = null
   ): IOptions = {
     val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], model = model.asInstanceOf[js.Any])

@@ -2,6 +2,7 @@ package typings.awsCryptoSha256Js
 
 import typings.awsSdkTypes.cryptoMod.Hash
 import typings.awsSdkTypes.cryptoMod.SourceData
+import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,6 +16,7 @@ object jsSha256Mod extends js.Object {
     var error: js.Any = js.native
     val hash: js.Any = js.native
     val outer: js.UndefOr[js.Any] = js.native
+    def digestSync(): Uint8Array = js.native
   }
   
 }

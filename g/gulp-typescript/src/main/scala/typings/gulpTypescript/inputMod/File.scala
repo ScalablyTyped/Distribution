@@ -19,8 +19,8 @@ trait File extends js.Object {
 @js.native
 object File extends js.Object {
   def equal(a: File, b: File): Boolean = js.native
-  def fromContent(fileName: String, content: String): File = js.native
-  def fromGulp(file: VinylFile): File = js.native
+  def fromContent(caseSensitive: Boolean, fileName: String, content: String): File = js.native
+  def fromGulp(caseSensitive: Boolean, file: VinylFile): File = js.native
   def getChangeState(previous: File, current: File): FileChangeState = js.native
 }
 

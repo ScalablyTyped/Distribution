@@ -1,7 +1,7 @@
 package typings.firefoxWebextBrowser.browser.webNavigation
 
 import org.scalablytyped.runtime.TopLevel
-import typings.firefoxWebextBrowser.AnonFrameIdProcessId
+import typings.firefoxWebextBrowser.AnonTimeStamp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,6 +14,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object onHistoryStateUpdated
   extends TopLevel[
-      WebNavigationOnHistoryStateUpdatedEvent[js.Function1[/* details */ AnonFrameIdProcessId, Unit]]
+      WebNavigationOnHistoryStateUpdatedEvent[js.Function1[/* details */ AnonTimeStamp, Unit]]
     ]
 

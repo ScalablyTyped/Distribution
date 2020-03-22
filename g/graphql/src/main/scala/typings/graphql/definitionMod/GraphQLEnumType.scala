@@ -1,7 +1,7 @@
 package typings.graphql.definitionMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.graphql.AnonExtensionASTNodesEnumTypeExtensionNode
+import typings.graphql.GraphQLEnumTypeConfigexte
 import typings.graphql.astMod.EnumTypeDefinitionNode
 import typings.graphql.astMod.EnumTypeExtensionNode
 import typings.graphql.astMod.ValueNode
@@ -32,7 +32,7 @@ class GraphQLEnumType protected ()
   def parseLiteral(valueNode: ValueNode, _variables: Maybe[StringDictionary[_]]): Maybe[_] = js.native
   def parseValue(value: js.Any): Maybe[_] = js.native
   def serialize(value: js.Any): Maybe[String] = js.native
-  def toConfig(): GraphQLEnumTypeConfig with AnonExtensionASTNodesEnumTypeExtensionNode = js.native
+  def toConfig(): GraphQLEnumTypeConfigexte = js.native
   def toJSON(): String = js.native
 }
 

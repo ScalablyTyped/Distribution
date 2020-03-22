@@ -4,31 +4,107 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AnonArray extends js.Object {
-  def array(value: js.Any): Boolean
-  def boolean(value: js.Any): Boolean
-  def integer(value: js.Any): Boolean
-  def `null`(value: js.Any): Boolean
-  def number(value: js.Any): Boolean
-  def `object`(value: js.Any): Boolean
-  def string(value: js.Any): Boolean
-}
-
-object AnonArray {
-  @scala.inline
-  def apply(
-    array: js.Any => Boolean,
-    boolean: js.Any => Boolean,
-    integer: js.Any => Boolean,
-    `null`: js.Any => Boolean,
-    number: js.Any => Boolean,
-    `object`: js.Any => Boolean,
-    string: js.Any => Boolean
-  ): AnonArray = {
-    val __obj = js.Dynamic.literal(array = js.Any.fromFunction1(array), boolean = js.Any.fromFunction1(boolean), integer = js.Any.fromFunction1(integer), number = js.Any.fromFunction1(number), string = js.Any.fromFunction1(string))
-    __obj.updateDynamic("null")(js.Any.fromFunction1(`null`))
-    __obj.updateDynamic("object")(js.Any.fromFunction1(`object`))
-    __obj.asInstanceOf[AnonArray]
-  }
+  /**
+    * Validates the provided value against the schema using all of the validation keywords specific to instances of an
+    * array.
+    * The validation keywords for the type `array` are:
+    * ```
+    * ['items', 'maxItems', 'minItems', 'uniqueItems']
+    * ```
+    * see http://json-schema.org/latest/json-schema-validation.html#anchor25
+    *
+    * @name Schema.typeGroupValidators.array
+    * @method
+    * @param {*} value Array to be validated.
+    * @param {object} schema Schema containing at least one array keyword.
+    * @param {object} [opts] Configuration options.
+    * @returns {(array|undefined)} Array of errors or `undefined` if valid.
+    */
+  def array(value: js.Any, schema: js.Any): js.Array[_] = js.native
+  def array(value: js.Any, schema: js.Any, opts: js.Any): js.Array[_] = js.native
+  /**
+    * Validates the provided value against the schema using all of the validation keywords specific to instances of an
+    * integer.
+    * The validation keywords for the type `integer` are:
+    * ```
+    * ['multipleOf', 'maximum', 'minimum']
+    * ```
+    * @name Schema.typeGroupValidators.integer
+    * @method
+    * @param {*} value Number to be validated.
+    * @param {object} schema Schema containing at least one `integer` keyword.
+    * @param {object} [opts] Configuration options.
+    * @returns {(array|undefined)} Array of errors or `undefined` if valid.
+    */
+  def integer(value: js.Any, schema: js.Any, opts: js.Any): js.Array[_] = js.native
+  /**
+    * Validates the provided value against the schema using all of the validation keywords specific to instances of an
+    * number.
+    * The validation keywords for the type `number` are:
+    * ```
+    * ['multipleOf', 'maximum', 'minimum']
+    * ```
+    * @name Schema.typeGroupValidators.number
+    * @method
+    * @param {*} value Number to be validated.
+    * @param {object} schema Schema containing at least one `number` keyword.
+    * @param {object} [opts] Configuration options.
+    * @returns {(array|undefined)} Array of errors or `undefined` if valid.
+    */
+  def number(value: js.Any, schema: js.Any, opts: js.Any): js.Array[_] = js.native
+  /**
+    * Validates the provided value against the schema using all of the validation keywords specific to instances of a
+    * number or integer.
+    * The validation keywords for the type `numeric` are:
+    * ```
+    * ['multipleOf', 'maximum', 'minimum']
+    * ```
+    * See http://json-schema.org/latest/json-schema-validation.html#anchor13.
+    *
+    * @name Schema.typeGroupValidators.numeric
+    * @method
+    * @param {*} value Number to be validated.
+    * @param {object} schema Schema containing at least one `numeric` keyword.
+    * @param {object} [opts] Configuration options.
+    * @returns {(array|undefined)} Array of errors or `undefined` if valid.
+    */
+  def numeric(value: js.Any, schema: js.Any, opts: js.Any): js.Array[_] = js.native
+  /**
+    * Validates the provided value against the schema using all of the validation keywords specific to instances of an
+    * object.
+    * The validation keywords for the type `object` are:
+    * ```
+    * ['maxProperties', 'minProperties', 'required', 'properties', 'dependencies']
+    * ```
+    * See http://json-schema.org/latest/json-schema-validation.html#anchor53.
+    *
+    * @name Schema.typeGroupValidators.object
+    * @method
+    * @param {*} value Object to be validated.
+    * @param {object} schema Schema containing at least one `object` keyword.
+    * @param {object} [opts] Configuration options.
+    * @returns {(array|undefined)} Array of errors or `undefined` if valid.
+    */
+  def `object`(value: js.Any, schema: js.Any, opts: js.Any): js.Array[_] = js.native
+  /**
+    * Validates the provided value against the schema using all of the validation keywords specific to instances of an
+    * string.
+    * The validation keywords for the type `string` are:
+    * ```
+    * ['maxLength', 'minLength', 'pattern']
+    * ```
+    * See http://json-schema.org/latest/json-schema-validation.html#anchor25.
+    *
+    * @name Schema.typeGroupValidators.string
+    * @method
+    * @param {*} value String to be validated.
+    * @param {object} schema Schema containing at least one `string` keyword.
+    * @param {object} [opts] Configuration options.
+    * @returns {(array|undefined)} Array of errors or `undefined` if valid.
+    */
+  def string(value: js.Any, schema: js.Any): js.Array[_] = js.native
+  def string(value: js.Any, schema: js.Any, opts: js.Any): js.Array[_] = js.native
 }
 

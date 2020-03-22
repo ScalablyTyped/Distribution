@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ionic/angular/dist/directives/proxies", "IonReorder")
+@JSImport("@ionic/angular/directives/proxies", "IonReorder")
 @js.native
 class IonReorder protected ()
   extends typings.ionicCore.componentsMod.Components.IonReorder {

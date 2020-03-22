@@ -1,10 +1,8 @@
 package typings.fundamentalReact.sideNavMod
 
-import typings.fundamentalReact.AnonDisplayNameSideNavList
-import typings.fundamentalReact.AnonDisplayNameSideNavListItem
+import typings.fundamentalReact.ComponentClassSideNavList
+import typings.fundamentalReact.ComponentClassSideNavListInstantiable
 import typings.react.mod.Component
-import typings.react.mod.ComponentClass
-import typings.react.mod.ComponentState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,8 +16,8 @@ class default ()
 @JSImport("fundamental-react/lib/SideNavigation/SideNav", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var List: (ComponentClass[SideNavListProps, ComponentState]) with AnonDisplayNameSideNavList = js.native
-  var ListItem: (ComponentClass[SideNavListItemProps, ComponentState]) with AnonDisplayNameSideNavListItem = js.native
+  var List: ComponentClassSideNavList = js.native
+  var ListItem: ComponentClassSideNavListInstantiable = js.native
   var displayName: typings.fundamentalReact.fundamentalReactStrings.SideNav = js.native
 }
 

@@ -5,7 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CreateBucketRequest extends js.Object {
+  var archive: js.UndefOr[Boolean] = js.undefined
   var coldline: js.UndefOr[Boolean] = js.undefined
+  var cors: js.UndefOr[js.Array[Cors]] = js.undefined
   var dra: js.UndefOr[Boolean] = js.undefined
   var location: js.UndefOr[String] = js.undefined
   var multiRegional: js.UndefOr[Boolean] = js.undefined
@@ -20,7 +22,9 @@ trait CreateBucketRequest extends js.Object {
 object CreateBucketRequest {
   @scala.inline
   def apply(
+    archive: js.UndefOr[Boolean] = js.undefined,
     coldline: js.UndefOr[Boolean] = js.undefined,
+    cors: js.Array[Cors] = null,
     dra: js.UndefOr[Boolean] = js.undefined,
     location: String = null,
     multiRegional: js.UndefOr[Boolean] = js.undefined,
@@ -32,7 +36,9 @@ object CreateBucketRequest {
     userProject: String = null
   ): CreateBucketRequest = {
     val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(archive)) __obj.updateDynamic("archive")(archive.asInstanceOf[js.Any])
     if (!js.isUndefined(coldline)) __obj.updateDynamic("coldline")(coldline.asInstanceOf[js.Any])
+    if (cors != null) __obj.updateDynamic("cors")(cors.asInstanceOf[js.Any])
     if (!js.isUndefined(dra)) __obj.updateDynamic("dra")(dra.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (!js.isUndefined(multiRegional)) __obj.updateDynamic("multiRegional")(multiRegional.asInstanceOf[js.Any])

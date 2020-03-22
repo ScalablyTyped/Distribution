@@ -34,14 +34,7 @@ package object definitionsMod {
     typings.ionicCliFramework.definitionsMod.CommandMetadataInput, 
     typings.ionic.definitionsMod.CommandMetadataOption
   ]
-  type OAuthIdentity = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ A in ionic.ionic/definitions.AssociationType ]:? ionic.ionic/definitions.OAuthIdentityDetails}
-    */ typings.ionic.ionicStrings.OAuthIdentity with js.Any
   type PackageVersions = org.scalablytyped.runtime.StringDictionary[java.lang.String]
-  type PaginateArgs[T /* <: typings.ionic.definitionsMod.Response[js.Array[js.Object]] */] = typings.std.Pick[
-    typings.ionic.definitionsMod.PaginatorDeps[T, typings.ionic.definitionsMod.PaginatorState], 
-    typings.ionic.ionicStrings.reqgen | typings.ionic.ionicStrings.guard | typings.ionic.ionicStrings.state | typings.ionic.ionicStrings.max
-  ]
   type PaginatorGuard[T /* <: typings.ionic.definitionsMod.Response[js.Array[js.Object]] */] = js.Function1[
     /* res */ typings.ionic.definitionsMod.APIResponseSuccess, 
     /* is T */ scala.Boolean

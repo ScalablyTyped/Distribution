@@ -17,6 +17,11 @@ import scala.scalajs.js.annotation._
 
 trait ContextMenuParams extends js.Object {
   /**
+    * An array of suggested words to show the user to replace the `misspelledWord`.
+    * Only available if there is a misspelled word and spellchecker is enabled.
+    */
+  var dictionarySuggestions: js.Array[String]
+  /**
     * These flags indicate whether the renderer believes it is able to perform the
     * corresponding action.
     */
@@ -35,7 +40,7 @@ trait ContextMenuParams extends js.Object {
   var hasImageContents: Boolean
   /**
     * If the context menu was invoked on an input field, the type of that field.
-    * Possible values are none, plainText, password, other.
+    * Possible values are `none`, `plainText`, `password`, `other`.
     */
   var inputFieldType: String
   /**
@@ -56,13 +61,13 @@ trait ContextMenuParams extends js.Object {
     */
   var mediaFlags: MediaFlags
   /**
-    * Type of the node the context menu was invoked on. Can be none, image, audio,
-    * video, canvas, file or plugin.
+    * Type of the node the context menu was invoked on. Can be `none`, `image`,
+    * `audio`, `video`, `canvas`, `file` or `plugin`.
     */
   var mediaType: none | image | audio | video | canvas | file | plugin
   /**
-    * Input source that invoked the context menu. Can be none, mouse, keyboard, touch
-    * or touchMenu.
+    * Input source that invoked the context menu. Can be `none`, `mouse`, `keyboard`,
+    * `touch` or `touchMenu`.
     */
   var menuSourceType: none | mouse | keyboard | touch | touchMenu
   /**
@@ -99,6 +104,7 @@ trait ContextMenuParams extends js.Object {
 object ContextMenuParams {
   @scala.inline
   def apply(
+    dictionarySuggestions: js.Array[String],
     editFlags: EditFlags,
     frameCharset: String,
     frameURL: String,
@@ -118,7 +124,7 @@ object ContextMenuParams {
     x: Double,
     y: Double
   ): ContextMenuParams = {
-    val __obj = js.Dynamic.literal(editFlags = editFlags.asInstanceOf[js.Any], frameCharset = frameCharset.asInstanceOf[js.Any], frameURL = frameURL.asInstanceOf[js.Any], hasImageContents = hasImageContents.asInstanceOf[js.Any], inputFieldType = inputFieldType.asInstanceOf[js.Any], isEditable = isEditable.asInstanceOf[js.Any], linkText = linkText.asInstanceOf[js.Any], linkURL = linkURL.asInstanceOf[js.Any], mediaFlags = mediaFlags.asInstanceOf[js.Any], mediaType = mediaType.asInstanceOf[js.Any], menuSourceType = menuSourceType.asInstanceOf[js.Any], misspelledWord = misspelledWord.asInstanceOf[js.Any], pageURL = pageURL.asInstanceOf[js.Any], selectionText = selectionText.asInstanceOf[js.Any], srcURL = srcURL.asInstanceOf[js.Any], titleText = titleText.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(dictionarySuggestions = dictionarySuggestions.asInstanceOf[js.Any], editFlags = editFlags.asInstanceOf[js.Any], frameCharset = frameCharset.asInstanceOf[js.Any], frameURL = frameURL.asInstanceOf[js.Any], hasImageContents = hasImageContents.asInstanceOf[js.Any], inputFieldType = inputFieldType.asInstanceOf[js.Any], isEditable = isEditable.asInstanceOf[js.Any], linkText = linkText.asInstanceOf[js.Any], linkURL = linkURL.asInstanceOf[js.Any], mediaFlags = mediaFlags.asInstanceOf[js.Any], mediaType = mediaType.asInstanceOf[js.Any], menuSourceType = menuSourceType.asInstanceOf[js.Any], misspelledWord = misspelledWord.asInstanceOf[js.Any], pageURL = pageURL.asInstanceOf[js.Any], selectionText = selectionText.asInstanceOf[js.Any], srcURL = srcURL.asInstanceOf[js.Any], titleText = titleText.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ContextMenuParams]
   }

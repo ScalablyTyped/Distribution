@@ -1,7 +1,7 @@
 package typings.cassandraDriver.metadataMod.metadata
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.cassandraDriver.AnonClass
+import typings.cassandraDriver.AnonDictoption
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,7 +28,7 @@ object TableMetadata {
     comment: String,
     compactionClass: String,
     compactionOptions: StringDictionary[js.Any],
-    compression: AnonClass,
+    compression: AnonDictoption,
     defaultTtl: Double,
     extensions: StringDictionary[js.Any],
     gcGraceSeconds: Double,

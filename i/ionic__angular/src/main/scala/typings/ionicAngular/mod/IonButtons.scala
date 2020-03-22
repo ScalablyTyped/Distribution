@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/angular", "IonButtons")
 @js.native
 class IonButtons protected ()
-  extends typings.ionicAngular.distMod.IonButtons {
+  extends typings.ionicAngular.proxiesMod.IonButtons {
   def this(c: ChangeDetectorRef, r: ElementRef[_], z: NgZone) = this()
 }
 

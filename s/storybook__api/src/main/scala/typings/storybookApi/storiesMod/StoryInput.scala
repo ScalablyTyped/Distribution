@@ -1,6 +1,6 @@
 package typings.storybookApi.storiesMod
 
-import typings.storybookApi.AnonFilename
+import typings.storybookApi.AnonDictparameterName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ trait StoryInput extends js.Object {
   var isLeaf: Boolean
   var kind: String
   var name: String
-  var parameters: AnonFilename
+  var parameters: AnonDictparameterName
 }
 
 object StoryInput {
@@ -22,7 +22,7 @@ object StoryInput {
     isLeaf: Boolean,
     kind: String,
     name: String,
-    parameters: AnonFilename
+    parameters: AnonDictparameterName
   ): StoryInput = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isLeaf = isLeaf.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any])
   

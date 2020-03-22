@@ -8,7 +8,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.highcharts.mod.SeriesOptions because var conflicts: zIndex. Inlined id, index, legendIndex, mapData, name, stack, treemap, `type`, xAxis, yAxis */ trait SeriesXrangeOptions
+- typings.highcharts.mod.SeriesOptions because var conflicts: zIndex. Inlined id, index, legendIndex, mapData, name, stack, `type`, xAxis, yAxis */ trait SeriesXrangeOptions
   extends PlotXrangeOptions
      with SeriesOptionsType {
   /**
@@ -23,7 +23,7 @@ import scala.scalajs.js.annotation._
     * configuration objects as seen below. (see online documentation for
     * example)
     */
-  var data: js.UndefOr[js.Array[SeriesXrangeDataOptions]] = js.undefined
+  var data: js.UndefOr[js.Array[XrangePointOptionsObject]] = js.undefined
   /**
     * Not available
     */
@@ -71,7 +71,6 @@ import scala.scalajs.js.annotation._
     * string.
     */
   var stack: js.UndefOr[Double | String] = js.undefined
-  var treemap: js.UndefOr[SeriesTreemapOptions] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) This property is only in
     * TypeScript non-optional and might be `undefined` in series objects from
@@ -98,10 +97,10 @@ object SeriesXrangeOptions {
   @scala.inline
   def apply(
     `type`: String | xrange,
-    accessibility: js.Object | PlotXrangeAccessibilityOptions = null,
+    accessibility: SeriesAccessibilityOptionsObject = null,
     allAreas: js.UndefOr[Boolean] = js.undefined,
     allowPointSelect: js.UndefOr[Boolean] = js.undefined,
-    animation: Boolean | AnimationOptionsObject | PlotXrangeAnimationOptions = null,
+    animation: Boolean | AnimationOptionsObject = null,
     animationLimit: Int | Double = null,
     boostBlending: OptionsBoostBlendingValue = null,
     borderColor: ColorString | GradientColorObject | PatternObject = null,
@@ -118,19 +117,20 @@ object SeriesXrangeOptions {
     compare: String = null,
     compareBase: `0` | `100` = null,
     compareStart: js.UndefOr[Boolean] = js.undefined,
-    connectors: PlotXrangeConnectorsOptions = null,
+    connectors: SeriesConnectorsOptionsObject = null,
     crisp: js.UndefOr[scala.Nothing] = js.undefined,
     cursor: String | CursorValue = null,
-    data: js.Array[SeriesXrangeDataOptions] = null,
-    dataGrouping: PlotXrangeDataGroupingOptions = null,
-    dataLabels: js.Any = null,
+    data: js.Array[XrangePointOptionsObject] = null,
+    dataGrouping: DataGroupingOptionsObject = null,
+    dataLabels: DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject] = null,
+    dataSorting: DataSortingOptionsObject | PlotXrangeDataSortingOptions = null,
     depth: js.UndefOr[scala.Nothing] = js.undefined,
     description: String = null,
-    dragDrop: PlotXrangeDragDropOptions = null,
+    dragDrop: SeriesDragDropOptionsObject = null,
     edgeColor: js.UndefOr[scala.Nothing] = js.undefined,
     edgeWidth: js.UndefOr[scala.Nothing] = js.undefined,
     enableMouseTracking: js.UndefOr[Boolean] = js.undefined,
-    events: PlotXrangeEventsOptions = null,
+    events: SeriesEventsOptionsObject = null,
     groupPadding: Int | Double = null,
     groupZPadding: Int | Double = null,
     grouping: js.UndefOr[Boolean] = js.undefined,
@@ -139,9 +139,9 @@ object SeriesXrangeOptions {
     index: Int | Double = null,
     joinBy: String | js.Array[String] = null,
     keys: js.Array[String] = null,
-    label: PlotXrangeLabelOptions = null,
-    lastPrice: PlotXrangeLastPriceOptions = null,
-    lastVisiblePrice: PlotXrangeLastVisiblePriceOptions = null,
+    label: SeriesLabelOptionsObject = null,
+    lastPrice: SeriesLastPriceOptionsObject = null,
+    lastVisiblePrice: SeriesLastVisiblePriceOptionsObject = null,
     legendIndex: Int | Double = null,
     linkedTo: String = null,
     mapData: js.Array[SeriesMapDataOptions] | js.Any = null,
@@ -151,7 +151,7 @@ object SeriesXrangeOptions {
     navigatorOptions: PlotSeriesOptions = null,
     opacity: Int | Double = null,
     partialFill: PlotXrangePartialFillOptions = null,
-    point: PlotXrangePointOptions = null,
+    point: PlotSeriesPointOptions = null,
     pointDescriptionFormatter: js.Function = null,
     pointPadding: Int | Double = null,
     pointRange: Int | Double = null,
@@ -163,17 +163,16 @@ object SeriesXrangeOptions {
     showInNavigator: js.UndefOr[Boolean] = js.undefined,
     skipKeyboardNavigation: js.UndefOr[Boolean] = js.undefined,
     stack: Double | String = null,
-    states: PlotXrangeStatesOptions = null,
+    states: SeriesStatesOptionsObject = null,
     stickyTracking: js.UndefOr[Boolean] = js.undefined,
-    tooltip: PlotXrangeTooltipOptions = null,
-    treemap: SeriesTreemapOptions = null,
+    tooltip: SeriesTooltipOptionsObject = null,
     turboThreshold: Int | Double = null,
     visible: js.UndefOr[Boolean] = js.undefined,
     xAxis: Double | String = null,
     yAxis: Double | String = null,
     zIndex: Int | Double = null,
     zoneAxis: String = null,
-    zones: js.Array[PlotXrangeZonesOptions] = null
+    zones: js.Array[SeriesZonesOptionsObject] = null
   ): SeriesXrangeOptions = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -203,6 +202,7 @@ object SeriesXrangeOptions {
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (dataGrouping != null) __obj.updateDynamic("dataGrouping")(dataGrouping.asInstanceOf[js.Any])
     if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
+    if (dataSorting != null) __obj.updateDynamic("dataSorting")(dataSorting.asInstanceOf[js.Any])
     if (!js.isUndefined(depth)) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (dragDrop != null) __obj.updateDynamic("dragDrop")(dragDrop.asInstanceOf[js.Any])
@@ -245,7 +245,6 @@ object SeriesXrangeOptions {
     if (states != null) __obj.updateDynamic("states")(states.asInstanceOf[js.Any])
     if (!js.isUndefined(stickyTracking)) __obj.updateDynamic("stickyTracking")(stickyTracking.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (treemap != null) __obj.updateDynamic("treemap")(treemap.asInstanceOf[js.Any])
     if (turboThreshold != null) __obj.updateDynamic("turboThreshold")(turboThreshold.asInstanceOf[js.Any])
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     if (xAxis != null) __obj.updateDynamic("xAxis")(xAxis.asInstanceOf[js.Any])

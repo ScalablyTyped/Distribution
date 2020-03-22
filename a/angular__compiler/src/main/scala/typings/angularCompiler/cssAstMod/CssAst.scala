@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class CssAst protected () extends js.Object {
   def this(location: ParseSourceSpan) = this()
-  val end: ParseLocation = js.native
   var location: ParseSourceSpan = js.native
-  val start: ParseLocation = js.native
+  def end(): ParseLocation = js.native
+  def start(): ParseLocation = js.native
   def visit(visitor: CssAstVisitor): js.Any = js.native
   def visit(visitor: CssAstVisitor, context: js.Any): js.Any = js.native
 }

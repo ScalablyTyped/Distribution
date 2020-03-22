@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("gitlab", "EpicDiscussions")
 @js.native
-class EpicDiscussions ()
+class EpicDiscussions protected ()
   extends typings.gitlab.servicesMod.EpicDiscussions {
   def this(options: BaseServiceOptions) = this()
 }

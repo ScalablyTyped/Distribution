@@ -1,9 +1,7 @@
 package typings.antd.buttonButtonMod
 
-import typings.antd.contextMod.ConfigConsumerProps
 import typings.react.mod.Component
 import typings.react.mod.MouseEventHandler
-import typings.react.mod._Global_.JSX.Element
 import typings.std.HTMLAnchorElement
 import typings.std.HTMLButtonElement
 import typings.std.HTMLElement
@@ -25,7 +23,6 @@ trait Button
   def componentWillUnmount_MButton(): Unit = js.native
   def fixTwoCNChar(): Unit = js.native
   def isNeedInserted(): Boolean = js.native
-  def renderButton(hasGetPrefixClsAutoInsertSpaceInButton: ConfigConsumerProps): Element = js.native
   def saveButtonRef(): Unit = js.native
   def saveButtonRef(node: HTMLElement): Unit = js.native
 }

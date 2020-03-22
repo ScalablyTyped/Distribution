@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ionic/angular/dist/directives/proxies", "IonToolbar")
+@JSImport("@ionic/angular/directives/proxies", "IonToolbar")
 @js.native
 class IonToolbar protected ()
   extends typings.ionicCore.componentsMod.Components.IonToolbar {

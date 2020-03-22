@@ -12,7 +12,7 @@ object mod extends js.Object {
   // declare function isSvg(input: string | Buffer): boolean;
   // export = isSvg;
   @JSName("default")
-  var default_Original: AnonDefault = js.native
+  var default_Original: AnonCall = js.native
   /**
   	Check if a string or buffer is [SVG](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics).
   	@param input - The data to check.

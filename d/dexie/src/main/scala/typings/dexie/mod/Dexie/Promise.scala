@@ -1,7 +1,7 @@
 package typings.dexie.mod.Dexie
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dexie.AnonTError
+import typings.dexie.AnonInstantiableTError
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -29,7 +29,7 @@ trait Promise[T] extends js.Object {
     * @returns A Promise for the completion of the callback.
     */
   def `catch`[TError](
-    errorConstructor: AnonTError[TError],
+    errorConstructor: AnonInstantiableTError[TError],
     onrejected: js.Function1[/* reason */ TError, T | js.Thenable[T]]
   ): Promise[T] = js.native
   // Extended methods provided by Dexie.Promise:
@@ -53,7 +53,7 @@ trait Promise[T] extends js.Object {
     */
   @JSName("catch")
   def catch_TResultTError[TResult, TError](
-    errorConstructor: AnonTError[TError],
+    errorConstructor: AnonInstantiableTError[TError],
     onrejected: js.Function1[/* reason */ TError, TResult | js.Thenable[TResult]]
   ): Promise[T | TResult] = js.native
   /**

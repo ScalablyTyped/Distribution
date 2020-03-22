@@ -8,12 +8,12 @@ trait PlotGanttDragDropGuideBoxOptions extends js.Object {
   /**
     * (Gantt) Style options for the guide box default state.
     */
-  var default: js.UndefOr[PlotGanttDragDropGuideBoxDefaultOptions] = js.undefined
+  var default: js.UndefOr[DragDropGuideBoxOptionsObject] = js.undefined
 }
 
 object PlotGanttDragDropGuideBoxOptions {
   @scala.inline
-  def apply(default: PlotGanttDragDropGuideBoxDefaultOptions = null): PlotGanttDragDropGuideBoxOptions = {
+  def apply(default: DragDropGuideBoxOptionsObject = null): PlotGanttDragDropGuideBoxOptions = {
     val __obj = js.Dynamic.literal()
     if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotGanttDragDropGuideBoxOptions]

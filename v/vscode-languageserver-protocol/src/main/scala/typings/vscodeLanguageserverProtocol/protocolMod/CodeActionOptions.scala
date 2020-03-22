@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait CodeActionOptions extends js.Object {
+trait CodeActionOptions extends WorkDoneProgressOptions {
   /**
     * CodeActionKinds that this server may return.
     *
@@ -17,9 +17,13 @@ trait CodeActionOptions extends js.Object {
 
 object CodeActionOptions {
   @scala.inline
-  def apply(codeActionKinds: js.Array[CodeActionKind] = null): CodeActionOptions = {
+  def apply(
+    codeActionKinds: js.Array[CodeActionKind] = null,
+    workDoneProgress: js.UndefOr[Boolean] = js.undefined
+  ): CodeActionOptions = {
     val __obj = js.Dynamic.literal()
     if (codeActionKinds != null) __obj.updateDynamic("codeActionKinds")(codeActionKinds.asInstanceOf[js.Any])
+    if (!js.isUndefined(workDoneProgress)) __obj.updateDynamic("workDoneProgress")(workDoneProgress.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodeActionOptions]
   }
 }

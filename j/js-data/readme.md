@@ -1,7 +1,7 @@
 
 # Scala.js typings for js-data
 
-Typings are for version 3.0.8
+Typings are for version 4.0.0-beta.4
 
 ## Library description:
 Robust, framework-agnostic in-memory data store.

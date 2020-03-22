@@ -1,7 +1,7 @@
 package typings.cassandraDriver.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.cassandraDriver.AnonParamsQuery
+import typings.cassandraDriver.AnonQuery
 import typings.cassandraDriver.datastaxMod.datastax.graph.GraphResultSet
 import typings.cassandraDriver.metadataMod.metadata.ClientState
 import typings.cassandraDriver.metadataMod.metadata.Metadata
@@ -22,14 +22,10 @@ class Client protected () extends EventEmitter {
   var keyspace: String = js.native
   var metadata: Metadata = js.native
   var metrics: ClientMetrics = js.native
-  def batch(queries: js.Array[String | AnonParamsQuery]): js.Promise[ResultSet] = js.native
-  def batch(queries: js.Array[String | AnonParamsQuery], callback: ValueCallback[ResultSet]): Unit = js.native
-  def batch(queries: js.Array[String | AnonParamsQuery], options: QueryOptions): js.Promise[ResultSet] = js.native
-  def batch(
-    queries: js.Array[String | AnonParamsQuery],
-    options: QueryOptions,
-    callback: ValueCallback[ResultSet]
-  ): Unit = js.native
+  def batch(queries: js.Array[String | AnonQuery]): js.Promise[ResultSet] = js.native
+  def batch(queries: js.Array[String | AnonQuery], callback: ValueCallback[ResultSet]): Unit = js.native
+  def batch(queries: js.Array[String | AnonQuery], options: QueryOptions): js.Promise[ResultSet] = js.native
+  def batch(queries: js.Array[String | AnonQuery], options: QueryOptions, callback: ValueCallback[ResultSet]): Unit = js.native
   def connect(): js.Promise[Unit] = js.native
   def connect(callback: EmptyCallback): Unit = js.native
   def eachRow(

@@ -13,11 +13,11 @@ trait IonItemSliding extends js.Object {
     */
   var disabled: Boolean = js.native
   /**
-    * Close the sliding item. Items can also be closed from the [List](../../list/List).
+    * Close the sliding item. Items can also be closed from the [List](../list).
     */
   def close(): js.Promise[Unit] = js.native
   /**
-    * Close all of the sliding items in the list. Items can also be closed from the [List](../../list/List).
+    * Close all of the sliding items in the list. Items can also be closed from the [List](../list).
     */
   def closeOpened(): js.Promise[Boolean] = js.native
   /**

@@ -1,7 +1,7 @@
 package typings.hardSourceWebpackPlugin.mod
 
-import typings.hardSourceWebpackPlugin.AnonDebug
 import typings.hardSourceWebpackPlugin.AnonDirectories
+import typings.hardSourceWebpackPlugin.AnonLevel
 import typings.hardSourceWebpackPlugin.AnonMaxAge
 import typings.webpack.mod.Configuration
 import scala.scalajs.js
@@ -13,7 +13,7 @@ trait Options extends js.Object {
   var cachePrune: js.UndefOr[AnonMaxAge] = js.undefined
   var configHash: js.UndefOr[String | (js.Function1[/* webpackConfig */ js.UndefOr[Configuration], String])] = js.undefined
   var environmentHash: js.UndefOr[AnonDirectories] = js.undefined
-  var info: js.UndefOr[AnonDebug] = js.undefined
+  var info: js.UndefOr[AnonLevel] = js.undefined
 }
 
 object Options {
@@ -23,7 +23,7 @@ object Options {
     cachePrune: AnonMaxAge = null,
     configHash: String | (js.Function1[/* webpackConfig */ js.UndefOr[Configuration], String]) = null,
     environmentHash: AnonDirectories = null,
-    info: AnonDebug = null
+    info: AnonLevel = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (cacheDirectory != null) __obj.updateDynamic("cacheDirectory")(cacheDirectory.asInstanceOf[js.Any])

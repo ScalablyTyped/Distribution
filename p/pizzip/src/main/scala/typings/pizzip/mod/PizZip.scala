@@ -2,11 +2,11 @@ package typings.pizzip.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.node.Buffer
-import typings.pizzip.AnonArraybuffer
-import typings.pizzip.AnonBase64String
-import typings.pizzip.AnonBlob
-import typings.pizzip.AnonNodebuffer
-import typings.pizzip.AnonType
+import typings.pizzip.GenerateOptionstypearrayb
+import typings.pizzip.GenerateOptionstypeblob
+import typings.pizzip.GenerateOptionstypenodebu
+import typings.pizzip.GenerateOptionstypestring
+import typings.pizzip.GenerateOptionstypeuint8a
 import typings.std.ArrayBuffer
 import typings.std.Blob
 import typings.std.RegExp
@@ -67,15 +67,11 @@ trait PizZip extends js.Object {
     * @param options the options to generate the zip file
     */
   def generate(): String = js.native
-  def generate(options: GenerateOptions with AnonBase64String): String = js.native
-  @JSName("generate")
-  def generate_ArrayBuffer(options: GenerateOptions with AnonArraybuffer): ArrayBuffer = js.native
-  @JSName("generate")
-  def generate_Blob(options: GenerateOptions with AnonBlob): Blob = js.native
-  @JSName("generate")
-  def generate_Buffer(options: GenerateOptions with AnonNodebuffer): Buffer = js.native
-  @JSName("generate")
-  def generate_Uint8Array(options: GenerateOptions with AnonType): Uint8Array = js.native
+  def generate(options: GenerateOptionstypearrayb): ArrayBuffer = js.native
+  def generate(options: GenerateOptionstypeblob): Blob = js.native
+  def generate(options: GenerateOptionstypenodebu): Buffer = js.native
+  def generate(options: GenerateOptionstypestring): String = js.native
+  def generate(options: GenerateOptionstypeuint8a): Uint8Array = js.native
   /**
     * Read an existing zip and merge the data in the current PizZip object at the current folder level.
     * This technique has some limitations, see https://github.com/open-xml-templating/pizzip/blob/master/documentation/limitations.md

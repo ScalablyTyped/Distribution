@@ -13,7 +13,8 @@ import scala.scalajs.js.annotation._
 trait OffscreenCanvas
   extends CanvasImageSource
      with EventTarget
-     with TexImageSource {
+     with TexImageSource
+     with Transferable {
   /**
     * These attributes return the dimensions of the OffscreenCanvas object's bitmap.
     * 

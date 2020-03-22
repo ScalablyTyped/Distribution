@@ -1,5 +1,7 @@
 package typings.jose.mod.JWK
 
+import typings.jose.mod.ECCurve
+import typings.jose.mod.OKPCurve
 import typings.jose.mod._ProduceKeyInput
 import typings.jose.mod.keyObjectTypes
 import typings.jose.mod.keyOperation
@@ -12,21 +14,33 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Key extends _ProduceKeyInput {
-  var alg: js.UndefOr[String] = js.native
-  var keyObject: KeyObject = js.native
-  var key_ops: js.UndefOr[js.Array[keyOperation]] = js.native
-  var kid: String = js.native
-  var kty: keyType = js.native
-  var `private`: Boolean = js.native
-  var public: Boolean = js.native
-  var secret: Boolean = js.native
-  var thumbprint: String = js.native
-  var `type`: keyObjectTypes = js.native
-  var use: js.UndefOr[typings.jose.mod.use] = js.native
-  var x5c: js.UndefOr[js.Array[String]] = js.native
-  var x5t: js.UndefOr[String] = js.native
+  val alg: js.UndefOr[String] = js.native
+  val crv: js.UndefOr[ECCurve | OKPCurve] = js.native
+  val d: js.UndefOr[String] = js.native
+  val dp: js.UndefOr[String] = js.native
+  val dq: js.UndefOr[String] = js.native
+  val e: js.UndefOr[String] = js.native
+  val k: js.UndefOr[String] = js.native
+  val keyObject: KeyObject = js.native
+  val key_ops: js.UndefOr[js.Array[keyOperation]] = js.native
+  val kid: String = js.native
+  val kty: keyType = js.native
+  val n: js.UndefOr[String] = js.native
+  val p: js.UndefOr[String] = js.native
+  val `private`: Boolean = js.native
+  val public: Boolean = js.native
+  val q: js.UndefOr[String] = js.native
+  val qi: js.UndefOr[String] = js.native
+  val secret: Boolean = js.native
+  val thumbprint: String = js.native
+  val `type`: keyObjectTypes = js.native
+  val use: js.UndefOr[typings.jose.mod.use] = js.native
+  val x: js.UndefOr[String] = js.native
+  val x5c: js.UndefOr[js.Array[String]] = js.native
+  val x5t: js.UndefOr[String] = js.native
   @JSName("x5t#S256")
-  var x5tNumbersignS256: js.UndefOr[String] = js.native
+  val x5tNumbersignS256: js.UndefOr[String] = js.native
+  val y: js.UndefOr[String] = js.native
   def algorithms(): Set[String] = js.native
   def algorithms(operation: keyOperation): Set[String] = js.native
   def toPEM(): String = js.native

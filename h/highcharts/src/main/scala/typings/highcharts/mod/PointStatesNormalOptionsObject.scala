@@ -6,7 +6,8 @@ import scala.scalajs.js.annotation._
 
 trait PointStatesNormalOptionsObject extends js.Object {
   /**
-    * Animation when returning to normal state after hovering.
+    * (Highcharts, Highstock) Animation when returning to normal state after
+    * hovering.
     */
   var animation: js.UndefOr[Boolean | AnimationOptionsObject] = js.undefined
 }

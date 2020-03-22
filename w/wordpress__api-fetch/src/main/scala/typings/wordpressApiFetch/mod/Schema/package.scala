@@ -11,18 +11,14 @@ package object Schema {
     typings.wordpressApiFetch.mod.Schema.ViewKeys.Block | typings.wordpressApiFetch.mod.Schema.EmbedKeys.Block
   ])
   // prettier-ignore
-  type Category[T /* <: typings.wordpressApiFetch.mod.Schema.Context */] = typings.wordpressApiFetch.mod.Schema.BaseCategory | (typings.std.Pick[
-    typings.wordpressApiFetch.mod.Schema.BaseCategory, 
-    typings.wordpressApiFetch.mod.Schema.ViewKeys.Category | typings.wordpressApiFetch.mod.Schema.EmbedKeys.Category
-  ])
-  // prettier-ignore
   type Comment[T /* <: typings.wordpressApiFetch.mod.Schema.Context */] = typings.wordpressApiFetch.mod.Schema.BaseComment[T] | (typings.std.Pick[
     typings.wordpressApiFetch.mod.Schema.BaseComment[T], 
     typings.wordpressApiFetch.mod.Schema.ViewKeys.Comment | typings.wordpressApiFetch.mod.Schema.EmbedKeys.Comment
   ])
   type Contextual[T /* <: typings.wordpressApiFetch.mod.Schema.Context */, TAdditional, TEditAdditional] = (typings.wordpressApiFetch.AnonRendered with TAdditional) | (typings.wordpressApiFetch.AnonRaw with TAdditional with TEditAdditional)
   type Decontextualize[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ k in keyof T ]: T[k] extends @wordpress/api-fetch.@wordpress/api-fetch.Schema.Contextual<any, {}, {}>? string : T[k]}
+  {[ k in keyof T ]: T[k] extends / * Inlined @wordpress/api-fetch.@wordpress/api-fetch.Schema.Contextual<any, {}, {}> * /
+  {  rendered  :string}? string : T[k]}
     */ typings.wordpressApiFetch.wordpressApiFetchStrings.Decontextualize with js.Any
   // prettier-ignore
   type Media[T /* <: typings.wordpressApiFetch.mod.Schema.Context */] = typings.wordpressApiFetch.mod.Schema.BaseMedia[T] | (typings.std.Pick[
@@ -30,47 +26,14 @@ package object Schema {
     typings.wordpressApiFetch.mod.Schema.ViewKeys.Media | typings.wordpressApiFetch.mod.Schema.EmbedKeys.Media
   ])
   // prettier-ignore
-  type Page[T /* <: typings.wordpressApiFetch.mod.Schema.Context */] = typings.wordpressApiFetch.mod.Schema.BasePage[T] | (typings.std.Pick[
-    typings.wordpressApiFetch.mod.Schema.BasePage[T], 
-    typings.wordpressApiFetch.mod.Schema.ViewKeys.Page | typings.wordpressApiFetch.mod.Schema.EmbedKeys.Page
-  ])
-  // prettier-ignore
   type Post[T /* <: typings.wordpressApiFetch.mod.Schema.Context */] = typings.wordpressApiFetch.mod.Schema.BasePost[T] | (typings.std.Pick[
     typings.wordpressApiFetch.mod.Schema.BasePost[T], 
     typings.wordpressApiFetch.mod.Schema.ViewKeys.Post | typings.wordpressApiFetch.mod.Schema.EmbedKeys.Post
   ])
   // prettier-ignore
-  type PostOrPage[T /* <: typings.wordpressApiFetch.mod.Schema.Context */] = (typings.wordpressApiFetch.mod.Schema.BasePost[T] with typings.std.Partial[typings.wordpressApiFetch.mod.Schema.BasePage[T]]) | ((typings.std.Pick[
-    typings.wordpressApiFetch.mod.Schema.BasePost[T], 
-    typings.wordpressApiFetch.mod.Schema.ViewKeys.Post
-  ]) with (typings.std.Partial[
-    typings.std.Pick[
-      typings.wordpressApiFetch.mod.Schema.BasePage[T], 
-      typings.wordpressApiFetch.mod.Schema.ViewKeys.Page
-    ]
-  ])) | ((typings.std.Pick[
-    typings.wordpressApiFetch.mod.Schema.BasePost[T], 
-    typings.wordpressApiFetch.mod.Schema.EmbedKeys.Post
-  ]) with (typings.std.Partial[
-    typings.std.Pick[
-      typings.wordpressApiFetch.mod.Schema.BasePage[T], 
-      typings.wordpressApiFetch.mod.Schema.EmbedKeys.Page
-    ]
-  ]))
-  // prettier-ignore
   type PostRevision[T /* <: typings.wordpressApiFetch.mod.Schema.Context */] = typings.wordpressApiFetch.mod.Schema.BasePostRevision[T] | (typings.std.Pick[
     typings.wordpressApiFetch.mod.Schema.BasePostRevision[T], 
     typings.wordpressApiFetch.mod.Schema.ViewKeys.PostRevision | typings.wordpressApiFetch.mod.Schema.EmbedKeys.PostRevision
-  ])
-  // prettier-ignore
-  type Status[T /* <: typings.wordpressApiFetch.mod.Schema.Context */] = typings.wordpressApiFetch.mod.Schema.BaseStatus | (typings.std.Pick[
-    typings.wordpressApiFetch.mod.Schema.BaseStatus, 
-    typings.wordpressApiFetch.mod.Schema.ViewKeys.Status | typings.wordpressApiFetch.mod.Schema.EmbedKeys.Status
-  ])
-  // prettier-ignore
-  type Tag[T /* <: typings.wordpressApiFetch.mod.Schema.Context */] = typings.wordpressApiFetch.mod.Schema.BaseTag | (typings.std.Pick[
-    typings.wordpressApiFetch.mod.Schema.BaseTag, 
-    typings.wordpressApiFetch.mod.Schema.EmbedKeys.Tag
   ])
   // prettier-ignore
   type Taxonomy[T /* <: typings.wordpressApiFetch.mod.Schema.Context */] = typings.wordpressApiFetch.mod.Schema.BaseTaxonomy[T] | (typings.std.Pick[

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ɵɵstyleMap extends js.Object {
   def apply(): Unit = js.native
+  def apply(styles: String): Unit = js.native
   def apply(styles: StringDictionary[js.Any]): Unit = js.native
-  def apply(styles: ɵNOCHANGE): Unit = js.native
 }
 

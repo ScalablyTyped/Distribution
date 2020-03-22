@@ -1,11 +1,9 @@
 package typings.jupyterlabLogconsoleExtension
 
-import typings.jupyterlabApplication.frontendMod.JupyterFrontEnd.IShell
-import typings.jupyterlabApplication.mod.JupyterFrontEnd
+import typings.jupyterlabApplication.frontendMod.JupyterFrontEndPlugin
 import typings.jupyterlabApputils.mod.ReactWidget
 import typings.jupyterlabLogconsole.mod.LogConsolePanel
 import typings.jupyterlabLogconsole.tokensMod.ILoggerRegistry
-import typings.phosphorApplication.mod.IPlugin
 import typings.react.mod.ChangeEvent
 import typings.react.mod.KeyboardEvent
 import typings.std.Element
@@ -36,6 +34,6 @@ object mod extends js.Object {
     def handleKeyDown(event: KeyboardEvent[Element]): Unit = js.native
   }
   
-  val default: js.Array[IPlugin[JupyterFrontEnd[IShell], ILoggerRegistry | Unit]] = js.native
+  val default: js.Array[JupyterFrontEndPlugin[ILoggerRegistry | Unit]] = js.native
 }
 

@@ -1,7 +1,7 @@
 package typings.serveHandler.mod
 
 import typings.node.httpMod.ServerResponse
-import typings.serveHandler.FnOptions
+import typings.serveHandler.FnCall
 import typings.serveHandler.Typeoflstat
 import typings.serveHandler.Typeofreaddir
 import typings.serveHandler.Typeofrealpath
@@ -10,7 +10,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Methods extends js.Object {
-  var createReadStream: js.UndefOr[FnOptions] = js.undefined
+  var createReadStream: js.UndefOr[FnCall] = js.undefined
   var lstat: js.UndefOr[Typeoflstat] = js.undefined
   var readdir: js.UndefOr[Typeofreaddir] = js.undefined
   var realpath: js.UndefOr[Typeofrealpath] = js.undefined
@@ -20,7 +20,7 @@ trait Methods extends js.Object {
 object Methods {
   @scala.inline
   def apply(
-    createReadStream: FnOptions = null,
+    createReadStream: FnCall = null,
     lstat: Typeoflstat = null,
     readdir: Typeofreaddir = null,
     realpath: Typeofrealpath = null,

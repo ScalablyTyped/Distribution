@@ -2,7 +2,7 @@ package typings.tar.mod
 
 import typings.node.streamMod.Writable
 import typings.std.Error
-import typings.tar.AnonSync
+import typings.tar.ListOptionsFileOptionssyn
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,8 +11,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object list extends js.Object {
   def apply(): Writable = js.native
-  def apply(options: ListOptions with FileOptions with AnonSync): Unit = js.native
-  def apply(options: ListOptions with FileOptions with AnonSync, fileList: js.Array[String]): Unit = js.native
+  def apply(options: ListOptions with FileOptions): js.Promise[Unit] = js.native
+  def apply(options: ListOptions with FileOptions, fileList: js.Array[String]): js.Promise[Unit] = js.native
+  def apply(options: ListOptionsFileOptionssyn): Unit = js.native
+  def apply(options: ListOptionsFileOptionssyn, fileList: js.Array[String]): Unit = js.native
   def apply(
     options: ListOptions,
     fileList: js.Array[String],

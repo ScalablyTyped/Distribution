@@ -2,8 +2,10 @@ package typings.angularCompiler.apiMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.angularCompiler.AnonUsesOnChanges
+import typings.angularCompiler.angularCompilerStrings.invalid
 import typings.angularCompiler.outputAstMod.Expression
 import typings.angularCompiler.r3FactoryMod.R3DependencyMetadata
+import typings.angularCompiler.render3UtilMod.R3Reference
 import typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,12 +15,16 @@ trait R3DirectiveMetadata extends js.Object {
   /**
     * Dependencies of the directive's constructor.
     */
-  var deps: js.Array[R3DependencyMetadata] | Null
+  var deps: js.Array[R3DependencyMetadata] | invalid | Null
   /**
     * Reference name under which to export the directive's type in a template,
     * if any.
     */
   var exportAs: js.Array[String] | Null
+  /**
+    * Whether or not the component or directive inherits its entire decorator from its base class.
+    */
+  var fullInheritance: Boolean
   /**
     * Mappings indicating how the directive interacts with its host element (host bindings,
     * listeners, etc).
@@ -28,6 +34,14 @@ trait R3DirectiveMetadata extends js.Object {
     * A mapping of input field names to the property names.
     */
   var inputs: StringDictionary[String | (js.Tuple2[String, String])]
+  /**
+    * An expression representing a reference to the directive being compiled, intended for use within
+    * a class definition itself.
+    *
+    * This can differ from the outer `type` if the class is being compiled by ngcc and is inside
+    * an IIFE structure that uses a different name internally.
+    */
+  var internalType: Expression
   /**
     * Information about usage of specific lifecycle events which require special treatment in the
     * code generator.
@@ -56,7 +70,7 @@ trait R3DirectiveMetadata extends js.Object {
   /**
     * An expression representing a reference to the directive itself.
     */
-  var `type`: Expression
+  var `type`: R3Reference
   /**
     * Number of generic type parameters of the type itself.
     */
@@ -78,23 +92,25 @@ trait R3DirectiveMetadata extends js.Object {
 object R3DirectiveMetadata {
   @scala.inline
   def apply(
+    fullInheritance: Boolean,
     host: R3HostMetadata,
     inputs: StringDictionary[String | (js.Tuple2[String, String])],
+    internalType: Expression,
     lifecycle: AnonUsesOnChanges,
     name: String,
     outputs: StringDictionary[String],
     queries: js.Array[R3QueryMetadata],
-    `type`: Expression,
+    `type`: R3Reference,
     typeArgumentCount: Double,
     typeSourceSpan: ParseSourceSpan,
     usesInheritance: Boolean,
     viewQueries: js.Array[R3QueryMetadata],
-    deps: js.Array[R3DependencyMetadata] = null,
+    deps: js.Array[R3DependencyMetadata] | invalid = null,
     exportAs: js.Array[String] = null,
     providers: Expression = null,
     selector: String = null
   ): R3DirectiveMetadata = {
-    val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any], lifecycle = lifecycle.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], outputs = outputs.asInstanceOf[js.Any], queries = queries.asInstanceOf[js.Any], typeArgumentCount = typeArgumentCount.asInstanceOf[js.Any], typeSourceSpan = typeSourceSpan.asInstanceOf[js.Any], usesInheritance = usesInheritance.asInstanceOf[js.Any], viewQueries = viewQueries.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(fullInheritance = fullInheritance.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any], internalType = internalType.asInstanceOf[js.Any], lifecycle = lifecycle.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], outputs = outputs.asInstanceOf[js.Any], queries = queries.asInstanceOf[js.Any], typeArgumentCount = typeArgumentCount.asInstanceOf[js.Any], typeSourceSpan = typeSourceSpan.asInstanceOf[js.Any], usesInheritance = usesInheritance.asInstanceOf[js.Any], viewQueries = viewQueries.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (deps != null) __obj.updateDynamic("deps")(deps.asInstanceOf[js.Any])
     if (exportAs != null) __obj.updateDynamic("exportAs")(exportAs.asInstanceOf[js.Any])

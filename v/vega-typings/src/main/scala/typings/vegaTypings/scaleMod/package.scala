@@ -19,27 +19,27 @@ package object scaleMod {
     - typings.vegaTypings.scaleMod.RangeEnum
     - typings.vegaTypings.scaleMod.RangeRaw
     - typings.vegaTypings.signalMod.SignalRef
-    - typings.vegaTypings.AnonCountExtent
+    - typings.vegaTypings.AnonExtent
   */
   type RangeScheme = typings.vegaTypings.scaleMod._RangeScheme | typings.vegaTypings.scaleMod.RangeRaw
   /* Rewritten from type alias, can be one of: 
     - js.Array[scala.Double | typings.vegaTypings.signalMod.SignalRef]
     - typings.vegaTypings.signalMod.SignalRef
-    - typings.vegaTypings.AnonStart
+    - typings.vegaTypings.scaleMod.ScaleBinParams
   */
   type ScaleBins = typings.vegaTypings.scaleMod._ScaleBins | (js.Array[scala.Double | typings.vegaTypings.signalMod.SignalRef])
-  type ScaleData = (typings.vegaTypings.scaleMod.DataRef with typings.vegaTypings.AnonSort) | (typings.vegaTypings.scaleMod.MultiDataRef with typings.vegaTypings.AnonSortUnionSortField)
+  type ScaleData = (typings.vegaTypings.scaleMod.ScaleDataRef | typings.vegaTypings.scaleMod.ScaleMultiDataRef | typings.vegaTypings.scaleMod.ScaleMultiFieldsRef) with typings.vegaTypings.AnonSort
   type ScaleField = java.lang.String | typings.vegaTypings.signalMod.SignalRef
   /* Rewritten from type alias, can be one of: 
     - scala.Boolean
-    - typings.vegaTypings.AnonOrder
-    - typings.vegaTypings.AnonFieldOp
+    - typings.vegaTypings.AnonOrderSortOrder
+    - typings.vegaTypings.AnonOp
   */
   type SortField = typings.vegaTypings.scaleMod._SortField | scala.Boolean
   /* Rewritten from type alias, can be one of: 
     - scala.Boolean
-    - typings.vegaTypings.AnonCountOp
-    - typings.vegaTypings.AnonCountField
+    - typings.vegaTypings.AnonOpOrder
+    - typings.vegaTypings.AnonFieldOp
   */
   type UnionSortField = typings.vegaTypings.scaleMod._UnionSortField | scala.Boolean
 }

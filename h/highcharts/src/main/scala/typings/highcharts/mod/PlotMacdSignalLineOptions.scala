@@ -16,15 +16,12 @@ trait PlotMacdSignalLineOptions extends js.Object {
     * `.highcharts-zone-{n}` class, or custom classed from the `className`
     * option (view live demo).
     */
-  var zones: js.UndefOr[js.Array[PlotMacdSignalLineZonesOptions]] = js.undefined
+  var zones: js.UndefOr[js.Array[SeriesZonesOptionsObject]] = js.undefined
 }
 
 object PlotMacdSignalLineOptions {
   @scala.inline
-  def apply(
-    styles: PlotMacdSignalLineStylesOptions = null,
-    zones: js.Array[PlotMacdSignalLineZonesOptions] = null
-  ): PlotMacdSignalLineOptions = {
+  def apply(styles: PlotMacdSignalLineStylesOptions = null, zones: js.Array[SeriesZonesOptionsObject] = null): PlotMacdSignalLineOptions = {
     val __obj = js.Dynamic.literal()
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     if (zones != null) __obj.updateDynamic("zones")(zones.asInstanceOf[js.Any])

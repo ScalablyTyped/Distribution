@@ -7,27 +7,27 @@ import scala.scalajs.js.annotation._
 @js.native
 trait PutEventsRequestEntry extends js.Object {
   /**
-    * A valid JSON string. There is no other schema imposed. The JSON string can contain fields and nested subobjects.
+    * A valid JSON string. There is no other schema imposed. The JSON string may contain fields and nested subobjects.
     */
   var Detail: js.UndefOr[String] = js.native
   /**
-    * Free-form string used to decide which fields to expect in the event detail.
+    * Free-form string used to decide what fields to expect in the event detail.
     */
   var DetailType: js.UndefOr[String] = js.native
   /**
-    * The event bus that will receive the event. Only the rules that are associated with this event bus can match the event.
+    * The event bus that will receive the event. Only the rules that are associated with this event bus will be able to match the event.
     */
   var EventBusName: js.UndefOr[NonPartnerEventBusName] = js.native
   /**
-    * AWS resources, identified by Amazon Resource Name (ARN), that the event primarily concerns. Any number, including zero, can be present.
+    * AWS resources, identified by Amazon Resource Name (ARN), which the event primarily concerns. Any number, including zero, may be present.
     */
   var Resources: js.UndefOr[EventResourceList] = js.native
   /**
-    * The source of the event. This field is required.
+    * The source of the event.
     */
   var Source: js.UndefOr[String] = js.native
   /**
-    * The timestamp of the event, per RFC3339. If no timestamp is provided, the timestamp of the PutEvents call is used.
+    * The time stamp of the event, per RFC3339. If no time stamp is provided, the time stamp of the PutEvents call is used.
     */
   var Time: js.UndefOr[EventTime] = js.native
 }

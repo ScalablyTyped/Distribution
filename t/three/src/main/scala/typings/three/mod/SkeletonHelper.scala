@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class SkeletonHelper protected ()
   extends typings.three.skeletonHelperMod.SkeletonHelper {
-  def this(bone: typings.three.object3DMod.Object3D) = this()
+  def this(`object`: typings.three.object3DMod.Object3D) = this()
 }
 

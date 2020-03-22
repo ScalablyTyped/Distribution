@@ -53,7 +53,7 @@ trait _Color
      with _ScrollbarColorProperty
      with _StopColorProperty
      with _TextDecorationColorProperty
-     with _TextDecorationProperty
+     with _TextDecorationProperty[js.Any]
      with _TextEmphasisColorProperty
      with _TextEmphasisProperty
      with _WebkitBorderBeforeColorProperty

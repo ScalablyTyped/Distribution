@@ -1,6 +1,6 @@
 package typings.nivoBar.mod
 
-import typings.nivoBar.dataFromindexeskeysLegendProps
+import typings.nivoBar.dataFromindexeskeysLegend
 import typings.nivoBar.nivoBarStrings.auto
 import typings.nivoBar.nivoBarStrings.grouped
 import typings.nivoBar.nivoBarStrings.horizontal
@@ -16,13 +16,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined std.Partial<{  indexBy  :string | @nivo/bar.@nivo/bar.IndexByFunc,   keys  :std.Array<string>,   groupMode  :'stacked' | 'grouped',   layout  :'horizontal' | 'vertical',   reverse  :boolean,   innerPadding  :number,   minValue  :number | 'auto',   margin  :@nivo/core.@nivo/core.Box,   maxValue  :number | 'auto',   padding  :number,   axisBottom  :@nivo/bar.@nivo/bar.Axis | null,   axisLeft  :@nivo/bar.@nivo/bar.Axis | null,   axisRight  :@nivo/bar.@nivo/bar.Axis | null,   axisTop  :@nivo/bar.@nivo/bar.Axis | null,   enableGridX  :boolean,   enableGridY  :boolean,   barComponent  :react.react.StatelessComponent<@nivo/bar.@nivo/bar.BarItemProps>,   enableLabel  :boolean,   label  :string | @nivo/bar.@nivo/bar.AccessorFunc,   labelFormat  :string | @nivo/bar.@nivo/bar.LabelFormatter,   labelLinkColor  :@nivo/colors.@nivo/colors.InheritedColorProp<@nivo/bar.@nivo/bar.BarDatumWithColor>,   labelSkipWidth  :number,   labelSkipHeight  :number,   labelTextColor  :@nivo/colors.@nivo/colors.InheritedColorProp<@nivo/bar.@nivo/bar.BarDatumWithColor>,   colors  :@nivo/colors.@nivo/colors.OrdinalColorsInstruction<any>,   borderRadius  :number,   borderWidth  :number,   theme  :@nivo/core.@nivo/core.Theme,   isInteractive  :boolean,   tooltipFormat  :string | @nivo/bar.@nivo/bar.ValueFormatter,   tooltip  :@nivo/bar.@nivo/bar.TooltipProp,   legends  :std.Array<{  dataFrom  :'indexes' | 'keys'} & @nivo/legends.@nivo/legends.LegendProps>,   markers  :std.Array<@nivo/core.@nivo/core.CartesianMarkerProps>}> */
+/* Inlined std.Partial<{  indexBy  :string | @nivo/bar.@nivo/bar.IndexByFunc,   keys  :std.Array<string>,   groupMode  :'stacked' | 'grouped',   layout  :'horizontal' | 'vertical',   reverse  :boolean,   innerPadding  :number,   minValue  :number | 'auto',   margin  :@nivo/core.@nivo/core.Box,   maxValue  :number | 'auto',   padding  :number,   axisBottom  :@nivo/bar.@nivo/bar.Axis | null,   axisLeft  :@nivo/bar.@nivo/bar.Axis | null,   axisRight  :@nivo/bar.@nivo/bar.Axis | null,   axisTop  :@nivo/bar.@nivo/bar.Axis | null,   enableGridX  :boolean,   enableGridY  :boolean,   barComponent  :react.react.StatelessComponent<@nivo/bar.@nivo/bar.BarItemProps>,   enableLabel  :boolean,   label  :string | @nivo/bar.@nivo/bar.AccessorFunc,   labelFormat  :string | @nivo/bar.@nivo/bar.LabelFormatter,   labelLinkColor  :@nivo/colors.@nivo/colors.InheritedColorProp<@nivo/bar.@nivo/bar.BarDatumWithColor>,   labelSkipWidth  :number,   labelSkipHeight  :number,   labelTextColor  :@nivo/colors.@nivo/colors.InheritedColorProp<@nivo/bar.@nivo/bar.BarDatumWithColor>,   colors  :@nivo/colors.@nivo/colors.OrdinalColorsInstruction<any>,   borderColor  :@nivo/colors.@nivo/colors.InheritedColorProp<@nivo/bar.@nivo/bar.BarDatumWithColor>,   borderRadius  :number,   borderWidth  :number,   theme  :@nivo/core.@nivo/core.Theme,   isInteractive  :boolean,   tooltipFormat  :string | @nivo/bar.@nivo/bar.ValueFormatter,   tooltip  :@nivo/bar.@nivo/bar.TooltipProp,   legends  :std.Array<{  dataFrom  :'indexes' | 'keys'} & @nivo/legends.@nivo/legends.LegendProps>,   markers  :std.Array<@nivo/core.@nivo/core.CartesianMarkerProps>}> */
 trait BarProps extends js.Object {
   var axisBottom: js.UndefOr[Axis] = js.undefined
   var axisLeft: js.UndefOr[Axis] = js.undefined
   var axisRight: js.UndefOr[Axis] = js.undefined
   var axisTop: js.UndefOr[Axis] = js.undefined
   var barComponent: js.UndefOr[StatelessComponent[BarItemProps]] = js.undefined
+  var borderColor: js.UndefOr[InheritedColorProp[BarDatumWithColor]] = js.undefined
   var borderRadius: js.UndefOr[Double] = js.undefined
   var borderWidth: js.UndefOr[Double] = js.undefined
   var colors: js.UndefOr[OrdinalColorsInstruction[_]] = js.undefined
@@ -41,7 +42,7 @@ trait BarProps extends js.Object {
   var labelSkipWidth: js.UndefOr[Double] = js.undefined
   var labelTextColor: js.UndefOr[InheritedColorProp[BarDatumWithColor]] = js.undefined
   var layout: js.UndefOr[horizontal | vertical] = js.undefined
-  var legends: js.UndefOr[js.Array[dataFromindexeskeysLegendProps]] = js.undefined
+  var legends: js.UndefOr[js.Array[dataFromindexeskeysLegend]] = js.undefined
   var margin: js.UndefOr[Box] = js.undefined
   var markers: js.UndefOr[js.Array[CartesianMarkerProps]] = js.undefined
   var maxValue: js.UndefOr[Double | auto] = js.undefined
@@ -61,6 +62,7 @@ object BarProps {
     axisRight: Axis = null,
     axisTop: Axis = null,
     barComponent: StatelessComponent[BarItemProps] = null,
+    borderColor: InheritedColorProp[BarDatumWithColor] = null,
     borderRadius: Int | Double = null,
     borderWidth: Int | Double = null,
     colors: OrdinalColorsInstruction[_] = null,
@@ -79,7 +81,7 @@ object BarProps {
     labelSkipWidth: Int | Double = null,
     labelTextColor: InheritedColorProp[BarDatumWithColor] = null,
     layout: horizontal | vertical = null,
-    legends: js.Array[dataFromindexeskeysLegendProps] = null,
+    legends: js.Array[dataFromindexeskeysLegend] = null,
     margin: Box = null,
     markers: js.Array[CartesianMarkerProps] = null,
     maxValue: Double | auto = null,
@@ -96,6 +98,7 @@ object BarProps {
     if (axisRight != null) __obj.updateDynamic("axisRight")(axisRight.asInstanceOf[js.Any])
     if (axisTop != null) __obj.updateDynamic("axisTop")(axisTop.asInstanceOf[js.Any])
     if (barComponent != null) __obj.updateDynamic("barComponent")(barComponent.asInstanceOf[js.Any])
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
     if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
     if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
     if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])

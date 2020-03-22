@@ -28,6 +28,7 @@ trait EncodeEntry
   var y: js.UndefOr[ProductionRule[NumericValueRef]] = js.undefined
   var y2: js.UndefOr[ProductionRule[NumericValueRef]] = js.undefined
   var yc: js.UndefOr[ProductionRule[NumericValueRef]] = js.undefined
+  var zindex: js.UndefOr[ProductionRule[NumericValueRef]] = js.undefined
 }
 
 object EncodeEntry {
@@ -54,7 +55,8 @@ object EncodeEntry {
     xc: ProductionRule[NumericValueRef] = null,
     y: ProductionRule[NumericValueRef] = null,
     y2: ProductionRule[NumericValueRef] = null,
-    yc: ProductionRule[NumericValueRef] = null
+    yc: ProductionRule[NumericValueRef] = null,
+    zindex: ProductionRule[NumericValueRef] = null
   ): EncodeEntry = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
@@ -79,6 +81,7 @@ object EncodeEntry {
     if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     if (y2 != null) __obj.updateDynamic("y2")(y2.asInstanceOf[js.Any])
     if (yc != null) __obj.updateDynamic("yc")(yc.asInstanceOf[js.Any])
+    if (zindex != null) __obj.updateDynamic("zindex")(zindex.asInstanceOf[js.Any])
     __obj.asInstanceOf[EncodeEntry]
   }
 }

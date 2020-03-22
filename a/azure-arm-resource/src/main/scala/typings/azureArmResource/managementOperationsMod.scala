@@ -56,8 +56,8 @@ object managementOperationsMod extends js.Object {
       */
     def get(): js.Promise[ManagementGroupWithHierarchy] = js.native
     def get(callback: ServiceCallback[ManagementGroupWithHierarchy]): Unit = js.native
-    def get(options: AnonCustomHeadersExpand): js.Promise[ManagementGroupWithHierarchy] = js.native
-    def get(options: AnonCustomHeadersExpand, callback: ServiceCallback[ManagementGroupWithHierarchy]): Unit = js.native
+    def get(options: AnonExpand): js.Promise[ManagementGroupWithHierarchy] = js.native
+    def get(options: AnonExpand, callback: ServiceCallback[ManagementGroupWithHierarchy]): Unit = js.native
     /**
       * Get the details of the management group.
       *
@@ -82,7 +82,7 @@ object managementOperationsMod extends js.Object {
       * @reject {Error|ServiceError} - The error object.
       */
     def getWithHttpOperationResponse(): js.Promise[HttpOperationResponse[ManagementGroupWithHierarchy]] = js.native
-    def getWithHttpOperationResponse(options: AnonCustomHeadersExpand): js.Promise[HttpOperationResponse[ManagementGroupWithHierarchy]] = js.native
+    def getWithHttpOperationResponse(options: AnonExpand): js.Promise[HttpOperationResponse[ManagementGroupWithHierarchy]] = js.native
     /**
       * List management groups for the authenticated user.
       *
@@ -124,8 +124,8 @@ object managementOperationsMod extends js.Object {
       */
     def list(): js.Promise[ManagementGroupListResult] = js.native
     def list(callback: ServiceCallback[ManagementGroupListResult]): Unit = js.native
-    def list(options: AnonCustomHeadersHeaderName): js.Promise[ManagementGroupListResult] = js.native
-    def list(options: AnonCustomHeadersHeaderName, callback: ServiceCallback[ManagementGroupListResult]): Unit = js.native
+    def list(options: AnonSkiptoken): js.Promise[ManagementGroupListResult] = js.native
+    def list(options: AnonSkiptoken, callback: ServiceCallback[ManagementGroupListResult]): Unit = js.native
     /**
       * List management groups for the authenticated user.
       *
@@ -212,7 +212,7 @@ object managementOperationsMod extends js.Object {
       * @reject {Error|ServiceError} - The error object.
       */
     def listWithHttpOperationResponse(): js.Promise[HttpOperationResponse[ManagementGroupListResult]] = js.native
-    def listWithHttpOperationResponse(options: AnonCustomHeadersHeaderName): js.Promise[HttpOperationResponse[ManagementGroupListResult]] = js.native
+    def listWithHttpOperationResponse(options: AnonSkiptoken): js.Promise[HttpOperationResponse[ManagementGroupListResult]] = js.native
   }
   
   @js.native

@@ -8,7 +8,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.highcharts.mod.SeriesOptions because var conflicts: zIndex. Inlined id, index, legendIndex, mapData, name, stack, treemap, `type`, xAxis, yAxis */ trait SeriesVariablepieOptions
+- typings.highcharts.mod.SeriesOptions because var conflicts: zIndex. Inlined id, index, legendIndex, mapData, name, stack, `type`, xAxis, yAxis */ trait SeriesVariablepieOptions
   extends PlotVariablepieOptions
      with SeriesOptionsType {
   /**
@@ -24,7 +24,7 @@ import scala.scalajs.js.annotation._
     * number of data points exceeds the series' turboThreshold, this option is
     * not available. (see online documentation for example)
     */
-  var data: js.UndefOr[js.Array[(js.Tuple2[Double | String, Double]) | SeriesVariablepieDataOptions]] = js.undefined
+  var data: js.UndefOr[js.Array[(js.Tuple2[Double | String, Double]) | PointOptionsObject]] = js.undefined
   /**
     * Not available
     */
@@ -65,7 +65,6 @@ import scala.scalajs.js.annotation._
     * Not available
     */
   var stack: js.UndefOr[Double | String] = js.undefined
-  var treemap: js.UndefOr[SeriesTreemapOptions] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) This property is only in
     * TypeScript non-optional and might be `undefined` in series objects from
@@ -86,10 +85,10 @@ object SeriesVariablepieOptions {
   @scala.inline
   def apply(
     `type`: String | variablepie,
-    accessibility: js.Object | PlotVariablepieAccessibilityOptions = null,
+    accessibility: SeriesAccessibilityOptionsObject = null,
     allAreas: js.UndefOr[Boolean] = js.undefined,
     allowPointSelect: js.UndefOr[Boolean] = js.undefined,
-    animation: Boolean | AnimationOptionsObject | PlotVariablepieAnimationOptions = null,
+    animation: Boolean | AnimationOptionsObject = null,
     boostBlending: OptionsBoostBlendingValue = null,
     borderColor: ColorString | GradientColorObject | PatternObject = null,
     borderWidth: Int | Double = null,
@@ -104,18 +103,18 @@ object SeriesVariablepieOptions {
     compare: String = null,
     compareBase: `0` | `100` = null,
     compareStart: js.UndefOr[Boolean] = js.undefined,
-    connectors: PlotVariablepieConnectorsOptions = null,
+    connectors: SeriesConnectorsOptionsObject = null,
     cursor: String | CursorValue = null,
-    data: js.Array[(js.Tuple2[Double | String, Double]) | SeriesVariablepieDataOptions] = null,
-    dataGrouping: PlotVariablepieDataGroupingOptions = null,
-    dataLabels: SeriesPieDataLabelsOptionsObject = null,
+    data: js.Array[(js.Tuple2[Double | String, Double]) | PointOptionsObject] = null,
+    dataGrouping: DataGroupingOptionsObject = null,
+    dataLabels: SeriesPieDataLabelsOptionsObject | js.Array[SeriesPieDataLabelsOptionsObject] = null,
     dataParser: js.UndefOr[scala.Nothing] = js.undefined,
     dataURL: js.UndefOr[scala.Nothing] = js.undefined,
     depth: Int | Double = null,
     description: String = null,
     enableMouseTracking: js.UndefOr[Boolean] = js.undefined,
     endAngle: Int | Double = null,
-    events: PlotVariablepieEventsOptions = null,
+    events: SeriesEventsOptionsObject = null,
     fillColor: ColorString | GradientColorObject | PatternObject = null,
     gapSize: Int | Double = null,
     gapUnit: OptionsGapUnitValue = null,
@@ -126,8 +125,8 @@ object SeriesVariablepieOptions {
     innerSize: Double | String = null,
     joinBy: String | js.Array[String] = null,
     keys: js.Array[String] = null,
-    lastPrice: PlotVariablepieLastPriceOptions = null,
-    lastVisiblePrice: PlotVariablepieLastVisiblePriceOptions = null,
+    lastPrice: SeriesLastPriceOptionsObject = null,
+    lastVisiblePrice: SeriesLastVisiblePriceOptionsObject = null,
     legendIndex: Int | Double = null,
     linecap: SeriesLinecapValue = null,
     linkedTo: String = null,
@@ -138,7 +137,7 @@ object SeriesVariablepieOptions {
     name: String = null,
     navigatorOptions: PlotSeriesOptions = null,
     opacity: Int | Double = null,
-    point: PlotVariablepiePointOptions = null,
+    point: PlotSeriesPointOptions = null,
     pointDescriptionFormatter: js.Function = null,
     pointRange: Int | Double = null,
     selected: js.UndefOr[Boolean] = js.undefined,
@@ -152,10 +151,9 @@ object SeriesVariablepieOptions {
     slicedOffset: Int | Double = null,
     stack: Double | scala.Nothing | String = null,
     startAngle: Int | Double = null,
-    states: PlotVariablepieStatesOptions = null,
+    states: SeriesStatesOptionsObject = null,
     stickyTracking: js.UndefOr[Boolean] = js.undefined,
-    tooltip: PlotVariablepieTooltipOptions = null,
-    treemap: SeriesTreemapOptions = null,
+    tooltip: SeriesTooltipOptionsObject = null,
     useOhlcData: js.UndefOr[Boolean] = js.undefined,
     visible: js.UndefOr[Boolean] = js.undefined,
     xAxis: Double | scala.Nothing | String = null,
@@ -235,7 +233,6 @@ object SeriesVariablepieOptions {
     if (states != null) __obj.updateDynamic("states")(states.asInstanceOf[js.Any])
     if (!js.isUndefined(stickyTracking)) __obj.updateDynamic("stickyTracking")(stickyTracking.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (treemap != null) __obj.updateDynamic("treemap")(treemap.asInstanceOf[js.Any])
     if (!js.isUndefined(useOhlcData)) __obj.updateDynamic("useOhlcData")(useOhlcData.asInstanceOf[js.Any])
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     if (xAxis != null) __obj.updateDynamic("xAxis")(xAxis.asInstanceOf[js.Any])

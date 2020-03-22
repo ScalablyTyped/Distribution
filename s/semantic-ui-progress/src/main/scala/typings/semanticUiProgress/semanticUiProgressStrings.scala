@@ -6,13 +6,7 @@ import scala.scalajs.js.annotation._
 
 object semanticUiProgressStrings {
   @js.native
-  sealed trait active extends js.Object
-  
-  @js.native
   sealed trait autoSuccess extends js.Object
-  
-  @js.native
-  sealed trait bar extends js.Object
   
   @js.native
   sealed trait className extends js.Object
@@ -72,25 +66,13 @@ object semanticUiProgressStrings {
   sealed trait limitValues extends js.Object
   
   @js.native
-  sealed trait max extends js.Object
-  
-  @js.native
   sealed trait metadata extends js.Object
-  
-  @js.native
-  sealed trait method extends js.Object
-  
-  @js.native
-  sealed trait min extends js.Object
   
   @js.native
   sealed trait name extends js.Object
   
   @js.native
   sealed trait namespace extends js.Object
-  
-  @js.native
-  sealed trait nonNumeric extends js.Object
   
   @js.native
   sealed trait onActive extends js.Object
@@ -115,9 +97,6 @@ object semanticUiProgressStrings {
   
   @js.native
   sealed trait precision extends js.Object
-  
-  @js.native
-  sealed trait progress extends js.Object
   
   @js.native
   sealed trait random extends js.Object
@@ -186,9 +165,6 @@ object semanticUiProgressStrings {
   sealed trait silent extends js.Object
   
   @js.native
-  sealed trait success extends js.Object
-  
-  @js.native
   sealed trait text extends js.Object
   
   @js.native
@@ -201,20 +177,10 @@ object semanticUiProgressStrings {
   sealed trait value extends js.Object
   
   @js.native
-  sealed trait variable extends js.Object
-  
-  @js.native
   sealed trait verbose extends js.Object
   
-  @js.native
-  sealed trait warning extends js.Object
-  
-  @scala.inline
-  def active: active = "active".asInstanceOf[active]
   @scala.inline
   def autoSuccess: autoSuccess = "autoSuccess".asInstanceOf[autoSuccess]
-  @scala.inline
-  def bar: bar = "bar".asInstanceOf[bar]
   @scala.inline
   def className: className = "className".asInstanceOf[className]
   @scala.inline
@@ -254,19 +220,11 @@ object semanticUiProgressStrings {
   @scala.inline
   def limitValues: limitValues = "limitValues".asInstanceOf[limitValues]
   @scala.inline
-  def max: max = "max".asInstanceOf[max]
-  @scala.inline
   def metadata: metadata = "metadata".asInstanceOf[metadata]
-  @scala.inline
-  def method: method = "method".asInstanceOf[method]
-  @scala.inline
-  def min: min = "min".asInstanceOf[min]
   @scala.inline
   def name: name = "name".asInstanceOf[name]
   @scala.inline
   def namespace: namespace = "namespace".asInstanceOf[namespace]
-  @scala.inline
-  def nonNumeric: nonNumeric = "nonNumeric".asInstanceOf[nonNumeric]
   @scala.inline
   def onActive: onActive = "onActive".asInstanceOf[onActive]
   @scala.inline
@@ -283,8 +241,6 @@ object semanticUiProgressStrings {
   def performance: performance = "performance".asInstanceOf[performance]
   @scala.inline
   def precision: precision = "precision".asInstanceOf[precision]
-  @scala.inline
-  def progress: progress = "progress".asInstanceOf[progress]
   @scala.inline
   def random: random = "random".asInstanceOf[random]
   @scala.inline
@@ -330,8 +286,6 @@ object semanticUiProgressStrings {
   @scala.inline
   def silent: silent = "silent".asInstanceOf[silent]
   @scala.inline
-  def success: success = "success".asInstanceOf[success]
-  @scala.inline
   def text: text = "text".asInstanceOf[text]
   @scala.inline
   def total: total = "total".asInstanceOf[total]
@@ -340,10 +294,6 @@ object semanticUiProgressStrings {
   @scala.inline
   def value: value = "value".asInstanceOf[value]
   @scala.inline
-  def variable: variable = "variable".asInstanceOf[variable]
-  @scala.inline
   def verbose: verbose = "verbose".asInstanceOf[verbose]
-  @scala.inline
-  def warning: warning = "warning".asInstanceOf[warning]
 }
 

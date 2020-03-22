@@ -74,9 +74,19 @@ trait ICodeEditor extends IEditor {
     */
   def getAction(id: String): IEditorAction = js.native
   /**
-    * Returns the current editor's configuration
+    * Returns the editor's container dom node
     */
-  def getConfiguration(): InternalEditorOptions = js.native
+  def getContainerDomNode(): HTMLElement = js.native
+  /**
+    * Get the height of the editor's content.
+    * This is information that is "erased" when computing `scrollHeight = Math.max(contentHeight, height)`
+    */
+  def getContentHeight(): Double = js.native
+  /**
+    * Get the width of the editor's content.
+    * This is information that is "erased" when computing `scrollWidth = Math.max(contentWidth, width)`
+    */
+  def getContentWidth(): Double = js.native
   /**
     * Get a contribution of this editor.
     * @id Unique identifier of the contribution.
@@ -101,6 +111,18 @@ trait ICodeEditor extends IEditor {
     * Use this method with caution.
     */
   def getOffsetForColumn(lineNumber: Double, column: Double): Double = js.native
+  /**
+    * Gets a specific editor option.
+    */
+  def getOption[T /* <: EditorOption */](id: T): FindComputedEditorOptionValueById[T] = js.native
+  /**
+    * Gets all the editor computed options.
+    */
+  def getOptions(): IComputedEditorOptions = js.native
+  /**
+    * Returns the editor's configuration (without any validation or defaults).
+    */
+  def getRawOptions(): IEditorOptions = js.native
   /**
     * Get the scrollHeight of the editor's viewport.
     */
@@ -166,14 +188,6 @@ trait ICodeEditor extends IEditor {
     */
   def layoutOverlayWidget(widget: IOverlayWidget): Unit = js.native
   /**
-    * An event emitted after composition has ended.
-    */
-  def onCompositionEnd(listener: js.Function0[Unit]): IDisposable = js.native
-  /**
-    * An event emitted after composition has started.
-    */
-  def onCompositionStart(listener: js.Function0[Unit]): IDisposable = js.native
-  /**
     * An event emitted on a "contextmenu".
     * @event
     */
@@ -192,7 +206,7 @@ trait ICodeEditor extends IEditor {
     * An event emitted when the configuration of the editor has changed. (e.g. `editor.updateOptions()`)
     * @event
     */
-  def onDidChangeConfiguration(listener: js.Function1[/* e */ IConfigurationChangedEvent, Unit]): IDisposable = js.native
+  def onDidChangeConfiguration(listener: js.Function1[/* e */ ConfigurationChangedEvent, Unit]): IDisposable = js.native
   /**
     * An event emitted when the cursor position has changed.
     * @event
@@ -234,6 +248,19 @@ trait ICodeEditor extends IEditor {
     */
   def onDidChangeModelOptions(listener: js.Function1[/* e */ IModelOptionsChangedEvent, Unit]): IDisposable = js.native
   /**
+    * An event emitted after composition has ended.
+    */
+  def onDidCompositionEnd(listener: js.Function0[Unit]): IDisposable = js.native
+  /**
+    * An event emitted after composition has started.
+    */
+  def onDidCompositionStart(listener: js.Function0[Unit]): IDisposable = js.native
+  /**
+    * An event emitted when the content width or content height in the editor has changed.
+    * @event
+    */
+  def onDidContentSizeChange(listener: js.Function1[/* e */ IContentSizeChangedEvent, Unit]): IDisposable = js.native
+  /**
     * An event emitted when the text inside this editor gained focus (i.e. cursor starts blinking).
     * @event
     */
@@ -248,6 +275,11 @@ trait ICodeEditor extends IEditor {
     * @event
     */
   def onDidLayoutChange(listener: js.Function1[/* e */ EditorLayoutInfo, Unit]): IDisposable = js.native
+  /**
+    * An event emitted when users paste text in the editor.
+    * @event
+    */
+  def onDidPaste(listener: js.Function1[/* e */ IPasteEvent, Unit]): IDisposable = js.native
   /**
     * An event emitted when the scroll in the editor has changed.
     * @event

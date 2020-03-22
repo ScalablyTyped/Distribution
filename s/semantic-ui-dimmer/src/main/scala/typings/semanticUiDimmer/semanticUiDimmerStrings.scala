@@ -6,9 +6,6 @@ import scala.scalajs.js.annotation._
 
 object semanticUiDimmerStrings {
   @js.native
-  sealed trait active extends js.Object
-  
-  @js.native
   sealed trait `add content` extends js.Object
   
   @js.native
@@ -24,9 +21,6 @@ object semanticUiDimmerStrings {
   sealed trait closable extends js.Object
   
   @js.native
-  sealed trait content extends js.Object
-  
-  @js.native
   sealed trait create extends js.Object
   
   @js.native
@@ -36,19 +30,7 @@ object semanticUiDimmerStrings {
   sealed trait destroy extends js.Object
   
   @js.native
-  sealed trait dimmable extends js.Object
-  
-  @js.native
-  sealed trait dimmed extends js.Object
-  
-  @js.native
-  sealed trait dimmer extends js.Object
-  
-  @js.native
   sealed trait dimmerName extends js.Object
-  
-  @js.native
-  sealed trait disabled extends js.Object
   
   @js.native
   sealed trait duration extends js.Object
@@ -96,9 +78,6 @@ object semanticUiDimmerStrings {
   sealed trait `is page dimmer` extends js.Object
   
   @js.native
-  sealed trait method extends js.Object
-  
-  @js.native
   sealed trait name extends js.Object
   
   @js.native
@@ -118,9 +97,6 @@ object semanticUiDimmerStrings {
   
   @js.native
   sealed trait opacity extends js.Object
-  
-  @js.native
-  sealed trait pageDimmer extends js.Object
   
   @js.native
   sealed trait performance extends js.Object
@@ -174,8 +150,6 @@ object semanticUiDimmerStrings {
   sealed trait verbose extends js.Object
   
   @scala.inline
-  def active: active = "active".asInstanceOf[active]
-  @scala.inline
   def `add content`: `add content` = "add content".asInstanceOf[`add content`]
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
@@ -186,23 +160,13 @@ object semanticUiDimmerStrings {
   @scala.inline
   def closable: closable = "closable".asInstanceOf[closable]
   @scala.inline
-  def content: content = "content".asInstanceOf[content]
-  @scala.inline
   def create: create = "create".asInstanceOf[create]
   @scala.inline
   def debug: debug = "debug".asInstanceOf[debug]
   @scala.inline
   def destroy: destroy = "destroy".asInstanceOf[destroy]
   @scala.inline
-  def dimmable: dimmable = "dimmable".asInstanceOf[dimmable]
-  @scala.inline
-  def dimmed: dimmed = "dimmed".asInstanceOf[dimmed]
-  @scala.inline
-  def dimmer: dimmer = "dimmer".asInstanceOf[dimmer]
-  @scala.inline
   def dimmerName: dimmerName = "dimmerName".asInstanceOf[dimmerName]
-  @scala.inline
-  def disabled: disabled = "disabled".asInstanceOf[disabled]
   @scala.inline
   def duration: duration = "duration".asInstanceOf[duration]
   @scala.inline
@@ -234,8 +198,6 @@ object semanticUiDimmerStrings {
   @scala.inline
   def `is page dimmer`: `is page dimmer` = "is page dimmer".asInstanceOf[`is page dimmer`]
   @scala.inline
-  def method: method = "method".asInstanceOf[method]
-  @scala.inline
   def name: name = "name".asInstanceOf[name]
   @scala.inline
   def namespace: namespace = "namespace".asInstanceOf[namespace]
@@ -249,8 +211,6 @@ object semanticUiDimmerStrings {
   def onShow: onShow = "onShow".asInstanceOf[onShow]
   @scala.inline
   def opacity: opacity = "opacity".asInstanceOf[opacity]
-  @scala.inline
-  def pageDimmer: pageDimmer = "pageDimmer".asInstanceOf[pageDimmer]
   @scala.inline
   def performance: performance = "performance".asInstanceOf[performance]
   @scala.inline

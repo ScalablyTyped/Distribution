@@ -1,13 +1,13 @@
 package typings.sequelize.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.sequelize.Anon0
 import typings.sequelize.AnonArgs
+import typings.sequelize.AnonArgsBoolean
 import typings.sequelize.AnonArgsMsg
-import typings.sequelize.AnonArgsMsgArray
-import typings.sequelize.AnonArgsMsgBoolean
-import typings.sequelize.AnonArgsMsgNumber
-import typings.sequelize.AnonArgsMsgNumberString
 import typings.sequelize.AnonArgsMsgString
+import typings.sequelize.AnonArgsNumber
+import typings.sequelize.AnonArgsString
 import typings.sequelize.AnonMsgString
 import typings.sequelize.sequelizeNumbers.`3`
 import typings.sequelize.sequelizeNumbers.`4`
@@ -61,7 +61,7 @@ trait DefineValidateOptions
   /**
     * only allow date strings after a specific date
     */
-  var isAfter: js.UndefOr[String | AnonArgsMsgString] = js.undefined
+  var isAfter: js.UndefOr[String | AnonArgsString] = js.undefined
   /**
     * will only allow letters
     */
@@ -73,19 +73,19 @@ trait DefineValidateOptions
   /**
     * only allow arrays
     */
-  var isArray: js.UndefOr[Boolean | AnonArgsMsgBoolean] = js.undefined
+  var isArray: js.UndefOr[Boolean | AnonArgsBoolean] = js.undefined
   /**
     * only allow date strings before a specific date
     */
-  var isBefore: js.UndefOr[String | AnonArgsMsgString] = js.undefined
+  var isBefore: js.UndefOr[String | AnonArgsString] = js.undefined
   /**
     * check for valid credit card numbers
     */
-  var isCreditCard: js.UndefOr[Boolean | AnonArgsMsgBoolean] = js.undefined
+  var isCreditCard: js.UndefOr[Boolean | AnonArgsBoolean] = js.undefined
   /**
     * only allow date strings
     */
-  var isDate: js.UndefOr[Boolean | AnonArgsMsgBoolean] = js.undefined
+  var isDate: js.UndefOr[Boolean | AnonArgsBoolean] = js.undefined
   /**
     * checks for any numbers
     */
@@ -134,7 +134,7 @@ trait DefineValidateOptions
     * only allow uuids
     */
   var isUUID: js.UndefOr[
-    `3` | `4` | `5` | typings.sequelize.sequelizeStrings.`3` | typings.sequelize.sequelizeStrings.`4` | typings.sequelize.sequelizeStrings.`5` | all | AnonArgsMsgNumberString
+    `3` | `4` | `5` | typings.sequelize.sequelizeStrings.`3` | typings.sequelize.sequelizeStrings.`4` | typings.sequelize.sequelizeStrings.`5` | all | AnonArgsNumber
   ] = js.undefined
   /**
     * checks for uppercase
@@ -147,15 +147,15 @@ trait DefineValidateOptions
   /**
     * only allow values with length between 2 and 10
     */
-  var len: js.UndefOr[(js.Tuple2[Double, Double]) | AnonArgsMsgNumber] = js.undefined
+  var len: js.UndefOr[(js.Tuple2[Double, Double]) | Anon0] = js.undefined
   /**
     * only allow values
     */
-  var max: js.UndefOr[Double | AnonArgsMsgNumberString] = js.undefined
+  var max: js.UndefOr[Double | AnonArgsNumber] = js.undefined
   /**
     * only allow values >= 23
     */
-  var min: js.UndefOr[Double | AnonArgsMsgNumberString] = js.undefined
+  var min: js.UndefOr[Double | AnonArgsNumber] = js.undefined
   /**
     * not: ["[a-z]",'i']  // will not allow letters
     */
@@ -163,7 +163,7 @@ trait DefineValidateOptions
   /**
     * don't allow specific substrings
     */
-  var notContains: js.UndefOr[js.Array[String] | String | AnonArgsMsgArray] = js.undefined
+  var notContains: js.UndefOr[js.Array[String] | String | AnonArgsMsgString] = js.undefined
   /**
     * don't allow empty strings
     */
@@ -200,13 +200,13 @@ object DefineValidateOptions {
     contains: String | AnonMsgString = null,
     equals: String | AnonMsgString = null,
     is: String | (js.Array[String | RegExp]) | RegExp | AnonArgs = null,
-    isAfter: String | AnonArgsMsgString = null,
+    isAfter: String | AnonArgsString = null,
     isAlpha: Boolean | AnonMsgString = null,
     isAlphanumeric: Boolean | AnonMsgString = null,
-    isArray: Boolean | AnonArgsMsgBoolean = null,
-    isBefore: String | AnonArgsMsgString = null,
-    isCreditCard: Boolean | AnonArgsMsgBoolean = null,
-    isDate: Boolean | AnonArgsMsgBoolean = null,
+    isArray: Boolean | AnonArgsBoolean = null,
+    isBefore: String | AnonArgsString = null,
+    isCreditCard: Boolean | AnonArgsBoolean = null,
+    isDate: Boolean | AnonArgsBoolean = null,
     isDecimal: Boolean | AnonMsgString = null,
     isEmail: Boolean | AnonMsgString = null,
     isFloat: Boolean | AnonMsgString = null,
@@ -218,14 +218,14 @@ object DefineValidateOptions {
     isLowercase: Boolean | AnonMsgString = null,
     isNull: Boolean | AnonMsgString = null,
     isNumeric: Boolean | AnonMsgString = null,
-    isUUID: `3` | `4` | `5` | typings.sequelize.sequelizeStrings.`3` | typings.sequelize.sequelizeStrings.`4` | typings.sequelize.sequelizeStrings.`5` | all | AnonArgsMsgNumberString = null,
+    isUUID: `3` | `4` | `5` | typings.sequelize.sequelizeStrings.`3` | typings.sequelize.sequelizeStrings.`4` | typings.sequelize.sequelizeStrings.`5` | all | AnonArgsNumber = null,
     isUppercase: Boolean | AnonMsgString = null,
     isUrl: Boolean | AnonMsgString = null,
-    len: (js.Tuple2[Double, Double]) | AnonArgsMsgNumber = null,
-    max: Double | AnonArgsMsgNumberString = null,
-    min: Double | AnonArgsMsgNumberString = null,
+    len: (js.Tuple2[Double, Double]) | Anon0 = null,
+    max: Double | AnonArgsNumber = null,
+    min: Double | AnonArgsNumber = null,
     not: String | (js.Array[String | RegExp]) | RegExp | AnonArgs = null,
-    notContains: js.Array[String] | String | AnonArgsMsgArray = null,
+    notContains: js.Array[String] | String | AnonArgsMsgString = null,
     notEmpty: Boolean | AnonMsgString = null,
     notIn: js.Array[js.Array[String]] | AnonArgsMsg = null,
     notNull: Boolean | AnonMsgString = null

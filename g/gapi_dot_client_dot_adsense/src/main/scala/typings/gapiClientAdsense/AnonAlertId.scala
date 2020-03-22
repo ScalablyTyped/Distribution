@@ -5,6 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonAlertId extends js.Object {
+  /** Account which contains the ad unit. */
+  var accountId: String
   /** Alert to delete. */
   var alertId: String
   /** Data format for the response. */
@@ -29,6 +31,7 @@ trait AnonAlertId extends js.Object {
 object AnonAlertId {
   @scala.inline
   def apply(
+    accountId: String,
     alertId: String,
     alt: String = null,
     fields: String = null,
@@ -38,7 +41,7 @@ object AnonAlertId {
     quotaUser: String = null,
     userIp: String = null
   ): AnonAlertId = {
-    val __obj = js.Dynamic.literal(alertId = alertId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any], alertId = alertId.asInstanceOf[js.Any])
     if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])

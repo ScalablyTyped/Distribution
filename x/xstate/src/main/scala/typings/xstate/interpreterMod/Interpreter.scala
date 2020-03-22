@@ -1,9 +1,10 @@
 package typings.xstate.interpreterMod
 
 import typings.std.Map
-import typings.std.Partial
 import typings.xstate.AnonAutoForward
-import typings.xstate.FnMachine
+import typings.xstate.FnCallMachineOptions
+import typings.xstate.PartialInterpreterOptions
+import typings.xstate.ReadonlyInterpreterOption
 import typings.xstate.actorMod.Actor
 import typings.xstate.stateMod.State
 import typings.xstate.typesMod.ActionFunctionMap
@@ -38,7 +39,7 @@ class Interpreter[TContext, TStateSchema /* <: StateSchema[_] */, TEvent /* <: E
   def this(machine: StateMachine[TContext, TStateSchema, TEvent, TTypestate]) = this()
   def this(
     machine: StateMachine[TContext, TStateSchema, TEvent, TTypestate],
-    options: Partial[InterpreterOptions]
+    options: PartialInterpreterOptions
   ) = this()
   var _initialState: js.UndefOr[js.Any] = js.native
   /**
@@ -70,7 +71,7 @@ class Interpreter[TContext, TStateSchema /* <: StateSchema[_] */, TEvent /* <: E
   var listeners: js.Any = js.native
   var logger: js.Any = js.native
   var machine: StateMachine[TContext, TStateSchema, TEvent, TTypestate] = js.native
-  var options: InterpreterOptions = js.native
+  var options: ReadonlyInterpreterOption = js.native
   var parent: js.UndefOr[Interpreter[_, _, EventObject, _]] = js.native
   var scheduler: js.Any = js.native
   var sendListeners: js.Any = js.native
@@ -199,11 +200,11 @@ object Interpreter extends js.Object {
     */
   var defaultOptions: InterpreterOptions = js.native
   @JSName("interpret")
-  var interpret_Original: FnMachine = js.native
+  var interpret_Original: FnCallMachineOptions = js.native
   def interpret[TContext, TStateSchema /* <: StateSchema[_] */, TEvent /* <: EventObject */, TTypestate /* <: Typestate[TContext] */](machine: StateMachine[TContext, TStateSchema, TEvent, TTypestate]): Interpreter[TContext, TStateSchema, TEvent, TTypestate] = js.native
   def interpret[TContext, TStateSchema /* <: StateSchema[_] */, TEvent /* <: EventObject */, TTypestate /* <: Typestate[TContext] */](
     machine: StateMachine[TContext, TStateSchema, TEvent, TTypestate],
-    options: Partial[InterpreterOptions]
+    options: PartialInterpreterOptions
   ): Interpreter[TContext, TStateSchema, TEvent, TTypestate] = js.native
 }
 

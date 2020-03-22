@@ -1,17 +1,19 @@
 package typings.croppie.mod
 
-import typings.croppie.AnonBase64
-import typings.croppie.AnonBlob
-import typings.croppie.AnonHtml
 import typings.croppie.AnonOrientation
-import typings.croppie.AnonRawcanvas
+import typings.croppie.ResultOptionstypebase64ca
+import typings.croppie.ResultOptionstypeblob
+import typings.croppie.ResultOptionstypehtml
+import typings.croppie.ResultOptionstyperawcanva
 import typings.croppie.croppieNumbers.`-180`
 import typings.croppie.croppieNumbers.`-270`
 import typings.croppie.croppieNumbers.`-90`
 import typings.croppie.croppieNumbers.`180`
 import typings.croppie.croppieNumbers.`270`
 import typings.croppie.croppieNumbers.`90`
+import typings.std.Blob
 import typings.std.HTMLCanvasElement
+import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,9 +24,11 @@ trait Croppie extends js.Object {
   def destroy(): Unit = js.native
   def get(): CropData = js.native
   def result(): js.Promise[HTMLCanvasElement] = js.native
-  def result(
-    options: (ResultOptions with AnonBase64 with AnonHtml with AnonBlob with AnonRawcanvas) | ResultOptions
-  ): js.Promise[String] = js.native
+  def result(options: ResultOptionstypebase64ca): js.Promise[String] = js.native
+  def result(options: ResultOptionstypeblob): js.Promise[Blob] = js.native
+  def result(options: ResultOptionstypehtml): js.Promise[HTMLElement] = js.native
+  def result(options: ResultOptionstyperawcanva): js.Promise[HTMLCanvasElement] = js.native
+  def result(options: ResultOptions): js.Promise[HTMLCanvasElement] = js.native
   @JSName("rotate")
   def rotate_180(degrees: `-180`): Unit = js.native
   @JSName("rotate")

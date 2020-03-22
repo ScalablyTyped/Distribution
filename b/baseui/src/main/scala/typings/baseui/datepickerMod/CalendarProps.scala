@@ -2,7 +2,7 @@ package typings.baseui.datepickerMod
 
 import typings.baseui.AnonBeginDate
 import typings.baseui.AnonDate
-import typings.baseui.AnonDate1026268728
+import typings.baseui.AnonDateDate
 import typings.baseui.AnonDateEvent
 import typings.baseui.baseuiStrings.horizontal
 import typings.baseui.baseuiStrings.vertical
@@ -26,8 +26,8 @@ trait CalendarProps extends js.Object {
   var onDayClick: js.UndefOr[js.Function1[/* args */ AnonDateEvent, _]] = js.undefined
   var onDayMouseLeave: js.UndefOr[js.Function1[/* args */ AnonDateEvent, _]] = js.undefined
   var onDayMouseOver: js.UndefOr[js.Function1[/* args */ AnonDateEvent, _]] = js.undefined
-  var onMonthChange: js.UndefOr[js.Function1[/* args */ AnonDate1026268728, _]] = js.undefined
-  var onYearChange: js.UndefOr[js.Function1[/* args */ AnonDate1026268728, _]] = js.undefined
+  var onMonthChange: js.UndefOr[js.Function1[/* args */ AnonDateDate, _]] = js.undefined
+  var onYearChange: js.UndefOr[js.Function1[/* args */ AnonDateDate, _]] = js.undefined
   var orientation: js.UndefOr[horizontal | vertical] = js.undefined
   var overrides: js.UndefOr[DatepickerOverrides[SharedStylePropsT]] = js.undefined
   var peekNextMonth: js.UndefOr[Boolean] = js.undefined
@@ -56,8 +56,8 @@ object CalendarProps {
     onDayClick: /* args */ AnonDateEvent => _ = null,
     onDayMouseLeave: /* args */ AnonDateEvent => _ = null,
     onDayMouseOver: /* args */ AnonDateEvent => _ = null,
-    onMonthChange: /* args */ AnonDate1026268728 => _ = null,
-    onYearChange: /* args */ AnonDate1026268728 => _ = null,
+    onMonthChange: /* args */ AnonDateDate => _ = null,
+    onYearChange: /* args */ AnonDateDate => _ = null,
     orientation: horizontal | vertical = null,
     overrides: DatepickerOverrides[SharedStylePropsT] = null,
     peekNextMonth: js.UndefOr[Boolean] = js.undefined,

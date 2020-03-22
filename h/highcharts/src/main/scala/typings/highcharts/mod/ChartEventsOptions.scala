@@ -34,9 +34,8 @@ trait ChartEventsOptions extends js.Object {
     * `event.yAxis`, which are arrays containing the axes of each dimension and
     * each axis' value at the clicked spot. The primary axes are
     * `event.xAxis[0]` and `event.yAxis[0]`. Remember the unit of a datetime
-    * axis is milliseconds since 1970-01-01 00:00:00.
-    *
-    *  (see online documentation for example)
+    * axis is milliseconds since 1970-01-01 00:00:00. (see online documentation
+    * for example)
     */
   var click: js.UndefOr[ChartClickCallbackFunction] = js.undefined
   /**
@@ -48,7 +47,7 @@ trait ChartEventsOptions extends js.Object {
     *
     * Event arguments:
     *
-    * - `category`: If a category label was clicked, which index.</dd>
+    * - `category`: If a category label was clicked, which index.
     *
     * - `originalEvent`: The original browser event (usually click) that
     * triggered the drilldown.
@@ -56,7 +55,7 @@ trait ChartEventsOptions extends js.Object {
     * - `point`: The originating point.
     *
     * - `points`: If a category label was clicked, this array holds all points
-    * corresponing to the category.</dd>
+    * corresponing to the category.
     *
     * - `seriesOptions`: Options for the new series.
     */
@@ -111,9 +110,7 @@ trait ChartEventsOptions extends js.Object {
     * `event.yAxis`, which are arrays containing the axes of each dimension and
     * each axis' min and max values. The primary axes are `event.xAxis[0]` and
     * `event.yAxis[0]`. Remember the unit of a datetime axis is milliseconds
-    * since 1970-01-01 00:00:00.
-    *
-    *  (see online documentation for example)
+    * since 1970-01-01 00:00:00. (see online documentation for example)
     */
   var selection: js.UndefOr[ChartSelectionCallbackFunction] = js.undefined
 }

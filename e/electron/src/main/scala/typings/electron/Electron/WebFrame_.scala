@@ -1,5 +1,6 @@
 package typings.electron.Electron
 
+import typings.node.NodeJS.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -7,117 +8,163 @@ import scala.scalajs.js.annotation._
 @js.native
 trait WebFrame_ extends EventEmitter {
   /**
-    * A WebFrame representing the first child frame of webFrame, the property would be
-    * null if webFrame has no children or if first child is not in the current
-    * renderer process.
+    * A `WebFrame | null` representing the first child frame of `webFrame`, the
+    * property would be `null` if `webFrame` has no children or if first child is not
+    * in the current renderer process.
+    *
     */
-  var firstChild: js.UndefOr[WebFrame_] = js.native
+  val firstChild: WebFrame_ | Null = js.native
   /**
-    * A WebFrame representing next sibling frame, the property would be null if
-    * webFrame is the last frame in its parent or if the next sibling is not in the
-    * current renderer process.
+    * A `WebFrame | null` representing next sibling frame, the property would be
+    * `null` if `webFrame` is the last frame in its parent or if the next sibling is
+    * not in the current renderer process.
+    *
     */
-  var nextSibling: js.UndefOr[WebFrame_] = js.native
+  val nextSibling: WebFrame_ | Null = js.native
   /**
-    * A WebFrame representing the frame which opened webFrame, the property would be
-    * null if there's no opener or opener is not in the current renderer process.
+    * A `WebFrame | null` representing the frame which opened `webFrame`, the property
+    * would be `null` if there's no opener or opener is not in the current renderer
+    * process.
+    *
     */
-  var opener: js.UndefOr[WebFrame_] = js.native
+  val opener: WebFrame_ | Null = js.native
   /**
-    * A WebFrame representing parent frame of webFrame, the property would be null if
-    * webFrame is top or parent is not in the current renderer process.
+    * A `WebFrame | null` representing parent frame of `webFrame`, the property would
+    * be `null` if `webFrame` is top or parent is not in the current renderer process.
+    *
     */
-  var parent: js.UndefOr[WebFrame_] = js.native
+  val parent: WebFrame_ | Null = js.native
   /**
-    * An Integer representing the unique frame id in the current renderer process.
+    * An `Integer` representing the unique frame id in the current renderer process.
     * Distinct WebFrame instances that refer to the same underlying frame will have
-    * the same routingId.
+    * the same `routingId`.
+    *
     */
-  var routingId: js.UndefOr[Double] = js.native
+  val routingId: Double = js.native
   /**
-    * A WebFrame representing top frame in frame hierarchy to which webFrame belongs,
-    * the property would be null if top frame is not in the current renderer process.
+    * A `WebFrame | null` representing top frame in frame hierarchy to which
+    * `webFrame` belongs, the property would be `null` if top frame is not in the
+    * current renderer process.
+    *
     */
-  var top: js.UndefOr[WebFrame_] = js.native
+  val top: WebFrame_ | Null = js.native
   // Docs: http://electronjs.org/docs/api/web-frame
   /**
     * Attempts to free memory that is no longer being used (like images from a
-    * previous navigation). Note that blindly calling this method probably makes
-    * Electron slower since it will have to refill these emptied caches, you should
-    * only call it if an event in your app has occurred that makes you think your page
-    * is actually using less memory (i.e. you have navigated from a super heavy page
-    * to a mostly empty one, and intend to stay there).
+    * previous navigation).
+    *
+    * Note that blindly calling this method probably makes Electron slower since it
+    * will have to refill these emptied caches, you should only call it if an event in
+    * your app has occurred that makes you think your page is actually using less
+    * memory (i.e. you have navigated from a super heavy page to a mostly empty one,
+    * and intend to stay there).
     */
   def clearCache(): Unit = js.native
   /**
-    * Evaluates code in page. In the browser window some HTML APIs like
-    * requestFullScreen can only be invoked by a gesture from the user. Setting
-    * userGesture to true will remove this limitation.
+    * A promise that resolves with the result of the executed code or is rejected if
+    * the result of the code is a rejected promise.
+    *
+    * Evaluates `code` in page.
+    *
+    * In the browser window some HTML APIs like `requestFullScreen` can only be
+    * invoked by a gesture from the user. Setting `userGesture` to `true` will remove
+    * this limitation.
     */
   def executeJavaScript(code: String): js.Promise[_] = js.native
   def executeJavaScript(code: String, userGesture: Boolean): js.Promise[_] = js.native
-  def executeJavaScript(code: String, userGesture: Boolean, callback: js.Function1[/* result */ js.Any, Unit]): js.Promise[_] = js.native
   /**
-    * Works like executeJavaScript but evaluates scripts in an isolated context.
-    * Deprecated Soon
+    * A promise that resolves with the result of the executed code or is rejected if
+    * the result of the code is a rejected promise.
+    * 
+  Works like `executeJavaScript` but evaluates `scripts` in an isolated context.
     */
   def executeJavaScriptInIsolatedWorld(worldId: Double, scripts: js.Array[WebSource]): js.Promise[_] = js.native
   def executeJavaScriptInIsolatedWorld(worldId: Double, scripts: js.Array[WebSource], userGesture: Boolean): js.Promise[_] = js.native
-  def executeJavaScriptInIsolatedWorld(
-    worldId: Double,
-    scripts: js.Array[WebSource],
-    userGesture: Boolean,
-    callback: js.Function1[/* result */ js.Any, Unit]
-  ): js.Promise[_] = js.native
+  /**
+    * A child of `webFrame` with the supplied `name`, `null` would be returned if
+    * there's no such frame or if the frame is not in the current renderer process.
+    */
   def findFrameByName(name: String): WebFrame_ = js.native
+  /**
+    * that has the supplied `routingId`, `null` if not found.
+    */
   def findFrameByRoutingId(routingId: Double): WebFrame_ = js.native
+  /**
+    * The frame element in `webFrame's` document selected by `selector`, `null` would
+    * be returned if `selector` does not select a frame or if the frame is not in the
+    * current renderer process.
+    */
   def getFrameForSelector(selector: String): WebFrame_ = js.native
   /**
+    * * `images` MemoryUsageDetails
+    * * `scripts` MemoryUsageDetails
+    * * `cssStyleSheets` MemoryUsageDetails
+    * * `xslStyleSheets` MemoryUsageDetails
+    * * `fonts` MemoryUsageDetails
+    * * `other` MemoryUsageDetails
+    *
     * Returns an object describing usage information of Blink's internal memory
-    * caches. This will generate:
+    * caches.
+  This will generate:
     */
   def getResourceUsage(): ResourceUsage = js.native
+  /**
+    * The current zoom factor.
+    */
   def getZoomFactor(): Double = js.native
+  /**
+    * The current zoom level.
+    */
   def getZoomLevel(): Double = js.native
   /**
-    * Inserts css as a style sheet in the document.
+    * A key for the inserted CSS that can later be used to remove the CSS via
+    * `webFrame.removeInsertedCSS(key)`.
+    *
+    * Injects CSS into the current web page and returns a unique key for the inserted
+    * stylesheet.
     */
-  def insertCSS(css: String): Unit = js.native
+  def insertCSS(css: String): String = js.native
   /**
-    * Inserts text to the focused element.
+    * Inserts `text` to the focused element.
     */
   def insertText(text: String): Unit = js.native
   /**
-    * Set the content security policy of the isolated world.
+    * Removes the inserted CSS from the current web page. The stylesheet is identified
+    * by its key, which is returned from `webFrame.insertCSS(css)`.
     */
-  def setIsolatedWorldContentSecurityPolicy(worldId: Double, csp: String): Unit = js.native
-  /**
-    * Set the name of the isolated world. Useful in devtools.
-    */
-  def setIsolatedWorldHumanReadableName(worldId: Double, name: String): Unit = js.native
+  def removeInsertedCSS(key: String): Unit = js.native
   /**
     * Set the security origin, content security policy and name of the isolated world.
-    * Note: If the csp is specified, then the securityOrigin also has to be specified.
+    * Note: If the `csp` is specified, then the `securityOrigin` also has to be
+    * specified.
     */
   def setIsolatedWorldInfo(worldId: Double, info: Info): Unit = js.native
   /**
-    * Set the security origin of the isolated world.
-    */
-  def setIsolatedWorldSecurityOrigin(worldId: Double, securityOrigin: String): Unit = js.native
-  /**
     * Sets the maximum and minimum layout-based (i.e. non-visual) zoom level.
+    * 
+  **Deprecated:** This API is no longer supported by Chromium.
+    *
+    * @deprecated
     */
   def setLayoutZoomLevelLimits(minimumLevel: Double, maximumLevel: Double): Unit = js.native
   /**
-    * Sets a provider for spell checking in input fields and text areas. The provider
-    * must be an object that has a spellCheck method that accepts an array of
-    * individual words for spellchecking. The spellCheck function runs asynchronously
-    * and calls the callback function with an array of misspelt words when complete.
-    * An example of using node-spellchecker as provider:
+    * Sets a provider for spell checking in input fields and text areas.
+    *
+    * If you want to use this method you must disable the builtin spellchecker when
+    * you construct the window.
+    *
+    * The `provider` must be an object that has a `spellCheck` method that accepts an
+    * array of individual words for spellchecking. The `spellCheck` function runs
+    * asynchronously and calls the `callback` function with an array of misspelt words
+    * when complete.
+  An example of using node-spellchecker as provider:
     */
   def setSpellCheckProvider(language: String, provider: Provider): Unit = js.native
   /**
     * Sets the maximum and minimum pinch-to-zoom level.
+    *
+    * > **NOTE**: Visual zoom is disabled by default in Electron. To re-enable it,
+    * call:
     */
   def setVisualZoomLevelLimits(minimumLevel: Double, maximumLevel: Double): Unit = js.native
   /**

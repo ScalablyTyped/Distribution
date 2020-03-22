@@ -19,6 +19,7 @@ import typings.firebaseFirestore.persistenceMod.PersistenceTransactionMode
 import typings.firebaseFirestore.simpleDbMod.SimpleDbTransactionMode
 import typings.firebaseFirestore.specTestRunnerMod.SpecLimitType
 import typings.firebaseFirestore.typesMod.MutationBatchState
+import typings.firebaseFirestore.typesMod.OnlineState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -131,6 +132,16 @@ object firebaseFirestoreStrings {
        with UnaryFilterOp
   
   @js.native
+  sealed trait Offline
+    extends OnlineState
+       with typings.firebaseFirestore.coreTypesMod.OnlineState
+  
+  @js.native
+  sealed trait Online
+    extends OnlineState
+       with typings.firebaseFirestore.coreTypesMod.OnlineState
+  
+  @js.native
   sealed trait READY extends IndexState
   
   @js.native
@@ -149,10 +160,12 @@ object firebaseFirestoreStrings {
   sealed trait STATE_UNSPECIFIED extends IndexState
   
   @js.native
-  sealed trait __name__ extends js.Object
+  sealed trait Unknown
+    extends OnlineState
+       with typings.firebaseFirestore.coreTypesMod.OnlineState
   
   @js.native
-  sealed trait _empty extends js.Object
+  sealed trait __name__ extends js.Object
   
   @js.native
   sealed trait acknowledged
@@ -355,6 +368,10 @@ object firebaseFirestoreStrings {
   @scala.inline
   def OPERATOR_UNSPECIFIED: OPERATOR_UNSPECIFIED = "OPERATOR_UNSPECIFIED".asInstanceOf[OPERATOR_UNSPECIFIED]
   @scala.inline
+  def Offline: Offline = "Offline".asInstanceOf[Offline]
+  @scala.inline
+  def Online: Online = "Online".asInstanceOf[Online]
+  @scala.inline
   def READY: READY = "READY".asInstanceOf[READY]
   @scala.inline
   def REMOVE: REMOVE = "REMOVE".asInstanceOf[REMOVE]
@@ -367,9 +384,9 @@ object firebaseFirestoreStrings {
   @scala.inline
   def STATE_UNSPECIFIED: STATE_UNSPECIFIED = "STATE_UNSPECIFIED".asInstanceOf[STATE_UNSPECIFIED]
   @scala.inline
-  def __name__ : __name__ = "__name__".asInstanceOf[__name__]
+  def Unknown: Unknown = "Unknown".asInstanceOf[Unknown]
   @scala.inline
-  def _empty: _empty = "".asInstanceOf[_empty]
+  def __name__ : __name__ = "__name__".asInstanceOf[__name__]
   @scala.inline
   def acknowledged: acknowledged = "acknowledged".asInstanceOf[acknowledged]
   @scala.inline

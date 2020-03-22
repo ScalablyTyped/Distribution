@@ -3,7 +3,12 @@ package typings.ts3NodejsLibrary.teamSpeakMod
 import typings.node.Buffer
 import typings.node.eventsMod.EventEmitter
 import typings.std.Error
-import typings.std.Partial
+import typings.ts3NodejsLibrary.PartialChannelGroupList
+import typings.ts3NodejsLibrary.PartialChannelList
+import typings.ts3NodejsLibrary.PartialClientList
+import typings.ts3NodejsLibrary.PartialConnectionParams
+import typings.ts3NodejsLibrary.PartialServerGroupList
+import typings.ts3NodejsLibrary.PartialServerList
 import typings.ts3NodejsLibrary.channelGroupMod.TeamSpeakChannelGroup
 import typings.ts3NodejsLibrary.channelMod.TeamSpeakChannel
 import typings.ts3NodejsLibrary.clientMod.TeamSpeakClient
@@ -17,6 +22,7 @@ import typings.ts3NodejsLibrary.eventsMod.Debug
 import typings.ts3NodejsLibrary.eventsMod.ServerEdit
 import typings.ts3NodejsLibrary.eventsMod.TextMessage
 import typings.ts3NodejsLibrary.eventsMod.TokenUsed
+import typings.ts3NodejsLibrary.propertyTypesMod.ApiKeyAdd
 import typings.ts3NodejsLibrary.propertyTypesMod.BanAdd
 import typings.ts3NodejsLibrary.propertyTypesMod.BanClient
 import typings.ts3NodejsLibrary.propertyTypesMod.ChannelEdit
@@ -30,6 +36,7 @@ import typings.ts3NodejsLibrary.propertyTypesMod.TransferUpload
 import typings.ts3NodejsLibrary.queryResponseMod.QueryResponse
 import typings.ts3NodejsLibrary.queryResponseMod.QueryResponseTypes
 import typings.ts3NodejsLibrary.responseErrorMod.ResponseError
+import typings.ts3NodejsLibrary.responseTypesMod.ApiKeyList
 import typings.ts3NodejsLibrary.responseTypesMod.BanList
 import typings.ts3NodejsLibrary.responseTypesMod.BindingList
 import typings.ts3NodejsLibrary.responseTypesMod.ChannelClientPermListId
@@ -37,9 +44,7 @@ import typings.ts3NodejsLibrary.responseTypesMod.ChannelClientPermListSid
 import typings.ts3NodejsLibrary.responseTypesMod.ChannelFind
 import typings.ts3NodejsLibrary.responseTypesMod.ChannelGroupClientList
 import typings.ts3NodejsLibrary.responseTypesMod.ChannelGroupCopy
-import typings.ts3NodejsLibrary.responseTypesMod.ChannelGroupList
 import typings.ts3NodejsLibrary.responseTypesMod.ChannelInfo
-import typings.ts3NodejsLibrary.responseTypesMod.ChannelList
 import typings.ts3NodejsLibrary.responseTypesMod.ClientDBFind
 import typings.ts3NodejsLibrary.responseTypesMod.ClientDBInfo
 import typings.ts3NodejsLibrary.responseTypesMod.ClientDBList
@@ -50,7 +55,6 @@ import typings.ts3NodejsLibrary.responseTypesMod.ClientGetNameFromDbid
 import typings.ts3NodejsLibrary.responseTypesMod.ClientGetNameFromUid
 import typings.ts3NodejsLibrary.responseTypesMod.ClientGetUidFromClid
 import typings.ts3NodejsLibrary.responseTypesMod.ClientInfo
-import typings.ts3NodejsLibrary.responseTypesMod.ClientList
 import typings.ts3NodejsLibrary.responseTypesMod.ClientSetServerQueryLogin
 import typings.ts3NodejsLibrary.responseTypesMod.ComplainList
 import typings.ts3NodejsLibrary.responseTypesMod.CustomInfo
@@ -77,11 +81,9 @@ import typings.ts3NodejsLibrary.responseTypesMod.QueryLoginList
 import typings.ts3NodejsLibrary.responseTypesMod.ServerCreate
 import typings.ts3NodejsLibrary.responseTypesMod.ServerGroupClientList
 import typings.ts3NodejsLibrary.responseTypesMod.ServerGroupCopy
-import typings.ts3NodejsLibrary.responseTypesMod.ServerGroupList
 import typings.ts3NodejsLibrary.responseTypesMod.ServerGroupsByClientId
 import typings.ts3NodejsLibrary.responseTypesMod.ServerIdGetByPort
 import typings.ts3NodejsLibrary.responseTypesMod.ServerInfo
-import typings.ts3NodejsLibrary.responseTypesMod.ServerList
 import typings.ts3NodejsLibrary.responseTypesMod.ServerRequestConnectionInfo
 import typings.ts3NodejsLibrary.responseTypesMod.ServerTempPasswordList
 import typings.ts3NodejsLibrary.responseTypesMod.SnapshotCreate
@@ -115,7 +117,7 @@ import scala.scalajs.js.annotation._
 @JSImport("ts3-nodejs-library/lib/TeamSpeak", "TeamSpeak")
 @js.native
 class TeamSpeak protected () extends EventEmitter {
-  def this(config: Partial[ConnectionParams]) = this()
+  def this(config: PartialConnectionParams) = this()
   var channelgroups: js.Any = js.native
   var channels: js.Any = js.native
   var clients: js.Any = js.native
@@ -181,6 +183,11 @@ class TeamSpeak protected () extends EventEmitter {
   var handleCache: js.Any = js.native
   /** handles initial commands after successfully connecting to a TeamSpeak Server */
   var handleReady: js.Any = js.native
+  /**
+    * wether the query client should get handled or not
+    * @param type the client type
+    */
+  var ignoreQueryClient: js.Any = js.native
   var priorizeNextCommand: js.Any = js.native
   var query: js.Any = js.native
   var servergroups: js.Any = js.native
@@ -202,6 +209,19 @@ class TeamSpeak protected () extends EventEmitter {
     * @param context context data to update
     */
   var updateContextResolve: js.Any = js.native
+  def apiKeyAdd(props: ApiKeyAdd): js.Promise[typings.ts3NodejsLibrary.responseTypesMod.ApiKeyAdd] = js.native
+  /**
+    * Deletes an apikey. Any apikey owned by the current user, can always be deleted
+    * Deleting apikeys from other requires b_virtualserver_apikey_manage
+    * @param id the key id to delete
+    */
+  def apiKeyDel(id: Double): js.Promise[js.Array[QueryResponseTypes]] = js.native
+  /**
+    * Lists all apikeys owned by the user, or of all users using cldbid=*.
+    * Usage of cldbid=... requires b_virtualserver_apikey_manage.
+    */
+  def apiKeyList(): js.Promise[ApiKeyList] = js.native
+  def apiKeyList(props: typings.ts3NodejsLibrary.propertyTypesMod.ApiKeyList): js.Promise[ApiKeyList] = js.native
   /**
     * Adds a new ban rule on the selected virtual server.
     * All parameters are optional but at least one of the following must be set: ip, name, uid or mytsid.
@@ -327,7 +347,7 @@ class TeamSpeak protected () extends EventEmitter {
     * Displays a list of channel groups available. Depending on your permissions, the output may also contain template groups.
     */
   def channelGroupList(): js.Promise[js.Array[TeamSpeakChannelGroup]] = js.native
-  def channelGroupList(filter: Partial[ChannelGroupList]): js.Promise[js.Array[TeamSpeakChannelGroup]] = js.native
+  def channelGroupList(filter: PartialChannelGroupList): js.Promise[js.Array[TeamSpeakChannelGroup]] = js.native
   /**
     * Displays a list of permissions assigned to the channel group specified with cgid.
     * @param cgid the channelgroup id to list
@@ -360,7 +380,7 @@ class TeamSpeak protected () extends EventEmitter {
     * Lists all Channels with a given Filter
     */
   def channelList(): js.Promise[js.Array[TeamSpeakChannel]] = js.native
-  def channelList(filter: Partial[ChannelList]): js.Promise[js.Array[TeamSpeakChannel]] = js.native
+  def channelList(filter: PartialChannelList): js.Promise[js.Array[TeamSpeakChannel]] = js.native
   /**
     * Moves a channel to a new parent channel with the ID cpid.
     * If order is specified, the channel will be sorted right under the channel with the specified ID.
@@ -523,7 +543,7 @@ class TeamSpeak protected () extends EventEmitter {
     * Lists all Clients with a given Filter
     */
   def clientList(): js.Promise[js.Array[TeamSpeakClient]] = js.native
-  def clientList(filter: Partial[ClientList]): js.Promise[js.Array[TeamSpeakClient]] = js.native
+  def clientList(filter: PartialClientList): js.Promise[js.Array[TeamSpeakClient]] = js.native
   /**
     * Moves the Client to a different Channel
     * @param clid the client id
@@ -712,6 +732,9 @@ class TeamSpeak protected () extends EventEmitter {
     * On success, the server generates a new ftkey which is required to start uploading the file through TeamSpeak 3's file transfer interface.
     */
   def ftInitUpload(transfer: TransferUpload): js.Promise[FTInitUpload] = js.native
+  /**
+    * Lists currently active file transfers
+    */
   def ftList(): js.Promise[js.Array[FTList]] = js.native
   /**
     * Renames a file in a channels file repository.
@@ -1131,7 +1154,7 @@ class TeamSpeak protected () extends EventEmitter {
     * Depending on your permissions, the output may also contain global ServerQuery groups and template groups.
     */
   def serverGroupList(): js.Promise[js.Array[TeamSpeakServerGroup]] = js.native
-  def serverGroupList(filter: Partial[ServerGroupList]): js.Promise[js.Array[TeamSpeakServerGroup]] = js.native
+  def serverGroupList(filter: PartialServerGroupList): js.Promise[js.Array[TeamSpeakServerGroup]] = js.native
   /**
     * Displays a list of permissions assigned to the server group specified with sgid.
     * @param sgid the servergroup id
@@ -1173,7 +1196,7 @@ class TeamSpeak protected () extends EventEmitter {
     * Displays a list of virtual servers including their ID, status, number of clients online, etc.
     */
   def serverList(): js.Promise[js.Array[TeamSpeakServer]] = js.native
-  def serverList(filter: Partial[ServerList]): js.Promise[js.Array[TeamSpeakServer]] = js.native
+  def serverList(filter: PartialServerList): js.Promise[js.Array[TeamSpeakServer]] = js.native
   /**
     * Stops the entire TeamSpeak 3 Server instance by shutting down the process.
     * @param reasonmsg specifies a text message that is sent to the clients before the client disconnects (requires TeamSpeak Server 3.2.0 or newer).
@@ -1265,7 +1288,7 @@ object TeamSpeak extends js.Object {
     * connects via a Promise wrapper
     * @param config config options to connect
     */
-  def connect(config: Partial[ConnectionParams]): js.Promise[TeamSpeak] = js.native
+  def connect(config: PartialConnectionParams): js.Promise[TeamSpeak] = js.native
   /**
     * filters an array with given filter
     * @param array the array which should get filtered

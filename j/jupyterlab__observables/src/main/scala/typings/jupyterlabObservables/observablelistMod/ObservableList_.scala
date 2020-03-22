@@ -3,9 +3,9 @@ package typings.jupyterlabObservables.observablelistMod
 import typings.jupyterlabObservables.jupyterlabObservablesStrings.List
 import typings.jupyterlabObservables.observablelistMod.IObservableList.IChangedArgs
 import typings.jupyterlabObservables.observablelistMod.ObservableList.IOptions
-import typings.phosphorAlgorithm.iterMod.IIterator
-import typings.phosphorAlgorithm.iterMod.IterableOrArrayLike
-import typings.phosphorSignaling.mod.ISignal
+import typings.luminoAlgorithm.iterMod.IIterator
+import typings.luminoAlgorithm.iterMod.IterableOrArrayLike
+import typings.luminoSignaling.mod.ISignal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -48,6 +48,11 @@ class ObservableList_[T] () extends IObservableList[T] {
   /* CompleteClass */
   override val `type`: List = js.native
   /**
+    * A signal emitted when the list has changed.
+    */
+  @JSName("changed")
+  def changed_MObservableList_(): ISignal[this.type, IChangedArgs[T]] = js.native
+  /**
     * Remove all values from the list.
     *
     * #### Complexity
@@ -82,7 +87,7 @@ class ObservableList_[T] () extends IObservableList[T] {
     * An `index` which is non-integral or out of range.
     */
   /* CompleteClass */
-  override def get(index: Double): js.UndefOr[T] = js.native
+  override def get(index: Double): T = js.native
   /**
     * Insert a value into the list at a specific index.
     *
@@ -126,6 +131,11 @@ class ObservableList_[T] () extends IObservableList[T] {
   /* CompleteClass */
   override def insertAll(index: Double, values: IterableOrArrayLike[T]): Unit = js.native
   /**
+    * Test whether the list has been disposed.
+    */
+  @JSName("isDisposed")
+  def isDisposed_MObservableList_(): Boolean = js.native
+  /**
     * Create an iterator over the values in the list.
     *
     * @returns A new iterator starting at the front of the list.
@@ -138,6 +148,11 @@ class ObservableList_[T] () extends IObservableList[T] {
     */
   /* CompleteClass */
   override def iter(): IIterator[T] = js.native
+  /**
+    * The length of the list.
+    */
+  @JSName("length")
+  def length_MObservableList_(): Double = js.native
   /**
     * Move a value from one index to another.
     *
@@ -260,5 +275,10 @@ class ObservableList_[T] () extends IObservableList[T] {
     */
   /* CompleteClass */
   override def set(index: Double, value: T): Unit = js.native
+  /**
+    * The type of this object.
+    */
+  @JSName("type")
+  def type_MObservableList_(): List = js.native
 }
 

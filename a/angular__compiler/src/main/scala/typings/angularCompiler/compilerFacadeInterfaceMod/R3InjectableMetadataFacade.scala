@@ -5,7 +5,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait R3InjectableMetadataFacade extends js.Object {
-  var ctorDeps: js.Array[R3DependencyMetadataFacade] | Null
   var name: String
   var providedIn: js.Any
   var `type`: js.Any
@@ -24,7 +23,6 @@ object R3InjectableMetadataFacade {
     providedIn: js.Any,
     `type`: js.Any,
     typeArgumentCount: Double,
-    ctorDeps: js.Array[R3DependencyMetadataFacade] = null,
     useClass: js.Any = null,
     useExisting: js.Any = null,
     useFactory: js.Any = null,
@@ -33,7 +31,6 @@ object R3InjectableMetadataFacade {
   ): R3InjectableMetadataFacade = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], providedIn = providedIn.asInstanceOf[js.Any], typeArgumentCount = typeArgumentCount.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (ctorDeps != null) __obj.updateDynamic("ctorDeps")(ctorDeps.asInstanceOf[js.Any])
     if (useClass != null) __obj.updateDynamic("useClass")(useClass.asInstanceOf[js.Any])
     if (useExisting != null) __obj.updateDynamic("useExisting")(useExisting.asInstanceOf[js.Any])
     if (useFactory != null) __obj.updateDynamic("useFactory")(useFactory.asInstanceOf[js.Any])

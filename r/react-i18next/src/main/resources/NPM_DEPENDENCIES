@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-i18next" : "10.13.2"
+      "react-i18next" : "11.3.3"
     }
   ],
   "test-dependencies" : [
     {
-      "react-i18next" : "10.13.2"
+      "react-i18next" : "11.3.3"
     }
   ],
   "compile-devDependencies" : [

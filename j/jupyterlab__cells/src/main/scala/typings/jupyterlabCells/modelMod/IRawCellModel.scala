@@ -5,12 +5,12 @@ import typings.jupyterlabCells.jupyterlabCellsStrings.raw
 import typings.jupyterlabCodeeditor.editorMod.CodeEditor.IModel
 import typings.jupyterlabCodeeditor.editorMod.CodeEditor.ITextSelection
 import typings.jupyterlabCoreutils.interfacesMod.IChangedArgs
-import typings.jupyterlabCoreutils.nbformatMod.nbformat.ICell
+import typings.jupyterlabNbformat.mod.ICell
 import typings.jupyterlabObservables.modeldbMod.IModelDB
 import typings.jupyterlabObservables.observablejsonMod.IObservableJSON
 import typings.jupyterlabObservables.observablemapMod.IObservableMap
 import typings.jupyterlabObservables.observablestringMod.IObservableString
-import typings.phosphorSignaling.mod.ISignal
+import typings.luminoSignaling.mod.ISignal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,10 +33,10 @@ object IRawCellModel {
     isDisposed: Boolean,
     metadata: IObservableJSON,
     mimeType: String,
-    mimeTypeChanged: ISignal[IModel, IChangedArgs[String, String]],
+    mimeTypeChanged: ISignal[IModel, IChangedArgs[String, String, String]],
     modelDB: IModelDB,
     selections: IObservableMap[js.Array[ITextSelection]],
-    stateChanged: ISignal[ICellModel, IChangedArgs[_, String]],
+    stateChanged: ISignal[ICellModel, IChangedArgs[_, _, String]],
     toJSON: () => ICell,
     trusted: Boolean,
     `type`: raw,

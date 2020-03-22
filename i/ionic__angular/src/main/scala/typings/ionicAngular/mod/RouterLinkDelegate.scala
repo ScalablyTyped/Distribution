@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/angular", "RouterLinkDelegate")
 @js.native
 class RouterLinkDelegate protected ()
-  extends typings.ionicAngular.distMod.RouterLinkDelegate {
+  extends typings.ionicAngular.routerLinkDelegateMod.RouterLinkDelegate {
   def this(
     locationStrategy: LocationStrategy,
     navCtrl: typings.ionicAngular.navControllerMod.NavController,

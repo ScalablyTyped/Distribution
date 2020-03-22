@@ -5,11 +5,9 @@ import typings.jupyterlabApplication.frontendMod.JupyterFrontEndPlugin
 import typings.jupyterlabApplication.mod.JupyterFrontEnd
 import typings.jupyterlabApputils.mod.MainAreaWidget
 import typings.jupyterlabApputils.mod.WidgetTracker
-import typings.jupyterlabCoreutils.tokensMod.ISettingRegistry
-import typings.jupyterlabTerminal.tokensMod.ITerminal.IOptions
+import typings.jupyterlabSettingregistry.tokensMod.ISettingRegistry
 import typings.jupyterlabTerminal.tokensMod.ITerminal.ITerminal
 import typings.jupyterlabTerminal.tokensMod.ITerminalTracker
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,7 +23,7 @@ object mod extends js.Object {
     app: JupyterFrontEnd[IShell],
     tracker: WidgetTracker[MainAreaWidget[ITerminal]],
     settingRegistry: ISettingRegistry,
-    options: Partial[IOptions]
+    options: PartialIOptions
   ): Unit = js.native
 }
 

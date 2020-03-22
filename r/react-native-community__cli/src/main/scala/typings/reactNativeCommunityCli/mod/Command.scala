@@ -1,7 +1,7 @@
 package typings.reactNativeCommunityCli.mod
 
 import typings.reactNativeCommunityCli.AnonCmd
-import typings.reactNativeCommunityCli.AnonCtx
+import typings.reactNativeCommunityCli.AnonDefault
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,7 +11,7 @@ trait Command extends js.Object {
   var description: js.UndefOr[String] = js.undefined
   var examples: js.UndefOr[js.Array[AnonCmd]] = js.undefined
   var name: String
-  var options: js.UndefOr[js.Array[AnonCtx]] = js.undefined
+  var options: js.UndefOr[js.Array[AnonDefault]] = js.undefined
   def func(argv: js.Array[String], ctx: Config_, args: Record[String, String]): js.Promise[Unit]
 }
 
@@ -22,7 +22,7 @@ object Command {
     name: String,
     description: String = null,
     examples: js.Array[AnonCmd] = null,
-    options: js.Array[AnonCtx] = null
+    options: js.Array[AnonDefault] = null
   ): Command = {
     val __obj = js.Dynamic.literal(func = js.Any.fromFunction3(func), name = name.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])

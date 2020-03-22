@@ -43,9 +43,6 @@ object cliBoxStrings {
   sealed trait se extends MarksKeys
   
   @js.native
-  sealed trait stringify extends js.Object
-  
-  @js.native
   sealed trait sw extends MarksKeys
   
   @js.native
@@ -78,8 +75,6 @@ object cliBoxStrings {
   def s: s = "s".asInstanceOf[s]
   @scala.inline
   def se: se = "se".asInstanceOf[se]
-  @scala.inline
-  def stringify: stringify = "stringify".asInstanceOf[stringify]
   @scala.inline
   def sw: sw = "sw".asInstanceOf[sw]
   @scala.inline

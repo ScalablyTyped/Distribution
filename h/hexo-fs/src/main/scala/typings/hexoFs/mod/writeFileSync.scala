@@ -1,6 +1,6 @@
 package typings.hexoFs.mod
 
-import typings.hexoFs.AnonEncodingFlag
+import typings.hexoFs.AnonFlag
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 object writeFileSync extends js.Object {
   def apply(path: String, data: js.Any): Unit = js.native
   def apply(path: String, data: js.Any, options: String): Unit = js.native
-  def apply(path: String, data: js.Any, options: AnonEncodingFlag): Unit = js.native
+  def apply(path: String, data: js.Any, options: AnonFlag): Unit = js.native
 }
 

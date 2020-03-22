@@ -2,8 +2,9 @@ package typings.blueprintjsSelect.queryListMod
 
 import org.scalablytyped.runtime.Instantiable1
 import typings.blueprintjsCore.mod.AbstractComponent2
-import typings.blueprintjsSelect.AnonChildren
 import typings.blueprintjsSelect.AnonDisabled
+import typings.blueprintjsSelect.ReadonlychildrenReactNode
+import typings.blueprintjsSelect.listItemsUtilsMod.ICreateNewItem
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -45,7 +46,6 @@ class QueryList[T] protected ()
   var renderItem: js.Any = js.native
   /** default `itemListRenderer` implementation */
   var renderItemList: js.Any = js.native
-  var setActiveItem: js.Any = js.native
   /**
     * Flag indicating that we should check whether selected item is in viewport
     * after rendering, typically because of keyboard change. Set to `true` when
@@ -56,14 +56,17 @@ class QueryList[T] protected ()
   @JSName("componentDidUpdate")
   def componentDidUpdate_MQueryList(prevProps: IQueryListProps[T]): Unit = js.native
   def scrollActiveItemIntoView(): Unit = js.native
+  def setActiveItem(): Unit = js.native
+  def setActiveItem(activeItem: T): Unit = js.native
+  def setActiveItem(activeItem: ICreateNewItem): Unit = js.native
   def setQuery(query: String): Unit = js.native
   def setQuery(
     query: String,
     resetActiveItem: js.UndefOr[scala.Nothing],
-    props: IQueryListProps[T] with AnonChildren
+    props: IQueryListProps[T] with ReadonlychildrenReactNode
   ): Unit = js.native
   def setQuery(query: String, resetActiveItem: Boolean): Unit = js.native
-  def setQuery(query: String, resetActiveItem: Boolean, props: IQueryListProps[T] with AnonChildren): Unit = js.native
+  def setQuery(query: String, resetActiveItem: Boolean, props: IQueryListProps[T] with ReadonlychildrenReactNode): Unit = js.native
 }
 
 /* static members */

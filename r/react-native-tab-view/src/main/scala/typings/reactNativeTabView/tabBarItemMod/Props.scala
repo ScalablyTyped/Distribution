@@ -5,7 +5,7 @@ import typings.reactNative.mod.LayoutChangeEvent
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativeTabView.AnonColorFocused
+import typings.reactNativeTabView.AnonFocused
 import typings.reactNativeTabView.typesMod.NavigationState
 import typings.reactNativeTabView.typesMod.Route
 import typings.reactNativeTabView.typesMod.Scene
@@ -23,8 +23,8 @@ trait Props[T /* <: Route */] extends js.Object {
   var pressColor: js.UndefOr[String] = js.undefined
   var pressOpacity: js.UndefOr[Double] = js.undefined
   var renderBadge: js.UndefOr[js.Function1[/* scene */ Scene[T], ReactNode]] = js.undefined
-  var renderIcon: js.UndefOr[js.Function1[/* scene */ AnonColorFocused[T], ReactNode]] = js.undefined
-  var renderLabel: js.UndefOr[js.Function1[/* scene */ AnonColorFocused[T], ReactNode]] = js.undefined
+  var renderIcon: js.UndefOr[js.Function1[/* scene */ AnonFocused[T], ReactNode]] = js.undefined
+  var renderLabel: js.UndefOr[js.Function1[/* scene */ AnonFocused[T], ReactNode]] = js.undefined
   var route: T
   var style: StyleProp[ViewStyle]
   def getAccessibilityLabel(scene: Scene[T]): js.UndefOr[String]
@@ -54,8 +54,8 @@ object Props {
     pressColor: String = null,
     pressOpacity: Int | Double = null,
     renderBadge: /* scene */ Scene[T] => ReactNode = null,
-    renderIcon: /* scene */ AnonColorFocused[T] => ReactNode = null,
-    renderLabel: /* scene */ AnonColorFocused[T] => ReactNode = null,
+    renderIcon: /* scene */ AnonFocused[T] => ReactNode = null,
+    renderLabel: /* scene */ AnonFocused[T] => ReactNode = null,
     style: StyleProp[ViewStyle] = null
   ): Props[T] = {
     val __obj = js.Dynamic.literal(getAccessibilityLabel = js.Any.fromFunction1(getAccessibilityLabel), getAccessible = js.Any.fromFunction1(getAccessible), getLabelText = js.Any.fromFunction1(getLabelText), getTestID = js.Any.fromFunction1(getTestID), navigationState = navigationState.asInstanceOf[js.Any], onLongPress = js.Any.fromFunction0(onLongPress), onPress = js.Any.fromFunction0(onPress), position = position.asInstanceOf[js.Any], route = route.asInstanceOf[js.Any])

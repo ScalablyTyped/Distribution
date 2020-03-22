@@ -8,11 +8,11 @@ trait AnonAmpmWheelLabel extends js.Object {
   var ampmWheelLabel: js.UndefOr[String] = js.undefined
   var cancelText: js.UndefOr[String] = js.undefined
   var currentTimeText: js.UndefOr[String] = js.undefined
-  var dateTimeRange: js.UndefOr[AnonHintMessageDetail] = js.undefined
+  var dateTimeRange: js.UndefOr[AnonMessageDetail] = js.undefined
   var hourWheelLabel: js.UndefOr[String] = js.undefined
   var minuteWheelLabel: js.UndefOr[String] = js.undefined
   var okText: js.UndefOr[String] = js.undefined
-  var regexp: js.UndefOr[AnonMessageDetail] = js.undefined
+  var regexp: js.UndefOr[AnonMessageSummary] = js.undefined
   var required: js.UndefOr[AnonHint] = js.undefined
   var tooltipTime: js.UndefOr[String] = js.undefined
   var tooltipTimeDisabled: js.UndefOr[String] = js.undefined
@@ -24,11 +24,11 @@ object AnonAmpmWheelLabel {
     ampmWheelLabel: String = null,
     cancelText: String = null,
     currentTimeText: String = null,
-    dateTimeRange: AnonHintMessageDetail = null,
+    dateTimeRange: AnonMessageDetail = null,
     hourWheelLabel: String = null,
     minuteWheelLabel: String = null,
     okText: String = null,
-    regexp: AnonMessageDetail = null,
+    regexp: AnonMessageSummary = null,
     required: AnonHint = null,
     tooltipTime: String = null,
     tooltipTimeDisabled: String = null

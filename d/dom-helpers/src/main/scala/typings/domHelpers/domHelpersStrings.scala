@@ -704,9 +704,6 @@ object domHelpersStrings {
   sealed trait loadedmetadata extends js.Object
   
   @js.native
-  sealed trait loadend extends js.Object
-  
-  @js.native
   sealed trait loadstart extends js.Object
   
   @js.native
@@ -2186,8 +2183,6 @@ object domHelpersStrings {
   def loadeddata: loadeddata = "loadeddata".asInstanceOf[loadeddata]
   @scala.inline
   def loadedmetadata: loadedmetadata = "loadedmetadata".asInstanceOf[loadedmetadata]
-  @scala.inline
-  def loadend: loadend = "loadend".asInstanceOf[loadend]
   @scala.inline
   def loadstart: loadstart = "loadstart".asInstanceOf[loadstart]
   @scala.inline

@@ -117,6 +117,8 @@ trait NodeBase extends js.Object {
     * @returns The Root instance of the node's tree.
     */
   def root(): Root_ = js.native
+  def toString(stringifier: Stringifier): String = js.native
+  def toString(stringifier: Syntax): String = js.native
   /**
     * Creates an instance of Warning and adds it to messages. This method is
     * provided as a convenience wrapper for Result#warn.

@@ -2,11 +2,11 @@ package typings.p2.mod
 
 import typings.p2.AnonBody
 import typings.p2.AnonBodyA
-import typings.p2.AnonBodyABodyB
-import typings.p2.AnonBodyABodyBShapeA
+import typings.p2.AnonBodyB
 import typings.p2.AnonContactEquations
 import typings.p2.AnonPairs
 import typings.p2.AnonRelaxation
+import typings.p2.AnonShapeA
 import typings.p2.AnonSpring
 import typings.p2.AnonType
 import scala.scalajs.js
@@ -24,7 +24,7 @@ class World () extends EventEmitter {
   var applyDamping: Boolean = js.native
   var applyGravity: Boolean = js.native
   var applySpringForces: Boolean = js.native
-  var beginContactEvent: AnonBodyABodyB = js.native
+  var beginContactEvent: AnonBodyB = js.native
   var bodies: js.Array[Body] = js.native
   var broadphase: Broadphase = js.native
   var constraints: js.Array[Constraint] = js.native
@@ -33,7 +33,7 @@ class World () extends EventEmitter {
   var defaultMaterial: Material = js.native
   var doProfiling: Boolean = js.native
   var emitImpactEvent: Boolean = js.native
-  var endContactEvent: AnonBodyABodyBShapeA = js.native
+  var endContactEvent: AnonShapeA = js.native
   var frictionGravity: Double = js.native
   var gravity: js.Tuple2[Double, Double] = js.native
   var impactEvent: AnonBodyA = js.native

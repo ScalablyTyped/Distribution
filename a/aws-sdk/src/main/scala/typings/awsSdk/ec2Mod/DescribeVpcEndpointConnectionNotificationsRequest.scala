@@ -9,7 +9,7 @@ trait DescribeVpcEndpointConnectionNotificationsRequest extends js.Object {
   /**
     * The ID of the notification.
     */
-  var ConnectionNotificationId: js.UndefOr[String] = js.native
+  var ConnectionNotificationId: js.UndefOr[typings.awsSdk.ec2Mod.ConnectionNotificationId] = js.native
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
@@ -31,7 +31,7 @@ trait DescribeVpcEndpointConnectionNotificationsRequest extends js.Object {
 object DescribeVpcEndpointConnectionNotificationsRequest {
   @scala.inline
   def apply(
-    ConnectionNotificationId: String = null,
+    ConnectionNotificationId: ConnectionNotificationId = null,
     DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     Filters: FilterList = null,
     MaxResults: Int | scala.Double = null,

@@ -1,8 +1,8 @@
 package typings.jupyterlabCells.mod
 
 import typings.jupyterlabCells.celldragutilsMod.CellDragUtils.ICellTargetArea
-import typings.jupyterlabCoreutils.nbformatMod.nbformat.ICell
-import typings.phosphorAlgorithm.iterMod.IterableOrArrayLike
+import typings.jupyterlabNbformat.mod.ICell
+import typings.luminoAlgorithm.iterMod.IterableOrArrayLike
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

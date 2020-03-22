@@ -2,8 +2,8 @@ package typings.gapiClientAdexchangebuyer.gapi.client.adexchangebuyer
 
 import typings.gapiClientAdexchangebuyer.AnonAdvertiser
 import typings.gapiClientAdexchangebuyer.AnonContexts
-import typings.gapiClientAdexchangebuyer.AnonContextsDisapprovalReasons
 import typings.gapiClientAdexchangebuyer.AnonDate
+import typings.gapiClientAdexchangebuyer.AnonDisapprovalReasons
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -83,7 +83,7 @@ trait Creative extends js.Object {
     * platform, an HTTPS vs HTTP request, or the type of auction). Read-only. This field should not be set in requests. See the examples in the Creatives
     * guide for more details.
     */
-  var servingRestrictions: js.UndefOr[js.Array[AnonContextsDisapprovalReasons]] = js.undefined
+  var servingRestrictions: js.UndefOr[js.Array[AnonDisapprovalReasons]] = js.undefined
   /** List of vendor types for the ads that may be shown from this snippet. Each vendor type is represented by an integer as defined in vendors.txt. */
   var vendorType: js.UndefOr[js.Array[Double]] = js.undefined
   /** The version for this creative. Read-only. This field should not be set in requests. */
@@ -120,7 +120,7 @@ object Creative {
     productCategories: js.Array[Double] = null,
     restrictedCategories: js.Array[Double] = null,
     sensitiveCategories: js.Array[Double] = null,
-    servingRestrictions: js.Array[AnonContextsDisapprovalReasons] = null,
+    servingRestrictions: js.Array[AnonDisapprovalReasons] = null,
     vendorType: js.Array[Double] = null,
     version: Int | Double = null,
     videoURL: String = null,

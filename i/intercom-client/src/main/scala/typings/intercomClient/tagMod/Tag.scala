@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in keyof intercom-client.intercom-client/Tag.TagIdentifier ]:? intercom-client.intercom-client/Tag.TagIdentifier[P]} */ trait Tag extends js.Object {
+/* Inlined parent std.Partial<intercom-client.intercom-client/Tag.TagIdentifier> */
+trait Tag extends js.Object {
   val id: String
   var name: String
   val `type`: tag

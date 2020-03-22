@@ -1,5 +1,6 @@
 package typings.baseui.toastMod
 
+import typings.baseui.ReadonlySharedStylePropsA
 import typings.react.mod.Component
 import typings.std.Event_
 import scala.scalajs.js
@@ -14,7 +15,7 @@ class Toast ()
   def animateOut(): Unit = js.native
   def clearTimeout(): Unit = js.native
   def dismiss(): Unit = js.native
-  def getSharedProps(): SharedStylePropsArg = js.native
+  def getSharedProps(): ReadonlySharedStylePropsA = js.native
   def onBlur(e: Event_): Unit = js.native
   def onFocus(e: Event_): Unit = js.native
   def onMouseEnter(e: Event_): Unit = js.native

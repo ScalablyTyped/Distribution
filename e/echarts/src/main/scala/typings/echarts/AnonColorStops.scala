@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonColorStops extends js.Object {
-  var colorStops: js.Array[AnonColorOffset]
+  var colorStops: js.Array[AnonOffset]
   var global: Boolean
   var `type`: linear
   var x: Double
@@ -18,7 +18,7 @@ trait AnonColorStops extends js.Object {
 object AnonColorStops {
   @scala.inline
   def apply(
-    colorStops: js.Array[AnonColorOffset],
+    colorStops: js.Array[AnonOffset],
     global: Boolean,
     `type`: linear,
     x: Double,

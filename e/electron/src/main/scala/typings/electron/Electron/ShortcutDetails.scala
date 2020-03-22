@@ -11,8 +11,8 @@ trait ShortcutDetails extends js.Object {
     */
   var appUserModelId: js.UndefOr[String] = js.undefined
   /**
-    * The arguments to be applied to target when launching from this shortcut. Default
-    * is empty.
+    * The arguments to be applied to `target` when launching from this shortcut.
+    * Default is empty.
     */
   var args: js.UndefOr[String] = js.undefined
   /**
@@ -24,12 +24,12 @@ trait ShortcutDetails extends js.Object {
     */
   var description: js.UndefOr[String] = js.undefined
   /**
-    * The path to the icon, can be a DLL or EXE. icon and iconIndex have to be set
+    * The path to the icon, can be a DLL or EXE. `icon` and `iconIndex` have to be set
     * together. Default is empty, which uses the target's icon.
     */
   var icon: js.UndefOr[String] = js.undefined
   /**
-    * The resource ID of icon when icon is a DLL or EXE. Default is 0.
+    * The resource ID of icon when `icon` is a DLL or EXE. Default is 0.
     */
   var iconIndex: js.UndefOr[Double] = js.undefined
   /**

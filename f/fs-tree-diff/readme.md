@@ -1,7 +1,7 @@
 
 # Scala.js typings for fs-tree-diff
 
-Typings are for version 0.5.9
+Typings are for version 2.0.1
 
 ## Library description:
 Backs out file tree changes

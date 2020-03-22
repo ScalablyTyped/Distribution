@@ -1,6 +1,6 @@
 package typings.vexflow.mod.Flow
 
-import typings.vexflow.AnonDotsDurationType
+import typings.vexflow.AnonType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Note protected ()
   extends typings.vexflow.Vex.Flow.Note {
-  def this(note_struct: AnonDotsDurationType) = this()
+  def this(note_struct: AnonType) = this()
 }
 
 @JSImport("vexflow", "Flow.Note")

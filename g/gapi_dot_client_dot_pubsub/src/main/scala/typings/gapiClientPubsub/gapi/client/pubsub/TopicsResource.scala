@@ -2,9 +2,9 @@ package typings.gapiClientPubsub.gapi.client.pubsub
 
 import typings.gapiClient.gapi.client.Request_
 import typings.gapiClientPubsub.AnonAccesstoken
-import typings.gapiClientPubsub.AnonAccesstokenAltBearertoken
-import typings.gapiClientPubsub.AnonAccesstokenAltBearertokenCallback
-import typings.gapiClientPubsub.AnonAccesstokenAltBearertokenCallbackFieldsKey
+import typings.gapiClientPubsub.AnonBearertoken
+import typings.gapiClientPubsub.AnonCallback
+import typings.gapiClientPubsub.AnonKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 trait TopicsResource extends js.Object {
   var subscriptions: SubscriptionsResource
   /** Creates the given topic with the given name. */
-  def create(request: AnonAccesstokenAltBearertoken): Request_[Topic]
+  def create(request: AnonBearertoken): Request_[Topic]
   /**
     * Deletes the topic with the given name. Returns `NOT_FOUND` if the topic
     * does not exist. After a topic is deleted, a new topic may be created with
@@ -20,9 +20,9 @@ trait TopicsResource extends js.Object {
     * configuration or subscriptions. Existing subscriptions to this topic are
     * not deleted, but their `topic` field is set to `_deleted-topic_`.
     */
-  def delete(request: AnonAccesstokenAltBearertokenCallbackFieldsKey): Request_[js.Object]
+  def delete(request: AnonKey): Request_[js.Object]
   /** Gets the configuration of a topic. */
-  def get(request: AnonAccesstokenAltBearertokenCallbackFieldsKey): Request_[Topic]
+  def get(request: AnonKey): Request_[Topic]
   /**
     * Gets the access control policy for a resource.
     * Returns an empty policy if the resource exists and does not have a policy
@@ -30,13 +30,13 @@ trait TopicsResource extends js.Object {
     */
   def getIamPolicy(request: AnonAccesstoken): Request_[Policy]
   /** Lists matching topics. */
-  def list(request: AnonAccesstokenAltBearertokenCallback): Request_[ListTopicsResponse]
+  def list(request: AnonCallback): Request_[ListTopicsResponse]
   /**
     * Adds one or more messages to the topic. Returns `NOT_FOUND` if the topic
     * does not exist. The message payload must not be empty; it must contain
     * either a non-empty data field, or at least one attribute.
     */
-  def publish(request: AnonAccesstokenAltBearertokenCallbackFieldsKey): Request_[PublishResponse]
+  def publish(request: AnonKey): Request_[PublishResponse]
   /**
     * Sets the access control policy on the specified resource. Replaces any
     * existing policy.
@@ -57,12 +57,12 @@ trait TopicsResource extends js.Object {
 object TopicsResource {
   @scala.inline
   def apply(
-    create: AnonAccesstokenAltBearertoken => Request_[Topic],
-    delete: AnonAccesstokenAltBearertokenCallbackFieldsKey => Request_[js.Object],
-    get: AnonAccesstokenAltBearertokenCallbackFieldsKey => Request_[Topic],
+    create: AnonBearertoken => Request_[Topic],
+    delete: AnonKey => Request_[js.Object],
+    get: AnonKey => Request_[Topic],
     getIamPolicy: AnonAccesstoken => Request_[Policy],
-    list: AnonAccesstokenAltBearertokenCallback => Request_[ListTopicsResponse],
-    publish: AnonAccesstokenAltBearertokenCallbackFieldsKey => Request_[PublishResponse],
+    list: AnonCallback => Request_[ListTopicsResponse],
+    publish: AnonKey => Request_[PublishResponse],
     setIamPolicy: AnonAccesstoken => Request_[Policy],
     subscriptions: SubscriptionsResource,
     testIamPermissions: AnonAccesstoken => Request_[TestIamPermissionsResponse]

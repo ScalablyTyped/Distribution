@@ -19,7 +19,7 @@ object operationCallBuilderMod extends js.Object {
     def forLedger(sequence: Double): this.type = js.native
     def forTransaction(transactionId: String): this.type = js.native
     def includeFailed(value: Boolean): this.type = js.native
-    def operation(operationId: String): this.type = js.native
+    def operation(operationId: String): CallBuilder[OperationRecord] = js.native
   }
   
 }

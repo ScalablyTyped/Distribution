@@ -159,6 +159,5 @@ trait Scope extends EventEmitter {
   def replyContentLength(): this.type = js.native
   def replyDate(): this.type = js.native
   def replyDate(d: Date): this.type = js.native
-  def restore(): Unit = js.native
 }
 

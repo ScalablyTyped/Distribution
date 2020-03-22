@@ -1,6 +1,6 @@
 package typings.canvasjs.mod
 
-import typings.canvasjs.AnonChartEntries
+import typings.canvasjs.AnonEntries
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,7 +40,7 @@ trait ChartToolTipOptions extends js.Object {
   /**
     * A custom formatter function that returns the content (text/html) to be displayed inside the toolTip.
     */
-  var contentFormatter: js.UndefOr[js.Function1[/* e */ AnonChartEntries, String]] = js.undefined
+  var contentFormatter: js.UndefOr[js.Function1[/* e */ AnonEntries, String]] = js.undefined
   /**
     * Setting a value higher than 0 makes the corners of toolTip rounded. Higher the value, more rounded the corners are.
     * Default: 5
@@ -106,7 +106,7 @@ object ChartToolTipOptions {
     borderColor: String = null,
     borderThickness: Int | Double = null,
     content: String = null,
-    contentFormatter: /* e */ AnonChartEntries => String = null,
+    contentFormatter: /* e */ AnonEntries => String = null,
     cornerRadius: Int | Double = null,
     enabled: js.UndefOr[Boolean] = js.undefined,
     fontColor: String = null,

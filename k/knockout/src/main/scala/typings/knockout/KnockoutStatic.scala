@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 trait KnockoutStatic extends js.Object {
   var bindingHandlers: KnockoutBindingHandlers = js.native
   /////////////////////////////////
-  var bindingProvider: AnonInstanceKnockoutBindingProvider = js.native
+  var bindingProvider: AnonInstantiableInstance = js.native
   var components: KnockoutComponents = js.native
   /**
     * Get information about the current computed property during the execution of a computed observable’s evaluator function.
@@ -19,7 +19,7 @@ trait KnockoutStatic extends js.Object {
   var computedContext: KnockoutComputedContext = js.native
   @JSName("computed")
   var computed_Original: KnockoutComputedStatic = js.native
-  var expressionRewriting: AnonAllBindings = js.native
+  var expressionRewriting: AnonBindingRewriteValidators = js.native
   var extenders: KnockoutExtenders = js.native
   //////////////////////////////////
   // jqueryTmplTemplateEngine.js
@@ -45,7 +45,7 @@ trait KnockoutStatic extends js.Object {
   /////////////////////////////////
   // selectExtensions.js
   /////////////////////////////////
-  var selectExtensions: AnonAllowUnset = js.native
+  var selectExtensions: AnonReadValue = js.native
   var subscribable: KnockoutSubscribableStatic = js.native
   /////////////////////////////////
   // tasks.js
@@ -54,7 +54,7 @@ trait KnockoutStatic extends js.Object {
   //////////////////////////////////
   // templateEngine.js
   //////////////////////////////////
-  var templateEngine: AnonKnockoutTemplateEngine = js.native
+  var templateEngine: AnonInstantiableKnockoutTemplateEngine = js.native
   //////////////////////////////////
   // templateRewriting.js
   //////////////////////////////////

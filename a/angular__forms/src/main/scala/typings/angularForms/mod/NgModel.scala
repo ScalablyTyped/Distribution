@@ -31,12 +31,7 @@ class NgModel protected ()
   var _updateDisabled: js.Any = js.native
   var _updateValue: js.Any = js.native
   @JSName("control")
-  val control_NgModel: FormControl = js.native
-  /**
-    * @description
-    * The top-level directive for this control if present, otherwise null.
-    */
-  val formDirective: js.Any = js.native
+  val control_FNgModel: FormControl = js.native
   /**
     * @description
     * Tracks whether the control is disabled.
@@ -72,13 +67,6 @@ class NgModel protected ()
   var options: AnonName = js.native
   /**
     * @description
-    * Returns an array that represents the path from the top-level form to this control.
-    * Each index is the string name of the control on that level.
-    */
-  @JSName("path")
-  val path_NgModel: js.Array[String] = js.native
-  /**
-    * @description
     * Event emitter for producing the `ngModelChange` event after
     * the view model updates.
     */
@@ -88,6 +76,11 @@ class NgModel protected ()
     * Internal reference to the view model value.
     */
   var viewModel: js.Any = js.native
+  /**
+    * @description
+    * The top-level directive for this control if present, otherwise null.
+    */
+  def formDirective(): js.Any = js.native
   /**
     * A callback method that is invoked immediately after the
     * default change detector has checked data-bound properties
@@ -99,9 +92,17 @@ class NgModel protected ()
   override def ngOnChanges(changes: SimpleChanges): Unit = js.native
   /**
     * A callback method that performs custom clean-up, invoked immediately
-    * after a directive, pipe, or service instance is destroyed.
+    * before a directive, pipe, or service instance is destroyed.
     */
   /* CompleteClass */
   override def ngOnDestroy(): Unit = js.native
+}
+
+/* static members */
+@JSImport("@angular/forms", "NgModel")
+@js.native
+object NgModel extends js.Object {
+  /** @nodoc */
+  var ngAcceptInputType_isDisabled: Boolean | String = js.native
 }
 

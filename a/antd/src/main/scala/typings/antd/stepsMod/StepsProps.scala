@@ -1,65 +1,71 @@
 package typings.antd.stepsMod
 
-import typings.antd.antdStrings.error
-import typings.antd.antdStrings.finish
-import typings.antd.antdStrings.horizontal
-import typings.antd.antdStrings.navigation
-import typings.antd.antdStrings.process
-import typings.antd.antdStrings.small
-import typings.antd.antdStrings.vertical
-import typings.antd.antdStrings.wait
+import typings.antd.antdStrings.active
+import typings.antd.antdStrings.bottom
+import typings.antd.antdStrings.butt
+import typings.antd.antdStrings.exception
+import typings.antd.antdStrings.left
+import typings.antd.antdStrings.normal
+import typings.antd.antdStrings.right
+import typings.antd.antdStrings.round
+import typings.antd.antdStrings.square
+import typings.antd.antdStrings.success
+import typings.antd.antdStrings.top
+import typings.antd.progressProgressMod.ProgressGradient
+import typings.antd.progressProgressMod.ProgressProps
+import typings.antd.progressProgressMod.ProgressSize
+import typings.antd.progressProgressMod.ProgressType
 import typings.react.mod.CSSProperties
+import typings.react.mod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait StepsProps extends js.Object {
-  var className: js.UndefOr[String] = js.undefined
-  var current: js.UndefOr[Double] = js.undefined
-  var direction: js.UndefOr[horizontal | vertical] = js.undefined
-  var iconPrefix: js.UndefOr[String] = js.undefined
-  var initial: js.UndefOr[Double] = js.undefined
-  var labelPlacement: js.UndefOr[horizontal | vertical] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* current */ Double, Unit]] = js.undefined
-  var prefixCls: js.UndefOr[String] = js.undefined
-  var progressDot: js.UndefOr[Boolean | js.Function] = js.undefined
-  var size: js.UndefOr[typings.antd.antdStrings.default | small] = js.undefined
-  var status: js.UndefOr[wait | process | finish | error] = js.undefined
-  var style: js.UndefOr[CSSProperties] = js.undefined
-  var `type`: js.UndefOr[typings.antd.antdStrings.default | navigation] = js.undefined
+trait StepsProps extends ProgressProps {
+  @JSName("steps")
+  var steps_StepsProps: Double
 }
 
 object StepsProps {
   @scala.inline
   def apply(
+    steps: Double,
     className: String = null,
-    current: Int | Double = null,
-    direction: horizontal | vertical = null,
-    iconPrefix: String = null,
-    initial: Int | Double = null,
-    labelPlacement: horizontal | vertical = null,
-    onChange: /* current */ Double => Unit = null,
+    format: (/* percent */ js.UndefOr[Double], /* successPercent */ js.UndefOr[Double]) => ReactNode = null,
+    gapDegree: Int | Double = null,
+    gapPosition: top | bottom | left | right = null,
+    percent: Int | Double = null,
     prefixCls: String = null,
-    progressDot: Boolean | js.Function = null,
-    size: typings.antd.antdStrings.default | small = null,
-    status: wait | process | finish | error = null,
+    showInfo: js.UndefOr[Boolean] = js.undefined,
+    size: ProgressSize = null,
+    status: normal | exception | active | success = null,
+    strokeColor: String | ProgressGradient = null,
+    strokeLinecap: butt | square | round = null,
+    strokeWidth: Int | Double = null,
     style: CSSProperties = null,
-    `type`: typings.antd.antdStrings.default | navigation = null
+    successPercent: Int | Double = null,
+    trailColor: String = null,
+    `type`: ProgressType = null,
+    width: Int | Double = null
   ): StepsProps = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(steps = steps.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (current != null) __obj.updateDynamic("current")(current.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (iconPrefix != null) __obj.updateDynamic("iconPrefix")(iconPrefix.asInstanceOf[js.Any])
-    if (initial != null) __obj.updateDynamic("initial")(initial.asInstanceOf[js.Any])
-    if (labelPlacement != null) __obj.updateDynamic("labelPlacement")(labelPlacement.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
+    if (format != null) __obj.updateDynamic("format")(js.Any.fromFunction2(format))
+    if (gapDegree != null) __obj.updateDynamic("gapDegree")(gapDegree.asInstanceOf[js.Any])
+    if (gapPosition != null) __obj.updateDynamic("gapPosition")(gapPosition.asInstanceOf[js.Any])
+    if (percent != null) __obj.updateDynamic("percent")(percent.asInstanceOf[js.Any])
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
-    if (progressDot != null) __obj.updateDynamic("progressDot")(progressDot.asInstanceOf[js.Any])
+    if (!js.isUndefined(showInfo)) __obj.updateDynamic("showInfo")(showInfo.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (strokeColor != null) __obj.updateDynamic("strokeColor")(strokeColor.asInstanceOf[js.Any])
+    if (strokeLinecap != null) __obj.updateDynamic("strokeLinecap")(strokeLinecap.asInstanceOf[js.Any])
+    if (strokeWidth != null) __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (successPercent != null) __obj.updateDynamic("successPercent")(successPercent.asInstanceOf[js.Any])
+    if (trailColor != null) __obj.updateDynamic("trailColor")(trailColor.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[StepsProps]
   }
 }

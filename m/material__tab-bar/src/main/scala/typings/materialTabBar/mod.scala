@@ -2,7 +2,6 @@ package typings.materialTabBar
 
 import typings.materialTabBar.adapterMod.MDCTabBarAdapter
 import typings.std.Element
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +16,7 @@ object mod extends js.Object {
   @js.native
   class MDCTabBarFoundation ()
     extends typings.materialTabBar.foundationMod.MDCTabBarFoundation {
-    def this(adapter: Partial[MDCTabBarAdapter]) = this()
+    def this(adapter: PartialMDCTabBarAdapter) = this()
   }
   
   /* static members */

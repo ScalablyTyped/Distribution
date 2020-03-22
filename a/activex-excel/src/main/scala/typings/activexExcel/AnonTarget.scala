@@ -1,22 +1,19 @@
 package typings.activexExcel
 
-import typings.activexExcel.Excel.PivotTable
-import typings.activexExcel.Excel.Workbook
+import typings.activexExcel.Excel.Range
+import typings.activexExcel.Excel.Worksheet
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AnonTarget extends js.Object {
-  val Target: PivotTable
-  val Wb: Workbook
-}
-
-object AnonTarget {
-  @scala.inline
-  def apply(Target: PivotTable, Wb: Workbook): AnonTarget = {
-    val __obj = js.Dynamic.literal(Target = Target.asInstanceOf[js.Any], Wb = Wb.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[AnonTarget]
-  }
+  var Cancel: Boolean = js.native
+  val Sh: Worksheet = js.native
+  @JSName("Target")
+  val Target_Original: Range = js.native
+  def Target(Address: String): Range = js.native
+  def Target(RowIndex: Double): Range = js.native
+  def Target(RowIndex: Double, ColumnIndex: Double): Range = js.native
 }
 

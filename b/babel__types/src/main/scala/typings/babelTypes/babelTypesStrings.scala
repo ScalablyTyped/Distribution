@@ -871,9 +871,6 @@ object babelTypesStrings {
   sealed trait `private` extends js.Object
   
   @js.native
-  sealed trait property extends js.Object
-  
-  @js.native
   sealed trait `protected` extends js.Object
   
   @js.native
@@ -1491,8 +1488,6 @@ object babelTypesStrings {
   def plus: plus = "plus".asInstanceOf[plus]
   @scala.inline
   def `private`: `private` = "private".asInstanceOf[`private`]
-  @scala.inline
-  def property: property = "property".asInstanceOf[property]
   @scala.inline
   def `protected`: `protected` = "protected".asInstanceOf[`protected`]
   @scala.inline

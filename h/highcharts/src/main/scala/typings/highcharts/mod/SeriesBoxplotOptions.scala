@@ -8,7 +8,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.highcharts.mod.SeriesOptions because var conflicts: zIndex. Inlined id, index, legendIndex, mapData, name, stack, treemap, `type`, xAxis, yAxis */ trait SeriesBoxplotOptions
+- typings.highcharts.mod.SeriesOptions because var conflicts: zIndex. Inlined id, index, legendIndex, mapData, name, stack, `type`, xAxis, yAxis */ trait SeriesBoxplotOptions
   extends PlotBoxplotOptions
      with SeriesOptionsType {
   /**
@@ -31,7 +31,7 @@ import scala.scalajs.js.annotation._
     */
   var data: js.UndefOr[
     js.Array[
-      (js.Tuple5[Double | String, Double, Double, Double, Double]) | (js.Tuple6[Double | String, Double, Double, Double, Double, Double]) | SeriesBoxplotDataOptions
+      (js.Tuple5[Double | String, Double, Double, Double, Double]) | (js.Tuple6[Double | String, Double, Double, Double, Double, Double]) | PointOptionsObject
     ]
   ] = js.undefined
   /**
@@ -74,7 +74,6 @@ import scala.scalajs.js.annotation._
     * Not available
     */
   var stack: js.UndefOr[Double | String] = js.undefined
-  var treemap: js.UndefOr[SeriesTreemapOptions] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) This property is only in
     * TypeScript non-optional and might be `undefined` in series objects from
@@ -101,10 +100,10 @@ object SeriesBoxplotOptions {
   @scala.inline
   def apply(
     `type`: String | boxplot,
-    accessibility: js.Object | PlotBoxplotAccessibilityOptions = null,
+    accessibility: SeriesAccessibilityOptionsObject = null,
     allAreas: js.UndefOr[Boolean] = js.undefined,
     allowPointSelect: js.UndefOr[Boolean] = js.undefined,
-    animation: Boolean | AnimationOptionsObject | PlotBoxplotAnimationOptions = null,
+    animation: Boolean | AnimationOptionsObject = null,
     animationLimit: Int | Double = null,
     boostBlending: OptionsBoostBlendingValue = null,
     boostThreshold: Int | Double = null,
@@ -119,24 +118,25 @@ object SeriesBoxplotOptions {
     compare: String = null,
     compareBase: `0` | `100` = null,
     compareStart: js.UndefOr[Boolean] = js.undefined,
-    connectors: PlotBoxplotConnectorsOptions = null,
+    connectors: SeriesConnectorsOptionsObject = null,
     crisp: js.UndefOr[Boolean] = js.undefined,
     cropThreshold: Int | Double = null,
     cursor: String | CursorValue = null,
     data: js.Array[
-      (js.Tuple5[Double | String, Double, Double, Double, Double]) | (js.Tuple6[Double | String, Double, Double, Double, Double, Double]) | SeriesBoxplotDataOptions
+      (js.Tuple5[Double | String, Double, Double, Double, Double]) | (js.Tuple6[Double | String, Double, Double, Double, Double, Double]) | PointOptionsObject
     ] = null,
-    dataGrouping: PlotBoxplotDataGroupingOptions = null,
-    dataLabels: js.Any = null,
+    dataGrouping: DataGroupingOptionsObject = null,
+    dataLabels: DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject] = null,
     dataParser: js.UndefOr[scala.Nothing] = js.undefined,
+    dataSorting: DataSortingOptionsObject | PlotBoxplotDataSortingOptions = null,
     dataURL: js.UndefOr[scala.Nothing] = js.undefined,
     depth: Int | Double = null,
     description: String = null,
-    dragDrop: PlotBoxplotDragDropOptions = null,
+    dragDrop: SeriesDragDropOptionsObject = null,
     edgeColor: ColorString = null,
     edgeWidth: Int | Double = null,
     enableMouseTracking: js.UndefOr[Boolean] = js.undefined,
-    events: PlotBoxplotEventsOptions = null,
+    events: SeriesEventsOptionsObject = null,
     fillColor: ColorString | GradientColorObject | PatternObject = null,
     findNearestPointBy: OptionsFindNearestPointByValue = null,
     getExtremesFromAll: js.UndefOr[Boolean] = js.undefined,
@@ -147,9 +147,9 @@ object SeriesBoxplotOptions {
     index: Int | Double = null,
     joinBy: String | js.Array[String] = null,
     keys: js.Array[String] = null,
-    label: PlotBoxplotLabelOptions = null,
-    lastPrice: PlotBoxplotLastPriceOptions = null,
-    lastVisiblePrice: PlotBoxplotLastVisiblePriceOptions = null,
+    label: SeriesLabelOptionsObject = null,
+    lastPrice: SeriesLastPriceOptionsObject = null,
+    lastVisiblePrice: SeriesLastVisiblePriceOptionsObject = null,
     legendIndex: Int | Double = null,
     lineWidth: Int | Double = null,
     linkedTo: String = null,
@@ -162,7 +162,7 @@ object SeriesBoxplotOptions {
     navigatorOptions: PlotSeriesOptions = null,
     negativeColor: ColorString | GradientColorObject | PatternObject = null,
     opacity: Int | Double = null,
-    point: PlotBoxplotPointOptions = null,
+    point: PlotSeriesPointOptions = null,
     pointDescriptionFormatter: js.Function = null,
     pointInterval: Int | Double = null,
     pointIntervalUnit: OptionsPointIntervalUnitValue = null,
@@ -183,9 +183,8 @@ object SeriesBoxplotOptions {
     stemDashStyle: DashStyleValue = null,
     stemWidth: Int | Double = null,
     stickyTracking: js.UndefOr[Boolean] = js.undefined,
-    threshold: js.Any = null,
-    tooltip: PlotBoxplotTooltipOptions = null,
-    treemap: SeriesTreemapOptions = null,
+    threshold: Int | Double = null,
+    tooltip: SeriesTooltipOptionsObject = null,
     turboThreshold: Int | Double = null,
     visible: js.UndefOr[Boolean] = js.undefined,
     whiskerColor: ColorString | GradientColorObject | PatternObject = null,
@@ -195,7 +194,7 @@ object SeriesBoxplotOptions {
     yAxis: Double | String = null,
     zIndex: Int | Double = null,
     zoneAxis: String = null,
-    zones: js.Array[PlotBoxplotZonesOptions] = null
+    zones: js.Array[SeriesZonesOptionsObject] = null
   ): SeriesBoxplotOptions = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -225,6 +224,7 @@ object SeriesBoxplotOptions {
     if (dataGrouping != null) __obj.updateDynamic("dataGrouping")(dataGrouping.asInstanceOf[js.Any])
     if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
     if (!js.isUndefined(dataParser)) __obj.updateDynamic("dataParser")(dataParser.asInstanceOf[js.Any])
+    if (dataSorting != null) __obj.updateDynamic("dataSorting")(dataSorting.asInstanceOf[js.Any])
     if (!js.isUndefined(dataURL)) __obj.updateDynamic("dataURL")(dataURL.asInstanceOf[js.Any])
     if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
@@ -281,7 +281,6 @@ object SeriesBoxplotOptions {
     if (!js.isUndefined(stickyTracking)) __obj.updateDynamic("stickyTracking")(stickyTracking.asInstanceOf[js.Any])
     if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (treemap != null) __obj.updateDynamic("treemap")(treemap.asInstanceOf[js.Any])
     if (turboThreshold != null) __obj.updateDynamic("turboThreshold")(turboThreshold.asInstanceOf[js.Any])
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     if (whiskerColor != null) __obj.updateDynamic("whiskerColor")(whiskerColor.asInstanceOf[js.Any])

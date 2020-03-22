@@ -225,6 +225,7 @@ object commonMod extends js.Object {
     val NON_IDEAL_STATE: String = js.native
     val NON_IDEAL_STATE_VISUAL: String = js.native
     val NUMERIC_INPUT: String = js.native
+    val OUTLINED: String = js.native
     val OVERFLOW_LIST: String = js.native
     val OVERFLOW_LIST_SPACER: String = js.native
     val OVERLAY: String = js.native

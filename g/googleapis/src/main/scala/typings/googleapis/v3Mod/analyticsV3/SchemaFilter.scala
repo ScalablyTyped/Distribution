@@ -1,8 +1,8 @@
 package typings.googleapis.v3Mod.analyticsV3
 
 import typings.googleapis.AnonCaseSensitive
-import typings.googleapis.AnonCaseSensitiveField
 import typings.googleapis.AnonField
+import typings.googleapis.AnonFieldIndex
 import typings.googleapis.AnonHref
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -57,7 +57,7 @@ trait SchemaFilter extends js.Object {
   /**
     * Details for the filter of the type SEARCH_AND_REPLACE.
     */
-  var searchAndReplaceDetails: js.UndefOr[AnonCaseSensitiveField] = js.native
+  var searchAndReplaceDetails: js.UndefOr[AnonFieldIndex] = js.native
   /**
     * Link for this filter.
     */
@@ -90,7 +90,7 @@ object SchemaFilter {
     lowercaseDetails: AnonField = null,
     name: String = null,
     parentLink: AnonHref = null,
-    searchAndReplaceDetails: AnonCaseSensitiveField = null,
+    searchAndReplaceDetails: AnonFieldIndex = null,
     selfLink: String = null,
     `type`: String = null,
     updated: String = null,

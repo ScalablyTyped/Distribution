@@ -7,31 +7,25 @@ import scala.scalajs.js.annotation._
 
 object jestWatcherStrings {
   @js.native
-  sealed trait bail extends js.Object
+  sealed trait clover extends js.Object
   
   @js.native
-  sealed trait changedSince extends js.Object
+  sealed trait cobertura extends js.Object
   
   @js.native
-  sealed trait collectCoverage extends js.Object
+  sealed trait html extends js.Object
   
   @js.native
-  sealed trait collectCoverageFrom extends js.Object
+  sealed trait json extends js.Object
   
   @js.native
-  sealed trait collectCoverageOnlyFrom extends js.Object
+  sealed trait `json-summary` extends js.Object
   
   @js.native
-  sealed trait coverageDirectory extends js.Object
+  sealed trait lcovonly extends js.Object
   
   @js.native
-  sealed trait coverageReporters extends js.Object
-  
-  @js.native
-  sealed trait notify extends js.Object
-  
-  @js.native
-  sealed trait notifyMode extends js.Object
+  sealed trait none extends js.Object
   
   @js.native
   sealed trait onFileChange extends AvailableHooks
@@ -40,25 +34,19 @@ object jestWatcherStrings {
   sealed trait onTestRunComplete extends AvailableHooks
   
   @js.native
-  sealed trait onlyFailures extends js.Object
-  
-  @js.native
-  sealed trait reporters extends js.Object
-  
-  @js.native
   sealed trait shouldRunTestSuite extends AvailableHooks
   
   @js.native
-  sealed trait testNamePattern extends js.Object
+  sealed trait teamcity extends js.Object
   
   @js.native
-  sealed trait testPathPattern extends js.Object
+  sealed trait text extends js.Object
   
   @js.native
-  sealed trait updateSnapshot extends js.Object
+  sealed trait `text-lcov` extends js.Object
   
   @js.native
-  sealed trait verbose extends js.Object
+  sealed trait `text-summary` extends js.Object
   
   @js.native
   sealed trait watch extends js.Object
@@ -67,39 +55,33 @@ object jestWatcherStrings {
   sealed trait watchAll extends js.Object
   
   @scala.inline
-  def bail: bail = "bail".asInstanceOf[bail]
+  def clover: clover = "clover".asInstanceOf[clover]
   @scala.inline
-  def changedSince: changedSince = "changedSince".asInstanceOf[changedSince]
+  def cobertura: cobertura = "cobertura".asInstanceOf[cobertura]
   @scala.inline
-  def collectCoverage: collectCoverage = "collectCoverage".asInstanceOf[collectCoverage]
+  def html: html = "html".asInstanceOf[html]
   @scala.inline
-  def collectCoverageFrom: collectCoverageFrom = "collectCoverageFrom".asInstanceOf[collectCoverageFrom]
+  def json: json = "json".asInstanceOf[json]
   @scala.inline
-  def collectCoverageOnlyFrom: collectCoverageOnlyFrom = "collectCoverageOnlyFrom".asInstanceOf[collectCoverageOnlyFrom]
+  def `json-summary`: `json-summary` = "json-summary".asInstanceOf[`json-summary`]
   @scala.inline
-  def coverageDirectory: coverageDirectory = "coverageDirectory".asInstanceOf[coverageDirectory]
+  def lcovonly: lcovonly = "lcovonly".asInstanceOf[lcovonly]
   @scala.inline
-  def coverageReporters: coverageReporters = "coverageReporters".asInstanceOf[coverageReporters]
-  @scala.inline
-  def notifyMode: notifyMode = "notifyMode".asInstanceOf[notifyMode]
+  def none: none = "none".asInstanceOf[none]
   @scala.inline
   def onFileChange: onFileChange = "onFileChange".asInstanceOf[onFileChange]
   @scala.inline
   def onTestRunComplete: onTestRunComplete = "onTestRunComplete".asInstanceOf[onTestRunComplete]
   @scala.inline
-  def onlyFailures: onlyFailures = "onlyFailures".asInstanceOf[onlyFailures]
-  @scala.inline
-  def reporters: reporters = "reporters".asInstanceOf[reporters]
-  @scala.inline
   def shouldRunTestSuite: shouldRunTestSuite = "shouldRunTestSuite".asInstanceOf[shouldRunTestSuite]
   @scala.inline
-  def testNamePattern: testNamePattern = "testNamePattern".asInstanceOf[testNamePattern]
+  def teamcity: teamcity = "teamcity".asInstanceOf[teamcity]
   @scala.inline
-  def testPathPattern: testPathPattern = "testPathPattern".asInstanceOf[testPathPattern]
+  def text: text = "text".asInstanceOf[text]
   @scala.inline
-  def updateSnapshot: updateSnapshot = "updateSnapshot".asInstanceOf[updateSnapshot]
+  def `text-lcov`: `text-lcov` = "text-lcov".asInstanceOf[`text-lcov`]
   @scala.inline
-  def verbose: verbose = "verbose".asInstanceOf[verbose]
+  def `text-summary`: `text-summary` = "text-summary".asInstanceOf[`text-summary`]
   @scala.inline
   def watch: watch = "watch".asInstanceOf[watch]
   @scala.inline

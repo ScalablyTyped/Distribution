@@ -28,7 +28,7 @@ trait PatternOptionsObject extends js.Object {
     * and identical patterns are reused. To refer to an existing pattern for a
     * Highcharts color, use `color: "url(#pattern-id)"`.
     */
-  var id: String
+  var id: js.UndefOr[String] = js.undefined
   /**
     * URL to an image to use as the pattern.
     */
@@ -69,15 +69,16 @@ object PatternOptionsObject {
     backgroundColor: ColorString,
     color: ColorString,
     height: Double,
-    id: String,
     image: String,
     opacity: Double,
     path: String | SVGAttributes,
     width: Double,
+    id: String = null,
     x: Int | Double = null,
     y: Int | Double = null
   ): PatternOptionsObject = {
-    val __obj = js.Dynamic.literal(aspectRatio = aspectRatio.asInstanceOf[js.Any], backgroundColor = backgroundColor.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(aspectRatio = aspectRatio.asInstanceOf[js.Any], backgroundColor = backgroundColor.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
     if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     __obj.asInstanceOf[PatternOptionsObject]

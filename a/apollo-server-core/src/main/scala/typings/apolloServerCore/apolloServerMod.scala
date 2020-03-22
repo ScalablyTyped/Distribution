@@ -10,7 +10,6 @@ import typings.apolloServerTypes.mod.GraphQLResponse
 import typings.apollographqlGraphqlPlaygroundHtml.renderPlaygroundPageMod.RenderPageOptions
 import typings.graphql.mod.GraphQLSchema
 import typings.node.httpMod.Server
-import typings.std.Partial
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -36,7 +35,7 @@ object apolloServerMod extends js.Object {
     var parseOptions: js.Any = js.native
     var playgroundOptions: js.UndefOr[RenderPageOptions] = js.native
     var plugins: js.Array[ApolloServerPlugin[Record[String, _]]] = js.native
-    var requestOptions: Partial[GraphQLServerOptions[_, _]] = js.native
+    var requestOptions: PartialGraphQLServerOptio = js.native
     var schema: js.UndefOr[GraphQLSchema] = js.native
     var schemaDerivedData: js.Any = js.native
     var schemaIsFederated: js.Any = js.native

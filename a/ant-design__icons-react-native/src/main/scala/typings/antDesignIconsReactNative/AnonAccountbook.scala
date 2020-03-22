@@ -24,6 +24,7 @@ trait AnonAccountbook extends js.Object {
   var bell: Double
   var book: Double
   var `box-plot`: Double
+  var bug: Double
   var build: Double
   var bulb: Double
   var calculator: Double
@@ -99,6 +100,7 @@ trait AnonAccountbook extends js.Object {
   var folder: Double
   var `folder-add`: Double
   var `folder-open`: Double
+  var `format-painter`: Double
   var forward: Double
   var frown: Double
   var fund: Double
@@ -106,6 +108,7 @@ trait AnonAccountbook extends js.Object {
   var gift: Double
   var github: Double
   var gitlab: Double
+  var gold: Double
   var golden: Double
   var `google-circle`: Double
   var `google-plus-circle`: Double
@@ -123,13 +126,14 @@ trait AnonAccountbook extends js.Object {
   var `info-circle`: Double
   var instagram: Double
   var insurance: Double
-  var interation: Double
+  var interaction: Double
   var layout: Double
   var `left-circle`: Double
   var `left-square`: Double
   var like: Double
   var linkedin: Double
   var lock: Double
+  var `mac-command`: Double
   var mail: Double
   var `medicine-box`: Double
   var `medium-circle`: Double
@@ -167,6 +171,7 @@ trait AnonAccountbook extends js.Object {
   var rest: Double
   var `right-circle`: Double
   var `right-square`: Double
+  var robot: Double
   var rocket: Double
   var `safety-certificate`: Double
   var save: Double
@@ -175,6 +180,7 @@ trait AnonAccountbook extends js.Object {
   var setting: Double
   var shop: Double
   var shopping: Double
+  var signal: Double
   var `sketch-circle`: Double
   var `sketch-square`: Double
   var skin: Double
@@ -241,6 +247,7 @@ object AnonAccountbook {
     bell: Double,
     book: Double,
     `box-plot`: Double,
+    bug: Double,
     build: Double,
     bulb: Double,
     calculator: Double,
@@ -316,6 +323,7 @@ object AnonAccountbook {
     folder: Double,
     `folder-add`: Double,
     `folder-open`: Double,
+    `format-painter`: Double,
     forward: Double,
     frown: Double,
     fund: Double,
@@ -323,6 +331,7 @@ object AnonAccountbook {
     gift: Double,
     github: Double,
     gitlab: Double,
+    gold: Double,
     golden: Double,
     `google-circle`: Double,
     `google-plus-circle`: Double,
@@ -340,13 +349,14 @@ object AnonAccountbook {
     `info-circle`: Double,
     instagram: Double,
     insurance: Double,
-    interation: Double,
+    interaction: Double,
     layout: Double,
     `left-circle`: Double,
     `left-square`: Double,
     like: Double,
     linkedin: Double,
     lock: Double,
+    `mac-command`: Double,
     mail: Double,
     `medicine-box`: Double,
     `medium-circle`: Double,
@@ -384,6 +394,7 @@ object AnonAccountbook {
     rest: Double,
     `right-circle`: Double,
     `right-square`: Double,
+    robot: Double,
     rocket: Double,
     `safety-certificate`: Double,
     save: Double,
@@ -392,6 +403,7 @@ object AnonAccountbook {
     setting: Double,
     shop: Double,
     shopping: Double,
+    signal: Double,
     `sketch-circle`: Double,
     `sketch-square`: Double,
     skin: Double,
@@ -435,7 +447,7 @@ object AnonAccountbook {
     `zhihu-circle`: Double,
     `zhihu-square`: Double
   ): AnonAccountbook = {
-    val __obj = js.Dynamic.literal(alert = alert.asInstanceOf[js.Any], aliwangwang = aliwangwang.asInstanceOf[js.Any], android = android.asInstanceOf[js.Any], api = api.asInstanceOf[js.Any], apple = apple.asInstanceOf[js.Any], appstore = appstore.asInstanceOf[js.Any], audio = audio.asInstanceOf[js.Any], backward = backward.asInstanceOf[js.Any], bank = bank.asInstanceOf[js.Any], bell = bell.asInstanceOf[js.Any], book = book.asInstanceOf[js.Any], build = build.asInstanceOf[js.Any], bulb = bulb.asInstanceOf[js.Any], calculator = calculator.asInstanceOf[js.Any], calendar = calendar.asInstanceOf[js.Any], camera = camera.asInstanceOf[js.Any], car = car.asInstanceOf[js.Any], chrome = chrome.asInstanceOf[js.Any], cloud = cloud.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], compass = compass.asInstanceOf[js.Any], contacts = contacts.asInstanceOf[js.Any], container = container.asInstanceOf[js.Any], control = control.asInstanceOf[js.Any], copy = copy.asInstanceOf[js.Any], crown = crown.asInstanceOf[js.Any], dashboard = dashboard.asInstanceOf[js.Any], database = database.asInstanceOf[js.Any], delete = delete.asInstanceOf[js.Any], diff = diff.asInstanceOf[js.Any], dislike = dislike.asInstanceOf[js.Any], edit = edit.asInstanceOf[js.Any], environment = environment.asInstanceOf[js.Any], experiment = experiment.asInstanceOf[js.Any], eye = eye.asInstanceOf[js.Any], facebook = facebook.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any], filter = filter.asInstanceOf[js.Any], fire = fire.asInstanceOf[js.Any], flag = flag.asInstanceOf[js.Any], folder = folder.asInstanceOf[js.Any], forward = forward.asInstanceOf[js.Any], frown = frown.asInstanceOf[js.Any], fund = fund.asInstanceOf[js.Any], gift = gift.asInstanceOf[js.Any], github = github.asInstanceOf[js.Any], gitlab = gitlab.asInstanceOf[js.Any], golden = golden.asInstanceOf[js.Any], hdd = hdd.asInstanceOf[js.Any], heart = heart.asInstanceOf[js.Any], highlight = highlight.asInstanceOf[js.Any], home = home.asInstanceOf[js.Any], hourglass = hourglass.asInstanceOf[js.Any], html5 = html5.asInstanceOf[js.Any], idcard = idcard.asInstanceOf[js.Any], instagram = instagram.asInstanceOf[js.Any], insurance = insurance.asInstanceOf[js.Any], interation = interation.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any], like = like.asInstanceOf[js.Any], linkedin = linkedin.asInstanceOf[js.Any], lock = lock.asInstanceOf[js.Any], mail = mail.asInstanceOf[js.Any], meh = meh.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], mobile = mobile.asInstanceOf[js.Any], notification = notification.asInstanceOf[js.Any], phone = phone.asInstanceOf[js.Any], picture = picture.asInstanceOf[js.Any], printer = printer.asInstanceOf[js.Any], profile = profile.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any], pushpin = pushpin.asInstanceOf[js.Any], read = read.asInstanceOf[js.Any], reconciliation = reconciliation.asInstanceOf[js.Any], rest = rest.asInstanceOf[js.Any], rocket = rocket.asInstanceOf[js.Any], save = save.asInstanceOf[js.Any], schedule = schedule.asInstanceOf[js.Any], setting = setting.asInstanceOf[js.Any], shop = shop.asInstanceOf[js.Any], shopping = shopping.asInstanceOf[js.Any], skin = skin.asInstanceOf[js.Any], skype = skype.asInstanceOf[js.Any], sliders = sliders.asInstanceOf[js.Any], smile = smile.asInstanceOf[js.Any], snippets = snippets.asInstanceOf[js.Any], sound = sound.asInstanceOf[js.Any], star = star.asInstanceOf[js.Any], stop = stop.asInstanceOf[js.Any], switcher = switcher.asInstanceOf[js.Any], tablet = tablet.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], thunderbolt = thunderbolt.asInstanceOf[js.Any], tool = tool.asInstanceOf[js.Any], trophy = trophy.asInstanceOf[js.Any], unlock = unlock.asInstanceOf[js.Any], usb = usb.asInstanceOf[js.Any], wallet = wallet.asInstanceOf[js.Any], warning = warning.asInstanceOf[js.Any], wechat = wechat.asInstanceOf[js.Any], windows = windows.asInstanceOf[js.Any], yahoo = yahoo.asInstanceOf[js.Any], youtube = youtube.asInstanceOf[js.Any], yuque = yuque.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(alert = alert.asInstanceOf[js.Any], aliwangwang = aliwangwang.asInstanceOf[js.Any], android = android.asInstanceOf[js.Any], api = api.asInstanceOf[js.Any], apple = apple.asInstanceOf[js.Any], appstore = appstore.asInstanceOf[js.Any], audio = audio.asInstanceOf[js.Any], backward = backward.asInstanceOf[js.Any], bank = bank.asInstanceOf[js.Any], bell = bell.asInstanceOf[js.Any], book = book.asInstanceOf[js.Any], bug = bug.asInstanceOf[js.Any], build = build.asInstanceOf[js.Any], bulb = bulb.asInstanceOf[js.Any], calculator = calculator.asInstanceOf[js.Any], calendar = calendar.asInstanceOf[js.Any], camera = camera.asInstanceOf[js.Any], car = car.asInstanceOf[js.Any], chrome = chrome.asInstanceOf[js.Any], cloud = cloud.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], compass = compass.asInstanceOf[js.Any], contacts = contacts.asInstanceOf[js.Any], container = container.asInstanceOf[js.Any], control = control.asInstanceOf[js.Any], copy = copy.asInstanceOf[js.Any], crown = crown.asInstanceOf[js.Any], dashboard = dashboard.asInstanceOf[js.Any], database = database.asInstanceOf[js.Any], delete = delete.asInstanceOf[js.Any], diff = diff.asInstanceOf[js.Any], dislike = dislike.asInstanceOf[js.Any], edit = edit.asInstanceOf[js.Any], environment = environment.asInstanceOf[js.Any], experiment = experiment.asInstanceOf[js.Any], eye = eye.asInstanceOf[js.Any], facebook = facebook.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any], filter = filter.asInstanceOf[js.Any], fire = fire.asInstanceOf[js.Any], flag = flag.asInstanceOf[js.Any], folder = folder.asInstanceOf[js.Any], forward = forward.asInstanceOf[js.Any], frown = frown.asInstanceOf[js.Any], fund = fund.asInstanceOf[js.Any], gift = gift.asInstanceOf[js.Any], github = github.asInstanceOf[js.Any], gitlab = gitlab.asInstanceOf[js.Any], gold = gold.asInstanceOf[js.Any], golden = golden.asInstanceOf[js.Any], hdd = hdd.asInstanceOf[js.Any], heart = heart.asInstanceOf[js.Any], highlight = highlight.asInstanceOf[js.Any], home = home.asInstanceOf[js.Any], hourglass = hourglass.asInstanceOf[js.Any], html5 = html5.asInstanceOf[js.Any], idcard = idcard.asInstanceOf[js.Any], instagram = instagram.asInstanceOf[js.Any], insurance = insurance.asInstanceOf[js.Any], interaction = interaction.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any], like = like.asInstanceOf[js.Any], linkedin = linkedin.asInstanceOf[js.Any], lock = lock.asInstanceOf[js.Any], mail = mail.asInstanceOf[js.Any], meh = meh.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], mobile = mobile.asInstanceOf[js.Any], notification = notification.asInstanceOf[js.Any], phone = phone.asInstanceOf[js.Any], picture = picture.asInstanceOf[js.Any], printer = printer.asInstanceOf[js.Any], profile = profile.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any], pushpin = pushpin.asInstanceOf[js.Any], read = read.asInstanceOf[js.Any], reconciliation = reconciliation.asInstanceOf[js.Any], rest = rest.asInstanceOf[js.Any], robot = robot.asInstanceOf[js.Any], rocket = rocket.asInstanceOf[js.Any], save = save.asInstanceOf[js.Any], schedule = schedule.asInstanceOf[js.Any], setting = setting.asInstanceOf[js.Any], shop = shop.asInstanceOf[js.Any], shopping = shopping.asInstanceOf[js.Any], signal = signal.asInstanceOf[js.Any], skin = skin.asInstanceOf[js.Any], skype = skype.asInstanceOf[js.Any], sliders = sliders.asInstanceOf[js.Any], smile = smile.asInstanceOf[js.Any], snippets = snippets.asInstanceOf[js.Any], sound = sound.asInstanceOf[js.Any], star = star.asInstanceOf[js.Any], stop = stop.asInstanceOf[js.Any], switcher = switcher.asInstanceOf[js.Any], tablet = tablet.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], thunderbolt = thunderbolt.asInstanceOf[js.Any], tool = tool.asInstanceOf[js.Any], trophy = trophy.asInstanceOf[js.Any], unlock = unlock.asInstanceOf[js.Any], usb = usb.asInstanceOf[js.Any], wallet = wallet.asInstanceOf[js.Any], warning = warning.asInstanceOf[js.Any], wechat = wechat.asInstanceOf[js.Any], windows = windows.asInstanceOf[js.Any], yahoo = yahoo.asInstanceOf[js.Any], youtube = youtube.asInstanceOf[js.Any], yuque = yuque.asInstanceOf[js.Any])
     __obj.updateDynamic("account-book")(`account-book`.asInstanceOf[js.Any])
     __obj.updateDynamic("alipay-circle")(`alipay-circle`.asInstanceOf[js.Any])
     __obj.updateDynamic("alipay-square")(`alipay-square`.asInstanceOf[js.Any])
@@ -489,6 +501,7 @@ object AnonAccountbook {
     __obj.updateDynamic("file-zip")(`file-zip`.asInstanceOf[js.Any])
     __obj.updateDynamic("folder-add")(`folder-add`.asInstanceOf[js.Any])
     __obj.updateDynamic("folder-open")(`folder-open`.asInstanceOf[js.Any])
+    __obj.updateDynamic("format-painter")(`format-painter`.asInstanceOf[js.Any])
     __obj.updateDynamic("funnel-plot")(`funnel-plot`.asInstanceOf[js.Any])
     __obj.updateDynamic("google-circle")(`google-circle`.asInstanceOf[js.Any])
     __obj.updateDynamic("google-plus-circle")(`google-plus-circle`.asInstanceOf[js.Any])
@@ -499,6 +512,7 @@ object AnonAccountbook {
     __obj.updateDynamic("info-circle")(`info-circle`.asInstanceOf[js.Any])
     __obj.updateDynamic("left-circle")(`left-circle`.asInstanceOf[js.Any])
     __obj.updateDynamic("left-square")(`left-square`.asInstanceOf[js.Any])
+    __obj.updateDynamic("mac-command")(`mac-command`.asInstanceOf[js.Any])
     __obj.updateDynamic("medicine-box")(`medicine-box`.asInstanceOf[js.Any])
     __obj.updateDynamic("medium-circle")(`medium-circle`.asInstanceOf[js.Any])
     __obj.updateDynamic("medium-square")(`medium-square`.asInstanceOf[js.Any])

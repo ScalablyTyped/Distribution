@@ -11,7 +11,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ionic/angular/dist/providers/modal-controller", JSImport.Namespace)
+@JSImport("@ionic/angular/providers/modal-controller", JSImport.Namespace)
 @js.native
 object modalControllerMod extends js.Object {
   @js.native

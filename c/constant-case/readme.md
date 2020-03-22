@@ -1,7 +1,7 @@
 
 # Scala.js typings for constant-case
 
-Typings are for version 2.0.0
+Typings are for version 3.0.3
 
 ## Library description:
 Transform into upper case string with an underscore between words

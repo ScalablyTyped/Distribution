@@ -1,7 +1,7 @@
 package typings.braintreeWeb.mod
 
 import typings.braintreeWeb.AnonBillingAddress
-import typings.braintreeWeb.AnonClientFields
+import typings.braintreeWeb.AnonFields
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -122,8 +122,8 @@ trait HostedFields_ extends js.Object {
     *   }
     * }, callback);
     */
-  def create(options: AnonClientFields): js.Promise[HostedFields_] = js.native
-  def create(options: AnonClientFields, callback: callback): Unit = js.native
+  def create(options: AnonFields): js.Promise[HostedFields_] = js.native
+  def create(options: AnonFields, callback: callback): Unit = js.native
   /**
     * Returns an {@link HostedFields~stateObject|object} that includes the state of all fields and possible card types.
     * @public

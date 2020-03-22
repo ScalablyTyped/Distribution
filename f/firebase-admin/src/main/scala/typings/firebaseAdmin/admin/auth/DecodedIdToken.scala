@@ -1,7 +1,7 @@
 package typings.firebaseAdmin.admin.auth
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.firebaseAdmin.AnonIdentities
+import typings.firebaseAdmin.AnonDictkey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -50,7 +50,7 @@ trait DecodedIdToken
     * This data is provided by the Firebase Authentication service and is a
     * reserved claim in the ID token.
     */
-  var firebase: AnonIdentities
+  var firebase: AnonDictkey
   /**
     * The ID token's issued-at time, in seconds since the Unix epoch. That is, the
     * time at which this ID token was issued and should start to be considered
@@ -91,7 +91,7 @@ object DecodedIdToken {
     aud: String,
     auth_time: Double,
     exp: Double,
-    firebase: AnonIdentities,
+    firebase: AnonDictkey,
     iat: Double,
     iss: String,
     sub: String,

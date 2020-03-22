@@ -1,5 +1,6 @@
 package typings.vscodeLanguageclient.clientMod
 
+import typings.vscodeLanguageserverProtocol.messagesMod.ProtocolNotificationType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -7,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("vscode-languageclient/lib/client", "TelemetryEventNotification")
 @js.native
 object TelemetryEventNotification extends js.Object {
-  val `type`: typings.vscodeJsonrpc.mod.NotificationType[js.Any, Unit] = js.native
+  val `type`: ProtocolNotificationType[js.Any, Unit] = js.native
 }
 

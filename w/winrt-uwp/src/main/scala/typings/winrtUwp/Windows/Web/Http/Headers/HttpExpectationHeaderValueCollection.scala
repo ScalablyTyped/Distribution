@@ -2,7 +2,7 @@ package typings.winrtUwp.Windows.Web.Http.Headers
 
 import typings.std.Array
 import typings.winrtUwp.AnonIndex
-import typings.winrtUwp.AnonItemsReturnValueHttpExpectationHeaderValue
+import typings.winrtUwp.AnonItemsHttpExpectationHeaderValue
 import typings.winrtUwp.Windows.Foundation.Collections.IIterator
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import scala.scalajs.js
@@ -37,7 +37,7 @@ abstract class HttpExpectationHeaderValueCollection () extends Array[HttpExpecta
     * Retrieves the HttpExpectationHeaderValue items that start at the specified index in the collection.
     * @param startIndex The zero-based index of the start of the HttpExpectationHeaderValue items in the HttpExpectationHeaderValueCollection .
     */
-  def getMany(startIndex: Double): AnonItemsReturnValueHttpExpectationHeaderValue = js.native
+  def getMany(startIndex: Double): AnonItemsHttpExpectationHeaderValue = js.native
   /**
     * Returns an immutable view of the HttpExpectationHeaderValueCollection .
     * @return The view of the HttpExpectationHeaderValueCollection .

@@ -4,9 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SideProps extends js.Object {
-  var left: js.UndefOr[Boolean] = js.undefined
-  var right: js.UndefOr[Boolean] = js.undefined
+  var left: js.UndefOr[Boolean] = js.native
+  var right: js.UndefOr[Boolean] = js.native
 }
 
 object SideProps {

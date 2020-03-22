@@ -14,7 +14,7 @@ trait RouteArgs extends js.Object {
     */
   val meshName: Input[String] = js.native
   /**
-    * The name to use for the route.
+    * A name for the HTTP header in the client request that will be matched on.
     */
   val name: js.UndefOr[Input[String]] = js.native
   /**

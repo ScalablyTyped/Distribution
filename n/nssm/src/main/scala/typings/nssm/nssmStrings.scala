@@ -7,9 +7,6 @@ import scala.scalajs.js.annotation._
 
 object nssmStrings {
   @js.native
-  sealed trait Nssm extends js.Object
-  
-  @js.native
   sealed trait continue extends Command
   
   @js.native
@@ -45,8 +42,6 @@ object nssmStrings {
   @js.native
   sealed trait stop extends Command
   
-  @scala.inline
-  def Nssm: Nssm = "Nssm".asInstanceOf[Nssm]
   @scala.inline
   def continue: continue = "continue".asInstanceOf[continue]
   @scala.inline

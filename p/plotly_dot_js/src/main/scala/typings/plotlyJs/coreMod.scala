@@ -17,7 +17,7 @@ import typings.d3Chord.mod.RibbonGenerator
 import typings.d3Chord.mod.RibbonSubgroup
 import typings.d3Chord.mod.Ribbon_
 import typings.d3Collection.AnonKey
-import typings.d3Collection.AnonKeyValue
+import typings.d3Collection.AnonValue
 import typings.d3Collection.mod.Map_
 import typings.d3Collection.mod.Nest_
 import typings.d3Collection.mod.Set_
@@ -48,6 +48,7 @@ import typings.d3Dsv.mod.DSVRowString
 import typings.d3Ease.mod.BackEasingFactory
 import typings.d3Ease.mod.ElasticEasingFactory
 import typings.d3Ease.mod.PolynomialEasingFactory
+import typings.d3Fetch.PartialHTMLImageElement
 import typings.d3Force.mod.ForceCenter_
 import typings.d3Force.mod.ForceCollide_
 import typings.d3Force.mod.ForceLink_
@@ -62,7 +63,7 @@ import typings.d3Format.AnonValueOf
 import typings.d3Format.mod.FormatLocaleDefinition
 import typings.d3Format.mod.FormatLocaleObject
 import typings.d3Format.mod.FormatSpecifier_
-import typings.d3Geo.AnonS
+import typings.d3Geo.Anon0
 import typings.d3Geo.mod.ExtendedFeature
 import typings.d3Geo.mod.ExtendedFeatureCollection
 import typings.d3Geo.mod.ExtendedGeometryCollection
@@ -158,11 +159,8 @@ import typings.d3Zoom.mod.ZoomTransform_
 import typings.d3Zoom.mod.ZoomedElementBaseType
 import typings.geojson.mod.GeoJsonProperties
 import typings.geojson.mod.MultiLineString
-import typings.plotlyJs.mod.Config
 import typings.plotlyJs.mod.Data
 import typings.plotlyJs.mod.DownloadImgopts
-import typings.plotlyJs.mod.Frame
-import typings.plotlyJs.mod.Layout
 import typings.plotlyJs.mod.PlotlyHTMLElement
 import typings.plotlyJs.mod.Root
 import typings.plotlyJs.mod.StaticPlots
@@ -188,14 +186,18 @@ import typings.plotlyJs.plotlyJsStrings.br
 import typings.plotlyJs.plotlyJsStrings.button
 import typings.plotlyJs.plotlyJsStrings.canvas
 import typings.plotlyJs.plotlyJsStrings.caption
+import typings.plotlyJs.plotlyJsStrings.circle
 import typings.plotlyJs.plotlyJsStrings.cite
+import typings.plotlyJs.plotlyJsStrings.clipPath
 import typings.plotlyJs.plotlyJsStrings.code
 import typings.plotlyJs.plotlyJsStrings.col
 import typings.plotlyJs.plotlyJsStrings.colgroup
 import typings.plotlyJs.plotlyJsStrings.data
 import typings.plotlyJs.plotlyJsStrings.datalist
 import typings.plotlyJs.plotlyJsStrings.dd
+import typings.plotlyJs.plotlyJsStrings.defs
 import typings.plotlyJs.plotlyJsStrings.del
+import typings.plotlyJs.plotlyJsStrings.desc
 import typings.plotlyJs.plotlyJsStrings.details
 import typings.plotlyJs.plotlyJsStrings.dfn
 import typings.plotlyJs.plotlyJsStrings.dialog
@@ -203,16 +205,44 @@ import typings.plotlyJs.plotlyJsStrings.dir
 import typings.plotlyJs.plotlyJsStrings.div
 import typings.plotlyJs.plotlyJsStrings.dl
 import typings.plotlyJs.plotlyJsStrings.dt
+import typings.plotlyJs.plotlyJsStrings.ellipse
 import typings.plotlyJs.plotlyJsStrings.em
 import typings.plotlyJs.plotlyJsStrings.embed
+import typings.plotlyJs.plotlyJsStrings.feBlend
+import typings.plotlyJs.plotlyJsStrings.feColorMatrix
+import typings.plotlyJs.plotlyJsStrings.feComponentTransfer
+import typings.plotlyJs.plotlyJsStrings.feComposite
+import typings.plotlyJs.plotlyJsStrings.feConvolveMatrix
+import typings.plotlyJs.plotlyJsStrings.feDiffuseLighting
+import typings.plotlyJs.plotlyJsStrings.feDisplacementMap
+import typings.plotlyJs.plotlyJsStrings.feDistantLight
+import typings.plotlyJs.plotlyJsStrings.feFlood
+import typings.plotlyJs.plotlyJsStrings.feFuncA
+import typings.plotlyJs.plotlyJsStrings.feFuncB
+import typings.plotlyJs.plotlyJsStrings.feFuncG
+import typings.plotlyJs.plotlyJsStrings.feFuncR
+import typings.plotlyJs.plotlyJsStrings.feGaussianBlur
+import typings.plotlyJs.plotlyJsStrings.feImage
+import typings.plotlyJs.plotlyJsStrings.feMerge
+import typings.plotlyJs.plotlyJsStrings.feMergeNode
+import typings.plotlyJs.plotlyJsStrings.feMorphology
+import typings.plotlyJs.plotlyJsStrings.feOffset
+import typings.plotlyJs.plotlyJsStrings.fePointLight
+import typings.plotlyJs.plotlyJsStrings.feSpecularLighting
+import typings.plotlyJs.plotlyJsStrings.feSpotLight
+import typings.plotlyJs.plotlyJsStrings.feTile
+import typings.plotlyJs.plotlyJsStrings.feTurbulence
 import typings.plotlyJs.plotlyJsStrings.fieldset
 import typings.plotlyJs.plotlyJsStrings.figcaption
 import typings.plotlyJs.plotlyJsStrings.figure
+import typings.plotlyJs.plotlyJsStrings.filter
 import typings.plotlyJs.plotlyJsStrings.font
 import typings.plotlyJs.plotlyJsStrings.footer
+import typings.plotlyJs.plotlyJsStrings.foreignObject
 import typings.plotlyJs.plotlyJsStrings.form
 import typings.plotlyJs.plotlyJsStrings.frame
 import typings.plotlyJs.plotlyJsStrings.frameset
+import typings.plotlyJs.plotlyJsStrings.g
 import typings.plotlyJs.plotlyJsStrings.h1
 import typings.plotlyJs.plotlyJsStrings.h2
 import typings.plotlyJs.plotlyJsStrings.h3
@@ -226,6 +256,7 @@ import typings.plotlyJs.plotlyJsStrings.hr
 import typings.plotlyJs.plotlyJsStrings.html
 import typings.plotlyJs.plotlyJsStrings.i
 import typings.plotlyJs.plotlyJsStrings.iframe
+import typings.plotlyJs.plotlyJsStrings.image
 import typings.plotlyJs.plotlyJsStrings.img
 import typings.plotlyJs.plotlyJsStrings.input
 import typings.plotlyJs.plotlyJsStrings.ins
@@ -233,13 +264,18 @@ import typings.plotlyJs.plotlyJsStrings.kbd
 import typings.plotlyJs.plotlyJsStrings.label
 import typings.plotlyJs.plotlyJsStrings.legend
 import typings.plotlyJs.plotlyJsStrings.li
+import typings.plotlyJs.plotlyJsStrings.line
+import typings.plotlyJs.plotlyJsStrings.linearGradient
 import typings.plotlyJs.plotlyJsStrings.link
 import typings.plotlyJs.plotlyJsStrings.main
 import typings.plotlyJs.plotlyJsStrings.map
 import typings.plotlyJs.plotlyJsStrings.mark
+import typings.plotlyJs.plotlyJsStrings.marker
 import typings.plotlyJs.plotlyJsStrings.marquee
+import typings.plotlyJs.plotlyJsStrings.mask
 import typings.plotlyJs.plotlyJsStrings.menu
 import typings.plotlyJs.plotlyJsStrings.meta
+import typings.plotlyJs.plotlyJsStrings.metadata
 import typings.plotlyJs.plotlyJsStrings.meter
 import typings.plotlyJs.plotlyJsStrings.nav
 import typings.plotlyJs.plotlyJsStrings.noscript
@@ -249,10 +285,16 @@ import typings.plotlyJs.plotlyJsStrings.option
 import typings.plotlyJs.plotlyJsStrings.output
 import typings.plotlyJs.plotlyJsStrings.p
 import typings.plotlyJs.plotlyJsStrings.param
+import typings.plotlyJs.plotlyJsStrings.path
+import typings.plotlyJs.plotlyJsStrings.pattern
 import typings.plotlyJs.plotlyJsStrings.picture
+import typings.plotlyJs.plotlyJsStrings.polygon
+import typings.plotlyJs.plotlyJsStrings.polyline
 import typings.plotlyJs.plotlyJsStrings.pre
 import typings.plotlyJs.plotlyJsStrings.progress
 import typings.plotlyJs.plotlyJsStrings.q
+import typings.plotlyJs.plotlyJsStrings.radialGradient
+import typings.plotlyJs.plotlyJsStrings.rect
 import typings.plotlyJs.plotlyJsStrings.rp
 import typings.plotlyJs.plotlyJsStrings.rt
 import typings.plotlyJs.plotlyJsStrings.ruby
@@ -265,15 +307,21 @@ import typings.plotlyJs.plotlyJsStrings.slot
 import typings.plotlyJs.plotlyJsStrings.small
 import typings.plotlyJs.plotlyJsStrings.source
 import typings.plotlyJs.plotlyJsStrings.span
+import typings.plotlyJs.plotlyJsStrings.stop
 import typings.plotlyJs.plotlyJsStrings.strong
 import typings.plotlyJs.plotlyJsStrings.style
 import typings.plotlyJs.plotlyJsStrings.sub
 import typings.plotlyJs.plotlyJsStrings.summary
 import typings.plotlyJs.plotlyJsStrings.sup
+import typings.plotlyJs.plotlyJsStrings.svg
+import typings.plotlyJs.plotlyJsStrings.switch
+import typings.plotlyJs.plotlyJsStrings.symbol
 import typings.plotlyJs.plotlyJsStrings.table
 import typings.plotlyJs.plotlyJsStrings.tbody
 import typings.plotlyJs.plotlyJsStrings.td
 import typings.plotlyJs.plotlyJsStrings.template
+import typings.plotlyJs.plotlyJsStrings.text
+import typings.plotlyJs.plotlyJsStrings.textPath
 import typings.plotlyJs.plotlyJsStrings.textarea
 import typings.plotlyJs.plotlyJsStrings.tfoot
 import typings.plotlyJs.plotlyJsStrings.th
@@ -282,9 +330,12 @@ import typings.plotlyJs.plotlyJsStrings.time
 import typings.plotlyJs.plotlyJsStrings.title
 import typings.plotlyJs.plotlyJsStrings.tr
 import typings.plotlyJs.plotlyJsStrings.track
+import typings.plotlyJs.plotlyJsStrings.tspan
 import typings.plotlyJs.plotlyJsStrings.u
 import typings.plotlyJs.plotlyJsStrings.ul
+import typings.plotlyJs.plotlyJsStrings.use
 import typings.plotlyJs.plotlyJsStrings.video
+import typings.plotlyJs.plotlyJsStrings.view
 import typings.plotlyJs.plotlyJsStrings.wbr
 import typings.std.ArrayBuffer
 import typings.std.ArrayLike
@@ -374,9 +425,60 @@ import typings.std.Int8Array
 import typings.std.Iterable
 import typings.std.Map
 import typings.std.NodeListOf
-import typings.std.Partial
 import typings.std.RequestInit
+import typings.std.SVGCircleElement
+import typings.std.SVGClipPathElement
+import typings.std.SVGDefsElement
+import typings.std.SVGDescElement
+import typings.std.SVGEllipseElement
+import typings.std.SVGFEBlendElement
+import typings.std.SVGFEColorMatrixElement
+import typings.std.SVGFEComponentTransferElement
+import typings.std.SVGFECompositeElement
+import typings.std.SVGFEConvolveMatrixElement
+import typings.std.SVGFEDiffuseLightingElement
+import typings.std.SVGFEDisplacementMapElement
+import typings.std.SVGFEDistantLightElement
+import typings.std.SVGFEFloodElement
+import typings.std.SVGFEFuncAElement
+import typings.std.SVGFEFuncBElement
+import typings.std.SVGFEFuncGElement
+import typings.std.SVGFEFuncRElement
+import typings.std.SVGFEGaussianBlurElement
+import typings.std.SVGFEImageElement
+import typings.std.SVGFEMergeElement
+import typings.std.SVGFEMergeNodeElement
+import typings.std.SVGFEMorphologyElement
+import typings.std.SVGFEOffsetElement
+import typings.std.SVGFEPointLightElement
+import typings.std.SVGFESpecularLightingElement
+import typings.std.SVGFESpotLightElement
+import typings.std.SVGFETileElement
+import typings.std.SVGFETurbulenceElement
+import typings.std.SVGFilterElement
+import typings.std.SVGForeignObjectElement
 import typings.std.SVGGElement
+import typings.std.SVGImageElement
+import typings.std.SVGLineElement
+import typings.std.SVGLinearGradientElement
+import typings.std.SVGMarkerElement
+import typings.std.SVGMaskElement
+import typings.std.SVGMetadataElement
+import typings.std.SVGPathElement
+import typings.std.SVGPatternElement
+import typings.std.SVGPolygonElement
+import typings.std.SVGPolylineElement
+import typings.std.SVGRadialGradientElement
+import typings.std.SVGRectElement
+import typings.std.SVGSVGElement
+import typings.std.SVGStopElement
+import typings.std.SVGSwitchElement
+import typings.std.SVGSymbolElement
+import typings.std.SVGTSpanElement
+import typings.std.SVGTextElement
+import typings.std.SVGTextPathElement
+import typings.std.SVGUseElement
+import typings.std.SVGViewElement
 import typings.std.TouchList
 import typings.std.Uint16Array
 import typings.std.Uint32Array
@@ -392,7 +494,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object coreMod extends js.Object {
   val Plots: StaticPlots = js.native
-  def addFrames(root: Root, frames: js.Array[Partial[Frame]]): js.Promise[PlotlyHTMLElement] = js.native
+  def addFrames(root: Root, frames: js.Array[PartialFrame]): js.Promise[PlotlyHTMLElement] = js.native
   def addTraces(root: Root, traces: js.Array[Data]): js.Promise[PlotlyHTMLElement] = js.native
   def addTraces(root: Root, traces: js.Array[Data], newIndices: js.Array[Double]): js.Promise[PlotlyHTMLElement] = js.native
   def addTraces(root: Root, traces: js.Array[Data], newIndices: Double): js.Promise[PlotlyHTMLElement] = js.native
@@ -414,28 +516,28 @@ object coreMod extends js.Object {
   def moveTraces(root: Root, currentIndices: Double, newIndices: js.Array[Double]): js.Promise[PlotlyHTMLElement] = js.native
   def moveTraces(root: Root, currentIndices: Double, newIndices: Double): js.Promise[PlotlyHTMLElement] = js.native
   def newPlot(root: Root, data: js.Array[Data]): js.Promise[PlotlyHTMLElement] = js.native
-  def newPlot(root: Root, data: js.Array[Data], layout: Partial[Layout]): js.Promise[PlotlyHTMLElement] = js.native
-  def newPlot(root: Root, data: js.Array[Data], layout: Partial[Layout], config: Partial[Config]): js.Promise[PlotlyHTMLElement] = js.native
+  def newPlot(root: Root, data: js.Array[Data], layout: PartialLayout): js.Promise[PlotlyHTMLElement] = js.native
+  def newPlot(root: Root, data: js.Array[Data], layout: PartialLayout, config: PartialConfig): js.Promise[PlotlyHTMLElement] = js.native
   def plot(root: Root, data: js.Array[Data]): js.Promise[PlotlyHTMLElement] = js.native
-  def plot(root: Root, data: js.Array[Data], layout: Partial[Layout]): js.Promise[PlotlyHTMLElement] = js.native
-  def plot(root: Root, data: js.Array[Data], layout: Partial[Layout], config: Partial[Config]): js.Promise[PlotlyHTMLElement] = js.native
+  def plot(root: Root, data: js.Array[Data], layout: PartialLayout): js.Promise[PlotlyHTMLElement] = js.native
+  def plot(root: Root, data: js.Array[Data], layout: PartialLayout, config: PartialConfig): js.Promise[PlotlyHTMLElement] = js.native
   def prependTraces(root: Root, update: js.Array[Data], indices: js.Array[Double]): js.Promise[PlotlyHTMLElement] = js.native
   def prependTraces(root: Root, update: js.Array[Data], indices: Double): js.Promise[PlotlyHTMLElement] = js.native
   def prependTraces(root: Root, update: Data, indices: js.Array[Double]): js.Promise[PlotlyHTMLElement] = js.native
   def prependTraces(root: Root, update: Data, indices: Double): js.Promise[PlotlyHTMLElement] = js.native
   def purge(root: Root): Unit = js.native
   def react(root: Root, data: js.Array[Data]): js.Promise[PlotlyHTMLElement] = js.native
-  def react(root: Root, data: js.Array[Data], layout: Partial[Layout]): js.Promise[PlotlyHTMLElement] = js.native
-  def react(root: Root, data: js.Array[Data], layout: Partial[Layout], config: Partial[Config]): js.Promise[PlotlyHTMLElement] = js.native
+  def react(root: Root, data: js.Array[Data], layout: PartialLayout): js.Promise[PlotlyHTMLElement] = js.native
+  def react(root: Root, data: js.Array[Data], layout: PartialLayout, config: PartialConfig): js.Promise[PlotlyHTMLElement] = js.native
   def redraw(root: Root): js.Promise[PlotlyHTMLElement] = js.native
-  def relayout(root: Root, layout: Partial[Layout]): js.Promise[PlotlyHTMLElement] = js.native
+  def relayout(root: Root, layout: PartialLayout): js.Promise[PlotlyHTMLElement] = js.native
   def restyle(root: Root, aobj: Data): js.Promise[PlotlyHTMLElement] = js.native
   def restyle(root: Root, aobj: Data, traces: js.Array[Double]): js.Promise[PlotlyHTMLElement] = js.native
   def restyle(root: Root, aobj: Data, traces: Double): js.Promise[PlotlyHTMLElement] = js.native
   def toImage(root: Root, opts: ToImgopts): js.Promise[String] = js.native
-  def update(root: Root, traceUpdate: Data, layoutUpdate: Partial[Layout]): js.Promise[PlotlyHTMLElement] = js.native
-  def update(root: Root, traceUpdate: Data, layoutUpdate: Partial[Layout], traces: js.Array[Double]): js.Promise[PlotlyHTMLElement] = js.native
-  def update(root: Root, traceUpdate: Data, layoutUpdate: Partial[Layout], traces: Double): js.Promise[PlotlyHTMLElement] = js.native
+  def update(root: Root, traceUpdate: Data, layoutUpdate: PartialLayout): js.Promise[PlotlyHTMLElement] = js.native
+  def update(root: Root, traceUpdate: Data, layoutUpdate: PartialLayout, traces: js.Array[Double]): js.Promise[PlotlyHTMLElement] = js.native
+  def update(root: Root, traceUpdate: Data, layoutUpdate: PartialLayout, traces: Double): js.Promise[PlotlyHTMLElement] = js.native
   @js.native
   object d3 extends js.Object {
     @JSName("color")
@@ -501,7 +603,7 @@ object coreMod extends js.Object {
     val randomUniform_Original: RandomUniform_ = js.native
     @JSName("rgb")
     val rgb_Original: RGBColorFactory = js.native
-    val scaleImplicit: AnonImplicit = js.native
+    val scaleImplicit: AnonName = js.native
     val schemeAccent: js.Array[String] = js.native
     val schemeBlues: js.Array[js.Array[String]] = js.native
     val schemeBrBG: js.Array[js.Array[String]] = js.native
@@ -736,7 +838,11 @@ object coreMod extends js.Object {
     @JSName("create")
     def create_caption(name: caption): Selection_[HTMLTableCaptionElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
     @JSName("create")
+    def create_circle(name: circle): Selection_[SVGCircleElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
+    @JSName("create")
     def create_cite(name: cite): Selection_[HTMLElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
+    @JSName("create")
+    def create_clipPath(name: clipPath): Selection_[SVGClipPathElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
     @JSName("create")
     def create_code(name: code): Selection_[HTMLElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
     @JSName("create")
@@ -750,7 +856,11 @@ object coreMod extends js.Object {
     @JSName("create")
     def create_dd(name: dd): Selection_[HTMLElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
     @JSName("create")
+    def create_defs(name: defs): Selection_[SVGDefsElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
+    @JSName("create")
     def create_del(name: del): Selection_[HTMLModElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
+    @JSName("create")
+    def create_desc(name: desc): Selection_[SVGDescElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
     @JSName("create")
     def create_details(name: details): Selection_[HTMLDetailsElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
     @JSName("create")
@@ -766,9 +876,79 @@ object coreMod extends js.Object {
     @JSName("create")
     def create_dt(name: dt): Selection_[HTMLElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
     @JSName("create")
+    def create_ellipse(name: ellipse): Selection_[SVGEllipseElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
+    @JSName("create")
     def create_em(name: em): Selection_[HTMLElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
     @JSName("create")
     def create_embed(name: embed): Selection_[HTMLEmbedElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
+    @JSName("create")
+    def create_feBlend(name: feBlend): Selection_[SVGFEBlendElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
+    @JSName("create")
+    def create_feColorMatrix(name: feColorMatrix): Selection_[SVGFEColorMatrixElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
+    @JSName("create")
+    def create_feComponentTransfer(name: feComponentTransfer): Selection_[
+        SVGFEComponentTransferElement, 
+        js.UndefOr[scala.Nothing], 
+        Null, 
+        js.UndefOr[scala.Nothing]
+      ] = js.native
+    @JSName("create")
+    def create_feComposite(name: feComposite): Selection_[SVGFECompositeElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
+    @JSName("create")
+    def create_feConvolveMatrix(name: feConvolveMatrix): Selection_[SVGFEConvolveMatrixElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
+    @JSName("create")
+    def create_feDiffuseLighting(name: feDiffuseLighting): Selection_[
+        SVGFEDiffuseLightingElement, 
+        js.UndefOr[scala.Nothing], 
+        Null, 
+        js.UndefOr[scala.Nothing]
+      ] = js.native
+    @JSName("create")
+    def create_feDisplacementMap(name: feDisplacementMap): Selection_[
+        SVGFEDisplacementMapElement, 
+        js.UndefOr[scala.Nothing], 
+        Null, 
+        js.UndefOr[scala.Nothing]
+      ] = js.native
+    @JSName("create")
+    def create_feDistantLight(name: feDistantLight): Selection_[SVGFEDistantLightElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
+    @JSName("create")
+    def create_feFlood(name: feFlood): Selection_[SVGFEFloodElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
+    @JSName("create")
+    def create_feFuncA(name: feFuncA): Selection_[SVGFEFuncAElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
+    @JSName("create")
+    def create_feFuncB(name: feFuncB): Selection_[SVGFEFuncBElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
+    @JSName("create")
+    def create_feFuncG(name: feFuncG): Selection_[SVGFEFuncGElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
+    @JSName("create")
+    def create_feFuncR(name: feFuncR): Selection_[SVGFEFuncRElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
+    @JSName("create")
+    def create_feGaussianBlur(name: feGaussianBlur): Selection_[SVGFEGaussianBlurElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
+    @JSName("create")
+    def create_feImage(name: feImage): Selection_[SVGFEImageElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
+    @JSName("create")
+    def create_feMerge(name: feMerge): Selection_[SVGFEMergeElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
+    @JSName("create")
+    def create_feMergeNode(name: feMergeNode): Selection_[SVGFEMergeNodeElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
+    @JSName("create")
+    def create_feMorphology(name: feMorphology): Selection_[SVGFEMorphologyElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
+    @JSName("create")
+    def create_feOffset(name: feOffset): Selection_[SVGFEOffsetElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
+    @JSName("create")
+    def create_fePointLight(name: fePointLight): Selection_[SVGFEPointLightElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
+    @JSName("create")
+    def create_feSpecularLighting(name: feSpecularLighting): Selection_[
+        SVGFESpecularLightingElement, 
+        js.UndefOr[scala.Nothing], 
+        Null, 
+        js.UndefOr[scala.Nothing]
+      ] = js.native
+    @JSName("create")
+    def create_feSpotLight(name: feSpotLight): Selection_[SVGFESpotLightElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
+    @JSName("create")
+    def create_feTile(name: feTile): Selection_[SVGFETileElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
+    @JSName("create")
+    def create_feTurbulence(name: feTurbulence): Selection_[SVGFETurbulenceElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
     @JSName("create")
     def create_fieldset(name: fieldset): Selection_[HTMLFieldSetElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
     @JSName("create")
@@ -776,15 +956,21 @@ object coreMod extends js.Object {
     @JSName("create")
     def create_figure(name: figure): Selection_[HTMLElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
     @JSName("create")
+    def create_filter(name: filter): Selection_[SVGFilterElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
+    @JSName("create")
     def create_font(name: font): Selection_[HTMLFontElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
     @JSName("create")
     def create_footer(name: footer): Selection_[HTMLElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
+    @JSName("create")
+    def create_foreignObject(name: foreignObject): Selection_[SVGForeignObjectElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
     @JSName("create")
     def create_form(name: form): Selection_[HTMLFormElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
     @JSName("create")
     def create_frame(name: frame): Selection_[HTMLFrameElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
     @JSName("create")
     def create_frameset(name: frameset): Selection_[HTMLFrameSetElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
+    @JSName("create")
+    def create_g(name: g): Selection_[SVGGElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
     @JSName("create")
     def create_h1(name: h1): Selection_[HTMLHeadingElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
     @JSName("create")
@@ -812,6 +998,8 @@ object coreMod extends js.Object {
     @JSName("create")
     def create_iframe(name: iframe): Selection_[HTMLIFrameElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
     @JSName("create")
+    def create_image(name: image): Selection_[SVGImageElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
+    @JSName("create")
     def create_img(name: img): Selection_[HTMLImageElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
     @JSName("create")
     def create_input(name: input): Selection_[HTMLInputElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
@@ -826,6 +1014,10 @@ object coreMod extends js.Object {
     @JSName("create")
     def create_li(name: li): Selection_[HTMLLIElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
     @JSName("create")
+    def create_line(name: line): Selection_[SVGLineElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
+    @JSName("create")
+    def create_linearGradient(name: linearGradient): Selection_[SVGLinearGradientElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
+    @JSName("create")
     def create_link(name: link): Selection_[HTMLLinkElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
     @JSName("create")
     def create_main(name: main): Selection_[HTMLElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
@@ -834,11 +1026,17 @@ object coreMod extends js.Object {
     @JSName("create")
     def create_mark(name: mark): Selection_[HTMLElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
     @JSName("create")
+    def create_marker(name: marker): Selection_[SVGMarkerElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
+    @JSName("create")
     def create_marquee(name: marquee): Selection_[HTMLMarqueeElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
+    @JSName("create")
+    def create_mask(name: mask): Selection_[SVGMaskElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
     @JSName("create")
     def create_menu(name: menu): Selection_[HTMLMenuElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
     @JSName("create")
     def create_meta(name: meta): Selection_[HTMLMetaElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
+    @JSName("create")
+    def create_metadata(name: metadata): Selection_[SVGMetadataElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
     @JSName("create")
     def create_meter(name: meter): Selection_[HTMLMeterElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
     @JSName("create")
@@ -860,13 +1058,25 @@ object coreMod extends js.Object {
     @JSName("create")
     def create_param(name: param): Selection_[HTMLParamElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
     @JSName("create")
+    def create_path(name: path): Selection_[SVGPathElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
+    @JSName("create")
+    def create_pattern(name: pattern): Selection_[SVGPatternElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
+    @JSName("create")
     def create_picture(name: picture): Selection_[HTMLPictureElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
+    @JSName("create")
+    def create_polygon(name: polygon): Selection_[SVGPolygonElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
+    @JSName("create")
+    def create_polyline(name: polyline): Selection_[SVGPolylineElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
     @JSName("create")
     def create_pre(name: pre): Selection_[HTMLPreElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
     @JSName("create")
     def create_progress(name: progress): Selection_[HTMLProgressElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
     @JSName("create")
     def create_q(name: q): Selection_[HTMLQuoteElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
+    @JSName("create")
+    def create_radialGradient(name: radialGradient): Selection_[SVGRadialGradientElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
+    @JSName("create")
+    def create_rect(name: rect): Selection_[SVGRectElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
     @JSName("create")
     def create_rp(name: rp): Selection_[HTMLElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
     @JSName("create")
@@ -892,6 +1102,8 @@ object coreMod extends js.Object {
     @JSName("create")
     def create_span(name: span): Selection_[HTMLSpanElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
     @JSName("create")
+    def create_stop(name: stop): Selection_[SVGStopElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
+    @JSName("create")
     def create_strong(name: strong): Selection_[HTMLElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
     @JSName("create")
     def create_style(name: style): Selection_[HTMLStyleElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
@@ -902,6 +1114,12 @@ object coreMod extends js.Object {
     @JSName("create")
     def create_sup(name: sup): Selection_[HTMLElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
     @JSName("create")
+    def create_svg(name: svg): Selection_[SVGSVGElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
+    @JSName("create")
+    def create_switch(name: switch): Selection_[SVGSwitchElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
+    @JSName("create")
+    def create_symbol(name: symbol): Selection_[SVGSymbolElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
+    @JSName("create")
     def create_table(name: table): Selection_[HTMLTableElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
     @JSName("create")
     def create_tbody(name: tbody): Selection_[HTMLTableSectionElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
@@ -909,6 +1127,10 @@ object coreMod extends js.Object {
     def create_td(name: td): Selection_[HTMLTableDataCellElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
     @JSName("create")
     def create_template(name: template): Selection_[HTMLTemplateElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
+    @JSName("create")
+    def create_text(name: text): Selection_[SVGTextElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
+    @JSName("create")
+    def create_textPath(name: textPath): Selection_[SVGTextPathElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
     @JSName("create")
     def create_textarea(name: textarea): Selection_[HTMLTextAreaElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
     @JSName("create")
@@ -926,13 +1148,19 @@ object coreMod extends js.Object {
     @JSName("create")
     def create_track(name: track): Selection_[HTMLTrackElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
     @JSName("create")
+    def create_tspan(name: tspan): Selection_[SVGTSpanElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
+    @JSName("create")
     def create_u(name: u): Selection_[HTMLElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
     @JSName("create")
     def create_ul(name: ul): Selection_[HTMLUListElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
     @JSName("create")
+    def create_use(name: use): Selection_[SVGUseElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
+    @JSName("create")
     def create_var(name: `var`): Selection_[HTMLElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
     @JSName("create")
     def create_video(name: video): Selection_[HTMLVideoElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
+    @JSName("create")
+    def create_view(name: view): Selection_[SVGViewElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
     @JSName("create")
     def create_wbr(name: wbr): Selection_[HTMLElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
     def creator[NewGElement /* <: Element */](name: String): js.ThisFunction0[/* this */ BaseType, NewGElement] = js.native
@@ -975,7 +1203,11 @@ object coreMod extends js.Object {
     @JSName("creator")
     def creator_caption(name: caption): js.ThisFunction0[/* this */ BaseType, HTMLTableCaptionElement] = js.native
     @JSName("creator")
+    def creator_circle(name: circle): js.ThisFunction0[/* this */ BaseType, SVGCircleElement] = js.native
+    @JSName("creator")
     def creator_cite(name: cite): js.ThisFunction0[/* this */ BaseType, HTMLElement] = js.native
+    @JSName("creator")
+    def creator_clipPath(name: clipPath): js.ThisFunction0[/* this */ BaseType, SVGClipPathElement] = js.native
     @JSName("creator")
     def creator_code(name: code): js.ThisFunction0[/* this */ BaseType, HTMLElement] = js.native
     @JSName("creator")
@@ -989,7 +1221,11 @@ object coreMod extends js.Object {
     @JSName("creator")
     def creator_dd(name: dd): js.ThisFunction0[/* this */ BaseType, HTMLElement] = js.native
     @JSName("creator")
+    def creator_defs(name: defs): js.ThisFunction0[/* this */ BaseType, SVGDefsElement] = js.native
+    @JSName("creator")
     def creator_del(name: del): js.ThisFunction0[/* this */ BaseType, HTMLModElement] = js.native
+    @JSName("creator")
+    def creator_desc(name: desc): js.ThisFunction0[/* this */ BaseType, SVGDescElement] = js.native
     @JSName("creator")
     def creator_details(name: details): js.ThisFunction0[/* this */ BaseType, HTMLDetailsElement] = js.native
     @JSName("creator")
@@ -1005,9 +1241,59 @@ object coreMod extends js.Object {
     @JSName("creator")
     def creator_dt(name: dt): js.ThisFunction0[/* this */ BaseType, HTMLElement] = js.native
     @JSName("creator")
+    def creator_ellipse(name: ellipse): js.ThisFunction0[/* this */ BaseType, SVGEllipseElement] = js.native
+    @JSName("creator")
     def creator_em(name: em): js.ThisFunction0[/* this */ BaseType, HTMLElement] = js.native
     @JSName("creator")
     def creator_embed(name: embed): js.ThisFunction0[/* this */ BaseType, HTMLEmbedElement] = js.native
+    @JSName("creator")
+    def creator_feBlend(name: feBlend): js.ThisFunction0[/* this */ BaseType, SVGFEBlendElement] = js.native
+    @JSName("creator")
+    def creator_feColorMatrix(name: feColorMatrix): js.ThisFunction0[/* this */ BaseType, SVGFEColorMatrixElement] = js.native
+    @JSName("creator")
+    def creator_feComponentTransfer(name: feComponentTransfer): js.ThisFunction0[/* this */ BaseType, SVGFEComponentTransferElement] = js.native
+    @JSName("creator")
+    def creator_feComposite(name: feComposite): js.ThisFunction0[/* this */ BaseType, SVGFECompositeElement] = js.native
+    @JSName("creator")
+    def creator_feConvolveMatrix(name: feConvolveMatrix): js.ThisFunction0[/* this */ BaseType, SVGFEConvolveMatrixElement] = js.native
+    @JSName("creator")
+    def creator_feDiffuseLighting(name: feDiffuseLighting): js.ThisFunction0[/* this */ BaseType, SVGFEDiffuseLightingElement] = js.native
+    @JSName("creator")
+    def creator_feDisplacementMap(name: feDisplacementMap): js.ThisFunction0[/* this */ BaseType, SVGFEDisplacementMapElement] = js.native
+    @JSName("creator")
+    def creator_feDistantLight(name: feDistantLight): js.ThisFunction0[/* this */ BaseType, SVGFEDistantLightElement] = js.native
+    @JSName("creator")
+    def creator_feFlood(name: feFlood): js.ThisFunction0[/* this */ BaseType, SVGFEFloodElement] = js.native
+    @JSName("creator")
+    def creator_feFuncA(name: feFuncA): js.ThisFunction0[/* this */ BaseType, SVGFEFuncAElement] = js.native
+    @JSName("creator")
+    def creator_feFuncB(name: feFuncB): js.ThisFunction0[/* this */ BaseType, SVGFEFuncBElement] = js.native
+    @JSName("creator")
+    def creator_feFuncG(name: feFuncG): js.ThisFunction0[/* this */ BaseType, SVGFEFuncGElement] = js.native
+    @JSName("creator")
+    def creator_feFuncR(name: feFuncR): js.ThisFunction0[/* this */ BaseType, SVGFEFuncRElement] = js.native
+    @JSName("creator")
+    def creator_feGaussianBlur(name: feGaussianBlur): js.ThisFunction0[/* this */ BaseType, SVGFEGaussianBlurElement] = js.native
+    @JSName("creator")
+    def creator_feImage(name: feImage): js.ThisFunction0[/* this */ BaseType, SVGFEImageElement] = js.native
+    @JSName("creator")
+    def creator_feMerge(name: feMerge): js.ThisFunction0[/* this */ BaseType, SVGFEMergeElement] = js.native
+    @JSName("creator")
+    def creator_feMergeNode(name: feMergeNode): js.ThisFunction0[/* this */ BaseType, SVGFEMergeNodeElement] = js.native
+    @JSName("creator")
+    def creator_feMorphology(name: feMorphology): js.ThisFunction0[/* this */ BaseType, SVGFEMorphologyElement] = js.native
+    @JSName("creator")
+    def creator_feOffset(name: feOffset): js.ThisFunction0[/* this */ BaseType, SVGFEOffsetElement] = js.native
+    @JSName("creator")
+    def creator_fePointLight(name: fePointLight): js.ThisFunction0[/* this */ BaseType, SVGFEPointLightElement] = js.native
+    @JSName("creator")
+    def creator_feSpecularLighting(name: feSpecularLighting): js.ThisFunction0[/* this */ BaseType, SVGFESpecularLightingElement] = js.native
+    @JSName("creator")
+    def creator_feSpotLight(name: feSpotLight): js.ThisFunction0[/* this */ BaseType, SVGFESpotLightElement] = js.native
+    @JSName("creator")
+    def creator_feTile(name: feTile): js.ThisFunction0[/* this */ BaseType, SVGFETileElement] = js.native
+    @JSName("creator")
+    def creator_feTurbulence(name: feTurbulence): js.ThisFunction0[/* this */ BaseType, SVGFETurbulenceElement] = js.native
     @JSName("creator")
     def creator_fieldset(name: fieldset): js.ThisFunction0[/* this */ BaseType, HTMLFieldSetElement] = js.native
     @JSName("creator")
@@ -1015,15 +1301,21 @@ object coreMod extends js.Object {
     @JSName("creator")
     def creator_figure(name: figure): js.ThisFunction0[/* this */ BaseType, HTMLElement] = js.native
     @JSName("creator")
+    def creator_filter(name: filter): js.ThisFunction0[/* this */ BaseType, SVGFilterElement] = js.native
+    @JSName("creator")
     def creator_font(name: font): js.ThisFunction0[/* this */ BaseType, HTMLFontElement] = js.native
     @JSName("creator")
     def creator_footer(name: footer): js.ThisFunction0[/* this */ BaseType, HTMLElement] = js.native
+    @JSName("creator")
+    def creator_foreignObject(name: foreignObject): js.ThisFunction0[/* this */ BaseType, SVGForeignObjectElement] = js.native
     @JSName("creator")
     def creator_form(name: form): js.ThisFunction0[/* this */ BaseType, HTMLFormElement] = js.native
     @JSName("creator")
     def creator_frame(name: frame): js.ThisFunction0[/* this */ BaseType, HTMLFrameElement] = js.native
     @JSName("creator")
     def creator_frameset(name: frameset): js.ThisFunction0[/* this */ BaseType, HTMLFrameSetElement] = js.native
+    @JSName("creator")
+    def creator_g(name: g): js.ThisFunction0[/* this */ BaseType, SVGGElement] = js.native
     @JSName("creator")
     def creator_h1(name: h1): js.ThisFunction0[/* this */ BaseType, HTMLHeadingElement] = js.native
     @JSName("creator")
@@ -1051,6 +1343,8 @@ object coreMod extends js.Object {
     @JSName("creator")
     def creator_iframe(name: iframe): js.ThisFunction0[/* this */ BaseType, HTMLIFrameElement] = js.native
     @JSName("creator")
+    def creator_image(name: image): js.ThisFunction0[/* this */ BaseType, SVGImageElement] = js.native
+    @JSName("creator")
     def creator_img(name: img): js.ThisFunction0[/* this */ BaseType, HTMLImageElement] = js.native
     @JSName("creator")
     def creator_input(name: input): js.ThisFunction0[/* this */ BaseType, HTMLInputElement] = js.native
@@ -1065,6 +1359,10 @@ object coreMod extends js.Object {
     @JSName("creator")
     def creator_li(name: li): js.ThisFunction0[/* this */ BaseType, HTMLLIElement] = js.native
     @JSName("creator")
+    def creator_line(name: line): js.ThisFunction0[/* this */ BaseType, SVGLineElement] = js.native
+    @JSName("creator")
+    def creator_linearGradient(name: linearGradient): js.ThisFunction0[/* this */ BaseType, SVGLinearGradientElement] = js.native
+    @JSName("creator")
     def creator_link(name: link): js.ThisFunction0[/* this */ BaseType, HTMLLinkElement] = js.native
     @JSName("creator")
     def creator_main(name: main): js.ThisFunction0[/* this */ BaseType, HTMLElement] = js.native
@@ -1073,11 +1371,17 @@ object coreMod extends js.Object {
     @JSName("creator")
     def creator_mark(name: mark): js.ThisFunction0[/* this */ BaseType, HTMLElement] = js.native
     @JSName("creator")
+    def creator_marker(name: marker): js.ThisFunction0[/* this */ BaseType, SVGMarkerElement] = js.native
+    @JSName("creator")
     def creator_marquee(name: marquee): js.ThisFunction0[/* this */ BaseType, HTMLMarqueeElement] = js.native
+    @JSName("creator")
+    def creator_mask(name: mask): js.ThisFunction0[/* this */ BaseType, SVGMaskElement] = js.native
     @JSName("creator")
     def creator_menu(name: menu): js.ThisFunction0[/* this */ BaseType, HTMLMenuElement] = js.native
     @JSName("creator")
     def creator_meta(name: meta): js.ThisFunction0[/* this */ BaseType, HTMLMetaElement] = js.native
+    @JSName("creator")
+    def creator_metadata(name: metadata): js.ThisFunction0[/* this */ BaseType, SVGMetadataElement] = js.native
     @JSName("creator")
     def creator_meter(name: meter): js.ThisFunction0[/* this */ BaseType, HTMLMeterElement] = js.native
     @JSName("creator")
@@ -1099,13 +1403,25 @@ object coreMod extends js.Object {
     @JSName("creator")
     def creator_param(name: param): js.ThisFunction0[/* this */ BaseType, HTMLParamElement] = js.native
     @JSName("creator")
+    def creator_path(name: path): js.ThisFunction0[/* this */ BaseType, SVGPathElement] = js.native
+    @JSName("creator")
+    def creator_pattern(name: pattern): js.ThisFunction0[/* this */ BaseType, SVGPatternElement] = js.native
+    @JSName("creator")
     def creator_picture(name: picture): js.ThisFunction0[/* this */ BaseType, HTMLPictureElement] = js.native
+    @JSName("creator")
+    def creator_polygon(name: polygon): js.ThisFunction0[/* this */ BaseType, SVGPolygonElement] = js.native
+    @JSName("creator")
+    def creator_polyline(name: polyline): js.ThisFunction0[/* this */ BaseType, SVGPolylineElement] = js.native
     @JSName("creator")
     def creator_pre(name: pre): js.ThisFunction0[/* this */ BaseType, HTMLPreElement] = js.native
     @JSName("creator")
     def creator_progress(name: progress): js.ThisFunction0[/* this */ BaseType, HTMLProgressElement] = js.native
     @JSName("creator")
     def creator_q(name: q): js.ThisFunction0[/* this */ BaseType, HTMLQuoteElement] = js.native
+    @JSName("creator")
+    def creator_radialGradient(name: radialGradient): js.ThisFunction0[/* this */ BaseType, SVGRadialGradientElement] = js.native
+    @JSName("creator")
+    def creator_rect(name: rect): js.ThisFunction0[/* this */ BaseType, SVGRectElement] = js.native
     @JSName("creator")
     def creator_rp(name: rp): js.ThisFunction0[/* this */ BaseType, HTMLElement] = js.native
     @JSName("creator")
@@ -1131,6 +1447,8 @@ object coreMod extends js.Object {
     @JSName("creator")
     def creator_span(name: span): js.ThisFunction0[/* this */ BaseType, HTMLSpanElement] = js.native
     @JSName("creator")
+    def creator_stop(name: stop): js.ThisFunction0[/* this */ BaseType, SVGStopElement] = js.native
+    @JSName("creator")
     def creator_strong(name: strong): js.ThisFunction0[/* this */ BaseType, HTMLElement] = js.native
     @JSName("creator")
     def creator_style(name: style): js.ThisFunction0[/* this */ BaseType, HTMLStyleElement] = js.native
@@ -1141,6 +1459,12 @@ object coreMod extends js.Object {
     @JSName("creator")
     def creator_sup(name: sup): js.ThisFunction0[/* this */ BaseType, HTMLElement] = js.native
     @JSName("creator")
+    def creator_svg(name: svg): js.ThisFunction0[/* this */ BaseType, SVGSVGElement] = js.native
+    @JSName("creator")
+    def creator_switch(name: switch): js.ThisFunction0[/* this */ BaseType, SVGSwitchElement] = js.native
+    @JSName("creator")
+    def creator_symbol(name: symbol): js.ThisFunction0[/* this */ BaseType, SVGSymbolElement] = js.native
+    @JSName("creator")
     def creator_table(name: table): js.ThisFunction0[/* this */ BaseType, HTMLTableElement] = js.native
     @JSName("creator")
     def creator_tbody(name: tbody): js.ThisFunction0[/* this */ BaseType, HTMLTableSectionElement] = js.native
@@ -1148,6 +1472,10 @@ object coreMod extends js.Object {
     def creator_td(name: td): js.ThisFunction0[/* this */ BaseType, HTMLTableDataCellElement] = js.native
     @JSName("creator")
     def creator_template(name: template): js.ThisFunction0[/* this */ BaseType, HTMLTemplateElement] = js.native
+    @JSName("creator")
+    def creator_text(name: text): js.ThisFunction0[/* this */ BaseType, SVGTextElement] = js.native
+    @JSName("creator")
+    def creator_textPath(name: textPath): js.ThisFunction0[/* this */ BaseType, SVGTextPathElement] = js.native
     @JSName("creator")
     def creator_textarea(name: textarea): js.ThisFunction0[/* this */ BaseType, HTMLTextAreaElement] = js.native
     @JSName("creator")
@@ -1165,13 +1493,19 @@ object coreMod extends js.Object {
     @JSName("creator")
     def creator_track(name: track): js.ThisFunction0[/* this */ BaseType, HTMLTrackElement] = js.native
     @JSName("creator")
+    def creator_tspan(name: tspan): js.ThisFunction0[/* this */ BaseType, SVGTSpanElement] = js.native
+    @JSName("creator")
     def creator_u(name: u): js.ThisFunction0[/* this */ BaseType, HTMLElement] = js.native
     @JSName("creator")
     def creator_ul(name: ul): js.ThisFunction0[/* this */ BaseType, HTMLUListElement] = js.native
     @JSName("creator")
+    def creator_use(name: use): js.ThisFunction0[/* this */ BaseType, SVGUseElement] = js.native
+    @JSName("creator")
     def creator_var(name: `var`): js.ThisFunction0[/* this */ BaseType, HTMLElement] = js.native
     @JSName("creator")
     def creator_video(name: video): js.ThisFunction0[/* this */ BaseType, HTMLVideoElement] = js.native
+    @JSName("creator")
+    def creator_view(name: view): js.ThisFunction0[/* this */ BaseType, SVGViewElement] = js.native
     @JSName("creator")
     def creator_wbr(name: wbr): js.ThisFunction0[/* this */ BaseType, HTMLElement] = js.native
     def cross[S, T](a: Iterable[S], b: Iterable[T]): js.Array[js.Tuple2[S, T]] = js.native
@@ -1503,7 +1837,7 @@ object coreMod extends js.Object {
     def easeSinIn(normalizedTime: Double): Double = js.native
     def easeSinInOut(normalizedTime: Double): Double = js.native
     def easeSinOut(normalizedTime: Double): Double = js.native
-    def entries(obj: js.Object): js.Array[AnonKeyValue] = js.native
+    def entries(obj: js.Object): js.Array[AnonValue] = js.native
     def entries[T](obj: StringDictionary[T]): js.Array[AnonKey[T]] = js.native
     def entries[T](obj: ArrayLike[T]): js.Array[AnonKey[T]] = js.native
     def extent(array: Iterable[String]): js.Tuple2[js.UndefOr[String], js.UndefOr[String]] = js.native
@@ -1703,7 +2037,7 @@ object coreMod extends js.Object {
     def geoStream(`object`: ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties], stream: GeoStream_): Unit = js.native
     def geoStream(`object`: ExtendedGeometryCollection[GeoGeometryObjects], stream: GeoStream_): Unit = js.native
     def geoStream(`object`: GeoGeometryObjects, stream: GeoStream_): Unit = js.native
-    def geoTransform[T /* <: GeoTransformPrototype */](methods: T): AnonS[T] = js.native
+    def geoTransform[T /* <: GeoTransformPrototype */](methods: T): Anon0[T] = js.native
     def geoTransverseMercator(): GeoProjection_ = js.native
     def geoTransverseMercatorRaw(): GeoRawProjection = js.native
     /**
@@ -1784,7 +2118,7 @@ object coreMod extends js.Object {
     def html(url: String): js.Promise[Document_] = js.native
     def html(url: String, init: RequestInit): js.Promise[Document_] = js.native
     def image(url: String): js.Promise[HTMLImageElement] = js.native
-    def image(url: String, init: Partial[HTMLImageElement]): js.Promise[HTMLImageElement] = js.native
+    def image(url: String, init: PartialHTMLImageElement): js.Promise[HTMLImageElement] = js.native
     def interpolate(a: String, b: String): js.Function1[/* t */ Double, String] = js.native
     def interpolate(a: String, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = js.native
     def interpolate(a: js.Any): js.Function1[/* t */ Double, Null] = js.native

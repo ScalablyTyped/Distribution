@@ -1,7 +1,7 @@
 package typings.vsoNodeApi.galleryInterfacesMod
 
 import typings.std.Date
-import typings.vsoNodeApi.AnonKeyValueString
+import typings.vsoNodeApi.AnonKeyValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,8 +16,8 @@ trait ExtensionDraft extends js.Object {
   var payload: ExtensionPayload
   var product: String
   var publisherName: String
-  var validationErrors: js.Array[AnonKeyValueString]
-  var validationWarnings: js.Array[AnonKeyValueString]
+  var validationErrors: js.Array[AnonKeyValue]
+  var validationWarnings: js.Array[AnonKeyValue]
 }
 
 object ExtensionDraft {
@@ -32,8 +32,8 @@ object ExtensionDraft {
     payload: ExtensionPayload,
     product: String,
     publisherName: String,
-    validationErrors: js.Array[AnonKeyValueString],
-    validationWarnings: js.Array[AnonKeyValueString]
+    validationErrors: js.Array[AnonKeyValue],
+    validationWarnings: js.Array[AnonKeyValue]
   ): ExtensionDraft = {
     val __obj = js.Dynamic.literal(assets = assets.asInstanceOf[js.Any], createdDate = createdDate.asInstanceOf[js.Any], draftState = draftState.asInstanceOf[js.Any], extensionName = extensionName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], lastUpdated = lastUpdated.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any], product = product.asInstanceOf[js.Any], publisherName = publisherName.asInstanceOf[js.Any], validationErrors = validationErrors.asInstanceOf[js.Any], validationWarnings = validationWarnings.asInstanceOf[js.Any])
   

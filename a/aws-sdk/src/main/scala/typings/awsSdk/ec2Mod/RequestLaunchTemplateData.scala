@@ -49,7 +49,7 @@ trait RequestLaunchTemplateData extends js.Object {
   /**
     * The ID of the AMI.
     */
-  var ImageId: js.UndefOr[String] = js.native
+  var ImageId: js.UndefOr[typings.awsSdk.ec2Mod.ImageId] = js.native
   /**
     * Indicates whether an instance stops or terminates when you initiate shutdown from the instance (using the operating system command for system shutdown). Default: stop 
     */
@@ -65,11 +65,11 @@ trait RequestLaunchTemplateData extends js.Object {
   /**
     * The ID of the kernel.  We recommend that you use PV-GRUB instead of kernels and RAM disks. For more information, see User Provided Kernels in the Amazon Elastic Compute Cloud User Guide. 
     */
-  var KernelId: js.UndefOr[String] = js.native
+  var KernelId: js.UndefOr[typings.awsSdk.ec2Mod.KernelId] = js.native
   /**
     * The name of the key pair. You can create a key pair using CreateKeyPair or ImportKeyPair.  If you do not specify a key pair, you can't connect to the instance unless you choose an AMI that is configured to allow users another way to log in. 
     */
-  var KeyName: js.UndefOr[String] = js.native
+  var KeyName: js.UndefOr[KeyPairName] = js.native
   /**
     * The license configurations.
     */
@@ -93,7 +93,7 @@ trait RequestLaunchTemplateData extends js.Object {
   /**
     * The ID of the RAM disk.  We recommend that you use PV-GRUB instead of kernels and RAM disks. For more information, see User Provided Kernels in the Amazon Elastic Compute Cloud User Guide. 
     */
-  var RamDiskId: js.UndefOr[String] = js.native
+  var RamDiskId: js.UndefOr[RamdiskId] = js.native
   /**
     * One or more security group IDs. You can create a security group using CreateSecurityGroup. You cannot specify both a security group ID and security name in the same request.
     */
@@ -125,18 +125,18 @@ object RequestLaunchTemplateData {
     ElasticInferenceAccelerators: LaunchTemplateElasticInferenceAcceleratorList = null,
     HibernationOptions: LaunchTemplateHibernationOptionsRequest = null,
     IamInstanceProfile: LaunchTemplateIamInstanceProfileSpecificationRequest = null,
-    ImageId: String = null,
+    ImageId: ImageId = null,
     InstanceInitiatedShutdownBehavior: ShutdownBehavior = null,
     InstanceMarketOptions: LaunchTemplateInstanceMarketOptionsRequest = null,
     InstanceType: InstanceType = null,
-    KernelId: String = null,
-    KeyName: String = null,
+    KernelId: KernelId = null,
+    KeyName: KeyPairName = null,
     LicenseSpecifications: LaunchTemplateLicenseSpecificationListRequest = null,
     MetadataOptions: LaunchTemplateInstanceMetadataOptionsRequest = null,
     Monitoring: LaunchTemplatesMonitoringRequest = null,
     NetworkInterfaces: LaunchTemplateInstanceNetworkInterfaceSpecificationRequestList = null,
     Placement: LaunchTemplatePlacementRequest = null,
-    RamDiskId: String = null,
+    RamDiskId: RamdiskId = null,
     SecurityGroupIds: SecurityGroupIdStringList = null,
     SecurityGroups: SecurityGroupStringList = null,
     TagSpecifications: LaunchTemplateTagSpecificationRequestList = null,

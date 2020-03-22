@@ -1,6 +1,6 @@
 package typings.awsLambda.cloudformationCustomResourceMod
 
-import typings.awsLambda.AnonKeyServiceToken
+import typings.awsLambda.AnonDictKey
 import typings.awsLambda.awsLambdaStrings.Create
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,7 +18,7 @@ object CloudFormationCustomResourceCreateEvent {
     LogicalResourceId: String,
     RequestId: String,
     RequestType: Create,
-    ResourceProperties: AnonKeyServiceToken,
+    ResourceProperties: AnonDictKey,
     ResourceType: String,
     ResponseURL: String,
     ServiceToken: String,

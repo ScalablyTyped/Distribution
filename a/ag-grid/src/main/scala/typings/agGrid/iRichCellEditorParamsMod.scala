@@ -15,7 +15,7 @@ object iRichCellEditorParamsMod extends js.Object {
     extends ICellEditorParams
        with ComponentHolder {
     var cellHeight: Double = js.native
-    var cellRenderer: AnonICellRendererComp | ICellRendererFunc | String = js.native
+    var cellRenderer: AnonInstantiableICellRendererComp | ICellRendererFunc | String = js.native
     var values: js.Array[String] = js.native
   }
   

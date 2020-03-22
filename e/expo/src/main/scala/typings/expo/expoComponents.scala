@@ -11,6 +11,8 @@ object expoComponents extends expoProps {
   @scala.inline
   def AppLoadingNativeWrapper: ComponentType[AppLoadingNativeWrapperProps] = js.constructorOf[typings.expo.appLoadingNativeWrapperMod.default].asInstanceOf[typings.react.mod.ComponentType[AppLoadingNativeWrapperProps]]
   @scala.inline
+  def DevAppContainer: ComponentType[js.Object] = js.constructorOf[typings.expo.devAppContainerMod.default].asInstanceOf[typings.react.mod.ComponentType[js.Object]]
+  @scala.inline
   def IconAntDesign: ComponentType[IconAntDesignProps] = js.constructorOf[typings.expo.globalsWebMod.Icon.AntDesign].asInstanceOf[typings.react.mod.ComponentType[IconAntDesignProps]]
   @scala.inline
   def IconAntDesignButton: ComponentType[IconAntDesignButtonProps] = js.constructorOf[typings.expo.globalsWebMod.Icon.AntDesign.Button].asInstanceOf[typings.react.mod.ComponentType[IconAntDesignButtonProps]]

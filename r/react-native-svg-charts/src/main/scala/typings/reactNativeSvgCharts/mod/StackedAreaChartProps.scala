@@ -8,12 +8,11 @@ import typings.react.mod.Component
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import typings.reactNativeSvg.mod.LinearGradientProps
-import typings.reactNativeSvg.mod.PathProps
 import typings.reactNativeSvg.mod.RadialGradientProps
 import typings.reactNativeSvgCharts.AnonBottom
 import typings.reactNativeSvgCharts.AnonColor
+import typings.reactNativeSvgCharts.PartialPathProps
 import typings.std.CanvasRenderingContext2D
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -56,7 +55,7 @@ object StackedAreaChartProps {
     renderGradient: /* props */ AnonColor[T] => Component[LinearGradientProps | RadialGradientProps, js.Object, _] = null,
     showGrid: js.UndefOr[Boolean] = js.undefined,
     style: StyleProp[ViewStyle] = null,
-    svg: Partial[PathProps] = null,
+    svg: PartialPathProps = null,
     width: Int | Double = null,
     xAccessor: /* props */ AccessorFunctionProps[T] => Double = null,
     xMax: Int | Double = null,

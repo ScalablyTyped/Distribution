@@ -25,7 +25,7 @@ class Scroller_ protected () extends js.Object {
   def doTouchMove(touches: js.Array[AnonPageX], timeStamp: Double, scale: Double): Unit = js.native
   def doTouchStart(touches: js.Array[AnonPageX], timeStamp: Double): Unit = js.native
   def finishPullToRefresh(): Unit = js.native
-  def getScrollMax(): AnonLeftTop = js.native
+  def getScrollMax(): AnonTop = js.native
   def getValues(): AnonLeft = js.native
   def scrollBy(leftOffset: Double, topOffset: Double): Unit = js.native
   def scrollBy(leftOffset: Double, topOffset: Double, animate: Boolean): Unit = js.native

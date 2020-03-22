@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("antd", "Tag")
 @js.native
-class Tag protected () extends default {
-  def this(props: TagProps) = this()
-}
+class Tag () extends default
 
 /* static members */
 @JSImport("antd", "Tag")

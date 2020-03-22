@@ -14,7 +14,7 @@ object listMod extends js.Object {
   /* static members */
   @js.native
   object List extends js.Object {
-    var defaultProps: Anon1 = js.native
+    var defaultProps: AnonAutoHeight = js.native
   }
   
 }

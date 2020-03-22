@@ -1,10 +1,9 @@
 package typings.antd.transferMod
 
-import typings.antd.AnonArgsBody
-import typings.antd.AnonDataSourceListStyle
+import typings.antd.AnonListStyle
 import typings.antd.AnonSourceSelectedKeys
-import typings.antd.TypeofClassList
-import typings.antd.TypeofClassSearchDefaultProps
+import typings.antd.TypeofList
+import typings.antd.TypeofSearchInstantiable
 import typings.antd.operationMod.TransferOperationProps
 import typings.react.mod._Global_.JSX.Element
 import scala.scalajs.js
@@ -21,12 +20,11 @@ class default protected () extends Transfer {
 @JSImport("antd/lib/transfer", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var List: TypeofClassList = js.native
-  var Search: TypeofClassSearchDefaultProps = js.native
-  var defaultProps: AnonDataSourceListStyle = js.native
-  var propTypes: AnonArgsBody = js.native
+  var List: TypeofList = js.native
+  var Search: TypeofSearchInstantiable = js.native
+  var defaultProps: AnonListStyle = js.native
   def Operation(
-    hasDisabledMoveToLeftMoveToRightLeftArrowTextRightArrowTextLeftActiveRightActiveClassNameStyle: TransferOperationProps
+    hasDisabledMoveToLeftMoveToRightLeftArrowTextRightArrowTextLeftActiveRightActiveClassNameStyleDirection: TransferOperationProps
   ): Element = js.native
   def getDerivedStateFromProps(nextProps: TransferProps): AnonSourceSelectedKeys | Null = js.native
 }

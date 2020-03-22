@@ -3,7 +3,6 @@ package typings.officeUiFabricReact
 import typings.officeUiFabricReact.coachmarkTypesMod.ICoachmarkProps
 import typings.officeUiFabricReact.officeUiFabricReactStrings.`data-coachmarkid`
 import typings.react.mod.FunctionComponent
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,7 +21,7 @@ object coachmarkMod extends js.Object {
   /* static members */
   @js.native
   object CoachmarkBase extends js.Object {
-    var defaultProps: Partial[ICoachmarkProps] = js.native
+    var defaultProps: PartialICoachmarkProps = js.native
   }
   
 }

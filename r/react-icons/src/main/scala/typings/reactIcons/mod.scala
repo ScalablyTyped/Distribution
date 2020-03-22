@@ -16,6 +16,6 @@ object mod extends js.Object {
   val IconContext: Context[typings.reactIcons.iconContextMod.IconContext] = js.native
   val icons: IconManifest = js.native
   def GenIcon(data: IconTree): js.Function1[/* props */ IconBaseProps, Element] = js.native
-  def IconBase(props: IconBaseProps with AnonAttr): Element = js.native
+  def IconBase(props: IconBasePropsattrundefine): Element = js.native
 }
 

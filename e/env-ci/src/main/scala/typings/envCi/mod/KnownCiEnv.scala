@@ -74,97 +74,6 @@ trait KnownCiEnv extends CiEnv
 
 object KnownCiEnv {
   @scala.inline
-  def CircleCiEnv(
-    build: String,
-    buildUrl: String,
-    commit: String,
-    isCi: `true`,
-    isPr: Boolean,
-    job: String,
-    name: CircleCI,
-    service: circleci_,
-    slug: String,
-    branch: String = null,
-    pr: String = null,
-    prBranch: String = null,
-    tag: String = null
-  ): KnownCiEnv = {
-    val __obj = js.Dynamic.literal(build = build.asInstanceOf[js.Any], buildUrl = buildUrl.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], isCi = isCi.asInstanceOf[js.Any], isPr = isPr.asInstanceOf[js.Any], job = job.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any])
-    if (branch != null) __obj.updateDynamic("branch")(branch.asInstanceOf[js.Any])
-    if (pr != null) __obj.updateDynamic("pr")(pr.asInstanceOf[js.Any])
-    if (prBranch != null) __obj.updateDynamic("prBranch")(prBranch.asInstanceOf[js.Any])
-    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
-    __obj.asInstanceOf[KnownCiEnv]
-  }
-  @scala.inline
-  def SemaphoreEnv(
-    build: String,
-    commit: String,
-    isCi: `true`,
-    isPr: Boolean,
-    name: Semaphore,
-    root: String,
-    service: semaphore_,
-    slug: String,
-    branch: String = null,
-    pr: String = null,
-    prBranch: String = null
-  ): KnownCiEnv = {
-    val __obj = js.Dynamic.literal(build = build.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], isCi = isCi.asInstanceOf[js.Any], isPr = isPr.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any])
-    if (branch != null) __obj.updateDynamic("branch")(branch.asInstanceOf[js.Any])
-    if (pr != null) __obj.updateDynamic("pr")(pr.asInstanceOf[js.Any])
-    if (prBranch != null) __obj.updateDynamic("prBranch")(prBranch.asInstanceOf[js.Any])
-    __obj.asInstanceOf[KnownCiEnv]
-  }
-  @scala.inline
-  def CodeBuildEnv(
-    branch: String,
-    build: String,
-    buildUrl: String,
-    commit: String,
-    isCi: `true`,
-    name: `AWS CodeBuild`,
-    root: String,
-    service: codebuild
-  ): KnownCiEnv = {
-    val __obj = js.Dynamic.literal(branch = branch.asInstanceOf[js.Any], build = build.asInstanceOf[js.Any], buildUrl = buildUrl.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], isCi = isCi.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[KnownCiEnv]
-  }
-  @scala.inline
-  def BitbucketEnv(
-    branch: String,
-    build: String,
-    buildUrl: String,
-    commit: String,
-    isCi: `true`,
-    name: `Bitbucket Pipelines`,
-    root: String,
-    service: bitbucket,
-    slug: String,
-    tag: String = null
-  ): KnownCiEnv = {
-    val __obj = js.Dynamic.literal(branch = branch.asInstanceOf[js.Any], build = build.asInstanceOf[js.Any], buildUrl = buildUrl.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], isCi = isCi.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any])
-    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
-    __obj.asInstanceOf[KnownCiEnv]
-  }
-  @scala.inline
-  def TeamCityEnv(
-    build: String,
-    commit: String,
-    isCi: `true`,
-    name: TeamCity,
-    service: teamcity_,
-    slug: String,
-    branch: String = null,
-    root: String = null
-  ): KnownCiEnv = {
-    val __obj = js.Dynamic.literal(build = build.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], isCi = isCi.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any])
-    if (branch != null) __obj.updateDynamic("branch")(branch.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    __obj.asInstanceOf[KnownCiEnv]
-  }
-  @scala.inline
   def CodeshipEnv(
     branch: String,
     build: String,
@@ -180,47 +89,38 @@ object KnownCiEnv {
     __obj.asInstanceOf[KnownCiEnv]
   }
   @scala.inline
-  def CodefreshEnv(
+  def WerckerEnv(
+    branch: String,
+    build: String,
+    buildUrl: String,
+    commit: String,
+    isCi: `true`,
+    name: Wercker,
+    root: String,
+    service: wercker_,
+    slug: String
+  ): KnownCiEnv = {
+    val __obj = js.Dynamic.literal(branch = branch.asInstanceOf[js.Any], build = build.asInstanceOf[js.Any], buildUrl = buildUrl.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], isCi = isCi.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[KnownCiEnv]
+  }
+  @scala.inline
+  def JenkinsEnv(
     branch: String,
     build: String,
     buildUrl: String,
     commit: String,
     isCi: `true`,
     isPr: Boolean,
-    name: Codefresh,
+    name: Jenkins,
     root: String,
-    service: codefresh_,
-    slug: String,
+    service: jenkins_,
     pr: String = null,
     prBranch: String = null
   ): KnownCiEnv = {
-    val __obj = js.Dynamic.literal(branch = branch.asInstanceOf[js.Any], build = build.asInstanceOf[js.Any], buildUrl = buildUrl.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], isCi = isCi.asInstanceOf[js.Any], isPr = isPr.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(branch = branch.asInstanceOf[js.Any], build = build.asInstanceOf[js.Any], buildUrl = buildUrl.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], isCi = isCi.asInstanceOf[js.Any], isPr = isPr.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any])
     if (pr != null) __obj.updateDynamic("pr")(pr.asInstanceOf[js.Any])
     if (prBranch != null) __obj.updateDynamic("prBranch")(prBranch.asInstanceOf[js.Any])
-    __obj.asInstanceOf[KnownCiEnv]
-  }
-  @scala.inline
-  def TravisEnv(
-    build: String,
-    buildUrl: String,
-    commit: String,
-    isCi: `true`,
-    isPr: Boolean,
-    job: String,
-    jobUrl: String,
-    name: `Travis CI`,
-    prBranch: String,
-    root: String,
-    service: travis,
-    slug: String,
-    branch: String = null,
-    pr: String = null,
-    tag: String = null
-  ): KnownCiEnv = {
-    val __obj = js.Dynamic.literal(build = build.asInstanceOf[js.Any], buildUrl = buildUrl.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], isCi = isCi.asInstanceOf[js.Any], isPr = isPr.asInstanceOf[js.Any], job = job.asInstanceOf[js.Any], jobUrl = jobUrl.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], prBranch = prBranch.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any])
-    if (branch != null) __obj.updateDynamic("branch")(branch.asInstanceOf[js.Any])
-    if (pr != null) __obj.updateDynamic("pr")(pr.asInstanceOf[js.Any])
-    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[KnownCiEnv]
   }
   @scala.inline
@@ -261,21 +161,68 @@ object KnownCiEnv {
     __obj.asInstanceOf[KnownCiEnv]
   }
   @scala.inline
-  def VstsEnv(
-    branch: String,
+  def TravisEnv(
     build: String,
+    buildUrl: String,
     commit: String,
     isCi: `true`,
     isPr: Boolean,
-    name: `Visual Studio Team Services`,
+    job: String,
+    jobUrl: String,
+    name: `Travis CI`,
+    prBranch: String,
     root: String,
-    service: vsts,
+    service: travis,
+    slug: String,
+    branch: String = null,
     pr: String = null,
-    prBranch: String = null
+    tag: String = null
   ): KnownCiEnv = {
-    val __obj = js.Dynamic.literal(branch = branch.asInstanceOf[js.Any], build = build.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], isCi = isCi.asInstanceOf[js.Any], isPr = isPr.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(build = build.asInstanceOf[js.Any], buildUrl = buildUrl.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], isCi = isCi.asInstanceOf[js.Any], isPr = isPr.asInstanceOf[js.Any], job = job.asInstanceOf[js.Any], jobUrl = jobUrl.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], prBranch = prBranch.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any])
+    if (branch != null) __obj.updateDynamic("branch")(branch.asInstanceOf[js.Any])
+    if (pr != null) __obj.updateDynamic("pr")(pr.asInstanceOf[js.Any])
+    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
+    __obj.asInstanceOf[KnownCiEnv]
+  }
+  @scala.inline
+  def BuildkiteEnv(
+    branch: String,
+    build: String,
+    buildUrl: String,
+    commit: String,
+    isCi: `true`,
+    isPr: Boolean,
+    name: Buildkite,
+    root: String,
+    service: buildkite_,
+    slug: String,
+    pr: String = null,
+    prBranch: String = null,
+    tag: String = null
+  ): KnownCiEnv = {
+    val __obj = js.Dynamic.literal(branch = branch.asInstanceOf[js.Any], build = build.asInstanceOf[js.Any], buildUrl = buildUrl.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], isCi = isCi.asInstanceOf[js.Any], isPr = isPr.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any])
     if (pr != null) __obj.updateDynamic("pr")(pr.asInstanceOf[js.Any])
     if (prBranch != null) __obj.updateDynamic("prBranch")(prBranch.asInstanceOf[js.Any])
+    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
+    __obj.asInstanceOf[KnownCiEnv]
+  }
+  @scala.inline
+  def GitLabEnv(
+    branch: String,
+    build: String,
+    buildUrl: String,
+    commit: String,
+    isCi: `true`,
+    job: String,
+    jobUrl: String,
+    name: `GitLab CISlashCD`,
+    root: String,
+    service: gitlab,
+    slug: String,
+    tag: String = null
+  ): KnownCiEnv = {
+    val __obj = js.Dynamic.literal(branch = branch.asInstanceOf[js.Any], build = build.asInstanceOf[js.Any], buildUrl = buildUrl.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], isCi = isCi.asInstanceOf[js.Any], job = job.asInstanceOf[js.Any], jobUrl = jobUrl.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any])
+    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[KnownCiEnv]
   }
   @scala.inline
@@ -303,6 +250,26 @@ object KnownCiEnv {
     __obj.asInstanceOf[KnownCiEnv]
   }
   @scala.inline
+  def SemaphoreEnv(
+    build: String,
+    commit: String,
+    isCi: `true`,
+    isPr: Boolean,
+    name: Semaphore,
+    root: String,
+    service: semaphore_,
+    slug: String,
+    branch: String = null,
+    pr: String = null,
+    prBranch: String = null
+  ): KnownCiEnv = {
+    val __obj = js.Dynamic.literal(build = build.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], isCi = isCi.asInstanceOf[js.Any], isPr = isPr.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any])
+    if (branch != null) __obj.updateDynamic("branch")(branch.asInstanceOf[js.Any])
+    if (pr != null) __obj.updateDynamic("pr")(pr.asInstanceOf[js.Any])
+    if (prBranch != null) __obj.updateDynamic("prBranch")(prBranch.asInstanceOf[js.Any])
+    __obj.asInstanceOf[KnownCiEnv]
+  }
+  @scala.inline
   def SailEnv(
     commit: String,
     isCi: `true`,
@@ -320,39 +287,20 @@ object KnownCiEnv {
     __obj.asInstanceOf[KnownCiEnv]
   }
   @scala.inline
-  def BuddyEnv(
-    build: String,
-    buildUrl: String,
-    commit: String,
-    isCi: `true`,
-    isPr: Boolean,
-    name: Buddy,
-    service: buddy_,
-    slug: String,
-    branch: String = null,
-    pr: String = null,
-    tag: String = null
-  ): KnownCiEnv = {
-    val __obj = js.Dynamic.literal(build = build.asInstanceOf[js.Any], buildUrl = buildUrl.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], isCi = isCi.asInstanceOf[js.Any], isPr = isPr.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any])
-    if (branch != null) __obj.updateDynamic("branch")(branch.asInstanceOf[js.Any])
-    if (pr != null) __obj.updateDynamic("pr")(pr.asInstanceOf[js.Any])
-    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
-    __obj.asInstanceOf[KnownCiEnv]
-  }
-  @scala.inline
-  def WerckerEnv(
+  def BitbucketEnv(
     branch: String,
     build: String,
     buildUrl: String,
     commit: String,
     isCi: `true`,
-    name: Wercker,
+    name: `Bitbucket Pipelines`,
     root: String,
-    service: wercker_,
-    slug: String
+    service: bitbucket,
+    slug: String,
+    tag: String = null
   ): KnownCiEnv = {
     val __obj = js.Dynamic.literal(branch = branch.asInstanceOf[js.Any], build = build.asInstanceOf[js.Any], buildUrl = buildUrl.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], isCi = isCi.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any])
-  
+    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[KnownCiEnv]
   }
   @scala.inline
@@ -377,22 +325,115 @@ object KnownCiEnv {
     __obj.asInstanceOf[KnownCiEnv]
   }
   @scala.inline
-  def JenkinsEnv(
+  def TeamCityEnv(
+    build: String,
+    commit: String,
+    isCi: `true`,
+    name: TeamCity,
+    service: teamcity_,
+    slug: String,
+    branch: String = null,
+    root: String = null
+  ): KnownCiEnv = {
+    val __obj = js.Dynamic.literal(build = build.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], isCi = isCi.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any])
+    if (branch != null) __obj.updateDynamic("branch")(branch.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    __obj.asInstanceOf[KnownCiEnv]
+  }
+  @scala.inline
+  def VstsEnv(
+    branch: String,
+    build: String,
+    commit: String,
+    isCi: `true`,
+    isPr: Boolean,
+    name: `Visual Studio Team Services`,
+    root: String,
+    service: vsts,
+    pr: String = null,
+    prBranch: String = null
+  ): KnownCiEnv = {
+    val __obj = js.Dynamic.literal(branch = branch.asInstanceOf[js.Any], build = build.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], isCi = isCi.asInstanceOf[js.Any], isPr = isPr.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any])
+    if (pr != null) __obj.updateDynamic("pr")(pr.asInstanceOf[js.Any])
+    if (prBranch != null) __obj.updateDynamic("prBranch")(prBranch.asInstanceOf[js.Any])
+    __obj.asInstanceOf[KnownCiEnv]
+  }
+  @scala.inline
+  def CodeBuildEnv(
+    branch: String,
+    build: String,
+    buildUrl: String,
+    commit: String,
+    isCi: `true`,
+    name: `AWS CodeBuild`,
+    root: String,
+    service: codebuild
+  ): KnownCiEnv = {
+    val __obj = js.Dynamic.literal(branch = branch.asInstanceOf[js.Any], build = build.asInstanceOf[js.Any], buildUrl = buildUrl.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], isCi = isCi.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[KnownCiEnv]
+  }
+  @scala.inline
+  def CodefreshEnv(
     branch: String,
     build: String,
     buildUrl: String,
     commit: String,
     isCi: `true`,
     isPr: Boolean,
-    name: Jenkins,
+    name: Codefresh,
     root: String,
-    service: jenkins_,
+    service: codefresh_,
+    slug: String,
     pr: String = null,
     prBranch: String = null
   ): KnownCiEnv = {
-    val __obj = js.Dynamic.literal(branch = branch.asInstanceOf[js.Any], build = build.asInstanceOf[js.Any], buildUrl = buildUrl.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], isCi = isCi.asInstanceOf[js.Any], isPr = isPr.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(branch = branch.asInstanceOf[js.Any], build = build.asInstanceOf[js.Any], buildUrl = buildUrl.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], isCi = isCi.asInstanceOf[js.Any], isPr = isPr.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any])
     if (pr != null) __obj.updateDynamic("pr")(pr.asInstanceOf[js.Any])
     if (prBranch != null) __obj.updateDynamic("prBranch")(prBranch.asInstanceOf[js.Any])
+    __obj.asInstanceOf[KnownCiEnv]
+  }
+  @scala.inline
+  def BuddyEnv(
+    build: String,
+    buildUrl: String,
+    commit: String,
+    isCi: `true`,
+    isPr: Boolean,
+    name: Buddy,
+    service: buddy_,
+    slug: String,
+    branch: String = null,
+    pr: String = null,
+    tag: String = null
+  ): KnownCiEnv = {
+    val __obj = js.Dynamic.literal(build = build.asInstanceOf[js.Any], buildUrl = buildUrl.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], isCi = isCi.asInstanceOf[js.Any], isPr = isPr.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any])
+    if (branch != null) __obj.updateDynamic("branch")(branch.asInstanceOf[js.Any])
+    if (pr != null) __obj.updateDynamic("pr")(pr.asInstanceOf[js.Any])
+    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
+    __obj.asInstanceOf[KnownCiEnv]
+  }
+  @scala.inline
+  def CircleCiEnv(
+    build: String,
+    buildUrl: String,
+    commit: String,
+    isCi: `true`,
+    isPr: Boolean,
+    job: String,
+    name: CircleCI,
+    service: circleci_,
+    slug: String,
+    branch: String = null,
+    pr: String = null,
+    prBranch: String = null,
+    tag: String = null
+  ): KnownCiEnv = {
+    val __obj = js.Dynamic.literal(build = build.asInstanceOf[js.Any], buildUrl = buildUrl.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], isCi = isCi.asInstanceOf[js.Any], isPr = isPr.asInstanceOf[js.Any], job = job.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any])
+    if (branch != null) __obj.updateDynamic("branch")(branch.asInstanceOf[js.Any])
+    if (pr != null) __obj.updateDynamic("pr")(pr.asInstanceOf[js.Any])
+    if (prBranch != null) __obj.updateDynamic("prBranch")(prBranch.asInstanceOf[js.Any])
+    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[KnownCiEnv]
   }
   @scala.inline
@@ -437,47 +478,6 @@ object KnownCiEnv {
   ): KnownCiEnv = {
     val __obj = js.Dynamic.literal(branch = branch.asInstanceOf[js.Any], build = build.asInstanceOf[js.Any], buildUrl = buildUrl.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], isCi = isCi.asInstanceOf[js.Any], isPr = isPr.asInstanceOf[js.Any], job = job.asInstanceOf[js.Any], jobUrl = jobUrl.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any])
     if (pr != null) __obj.updateDynamic("pr")(pr.asInstanceOf[js.Any])
-    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
-    __obj.asInstanceOf[KnownCiEnv]
-  }
-  @scala.inline
-  def BuildkiteEnv(
-    branch: String,
-    build: String,
-    buildUrl: String,
-    commit: String,
-    isCi: `true`,
-    isPr: Boolean,
-    name: Buildkite,
-    root: String,
-    service: buildkite_,
-    slug: String,
-    pr: String = null,
-    prBranch: String = null,
-    tag: String = null
-  ): KnownCiEnv = {
-    val __obj = js.Dynamic.literal(branch = branch.asInstanceOf[js.Any], build = build.asInstanceOf[js.Any], buildUrl = buildUrl.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], isCi = isCi.asInstanceOf[js.Any], isPr = isPr.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any])
-    if (pr != null) __obj.updateDynamic("pr")(pr.asInstanceOf[js.Any])
-    if (prBranch != null) __obj.updateDynamic("prBranch")(prBranch.asInstanceOf[js.Any])
-    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
-    __obj.asInstanceOf[KnownCiEnv]
-  }
-  @scala.inline
-  def GitLabEnv(
-    branch: String,
-    build: String,
-    buildUrl: String,
-    commit: String,
-    isCi: `true`,
-    job: String,
-    jobUrl: String,
-    name: `GitLab CISlashCD`,
-    root: String,
-    service: gitlab,
-    slug: String,
-    tag: String = null
-  ): KnownCiEnv = {
-    val __obj = js.Dynamic.literal(branch = branch.asInstanceOf[js.Any], build = build.asInstanceOf[js.Any], buildUrl = buildUrl.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], isCi = isCi.asInstanceOf[js.Any], job = job.asInstanceOf[js.Any], jobUrl = jobUrl.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any])
     if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[KnownCiEnv]
   }

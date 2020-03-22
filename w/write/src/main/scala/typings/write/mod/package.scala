@@ -11,10 +11,10 @@ package object mod {
     js.Any
   ]
   type CreateWriteStreamOptions = typings.std.Extract[
-    /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<write.Fn_Options>[1] */ js.Any, 
+    /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<write.FnCall>[1] */ js.Any, 
     typings.std.Record[java.lang.String, js.Any]
   ]
   type Data = java.lang.String | typings.node.Buffer | typings.std.Uint8Array
-  type Options = (typings.std.Omit[typings.node.fsMod.WriteFileOptions, typings.write.writeStrings.encoding]) with (typings.std.Omit[typings.node.fsMod.MakeDirectoryOptions, typings.write.writeStrings.recursive]) with typings.write.mod.CommonOptions
-  type StreamOptions = (typings.std.Omit[typings.write.mod.CreateWriteStreamOptions, typings.write.writeStrings.encoding]) with (typings.std.Omit[typings.node.fsMod.MakeDirectoryOptions, typings.write.writeStrings.recursive]) with typings.write.mod.CommonOptions
+  type Options = (typings.std.Omit[typings.node.fsMod.WriteFileOptions, typings.write.writeStrings.encoding]) with typings.write.OmitMakeDirectoryOptionsr with typings.write.mod.CommonOptions
+  type StreamOptions = (typings.std.Omit[typings.write.mod.CreateWriteStreamOptions, typings.write.writeStrings.encoding]) with typings.write.OmitMakeDirectoryOptionsr with typings.write.mod.CommonOptions
 }

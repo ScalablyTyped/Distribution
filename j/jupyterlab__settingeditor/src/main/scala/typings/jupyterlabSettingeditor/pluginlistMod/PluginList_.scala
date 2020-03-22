@@ -1,9 +1,9 @@
 package typings.jupyterlabSettingeditor.pluginlistMod
 
-import typings.jupyterlabCoreutils.tokensMod.ISettingRegistry
 import typings.jupyterlabSettingeditor.pluginlistMod.PluginList.IOptions
-import typings.phosphorSignaling.mod.ISignal
-import typings.phosphorWidgets.mod.Widget
+import typings.jupyterlabSettingregistry.tokensMod.ISettingRegistry
+import typings.luminoSignaling.mod.ISignal
+import typings.luminoWidgets.mod.Widget
 import typings.std.Event_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -27,21 +27,13 @@ class PluginList_ protected () extends Widget {
   var _scrollTop: js.Any = js.native
   var _selection: js.Any = js.native
   /**
-    * A signal emitted when a list user interaction happens.
-    */
-  val changed: ISignal[this.type, Unit] = js.native
-  /**
     * The setting registry.
     */
   val registry: ISettingRegistry = js.native
   /**
-    * The selection value of the plugin list.
+    * A signal emitted when a list user interaction happens.
     */
-  val scrollTop: Double = js.native
-  /**
-    * The selection value of the plugin list.
-    */
-  var selection: String = js.native
+  def changed(): ISignal[this.type, Unit] = js.native
   /**
     * Handle the DOM events for the widget.
     *
@@ -53,5 +45,14 @@ class PluginList_ protected () extends Widget {
     * not be called directly by user code.
     */
   def handleEvent(event: Event_): Unit = js.native
+  /**
+    * The selection value of the plugin list.
+    */
+  def scrollTop(): js.UndefOr[Double] = js.native
+  /**
+    * The selection value of the plugin list.
+    */
+  def selection(): String = js.native
+  def selection(selection: String): js.Any = js.native
 }
 

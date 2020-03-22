@@ -21,7 +21,7 @@ trait ScheduledInstancesLaunchSpecification extends js.Object {
   /**
     * The ID of the Amazon Machine Image (AMI).
     */
-  var ImageId: String = js.native
+  var ImageId: typings.awsSdk.ec2Mod.ImageId = js.native
   /**
     * The instance type.
     */
@@ -29,11 +29,11 @@ trait ScheduledInstancesLaunchSpecification extends js.Object {
   /**
     * The ID of the kernel.
     */
-  var KernelId: js.UndefOr[String] = js.native
+  var KernelId: js.UndefOr[typings.awsSdk.ec2Mod.KernelId] = js.native
   /**
     * The name of the key pair.
     */
-  var KeyName: js.UndefOr[String] = js.native
+  var KeyName: js.UndefOr[KeyPairName] = js.native
   /**
     * Enable or disable monitoring for the instances.
     */
@@ -49,7 +49,7 @@ trait ScheduledInstancesLaunchSpecification extends js.Object {
   /**
     * The ID of the RAM disk.
     */
-  var RamdiskId: js.UndefOr[String] = js.native
+  var RamdiskId: js.UndefOr[typings.awsSdk.ec2Mod.RamdiskId] = js.native
   /**
     * The IDs of the security groups.
     */
@@ -57,7 +57,7 @@ trait ScheduledInstancesLaunchSpecification extends js.Object {
   /**
     * The ID of the subnet in which to launch the instances.
     */
-  var SubnetId: js.UndefOr[String] = js.native
+  var SubnetId: js.UndefOr[typings.awsSdk.ec2Mod.SubnetId] = js.native
   /**
     * The base64-encoded MIME user data.
     */
@@ -67,19 +67,19 @@ trait ScheduledInstancesLaunchSpecification extends js.Object {
 object ScheduledInstancesLaunchSpecification {
   @scala.inline
   def apply(
-    ImageId: String,
+    ImageId: ImageId,
     BlockDeviceMappings: ScheduledInstancesBlockDeviceMappingSet = null,
     EbsOptimized: js.UndefOr[scala.Boolean] = js.undefined,
     IamInstanceProfile: ScheduledInstancesIamInstanceProfile = null,
     InstanceType: String = null,
-    KernelId: String = null,
-    KeyName: String = null,
+    KernelId: KernelId = null,
+    KeyName: KeyPairName = null,
     Monitoring: ScheduledInstancesMonitoring = null,
     NetworkInterfaces: ScheduledInstancesNetworkInterfaceSet = null,
     Placement: ScheduledInstancesPlacement = null,
-    RamdiskId: String = null,
+    RamdiskId: RamdiskId = null,
     SecurityGroupIds: ScheduledInstancesSecurityGroupIdSet = null,
-    SubnetId: String = null,
+    SubnetId: SubnetId = null,
     UserData: String = null
   ): ScheduledInstancesLaunchSpecification = {
     val __obj = js.Dynamic.literal(ImageId = ImageId.asInstanceOf[js.Any])

@@ -39,6 +39,15 @@ class Axis protected () extends js.Object {
     */
   def this(chart: Chart_, options: AxisOptions) = this()
   /**
+    * If categories are present for the axis, names are used instead of numbers
+    * for that axis.
+    *
+    * Since Highcharts 3.0, categories can also be extracted by giving each
+    * point a name and setting axis type to `category`. However, if you have
+    * multiple series, best practice remains defining the `categories` array.
+    */
+  val categories: js.Array[String] = js.native
+  /**
     * The Chart that the axis belongs to.
     */
   var chart: Chart_ = js.native
@@ -351,8 +360,8 @@ class Axis protected () extends js.Object {
   def setDataGrouping(): Unit = js.native
   def setDataGrouping(dataGrouping: Boolean): Unit = js.native
   def setDataGrouping(dataGrouping: Boolean, redraw: Boolean): Unit = js.native
-  def setDataGrouping(dataGrouping: PlotSeriesDataGroupingOptions): Unit = js.native
-  def setDataGrouping(dataGrouping: PlotSeriesDataGroupingOptions, redraw: Boolean): Unit = js.native
+  def setDataGrouping(dataGrouping: DataGroupingOptionsObject): Unit = js.native
+  def setDataGrouping(dataGrouping: DataGroupingOptionsObject, redraw: Boolean): Unit = js.native
   /**
     * Set the minimum and maximum of the axes after render time. If the
     * `startOnTick` and `endOnTick` options are true, the minimum and maximum

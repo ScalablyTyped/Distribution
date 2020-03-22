@@ -85,7 +85,7 @@ trait NavigatorYAxisTitleOptions extends js.Object {
     * vector techniques and must be clean text. The Y axis title is disabled by
     * setting the `text` option to `undefined`.
     */
-  var text: js.UndefOr[js.Any] = js.undefined
+  var text: js.UndefOr[String | Null] = js.undefined
   /**
     * (Highstock, Gantt) Alignment of the text, can be `"left"`, `"right"` or
     * `"center"`. Default alignment depends on the title.align:
@@ -143,7 +143,7 @@ object NavigatorYAxisTitleOptions {
     rotation: Int | Double = null,
     skew3d: js.UndefOr[Boolean] = js.undefined,
     style: CSSObject = null,
-    text: js.Any = null,
+    text: String = null,
     textAlign: AlignValue = null,
     useHTML: js.UndefOr[Boolean] = js.undefined,
     x: Int | Double = null,

@@ -1,7 +1,7 @@
 package typings.angularCompiler.compilerFacadeInterfaceMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.angularCompiler.AnonExpressionSelector
+import typings.angularCompiler.AnonSelector
 import typings.angularCompiler.AnonUsesOnChanges
 import typings.std.Map
 import scala.scalajs.js
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 trait R3ComponentMetadataFacade extends R3DirectiveMetadataFacade {
   var animations: js.UndefOr[js.Array[_]] = js.undefined
   var changeDetection: js.UndefOr[ChangeDetectionStrategy] = js.undefined
-  var directives: js.Array[AnonExpressionSelector]
+  var directives: js.Array[AnonSelector]
   var encapsulation: ViewEncapsulation
   var interpolation: js.UndefOr[js.Tuple2[String, String]] = js.undefined
   var pipes: Map[String, _]
@@ -24,7 +24,7 @@ trait R3ComponentMetadataFacade extends R3DirectiveMetadataFacade {
 object R3ComponentMetadataFacade {
   @scala.inline
   def apply(
-    directives: js.Array[AnonExpressionSelector],
+    directives: js.Array[AnonSelector],
     encapsulation: ViewEncapsulation,
     host: StringDictionary[String],
     inputs: js.Array[String],

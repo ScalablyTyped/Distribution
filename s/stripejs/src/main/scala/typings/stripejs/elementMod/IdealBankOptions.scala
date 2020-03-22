@@ -1,7 +1,7 @@
 package typings.stripejs.elementMod
 
-import typings.stripejs.AnonBaseCompleteEmpty
-import typings.stripejs.AnonBaseCompleteEmptyInvalid
+import typings.stripejs.AnonEmpty
+import typings.stripejs.AnonInvalid
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +19,10 @@ trait IdealBankOptions extends BaseOptions {
 object IdealBankOptions {
   @scala.inline
   def apply(
-    classes: AnonBaseCompleteEmpty = null,
+    classes: AnonEmpty = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     hideIcon: js.UndefOr[Boolean] = js.undefined,
-    style: AnonBaseCompleteEmptyInvalid = null,
+    style: AnonInvalid = null,
     value: String = null
   ): IdealBankOptions = {
     val __obj = js.Dynamic.literal()

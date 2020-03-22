@@ -67,6 +67,7 @@ object LinuxConfiguration {
     desktop: js.Any = null,
     detectUpdateChannel: js.UndefOr[Boolean] = js.undefined,
     electronUpdaterCompatibility: String = null,
+    executableArgs: js.Array[String] = null,
     executableName: String = null,
     extraFiles: (js.Array[FileSet | String]) | FileSet | String = null,
     extraResources: (js.Array[FileSet | String]) | FileSet | String = null,
@@ -98,6 +99,7 @@ object LinuxConfiguration {
     if (desktop != null) __obj.updateDynamic("desktop")(desktop.asInstanceOf[js.Any])
     if (!js.isUndefined(detectUpdateChannel)) __obj.updateDynamic("detectUpdateChannel")(detectUpdateChannel.asInstanceOf[js.Any])
     if (electronUpdaterCompatibility != null) __obj.updateDynamic("electronUpdaterCompatibility")(electronUpdaterCompatibility.asInstanceOf[js.Any])
+    if (executableArgs != null) __obj.updateDynamic("executableArgs")(executableArgs.asInstanceOf[js.Any])
     if (executableName != null) __obj.updateDynamic("executableName")(executableName.asInstanceOf[js.Any])
     if (extraFiles != null) __obj.updateDynamic("extraFiles")(extraFiles.asInstanceOf[js.Any])
     if (extraResources != null) __obj.updateDynamic("extraResources")(extraResources.asInstanceOf[js.Any])

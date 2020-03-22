@@ -11,7 +11,6 @@ trait RTCIceCandidate extends js.Object {
   val candidate: java.lang.String
   val component: RTCIceComponent | Null
   val foundation: java.lang.String | Null
-  val ip: java.lang.String | Null
   val port: Double | Null
   val priority: Double | Null
   val protocol: RTCIceProtocol | Null

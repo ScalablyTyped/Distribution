@@ -1,6 +1,6 @@
 package typings.cesium.mod
 
-import typings.cesium.AnonCenterEllipsoid
+import typings.cesium.AnonExtrudedHeight
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("cesium", "CircleOutlineGeometry")
 @js.native
 class CircleOutlineGeometry protected () extends Packable {
-  def this(options: AnonCenterEllipsoid) = this()
+  def this(options: AnonExtrudedHeight) = this()
 }
 
 /* static members */

@@ -3,9 +3,8 @@ package typings.coinbaseCommerceNode.mod
 import typings.coinbaseCommerceNode.AnonBlock
 import typings.coinbaseCommerceNode.AnonContext
 import typings.coinbaseCommerceNode.AnonId
+import typings.coinbaseCommerceNode.PartialRecordCryptoNamest
 import typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.charge
-import typings.std.Partial
-import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +18,7 @@ trait ChargeResource extends BaseCharge {
   /**
     * Set of addresses associated with the charge.
     */
-  var addresses: Partial[Record[CryptoName, String]]
+  var addresses: PartialRecordCryptoNamest
   /**
     * Associated checkout resource.
     */
@@ -78,7 +77,7 @@ trait ChargeResource extends BaseCharge {
 object ChargeResource {
   @scala.inline
   def apply(
-    addresses: Partial[Record[CryptoName, String]],
+    addresses: PartialRecordCryptoNamest,
     code: String,
     created_at: Timestamp,
     description: String,

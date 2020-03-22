@@ -2,12 +2,12 @@ package typings.nodeMysqlWrapper.Mongo
 
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
-import typings.nodeMysqlWrapper.AnonDoc
+import typings.nodeMysqlWrapper.AnonFetch
 import typings.nodeMysqlWrapper.AnonFields
-import typings.nodeMysqlWrapper.AnonFieldsReactive
 import typings.nodeMysqlWrapper.AnonInsertedId
 import typings.nodeMysqlWrapper.AnonMulti
 import typings.nodeMysqlWrapper.AnonMultiBoolean
+import typings.nodeMysqlWrapper.AnonReactive
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,14 +16,14 @@ import scala.scalajs.js.annotation._
 trait Collection[T] extends js.Object {
   def _ensureIndex(indexName: String): Unit = js.native
   def _ensureIndex(indexName: String, options: StringDictionary[js.Any]): Unit = js.native
-  def allow(options: AnonDoc[T]): Boolean = js.native
-  def deny(options: AnonDoc[T]): Boolean = js.native
+  def allow(options: AnonFetch[T]): Boolean = js.native
+  def deny(options: AnonFetch[T]): Boolean = js.native
   def find(): Cursor[T] = js.native
   def find(selector: js.Any): Cursor[T] = js.native
   def find(selector: js.Any, options: AnonFields): Cursor[T] = js.native
   def findOne(): T = js.native
   def findOne(selector: js.Any): T = js.native
-  def findOne(selector: js.Any, options: AnonFieldsReactive): T = js.native
+  def findOne(selector: js.Any, options: AnonReactive): T = js.native
   def insert(doc: T): String = js.native
   def insert(doc: T, callback: js.Function): String = js.native
   def rawCollection(): js.Any = js.native

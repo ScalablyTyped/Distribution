@@ -1,8 +1,8 @@
 package typings.oracleOraclejet.ojmoduleElementMod
 
 import typings.oracleOraclejet.AnonCleanupMode
-import typings.oracleOraclejet.AnonPropNameView
-import typings.oracleOraclejet.AnonPropNameViewModel
+import typings.oracleOraclejet.AnonView
+import typings.oracleOraclejet.AnonViewModel
 import typings.oracleOraclejet.mod.JetElement
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.mod.JetSetPropertyType
@@ -58,7 +58,6 @@ import typings.oracleOraclejet.oracleOraclejetStrings.keyup
 import typings.oracleOraclejet.oracleOraclejetStrings.load
 import typings.oracleOraclejet.oracleOraclejetStrings.loadeddata
 import typings.oracleOraclejet.oracleOraclejetStrings.loadedmetadata
-import typings.oracleOraclejet.oracleOraclejetStrings.loadend
 import typings.oracleOraclejet.oracleOraclejetStrings.loadstart
 import typings.oracleOraclejet.oracleOraclejetStrings.lostpointercapture
 import typings.oracleOraclejet.oracleOraclejetStrings.mousedown
@@ -544,17 +543,6 @@ trait ojModule extends JetElement[ojModuleSettableProperties] {
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_loadend(
-    `type`: loadend,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent[EventTarget], _]
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_loadend(
-    `type`: loadend,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent[EventTarget], _],
-    useCapture: Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
   def addEventListener_loadstart(`type`: loadstart, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event_, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_loadstart(
@@ -1022,9 +1010,9 @@ trait ojModule extends JetElement[ojModuleSettableProperties] {
 @JSImport("@oracle/oraclejet/ojmodule-element", "ojModule")
 @js.native
 object ojModule extends js.Object {
-  type ojTransitionEnd = CustomEvent[AnonPropNameViewModel]
-  type ojTransitionStart = CustomEvent[AnonPropNameViewModel]
-  type ojViewConnected = CustomEvent[AnonPropNameViewModel]
-  type ojViewDisconnected = CustomEvent[AnonPropNameView]
+  type ojTransitionEnd = CustomEvent[AnonViewModel]
+  type ojTransitionStart = CustomEvent[AnonViewModel]
+  type ojViewConnected = CustomEvent[AnonViewModel]
+  type ojViewDisconnected = CustomEvent[AnonView]
 }
 

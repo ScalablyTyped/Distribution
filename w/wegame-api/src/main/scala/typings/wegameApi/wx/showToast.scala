@@ -1,6 +1,6 @@
 package typings.wegameApi.wx
 
-import typings.wegameApi.AnonCompleteDuration
+import typings.wegameApi.AnonTitle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,6 +12,6 @@ object showToast extends js.Object {
   /**
     * 显示消息提示框
     */
-  def apply(param: AnonCompleteDuration): Unit = js.native
+  def apply(param: AnonTitle): Unit = js.native
 }
 

@@ -17,7 +17,9 @@ object pushRulesMod extends js.Object {
     def create(projectId: String, options: BaseRequestOptions): js.Promise[js.Object] = js.native
     def create(projectId: Double): js.Promise[js.Object] = js.native
     def create(projectId: Double, options: BaseRequestOptions): js.Promise[js.Object] = js.native
+    def edit(projectId: String): js.Promise[js.Object] = js.native
     def edit(projectId: String, options: BaseRequestOptions): js.Promise[js.Object] = js.native
+    def edit(projectId: Double): js.Promise[js.Object] = js.native
     def edit(projectId: Double, options: BaseRequestOptions): js.Promise[js.Object] = js.native
     def remove(projectId: String): js.Promise[js.Object] = js.native
     def remove(projectId: String, options: Sudo): js.Promise[js.Object] = js.native

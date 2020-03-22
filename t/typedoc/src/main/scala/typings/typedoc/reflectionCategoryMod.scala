@@ -15,7 +15,6 @@ object reflectionCategoryMod extends js.Object {
     var children: js.Array[Reflection] = js.native
     var getAllChildrenHaveOwnDocument: js.Any = js.native
     var title: String = js.native
-    def toObject(): js.Any = js.native
   }
   
 }

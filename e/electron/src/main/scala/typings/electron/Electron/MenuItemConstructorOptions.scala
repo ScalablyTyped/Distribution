@@ -53,8 +53,10 @@ import scala.scalajs.js.annotation._
 trait MenuItemConstructorOptions extends js.Object {
   var accelerator: js.UndefOr[Accelerator] = js.undefined
   /**
-    * default is true, and when false will prevent the accelerator from triggering the
-    * item if the item is not visible`.
+    * default is `true`, and when `false` will prevent the accelerator from triggering
+    * the item if the item is not visible`.
+    *
+    * @platform darwin
     */
   var acceleratorWorksWhenHidden: js.UndefOr[Boolean] = js.undefined
   /**
@@ -70,7 +72,7 @@ trait MenuItemConstructorOptions extends js.Object {
   var afterGroupContaining: js.UndefOr[js.Array[String]] = js.undefined
   /**
     * Inserts this item before the item with the specified label. If the referenced
-    * item doesn't exist the item will be inserted at the end of the menu. Also
+    * item doesn't exist the item will be inserted at the end of  the menu. Also
     * implies that the menu item in question should be placed in the same “group” as
     * the item.
     */
@@ -82,12 +84,12 @@ trait MenuItemConstructorOptions extends js.Object {
     */
   var beforeGroupContaining: js.UndefOr[js.Array[String]] = js.undefined
   /**
-    * Should only be specified for checkbox or radio type menu items.
+    * Should only be specified for `checkbox` or `radio` type menu items.
     */
   var checked: js.UndefOr[Boolean] = js.undefined
   /**
-    * Will be called with click(menuItem, browserWindow, event) when the menu item is
-    * clicked.
+    * Will be called with `click(menuItem, browserWindow, event)` when the menu item
+    * is clicked.
     */
   var click: js.UndefOr[
     js.Function3[
@@ -111,30 +113,39 @@ trait MenuItemConstructorOptions extends js.Object {
   /**
     * If false, the accelerator won't be registered with the system, but it will still
     * be displayed. Defaults to true.
+    *
+    * @platform linux,win32
     */
   var registerAccelerator: js.UndefOr[Boolean] = js.undefined
   /**
-    * Can be undo, redo, cut, copy, paste, pasteAndMatchStyle, delete, selectAll,
-    * reload, forceReload, toggleDevTools, resetZoom, zoomIn, zoomOut,
-    * togglefullscreen, window, minimize, close, help, about, services, hide,
-    * hideOthers, unhide, quit, startSpeaking, stopSpeaking, close, minimize, zoom,
-    * front, appMenu, fileMenu, editMenu, viewMenu, recentDocuments, toggleTabBar,
-    * selectNextTab, selectPreviousTab, mergeAllWindows, clearRecentDocuments,
-    * moveTabToNewWindow or windowMenu Define the action of the menu item, when
-    * specified the click property will be ignored. See .
+    * Can be `undo`, `redo`, `cut`, `copy`, `paste`, `pasteAndMatchStyle`, `delete`,
+    * `selectAll`, `reload`, `forceReload`, `toggleDevTools`, `resetZoom`, `zoomIn`,
+    * `zoomOut`, `togglefullscreen`, `window`, `minimize`, `close`, `help`, `about`,
+    * `services`, `hide`, `hideOthers`, `unhide`, `quit`, `startSpeaking`,
+    * `stopSpeaking`, `close`, `minimize`, `zoom`, `front`, `appMenu`, `fileMenu`,
+    * `editMenu`, `viewMenu`, `recentDocuments`, `toggleTabBar`, `selectNextTab`,
+    * `selectPreviousTab`, `mergeAllWindows`, `clearRecentDocuments`,
+    * `moveTabToNewWindow` or `windowMenu` - Define the action of the menu item, when
+    * specified the `click` property will be ignored. See roles.
     */
   var role: js.UndefOr[
     undo | redo | cut | copy | paste | pasteAndMatchStyle | delete | selectAll | reload | forceReload | toggleDevTools | resetZoom | zoomIn | zoomOut | togglefullscreen | window | minimize | close | help | about | services | hide | hideOthers | unhide | quit | startSpeaking | stopSpeaking | zoom | front | appMenu | fileMenu | editMenu | viewMenu | recentDocuments | toggleTabBar | selectNextTab | selectPreviousTab | mergeAllWindows | clearRecentDocuments | moveTabToNewWindow | windowMenu
   ] = js.undefined
   var sublabel: js.UndefOr[String] = js.undefined
   /**
-    * Should be specified for submenu type menu items. If submenu is specified, the
-    * type: 'submenu' can be omitted. If the value is not a then it will be
-    * automatically converted to one using Menu.buildFromTemplate.
+    * Should be specified for `submenu` type menu items. If `submenu` is specified,
+    * the `type: 'submenu'` can be omitted. If the value is not a `Menu` then it will
+    * be automatically converted to one using `Menu.buildFromTemplate`.
     */
   var submenu: js.UndefOr[js.Array[MenuItemConstructorOptions] | Menu] = js.undefined
   /**
-    * Can be normal, separator, submenu, checkbox or radio.
+    * Hover text for this menu item.
+    *
+    * @platform darwin
+    */
+  var toolTip: js.UndefOr[String] = js.undefined
+  /**
+    * Can be `normal`, `separator`, `submenu`, `checkbox` or `radio`.
     */
   var `type`: js.UndefOr[normal | separator | submenu | checkbox | radio] = js.undefined
   /**
@@ -162,6 +173,7 @@ object MenuItemConstructorOptions {
     role: undo | redo | cut | copy | paste | pasteAndMatchStyle | delete | selectAll | reload | forceReload | toggleDevTools | resetZoom | zoomIn | zoomOut | togglefullscreen | window | minimize | close | help | about | services | hide | hideOthers | unhide | quit | startSpeaking | stopSpeaking | zoom | front | appMenu | fileMenu | editMenu | viewMenu | recentDocuments | toggleTabBar | selectNextTab | selectPreviousTab | mergeAllWindows | clearRecentDocuments | moveTabToNewWindow | windowMenu = null,
     sublabel: String = null,
     submenu: js.Array[MenuItemConstructorOptions] | Menu = null,
+    toolTip: String = null,
     `type`: normal | separator | submenu | checkbox | radio = null,
     visible: js.UndefOr[Boolean] = js.undefined
   ): MenuItemConstructorOptions = {
@@ -182,6 +194,7 @@ object MenuItemConstructorOptions {
     if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
     if (sublabel != null) __obj.updateDynamic("sublabel")(sublabel.asInstanceOf[js.Any])
     if (submenu != null) __obj.updateDynamic("submenu")(submenu.asInstanceOf[js.Any])
+    if (toolTip != null) __obj.updateDynamic("toolTip")(toolTip.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[MenuItemConstructorOptions]

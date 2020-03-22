@@ -1,7 +1,7 @@
 
 # Scala.js typings for string-length
 
-Typings are for version 3.1.0
+Typings are for version 4.0.0
 
 ## Library description:
 Get the real length of a string - by correctly counting astral symbols and ignoring ansi escape codes

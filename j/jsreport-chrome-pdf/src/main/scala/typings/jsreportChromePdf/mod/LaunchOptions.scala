@@ -1,10 +1,9 @@
 package typings.jsreportChromePdf.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.jsreportChromePdf.AnonDeviceScaleFactor
+import typings.jsreportChromePdf.Partialwidthstringheights
 import typings.jsreportChromePdf.jsreportChromePdfStrings.chrome
 import typings.jsreportChromePdf.jsreportChromePdfStrings.firefox
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +11,7 @@ import scala.scalajs.js.annotation._
 // https://github.com/puppeteer/puppeteer/blob/master/docs/api.md#puppeteerlaunchoptions
 trait LaunchOptions extends js.Object {
   var args: js.Array[String]
-  var defaultViewport: Partial[AnonDeviceScaleFactor]
+  var defaultViewport: Partialwidthstringheights
   var devtools: Boolean
   var dumpio: Boolean
   var env: StringDictionary[String]
@@ -35,7 +34,7 @@ object LaunchOptions {
   @scala.inline
   def apply(
     args: js.Array[String],
-    defaultViewport: Partial[AnonDeviceScaleFactor],
+    defaultViewport: Partialwidthstringheights,
     devtools: Boolean,
     dumpio: Boolean,
     env: StringDictionary[String],

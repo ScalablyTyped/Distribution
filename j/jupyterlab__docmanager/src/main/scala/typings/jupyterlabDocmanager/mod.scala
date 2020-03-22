@@ -2,7 +2,7 @@ package typings.jupyterlabDocmanager
 
 import typings.jupyterlabDocmanager.managerMod.DocumentManager.IOptions
 import typings.jupyterlabServices.contentsMod.Contents.IModel
-import typings.phosphorCoreutils.mod.Token
+import typings.luminoCoreutils.mod.Token
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

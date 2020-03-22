@@ -15,7 +15,7 @@ object andMod extends js.Object {
   def default(fn1: Double): js.Function1[/* val2 */ js.Any, Boolean] = js.native
   def default(fn1: Double, val2: js.Any): Boolean = js.native
   def default(fn1: Null, val2: js.Any): Boolean = js.native
-  def default[T /* <: AnonA */](fn1: T): js.Function1[/* val2 */ js.Any, Boolean] = js.native
-  def default[T /* <: AnonA */](fn1: T, val2: js.Any): Boolean = js.native
+  def default[T /* <: AnonAnd */](fn1: T): js.Function1[/* val2 */ js.Any, Boolean] = js.native
+  def default[T /* <: AnonAnd */](fn1: T, val2: js.Any): Boolean = js.native
 }
 

@@ -1,12 +1,12 @@
 package typings.jupyterlabRendermime.outputmodelMod
 
-import typings.jupyterlabCoreutils.nbformatMod.nbformat.ExecutionCount
-import typings.jupyterlabCoreutils.nbformatMod.nbformat.IOutput
+import typings.jupyterlabNbformat.mod.ExecutionCount
+import typings.jupyterlabNbformat.mod.IOutput
 import typings.jupyterlabRendermime.outputmodelMod.IOutputModel.IOptions
 import typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.IMimeModel.ISetDataOptions
-import typings.phosphorCoreutils.jsonMod.JSONObject
-import typings.phosphorCoreutils.jsonMod.ReadonlyJSONObject
-import typings.phosphorSignaling.mod.ISignal
+import typings.luminoCoreutils.jsonMod.PartialJSONObject
+import typings.luminoCoreutils.jsonMod.ReadonlyPartialJSONObject
+import typings.luminoSignaling.mod.ISignal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,7 +37,7 @@ class OutputModel protected () extends IOutputModel {
     * The data associated with the model.
     */
   /* CompleteClass */
-  override val data: ReadonlyJSONObject = js.native
+  override val data: ReadonlyPartialJSONObject = js.native
   /**
     * The execution count of the model.
     */
@@ -50,7 +50,7 @@ class OutputModel protected () extends IOutputModel {
     * that stores a URI fragment identifier for the MIME resource.
     */
   /* CompleteClass */
-  override val metadata: ReadonlyJSONObject = js.native
+  override val metadata: ReadonlyPartialJSONObject = js.native
   /**
     * Whether the data in the model is trusted.
     */
@@ -62,10 +62,25 @@ class OutputModel protected () extends IOutputModel {
   /* CompleteClass */
   override val `type`: String = js.native
   /**
+    * A signal emitted when the output model changes.
+    */
+  @JSName("changed")
+  def changed_MOutputModel(): ISignal[this.type, Unit] = js.native
+  /**
+    * The data associated with the model.
+    */
+  @JSName("data")
+  def data_MOutputModel(): ReadonlyPartialJSONObject = js.native
+  /**
     * Dispose of the resources used by the output model.
     */
   /* CompleteClass */
   override def dispose(): Unit = js.native
+  /**
+    * The metadata associated with the model.
+    */
+  @JSName("metadata")
+  def metadata_MOutputModel(): ReadonlyPartialJSONObject = js.native
   /**
     * Set the data associated with the model.
     *
@@ -93,7 +108,7 @@ object OutputModel extends js.Object {
     *
     * @returns - The data for the payload.
     */
-  def getData(output: IOutput): JSONObject = js.native
+  def getData(output: IOutput): PartialJSONObject = js.native
   /**
     * Get the metadata from an output message.
     *
@@ -101,6 +116,6 @@ object OutputModel extends js.Object {
     *
     * @returns - The metadata for the payload.
     */
-  def getMetadata(output: IOutput): JSONObject = js.native
+  def getMetadata(output: IOutput): PartialJSONObject = js.native
 }
 

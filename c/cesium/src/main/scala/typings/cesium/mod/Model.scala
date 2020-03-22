@@ -1,7 +1,7 @@
 package typings.cesium.mod
 
 import typings.cesium.AnonAllowPicking
-import typings.cesium.AnonAllowPickingAsynchronous
+import typings.cesium.AnonAsynchronous
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,6 +37,6 @@ class Model () extends js.Object {
 @JSImport("cesium", "Model")
 @js.native
 object Model extends js.Object {
-  def fromGltf(options: AnonAllowPickingAsynchronous): Model = js.native
+  def fromGltf(options: AnonAsynchronous): Model = js.native
 }
 

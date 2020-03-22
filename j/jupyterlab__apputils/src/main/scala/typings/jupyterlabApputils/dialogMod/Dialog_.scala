@@ -2,7 +2,7 @@ package typings.jupyterlabApputils.dialogMod
 
 import typings.jupyterlabApputils.dialogMod.Dialog.IOptions
 import typings.jupyterlabApputils.dialogMod.Dialog.IResult
-import typings.phosphorWidgets.mod.Widget
+import typings.luminoWidgets.mod.Widget
 import typings.std.Event_
 import typings.std.FocusEvent
 import typings.std.KeyboardEvent

@@ -1,11 +1,11 @@
 package typings.history.mod
 
-import typings.history.FnCurrentLocation
-import typings.history.FnLocation
-import typings.history.FnLv
-import typings.history.FnOptions
-import typings.history.FnOptionsHashHistoryBuildOptions
-import typings.history.FnOptionsLocationState
+import typings.history.Fn0
+import typings.history.FnCall
+import typings.history.FnCallLocation
+import typings.history.FnCallLvRv
+import typings.history.FnCallOptions
+import typings.history.FnCallPathStateKeyCurrentLocation
 import typings.history.createBrowserHistoryMod.BrowserHistoryBuildOptions
 import typings.history.createHashHistoryMod.HashHistoryBuildOptions
 import typings.history.createMemoryHistoryMod.MemoryHistory
@@ -17,17 +17,17 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Module extends js.Object {
   @JSName("createBrowserHistory")
-  var createBrowserHistory_Original: FnOptions = js.native
+  var createBrowserHistory_Original: FnCall = js.native
   @JSName("createHashHistory")
-  var createHashHistory_Original: FnOptionsHashHistoryBuildOptions = js.native
+  var createHashHistory_Original: FnCallOptions = js.native
   @JSName("createLocation")
-  var createLocation_Original: FnCurrentLocation = js.native
+  var createLocation_Original: FnCallPathStateKeyCurrentLocation = js.native
   @JSName("createMemoryHistory")
-  var createMemoryHistory_Original: FnOptionsLocationState = js.native
+  var createMemoryHistory_Original: Fn0 = js.native
   @JSName("createPath")
-  var createPath_Original: FnLocation = js.native
+  var createPath_Original: FnCallLocation = js.native
   @JSName("locationsAreEqual")
-  var locationsAreEqual_Original: FnLv = js.native
+  var locationsAreEqual_Original: FnCallLvRv = js.native
   @JSName("parsePath")
   var parsePath_Original: js.Function1[/* path */ Path, Location[LocationState]] = js.native
   def createBrowserHistory[S](): History[S] = js.native

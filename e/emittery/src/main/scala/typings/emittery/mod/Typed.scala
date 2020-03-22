@@ -1,28 +1,24 @@
 package typings.emittery.mod
 
+import typings.std.AsyncIterableIterator
 import typings.std.Extract
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-	 * Async event emitter.
-	 *
-	 * Must list supported events and the data type they emit, if any.
-	 *
-	 * For example:
-	 *
-	 * ```ts
-	 * import Emittery = require('emittery');
-	 *
-	 * const ee = new Emittery.Typed<{value: string}, 'open' | 'close'>();
-	 *
-	 * ee.emit('open');
-	 * ee.emit('value', 'foo\n');
-	 * ee.emit('value', 1); // TS compilation error
-	 * ee.emit('end'); // TS compilation error
-	 * ```
-	 */
+	Async event emitter.
+	You must list supported events and the data type they emit, if any.
+	@example
+	```
+	import Emittery = require('emittery');
+	const emitter = new Emittery.Typed<{value: string}, 'open' | 'close'>();
+	emitter.emit('open');
+	emitter.emit('value', 'foo\n');
+	emitter.emit('value', 1); // TS compilation error
+	emitter.emit('end'); // TS compilation error
+	```
+	*/
 @JSImport("emittery", "Typed")
 @js.native
 class Typed[EventDataMap /* <: Events */, EmptyEvents /* <: String */] () extends Emittery {
@@ -36,20 +32,23 @@ class Typed[EventDataMap /* <: Events */, EmptyEvents /* <: String */] () extend
     eventName: Name,
     eventData: /* import warning: importer.ImportType#apply Failed type conversion: EventDataMap[Name] */ js.Any
   ): js.Promise[Unit] = js.native
-  def off[Name /* <: EmptyEvents */](eventName: Name, listener: js.Function0[_]): Unit = js.native
+  def events[Name /* <: Extract[String, String] */](eventName: Name): AsyncIterableIterator[
+    /* import warning: importer.ImportType#apply Failed type conversion: EventDataMap[Name] */ js.Any
+  ] = js.native
+  def off[Name /* <: EmptyEvents */](eventName: Name, listener: js.Function0[Unit]): Unit = js.native
   def off[Name /* <: Extract[String, String] */](
     eventName: Name,
     listener: js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: EventDataMap[Name] */ /* eventData */ js.Any, 
-      _
+      Unit
     ]
   ): Unit = js.native
-  def on[Name /* <: EmptyEvents */](eventName: Name, listener: js.Function0[_]): UnsubscribeFn = js.native
+  def on[Name /* <: EmptyEvents */](eventName: Name, listener: js.Function0[Unit]): UnsubscribeFn = js.native
   def on[Name /* <: Extract[String, String] */](
     eventName: Name,
     listener: js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: EventDataMap[Name] */ /* eventData */ js.Any, 
-      _
+      Unit
     ]
   ): UnsubscribeFn = js.native
   def once[Name /* <: Extract[String, String] */](eventName: Name): js.Promise[

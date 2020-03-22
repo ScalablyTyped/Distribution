@@ -1,7 +1,7 @@
 package typings.croppie.mod
 
 import typings.croppie.AnonHeight
-import typings.croppie.AnonHeightType
+import typings.croppie.AnonType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ trait CroppieOptions extends js.Object {
   var enforceBoundary: js.UndefOr[Boolean] = js.undefined
   var mouseWheelZoom: js.UndefOr[Boolean] = js.undefined
   var showZoomer: js.UndefOr[Boolean] = js.undefined
-  var viewport: js.UndefOr[AnonHeightType] = js.undefined
+  var viewport: js.UndefOr[AnonType] = js.undefined
 }
 
 object CroppieOptions {
@@ -29,7 +29,7 @@ object CroppieOptions {
     enforceBoundary: js.UndefOr[Boolean] = js.undefined,
     mouseWheelZoom: js.UndefOr[Boolean] = js.undefined,
     showZoomer: js.UndefOr[Boolean] = js.undefined,
-    viewport: AnonHeightType = null
+    viewport: AnonType = null
   ): CroppieOptions = {
     val __obj = js.Dynamic.literal()
     if (boundary != null) __obj.updateDynamic("boundary")(boundary.asInstanceOf[js.Any])

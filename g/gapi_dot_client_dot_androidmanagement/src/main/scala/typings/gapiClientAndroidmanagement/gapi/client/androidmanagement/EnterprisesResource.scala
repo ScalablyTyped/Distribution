@@ -1,9 +1,9 @@
 package typings.gapiClientAndroidmanagement.gapi.client.androidmanagement
 
 import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientAndroidmanagement.AnonAccesstokenAlt
-import typings.gapiClientAndroidmanagement.AnonAccesstokenAltBearertokenCallbackEnterpriseToken
-import typings.gapiClientAndroidmanagement.AnonAccesstokenAltBearertokenCallbackFields
+import typings.gapiClientAndroidmanagement.AnonAlt
+import typings.gapiClientAndroidmanagement.AnonEnterpriseToken
+import typings.gapiClientAndroidmanagement.AnonFields
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,22 +15,22 @@ trait EnterprisesResource extends js.Object {
   var policies: PoliciesResource
   var webTokens: WebTokensResource
   /** Creates an enterprise by completing the enterprise signup flow. */
-  def create(request: AnonAccesstokenAltBearertokenCallbackEnterpriseToken): Request_[Enterprise]
+  def create(request: AnonEnterpriseToken): Request_[Enterprise]
   /** Gets an enterprise. */
-  def get(request: AnonAccesstokenAlt): Request_[Enterprise]
+  def get(request: AnonAlt): Request_[Enterprise]
   /** Updates an enterprise. */
-  def patch(request: AnonAccesstokenAltBearertokenCallbackFields): Request_[Enterprise]
+  def patch(request: AnonFields): Request_[Enterprise]
 }
 
 object EnterprisesResource {
   @scala.inline
   def apply(
     applications: ApplicationsResource,
-    create: AnonAccesstokenAltBearertokenCallbackEnterpriseToken => Request_[Enterprise],
+    create: AnonEnterpriseToken => Request_[Enterprise],
     devices: DevicesResource,
     enrollmentTokens: EnrollmentTokensResource,
-    get: AnonAccesstokenAlt => Request_[Enterprise],
-    patch: AnonAccesstokenAltBearertokenCallbackFields => Request_[Enterprise],
+    get: AnonAlt => Request_[Enterprise],
+    patch: AnonFields => Request_[Enterprise],
     policies: PoliciesResource,
     webTokens: WebTokensResource
   ): EnterprisesResource = {

@@ -1,10 +1,10 @@
 package typings.mcustomscrollbar.MCustomScrollbar
 
 import typings.mcustomscrollbar.AnonAlwaysTriggerOffsets
-import typings.mcustomscrollbar.AnonAuto
-import typings.mcustomscrollbar.AnonAutoAutoExpandHorizontalScroll
-import typings.mcustomscrollbar.AnonAutoEnable
-import typings.mcustomscrollbar.AnonAutoEnableScrollAmount
+import typings.mcustomscrollbar.AnonAutoExpandHorizontalScroll
+import typings.mcustomscrollbar.AnonAxis
+import typings.mcustomscrollbar.AnonEnable
+import typings.mcustomscrollbar.AnonScrollAmount
 import typings.mcustomscrollbar.mcustomscrollbarStrings.inside
 import typings.mcustomscrollbar.mcustomscrollbarStrings.outside
 import typings.mcustomscrollbar.mcustomscrollbarStrings.x
@@ -15,7 +15,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CustomScrollbarOptions extends js.Object {
-  var advanced: js.UndefOr[AnonAutoAutoExpandHorizontalScroll] = js.undefined
+  var advanced: js.UndefOr[AnonAutoExpandHorizontalScroll] = js.undefined
   /**
     * Always keep scrollbar(s) visible, even when there’s nothing to scroll.
     * 0 – disable (default)
@@ -57,7 +57,7 @@ trait CustomScrollbarOptions extends js.Object {
   /**
     * Keyboard support 
     */
-  var keyboard: js.UndefOr[AnonAutoEnable] = js.undefined
+  var keyboard: js.UndefOr[AnonEnable] = js.undefined
   /**
     * Enable or disable applying scrollbar(s) on all elements matching the current selector, now and in the future.
     * Set live: true when you need to add scrollbar(s) on elements that do not yet exist in the page. 
@@ -73,12 +73,12 @@ trait CustomScrollbarOptions extends js.Object {
   /**
     * Mouse wheel support
     */
-  var mouseWheel: js.UndefOr[AnonAuto] = js.undefined
+  var mouseWheel: js.UndefOr[AnonAxis] = js.undefined
   /**
     * Mouse wheel scrolling pixels amount, value in pixels (integer) or "auto" (script calculates and sets pixels amount according to content length)
     */
   var mouseWheelPixels: js.UndefOr[js.Any] = js.undefined
-  var scrollButtons: js.UndefOr[AnonAutoEnableScrollAmount] = js.undefined
+  var scrollButtons: js.UndefOr[AnonScrollAmount] = js.undefined
   /**
     * Scrolling inertia (easing), value in milliseconds (0 for no scrolling inertia)
     */
@@ -131,7 +131,7 @@ trait CustomScrollbarOptions extends js.Object {
 object CustomScrollbarOptions {
   @scala.inline
   def apply(
-    advanced: AnonAutoAutoExpandHorizontalScroll = null,
+    advanced: AnonAutoExpandHorizontalScroll = null,
     alwaysShowScrollbar: Int | Double = null,
     autoDraggerLength: js.UndefOr[Boolean] = js.undefined,
     autoExpandScrollbar: js.UndefOr[Boolean] = js.undefined,
@@ -140,12 +140,12 @@ object CustomScrollbarOptions {
     callbacks: AnonAlwaysTriggerOffsets = null,
     contentTouchScroll: Boolean | Double = null,
     documentTouchScroll: js.UndefOr[Boolean] = js.undefined,
-    keyboard: AnonAutoEnable = null,
+    keyboard: AnonEnable = null,
     live: String | Boolean = null,
     liveSelector: String = null,
-    mouseWheel: AnonAuto = null,
+    mouseWheel: AnonAxis = null,
     mouseWheelPixels: js.Any = null,
-    scrollButtons: AnonAutoEnableScrollAmount = null,
+    scrollButtons: AnonScrollAmount = null,
     scrollInertia: Int | Double = null,
     scrollbarPosition: inside | outside = null,
     setHeight: Boolean | Double | String = null,

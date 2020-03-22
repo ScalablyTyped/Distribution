@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object utilsHttpMod extends js.Object {
   val PROXY_ENVIRONMENT_VARIABLES: js.Array[String] = js.native
-  def createRequest(method: HttpMethod, url: String, hasProxySsl: CreateRequestOptions): js.Promise[AnonReqSuperAgentRequest1305225833] = js.native
-  def download(req: SuperAgentRequest, ws: WritableStream, hasProgress: AnonLoaded): js.Promise[Unit] = js.native
+  def createRequest(method: HttpMethod, url: String, hasProxySsl: CreateRequestOptions): js.Promise[Anon0] = js.native
+  def download(req: SuperAgentRequest, ws: WritableStream, hasProgress: AnonProgress): js.Promise[Unit] = js.native
   type SuperAgentRequest = typings.superagent.mod.SuperAgentRequest
 }
 

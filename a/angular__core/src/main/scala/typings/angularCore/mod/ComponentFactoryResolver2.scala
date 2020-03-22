@@ -1,0 +1,11 @@
+package typings.angularCore.mod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait ComponentFactoryResolver2 extends ComponentFactoryResolver {
+  var ngModule: js.UndefOr[js.Any] = js.native
+}
+

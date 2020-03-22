@@ -1,0 +1,45 @@
+package typings.algoliaClientSearch.mod
+
+import typings.algoliaClientSearch.AnonObjectID
+import typings.algoliaClientSearch.ConsequenceParamsPickSear
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Consequence extends js.Object {
+  /**
+    * Objects to hide from hits.
+    */
+  val hide: js.UndefOr[js.Array[AnonObjectID]] = js.undefined
+  /**
+    * Additional search parameters. Any valid search parameter is allowed.
+    */
+  val params: js.UndefOr[ConsequenceParamsPickSear] = js.undefined
+  /**
+    * Objects to promote as hits.
+    */
+  val promote: js.UndefOr[js.Array[ConsequencePromote]] = js.undefined
+  /**
+    * Custom JSON object that will be appended to the userData array in the response.
+    * This object is not interpreted by the API. It is limited to 1kB of minified JSON.
+    */
+  val userData: js.UndefOr[js.Any] = js.undefined
+}
+
+object Consequence {
+  @scala.inline
+  def apply(
+    hide: js.Array[AnonObjectID] = null,
+    params: ConsequenceParamsPickSear = null,
+    promote: js.Array[ConsequencePromote] = null,
+    userData: js.Any = null
+  ): Consequence = {
+    val __obj = js.Dynamic.literal()
+    if (hide != null) __obj.updateDynamic("hide")(hide.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
+    if (promote != null) __obj.updateDynamic("promote")(promote.asInstanceOf[js.Any])
+    if (userData != null) __obj.updateDynamic("userData")(userData.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Consequence]
+  }
+}
+

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait NavigationAnnotationsControlPointOptions extends js.Object {
   var height: js.UndefOr[Double] = js.undefined
-  var positioner: js.UndefOr[js.Any] = js.undefined
+  var positioner: js.UndefOr[js.Object] = js.undefined
   var style: js.UndefOr[NavigationAnnotationsControlPointStyleOptions] = js.undefined
   var symbol: js.UndefOr[String] = js.undefined
   var visible: js.UndefOr[Boolean] = js.undefined
@@ -17,7 +17,7 @@ object NavigationAnnotationsControlPointOptions {
   @scala.inline
   def apply(
     height: Int | Double = null,
-    positioner: js.Any = null,
+    positioner: js.Object = null,
     style: NavigationAnnotationsControlPointStyleOptions = null,
     symbol: String = null,
     visible: js.UndefOr[Boolean] = js.undefined,

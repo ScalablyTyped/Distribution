@@ -1,7 +1,7 @@
 
 # Scala.js typings for decamelize
 
-Typings are for version 3.2.0
+Typings are for version 4.0.0
 
 ## Library description:
 Convert a camelized string into a lowercased one with a custom separator: unicornRainbow → unicorn_rainbow

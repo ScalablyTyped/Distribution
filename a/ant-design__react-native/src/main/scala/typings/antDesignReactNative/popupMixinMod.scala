@@ -15,7 +15,7 @@ object popupMixinMod extends js.Object {
       /* hasGetContentHideOnDismissOnOk */ js.Any, 
       Element
     ],
-    platformProps: AnonActionTextActiveOpacityActionTextUnderlayColor
-  ): AnonContextType = js.native
+    platformProps: AnonActionTextUnderlayColor
+  ): AnonDefaultProps = js.native
 }
 

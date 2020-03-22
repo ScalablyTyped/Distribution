@@ -8,5 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class NgModuleFactory[T] protected () extends NgModuleFactory2[T] {
   def this(moduleType: Type[T]) = this()
+  @JSName("moduleType")
+  var moduleType_FNgModuleFactory: Type[T] = js.native
 }
 

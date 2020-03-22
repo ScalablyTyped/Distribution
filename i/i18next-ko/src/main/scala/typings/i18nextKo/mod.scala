@@ -14,6 +14,6 @@ object mod extends js.Object {
   def init(resourceStore: i18nextkoResourceStore, language: String, ko: KnockoutStatic): Unit = js.native
   def setLanguage(language: String): Unit = js.native
   def t(key: String): KnockoutComputed[String] = js.native
-  type i18nextkoResourceStore = StringDictionary[AnonKey]
+  type i18nextkoResourceStore = StringDictionary[AnonTranslation]
 }
 

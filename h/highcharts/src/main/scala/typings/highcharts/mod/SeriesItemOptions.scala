@@ -8,7 +8,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.highcharts.mod.SeriesOptions because var conflicts: zIndex. Inlined id, index, legendIndex, mapData, name, stack, treemap, `type`, xAxis, yAxis */ trait SeriesItemOptions
+- typings.highcharts.mod.SeriesOptions because var conflicts: zIndex. Inlined id, index, legendIndex, mapData, name, stack, `type`, xAxis, yAxis */ trait SeriesItemOptions
   extends PlotItemOptions
      with SeriesOptionsType {
   /**
@@ -25,7 +25,7 @@ import scala.scalajs.js.annotation._
     * not available. (see online documentation for example)
     */
   var data: js.UndefOr[
-    js.Array[Double | (js.Tuple2[String, Double | Null]) | Null | SeriesItemDataOptions]
+    js.Array[Double | (js.Tuple2[String, Double | Null]) | Null | PointOptionsObject]
   ] = js.undefined
   /**
     * Not available
@@ -67,7 +67,6 @@ import scala.scalajs.js.annotation._
     * Not available
     */
   var stack: js.UndefOr[Double | String] = js.undefined
-  var treemap: js.UndefOr[SeriesTreemapOptions] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) This property is only in
     * TypeScript non-optional and might be `undefined` in series objects from
@@ -88,10 +87,10 @@ object SeriesItemOptions {
   @scala.inline
   def apply(
     `type`: String | item,
-    accessibility: js.Object | PlotItemAccessibilityOptions = null,
+    accessibility: SeriesAccessibilityOptionsObject = null,
     allAreas: js.UndefOr[Boolean] = js.undefined,
     allowPointSelect: js.UndefOr[Boolean] = js.undefined,
-    animation: Boolean | AnimationOptionsObject | PlotItemAnimationOptions = null,
+    animation: Boolean | AnimationOptionsObject = null,
     boostBlending: OptionsBoostBlendingValue = null,
     center: js.Tuple2[Double | String | Null, Double | String | Null] = null,
     className: String = null,
@@ -104,17 +103,17 @@ object SeriesItemOptions {
     compare: String = null,
     compareBase: `0` | `100` = null,
     compareStart: js.UndefOr[Boolean] = js.undefined,
-    connectors: PlotItemConnectorsOptions = null,
+    connectors: SeriesConnectorsOptionsObject = null,
     cursor: String | CursorValue = null,
-    data: js.Array[Double | (js.Tuple2[String, Double | Null]) | Null | SeriesItemDataOptions] = null,
-    dataGrouping: PlotItemDataGroupingOptions = null,
-    dataLabels: SeriesPieDataLabelsOptionsObject = null,
+    data: js.Array[Double | (js.Tuple2[String, Double | Null]) | Null | PointOptionsObject] = null,
+    dataGrouping: DataGroupingOptionsObject = null,
+    dataLabels: SeriesPieDataLabelsOptionsObject | js.Array[SeriesPieDataLabelsOptionsObject] = null,
     dataParser: js.UndefOr[scala.Nothing] = js.undefined,
     dataURL: js.UndefOr[scala.Nothing] = js.undefined,
     description: String = null,
     enableMouseTracking: js.UndefOr[Boolean] = js.undefined,
     endAngle: Int | Double = null,
-    events: PlotItemEventsOptions = null,
+    events: SeriesEventsOptionsObject = null,
     fillColor: ColorString | GradientColorObject | PatternObject = null,
     gapSize: Int | Double = null,
     gapUnit: OptionsGapUnitValue = null,
@@ -126,18 +125,18 @@ object SeriesItemOptions {
     itemPadding: Int | Double = null,
     joinBy: String | js.Array[String] = null,
     keys: js.Array[String] = null,
-    lastPrice: PlotItemLastPriceOptions = null,
-    lastVisiblePrice: PlotItemLastVisiblePriceOptions = null,
+    lastPrice: SeriesLastPriceOptionsObject = null,
+    lastVisiblePrice: SeriesLastVisiblePriceOptionsObject = null,
     layout: String = null,
     legendIndex: Int | Double = null,
     linkedTo: String = null,
     mapData: js.Array[SeriesMapDataOptions] | js.Any = null,
-    marker: PlotItemMarkerOptions = null,
+    marker: PointMarkerOptionsObject = null,
     minSize: Double | String = null,
     name: String = null,
     navigatorOptions: PlotSeriesOptions = null,
     opacity: Int | Double = null,
-    point: PlotItemPointOptions = null,
+    point: PlotSeriesPointOptions = null,
     pointDescriptionFormatter: js.Function = null,
     pointRange: Int | Double = null,
     rows: Int | Double = null,
@@ -149,10 +148,9 @@ object SeriesItemOptions {
     skipKeyboardNavigation: js.UndefOr[Boolean] = js.undefined,
     stack: Double | scala.Nothing | String = null,
     startAngle: Int | Double = null,
-    states: PlotItemStatesOptions = null,
+    states: SeriesStatesOptionsObject = null,
     stickyTracking: js.UndefOr[Boolean] = js.undefined,
-    tooltip: PlotItemTooltipOptions = null,
-    treemap: SeriesTreemapOptions = null,
+    tooltip: SeriesTooltipOptionsObject = null,
     useOhlcData: js.UndefOr[Boolean] = js.undefined,
     visible: js.UndefOr[Boolean] = js.undefined,
     xAxis: Double | scala.Nothing | String = null,
@@ -225,7 +223,6 @@ object SeriesItemOptions {
     if (states != null) __obj.updateDynamic("states")(states.asInstanceOf[js.Any])
     if (!js.isUndefined(stickyTracking)) __obj.updateDynamic("stickyTracking")(stickyTracking.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (treemap != null) __obj.updateDynamic("treemap")(treemap.asInstanceOf[js.Any])
     if (!js.isUndefined(useOhlcData)) __obj.updateDynamic("useOhlcData")(useOhlcData.asInstanceOf[js.Any])
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     if (xAxis != null) __obj.updateDynamic("xAxis")(xAxis.asInstanceOf[js.Any])

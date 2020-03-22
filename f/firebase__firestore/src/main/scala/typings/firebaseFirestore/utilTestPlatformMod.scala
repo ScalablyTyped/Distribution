@@ -2,7 +2,6 @@ package typings.firebaseFirestore
 
 import typings.firebaseFirestore.coreDatabaseInfoMod.DatabaseId
 import typings.firebaseFirestore.coreDatabaseInfoMod.DatabaseInfo
-import typings.firebaseFirestore.coreTypesMod.ProtoByteString
 import typings.firebaseFirestore.platformPlatformMod.Platform
 import typings.firebaseFirestore.remoteConnectionMod.Connection
 import typings.firebaseFirestore.remoteConnectivityMonitorMod.ConnectivityMonitor
@@ -67,8 +66,6 @@ object utilTestPlatformMod extends js.Object {
     /** The Platform's 'document' implementation or null if not available. */
     /* CompleteClass */
     override val document: Document_ | Null = js.native
-    /* CompleteClass */
-    override val emptyByteString: ProtoByteString = js.native
     val mockDocument: FakeDocument | Null = js.native
     val mockStorage: js.Any = js.native
     val mockWindow: FakeWindow | Null = js.native
@@ -85,8 +82,6 @@ object utilTestPlatformMod extends js.Object {
     override def btoa(raw: String): String = js.native
     @JSName("document")
     def document_MTestPlatform(): Document_ | Null = js.native
-    @JSName("emptyByteString")
-    def emptyByteString_MTestPlatform(): ProtoByteString = js.native
     /** Formats an object as a JSON string, suitable for logging. */
     /* CompleteClass */
     override def formatJSON(value: js.Any): String = js.native

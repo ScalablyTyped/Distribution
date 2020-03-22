@@ -1,7 +1,8 @@
 package typings.jupyterlabCodeeditor.editorMod.CodeEditor
 
+import typings.jupyterlabCodeeditor.PartialIConfig
+import typings.jupyterlabCodeeditor.PartialISelectionStyle
 import typings.std.HTMLElement
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +14,7 @@ trait IOptions extends js.Object {
   /**
     * The configuration options for the editor.
     */
-  var config: js.UndefOr[Partial[IConfig]] = js.undefined
+  var config: js.UndefOr[PartialIConfig] = js.undefined
   /**
     * The host widget used by the editor.
     */
@@ -25,7 +26,7 @@ trait IOptions extends js.Object {
   /**
     * The default selection style for the editor.
     */
-  var selectionStyle: js.UndefOr[Partial[ISelectionStyle]] = js.undefined
+  var selectionStyle: js.UndefOr[PartialISelectionStyle] = js.undefined
   /**
     * The desired uuid for the editor.
     */
@@ -37,8 +38,8 @@ object IOptions {
   def apply(
     host: HTMLElement,
     model: IModel,
-    config: Partial[IConfig] = null,
-    selectionStyle: Partial[ISelectionStyle] = null,
+    config: PartialIConfig = null,
+    selectionStyle: PartialISelectionStyle = null,
     uuid: String = null
   ): IOptions = {
     val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], model = model.asInstanceOf[js.Any])

@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation._
 abstract class ControlContainer () extends AbstractControlDirective {
   /**
     * @description
-    * The top-level form directive for the control.
-    */
-  val formDirective: Form | Null = js.native
-  /**
-    * @description
     * The name for the control
     */
-  var name: String = js.native
+  var name: String | Double | Null = js.native
+  /**
+    * @description
+    * The top-level form directive for the control.
+    */
+  def formDirective(): Form | Null = js.native
 }
 

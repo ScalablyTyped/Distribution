@@ -1,6 +1,6 @@
 package typings.awsSdk.route53Mod
 
-import typings.awsSdk.AnonWaiter
+import typings.awsSdk.GetChangeRequestwaiterWai
 import typings.awsSdk.awsSdkStrings.resourceRecordSetsChanged
 import typings.awsSdk.configMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
@@ -768,11 +768,11 @@ trait Route53 extends Service {
     * Waits for the resourceRecordSetsChanged state by periodically calling the underlying Route53.getChangeoperation every 30 seconds (at most 60 times).
     */
   @JSName("waitFor")
-  def waitFor_resourceRecordSetsChanged(state: resourceRecordSetsChanged, params: GetChangeRequest with AnonWaiter): Request[GetChangeResponse, AWSError] = js.native
+  def waitFor_resourceRecordSetsChanged(state: resourceRecordSetsChanged, params: GetChangeRequestwaiterWai): Request[GetChangeResponse, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_resourceRecordSetsChanged(
     state: resourceRecordSetsChanged,
-    params: GetChangeRequest with AnonWaiter,
+    params: GetChangeRequestwaiterWai,
     callback: js.Function2[/* err */ AWSError, /* data */ GetChangeResponse, Unit]
   ): Request[GetChangeResponse, AWSError] = js.native
 }

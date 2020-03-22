@@ -1,5 +1,6 @@
 package typings.ionicCore
 
+import typings.ionicCore.animationInterfaceMod.AnimationBuilder
 import typings.ionicCore.interfaceMod.NavOutlet
 import typings.ionicCore.mod.ComponentProps
 import typings.ionicCore.mod.FrameworkDelegate
@@ -7,7 +8,6 @@ import typings.ionicCore.mod.ViewController
 import typings.ionicCore.navInterfaceMod.NavComponent
 import typings.ionicCore.navInterfaceMod.NavOptions
 import typings.ionicCore.navInterfaceMod.TransitionDoneFn
-import typings.ionicCore.oldAnimationAnimationInterfaceMod.AnimationBuilder
 import typings.ionicCore.stencilCoreMod.EventEmitter
 import typings.std.HTMLElement
 import scala.scalajs.js

@@ -1,7 +1,7 @@
 package typings.angular.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.angular.AnonArgs
+import typings.angular.AnonInstantiable
 import typings.angular.angularStrings.$anchorScroll
 import typings.angular.angularStrings.$cacheFactory
 import typings.angular.angularStrings.$compile
@@ -109,8 +109,8 @@ object auto extends js.Object {
     @JSName("get")
     def get_xhrFactory[T](name: $xhrFactory): IXhrFactory[T] = js.native
     def has(name: String): Boolean = js.native
-    def instantiate[T](typeConstructor: AnonArgs[T]): T = js.native
-    def instantiate[T](typeConstructor: AnonArgs[T], locals: js.Any): T = js.native
+    def instantiate[T](typeConstructor: AnonInstantiable[T]): T = js.native
+    def instantiate[T](typeConstructor: AnonInstantiable[T], locals: js.Any): T = js.native
     def invoke[T](func: Injectable[Function | (js.Function1[/* repeated */ _, T])]): T = js.native
     def invoke[T](func: Injectable[Function | (js.Function1[/* repeated */ _, T])], context: js.Any): T = js.native
     def invoke[T](func: Injectable[Function | (js.Function1[/* repeated */ _, T])], context: js.Any, locals: js.Any): T = js.native

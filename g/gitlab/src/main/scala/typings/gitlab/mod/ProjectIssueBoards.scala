@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("gitlab", "ProjectIssueBoards")
 @js.native
-class ProjectIssueBoards ()
+class ProjectIssueBoards protected ()
   extends typings.gitlab.servicesMod.ProjectIssueBoards {
   def this(options: BaseServiceOptions) = this()
 }

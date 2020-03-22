@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@uifabric/styling" : "7.10.8"
+      "@uifabric/styling" : "7.10.14"
     }
   ],
   "test-dependencies" : [
     {
-      "@uifabric/styling" : "7.10.8"
+      "@uifabric/styling" : "7.10.14"
     }
   ],
   "compile-devDependencies" : [

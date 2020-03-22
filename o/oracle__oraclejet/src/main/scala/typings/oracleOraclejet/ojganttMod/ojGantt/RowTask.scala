@@ -1,7 +1,7 @@
 package typings.oracleOraclejet.ojganttMod.ojGantt
 
-import typings.oracleOraclejet.AnonBorderRadiusEnd
-import typings.oracleOraclejet.AnonBorderRadiusHeightSvgClassName
+import typings.oracleOraclejet.AnonEnd
+import typings.oracleOraclejet.AnonValue
 import typings.oracleOraclejet.oracleOraclejetStrings.auto
 import typings.oracleOraclejet.oracleOraclejetStrings.milestone
 import typings.oracleOraclejet.oracleOraclejetStrings.normal
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 
 // tslint:disable-next-line interface-over-type-literal
 trait RowTask[K2] extends js.Object {
-  var baseline: js.UndefOr[AnonBorderRadiusEnd] = js.undefined
+  var baseline: js.UndefOr[AnonEnd] = js.undefined
   var borderRadius: js.UndefOr[String] = js.undefined
   var end: js.UndefOr[String] = js.undefined
   var height: js.UndefOr[Double] = js.undefined
@@ -20,7 +20,7 @@ trait RowTask[K2] extends js.Object {
   var label: js.UndefOr[String] = js.undefined
   var labelPosition: js.UndefOr[String | js.Array[String]] = js.undefined
   var labelStyle: js.UndefOr[js.Object] = js.undefined
-  var progress: js.UndefOr[AnonBorderRadiusHeightSvgClassName] = js.undefined
+  var progress: js.UndefOr[AnonValue] = js.undefined
   var shortDesc: js.UndefOr[String] = js.undefined
   var start: js.UndefOr[String] = js.undefined
   var svgClassName: js.UndefOr[String] = js.undefined
@@ -32,14 +32,14 @@ object RowTask {
   @scala.inline
   def apply[K2](
     id: K2,
-    baseline: AnonBorderRadiusEnd = null,
+    baseline: AnonEnd = null,
     borderRadius: String = null,
     end: String = null,
     height: Int | Double = null,
     label: String = null,
     labelPosition: String | js.Array[String] = null,
     labelStyle: js.Object = null,
-    progress: AnonBorderRadiusHeightSvgClassName = null,
+    progress: AnonValue = null,
     shortDesc: String = null,
     start: String = null,
     svgClassName: String = null,

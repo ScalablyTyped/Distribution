@@ -13,7 +13,7 @@ trait AnonAreaColorEmphasis extends js.Object {
     * "#eee"
     * @see https://echarts.apache.org/en/option.html#series-map.itemStyle.areaColor
     */
-  var areaColor: js.UndefOr[AnonBorderColorBorderType] = js.undefined
+  var areaColor: js.UndefOr[AnonBorderType] = js.undefined
   /**
     * Map area style in highlighted state.
     *
@@ -25,7 +25,7 @@ trait AnonAreaColorEmphasis extends js.Object {
 
 object AnonAreaColorEmphasis {
   @scala.inline
-  def apply(areaColor: AnonBorderColorBorderType = null, emphasis: AnonAreaColor = null): AnonAreaColorEmphasis = {
+  def apply(areaColor: AnonBorderType = null, emphasis: AnonAreaColor = null): AnonAreaColorEmphasis = {
     val __obj = js.Dynamic.literal()
     if (areaColor != null) __obj.updateDynamic("areaColor")(areaColor.asInstanceOf[js.Any])
     if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis.asInstanceOf[js.Any])

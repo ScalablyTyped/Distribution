@@ -10,8 +10,8 @@ object textMod extends js.Object {
   @js.native
   object Text extends js.Object {
     /**
-      * Given a 'snake-case', 'snake_case', or 'snake case' string,
-      * will return the camel case version: 'snakeCase'.
+      * Given a 'snake-case', 'snake_case', 'snake:case', or
+      * 'snake case' string, will return the camel case version: 'snakeCase'.
       *
       * @param str: the snake-case input string.
       *

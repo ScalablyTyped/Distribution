@@ -1,6 +1,6 @@
 package typings.reactOnsenui.mod
 
-import typings.reactOnsenui.HTMLAttributesidclassNamestylemodifierstringonClic
+import typings.reactOnsenui.HTMLAttributesidclassNameModifier
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-onsenui", "BackButton")
 @js.native
 class BackButton ()
-  extends typings.react.mod.Component[HTMLAttributesidclassNamestylemodifierstringonClic, js.Any, js.Any]
+  extends typings.react.mod.Component[HTMLAttributesidclassNameModifier, js.Any, js.Any]
 

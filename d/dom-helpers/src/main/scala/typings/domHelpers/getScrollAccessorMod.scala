@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object getScrollAccessorMod extends js.Object {
   @JSName("default")
-  def default_pageXOffset(offset: pageXOffset): FnNode = js.native
+  def default_pageXOffset(offset: pageXOffset): FnCall = js.native
   @JSName("default")
-  def default_pageYOffset(offset: pageYOffset): FnNode = js.native
+  def default_pageYOffset(offset: pageYOffset): FnCall = js.native
 }
 

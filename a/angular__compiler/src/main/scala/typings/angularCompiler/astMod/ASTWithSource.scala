@@ -13,6 +13,5 @@ class ASTWithSource protected () extends AST {
   var errors: js.Array[ParserError] = js.native
   var location: String = js.native
   var source: String | Null = js.native
-  var sourceSpan: AbsoluteSourceSpan = js.native
 }
 

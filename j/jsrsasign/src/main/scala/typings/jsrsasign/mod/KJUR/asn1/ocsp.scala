@@ -1,7 +1,7 @@
 package typings.jsrsasign.mod.KJUR.asn1
 
-import typings.jsrsasign.AnonAlgKeyhash
-import typings.jsrsasign.AnonAlgKeyhashNamehash
+import typings.jsrsasign.AnonKeyhash
+import typings.jsrsasign.AnonNamehash
 import typings.jsrsasign.jsrsasign.KJUR.asn1.ocsp.CertificateRequest
 import typings.jsrsasign.jsrsasign.KJUR.asn1.ocsp.CertificateRequestList
 import typings.jsrsasign.jsrsasign.KJUR.asn1.ocsp.OCSPUtil.ResponseInfo
@@ -61,7 +61,7 @@ object ocsp extends js.Object {
   @js.native
   class CertID ()
     extends typings.jsrsasign.jsrsasign.KJUR.asn1.ocsp.CertID {
-    def this(params: AnonAlgKeyhash) = this()
+    def this(params: AnonKeyhash) = this()
     def this(params: CertificateRequest) = this()
   }
   
@@ -117,7 +117,7 @@ object ocsp extends js.Object {
   @js.native
   class Request ()
     extends typings.jsrsasign.jsrsasign.KJUR.asn1.ocsp.Request {
-    def this(params: AnonAlgKeyhashNamehash) = this()
+    def this(params: AnonNamehash) = this()
     def this(params: CertificateRequest) = this()
   }
   

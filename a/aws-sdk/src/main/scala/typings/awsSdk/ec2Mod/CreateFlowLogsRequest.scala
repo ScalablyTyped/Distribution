@@ -41,7 +41,7 @@ trait CreateFlowLogsRequest extends js.Object {
   /**
     * The ID of the subnet, network interface, or VPC for which you want to create a flow log. Constraints: Maximum of 1000 resources
     */
-  var ResourceIds: ValueStringList = js.native
+  var ResourceIds: FlowLogResourceIds = js.native
   /**
     * The type of resource for which to create the flow log. For example, if you specified a VPC ID for the ResourceId property, specify VPC for this property.
     */
@@ -55,7 +55,7 @@ trait CreateFlowLogsRequest extends js.Object {
 object CreateFlowLogsRequest {
   @scala.inline
   def apply(
-    ResourceIds: ValueStringList,
+    ResourceIds: FlowLogResourceIds,
     ResourceType: FlowLogsResourceType,
     TrafficType: TrafficType,
     ClientToken: String = null,

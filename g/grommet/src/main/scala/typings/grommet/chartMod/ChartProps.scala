@@ -1,9 +1,9 @@
 package typings.grommet.chartMod
 
-import typings.grommet.AnonArgs
 import typings.grommet.AnonColor
-import typings.grommet.AnonColorValue
-import typings.grommet.AnonFull
+import typings.grommet.AnonHeight
+import typings.grommet.AnonLabel
+import typings.grommet.AnonValue
 import typings.grommet.grommetStrings.area
 import typings.grommet.grommetStrings.bar
 import typings.grommet.grommetStrings.full
@@ -30,7 +30,7 @@ trait ChartProps extends js.Object {
   var a11yTitle: js.UndefOr[A11yTitleType] = js.undefined
   var alignSelf: js.UndefOr[AlignSelfType] = js.undefined
   var bounds: js.UndefOr[js.Array[js.Array[Double]]] = js.undefined
-  var color: js.UndefOr[String | AnonColor | js.Array[AnonColorValue]] = js.undefined
+  var color: js.UndefOr[String | AnonColor | js.Array[AnonValue]] = js.undefined
   var gap: js.UndefOr[GapType] = js.undefined
   var gridArea: js.UndefOr[GridAreaType] = js.undefined
   var margin: js.UndefOr[MarginType] = js.undefined
@@ -38,20 +38,20 @@ trait ChartProps extends js.Object {
   var onHover: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
   var overflow: js.UndefOr[Boolean] = js.undefined
   var round: js.UndefOr[Boolean] = js.undefined
-  var size: js.UndefOr[xxsmall | xsmall | small | medium | large | xlarge | full | AnonFull | String] = js.undefined
+  var size: js.UndefOr[xxsmall | xsmall | small | medium | large | xlarge | full | AnonHeight | String] = js.undefined
   var thickness: js.UndefOr[hair | xsmall | small | medium | large | xlarge | none | String] = js.undefined
   var `type`: js.UndefOr[bar | line | area | point] = js.undefined
-  var values: js.Array[Double | js.Array[Double] | AnonArgs]
+  var values: js.Array[Double | js.Array[Double] | AnonLabel]
 }
 
 object ChartProps {
   @scala.inline
   def apply(
-    values: js.Array[Double | js.Array[Double] | AnonArgs],
+    values: js.Array[Double | js.Array[Double] | AnonLabel],
     a11yTitle: A11yTitleType = null,
     alignSelf: AlignSelfType = null,
     bounds: js.Array[js.Array[Double]] = null,
-    color: String | AnonColor | js.Array[AnonColorValue] = null,
+    color: String | AnonColor | js.Array[AnonValue] = null,
     gap: GapType = null,
     gridArea: GridAreaType = null,
     margin: MarginType = null,
@@ -59,7 +59,7 @@ object ChartProps {
     onHover: /* repeated */ js.Any => _ = null,
     overflow: js.UndefOr[Boolean] = js.undefined,
     round: js.UndefOr[Boolean] = js.undefined,
-    size: xxsmall | xsmall | small | medium | large | xlarge | full | AnonFull | String = null,
+    size: xxsmall | xsmall | small | medium | large | xlarge | full | AnonHeight | String = null,
     thickness: hair | xsmall | small | medium | large | xlarge | none | String = null,
     `type`: bar | line | area | point = null
   ): ChartProps = {

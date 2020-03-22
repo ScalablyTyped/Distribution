@@ -1,7 +1,7 @@
 package typings.grommet.meterMod
 
-import typings.grommet.AnonArgsColor
 import typings.grommet.AnonColorOpacity
+import typings.grommet.AnonHighlight
 import typings.grommet.grommetStrings.bar
 import typings.grommet.grommetStrings.circle
 import typings.grommet.grommetStrings.full
@@ -29,7 +29,7 @@ trait MeterProps extends js.Object {
   var size: js.UndefOr[xsmall | small | medium | large | xlarge | full | String] = js.undefined
   var thickness: js.UndefOr[xsmall | small | medium | large | xlarge | String] = js.undefined
   var `type`: js.UndefOr[bar | circle] = js.undefined
-  var values: js.UndefOr[js.Array[AnonArgsColor]] = js.undefined
+  var values: js.UndefOr[js.Array[AnonHighlight]] = js.undefined
 }
 
 object MeterProps {
@@ -45,7 +45,7 @@ object MeterProps {
     size: xsmall | small | medium | large | xlarge | full | String = null,
     thickness: xsmall | small | medium | large | xlarge | String = null,
     `type`: bar | circle = null,
-    values: js.Array[AnonArgsColor] = null
+    values: js.Array[AnonHighlight] = null
   ): MeterProps = {
     val __obj = js.Dynamic.literal()
     if (a11yTitle != null) __obj.updateDynamic("a11yTitle")(a11yTitle.asInstanceOf[js.Any])

@@ -12,13 +12,7 @@ package object mod {
   type Omit[T, K] = typings.std.Pick[T, typings.std.Exclude[java.lang.String, K]]
   type SFCProps[C] = js.Any
   type Styles = org.scalablytyped.runtime.StringDictionary[
-    typings.reactWithStyles.mod.Nullable[
-      typings.aphrodite.cssPropertiesMod.CSSProperties with (org.scalablytyped.runtime.StringDictionary[
-        js.UndefOr[
-          /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 259 */ js.Any
-        ]
-      ])
-    ]
+    typings.reactWithStyles.mod.Nullable[typings.reactWithStyles.CSSPropertiespseudoSelect]
   ]
   type Theme = org.scalablytyped.runtime.StringDictionary[js.Any]
 }

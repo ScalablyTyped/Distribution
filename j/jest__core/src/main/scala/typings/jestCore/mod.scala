@@ -5,8 +5,6 @@ import typings.jestCore.testSchedulerMod.TestSchedulerContext
 import typings.jestCore.testSchedulerMod.TestSchedulerOptions
 import typings.jestRuntime.mod.Context
 import typings.jestTypes.configMod.GlobalConfig
-import typings.std.Partial
-import typings.yargs.mod.Arguments
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,6 +30,6 @@ object mod extends js.Object {
   }
   
   def getVersion(): String = js.native
-  def runCLI(argv: Arguments[Partial[AnonAll]], projects: js.Array[String]): js.Promise[AnonGlobalConfig] = js.native
+  def runCLI(argv: ArgumentsPartialallboolea, projects: js.Array[String]): js.Promise[AnonGlobalConfig] = js.native
 }
 

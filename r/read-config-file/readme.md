@@ -1,7 +1,7 @@
 
 # Scala.js typings for read-config-file
 
-Typings are for version 5.0.0
+Typings are for version 5.0.1
 
 ## Library description:
 Read configuration file in various formats:

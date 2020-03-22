@@ -18,8 +18,7 @@ object actionSheetMod extends js.Object {
   class ActionSheet ()
     extends ComponentInterface
        with OverlayInterface {
-    @JSName("animation")
-    var animation_ActionSheet: js.UndefOr[js.Any] = js.native
+    var animation: js.UndefOr[js.Any] = js.native
     /**
       * If `true`, the action sheet will be dismissed when the backdrop is clicked.
       */

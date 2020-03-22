@@ -1,6 +1,6 @@
 package typings.awsSdk.dynamodbMod
 
-import typings.awsSdk.AnonWaiter
+import typings.awsSdk.DescribeTableInputwaiterW
 import typings.awsSdk.awsSdkStrings.tableExists
 import typings.awsSdk.awsSdkStrings.tableNotExists
 import typings.awsSdk.configMod.ConfigBase
@@ -544,11 +544,11 @@ trait DynamoDB extends DynamoDBCustomizations {
     * Waits for the tableExists state by periodically calling the underlying DynamoDB.describeTableoperation every 20 seconds (at most 25 times).
     */
   @JSName("waitFor")
-  def waitFor_tableExists(state: tableExists, params: DescribeTableInput with AnonWaiter): Request[DescribeTableOutput, AWSError] = js.native
+  def waitFor_tableExists(state: tableExists, params: DescribeTableInputwaiterW): Request[DescribeTableOutput, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_tableExists(
     state: tableExists,
-    params: DescribeTableInput with AnonWaiter,
+    params: DescribeTableInputwaiterW,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeTableOutput, Unit]
   ): Request[DescribeTableOutput, AWSError] = js.native
   /**
@@ -565,11 +565,11 @@ trait DynamoDB extends DynamoDBCustomizations {
     * Waits for the tableNotExists state by periodically calling the underlying DynamoDB.describeTableoperation every 20 seconds (at most 25 times).
     */
   @JSName("waitFor")
-  def waitFor_tableNotExists(state: tableNotExists, params: DescribeTableInput with AnonWaiter): Request[DescribeTableOutput, AWSError] = js.native
+  def waitFor_tableNotExists(state: tableNotExists, params: DescribeTableInputwaiterW): Request[DescribeTableOutput, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_tableNotExists(
     state: tableNotExists,
-    params: DescribeTableInput with AnonWaiter,
+    params: DescribeTableInputwaiterW,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeTableOutput, Unit]
   ): Request[DescribeTableOutput, AWSError] = js.native
 }

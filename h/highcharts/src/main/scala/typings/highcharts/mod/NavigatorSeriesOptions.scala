@@ -18,10 +18,11 @@ trait NavigatorSeriesOptions extends js.Object {
   /**
     * (Highstock) Data grouping options for the navigator series.
     */
-  var dataGrouping: js.UndefOr[NavigatorSeriesDataGroupingOptions] = js.undefined
+  var dataGrouping: js.UndefOr[DataGroupingOptionsObject] = js.undefined
   /**
-    * (Highstock, Gantt) Data label options for the navigator series. Data
-    * labels are disabled by default on the navigator series.
+    * (Highcharts, Highstock, Highmaps, Gantt) Data label options for the
+    * navigator series. Data labels are disabled by default on the navigator
+    * series.
     */
   var dataLabels: js.UndefOr[DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject]] = js.undefined
   /**
@@ -67,7 +68,7 @@ object NavigatorSeriesOptions {
     className: String = null,
     color: ColorString | GradientColorObject | PatternObject = null,
     data: js.Array[Double | (js.Array[Double | String | Null]) | js.Object | Null] = null,
-    dataGrouping: NavigatorSeriesDataGroupingOptions = null,
+    dataGrouping: DataGroupingOptionsObject = null,
     dataLabels: DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject] = null,
     fillOpacity: Int | Double = null,
     id: String = null,

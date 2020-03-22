@@ -27,10 +27,6 @@ package object mod {
     typings.calidation.mod.SimpleValidatorConfig
   ])
   type Transforms = typings.calidation.mod.Dictionary[js.Function1[/* value */ js.Any, js.Any]]
-  type ValidationContext = typings.std.Omit[
-    typings.calidation.mod.FormContext, 
-    typings.calidation.calidationStrings.register | typings.calidation.calidationStrings.unregister
-  ]
   type Validator = typings.calidation.mod.SimpleValidator | typings.calidation.mod.BlacklistValidator | typings.calidation.mod.ValueValidator[js.Any] | typings.calidation.mod.RegexValidator | typings.calidation.mod.WhitelistValidator | typings.calidation.mod.LengthValidator
   type ValueValidator[T] = typings.calidation.mod.ValueValidatorConfig[T] | (js.Function1[
     /* context */ typings.calidation.mod.ValidatorContext, 

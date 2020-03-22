@@ -1,6 +1,6 @@
 package typings.cathoQuantum.radioGroupMod
 
-import typings.cathoQuantum.AnonColors
+import typings.cathoQuantum.AnonColorsSpacing
 import typings.cathoQuantum.AnonDisabled
 import typings.cathoQuantum.cathoQuantumStrings.button
 import typings.cathoQuantum.cathoQuantumStrings.radio
@@ -18,7 +18,7 @@ trait RadioGroupProps[T] extends js.Object {
   var name: String
   var onChange: js.UndefOr[ChangeEventHandler[T]] = js.undefined
   var options: js.UndefOr[js.Array[AnonDisabled]] = js.undefined
-  var theme: js.UndefOr[AnonColors] = js.undefined
+  var theme: js.UndefOr[AnonColorsSpacing] = js.undefined
   var `type`: js.UndefOr[radio | button] = js.undefined
   var value: js.UndefOr[String] = js.undefined
 }
@@ -32,7 +32,7 @@ object RadioGroupProps {
     `inline`: js.UndefOr[Boolean] = js.undefined,
     onChange: ChangeEvent[T] => Unit = null,
     options: js.Array[AnonDisabled] = null,
-    theme: AnonColors = null,
+    theme: AnonColorsSpacing = null,
     `type`: radio | button = null,
     value: String = null
   ): RadioGroupProps[T] = {

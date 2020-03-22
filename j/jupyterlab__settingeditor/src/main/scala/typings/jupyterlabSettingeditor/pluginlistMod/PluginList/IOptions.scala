@@ -1,6 +1,6 @@
 package typings.jupyterlabSettingeditor.pluginlistMod.PluginList
 
-import typings.jupyterlabCoreutils.tokensMod.ISettingRegistry
+import typings.jupyterlabSettingregistry.tokensMod.ISettingRegistry
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,8 +1,8 @@
 package typings.oracleOraclejet.ojgaugeMod
 
-import typings.oracleOraclejet.AnonBorderColorCircle
-import typings.oracleOraclejet.AnonComponentNameLabelAndValue
-import typings.oracleOraclejet.AnonContextRendererAnonInsertAnonPreventDefaultTooltipContext242250892
+import typings.oracleOraclejet.Anon9
+import typings.oracleOraclejet.AnonLabelAndValue
+import typings.oracleOraclejet.AnonSource
 import typings.oracleOraclejet.ojgaugeMod.ojRatingGauge.Threshold
 import typings.oracleOraclejet.oracleOraclejetNumbers.`0.5`
 import typings.oracleOraclejet.oracleOraclejetNumbers.`1`
@@ -19,19 +19,19 @@ import scala.scalajs.js.annotation._
 
 trait ojRatingGaugeSettableProperties extends dvtBaseGaugeSettableProperties {
   var changed: Boolean
-  var changedState: AnonBorderColorCircle
-  var hoverState: AnonBorderColorCircle
+  var changedState: AnonSource
+  var hoverState: AnonSource
   var max: Double
   var min: Double
   var orientation: vertical | horizontal
   var preserveAspectRatio: none | meet
   var readonly: Boolean
-  var selectedState: AnonBorderColorCircle
+  var selectedState: AnonSource
   var step: `0.5` | `1`
   var thresholds: js.Array[Threshold]
-  var tooltip: AnonContextRendererAnonInsertAnonPreventDefaultTooltipContext242250892
+  var tooltip: Anon9
   val transientValue: Double | Null
-  var unselectedState: AnonBorderColorCircle
+  var unselectedState: AnonSource
   var value: Double | Null
   var visualEffects: none | auto
 }
@@ -40,20 +40,20 @@ object ojRatingGaugeSettableProperties {
   @scala.inline
   def apply(
     changed: Boolean,
-    changedState: AnonBorderColorCircle,
-    hoverState: AnonBorderColorCircle,
+    changedState: AnonSource,
+    hoverState: AnonSource,
     max: Double,
     min: Double,
     orientation: vertical | horizontal,
     preserveAspectRatio: none | meet,
     readonly: Boolean,
-    selectedState: AnonBorderColorCircle,
+    selectedState: AnonSource,
     step: `0.5` | `1`,
     thresholds: js.Array[Threshold],
-    tooltip: AnonContextRendererAnonInsertAnonPreventDefaultTooltipContext242250892,
+    tooltip: Anon9,
     trackResize: on | off,
-    translations: AnonComponentNameLabelAndValue,
-    unselectedState: AnonBorderColorCircle,
+    translations: AnonLabelAndValue,
+    unselectedState: AnonSource,
     visualEffects: none | auto,
     transientValue: Int | Double = null,
     value: Int | Double = null

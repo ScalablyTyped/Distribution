@@ -9,7 +9,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ionic/angular/dist/directives/proxies", "IonNavLink")
+@JSImport("@ionic/angular/directives/proxies", "IonNavLink")
 @js.native
 class IonNavLink protected ()
   extends typings.ionicCore.componentsMod.Components.IonNavLink {

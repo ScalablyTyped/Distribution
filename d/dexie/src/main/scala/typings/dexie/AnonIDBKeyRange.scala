@@ -1,11 +1,22 @@
 package typings.dexie
 
-import org.scalablytyped.runtime.Instantiable0
+import typings.std.IDBFactory
 import typings.std.IDBKeyRange
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
-trait AnonIDBKeyRange extends Instantiable0[IDBKeyRange]
+trait AnonIDBKeyRange extends js.Object {
+  var IDBKeyRange: typings.std.IDBKeyRange
+  var indexedDB: IDBFactory
+}
+
+object AnonIDBKeyRange {
+  @scala.inline
+  def apply(IDBKeyRange: IDBKeyRange, indexedDB: IDBFactory): AnonIDBKeyRange = {
+    val __obj = js.Dynamic.literal(IDBKeyRange = IDBKeyRange.asInstanceOf[js.Any], indexedDB = indexedDB.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[AnonIDBKeyRange]
+  }
+}
 

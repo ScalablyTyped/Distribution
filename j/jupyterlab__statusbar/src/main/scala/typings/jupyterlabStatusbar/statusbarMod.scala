@@ -2,13 +2,13 @@ package typings.jupyterlabStatusbar
 
 import typings.jupyterlabStatusbar.tokensMod.IStatusBar
 import typings.jupyterlabStatusbar.tokensMod.IStatusBar.IItem
-import typings.phosphorAlgorithm.iterMod.IIterator
-import typings.phosphorDisposable.mod.IDisposable
-import typings.phosphorMessaging.mod.Message
-import typings.phosphorWidgets.mod.Widget
-import typings.phosphorWidgets.widgetMod.Widget.ChildMessage
-import typings.phosphorWidgets.widgetMod.Widget.Flag
-import typings.phosphorWidgets.widgetMod.Widget.ResizeMessage
+import typings.luminoAlgorithm.iterMod.IIterator
+import typings.luminoDisposable.mod.IDisposable
+import typings.luminoMessaging.mod.Message
+import typings.luminoWidgets.mod.Widget
+import typings.luminoWidgets.widgetMod.Widget.ChildMessage
+import typings.luminoWidgets.widgetMod.Widget.Flag
+import typings.luminoWidgets.widgetMod.Widget.ResizeMessage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -61,7 +61,7 @@ object statusbarMod extends js.Object {
       * If a layout is not installed, the returned iterator will be empty.
       */
     /* InferMemberOverrides */
-    override def children(): IIterator[typings.phosphorWidgets.widgetMod.Widget] = js.native
+    override def children(): IIterator[typings.luminoWidgets.widgetMod.Widget] = js.native
     /**
       * Clear the given widget flag.
       *
@@ -86,7 +86,7 @@ object statusbarMod extends js.Object {
       * @returns `true` if the widget is a descendant, `false` otherwise.
       */
     /* InferMemberOverrides */
-    override def contains(widget: typings.phosphorWidgets.widgetMod.Widget): Boolean = js.native
+    override def contains(widget: typings.luminoWidgets.widgetMod.Widget): Boolean = js.native
     /**
       * Dispose of the resources held by the object.
       *
@@ -98,6 +98,7 @@ object statusbarMod extends js.Object {
       * It is undefined behavior to use any functionality of the object
       * after it has been disposed unless otherwise explicitly noted.
       */
+    /* CompleteClass */
     /* InferMemberOverrides */
     override def dispose(): Unit = js.native
     /**
@@ -264,6 +265,7 @@ object statusbarMod extends js.Object {
       *
       * @param msg - The message to be processed.
       */
+    /* CompleteClass */
     /* InferMemberOverrides */
     override def processMessage(msg: Message): Unit = js.native
     /**

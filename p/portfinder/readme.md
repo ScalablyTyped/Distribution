@@ -1,7 +1,7 @@
 
 # Scala.js typings for portfinder
 
-Typings are for version 1.0.24
+Typings are for version 1.0.25
 
 ## Library description:
 A simple tool to find an open port on the current machine

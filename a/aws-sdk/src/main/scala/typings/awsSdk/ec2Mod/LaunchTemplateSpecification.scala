@@ -9,7 +9,7 @@ trait LaunchTemplateSpecification extends js.Object {
   /**
     * The ID of the launch template.
     */
-  var LaunchTemplateId: js.UndefOr[String] = js.native
+  var LaunchTemplateId: js.UndefOr[typings.awsSdk.ec2Mod.LaunchTemplateId] = js.native
   /**
     * The name of the launch template.
     */
@@ -22,7 +22,11 @@ trait LaunchTemplateSpecification extends js.Object {
 
 object LaunchTemplateSpecification {
   @scala.inline
-  def apply(LaunchTemplateId: String = null, LaunchTemplateName: String = null, Version: String = null): LaunchTemplateSpecification = {
+  def apply(
+    LaunchTemplateId: LaunchTemplateId = null,
+    LaunchTemplateName: String = null,
+    Version: String = null
+  ): LaunchTemplateSpecification = {
     val __obj = js.Dynamic.literal()
     if (LaunchTemplateId != null) __obj.updateDynamic("LaunchTemplateId")(LaunchTemplateId.asInstanceOf[js.Any])
     if (LaunchTemplateName != null) __obj.updateDynamic("LaunchTemplateName")(LaunchTemplateName.asInstanceOf[js.Any])

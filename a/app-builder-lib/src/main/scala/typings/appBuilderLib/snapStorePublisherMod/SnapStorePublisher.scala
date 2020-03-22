@@ -13,6 +13,6 @@ class SnapStorePublisher protected () extends Publisher {
   def this(context: PublishContext, options: SnapStoreOptions) = this()
   var options: js.Any = js.native
   @JSName("providerName")
-  val providerName_SnapStorePublisher: snapStore = js.native
+  val providerName_FSnapStorePublisher: snapStore = js.native
 }
 

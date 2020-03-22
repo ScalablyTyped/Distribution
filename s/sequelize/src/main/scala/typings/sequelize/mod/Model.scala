@@ -2,9 +2,9 @@ package typings.sequelize.mod
 
 import typings.node.Buffer
 import typings.sequelize.AnonCount
-import typings.sequelize.AnonFalse
-import typings.sequelize.AnonFalseReturning
-import typings.sequelize.AnonReturning
+import typings.sequelize.UpsertOptionsreturningfal
+import typings.sequelize.UpsertOptionsreturningfalBenchmark
+import typings.sequelize.UpsertOptionsreturningtru
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -360,7 +360,8 @@ trait Model[TInstance, TAttributes, TCreationAttributes]
   def getTableName(): String | js.Object = js.native
   def getTableName(options: GetTableNameOptions): String | js.Object = js.native
   def insertOrUpdate(values: TAttributes): typings.bluebird.mod.^[Boolean] = js.native
-  def insertOrUpdate(values: TAttributes, options: UpsertOptions with AnonFalseReturning with AnonReturning): typings.bluebird.mod.^[Boolean] = js.native
+  def insertOrUpdate(values: TAttributes, options: UpsertOptionsreturningfalBenchmark): typings.bluebird.mod.^[Boolean] = js.native
+  def insertOrUpdate(values: TAttributes, options: UpsertOptionsreturningtru): typings.bluebird.mod.^[js.Tuple2[TInstance, Boolean]] = js.native
   /**
     * Find the maximum value of field
     */
@@ -492,6 +493,7 @@ trait Model[TInstance, TAttributes, TCreationAttributes]
     * whether the row was inserted or not.
     */
   def upsert(values: TAttributes): typings.bluebird.mod.^[Boolean] = js.native
-  def upsert(values: TAttributes, options: UpsertOptions with AnonFalse with AnonReturning): typings.bluebird.mod.^[Boolean] = js.native
+  def upsert(values: TAttributes, options: UpsertOptionsreturningfal): typings.bluebird.mod.^[Boolean] = js.native
+  def upsert(values: TAttributes, options: UpsertOptionsreturningtru): typings.bluebird.mod.^[js.Tuple2[TInstance, Boolean]] = js.native
 }
 

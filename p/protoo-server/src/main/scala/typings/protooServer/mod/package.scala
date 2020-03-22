@@ -27,11 +27,4 @@ package object mod {
     /* reject */ typings.protooServer.mod.RejectFn, 
     scala.Unit
   ]
-  type WebSocketServerOptions = typings.std.Pick[
-    typings.websocket.mod.IServerConfig, 
-    typings.std.Exclude[
-      typings.protooServer.protooServerStrings.httpServer | typings.protooServer.protooServerStrings.maxReceivedFrameSize | typings.protooServer.protooServerStrings.maxReceivedMessageSize | typings.protooServer.protooServerStrings.keepalive | typings.protooServer.protooServerStrings.keepaliveInterval | typings.protooServer.protooServerStrings.dropConnectionOnKeepaliveTimeout | typings.protooServer.protooServerStrings.keepaliveGracePeriod | typings.protooServer.protooServerStrings.useNativeKeepalive | typings.protooServer.protooServerStrings.autoAcceptConnections | typings.protooServer.protooServerStrings.ignoreXForwardedFor | typings.protooServer.protooServerStrings.disableNagleAlgorithm, 
-      typings.protooServer.protooServerStrings.httpServer
-    ]
-  ]
 }

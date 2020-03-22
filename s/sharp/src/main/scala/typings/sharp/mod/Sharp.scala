@@ -2,9 +2,9 @@ package typings.sharp.mod
 
 import typings.node.Buffer
 import typings.node.streamMod.Duplex
+import typings.sharp.Anon0
 import typings.sharp.AnonBrightness
 import typings.sharp.AnonData
-import typings.sharp.AnonFalse
 import typings.sharp.AnonRaw
 import typings.sharp.AnonResolveWithObject
 import typings.std.ArrayLike
@@ -435,7 +435,6 @@ trait Sharp extends Duplex {
     * @returns A sharp instance that can be used to chain operations
     */
   def toBuffer(callback: js.Function3[/* err */ Error, /* buffer */ Buffer, /* info */ OutputInfo, Unit]): Sharp = js.native
-  def toBuffer(options: AnonFalse): js.Promise[Buffer] = js.native
   /**
     * Write output to a Buffer. JPEG, PNG, WebP, TIFF and RAW output are supported.
     * By default, the format will match the input image, except GIF and SVG input which become PNG output.
@@ -443,7 +442,8 @@ trait Sharp extends Duplex {
     * @param options.resolveWithObject Resolve the Promise with an Object containing data and info properties instead of resolving only with data.
     * @returns A promise that resolves with an object containing the Buffer data and an info object containing the output image format, size (bytes), width, height and channels
     */
-  def toBuffer(options: AnonResolveWithObject): js.Promise[AnonData] = js.native
+  def toBuffer(options: Anon0): js.Promise[AnonData] = js.native
+  def toBuffer(options: AnonResolveWithObject): js.Promise[Buffer] = js.native
   /**
     * Alternative spelling of toColourspace().
     * @param colorspace output colorspace e.g. srgb, rgb, cmyk, lab, b-w ...

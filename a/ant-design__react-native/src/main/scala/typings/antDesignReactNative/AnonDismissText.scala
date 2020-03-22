@@ -5,6 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonDismissText extends js.Object {
+  var DatePickerLocale: AnonDay
   /** 取消 */
   var dismissText: String
   /** 请选择 */
@@ -15,8 +16,8 @@ trait AnonDismissText extends js.Object {
 
 object AnonDismissText {
   @scala.inline
-  def apply(dismissText: String, extra: String, okText: String): AnonDismissText = {
-    val __obj = js.Dynamic.literal(dismissText = dismissText.asInstanceOf[js.Any], extra = extra.asInstanceOf[js.Any], okText = okText.asInstanceOf[js.Any])
+  def apply(DatePickerLocale: AnonDay, dismissText: String, extra: String, okText: String): AnonDismissText = {
+    val __obj = js.Dynamic.literal(DatePickerLocale = DatePickerLocale.asInstanceOf[js.Any], dismissText = dismissText.asInstanceOf[js.Any], extra = extra.asInstanceOf[js.Any], okText = okText.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AnonDismissText]
   }

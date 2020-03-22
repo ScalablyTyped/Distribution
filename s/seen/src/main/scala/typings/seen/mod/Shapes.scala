@@ -1,6 +1,6 @@
 package typings.seen.mod
 
-import typings.std.Partial
+import typings.seen.PartialSurface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,7 +40,7 @@ object Shapes extends js.Object {
   def sphere(subdivisions: Double): Shape = js.native
   def tetrahedron(): Shape = js.native
   def text(text: String): Shape = js.native
-  def text(text: String, surfaceOptions: Partial[Surface]): Shape = js.native
+  def text(text: String, surfaceOptions: PartialSurface): Shape = js.native
   def unitcube(): Shape = js.native
 }
 

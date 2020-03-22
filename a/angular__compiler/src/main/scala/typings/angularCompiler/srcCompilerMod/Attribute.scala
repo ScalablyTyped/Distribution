@@ -1,7 +1,6 @@
 package typings.angularCompiler.srcCompilerMod
 
-import typings.angularCompiler.i18nAstMod.Message
-import typings.angularCompiler.i18nAstMod.Node
+import typings.angularCompiler.i18nAstMod.I18nMeta
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,28 +21,14 @@ class Attribute protected ()
     value: String,
     sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
     valueSpan: js.UndefOr[scala.Nothing],
-    i18n: Message
-  ) = this()
-  def this(
-    name: String,
-    value: String,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
-    valueSpan: js.UndefOr[scala.Nothing],
-    i18n: Node
+    i18n: I18nMeta
   ) = this()
   def this(
     name: String,
     value: String,
     sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
     valueSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
-    i18n: Message
-  ) = this()
-  def this(
-    name: String,
-    value: String,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
-    valueSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
-    i18n: Node
+    i18n: I18nMeta
   ) = this()
 }
 

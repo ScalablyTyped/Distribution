@@ -43,7 +43,7 @@ trait Typeofwindows extends js.Object {
     *     should contain a list of the `tabs.Tab` objects.
     */
   def getAll(): js.Promise[js.Array[typings.firefoxWebextBrowser.browser.windows.Window]] = js.native
-  def getAll(getInfo: AnonPopulateWindowTypes): js.Promise[js.Array[typings.firefoxWebextBrowser.browser.windows.Window]] = js.native
+  def getAll(getInfo: AnonWindowTypes): js.Promise[js.Array[typings.firefoxWebextBrowser.browser.windows.Window]] = js.native
   /** Gets the current window. */
   def getCurrent(): js.Promise[typings.firefoxWebextBrowser.browser.windows.Window] = js.native
   def getCurrent(getInfo: GetInfo): js.Promise[typings.firefoxWebextBrowser.browser.windows.Window] = js.native

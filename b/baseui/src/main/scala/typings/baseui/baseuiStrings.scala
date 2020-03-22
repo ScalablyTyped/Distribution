@@ -2910,9 +2910,6 @@ object baseuiStrings {
   sealed trait ol extends js.Object
   
   @js.native
-  sealed trait onChange extends js.Object
-  
-  @js.native
   sealed trait open extends js.Object
   
   @js.native
@@ -5206,8 +5203,6 @@ object baseuiStrings {
   def `object`: `object` = "object".asInstanceOf[`object`]
   @scala.inline
   def ol: ol = "ol".asInstanceOf[ol]
-  @scala.inline
-  def onChange: onChange = "onChange".asInstanceOf[onChange]
   @scala.inline
   def open: open = "open".asInstanceOf[open]
   @scala.inline

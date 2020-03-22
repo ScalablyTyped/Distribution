@@ -10,15 +10,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.relayRuntime.AnonArgsEdges[TEdge]
+  - typings.relayRuntime.AnonEdges[TEdge]
   - typings.relayRuntime.AnonEdgeData[TEdge]
-  - typings.relayRuntime.AnonArgsEdge[TEdge]
+  - typings.relayRuntime.AnonEdge[TEdge]
 */
 trait ConnectionEvent[TEdge] extends js.Object
 
 object ConnectionEvent {
   @scala.inline
-  def AnonArgsEdges[TEdge](args: Variables, edges: js.Array[TEdge], kind: fetch, pageInfo: PageInfo): ConnectionEvent[TEdge] = {
+  def AnonEdges[TEdge](args: Variables, edges: js.Array[TEdge], kind: fetch, pageInfo: PageInfo): ConnectionEvent[TEdge] = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], edges = edges.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], pageInfo = pageInfo.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ConnectionEvent[TEdge]]
@@ -30,7 +30,7 @@ object ConnectionEvent {
     __obj.asInstanceOf[ConnectionEvent[TEdge]]
   }
   @scala.inline
-  def AnonArgsEdge[TEdge](args: Variables, edge: TEdge, kind: insert): ConnectionEvent[TEdge] = {
+  def AnonEdge[TEdge](args: Variables, edge: TEdge, kind: insert): ConnectionEvent[TEdge] = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], edge = edge.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ConnectionEvent[TEdge]]

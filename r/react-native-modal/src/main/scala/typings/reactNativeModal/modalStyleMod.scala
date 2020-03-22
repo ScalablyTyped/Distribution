@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 object modalStyleMod extends js.Object {
   @js.native
   object default extends js.Object {
-    var backdrop: AnonAbsolute = js.native
-    var containerBox: AnonBackgroundColor = js.native
-    var content: AnonCenter = js.native
+    var backdrop: AnonBackgroundColor = js.native
+    var containerBox: AnonOpacity = js.native
+    var content: AnonFlex = js.native
   }
   
 }

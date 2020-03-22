@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact.choiceGroupOptionTypesMod
 
-import typings.officeUiFabricReact.AnonHeightWidth
+import typings.officeUiFabricReact.AnonWidth
 import typings.officeUiFabricReact.choiceGroupTypesMod.IChoiceGroupOption
 import typings.officeUiFabricReact.iconTypesMod.IIconProps
 import typings.react.AnonHtml
@@ -214,7 +214,7 @@ object IChoiceGroupOptionProps {
     iconProps: IIconProps = null,
     id: String = null,
     imageAlt: String = null,
-    imageSize: AnonHeightWidth = null,
+    imageSize: AnonWidth = null,
     imageSrc: String = null,
     inlist: js.Any = null,
     inputMode: none | text | tel | url | email | numeric | decimal | search = null,

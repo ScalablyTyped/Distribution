@@ -2,6 +2,8 @@ package typings.antd
 
 import typings.antd.antdStrings.blue
 import typings.antd.antdStrings.cyan
+import typings.antd.antdStrings.default
+import typings.antd.antdStrings.error
 import typings.antd.antdStrings.geekblue
 import typings.antd.antdStrings.gold
 import typings.antd.antdStrings.green
@@ -9,9 +11,12 @@ import typings.antd.antdStrings.lime
 import typings.antd.antdStrings.magenta
 import typings.antd.antdStrings.orange
 import typings.antd.antdStrings.pink
+import typings.antd.antdStrings.processing
 import typings.antd.antdStrings.purple
 import typings.antd.antdStrings.red
+import typings.antd.antdStrings.success
 import typings.antd.antdStrings.volcano
+import typings.antd.antdStrings.warning
 import typings.antd.antdStrings.yellow
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -37,6 +42,16 @@ object colorsMod extends js.Object {
   */
   trait PresetColorType extends js.Object
   
+  /* Rewritten from type alias, can be one of: 
+    - typings.antd.antdStrings.success
+    - typings.antd.antdStrings.processing
+    - typings.antd.antdStrings.error
+    - typings.antd.antdStrings.default
+    - typings.antd.antdStrings.warning
+  */
+  trait PresetStatusColorType extends js.Object
+  
   val PresetColorTypes: js.Tuple13[pink, red, yellow, orange, cyan, green, blue, purple, geekblue, magenta, volcano, gold, lime] = js.native
+  val PresetStatusColorTypes: js.Tuple5[success, processing, error, default, warning] = js.native
 }
 

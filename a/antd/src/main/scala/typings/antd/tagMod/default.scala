@@ -9,9 +9,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("antd/lib/tag", JSImport.Default)
 @js.native
-class default protected () extends Tag {
-  def this(props: TagProps) = this()
-}
+class default () extends Tag
 
 /* static members */
 @JSImport("antd/lib/tag", JSImport.Default)

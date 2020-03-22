@@ -1,9 +1,9 @@
 package typings.serialport.mod
 
 import typings.node.streamMod.Transform
-import typings.serialport.AnonAscii
+import typings.serialport.Anon0
 import typings.serialport.AnonDelimiter
-import typings.serialport.AnonDelimiterArray
+import typings.serialport.AnonEncoding
 import typings.serialport.AnonLength
 import typings.serialport.AnonRegex
 import scala.scalajs.js
@@ -28,12 +28,12 @@ object parsers extends js.Object {
   
   @js.native
   class Readline protected () extends Delimiter {
-    def this(options: AnonAscii) = this()
+    def this(options: AnonEncoding) = this()
   }
   
   @js.native
   class Ready protected () extends Transform {
-    def this(options: AnonDelimiterArray) = this()
+    def this(options: Anon0) = this()
   }
   
   @js.native

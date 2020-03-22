@@ -179,7 +179,7 @@ object gradientsMod extends js.Object {
     * ```
     */
   /** @doc {heading: 'Training', subheading: 'Gradients'} */
-  def valueAndGrads[O /* <: Tensor[Rank] */](f: js.Function1[/* repeated */ Tensor[Rank], O]): js.Function2[/* args */ js.Array[Tensor[Rank]], /* dy */ js.UndefOr[O], AnonGradsValueArray[O]] = js.native
+  def valueAndGrads[O /* <: Tensor[Rank] */](f: js.Function1[/* repeated */ Tensor[Rank], O]): js.Function2[/* args */ js.Array[Tensor[Rank]], /* dy */ js.UndefOr[O], AnonGradsValue[O]] = js.native
   /**
     * Computes and returns the gradient of f(x) with respect to the list of
     * trainable variables provided by `varList`. If no list is provided, it
@@ -209,7 +209,7 @@ object gradientsMod extends js.Object {
     *     that map the names of the non-trainable variables to `null`.
     */
   /** @doc {heading: 'Training', subheading: 'Gradients'} */
-  def variableGrads(f: js.Function0[Scalar]): AnonGradsValue = js.native
-  def variableGrads(f: js.Function0[Scalar], varList: js.Array[Variable[Rank]]): AnonGradsValue = js.native
+  def variableGrads(f: js.Function0[Scalar]): AnonValue = js.native
+  def variableGrads(f: js.Function0[Scalar], varList: js.Array[Variable[Rank]]): AnonValue = js.native
 }
 

@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object peoplePickerExampleDataMod extends js.Object {
   val mru: js.Array[IPersonaProps] = js.native
-  val people: js.Array[IPersonaProps with AnonKeyNumberString] = js.native
+  val people: js.Array[IPersonaPropskeystringnum] = js.native
 }
 

@@ -1,7 +1,7 @@
 package typings.officeUiFabricReact.detailsRowTypesMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.officeUiFabricReact.AnonCallbackEvent
+import typings.officeUiFabricReact.AnonEventName
 import typings.officeUiFabricReact.detailsListTypesMod.CheckboxVisibility
 import typings.officeUiFabricReact.detailsListTypesMod.IColumn
 import typings.officeUiFabricReact.detailsRowBaseMod.DetailsRowBase
@@ -63,7 +63,8 @@ object IDetailsRowProps {
     dragDropEvents: IDragDropEvents = null,
     dragDropHelper: IDragDropHelper = null,
     enableUpdateAnimations: js.UndefOr[Boolean] = js.undefined,
-    eventsToRegister: js.Array[AnonCallbackEvent] = null,
+    eventsToRegister: js.Array[AnonEventName] = null,
+    getCellValueKey: (/* item */ js.UndefOr[js.Any], /* index */ js.UndefOr[Double], /* column */ js.UndefOr[IColumn]) => String = null,
     getRowAriaDescribedBy: /* item */ js.Any => String = null,
     getRowAriaLabel: /* item */ js.Any => String = null,
     groupNestingDepth: Int | Double = null,
@@ -71,6 +72,7 @@ object IDetailsRowProps {
     onDidMount: /* row */ js.UndefOr[DetailsRowBase] => Unit = null,
     onRenderCheck: /* props */ IDetailsRowCheckProps => Element = null,
     onRenderDetailsCheckbox: (/* props */ js.UndefOr[IDetailsCheckboxProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IDetailsCheckboxProps], Element | Null]]) => Element | Null = null,
+    onRenderItemColumn: (/* item */ js.UndefOr[js.Any], /* index */ js.UndefOr[Double], /* column */ js.UndefOr[IColumn]) => ReactNode = null,
     onWillUnmount: /* row */ js.UndefOr[DetailsRowBase] => Unit = null,
     rowFieldsAs: ComponentType[IDetailsRowFieldsProps] = null,
     rowWidth: Int | Double = null,
@@ -94,6 +96,7 @@ object IDetailsRowProps {
     if (dragDropHelper != null) __obj.updateDynamic("dragDropHelper")(dragDropHelper.asInstanceOf[js.Any])
     if (!js.isUndefined(enableUpdateAnimations)) __obj.updateDynamic("enableUpdateAnimations")(enableUpdateAnimations.asInstanceOf[js.Any])
     if (eventsToRegister != null) __obj.updateDynamic("eventsToRegister")(eventsToRegister.asInstanceOf[js.Any])
+    if (getCellValueKey != null) __obj.updateDynamic("getCellValueKey")(js.Any.fromFunction3(getCellValueKey))
     if (getRowAriaDescribedBy != null) __obj.updateDynamic("getRowAriaDescribedBy")(js.Any.fromFunction1(getRowAriaDescribedBy))
     if (getRowAriaLabel != null) __obj.updateDynamic("getRowAriaLabel")(js.Any.fromFunction1(getRowAriaLabel))
     if (groupNestingDepth != null) __obj.updateDynamic("groupNestingDepth")(groupNestingDepth.asInstanceOf[js.Any])
@@ -101,6 +104,7 @@ object IDetailsRowProps {
     if (onDidMount != null) __obj.updateDynamic("onDidMount")(js.Any.fromFunction1(onDidMount))
     if (onRenderCheck != null) __obj.updateDynamic("onRenderCheck")(js.Any.fromFunction1(onRenderCheck))
     if (onRenderDetailsCheckbox != null) __obj.updateDynamic("onRenderDetailsCheckbox")(js.Any.fromFunction2(onRenderDetailsCheckbox))
+    if (onRenderItemColumn != null) __obj.updateDynamic("onRenderItemColumn")(js.Any.fromFunction3(onRenderItemColumn))
     if (onWillUnmount != null) __obj.updateDynamic("onWillUnmount")(js.Any.fromFunction1(onWillUnmount))
     if (rowFieldsAs != null) __obj.updateDynamic("rowFieldsAs")(rowFieldsAs.asInstanceOf[js.Any])
     if (rowWidth != null) __obj.updateDynamic("rowWidth")(rowWidth.asInstanceOf[js.Any])

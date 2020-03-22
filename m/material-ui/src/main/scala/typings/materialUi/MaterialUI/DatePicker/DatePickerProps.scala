@@ -1,6 +1,6 @@
 package typings.materialUi.MaterialUI.DatePicker
 
-import typings.materialUi.AnonLocales
+import typings.materialUi.AnonCall
 import typings.materialUi.MaterialUI.propTypes.utils
 import typings.materialUi.materialUiStrings.`inline`
 import typings.materialUi.materialUiStrings.dialog
@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation._
 
 trait DatePickerProps extends js.Object {
   // <TextField/> is the element that get the 'other' properties
-  var DateTimeFormat: js.UndefOr[AnonLocales] = js.undefined
+  var DateTimeFormat: js.UndefOr[AnonCall] = js.undefined
   var autoOk: js.UndefOr[Boolean] = js.undefined
   var cancelLabel: js.UndefOr[ReactNode] = js.undefined
   // From <TextField />
@@ -76,7 +76,7 @@ trait DatePickerProps extends js.Object {
 object DatePickerProps {
   @scala.inline
   def apply(
-    DateTimeFormat: AnonLocales = null,
+    DateTimeFormat: AnonCall = null,
     autoOk: js.UndefOr[Boolean] = js.undefined,
     cancelLabel: ReactNode = null,
     className: String = null,

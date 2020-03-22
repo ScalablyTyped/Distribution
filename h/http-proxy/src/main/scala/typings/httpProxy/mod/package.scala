@@ -13,5 +13,5 @@ package object mod {
     scala.Unit
   ]
   type ProxyTarget = typings.httpProxy.mod.ProxyTargetUrl | typings.httpProxy.mod.ProxyTargetDetailed
-  type ProxyTargetUrl = java.lang.String | typings.std.Partial[typings.node.urlMod.Url]
+  type ProxyTargetUrl = java.lang.String | typings.httpProxy.PartialUrl
 }

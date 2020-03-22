@@ -22,14 +22,17 @@ class Model () extends VDomModel {
     * Trigger a rerender of the model.
     */
   var _triggerChange: js.Any = js.native
+  def editor(): js.Any = js.native
+  def editor(editor: IEditor): js.Any = js.native
   /**
     * The current editor for the application editor tracker.
     */
-  var editor: IEditor | Null = js.native
+  @JSName("editor")
+  def editor_Union(): IEditor | Null = js.native
   /**
     * The current mode for the editor. If no editor is present,
     * returns the empty string.
     */
-  val mode: String = js.native
+  def mode(): String = js.native
 }
 

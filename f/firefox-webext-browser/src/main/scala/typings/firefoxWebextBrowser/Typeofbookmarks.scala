@@ -22,12 +22,12 @@ trait Typeofbookmarks extends js.Object {
   /** Fired when a bookmark or folder is created. */
   val onCreated: WebExtEvent[js.Function2[/* id */ String, /* bookmark */ BookmarkTreeNode, Unit]] = js.native
   /** Fired when a bookmark or folder is moved to a different parent folder. */
-  val onMoved: WebExtEvent[js.Function2[/* id */ String, /* moveInfo */ AnonIndexOldIndex, Unit]] = js.native
+  val onMoved: WebExtEvent[js.Function2[/* id */ String, /* moveInfo */ AnonOldIndex, Unit]] = js.native
   /**
     * Fired when a bookmark or folder is removed. When a folder is removed recursively, a single notification is fired
     * for the folder, and none for its contents.
     */
-  val onRemoved: WebExtEvent[js.Function2[/* id */ String, /* removeInfo */ AnonIndexNode, Unit]] = js.native
+  val onRemoved: WebExtEvent[js.Function2[/* id */ String, /* removeInfo */ AnonNode, Unit]] = js.native
   /**
     * Creates a bookmark or folder under the specified parentId. If url is NULL or missing, it will be a folder.
     */

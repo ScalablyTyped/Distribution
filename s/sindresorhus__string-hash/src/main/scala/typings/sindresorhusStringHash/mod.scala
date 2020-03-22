@@ -1,6 +1,7 @@
 package typings.sindresorhusStringHash
 
-import typings.sindresorhusFnv1a.AnonDefault
+import typings.sindresorhusFnv1a.mod.Options
+import typings.std.BigInt
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,11 +9,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@sindresorhus/string-hash", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
-  // TODO: remove this in the next major version, refactor the whole definition to:
-  // declare function fnv1a(string: string): number;
-  // export = fnv1a;
-  @JSName("default")
-  var default_Original: AnonDefault = js.native
   /**
   	[FNV-1a](https://en.wikipedia.org/wiki/Fowler%E2%80%93Noll%E2%80%93Vo_hash_function) non-cryptographic hash function.
   	@returns The hash as a positive integer.
@@ -20,23 +16,22 @@ object mod extends js.Object {
   	```
   	import fnv1a = require('@sindresorhus/fnv1a');
   	fnv1a('🦄🌈');
-  	//=> 582881315
+  	//=> 2868248295
   	```
   	*/
   def apply(string: String): Double = js.native
   /**
   	[FNV-1a](https://en.wikipedia.org/wiki/Fowler%E2%80%93Noll%E2%80%93Vo_hash_function) non-cryptographic hash function.
-  	@returns The hash as a positive integer.
+  	Generate a larger hash using `BigInt`.
+  	@returns The hash as a positive BigInt.
   	@example
   	```
   	import fnv1a = require('@sindresorhus/fnv1a');
-  	fnv1a('🦄🌈');
-  	//=> 582881315
+  	fnv1a.bigInt('🦄🌈', {size: 128});
+  	//=> 13487074350300261116944693128525960095n
   	```
   	*/
-  // TODO: remove this in the next major version, refactor the whole definition to:
-  // declare function fnv1a(string: string): number;
-  // export = fnv1a;
-  def default(string: String): Double = js.native
+  def bigInt(string: String): BigInt = js.native
+  def bigInt(string: String, options: Options): BigInt = js.native
 }
 

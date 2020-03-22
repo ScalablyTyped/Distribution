@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "imagemin-jpegtran"
-version := "5.0-dt-20180825Z-ecb4df"
+version := "5.0-dt-20180825Z-0d7080"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "imagemin" % "7.0-dt-20190909Z-855eb8",
-  "org.scalablytyped" %%% "node" % "13.7-dt-20200211Z-d6af7e",
-  "org.scalablytyped" %%% "std" % "3.7-1b8369")
+  "org.scalablytyped" %%% "imagemin" % "7.0-dt-20190909Z-9808a6",
+  "org.scalablytyped" %%% "node" % "13.7-dt-20200211Z-b30bde",
+  "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -1,7 +1,7 @@
 package typings.reactLazylog.lineNumberMod
 
 import typings.react.mod.Component
-import typings.std.Partial
+import typings.reactLazylog.PartialLineNumberProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,6 +15,6 @@ class default ()
 @JSImport("react-lazylog/build/LineNumber", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: Partial[LineNumberProps] = js.native
+  var defaultProps: PartialLineNumberProps = js.native
 }
 

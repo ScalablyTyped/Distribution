@@ -10,7 +10,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object serializersTypesReferenceMod extends js.Object {
   @js.native
-  class ReferenceTypeSerializer () extends TypeSerializerComponent[ReferenceType]
+  class ReferenceTypeSerializer () extends TypeSerializerComponent[ReferenceType] {
+    def toObject(`type`: ReferenceType, obj: PickReferenceTypetypePart): typings.typedoc.schemaMod.ReferenceType = js.native
+  }
   
 }
 

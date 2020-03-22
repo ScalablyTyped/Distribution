@@ -1,10 +1,8 @@
 package typings.ts3NodejsLibrary.commandMod.Command
 
-import typings.std.Partial
-import typings.std.Pick
 import typings.ts3NodejsLibrary.AnonKey
-import typings.ts3NodejsLibrary.queryResponseMod.QueryResponseTypes
-import typings.ts3NodejsLibrary.ts3NodejsLibraryStrings.raw
+import typings.ts3NodejsLibrary.PartialPartialQueryRespon
+import typings.ts3NodejsLibrary.PickParserArgumentraw
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,6 +41,11 @@ object ^ extends js.Object {
     */
   def getParsers(): Parsers = js.native
   /**
+    * parses a query response
+    * @param data the query response received
+    */
+  def parse(hasRaw: PickParserArgumentraw): js.Array[PartialPartialQueryRespon] = js.native
+  /**
     * parses a number
     * @param value string to parse
     */
@@ -52,13 +55,12 @@ object ^ extends js.Object {
     * @param value string to parse
     */
   def parseNumberArray(value: String): js.Array[Double] = js.native
-  def parseRecursive(value: String): js.Array[Partial[Partial[QueryResponseTypes]]] = js.native
+  def parseRecursive(value: String): js.Array[PartialPartialQueryRespon] = js.native
   /**
     *
     * @param param0 the custom snapshot response parser
     */
-  @JSName("parseSnapshotCreate")
-  def parseSnapshotCreate_raw(hasRaw: Pick[ParserArgument, raw]): js.Array[Partial[Partial[QueryResponseTypes]]] = js.native
+  def parseSnapshotCreate(hasRaw: PickParserArgumentraw): js.Array[PartialPartialQueryRespon] = js.native
   /**
     * parses a string value
     * @param value string to parse
@@ -76,12 +78,6 @@ object ^ extends js.Object {
     * @param v the value which should get parsed
     */
   def parseValue(k: String, v: String): js.Any = js.native
-  /**
-    * parses a query response
-    * @param data the query response received
-    */
-  @JSName("parse")
-  def parse_raw(hasRaw: Pick[ParserArgument, raw]): js.Array[Partial[Partial[QueryResponseTypes]]] = js.native
   /** unescapes a string */
   def unescape(str: String): String = js.native
 }

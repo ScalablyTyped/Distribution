@@ -1,6 +1,6 @@
 package typings.reactNativeChartsWrapper.mod
 
-import typings.reactNativeChartsWrapper.AnonLEFTBOTTOM
+import typings.reactNativeChartsWrapper.AnonLabel
 import typings.reactNativeChartsWrapper.AnonLineLength
 import typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.DAYS
 import typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.HOURS
@@ -32,7 +32,7 @@ trait Axis extends js.Object {
   var gridLineWidth: js.UndefOr[Double] = js.undefined
   var labelCount: js.UndefOr[Double] = js.undefined
   var labelCountForce: js.UndefOr[Boolean] = js.undefined
-  var limitLines: js.UndefOr[js.Array[AnonLEFTBOTTOM]] = js.undefined
+  var limitLines: js.UndefOr[js.Array[AnonLabel]] = js.undefined
   var since: js.UndefOr[Double] = js.undefined
   var textColor: js.UndefOr[Color] = js.undefined
   var textSize: js.UndefOr[Double] = js.undefined
@@ -64,7 +64,7 @@ object Axis {
     gridLineWidth: Int | Double = null,
     labelCount: Int | Double = null,
     labelCountForce: js.UndefOr[Boolean] = js.undefined,
-    limitLines: js.Array[AnonLEFTBOTTOM] = null,
+    limitLines: js.Array[AnonLabel] = null,
     since: Int | Double = null,
     textColor: Int | Double = null,
     textSize: Int | Double = null,

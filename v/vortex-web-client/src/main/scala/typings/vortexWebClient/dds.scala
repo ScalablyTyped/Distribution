@@ -95,9 +95,9 @@ object dds extends js.Object {
   
   var DataReaderQos: EntityQos = js.native
   var DataWriterQos: EntityQos = js.native
-  var Durability: TypeofClassDurability = js.native
-  var History: TypeofClassHistory = js.native
-  var Reliability: TypeofClassReliability = js.native
+  var Durability: TypeofDurability = js.native
+  var History: TypeofHistory = js.native
+  var Reliability: TypeofReliability = js.native
   var TopicQos: EntityQos = js.native
   var VERSION: String = js.native
   var runtime: AnonRuntime = js.native

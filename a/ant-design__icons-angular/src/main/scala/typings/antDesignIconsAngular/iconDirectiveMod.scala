@@ -4,9 +4,9 @@ import typings.angularCore.mod.ElementRef
 import typings.angularCore.mod.OnChanges
 import typings.angularCore.mod.Renderer2
 import typings.angularCore.mod.SimpleChanges
-import typings.antDesignIconsAngular.antDesignIconsAngularTypesMod.IconDefinition
-import typings.antDesignIconsAngular.antDesignIconsAngularTypesMod.ThemeType
 import typings.antDesignIconsAngular.iconServiceMod.IconService
+import typings.antDesignIconsAngular.typesMod.IconDefinition
+import typings.antDesignIconsAngular.typesMod.ThemeType
 import typings.std.SVGElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

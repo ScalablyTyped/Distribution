@@ -78,10 +78,10 @@ object templateParserMod extends js.Object {
     var _htmlParser: js.Any = js.native
     var _reflector: js.Any = js.native
     var _schemaRegistry: js.Any = js.native
-    val expressionParser: Parser = js.native
     var transforms: js.Array[TemplateAstVisitor] = js.native
     def expandHtml(htmlAstWithErrors: ParseTreeResult): ParseTreeResult = js.native
     def expandHtml(htmlAstWithErrors: ParseTreeResult, forced: Boolean): ParseTreeResult = js.native
+    def expressionParser(): Parser = js.native
     def getInterpolationConfig(component: CompileDirectiveMetadata): js.UndefOr[InterpolationConfig] = js.native
     def parse(
       component: CompileDirectiveMetadata,

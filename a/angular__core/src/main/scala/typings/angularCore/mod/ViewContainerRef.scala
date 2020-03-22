@@ -8,31 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class ViewContainerRef () extends js.Object {
   /**
-    * Anchor element that specifies the location of this container in the containing view.
-    * Each view container can have only one anchor element, and each anchor element
-    * can have only a single view container.
-    *
-    * Root elements of views attached to this container become siblings of the anchor element in
-    * the rendered view.
-    *
-    * Access the `ViewContainerRef` of an element by placing a `Directive` injected
-    * with `ViewContainerRef` on the element, or use a `ViewChild` query.
-    *
-    * <!-- TODO: rename to anchorElement -->
-    */
-  val element: ElementRef[_] = js.native
-  /**
-    * The [dependency injector](guide/glossary#injector) for this view container.
-    */
-  val injector: Injector = js.native
-  /**
-    * Reports how many views are currently attached to this container.
-    * @returns The number of views.
-    */
-  val length: Double = js.native
-  /** @deprecated No replacement */
-  val parentInjector: Injector = js.native
-  /**
     * Destroys all views in this container.
     */
   def clear(): Unit = js.native
@@ -86,6 +61,20 @@ abstract class ViewContainerRef () extends js.Object {
   def detach(): ViewRef | Null = js.native
   def detach(index: Double): ViewRef | Null = js.native
   /**
+    * Anchor element that specifies the location of this container in the containing view.
+    * Each view container can have only one anchor element, and each anchor element
+    * can have only a single view container.
+    *
+    * Root elements of views attached to this container become siblings of the anchor element in
+    * the rendered view.
+    *
+    * Access the `ViewContainerRef` of an element by placing a `Directive` injected
+    * with `ViewContainerRef` on the element, or use a `ViewChild` query.
+    *
+    * <!-- TODO: rename to anchorElement -->
+    */
+  def element(): ElementRef[_] = js.native
+  /**
     * Retrieves a view from this container.
     * @param index The 0-based index of the view to retrieve.
     * @returns The `ViewRef` instance, or null if the index is out of range.
@@ -99,6 +88,10 @@ abstract class ViewContainerRef () extends js.Object {
     */
   def indexOf(viewRef: ViewRef): Double = js.native
   /**
+    * The [dependency injector](guide/glossary#injector) for this view container.
+    */
+  def injector(): Injector = js.native
+  /**
     * Inserts a view into this container.
     * @param viewRef The view to insert.
     * @param index The 0-based index at which to insert the view.
@@ -109,12 +102,19 @@ abstract class ViewContainerRef () extends js.Object {
   def insert(viewRef: ViewRef): ViewRef = js.native
   def insert(viewRef: ViewRef, index: Double): ViewRef = js.native
   /**
+    * Reports how many views are currently attached to this container.
+    * @returns The number of views.
+    */
+  def length(): Double = js.native
+  /**
     * Moves a view to a new location in this container.
     * @param viewRef The view to move.
     * @param index The 0-based index of the new location.
     * @returns The moved `ViewRef` instance.
     */
   def move(viewRef: ViewRef, currentIndex: Double): ViewRef = js.native
+  /** @deprecated No replacement */
+  def parentInjector(): Injector = js.native
   /**
     * Destroys a view attached to this container
     * @param index The 0-based index of the view to destroy.

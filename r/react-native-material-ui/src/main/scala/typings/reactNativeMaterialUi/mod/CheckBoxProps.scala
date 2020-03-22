@@ -1,6 +1,6 @@
 package typings.reactNativeMaterialUi.mod
 
-import typings.reactNativeMaterialUi.AnonContainerIcon
+import typings.reactNativeMaterialUi.AnonLabel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ trait CheckBoxProps extends js.Object {
   var checkedIcon: js.UndefOr[String] = js.undefined
   var disabled: js.UndefOr[Boolean] = js.undefined
   var label: String
-  var style: js.UndefOr[AnonContainerIcon] = js.undefined
+  var style: js.UndefOr[AnonLabel] = js.undefined
   var uncheckedIcon: js.UndefOr[String] = js.undefined
   var value: String | Double
   def onCheck(checked: Boolean): Unit
@@ -25,7 +25,7 @@ object CheckBoxProps {
     checked: js.UndefOr[Boolean] = js.undefined,
     checkedIcon: String = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
-    style: AnonContainerIcon = null,
+    style: AnonLabel = null,
     uncheckedIcon: String = null
   ): CheckBoxProps = {
     val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], onCheck = js.Any.fromFunction1(onCheck), value = value.asInstanceOf[js.Any])

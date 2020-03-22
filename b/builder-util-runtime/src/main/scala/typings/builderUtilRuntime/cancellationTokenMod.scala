@@ -22,12 +22,11 @@ object cancellationTokenMod extends js.Object {
     def this(parent: CancellationToken) = this()
     var _cancelled: js.Any = js.native
     var _parent: js.Any = js.native
-    val cancelled: Boolean = js.native
     var onCancel: js.Any = js.native
-    var parent: CancellationToken = js.native
     var parentCancelHandler: js.Any = js.native
     var removeParentCancelHandler: js.Any = js.native
     def cancel(): Unit = js.native
+    def cancelled(): Boolean = js.native
     def createPromise[R](
       callback: js.Function3[
           /* resolve */ js.Function1[/* thenableOrResult */ js.UndefOr[R], Unit], 
@@ -37,6 +36,7 @@ object cancellationTokenMod extends js.Object {
         ]
     ): js.Promise[R] = js.native
     def dispose(): Unit = js.native
+    def parent(value: CancellationToken): js.Any = js.native
   }
   
 }

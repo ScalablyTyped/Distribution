@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IconsProps extends js.Object {
-  var icon: IconKey
+  var icon: IconKey = js.native
 }
 
 object IconsProps {

@@ -1,11 +1,9 @@
 package typings.reactNavigationStack
 
-import typings.reactNavigationStack.createPointerEventsContainerMod.PointerEvents
-import typings.reactNavigationStack.typesMod.HeaderBackgroundTransitionPreset
-import typings.reactNavigationStack.typesMod.HeaderLayoutPreset
-import typings.reactNavigationStack.typesMod.HeaderMode
-import typings.reactNavigationStack.typesMod.HeaderTransitionPreset
-import typings.reactNavigationStack.typesMod.NavigationStackEventName
+import typings.reactNavigationStack.vendorTypesMod.GestureDirection
+import typings.reactNavigationStack.vendorTypesMod.NavigationStackEventName
+import typings.reactNavigationStack.vendorTypesMod.StackCardMode
+import typings.reactNavigationStack.vendorTypesMod.StackHeaderMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,28 +13,22 @@ object reactNavigationStackStrings {
   sealed trait assertive extends js.Object
   
   @js.native
-  sealed trait auto extends PointerEvents
-  
-  @js.native
-  sealed trait balanced extends js.Object
+  sealed trait auto extends js.Object
   
   @js.native
   sealed trait `box-none` extends js.Object
   
   @js.native
-  sealed trait `box-only` extends PointerEvents
+  sealed trait `box-only` extends js.Object
   
   @js.native
   sealed trait button extends js.Object
   
   @js.native
-  sealed trait card extends js.Object
+  sealed trait card extends StackCardMode
   
   @js.native
-  sealed trait center extends HeaderLayoutPreset
-  
-  @js.native
-  sealed trait clip extends js.Object
+  sealed trait center extends js.Object
   
   @js.native
   sealed trait didBlur extends NavigationStackEventName
@@ -45,31 +37,19 @@ object reactNavigationStackStrings {
   sealed trait didFocus extends NavigationStackEventName
   
   @js.native
-  sealed trait fade extends HeaderBackgroundTransitionPreset
+  sealed trait float extends StackHeaderMode
   
   @js.native
-  sealed trait `fade-in-place` extends HeaderTransitionPreset
+  sealed trait horizontal extends GestureDirection
   
   @js.native
-  sealed trait float extends HeaderMode
+  sealed trait `horizontal-inverted` extends GestureDirection
   
   @js.native
-  sealed trait head extends js.Object
+  sealed trait left extends js.Object
   
   @js.native
-  sealed trait highQuality extends js.Object
-  
-  @js.native
-  sealed trait inverted extends js.Object
-  
-  @js.native
-  sealed trait left extends HeaderLayoutPreset
-  
-  @js.native
-  sealed trait middle extends js.Object
-  
-  @js.native
-  sealed trait modal extends js.Object
+  sealed trait modal extends StackCardMode
   
   @js.native
   sealed trait no extends js.Object
@@ -78,15 +58,16 @@ object reactNavigationStackStrings {
   sealed trait `no-hide-descendants` extends js.Object
   
   @js.native
-  sealed trait none
-    extends HeaderMode
-       with PointerEvents
-  
-  @js.native
-  sealed trait normal extends js.Object
+  sealed trait none extends StackHeaderMode
   
   @js.native
   sealed trait polite extends js.Object
+  
+  @js.native
+  sealed trait pop extends js.Object
+  
+  @js.native
+  sealed trait push extends js.Object
   
   @js.native
   sealed trait radiobutton_checked extends js.Object
@@ -98,22 +79,19 @@ object reactNavigationStackStrings {
   sealed trait refocus extends js.Object
   
   @js.native
-  sealed trait screen extends HeaderMode
+  sealed trait screen extends StackHeaderMode
   
   @js.native
-  sealed trait simple extends js.Object
+  sealed trait spring extends js.Object
   
   @js.native
-  sealed trait tail extends js.Object
+  sealed trait timing extends js.Object
   
   @js.native
-  sealed trait toggle extends HeaderBackgroundTransitionPreset
+  sealed trait vertical extends GestureDirection
   
   @js.native
-  sealed trait translate extends HeaderBackgroundTransitionPreset
-  
-  @js.native
-  sealed trait uikit extends HeaderTransitionPreset
+  sealed trait `vertical-inverted` extends GestureDirection
   
   @js.native
   sealed trait willBlur extends NavigationStackEventName
@@ -129,8 +107,6 @@ object reactNavigationStackStrings {
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
   @scala.inline
-  def balanced: balanced = "balanced".asInstanceOf[balanced]
-  @scala.inline
   def `box-none`: `box-none` = "box-none".asInstanceOf[`box-none`]
   @scala.inline
   def `box-only`: `box-only` = "box-only".asInstanceOf[`box-only`]
@@ -141,27 +117,17 @@ object reactNavigationStackStrings {
   @scala.inline
   def center: center = "center".asInstanceOf[center]
   @scala.inline
-  def clip: clip = "clip".asInstanceOf[clip]
-  @scala.inline
   def didBlur: didBlur = "didBlur".asInstanceOf[didBlur]
   @scala.inline
   def didFocus: didFocus = "didFocus".asInstanceOf[didFocus]
   @scala.inline
-  def fade: fade = "fade".asInstanceOf[fade]
-  @scala.inline
-  def `fade-in-place`: `fade-in-place` = "fade-in-place".asInstanceOf[`fade-in-place`]
-  @scala.inline
   def float: float = "float".asInstanceOf[float]
   @scala.inline
-  def head: head = "head".asInstanceOf[head]
+  def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   @scala.inline
-  def highQuality: highQuality = "highQuality".asInstanceOf[highQuality]
-  @scala.inline
-  def inverted: inverted = "inverted".asInstanceOf[inverted]
+  def `horizontal-inverted`: `horizontal-inverted` = "horizontal-inverted".asInstanceOf[`horizontal-inverted`]
   @scala.inline
   def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def middle: middle = "middle".asInstanceOf[middle]
   @scala.inline
   def modal: modal = "modal".asInstanceOf[modal]
   @scala.inline
@@ -171,9 +137,11 @@ object reactNavigationStackStrings {
   @scala.inline
   def none: none = "none".asInstanceOf[none]
   @scala.inline
-  def normal: normal = "normal".asInstanceOf[normal]
-  @scala.inline
   def polite: polite = "polite".asInstanceOf[polite]
+  @scala.inline
+  def pop: pop = "pop".asInstanceOf[pop]
+  @scala.inline
+  def push: push = "push".asInstanceOf[push]
   @scala.inline
   def radiobutton_checked: radiobutton_checked = "radiobutton_checked".asInstanceOf[radiobutton_checked]
   @scala.inline
@@ -183,15 +151,13 @@ object reactNavigationStackStrings {
   @scala.inline
   def screen: screen = "screen".asInstanceOf[screen]
   @scala.inline
-  def simple: simple = "simple".asInstanceOf[simple]
+  def spring: spring = "spring".asInstanceOf[spring]
   @scala.inline
-  def tail: tail = "tail".asInstanceOf[tail]
+  def timing: timing = "timing".asInstanceOf[timing]
   @scala.inline
-  def toggle: toggle = "toggle".asInstanceOf[toggle]
+  def vertical: vertical = "vertical".asInstanceOf[vertical]
   @scala.inline
-  def translate: translate = "translate".asInstanceOf[translate]
-  @scala.inline
-  def uikit: uikit = "uikit".asInstanceOf[uikit]
+  def `vertical-inverted`: `vertical-inverted` = "vertical-inverted".asInstanceOf[`vertical-inverted`]
   @scala.inline
   def willBlur: willBlur = "willBlur".asInstanceOf[willBlur]
   @scala.inline

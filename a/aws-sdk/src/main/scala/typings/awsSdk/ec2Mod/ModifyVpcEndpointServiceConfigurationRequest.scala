@@ -33,13 +33,13 @@ trait ModifyVpcEndpointServiceConfigurationRequest extends js.Object {
   /**
     * The ID of the service.
     */
-  var ServiceId: typings.awsSdk.ec2Mod.ServiceId = js.native
+  var ServiceId: VpcEndpointServiceId = js.native
 }
 
 object ModifyVpcEndpointServiceConfigurationRequest {
   @scala.inline
   def apply(
-    ServiceId: ServiceId,
+    ServiceId: VpcEndpointServiceId,
     AcceptanceRequired: js.UndefOr[scala.Boolean] = js.undefined,
     AddNetworkLoadBalancerArns: ValueStringList = null,
     DryRun: js.UndefOr[scala.Boolean] = js.undefined,

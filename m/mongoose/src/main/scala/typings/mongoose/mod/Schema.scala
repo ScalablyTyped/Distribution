@@ -3,7 +3,7 @@ package typings.mongoose.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.mongodb.mod.MongoError
 import typings.mongoose.AnonAutoIndexId
-import typings.mongoose.AnonExpires
+import typings.mongoose.AnonDictother
 import typings.mongoose.AnonJ
 import typings.mongoose.AnonLength
 import typings.mongoose.mongooseStrings._id
@@ -92,7 +92,7 @@ trait Schema[T] extends EventEmitter {
     *   expires option into seconds for the expireAfterSeconds in the above link.
     */
   def index(fields: js.Any): this.type = js.native
-  def index(fields: js.Any, options: AnonExpires): this.type = js.native
+  def index(fields: js.Any, options: AnonDictother): this.type = js.native
   /** Compiles indexes from fields and schema-level indexes */
   def indexes(): js.Array[_] = js.native
   /**

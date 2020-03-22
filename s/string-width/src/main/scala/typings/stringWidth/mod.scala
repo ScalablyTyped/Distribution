@@ -11,7 +11,7 @@ object mod extends js.Object {
   // declare function stringWidth(string: string): number;
   // export = stringWidth;
   @JSName("default")
-  var default_Original: AnonDefault = js.native
+  var default_Original: AnonCall = js.native
   /**
   	Get the visual width of a string - the number of columns required to display it.
   	Some Unicode characters are [fullwidth](https://en.wikipedia.org/wiki/Halfwidth_and_fullwidth_forms) and use double the normal width. [ANSI escape codes](https://en.wikipedia.org/wiki/ANSI_escape_code) are stripped and doesn't affect the width.

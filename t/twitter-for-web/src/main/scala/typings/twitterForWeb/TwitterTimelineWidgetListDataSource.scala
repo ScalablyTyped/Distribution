@@ -6,14 +6,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.twitterForWeb.AnonList
+  - typings.twitterForWeb.AnonOwnerScreenName
   - typings.twitterForWeb.AnonId
 */
 trait TwitterTimelineWidgetListDataSource extends _TwitterTimelineWidgetDataSource
 
 object TwitterTimelineWidgetListDataSource {
   @scala.inline
-  def AnonList(ownerScreenName: String, slug: String, sourceType: list): TwitterTimelineWidgetListDataSource = {
+  def AnonOwnerScreenName(ownerScreenName: String, slug: String, sourceType: list): TwitterTimelineWidgetListDataSource = {
     val __obj = js.Dynamic.literal(ownerScreenName = ownerScreenName.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any], sourceType = sourceType.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TwitterTimelineWidgetListDataSource]

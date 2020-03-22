@@ -1,22 +1,19 @@
 package typings.rcTable
 
-import typings.rcTable.interfaceMod.ColumnType
-import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait AnonChildren extends js.Object {
-  var children: js.Any
-  var columns: js.Array[ColumnType[Record[String, _]]]
+trait AnonChildren[RecordType /* <: /* import warning: importer.ImportType#apply Failed type conversion: {  children ? :std.Array<RecordType>} */ js.Any */] extends js.Object {
+  var children: js.UndefOr[js.Array[RecordType]] = js.undefined
 }
 
 object AnonChildren {
   @scala.inline
-  def apply(children: js.Any, columns: js.Array[ColumnType[Record[String, _]]]): AnonChildren = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], columns = columns.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[AnonChildren]
+  def apply[RecordType /* <: /* import warning: importer.ImportType#apply Failed type conversion: {  children ? :std.Array<RecordType>} */ js.Any */](children: js.Array[RecordType] = null): AnonChildren[RecordType] = {
+    val __obj = js.Dynamic.literal()
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AnonChildren[RecordType]]
   }
 }
 

@@ -12,6 +12,7 @@ trait AnonCollapse extends js.Object {
   var filterTitle: String
   var selectAll: String
   var selectInvert: String
+  var selectionAll: String
   var sortTitle: String
 }
 
@@ -25,9 +26,10 @@ object AnonCollapse {
     filterTitle: String,
     selectAll: String,
     selectInvert: String,
+    selectionAll: String,
     sortTitle: String
   ): AnonCollapse = {
-    val __obj = js.Dynamic.literal(collapse = collapse.asInstanceOf[js.Any], expand = expand.asInstanceOf[js.Any], filterConfirm = filterConfirm.asInstanceOf[js.Any], filterReset = filterReset.asInstanceOf[js.Any], filterTitle = filterTitle.asInstanceOf[js.Any], selectAll = selectAll.asInstanceOf[js.Any], selectInvert = selectInvert.asInstanceOf[js.Any], sortTitle = sortTitle.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(collapse = collapse.asInstanceOf[js.Any], expand = expand.asInstanceOf[js.Any], filterConfirm = filterConfirm.asInstanceOf[js.Any], filterReset = filterReset.asInstanceOf[js.Any], filterTitle = filterTitle.asInstanceOf[js.Any], selectAll = selectAll.asInstanceOf[js.Any], selectInvert = selectInvert.asInstanceOf[js.Any], selectionAll = selectionAll.asInstanceOf[js.Any], sortTitle = sortTitle.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AnonCollapse]
   }

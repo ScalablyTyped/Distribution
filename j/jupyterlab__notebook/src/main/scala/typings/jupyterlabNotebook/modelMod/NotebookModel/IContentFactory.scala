@@ -4,7 +4,7 @@ import typings.jupyterlabCells.modelMod.ICellModel
 import typings.jupyterlabCells.modelMod.ICodeCellModel
 import typings.jupyterlabCells.modelMod.IMarkdownCellModel
 import typings.jupyterlabCells.modelMod.IRawCellModel
-import typings.jupyterlabCoreutils.nbformatMod.nbformat.CellType
+import typings.jupyterlabNbformat.mod.CellType
 import typings.jupyterlabObservables.modeldbMod.IModelDB
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -21,7 +21,7 @@ trait IContentFactory extends js.Object {
   /**
     * The IModelDB in which to put data for the notebook model.
     */
-  var modelDB: IModelDB
+  var modelDB: js.UndefOr[IModelDB] = js.undefined
   /**
     * Clone the content factory with a new IModelDB.
     */
@@ -76,10 +76,10 @@ object IContentFactory {
     createCodeCell: typings.jupyterlabCells.modelMod.CodeCellModel.IOptions => ICodeCellModel,
     createMarkdownCell: typings.jupyterlabCells.modelMod.CellModel.IOptions => IMarkdownCellModel,
     createRawCell: typings.jupyterlabCells.modelMod.CellModel.IOptions => IRawCellModel,
-    modelDB: IModelDB
+    modelDB: IModelDB = null
   ): IContentFactory = {
-    val __obj = js.Dynamic.literal(clone = js.Any.fromFunction1(clone), codeCellContentFactory = codeCellContentFactory.asInstanceOf[js.Any], createCell = js.Any.fromFunction2(createCell), createCodeCell = js.Any.fromFunction1(createCodeCell), createMarkdownCell = js.Any.fromFunction1(createMarkdownCell), createRawCell = js.Any.fromFunction1(createRawCell), modelDB = modelDB.asInstanceOf[js.Any])
-  
+    val __obj = js.Dynamic.literal(clone = js.Any.fromFunction1(clone), codeCellContentFactory = codeCellContentFactory.asInstanceOf[js.Any], createCell = js.Any.fromFunction2(createCell), createCodeCell = js.Any.fromFunction1(createCodeCell), createMarkdownCell = js.Any.fromFunction1(createMarkdownCell), createRawCell = js.Any.fromFunction1(createRawCell))
+    if (modelDB != null) __obj.updateDynamic("modelDB")(modelDB.asInstanceOf[js.Any])
     __obj.asInstanceOf[IContentFactory]
   }
 }

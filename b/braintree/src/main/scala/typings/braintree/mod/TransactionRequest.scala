@@ -1,11 +1,11 @@
 package typings.braintree.mod
 
 import typings.braintree.AnonAddBillingAddressToPaymentMethod
-import typings.braintree.AnonCardholderName
 import typings.braintree.AnonCavv
 import typings.braintree.AnonCompany
-import typings.braintree.AnonCompanyCountryCodeAlpha2CountryCodeAlpha3CountryCodeNumeric
-import typings.braintree.AnonCompanyCustomFieldsEmail
+import typings.braintree.AnonCountryCodeNumeric
+import typings.braintree.AnonCvv
+import typings.braintree.AnonEmail
 import typings.braintree.AnonPreviousNetworkTransactionId
 import typings.std.Record
 import scala.scalajs.js
@@ -14,12 +14,12 @@ import scala.scalajs.js.annotation._
 
 trait TransactionRequest extends js.Object {
   var amount: String
-  var billing: js.UndefOr[AnonCompanyCountryCodeAlpha2CountryCodeAlpha3CountryCodeNumeric] = js.undefined
+  var billing: js.UndefOr[AnonCountryCodeNumeric] = js.undefined
   var billingAddressId: js.UndefOr[String] = js.undefined
   var channel: js.UndefOr[String] = js.undefined
-  var creditCard: js.UndefOr[AnonCardholderName] = js.undefined
+  var creditCard: js.UndefOr[AnonCvv] = js.undefined
   var customFields: js.UndefOr[Record[String, _]] = js.undefined
-  var customer: js.UndefOr[AnonCompanyCustomFieldsEmail] = js.undefined
+  var customer: js.UndefOr[AnonEmail] = js.undefined
   var customerId: js.UndefOr[String] = js.undefined
   var descriptor: js.UndefOr[Descriptor] = js.undefined
   var deviceData: js.UndefOr[String] = js.undefined
@@ -56,12 +56,12 @@ object TransactionRequest {
   @scala.inline
   def apply(
     amount: String,
-    billing: AnonCompanyCountryCodeAlpha2CountryCodeAlpha3CountryCodeNumeric = null,
+    billing: AnonCountryCodeNumeric = null,
     billingAddressId: String = null,
     channel: String = null,
-    creditCard: AnonCardholderName = null,
+    creditCard: AnonCvv = null,
     customFields: Record[String, _] = null,
-    customer: AnonCompanyCustomFieldsEmail = null,
+    customer: AnonEmail = null,
     customerId: String = null,
     descriptor: Descriptor = null,
     deviceData: String = null,

@@ -21,7 +21,7 @@ trait DescribeSpotFleetRequestsRequest extends js.Object {
   /**
     * The IDs of the Spot Fleet requests.
     */
-  var SpotFleetRequestIds: js.UndefOr[ValueStringList] = js.native
+  var SpotFleetRequestIds: js.UndefOr[SpotFleetRequestIdList] = js.native
 }
 
 object DescribeSpotFleetRequestsRequest {
@@ -30,7 +30,7 @@ object DescribeSpotFleetRequestsRequest {
     DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     MaxResults: Int | scala.Double = null,
     NextToken: String = null,
-    SpotFleetRequestIds: ValueStringList = null
+    SpotFleetRequestIds: SpotFleetRequestIdList = null
   ): DescribeSpotFleetRequestsRequest = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])

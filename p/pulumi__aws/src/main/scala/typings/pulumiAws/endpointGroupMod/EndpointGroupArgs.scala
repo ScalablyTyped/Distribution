@@ -12,6 +12,9 @@ trait EndpointGroupArgs extends js.Object {
     * The list of endpoint objects. Fields documented below.
     */
   val endpointConfigurations: js.UndefOr[Input[js.Array[Input[EndpointGroupEndpointConfiguration]]]] = js.native
+  /**
+    * The name of the AWS Region where the endpoint group is located.
+    */
   val endpointGroupRegion: js.UndefOr[Input[String]] = js.native
   /**
     * The time—10 seconds or 30 seconds—between each health check for an endpoint. The default value is 30.

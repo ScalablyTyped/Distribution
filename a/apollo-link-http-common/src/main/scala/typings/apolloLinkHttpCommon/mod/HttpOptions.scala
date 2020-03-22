@@ -1,13 +1,13 @@
 package typings.apolloLinkHttpCommon.mod
 
-import typings.apolloLinkHttpCommon.FnInit
+import typings.apolloLinkHttpCommon.FnCall
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait HttpOptions extends js.Object {
   var credentials: js.UndefOr[String] = js.undefined
-  var fetch: js.UndefOr[FnInit] = js.undefined
+  var fetch: js.UndefOr[FnCall] = js.undefined
   var fetchOptions: js.UndefOr[js.Any] = js.undefined
   var headers: js.UndefOr[js.Any] = js.undefined
   var includeExtensions: js.UndefOr[Boolean] = js.undefined
@@ -18,7 +18,7 @@ object HttpOptions {
   @scala.inline
   def apply(
     credentials: String = null,
-    fetch: FnInit = null,
+    fetch: FnCall = null,
     fetchOptions: js.Any = null,
     headers: js.Any = null,
     includeExtensions: js.UndefOr[Boolean] = js.undefined,

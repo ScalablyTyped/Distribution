@@ -1,6 +1,6 @@
 package typings.exceljs.mod
 
-import typings.std.Partial
+import typings.exceljs.PartialPageSetup
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ trait WorksheetModel extends js.Object {
   var id: Double
   var media: js.Array[Media]
   var name: String
-  var pageSetup: Partial[PageSetup]
+  var pageSetup: PartialPageSetup
   // dataValidations: this.dataValidations.model,
   var properties: WorksheetProperties
   var rowBreaks: js.Array[RowBreak]
@@ -26,7 +26,7 @@ object WorksheetModel {
     id: Double,
     media: js.Array[Media],
     name: String,
-    pageSetup: Partial[PageSetup],
+    pageSetup: PartialPageSetup,
     properties: WorksheetProperties,
     rowBreaks: js.Array[RowBreak],
     views: js.Array[WorksheetView]

@@ -2,7 +2,7 @@ package typings.googleapis.pagespeedonlineV1Mod.pagespeedonlineV1
 
 import typings.googleapis.AnonCssResponseBytes
 import typings.googleapis.AnonData
-import typings.googleapis.AnonKeyLocale
+import typings.googleapis.AnonLocale
 import typings.googleapis.AnonMajor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,7 +18,7 @@ trait SchemaResult extends js.Object {
     * Localized PageSpeed results. Contains a ruleResults entry for each
     * PageSpeed rule instantiated and run by the server.
     */
-  var formattedResults: js.UndefOr[AnonKeyLocale] = js.native
+  var formattedResults: js.UndefOr[AnonLocale] = js.native
   /**
     * Canonicalized and final URL for the document, after following page
     * redirects (if any).
@@ -67,7 +67,7 @@ object SchemaResult {
   @scala.inline
   def apply(
     captchaResult: String = null,
-    formattedResults: AnonKeyLocale = null,
+    formattedResults: AnonLocale = null,
     id: String = null,
     invalidRules: js.Array[String] = null,
     kind: String = null,

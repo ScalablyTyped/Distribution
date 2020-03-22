@@ -2,9 +2,7 @@ package typings.rrule
 
 import typings.rrule.datetimeMod.Time
 import typings.rrule.rruleNumbers.`9999`
-import typings.rrule.rruleStrings.getTime
 import typings.std.Date
-import typings.std.Pick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -69,7 +67,7 @@ object dateutilMod extends js.Object {
     /**
       * Sorts an array of Date or dateutil.Time objects
       */
-    def sort[T /* <: Pick[Date, getTime] */](dates: js.Array[T]): Unit = js.native
+    def sort[T /* <: PickDategetTime */](dates: js.Array[T]): Unit = js.native
     def timeToUntilString(time: Double): String = js.native
     def timeToUntilString(time: Double, utc: Boolean): String = js.native
     /**
@@ -140,7 +138,7 @@ object dateutilMod extends js.Object {
     /**
       * Sorts an array of Date or dateutil.Time objects
       */
-    def sort[T /* <: Pick[Date, getTime] */](dates: js.Array[T]): Unit = js.native
+    def sort[T /* <: PickDategetTime */](dates: js.Array[T]): Unit = js.native
     def timeToUntilString(time: Double): String = js.native
     def timeToUntilString(time: Double, utc: Boolean): String = js.native
     /**

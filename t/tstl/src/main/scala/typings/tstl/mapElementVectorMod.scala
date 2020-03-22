@@ -5,7 +5,6 @@ import typings.tstl.arrayReverseIteratorBaseMod.ArrayReverseIteratorBase
 import typings.tstl.entryMod.Entry
 import typings.tstl.ipairMod.IPair
 import typings.tstl.itreemapMod.ITreeMap
-import typings.tstl.mapContainerMod.MapContainer.IteratorBase
 import typings.tstl.mapElementVectorMod.MapElementVector.Iterator
 import typings.tstl.mapElementVectorMod.MapElementVector.ReverseIterator
 import typings.tstl.vectorContainerMod.VectorContainer
@@ -35,6 +34,7 @@ object mapElementVectorMod extends js.Object {
     var associative_ : js.Any = js.native
   }
   
+  /* static members */
   @js.native
   object MapElementVector extends js.Object {
     /**
@@ -47,8 +47,8 @@ object mapElementVectorMod extends js.Object {
       *
       * @author Jeongho Nam - https://github.com/samchon
       */
-    /* import warning: RemoveDifficultInheritance.summarizeChanges 
-    - Dropped {readonly [ P in keyof tstl.tstl/base/container/IContainer.IContainer.Iterator<tstl.tstl/utility/Entry.Entry<Key, T>, Source, tstl.tstl/internal/container/associative/MapElementVector.MapElementVector.Iterator<Key, T, Unique, Source>, tstl.tstl/internal/container/associative/MapElementVector.MapElementVector.ReverseIterator<Key, T, Unique, Source>, tstl.tstl/utility/IPair.IPair<Key, T>> ]: tstl.tstl/base/container/IContainer.IContainer.Iterator<tstl.tstl/utility/Entry.Entry<Key, T>, Source, tstl.tstl/internal/container/associative/MapElementVector.MapElementVector.Iterator<Key, T, Unique, Source>, tstl.tstl/internal/container/associative/MapElementVector.MapElementVector.ReverseIterator<Key, T, Unique, Source>, tstl.tstl/utility/IPair.IPair<Key, T>>[P]} */ @js.native
+    /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+    - typings.tstl.itreemapMod.ITreeMap.Iterator because var conflicts: value. Inlined first, second */ @js.native
     class Iterator[Key, T, Unique /* <: Boolean */, Source /* <: ITreeMap[
         Key, 
         T, 
@@ -56,41 +56,36 @@ object mapElementVectorMod extends js.Object {
         Source, 
         Iterator[Key, T, Unique, Source], 
         ReverseIterator[Key, T, Unique, Source]
-      ] */] ()
-      extends ArrayIteratorBase[
+      ] */] () extends ArrayIteratorBase[
               Entry[Key, T], 
               Source, 
               MapElementVector[Key, T, Unique, Source], 
               Iterator[Key, T, Unique, Source], 
               ReverseIterator[Key, T, Unique, Source], 
               IPair[Key, T]
-            ]
-         with IteratorBase[Key, T] {
+            ] {
       /**
         * The first, key element.
         */
-      /* CompleteClass */
-      override val first: Key = js.native
+      @JSName("first")
+      val first_FIterator: Key = js.native
       /**
         * The second, stored element.
         */
-      /* CompleteClass */
-      override var second: T = js.native
-      /**
-        * @inheritDoc
-        */
-      @JSName("first")
-      def first_MIterator(): Key = js.native
-      /**
-        * @inheritDoc
-        */
       @JSName("second")
-      def second_MIterator(): T = js.native
+      var second_FIterator: T = js.native
       /**
         * @inheritDoc
         */
-      @JSName("second")
-      def second_MIterator(`val`: T): js.Any = js.native
+      def first(): Key = js.native
+      /**
+        * @inheritDoc
+        */
+      def second(): T = js.native
+      /**
+        * @inheritDoc
+        */
+      def second(`val`: T): js.Any = js.native
     }
     
     /**
@@ -103,8 +98,8 @@ object mapElementVectorMod extends js.Object {
       *
       * @author Jeongho Nam - https://github.com/samchon
       */
-    /* import warning: RemoveDifficultInheritance.summarizeChanges 
-    - Dropped {readonly [ P in keyof tstl.tstl/base/container/IContainer.IContainer.ReverseIterator<tstl.tstl/utility/Entry.Entry<Key, T>, Source, tstl.tstl/internal/container/associative/MapElementVector.MapElementVector.Iterator<Key, T, Unique, Source>, tstl.tstl/internal/container/associative/MapElementVector.MapElementVector.ReverseIterator<Key, T, Unique, Source>, tstl.tstl/utility/IPair.IPair<Key, T>> ]: tstl.tstl/base/container/IContainer.IContainer.ReverseIterator<tstl.tstl/utility/Entry.Entry<Key, T>, Source, tstl.tstl/internal/container/associative/MapElementVector.MapElementVector.Iterator<Key, T, Unique, Source>, tstl.tstl/internal/container/associative/MapElementVector.MapElementVector.ReverseIterator<Key, T, Unique, Source>, tstl.tstl/utility/IPair.IPair<Key, T>>[P]} */ @js.native
+    /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+    - typings.tstl.itreemapMod.ITreeMap.ReverseIterator because var conflicts: value. Inlined first, second */ @js.native
     class ReverseIterator[Key, T, Unique /* <: Boolean */, Source /* <: ITreeMap[
         Key, 
         T, 
@@ -112,43 +107,49 @@ object mapElementVectorMod extends js.Object {
         Source, 
         Iterator[Key, T, Unique, Source], 
         ReverseIterator[Key, T, Unique, Source]
-      ] */] ()
-      extends ArrayReverseIteratorBase[
+      ] */] () extends ArrayReverseIteratorBase[
               Entry[Key, T], 
               Source, 
               MapElementVector[Key, T, Unique, Source], 
               Iterator[Key, T, Unique, Source], 
               ReverseIterator[Key, T, Unique, Source], 
               IPair[Key, T]
-            ]
-         with IteratorBase[Key, T] {
+            ] {
       /**
         * The first, key element.
         */
-      /* CompleteClass */
-      override val first: Key = js.native
+      @JSName("first")
+      val first_FReverseIterator: Key = js.native
       /**
         * The second, stored element.
         */
-      /* CompleteClass */
-      override var second: T = js.native
-      /**
-        * @inheritDoc
-        */
-      @JSName("first")
-      def first_MReverseIterator(): Key = js.native
-      /**
-        * @inheritDoc
-        */
       @JSName("second")
-      def second_MReverseIterator(): T = js.native
+      var second_FReverseIterator: T = js.native
       /**
         * @inheritDoc
         */
-      @JSName("second")
-      def second_MReverseIterator(`val`: T): js.Any = js.native
+      def first(): Key = js.native
+      /**
+        * @inheritDoc
+        */
+      def second(): T = js.native
+      /**
+        * @inheritDoc
+        */
+      def second(`val`: T): js.Any = js.native
     }
     
+    /**
+      * @internal
+      */
+    def _Swap_associative[Key, T, Unique /* <: Boolean */, Source /* <: ITreeMap[
+        Key, 
+        T, 
+        Unique, 
+        Source, 
+        Iterator[Key, T, Unique, Source], 
+        ReverseIterator[Key, T, Unique, Source]
+      ] */](x: MapElementVector[Key, T, Unique, Source], y: MapElementVector[Key, T, Unique, Source]): Unit = js.native
   }
   
 }

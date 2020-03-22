@@ -21,7 +21,7 @@ trait IMethodOptions extends js.Object {
   /** MethodOptions deprecated */
   var deprecated: js.UndefOr[Boolean | Null] = js.undefined
   /** MethodOptions idempotencyLevel */
-  var idempotencyLevel: js.UndefOr[IdempotencyLevel | Null] = js.undefined
+  var idempotencyLevel: js.UndefOr[IdempotencyLevel | String | Null] = js.undefined
   /** MethodOptions uninterpretedOption */
   var uninterpretedOption: js.UndefOr[js.Array[IUninterpretedOption] | Null] = js.undefined
 }
@@ -33,7 +33,7 @@ object IMethodOptions {
     DotgoogleDotapiDotmethodSignature: js.Array[String] = null,
     DotgoogleDotlongrunningDotoperationInfo: IOperationInfo = null,
     deprecated: js.UndefOr[Boolean] = js.undefined,
-    idempotencyLevel: IdempotencyLevel = null,
+    idempotencyLevel: IdempotencyLevel | String = null,
     uninterpretedOption: js.Array[IUninterpretedOption] = null
   ): IMethodOptions = {
     val __obj = js.Dynamic.literal()

@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BodyStyle extends js.Object {
-  var height: String
-  var transform: String
-  var transformOrigin: String
-  var width: String
+  var height: String = js.native
+  var transform: String = js.native
+  var transformOrigin: String = js.native
+  var width: String = js.native
 }
 
 object BodyStyle {

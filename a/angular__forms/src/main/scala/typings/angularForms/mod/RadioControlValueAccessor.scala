@@ -18,7 +18,7 @@ class RadioControlValueAccessor protected ()
   def this(
     _renderer: Renderer2,
     _elementRef: ElementRef[_],
-    _registry: ɵangularPackagesFormsFormsO,
+    _registry: ɵangularPackagesFormsFormsN,
     _injector: Injector
   ) = this()
   var _checkName: js.Any = js.native
@@ -51,7 +51,7 @@ class RadioControlValueAccessor protected ()
   def fireUncheck(value: js.Any): Unit = js.native
   /**
     * A callback method that performs custom clean-up, invoked immediately
-    * after a directive, pipe, or service instance is destroyed.
+    * before a directive, pipe, or service instance is destroyed.
     */
   /* CompleteClass */
   override def ngOnDestroy(): Unit = js.native

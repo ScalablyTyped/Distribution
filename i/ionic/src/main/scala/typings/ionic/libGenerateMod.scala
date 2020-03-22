@@ -1,6 +1,5 @@
 package typings.ionic
 
-import typings.ionic.definitionsMod.CommandMetadata
 import typings.ionic.definitionsMod.GenerateOptions
 import typings.ionic.definitionsMod.IConfig
 import typings.ionic.definitionsMod.ILogger
@@ -17,7 +16,6 @@ import typings.ionicCliFrameworkPrompts.mod.PromptQuestionOther
 import typings.ionicCliFrameworkPrompts.mod.PromptValueCheckbox
 import typings.ionicCliFrameworkPrompts.mod.PromptValueConfirm
 import typings.ionicCliFrameworkPrompts.mod.PromptValueOther
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,7 +28,7 @@ object libGenerateMod extends js.Object {
     val e: GenerateRunnerDeps = js.native
     def createOptionsFromCommandLine(inputs: CommandLineInputs, options: CommandLineOptions): GenerateOptions = js.native
     def ensureCommandLine(inputs: CommandLineInputs, options: CommandLineOptions): js.Promise[Unit] = js.native
-    def getCommandMetadata(): js.Promise[Partial[CommandMetadata]] = js.native
+    def getCommandMetadata(): js.Promise[PartialCommandMetadata] = js.native
     /* CompleteClass */
     override def run(options: T): js.Promise[Unit] = js.native
   }

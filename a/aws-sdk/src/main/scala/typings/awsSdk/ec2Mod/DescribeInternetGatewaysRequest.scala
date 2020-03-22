@@ -17,7 +17,7 @@ trait DescribeInternetGatewaysRequest extends js.Object {
   /**
     * One or more internet gateway IDs. Default: Describes all your internet gateways.
     */
-  var InternetGatewayIds: js.UndefOr[ValueStringList] = js.native
+  var InternetGatewayIds: js.UndefOr[InternetGatewayIdList] = js.native
   /**
     * The maximum number of results to return with a single call. To retrieve the remaining results, make another call with the returned nextToken value.
     */
@@ -33,7 +33,7 @@ object DescribeInternetGatewaysRequest {
   def apply(
     DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     Filters: FilterList = null,
-    InternetGatewayIds: ValueStringList = null,
+    InternetGatewayIds: InternetGatewayIdList = null,
     MaxResults: Int | scala.Double = null,
     NextToken: String = null
   ): DescribeInternetGatewaysRequest = {

@@ -2,9 +2,9 @@ package typings.gapiClientMl.gapi.client.ml
 
 import typings.gapiClient.gapi.client.Request_
 import typings.gapiClientMl.AnonAccesstoken
-import typings.gapiClientMl.AnonAccesstokenAlt
-import typings.gapiClientMl.AnonAccesstokenAltBearertoken
-import typings.gapiClientMl.AnonAccesstokenAltBearertokenCallback
+import typings.gapiClientMl.AnonAlt
+import typings.gapiClientMl.AnonBearertoken
+import typings.gapiClientMl.AnonCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ trait JobsResource extends js.Object {
   /** Cancels a running job. */
   def cancel(request: AnonAccesstoken): Request_[js.Object]
   /** Creates a training or a batch prediction job. */
-  def create(request: AnonAccesstokenAlt): Request_[GoogleCloudMlV1Job]
+  def create(request: AnonAlt): Request_[GoogleCloudMlV1Job]
   /** Describes a job. */
   def get(request: AnonAccesstoken): Request_[GoogleCloudMlV1Job]
   /**
@@ -21,14 +21,14 @@ trait JobsResource extends js.Object {
     * Returns an empty policy if the resource exists and does not have a policy
     * set.
     */
-  def getIamPolicy(request: AnonAccesstokenAltBearertoken): Request_[GoogleIamV1Policy]
+  def getIamPolicy(request: AnonBearertoken): Request_[GoogleIamV1Policy]
   /** Lists the jobs in the project. */
-  def list(request: AnonAccesstokenAltBearertokenCallback): Request_[GoogleCloudMlV1ListJobsResponse]
+  def list(request: AnonCallback): Request_[GoogleCloudMlV1ListJobsResponse]
   /**
     * Sets the access control policy on the specified resource. Replaces any
     * existing policy.
     */
-  def setIamPolicy(request: AnonAccesstokenAltBearertoken): Request_[GoogleIamV1Policy]
+  def setIamPolicy(request: AnonBearertoken): Request_[GoogleIamV1Policy]
   /**
     * Returns permissions that a caller has on the specified resource.
     * If the resource does not exist, this will return an empty set of
@@ -38,19 +38,19 @@ trait JobsResource extends js.Object {
     * UIs and command-line tools, not for authorization checking. This operation
     * may "fail open" without warning.
     */
-  def testIamPermissions(request: AnonAccesstokenAltBearertoken): Request_[GoogleIamV1TestIamPermissionsResponse]
+  def testIamPermissions(request: AnonBearertoken): Request_[GoogleIamV1TestIamPermissionsResponse]
 }
 
 object JobsResource {
   @scala.inline
   def apply(
     cancel: AnonAccesstoken => Request_[js.Object],
-    create: AnonAccesstokenAlt => Request_[GoogleCloudMlV1Job],
+    create: AnonAlt => Request_[GoogleCloudMlV1Job],
     get: AnonAccesstoken => Request_[GoogleCloudMlV1Job],
-    getIamPolicy: AnonAccesstokenAltBearertoken => Request_[GoogleIamV1Policy],
-    list: AnonAccesstokenAltBearertokenCallback => Request_[GoogleCloudMlV1ListJobsResponse],
-    setIamPolicy: AnonAccesstokenAltBearertoken => Request_[GoogleIamV1Policy],
-    testIamPermissions: AnonAccesstokenAltBearertoken => Request_[GoogleIamV1TestIamPermissionsResponse]
+    getIamPolicy: AnonBearertoken => Request_[GoogleIamV1Policy],
+    list: AnonCallback => Request_[GoogleCloudMlV1ListJobsResponse],
+    setIamPolicy: AnonBearertoken => Request_[GoogleIamV1Policy],
+    testIamPermissions: AnonBearertoken => Request_[GoogleIamV1TestIamPermissionsResponse]
   ): JobsResource = {
     val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction1(cancel), create = js.Any.fromFunction1(create), get = js.Any.fromFunction1(get), getIamPolicy = js.Any.fromFunction1(getIamPolicy), list = js.Any.fromFunction1(list), setIamPolicy = js.Any.fromFunction1(setIamPolicy), testIamPermissions = js.Any.fromFunction1(testIamPermissions))
   

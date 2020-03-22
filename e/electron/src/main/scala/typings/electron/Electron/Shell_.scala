@@ -15,9 +15,12 @@ trait Shell_ extends js.Object {
     */
   def beep(): Unit = js.native
   /**
-    * Move the given file to trash and returns a boolean status for the operation.
+    * Whether the item was successfully moved to the trash or otherwise deleted.
+    * 
+  Move the given file to trash and returns a boolean status for the operation.
     */
   def moveItemToTrash(fullPath: String): Boolean = js.native
+  def moveItemToTrash(fullPath: String, deleteOnFail: Boolean): Boolean = js.native
   /**
     * Open the given external protocol URL in the desktop's default manner. (For
     * example, mailto: URLs in the user's default mail agent).
@@ -25,18 +28,17 @@ trait Shell_ extends js.Object {
   def openExternal(url: String): js.Promise[Unit] = js.native
   def openExternal(url: String, options: OpenExternalOptions): js.Promise[Unit] = js.native
   /**
-    * Open the given external protocol URL in the desktop's default manner. (For
-    * example, mailto: URLs in the user's default mail agent). Deprecated
-    */
-  def openExternalSync(url: String): Boolean = js.native
-  def openExternalSync(url: String, options: OpenExternalSyncOptions): Boolean = js.native
-  /**
-    * Open the given file in the desktop's default manner.
+    * Whether the item was successfully opened.
+    * 
+  Open the given file in the desktop's default manner.
     */
   def openItem(fullPath: String): Boolean = js.native
   /**
-    * Resolves the shortcut link at shortcutPath. An exception will be thrown when any
-    * error happens.
+    * Resolves the shortcut link at `shortcutPath`.
+    * 
+  An exception will be thrown when any error happens.
+    *
+    * @platform win32
     */
   def readShortcutLink(shortcutPath: String): ShortcutDetails = js.native
   /**
@@ -44,11 +46,19 @@ trait Shell_ extends js.Object {
     */
   def showItemInFolder(fullPath: String): Unit = js.native
   /**
-    * Creates or updates a shortcut link at shortcutPath.
+    * Whether the shortcut was created successfully.
+    * 
+  Creates or updates a shortcut link at `shortcutPath`.
+    *
+    * @platform win32
     */
   def writeShortcutLink(shortcutPath: String, options: ShortcutDetails): Boolean = js.native
   /**
-    * Creates or updates a shortcut link at shortcutPath.
+    * Whether the shortcut was created successfully.
+    * 
+  Creates or updates a shortcut link at `shortcutPath`.
+    *
+    * @platform win32
     */
   @JSName("writeShortcutLink")
   def writeShortcutLink_create(shortcutPath: String, operation: create, options: ShortcutDetails): Boolean = js.native

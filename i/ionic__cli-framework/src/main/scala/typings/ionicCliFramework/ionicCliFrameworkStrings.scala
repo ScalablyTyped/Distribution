@@ -32,9 +32,6 @@ object ionicCliFrameworkStrings {
   sealed trait ERR_ICF_IPC_UNKNOWN_PROCEDURE extends js.Object
   
   @js.native
-  sealed trait HelpGroupColors extends js.Object
-  
-  @js.native
   sealed trait INFO extends LoggerLevel
   
   @js.native
@@ -45,9 +42,6 @@ object ionicCliFrameworkStrings {
   
   @js.native
   sealed trait InputValidationError extends js.Object
-  
-  @js.native
-  sealed trait LoggerColors extends js.Object
   
   @js.native
   sealed trait WARN extends LoggerLevel
@@ -129,8 +123,6 @@ object ionicCliFrameworkStrings {
   @scala.inline
   def ERR_ICF_IPC_UNKNOWN_PROCEDURE: ERR_ICF_IPC_UNKNOWN_PROCEDURE = "ERR_ICF_IPC_UNKNOWN_PROCEDURE".asInstanceOf[ERR_ICF_IPC_UNKNOWN_PROCEDURE]
   @scala.inline
-  def HelpGroupColors: HelpGroupColors = "HelpGroupColors".asInstanceOf[HelpGroupColors]
-  @scala.inline
   def INFO: INFO = "INFO".asInstanceOf[INFO]
   @scala.inline
   def INVALID_PACKAGE_JSON: INVALID_PACKAGE_JSON = "INVALID_PACKAGE_JSON".asInstanceOf[INVALID_PACKAGE_JSON]
@@ -138,8 +130,6 @@ object ionicCliFrameworkStrings {
   def IPCError: IPCError = "IPCError".asInstanceOf[IPCError]
   @scala.inline
   def InputValidationError: InputValidationError = "InputValidationError".asInstanceOf[InputValidationError]
-  @scala.inline
-  def LoggerColors: LoggerColors = "LoggerColors".asInstanceOf[LoggerColors]
   @scala.inline
   def WARN: WARN = "WARN".asInstanceOf[WARN]
   @scala.inline

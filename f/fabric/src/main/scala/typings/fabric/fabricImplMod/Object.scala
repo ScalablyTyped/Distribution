@@ -1,12 +1,12 @@
 package typings.fabric.fabricImplMod
 
-import typings.fabric.AnonBlBr
-import typings.fabric.AnonBlBrMb
+import typings.fabric.AnonBr
 import typings.fabric.AnonE
 import typings.fabric.AnonEEvent
-import typings.fabric.AnonHeightLeft
+import typings.fabric.AnonMb
 import typings.fabric.AnonPropertySet
 import typings.fabric.AnonScaleX
+import typings.fabric.AnonTop
 import typings.fabric.AnonX
 import typings.fabric.fabricStrings.bl
 import typings.fabric.fabricStrings.br
@@ -33,7 +33,7 @@ class Object ()
      with IObjectOptions
      with IObjectAnimation[Object] {
   def this(options: IObjectOptions) = this()
-  var _controlsVisibility: AnonBlBr = js.native
+  var _controlsVisibility: AnonBr = js.native
   /**
   	 * @private
   	 * @param {CanvasRenderingContext2D} ctx Context to render on
@@ -56,7 +56,7 @@ class Object ()
   	 * @private
   	 * @returns {Object}
   	 */
-  def _getControlsVisibility(): AnonBlBrMb = js.native
+  def _getControlsVisibility(): AnonMb = js.native
   /**
   	 * Returns the top, left coordinates
   	 * @private
@@ -291,9 +291,9 @@ class Object ()
   	 * @param {Boolean} [calculate] use coordinates of current position instead of .oCoords / .aCoords
   	 * @return {Object} Object with left, top, width, height properties
   	 */
-  def getBoundingRect(): AnonHeightLeft = js.native
-  def getBoundingRect(absolute: Boolean): AnonHeightLeft = js.native
-  def getBoundingRect(absolute: Boolean, calculate: Boolean): AnonHeightLeft = js.native
+  def getBoundingRect(): AnonTop = js.native
+  def getBoundingRect(absolute: Boolean): AnonTop = js.native
+  def getBoundingRect(absolute: Boolean, calculate: Boolean): AnonTop = js.native
   /**
   	 * Returns the real center coordinates of the object
   	 */
@@ -591,7 +591,7 @@ class Object ()
   	 * @param [options] Options object
   	 */
   def setControlsVisibility(): this.type = js.native
-  def setControlsVisibility(options: AnonBlBr): this.type = js.native
+  def setControlsVisibility(options: AnonBr): this.type = js.native
   // functions from geometry mixin
   // -------------------------------------------------------------------------------------------------------------------------------
   /**

@@ -1,6 +1,6 @@
 package typings.cathoQuantum.snackBarMod
 
-import typings.cathoQuantum.AnonBaseFontSizeBreakpointsColors
+import typings.cathoQuantum.AnonBaseFontSizeBreakpoints
 import typings.cathoQuantum.AnonCallback
 import typings.cathoQuantum.cathoQuantumStrings.error
 import typings.cathoQuantum.cathoQuantumStrings.neutral
@@ -23,7 +23,7 @@ trait SnackBarProps[T] extends js.Object {
   var secondsToClose: js.UndefOr[Double] = js.undefined
   var skin: js.UndefOr[primary | success | error | neutral | warning] = js.undefined
   var text: js.UndefOr[String] = js.undefined
-  var theme: js.UndefOr[AnonBaseFontSizeBreakpointsColors] = js.undefined
+  var theme: js.UndefOr[AnonBaseFontSizeBreakpoints] = js.undefined
 }
 
 object SnackBarProps {
@@ -37,7 +37,7 @@ object SnackBarProps {
     secondsToClose: Int | Double = null,
     skin: primary | success | error | neutral | warning = null,
     text: String = null,
-    theme: AnonBaseFontSizeBreakpointsColors = null
+    theme: AnonBaseFontSizeBreakpoints = null
   ): SnackBarProps[T] = {
     val __obj = js.Dynamic.literal()
     if (actionTrigger != null) __obj.updateDynamic("actionTrigger")(actionTrigger.asInstanceOf[js.Any])

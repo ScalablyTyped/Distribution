@@ -1,7 +1,7 @@
 
 # Scala.js typings for material__data-table
 
-Typings are for version 3.2.0
+Typings are for version 5.1.0
 
 ## Library description:
 The Material Components Web data table component

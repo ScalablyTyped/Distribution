@@ -1,11 +1,11 @@
 package typings.sdpTransform.mod
 
 import typings.sdpTransform.AnonAddressTypes
-import typings.sdpTransform.AnonConfig
 import typings.sdpTransform.AnonHash
 import typings.sdpTransform.AnonMids
 import typings.sdpTransform.AnonSemantic
-import typings.sdpTransform.AnonValue
+import typings.sdpTransform.AnonUri
+import typings.sdpTransform.AnonValueString
 import typings.sdpTransform.sdpTransformStrings.inactive
 import typings.sdpTransform.sdpTransformStrings.recvonly
 import typings.sdpTransform.sdpTransformStrings.sendonly
@@ -29,14 +29,14 @@ object SessionAttributes {
   def apply(
     control: String = null,
     direction: sendrecv | recvonly | sendonly | inactive = null,
-    ext: js.Array[AnonConfig] = null,
+    ext: js.Array[AnonUri] = null,
     fingerprint: AnonHash = null,
     groups: js.Array[AnonMids] = null,
     iceOptions: String = null,
     icePwd: String = null,
     iceUfrag: String = null,
     icelite: String = null,
-    invalid: js.Array[AnonValue] = null,
+    invalid: js.Array[AnonValueString] = null,
     msidSemantic: AnonSemantic = null,
     setup: String = null,
     sourceFilter: AnonAddressTypes = null

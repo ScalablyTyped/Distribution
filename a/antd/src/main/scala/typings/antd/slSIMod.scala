@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 object slSIMod extends js.Object {
   @js.native
   object default extends js.Object {
-    var lang: AnonBackToToday = js.native
-    var timePickerLocale: AnonPlaceholder = js.native
+    var lang: AnonDateSelect = js.native
+    var timePickerLocale: AnonPlaceholderString = js.native
   }
   
 }

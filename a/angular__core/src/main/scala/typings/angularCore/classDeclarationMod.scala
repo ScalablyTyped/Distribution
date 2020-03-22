@@ -12,5 +12,6 @@ import scala.scalajs.js.annotation._
 object classDeclarationMod extends js.Object {
   def findParentClassDeclaration(node: Node): ClassDeclaration | Null = js.native
   def getBaseTypeIdentifiers(node: ClassDeclaration): js.Array[Identifier] | Null = js.native
+  def hasExplicitConstructor(node: ClassDeclaration): Boolean = js.native
 }
 

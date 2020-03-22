@@ -1,6 +1,6 @@
 package typings.baseui.modalMod
 
-import typings.baseui.AnonChildren
+import typings.baseui.SharedStylePropsArgchildrAnimate
 import typings.baseui.baseuiStrings.backdrop
 import typings.baseui.baseuiStrings.closeButton
 import typings.baseui.baseuiStrings.escape_
@@ -28,7 +28,7 @@ class Modal ()
   def getChildren(): ReactNode = js.native
   def getMountNode(): HTMLElement = js.native
   def getRef(component: String): Ref[_] = js.native
-  def getSharedProps(): SharedStylePropsArg with AnonChildren = js.native
+  def getSharedProps(): SharedStylePropsArgchildrAnimate = js.native
   def onBackdropClick(): Unit = js.native
   def onCloseClick(): Unit = js.native
   def onDocumentKeyPress(event: KeyboardEvent): Unit = js.native

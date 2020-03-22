@@ -1,5 +1,6 @@
 package typings.jupyterlabNotebook.widgetfactoryMod.NotebookWidgetFactory
 
+import typings.jupyterlabApputils.tokensMod.ISessionContextDialogs
 import typings.jupyterlabCodeeditor.mimetypeMod.IEditorMimeTypeService
 import typings.jupyterlabDocregistry.registryMod.DocumentRegistry.IToolbarItem
 import typings.jupyterlabDocregistry.registryMod.DocumentRegistry.IWidgetFactoryOptions
@@ -33,6 +34,10 @@ trait IOptions[T /* <: NotebookPanel */] extends IWidgetFactoryOptions[T] {
     */
   var notebookConfig: js.UndefOr[INotebookConfig] = js.undefined
   var rendermime: IRenderMimeRegistry
+  /**
+    * The session context dialogs.
+    */
+  var sessionDialogs: js.UndefOr[ISessionContextDialogs] = js.undefined
 }
 
 object IOptions {
@@ -51,6 +56,7 @@ object IOptions {
     notebookConfig: INotebookConfig = null,
     preferKernel: js.UndefOr[Boolean] = js.undefined,
     readOnly: js.UndefOr[Boolean] = js.undefined,
+    sessionDialogs: ISessionContextDialogs = null,
     shutdownOnClose: js.UndefOr[Boolean] = js.undefined,
     toolbarFactory: T => js.Array[IToolbarItem] = null
   ): IOptions[T] = {
@@ -63,6 +69,7 @@ object IOptions {
     if (notebookConfig != null) __obj.updateDynamic("notebookConfig")(notebookConfig.asInstanceOf[js.Any])
     if (!js.isUndefined(preferKernel)) __obj.updateDynamic("preferKernel")(preferKernel.asInstanceOf[js.Any])
     if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
+    if (sessionDialogs != null) __obj.updateDynamic("sessionDialogs")(sessionDialogs.asInstanceOf[js.Any])
     if (!js.isUndefined(shutdownOnClose)) __obj.updateDynamic("shutdownOnClose")(shutdownOnClose.asInstanceOf[js.Any])
     if (toolbarFactory != null) __obj.updateDynamic("toolbarFactory")(js.Any.fromFunction1(toolbarFactory))
     __obj.asInstanceOf[IOptions[T]]

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 trait Raw[TResult]
   extends EventEmitter
      with ChainableInterface[ResolveResult[TResult]] {
+  def queryContext(): js.Any = js.native
   def queryContext(context: js.Any): Raw[TResult] = js.native
   def toSQL(): Sql = js.native
   def wrap[TResult2](before: String, after: String): Raw[TResult] = js.native

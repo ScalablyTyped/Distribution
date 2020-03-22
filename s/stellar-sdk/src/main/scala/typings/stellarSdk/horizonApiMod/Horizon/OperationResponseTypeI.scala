@@ -33,6 +33,9 @@ object OperationResponseTypeI extends js.Object {
   sealed trait inflation extends OperationResponseTypeI
   
   @js.native
+  sealed trait manageBuyOffer extends OperationResponseTypeI
+  
+  @js.native
   sealed trait manageData extends OperationResponseTypeI
   
   @js.native
@@ -40,6 +43,9 @@ object OperationResponseTypeI extends js.Object {
   
   @js.native
   sealed trait pathPayment extends OperationResponseTypeI
+  
+  @js.native
+  sealed trait pathPaymentStrictSend extends OperationResponseTypeI
   
   @js.native
   sealed trait payment extends OperationResponseTypeI
@@ -70,6 +76,9 @@ object OperationResponseTypeI extends js.Object {
   /* 9 */ @js.native
   object inflation extends TopLevel[inflation with Double]
   
+  /* 12 */ @js.native
+  object manageBuyOffer extends TopLevel[manageBuyOffer with Double]
+  
   /* 10 */ @js.native
   object manageData extends TopLevel[manageData with Double]
   
@@ -78,6 +87,9 @@ object OperationResponseTypeI extends js.Object {
   
   /* 2 */ @js.native
   object pathPayment extends TopLevel[pathPayment with Double]
+  
+  /* 13 */ @js.native
+  object pathPaymentStrictSend extends TopLevel[pathPaymentStrictSend with Double]
   
   /* 1 */ @js.native
   object payment extends TopLevel[payment with Double]

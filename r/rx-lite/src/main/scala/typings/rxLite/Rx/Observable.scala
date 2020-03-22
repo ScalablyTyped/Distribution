@@ -3,8 +3,8 @@ package typings.rxLite.Rx
 import org.scalablytyped.runtime.TopLevel
 import typings.rxCore.Rx.IDisposable
 import typings.rxCore.Rx.IPromise
-import typings.rxLite.AnonReason
-import typings.rxLite.AnonReasonRejectPromise
+import typings.rxLite.AnonInstantiable
+import typings.rxLite.AnonInstantiableIPromise
 import typings.std.Date
 import typings.std.Error
 import scala.scalajs.js
@@ -575,7 +575,7 @@ trait Observable[T] extends IObservable[T] {
     * @returns An ES6 compatible promise with the last value from the observable sequence.
     */
   def toPromise(): IPromise[T] = js.native
-  def toPromise(promiseCtor: AnonReasonRejectPromise[T]): IPromise[T] = js.native
+  def toPromise(promiseCtor: AnonInstantiableIPromise[T]): IPromise[T] = js.native
    // alias for where
   /**
     * Converts an existing observable sequence to an ES6 Compatible Promise
@@ -584,7 +584,7 @@ trait Observable[T] extends IObservable[T] {
     * @param promiseCtor The constructor of the promise.
     * @returns An ES6 compatible promise with the last value from the observable sequence.
     */
-  def toPromise[TPromise /* <: IPromise[T] */](promiseCtor: AnonReason[T, TPromise]): TPromise = js.native
+  def toPromise[TPromise /* <: IPromise[T] */](promiseCtor: AnonInstantiable[T, TPromise]): TPromise = js.native
   def where(predicate: js.Function3[/* value */ T, /* index */ Double, /* source */ Observable[T], Boolean]): Observable[T] = js.native
   def where(
     predicate: js.Function3[/* value */ T, /* index */ Double, /* source */ Observable[T], Boolean],

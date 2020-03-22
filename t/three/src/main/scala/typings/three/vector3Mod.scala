@@ -23,15 +23,15 @@ object vector3Mod extends js.Object {
     def this(x: Double) = this()
     def this(x: Double, y: Double) = this()
     def this(x: Double, y: Double, z: Double) = this()
-    var isVector3: `true` = js.native
+    val isVector3: `true` = js.native
     var x: Double = js.native
     var y: Double = js.native
     var z: Double = js.native
     /**
     	 * Adds v to this vector.
     	 */
-    def add(a: Vector3): this.type = js.native
-    def add(a: Vector3, b: Vector3): this.type = js.native
+    def add(v: Vector3): this.type = js.native
+    def add(v: Vector3, w: Vector3): this.type = js.native
     def addScaledVector(v: Vector3, s: Double): this.type = js.native
     /**
     	 * Sets this vector to a + b.
@@ -42,6 +42,7 @@ object vector3Mod extends js.Object {
     def applyEuler(euler: Euler): this.type = js.native
     def applyMatrix3(m: Matrix3): this.type = js.native
     def applyMatrix4(m: Matrix4): this.type = js.native
+    def applyNormalMatrix(m: Matrix3): this.type = js.native
     def applyQuaternion(q: Quaternion): this.type = js.native
     def ceil(): this.type = js.native
     def clamp(min: Vector3, max: Vector3): this.type = js.native
@@ -143,6 +144,7 @@ object vector3Mod extends js.Object {
     def set(x: Double, y: Double, z: Double): this.type = js.native
     def setFromCylindrical(s: Cylindrical): this.type = js.native
     def setFromCylindricalCoords(radius: Double, theta: Double, y: Double): this.type = js.native
+    def setFromMatrix3Column(matrix: Matrix3, index: Double): this.type = js.native
     def setFromMatrixColumn(matrix: Matrix4, index: Double): this.type = js.native
     def setFromMatrixPosition(m: Matrix4): this.type = js.native
     def setFromMatrixScale(m: Matrix4): this.type = js.native

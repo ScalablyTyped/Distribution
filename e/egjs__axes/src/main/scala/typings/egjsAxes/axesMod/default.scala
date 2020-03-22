@@ -2,7 +2,7 @@ package typings.egjsAxes.axesMod
 
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.StringDictionary
-import typings.egjsAxes.TypeofClassPanInput
+import typings.egjsAxes.TypeofPanInput
 import typings.egjsAxes.axisManagerMod.Axis
 import typings.egjsAxes.axisManagerMod.AxisOption
 import typings.egjsAxes.constMod.DIRECTION
@@ -31,7 +31,7 @@ object default extends js.Object {
   var DIRECTION_RIGHT: DIRECTION = js.native
   var DIRECTION_UP: DIRECTION = js.native
   var DIRECTION_VERTICAL: DIRECTION = js.native
-  var PanInput: TypeofClassPanInput = js.native
+  var PanInput: TypeofPanInput = js.native
   var PinchInput: Instantiable2[
     /* el */ js.Any, 
     js.UndefOr[/* options */ PinchInputOption], 

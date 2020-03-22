@@ -15,7 +15,7 @@ trait AnonAllowAnonLogging extends js.Object {
   var comicsContent: js.UndefOr[Boolean] = js.native
   var contentVersion: js.UndefOr[String] = js.native
   var description: js.UndefOr[String] = js.native
-  var dimensions: js.UndefOr[AnonHeightThickness] = js.native
+  var dimensions: js.UndefOr[AnonThickness] = js.native
   var imageLinks: js.UndefOr[AnonExtraLarge] = js.native
   var industryIdentifiers: js.UndefOr[js.Array[AnonIdentifier]] = js.native
   var infoLink: js.UndefOr[String] = js.native
@@ -48,7 +48,7 @@ object AnonAllowAnonLogging {
     comicsContent: js.UndefOr[Boolean] = js.undefined,
     contentVersion: String = null,
     description: String = null,
-    dimensions: AnonHeightThickness = null,
+    dimensions: AnonThickness = null,
     imageLinks: AnonExtraLarge = null,
     industryIdentifiers: js.Array[AnonIdentifier] = null,
     infoLink: String = null,

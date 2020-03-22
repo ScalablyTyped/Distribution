@@ -1,6 +1,6 @@
 package typings.knuddelsUserappsApi.mod._Global_
 
-import typings.knuddelsUserappsApi.AnonAccessibleUserCount
+import typings.knuddelsUserappsApi.AnonOnEnd
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,7 +31,7 @@ class UserAccess () extends js.Object {
       /* key */ js.UndefOr[java.lang.String], 
       Boolean
     ],
-    parameters: AnonAccessibleUserCount
+    parameters: AnonOnEnd
   ): Unit = js.native
   /**
   		 * @see https://developer.knuddels.de/docs/classes/UserAccess.html#method_exists

@@ -7,6 +7,7 @@ import typings.nivoCore.mod.CartesianMarkerProps
 import typings.nivoCore.mod.MotionProps
 import typings.nivoCore.mod.Theme
 import typings.nivoLegends.mod.LegendProps
+import typings.nivoLine.ReadonlyPointSymbolProps
 import typings.nivoLine.nivoLineBooleans.`false`
 import typings.nivoLine.nivoLineStrings.linear
 import typings.nivoLine.nivoLineStrings.monotoneX
@@ -19,7 +20,11 @@ import typings.nivoLine.nivoLineStrings.x
 import typings.nivoLine.nivoLineStrings.y
 import typings.nivoScales.mod.Scale
 import typings.nivoTooltip.mod.CrosshairType
+import typings.react.mod.MouseEvent
+import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
+import typings.std.Date
+import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,9 +42,9 @@ trait LineSvgProps
 object LineSvgProps {
   @scala.inline
   def apply(
-    data: js.Array[LineSerieData],
+    data: js.Array[Serie],
     animate: js.UndefOr[Boolean] = js.undefined,
-    areaBaselineValue: LineValue = null,
+    areaBaseDatumValue: DatumValue = null,
     areaBlendMode: String = null,
     areaOpacity: Int | Double = null,
     axisBottom: AxisProps = null,
@@ -58,6 +63,8 @@ object LineSvgProps {
     enablePointLabel: js.UndefOr[Boolean] = js.undefined,
     enablePoints: js.UndefOr[Boolean] = js.undefined,
     enableSlices: x | y | `false` = null,
+    gridXValues: Double | (js.Array[Date | Double | String]) = null,
+    gridYValues: Double | (js.Array[Date | Double | String]) = null,
     isInteractive: js.UndefOr[Boolean] = js.undefined,
     layers: js.Array[Layer] = null,
     legends: js.Array[LegendProps] = null,
@@ -66,15 +73,20 @@ object LineSvgProps {
     markers: js.Array[CartesianMarkerProps] = null,
     motionDamping: Int | Double = null,
     motionStiffness: Int | Double = null,
+    onClick: (/* point */ Point, /* event */ MouseEvent[Element, NativeMouseEvent]) => Unit = null,
+    onMouseEnter: (/* point */ Point, /* event */ MouseEvent[Element, NativeMouseEvent]) => Unit = null,
+    onMouseLeave: (/* point */ Point, /* event */ MouseEvent[Element, NativeMouseEvent]) => Unit = null,
+    onMouseMove: (/* point */ Point, /* event */ MouseEvent[Element, NativeMouseEvent]) => Unit = null,
     pointBorderColor: js.Any = null,
     pointBorderWidth: Int | Double = null,
     pointColor: js.Any = null,
     pointLabel: String = null,
     pointLabelYOffset: Int | Double = null,
     pointSize: Int | Double = null,
-    sliceTooltip: /* data */ LineSliceData => ReactNode = null,
+    pointSymbol: /* props */ ReadonlyPointSymbolProps => ReactNode = null,
+    sliceTooltip: SliceTooltip = null,
     theme: Theme = null,
-    tooltip: TooltipProp = null,
+    tooltip: PointTooltip = null,
     tooltipFormat: TooltipFormatter | String = null,
     useMesh: js.UndefOr[Boolean] = js.undefined,
     xFormat: String | DataFormatter = null,
@@ -84,7 +96,7 @@ object LineSvgProps {
   ): LineSvgProps = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
-    if (areaBaselineValue != null) __obj.updateDynamic("areaBaselineValue")(areaBaselineValue.asInstanceOf[js.Any])
+    if (areaBaseDatumValue != null) __obj.updateDynamic("areaBaseDatumValue")(areaBaseDatumValue.asInstanceOf[js.Any])
     if (areaBlendMode != null) __obj.updateDynamic("areaBlendMode")(areaBlendMode.asInstanceOf[js.Any])
     if (areaOpacity != null) __obj.updateDynamic("areaOpacity")(areaOpacity.asInstanceOf[js.Any])
     if (axisBottom != null) __obj.updateDynamic("axisBottom")(axisBottom.asInstanceOf[js.Any])
@@ -103,6 +115,8 @@ object LineSvgProps {
     if (!js.isUndefined(enablePointLabel)) __obj.updateDynamic("enablePointLabel")(enablePointLabel.asInstanceOf[js.Any])
     if (!js.isUndefined(enablePoints)) __obj.updateDynamic("enablePoints")(enablePoints.asInstanceOf[js.Any])
     if (enableSlices != null) __obj.updateDynamic("enableSlices")(enableSlices.asInstanceOf[js.Any])
+    if (gridXValues != null) __obj.updateDynamic("gridXValues")(gridXValues.asInstanceOf[js.Any])
+    if (gridYValues != null) __obj.updateDynamic("gridYValues")(gridYValues.asInstanceOf[js.Any])
     if (!js.isUndefined(isInteractive)) __obj.updateDynamic("isInteractive")(isInteractive.asInstanceOf[js.Any])
     if (layers != null) __obj.updateDynamic("layers")(layers.asInstanceOf[js.Any])
     if (legends != null) __obj.updateDynamic("legends")(legends.asInstanceOf[js.Any])
@@ -111,13 +125,18 @@ object LineSvgProps {
     if (markers != null) __obj.updateDynamic("markers")(markers.asInstanceOf[js.Any])
     if (motionDamping != null) __obj.updateDynamic("motionDamping")(motionDamping.asInstanceOf[js.Any])
     if (motionStiffness != null) __obj.updateDynamic("motionStiffness")(motionStiffness.asInstanceOf[js.Any])
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction2(onClick))
+    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction2(onMouseEnter))
+    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction2(onMouseLeave))
+    if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(js.Any.fromFunction2(onMouseMove))
     if (pointBorderColor != null) __obj.updateDynamic("pointBorderColor")(pointBorderColor.asInstanceOf[js.Any])
     if (pointBorderWidth != null) __obj.updateDynamic("pointBorderWidth")(pointBorderWidth.asInstanceOf[js.Any])
     if (pointColor != null) __obj.updateDynamic("pointColor")(pointColor.asInstanceOf[js.Any])
     if (pointLabel != null) __obj.updateDynamic("pointLabel")(pointLabel.asInstanceOf[js.Any])
     if (pointLabelYOffset != null) __obj.updateDynamic("pointLabelYOffset")(pointLabelYOffset.asInstanceOf[js.Any])
     if (pointSize != null) __obj.updateDynamic("pointSize")(pointSize.asInstanceOf[js.Any])
-    if (sliceTooltip != null) __obj.updateDynamic("sliceTooltip")(js.Any.fromFunction1(sliceTooltip))
+    if (pointSymbol != null) __obj.updateDynamic("pointSymbol")(js.Any.fromFunction1(pointSymbol))
+    if (sliceTooltip != null) __obj.updateDynamic("sliceTooltip")(sliceTooltip.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     if (tooltipFormat != null) __obj.updateDynamic("tooltipFormat")(tooltipFormat.asInstanceOf[js.Any])

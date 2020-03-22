@@ -3,13 +3,13 @@ package typings.phantom.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.phantom.AnonAbort
 import typings.phantom.AnonErrorCode
-import typings.phantom.AnonErrorCodeErrorString
 import typings.phantom.AnonFile
 import typings.phantom.AnonFormat
 import typings.phantom.AnonHeight
-import typings.phantom.AnonHeightWidth
 import typings.phantom.AnonLeft
 import typings.phantom.AnonPageId
+import typings.phantom.AnonWidth
+import typings.phantom.IRequestDataerrorCodenumb
 import typings.phantom.phantomBooleans.`false`
 import typings.phantom.phantomStrings.BackOrForward
 import typings.phantom.phantomStrings.FormResubmitted
@@ -168,7 +168,7 @@ trait WebPage extends js.Object {
   def on(
     event: onResourceTimeout,
     runOnPhantom: `false`,
-    listener: js.Function1[/* request */ IRequestData with AnonErrorCodeErrorString, Unit]
+    listener: js.Function1[/* request */ IRequestDataerrorCodenumb, Unit]
   ): js.Promise[AnonPageId] = js.native
   def on(event: onUrlChanged, runOnPhantom: `false`, listener: js.Function1[/* targetUrl */ String, Unit]): js.Promise[AnonPageId] = js.native
   @JSName("on")
@@ -206,10 +206,7 @@ trait WebPage extends js.Object {
     listener: js.Function2[/* requestData */ IRequestData, /* networkRequest */ AnonAbort, Unit]
   ): js.Promise[AnonPageId] = js.native
   @JSName("on")
-  def on_onResourceTimeout(
-    event: onResourceTimeout,
-    listener: js.Function1[/* request */ IRequestData with AnonErrorCodeErrorString, Unit]
-  ): js.Promise[AnonPageId] = js.native
+  def on_onResourceTimeout(event: onResourceTimeout, listener: js.Function1[/* request */ IRequestDataerrorCodenumb, Unit]): js.Promise[AnonPageId] = js.native
   @JSName("on")
   def on_onUrlChanged(event: onUrlChanged, listener: js.Function1[/* targetUrl */ String, Unit]): js.Promise[AnonPageId] = js.native
   def open(url: String): js.Promise[String] = js.native
@@ -248,7 +245,7 @@ trait WebPage extends js.Object {
   @JSName("property")
   def property_scrollPosition(key: scrollPosition): js.Promise[AnonLeft] = js.native
   @JSName("property")
-  def property_viewportSize(key: viewportSize): js.Promise[AnonHeightWidth] = js.native
+  def property_viewportSize(key: viewportSize): js.Promise[AnonWidth] = js.native
   @JSName("property")
   def property_zoomFactor(key: zoomFactor): js.Promise[Double] = js.native
   def render(filename: String): js.Promise[Unit] = js.native

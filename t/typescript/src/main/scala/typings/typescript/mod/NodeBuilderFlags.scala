@@ -81,6 +81,9 @@ object NodeBuilderFlags extends js.Object {
   sealed trait UseOnlyExternalAliasing extends NodeBuilderFlags
   
   @js.native
+  sealed trait UseSingleQuotesForStringLiteralType extends NodeBuilderFlags
+  
+  @js.native
   sealed trait UseStructuralFallback extends NodeBuilderFlags
   
   @js.native
@@ -168,6 +171,9 @@ object NodeBuilderFlags extends js.Object {
   
   /* 128 */ @js.native
   object UseOnlyExternalAliasing extends TopLevel[UseOnlyExternalAliasing with Double]
+  
+  /* 268435456 */ @js.native
+  object UseSingleQuotesForStringLiteralType extends TopLevel[UseSingleQuotesForStringLiteralType with Double]
   
   /* 8 */ @js.native
   object UseStructuralFallback extends TopLevel[UseStructuralFallback with Double]

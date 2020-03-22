@@ -1,6 +1,6 @@
 package typings.wegameApi.wx
 
-import typings.wegameApi.AnonImage
+import typings.wegameApi.AnonText
 import typings.wegameApi.OpenSettingButton
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,6 +13,6 @@ object createOpenSettingButton extends js.Object {
   /**
     * 创建打开设置页面的按钮
     */
-  def apply(param: AnonImage): OpenSettingButton = js.native
+  def apply(param: AnonText): OpenSettingButton = js.native
 }
 

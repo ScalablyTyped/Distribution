@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait AnonActor extends js.Object {
-  var actor: js.UndefOr[AnonClientSpecificActorInfoDisplayName] = js.native
+  var actor: js.UndefOr[AnonVerification] = js.native
   var attachments: js.UndefOr[js.Array[AnonContent]] = js.native
   var content: js.UndefOr[String] = js.native
   var id: js.UndefOr[String] = js.native
@@ -21,7 +21,7 @@ trait AnonActor extends js.Object {
 object AnonActor {
   @scala.inline
   def apply(
-    actor: AnonClientSpecificActorInfoDisplayName = null,
+    actor: AnonVerification = null,
     attachments: js.Array[AnonContent] = null,
     content: String = null,
     id: String = null,

@@ -23,7 +23,7 @@ trait SeriesMapbubbleDataOptions extends js.Object {
   /**
     * (Highmaps) Individual point events
     */
-  var events: js.UndefOr[SeriesMapbubbleDataEventsOptions] = js.undefined
+  var events: js.UndefOr[PointEventsOptionsObject] = js.undefined
   /**
     * (Highmaps) An id for the point. This can be used after render time to get
     * a pointer to the point object through `chart.get()`.
@@ -48,7 +48,7 @@ object SeriesMapbubbleDataOptions {
     color: ColorString | GradientColorObject | PatternObject = null,
     dataLabels: DataLabelsOptionsObject = null,
     drilldown: String = null,
-    events: SeriesMapbubbleDataEventsOptions = null,
+    events: PointEventsOptionsObject = null,
     id: String = null,
     name: String = null,
     z: Int | Double = null

@@ -1,7 +1,7 @@
 package typings.reactNativeZssRichTextEditor.mod
 
 import typings.react.mod.Component
-import typings.std.Partial
+import typings.reactNativeZssRichTextEditor.PartialRichTextToolbarPro
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,5 +9,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-native-zss-rich-text-editor", "RichTextToolbar")
 @js.native
 class RichTextToolbar ()
-  extends Component[Partial[RichTextToolbarProps], js.Object, js.Any]
+  extends Component[PartialRichTextToolbarPro, js.Object, js.Any]
 

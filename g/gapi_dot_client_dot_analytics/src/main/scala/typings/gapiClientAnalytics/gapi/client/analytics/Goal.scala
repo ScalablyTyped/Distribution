@@ -1,8 +1,8 @@
 package typings.gapiClientAnalytics.gapi.client.analytics
 
-import typings.gapiClientAnalytics.AnonCaseSensitiveFirstStepRequired
-import typings.gapiClientAnalytics.AnonComparisonTypeComparisonValue
+import typings.gapiClientAnalytics.AnonComparisonValue
 import typings.gapiClientAnalytics.AnonEventConditions
+import typings.gapiClientAnalytics.AnonFirstStepRequired
 import typings.gapiClientAnalytics.AnonHref
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -36,13 +36,13 @@ trait Goal extends js.Object {
   /** Time this goal was last modified. */
   var updated: js.UndefOr[String] = js.undefined
   /** Details for the goal of the type URL_DESTINATION. */
-  var urlDestinationDetails: js.UndefOr[AnonCaseSensitiveFirstStepRequired] = js.undefined
+  var urlDestinationDetails: js.UndefOr[AnonFirstStepRequired] = js.undefined
   /** Goal value. */
   var value: js.UndefOr[Double] = js.undefined
   /** Details for the goal of the type VISIT_NUM_PAGES. */
-  var visitNumPagesDetails: js.UndefOr[AnonComparisonTypeComparisonValue] = js.undefined
+  var visitNumPagesDetails: js.UndefOr[AnonComparisonValue] = js.undefined
   /** Details for the goal of the type VISIT_TIME_ON_SITE. */
-  var visitTimeOnSiteDetails: js.UndefOr[AnonComparisonTypeComparisonValue] = js.undefined
+  var visitTimeOnSiteDetails: js.UndefOr[AnonComparisonValue] = js.undefined
   /** Web property ID to which this goal belongs. The web property ID is of the form UA-XXXXX-YY. */
   var webPropertyId: js.UndefOr[String] = js.undefined
 }
@@ -63,10 +63,10 @@ object Goal {
     selfLink: String = null,
     `type`: String = null,
     updated: String = null,
-    urlDestinationDetails: AnonCaseSensitiveFirstStepRequired = null,
+    urlDestinationDetails: AnonFirstStepRequired = null,
     value: Int | Double = null,
-    visitNumPagesDetails: AnonComparisonTypeComparisonValue = null,
-    visitTimeOnSiteDetails: AnonComparisonTypeComparisonValue = null,
+    visitNumPagesDetails: AnonComparisonValue = null,
+    visitTimeOnSiteDetails: AnonComparisonValue = null,
     webPropertyId: String = null
   ): Goal = {
     val __obj = js.Dynamic.literal()

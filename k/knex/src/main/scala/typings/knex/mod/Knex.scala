@@ -22,13 +22,15 @@ trait Knex[TRecord /* <: js.Object */, TResult]
   var seed: Seeder = js.native
   def apply[TRecord2, TResult2](): QueryBuilder[TRecord2, TResult2] = js.native
   def apply[TRecord2, TResult2](tableName: AliasDict): QueryBuilder[TRecord2, TResult2] = js.native
+  def apply[TRecord2, TResult2](tableName: AliasDict, options: TableOptions): QueryBuilder[TRecord2, TResult2] = js.native
   def apply[TRecord2, TResult2](tableName: TableDescriptor): QueryBuilder[TRecord2, TResult2] = js.native
+  def apply[TRecord2, TResult2](tableName: TableDescriptor, options: TableOptions): QueryBuilder[TRecord2, TResult2] = js.native
   def batchInsert(tableName: TableDescriptor, data: js.Array[_]): QueryBuilder[TRecord, js.Object] = js.native
   def batchInsert(tableName: TableDescriptor, data: js.Array[_], chunkSize: Double): QueryBuilder[TRecord, js.Object] = js.native
   def destroy(): js.Promise[Unit] = js.native
   def destroy(callback: js.Function): Unit = js.native
   def initialize(): Unit = js.native
-  def initialize(config: Config): Unit = js.native
+  def initialize(config: Config[_]): Unit = js.native
   def queryBuilder[TRecord2, TResult2](): QueryBuilder[TRecord2, TResult2] = js.native
   def raw[TResult2](sql: String, bindings: RawBinding*): Raw[TResult2] = js.native
   def raw[TResult2](sql: String, bindings: js.Array[RawBinding]): Raw[TResult2] = js.native

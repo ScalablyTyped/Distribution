@@ -13,7 +13,6 @@ package object textTypesMod {
     js.Object
   ]
   type ITextSlot = typings.uifabricFoundation.libIslotsMod.ISlotProp[typings.officeUiFabricReact.textTypesMod.ITextProps, java.lang.String]
-  type ITextStyles = typings.uifabricFoundation.libIcomponentMod.IComponentStyles[typings.officeUiFabricReact.textTypesMod.ITextSlots]
   type ITextStylesReturnType = typings.std.ReturnType[
     typings.std.Extract[
       typings.uifabricFoundation.libIcomponentMod.IStylesFunctionOrObject[

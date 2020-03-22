@@ -20,12 +20,6 @@ trait AnonAltFields extends js.Object {
     * Overrides userIp if both are provided.
     */
   var quotaUser: js.UndefOr[String] = js.undefined
-  /** ID of bookshelf to retrieve. */
-  var shelf: String
-  /** String to identify the originator of this request. */
-  var source: js.UndefOr[String] = js.undefined
-  /** ID of user for whom to retrieve bookshelves. */
-  var userId: String
   /** IP address of the site where the request originates. Use this if you want to enforce per-user limits. */
   var userIp: js.UndefOr[String] = js.undefined
 }
@@ -33,25 +27,21 @@ trait AnonAltFields extends js.Object {
 object AnonAltFields {
   @scala.inline
   def apply(
-    shelf: String,
-    userId: String,
     alt: String = null,
     fields: String = null,
     key: String = null,
     oauth_token: String = null,
     prettyPrint: js.UndefOr[Boolean] = js.undefined,
     quotaUser: String = null,
-    source: String = null,
     userIp: String = null
   ): AnonAltFields = {
-    val __obj = js.Dynamic.literal(shelf = shelf.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
     if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
     if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
     if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnonAltFields]
   }

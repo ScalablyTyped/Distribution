@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "proxy-agent" : "3.1.0"
+      "proxy-agent" : "3.1.1"
     }
   ],
   "test-dependencies" : [
     {
-      "proxy-agent" : "3.1.0"
+      "proxy-agent" : "3.1.1"
     }
   ],
   "compile-devDependencies" : [

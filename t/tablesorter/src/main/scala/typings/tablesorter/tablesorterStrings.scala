@@ -21,9 +21,6 @@ import scala.scalajs.js.annotation._
 
 object tablesorterStrings {
   @js.native
-  sealed trait FilterPlaceholders extends js.Object
-  
-  @js.native
   sealed trait a extends RelativeSorting
   
   @js.native
@@ -381,8 +378,6 @@ object tablesorterStrings {
     extends EmptySorting
        with StringSorting
   
-  @scala.inline
-  def FilterPlaceholders: FilterPlaceholders = "FilterPlaceholders".asInstanceOf[FilterPlaceholders]
   @scala.inline
   def a: a = "a".asInstanceOf[a]
   @scala.inline

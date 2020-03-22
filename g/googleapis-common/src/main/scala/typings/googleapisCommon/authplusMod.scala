@@ -15,7 +15,7 @@ object authplusMod extends js.Object {
   class AuthPlus () extends GoogleAuth {
     var Compute: Instantiable0[typings.googleAuthLibrary.mod.Compute] = js.native
     var JWT: Instantiable1[/* options */ JWTOptions, typings.googleAuthLibrary.mod.JWT] = js.native
-    var OAuth2: TypeofClassOAuth2Client = js.native
+    var OAuth2: TypeofOAuth2Client = js.native
   }
   
 }

@@ -1,5 +1,6 @@
 package typings.postcss.mod
 
+import typings.postcss.postcssBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -38,7 +39,7 @@ trait Input extends js.Object {
     * @returns A symbol position in the input source (e.g., in a Sass file
     * that was compiled to CSS before being passed to PostCSS):
     */
-  def origin(line: Double, column: Double): InputOrigin
+  def origin(line: Double, column: Double): InputOrigin | `false`
 }
 
 object Input {
@@ -47,7 +48,7 @@ object Input {
     from: String,
     hasBOM: Boolean,
     map: PreviousMap,
-    origin: (Double, Double) => InputOrigin,
+    origin: (Double, Double) => InputOrigin | `false`,
     file: String = null,
     id: String = null
   ): Input = {

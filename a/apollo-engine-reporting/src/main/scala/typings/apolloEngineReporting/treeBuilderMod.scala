@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 object treeBuilderMod extends js.Object {
   @js.native
   class EngineReportingTreeBuilder protected () extends js.Object {
-    def this(options: AnonErr) = this()
+    def this(options: AnonRewriteError) = this()
     var addProtobufError: js.Any = js.native
     var ensureParentNode: js.Any = js.native
     var newNode: js.Any = js.native

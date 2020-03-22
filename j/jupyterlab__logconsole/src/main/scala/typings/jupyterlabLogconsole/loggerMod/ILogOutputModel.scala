@@ -1,10 +1,10 @@
 package typings.jupyterlabLogconsole.loggerMod
 
-import typings.jupyterlabCoreutils.nbformatMod.nbformat.IOutput
+import typings.jupyterlabNbformat.mod.IOutput
 import typings.jupyterlabRendermime.outputmodelMod.IOutputModel
 import typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.IMimeModel.ISetDataOptions
-import typings.phosphorCoreutils.jsonMod.ReadonlyJSONObject
-import typings.phosphorSignaling.mod.ISignal
+import typings.luminoCoreutils.jsonMod.ReadonlyPartialJSONObject
+import typings.luminoSignaling.mod.ISignal
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -25,10 +25,10 @@ object ILogOutputModel {
   @scala.inline
   def apply(
     changed: ISignal[ILogOutputModel, Unit],
-    data: ReadonlyJSONObject,
+    data: ReadonlyPartialJSONObject,
     dispose: () => Unit,
     level: FullLogLevel,
-    metadata: ReadonlyJSONObject,
+    metadata: ReadonlyPartialJSONObject,
     setData: ISetDataOptions => Unit,
     timestamp: Date,
     toJSON: () => IOutput,

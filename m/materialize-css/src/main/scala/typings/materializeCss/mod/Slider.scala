@@ -1,9 +1,8 @@
 package typings.materializeCss.mod
 
-import typings.materializeCss.M.SliderOptions
 import typings.materializeCss.MElements
+import typings.materializeCss.PartialSliderOptions
 import typings.std.Element
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,11 +24,11 @@ object Slider extends js.Object {
     * Init Sliders
     */
   def init(els: MElements): js.Array[typings.materializeCss.M.Slider] = js.native
-  def init(els: MElements, options: Partial[SliderOptions]): js.Array[typings.materializeCss.M.Slider] = js.native
+  def init(els: MElements, options: PartialSliderOptions): js.Array[typings.materializeCss.M.Slider] = js.native
   /**
     * Init Slider
     */
   def init(els: Element): typings.materializeCss.M.Slider = js.native
-  def init(els: Element, options: Partial[SliderOptions]): typings.materializeCss.M.Slider = js.native
+  def init(els: Element, options: PartialSliderOptions): typings.materializeCss.M.Slider = js.native
 }
 

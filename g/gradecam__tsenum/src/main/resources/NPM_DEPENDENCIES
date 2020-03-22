@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@gradecam/tsenum" : "1.2.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@gradecam/tsenum" : "1.2.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -2,7 +2,7 @@ package typings.gapiClientAnalytics.gapi.client.analytics
 
 import typings.gapiClientAnalytics.AnonAccountId
 import typings.gapiClientAnalytics.AnonColumnType
-import typings.gapiClientAnalytics.AnonDimensionsFilters
+import typings.gapiClientAnalytics.AnonFilters
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,7 +18,7 @@ trait RealtimeData extends js.Object {
   /** Information for the view (profile), for which the real time data was requested. */
   var profileInfo: js.UndefOr[AnonAccountId] = js.undefined
   /** Real time data request query parameters. */
-  var query: js.UndefOr[AnonDimensionsFilters] = js.undefined
+  var query: js.UndefOr[AnonFilters] = js.undefined
   /**
     * Real time data rows, where each row contains a list of dimension values followed by the metric values. The order of dimensions and metrics is same as
     * specified in the request.
@@ -42,7 +42,7 @@ object RealtimeData {
     id: String = null,
     kind: String = null,
     profileInfo: AnonAccountId = null,
-    query: AnonDimensionsFilters = null,
+    query: AnonFilters = null,
     rows: js.Array[js.Array[String]] = null,
     selfLink: String = null,
     totalResults: Int | Double = null,

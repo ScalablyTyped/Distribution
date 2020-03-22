@@ -21,6 +21,7 @@ object headerMod extends js.Object {
       */
     var collapse: js.UndefOr[condense] = js.native
     var collapsibleHeaderInitialized: js.Any = js.native
+    var collapsibleMainHeader: js.UndefOr[js.Any] = js.native
     var contentScrollCallback: js.UndefOr[js.Any] = js.native
     var destroyCollapsibleHeader: js.Any = js.native
     var el: HTMLElement = js.native

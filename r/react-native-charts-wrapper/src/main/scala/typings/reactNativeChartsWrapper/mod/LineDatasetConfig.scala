@@ -1,7 +1,7 @@
 package typings.reactNativeChartsWrapper.mod
 
 import typings.reactNativeChartsWrapper.AnonAngle
-import typings.reactNativeChartsWrapper.AnonLineLengthPhase
+import typings.reactNativeChartsWrapper.AnonPhase
 import typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.CUBIC_BEZIER
 import typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.HORIZONTAL_BEZIER
 import typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.LINEAR
@@ -19,7 +19,7 @@ trait LineDatasetConfig
   var circleColors: js.UndefOr[js.Array[Color]] = js.undefined
   var circleHoleColor: js.UndefOr[Color] = js.undefined
   var circleRadius: js.UndefOr[Double] = js.undefined
-  var dashedLine: js.UndefOr[AnonLineLengthPhase] = js.undefined
+  var dashedLine: js.UndefOr[AnonPhase] = js.undefined
   var drawCircleHole: js.UndefOr[Boolean] = js.undefined
   var drawCircles: js.UndefOr[Boolean] = js.undefined
   var drawCubicIntensity: js.UndefOr[Double] = js.undefined
@@ -36,7 +36,7 @@ object LineDatasetConfig {
     circleRadius: Int | Double = null,
     color: Int | Double = null,
     colors: js.Array[Color] = null,
-    dashedLine: AnonLineLengthPhase = null,
+    dashedLine: AnonPhase = null,
     drawCircleHole: js.UndefOr[Boolean] = js.undefined,
     drawCircles: js.UndefOr[Boolean] = js.undefined,
     drawCubicIntensity: Int | Double = null,

@@ -2,8 +2,8 @@ package typings.frctlFractal.mod
 
 import typings.frctlFractal.AnonHandleString
 import typings.frctlFractal.AnonMount
-import typings.frctlFractal.AnonMountPath
 import typings.frctlFractal.AnonParams
+import typings.frctlFractal.AnonPath
 import typings.frctlFractal.frctlFractalBooleans.`false`
 import typings.frctlFractal.frctlFractalStrings.favicon
 import typings.frctlFractal.frctlFractalStrings.format
@@ -104,7 +104,7 @@ class WebTheme protected () extends EventEmitter {
   @JSName("setOption")
   def setOption_version(key: version, value: String): this.type = js.native
   def setRedirectView(view: String): Unit = js.native
-  def static(): js.Array[AnonMountPath] = js.native
+  def static(): js.Array[AnonPath] = js.native
   def urlFromRoute(handle: String, params: js.Any): String | Null = js.native
   def urlFromRoute(handle: String, params: js.Any, noRedirect: Boolean): String | Null = js.native
 }

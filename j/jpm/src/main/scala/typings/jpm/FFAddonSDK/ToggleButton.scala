@@ -1,6 +1,6 @@
 package typings.jpm.FFAddonSDK
 
-import typings.jpm.AnonBadgeBadgeColorChecked
+import typings.jpm.AnonChecked
 import typings.jpm.jpmStrings.change
 import typings.jpm.jpmStrings.click
 import typings.jpm.jpmStrings.tab
@@ -28,18 +28,18 @@ trait ToggleButton
   def once_click(event: click, handler: js.Function1[/* state */ ToggleButtonState, _]): Unit = js.native
   def removeListener(event: String, handler: js.Function): Unit = js.native
   def state(target: BrowserWindow): ToggleButtonState = js.native
-  def state(target: BrowserWindow, state: AnonBadgeBadgeColorChecked): ToggleButtonState = js.native
+  def state(target: BrowserWindow, state: AnonChecked): ToggleButtonState = js.native
   def state(target: Tab): ToggleButtonState = js.native
-  def state(target: Tab, state: AnonBadgeBadgeColorChecked): ToggleButtonState = js.native
+  def state(target: Tab, state: AnonChecked): ToggleButtonState = js.native
   def state(target: ToggleButton): ToggleButtonState = js.native
-  def state(target: ToggleButton, state: AnonBadgeBadgeColorChecked): ToggleButtonState = js.native
+  def state(target: ToggleButton, state: AnonChecked): ToggleButtonState = js.native
   @JSName("state")
   def state_tab(target: tab): ToggleButtonState = js.native
   @JSName("state")
-  def state_tab(target: tab, state: AnonBadgeBadgeColorChecked): ToggleButtonState = js.native
+  def state_tab(target: tab, state: AnonChecked): ToggleButtonState = js.native
   @JSName("state")
   def state_window(target: window): ToggleButtonState = js.native
   @JSName("state")
-  def state_window(target: window, state: AnonBadgeBadgeColorChecked): ToggleButtonState = js.native
+  def state_window(target: window, state: AnonChecked): ToggleButtonState = js.native
 }
 

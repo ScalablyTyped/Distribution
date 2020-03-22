@@ -3,7 +3,7 @@ package typings.nivoStream.mod
 import typings.nivoAxes.mod.AxisProps
 import typings.nivoColors.mod.InheritedColorProp
 import typings.nivoColors.mod.OrdinalColorsInstruction
-import typings.nivoCore.Anon
+import typings.nivoCore.AnonDictkey
 import typings.nivoCore.AnonId
 import typings.nivoCore.mod.AreaCurve
 import typings.nivoCore.mod.Box
@@ -91,8 +91,8 @@ object OptionalStreamProps {
     axisLeft: AxisProps = null,
     axisRight: AxisProps = null,
     axisTop: AxisProps = null,
-    defs: js.Array[AnonId] = null,
-    fill: js.Array[Anon[T]] = null,
+    defs: js.Array[AnonDictkey] = null,
+    fill: js.Array[AnonId[T]] = null,
     motionDamping: Int | Double = null,
     motionStiffness: Int | Double = null
   ): OptionalStreamProps[T] = {

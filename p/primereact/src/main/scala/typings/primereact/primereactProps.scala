@@ -94,6 +94,11 @@ trait primereactProps {
   def GMapProps: typings.primereact.gmapMod.GMapProps.type = typings.primereact.gmapMod.GMapProps
   type GMapProps = typings.primereact.gmapMod.GMapProps
   @scala.inline
+  def GalleriaProps: typings.primereact.galleriaMod.GalleriaProps.type = typings.primereact.galleriaMod.GalleriaProps
+  type GalleriaProps = typings.primereact.galleriaMod.GalleriaProps
+  type GalleriaPreviewProps = typings.primereact.galleriaPreviewMod.GalleriaPreviewProps
+  type GalleriaThumbnailsProps = typings.primereact.galleriaThumbnailsMod.GalleriaThumbnailsProps
+  @scala.inline
   def GrowlProps: typings.primereact.growlMod.GrowlProps.type = typings.primereact.growlMod.GrowlProps
   type GrowlProps = typings.primereact.growlMod.GrowlProps
   type HeaderCellProps = typings.primereact.headerCellMod.HeaderCellProps

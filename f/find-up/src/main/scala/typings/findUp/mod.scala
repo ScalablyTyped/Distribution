@@ -12,7 +12,7 @@ object mod extends js.Object {
   	*/
   val stop: StopSymbol = js.native
   @JSName("sync")
-  var sync_Original: AnonDirectory = js.native
+  var sync_Original: AnonCall = js.native
   /**
   	Find a file or directory by walking up parent directories.
   	@param matcher - Called for each directory in the search. Return a path or `findUp.stop` to stop the search.

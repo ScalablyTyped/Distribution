@@ -1,6 +1,6 @@
 package typings.reactOnsenui.mod
 
-import typings.reactOnsenui.HTMLAttributesidclassNamestylemodifierstringpositi
+import typings.reactOnsenui.HTMLAttributesidclassNameDirection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-onsenui", "SpeedDial")
 @js.native
 class SpeedDial ()
-  extends typings.react.mod.Component[HTMLAttributesidclassNamestylemodifierstringpositi, js.Any, js.Any]
+  extends typings.react.mod.Component[HTMLAttributesidclassNameDirection, js.Any, js.Any]
 

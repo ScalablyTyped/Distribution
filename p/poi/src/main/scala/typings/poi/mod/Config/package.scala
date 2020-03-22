@@ -18,9 +18,7 @@ package object Config {
   ]
   type Envs = org.scalablytyped.runtime.StringDictionary[java.lang.String]
   type Output = typings.poi.mod.Config.Output_
-  type Pages = org.scalablytyped.runtime.StringDictionary[
-    java.lang.String | (typings.std.Partial[typings.htmlWebpackPlugin.mod.Options] with typings.poi.AnonChunks)
-  ]
+  type Pages = org.scalablytyped.runtime.StringDictionary[java.lang.String | typings.poi.PartialOptionsentrystring]
   type Plugins = js.Array[java.lang.String | typings.poi.mod.Config.PluginOption]
   type PublicFolder = java.lang.String | scala.Boolean
 }

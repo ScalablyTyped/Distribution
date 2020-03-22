@@ -2,7 +2,7 @@ package typings.inquirer.mod
 
 import typings.inquirer.AnonBottomBar
 import typings.inquirer.AnonUi
-import typings.inquirer.TypeofClassSeparator
+import typings.inquirer.TypeofSeparator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ trait Inquirer extends PromptModuleBase {
   /**
     * Represents a choice-item separator.
     */
-  var Separator: TypeofClassSeparator = js.native
+  var Separator: TypeofSeparator = js.native
   /**
     * The default prompt-module.
     */

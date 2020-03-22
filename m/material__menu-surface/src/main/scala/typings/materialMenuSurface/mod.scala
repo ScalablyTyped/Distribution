@@ -3,7 +3,6 @@ package typings.materialMenuSurface
 import typings.materialMenuSurface.adapterMod.MDCMenuSurfaceAdapter
 import typings.materialMenuSurface.utilMod.CssTransformPropertyName
 import typings.std.Element
-import typings.std.Partial
 import typings.std.Window_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -19,7 +18,7 @@ object mod extends js.Object {
   @js.native
   class MDCMenuSurfaceFoundation ()
     extends typings.materialMenuSurface.foundationMod.MDCMenuSurfaceFoundation {
-    def this(adapter: Partial[MDCMenuSurfaceAdapter]) = this()
+    def this(adapter: PartialMDCMenuSurfaceAdap) = this()
   }
   
   /**

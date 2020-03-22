@@ -1,17 +1,17 @@
 package typings.googleCloudTasks.mod
 
-import typings.std.Partial
+import typings.googleCloudTasks.PartialPolicy
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SetIamPolicyRequest extends js.Object {
-  var policy: Partial[Policy]
+  var policy: PartialPolicy
 }
 
 object SetIamPolicyRequest {
   @scala.inline
-  def apply(policy: Partial[Policy]): SetIamPolicyRequest = {
+  def apply(policy: PartialPolicy): SetIamPolicyRequest = {
     val __obj = js.Dynamic.literal(policy = policy.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SetIamPolicyRequest]

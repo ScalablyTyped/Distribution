@@ -1,7 +1,7 @@
 package typings.leafletGeosearch.mod
 
 import typings.leafletGeosearch.AnonAdminDistrict
-import typings.leafletGeosearch.AnonCalculationMethod
+import typings.leafletGeosearch.BingProviderResultPointca
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ trait BingProviderResultRaw extends js.Object {
   var bbox: js.Tuple4[Double, Double, Double, Double]
   var confidence: String
   var entityType: String
-  var geocodePoints: js.Array[BingProviderResultPoint with AnonCalculationMethod]
+  var geocodePoints: js.Array[BingProviderResultPointca]
   var matchCodes: js.Array[String]
   var name: String
   var point: BingProviderResultPoint
@@ -26,7 +26,7 @@ object BingProviderResultRaw {
     bbox: js.Tuple4[Double, Double, Double, Double],
     confidence: String,
     entityType: String,
-    geocodePoints: js.Array[BingProviderResultPoint with AnonCalculationMethod],
+    geocodePoints: js.Array[BingProviderResultPointca],
     matchCodes: js.Array[String],
     name: String,
     point: BingProviderResultPoint

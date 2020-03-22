@@ -2,7 +2,7 @@ package typings.vexflow.Vex.Flow
 
 import typings.vexflow.AnonBpm
 import typings.vexflow.AnonFillstyle
-import typings.vexflow.AnonFillstyleGlyphspacingpx
+import typings.vexflow.AnonGlyphspacingpx
 import typings.vexflow.AnonJustification
 import typings.vexflow.AnonVisible
 import typings.vexflow.Vex.Flow.Barline.`type`
@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation._
 class Stave protected () extends js.Object {
   def this(x: Double, y: Double, width: Double) = this()
   def this(x: Double, y: Double, width: Double, options: AnonFillstyle) = this()
-  var options: AnonFillstyleGlyphspacingpx = js.native
+  var options: AnonGlyphspacingpx = js.native
   def addClef(clef: String): Stave = js.native
   def addClef(clef: String, size: String): Stave = js.native
   def addClef(clef: String, size: String, annotation: String): Stave = js.native

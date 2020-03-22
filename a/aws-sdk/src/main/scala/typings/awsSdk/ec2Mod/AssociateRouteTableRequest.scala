@@ -13,24 +13,24 @@ trait AssociateRouteTableRequest extends js.Object {
   /**
     * The ID of the internet gateway or virtual private gateway.
     */
-  var GatewayId: js.UndefOr[String] = js.native
+  var GatewayId: js.UndefOr[RouteGatewayId] = js.native
   /**
     * The ID of the route table.
     */
-  var RouteTableId: String = js.native
+  var RouteTableId: typings.awsSdk.ec2Mod.RouteTableId = js.native
   /**
     * The ID of the subnet.
     */
-  var SubnetId: js.UndefOr[String] = js.native
+  var SubnetId: js.UndefOr[typings.awsSdk.ec2Mod.SubnetId] = js.native
 }
 
 object AssociateRouteTableRequest {
   @scala.inline
   def apply(
-    RouteTableId: String,
+    RouteTableId: RouteTableId,
     DryRun: js.UndefOr[scala.Boolean] = js.undefined,
-    GatewayId: String = null,
-    SubnetId: String = null
+    GatewayId: RouteGatewayId = null,
+    SubnetId: SubnetId = null
   ): AssociateRouteTableRequest = {
     val __obj = js.Dynamic.literal(RouteTableId = RouteTableId.asInstanceOf[js.Any])
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])

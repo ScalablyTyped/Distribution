@@ -183,6 +183,15 @@ object OpenLinkClientAction extends js.Object {
   def createInStaticImageViewerUnderClickAction(container: StaticImageViewer): OpenLinkClientAction = js.native
   /**
     * Creates and returns a new OpenLinkClientAction instance in the SDK and on the server.
+    * The new OpenLinkClientAction will be automatically stored in the 'onEnterKeyPressAction' property
+    * of the parent TextBox element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.7.0 and higher
+    */
+  def createInTextBoxUnderOnEnterKeyPressAction(container: TextBox): OpenLinkClientAction = js.native
+  /**
+    * Creates and returns a new OpenLinkClientAction instance in the SDK and on the server.
     * The new OpenLinkClientAction will be automatically stored in the 'action' property
     * of the parent customwidgets.WidgetValue element passed as argument.
     *

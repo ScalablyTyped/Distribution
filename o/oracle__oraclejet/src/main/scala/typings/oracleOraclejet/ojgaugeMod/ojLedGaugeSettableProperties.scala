@@ -1,9 +1,9 @@
 package typings.oracleOraclejet.ojgaugeMod
 
-import typings.oracleOraclejet.AnonAutoBillionConverterMillionNone
-import typings.oracleOraclejet.AnonComponentNameLabelAndValue
-import typings.oracleOraclejet.AnonContextRendererAnonInsertAnonPreventDefaultTooltipContext
-import typings.oracleOraclejet.AnonStyle
+import typings.oracleOraclejet.Anon8
+import typings.oracleOraclejet.AnonLabelAndValue
+import typings.oracleOraclejet.AnonText
+import typings.oracleOraclejet.AnonTextType
 import typings.oracleOraclejet.ojgaugeMod.ojLedGauge.Threshold
 import typings.oracleOraclejet.oracleOraclejetNumbers.`0`
 import typings.oracleOraclejet.oracleOraclejetNumbers.`180`
@@ -28,16 +28,16 @@ import scala.scalajs.js.annotation._
 trait ojLedGaugeSettableProperties extends dvtBaseGaugeSettableProperties {
   var borderColor: String
   var color: String
-  var label: AnonStyle
+  var label: AnonText
   var max: Double
-  var metricLabel: AnonAutoBillionConverterMillionNone
+  var metricLabel: AnonTextType
   var min: Double
   var rotation: `90` | `180` | `270` | `0`
   var size: Double
   var svgClassName: String
   var svgStyle: js.Object
   var thresholds: js.Array[Threshold]
-  var tooltip: AnonContextRendererAnonInsertAnonPreventDefaultTooltipContext
+  var tooltip: Anon8
   var `type`: arrow | diamond | square | rectangle | triangle | star | human | circle
   var value: Double | Null
   var visualEffects: none | auto
@@ -48,18 +48,18 @@ object ojLedGaugeSettableProperties {
   def apply(
     borderColor: String,
     color: String,
-    label: AnonStyle,
+    label: AnonText,
     max: Double,
-    metricLabel: AnonAutoBillionConverterMillionNone,
+    metricLabel: AnonTextType,
     min: Double,
     rotation: `90` | `180` | `270` | `0`,
     size: Double,
     svgClassName: String,
     svgStyle: js.Object,
     thresholds: js.Array[Threshold],
-    tooltip: AnonContextRendererAnonInsertAnonPreventDefaultTooltipContext,
+    tooltip: Anon8,
     trackResize: on | off,
-    translations: AnonComponentNameLabelAndValue,
+    translations: AnonLabelAndValue,
     `type`: arrow | diamond | square | rectangle | triangle | star | human | circle,
     visualEffects: none | auto,
     value: Int | Double = null

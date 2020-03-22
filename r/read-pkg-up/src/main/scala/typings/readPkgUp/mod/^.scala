@@ -26,7 +26,8 @@ object ^ extends js.Object {
   	```
   	*/
   def apply(): js.Promise[js.UndefOr[NormalizedReadResult]] = js.native
-  def apply(options: NormalizeOptions | Options): js.Promise[js.UndefOr[NormalizedReadResult]] = js.native
+  def apply(options: NormalizeOptions): js.Promise[js.UndefOr[NormalizedReadResult]] = js.native
+  def apply(options: Options): js.Promise[js.UndefOr[ReadResult]] = js.native
   /**
   	Synchronously read the closest `package.json` file.
   	@example
@@ -44,6 +45,7 @@ object ^ extends js.Object {
   	```
   	*/
   def sync(): js.UndefOr[NormalizedReadResult] = js.native
-  def sync(options: NormalizeOptions | Options): js.UndefOr[NormalizedReadResult] = js.native
+  def sync(options: NormalizeOptions): js.UndefOr[NormalizedReadResult] = js.native
+  def sync(options: Options): js.UndefOr[ReadResult] = js.native
 }
 

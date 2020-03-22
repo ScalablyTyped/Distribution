@@ -49,8 +49,8 @@ object mod extends js.Object {
       * Returns an object contains with boolean value whether update needed, current version and latest version.
       * Current and the latest app versions are first split by delimiter, and check each split numbers into depth.
       */
-    def needUpdate(): js.Promise[AnonCurrentVersionIsNeeded] = js.native
-    def needUpdate(option: AnonCurrentVersion): js.Promise[AnonCurrentVersionIsNeeded] = js.native
+    def needUpdate(): js.Promise[AnonIsNeeded] = js.native
+    def needUpdate(option: AnonCurrentVersion): js.Promise[AnonIsNeeded] = js.native
   }
   
 }

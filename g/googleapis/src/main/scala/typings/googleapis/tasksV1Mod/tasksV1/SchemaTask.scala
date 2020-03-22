@@ -1,6 +1,6 @@
 package typings.googleapis.tasksV1Mod.tasksV1
 
-import typings.googleapis.AnonDescriptionLink
+import typings.googleapis.AnonLink
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -41,7 +41,7 @@ trait SchemaTask extends js.Object {
   /**
     * Collection of links. This collection is read-only.
     */
-  var links: js.UndefOr[js.Array[AnonDescriptionLink]] = js.native
+  var links: js.UndefOr[js.Array[AnonLink]] = js.native
   /**
     * Notes describing the task. Optional.
     */
@@ -91,7 +91,7 @@ object SchemaTask {
     hidden: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
     kind: String = null,
-    links: js.Array[AnonDescriptionLink] = null,
+    links: js.Array[AnonLink] = null,
     notes: String = null,
     parent: String = null,
     position: String = null,

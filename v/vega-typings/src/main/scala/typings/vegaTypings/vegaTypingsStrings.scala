@@ -32,7 +32,7 @@ import typings.vegaTypings.scaleMod.DiscreteScaleType
 import typings.vegaTypings.scaleMod.DiscretizingScaleType
 import typings.vegaTypings.scaleMod.QuantScaleType
 import typings.vegaTypings.scaleMod.RangeEnum
-import typings.vegaTypings.scaleMod.ScaleInterpolate
+import typings.vegaTypings.scaleMod.ScaleInterpolateEnum
 import typings.vegaTypings.scaleMod.ScaleType
 import typings.vegaTypings.scaleMod.SortOrder
 import typings.vegaTypings.scaleMod.TimeInterval
@@ -95,9 +95,6 @@ object vegaTypingsStrings {
   
   @js.native
   sealed trait `all-scroll` extends Cursor
-  
-  @js.native
-  sealed trait allow extends js.Object
   
   @js.native
   sealed trait alphabetic extends TextBaseline
@@ -585,10 +582,10 @@ object vegaTypingsStrings {
   sealed trait csv extends js.Object
   
   @js.native
-  sealed trait cubehelix extends ScaleInterpolate
+  sealed trait cubehelix extends ScaleInterpolateEnum
   
   @js.native
-  sealed trait `cubehelix-long` extends ScaleInterpolate
+  sealed trait `cubehelix-long` extends ScaleInterpolateEnum
   
   @js.native
   sealed trait cume_dist extends WindowOnlyOp
@@ -924,10 +921,10 @@ object vegaTypingsStrings {
        with TitleFrame
   
   @js.native
-  sealed trait hcl extends ScaleInterpolate
+  sealed trait hcl extends ScaleInterpolateEnum
   
   @js.native
-  sealed trait `hcl-long` extends ScaleInterpolate
+  sealed trait `hcl-long` extends ScaleInterpolateEnum
   
   @js.native
   sealed trait heatmap extends RangeEnum
@@ -959,10 +956,10 @@ object vegaTypingsStrings {
   sealed trait hover extends EncodeEntryName
   
   @js.native
-  sealed trait hsl extends ScaleInterpolate
+  sealed trait hsl extends ScaleInterpolateEnum
   
   @js.native
-  sealed trait `hsl-long` extends ScaleInterpolate
+  sealed trait `hsl-long` extends ScaleInterpolateEnum
   
   @js.native
   sealed trait http extends js.Object
@@ -1038,7 +1035,7 @@ object vegaTypingsStrings {
   sealed trait khaki extends ColorName
   
   @js.native
-  sealed trait lab extends ScaleInterpolate
+  sealed trait lab extends ScaleInterpolateEnum
   
   @js.native
   sealed trait lag extends WindowOnlyOp
@@ -1611,9 +1608,6 @@ object vegaTypingsStrings {
   sealed trait prev_value extends WindowOnlyOp
   
   @js.native
-  sealed trait prevent extends js.Object
-  
-  @js.native
   sealed trait progress extends Cursor
   
   @js.native
@@ -2159,7 +2153,7 @@ object vegaTypingsStrings {
   sealed trait resquarify extends TreemapMethod
   
   @js.native
-  sealed trait rgb extends ScaleInterpolate
+  sealed trait rgb extends ScaleInterpolateEnum
   
   @js.native
   sealed trait right
@@ -2808,8 +2802,6 @@ object vegaTypingsStrings {
   def all: all = "all".asInstanceOf[all]
   @scala.inline
   def `all-scroll`: `all-scroll` = "all-scroll".asInstanceOf[`all-scroll`]
-  @scala.inline
-  def allow: allow = "allow".asInstanceOf[allow]
   @scala.inline
   def alphabetic: alphabetic = "alphabetic".asInstanceOf[alphabetic]
   @scala.inline
@@ -3664,8 +3656,6 @@ object vegaTypingsStrings {
   def powderblue: powderblue = "powderblue".asInstanceOf[powderblue]
   @scala.inline
   def prev_value: prev_value = "prev_value".asInstanceOf[prev_value]
-  @scala.inline
-  def prevent: prevent = "prevent".asInstanceOf[prevent]
   @scala.inline
   def progress: progress = "progress".asInstanceOf[progress]
   @scala.inline

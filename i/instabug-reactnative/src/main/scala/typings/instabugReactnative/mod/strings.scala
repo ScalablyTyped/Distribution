@@ -108,10 +108,22 @@ object strings extends js.Object {
   sealed trait reportBug extends strings
   
   @js.native
+  sealed trait reportBugDescription extends strings
+  
+  @js.native
   sealed trait reportFeedback extends strings
   
   @js.native
+  sealed trait reportFeedbackDescription extends strings
+  
+  @js.native
   sealed trait reportQuestion extends strings
+  
+  @js.native
+  sealed trait reportQuestionDescription extends strings
+  
+  @js.native
+  sealed trait requestFeatureDescription extends strings
   
   @js.native
   sealed trait screenshotHeaderTitle extends strings
@@ -121,6 +133,18 @@ object strings extends js.Object {
   
   @js.native
   sealed trait startAlertText extends strings
+  
+  @js.native
+  sealed trait surveysCustomThanksSubTitle extends strings
+  
+  @js.native
+  sealed trait surveysCustomThanksTitle extends strings
+  
+  @js.native
+  sealed trait surveysStoreRatingThanksSubtitle extends strings
+  
+  @js.native
+  sealed trait surveysStoreRatingThanksTitle extends strings
   
   @js.native
   sealed trait swipeHint extends strings
@@ -262,11 +286,23 @@ object strings extends js.Object {
   /* 11 */ @js.native
   object reportBug extends TopLevel[reportBug with Double]
   
+  /* 55 */ @js.native
+  object reportBugDescription extends TopLevel[reportBugDescription with Double]
+  
   /* 12 */ @js.native
   object reportFeedback extends TopLevel[reportFeedback with Double]
   
+  /* 56 */ @js.native
+  object reportFeedbackDescription extends TopLevel[reportFeedbackDescription with Double]
+  
   /* 10 */ @js.native
   object reportQuestion extends TopLevel[reportQuestion with Double]
+  
+  /* 57 */ @js.native
+  object reportQuestionDescription extends TopLevel[reportQuestionDescription with Double]
+  
+  /* 58 */ @js.native
+  object requestFeatureDescription extends TopLevel[requestFeatureDescription with Double]
   
   /* 27 */ @js.native
   object screenshotHeaderTitle extends TopLevel[screenshotHeaderTitle with Double]
@@ -276,6 +312,18 @@ object strings extends js.Object {
   
   /* 3 */ @js.native
   object startAlertText extends TopLevel[startAlertText with Double]
+  
+  /* 52 */ @js.native
+  object surveysCustomThanksSubTitle extends TopLevel[surveysCustomThanksSubTitle with Double]
+  
+  /* 51 */ @js.native
+  object surveysCustomThanksTitle extends TopLevel[surveysCustomThanksTitle with Double]
+  
+  /* 54 */ @js.native
+  object surveysStoreRatingThanksSubtitle extends TopLevel[surveysStoreRatingThanksSubtitle with Double]
+  
+  /* 53 */ @js.native
+  object surveysStoreRatingThanksTitle extends TopLevel[surveysStoreRatingThanksTitle with Double]
   
   /* 1 */ @js.native
   object swipeHint extends TopLevel[swipeHint with Double]

@@ -25,6 +25,10 @@ trait IEditorMinimapOptions extends js.Object {
     */
   var renderCharacters: js.UndefOr[Boolean] = js.undefined
   /**
+    * Relative size of the font in the minimap. Defaults to 1.
+    */
+  var scale: js.UndefOr[Double] = js.undefined
+  /**
     * Control the rendering of the minimap slider.
     * Defaults to 'mouseover'.
     */
@@ -42,6 +46,7 @@ object IEditorMinimapOptions {
     enabled: js.UndefOr[Boolean] = js.undefined,
     maxColumn: Int | Double = null,
     renderCharacters: js.UndefOr[Boolean] = js.undefined,
+    scale: Int | Double = null,
     showSlider: always | mouseover = null,
     side: right | left = null
   ): IEditorMinimapOptions = {
@@ -49,6 +54,7 @@ object IEditorMinimapOptions {
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
     if (maxColumn != null) __obj.updateDynamic("maxColumn")(maxColumn.asInstanceOf[js.Any])
     if (!js.isUndefined(renderCharacters)) __obj.updateDynamic("renderCharacters")(renderCharacters.asInstanceOf[js.Any])
+    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
     if (showSlider != null) __obj.updateDynamic("showSlider")(showSlider.asInstanceOf[js.Any])
     if (side != null) __obj.updateDynamic("side")(side.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEditorMinimapOptions]

@@ -1,14 +1,13 @@
 package typings.reactIntl.mod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.formatjsIntlDisplaynames.libMod.DisplayNamesOptions
 import typings.react.mod.FC
-import typings.reactIntl.AnonValueNumberObject
+import typings.reactIntl.DisplayNamesOptionsvalues
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("react-intl", "FormattedDisplayName")
 @js.native
-object FormattedDisplayName extends TopLevel[FC[DisplayNamesOptions with AnonValueNumberObject]]
+object FormattedDisplayName extends TopLevel[FC[DisplayNamesOptionsvalues]]
 

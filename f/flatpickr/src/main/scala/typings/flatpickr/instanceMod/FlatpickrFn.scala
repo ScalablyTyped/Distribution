@@ -1,22 +1,21 @@
 package typings.flatpickr.instanceMod
 
-import typings.flatpickr.AnonDefault
+import typings.flatpickr.PartialParsedOptions
 import typings.flatpickr.globalsMod._Global_.Date
+import typings.flatpickr.kinkeyCustomLocaledefault
 import typings.flatpickr.localeMod.CustomLocale
 import typings.flatpickr.optionsMod.DateOption
 import typings.flatpickr.optionsMod.Options
-import typings.flatpickr.optionsMod.ParsedOptions
 import typings.std.ArrayLike
 import typings.std.Node
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
 trait FlatpickrFn extends js.Object {
-  var defaultConfig: Partial[ParsedOptions] = js.native
-  var l10ns: typings.flatpickr.flatpickrStrings.FlatpickrFn with js.Any with AnonDefault = js.native
+  var defaultConfig: PartialParsedOptions = js.native
+  var l10ns: kinkeyCustomLocaledefault = js.native
   def apply(selector: String): Instance | js.Array[Instance] = js.native
   def apply(selector: String, config: Options): Instance | js.Array[Instance] = js.native
   def apply(selector: ArrayLike[Node]): js.Array[Instance] = js.native

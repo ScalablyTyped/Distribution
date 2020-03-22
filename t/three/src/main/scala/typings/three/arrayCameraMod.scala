@@ -13,7 +13,7 @@ object arrayCameraMod extends js.Object {
   class ArrayCamera () extends PerspectiveCamera {
     def this(cameras: js.Array[PerspectiveCamera]) = this()
     var cameras: js.Array[PerspectiveCamera] = js.native
-    var isArrayCamera: `true` = js.native
+    val isArrayCamera: `true` = js.native
   }
   
 }

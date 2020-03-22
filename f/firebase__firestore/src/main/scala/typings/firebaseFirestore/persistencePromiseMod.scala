@@ -30,14 +30,14 @@ object persistencePromiseMod extends js.Object {
   /* static members */
   @js.native
   object PersistencePromise extends js.Object {
-    def forEach[R](collection: AnonCbForEachR[R], f: js.Function1[/* r */ R, PersistencePromise[Unit]]): PersistencePromise[Unit] = js.native
-    def forEach[R, S](collection: AnonCbForEach[R, S], f: js.Function1[/* r */ R, PersistencePromise[Unit]]): PersistencePromise[Unit] = js.native
+    def forEach[R](collection: Anon1[R], f: js.Function1[/* r */ R, PersistencePromise[Unit]]): PersistencePromise[Unit] = js.native
+    def forEach[R, S](collection: Anon0[R, S], f: js.Function1[/* r */ R, PersistencePromise[Unit]]): PersistencePromise[Unit] = js.native
     /**
       * Given an iterable, call the given function on each element in the
       * collection and wait for all of the resulting concurrent PersistencePromises
       * to resolve.
       */
-    def forEach[R, S](collection: AnonCbForEach[R, S], f: js.Function2[/* r */ R, /* s */ S, PersistencePromise[Unit]]): PersistencePromise[Unit] = js.native
+    def forEach[R, S](collection: Anon0[R, S], f: js.Function2[/* r */ R, /* s */ S, PersistencePromise[Unit]]): PersistencePromise[Unit] = js.native
     /**
       * Given an array of predicate functions that asynchronously evaluate to a
       * boolean, implements a short-circuiting `or` between the results. Predicates
@@ -48,7 +48,7 @@ object persistencePromiseMod extends js.Object {
     def reject[R](error: Error): PersistencePromise[R] = js.native
     def resolve(): PersistencePromise[Unit] = js.native
     def resolve[R](result: R): PersistencePromise[R] = js.native
-    def waitFor(all: AnonCb): PersistencePromise[Unit] = js.native
+    def waitFor(all: AnonForEach): PersistencePromise[Unit] = js.native
   }
   
   type FulfilledHandler[T, R] = (js.Function1[/* result */ T, R | PersistencePromise[R]]) | Null

@@ -14,16 +14,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.ionicCore.componentsMod.Components.IonTextarea because var conflicts: autocapitalize, spellcheck. Inlined autoGrow, autofocus, clearOnEdit, color, cols, debounce, disabled, getInputElement, maxlength, minlength, mode, name, placeholder, readonly, required, rows, setFocus, value, wrap */ @js.native
+- typings.ionicCore.componentsMod.Components.IonTextarea because var conflicts: autocapitalize, autofocus, spellcheck. Inlined autoGrow, clearOnEdit, color, cols, debounce, disabled, getInputElement, maxlength, minlength, mode, name, placeholder, readonly, required, rows, setFocus, value, wrap */ @js.native
 trait HTMLIonTextareaElement extends HTMLStencilElement {
   /**
     * If `true`, the element height will increase based on the value.
     */
   var autoGrow: Boolean = js.native
-  /**
-    * This Boolean attribute lets you specify that a form control should have input focus when the page loads.
-    */
-  var autofocus: Boolean = js.native
   /**
     * If `true`, the value will be cleared after focus upon edit. Defaults to `true` when `type` is `"password"`, `false` for all other types.
     */

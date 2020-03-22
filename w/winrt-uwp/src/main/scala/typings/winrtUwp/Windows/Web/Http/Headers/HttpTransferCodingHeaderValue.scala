@@ -1,6 +1,6 @@
 package typings.winrtUwp.Windows.Web.Http.Headers
 
-import typings.winrtUwp.AnonReturnValueTransferCodingHeaderValue
+import typings.winrtUwp.AnonTransferCodingHeaderValue
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -35,6 +35,6 @@ object HttpTransferCodingHeaderValue extends js.Object {
     * Determines whether a string is valid HttpTransferCodingHeaderValue information.
     * @param input The string to validate.
     */
-  def tryParse(input: String): AnonReturnValueTransferCodingHeaderValue = js.native
+  def tryParse(input: String): AnonTransferCodingHeaderValue = js.native
 }
 

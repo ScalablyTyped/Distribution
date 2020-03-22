@@ -32,7 +32,7 @@ trait Typeofmenus extends js.Object {
     *     permissions for the given context: linkUrl, linkText, srcUrl, pageUrl, frameUrl, selectionText.
     * @param tab The details of the tab where the menu was opened.
     */
-  val onShown: WebExtEvent[js.Function2[/* info */ AnonContextsEditable, /* tab */ Tab, Unit]] = js.native
+  val onShown: WebExtEvent[js.Function2[/* info */ AnonFrameUrl, /* tab */ Tab, Unit]] = js.native
   /* menus functions */
   /**
     * Creates a new context menu item. Note that if an error occurs during creation, you may not find out until the
@@ -41,8 +41,8 @@ trait Typeofmenus extends js.Object {
     *     item, details will be available in `runtime.lastError`.
     * @returns The ID of the newly created item.
     */
-  def create(createProperties: AnonCheckedCommand): Double | String = js.native
-  def create(createProperties: AnonCheckedCommand, callback: js.Function0[Unit]): Double | String = js.native
+  def create(createProperties: AnonCommand): Double | String = js.native
+  def create(createProperties: AnonCommand, callback: js.Function0[Unit]): Double | String = js.native
   /**
     * Retrieve the element that was associated with a recent contextmenu event.
     * @param targetElementId The identifier of the clicked element, available as info.targetElementId in the
@@ -53,7 +53,7 @@ trait Typeofmenus extends js.Object {
     * Show the matching menu items from this extension instead of the default menu. This should be called during a
     * 'contextmenu' DOM event handler, and only applies to the menu that opens after this event.
     */
-  def overrideContext(contextOptions: AnonBookmarkIdContext): Unit = js.native
+  def overrideContext(contextOptions: AnonContext): Unit = js.native
   /**
     * Updates the extension items in the shown menu, including changes that have been made since the menu was shown.
     * Has no effect if the menu is hidden. Rebuilding a shown menu is an expensive operation, only invoke this method
@@ -68,12 +68,12 @@ trait Typeofmenus extends js.Object {
   def remove(menuItemId: Double): js.Promise[Unit] = js.native
   /** Removes all context menu items added by this extension. */
   def removeAll(): js.Promise[Unit] = js.native
-  def update(id: String, updateProperties: AnonCheckedContextsDocumentUrlPatterns): js.Promise[Unit] = js.native
+  def update(id: String, updateProperties: AnonDocumentUrlPatterns): js.Promise[Unit] = js.native
   /**
     * Updates a previously created context menu item.
     * @param id The ID of the item to update.
     * @param updateProperties The properties to update. Accepts the same values as the create function.
     */
-  def update(id: Double, updateProperties: AnonCheckedContextsDocumentUrlPatterns): js.Promise[Unit] = js.native
+  def update(id: Double, updateProperties: AnonDocumentUrlPatterns): js.Promise[Unit] = js.native
 }
 

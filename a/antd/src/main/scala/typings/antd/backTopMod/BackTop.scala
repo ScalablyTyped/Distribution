@@ -18,7 +18,7 @@ trait BackTop
   @JSName("componentWillUnmount")
   def componentWillUnmount_MBackTop(): Unit = js.native
   def handleScroll(): Unit = js.native
-  def renderBackTop(hasGetPrefixCls: ConfigConsumerProps): Element = js.native
+  def renderBackTop(hasGetPrefixClsDirection: ConfigConsumerProps): Element = js.native
   def scrollToTop(e: typings.react.mod.MouseEvent[HTMLDivElement, MouseEvent]): Unit = js.native
 }
 

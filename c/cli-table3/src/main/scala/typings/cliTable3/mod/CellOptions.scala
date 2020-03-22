@@ -1,19 +1,18 @@
 package typings.cliTable3.mod
 
-import typings.cliTable3.AnonBorderHead
-import typings.std.Partial
-import typings.std.Record
+import typings.cliTable3.AnonHead
+import typings.cliTable3.PartialRecordCharNamestri
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CellOptions extends js.Object {
-  var chars: js.UndefOr[Partial[Record[CharName, String]]] = js.undefined
+  var chars: js.UndefOr[PartialRecordCharNamestri] = js.undefined
   var colSpan: js.UndefOr[Double] = js.undefined
   var content: CellValue
   var hAlign: js.UndefOr[HorizontalAlignment] = js.undefined
   var rowSpan: js.UndefOr[Double] = js.undefined
-  var style: js.UndefOr[AnonBorderHead] = js.undefined
+  var style: js.UndefOr[AnonHead] = js.undefined
   var truncate: js.UndefOr[String] = js.undefined
   var vAlign: js.UndefOr[VerticalAlignment] = js.undefined
 }
@@ -21,12 +20,12 @@ trait CellOptions extends js.Object {
 object CellOptions {
   @scala.inline
   def apply(
-    chars: Partial[Record[CharName, String]] = null,
+    chars: PartialRecordCharNamestri = null,
     colSpan: Int | Double = null,
     content: CellValue = null,
     hAlign: HorizontalAlignment = null,
     rowSpan: Int | Double = null,
-    style: AnonBorderHead = null,
+    style: AnonHead = null,
     truncate: String = null,
     vAlign: VerticalAlignment = null
   ): CellOptions = {

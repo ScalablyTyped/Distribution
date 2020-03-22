@@ -1,6 +1,6 @@
 package typings.rotJs.lightingMod
 
-import typings.std.Partial
+import typings.rotJs.PartialOptionsEmissionThreshold
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -57,6 +57,6 @@ trait Lighting extends js.Object {
   /**
     * Adjust options at runtime
     */
-  def setOptions(options: Partial[Options]): this.type = js.native
+  def setOptions(options: PartialOptionsEmissionThreshold): this.type = js.native
 }
 

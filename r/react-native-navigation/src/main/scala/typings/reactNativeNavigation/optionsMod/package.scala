@@ -8,4 +8,5 @@ package object optionsMod {
   type AndroidDensityNumber = scala.Double
   type Color = java.lang.String
   type FontFamily = java.lang.String
+  type ImageResource = java.lang.String
 }

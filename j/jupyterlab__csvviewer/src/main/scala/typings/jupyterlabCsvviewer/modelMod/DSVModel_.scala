@@ -1,13 +1,13 @@
 package typings.jupyterlabCsvviewer.modelMod
 
 import typings.jupyterlabCsvviewer.modelMod.DSVModel.IOptions
-import typings.phosphorDatagrid.datamodelMod.DataModel
-import typings.phosphorDatagrid.datamodelMod.DataModel.CellRegion
-import typings.phosphorDatagrid.datamodelMod.DataModel.ChangedArgs
-import typings.phosphorDatagrid.datamodelMod.DataModel.ColumnRegion
-import typings.phosphorDatagrid.datamodelMod.DataModel.Metadata
-import typings.phosphorDatagrid.datamodelMod.DataModel.RowRegion
-import typings.phosphorDisposable.mod.IDisposable
+import typings.luminoDatagrid.datamodelMod.DataModel
+import typings.luminoDatagrid.datamodelMod.DataModel.CellRegion
+import typings.luminoDatagrid.datamodelMod.DataModel.ChangedArgs
+import typings.luminoDatagrid.datamodelMod.DataModel.ColumnRegion
+import typings.luminoDatagrid.datamodelMod.DataModel.Metadata
+import typings.luminoDatagrid.datamodelMod.DataModel.RowRegion
+import typings.luminoDisposable.mod.IDisposable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -116,10 +116,6 @@ class DSVModel_ protected ()
   /* CompleteClass */
   override val isDisposed: Boolean = js.native
   /**
-    * A promise that resolves when the model has parsed all of its data.
-    */
-  val ready: js.Promise[Unit] = js.native
-  /**
     * Get the column count for a region in the data model.
     *
     * @param region - The column region of interest.
@@ -140,9 +136,11 @@ class DSVModel_ protected ()
     *
     * @param column - The column index of the cell of interest.
     *
-    * @param returns - The data value for the specified cell.
+    * @returns The data value for the specified cell.
     *
     * #### Notes
+    * The returned data should be treated as immutable.
+    *
     * This method is called often, and so should be efficient.
     */
   /* InferMemberOverrides */
@@ -164,35 +162,40 @@ class DSVModel_ protected ()
     * Emit the `changed` signal for the data model.
     *
     * #### Notes
-    * Subclass should call this method whenever the data model has
+    * Subclasses should call this method whenever the data model has
     * changed so that attached data grids can update themselves.
     */
   /* InferMemberOverrides */
   /* protected */ override def emitChanged(args: ChangedArgs): Unit = js.native
   /**
-    * Get the metadata for a column in the data model.
+    * Whether this model has been disposed.
+    */
+  @JSName("isDisposed")
+  def isDisposed_MDSVModel_(): Boolean = js.native
+  /**
+    * Get the metadata for a cell in the data model.
     *
     * @param region - The cell region of interest.
     *
-    * @param column - The index of the column of interest.
+    * @param row - The row index of the cell of interest.
     *
-    * @returns The metadata for the column.
+    * @param column - The column index of the cell of interest.
+    *
+    * @returns The metadata for the specified cell.
     *
     * #### Notes
     * The returned metadata should be treated as immutable.
-    *
-    * Models which support columnar data may reimplement this method to
-    * return the metadata for a column.
-    *
-    * The metadata can be used by custom cell renderers and cell editors
-    * to customize handling of specific cell data types.
     *
     * This method is called often, and so should be efficient.
     *
     * The default implementation returns `{}`.
     */
   /* InferMemberOverrides */
-  override def metadata(region: CellRegion, column: Double): Metadata = js.native
+  override def metadata(region: CellRegion, row: Double, column: Double): Metadata = js.native
+  /**
+    * A promise that resolves when the model has parsed all of its data.
+    */
+  def ready(): js.Promise[Unit] = js.native
   /**
     * Get the row count for a region in the data model.
     *

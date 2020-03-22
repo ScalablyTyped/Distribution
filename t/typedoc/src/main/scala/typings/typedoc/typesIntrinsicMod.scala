@@ -1,5 +1,6 @@
 package typings.typedoc
 
+import typings.typedoc.typedocStrings.intrinsic
 import typings.typedoc.typesAbstractMod.Type
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,6 +13,8 @@ object typesIntrinsicMod extends js.Object {
   class IntrinsicType protected () extends Type {
     def this(name: String) = this()
     var name: String = js.native
+    @JSName("type")
+    val type_IntrinsicType: intrinsic = js.native
     def equals(`type`: IntrinsicType): Boolean = js.native
   }
   

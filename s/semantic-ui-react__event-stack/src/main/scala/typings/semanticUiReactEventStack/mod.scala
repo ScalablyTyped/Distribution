@@ -16,7 +16,7 @@ object mod extends js.Object {
   @js.native
   object default extends js.Object {
     var defaultProps: AnonPool = js.native
-    var propTypes: AnonArgs = js.native
+    var propTypes: AnonName = js.native
   }
   
 }

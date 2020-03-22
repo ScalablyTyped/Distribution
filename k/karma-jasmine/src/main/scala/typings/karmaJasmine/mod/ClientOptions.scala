@@ -1,13 +1,12 @@
 package typings.karmaJasmine.mod
 
-import typings.jasmine.jasmine.EnvConfiguration
-import typings.karmaJasmine.AnonTimeoutInterval
+import typings.karmaJasmine.EnvConfigurationtimeoutIn
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ClientOptions extends js.Object {
-  var jasmine: js.UndefOr[EnvConfiguration with AnonTimeoutInterval] = js.undefined
+  var jasmine: js.UndefOr[EnvConfigurationtimeoutIn] = js.undefined
   /**
     * run a subset of the full set of specs.
     * Complete sharding support needs to be done in the process that calls karma,
@@ -28,7 +27,7 @@ trait ClientOptions extends js.Object {
 object ClientOptions {
   @scala.inline
   def apply(
-    jasmine: EnvConfiguration with AnonTimeoutInterval = null,
+    jasmine: EnvConfigurationtimeoutIn = null,
     shardIndex: Int | Double = null,
     totalShards: Int | Double = null
   ): ClientOptions = {

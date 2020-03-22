@@ -264,7 +264,7 @@ trait TypeofMedia extends js.Object {
   /**
   		 * Android-specific media-related functionality.
   		 */
-  val Android: TypeofAndroidAddEventListenerApiName = js.native
+  val Android: TypeofAndroidApiName = js.native
   /**
   		 * Constant specifying that app is authorized to use camera. This is available on iOS7 and later.
   		 */

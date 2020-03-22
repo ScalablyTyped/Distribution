@@ -1,6 +1,6 @@
 package typings.entriaRelayExperimental.useLegacyPaginationFragmentMod
 
-import typings.entriaRelayExperimental.AnonArg
+import typings.entriaRelayExperimental.AnonOnComplete
 import typings.entriaRelayExperimental.useLoadMoreFunctionMod.LoadMoreFn
 import typings.entriaRelayExperimental.useRefetchableFragmentNodeMod.Options
 import typings.entriaRelayExperimental.useRefetchableFragmentNodeMod.RefetchFnDynamic
@@ -29,8 +29,8 @@ object ReturnTypePaginationFragment {
     hasPrevious: Boolean,
     isLoadingNext: Boolean,
     isLoadingPrevious: Boolean,
-    loadNext: (/* count */ Double, /* options */ js.UndefOr[AnonArg]) => Disposable,
-    loadPrevious: (/* count */ Double, /* options */ js.UndefOr[AnonArg]) => Disposable,
+    loadNext: (/* count */ Double, /* options */ js.UndefOr[AnonOnComplete]) => Disposable,
+    loadPrevious: (/* count */ Double, /* options */ js.UndefOr[AnonOnComplete]) => Disposable,
     refetch: RefetchFnDynamic[TQuery, TKey, Options]
   ): ReturnTypePaginationFragment[TQuery, TKey, TFragmentData] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], hasNext = hasNext.asInstanceOf[js.Any], hasPrevious = hasPrevious.asInstanceOf[js.Any], isLoadingNext = isLoadingNext.asInstanceOf[js.Any], isLoadingPrevious = isLoadingPrevious.asInstanceOf[js.Any], loadNext = js.Any.fromFunction2(loadNext), loadPrevious = js.Any.fromFunction2(loadPrevious), refetch = refetch.asInstanceOf[js.Any])

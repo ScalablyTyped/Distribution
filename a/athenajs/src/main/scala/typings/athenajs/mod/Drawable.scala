@@ -1,7 +1,7 @@
 package typings.athenajs.mod
 
-import typings.athenajs.AnonFalse
-import typings.athenajs.AnonOptions
+import typings.athenajs.AnonInstantiable
+import typings.athenajs.AnonLoop
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -42,12 +42,12 @@ class Drawable protected () extends js.Object {
   def onEvent(eventType: String): Unit = js.native
   def onEvent(eventType: String, data: JSObject): Unit = js.native
   def playSound(id: String): Unit = js.native
-  def playSound(id: String, options: AnonFalse): Unit = js.native
+  def playSound(id: String, options: AnonLoop): Unit = js.native
   def reset(): Unit = js.native
   def setBehavior(behavior: String): Unit = js.native
   def setBehavior(behavior: String, options: JSObject): Unit = js.native
-  def setBehavior(behavior: AnonOptions): Unit = js.native
-  def setBehavior(behavior: AnonOptions, options: JSObject): Unit = js.native
+  def setBehavior(behavior: AnonInstantiable): Unit = js.native
+  def setBehavior(behavior: AnonInstantiable, options: JSObject): Unit = js.native
   def setMask(): Unit = js.native
   def setMask(mask: Null, exclude: Boolean): Unit = js.native
   def setMask(mask: MaskOptions): Unit = js.native

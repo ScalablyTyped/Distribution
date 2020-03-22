@@ -2,9 +2,9 @@ package typings.arangodb.Foxx
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.arangodb.ArangoDB.Collection
+import typings.arangodb.PartialDocumentationRoute
 import typings.arangodb.arangodbBooleans.`false`
 import typings.node.Buffer
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,7 +25,7 @@ trait Context extends js.Object {
   def collectionName(name: String): String = js.native
   def createDocumentationRouter(): Router = js.native
   def createDocumentationRouter(opts: String): Router = js.native
-  def createDocumentationRouter(opts: Partial[DocumentationRouterOptions]): Router = js.native
+  def createDocumentationRouter(opts: PartialDocumentationRoute): Router = js.native
   @JSName("createDocumentationRouter")
   def createDocumentationRouter_false(opts: js.Function2[/* req */ Request, /* res */ Response, Unit | `false`]): Router = js.native
   def file(name: String): Buffer = js.native

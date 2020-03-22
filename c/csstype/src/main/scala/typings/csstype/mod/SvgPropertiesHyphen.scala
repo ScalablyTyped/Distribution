@@ -41,7 +41,7 @@ trait SvgPropertiesHyphen[TLength] extends js.Object {
   var `marker-mid`: js.UndefOr[MarkerMidProperty] = js.undefined
   var `marker-start`: js.UndefOr[MarkerStartProperty] = js.undefined
   var mask: js.UndefOr[MaskProperty[TLength]] = js.undefined
-  var opacity: js.UndefOr[GlobalsNumber] = js.undefined
+  var opacity: js.UndefOr[OpacityProperty] = js.undefined
   var overflow: js.UndefOr[OverflowProperty] = js.undefined
   var `paint-order`: js.UndefOr[PaintOrderProperty] = js.undefined
   var `pointer-events`: js.UndefOr[PointerEventsProperty] = js.undefined
@@ -57,7 +57,7 @@ trait SvgPropertiesHyphen[TLength] extends js.Object {
   var `stroke-opacity`: js.UndefOr[GlobalsNumber] = js.undefined
   var `stroke-width`: js.UndefOr[StrokeWidthProperty[TLength]] = js.undefined
   var `text-anchor`: js.UndefOr[TextAnchorProperty] = js.undefined
-  var `text-decoration`: js.UndefOr[TextDecorationProperty] = js.undefined
+  var `text-decoration`: js.UndefOr[TextDecorationProperty[TLength]] = js.undefined
   var `text-rendering`: js.UndefOr[TextRenderingProperty] = js.undefined
   var `unicode-bidi`: js.UndefOr[UnicodeBidiProperty] = js.undefined
   var `vector-effect`: js.UndefOr[VectorEffectProperty] = js.undefined
@@ -106,7 +106,7 @@ object SvgPropertiesHyphen {
     `marker-mid`: MarkerMidProperty = null,
     `marker-start`: MarkerStartProperty = null,
     mask: MaskProperty[TLength] = null,
-    opacity: GlobalsNumber = null,
+    opacity: OpacityProperty = null,
     overflow: OverflowProperty = null,
     `paint-order`: PaintOrderProperty = null,
     `pointer-events`: PointerEventsProperty = null,
@@ -122,7 +122,7 @@ object SvgPropertiesHyphen {
     `stroke-opacity`: GlobalsNumber = null,
     `stroke-width`: StrokeWidthProperty[TLength] = null,
     `text-anchor`: TextAnchorProperty = null,
-    `text-decoration`: TextDecorationProperty = null,
+    `text-decoration`: TextDecorationProperty[TLength] = null,
     `text-rendering`: TextRenderingProperty = null,
     `unicode-bidi`: UnicodeBidiProperty = null,
     `vector-effect`: VectorEffectProperty = null,

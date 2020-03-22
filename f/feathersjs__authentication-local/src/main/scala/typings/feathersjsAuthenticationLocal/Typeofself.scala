@@ -1,9 +1,7 @@
 package typings.feathersjsAuthenticationLocal
 
 import org.scalablytyped.runtime.Instantiable2
-import typings.feathersjsAuthenticationLocal.mod.FeathersAuthenticationLocalOptions
 import typings.feathersjsFeathers.mod.Application
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,6 +16,6 @@ trait Typeofself extends js.Object {
   val defaults: AnonName = js.native
   val hooks: Typeofhooks = js.native
   def default(): js.Function0[Unit] = js.native
-  def default(options: Partial[FeathersAuthenticationLocalOptions]): js.Function0[Unit] = js.native
+  def default(options: PartialFeathersAuthentica): js.Function0[Unit] = js.native
 }
 

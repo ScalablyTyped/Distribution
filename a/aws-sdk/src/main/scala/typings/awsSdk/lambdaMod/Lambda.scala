@@ -1,6 +1,7 @@
 package typings.awsSdk.lambdaMod
 
-import typings.awsSdk.AnonWaiter
+import typings.awsSdk.GetFunctionConfigurationR
+import typings.awsSdk.GetFunctionRequestwaiterW
 import typings.awsSdk.awsSdkStrings.functionActive
 import typings.awsSdk.awsSdkStrings.functionExists
 import typings.awsSdk.awsSdkStrings.functionUpdated
@@ -222,12 +223,12 @@ trait Lambda extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetFunctionResponse, Unit]
   ): Request[GetFunctionResponse, AWSError] = js.native
   /**
-    * Returns details about the concurrency configuration for a function. To set a concurrency limit for a function, use PutFunctionConcurrency.
+    * Returns details about the reserved concurrency configuration for a function. To set a concurrency limit for a function, use PutFunctionConcurrency.
     */
   def getFunctionConcurrency(): Request[GetFunctionConcurrencyResponse, AWSError] = js.native
   def getFunctionConcurrency(callback: js.Function2[/* err */ AWSError, /* data */ GetFunctionConcurrencyResponse, Unit]): Request[GetFunctionConcurrencyResponse, AWSError] = js.native
   /**
-    * Returns details about the concurrency configuration for a function. To set a concurrency limit for a function, use PutFunctionConcurrency.
+    * Returns details about the reserved concurrency configuration for a function. To set a concurrency limit for a function, use PutFunctionConcurrency.
     */
   def getFunctionConcurrency(params: GetFunctionConcurrencyRequest): Request[GetFunctionConcurrencyResponse, AWSError] = js.native
   def getFunctionConcurrency(
@@ -395,12 +396,12 @@ trait Lambda extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListFunctionEventInvokeConfigsResponse, Unit]
   ): Request[ListFunctionEventInvokeConfigsResponse, AWSError] = js.native
   /**
-    * Returns a list of Lambda functions, with the version-specific configuration of each. Set FunctionVersion to ALL to include all published versions of each function in addition to the unpublished version. To get more information about a function or version, use GetFunction.
+    * Returns a list of Lambda functions, with the version-specific configuration of each. Lambda returns up to 50 functions per call. Set FunctionVersion to ALL to include all published versions of each function in addition to the unpublished version. To get more information about a function or version, use GetFunction.
     */
   def listFunctions(): Request[ListFunctionsResponse, AWSError] = js.native
   def listFunctions(callback: js.Function2[/* err */ AWSError, /* data */ ListFunctionsResponse, Unit]): Request[ListFunctionsResponse, AWSError] = js.native
   /**
-    * Returns a list of Lambda functions, with the version-specific configuration of each. Set FunctionVersion to ALL to include all published versions of each function in addition to the unpublished version. To get more information about a function or version, use GetFunction.
+    * Returns a list of Lambda functions, with the version-specific configuration of each. Lambda returns up to 50 functions per call. Set FunctionVersion to ALL to include all published versions of each function in addition to the unpublished version. To get more information about a function or version, use GetFunction.
     */
   def listFunctions(params: ListFunctionsRequest): Request[ListFunctionsResponse, AWSError] = js.native
   def listFunctions(
@@ -462,12 +463,12 @@ trait Lambda extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListTagsResponse, Unit]
   ): Request[ListTagsResponse, AWSError] = js.native
   /**
-    * Returns a list of versions, with the version-specific configuration of each. 
+    * Returns a list of versions, with the version-specific configuration of each. Lambda returns up to 50 versions per call.
     */
   def listVersionsByFunction(): Request[ListVersionsByFunctionResponse, AWSError] = js.native
   def listVersionsByFunction(callback: js.Function2[/* err */ AWSError, /* data */ ListVersionsByFunctionResponse, Unit]): Request[ListVersionsByFunctionResponse, AWSError] = js.native
   /**
-    * Returns a list of versions, with the version-specific configuration of each. 
+    * Returns a list of versions, with the version-specific configuration of each. Lambda returns up to 50 versions per call.
     */
   def listVersionsByFunction(params: ListVersionsByFunctionRequest): Request[ListVersionsByFunctionResponse, AWSError] = js.native
   def listVersionsByFunction(
@@ -514,12 +515,12 @@ trait Lambda extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ Concurrency, Unit]
   ): Request[Concurrency, AWSError] = js.native
   /**
-    * Configures options for asynchronous invocation on a function, version, or alias. By default, Lambda retries an asynchronous invocation twice if the function returns an error. It retains events in a queue for up to six hours. When an event fails all processing attempts or stays in the asynchronous invocation queue for too long, Lambda discards it. To retain discarded events, configure a dead-letter queue with UpdateFunctionConfiguration.
+    * Configures options for asynchronous invocation on a function, version, or alias. If a configuration already exists for a function, version, or alias, this operation overwrites it. If you exclude any settings, they are removed. To set one option without affecting existing settings for other options, use PutFunctionEventInvokeConfig. By default, Lambda retries an asynchronous invocation twice if the function returns an error. It retains events in a queue for up to six hours. When an event fails all processing attempts or stays in the asynchronous invocation queue for too long, Lambda discards it. To retain discarded events, configure a dead-letter queue with UpdateFunctionConfiguration. To send an invocation record to a queue, topic, function, or event bus, specify a destination. You can configure separate destinations for successful invocations (on-success) and events that fail all processing attempts (on-failure). You can configure destinations in addition to or instead of a dead-letter queue.
     */
   def putFunctionEventInvokeConfig(): Request[FunctionEventInvokeConfig, AWSError] = js.native
   def putFunctionEventInvokeConfig(callback: js.Function2[/* err */ AWSError, /* data */ FunctionEventInvokeConfig, Unit]): Request[FunctionEventInvokeConfig, AWSError] = js.native
   /**
-    * Configures options for asynchronous invocation on a function, version, or alias. By default, Lambda retries an asynchronous invocation twice if the function returns an error. It retains events in a queue for up to six hours. When an event fails all processing attempts or stays in the asynchronous invocation queue for too long, Lambda discards it. To retain discarded events, configure a dead-letter queue with UpdateFunctionConfiguration.
+    * Configures options for asynchronous invocation on a function, version, or alias. If a configuration already exists for a function, version, or alias, this operation overwrites it. If you exclude any settings, they are removed. To set one option without affecting existing settings for other options, use PutFunctionEventInvokeConfig. By default, Lambda retries an asynchronous invocation twice if the function returns an error. It retains events in a queue for up to six hours. When an event fails all processing attempts or stays in the asynchronous invocation queue for too long, Lambda discards it. To retain discarded events, configure a dead-letter queue with UpdateFunctionConfiguration. To send an invocation record to a queue, topic, function, or event bus, specify a destination. You can configure separate destinations for successful invocations (on-success) and events that fail all processing attempts (on-failure). You can configure destinations in addition to or instead of a dead-letter queue.
     */
   def putFunctionEventInvokeConfig(params: PutFunctionEventInvokeConfigRequest): Request[FunctionEventInvokeConfig, AWSError] = js.native
   def putFunctionEventInvokeConfig(
@@ -669,11 +670,11 @@ trait Lambda extends Service {
     * Waits for the functionActive state by periodically calling the underlying Lambda.getFunctionConfigurationoperation every 5 seconds (at most 60 times). Waits for the function's State to be Active.
     */
   @JSName("waitFor")
-  def waitFor_functionActive(state: functionActive, params: GetFunctionConfigurationRequest with AnonWaiter): Request[FunctionConfiguration, AWSError] = js.native
+  def waitFor_functionActive(state: functionActive, params: GetFunctionConfigurationR): Request[FunctionConfiguration, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_functionActive(
     state: functionActive,
-    params: GetFunctionConfigurationRequest with AnonWaiter,
+    params: GetFunctionConfigurationR,
     callback: js.Function2[/* err */ AWSError, /* data */ FunctionConfiguration, Unit]
   ): Request[FunctionConfiguration, AWSError] = js.native
   /**
@@ -690,11 +691,11 @@ trait Lambda extends Service {
     * Waits for the functionExists state by periodically calling the underlying Lambda.getFunctionoperation every 1 seconds (at most 20 times).
     */
   @JSName("waitFor")
-  def waitFor_functionExists(state: functionExists, params: GetFunctionRequest with AnonWaiter): Request[GetFunctionResponse, AWSError] = js.native
+  def waitFor_functionExists(state: functionExists, params: GetFunctionRequestwaiterW): Request[GetFunctionResponse, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_functionExists(
     state: functionExists,
-    params: GetFunctionRequest with AnonWaiter,
+    params: GetFunctionRequestwaiterW,
     callback: js.Function2[/* err */ AWSError, /* data */ GetFunctionResponse, Unit]
   ): Request[GetFunctionResponse, AWSError] = js.native
   /**
@@ -711,11 +712,11 @@ trait Lambda extends Service {
     * Waits for the functionUpdated state by periodically calling the underlying Lambda.getFunctionConfigurationoperation every 5 seconds (at most 60 times). Waits for the function's LastUpdateStatus to be Successful.
     */
   @JSName("waitFor")
-  def waitFor_functionUpdated(state: functionUpdated, params: GetFunctionConfigurationRequest with AnonWaiter): Request[FunctionConfiguration, AWSError] = js.native
+  def waitFor_functionUpdated(state: functionUpdated, params: GetFunctionConfigurationR): Request[FunctionConfiguration, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_functionUpdated(
     state: functionUpdated,
-    params: GetFunctionConfigurationRequest with AnonWaiter,
+    params: GetFunctionConfigurationR,
     callback: js.Function2[/* err */ AWSError, /* data */ FunctionConfiguration, Unit]
   ): Request[FunctionConfiguration, AWSError] = js.native
 }

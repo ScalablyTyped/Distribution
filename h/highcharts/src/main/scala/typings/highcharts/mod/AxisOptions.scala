@@ -14,27 +14,31 @@ trait AxisOptions extends js.Object
 object AxisOptions {
   @scala.inline
   def XAxisOptions(
-    accessibility: js.Object | XAxisAccessibilityOptions = null,
+    accessibility: AxisAccessibilityOptionsObject = null,
     alignTicks: js.UndefOr[Boolean] = js.undefined,
     allowDecimals: js.UndefOr[Boolean] = js.undefined,
     alternateGridColor: ColorString | GradientColorObject | PatternObject = null,
+    angle: Int | Double = null,
     breaks: js.Array[XAxisBreaksOptions] = null,
     categories: js.Array[String] = null,
     ceiling: Int | Double = null,
     className: String = null,
-    crosshair: Boolean | XAxisCrosshairOptions = null,
-    currentDateIndicator: Boolean | XAxisCurrentDateIndicatorOptions = null,
-    dateTimeLabelFormats: XAxisDateTimeLabelFormatsOptions = null,
+    crosshair: Boolean | AxisCrosshairOptions = null,
+    currentDateIndicator: Boolean | AxisCurrentDateIndicatorOptions = null,
+    dateTimeLabelFormats: AxisDateTimeLabelFormatsOptions = null,
     endOnTick: js.UndefOr[Boolean] = js.undefined,
     events: XAxisEventsOptions = null,
     floor: Int | Double = null,
     grid: XAxisGridOptions = null,
     gridLineColor: ColorString | GradientColorObject | PatternObject = null,
     gridLineDashStyle: DashStyleValue = null,
+    gridLineInterpolation: OptionsGridLineInterpolationValue = null,
     gridLineWidth: Int | Double = null,
     gridZIndex: Int | Double = null,
+    height: Double | String = null,
     id: String = null,
     labels: XAxisLabelsOptions = null,
+    left: Double | String = null,
     lineColor: ColorString | GradientColorObject | PatternObject = null,
     lineWidth: Int | Double = null,
     linkedTo: Int | Double = null,
@@ -84,10 +88,12 @@ object AxisOptions {
     tickWidth: Int | Double = null,
     tickmarkPlacement: OptionsTickmarkPlacementValue = null,
     title: XAxisTitleOptions = null,
+    top: Double | String = null,
     `type`: AxisTypeValue = null,
     uniqueNames: js.UndefOr[Boolean] = js.undefined,
     units: js.Array[js.Tuple2[String, js.Array[Double] | Null]] = null,
     visible: js.UndefOr[Boolean] = js.undefined,
+    width: Double | String = null,
     zoomEnabled: js.UndefOr[Boolean] = js.undefined
   ): AxisOptions = {
     val __obj = js.Dynamic.literal()
@@ -95,6 +101,7 @@ object AxisOptions {
     if (!js.isUndefined(alignTicks)) __obj.updateDynamic("alignTicks")(alignTicks.asInstanceOf[js.Any])
     if (!js.isUndefined(allowDecimals)) __obj.updateDynamic("allowDecimals")(allowDecimals.asInstanceOf[js.Any])
     if (alternateGridColor != null) __obj.updateDynamic("alternateGridColor")(alternateGridColor.asInstanceOf[js.Any])
+    if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
     if (breaks != null) __obj.updateDynamic("breaks")(breaks.asInstanceOf[js.Any])
     if (categories != null) __obj.updateDynamic("categories")(categories.asInstanceOf[js.Any])
     if (ceiling != null) __obj.updateDynamic("ceiling")(ceiling.asInstanceOf[js.Any])
@@ -108,10 +115,13 @@ object AxisOptions {
     if (grid != null) __obj.updateDynamic("grid")(grid.asInstanceOf[js.Any])
     if (gridLineColor != null) __obj.updateDynamic("gridLineColor")(gridLineColor.asInstanceOf[js.Any])
     if (gridLineDashStyle != null) __obj.updateDynamic("gridLineDashStyle")(gridLineDashStyle.asInstanceOf[js.Any])
+    if (gridLineInterpolation != null) __obj.updateDynamic("gridLineInterpolation")(gridLineInterpolation.asInstanceOf[js.Any])
     if (gridLineWidth != null) __obj.updateDynamic("gridLineWidth")(gridLineWidth.asInstanceOf[js.Any])
     if (gridZIndex != null) __obj.updateDynamic("gridZIndex")(gridZIndex.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
+    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
     if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor.asInstanceOf[js.Any])
     if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
     if (linkedTo != null) __obj.updateDynamic("linkedTo")(linkedTo.asInstanceOf[js.Any])
@@ -161,16 +171,18 @@ object AxisOptions {
     if (tickWidth != null) __obj.updateDynamic("tickWidth")(tickWidth.asInstanceOf[js.Any])
     if (tickmarkPlacement != null) __obj.updateDynamic("tickmarkPlacement")(tickmarkPlacement.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (!js.isUndefined(uniqueNames)) __obj.updateDynamic("uniqueNames")(uniqueNames.asInstanceOf[js.Any])
     if (units != null) __obj.updateDynamic("units")(units.asInstanceOf[js.Any])
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     if (!js.isUndefined(zoomEnabled)) __obj.updateDynamic("zoomEnabled")(zoomEnabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[AxisOptions]
   }
   @scala.inline
   def YAxisOptions(
-    accessibility: js.Object | YAxisAccessibilityOptions = null,
+    accessibility: AxisAccessibilityOptionsObject = null,
     alignTicks: js.UndefOr[Boolean] = js.undefined,
     allowDecimals: js.UndefOr[Boolean] = js.undefined,
     alternateGridColor: ColorString | GradientColorObject | PatternObject = null,
@@ -179,8 +191,8 @@ object AxisOptions {
     categories: js.Array[String] = null,
     ceiling: Int | Double = null,
     className: String = null,
-    crosshair: Boolean | YAxisCrosshairOptions = null,
-    dateTimeLabelFormats: YAxisDateTimeLabelFormatsOptions = null,
+    crosshair: Boolean | AxisCrosshairOptions = null,
+    dateTimeLabelFormats: AxisDateTimeLabelFormatsOptions = null,
     endOnTick: js.UndefOr[Boolean] = js.undefined,
     events: YAxisEventsOptions = null,
     floor: Int | Double = null,
@@ -193,6 +205,7 @@ object AxisOptions {
     height: Double | String = null,
     id: String = null,
     labels: YAxisLabelsOptions = null,
+    left: Double | String = null,
     lineColor: ColorString | GradientColorObject | PatternObject = null,
     lineWidth: Int | Double = null,
     linkedTo: Int | Double = null,
@@ -254,6 +267,7 @@ object AxisOptions {
     uniqueNames: js.UndefOr[Boolean] = js.undefined,
     units: js.Array[js.Tuple2[String, js.Array[Double] | Null]] = null,
     visible: js.UndefOr[Boolean] = js.undefined,
+    width: Double | String = null,
     zoomEnabled: js.UndefOr[Boolean] = js.undefined
   ): AxisOptions = {
     val __obj = js.Dynamic.literal()
@@ -280,6 +294,7 @@ object AxisOptions {
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
+    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
     if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor.asInstanceOf[js.Any])
     if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
     if (linkedTo != null) __obj.updateDynamic("linkedTo")(linkedTo.asInstanceOf[js.Any])
@@ -341,26 +356,29 @@ object AxisOptions {
     if (!js.isUndefined(uniqueNames)) __obj.updateDynamic("uniqueNames")(uniqueNames.asInstanceOf[js.Any])
     if (units != null) __obj.updateDynamic("units")(units.asInstanceOf[js.Any])
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     if (!js.isUndefined(zoomEnabled)) __obj.updateDynamic("zoomEnabled")(zoomEnabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[AxisOptions]
   }
   @scala.inline
   def ZAxisOptions(
-    accessibility: js.Object | ZAxisAccessibilityOptions = null,
+    accessibility: AxisAccessibilityOptionsObject = null,
     alignTicks: js.UndefOr[Boolean] = js.undefined,
     allowDecimals: js.UndefOr[Boolean] = js.undefined,
     alternateGridColor: ColorString | GradientColorObject | PatternObject = null,
+    angle: Int | Double = null,
     categories: js.Array[String] = null,
     ceiling: Int | Double = null,
     className: String = null,
-    currentDateIndicator: Boolean | ZAxisCurrentDateIndicatorOptions = null,
-    dateTimeLabelFormats: ZAxisDateTimeLabelFormatsOptions = null,
+    currentDateIndicator: Boolean | AxisCurrentDateIndicatorOptions = null,
+    dateTimeLabelFormats: AxisDateTimeLabelFormatsOptions = null,
     endOnTick: js.UndefOr[Boolean] = js.undefined,
     events: ZAxisEventsOptions = null,
     floor: Int | Double = null,
     grid: ZAxisGridOptions = null,
     gridLineColor: ColorString | GradientColorObject | PatternObject = null,
     gridLineDashStyle: DashStyleValue = null,
+    gridLineInterpolation: OptionsGridLineInterpolationValue = null,
     gridLineWidth: Int | Double = null,
     gridZIndex: Int | Double = null,
     id: String = null,
@@ -422,6 +440,7 @@ object AxisOptions {
     if (!js.isUndefined(alignTicks)) __obj.updateDynamic("alignTicks")(alignTicks.asInstanceOf[js.Any])
     if (!js.isUndefined(allowDecimals)) __obj.updateDynamic("allowDecimals")(allowDecimals.asInstanceOf[js.Any])
     if (alternateGridColor != null) __obj.updateDynamic("alternateGridColor")(alternateGridColor.asInstanceOf[js.Any])
+    if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
     if (categories != null) __obj.updateDynamic("categories")(categories.asInstanceOf[js.Any])
     if (ceiling != null) __obj.updateDynamic("ceiling")(ceiling.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
@@ -433,6 +452,7 @@ object AxisOptions {
     if (grid != null) __obj.updateDynamic("grid")(grid.asInstanceOf[js.Any])
     if (gridLineColor != null) __obj.updateDynamic("gridLineColor")(gridLineColor.asInstanceOf[js.Any])
     if (gridLineDashStyle != null) __obj.updateDynamic("gridLineDashStyle")(gridLineDashStyle.asInstanceOf[js.Any])
+    if (gridLineInterpolation != null) __obj.updateDynamic("gridLineInterpolation")(gridLineInterpolation.asInstanceOf[js.Any])
     if (gridLineWidth != null) __obj.updateDynamic("gridLineWidth")(gridLineWidth.asInstanceOf[js.Any])
     if (gridZIndex != null) __obj.updateDynamic("gridZIndex")(gridZIndex.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])

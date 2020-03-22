@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@nivo/legends" : "0.59.1"
+      "@nivo/legends" : "0.61.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@nivo/legends" : "0.59.1"
+      "@nivo/legends" : "0.61.1"
     }
   ],
   "compile-devDependencies" : [

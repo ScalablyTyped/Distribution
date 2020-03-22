@@ -10,12 +10,12 @@ trait AnonCalloutProps extends js.Object {
     * Remove in next release.
     * @deprecated In favor of private `_defaultCalloutProps`.
     */
-  var calloutProps: Anon12
+  var calloutProps: AnonBeakWidth
 }
 
 object AnonCalloutProps {
   @scala.inline
-  def apply(calloutProps: Anon12): AnonCalloutProps = {
+  def apply(calloutProps: AnonBeakWidth): AnonCalloutProps = {
     val __obj = js.Dynamic.literal(calloutProps = calloutProps.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AnonCalloutProps]

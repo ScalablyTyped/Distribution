@@ -8,12 +8,12 @@ trait PlotBulletDragDropGuideBoxOptions extends js.Object {
   /**
     * (Highcharts) Style options for the guide box default state.
     */
-  var default: js.UndefOr[PlotBulletDragDropGuideBoxDefaultOptions] = js.undefined
+  var default: js.UndefOr[DragDropGuideBoxOptionsObject] = js.undefined
 }
 
 object PlotBulletDragDropGuideBoxOptions {
   @scala.inline
-  def apply(default: PlotBulletDragDropGuideBoxDefaultOptions = null): PlotBulletDragDropGuideBoxOptions = {
+  def apply(default: DragDropGuideBoxOptionsObject = null): PlotBulletDragDropGuideBoxOptions = {
     val __obj = js.Dynamic.literal()
     if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotBulletDragDropGuideBoxOptions]

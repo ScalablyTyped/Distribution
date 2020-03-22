@@ -1,12 +1,6 @@
 package typings.onionoo.mod.Onionoo
 
-import typings.onionoo.onionooStrings.`1_month`
-import typings.onionoo.onionooStrings.`1_week`
-import typings.onionoo.onionooStrings.`1_year`
-import typings.onionoo.onionooStrings.`5_years`
-import typings.onionoo.onionooStrings.`6_months`
-import typings.std.Partial
-import typings.std.Record
+import typings.onionoo.PartialRecord1week1month6
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,17 +14,12 @@ trait BridgeUptime extends js.Object {
     * Object containing uptime history objects for different time periods. The specification of uptime history
     * objects is similar to those in the `uptime` field of `RelayUptime`.
     */
-  var uptime: js.UndefOr[
-    Partial[Record[`1_week` | `1_month` | `6_months` | `1_year` | `5_years`, Histogram]]
-  ] = js.undefined
+  var uptime: js.UndefOr[PartialRecord1week1month6] = js.undefined
 }
 
 object BridgeUptime {
   @scala.inline
-  def apply(
-    fingerprint: String,
-    uptime: Partial[Record[`1_week` | `1_month` | `6_months` | `1_year` | `5_years`, Histogram]] = null
-  ): BridgeUptime = {
+  def apply(fingerprint: String, uptime: PartialRecord1week1month6 = null): BridgeUptime = {
     val __obj = js.Dynamic.literal(fingerprint = fingerprint.asInstanceOf[js.Any])
     if (uptime != null) __obj.updateDynamic("uptime")(uptime.asInstanceOf[js.Any])
     __obj.asInstanceOf[BridgeUptime]

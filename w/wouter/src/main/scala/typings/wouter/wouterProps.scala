@@ -8,6 +8,9 @@ trait wouterProps {
   type LinkProps = typings.wouter.mod.LinkProps
   type RedirectProps = typings.wouter.mod.RedirectProps
   @scala.inline
+  def RouterProps: PartialRouterPropschildre.type = typings.wouter.PartialRouterPropschildre
+  type RouterProps = PartialRouterPropschildre
+  @scala.inline
   def SwitchProps: typings.wouter.mod.SwitchProps.type = typings.wouter.mod.SwitchProps
   type SwitchProps = typings.wouter.mod.SwitchProps
 }

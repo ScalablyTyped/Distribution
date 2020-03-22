@@ -1,7 +1,7 @@
 package typings.tslint.mod
 
-import typings.tslint.FnConfigFile
-import typings.tslint.FnInputFilePath
+import typings.tslint.FnCall
+import typings.tslint.FnCallSuppliedConfigFilePathInputFilePath
 import typings.tslint.configurationMod.IConfigurationFile
 import typings.tslint.configurationMod.IConfigurationLoadResult
 import typings.typescript.mod.Program
@@ -23,9 +23,9 @@ class Linter protected ()
 object Linter extends js.Object {
   var VERSION: String = js.native
   @JSName("findConfigurationPath")
-  var findConfigurationPath_Original: FnInputFilePath = js.native
+  var findConfigurationPath_Original: FnCallSuppliedConfigFilePathInputFilePath = js.native
   @JSName("findConfiguration")
-  var findConfiguration_Original: FnConfigFile = js.native
+  var findConfiguration_Original: FnCall = js.native
   @JSName("getRulesDirectories")
   var getRulesDirectories_Original: js.Function2[
     /* directories */ js.UndefOr[String | js.Array[String]], 

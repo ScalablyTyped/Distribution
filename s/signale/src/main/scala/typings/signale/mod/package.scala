@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation._
 
 package object mod {
   type LoggerFunc = js.Function2[/* message */ js.UndefOr[js.Any], /* repeated */ js.Any, scala.Unit]
-  type Signale[TTypes /* <: java.lang.String */] = typings.signale.mod.SignaleBase[TTypes] with (typings.std.Record[TTypes, typings.signale.mod.LoggerFunc]) with (typings.std.Record[typings.signale.mod.DefaultMethods, typings.signale.mod.LoggerFunc])
+  type Signale[TTypes /* <: java.lang.String */] = typings.signale.mod.SignaleBase[TTypes] with (typings.std.Record[TTypes, typings.signale.mod.LoggerFunc]) with typings.signale.RecordDefaultMethodsLogge
 }

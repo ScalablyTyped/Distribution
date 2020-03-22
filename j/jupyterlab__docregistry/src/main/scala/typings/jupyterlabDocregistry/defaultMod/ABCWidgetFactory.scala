@@ -6,7 +6,8 @@ import typings.jupyterlabDocregistry.registryMod.DocumentRegistry.IToolbarItem
 import typings.jupyterlabDocregistry.registryMod.DocumentRegistry.IWidgetFactory
 import typings.jupyterlabDocregistry.registryMod.DocumentRegistry.IWidgetFactoryOptions
 import typings.jupyterlabDocregistry.registryMod.IDocumentWidget
-import typings.phosphorWidgets.mod.Widget
+import typings.luminoSignaling.mod.ISignal
+import typings.luminoWidgets.mod.Widget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,22 +32,6 @@ abstract class ABCWidgetFactory[T /* <: IDocumentWidget[Widget, IModel] */, U /*
   var _toolbarFactory: js.Any = js.native
   var _widgetCreated: js.Any = js.native
   /**
-    * Whether the widgets can start a kernel when opened.
-    */
-  @JSName("canStartKernel")
-  val canStartKernel_ABCWidgetFactory: Boolean = js.native
-  /**
-    * The file types for which the factory should be the default.
-    */
-  @JSName("defaultFor")
-  val defaultFor_ABCWidgetFactory: js.Array[String] = js.native
-  /**
-    * The file types for which the factory should be the default for
-    * rendering a document model, if different from editing.
-    */
-  @JSName("defaultRendered")
-  val defaultRendered_ABCWidgetFactory: js.Array[String] = js.native
-  /**
     * The file types the widget can view.
     */
   /* CompleteClass */
@@ -60,35 +45,31 @@ abstract class ABCWidgetFactory[T /* <: IDocumentWidget[Widget, IModel] */, U /*
   /* CompleteClass */
   override val isDisposed: Boolean = js.native
   /**
-    * The registered name of the model type used to create the widgets.
-    */
-  @JSName("modelName")
-  val modelName_ABCWidgetFactory: String = js.native
-  /**
     * The name of the widget to display in dialogs.
     */
   /* CompleteClass */
   override val name: String = js.native
   /**
-    * Whether the widgets prefer having a kernel started.
+    * Whether the widgets can start a kernel when opened.
     */
-  @JSName("preferKernel")
-  val preferKernel_ABCWidgetFactory: Boolean = js.native
-  /**
-    * Whether the widget factory is read only.
-    */
-  @JSName("readOnly")
-  val readOnly_ABCWidgetFactory: Boolean = js.native
-  /**
-    * Whether the kernel should be shutdown when the widget is closed.
-    */
-  @JSName("shutdownOnClose")
-  var shutdownOnClose_ABCWidgetFactory: Boolean = js.native
+  @JSName("canStartKernel")
+  def canStartKernel_MABCWidgetFactory(): Boolean = js.native
   /**
     * Create a widget for a context.
     */
   /* protected */ def createNewWidget(context: IContext[U]): T = js.native
   /* protected */ def createNewWidget(context: IContext[U], source: T): T = js.native
+  /**
+    * The file types for which the factory should be the default.
+    */
+  @JSName("defaultFor")
+  def defaultFor_MABCWidgetFactory(): js.Array[String] = js.native
+  /**
+    * The file types for which the factory should be the default for
+    * rendering a document model, if different from editing.
+    */
+  @JSName("defaultRendered")
+  def defaultRendered_MABCWidgetFactory(): js.Array[String] = js.native
   /**
     * Default factory for toolbar items to be added after the widget is created.
     */
@@ -106,5 +87,47 @@ abstract class ABCWidgetFactory[T /* <: IDocumentWidget[Widget, IModel] */, U /*
     */
   /* CompleteClass */
   override def dispose(): Unit = js.native
+  /**
+    * The file types the widget can view.
+    */
+  @JSName("fileTypes")
+  def fileTypes_MABCWidgetFactory(): js.Array[String] = js.native
+  /**
+    * Get whether the model factory has been disposed.
+    */
+  @JSName("isDisposed")
+  def isDisposed_MABCWidgetFactory(): Boolean = js.native
+  /**
+    * The registered name of the model type used to create the widgets.
+    */
+  @JSName("modelName")
+  def modelName_MABCWidgetFactory(): String = js.native
+  /**
+    * The name of the widget to display in dialogs.
+    */
+  @JSName("name")
+  def name_MABCWidgetFactory(): String = js.native
+  /**
+    * Whether the widgets prefer having a kernel started.
+    */
+  @JSName("preferKernel")
+  def preferKernel_MABCWidgetFactory(): Boolean = js.native
+  /**
+    * Whether the widget factory is read only.
+    */
+  @JSName("readOnly")
+  def readOnly_MABCWidgetFactory(): Boolean = js.native
+  /**
+    * Whether the kernel should be shutdown when the widget is closed.
+    */
+  @JSName("shutdownOnClose")
+  def shutdownOnClose_MABCWidgetFactory(): Boolean = js.native
+  @JSName("shutdownOnClose")
+  def shutdownOnClose_MABCWidgetFactory(value: Boolean): js.Any = js.native
+  /**
+    * A signal emitted when a widget is created.
+    */
+  @JSName("widgetCreated")
+  def widgetCreated_MABCWidgetFactory(): ISignal[IWidgetFactory[T, U], T] = js.native
 }
 

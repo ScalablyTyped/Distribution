@@ -2,7 +2,7 @@ package typings.pngjs.mod
 
 import typings.node.Buffer
 import typings.node.streamMod.Duplex
-import typings.pngjs.AnonBuffer
+import typings.pngjs.AnonRead
 import typings.pngjs.pngjsStrings.close
 import typings.pngjs.pngjsStrings.error
 import typings.pngjs.pngjsStrings.metadata
@@ -49,7 +49,7 @@ class PNG () extends Duplex {
 @JSImport("pngjs", "PNG")
 @js.native
 object PNG extends js.Object {
-  var sync: AnonBuffer = js.native
+  var sync: AnonRead = js.native
   def adjustGamma(src: PNG): Unit = js.native
   def bitblt(
     src: PNG,

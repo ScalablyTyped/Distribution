@@ -1,7 +1,7 @@
 package typings.officeUiFabricReact.indexBundleMod
 
+import typings.officeUiFabricReact.PartialICoachmarkProps
 import typings.officeUiFabricReact.coachmarkTypesMod.ICoachmarkProps
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,6 +17,6 @@ class CoachmarkBase protected ()
 @JSImport("office-ui-fabric-react/lib/index.bundle", "CoachmarkBase")
 @js.native
 object CoachmarkBase extends js.Object {
-  var defaultProps: Partial[ICoachmarkProps] = js.native
+  var defaultProps: PartialICoachmarkProps = js.native
 }
 

@@ -1,34 +1,34 @@
 package typings.gapiClientDfareporting.gapi.client.dfareporting
 
 import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientDfareporting.AnonAdvertiserIdAltFieldsIds
-import typings.gapiClientDfareporting.AnonAltFields
-import typings.gapiClientDfareporting.AnonAltFieldsKey
+import typings.gapiClientDfareporting.AnonAdvertiserIdAlt
+import typings.gapiClientDfareporting.AnonFields
+import typings.gapiClientDfareporting.AnonKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TargetingTemplatesResource extends js.Object {
   /** Gets one targeting template by ID. */
-  def get(request: AnonAltFields): Request_[TargetingTemplate]
+  def get(request: AnonFields): Request_[TargetingTemplate]
   /** Inserts a new targeting template. */
-  def insert(request: AnonAltFieldsKey): Request_[TargetingTemplate]
+  def insert(request: AnonKey): Request_[TargetingTemplate]
   /** Retrieves a list of targeting templates, optionally filtered. This method supports paging. */
-  def list(request: AnonAdvertiserIdAltFieldsIds): Request_[TargetingTemplatesListResponse]
+  def list(request: AnonAdvertiserIdAlt): Request_[TargetingTemplatesListResponse]
   /** Updates an existing targeting template. This method supports patch semantics. */
-  def patch(request: AnonAltFields): Request_[TargetingTemplate]
+  def patch(request: AnonFields): Request_[TargetingTemplate]
   /** Updates an existing targeting template. */
-  def update(request: AnonAltFieldsKey): Request_[TargetingTemplate]
+  def update(request: AnonKey): Request_[TargetingTemplate]
 }
 
 object TargetingTemplatesResource {
   @scala.inline
   def apply(
-    get: AnonAltFields => Request_[TargetingTemplate],
-    insert: AnonAltFieldsKey => Request_[TargetingTemplate],
-    list: AnonAdvertiserIdAltFieldsIds => Request_[TargetingTemplatesListResponse],
-    patch: AnonAltFields => Request_[TargetingTemplate],
-    update: AnonAltFieldsKey => Request_[TargetingTemplate]
+    get: AnonFields => Request_[TargetingTemplate],
+    insert: AnonKey => Request_[TargetingTemplate],
+    list: AnonAdvertiserIdAlt => Request_[TargetingTemplatesListResponse],
+    patch: AnonFields => Request_[TargetingTemplate],
+    update: AnonKey => Request_[TargetingTemplate]
   ): TargetingTemplatesResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update))
   

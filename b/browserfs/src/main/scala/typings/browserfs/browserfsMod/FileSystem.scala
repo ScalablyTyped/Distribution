@@ -1,19 +1,19 @@
 package typings.browserfs.browserfsMod
 
-import typings.browserfs.TypeofClassAsyncMirror
-import typings.browserfs.TypeofClassDropbox
-import typings.browserfs.TypeofClassEmscripten
-import typings.browserfs.TypeofClassFolderAdapter
-import typings.browserfs.TypeofClassHTML5FS
-import typings.browserfs.TypeofClassInMemory
-import typings.browserfs.TypeofClassIndexedDB
-import typings.browserfs.TypeofClassIsoFS
-import typings.browserfs.TypeofClassLocalStorage
-import typings.browserfs.TypeofClassMountableFileSystem
-import typings.browserfs.TypeofClassOverlayFS
-import typings.browserfs.TypeofClassWorkerFS
-import typings.browserfs.TypeofClassXmlHttpRequest
-import typings.browserfs.TypeofClassZipFS
+import typings.browserfs.TypeofAsyncMirror
+import typings.browserfs.TypeofDropbox
+import typings.browserfs.TypeofEmscripten
+import typings.browserfs.TypeofFolderAdapter
+import typings.browserfs.TypeofHTML5FS
+import typings.browserfs.TypeofInMemory
+import typings.browserfs.TypeofIndexedDB
+import typings.browserfs.TypeofIsoFS
+import typings.browserfs.TypeofLocalStorage
+import typings.browserfs.TypeofMountableFileSystem
+import typings.browserfs.TypeofOverlayFS
+import typings.browserfs.TypeofWorkerFS
+import typings.browserfs.TypeofXmlHttpRequest
+import typings.browserfs.TypeofZipFS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,19 +24,19 @@ import scala.scalajs.js.annotation._
 @JSImport("browserfs/dist/node/core/browserfs", "FileSystem")
 @js.native
 object FileSystem extends js.Object {
-  var AsyncMirror: TypeofClassAsyncMirror = js.native
-  var Dropbox: TypeofClassDropbox = js.native
-  var Emscripten: TypeofClassEmscripten = js.native
-  var FolderAdapter: TypeofClassFolderAdapter = js.native
-  var HTML5FS: TypeofClassHTML5FS = js.native
-  var InMemory: TypeofClassInMemory = js.native
-  var IndexedDB: TypeofClassIndexedDB = js.native
-  var IsoFS: TypeofClassIsoFS = js.native
-  var LocalStorage: TypeofClassLocalStorage = js.native
-  var MountableFileSystem: TypeofClassMountableFileSystem = js.native
-  var OverlayFS: TypeofClassOverlayFS = js.native
-  var WorkerFS: TypeofClassWorkerFS = js.native
-  var XmlHttpRequest: TypeofClassXmlHttpRequest = js.native
-  var ZipFS: TypeofClassZipFS = js.native
+  var AsyncMirror: TypeofAsyncMirror = js.native
+  var Dropbox: TypeofDropbox = js.native
+  var Emscripten: TypeofEmscripten = js.native
+  var FolderAdapter: TypeofFolderAdapter = js.native
+  var HTML5FS: TypeofHTML5FS = js.native
+  var InMemory: TypeofInMemory = js.native
+  var IndexedDB: TypeofIndexedDB = js.native
+  var IsoFS: TypeofIsoFS = js.native
+  var LocalStorage: TypeofLocalStorage = js.native
+  var MountableFileSystem: TypeofMountableFileSystem = js.native
+  var OverlayFS: TypeofOverlayFS = js.native
+  var WorkerFS: TypeofWorkerFS = js.native
+  var XmlHttpRequest: TypeofXmlHttpRequest = js.native
+  var ZipFS: TypeofZipFS = js.native
 }
 

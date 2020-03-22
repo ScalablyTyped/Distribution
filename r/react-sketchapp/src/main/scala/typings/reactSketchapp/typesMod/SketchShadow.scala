@@ -1,6 +1,6 @@
 package typings.reactSketchapp.typesMod
 
-import typings.reactSketchapp.AnonHeightWidth
+import typings.reactSketchapp.AnonWidth
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait SketchShadow extends js.Object {
   var shadowColor: Color
   var shadowInner: Boolean
-  var shadowOffset: AnonHeightWidth
+  var shadowOffset: AnonWidth
   var shadowOpacity: Double
   var shadowRadius: Double
   var shadowSpread: Double
@@ -19,7 +19,7 @@ object SketchShadow {
   def apply(
     shadowColor: Color,
     shadowInner: Boolean,
-    shadowOffset: AnonHeightWidth,
+    shadowOffset: AnonWidth,
     shadowOpacity: Double,
     shadowRadius: Double,
     shadowSpread: Double

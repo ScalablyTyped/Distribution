@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation._
 
 // tslint:disable-next-line interface-over-type-literal
 /* Rewritten from type alias, can be one of: 
-  - typings.oracleOraclejet.AnonRowIndex[K]
+  - typings.oracleOraclejet.AnonRowKey[K]
   - typings.oracleOraclejet.AnonRowIndexRowKey[K]
 */
 trait CurrentRow[K] extends js.Object
 
 object CurrentRow {
   @scala.inline
-  def AnonRowIndex[K](rowIndex: Double, rowKey: K = null): CurrentRow[K] = {
+  def AnonRowKey[K](rowIndex: Double, rowKey: K = null): CurrentRow[K] = {
     val __obj = js.Dynamic.literal(rowIndex = rowIndex.asInstanceOf[js.Any])
     if (rowKey != null) __obj.updateDynamic("rowKey")(rowKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[CurrentRow[K]]

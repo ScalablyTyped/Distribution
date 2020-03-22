@@ -1,12 +1,12 @@
 package typings.postmark.statsMod
 
-import typings.postmark.AnonDateDesktop
+import typings.postmark.AnonDesktop
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait EmailPlaformUsageCounts extends js.Object {
-  var Days: js.Array[AnonDateDesktop]
+  var Days: js.Array[AnonDesktop]
   var Desktop: js.UndefOr[Double] = js.undefined
   var Mobile: js.UndefOr[Double] = js.undefined
   var Unknown: js.UndefOr[Double] = js.undefined
@@ -16,7 +16,7 @@ trait EmailPlaformUsageCounts extends js.Object {
 object EmailPlaformUsageCounts {
   @scala.inline
   def apply(
-    Days: js.Array[AnonDateDesktop],
+    Days: js.Array[AnonDesktop],
     Desktop: Int | Double = null,
     Mobile: Int | Double = null,
     Unknown: Int | Double = null,

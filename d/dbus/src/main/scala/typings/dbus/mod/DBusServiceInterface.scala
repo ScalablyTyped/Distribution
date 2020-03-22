@@ -1,6 +1,6 @@
 package typings.dbus.mod
 
-import typings.dbus.AnonCb
+import typings.dbus.AnonGetter
 import typings.dbus.AnonIn
 import typings.dbus.AnonTypes
 import scala.scalajs.js
@@ -18,7 +18,7 @@ trait DBusServiceInterface extends js.Object {
       Unit
     ]
   ): Unit
-  def addProperty(name: String, opts: AnonCb): Unit
+  def addProperty(name: String, opts: AnonGetter): Unit
   def addSignal(name: String, opts: AnonTypes): Unit
   def emitSignal(name: String, values: js.Any*): Unit
   def update(): Unit
@@ -33,7 +33,7 @@ object DBusServiceInterface {
       /* callback */ js.Function1[/* res */ js.Any, Unit], 
       Unit
     ]) => Unit,
-    addProperty: (String, AnonCb) => Unit,
+    addProperty: (String, AnonGetter) => Unit,
     addSignal: (String, AnonTypes) => Unit,
     emitSignal: (String, /* repeated */ js.Any) => Unit,
     update: () => Unit

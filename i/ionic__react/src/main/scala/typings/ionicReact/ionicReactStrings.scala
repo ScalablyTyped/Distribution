@@ -7,331 +7,427 @@ import scala.scalajs.js.annotation._
 
 object ionicReactStrings {
   @js.native
-  sealed trait about extends js.Object
+  sealed trait a extends js.Object
   
   @js.native
-  sealed trait accessKey extends js.Object
+  sealed trait abbr extends js.Object
   
   @js.native
-  sealed trait activated extends js.Object
+  sealed trait additions extends js.Object
+  
+  @js.native
+  sealed trait `additions text` extends js.Object
+  
+  @js.native
+  sealed trait address extends js.Object
+  
+  @js.native
+  sealed trait all extends js.Object
+  
+  @js.native
+  sealed trait always extends js.Object
   
   @js.native
   sealed trait android extends js.Object
   
   @js.native
-  sealed trait animated extends js.Object
+  sealed trait applet extends js.Object
   
   @js.native
-  sealed trait animation extends js.Object
+  sealed trait area extends js.Object
   
   @js.native
-  sealed trait `aria-activedescendant` extends js.Object
+  sealed trait article extends js.Object
   
   @js.native
-  sealed trait `aria-atomic` extends js.Object
+  sealed trait ascending extends js.Object
   
   @js.native
-  sealed trait `aria-autocomplete` extends js.Object
+  sealed trait aside extends js.Object
   
   @js.native
-  sealed trait `aria-busy` extends js.Object
+  sealed trait assertive extends js.Object
   
   @js.native
-  sealed trait `aria-checked` extends js.Object
+  sealed trait audio extends js.Object
   
   @js.native
-  sealed trait `aria-colcount` extends js.Object
-  
-  @js.native
-  sealed trait `aria-colindex` extends js.Object
-  
-  @js.native
-  sealed trait `aria-colspan` extends js.Object
-  
-  @js.native
-  sealed trait `aria-controls` extends js.Object
-  
-  @js.native
-  sealed trait `aria-current` extends js.Object
-  
-  @js.native
-  sealed trait `aria-describedby` extends js.Object
-  
-  @js.native
-  sealed trait `aria-details` extends js.Object
-  
-  @js.native
-  sealed trait `aria-disabled` extends js.Object
-  
-  @js.native
-  sealed trait `aria-dropeffect` extends js.Object
-  
-  @js.native
-  sealed trait `aria-errormessage` extends js.Object
-  
-  @js.native
-  sealed trait `aria-expanded` extends js.Object
-  
-  @js.native
-  sealed trait `aria-flowto` extends js.Object
-  
-  @js.native
-  sealed trait `aria-grabbed` extends js.Object
-  
-  @js.native
-  sealed trait `aria-haspopup` extends js.Object
-  
-  @js.native
-  sealed trait `aria-hidden` extends js.Object
-  
-  @js.native
-  sealed trait `aria-invalid` extends js.Object
-  
-  @js.native
-  sealed trait `aria-keyshortcuts` extends js.Object
-  
-  @js.native
-  sealed trait `aria-label` extends js.Object
-  
-  @js.native
-  sealed trait `aria-labelledby` extends js.Object
-  
-  @js.native
-  sealed trait `aria-level` extends js.Object
-  
-  @js.native
-  sealed trait `aria-live` extends js.Object
-  
-  @js.native
-  sealed trait `aria-modal` extends js.Object
-  
-  @js.native
-  sealed trait `aria-multiline` extends js.Object
-  
-  @js.native
-  sealed trait `aria-multiselectable` extends js.Object
-  
-  @js.native
-  sealed trait `aria-orientation` extends js.Object
-  
-  @js.native
-  sealed trait `aria-owns` extends js.Object
-  
-  @js.native
-  sealed trait `aria-placeholder` extends js.Object
-  
-  @js.native
-  sealed trait `aria-posinset` extends js.Object
-  
-  @js.native
-  sealed trait `aria-pressed` extends js.Object
-  
-  @js.native
-  sealed trait `aria-readonly` extends js.Object
-  
-  @js.native
-  sealed trait `aria-relevant` extends js.Object
-  
-  @js.native
-  sealed trait `aria-required` extends js.Object
-  
-  @js.native
-  sealed trait `aria-roledescription` extends js.Object
-  
-  @js.native
-  sealed trait `aria-rowcount` extends js.Object
-  
-  @js.native
-  sealed trait `aria-rowindex` extends js.Object
-  
-  @js.native
-  sealed trait `aria-rowspan` extends js.Object
-  
-  @js.native
-  sealed trait `aria-selected` extends js.Object
-  
-  @js.native
-  sealed trait `aria-setsize` extends js.Object
-  
-  @js.native
-  sealed trait `aria-sort` extends js.Object
-  
-  @js.native
-  sealed trait `aria-valuemax` extends js.Object
-  
-  @js.native
-  sealed trait `aria-valuemin` extends js.Object
-  
-  @js.native
-  sealed trait `aria-valuenow` extends js.Object
-  
-  @js.native
-  sealed trait `aria-valuetext` extends js.Object
-  
-  @js.native
-  sealed trait ariaLabel extends js.Object
-  
-  @js.native
-  sealed trait autoCapitalize extends js.Object
-  
-  @js.native
-  sealed trait autoCorrect extends js.Object
-  
-  @js.native
-  sealed trait autoSave extends js.Object
-  
-  @js.native
-  sealed trait autocapitalize_ extends js.Object
-  
-  @js.native
-  sealed trait autocorrect_ extends js.Object
-  
-  @js.native
-  sealed trait autosave_ extends js.Object
+  sealed trait b extends js.Object
   
   @js.native
   sealed trait back extends RouterDirection
   
   @js.native
-  sealed trait backdropDismiss extends js.Object
+  sealed trait base extends js.Object
+  
+  @js.native
+  sealed trait basefont extends js.Object
+  
+  @js.native
+  sealed trait bdi extends js.Object
+  
+  @js.native
+  sealed trait bdo extends js.Object
+  
+  @js.native
+  sealed trait block extends js.Object
+  
+  @js.native
+  sealed trait blockquote extends js.Object
+  
+  @js.native
+  sealed trait body extends js.Object
+  
+  @js.native
+  sealed trait both extends js.Object
   
   @js.native
   sealed trait bottom extends js.Object
   
   @js.native
+  sealed trait bounded extends js.Object
+  
+  @js.native
+  sealed trait br extends js.Object
+  
+  @js.native
   sealed trait button extends js.Object
   
   @js.native
-  sealed trait buttonType extends js.Object
+  sealed trait cancel extends js.Object
+  
+  @js.native
+  sealed trait canvas extends js.Object
   
   @js.native
   sealed trait capacitor extends js.Object
   
   @js.native
-  sealed trait children extends js.Object
+  sealed trait caption extends js.Object
   
   @js.native
-  sealed trait `class` extends js.Object
+  sealed trait center extends js.Object
   
   @js.native
-  sealed trait className extends js.Object
+  sealed trait circle extends js.Object
   
   @js.native
-  sealed trait color extends js.Object
+  sealed trait cite extends js.Object
   
   @js.native
-  sealed trait component extends js.Object
+  sealed trait clear extends js.Object
   
   @js.native
-  sealed trait componentProps extends js.Object
+  sealed trait clipPath extends js.Object
   
   @js.native
-  sealed trait contentEditable extends js.Object
+  sealed trait code extends js.Object
   
   @js.native
-  sealed trait contenteditable_ extends js.Object
+  sealed trait col extends js.Object
   
   @js.native
-  sealed trait contextMenu extends js.Object
+  sealed trait colgroup extends js.Object
   
   @js.native
-  sealed trait contextmenu_ extends js.Object
+  sealed trait condense extends js.Object
+  
+  @js.native
+  sealed trait copy extends js.Object
   
   @js.native
   sealed trait cordova extends js.Object
   
   @js.native
-  sealed trait cssClass extends js.Object
+  sealed trait data extends js.Object
   
   @js.native
-  sealed trait dangerouslySetInnerHTML extends js.Object
+  sealed trait datalist extends js.Object
   
   @js.native
-  sealed trait datatype extends js.Object
+  sealed trait date extends js.Object
   
   @js.native
-  sealed trait defaultChecked extends js.Object
+  sealed trait dd extends js.Object
   
   @js.native
-  sealed trait defaultHref extends js.Object
+  sealed trait decimal extends js.Object
   
   @js.native
-  sealed trait defaultValue extends js.Object
+  sealed trait default extends js.Object
   
   @js.native
-  sealed trait delegate extends js.Object
+  sealed trait defs extends js.Object
+  
+  @js.native
+  sealed trait del extends js.Object
+  
+  @js.native
+  sealed trait desc extends js.Object
+  
+  @js.native
+  sealed trait descending extends js.Object
   
   @js.native
   sealed trait desktop extends js.Object
   
   @js.native
-  sealed trait detail extends js.Object
+  sealed trait destructive extends js.Object
   
   @js.native
-  sealed trait detailIcon extends js.Object
+  sealed trait details extends js.Object
+  
+  @js.native
+  sealed trait determinate extends js.Object
+  
+  @js.native
+  sealed trait dfn extends js.Object
+  
+  @js.native
+  sealed trait dialog extends js.Object
   
   @js.native
   sealed trait dir extends js.Object
   
   @js.native
-  sealed trait disabled extends js.Object
+  sealed trait div extends js.Object
   
   @js.native
-  sealed trait download extends js.Object
+  sealed trait dl extends js.Object
   
   @js.native
-  sealed trait draggable extends js.Object
+  sealed trait dt extends js.Object
   
   @js.native
   sealed trait electron extends js.Object
   
   @js.native
-  sealed trait enterAnimation extends js.Object
+  sealed trait ellipse extends js.Object
   
   @js.native
-  sealed trait event extends js.Object
+  sealed trait em extends js.Object
   
   @js.native
-  sealed trait expand extends js.Object
+  sealed trait email extends js.Object
   
   @js.native
-  sealed trait expandable extends js.Object
+  sealed trait embed extends js.Object
   
   @js.native
-  sealed trait fill extends js.Object
+  sealed trait end extends js.Object
   
   @js.native
-  sealed trait flipRtl extends js.Object
+  sealed trait execute extends js.Object
+  
+  @js.native
+  sealed trait feBlend extends js.Object
+  
+  @js.native
+  sealed trait feColorMatrix extends js.Object
+  
+  @js.native
+  sealed trait feComponentTransfer extends js.Object
+  
+  @js.native
+  sealed trait feComposite extends js.Object
+  
+  @js.native
+  sealed trait feConvolveMatrix extends js.Object
+  
+  @js.native
+  sealed trait feDiffuseLighting extends js.Object
+  
+  @js.native
+  sealed trait feDisplacementMap extends js.Object
+  
+  @js.native
+  sealed trait feDistantLight extends js.Object
+  
+  @js.native
+  sealed trait feFlood extends js.Object
+  
+  @js.native
+  sealed trait feFuncA extends js.Object
+  
+  @js.native
+  sealed trait feFuncB extends js.Object
+  
+  @js.native
+  sealed trait feFuncG extends js.Object
+  
+  @js.native
+  sealed trait feFuncR extends js.Object
+  
+  @js.native
+  sealed trait feGaussianBlur extends js.Object
+  
+  @js.native
+  sealed trait feImage extends js.Object
+  
+  @js.native
+  sealed trait feMerge extends js.Object
+  
+  @js.native
+  sealed trait feMergeNode extends js.Object
+  
+  @js.native
+  sealed trait feMorphology extends js.Object
+  
+  @js.native
+  sealed trait feOffset extends js.Object
+  
+  @js.native
+  sealed trait fePointLight extends js.Object
+  
+  @js.native
+  sealed trait feSpecularLighting extends js.Object
+  
+  @js.native
+  sealed trait feSpotLight extends js.Object
+  
+  @js.native
+  sealed trait feTile extends js.Object
+  
+  @js.native
+  sealed trait feTurbulence extends js.Object
+  
+  @js.native
+  sealed trait fieldset extends js.Object
+  
+  @js.native
+  sealed trait figcaption extends js.Object
+  
+  @js.native
+  sealed trait figure extends js.Object
+  
+  @js.native
+  sealed trait filter extends js.Object
+  
+  @js.native
+  sealed trait fixed extends js.Object
+  
+  @js.native
+  sealed trait floating extends js.Object
+  
+  @js.native
+  sealed trait focus extends js.Object
+  
+  @js.native
+  sealed trait font extends js.Object
+  
+  @js.native
+  sealed trait footer extends js.Object
+  
+  @js.native
+  sealed trait foreignObject extends js.Object
+  
+  @js.native
+  sealed trait form extends js.Object
   
   @js.native
   sealed trait forward extends RouterDirection
   
   @js.native
-  sealed trait hidden extends js.Object
+  sealed trait frame extends js.Object
   
   @js.native
-  sealed trait href extends js.Object
+  sealed trait frameset extends js.Object
+  
+  @js.native
+  sealed trait full extends js.Object
+  
+  @js.native
+  sealed trait fullscreenchange extends js.Object
+  
+  @js.native
+  sealed trait fullscreenerror extends js.Object
+  
+  @js.native
+  sealed trait g extends js.Object
+  
+  @js.native
+  sealed trait grammar extends js.Object
+  
+  @js.native
+  sealed trait grid extends js.Object
+  
+  @js.native
+  sealed trait h1 extends js.Object
+  
+  @js.native
+  sealed trait h2 extends js.Object
+  
+  @js.native
+  sealed trait h3 extends js.Object
+  
+  @js.native
+  sealed trait h4 extends js.Object
+  
+  @js.native
+  sealed trait h5 extends js.Object
+  
+  @js.native
+  sealed trait h6 extends js.Object
+  
+  @js.native
+  sealed trait hard extends js.Object
+  
+  @js.native
+  sealed trait head extends js.Object
+  
+  @js.native
+  sealed trait header extends js.Object
+  
+  @js.native
+  sealed trait hgroup extends js.Object
+  
+  @js.native
+  sealed trait horizontal extends js.Object
+  
+  @js.native
+  sealed trait hr extends js.Object
+  
+  @js.native
+  sealed trait html extends js.Object
+  
+  @js.native
+  sealed trait httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml extends js.Object
+  
+  @js.native
+  sealed trait httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg extends js.Object
   
   @js.native
   sealed trait hybrid extends js.Object
   
   @js.native
-  sealed trait icon extends js.Object
+  sealed trait i extends js.Object
   
   @js.native
-  sealed trait id extends js.Object
+  sealed trait iframe extends js.Object
   
   @js.native
-  sealed trait inlist extends js.Object
+  sealed trait image extends js.Object
   
   @js.native
-  sealed trait innerHTML extends js.Object
+  sealed trait img extends js.Object
   
   @js.native
-  sealed trait inputMode extends js.Object
+  sealed trait indeterminate extends js.Object
   
   @js.native
-  sealed trait inputmode_ extends js.Object
+  sealed trait inherit extends js.Object
+  
+  @js.native
+  sealed trait `inline` extends js.Object
+  
+  @js.native
+  sealed trait input extends js.Object
+  
+  @js.native
+  sealed trait ins extends js.Object
+  
+  @js.native
+  sealed trait inset extends js.Object
   
   @js.native
   sealed trait ios extends js.Object
@@ -343,58 +439,76 @@ object ionicReactStrings {
   sealed trait iphone extends js.Object
   
   @js.native
-  sealed trait is extends js.Object
+  sealed trait kbd extends js.Object
   
   @js.native
-  sealed trait itemID extends js.Object
+  sealed trait label extends js.Object
   
   @js.native
-  sealed trait itemProp extends js.Object
+  sealed trait large extends js.Object
   
   @js.native
-  sealed trait itemRef extends js.Object
+  sealed trait legend extends js.Object
   
   @js.native
-  sealed trait itemScope extends js.Object
+  sealed trait li extends js.Object
   
   @js.native
-  sealed trait itemType extends js.Object
+  sealed trait line extends js.Object
   
   @js.native
-  sealed trait itemid_ extends js.Object
+  sealed trait linearGradient extends js.Object
   
   @js.native
-  sealed trait itemprop_ extends js.Object
+  sealed trait link extends js.Object
   
   @js.native
-  sealed trait itemref_ extends js.Object
+  sealed trait list extends js.Object
   
   @js.native
-  sealed trait itemscope_ extends js.Object
+  sealed trait listbox extends js.Object
   
   @js.native
-  sealed trait itemtype_ extends js.Object
+  sealed trait location extends js.Object
   
   @js.native
-  sealed trait key extends js.Object
+  sealed trait main extends js.Object
   
   @js.native
-  sealed trait keyboardClose extends js.Object
+  sealed trait map extends js.Object
   
   @js.native
-  sealed trait lang extends js.Object
+  sealed trait mark extends js.Object
   
   @js.native
-  sealed trait `lazy` extends js.Object
+  sealed trait marker extends js.Object
   
   @js.native
-  sealed trait leaveAnimation extends js.Object
+  sealed trait marquee extends js.Object
   
   @js.native
-  sealed trait lines extends js.Object
+  sealed trait mask extends js.Object
   
   @js.native
   sealed trait md extends js.Object
+  
+  @js.native
+  sealed trait menu extends js.Object
+  
+  @js.native
+  sealed trait meta extends js.Object
+  
+  @js.native
+  sealed trait metadata extends js.Object
+  
+  @js.native
+  sealed trait meter extends js.Object
+  
+  @js.native
+  sealed trait middle extends js.Object
+  
+  @js.native
+  sealed trait mixed extends js.Object
   
   @js.native
   sealed trait mobile extends js.Object
@@ -403,523 +517,100 @@ object ionicReactStrings {
   sealed trait mobileweb extends js.Object
   
   @js.native
-  sealed trait mode extends js.Object
+  sealed trait move extends js.Object
   
   @js.native
-  sealed trait name extends js.Object
+  sealed trait nav extends js.Object
+  
+  @js.native
+  sealed trait never extends js.Object
+  
+  @js.native
+  sealed trait no extends js.Object
   
   @js.native
   sealed trait none extends RouterDirection
   
   @js.native
-  sealed trait onAbort extends js.Object
+  sealed trait noscript extends js.Object
   
   @js.native
-  sealed trait onAbortCapture extends js.Object
+  sealed trait number extends js.Object
   
   @js.native
-  sealed trait onAnimationEnd extends js.Object
+  sealed trait numeric extends js.Object
   
   @js.native
-  sealed trait onAnimationEndCapture extends js.Object
+  sealed trait `object` extends js.Object
   
   @js.native
-  sealed trait onAnimationIteration extends js.Object
+  sealed trait off extends js.Object
   
   @js.native
-  sealed trait onAnimationIterationCapture extends js.Object
+  sealed trait ol extends js.Object
   
   @js.native
-  sealed trait onAnimationStart extends js.Object
+  sealed trait on extends js.Object
   
   @js.native
-  sealed trait onAnimationStartCapture extends js.Object
+  sealed trait optgroup extends js.Object
   
   @js.native
-  sealed trait onAuxClick extends js.Object
+  sealed trait option extends js.Object
   
   @js.native
-  sealed trait onAuxClickCapture extends js.Object
+  sealed trait other extends js.Object
   
   @js.native
-  sealed trait onBeforeInput extends js.Object
+  sealed trait outline extends js.Object
   
   @js.native
-  sealed trait onBeforeInputCapture extends js.Object
+  sealed trait output extends js.Object
   
   @js.native
-  sealed trait onBlur extends js.Object
+  sealed trait p extends js.Object
   
   @js.native
-  sealed trait onBlurCapture extends js.Object
+  sealed trait page extends js.Object
   
   @js.native
-  sealed trait onCanPlay extends js.Object
+  sealed trait param extends js.Object
   
   @js.native
-  sealed trait onCanPlayCapture extends js.Object
+  sealed trait password extends js.Object
   
   @js.native
-  sealed trait onCanPlayThrough extends js.Object
+  sealed trait path extends js.Object
   
   @js.native
-  sealed trait onCanPlayThroughCapture extends js.Object
-  
-  @js.native
-  sealed trait onChange extends js.Object
-  
-  @js.native
-  sealed trait onChangeCapture extends js.Object
-  
-  @js.native
-  sealed trait onClick extends js.Object
-  
-  @js.native
-  sealed trait onClickCapture extends js.Object
-  
-  @js.native
-  sealed trait onCompositionEnd extends js.Object
-  
-  @js.native
-  sealed trait onCompositionEndCapture extends js.Object
-  
-  @js.native
-  sealed trait onCompositionStart extends js.Object
-  
-  @js.native
-  sealed trait onCompositionStartCapture extends js.Object
-  
-  @js.native
-  sealed trait onCompositionUpdate extends js.Object
-  
-  @js.native
-  sealed trait onCompositionUpdateCapture extends js.Object
-  
-  @js.native
-  sealed trait onContextMenu extends js.Object
-  
-  @js.native
-  sealed trait onContextMenuCapture extends js.Object
-  
-  @js.native
-  sealed trait onCopy extends js.Object
-  
-  @js.native
-  sealed trait onCopyCapture extends js.Object
-  
-  @js.native
-  sealed trait onCut extends js.Object
-  
-  @js.native
-  sealed trait onCutCapture extends js.Object
-  
-  @js.native
-  sealed trait onDblClick extends js.Object
-  
-  @js.native
-  sealed trait onDblClickCapture extends js.Object
-  
-  @js.native
-  sealed trait onDoubleClick extends js.Object
-  
-  @js.native
-  sealed trait onDoubleClickCapture extends js.Object
-  
-  @js.native
-  sealed trait onDrag extends js.Object
-  
-  @js.native
-  sealed trait onDragCapture extends js.Object
-  
-  @js.native
-  sealed trait onDragEnd extends js.Object
-  
-  @js.native
-  sealed trait onDragEndCapture extends js.Object
-  
-  @js.native
-  sealed trait onDragEnter extends js.Object
-  
-  @js.native
-  sealed trait onDragEnterCapture extends js.Object
-  
-  @js.native
-  sealed trait onDragExit extends js.Object
-  
-  @js.native
-  sealed trait onDragExitCapture extends js.Object
-  
-  @js.native
-  sealed trait onDragLeave extends js.Object
-  
-  @js.native
-  sealed trait onDragLeaveCapture extends js.Object
-  
-  @js.native
-  sealed trait onDragOver extends js.Object
-  
-  @js.native
-  sealed trait onDragOverCapture extends js.Object
-  
-  @js.native
-  sealed trait onDragStart extends js.Object
-  
-  @js.native
-  sealed trait onDragStartCapture extends js.Object
-  
-  @js.native
-  sealed trait onDrop extends js.Object
-  
-  @js.native
-  sealed trait onDropCapture extends js.Object
-  
-  @js.native
-  sealed trait onDurationChange extends js.Object
-  
-  @js.native
-  sealed trait onDurationChangeCapture extends js.Object
-  
-  @js.native
-  sealed trait onEmptied extends js.Object
-  
-  @js.native
-  sealed trait onEmptiedCapture extends js.Object
-  
-  @js.native
-  sealed trait onEncrypted extends js.Object
-  
-  @js.native
-  sealed trait onEncryptedCapture extends js.Object
-  
-  @js.native
-  sealed trait onEnded extends js.Object
-  
-  @js.native
-  sealed trait onEndedCapture extends js.Object
-  
-  @js.native
-  sealed trait onError extends js.Object
-  
-  @js.native
-  sealed trait onErrorCapture extends js.Object
-  
-  @js.native
-  sealed trait onFocus extends js.Object
-  
-  @js.native
-  sealed trait onFocusCapture extends js.Object
-  
-  @js.native
-  sealed trait onGotPointerCapture extends js.Object
-  
-  @js.native
-  sealed trait onGotPointerCaptureCapture extends js.Object
-  
-  @js.native
-  sealed trait onInput extends js.Object
-  
-  @js.native
-  sealed trait onInputCapture extends js.Object
-  
-  @js.native
-  sealed trait onInvalid extends js.Object
-  
-  @js.native
-  sealed trait onInvalidCapture extends js.Object
-  
-  @js.native
-  sealed trait onIonBlur extends js.Object
-  
-  @js.native
-  sealed trait onIonFocus extends js.Object
-  
-  @js.native
-  sealed trait onKeyDown extends js.Object
-  
-  @js.native
-  sealed trait onKeyDownCapture extends js.Object
-  
-  @js.native
-  sealed trait onKeyPress extends js.Object
-  
-  @js.native
-  sealed trait onKeyPressCapture extends js.Object
-  
-  @js.native
-  sealed trait onKeyUp extends js.Object
-  
-  @js.native
-  sealed trait onKeyUpCapture extends js.Object
-  
-  @js.native
-  sealed trait onLoad extends js.Object
-  
-  @js.native
-  sealed trait onLoadCapture extends js.Object
-  
-  @js.native
-  sealed trait onLoadStart extends js.Object
-  
-  @js.native
-  sealed trait onLoadStartCapture extends js.Object
-  
-  @js.native
-  sealed trait onLoadedData extends js.Object
-  
-  @js.native
-  sealed trait onLoadedDataCapture extends js.Object
-  
-  @js.native
-  sealed trait onLoadedMetadata extends js.Object
-  
-  @js.native
-  sealed trait onLoadedMetadataCapture extends js.Object
-  
-  @js.native
-  sealed trait onLostPointerCapture extends js.Object
-  
-  @js.native
-  sealed trait onLostPointerCaptureCapture extends js.Object
-  
-  @js.native
-  sealed trait onMouseDown extends js.Object
-  
-  @js.native
-  sealed trait onMouseDownCapture extends js.Object
-  
-  @js.native
-  sealed trait onMouseEnter extends js.Object
-  
-  @js.native
-  sealed trait onMouseLeave extends js.Object
-  
-  @js.native
-  sealed trait onMouseMove extends js.Object
-  
-  @js.native
-  sealed trait onMouseMoveCapture extends js.Object
-  
-  @js.native
-  sealed trait onMouseOut extends js.Object
-  
-  @js.native
-  sealed trait onMouseOutCapture extends js.Object
-  
-  @js.native
-  sealed trait onMouseOver extends js.Object
-  
-  @js.native
-  sealed trait onMouseOverCapture extends js.Object
-  
-  @js.native
-  sealed trait onMouseUp extends js.Object
-  
-  @js.native
-  sealed trait onMouseUpCapture extends js.Object
-  
-  @js.native
-  sealed trait onPaste extends js.Object
-  
-  @js.native
-  sealed trait onPasteCapture extends js.Object
-  
-  @js.native
-  sealed trait onPause extends js.Object
-  
-  @js.native
-  sealed trait onPauseCapture extends js.Object
-  
-  @js.native
-  sealed trait onPlay extends js.Object
-  
-  @js.native
-  sealed trait onPlayCapture extends js.Object
-  
-  @js.native
-  sealed trait onPlaying extends js.Object
-  
-  @js.native
-  sealed trait onPlayingCapture extends js.Object
-  
-  @js.native
-  sealed trait onPointerCancel extends js.Object
-  
-  @js.native
-  sealed trait onPointerCancelCapture extends js.Object
-  
-  @js.native
-  sealed trait onPointerDown extends js.Object
-  
-  @js.native
-  sealed trait onPointerDownCapture extends js.Object
-  
-  @js.native
-  sealed trait onPointerEnter extends js.Object
-  
-  @js.native
-  sealed trait onPointerEnterCapture extends js.Object
-  
-  @js.native
-  sealed trait onPointerLeave extends js.Object
-  
-  @js.native
-  sealed trait onPointerLeaveCapture extends js.Object
-  
-  @js.native
-  sealed trait onPointerMove extends js.Object
-  
-  @js.native
-  sealed trait onPointerMoveCapture extends js.Object
-  
-  @js.native
-  sealed trait onPointerOut extends js.Object
-  
-  @js.native
-  sealed trait onPointerOutCapture extends js.Object
-  
-  @js.native
-  sealed trait onPointerOver extends js.Object
-  
-  @js.native
-  sealed trait onPointerOverCapture extends js.Object
-  
-  @js.native
-  sealed trait onPointerUp extends js.Object
-  
-  @js.native
-  sealed trait onPointerUpCapture extends js.Object
-  
-  @js.native
-  sealed trait onProgress extends js.Object
-  
-  @js.native
-  sealed trait onProgressCapture extends js.Object
-  
-  @js.native
-  sealed trait onRateChange extends js.Object
-  
-  @js.native
-  sealed trait onRateChangeCapture extends js.Object
-  
-  @js.native
-  sealed trait onReset extends js.Object
-  
-  @js.native
-  sealed trait onResetCapture extends js.Object
-  
-  @js.native
-  sealed trait onScroll extends js.Object
-  
-  @js.native
-  sealed trait onScrollCapture extends js.Object
-  
-  @js.native
-  sealed trait onSeeked extends js.Object
-  
-  @js.native
-  sealed trait onSeekedCapture extends js.Object
-  
-  @js.native
-  sealed trait onSeeking extends js.Object
-  
-  @js.native
-  sealed trait onSeekingCapture extends js.Object
-  
-  @js.native
-  sealed trait onSelect extends js.Object
-  
-  @js.native
-  sealed trait onSelectCapture extends js.Object
-  
-  @js.native
-  sealed trait onStalled extends js.Object
-  
-  @js.native
-  sealed trait onStalledCapture extends js.Object
-  
-  @js.native
-  sealed trait onSubmit extends js.Object
-  
-  @js.native
-  sealed trait onSubmitCapture extends js.Object
-  
-  @js.native
-  sealed trait onSuspend extends js.Object
-  
-  @js.native
-  sealed trait onSuspendCapture extends js.Object
-  
-  @js.native
-  sealed trait onTimeUpdate extends js.Object
-  
-  @js.native
-  sealed trait onTimeUpdateCapture extends js.Object
-  
-  @js.native
-  sealed trait onTouchCancel extends js.Object
-  
-  @js.native
-  sealed trait onTouchCancelCapture extends js.Object
-  
-  @js.native
-  sealed trait onTouchEnd extends js.Object
-  
-  @js.native
-  sealed trait onTouchEndCapture extends js.Object
-  
-  @js.native
-  sealed trait onTouchMove extends js.Object
-  
-  @js.native
-  sealed trait onTouchMoveCapture extends js.Object
-  
-  @js.native
-  sealed trait onTouchStart extends js.Object
-  
-  @js.native
-  sealed trait onTouchStartCapture extends js.Object
-  
-  @js.native
-  sealed trait onTransitionEnd extends js.Object
-  
-  @js.native
-  sealed trait onTransitionEndCapture extends js.Object
-  
-  @js.native
-  sealed trait onVolumeChange extends js.Object
-  
-  @js.native
-  sealed trait onVolumeChangeCapture extends js.Object
-  
-  @js.native
-  sealed trait onWaiting extends js.Object
-  
-  @js.native
-  sealed trait onWaitingCapture extends js.Object
-  
-  @js.native
-  sealed trait onWheel extends js.Object
-  
-  @js.native
-  sealed trait onWheelCapture extends js.Object
-  
-  @js.native
-  sealed trait part extends js.Object
+  sealed trait pattern extends js.Object
   
   @js.native
   sealed trait phablet extends js.Object
   
   @js.native
-  sealed trait placeholder extends js.Object
+  sealed trait picture extends js.Object
+  
+  @js.native
+  sealed trait polite extends js.Object
+  
+  @js.native
+  sealed trait polygon extends js.Object
+  
+  @js.native
+  sealed trait polyline extends js.Object
   
   @js.native
   sealed trait pop extends js.Object
   
   @js.native
-  sealed trait prefix extends js.Object
+  sealed trait popup extends js.Object
   
   @js.native
-  sealed trait property extends js.Object
+  sealed trait pre extends js.Object
+  
+  @js.native
+  sealed trait progress extends js.Object
   
   @js.native
   sealed trait push extends js.Object
@@ -928,58 +619,94 @@ object ionicReactStrings {
   sealed trait pwa extends js.Object
   
   @js.native
-  sealed trait radioGroup extends js.Object
+  sealed trait q extends js.Object
   
   @js.native
-  sealed trait radiogroup_ extends js.Object
+  sealed trait radialGradient extends js.Object
   
   @js.native
-  sealed trait rel extends js.Object
+  sealed trait rect extends js.Object
+  
+  @js.native
+  sealed trait removals extends js.Object
   
   @js.native
   sealed trait replace extends js.Object
   
   @js.native
-  sealed trait resource extends js.Object
-  
-  @js.native
-  sealed trait results extends js.Object
-  
-  @js.native
-  sealed trait role extends js.Object
+  sealed trait reset extends js.Object
   
   @js.native
   sealed trait root extends RouterDirection
   
   @js.native
+  sealed trait round extends js.Object
+  
+  @js.native
   sealed trait routerDirection extends js.Object
   
   @js.native
-  sealed trait security extends js.Object
+  sealed trait rp extends js.Object
   
   @js.native
-  sealed trait shape extends js.Object
+  sealed trait rt extends js.Object
   
   @js.native
-  sealed trait show extends js.Object
+  sealed trait ruby extends js.Object
   
   @js.native
-  sealed trait showBackdrop extends js.Object
+  sealed trait s extends js.Object
   
   @js.native
-  sealed trait size extends js.Object
+  sealed trait samp extends js.Object
+  
+  @js.native
+  sealed trait script extends js.Object
+  
+  @js.native
+  sealed trait search extends js.Object
+  
+  @js.native
+  sealed trait section extends js.Object
+  
+  @js.native
+  sealed trait select extends js.Object
+  
+  @js.native
+  sealed trait selected extends js.Object
   
   @js.native
   sealed trait slot extends js.Object
   
   @js.native
-  sealed trait spellCheck extends js.Object
+  sealed trait small extends js.Object
   
   @js.native
-  sealed trait spellcheck_ extends js.Object
+  sealed trait soft extends js.Object
   
   @js.native
-  sealed trait src extends js.Object
+  sealed trait solid extends js.Object
+  
+  @js.native
+  sealed trait source extends js.Object
+  
+  @js.native
+  sealed trait span extends js.Object
+  
+  @js.native
+  sealed trait spelling extends js.Object
+  
+  @js.native
+  sealed trait stacked extends js.Object
+  
+  @js.native
+  sealed trait start extends js.Object
+  
+  @js.native
+  sealed trait step extends js.Object
+  
+  @js.native
+  sealed trait stop extends js.Object
   
   @js.native
   sealed trait strong extends js.Object
@@ -988,25 +715,64 @@ object ionicReactStrings {
   sealed trait style extends js.Object
   
   @js.native
-  sealed trait suppressContentEditableWarning extends js.Object
+  sealed trait sub extends js.Object
   
   @js.native
-  sealed trait suppressHydrationWarning extends js.Object
+  sealed trait submit extends js.Object
   
   @js.native
-  sealed trait tabIndex extends js.Object
+  sealed trait summary extends js.Object
   
   @js.native
-  sealed trait tabindex_ extends js.Object
+  sealed trait sup extends js.Object
+  
+  @js.native
+  sealed trait svg extends js.Object
+  
+  @js.native
+  sealed trait switch extends js.Object
+  
+  @js.native
+  sealed trait symbol extends js.Object
+  
+  @js.native
+  sealed trait table extends js.Object
   
   @js.native
   sealed trait tablet extends js.Object
   
   @js.native
-  sealed trait target extends js.Object
+  sealed trait tbody extends js.Object
+  
+  @js.native
+  sealed trait td extends js.Object
+  
+  @js.native
+  sealed trait tel extends js.Object
+  
+  @js.native
+  sealed trait template extends js.Object
   
   @js.native
   sealed trait text extends js.Object
+  
+  @js.native
+  sealed trait textPath extends js.Object
+  
+  @js.native
+  sealed trait textarea extends js.Object
+  
+  @js.native
+  sealed trait tfoot extends js.Object
+  
+  @js.native
+  sealed trait th extends js.Object
+  
+  @js.native
+  sealed trait thead extends js.Object
+  
+  @js.native
+  sealed trait time extends js.Object
   
   @js.native
   sealed trait title extends js.Object
@@ -1015,241 +781,332 @@ object ionicReactStrings {
   sealed trait top extends js.Object
   
   @js.native
-  sealed trait translate extends js.Object
+  sealed trait tr extends js.Object
   
   @js.native
-  sealed trait translucent extends js.Object
+  sealed trait track extends js.Object
   
   @js.native
-  sealed trait `type` extends js.Object
+  sealed trait tree extends js.Object
   
   @js.native
-  sealed trait typeof extends js.Object
+  sealed trait tspan extends js.Object
   
   @js.native
-  sealed trait unselectable extends js.Object
+  sealed trait u extends js.Object
   
   @js.native
-  sealed trait vocab extends js.Object
+  sealed trait ul extends js.Object
+  
+  @js.native
+  sealed trait unbounded extends js.Object
+  
+  @js.native
+  sealed trait url extends js.Object
+  
+  @js.native
+  sealed trait use extends js.Object
+  
+  @js.native
+  sealed trait `var` extends js.Object
+  
+  @js.native
+  sealed trait vertical extends js.Object
+  
+  @js.native
+  sealed trait video extends js.Object
+  
+  @js.native
+  sealed trait view extends js.Object
+  
+  @js.native
+  sealed trait wbr extends js.Object
+  
+  @js.native
+  sealed trait yes extends js.Object
   
   @scala.inline
-  def about: about = "about".asInstanceOf[about]
+  def a: a = "a".asInstanceOf[a]
   @scala.inline
-  def accessKey: accessKey = "accessKey".asInstanceOf[accessKey]
+  def abbr: abbr = "abbr".asInstanceOf[abbr]
   @scala.inline
-  def activated: activated = "activated".asInstanceOf[activated]
+  def additions: additions = "additions".asInstanceOf[additions]
+  @scala.inline
+  def `additions text`: `additions text` = "additions text".asInstanceOf[`additions text`]
+  @scala.inline
+  def address: address = "address".asInstanceOf[address]
+  @scala.inline
+  def all: all = "all".asInstanceOf[all]
+  @scala.inline
+  def always: always = "always".asInstanceOf[always]
   @scala.inline
   def android: android = "android".asInstanceOf[android]
   @scala.inline
-  def animated: animated = "animated".asInstanceOf[animated]
+  def applet: applet = "applet".asInstanceOf[applet]
   @scala.inline
-  def animation: animation = "animation".asInstanceOf[animation]
+  def area: area = "area".asInstanceOf[area]
   @scala.inline
-  def `aria-activedescendant`: `aria-activedescendant` = "aria-activedescendant".asInstanceOf[`aria-activedescendant`]
+  def article: article = "article".asInstanceOf[article]
   @scala.inline
-  def `aria-atomic`: `aria-atomic` = "aria-atomic".asInstanceOf[`aria-atomic`]
+  def ascending: ascending = "ascending".asInstanceOf[ascending]
   @scala.inline
-  def `aria-autocomplete`: `aria-autocomplete` = "aria-autocomplete".asInstanceOf[`aria-autocomplete`]
+  def aside: aside = "aside".asInstanceOf[aside]
   @scala.inline
-  def `aria-busy`: `aria-busy` = "aria-busy".asInstanceOf[`aria-busy`]
+  def assertive: assertive = "assertive".asInstanceOf[assertive]
   @scala.inline
-  def `aria-checked`: `aria-checked` = "aria-checked".asInstanceOf[`aria-checked`]
+  def audio: audio = "audio".asInstanceOf[audio]
   @scala.inline
-  def `aria-colcount`: `aria-colcount` = "aria-colcount".asInstanceOf[`aria-colcount`]
-  @scala.inline
-  def `aria-colindex`: `aria-colindex` = "aria-colindex".asInstanceOf[`aria-colindex`]
-  @scala.inline
-  def `aria-colspan`: `aria-colspan` = "aria-colspan".asInstanceOf[`aria-colspan`]
-  @scala.inline
-  def `aria-controls`: `aria-controls` = "aria-controls".asInstanceOf[`aria-controls`]
-  @scala.inline
-  def `aria-current`: `aria-current` = "aria-current".asInstanceOf[`aria-current`]
-  @scala.inline
-  def `aria-describedby`: `aria-describedby` = "aria-describedby".asInstanceOf[`aria-describedby`]
-  @scala.inline
-  def `aria-details`: `aria-details` = "aria-details".asInstanceOf[`aria-details`]
-  @scala.inline
-  def `aria-disabled`: `aria-disabled` = "aria-disabled".asInstanceOf[`aria-disabled`]
-  @scala.inline
-  def `aria-dropeffect`: `aria-dropeffect` = "aria-dropeffect".asInstanceOf[`aria-dropeffect`]
-  @scala.inline
-  def `aria-errormessage`: `aria-errormessage` = "aria-errormessage".asInstanceOf[`aria-errormessage`]
-  @scala.inline
-  def `aria-expanded`: `aria-expanded` = "aria-expanded".asInstanceOf[`aria-expanded`]
-  @scala.inline
-  def `aria-flowto`: `aria-flowto` = "aria-flowto".asInstanceOf[`aria-flowto`]
-  @scala.inline
-  def `aria-grabbed`: `aria-grabbed` = "aria-grabbed".asInstanceOf[`aria-grabbed`]
-  @scala.inline
-  def `aria-haspopup`: `aria-haspopup` = "aria-haspopup".asInstanceOf[`aria-haspopup`]
-  @scala.inline
-  def `aria-hidden`: `aria-hidden` = "aria-hidden".asInstanceOf[`aria-hidden`]
-  @scala.inline
-  def `aria-invalid`: `aria-invalid` = "aria-invalid".asInstanceOf[`aria-invalid`]
-  @scala.inline
-  def `aria-keyshortcuts`: `aria-keyshortcuts` = "aria-keyshortcuts".asInstanceOf[`aria-keyshortcuts`]
-  @scala.inline
-  def `aria-label`: `aria-label` = "aria-label".asInstanceOf[`aria-label`]
-  @scala.inline
-  def `aria-labelledby`: `aria-labelledby` = "aria-labelledby".asInstanceOf[`aria-labelledby`]
-  @scala.inline
-  def `aria-level`: `aria-level` = "aria-level".asInstanceOf[`aria-level`]
-  @scala.inline
-  def `aria-live`: `aria-live` = "aria-live".asInstanceOf[`aria-live`]
-  @scala.inline
-  def `aria-modal`: `aria-modal` = "aria-modal".asInstanceOf[`aria-modal`]
-  @scala.inline
-  def `aria-multiline`: `aria-multiline` = "aria-multiline".asInstanceOf[`aria-multiline`]
-  @scala.inline
-  def `aria-multiselectable`: `aria-multiselectable` = "aria-multiselectable".asInstanceOf[`aria-multiselectable`]
-  @scala.inline
-  def `aria-orientation`: `aria-orientation` = "aria-orientation".asInstanceOf[`aria-orientation`]
-  @scala.inline
-  def `aria-owns`: `aria-owns` = "aria-owns".asInstanceOf[`aria-owns`]
-  @scala.inline
-  def `aria-placeholder`: `aria-placeholder` = "aria-placeholder".asInstanceOf[`aria-placeholder`]
-  @scala.inline
-  def `aria-posinset`: `aria-posinset` = "aria-posinset".asInstanceOf[`aria-posinset`]
-  @scala.inline
-  def `aria-pressed`: `aria-pressed` = "aria-pressed".asInstanceOf[`aria-pressed`]
-  @scala.inline
-  def `aria-readonly`: `aria-readonly` = "aria-readonly".asInstanceOf[`aria-readonly`]
-  @scala.inline
-  def `aria-relevant`: `aria-relevant` = "aria-relevant".asInstanceOf[`aria-relevant`]
-  @scala.inline
-  def `aria-required`: `aria-required` = "aria-required".asInstanceOf[`aria-required`]
-  @scala.inline
-  def `aria-roledescription`: `aria-roledescription` = "aria-roledescription".asInstanceOf[`aria-roledescription`]
-  @scala.inline
-  def `aria-rowcount`: `aria-rowcount` = "aria-rowcount".asInstanceOf[`aria-rowcount`]
-  @scala.inline
-  def `aria-rowindex`: `aria-rowindex` = "aria-rowindex".asInstanceOf[`aria-rowindex`]
-  @scala.inline
-  def `aria-rowspan`: `aria-rowspan` = "aria-rowspan".asInstanceOf[`aria-rowspan`]
-  @scala.inline
-  def `aria-selected`: `aria-selected` = "aria-selected".asInstanceOf[`aria-selected`]
-  @scala.inline
-  def `aria-setsize`: `aria-setsize` = "aria-setsize".asInstanceOf[`aria-setsize`]
-  @scala.inline
-  def `aria-sort`: `aria-sort` = "aria-sort".asInstanceOf[`aria-sort`]
-  @scala.inline
-  def `aria-valuemax`: `aria-valuemax` = "aria-valuemax".asInstanceOf[`aria-valuemax`]
-  @scala.inline
-  def `aria-valuemin`: `aria-valuemin` = "aria-valuemin".asInstanceOf[`aria-valuemin`]
-  @scala.inline
-  def `aria-valuenow`: `aria-valuenow` = "aria-valuenow".asInstanceOf[`aria-valuenow`]
-  @scala.inline
-  def `aria-valuetext`: `aria-valuetext` = "aria-valuetext".asInstanceOf[`aria-valuetext`]
-  @scala.inline
-  def ariaLabel: ariaLabel = "ariaLabel".asInstanceOf[ariaLabel]
-  @scala.inline
-  def autoCapitalize: autoCapitalize = "autoCapitalize".asInstanceOf[autoCapitalize]
-  @scala.inline
-  def autoCorrect: autoCorrect = "autoCorrect".asInstanceOf[autoCorrect]
-  @scala.inline
-  def autoSave: autoSave = "autoSave".asInstanceOf[autoSave]
-  @scala.inline
-  def autocapitalize_ : autocapitalize_ = "autocapitalize".asInstanceOf[autocapitalize_]
-  @scala.inline
-  def autocorrect_ : autocorrect_ = "autocorrect".asInstanceOf[autocorrect_]
-  @scala.inline
-  def autosave_ : autosave_ = "autosave".asInstanceOf[autosave_]
+  def b: b = "b".asInstanceOf[b]
   @scala.inline
   def back: back = "back".asInstanceOf[back]
   @scala.inline
-  def backdropDismiss: backdropDismiss = "backdropDismiss".asInstanceOf[backdropDismiss]
+  def base: base = "base".asInstanceOf[base]
+  @scala.inline
+  def basefont: basefont = "basefont".asInstanceOf[basefont]
+  @scala.inline
+  def bdi: bdi = "bdi".asInstanceOf[bdi]
+  @scala.inline
+  def bdo: bdo = "bdo".asInstanceOf[bdo]
+  @scala.inline
+  def block: block = "block".asInstanceOf[block]
+  @scala.inline
+  def blockquote: blockquote = "blockquote".asInstanceOf[blockquote]
+  @scala.inline
+  def body: body = "body".asInstanceOf[body]
+  @scala.inline
+  def both: both = "both".asInstanceOf[both]
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
   @scala.inline
+  def bounded: bounded = "bounded".asInstanceOf[bounded]
+  @scala.inline
+  def br: br = "br".asInstanceOf[br]
+  @scala.inline
   def button: button = "button".asInstanceOf[button]
   @scala.inline
-  def buttonType: buttonType = "buttonType".asInstanceOf[buttonType]
+  def cancel: cancel = "cancel".asInstanceOf[cancel]
+  @scala.inline
+  def canvas: canvas = "canvas".asInstanceOf[canvas]
   @scala.inline
   def capacitor: capacitor = "capacitor".asInstanceOf[capacitor]
   @scala.inline
-  def children: children = "children".asInstanceOf[children]
+  def caption: caption = "caption".asInstanceOf[caption]
   @scala.inline
-  def `class`: `class` = "class".asInstanceOf[`class`]
+  def center: center = "center".asInstanceOf[center]
   @scala.inline
-  def className: className = "className".asInstanceOf[className]
+  def circle: circle = "circle".asInstanceOf[circle]
   @scala.inline
-  def color: color = "color".asInstanceOf[color]
+  def cite: cite = "cite".asInstanceOf[cite]
   @scala.inline
-  def component: component = "component".asInstanceOf[component]
+  def clear: clear = "clear".asInstanceOf[clear]
   @scala.inline
-  def componentProps: componentProps = "componentProps".asInstanceOf[componentProps]
+  def clipPath: clipPath = "clipPath".asInstanceOf[clipPath]
   @scala.inline
-  def contentEditable: contentEditable = "contentEditable".asInstanceOf[contentEditable]
+  def code: code = "code".asInstanceOf[code]
   @scala.inline
-  def contenteditable_ : contenteditable_ = "contenteditable".asInstanceOf[contenteditable_]
+  def col: col = "col".asInstanceOf[col]
   @scala.inline
-  def contextMenu: contextMenu = "contextMenu".asInstanceOf[contextMenu]
+  def colgroup: colgroup = "colgroup".asInstanceOf[colgroup]
   @scala.inline
-  def contextmenu_ : contextmenu_ = "contextmenu".asInstanceOf[contextmenu_]
+  def condense: condense = "condense".asInstanceOf[condense]
+  @scala.inline
+  def copy: copy = "copy".asInstanceOf[copy]
   @scala.inline
   def cordova: cordova = "cordova".asInstanceOf[cordova]
   @scala.inline
-  def cssClass: cssClass = "cssClass".asInstanceOf[cssClass]
+  def data: data = "data".asInstanceOf[data]
   @scala.inline
-  def dangerouslySetInnerHTML: dangerouslySetInnerHTML = "dangerouslySetInnerHTML".asInstanceOf[dangerouslySetInnerHTML]
+  def datalist: datalist = "datalist".asInstanceOf[datalist]
   @scala.inline
-  def datatype: datatype = "datatype".asInstanceOf[datatype]
+  def date: date = "date".asInstanceOf[date]
   @scala.inline
-  def defaultChecked: defaultChecked = "defaultChecked".asInstanceOf[defaultChecked]
+  def dd: dd = "dd".asInstanceOf[dd]
   @scala.inline
-  def defaultHref: defaultHref = "defaultHref".asInstanceOf[defaultHref]
+  def decimal: decimal = "decimal".asInstanceOf[decimal]
   @scala.inline
-  def defaultValue: defaultValue = "defaultValue".asInstanceOf[defaultValue]
+  def default: default = "default".asInstanceOf[default]
   @scala.inline
-  def delegate: delegate = "delegate".asInstanceOf[delegate]
+  def defs: defs = "defs".asInstanceOf[defs]
+  @scala.inline
+  def del: del = "del".asInstanceOf[del]
+  @scala.inline
+  def desc: desc = "desc".asInstanceOf[desc]
+  @scala.inline
+  def descending: descending = "descending".asInstanceOf[descending]
   @scala.inline
   def desktop: desktop = "desktop".asInstanceOf[desktop]
   @scala.inline
-  def detail: detail = "detail".asInstanceOf[detail]
+  def destructive: destructive = "destructive".asInstanceOf[destructive]
   @scala.inline
-  def detailIcon: detailIcon = "detailIcon".asInstanceOf[detailIcon]
+  def details: details = "details".asInstanceOf[details]
+  @scala.inline
+  def determinate: determinate = "determinate".asInstanceOf[determinate]
+  @scala.inline
+  def dfn: dfn = "dfn".asInstanceOf[dfn]
+  @scala.inline
+  def dialog: dialog = "dialog".asInstanceOf[dialog]
   @scala.inline
   def dir: dir = "dir".asInstanceOf[dir]
   @scala.inline
-  def disabled: disabled = "disabled".asInstanceOf[disabled]
+  def div: div = "div".asInstanceOf[div]
   @scala.inline
-  def download: download = "download".asInstanceOf[download]
+  def dl: dl = "dl".asInstanceOf[dl]
   @scala.inline
-  def draggable: draggable = "draggable".asInstanceOf[draggable]
+  def dt: dt = "dt".asInstanceOf[dt]
   @scala.inline
   def electron: electron = "electron".asInstanceOf[electron]
   @scala.inline
-  def enterAnimation: enterAnimation = "enterAnimation".asInstanceOf[enterAnimation]
+  def ellipse: ellipse = "ellipse".asInstanceOf[ellipse]
   @scala.inline
-  def event: event = "event".asInstanceOf[event]
+  def em: em = "em".asInstanceOf[em]
   @scala.inline
-  def expand: expand = "expand".asInstanceOf[expand]
+  def email: email = "email".asInstanceOf[email]
   @scala.inline
-  def expandable: expandable = "expandable".asInstanceOf[expandable]
+  def embed: embed = "embed".asInstanceOf[embed]
   @scala.inline
-  def fill: fill = "fill".asInstanceOf[fill]
+  def end: end = "end".asInstanceOf[end]
   @scala.inline
-  def flipRtl: flipRtl = "flipRtl".asInstanceOf[flipRtl]
+  def execute: execute = "execute".asInstanceOf[execute]
+  @scala.inline
+  def feBlend: feBlend = "feBlend".asInstanceOf[feBlend]
+  @scala.inline
+  def feColorMatrix: feColorMatrix = "feColorMatrix".asInstanceOf[feColorMatrix]
+  @scala.inline
+  def feComponentTransfer: feComponentTransfer = "feComponentTransfer".asInstanceOf[feComponentTransfer]
+  @scala.inline
+  def feComposite: feComposite = "feComposite".asInstanceOf[feComposite]
+  @scala.inline
+  def feConvolveMatrix: feConvolveMatrix = "feConvolveMatrix".asInstanceOf[feConvolveMatrix]
+  @scala.inline
+  def feDiffuseLighting: feDiffuseLighting = "feDiffuseLighting".asInstanceOf[feDiffuseLighting]
+  @scala.inline
+  def feDisplacementMap: feDisplacementMap = "feDisplacementMap".asInstanceOf[feDisplacementMap]
+  @scala.inline
+  def feDistantLight: feDistantLight = "feDistantLight".asInstanceOf[feDistantLight]
+  @scala.inline
+  def feFlood: feFlood = "feFlood".asInstanceOf[feFlood]
+  @scala.inline
+  def feFuncA: feFuncA = "feFuncA".asInstanceOf[feFuncA]
+  @scala.inline
+  def feFuncB: feFuncB = "feFuncB".asInstanceOf[feFuncB]
+  @scala.inline
+  def feFuncG: feFuncG = "feFuncG".asInstanceOf[feFuncG]
+  @scala.inline
+  def feFuncR: feFuncR = "feFuncR".asInstanceOf[feFuncR]
+  @scala.inline
+  def feGaussianBlur: feGaussianBlur = "feGaussianBlur".asInstanceOf[feGaussianBlur]
+  @scala.inline
+  def feImage: feImage = "feImage".asInstanceOf[feImage]
+  @scala.inline
+  def feMerge: feMerge = "feMerge".asInstanceOf[feMerge]
+  @scala.inline
+  def feMergeNode: feMergeNode = "feMergeNode".asInstanceOf[feMergeNode]
+  @scala.inline
+  def feMorphology: feMorphology = "feMorphology".asInstanceOf[feMorphology]
+  @scala.inline
+  def feOffset: feOffset = "feOffset".asInstanceOf[feOffset]
+  @scala.inline
+  def fePointLight: fePointLight = "fePointLight".asInstanceOf[fePointLight]
+  @scala.inline
+  def feSpecularLighting: feSpecularLighting = "feSpecularLighting".asInstanceOf[feSpecularLighting]
+  @scala.inline
+  def feSpotLight: feSpotLight = "feSpotLight".asInstanceOf[feSpotLight]
+  @scala.inline
+  def feTile: feTile = "feTile".asInstanceOf[feTile]
+  @scala.inline
+  def feTurbulence: feTurbulence = "feTurbulence".asInstanceOf[feTurbulence]
+  @scala.inline
+  def fieldset: fieldset = "fieldset".asInstanceOf[fieldset]
+  @scala.inline
+  def figcaption: figcaption = "figcaption".asInstanceOf[figcaption]
+  @scala.inline
+  def figure: figure = "figure".asInstanceOf[figure]
+  @scala.inline
+  def filter: filter = "filter".asInstanceOf[filter]
+  @scala.inline
+  def fixed: fixed = "fixed".asInstanceOf[fixed]
+  @scala.inline
+  def floating: floating = "floating".asInstanceOf[floating]
+  @scala.inline
+  def focus: focus = "focus".asInstanceOf[focus]
+  @scala.inline
+  def font: font = "font".asInstanceOf[font]
+  @scala.inline
+  def footer: footer = "footer".asInstanceOf[footer]
+  @scala.inline
+  def foreignObject: foreignObject = "foreignObject".asInstanceOf[foreignObject]
+  @scala.inline
+  def form: form = "form".asInstanceOf[form]
   @scala.inline
   def forward: forward = "forward".asInstanceOf[forward]
   @scala.inline
-  def hidden: hidden = "hidden".asInstanceOf[hidden]
+  def frame: frame = "frame".asInstanceOf[frame]
   @scala.inline
-  def href: href = "href".asInstanceOf[href]
+  def frameset: frameset = "frameset".asInstanceOf[frameset]
+  @scala.inline
+  def full: full = "full".asInstanceOf[full]
+  @scala.inline
+  def fullscreenchange: fullscreenchange = "fullscreenchange".asInstanceOf[fullscreenchange]
+  @scala.inline
+  def fullscreenerror: fullscreenerror = "fullscreenerror".asInstanceOf[fullscreenerror]
+  @scala.inline
+  def g: g = "g".asInstanceOf[g]
+  @scala.inline
+  def grammar: grammar = "grammar".asInstanceOf[grammar]
+  @scala.inline
+  def grid: grid = "grid".asInstanceOf[grid]
+  @scala.inline
+  def h1: h1 = "h1".asInstanceOf[h1]
+  @scala.inline
+  def h2: h2 = "h2".asInstanceOf[h2]
+  @scala.inline
+  def h3: h3 = "h3".asInstanceOf[h3]
+  @scala.inline
+  def h4: h4 = "h4".asInstanceOf[h4]
+  @scala.inline
+  def h5: h5 = "h5".asInstanceOf[h5]
+  @scala.inline
+  def h6: h6 = "h6".asInstanceOf[h6]
+  @scala.inline
+  def hard: hard = "hard".asInstanceOf[hard]
+  @scala.inline
+  def head: head = "head".asInstanceOf[head]
+  @scala.inline
+  def header: header = "header".asInstanceOf[header]
+  @scala.inline
+  def hgroup: hgroup = "hgroup".asInstanceOf[hgroup]
+  @scala.inline
+  def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
+  @scala.inline
+  def hr: hr = "hr".asInstanceOf[hr]
+  @scala.inline
+  def html: html = "html".asInstanceOf[html]
+  @scala.inline
+  def httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml: httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml = "http://www.w3.org/1999/xhtml".asInstanceOf[httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml]
+  @scala.inline
+  def httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg = "http://www.w3.org/2000/svg".asInstanceOf[httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg]
   @scala.inline
   def hybrid: hybrid = "hybrid".asInstanceOf[hybrid]
   @scala.inline
-  def icon: icon = "icon".asInstanceOf[icon]
+  def i: i = "i".asInstanceOf[i]
   @scala.inline
-  def id: id = "id".asInstanceOf[id]
+  def iframe: iframe = "iframe".asInstanceOf[iframe]
   @scala.inline
-  def inlist: inlist = "inlist".asInstanceOf[inlist]
+  def image: image = "image".asInstanceOf[image]
   @scala.inline
-  def innerHTML: innerHTML = "innerHTML".asInstanceOf[innerHTML]
+  def img: img = "img".asInstanceOf[img]
   @scala.inline
-  def inputMode: inputMode = "inputMode".asInstanceOf[inputMode]
+  def indeterminate: indeterminate = "indeterminate".asInstanceOf[indeterminate]
   @scala.inline
-  def inputmode_ : inputmode_ = "inputmode".asInstanceOf[inputmode_]
+  def inherit: inherit = "inherit".asInstanceOf[inherit]
+  @scala.inline
+  def `inline`: `inline` = "inline".asInstanceOf[`inline`]
+  @scala.inline
+  def input: input = "input".asInstanceOf[input]
+  @scala.inline
+  def ins: ins = "ins".asInstanceOf[ins]
+  @scala.inline
+  def inset: inset = "inset".asInstanceOf[inset]
   @scala.inline
   def ios: ios = "ios".asInstanceOf[ios]
   @scala.inline
@@ -1257,464 +1114,262 @@ object ionicReactStrings {
   @scala.inline
   def iphone: iphone = "iphone".asInstanceOf[iphone]
   @scala.inline
-  def is: is = "is".asInstanceOf[is]
+  def kbd: kbd = "kbd".asInstanceOf[kbd]
   @scala.inline
-  def itemID: itemID = "itemID".asInstanceOf[itemID]
+  def label: label = "label".asInstanceOf[label]
   @scala.inline
-  def itemProp: itemProp = "itemProp".asInstanceOf[itemProp]
+  def large: large = "large".asInstanceOf[large]
   @scala.inline
-  def itemRef: itemRef = "itemRef".asInstanceOf[itemRef]
+  def legend: legend = "legend".asInstanceOf[legend]
   @scala.inline
-  def itemScope: itemScope = "itemScope".asInstanceOf[itemScope]
+  def li: li = "li".asInstanceOf[li]
   @scala.inline
-  def itemType: itemType = "itemType".asInstanceOf[itemType]
+  def line: line = "line".asInstanceOf[line]
   @scala.inline
-  def itemid_ : itemid_ = "itemid".asInstanceOf[itemid_]
+  def linearGradient: linearGradient = "linearGradient".asInstanceOf[linearGradient]
   @scala.inline
-  def itemprop_ : itemprop_ = "itemprop".asInstanceOf[itemprop_]
+  def link: link = "link".asInstanceOf[link]
   @scala.inline
-  def itemref_ : itemref_ = "itemref".asInstanceOf[itemref_]
+  def list: list = "list".asInstanceOf[list]
   @scala.inline
-  def itemscope_ : itemscope_ = "itemscope".asInstanceOf[itemscope_]
+  def listbox: listbox = "listbox".asInstanceOf[listbox]
   @scala.inline
-  def itemtype_ : itemtype_ = "itemtype".asInstanceOf[itemtype_]
+  def location: location = "location".asInstanceOf[location]
   @scala.inline
-  def key: key = "key".asInstanceOf[key]
+  def main: main = "main".asInstanceOf[main]
   @scala.inline
-  def keyboardClose: keyboardClose = "keyboardClose".asInstanceOf[keyboardClose]
+  def map: map = "map".asInstanceOf[map]
   @scala.inline
-  def lang: lang = "lang".asInstanceOf[lang]
+  def mark: mark = "mark".asInstanceOf[mark]
   @scala.inline
-  def `lazy`: `lazy` = "lazy".asInstanceOf[`lazy`]
+  def marker: marker = "marker".asInstanceOf[marker]
   @scala.inline
-  def leaveAnimation: leaveAnimation = "leaveAnimation".asInstanceOf[leaveAnimation]
+  def marquee: marquee = "marquee".asInstanceOf[marquee]
   @scala.inline
-  def lines: lines = "lines".asInstanceOf[lines]
+  def mask: mask = "mask".asInstanceOf[mask]
   @scala.inline
   def md: md = "md".asInstanceOf[md]
+  @scala.inline
+  def menu: menu = "menu".asInstanceOf[menu]
+  @scala.inline
+  def meta: meta = "meta".asInstanceOf[meta]
+  @scala.inline
+  def metadata: metadata = "metadata".asInstanceOf[metadata]
+  @scala.inline
+  def meter: meter = "meter".asInstanceOf[meter]
+  @scala.inline
+  def middle: middle = "middle".asInstanceOf[middle]
+  @scala.inline
+  def mixed: mixed = "mixed".asInstanceOf[mixed]
   @scala.inline
   def mobile: mobile = "mobile".asInstanceOf[mobile]
   @scala.inline
   def mobileweb: mobileweb = "mobileweb".asInstanceOf[mobileweb]
   @scala.inline
-  def mode: mode = "mode".asInstanceOf[mode]
+  def move: move = "move".asInstanceOf[move]
   @scala.inline
-  def name: name = "name".asInstanceOf[name]
+  def nav: nav = "nav".asInstanceOf[nav]
+  @scala.inline
+  def never: never = "never".asInstanceOf[never]
+  @scala.inline
+  def no: no = "no".asInstanceOf[no]
   @scala.inline
   def none: none = "none".asInstanceOf[none]
   @scala.inline
-  def onAbort: onAbort = "onAbort".asInstanceOf[onAbort]
+  def noscript: noscript = "noscript".asInstanceOf[noscript]
   @scala.inline
-  def onAbortCapture: onAbortCapture = "onAbortCapture".asInstanceOf[onAbortCapture]
+  def number: number = "number".asInstanceOf[number]
   @scala.inline
-  def onAnimationEnd: onAnimationEnd = "onAnimationEnd".asInstanceOf[onAnimationEnd]
+  def numeric: numeric = "numeric".asInstanceOf[numeric]
   @scala.inline
-  def onAnimationEndCapture: onAnimationEndCapture = "onAnimationEndCapture".asInstanceOf[onAnimationEndCapture]
+  def `object`: `object` = "object".asInstanceOf[`object`]
   @scala.inline
-  def onAnimationIteration: onAnimationIteration = "onAnimationIteration".asInstanceOf[onAnimationIteration]
+  def off: off = "off".asInstanceOf[off]
   @scala.inline
-  def onAnimationIterationCapture: onAnimationIterationCapture = "onAnimationIterationCapture".asInstanceOf[onAnimationIterationCapture]
+  def ol: ol = "ol".asInstanceOf[ol]
   @scala.inline
-  def onAnimationStart: onAnimationStart = "onAnimationStart".asInstanceOf[onAnimationStart]
+  def on: on = "on".asInstanceOf[on]
   @scala.inline
-  def onAnimationStartCapture: onAnimationStartCapture = "onAnimationStartCapture".asInstanceOf[onAnimationStartCapture]
+  def optgroup: optgroup = "optgroup".asInstanceOf[optgroup]
   @scala.inline
-  def onAuxClick: onAuxClick = "onAuxClick".asInstanceOf[onAuxClick]
+  def option: option = "option".asInstanceOf[option]
   @scala.inline
-  def onAuxClickCapture: onAuxClickCapture = "onAuxClickCapture".asInstanceOf[onAuxClickCapture]
+  def other: other = "other".asInstanceOf[other]
   @scala.inline
-  def onBeforeInput: onBeforeInput = "onBeforeInput".asInstanceOf[onBeforeInput]
+  def outline: outline = "outline".asInstanceOf[outline]
   @scala.inline
-  def onBeforeInputCapture: onBeforeInputCapture = "onBeforeInputCapture".asInstanceOf[onBeforeInputCapture]
+  def output: output = "output".asInstanceOf[output]
   @scala.inline
-  def onBlur: onBlur = "onBlur".asInstanceOf[onBlur]
+  def p: p = "p".asInstanceOf[p]
   @scala.inline
-  def onBlurCapture: onBlurCapture = "onBlurCapture".asInstanceOf[onBlurCapture]
+  def page: page = "page".asInstanceOf[page]
   @scala.inline
-  def onCanPlay: onCanPlay = "onCanPlay".asInstanceOf[onCanPlay]
+  def param: param = "param".asInstanceOf[param]
   @scala.inline
-  def onCanPlayCapture: onCanPlayCapture = "onCanPlayCapture".asInstanceOf[onCanPlayCapture]
+  def password: password = "password".asInstanceOf[password]
   @scala.inline
-  def onCanPlayThrough: onCanPlayThrough = "onCanPlayThrough".asInstanceOf[onCanPlayThrough]
+  def path: path = "path".asInstanceOf[path]
   @scala.inline
-  def onCanPlayThroughCapture: onCanPlayThroughCapture = "onCanPlayThroughCapture".asInstanceOf[onCanPlayThroughCapture]
-  @scala.inline
-  def onChange: onChange = "onChange".asInstanceOf[onChange]
-  @scala.inline
-  def onChangeCapture: onChangeCapture = "onChangeCapture".asInstanceOf[onChangeCapture]
-  @scala.inline
-  def onClick: onClick = "onClick".asInstanceOf[onClick]
-  @scala.inline
-  def onClickCapture: onClickCapture = "onClickCapture".asInstanceOf[onClickCapture]
-  @scala.inline
-  def onCompositionEnd: onCompositionEnd = "onCompositionEnd".asInstanceOf[onCompositionEnd]
-  @scala.inline
-  def onCompositionEndCapture: onCompositionEndCapture = "onCompositionEndCapture".asInstanceOf[onCompositionEndCapture]
-  @scala.inline
-  def onCompositionStart: onCompositionStart = "onCompositionStart".asInstanceOf[onCompositionStart]
-  @scala.inline
-  def onCompositionStartCapture: onCompositionStartCapture = "onCompositionStartCapture".asInstanceOf[onCompositionStartCapture]
-  @scala.inline
-  def onCompositionUpdate: onCompositionUpdate = "onCompositionUpdate".asInstanceOf[onCompositionUpdate]
-  @scala.inline
-  def onCompositionUpdateCapture: onCompositionUpdateCapture = "onCompositionUpdateCapture".asInstanceOf[onCompositionUpdateCapture]
-  @scala.inline
-  def onContextMenu: onContextMenu = "onContextMenu".asInstanceOf[onContextMenu]
-  @scala.inline
-  def onContextMenuCapture: onContextMenuCapture = "onContextMenuCapture".asInstanceOf[onContextMenuCapture]
-  @scala.inline
-  def onCopy: onCopy = "onCopy".asInstanceOf[onCopy]
-  @scala.inline
-  def onCopyCapture: onCopyCapture = "onCopyCapture".asInstanceOf[onCopyCapture]
-  @scala.inline
-  def onCut: onCut = "onCut".asInstanceOf[onCut]
-  @scala.inline
-  def onCutCapture: onCutCapture = "onCutCapture".asInstanceOf[onCutCapture]
-  @scala.inline
-  def onDblClick: onDblClick = "onDblClick".asInstanceOf[onDblClick]
-  @scala.inline
-  def onDblClickCapture: onDblClickCapture = "onDblClickCapture".asInstanceOf[onDblClickCapture]
-  @scala.inline
-  def onDoubleClick: onDoubleClick = "onDoubleClick".asInstanceOf[onDoubleClick]
-  @scala.inline
-  def onDoubleClickCapture: onDoubleClickCapture = "onDoubleClickCapture".asInstanceOf[onDoubleClickCapture]
-  @scala.inline
-  def onDrag: onDrag = "onDrag".asInstanceOf[onDrag]
-  @scala.inline
-  def onDragCapture: onDragCapture = "onDragCapture".asInstanceOf[onDragCapture]
-  @scala.inline
-  def onDragEnd: onDragEnd = "onDragEnd".asInstanceOf[onDragEnd]
-  @scala.inline
-  def onDragEndCapture: onDragEndCapture = "onDragEndCapture".asInstanceOf[onDragEndCapture]
-  @scala.inline
-  def onDragEnter: onDragEnter = "onDragEnter".asInstanceOf[onDragEnter]
-  @scala.inline
-  def onDragEnterCapture: onDragEnterCapture = "onDragEnterCapture".asInstanceOf[onDragEnterCapture]
-  @scala.inline
-  def onDragExit: onDragExit = "onDragExit".asInstanceOf[onDragExit]
-  @scala.inline
-  def onDragExitCapture: onDragExitCapture = "onDragExitCapture".asInstanceOf[onDragExitCapture]
-  @scala.inline
-  def onDragLeave: onDragLeave = "onDragLeave".asInstanceOf[onDragLeave]
-  @scala.inline
-  def onDragLeaveCapture: onDragLeaveCapture = "onDragLeaveCapture".asInstanceOf[onDragLeaveCapture]
-  @scala.inline
-  def onDragOver: onDragOver = "onDragOver".asInstanceOf[onDragOver]
-  @scala.inline
-  def onDragOverCapture: onDragOverCapture = "onDragOverCapture".asInstanceOf[onDragOverCapture]
-  @scala.inline
-  def onDragStart: onDragStart = "onDragStart".asInstanceOf[onDragStart]
-  @scala.inline
-  def onDragStartCapture: onDragStartCapture = "onDragStartCapture".asInstanceOf[onDragStartCapture]
-  @scala.inline
-  def onDrop: onDrop = "onDrop".asInstanceOf[onDrop]
-  @scala.inline
-  def onDropCapture: onDropCapture = "onDropCapture".asInstanceOf[onDropCapture]
-  @scala.inline
-  def onDurationChange: onDurationChange = "onDurationChange".asInstanceOf[onDurationChange]
-  @scala.inline
-  def onDurationChangeCapture: onDurationChangeCapture = "onDurationChangeCapture".asInstanceOf[onDurationChangeCapture]
-  @scala.inline
-  def onEmptied: onEmptied = "onEmptied".asInstanceOf[onEmptied]
-  @scala.inline
-  def onEmptiedCapture: onEmptiedCapture = "onEmptiedCapture".asInstanceOf[onEmptiedCapture]
-  @scala.inline
-  def onEncrypted: onEncrypted = "onEncrypted".asInstanceOf[onEncrypted]
-  @scala.inline
-  def onEncryptedCapture: onEncryptedCapture = "onEncryptedCapture".asInstanceOf[onEncryptedCapture]
-  @scala.inline
-  def onEnded: onEnded = "onEnded".asInstanceOf[onEnded]
-  @scala.inline
-  def onEndedCapture: onEndedCapture = "onEndedCapture".asInstanceOf[onEndedCapture]
-  @scala.inline
-  def onError: onError = "onError".asInstanceOf[onError]
-  @scala.inline
-  def onErrorCapture: onErrorCapture = "onErrorCapture".asInstanceOf[onErrorCapture]
-  @scala.inline
-  def onFocus: onFocus = "onFocus".asInstanceOf[onFocus]
-  @scala.inline
-  def onFocusCapture: onFocusCapture = "onFocusCapture".asInstanceOf[onFocusCapture]
-  @scala.inline
-  def onGotPointerCapture: onGotPointerCapture = "onGotPointerCapture".asInstanceOf[onGotPointerCapture]
-  @scala.inline
-  def onGotPointerCaptureCapture: onGotPointerCaptureCapture = "onGotPointerCaptureCapture".asInstanceOf[onGotPointerCaptureCapture]
-  @scala.inline
-  def onInput: onInput = "onInput".asInstanceOf[onInput]
-  @scala.inline
-  def onInputCapture: onInputCapture = "onInputCapture".asInstanceOf[onInputCapture]
-  @scala.inline
-  def onInvalid: onInvalid = "onInvalid".asInstanceOf[onInvalid]
-  @scala.inline
-  def onInvalidCapture: onInvalidCapture = "onInvalidCapture".asInstanceOf[onInvalidCapture]
-  @scala.inline
-  def onIonBlur: onIonBlur = "onIonBlur".asInstanceOf[onIonBlur]
-  @scala.inline
-  def onIonFocus: onIonFocus = "onIonFocus".asInstanceOf[onIonFocus]
-  @scala.inline
-  def onKeyDown: onKeyDown = "onKeyDown".asInstanceOf[onKeyDown]
-  @scala.inline
-  def onKeyDownCapture: onKeyDownCapture = "onKeyDownCapture".asInstanceOf[onKeyDownCapture]
-  @scala.inline
-  def onKeyPress: onKeyPress = "onKeyPress".asInstanceOf[onKeyPress]
-  @scala.inline
-  def onKeyPressCapture: onKeyPressCapture = "onKeyPressCapture".asInstanceOf[onKeyPressCapture]
-  @scala.inline
-  def onKeyUp: onKeyUp = "onKeyUp".asInstanceOf[onKeyUp]
-  @scala.inline
-  def onKeyUpCapture: onKeyUpCapture = "onKeyUpCapture".asInstanceOf[onKeyUpCapture]
-  @scala.inline
-  def onLoad: onLoad = "onLoad".asInstanceOf[onLoad]
-  @scala.inline
-  def onLoadCapture: onLoadCapture = "onLoadCapture".asInstanceOf[onLoadCapture]
-  @scala.inline
-  def onLoadStart: onLoadStart = "onLoadStart".asInstanceOf[onLoadStart]
-  @scala.inline
-  def onLoadStartCapture: onLoadStartCapture = "onLoadStartCapture".asInstanceOf[onLoadStartCapture]
-  @scala.inline
-  def onLoadedData: onLoadedData = "onLoadedData".asInstanceOf[onLoadedData]
-  @scala.inline
-  def onLoadedDataCapture: onLoadedDataCapture = "onLoadedDataCapture".asInstanceOf[onLoadedDataCapture]
-  @scala.inline
-  def onLoadedMetadata: onLoadedMetadata = "onLoadedMetadata".asInstanceOf[onLoadedMetadata]
-  @scala.inline
-  def onLoadedMetadataCapture: onLoadedMetadataCapture = "onLoadedMetadataCapture".asInstanceOf[onLoadedMetadataCapture]
-  @scala.inline
-  def onLostPointerCapture: onLostPointerCapture = "onLostPointerCapture".asInstanceOf[onLostPointerCapture]
-  @scala.inline
-  def onLostPointerCaptureCapture: onLostPointerCaptureCapture = "onLostPointerCaptureCapture".asInstanceOf[onLostPointerCaptureCapture]
-  @scala.inline
-  def onMouseDown: onMouseDown = "onMouseDown".asInstanceOf[onMouseDown]
-  @scala.inline
-  def onMouseDownCapture: onMouseDownCapture = "onMouseDownCapture".asInstanceOf[onMouseDownCapture]
-  @scala.inline
-  def onMouseEnter: onMouseEnter = "onMouseEnter".asInstanceOf[onMouseEnter]
-  @scala.inline
-  def onMouseLeave: onMouseLeave = "onMouseLeave".asInstanceOf[onMouseLeave]
-  @scala.inline
-  def onMouseMove: onMouseMove = "onMouseMove".asInstanceOf[onMouseMove]
-  @scala.inline
-  def onMouseMoveCapture: onMouseMoveCapture = "onMouseMoveCapture".asInstanceOf[onMouseMoveCapture]
-  @scala.inline
-  def onMouseOut: onMouseOut = "onMouseOut".asInstanceOf[onMouseOut]
-  @scala.inline
-  def onMouseOutCapture: onMouseOutCapture = "onMouseOutCapture".asInstanceOf[onMouseOutCapture]
-  @scala.inline
-  def onMouseOver: onMouseOver = "onMouseOver".asInstanceOf[onMouseOver]
-  @scala.inline
-  def onMouseOverCapture: onMouseOverCapture = "onMouseOverCapture".asInstanceOf[onMouseOverCapture]
-  @scala.inline
-  def onMouseUp: onMouseUp = "onMouseUp".asInstanceOf[onMouseUp]
-  @scala.inline
-  def onMouseUpCapture: onMouseUpCapture = "onMouseUpCapture".asInstanceOf[onMouseUpCapture]
-  @scala.inline
-  def onPaste: onPaste = "onPaste".asInstanceOf[onPaste]
-  @scala.inline
-  def onPasteCapture: onPasteCapture = "onPasteCapture".asInstanceOf[onPasteCapture]
-  @scala.inline
-  def onPause: onPause = "onPause".asInstanceOf[onPause]
-  @scala.inline
-  def onPauseCapture: onPauseCapture = "onPauseCapture".asInstanceOf[onPauseCapture]
-  @scala.inline
-  def onPlay: onPlay = "onPlay".asInstanceOf[onPlay]
-  @scala.inline
-  def onPlayCapture: onPlayCapture = "onPlayCapture".asInstanceOf[onPlayCapture]
-  @scala.inline
-  def onPlaying: onPlaying = "onPlaying".asInstanceOf[onPlaying]
-  @scala.inline
-  def onPlayingCapture: onPlayingCapture = "onPlayingCapture".asInstanceOf[onPlayingCapture]
-  @scala.inline
-  def onPointerCancel: onPointerCancel = "onPointerCancel".asInstanceOf[onPointerCancel]
-  @scala.inline
-  def onPointerCancelCapture: onPointerCancelCapture = "onPointerCancelCapture".asInstanceOf[onPointerCancelCapture]
-  @scala.inline
-  def onPointerDown: onPointerDown = "onPointerDown".asInstanceOf[onPointerDown]
-  @scala.inline
-  def onPointerDownCapture: onPointerDownCapture = "onPointerDownCapture".asInstanceOf[onPointerDownCapture]
-  @scala.inline
-  def onPointerEnter: onPointerEnter = "onPointerEnter".asInstanceOf[onPointerEnter]
-  @scala.inline
-  def onPointerEnterCapture: onPointerEnterCapture = "onPointerEnterCapture".asInstanceOf[onPointerEnterCapture]
-  @scala.inline
-  def onPointerLeave: onPointerLeave = "onPointerLeave".asInstanceOf[onPointerLeave]
-  @scala.inline
-  def onPointerLeaveCapture: onPointerLeaveCapture = "onPointerLeaveCapture".asInstanceOf[onPointerLeaveCapture]
-  @scala.inline
-  def onPointerMove: onPointerMove = "onPointerMove".asInstanceOf[onPointerMove]
-  @scala.inline
-  def onPointerMoveCapture: onPointerMoveCapture = "onPointerMoveCapture".asInstanceOf[onPointerMoveCapture]
-  @scala.inline
-  def onPointerOut: onPointerOut = "onPointerOut".asInstanceOf[onPointerOut]
-  @scala.inline
-  def onPointerOutCapture: onPointerOutCapture = "onPointerOutCapture".asInstanceOf[onPointerOutCapture]
-  @scala.inline
-  def onPointerOver: onPointerOver = "onPointerOver".asInstanceOf[onPointerOver]
-  @scala.inline
-  def onPointerOverCapture: onPointerOverCapture = "onPointerOverCapture".asInstanceOf[onPointerOverCapture]
-  @scala.inline
-  def onPointerUp: onPointerUp = "onPointerUp".asInstanceOf[onPointerUp]
-  @scala.inline
-  def onPointerUpCapture: onPointerUpCapture = "onPointerUpCapture".asInstanceOf[onPointerUpCapture]
-  @scala.inline
-  def onProgress: onProgress = "onProgress".asInstanceOf[onProgress]
-  @scala.inline
-  def onProgressCapture: onProgressCapture = "onProgressCapture".asInstanceOf[onProgressCapture]
-  @scala.inline
-  def onRateChange: onRateChange = "onRateChange".asInstanceOf[onRateChange]
-  @scala.inline
-  def onRateChangeCapture: onRateChangeCapture = "onRateChangeCapture".asInstanceOf[onRateChangeCapture]
-  @scala.inline
-  def onReset: onReset = "onReset".asInstanceOf[onReset]
-  @scala.inline
-  def onResetCapture: onResetCapture = "onResetCapture".asInstanceOf[onResetCapture]
-  @scala.inline
-  def onScroll: onScroll = "onScroll".asInstanceOf[onScroll]
-  @scala.inline
-  def onScrollCapture: onScrollCapture = "onScrollCapture".asInstanceOf[onScrollCapture]
-  @scala.inline
-  def onSeeked: onSeeked = "onSeeked".asInstanceOf[onSeeked]
-  @scala.inline
-  def onSeekedCapture: onSeekedCapture = "onSeekedCapture".asInstanceOf[onSeekedCapture]
-  @scala.inline
-  def onSeeking: onSeeking = "onSeeking".asInstanceOf[onSeeking]
-  @scala.inline
-  def onSeekingCapture: onSeekingCapture = "onSeekingCapture".asInstanceOf[onSeekingCapture]
-  @scala.inline
-  def onSelect: onSelect = "onSelect".asInstanceOf[onSelect]
-  @scala.inline
-  def onSelectCapture: onSelectCapture = "onSelectCapture".asInstanceOf[onSelectCapture]
-  @scala.inline
-  def onStalled: onStalled = "onStalled".asInstanceOf[onStalled]
-  @scala.inline
-  def onStalledCapture: onStalledCapture = "onStalledCapture".asInstanceOf[onStalledCapture]
-  @scala.inline
-  def onSubmit: onSubmit = "onSubmit".asInstanceOf[onSubmit]
-  @scala.inline
-  def onSubmitCapture: onSubmitCapture = "onSubmitCapture".asInstanceOf[onSubmitCapture]
-  @scala.inline
-  def onSuspend: onSuspend = "onSuspend".asInstanceOf[onSuspend]
-  @scala.inline
-  def onSuspendCapture: onSuspendCapture = "onSuspendCapture".asInstanceOf[onSuspendCapture]
-  @scala.inline
-  def onTimeUpdate: onTimeUpdate = "onTimeUpdate".asInstanceOf[onTimeUpdate]
-  @scala.inline
-  def onTimeUpdateCapture: onTimeUpdateCapture = "onTimeUpdateCapture".asInstanceOf[onTimeUpdateCapture]
-  @scala.inline
-  def onTouchCancel: onTouchCancel = "onTouchCancel".asInstanceOf[onTouchCancel]
-  @scala.inline
-  def onTouchCancelCapture: onTouchCancelCapture = "onTouchCancelCapture".asInstanceOf[onTouchCancelCapture]
-  @scala.inline
-  def onTouchEnd: onTouchEnd = "onTouchEnd".asInstanceOf[onTouchEnd]
-  @scala.inline
-  def onTouchEndCapture: onTouchEndCapture = "onTouchEndCapture".asInstanceOf[onTouchEndCapture]
-  @scala.inline
-  def onTouchMove: onTouchMove = "onTouchMove".asInstanceOf[onTouchMove]
-  @scala.inline
-  def onTouchMoveCapture: onTouchMoveCapture = "onTouchMoveCapture".asInstanceOf[onTouchMoveCapture]
-  @scala.inline
-  def onTouchStart: onTouchStart = "onTouchStart".asInstanceOf[onTouchStart]
-  @scala.inline
-  def onTouchStartCapture: onTouchStartCapture = "onTouchStartCapture".asInstanceOf[onTouchStartCapture]
-  @scala.inline
-  def onTransitionEnd: onTransitionEnd = "onTransitionEnd".asInstanceOf[onTransitionEnd]
-  @scala.inline
-  def onTransitionEndCapture: onTransitionEndCapture = "onTransitionEndCapture".asInstanceOf[onTransitionEndCapture]
-  @scala.inline
-  def onVolumeChange: onVolumeChange = "onVolumeChange".asInstanceOf[onVolumeChange]
-  @scala.inline
-  def onVolumeChangeCapture: onVolumeChangeCapture = "onVolumeChangeCapture".asInstanceOf[onVolumeChangeCapture]
-  @scala.inline
-  def onWaiting: onWaiting = "onWaiting".asInstanceOf[onWaiting]
-  @scala.inline
-  def onWaitingCapture: onWaitingCapture = "onWaitingCapture".asInstanceOf[onWaitingCapture]
-  @scala.inline
-  def onWheel: onWheel = "onWheel".asInstanceOf[onWheel]
-  @scala.inline
-  def onWheelCapture: onWheelCapture = "onWheelCapture".asInstanceOf[onWheelCapture]
-  @scala.inline
-  def part: part = "part".asInstanceOf[part]
+  def pattern: pattern = "pattern".asInstanceOf[pattern]
   @scala.inline
   def phablet: phablet = "phablet".asInstanceOf[phablet]
   @scala.inline
-  def placeholder: placeholder = "placeholder".asInstanceOf[placeholder]
+  def picture: picture = "picture".asInstanceOf[picture]
+  @scala.inline
+  def polite: polite = "polite".asInstanceOf[polite]
+  @scala.inline
+  def polygon: polygon = "polygon".asInstanceOf[polygon]
+  @scala.inline
+  def polyline: polyline = "polyline".asInstanceOf[polyline]
   @scala.inline
   def pop: pop = "pop".asInstanceOf[pop]
   @scala.inline
-  def prefix: prefix = "prefix".asInstanceOf[prefix]
+  def popup: popup = "popup".asInstanceOf[popup]
   @scala.inline
-  def property: property = "property".asInstanceOf[property]
+  def pre: pre = "pre".asInstanceOf[pre]
+  @scala.inline
+  def progress: progress = "progress".asInstanceOf[progress]
   @scala.inline
   def push: push = "push".asInstanceOf[push]
   @scala.inline
   def pwa: pwa = "pwa".asInstanceOf[pwa]
   @scala.inline
-  def radioGroup: radioGroup = "radioGroup".asInstanceOf[radioGroup]
+  def q: q = "q".asInstanceOf[q]
   @scala.inline
-  def radiogroup_ : radiogroup_ = "radiogroup".asInstanceOf[radiogroup_]
+  def radialGradient: radialGradient = "radialGradient".asInstanceOf[radialGradient]
   @scala.inline
-  def rel: rel = "rel".asInstanceOf[rel]
+  def rect: rect = "rect".asInstanceOf[rect]
+  @scala.inline
+  def removals: removals = "removals".asInstanceOf[removals]
   @scala.inline
   def replace: replace = "replace".asInstanceOf[replace]
   @scala.inline
-  def resource: resource = "resource".asInstanceOf[resource]
-  @scala.inline
-  def results: results = "results".asInstanceOf[results]
-  @scala.inline
-  def role: role = "role".asInstanceOf[role]
+  def reset: reset = "reset".asInstanceOf[reset]
   @scala.inline
   def root: root = "root".asInstanceOf[root]
   @scala.inline
+  def round: round = "round".asInstanceOf[round]
+  @scala.inline
   def routerDirection: routerDirection = "routerDirection".asInstanceOf[routerDirection]
   @scala.inline
-  def security: security = "security".asInstanceOf[security]
+  def rp: rp = "rp".asInstanceOf[rp]
   @scala.inline
-  def shape: shape = "shape".asInstanceOf[shape]
+  def rt: rt = "rt".asInstanceOf[rt]
   @scala.inline
-  def show: show = "show".asInstanceOf[show]
+  def ruby: ruby = "ruby".asInstanceOf[ruby]
   @scala.inline
-  def showBackdrop: showBackdrop = "showBackdrop".asInstanceOf[showBackdrop]
+  def s: s = "s".asInstanceOf[s]
   @scala.inline
-  def size: size = "size".asInstanceOf[size]
+  def samp: samp = "samp".asInstanceOf[samp]
+  @scala.inline
+  def script: script = "script".asInstanceOf[script]
+  @scala.inline
+  def search: search = "search".asInstanceOf[search]
+  @scala.inline
+  def section: section = "section".asInstanceOf[section]
+  @scala.inline
+  def select: select = "select".asInstanceOf[select]
+  @scala.inline
+  def selected: selected = "selected".asInstanceOf[selected]
   @scala.inline
   def slot: slot = "slot".asInstanceOf[slot]
   @scala.inline
-  def spellCheck: spellCheck = "spellCheck".asInstanceOf[spellCheck]
+  def small: small = "small".asInstanceOf[small]
   @scala.inline
-  def spellcheck_ : spellcheck_ = "spellcheck".asInstanceOf[spellcheck_]
+  def soft: soft = "soft".asInstanceOf[soft]
   @scala.inline
-  def src: src = "src".asInstanceOf[src]
+  def solid: solid = "solid".asInstanceOf[solid]
+  @scala.inline
+  def source: source = "source".asInstanceOf[source]
+  @scala.inline
+  def span: span = "span".asInstanceOf[span]
+  @scala.inline
+  def spelling: spelling = "spelling".asInstanceOf[spelling]
+  @scala.inline
+  def stacked: stacked = "stacked".asInstanceOf[stacked]
+  @scala.inline
+  def start: start = "start".asInstanceOf[start]
+  @scala.inline
+  def step: step = "step".asInstanceOf[step]
+  @scala.inline
+  def stop: stop = "stop".asInstanceOf[stop]
   @scala.inline
   def strong: strong = "strong".asInstanceOf[strong]
   @scala.inline
   def style: style = "style".asInstanceOf[style]
   @scala.inline
-  def suppressContentEditableWarning: suppressContentEditableWarning = "suppressContentEditableWarning".asInstanceOf[suppressContentEditableWarning]
+  def sub: sub = "sub".asInstanceOf[sub]
   @scala.inline
-  def suppressHydrationWarning: suppressHydrationWarning = "suppressHydrationWarning".asInstanceOf[suppressHydrationWarning]
+  def submit: submit = "submit".asInstanceOf[submit]
   @scala.inline
-  def tabIndex: tabIndex = "tabIndex".asInstanceOf[tabIndex]
+  def summary: summary = "summary".asInstanceOf[summary]
   @scala.inline
-  def tabindex_ : tabindex_ = "tabindex".asInstanceOf[tabindex_]
+  def sup: sup = "sup".asInstanceOf[sup]
+  @scala.inline
+  def svg: svg = "svg".asInstanceOf[svg]
+  @scala.inline
+  def switch: switch = "switch".asInstanceOf[switch]
+  @scala.inline
+  def symbol: symbol = "symbol".asInstanceOf[symbol]
+  @scala.inline
+  def table: table = "table".asInstanceOf[table]
   @scala.inline
   def tablet: tablet = "tablet".asInstanceOf[tablet]
   @scala.inline
-  def target: target = "target".asInstanceOf[target]
+  def tbody: tbody = "tbody".asInstanceOf[tbody]
+  @scala.inline
+  def td: td = "td".asInstanceOf[td]
+  @scala.inline
+  def tel: tel = "tel".asInstanceOf[tel]
+  @scala.inline
+  def template: template = "template".asInstanceOf[template]
   @scala.inline
   def text: text = "text".asInstanceOf[text]
+  @scala.inline
+  def textPath: textPath = "textPath".asInstanceOf[textPath]
+  @scala.inline
+  def textarea: textarea = "textarea".asInstanceOf[textarea]
+  @scala.inline
+  def tfoot: tfoot = "tfoot".asInstanceOf[tfoot]
+  @scala.inline
+  def th: th = "th".asInstanceOf[th]
+  @scala.inline
+  def thead: thead = "thead".asInstanceOf[thead]
+  @scala.inline
+  def time: time = "time".asInstanceOf[time]
   @scala.inline
   def title: title = "title".asInstanceOf[title]
   @scala.inline
   def top: top = "top".asInstanceOf[top]
   @scala.inline
-  def translate: translate = "translate".asInstanceOf[translate]
+  def tr: tr = "tr".asInstanceOf[tr]
   @scala.inline
-  def translucent: translucent = "translucent".asInstanceOf[translucent]
+  def track: track = "track".asInstanceOf[track]
   @scala.inline
-  def `type`: `type` = "type".asInstanceOf[`type`]
+  def tree: tree = "tree".asInstanceOf[tree]
   @scala.inline
-  def typeof: typeof = "typeof".asInstanceOf[typeof]
+  def tspan: tspan = "tspan".asInstanceOf[tspan]
   @scala.inline
-  def unselectable: unselectable = "unselectable".asInstanceOf[unselectable]
+  def u: u = "u".asInstanceOf[u]
   @scala.inline
-  def vocab: vocab = "vocab".asInstanceOf[vocab]
+  def ul: ul = "ul".asInstanceOf[ul]
+  @scala.inline
+  def unbounded: unbounded = "unbounded".asInstanceOf[unbounded]
+  @scala.inline
+  def url: url = "url".asInstanceOf[url]
+  @scala.inline
+  def use: use = "use".asInstanceOf[use]
+  @scala.inline
+  def `var`: `var` = "var".asInstanceOf[`var`]
+  @scala.inline
+  def vertical: vertical = "vertical".asInstanceOf[vertical]
+  @scala.inline
+  def video: video = "video".asInstanceOf[video]
+  @scala.inline
+  def view: view = "view".asInstanceOf[view]
+  @scala.inline
+  def wbr: wbr = "wbr".asInstanceOf[wbr]
+  @scala.inline
+  def yes: yes = "yes".asInstanceOf[yes]
 }
 

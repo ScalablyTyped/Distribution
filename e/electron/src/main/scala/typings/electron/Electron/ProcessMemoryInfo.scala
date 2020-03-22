@@ -12,7 +12,9 @@ trait ProcessMemoryInfo extends js.Object {
     */
   var `private`: Double
   /**
-    * and The amount of memory currently pinned to actual physical RAM in Kilobytes.
+    * The amount of memory currently pinned to actual physical RAM in Kilobytes.
+    *
+    * @platform linux,win32
     */
   var residentSet: Double
   /**

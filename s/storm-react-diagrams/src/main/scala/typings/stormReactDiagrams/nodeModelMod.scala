@@ -29,7 +29,7 @@ object nodeModelMod extends js.Object {
     def getPorts(): StringDictionary[PortModel] = js.native
     def removePort(port: PortModel): Unit = js.native
     def setPosition(x: js.Any, y: js.Any): Unit = js.native
-    def updateDimensions(hasWidthHeight: AnonHeightWidth): Unit = js.native
+    def updateDimensions(hasWidthHeight: AnonWidth): Unit = js.native
   }
   
 }

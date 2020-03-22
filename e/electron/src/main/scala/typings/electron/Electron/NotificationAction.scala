@@ -12,7 +12,7 @@ trait NotificationAction extends js.Object {
     */
   var text: js.UndefOr[String] = js.undefined
   /**
-    * The type of action, can be button.
+    * The type of action, can be `button`.
     */
   var `type`: button
 }

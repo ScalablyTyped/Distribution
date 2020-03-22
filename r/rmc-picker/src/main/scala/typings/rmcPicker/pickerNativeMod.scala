@@ -23,7 +23,7 @@ object pickerNativeMod extends js.Object {
   /* static members */
   @js.native
   object default extends js.Object {
-    var defaultProps: AnonChildrenAny = js.native
+    var defaultProps: AnonChildren = js.native
     def Item(): Unit = js.native
   }
   

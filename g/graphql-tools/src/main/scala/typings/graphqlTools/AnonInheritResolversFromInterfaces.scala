@@ -15,7 +15,7 @@ trait AnonInheritResolversFromInterfaces extends js.Object {
   var mergeDirectives: js.UndefOr[Boolean] = js.undefined
   var onTypeConflict: js.UndefOr[OnTypeConflict] = js.undefined
   var resolvers: js.UndefOr[IResolversParameter] = js.undefined
-  var schemaDirectives: js.UndefOr[StringDictionary[TypeofClassSchemaDirectiveVisitor]] = js.undefined
+  var schemaDirectives: js.UndefOr[StringDictionary[TypeofSchemaDirectiveVisi]] = js.undefined
   var schemas: js.Array[String | GraphQLSchema | DocumentNode | js.Array[GraphQLNamedType]]
 }
 
@@ -27,7 +27,7 @@ object AnonInheritResolversFromInterfaces {
     mergeDirectives: js.UndefOr[Boolean] = js.undefined,
     onTypeConflict: (/* left */ GraphQLNamedType, /* right */ GraphQLNamedType, /* info */ js.UndefOr[AnonLeft]) => GraphQLNamedType = null,
     resolvers: IResolversParameter = null,
-    schemaDirectives: StringDictionary[TypeofClassSchemaDirectiveVisitor] = null
+    schemaDirectives: StringDictionary[TypeofSchemaDirectiveVisi] = null
   ): AnonInheritResolversFromInterfaces = {
     val __obj = js.Dynamic.literal(schemas = schemas.asInstanceOf[js.Any])
     if (!js.isUndefined(inheritResolversFromInterfaces)) __obj.updateDynamic("inheritResolversFromInterfaces")(inheritResolversFromInterfaces.asInstanceOf[js.Any])

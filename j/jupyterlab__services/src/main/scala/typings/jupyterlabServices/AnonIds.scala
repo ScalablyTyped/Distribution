@@ -1,6 +1,6 @@
 package typings.jupyterlabServices
 
-import typings.jupyterlabCoreutils.tokensMod.ISettingRegistry.IPlugin
+import typings.jupyterlabSettingregistry.tokensMod.ISettingRegistry.IPlugin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

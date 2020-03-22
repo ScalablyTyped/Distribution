@@ -58,7 +58,7 @@ trait AnonAspect extends js.Object {
     * To control the step metering. Use this with the "step-angle" attribute. 30 | 50 | ...
     */
   var `step-radius`: js.UndefOr[js.Any] = js.undefined
-  var style: js.UndefOr[AnonAlphaBackgroundcolorBordercolorBorderradiusBorderwidth] = js.undefined
+  var style: js.UndefOr[AnonHoverstate] = js.undefined
   /**
     * To provide the data for the word cloud. (Alternatively, data can be provided through a "words" array.) "text data..." | ...
     */
@@ -68,7 +68,7 @@ trait AnonAspect extends js.Object {
     */
   var token: js.UndefOr[String] = js.undefined
   var violin: js.UndefOr[AnonJitter] = js.undefined
-  var words: js.UndefOr[js.Array[AnonCountText]] = js.undefined
+  var words: js.UndefOr[js.Array[AnonText]] = js.undefined
 }
 
 object AnonAspect {
@@ -89,11 +89,11 @@ object AnonAspect {
     rotate: js.UndefOr[Boolean] = js.undefined,
     `step-angle`: js.Any = null,
     `step-radius`: js.Any = null,
-    style: AnonAlphaBackgroundcolorBordercolorBorderradiusBorderwidth = null,
+    style: AnonHoverstate = null,
     text: String = null,
     token: String = null,
     violin: AnonJitter = null,
-    words: js.Array[AnonCountText] = null
+    words: js.Array[AnonText] = null
   ): AnonAspect = {
     val __obj = js.Dynamic.literal()
     if (aspect != null) __obj.updateDynamic("aspect")(aspect.asInstanceOf[js.Any])

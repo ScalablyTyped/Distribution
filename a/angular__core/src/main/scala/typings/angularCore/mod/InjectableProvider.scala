@@ -16,14 +16,8 @@ trait InjectableProvider extends js.Object
 
 object InjectableProvider {
   @scala.inline
-  def ConstructorSansProvider(deps: js.Array[_] = null): InjectableProvider = {
-    val __obj = js.Dynamic.literal()
-    if (deps != null) __obj.updateDynamic("deps")(deps.asInstanceOf[js.Any])
-    __obj.asInstanceOf[InjectableProvider]
-  }
-  @scala.inline
-  def StaticClassSansProvider(deps: js.Array[_], useClass: Type[_]): InjectableProvider = {
-    val __obj = js.Dynamic.literal(deps = deps.asInstanceOf[js.Any], useClass = useClass.asInstanceOf[js.Any])
+  def ExistingSansProvider(useExisting: js.Any): InjectableProvider = {
+    val __obj = js.Dynamic.literal(useExisting = useExisting.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[InjectableProvider]
   }
@@ -34,15 +28,21 @@ object InjectableProvider {
     __obj.asInstanceOf[InjectableProvider]
   }
   @scala.inline
-  def ExistingSansProvider(useExisting: js.Any): InjectableProvider = {
-    val __obj = js.Dynamic.literal(useExisting = useExisting.asInstanceOf[js.Any])
+  def ClassSansProvider(useClass: Type[_]): InjectableProvider = {
+    val __obj = js.Dynamic.literal(useClass = useClass.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[InjectableProvider]
   }
   @scala.inline
-  def ClassSansProvider(useClass: Type[_]): InjectableProvider = {
-    val __obj = js.Dynamic.literal(useClass = useClass.asInstanceOf[js.Any])
+  def StaticClassSansProvider(deps: js.Array[_], useClass: Type[_]): InjectableProvider = {
+    val __obj = js.Dynamic.literal(deps = deps.asInstanceOf[js.Any], useClass = useClass.asInstanceOf[js.Any])
   
+    __obj.asInstanceOf[InjectableProvider]
+  }
+  @scala.inline
+  def ConstructorSansProvider(deps: js.Array[_] = null): InjectableProvider = {
+    val __obj = js.Dynamic.literal()
+    if (deps != null) __obj.updateDynamic("deps")(deps.asInstanceOf[js.Any])
     __obj.asInstanceOf[InjectableProvider]
   }
   @scala.inline

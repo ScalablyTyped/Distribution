@@ -1,16 +1,15 @@
 package typings.blueprintjsDatetime.dateRangeInputMod
 
 import typings.blueprintjsCore.inputGroupMod.IInputGroupProps
-import typings.blueprintjsCore.popoverMod.IPopoverProps
 import typings.blueprintjsCore.propsMod.HTMLInputProps
 import typings.blueprintjsCore.propsMod.IProps
+import typings.blueprintjsDatetime.PartialIPopoverProps
 import typings.blueprintjsDatetime.blueprintjsDatetimeBooleans.`false`
 import typings.blueprintjsDatetime.datePickerCoreMod.IDatePickerBaseProps
 import typings.blueprintjsDatetime.dateUtilsMod.DateRange
 import typings.blueprintjsDatetime.shortcutsMod.IDateRangeShortcut
 import typings.reactDayPicker.propsMod.DayPickerProps
 import typings.std.Date
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -103,7 +102,7 @@ trait IDateRangeInputProps
     * The props to pass to the popover.
     * `autoFocus`, `content`, and `enforceFocus` will be ignored to avoid compromising usability.
     */
-  var popoverProps: js.UndefOr[Partial[IPopoverProps]] = js.native
+  var popoverProps: js.UndefOr[PartialIPopoverProps] = js.native
   /**
     * Whether the entire text field should be selected on focus.
     * @default false

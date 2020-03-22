@@ -1,6 +1,6 @@
 package typings.aureliaPal.mod
 
-import typings.aureliaPal.AnonDONE
+import typings.aureliaPal.AnonInstantiable
 import typings.std.EventListenerOrEventListenerObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,7 +15,7 @@ trait Platform extends js.Object {
   /**
     * The runtime's XMLHttpRequest API.
     */
-  var XMLHttpRequest: AnonDONE = js.native
+  var XMLHttpRequest: AnonInstantiable = js.native
   /**
     * The runtime environment's global.
     */

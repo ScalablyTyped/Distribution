@@ -1,6 +1,9 @@
 package typings.semanticUiShape.SemanticUI
 
 import typings.semanticUiShape.JQuery
+import typings.semanticUiShape.SemanticUI.Shape.ClassNameSettings
+import typings.semanticUiShape.SemanticUI.Shape.ErrorSettings
+import typings.semanticUiShape.SemanticUI.Shape.SelectorSettings
 import typings.semanticUiShape.SemanticUI.Shape.Translation
 import typings.semanticUiShape.semanticUiShapeStrings.`flip back`
 import typings.semanticUiShape.semanticUiShapeStrings.`flip down`
@@ -16,12 +19,28 @@ import typings.semanticUiShape.semanticUiShapeStrings.`is animating`
 import typings.semanticUiShape.semanticUiShapeStrings.`set default side`
 import typings.semanticUiShape.semanticUiShapeStrings.`set next side`
 import typings.semanticUiShape.semanticUiShapeStrings.`set stage size`
+import typings.semanticUiShape.semanticUiShapeStrings.beforeChange
+import typings.semanticUiShape.semanticUiShapeStrings.className
+import typings.semanticUiShape.semanticUiShapeStrings.debug
 import typings.semanticUiShape.semanticUiShapeStrings.destroy
+import typings.semanticUiShape.semanticUiShapeStrings.duration
+import typings.semanticUiShape.semanticUiShapeStrings.error
+import typings.semanticUiShape.semanticUiShapeStrings.height
+import typings.semanticUiShape.semanticUiShapeStrings.initial
+import typings.semanticUiShape.semanticUiShapeStrings.name
+import typings.semanticUiShape.semanticUiShapeStrings.namespace
+import typings.semanticUiShape.semanticUiShapeStrings.next
+import typings.semanticUiShape.semanticUiShapeStrings.onChange
+import typings.semanticUiShape.semanticUiShapeStrings.performance
 import typings.semanticUiShape.semanticUiShapeStrings.queue
 import typings.semanticUiShape.semanticUiShapeStrings.refresh
 import typings.semanticUiShape.semanticUiShapeStrings.repaint
 import typings.semanticUiShape.semanticUiShapeStrings.reset
+import typings.semanticUiShape.semanticUiShapeStrings.selector
 import typings.semanticUiShape.semanticUiShapeStrings.setting
+import typings.semanticUiShape.semanticUiShapeStrings.silent
+import typings.semanticUiShape.semanticUiShapeStrings.verbose
+import typings.semanticUiShape.semanticUiShapeStrings.width
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -104,13 +123,39 @@ trait Shape_ extends js.Object {
     * Removes all inline styles
     */
   def apply(behavior: reset): JQuery = js.native
+  def apply(behavior: setting, name: beforeChange): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+  def apply(behavior: setting, name: beforeChange, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
+  def apply(behavior: setting, name: className): ClassNameSettings = js.native
+  def apply(behavior: setting, name: className, value: ClassNameSettings): JQuery = js.native
+  def apply(behavior: setting, name: debug): Boolean = js.native
+  def apply(behavior: setting, name: debug, value: Boolean): JQuery = js.native
+  def apply(behavior: setting, name: duration): Double = js.native
+  def apply(behavior: setting, name: duration, value: Double): JQuery = js.native
+  def apply(behavior: setting, name: error): ErrorSettings = js.native
+  def apply(behavior: setting, name: error, value: ErrorSettings): JQuery = js.native
+  def apply(behavior: setting, name: height): next | initial | Double = js.native
+  def apply(behavior: setting, name: height, value: Double): JQuery = js.native
+  def apply(behavior: setting, name: height, value: initial): JQuery = js.native
+  def apply(behavior: setting, name: height, value: next): JQuery = js.native
+  def apply(behavior: setting, name: name): String = js.native
+  def apply(behavior: setting, name: namespace): String = js.native
+  def apply(behavior: setting, name: namespace, value: String): JQuery = js.native
+  def apply(behavior: setting, name: name, value: String): JQuery = js.native
+  def apply(behavior: setting, name: onChange): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+  def apply(behavior: setting, name: onChange, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
+  def apply(behavior: setting, name: performance): Boolean = js.native
+  def apply(behavior: setting, name: performance, value: Boolean): JQuery = js.native
+  def apply(behavior: setting, name: selector): SelectorSettings = js.native
+  def apply(behavior: setting, name: selector, value: SelectorSettings): JQuery = js.native
+  def apply(behavior: setting, name: silent): Boolean = js.native
+  def apply(behavior: setting, name: silent, value: Boolean): JQuery = js.native
+  def apply(behavior: setting, name: verbose): Boolean = js.native
+  def apply(behavior: setting, name: verbose, value: Boolean): JQuery = js.native
+  def apply(behavior: setting, name: width): next | initial | Double = js.native
+  def apply(behavior: setting, name: width, value: Double): JQuery = js.native
+  def apply(behavior: setting, name: width, value: initial): JQuery = js.native
+  def apply(behavior: setting, name: width, value: next): JQuery = js.native
   def apply(behavior: setting, value: ShapeSettings): JQuery = js.native
   def apply(settings: ShapeSettings): JQuery = js.native
-  def apply[K /* <: String */](behavior: setting, name: K): /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-shape.SemanticUI.ShapeSettings._Impl[K] */ js.Any = js.native
-  def apply[K /* <: String */](
-    behavior: setting,
-    name: K,
-    value: /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-shape.SemanticUI.ShapeSettings._Impl[K] */ js.Any
-  ): JQuery = js.native
 }
 

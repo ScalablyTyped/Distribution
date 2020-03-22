@@ -5,14 +5,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonPassword extends js.Object {
-  def reset(username: String): js.Promise[Unit]
-  def set(username: String, password: String): js.Promise[Unit]
+  val name: String
+  val password: String
 }
 
 object AnonPassword {
   @scala.inline
-  def apply(reset: String => js.Promise[Unit], set: (String, String) => js.Promise[Unit]): AnonPassword = {
-    val __obj = js.Dynamic.literal(reset = js.Any.fromFunction1(reset), set = js.Any.fromFunction2(set))
+  def apply(name: String, password: String): AnonPassword = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AnonPassword]
   }

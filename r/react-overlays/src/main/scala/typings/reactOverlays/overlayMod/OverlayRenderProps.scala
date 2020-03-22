@@ -1,13 +1,13 @@
 package typings.reactOverlays.overlayMod
 
 import typings.reactOverlays.AnonArialabelledby
-import typings.reactOverlays.AnonKey
+import typings.reactOverlays.AnonRef
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait OverlayRenderProps extends js.Object {
-  var arrowProps: AnonKey
+  var arrowProps: AnonRef
   var outOfBoundaries: js.UndefOr[Boolean] = js.undefined
   var placement: Placements
   var props: AnonArialabelledby
@@ -18,7 +18,7 @@ trait OverlayRenderProps extends js.Object {
 object OverlayRenderProps {
   @scala.inline
   def apply(
-    arrowProps: AnonKey,
+    arrowProps: AnonRef,
     placement: Placements,
     props: AnonArialabelledby,
     scheduleUpdate: () => Unit,

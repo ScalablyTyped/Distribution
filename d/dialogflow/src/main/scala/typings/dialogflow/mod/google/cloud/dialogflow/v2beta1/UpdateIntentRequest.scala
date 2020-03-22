@@ -20,7 +20,7 @@ class UpdateIntentRequest () extends IUpdateIntentRequest {
   def this(properties: IUpdateIntentRequest) = this()
   /** UpdateIntentRequest intentView. */
   @JSName("intentView")
-  var intentView_UpdateIntentRequest: IntentView = js.native
+  var intentView_UpdateIntentRequest: IntentView | String = js.native
   /** UpdateIntentRequest languageCode. */
   @JSName("languageCode")
   var languageCode_UpdateIntentRequest: String = js.native

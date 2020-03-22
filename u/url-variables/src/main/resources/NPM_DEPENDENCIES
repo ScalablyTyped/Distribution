@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "url-variables" : "1.0.2"
+      "url-variables" : "1.0.3"
     }
   ],
   "test-dependencies" : [
     {
-      "url-variables" : "1.0.2"
+      "url-variables" : "1.0.3"
     }
   ],
   "compile-devDependencies" : [

@@ -1,6 +1,5 @@
 package typings.screeps
 
-import typings.screeps.screepsBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -79,7 +78,7 @@ class StructurePowerSpawnCls protected () extends StructurePowerSpawn {
     *
     */
   /* CompleteClass */
-  override var store: Store[RESOURCE_ENERGY | RESOURCE_POWER, `false`] = js.native
+  override var store: StoreRESOURCEENERGYRESOUR = js.native
   /**
     * One of the STRUCTURE_* constants.
     */

@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.graphql.AnonDescription
 import typings.graphql.AnonDirectives
 import typings.graphql.AnonMaxErrors
+import typings.graphql.VisitorKeyMapASTKindToNod
 import typings.graphql.astMod.ASTKindToNode
 import typings.graphql.astMod.ASTNode
 import typings.graphql.astMod.ArgumentNode
@@ -103,7 +104,6 @@ import typings.graphql.typeInfoMod.getFieldDef
 import typings.graphql.validationContextMod.ValidationRule
 import typings.graphql.visitorMod.VisitFn
 import typings.graphql.visitorMod.Visitor
-import typings.graphql.visitorMod.VisitorKeyMap
 import typings.graphqlCompose.graphqlComposeStrings.`No longer supported`
 import typings.std.AsyncIterable
 import typings.std.AsyncIterableIterator
@@ -581,7 +581,7 @@ object graphql extends js.Object {
       EnumValueDefinitionNode | ObjectValueNode | FieldDefinitionNode | SchemaDefinitionNode | InputObjectTypeDefinitionNode | DocumentNode | DirectiveDefinitionNode | InputValueDefinitionNode | ListValueNode | ScalarTypeDefinitionNode | IntValueNode | OperationDefinitionNode | ArgumentNode | FragmentDefinitionNode | OperationTypeDefinitionNode | FieldNode | StringValueNode | NameNode | ObjectFieldNode | EnumValueNode | SchemaExtensionNode | UnionTypeExtensionNode | VariableDefinitionNode | VariableNode | ObjectTypeDefinitionNode | EnumTypeExtensionNode | InterfaceTypeDefinitionNode | FloatValueNode | NonNullTypeNode | DirectiveNode | SelectionSetNode | InputObjectTypeExtensionNode | ScalarTypeExtensionNode | UnionTypeDefinitionNode | NullValueNode | InterfaceTypeExtensionNode | InlineFragmentNode | EnumTypeDefinitionNode | NamedTypeNode | BooleanValueNode | ListTypeNode | ObjectTypeExtensionNode | FragmentSpreadNode
     ],
      // default: QueryDocumentKeys
-  visitorKeys: VisitorKeyMap[ASTKindToNode]
+  visitorKeys: VisitorKeyMapASTKindToNod
   ): js.Any = js.native
   def visitInParallel(
     visitors: js.Array[

@@ -64,6 +64,7 @@ package object savingsplansMod {
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.EC2
     - typings.awsSdk.awsSdkStrings.Fargate_
+    - typings.awsSdk.awsSdkStrings.Lambda_
     - java.lang.String
   */
   type SavingsPlanProductType = typings.awsSdk.savingsplansMod._SavingsPlanProductType | java.lang.String
@@ -108,11 +109,18 @@ package object savingsplansMod {
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.AmazonEC2
     - typings.awsSdk.awsSdkStrings.AmazonECS
+    - typings.awsSdk.awsSdkStrings.AWSLambda
     - java.lang.String
   */
   type SavingsPlanRateServiceCode = typings.awsSdk.savingsplansMod._SavingsPlanRateServiceCode | java.lang.String
   type SavingsPlanRateServiceCodeList = js.Array[typings.awsSdk.savingsplansMod.SavingsPlanRateServiceCode]
-  type SavingsPlanRateUnit = typings.awsSdk.awsSdkStrings.Hrs | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.Hrs
+    - typings.awsSdk.awsSdkStrings.`Lambda-GB-Second`
+    - typings.awsSdk.awsSdkStrings.Request_
+    - java.lang.String
+  */
+  type SavingsPlanRateUnit = typings.awsSdk.savingsplansMod._SavingsPlanRateUnit | java.lang.String
   type SavingsPlanRateUsageType = java.lang.String
   type SavingsPlanRateUsageTypeList = js.Array[typings.awsSdk.savingsplansMod.SavingsPlanRateUsageType]
   type SavingsPlanServiceCode = java.lang.String

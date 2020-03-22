@@ -42,13 +42,13 @@ object mod extends js.Object {
   def getAreaOfPolygon(points: js.Array[GeolibInputCoordinates]): Double = js.native
   def getBounds(points: js.Array[_]): js.Any = js.native
   def getBoundsOfDistance(point: GeolibInputCoordinates, distance: Double): js.Array[AnonLatitude] = js.native
-  def getCenter(points: js.Array[GeolibInputCoordinates]): `false` | AnonLatitudeLongitude = js.native
+  def getCenter(points: js.Array[GeolibInputCoordinates]): `false` | AnonLongitude = js.native
   def getCenterOfBounds(coords: js.Array[GeolibInputCoordinates]): AnonLatitude = js.native
   def getCompassDirection(origin: GeolibInputCoordinates, dest: GeolibInputCoordinates): S | W | NNE | NE | ENE | E | ESE | SE | SSE | SSW | SW | WSW | WNW | NW | NNW | N = js.native
   def getCompassDirection(origin: GeolibInputCoordinates, dest: GeolibInputCoordinates, bearingFn: BearingFunction): S | W | NNE | NE | ENE | E | ESE | SE | SSE | SSW | SW | WSW | WNW | NW | NNW | N = js.native
   def getCoordinateKey[Keys](point: GeolibInputCoordinates, keysToLookup: js.Array[Keys]): js.UndefOr[Keys] = js.native
-  def getCoordinateKeys(point: GeolibInputCoordinates): Anon0 | Anon01 = js.native
-  def getCoordinateKeys(point: GeolibInputCoordinates, keysToLookup: AnonAltitude): Anon0 | Anon01 = js.native
+  def getCoordinateKeys(point: GeolibInputCoordinates): AnonAltitudeLatitude | AnonLatitudeLongitude = js.native
+  def getCoordinateKeys(point: GeolibInputCoordinates, keysToLookup: AnonAltitude): AnonAltitudeLatitude | AnonLatitudeLongitude = js.native
   def getDistance(from: GeolibInputCoordinates, to: GeolibInputCoordinates): Double = js.native
   def getDistance(from: GeolibInputCoordinates, to: GeolibInputCoordinates, accuracy: Double): Double = js.native
   def getDistanceFromLine(point: GeolibInputCoordinates, lineStart: GeolibInputCoordinates, lineEnd: GeolibInputCoordinates): Double = js.native

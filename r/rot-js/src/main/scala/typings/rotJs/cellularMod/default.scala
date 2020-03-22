@@ -1,6 +1,6 @@
 package typings.rotJs.cellularMod
 
-import typings.std.Partial
+import typings.rotJs.PartialOptionsBorn
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class default protected () extends Cellular {
   def this(width: Double, height: Double) = this()
-  def this(width: Double, height: Double, options: Partial[Options]) = this()
+  def this(width: Double, height: Double, options: PartialOptionsBorn) = this()
 }
 

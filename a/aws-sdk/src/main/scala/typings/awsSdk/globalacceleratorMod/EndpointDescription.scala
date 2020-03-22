@@ -11,7 +11,7 @@ trait EndpointDescription extends js.Object {
     */
   var ClientIPPreservationEnabled: js.UndefOr[GenericBoolean] = js.native
   /**
-    * An ID for the endpoint. If the endpoint is a Network Load Balancer or Application Load Balancer, this is the Amazon Resource Name (ARN) of the resource. If the endpoint is an Elastic IP address, this is the Elastic IP address allocation ID. An Application Load Balancer can be either internal or internet-facing.
+    * An ID for the endpoint. If the endpoint is a Network Load Balancer or Application Load Balancer, this is the Amazon Resource Name (ARN) of the resource. If the endpoint is an Elastic IP address, this is the Elastic IP address allocation ID. For EC2 instances, this is the EC2 instance ID.  An Application Load Balancer can be either internal or internet-facing.
     */
   var EndpointId: js.UndefOr[GenericString] = js.native
   /**

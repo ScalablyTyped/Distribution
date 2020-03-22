@@ -11,7 +11,7 @@ trait AddTagsInput extends js.Object {
     */
   var ResourceArns: typings.awsSdk.elbv2Mod.ResourceArns = js.native
   /**
-    * The tags. Each resource can have a maximum of 10 tags.
+    * The tags.
     */
   var Tags: TagList = js.native
 }

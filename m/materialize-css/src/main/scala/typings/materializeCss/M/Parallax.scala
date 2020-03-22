@@ -1,8 +1,8 @@
 package typings.materializeCss.M
 
 import typings.materializeCss.MElements
+import typings.materializeCss.PartialParallaxOptions
 import typings.std.Element
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,11 +23,11 @@ object Parallax extends js.Object {
     * Init Parallaxs
     */
   def init(els: MElements): js.Array[Parallax] = js.native
-  def init(els: MElements, options: Partial[ParallaxOptions]): js.Array[Parallax] = js.native
+  def init(els: MElements, options: PartialParallaxOptions): js.Array[Parallax] = js.native
   /**
     * Init Parallax
     */
   def init(els: Element): Parallax = js.native
-  def init(els: Element, options: Partial[ParallaxOptions]): Parallax = js.native
+  def init(els: Element, options: PartialParallaxOptions): Parallax = js.native
 }
 

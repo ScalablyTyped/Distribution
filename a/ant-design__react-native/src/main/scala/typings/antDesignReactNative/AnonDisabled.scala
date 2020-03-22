@@ -4,32 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AnonDisabled extends js.Object {
-  var disabled: Boolean
-  var locale: AnonAmDay
-  var minuteStep: Double
-  var mode: String
-  var pickerPrefixCls: String
-  var prefixCls: String
-  var use12Hours: Boolean
-  def onDateChange(): Unit
-}
-
-object AnonDisabled {
-  @scala.inline
-  def apply(
-    disabled: Boolean,
-    locale: AnonAmDay,
-    minuteStep: Double,
-    mode: String,
-    onDateChange: () => Unit,
-    pickerPrefixCls: String,
-    prefixCls: String,
-    use12Hours: Boolean
-  ): AnonDisabled = {
-    val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], minuteStep = minuteStep.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], onDateChange = js.Any.fromFunction0(onDateChange), pickerPrefixCls = pickerPrefixCls.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any], use12Hours = use12Hours.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[AnonDisabled]
-  }
+  var disabled: Boolean = js.native
+  var loading: Boolean = js.native
+  var pressIn: Boolean = js.native
+  def onHideUnderlay(): Unit = js.native
+  def onHideUnderlay(_underscore: js.Any): Unit = js.native
+  def onPress(): Unit = js.native
+  def onPress(_underscore: js.Any): Unit = js.native
+  def onPressIn(): Unit = js.native
+  def onPressIn(_underscore: js.Any): Unit = js.native
+  def onPressOut(): Unit = js.native
+  def onPressOut(_underscore: js.Any): Unit = js.native
+  def onShowUnderlay(): Unit = js.native
+  def onShowUnderlay(_underscore: js.Any): Unit = js.native
 }
 

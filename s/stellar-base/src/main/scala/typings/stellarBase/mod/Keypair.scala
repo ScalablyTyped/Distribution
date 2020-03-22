@@ -2,7 +2,7 @@ package typings.stellarBase.mod
 
 import typings.node.Buffer
 import typings.stellarBase.AnonPublicKey
-import typings.stellarBase.AnonPublicKeyType
+import typings.stellarBase.AnonType
 import typings.stellarBase.mod.xdr.DecoratedSignature
 import typings.stellarBase.mod.xdr.Signature
 import typings.stellarBase.mod.xdr.SignatureHint
@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Keypair protected () extends js.Object {
   def this(keys: AnonPublicKey) = this()
-  def this(keys: AnonPublicKeyType) = this()
+  def this(keys: AnonType) = this()
   val `type`: KeypairType = js.native
   def canSign(): Boolean = js.native
   def publicKey(): String = js.native

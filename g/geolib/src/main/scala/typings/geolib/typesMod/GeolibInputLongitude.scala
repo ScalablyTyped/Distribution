@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 /* Rewritten from type alias, can be one of: 
   - typings.geolib.AnonLng
   - typings.geolib.AnonLon
-  - typings.geolib.AnonLongitude
+  - typings.geolib.AnonLongitudeGeolibLongitudeInputValue
 */
 trait GeolibInputLongitude extends js.Object
 
@@ -25,7 +25,7 @@ object GeolibInputLongitude {
     __obj.asInstanceOf[GeolibInputLongitude]
   }
   @scala.inline
-  def AnonLongitude(longitude: GeolibLongitudeInputValue): GeolibInputLongitude = {
+  def AnonLongitudeGeolibLongitudeInputValue(longitude: GeolibLongitudeInputValue): GeolibInputLongitude = {
     val __obj = js.Dynamic.literal(longitude = longitude.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GeolibInputLongitude]

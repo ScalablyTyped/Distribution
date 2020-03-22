@@ -10,9 +10,11 @@ import scala.scalajs.js.annotation._
 
 trait FormFieldProps extends js.Object {
   var component: js.UndefOr[js.Any] = js.undefined
+  var disabled: js.UndefOr[Boolean] = js.undefined
   var error: js.UndefOr[String | ReactNode] = js.undefined
   var help: js.UndefOr[String | ReactNode] = js.undefined
   var htmlFor: js.UndefOr[String] = js.undefined
+  var info: js.UndefOr[String | ReactNode] = js.undefined
   var label: js.UndefOr[String | ReactNode] = js.undefined
   var margin: js.UndefOr[MarginType] = js.undefined
   var name: js.UndefOr[String] = js.undefined
@@ -21,16 +23,20 @@ trait FormFieldProps extends js.Object {
   // Although Placeholder is not a prop within FormField we Omit the HTML placeholder attribute and replaced with following.
   var placeholder: js.UndefOr[PlaceHolderType] = js.undefined
   var required: js.UndefOr[Boolean] = js.undefined
-  var validate: js.UndefOr[AnonMessage | (js.Function1[/* repeated */ js.Any, _])] = js.undefined
+  var validate: js.UndefOr[
+    AnonMessage | (js.Function1[/* repeated */ js.Any, _]) | (js.Array[AnonMessage | (js.Function1[/* repeated */ _, _])])
+  ] = js.undefined
 }
 
 object FormFieldProps {
   @scala.inline
   def apply(
     component: js.Any = null,
+    disabled: js.UndefOr[Boolean] = js.undefined,
     error: String | ReactNode = null,
     help: String | ReactNode = null,
     htmlFor: String = null,
+    info: String | ReactNode = null,
     label: String | ReactNode = null,
     margin: MarginType = null,
     name: String = null,
@@ -38,13 +44,15 @@ object FormFieldProps {
     pad: js.UndefOr[Boolean] = js.undefined,
     placeholder: PlaceHolderType = null,
     required: js.UndefOr[Boolean] = js.undefined,
-    validate: AnonMessage | (js.Function1[/* repeated */ js.Any, _]) = null
+    validate: AnonMessage | (js.Function1[/* repeated */ js.Any, _]) | (js.Array[AnonMessage | (js.Function1[/* repeated */ _, _])]) = null
   ): FormFieldProps = {
     val __obj = js.Dynamic.literal()
     if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     if (help != null) __obj.updateDynamic("help")(help.asInstanceOf[js.Any])
     if (htmlFor != null) __obj.updateDynamic("htmlFor")(htmlFor.asInstanceOf[js.Any])
+    if (info != null) __obj.updateDynamic("info")(info.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])

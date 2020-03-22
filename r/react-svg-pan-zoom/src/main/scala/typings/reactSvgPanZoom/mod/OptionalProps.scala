@@ -5,7 +5,7 @@ import typings.react.mod.ComponentType
 import typings.react.mod.ReactElement
 import typings.react.mod.StatelessComponent
 import typings.reactSvgPanZoom.AnonBackground
-import typings.reactSvgPanZoom.AnonBottom
+import typings.reactSvgPanZoom.AnonPosition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,7 +43,7 @@ trait OptionalProps extends js.Object {
   var scaleFactorOnWheel: Double
   // CSS style of the Viewer
   var style: js.Object
-  var toolbarProps: AnonBottom
+  var toolbarProps: AnonPosition
   // Note: The `T` type parameter is the type of the `target` of the event:
   // handler click
   def onClick[T](event: ViewerMouseEvent[T]): Unit
@@ -88,7 +88,7 @@ object OptionalProps {
     scaleFactorMin: Double,
     scaleFactorOnWheel: Double,
     style: js.Object,
-    toolbarProps: AnonBottom
+    toolbarProps: AnonPosition
   ): OptionalProps = {
     val __obj = js.Dynamic.literal(SVGBackground = SVGBackground.asInstanceOf[js.Any], background = background.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], customMiniature = customMiniature.asInstanceOf[js.Any], customToolbar = customToolbar.asInstanceOf[js.Any], detectAutoPan = detectAutoPan.asInstanceOf[js.Any], detectPinchGesture = detectPinchGesture.asInstanceOf[js.Any], detectWheel = detectWheel.asInstanceOf[js.Any], disableDoubleClickZoomWithToolAuto = disableDoubleClickZoomWithToolAuto.asInstanceOf[js.Any], miniatureProps = miniatureProps.asInstanceOf[js.Any], modifierKeys = modifierKeys.asInstanceOf[js.Any], onClick = js.Any.fromFunction1(onClick), onDoubleClick = js.Any.fromFunction1(onDoubleClick), onMouseDown = js.Any.fromFunction1(onMouseDown), onMouseMove = js.Any.fromFunction1(onMouseMove), onMouseUp = js.Any.fromFunction1(onMouseUp), onPan = js.Any.fromFunction1(onPan), onZoom = js.Any.fromFunction1(onZoom), preventPanOutside = preventPanOutside.asInstanceOf[js.Any], scaleFactor = scaleFactor.asInstanceOf[js.Any], scaleFactorMax = scaleFactorMax.asInstanceOf[js.Any], scaleFactorMin = scaleFactorMin.asInstanceOf[js.Any], scaleFactorOnWheel = scaleFactorOnWheel.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], toolbarProps = toolbarProps.asInstanceOf[js.Any])
   

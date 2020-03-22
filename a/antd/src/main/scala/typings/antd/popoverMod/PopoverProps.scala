@@ -2,9 +2,10 @@ package typings.antd.popoverMod
 
 import typings.antd.placementsMod.AdjustOverflow
 import typings.antd.tooltipMod.AbstractTooltipProps
-import typings.antd.tooltipMod.TooltipAlignConfig
 import typings.antd.tooltipMod.TooltipPlacement
-import typings.antd.tooltipMod.TooltipTrigger
+import typings.rcTrigger.interfaceMod.ActionType
+import typings.rcTrigger.interfaceMod.AlignType
+import typings.rcTrigger.interfaceMod.BuildInPlacements
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
 import typings.std.HTMLElement
@@ -20,10 +21,10 @@ trait PopoverProps extends AbstractTooltipProps {
 object PopoverProps {
   @scala.inline
   def apply(
-    align: TooltipAlignConfig = null,
+    align: AlignType = null,
     arrowPointAtCenter: js.UndefOr[Boolean] = js.undefined,
     autoAdjustOverflow: Boolean | AdjustOverflow = null,
-    builtinPlacements: js.Object = null,
+    builtinPlacements: BuildInPlacements = null,
     children: ReactNode = null,
     className: String = null,
     content: ReactNode = null,
@@ -42,7 +43,7 @@ object PopoverProps {
     style: CSSProperties = null,
     title: ReactNode = null,
     transitionName: String = null,
-    trigger: TooltipTrigger = null,
+    trigger: ActionType = null,
     visible: js.UndefOr[Boolean] = js.undefined
   ): PopoverProps = {
     val __obj = js.Dynamic.literal()

@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
   - typings.zchatBrowser.AnonMsg
   - typings.zchatBrowser.AnonButtons
   - typings.zchatBrowser.AnonItems
-  - typings.zchatBrowser.AnonButtonsItems
+  - typings.zchatBrowser.AnonType
 */
 trait StructuredMessage extends js.Object
 
@@ -36,7 +36,7 @@ object StructuredMessage {
     __obj.asInstanceOf[StructuredMessage]
   }
   @scala.inline
-  def AnonButtonsItems(buttons: js.Array[Button], items: js.Array[ListItem], `type`: LIST_TEMPLATE): StructuredMessage = {
+  def AnonType(buttons: js.Array[Button], items: js.Array[ListItem], `type`: LIST_TEMPLATE): StructuredMessage = {
     val __obj = js.Dynamic.literal(buttons = buttons.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[StructuredMessage]

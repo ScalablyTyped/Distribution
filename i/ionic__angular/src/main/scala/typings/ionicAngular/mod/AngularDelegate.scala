@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/angular", "AngularDelegate")
 @js.native
 class AngularDelegate protected ()
-  extends typings.ionicAngular.distMod.AngularDelegate {
+  extends typings.ionicAngular.angularDelegateMod.AngularDelegate {
   def this(zone: NgZone, appRef: ApplicationRef) = this()
 }
 

@@ -1,8 +1,10 @@
 package typings.officeUiFabricReact.comboBoxTypesMod
 
+import typings.officeUiFabricReact.PartialIButtonStyles
+import typings.officeUiFabricReact.PartialIComboBoxOptionSty
+import typings.officeUiFabricReact.PartialIComboBoxStyles
 import typings.officeUiFabricReact.autofillTypesMod.IAutofillProps
 import typings.officeUiFabricReact.buttonTypesMod.IButtonProps
-import typings.officeUiFabricReact.buttonTypesMod.IButtonStyles
 import typings.officeUiFabricReact.calloutTypesMod.ICalloutProps
 import typings.officeUiFabricReact.comboBoxClassNamesMod.IComboBoxClassNames
 import typings.officeUiFabricReact.iconTypesMod.IIconProps
@@ -76,7 +78,6 @@ import typings.react.reactStrings.url
 import typings.react.reactStrings.vertical
 import typings.react.reactStrings.yes
 import typings.std.Event_
-import typings.std.Partial
 import typings.uifabricStyling.ithemeMod.ITheme
 import typings.uifabricUtilities.createRefMod.IRefObject
 import typings.uifabricUtilities.irenderfunctionMod.IRenderFunction
@@ -111,12 +112,12 @@ trait IComboBoxProps extends ISelectableDroppableTextProps[IComboBox, IComboBox]
   /**
     * Styles for the caret down button.
     */
-  var caretDownButtonStyles: js.UndefOr[Partial[IButtonStyles]] = js.undefined
+  var caretDownButtonStyles: js.UndefOr[PartialIButtonStyles] = js.undefined
   /**
     * Default styles that should be applied to ComboBox options,
     * in case an option does not come with user-defined custom styles
     */
-  var comboBoxOptionStyles: js.UndefOr[Partial[IComboBoxOptionStyles]] = js.undefined
+  var comboBoxOptionStyles: js.UndefOr[PartialIComboBoxOptionSty] = js.undefined
   /**
     * Custom max width for dropdown
     */
@@ -262,7 +263,7 @@ trait IComboBoxProps extends ISelectableDroppableTextProps[IComboBox, IComboBox]
   /**
     * Custom styles for this component
     */
-  var styles: js.UndefOr[Partial[IComboBoxStyles]] = js.undefined
+  var styles: js.UndefOr[PartialIComboBoxStyles] = js.undefined
   /**
     * Value to show in the input, does not have to map to a combobox option
     */
@@ -341,11 +342,11 @@ object IComboBoxProps {
     autofill: IAutofillProps = null,
     buttonIconProps: IIconProps = null,
     calloutProps: ICalloutProps = null,
-    caretDownButtonStyles: Partial[IButtonStyles] = null,
+    caretDownButtonStyles: PartialIButtonStyles = null,
     children: ReactNode = null,
     className: String = null,
     color: String = null,
-    comboBoxOptionStyles: Partial[IComboBoxOptionStyles] = null,
+    comboBoxOptionStyles: PartialIComboBoxOptionSty = null,
     componentRef: IRefObject[IComboBox] = null,
     contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,
@@ -501,7 +502,7 @@ object IComboBoxProps {
     slot: String = null,
     spellCheck: js.UndefOr[Boolean] = js.undefined,
     style: CSSProperties = null,
-    styles: Partial[IComboBoxStyles] = null,
+    styles: PartialIComboBoxStyles = null,
     suppressContentEditableWarning: js.UndefOr[Boolean] = js.undefined,
     suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined,
     tabIndex: Int | Double = null,

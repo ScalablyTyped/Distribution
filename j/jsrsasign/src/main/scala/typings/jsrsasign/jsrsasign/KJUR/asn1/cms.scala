@@ -10,7 +10,7 @@ import typings.jsrsasign.AnonHex
 import typings.jsrsasign.AnonIsValid
 import typings.jsrsasign.AnonIssuer
 import typings.jsrsasign.AnonName
-import typings.jsrsasign.AnonOid
+import typings.jsrsasign.AnonOidString
 import typings.jsrsasign.AnonSorted
 import typings.jsrsasign.jsrsasign.KJUR.crypto.DSA
 import typings.jsrsasign.jsrsasign.KJUR.crypto.ECDSA
@@ -136,7 +136,7 @@ object cms extends js.Object {
   @js.native
   class ContentType () extends Attribute {
     def this(params: AnonName) = this()
-    def this(params: AnonOid) = this()
+    def this(params: AnonOidString) = this()
   }
   
   /**

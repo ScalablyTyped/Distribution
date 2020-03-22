@@ -5,36 +5,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait AnonAssets[ProjectConfig, DependencyConfig] extends js.Object {
-  def copyAssets(assets: js.Array[String], projectConfig: ProjectConfig): Unit
-  def isInstalled(projectConfig: ProjectConfig, name: String, dependencyConfig: DependencyConfig): Boolean
-  def register(
-    name: String,
-    dependencyConfig: DependencyConfig,
-    params: Record[String, String],
-    projectConfig: ProjectConfig
-  ): Unit
-  def unlinkAssets(assets: js.Array[String], projectConfig: ProjectConfig): Unit
-  def unregister(
-    packageName: String,
-    dependencyConfig: DependencyConfig,
-    projectConfig: ProjectConfig,
-    otherDependencies: js.Array[DependencyConfig]
-  ): Unit
+trait AnonAssets extends js.Object {
+  var assets: js.Array[String]
+  var hooks: Record[String, String]
+  var name: String
+  var params: js.Array[_]
+  var platforms: AnonDictkey
+  var root: String
 }
 
 object AnonAssets {
   @scala.inline
-  def apply[ProjectConfig, DependencyConfig](
-    copyAssets: (js.Array[String], ProjectConfig) => Unit,
-    isInstalled: (ProjectConfig, String, DependencyConfig) => Boolean,
-    register: (String, DependencyConfig, Record[String, String], ProjectConfig) => Unit,
-    unlinkAssets: (js.Array[String], ProjectConfig) => Unit,
-    unregister: (String, DependencyConfig, ProjectConfig, js.Array[DependencyConfig]) => Unit
-  ): AnonAssets[ProjectConfig, DependencyConfig] = {
-    val __obj = js.Dynamic.literal(copyAssets = js.Any.fromFunction2(copyAssets), isInstalled = js.Any.fromFunction3(isInstalled), register = js.Any.fromFunction4(register), unlinkAssets = js.Any.fromFunction2(unlinkAssets), unregister = js.Any.fromFunction4(unregister))
+  def apply(
+    assets: js.Array[String],
+    hooks: Record[String, String],
+    name: String,
+    params: js.Array[_],
+    platforms: AnonDictkey,
+    root: String
+  ): AnonAssets = {
+    val __obj = js.Dynamic.literal(assets = assets.asInstanceOf[js.Any], hooks = hooks.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], platforms = platforms.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
   
-    __obj.asInstanceOf[AnonAssets[ProjectConfig, DependencyConfig]]
+    __obj.asInstanceOf[AnonAssets]
   }
 }
 

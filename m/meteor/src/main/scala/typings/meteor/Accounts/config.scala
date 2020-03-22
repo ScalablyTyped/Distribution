@@ -1,6 +1,6 @@
 package typings.meteor.Accounts
 
-import typings.meteor.Anon_AmbiguousErrorMessages
+import typings.meteor.AnonAmbiguousErrorMessages
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Accounts.config")
 @js.native
 object config extends js.Object {
-  def apply(options: Anon_AmbiguousErrorMessages): Unit = js.native
+  def apply(options: AnonAmbiguousErrorMessages): Unit = js.native
 }
 

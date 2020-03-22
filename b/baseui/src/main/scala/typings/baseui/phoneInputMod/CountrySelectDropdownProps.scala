@@ -1,13 +1,13 @@
 package typings.baseui.phoneInputMod
 
 import typings.baseui.AnonCountrySelectDropdown
-import typings.react.mod.ReactNode
+import typings.baseui.ReadonlyArrayReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CountrySelectDropdownProps extends js.Object {
-  var children: js.UndefOr[js.Array[ReactNode]] = js.undefined
+  var children: js.UndefOr[ReadonlyArrayReactNode] = js.undefined
   var country: js.UndefOr[Country] = js.undefined
   var mapIsoToLabel: js.UndefOr[js.Function1[/* iso */ String, String]] = js.undefined
   var maxDropdownHeight: js.UndefOr[String] = js.undefined
@@ -17,7 +17,7 @@ trait CountrySelectDropdownProps extends js.Object {
 object CountrySelectDropdownProps {
   @scala.inline
   def apply(
-    children: js.Array[ReactNode] = null,
+    children: ReadonlyArrayReactNode = null,
     country: Country = null,
     mapIsoToLabel: /* iso */ String => String = null,
     maxDropdownHeight: String = null,

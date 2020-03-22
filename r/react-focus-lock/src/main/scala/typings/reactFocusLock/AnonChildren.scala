@@ -1,19 +1,20 @@
 package typings.reactFocusLock
 
+import typings.react.mod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait AnonChildren[ChildrenType] extends js.Object {
-  var children: ChildrenType
+trait AnonChildren extends js.Object {
+  var children: ReactNode
 }
 
 object AnonChildren {
   @scala.inline
-  def apply[ChildrenType](children: ChildrenType): AnonChildren[ChildrenType] = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[AnonChildren[ChildrenType]]
+  def apply(children: ReactNode = null): AnonChildren = {
+    val __obj = js.Dynamic.literal()
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AnonChildren]
   }
 }
 

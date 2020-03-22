@@ -2,6 +2,7 @@ package typings.three
 
 import typings.three.colorMod.Color
 import typings.three.lightMod.Light
+import typings.three.threeBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,6 +34,7 @@ object hemisphereLightMod extends js.Object {
     def this(skyColor: Color, groundColor: Double, intensity: Double) = this()
     def this(skyColor: Color, groundColor: Color, intensity: Double) = this()
     var groundColor: Color = js.native
+    val isHemisphereLight: `true` = js.native
     var skyColor: Color = js.native
   }
   

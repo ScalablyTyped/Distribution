@@ -1,7 +1,7 @@
 package typings.officeUiFabricReact.mod
 
 import typings.officeUiFabricReact.AnonAddMeasurementToCache
-import typings.officeUiFabricReact.AnonCurrentState
+import typings.officeUiFabricReact.AnonGetInitialResizeGroupState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("office-ui-fabric-react", "getNextResizeGroupStateProvider")
 @js.native
 object getNextResizeGroupStateProvider extends js.Object {
-  def apply(): AnonCurrentState = js.native
-  def apply(measurementCache: AnonAddMeasurementToCache): AnonCurrentState = js.native
+  def apply(): AnonGetInitialResizeGroupState = js.native
+  def apply(measurementCache: AnonAddMeasurementToCache): AnonGetInitialResizeGroupState = js.native
 }
 

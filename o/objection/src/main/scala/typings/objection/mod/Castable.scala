@@ -4,8 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Castable extends js.Object {
-  def as(alias: String): this.type
+trait Castable extends Aliasable {
   def asArray(): this.type
   def castArray(): this.type
   def castBigInt(): this.type

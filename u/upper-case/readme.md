@@ -1,7 +1,7 @@
 
 # Scala.js typings for upper-case
 
-Typings are for version 1.1.3
+Typings are for version 2.0.1
 
 ## Library description:
 Transforms the string to upper case

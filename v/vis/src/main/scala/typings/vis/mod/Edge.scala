@@ -2,7 +2,7 @@ package typings.vis.mod
 
 import typings.vis.AnonAlign
 import typings.vis.AnonColor
-import typings.vis.AnonEnabledForceDirection
+import typings.vis.AnonForceDirection
 import typings.vis.AnonFrom
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -34,7 +34,7 @@ object Edge {
     selectionWidth: Int | Double = null,
     selfReferenceSize: Int | Double = null,
     shadow: Boolean | OptionsShadow = null,
-    smooth: Boolean | AnonEnabledForceDirection = null,
+    smooth: Boolean | AnonForceDirection = null,
     title: String = null,
     to: IdType = null,
     value: Int | Double = null,

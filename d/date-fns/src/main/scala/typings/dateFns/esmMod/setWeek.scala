@@ -1,6 +1,6 @@
 package typings.dateFns.esmMod
 
-import typings.dateFns.Anon01234567FirstWeekContainsDateLocaleWeekStartsOn
+import typings.dateFns.AnonLocaleLocale
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object setWeek extends js.Object {
   def apply(date: Double, week: Double): Date = js.native
-  def apply(date: Double, week: Double, options: Anon01234567FirstWeekContainsDateLocaleWeekStartsOn): Date = js.native
+  def apply(date: Double, week: Double, options: AnonLocaleLocale): Date = js.native
   def apply(date: Date, week: Double): Date = js.native
-  def apply(date: Date, week: Double, options: Anon01234567FirstWeekContainsDateLocaleWeekStartsOn): Date = js.native
+  def apply(date: Date, week: Double, options: AnonLocaleLocale): Date = js.native
 }
 

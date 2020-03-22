@@ -21,7 +21,7 @@ trait AuthorizeSecurityGroupEgressRequest extends js.Object {
   /**
     * The ID of the security group.
     */
-  var GroupId: String = js.native
+  var GroupId: SecurityGroupId = js.native
   /**
     * The sets of IP permissions. You can't specify a destination security group and a CIDR IP address range in the same set of permissions.
     */
@@ -47,7 +47,7 @@ trait AuthorizeSecurityGroupEgressRequest extends js.Object {
 object AuthorizeSecurityGroupEgressRequest {
   @scala.inline
   def apply(
-    GroupId: String,
+    GroupId: SecurityGroupId,
     CidrIp: String = null,
     DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     FromPort: Int | scala.Double = null,

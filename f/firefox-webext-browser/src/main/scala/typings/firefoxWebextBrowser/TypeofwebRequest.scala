@@ -37,9 +37,7 @@ trait TypeofwebRequest extends js.Object {
     ]
   ] = js.native
   /** Fired when a server-initiated redirect is about to occur. */
-  val onBeforeRedirect: WebRequestOnBeforeRedirectEvent[
-    js.Function1[/* details */ AnonCookieStoreIdDocumentUrlFrameIdFromCacheIncognito, Unit]
-  ] = js.native
+  val onBeforeRedirect: WebRequestOnBeforeRedirectEvent[js.Function1[/* details */ AnonIp, Unit]] = js.native
   /* webRequest events */
   /**
     * Fired when a request is about to occur.
@@ -48,7 +46,7 @@ trait TypeofwebRequest extends js.Object {
     */
   val onBeforeRequest: WebRequestOnBeforeRequestEvent[
     js.Function1[
-      /* details */ AnonCookieStoreIdDocumentUrl, 
+      /* details */ AnonDocumentUrl, 
       BlockingResponse | js.Promise[BlockingResponse] | Unit
     ]
   ] = js.native
@@ -60,37 +58,32 @@ trait TypeofwebRequest extends js.Object {
     */
   val onBeforeSendHeaders: WebRequestOnBeforeSendHeadersEvent[
     js.Function1[
-      /* details */ AnonCookieStoreIdDocumentUrlFrameId, 
+      /* details */ AnonIncognito, 
       BlockingResponse | js.Promise[BlockingResponse] | Unit
     ]
   ] = js.native
   /** Fired when a request is completed. */
-  val onCompleted: WebRequestOnCompletedEvent[
-    js.Function1[/* details */ AnonCookieStoreIdDocumentUrlFrameIdFromCacheIncognitoIp, Unit]
-  ] = js.native
+  val onCompleted: WebRequestOnCompletedEvent[js.Function1[/* details */ AnonOriginUrl, Unit]] = js.native
   /** Fired when an error occurs. */
-  val onErrorOccurred: WebRequestOnErrorOccurredEvent[js.Function1[/* details */ AnonCookieStoreIdDocumentUrlError, Unit]] = js.native
+  val onErrorOccurred: WebRequestOnErrorOccurredEvent[js.Function1[/* details */ AnonRequestId, Unit]] = js.native
   /**
     * Fired when HTTP response headers of a request have been received.
     * @returns If "blocking" is specified in the "extraInfoSpec" parameter, the event listener should return an object
     *     of this type.
     */
   val onHeadersReceived: WebRequestOnHeadersReceivedEvent[
-    js.Function1[
-      /* details */ AnonCookieStoreIdDocumentUrlFrameIdIncognito, 
-      BlockingResponse | js.Promise[BlockingResponse] | Unit
-    ]
+    js.Function1[/* details */ AnonMethod, BlockingResponse | js.Promise[BlockingResponse] | Unit]
   ] = js.native
   /**
     * Fired when the first byte of the response body is received. For HTTP requests, this means that the status line
     * and response headers are available.
     */
-  val onResponseStarted: WebRequestOnResponseStartedEvent[js.Function1[/* details */ AnonCookieStoreIdDocumentUrlFrameIdFromCache, Unit]] = js.native
+  val onResponseStarted: WebRequestOnResponseStartedEvent[js.Function1[/* details */ AnonFromCache, Unit]] = js.native
   /**
     * Fired just before a request is going to be sent to the server (modifications of previous onBeforeSendHeaders
     * callbacks are visible by the time onSendHeaders is fired).
     */
-  val onSendHeaders: WebRequestOnSendHeadersEvent[js.Function1[/* details */ AnonCookieStoreIdDocumentUrlFrameId, Unit]] = js.native
+  val onSendHeaders: WebRequestOnSendHeadersEvent[js.Function1[/* details */ AnonIncognito, Unit]] = js.native
   /** ... */
   def filterResponseData(requestId: String): js.Object = js.native
   /**

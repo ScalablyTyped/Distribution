@@ -1,6 +1,6 @@
 package typings.wegameApi.wx
 
-import typings.wegameApi.AnonCompleteFailName
+import typings.wegameApi.AnonName
 import typings.wegameApi.LoadSubpackageTask
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,6 +13,6 @@ object loadSubpackage extends js.Object {
   /**
     * 触发分包加载，详见 分包加载
     */
-  def apply(param: AnonCompleteFailName): LoadSubpackageTask = js.native
+  def apply(param: AnonName): LoadSubpackageTask = js.native
 }
 

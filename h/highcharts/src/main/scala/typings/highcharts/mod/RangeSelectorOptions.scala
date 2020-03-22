@@ -39,9 +39,7 @@ trait RangeSelectorOptions extends js.Object {
   /**
     * (Highstock, Gantt) An array of configuration objects for the buttons.
     *
-    * Defaults to
-    *
-    *  (see online documentation for example)
+    * Defaults to: (see online documentation for example)
     */
   var buttons: js.UndefOr[js.Array[RangeSelectorButtonsOptions]] = js.undefined
   /**

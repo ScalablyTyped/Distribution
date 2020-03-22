@@ -1,7 +1,7 @@
 package typings.vis.mod
 
 import typings.std.Date
-import typings.vis.AnonItem
+import typings.vis.AnonTemplate
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -62,7 +62,7 @@ trait TimelineOptions extends js.Object {
   var throttleRedraw: js.UndefOr[Double] = js.undefined
   var timeAxis: js.UndefOr[TimelineTimeAxisOption] = js.undefined
   var tooltip: js.UndefOr[TimelineTooltipOption] = js.undefined
-  var tooltipOnItemUpdateTime: js.UndefOr[Boolean | AnonItem] = js.undefined
+  var tooltipOnItemUpdateTime: js.UndefOr[Boolean | AnonTemplate] = js.undefined
   var `type`: js.UndefOr[String] = js.undefined
   var verticalScroll: js.UndefOr[Boolean] = js.undefined
   var visibleFrameTemplate: js.UndefOr[TimelineOptionsTemplateFunction] = js.undefined
@@ -130,7 +130,7 @@ object TimelineOptions {
     throttleRedraw: Int | Double = null,
     timeAxis: TimelineTimeAxisOption = null,
     tooltip: TimelineTooltipOption = null,
-    tooltipOnItemUpdateTime: Boolean | AnonItem = null,
+    tooltipOnItemUpdateTime: Boolean | AnonTemplate = null,
     `type`: String = null,
     verticalScroll: js.UndefOr[Boolean] = js.undefined,
     visibleFrameTemplate: (/* item */ js.UndefOr[js.Any], /* element */ js.UndefOr[js.Any], /* data */ js.UndefOr[js.Any]) => String = null,

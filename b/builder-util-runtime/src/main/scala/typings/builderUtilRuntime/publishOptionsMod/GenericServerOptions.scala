@@ -1,6 +1,7 @@
 package typings.builderUtilRuntime.publishOptionsMod
 
 import typings.builderUtilRuntime.builderUtilRuntimeStrings.generic
+import typings.node.httpMod.OutgoingHttpHeaders
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -36,6 +37,7 @@ object GenericServerOptions {
     channel: String = null,
     publishAutoUpdate: js.UndefOr[Boolean] = js.undefined,
     publisherName: js.Array[String] = null,
+    requestHeaders: OutgoingHttpHeaders = null,
     updaterCacheDirName: String = null,
     useMultipleRangeRequest: js.UndefOr[Boolean] = js.undefined
   ): GenericServerOptions = {
@@ -43,6 +45,7 @@ object GenericServerOptions {
     if (channel != null) __obj.updateDynamic("channel")(channel.asInstanceOf[js.Any])
     if (!js.isUndefined(publishAutoUpdate)) __obj.updateDynamic("publishAutoUpdate")(publishAutoUpdate.asInstanceOf[js.Any])
     if (publisherName != null) __obj.updateDynamic("publisherName")(publisherName.asInstanceOf[js.Any])
+    if (requestHeaders != null) __obj.updateDynamic("requestHeaders")(requestHeaders.asInstanceOf[js.Any])
     if (updaterCacheDirName != null) __obj.updateDynamic("updaterCacheDirName")(updaterCacheDirName.asInstanceOf[js.Any])
     if (!js.isUndefined(useMultipleRangeRequest)) __obj.updateDynamic("useMultipleRangeRequest")(useMultipleRangeRequest.asInstanceOf[js.Any])
     __obj.asInstanceOf[GenericServerOptions]

@@ -161,7 +161,7 @@ trait AnonAdjustlayout extends js.Object {
     * Sets the background gradient fill type to either linear or radial. "linear" | "radial"
     */
   var `fill-type`: js.UndefOr[String] = js.undefined
-  var footer: js.UndefOr[AnonAlphaBackgroundcolorBackgroundcolor1Backgroundcolor2Backgroundfit] = js.undefined
+  var footer: js.UndefOr[AnonBackgroundposition] = js.undefined
   /**
     * Sets a set of colors for a complex background gradient (more than 2 colors). To be used with gradient-stops. "#f00 #0f0 #00f" | ..
     * .
@@ -172,9 +172,7 @@ trait AnonAdjustlayout extends js.Object {
     * ent-colors. "0.1 0.5 0.9" | ...
     */
   var `gradient-stops`: js.UndefOr[String] = js.undefined
-  var header: js.UndefOr[
-    AnonAlphaBackgroundcolorBackgroundcolor1Backgroundcolor2BackgroundfitBackgroundimage
-  ] = js.undefined
+  var header: js.UndefOr[AnonBackgroundrepeat] = js.undefined
   /**
     * Sets the object's height. 10 | "20px" | 0.3 | "30%" | ...
     */
@@ -184,9 +182,9 @@ trait AnonAdjustlayout extends js.Object {
     * . true | false | 1 | 0
     */
   var `highlight-plot`: js.UndefOr[Boolean] = js.undefined
-  var icon: js.UndefOr[AnonAlphaLinecolor] = js.undefined
-  var item: js.UndefOr[AnonAlphaAngleBackgroundcolorBackgroundcolor1] = js.undefined
-  var `item-off`: js.UndefOr[AnonAlphaAngleBackgroundcolor] = js.undefined
+  var icon: js.UndefOr[AnonLinecolor] = js.undefined
+  var item: js.UndefOr[AnonBorderleft] = js.undefined
+  var `item-off`: js.UndefOr[AnonBorderbottom] = js.undefined
   /**
     * Sets the layout for the legend items. "horizontal" | "h" | "vertical" | "v" | "row x col" | "x col" | "row x" | "float"
     */
@@ -211,9 +209,7 @@ trait AnonAdjustlayout extends js.Object {
     * Sets the object's top margin. 4 | "6px" | ...
     */
   var `margin-top`: js.UndefOr[js.Any] = js.undefined
-  var marker: js.UndefOr[
-    AnonAlphaBackgroundcolorBackgroundcolor1Backgroundcolor2BackgroundfitBackgroundimageBackgroundposition
-  ] = js.undefined
+  var marker: js.UndefOr[AnonFillangle] = js.undefined
   /**
     * Sets the maximum number of items displayed on the legend. To be used with overflow. 5 | 10 | ...
     */
@@ -238,9 +234,9 @@ trait AnonAdjustlayout extends js.Object {
     * d with max-item. "none" | "hidden" | "page" | "scroll"
     */
   var overflow: js.UndefOr[String] = js.undefined
-  var `page-off`: js.UndefOr[AnonAlphaAngleBackgroundcolorBackgroundcolor1Backgroundcolor2] = js.undefined
-  var `page-on`: js.UndefOr[AnonAlphaAngleBackgroundcolorBackgroundcolor1Backgroundcolor2] = js.undefined
-  var `page-status`: js.UndefOr[AnonAlphaAngleBackgroundcolorBackgroundcolor1Backgroundcolor2Backgroundfit] = js.undefined
+  var `page-off`: js.UndefOr[AnonFilloffsetx] = js.undefined
+  var `page-on`: js.UndefOr[AnonFilloffsetx] = js.undefined
+  var `page-status`: js.UndefOr[AnonBold] = js.undefined
   /**
     * Sets the object's position relative to its container. Similar results can be obtained by setting [margin] and [margin-...] attribu
     * tes. Uses x,y coordinates originating from the top left of the chart.
@@ -288,7 +284,7 @@ trait AnonAdjustlayout extends js.Object {
     * "
     */
   var `toggle-action`: js.UndefOr[String] = js.undefined
-  var tooltip: js.UndefOr[AnonAlphaBackgroundcolorBorderalpha] = js.undefined
+  var tooltip: js.UndefOr[AnonBorderalpha] = js.undefined
   /**
     * Automatically aligns the legend and adjusts "plotarea" margins accordingly. "top" | "middle" | "bottom"
     */
@@ -349,30 +345,30 @@ object AnonAdjustlayout {
     `fill-offset-x`: js.Any = null,
     `fill-offset-y`: js.Any = null,
     `fill-type`: String = null,
-    footer: AnonAlphaBackgroundcolorBackgroundcolor1Backgroundcolor2Backgroundfit = null,
+    footer: AnonBackgroundposition = null,
     `gradient-colors`: String = null,
     `gradient-stops`: String = null,
-    header: AnonAlphaBackgroundcolorBackgroundcolor1Backgroundcolor2BackgroundfitBackgroundimage = null,
+    header: AnonBackgroundrepeat = null,
     height: js.Any = null,
     `highlight-plot`: js.UndefOr[Boolean] = js.undefined,
-    icon: AnonAlphaLinecolor = null,
-    item: AnonAlphaAngleBackgroundcolorBackgroundcolor1 = null,
-    `item-off`: AnonAlphaAngleBackgroundcolor = null,
+    icon: AnonLinecolor = null,
+    item: AnonBorderleft = null,
+    `item-off`: AnonBorderbottom = null,
     layout: String = null,
     margin: js.Any = null,
     `margin-bottom`: js.Any = null,
     `margin-left`: js.Any = null,
     `margin-right`: js.Any = null,
     `margin-top`: js.Any = null,
-    marker: AnonAlphaBackgroundcolorBackgroundcolor1Backgroundcolor2BackgroundfitBackgroundimageBackgroundposition = null,
+    marker: AnonFillangle = null,
     `max-items`: Int | Double = null,
     minimize: js.UndefOr[Boolean] = js.undefined,
     `offset-x`: js.Any = null,
     `offset-y`: js.Any = null,
     overflow: String = null,
-    `page-off`: AnonAlphaAngleBackgroundcolorBackgroundcolor1Backgroundcolor2 = null,
-    `page-on`: AnonAlphaAngleBackgroundcolorBackgroundcolor1Backgroundcolor2 = null,
-    `page-status`: AnonAlphaAngleBackgroundcolorBackgroundcolor1Backgroundcolor2Backgroundfit = null,
+    `page-off`: AnonFilloffsetx = null,
+    `page-on`: AnonFilloffsetx = null,
+    `page-status`: AnonBold = null,
     position: String = null,
     `reverse-series`: js.UndefOr[Boolean] = js.undefined,
     scroll: AnonBar = null,
@@ -384,7 +380,7 @@ object AnonAdjustlayout {
     `shadow-distance`: js.Any = null,
     shared: js.Any = null,
     `toggle-action`: String = null,
-    tooltip: AnonAlphaBackgroundcolorBorderalpha = null,
+    tooltip: AnonBorderalpha = null,
     `vertical-align`: String = null,
     visible: js.UndefOr[Boolean] = js.undefined,
     width: js.Any = null,

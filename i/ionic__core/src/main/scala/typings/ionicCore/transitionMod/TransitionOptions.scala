@@ -14,12 +14,7 @@ trait TransitionOptions extends NavOptions {
   var baseEl: js.Any
   var enteringEl: HTMLElement
   var leavingEl: js.UndefOr[HTMLElement] = js.undefined
-  var progressCallback: js.UndefOr[
-    js.Function1[
-      /* ani */ js.UndefOr[Animation | typings.ionicCore.oldAnimationAnimationInterfaceMod.Animation], 
-      Unit
-    ]
-  ] = js.undefined
+  var progressCallback: js.UndefOr[js.Function1[/* ani */ js.UndefOr[Animation], Unit]] = js.undefined
 }
 
 object TransitionOptions {
@@ -28,7 +23,7 @@ object TransitionOptions {
     baseEl: js.Any,
     enteringEl: HTMLElement,
     animated: js.UndefOr[Boolean] = js.undefined,
-    animationBuilder: (/* Animation */ typings.ionicCore.oldAnimationAnimationInterfaceMod.Animation, /* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => js.Promise[typings.ionicCore.oldAnimationAnimationInterfaceMod.Animation] = null,
+    animationBuilder: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation = null,
     deepWait: js.UndefOr[Boolean] = js.undefined,
     delegate: FrameworkDelegate = null,
     direction: NavDirection = null,
@@ -38,7 +33,7 @@ object TransitionOptions {
     leavingEl: HTMLElement = null,
     mode: Mode = null,
     progressAnimation: js.UndefOr[Boolean] = js.undefined,
-    progressCallback: /* ani */ js.UndefOr[Animation | typings.ionicCore.oldAnimationAnimationInterfaceMod.Animation] => Unit = null,
+    progressCallback: /* ani */ js.UndefOr[Animation] => Unit = null,
     showGoBack: js.UndefOr[Boolean] = js.undefined,
     skipIfBusy: js.UndefOr[Boolean] = js.undefined,
     updateURL: js.UndefOr[Boolean] = js.undefined,
@@ -46,7 +41,7 @@ object TransitionOptions {
   ): TransitionOptions = {
     val __obj = js.Dynamic.literal(baseEl = baseEl.asInstanceOf[js.Any], enteringEl = enteringEl.asInstanceOf[js.Any])
     if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.asInstanceOf[js.Any])
-    if (animationBuilder != null) __obj.updateDynamic("animationBuilder")(js.Any.fromFunction3(animationBuilder))
+    if (animationBuilder != null) __obj.updateDynamic("animationBuilder")(js.Any.fromFunction2(animationBuilder))
     if (!js.isUndefined(deepWait)) __obj.updateDynamic("deepWait")(deepWait.asInstanceOf[js.Any])
     if (delegate != null) __obj.updateDynamic("delegate")(delegate.asInstanceOf[js.Any])
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])

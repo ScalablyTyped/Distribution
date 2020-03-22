@@ -17,14 +17,14 @@ trait DescribeFpgaImageAttributeRequest extends js.Object {
   /**
     * The ID of the AFI.
     */
-  var FpgaImageId: String = js.native
+  var FpgaImageId: typings.awsSdk.ec2Mod.FpgaImageId = js.native
 }
 
 object DescribeFpgaImageAttributeRequest {
   @scala.inline
   def apply(
     Attribute: FpgaImageAttributeName,
-    FpgaImageId: String,
+    FpgaImageId: FpgaImageId,
     DryRun: js.UndefOr[scala.Boolean] = js.undefined
   ): DescribeFpgaImageAttributeRequest = {
     val __obj = js.Dynamic.literal(Attribute = Attribute.asInstanceOf[js.Any], FpgaImageId = FpgaImageId.asInstanceOf[js.Any])

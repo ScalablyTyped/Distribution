@@ -1,11 +1,11 @@
 package typings.echarts.echarts.EChartOption
 
-import typings.echarts.AnonAnimationAnimationDelay
-import typings.echarts.AnonAnimationAnimationDelayAnimationDelayUpdate
-import typings.echarts.AnonAnimationAnimationDelayAnimationDelayUpdateAnimationDuration
-import typings.echarts.AnonBackgroundColorBorderColor
-import typings.echarts.AnonBorderColorBorderColor0
-import typings.echarts.AnonItemStyleAnonBorderColorBorderColor0
+import typings.echarts.AnonAnimationDelay
+import typings.echarts.AnonAnimationDelayUpdate
+import typings.echarts.AnonAnimationDuration
+import typings.echarts.AnonBorderColor0
+import typings.echarts.AnonExtraCssText
+import typings.echarts.AnonItemStyleAnonBorderColor0
 import typings.echarts.echarts.EChartOption.SeriesCandlestick.DataObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -207,7 +207,7 @@ trait SeriesCandlestick_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-candlestick.emphasis
     */
-  var emphasis: js.UndefOr[AnonItemStyleAnonBorderColorBorderColor0] = js.undefined
+  var emphasis: js.UndefOr[AnonItemStyleAnonBorderColor0] = js.undefined
   /**
     * Define what is encoded to for each dimension of `data`.
     * For example:
@@ -269,7 +269,7 @@ trait SeriesCandlestick_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-candlestick.itemStyle
     */
-  var itemStyle: js.UndefOr[AnonBorderColorBorderColor0] = js.undefined
+  var itemStyle: js.UndefOr[AnonBorderColor0] = js.undefined
   /**
     * Whether to enable the optimization of large-scale data.
     * It could be set when large data causes performance problem.
@@ -331,21 +331,21 @@ trait SeriesCandlestick_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-candlestick.markArea
     */
-  var markArea: js.UndefOr[AnonAnimationAnimationDelayAnimationDelayUpdate] = js.undefined
+  var markArea: js.UndefOr[AnonAnimationDelayUpdate] = js.undefined
   /**
     * Use a line in the chart to illustrate.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-candlestick.markLine
     */
-  var markLine: js.UndefOr[AnonAnimationAnimationDelay] = js.undefined
+  var markLine: js.UndefOr[AnonAnimationDelay] = js.undefined
   /**
     * Mark point in a chart.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-candlestick.markPoint
     */
-  var markPoint: js.UndefOr[AnonAnimationAnimationDelayAnimationDelayUpdateAnimationDuration] = js.undefined
+  var markPoint: js.UndefOr[AnonAnimationDuration] = js.undefined
   /**
     * Series name used for displaying in
     * [tooltip](https://echarts.apache.org/en/option.html#tooltip)
@@ -413,7 +413,7 @@ trait SeriesCandlestick_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-candlestick.tooltip
     */
-  var tooltip: js.UndefOr[AnonBackgroundColorBorderColor] = js.undefined
+  var tooltip: js.UndefOr[AnonExtraCssText] = js.undefined
   /**
     * @default
     * "candlestick"
@@ -485,24 +485,24 @@ object SeriesCandlestick_ {
     coordinateSystem: String = null,
     data: js.Array[js.Array[Double | DataObject]] = null,
     dimensions: js.Array[_] = null,
-    emphasis: AnonItemStyleAnonBorderColorBorderColor0 = null,
+    emphasis: AnonItemStyleAnonBorderColor0 = null,
     encode: js.Object = null,
     hoverAnimation: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
-    itemStyle: AnonBorderColorBorderColor0 = null,
+    itemStyle: AnonBorderColor0 = null,
     large: js.UndefOr[Boolean] = js.undefined,
     largeThreshold: Int | Double = null,
     layout: String = null,
     legendHoverLink: js.UndefOr[Boolean] = js.undefined,
-    markArea: AnonAnimationAnimationDelayAnimationDelayUpdate = null,
-    markLine: AnonAnimationAnimationDelay = null,
-    markPoint: AnonAnimationAnimationDelayAnimationDelayUpdateAnimationDuration = null,
+    markArea: AnonAnimationDelayUpdate = null,
+    markLine: AnonAnimationDelay = null,
+    markPoint: AnonAnimationDuration = null,
     name: String = null,
     progressive: Int | Double = null,
     progressiveChunkMode: String = null,
     progressiveThreshold: Int | Double = null,
     silent: js.UndefOr[Boolean] = js.undefined,
-    tooltip: AnonBackgroundColorBorderColor = null,
+    tooltip: AnonExtraCssText = null,
     `type`: String = null,
     xAxisIndex: Int | Double = null,
     yAxisIndex: Int | Double = null,

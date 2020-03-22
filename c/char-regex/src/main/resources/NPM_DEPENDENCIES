@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "char-regex" : "1.0.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "char-regex" : "1.0.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

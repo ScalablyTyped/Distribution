@@ -1,7 +1,6 @@
 package typings.screeps
 
 import org.scalablytyped.runtime.TopLevel
-import typings.screeps.screepsBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,7 +45,7 @@ trait StructureLab
   /**
     * A Store object that contains cargo of this structure.
     */
-  var store: Store[RESOURCE_ENERGY | MineralConstant | MineralCompoundConstant, `false`] = js.native
+  var store: StoreRESOURCEENERGYMinera = js.native
   /**
     * Boosts creep body part using the containing mineral compound. The creep has to be at adjacent square to the lab. Boosting one body part consumes 30 mineral units and 20 energy units.
     * @param creep The target creep.

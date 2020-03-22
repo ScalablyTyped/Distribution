@@ -26,6 +26,11 @@ class HTMLIonIconElementCls () extends HTMLIonIconElement {
   /* CompleteClass */
   override var `lazy`: Boolean = js.native
   /**
+    * The mode determines which platform styles to use.
+    */
+  /* CompleteClass */
+  override var mode: String = js.native
+  /**
     * Returns the first following sibling that is an element, and null otherwise.
     */
   /* CompleteClass */

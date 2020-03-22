@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/angular", "VirtualItem")
 @js.native
 class VirtualItem protected ()
-  extends typings.ionicAngular.distMod.VirtualItem {
+  extends typings.ionicAngular.virtualItemMod.VirtualItem {
   def this(templateRef: TemplateRef[VirtualContext], viewContainer: ViewContainerRef) = this()
 }
 

@@ -1,20 +1,20 @@
 package typings.gapiClientSheets.gapi.client.sheets
 
 import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientSheets.AnonAccesstokenAltCallback
-import typings.gapiClientSheets.AnonAccesstokenAltCallbackDateTimeRenderOption
-import typings.gapiClientSheets.AnonAccesstokenAltCallbackDateTimeRenderOptionFields
-import typings.gapiClientSheets.AnonAccesstokenAltCallbackFieldsIncludeValuesInResponse
-import typings.gapiClientSheets.AnonAccesstokenAltCallbackFieldsIncludeValuesInResponseInsertDataOption
-import typings.gapiClientSheets.AnonAccesstokenAltCallbackFieldsIncludeValuesInResponseKey
-import typings.gapiClientSheets.AnonAccesstokenAltCallbackFieldsIncludeValuesInResponseKeyOauthtoken
-import typings.gapiClientSheets.AnonAccesstokenAltCallbackFieldsKeyOauthtoken
-import typings.gapiClientSheets.AnonAccesstokenAltCallbackFieldsKeyOauthtokenPrettyPrint
-import typings.gapiClientSheets.AnonAccesstokenAltCallbackFieldsKeyOauthtokenPrettyPrintQuotaUser
-import typings.gapiClientSheets.AnonAccesstokenAltCallbackFieldsKeyOauthtokenPrettyPrintQuotaUserRange
-import typings.gapiClientSheets.AnonAccesstokenAltCallbackFieldsKeyOauthtokenPrettyPrintQuotaUserRangeSpreadsheetId
-import typings.gapiClientSheets.AnonAccesstokenAltCallbackFieldsKeyOauthtokenPrettyPrintQuotaUserResource
-import typings.gapiClientSheets.AnonAccesstokenAltCallbackFieldsKeyOauthtokenPrettyPrintQuotaUserResourceSpreadsheetId
+import typings.gapiClientSheets.AnonCallback
+import typings.gapiClientSheets.AnonDateTimeRenderOption
+import typings.gapiClientSheets.AnonIncludeValuesInResponse
+import typings.gapiClientSheets.AnonInsertDataOption
+import typings.gapiClientSheets.AnonMajorDimension
+import typings.gapiClientSheets.AnonOauthtoken
+import typings.gapiClientSheets.AnonPrettyPrint
+import typings.gapiClientSheets.AnonQuotaUser
+import typings.gapiClientSheets.AnonRange
+import typings.gapiClientSheets.AnonResource
+import typings.gapiClientSheets.AnonResponseDateTimeRenderOption
+import typings.gapiClientSheets.AnonResponseValueRenderOption
+import typings.gapiClientSheets.AnonSpreadsheetId
+import typings.gapiClientSheets.AnonUploadType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,16 +37,17 @@ trait ValuesResource extends js.Object {
     * row-wise), it does not influence what cell the data starts being written
     * to.
     */
-  def append(request: AnonAccesstokenAltCallbackFieldsIncludeValuesInResponse): Request_[AppendValuesResponse] = js.native
-  def append(request: AnonAccesstokenAltCallbackFieldsIncludeValuesInResponseInsertDataOption, body: ValueRange): Request_[AppendValuesResponse] = js.native
+  def append(request: AnonIncludeValuesInResponse): Request_[AppendValuesResponse] = js.native
+  def append(request: AnonInsertDataOption, body: ValueRange): Request_[AppendValuesResponse] = js.native
+  def batchClear(request: AnonCallback, body: BatchClearValuesRequest): Request_[BatchClearValuesResponse] = js.native
   /**
     * Clears one or more ranges of values from a spreadsheet.
     * The caller must specify the spreadsheet ID and one or more ranges.
     * Only values are cleared -- all other properties of the cell (such as
     * formatting, data validation, etc..) are kept.
     */
-  def batchClear(request: AnonAccesstokenAltCallbackFieldsKeyOauthtoken): Request_[BatchClearValuesResponse] = js.native
-  def batchClear(request: AnonAccesstokenAltCallback, body: BatchClearValuesRequest): Request_[BatchClearValuesResponse] = js.native
+  def batchClear(request: AnonOauthtoken): Request_[BatchClearValuesResponse] = js.native
+  def batchClearByDataFilter(request: AnonCallback, body: BatchClearValuesByDataFilterRequest): Request_[BatchClearValuesByDataFilterResponse] = js.native
   /**
     * Clears one or more ranges of values from a spreadsheet.
     * The caller must specify the spreadsheet ID and one or more
@@ -54,59 +55,55 @@ trait ValuesResource extends js.Object {
     * filters will be cleared.  Only values are cleared -- all other properties
     * of the cell (such as formatting, data validation, etc..) are kept.
     */
-  def batchClearByDataFilter(request: AnonAccesstokenAltCallbackFieldsKeyOauthtokenPrettyPrint): Request_[BatchClearValuesByDataFilterResponse] = js.native
-  def batchClearByDataFilter(request: AnonAccesstokenAltCallback, body: BatchClearValuesByDataFilterRequest): Request_[BatchClearValuesByDataFilterResponse] = js.native
+  def batchClearByDataFilter(request: AnonPrettyPrint): Request_[BatchClearValuesByDataFilterResponse] = js.native
   /**
     * Returns one or more ranges of values from a spreadsheet.
     * The caller must specify the spreadsheet ID and one or more ranges.
     */
-  def batchGet(request: AnonAccesstokenAltCallbackDateTimeRenderOption): Request_[BatchGetValuesResponse] = js.native
+  def batchGet(request: AnonDateTimeRenderOption): Request_[BatchGetValuesResponse] = js.native
+  def batchGetByDataFilter(request: AnonCallback, body: BatchGetValuesByDataFilterRequest): Request_[BatchGetValuesByDataFilterResponse] = js.native
   /**
     * Returns one or more ranges of values that match the specified data filters.
     * The caller must specify the spreadsheet ID and one or more
     * DataFilters.  Ranges that match any of the data filters in
     * the request will be returned.
     */
-  def batchGetByDataFilter(request: AnonAccesstokenAltCallbackFieldsKeyOauthtokenPrettyPrintQuotaUser): Request_[BatchGetValuesByDataFilterResponse] = js.native
-  def batchGetByDataFilter(request: AnonAccesstokenAltCallback, body: BatchGetValuesByDataFilterRequest): Request_[BatchGetValuesByDataFilterResponse] = js.native
+  def batchGetByDataFilter(request: AnonQuotaUser): Request_[BatchGetValuesByDataFilterResponse] = js.native
+  def batchUpdate(request: AnonCallback, body: BatchUpdateValuesRequest): Request_[BatchUpdateValuesResponse] = js.native
   /**
     * Sets values in one or more ranges of a spreadsheet.
     * The caller must specify the spreadsheet ID,
     * a valueInputOption, and one or more
     * ValueRanges.
     */
-  def batchUpdate(request: AnonAccesstokenAltCallbackFieldsKeyOauthtokenPrettyPrintQuotaUserResource): Request_[BatchUpdateValuesResponse] = js.native
-  def batchUpdate(request: AnonAccesstokenAltCallback, body: BatchUpdateValuesRequest): Request_[BatchUpdateValuesResponse] = js.native
+  def batchUpdate(request: AnonResource): Request_[BatchUpdateValuesResponse] = js.native
+  def batchUpdateByDataFilter(request: AnonCallback, body: BatchUpdateValuesByDataFilterRequest): Request_[BatchUpdateValuesByDataFilterResponse] = js.native
   /**
     * Sets values in one or more ranges of a spreadsheet.
     * The caller must specify the spreadsheet ID,
     * a valueInputOption, and one or more
     * DataFilterValueRanges.
     */
-  def batchUpdateByDataFilter(request: AnonAccesstokenAltCallbackFieldsKeyOauthtokenPrettyPrintQuotaUserResourceSpreadsheetId): Request_[BatchUpdateValuesByDataFilterResponse] = js.native
-  def batchUpdateByDataFilter(request: AnonAccesstokenAltCallback, body: BatchUpdateValuesByDataFilterRequest): Request_[BatchUpdateValuesByDataFilterResponse] = js.native
+  def batchUpdateByDataFilter(request: AnonSpreadsheetId): Request_[BatchUpdateValuesByDataFilterResponse] = js.native
   /**
     * Clears values from a spreadsheet.
     * The caller must specify the spreadsheet ID and range.
     * Only values are cleared -- all other properties of the cell (such as
     * formatting, data validation, etc..) are kept.
     */
-  def clear(request: AnonAccesstokenAltCallbackFieldsKeyOauthtokenPrettyPrintQuotaUserRange): Request_[ClearValuesResponse] = js.native
-  def clear(
-    request: AnonAccesstokenAltCallbackFieldsKeyOauthtokenPrettyPrintQuotaUserRangeSpreadsheetId,
-    body: ClearValuesRequest
-  ): Request_[ClearValuesResponse] = js.native
+  def clear(request: AnonRange): Request_[ClearValuesResponse] = js.native
+  def clear(request: AnonUploadType, body: ClearValuesRequest): Request_[ClearValuesResponse] = js.native
   /**
     * Returns a range of values from a spreadsheet.
     * The caller must specify the spreadsheet ID and a range.
     */
-  def get(request: AnonAccesstokenAltCallbackDateTimeRenderOptionFields): Request_[ValueRange] = js.native
+  def get(request: AnonMajorDimension): Request_[ValueRange] = js.native
   /**
     * Sets values in a range of a spreadsheet.
     * The caller must specify the spreadsheet ID, range, and
     * a valueInputOption.
     */
-  def update(request: AnonAccesstokenAltCallbackFieldsIncludeValuesInResponseKey): Request_[UpdateValuesResponse] = js.native
-  def update(request: AnonAccesstokenAltCallbackFieldsIncludeValuesInResponseKeyOauthtoken, body: ValueRange): Request_[UpdateValuesResponse] = js.native
+  def update(request: AnonResponseDateTimeRenderOption): Request_[UpdateValuesResponse] = js.native
+  def update(request: AnonResponseValueRenderOption, body: ValueRange): Request_[UpdateValuesResponse] = js.native
 }
 

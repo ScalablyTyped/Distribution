@@ -17,6 +17,6 @@ class RawCell_ protected () extends Cell {
     * The model used by the widget.
     */
   @JSName("model")
-  val model_RawCell_ : IRawCellModel = js.native
+  val model_FRawCell_ : IRawCellModel = js.native
 }
 

@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "react-dnd-touch-backend"
-version := "9.5.1-ae061e"
+version := "10.0.2-08e9d1"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "dnd-core" % "9.5.1-c0815a",
-  "org.scalablytyped" %%% "redux" % "4.0.5-d8211d",
-  "org.scalablytyped" %%% "std" % "3.7-1b8369")
+  "org.scalablytyped" %%% "dnd-core" % "10.0.2-b4497d",
+  "org.scalablytyped" %%% "redux" % "4.0.5-c5ba7d",
+  "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

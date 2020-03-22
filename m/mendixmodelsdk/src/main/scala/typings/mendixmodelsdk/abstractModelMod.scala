@@ -5,6 +5,8 @@ import typings.mendixmodelsdk.commonMod.common.ICallback
 import typings.mendixmodelsdk.commonMod.common.IErrorCallback
 import typings.mendixmodelsdk.commonMod.common.IVoidCallback
 import typings.mendixmodelsdk.imodelserverclientMod.IModelServerClient
+import typings.mendixmodelsdk.iworkingcopyeventMod.IBuildResultEvent
+import typings.mendixmodelsdk.iworkingcopyeventMod.IWorkingCopyDataEvent
 import typings.mendixmodelsdk.structuresMod.IStructure
 import typings.mendixmodelsdk.transportInterfacesMod.IAbstractUnitJson
 import typings.mendixmodelsdk.transportInterfacesMod.IDeployJobStatus
@@ -182,6 +184,13 @@ object abstractModelMod extends js.Object {
       callback: js.Function1[/* response */ js.UndefOr[js.Array[String] | js.Any], Unit],
       errorCallback: IErrorCallback
     ): Unit = js.native
+    def getLastEventId(): js.Promise[Double] = js.native
+    /**
+      * Get the event id for the last processed batch of deltas in Model Server after flushing any pending deltas.
+      * If a callback is provided but no error callback is provided, errors will be handled through the default modelstore error handler.
+      */
+    def getLastEventId(callback: ICallback[Double]): Unit = js.native
+    def getLastEventId(callback: ICallback[Double], errorCallback: IErrorCallback): Unit = js.native
     def importModuleMpk(mpkPath: String): js.Promise[Unit] = js.native
     /**
       * Imports the given module MPK.
@@ -204,8 +213,10 @@ object abstractModelMod extends js.Object {
       */
     def loadUnitById[T /* <: IAbstractUnit */](id: String, forceRefresh: Boolean, callback: ICallback[T]): Unit = js.native
     def loadUnitById[T /* <: IAbstractUnit */](id: String, forceRefresh: Boolean, callback: ICallback[T], errorCallback: IErrorCallback): Unit = js.native
-    def onEventProcessed(callback: IVoidCallback): Unit = js.native
+    def onBuildResultEventReceived(callback: js.Function1[/* buildResultEvent */ IBuildResultEvent, Unit]): Unit = js.native
     def onFileChangesReceived(callback: js.Function1[/* files */ js.Array[String], Unit]): Unit = js.native
+    def onModelEventProcessed(callback: IVoidCallback): Unit = js.native
+    def onWorkingCopyDataEventReceived(callback: js.Function1[/* workingCopyDataEvent */ IWorkingCopyDataEvent, Unit]): Unit = js.native
     def putFile(inFilePath: String, filePath: String): js.Promise[Unit] = js.native
     /**
       * Uploads the supplied file to the specified filepath.
@@ -232,8 +243,10 @@ object abstractModelMod extends js.Object {
       * Use the returned job id to poll for this.
       */
     def startAppUpdate(callback: ICallback[IDeployJobStatus], errorCallback: IErrorCallback): Unit = js.native
-    def startReceivingEvents(): Unit = js.native
-    def stopReceivingEvents(): Unit = js.native
+    def startReceivingModelEvents(): Unit = js.native
+    def startReceivingWorkingCopyEvents(): Unit = js.native
+    def stopReceivingModelEvents(): Unit = js.native
+    def stopReceivingWorkingCopyEvents(): Unit = js.native
   }
   
   type ISubResolver = js.Function2[/* parent */ IStructure, /* partName */ String, IStructure]

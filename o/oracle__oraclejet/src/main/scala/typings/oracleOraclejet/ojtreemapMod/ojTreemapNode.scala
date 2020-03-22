@@ -1,6 +1,6 @@
 package typings.oracleOraclejet.ojtreemapMod
 
-import typings.oracleOraclejet.AnonCenterEndIsolate
+import typings.oracleOraclejet.AnonIsolate
 import typings.oracleOraclejet.mod.JetElement
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.mod.JetSetPropertyType
@@ -79,7 +79,6 @@ import typings.oracleOraclejet.oracleOraclejetStrings.largeTriangle
 import typings.oracleOraclejet.oracleOraclejetStrings.load
 import typings.oracleOraclejet.oracleOraclejetStrings.loadeddata
 import typings.oracleOraclejet.oracleOraclejetStrings.loadedmetadata
-import typings.oracleOraclejet.oracleOraclejetStrings.loadend
 import typings.oracleOraclejet.oracleOraclejetStrings.loadstart
 import typings.oracleOraclejet.oracleOraclejetStrings.lostpointercapture
 import typings.oracleOraclejet.oracleOraclejetStrings.mousedown
@@ -179,7 +178,7 @@ trait ojTreemapNode extends JetElement[ojTreemapNodeSettableProperties] {
   var color: js.UndefOr[String] = js.native
   var drilling: js.UndefOr[on | off | inherit] = js.native
   var groupLabelDisplay: js.UndefOr[node | off | header] = js.native
-  var header: js.UndefOr[AnonCenterEndIsolate] = js.native
+  var header: js.UndefOr[AnonIsolate] = js.native
   var label: js.UndefOr[String] = js.native
   var labelDisplay: js.UndefOr[off | node] = js.native
   var labelHalign: js.UndefOr[start | end | center] = js.native
@@ -189,7 +188,7 @@ trait ojTreemapNode extends JetElement[ojTreemapNodeSettableProperties] {
   var onColorChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[String]], _]) | Null = js.native
   var onDrillingChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[on | off | inherit]], _]) | Null = js.native
   var onGroupLabelDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[node | off | header]], _]) | Null = js.native
-  var onHeaderChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[AnonCenterEndIsolate]], _]) | Null = js.native
+  var onHeaderChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[AnonIsolate]], _]) | Null = js.native
   var onLabelChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[String]], _]) | Null = js.native
   var onLabelDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[off | node]], _]) | Null = js.native
   var onLabelHalignChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[start | end | center]], _]) | Null = js.native
@@ -663,20 +662,12 @@ trait ojTreemapNode extends JetElement[ojTreemapNodeSettableProperties] {
   @JSName("addEventListener")
   def addEventListener_headerChanged(
     `type`: headerChanged,
-    listener: js.ThisFunction1[
-      /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[js.UndefOr[AnonCenterEndIsolate]], 
-      _
-    ]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.UndefOr[AnonIsolate]], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_headerChanged(
     `type`: headerChanged,
-    listener: js.ThisFunction1[
-      /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[js.UndefOr[AnonCenterEndIsolate]], 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.UndefOr[AnonIsolate]], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -763,17 +754,6 @@ trait ojTreemapNode extends JetElement[ojTreemapNodeSettableProperties] {
   def addEventListener_loadedmetadata(
     `type`: loadedmetadata,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event_, _],
-    useCapture: Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_loadend(
-    `type`: loadend,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent[EventTarget], _]
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_loadend(
-    `type`: loadend,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent[EventTarget], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -1238,7 +1218,7 @@ trait ojTreemapNode extends JetElement[ojTreemapNodeSettableProperties] {
   @JSName("getProperty")
   def getProperty_groupLabelDisplay(property: groupLabelDisplay): js.UndefOr[node | off | header] = js.native
   @JSName("getProperty")
-  def getProperty_header(property: header): js.UndefOr[AnonCenterEndIsolate] = js.native
+  def getProperty_header(property: header): js.UndefOr[AnonIsolate] = js.native
   @JSName("getProperty")
   def getProperty_label(property: label): js.UndefOr[String] = js.native
   @JSName("getProperty")
@@ -1290,7 +1270,7 @@ trait ojTreemapNode extends JetElement[ojTreemapNodeSettableProperties] {
   @JSName("setProperty")
   def setProperty_color(property: color, value: String): Unit = js.native
   @JSName("setProperty")
-  def setProperty_header(property: header, value: AnonCenterEndIsolate): Unit = js.native
+  def setProperty_header(property: header, value: AnonIsolate): Unit = js.native
   @JSName("setProperty")
   def setProperty_label(property: label, value: String): Unit = js.native
   @JSName("setProperty")

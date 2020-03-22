@@ -1,22 +1,22 @@
 
 # Scala.js typings for pixi_dot_js
 
-Typings are for version 4.8
+Typings are for version 5.2.1
 
 ## Library description:
-The HTML5 Creation Engine: Create beautiful digital content with the fastest, most flexible 2D WebGL renderer.
+PixiJS without the CanvasRenderer fallback, modern browsers only
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | pixi.js |
 | Keywords           | - |
-| # releases         | 27 |
-| # dependents       | 216 |
-| # downloads        | 645322 |
+| # releases         | 33 |
+| # dependents       | 285 |
+| # downloads        | 1177130 |
 | # stars            | 30 |
 
 ## Links
-- [Homepage](http://goodboydigital.com/)
+- [Homepage](http://www.pixijs.com/)
 - [Bugs](https://github.com/pixijs/pixi.js/issues)
 - [Repository](https://github.com/pixijs/pixi.js)
 - [Npm](https://www.npmjs.com/package/pixi.js)
@@ -24,7 +24,7 @@ The HTML5 Creation Engine: Create beautiful digital content with the fastest, mo
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

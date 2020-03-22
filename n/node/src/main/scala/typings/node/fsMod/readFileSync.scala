@@ -1,8 +1,8 @@
 package typings.node.fsMod
 
 import typings.node.AnonEncodingFlag
-import typings.node.AnonEncodingFlagNull
-import typings.node.AnonEncodingFlagString
+import typings.node.AnonFlag
+import typings.node.AnonFlagString
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,9 +13,9 @@ import scala.scalajs.js.annotation._
 object readFileSync extends js.Object {
   def apply(path: Double): String | Buffer = js.native
   def apply(path: Double, options: String): String = js.native
-  def apply(path: Double, options: AnonEncodingFlag): Buffer = js.native
-  def apply(path: Double, options: AnonEncodingFlagNull): String | Buffer = js.native
-  def apply(path: Double, options: AnonEncodingFlagString): String = js.native
+  def apply(path: Double, options: AnonEncodingFlag): String = js.native
+  def apply(path: Double, options: AnonFlag): Buffer = js.native
+  def apply(path: Double, options: AnonFlagString): String | Buffer = js.native
   /**
     * Synchronously reads the entire contents of a file.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
@@ -26,8 +26,6 @@ object readFileSync extends js.Object {
     */
   def apply(path: PathLike): String | Buffer = js.native
   def apply(path: PathLike, options: String): String = js.native
-  def apply(path: PathLike, options: AnonEncodingFlag): Buffer = js.native
-  def apply(path: PathLike, options: AnonEncodingFlagNull): String | Buffer = js.native
   /**
     * Synchronously reads the entire contents of a file.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
@@ -36,6 +34,8 @@ object readFileSync extends js.Object {
     * @param options Either the encoding for the result, or an object that contains the encoding and an optional flag.
     * If a flag is not provided, it defaults to `'r'`.
     */
-  def apply(path: PathLike, options: AnonEncodingFlagString): String = js.native
+  def apply(path: PathLike, options: AnonEncodingFlag): String = js.native
+  def apply(path: PathLike, options: AnonFlag): Buffer = js.native
+  def apply(path: PathLike, options: AnonFlagString): String | Buffer = js.native
 }
 

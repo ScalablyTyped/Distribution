@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "common-path-prefix" : "3.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "common-path-prefix" : "3.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

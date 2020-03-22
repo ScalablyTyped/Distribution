@@ -1,13 +1,13 @@
 package typings.vue2Datepicker.mod.Datepicker
 
-import typings.vue2Datepicker.Anon
+import typings.vue2Datepicker.AnonFirstDayOfWeek
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Lang extends js.Object {
   var days: js.UndefOr[js.Array[String]] = js.undefined
-  var formatLocale: Anon
+  var formatLocale: AnonFirstDayOfWeek
   var monthBeforeYear: Boolean
   var monthFormat: String
   var months: js.UndefOr[js.Array[String]] = js.undefined
@@ -17,7 +17,7 @@ trait Lang extends js.Object {
 object Lang {
   @scala.inline
   def apply(
-    formatLocale: Anon,
+    formatLocale: AnonFirstDayOfWeek,
     monthBeforeYear: Boolean,
     monthFormat: String,
     yearFormat: String,

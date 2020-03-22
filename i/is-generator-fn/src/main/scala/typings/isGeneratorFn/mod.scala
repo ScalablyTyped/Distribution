@@ -11,7 +11,7 @@ object mod extends js.Object {
   // declare function isGeneratorFn(value: unknown): value is GeneratorFunction;
   // export = isGeneratorFn;
   @JSName("default")
-  var default_Original: AnonDefault = js.native
+  var default_Original: AnonCall = js.native
   /**
   	Check if something is a generator function.
   	@example

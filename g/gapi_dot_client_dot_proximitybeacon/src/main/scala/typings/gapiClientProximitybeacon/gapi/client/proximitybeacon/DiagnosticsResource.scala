@@ -1,7 +1,7 @@
 package typings.gapiClientProximitybeacon.gapi.client.proximitybeacon
 
 import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientProximitybeacon.AnonAccesstokenAlertFilter
+import typings.gapiClientProximitybeacon.AnonAlertFilter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,12 +16,12 @@ trait DiagnosticsResource extends js.Object {
     * from a signed-in user with &#42;&#42;viewer&#42;&#42;, &#42;&#42;Is owner&#42;&#42; or &#42;&#42;Can edit&#42;&#42;
     * permissions in the Google Developers Console project.
     */
-  def list(request: AnonAccesstokenAlertFilter): Request_[ListDiagnosticsResponse]
+  def list(request: AnonAlertFilter): Request_[ListDiagnosticsResponse]
 }
 
 object DiagnosticsResource {
   @scala.inline
-  def apply(list: AnonAccesstokenAlertFilter => Request_[ListDiagnosticsResponse]): DiagnosticsResource = {
+  def apply(list: AnonAlertFilter => Request_[ListDiagnosticsResponse]): DiagnosticsResource = {
     val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[DiagnosticsResource]

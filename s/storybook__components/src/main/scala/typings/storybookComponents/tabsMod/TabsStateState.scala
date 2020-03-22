@@ -4,8 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TabsStateState extends js.Object {
-  var selected: String
+  var selected: String = js.native
 }
 
 object TabsStateState {

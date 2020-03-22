@@ -23,7 +23,6 @@ import typings.react.mod.PropsWithoutRef
 import typings.react.mod.RefAttributes
 import typings.std.DOMTokenList
 import typings.std.Document_
-import typings.std.Element
 import typings.std.Event_
 import typings.std.HTMLElement
 import typings.std.Omit
@@ -51,8 +50,12 @@ object utilsMod extends js.Object {
   def isPlatform(
     platform: ios | ipad | iphone | android | phablet | tablet | cordova | capacitor | electron | pwa | mobile | mobileweb | desktop | hybrid
   ): Boolean = js.native
-  def syncEvent(node: Element with AnonE, eventName: String): Unit = js.native
-  def syncEvent(node: Element with AnonE, eventName: String, newEventHandler: js.Function1[/* e */ Event_, _]): Unit = js.native
+  def syncEvent(node: ElementeventskeystringeEv, eventName: String): Unit = js.native
+  def syncEvent(
+    node: ElementeventskeystringeEv,
+    eventName: String,
+    newEventHandler: js.Function1[/* e */ Event_, _]
+  ): Unit = js.native
   type IonicReactExternalProps[PropType, ElementType] = PropType with (Omit[HTMLAttributes[ElementType], style]) with IonicReactProps
 }
 

@@ -1,9 +1,9 @@
 package typings.jupyterlabDocregistry.registryMod.DocumentRegistry
 
 import typings.jupyterlabDocregistry.registryMod.IDocumentWidget
-import typings.phosphorDisposable.mod.IDisposable
-import typings.phosphorSignaling.mod.ISignal
-import typings.phosphorWidgets.mod.Widget
+import typings.luminoDisposable.mod.IDisposable
+import typings.luminoSignaling.mod.ISignal
+import typings.luminoWidgets.mod.Widget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

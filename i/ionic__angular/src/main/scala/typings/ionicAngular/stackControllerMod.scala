@@ -13,7 +13,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ionic/angular/dist/directives/navigation/stack-controller", JSImport.Namespace)
+@JSImport("@ionic/angular/directives/navigation/stack-controller", JSImport.Namespace)
 @js.native
 object stackControllerMod extends js.Object {
   @js.native
@@ -57,8 +57,13 @@ object stackControllerMod extends js.Object {
     def endBackTransition(shouldComplete: Boolean): Unit = js.native
     def getActiveStackId(): js.UndefOr[String] = js.native
     def getExistingView(activatedRoute: ActivatedRoute): js.UndefOr[RouteView] = js.native
-    def getLastUrl(): js.UndefOr[RouteView] = js.native
-    def getLastUrl(stackId: String): js.UndefOr[RouteView] = js.native
+    def getLastUrl(): RouteView = js.native
+    def getLastUrl(stackId: String): RouteView = js.native
+    /**
+      * @internal
+      */
+    def getRootUrl(): RouteView = js.native
+    def getRootUrl(stackId: String): RouteView = js.native
     def pop(deep: Double): js.Promise[Boolean] = js.native
     def pop(deep: Double, stackId: String): js.Promise[Boolean] = js.native
     def setActive(enteringView: RouteView): js.Promise[StackEvent] = js.native

@@ -22,14 +22,6 @@ class JupyterLab_ () extends JupyterFrontEnd[ILabShell] {
   var _info: js.Any = js.native
   var _paths: js.Any = js.native
   /**
-    * The JupyterLab application information dictionary.
-    */
-  val info: IInfo = js.native
-  /**
-    * The JupyterLab application paths dictionary.
-    */
-  val paths: IPaths = js.native
-  /**
     * A list of all errors encountered when registering plugins.
     */
   val registerPluginErrors: js.Array[Error] = js.native
@@ -37,6 +29,14 @@ class JupyterLab_ () extends JupyterFrontEnd[ILabShell] {
     * The application busy and dirty status signals and flags.
     */
   val status: LabStatus = js.native
+  /**
+    * The JupyterLab application information dictionary.
+    */
+  def info(): IInfo = js.native
+  /**
+    * The JupyterLab application paths dictionary.
+    */
+  def paths(): IPaths = js.native
   /**
     * Register plugins from a plugin module.
     *

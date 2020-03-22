@@ -19,7 +19,7 @@ trait RunInstancesRequest extends js.Object {
     */
   var CapacityReservationSpecification: js.UndefOr[typings.awsSdk.ec2Mod.CapacityReservationSpecification] = js.native
   /**
-    * Unique, case-sensitive identifier you provide to ensure the idempotency of the request. For more information, see Ensuring Idempotency. Constraints: Maximum 64 ASCII characters
+    * Unique, case-sensitive identifier you provide to ensure the idempotency of the request. If you do not specify a client token, a randomly generated token is used for the request to ensure idempotency. For more information, see Ensuring Idempotency. Constraints: Maximum 64 ASCII characters
     */
   var ClientToken: js.UndefOr[String] = js.native
   /**
@@ -89,7 +89,7 @@ trait RunInstancesRequest extends js.Object {
   /**
     * The name of the key pair. You can create a key pair using CreateKeyPair or ImportKeyPair.  If you do not specify a key pair, you can't connect to the instance unless you choose an AMI that is configured to allow users another way to log in. 
     */
-  var KeyName: js.UndefOr[String] = js.native
+  var KeyName: js.UndefOr[KeyPairName] = js.native
   /**
     * The launch template to use to launch the instances. Any parameters that you specify in RunInstances override the same parameters in the launch template. You can specify either the name or ID of a launch template, but not both.
     */
@@ -177,7 +177,7 @@ object RunInstancesRequest {
     Ipv6AddressCount: Int | scala.Double = null,
     Ipv6Addresses: InstanceIpv6AddressList = null,
     KernelId: String = null,
-    KeyName: String = null,
+    KeyName: KeyPairName = null,
     LaunchTemplate: LaunchTemplateSpecification = null,
     LicenseSpecifications: LicenseSpecificationListRequest = null,
     MetadataOptions: InstanceMetadataOptionsRequest = null,

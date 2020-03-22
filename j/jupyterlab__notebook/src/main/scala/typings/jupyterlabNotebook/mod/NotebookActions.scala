@@ -1,12 +1,12 @@
 package typings.jupyterlabNotebook.mod
 
-import typings.jupyterlabApputils.clientsessionMod.IClientSession
-import typings.jupyterlabCoreutils.nbformatMod.nbformat.CellType
+import typings.jupyterlabApputils.sessioncontextMod.ISessionContext
+import typings.jupyterlabNbformat.mod.CellType
 import typings.jupyterlabNotebook.AnonCell
 import typings.jupyterlabNotebook.jupyterlabNotebookStrings.above
 import typings.jupyterlabNotebook.jupyterlabNotebookStrings.below
 import typings.jupyterlabNotebook.jupyterlabNotebookStrings.replace
-import typings.phosphorSignaling.mod.ISignal
+import typings.luminoSignaling.mod.ISignal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,10 +29,6 @@ class NotebookActions protected ()
 @JSImport("@jupyterlab/notebook", "NotebookActions")
 @js.native
 object NotebookActions extends js.Object {
-  /**
-    * A signal that emits whenever a cell is run.
-    */
-  val executed: ISignal[_, AnonCell] = js.native
   /**
     * Change the selected cell type(s).
     *
@@ -110,6 +106,10 @@ object NotebookActions extends js.Object {
     * @param notebook - The target notebook widget.
     */
   def enableOutputScrolling(notebook: typings.jupyterlabNotebook.widgetMod.Notebook): Unit = js.native
+  /**
+    * A signal that emits whenever a cell is run.
+    */
+  def executed(): ISignal[_, AnonCell] = js.native
   /**
     * Extend the selection to the cell above.
     *
@@ -240,13 +240,13 @@ object NotebookActions extends js.Object {
     */
   def redo(notebook: typings.jupyterlabNotebook.widgetMod.Notebook): Unit = js.native
   def renderAllMarkdown(notebook: typings.jupyterlabNotebook.widgetMod.Notebook): js.Promise[Boolean] = js.native
-  def renderAllMarkdown(notebook: typings.jupyterlabNotebook.widgetMod.Notebook, session: IClientSession): js.Promise[Boolean] = js.native
+  def renderAllMarkdown(notebook: typings.jupyterlabNotebook.widgetMod.Notebook, sessionContext: ISessionContext): js.Promise[Boolean] = js.native
   /**
     * Run the selected cell(s).
     *
     * @param notebook - The target notebook widget.
     *
-    * @param session - The optional client session object.
+    * @param sessionContext - The optional client session object.
     *
     * #### Notes
     * The last selected cell will be activated, but not scrolled into view.
@@ -255,13 +255,13 @@ object NotebookActions extends js.Object {
     * All markdown cells will be rendered.
     */
   def run(notebook: typings.jupyterlabNotebook.widgetMod.Notebook): js.Promise[Boolean] = js.native
-  def run(notebook: typings.jupyterlabNotebook.widgetMod.Notebook, session: IClientSession): js.Promise[Boolean] = js.native
+  def run(notebook: typings.jupyterlabNotebook.widgetMod.Notebook, sessionContext: ISessionContext): js.Promise[Boolean] = js.native
   /**
     * Run all of the cells in the notebook.
     *
     * @param notebook - The target notebook widget.
     *
-    * @param session - The optional client session object.
+    * @param sessionContext - The optional client session object.
     *
     * #### Notes
     * The existing selection will be cleared.
@@ -270,13 +270,13 @@ object NotebookActions extends js.Object {
     * The last cell in the notebook will be activated and scrolled into view.
     */
   def runAll(notebook: typings.jupyterlabNotebook.widgetMod.Notebook): js.Promise[Boolean] = js.native
-  def runAll(notebook: typings.jupyterlabNotebook.widgetMod.Notebook, session: IClientSession): js.Promise[Boolean] = js.native
+  def runAll(notebook: typings.jupyterlabNotebook.widgetMod.Notebook, sessionContext: ISessionContext): js.Promise[Boolean] = js.native
   /**
     * Run all of the cells before the currently active cell (exclusive).
     *
     * @param notebook - The target notebook widget.
     *
-    * @param session - The optional client session object.
+    * @param sessionContext - The optional client session object.
     *
     * #### Notes
     * The existing selection will be cleared.
@@ -285,13 +285,13 @@ object NotebookActions extends js.Object {
     * The currently active cell will remain selected.
     */
   def runAllAbove(notebook: typings.jupyterlabNotebook.widgetMod.Notebook): js.Promise[Boolean] = js.native
-  def runAllAbove(notebook: typings.jupyterlabNotebook.widgetMod.Notebook, session: IClientSession): js.Promise[Boolean] = js.native
+  def runAllAbove(notebook: typings.jupyterlabNotebook.widgetMod.Notebook, sessionContext: ISessionContext): js.Promise[Boolean] = js.native
   /**
     * Run all of the cells after the currently active cell (inclusive).
     *
     * @param notebook - The target notebook widget.
     *
-    * @param session - The optional client session object.
+    * @param sessionContext - The optional client session object.
     *
     * #### Notes
     * The existing selection will be cleared.
@@ -300,13 +300,13 @@ object NotebookActions extends js.Object {
     * The last cell in the notebook will be activated and scrolled into view.
     */
   def runAllBelow(notebook: typings.jupyterlabNotebook.widgetMod.Notebook): js.Promise[Boolean] = js.native
-  def runAllBelow(notebook: typings.jupyterlabNotebook.widgetMod.Notebook, session: IClientSession): js.Promise[Boolean] = js.native
+  def runAllBelow(notebook: typings.jupyterlabNotebook.widgetMod.Notebook, sessionContext: ISessionContext): js.Promise[Boolean] = js.native
   /**
     * Run the selected cell(s) and advance to the next cell.
     *
     * @param notebook - The target notebook widget.
     *
-    * @param session - The optional client session object.
+    * @param sessionContext - The optional client session object.
     *
     * #### Notes
     * The existing selection will be cleared.
@@ -317,13 +317,13 @@ object NotebookActions extends js.Object {
     * will be created in `'edit'` mode.  The new cell creation can be undone.
     */
   def runAndAdvance(notebook: typings.jupyterlabNotebook.widgetMod.Notebook): js.Promise[Boolean] = js.native
-  def runAndAdvance(notebook: typings.jupyterlabNotebook.widgetMod.Notebook, session: IClientSession): js.Promise[Boolean] = js.native
+  def runAndAdvance(notebook: typings.jupyterlabNotebook.widgetMod.Notebook, sessionContext: ISessionContext): js.Promise[Boolean] = js.native
   /**
     * Run the selected cell(s) and insert a new code cell.
     *
     * @param notebook - The target notebook widget.
     *
-    * @param session - The optional client session object.
+    * @param sessionContext - The optional client session object.
     *
     * #### Notes
     * An execution error will prevent the remaining code cells from executing.
@@ -334,7 +334,7 @@ object NotebookActions extends js.Object {
     * The new cell will be scrolled into view.
     */
   def runAndInsert(notebook: typings.jupyterlabNotebook.widgetMod.Notebook): js.Promise[Boolean] = js.native
-  def runAndInsert(notebook: typings.jupyterlabNotebook.widgetMod.Notebook, session: IClientSession): js.Promise[Boolean] = js.native
+  def runAndInsert(notebook: typings.jupyterlabNotebook.widgetMod.Notebook, sessionContext: ISessionContext): js.Promise[Boolean] = js.native
   /**
     * Select the above the active cell.
     *
@@ -365,6 +365,15 @@ object NotebookActions extends js.Object {
     * The existing selection will be cleared.
     */
   def selectBelow(notebook: typings.jupyterlabNotebook.widgetMod.Notebook): Unit = js.native
+  /**
+    * Go to the last cell that is run or current if it is running.
+    *
+    * Note: This requires execution timing to be toggled on or this will have
+    * no effect.
+    *
+    * @param notebook - The target notebook widget.
+    */
+  def selectLastRunCell(notebook: typings.jupyterlabNotebook.widgetMod.Notebook): Unit = js.native
   /**
     * Set the markdown header level.
     *
@@ -429,12 +438,6 @@ object NotebookActions extends js.Object {
     * The `mode` of the widget will be preserved.
     */
   def toggleAllLineNumbers(notebook: typings.jupyterlabNotebook.widgetMod.Notebook): Unit = js.native
-  /**
-    * Toggle whether to record cell timing execution.
-    *
-    * @param notebook - The target notebook widget.
-    */
-  def toggleRecordTiming(notebook: typings.jupyterlabNotebook.widgetMod.Notebook): Unit = js.native
   /**
     * Trust the notebook after prompting the user.
     *

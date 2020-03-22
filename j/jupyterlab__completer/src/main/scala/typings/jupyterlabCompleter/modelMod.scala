@@ -1,9 +1,11 @@
 package typings.jupyterlabCompleter
 
+import typings.jupyterlabCompleter.widgetMod.Completer.ICursorSpan
 import typings.jupyterlabCompleter.widgetMod.Completer.IModel
+import typings.jupyterlabCompleter.widgetMod.Completer.ITextState
 import typings.jupyterlabCompleter.widgetMod.Completer.TypeMap
-import typings.phosphorAlgorithm.iterMod.IterableOrArrayLike
-import typings.phosphorSignaling.mod.ISignal
+import typings.luminoAlgorithm.iterMod.IterableOrArrayLike
+import typings.luminoSignaling.mod.ISignal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,11 +41,24 @@ object modelMod extends js.Object {
       */
     /* CompleteClass */
     override val isDisposed: Boolean = js.native
+    @JSName("current")
+    def current_MCompleterModel(): js.Any = js.native
+    @JSName("current")
+    def current_MCompleterModel(newValue: ITextState): js.Any = js.native
     /**
-      * A signal emitted when state of the completer menu changes.
+      * The current text change details.
       */
-    @JSName("stateChanged")
-    val stateChanged_CompleterModel: ISignal[this.type, Unit] = js.native
+    @JSName("current")
+    def current_Union(): ITextState | Null = js.native
+    @JSName("cursor")
+    def cursor_MCompleterModel(): js.Any = js.native
+    @JSName("cursor")
+    def cursor_MCompleterModel(newValue: ICursorSpan): js.Any = js.native
+    /**
+      * The cursor details that the API has used to return matching options.
+      */
+    @JSName("cursor")
+    def cursor_Union(): ICursorSpan | Null = js.native
     /**
       * Dispose of the resources held by the object.
       *
@@ -57,7 +72,40 @@ object modelMod extends js.Object {
       */
     /* CompleteClass */
     override def dispose(): Unit = js.native
+    /**
+      * Get whether the model is disposed.
+      */
+    @JSName("isDisposed")
+    def isDisposed_MCompleterModel(): Boolean = js.native
+    @JSName("original")
+    def original_MCompleterModel(): js.Any = js.native
+    @JSName("original")
+    def original_MCompleterModel(newValue: ITextState): js.Any = js.native
+    /**
+      * The original completion request details.
+      */
+    @JSName("original")
+    def original_Union(): ITextState | Null = js.native
+    /**
+      * The query against which items are filtered.
+      */
+    @JSName("query")
+    def query_MCompleterModel(): String = js.native
+    @JSName("query")
+    def query_MCompleterModel(newValue: String): js.Any = js.native
     def setOptions(newValue: IterableOrArrayLike[String], typeMap: TypeMap): Unit = js.native
+    /**
+      * A signal emitted when state of the completer menu changes.
+      */
+    @JSName("stateChanged")
+    def stateChanged_MCompleterModel(): ISignal[this.type, Unit] = js.native
+    /**
+      * A flag that is true when the model value was modified by a subset match.
+      */
+    @JSName("subsetMatch")
+    def subsetMatch_MCompleterModel(): Boolean = js.native
+    @JSName("subsetMatch")
+    def subsetMatch_MCompleterModel(newValue: Boolean): js.Any = js.native
   }
   
 }

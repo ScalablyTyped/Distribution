@@ -101,6 +101,14 @@ package object fsxMod {
   type IpAddress = java.lang.String
   type KmsKeyId = java.lang.String
   type LastUpdatedTime = typings.std.Date
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.SCRATCH_1
+    - typings.awsSdk.awsSdkStrings.SCRATCH_2
+    - typings.awsSdk.awsSdkStrings.PERSISTENT_1
+    - java.lang.String
+  */
+  type LustreDeploymentType = typings.awsSdk.fsxMod._LustreDeploymentType | java.lang.String
+  type LustreFileSystemMountName = java.lang.String
   type MaxResults = scala.Double
   type Megabytes = scala.Double
   type MegabytesPerSecond = scala.Double
@@ -108,6 +116,7 @@ package object fsxMod {
   type NetworkInterfaceIds = js.Array[typings.awsSdk.fsxMod.NetworkInterfaceId]
   type NextToken = java.lang.String
   type OrganizationalUnitDistinguishedName = java.lang.String
+  type PerUnitStorageThroughput = scala.Double
   type ProgressPercent = scala.Double
   type ReportFormat = typings.awsSdk.awsSdkStrings.REPORT_CSV_20191124 | java.lang.String
   type ReportScope = typings.awsSdk.awsSdkStrings.FAILED_FILES_ONLY | java.lang.String

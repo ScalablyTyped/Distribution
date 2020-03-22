@@ -7,9 +7,6 @@ import scala.scalajs.js.annotation._
 
 object youtubePlayerStrings {
   @js.native
-  sealed trait Options extends js.Object
-  
-  @js.native
   sealed trait apiChange extends EventType
   
   @js.native
@@ -45,8 +42,6 @@ object youtubePlayerStrings {
   @js.native
   sealed trait white extends js.Object
   
-  @scala.inline
-  def Options: Options = "Options".asInstanceOf[Options]
   @scala.inline
   def apiChange: apiChange = "apiChange".asInstanceOf[apiChange]
   @scala.inline

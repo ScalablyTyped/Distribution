@@ -2,7 +2,7 @@ package typings.jupyterlabNotebook.mod
 
 import typings.jupyterlabDocregistry.defaultMod.DocumentWidget.IOptions
 import typings.jupyterlabNotebook.modelMod.INotebookModel
-import typings.phosphorCoreutils.mod.Token
+import typings.luminoCoreutils.mod.Token
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

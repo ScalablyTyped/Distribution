@@ -31,7 +31,7 @@ trait NightwatchAPI
   var launchUrl: String = js.native
   var launch_url: String = js.native
   var options: NightwatchTestOptions = js.native
-  var page: (StringDictionary[js.Function0[EnhancedPageObject[_, _, _]]]) with NightwatchCustomPageObjects = js.native
+  var page: StringDictionary[js.Function0[EnhancedPageObject[_, _, _]]] = js.native
   /**
     * SessionId of the session used by the Nightwatch api.
     */

@@ -1,12 +1,12 @@
 package typings.ionic.definitionsMod
 
-import typings.std.Record
+import typings.ionic.RecordHookNamestringArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IProjectConfig extends ProjectFile {
-  val hooks: js.UndefOr[Record[HookName, js.UndefOr[String | js.Array[String]]]] = js.undefined
+  val hooks: js.UndefOr[RecordHookNamestringArray] = js.undefined
   var id: js.UndefOr[String] = js.undefined
   val integrations: ProjectIntegrations
   var name: String
@@ -19,7 +19,7 @@ object IProjectConfig {
   def apply(
     integrations: ProjectIntegrations,
     name: String,
-    hooks: Record[HookName, js.UndefOr[String | js.Array[String]]] = null,
+    hooks: RecordHookNamestringArray = null,
     id: String = null,
     root: String = null,
     `type`: ProjectType = null

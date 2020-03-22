@@ -8,21 +8,21 @@ trait AnonDay extends js.Object {
   var day: AnonDisplayName
   var `day-narrow`: AnonDisplayName
   var `day-short`: AnonDisplayName
-  var hour: AnonDisplayNameRelative
-  var `hour-narrow`: AnonDisplayNameRelative
-  var `hour-short`: AnonDisplayNameRelative
-  var minute: AnonDisplayNameRelative
-  var `minute-narrow`: AnonDisplayNameRelative
-  var `minute-short`: AnonDisplayNameRelative
+  var hour: AnonRelative
+  var `hour-narrow`: AnonRelative
+  var `hour-short`: AnonRelative
+  var minute: AnonRelative
+  var `minute-narrow`: AnonRelative
+  var `minute-short`: AnonRelative
   var month: AnonDisplayName
   var `month-narrow`: AnonDisplayName
   var `month-short`: AnonDisplayName
   var quarter: AnonDisplayName
   var `quarter-narrow`: AnonDisplayName
   var `quarter-short`: AnonDisplayName
-  var second: AnonDisplayNameRelative
-  var `second-narrow`: AnonDisplayNameRelative
-  var `second-short`: AnonDisplayNameRelative
+  var second: AnonRelative
+  var `second-narrow`: AnonRelative
+  var `second-short`: AnonRelative
   var week: AnonDisplayName
   var `week-narrow`: AnonDisplayName
   var `week-short`: AnonDisplayName
@@ -37,21 +37,21 @@ object AnonDay {
     day: AnonDisplayName,
     `day-narrow`: AnonDisplayName,
     `day-short`: AnonDisplayName,
-    hour: AnonDisplayNameRelative,
-    `hour-narrow`: AnonDisplayNameRelative,
-    `hour-short`: AnonDisplayNameRelative,
-    minute: AnonDisplayNameRelative,
-    `minute-narrow`: AnonDisplayNameRelative,
-    `minute-short`: AnonDisplayNameRelative,
+    hour: AnonRelative,
+    `hour-narrow`: AnonRelative,
+    `hour-short`: AnonRelative,
+    minute: AnonRelative,
+    `minute-narrow`: AnonRelative,
+    `minute-short`: AnonRelative,
     month: AnonDisplayName,
     `month-narrow`: AnonDisplayName,
     `month-short`: AnonDisplayName,
     quarter: AnonDisplayName,
     `quarter-narrow`: AnonDisplayName,
     `quarter-short`: AnonDisplayName,
-    second: AnonDisplayNameRelative,
-    `second-narrow`: AnonDisplayNameRelative,
-    `second-short`: AnonDisplayNameRelative,
+    second: AnonRelative,
+    `second-narrow`: AnonRelative,
+    `second-short`: AnonRelative,
     week: AnonDisplayName,
     `week-narrow`: AnonDisplayName,
     `week-short`: AnonDisplayName,

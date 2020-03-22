@@ -1,7 +1,7 @@
 package typings.primereact.pickListMod
 
-import typings.primereact.AnonEventSource
-import typings.primereact.AnonOriginalEventValue
+import typings.primereact.AnonSource
+import typings.primereact.AnonValue
 import typings.react.mod._Global_.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,13 +12,13 @@ trait PickListProps extends js.Object {
   var id: js.UndefOr[String] = js.undefined
   var itemTemplate: js.UndefOr[js.Function1[/* item */ js.Any, js.UndefOr[Element]]] = js.undefined
   var metaKeySelection: js.UndefOr[Boolean] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* e */ AnonEventSource, Unit]] = js.undefined
-  var onMoveAllToSource: js.UndefOr[js.Function1[/* e */ AnonOriginalEventValue, Unit]] = js.undefined
-  var onMoveAllToTarget: js.UndefOr[js.Function1[/* e */ AnonOriginalEventValue, Unit]] = js.undefined
-  var onMoveToSource: js.UndefOr[js.Function1[/* e */ AnonOriginalEventValue, Unit]] = js.undefined
-  var onMoveToTarget: js.UndefOr[js.Function1[/* e */ AnonOriginalEventValue, Unit]] = js.undefined
-  var onSourceSelect: js.UndefOr[js.Function1[/* e */ AnonOriginalEventValue, Unit]] = js.undefined
-  var onTargetSelect: js.UndefOr[js.Function1[/* e */ AnonOriginalEventValue, Unit]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* e */ AnonSource, Unit]] = js.undefined
+  var onMoveAllToSource: js.UndefOr[js.Function1[/* e */ AnonValue, Unit]] = js.undefined
+  var onMoveAllToTarget: js.UndefOr[js.Function1[/* e */ AnonValue, Unit]] = js.undefined
+  var onMoveToSource: js.UndefOr[js.Function1[/* e */ AnonValue, Unit]] = js.undefined
+  var onMoveToTarget: js.UndefOr[js.Function1[/* e */ AnonValue, Unit]] = js.undefined
+  var onSourceSelect: js.UndefOr[js.Function1[/* e */ AnonValue, Unit]] = js.undefined
+  var onTargetSelect: js.UndefOr[js.Function1[/* e */ AnonValue, Unit]] = js.undefined
   var responsive: js.UndefOr[Boolean] = js.undefined
   var showSourceControls: js.UndefOr[Boolean] = js.undefined
   var showTargetControls: js.UndefOr[Boolean] = js.undefined
@@ -39,13 +39,13 @@ object PickListProps {
     id: String = null,
     itemTemplate: /* item */ js.Any => js.UndefOr[Element] = null,
     metaKeySelection: js.UndefOr[Boolean] = js.undefined,
-    onChange: /* e */ AnonEventSource => Unit = null,
-    onMoveAllToSource: /* e */ AnonOriginalEventValue => Unit = null,
-    onMoveAllToTarget: /* e */ AnonOriginalEventValue => Unit = null,
-    onMoveToSource: /* e */ AnonOriginalEventValue => Unit = null,
-    onMoveToTarget: /* e */ AnonOriginalEventValue => Unit = null,
-    onSourceSelect: /* e */ AnonOriginalEventValue => Unit = null,
-    onTargetSelect: /* e */ AnonOriginalEventValue => Unit = null,
+    onChange: /* e */ AnonSource => Unit = null,
+    onMoveAllToSource: /* e */ AnonValue => Unit = null,
+    onMoveAllToTarget: /* e */ AnonValue => Unit = null,
+    onMoveToSource: /* e */ AnonValue => Unit = null,
+    onMoveToTarget: /* e */ AnonValue => Unit = null,
+    onSourceSelect: /* e */ AnonValue => Unit = null,
+    onTargetSelect: /* e */ AnonValue => Unit = null,
     responsive: js.UndefOr[Boolean] = js.undefined,
     showSourceControls: js.UndefOr[Boolean] = js.undefined,
     showTargetControls: js.UndefOr[Boolean] = js.undefined,

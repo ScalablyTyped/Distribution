@@ -21,14 +21,14 @@ trait ExportTransitGatewayRoutesRequest extends js.Object {
   /**
     * The ID of the route table.
     */
-  var TransitGatewayRouteTableId: String = js.native
+  var TransitGatewayRouteTableId: typings.awsSdk.ec2Mod.TransitGatewayRouteTableId = js.native
 }
 
 object ExportTransitGatewayRoutesRequest {
   @scala.inline
   def apply(
     S3Bucket: String,
-    TransitGatewayRouteTableId: String,
+    TransitGatewayRouteTableId: TransitGatewayRouteTableId,
     DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     Filters: FilterList = null
   ): ExportTransitGatewayRoutesRequest = {

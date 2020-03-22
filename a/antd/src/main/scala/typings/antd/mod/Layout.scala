@@ -3,7 +3,7 @@ package typings.antd.mod
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import typings.antd.PartialBasicProps
-import typings.antd.WeakValidationMapBasicProps
+import typings.antd.WeakValidationMapBasicPro
 import typings.antd.layoutLayoutMod.BasicProps
 import typings.antd.siderMod.SiderProps
 import typings.react.mod.Component
@@ -45,6 +45,6 @@ object Layout
   var displayName: js.UndefOr[String] = js.native
   var getDerivedStateFromError: js.UndefOr[GetDerivedStateFromError[BasicProps, ComponentState]] = js.native
   var getDerivedStateFromProps: js.UndefOr[GetDerivedStateFromProps[BasicProps, ComponentState]] = js.native
-  var propTypes: js.UndefOr[WeakValidationMapBasicProps] = js.native
+  var propTypes: js.UndefOr[WeakValidationMapBasicPro] = js.native
 }
 

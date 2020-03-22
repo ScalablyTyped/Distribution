@@ -8,9 +8,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.highcharts.mod.SeriesOptions because var conflicts: zIndex. Inlined id, index, legendIndex, mapData, name, stack, treemap, `type`, xAxis, yAxis */ trait SeriesScatter3dOptions
+- typings.highcharts.mod.SeriesOptions because var conflicts: zIndex. Inlined id, index, legendIndex, mapData, name, stack, `type`, xAxis, yAxis */ trait SeriesScatter3dOptions
   extends PlotScatter3dOptions
      with SeriesOptionsType {
+  /**
+    * Not available
+    */
+  var cluster: js.UndefOr[scala.Nothing] = js.undefined
   /**
     * (Highcharts) An array of data points for the series. For the `scatter3d`
     * series type, points can be given in the following ways:
@@ -25,7 +29,7 @@ import scala.scalajs.js.annotation._
     * number of data points exceeds the series' turboThreshold, this option is
     * not available. (see online documentation for example)
     */
-  var data: js.UndefOr[js.Array[js.Array[Double] | SeriesScatter3dDataOptions]] = js.undefined
+  var data: js.UndefOr[js.Array[js.Array[Double] | PointOptionsObject]] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) An id for the series. This can
     * be used after render time to get a pointer to the series object through
@@ -61,7 +65,6 @@ import scala.scalajs.js.annotation._
     * string.
     */
   var stack: js.UndefOr[Double | String] = js.undefined
-  var treemap: js.UndefOr[SeriesTreemapOptions] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) This property is only in
     * TypeScript non-optional and might be `undefined` in series objects from
@@ -88,10 +91,10 @@ object SeriesScatter3dOptions {
   @scala.inline
   def apply(
     `type`: String | scatter3d,
-    accessibility: js.Object | PlotScatter3dAccessibilityOptions = null,
+    accessibility: SeriesAccessibilityOptionsObject = null,
     allAreas: js.UndefOr[Boolean] = js.undefined,
     allowPointSelect: js.UndefOr[Boolean] = js.undefined,
-    animation: Boolean | AnimationOptionsObject | PlotScatter3dAnimationOptions = null,
+    animation: Boolean | AnimationOptionsObject = null,
     animationLimit: Int | Double = null,
     boostBlending: OptionsBoostBlendingValue = null,
     boostThreshold: Int | Double = null,
@@ -99,6 +102,7 @@ object SeriesScatter3dOptions {
     borderWidth: Int | Double = null,
     className: String = null,
     clip: js.UndefOr[Boolean] = js.undefined,
+    cluster: js.UndefOr[scala.Nothing] = js.undefined,
     color: ColorString | GradientColorObject | PatternObject = null,
     colorAxis: Boolean | Double | String = null,
     colorIndex: Int | Double = null,
@@ -108,16 +112,17 @@ object SeriesScatter3dOptions {
     compareStart: js.UndefOr[Boolean] = js.undefined,
     connectEnds: js.UndefOr[Boolean] = js.undefined,
     connectNulls: js.UndefOr[Boolean] = js.undefined,
-    connectors: PlotScatter3dConnectorsOptions = null,
+    connectors: SeriesConnectorsOptionsObject = null,
     cropThreshold: Int | Double = null,
     cursor: String | CursorValue = null,
     dashStyle: DashStyleValue = null,
-    data: js.Array[js.Array[Double] | SeriesScatter3dDataOptions] = null,
-    dataGrouping: PlotScatter3dDataGroupingOptions = null,
+    data: js.Array[js.Array[Double] | PointOptionsObject] = null,
+    dataGrouping: DataGroupingOptionsObject = null,
     dataLabels: DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject] = null,
+    dataSorting: DataSortingOptionsObject | PlotScatter3dDataSortingOptions = null,
     description: String = null,
     enableMouseTracking: js.UndefOr[Boolean] = js.undefined,
-    events: PlotScatter3dEventsOptions = null,
+    events: SeriesEventsOptionsObject = null,
     findNearestPointBy: OptionsFindNearestPointByValue = null,
     gapSize: Int | Double = null,
     gapUnit: OptionsGapUnitValue = null,
@@ -128,20 +133,20 @@ object SeriesScatter3dOptions {
     jitter: PlotScatter3dJitterOptions = null,
     joinBy: String | js.Array[String] = null,
     keys: js.Array[String] = null,
-    label: PlotScatter3dLabelOptions = null,
-    lastPrice: PlotScatter3dLastPriceOptions = null,
-    lastVisiblePrice: PlotScatter3dLastVisiblePriceOptions = null,
+    label: SeriesLabelOptionsObject = null,
+    lastPrice: SeriesLastPriceOptionsObject = null,
+    lastVisiblePrice: SeriesLastVisiblePriceOptionsObject = null,
     legendIndex: Int | Double = null,
     lineWidth: Int | Double = null,
     linecap: SeriesLinecapValue = null,
     linkedTo: String = null,
     mapData: js.Array[SeriesMapDataOptions] | js.Any = null,
-    marker: PlotScatter3dMarkerOptions = null,
+    marker: PointMarkerOptionsObject = null,
     name: String = null,
     navigatorOptions: PlotSeriesOptions = null,
     negativeColor: ColorString | GradientColorObject | PatternObject = null,
     opacity: Int | Double = null,
-    point: PlotScatter3dPointOptions = null,
+    point: PlotSeriesPointOptions = null,
     pointDescriptionFormatter: js.Function = null,
     pointInterval: Int | Double = null,
     pointIntervalUnit: OptionsPointIntervalUnitValue = null,
@@ -155,19 +160,18 @@ object SeriesScatter3dOptions {
     softThreshold: js.UndefOr[Boolean] = js.undefined,
     stack: Double | String = null,
     stacking: OptionsStackingValue = null,
-    states: PlotScatter3dStatesOptions = null,
+    states: SeriesStatesOptionsObject = null,
     step: OptionsStepValue = null,
     stickyTracking: js.UndefOr[Boolean] = js.undefined,
     threshold: Int | Double = null,
-    tooltip: PlotScatter3dTooltipOptions = null,
-    treemap: SeriesTreemapOptions = null,
+    tooltip: SeriesTooltipOptionsObject = null,
     turboThreshold: Int | Double = null,
     visible: js.UndefOr[Boolean] = js.undefined,
     xAxis: Double | String = null,
     yAxis: Double | String = null,
     zIndex: Int | Double = null,
     zoneAxis: String = null,
-    zones: js.Array[PlotScatter3dZonesOptions] = null
+    zones: js.Array[SeriesZonesOptionsObject] = null
   ): SeriesScatter3dOptions = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -182,6 +186,7 @@ object SeriesScatter3dOptions {
     if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (!js.isUndefined(clip)) __obj.updateDynamic("clip")(clip.asInstanceOf[js.Any])
+    if (!js.isUndefined(cluster)) __obj.updateDynamic("cluster")(cluster.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (colorAxis != null) __obj.updateDynamic("colorAxis")(colorAxis.asInstanceOf[js.Any])
     if (colorIndex != null) __obj.updateDynamic("colorIndex")(colorIndex.asInstanceOf[js.Any])
@@ -198,6 +203,7 @@ object SeriesScatter3dOptions {
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (dataGrouping != null) __obj.updateDynamic("dataGrouping")(dataGrouping.asInstanceOf[js.Any])
     if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
+    if (dataSorting != null) __obj.updateDynamic("dataSorting")(dataSorting.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (!js.isUndefined(enableMouseTracking)) __obj.updateDynamic("enableMouseTracking")(enableMouseTracking.asInstanceOf[js.Any])
     if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
@@ -243,7 +249,6 @@ object SeriesScatter3dOptions {
     if (!js.isUndefined(stickyTracking)) __obj.updateDynamic("stickyTracking")(stickyTracking.asInstanceOf[js.Any])
     if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (treemap != null) __obj.updateDynamic("treemap")(treemap.asInstanceOf[js.Any])
     if (turboThreshold != null) __obj.updateDynamic("turboThreshold")(turboThreshold.asInstanceOf[js.Any])
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     if (xAxis != null) __obj.updateDynamic("xAxis")(xAxis.asInstanceOf[js.Any])

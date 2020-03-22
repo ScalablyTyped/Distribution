@@ -6,19 +6,10 @@ import scala.scalajs.js.annotation._
 
 object semanticUiStickyStrings {
   @js.native
-  sealed trait bottom extends js.Object
-  
-  @js.native
   sealed trait bottomOffset extends js.Object
   
   @js.native
-  sealed trait bound extends js.Object
-  
-  @js.native
   sealed trait className extends js.Object
-  
-  @js.native
-  sealed trait container extends js.Object
   
   @js.native
   sealed trait context extends js.Object
@@ -30,22 +21,10 @@ object semanticUiStickyStrings {
   sealed trait destroy extends js.Object
   
   @js.native
-  sealed trait elementSize extends js.Object
-  
-  @js.native
   sealed trait error extends js.Object
   
   @js.native
-  sealed trait fixed extends js.Object
-  
-  @js.native
-  sealed trait invalidContext extends js.Object
-  
-  @js.native
   sealed trait jitter extends js.Object
-  
-  @js.native
-  sealed trait method extends js.Object
   
   @js.native
   sealed trait name extends js.Object
@@ -99,27 +78,12 @@ object semanticUiStickyStrings {
   sealed trait silent extends js.Object
   
   @js.native
-  sealed trait supported extends js.Object
-  
-  @js.native
-  sealed trait top extends js.Object
-  
-  @js.native
   sealed trait verbose extends js.Object
   
-  @js.native
-  sealed trait visible extends js.Object
-  
-  @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
   @scala.inline
   def bottomOffset: bottomOffset = "bottomOffset".asInstanceOf[bottomOffset]
   @scala.inline
-  def bound: bound = "bound".asInstanceOf[bound]
-  @scala.inline
   def className: className = "className".asInstanceOf[className]
-  @scala.inline
-  def container: container = "container".asInstanceOf[container]
   @scala.inline
   def context: context = "context".asInstanceOf[context]
   @scala.inline
@@ -127,17 +91,9 @@ object semanticUiStickyStrings {
   @scala.inline
   def destroy: destroy = "destroy".asInstanceOf[destroy]
   @scala.inline
-  def elementSize: elementSize = "elementSize".asInstanceOf[elementSize]
-  @scala.inline
   def error: error = "error".asInstanceOf[error]
   @scala.inline
-  def fixed: fixed = "fixed".asInstanceOf[fixed]
-  @scala.inline
-  def invalidContext: invalidContext = "invalidContext".asInstanceOf[invalidContext]
-  @scala.inline
   def jitter: jitter = "jitter".asInstanceOf[jitter]
-  @scala.inline
-  def method: method = "method".asInstanceOf[method]
   @scala.inline
   def name: name = "name".asInstanceOf[name]
   @scala.inline
@@ -173,12 +129,6 @@ object semanticUiStickyStrings {
   @scala.inline
   def silent: silent = "silent".asInstanceOf[silent]
   @scala.inline
-  def supported: supported = "supported".asInstanceOf[supported]
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
-  @scala.inline
   def verbose: verbose = "verbose".asInstanceOf[verbose]
-  @scala.inline
-  def visible: visible = "visible".asInstanceOf[visible]
 }
 

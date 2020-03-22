@@ -111,6 +111,10 @@ trait DBCluster extends js.Object {
     */
   var DeletionProtection: js.UndefOr[BooleanOptional] = js.native
   /**
+    * The Active Directory Domain membership records associated with the DB cluster.
+    */
+  var DomainMemberships: js.UndefOr[DomainMembershipList] = js.native
+  /**
     * The earliest time to which a DB cluster can be backtracked.
     */
   var EarliestBacktrackTime: js.UndefOr[TStamp] = js.native
@@ -238,6 +242,7 @@ object DBCluster {
     DatabaseName: String = null,
     DbClusterResourceId: String = null,
     DeletionProtection: js.UndefOr[scala.Boolean] = js.undefined,
+    DomainMemberships: DomainMembershipList = null,
     EarliestBacktrackTime: TStamp = null,
     EarliestRestorableTime: TStamp = null,
     EnabledCloudwatchLogsExports: LogTypeList = null,
@@ -291,6 +296,7 @@ object DBCluster {
     if (DatabaseName != null) __obj.updateDynamic("DatabaseName")(DatabaseName.asInstanceOf[js.Any])
     if (DbClusterResourceId != null) __obj.updateDynamic("DbClusterResourceId")(DbClusterResourceId.asInstanceOf[js.Any])
     if (!js.isUndefined(DeletionProtection)) __obj.updateDynamic("DeletionProtection")(DeletionProtection.asInstanceOf[js.Any])
+    if (DomainMemberships != null) __obj.updateDynamic("DomainMemberships")(DomainMemberships.asInstanceOf[js.Any])
     if (EarliestBacktrackTime != null) __obj.updateDynamic("EarliestBacktrackTime")(EarliestBacktrackTime.asInstanceOf[js.Any])
     if (EarliestRestorableTime != null) __obj.updateDynamic("EarliestRestorableTime")(EarliestRestorableTime.asInstanceOf[js.Any])
     if (EnabledCloudwatchLogsExports != null) __obj.updateDynamic("EnabledCloudwatchLogsExports")(EnabledCloudwatchLogsExports.asInstanceOf[js.Any])

@@ -45,9 +45,9 @@ object mod extends js.Object {
   /* static members */
   @js.native
   object Psbt extends js.Object {
-    def fromBase64[T /* <: TypeofClassPsbt */](data: String, txFromBuffer: TransactionFromBuffer): InstanceType[T] = js.native
-    def fromBuffer[T /* <: TypeofClassPsbt */](buffer: Buffer, txFromBuffer: TransactionFromBuffer): InstanceType[T] = js.native
-    def fromHex[T /* <: TypeofClassPsbt */](data: String, txFromBuffer: TransactionFromBuffer): InstanceType[T] = js.native
+    def fromBase64[T /* <: TypeofPsbt */](data: String, txFromBuffer: TransactionFromBuffer): InstanceType[T] = js.native
+    def fromBuffer[T /* <: TypeofPsbt */](buffer: Buffer, txFromBuffer: TransactionFromBuffer): InstanceType[T] = js.native
+    def fromHex[T /* <: TypeofPsbt */](data: String, txFromBuffer: TransactionFromBuffer): InstanceType[T] = js.native
   }
   
 }

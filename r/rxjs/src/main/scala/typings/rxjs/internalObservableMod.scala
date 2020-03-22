@@ -144,7 +144,7 @@ object internalObservableMod extends js.Object {
       * @deprecated In favor of iif creation function: import { iif } from 'rxjs';
       */
     @JSName("if")
-    var if_Original: FnCondition = js.native
+    var if_Original: FnCall = js.native
     /**
       * @nocollapse
       * @deprecated In favor of throwError creation function: import { throwError } from 'rxjs';

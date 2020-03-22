@@ -11,10 +11,14 @@ trait SystemMemoryInfo extends js.Object {
   var free: Double
   /**
     * The free amount of swap memory in Kilobytes available to the system.
+    *
+    * @platform win32,linux
     */
   var swapFree: Double
   /**
     * The total amount of swap memory in Kilobytes available to the system.
+    *
+    * @platform win32,linux
     */
   var swapTotal: Double
   /**

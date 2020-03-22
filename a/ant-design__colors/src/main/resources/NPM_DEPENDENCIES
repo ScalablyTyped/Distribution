@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@ant-design/colors" : "3.2.2"
+      "@ant-design/colors" : "4.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@ant-design/colors" : "3.2.2"
+      "@ant-design/colors" : "4.0.0"
     }
   ],
   "compile-devDependencies" : [

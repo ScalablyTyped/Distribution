@@ -1,5 +1,6 @@
 package typings.ddTrace.mod.plugins
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.ddTrace.mod.Analyzable
 import typings.std.RegExp
 import scala.scalajs.js
@@ -46,7 +47,7 @@ trait Http_
 object Http_ {
   @scala.inline
   def apply(
-    analytics: Boolean | Double = null,
+    analytics: Boolean | Double | (StringDictionary[Boolean | Double]) = null,
     blacklist: String | RegExp | (js.Function1[/* url */ String, Boolean]) | (js.Array[String | RegExp | (js.Function1[/* url */ String, Boolean])]) = null,
     enabled: js.UndefOr[Boolean] = js.undefined,
     headers: js.Array[String] = null,

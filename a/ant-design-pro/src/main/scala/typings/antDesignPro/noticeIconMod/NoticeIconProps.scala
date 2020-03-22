@@ -1,6 +1,6 @@
 package typings.antDesignPro.noticeIconMod
 
-import typings.antDesignPro.AnonClear
+import typings.antDesignPro.AnonDictkey
 import typings.antDesignPro.noticeIconTabMod.NoticeIconData
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
@@ -15,7 +15,7 @@ trait NoticeIconProps extends js.Object {
   var clearClose: js.UndefOr[Boolean] = js.undefined
   var count: js.UndefOr[Double] = js.undefined
   var loading: js.UndefOr[Boolean] = js.undefined
-  var locale: js.UndefOr[AnonClear] = js.undefined
+  var locale: js.UndefOr[AnonDictkey] = js.undefined
   var onClear: js.UndefOr[js.Function1[/* tabName */ String, Unit]] = js.undefined
   var onItemClick: js.UndefOr[js.Function2[/* item */ NoticeIconData, /* tabProps */ NoticeIconProps, Unit]] = js.undefined
   var onPopupVisibleChange: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.undefined
@@ -33,7 +33,7 @@ object NoticeIconProps {
     clearClose: js.UndefOr[Boolean] = js.undefined,
     count: Int | Double = null,
     loading: js.UndefOr[Boolean] = js.undefined,
-    locale: AnonClear = null,
+    locale: AnonDictkey = null,
     onClear: /* tabName */ String => Unit = null,
     onItemClick: (/* item */ NoticeIconData, /* tabProps */ NoticeIconProps) => Unit = null,
     onPopupVisibleChange: /* visible */ Boolean => Unit = null,

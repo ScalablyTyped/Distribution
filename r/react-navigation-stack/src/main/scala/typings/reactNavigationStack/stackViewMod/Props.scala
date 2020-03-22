@@ -1,43 +1,44 @@
 package typings.reactNavigationStack.stackViewMod
 
-import typings.reactNavigation.mod.NavigationParams
-import typings.reactNavigation.mod.NavigationRoute
-import typings.reactNavigationStack.typesMod.NavigationStackConfig
-import typings.reactNavigationStack.typesMod.NavigationStackProp
-import typings.reactNavigationStack.typesMod.SceneDescriptorMap
+import typings.reactNavigation.mod.NavigationState
+import typings.reactNavigationStack.vendorTypesMod.StackCardMode
+import typings.reactNavigationStack.vendorTypesMod.StackDescriptorMap
+import typings.reactNavigationStack.vendorTypesMod.StackHeaderMode
+import typings.reactNavigationStack.vendorTypesMod.StackNavigationHelpers
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/* Inlined react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.StackNavigationConfig & {  state  :react-navigation.react-navigation.NavigationState,   navigation  :react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.StackNavigationHelpers,   descriptors  :react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.StackDescriptorMap,   screenProps  :unknown} */
 trait Props extends js.Object {
-  var descriptors: SceneDescriptorMap
-  var navigation: NavigationStackProp[NavigationRoute[NavigationParams], NavigationParams]
-  var navigationConfig: NavigationStackConfig
-  var onGestureBegin: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onGestureCanceled: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onGestureEnd: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onTransitionStart: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var screenProps: js.UndefOr[js.Any] = js.undefined
+  var descriptors: StackDescriptorMap
+  var headerMode: js.UndefOr[StackHeaderMode] = js.undefined
+  /**
+    * If `false`, the keyboard will NOT automatically dismiss when navigating to a new screen.
+    * Defaults to `true`.
+    */
+  var keyboardHandlingEnabled: js.UndefOr[Boolean] = js.undefined
+  var mode: js.UndefOr[StackCardMode] = js.undefined
+  var navigation: StackNavigationHelpers
+  var screenProps: js.Any
+  var state: NavigationState
 }
 
 object Props {
   @scala.inline
   def apply(
-    descriptors: SceneDescriptorMap,
-    navigation: NavigationStackProp[NavigationRoute[NavigationParams], NavigationParams],
-    navigationConfig: NavigationStackConfig,
-    onGestureBegin: () => Unit = null,
-    onGestureCanceled: () => Unit = null,
-    onGestureEnd: () => Unit = null,
-    onTransitionStart: () => Unit = null,
-    screenProps: js.Any = null
+    descriptors: StackDescriptorMap,
+    navigation: StackNavigationHelpers,
+    screenProps: js.Any,
+    state: NavigationState,
+    headerMode: StackHeaderMode = null,
+    keyboardHandlingEnabled: js.UndefOr[Boolean] = js.undefined,
+    mode: StackCardMode = null
   ): Props = {
-    val __obj = js.Dynamic.literal(descriptors = descriptors.asInstanceOf[js.Any], navigation = navigation.asInstanceOf[js.Any], navigationConfig = navigationConfig.asInstanceOf[js.Any])
-    if (onGestureBegin != null) __obj.updateDynamic("onGestureBegin")(js.Any.fromFunction0(onGestureBegin))
-    if (onGestureCanceled != null) __obj.updateDynamic("onGestureCanceled")(js.Any.fromFunction0(onGestureCanceled))
-    if (onGestureEnd != null) __obj.updateDynamic("onGestureEnd")(js.Any.fromFunction0(onGestureEnd))
-    if (onTransitionStart != null) __obj.updateDynamic("onTransitionStart")(js.Any.fromFunction0(onTransitionStart))
-    if (screenProps != null) __obj.updateDynamic("screenProps")(screenProps.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(descriptors = descriptors.asInstanceOf[js.Any], navigation = navigation.asInstanceOf[js.Any], screenProps = screenProps.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
+    if (headerMode != null) __obj.updateDynamic("headerMode")(headerMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyboardHandlingEnabled)) __obj.updateDynamic("keyboardHandlingEnabled")(keyboardHandlingEnabled.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props]
   }
 }

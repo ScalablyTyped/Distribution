@@ -1,6 +1,6 @@
 package typings.ionic.libServeMod
 
-import typings.ionic.definitionsMod.CommandMetadata
+import typings.ionic.PartialCommandMetadata
 import typings.ionic.definitionsMod.DevAppDetails
 import typings.ionic.definitionsMod.LabServeDetails
 import typings.ionic.definitionsMod.Runner
@@ -9,7 +9,6 @@ import typings.ionic.definitionsMod.ServeOptions
 import typings.ionicCliFramework.definitionsMod.CommandLineInputs
 import typings.ionicCliFramework.definitionsMod.CommandLineOptions
 import typings.ionicUtilsNetwork.mod.NetworkInterface
-import typings.std.Partial
 import typings.std.Set
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -26,7 +25,7 @@ abstract class ServeRunner[T /* <: ServeOptions */] () extends Runner[T, ServeDe
   def determineEngineFromCommandLine(options: CommandLineOptions): String = js.native
   def displayDevAppMessage(options: T): js.Promise[Unit] = js.native
   def gatherDevAppDetails(options: T, details: ServeDetails): js.Promise[js.UndefOr[DevAppDetails]] = js.native
-  def getCommandMetadata(): js.Promise[Partial[CommandMetadata]] = js.native
+  def getCommandMetadata(): js.Promise[PartialCommandMetadata] = js.native
   def getPkgManagerServeCLI(): PkgManagerServeCLI = js.native
   def getSupportedDevAppPlugins(): js.Promise[Set[String]] = js.native
   def getUsedPorts(options: T, details: ServeDetails): js.Array[Double] = js.native

@@ -5,16 +5,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonAnchor extends js.Object {
-  var anchor: Double | Null
-  var head: Double | Null
+  var anchor: Double
+  var head: Double
 }
 
 object AnonAnchor {
   @scala.inline
-  def apply(anchor: Int | Double = null, head: Int | Double = null): AnonAnchor = {
-    val __obj = js.Dynamic.literal()
-    if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
-    if (head != null) __obj.updateDynamic("head")(head.asInstanceOf[js.Any])
+  def apply(anchor: Double, head: Double): AnonAnchor = {
+    val __obj = js.Dynamic.literal(anchor = anchor.asInstanceOf[js.Any], head = head.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[AnonAnchor]
   }
 }

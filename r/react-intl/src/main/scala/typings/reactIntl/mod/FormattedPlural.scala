@@ -1,34 +1,26 @@
 package typings.reactIntl.mod
 
-import org.scalablytyped.runtime.TopLevel
-import typings.react.mod.ForwardRefExoticComponent
-import typings.react.mod.RefAttributes
-import typings.reactIntl.AnonForwardedRefInstance
-import typings.reactIntl.AnonWrappedComponentComponentTypeProps2
-import typings.reactIntl.reactIntlStrings.`type`
-import typings.reactIntl.reactIntlStrings.children
-import typings.reactIntl.reactIntlStrings.few
-import typings.reactIntl.reactIntlStrings.format
-import typings.reactIntl.reactIntlStrings.localeMatcher
-import typings.reactIntl.reactIntlStrings.many
-import typings.reactIntl.reactIntlStrings.one
-import typings.reactIntl.reactIntlStrings.other
-import typings.reactIntl.reactIntlStrings.two
-import typings.reactIntl.reactIntlStrings.value
-import typings.reactIntl.reactIntlStrings.zero
-import typings.std.Pick
+import typings.react.mod.ComponentType
+import typings.react.mod.ReactElement
+import typings.reactIntl.PartialPickProps2children
+import typings.reactIntl.PickProps2childrenotherze
+import typings.reactIntl.WeakValidationMapPickProp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("react-intl", "FormattedPlural")
 @js.native
-object FormattedPlural extends TopLevel[
-      (ForwardRefExoticComponent[
-        (Pick[
-          Props2, 
-          children | other | zero | one | two | few | many | format | localeMatcher | `type` | value
-        ]) with AnonForwardedRefInstance with RefAttributes[_]
-      ]) with AnonWrappedComponentComponentTypeProps2
-    ]
+object FormattedPlural extends js.Object {
+  @JSName("$$typeof")
+  val DollarDollartypeof: js.Symbol = js.native
+  var WrappedComponent: ComponentType[Props2] = js.native
+  var defaultProps: js.UndefOr[PartialPickProps2children] = js.native
+  var displayName: js.UndefOr[String] = js.native
+  var propTypes: js.UndefOr[WeakValidationMapPickProp] = js.native
+  /**
+    * **NOTE**: Exotic components are not callable.
+    */
+  def apply(props: PickProps2childrenotherze): ReactElement | Null = js.native
+}
 

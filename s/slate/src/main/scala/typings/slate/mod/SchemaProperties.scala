@@ -1,6 +1,6 @@
 package typings.slate.mod
 
-import typings.slate.AnonMatchArray
+import typings.slate.matchObjectAndTypeArrayOb
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ trait SchemaProperties extends js.Object {
   var document: js.UndefOr[Rules] = js.undefined
   var inlines: js.UndefOr[RulesByNodeType] = js.undefined
   var marks: js.UndefOr[RulesByNodeType] = js.undefined
-  var rules: js.UndefOr[js.Array[AnonMatchArray with Rules]] = js.undefined
+  var rules: js.UndefOr[js.Array[matchObjectAndTypeArrayOb]] = js.undefined
 }
 
 object SchemaProperties {
@@ -24,7 +24,7 @@ object SchemaProperties {
     document: Rules = null,
     inlines: RulesByNodeType = null,
     marks: RulesByNodeType = null,
-    rules: js.Array[AnonMatchArray with Rules] = null
+    rules: js.Array[matchObjectAndTypeArrayOb] = null
   ): SchemaProperties = {
     val __obj = js.Dynamic.literal()
     if (annotations != null) __obj.updateDynamic("annotations")(annotations.asInstanceOf[js.Any])

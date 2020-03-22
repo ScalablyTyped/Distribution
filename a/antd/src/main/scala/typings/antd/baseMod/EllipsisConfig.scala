@@ -8,6 +8,7 @@ trait EllipsisConfig extends js.Object {
   var expandable: js.UndefOr[Boolean] = js.undefined
   var onExpand: js.UndefOr[js.Function0[Unit]] = js.undefined
   var rows: js.UndefOr[Double] = js.undefined
+  var suffix: js.UndefOr[String] = js.undefined
 }
 
 object EllipsisConfig {
@@ -15,12 +16,14 @@ object EllipsisConfig {
   def apply(
     expandable: js.UndefOr[Boolean] = js.undefined,
     onExpand: () => Unit = null,
-    rows: Int | Double = null
+    rows: Int | Double = null,
+    suffix: String = null
   ): EllipsisConfig = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(expandable)) __obj.updateDynamic("expandable")(expandable.asInstanceOf[js.Any])
     if (onExpand != null) __obj.updateDynamic("onExpand")(js.Any.fromFunction0(onExpand))
     if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
+    if (suffix != null) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
     __obj.asInstanceOf[EllipsisConfig]
   }
 }

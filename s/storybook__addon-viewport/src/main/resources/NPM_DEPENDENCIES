@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@storybook/addon-viewport" : "5.3.13"
+      "@storybook/addon-viewport" : "5.3.14"
     }
   ],
   "test-dependencies" : [
     {
-      "@storybook/addon-viewport" : "5.3.13"
+      "@storybook/addon-viewport" : "5.3.14"
     }
   ],
   "compile-devDependencies" : [

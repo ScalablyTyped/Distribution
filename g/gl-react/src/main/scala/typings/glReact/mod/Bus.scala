@@ -3,7 +3,7 @@ package typings.glReact.mod
 import typings.glReact.AnonGlParent
 import typings.glReact.AnonGlParentAny
 import typings.glReact.AnonGlParentBus
-import typings.glReact.AnonGlParentGlSurface
+import typings.glReact.AnonGlSurface
 import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -38,7 +38,7 @@ class Bus ()
 @js.native
 object Bus extends js.Object {
   var childContextTypes: AnonGlParentAny = js.native
-  var contextTypes: AnonGlParentGlSurface = js.native
+  var contextTypes: AnonGlSurface = js.native
   var defaultProps: BusProps = js.native
 }
 

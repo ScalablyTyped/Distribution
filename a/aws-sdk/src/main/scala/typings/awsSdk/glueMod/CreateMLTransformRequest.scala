@@ -43,6 +43,10 @@ trait CreateMLTransformRequest extends js.Object {
     */
   var Role: RoleString = js.native
   /**
+    * The tags to use with this machine learning transform. You may use tags to limit access to the machine learning transform. For more information about tags in AWS Glue, see AWS Tags in AWS Glue in the developer guide.
+    */
+  var Tags: js.UndefOr[TagsMap] = js.native
+  /**
     * The timeout of the task run for this transform in minutes. This is the maximum time that a task run for this transform can consume resources before it is terminated and enters TIMEOUT status. The default is 2,880 minutes (48 hours).
     */
   var Timeout: js.UndefOr[typings.awsSdk.glueMod.Timeout] = js.native
@@ -64,6 +68,7 @@ object CreateMLTransformRequest {
     MaxCapacity: Int | Double = null,
     MaxRetries: Int | Double = null,
     NumberOfWorkers: Int | Double = null,
+    Tags: TagsMap = null,
     Timeout: Int | Double = null,
     WorkerType: WorkerType = null
   ): CreateMLTransformRequest = {
@@ -73,6 +78,7 @@ object CreateMLTransformRequest {
     if (MaxCapacity != null) __obj.updateDynamic("MaxCapacity")(MaxCapacity.asInstanceOf[js.Any])
     if (MaxRetries != null) __obj.updateDynamic("MaxRetries")(MaxRetries.asInstanceOf[js.Any])
     if (NumberOfWorkers != null) __obj.updateDynamic("NumberOfWorkers")(NumberOfWorkers.asInstanceOf[js.Any])
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     if (Timeout != null) __obj.updateDynamic("Timeout")(Timeout.asInstanceOf[js.Any])
     if (WorkerType != null) __obj.updateDynamic("WorkerType")(WorkerType.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateMLTransformRequest]

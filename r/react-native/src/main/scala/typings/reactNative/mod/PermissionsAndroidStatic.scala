@@ -2,7 +2,7 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.StringDictionary
-import typings.reactNative.keyinPermissionPermissionStatus
+import typings.reactNative.keyinPermissionPermission
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,7 +43,7 @@ trait PermissionsAndroidStatic extends Instantiable0[PermissionsAndroidStatic] {
     * returns an object with the permissions as keys and strings as values
     * indicating whether the user allowed or denied the request
     */
-  def requestMultiple(permissions: js.Array[Permission]): js.Promise[keyinPermissionPermissionStatus] = js.native
+  def requestMultiple(permissions: js.Array[Permission]): js.Promise[keyinPermissionPermission] = js.native
   /**
     * @deprecated Use request instead
     */

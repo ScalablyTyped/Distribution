@@ -41,7 +41,7 @@ trait GridstackOptions extends js.Object {
     */
   var cellHeight: js.UndefOr[Double | String] = js.undefined
   /**
-    * (internal?) unit for cellHeight (default? 'px')
+    * (internal) unit for cellHeight (default? 'px') which is set when a string cellHeight with a unit is passed (ex: '10rem')
     */
   var cellHeightUnit: js.UndefOr[String] = js.undefined
   /**
@@ -63,7 +63,7 @@ trait GridstackOptions extends js.Object {
     */
   var dragOut: js.UndefOr[Boolean] = js.undefined
   /**
-    * allows to override jQuery UI draggable options. (default?: { handle?: '.grid-stack-item-content', scroll?: true, appendTo?: 'body', containment: null })
+    * allows to override UI draggable options. (default?: { handle?: '.grid-stack-item-content', scroll?: true, appendTo?: 'body', containment: null })
     */
   var draggable: js.UndefOr[js.Object] = js.undefined
   /**
@@ -100,7 +100,7 @@ trait GridstackOptions extends js.Object {
   /** placeholder default content (default?: '') */
   var placeholderText: js.UndefOr[String] = js.undefined
   /**
-    * if true widgets could be removed by dragging outside of the grid. It could also be a jQuery selector string,
+    * if true widgets could be removed by dragging outside of the grid. It could also be a selector string,
     * in this case widgets will be removed by dropping them there (default?: false)
     * See example (http://gridstack.github.io/gridstack.js/demo/two.html)
     */
@@ -110,7 +110,7 @@ trait GridstackOptions extends js.Object {
     */
   var removeTimeout: js.UndefOr[Double] = js.undefined
   /**
-    * allows to override jQuery UI resizable options. (default?: { autoHide?: true, handles?: 'se' })
+    * allows to override UI resizable options. (default?: { autoHide?: true, handles?: 'se' })
     */
   var resizable: js.UndefOr[js.Object] = js.undefined
   /**
@@ -119,9 +119,9 @@ trait GridstackOptions extends js.Object {
     */
   var rtl: js.UndefOr[Boolean | auto] = js.undefined
   /**
-    * makes grid static (default?: false).If true widgets are not movable/resizable.
-    * You don't even need jQueryUI draggable/resizable. A CSS class
-    * 'grid-stack-static' is also added to the container.
+    * makes grid static (default?: false). If `true` widgets are not movable/resizable.
+    * You don't even need draggable/resizable. A CSS class
+    * 'grid-stack-static' is also added to the element.
     */
   var staticGrid: js.UndefOr[Boolean] = js.undefined
   /**
@@ -131,7 +131,7 @@ trait GridstackOptions extends js.Object {
     */
   var verticalMargin: js.UndefOr[Double | String] = js.undefined
   /**
-    * (internal?) unit for verticalMargin (default? 'px')
+    * (internal) unit for verticalMargin (default? 'px') set when `verticalMargin` is set as string with unit (ex: 2rem')
     */
   var verticalMarginUnit: js.UndefOr[String] = js.undefined
 }

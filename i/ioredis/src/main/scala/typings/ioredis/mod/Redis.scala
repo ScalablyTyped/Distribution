@@ -1,6 +1,6 @@
 package typings.ioredis.mod
 
-import typings.ioredis.AnonFalse
+import typings.ioredis.AnonPipeline
 import typings.ioredis.ioredisStrings.AFTER
 import typings.ioredis.ioredisStrings.BEFORE
 import typings.ioredis.ioredisStrings.COUNT
@@ -312,7 +312,7 @@ trait Redis
   def multi(): Pipeline = js.native
   def multi(commands: js.Array[js.Array[String]]): Pipeline = js.native
   def multi(commands: js.Array[js.Array[String]], options: MultiOptions): Pipeline = js.native
-  def multi(options: AnonFalse): js.Promise[String] = js.native
+  def multi(options: AnonPipeline): js.Promise[String] = js.native
   def `object`(subcommand: String, args: ValueType*): js.Promise[_] = js.native
   def persist(key: KeyType): js.Promise[BooleanResponse] = js.native
   def persist(key: KeyType, callback: js.Function2[/* err */ Error, /* res */ BooleanResponse, Unit]): Unit = js.native

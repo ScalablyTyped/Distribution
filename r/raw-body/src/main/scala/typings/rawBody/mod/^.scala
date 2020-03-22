@@ -2,7 +2,7 @@ package typings.rawBody.mod
 
 import typings.node.Buffer
 import typings.node.streamMod.Readable
-import typings.rawBody.AnonEncoding
+import typings.rawBody.OptionsencodingEncoding
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,11 +17,23 @@ object ^ extends js.Object {
     * limit. Ideal for parsing request bodies.
     */
   def apply(stream: Readable, callback: js.Function2[/* err */ RawBodyError, /* body */ Buffer, Unit]): Unit = js.native
-  def apply(stream: Readable, options: (Options with AnonEncoding) | Encoding | Options): js.Promise[String] = js.native
+  def apply(stream: Readable, options: OptionsencodingEncoding): js.Promise[String] = js.native
   def apply(
     stream: Readable,
-    options: (Options with AnonEncoding) | Encoding | Options,
-    callback: js.Function2[/* err */ RawBodyError, (/* body */ Buffer) | (/* body */ String), Unit]
+    options: OptionsencodingEncoding,
+    callback: js.Function2[/* err */ RawBodyError, /* body */ String, Unit]
+  ): Unit = js.native
+  def apply(stream: Readable, options: Encoding): js.Promise[String] = js.native
+  def apply(
+    stream: Readable,
+    options: Encoding,
+    callback: js.Function2[/* err */ RawBodyError, /* body */ String, Unit]
+  ): Unit = js.native
+  def apply(stream: Readable, options: Options): js.Promise[Buffer] = js.native
+  def apply(
+    stream: Readable,
+    options: Options,
+    callback: js.Function2[/* err */ RawBodyError, /* body */ Buffer, Unit]
   ): Unit = js.native
 }
 

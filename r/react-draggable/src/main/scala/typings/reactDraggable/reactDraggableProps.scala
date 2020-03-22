@@ -1,12 +1,15 @@
 package typings.reactDraggable
 
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait reactDraggableProps {
-  type DraggableCoreProps[T] = Partial[T]
-  type ReactDraggableProps[T] = Partial[T]
+  @scala.inline
+  def DraggableCoreProps: PartialDraggableCoreProps.type = typings.reactDraggable.PartialDraggableCoreProps
+  type DraggableCoreProps = PartialDraggableCoreProps
+  @scala.inline
+  def ReactDraggableProps: PartialDraggableProps.type = typings.reactDraggable.PartialDraggableProps
+  type ReactDraggableProps = PartialDraggableProps
 }
 

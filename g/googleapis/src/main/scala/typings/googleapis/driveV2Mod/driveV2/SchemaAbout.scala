@@ -4,8 +4,8 @@ import typings.googleapis.AnonBackgroundImageLink
 import typings.googleapis.AnonBytesUsed
 import typings.googleapis.AnonFeatureName
 import typings.googleapis.AnonRoleSets
-import typings.googleapis.AnonSize
-import typings.googleapis.AnonSourceTargets
+import typings.googleapis.AnonSizeType
+import typings.googleapis.AnonTargets
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -36,7 +36,7 @@ trait SchemaAbout extends js.Object {
   /**
     * The allowable export formats.
     */
-  var exportFormats: js.UndefOr[js.Array[AnonSourceTargets]] = js.native
+  var exportFormats: js.UndefOr[js.Array[AnonTargets]] = js.native
   /**
     * List of additional features enabled on this account.
     */
@@ -48,7 +48,7 @@ trait SchemaAbout extends js.Object {
   /**
     * The allowable import formats.
     */
-  var importFormats: js.UndefOr[js.Array[AnonSourceTargets]] = js.native
+  var importFormats: js.UndefOr[js.Array[AnonTargets]] = js.native
   /**
     * A boolean indicating whether the authenticated app is installed by the
     * authenticated user.
@@ -72,7 +72,7 @@ trait SchemaAbout extends js.Object {
     * List of max upload sizes for each file type. The most specific type takes
     * precedence.
     */
-  var maxUploadSizes: js.UndefOr[js.Array[AnonSize]] = js.native
+  var maxUploadSizes: js.UndefOr[js.Array[AnonSizeType]] = js.native
   /**
     * The name of the current user.
     */
@@ -135,15 +135,15 @@ object SchemaAbout {
     canCreateTeamDrives: js.UndefOr[Boolean] = js.undefined,
     domainSharingPolicy: String = null,
     etag: String = null,
-    exportFormats: js.Array[AnonSourceTargets] = null,
+    exportFormats: js.Array[AnonTargets] = null,
     features: js.Array[AnonFeatureName] = null,
     folderColorPalette: js.Array[String] = null,
-    importFormats: js.Array[AnonSourceTargets] = null,
+    importFormats: js.Array[AnonTargets] = null,
     isCurrentAppInstalled: js.UndefOr[Boolean] = js.undefined,
     kind: String = null,
     languageCode: String = null,
     largestChangeId: String = null,
-    maxUploadSizes: js.Array[AnonSize] = null,
+    maxUploadSizes: js.Array[AnonSizeType] = null,
     name: String = null,
     permissionId: String = null,
     quotaBytesByService: js.Array[AnonBytesUsed] = null,

@@ -1,6 +1,6 @@
 package typings.argparse.mod
 
-import typings.argparse.AnonArgumentDefaultsHelpFormatter
+import typings.argparse.Anon0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ trait ArgumentParserOptions extends js.Object {
   var debug: js.UndefOr[Boolean] = js.undefined
   var description: js.UndefOr[String] = js.undefined
   var epilog: js.UndefOr[String] = js.undefined
-  var formatterClass: js.UndefOr[AnonArgumentDefaultsHelpFormatter] = js.undefined
+  var formatterClass: js.UndefOr[Anon0] = js.undefined
   var parents: js.UndefOr[js.Array[ArgumentParser]] = js.undefined
   var prefixChars: js.UndefOr[String] = js.undefined
   var prog: js.UndefOr[String] = js.undefined
@@ -27,7 +27,7 @@ object ArgumentParserOptions {
     debug: js.UndefOr[Boolean] = js.undefined,
     description: String = null,
     epilog: String = null,
-    formatterClass: AnonArgumentDefaultsHelpFormatter = null,
+    formatterClass: Anon0 = null,
     parents: js.Array[ArgumentParser] = null,
     prefixChars: String = null,
     prog: String = null,

@@ -1,6 +1,7 @@
 package typings.firebaseFirestore.remoteSerializerMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.firebaseFirestore.apiBlobMod.Blob
 import typings.firebaseFirestore.coreDatabaseInfoMod.DatabaseId
 import typings.firebaseFirestore.coreQueryMod.Direction
 import typings.firebaseFirestore.coreQueryMod.FieldFilter
@@ -39,7 +40,9 @@ import typings.firebaseFirestore.remoteWatchChangeMod.WatchTargetChangeState
 import typings.firebaseFirestore.srcModelFieldValueMod.ArrayValue
 import typings.firebaseFirestore.srcModelFieldValueMod.FieldValue
 import typings.firebaseFirestore.srcModelFieldValueMod.ObjectValue
+import typings.firebaseFirestore.utilByteStringMod.ByteString
 import typings.firebaseFirestore.utilErrorMod.FirestoreError
+import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -49,7 +52,6 @@ import scala.scalajs.js.annotation._
 class JsonProtoSerializer protected () extends js.Object {
   def this(databaseId: DatabaseId, options: SerializerOptions) = this()
   var databaseId: js.Any = js.native
-  var emptyByteString: js.Any = js.native
   var extractLocalPathFromResourceName: js.Any = js.native
   /**
     * Parse the blob from the protos into the internal Blob class. Note that the
@@ -78,14 +80,6 @@ class JsonProtoSerializer protected () extends js.Object {
   var fullyQualifiedPrefixPath: js.Any = js.native
   var isValidResourceName: js.Any = js.native
   var options: js.Any = js.native
-  /**
-    * Returns a value for bytes that's appropriate to put in a proto.
-    * DO NOT USE THIS FOR ANYTHING ELSE.
-    * This method cheats. It's typed as returning "string" because that's what
-    * our generated proto interfaces say bytes must be. But it should return
-    * an Uint8Array in Node.
-    */
-  var toBytes: js.Any = js.native
   var toCursor: js.Any = js.native
   var toFieldTransform: js.Any = js.native
   var toFilter: js.Any = js.native
@@ -110,8 +104,13 @@ class JsonProtoSerializer protected () extends js.Object {
     */
   var toTimestamp: js.Any = js.native
   var toWatchTargetChangeState: js.Any = js.native
-  var unsafeCastProtoByteString: js.Any = js.native
   def encodedDatabaseId(): String = js.native
+  def fromBytes(): ByteString = js.native
+  /**
+    * Returns a ByteString based on the proto string value.
+    */
+  def fromBytes(value: String): ByteString = js.native
+  def fromBytes(value: Uint8Array): ByteString = js.native
   def fromDirection(): js.UndefOr[Direction] = js.native
   def fromDirection(dir: OrderDirection): js.UndefOr[Direction] = js.native
   def fromDocument(document: Document): typings.firebaseFirestore.modelDocumentMod.Document = js.native
@@ -140,6 +139,17 @@ class JsonProtoSerializer protected () extends js.Object {
   def fromWriteResults(protos: js.Array[WriteResult]): js.Array[MutationResult] = js.native
   def fromWriteResults(protos: js.Array[WriteResult], commitTime: String): js.Array[MutationResult] = js.native
   def toArrayValue(array: ArrayValue): typings.firebaseFirestore.firestoreProtoApiMod.ArrayValue = js.native
+  /**
+    * Returns a value for bytes that's appropriate to put in a proto.
+    * DO NOT USE THIS FOR ANYTHING ELSE.
+    * This method cheats. It's typed as returning "string" because that's what
+    * our generated proto interfaces say bytes must be. But it should return
+    * an Uint8Array in Node.
+    *
+    * Visible for testing.
+    */
+  def toBytes(bytes: Blob): String = js.native
+  def toBytes(bytes: ByteString): String = js.native
   def toDirection(dir: Direction): OrderDirection = js.native
   def toDocument(document: typings.firebaseFirestore.modelDocumentMod.Document): Document = js.native
   def toDocumentMask(fieldMask: FieldMask): DocumentMask = js.native

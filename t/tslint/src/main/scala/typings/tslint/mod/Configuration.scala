@@ -1,7 +1,7 @@
 package typings.tslint.mod
 
 import typings.std.Map
-import typings.std.Partial
+import typings.tslint.PartialIOptions
 import typings.tslint.configurationMod.IConfigurationFile
 import typings.tslint.configurationMod.IConfigurationLoadResult
 import typings.tslint.configurationMod.RawConfigFile
@@ -19,7 +19,7 @@ object Configuration extends js.Object {
   val DEFAULT_CONFIG: IConfigurationFile = js.native
   val EMPTY_CONFIG: IConfigurationFile = js.native
   val JSON_CONFIG_FILENAME: tslintDotjson = js.native
-  def convertRuleOptions(ruleConfiguration: Map[String, Partial[IOptions]]): js.Array[IOptions] = js.native
+  def convertRuleOptions(ruleConfiguration: Map[String, PartialIOptions]): js.Array[IOptions] = js.native
   def extendConfigurationFile(targetConfig: IConfigurationFile, nextConfigSource: IConfigurationFile): IConfigurationFile = js.native
   def findConfiguration(configFile: String): IConfigurationLoadResult = js.native
   def findConfiguration(configFile: String, inputFilePath: String): IConfigurationLoadResult = js.native

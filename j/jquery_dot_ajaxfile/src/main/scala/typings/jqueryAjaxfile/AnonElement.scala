@@ -1,11 +1,20 @@
 package typings.jqueryAjaxfile
 
-import org.scalablytyped.runtime.Instantiable1
-import typings.std.Element
+import typings.std.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
-trait AnonElement extends Instantiable1[/* element */ Element, KnockoutTemplateSourcesDomElement]
+trait AnonElement extends js.Object {
+  var element: Node
+}
+
+object AnonElement {
+  @scala.inline
+  def apply(element: Node): AnonElement = {
+    val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[AnonElement]
+  }
+}
 

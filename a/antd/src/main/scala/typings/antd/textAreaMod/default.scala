@@ -1,6 +1,6 @@
 package typings.antd.textAreaMod
 
-import typings.antd.AnonValueArray
+import typings.antd.Anon0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,6 +15,6 @@ class default protected () extends TextArea {
 @JSImport("antd/lib/input/TextArea", JSImport.Default)
 @js.native
 object default extends js.Object {
-  def getDerivedStateFromProps(nextProps: TextAreaProps): AnonValueArray | Null = js.native
+  def getDerivedStateFromProps(nextProps: TextAreaProps): Anon0 | Null = js.native
 }
 

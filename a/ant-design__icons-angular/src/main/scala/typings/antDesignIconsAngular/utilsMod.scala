@@ -1,8 +1,8 @@
 package typings.antDesignIconsAngular
 
 import typings.antDesignIconsAngular.antDesignIconsAngularStrings.`[@ant-designSlashicons-angular]Colon`
-import typings.antDesignIconsAngular.antDesignIconsAngularTypesMod.IconDefinition
-import typings.antDesignIconsAngular.antDesignIconsAngularTypesMod.ThemeType
+import typings.antDesignIconsAngular.typesMod.IconDefinition
+import typings.antDesignIconsAngular.typesMod.ThemeType
 import typings.std.SVGElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

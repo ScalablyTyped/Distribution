@@ -7,17 +7,13 @@ import scala.scalajs.js.annotation._
 package object mod {
   type CellFormatter = js.Function2[
     /* value */ js.Any, 
-    /* props */ typings.reactabularTable.AnonColumnColumnIndexRowDataRowIndex, 
+    /* props */ typings.reactabularTable.AnonRowIndex, 
     java.lang.String | typings.react.mod._Global_.JSX.Element
   ]
-  type CellTransform = js.Function2[
-    /* value */ js.Any, 
-    /* props */ typings.reactabularTable.AnonColumnColumnIndex, 
-    js.Any
-  ]
+  type CellTransform = js.Function2[/* value */ js.Any, /* props */ typings.reactabularTable.AnonColumnIndex, js.Any]
   type ColumnFormatter = js.Function2[
     /* label */ java.lang.String | typings.react.mod._Global_.JSX.Element, 
-    /* props */ typings.reactabularTable.AnonColumnColumnIndexRowData, 
+    /* props */ typings.reactabularTable.AnonRowData, 
     java.lang.String | typings.react.mod._Global_.JSX.Element
   ]
   type ColumnTransform = js.Function2[

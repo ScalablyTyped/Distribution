@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ionic/angular/dist/directives/proxies", "IonSkeletonText")
+@JSImport("@ionic/angular/directives/proxies", "IonSkeletonText")
 @js.native
 class IonSkeletonText protected ()
   extends typings.ionicCore.componentsMod.Components.IonSkeletonText {

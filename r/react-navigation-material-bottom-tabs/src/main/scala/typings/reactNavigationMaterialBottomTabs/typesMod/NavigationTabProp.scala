@@ -1,6 +1,6 @@
 package typings.reactNavigationMaterialBottomTabs.typesMod
 
-import typings.reactNavigation.AnonActionKey
+import typings.reactNavigation.AnonKey
 import typings.reactNavigation.AnonParamsP
 import typings.reactNavigation.mod.NavigationAction
 import typings.reactNavigation.mod.NavigationDispatch
@@ -43,7 +43,7 @@ trait NavigationTabProp[State, Params] extends js.Object {
   def isFocused(): Boolean = js.native
   def jumpTo(routeName: String): Unit = js.native
   def jumpTo(routeName: String, key: String): Unit = js.native
-  def navigate[T /* <: NavigationParams */](options: AnonActionKey[T]): Boolean = js.native
+  def navigate[T /* <: NavigationParams */](options: AnonKey[T]): Boolean = js.native
   def navigate[T /* <: NavigationParams */](routeNameOrOptions: String): Boolean = js.native
   def navigate[T /* <: NavigationParams */](routeNameOrOptions: String, params: T): Boolean = js.native
   def navigate[T /* <: NavigationParams */](routeNameOrOptions: String, params: T, action: NavigationAction): Boolean = js.native

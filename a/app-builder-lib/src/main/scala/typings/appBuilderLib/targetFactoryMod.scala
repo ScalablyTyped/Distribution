@@ -17,6 +17,8 @@ object targetFactoryMod extends js.Object {
     def this(name: String) = this()
     @JSName("options")
     val options_NoOpTarget: Null = js.native
+    @JSName("outDir")
+    def outDir_MNoOpTarget(): String = js.native
   }
   
   def computeArchToTargetNamesMap(raw: Map[Arch, js.Array[String]], platformPackager: PlatformPackager[_], platform: Platform): Map[Arch, js.Array[String]] = js.native

@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait JsxOpeningElement
   extends Expression
+     with HasTypeArguments
      with JsxOpeningLikeElement {
   var attributes: JsxAttributes = js.native
   @JSName("kind")

@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/* -------------------------------------------- ANCHORS -------------------------------------------------------- */
 /* Rewritten from type alias, can be one of: 
   - typings.jsplumb.jsplumbNumbers.`-1`
   - typings.jsplumb.jsplumbNumbers.`0`

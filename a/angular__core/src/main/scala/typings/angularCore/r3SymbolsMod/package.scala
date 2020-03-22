@@ -6,8 +6,11 @@ import scala.scalajs.js.annotation._
 
 package object r3SymbolsMod {
   /**
-    * Describes how the `Injector` should be configured as static (that is, without reflection).
-    * @see ["Dependency Injection Guide"](guide/dependency-injection).
+    * Describes how an `Injector` should be configured as static (that is, without reflection).
+    * A static provider provides tokens to an injector for various types of dependencies.
+    *
+    * @see [Injector.create()](/api/core/Injector#create).
+    * @see ["Dependency Injection Guide"](guide/dependency-injection-providers).
     *
     * @publicApi
     */
@@ -20,5 +23,6 @@ package object r3SymbolsMod {
     - js.Array[js.Any]
   */
   type StaticProvider = typings.angularCore.r3SymbolsMod._StaticProvider | js.Array[js.Any]
+  type ɵɵFactoryDef[T] = js.Function0[T]
   type ɵɵNgModuleDefWithMeta[T, Declarations, Imports, Exports] = typings.angularCore.r3SymbolsMod.NgModuleDef[T]
 }

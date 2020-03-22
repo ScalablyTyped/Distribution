@@ -1,7 +1,6 @@
 package typings.antd.badgeMod
 
-import typings.antd.AnonCountDot
-import typings.antd.AnonCountDotOverflowCount
+import typings.antd.AnonDot
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +13,6 @@ class default () extends Badge
 @JSImport("antd/lib/badge", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: AnonCountDot = js.native
-  var propTypes: AnonCountDotOverflowCount = js.native
+  var defaultProps: AnonDot = js.native
 }
 

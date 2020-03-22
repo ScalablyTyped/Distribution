@@ -1,22 +1,20 @@
 package typings.universalRouter.mod
 
-import typings.std.Map
-import typings.universalRouter.AnonRouter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait UniversalRouter[C /* <: Context */, R] extends js.Object {
+trait UniversalRouter[R, C /* <: RouterContext */] extends js.Object {
   var baseUrl: String = js.native
-  var context: C with (AnonRouter[C, R]) = js.native
-  var errorHandler: js.UndefOr[ErrorHandler[C, R]] = js.native
-  @JSName("resolveRoute")
-  var resolveRoute_Original: ResolveRoute[C, R] = js.native
-  var root: Route[C, R] = js.native
-  var routesByName: js.UndefOr[Map[String, Route[C, R]]] = js.native
-  def resolve(pathnameOrContext: String): js.Promise[R] = js.native
-  def resolve(pathnameOrContext: ResolveContext): js.Promise[R] = js.native
-  def resolveRoute(context: C with (RouteContext[C, R]), params: QueryParams): Result[R] = js.native
+  var options: RouterOptions[R, C] = js.native
+  var root: Route[R, C] = js.native
+  /**
+    * Traverses the list of routes in the order they are defined until it finds
+    * the first route that matches provided URL path string and whose action function
+    * returns anything other than `null` or `undefined`.
+    */
+  def resolve(pathnameOrContext: String): RouteResult[R] = js.native
+  def resolve(pathnameOrContext: ResolveContext): RouteResult[R] = js.native
 }
 

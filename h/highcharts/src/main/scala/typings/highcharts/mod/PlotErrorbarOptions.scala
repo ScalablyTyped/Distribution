@@ -8,10 +8,9 @@ import scala.scalajs.js.annotation._
 
 trait PlotErrorbarOptions extends js.Object {
   /**
-    * (Highcharts, Highstock) Accessibility options for a series. Requires the
-    * accessibility module.
+    * (Highcharts, Highstock) Accessibility options for a series.
     */
-  var accessibility: js.UndefOr[js.Object | PlotErrorbarAccessibilityOptions] = js.undefined
+  var accessibility: js.UndefOr[SeriesAccessibilityOptionsObject] = js.undefined
   /**
     * (Highmaps) Whether all areas of the map defined in `mapData` should be
     * rendered. If `true`, areas which don't correspond to a data point, are
@@ -45,7 +44,7 @@ trait PlotErrorbarOptions extends js.Object {
     * Due to poor performance, animation is disabled in old IE browsers for
     * several chart types.
     */
-  var animation: js.UndefOr[Boolean | AnimationOptionsObject | PlotErrorbarAnimationOptions] = js.undefined
+  var animation: js.UndefOr[Boolean | AnimationOptionsObject] = js.undefined
   /**
     * (Highcharts, Highstock) For some series, there is a limit that shuts down
     * initial animation by default when the total number of points in the chart
@@ -149,18 +148,19 @@ trait PlotErrorbarOptions extends js.Object {
   var compareBase: js.UndefOr[`0` | `100`] = js.undefined
   /**
     * (Highstock) Defines if comparison should start from the first point
-    * within the visible range or should start from the first point (see online
-    * documentation for example) the range. In other words, this flag
-    * determines if first point within the visible range will have 0%
-    * (`compareStart=true`) or should have been already calculated according to
-    * the previous point (`compareStart=false`).
+    * within the visible range or should start from the first point **before**
+    * the range.
+    *
+    * In other words, this flag determines if first point within the visible
+    * range will have 0% (`compareStart=true`) or should have been already
+    * calculated according to the previous point (`compareStart=false`).
     */
   var compareStart: js.UndefOr[Boolean] = js.undefined
   /**
     * (Gantt) Override Pathfinder connector options for a series. Requires
     * Highcharts Gantt to be loaded.
     */
-  var connectors: js.UndefOr[PlotErrorbarConnectorsOptions] = js.undefined
+  var connectors: js.UndefOr[SeriesConnectorsOptionsObject] = js.undefined
   /**
     * (Highcharts, Highstock, Gantt) When true, each column edge is rounded to
     * its nearest pixel in order to render sharp on screen. In some cases, when
@@ -204,10 +204,10 @@ trait PlotErrorbarOptions extends js.Object {
     * of the first point instance are copied over to the group point. This can
     * be altered through a custom `approximation` callback function.
     */
-  var dataGrouping: js.UndefOr[PlotErrorbarDataGroupingOptions] = js.undefined
+  var dataGrouping: js.UndefOr[DataGroupingOptionsObject] = js.undefined
   /**
-    * (Highcharts, Highstock) Options for the series data labels, appearing
-    * next to each data point.
+    * (Highcharts, Highstock, Highmaps, Gantt) Options for the series data
+    * labels, appearing next to each data point.
     *
     * Since v6.2.0, multiple data labels can be applied to each single point by
     * defining them as an array of configs.
@@ -216,7 +216,11 @@ trait PlotErrorbarOptions extends js.Object {
     * `.highcharts-data-label-box` and `.highcharts-data-label` class names
     * (see example).
     */
-  var dataLabels: js.UndefOr[js.Any] = js.undefined
+  var dataLabels: js.UndefOr[DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject]] = js.undefined
+  /**
+    * (Highcharts, Highstock) Options for the series data sorting.
+    */
+  var dataSorting: js.UndefOr[DataSortingOptionsObject | PlotErrorbarDataSortingOptions] = js.undefined
   /**
     * (Highcharts) Depth of the columns in a 3D column chart.
     */
@@ -232,7 +236,7 @@ trait PlotErrorbarOptions extends js.Object {
     * mentioned under the `dragDrop` API structure, the module fires three
     * events, point.dragStart, point.drag and point.drop.
     */
-  var dragDrop: js.UndefOr[PlotErrorbarDragDropOptions] = js.undefined
+  var dragDrop: js.UndefOr[SeriesDragDropOptionsObject] = js.undefined
   /**
     * (Highcharts) 3D columns only. The color of the edges. Similar to
     * `borderColor`, except it defaults to the same color as the column.
@@ -253,7 +257,7 @@ trait PlotErrorbarOptions extends js.Object {
     * These event hooks can also be attached to the series at run time using
     * the `Highcharts.addEvent` function.
     */
-  var events: js.UndefOr[PlotErrorbarEventsOptions] = js.undefined
+  var events: js.UndefOr[SeriesEventsOptionsObject] = js.undefined
   /**
     * (Highcharts) The fill color of the box.
     *
@@ -330,15 +334,15 @@ trait PlotErrorbarOptions extends js.Object {
     * The series labels currently work with series types having a `graph` or an
     * `area`.
     */
-  var label: js.UndefOr[PlotErrorbarLabelOptions] = js.undefined
+  var label: js.UndefOr[SeriesLabelOptionsObject] = js.undefined
   /**
     * (Highstock) The line marks the last price from all points.
     */
-  var lastPrice: js.UndefOr[PlotErrorbarLastPriceOptions] = js.undefined
+  var lastPrice: js.UndefOr[SeriesLastPriceOptionsObject] = js.undefined
   /**
     * (Highstock) The line marks the last price from visible range of points.
     */
-  var lastVisiblePrice: js.UndefOr[PlotErrorbarLastVisiblePriceOptions] = js.undefined
+  var lastVisiblePrice: js.UndefOr[SeriesLastVisiblePriceOptionsObject] = js.undefined
   /**
     * (Highcharts) The width of the line surrounding the box. If any of
     * stemWidth, medianWidth or whiskerWidth are `null`, the lineWidth also
@@ -392,7 +396,9 @@ trait PlotErrorbarOptions extends js.Object {
   var navigatorOptions: js.UndefOr[PlotSeriesOptions] = js.undefined
   /**
     * (Highcharts, Highstock) The color for the parts of the graph or points
-    * that are below the threshold.
+    * that are below the threshold. Note that `zones` takes precedence over the
+    * negative color. Using `negativeColor` is equivalent to applying a zone
+    * with value of 0.
     */
   var negativeColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
@@ -403,7 +409,7 @@ trait PlotErrorbarOptions extends js.Object {
   /**
     * (Highcharts, Highstock) Properties for each single point.
     */
-  var point: js.UndefOr[PlotErrorbarPointOptions] = js.undefined
+  var point: js.UndefOr[PlotSeriesPointOptions] = js.undefined
   /**
     * (Highcharts, Highstock) Same as accessibility.pointDescriptionFormatter,
     * but for an individual series. Overrides the chart wide configuration.
@@ -475,6 +481,8 @@ trait PlotErrorbarOptions extends js.Object {
     *
     * The default `null` means it is computed automatically, but this option
     * can be used to override the automatic value.
+    *
+    * This option is set by default to 1 if data sorting is enabled.
     */
   var pointRange: js.UndefOr[Double | Null] = js.undefined
   /**
@@ -577,13 +585,13 @@ trait PlotErrorbarOptions extends js.Object {
     * distinguishing between values above and below a threshold. If `null`, the
     * columns extend from the padding Y axis minimum.
     */
-  var threshold: js.UndefOr[js.Any] = js.undefined
+  var threshold: js.UndefOr[Double] = js.undefined
   /**
     * (Highcharts, Highstock) A configuration object for the tooltip rendering
     * of each single series. Properties are inherited from tooltip, but only
     * the following properties can be defined on a series level.
     */
-  var tooltip: js.UndefOr[PlotErrorbarTooltipOptions] = js.undefined
+  var tooltip: js.UndefOr[SeriesTooltipOptionsObject] = js.undefined
   /**
     * (Highcharts, Highstock, Gantt) When a series contains a data array that
     * is longer than this, only one dimensional arrays of numbers, or two
@@ -637,16 +645,16 @@ trait PlotErrorbarOptions extends js.Object {
     * `.highcharts-zone-{n}` class, or custom classed from the `className`
     * option (view live demo).
     */
-  var zones: js.UndefOr[js.Array[PlotErrorbarZonesOptions]] = js.undefined
+  var zones: js.UndefOr[js.Array[SeriesZonesOptionsObject]] = js.undefined
 }
 
 object PlotErrorbarOptions {
   @scala.inline
   def apply(
-    accessibility: js.Object | PlotErrorbarAccessibilityOptions = null,
+    accessibility: SeriesAccessibilityOptionsObject = null,
     allAreas: js.UndefOr[Boolean] = js.undefined,
     allowPointSelect: js.UndefOr[Boolean] = js.undefined,
-    animation: Boolean | AnimationOptionsObject | PlotErrorbarAnimationOptions = null,
+    animation: Boolean | AnimationOptionsObject = null,
     animationLimit: Int | Double = null,
     boostBlending: OptionsBoostBlendingValue = null,
     boostThreshold: Int | Double = null,
@@ -661,19 +669,20 @@ object PlotErrorbarOptions {
     compare: String = null,
     compareBase: `0` | `100` = null,
     compareStart: js.UndefOr[Boolean] = js.undefined,
-    connectors: PlotErrorbarConnectorsOptions = null,
+    connectors: SeriesConnectorsOptionsObject = null,
     crisp: js.UndefOr[Boolean] = js.undefined,
     cropThreshold: Int | Double = null,
     cursor: String | CursorValue = null,
-    dataGrouping: PlotErrorbarDataGroupingOptions = null,
-    dataLabels: js.Any = null,
+    dataGrouping: DataGroupingOptionsObject = null,
+    dataLabels: DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject] = null,
+    dataSorting: DataSortingOptionsObject | PlotErrorbarDataSortingOptions = null,
     depth: Int | Double = null,
     description: String = null,
-    dragDrop: PlotErrorbarDragDropOptions = null,
+    dragDrop: SeriesDragDropOptionsObject = null,
     edgeColor: ColorString = null,
     edgeWidth: Int | Double = null,
     enableMouseTracking: js.UndefOr[Boolean] = js.undefined,
-    events: PlotErrorbarEventsOptions = null,
+    events: SeriesEventsOptionsObject = null,
     fillColor: ColorString | GradientColorObject | PatternObject = null,
     findNearestPointBy: OptionsFindNearestPointByValue = null,
     getExtremesFromAll: js.UndefOr[Boolean] = js.undefined,
@@ -682,9 +691,9 @@ object PlotErrorbarOptions {
     includeInDataExport: js.UndefOr[Boolean] = js.undefined,
     joinBy: String | js.Array[String] = null,
     keys: js.Array[String] = null,
-    label: PlotErrorbarLabelOptions = null,
-    lastPrice: PlotErrorbarLastPriceOptions = null,
-    lastVisiblePrice: PlotErrorbarLastVisiblePriceOptions = null,
+    label: SeriesLabelOptionsObject = null,
+    lastPrice: SeriesLastPriceOptionsObject = null,
+    lastVisiblePrice: SeriesLastVisiblePriceOptionsObject = null,
     lineWidth: Int | Double = null,
     linkedTo: String = null,
     maxPointWidth: Int | Double = null,
@@ -694,7 +703,7 @@ object PlotErrorbarOptions {
     navigatorOptions: PlotSeriesOptions = null,
     negativeColor: ColorString | GradientColorObject | PatternObject = null,
     opacity: Int | Double = null,
-    point: PlotErrorbarPointOptions = null,
+    point: PlotSeriesPointOptions = null,
     pointDescriptionFormatter: js.Function = null,
     pointInterval: Int | Double = null,
     pointIntervalUnit: OptionsPointIntervalUnitValue = null,
@@ -714,8 +723,8 @@ object PlotErrorbarOptions {
     stemDashStyle: DashStyleValue = null,
     stemWidth: Int | Double = null,
     stickyTracking: js.UndefOr[Boolean] = js.undefined,
-    threshold: js.Any = null,
-    tooltip: PlotErrorbarTooltipOptions = null,
+    threshold: Int | Double = null,
+    tooltip: SeriesTooltipOptionsObject = null,
     turboThreshold: Int | Double = null,
     visible: js.UndefOr[Boolean] = js.undefined,
     whiskerColor: ColorString | GradientColorObject | PatternObject = null,
@@ -723,7 +732,7 @@ object PlotErrorbarOptions {
     whiskerWidth: Int | Double = null,
     zIndex: Int | Double = null,
     zoneAxis: String = null,
-    zones: js.Array[PlotErrorbarZonesOptions] = null
+    zones: js.Array[SeriesZonesOptionsObject] = null
   ): PlotErrorbarOptions = {
     val __obj = js.Dynamic.literal()
     if (accessibility != null) __obj.updateDynamic("accessibility")(accessibility.asInstanceOf[js.Any])
@@ -750,6 +759,7 @@ object PlotErrorbarOptions {
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
     if (dataGrouping != null) __obj.updateDynamic("dataGrouping")(dataGrouping.asInstanceOf[js.Any])
     if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
+    if (dataSorting != null) __obj.updateDynamic("dataSorting")(dataSorting.asInstanceOf[js.Any])
     if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (dragDrop != null) __obj.updateDynamic("dragDrop")(dragDrop.asInstanceOf[js.Any])

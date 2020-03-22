@@ -14,9 +14,6 @@ object jqueryStrings {
   sealed trait Promise extends js.Object
   
   @js.native
-  sealed trait _TypeEventHandlers extends js.Object
-  
-  @js.native
   sealed trait _empty extends _Falsy
   
   @js.native
@@ -112,9 +109,6 @@ object jqueryStrings {
   
   @js.native
   sealed trait keyup extends js.Object
-  
-  @js.native
-  sealed trait left extends js.Object
   
   @js.native
   sealed trait mousedown extends js.Object
@@ -214,9 +208,6 @@ object jqueryStrings {
        with TextStatus
   
   @js.native
-  sealed trait top extends js.Object
-  
-  @js.native
   sealed trait touchcancel extends js.Object
   
   @js.native
@@ -236,8 +227,6 @@ object jqueryStrings {
   
   @scala.inline
   def Promise: Promise = "Promise".asInstanceOf[Promise]
-  @scala.inline
-  def _TypeEventHandlers: _TypeEventHandlers = "_TypeEventHandlers".asInstanceOf[_TypeEventHandlers]
   @scala.inline
   def _empty: _empty = "".asInstanceOf[_empty]
   @scala.inline
@@ -301,8 +290,6 @@ object jqueryStrings {
   @scala.inline
   def keyup: keyup = "keyup".asInstanceOf[keyup]
   @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
   def mousedown: mousedown = "mousedown".asInstanceOf[mousedown]
   @scala.inline
   def mouseenter: mouseenter = "mouseenter".asInstanceOf[mouseenter]
@@ -360,8 +347,6 @@ object jqueryStrings {
   def text: text = "text".asInstanceOf[text]
   @scala.inline
   def timeout: timeout = "timeout".asInstanceOf[timeout]
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
   @scala.inline
   def touchcancel: touchcancel = "touchcancel".asInstanceOf[touchcancel]
   @scala.inline

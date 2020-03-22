@@ -181,13 +181,13 @@ trait ActiveXObject extends js.Object {
     obj: InternetExplorerMedium,
     event: NewProcess,
     argNames: js.Tuple3[lCauseFlag, pWB2, Cancel],
-    handler: js.ThisFunction1[/* this */ InternetExplorerMedium, /* parameter */ AnonCancelLCauseFlag, Unit]
+    handler: js.ThisFunction1[/* this */ InternetExplorerMedium, /* parameter */ AnonLCauseFlag, Unit]
   ): Unit = js.native
   def on(
     obj: InternetExplorerMedium,
     event: NewWindow2,
     argNames: js.Tuple2[ppDisp, Cancel],
-    handler: js.ThisFunction1[/* this */ InternetExplorerMedium, /* parameter */ AnonCancelPpDisp, Unit]
+    handler: js.ThisFunction1[/* this */ InternetExplorerMedium, /* parameter */ AnonPpDisp, Unit]
   ): Unit = js.native
   def on(
     obj: InternetExplorerMedium,
@@ -319,7 +319,7 @@ trait ActiveXObject extends js.Object {
     obj: InternetExplorerMedium,
     event: WindowClosing,
     argNames: js.Tuple2[IsChildWindow, Cancel],
-    handler: js.ThisFunction1[/* this */ InternetExplorerMedium, /* parameter */ AnonCancelIsChildWindow, Unit]
+    handler: js.ThisFunction1[/* this */ InternetExplorerMedium, /* parameter */ AnonIsChildWindow, Unit]
   ): Unit = js.native
   def on(
     obj: InternetExplorerMedium,
@@ -403,13 +403,13 @@ trait ActiveXObject extends js.Object {
     obj: InternetExplorer,
     event: NewProcess,
     argNames: js.Tuple3[lCauseFlag, pWB2, Cancel],
-    handler: js.ThisFunction1[/* this */ InternetExplorer, /* parameter */ AnonCancelLCauseFlag, Unit]
+    handler: js.ThisFunction1[/* this */ InternetExplorer, /* parameter */ AnonLCauseFlag, Unit]
   ): Unit = js.native
   def on(
     obj: InternetExplorer,
     event: NewWindow2,
     argNames: js.Tuple2[ppDisp, Cancel],
-    handler: js.ThisFunction1[/* this */ InternetExplorer, /* parameter */ AnonCancelPpDisp, Unit]
+    handler: js.ThisFunction1[/* this */ InternetExplorer, /* parameter */ AnonPpDisp, Unit]
   ): Unit = js.native
   def on(
     obj: InternetExplorer,
@@ -541,7 +541,7 @@ trait ActiveXObject extends js.Object {
     obj: InternetExplorer,
     event: WindowClosing,
     argNames: js.Tuple2[IsChildWindow, Cancel],
-    handler: js.ThisFunction1[/* this */ InternetExplorer, /* parameter */ AnonCancelIsChildWindow, Unit]
+    handler: js.ThisFunction1[/* this */ InternetExplorer, /* parameter */ AnonIsChildWindow, Unit]
   ): Unit = js.native
   def on(
     obj: InternetExplorer,
@@ -625,13 +625,13 @@ trait ActiveXObject extends js.Object {
     obj: ShellBrowserWindow,
     event: NewProcess,
     argNames: js.Tuple3[lCauseFlag, pWB2, Cancel],
-    handler: js.ThisFunction1[/* this */ ShellBrowserWindow, /* parameter */ AnonCancelLCauseFlag, Unit]
+    handler: js.ThisFunction1[/* this */ ShellBrowserWindow, /* parameter */ AnonLCauseFlag, Unit]
   ): Unit = js.native
   def on(
     obj: ShellBrowserWindow,
     event: NewWindow2,
     argNames: js.Tuple2[ppDisp, Cancel],
-    handler: js.ThisFunction1[/* this */ ShellBrowserWindow, /* parameter */ AnonCancelPpDisp, Unit]
+    handler: js.ThisFunction1[/* this */ ShellBrowserWindow, /* parameter */ AnonPpDisp, Unit]
   ): Unit = js.native
   def on(
     obj: ShellBrowserWindow,
@@ -763,7 +763,7 @@ trait ActiveXObject extends js.Object {
     obj: ShellBrowserWindow,
     event: WindowClosing,
     argNames: js.Tuple2[IsChildWindow, Cancel],
-    handler: js.ThisFunction1[/* this */ ShellBrowserWindow, /* parameter */ AnonCancelIsChildWindow, Unit]
+    handler: js.ThisFunction1[/* this */ ShellBrowserWindow, /* parameter */ AnonIsChildWindow, Unit]
   ): Unit = js.native
   def on(
     obj: ShellBrowserWindow,
@@ -907,13 +907,13 @@ trait ActiveXObject extends js.Object {
     obj: WebBrowser,
     event: NewProcess,
     argNames: js.Tuple3[lCauseFlag, pWB2, Cancel],
-    handler: js.ThisFunction1[/* this */ WebBrowser, /* parameter */ AnonCancelLCauseFlag, Unit]
+    handler: js.ThisFunction1[/* this */ WebBrowser, /* parameter */ AnonLCauseFlag, Unit]
   ): Unit = js.native
   def on(
     obj: WebBrowser,
     event: NewWindow2,
     argNames: js.Tuple2[ppDisp, Cancel],
-    handler: js.ThisFunction1[/* this */ WebBrowser, /* parameter */ AnonCancelPpDisp, Unit]
+    handler: js.ThisFunction1[/* this */ WebBrowser, /* parameter */ AnonPpDisp, Unit]
   ): Unit = js.native
   def on(
     obj: WebBrowser,
@@ -1045,7 +1045,7 @@ trait ActiveXObject extends js.Object {
     obj: WebBrowser,
     event: WindowClosing,
     argNames: js.Tuple2[IsChildWindow, Cancel],
-    handler: js.ThisFunction1[/* this */ WebBrowser, /* parameter */ AnonCancelIsChildWindow, Unit]
+    handler: js.ThisFunction1[/* this */ WebBrowser, /* parameter */ AnonIsChildWindow, Unit]
   ): Unit = js.native
   def on(
     obj: WebBrowser,

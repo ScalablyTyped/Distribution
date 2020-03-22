@@ -1,5 +1,6 @@
 package typings.karmaViewport.viewportMod
 
+import typings.karmaViewport.ReadonlyViewportConfigura
 import typings.karmaViewport.adapterMod._Global_.Window
 import typings.std.HTMLIFrameElement
 import scala.scalajs.js
@@ -21,7 +22,7 @@ class Viewport protected () extends js.Object {
   /**
     * Viewport configuration
     */
-  var config: ViewportConfiguration = js.native
+  var config: ReadonlyViewportConfigura = js.native
   /**
     * Viewport context
     */

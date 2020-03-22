@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jupyterlab/coreutils" : "3.2.0"
+      "@jupyterlab/coreutils" : "4.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@jupyterlab/coreutils" : "3.2.0"
+      "@jupyterlab/coreutils" : "4.0.0"
     }
   ],
   "compile-devDependencies" : [

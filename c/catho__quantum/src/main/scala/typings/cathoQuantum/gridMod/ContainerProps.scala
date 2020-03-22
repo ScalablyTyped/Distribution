@@ -1,6 +1,6 @@
 package typings.cathoQuantum.gridMod
 
-import typings.cathoQuantum.AnonBreakpoints
+import typings.cathoQuantum.AnonBreakpointsComponents
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ trait ContainerProps extends js.Object {
   var fluid: js.UndefOr[Boolean] = js.undefined
   var hide: js.UndefOr[BreakpointsType | js.Array[String]] = js.undefined
   var `no-gutters`: js.UndefOr[Boolean] = js.undefined
-  var theme: js.UndefOr[AnonBreakpoints] = js.undefined
+  var theme: js.UndefOr[AnonBreakpointsComponents] = js.undefined
   var withBreakpoints: js.UndefOr[Boolean] = js.undefined
 }
 
@@ -19,7 +19,7 @@ object ContainerProps {
     fluid: js.UndefOr[Boolean] = js.undefined,
     hide: BreakpointsType | js.Array[String] = null,
     `no-gutters`: js.UndefOr[Boolean] = js.undefined,
-    theme: AnonBreakpoints = null,
+    theme: AnonBreakpointsComponents = null,
     withBreakpoints: js.UndefOr[Boolean] = js.undefined
   ): ContainerProps = {
     val __obj = js.Dynamic.literal()

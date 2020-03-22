@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Col
   extends Component[ColProps, js.Object, js.Any] {
-  def renderCol(hasGetPrefixCls: ConfigConsumerProps): Element = js.native
+  def renderCol(hasGetPrefixClsDirection: ConfigConsumerProps): Element = js.native
 }
 

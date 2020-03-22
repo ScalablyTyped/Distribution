@@ -35,7 +35,7 @@ object mod extends js.Object {
   @js.native
   class StoryStore protected ()
     extends typings.storybookClientApi.storyStoreMod.default {
-    def this(params: AnonChannel1090144233) = this()
+    def this(params: AnonChannelChannel) = this()
   }
   
   def addDecorator(decoratorFn: DecoratorFunction[_]): Unit = js.native

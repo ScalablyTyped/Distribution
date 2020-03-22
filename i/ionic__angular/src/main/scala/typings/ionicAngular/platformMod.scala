@@ -9,7 +9,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ionic/angular/dist/providers/platform", JSImport.Namespace)
+@JSImport("@ionic/angular/providers/platform", JSImport.Namespace)
 @js.native
 object platformMod extends js.Object {
   @js.native

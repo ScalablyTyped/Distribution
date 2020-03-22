@@ -1,6 +1,6 @@
 package typings.oracleOraclejet.ojtableMod.ojTable
 
-import typings.oracleOraclejet.AnonDatasourceD
+import typings.oracleOraclejet.Anon22
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -25,7 +25,7 @@ trait HeaderRendererContext[K, D] extends js.Object {
   var columnIndex: Double
   var componentElement: Element
   var data: String
-  var headerContext: AnonDatasourceD[K, D]
+  var headerContext: Anon22[K, D]
   var parentElement: Element
 }
 
@@ -35,7 +35,7 @@ object HeaderRendererContext {
     columnIndex: Double,
     componentElement: Element,
     data: String,
-    headerContext: AnonDatasourceD[K, D],
+    headerContext: Anon22[K, D],
     parentElement: Element,
     columnHeaderDefaultRenderer: (/* param0 */ js.Object, /* param1 */ js.Function1[/* param0 */ js.Object, Unit]) => Unit = null,
     columnHeaderSortableIconRenderer: (/* param0 */ js.Object, /* param1 */ js.Function1[/* param0 */ js.Object, Unit]) => Unit = null

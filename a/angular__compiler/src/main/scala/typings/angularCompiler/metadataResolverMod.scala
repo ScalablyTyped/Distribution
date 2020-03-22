@@ -143,6 +143,7 @@ object metadataResolverMod extends js.Object {
     def getProviderMetadata(provider: ProviderMeta): CompileProviderMetadata = js.native
     def getReflector(): CompileReflector = js.native
     def getShallowModuleMetadata(moduleType: js.Any): CompileShallowModuleMetadata | Null = js.native
+    def isAbstractDirective(`type`: js.Any): Boolean = js.native
     def isDirective(`type`: js.Any): Boolean = js.native
     def isInjectable(`type`: js.Any): Boolean = js.native
     def isNgModule(`type`: js.Any): Boolean = js.native

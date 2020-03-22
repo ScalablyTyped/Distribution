@@ -1,6 +1,6 @@
 package typings.rbacA.mod
 
-import typings.rbacA.AnonRoles
+import typings.rbacA.AnonInstantiable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object Providers extends js.Object {
   /** Basic JSON permissions provider */
-  var JsonProvider: AnonRoles = js.native
+  var JsonProvider: AnonInstantiable = js.native
 }
 

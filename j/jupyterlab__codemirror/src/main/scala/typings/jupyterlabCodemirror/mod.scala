@@ -1,13 +1,17 @@
 package typings.jupyterlabCodemirror
 
 import typings.codemirror.mod.Editor
+import typings.codemirror.mod.StyleActiveLine
 import typings.jupyterlabCodeeditor.tokensMod.IEditorServices
-import typings.jupyterlabCodemirror.editorMod.CodeMirrorEditor.IConfig
 import typings.jupyterlabCodemirror.editorMod.CodeMirrorEditor.IOptions
+import typings.jupyterlabCodemirror.jupyterlabCodemirrorStrings.bounded
+import typings.jupyterlabCodemirror.jupyterlabCodemirrorStrings.off
+import typings.jupyterlabCodemirror.jupyterlabCodemirrorStrings.on
+import typings.jupyterlabCodemirror.jupyterlabCodemirrorStrings.wordWrapColumn
+import typings.jupyterlabCodemirror.modeMod.Mode.IMode
 import typings.jupyterlabCodemirror.modeMod.Mode.ISpec
 import typings.jupyterlabCodemirror.modeMod.Mode.ISpecLoader
 import typings.std.HTMLElement
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,7 +34,7 @@ object mod extends js.Object {
     */
   class CodeMirrorEditorFactory ()
     extends typings.jupyterlabCodemirror.factoryMod.CodeMirrorEditorFactory {
-    def this(defaults: Partial[IConfig]) = this()
+    def this(defaults: PartialIConfig) = this()
   }
   
   @js.native
@@ -50,10 +54,6 @@ object mod extends js.Object {
   @js.native
   object CodeMirrorEditor extends js.Object {
     /**
-      * The default configuration options for an editor.
-      */
-    var defaultConfig: IConfig = js.native
-    /**
       * Add a command to CodeMirror.
       *
       * @param name - The name of the command to add.
@@ -61,6 +61,45 @@ object mod extends js.Object {
       * @param command - The command function.
       */
     def addCommand(name: String, command: js.Function1[/* cm */ Editor, Unit]): Unit = js.native
+    /**
+      * The default configuration options for an editor.
+      */
+    @js.native
+    object defaultConfig extends js.Object {
+      var autoClosingBrackets: Boolean = js.native
+      var codeFolding: Boolean = js.native
+      var coverGutterNextToScrollbar: Boolean = js.native
+      var dragDrop: Boolean = js.native
+      var electricChars: Boolean = js.native
+      var extraKeys: js.Any = js.native
+      var fixedGutter: Boolean = js.native
+      var foldGutter: Boolean = js.native
+      var fontFamily: String = js.native
+      var fontSize: Double = js.native
+      var gutters: js.Array[String] = js.native
+      var insertSpaces: Boolean = js.native
+      var keyMap: String = js.native
+      var lineHeight: Double = js.native
+      var lineNumbers: Boolean = js.native
+      var lineSeparator: String = js.native
+      var lineWiseCopyCut: Boolean = js.native
+      var lineWrap: off | on | wordWrapColumn | bounded = js.native
+      var matchBrackets: Boolean = js.native
+      var mode: String | IMode = js.native
+      var readOnly: Boolean = js.native
+      var rulers: js.Array[Double] = js.native
+      var scrollPastEnd: Boolean = js.native
+      var scrollbarStyle: String = js.native
+      var selectionPointer: Boolean | String = js.native
+      var showCursorWhenSelecting: Boolean = js.native
+      var smartIndent: Boolean = js.native
+      var styleActiveLine: Boolean | StyleActiveLine = js.native
+      var styleSelectedText: Boolean = js.native
+      var tabSize: Double = js.native
+      var theme: String = js.native
+      var wordWrapColumn: Double = js.native
+    }
+    
   }
   
   @js.native
@@ -85,8 +124,8 @@ object mod extends js.Object {
       *
       * @returns A promise that resolves when the mode is available.
       */
-    def ensure(mode: String): js.Promise[ISpec] = js.native
-    def ensure(mode: ISpec): js.Promise[ISpec] = js.native
+    def ensure(mode: String): js.Promise[ISpec | Null] = js.native
+    def ensure(mode: ISpec): js.Promise[ISpec | Null] = js.native
     /**
       * Find a codemirror mode by name or CodeMirror spec.
       */
@@ -95,8 +134,8 @@ object mod extends js.Object {
     /**
       * Find a codemirror mode by extension.
       */
-    def findByExtension(ext: String): ISpec = js.native
-    def findByExtension(ext: js.Array[String]): ISpec = js.native
+    def findByExtension(ext: String): ISpec | Null = js.native
+    def findByExtension(ext: js.Array[String]): ISpec | Null = js.native
     /**
       * Find a codemirror mode by filename.
       */

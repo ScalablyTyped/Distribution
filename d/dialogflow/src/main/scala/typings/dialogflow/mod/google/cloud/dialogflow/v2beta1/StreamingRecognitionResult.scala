@@ -28,7 +28,7 @@ class StreamingRecognitionResult () extends IStreamingRecognitionResult {
   var isFinal_StreamingRecognitionResult: Boolean = js.native
   /** StreamingRecognitionResult messageType. */
   @JSName("messageType")
-  var messageType_StreamingRecognitionResult: MessageType = js.native
+  var messageType_StreamingRecognitionResult: MessageType | String = js.native
   /** StreamingRecognitionResult speechWordInfo. */
   @JSName("speechWordInfo")
   var speechWordInfo_StreamingRecognitionResult: js.Array[ISpeechWordInfo] = js.native

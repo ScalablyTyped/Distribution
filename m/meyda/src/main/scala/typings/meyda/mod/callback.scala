@@ -1,6 +1,6 @@
 package typings.meyda.mod
 
-import typings.std.Partial
+import typings.meyda.PartialMeydaFeaturesObjec
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("meyda", "callback")
 @js.native
 object callback extends js.Object {
-  def apply(features: Partial[MeydaFeaturesObject]): Unit | Null = js.native
+  def apply(features: PartialMeydaFeaturesObjec): Unit | Null = js.native
 }
 

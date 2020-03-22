@@ -1,6 +1,6 @@
 package typings.sendgrid.mod.SendGrid.Helpers.Mail
 
-import typings.sendgrid.AnonEnableUtmcampaign
+import typings.sendgrid.AnonUtmcampaign
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +18,7 @@ trait Ganalytics extends js.Object {
   def setUrmTerm(term: String): Unit
   def setUtmCampaign(campaign: String): Unit
   def setUtmSource(source: String): Unit
-  def toJSON(): AnonEnableUtmcampaign
+  def toJSON(): AnonUtmcampaign
 }
 
 object Ganalytics {
@@ -36,7 +36,7 @@ object Ganalytics {
     setUrmTerm: String => Unit,
     setUtmCampaign: String => Unit,
     setUtmSource: String => Unit,
-    toJSON: () => AnonEnableUtmcampaign
+    toJSON: () => AnonUtmcampaign
   ): Ganalytics = {
     val __obj = js.Dynamic.literal(getContent = js.Any.fromFunction0(getContent), getEnable = js.Any.fromFunction0(getEnable), getUrmMedium = js.Any.fromFunction0(getUrmMedium), getUrmTerm = js.Any.fromFunction0(getUrmTerm), getUtmCampaign = js.Any.fromFunction0(getUtmCampaign), getUtmSource = js.Any.fromFunction0(getUtmSource), setContent = js.Any.fromFunction1(setContent), setEnable = js.Any.fromFunction1(setEnable), setUrmMedium = js.Any.fromFunction1(setUrmMedium), setUrmTerm = js.Any.fromFunction1(setUrmTerm), setUtmCampaign = js.Any.fromFunction1(setUtmCampaign), setUtmSource = js.Any.fromFunction1(setUtmSource), toJSON = js.Any.fromFunction0(toJSON))
   

@@ -1,8 +1,8 @@
 package typings.recharts.mod
 
 import typings.react.mod.ReactNode
+import typings.recharts.PartialMargin
 import typings.recharts.rechartsStrings.centric
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,7 +23,7 @@ import scala.scalajs.js.annotation._
   var height: js.UndefOr[Double] = js.undefined
   var innerRadius: js.UndefOr[Double | String] = js.undefined
   var layout: js.UndefOr[centric] = js.undefined
-  var margin: js.UndefOr[Partial[Margin]] = js.undefined
+  var margin: js.UndefOr[PartialMargin] = js.undefined
   var maxBarSize: js.UndefOr[Double] = js.undefined
   var outerRadius: js.UndefOr[Double | String] = js.undefined
   var reverseStackOrder: js.UndefOr[Boolean] = js.undefined
@@ -52,7 +52,7 @@ object RadarChartProps {
     height: Int | Double = null,
     innerRadius: Double | String = null,
     layout: centric = null,
-    margin: Partial[Margin] = null,
+    margin: PartialMargin = null,
     maxBarSize: Int | Double = null,
     onClick: /* repeated */ js.Any => Unit = null,
     onMouseDown: /* repeated */ js.Any => Unit = null,

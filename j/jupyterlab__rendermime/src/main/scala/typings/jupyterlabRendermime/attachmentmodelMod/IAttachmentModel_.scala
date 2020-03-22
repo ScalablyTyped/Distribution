@@ -1,10 +1,10 @@
 package typings.jupyterlabRendermime.attachmentmodelMod
 
-import typings.jupyterlabCoreutils.nbformatMod.nbformat.IMimeBundle
+import typings.jupyterlabNbformat.mod.IMimeBundle
 import typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.IMimeModel
 import typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.IMimeModel.ISetDataOptions
-import typings.phosphorCoreutils.jsonMod.ReadonlyJSONObject
-import typings.phosphorSignaling.mod.ISignal
+import typings.luminoCoreutils.jsonMod.ReadonlyPartialJSONObject
+import typings.luminoSignaling.mod.ISignal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,9 +28,9 @@ object IAttachmentModel_ {
   @scala.inline
   def apply(
     changed: ISignal[IAttachmentModel_, Unit],
-    data: ReadonlyJSONObject,
+    data: ReadonlyPartialJSONObject,
     dispose: () => Unit,
-    metadata: ReadonlyJSONObject,
+    metadata: ReadonlyPartialJSONObject,
     setData: ISetDataOptions => Unit,
     toJSON: () => IMimeBundle,
     trusted: Boolean

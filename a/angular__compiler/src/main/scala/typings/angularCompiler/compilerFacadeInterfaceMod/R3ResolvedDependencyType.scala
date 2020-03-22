@@ -18,6 +18,9 @@ object R3ResolvedDependencyType extends js.Object {
   sealed trait ChangeDetectorRef extends R3ResolvedDependencyType
   
   @js.native
+  sealed trait Invalid extends R3ResolvedDependencyType
+  
+  @js.native
   sealed trait Token extends R3ResolvedDependencyType
   
   @JSBracketAccess
@@ -27,6 +30,9 @@ object R3ResolvedDependencyType extends js.Object {
   
   /* 2 */ @js.native
   object ChangeDetectorRef extends TopLevel[ChangeDetectorRef with Double]
+  
+  /* 3 */ @js.native
+  object Invalid extends TopLevel[Invalid with Double]
   
   /* 0 */ @js.native
   object Token extends TopLevel[Token with Double]

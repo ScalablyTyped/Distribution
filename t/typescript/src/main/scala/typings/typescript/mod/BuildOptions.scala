@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait BuildOptions
   extends /* option */ StringDictionary[js.UndefOr[CompilerOptionsValue]] {
+  var assumeChangesOnlyAffectDirectDependencies: js.UndefOr[Boolean] = js.undefined
   var dry: js.UndefOr[Boolean] = js.undefined
   var force: js.UndefOr[Boolean] = js.undefined
   var incremental: js.UndefOr[Boolean] = js.undefined
@@ -18,6 +19,7 @@ object BuildOptions {
   @scala.inline
   def apply(
     StringDictionary: /* option */ StringDictionary[js.UndefOr[CompilerOptionsValue]] = null,
+    assumeChangesOnlyAffectDirectDependencies: js.UndefOr[Boolean] = js.undefined,
     dry: js.UndefOr[Boolean] = js.undefined,
     force: js.UndefOr[Boolean] = js.undefined,
     incremental: js.UndefOr[Boolean] = js.undefined,
@@ -26,6 +28,7 @@ object BuildOptions {
   ): BuildOptions = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(assumeChangesOnlyAffectDirectDependencies)) __obj.updateDynamic("assumeChangesOnlyAffectDirectDependencies")(assumeChangesOnlyAffectDirectDependencies.asInstanceOf[js.Any])
     if (!js.isUndefined(dry)) __obj.updateDynamic("dry")(dry.asInstanceOf[js.Any])
     if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.asInstanceOf[js.Any])
     if (!js.isUndefined(incremental)) __obj.updateDynamic("incremental")(incremental.asInstanceOf[js.Any])

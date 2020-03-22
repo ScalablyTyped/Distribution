@@ -1,6 +1,6 @@
 package typings.fhirKitClient
 
-import typings.fhir.fhir.RiskAssessment
+import typings.fhir.fhir.AdverseEvent
 import typings.request.mod.Headers
 import typings.request.mod.Options
 import scala.scalajs.js
@@ -8,19 +8,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonBodyHeadersIdOptionsResourceType extends js.Object {
-  var body: RiskAssessment
+  var body: AdverseEvent
   var headers: js.UndefOr[Headers] = js.undefined
   var id: String
   var options: js.UndefOr[Options] = js.undefined
-  var resourceType: typings.fhirKitClient.fhirKitClientStrings.RiskAssessment
+  var resourceType: typings.fhirKitClient.fhirKitClientStrings.AdverseEvent
 }
 
 object AnonBodyHeadersIdOptionsResourceType {
   @scala.inline
   def apply(
-    body: RiskAssessment,
+    body: AdverseEvent,
     id: String,
-    resourceType: typings.fhirKitClient.fhirKitClientStrings.RiskAssessment,
+    resourceType: typings.fhirKitClient.fhirKitClientStrings.AdverseEvent,
     headers: Headers = null,
     options: Options = null
   ): AnonBodyHeadersIdOptionsResourceType = {

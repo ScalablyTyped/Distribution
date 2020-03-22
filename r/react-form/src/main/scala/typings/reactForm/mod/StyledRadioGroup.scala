@@ -2,7 +2,7 @@ package typings.reactForm.mod
 
 import typings.react.mod.ChildContextProvider
 import typings.react.mod.Component
-import typings.reactForm.AnonChildrenProps
+import typings.reactForm.StyledPropschildrenpropsF
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-form", "StyledRadioGroup")
 @js.native
 class StyledRadioGroup ()
-  extends Component[StyledProps with AnonChildrenProps, js.Object, js.Any]
+  extends Component[StyledPropschildrenpropsF, js.Object, js.Any]
      with ChildContextProvider[RadioGroupContext] {
   /* CompleteClass */
   override def getChildContext(): RadioGroupContext = js.native

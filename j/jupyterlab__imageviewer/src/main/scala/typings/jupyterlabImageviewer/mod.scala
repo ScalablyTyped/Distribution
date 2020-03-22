@@ -1,7 +1,7 @@
 package typings.jupyterlabImageviewer
 
 import typings.jupyterlabDocregistry.registryMod.DocumentRegistry.Context
-import typings.phosphorCoreutils.mod.Token
+import typings.luminoCoreutils.mod.Token
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

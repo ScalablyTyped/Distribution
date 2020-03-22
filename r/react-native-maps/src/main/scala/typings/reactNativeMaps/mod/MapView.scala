@@ -4,7 +4,7 @@ import typings.react.mod.Component
 import typings.reactNativeMaps.AnonAnimated
 import typings.reactNativeMaps.AnonDuration
 import typings.reactNativeMaps.AnonNorthEast
-import typings.std.Partial
+import typings.reactNativeMaps.PartialCamera
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,8 +12,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait MapView
   extends Component[MapViewProps, js.Any, js.Any] {
-  def animateCamera(camera: Partial[Camera]): Unit = js.native
-  def animateCamera(camera: Partial[Camera], opts: AnonDuration): Unit = js.native
+  def animateCamera(camera: PartialCamera): Unit = js.native
+  def animateCamera(camera: PartialCamera, opts: AnonDuration): Unit = js.native
   def animateToBearing(bearing: Double): Unit = js.native
   def animateToBearing(bearing: Double, duration: Double): Unit = js.native
   def animateToCoordinate(latLng: LatLng): Unit = js.native
@@ -34,7 +34,7 @@ trait MapView
   def getCamera(): js.Promise[Camera] = js.native
   def getMapBoundaries(): js.Promise[AnonNorthEast] = js.native
   def pointForCoordinate(coordinate: LatLng): js.Promise[Point] = js.native
-  def setCamera(camera: Partial[Camera]): Unit = js.native
+  def setCamera(camera: PartialCamera): Unit = js.native
   def setMapBoundaries(northEast: LatLng, southWest: LatLng): Unit = js.native
   def takeSnapshot(): js.Promise[String] = js.native
   def takeSnapshot(options: SnapshotOptions): js.Promise[String] = js.native

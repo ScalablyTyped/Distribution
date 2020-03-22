@@ -1,6 +1,6 @@
 package typings.cesium.mod
 
-import typings.cesium.AnonArcTypeClampToGround
+import typings.cesium.AnonDepthFailMaterial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("cesium", "PolylineGraphics")
 @js.native
 class PolylineGraphics () extends js.Object {
-  def this(options: AnonArcTypeClampToGround) = this()
+  def this(options: AnonDepthFailMaterial) = this()
   var arcType: Property = js.native
   var clampToGround: Property = js.native
   var classificationType: Property = js.native

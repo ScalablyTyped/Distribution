@@ -6,121 +6,34 @@ import scala.scalajs.js.annotation._
 
 object jestConfigStrings {
   @js.native
-  sealed trait Array extends js.Object
+  sealed trait BackgroundColor extends js.Object
   
   @js.native
-  sealed trait ArrayBuffer extends js.Object
+  sealed trait Color extends js.Object
   
   @js.native
-  sealed trait Boolean extends js.Object
+  sealed trait Dotcjs extends js.Object
   
   @js.native
-  sealed trait Buffer extends js.Object
+  sealed trait Dotjs extends js.Object
   
   @js.native
-  sealed trait DataView extends js.Object
+  sealed trait Dotjson extends js.Object
   
   @js.native
-  sealed trait Date extends js.Object
+  sealed trait Dotmjs extends js.Object
   
   @js.native
-  sealed trait Error extends js.Object
+  sealed trait ForegroundColor extends js.Object
   
   @js.native
-  sealed trait EvalError extends js.Object
+  sealed trait Instance extends js.Object
   
   @js.native
-  sealed trait Float32Array extends js.Object
+  sealed trait Level extends js.Object
   
   @js.native
-  sealed trait Float64Array extends js.Object
-  
-  @js.native
-  sealed trait Function extends js.Object
-  
-  @js.native
-  sealed trait GLOBAL extends js.Object
-  
-  @js.native
-  sealed trait Infinity extends js.Object
-  
-  @js.native
-  sealed trait Int16Array extends js.Object
-  
-  @js.native
-  sealed trait Int32Array extends js.Object
-  
-  @js.native
-  sealed trait Int8Array extends js.Object
-  
-  @js.native
-  sealed trait Intl extends js.Object
-  
-  @js.native
-  sealed trait JSON extends js.Object
-  
-  @js.native
-  sealed trait Map extends js.Object
-  
-  @js.native
-  sealed trait Math extends js.Object
-  
-  @js.native
-  sealed trait NaN extends js.Object
-  
-  @js.native
-  sealed trait Number extends js.Object
-  
-  @js.native
-  sealed trait Object extends js.Object
-  
-  @js.native
-  sealed trait Promise extends js.Object
-  
-  @js.native
-  sealed trait RangeError extends js.Object
-  
-  @js.native
-  sealed trait ReferenceError extends js.Object
-  
-  @js.native
-  sealed trait RegExp extends js.Object
-  
-  @js.native
-  sealed trait Set extends js.Object
-  
-  @js.native
-  sealed trait String extends js.Object
-  
-  @js.native
-  sealed trait Symbol extends js.Object
-  
-  @js.native
-  sealed trait SyntaxError extends js.Object
-  
-  @js.native
-  sealed trait TypeError extends js.Object
-  
-  @js.native
-  sealed trait URIError extends js.Object
-  
-  @js.native
-  sealed trait Uint16Array extends js.Object
-  
-  @js.native
-  sealed trait Uint32Array extends js.Object
-  
-  @js.native
-  sealed trait Uint8Array extends js.Object
-  
-  @js.native
-  sealed trait Uint8ClampedArray extends js.Object
-  
-  @js.native
-  sealed trait WeakMap extends js.Object
-  
-  @js.native
-  sealed trait WeakSet extends js.Object
+  sealed trait Modifiers extends js.Object
   
   @js.native
   sealed trait `^DotPlussignBackslashDot[jt]sxQuestionmark$` extends js.Object
@@ -129,246 +42,363 @@ object jestConfigStrings {
   sealed trait _replaceRootDirTags extends js.Object
   
   @js.native
-  sealed trait clover extends js.Object
+  sealed trait ansi extends js.Object
   
   @js.native
-  sealed trait cobertura extends js.Object
+  sealed trait ansi256 extends js.Object
   
   @js.native
-  sealed trait console extends js.Object
+  sealed trait bgAnsi extends js.Object
   
   @js.native
-  sealed trait decodeURI extends js.Object
+  sealed trait bgAnsi256 extends js.Object
   
   @js.native
-  sealed trait decodeURIComponent extends js.Object
+  sealed trait bgBlack extends js.Object
+  
+  @js.native
+  sealed trait bgBlackBright extends js.Object
+  
+  @js.native
+  sealed trait bgBlue extends js.Object
+  
+  @js.native
+  sealed trait bgBlueBright extends js.Object
+  
+  @js.native
+  sealed trait bgCyan extends js.Object
+  
+  @js.native
+  sealed trait bgCyanBright extends js.Object
+  
+  @js.native
+  sealed trait bgGray extends js.Object
+  
+  @js.native
+  sealed trait bgGreen extends js.Object
+  
+  @js.native
+  sealed trait bgGreenBright extends js.Object
+  
+  @js.native
+  sealed trait bgGrey extends js.Object
+  
+  @js.native
+  sealed trait bgHex extends js.Object
+  
+  @js.native
+  sealed trait bgHsl extends js.Object
+  
+  @js.native
+  sealed trait bgHsv extends js.Object
+  
+  @js.native
+  sealed trait bgHwb extends js.Object
+  
+  @js.native
+  sealed trait bgKeyword extends js.Object
+  
+  @js.native
+  sealed trait bgMagenta extends js.Object
+  
+  @js.native
+  sealed trait bgMagentaBright extends js.Object
+  
+  @js.native
+  sealed trait bgRed extends js.Object
+  
+  @js.native
+  sealed trait bgRedBright extends js.Object
+  
+  @js.native
+  sealed trait bgRgb extends js.Object
+  
+  @js.native
+  sealed trait bgWhite extends js.Object
+  
+  @js.native
+  sealed trait bgWhiteBright extends js.Object
+  
+  @js.native
+  sealed trait bgYellow extends js.Object
+  
+  @js.native
+  sealed trait bgYellowBright extends js.Object
+  
+  @js.native
+  sealed trait black extends js.Object
+  
+  @js.native
+  sealed trait blackBright extends js.Object
+  
+  @js.native
+  sealed trait blue extends js.Object
+  
+  @js.native
+  sealed trait blueBright extends js.Object
+  
+  @js.native
+  sealed trait bold extends js.Object
+  
+  @js.native
+  sealed trait cyan extends js.Object
+  
+  @js.native
+  sealed trait cyanBright extends js.Object
   
   @js.native
   sealed trait default extends js.Object
   
   @js.native
-  sealed trait encodeURI extends js.Object
+  sealed trait dim extends js.Object
   
   @js.native
-  sealed trait encodeURIComponent extends js.Object
+  sealed trait gray extends js.Object
   
   @js.native
-  sealed trait eval extends js.Object
+  sealed trait green extends js.Object
   
   @js.native
-  sealed trait fake extends js.Object
+  sealed trait greenBright extends js.Object
   
   @js.native
-  sealed trait global_ extends js.Object
+  sealed trait grey extends js.Object
   
   @js.native
-  sealed trait html extends js.Object
+  sealed trait hex extends js.Object
   
   @js.native
-  sealed trait isFinite extends js.Object
+  sealed trait hidden extends js.Object
   
   @js.native
-  sealed trait isNaN extends js.Object
+  sealed trait hsl extends js.Object
   
   @js.native
-  sealed trait jestDotconfigDotjs extends js.Object
+  sealed trait hsv extends js.Object
   
   @js.native
-  sealed trait `json-summary` extends js.Object
+  sealed trait hwb extends js.Object
   
   @js.native
-  sealed trait json_ extends js.Object
+  sealed trait inverse extends js.Object
   
   @js.native
-  sealed trait lcovonly extends js.Object
+  sealed trait italic extends js.Object
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait jestDotconfig extends js.Object
+  
+  @js.native
+  sealed trait keyword extends js.Object
+  
+  @js.native
+  sealed trait level_ extends js.Object
+  
+  @js.native
+  sealed trait magenta extends js.Object
+  
+  @js.native
+  sealed trait magentaBright extends js.Object
   
   @js.native
   sealed trait packageDotjson extends js.Object
   
   @js.native
-  sealed trait parseFloat extends js.Object
+  sealed trait red extends js.Object
   
   @js.native
-  sealed trait parseInt extends js.Object
+  sealed trait redBright extends js.Object
   
   @js.native
-  sealed trait process extends js.Object
+  sealed trait reset extends js.Object
   
   @js.native
-  sealed trait queueMicrotask extends js.Object
+  sealed trait rgb extends js.Object
   
   @js.native
-  sealed trait real extends js.Object
+  sealed trait stderr extends js.Object
   
   @js.native
-  sealed trait root extends js.Object
+  sealed trait strikethrough extends js.Object
   
   @js.native
-  sealed trait teamcity extends js.Object
+  sealed trait supportsColor extends js.Object
   
   @js.native
-  sealed trait text extends js.Object
+  sealed trait underline extends js.Object
   
   @js.native
-  sealed trait `text-lcov` extends js.Object
+  sealed trait visible extends js.Object
   
   @js.native
-  sealed trait `text-summary` extends js.Object
+  sealed trait white extends js.Object
   
   @js.native
-  sealed trait undefined extends js.Object
+  sealed trait whiteBright extends js.Object
   
   @js.native
-  sealed trait v8debug extends js.Object
+  sealed trait yellow extends js.Object
+  
+  @js.native
+  sealed trait yellowBright extends js.Object
   
   @scala.inline
-  def Array: Array = "Array".asInstanceOf[Array]
+  def BackgroundColor: BackgroundColor = "BackgroundColor".asInstanceOf[BackgroundColor]
   @scala.inline
-  def ArrayBuffer: ArrayBuffer = "ArrayBuffer".asInstanceOf[ArrayBuffer]
+  def Color: Color = "Color".asInstanceOf[Color]
   @scala.inline
-  def Boolean: Boolean = "Boolean".asInstanceOf[Boolean]
+  def Dotcjs: Dotcjs = ".cjs".asInstanceOf[Dotcjs]
   @scala.inline
-  def Buffer: Buffer = "Buffer".asInstanceOf[Buffer]
+  def Dotjs: Dotjs = ".js".asInstanceOf[Dotjs]
   @scala.inline
-  def DataView: DataView = "DataView".asInstanceOf[DataView]
+  def Dotjson: Dotjson = ".json".asInstanceOf[Dotjson]
   @scala.inline
-  def Date: Date = "Date".asInstanceOf[Date]
+  def Dotmjs: Dotmjs = ".mjs".asInstanceOf[Dotmjs]
   @scala.inline
-  def Error: Error = "Error".asInstanceOf[Error]
+  def ForegroundColor: ForegroundColor = "ForegroundColor".asInstanceOf[ForegroundColor]
   @scala.inline
-  def EvalError: EvalError = "EvalError".asInstanceOf[EvalError]
+  def Instance: Instance = "Instance".asInstanceOf[Instance]
   @scala.inline
-  def Float32Array: Float32Array = "Float32Array".asInstanceOf[Float32Array]
+  def Level: Level = "Level".asInstanceOf[Level]
   @scala.inline
-  def Float64Array: Float64Array = "Float64Array".asInstanceOf[Float64Array]
-  @scala.inline
-  def Function: Function = "Function".asInstanceOf[Function]
-  @scala.inline
-  def GLOBAL: GLOBAL = "GLOBAL".asInstanceOf[GLOBAL]
-  @scala.inline
-  def Infinity: Infinity = "Infinity".asInstanceOf[Infinity]
-  @scala.inline
-  def Int16Array: Int16Array = "Int16Array".asInstanceOf[Int16Array]
-  @scala.inline
-  def Int32Array: Int32Array = "Int32Array".asInstanceOf[Int32Array]
-  @scala.inline
-  def Int8Array: Int8Array = "Int8Array".asInstanceOf[Int8Array]
-  @scala.inline
-  def Intl: Intl = "Intl".asInstanceOf[Intl]
-  @scala.inline
-  def JSON: JSON = "JSON".asInstanceOf[JSON]
-  @scala.inline
-  def Map: Map = "Map".asInstanceOf[Map]
-  @scala.inline
-  def Math: Math = "Math".asInstanceOf[Math]
-  @scala.inline
-  def NaN: NaN = "NaN".asInstanceOf[NaN]
-  @scala.inline
-  def Number: Number = "Number".asInstanceOf[Number]
-  @scala.inline
-  def Object: Object = "Object".asInstanceOf[Object]
-  @scala.inline
-  def Promise: Promise = "Promise".asInstanceOf[Promise]
-  @scala.inline
-  def RangeError: RangeError = "RangeError".asInstanceOf[RangeError]
-  @scala.inline
-  def ReferenceError: ReferenceError = "ReferenceError".asInstanceOf[ReferenceError]
-  @scala.inline
-  def RegExp: RegExp = "RegExp".asInstanceOf[RegExp]
-  @scala.inline
-  def Set: Set = "Set".asInstanceOf[Set]
-  @scala.inline
-  def String: String = "String".asInstanceOf[String]
-  @scala.inline
-  def Symbol: Symbol = "Symbol".asInstanceOf[Symbol]
-  @scala.inline
-  def SyntaxError: SyntaxError = "SyntaxError".asInstanceOf[SyntaxError]
-  @scala.inline
-  def TypeError: TypeError = "TypeError".asInstanceOf[TypeError]
-  @scala.inline
-  def URIError: URIError = "URIError".asInstanceOf[URIError]
-  @scala.inline
-  def Uint16Array: Uint16Array = "Uint16Array".asInstanceOf[Uint16Array]
-  @scala.inline
-  def Uint32Array: Uint32Array = "Uint32Array".asInstanceOf[Uint32Array]
-  @scala.inline
-  def Uint8Array: Uint8Array = "Uint8Array".asInstanceOf[Uint8Array]
-  @scala.inline
-  def Uint8ClampedArray: Uint8ClampedArray = "Uint8ClampedArray".asInstanceOf[Uint8ClampedArray]
-  @scala.inline
-  def WeakMap: WeakMap = "WeakMap".asInstanceOf[WeakMap]
-  @scala.inline
-  def WeakSet: WeakSet = "WeakSet".asInstanceOf[WeakSet]
+  def Modifiers: Modifiers = "Modifiers".asInstanceOf[Modifiers]
   @scala.inline
   def `^DotPlussignBackslashDot[jt]sxQuestionmark$`: `^DotPlussignBackslashDot[jt]sxQuestionmark$` = "^.+\\.[jt]sx?$".asInstanceOf[`^DotPlussignBackslashDot[jt]sxQuestionmark$`]
   @scala.inline
   def _replaceRootDirTags: _replaceRootDirTags = "_replaceRootDirTags".asInstanceOf[_replaceRootDirTags]
   @scala.inline
-  def clover: clover = "clover".asInstanceOf[clover]
+  def ansi: ansi = "ansi".asInstanceOf[ansi]
   @scala.inline
-  def cobertura: cobertura = "cobertura".asInstanceOf[cobertura]
+  def ansi256: ansi256 = "ansi256".asInstanceOf[ansi256]
   @scala.inline
-  def console: console = "console".asInstanceOf[console]
+  def bgAnsi: bgAnsi = "bgAnsi".asInstanceOf[bgAnsi]
   @scala.inline
-  def decodeURI: decodeURI = "decodeURI".asInstanceOf[decodeURI]
+  def bgAnsi256: bgAnsi256 = "bgAnsi256".asInstanceOf[bgAnsi256]
   @scala.inline
-  def decodeURIComponent: decodeURIComponent = "decodeURIComponent".asInstanceOf[decodeURIComponent]
+  def bgBlack: bgBlack = "bgBlack".asInstanceOf[bgBlack]
+  @scala.inline
+  def bgBlackBright: bgBlackBright = "bgBlackBright".asInstanceOf[bgBlackBright]
+  @scala.inline
+  def bgBlue: bgBlue = "bgBlue".asInstanceOf[bgBlue]
+  @scala.inline
+  def bgBlueBright: bgBlueBright = "bgBlueBright".asInstanceOf[bgBlueBright]
+  @scala.inline
+  def bgCyan: bgCyan = "bgCyan".asInstanceOf[bgCyan]
+  @scala.inline
+  def bgCyanBright: bgCyanBright = "bgCyanBright".asInstanceOf[bgCyanBright]
+  @scala.inline
+  def bgGray: bgGray = "bgGray".asInstanceOf[bgGray]
+  @scala.inline
+  def bgGreen: bgGreen = "bgGreen".asInstanceOf[bgGreen]
+  @scala.inline
+  def bgGreenBright: bgGreenBright = "bgGreenBright".asInstanceOf[bgGreenBright]
+  @scala.inline
+  def bgGrey: bgGrey = "bgGrey".asInstanceOf[bgGrey]
+  @scala.inline
+  def bgHex: bgHex = "bgHex".asInstanceOf[bgHex]
+  @scala.inline
+  def bgHsl: bgHsl = "bgHsl".asInstanceOf[bgHsl]
+  @scala.inline
+  def bgHsv: bgHsv = "bgHsv".asInstanceOf[bgHsv]
+  @scala.inline
+  def bgHwb: bgHwb = "bgHwb".asInstanceOf[bgHwb]
+  @scala.inline
+  def bgKeyword: bgKeyword = "bgKeyword".asInstanceOf[bgKeyword]
+  @scala.inline
+  def bgMagenta: bgMagenta = "bgMagenta".asInstanceOf[bgMagenta]
+  @scala.inline
+  def bgMagentaBright: bgMagentaBright = "bgMagentaBright".asInstanceOf[bgMagentaBright]
+  @scala.inline
+  def bgRed: bgRed = "bgRed".asInstanceOf[bgRed]
+  @scala.inline
+  def bgRedBright: bgRedBright = "bgRedBright".asInstanceOf[bgRedBright]
+  @scala.inline
+  def bgRgb: bgRgb = "bgRgb".asInstanceOf[bgRgb]
+  @scala.inline
+  def bgWhite: bgWhite = "bgWhite".asInstanceOf[bgWhite]
+  @scala.inline
+  def bgWhiteBright: bgWhiteBright = "bgWhiteBright".asInstanceOf[bgWhiteBright]
+  @scala.inline
+  def bgYellow: bgYellow = "bgYellow".asInstanceOf[bgYellow]
+  @scala.inline
+  def bgYellowBright: bgYellowBright = "bgYellowBright".asInstanceOf[bgYellowBright]
+  @scala.inline
+  def black: black = "black".asInstanceOf[black]
+  @scala.inline
+  def blackBright: blackBright = "blackBright".asInstanceOf[blackBright]
+  @scala.inline
+  def blue: blue = "blue".asInstanceOf[blue]
+  @scala.inline
+  def blueBright: blueBright = "blueBright".asInstanceOf[blueBright]
+  @scala.inline
+  def bold: bold = "bold".asInstanceOf[bold]
+  @scala.inline
+  def cyan: cyan = "cyan".asInstanceOf[cyan]
+  @scala.inline
+  def cyanBright: cyanBright = "cyanBright".asInstanceOf[cyanBright]
   @scala.inline
   def default: default = "default".asInstanceOf[default]
   @scala.inline
-  def encodeURI: encodeURI = "encodeURI".asInstanceOf[encodeURI]
+  def dim: dim = "dim".asInstanceOf[dim]
   @scala.inline
-  def encodeURIComponent: encodeURIComponent = "encodeURIComponent".asInstanceOf[encodeURIComponent]
+  def gray: gray = "gray".asInstanceOf[gray]
   @scala.inline
-  def eval: eval = "eval".asInstanceOf[eval]
+  def green: green = "green".asInstanceOf[green]
   @scala.inline
-  def fake: fake = "fake".asInstanceOf[fake]
+  def greenBright: greenBright = "greenBright".asInstanceOf[greenBright]
   @scala.inline
-  def global_ : global_ = "global".asInstanceOf[global_]
+  def grey: grey = "grey".asInstanceOf[grey]
   @scala.inline
-  def html: html = "html".asInstanceOf[html]
+  def hex: hex = "hex".asInstanceOf[hex]
   @scala.inline
-  def isFinite: isFinite = "isFinite".asInstanceOf[isFinite]
+  def hidden: hidden = "hidden".asInstanceOf[hidden]
   @scala.inline
-  def isNaN: isNaN = "isNaN".asInstanceOf[isNaN]
+  def hsl: hsl = "hsl".asInstanceOf[hsl]
   @scala.inline
-  def jestDotconfigDotjs: jestDotconfigDotjs = "jest.config.js".asInstanceOf[jestDotconfigDotjs]
+  def hsv: hsv = "hsv".asInstanceOf[hsv]
   @scala.inline
-  def `json-summary`: `json-summary` = "json-summary".asInstanceOf[`json-summary`]
+  def hwb: hwb = "hwb".asInstanceOf[hwb]
   @scala.inline
-  def json_ : json_ = "json".asInstanceOf[json_]
+  def inverse: inverse = "inverse".asInstanceOf[inverse]
   @scala.inline
-  def lcovonly: lcovonly = "lcovonly".asInstanceOf[lcovonly]
+  def italic: italic = "italic".asInstanceOf[italic]
   @scala.inline
-  def none: none = "none".asInstanceOf[none]
+  def jestDotconfig: jestDotconfig = "jest.config".asInstanceOf[jestDotconfig]
+  @scala.inline
+  def keyword: keyword = "keyword".asInstanceOf[keyword]
+  @scala.inline
+  def level_ : level_ = "level".asInstanceOf[level_]
+  @scala.inline
+  def magenta: magenta = "magenta".asInstanceOf[magenta]
+  @scala.inline
+  def magentaBright: magentaBright = "magentaBright".asInstanceOf[magentaBright]
   @scala.inline
   def packageDotjson: packageDotjson = "package.json".asInstanceOf[packageDotjson]
   @scala.inline
-  def parseFloat: parseFloat = "parseFloat".asInstanceOf[parseFloat]
+  def red: red = "red".asInstanceOf[red]
   @scala.inline
-  def parseInt: parseInt = "parseInt".asInstanceOf[parseInt]
+  def redBright: redBright = "redBright".asInstanceOf[redBright]
   @scala.inline
-  def process: process = "process".asInstanceOf[process]
+  def reset: reset = "reset".asInstanceOf[reset]
   @scala.inline
-  def queueMicrotask: queueMicrotask = "queueMicrotask".asInstanceOf[queueMicrotask]
+  def rgb: rgb = "rgb".asInstanceOf[rgb]
   @scala.inline
-  def real: real = "real".asInstanceOf[real]
+  def stderr: stderr = "stderr".asInstanceOf[stderr]
   @scala.inline
-  def root: root = "root".asInstanceOf[root]
+  def strikethrough: strikethrough = "strikethrough".asInstanceOf[strikethrough]
   @scala.inline
-  def teamcity: teamcity = "teamcity".asInstanceOf[teamcity]
+  def supportsColor: supportsColor = "supportsColor".asInstanceOf[supportsColor]
   @scala.inline
-  def text: text = "text".asInstanceOf[text]
+  def underline: underline = "underline".asInstanceOf[underline]
   @scala.inline
-  def `text-lcov`: `text-lcov` = "text-lcov".asInstanceOf[`text-lcov`]
+  def visible: visible = "visible".asInstanceOf[visible]
   @scala.inline
-  def `text-summary`: `text-summary` = "text-summary".asInstanceOf[`text-summary`]
+  def white: white = "white".asInstanceOf[white]
   @scala.inline
-  def undefined: undefined = "undefined".asInstanceOf[undefined]
+  def whiteBright: whiteBright = "whiteBright".asInstanceOf[whiteBright]
   @scala.inline
-  def v8debug: v8debug = "v8debug".asInstanceOf[v8debug]
+  def yellow: yellow = "yellow".asInstanceOf[yellow]
+  @scala.inline
+  def yellowBright: yellowBright = "yellowBright".asInstanceOf[yellowBright]
 }
 

@@ -2,7 +2,7 @@ package typings.jsDataHttp.mod
 
 import typings.jsDataAdapter.mod.Adapter
 import typings.jsDataHttp.AnonAlpha
-import typings.jsDataHttp.TypeofClassHttpAdapter
+import typings.jsDataHttp.TypeofHttpAdapter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -117,8 +117,8 @@ class HttpAdapter () extends Adapter {
 @js.native
 object HttpAdapter extends js.Object {
   var version: AnonAlpha = js.native
-  def extend(): TypeofClassHttpAdapter = js.native
-  def extend(instanceProps: IDict): TypeofClassHttpAdapter = js.native
-  def extend(instanceProps: IDict, classProps: IDict): TypeofClassHttpAdapter = js.native
+  def extend(): TypeofHttpAdapter = js.native
+  def extend(instanceProps: IDict): TypeofHttpAdapter = js.native
+  def extend(instanceProps: IDict, classProps: IDict): TypeofHttpAdapter = js.native
 }
 

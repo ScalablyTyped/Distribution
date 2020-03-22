@@ -12,8 +12,7 @@ trait PlotTreemapLevelsOptions extends js.Object {
   var borderColor: js.UndefOr[ColorString] = js.undefined
   /**
     * (Highcharts) Set the dash style of the border of all the point which lies
-    * on the level. See (see online documentation for example) for possible
-    * options.
+    * on the level. See plotOptions.scatter.dashStyle for possible options.
     */
   var borderDashStyle: js.UndefOr[DashStyleValue] = js.undefined
   /**
@@ -40,7 +39,7 @@ trait PlotTreemapLevelsOptions extends js.Object {
     * (Highcharts) Can set the options of dataLabels on each point which lies
     * on the level. plotOptions.treemap.dataLabels for possible values.
     */
-  var dataLabels: js.UndefOr[DataLabelsOptionsObject] = js.undefined
+  var dataLabels: js.UndefOr[DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject]] = js.undefined
   /**
     * (Highcharts) Can set the layoutAlgorithm option on a specific level.
     */
@@ -65,7 +64,7 @@ object PlotTreemapLevelsOptions {
     borderWidth: Int | Double = null,
     color: ColorString | GradientColorObject | PatternObject = null,
     colorVariation: PlotTreemapLevelsColorVariationOptions = null,
-    dataLabels: DataLabelsOptionsObject = null,
+    dataLabels: DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject] = null,
     layoutAlgorithm: OptionsLayoutAlgorithmValue = null,
     layoutStartingDirection: OptionsLayoutStartingDirectionValue = null,
     level: Int | Double = null

@@ -1,12 +1,12 @@
 package typings.oracleOraclejet.ojtableMod
 
-import typings.oracleOraclejet.AnonAutoClassName
-import typings.oracleOraclejet.AnonAutoClassNameContext
-import typings.oracleOraclejet.AnonColumnIndexColumnKey
-import typings.oracleOraclejet.AnonColumnMultiple
-import typings.oracleOraclejet.AnonDragDropReorderAnonColumns
-import typings.oracleOraclejet.AnonFetchSizeMaxCount
+import typings.oracleOraclejet.Anon19
+import typings.oracleOraclejet.AnonColumnKey
+import typings.oracleOraclejet.AnonDropReorder
+import typings.oracleOraclejet.AnonField
+import typings.oracleOraclejet.AnonFooterClassName
 import typings.oracleOraclejet.AnonLabelAccSelectionAffordanceBottom
+import typings.oracleOraclejet.AnonMaxCount
 import typings.oracleOraclejet.AnonRowHeader
 import typings.oracleOraclejet.mod.baseComponentSettableProperties
 import typings.oracleOraclejet.ojdataproviderMod.DataProvider
@@ -32,23 +32,23 @@ import scala.scalajs.js.annotation._
 trait ojTableSettableProperties[K, D] extends baseComponentSettableProperties {
   var accessibility: AnonRowHeader
   var as: String
-  var columns: (js.Array[AnonAutoClassName[K, D]]) | Null
-  var columnsDefault: AnonAutoClassNameContext[K, D]
+  var columns: (js.Array[AnonField[K, D]]) | Null
+  var columnsDefault: AnonFooterClassName[K, D]
   var currentRow: CurrentRow[K] | Null
   var data: (DataProvider[K, D]) | Null
   var display: list | grid
-  var dnd: AnonDragDropReorderAnonColumns[K, D]
+  var dnd: AnonDropReorder[K, D]
   var editMode: none | rowEdit
   val firstSelectedRow: js.Object
   var horizontalGridVisible: auto | enabled | disabled
   var rowRenderer: (js.Function1[/* context */ RowRendererContext[K, D], String | HTMLElement | Unit]) | Null
   var scrollPolicy: auto | loadMoreOnScroll
-  var scrollPolicyOptions: AnonFetchSizeMaxCount
-  var scrollPosition: AnonColumnIndexColumnKey
+  var scrollPolicyOptions: AnonMaxCount
+  var scrollPosition: AnonColumnKey
   var selection: js.Array[
     (RowSelectionStart[K] with RowSelectionEnd[K]) | (ColumnSelectionStart[K] with ColumnSelectionEnd[K])
   ]
-  var selectionMode: AnonColumnMultiple
+  var selectionMode: Anon19
   var selectionRequired: Boolean
   @JSName("translations")
   var translations_ojTableSettableProperties: AnonLabelAccSelectionAffordanceBottom
@@ -60,23 +60,23 @@ object ojTableSettableProperties {
   def apply[K, D](
     accessibility: AnonRowHeader,
     as: String,
-    columnsDefault: AnonAutoClassNameContext[K, D],
+    columnsDefault: AnonFooterClassName[K, D],
     display: list | grid,
-    dnd: AnonDragDropReorderAnonColumns[K, D],
+    dnd: AnonDropReorder[K, D],
     editMode: none | rowEdit,
     firstSelectedRow: js.Object,
     horizontalGridVisible: auto | enabled | disabled,
     scrollPolicy: auto | loadMoreOnScroll,
-    scrollPolicyOptions: AnonFetchSizeMaxCount,
-    scrollPosition: AnonColumnIndexColumnKey,
+    scrollPolicyOptions: AnonMaxCount,
+    scrollPosition: AnonColumnKey,
     selection: js.Array[
       (RowSelectionStart[K] with RowSelectionEnd[K]) | (ColumnSelectionStart[K] with ColumnSelectionEnd[K])
     ],
-    selectionMode: AnonColumnMultiple,
+    selectionMode: Anon19,
     selectionRequired: Boolean,
     translations: AnonLabelAccSelectionAffordanceBottom,
     verticalGridVisible: auto | enabled | disabled,
-    columns: js.Array[AnonAutoClassName[K, D]] = null,
+    columns: js.Array[AnonField[K, D]] = null,
     currentRow: CurrentRow[K] = null,
     data: DataProvider[K, D] = null,
     rowRenderer: /* context */ RowRendererContext[K, D] => String | HTMLElement | Unit = null

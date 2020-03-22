@@ -1,9 +1,9 @@
 package typings.dompurify.mod
 
-import typings.dompurify.AnonFalse
-import typings.dompurify.AnonRETURNDOM
-import typings.dompurify.AnonRETURNDOMFRAGMENT
-import typings.dompurify.AnonRETURNTRUSTEDTYPE
+import typings.dompurify.ConfigRETURNDOMFRAGMENTfa
+import typings.dompurify.ConfigRETURNDOMFRAGMENTtr
+import typings.dompurify.ConfigRETURNDOMtrue
+import typings.dompurify.ConfigRETURNTRUSTEDTYPEtr
 import typings.dompurify.dompurifyStrings.uponSanitizeAttribute
 import typings.dompurify.dompurifyStrings.uponSanitizeElement
 import typings.std.DocumentFragment
@@ -50,25 +50,17 @@ trait DOMPurifyI extends js.Object {
   def removeHook(entryPoint: HookName): Unit = js.native
   def removeHooks(entryPoint: HookName): Unit = js.native
   def sanitize(source: String): String = js.native
-  def sanitize(source: String, config: Config with AnonFalse): String = js.native
+  def sanitize(source: String, config: ConfigRETURNDOMFRAGMENTfa): String = js.native
+  def sanitize(source: String, config: ConfigRETURNDOMFRAGMENTtr): DocumentFragment = js.native
+  def sanitize(source: String, config: ConfigRETURNDOMtrue): HTMLElement = js.native
+  def sanitize(source: String, config: ConfigRETURNTRUSTEDTYPEtr): TrustedHTML = js.native
+  def sanitize(source: String, config: Config): String | HTMLElement | DocumentFragment = js.native
   def sanitize(source: Node): String = js.native
-  def sanitize(source: Node, config: Config with AnonFalse): String = js.native
-  @JSName("sanitize")
-  def sanitize_DocumentFragment(source: String, config: Config with AnonRETURNDOMFRAGMENT): DocumentFragment = js.native
-  @JSName("sanitize")
-  def sanitize_DocumentFragment(source: Node, config: Config with AnonRETURNDOMFRAGMENT): DocumentFragment = js.native
-  @JSName("sanitize")
-  def sanitize_HTMLElement(source: String, config: Config with AnonRETURNDOM): HTMLElement = js.native
-  @JSName("sanitize")
-  def sanitize_HTMLElement(source: Node, config: Config with AnonRETURNDOM): HTMLElement = js.native
-  @JSName("sanitize")
-  def sanitize_TrustedHTML(source: String, config: Config with AnonRETURNTRUSTEDTYPE): TrustedHTML = js.native
-  @JSName("sanitize")
-  def sanitize_TrustedHTML(source: Node, config: Config with AnonRETURNTRUSTEDTYPE): TrustedHTML = js.native
-  @JSName("sanitize")
-  def sanitize_Union(source: String, config: Config): String | HTMLElement | DocumentFragment = js.native
-  @JSName("sanitize")
-  def sanitize_Union(source: Node, config: Config): String | HTMLElement | DocumentFragment = js.native
+  def sanitize(source: Node, config: ConfigRETURNDOMFRAGMENTfa): String = js.native
+  def sanitize(source: Node, config: ConfigRETURNDOMFRAGMENTtr): DocumentFragment = js.native
+  def sanitize(source: Node, config: ConfigRETURNDOMtrue): HTMLElement = js.native
+  def sanitize(source: Node, config: ConfigRETURNTRUSTEDTYPEtr): TrustedHTML = js.native
+  def sanitize(source: Node, config: Config): String | HTMLElement | DocumentFragment = js.native
   def setConfig(cfg: Config): Unit = js.native
 }
 

@@ -8,7 +8,7 @@ trait SpeechRecognitionEventMap extends js.Object {
   var audioend: Event_
   var audiostart: Event_
   var end: Event_
-  var error: SpeechRecognitionError
+  var error: Event_
   var nomatch: SpeechRecognitionEvent
   var result: SpeechRecognitionEvent
   var soundend: Event_
@@ -24,7 +24,7 @@ object SpeechRecognitionEventMap {
     audioend: Event_,
     audiostart: Event_,
     end: Event_,
-    error: SpeechRecognitionError,
+    error: Event_,
     nomatch: SpeechRecognitionEvent,
     result: SpeechRecognitionEvent,
     soundend: Event_,

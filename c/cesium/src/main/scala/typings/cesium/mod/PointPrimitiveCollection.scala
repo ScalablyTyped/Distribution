@@ -1,6 +1,6 @@
 package typings.cesium.mod
 
-import typings.cesium.AnonBlendOptionDebugShowBoundingVolume
+import typings.cesium.AnonModelMatrix
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("cesium", "PointPrimitiveCollection")
 @js.native
 class PointPrimitiveCollection () extends js.Object {
-  def this(options: AnonBlendOptionDebugShowBoundingVolume) = this()
+  def this(options: AnonModelMatrix) = this()
   var blendOption: BlendOption = js.native
   var debugShowBoundingVolume: Boolean = js.native
   var length: Double = js.native

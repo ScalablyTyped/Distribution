@@ -1,6 +1,6 @@
 package typings.fhirKitClient
 
-import typings.fhirKitClient.fhirKitClientStrings.Organization
+import typings.fhirKitClient.fhirKitClientStrings.Binary
 import typings.request.mod.Headers
 import typings.request.mod.Options
 import scala.scalajs.js
@@ -11,7 +11,7 @@ trait AnonHeadersIdOptions extends js.Object {
   var headers: js.UndefOr[Headers] = js.undefined
   var id: String
   var options: js.UndefOr[Options] = js.undefined
-  var resourceType: Organization
+  var resourceType: Binary
   var version: String
 }
 
@@ -19,7 +19,7 @@ object AnonHeadersIdOptions {
   @scala.inline
   def apply(
     id: String,
-    resourceType: Organization,
+    resourceType: Binary,
     version: String,
     headers: Headers = null,
     options: Options = null

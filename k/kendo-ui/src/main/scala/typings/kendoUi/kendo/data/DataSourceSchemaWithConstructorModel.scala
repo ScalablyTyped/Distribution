@@ -1,13 +1,13 @@
 package typings.kendoUi.kendo.data
 
-import typings.kendoUi.TypeofClassModel
+import typings.kendoUi.TypeofModel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DataSourceSchemaWithConstructorModel extends DataSourceSchema {
   @JSName("model")
-  var model_DataSourceSchemaWithConstructorModel: js.UndefOr[TypeofClassModel] = js.undefined
+  var model_DataSourceSchemaWithConstructorModel: js.UndefOr[TypeofModel] = js.undefined
 }
 
 object DataSourceSchemaWithConstructorModel {
@@ -17,7 +17,7 @@ object DataSourceSchemaWithConstructorModel {
     data: js.Any = null,
     errors: js.Any = null,
     groups: js.Any = null,
-    model: TypeofClassModel = null,
+    model: TypeofModel = null,
     parse: js.Function = null,
     total: js.Any = null,
     `type`: String = null

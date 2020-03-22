@@ -1,6 +1,6 @@
 package typings.cathoQuantum.progressBarMod
 
-import typings.cathoQuantum.AnonComponents
+import typings.cathoQuantum.AnonComponentsAnonProgressBar
 import typings.cathoQuantum.cathoQuantumStrings.neutral
 import typings.cathoQuantum.cathoQuantumStrings.primary
 import typings.cathoQuantum.cathoQuantumStrings.secondary
@@ -14,7 +14,7 @@ trait ProgressBarProps extends js.Object {
   var progressPercent: js.UndefOr[Double] = js.undefined
   var progressText: js.UndefOr[Double] = js.undefined
   var skin: js.UndefOr[neutral | primary | secondary] = js.undefined
-  var theme: js.UndefOr[AnonComponents] = js.undefined
+  var theme: js.UndefOr[AnonComponentsAnonProgressBar] = js.undefined
   var width: js.UndefOr[String] = js.undefined
 }
 
@@ -26,7 +26,7 @@ object ProgressBarProps {
     progressPercent: Int | Double = null,
     progressText: Int | Double = null,
     skin: neutral | primary | secondary = null,
-    theme: AnonComponents = null,
+    theme: AnonComponentsAnonProgressBar = null,
     width: String = null
   ): ProgressBarProps = {
     val __obj = js.Dynamic.literal()

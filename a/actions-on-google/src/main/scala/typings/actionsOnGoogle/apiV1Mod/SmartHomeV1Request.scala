@@ -1,6 +1,6 @@
 package typings.actionsOnGoogle.apiV1Mod
 
-import typings.actionsOnGoogle.AnonActiondevicesDISCONNECT
+import typings.actionsOnGoogle.AnonIntent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,7 +33,7 @@ object SmartHomeV1Request {
     __obj.asInstanceOf[SmartHomeV1Request]
   }
   @scala.inline
-  def SmartHomeV1DisconnectRequest(inputs: js.Array[AnonActiondevicesDISCONNECT], requestId: String): SmartHomeV1Request = {
+  def SmartHomeV1DisconnectRequest(inputs: js.Array[AnonIntent], requestId: String): SmartHomeV1Request = {
     val __obj = js.Dynamic.literal(inputs = inputs.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SmartHomeV1Request]

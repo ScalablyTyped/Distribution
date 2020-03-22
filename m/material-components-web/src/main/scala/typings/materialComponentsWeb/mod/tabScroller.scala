@@ -2,10 +2,10 @@ package typings.materialComponentsWeb.mod
 
 import typings.materialTabScroller.AnonANIMATING
 import typings.materialTabScroller.AnonAREASELECTOR
+import typings.materialTabScroller.PartialMDCTabScrollerAdap
 import typings.materialTabScroller.adapterMod.MDCTabScrollerAdapter
 import typings.std.Document_
 import typings.std.Element
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,7 +20,7 @@ object tabScroller extends js.Object {
   @js.native
   class MDCTabScrollerFoundation ()
     extends typings.materialTabScroller.mod.MDCTabScrollerFoundation {
-    def this(adapter: Partial[MDCTabScrollerAdapter]) = this()
+    def this(adapter: PartialMDCTabScrollerAdap) = this()
   }
   
   /* static members */

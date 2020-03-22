@@ -1,7 +1,7 @@
 package typings.easyXHeaders.fsMod
 
 import typings.easyXHeaders.AnonBufferSize
-import typings.easyXHeaders.AnonBufferSizeEncoding
+import typings.easyXHeaders.AnonFd
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation._
 object createReadStream extends js.Object {
   def apply(path: String): ReadStream = js.native
   def apply(path: String, options: AnonBufferSize): ReadStream = js.native
-  def apply(path: String, options: AnonBufferSizeEncoding): ReadStream = js.native
+  def apply(path: String, options: AnonFd): ReadStream = js.native
 }
 

@@ -1,5 +1,6 @@
 package typings.three
 
+import typings.three.shapeMod.Shape
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +12,7 @@ object fontMod extends js.Object {
   class Font protected () extends js.Object {
     def this(jsondata: js.Any) = this()
     var data: String = js.native
-    def generateShapes(text: String, size: Double, divisions: Double): js.Array[_] = js.native
+    def generateShapes(text: String, size: Double): js.Array[Shape] = js.native
   }
   
 }

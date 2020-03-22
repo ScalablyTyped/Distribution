@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.node.Buffer
 import typings.std.RegExp
 import typings.swPrecache.AnonHandler
-import typings.swPrecache.FnMessage
+import typings.swPrecache.FnCall
 import typings.swPrecacheWebpackPlugin.AnonChunkName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -34,7 +34,7 @@ object Options {
     handleFetch: js.UndefOr[Boolean] = js.undefined,
     ignoreUrlParametersMatching: js.Array[RegExp] = null,
     importScripts: js.Array[String | AnonChunkName] = null,
-    logger: FnMessage = null,
+    logger: FnCall = null,
     maximumFileSizeToCacheInBytes: Int | Double = null,
     mergeStaticsConfig: js.UndefOr[Boolean] = js.undefined,
     minify: js.UndefOr[Boolean] = js.undefined,

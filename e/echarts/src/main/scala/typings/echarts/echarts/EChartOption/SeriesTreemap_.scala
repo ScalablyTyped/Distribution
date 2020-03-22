@@ -1,13 +1,13 @@
 package typings.echarts.echarts.EChartOption
 
-import typings.echarts.AnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEllipsis
-import typings.echarts.AnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEllipsisFontFamily
-import typings.echarts.AnonBackgroundColorBorderColor
-import typings.echarts.AnonBorderColorBorderColorSaturation
+import typings.echarts.AnonBorderColorSaturation
 import typings.echarts.AnonBottom
-import typings.echarts.AnonChildrenLink
 import typings.echarts.AnonChildrenVisibleMin
-import typings.echarts.AnonItemStyleLabelUpperLabel
+import typings.echarts.AnonEllipsis
+import typings.echarts.AnonExtraCssText
+import typings.echarts.AnonLink
+import typings.echarts.AnonTextShadowOffsetX
+import typings.echarts.AnonUpperLabel
 import typings.echarts.echarts.EChartOption.SeriesTreemap.DataObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -319,7 +319,7 @@ trait SeriesTreemap_ extends js.Object {
   /**
     * @see https://echarts.apache.org/en/option.html#series-treemap.emphasis
     */
-  var emphasis: js.UndefOr[AnonItemStyleLabelUpperLabel] = js.undefined
+  var emphasis: js.UndefOr[AnonUpperLabel] = js.undefined
   /**
     * Height of treemap component.
     *
@@ -359,7 +359,7 @@ trait SeriesTreemap_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.itemStyle
     */
-  var itemStyle: js.UndefOr[AnonBorderColorBorderColorSaturation] = js.undefined
+  var itemStyle: js.UndefOr[AnonBorderColorSaturation] = js.undefined
   /**
     * `label` decribes the style of the label in each node.
     *
@@ -382,7 +382,7 @@ trait SeriesTreemap_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.label
     */
-  var label: js.UndefOr[AnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEllipsis] = js.undefined
+  var label: js.UndefOr[AnonEllipsis] = js.undefined
   /**
     * When `leafDepth` is set, the feature "drill down" is enabled,
     * which means when clicking a tree node, this node will be set
@@ -580,7 +580,7 @@ trait SeriesTreemap_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.silent
     */
-  var silent: js.UndefOr[AnonChildrenLink] = js.undefined
+  var silent: js.UndefOr[AnonLink] = js.undefined
   /**
     * The expected square ratio.
     * Layout would approach the ratio as close as possible.
@@ -598,7 +598,7 @@ trait SeriesTreemap_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.tooltip
     */
-  var tooltip: js.UndefOr[AnonBackgroundColorBorderColor] = js.undefined
+  var tooltip: js.UndefOr[AnonExtraCssText] = js.undefined
   /**
     * Distance between treemap component and the top side of the container.
     *
@@ -666,9 +666,7 @@ trait SeriesTreemap_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.upperLabel
     */
-  var upperLabel: js.UndefOr[
-    AnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEllipsisFontFamily
-  ] = js.undefined
+  var upperLabel: js.UndefOr[AnonTextShadowOffsetX] = js.undefined
   /**
     * A node will not be shown when its area size is smaller than this
     * value (unit: px square).
@@ -836,11 +834,11 @@ object SeriesTreemap_ {
     colorSaturation: Int | Double = null,
     data: js.Array[DataObject] = null,
     drillDownIcon: String = null,
-    emphasis: AnonItemStyleLabelUpperLabel = null,
+    emphasis: AnonUpperLabel = null,
     height: Double | String = null,
     id: String = null,
-    itemStyle: AnonBorderColorBorderColorSaturation = null,
-    label: AnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEllipsis = null,
+    itemStyle: AnonBorderColorSaturation = null,
+    label: AnonEllipsis = null,
     leafDepth: Int | Double = null,
     left: Double | String = null,
     levels: AnonChildrenVisibleMin = null,
@@ -848,12 +846,12 @@ object SeriesTreemap_ {
     nodeClick: Boolean | String = null,
     right: Double | String = null,
     roam: Boolean | String = null,
-    silent: AnonChildrenLink = null,
+    silent: AnonLink = null,
     squareRatio: Int | Double = null,
-    tooltip: AnonBackgroundColorBorderColor = null,
+    tooltip: AnonExtraCssText = null,
     top: Double | String = null,
     `type`: String = null,
-    upperLabel: AnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEllipsisFontFamily = null,
+    upperLabel: AnonTextShadowOffsetX = null,
     visibleMin: Int | Double = null,
     visualDimension: Int | Double = null,
     visualMax: Int | Double = null,

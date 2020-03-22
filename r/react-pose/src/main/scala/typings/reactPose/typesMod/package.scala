@@ -10,7 +10,5 @@ package object typesMod {
     typings.popmotionPose.typesMod.DomPopmotionConfig
   ]
   type CurrentPose = java.lang.String | js.Array[java.lang.String]
-  type PoseElementInternalProps = typings.reactPose.typesMod.PoseElementProps with typings.reactPose.AnonElementType
-  type PoseElementProps = typings.reactPose.AnonChildrenInitialPose with typings.reactPose.typesMod.PoseContextProps
   type RefFunc = js.Function1[/* el */ typings.std.Element, js.Any]
 }

@@ -1,6 +1,6 @@
 package typings.reflectMetadata.mod._Global_
 
-import typings.reflectMetadata.FnPropertyKey
+import typings.reflectMetadata.FnCall
 import typings.std.ClassDecorator
 import typings.std.MethodDecorator
 import typings.std.PropertyDecorator
@@ -502,6 +502,6 @@ object Reflect extends js.Object {
     *     }
     *
     */
-  def metadata(metadataKey: js.Any, metadataValue: js.Any): FnPropertyKey = js.native
+  def metadata(metadataKey: js.Any, metadataValue: js.Any): FnCall = js.native
 }
 

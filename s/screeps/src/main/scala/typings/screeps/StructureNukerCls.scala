@@ -1,6 +1,5 @@
 package typings.screeps
 
-import typings.screeps.screepsBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -84,7 +83,7 @@ class StructureNukerCls protected () extends StructureNuker {
     * A Store object that contains cargo of this structure.
     */
   /* CompleteClass */
-  override var store: Store[RESOURCE_ENERGY | RESOURCE_GHODIUM, `false`] = js.native
+  override var store: StoreRESOURCEENERGYRESOURAlloy = js.native
   /**
     * One of the STRUCTURE_* constants.
     */

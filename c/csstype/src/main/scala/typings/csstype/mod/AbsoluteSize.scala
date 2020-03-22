@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
   - typings.csstype.csstypeStrings.`x-small`
   - typings.csstype.csstypeStrings.`xx-large`
   - typings.csstype.csstypeStrings.`xx-small`
+  - typings.csstype.csstypeStrings.`xxx-large`
 */
 trait AbsoluteSize
   extends _FontSizeProperty[js.Any]
@@ -33,5 +34,7 @@ object AbsoluteSize {
   def `xx-large`: typings.csstype.csstypeStrings.`xx-large` = this.cast("xx-large")
   @scala.inline
   def `xx-small`: typings.csstype.csstypeStrings.`xx-small` = this.cast("xx-small")
+  @scala.inline
+  def `xxx-large`: typings.csstype.csstypeStrings.`xxx-large` = this.cast("xxx-large")
 }
 

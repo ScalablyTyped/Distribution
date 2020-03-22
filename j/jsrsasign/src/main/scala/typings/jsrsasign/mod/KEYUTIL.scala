@@ -2,7 +2,7 @@ package typings.jsrsasign.mod
 
 import typings.jsrsasign.AnonE
 import typings.jsrsasign.AnonP8pubkeyhex
-import typings.jsrsasign.Anon_PrvKeyObj
+import typings.jsrsasign.AnonPrvKeyObj_
 import typings.jsrsasign.jsrsasign.ECCPrivateKey
 import typings.jsrsasign.jsrsasign.KJUR.crypto.DSA
 import typings.jsrsasign.jsrsasign.KJUR.crypto.ECDSA
@@ -82,11 +82,11 @@ class KEYUTIL ()
 object KEYUTIL extends js.Object {
   val version: String = js.native
   @JSName("generateKeypair")
-  def generateKeypair_EC(alg: EC, keylenOrCurve: String): Anon_PrvKeyObj = js.native
+  def generateKeypair_EC(alg: EC, keylenOrCurve: String): AnonPrvKeyObj_ = js.native
   @JSName("generateKeypair")
-  def generateKeypair_EC(alg: EC, keylenOrCurve: Double): Anon_PrvKeyObj = js.native
+  def generateKeypair_EC(alg: EC, keylenOrCurve: Double): AnonPrvKeyObj_ = js.native
   @JSName("generateKeypair")
-  def generateKeypair_RSA(alg: RSA, keylenOrCurve: String): Anon_PrvKeyObj = js.native
+  def generateKeypair_RSA(alg: RSA, keylenOrCurve: String): AnonPrvKeyObj_ = js.native
   /**
     * @param alg 'RSA' or 'EC'
     * @param keylenOrCurve key length for RSA or curve name for EC
@@ -110,7 +110,7 @@ object KEYUTIL extends js.Object {
     *
     */
   @JSName("generateKeypair")
-  def generateKeypair_RSA(alg: RSA, keylenOrCurve: Double): Anon_PrvKeyObj = js.native
+  def generateKeypair_RSA(alg: RSA, keylenOrCurve: Double): AnonPrvKeyObj_ = js.native
   def getJWKFromKey(keyObj: DSA): JsonWebKey = js.native
   def getJWKFromKey(keyObj: ECDSA): JsonWebKey = js.native
   /**

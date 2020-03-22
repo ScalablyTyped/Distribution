@@ -31,7 +31,7 @@ trait Options extends RequestInit {
   var hooks: js.UndefOr[Hooks] = js.undefined
   /**
   	Shortcut for sending JSON. Use this instead of the `body` option.
-  	Accepts a plain object which will be `JSON.stringify()`'d and the correct header will be set for you.
+  	Accepts any plain object or value, which will be `JSON.stringify()`'d and sent in the body with the correct header set.
   	*/
   var json: js.UndefOr[js.Any] = js.undefined
   /**

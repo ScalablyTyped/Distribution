@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 trait LoadURLOptions extends js.Object {
   /**
     * Base url (with trailing path separator) for files to be loaded by the data url.
-    * This is needed only if the specified url is a data url and needs to load other
+    * This is needed only if the specified `url` is a data url and needs to load other
     * files.
     */
   var baseURLForDataURL: js.UndefOr[String] = js.undefined

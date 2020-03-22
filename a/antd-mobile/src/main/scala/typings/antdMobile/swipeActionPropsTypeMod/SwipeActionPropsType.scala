@@ -1,6 +1,6 @@
 package typings.antdMobile.swipeActionPropsTypeMod
 
-import typings.antdMobile.AnonClassNameOnPress
+import typings.antdMobile.AnonOnPress
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,10 +9,10 @@ trait SwipeActionPropsType[T] extends js.Object {
   /** whether button is disabled*/
   var autoClose: js.UndefOr[Boolean] = js.undefined
   var disabled: js.UndefOr[Boolean] = js.undefined
-  var left: js.UndefOr[js.Array[AnonClassNameOnPress[T]]] = js.undefined
+  var left: js.UndefOr[js.Array[AnonOnPress[T]]] = js.undefined
   var onClose: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onOpen: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var right: js.UndefOr[js.Array[AnonClassNameOnPress[T]]] = js.undefined
+  var right: js.UndefOr[js.Array[AnonOnPress[T]]] = js.undefined
   var title: js.UndefOr[String] = js.undefined
 }
 
@@ -21,10 +21,10 @@ object SwipeActionPropsType {
   def apply[T](
     autoClose: js.UndefOr[Boolean] = js.undefined,
     disabled: js.UndefOr[Boolean] = js.undefined,
-    left: js.Array[AnonClassNameOnPress[T]] = null,
+    left: js.Array[AnonOnPress[T]] = null,
     onClose: () => Unit = null,
     onOpen: () => Unit = null,
-    right: js.Array[AnonClassNameOnPress[T]] = null,
+    right: js.Array[AnonOnPress[T]] = null,
     title: String = null
   ): SwipeActionPropsType[T] = {
     val __obj = js.Dynamic.literal()

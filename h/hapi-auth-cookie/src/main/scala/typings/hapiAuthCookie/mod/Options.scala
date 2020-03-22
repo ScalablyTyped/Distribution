@@ -1,8 +1,7 @@
 package typings.hapiAuthCookie.mod
 
 import typings.hapi.mod.Request
-import typings.hapi.mod.ServerStateCookieOptions
-import typings.hapiAuthCookie.AnonName
+import typings.hapiAuthCookie.ServerStateCookieOptionsn
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +20,7 @@ trait Options extends js.Object {
     *
     * @default { name: 'sid', clearInvalid: false, isSameSite: 'Strict', isSecure: true, isHttpOnly: true }
     */
-  var cookie: js.UndefOr[ServerStateCookieOptions with AnonName] = js.undefined
+  var cookie: js.UndefOr[ServerStateCookieOptionsn] = js.undefined
   /**
     * Automatically sets the session cookie after validation to extend the current session for a new TTL duration.
     *
@@ -53,7 +52,7 @@ object Options {
   @scala.inline
   def apply(
     appendNext: Boolean | String = null,
-    cookie: ServerStateCookieOptions with AnonName = null,
+    cookie: ServerStateCookieOptionsn = null,
     keepAlive: js.UndefOr[Boolean] = js.undefined,
     redirectTo: String | RedirectToFunction = null,
     requestDecoratorName: String = null,

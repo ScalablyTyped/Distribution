@@ -54,7 +54,7 @@ object liteMod extends js.Object {
     /**
       * Query for facet values of a specific facet
       */
-    def searchForFacetValues(queries: js.Array[AnonIndexNameParams]): js.Promise[js.Array[Response]] = js.native
+    def searchForFacetValues(queries: js.Array[AnonParams]): js.Promise[js.Array[Response]] = js.native
     /**
       * Add a header to be sent with all upcoming requests
       */

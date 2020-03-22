@@ -2,7 +2,7 @@ package typings.pizzip.mod
 
 import typings.node.Buffer
 import typings.node.NodeJS.Platform
-import typings.pizzip.Anon1
+import typings.pizzip.AnonLevel
 import typings.pizzip.pizzipStrings.DOS
 import typings.pizzip.pizzipStrings.UNIX
 import typings.pizzip.pizzipStrings.arraybuffer
@@ -39,7 +39,7 @@ trait GenerateOptions extends js.Object {
     * calling `generate()` with a different compression level won't update the entry.
     * The reason is simple : PizZip doesn't know how compressed the content was and how to match the compression level with the implementation we use.
     */
-  var compressionOptions: js.UndefOr[Anon1 | Null] = js.undefined
+  var compressionOptions: js.UndefOr[AnonLevel | Null] = js.undefined
   /**
     * the function to encode the file name / comment.
     * By default, PizZip uses UTF-8 to encode the file names / comments. You can use this method to force an other encoding.
@@ -89,7 +89,7 @@ object GenerateOptions {
     base64: js.UndefOr[Boolean] = js.undefined,
     comment: String = null,
     compression: Compression = null,
-    compressionOptions: Anon1 = null,
+    compressionOptions: AnonLevel = null,
     encodeFileName: /* name */ String => Buffer = null,
     mimeType: String = null,
     platform: DOS | UNIX | Platform = null,

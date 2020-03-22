@@ -25,7 +25,7 @@ trait LaunchTemplateEbsBlockDeviceRequest extends js.Object {
   /**
     * The ID of the snapshot.
     */
-  var SnapshotId: js.UndefOr[String] = js.native
+  var SnapshotId: js.UndefOr[typings.awsSdk.ec2Mod.SnapshotId] = js.native
   /**
     * The size of the volume, in GiB. Default: If you're creating the volume from a snapshot and don't specify a volume size, the default is the snapshot size.
     */
@@ -43,7 +43,7 @@ object LaunchTemplateEbsBlockDeviceRequest {
     Encrypted: js.UndefOr[scala.Boolean] = js.undefined,
     Iops: Int | scala.Double = null,
     KmsKeyId: String = null,
-    SnapshotId: String = null,
+    SnapshotId: SnapshotId = null,
     VolumeSize: Int | scala.Double = null,
     VolumeType: VolumeType = null
   ): LaunchTemplateEbsBlockDeviceRequest = {

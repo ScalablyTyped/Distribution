@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@nivo/calendar" : "0.59.1"
+      "@nivo/calendar" : "0.61.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@nivo/calendar" : "0.59.1"
+      "@nivo/calendar" : "0.61.1"
     }
   ],
   "compile-devDependencies" : [

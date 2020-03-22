@@ -1,7 +1,7 @@
 package typings.oracleOraclejet.ojnboxMod
 
-import typings.oracleOraclejet.AnonBorderColorBorderRadiusBorderWidthCircleColor
-import typings.oracleOraclejet.AnonBorderColorBorderRadiusBorderWidthCircleColorDiamond
+import typings.oracleOraclejet.AnonBorderRadiusBorderWidth
+import typings.oracleOraclejet.AnonBorderWidthColor
 import typings.oracleOraclejet.mod.JetSettableProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,9 +14,9 @@ trait ojNBoxNodeSettableProperties extends JetSettableProperties {
   var color: js.UndefOr[String] = js.undefined
   var column: String
   var groupCategory: js.UndefOr[String] = js.undefined
-  var icon: js.UndefOr[AnonBorderColorBorderRadiusBorderWidthCircleColor] = js.undefined
+  var icon: js.UndefOr[AnonBorderRadiusBorderWidth] = js.undefined
   var indicatorColor: js.UndefOr[String] = js.undefined
-  var indicatorIcon: js.UndefOr[AnonBorderColorBorderRadiusBorderWidthCircleColorDiamond] = js.undefined
+  var indicatorIcon: js.UndefOr[AnonBorderWidthColor] = js.undefined
   var label: String
   var row: String
   var secondaryLabel: String
@@ -41,9 +41,9 @@ object ojNBoxNodeSettableProperties {
     svgClassName: String,
     color: String = null,
     groupCategory: String = null,
-    icon: AnonBorderColorBorderRadiusBorderWidthCircleColor = null,
+    icon: AnonBorderRadiusBorderWidth = null,
     indicatorColor: String = null,
-    indicatorIcon: AnonBorderColorBorderRadiusBorderWidthCircleColorDiamond = null,
+    indicatorIcon: AnonBorderWidthColor = null,
     svgStyle: js.Object = null,
     xPercentage: Int | Double = null,
     yPercentage: Int | Double = null

@@ -1,6 +1,6 @@
 package typings.officeJs.Excel
 
-import typings.officeJs.AnonRowHeight
+import typings.officeJs.CellPropertiesFormatLoadO
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +19,7 @@ trait RowPropertiesLoadOptions extends CellPropertiesLoadOptions {
     * [Api set: ExcelApi 1.9]
     */
   @JSName("format")
-  var format_RowPropertiesLoadOptions: js.UndefOr[CellPropertiesFormatLoadOptions with AnonRowHeight] = js.undefined
+  var format_RowPropertiesLoadOptions: js.UndefOr[CellPropertiesFormatLoadO] = js.undefined
   /**
     *
     * Specifies whether to load on the `rowHidden` property.
@@ -41,7 +41,7 @@ object RowPropertiesLoadOptions {
   def apply(
     address: js.UndefOr[Boolean] = js.undefined,
     addressLocal: js.UndefOr[Boolean] = js.undefined,
-    format: CellPropertiesFormatLoadOptions with AnonRowHeight = null,
+    format: CellPropertiesFormatLoadO = null,
     hidden: js.UndefOr[Boolean] = js.undefined,
     hyperlink: js.UndefOr[Boolean] = js.undefined,
     rowHidden: js.UndefOr[Boolean] = js.undefined,

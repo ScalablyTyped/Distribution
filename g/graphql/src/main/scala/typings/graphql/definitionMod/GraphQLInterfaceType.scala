@@ -1,7 +1,7 @@
 package typings.graphql.definitionMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.graphql.AnonExtensionASTNodesExtensions
+import typings.graphql.GraphQLInterfaceTypeConfi
 import typings.graphql.astMod.InterfaceTypeDefinitionNode
 import typings.graphql.astMod.InterfaceTypeExtensionNode
 import typings.graphql.maybeMod.Maybe
@@ -28,7 +28,7 @@ class GraphQLInterfaceType protected ()
   var resolveType: Maybe[GraphQLTypeResolver[_, _, StringDictionary[_]]] = js.native
   def getFields(): GraphQLFieldMap[_, _, StringDictionary[_]] = js.native
   def inspect(): String = js.native
-  def toConfig(): (GraphQLInterfaceTypeConfig[_, _, StringDictionary[_]]) with AnonExtensionASTNodesExtensions = js.native
+  def toConfig(): GraphQLInterfaceTypeConfi = js.native
   def toJSON(): String = js.native
 }
 

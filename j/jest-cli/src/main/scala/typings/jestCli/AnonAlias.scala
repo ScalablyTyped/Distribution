@@ -1,22 +1,24 @@
 package typings.jestCli
 
+import typings.jestCli.jestCliStrings.`Exit the test suite immediately after GraveaccentnGraveaccent number of failing testsDot`
+import typings.jestCli.jestCliStrings.b
 import typings.jestCli.jestCliStrings.boolean
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonAlias extends js.Object {
-  var alias: String
-  var default: js.UndefOr[scala.Nothing] = js.undefined
-  var description: String
-  var `type`: boolean
+  val alias: b
+  val default: js.UndefOr[scala.Nothing] = js.undefined
+  val description: `Exit the test suite immediately after GraveaccentnGraveaccent number of failing testsDot`
+  val `type`: boolean
 }
 
 object AnonAlias {
   @scala.inline
   def apply(
-    alias: String,
-    description: String,
+    alias: b,
+    description: `Exit the test suite immediately after GraveaccentnGraveaccent number of failing testsDot`,
     `type`: boolean,
     default: js.UndefOr[scala.Nothing] = js.undefined
   ): AnonAlias = {

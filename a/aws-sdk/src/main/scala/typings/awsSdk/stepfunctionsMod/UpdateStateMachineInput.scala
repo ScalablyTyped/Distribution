@@ -11,7 +11,7 @@ trait UpdateStateMachineInput extends js.Object {
     */
   var definition: js.UndefOr[Definition] = js.native
   /**
-    * 
+    * The LoggingConfiguration data type is used to set CloudWatch Logs options.
     */
   var loggingConfiguration: js.UndefOr[LoggingConfiguration] = js.native
   /**

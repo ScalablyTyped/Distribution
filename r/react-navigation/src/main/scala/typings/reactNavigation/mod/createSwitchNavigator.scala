@@ -1,6 +1,6 @@
 package typings.reactNavigation.mod
 
-import typings.reactNavigation.CreateNavigatorConfigNavigationSwitchRouterConfigN
+import typings.reactNavigation.CreateNavigatorConfigNavi
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +21,7 @@ object createSwitchNavigator extends js.Object {
       NavigationSwitchProp[NavigationRoute[NavigationParams], NavigationParams], 
       _
     ],
-    switchConfig: CreateNavigatorConfigNavigationSwitchRouterConfigN
+    switchConfig: CreateNavigatorConfigNavi
   ): NavigationNavigator[js.Object, NavigationProp[NavigationState]] = js.native
 }
 

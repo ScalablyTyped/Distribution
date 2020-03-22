@@ -1,6 +1,8 @@
 package typings.antd.paginationPaginationMod
 
 import typings.antd.AnonJumpNextIcon
+import typings.antd.antdStrings.ltr
+import typings.antd.antdStrings.rtl
 import typings.react.mod.Component
 import typings.react.mod._Global_.JSX.Element
 import scala.scalajs.js
@@ -11,6 +13,10 @@ import scala.scalajs.js.annotation._
 trait Pagination
   extends Component[PaginationProps, js.Object, js.Any] {
   def getIconsProps(prefixCls: String): AnonJumpNextIcon = js.native
+  @JSName("getIconsProps")
+  def getIconsProps_ltr(prefixCls: String, direction: ltr): AnonJumpNextIcon = js.native
+  @JSName("getIconsProps")
+  def getIconsProps_rtl(prefixCls: String, direction: rtl): AnonJumpNextIcon = js.native
   def renderPagination(contextLocale: js.Any): Element = js.native
 }
 

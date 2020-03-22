@@ -4,10 +4,25 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+	Detect whether the terminal supports color.
+	*/
 trait ColorSupport extends js.Object {
+  /**
+  		Return whether Chalk supports Truecolor 16 million colors.
+  		*/
   var has16m: Boolean
+  /**
+  		Return whether Chalk supports ANSI 256 colors.
+  		*/
   var has256: Boolean
+  /**
+  		Return whether Chalk supports basic 16 colors.
+  		*/
   var hasBasic: Boolean
+  /**
+  		The color level used by Chalk.
+  		*/
   var level: Level
 }
 

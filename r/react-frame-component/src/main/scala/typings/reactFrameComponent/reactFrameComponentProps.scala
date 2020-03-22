@@ -8,11 +8,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait reactFrameComponentProps {
-  @scala.inline
-  def FrameContextConsumerProps: ConsumerProps.type = typings.react.mod.ConsumerProps
   type FrameContextConsumerProps[T] = ConsumerProps[T]
-  @scala.inline
-  def FrameContextProviderProps: ProviderProps.type = typings.react.mod.ProviderProps
   type FrameContextProviderProps[T] = ProviderProps[T]
   @scala.inline
   def ReactFrameComponentProps: FrameComponentProps.type = typings.reactFrameComponent.mod.FrameComponentProps

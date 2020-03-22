@@ -1,7 +1,7 @@
 package typings.grammarkdown.diagnosticsMod
 
 import typings.grammarkdown.AnonCode
-import typings.grammarkdown.AnonCodeMessage
+import typings.grammarkdown.AnonMessage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +17,7 @@ object Diagnostics extends js.Object {
   var Duplicate_terminal_0_ : AnonCode = js.native
   var Invalid_character: AnonCode = js.native
   var Invalid_escape_sequence: AnonCode = js.native
-  var Obsolete_0_ : AnonCodeMessage = js.native
+  var Obsolete_0_ : AnonMessage = js.native
   var Production_0_does_not_have_a_parameter_named_1_ : AnonCode = js.native
   var Production_0_is_missing_parameter_1_All_definitions_of_production_0_must_specify_the_same_formal_parameters: AnonCode = js.native
   var Production_expected: AnonCode = js.native

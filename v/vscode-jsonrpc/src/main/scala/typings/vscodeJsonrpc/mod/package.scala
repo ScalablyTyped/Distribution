@@ -50,6 +50,7 @@ package object mod {
     /* p9 */ P9, 
     scala.Unit
   ]
+  type ProgressToken = scala.Double | java.lang.String
   type RequestHandler[P, R, E] = js.Function2[
     /* params */ P, 
     /* token */ typings.vscodeJsonrpc.cancellationMod.CancellationToken, 

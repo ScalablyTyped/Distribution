@@ -11,6 +11,8 @@ trait AnonAltCampaignId extends js.Object {
   var campaignId: String
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
+  /** Landing page ID. */
+  var id: String
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   /** OAuth 2.0 token for the current user. */
@@ -32,6 +34,7 @@ object AnonAltCampaignId {
   @scala.inline
   def apply(
     campaignId: String,
+    id: String,
     profileId: String,
     alt: String = null,
     fields: String = null,
@@ -41,7 +44,7 @@ object AnonAltCampaignId {
     quotaUser: String = null,
     userIp: String = null
   ): AnonAltCampaignId = {
-    val __obj = js.Dynamic.literal(campaignId = campaignId.asInstanceOf[js.Any], profileId = profileId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(campaignId = campaignId.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], profileId = profileId.asInstanceOf[js.Any])
     if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])

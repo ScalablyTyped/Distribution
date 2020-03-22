@@ -1,6 +1,6 @@
 package typings.keystonejsKeystone.mod
 
-import typings.keystonejsKeystone.AnonArgsContext
+import typings.keystonejsKeystone.AnonQuery
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ trait ResolveInputHooksOptions[Record /* <: js.Object */] extends js.Object {
    // todo: check
   var existingItem: Record
    // not clear in the documentation
-  var list: AnonArgsContext[Record]
+  var list: AnonQuery[Record]
   var originalInput: js.Any
   var resolvedData: js.Any
   var updatedItem: Record
@@ -24,7 +24,7 @@ object ResolveInputHooksOptions {
     addFieldValidationError: String => js.Any,
     context: js.Any,
     existingItem: Record,
-    list: AnonArgsContext[Record],
+    list: AnonQuery[Record],
     originalInput: js.Any,
     resolvedData: js.Any,
     updatedItem: Record

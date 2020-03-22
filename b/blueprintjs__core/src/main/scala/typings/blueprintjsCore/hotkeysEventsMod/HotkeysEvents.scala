@@ -1,7 +1,6 @@
 package typings.blueprintjsCore.hotkeysEventsMod
 
-import typings.blueprintjsCore.AnonChildren
-import typings.blueprintjsCore.hotkeysMod.IHotkeysProps
+import typings.blueprintjsCore.IHotkeysPropschildrenReacChildren
 import typings.std.KeyboardEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,6 +19,6 @@ class HotkeysEvents protected () extends js.Object {
   def count(): Double = js.native
   def handleKeyDown(e: KeyboardEvent): Unit = js.native
   def handleKeyUp(e: KeyboardEvent): Unit = js.native
-  def setHotkeys(props: IHotkeysProps with AnonChildren): Unit = js.native
+  def setHotkeys(props: IHotkeysPropschildrenReacChildren): Unit = js.native
 }
 

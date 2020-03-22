@@ -40,7 +40,7 @@ object transportManagerMod extends js.Object {
       * @const
       * @type {!Array.<function(new:Transport, string, RepoInfo, string=)>}
       */
-    def ALL_TRANSPORTS(): js.Array[TypeofClassBrowserPollConnection | TypeofClassWebSocketConnection] = js.native
+    def ALL_TRANSPORTS(): js.Array[TypeofBrowserPollConnecti | TypeofWebSocketConnection] = js.native
   }
   
 }

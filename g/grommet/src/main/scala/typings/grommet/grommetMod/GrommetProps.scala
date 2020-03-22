@@ -3,12 +3,16 @@ package typings.grommet.grommetMod
 import typings.grommet.baseMod.ThemeType
 import typings.grommet.grommetStrings.dark
 import typings.grommet.grommetStrings.light
+import typings.grommet.grommetStrings.rtl
+import typings.grommet.utilsMod.BackgroundType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GrommetProps extends js.Object {
+  var background: js.UndefOr[BackgroundType] = js.undefined
   var cssVars: js.UndefOr[Boolean] = js.undefined
+  var dir: js.UndefOr[rtl] = js.undefined
   var full: js.UndefOr[Boolean] = js.undefined
   var plain: js.UndefOr[Boolean] = js.undefined
   var theme: js.UndefOr[ThemeType] = js.undefined
@@ -19,7 +23,9 @@ trait GrommetProps extends js.Object {
 object GrommetProps {
   @scala.inline
   def apply(
+    background: BackgroundType = null,
     cssVars: js.UndefOr[Boolean] = js.undefined,
+    dir: rtl = null,
     full: js.UndefOr[Boolean] = js.undefined,
     plain: js.UndefOr[Boolean] = js.undefined,
     theme: ThemeType = null,
@@ -27,7 +33,9 @@ object GrommetProps {
     userAgent: String = null
   ): GrommetProps = {
     val __obj = js.Dynamic.literal()
+    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
     if (!js.isUndefined(cssVars)) __obj.updateDynamic("cssVars")(cssVars.asInstanceOf[js.Any])
+    if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
     if (!js.isUndefined(full)) __obj.updateDynamic("full")(full.asInstanceOf[js.Any])
     if (!js.isUndefined(plain)) __obj.updateDynamic("plain")(plain.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])

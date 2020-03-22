@@ -1,7 +1,6 @@
 package typings.vscodeLanguageserverProtocol.mod
 
 import typings.std.Error
-import typings.vscodeJsonrpc.Thenable
 import typings.vscodeJsonrpc.messagesMod.Message
 import typings.vscodeJsonrpc.messagesMod.NotificationMessage
 import typings.vscodeJsonrpc.mod.GenericNotificationHandler
@@ -102,6 +101,14 @@ trait ProtocolConnection extends js.Object {
     */
   def onNotification[P, RO](`type`: typings.vscodeJsonrpc.mod.NotificationType[P, RO], handler: NotificationHandler[P]): Unit = js.native
   /**
+    * Installs a progress handler for a given token.
+    * @param type the progress type
+    * @param token the token
+    * @param handler the handler
+    */
+  def onProgress[P](`type`: typings.vscodeJsonrpc.mod.ProgressType[P], token: String, handler: NotificationHandler[P]): typings.vscodeJsonrpc.eventsMod.Disposable = js.native
+  def onProgress[P](`type`: typings.vscodeJsonrpc.mod.ProgressType[P], token: Double, handler: NotificationHandler[P]): typings.vscodeJsonrpc.eventsMod.Disposable = js.native
+  /**
     * Installs a request handler.
     *
     * @param methods The method name to install the handler for.
@@ -161,13 +168,21 @@ trait ProtocolConnection extends js.Object {
   def sendNotification[P, RO](`type`: typings.vscodeJsonrpc.mod.NotificationType[P, RO]): Unit = js.native
   def sendNotification[P, RO](`type`: typings.vscodeJsonrpc.mod.NotificationType[P, RO], params: P): Unit = js.native
   /**
+    * Sends progress.
+    * @param type the progress type
+    * @param token the token to use
+    * @param value the progress value
+    */
+  def sendProgress[P](`type`: typings.vscodeJsonrpc.mod.ProgressType[P], token: String, value: P): Unit = js.native
+  def sendProgress[P](`type`: typings.vscodeJsonrpc.mod.ProgressType[P], token: Double, value: P): Unit = js.native
+  /**
     * Sends a request and returns a promise resolving to the result of the request.
     *
     * @param method the request's method name.
     * @param token An optional cancellation token.
     * @returns A promise resolving to the request's result.
     */
-  def sendRequest[R](method: String): Thenable[R] = js.native
+  def sendRequest[R](method: String): js.Promise[R] = js.native
   /**
     * Sends a request and returns a promise resolving to the result of the request.
     *
@@ -176,9 +191,9 @@ trait ProtocolConnection extends js.Object {
     * @param token An optional cancellation token.
     * @returns A promise resolving to the request's result.
     */
-  def sendRequest[R](method: String, param: js.Any): Thenable[R] = js.native
-  def sendRequest[R](method: String, param: js.Any, token: typings.vscodeJsonrpc.cancellationMod.CancellationToken): Thenable[R] = js.native
-  def sendRequest[R](method: String, token: typings.vscodeJsonrpc.cancellationMod.CancellationToken): Thenable[R] = js.native
+  def sendRequest[R](method: String, param: js.Any): js.Promise[R] = js.native
+  def sendRequest[R](method: String, param: js.Any, token: typings.vscodeJsonrpc.cancellationMod.CancellationToken): js.Promise[R] = js.native
+  def sendRequest[R](method: String, token: typings.vscodeJsonrpc.cancellationMod.CancellationToken): js.Promise[R] = js.native
   /**
     * Sends a request and returns a promise resolving to the result of the request.
     *
@@ -186,11 +201,11 @@ trait ProtocolConnection extends js.Object {
     * @param token An optional cancellation token.
     * @returns A promise resolving to the request's result.
     */
-  def sendRequest[R, E, RO](`type`: typings.vscodeJsonrpc.mod.RequestType0[R, E, RO]): Thenable[R] = js.native
+  def sendRequest[R, E, RO](`type`: typings.vscodeJsonrpc.mod.RequestType0[R, E, RO]): js.Promise[R] = js.native
   def sendRequest[R, E, RO](
     `type`: typings.vscodeJsonrpc.mod.RequestType0[R, E, RO],
     token: typings.vscodeJsonrpc.cancellationMod.CancellationToken
-  ): Thenable[R] = js.native
+  ): js.Promise[R] = js.native
   /**
     * Sends a request and returns a promise resolving to the result of the request.
     *
@@ -199,12 +214,12 @@ trait ProtocolConnection extends js.Object {
     * @param token An optional cancellation token.
     * @returns A promise resolving to the request's result.
     */
-  def sendRequest[P, R, E, RO](`type`: typings.vscodeJsonrpc.mod.RequestType[P, R, E, RO], params: P): Thenable[R] = js.native
+  def sendRequest[P, R, E, RO](`type`: typings.vscodeJsonrpc.mod.RequestType[P, R, E, RO], params: P): js.Promise[R] = js.native
   def sendRequest[P, R, E, RO](
     `type`: typings.vscodeJsonrpc.mod.RequestType[P, R, E, RO],
     params: P,
     token: typings.vscodeJsonrpc.cancellationMod.CancellationToken
-  ): Thenable[R] = js.native
+  ): js.Promise[R] = js.native
   /**
     * Enables tracing mode for the connection.
     */

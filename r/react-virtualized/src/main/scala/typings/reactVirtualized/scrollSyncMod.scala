@@ -14,7 +14,7 @@ object scrollSyncMod extends js.Object {
   /* static members */
   @js.native
   object ScrollSync extends js.Object {
-    var propTypes: AnonChildrenProps = js.native
+    var propTypes: AnonChildrenValidator = js.native
   }
   
 }

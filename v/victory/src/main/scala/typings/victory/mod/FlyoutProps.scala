@@ -1,9 +1,9 @@
 package typings.victory.mod
 
 import typings.react.mod.ReactElement
-import typings.victory.AnonXY
-import typings.victory.AnonXYBoolean
-import typings.victory.AnonXYD3ScaleScalePropType
+import typings.victory.Anon1
+import typings.victory.AnonXBoolean
+import typings.victory.AnonY
 import typings.victory.victoryStrings.bottom
 import typings.victory.victoryStrings.left
 import typings.victory.victoryStrings.right
@@ -20,7 +20,7 @@ trait FlyoutProps extends VictoryCommonProps {
   /**
     * the center coordinates of the flyout
     */
-  var center: js.UndefOr[AnonXY] = js.undefined
+  var center: js.UndefOr[AnonY] = js.undefined
   /**
     * the class name that will be applied to the rendered element
     */
@@ -110,7 +110,7 @@ object FlyoutProps {
   def apply(
     active: js.UndefOr[Boolean] = js.undefined,
     animate: Boolean | AnimatePropTypeInterface = null,
-    center: AnonXY = null,
+    center: AnonY = null,
     className: String = null,
     containerComponent: ReactElement = null,
     cornerRadius: Int | Double = null,
@@ -124,8 +124,8 @@ object FlyoutProps {
     horizontal: js.UndefOr[Boolean] = js.undefined,
     id: String | Double = null,
     index: Int | Double = null,
-    maxDomain: Double | AnonXY = null,
-    minDomain: Double | AnonXY = null,
+    maxDomain: Double | AnonY = null,
+    minDomain: Double | AnonY = null,
     name: String = null,
     orientation: top | bottom | left | right = null,
     origin: js.Object = null,
@@ -135,9 +135,9 @@ object FlyoutProps {
     pointerWidth: Int | Double = null,
     polar: js.UndefOr[Boolean] = js.undefined,
     role: String = null,
-    scale: ScalePropType | D3Scale | AnonXYD3ScaleScalePropType = null,
+    scale: ScalePropType | D3Scale | Anon1 = null,
     shapeRendering: String = null,
-    singleQuadrantDomainPadding: Boolean | AnonXYBoolean = null,
+    singleQuadrantDomainPadding: Boolean | AnonXBoolean = null,
     standalone: js.UndefOr[Boolean] = js.undefined,
     style: VictoryStyleObject = null,
     theme: VictoryThemeDefinition = null,

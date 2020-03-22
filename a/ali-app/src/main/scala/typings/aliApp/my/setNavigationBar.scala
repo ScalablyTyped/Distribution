@@ -1,6 +1,6 @@
 package typings.aliApp.my
 
-import typings.std.Partial
+import typings.aliApp.PartialSetNavigationBarOp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,6 +11,6 @@ object setNavigationBar extends js.Object {
   /**
   	 * 动态设置当前页面的标题。
   	 */
-  def apply(options: Partial[SetNavigationBarOptions]): Unit = js.native
+  def apply(options: PartialSetNavigationBarOp): Unit = js.native
 }
 

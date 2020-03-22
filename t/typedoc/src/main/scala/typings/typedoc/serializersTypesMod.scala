@@ -25,7 +25,7 @@ object serializersTypesMod extends js.Object {
   
   @js.native
   class IntersectionTypeSerializer ()
-    extends typings.typedoc.intersectionUnionMod.IntersectionTypeSerializer
+    extends typings.typedoc.typesIntersectionMod.IntersectionTypeSerializer
   
   @js.native
   class IntrinsicTypeSerializer ()
@@ -34,6 +34,10 @@ object serializersTypesMod extends js.Object {
   @js.native
   class PredicateTypeSerializer ()
     extends typings.typedoc.serializersTypesPredicateMod.PredicateTypeSerializer
+  
+  @js.native
+  class QueryTypeSerializer ()
+    extends typings.typedoc.serializersTypesQueryMod.QueryTypeSerializer
   
   @js.native
   class ReferenceTypeSerializer ()
@@ -62,6 +66,10 @@ object serializersTypesMod extends js.Object {
   @js.native
   class TypeSerializer ()
     extends typings.typedoc.serializersTypesAbstractMod.TypeSerializer
+  
+  @js.native
+  class UnionTypeSerializer ()
+    extends typings.typedoc.typesUnionMod.UnionTypeSerializer
   
   @js.native
   class UnknownTypeSerializer ()

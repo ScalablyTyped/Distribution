@@ -4,8 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DescriptionProps extends js.Object {
-  var markdown: String
+  var markdown: String = js.native
 }
 
 object DescriptionProps {

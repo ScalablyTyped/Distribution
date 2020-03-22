@@ -31,6 +31,10 @@ object storybookComponentsComponents extends storybookComponentsProps {
   @scala.inline
   def FlexBar: ComponentType[FlexBarProps] = typings.storybookComponents.mod.FlexBar.asInstanceOf[typings.react.mod.ComponentType[FlexBarProps]]
   @scala.inline
+  def FormButton: ComponentType[js.Any] = typings.storybookComponents.mod.Form.Button.asInstanceOf[typings.react.mod.ComponentType[js.Any]]
+  @scala.inline
+  def FormField: ComponentType[FormFieldProps] = typings.storybookComponents.mod.Form.Field.asInstanceOf[typings.react.mod.ComponentType[FormFieldProps]]
+  @scala.inline
   def IFrame: ComponentType[IFrameProps] = js.constructorOf[typings.storybookComponents.mod.IFrame].asInstanceOf[typings.react.mod.ComponentType[IFrameProps]]
   @scala.inline
   def IconGallery: ComponentType[js.Object] = typings.storybookComponents.mod.IconGallery.asInstanceOf[typings.react.mod.ComponentType[js.Object]]
@@ -90,15 +94,9 @@ object storybookComponentsComponents extends storybookComponentsProps {
   @scala.inline
   def Typeset: ComponentType[TypesetProps] = typings.storybookComponents.mod.Typeset.asInstanceOf[typings.react.mod.ComponentType[TypesetProps]]
   @scala.inline
-  def WithToolTipState: ComponentType[
-    typings.storybookComponents.withTooltipMod.WithTooltipPureProps with AnonStartOpen
-  ] = typings.storybookComponents.withTooltipMod.WithToolTipState.asInstanceOf[typings.react.mod.ComponentType[
-  typings.storybookComponents.withTooltipMod.WithTooltipPureProps with typings.storybookComponents.AnonStartOpen]]
+  def WithToolTipState: ComponentType[WithToolTipStateProps] = typings.storybookComponents.withTooltipMod.WithToolTipState.asInstanceOf[typings.react.mod.ComponentType[WithToolTipStateProps]]
   @scala.inline
-  def WithTooltip: ComponentType[
-    typings.storybookComponents.withTooltipMod.WithTooltipPureProps with AnonStartOpen
-  ] = typings.storybookComponents.withTooltipMod.WithTooltip.asInstanceOf[typings.react.mod.ComponentType[
-  typings.storybookComponents.withTooltipMod.WithTooltipPureProps with typings.storybookComponents.AnonStartOpen]]
+  def WithTooltip: ComponentType[WithTooltipProps] = typings.storybookComponents.withTooltipMod.WithTooltip.asInstanceOf[typings.react.mod.ComponentType[WithTooltipProps]]
   @scala.inline
   def WithTooltipPure: ComponentType[WithTooltipPureProps] = typings.storybookComponents.mod.WithTooltipPure.asInstanceOf[typings.react.mod.ComponentType[WithTooltipPureProps]]
 }

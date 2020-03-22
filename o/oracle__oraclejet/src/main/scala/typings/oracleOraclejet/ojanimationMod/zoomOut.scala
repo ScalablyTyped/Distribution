@@ -1,6 +1,6 @@
 package typings.oracleOraclejet.ojanimationMod
 
-import typings.oracleOraclejet.AnonAxisDelay
+import typings.oracleOraclejet.AnonPersist
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object zoomOut extends js.Object {
   def apply(element: Element): js.Promise[Boolean] = js.native
-  def apply(element: Element, options: AnonAxisDelay): js.Promise[Boolean] = js.native
+  def apply(element: Element, options: AnonPersist): js.Promise[Boolean] = js.native
 }
 

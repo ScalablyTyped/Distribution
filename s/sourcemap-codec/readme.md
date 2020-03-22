@@ -1,7 +1,7 @@
 
 # Scala.js typings for sourcemap-codec
 
-Typings are for version 1.4.6
+Typings are for version 1.4.8
 
 ## Library description:
 Encode/decode sourcemap mappings

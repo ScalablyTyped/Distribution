@@ -1,7 +1,7 @@
 package typings.reactDragtastic.mod
 
 import typings.react.mod.ReactNode
-import typings.reactDragtastic.AnonIsOverAccepted
+import typings.reactDragtastic.StateisOverAcceptedboolea
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,13 +18,13 @@ trait DragComponentProps extends js.Object {
     * For example, you may pass ['type', 'data'] to only rerender if these keys change.
     */
   var subscribeTo: js.UndefOr[js.Array[String] | Null] = js.undefined
-  def children(arg: State with AnonIsOverAccepted): ReactNode
+  def children(arg: StateisOverAcceptedboolea): ReactNode
 }
 
 object DragComponentProps {
   @scala.inline
   def apply(
-    children: State with AnonIsOverAccepted => ReactNode,
+    children: StateisOverAcceptedboolea => ReactNode,
     alwaysRender: js.UndefOr[Boolean] = js.undefined,
     `for`: Id = null,
     onDrag: () => Unit = null,

@@ -13,9 +13,10 @@ trait WhyDidYouRenderOptions extends js.Object {
   var hotReloadBufferMs: js.UndefOr[Double] = js.undefined
   var include: js.UndefOr[js.Array[RegExp]] = js.undefined
   var logOnDifferentValues: js.UndefOr[Boolean] = js.undefined
-  var notifier: js.UndefOr[js.Function1[/* options */ UpdateInfo, Unit]] = js.undefined
+  var notifier: js.UndefOr[Notifier] = js.undefined
   var onlyLogs: js.UndefOr[Boolean] = js.undefined
   var titleColor: js.UndefOr[String] = js.undefined
+  var trackAllPureComponents: js.UndefOr[Boolean] = js.undefined
   var trackExtraHooks: js.UndefOr[js.Array[ExtraHookToTrack]] = js.undefined
   var trackHooks: js.UndefOr[Boolean] = js.undefined
 }
@@ -33,6 +34,7 @@ object WhyDidYouRenderOptions {
     notifier: /* options */ UpdateInfo => Unit = null,
     onlyLogs: js.UndefOr[Boolean] = js.undefined,
     titleColor: String = null,
+    trackAllPureComponents: js.UndefOr[Boolean] = js.undefined,
     trackExtraHooks: js.Array[ExtraHookToTrack] = null,
     trackHooks: js.UndefOr[Boolean] = js.undefined
   ): WhyDidYouRenderOptions = {
@@ -47,6 +49,7 @@ object WhyDidYouRenderOptions {
     if (notifier != null) __obj.updateDynamic("notifier")(js.Any.fromFunction1(notifier))
     if (!js.isUndefined(onlyLogs)) __obj.updateDynamic("onlyLogs")(onlyLogs.asInstanceOf[js.Any])
     if (titleColor != null) __obj.updateDynamic("titleColor")(titleColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(trackAllPureComponents)) __obj.updateDynamic("trackAllPureComponents")(trackAllPureComponents.asInstanceOf[js.Any])
     if (trackExtraHooks != null) __obj.updateDynamic("trackExtraHooks")(trackExtraHooks.asInstanceOf[js.Any])
     if (!js.isUndefined(trackHooks)) __obj.updateDynamic("trackHooks")(trackHooks.asInstanceOf[js.Any])
     __obj.asInstanceOf[WhyDidYouRenderOptions]

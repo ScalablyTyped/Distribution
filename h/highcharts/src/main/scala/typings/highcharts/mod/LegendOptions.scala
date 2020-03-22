@@ -9,7 +9,7 @@ trait LegendOptions extends js.Object {
     * (Highcharts, Highstock, Highmaps, Gantt) Accessibility options for the
     * legend. Requires the Accessibility module.
     */
-  var accessibility: js.UndefOr[js.Object | LegendAccessibilityOptions] = js.undefined
+  var accessibility: js.UndefOr[LegendAccessibilityOptions] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The horizontal alignment of the
     * legend box within the chart area. Valid values are `left`, `center` and
@@ -261,7 +261,7 @@ trait LegendOptions extends js.Object {
 object LegendOptions {
   @scala.inline
   def apply(
-    accessibility: js.Object | LegendAccessibilityOptions = null,
+    accessibility: LegendAccessibilityOptions = null,
     align: AlignValue = null,
     alignColumns: js.UndefOr[Boolean] = js.undefined,
     backgroundColor: ColorString | GradientColorObject | PatternObject = null,

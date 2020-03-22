@@ -17,14 +17,14 @@ trait DeleteTransitGatewayRouteRequest extends js.Object {
   /**
     * The ID of the transit gateway route table.
     */
-  var TransitGatewayRouteTableId: String = js.native
+  var TransitGatewayRouteTableId: typings.awsSdk.ec2Mod.TransitGatewayRouteTableId = js.native
 }
 
 object DeleteTransitGatewayRouteRequest {
   @scala.inline
   def apply(
     DestinationCidrBlock: String,
-    TransitGatewayRouteTableId: String,
+    TransitGatewayRouteTableId: TransitGatewayRouteTableId,
     DryRun: js.UndefOr[scala.Boolean] = js.undefined
   ): DeleteTransitGatewayRouteRequest = {
     val __obj = js.Dynamic.literal(DestinationCidrBlock = DestinationCidrBlock.asInstanceOf[js.Any], TransitGatewayRouteTableId = TransitGatewayRouteTableId.asInstanceOf[js.Any])

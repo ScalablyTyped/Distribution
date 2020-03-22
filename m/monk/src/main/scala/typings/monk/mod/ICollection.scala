@@ -1,12 +1,12 @@
 package typings.monk.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.monk.Anon0
-import typings.monk.Anon01
-import typings.monk.Anon01AvgObjSize
-import typings.monk.Anon01NNModified
-import typings.monk.AnonCursor
+import typings.monk.AnonAvgObjSize
 import typings.monk.AnonDeletedCount
+import typings.monk.AnonEach
+import typings.monk.AnonMsg
+import typings.monk.AnonNIndexesWas
+import typings.monk.AnonNModified
 import typings.monk.monkBooleans.`true`
 import typings.monk.monkNumbers.`-1`
 import typings.monk.monkNumbers.`1`
@@ -107,27 +107,27 @@ class ICollection[T] () extends js.Object {
   def dropIndex(
     fields: TFields,
     options: js.Object,
-    callback: js.Function2[/* err */ Error | Null, /* data */ Anon0, Unit]
+    callback: js.Function2[/* err */ Error | Null, /* data */ AnonNIndexesWas, Unit]
   ): Unit = js.native
   @JSName("dropIndex")
-  def dropIndex_Promise(): js.Promise[Anon0] = js.native
+  def dropIndex_Promise(): js.Promise[AnonNIndexesWas] = js.native
   @JSName("dropIndex")
-  def dropIndex_Promise(fields: TFields): js.Promise[Anon0] = js.native
+  def dropIndex_Promise(fields: TFields): js.Promise[AnonNIndexesWas] = js.native
   @JSName("dropIndex")
-  def dropIndex_Promise(fields: TFields, options: js.Object): js.Promise[Anon0] = js.native
+  def dropIndex_Promise(fields: TFields, options: js.Object): js.Promise[AnonNIndexesWas] = js.native
   def dropIndexes(): Unit = js.native
-  def dropIndexes(callback: js.Function2[/* err */ Error | Null, /* data */ Anon01, Unit]): Unit = js.native
+  def dropIndexes(callback: js.Function2[/* err */ Error | Null, /* data */ AnonMsg, Unit]): Unit = js.native
   @JSName("dropIndexes")
-  def dropIndexes_Promise(): js.Promise[Anon01] = js.native
+  def dropIndexes_Promise(): js.Promise[AnonMsg] = js.native
   @JSName("drop")
   def drop_Promise(): js.Promise[(`ns not found`) | `true`] = js.native
-  def find[U](): js.Promise[js.Array[U]] with AnonCursor[U] = js.native
-  def find[U](query: TQuery): js.Promise[js.Array[U]] with AnonCursor[U] = js.native
-  def find[U](query: TQuery, options: js.Object): js.Promise[js.Array[U]] with AnonCursor[U] = js.native
+  def find[U](): js.Promise[js.Array[U]] with AnonEach[U] = js.native
+  def find[U](query: TQuery): js.Promise[js.Array[U]] with AnonEach[U] = js.native
+  def find[U](query: TQuery, options: js.Object): js.Promise[js.Array[U]] with AnonEach[U] = js.native
   def find[U](
     query: TQuery,
     options: js.Object,
-    callback: js.Function2[/* err */ Error | Null, /* data */ js.Array[U] with AnonCursor[U], Unit]
+    callback: js.Function2[/* err */ Error | Null, /* data */ js.Array[U] with AnonEach[U], Unit]
   ): Unit = js.native
   def findOne[U](): Unit = js.native
   def findOne[U](query: TQuery): Unit = js.native
@@ -297,23 +297,23 @@ class ICollection[T] () extends js.Object {
   def stats(options: js.Object): Unit = js.native
   def stats(
     options: js.Object,
-    callback: js.Function2[/* err */ Error | Null, /* data */ Anon01AvgObjSize, Unit]
+    callback: js.Function2[/* err */ Error | Null, /* data */ AnonAvgObjSize, Unit]
   ): Unit = js.native
   @JSName("stats")
-  def stats_Promise(): js.Promise[Anon01AvgObjSize] = js.native
+  def stats_Promise(): js.Promise[AnonAvgObjSize] = js.native
   @JSName("stats")
-  def stats_Promise(options: js.Object): js.Promise[Anon01AvgObjSize] = js.native
+  def stats_Promise(options: js.Object): js.Promise[AnonAvgObjSize] = js.native
   def update(query: TQuery, update: js.Object): Unit = js.native
   def update(query: TQuery, update: js.Object, options: js.Object): Unit = js.native
   def update(
     query: TQuery,
     update: js.Object,
     options: js.Object,
-    callback: js.Function2[/* err */ Error | Null, /* data */ Anon01NNModified, Unit]
+    callback: js.Function2[/* err */ Error | Null, /* data */ AnonNModified, Unit]
   ): Unit = js.native
   @JSName("update")
-  def update_Promise(query: TQuery, update: js.Object): js.Promise[Anon01NNModified] = js.native
+  def update_Promise(query: TQuery, update: js.Object): js.Promise[AnonNModified] = js.native
   @JSName("update")
-  def update_Promise(query: TQuery, update: js.Object, options: js.Object): js.Promise[Anon01NNModified] = js.native
+  def update_Promise(query: TQuery, update: js.Object, options: js.Object): js.Promise[AnonNModified] = js.native
 }
 

@@ -33,8 +33,15 @@ object SchemaFieldDescription {
     __obj.asInstanceOf[SchemaFieldDescription]
   }
   @scala.inline
-  def SchemaFieldInnerTypeDescription(innerType: SchemaFieldDescription = null): SchemaFieldDescription = {
-    val __obj = js.Dynamic.literal()
+  def SchemaFieldInnerTypeDescription(
+    label: String,
+    meta: js.Object,
+    tests: js.Array[AnonName],
+    `type`: String,
+    innerType: SchemaFieldDescription = null
+  ): SchemaFieldDescription = {
+    val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], tests = tests.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (innerType != null) __obj.updateDynamic("innerType")(innerType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaFieldDescription]
   }

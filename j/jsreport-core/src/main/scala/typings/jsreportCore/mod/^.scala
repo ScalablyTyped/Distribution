@@ -1,6 +1,6 @@
 package typings.jsreportCore.mod
 
-import typings.std.Partial
+import typings.jsreportCore.PartialConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(): Reporter = js.native
-  def apply(config: Partial[Configuration]): Reporter = js.native
+  def apply(config: PartialConfiguration): Reporter = js.native
 }
 

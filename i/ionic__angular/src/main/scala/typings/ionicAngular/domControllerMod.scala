@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ionic/angular/dist/providers/dom-controller", JSImport.Namespace)
+@JSImport("@ionic/angular/providers/dom-controller", JSImport.Namespace)
 @js.native
 object domControllerMod extends js.Object {
   @js.native

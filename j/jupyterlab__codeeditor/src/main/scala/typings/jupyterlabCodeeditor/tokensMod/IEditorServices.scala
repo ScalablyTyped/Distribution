@@ -3,7 +3,7 @@ package typings.jupyterlabCodeeditor.tokensMod
 import org.scalablytyped.runtime.TopLevel
 import typings.jupyterlabCodeeditor.factoryMod.IEditorFactoryService
 import typings.jupyterlabCodeeditor.mimetypeMod.IEditorMimeTypeService
-import typings.phosphorCoreutils.mod.Token
+import typings.luminoCoreutils.mod.Token
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

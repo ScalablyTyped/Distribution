@@ -25,7 +25,7 @@ trait AnonActions extends js.Object {
     Unit
   ] = js.native
   @JSName("addFilter")
-  var addFilter_Original: FnCallback = js.native
+  var addFilter_Original: FnCall = js.native
   @JSName("applyFilters")
   var applyFilters_Original: RunHook = js.native
   @JSName("currentAction")

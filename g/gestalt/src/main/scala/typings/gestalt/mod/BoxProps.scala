@@ -1,6 +1,6 @@
 package typings.gestalt.mod
 
-import typings.gestalt.AnonKey
+import typings.gestalt.AnonStyle
 import typings.gestalt.gestaltStrings.absolute
 import typings.gestalt.gestaltStrings.around
 import typings.gestalt.gestaltStrings.auto
@@ -71,7 +71,7 @@ trait BoxProps extends js.Object {
     blue | darkGray | darkWash | eggplant | gray | green | lightGray | lightWash | maroon | midnight | navy | olive | orange | orchid | pine | purple | red | transparent | transparentDarkGray | watermelon | white
   ] = js.undefined
   var column: js.UndefOr[UnsignedUpTo12] = js.undefined
-  var dangerouslySetInlineStyle: js.UndefOr[AnonKey] = js.undefined
+  var dangerouslySetInlineStyle: js.UndefOr[AnonStyle] = js.undefined
   var direction: js.UndefOr[row | column] = js.undefined
   var display: js.UndefOr[none | flex | block | inlineBlock | visuallyHidden] = js.undefined
   var fit: js.UndefOr[Boolean] = js.undefined
@@ -153,7 +153,7 @@ object BoxProps {
     children: ReactNode = null,
     color: blue | darkGray | darkWash | eggplant | gray | green | lightGray | lightWash | maroon | midnight | navy | olive | orange | orchid | pine | purple | red | transparent | transparentDarkGray | watermelon | white = null,
     column: UnsignedUpTo12 = null,
-    dangerouslySetInlineStyle: AnonKey = null,
+    dangerouslySetInlineStyle: AnonStyle = null,
     direction: row | column = null,
     display: none | flex | block | inlineBlock | visuallyHidden = null,
     fit: js.UndefOr[Boolean] = js.undefined,

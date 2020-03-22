@@ -1,8 +1,8 @@
 package typings.textract.mod
 
 import typings.node.childProcessMod.ExecException
-import typings.textract.AnonASCII7
 import typings.textract.AnonCmd
+import typings.textract.AnonCrop
 import typings.textract.AnonLang
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -43,7 +43,7 @@ trait Config extends js.Object {
     * It is not suggested you modify this without understanding what trouble that might get you in.
     * See [this GH issue](https://github.com/dbashford/textract/issues/75) for why textract overrides that library's default.
     */
-  var pdftotextOptions: js.UndefOr[AnonASCII7] = js.undefined
+  var pdftotextOptions: js.UndefOr[AnonCrop] = js.undefined
   /**
     * Pass this in as true and textract will not strip any line breaks.
     * @default false
@@ -72,7 +72,7 @@ object Config {
     exec: ExecException = null,
     images: extractorExecOpts = null,
     includeAltText: js.UndefOr[Boolean] = js.undefined,
-    pdftotextOptions: AnonASCII7 = null,
+    pdftotextOptions: AnonCrop = null,
     preserveLineBreaks: js.UndefOr[Boolean] = js.undefined,
     preserveOnlyMultipleLineBreaks: js.UndefOr[Boolean] = js.undefined,
     rtf: extractorExecOpts = null,

@@ -1,13 +1,13 @@
 package typings.chartist.mod
 
-import typings.chartist.AnonXY
+import typings.chartist.AnonY
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IBarChartAxis extends js.Object {
   var labelInterpolationFnc: js.UndefOr[js.Function] = js.undefined
-  var labelOffset: js.UndefOr[AnonXY] = js.undefined
+  var labelOffset: js.UndefOr[AnonY] = js.undefined
   var offset: js.UndefOr[Double] = js.undefined
   var onlyInteger: js.UndefOr[Boolean] = js.undefined
   var position: js.UndefOr[String] = js.undefined
@@ -20,7 +20,7 @@ object IBarChartAxis {
   @scala.inline
   def apply(
     labelInterpolationFnc: js.Function = null,
-    labelOffset: AnonXY = null,
+    labelOffset: AnonY = null,
     offset: Int | Double = null,
     onlyInteger: js.UndefOr[Boolean] = js.undefined,
     position: String = null,

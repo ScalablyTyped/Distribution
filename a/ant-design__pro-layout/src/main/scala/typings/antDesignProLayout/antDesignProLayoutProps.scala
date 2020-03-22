@@ -50,13 +50,10 @@ trait antDesignProLayoutProps {
   def SiderMenuProps: typings.antDesignProLayout.siderMenuSiderMenuMod.SiderMenuProps.type = typings.antDesignProLayout.siderMenuSiderMenuMod.SiderMenuProps
   type SiderMenuProps = typings.antDesignProLayout.siderMenuSiderMenuMod.SiderMenuProps
   @scala.inline
-  def ThemeColorProps: typings.antDesignProLayout.themeColorMod.ThemeColorProps.type = typings.antDesignProLayout.themeColorMod.ThemeColorProps
-  type ThemeColorProps = typings.antDesignProLayout.themeColorMod.ThemeColorProps
-  @scala.inline
   def TopNavHeaderProps: typings.antDesignProLayout.topNavHeaderMod.TopNavHeaderProps.type = typings.antDesignProLayout.topNavHeaderMod.TopNavHeaderProps
   type TopNavHeaderProps = typings.antDesignProLayout.topNavHeaderMod.TopNavHeaderProps
   @scala.inline
-  def WrapContentProps: AnonClassName.type = typings.antDesignProLayout.AnonClassName
-  type WrapContentProps = AnonClassName
+  def WrapContentProps: AnonChildren.type = typings.antDesignProLayout.AnonChildren
+  type WrapContentProps = AnonChildren
 }
 

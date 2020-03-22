@@ -21,11 +21,11 @@ trait TransitGatewayAssociation extends js.Object {
   /**
     * The ID of the attachment.
     */
-  var TransitGatewayAttachmentId: js.UndefOr[String] = js.native
+  var TransitGatewayAttachmentId: js.UndefOr[typings.awsSdk.ec2Mod.TransitGatewayAttachmentId] = js.native
   /**
     * The ID of the transit gateway route table.
     */
-  var TransitGatewayRouteTableId: js.UndefOr[String] = js.native
+  var TransitGatewayRouteTableId: js.UndefOr[typings.awsSdk.ec2Mod.TransitGatewayRouteTableId] = js.native
 }
 
 object TransitGatewayAssociation {
@@ -34,8 +34,8 @@ object TransitGatewayAssociation {
     ResourceId: String = null,
     ResourceType: TransitGatewayAttachmentResourceType = null,
     State: TransitGatewayAssociationState = null,
-    TransitGatewayAttachmentId: String = null,
-    TransitGatewayRouteTableId: String = null
+    TransitGatewayAttachmentId: TransitGatewayAttachmentId = null,
+    TransitGatewayRouteTableId: TransitGatewayRouteTableId = null
   ): TransitGatewayAssociation = {
     val __obj = js.Dynamic.literal()
     if (ResourceId != null) __obj.updateDynamic("ResourceId")(ResourceId.asInstanceOf[js.Any])

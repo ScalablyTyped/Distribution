@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@nivo/sankey" : "0.59.1"
+      "@nivo/sankey" : "0.61.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@nivo/sankey" : "0.59.1"
+      "@nivo/sankey" : "0.61.2"
     }
   ],
   "compile-devDependencies" : [

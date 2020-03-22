@@ -2,10 +2,11 @@ package typings.baseui.selectMod
 
 import typings.baseui.AnonLabelKey
 import typings.baseui.AnonOption
-import typings.baseui.AnonOption1413309453
+import typings.baseui.AnonOptionOption
 import typings.baseui.baseuiStrings.compact
 import typings.baseui.baseuiStrings.default_
 import typings.baseui.baseuiStrings.large_
+import typings.baseui.baseuiStrings.mini
 import typings.baseui.baseuiStrings.search
 import typings.baseui.baseuiStrings.select
 import typings.react.mod.FocusEvent
@@ -22,6 +23,7 @@ import scala.scalajs.js.annotation._
 
 trait SelectProps extends js.Object {
   var `aria-describedby`: js.UndefOr[String] = js.undefined
+  var `aria-errormessage`: js.UndefOr[String] = js.undefined
   var `aria-label`: js.UndefOr[String] = js.undefined
   var `aria-labelledby`: js.UndefOr[String] = js.undefined
   var autoFocus: js.UndefOr[Boolean] = js.undefined
@@ -44,7 +46,7 @@ trait SelectProps extends js.Object {
   ] = js.undefined
   var filterOutSelected: js.UndefOr[Boolean] = js.undefined
   var getOptionLabel: js.UndefOr[js.Function1[/* args */ AnonOption, ReactNode]] = js.undefined
-  var getValueLabel: js.UndefOr[js.Function1[/* args */ AnonOption1413309453, ReactNode]] = js.undefined
+  var getValueLabel: js.UndefOr[js.Function1[/* args */ AnonOptionOption, ReactNode]] = js.undefined
   var id: js.UndefOr[String] = js.undefined
   var isLoading: js.UndefOr[Boolean] = js.undefined
   var labelKey: js.UndefOr[String] = js.undefined
@@ -68,7 +70,7 @@ trait SelectProps extends js.Object {
   var positive: js.UndefOr[Boolean] = js.undefined
   var required: js.UndefOr[Boolean] = js.undefined
   var searchable: js.UndefOr[Boolean] = js.undefined
-  var size: js.UndefOr[default_ | compact | large_] = js.undefined
+  var size: js.UndefOr[mini | default_ | compact | large_] = js.undefined
   var startOpen: js.UndefOr[Boolean] = js.undefined
   var `type`: js.UndefOr[select | search] = js.undefined
   var value: js.UndefOr[Value] = js.undefined
@@ -79,6 +81,7 @@ object SelectProps {
   @scala.inline
   def apply(
     `aria-describedby`: String = null,
+    `aria-errormessage`: String = null,
     `aria-label`: String = null,
     `aria-labelledby`: String = null,
     autoFocus: js.UndefOr[Boolean] = js.undefined,
@@ -93,7 +96,7 @@ object SelectProps {
     filterOptions: (/* options */ Value, /* filterValue */ String, /* excludeOptions */ js.UndefOr[Value], /* newProps */ js.UndefOr[AnonLabelKey]) => Value = null,
     filterOutSelected: js.UndefOr[Boolean] = js.undefined,
     getOptionLabel: /* args */ AnonOption => ReactNode = null,
-    getValueLabel: /* args */ AnonOption1413309453 => ReactNode = null,
+    getValueLabel: /* args */ AnonOptionOption => ReactNode = null,
     id: String = null,
     isLoading: js.UndefOr[Boolean] = js.undefined,
     labelKey: String = null,
@@ -117,7 +120,7 @@ object SelectProps {
     positive: js.UndefOr[Boolean] = js.undefined,
     required: js.UndefOr[Boolean] = js.undefined,
     searchable: js.UndefOr[Boolean] = js.undefined,
-    size: default_ | compact | large_ = null,
+    size: mini | default_ | compact | large_ = null,
     startOpen: js.UndefOr[Boolean] = js.undefined,
     `type`: select | search = null,
     value: Value = null,
@@ -125,6 +128,7 @@ object SelectProps {
   ): SelectProps = {
     val __obj = js.Dynamic.literal()
     if (`aria-describedby` != null) __obj.updateDynamic("aria-describedby")(`aria-describedby`.asInstanceOf[js.Any])
+    if (`aria-errormessage` != null) __obj.updateDynamic("aria-errormessage")(`aria-errormessage`.asInstanceOf[js.Any])
     if (`aria-label` != null) __obj.updateDynamic("aria-label")(`aria-label`.asInstanceOf[js.Any])
     if (`aria-labelledby` != null) __obj.updateDynamic("aria-labelledby")(`aria-labelledby`.asInstanceOf[js.Any])
     if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.asInstanceOf[js.Any])

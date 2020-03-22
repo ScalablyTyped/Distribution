@@ -66,7 +66,7 @@ class Collection[E /* <: js.Object */] protected () extends LokiEventEmitter {
     * a collection of objects recording the changes applied through a commmitStage
     */
   var commitLog: js.Array[AnonData] = js.native
-  var console: AnonArgs = js.native
+  var console: AnonError = js.native
   var constraints: AnonExact[E] = js.native
   var data: js.Array[E] = js.native
   var dirty: Boolean = js.native
@@ -127,7 +127,7 @@ class Collection[E /* <: js.Object */] protected () extends LokiEventEmitter {
     * var results = pview.data();
     */
   def addDynamicView(name: String): DynamicView[E] = js.native
-  def addDynamicView(name: String, options: Partial[DynamicViewOptions]): DynamicView[E] = js.native
+  def addDynamicView(name: String, options: PartialDynamicViewOptions): DynamicView[E] = js.native
   /**
     * Adds a named collection transform to the collection
     * @param name - name to associate with transform
@@ -162,7 +162,7 @@ class Collection[E /* <: js.Object */] protected () extends LokiEventEmitter {
     */
   def by(field: String): js.Function1[/* value */ js.Any, js.UndefOr[E]] = js.native
   def by(field: String, value: js.Any): js.UndefOr[E] = js.native
-  def byExample(template: js.Object): AnonAndAny = js.native
+  def byExample(template: js.Object): AnonAndArray = js.native
   @JSName("by")
   def by_Union(field: String): js.UndefOr[E | (js.Function1[/* value */ js.Any, js.UndefOr[E]])] = js.native
   /**
@@ -235,7 +235,7 @@ class Collection[E /* <: js.Object */] protected () extends LokiEventEmitter {
     * @param [options.repair] - whether to fix problems if they are encountered
     */
   def checkAllIndexes(): js.Array[String] = js.native
-  def checkAllIndexes(options: Partial[CheckIndexOptions]): js.Array[String] = js.native
+  def checkAllIndexes(options: PartialCheckIndexOptions): js.Array[String] = js.native
   /**
     * Perform checks to determine validity/consistency of a binary index
     * @param property - name of the binary-indexed property to check
@@ -245,7 +245,7 @@ class Collection[E /* <: js.Object */] protected () extends LokiEventEmitter {
     * @param [options.repair] - whether to fix problems if they are encountered
     */
   def checkIndex(property: String): Boolean = js.native
-  def checkIndex(property: String, options: Partial[CheckIndexOptions]): Boolean = js.native
+  def checkIndex(property: String, options: PartialCheckIndexOptions): Boolean = js.native
   /**
     * Empties the collection.
     * @param [options] - configure clear behavior
@@ -308,7 +308,7 @@ class Collection[E /* <: js.Object */] protected () extends LokiEventEmitter {
     leftJoinProp: String,
     rightJoinProp: String,
     mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, _],
-    dataOptions: Partial[GetDataOptions]
+    dataOptions: PartialGetDataOptions
   ): Resultset[_] = js.native
   def eqJoin(joinData: js.Array[_], leftJoinProp: String, rightJoinProp: js.Function1[/* obj */ js.Any, String]): Resultset[_] = js.native
   def eqJoin(
@@ -322,7 +322,7 @@ class Collection[E /* <: js.Object */] protected () extends LokiEventEmitter {
     leftJoinProp: String,
     rightJoinProp: js.Function1[/* obj */ js.Any, String],
     mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, _],
-    dataOptions: Partial[GetDataOptions]
+    dataOptions: PartialGetDataOptions
   ): Resultset[_] = js.native
   def eqJoin(joinData: js.Array[_], leftJoinProp: js.Function1[/* obj */ js.Any, String], rightJoinProp: String): Resultset[_] = js.native
   def eqJoin(
@@ -336,7 +336,7 @@ class Collection[E /* <: js.Object */] protected () extends LokiEventEmitter {
     leftJoinProp: js.Function1[/* obj */ js.Any, String],
     rightJoinProp: String,
     mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, _],
-    dataOptions: Partial[GetDataOptions]
+    dataOptions: PartialGetDataOptions
   ): Resultset[_] = js.native
   def eqJoin(
     joinData: js.Array[_],
@@ -354,7 +354,7 @@ class Collection[E /* <: js.Object */] protected () extends LokiEventEmitter {
     leftJoinProp: js.Function1[/* obj */ js.Any, String],
     rightJoinProp: js.Function1[/* obj */ js.Any, String],
     mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, _],
-    dataOptions: Partial[GetDataOptions]
+    dataOptions: PartialGetDataOptions
   ): Resultset[_] = js.native
   /**
     * Join two collections on specified properties
@@ -381,7 +381,7 @@ class Collection[E /* <: js.Object */] protected () extends LokiEventEmitter {
     leftJoinProp: String,
     rightJoinProp: String,
     mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, _],
-    dataOptions: Partial[GetDataOptions]
+    dataOptions: PartialGetDataOptions
   ): Resultset[_] = js.native
   def eqJoin(
     joinData: Collection[_],
@@ -399,7 +399,7 @@ class Collection[E /* <: js.Object */] protected () extends LokiEventEmitter {
     leftJoinProp: String,
     rightJoinProp: js.Function1[/* obj */ js.Any, String],
     mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, _],
-    dataOptions: Partial[GetDataOptions]
+    dataOptions: PartialGetDataOptions
   ): Resultset[_] = js.native
   def eqJoin(
     joinData: Collection[_],
@@ -417,7 +417,7 @@ class Collection[E /* <: js.Object */] protected () extends LokiEventEmitter {
     leftJoinProp: js.Function1[/* obj */ js.Any, String],
     rightJoinProp: String,
     mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, _],
-    dataOptions: Partial[GetDataOptions]
+    dataOptions: PartialGetDataOptions
   ): Resultset[_] = js.native
   def eqJoin(
     joinData: Collection[_],
@@ -435,7 +435,7 @@ class Collection[E /* <: js.Object */] protected () extends LokiEventEmitter {
     leftJoinProp: js.Function1[/* obj */ js.Any, String],
     rightJoinProp: js.Function1[/* obj */ js.Any, String],
     mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, _],
-    dataOptions: Partial[GetDataOptions]
+    dataOptions: PartialGetDataOptions
   ): Resultset[_] = js.native
   def eqJoin(joinData: Resultset[_], leftJoinProp: String, rightJoinProp: String): Resultset[_] = js.native
   def eqJoin(
@@ -449,7 +449,7 @@ class Collection[E /* <: js.Object */] protected () extends LokiEventEmitter {
     leftJoinProp: String,
     rightJoinProp: String,
     mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, _],
-    dataOptions: Partial[GetDataOptions]
+    dataOptions: PartialGetDataOptions
   ): Resultset[_] = js.native
   def eqJoin(
     joinData: Resultset[_],
@@ -467,7 +467,7 @@ class Collection[E /* <: js.Object */] protected () extends LokiEventEmitter {
     leftJoinProp: String,
     rightJoinProp: js.Function1[/* obj */ js.Any, String],
     mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, _],
-    dataOptions: Partial[GetDataOptions]
+    dataOptions: PartialGetDataOptions
   ): Resultset[_] = js.native
   def eqJoin(
     joinData: Resultset[_],
@@ -485,7 +485,7 @@ class Collection[E /* <: js.Object */] protected () extends LokiEventEmitter {
     leftJoinProp: js.Function1[/* obj */ js.Any, String],
     rightJoinProp: String,
     mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, _],
-    dataOptions: Partial[GetDataOptions]
+    dataOptions: PartialGetDataOptions
   ): Resultset[_] = js.native
   def eqJoin(
     joinData: Resultset[_],
@@ -503,7 +503,7 @@ class Collection[E /* <: js.Object */] protected () extends LokiEventEmitter {
     leftJoinProp: js.Function1[/* obj */ js.Any, String],
     rightJoinProp: js.Function1[/* obj */ js.Any, String],
     mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, _],
-    dataOptions: Partial[GetDataOptions]
+    dataOptions: PartialGetDataOptions
   ): Resultset[_] = js.native
   def extract(field: String): js.Array[_] = js.native
   def extractNumerical(field: String): js.Array[Double] = js.native

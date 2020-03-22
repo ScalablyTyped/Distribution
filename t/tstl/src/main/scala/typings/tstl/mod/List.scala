@@ -1,6 +1,7 @@
 package typings.tstl.mod
 
 import typings.tstl.iforwarditeratorMod.IForwardIterator
+import typings.tstl.ipointerMod.IPointer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -63,6 +64,24 @@ object List extends js.Object {
   @js.native
   class ReverseIterator[T] ()
     extends typings.tstl.listMod.List.ReverseIterator[T]
+  
+  /* static members */
+  @js.native
+  object Iterator extends js.Object {
+    /**
+      * @internal
+      */
+    def _Set_source_ptr[T](it: typings.tstl.listMod.List.Iterator[T], ptr: IPointer[typings.tstl.listMod.List[T]]): Unit = js.native
+    /**
+      * @internal
+      */
+    def create[T](
+      sourcePtr: IPointer[typings.tstl.listMod.List[T]],
+      prev: typings.tstl.listMod.List.Iterator[T],
+      next: typings.tstl.listMod.List.Iterator[T],
+      value: T
+    ): typings.tstl.listMod.List.Iterator[T] = js.native
+  }
   
 }
 

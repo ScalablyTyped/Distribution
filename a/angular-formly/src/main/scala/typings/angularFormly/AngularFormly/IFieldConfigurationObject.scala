@@ -8,7 +8,7 @@ import typings.angular.mod.IFormController
 import typings.angular.mod.IPromise
 import typings.angular.mod.IScope
 import typings.angular.mod.ITranscludeFunction
-import typings.angularFormly.AnonAttribute
+import typings.angularFormly.AnonDictkey
 import typings.angularFormly.AnonErrorExistsAndShouldBeVisible
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -49,7 +49,7 @@ object IFieldConfigurationObject {
     model: String | StringDictionary[js.Any] = null,
     modelOptions: IModelOptions = null,
     name: String = null,
-    ngModelAttrs: AnonAttribute = null,
+    ngModelAttrs: AnonDictkey = null,
     ngModelElAttrs: StringDictionary[String] = null,
     noFormControl: js.UndefOr[Boolean] = js.undefined,
     optionsTypes: String | js.Array[String] = null,

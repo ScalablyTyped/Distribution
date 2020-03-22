@@ -468,6 +468,8 @@ import typings.blueprintjsIcons.blueprintjsIconsStrings.Privateuseareae909
 import typings.blueprintjsIcons.blueprintjsIconsStrings.Privateuseareae90a
 import typings.blueprintjsIcons.blueprintjsIconsStrings.Privateuseareae90b
 import typings.blueprintjsIcons.blueprintjsIconsStrings.Privateuseareae90c
+import typings.blueprintjsIcons.blueprintjsIconsStrings.Privateuseareae90d
+import typings.blueprintjsIcons.blueprintjsIconsStrings.Privateuseareae90e
 import typings.blueprintjsIcons.blueprintjsIconsStrings.Questionmark
 import typings.blueprintjsIcons.blueprintjsIconsStrings.Rightpointinganglebracket
 import typings.blueprintjsIcons.blueprintjsIconsStrings.Rightwardsarrow
@@ -594,6 +596,7 @@ object iconContentsMod extends js.Object {
   val DELTA: Δ = js.native
   val DERIVE_COLUMN: Privateuseareae739 = js.native
   val DESKTOP: Privateuseareae6af = js.native
+  val DIAGNOSIS: Privateuseareae90d = js.native
   val DIAGRAM_TREE: Privateuseareae7b3 = js.native
   val DIRECTION_LEFT: Privateuseareae681 = js.native
   val DIRECTION_RIGHT: Privateuseareae682 = js.native
@@ -740,6 +743,7 @@ object iconContentsMod extends js.Object {
   val KEY_TAB: Privateuseareae757 = js.native
   val KNOWN_VEHICLE: Privateuseareae73c = js.native
   val LABEL: Privateuseareae665 = js.native
+  val LAB_TEST: Privateuseareae90e = js.native
   val LAYER: Privateuseareae6cf = js.native
   val LAYERS: Privateuseareae618 = js.native
   val LAYOUT: Privateuseareae60c = js.native

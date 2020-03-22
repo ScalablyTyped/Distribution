@@ -972,13 +972,13 @@ trait TypeofDomUtil extends js.Object {
     */
   def setClass(dom: HTMLElement): Unit = js.native
   def setClass(dom: HTMLElement, className: String): Unit = js.native
-  def setCss(dom: js.Array[HTMLElement], style: PartialCSSStyleDeclaration): /* import warning: importer.ImportType#apply Failed type conversion: typeof DomUtil */ js.Any = js.native
+  def setCss(dom: js.Array[HTMLElement], style: PartialCSSStyleDeclaratio): /* import warning: importer.ImportType#apply Failed type conversion: typeof DomUtil */ js.Any = js.native
   /**
     * 给DOM元素删除一组样式，Object同样式表
     * @param dom DOM元素
     * @param style 样式
     */
-  def setCss(dom: HTMLElement, style: PartialCSSStyleDeclaration): /* import warning: importer.ImportType#apply Failed type conversion: typeof DomUtil */ js.Any = js.native
+  def setCss(dom: HTMLElement, style: PartialCSSStyleDeclaratio): /* import warning: importer.ImportType#apply Failed type conversion: typeof DomUtil */ js.Any = js.native
   /**
     * 给DOM元素设定一个透明度
     * @param dom DOM元素

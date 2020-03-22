@@ -49,7 +49,7 @@ package object mod {
   type HasProps = typings.ioTs.mod._HasProps | (typings.ioTs.mod.InterfaceType[js.Any, js.Any, js.Any, js.Any]) | (typings.ioTs.mod.StrictType[js.Any, js.Any, js.Any, js.Any]) | (typings.ioTs.mod.PartialType[js.Any, js.Any, js.Any, js.Any])
   type InputOf[C /* <: typings.ioTs.mod.Any_ */] = /* import warning: importer.ImportType#apply Failed type conversion: C['_I'] */ js.Any
   type Int = typings.ioTs.mod.Branded[scala.Double, typings.ioTs.mod.IntBrand]
-  type IntersectionC[CS /* <: js.Array[typings.ioTs.mod.Mixed_] */] = typings.ioTs.mod.IntersectionType[
+  type IntersectionC[CS /* <: Array[typings.ioTs.mod.Mixed_] */] = typings.ioTs.mod.IntersectionType[
     CS, 
     js.Any | (typings.ioTs.mod.TypeOf[
       /* import warning: importer.ImportType#apply Failed type conversion: CS[0] */ js.Any
@@ -166,7 +166,7 @@ package object mod {
   type TaggedProps[Tag /* <: java.lang.String */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in Tag ]: io-ts.io-ts.LiteralType<any>}
     */ typings.ioTs.ioTsStrings.TaggedProps with js.Any
-  type TaggedUnionC[Tag /* <: java.lang.String */, CS /* <: js.Array[typings.ioTs.mod.Mixed_] */] = typings.ioTs.mod.TaggedUnionType[
+  type TaggedUnionC[Tag /* <: java.lang.String */, CS /* <: Array[typings.ioTs.mod.Mixed_] */] = typings.ioTs.mod.TaggedUnionType[
     Tag, 
     CS, 
     typings.ioTs.mod.TypeOf[
@@ -177,7 +177,7 @@ package object mod {
     ], 
     js.Any
   ]
-  type TupleC[CS /* <: js.Array[typings.ioTs.mod.Mixed_] */] = typings.ioTs.mod.TupleType[
+  type TupleC[CS /* <: Array[typings.ioTs.mod.Mixed_] */] = typings.ioTs.mod.TupleType[
     CS, 
     js.Any | (js.Tuple5[
       typings.ioTs.mod.TypeOf[
@@ -304,7 +304,7 @@ package object mod {
   {[ K in keyof P ]: io-ts.io-ts.TypeOf<P[K]>}
     */ typings.ioTs.ioTsStrings.TypeOfProps with P
   type UndefinedC = typings.ioTs.mod.UndefinedType
-  type UnionC[CS /* <: js.Array[typings.ioTs.mod.Mixed_] */] = typings.ioTs.mod.UnionType[
+  type UnionC[CS /* <: Array[typings.ioTs.mod.Mixed_] */] = typings.ioTs.mod.UnionType[
     CS, 
     typings.ioTs.mod.TypeOf[
       /* import warning: importer.ImportType#apply Failed type conversion: CS[number] */ js.Any

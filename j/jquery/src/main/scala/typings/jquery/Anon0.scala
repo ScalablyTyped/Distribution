@@ -1,19 +1,20 @@
 package typings.jquery
 
+import typings.jquery.JQuery_._ValHook
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon0 extends js.Object {
-  var `0`: String
+trait Anon0[TElement] extends _ValHook[TElement] {
+  def get(elem: TElement): js.Any
 }
 
 object Anon0 {
   @scala.inline
-  def apply(`0`: String): Anon0 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("0")(`0`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Anon0]
+  def apply[TElement](get: TElement => js.Any): Anon0[TElement] = {
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
+  
+    __obj.asInstanceOf[Anon0[TElement]]
   }
 }
 

@@ -1,6 +1,6 @@
 package typings.baseui.sideNavigationMod
 
-import typings.baseui.AnonEventItemAny
+import typings.baseui.AnonEventItem
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ trait NavigationProps extends js.Object {
   var activePredicate: js.UndefOr[js.Function2[/* item */ js.Any, /* activeItemId */ String, Boolean]] = js.undefined
   var items: js.UndefOr[js.Array[Item]] = js.undefined
   var mapItem: js.UndefOr[js.Function1[/* item */ Item, Item]] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* args */ AnonEventItemAny, _]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* args */ AnonEventItem, _]] = js.undefined
   var overrides: js.UndefOr[NavigationOverrides] = js.undefined
 }
 
@@ -21,7 +21,7 @@ object NavigationProps {
     activePredicate: (/* item */ js.Any, /* activeItemId */ String) => Boolean = null,
     items: js.Array[Item] = null,
     mapItem: /* item */ Item => Item = null,
-    onChange: /* args */ AnonEventItemAny => _ = null,
+    onChange: /* args */ AnonEventItem => _ = null,
     overrides: NavigationOverrides = null
   ): NavigationProps = {
     val __obj = js.Dynamic.literal(activeItemId = activeItemId.asInstanceOf[js.Any])

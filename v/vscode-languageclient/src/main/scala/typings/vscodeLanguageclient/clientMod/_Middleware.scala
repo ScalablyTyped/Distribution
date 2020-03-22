@@ -5,6 +5,7 @@ import typings.vscode.mod.Definition
 import typings.vscode.mod.DefinitionLink
 import typings.vscode.mod.ProviderResult
 import typings.vscode.mod.SignatureHelp
+import typings.vscode.mod.SignatureHelpContext
 import typings.vscode.mod.TextDocumentChangeEvent
 import typings.vscode.mod.TextDocumentWillSaveEvent
 import typings.vscode.mod.Uri
@@ -20,6 +21,15 @@ trait _Middleware extends js.Object {
   var didClose: js.UndefOr[NextSignature[typings.vscode.mod.TextDocument, Unit]] = js.undefined
   var didOpen: js.UndefOr[NextSignature[typings.vscode.mod.TextDocument, Unit]] = js.undefined
   var didSave: js.UndefOr[NextSignature[typings.vscode.mod.TextDocument, Unit]] = js.undefined
+  var executeCommand: js.UndefOr[
+    js.ThisFunction3[
+      /* this */ Unit, 
+      /* command */ String, 
+      /* args */ js.Array[_], 
+      /* next */ ExecuteCommandSignature, 
+      ProviderResult[_]
+    ]
+  ] = js.undefined
   var handleDiagnostics: js.UndefOr[
     js.ThisFunction3[
       /* this */ Unit, 
@@ -176,10 +186,11 @@ trait _Middleware extends js.Object {
     ]
   ] = js.undefined
   var provideSignatureHelp: js.UndefOr[
-    js.ThisFunction4[
+    js.ThisFunction5[
       /* this */ Unit, 
       /* document */ typings.vscode.mod.TextDocument, 
       /* position */ typings.vscode.mod.Position, 
+      /* context */ SignatureHelpContext, 
       /* token */ typings.vscode.mod.CancellationToken, 
       /* next */ ProvideSignatureHelpSignature, 
       ProviderResult[SignatureHelp]
@@ -235,6 +246,13 @@ object _Middleware {
     didClose: NextSignature[typings.vscode.mod.TextDocument, Unit] = null,
     didOpen: NextSignature[typings.vscode.mod.TextDocument, Unit] = null,
     didSave: NextSignature[typings.vscode.mod.TextDocument, Unit] = null,
+    executeCommand: js.ThisFunction3[
+      /* this */ Unit, 
+      /* command */ String, 
+      /* args */ js.Array[_], 
+      /* next */ ExecuteCommandSignature, 
+      ProviderResult[_]
+    ] = null,
     handleDiagnostics: js.ThisFunction3[
       /* this */ Unit, 
       /* uri */ Uri, 
@@ -360,10 +378,11 @@ object _Middleware {
       /* next */ ProvideRenameEditsSignature, 
       ProviderResult[typings.vscode.mod.WorkspaceEdit]
     ] = null,
-    provideSignatureHelp: js.ThisFunction4[
+    provideSignatureHelp: js.ThisFunction5[
       /* this */ Unit, 
       /* document */ typings.vscode.mod.TextDocument, 
       /* position */ typings.vscode.mod.Position, 
+      /* context */ SignatureHelpContext, 
       /* token */ typings.vscode.mod.CancellationToken, 
       /* next */ ProvideSignatureHelpSignature, 
       ProviderResult[SignatureHelp]
@@ -405,6 +424,7 @@ object _Middleware {
     if (didClose != null) __obj.updateDynamic("didClose")(didClose.asInstanceOf[js.Any])
     if (didOpen != null) __obj.updateDynamic("didOpen")(didOpen.asInstanceOf[js.Any])
     if (didSave != null) __obj.updateDynamic("didSave")(didSave.asInstanceOf[js.Any])
+    if (executeCommand != null) __obj.updateDynamic("executeCommand")(executeCommand.asInstanceOf[js.Any])
     if (handleDiagnostics != null) __obj.updateDynamic("handleDiagnostics")(handleDiagnostics.asInstanceOf[js.Any])
     if (prepareRename != null) __obj.updateDynamic("prepareRename")(prepareRename.asInstanceOf[js.Any])
     if (provideCodeActions != null) __obj.updateDynamic("provideCodeActions")(provideCodeActions.asInstanceOf[js.Any])

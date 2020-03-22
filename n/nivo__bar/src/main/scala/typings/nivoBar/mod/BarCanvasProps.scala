@@ -1,6 +1,6 @@
 package typings.nivoBar.mod
 
-import typings.nivoBar.dataFromindexeskeysLegendProps
+import typings.nivoBar.dataFromindexeskeysLegend
 import typings.nivoBar.nivoBarStrings.auto
 import typings.nivoBar.nivoBarStrings.grouped
 import typings.nivoBar.nivoBarStrings.horizontal
@@ -26,6 +26,7 @@ trait BarCanvasProps extends js.Object {
   var axisRight: js.UndefOr[Axis] = js.undefined
   var axisTop: js.UndefOr[Axis] = js.undefined
   var barComponent: js.UndefOr[StatelessComponent[BarItemProps]] = js.undefined
+  var borderColor: js.UndefOr[InheritedColorProp[BarDatumWithColor]] = js.undefined
   var borderRadius: js.UndefOr[Double] = js.undefined
   var borderWidth: js.UndefOr[Double] = js.undefined
   var colors: js.UndefOr[OrdinalColorsInstruction[_]] = js.undefined
@@ -45,7 +46,7 @@ trait BarCanvasProps extends js.Object {
   var labelSkipWidth: js.UndefOr[Double] = js.undefined
   var labelTextColor: js.UndefOr[InheritedColorProp[BarDatumWithColor]] = js.undefined
   var layout: js.UndefOr[horizontal | vertical] = js.undefined
-  var legends: js.UndefOr[js.Array[dataFromindexeskeysLegendProps]] = js.undefined
+  var legends: js.UndefOr[js.Array[dataFromindexeskeysLegend]] = js.undefined
   var margin: js.UndefOr[Box] = js.undefined
   var markers: js.UndefOr[js.Array[CartesianMarkerProps]] = js.undefined
   var maxValue: js.UndefOr[Double | auto] = js.undefined
@@ -68,6 +69,7 @@ object BarCanvasProps {
     axisRight: Axis = null,
     axisTop: Axis = null,
     barComponent: StatelessComponent[BarItemProps] = null,
+    borderColor: InheritedColorProp[BarDatumWithColor] = null,
     borderRadius: Int | Double = null,
     borderWidth: Int | Double = null,
     colors: OrdinalColorsInstruction[_] = null,
@@ -86,7 +88,7 @@ object BarCanvasProps {
     labelSkipWidth: Int | Double = null,
     labelTextColor: InheritedColorProp[BarDatumWithColor] = null,
     layout: horizontal | vertical = null,
-    legends: js.Array[dataFromindexeskeysLegendProps] = null,
+    legends: js.Array[dataFromindexeskeysLegend] = null,
     margin: Box = null,
     markers: js.Array[CartesianMarkerProps] = null,
     maxValue: Double | auto = null,
@@ -105,6 +107,7 @@ object BarCanvasProps {
     if (axisRight != null) __obj.updateDynamic("axisRight")(axisRight.asInstanceOf[js.Any])
     if (axisTop != null) __obj.updateDynamic("axisTop")(axisTop.asInstanceOf[js.Any])
     if (barComponent != null) __obj.updateDynamic("barComponent")(barComponent.asInstanceOf[js.Any])
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
     if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
     if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
     if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])

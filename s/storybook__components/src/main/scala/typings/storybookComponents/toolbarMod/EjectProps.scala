@@ -4,9 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait EjectProps extends js.Object {
-  var baseUrl: js.UndefOr[String] = js.undefined
-  var storyId: js.UndefOr[String] = js.undefined
+  var baseUrl: js.UndefOr[String] = js.native
+  var storyId: js.UndefOr[String] = js.native
 }
 
 object EjectProps {

@@ -1,7 +1,6 @@
 package typings.antd.mod
 
 import typings.antd.AnonCharacter
-import typings.antd.AnonCharacterElement
 import typings.antd.rateMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,7 +14,6 @@ class Rate () extends default
 @JSImport("antd", "Rate")
 @js.native
 object Rate extends js.Object {
-  var defaultProps: AnonCharacterElement = js.native
-  var propTypes: AnonCharacter = js.native
+  var defaultProps: AnonCharacter = js.native
 }
 

@@ -30,7 +30,7 @@ object orthographicCameraMod extends js.Object {
     	 * Camera frustum far plane.
     	 */
     var far: Double = js.native
-    var isOrthographicCamera: `true` = js.native
+    val isOrthographicCamera: `true` = js.native
     /**
     	 * Camera frustum left plane.
     	 */

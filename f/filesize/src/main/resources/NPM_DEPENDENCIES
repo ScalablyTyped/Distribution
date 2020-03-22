@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "filesize" : "5.0.3"
+      "filesize" : "6.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "filesize" : "5.0.3"
+      "filesize" : "6.1.0"
     }
   ],
   "compile-devDependencies" : [

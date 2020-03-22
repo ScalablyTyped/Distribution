@@ -6,6 +6,7 @@ import typings.builderUtilRuntime.builderUtilRuntimeStrings.http
 import typings.builderUtilRuntime.builderUtilRuntimeStrings.https
 import typings.builderUtilRuntime.builderUtilRuntimeStrings.prerelease
 import typings.builderUtilRuntime.builderUtilRuntimeStrings.release
+import typings.node.httpMod.OutgoingHttpHeaders
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -70,6 +71,7 @@ object GithubOptions {
     publisherName: js.Array[String] = null,
     releaseType: draft | prerelease | release = null,
     repo: String = null,
+    requestHeaders: OutgoingHttpHeaders = null,
     token: String = null,
     updaterCacheDirName: String = null,
     vPrefixedTagName: js.UndefOr[Boolean] = js.undefined
@@ -83,6 +85,7 @@ object GithubOptions {
     if (publisherName != null) __obj.updateDynamic("publisherName")(publisherName.asInstanceOf[js.Any])
     if (releaseType != null) __obj.updateDynamic("releaseType")(releaseType.asInstanceOf[js.Any])
     if (repo != null) __obj.updateDynamic("repo")(repo.asInstanceOf[js.Any])
+    if (requestHeaders != null) __obj.updateDynamic("requestHeaders")(requestHeaders.asInstanceOf[js.Any])
     if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
     if (updaterCacheDirName != null) __obj.updateDynamic("updaterCacheDirName")(updaterCacheDirName.asInstanceOf[js.Any])
     if (!js.isUndefined(vPrefixedTagName)) __obj.updateDynamic("vPrefixedTagName")(vPrefixedTagName.asInstanceOf[js.Any])

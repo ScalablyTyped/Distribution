@@ -3,9 +3,11 @@ package typings.reactNativeNavigation
 import typings.react.mod.Component
 import typings.reactNativeNavigation.componentEventsMod.ComponentDidAppearEvent
 import typings.reactNativeNavigation.componentEventsMod.ComponentDidDisappearEvent
+import typings.reactNativeNavigation.componentEventsMod.ModalAttemptedToDismissEvent
 import typings.reactNativeNavigation.componentEventsMod.ModalDismissedEvent
 import typings.reactNativeNavigation.componentEventsMod.NavigationButtonPressedEvent
 import typings.reactNativeNavigation.componentEventsMod.PreviewCompletedEvent
+import typings.reactNativeNavigation.componentEventsMod.ScreenPoppedEvent
 import typings.reactNativeNavigation.componentEventsMod.SearchBarCancelPressedEvent
 import typings.reactNativeNavigation.componentEventsMod.SearchBarUpdatedEvent
 import typings.reactNativeNavigation.eventSubscriptionMod.EventSubscription
@@ -30,9 +32,11 @@ object componentEventsObserverMod extends js.Object {
     def bindComponent(component: Component[_, js.Object, _], componentId: String): EventSubscription = js.native
     def notifyComponentDidAppear(event: ComponentDidAppearEvent): Unit = js.native
     def notifyComponentDidDisappear(event: ComponentDidDisappearEvent): Unit = js.native
+    def notifyModalAttemptedToDismiss(event: ModalAttemptedToDismissEvent): Unit = js.native
     def notifyModalDismissed(event: ModalDismissedEvent): Unit = js.native
     def notifyNavigationButtonPressed(event: NavigationButtonPressedEvent): Unit = js.native
     def notifyPreviewCompleted(event: PreviewCompletedEvent): Unit = js.native
+    def notifyScreenPopped(event: ScreenPoppedEvent): Unit = js.native
     def notifySearchBarCancelPressed(event: SearchBarCancelPressedEvent): Unit = js.native
     def notifySearchBarUpdated(event: SearchBarUpdatedEvent): Unit = js.native
     def registerOnceForAllComponentEvents(): Unit = js.native

@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("router5/types/core/state", JSImport.Namespace)
+@JSImport("router5/dist/core/state", JSImport.Namespace)
 @js.native
 object stateMod extends js.Object {
-  def default(router: Router): Router = js.native
+  def default[Dependencies](router: Router[Dependencies]): Router[Dependencies] = js.native
 }
 

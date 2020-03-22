@@ -18,7 +18,7 @@ trait ReportResult extends js.Object {
   var scripts: Boolean
   var timestamp: String
   var userAgent: String
-  var viewport: AnonHeightLayout
+  var viewport: AnonLayout
   var websockets: Boolean
 }
 
@@ -37,7 +37,7 @@ object ReportResult {
     scripts: Boolean,
     timestamp: String,
     userAgent: String,
-    viewport: AnonHeightLayout,
+    viewport: AnonLayout,
     websockets: Boolean
   ): ReportResult = {
     val __obj = js.Dynamic.literal(browser = browser.asInstanceOf[js.Any], cookies = cookies.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], flash = flash.asInstanceOf[js.Any], ip = ip.asInstanceOf[js.Any], lang = lang.asInstanceOf[js.Any], os = os.asInstanceOf[js.Any], screen = screen.asInstanceOf[js.Any], scripts = scripts.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], userAgent = userAgent.asInstanceOf[js.Any], viewport = viewport.asInstanceOf[js.Any], websockets = websockets.asInstanceOf[js.Any])

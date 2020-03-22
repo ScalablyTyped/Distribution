@@ -2,10 +2,10 @@ package typings.googleapis.v31Mod.dfareportingV31
 
 import typings.googleapis.AnonActive
 import typings.googleapis.AnonActivities
-import typings.googleapis.AnonActivitiesCustomRichMediaEvents
 import typings.googleapis.AnonActivityFilters
 import typings.googleapis.AnonBreakdown
 import typings.googleapis.AnonCustomRichMediaEvents
+import typings.googleapis.AnonDateRange
 import typings.googleapis.AnonEmailOwner
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -81,7 +81,7 @@ trait SchemaReport extends js.Object {
   /**
     * The report criteria for a report of type &quot;REACH&quot;.
     */
-  var reachCriteria: js.UndefOr[AnonActivitiesCustomRichMediaEvents] = js.native
+  var reachCriteria: js.UndefOr[AnonDateRange] = js.native
   /**
     * The report&#39;s schedule. Can only be set if the report&#39;s
     * &#39;dateRange&#39; is a relative date range and the relative date range
@@ -115,7 +115,7 @@ object SchemaReport {
     name: String = null,
     ownerProfileId: String = null,
     pathToConversionCriteria: AnonActivityFilters = null,
-    reachCriteria: AnonActivitiesCustomRichMediaEvents = null,
+    reachCriteria: AnonDateRange = null,
     schedule: AnonActive = null,
     subAccountId: String = null,
     `type`: String = null

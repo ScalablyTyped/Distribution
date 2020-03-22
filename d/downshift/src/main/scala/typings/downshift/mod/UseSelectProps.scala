@@ -11,8 +11,8 @@ trait UseSelectProps[Item] extends js.Object {
   var defaultIsOpen: js.UndefOr[Boolean] = js.undefined
   var defaultSelectedItem: js.UndefOr[Item] = js.undefined
   var environment: js.UndefOr[Environment] = js.undefined
-  var getA11ySelectionMessage: js.UndefOr[js.Function1[/* options */ UseSelectA11yMessageOptions[Item], String]] = js.undefined
-  var getA11yStatusMessage: js.UndefOr[js.Function1[/* options */ UseSelectA11yMessageOptions[Item], String]] = js.undefined
+  var getA11ySelectionMessage: js.UndefOr[js.Function1[/* options */ A11yStatusMessageOptions[Item], String]] = js.undefined
+  var getA11yStatusMessage: js.UndefOr[js.Function1[/* options */ A11yStatusMessageOptions[Item], String]] = js.undefined
   var getItemId: js.UndefOr[js.Function1[/* index */ Double, String]] = js.undefined
   var highlightedIndex: js.UndefOr[Double] = js.undefined
   var id: js.UndefOr[String] = js.undefined
@@ -48,8 +48,8 @@ object UseSelectProps {
     defaultIsOpen: js.UndefOr[Boolean] = js.undefined,
     defaultSelectedItem: Item = null,
     environment: Environment = null,
-    getA11ySelectionMessage: /* options */ UseSelectA11yMessageOptions[Item] => String = null,
-    getA11yStatusMessage: /* options */ UseSelectA11yMessageOptions[Item] => String = null,
+    getA11ySelectionMessage: /* options */ A11yStatusMessageOptions[Item] => String = null,
+    getA11yStatusMessage: /* options */ A11yStatusMessageOptions[Item] => String = null,
     getItemId: /* index */ Double => String = null,
     highlightedIndex: Int | Double = null,
     id: String = null,

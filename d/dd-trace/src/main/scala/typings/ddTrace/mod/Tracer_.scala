@@ -2,6 +2,7 @@ package typings.ddTrace.mod
 
 import typings.ddTrace.ddTraceStrings.`cassandra-driver`
 import typings.ddTrace.ddTraceStrings.`generic-pool`
+import typings.ddTrace.ddTraceStrings.`google-cloud-pubsub`
 import typings.ddTrace.ddTraceStrings.`limitd-client`
 import typings.ddTrace.ddTraceStrings.`mongodb-core`
 import typings.ddTrace.ddTraceStrings.`promise-js`
@@ -15,6 +16,7 @@ import typings.ddTrace.ddTraceStrings.dns
 import typings.ddTrace.ddTraceStrings.elasticsearch
 import typings.ddTrace.ddTraceStrings.express
 import typings.ddTrace.ddTraceStrings.fastify
+import typings.ddTrace.ddTraceStrings.fs
 import typings.ddTrace.ddTraceStrings.graphql
 import typings.ddTrace.ddTraceStrings.grpc
 import typings.ddTrace.ddTraceStrings.hapi
@@ -34,12 +36,14 @@ import typings.ddTrace.ddTraceStrings.promise
 import typings.ddTrace.ddTraceStrings.q
 import typings.ddTrace.ddTraceStrings.redis
 import typings.ddTrace.ddTraceStrings.restify
+import typings.ddTrace.ddTraceStrings.rhea
 import typings.ddTrace.ddTraceStrings.router
 import typings.ddTrace.ddTraceStrings.tedious
 import typings.ddTrace.ddTraceStrings.when
 import typings.ddTrace.ddTraceStrings.winston
 import typings.ddTrace.mod.plugins.cassandraDriver
 import typings.ddTrace.mod.plugins.genericPool
+import typings.ddTrace.mod.plugins.googleCloudPubsub
 import typings.ddTrace.mod.plugins.limitdClient
 import typings.ddTrace.mod.plugins.mongodbCore
 import typings.ddTrace.mod.plugins.promiseJs
@@ -86,6 +90,9 @@ trait Tracer_ extends Tracer {
     * span will finish when that callback is called.
     * * The function doesn't accept a callback and doesn't return a promise, in
     * which case the span will finish at the end of the function execution.
+    *
+    * If the `orphanable` option is set to false, the function will not be traced
+    * unless there is already an active span or `childOf` option.
     */
   def trace[T](
     name: String,
@@ -176,11 +183,23 @@ trait Tracer_ extends Tracer {
   @JSName("use")
   def use_fastify(plugin: fastify, config: typings.ddTrace.mod.plugins.fastify): this.type = js.native
   @JSName("use")
+  def use_fs(plugin: fs): this.type = js.native
+  @JSName("use")
+  def use_fs(plugin: fs, config: Boolean): this.type = js.native
+  @JSName("use")
+  def use_fs(plugin: fs, config: typings.ddTrace.mod.plugins.fs): this.type = js.native
+  @JSName("use")
   def use_genericpool(plugin: `generic-pool`): this.type = js.native
   @JSName("use")
   def use_genericpool(plugin: `generic-pool`, config: Boolean): this.type = js.native
   @JSName("use")
   def use_genericpool(plugin: `generic-pool`, config: genericPool): this.type = js.native
+  @JSName("use")
+  def use_googlecloudpubsub(plugin: `google-cloud-pubsub`): this.type = js.native
+  @JSName("use")
+  def use_googlecloudpubsub(plugin: `google-cloud-pubsub`, config: Boolean): this.type = js.native
+  @JSName("use")
+  def use_googlecloudpubsub(plugin: `google-cloud-pubsub`, config: googleCloudPubsub): this.type = js.native
   @JSName("use")
   def use_graphql(plugin: graphql): this.type = js.native
   @JSName("use")
@@ -314,6 +333,12 @@ trait Tracer_ extends Tracer {
   @JSName("use")
   def use_restify(plugin: restify, config: typings.ddTrace.mod.plugins.restify): this.type = js.native
   @JSName("use")
+  def use_rhea(plugin: rhea): this.type = js.native
+  @JSName("use")
+  def use_rhea(plugin: rhea, config: Boolean): this.type = js.native
+  @JSName("use")
+  def use_rhea(plugin: rhea, config: typings.ddTrace.mod.plugins.rhea): this.type = js.native
+  @JSName("use")
   def use_router(plugin: router): this.type = js.native
   @JSName("use")
   def use_router(plugin: router, config: Boolean): this.type = js.native
@@ -352,6 +377,8 @@ trait Tracer_ extends Tracer {
     * which case the span will finish at the end of the function execution.
     */
   def wrap[T](name: String, fn: T): T = js.native
+  def wrap[T](name: String, fn: T, requiresParent: Boolean): T = js.native
   def wrap[T](name: String, options: TraceOptions with SpanOptions, fn: T): T = js.native
+  def wrap[T](name: String, options: js.Function1[/* repeated */ js.Any, TraceOptions with SpanOptions], fn: T): T = js.native
 }
 

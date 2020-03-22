@@ -1,7 +1,7 @@
 
 # Scala.js typings for bizcharts
 
-Typings are for version 3.5.6
+Typings are for version 3.5.7
 
 ## Library description:
 A powerful React chart library based G2 for browser

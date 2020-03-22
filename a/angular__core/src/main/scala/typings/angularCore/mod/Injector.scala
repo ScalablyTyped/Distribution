@@ -14,6 +14,9 @@ abstract class Injector () extends js.Object {
     */
   def get(token: js.Any): js.Any = js.native
   def get(token: js.Any, notFoundValue: js.Any): js.Any = js.native
+  def get[T](token: AbstractType[T]): T = js.native
+  def get[T](token: AbstractType[T], notFoundValue: T): T = js.native
+  def get[T](token: AbstractType[T], notFoundValue: T, flags: InjectFlags): T = js.native
   def get[T](token: InjectionToken[T]): T = js.native
   def get[T](token: InjectionToken[T], notFoundValue: T): T = js.native
   def get[T](token: InjectionToken[T], notFoundValue: T, flags: InjectFlags): T = js.native
@@ -32,7 +35,18 @@ abstract class Injector () extends js.Object {
 @js.native
 object Injector extends js.Object {
   var NULL: Injector = js.native
-  var THROW_IF_NOT_FOUND: js.Object = js.native
+  /**
+    * Creates a new injector instance that provides one or more dependencies,
+    * according to a given type or types of `StaticProvider`.
+    *
+    * @param options An object with the following properties:
+    * * `providers`: An array of providers of the [StaticProvider type](api/core/StaticProvider).
+    * * `parent`: (optional) A parent injector.
+    * * `name`: (optional) A developer-defined identifying name for the new injector.
+    *
+    * @returns The new injector instance.
+    *
+    */
   def create(options: AnonName): Injector = js.native
   /**
     * @deprecated from v5 use the new signature Injector.create(options)

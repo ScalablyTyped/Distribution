@@ -5,10 +5,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mod {
-  type BoundingClientRect = typings.std.Record[
-    typings.twoJs.twoJsStrings.top | typings.twoJs.twoJsStrings.left | typings.twoJs.twoJsStrings.right | typings.twoJs.twoJsStrings.bottom | typings.twoJs.twoJsStrings.width | typings.twoJs.twoJsStrings.height, 
-    scala.Double
-  ]
   /* Rewritten from type alias, can be one of: 
     - java.lang.String
     - typings.twoJs.mod.LinearGradient

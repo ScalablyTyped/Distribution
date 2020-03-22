@@ -19,7 +19,7 @@ trait DomainMembership extends js.Object {
     */
   var IAMRoleName: js.UndefOr[String] = js.native
   /**
-    * The status of the DB instance's Active Directory Domain membership, such as joined, pending-join, failed etc).
+    * The status of the Active Directory Domain membership for the DB instance or cluster. Values include joined, pending-join, failed, and so on.
     */
   var Status: js.UndefOr[String] = js.native
 }

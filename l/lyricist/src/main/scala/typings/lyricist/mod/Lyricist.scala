@@ -1,8 +1,8 @@
 package typings.lyricist.mod
 
-import typings.lyricist.AnonAsc
 import typings.lyricist.AnonFetchLyrics
 import typings.lyricist.AnonFetchTracklist
+import typings.lyricist.AnonPage
 import typings.lyricist.AnonTextFormat
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,6 +18,6 @@ trait Lyricist extends js.Object {
   def song(id: Double): js.Promise[Song] = js.native
   def song(id: Double, opts: AnonFetchLyrics): js.Promise[Song] = js.native
   def songsByArtist(id: Double): js.Promise[js.Array[SongByArtist]] = js.native
-  def songsByArtist(id: Double, opts: AnonAsc): js.Promise[js.Array[SongByArtist]] = js.native
+  def songsByArtist(id: Double, opts: AnonPage): js.Promise[js.Array[SongByArtist]] = js.native
 }
 

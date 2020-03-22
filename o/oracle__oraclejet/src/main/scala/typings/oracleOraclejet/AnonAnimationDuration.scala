@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 trait AnonAnimationDuration extends js.Object {
   var animationDuration: Double
   var hoverBehaviorDelay: Double
-  var linkDefaults: AnonArrow
+  var linkDefaults: AnonEndConnectorType
   var nodeDefaults: AnonIcon
-  var promotedLink: AnonArrowArrowConcave
+  var promotedLink: AnonStartConnectorType
 }
 
 object AnonAnimationDuration {
@@ -17,9 +17,9 @@ object AnonAnimationDuration {
   def apply(
     animationDuration: Double,
     hoverBehaviorDelay: Double,
-    linkDefaults: AnonArrow,
+    linkDefaults: AnonEndConnectorType,
     nodeDefaults: AnonIcon,
-    promotedLink: AnonArrowArrowConcave
+    promotedLink: AnonStartConnectorType
   ): AnonAnimationDuration = {
     val __obj = js.Dynamic.literal(animationDuration = animationDuration.asInstanceOf[js.Any], hoverBehaviorDelay = hoverBehaviorDelay.asInstanceOf[js.Any], linkDefaults = linkDefaults.asInstanceOf[js.Any], nodeDefaults = nodeDefaults.asInstanceOf[js.Any], promotedLink = promotedLink.asInstanceOf[js.Any])
   

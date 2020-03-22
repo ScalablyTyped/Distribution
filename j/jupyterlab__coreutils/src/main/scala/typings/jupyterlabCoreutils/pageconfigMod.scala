@@ -42,9 +42,19 @@ object pageconfigMod extends js.Object {
       */
     def getOption(name: String): String = js.native
     /**
+      * Get the base url for sharing links (usually baseUrl)
+      */
+    def getShareUrl(): String = js.native
+    /**
       * Get the authorization token for a Jupyter application.
       */
     def getToken(): String = js.native
+    /**
+      * Get the tree url for shareable links.
+      * Usually the same as treeUrl,
+      * but overrideable e.g. when sharing with JupyterHub.
+      */
+    def getTreeShareUrl(): String = js.native
     /**
       * Get the tree url for a JupyterLab application.
       */

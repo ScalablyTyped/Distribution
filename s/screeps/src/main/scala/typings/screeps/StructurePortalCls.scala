@@ -14,7 +14,7 @@ class StructurePortalCls protected () extends StructurePortal {
     * Exact coordinates are undetermined, the creep will appear at any free spot in the destination room.
     */
   /* CompleteClass */
-  override var destination: RoomPosition | AnonRoomShard = js.native
+  override var destination: RoomPosition | AnonShard = js.native
   /**
     * Applied effects, an array of objects with the following properties:
     */

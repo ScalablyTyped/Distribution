@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait AggregatedProfileTime extends js.Object {
   /**
-    * The aggregation period of the aggregated profile.
+    * The time period.
     */
   var period: js.UndefOr[AggregationPeriod] = js.native
   /**
-    * The start time of the aggregated profile.
+    * The start time.
     */
   var start: js.UndefOr[Timestamp] = js.native
 }

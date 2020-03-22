@@ -14,6 +14,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ListModel protected () extends VDomModel {
   def this(serviceManager: ServiceManager) = this()
+  var _debouncedUpdate: js.Any = js.native
   var _installed: js.Any = js.native
   var _page: js.Any = js.native
   var _pagination: js.Any = js.native
@@ -26,49 +27,17 @@ class ListModel protected () extends VDomModel {
     */
   var initialized: Boolean = js.native
   /**
-    * A readonly array of the installed extensions.
-    */
-  val installed: js.Array[IEntry] = js.native
-  /**
     * Contains an error message if an error occurred when querying installed extensions.
     */
   var installedError: String | Null = js.native
-  /**
-    * The current NPM repository search page.
-    *
-    * The npm repository search is paginated by the `pagination` attribute.
-    * The `page` value selects which page is used.
-    *
-    * Setting its value triggers a new search.
-    */
-  var page: Double = js.native
-  /**
-    * The NPM repository search pagination.
-    *
-    * The npm repository search is paginated by the `pagination` attribute.
-    * The `page` value selects which page is used.
-    *
-    * Setting its value triggers a new search.
-    */
-  var pagination: Double = js.native
   /**
     * Whether a fresh build should be considered due to actions taken.
     */
   var promptBuild: Boolean = js.native
   /**
-    * The current NPM repository search query.
-    *
-    * Setting its value triggers a new search.
-    */
-  var query: String | Null = js.native
-  /**
     * Contains an error message if an error occurred when searching for extensions.
     */
   var searchError: String | Null = js.native
-  /**
-    * A readonly array containing the latest search result
-    */
-  val searchResult: js.Array[IEntry] = js.native
   /**
     * A helper for performing searches of jupyterlab extensions on the NPM repository.
     */
@@ -89,10 +58,6 @@ class ListModel protected () extends VDomModel {
     * The service manager to use for building.
     */
   var serviceManager: ServiceManager = js.native
-  /**
-    * The total number of results in the current search.
-    */
-  val totalEntries: Double = js.native
   /**
     * Add a pending action.
     *
@@ -148,6 +113,30 @@ class ListModel protected () extends VDomModel {
     */
   def install(entry: IEntry): js.Promise[Unit] = js.native
   /**
+    * A readonly array of the installed extensions.
+    */
+  def installed(): js.Array[IEntry] = js.native
+  /**
+    * The current NPM repository search page.
+    *
+    * The npm repository search is paginated by the `pagination` attribute.
+    * The `page` value selects which page is used.
+    *
+    * Setting its value triggers a new search.
+    */
+  def page(): Double = js.native
+  def page(value: Double): js.Any = js.native
+  /**
+    * The NPM repository search pagination.
+    *
+    * The npm repository search is paginated by the `pagination` attribute.
+    * The `page` value selects which page is used.
+    *
+    * Setting its value triggers a new search.
+    */
+  def pagination(): Double = js.native
+  def pagination(value: Double): js.Any = js.native
+  /**
     * Perform a build on the server
     */
   def performBuild(): Unit = js.native
@@ -159,6 +148,8 @@ class ListModel protected () extends VDomModel {
     * @returns {Promise<{ [key: string]: IEntry; }>} The search result as a map of entries.
     */
   /* protected */ def performSearch(): js.Promise[StringDictionary[IEntry]] = js.native
+  def query(): js.Any = js.native
+  def query(value: String): js.Any = js.native
   /**
     * Query the installed extensions.
     *
@@ -168,9 +159,24 @@ class ListModel protected () extends VDomModel {
     */
   /* protected */ def queryInstalled(refreshInstalled: Boolean): js.Promise[StringDictionary[IEntry]] = js.native
   /**
+    * The current NPM repository search query.
+    *
+    * Setting its value triggers a new search.
+    */
+  @JSName("query")
+  def query_Union(): String | Null = js.native
+  /**
     * Ignore a build recommendation
     */
   def refreshInstalled(): Unit = js.native
+  /**
+    * A readonly array containing the latest search result
+    */
+  def searchResult(): js.Array[IEntry] = js.native
+  /**
+    * The total number of results in the current search.
+    */
+  def totalEntries(): Double = js.native
   /**
     * Translate installed extensions information from the server into entries.
     *

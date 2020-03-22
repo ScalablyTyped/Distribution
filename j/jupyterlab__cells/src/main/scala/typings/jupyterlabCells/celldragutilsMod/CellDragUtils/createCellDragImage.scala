@@ -1,7 +1,7 @@
 package typings.jupyterlabCells.celldragutilsMod.CellDragUtils
 
 import typings.jupyterlabCells.widgetMod.Cell
-import typings.jupyterlabCoreutils.nbformatMod.nbformat.ICell
+import typings.jupyterlabNbformat.mod.ICell
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

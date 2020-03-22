@@ -1,6 +1,6 @@
 package typings.primereact.orderListMod
 
-import typings.primereact.AnonOriginalEventValue
+import typings.primereact.AnonValue
 import typings.react.mod._Global_.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,7 +13,7 @@ trait OrderListProps extends js.Object {
   var id: js.UndefOr[String] = js.undefined
   var itemTemplate: js.UndefOr[js.Function1[/* item */ js.Any, js.UndefOr[Element]]] = js.undefined
   var listStyle: js.UndefOr[js.Object] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* e */ AnonOriginalEventValue, Unit]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* e */ AnonValue, Unit]] = js.undefined
   var responsive: js.UndefOr[Boolean] = js.undefined
   var style: js.UndefOr[js.Object] = js.undefined
   var tabIndex: js.UndefOr[String] = js.undefined
@@ -29,7 +29,7 @@ object OrderListProps {
     id: String = null,
     itemTemplate: /* item */ js.Any => js.UndefOr[Element] = null,
     listStyle: js.Object = null,
-    onChange: /* e */ AnonOriginalEventValue => Unit = null,
+    onChange: /* e */ AnonValue => Unit = null,
     responsive: js.UndefOr[Boolean] = js.undefined,
     style: js.Object = null,
     tabIndex: String = null,

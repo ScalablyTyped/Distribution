@@ -10,34 +10,28 @@ trait IVaultEntryEvents extends IEvents {
     js.Function2[
       /* objVer */ IObjVer, 
       /* sourceObjectFile */ ISourceObjectFile, 
-      Null | Boolean | AnonErrorCode
+      Null | Boolean | AnonFinally
     ]
   ] = js.undefined
-  var OnAddObjectToFavorites: js.UndefOr[js.Function1[/* objID */ IObjID, Null | Boolean | AnonErrorCodeErrorMessage]] = js.undefined
-  var OnAddObjectsToFavorites: js.UndefOr[js.Function1[/* objIDs */ IObjIDs, Null | Boolean | AnonErrorCodeErrorMessage]] = js.undefined
-  var OnChangeVaultLanguage: js.UndefOr[
-    js.Function1[/* languageID */ Double, Null | Boolean | AnonErrorCodeErrorMessage]
-  ] = js.undefined
+  var OnAddObjectToFavorites: js.UndefOr[js.Function1[/* objID */ IObjID, Null | Boolean | AnonOnError]] = js.undefined
+  var OnAddObjectsToFavorites: js.UndefOr[js.Function1[/* objIDs */ IObjIDs, Null | Boolean | AnonOnError]] = js.undefined
+  var OnChangeVaultLanguage: js.UndefOr[js.Function1[/* languageID */ Double, Null | Boolean | AnonOnError]] = js.undefined
   var OnCheckInObject: js.UndefOr[
     js.Function2[
       /* objVer */ IObjVer, 
       /* propertyValues */ IPropertyValues, 
-      Null | Boolean | AnonErrorCodeErrorMessageErrorStack
+      Null | Boolean | AnonOnSuccess
     ]
   ] = js.undefined
   var OnCheckInObjects: js.UndefOr[
     js.Function2[
       /* objVers */ IObjVers, 
       /* propertyValues */ IPropertyValues, 
-      Null | Boolean | AnonErrorCodeErrorMessageErrorStackFinally
+      Null | Boolean | AnonFinallyOnError
     ]
   ] = js.undefined
-  var OnCheckOutObject: js.UndefOr[
-    js.Function1[/* objID */ IObjID, Null | Boolean | AnonErrorCodeErrorMessageErrorStack]
-  ] = js.undefined
-  var OnCheckOutObjects: js.UndefOr[
-    js.Function1[/* objIDs */ IObjIDs, Null | Boolean | AnonErrorCodeErrorMessageErrorStackFinally]
-  ] = js.undefined
+  var OnCheckOutObject: js.UndefOr[js.Function1[/* objID */ IObjID, Null | Boolean | AnonOnSuccess]] = js.undefined
+  var OnCheckOutObjects: js.UndefOr[js.Function1[/* objIDs */ IObjIDs, Null | Boolean | AnonFinallyOnError]] = js.undefined
   var OnCreateObject: js.UndefOr[
     js.Function6[
       /* objectType */ Double, 
@@ -46,14 +40,14 @@ trait IVaultEntryEvents extends IEvents {
       /* accessControlList */ IAccessControlList, 
       /* checkInRequested */ Boolean, 
       /* singleFileRequested */ Boolean, 
-      Null | Boolean | AnonErrorCodeErrorMessageErrorStack
+      Null | Boolean | AnonOnSuccess
     ]
   ] = js.undefined
-  var OnDestroyObject: js.UndefOr[js.Function1[/* objID */ IObjID, Null | Boolean | AnonErrorCodeErrorMessage]] = js.undefined
-  var OnDestroyObjectVersion: js.UndefOr[js.Function1[/* objVer */ IObjVer, Null | Boolean | AnonErrorCodeErrorMessage]] = js.undefined
-  var OnDestroyObjectVersions: js.UndefOr[js.Function1[/* objVers */ IObjVers, Null | Boolean | AnonErrorCodeErrorMessage]] = js.undefined
-  var OnDestroyObjects: js.UndefOr[js.Function1[/* objIDs */ IObjIDs, Null | Boolean | AnonErrorCodeErrorMessage]] = js.undefined
-  var OnLogOut: js.UndefOr[js.Function0[Null | Boolean | AnonErrorCodeErrorMessage]] = js.undefined
+  var OnDestroyObject: js.UndefOr[js.Function1[/* objID */ IObjID, Null | Boolean | AnonOnError]] = js.undefined
+  var OnDestroyObjectVersion: js.UndefOr[js.Function1[/* objVer */ IObjVer, Null | Boolean | AnonOnError]] = js.undefined
+  var OnDestroyObjectVersions: js.UndefOr[js.Function1[/* objVers */ IObjVers, Null | Boolean | AnonOnError]] = js.undefined
+  var OnDestroyObjects: js.UndefOr[js.Function1[/* objIDs */ IObjIDs, Null | Boolean | AnonOnError]] = js.undefined
+  var OnLogOut: js.UndefOr[js.Function0[Null | Boolean | AnonOnError]] = js.undefined
   var OnLoggedIn: js.UndefOr[js.Function0[Unit]] = js.undefined
   var OnModifyObjectVersionLabels: js.UndefOr[
     js.Function5[
@@ -62,7 +56,7 @@ trait IVaultEntryEvents extends IEvents {
       /* append */ Boolean, 
       /* labelIDs */ IIDs, 
       /* singleLabelRequired */ Boolean, 
-      Null | Boolean | AnonErrorCodeErrorMessage
+      Null | Boolean | AnonOnError
     ]
   ] = js.undefined
   var OnNotification: js.UndefOr[js.Function3[/* id */ String, /* data1 */ js.Any, /* data2 */ js.Any, _]] = js.undefined
@@ -107,48 +101,34 @@ trait IVaultEntryEvents extends IEvents {
   var OnObjectsRemovedFromFavorites: js.UndefOr[js.Function1[/* objIDs */ IObjIDs, Unit]] = js.undefined
   var OnPropertiesOfObjectVersionSet: js.UndefOr[js.Function1[/* objectVersion */ IObjectVersion, Unit]] = js.undefined
   var OnPropertiesOfObjectVersionsSet: js.UndefOr[js.Function1[/* objectVersions */ IObjectVersions, Unit]] = js.undefined
-  var OnRemoveObject: js.UndefOr[
-    js.Function1[/* objID */ IObjID, Null | Boolean | AnonErrorCodeErrorMessageErrorStack]
-  ] = js.undefined
+  var OnRemoveObject: js.UndefOr[js.Function1[/* objID */ IObjID, Null | Boolean | AnonOnSuccess]] = js.undefined
   var OnRemoveObjectFile: js.UndefOr[
-    js.Function2[
-      /* objVer */ IObjVer, 
-      /* fileVer */ IFileVer, 
-      Null | Boolean | AnonErrorCodeErrorMessageErrorStack
-    ]
+    js.Function2[/* objVer */ IObjVer, /* fileVer */ IFileVer, Null | Boolean | AnonOnSuccess]
   ] = js.undefined
-  var OnRemoveObjectFromFavorites: js.UndefOr[js.Function1[/* objID */ IObjID, Null | Boolean | AnonErrorCodeErrorMessage]] = js.undefined
-  var OnRemoveObjectOfflineAvailability: js.UndefOr[js.Function1[/* objID */ IObjID, Null | Boolean | AnonErrorCodeErrorMessage]] = js.undefined
-  var OnRemoveObjects: js.UndefOr[
-    js.Function1[/* objIDs */ IObjIDs, Null | Boolean | AnonErrorCodeErrorMessageErrorStackFinally]
-  ] = js.undefined
-  var OnRemoveObjectsFromFavorites: js.UndefOr[js.Function1[/* objIDs */ IObjIDs, Null | Boolean | AnonErrorCodeErrorMessage]] = js.undefined
+  var OnRemoveObjectFromFavorites: js.UndefOr[js.Function1[/* objID */ IObjID, Null | Boolean | AnonOnError]] = js.undefined
+  var OnRemoveObjectOfflineAvailability: js.UndefOr[js.Function1[/* objID */ IObjID, Null | Boolean | AnonOnError]] = js.undefined
+  var OnRemoveObjects: js.UndefOr[js.Function1[/* objIDs */ IObjIDs, Null | Boolean | AnonFinallyOnError]] = js.undefined
+  var OnRemoveObjectsFromFavorites: js.UndefOr[js.Function1[/* objIDs */ IObjIDs, Null | Boolean | AnonOnError]] = js.undefined
   var OnRenameObjectFile: js.UndefOr[
     js.Function4[
       /* objVer */ IObjVer, 
       /* fileVer */ IFileVer, 
       /* newName */ Null | ITypedValue, 
       /* newExtension */ Null | ITypedValue, 
-      Null | Boolean | AnonErrorCode
+      Null | Boolean | AnonFinally
     ]
   ] = js.undefined
-  var OnRollBackObjectVersion: js.UndefOr[
-    js.Function1[/* objVer */ IObjVer, Null | Boolean | AnonErrorCodeErrorMessageErrorStack]
-  ] = js.undefined
+  var OnRollBackObjectVersion: js.UndefOr[js.Function1[/* objVer */ IObjVer, Null | Boolean | AnonOnSuccess]] = js.undefined
   var OnSetObjectLevelProperty: js.UndefOr[
-    js.Function2[
-      /* objID */ IObjID, 
-      /* propertyValue */ IPropertyValue, 
-      Null | Boolean | AnonErrorCodeErrorMessage
-    ]
+    js.Function2[/* objID */ IObjID, /* propertyValue */ IPropertyValue, Null | Boolean | AnonOnError]
   ] = js.undefined
-  var OnSetObjectOfflineAvailability: js.UndefOr[js.Function1[/* objID */ IObjID, Null | Boolean | AnonErrorCodeErrorMessage]] = js.undefined
+  var OnSetObjectOfflineAvailability: js.UndefOr[js.Function1[/* objID */ IObjID, Null | Boolean | AnonOnError]] = js.undefined
   var OnSetObjectVersionPermissions: js.UndefOr[
     js.Function3[
       /* objVer */ IObjVer, 
       /* changeAllVersions */ Boolean, 
       /* accessControlList */ IAccessControlList, 
-      Null | Boolean | AnonErrorCodeErrorMessageErrorStack
+      Null | Boolean | AnonOnSuccess
     ]
   ] = js.undefined
   var OnSetPropertiesOfObjectVersion: js.UndefOr[
@@ -156,7 +136,7 @@ trait IVaultEntryEvents extends IEvents {
       /* setPropertiesParams */ ISetPropertiesParams, 
       /* singlePropertyUpdate */ Boolean, 
       /* singlePropertyRemove */ Boolean, 
-      Null | Boolean | AnonErrorCodeErrorMessageErrorStack
+      Null | Boolean | AnonOnSuccess
     ]
   ] = js.undefined
   var OnSetPropertiesOfObjectVersions: js.UndefOr[
@@ -164,30 +144,19 @@ trait IVaultEntryEvents extends IEvents {
       /* setPropertiesParamsOfMultipleObjects */ ISetPropertiesParamsOfMultipleObjects, 
       /* singlePropertyUpdate */ Boolean, 
       /* singlePropertyRemove */ Boolean, 
-      Null | Boolean | AnonErrorCodeErrorMessageErrorStackFinally
+      Null | Boolean | AnonFinallyOnError
     ]
   ] = js.undefined
   var OnStarted: js.UndefOr[js.Function0[Unit]] = js.undefined
   var OnStop: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var OnSwitchToOfflineMode: js.UndefOr[js.Function0[Null | Boolean | AnonErrorCodeErrorMessage]] = js.undefined
-  var OnSwitchToOnlineMode: js.UndefOr[js.Function0[Null | Boolean | AnonErrorCodeErrorMessage]] = js.undefined
+  var OnSwitchToOfflineMode: js.UndefOr[js.Function0[Null | Boolean | AnonOnError]] = js.undefined
+  var OnSwitchToOnlineMode: js.UndefOr[js.Function0[Null | Boolean | AnonOnError]] = js.undefined
   var OnSwitchedToOfflineMode: js.UndefOr[js.Function0[Unit]] = js.undefined
   var OnSwitchedToOnlineMode: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var OnUndeleteObject: js.UndefOr[
-    js.Function1[/* objID */ IObjID, Null | Boolean | AnonErrorCodeErrorMessageErrorStack]
-  ] = js.undefined
-  var OnUndeleteObjects: js.UndefOr[
-    js.Function1[/* objIDs */ IObjIDs, Null | Boolean | AnonErrorCodeErrorMessageErrorStackFinally]
-  ] = js.undefined
-  var OnUndoObjectCheckout: js.UndefOr[
-    js.Function1[/* objVer */ IObjVer, Null | Boolean | AnonErrorCodeErrorMessageErrorStack]
-  ] = js.undefined
-  var OnUndoObjectCheckouts: js.UndefOr[
-    js.Function1[
-      /* objVers */ IObjVers, 
-      Null | Boolean | AnonErrorCodeErrorMessageErrorStackFinally
-    ]
-  ] = js.undefined
+  var OnUndeleteObject: js.UndefOr[js.Function1[/* objID */ IObjID, Null | Boolean | AnonOnSuccess]] = js.undefined
+  var OnUndeleteObjects: js.UndefOr[js.Function1[/* objIDs */ IObjIDs, Null | Boolean | AnonFinallyOnError]] = js.undefined
+  var OnUndoObjectCheckout: js.UndefOr[js.Function1[/* objVer */ IObjVer, Null | Boolean | AnonOnSuccess]] = js.undefined
+  var OnUndoObjectCheckouts: js.UndefOr[js.Function1[/* objVers */ IObjVers, Null | Boolean | AnonFinallyOnError]] = js.undefined
   var OnVaultLanguageChanged: js.UndefOr[js.Function1[/* languageID */ Double, Unit]] = js.undefined
 }
 
@@ -196,22 +165,22 @@ object IVaultEntryEvents {
   def apply(
     Register: (Event, js.Function) => Double,
     Unregister: Double => Unit,
-    OnAddObjectFile: (/* objVer */ IObjVer, /* sourceObjectFile */ ISourceObjectFile) => Null | Boolean | AnonErrorCode = null,
-    OnAddObjectToFavorites: /* objID */ IObjID => Null | Boolean | AnonErrorCodeErrorMessage = null,
-    OnAddObjectsToFavorites: /* objIDs */ IObjIDs => Null | Boolean | AnonErrorCodeErrorMessage = null,
-    OnChangeVaultLanguage: /* languageID */ Double => Null | Boolean | AnonErrorCodeErrorMessage = null,
-    OnCheckInObject: (/* objVer */ IObjVer, /* propertyValues */ IPropertyValues) => Null | Boolean | AnonErrorCodeErrorMessageErrorStack = null,
-    OnCheckInObjects: (/* objVers */ IObjVers, /* propertyValues */ IPropertyValues) => Null | Boolean | AnonErrorCodeErrorMessageErrorStackFinally = null,
-    OnCheckOutObject: /* objID */ IObjID => Null | Boolean | AnonErrorCodeErrorMessageErrorStack = null,
-    OnCheckOutObjects: /* objIDs */ IObjIDs => Null | Boolean | AnonErrorCodeErrorMessageErrorStackFinally = null,
-    OnCreateObject: (/* objectType */ Double, /* propertyValues */ IPropertyValues, /* sourceObjectFiles */ ISourceObjectFiles, /* accessControlList */ IAccessControlList, /* checkInRequested */ Boolean, /* singleFileRequested */ Boolean) => Null | Boolean | AnonErrorCodeErrorMessageErrorStack = null,
-    OnDestroyObject: /* objID */ IObjID => Null | Boolean | AnonErrorCodeErrorMessage = null,
-    OnDestroyObjectVersion: /* objVer */ IObjVer => Null | Boolean | AnonErrorCodeErrorMessage = null,
-    OnDestroyObjectVersions: /* objVers */ IObjVers => Null | Boolean | AnonErrorCodeErrorMessage = null,
-    OnDestroyObjects: /* objIDs */ IObjIDs => Null | Boolean | AnonErrorCodeErrorMessage = null,
-    OnLogOut: () => Null | Boolean | AnonErrorCodeErrorMessage = null,
+    OnAddObjectFile: (/* objVer */ IObjVer, /* sourceObjectFile */ ISourceObjectFile) => Null | Boolean | AnonFinally = null,
+    OnAddObjectToFavorites: /* objID */ IObjID => Null | Boolean | AnonOnError = null,
+    OnAddObjectsToFavorites: /* objIDs */ IObjIDs => Null | Boolean | AnonOnError = null,
+    OnChangeVaultLanguage: /* languageID */ Double => Null | Boolean | AnonOnError = null,
+    OnCheckInObject: (/* objVer */ IObjVer, /* propertyValues */ IPropertyValues) => Null | Boolean | AnonOnSuccess = null,
+    OnCheckInObjects: (/* objVers */ IObjVers, /* propertyValues */ IPropertyValues) => Null | Boolean | AnonFinallyOnError = null,
+    OnCheckOutObject: /* objID */ IObjID => Null | Boolean | AnonOnSuccess = null,
+    OnCheckOutObjects: /* objIDs */ IObjIDs => Null | Boolean | AnonFinallyOnError = null,
+    OnCreateObject: (/* objectType */ Double, /* propertyValues */ IPropertyValues, /* sourceObjectFiles */ ISourceObjectFiles, /* accessControlList */ IAccessControlList, /* checkInRequested */ Boolean, /* singleFileRequested */ Boolean) => Null | Boolean | AnonOnSuccess = null,
+    OnDestroyObject: /* objID */ IObjID => Null | Boolean | AnonOnError = null,
+    OnDestroyObjectVersion: /* objVer */ IObjVer => Null | Boolean | AnonOnError = null,
+    OnDestroyObjectVersions: /* objVers */ IObjVers => Null | Boolean | AnonOnError = null,
+    OnDestroyObjects: /* objIDs */ IObjIDs => Null | Boolean | AnonOnError = null,
+    OnLogOut: () => Null | Boolean | AnonOnError = null,
     OnLoggedIn: () => Unit = null,
-    OnModifyObjectVersionLabels: (/* objVer */ IObjVer, /* clearFromOtherVersions */ Boolean, /* append */ Boolean, /* labelIDs */ IIDs, /* singleLabelRequired */ Boolean) => Null | Boolean | AnonErrorCodeErrorMessage = null,
+    OnModifyObjectVersionLabels: (/* objVer */ IObjVer, /* clearFromOtherVersions */ Boolean, /* append */ Boolean, /* labelIDs */ IIDs, /* singleLabelRequired */ Boolean) => Null | Boolean | AnonOnError = null,
     OnNotification: (/* id */ String, /* data1 */ js.Any, /* data2 */ js.Any) => _ = null,
     OnObjectAddedToFavorites: /* objID */ IObjID => Unit = null,
     OnObjectCheckedIn: /* objectVersion */ IObjectVersion => Unit = null,
@@ -242,29 +211,29 @@ object IVaultEntryEvents {
     OnObjectsRemovedFromFavorites: /* objIDs */ IObjIDs => Unit = null,
     OnPropertiesOfObjectVersionSet: /* objectVersion */ IObjectVersion => Unit = null,
     OnPropertiesOfObjectVersionsSet: /* objectVersions */ IObjectVersions => Unit = null,
-    OnRemoveObject: /* objID */ IObjID => Null | Boolean | AnonErrorCodeErrorMessageErrorStack = null,
-    OnRemoveObjectFile: (/* objVer */ IObjVer, /* fileVer */ IFileVer) => Null | Boolean | AnonErrorCodeErrorMessageErrorStack = null,
-    OnRemoveObjectFromFavorites: /* objID */ IObjID => Null | Boolean | AnonErrorCodeErrorMessage = null,
-    OnRemoveObjectOfflineAvailability: /* objID */ IObjID => Null | Boolean | AnonErrorCodeErrorMessage = null,
-    OnRemoveObjects: /* objIDs */ IObjIDs => Null | Boolean | AnonErrorCodeErrorMessageErrorStackFinally = null,
-    OnRemoveObjectsFromFavorites: /* objIDs */ IObjIDs => Null | Boolean | AnonErrorCodeErrorMessage = null,
-    OnRenameObjectFile: (/* objVer */ IObjVer, /* fileVer */ IFileVer, /* newName */ Null | ITypedValue, /* newExtension */ Null | ITypedValue) => Null | Boolean | AnonErrorCode = null,
-    OnRollBackObjectVersion: /* objVer */ IObjVer => Null | Boolean | AnonErrorCodeErrorMessageErrorStack = null,
-    OnSetObjectLevelProperty: (/* objID */ IObjID, /* propertyValue */ IPropertyValue) => Null | Boolean | AnonErrorCodeErrorMessage = null,
-    OnSetObjectOfflineAvailability: /* objID */ IObjID => Null | Boolean | AnonErrorCodeErrorMessage = null,
-    OnSetObjectVersionPermissions: (/* objVer */ IObjVer, /* changeAllVersions */ Boolean, /* accessControlList */ IAccessControlList) => Null | Boolean | AnonErrorCodeErrorMessageErrorStack = null,
-    OnSetPropertiesOfObjectVersion: (/* setPropertiesParams */ ISetPropertiesParams, /* singlePropertyUpdate */ Boolean, /* singlePropertyRemove */ Boolean) => Null | Boolean | AnonErrorCodeErrorMessageErrorStack = null,
-    OnSetPropertiesOfObjectVersions: (/* setPropertiesParamsOfMultipleObjects */ ISetPropertiesParamsOfMultipleObjects, /* singlePropertyUpdate */ Boolean, /* singlePropertyRemove */ Boolean) => Null | Boolean | AnonErrorCodeErrorMessageErrorStackFinally = null,
+    OnRemoveObject: /* objID */ IObjID => Null | Boolean | AnonOnSuccess = null,
+    OnRemoveObjectFile: (/* objVer */ IObjVer, /* fileVer */ IFileVer) => Null | Boolean | AnonOnSuccess = null,
+    OnRemoveObjectFromFavorites: /* objID */ IObjID => Null | Boolean | AnonOnError = null,
+    OnRemoveObjectOfflineAvailability: /* objID */ IObjID => Null | Boolean | AnonOnError = null,
+    OnRemoveObjects: /* objIDs */ IObjIDs => Null | Boolean | AnonFinallyOnError = null,
+    OnRemoveObjectsFromFavorites: /* objIDs */ IObjIDs => Null | Boolean | AnonOnError = null,
+    OnRenameObjectFile: (/* objVer */ IObjVer, /* fileVer */ IFileVer, /* newName */ Null | ITypedValue, /* newExtension */ Null | ITypedValue) => Null | Boolean | AnonFinally = null,
+    OnRollBackObjectVersion: /* objVer */ IObjVer => Null | Boolean | AnonOnSuccess = null,
+    OnSetObjectLevelProperty: (/* objID */ IObjID, /* propertyValue */ IPropertyValue) => Null | Boolean | AnonOnError = null,
+    OnSetObjectOfflineAvailability: /* objID */ IObjID => Null | Boolean | AnonOnError = null,
+    OnSetObjectVersionPermissions: (/* objVer */ IObjVer, /* changeAllVersions */ Boolean, /* accessControlList */ IAccessControlList) => Null | Boolean | AnonOnSuccess = null,
+    OnSetPropertiesOfObjectVersion: (/* setPropertiesParams */ ISetPropertiesParams, /* singlePropertyUpdate */ Boolean, /* singlePropertyRemove */ Boolean) => Null | Boolean | AnonOnSuccess = null,
+    OnSetPropertiesOfObjectVersions: (/* setPropertiesParamsOfMultipleObjects */ ISetPropertiesParamsOfMultipleObjects, /* singlePropertyUpdate */ Boolean, /* singlePropertyRemove */ Boolean) => Null | Boolean | AnonFinallyOnError = null,
     OnStarted: () => Unit = null,
     OnStop: () => Unit = null,
-    OnSwitchToOfflineMode: () => Null | Boolean | AnonErrorCodeErrorMessage = null,
-    OnSwitchToOnlineMode: () => Null | Boolean | AnonErrorCodeErrorMessage = null,
+    OnSwitchToOfflineMode: () => Null | Boolean | AnonOnError = null,
+    OnSwitchToOnlineMode: () => Null | Boolean | AnonOnError = null,
     OnSwitchedToOfflineMode: () => Unit = null,
     OnSwitchedToOnlineMode: () => Unit = null,
-    OnUndeleteObject: /* objID */ IObjID => Null | Boolean | AnonErrorCodeErrorMessageErrorStack = null,
-    OnUndeleteObjects: /* objIDs */ IObjIDs => Null | Boolean | AnonErrorCodeErrorMessageErrorStackFinally = null,
-    OnUndoObjectCheckout: /* objVer */ IObjVer => Null | Boolean | AnonErrorCodeErrorMessageErrorStack = null,
-    OnUndoObjectCheckouts: /* objVers */ IObjVers => Null | Boolean | AnonErrorCodeErrorMessageErrorStackFinally = null,
+    OnUndeleteObject: /* objID */ IObjID => Null | Boolean | AnonOnSuccess = null,
+    OnUndeleteObjects: /* objIDs */ IObjIDs => Null | Boolean | AnonFinallyOnError = null,
+    OnUndoObjectCheckout: /* objVer */ IObjVer => Null | Boolean | AnonOnSuccess = null,
+    OnUndoObjectCheckouts: /* objVers */ IObjVers => Null | Boolean | AnonFinallyOnError = null,
     OnVaultLanguageChanged: /* languageID */ Double => Unit = null
   ): IVaultEntryEvents = {
     val __obj = js.Dynamic.literal(Register = js.Any.fromFunction2(Register), Unregister = js.Any.fromFunction1(Unregister))

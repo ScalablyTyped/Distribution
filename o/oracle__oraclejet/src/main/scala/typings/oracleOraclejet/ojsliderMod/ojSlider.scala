@@ -1,7 +1,7 @@
 package typings.oracleOraclejet.ojsliderMod
 
 import typings.oracleOraclejet.AnonAction
-import typings.oracleOraclejet.AnonActionElement
+import typings.oracleOraclejet.AnonElement
 import typings.oracleOraclejet.AnonInvalidStep
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.ojeditablevalueMod.editableValue
@@ -165,6 +165,6 @@ trait ojSlider extends editableValue[Double | Null, ojSliderSettableProperties, 
 @js.native
 object ojSlider extends js.Object {
   type ojAnimateEnd = CustomEvent[AnonAction]
-  type ojAnimateStart = CustomEvent[AnonActionElement]
+  type ojAnimateStart = CustomEvent[AnonElement]
 }
 

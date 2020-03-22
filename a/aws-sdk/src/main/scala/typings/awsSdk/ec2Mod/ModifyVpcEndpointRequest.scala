@@ -9,15 +9,15 @@ trait ModifyVpcEndpointRequest extends js.Object {
   /**
     * (Gateway endpoint) One or more route tables IDs to associate with the endpoint.
     */
-  var AddRouteTableIds: js.UndefOr[ValueStringList] = js.native
+  var AddRouteTableIds: js.UndefOr[VpcEndpointRouteTableIdList] = js.native
   /**
     * (Interface endpoint) One or more security group IDs to associate with the network interface.
     */
-  var AddSecurityGroupIds: js.UndefOr[ValueStringList] = js.native
+  var AddSecurityGroupIds: js.UndefOr[VpcEndpointSecurityGroupIdList] = js.native
   /**
     * (Interface endpoint) One or more subnet IDs in which to serve the endpoint.
     */
-  var AddSubnetIds: js.UndefOr[ValueStringList] = js.native
+  var AddSubnetIds: js.UndefOr[VpcEndpointSubnetIdList] = js.native
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
@@ -33,15 +33,15 @@ trait ModifyVpcEndpointRequest extends js.Object {
   /**
     * (Gateway endpoint) One or more route table IDs to disassociate from the endpoint.
     */
-  var RemoveRouteTableIds: js.UndefOr[ValueStringList] = js.native
+  var RemoveRouteTableIds: js.UndefOr[VpcEndpointRouteTableIdList] = js.native
   /**
     * (Interface endpoint) One or more security group IDs to disassociate from the network interface.
     */
-  var RemoveSecurityGroupIds: js.UndefOr[ValueStringList] = js.native
+  var RemoveSecurityGroupIds: js.UndefOr[VpcEndpointSecurityGroupIdList] = js.native
   /**
     * (Interface endpoint) One or more subnets IDs in which to remove the endpoint.
     */
-  var RemoveSubnetIds: js.UndefOr[ValueStringList] = js.native
+  var RemoveSubnetIds: js.UndefOr[VpcEndpointSubnetIdList] = js.native
   /**
     * (Gateway endpoint) Specify true to reset the policy document to the default policy. The default policy allows full access to the service.
     */
@@ -56,15 +56,15 @@ object ModifyVpcEndpointRequest {
   @scala.inline
   def apply(
     VpcEndpointId: VpcEndpointId,
-    AddRouteTableIds: ValueStringList = null,
-    AddSecurityGroupIds: ValueStringList = null,
-    AddSubnetIds: ValueStringList = null,
+    AddRouteTableIds: VpcEndpointRouteTableIdList = null,
+    AddSecurityGroupIds: VpcEndpointSecurityGroupIdList = null,
+    AddSubnetIds: VpcEndpointSubnetIdList = null,
     DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     PolicyDocument: String = null,
     PrivateDnsEnabled: js.UndefOr[scala.Boolean] = js.undefined,
-    RemoveRouteTableIds: ValueStringList = null,
-    RemoveSecurityGroupIds: ValueStringList = null,
-    RemoveSubnetIds: ValueStringList = null,
+    RemoveRouteTableIds: VpcEndpointRouteTableIdList = null,
+    RemoveSecurityGroupIds: VpcEndpointSecurityGroupIdList = null,
+    RemoveSubnetIds: VpcEndpointSubnetIdList = null,
     ResetPolicy: js.UndefOr[scala.Boolean] = js.undefined
   ): ModifyVpcEndpointRequest = {
     val __obj = js.Dynamic.literal(VpcEndpointId = VpcEndpointId.asInstanceOf[js.Any])

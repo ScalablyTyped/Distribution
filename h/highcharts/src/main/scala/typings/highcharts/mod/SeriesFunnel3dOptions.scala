@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.highcharts.mod.SeriesOptions because var conflicts: zIndex. Inlined id, index, legendIndex, mapData, name, stack, treemap, `type`, xAxis, yAxis */ trait SeriesFunnel3dOptions
+- typings.highcharts.mod.SeriesOptions because var conflicts: zIndex. Inlined id, index, legendIndex, mapData, name, stack, `type`, xAxis, yAxis */ trait SeriesFunnel3dOptions
   extends PlotFunnel3dOptions
      with SeriesOptionsType {
   /**
@@ -25,7 +25,7 @@ import scala.scalajs.js.annotation._
     * number of data points exceeds the series' turboThreshold, this option is
     * not available. (see online documentation for example)
     */
-  var data: js.UndefOr[js.Array[Double | js.Array[Double] | SeriesFunnel3dDataOptions]] = js.undefined
+  var data: js.UndefOr[js.Array[Double | js.Array[Double] | PointOptionsObject]] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) An id for the series. This can
     * be used after render time to get a pointer to the series object through
@@ -61,7 +61,6 @@ import scala.scalajs.js.annotation._
     * string.
     */
   var stack: js.UndefOr[Double | String] = js.undefined
-  var treemap: js.UndefOr[SeriesTreemapOptions] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) This property is only in
     * TypeScript non-optional and might be `undefined` in series objects from
@@ -88,9 +87,9 @@ object SeriesFunnel3dOptions {
   @scala.inline
   def apply(
     `type`: String | funnel3d,
-    accessibility: js.Object | PlotFunnel3dAccessibilityOptions = null,
+    accessibility: SeriesAccessibilityOptionsObject = null,
     allowPointSelect: js.UndefOr[Boolean] = js.undefined,
-    animation: Boolean | PlotFunnel3dAnimationOptions = null,
+    animation: js.UndefOr[Boolean] = js.undefined,
     animationLimit: Int | Double = null,
     boostBlending: OptionsBoostBlendingValue = null,
     borderColor: ColorString | GradientColorObject | PatternObject = null,
@@ -104,20 +103,21 @@ object SeriesFunnel3dOptions {
     colorKey: String = null,
     colors: js.Array[ColorString | GradientColorObject | PatternObject] = null,
     compareStart: js.UndefOr[Boolean] = js.undefined,
-    connectors: PlotFunnel3dConnectorsOptions = null,
+    connectors: SeriesConnectorsOptionsObject = null,
     crisp: js.UndefOr[Boolean] = js.undefined,
     cropThreshold: Int | Double = null,
     cursor: String | CursorValue = null,
-    data: js.Array[Double | js.Array[Double] | SeriesFunnel3dDataOptions] = null,
-    dataGrouping: PlotFunnel3dDataGroupingOptions = null,
-    dataLabels: String = null,
+    data: js.Array[Double | js.Array[Double] | PointOptionsObject] = null,
+    dataGrouping: DataGroupingOptionsObject = null,
+    dataLabels: DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject] = null,
+    dataSorting: DataSortingOptionsObject | PlotFunnel3dDataSortingOptions = null,
     depth: Int | Double = null,
     description: String = null,
-    dragDrop: PlotFunnel3dDragDropOptions = null,
+    dragDrop: SeriesDragDropOptionsObject = null,
     edgeColor: ColorString = null,
     edgeWidth: Int | Double = null,
     enableMouseTracking: js.UndefOr[Boolean] = js.undefined,
-    events: PlotFunnel3dEventsOptions = null,
+    events: SeriesEventsOptionsObject = null,
     findNearestPointBy: OptionsFindNearestPointByValue = null,
     getExtremesFromAll: js.UndefOr[Boolean] = js.undefined,
     gradientForSides: js.UndefOr[Boolean] = js.undefined,
@@ -130,9 +130,9 @@ object SeriesFunnel3dOptions {
     index: Int | Double = null,
     joinBy: String | js.Array[String] = null,
     keys: js.Array[String] = null,
-    label: PlotFunnel3dLabelOptions = null,
-    lastPrice: PlotFunnel3dLastPriceOptions = null,
-    lastVisiblePrice: PlotFunnel3dLastVisiblePriceOptions = null,
+    label: SeriesLabelOptionsObject = null,
+    lastPrice: SeriesLastPriceOptionsObject = null,
+    lastVisiblePrice: SeriesLastVisiblePriceOptionsObject = null,
     legendIndex: Int | Double = null,
     linkedTo: String = null,
     mapData: js.Array[SeriesMapDataOptions] | js.Any = null,
@@ -144,7 +144,7 @@ object SeriesFunnel3dOptions {
     neckWidth: Double | String = null,
     negativeColor: ColorString | GradientColorObject | PatternObject = null,
     opacity: Int | Double = null,
-    point: PlotFunnel3dPointOptions = null,
+    point: PlotSeriesPointOptions = null,
     pointDescriptionFormatter: js.Function = null,
     pointInterval: Int | Double = null,
     pointIntervalUnit: OptionsPointIntervalUnitValue = null,
@@ -163,11 +163,10 @@ object SeriesFunnel3dOptions {
     softThreshold: js.UndefOr[Boolean] = js.undefined,
     stack: Double | String = null,
     stacking: OptionsStackingValue = null,
-    states: PlotFunnel3dStatesOptions = null,
+    states: SeriesStatesOptionsObject = null,
     stickyTracking: js.UndefOr[Boolean] = js.undefined,
     threshold: Int | Double = null,
-    tooltip: PlotFunnel3dTooltipOptions = null,
-    treemap: SeriesTreemapOptions = null,
+    tooltip: SeriesTooltipOptionsObject = null,
     turboThreshold: Int | Double = null,
     visible: js.UndefOr[Boolean] = js.undefined,
     width: Double | String = null,
@@ -175,13 +174,13 @@ object SeriesFunnel3dOptions {
     yAxis: Double | String = null,
     zIndex: Int | Double = null,
     zoneAxis: String = null,
-    zones: js.Array[PlotFunnel3dZonesOptions] = null
+    zones: js.Array[SeriesZonesOptionsObject] = null
   ): SeriesFunnel3dOptions = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (accessibility != null) __obj.updateDynamic("accessibility")(accessibility.asInstanceOf[js.Any])
     if (!js.isUndefined(allowPointSelect)) __obj.updateDynamic("allowPointSelect")(allowPointSelect.asInstanceOf[js.Any])
-    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
+    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
     if (animationLimit != null) __obj.updateDynamic("animationLimit")(animationLimit.asInstanceOf[js.Any])
     if (boostBlending != null) __obj.updateDynamic("boostBlending")(boostBlending.asInstanceOf[js.Any])
     if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
@@ -202,6 +201,7 @@ object SeriesFunnel3dOptions {
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (dataGrouping != null) __obj.updateDynamic("dataGrouping")(dataGrouping.asInstanceOf[js.Any])
     if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
+    if (dataSorting != null) __obj.updateDynamic("dataSorting")(dataSorting.asInstanceOf[js.Any])
     if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (dragDrop != null) __obj.updateDynamic("dragDrop")(dragDrop.asInstanceOf[js.Any])
@@ -258,7 +258,6 @@ object SeriesFunnel3dOptions {
     if (!js.isUndefined(stickyTracking)) __obj.updateDynamic("stickyTracking")(stickyTracking.asInstanceOf[js.Any])
     if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (treemap != null) __obj.updateDynamic("treemap")(treemap.asInstanceOf[js.Any])
     if (turboThreshold != null) __obj.updateDynamic("turboThreshold")(turboThreshold.asInstanceOf[js.Any])
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])

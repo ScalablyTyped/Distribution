@@ -1,7 +1,7 @@
 package typings.jupyterlabServices
 
-import typings.jupyterlabServices.messagesMod.KernelMessage.IMessage
-import typings.jupyterlabServices.messagesMod.KernelMessage.MessageType
+import typings.jupyterlabServices.messagesMod.IMessage
+import typings.jupyterlabServices.messagesMod.MessageType
 import typings.std.ArrayBuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`

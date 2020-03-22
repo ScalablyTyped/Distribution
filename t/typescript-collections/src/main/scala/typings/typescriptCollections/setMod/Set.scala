@@ -44,7 +44,7 @@ trait Set[T] extends js.Object {
     */
   def forEach(callback: ILoopFunction[T]): Unit
   /**
-    * Performs an intersecion between this and another set.
+    * Performs an intersection between this and another set.
     * Removes all values that are not present this set and the given set.
     * @param {collections.Set} otherSet other set.
     */

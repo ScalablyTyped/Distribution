@@ -1,6 +1,6 @@
 package typings.winrtUwp.Windows.ApplicationModel.Resources.Core
 
-import typings.winrtUwp.AnonFirstSecondIMapViewString
+import typings.winrtUwp.AnonSecondIMapView
 import typings.winrtUwp.Windows.Foundation.Collections.IIterator
 import typings.winrtUwp.Windows.Foundation.Collections.IKeyValuePair
 import scala.scalajs.js
@@ -33,6 +33,6 @@ abstract class ResourceQualifierMapView () extends js.Object {
   /**
     * Splits the map view into two views.
     */
-  def split(): AnonFirstSecondIMapViewString = js.native
+  def split(): AnonSecondIMapView = js.native
 }
 

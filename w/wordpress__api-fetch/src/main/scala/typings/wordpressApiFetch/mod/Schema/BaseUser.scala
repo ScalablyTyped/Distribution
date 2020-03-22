@@ -1,7 +1,7 @@
 package typings.wordpressApiFetch.mod.Schema
 
 import typings.std.Record
-import typings.wordpressApiFetch.AnonHref
+import typings.wordpressApiFetch.AnonDictk
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,7 +29,7 @@ trait BaseUser[T /* <: Context */] extends BaseResponse {
 object BaseUser {
   @scala.inline
   def apply[T /* <: Context */](
-    _links: Record[String, js.Array[AnonHref]],
+    _links: Record[String, js.Array[AnonDictk]],
     avatar_urls: Record[Double, String],
     capabilities: Record[String, Boolean],
     description: String,

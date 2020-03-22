@@ -10,9 +10,11 @@ class BindingPipe protected ()
   extends typings.angularCompiler.publicApiMod.BindingPipe {
   def this(
     span: typings.angularCompiler.astMod.ParseSpan,
+    sourceSpan: typings.angularCompiler.astMod.AbsoluteSourceSpan,
     exp: typings.angularCompiler.astMod.AST,
     name: String,
-    args: js.Array[_]
+    args: js.Array[_],
+    nameSpan: typings.angularCompiler.astMod.AbsoluteSourceSpan
   ) = this()
 }
 

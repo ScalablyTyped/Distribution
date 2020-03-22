@@ -1,6 +1,6 @@
 package typings.reactNativeElements.mod
 
-import typings.reactNative.AnonEndStart
+import typings.reactNative.AnonStart
 import typings.reactNative.mod.AccessibilityActionEvent
 import typings.reactNative.mod.AccessibilityActionInfo
 import typings.reactNative.mod.AccessibilityRole
@@ -26,7 +26,6 @@ import typings.reactNative.mod.TextInputScrollEventData
 import typings.reactNative.mod.TextInputSelectionChangeEventData
 import typings.reactNative.mod.TextInputSubmitEditingEventData
 import typings.reactNative.mod.TextStyle
-import typings.reactNative.mod.TouchableOpacityProps
 import typings.reactNative.mod.ViewStyle
 import typings.reactNative.reactNativeStrings.URL
 import typings.reactNative.reactNativeStrings.`box-none`
@@ -95,8 +94,7 @@ import typings.reactNative.reactNativeStrings.username
 import typings.reactNative.reactNativeStrings.words
 import typings.reactNative.reactNativeStrings.yes
 import typings.reactNative.reactNativeStrings.yesExcludeDescendants
-import typings.reactNativeElements.AnonButtonDisabledStyle
-import typings.std.Partial
+import typings.reactNativeElements.PartialTouchableOpacityPr
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -105,7 +103,7 @@ trait SearchBarIOS extends SearchBarPlatform {
   /**
     * Props passed to cancel button
     */
-  var cancelButtonProps: js.UndefOr[Partial[TouchableOpacityProps] with AnonButtonDisabledStyle] = js.undefined
+  var cancelButtonProps: js.UndefOr[PartialTouchableOpacityPr] = js.undefined
   /**
     * title of cancel button on iOS.  Default: 'Cancel'.
     */
@@ -138,7 +136,7 @@ object SearchBarIOS {
     autoCorrect: js.UndefOr[Boolean] = js.undefined,
     autoFocus: js.UndefOr[Boolean] = js.undefined,
     blurOnSubmit: js.UndefOr[Boolean] = js.undefined,
-    cancelButtonProps: Partial[TouchableOpacityProps] with AnonButtonDisabledStyle = null,
+    cancelButtonProps: PartialTouchableOpacityPr = null,
     cancelButtonTitle: String = null,
     caretHidden: js.UndefOr[Boolean] = js.undefined,
     clearButtonMode: never | `while-editing` | `unless-editing` | always = null,
@@ -219,7 +217,7 @@ object SearchBarIOS {
     searchIcon: IconNode = null,
     secureTextEntry: js.UndefOr[Boolean] = js.undefined,
     selectTextOnFocus: js.UndefOr[Boolean] = js.undefined,
-    selection: AnonEndStart = null,
+    selection: AnonStart = null,
     selectionColor: String = null,
     selectionState: DocumentSelectionState = null,
     shouldRasterizeIOS: js.UndefOr[Boolean] = js.undefined,

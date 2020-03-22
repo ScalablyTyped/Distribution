@@ -8,5 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object getDistanceScales extends js.Object {
   def apply(input: DistanceScalesInput): DistanceScales = js.native
+  def apply(input: HighPrecisionDistanceScalesInput): HighPrecisionDistanceScales = js.native
 }
 

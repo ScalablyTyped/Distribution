@@ -12,6 +12,7 @@ class FontInfo () extends BareFontInfo {
   val isMonospace: Boolean = js.native
   val isTrusted: Boolean = js.native
   val maxDigitWidth: Double = js.native
+  val middotWidth: Double = js.native
   val spaceWidth: Double = js.native
   val typicalFullwidthCharacterWidth: Double = js.native
   val typicalHalfwidthCharacterWidth: Double = js.native

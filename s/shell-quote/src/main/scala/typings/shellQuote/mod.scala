@@ -23,7 +23,7 @@ object mod extends js.Object {
   /* Rewritten from type alias, can be one of: 
     - java.lang.String
     - typings.shellQuote.AnonOp
-    - typings.shellQuote.AnonGlob
+    - typings.shellQuote.AnonPattern
     - typings.shellQuote.AnonComment
   */
   type ParseEntry = _ParseEntry | String

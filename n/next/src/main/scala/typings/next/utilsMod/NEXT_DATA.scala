@@ -1,9 +1,8 @@
 package typings.next.utilsMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.next.AnonStatusCode
+import typings.next.ErrorstatusCodenumber
 import typings.node.querystringMod.ParsedUrlQuery
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +12,8 @@ trait NEXT_DATA extends js.Object {
   var autoExport: js.UndefOr[Boolean] = js.undefined
   var buildId: String
   var dynamicIds: js.UndefOr[js.Array[String]] = js.undefined
-  var err: js.UndefOr[Error with AnonStatusCode] = js.undefined
+  var err: js.UndefOr[ErrorstatusCodenumber] = js.undefined
+  var isFallback: js.UndefOr[Boolean] = js.undefined
   var nextExport: js.UndefOr[Boolean] = js.undefined
   var page: String
   var props: js.Any
@@ -31,7 +31,8 @@ object NEXT_DATA {
     assetPrefix: String = null,
     autoExport: js.UndefOr[Boolean] = js.undefined,
     dynamicIds: js.Array[String] = null,
-    err: Error with AnonStatusCode = null,
+    err: ErrorstatusCodenumber = null,
+    isFallback: js.UndefOr[Boolean] = js.undefined,
     nextExport: js.UndefOr[Boolean] = js.undefined,
     runtimeConfig: StringDictionary[js.Any] = null
   ): NEXT_DATA = {
@@ -40,6 +41,7 @@ object NEXT_DATA {
     if (!js.isUndefined(autoExport)) __obj.updateDynamic("autoExport")(autoExport.asInstanceOf[js.Any])
     if (dynamicIds != null) __obj.updateDynamic("dynamicIds")(dynamicIds.asInstanceOf[js.Any])
     if (err != null) __obj.updateDynamic("err")(err.asInstanceOf[js.Any])
+    if (!js.isUndefined(isFallback)) __obj.updateDynamic("isFallback")(isFallback.asInstanceOf[js.Any])
     if (!js.isUndefined(nextExport)) __obj.updateDynamic("nextExport")(nextExport.asInstanceOf[js.Any])
     if (runtimeConfig != null) __obj.updateDynamic("runtimeConfig")(runtimeConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[NEXT_DATA]

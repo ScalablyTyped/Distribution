@@ -1,7 +1,7 @@
 package typings.jspdf.mod
 
 import typings.jspdf.AnonAlign
-import typings.jspdf.AnonAnticlockwise
+import typings.jspdf.AnonArc
 import typings.jspdf.AnonCollections
 import typings.jspdf.AnonGetContext
 import typings.jspdf.AnonReturnPromise
@@ -26,7 +26,7 @@ trait jsPDF extends js.Object {
   // jsPDF plugin: addImage
   var color_spaces: js.Any = js.native
   // jsPDF plugin: Context2D
-  var context2d: AnonAnticlockwise = js.native
+  var context2d: AnonArc = js.native
   var decode: js.Any = js.native
   var image_compression: js.Any = js.native
   var internal: AnonCollections = js.native

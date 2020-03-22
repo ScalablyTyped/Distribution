@@ -3,7 +3,6 @@ package typings.shopifyPrime
 import typings.shopifyPrime.draftOrderMod.DraftOrder
 import typings.shopifyPrime.infrastructureMod.BaseService
 import typings.shopifyPrime.optionsBaseMod.ListOptions
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,8 +26,8 @@ object draftOrdersMod extends js.Object {
     /**
       * Creates a new draft order.
       */
-    def create(order: Partial[DraftOrder]): js.Promise[DraftOrder] = js.native
-    def create(order: Partial[DraftOrder], useCustomerDefaultAddress: Boolean): js.Promise[DraftOrder] = js.native
+    def create(order: PartialDraftOrder): js.Promise[DraftOrder] = js.native
+    def create(order: PartialDraftOrder, useCustomerDefaultAddress: Boolean): js.Promise[DraftOrder] = js.native
     /**
       * Deletes the draft order with the given id.
       */
@@ -46,7 +45,7 @@ object draftOrdersMod extends js.Object {
     /**
       * Updates the draft order with the given id.
       */
-    def update(id: Double, order: Partial[DraftOrder]): js.Promise[DraftOrder] = js.native
+    def update(id: Double, order: PartialDraftOrder): js.Promise[DraftOrder] = js.native
   }
   
   @js.native

@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonCompiledCloudFormationTemplate extends js.Object {
-  var compiledCloudFormationTemplate: AnonKey
+  var compiledCloudFormationTemplate: AnonOutputs
   var name: String
   var region: String
   var runtime: js.UndefOr[String] = js.undefined
@@ -17,7 +17,7 @@ trait AnonCompiledCloudFormationTemplate extends js.Object {
 object AnonCompiledCloudFormationTemplate {
   @scala.inline
   def apply(
-    compiledCloudFormationTemplate: AnonKey,
+    compiledCloudFormationTemplate: AnonOutputs,
     name: String,
     region: String,
     stage: String,

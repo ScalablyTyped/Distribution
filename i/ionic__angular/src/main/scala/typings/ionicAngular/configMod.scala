@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ionic/angular/dist/providers/config", JSImport.Namespace)
+@JSImport("@ionic/angular/providers/config", JSImport.Namespace)
 @js.native
 object configMod extends js.Object {
   @js.native

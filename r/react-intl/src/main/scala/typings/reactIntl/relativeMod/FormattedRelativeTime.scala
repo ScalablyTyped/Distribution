@@ -1,10 +1,8 @@
 package typings.reactIntl.relativeMod
 
 import typings.react.mod.Component
-import typings.reactIntl.reactIntlStrings.unit
-import typings.reactIntl.reactIntlStrings.value
-import typings.std.Partial
-import typings.std.Pick
+import typings.reactIntl.PartialStateCurrentValueInSeconds
+import typings.reactIntl.PickPropsunitvalue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,8 +26,8 @@ class FormattedRelativeTime protected ()
 @JSImport("react-intl/lib/components/relative", "FormattedRelativeTime")
 @js.native
 object FormattedRelativeTime extends js.Object {
-  var defaultProps: Pick[Props, unit | value] = js.native
+  var defaultProps: PickPropsunitvalue = js.native
   var displayName: String = js.native
-  def getDerivedStateFromProps(props: Props, state: State): Partial[State] | Null = js.native
+  def getDerivedStateFromProps(props: Props, state: State): PartialStateCurrentValueInSeconds | Null = js.native
 }
 

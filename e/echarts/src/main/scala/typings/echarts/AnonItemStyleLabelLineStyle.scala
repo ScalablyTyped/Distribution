@@ -8,23 +8,23 @@ trait AnonItemStyleLabelLineStyle extends js.Object {
   /**
     * @see https://echarts.apache.org/en/option.html#series-sankey.emphasis.itemStyle
     */
-  var itemStyle: js.UndefOr[AnonBorderColorBorderType] = js.undefined
+  var itemStyle: js.UndefOr[AnonBorderType] = js.undefined
   /**
     * @see https://echarts.apache.org/en/option.html#series-sankey.emphasis.label
     */
-  var label: js.UndefOr[AnonAlignBackgroundColorBorderColor] = js.undefined
+  var label: js.UndefOr[AnonBorderRadius] = js.undefined
   /**
     * @see https://echarts.apache.org/en/option.html#series-sankey.emphasis.lineStyle
     */
-  var lineStyle: js.UndefOr[AnonColorCurvenessOpacityShadowBlur] = js.undefined
+  var lineStyle: js.UndefOr[AnonCurvenessOpacity] = js.undefined
 }
 
 object AnonItemStyleLabelLineStyle {
   @scala.inline
   def apply(
-    itemStyle: AnonBorderColorBorderType = null,
-    label: AnonAlignBackgroundColorBorderColor = null,
-    lineStyle: AnonColorCurvenessOpacityShadowBlur = null
+    itemStyle: AnonBorderType = null,
+    label: AnonBorderRadius = null,
+    lineStyle: AnonCurvenessOpacity = null
   ): AnonItemStyleLabelLineStyle = {
     val __obj = js.Dynamic.literal()
     if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle.asInstanceOf[js.Any])

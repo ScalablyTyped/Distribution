@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ionic/angular/dist/directives/virtual-scroll/virtual-item", JSImport.Namespace)
+@JSImport("@ionic/angular/directives/virtual-scroll/virtual-item", JSImport.Namespace)
 @js.native
 object virtualItemMod extends js.Object {
   @js.native

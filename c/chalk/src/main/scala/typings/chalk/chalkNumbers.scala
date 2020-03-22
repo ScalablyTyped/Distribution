@@ -1,22 +1,22 @@
 package typings.chalk
 
-import typings.chalk.mod.Level
+import typings.chalk.mod.LevelEnum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object chalkNumbers {
   @js.native
-  sealed trait `0` extends Level
+  sealed trait `0` extends LevelEnum
   
   @js.native
-  sealed trait `1` extends Level
+  sealed trait `1` extends LevelEnum
   
   @js.native
-  sealed trait `2` extends Level
+  sealed trait `2` extends LevelEnum
   
   @js.native
-  sealed trait `3` extends Level
+  sealed trait `3` extends LevelEnum
   
   @scala.inline
   def `0`: `0` = 0.asInstanceOf[`0`]

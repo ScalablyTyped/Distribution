@@ -79,7 +79,7 @@ object textareaMod extends js.Object {
       */
     var ionFocus: EventEmitter[Unit] = js.native
     /**
-      * Emitted when a keyboard input ocurred.
+      * Emitted when a keyboard input occurred.
       */
     var ionInput: EventEmitter[KeyboardEvent] = js.native
     /**

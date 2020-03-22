@@ -25,7 +25,7 @@ trait DescribeVpcPeeringConnectionsRequest extends js.Object {
   /**
     * One or more VPC peering connection IDs. Default: Describes all your VPC peering connections.
     */
-  var VpcPeeringConnectionIds: js.UndefOr[ValueStringList] = js.native
+  var VpcPeeringConnectionIds: js.UndefOr[VpcPeeringConnectionIdList] = js.native
 }
 
 object DescribeVpcPeeringConnectionsRequest {
@@ -35,7 +35,7 @@ object DescribeVpcPeeringConnectionsRequest {
     Filters: FilterList = null,
     MaxResults: Int | scala.Double = null,
     NextToken: String = null,
-    VpcPeeringConnectionIds: ValueStringList = null
+    VpcPeeringConnectionIds: VpcPeeringConnectionIdList = null
   ): DescribeVpcPeeringConnectionsRequest = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])

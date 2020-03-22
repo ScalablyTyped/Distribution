@@ -1,8 +1,8 @@
 package typings.forgeApis.mod
 
-import typings.forgeApis.AnonFilterDirectionFilterExtensionType
-import typings.forgeApis.AnonFilterExtensionTypeFilterId
-import typings.forgeApis.AnonFilterExtensionTypeFilterIdFilterType
+import typings.forgeApis.AnonFilterId
+import typings.forgeApis.AnonFilterRefType
+import typings.forgeApis.AnonFilterType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,7 +25,7 @@ class ItemsApi () extends js.Object {
   def getItemRefs(
     projectId: String,
     itemId: String,
-    opts: AnonFilterExtensionTypeFilterId,
+    opts: AnonFilterId,
     oauth2Client: AuthClient,
     credentials: AuthToken
   ): js.Promise[ApiResponse] = js.native
@@ -36,7 +36,7 @@ class ItemsApi () extends js.Object {
   def getItemRelationshipsRefs(
     projectId: String,
     itemId: String,
-    opts: AnonFilterDirectionFilterExtensionType,
+    opts: AnonFilterRefType,
     oauth2Client: AuthClient,
     credentials: AuthToken
   ): js.Promise[ApiResponse] = js.native
@@ -50,7 +50,7 @@ class ItemsApi () extends js.Object {
   def getItemVersions(
     projectId: String,
     itemId: String,
-    opts: AnonFilterExtensionTypeFilterIdFilterType,
+    opts: AnonFilterType,
     oauth2Client: AuthClient,
     credentials: AuthToken
   ): js.Promise[ApiResponse] = js.native

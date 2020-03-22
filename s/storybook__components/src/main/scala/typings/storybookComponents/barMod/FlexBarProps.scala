@@ -4,10 +4,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FlexBarProps extends js.Object {
-  var backgroundColor: js.UndefOr[String] = js.undefined
-  var border: js.UndefOr[Boolean] = js.undefined
-  var children: js.UndefOr[js.Any] = js.undefined
+  var backgroundColor: js.UndefOr[String] = js.native
+  var border: js.UndefOr[Boolean] = js.native
+  var children: js.UndefOr[js.Any] = js.native
 }
 
 object FlexBarProps {

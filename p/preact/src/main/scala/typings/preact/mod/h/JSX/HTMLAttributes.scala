@@ -2,6 +2,8 @@ package typings.preact.mod.h.JSX
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.preact.mod.ClassAttributes
+import typings.preact.mod.Key
+import typings.preact.mod.Ref
 import typings.preact.preactStrings.auto
 import typings.preact.preactStrings.ltr
 import typings.preact.preactStrings.rtl
@@ -166,7 +168,6 @@ trait HTMLAttributes[RefType /* <: EventTarget */]
 object HTMLAttributes {
   @scala.inline
   def apply[RefType /* <: EventTarget */](
-    ClassAttributes: ClassAttributes[RefType] = null,
     DOMAttributes: typings.preact.jsxMod.JSXInternal.DOMAttributes[RefType] = null,
     about: String = null,
     accept: String = null,
@@ -240,6 +241,8 @@ object HTMLAttributes {
     itemRef: String = null,
     itemScope: js.UndefOr[Boolean] = js.undefined,
     itemType: String = null,
+    jsx: js.UndefOr[Boolean] = js.undefined,
+    key: Key = null,
     keyParams: String = null,
     keyType: String = null,
     kind: String = null,
@@ -274,6 +277,7 @@ object HTMLAttributes {
     property: String = null,
     radioGroup: String = null,
     readOnly: js.UndefOr[Boolean] = js.undefined,
+    ref: Ref[RefType] = null,
     rel: String = null,
     required: js.UndefOr[Boolean] = js.undefined,
     resource: String = null,
@@ -315,7 +319,6 @@ object HTMLAttributes {
     wrap: String = null
   ): HTMLAttributes[RefType] = {
     val __obj = js.Dynamic.literal()
-    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     if (DOMAttributes != null) js.Dynamic.global.Object.assign(__obj, DOMAttributes)
     if (about != null) __obj.updateDynamic("about")(about.asInstanceOf[js.Any])
     if (accept != null) __obj.updateDynamic("accept")(accept.asInstanceOf[js.Any])
@@ -389,6 +392,8 @@ object HTMLAttributes {
     if (itemRef != null) __obj.updateDynamic("itemRef")(itemRef.asInstanceOf[js.Any])
     if (!js.isUndefined(itemScope)) __obj.updateDynamic("itemScope")(itemScope.asInstanceOf[js.Any])
     if (itemType != null) __obj.updateDynamic("itemType")(itemType.asInstanceOf[js.Any])
+    if (!js.isUndefined(jsx)) __obj.updateDynamic("jsx")(jsx.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (keyParams != null) __obj.updateDynamic("keyParams")(keyParams.asInstanceOf[js.Any])
     if (keyType != null) __obj.updateDynamic("keyType")(keyType.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
@@ -423,6 +428,7 @@ object HTMLAttributes {
     if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
     if (radioGroup != null) __obj.updateDynamic("radioGroup")(radioGroup.asInstanceOf[js.Any])
     if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
+    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (rel != null) __obj.updateDynamic("rel")(rel.asInstanceOf[js.Any])
     if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
     if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])

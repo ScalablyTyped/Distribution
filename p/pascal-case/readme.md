@@ -1,7 +1,7 @@
 
 # Scala.js typings for pascal-case
 
-Typings are for version 2.0.1
+Typings are for version 3.1.1
 
 ## Library description:
 Transform into a string of capitalized words without separators

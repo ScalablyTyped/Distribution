@@ -1,6 +1,8 @@
 package typings.awsSdk.opsworksMod
 
-import typings.awsSdk.AnonWaiter
+import typings.awsSdk.DescribeAppsRequestwaiter
+import typings.awsSdk.DescribeDeploymentsReques
+import typings.awsSdk.DescribeInstancesRequestwInstanceIds
 import typings.awsSdk.awsSdkStrings.appExists
 import typings.awsSdk.awsSdkStrings.deploymentSuccessful
 import typings.awsSdk.awsSdkStrings.instanceOnline
@@ -951,11 +953,11 @@ trait OpsWorks extends Service {
     * Waits for the appExists state by periodically calling the underlying OpsWorks.describeAppsoperation every 1 seconds (at most 40 times).
     */
   @JSName("waitFor")
-  def waitFor_appExists(state: appExists, params: DescribeAppsRequest with AnonWaiter): Request[DescribeAppsResult, AWSError] = js.native
+  def waitFor_appExists(state: appExists, params: DescribeAppsRequestwaiter): Request[DescribeAppsResult, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_appExists(
     state: appExists,
-    params: DescribeAppsRequest with AnonWaiter,
+    params: DescribeAppsRequestwaiter,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeAppsResult, Unit]
   ): Request[DescribeAppsResult, AWSError] = js.native
   /**
@@ -972,11 +974,11 @@ trait OpsWorks extends Service {
     * Waits for the deploymentSuccessful state by periodically calling the underlying OpsWorks.describeDeploymentsoperation every 15 seconds (at most 40 times). Wait until a deployment has completed successfully.
     */
   @JSName("waitFor")
-  def waitFor_deploymentSuccessful(state: deploymentSuccessful, params: DescribeDeploymentsRequest with AnonWaiter): Request[DescribeDeploymentsResult, AWSError] = js.native
+  def waitFor_deploymentSuccessful(state: deploymentSuccessful, params: DescribeDeploymentsReques): Request[DescribeDeploymentsResult, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_deploymentSuccessful(
     state: deploymentSuccessful,
-    params: DescribeDeploymentsRequest with AnonWaiter,
+    params: DescribeDeploymentsReques,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeDeploymentsResult, Unit]
   ): Request[DescribeDeploymentsResult, AWSError] = js.native
   /**
@@ -993,11 +995,11 @@ trait OpsWorks extends Service {
     * Waits for the instanceOnline state by periodically calling the underlying OpsWorks.describeInstancesoperation every 15 seconds (at most 40 times). Wait until OpsWorks instance is online.
     */
   @JSName("waitFor")
-  def waitFor_instanceOnline(state: instanceOnline, params: DescribeInstancesRequest with AnonWaiter): Request[DescribeInstancesResult, AWSError] = js.native
+  def waitFor_instanceOnline(state: instanceOnline, params: DescribeInstancesRequestwInstanceIds): Request[DescribeInstancesResult, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_instanceOnline(
     state: instanceOnline,
-    params: DescribeInstancesRequest with AnonWaiter,
+    params: DescribeInstancesRequestwInstanceIds,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeInstancesResult, Unit]
   ): Request[DescribeInstancesResult, AWSError] = js.native
   /**
@@ -1014,11 +1016,11 @@ trait OpsWorks extends Service {
     * Waits for the instanceRegistered state by periodically calling the underlying OpsWorks.describeInstancesoperation every 15 seconds (at most 40 times). Wait until OpsWorks instance is registered.
     */
   @JSName("waitFor")
-  def waitFor_instanceRegistered(state: instanceRegistered, params: DescribeInstancesRequest with AnonWaiter): Request[DescribeInstancesResult, AWSError] = js.native
+  def waitFor_instanceRegistered(state: instanceRegistered, params: DescribeInstancesRequestwInstanceIds): Request[DescribeInstancesResult, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_instanceRegistered(
     state: instanceRegistered,
-    params: DescribeInstancesRequest with AnonWaiter,
+    params: DescribeInstancesRequestwInstanceIds,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeInstancesResult, Unit]
   ): Request[DescribeInstancesResult, AWSError] = js.native
   /**
@@ -1035,11 +1037,11 @@ trait OpsWorks extends Service {
     * Waits for the instanceStopped state by periodically calling the underlying OpsWorks.describeInstancesoperation every 15 seconds (at most 40 times). Wait until OpsWorks instance is stopped.
     */
   @JSName("waitFor")
-  def waitFor_instanceStopped(state: instanceStopped, params: DescribeInstancesRequest with AnonWaiter): Request[DescribeInstancesResult, AWSError] = js.native
+  def waitFor_instanceStopped(state: instanceStopped, params: DescribeInstancesRequestwInstanceIds): Request[DescribeInstancesResult, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_instanceStopped(
     state: instanceStopped,
-    params: DescribeInstancesRequest with AnonWaiter,
+    params: DescribeInstancesRequestwInstanceIds,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeInstancesResult, Unit]
   ): Request[DescribeInstancesResult, AWSError] = js.native
   /**
@@ -1056,11 +1058,11 @@ trait OpsWorks extends Service {
     * Waits for the instanceTerminated state by periodically calling the underlying OpsWorks.describeInstancesoperation every 15 seconds (at most 40 times). Wait until OpsWorks instance is terminated.
     */
   @JSName("waitFor")
-  def waitFor_instanceTerminated(state: instanceTerminated, params: DescribeInstancesRequest with AnonWaiter): Request[DescribeInstancesResult, AWSError] = js.native
+  def waitFor_instanceTerminated(state: instanceTerminated, params: DescribeInstancesRequestwInstanceIds): Request[DescribeInstancesResult, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_instanceTerminated(
     state: instanceTerminated,
-    params: DescribeInstancesRequest with AnonWaiter,
+    params: DescribeInstancesRequestwInstanceIds,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeInstancesResult, Unit]
   ): Request[DescribeInstancesResult, AWSError] = js.native
 }

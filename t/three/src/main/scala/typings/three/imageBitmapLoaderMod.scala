@@ -1,8 +1,8 @@
 package typings.three
 
-import typings.std.ArrayBuffer
 import typings.std.ErrorEvent
 import typings.std.EventTarget
+import typings.std.ImageBitmap
 import typings.std.ProgressEvent
 import typings.three.loaderMod.Loader
 import typings.three.loadingManagerMod.LoadingManager
@@ -18,15 +18,15 @@ object imageBitmapLoaderMod extends js.Object {
     def this(manager: LoadingManager) = this()
     var options: js.UndefOr[js.Object] = js.native
     def load(url: String): js.Any = js.native
-    def load(url: String, onLoad: js.Function1[/* response */ String | ArrayBuffer, Unit]): js.Any = js.native
+    def load(url: String, onLoad: js.Function1[/* response */ ImageBitmap, Unit]): js.Any = js.native
     def load(
       url: String,
-      onLoad: js.Function1[/* response */ String | ArrayBuffer, Unit],
+      onLoad: js.Function1[/* response */ ImageBitmap, Unit],
       onProgress: js.Function1[/* request */ ProgressEvent[EventTarget], Unit]
     ): js.Any = js.native
     def load(
       url: String,
-      onLoad: js.Function1[/* response */ String | ArrayBuffer, Unit],
+      onLoad: js.Function1[/* response */ ImageBitmap, Unit],
       onProgress: js.Function1[/* request */ ProgressEvent[EventTarget], Unit],
       onError: js.Function1[/* event */ ErrorEvent, Unit]
     ): js.Any = js.native

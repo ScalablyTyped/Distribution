@@ -14,7 +14,7 @@ object mod extends js.Object {
   // ): Promise<ValueType>;
   // export = pTry;
   @JSName("default")
-  var default_Original: AnonArguments = js.native
+  var default_Original: AnonCall = js.native
   /**
   	Start a promise chain.
   	@param fn - The function to run to start the promise chain.

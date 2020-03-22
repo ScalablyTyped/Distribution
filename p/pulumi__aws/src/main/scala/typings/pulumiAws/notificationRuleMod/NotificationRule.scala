@@ -45,7 +45,7 @@ class NotificationRule protected () extends CustomResource {
     */
   val resource: Output_[String] = js.native
   /**
-    * The status of the notification rule. Possible balues are `ENABLED` and `DISABLED`, default is `ENABLED`.
+    * The status of the notification rule. Possible values are `ENABLED` and `DISABLED`, default is `ENABLED`.
     */
   val status: Output_[js.UndefOr[String]] = js.native
   /**

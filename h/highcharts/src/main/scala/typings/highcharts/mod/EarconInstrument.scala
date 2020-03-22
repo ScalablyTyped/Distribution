@@ -16,14 +16,14 @@ trait EarconInstrument extends js.Object {
   /**
     * The options to pass to Instrument.play.
     */
-  var playOptions: js.Object
+  var playOptions: typings.highcharts.sonificationMod.highchartsAugmentingMod.InstrumentPlayOptionsObject
 }
 
 object EarconInstrument {
   @scala.inline
   def apply(
     instrument: String | typings.highcharts.sonificationMod.highchartsAugmentingMod.Instrument,
-    playOptions: js.Object
+    playOptions: typings.highcharts.sonificationMod.highchartsAugmentingMod.InstrumentPlayOptionsObject
   ): EarconInstrument = {
     val __obj = js.Dynamic.literal(instrument = instrument.asInstanceOf[js.Any], playOptions = playOptions.asInstanceOf[js.Any])
   

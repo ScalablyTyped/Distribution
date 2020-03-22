@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 object mod extends js.Object {
   // TODO: Remove this for the next major release
   @JSName("default")
-  var default_Original: AnonCatch = js.native
+  var default_Original: AnonCall = js.native
   /**
   	Tap into a promise chain without affecting its value or state. Use this in a `.then()` method.
   	@param tapHandler - Any return value is ignored. Exceptions thrown in `tapHandler` are relayed back to the original promise chain. If `tapHandler` returns a `Promise`, it will be awaited before passing through the original value.

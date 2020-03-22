@@ -41,11 +41,11 @@ trait GoogleApiYouTubeVideoResource extends js.Object {
   /**
     * The snippet object contains basic details about the video, such as its title, description, and category.
     */
-  var snippet: AnonCategoryIdChannelId
+  var snippet: AnonTags
   /**
     * The statistics object contains statistics about the video.
     */
-  var statistics: AnonCommentCountDislikeCount
+  var statistics: AnonDislikeCount
   /**
     * The status object contains information about the videos uploading, processing, and privacy statuses.
     */
@@ -71,8 +71,8 @@ object GoogleApiYouTubeVideoResource {
     player: AnonEmbedHtml,
     processingDetails: AnonEditorSuggestionsAvailability,
     recordingDetails: AnonLocation,
-    snippet: AnonCategoryIdChannelId,
-    statistics: AnonCommentCountDislikeCount,
+    snippet: AnonTags,
+    statistics: AnonDislikeCount,
     status: AnonEmbeddable,
     suggestions: AnonEditorSuggestions,
     topicDetails: AnonTopicIds

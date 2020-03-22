@@ -1,6 +1,6 @@
 package typings.tempy
 
-import typings.typeFest.mod.MergeExclusive
+import typings.typeFest.mergeExclusiveMod.MergeExclusive
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object mod extends js.Object {
   /**
-  	Get the root temporary directory path. For example: `/private/var/folders/3x/jf5977fn79jbglr7rk0tq4d00000gn/T`.
+  	Get the root temporary directory path.
+  	For example: `/private/var/folders/3x/jf5977fn79jbglr7rk0tq4d00000gn/T`.
   	*/
   val root: String = js.native
   /**

@@ -16,7 +16,7 @@ object multiGridMod extends js.Object {
   /* static members */
   @js.native
   object MultiGrid extends js.Object {
-    var defaultProps: Anon = js.native
+    var defaultProps: AnonClassNameBottomRightGrid = js.native
     var propTypes: AnonClassNameBottomLeftGrid = js.native
     def getDerivedStateFromProps(nextProps: MultiGridProps, prevState: MultiGridState): MultiGridState | Null = js.native
   }

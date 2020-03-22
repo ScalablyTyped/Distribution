@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation._
 /** Properties of a KnowledgeOperationMetadata. */
 trait IKnowledgeOperationMetadata extends js.Object {
   /** KnowledgeOperationMetadata state */
-  var state: js.UndefOr[State | Null] = js.undefined
+  var state: js.UndefOr[State | String | Null] = js.undefined
 }
 
 object IKnowledgeOperationMetadata {
   @scala.inline
-  def apply(state: State = null): IKnowledgeOperationMetadata = {
+  def apply(state: State | String = null): IKnowledgeOperationMetadata = {
     val __obj = js.Dynamic.literal()
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[IKnowledgeOperationMetadata]

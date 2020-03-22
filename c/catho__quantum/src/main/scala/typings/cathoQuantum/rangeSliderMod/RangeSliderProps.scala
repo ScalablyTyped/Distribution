@@ -1,6 +1,6 @@
 package typings.cathoQuantum.rangeSliderMod
 
-import typings.cathoQuantum.AnonBaseFontSizeColorsSpacing
+import typings.cathoQuantum.AnonBaseFontSizeColors
 import typings.cathoQuantum.AnonFrom
 import typings.cathoQuantum.AnonLabelValue
 import typings.cathoQuantum.cathoQuantumBooleans.`false`
@@ -25,7 +25,7 @@ trait RangeSliderProps[T] extends js.Object {
   var onChange: js.UndefOr[ChangeEventHandler[T]] = js.undefined
   var onChangeCommitted: js.UndefOr[ChangeEventHandler[T]] = js.undefined
   var step: js.UndefOr[Double] = js.undefined
-  var theme: js.UndefOr[AnonBaseFontSizeColorsSpacing] = js.undefined
+  var theme: js.UndefOr[AnonBaseFontSizeColors] = js.undefined
   var tipFormatter: js.UndefOr[
     js.Function2[/* value */ js.UndefOr[Double], /* index */ js.UndefOr[Double], String]
   ] = js.undefined
@@ -46,7 +46,7 @@ object RangeSliderProps {
     onChange: ChangeEvent[T] => Unit = null,
     onChangeCommitted: ChangeEvent[T] => Unit = null,
     step: Int | Double = null,
-    theme: AnonBaseFontSizeColorsSpacing = null,
+    theme: AnonBaseFontSizeColors = null,
     tipFormatter: (/* value */ js.UndefOr[Double], /* index */ js.UndefOr[Double]) => String = null,
     track: normal | `false` | inverted = null,
     value: Double | AnonFrom = null,

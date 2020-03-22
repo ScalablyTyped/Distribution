@@ -1,7 +1,7 @@
 package typings.awsLambda.lexMod
 
-import typings.awsLambda.AnonApplicationvndamazonawscardgeneric
 import typings.awsLambda.AnonContent
+import typings.awsLambda.AnonContentType
 import typings.awsLambda.awsLambdaStrings.Close
 import typings.awsLambda.awsLambdaStrings.ConfirmIntent
 import typings.awsLambda.awsLambdaStrings.ElicitIntent
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 
 trait LexDialogActionBase extends js.Object {
   var message: js.UndefOr[AnonContent] = js.undefined
-  var responseCard: js.UndefOr[AnonApplicationvndamazonawscardgeneric] = js.undefined
+  var responseCard: js.UndefOr[AnonContentType] = js.undefined
   var `type`: Close | ElicitIntent | ElicitSlot | ConfirmIntent
 }
 
@@ -21,7 +21,7 @@ object LexDialogActionBase {
   def apply(
     `type`: Close | ElicitIntent | ElicitSlot | ConfirmIntent,
     message: AnonContent = null,
-    responseCard: AnonApplicationvndamazonawscardgeneric = null
+    responseCard: AnonContentType = null
   ): LexDialogActionBase = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

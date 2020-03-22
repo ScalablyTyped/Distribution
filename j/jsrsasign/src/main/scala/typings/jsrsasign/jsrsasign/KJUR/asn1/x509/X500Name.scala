@@ -1,9 +1,9 @@
 package typings.jsrsasign.jsrsasign.KJUR.asn1.x509
 
 import typings.jsrsasign.AnonCertissuer
-import typings.jsrsasign.AnonCertissuerCertsubject
+import typings.jsrsasign.StringParamcertissuerstri
+import typings.jsrsasign.X500NameParamcertissuerst
 import typings.jsrsasign.jsrsasign.KJUR.asn1.ASN1Object
-import typings.jsrsasign.jsrsasign.KJUR.asn1.StringParam
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -44,9 +44,9 @@ import scala.scalajs.js.annotation._
 @JSGlobal("jsrsasign.KJUR.asn1.x509.X500Name")
 @js.native
 class X500Name protected () extends ASN1Object {
-  def this(params: X500NameParam with AnonCertissuer) = this()
-  def this(params: StringParam with AnonCertissuer) = this()
-  def this(params: AnonCertissuerCertsubject) = this()
+  def this(params: AnonCertissuer) = this()
+  def this(params: StringParamcertissuerstri) = this()
+  def this(params: X500NameParamcertissuerst) = this()
   /**
     * set DN by LDAP(RFC 2253) distinguished name string
     * @param dnStr distinguished name by LDAP string (ex. O=aaa,C=US)

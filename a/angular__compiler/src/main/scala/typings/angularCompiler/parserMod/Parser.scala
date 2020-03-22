@@ -1,5 +1,6 @@
 package typings.angularCompiler.parserMod
 
+import org.scalablytyped.runtime.Instantiable0
 import typings.angularCompiler.astMod.ASTWithSource
 import typings.angularCompiler.interpolationConfigMod.InterpolationConfig
 import typings.angularCompiler.lexerMod.Lexer
@@ -19,7 +20,9 @@ class Parser protected () extends js.Object {
   var _parseQuote: js.Any = js.native
   var _reportError: js.Any = js.native
   var _stripComments: js.Any = js.native
+  var checkSimpleExpression: js.Any = js.native
   var errors: js.Any = js.native
+  var simpleExpressionChecker: Instantiable0[SimpleExpressionChecker] = js.native
   def parseAction(input: String, location: js.Any, absoluteOffset: Double): ASTWithSource = js.native
   def parseAction(input: String, location: js.Any, absoluteOffset: Double, interpolationConfig: InterpolationConfig): ASTWithSource = js.native
   def parseBinding(input: String, location: js.Any, absoluteOffset: Double): ASTWithSource = js.native

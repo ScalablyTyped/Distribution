@@ -5,6 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonAlt extends js.Object {
+  /** Account for which to list ad clients. */
+  var accountId: String
   /** Data format for the response. */
   var alt: js.UndefOr[String] = js.undefined
   /** Selector specifying which fields to include in a partial response. */
@@ -34,6 +36,7 @@ trait AnonAlt extends js.Object {
 object AnonAlt {
   @scala.inline
   def apply(
+    accountId: String,
     alt: String = null,
     fields: String = null,
     key: String = null,
@@ -44,7 +47,7 @@ object AnonAlt {
     quotaUser: String = null,
     userIp: String = null
   ): AnonAlt = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any])
     if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])

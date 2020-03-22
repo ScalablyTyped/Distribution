@@ -2,9 +2,10 @@ package typings.mithril.mod
 
 import typings.mithril.AnonParams
 import typings.mithril.AnonUrl
-import typings.mithril.FnComponent
-import typings.mithril.FnOptions
-import typings.mithril.FnOptionsUrl
+import typings.mithril.Fn0
+import typings.mithril.FnCallElementComponent
+import typings.mithril.FnCallUrlOptions
+import typings.mithril.JsonpOptionsurlstring
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,15 +14,15 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Static extends Hyperscript {
   @JSName("jsonp")
-  var jsonp_Original: FnOptionsUrl = js.native
+  var jsonp_Original: Fn0 = js.native
   @JSName("mount")
-  var mount_Original: FnComponent = js.native
+  var mount_Original: FnCallElementComponent = js.native
   @JSName("redraw")
   var redraw_Original: Redraw = js.native
   @JSName("render")
   var render_Original: js.Function2[/* el */ Element, /* vnodes */ Children, Unit] = js.native
   @JSName("request")
-  var request_Original: FnOptions = js.native
+  var request_Original: FnCallUrlOptions = js.native
   @JSName("route")
   var route_Original: Route = js.native
   /** Build path name */
@@ -29,7 +30,7 @@ trait Static extends Hyperscript {
   def buildPathname(template: String, params: Params): String = js.native
   /** Turns the key/value pairs of an object into a string of the form: a=1&b=2 */
   def buildQueryString(values: Params): String = js.native
-  def jsonp[T](options: JsonpOptions with AnonUrl): js.Promise[T] = js.native
+  def jsonp[T](options: JsonpOptionsurlstring): js.Promise[T] = js.native
   def jsonp[T](url: String): js.Promise[T] = js.native
   def jsonp[T](url: String, options: JsonpOptions): js.Promise[T] = js.native
   def mount(element: Element): Unit = js.native

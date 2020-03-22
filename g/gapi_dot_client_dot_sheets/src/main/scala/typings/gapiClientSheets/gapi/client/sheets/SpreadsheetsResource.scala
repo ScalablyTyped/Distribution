@@ -1,12 +1,12 @@
 package typings.gapiClientSheets.gapi.client.sheets
 
 import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientSheets.AnonAccesstokenAltCallback
-import typings.gapiClientSheets.AnonAccesstokenAltCallbackFieldsIncludeGridData
-import typings.gapiClientSheets.AnonAccesstokenAltCallbackFieldsKeyOauthtokenPrettyPrintQuotaUserResourceSpreadsheetIdUploadType
-import typings.gapiClientSheets.AnonAccesstokenAltCallbackFieldsKeyOauthtokenPrettyPrintQuotaUserResourceSpreadsheetIdUploadTypeUploadprotocol
-import typings.gapiClientSheets.AnonAccesstokenAltCallbackFieldsKeyOauthtokenPrettyPrintQuotaUserResourceUploadType
-import typings.gapiClientSheets.AnonAccesstokenAltCallbackFieldsKeyOauthtokenPrettyPrintQuotaUserUploadType
+import typings.gapiClientSheets.AnonAccesstokenAlt
+import typings.gapiClientSheets.AnonAltCallback
+import typings.gapiClientSheets.AnonCallback
+import typings.gapiClientSheets.AnonIncludeGridData
+import typings.gapiClientSheets.AnonUploadprotocol
+import typings.gapiClientSheets.AnonXgafv
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,6 +16,7 @@ trait SpreadsheetsResource extends js.Object {
   var developerMetadata: DeveloperMetadataResource = js.native
   var sheets: SheetsResource = js.native
   var values: ValuesResource = js.native
+  def batchUpdate(request: AnonCallback, body: BatchUpdateSpreadsheetRequest): Request_[BatchUpdateSpreadsheetResponse] = js.native
   /**
     * Applies one or more updates to the spreadsheet.
     *
@@ -37,16 +38,10 @@ trait SpreadsheetsResource extends js.Object {
     * collaborator changes. If there are no collaborators, the spreadsheet
     * should reflect your changes.
     */
-  def batchUpdate(
-    request: AnonAccesstokenAltCallbackFieldsKeyOauthtokenPrettyPrintQuotaUserResourceSpreadsheetIdUploadType
-  ): Request_[BatchUpdateSpreadsheetResponse] = js.native
-  def batchUpdate(request: AnonAccesstokenAltCallback, body: BatchUpdateSpreadsheetRequest): Request_[BatchUpdateSpreadsheetResponse] = js.native
+  def batchUpdate(request: AnonUploadprotocol): Request_[BatchUpdateSpreadsheetResponse] = js.native
+  def create(request: AnonAccesstokenAlt, body: Spreadsheet): Request_[Spreadsheet] = js.native
   /** Creates a spreadsheet, returning the newly created spreadsheet. */
-  def create(request: AnonAccesstokenAltCallbackFieldsKeyOauthtokenPrettyPrintQuotaUserResourceUploadType): Request_[Spreadsheet] = js.native
-  def create(
-    request: AnonAccesstokenAltCallbackFieldsKeyOauthtokenPrettyPrintQuotaUserUploadType,
-    body: Spreadsheet
-  ): Request_[Spreadsheet] = js.native
+  def create(request: AnonXgafv): Request_[Spreadsheet] = js.native
   /**
     * Returns the spreadsheet at the given ID.
     * The caller must specify the spreadsheet ID.
@@ -70,7 +65,7 @@ trait SpreadsheetsResource extends js.Object {
     * return only the portions of the spreadsheet that intersect the requested
     * ranges. Ranges are specified using A1 notation.
     */
-  def get(request: AnonAccesstokenAltCallbackFieldsIncludeGridData): Request_[Spreadsheet] = js.native
+  def get(request: AnonIncludeGridData): Request_[Spreadsheet] = js.native
   /**
     * Returns the spreadsheet at the given ID.
     * The caller must specify the spreadsheet ID.
@@ -95,9 +90,7 @@ trait SpreadsheetsResource extends js.Object {
     * For large spreadsheets, it is recommended to retrieve only the specific
     * fields of the spreadsheet that you want.
     */
-  def getByDataFilter(
-    request: AnonAccesstokenAltCallbackFieldsKeyOauthtokenPrettyPrintQuotaUserResourceSpreadsheetIdUploadTypeUploadprotocol
-  ): Request_[Spreadsheet] = js.native
-  def getByDataFilter(request: AnonAccesstokenAltCallback, body: GetSpreadsheetByDataFilterRequest): Request_[Spreadsheet] = js.native
+  def getByDataFilter(request: AnonAltCallback): Request_[Spreadsheet] = js.native
+  def getByDataFilter(request: AnonCallback, body: GetSpreadsheetByDataFilterRequest): Request_[Spreadsheet] = js.native
 }
 

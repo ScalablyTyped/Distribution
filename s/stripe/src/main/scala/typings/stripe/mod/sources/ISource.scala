@@ -1,10 +1,10 @@
 package typings.stripe.mod.sources
 
-import typings.stripe.AnonAccountnumberBankname
-import typings.stripe.AnonAddressAmountcharged
-import typings.stripe.AnonAddressEmailName
+import typings.stripe.AnonAmountcharged
 import typings.stripe.AnonAttemptsremaining
-import typings.stripe.AnonDeclined
+import typings.stripe.AnonBankname
+import typings.stripe.AnonFailurereason
+import typings.stripe.AnonPhone
 import typings.stripe.mod.ICardHashInfo
 import typings.stripe.mod.IMetadata
 import typings.stripe.mod.IResourceObject
@@ -44,7 +44,7 @@ import scala.scalajs.js.annotation._
 trait ISource
   extends IResourceObject
      with IStripeSource {
-  var ach_credit_transfer: js.UndefOr[AnonAccountnumberBankname] = js.undefined
+  var ach_credit_transfer: js.UndefOr[AnonBankname] = js.undefined
   var amount: js.UndefOr[Double | Null] = js.undefined
   var card: js.UndefOr[ICardHashInfo] = js.undefined
   var client_secret: String
@@ -57,9 +57,9 @@ trait ISource
   var metadata: IMetadata
   @JSName("object")
   var object_ISource: source
-  var owner: AnonAddressEmailName
-  var receiver: js.UndefOr[AnonAddressAmountcharged] = js.undefined
-  var redirect: js.UndefOr[AnonDeclined] = js.undefined
+  var owner: AnonPhone
+  var receiver: js.UndefOr[AnonAmountcharged] = js.undefined
+  var redirect: js.UndefOr[AnonFailurereason] = js.undefined
   var statement_descriptor: js.UndefOr[String | Null] = js.undefined
   var status: canceled | chargeable | consumed | failed | pending
   var `type`: ach_credit_transfer | ach_debit | alipay | bancontact | card | card_present | eps | giropay | ideal | multibanco | p24 | sepa_debit | sofort | three_d_secure | wechat
@@ -76,18 +76,18 @@ object ISource {
     livemode: Boolean,
     metadata: IMetadata,
     `object`: source,
-    owner: AnonAddressEmailName,
+    owner: AnonPhone,
     status: canceled | chargeable | consumed | failed | pending,
     `type`: ach_credit_transfer | ach_debit | alipay | bancontact | card | card_present | eps | giropay | ideal | multibanco | p24 | sepa_debit | sofort | three_d_secure | wechat,
     usage: reusable | single_use,
-    ach_credit_transfer: AnonAccountnumberBankname = null,
+    ach_credit_transfer: AnonBankname = null,
     amount: Int | Double = null,
     card: ICardHashInfo = null,
     code_verification: AnonAttemptsremaining = null,
     currency: String = null,
     customer: String = null,
-    receiver: AnonAddressAmountcharged = null,
-    redirect: AnonDeclined = null,
+    receiver: AnonAmountcharged = null,
+    redirect: AnonFailurereason = null,
     statement_descriptor: String = null
   ): ISource = {
     val __obj = js.Dynamic.literal(client_secret = client_secret.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], flow = flow.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], usage = usage.asInstanceOf[js.Any])

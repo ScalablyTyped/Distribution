@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "npm-run-path" : "3.1.0"
+      "npm-run-path" : "4.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "npm-run-path" : "3.1.0"
+      "npm-run-path" : "4.0.1"
     }
   ],
   "compile-devDependencies" : [

@@ -1,8 +1,8 @@
 package typings.overlayscrollbars.mod
 
 import typings.overlayscrollbars.AnonI
-import typings.overlayscrollbars.AnonXYBoolean
-import typings.overlayscrollbars.AnonXYNumber
+import typings.overlayscrollbars.AnonXBoolean
+import typings.overlayscrollbars.AnonXNumber
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,10 +11,10 @@ trait Globals extends js.Object {
   var autoUpdateLoop: Boolean
   var autoUpdateRecommended: Boolean
   var cssCalc: String | Null
-  var nativeScrollbarIsOverlaid: AnonXYBoolean
-  var nativeScrollbarSize: AnonXYNumber
+  var nativeScrollbarIsOverlaid: AnonXBoolean
+  var nativeScrollbarSize: AnonXNumber
   var nativeScrollbarStyling: Boolean
-  var overlayScrollbarDummySize: AnonXYNumber
+  var overlayScrollbarDummySize: AnonXNumber
   var restrictedMeasuring: Boolean
   var rtlScrollBehavior: AnonI
   var supportMutationObserver: Boolean
@@ -29,10 +29,10 @@ object Globals {
   def apply(
     autoUpdateLoop: Boolean,
     autoUpdateRecommended: Boolean,
-    nativeScrollbarIsOverlaid: AnonXYBoolean,
-    nativeScrollbarSize: AnonXYNumber,
+    nativeScrollbarIsOverlaid: AnonXBoolean,
+    nativeScrollbarSize: AnonXNumber,
     nativeScrollbarStyling: Boolean,
-    overlayScrollbarDummySize: AnonXYNumber,
+    overlayScrollbarDummySize: AnonXNumber,
     restrictedMeasuring: Boolean,
     rtlScrollBehavior: AnonI,
     supportMutationObserver: Boolean,

@@ -2,10 +2,9 @@ package typings.rotJs.mod
 
 import org.scalablytyped.runtime.Instantiable4
 import org.scalablytyped.runtime.TopLevel
+import typings.rotJs.PartialOptions
 import typings.rotJs.astarMod.default
-import typings.rotJs.pathPathMod.Options
 import typings.rotJs.pathPathMod.PassableCallback
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,13 +15,13 @@ object Path extends js.Object {
   @js.native
   class AStar protected () extends default {
     def this(toX: Double, toY: Double, passableCallback: PassableCallback) = this()
-    def this(toX: Double, toY: Double, passableCallback: PassableCallback, options: Partial[Options]) = this()
+    def this(toX: Double, toY: Double, passableCallback: PassableCallback, options: PartialOptions) = this()
   }
   
   @js.native
   class Dijkstra protected ()
     extends typings.rotJs.dijkstraMod.default {
-    def this(toX: Double, toY: Double, passableCallback: PassableCallback, options: Partial[Options]) = this()
+    def this(toX: Double, toY: Double, passableCallback: PassableCallback, options: PartialOptions) = this()
   }
   
   @js.native
@@ -32,7 +31,7 @@ object Path extends js.Object {
             /* toX */ Double, 
             /* toY */ Double, 
             /* passableCallback */ PassableCallback, 
-            js.UndefOr[/* options */ Partial[Options]], 
+            js.UndefOr[/* options */ PartialOptions], 
             default
           ]
         ]
@@ -44,7 +43,7 @@ object Path extends js.Object {
             /* toX */ Double, 
             /* toY */ Double, 
             /* passableCallback */ PassableCallback, 
-            /* options */ Partial[Options], 
+            /* options */ PartialOptions, 
             typings.rotJs.dijkstraMod.default
           ]
         ]

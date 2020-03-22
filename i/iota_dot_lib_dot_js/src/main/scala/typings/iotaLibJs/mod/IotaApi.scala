@@ -3,13 +3,13 @@ package typings.iotaLibJs.mod
 import typings.iotaLibJs.AnonAddress
 import typings.iotaLibJs.AnonAddressInputs
 import typings.iotaLibJs.AnonAddresses
-import typings.iotaLibJs.AnonAddressesBalance
+import typings.iotaLibJs.AnonBalance
 import typings.iotaLibJs.AnonChecksum
 import typings.iotaLibJs.AnonEnd
-import typings.iotaLibJs.AnonEndInclusionStates
-import typings.iotaLibJs.AnonEndSecurity
+import typings.iotaLibJs.AnonInclusionStates
 import typings.iotaLibJs.AnonInputs
 import typings.iotaLibJs.AnonInputsArray
+import typings.iotaLibJs.AnonSecurity
 import typings.iotaLibJs.AnonTrytes
 import typings.std.Error
 import scala.scalajs.js
@@ -34,11 +34,11 @@ trait IotaApi extends IriApi {
     callback: js.Function2[/* error */ Error, /* transactions */ js.Array[TransactionObject], Unit]
   ): Unit = js.native
   def getAccountData(seed: String): Unit = js.native
-  def getAccountData(seed: String, options: AnonEndSecurity): Unit = js.native
+  def getAccountData(seed: String, options: AnonSecurity): Unit = js.native
   def getAccountData(
     seed: String,
-    options: AnonEndSecurity,
-    callback: js.Function2[/* error */ Error, /* response */ AnonAddressesBalance, Unit]
+    options: AnonSecurity,
+    callback: js.Function2[/* error */ Error, /* response */ AnonBalance, Unit]
   ): Unit = js.native
   def getBundle(transactionHash: String): Unit = js.native
   def getBundle(
@@ -70,10 +70,10 @@ trait IotaApi extends IriApi {
     callback: js.Function2[/* error */ Error, /* transactions */ js.Array[TransactionObject], Unit]
   ): Unit = js.native
   def getTransfers(seed: String): Unit = js.native
-  def getTransfers(seed: String, options: AnonEndInclusionStates): Unit = js.native
+  def getTransfers(seed: String, options: AnonInclusionStates): Unit = js.native
   def getTransfers(
     seed: String,
-    options: AnonEndInclusionStates,
+    options: AnonInclusionStates,
     callback: js.Function2[/* error */ Error, /* transfers */ js.Array[js.Array[TransactionObject]], Unit]
   ): Unit = js.native
   def isReattachable(address: String): Unit = js.native

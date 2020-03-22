@@ -1,6 +1,6 @@
 package typings.dateFns.mod
 
-import typings.dateFns.Anon0123
+import typings.dateFns.AnonFirstWeekContainsDate
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object format extends js.Object {
   def apply(date: Double, format: String): String = js.native
-  def apply(date: Double, format: String, options: Anon0123): String = js.native
+  def apply(date: Double, format: String, options: AnonFirstWeekContainsDate): String = js.native
   def apply(date: Date, format: String): String = js.native
-  def apply(date: Date, format: String, options: Anon0123): String = js.native
+  def apply(date: Date, format: String, options: AnonFirstWeekContainsDate): String = js.native
 }
 

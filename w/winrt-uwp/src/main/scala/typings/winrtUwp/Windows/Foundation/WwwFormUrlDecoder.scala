@@ -2,7 +2,7 @@ package typings.winrtUwp.Windows.Foundation
 
 import typings.std.Array
 import typings.winrtUwp.AnonIndex
-import typings.winrtUwp.AnonItemsReturnValue
+import typings.winrtUwp.AnonReturnValue
 import typings.winrtUwp.Windows.Foundation.Collections.IIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -40,7 +40,7 @@ class WwwFormUrlDecoder protected () extends Array[IWwwFormUrlDecoderEntry] {
     * Gets name-value pairs starting at the specified index in the current URL query string.
     * @param startIndex The index to start getting name-value pairs at.
     */
-  def getMany(startIndex: Double): AnonItemsReturnValue = js.native
+  def getMany(startIndex: Double): AnonReturnValue = js.native
   def indexOf(value: IWwwFormUrlDecoderEntry, extra: js.Any*): AnonIndex = js.native
   /* hack */
   @JSName("indexOf")

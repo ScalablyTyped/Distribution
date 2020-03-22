@@ -1,9 +1,9 @@
 package typings.oracleOraclejet.ojmodelMod
 
-import typings.oracleOraclejet.AnonAttributesData
 import typings.oracleOraclejet.AnonAttrs
-import typings.oracleOraclejet.AnonErrorModel
-import typings.oracleOraclejet.AnonErrorModelOptions
+import typings.oracleOraclejet.AnonDictpropNameError
+import typings.oracleOraclejet.AnonInitialize
+import typings.oracleOraclejet.AnonWait
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,9 +32,9 @@ class Model () extends js.Object {
   def clear(): Model | Boolean = js.native
   def clear(options: js.Object): Model | Boolean = js.native
   def destroy(): Boolean = js.native
-  def destroy(options: AnonErrorModel): Boolean = js.native
+  def destroy(options: AnonWait): Boolean = js.native
   def fetch(): js.Object = js.native
-  def fetch(options: AnonErrorModelOptions): js.Object = js.native
+  def fetch(options: AnonDictpropNameError): js.Object = js.native
   def get(property: String): js.Object = js.native
   def has(property: String): Boolean = js.native
   def hasChanged(): Boolean = js.native
@@ -128,7 +128,7 @@ class Model () extends js.Object {
 @js.native
 object Model extends js.Object {
   def extend(): js.Any = js.native
-  def extend(properties: AnonAttributesData): js.Any = js.native
-  def extend(properties: AnonAttributesData, classProperties: js.Object): js.Any = js.native
+  def extend(properties: AnonInitialize): js.Any = js.native
+  def extend(properties: AnonInitialize, classProperties: js.Object): js.Any = js.native
 }
 

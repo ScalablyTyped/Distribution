@@ -1,6 +1,6 @@
 package typings.awsSdkClientS3Browser.s3ConfigurationMod
 
-import typings.awsSdkClientS3Browser.AnonHash
+import typings.awsSdkClientS3Browser.AnonInstantiable
 import typings.awsSdkTypes.credentialsMod.Credentials
 import typings.awsSdkTypes.cryptoMod.HashConstructor
 import typings.awsSdkTypes.cryptoMod.StreamHasher
@@ -81,7 +81,7 @@ trait S3Configuration extends js.Object {
   /**
     * A constructor for a class implementing the @aws-sdk/types.Hash interface that computes the MD5 checksum of a string or binary buffer
     */
-  var md5: js.UndefOr[AnonHash] = js.undefined
+  var md5: js.UndefOr[AnonInstantiable] = js.undefined
   /**
     * The configuration profile to use.
     */
@@ -157,7 +157,7 @@ object S3Configuration {
     httpHandler: HttpHandler[Blob, HttpOptions] = null,
     maxRedirects: Int | Double = null,
     maxRetries: Int | Double = null,
-    md5: AnonHash = null,
+    md5: AnonInstantiable = null,
     profile: String = null,
     retryDecider: /* error */ SdkError => Boolean = null,
     sha256: HashConstructor = null,
@@ -165,7 +165,7 @@ object S3Configuration {
     signingName: String = null,
     sslEnabled: js.UndefOr[Boolean] = js.undefined,
     streamCollector: Blob => js.Promise[Uint8Array] = null,
-    streamHasher: (/* hashCtor */ typings.awsSdkTypes.AnonHash, Blob) => js.Promise[Uint8Array] = null,
+    streamHasher: (/* hashCtor */ typings.awsSdkTypes.AnonInstantiable, Blob) => js.Promise[Uint8Array] = null,
     urlParser: /* url */ String => HttpEndpoint = null,
     useAccelerateEndpoint: js.UndefOr[Boolean] = js.undefined,
     useDualstackEndpoint: js.UndefOr[Boolean] = js.undefined,

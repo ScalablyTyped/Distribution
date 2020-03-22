@@ -9,7 +9,7 @@ trait EvaluationResultQualifier extends js.Object {
   /**
     * The name of the AWS Config rule that was used in the evaluation.
     */
-  var ConfigRuleName: js.UndefOr[StringWithCharLimit64] = js.native
+  var ConfigRuleName: js.UndefOr[typings.awsSdk.configserviceMod.ConfigRuleName] = js.native
   /**
     * The ID of the evaluated AWS resource.
     */
@@ -23,7 +23,7 @@ trait EvaluationResultQualifier extends js.Object {
 object EvaluationResultQualifier {
   @scala.inline
   def apply(
-    ConfigRuleName: StringWithCharLimit64 = null,
+    ConfigRuleName: ConfigRuleName = null,
     ResourceId: BaseResourceId = null,
     ResourceType: StringWithCharLimit256 = null
   ): EvaluationResultQualifier = {

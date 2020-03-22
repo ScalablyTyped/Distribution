@@ -69,6 +69,9 @@ object jupyterlabMainmenuExtensionStrings {
   sealed trait `mainmenuColonopen-first` extends js.Object
   
   @js.native
+  sealed trait `notebookColonrestart-and-run-to-selected` extends js.Object
+  
+  @js.native
   sealed trait runmenuColonopen extends js.Object
   
   @js.native
@@ -152,6 +155,8 @@ object jupyterlabMainmenuExtensionStrings {
   def kernelmenuColonshutdownAll: kernelmenuColonshutdownAll = "kernelmenu:shutdownAll".asInstanceOf[kernelmenuColonshutdownAll]
   @scala.inline
   def `mainmenuColonopen-first`: `mainmenuColonopen-first` = "mainmenu:open-first".asInstanceOf[`mainmenuColonopen-first`]
+  @scala.inline
+  def `notebookColonrestart-and-run-to-selected`: `notebookColonrestart-and-run-to-selected` = "notebook:restart-and-run-to-selected".asInstanceOf[`notebookColonrestart-and-run-to-selected`]
   @scala.inline
   def runmenuColonopen: runmenuColonopen = "runmenu:open".asInstanceOf[runmenuColonopen]
   @scala.inline

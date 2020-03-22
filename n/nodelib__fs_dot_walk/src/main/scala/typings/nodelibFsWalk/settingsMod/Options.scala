@@ -1,9 +1,8 @@
 package typings.nodelibFsWalk.settingsMod
 
-import typings.nodelibFsScandir.fsMod.FileSystemAdapter
+import typings.nodelibFsWalk.PartialFileSystemAdapter
 import typings.nodelibFsWalk.typesMod.Entry
 import typings.nodelibFsWalk.typesMod.Errno
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +14,7 @@ trait Options extends js.Object {
   var entryFilter: js.UndefOr[EntryFilterFunction] = js.undefined
   var errorFilter: js.UndefOr[ErrorFilterFunction] = js.undefined
   var followSymbolicLinks: js.UndefOr[Boolean] = js.undefined
-  var fs: js.UndefOr[Partial[FileSystemAdapter]] = js.undefined
+  var fs: js.UndefOr[PartialFileSystemAdapter] = js.undefined
   var pathSegmentSeparator: js.UndefOr[String] = js.undefined
   var stats: js.UndefOr[Boolean] = js.undefined
   var throwErrorOnBrokenSymbolicLink: js.UndefOr[Boolean] = js.undefined
@@ -30,7 +29,7 @@ object Options {
     entryFilter: Entry => Boolean = null,
     errorFilter: Errno => Boolean = null,
     followSymbolicLinks: js.UndefOr[Boolean] = js.undefined,
-    fs: Partial[FileSystemAdapter] = null,
+    fs: PartialFileSystemAdapter = null,
     pathSegmentSeparator: String = null,
     stats: js.UndefOr[Boolean] = js.undefined,
     throwErrorOnBrokenSymbolicLink: js.UndefOr[Boolean] = js.undefined

@@ -1032,6 +1032,19 @@ trait ConfigService extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ PutRetentionConfigurationResponse, Unit]
   ): Request[PutRetentionConfigurationResponse, AWSError] = js.native
   /**
+    * Accepts a structured query language (SQL) SELECT command and an aggregator to query configuration state of AWS resources across multiple accounts and regions, performs the corresponding search, and returns resource configurations matching the properties. For more information about query components, see the  Query Components  section in the AWS Config Developer Guide.
+    */
+  def selectAggregateResourceConfig(): Request[SelectAggregateResourceConfigResponse, AWSError] = js.native
+  def selectAggregateResourceConfig(callback: js.Function2[/* err */ AWSError, /* data */ SelectAggregateResourceConfigResponse, Unit]): Request[SelectAggregateResourceConfigResponse, AWSError] = js.native
+  /**
+    * Accepts a structured query language (SQL) SELECT command and an aggregator to query configuration state of AWS resources across multiple accounts and regions, performs the corresponding search, and returns resource configurations matching the properties. For more information about query components, see the  Query Components  section in the AWS Config Developer Guide.
+    */
+  def selectAggregateResourceConfig(params: SelectAggregateResourceConfigRequest): Request[SelectAggregateResourceConfigResponse, AWSError] = js.native
+  def selectAggregateResourceConfig(
+    params: SelectAggregateResourceConfigRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ SelectAggregateResourceConfigResponse, Unit]
+  ): Request[SelectAggregateResourceConfigResponse, AWSError] = js.native
+  /**
     * Accepts a structured query language (SQL) SELECT command, performs the corresponding search, and returns resource configurations matching the properties. For more information about query components, see the  Query Components  section in the AWS Config Developer Guide.
     */
   def selectResourceConfig(): Request[SelectResourceConfigResponse, AWSError] = js.native

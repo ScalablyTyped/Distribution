@@ -1,10 +1,10 @@
 package typings.materializeCss.M
 
 import typings.materializeCss.MElements
+import typings.materializeCss.PartialDatepickerOptions
 import typings.std.Date
 import typings.std.Element
 import typings.std.HTMLButtonElement
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -62,11 +62,11 @@ object Datepicker extends js.Object {
     * Init Datepickers
     */
   def init(els: MElements): js.Array[Datepicker] = js.native
-  def init(els: MElements, options: Partial[DatepickerOptions]): js.Array[Datepicker] = js.native
+  def init(els: MElements, options: PartialDatepickerOptions): js.Array[Datepicker] = js.native
   /**
     * Init Datepicker
     */
   def init(els: Element): Datepicker = js.native
-  def init(els: Element, options: Partial[DatepickerOptions]): Datepicker = js.native
+  def init(els: Element, options: PartialDatepickerOptions): Datepicker = js.native
 }
 

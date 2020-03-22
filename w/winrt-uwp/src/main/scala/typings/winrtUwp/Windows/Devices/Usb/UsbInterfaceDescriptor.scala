@@ -1,6 +1,6 @@
 package typings.winrtUwp.Windows.Devices.Usb
 
-import typings.winrtUwp.AnonParsedReturnValueBoolean
+import typings.winrtUwp.AnonParsedUsbInterfaceDescriptor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,6 +35,6 @@ object UsbInterfaceDescriptor extends js.Object {
     * Retrieves information about the alternate setting in a UsbInterfaceDescriptor object that is contained in a UsbDescriptor object.
     * @param descriptor The UsbDescriptor object to parse.
     */
-  def tryParse(descriptor: UsbDescriptor): AnonParsedReturnValueBoolean = js.native
+  def tryParse(descriptor: UsbDescriptor): AnonParsedUsbInterfaceDescriptor = js.native
 }
 

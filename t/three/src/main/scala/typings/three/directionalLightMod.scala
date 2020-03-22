@@ -4,6 +4,7 @@ import typings.three.colorMod.Color
 import typings.three.directionalLightShadowMod.DirectionalLightShadow
 import typings.three.lightMod.Light
 import typings.three.object3DMod.Object3D
+import typings.three.threeBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,6 +20,7 @@ object directionalLightMod extends js.Object {
     def this(color: String, intensity: Double) = this()
     def this(color: Double, intensity: Double) = this()
     def this(color: Color, intensity: Double) = this()
+    val isDirectionalLight: `true` = js.native
     @JSName("shadow")
     var shadow_DirectionalLight: DirectionalLightShadow = js.native
     /**

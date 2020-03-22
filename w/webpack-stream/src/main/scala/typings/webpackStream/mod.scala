@@ -19,7 +19,7 @@ object mod extends js.Object {
     */
   def apply(): ReadWriteStream = js.native
   def apply(config: Configuration): ReadWriteStream = js.native
-  def apply(config: Configuration, wp: AnonBannerPlugin): ReadWriteStream = js.native
-  def apply(config: Configuration, wp: AnonBannerPlugin, callback: Handler): ReadWriteStream = js.native
+  def apply(config: Configuration, wp: AnonCall): ReadWriteStream = js.native
+  def apply(config: Configuration, wp: AnonCall, callback: Handler): ReadWriteStream = js.native
 }
 

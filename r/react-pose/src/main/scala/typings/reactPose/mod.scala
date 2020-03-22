@@ -3,7 +3,6 @@ package typings.reactPose
 import typings.reactPose.posedMod.Posed
 import typings.reactPose.transitionTypesMod.Props
 import typings.reactPose.transitionTypesMod.State
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,7 +29,7 @@ object mod extends js.Object {
   @js.native
   object Transition extends js.Object {
     var defaultProps: AnonEnterAfterExit = js.native
-    def getDerivedStateFromProps(props: Props, state: State): Partial[State] = js.native
+    def getDerivedStateFromProps(props: Props, state: State): PartialState = js.native
   }
   
 }

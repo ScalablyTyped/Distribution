@@ -4,9 +4,9 @@ import typings.typedoc.abstractMod.ReflectionKind
 import typings.typedoc.commentsMod.Comment
 import typings.typedoc.contextMod.Context
 import typings.typedoc.modelsMod.DeclarationReflection
+import typings.typedoc.modelsMod.ReferenceType
 import typings.typedoc.modelsMod.SignatureReflection
 import typings.typedoc.modelsMod.TypeParameterType
-import typings.typedoc.modelsTypesMod.ReferenceType
 import typings.typedoc.reflectionsMod.ParameterReflection
 import typings.typescript.mod.Declaration
 import typings.typescript.mod.Node

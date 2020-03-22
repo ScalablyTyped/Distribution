@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/angular", "ActionSheetController")
 @js.native
 class ActionSheetController ()
-  extends typings.ionicAngular.distMod.ActionSheetController
+  extends typings.ionicAngular.actionSheetControllerMod.ActionSheetController
 

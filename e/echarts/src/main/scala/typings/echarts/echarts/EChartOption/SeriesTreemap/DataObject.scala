@@ -1,9 +1,9 @@
 package typings.echarts.echarts.EChartOption.SeriesTreemap
 
-import typings.echarts.AnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEllipsis
-import typings.echarts.AnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEllipsisFontFamily
-import typings.echarts.AnonBorderColorBorderColorSaturation
-import typings.echarts.AnonItemStyleLabelUpperLabel
+import typings.echarts.AnonBorderColorSaturation
+import typings.echarts.AnonEllipsis
+import typings.echarts.AnonTextShadowOffsetX
+import typings.echarts.AnonUpperLabel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -202,7 +202,7 @@ trait DataObject extends js.Object {
   /**
     * @see https://echarts.apache.org/en/option.html#series-treemap.data.emphasis
     */
-  var emphasis: js.UndefOr[AnonItemStyleLabelUpperLabel] = js.undefined
+  var emphasis: js.UndefOr[AnonUpperLabel] = js.undefined
   /**
     * `id` is not mandatory.
     * But if using API, id is used to locate node.
@@ -232,7 +232,7 @@ trait DataObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.data.itemStyle
     */
-  var itemStyle: js.UndefOr[AnonBorderColorBorderColorSaturation] = js.undefined
+  var itemStyle: js.UndefOr[AnonBorderColorSaturation] = js.undefined
   /**
     * `label` decribes the style of the label in each node.
     *
@@ -255,7 +255,7 @@ trait DataObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.data.label
     */
-  var label: js.UndefOr[AnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEllipsis] = js.undefined
+  var label: js.UndefOr[AnonEllipsis] = js.undefined
   /**
     * Show the description text in rectangle.
     *
@@ -309,9 +309,7 @@ trait DataObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.data.upperLabel
     */
-  var upperLabel: js.UndefOr[
-    AnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEllipsisFontFamily
-  ] = js.undefined
+  var upperLabel: js.UndefOr[AnonTextShadowOffsetX] = js.undefined
   /**
     * The value of this node, indicating the area size.
     *
@@ -432,12 +430,12 @@ object DataObject {
     colorAlpha: js.Array[_] = null,
     colorMappingBy: String = null,
     colorSaturation: Int | Double = null,
-    emphasis: AnonItemStyleLabelUpperLabel = null,
+    emphasis: AnonUpperLabel = null,
     id: String = null,
-    itemStyle: AnonBorderColorBorderColorSaturation = null,
-    label: AnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEllipsis = null,
+    itemStyle: AnonBorderColorSaturation = null,
+    label: AnonEllipsis = null,
     name: String = null,
-    upperLabel: AnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEllipsisFontFamily = null,
+    upperLabel: AnonTextShadowOffsetX = null,
     value: js.Array[_] | Double = null,
     visibleMin: Int | Double = null,
     visualDimension: Int | Double = null,

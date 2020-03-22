@@ -1,7 +1,7 @@
 package typings.googleapis.v3Mod.analyticsV3
 
 import typings.googleapis.AnonHref
-import typings.googleapis.AnonNameStatus
+import typings.googleapis.AnonStatus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -162,7 +162,7 @@ trait SchemaExperiment extends js.Object {
     * RUNNING state. At least two variations are required before status can be
     * set to RUNNING.
     */
-  var variations: js.UndefOr[js.Array[AnonNameStatus]] = js.native
+  var variations: js.UndefOr[js.Array[AnonStatus]] = js.native
   /**
     * Web property ID to which this experiment belongs. The web property ID is
     * of the form UA-XXXXX-YY. This field is read-only.
@@ -208,7 +208,7 @@ object SchemaExperiment {
     status: String = null,
     trafficCoverage: Int | Double = null,
     updated: String = null,
-    variations: js.Array[AnonNameStatus] = null,
+    variations: js.Array[AnonStatus] = null,
     webPropertyId: String = null,
     winnerConfidenceLevel: Int | Double = null,
     winnerFound: js.UndefOr[Boolean] = js.undefined

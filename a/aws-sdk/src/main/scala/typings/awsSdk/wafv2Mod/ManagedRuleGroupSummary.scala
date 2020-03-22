@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ManagedRuleGroupSummary extends js.Object {
   /**
-    * The description of the managed rule group, provided by AWS or the AWS Marketplace seller who manages it.
+    * The description of the managed rule group, provided by AWS Managed Rules or the AWS Marketplace seller who manages it.
     */
   var Description: js.UndefOr[EntityDescription] = js.native
   /**

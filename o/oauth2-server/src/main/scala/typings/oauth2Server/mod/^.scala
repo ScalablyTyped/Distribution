@@ -1,6 +1,6 @@
 package typings.oauth2Server.mod
 
-import typings.oauth2Server.TypeofClassOAuth2Server
+import typings.oauth2Server.TypeofOAuth2Server
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,6 +20,6 @@ class ^ protected () extends OAuth2Server {
 @JSImport("oauth2-server", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  var OAuth2Server: TypeofClassOAuth2Server = js.native
+  var OAuth2Server: TypeofOAuth2Server = js.native
 }
 

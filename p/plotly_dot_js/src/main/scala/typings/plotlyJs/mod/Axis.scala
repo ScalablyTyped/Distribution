@@ -1,5 +1,6 @@
 package typings.plotlyJs.mod
 
+import typings.plotlyJs.PartialFont
 import typings.plotlyJs.plotlyJsBooleans.`false`
 import typings.plotlyJs.plotlyJsBooleans.`true`
 import typings.plotlyJs.plotlyJsStrings.B
@@ -26,7 +27,6 @@ import typings.plotlyJs.plotlyJsStrings.reversed
 import typings.plotlyJs.plotlyJsStrings.ticks
 import typings.plotlyJs.plotlyJsStrings.tozero
 import typings.plotlyJs.plotlyJsStrings.trace
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -61,7 +61,7 @@ trait Axis extends js.Object {
   var tick0: Double | String
   var tickangle: Double
   var tickcolor: Color
-  var tickfont: Partial[Font]
+  var tickfont: PartialFont
   var tickformat: String
   var ticklen: Double
   var tickmode: auto | linear | array
@@ -72,7 +72,7 @@ trait Axis extends js.Object {
   var tickvals: js.Array[_]
   var tickwidth: Double
   var title: String
-  var titlefont: Partial[Font]
+  var titlefont: PartialFont
   var `type`: AxisType
   var visible: Boolean
   var zeroline: Boolean
@@ -112,7 +112,7 @@ object Axis {
     tick0: Double | String,
     tickangle: Double,
     tickcolor: Color,
-    tickfont: Partial[Font],
+    tickfont: PartialFont,
     tickformat: String,
     ticklen: Double,
     tickmode: auto | linear | array,
@@ -123,7 +123,7 @@ object Axis {
     tickvals: js.Array[_],
     tickwidth: Double,
     title: String,
-    titlefont: Partial[Font],
+    titlefont: PartialFont,
     `type`: AxisType,
     visible: Boolean,
     zeroline: Boolean,

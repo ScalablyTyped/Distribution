@@ -53,7 +53,7 @@ object mod extends js.Object {
     def this(machine: StateMachine[TContext, TStateSchema, TEvent, TTypestate]) = this()
     def this(
       machine: StateMachine[TContext, TStateSchema, TEvent, TTypestate],
-      options: Partial[InterpreterOptions]
+      options: PartialInterpreterOptions
     ) = this()
   }
   
@@ -140,7 +140,7 @@ object mod extends js.Object {
   def interpret[TContext, TStateSchema /* <: StateSchema[_] */, TEvent /* <: EventObject */, TTypestate /* <: Typestate[TContext] */](machine: StateMachine[TContext, TStateSchema, TEvent, TTypestate]): typings.xstate.interpreterMod.Interpreter[TContext, TStateSchema, TEvent, TTypestate] = js.native
   def interpret[TContext, TStateSchema /* <: StateSchema[_] */, TEvent /* <: EventObject */, TTypestate /* <: Typestate[TContext] */](
     machine: StateMachine[TContext, TStateSchema, TEvent, TTypestate],
-    options: Partial[InterpreterOptions]
+    options: PartialInterpreterOptions
   ): typings.xstate.interpreterMod.Interpreter[TContext, TStateSchema, TEvent, TTypestate] = js.native
   def mapState(stateMap: StringDictionary[js.Any], stateId: String): js.Any = js.native
   def matchState[T, TContext, TEvent /* <: EventObject */](
@@ -206,11 +206,11 @@ object mod extends js.Object {
       */
     var defaultOptions: InterpreterOptions = js.native
     @JSName("interpret")
-    var interpret_Original: FnMachine = js.native
+    var interpret_Original: FnCallMachineOptions = js.native
     def interpret[TContext, TStateSchema /* <: StateSchema[_] */, TEvent /* <: EventObject */, TTypestate /* <: Typestate[TContext] */](machine: StateMachine[TContext, TStateSchema, TEvent, TTypestate]): typings.xstate.interpreterMod.Interpreter[TContext, TStateSchema, TEvent, TTypestate] = js.native
     def interpret[TContext, TStateSchema /* <: StateSchema[_] */, TEvent /* <: EventObject */, TTypestate /* <: Typestate[TContext] */](
       machine: StateMachine[TContext, TStateSchema, TEvent, TTypestate],
-      options: Partial[InterpreterOptions]
+      options: PartialInterpreterOptions
     ): typings.xstate.interpreterMod.Interpreter[TContext, TStateSchema, TEvent, TTypestate] = js.native
   }
   
@@ -255,25 +255,25 @@ object mod extends js.Object {
     @JSName("done")
     var done_Original: js.Function2[/* id */ String, /* data */ js.UndefOr[js.Any], DoneEventObject] = js.native
     @JSName("escalate")
-    var escalate_Original: FnErrorData = js.native
+    var escalate_Original: FnCallErrorDataOptions = js.native
     @JSName("forwardTo")
-    var forwardTo_Original: FnOptions = js.native
+    var forwardTo_Original: FnCallTargetOptions = js.native
     @JSName("log")
-    var log_Original: FnExpr = js.native
+    var log_Original: FnCallExprLabel = js.native
     @JSName("raise")
-    var raise_Original: FnEvent = js.native
+    var raise_Original: FnCall = js.native
     @JSName("respond")
-    var respond_Original: FnEventOptions = js.native
+    var respond_Original: FnCallEventOptions = js.native
     @JSName("sendParent")
-    var sendParent_Original: FnEventOptionsAny = js.native
+    var sendParent_Original: Fn0 = js.native
     @JSName("sendUpdate")
-    var sendUpdate_Original: FnEventObject = js.native
+    var sendUpdate_Original: Fn1 = js.native
     @JSName("send")
-    var send_Original: FnEventOptions = js.native
+    var send_Original: FnCallEventOptions = js.native
     @JSName("start")
-    var start_Original: FnActivity = js.native
+    var start_Original: FnCallActivity = js.native
     @JSName("stop")
-    var stop_Original: FnActivity = js.native
+    var stop_Original: FnCallActivity = js.native
     def after(delayRef: String): String = js.native
     def after(delayRef: String, id: String): String = js.native
     def after(delayRef: Double): String = js.native

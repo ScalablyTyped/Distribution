@@ -1,8 +1,8 @@
 package typings.reactAutocomplete.mod
 
 import typings.react.mod.Component
-import typings.reactAutocomplete.FnBackward
-import typings.reactAutocomplete.FnOptions
+import typings.reactAutocomplete.FnCall
+import typings.reactAutocomplete.FnCallStartEndDirection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,9 +17,9 @@ trait Autocomplete
   var blur: js.Function0[Unit] = js.native
   var checkValidity: js.Function0[Boolean] = js.native
   var click: js.Function0[Unit] = js.native
-  var focus: FnOptions = js.native
+  var focus: FnCall = js.native
   var select: js.Function0[Unit] = js.native
   var setCustomValidity: js.Function1[/* error */ String, Unit] = js.native
-  var setSelectionRange: FnBackward = js.native
+  var setSelectionRange: FnCallStartEndDirection = js.native
 }
 

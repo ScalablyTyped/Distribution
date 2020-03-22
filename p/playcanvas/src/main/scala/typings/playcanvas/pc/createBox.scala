@@ -1,6 +1,6 @@
 package typings.playcanvas.pc
 
-import typings.playcanvas.AnonHalfExtentsHeightSegments
+import typings.playcanvas.AnonHeightSegments
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,6 +28,6 @@ object createBox extends js.Object {
     * @returns {pc.Mesh} A new box-shaped mesh.
     */
   def apply(device: GraphicsDevice): Mesh = js.native
-  def apply(device: GraphicsDevice, opts: AnonHalfExtentsHeightSegments): Mesh = js.native
+  def apply(device: GraphicsDevice, opts: AnonHeightSegments): Mesh = js.native
 }
 

@@ -1,7 +1,7 @@
 package typings.antdMobile.mod
 
 import typings.antdMobile.AnonPrefixCls
-import typings.antdMobile.TypeofClassDefaultTabBar
+import typings.antdMobile.TypeofDefaultTabBar
 import typings.antdMobile.tabsMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,7 +15,7 @@ class Tabs () extends default
 @JSImport("antd-mobile", "Tabs")
 @js.native
 object Tabs extends js.Object {
-  var DefaultTabBar: TypeofClassDefaultTabBar = js.native
+  var DefaultTabBar: TypeofDefaultTabBar = js.native
   var defaultProps: AnonPrefixCls = js.native
 }
 

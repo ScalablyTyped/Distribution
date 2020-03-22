@@ -68,6 +68,15 @@ class VertexBuffer protected () extends js.Object {
   def lock(): ArrayBuffer = js.native
   /**
     * @function
+    * @name pc.VertexBuffer#setData
+    * @description Copies data into vertex buffer's memory.
+    * @param {ArrayBuffer} [data] - Source data to copy.
+    * @returns {boolean} True if function finished successfuly, false otherwise.
+    */
+  def setData(): Boolean = js.native
+  def setData(data: ArrayBuffer): Boolean = js.native
+  /**
+    * @function
     * @name pc.VertexBuffer#unlock
     * @description Notifies the graphics engine that the client side copy of the vertex buffer's
     * memory can be returned to the control of the graphics driver.

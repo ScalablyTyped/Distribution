@@ -1,5 +1,7 @@
 package typings.officeUiFabricReact.checkboxBaseMod
 
+import typings.officeUiFabricReact.ReadonlyICheckboxProps
+import typings.officeUiFabricReact.ReadonlyICheckboxState
 import typings.officeUiFabricReact.checkboxTypesMod.ICheckbox
 import typings.officeUiFabricReact.checkboxTypesMod.ICheckboxProps
 import typings.react.mod.Component
@@ -42,6 +44,6 @@ class CheckboxBase protected ()
 @js.native
 object CheckboxBase extends js.Object {
   var defaultProps: ICheckboxProps = js.native
-  def getDerivedStateFromProps(nextProps: ICheckboxProps, prevState: ICheckboxState): ICheckboxState | Null = js.native
+  def getDerivedStateFromProps(nextProps: ReadonlyICheckboxProps, prevState: ReadonlyICheckboxState): ICheckboxState | Null = js.native
 }
 

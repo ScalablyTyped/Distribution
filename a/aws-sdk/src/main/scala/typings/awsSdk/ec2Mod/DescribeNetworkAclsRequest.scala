@@ -21,7 +21,7 @@ trait DescribeNetworkAclsRequest extends js.Object {
   /**
     * One or more network ACL IDs. Default: Describes all your network ACLs.
     */
-  var NetworkAclIds: js.UndefOr[ValueStringList] = js.native
+  var NetworkAclIds: js.UndefOr[NetworkAclIdStringList] = js.native
   /**
     * The token for the next page of results.
     */
@@ -34,7 +34,7 @@ object DescribeNetworkAclsRequest {
     DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     Filters: FilterList = null,
     MaxResults: Int | scala.Double = null,
-    NetworkAclIds: ValueStringList = null,
+    NetworkAclIds: NetworkAclIdStringList = null,
     NextToken: String = null
   ): DescribeNetworkAclsRequest = {
     val __obj = js.Dynamic.literal()

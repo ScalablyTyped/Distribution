@@ -8,11 +8,10 @@ import typings.jupyterlabDocregistry.registryMod.DocumentRegistry.IOpenOptions
 import typings.jupyterlabDocregistry.registryMod.IDocumentWidget
 import typings.jupyterlabServices.contentsMod.Contents.ICreateOptions
 import typings.jupyterlabServices.libManagerMod.ServiceManager.IManager
-import typings.phosphorCoreutils.mod.Token
-import typings.phosphorDisposable.mod.IDisposable
-import typings.phosphorSignaling.mod.ISignal
-import typings.phosphorWidgets.mod.Widget
-import typings.std.Partial
+import typings.luminoCoreutils.mod.Token
+import typings.luminoDisposable.mod.IDisposable
+import typings.luminoSignaling.mod.ISignal
+import typings.luminoWidgets.mod.Widget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -102,13 +101,9 @@ object tokensMod extends js.Object {
       * This function will return `undefined` if a valid widget factory
       * cannot be found.
       */
-    def createNew(path: String): Widget = js.native
-    def createNew(path: String, widgetName: String): Widget = js.native
-    def createNew(
-      path: String,
-      widgetName: String,
-      kernel: Partial[typings.jupyterlabServices.kernelKernelMod.Kernel.IModel]
-    ): Widget = js.native
+    def createNew(path: String): js.UndefOr[Widget] = js.native
+    def createNew(path: String, widgetName: String): js.UndefOr[Widget] = js.native
+    def createNew(path: String, widgetName: String, kernel: PartialIModel): js.UndefOr[Widget] = js.native
     /**
       * Delete a file.
       *
@@ -159,17 +154,8 @@ object tokensMod extends js.Object {
       */
     def open(path: String): js.UndefOr[IDocumentWidget[Widget, IModel]] = js.native
     def open(path: String, widgetName: String): js.UndefOr[IDocumentWidget[Widget, IModel]] = js.native
-    def open(
-      path: String,
-      widgetName: String,
-      kernel: Partial[typings.jupyterlabServices.kernelKernelMod.Kernel.IModel]
-    ): js.UndefOr[IDocumentWidget[Widget, IModel]] = js.native
-    def open(
-      path: String,
-      widgetName: String,
-      kernel: Partial[typings.jupyterlabServices.kernelKernelMod.Kernel.IModel],
-      options: IOpenOptions
-    ): js.UndefOr[IDocumentWidget[Widget, IModel]] = js.native
+    def open(path: String, widgetName: String, kernel: PartialIModel): js.UndefOr[IDocumentWidget[Widget, IModel]] = js.native
+    def open(path: String, widgetName: String, kernel: PartialIModel, options: IOpenOptions): js.UndefOr[IDocumentWidget[Widget, IModel]] = js.native
     /**
       * Open a file and return the widget used to view it.
       * Reveals an already existing editor.
@@ -188,17 +174,8 @@ object tokensMod extends js.Object {
       */
     def openOrReveal(path: String): js.UndefOr[IDocumentWidget[Widget, IModel]] = js.native
     def openOrReveal(path: String, widgetName: String): js.UndefOr[IDocumentWidget[Widget, IModel]] = js.native
-    def openOrReveal(
-      path: String,
-      widgetName: String,
-      kernel: Partial[typings.jupyterlabServices.kernelKernelMod.Kernel.IModel]
-    ): js.UndefOr[IDocumentWidget[Widget, IModel]] = js.native
-    def openOrReveal(
-      path: String,
-      widgetName: String,
-      kernel: Partial[typings.jupyterlabServices.kernelKernelMod.Kernel.IModel],
-      options: IOpenOptions
-    ): js.UndefOr[IDocumentWidget[Widget, IModel]] = js.native
+    def openOrReveal(path: String, widgetName: String, kernel: PartialIModel): js.UndefOr[IDocumentWidget[Widget, IModel]] = js.native
+    def openOrReveal(path: String, widgetName: String, kernel: PartialIModel, options: IOpenOptions): js.UndefOr[IDocumentWidget[Widget, IModel]] = js.native
     /**
       * Overwrite a file.
       *

@@ -7,10 +7,15 @@ import typings.vscode.mod.CompletionContext
 import typings.vscode.mod.CompletionItem
 import typings.vscode.mod.Diagnostic
 import typings.vscode.mod.DiagnosticSeverity
+import typings.vscode.mod.DiagnosticTag
 import typings.vscode.mod.DocumentLink
 import typings.vscode.mod.FormattingOptions
+import typings.vscode.mod.Location
 import typings.vscode.mod.Position
 import typings.vscode.mod.Range
+import typings.vscode.mod.SignatureHelpContext
+import typings.vscode.mod.SymbolKind
+import typings.vscode.mod.SymbolTag
 import typings.vscode.mod.TextDocument
 import typings.vscode.mod.TextDocumentChangeEvent
 import typings.vscode.mod.TextDocumentWillSaveEvent
@@ -23,7 +28,9 @@ import typings.vscodeLanguageserverProtocol.protocolMod.DidCloseTextDocumentPara
 import typings.vscodeLanguageserverProtocol.protocolMod.DidOpenTextDocumentParams
 import typings.vscodeLanguageserverProtocol.protocolMod.DidSaveTextDocumentParams
 import typings.vscodeLanguageserverProtocol.protocolMod.DocumentLinkParams
+import typings.vscodeLanguageserverProtocol.protocolMod.DocumentSymbolParams
 import typings.vscodeLanguageserverProtocol.protocolMod.ReferenceParams
+import typings.vscodeLanguageserverProtocol.protocolMod.SignatureHelpParams
 import typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentPositionParams
 import typings.vscodeLanguageserverProtocol.protocolMod.WillSaveTextDocumentParams
 import typings.vscodeLanguageserverTypes.mod.TextDocumentIdentifier
@@ -48,11 +55,18 @@ object codeConverterMod extends js.Object {
     def asCompletionParams(textDocument: TextDocument, position: Position, context: CompletionContext): CompletionParams = js.native
     def asDiagnostic(item: Diagnostic): typings.vscodeLanguageserverTypes.mod.Diagnostic = js.native
     def asDiagnosticSeverity(value: DiagnosticSeverity): Double = js.native
+    def asDiagnosticTag(value: DiagnosticTag): js.UndefOr[Double] = js.native
     def asDiagnostics(items: js.Array[Diagnostic]): js.Array[typings.vscodeLanguageserverTypes.mod.Diagnostic] = js.native
     def asDocumentLink(item: DocumentLink): typings.vscodeLanguageserverTypes.mod.DocumentLink = js.native
     def asDocumentLinkParams(textDocument: TextDocument): DocumentLinkParams = js.native
-    def asDocumentSymbolParams(textDocument: TextDocument): js.Any = js.native
+    def asDocumentSymbolParams(textDocument: TextDocument): DocumentSymbolParams = js.native
     def asFormattingOptions(item: FormattingOptions): typings.vscodeLanguageserverTypes.mod.FormattingOptions = js.native
+    def asLocation(): Null = js.native
+    def asLocation(value: Location): js.UndefOr[typings.vscodeLanguageserverTypes.mod.Location | Null] = js.native
+    @JSName("asLocation")
+    def asLocation_Location(value: Location): typings.vscodeLanguageserverTypes.mod.Location = js.native
+    @JSName("asLocation")
+    def asLocation_Union(): js.UndefOr[scala.Nothing] = js.native
     def asOpenTextDocumentParams(textDocument: TextDocument): DidOpenTextDocumentParams = js.native
     def asPosition(): Null = js.native
     def asPosition(value: Position): js.UndefOr[typings.vscodeLanguageserverTypes.mod.Position | Null] = js.native
@@ -60,6 +74,7 @@ object codeConverterMod extends js.Object {
     def asPosition_Position(value: Position): typings.vscodeLanguageserverTypes.mod.Position = js.native
     @JSName("asPosition")
     def asPosition_Union(): js.UndefOr[scala.Nothing] = js.native
+    def asPositions(value: js.Array[Position]): js.Array[typings.vscodeLanguageserverTypes.mod.Position] = js.native
     def asRange(): Null = js.native
     def asRange(value: Range): js.UndefOr[typings.vscodeLanguageserverTypes.mod.Range | Null] = js.native
     @JSName("asRange")
@@ -69,6 +84,10 @@ object codeConverterMod extends js.Object {
     def asReferenceParams(textDocument: TextDocument, position: Position, options: AnonIncludeDeclaration): ReferenceParams = js.native
     def asSaveTextDocumentParams(textDocument: TextDocument): DidSaveTextDocumentParams = js.native
     def asSaveTextDocumentParams(textDocument: TextDocument, includeContent: Boolean): DidSaveTextDocumentParams = js.native
+    def asSignatureHelpParams(textDocument: TextDocument, position: Position, context: SignatureHelpContext): SignatureHelpParams = js.native
+    def asSymbolKind(item: SymbolKind): typings.vscodeLanguageserverTypes.mod.SymbolKind = js.native
+    def asSymbolTag(item: SymbolTag): typings.vscodeLanguageserverTypes.mod.SymbolTag = js.native
+    def asSymbolTags(items: js.Array[SymbolTag]): js.Array[typings.vscodeLanguageserverTypes.mod.SymbolTag] = js.native
     def asTextDocumentIdentifier(textDocument: TextDocument): TextDocumentIdentifier = js.native
     def asTextDocumentPositionParams(textDocument: TextDocument, position: Position): TextDocumentPositionParams = js.native
     def asTextEdit(edit: TextEdit): typings.vscodeLanguageserverTypes.mod.TextEdit = js.native

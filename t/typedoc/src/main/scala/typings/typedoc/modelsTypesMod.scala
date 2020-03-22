@@ -58,10 +58,16 @@ object modelsTypesMod extends js.Object {
   }
   
   @js.native
+  class QueryType protected ()
+    extends typings.typedoc.typesQueryMod.QueryType {
+    def this(reference: typings.typedoc.modelsTypesReferenceMod.ReferenceType) = this()
+  }
+  
+  @js.native
   class ReferenceType protected ()
     extends typings.typedoc.modelsTypesReferenceMod.ReferenceType {
-    def this(name: String, symbolID: Double) = this()
-    def this(name: String, symbolID: Double, reflection: Reflection) = this()
+    def this(name: String, symbolFQN: String) = this()
+    def this(name: String, symbolFQN: String, reflection: Reflection) = this()
   }
   
   @js.native
@@ -113,8 +119,8 @@ object modelsTypesMod extends js.Object {
   /* static members */
   @js.native
   object ReferenceType extends js.Object {
-    var SYMBOL_ID_RESOLVED: Double = js.native
-    var SYMBOL_ID_RESOLVE_BY_NAME: Double = js.native
+    var SYMBOL_FQN_RESOLVED: String = js.native
+    var SYMBOL_FQN_RESOLVE_BY_NAME: String = js.native
   }
   
   /* static members */

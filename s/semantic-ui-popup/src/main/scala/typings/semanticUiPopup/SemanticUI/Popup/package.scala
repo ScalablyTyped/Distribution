@@ -9,5 +9,5 @@ package object Popup {
   type DelaySettings = typings.semanticUiPopup.SemanticUI.Popup.DelaySettings.Param
   type ErrorSettings = typings.semanticUiPopup.SemanticUI.Popup.ErrorSettings.Param
   type MetadataSettings = typings.semanticUiPopup.SemanticUI.Popup.MetadataSettings.Param
-  type SelectorSettings = typings.semanticUiPopup.SemanticUI.Popup.SelectorSettings.Param
+  type SelectorSettings = typings.semanticUiPopup.SemanticUI.Popup.SelectorSettings_
 }

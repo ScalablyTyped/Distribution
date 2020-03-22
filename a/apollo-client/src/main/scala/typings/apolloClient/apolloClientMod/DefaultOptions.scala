@@ -1,27 +1,24 @@
 package typings.apolloClient.apolloClientMod
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.apolloClient.typesMod.OperationVariables
-import typings.apolloClient.watchQueryOptionsMod.MutationOptions
-import typings.apolloClient.watchQueryOptionsMod.QueryOptions
-import typings.apolloClient.watchQueryOptionsMod.WatchQueryOptions
-import typings.std.Partial
+import typings.apolloClient.PartialMutationOptionskey
+import typings.apolloClient.PartialQueryOptionsOperat
+import typings.apolloClient.PartialWatchQueryOptionsO
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DefaultOptions extends js.Object {
-  var mutate: js.UndefOr[Partial[MutationOptions[StringDictionary[_], OperationVariables]]] = js.undefined
-  var query: js.UndefOr[Partial[QueryOptions[OperationVariables]]] = js.undefined
-  var watchQuery: js.UndefOr[Partial[WatchQueryOptions[OperationVariables]]] = js.undefined
+  var mutate: js.UndefOr[PartialMutationOptionskey] = js.undefined
+  var query: js.UndefOr[PartialQueryOptionsOperat] = js.undefined
+  var watchQuery: js.UndefOr[PartialWatchQueryOptionsO] = js.undefined
 }
 
 object DefaultOptions {
   @scala.inline
   def apply(
-    mutate: Partial[MutationOptions[StringDictionary[_], OperationVariables]] = null,
-    query: Partial[QueryOptions[OperationVariables]] = null,
-    watchQuery: Partial[WatchQueryOptions[OperationVariables]] = null
+    mutate: PartialMutationOptionskey = null,
+    query: PartialQueryOptionsOperat = null,
+    watchQuery: PartialWatchQueryOptionsO = null
   ): DefaultOptions = {
     val __obj = js.Dynamic.literal()
     if (mutate != null) __obj.updateDynamic("mutate")(mutate.asInstanceOf[js.Any])

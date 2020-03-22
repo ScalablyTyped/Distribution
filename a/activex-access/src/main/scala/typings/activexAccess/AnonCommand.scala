@@ -5,14 +5,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonCommand extends js.Object {
+  val Cancel: js.Any
   val Command: js.Any
-  val Enabled: js.Any
 }
 
 object AnonCommand {
   @scala.inline
-  def apply(Command: js.Any, Enabled: js.Any): AnonCommand = {
-    val __obj = js.Dynamic.literal(Command = Command.asInstanceOf[js.Any], Enabled = Enabled.asInstanceOf[js.Any])
+  def apply(Cancel: js.Any, Command: js.Any): AnonCommand = {
+    val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], Command = Command.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AnonCommand]
   }

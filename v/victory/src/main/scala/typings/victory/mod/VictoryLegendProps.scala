@@ -1,17 +1,16 @@
 package typings.victory.mod
 
 import typings.react.mod.ReactElement
+import typings.victory.Anon1
 import typings.victory.AnonLeft
 import typings.victory.AnonName
-import typings.victory.AnonXY
-import typings.victory.AnonXYBoolean
-import typings.victory.AnonXYD3ScaleScalePropType
+import typings.victory.AnonXBoolean
+import typings.victory.AnonY
+import typings.victory.OmitBlockPropsleftright
 import typings.victory.victoryStrings.data
 import typings.victory.victoryStrings.horizontal
 import typings.victory.victoryStrings.labels
-import typings.victory.victoryStrings.left
 import typings.victory.victoryStrings.parent
-import typings.victory.victoryStrings.right
 import typings.victory.victoryStrings.vertical
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -111,7 +110,7 @@ trait VictoryLegendProps
     * specified for “top” and “bottom” gutters. To set spacing between columns,
     * use the gutter prop.
     */
-  var rowGutter: js.UndefOr[Double | (Omit[BlockProps, left | right])] = js.undefined
+  var rowGutter: js.UndefOr[Double | OmitBlockPropsleftright] = js.undefined
   /**
     * The style prop defines the style of the VictoryLegend component.
     * The style prop should be given as an object with styles defined for data, labels and
@@ -179,14 +178,14 @@ object VictoryLegendProps {
     itemsPerRow: Int | Double = null,
     label: String | (js.Function1[/* data */ js.Any, String]) = null,
     labelComponent: ReactElement = null,
-    maxDomain: Double | AnonXY = null,
-    minDomain: Double | AnonXY = null,
+    maxDomain: Double | AnonY = null,
+    minDomain: Double | AnonY = null,
     name: String = null,
     orientation: horizontal | vertical = null,
     padding: PaddingProps = null,
-    rowGutter: Double | (Omit[BlockProps, left | right]) = null,
-    scale: ScalePropType | D3Scale | AnonXYD3ScaleScalePropType = null,
-    singleQuadrantDomainPadding: Boolean | AnonXYBoolean = null,
+    rowGutter: Double | OmitBlockPropsleftright = null,
+    scale: ScalePropType | D3Scale | Anon1 = null,
+    singleQuadrantDomainPadding: Boolean | AnonXBoolean = null,
     standalone: js.UndefOr[Boolean] = js.undefined,
     style: VictoryStyleInterface = null,
     symbolSpacer: Int | Double = null,

@@ -4,7 +4,7 @@ import typings.overlayscrollbars.AnonAutoHide
 import typings.overlayscrollbars.AnonDynHeight
 import typings.overlayscrollbars.AnonInitialize
 import typings.overlayscrollbars.AnonOnContentSizeChanged
-import typings.overlayscrollbars.AnonXYOverflowBehavior
+import typings.overlayscrollbars.AnonXOverflowBehavior
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +17,7 @@ trait Options extends js.Object {
   var clipAlways: js.UndefOr[Boolean] = js.undefined
   var nativeScrollbarsOverlaid: js.UndefOr[AnonInitialize] = js.undefined
   var normalizeRTL: js.UndefOr[Boolean] = js.undefined
-  var overflowBehavior: js.UndefOr[AnonXYOverflowBehavior] = js.undefined
+  var overflowBehavior: js.UndefOr[AnonXOverflowBehavior] = js.undefined
   var paddingAbsolute: js.UndefOr[Boolean] = js.undefined
   var resize: js.UndefOr[ResizeBehavior] = js.undefined
   var scrollbars: js.UndefOr[AnonAutoHide] = js.undefined
@@ -35,7 +35,7 @@ object Options {
     clipAlways: js.UndefOr[Boolean] = js.undefined,
     nativeScrollbarsOverlaid: AnonInitialize = null,
     normalizeRTL: js.UndefOr[Boolean] = js.undefined,
-    overflowBehavior: AnonXYOverflowBehavior = null,
+    overflowBehavior: AnonXOverflowBehavior = null,
     paddingAbsolute: js.UndefOr[Boolean] = js.undefined,
     resize: ResizeBehavior = null,
     scrollbars: AnonAutoHide = null,

@@ -24,6 +24,8 @@ trait AnonAltAutoscaler extends js.Object {
     * Overrides userIp if both are provided.
     */
   var quotaUser: js.UndefOr[String] = js.undefined
+  /** Name of the region scoping this request. */
+  var region: String
   /**
     * An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the
     * request if it has already been completed.
@@ -37,8 +39,6 @@ trait AnonAltAutoscaler extends js.Object {
   var requestId: js.UndefOr[String] = js.undefined
   /** IP address of the site where the request originates. Use this if you want to enforce per-user limits. */
   var userIp: js.UndefOr[String] = js.undefined
-  /** Name of the zone for this request. */
-  var zone: String
 }
 
 object AnonAltAutoscaler {
@@ -46,7 +46,7 @@ object AnonAltAutoscaler {
   def apply(
     autoscaler: String,
     project: String,
-    zone: String,
+    region: String,
     alt: String = null,
     fields: String = null,
     key: String = null,
@@ -56,7 +56,7 @@ object AnonAltAutoscaler {
     requestId: String = null,
     userIp: String = null
   ): AnonAltAutoscaler = {
-    val __obj = js.Dynamic.literal(autoscaler = autoscaler.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any], zone = zone.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(autoscaler = autoscaler.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any])
     if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])

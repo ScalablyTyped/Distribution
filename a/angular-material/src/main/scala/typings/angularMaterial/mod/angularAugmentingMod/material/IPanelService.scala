@@ -5,8 +5,8 @@ import typings.angularMaterial.AnonABOVE
 import typings.angularMaterial.AnonALIGNEND
 import typings.angularMaterial.AnonBOTTOM
 import typings.angularMaterial.AnonCLICKOUTSIDE
+import typings.angularMaterial.AnonCLOSE_
 import typings.angularMaterial.AnonFADE
-import typings.angularMaterial.Anon_CLOSE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ trait IPanelService extends js.Object {
   var absPosition: AnonBOTTOM
   var animation: AnonFADE
   var closeReasons: AnonCLICKOUTSIDE
-  var interceptorTypes: Anon_CLOSE
+  var interceptorTypes: AnonCLOSE_
   var xPosition: AnonALIGNEND
   var yPosition: AnonABOVE
   def create(opt_config: IPanelConfig): IPanelRef
@@ -31,7 +31,7 @@ object IPanelService {
     animation: AnonFADE,
     closeReasons: AnonCLICKOUTSIDE,
     create: IPanelConfig => IPanelRef,
-    interceptorTypes: Anon_CLOSE,
+    interceptorTypes: AnonCLOSE_,
     newPanelAnimation: () => IPanelAnimation,
     newPanelPosition: () => IPanelPosition,
     open: IPanelConfig => IPromise[IPanelRef],

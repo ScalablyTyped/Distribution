@@ -74,6 +74,10 @@ trait JobMetadata extends js.Object {
     * The type of device used with this job.
     */
   var SnowballType: js.UndefOr[typings.awsSdk.snowballMod.SnowballType] = js.native
+  /**
+    * The metadata associated with the tax documents required in your AWS Region.
+    */
+  var TaxDocuments: js.UndefOr[typings.awsSdk.snowballMod.TaxDocuments] = js.native
 }
 
 object JobMetadata {
@@ -95,7 +99,8 @@ object JobMetadata {
     RoleARN: RoleARN = null,
     ShippingDetails: ShippingDetails = null,
     SnowballCapacityPreference: SnowballCapacity = null,
-    SnowballType: SnowballType = null
+    SnowballType: SnowballType = null,
+    TaxDocuments: TaxDocuments = null
   ): JobMetadata = {
     val __obj = js.Dynamic.literal()
     if (AddressId != null) __obj.updateDynamic("AddressId")(AddressId.asInstanceOf[js.Any])
@@ -115,6 +120,7 @@ object JobMetadata {
     if (ShippingDetails != null) __obj.updateDynamic("ShippingDetails")(ShippingDetails.asInstanceOf[js.Any])
     if (SnowballCapacityPreference != null) __obj.updateDynamic("SnowballCapacityPreference")(SnowballCapacityPreference.asInstanceOf[js.Any])
     if (SnowballType != null) __obj.updateDynamic("SnowballType")(SnowballType.asInstanceOf[js.Any])
+    if (TaxDocuments != null) __obj.updateDynamic("TaxDocuments")(TaxDocuments.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobMetadata]
   }
 }

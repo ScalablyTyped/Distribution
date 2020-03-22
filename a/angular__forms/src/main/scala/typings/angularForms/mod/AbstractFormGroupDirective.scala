@@ -16,27 +16,10 @@ class AbstractFormGroupDirective ()
     * @description
     * The async validators registered with this group.
     */
-  val asyncValidator: AsyncValidatorFn | Null = js.native
-  /**
-    * @description
-    * The `FormGroup` bound to this directive.
-    */
-  @JSName("control")
-  val control_AbstractFormGroupDirective: FormGroup = js.native
-  /**
-    * @description
-    * The path to this group from the top-level directive.
-    */
-  @JSName("path")
-  val path_AbstractFormGroupDirective: js.Array[String] = js.native
-  /**
-    * @description
-    * The synchronous validators registered with this group.
-    */
-  val validator: ValidatorFn | Null = js.native
+  def asyncValidator(): AsyncValidatorFn | Null = js.native
   /**
     * A callback method that performs custom clean-up, invoked immediately
-    * after a directive, pipe, or service instance is destroyed.
+    * before a directive, pipe, or service instance is destroyed.
     */
   /* CompleteClass */
   override def ngOnDestroy(): Unit = js.native
@@ -49,5 +32,10 @@ class AbstractFormGroupDirective ()
     */
   /* CompleteClass */
   override def ngOnInit(): Unit = js.native
+  /**
+    * @description
+    * The synchronous validators registered with this group.
+    */
+  def validator(): ValidatorFn | Null = js.native
 }
 

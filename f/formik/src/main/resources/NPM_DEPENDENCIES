@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "formik" : "1.5.8"
+      "formik" : "2.1.4"
     }
   ],
   "test-dependencies" : [
     {
-      "formik" : "1.5.8"
+      "formik" : "2.1.4"
     }
   ],
   "compile-devDependencies" : [

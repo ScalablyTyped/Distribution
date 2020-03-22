@@ -1,6 +1,6 @@
 package typings.behavior3.b3
 
-import typings.behavior3.AnonChildMaxTime
+import typings.behavior3.AnonMaxTime
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,6 +22,6 @@ import scala.scalajs.js.annotation._
   *
   */
 class MaxTime () extends Decorator {
-  def this(hasMaxTimeChild: AnonChildMaxTime) = this()
+  def this(hasMaxTimeChild: AnonMaxTime) = this()
 }
 

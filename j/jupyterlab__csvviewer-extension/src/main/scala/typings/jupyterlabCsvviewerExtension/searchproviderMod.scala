@@ -4,10 +4,11 @@ import typings.jupyterlabCsvviewer.mod.CSVViewer
 import typings.jupyterlabCsvviewerExtension.jupyterlabCsvviewerExtensionBooleans.`true`
 import typings.jupyterlabDocregistry.mod.DocumentWidget
 import typings.jupyterlabDocregistry.registryMod.DocumentRegistry.IModel
+import typings.jupyterlabDocumentsearch.interfacesMod.IFiltersType
 import typings.jupyterlabDocumentsearch.interfacesMod.ISearchMatch
 import typings.jupyterlabDocumentsearch.interfacesMod.ISearchProvider
-import typings.phosphorSignaling.mod.ISignal
-import typings.phosphorWidgets.mod.Widget
+import typings.luminoSignaling.mod.ISignal
+import typings.luminoWidgets.mod.Widget
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -26,11 +27,6 @@ object searchproviderMod extends js.Object {
       */
     /* CompleteClass */
     override val changed: ISignal[ISearchProvider[CSVDocumentWidget], Unit] = js.native
-    /**
-      * Signal indicating that something in the search has changed, so the UI should update
-      */
-    @JSName("changed")
-    val changed_CSVSearchProvider: ISignal[this.type, Unit] = js.native
     /**
       * The current index of the selected match.
       */
@@ -55,6 +51,11 @@ object searchproviderMod extends js.Object {
       */
     /* CompleteClass */
     override val matches: js.Array[ISearchMatch] = js.native
+    /**
+      * Signal indicating that something in the search has changed, so the UI should update
+      */
+    @JSName("changed")
+    def changed_MCSVSearchProvider(): ISignal[this.type, Unit] = js.native
     /**
       * Clears state of a search provider to prepare for startQuery to be called
       * in order to start a new query or refresh an existing one.
@@ -119,8 +120,19 @@ object searchproviderMod extends js.Object {
       *
       * @returns A promise that resolves with a list of all matches
       */
+    def startQuery(query: RegExp, searchTarget: CSVDocumentWidget): js.Promise[js.Array[ISearchMatch]] = js.native
+    /**
+      * Initialize the search using the provided options.  Should update the UI
+      * to highlight all matches and "select" whatever the first match should be.
+      *
+      * @param query A RegExp to be use to perform the search
+      * @param searchTarget The widget to be searched
+      * @param filters Filter parameters to pass to provider
+      *
+      * @returns A promise that resolves with a list of all matches
+      */
     /* CompleteClass */
-    override def startQuery(query: RegExp, searchTarget: CSVDocumentWidget): js.Promise[js.Array[ISearchMatch]] = js.native
+    override def startQuery(query: RegExp, searchTarget: CSVDocumentWidget, filters: IFiltersType): js.Promise[js.Array[ISearchMatch]] = js.native
   }
   
   /* static members */

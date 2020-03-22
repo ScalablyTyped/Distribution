@@ -5,13 +5,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonStyle extends js.Object {
-  var style: AnonWidth
+  var r: Double
 }
 
 object AnonStyle {
   @scala.inline
-  def apply(style: AnonWidth): AnonStyle = {
-    val __obj = js.Dynamic.literal(style = style.asInstanceOf[js.Any])
+  def apply(r: Double): AnonStyle = {
+    val __obj = js.Dynamic.literal(r = r.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AnonStyle]
   }

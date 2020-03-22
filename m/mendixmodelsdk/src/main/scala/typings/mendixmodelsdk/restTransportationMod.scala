@@ -1,6 +1,5 @@
 package typings.mendixmodelsdk
 
-import typings.mendixmodelsdk.commonMod.common.ICallback
 import typings.mendixmodelsdk.commonMod.common.IErrorCallback
 import typings.mendixmodelsdk.configurationMod.configuration.ISdkConfig
 import typings.mendixmodelsdk.transportationMod.IRequestFileDownloadOptions
@@ -32,7 +31,11 @@ object restTransportationMod extends js.Object {
     /* CompleteClass */
     override def requestFileDownload[T](options: IRequestFileDownloadOptions, success: IResponseCallback[T], failure: IErrorCallback): Unit = js.native
     /* CompleteClass */
-    override def requestMultipartBinaryFileUpload[T](options: IRequestMultipartBinaryFileUploadOptions, success: ICallback[T], failure: IErrorCallback): Unit = js.native
+    override def requestMultipartBinaryFileUpload[T](
+      options: IRequestMultipartBinaryFileUploadOptions,
+      success: IResponseCallback[T],
+      failure: IErrorCallback
+    ): Unit = js.native
     /**
       * Send a HTTP request that will be retried in case of network errors, with specified method, url, data, success and failure callbacks.
       */

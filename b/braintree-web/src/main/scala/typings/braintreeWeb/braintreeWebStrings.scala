@@ -11,9 +11,6 @@ object braintreeWebStrings {
   sealed trait CUSTOMER extends Types
   
   @js.native
-  sealed trait HostedFieldsFieldDataFields extends js.Object
-  
-  @js.native
   sealed trait INTERNAL extends Types
   
   @js.native
@@ -45,8 +42,6 @@ object braintreeWebStrings {
   
   @scala.inline
   def CUSTOMER: CUSTOMER = "CUSTOMER".asInstanceOf[CUSTOMER]
-  @scala.inline
-  def HostedFieldsFieldDataFields: HostedFieldsFieldDataFields = "HostedFieldsFieldDataFields".asInstanceOf[HostedFieldsFieldDataFields]
   @scala.inline
   def INTERNAL: INTERNAL = "INTERNAL".asInstanceOf[INTERNAL]
   @scala.inline

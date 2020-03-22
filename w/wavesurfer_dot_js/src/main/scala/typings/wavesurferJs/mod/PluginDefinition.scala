@@ -1,13 +1,13 @@
 package typings.wavesurferJs.mod
 
-import typings.wavesurferJs.AnonParams
+import typings.wavesurferJs.AnonInstantiableWaveSurferPlugin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PluginDefinition extends js.Object {
   var deferInit: js.UndefOr[Boolean] = js.undefined
-  var instance: AnonParams
+  var instance: AnonInstantiableWaveSurferPlugin
   var name: String
   var params: js.Object
   var staticProps: js.UndefOr[js.Object] = js.undefined
@@ -16,7 +16,7 @@ trait PluginDefinition extends js.Object {
 object PluginDefinition {
   @scala.inline
   def apply(
-    instance: AnonParams,
+    instance: AnonInstantiableWaveSurferPlugin,
     name: String,
     params: js.Object,
     deferInit: js.UndefOr[Boolean] = js.undefined,

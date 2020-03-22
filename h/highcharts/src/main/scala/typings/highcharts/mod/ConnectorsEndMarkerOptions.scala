@@ -8,7 +8,7 @@ trait ConnectorsEndMarkerOptions extends js.Object {
   /**
     * (Gantt) Horizontal alignment of the markers relative to the points.
     */
-  var align: js.UndefOr[AlignValue] = js.undefined
+  var align: js.UndefOr[String | AlignValue] = js.undefined
   /**
     * (Gantt) Set the color of the connector markers. By default this is the
     * same as the connector color.
@@ -61,7 +61,7 @@ trait ConnectorsEndMarkerOptions extends js.Object {
 object ConnectorsEndMarkerOptions {
   @scala.inline
   def apply(
-    align: AlignValue = null,
+    align: String | AlignValue = null,
     color: ColorString | GradientColorObject | PatternObject = null,
     enabled: js.UndefOr[Boolean] = js.undefined,
     height: Int | Double = null,

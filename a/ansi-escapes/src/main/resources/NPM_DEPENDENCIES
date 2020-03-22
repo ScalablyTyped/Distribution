@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ansi-escapes" : "4.3.0"
+      "ansi-escapes" : "4.3.1"
     }
   ],
   "test-dependencies" : [
     {
-      "ansi-escapes" : "4.3.0"
+      "ansi-escapes" : "4.3.1"
     }
   ],
   "compile-devDependencies" : [

@@ -1,6 +1,7 @@
 package typings.terser.mod
 
 import typings.std.RegExp
+import typings.terser.AnonCol
 import typings.terser.terserBooleans.`false`
 import typings.terser.terserStrings.all
 import typings.terser.terserStrings.some
@@ -12,7 +13,9 @@ trait OutputOptions extends js.Object {
   var ascii_only: js.UndefOr[Boolean] = js.undefined
   var beautify: js.UndefOr[Boolean] = js.undefined
   var braces: js.UndefOr[Boolean] = js.undefined
-  var comments: js.UndefOr[Boolean | all | some | RegExp | js.Function] = js.undefined
+  var comments: js.UndefOr[
+    Boolean | all | some | RegExp | (js.Function2[/* node */ ASTNode, /* comment */ AnonCol, Boolean])
+  ] = js.undefined
   var ecma: js.UndefOr[ECMA] = js.undefined
   var ie8: js.UndefOr[Boolean] = js.undefined
   var indent_level: js.UndefOr[Double] = js.undefined
@@ -31,6 +34,7 @@ trait OutputOptions extends js.Object {
   var source_map: js.UndefOr[SourceMapOptions] = js.undefined
   var webkit: js.UndefOr[Boolean] = js.undefined
   var width: js.UndefOr[Double] = js.undefined
+  var wrap_func_args: js.UndefOr[Boolean] = js.undefined
   var wrap_iife: js.UndefOr[Boolean] = js.undefined
 }
 
@@ -40,7 +44,7 @@ object OutputOptions {
     ascii_only: js.UndefOr[Boolean] = js.undefined,
     beautify: js.UndefOr[Boolean] = js.undefined,
     braces: js.UndefOr[Boolean] = js.undefined,
-    comments: Boolean | all | some | RegExp | js.Function = null,
+    comments: Boolean | all | some | RegExp | (js.Function2[/* node */ ASTNode, /* comment */ AnonCol, Boolean]) = null,
     ecma: ECMA = null,
     ie8: js.UndefOr[Boolean] = js.undefined,
     indent_level: Int | Double = null,
@@ -59,6 +63,7 @@ object OutputOptions {
     source_map: SourceMapOptions = null,
     webkit: js.UndefOr[Boolean] = js.undefined,
     width: Int | Double = null,
+    wrap_func_args: js.UndefOr[Boolean] = js.undefined,
     wrap_iife: js.UndefOr[Boolean] = js.undefined
   ): OutputOptions = {
     val __obj = js.Dynamic.literal()
@@ -84,6 +89,7 @@ object OutputOptions {
     if (source_map != null) __obj.updateDynamic("source_map")(source_map.asInstanceOf[js.Any])
     if (!js.isUndefined(webkit)) __obj.updateDynamic("webkit")(webkit.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(wrap_func_args)) __obj.updateDynamic("wrap_func_args")(wrap_func_args.asInstanceOf[js.Any])
     if (!js.isUndefined(wrap_iife)) __obj.updateDynamic("wrap_iife")(wrap_iife.asInstanceOf[js.Any])
     __obj.asInstanceOf[OutputOptions]
   }

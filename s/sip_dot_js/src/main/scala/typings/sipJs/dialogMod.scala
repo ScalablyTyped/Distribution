@@ -85,7 +85,7 @@ object dialogMod extends js.Object {
       * @param method - Outgoing request method.
       */
     def createOutgoingRequestMessage(method: String): OutgoingRequestMessage = js.native
-    def createOutgoingRequestMessage(method: String, options: AnonBodyCseq): OutgoingRequestMessage = js.native
+    def createOutgoingRequestMessage(method: String, options: AnonCseq): OutgoingRequestMessage = js.native
     /** Destructor. */
     def dispose(): Unit = js.native
     /**

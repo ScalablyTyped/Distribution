@@ -26,14 +26,14 @@ import scala.scalajs.js.annotation._
 @js.native
 class LokiPartitioningAdapter protected () extends LokiPersistenceAdapter {
   def this(adapter: LokiPersistenceAdapter) = this()
-  def this(adapter: LokiPersistenceAdapter, options: AnonDelimiter) = this()
+  def this(adapter: LokiPersistenceAdapter, options: AnonPageSize) = this()
   var adapter: LokiPersistenceAdapter | Null = js.native
   var dbname: String = js.native
   var dbref: Loki | Null = js.native
   var dirtyPartitions: js.UndefOr[js.Array[Double]] = js.native
   @JSName("mode")
   var mode_LokiPartitioningAdapter: String = js.native
-  var options: AnonDelimiter = js.native
+  var options: AnonPageSize = js.native
   var pageIterator: PageIterator | js.Object = js.native
   /**
     * Saves a database by partioning into separate key/value saves.

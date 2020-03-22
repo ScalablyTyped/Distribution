@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "plur" : "3.1.1"
+      "plur" : "4.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "plur" : "3.1.1"
+      "plur" : "4.0.0"
     }
   ],
   "compile-devDependencies" : [

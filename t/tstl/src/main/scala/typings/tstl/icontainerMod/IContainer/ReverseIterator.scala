@@ -9,8 +9,12 @@ import scala.scalajs.js.annotation._
   *
   * @author Jeongho Nam - https://github.com/samchon
   */
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {readonly [ P in keyof tstl.tstl/iterator/IReverseIterator.IReverseIterator<T, IteratorT, ReverseT> ]: tstl.tstl/iterator/IReverseIterator.IReverseIterator<T, IteratorT, ReverseT>[P]} */ trait ReverseIterator[T /* <: Elem */, Source /* <: typings.tstl.icontainerMod.IContainer[T, Source, IteratorT, ReverseT, Elem] */, IteratorT /* <: Iterator[T, Source, IteratorT, ReverseT, Elem] */, ReverseT /* <: ReverseIterator[T, Source, IteratorT, ReverseT, Elem] */, Elem] extends js.Object {
+/* Inlined parent std.Readonly<tstl.tstl/iterator/IReverseIterator.IReverseIterator<T, IteratorT, ReverseT>> */
+trait ReverseIterator[T /* <: Elem */, Source /* <: typings.tstl.icontainerMod.IContainer[T, Source, IteratorT, ReverseT, Elem] */, IteratorT /* <: Iterator[T, Source, IteratorT, ReverseT, Elem] */, ReverseT /* <: ReverseIterator[T, Source, IteratorT, ReverseT, Elem] */, Elem] extends js.Object {
+  val value: T
+  def base(): IteratorT
+  def next(): ReverseT
+  def prev(): ReverseT
   /**
     * Get source container.
     *
@@ -21,8 +25,8 @@ import scala.scalajs.js.annotation._
 
 object ReverseIterator {
   @scala.inline
-  def apply[T /* <: Elem */, Source /* <: typings.tstl.icontainerMod.IContainer[T, Source, IteratorT, ReverseT, Elem] */, IteratorT /* <: Iterator[T, Source, IteratorT, ReverseT, Elem] */, ReverseT /* <: ReverseIterator[T, Source, IteratorT, ReverseT, Elem] */, Elem](source: () => Source): ReverseIterator[T, Source, IteratorT, ReverseT, Elem] = {
-    val __obj = js.Dynamic.literal(source = js.Any.fromFunction0(source))
+  def apply[T /* <: Elem */, Source /* <: typings.tstl.icontainerMod.IContainer[T, Source, IteratorT, ReverseT, Elem] */, IteratorT /* <: Iterator[T, Source, IteratorT, ReverseT, Elem] */, ReverseT /* <: ReverseIterator[T, Source, IteratorT, ReverseT, Elem] */, Elem](base: () => IteratorT, next: () => ReverseT, prev: () => ReverseT, source: () => Source, value: T): ReverseIterator[T, Source, IteratorT, ReverseT, Elem] = {
+    val __obj = js.Dynamic.literal(base = js.Any.fromFunction0(base), next = js.Any.fromFunction0(next), prev = js.Any.fromFunction0(prev), source = js.Any.fromFunction0(source), value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReverseIterator[T, Source, IteratorT, ReverseT, Elem]]
   }

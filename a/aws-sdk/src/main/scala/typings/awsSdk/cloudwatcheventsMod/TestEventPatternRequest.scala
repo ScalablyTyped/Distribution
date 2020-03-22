@@ -11,7 +11,7 @@ trait TestEventPatternRequest extends js.Object {
     */
   var Event: String = js.native
   /**
-    * The event pattern. For more information, see Event Patterns in the Amazon EventBridge User Guide.
+    * The event pattern. For more information, see Events and Event Patterns in the Amazon EventBridge User Guide.
     */
   var EventPattern: typings.awsSdk.cloudwatcheventsMod.EventPattern = js.native
 }

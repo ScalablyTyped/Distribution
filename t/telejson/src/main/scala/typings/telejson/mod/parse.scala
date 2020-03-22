@@ -1,6 +1,6 @@
 package typings.telejson.mod
 
-import typings.std.Partial
+import typings.telejson.PartialOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object parse extends js.Object {
   def apply(data: String): js.Any = js.native
-  def apply(data: String, options: Partial[Options]): js.Any = js.native
+  def apply(data: String, options: PartialOptions): js.Any = js.native
 }
 

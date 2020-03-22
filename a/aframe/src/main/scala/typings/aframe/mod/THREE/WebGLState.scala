@@ -12,7 +12,6 @@ class WebGLState protected ()
   def this(
     gl: WebGLRenderingContext,
     extensions: typings.three.webGLExtensionsMod.WebGLExtensions,
-    utils: js.Any,
     capabilities: typings.three.webGLCapabilitiesMod.WebGLCapabilities
   ) = this()
 }

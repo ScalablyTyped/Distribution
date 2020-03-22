@@ -1,6 +1,8 @@
 package typings.reactNativeNavigation
 
+import typings.reactNativeNavigation.componentEventsMod.ComponentType
 import typings.reactNativeNavigation.optionsMod.FontWeight
+import typings.reactNativeNavigation.optionsMod.Interpolation
 import typings.reactNativeNavigation.optionsMod.LayoutOrientation
 import typings.reactNativeNavigation.optionsMod.SystemItemIcon
 import scala.scalajs.js
@@ -9,7 +11,22 @@ import scala.scalajs.js.annotation._
 
 object reactNativeNavigationStrings {
   @js.native
-  sealed trait accelerate extends js.Object
+  sealed trait Component extends ComponentType
+  
+  @js.native
+  sealed trait TopBarBackground extends ComponentType
+  
+  @js.native
+  sealed trait TopBarButton extends ComponentType
+  
+  @js.native
+  sealed trait TopBarTitle extends ComponentType
+  
+  @js.native
+  sealed trait accelerate extends Interpolation
+  
+  @js.native
+  sealed trait accelerateDecelerate extends Interpolation
   
   @js.native
   sealed trait action extends SystemItemIcon
@@ -63,7 +80,10 @@ object reactNativeNavigationStrings {
   sealed trait dark extends js.Object
   
   @js.native
-  sealed trait decelerate extends js.Object
+  sealed trait decelerate extends Interpolation
+  
+  @js.native
+  sealed trait decelerateAccelerate extends Interpolation
   
   @js.native
   sealed trait default extends js.Object
@@ -112,6 +132,9 @@ object reactNativeNavigationStrings {
   
   @js.native
   sealed trait light extends FontWeight
+  
+  @js.native
+  sealed trait linear extends Interpolation
   
   @js.native
   sealed trait ltr extends js.Object
@@ -174,10 +197,10 @@ object reactNativeNavigationStrings {
   sealed trait semibold extends FontWeight
   
   @js.native
-  sealed trait sharedElement extends js.Object
+  sealed trait showWhenActive extends js.Object
   
   @js.native
-  sealed trait showWhenActive extends js.Object
+  sealed trait showWhenActiveForce extends js.Object
   
   @js.native
   sealed trait stop extends SystemItemIcon
@@ -210,7 +233,17 @@ object reactNativeNavigationStrings {
   sealed trait withText extends js.Object
   
   @scala.inline
+  def Component: Component = "Component".asInstanceOf[Component]
+  @scala.inline
+  def TopBarBackground: TopBarBackground = "TopBarBackground".asInstanceOf[TopBarBackground]
+  @scala.inline
+  def TopBarButton: TopBarButton = "TopBarButton".asInstanceOf[TopBarButton]
+  @scala.inline
+  def TopBarTitle: TopBarTitle = "TopBarTitle".asInstanceOf[TopBarTitle]
+  @scala.inline
   def accelerate: accelerate = "accelerate".asInstanceOf[accelerate]
+  @scala.inline
+  def accelerateDecelerate: accelerateDecelerate = "accelerateDecelerate".asInstanceOf[accelerateDecelerate]
   @scala.inline
   def action: action = "action".asInstanceOf[action]
   @scala.inline
@@ -248,6 +281,8 @@ object reactNativeNavigationStrings {
   @scala.inline
   def decelerate: decelerate = "decelerate".asInstanceOf[decelerate]
   @scala.inline
+  def decelerateAccelerate: decelerateAccelerate = "decelerateAccelerate".asInstanceOf[decelerateAccelerate]
+  @scala.inline
   def default: default = "default".asInstanceOf[default]
   @scala.inline
   def destructive: destructive = "destructive".asInstanceOf[destructive]
@@ -279,6 +314,8 @@ object reactNativeNavigationStrings {
   def left: left = "left".asInstanceOf[left]
   @scala.inline
   def light: light = "light".asInstanceOf[light]
+  @scala.inline
+  def linear: linear = "linear".asInstanceOf[linear]
   @scala.inline
   def ltr: ltr = "ltr".asInstanceOf[ltr]
   @scala.inline
@@ -320,9 +357,9 @@ object reactNativeNavigationStrings {
   @scala.inline
   def semibold: semibold = "semibold".asInstanceOf[semibold]
   @scala.inline
-  def sharedElement: sharedElement = "sharedElement".asInstanceOf[sharedElement]
-  @scala.inline
   def showWhenActive: showWhenActive = "showWhenActive".asInstanceOf[showWhenActive]
+  @scala.inline
+  def showWhenActiveForce: showWhenActiveForce = "showWhenActiveForce".asInstanceOf[showWhenActiveForce]
   @scala.inline
   def stop: stop = "stop".asInstanceOf[stop]
   @scala.inline

@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ionic/angular/dist/directives/navigation/ion-back-button", JSImport.Namespace)
+@JSImport("@ionic/angular/directives/navigation/ion-back-button", JSImport.Namespace)
 @js.native
 object ionBackButtonMod extends js.Object {
   @js.native

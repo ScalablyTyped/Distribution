@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "limiter" : "1.1.5"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "limiter" : "1.1.5"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

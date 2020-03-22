@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object projectSnippetNotesMod extends js.Object {
   @js.native
-  class ProjectSnippetNotes () extends ResourceNotes {
+  class ProjectSnippetNotes protected () extends ResourceNotes {
     def this(options: BaseServiceOptions) = this()
   }
   

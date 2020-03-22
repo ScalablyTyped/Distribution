@@ -9,7 +9,7 @@ import typings.node.streamMod.Readable
 import typings.node.streamMod.Stream
 import typings.node.urlMod.Url
 import typings.request.AnonConnect
-import typings.request.AnonHref
+import typings.request.Urlhrefstringpathnamestri
 import typings.request.requestBooleans.`false`
 import typings.request.requestBooleans.`true`
 import typings.request.requestStrings.complete
@@ -74,7 +74,7 @@ trait Request
   var timing: js.UndefOr[Boolean] = js.native
   var timings: js.UndefOr[AnonConnect] = js.native
   var tunnel: Boolean = js.native
-  var uri: Url with AnonHref = js.native
+  var uri: Urlhrefstringpathnamestri = js.native
   var withCredentials: js.UndefOr[Boolean] = js.native
   var writable: Boolean = js.native
   def abort(): Unit = js.native

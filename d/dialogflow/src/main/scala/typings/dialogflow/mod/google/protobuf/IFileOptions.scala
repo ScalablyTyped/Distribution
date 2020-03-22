@@ -1,5 +1,6 @@
 package typings.dialogflow.mod.google.protobuf
 
+import typings.dialogflow.mod.google.api.IResourceDescriptor
 import typings.dialogflow.mod.google.protobuf.FileOptions.OptimizeMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -7,6 +8,9 @@ import scala.scalajs.js.annotation._
 
 /** Properties of a FileOptions. */
 trait IFileOptions extends js.Object {
+  /** FileOptions .google.api.resourceDefinition */
+  @JSName(".google.api.resourceDefinition")
+  var DotgoogleDotapiDotresourceDefinition: js.UndefOr[js.Array[IResourceDescriptor] | Null] = js.undefined
   /** FileOptions ccEnableArenas */
   var ccEnableArenas: js.UndefOr[Boolean | Null] = js.undefined
   /** FileOptions ccGenericServices */
@@ -32,7 +36,7 @@ trait IFileOptions extends js.Object {
   /** FileOptions objcClassPrefix */
   var objcClassPrefix: js.UndefOr[String | Null] = js.undefined
   /** FileOptions optimizeFor */
-  var optimizeFor: js.UndefOr[OptimizeMode | Null] = js.undefined
+  var optimizeFor: js.UndefOr[OptimizeMode | String | Null] = js.undefined
   /** FileOptions phpClassPrefix */
   var phpClassPrefix: js.UndefOr[String | Null] = js.undefined
   /** FileOptions phpGenericServices */
@@ -54,6 +58,7 @@ trait IFileOptions extends js.Object {
 object IFileOptions {
   @scala.inline
   def apply(
+    DotgoogleDotapiDotresourceDefinition: js.Array[IResourceDescriptor] = null,
     ccEnableArenas: js.UndefOr[Boolean] = js.undefined,
     ccGenericServices: js.UndefOr[Boolean] = js.undefined,
     csharpNamespace: String = null,
@@ -66,7 +71,7 @@ object IFileOptions {
     javaPackage: String = null,
     javaStringCheckUtf8: js.UndefOr[Boolean] = js.undefined,
     objcClassPrefix: String = null,
-    optimizeFor: OptimizeMode = null,
+    optimizeFor: OptimizeMode | String = null,
     phpClassPrefix: String = null,
     phpGenericServices: js.UndefOr[Boolean] = js.undefined,
     phpMetadataNamespace: String = null,
@@ -77,6 +82,7 @@ object IFileOptions {
     uninterpretedOption: js.Array[IUninterpretedOption] = null
   ): IFileOptions = {
     val __obj = js.Dynamic.literal()
+    if (DotgoogleDotapiDotresourceDefinition != null) __obj.updateDynamic(".google.api.resourceDefinition")(DotgoogleDotapiDotresourceDefinition.asInstanceOf[js.Any])
     if (!js.isUndefined(ccEnableArenas)) __obj.updateDynamic("ccEnableArenas")(ccEnableArenas.asInstanceOf[js.Any])
     if (!js.isUndefined(ccGenericServices)) __obj.updateDynamic("ccGenericServices")(ccGenericServices.asInstanceOf[js.Any])
     if (csharpNamespace != null) __obj.updateDynamic("csharpNamespace")(csharpNamespace.asInstanceOf[js.Any])

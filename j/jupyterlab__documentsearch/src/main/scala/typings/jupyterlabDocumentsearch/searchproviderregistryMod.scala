@@ -3,9 +3,9 @@ package typings.jupyterlabDocumentsearch
 import typings.jupyterlabDocumentsearch.interfacesMod.ISearchProvider
 import typings.jupyterlabDocumentsearch.interfacesMod.ISearchProviderConstructor
 import typings.jupyterlabDocumentsearch.tokensMod.ISearchProviderRegistry
-import typings.phosphorDisposable.mod.IDisposable
-import typings.phosphorSignaling.mod.ISignal
-import typings.phosphorWidgets.mod.Widget
+import typings.luminoDisposable.mod.IDisposable
+import typings.luminoSignaling.mod.ISignal
+import typings.luminoWidgets.mod.Widget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,7 +29,7 @@ object searchproviderregistryMod extends js.Object {
       * or removed.
       */
     @JSName("changed")
-    val changed_SearchProviderRegistry: ISignal[this.type, Unit] = js.native
+    def changed_MSearchProviderRegistry(): ISignal[this.type, Unit] = js.native
     /**
       * Returns a matching provider for the widget.
       *

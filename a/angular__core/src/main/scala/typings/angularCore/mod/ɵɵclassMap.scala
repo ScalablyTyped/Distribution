@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
 object ɵɵclassMap extends js.Object {
   def apply(): Unit = js.native
   def apply(classes: String): Unit = js.native
-  def apply(classes: StringDictionary[js.Any]): Unit = js.native
-  def apply(classes: ɵNOCHANGE): Unit = js.native
+  def apply(classes: StringDictionary[js.UndefOr[Boolean | Null]]): Unit = js.native
 }
 

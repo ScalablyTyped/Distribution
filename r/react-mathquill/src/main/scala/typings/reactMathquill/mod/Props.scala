@@ -6,8 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react.react.ComponentProps<'span'>, 'onChange'> ]: react.react.ComponentProps<'span'>[P]} */ trait Props extends js.Object {
+/* Inlined parent std.Omit<react.react.ComponentProps<'span'>, 'onChange'> */
+trait Props extends js.Object {
   var config: js.UndefOr[Config] = js.undefined
   var latex: js.UndefOr[String] = js.undefined
   var mathquillDidMount: js.UndefOr[js.Function1[/* mathField */ MQ, Unit]] = js.undefined

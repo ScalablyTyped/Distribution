@@ -3,9 +3,9 @@ package typings.loopback.mod
 import typings.loopback.AnonConflicts
 import typings.loopback.AnonCreated
 import typings.loopback.AnonFields
-import typings.loopback.AnonFieldsInclude
-import typings.loopback.AnonFieldsIncludeOrder
+import typings.loopback.AnonInclude
 import typings.loopback.AnonInfo
+import typings.loopback.AnonOrder
 import typings.loopback.AnonThrows
 import typings.loopback.AnonValidate
 import typings.loopback.AnonWhere
@@ -437,7 +437,7 @@ object PersistedModel extends js.Object {
     * @param {any} instance Model instance matching the specified ID or null if no instance matches
     */
   def findById[T](id: js.Any, callback: CallbackWithResult[T]): Unit = js.native
-  def findById[T](id: js.Any, filter: AnonFieldsInclude): js.Promise[T | Null] = js.native
+  def findById[T](id: js.Any, filter: AnonInclude): js.Promise[T | Null] = js.native
   /**
     * Find object by ID with an optional filter for include/fields
     * @param {*} id Primary key value
@@ -450,7 +450,7 @@ object PersistedModel extends js.Object {
     * @param {Error} err Error object; see [Error object](docs.strongloop.com/display/LB/Error+object).
     * @param {any} instance Model instance matching the specified ID or null if no instance matches
     */
-  def findById[T](id: js.Any, filter: AnonFieldsInclude, callback: CallbackWithResult[T]): Unit = js.native
+  def findById[T](id: js.Any, filter: AnonInclude, callback: CallbackWithResult[T]): Unit = js.native
   /**
     * Find one model instance that matches `filter` specification.
     * Same as `find`, but limited to one result;
@@ -481,7 +481,7 @@ object PersistedModel extends js.Object {
     * @param {Array} model First model instance that matches the filter or null if none found
     */
   def findOne[T](callback: CallbackWithResult[T]): Unit = js.native
-  def findOne[T](filter: AnonFieldsIncludeOrder): js.Promise[T | Null] = js.native
+  def findOne[T](filter: AnonOrder): js.Promise[T | Null] = js.native
   /**
     * Find one model instance that matches `filter` specification.
     * Same as `find`, but limited to one result;
@@ -505,7 +505,7 @@ object PersistedModel extends js.Object {
     * @param {Error} err Error object; see [Error object](docs.strongloop.com/display/LB/Error+object).
     * @param {Array} model First model instance that matches the filter or null if none found
     */
-  def findOne[T](filter: AnonFieldsIncludeOrder, callback: CallbackWithResult[T]): Unit = js.native
+  def findOne[T](filter: AnonOrder, callback: CallbackWithResult[T]): Unit = js.native
   /**
     * Finds one record matching the optional filter object. If not found, creates
     * the object using the data provided as second argument. In this sense it is

@@ -1,9 +1,12 @@
 package typings.ionicCore.componentsMod.Components
 
+import typings.ionicCore.ionicCoreStrings.always
 import typings.ionicCore.ionicCoreStrings.decimal
 import typings.ionicCore.ionicCoreStrings.email
+import typings.ionicCore.ionicCoreStrings.focus
 import typings.ionicCore.ionicCoreStrings.ios
 import typings.ionicCore.ionicCoreStrings.md
+import typings.ionicCore.ionicCoreStrings.never
 import typings.ionicCore.ionicCoreStrings.none
 import typings.ionicCore.ionicCoreStrings.number
 import typings.ionicCore.ionicCoreStrings.numeric
@@ -34,7 +37,7 @@ trait IonSearchbar extends js.Object {
     */
   var autocorrect: on | off
   /**
-    * Set the cancel button icon. Only applies to `md` mode.
+    * Set the cancel button icon. Only applies to `md` mode. Defaults to `"arrow-back-sharp"`.
     */
   var cancelButtonIcon: String
   /**
@@ -42,7 +45,7 @@ trait IonSearchbar extends js.Object {
     */
   var cancelButtonText: String
   /**
-    * Set the clear icon. Defaults to `"close-circle"` for `ios` and `"close"` for `md`.
+    * Set the clear icon. Defaults to `"close-circle"` for `ios` and `"close-sharp"` for `md`.
     */
   var clearIcon: js.UndefOr[String] = js.undefined
   /**
@@ -60,7 +63,7 @@ trait IonSearchbar extends js.Object {
   /**
     * A hint to the browser for which keyboard to display. Possible values: `"none"`, `"text"`, `"tel"`, `"url"`, `"email"`, `"numeric"`, `"decimal"`, and `"search"`.
     */
-  var inputmode: none | text | tel | url | email | numeric | decimal | search
+  var inputmode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
   /**
     * The mode determines which platform styles to use.
     */
@@ -70,13 +73,13 @@ trait IonSearchbar extends js.Object {
     */
   var placeholder: String
   /**
-    * The icon to use as the search icon.
+    * The icon to use as the search icon. Defaults to `"search-outline"` in `ios` mode and `"search-sharp"` in `md` mode.
     */
-  var searchIcon: String
+  var searchIcon: js.UndefOr[String] = js.undefined
   /**
     * Sets the behavior for the cancel button. Defaults to `"never"`. Setting to `"focus"` shows the cancel button on focus. Setting to `"never"` hides the cancel button. Setting to `"always"` shows the cancel button regardless of focus state.
     */
-  var showCancelButton: Boolean | String
+  var showCancelButton: never | focus | always
   /**
     * If `true`, enable spellcheck on the input.
     */
@@ -110,23 +113,25 @@ object IonSearchbar {
     debounce: Double,
     disabled: Boolean,
     getInputElement: () => js.Promise[HTMLInputElement],
-    inputmode: none | text | tel | url | email | numeric | decimal | search,
     placeholder: String,
-    searchIcon: String,
     setFocus: () => js.Promise[Unit],
-    showCancelButton: Boolean | String,
+    showCancelButton: never | focus | always,
     spellcheck: Boolean,
     `type`: text | password | email | number | search | tel | url,
     clearIcon: String = null,
     color: Color = null,
+    inputmode: none | text | tel | url | email | numeric | decimal | search = null,
     mode: ios | md = null,
+    searchIcon: String = null,
     value: String = null
   ): IonSearchbar = {
-    val __obj = js.Dynamic.literal(animated = animated.asInstanceOf[js.Any], autocomplete = autocomplete.asInstanceOf[js.Any], autocorrect = autocorrect.asInstanceOf[js.Any], cancelButtonIcon = cancelButtonIcon.asInstanceOf[js.Any], cancelButtonText = cancelButtonText.asInstanceOf[js.Any], debounce = debounce.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], getInputElement = js.Any.fromFunction0(getInputElement), inputmode = inputmode.asInstanceOf[js.Any], placeholder = placeholder.asInstanceOf[js.Any], searchIcon = searchIcon.asInstanceOf[js.Any], setFocus = js.Any.fromFunction0(setFocus), showCancelButton = showCancelButton.asInstanceOf[js.Any], spellcheck = spellcheck.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(animated = animated.asInstanceOf[js.Any], autocomplete = autocomplete.asInstanceOf[js.Any], autocorrect = autocorrect.asInstanceOf[js.Any], cancelButtonIcon = cancelButtonIcon.asInstanceOf[js.Any], cancelButtonText = cancelButtonText.asInstanceOf[js.Any], debounce = debounce.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], getInputElement = js.Any.fromFunction0(getInputElement), placeholder = placeholder.asInstanceOf[js.Any], setFocus = js.Any.fromFunction0(setFocus), showCancelButton = showCancelButton.asInstanceOf[js.Any], spellcheck = spellcheck.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (clearIcon != null) __obj.updateDynamic("clearIcon")(clearIcon.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (inputmode != null) __obj.updateDynamic("inputmode")(inputmode.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (searchIcon != null) __obj.updateDynamic("searchIcon")(searchIcon.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonSearchbar]
   }

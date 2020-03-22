@@ -4,6 +4,7 @@ import typings.knex.mod.AliasDict
 import typings.knex.mod.Knex
 import typings.knex.mod.QueryBuilder
 import typings.knex.mod.TableDescriptor
+import typings.knex.mod.TableOptions
 import typings.knex.mod.Transaction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -19,7 +20,9 @@ trait Bookshelf
   var knex_Original: Knex[_, js.Array[_]] = js.native
   def knex[TRecord2, TResult2](): QueryBuilder[TRecord2, TResult2] = js.native
   def knex[TRecord2, TResult2](tableName: AliasDict): QueryBuilder[TRecord2, TResult2] = js.native
+  def knex[TRecord2, TResult2](tableName: AliasDict, options: TableOptions): QueryBuilder[TRecord2, TResult2] = js.native
   def knex[TRecord2, TResult2](tableName: TableDescriptor): QueryBuilder[TRecord2, TResult2] = js.native
+  def knex[TRecord2, TResult2](tableName: TableDescriptor, options: TableOptions): QueryBuilder[TRecord2, TResult2] = js.native
   def plugin(name: String): Bookshelf = js.native
   def plugin(name: String, options: js.Any): Bookshelf = js.native
   def plugin(name: js.Array[String]): Bookshelf = js.native

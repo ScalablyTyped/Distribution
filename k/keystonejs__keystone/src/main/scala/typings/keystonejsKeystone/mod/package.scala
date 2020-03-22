@@ -15,7 +15,6 @@ package object mod {
     */
   type DefaultValueFunction = js.Function0[js.Any]
   type GraphQLWhereClause = org.scalablytyped.runtime.StringDictionary[js.Any]
-  type Hooks = typings.std.Partial[typings.keystonejsKeystone.AnonAddFieldValidationError]
   type KeyValues[Keys /* <: java.lang.String */, Values] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in Keys ]: Values}
     */ typings.keystonejsKeystone.keystonejsKeystoneStrings.KeyValues with js.Any

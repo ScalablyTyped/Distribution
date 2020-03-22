@@ -25,7 +25,7 @@ trait CreateVpcEndpointConnectionNotificationRequest extends js.Object {
   /**
     * The ID of the endpoint service.
     */
-  var ServiceId: js.UndefOr[typings.awsSdk.ec2Mod.ServiceId] = js.native
+  var ServiceId: js.UndefOr[VpcEndpointServiceId] = js.native
   /**
     * The ID of the endpoint.
     */
@@ -39,7 +39,7 @@ object CreateVpcEndpointConnectionNotificationRequest {
     ConnectionNotificationArn: String,
     ClientToken: String = null,
     DryRun: js.UndefOr[scala.Boolean] = js.undefined,
-    ServiceId: ServiceId = null,
+    ServiceId: VpcEndpointServiceId = null,
     VpcEndpointId: VpcEndpointId = null
   ): CreateVpcEndpointConnectionNotificationRequest = {
     val __obj = js.Dynamic.literal(ConnectionEvents = ConnectionEvents.asInstanceOf[js.Any], ConnectionNotificationArn = ConnectionNotificationArn.asInstanceOf[js.Any])

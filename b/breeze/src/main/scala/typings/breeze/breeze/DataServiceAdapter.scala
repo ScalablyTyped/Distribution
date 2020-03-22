@@ -1,8 +1,8 @@
 package typings.breeze.breeze
 
 import typings.breeze.AnonDataService
-import typings.breeze.AnonDataServiceResourceName
 import typings.breeze.AnonInterfaceName
+import typings.breeze.AnonResourceName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,6 +15,6 @@ class DataServiceAdapter () extends js.Object {
   def executeQuery(mappingContext: AnonDataService): js.Promise[_] = js.native
   def fetchMetadata(metadataStore: MetadataStore, dataService: DataService): js.Promise[_] = js.native
   def initialize(): Unit = js.native
-  def saveChanges(saveContext: AnonDataServiceResourceName, saveBundle: js.Object): js.Promise[SaveResult] = js.native
+  def saveChanges(saveContext: AnonResourceName, saveBundle: js.Object): js.Promise[SaveResult] = js.native
 }
 

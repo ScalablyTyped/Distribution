@@ -3,6 +3,7 @@ package typings.antdMobile
 import typings.antdMobile.abstractPickerMod.AbstractPickerProps
 import typings.antdMobile.agreeItemMod.AgreeItemPropsType
 import typings.antdMobile.customInputMod.NumberInputProps
+import typings.antdMobile.datePickerMod.PropsType
 import typings.antdMobile.drawerPropsTypeMod.DrawerWebProps
 import typings.antdMobile.imagePickerMod.ImagePickerPropTypes
 import typings.antdMobile.indexedMod.MIndexedListProps
@@ -12,7 +13,6 @@ import typings.antdMobile.pickerViewPickerViewMod.IPickerView
 import typings.antdMobile.popoverMod.PopOverPropsType
 import typings.antdMobile.stepperMod.StepProps
 import typings.antdMobile.tabBarMod.AntTabbarProps
-import typings.rmcCalendar.calendarPropsMod.PropsType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -36,8 +36,6 @@ trait antdMobileProps {
   @scala.inline
   def ButtonProps: typings.antdMobile.buttonMod.ButtonProps.type = typings.antdMobile.buttonMod.ButtonProps
   type ButtonProps = typings.antdMobile.buttonMod.ButtonProps
-  @scala.inline
-  def CalendarProps: PropsType.type = typings.rmcCalendar.calendarPropsMod.PropsType
   type CalendarProps = typings.antdMobile.calendarPropsTypeMod.CalendarProps
   @scala.inline
   def CardProps: typings.antdMobile.cardMod.CardProps.type = typings.antdMobile.cardMod.CardProps
@@ -64,13 +62,11 @@ trait antdMobileProps {
   def CustomInputProps: NumberInputProps.type = typings.antdMobile.customInputMod.NumberInputProps
   type CustomInputProps = NumberInputProps
   @scala.inline
-  def DatePickerProps: typings.antdMobile.datePickerMod.PropsType.type = typings.antdMobile.datePickerMod.PropsType
-  type DatePickerProps = typings.antdMobile.datePickerMod.PropsType
+  def DatePickerProps: PropsType.type = typings.antdMobile.datePickerMod.PropsType
+  type DatePickerProps = PropsType
   @scala.inline
   def DatePickerViewProps: typings.antdMobile.datePickerViewPropsTypeMod.DatePickerProps.type = typings.antdMobile.datePickerViewPropsTypeMod.DatePickerProps
   type DatePickerViewProps = typings.antdMobile.datePickerViewPropsTypeMod.DatePickerProps
-  @scala.inline
-  def DefaultTabBarProps: typings.rmcTabs.defaultTabBarMod.PropsType.type = typings.rmcTabs.defaultTabBarMod.PropsType
   type DefaultTabBarProps = typings.rmcTabs.defaultTabBarMod.PropsType
   @scala.inline
   def DrawerProps: DrawerWebProps.type = typings.antdMobile.drawerPropsTypeMod.DrawerWebProps
@@ -146,8 +142,6 @@ trait antdMobileProps {
   @scala.inline
   def ProgressProps: typings.antdMobile.progressMod.ProgressProps.type = typings.antdMobile.progressMod.ProgressProps
   type ProgressProps = typings.antdMobile.progressMod.ProgressProps
-  @scala.inline
-  def PullToRefreshProps: typings.rmcPullToRefresh.propsTypeMod.PropsType.type = typings.rmcPullToRefresh.propsTypeMod.PropsType
   type PullToRefreshProps = typings.rmcPullToRefresh.propsTypeMod.PropsType
   @scala.inline
   def RadioProps: typings.antdMobile.radioRadioMod.RadioProps.type = typings.antdMobile.radioRadioMod.RadioProps

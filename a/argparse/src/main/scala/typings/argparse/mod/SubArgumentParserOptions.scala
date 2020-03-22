@@ -1,6 +1,6 @@
 package typings.argparse.mod
 
-import typings.argparse.AnonArgumentDefaultsHelpFormatter
+import typings.argparse.Anon0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +19,7 @@ object SubArgumentParserOptions {
     debug: js.UndefOr[Boolean] = js.undefined,
     description: String = null,
     epilog: String = null,
-    formatterClass: AnonArgumentDefaultsHelpFormatter = null,
+    formatterClass: Anon0 = null,
     help: String = null,
     parents: js.Array[ArgumentParser] = null,
     prefixChars: String = null,

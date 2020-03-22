@@ -2,10 +2,10 @@ package typings.gapiClientClouddebugger.gapi.client.clouddebugger
 
 import typings.gapiClient.gapi.client.Request_
 import typings.gapiClientClouddebugger.AnonAccesstoken
-import typings.gapiClientClouddebugger.AnonAccesstokenActionvalue
-import typings.gapiClientClouddebugger.AnonAccesstokenAlt
-import typings.gapiClientClouddebugger.AnonAccesstokenAltBearertoken
-import typings.gapiClientClouddebugger.AnonAccesstokenAltBearertokenCallback
+import typings.gapiClientClouddebugger.AnonActionvalue
+import typings.gapiClientClouddebugger.AnonAlt
+import typings.gapiClientClouddebugger.AnonBearertoken
+import typings.gapiClientClouddebugger.AnonCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,9 +13,9 @@ import scala.scalajs.js.annotation._
 @js.native
 trait BreakpointsResource extends js.Object {
   /** Deletes the breakpoint from the debuggee. */
-  def delete(request: AnonAccesstokenAltBearertoken): Request_[js.Object] = js.native
+  def delete(request: AnonBearertoken): Request_[js.Object] = js.native
   /** Gets breakpoint information. */
-  def get(request: AnonAccesstokenAltBearertoken): Request_[GetBreakpointResponse] = js.native
+  def get(request: AnonBearertoken): Request_[GetBreakpointResponse] = js.native
   /**
     * Returns the list of all active breakpoints for the debuggee.
     *
@@ -33,9 +33,9 @@ trait BreakpointsResource extends js.Object {
     */
   def list(request: AnonAccesstoken): Request_[ListActiveBreakpointsResponse] = js.native
   /** Lists all breakpoints for the debuggee. */
-  def list(request: AnonAccesstokenActionvalue): Request_[ListBreakpointsResponse] = js.native
+  def list(request: AnonActionvalue): Request_[ListBreakpointsResponse] = js.native
   /** Sets the breakpoint to the debuggee. */
-  def set(request: AnonAccesstokenAltBearertokenCallback): Request_[SetBreakpointResponse] = js.native
+  def set(request: AnonCallback): Request_[SetBreakpointResponse] = js.native
   /**
     * Updates the breakpoint state or mutable fields.
     * The entire Breakpoint message must be sent back to the controller service.
@@ -46,6 +46,6 @@ trait BreakpointsResource extends js.Object {
     * semantics. These may only make changes such as canonicalizing a value
     * or snapping the location to the correct line of code.
     */
-  def update(request: AnonAccesstokenAlt): Request_[js.Object] = js.native
+  def update(request: AnonAlt): Request_[js.Object] = js.native
 }
 

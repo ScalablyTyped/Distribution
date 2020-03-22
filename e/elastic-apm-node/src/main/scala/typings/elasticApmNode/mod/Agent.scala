@@ -57,6 +57,9 @@ trait Agent
   def isStarted(): Boolean = js.native
   def lambda(handler: Handler[_, _]): Handler[_, _] = js.native
   def lambda(`type`: String, handler: Handler[_, _]): Handler[_, _] = js.native
+  // Custom metrics
+  def registerMetric(name: String, callback: js.Function): Unit = js.native
+  def registerMetric(name: String, labels: Labels, callback: js.Function): Unit = js.native
   def removePatch(modules: String, handler: String): Unit = js.native
   def removePatch(modules: String, handler: PatchHandler): Unit = js.native
   def removePatch(modules: js.Array[String], handler: String): Unit = js.native

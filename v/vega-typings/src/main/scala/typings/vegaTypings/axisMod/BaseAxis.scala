@@ -159,7 +159,7 @@ trait BaseAxis extends js.Object {
     */
   var labelOverlap: js.UndefOr[LabelOverlap | SignalRef] = js.undefined
   /**
-    * The padding, in pixels, between axis and text labels.
+    * The padding in pixels between labels and ticks.
     *
     * __Default value:__ `2`
     */

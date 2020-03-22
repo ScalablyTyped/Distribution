@@ -15,7 +15,6 @@ package object mod {
   type FuncReturns[TBase] = js.Any
   type Impl[TBase] = typings.aureliaDependencyInjection.mod.CtorImpl[TBase] | typings.aureliaDependencyInjection.mod.FuncReturns[TBase]
   type ImplOrAny[TImpl] = TImpl
-  type Injectable = js.Function with typings.aureliaDependencyInjection.AnonInjectAnyArray
   type Primitive = scala.Boolean | java.lang.String | scala.Double | js.Symbol | js.Object | (js.Function1[/* repeated */ js.Any, js.Any]) | js.Array[js.Any]
   type PrimitiveOrDependencyCtor[TBase, TImpl /* <: typings.aureliaDependencyInjection.mod.Impl[TBase] */, TArgs /* <: typings.aureliaDependencyInjection.mod.Args[TBase] */] = (typings.aureliaDependencyInjection.mod.DependencyCtor[TBase, TImpl, TArgs]) | typings.aureliaDependencyInjection.mod.Primitive
   type PrimitiveOrDependencyCtorOrFunctor[TBase, TImpl /* <: typings.aureliaDependencyInjection.mod.Impl[TBase] */, TArgs /* <: typings.aureliaDependencyInjection.mod.Args[TBase] */] = (typings.aureliaDependencyInjection.mod.DependencyCtor[TBase, TImpl, TArgs]) | (typings.aureliaDependencyInjection.mod.DependencyFunctor[TBase, TImpl, TArgs]) | typings.aureliaDependencyInjection.mod.Primitive

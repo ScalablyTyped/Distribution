@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "openapi-request-validator"
-version := "4.1.0-b7c835"
+version := "4.2.0-0f5a00"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "ajv" % "6.11.0-0c5674",
-  "org.scalablytyped" %%% "openapi-types" % "1.3.5-775339",
-  "org.scalablytyped" %%% "std" % "3.7-1b8369",
+  "org.scalablytyped" %%% "ajv" % "6.12.0-eabe0e",
+  "org.scalablytyped" %%% "openapi-types" % "1.3.5-6a4209",
+  "org.scalablytyped" %%% "std" % "3.8-a0108c",
   "org.scalablytyped" %%% "ts-log" % "2.1.4-ef4bf4")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")

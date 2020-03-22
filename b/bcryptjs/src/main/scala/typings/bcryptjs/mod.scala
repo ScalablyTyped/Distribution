@@ -1,6 +1,5 @@
 package typings.bcryptjs
 
-import typings.std.ArrayLike
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -21,7 +20,7 @@ object mod extends js.Object {
   @JSName("compare")
   def compare_Promise(s: String, hash: String): js.Promise[Boolean] = js.native
   def decodeBase64(s: String, len: Double): js.Array[Double] = js.native
-  def encodeBase64(b: ArrayLike[Double], len: Double): String = js.native
+  def encodeBase64(b: ReadonlyArrayLikenumber, len: Double): String = js.native
   def genSalt(): js.Promise[String] = js.native
   def genSalt(callback: js.Function2[/* err */ Error, /* salt */ String, Unit]): Unit = js.native
   def genSalt(rounds: Double): js.Promise[String] = js.native

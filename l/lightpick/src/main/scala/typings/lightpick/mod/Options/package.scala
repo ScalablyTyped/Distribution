@@ -6,7 +6,6 @@ import scala.scalajs.js.annotation._
 
 package object Options {
   type Dropdowns = typings.lightpick.mod.Options.Dropdowns_
-  type Field = typings.std.Element with typings.lightpick.AnonValue
   type Locale = typings.lightpick.mod.Options.Locale_
   /**
     * Callback function for when the picker is hidden.

@@ -23,7 +23,6 @@ import scala.scalajs.js.annotation._
 @JSImport("skatejs/api", JSImport.Namespace)
 @js.native
 object apiMod extends js.Object {
-  val props: AnonAny = js.native
   def define[T /* <: HTMLElementClass */](ctor: T): T = js.native
   def emit(elem: HTMLElementClass, eventName: String): Boolean = js.native
   def emit(elem: HTMLElementClass, eventName: String, eventOptions: EventOptions): Boolean = js.native
@@ -39,8 +38,8 @@ object apiMod extends js.Object {
   def shadow(elem: HTMLElement): ShadowRoot = js.native
   def withChildren[T /* <: Constructor[HTMLElement] */](): Constructor[WithChildren] with T = js.native
   def withChildren[T /* <: Constructor[HTMLElement] */](Base: T): Constructor[WithChildren] with T = js.native
-  def withComponent[T /* <: Constructor[HTMLElement] */](): TypeofClassWithComponent = js.native
-  def withComponent[T /* <: Constructor[HTMLElement] */](Base: T): TypeofClassWithComponent = js.native
+  def withComponent[T /* <: Constructor[HTMLElement] */](): TypeofWithComponent = js.native
+  def withComponent[T /* <: Constructor[HTMLElement] */](Base: T): TypeofWithComponent = js.native
   @JSName("withComponent")
   def withComponent_PSCT_ConstructorHTMLElement_Intersection[P, S, C, T /* <: Constructor[HTMLElement] */](): (Constructor[WithComponent[P, S, C]]) with T = js.native
   @JSName("withComponent")
@@ -53,5 +52,21 @@ object apiMod extends js.Object {
   def withRenderer[O, T /* <: Constructor[HTMLElement] */](Base: T): Constructor[WithRenderer[O]] with T = js.native
   def withUpdate[P, S, T /* <: Constructor[HTMLElement] */](): (Constructor[WithUpdate[P, S]]) with T = js.native
   def withUpdate[P, S, T /* <: Constructor[HTMLElement] */](Base: T): (Constructor[WithUpdate[P, S]]) with T = js.native
+  @js.native
+  object props extends js.Object {
+    def any(target: js.Object, propertyKey: String): Unit = js.native
+    def any(target: js.Object, propertyKey: js.Symbol): Unit = js.native
+    def array(target: js.Object, propertyKey: String): Unit = js.native
+    def array(target: js.Object, propertyKey: js.Symbol): Unit = js.native
+    def boolean(target: js.Object, propertyKey: String): Unit = js.native
+    def boolean(target: js.Object, propertyKey: js.Symbol): Unit = js.native
+    def number(target: js.Object, propertyKey: String): Unit = js.native
+    def number(target: js.Object, propertyKey: js.Symbol): Unit = js.native
+    def `object`(target: js.Object, propertyKey: String): Unit = js.native
+    def `object`(target: js.Object, propertyKey: js.Symbol): Unit = js.native
+    def string(target: js.Object, propertyKey: String): Unit = js.native
+    def string(target: js.Object, propertyKey: js.Symbol): Unit = js.native
+  }
+  
 }
 

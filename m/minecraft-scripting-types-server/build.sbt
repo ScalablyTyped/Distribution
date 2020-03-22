@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "minecraft-scripting-types-server"
-version := "1.0.0-12b57b"
+version := "1.0.0-7d28cf"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "minecraft-scripting-types-shared" % "1.0.0-bbab83",
-  "org.scalablytyped" %%% "std" % "3.7-1b8369")
+  "org.scalablytyped" %%% "minecraft-scripting-types-shared" % "1.0.0-cbc0d9",
+  "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -2,7 +2,7 @@ package typings.gapiClientStorage.gapi.client.storage
 
 import typings.gapiClient.gapi.client.Request_
 import typings.gapiClientStorage.AnonAlt
-import typings.gapiClientStorage.AnonAltBucket
+import typings.gapiClientStorage.AnonBucket
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,9 +13,9 @@ trait BucketAccessControlsResource extends js.Object {
   /** Returns the ACL entry for the specified entity on the specified bucket. */
   def get(request: AnonAlt): Request_[BucketAccessControl]
   /** Creates a new ACL entry on the specified bucket. */
-  def insert(request: AnonAltBucket): Request_[BucketAccessControl]
+  def insert(request: AnonBucket): Request_[BucketAccessControl]
   /** Retrieves ACL entries on the specified bucket. */
-  def list(request: AnonAltBucket): Request_[BucketAccessControls]
+  def list(request: AnonBucket): Request_[BucketAccessControls]
   /** Updates an ACL entry on the specified bucket. This method supports patch semantics. */
   def patch(request: AnonAlt): Request_[BucketAccessControl]
   /** Updates an ACL entry on the specified bucket. */
@@ -27,8 +27,8 @@ object BucketAccessControlsResource {
   def apply(
     delete: AnonAlt => Request_[Unit],
     get: AnonAlt => Request_[BucketAccessControl],
-    insert: AnonAltBucket => Request_[BucketAccessControl],
-    list: AnonAltBucket => Request_[BucketAccessControls],
+    insert: AnonBucket => Request_[BucketAccessControl],
+    list: AnonBucket => Request_[BucketAccessControls],
     patch: AnonAlt => Request_[BucketAccessControl],
     update: AnonAlt => Request_[BucketAccessControl]
   ): BucketAccessControlsResource = {

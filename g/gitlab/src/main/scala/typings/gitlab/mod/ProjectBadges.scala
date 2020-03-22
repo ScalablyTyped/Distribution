@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("gitlab", "ProjectBadges")
 @js.native
-class ProjectBadges ()
+class ProjectBadges protected ()
   extends typings.gitlab.servicesMod.ProjectBadges {
   def this(options: BaseServiceOptions) = this()
 }

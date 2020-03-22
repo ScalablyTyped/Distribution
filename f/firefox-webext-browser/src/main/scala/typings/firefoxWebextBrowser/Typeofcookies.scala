@@ -36,12 +36,12 @@ trait Typeofcookies extends js.Object {
     * Deletes a cookie by name.
     * @param details Information to identify the cookie to remove.
     */
-  def remove(details: AnonFirstPartyDomain): js.Promise[AnonFirstPartyDomainName]
+  def remove(details: AnonFirstPartyDomain): js.Promise[AnonStoreId]
   /**
     * Sets a cookie with the given cookie data; may overwrite equivalent cookies if they exist.
     * @param details Details about the cookie being set.
     */
-  def set(details: AnonDomainExpirationDate): js.Promise[Cookie]
+  def set(details: AnonExpirationDate): js.Promise[Cookie]
 }
 
 object Typeofcookies {
@@ -51,8 +51,8 @@ object Typeofcookies {
     getAll: AnonDomain => js.Promise[js.Array[Cookie]],
     getAllCookieStores: () => js.Promise[js.Array[CookieStore]],
     onChanged: WebExtEvent[js.Function1[/* changeInfo */ AnonCause, Unit]],
-    remove: AnonFirstPartyDomain => js.Promise[AnonFirstPartyDomainName],
-    set: AnonDomainExpirationDate => js.Promise[Cookie]
+    remove: AnonFirstPartyDomain => js.Promise[AnonStoreId],
+    set: AnonExpirationDate => js.Promise[Cookie]
   ): Typeofcookies = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), getAll = js.Any.fromFunction1(getAll), getAllCookieStores = js.Any.fromFunction0(getAllCookieStores), onChanged = onChanged.asInstanceOf[js.Any], remove = js.Any.fromFunction1(remove), set = js.Any.fromFunction1(set))
   

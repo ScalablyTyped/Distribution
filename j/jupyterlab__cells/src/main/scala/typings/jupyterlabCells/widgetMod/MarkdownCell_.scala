@@ -2,7 +2,7 @@ package typings.jupyterlabCells.widgetMod
 
 import typings.jupyterlabCells.modelMod.IMarkdownCellModel
 import typings.jupyterlabCells.widgetMod.MarkdownCell.IOptions
-import typings.phosphorWidgets.mod.Widget
+import typings.luminoWidgets.mod.Widget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,15 +32,16 @@ class MarkdownCell_ protected () extends AttachmentsCell {
     * The model used by the widget.
     */
   @JSName("model")
-  val model_MarkdownCell_ : IMarkdownCellModel = js.native
-  /**
-    * Whether the cell is rendered.
-    */
-  var rendered: Boolean = js.native
+  val model_FMarkdownCell_ : IMarkdownCellModel = js.native
   /**
     * Render an input instead of the text editor.
     */
   /* protected */ def renderInput(widget: Widget): Unit = js.native
+  /**
+    * Whether the cell is rendered.
+    */
+  def rendered(): Boolean = js.native
+  def rendered(value: Boolean): js.Any = js.native
   /**
     * Show the text editor instead of rendered input.
     */

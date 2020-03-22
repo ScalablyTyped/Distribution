@@ -13,18 +13,18 @@ trait RejectVpcEndpointConnectionsRequest extends js.Object {
   /**
     * The ID of the service.
     */
-  var ServiceId: typings.awsSdk.ec2Mod.ServiceId = js.native
+  var ServiceId: VpcEndpointServiceId = js.native
   /**
     * The IDs of one or more VPC endpoints.
     */
-  var VpcEndpointIds: ValueStringList = js.native
+  var VpcEndpointIds: VpcEndpointIdList = js.native
 }
 
 object RejectVpcEndpointConnectionsRequest {
   @scala.inline
   def apply(
-    ServiceId: ServiceId,
-    VpcEndpointIds: ValueStringList,
+    ServiceId: VpcEndpointServiceId,
+    VpcEndpointIds: VpcEndpointIdList,
     DryRun: js.UndefOr[scala.Boolean] = js.undefined
   ): RejectVpcEndpointConnectionsRequest = {
     val __obj = js.Dynamic.literal(ServiceId = ServiceId.asInstanceOf[js.Any], VpcEndpointIds = VpcEndpointIds.asInstanceOf[js.Any])

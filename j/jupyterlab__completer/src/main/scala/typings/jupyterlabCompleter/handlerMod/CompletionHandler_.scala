@@ -7,9 +7,9 @@ import typings.jupyterlabCompleter.handlerMod.CompletionHandler.IReply
 import typings.jupyterlabCompleter.handlerMod.CompletionHandler.IRequest
 import typings.jupyterlabCompleter.widgetMod.Completer
 import typings.jupyterlabCompleter.widgetMod.Completer.ITextState
-import typings.jupyterlabCoreutils.interfacesMod.IDataConnector
-import typings.phosphorDisposable.mod.IDisposable
-import typings.phosphorMessaging.mod.Message
+import typings.jupyterlabStatedb.interfacesMod.IDataConnector
+import typings.luminoDisposable.mod.IDisposable
+import typings.luminoMessaging.mod.Message
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,19 +43,6 @@ class CompletionHandler_ protected () extends IDisposable {
     */
   val completer: Completer = js.native
   /**
-    * The data connector used to populate completion requests.
-    *
-    * #### Notes
-    * The only method of this connector that will ever be called is `fetch`, so
-    * it is acceptable for the other methods to be simple functions that return
-    * rejected promises.
-    */
-  var connector: IDataConnector[IReply, Unit, IRequest] = js.native
-  /**
-    * The editor used by the completion handler.
-    */
-  var editor: IEditor | Null = js.native
-  /**
     * Test whether the object has been disposed.
     *
     * #### Notes
@@ -63,6 +50,16 @@ class CompletionHandler_ protected () extends IDisposable {
     */
   /* CompleteClass */
   override val isDisposed: Boolean = js.native
+  /**
+    * The data connector used to populate completion requests.
+    *
+    * #### Notes
+    * The only method of this connector that will ever be called is `fetch`, so
+    * it is acceptable for the other methods to be simple functions that return
+    * rejected promises.
+    */
+  def connector(): IDataConnector[IReply, Unit, IRequest, String] = js.native
+  def connector(connector: IDataConnector[IReply, Unit, IRequest, String]): js.Any = js.native
   /**
     * Dispose of the resources held by the object.
     *
@@ -76,6 +73,13 @@ class CompletionHandler_ protected () extends IDisposable {
     */
   /* CompleteClass */
   override def dispose(): Unit = js.native
+  def editor(): js.Any = js.native
+  def editor(newValue: IEditor): js.Any = js.native
+  /**
+    * The editor used by the completion handler.
+    */
+  @JSName("editor")
+  def editor_Union(): IEditor | Null = js.native
   /**
     * Get the state of the text editor at the given position.
     */
@@ -84,6 +88,11 @@ class CompletionHandler_ protected () extends IDisposable {
     * Invoke the handler and launch a completer.
     */
   def invoke(): Unit = js.native
+  /**
+    * Get whether the completion handler is disposed.
+    */
+  @JSName("isDisposed")
+  def isDisposed_MCompletionHandler_(): Boolean = js.native
   /**
     * Handle a completion selected signal from the completion widget.
     */

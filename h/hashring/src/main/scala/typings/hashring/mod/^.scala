@@ -1,6 +1,6 @@
 package typings.hashring.mod
 
-import typings.std.Partial
+import typings.hashring.PartialHashRingOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 class ^ protected () extends HashRing {
   def this(servers: Servers) = this()
   def this(servers: Servers, algorithm: String) = this()
-  def this(servers: Servers, algorithm: String, options: Partial[HashRingOptions]) = this()
+  def this(servers: Servers, algorithm: String, options: PartialHashRingOptions) = this()
 }
 

@@ -14,7 +14,7 @@ object _Dependency {
     __obj.asInstanceOf[_Dependency]
   }
   @scala.inline
-  def AnonNameVersion(name: String, version: String): _Dependency = {
+  def AnonVersion(name: String, version: String): _Dependency = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_Dependency]

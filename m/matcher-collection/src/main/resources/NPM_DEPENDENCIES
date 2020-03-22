@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "matcher-collection" : "1.1.2"
+      "matcher-collection" : "2.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "matcher-collection" : "1.1.2"
+      "matcher-collection" : "2.0.1"
     }
   ],
   "compile-devDependencies" : [

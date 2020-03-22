@@ -1,6 +1,9 @@
 package typings.antd.tooltipMod
 
 import typings.antd.placementsMod.AdjustOverflow
+import typings.rcTrigger.interfaceMod.ActionType
+import typings.rcTrigger.interfaceMod.AlignType
+import typings.rcTrigger.interfaceMod.BuildInPlacements
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
 import typings.std.HTMLElement
@@ -9,10 +12,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AbstractTooltipProps extends js.Object {
-  var align: js.UndefOr[TooltipAlignConfig] = js.undefined
+  var align: js.UndefOr[AlignType] = js.undefined
   var arrowPointAtCenter: js.UndefOr[Boolean] = js.undefined
   var autoAdjustOverflow: js.UndefOr[Boolean | AdjustOverflow] = js.undefined
-  var builtinPlacements: js.UndefOr[js.Object] = js.undefined
+  var builtinPlacements: js.UndefOr[BuildInPlacements] = js.undefined
   var children: js.UndefOr[ReactNode] = js.undefined
   var className: js.UndefOr[String] = js.undefined
   var defaultVisible: js.UndefOr[Boolean] = js.undefined
@@ -30,17 +33,17 @@ trait AbstractTooltipProps extends js.Object {
   var prefixCls: js.UndefOr[String] = js.undefined
   var style: js.UndefOr[CSSProperties] = js.undefined
   var transitionName: js.UndefOr[String] = js.undefined
-  var trigger: js.UndefOr[TooltipTrigger] = js.undefined
+  var trigger: js.UndefOr[ActionType] = js.undefined
   var visible: js.UndefOr[Boolean] = js.undefined
 }
 
 object AbstractTooltipProps {
   @scala.inline
   def apply(
-    align: TooltipAlignConfig = null,
+    align: AlignType = null,
     arrowPointAtCenter: js.UndefOr[Boolean] = js.undefined,
     autoAdjustOverflow: Boolean | AdjustOverflow = null,
-    builtinPlacements: js.Object = null,
+    builtinPlacements: BuildInPlacements = null,
     children: ReactNode = null,
     className: String = null,
     defaultVisible: js.UndefOr[Boolean] = js.undefined,
@@ -57,7 +60,7 @@ object AbstractTooltipProps {
     prefixCls: String = null,
     style: CSSProperties = null,
     transitionName: String = null,
-    trigger: TooltipTrigger = null,
+    trigger: ActionType = null,
     visible: js.UndefOr[Boolean] = js.undefined
   ): AbstractTooltipProps = {
     val __obj = js.Dynamic.literal()

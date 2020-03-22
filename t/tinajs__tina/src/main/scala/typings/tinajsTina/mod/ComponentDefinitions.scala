@@ -1,7 +1,7 @@
 package typings.tinajsTina.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Partial
+import typings.tinajsTina.PartialComponentDefinitioCompute
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait ComponentDefinitions extends ComponentLifecycles {
   var data: StringDictionary[js.Any]
   var methods: StringDictionary[js.ThisFunction1[/* this */ Component, /* repeated */ js.Any, _]]
-  var mixins: js.Array[Partial[ComponentDefinitions]]
+  var mixins: js.Array[PartialComponentDefinitioCompute]
   var properties: ComponentProperties
   def compute(data: StringDictionary[js.Any]): StringDictionary[js.Any]
 }
@@ -23,7 +23,7 @@ object ComponentDefinitions {
     data: StringDictionary[js.Any],
     detached: () => Unit,
     methods: StringDictionary[js.ThisFunction1[/* this */ Component, /* repeated */ js.Any, _]],
-    mixins: js.Array[Partial[ComponentDefinitions]],
+    mixins: js.Array[PartialComponentDefinitioCompute],
     moved: () => Unit,
     properties: ComponentProperties,
     ready: () => Unit

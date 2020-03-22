@@ -1,10 +1,12 @@
 package typings.officeUiFabricReact.colorPickerBaseMod
 
+import typings.officeUiFabricReact.PartialIColorPickerProps
+import typings.officeUiFabricReact.ReadonlyIColorPickerProps
+import typings.officeUiFabricReact.ReadonlyIColorPickerState
 import typings.officeUiFabricReact.colorPickerTypesMod.IColorPicker
 import typings.officeUiFabricReact.colorPickerTypesMod.IColorPickerProps
 import typings.officeUiFabricReact.interfacesMod.IColor
 import typings.react.mod.Component
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,13 +41,13 @@ class ColorPickerBase protected ()
   /* CompleteClass */
   override var color: IColor = js.native
   @JSName("componentDidUpdate")
-  def componentDidUpdate_MColorPickerBase(prevProps: IColorPickerProps, prevState: IColorPickerState): Unit = js.native
+  def componentDidUpdate_MColorPickerBase(prevProps: ReadonlyIColorPickerProps, prevState: ReadonlyIColorPickerState): Unit = js.native
 }
 
 /* static members */
 @JSImport("office-ui-fabric-react/lib/components/ColorPicker/ColorPicker.base", "ColorPickerBase")
 @js.native
 object ColorPickerBase extends js.Object {
-  var defaultProps: Partial[IColorPickerProps] = js.native
+  var defaultProps: PartialIColorPickerProps = js.native
 }
 

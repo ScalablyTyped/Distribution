@@ -6,5 +6,7 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("SpeechSynthesisErrorEvent")
 @js.native
-class SpeechSynthesisErrorEventCls () extends SpeechSynthesisErrorEvent
+class SpeechSynthesisErrorEventCls protected () extends SpeechSynthesisErrorEvent {
+  def this(`type`: java.lang.String, eventInitDict: SpeechSynthesisErrorEventInit) = this()
+}
 

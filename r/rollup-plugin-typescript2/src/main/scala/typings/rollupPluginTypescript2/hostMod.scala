@@ -15,7 +15,7 @@ object hostMod extends js.Object {
   @js.native
   class LanguageServiceHost protected ()
     extends typings.typescript.mod.LanguageServiceHost {
-    def this(parsedConfig: ParsedCommandLine, transformers: js.Array[TransformerFactoryCreator]) = this()
+    def this(parsedConfig: ParsedCommandLine, transformers: js.Array[TransformerFactoryCreator], cwd: String) = this()
     var cwd: js.Any = js.native
     var fileNames: js.Any = js.native
     var parsedConfig: js.Any = js.native

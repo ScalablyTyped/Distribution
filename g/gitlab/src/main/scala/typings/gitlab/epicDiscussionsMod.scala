@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object epicDiscussionsMod extends js.Object {
   @js.native
-  class EpicDiscussions () extends ResourceDiscussions {
+  class EpicDiscussions protected () extends ResourceDiscussions {
     def this(options: BaseServiceOptions) = this()
   }
   

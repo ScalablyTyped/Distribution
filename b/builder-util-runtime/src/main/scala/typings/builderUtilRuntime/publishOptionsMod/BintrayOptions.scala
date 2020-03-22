@@ -1,6 +1,7 @@
 package typings.builderUtilRuntime.publishOptionsMod
 
 import typings.builderUtilRuntime.builderUtilRuntimeStrings.bintray
+import typings.node.httpMod.OutgoingHttpHeaders
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -54,6 +55,7 @@ object BintrayOptions {
     publishAutoUpdate: js.UndefOr[Boolean] = js.undefined,
     publisherName: js.Array[String] = null,
     repo: String = null,
+    requestHeaders: OutgoingHttpHeaders = null,
     token: String = null,
     updaterCacheDirName: String = null,
     user: String = null
@@ -66,6 +68,7 @@ object BintrayOptions {
     if (!js.isUndefined(publishAutoUpdate)) __obj.updateDynamic("publishAutoUpdate")(publishAutoUpdate.asInstanceOf[js.Any])
     if (publisherName != null) __obj.updateDynamic("publisherName")(publisherName.asInstanceOf[js.Any])
     if (repo != null) __obj.updateDynamic("repo")(repo.asInstanceOf[js.Any])
+    if (requestHeaders != null) __obj.updateDynamic("requestHeaders")(requestHeaders.asInstanceOf[js.Any])
     if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
     if (updaterCacheDirName != null) __obj.updateDynamic("updaterCacheDirName")(updaterCacheDirName.asInstanceOf[js.Any])
     if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])

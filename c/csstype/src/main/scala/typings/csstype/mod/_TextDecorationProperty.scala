@@ -4,5 +4,5 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait _TextDecorationProperty extends js.Object
+trait _TextDecorationProperty[TLength] extends js.Object
 

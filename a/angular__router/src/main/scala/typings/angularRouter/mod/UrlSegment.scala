@@ -14,10 +14,10 @@ class UrlSegment protected () extends js.Object {
     /** The matrix parameters associated with a segment */
   parameters: StringDictionary[String]
   ) = this()
-  val parameterMap: ParamMap = js.native
   /** The matrix parameters associated with a segment */
   var parameters: StringDictionary[String] = js.native
   /** The path part of a URL segment */
   var path: String = js.native
+  def parameterMap(): ParamMap = js.native
 }
 

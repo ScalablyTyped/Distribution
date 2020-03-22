@@ -1,8 +1,8 @@
 package typings.exceljs.mod
 
+import typings.exceljs.PartialXlsxWriteOptions
 import typings.node.eventsMod.EventEmitter
 import typings.node.streamMod.Stream
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,16 +31,16 @@ trait Xlsx extends js.Object {
   	 * write to a stream
   	 */
   def write(stream: Stream): js.Promise[Unit] = js.native
-  def write(stream: Stream, options: Partial[XlsxWriteOptions]): js.Promise[Unit] = js.native
+  def write(stream: Stream, options: PartialXlsxWriteOptions): js.Promise[Unit] = js.native
   /**
   	 * write to a buffer
   	 */
   def writeBuffer(): js.Promise[Buffer] = js.native
-  def writeBuffer(options: Partial[XlsxWriteOptions]): js.Promise[Buffer] = js.native
+  def writeBuffer(options: PartialXlsxWriteOptions): js.Promise[Buffer] = js.native
   /**
   	 * write to a file
   	 */
   def writeFile(path: String): js.Promise[Unit] = js.native
-  def writeFile(path: String, options: Partial[XlsxWriteOptions]): js.Promise[Unit] = js.native
+  def writeFile(path: String, options: PartialXlsxWriteOptions): js.Promise[Unit] = js.native
 }
 

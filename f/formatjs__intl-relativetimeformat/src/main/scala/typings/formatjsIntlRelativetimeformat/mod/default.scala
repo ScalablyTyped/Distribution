@@ -1,9 +1,8 @@
 package typings.formatjsIntlRelativetimeformat.mod
 
-import typings.formatjsIntlRelativetimeformat.formatjsIntlRelativetimeformatStrings.localeMatcher
+import typings.formatjsIntlRelativetimeformat.PickIntlRelativeTimeForma
 import typings.formatjsIntlUtils.relativeTimeTypesMod.RelativeTimeLocaleData
 import typings.formatjsIntlUtils.relativeTimeTypesMod.UnpackedLocaleFieldsData
-import typings.std.Pick
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -37,10 +36,8 @@ object default extends js.Object {
   var relevantExtensionKeys: js.Any = js.native
   def __addLocaleData(data: RelativeTimeLocaleData*): scala.Unit = js.native
   def supportedLocalesOf(locales: String): js.Array[String] = js.native
+  def supportedLocalesOf(locales: String, options: PickIntlRelativeTimeForma): js.Array[String] = js.native
   def supportedLocalesOf(locales: js.Array[String]): js.Array[String] = js.native
-  @JSName("supportedLocalesOf")
-  def supportedLocalesOf_localeMatcher(locales: String, options: Pick[IntlRelativeTimeFormatOptions, localeMatcher]): js.Array[String] = js.native
-  @JSName("supportedLocalesOf")
-  def supportedLocalesOf_localeMatcher(locales: js.Array[String], options: Pick[IntlRelativeTimeFormatOptions, localeMatcher]): js.Array[String] = js.native
+  def supportedLocalesOf(locales: js.Array[String], options: PickIntlRelativeTimeForma): js.Array[String] = js.native
 }
 

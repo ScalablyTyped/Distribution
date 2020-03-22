@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait IonSplitPane extends js.Object {
   /**
-    * The content `id` of the split-pane's main content. This property can be used instead of the `[main]` attribute to select the `main` content of the split-pane.
+    * The content `id` of the split-pane's main content.
     */
   var contentId: js.UndefOr[String] = js.undefined
   /**

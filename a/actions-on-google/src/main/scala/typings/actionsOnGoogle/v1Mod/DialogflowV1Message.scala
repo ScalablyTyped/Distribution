@@ -44,6 +44,68 @@ trait DialogflowV1Message extends js.Object
 
 object DialogflowV1Message {
   @scala.inline
+  def DialogflowV1MessageText(
+    platform: facebook_ | kik_ | line_ | skype_ | slack_ | telegram_ | viber_ = null,
+    speech: String = null,
+    `type`: `0` = null
+  ): DialogflowV1Message = {
+    val __obj = js.Dynamic.literal()
+    if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
+    if (speech != null) __obj.updateDynamic("speech")(speech.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DialogflowV1Message]
+  }
+  @scala.inline
+  def DialogflowV1MessageList(
+    platform: google,
+    items: js.Array[DialogflowV1MessageOptionItem] = null,
+    title: String = null,
+    `type`: list_card = null
+  ): DialogflowV1Message = {
+    val __obj = js.Dynamic.literal(platform = platform.asInstanceOf[js.Any])
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DialogflowV1Message]
+  }
+  @scala.inline
+  def DialogflowV1MessageSuggestions(
+    platform: google,
+    suggestions: js.Array[DialogflowV1MessageSuggestion] = null,
+    `type`: suggestion_chips = null
+  ): DialogflowV1Message = {
+    val __obj = js.Dynamic.literal(platform = platform.asInstanceOf[js.Any])
+    if (suggestions != null) __obj.updateDynamic("suggestions")(suggestions.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DialogflowV1Message]
+  }
+  @scala.inline
+  def DialogflowV1MessageQuickReplies(
+    platform: facebook_ | kik_ | line_ | skype_ | slack_ | telegram_ | viber_ = null,
+    replies: js.Array[String] = null,
+    title: String = null,
+    `type`: `2` = null
+  ): DialogflowV1Message = {
+    val __obj = js.Dynamic.literal()
+    if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
+    if (replies != null) __obj.updateDynamic("replies")(replies.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DialogflowV1Message]
+  }
+  @scala.inline
+  def DialogflowV1MessageCustomPayload(
+    payload: JsonObject = null,
+    platform: facebook_ | kik_ | line_ | skype_ | slack_ | telegram_ | viber_ = null,
+    `type`: `4` = null
+  ): DialogflowV1Message = {
+    val __obj = js.Dynamic.literal()
+    if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
+    if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DialogflowV1Message]
+  }
+  @scala.inline
   def DialogflowV1MessageBasicCard(
     platform: google,
     buttons: js.Array[DialogflowV1MessageBasicCardButton] = null,
@@ -70,27 +132,13 @@ object DialogflowV1Message {
     __obj.asInstanceOf[DialogflowV1Message]
   }
   @scala.inline
-  def DialogflowV1MessageQuickReplies(
-    platform: facebook_ | kik_ | line_ | skype_ | slack_ | telegram_ | viber_ = null,
-    replies: js.Array[String] = null,
-    title: String = null,
-    `type`: `2` = null
-  ): DialogflowV1Message = {
-    val __obj = js.Dynamic.literal()
-    if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
-    if (replies != null) __obj.updateDynamic("replies")(replies.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[DialogflowV1Message]
-  }
-  @scala.inline
-  def DialogflowV1MessageSuggestions(
+  def DialogflowV1MessageCarousel(
     platform: google,
-    suggestions: js.Array[DialogflowV1MessageSuggestion] = null,
-    `type`: suggestion_chips = null
+    items: js.Array[DialogflowV1MessageOptionItem] = null,
+    `type`: carousel_card = null
   ): DialogflowV1Message = {
     val __obj = js.Dynamic.literal(platform = platform.asInstanceOf[js.Any])
-    if (suggestions != null) __obj.updateDynamic("suggestions")(suggestions.asInstanceOf[js.Any])
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogflowV1Message]
   }
@@ -113,6 +161,19 @@ object DialogflowV1Message {
     __obj.asInstanceOf[DialogflowV1Message]
   }
   @scala.inline
+  def DialogflowV1MessageSimpleResponse(
+    platform: google,
+    displayText: String = null,
+    textToSpeech: String = null,
+    `type`: simple_response = null
+  ): DialogflowV1Message = {
+    val __obj = js.Dynamic.literal(platform = platform.asInstanceOf[js.Any])
+    if (displayText != null) __obj.updateDynamic("displayText")(displayText.asInstanceOf[js.Any])
+    if (textToSpeech != null) __obj.updateDynamic("textToSpeech")(textToSpeech.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DialogflowV1Message]
+  }
+  @scala.inline
   def DialogflowV1MessageImage(
     imageUrl: String = null,
     platform: facebook_ | kik_ | line_ | skype_ | slack_ | telegram_ | viber_ = null,
@@ -127,72 +188,11 @@ object DialogflowV1Message {
     __obj.asInstanceOf[DialogflowV1Message]
   }
   @scala.inline
-  def DialogflowV1MessageText(
-    platform: facebook_ | kik_ | line_ | skype_ | slack_ | telegram_ | viber_ = null,
-    speech: String = null,
-    `type`: `0` = null
-  ): DialogflowV1Message = {
-    val __obj = js.Dynamic.literal()
-    if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
-    if (speech != null) __obj.updateDynamic("speech")(speech.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[DialogflowV1Message]
-  }
-  @scala.inline
-  def DialogflowV1MessageCarousel(
-    platform: google,
-    items: js.Array[DialogflowV1MessageOptionItem] = null,
-    `type`: carousel_card = null
-  ): DialogflowV1Message = {
-    val __obj = js.Dynamic.literal(platform = platform.asInstanceOf[js.Any])
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[DialogflowV1Message]
-  }
-  @scala.inline
   def DialogflowV1MessageLinkOut(platform: google, destinationName: String = null, `type`: link_out_chip = null, url: String = null): DialogflowV1Message = {
     val __obj = js.Dynamic.literal(platform = platform.asInstanceOf[js.Any])
     if (destinationName != null) __obj.updateDynamic("destinationName")(destinationName.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    __obj.asInstanceOf[DialogflowV1Message]
-  }
-  @scala.inline
-  def DialogflowV1MessageCustomPayload(
-    payload: JsonObject = null,
-    platform: facebook_ | kik_ | line_ | skype_ | slack_ | telegram_ | viber_ = null,
-    `type`: `4` = null
-  ): DialogflowV1Message = {
-    val __obj = js.Dynamic.literal()
-    if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
-    if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[DialogflowV1Message]
-  }
-  @scala.inline
-  def DialogflowV1MessageList(
-    platform: google,
-    items: js.Array[DialogflowV1MessageOptionItem] = null,
-    title: String = null,
-    `type`: list_card = null
-  ): DialogflowV1Message = {
-    val __obj = js.Dynamic.literal(platform = platform.asInstanceOf[js.Any])
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[DialogflowV1Message]
-  }
-  @scala.inline
-  def DialogflowV1MessageSimpleResponse(
-    platform: google,
-    displayText: String = null,
-    textToSpeech: String = null,
-    `type`: simple_response = null
-  ): DialogflowV1Message = {
-    val __obj = js.Dynamic.literal(platform = platform.asInstanceOf[js.Any])
-    if (displayText != null) __obj.updateDynamic("displayText")(displayText.asInstanceOf[js.Any])
-    if (textToSpeech != null) __obj.updateDynamic("textToSpeech")(textToSpeech.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogflowV1Message]
   }
 }

@@ -1,7 +1,7 @@
 package typings.oracleOraclejet.ojdatagridMod.ojDataGrid
 
+import typings.oracleOraclejet.AnonColumnK
 import typings.oracleOraclejet.AnonColumnRow
-import typings.oracleOraclejet.AnonColumnRowK
 import typings.oracleOraclejet.oracleOraclejetStrings.cell
 import typings.oracleOraclejet.oracleOraclejetStrings.column
 import typings.oracleOraclejet.oracleOraclejetStrings.columnEnd
@@ -19,7 +19,7 @@ trait CurrentCell[K] extends js.Object {
   var index: js.UndefOr[Double] = js.undefined
   var indexes: js.UndefOr[AnonColumnRow] = js.undefined
   var key: js.UndefOr[js.Any] = js.undefined
-  var keys: js.UndefOr[AnonColumnRowK[K]] = js.undefined
+  var keys: js.UndefOr[AnonColumnK[K]] = js.undefined
   var level: js.UndefOr[Double] = js.undefined
   var `type`: cell | header | label
 }
@@ -32,7 +32,7 @@ object CurrentCell {
     index: Int | Double = null,
     indexes: AnonColumnRow = null,
     key: js.Any = null,
-    keys: AnonColumnRowK[K] = null,
+    keys: AnonColumnK[K] = null,
     level: Int | Double = null
   ): CurrentCell[K] = {
     val __obj = js.Dynamic.literal()

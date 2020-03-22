@@ -11,9 +11,9 @@ object arEGMod extends js.Object {
   object default extends js.Object {
     var dateFormat: String = js.native
     var dateTimeFormat: String = js.native
-    var lang: js.Any = js.native
+    var lang: AnonClear = js.native
     var monthFormat: String = js.native
-    var timePickerLocale: AnonPlaceholder = js.native
+    var timePickerLocale: AnonPlaceholderString = js.native
     var weekFormat: String = js.native
   }
   

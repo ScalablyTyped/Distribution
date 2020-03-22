@@ -1,9 +1,9 @@
 package typings.apolloClient.storeMod
 
 import typings.apolloCache.mod.ApolloCache
-import typings.apolloClient.AnonDocumentMutationId
-import typings.apolloClient.AnonDocumentMutationIdMutationResult
 import typings.apolloClient.AnonMutationId
+import typings.apolloClient.AnonOptimisticResponse
+import typings.apolloClient.AnonResult
 import typings.graphql.astMod.DocumentNode
 import typings.graphql.executeMod.ExecutionResult
 import typings.graphql.executeMod.ExecutionResultDataDefault
@@ -17,9 +17,9 @@ class DataStore[TSerialized] protected () extends js.Object {
   def this(initialCache: ApolloCache[TSerialized]) = this()
   var cache: js.Any = js.native
   def getCache(): ApolloCache[TSerialized] = js.native
-  def markMutationComplete(hasMutationIdOptimisticResponse: AnonMutationId): Unit = js.native
-  def markMutationInit(mutation: AnonDocumentMutationId): Unit = js.native
-  def markMutationResult(mutation: AnonDocumentMutationIdMutationResult): Unit = js.native
+  def markMutationComplete(hasMutationIdOptimisticResponse: AnonOptimisticResponse): Unit = js.native
+  def markMutationInit(mutation: AnonMutationId): Unit = js.native
+  def markMutationResult(mutation: AnonResult): Unit = js.native
   def markQueryResult(result: ExecutionResult[ExecutionResultDataDefault], document: DocumentNode, variables: js.Any): Unit = js.native
   def markQueryResult(
     result: ExecutionResult[ExecutionResultDataDefault],

@@ -2,14 +2,14 @@ package typings.toJsonSchema.mod
 
 import typings.jsonSchema.mod.JSONSchema4TypeName
 import typings.toJsonSchema.AnonAdditionalProperties
-import typings.toJsonSchema.AnonAll
-import typings.toJsonSchema.AnonDefaultFnc
+import typings.toJsonSchema.AnonDetectFormat
+import typings.toJsonSchema.AnonMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
-  var arrays: js.UndefOr[AnonAll] = js.undefined
+  var arrays: js.UndefOr[AnonMode] = js.undefined
   var objects: js.UndefOr[AnonAdditionalProperties] = js.undefined
   /**
     * By providing `postProcessFnc`, you can modify or replace generated
@@ -51,13 +51,13 @@ trait Options extends js.Object {
     * // { type: "integer", "required": true }
     */
   var required: js.UndefOr[Boolean] = js.undefined
-  var strings: js.UndefOr[AnonDefaultFnc] = js.undefined
+  var strings: js.UndefOr[AnonDetectFormat] = js.undefined
 }
 
 object Options {
   @scala.inline
   def apply(
-    arrays: AnonAll = null,
+    arrays: AnonMode = null,
     objects: AnonAdditionalProperties = null,
     postProcessFnc: (/* type */ JSONSchema4TypeName, /* schema */ JSONSchema3or4, /* value */ js.Any, /* defaultFunc */ js.Function3[
       /* type */ JSONSchema4TypeName, 
@@ -66,7 +66,7 @@ object Options {
       JSONSchema3or4
     ]) => JSONSchema3or4 = null,
     required: js.UndefOr[Boolean] = js.undefined,
-    strings: AnonDefaultFnc = null
+    strings: AnonDetectFormat = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (arrays != null) __obj.updateDynamic("arrays")(arrays.asInstanceOf[js.Any])

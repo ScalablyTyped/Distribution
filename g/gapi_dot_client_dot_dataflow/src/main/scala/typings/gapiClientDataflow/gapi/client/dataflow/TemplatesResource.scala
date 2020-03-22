@@ -1,12 +1,12 @@
 package typings.gapiClientDataflow.gapi.client.dataflow
 
 import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientDataflow.AnonAccesstokenAltBearertokenCallbackFieldsGcsPath
-import typings.gapiClientDataflow.AnonAccesstokenAltBearertokenCallbackFieldsGcsPathKey
-import typings.gapiClientDataflow.AnonAccesstokenAltBearertokenCallbackFieldsGcsPathKeyLocation
-import typings.gapiClientDataflow.AnonAccesstokenAltBearertokenCallbackFieldsGcsPathKeyLocationOauthtoken
-import typings.gapiClientDataflow.AnonAccesstokenAltBearertokenCallbackFieldsKeyLocationOauthtoken
-import typings.gapiClientDataflow.AnonAccesstokenAltBearertokenCallbackFieldsKeyOauthtoken
+import typings.gapiClientDataflow.AnonGcsPath
+import typings.gapiClientDataflow.AnonQuotaUser
+import typings.gapiClientDataflow.AnonUploadType
+import typings.gapiClientDataflow.AnonUploadprotocol
+import typings.gapiClientDataflow.AnonValidateOnly
+import typings.gapiClientDataflow.AnonView
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,16 +14,16 @@ import scala.scalajs.js.annotation._
 @js.native
 trait TemplatesResource extends js.Object {
   /** Creates a Cloud Dataflow job from a template. */
-  def create(request: AnonAccesstokenAltBearertokenCallbackFieldsKeyLocationOauthtoken): Request_[Job] = js.native
+  def create(request: AnonQuotaUser): Request_[Job] = js.native
   /** Creates a Cloud Dataflow job from a template. */
-  def create(request: AnonAccesstokenAltBearertokenCallbackFieldsKeyOauthtoken): Request_[Job] = js.native
+  def create(request: AnonUploadprotocol): Request_[Job] = js.native
   /** Get the template associated with a template. */
-  def get(request: AnonAccesstokenAltBearertokenCallbackFieldsGcsPath): Request_[GetTemplateResponse] = js.native
+  def get(request: AnonGcsPath): Request_[GetTemplateResponse] = js.native
   /** Get the template associated with a template. */
-  def get(request: AnonAccesstokenAltBearertokenCallbackFieldsGcsPathKeyLocation): Request_[GetTemplateResponse] = js.native
+  def get(request: AnonView): Request_[GetTemplateResponse] = js.native
   /** Launch a template. */
-  def launch(request: AnonAccesstokenAltBearertokenCallbackFieldsGcsPathKey): Request_[LaunchTemplateResponse] = js.native
+  def launch(request: AnonUploadType): Request_[LaunchTemplateResponse] = js.native
   /** Launch a template. */
-  def launch(request: AnonAccesstokenAltBearertokenCallbackFieldsGcsPathKeyLocationOauthtoken): Request_[LaunchTemplateResponse] = js.native
+  def launch(request: AnonValidateOnly): Request_[LaunchTemplateResponse] = js.native
 }
 

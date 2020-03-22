@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ionic/angular/dist/providers/loading-controller", JSImport.Namespace)
+@JSImport("@ionic/angular/providers/loading-controller", JSImport.Namespace)
 @js.native
 object loadingControllerMod extends js.Object {
   @js.native

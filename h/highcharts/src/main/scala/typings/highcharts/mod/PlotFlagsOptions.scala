@@ -8,10 +8,9 @@ import scala.scalajs.js.annotation._
 
 trait PlotFlagsOptions extends js.Object {
   /**
-    * (Highstock) Accessibility options for a series. Requires the
-    * accessibility module.
+    * (Highstock) Accessibility options for a series.
     */
-  var accessibility: js.UndefOr[js.Object | PlotFlagsAccessibilityOptions] = js.undefined
+  var accessibility: js.UndefOr[SeriesAccessibilityOptionsObject] = js.undefined
   /**
     * (Highmaps) Whether all areas of the map defined in `mapData` should be
     * rendered. If `true`, areas which don't correspond to a data point, are
@@ -134,18 +133,19 @@ trait PlotFlagsOptions extends js.Object {
   var compareBase: js.UndefOr[`0` | `100`] = js.undefined
   /**
     * (Highstock) Defines if comparison should start from the first point
-    * within the visible range or should start from the first point (see online
-    * documentation for example) the range. In other words, this flag
-    * determines if first point within the visible range will have 0%
-    * (`compareStart=true`) or should have been already calculated according to
-    * the previous point (`compareStart=false`).
+    * within the visible range or should start from the first point **before**
+    * the range.
+    *
+    * In other words, this flag determines if first point within the visible
+    * range will have 0% (`compareStart=true`) or should have been already
+    * calculated according to the previous point (`compareStart=false`).
     */
   var compareStart: js.UndefOr[Boolean] = js.undefined
   /**
     * (Gantt) Override Pathfinder connector options for a series. Requires
     * Highcharts Gantt to be loaded.
     */
-  var connectors: js.UndefOr[PlotFlagsConnectorsOptions] = js.undefined
+  var connectors: js.UndefOr[SeriesConnectorsOptionsObject] = js.undefined
   /**
     * (Highcharts, Highstock, Gantt) When true, each column edge is rounded to
     * its nearest pixel in order to render sharp on screen. In some cases, when
@@ -176,8 +176,8 @@ trait PlotFlagsOptions extends js.Object {
     */
   var cursor: js.UndefOr[String | CursorValue] = js.undefined
   /**
-    * (Highstock) Options for the series data labels, appearing next to each
-    * data point.
+    * (Highcharts, Highstock, Highmaps, Gantt) Options for the series data
+    * labels, appearing next to each data point.
     *
     * Since v6.2.0, multiple data labels can be applied to each single point by
     * defining them as an array of configs.
@@ -186,7 +186,11 @@ trait PlotFlagsOptions extends js.Object {
     * `.highcharts-data-label-box` and `.highcharts-data-label` class names
     * (see example).
     */
-  var dataLabels: js.UndefOr[js.Any] = js.undefined
+  var dataLabels: js.UndefOr[DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject]] = js.undefined
+  /**
+    * (Highcharts, Highstock) Options for the series data sorting.
+    */
+  var dataSorting: js.UndefOr[DataSortingOptionsObject | PlotFlagsDataSortingOptions] = js.undefined
   /**
     * (Highcharts) Depth of the columns in a 3D column chart.
     */
@@ -202,7 +206,7 @@ trait PlotFlagsOptions extends js.Object {
     * `dragDrop` API structure, the module fires three events, point.dragStart,
     * point.drag and point.drop.
     */
-  var dragDrop: js.UndefOr[PlotFlagsDragDropOptions] = js.undefined
+  var dragDrop: js.UndefOr[SeriesDragDropOptionsObject] = js.undefined
   /**
     * (Highcharts) 3D columns only. The color of the edges. Similar to
     * `borderColor`, except it defaults to the same color as the column.
@@ -223,7 +227,7 @@ trait PlotFlagsOptions extends js.Object {
     * hooks can also be attached to the series at run time using the
     * `Highcharts.addEvent` function.
     */
-  var events: js.UndefOr[PlotFlagsEventsOptions] = js.undefined
+  var events: js.UndefOr[SeriesEventsOptionsObject] = js.undefined
   /**
     * (Highstock) The fill color for the flags.
     */
@@ -306,15 +310,15 @@ trait PlotFlagsOptions extends js.Object {
     * The series labels currently work with series types having a `graph` or an
     * `area`.
     */
-  var label: js.UndefOr[PlotFlagsLabelOptions] = js.undefined
+  var label: js.UndefOr[SeriesLabelOptionsObject] = js.undefined
   /**
     * (Highstock) The line marks the last price from all points.
     */
-  var lastPrice: js.UndefOr[PlotFlagsLastPriceOptions] = js.undefined
+  var lastPrice: js.UndefOr[SeriesLastPriceOptionsObject] = js.undefined
   /**
     * (Highstock) The line marks the last price from visible range of points.
     */
-  var lastVisiblePrice: js.UndefOr[PlotFlagsLastVisiblePriceOptions] = js.undefined
+  var lastVisiblePrice: js.UndefOr[SeriesLastVisiblePriceOptionsObject] = js.undefined
   /**
     * (Highstock) The color of the line/border of the flag.
     *
@@ -331,6 +335,10 @@ trait PlotFlagsOptions extends js.Object {
     * Additionally, the value can be ":previous" to link to the previous
     * series. When two series are linked, only the first one appears in the
     * legend. Toggling the visibility of this also toggles the linked series.
+    *
+    * If master series uses data sorting and linked series does not have its
+    * own sorting definition, the linked series will be sorted in the same
+    * order as the master one.
     */
   var linkedTo: js.UndefOr[String] = js.undefined
   /**
@@ -359,7 +367,9 @@ trait PlotFlagsOptions extends js.Object {
   var navigatorOptions: js.UndefOr[PlotSeriesOptions] = js.undefined
   /**
     * (Highstock) The color for the parts of the graph or points that are below
-    * the threshold.
+    * the threshold. Note that `zones` takes precedence over the negative
+    * color. Using `negativeColor` is equivalent to applying a zone with value
+    * of 0.
     */
   var negativeColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
@@ -382,7 +392,7 @@ trait PlotFlagsOptions extends js.Object {
   /**
     * (Highstock) Properties for each single point.
     */
-  var point: js.UndefOr[PlotFlagsPointOptions] = js.undefined
+  var point: js.UndefOr[PlotSeriesPointOptions] = js.undefined
   /**
     * (Highstock) Same as accessibility.pointDescriptionFormatter, but for an
     * individual series. Overrides the chart wide configuration.
@@ -449,6 +459,8 @@ trait PlotFlagsOptions extends js.Object {
     *
     * The default `null` means it is computed automatically, but this option
     * can be used to override the automatic value.
+    *
+    * This option is set by default to 1 if data sorting is enabled.
     */
   var pointRange: js.UndefOr[Double] = js.undefined
   /**
@@ -523,7 +535,7 @@ trait PlotFlagsOptions extends js.Object {
     * The second one is `"overlap"`, which only applies to waterfall series.
     */
   var stacking: js.UndefOr[OptionsStackingValue] = js.undefined
-  var states: js.UndefOr[PlotFlagsStatesOptions] = js.undefined
+  var states: js.UndefOr[SeriesStatesOptionsObject] = js.undefined
   /**
     * (Highstock) Sticky tracking of mouse events. When true, the `mouseOut`
     * event on a series isn't triggered until the mouse moves over another
@@ -554,7 +566,7 @@ trait PlotFlagsOptions extends js.Object {
     * distinguishing between values above and below a threshold. If `null`, the
     * columns extend from the padding Y axis minimum.
     */
-  var threshold: js.UndefOr[js.Any] = js.undefined
+  var threshold: js.UndefOr[Double] = js.undefined
   /**
     * (Highstock) The text to display on each flag. This can be defined on
     * series level, or individually for each point. Defaults to `"A"`.
@@ -566,7 +578,7 @@ trait PlotFlagsOptions extends js.Object {
     * a data value, so the tooltip rather displays the `text` option for each
     * point.
     */
-  var tooltip: js.UndefOr[PlotFlagsTooltipOptions] = js.undefined
+  var tooltip: js.UndefOr[SeriesTooltipOptionsObject] = js.undefined
   /**
     * (Highstock) Whether to use HTML to render the flag texts. Using HTML
     * allows for advanced formatting, images and reliable bi-directional text
@@ -607,13 +619,13 @@ trait PlotFlagsOptions extends js.Object {
     * `.highcharts-zone-{n}` class, or custom classed from the `className`
     * option (view live demo).
     */
-  var zones: js.UndefOr[js.Array[PlotFlagsZonesOptions]] = js.undefined
+  var zones: js.UndefOr[js.Array[SeriesZonesOptionsObject]] = js.undefined
 }
 
 object PlotFlagsOptions {
   @scala.inline
   def apply(
-    accessibility: js.Object | PlotFlagsAccessibilityOptions = null,
+    accessibility: SeriesAccessibilityOptionsObject = null,
     allAreas: js.UndefOr[Boolean] = js.undefined,
     allowOverlapX: js.UndefOr[Boolean] = js.undefined,
     allowPointSelect: js.UndefOr[Boolean] = js.undefined,
@@ -630,18 +642,19 @@ object PlotFlagsOptions {
     compare: String = null,
     compareBase: `0` | `100` = null,
     compareStart: js.UndefOr[Boolean] = js.undefined,
-    connectors: PlotFlagsConnectorsOptions = null,
+    connectors: SeriesConnectorsOptionsObject = null,
     crisp: js.UndefOr[Boolean] = js.undefined,
     cropThreshold: Int | Double = null,
     cursor: String | CursorValue = null,
-    dataLabels: js.Any = null,
+    dataLabels: DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject] = null,
+    dataSorting: DataSortingOptionsObject | PlotFlagsDataSortingOptions = null,
     depth: Int | Double = null,
     description: String = null,
-    dragDrop: PlotFlagsDragDropOptions = null,
+    dragDrop: SeriesDragDropOptionsObject = null,
     edgeColor: ColorString = null,
     edgeWidth: Int | Double = null,
     enableMouseTracking: js.UndefOr[Boolean] = js.undefined,
-    events: PlotFlagsEventsOptions = null,
+    events: SeriesEventsOptionsObject = null,
     fillColor: ColorString | GradientColorObject | PatternObject = null,
     findNearestPointBy: OptionsFindNearestPointByValue = null,
     getExtremesFromAll: js.UndefOr[Boolean] = js.undefined,
@@ -652,9 +665,9 @@ object PlotFlagsOptions {
     includeInDataExport: js.UndefOr[Boolean] = js.undefined,
     joinBy: String | js.Array[String] = null,
     keys: js.Array[String] = null,
-    label: PlotFlagsLabelOptions = null,
-    lastPrice: PlotFlagsLastPriceOptions = null,
-    lastVisiblePrice: PlotFlagsLastVisiblePriceOptions = null,
+    label: SeriesLabelOptionsObject = null,
+    lastPrice: SeriesLastPriceOptionsObject = null,
+    lastVisiblePrice: SeriesLastVisiblePriceOptionsObject = null,
     lineColor: ColorString | GradientColorObject | PatternObject = null,
     lineWidth: Int | Double = null,
     linkedTo: String = null,
@@ -665,7 +678,7 @@ object PlotFlagsOptions {
     onKey: OptionsOnKeyValue = null,
     onSeries: String = null,
     opacity: Int | Double = null,
-    point: PlotFlagsPointOptions = null,
+    point: PlotSeriesPointOptions = null,
     pointDescriptionFormatter: js.Function = null,
     pointInterval: Int | Double = null,
     pointIntervalUnit: OptionsPointIntervalUnitValue = null,
@@ -682,20 +695,20 @@ object PlotFlagsOptions {
     softThreshold: js.UndefOr[Boolean] = js.undefined,
     stackDistance: Int | Double = null,
     stacking: OptionsStackingValue = null,
-    states: PlotFlagsStatesOptions = null,
+    states: SeriesStatesOptionsObject = null,
     stickyTracking: js.UndefOr[Boolean] = js.undefined,
     style: CSSObject = null,
     textAlign: OptionsTextAlignValue = null,
-    threshold: js.Any = null,
+    threshold: Int | Double = null,
     title: String = null,
-    tooltip: PlotFlagsTooltipOptions = null,
+    tooltip: SeriesTooltipOptionsObject = null,
     useHTML: js.UndefOr[Boolean] = js.undefined,
     visible: js.UndefOr[Boolean] = js.undefined,
     width: Int | Double = null,
     y: Int | Double = null,
     zIndex: Int | Double = null,
     zoneAxis: String = null,
-    zones: js.Array[PlotFlagsZonesOptions] = null
+    zones: js.Array[SeriesZonesOptionsObject] = null
   ): PlotFlagsOptions = {
     val __obj = js.Dynamic.literal()
     if (accessibility != null) __obj.updateDynamic("accessibility")(accessibility.asInstanceOf[js.Any])
@@ -720,6 +733,7 @@ object PlotFlagsOptions {
     if (cropThreshold != null) __obj.updateDynamic("cropThreshold")(cropThreshold.asInstanceOf[js.Any])
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
     if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
+    if (dataSorting != null) __obj.updateDynamic("dataSorting")(dataSorting.asInstanceOf[js.Any])
     if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (dragDrop != null) __obj.updateDynamic("dragDrop")(dragDrop.asInstanceOf[js.Any])

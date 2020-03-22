@@ -1,8 +1,8 @@
 package typings.jupyterlabApputils.collapseMod
 
 import typings.jupyterlabApputils.collapseMod.Collapse.IOptions
-import typings.phosphorSignaling.mod.ISignal
-import typings.phosphorWidgets.mod.Widget
+import typings.luminoSignaling.mod.ISignal
+import typings.luminoWidgets.mod.Widget
 import typings.std.Event_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -22,20 +22,18 @@ class Collapse_[T /* <: Widget */] protected () extends Widget {
     * Handle the `changed` signal of a title object.
     */
   var _onTitleChanged: js.Any = js.native
+  var _setHeader: js.Any = js.native
   var _uncollapse: js.Any = js.native
   var _widget: js.Any = js.native
   /**
     * A signal for when the widget collapse state changes.
     */
-  val collapseChanged: ISignal[Collapse[Widget], Unit] = js.native
+  def collapseChanged(): ISignal[Collapse[Widget], Unit] = js.native
   /**
     * The collapsed state of the panel.
     */
-  var collapsed: Boolean = js.native
-  /**
-    * The widget inside the collapse panel.
-    */
-  var widget: T = js.native
+  def collapsed(): Boolean = js.native
+  def collapsed(value: Boolean): js.Any = js.native
   /**
     * Handle the DOM events for the Collapse widget.
     *
@@ -51,5 +49,10 @@ class Collapse_[T /* <: Widget */] protected () extends Widget {
     * Toggle the collapse state of the panel.
     */
   def toggle(): Unit = js.native
+  /**
+    * The widget inside the collapse panel.
+    */
+  def widget(): T = js.native
+  def widget(widget: T): js.Any = js.native
 }
 

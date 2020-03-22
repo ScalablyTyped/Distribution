@@ -7,9 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("plur", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
-  def apply(word: String): String = js.native
   def apply(word: String, count: Double): String = js.native
-  def apply(word: String, plural: String): String = js.native
   def apply(word: String, plural: String, count: Double): String = js.native
 }
 

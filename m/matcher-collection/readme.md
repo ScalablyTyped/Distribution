@@ -1,7 +1,7 @@
 
 # Scala.js typings for matcher-collection
 
-Typings are for version 1.1.2
+Typings are for version 2.0.1
 
 ## Library description:
 Minimatch but for collections of minimatcher matchers.

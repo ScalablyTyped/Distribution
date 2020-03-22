@@ -2,21 +2,21 @@ package typings.yandexMaps.mod.control
 
 import typings.yandexMaps.AnonContent
 import typings.yandexMaps.AnonEnabled
-import typings.yandexMaps.AnonNoPlacemark
+import typings.yandexMaps.IBaseButtonParametersOptiFloat
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IListBoxParameters extends IButtonParameters {
   @JSName("options")
-  var options_IListBoxParameters: js.UndefOr[IBaseButtonParametersOptions with AnonNoPlacemark] = js.undefined
+  var options_IListBoxParameters: js.UndefOr[IBaseButtonParametersOptiFloat] = js.undefined
 }
 
 object IListBoxParameters {
   @scala.inline
   def apply(
     data: AnonContent = null,
-    options: IBaseButtonParametersOptions with AnonNoPlacemark = null,
+    options: IBaseButtonParametersOptiFloat = null,
     state: AnonEnabled = null
   ): IListBoxParameters = {
     val __obj = js.Dynamic.literal()

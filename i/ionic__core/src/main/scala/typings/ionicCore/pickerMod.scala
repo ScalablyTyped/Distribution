@@ -3,7 +3,6 @@ package typings.ionicCore
 import typings.ionicCore.componentsMod._Global_.HTMLIonPickerElement
 import typings.ionicCore.ionicCoreStrings.ios
 import typings.ionicCore.ionicCoreStrings.md
-import typings.ionicCore.oldAnimationAnimationInterfaceMod.Animation
 import typings.ionicCore.overlaysInterfaceMod.OverlayEventDetail
 import typings.ionicCore.overlaysInterfaceMod.OverlayInterface
 import typings.ionicCore.pickerInterfaceMod.PickerButton
@@ -20,8 +19,6 @@ object pickerMod extends js.Object {
   class Picker ()
     extends ComponentInterface
        with OverlayInterface {
-    @JSName("animation")
-    var animation_Picker: js.UndefOr[Animation] = js.native
     /**
       * If `true`, the picker will be dismissed when the backdrop is clicked.
       */
@@ -31,6 +28,7 @@ object pickerMod extends js.Object {
       * Array of buttons to be displayed at the top of the picker.
       */
     var buttons: js.Array[PickerButton] = js.native
+    var callButtonHandler: js.Any = js.native
     /**
       * Array of columns to be displayed in the picker.
       */
@@ -40,6 +38,7 @@ object pickerMod extends js.Object {
       * provided they should be separated by spaces.
       */
     var cssClass: js.UndefOr[String | js.Array[String]] = js.native
+    var dispatchCancelHandler: js.Any = js.native
     /**
       * Number of milliseconds to wait before dismissing the picker.
       */

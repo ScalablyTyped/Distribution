@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 /** Properties of a DetectIntentResponse. */
 trait IDetectIntentResponse extends js.Object {
   /** DetectIntentResponse outputAudio */
-  var outputAudio: js.UndefOr[Uint8Array | Null] = js.undefined
+  var outputAudio: js.UndefOr[Uint8Array | String | Null] = js.undefined
   /** DetectIntentResponse outputAudioConfig */
   var outputAudioConfig: js.UndefOr[IOutputAudioConfig | Null] = js.undefined
   /** DetectIntentResponse queryResult */
@@ -23,7 +23,7 @@ trait IDetectIntentResponse extends js.Object {
 object IDetectIntentResponse {
   @scala.inline
   def apply(
-    outputAudio: Uint8Array = null,
+    outputAudio: Uint8Array | String = null,
     outputAudioConfig: IOutputAudioConfig = null,
     queryResult: IQueryResult = null,
     responseId: String = null,

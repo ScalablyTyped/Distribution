@@ -1,6 +1,6 @@
 package typings.jupyterlabLauncher.mod
 
-import typings.jupyterlabApputils.vdomMod.VDomRenderer
+import typings.jupyterlabApputils.mod.VDomRenderer
 import typings.jupyterlabLauncher.mod.ILauncher.IOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,10 +20,12 @@ class Launcher protected () extends VDomRenderer[LauncherModel] {
   /**
     * The cwd of the launcher.
     */
-  var cwd: String = js.native
+  def cwd(): String = js.native
+  def cwd(value: String): js.Any = js.native
   /**
     * Whether there is a pending item being launched.
     */
-  var pending: Boolean = js.native
+  def pending(): Boolean = js.native
+  def pending(value: Boolean): js.Any = js.native
 }
 

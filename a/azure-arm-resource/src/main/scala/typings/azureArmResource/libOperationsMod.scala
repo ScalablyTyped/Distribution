@@ -2574,11 +2574,11 @@ object libOperationsMod extends js.Object {
       */
     def update(resourceGroupName: String, applianceName: String): js.Promise[Appliance] = js.native
     def update(resourceGroupName: String, applianceName: String, callback: ServiceCallback[Appliance]): Unit = js.native
-    def update(resourceGroupName: String, applianceName: String, options: AnonCustomHeadersHeaderNameParameters): js.Promise[Appliance] = js.native
+    def update(resourceGroupName: String, applianceName: String, options: AnonParameters): js.Promise[Appliance] = js.native
     def update(
       resourceGroupName: String,
       applianceName: String,
-      options: AnonCustomHeadersHeaderNameParameters,
+      options: AnonParameters,
       callback: ServiceCallback[Appliance]
     ): Unit = js.native
     /**
@@ -2672,12 +2672,8 @@ object libOperationsMod extends js.Object {
       */
     def updateById(applianceId: String): js.Promise[Appliance] = js.native
     def updateById(applianceId: String, callback: ServiceCallback[Appliance]): Unit = js.native
-    def updateById(applianceId: String, options: AnonCustomHeadersHeaderNameParameters): js.Promise[Appliance] = js.native
-    def updateById(
-      applianceId: String,
-      options: AnonCustomHeadersHeaderNameParameters,
-      callback: ServiceCallback[Appliance]
-    ): Unit = js.native
+    def updateById(applianceId: String, options: AnonParameters): js.Promise[Appliance] = js.native
+    def updateById(applianceId: String, options: AnonParameters, callback: ServiceCallback[Appliance]): Unit = js.native
     /**
       * Updates an existing appliance. The only value that can be updated via PATCH
       * currently is the tags.
@@ -2752,7 +2748,7 @@ object libOperationsMod extends js.Object {
       * @reject {Error|ServiceError} - The error object.
       */
     def updateByIdWithHttpOperationResponse(applianceId: String): js.Promise[HttpOperationResponse[Appliance]] = js.native
-    def updateByIdWithHttpOperationResponse(applianceId: String, options: AnonCustomHeadersHeaderNameParameters): js.Promise[HttpOperationResponse[Appliance]] = js.native
+    def updateByIdWithHttpOperationResponse(applianceId: String, options: AnonParameters): js.Promise[HttpOperationResponse[Appliance]] = js.native
     /**
       * Updates an existing appliance. The only value that can be updated via PATCH
       * currently is the tags.
@@ -2827,7 +2823,7 @@ object libOperationsMod extends js.Object {
       * @reject {Error|ServiceError} - The error object.
       */
     def updateWithHttpOperationResponse(resourceGroupName: String, applianceName: String): js.Promise[HttpOperationResponse[Appliance]] = js.native
-    def updateWithHttpOperationResponse(resourceGroupName: String, applianceName: String, options: AnonCustomHeadersHeaderNameParameters): js.Promise[HttpOperationResponse[Appliance]] = js.native
+    def updateWithHttpOperationResponse(resourceGroupName: String, applianceName: String, options: AnonParameters): js.Promise[HttpOperationResponse[Appliance]] = js.native
   }
   
 }

@@ -20,6 +20,9 @@ import scala.scalajs.js.annotation._
 class TouchBar protected ()
   extends typings.electron.Electron.TouchBar {
   // Docs: http://electronjs.org/docs/api/touch-bar
+  /**
+    * TouchBar
+    */
   def this(options: TouchBarConstructorOptions) = this()
 }
 

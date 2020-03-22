@@ -15,7 +15,6 @@ class ɵAnimationEngine protected () extends js.Object {
   var _transitionEngine: js.Any = js.native
   var _triggerCache: js.Any = js.native
   var bodyNode: js.Any = js.native
-  val players: js.Array[AnimationPlayer] = js.native
   def destroy(namespaceId: String, context: js.Any): Unit = js.native
   def disableAnimations(element: js.Any, disable: Boolean): Unit = js.native
   def flush(): Unit = js.native
@@ -31,6 +30,7 @@ class ɵAnimationEngine protected () extends js.Object {
   def onRemovalComplete(element: js.Any, context: js.Any): Unit = js.native
   def onRemove(namespaceId: String, element: js.Any, context: js.Any): Unit = js.native
   def onRemove(namespaceId: String, element: js.Any, context: js.Any, isHostElement: Boolean): Unit = js.native
+  def players(): js.Array[AnimationPlayer] = js.native
   def process(namespaceId: String, element: js.Any, property: String, value: js.Any): Unit = js.native
   def register(namespaceId: String, hostElement: js.Any): Unit = js.native
   def registerTrigger(

@@ -1,9 +1,7 @@
 package typings.smoothScrollbar
 
-import typings.smoothScrollbar.scrollbarMod.ScrollbarOptions
 import typings.smoothScrollbar.smoothScrollbarScrollbarMod.Scrollbar
 import typings.std.HTMLElement
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,7 +29,7 @@ object mod extends js.Object {
   /* static members */
   @js.native
   object default extends js.Object {
-    var ScrollbarPlugin: TypeofClassScrollbarPlugin = js.native
+    var ScrollbarPlugin: TypeofScrollbarPlugin = js.native
     var version: String = js.native
     /**
       * Attaches default style sheets to current document.
@@ -76,20 +74,20 @@ object mod extends js.Object {
       * @param [options] Initial options
       */
     def init(elem: HTMLElement): Scrollbar = js.native
-    def init(elem: HTMLElement, options: Partial[ScrollbarOptions]): Scrollbar = js.native
+    def init(elem: HTMLElement, options: PartialScrollbarOptions): Scrollbar = js.native
     /**
       * Automatically init scrollbar on all elements base on the selector `[data-scrollbar]`
       *
       * @param options Initial options
       */
     def initAll(): js.Array[Scrollbar] = js.native
-    def initAll(options: Partial[ScrollbarOptions]): js.Array[Scrollbar] = js.native
+    def initAll(options: PartialScrollbarOptions): js.Array[Scrollbar] = js.native
     /**
       * Attaches plugins to scrollbars
       *
       * @param ...Plugins Scrollbar plugin classes
       */
-    def use(Plugins: TypeofClassScrollbarPlugin*): Unit = js.native
+    def use(Plugins: TypeofScrollbarPlugin*): Unit = js.native
   }
   
   type SmoothScrollbar = Scrollbar

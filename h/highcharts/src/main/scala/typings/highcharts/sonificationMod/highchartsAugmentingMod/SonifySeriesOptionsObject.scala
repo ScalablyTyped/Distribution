@@ -1,5 +1,7 @@
 package typings.highcharts.sonificationMod.highchartsAugmentingMod
 
+import typings.highcharts.mod.Dictionary
+import typings.highcharts.mod.RangeObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +17,7 @@ trait SonifySeriesOptionsObject extends js.Object {
     * of point data properties to objects with min/max values: (see online
     * documentation for example)
     */
-  var dataExtremes: js.UndefOr[js.Object] = js.undefined
+  var dataExtremes: js.UndefOr[Dictionary[RangeObject]] = js.undefined
   /**
     * The duration for playing the points. Note that points might continue
     * to play after the duration has passed, but no new points will start
@@ -59,7 +61,7 @@ object SonifySeriesOptionsObject {
     duration: Double,
     instruments: js.Array[PointInstrumentObject],
     pointPlayTime: String | js.Function,
-    dataExtremes: js.Object = null,
+    dataExtremes: Dictionary[RangeObject] = null,
     earcons: js.Array[EarconConfiguration] = null,
     onEnd: js.Function = null,
     onPointEnd: js.Function = null,

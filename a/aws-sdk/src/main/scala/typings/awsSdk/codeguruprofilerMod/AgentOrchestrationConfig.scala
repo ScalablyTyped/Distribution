@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait AgentOrchestrationConfig extends js.Object {
   /**
-    * If the agents should be enabled to create and report profiles.
+    * 
     */
   var profilingEnabled: Boolean = js.native
 }

@@ -171,7 +171,6 @@ trait CardProps extends js.Object {
   var itemType: js.UndefOr[String] = js.undefined
   var lang: js.UndefOr[String] = js.undefined
   var loading: js.UndefOr[Boolean] = js.undefined
-  var noHovering: js.UndefOr[Boolean] = js.undefined
   var onAbort: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   var onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLDivElement]] = js.undefined
   var onAnimationIteration: js.UndefOr[AnimationEventHandler[HTMLDivElement]] = js.undefined
@@ -366,7 +365,6 @@ object CardProps {
     itemType: String = null,
     lang: String = null,
     loading: js.UndefOr[Boolean] = js.undefined,
-    noHovering: js.UndefOr[Boolean] = js.undefined,
     onAbort: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
     onAnimationEnd: AnimationEvent[HTMLDivElement] => Unit = null,
     onAnimationIteration: AnimationEvent[HTMLDivElement] => Unit = null,
@@ -558,7 +556,6 @@ object CardProps {
     if (itemType != null) __obj.updateDynamic("itemType")(itemType.asInstanceOf[js.Any])
     if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
     if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
-    if (!js.isUndefined(noHovering)) __obj.updateDynamic("noHovering")(noHovering.asInstanceOf[js.Any])
     if (onAbort != null) __obj.updateDynamic("onAbort")(js.Any.fromFunction1(onAbort))
     if (onAnimationEnd != null) __obj.updateDynamic("onAnimationEnd")(js.Any.fromFunction1(onAnimationEnd))
     if (onAnimationIteration != null) __obj.updateDynamic("onAnimationIteration")(js.Any.fromFunction1(onAnimationIteration))

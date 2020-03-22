@@ -1,7 +1,7 @@
 package typings.jdenticon.mod._Global_
 
 import typings.jdenticon.AnonColor
-import typings.jdenticon.AnonColorGrayscale
+import typings.jdenticon.AnonGrayscale
 import typings.jdenticon.jdenticonStrings.never
 import typings.jdenticon.jdenticonStrings.observe
 import typings.jdenticon.jdenticonStrings.once
@@ -56,7 +56,7 @@ trait JdenticonConfig extends js.Object {
     * For backward compatibility a single number can be specified instead of a `{ color, grayscale }`
     * object. This single number refers to the saturation of colored shapes.
     */
-  var saturation: js.UndefOr[AnonColorGrayscale | Double] = js.undefined
+  var saturation: js.UndefOr[AnonGrayscale | Double] = js.undefined
 }
 
 object JdenticonConfig {
@@ -67,7 +67,7 @@ object JdenticonConfig {
     lightness: AnonColor = null,
     padding: Int | Double = null,
     replaceMode: never | once | observe = null,
-    saturation: AnonColorGrayscale | Double = null
+    saturation: AnonGrayscale | Double = null
   ): JdenticonConfig = {
     val __obj = js.Dynamic.literal()
     if (backColor != null) __obj.updateDynamic("backColor")(backColor.asInstanceOf[js.Any])

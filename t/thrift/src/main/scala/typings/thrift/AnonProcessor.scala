@@ -6,12 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonProcessor[THandler, TProcessor] extends TProcessorConstructor[TProcessor, THandler] {
-  var Processor: AnonHandler[THandler, TProcessor]
+  var Processor: AnonInstantiable[THandler, TProcessor]
 }
 
 object AnonProcessor {
   @scala.inline
-  def apply[THandler, TProcessor](Processor: AnonHandler[THandler, TProcessor]): AnonProcessor[THandler, TProcessor] = {
+  def apply[THandler, TProcessor](Processor: AnonInstantiable[THandler, TProcessor]): AnonProcessor[THandler, TProcessor] = {
     val __obj = js.Dynamic.literal(Processor = Processor.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AnonProcessor[THandler, TProcessor]]

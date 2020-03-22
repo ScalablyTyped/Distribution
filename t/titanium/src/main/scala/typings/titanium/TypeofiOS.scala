@@ -808,7 +808,7 @@ trait TypeofiOS extends js.Object {
   /**
   			 * A set of constants for the styles available for scrollbars used with <Titanium.UI.ScrollView.scrollIndicatorStyle> and <Titanium.UI.TableView.scrollIndicatorStyle> properties.
   			 */
-  val ScrollIndicatorStyle: TypeofScrollIndicatorStyle = js.native
+  val ScrollIndicatorStyle: TypeofScrollIndicatorStyl = js.native
   /**
   			 * A set of constants for the status bar style.
   			 */
@@ -833,12 +833,12 @@ trait TypeofiOS extends js.Object {
   			 * A set of constants for the style that can be used for the `selectionStyle` property of
   			 * <Titanium.UI.TableViewRow>.
   			 */
-  val TableViewCellSelectionStyle: TypeofTableViewCellSelectionStyle = js.native
+  val TableViewCellSelectionStyle: TypeofTableViewCellSelect = js.native
   /**
   			 * A set of constants for the position value that can be used for the `position` property of
   			 * <Titanium.UI.TableView> when invoking `scrollToIndex`.
   			 */
-  val TableViewScrollPosition: TypeofTableViewScrollPosition = js.native
+  val TableViewScrollPosition: TypeofTableViewScrollPosi = js.native
   /**
   			 * A set of constants for the style that can be used for the button `style` property of
   			 * <Titanium.UI.TableView>.

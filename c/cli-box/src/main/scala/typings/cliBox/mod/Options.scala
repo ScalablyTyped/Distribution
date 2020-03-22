@@ -1,6 +1,6 @@
 package typings.cliBox.mod
 
-import typings.std.Partial
+import typings.cliBox.PartialMarks
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ trait Options extends js.Object {
   var fullscreen: js.UndefOr[Boolean] = js.undefined
   var h: js.UndefOr[Double] = js.undefined
   var height: js.UndefOr[Double] = js.undefined
-  var marks: js.UndefOr[Partial[Marks]] = js.undefined
+  var marks: js.UndefOr[PartialMarks] = js.undefined
   var stringify: js.UndefOr[Boolean] = js.undefined
   var w: js.UndefOr[Double] = js.undefined
   var width: js.UndefOr[Double] = js.undefined
@@ -21,7 +21,7 @@ object Options {
     fullscreen: js.UndefOr[Boolean] = js.undefined,
     h: Int | Double = null,
     height: Int | Double = null,
-    marks: Partial[Marks] = null,
+    marks: PartialMarks = null,
     stringify: js.UndefOr[Boolean] = js.undefined,
     w: Int | Double = null,
     width: Int | Double = null

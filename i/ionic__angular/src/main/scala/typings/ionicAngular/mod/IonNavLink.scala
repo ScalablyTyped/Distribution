@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/angular", "IonNavLink")
 @js.native
 class IonNavLink protected ()
-  extends typings.ionicAngular.distMod.IonNavLink {
+  extends typings.ionicAngular.proxiesMod.IonNavLink {
   def this(c: ChangeDetectorRef, r: ElementRef[_], z: NgZone) = this()
 }
 

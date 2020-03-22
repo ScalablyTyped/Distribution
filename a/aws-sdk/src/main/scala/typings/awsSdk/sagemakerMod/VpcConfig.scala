@@ -11,7 +11,7 @@ trait VpcConfig extends js.Object {
     */
   var SecurityGroupIds: VpcSecurityGroupIds = js.native
   /**
-    * The ID of the subnets in the VPC to which you want to connect your training job or model.   Amazon EC2 P3 accelerated computing instances are not available in the c/d/e availability zones of region us-east-1. If you want to create endpoints with P3 instances in VPC mode in region us-east-1, create subnets in a/b/f availability zones instead. 
+    * The ID of the subnets in the VPC to which you want to connect your training job or model. For information about the availability of specific instance types, see Supported Instance Types and Availability Zones.
     */
   var Subnets: typings.awsSdk.sagemakerMod.Subnets = js.native
 }

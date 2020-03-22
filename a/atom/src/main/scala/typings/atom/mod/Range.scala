@@ -1,5 +1,6 @@
 package typings.atom.mod
 
+import typings.atom.ReadonlyRangeConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -42,7 +43,7 @@ class Range () extends js.Object {
     *  Freezes the range and its start and end point so it becomes immutable
     *  and returns itself.
     */
-  def freeze(): Range = js.native
+  def freeze(): ReadonlyRangeConstructor = js.native
   /** Get the number of rows in this range. */
   def getRowCount(): Double = js.native
   /** Returns an array of all rows in the range. */

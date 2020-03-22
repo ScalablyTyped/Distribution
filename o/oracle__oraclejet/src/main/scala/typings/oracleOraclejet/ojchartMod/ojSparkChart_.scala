@@ -1,7 +1,7 @@
 package typings.oracleOraclejet.ojchartMod
 
-import typings.oracleOraclejet.AnonComponentNameLabelAndValue
-import typings.oracleOraclejet.AnonContextRenderer
+import typings.oracleOraclejet.Anon0
+import typings.oracleOraclejet.AnonLabelAndValue
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.ojchartMod.ojSparkChart.ItemContext
 import typings.oracleOraclejet.ojchartMod.ojSparkChart.ReferenceObject
@@ -155,15 +155,15 @@ trait ojSparkChart_[K, D] extends dvtBaseComponent[ojSparkChartSettablePropertie
     ], 
     _
   ]) | Null = js.native
-  var onTooltipChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonContextRenderer], _]) | Null = js.native
+  var onTooltipChanged: (js.Function1[/* event */ JetElementCustomEvent[Anon0], _]) | Null = js.native
   var onTypeChanged: (js.Function1[/* event */ JetElementCustomEvent[area | lineWithArea | bar | line], _]) | Null = js.native
   var onVisualEffectsChanged: (js.Function1[/* event */ JetElementCustomEvent[none | auto], _]) | Null = js.native
   var referenceObjects: js.Array[ReferenceObject] = js.native
   var svgClassName: String = js.native
   var svgStyle: js.Object = js.native
-  var tooltip: AnonContextRenderer = js.native
+  var tooltip: Anon0 = js.native
   @JSName("translations")
-  var translations_ojSparkChart_ : AnonComponentNameLabelAndValue = js.native
+  var translations_ojSparkChart_ : AnonLabelAndValue = js.native
   var `type`: area | lineWithArea | bar | line = js.native
   var visualEffects: none | auto = js.native
   def addEventListener(
@@ -488,12 +488,12 @@ trait ojSparkChart_[K, D] extends dvtBaseComponent[ojSparkChartSettablePropertie
   @JSName("addEventListener")
   def addEventListener_tooltipChanged(
     `type`: tooltipChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonContextRenderer], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Anon0], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_tooltipChanged(
     `type`: tooltipChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonContextRenderer], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Anon0], _],
     useCapture: Boolean
   ): Unit = js.native
   def getDataItem(itemIndex: Double): ItemContext | Null = js.native
@@ -544,7 +544,7 @@ trait ojSparkChart_[K, D] extends dvtBaseComponent[ojSparkChartSettablePropertie
   @JSName("getProperty")
   def getProperty_svgStyle(property: svgStyle): /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojchart.ojSparkChart<K, D>['svgStyle'] */ js.Any = js.native
   @JSName("getProperty")
-  def getProperty_tooltip(property: tooltip): AnonContextRenderer = js.native
+  def getProperty_tooltip(property: tooltip): Anon0 = js.native
   @JSName("getProperty")
   def getProperty_type(property: `type`): area | lineWithArea | bar | line = js.native
   @JSName("getProperty")
@@ -615,8 +615,8 @@ trait ojSparkChart_[K, D] extends dvtBaseComponent[ojSparkChartSettablePropertie
   @JSName("setProperty")
   def setProperty_svgStyle(property: svgStyle, value: js.Object): Unit = js.native
   @JSName("setProperty")
-  def setProperty_tooltip(property: tooltip, value: AnonContextRenderer): Unit = js.native
+  def setProperty_tooltip(property: tooltip, value: Anon0): Unit = js.native
   @JSName("setProperty")
-  def setProperty_translations(property: translations, value: AnonComponentNameLabelAndValue): Unit = js.native
+  def setProperty_translations(property: translations, value: AnonLabelAndValue): Unit = js.native
 }
 

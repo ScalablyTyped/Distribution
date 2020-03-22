@@ -39,6 +39,9 @@ class Global () extends js.Object {
     * 宽度所占的分类的比例
     */
   var widthRatio: AnonColumn = js.native
+  def registerTheme(name: String, option: js.Object): Unit = js.native
+  def setTheme(option: String): Unit = js.native
+  def setTheme(option: js.Object): Unit = js.native
   @JSName("setTheme")
   def setTheme_dark(option: dark): Unit = js.native
   @JSName("setTheme")

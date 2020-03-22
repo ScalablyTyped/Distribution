@@ -8,12 +8,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait reactPoseProps {
+  @scala.inline
+  def PoseElementProps: PoseElementInternalProps.type = typings.reactPose.typesMod.PoseElementInternalProps
   type PoseElementProps = PoseElementInternalProps
   @scala.inline
   def PoseGroupProps: Props.type = typings.reactPose.transitionTypesMod.Props
   type PoseGroupProps = Props
-  @scala.inline
-  def PoseParentConsumerProps: ConsumerProps.type = typings.react.mod.ConsumerProps
   type PoseParentConsumerProps[T] = ConsumerProps[T]
   @scala.inline
   def TransitionProps: Props.type = typings.reactPose.transitionTypesMod.Props

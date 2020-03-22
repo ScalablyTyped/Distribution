@@ -36,15 +36,15 @@ object tableMod extends js.Object {
   /* static members */
   @js.native
   object Column extends js.Object {
-    var defaultProps: Anon01CellDataGetter = js.native
-    var propTypes: AnonArialabelCellDataGetter = js.native
+    var defaultProps: AnonCellRenderer = js.native
+    var propTypes: AnonCellDataGetter = js.native
   }
   
   /* static members */
   @js.native
   object Table extends js.Object {
-    var defaultProps: Anon0110 = js.native
-    var propTypes: AnonArialabelAutoHeight = js.native
+    var defaultProps: AnonDisableHeader = js.native
+    var propTypes: AnonClassName = js.native
   }
   
 }

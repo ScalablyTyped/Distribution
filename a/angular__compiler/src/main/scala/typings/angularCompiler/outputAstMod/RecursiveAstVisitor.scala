@@ -55,6 +55,8 @@ class RecursiveAstVisitor ()
   override def visitLiteralExpr(ast: LiteralExpr, context: js.Any): js.Any = js.native
   /* CompleteClass */
   override def visitLiteralMapExpr(ast: LiteralMapExpr, context: js.Any): js.Any = js.native
+  /* CompleteClass */
+  override def visitLocalizedString(ast: LocalizedString_, context: js.Any): js.Any = js.native
   def visitMapType(`type`: MapType, context: js.Any): js.Any = js.native
   /* CompleteClass */
   override def visitNotExpr(ast: NotExpr, context: js.Any): js.Any = js.native

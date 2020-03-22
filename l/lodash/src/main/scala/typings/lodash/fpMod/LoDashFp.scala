@@ -3486,7 +3486,7 @@ trait LoDashFp extends js.Object {
   def isArray(value: js.Any): /* is std.Array<any> */ Boolean = js.native
   def isArrayBuffer(value: js.Any): /* is std.ArrayBuffer */ Boolean = js.native
   def isArrayLike(): /* is never */ Boolean = js.native
-  def isArrayLike(value: js.Any): /* is lodash.Anon_Length */ Boolean = js.native
+  def isArrayLike(value: js.Any): /* is lodash.AnonLength */ Boolean = js.native
   def isArrayLike(value: js.Function1[/* repeated */ js.Any, _]): /* is never */ Boolean = js.native
   def isArrayLike[T](value: T with String with Double): Boolean = js.native
   def isArrayLikeObject(): /* is never */ Boolean = js.native

@@ -1,13 +1,6 @@
 package typings.storybookAddonKnobs
 
 import typings.react.mod.ComponentType
-import typings.react.mod.FunctionComponent
-import typings.storybookAddonKnobs.booleanMod.BooleanTypeProps
-import typings.storybookAddonKnobs.buttonMod.ButtonTypeProps
-import typings.storybookAddonKnobs.filesMod.FilesTypeProps
-import typings.storybookAddonKnobs.optionsMod.OptionsTypeProps
-import typings.storybookAddonKnobs.selectMod.SelectTypeKnobValue
-import typings.storybookAddonKnobs.selectMod.SelectTypeProps
 import typings.storybookAddonKnobs.storybookAddonKnobsStrings.`object`
 import typings.storybookAddonKnobs.storybookAddonKnobsStrings.array
 import typings.storybookAddonKnobs.storybookAddonKnobsStrings.boolean
@@ -32,21 +25,21 @@ object typesMod extends js.Object {
   ): KnobControlType = js.native
   @js.native
   object default extends js.Object {
-    var array: TypeofClassArrayType = js.native
-    var boolean: FunctionComponent[BooleanTypeProps] with AnonDeserializeSerializeValueBoolean = js.native
-    var button: FunctionComponent[ButtonTypeProps] with AnonDeserializeSerializeUndefined = js.native
-    var color: TypeofClassColorType = js.native
-    var date: TypeofClassDateType = js.native
-    var files: FunctionComponent[FilesTypeProps] with AnonDeserializeSerializeUndefined = js.native
-    var number: TypeofClassNumberType = js.native
-    var `object`: TypeofClassObjectType = js.native
-    var options: FunctionComponent[OptionsTypeProps[_]] with AnonDeserializeSerializeValueT = js.native
-    var radios: TypeofClassRadiosType = js.native
-    var select: FunctionComponent[SelectTypeProps[SelectTypeKnobValue]] with AnonDeserializeSerializeValueSelectTypeKnobValue = js.native
-    var text: TypeofClassTextType = js.native
+    var array: TypeofArrayType = js.native
+    var boolean: FunctionComponentBooleanT = js.native
+    var button: FunctionComponentButtonTy = js.native
+    var color: TypeofColorType = js.native
+    var date: TypeofDateType = js.native
+    var files: FunctionComponentFilesTyp = js.native
+    var number: TypeofNumberType = js.native
+    var `object`: TypeofObjectType = js.native
+    var options: FunctionComponentOptionsT = js.native
+    var radios: TypeofRadiosType = js.native
+    var select: FunctionComponentSelectTy = js.native
+    var text: TypeofTextType = js.native
   }
   
-  type KnobControlType = ComponentType[_] with AnonDeserializeSerializeV
+  type KnobControlType = ComponentType[_] with AnonDeserialize
   type KnobType = String
 }
 

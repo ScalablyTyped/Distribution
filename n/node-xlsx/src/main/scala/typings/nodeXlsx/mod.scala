@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("node-xlsx", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
-  def build(worksheets: js.Array[AnonDataName]): ArrayBuffer = js.native
-  def build(worksheets: js.Array[AnonDataName], options: js.Object): ArrayBuffer = js.native
+  def build(worksheets: js.Array[AnonName]): ArrayBuffer = js.native
+  def build(worksheets: js.Array[AnonName], options: js.Object): ArrayBuffer = js.native
   def parse(mixed: String): js.Array[AnonData] = js.native
   def parse(mixed: String, options: js.Object): js.Array[AnonData] = js.native
   def parse(mixed: ArrayBuffer): js.Array[AnonData] = js.native
@@ -18,7 +18,7 @@ object mod extends js.Object {
   object default extends js.Object {
     @JSName("build")
     var build_Original: js.Function2[
-        /* worksheets */ js.Array[AnonDataName], 
+        /* worksheets */ js.Array[AnonName], 
         /* options */ js.UndefOr[js.Object], 
         ArrayBuffer
       ] = js.native
@@ -28,8 +28,8 @@ object mod extends js.Object {
         /* options */ js.UndefOr[js.Object], 
         js.Array[AnonData]
       ] = js.native
-    def build(worksheets: js.Array[AnonDataName]): ArrayBuffer = js.native
-    def build(worksheets: js.Array[AnonDataName], options: js.Object): ArrayBuffer = js.native
+    def build(worksheets: js.Array[AnonName]): ArrayBuffer = js.native
+    def build(worksheets: js.Array[AnonName], options: js.Object): ArrayBuffer = js.native
     def parse(mixed: String): js.Array[AnonData] = js.native
     def parse(mixed: String, options: js.Object): js.Array[AnonData] = js.native
     def parse(mixed: ArrayBuffer): js.Array[AnonData] = js.native

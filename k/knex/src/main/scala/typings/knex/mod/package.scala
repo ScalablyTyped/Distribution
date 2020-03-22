@@ -24,6 +24,7 @@ package object mod {
   type ArrayIfAlready[T1, T2] = T2 | js.Array[T2]
   // If T is an array, get the type of member, else fall back to never
   type ArrayMember[T] = js.Any
+  type AsyncConnectionConfigProvider = js.Function0[js.Promise[typings.knex.mod.StaticConnectionConfig]]
   // Intersection conditionally applied only when TParams is non-empty
   // This is primarily to keep the signatures more intuitive.
   type AugmentParams[TTarget, TParams] = TTarget | (js.Object with TTarget with TParams)
@@ -31,7 +32,7 @@ package object mod {
   type Callback = js.Function
   type Client = js.Function
   type ColumnDescriptor[TRecord, TResult] = java.lang.String | typings.knex.mod.Raw[js.Any] | (typings.knex.mod.QueryBuilder[TRecord, TResult]) | typings.knex.mod.Dict[java.lang.String]
-  type CreateTableBuilder = typings.knex.mod.TableBuilder
+  type ConnectionConfigProvider = typings.knex.mod.SyncConnectionConfigProvider | typings.knex.mod.AsyncConnectionConfigProvider
   // Convenience alias and associated companion namespace for working
   // with DeferredSelection having TSingle=true.
   //
@@ -65,17 +66,15 @@ package object mod {
     /* binding */ js.UndefOr[typings.knex.mod.Value | typings.knex.mod.ValueDict], 
     typings.knex.mod.QueryBuilder[TRecord, TResult]
   ]
-  type LogFn = js.Function1[/* message */ java.lang.String, scala.Unit]
+  type LogFn = js.Function1[/* message */ js.Any, scala.Unit]
   type Lookup[TRegistry /* <: js.Object */, TKey /* <: java.lang.String */, TDefault] = TDefault | (/* import warning: importer.ImportType#apply Failed type conversion: TRegistry[TKey] */ js.Any)
   // Retain the association of original keys with aliased keys at type level
   // to facilitates type-safe aliasing for object syntax
   type MappedAliasType[TBase, TAliasMapping] = js.Object with typings.knex.knexStrings.MappedAliasType with js.Any
   type MaybeArray[T] = T | js.Array[T]
-  type MySqlAlterTableBuilder = typings.knex.mod.AlterTableBuilder
   // Boxing is necessary to prevent distribution of conditional types:
   // https://lorefnon.tech/2019/05/02/using-boxing-to-prevent-distribution-of-conditional-types/
   type PartialOrAny[TBase, TKeys] = (typings.knex.mod.SafePick[TBase, TKeys with java.lang.String]) | js.Object
-  type PostgreSqlAlterTableBuilder = typings.knex.mod.AlterTableBuilder
   //
   // QueryBuilder
   //
@@ -91,6 +90,7 @@ package object mod {
     scala.Unit
   ]
   type RawBinding = typings.knex.mod.Value | (typings.knex.mod.QueryBuilder[js.Any, js.Any])
+  type RedshiftConnectionConfig = typings.knex.mod.PgConnectionConfig
   type RefBuilder = js.Function1[
     /* src */ java.lang.String, 
     typings.knex.mod.Ref[
@@ -110,8 +110,22 @@ package object mod {
   // While unknown can be assigned to any, Partial<unknown> can't be.
   type SafePartial[T] = typings.std.Partial[T]
   type SafePick[T, K /* <: java.lang.String */] = typings.std.Pick[T, K]
+  /* Rewritten from type alias, can be one of: 
+    - typings.knex.mod.ConnectionConfig
+    - typings.knex.mod.MariaSqlConnectionConfig
+    - typings.knex.mod.MySqlConnectionConfig
+    - typings.knex.mod.MsSqlConnectionConfig
+    - typings.knex.mod.OracleDbConnectionConfig
+    - typings.knex.mod.PgConnectionConfig
+    - typings.knex.mod.RedshiftConnectionConfig
+    - typings.knex.mod.Sqlite3ConnectionConfig
+    - typings.knex.mod.SocketConnectionConfig
+  */
+  type StaticConnectionConfig = typings.knex.mod._StaticConnectionConfig | typings.knex.mod.RedshiftConnectionConfig
   type StrKey[T] = java.lang.String
-  type TableDescriptor = java.lang.String | typings.knex.mod.Raw[js.Any] | (typings.knex.mod.QueryBuilder[js.Any, js.Array[typings.knex.mod.SafePartial[js.Any]]])
+  type SyncConnectionConfigProvider = js.Function0[typings.knex.mod.StaticConnectionConfig]
+  type TableDescriptor = java.lang.String | typings.knex.mod.Raw[js.Any] | (typings.knex.mod.QueryBuilder[js.Any, js.Any])
+  type TableOptions = typings.knex.mod.PgTableOptions
   type Union[TRecord, TResult] = typings.knex.mod.Intersect[TRecord, TResult]
   // https://stackoverflow.com/a/50375286/476712
   type UnionToIntersection[U] = js.Any
@@ -123,9 +137,7 @@ package object mod {
   // Utility Types
   //
   type Value = java.lang.String | scala.Double | scala.Boolean | typings.std.Date | (js.Array[scala.Boolean | typings.std.Date | scala.Double | java.lang.String]) | typings.node.Buffer | typings.knex.mod.Raw[js.Any]
-  type ValueDict = typings.knex.mod.Dict[
-    typings.knex.mod.Value | (typings.knex.mod.QueryBuilder[js.Any, js.Array[typings.knex.mod.SafePartial[js.Any]]])
-  ]
+  type ValueDict = typings.knex.mod.Dict[typings.knex.mod.Value | (typings.knex.mod.QueryBuilder[js.Any, js.Any])]
   type WhereWrapped[TRecord, TResult] = js.Function1[
     /* callback */ typings.knex.mod.QueryCallback[js.Any, js.Array[js.Any]], 
     typings.knex.mod.QueryBuilder[TRecord, TResult]

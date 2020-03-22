@@ -4,7 +4,7 @@ import typings.jupyterlabObservables.jupyterlabObservablesStrings.Map
 import typings.jupyterlabObservables.modeldbMod.ObservableType
 import typings.jupyterlabObservables.observablemapMod.IObservableMap.IChangedArgs
 import typings.jupyterlabObservables.observablemapMod.ObservableMap.IOptions
-import typings.phosphorSignaling.mod.ISignal
+import typings.luminoSignaling.mod.ISignal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -49,6 +49,11 @@ class ObservableMap_[T] () extends IObservableMap[T] {
   /* CompleteClass */
   @JSName("type")
   override var type_IObservableMap_ : Map = js.native
+  /**
+    * A signal emitted when the map has changed.
+    */
+  @JSName("changed")
+  def changed_MObservableMap_(): ISignal[this.type, IChangedArgs[T]] = js.native
   /**
     * Set the ObservableMap to an empty map.
     */
@@ -96,6 +101,11 @@ class ObservableMap_[T] () extends IObservableMap[T] {
   /* CompleteClass */
   override def has(key: String): Boolean = js.native
   /**
+    * Whether this map has been disposed.
+    */
+  @JSName("isDisposed")
+  def isDisposed_MObservableMap_(): Boolean = js.native
+  /**
     * Get a list of the keys in the map.
     *
     * @returns - a list of keys.
@@ -114,6 +124,16 @@ class ObservableMap_[T] () extends IObservableMap[T] {
     */
   /* CompleteClass */
   override def set(key: String, value: T): js.UndefOr[T] = js.native
+  /**
+    * The number of key-value pairs in the map.
+    */
+  @JSName("size")
+  def size_MObservableMap_(): Double = js.native
+  /**
+    * The type of the Observable.
+    */
+  @JSName("type")
+  def type_MObservableMap_(): Map = js.native
   /**
     * Get a list of the values in the map.
     *

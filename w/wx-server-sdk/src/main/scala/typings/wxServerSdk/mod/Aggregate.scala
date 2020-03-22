@@ -3,8 +3,8 @@ package typings.wxServerSdk.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.wxServerSdk.AnonBoundaries
 import typings.wxServerSdk.AnonBuckets
+import typings.wxServerSdk.AnonDictfieldName
 import typings.wxServerSdk.AnonDistanceField
-import typings.wxServerSdk.AnonFieldName
 import typings.wxServerSdk.AnonIncludeArrayIndex
 import typings.wxServerSdk.AnonNewRoot
 import typings.wxServerSdk.AnonSize
@@ -21,7 +21,7 @@ trait Aggregate extends js.Object {
   def count(expr: String): js.Any
   def end(): Unit
   def geoNear(geoNearObj: AnonDistanceField): Aggregate
-  def group(groupObj: AnonFieldName): Aggregate
+  def group(groupObj: AnonDictfieldName): Aggregate
   def limit(limitRecords: Double): js.Any
   def `match`(matchObj: StringDictionary[js.Any]): Aggregate
   def project(projectObj: StringDictionary[js.Any]): Aggregate
@@ -42,7 +42,7 @@ object Aggregate {
     count: String => js.Any,
     end: () => Unit,
     geoNear: AnonDistanceField => Aggregate,
-    group: AnonFieldName => Aggregate,
+    group: AnonDictfieldName => Aggregate,
     limit: Double => js.Any,
     `match`: StringDictionary[js.Any] => Aggregate,
     project: StringDictionary[js.Any] => Aggregate,

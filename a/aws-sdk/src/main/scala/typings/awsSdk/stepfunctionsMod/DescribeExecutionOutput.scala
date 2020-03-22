@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DescribeExecutionOutput extends js.Object {
   /**
-    * The Amazon Resource Name (ARN) that identifies the execution.
+    * The Amazon Resource Name (ARN) that id entifies the execution.
     */
   var executionArn: Arn = js.native
   /**
@@ -15,7 +15,7 @@ trait DescribeExecutionOutput extends js.Object {
     */
   var input: SensitiveData = js.native
   /**
-    * The name of the execution. A name must not contain:   white space   brackets &lt; &gt; { } [ ]    wildcard characters ? *    special characters " # % \ ^ | ~ ` $ &amp; , ; : /    control characters (U+0000-001F, U+007F-009F)  
+    * The name of the execution. A name must not contain:   white space   brackets &lt; &gt; { } [ ]    wildcard characters ? *    special characters " # % \ ^ | ~ ` $ &amp; , ; : /    control characters (U+0000-001F, U+007F-009F)   To enable logging with CloudWatch Logs, the name should only contain 0-9, A-Z, a-z, - and _.
     */
   var name: js.UndefOr[Name] = js.native
   /**

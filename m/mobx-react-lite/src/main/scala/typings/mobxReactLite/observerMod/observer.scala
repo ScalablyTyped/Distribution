@@ -1,6 +1,6 @@
 package typings.mobxReactLite.observerMod
 
-import typings.mobxReactLite.AnonForwardRef
+import typings.mobxReactLite.IObserverOptionsforwardRe
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.FunctionComponent
 import typings.react.mod.MemoExoticComponent
@@ -16,6 +16,6 @@ import scala.scalajs.js.annotation._
 object observer extends js.Object {
   def apply[P /* <: js.Object */](baseComponent: FunctionComponent[P]): FunctionComponent[P] = js.native
   def apply[P /* <: js.Object */](baseComponent: FunctionComponent[P], options: IObserverOptions): FunctionComponent[P] = js.native
-  def apply[P /* <: js.Object */, TRef](baseComponent: RefForwardingComponent[TRef, P], options: IObserverOptions with AnonForwardRef): MemoExoticComponent[ForwardRefExoticComponent[PropsWithoutRef[P] with RefAttributes[TRef]]] = js.native
+  def apply[P /* <: js.Object */, TRef](baseComponent: RefForwardingComponent[TRef, P], options: IObserverOptionsforwardRe): MemoExoticComponent[ForwardRefExoticComponent[PropsWithoutRef[P] with RefAttributes[TRef]]] = js.native
 }
 

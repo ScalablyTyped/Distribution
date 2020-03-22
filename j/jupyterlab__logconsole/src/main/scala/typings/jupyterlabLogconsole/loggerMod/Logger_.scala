@@ -8,7 +8,7 @@ import typings.jupyterlabLogconsole.tokensMod.ILoggerOutputAreaModel
 import typings.jupyterlabLogconsole.tokensMod.IStateChange
 import typings.jupyterlabLogconsole.tokensMod.LogLevel
 import typings.jupyterlabRendermime.tokensMod.IRenderMimeRegistry
-import typings.phosphorSignaling.mod.ISignal
+import typings.luminoSignaling.mod.ISignal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -75,12 +75,7 @@ class Logger_ protected () extends ILogger {
     * Rendermime to use when rendering outputs logged.
     */
   /* CompleteClass */
-  override var rendermime: IRenderMimeRegistry = js.native
-  /**
-    * Rendermime to use when rendering outputs logged.
-    */
-  @JSName("rendermime")
-  var rendermime_Logger_ : IRenderMimeRegistry | Null = js.native
+  override var rendermime: IRenderMimeRegistry | Null = js.native
   /**
     * The name of the log source.
     */
@@ -107,6 +102,11 @@ class Logger_ protected () extends ILogger {
   /* CompleteClass */
   override def clear(): Unit = js.native
   /**
+    * A signal emitted when the list of log messages changes.
+    */
+  @JSName("contentChanged")
+  def contentChanged_MLogger_(): ISignal[this.type, IContentChange] = js.native
+  /**
     * Dispose of the resources held by the object.
     *
     * #### Notes
@@ -120,11 +120,58 @@ class Logger_ protected () extends ILogger {
   /* CompleteClass */
   override def dispose(): Unit = js.native
   /**
+    * Whether the logger is disposed.
+    */
+  @JSName("isDisposed")
+  def isDisposed_MLogger_(): Boolean = js.native
+  /**
+    * Number of outputs logged.
+    */
+  @JSName("length")
+  def length_MLogger_(): Double = js.native
+  /**
+    * The level of outputs logged
+    */
+  @JSName("level")
+  def level_MLogger_(): LogLevel = js.native
+  @JSName("level")
+  def level_MLogger_(newValue: LogLevel): js.Any = js.native
+  /**
     * Log an output to logger.
     *
     * @param log - The output to be logged.
     */
   /* CompleteClass */
   override def log(log: ILogPayload): Unit = js.native
+  /**
+    * The maximum number of outputs stored.
+    *
+    * #### Notes
+    * Oldest entries will be trimmed to ensure the length is at most
+    * `.maxLength`.
+    */
+  @JSName("maxLength")
+  def maxLength_MLogger_(): Double = js.native
+  @JSName("maxLength")
+  def maxLength_MLogger_(value: Double): js.Any = js.native
+  @JSName("rendermime")
+  def rendermime_MLogger_(): js.Any = js.native
+  @JSName("rendermime")
+  def rendermime_MLogger_(value: IRenderMimeRegistry): js.Any = js.native
+  /**
+    * Rendermime to use when rendering outputs logged.
+    */
+  @JSName("rendermime")
+  def rendermime_Union(): IRenderMimeRegistry | Null = js.native
+  /**
+    * A signal emitted when the log state changes.
+    */
+  @JSName("stateChanged")
+  def stateChanged_MLogger_(): ISignal[this.type, IStateChange] = js.native
+  /**
+    * The number of messages that have ever been stored.
+    */
+  @JSName("version")
+  def version_MLogger_(): Double = js.native
 }
 

@@ -17,11 +17,11 @@ trait IFieldOptions extends js.Object {
   @JSName(".google.api.resourceReference")
   var DotgoogleDotapiDotresourceReference: js.UndefOr[IResourceReference | Null] = js.undefined
   /** FieldOptions ctype */
-  var ctype: js.UndefOr[CType | Null] = js.undefined
+  var ctype: js.UndefOr[CType | String | Null] = js.undefined
   /** FieldOptions deprecated */
   var deprecated: js.UndefOr[Boolean | Null] = js.undefined
   /** FieldOptions jstype */
-  var jstype: js.UndefOr[JSType | Null] = js.undefined
+  var jstype: js.UndefOr[JSType | String | Null] = js.undefined
   /** FieldOptions lazy */
   var `lazy`: js.UndefOr[Boolean | Null] = js.undefined
   /** FieldOptions packed */
@@ -37,9 +37,9 @@ object IFieldOptions {
   def apply(
     DotgoogleDotapiDotfieldBehavior: js.Array[FieldBehavior] = null,
     DotgoogleDotapiDotresourceReference: IResourceReference = null,
-    ctype: CType = null,
+    ctype: CType | String = null,
     deprecated: js.UndefOr[Boolean] = js.undefined,
-    jstype: JSType = null,
+    jstype: JSType | String = null,
     `lazy`: js.UndefOr[Boolean] = js.undefined,
     packed: js.UndefOr[Boolean] = js.undefined,
     uninterpretedOption: js.Array[IUninterpretedOption] = null,

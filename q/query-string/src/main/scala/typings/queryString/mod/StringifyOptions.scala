@@ -6,7 +6,6 @@ import typings.queryString.queryStringStrings.comma
 import typings.queryString.queryStringStrings.index
 import typings.queryString.queryStringStrings.none
 import typings.queryString.queryStringStrings.separator
-import typings.queryString.queryStringStrings.string
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -50,7 +49,7 @@ trait StringifyOptions extends js.Object {
   	The character used to separate array elements when using `{arrayFormat: 'separator'}`.
   	@default ,
   	*/
-  val arrayFormatSeparator: js.UndefOr[string] = js.undefined
+  val arrayFormatSeparator: js.UndefOr[String] = js.undefined
   /**
   	[URL encode](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent) the keys and values.
   	@default true
@@ -106,7 +105,7 @@ object StringifyOptions {
   @scala.inline
   def apply(
     arrayFormat: bracket | index | comma | separator | none = null,
-    arrayFormatSeparator: string = null,
+    arrayFormatSeparator: String = null,
     encode: js.UndefOr[Boolean] = js.undefined,
     skipNull: js.UndefOr[Boolean] = js.undefined,
     sort: (js.Function2[/* itemLeft */ String, /* itemRight */ String, Double]) | `false` = null,

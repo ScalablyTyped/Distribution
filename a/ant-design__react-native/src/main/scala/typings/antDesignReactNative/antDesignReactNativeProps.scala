@@ -141,11 +141,7 @@ trait antDesignReactNativeProps {
   @scala.inline
   def ModalViewProps: IModalPropTypes.type = typings.antDesignReactNative.modalViewMod.IModalPropTypes
   type ModalViewProps = IModalPropTypes
-  @scala.inline
-  def NativePickerDotiosProps: typings.reactNative.mod.PickerProps.type = typings.reactNative.mod.PickerProps
   type NativePickerDotiosProps = typings.reactNative.mod.PickerProps
-  @scala.inline
-  def NativePickerDotiosItemProps: PickerItemProps.type = typings.reactNative.mod.PickerItemProps
   type NativePickerDotiosItemProps = PickerItemProps
   @scala.inline
   def NoticeBarProps: NoticeNativeProps.type = typings.antDesignReactNative.noticeBarMod.NoticeNativeProps
@@ -240,9 +236,9 @@ trait antDesignReactNativeProps {
   @scala.inline
   def TagProps: TagNativeProps.type = typings.antDesignReactNative.tagMod.TagNativeProps
   type TagProps = TagNativeProps
-  @scala.inline
-  def TextProps: typings.reactNative.mod.TextProps.type = typings.reactNative.mod.TextProps
   type TextProps = typings.reactNative.mod.TextProps
+  @scala.inline
+  def TextareaItemProps: typings.antDesignReactNative.textareaItemMod.TextareaItemProps.type = typings.antDesignReactNative.textareaItemMod.TextareaItemProps
   type TextareaItemProps = typings.antDesignReactNative.textareaItemMod.TextareaItemProps
   @scala.inline
   def ThemeProviderProps: typings.antDesignReactNative.libStyleMod.ThemeProviderProps.type = typings.antDesignReactNative.libStyleMod.ThemeProviderProps
@@ -250,8 +246,6 @@ trait antDesignReactNativeProps {
   @scala.inline
   def ToastContainerProps: ToastProps.type = typings.antDesignReactNative.toastContainerMod.ToastProps
   type ToastContainerProps = ToastProps
-  @scala.inline
-  def ViewProps: typings.reactNative.mod.ViewProps.type = typings.reactNative.mod.ViewProps
   type ViewProps = typings.reactNative.mod.ViewProps
   @scala.inline
   def WhiteSpaceProps: typings.antDesignReactNative.whiteSpaceMod.WhiteSpaceProps.type = typings.antDesignReactNative.whiteSpaceMod.WhiteSpaceProps

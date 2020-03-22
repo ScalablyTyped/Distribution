@@ -41,7 +41,7 @@ trait LaunchTemplateInstanceNetworkInterfaceSpecificationRequest extends js.Obje
   /**
     * The ID of the network interface.
     */
-  var NetworkInterfaceId: js.UndefOr[String] = js.native
+  var NetworkInterfaceId: js.UndefOr[typings.awsSdk.ec2Mod.NetworkInterfaceId] = js.native
   /**
     * The primary private IPv4 address of the network interface.
     */
@@ -57,7 +57,7 @@ trait LaunchTemplateInstanceNetworkInterfaceSpecificationRequest extends js.Obje
   /**
     * The ID of the subnet for the network interface.
     */
-  var SubnetId: js.UndefOr[String] = js.native
+  var SubnetId: js.UndefOr[typings.awsSdk.ec2Mod.SubnetId] = js.native
 }
 
 object LaunchTemplateInstanceNetworkInterfaceSpecificationRequest {
@@ -71,11 +71,11 @@ object LaunchTemplateInstanceNetworkInterfaceSpecificationRequest {
     InterfaceType: String = null,
     Ipv6AddressCount: Int | scala.Double = null,
     Ipv6Addresses: InstanceIpv6AddressListRequest = null,
-    NetworkInterfaceId: String = null,
+    NetworkInterfaceId: NetworkInterfaceId = null,
     PrivateIpAddress: String = null,
     PrivateIpAddresses: PrivateIpAddressSpecificationList = null,
     SecondaryPrivateIpAddressCount: Int | scala.Double = null,
-    SubnetId: String = null
+    SubnetId: SubnetId = null
   ): LaunchTemplateInstanceNetworkInterfaceSpecificationRequest = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(AssociatePublicIpAddress)) __obj.updateDynamic("AssociatePublicIpAddress")(AssociatePublicIpAddress.asInstanceOf[js.Any])

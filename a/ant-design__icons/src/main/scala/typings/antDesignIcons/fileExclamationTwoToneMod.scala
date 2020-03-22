@@ -1,13 +1,16 @@
 package typings.antDesignIcons
 
-import typings.antDesignIcons.typesMod.IconDefinition
+import typings.antDesignIcons.antdIconMod.AntdIconProps
+import typings.react.mod.ForwardRefExoticComponent
+import typings.react.mod.RefAttributes
+import typings.std.HTMLSpanElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ant-design/icons/lib/twotone/FileExclamationTwoTone", JSImport.Namespace)
+@JSImport("@ant-design/icons/dist/icons/FileExclamationTwoTone", JSImport.Namespace)
 @js.native
 object fileExclamationTwoToneMod extends js.Object {
-  val default: IconDefinition = js.native
+  val default: ForwardRefExoticComponent[AntdIconProps with RefAttributes[HTMLSpanElement]] = js.native
 }
 

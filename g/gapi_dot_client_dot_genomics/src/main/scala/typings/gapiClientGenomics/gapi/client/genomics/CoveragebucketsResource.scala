@@ -1,7 +1,7 @@
 package typings.gapiClientGenomics.gapi.client.genomics
 
 import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientGenomics.AnonAccesstokenAltBearertokenCallbackEnd
+import typings.gapiClientGenomics.AnonEnd
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,12 +22,12 @@ trait CoveragebucketsResource extends js.Object {
     * levels'. The caller must have READ permissions for the target read group
     * set.
     */
-  def list(request: AnonAccesstokenAltBearertokenCallbackEnd): Request_[ListCoverageBucketsResponse]
+  def list(request: AnonEnd): Request_[ListCoverageBucketsResponse]
 }
 
 object CoveragebucketsResource {
   @scala.inline
-  def apply(list: AnonAccesstokenAltBearertokenCallbackEnd => Request_[ListCoverageBucketsResponse]): CoveragebucketsResource = {
+  def apply(list: AnonEnd => Request_[ListCoverageBucketsResponse]): CoveragebucketsResource = {
     val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[CoveragebucketsResource]

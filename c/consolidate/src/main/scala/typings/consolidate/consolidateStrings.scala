@@ -8,13 +8,7 @@ import scala.scalajs.js.annotation._
 
 object consolidateStrings {
   @js.native
-  sealed trait ConsolidateType extends js.Object
-  
-  @js.native
   sealed trait ReactDOM extends Requires
-  
-  @js.native
-  sealed trait RequiresType extends js.Object
   
   @js.native
   sealed trait `arc-templates`
@@ -238,11 +232,7 @@ object consolidateStrings {
        with SupportedTemplateEngines
   
   @scala.inline
-  def ConsolidateType: ConsolidateType = "ConsolidateType".asInstanceOf[ConsolidateType]
-  @scala.inline
   def ReactDOM: ReactDOM = "ReactDOM".asInstanceOf[ReactDOM]
-  @scala.inline
-  def RequiresType: RequiresType = "RequiresType".asInstanceOf[RequiresType]
   @scala.inline
   def `arc-templates`: `arc-templates` = "arc-templates".asInstanceOf[`arc-templates`]
   @scala.inline

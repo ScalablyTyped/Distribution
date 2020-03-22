@@ -1,6 +1,6 @@
 package typings.cathoQuantum.tagMod
 
-import typings.cathoQuantum.AnonColorsComponents
+import typings.cathoQuantum.AnonColorsComponentsSpacing
 import typings.cathoQuantum.cathoQuantumStrings.error
 import typings.cathoQuantum.cathoQuantumStrings.large
 import typings.cathoQuantum.cathoQuantumStrings.medium
@@ -24,7 +24,7 @@ trait TagProps[T] extends js.Object {
   var skin: js.UndefOr[neutral | primary | success | warning | error] = js.undefined
   var stroked: js.UndefOr[Boolean] = js.undefined
   var text: js.UndefOr[String] = js.undefined
-  var theme: js.UndefOr[AnonColorsComponents] = js.undefined
+  var theme: js.UndefOr[AnonColorsComponentsSpacing] = js.undefined
 }
 
 object TagProps {
@@ -37,7 +37,7 @@ object TagProps {
     skin: neutral | primary | success | warning | error = null,
     stroked: js.UndefOr[Boolean] = js.undefined,
     text: String = null,
-    theme: AnonColorsComponents = null
+    theme: AnonColorsComponentsSpacing = null
   ): TagProps[T] = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(bold)) __obj.updateDynamic("bold")(bold.asInstanceOf[js.Any])

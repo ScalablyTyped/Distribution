@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @JSImport("formik/dist/withFormik", "withFormik")
 @js.native
 object withFormik extends js.Object {
-  def apply[OuterProps, Values /* <: FormikValues */, Payload](hasMapPropsToValuesConfig: WithFormikConfig[OuterProps, Values, Payload]): ComponentDecorator[OuterProps, OuterProps with FormikProps[Values]] = js.native
+  def apply[OuterProps /* <: js.Object */, Values /* <: FormikValues */, Payload](hasMapPropsToValuesConfig: WithFormikConfig[OuterProps, Values, Payload]): ComponentDecorator[OuterProps, OuterProps with FormikProps[Values]] = js.native
 }
 

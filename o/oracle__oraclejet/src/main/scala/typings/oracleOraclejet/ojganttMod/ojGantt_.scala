@@ -1,17 +1,17 @@
 package typings.oracleOraclejet.ojganttMod
 
+import typings.oracleOraclejet.Anon7
 import typings.oracleOraclejet.AnonAccessibleDependencyInfo
-import typings.oracleOraclejet.AnonAutoBaseline
-import typings.oracleOraclejet.AnonAutoHidden
+import typings.oracleOraclejet.AnonBaseline
 import typings.oracleOraclejet.AnonBaselineDate
-import typings.oracleOraclejet.AnonContextRendererAnonInsertAnonPreventDefault
-import typings.oracleOraclejet.AnonConverter
 import typings.oracleOraclejet.AnonHeightNumber
 import typings.oracleOraclejet.AnonIndex
-import typings.oracleOraclejet.AnonIndexOjgantttaskbar
-import typings.oracleOraclejet.AnonLabel
+import typings.oracleOraclejet.AnonMaxWidth
 import typings.oracleOraclejet.AnonMove
 import typings.oracleOraclejet.AnonOffsetY
+import typings.oracleOraclejet.AnonRowIndex
+import typings.oracleOraclejet.AnonScale
+import typings.oracleOraclejet.AnonVertical
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.ojdataproviderMod.DataProvider
 import typings.oracleOraclejet.ojganttMod.ojGantt.ReferenceObject
@@ -86,9 +86,9 @@ trait ojGantt_[K1, K2, D1, D2] extends dvtTimeComponent[ojGanttSettablePropertie
   var dependencyData: js.UndefOr[DataProvider[K1, D1]] = js.native
   var dnd: AnonMove = js.native
   var end: String = js.native
-  var gridlines: AnonAutoHidden = js.native
-  var majorAxis: AnonConverter = js.native
-  var minorAxis: AnonConverter = js.native
+  var gridlines: AnonVertical = js.native
+  var majorAxis: AnonScale = js.native
+  var minorAxis: AnonScale = js.native
   var onAnimationOnDataChangeChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none], _]) | Null = js.native
   var onAnimationOnDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none], _]) | Null = js.native
   var onAsChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
@@ -96,37 +96,34 @@ trait ojGantt_[K1, K2, D1, D2] extends dvtTimeComponent[ojGanttSettablePropertie
   var onDependencyDataChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[DataProvider[K1, D1]]], _]) | Null = js.native
   var onDndChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonMove], _]) | Null = js.native
   var onEndChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
-  var onGridlinesChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonAutoHidden], _]) | Null = js.native
-  var onMajorAxisChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonConverter], _]) | Null = js.native
-  var onMinorAxisChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonConverter], _]) | Null = js.native
+  var onGridlinesChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonVertical], _]) | Null = js.native
+  var onMajorAxisChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonScale], _]) | Null = js.native
+  var onMinorAxisChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonScale], _]) | Null = js.native
   var onOjMove: (js.Function1[/* event */ ojMove[K2, D2], _]) | Null = js.native
   var onOjViewportChange: (js.Function1[/* event */ ojViewportChange, _]) | Null = js.native
   var onReferenceObjectsChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[ReferenceObject]], _]) | Null = js.native
-  var onRowAxisChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonLabel[K2, D2]], _]) | Null = js.native
+  var onRowAxisChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonMaxWidth[K2, D2]], _]) | Null = js.native
   var onRowDefaultsChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonHeightNumber], _]) | Null = js.native
   var onScrollPositionChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonOffsetY], _]) | Null = js.native
   var onSelectionChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[K2]], _]) | Null = js.native
   var onSelectionModeChanged: (js.Function1[/* event */ JetElementCustomEvent[single | multiple | none], _]) | Null = js.native
   var onStartChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
   var onTaskDataChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[DataProvider[K2, D2]]], _]) | Null = js.native
-  var onTaskDefaultsChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonAutoBaseline], _]) | Null = js.native
-  var onTooltipChanged: (js.Function1[
-    /* event */ JetElementCustomEvent[AnonContextRendererAnonInsertAnonPreventDefault[K2, D2]], 
-    _
-  ]) | Null = js.native
+  var onTaskDefaultsChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonBaseline], _]) | Null = js.native
+  var onTooltipChanged: (js.Function1[/* event */ JetElementCustomEvent[Anon7[K2, D2]], _]) | Null = js.native
   var onValueFormatsChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonBaselineDate], _]) | Null = js.native
   var onViewportEndChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
   var onViewportStartChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
   var referenceObjects: js.Array[ReferenceObject] = js.native
-  var rowAxis: AnonLabel[K2, D2] = js.native
+  var rowAxis: AnonMaxWidth[K2, D2] = js.native
   var rowDefaults: AnonHeightNumber = js.native
   var scrollPosition: AnonOffsetY = js.native
   var selection: js.Array[K2] = js.native
   var selectionMode: single | multiple | none = js.native
   var start: String = js.native
   var taskData: js.UndefOr[DataProvider[K2, D2]] = js.native
-  var taskDefaults: AnonAutoBaseline = js.native
-  var tooltip: AnonContextRendererAnonInsertAnonPreventDefault[K2, D2] = js.native
+  var taskDefaults: AnonBaseline = js.native
+  var tooltip: Anon7[K2, D2] = js.native
   @JSName("translations")
   var translations_ojGantt_ : AnonAccessibleDependencyInfo = js.native
   var valueFormats: AnonBaselineDate = js.native
@@ -223,34 +220,34 @@ trait ojGantt_[K1, K2, D1, D2] extends dvtTimeComponent[ojGanttSettablePropertie
   @JSName("addEventListener")
   def addEventListener_gridlinesChanged(
     `type`: gridlinesChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonAutoHidden], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonVertical], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_gridlinesChanged(
     `type`: gridlinesChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonAutoHidden], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonVertical], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_majorAxisChanged(
     `type`: majorAxisChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonConverter], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonScale], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_majorAxisChanged(
     `type`: majorAxisChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonConverter], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonScale], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_minorAxisChanged(
     `type`: minorAxisChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonConverter], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonScale], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_minorAxisChanged(
     `type`: minorAxisChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonConverter], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonScale], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -289,12 +286,12 @@ trait ojGantt_[K1, K2, D1, D2] extends dvtTimeComponent[ojGanttSettablePropertie
   @JSName("addEventListener")
   def addEventListener_rowAxisChanged(
     `type`: rowAxisChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonLabel[K2, D2]], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonMaxWidth[K2, D2]], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_rowAxisChanged(
     `type`: rowAxisChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonLabel[K2, D2]], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonMaxWidth[K2, D2]], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -363,31 +360,23 @@ trait ojGantt_[K1, K2, D1, D2] extends dvtTimeComponent[ojGanttSettablePropertie
   @JSName("addEventListener")
   def addEventListener_taskDefaultsChanged(
     `type`: taskDefaultsChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonAutoBaseline], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonBaseline], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_taskDefaultsChanged(
     `type`: taskDefaultsChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonAutoBaseline], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonBaseline], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_tooltipChanged(
     `type`: tooltipChanged,
-    listener: js.ThisFunction1[
-      /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[AnonContextRendererAnonInsertAnonPreventDefault[K2, D2]], 
-      _
-    ]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Anon7[K2, D2]], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_tooltipChanged(
     `type`: tooltipChanged,
-    listener: js.ThisFunction1[
-      /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[AnonContextRendererAnonInsertAnonPreventDefault[K2, D2]], 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Anon7[K2, D2]], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -423,7 +412,7 @@ trait ojGantt_[K1, K2, D1, D2] extends dvtTimeComponent[ojGanttSettablePropertie
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String], _],
     useCapture: Boolean
   ): Unit = js.native
-  def getContextByNode(node: Element): AnonIndex | AnonIndexOjgantttaskbar | Null = js.native
+  def getContextByNode(node: Element): AnonIndex | AnonRowIndex | Null = js.native
   @JSName("getProperty")
   def getProperty_animationOnDataChange(property: animationOnDataChange): auto | none = js.native
   @JSName("getProperty")
@@ -439,15 +428,15 @@ trait ojGantt_[K1, K2, D1, D2] extends dvtTimeComponent[ojGanttSettablePropertie
   @JSName("getProperty")
   def getProperty_end(property: end): String = js.native
   @JSName("getProperty")
-  def getProperty_gridlines(property: gridlines): AnonAutoHidden = js.native
+  def getProperty_gridlines(property: gridlines): AnonVertical = js.native
   @JSName("getProperty")
-  def getProperty_majorAxis(property: majorAxis): AnonConverter = js.native
+  def getProperty_majorAxis(property: majorAxis): AnonScale = js.native
   @JSName("getProperty")
-  def getProperty_minorAxis(property: minorAxis): AnonConverter = js.native
+  def getProperty_minorAxis(property: minorAxis): AnonScale = js.native
   @JSName("getProperty")
   def getProperty_referenceObjects(property: referenceObjects): js.Array[ReferenceObject] = js.native
   @JSName("getProperty")
-  def getProperty_rowAxis(property: rowAxis): AnonLabel[K2, D2] = js.native
+  def getProperty_rowAxis(property: rowAxis): AnonMaxWidth[K2, D2] = js.native
   @JSName("getProperty")
   def getProperty_rowDefaults(property: rowDefaults): AnonHeightNumber = js.native
   @JSName("getProperty")
@@ -461,9 +450,9 @@ trait ojGantt_[K1, K2, D1, D2] extends dvtTimeComponent[ojGanttSettablePropertie
   @JSName("getProperty")
   def getProperty_taskData(property: taskData): js.UndefOr[DataProvider[K2, D2]] = js.native
   @JSName("getProperty")
-  def getProperty_taskDefaults(property: taskDefaults): AnonAutoBaseline = js.native
+  def getProperty_taskDefaults(property: taskDefaults): AnonBaseline = js.native
   @JSName("getProperty")
-  def getProperty_tooltip(property: tooltip): AnonContextRendererAnonInsertAnonPreventDefault[K2, D2] = js.native
+  def getProperty_tooltip(property: tooltip): Anon7[K2, D2] = js.native
   @JSName("getProperty")
   def getProperty_valueFormats(property: valueFormats): AnonBaselineDate = js.native
   @JSName("getProperty")
@@ -489,15 +478,15 @@ trait ojGantt_[K1, K2, D1, D2] extends dvtTimeComponent[ojGanttSettablePropertie
   @JSName("setProperty")
   def setProperty_end(property: end, value: String): Unit = js.native
   @JSName("setProperty")
-  def setProperty_gridlines(property: gridlines, value: AnonAutoHidden): Unit = js.native
+  def setProperty_gridlines(property: gridlines, value: AnonVertical): Unit = js.native
   @JSName("setProperty")
-  def setProperty_majorAxis(property: majorAxis, value: AnonConverter): Unit = js.native
+  def setProperty_majorAxis(property: majorAxis, value: AnonScale): Unit = js.native
   @JSName("setProperty")
-  def setProperty_minorAxis(property: minorAxis, value: AnonConverter): Unit = js.native
+  def setProperty_minorAxis(property: minorAxis, value: AnonScale): Unit = js.native
   @JSName("setProperty")
   def setProperty_referenceObjects(property: referenceObjects, value: js.Array[ReferenceObject]): Unit = js.native
   @JSName("setProperty")
-  def setProperty_rowAxis(property: rowAxis, value: AnonLabel[K2, D2]): Unit = js.native
+  def setProperty_rowAxis(property: rowAxis, value: AnonMaxWidth[K2, D2]): Unit = js.native
   @JSName("setProperty")
   def setProperty_rowDefaults(property: rowDefaults, value: AnonHeightNumber): Unit = js.native
   @JSName("setProperty")
@@ -509,9 +498,9 @@ trait ojGantt_[K1, K2, D1, D2] extends dvtTimeComponent[ojGanttSettablePropertie
   @JSName("setProperty")
   def setProperty_taskData(property: taskData, value: DataProvider[K2, D2]): Unit = js.native
   @JSName("setProperty")
-  def setProperty_taskDefaults(property: taskDefaults, value: AnonAutoBaseline): Unit = js.native
+  def setProperty_taskDefaults(property: taskDefaults, value: AnonBaseline): Unit = js.native
   @JSName("setProperty")
-  def setProperty_tooltip(property: tooltip, value: AnonContextRendererAnonInsertAnonPreventDefault[K2, D2]): Unit = js.native
+  def setProperty_tooltip(property: tooltip, value: Anon7[K2, D2]): Unit = js.native
   @JSName("setProperty")
   def setProperty_translations(property: translations, value: AnonAccessibleDependencyInfo): Unit = js.native
   @JSName("setProperty")

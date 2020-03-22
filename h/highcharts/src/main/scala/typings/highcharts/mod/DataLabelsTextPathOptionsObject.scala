@@ -6,11 +6,12 @@ import scala.scalajs.js.annotation._
 
 trait DataLabelsTextPathOptionsObject extends js.Object {
   /**
-    * Presentation attributes for the text path.
+    * (Highcharts, Highstock, Gantt) Presentation attributes for the text path.
     */
   var attributes: js.UndefOr[SVGAttributes] = js.undefined
   /**
-    * Enable or disable `textPath` option for link's or marker's data labels.
+    * (Highcharts, Highstock, Gantt) Enable or disable `textPath` option for
+    * link's or marker's data labels.
     */
   var enabled: js.UndefOr[Boolean] = js.undefined
 }

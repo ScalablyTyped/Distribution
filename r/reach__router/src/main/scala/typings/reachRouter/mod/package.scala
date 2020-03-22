@@ -5,13 +5,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mod {
-  type AnchorProps = typings.reachRouter.mod.Omit[
-    typings.react.mod.DetailedHTMLProps[
-      typings.react.mod.AnchorHTMLAttributes[typings.std.HTMLAnchorElement], 
-      typings.std.HTMLAnchorElement
-    ], 
-    typings.reachRouter.reachRouterStrings.href
-  ]
   type HistoryListener = js.Function1[/* parameter */ typings.reachRouter.mod.HistoryListenerParameter, scala.Unit]
   type HistoryLocation = typings.reachRouter.mod.WindowLocation with typings.reachRouter.AnonState
   type HistoryUnsubscribe = js.Function0[scala.Unit]

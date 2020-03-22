@@ -6,8 +6,7 @@ import typings.jupyterlabDocregistry.registryMod.DocumentRegistry.IModel
 import typings.jupyterlabDocregistry.registryMod.DocumentRegistry.IWidgetFactoryOptions
 import typings.jupyterlabDocregistry.registryMod.IDocumentWidget
 import typings.jupyterlabObservables.modeldbMod.IModelDB
-import typings.phosphorWidgets.mod.Widget
-import typings.std.Partial
+import typings.luminoWidgets.mod.Widget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -97,7 +96,7 @@ object mod extends js.Object {
     /**
       * The default file types used by the document registry.
       */
-    val defaultFileTypes: js.Array[Partial[IFileType]] = js.native
+    val defaultFileTypes: js.Array[PartialIFileType] = js.native
     /**
       * The default notebook file type used by the document registry.
       */

@@ -59,7 +59,9 @@ trait ScrollableTabViewProperties extends Props[ScrollableTabView] {
     * and should implement setAnimationValue to be able to animate itself along with the tab content.
     * You can manually pass the props to the TabBar component.
     */
-  var renderTabBar: js.UndefOr[(js.Function1[/* props */ TabBarProps[js.Object], Element]) | `false`] = js.undefined
+  var renderTabBar: js.UndefOr[
+    (js.Function1[/* props */ typings.reactNativeScrollableTabView.TabBarProps, Element]) | `false`
+  ] = js.undefined
   /**
     * on tab press change tab without animation.
     */
@@ -110,7 +112,7 @@ object ScrollableTabViewProperties {
     page: Int | Double = null,
     prerenderingSiblingsNumber: Int | Double = null,
     ref: LegacyRef[ScrollableTabView] = null,
-    renderTabBar: (js.Function1[/* props */ TabBarProps[js.Object], Element]) | `false` = null,
+    renderTabBar: (js.Function1[/* props */ typings.reactNativeScrollableTabView.TabBarProps, Element]) | `false` = null,
     scrollWithoutAnimation: js.UndefOr[Boolean] = js.undefined,
     style: StyleProp[ViewStyle] = null,
     tabBarActiveTextColor: String = null,

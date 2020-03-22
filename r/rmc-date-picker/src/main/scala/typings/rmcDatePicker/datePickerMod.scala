@@ -39,7 +39,7 @@ object datePickerMod extends js.Object {
     def getNewDate(values: js.Any, index: js.Any): js.Any = js.native
     def getTimeData(date: js.Any): AnonCols = js.native
     def getValue(): js.Any = js.native
-    def getValueCols(): AnonColsValue = js.native
+    def getValueCols(): AnonValue = js.native
     def onScrollChange(values: js.Any, index: js.Any): Unit = js.native
     def onValueChange(values: js.Any, index: js.Any): Unit = js.native
     def setAmPm(date: js.Any, index: js.Any): Unit = js.native

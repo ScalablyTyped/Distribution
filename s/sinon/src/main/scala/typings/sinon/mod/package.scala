@@ -19,10 +19,4 @@ package object mod {
     */
   type SinonStubbedMember[T] = T | typings.sinon.mod.SinonStub
   type SinonTimerId = scala.Double | typings.sinon.AnonId
-  /**
-    * Stubbed type of an object with members replaced by stubs.
-    *
-    * @template TType Type being stubbed.
-    */
-  type StubbableType[TType] = js.Function with js.Object
 }

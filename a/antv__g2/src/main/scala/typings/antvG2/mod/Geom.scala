@@ -1,7 +1,7 @@
 package typings.antvG2.mod
 
 import typings.antvG2.AnonAnimate
-import typings.antvG2.AnonKey
+import typings.antvG2.AnonDictkey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ trait Geom extends js.Object {
   def color(`type`: String, colors: js.Array[String]): this.type = js.native
   def color(`type`: String, fun: js.Function): this.type = js.native
   def label(exe: String, func: js.Function): this.type = js.native
-  def label(exe: String, opt: AnonKey): this.type = js.native
+  def label(exe: String, opt: AnonDictkey): this.type = js.native
   def label(field: String): this.type = js.native
   def opacity(col: String): this.type = js.native
   def opacity(op: Double): this.type = js.native

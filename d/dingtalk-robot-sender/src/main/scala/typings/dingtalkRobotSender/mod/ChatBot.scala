@@ -1,8 +1,8 @@
 package typings.dingtalkRobotSender.mod
 
 import typings.axios.mod.AxiosResponse
-import typings.dingtalkRobotSender.Anon0
 import typings.dingtalkRobotSender.AnonAtMobiles
+import typings.dingtalkRobotSender.AnonBtnOrientation
 import typings.dingtalkRobotSender.AnonMessageUrl
 import typings.dingtalkRobotSender.mod.Message.FeedCardItem
 import scala.scalajs.js
@@ -23,7 +23,7 @@ trait ChatBot extends js.Object {
     * @param card.btn.actionURL 某个按钮链接
     * @return
     */
-  def actionCard(card: Anon0): js.Promise[AxiosResponse[_]] = js.native
+  def actionCard(card: AnonBtnOrientation): js.Promise[AxiosResponse[_]] = js.native
   /**
     * 发送feedCard，支持多图文链接
     * Ps: links可包含多个link，建议不要超过4个

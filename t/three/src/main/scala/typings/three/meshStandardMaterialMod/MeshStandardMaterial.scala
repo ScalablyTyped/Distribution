@@ -19,7 +19,6 @@ class MeshStandardMaterial () extends Material {
   var bumpMap: Texture | Null = js.native
   var bumpScale: Double = js.native
   var color: Color = js.native
-  var defines: js.Any = js.native
   var displacementBias: Double = js.native
   var displacementMap: Texture | Null = js.native
   var displacementScale: Double = js.native
@@ -42,6 +41,7 @@ class MeshStandardMaterial () extends Material {
   var roughness: Double = js.native
   var roughnessMap: Texture | Null = js.native
   var skinning: Boolean = js.native
+  var vertexTangents: Boolean = js.native
   var wireframe: Boolean = js.native
   var wireframeLinewidth: Double = js.native
   def setValues(parameters: MeshStandardMaterialParameters): Unit = js.native

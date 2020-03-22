@@ -1,6 +1,6 @@
 package typings.jupyterlabDocregistry.registryMod.DocumentRegistry
 
-import typings.phosphorWidgets.docklayoutMod.DockLayout.InsertMode
+import typings.luminoWidgets.docklayoutMod.DockLayout.InsertMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

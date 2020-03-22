@@ -11,7 +11,7 @@ trait AnonGroups extends js.Object {
   var localizedRuleName: js.UndefOr[String] = js.native
   var ruleImpact: js.UndefOr[Double] = js.native
   var summary: js.UndefOr[SchemaPagespeedApiFormatStringV2] = js.native
-  var urlBlocks: js.UndefOr[js.Array[AnonHeaderUrls]] = js.native
+  var urlBlocks: js.UndefOr[js.Array[AnonUrls]] = js.native
 }
 
 object AnonGroups {
@@ -21,7 +21,7 @@ object AnonGroups {
     localizedRuleName: String = null,
     ruleImpact: Int | Double = null,
     summary: SchemaPagespeedApiFormatStringV2 = null,
-    urlBlocks: js.Array[AnonHeaderUrls] = null
+    urlBlocks: js.Array[AnonUrls] = null
   ): AnonGroups = {
     val __obj = js.Dynamic.literal()
     if (groups != null) __obj.updateDynamic("groups")(groups.asInstanceOf[js.Any])

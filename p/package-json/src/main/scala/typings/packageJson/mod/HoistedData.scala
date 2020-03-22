@@ -1,15 +1,15 @@
 package typings.packageJson.mod
 
 import typings.packageJson.AnonEmail
-import typings.packageJson.AnonEmailUrl
 import typings.packageJson.AnonType
+import typings.packageJson.AnonUrl
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait HoistedData extends js.Object {
   val author: js.UndefOr[Person] = js.undefined
-  val bugs: js.UndefOr[AnonEmail | AnonEmailUrl] = js.undefined
+  val bugs: js.UndefOr[AnonEmail | AnonUrl] = js.undefined
   val contributors: js.UndefOr[js.Array[Person]] = js.undefined
   val description: js.UndefOr[String] = js.undefined
   val homepage: js.UndefOr[String] = js.undefined
@@ -25,7 +25,7 @@ object HoistedData {
   @scala.inline
   def apply(
     author: Person = null,
-    bugs: AnonEmail | AnonEmailUrl = null,
+    bugs: AnonEmail | AnonUrl = null,
     contributors: js.Array[Person] = null,
     description: String = null,
     homepage: String = null,

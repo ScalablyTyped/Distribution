@@ -38,6 +38,9 @@ object sharedbStrings {
   sealed trait changed extends QueryEvent
   
   @js.native
+  sealed trait close extends js.Object
+  
+  @js.native
   sealed trait commit extends js.Object
   
   @js.native
@@ -50,10 +53,19 @@ object sharedbStrings {
   sealed trait current extends SnapshotType
   
   @js.native
+  sealed trait data extends js.Object
+  
+  @js.native
   sealed trait del extends DocEvent
   
   @js.native
   sealed trait doc extends js.Object
+  
+  @js.native
+  sealed trait drain extends js.Object
+  
+  @js.native
+  sealed trait end extends js.Object
   
   @js.native
   sealed trait error
@@ -65,6 +77,9 @@ object sharedbStrings {
   
   @js.native
   sealed trait f extends RequestAction
+  
+  @js.native
+  sealed trait finish extends js.Object
   
   @js.native
   sealed trait insert extends QueryEvent
@@ -102,6 +117,9 @@ object sharedbStrings {
   sealed trait `ot-text-tp2` extends OTType
   
   @js.native
+  sealed trait pipe extends js.Object
+  
+  @js.native
   sealed trait qf extends RequestAction
   
   @js.native
@@ -115,6 +133,9 @@ object sharedbStrings {
   
   @js.native
   sealed trait readSnapshots extends js.Object
+  
+  @js.native
+  sealed trait readable extends js.Object
   
   @js.native
   sealed trait ready extends QueryEvent
@@ -140,6 +161,9 @@ object sharedbStrings {
   @js.native
   sealed trait u extends RequestAction
   
+  @js.native
+  sealed trait unpipe extends js.Object
+  
   @scala.inline
   def afterSubmit: afterSubmit = "afterSubmit".asInstanceOf[afterSubmit]
   @scala.inline
@@ -159,6 +183,8 @@ object sharedbStrings {
   @scala.inline
   def changed: changed = "changed".asInstanceOf[changed]
   @scala.inline
+  def close: close = "close".asInstanceOf[close]
+  @scala.inline
   def commit: commit = "commit".asInstanceOf[commit]
   @scala.inline
   def connect: connect = "connect".asInstanceOf[connect]
@@ -167,15 +193,23 @@ object sharedbStrings {
   @scala.inline
   def current: current = "current".asInstanceOf[current]
   @scala.inline
+  def data: data = "data".asInstanceOf[data]
+  @scala.inline
   def del: del = "del".asInstanceOf[del]
   @scala.inline
   def doc: doc = "doc".asInstanceOf[doc]
+  @scala.inline
+  def drain: drain = "drain".asInstanceOf[drain]
+  @scala.inline
+  def end: end = "end".asInstanceOf[end]
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   @scala.inline
   def extra: extra = "extra".asInstanceOf[extra]
   @scala.inline
   def f: f = "f".asInstanceOf[f]
+  @scala.inline
+  def finish: finish = "finish".asInstanceOf[finish]
   @scala.inline
   def insert: insert = "insert".asInstanceOf[insert]
   @scala.inline
@@ -199,6 +233,8 @@ object sharedbStrings {
   @scala.inline
   def `ot-text-tp2`: `ot-text-tp2` = "ot-text-tp2".asInstanceOf[`ot-text-tp2`]
   @scala.inline
+  def pipe: pipe = "pipe".asInstanceOf[pipe]
+  @scala.inline
   def qf: qf = "qf".asInstanceOf[qf]
   @scala.inline
   def qs: qs = "qs".asInstanceOf[qs]
@@ -208,6 +244,8 @@ object sharedbStrings {
   def query: query = "query".asInstanceOf[query]
   @scala.inline
   def readSnapshots: readSnapshots = "readSnapshots".asInstanceOf[readSnapshots]
+  @scala.inline
+  def readable: readable = "readable".asInstanceOf[readable]
   @scala.inline
   def ready: ready = "ready".asInstanceOf[ready]
   @scala.inline
@@ -224,5 +262,7 @@ object sharedbStrings {
   def submit: submit = "submit".asInstanceOf[submit]
   @scala.inline
   def u: u = "u".asInstanceOf[u]
+  @scala.inline
+  def unpipe: unpipe = "unpipe".asInstanceOf[unpipe]
 }
 

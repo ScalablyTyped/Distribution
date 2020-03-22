@@ -1,6 +1,6 @@
 package typings.vscode.mod
 
-import typings.vscode.AnonDarkLight
+import typings.vscode.AnonLight
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ trait QuickInputButton extends js.Object {
   /**
   		 * Icon for the button.
   		 */
-  val iconPath: Uri | AnonDarkLight | ThemeIcon
+  val iconPath: Uri | AnonLight | ThemeIcon
   /**
   		 * An optional tooltip.
   		 */
@@ -18,7 +18,7 @@ trait QuickInputButton extends js.Object {
 
 object QuickInputButton {
   @scala.inline
-  def apply(iconPath: Uri | AnonDarkLight | ThemeIcon, tooltip: String = null): QuickInputButton = {
+  def apply(iconPath: Uri | AnonLight | ThemeIcon, tooltip: String = null): QuickInputButton = {
     val __obj = js.Dynamic.literal(iconPath = iconPath.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuickInputButton]

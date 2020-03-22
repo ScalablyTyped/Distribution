@@ -27,11 +27,11 @@ trait TypeofpageAction extends js.Object {
     * data from a canvas element, or as dictionary of either one of those. Either the **path** or the **imageData**
     * property must be specified.
     */
-  def setIcon(details: AnonImageDataKey): js.Promise[Unit]
+  def setIcon(details: AnonPath): js.Promise[Unit]
   /** Sets the html document to be opened as a popup when the user clicks on the page action's icon. */
   def setPopup(details: AnonPopupTabId): Unit
   /** Sets the title of the page action. This is displayed in a tooltip over the page action. */
-  def setTitle(details: AnonTabIdTitleNull): Unit
+  def setTitle(details: AnonTabIdTitle): Unit
   /* pageAction functions */
   /**
     * Shows the page action. The page action is shown whenever the tab is selected.
@@ -49,9 +49,9 @@ object TypeofpageAction {
     isShown: AnonTabIdNumber => js.Promise[Boolean],
     onClicked: WebExtEvent[js.Function1[/* tab */ Tab, Unit]],
     openPopup: () => js.Promise[Unit],
-    setIcon: AnonImageDataKey => js.Promise[Unit],
+    setIcon: AnonPath => js.Promise[Unit],
     setPopup: AnonPopupTabId => Unit,
-    setTitle: AnonTabIdTitleNull => Unit,
+    setTitle: AnonTabIdTitle => Unit,
     show: Double => js.Promise[Unit]
   ): TypeofpageAction = {
     val __obj = js.Dynamic.literal(getPopup = js.Any.fromFunction1(getPopup), getTitle = js.Any.fromFunction1(getTitle), hide = js.Any.fromFunction1(hide), isShown = js.Any.fromFunction1(isShown), onClicked = onClicked.asInstanceOf[js.Any], openPopup = js.Any.fromFunction0(openPopup), setIcon = js.Any.fromFunction1(setIcon), setPopup = js.Any.fromFunction1(setPopup), setTitle = js.Any.fromFunction1(setTitle), show = js.Any.fromFunction1(show))

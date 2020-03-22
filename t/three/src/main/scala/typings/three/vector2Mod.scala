@@ -104,7 +104,7 @@ object vector2Mod extends js.Object {
     def this(x: Double) = this()
     def this(x: Double, y: Double) = this()
     var height: Double = js.native
-    var isVector2: `true` = js.native
+    val isVector2: `true` = js.native
     var width: Double = js.native
     var x: Double = js.native
     var y: Double = js.native

@@ -2,7 +2,7 @@ package typings.reactSlider.mod
 
 import typings.react.mod._Global_.JSX.Element
 import typings.reactSlider.AnonIndex
-import typings.reactSlider.AnonIndexValue
+import typings.reactSlider.AnonValue
 import typings.reactSlider.reactSliderStrings.horizontal
 import typings.reactSlider.reactSliderStrings.vertical
 import scala.scalajs.js
@@ -100,7 +100,7 @@ trait ReactSliderProps extends js.Object {
     * The render function will be passed two arguments. The first is
     * an object that should be added to your handle node.
     */
-  var renderTrack: js.UndefOr[js.Function2[/* props */ js.Object, /* state */ AnonIndexValue, Element]] = js.undefined
+  var renderTrack: js.UndefOr[js.Function2[/* props */ js.Object, /* state */ AnonValue, Element]] = js.undefined
   /**
     * Disables thumb move when clicking the slider track
     */
@@ -159,7 +159,7 @@ object ReactSliderProps {
     pageFn: /* step */ Double => Double = null,
     pearling: js.UndefOr[Boolean] = js.undefined,
     renderThumb: (/* props */ js.Object, /* state */ AnonIndex) => Element = null,
-    renderTrack: (/* props */ js.Object, /* state */ AnonIndexValue) => Element = null,
+    renderTrack: (/* props */ js.Object, /* state */ AnonValue) => Element = null,
     snapDragDisabled: js.UndefOr[Boolean] = js.undefined,
     step: Int | Double = null,
     thumbActiveClassName: String = null,

@@ -1,6 +1,6 @@
 package typings.awsSdk.neptuneMod
 
-import typings.awsSdk.AnonWaiter
+import typings.awsSdk.DescribeDBInstancesMessagDBInstanceIdentifier
 import typings.awsSdk.awsSdkStrings.dBInstanceAvailable
 import typings.awsSdk.awsSdkStrings.dBInstanceDeleted
 import typings.awsSdk.configMod.ConfigBase
@@ -808,11 +808,11 @@ trait Neptune extends Service {
     * Waits for the dBInstanceAvailable state by periodically calling the underlying Neptune.describeDBInstancesoperation every 30 seconds (at most 60 times).
     */
   @JSName("waitFor")
-  def waitFor_dBInstanceAvailable(state: dBInstanceAvailable, params: DescribeDBInstancesMessage with AnonWaiter): Request[DBInstanceMessage, AWSError] = js.native
+  def waitFor_dBInstanceAvailable(state: dBInstanceAvailable, params: DescribeDBInstancesMessagDBInstanceIdentifier): Request[DBInstanceMessage, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_dBInstanceAvailable(
     state: dBInstanceAvailable,
-    params: DescribeDBInstancesMessage with AnonWaiter,
+    params: DescribeDBInstancesMessagDBInstanceIdentifier,
     callback: js.Function2[/* err */ AWSError, /* data */ DBInstanceMessage, Unit]
   ): Request[DBInstanceMessage, AWSError] = js.native
   /**
@@ -829,11 +829,11 @@ trait Neptune extends Service {
     * Waits for the dBInstanceDeleted state by periodically calling the underlying Neptune.describeDBInstancesoperation every 30 seconds (at most 60 times).
     */
   @JSName("waitFor")
-  def waitFor_dBInstanceDeleted(state: dBInstanceDeleted, params: DescribeDBInstancesMessage with AnonWaiter): Request[DBInstanceMessage, AWSError] = js.native
+  def waitFor_dBInstanceDeleted(state: dBInstanceDeleted, params: DescribeDBInstancesMessagDBInstanceIdentifier): Request[DBInstanceMessage, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_dBInstanceDeleted(
     state: dBInstanceDeleted,
-    params: DescribeDBInstancesMessage with AnonWaiter,
+    params: DescribeDBInstancesMessagDBInstanceIdentifier,
     callback: js.Function2[/* err */ AWSError, /* data */ DBInstanceMessage, Unit]
   ): Request[DBInstanceMessage, AWSError] = js.native
 }

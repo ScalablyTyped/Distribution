@@ -5,10 +5,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mod {
-  type ClientSideParams = typings.std.Pick[
-    typings.feathersjsFeathers.mod.Params, 
-    typings.feathersjsFeathers.feathersjsFeathersStrings.query | typings.feathersjsFeathers.feathersjsFeathersStrings.paginate
-  ]
   // tslint:disable-next-line void-return
   type Hook = js.Function1[
     /* hook */ typings.feathersjsFeathers.mod.HookContext[js.Any], 

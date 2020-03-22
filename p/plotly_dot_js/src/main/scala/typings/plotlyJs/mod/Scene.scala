@@ -1,5 +1,10 @@
 package typings.plotlyJs.mod
 
+import typings.plotlyJs.PartialAnnotationsArrowcolor
+import typings.plotlyJs.PartialCameraCenter
+import typings.plotlyJs.PartialDomain
+import typings.plotlyJs.PartialPoint
+import typings.plotlyJs.PartialSceneAxisAutorange
 import typings.plotlyJs.plotlyJsBooleans.`false`
 import typings.plotlyJs.plotlyJsStrings.auto
 import typings.plotlyJs.plotlyJsStrings.closest
@@ -10,41 +15,40 @@ import typings.plotlyJs.plotlyJsStrings.orbit
 import typings.plotlyJs.plotlyJsStrings.pan
 import typings.plotlyJs.plotlyJsStrings.turntable
 import typings.plotlyJs.plotlyJsStrings.zoom
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Scene extends js.Object {
-  var annotations: Partial[Annotations] | js.Array[Partial[Annotations]]
+  var annotations: PartialAnnotationsArrowcolor | js.Array[PartialAnnotationsArrowcolor]
   var aspectmode: auto | cube | data | manual
-  var aspectratio: Partial[Point]
+  var aspectratio: PartialPoint
   var bgcolor: String
-  var camera: Partial[Camera]
+  var camera: PartialCameraCenter
   var captureevents: Boolean
-  var domain: Partial[Domain]
+  var domain: PartialDomain
   var dragmode: orbit | turntable | zoom | pan | `false`
   var hovermode: closest | `false`
-  var xaxis: Partial[SceneAxis]
-  var yaxis: Partial[SceneAxis]
-  var zaxis: Partial[SceneAxis]
+  var xaxis: PartialSceneAxisAutorange
+  var yaxis: PartialSceneAxisAutorange
+  var zaxis: PartialSceneAxisAutorange
 }
 
 object Scene {
   @scala.inline
   def apply(
-    annotations: Partial[Annotations] | js.Array[Partial[Annotations]],
+    annotations: PartialAnnotationsArrowcolor | js.Array[PartialAnnotationsArrowcolor],
     aspectmode: auto | cube | data | manual,
-    aspectratio: Partial[Point],
+    aspectratio: PartialPoint,
     bgcolor: String,
-    camera: Partial[Camera],
+    camera: PartialCameraCenter,
     captureevents: Boolean,
-    domain: Partial[Domain],
+    domain: PartialDomain,
     dragmode: orbit | turntable | zoom | pan | `false`,
     hovermode: closest | `false`,
-    xaxis: Partial[SceneAxis],
-    yaxis: Partial[SceneAxis],
-    zaxis: Partial[SceneAxis]
+    xaxis: PartialSceneAxisAutorange,
+    yaxis: PartialSceneAxisAutorange,
+    zaxis: PartialSceneAxisAutorange
   ): Scene = {
     val __obj = js.Dynamic.literal(annotations = annotations.asInstanceOf[js.Any], aspectmode = aspectmode.asInstanceOf[js.Any], aspectratio = aspectratio.asInstanceOf[js.Any], bgcolor = bgcolor.asInstanceOf[js.Any], camera = camera.asInstanceOf[js.Any], captureevents = captureevents.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any], dragmode = dragmode.asInstanceOf[js.Any], hovermode = hovermode.asInstanceOf[js.Any], xaxis = xaxis.asInstanceOf[js.Any], yaxis = yaxis.asInstanceOf[js.Any], zaxis = zaxis.asInstanceOf[js.Any])
   

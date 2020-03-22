@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait LinearGradient extends BaseGradient {
+trait LinearGradient
+  extends BaseGradient
+     with Gradient {
   /**
     * The type of gradient. Use `"linear"` for a linear gradient.
     */

@@ -9,5 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object animationMod extends js.Object {
   def createAnimation(): Animation = js.native
+  def createAnimation(animationId: String): Animation = js.native
 }
 

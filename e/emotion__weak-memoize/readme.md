@@ -1,7 +1,7 @@
 
 # Scala.js typings for emotion__weak-memoize
 
-Typings are for version 0.2.4
+Typings are for version 0.2.5
 
 ## Library description:
 A memoization function that uses a WeakMap

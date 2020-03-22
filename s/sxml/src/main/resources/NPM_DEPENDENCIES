@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "sxml" : "1.0.3"
+      "sxml" : "1.0.4"
     }
   ],
   "test-dependencies" : [
     {
-      "sxml" : "1.0.3"
+      "sxml" : "1.0.4"
     }
   ],
   "compile-devDependencies" : [

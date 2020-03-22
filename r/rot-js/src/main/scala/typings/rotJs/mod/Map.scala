@@ -3,9 +3,11 @@ package typings.rotJs.mod
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.TopLevel
+import typings.rotJs.PartialOptionsBorn
+import typings.rotJs.PartialOptionsCellHeight
+import typings.rotJs.PartialOptionsCorridorLength
+import typings.rotJs.PartialOptionsRoomDugPercentage
 import typings.rotJs.arenaMod.default
-import typings.rotJs.cellularMod.Options
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,14 +22,14 @@ object Map extends js.Object {
   class Cellular protected ()
     extends typings.rotJs.cellularMod.default {
     def this(width: Double, height: Double) = this()
-    def this(width: Double, height: Double, options: Partial[Options]) = this()
+    def this(width: Double, height: Double, options: PartialOptionsBorn) = this()
   }
   
   @js.native
   class Digger protected ()
     extends typings.rotJs.diggerMod.default {
     def this(width: Double, height: Double) = this()
-    def this(width: Double, height: Double, options: Partial[typings.rotJs.diggerMod.Options]) = this()
+    def this(width: Double, height: Double, options: PartialOptionsCorridorLength) = this()
   }
   
   @js.native
@@ -48,13 +50,13 @@ object Map extends js.Object {
   @js.native
   class Rogue protected ()
     extends typings.rotJs.rogueMod.default {
-    def this(width: Double, height: Double, options: Partial[typings.rotJs.rogueMod.Options]) = this()
+    def this(width: Double, height: Double, options: PartialOptionsCellHeight) = this()
   }
   
   @js.native
   class Uniform protected ()
     extends typings.rotJs.uniformMod.default {
-    def this(width: Double, height: Double, options: Partial[typings.rotJs.uniformMod.Options]) = this()
+    def this(width: Double, height: Double, options: PartialOptionsRoomDugPercentage) = this()
   }
   
   @js.native
@@ -66,7 +68,7 @@ object Map extends js.Object {
           Instantiable3[
             /* width */ Double, 
             /* height */ Double, 
-            js.UndefOr[/* options */ Partial[Options]], 
+            js.UndefOr[/* options */ PartialOptionsBorn], 
             typings.rotJs.cellularMod.default
           ]
         ]
@@ -77,7 +79,7 @@ object Map extends js.Object {
           Instantiable3[
             /* width */ Double, 
             /* height */ Double, 
-            js.UndefOr[/* options */ Partial[typings.rotJs.diggerMod.Options]], 
+            js.UndefOr[/* options */ PartialOptionsCorridorLength], 
             typings.rotJs.diggerMod.default
           ]
         ]
@@ -107,7 +109,7 @@ object Map extends js.Object {
           Instantiable3[
             /* width */ Double, 
             /* height */ Double, 
-            /* options */ Partial[typings.rotJs.rogueMod.Options], 
+            /* options */ PartialOptionsCellHeight, 
             typings.rotJs.rogueMod.default
           ]
         ]
@@ -118,7 +120,7 @@ object Map extends js.Object {
           Instantiable3[
             /* width */ Double, 
             /* height */ Double, 
-            /* options */ Partial[typings.rotJs.uniformMod.Options], 
+            /* options */ PartialOptionsRoomDugPercentage, 
             typings.rotJs.uniformMod.default
           ]
         ]

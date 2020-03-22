@@ -1,6 +1,6 @@
 package typings.antdMobileRn.stepperIndexNativeMod
 
-import typings.antdMobileRn.AnonContainerDisabledStepTextColor
+import typings.antdMobileRn.AnonDisabledStepTextColor
 import typings.antdMobileRn.stepperPropsTypeMod.StepPropsType
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 
 trait StepProps extends StepPropsType {
   var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
-  var styles: js.UndefOr[AnonContainerDisabledStepTextColor] = js.undefined
+  var styles: js.UndefOr[AnonDisabledStepTextColor] = js.undefined
 }
 
 object StepProps {
@@ -28,7 +28,7 @@ object StepProps {
     readOnly: js.UndefOr[Boolean] = js.undefined,
     step: Double | String = null,
     style: StyleProp[ViewStyle] = null,
-    styles: AnonContainerDisabledStepTextColor = null,
+    styles: AnonDisabledStepTextColor = null,
     upStyle: js.Object = null,
     value: Int | Double = null
   ): StepProps = {

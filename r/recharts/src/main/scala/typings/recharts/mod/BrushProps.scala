@@ -1,7 +1,7 @@
 package typings.recharts.mod
 
 import typings.react.mod.ReactNode
-import typings.std.Partial
+import typings.recharts.PartialMargin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +17,7 @@ trait BrushProps extends js.Object {
   var height: js.UndefOr[Double] = js.undefined
   var leaveTimeOut: js.UndefOr[Double] = js.undefined
   var onChange: js.UndefOr[RechartsFunction] = js.undefined
-  var padding: js.UndefOr[Partial[Margin]] = js.undefined
+  var padding: js.UndefOr[PartialMargin] = js.undefined
   var startIndex: js.UndefOr[Double] = js.undefined
   var stroke: js.UndefOr[String] = js.undefined
   var tickFormatter: js.UndefOr[TickFormatterFunction] = js.undefined
@@ -41,7 +41,7 @@ object BrushProps {
     height: Int | Double = null,
     leaveTimeOut: Int | Double = null,
     onChange: /* repeated */ js.Any => Unit = null,
-    padding: Partial[Margin] = null,
+    padding: PartialMargin = null,
     startIndex: Int | Double = null,
     stroke: String = null,
     tickFormatter: /* value */ js.Any => js.Any = null,

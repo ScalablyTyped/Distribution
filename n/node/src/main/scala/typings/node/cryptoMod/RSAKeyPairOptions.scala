@@ -1,7 +1,7 @@
 package typings.node.cryptoMod
 
 import typings.node.AnonFormat
-import typings.node.AnonPkcs1
+import typings.node.AnonType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ trait RSAKeyPairOptions[PubF /* <: KeyFormat */, PrivF /* <: KeyFormat */] exten
     * Key size in bits
     */
   var modulusLength: Double
-  var privateKeyEncoding: BasePrivateKeyEncodingOptions[PrivF] with AnonPkcs1
+  var privateKeyEncoding: BasePrivateKeyEncodingOptions[PrivF] with AnonType
   /**
     * @default 0x10001
     */
@@ -23,7 +23,7 @@ object RSAKeyPairOptions {
   @scala.inline
   def apply[PubF /* <: KeyFormat */, PrivF /* <: KeyFormat */](
     modulusLength: Double,
-    privateKeyEncoding: BasePrivateKeyEncodingOptions[PrivF] with AnonPkcs1,
+    privateKeyEncoding: BasePrivateKeyEncodingOptions[PrivF] with AnonType,
     publicKeyEncoding: AnonFormat[PubF],
     publicExponent: Int | Double = null
   ): RSAKeyPairOptions[PubF, PrivF] = {

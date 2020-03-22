@@ -1,7 +1,7 @@
 package typings.emberData.mod.DS
 
 import typings.emberData.AnonAdapterOptions
-import typings.emberData.AnonAdapterOptionsBackgroundReload
+import typings.emberData.AnonBackgroundReload
 import typings.rsvp.mod.default.Promise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -47,7 +47,7 @@ class Store () extends js.Object {
   def findAll[K /* <: String */](modelName: K): PromiseArray[
     /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
   ] = js.native
-  def findAll[K /* <: String */](modelName: K, options: AnonAdapterOptionsBackgroundReload): PromiseArray[
+  def findAll[K /* <: String */](modelName: K, options: AnonBackgroundReload): PromiseArray[
     /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
   ] = js.native
   /**

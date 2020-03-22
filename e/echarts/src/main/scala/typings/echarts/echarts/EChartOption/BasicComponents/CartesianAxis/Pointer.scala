@@ -1,7 +1,7 @@
 package typings.echarts.echarts.EChartOption.BasicComponents.CartesianAxis
 
-import typings.echarts.AnonColorIcon
-import typings.echarts.AnonColorOpacity
+import typings.echarts.AnonIcon
+import typings.echarts.AnonOpacity
 import typings.echarts.echarts.EChartOption.LineStyle
 import typings.echarts.echartsStrings.line
 import typings.echarts.echartsStrings.none
@@ -14,10 +14,10 @@ import scala.scalajs.js.annotation._
   * @todo describe
   */
 trait Pointer extends js.Object {
-  var handle: js.UndefOr[AnonColorIcon] = js.undefined
+  var handle: js.UndefOr[AnonIcon] = js.undefined
   var label: js.UndefOr[PointerLabel] = js.undefined
   var lineStyle: js.UndefOr[LineStyle] = js.undefined
-  var shadowStyle: js.UndefOr[AnonColorOpacity] = js.undefined
+  var shadowStyle: js.UndefOr[AnonOpacity] = js.undefined
   var show: js.UndefOr[Boolean] = js.undefined
   var snap: js.UndefOr[Boolean] = js.undefined
   var status: js.UndefOr[Boolean] = js.undefined
@@ -30,10 +30,10 @@ trait Pointer extends js.Object {
 object Pointer {
   @scala.inline
   def apply(
-    handle: AnonColorIcon = null,
+    handle: AnonIcon = null,
     label: PointerLabel = null,
     lineStyle: LineStyle = null,
-    shadowStyle: AnonColorOpacity = null,
+    shadowStyle: AnonOpacity = null,
     show: js.UndefOr[Boolean] = js.undefined,
     snap: js.UndefOr[Boolean] = js.undefined,
     status: js.UndefOr[Boolean] = js.undefined,

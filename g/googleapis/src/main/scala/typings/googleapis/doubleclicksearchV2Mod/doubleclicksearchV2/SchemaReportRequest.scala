@@ -3,7 +3,7 @@ package typings.googleapis.doubleclicksearchV2Mod.doubleclicksearchV2
 import typings.googleapis.AnonAdGroupId
 import typings.googleapis.AnonChangedAttributesSinceTimestamp
 import typings.googleapis.AnonColumn
-import typings.googleapis.AnonColumnSortOrder
+import typings.googleapis.AnonSortOrder
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -53,7 +53,7 @@ trait SchemaReportRequest extends js.Object {
     * sorting to be performed on the report rows. The maximum number of
     * orderings per request is 300.
     */
-  var orderBy: js.UndefOr[js.Array[AnonColumnSortOrder]] = js.native
+  var orderBy: js.UndefOr[js.Array[AnonSortOrder]] = js.native
   /**
     * The reportScope is a set of IDs that are used to determine which subset
     * of entities will be returned in the report. The full lineage of IDs from
@@ -107,7 +107,7 @@ object SchemaReportRequest {
     includeDeletedEntities: js.UndefOr[Boolean] = js.undefined,
     includeRemovedEntities: js.UndefOr[Boolean] = js.undefined,
     maxRowsPerFile: Int | Double = null,
-    orderBy: js.Array[AnonColumnSortOrder] = null,
+    orderBy: js.Array[AnonSortOrder] = null,
     reportScope: AnonAdGroupId = null,
     reportType: String = null,
     rowCount: Int | Double = null,

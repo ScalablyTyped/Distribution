@@ -6,12 +6,11 @@ import typings.std.Element
 import typings.std.Error
 import typings.std.HTMLDocument
 import typings.std.HTMLElement
-import typings.std.Partial
-import typings.testingLibraryDom.configMod.Config
 import typings.testingLibraryDom.configMod.ConfigFn
 import typings.testingLibraryDom.eventsMod.CreateObject
 import typings.testingLibraryDom.eventsMod.FireFunction
 import typings.testingLibraryDom.eventsMod.FireObject
+import typings.testingLibraryDom.getQueriesForElementMod.BoundFunction
 import typings.testingLibraryDom.getQueriesForElementMod.BoundFunctions
 import typings.testingLibraryDom.getQueriesForElementMod.Queries
 import typings.testingLibraryDom.matchesMod.DefaultNormalizerOptions
@@ -35,7 +34,6 @@ import typings.testingLibraryDom.queryHelpersMod.AllByAttribute
 import typings.testingLibraryDom.queryHelpersMod.BuiltQueryMethods
 import typings.testingLibraryDom.queryHelpersMod.GetAllBy
 import typings.testingLibraryDom.queryHelpersMod.QueryByAttribute_
-import typings.testingLibraryDom.screenMod.Screen_
 import typings.testingLibraryDom.testingLibraryDomBooleans.`false`
 import typings.testingLibraryDom.waitForElementMod.WaitForElementOptions
 import scala.scalajs.js
@@ -97,13 +95,12 @@ object mod extends js.Object {
   val queryByTestId: QueryByBoundAttribute = js.native
   val queryByText: QueryByText_ = js.native
   val queryByTitle: QueryByBoundAttribute = js.native
-  val screen: Screen_[Typeofqueries] = js.native
   def buildQueries[Arguments /* <: js.Array[_] */](
     queryByAll: GetAllBy[Arguments],
     getMultipleError: js.Function2[/* container */ HTMLElement, /* args */ Arguments, String],
     getMissingError: js.Function2[/* container */ HTMLElement, /* args */ Arguments, String]
   ): BuiltQueryMethods[Arguments] = js.native
-  def configure(configDelta: Partial[Config]): Unit = js.native
+  def configure(configDelta: PartialConfig): Unit = js.native
   def configure(configDelta: ConfigFn): Unit = js.native
   def getDefaultNormalizer(): NormalizerFn = js.native
   def getDefaultNormalizer(options: DefaultNormalizerOptions): NormalizerFn = js.native
@@ -198,6 +195,71 @@ object mod extends js.Object {
       getMissingError: js.Function2[/* container */ HTMLElement, /* args */ Arguments, String]
     ): BuiltQueryMethods[Arguments] = js.native
     def getElementError(message: String, container: HTMLElement): Error = js.native
+  }
+  
+  @js.native
+  object screen extends js.Object {
+    var findAllByAltText: BoundFunction[FindAllByBoundAttribute] = js.native
+    var findAllByDisplayValue: BoundFunction[FindAllByBoundAttribute] = js.native
+    var findAllByLabelText: BoundFunction[FindAllByText_] = js.native
+    var findAllByPlaceholderText: BoundFunction[FindAllByBoundAttribute] = js.native
+    var findAllByRole: BoundFunction[FindAllByRole_] = js.native
+    var findAllByTestId: BoundFunction[FindAllByBoundAttribute] = js.native
+    var findAllByText: BoundFunction[FindAllByText_] = js.native
+    var findAllByTitle: BoundFunction[FindAllByBoundAttribute] = js.native
+    var findByAltText: BoundFunction[FindByBoundAttribute] = js.native
+    var findByDisplayValue: BoundFunction[FindByBoundAttribute] = js.native
+    var findByLabelText: BoundFunction[FindByText_] = js.native
+    var findByPlaceholderText: BoundFunction[FindByBoundAttribute] = js.native
+    var findByRole: BoundFunction[FindByRole_] = js.native
+    var findByTestId: BoundFunction[FindByBoundAttribute] = js.native
+    var findByText: BoundFunction[FindByText_] = js.native
+    var findByTitle: BoundFunction[FindByBoundAttribute] = js.native
+    var getAllByAltText: BoundFunction[AllByBoundAttribute] = js.native
+    var getAllByDisplayValue: BoundFunction[AllByBoundAttribute] = js.native
+    var getAllByLabelText: BoundFunction[AllByText] = js.native
+    var getAllByPlaceholderText: BoundFunction[AllByBoundAttribute] = js.native
+    var getAllByRole: BoundFunction[AllByRole] = js.native
+    var getAllByTestId: BoundFunction[AllByBoundAttribute] = js.native
+    var getAllByText: BoundFunction[AllByText] = js.native
+    var getAllByTitle: BoundFunction[AllByBoundAttribute] = js.native
+    var getByAltText: BoundFunction[GetByBoundAttribute] = js.native
+    var getByDisplayValue: BoundFunction[GetByBoundAttribute] = js.native
+    var getByLabelText: BoundFunction[GetByText_] = js.native
+    var getByPlaceholderText: BoundFunction[GetByBoundAttribute] = js.native
+    var getByRole: BoundFunction[GetByRole_] = js.native
+    var getByTestId: BoundFunction[GetByBoundAttribute] = js.native
+    var getByText: BoundFunction[GetByText_] = js.native
+    var getByTitle: BoundFunction[GetByBoundAttribute] = js.native
+    var queryAllByAltText: BoundFunction[AllByBoundAttribute] = js.native
+    var queryAllByDisplayValue: BoundFunction[AllByBoundAttribute] = js.native
+    var queryAllByLabelText: BoundFunction[AllByText] = js.native
+    var queryAllByPlaceholderText: BoundFunction[AllByBoundAttribute] = js.native
+    var queryAllByRole: BoundFunction[AllByRole] = js.native
+    var queryAllByTestId: BoundFunction[AllByBoundAttribute] = js.native
+    var queryAllByText: BoundFunction[AllByText] = js.native
+    var queryAllByTitle: BoundFunction[AllByBoundAttribute] = js.native
+    var queryByAltText: BoundFunction[QueryByBoundAttribute] = js.native
+    var queryByDisplayValue: BoundFunction[QueryByBoundAttribute] = js.native
+    var queryByLabelText: BoundFunction[QueryByText_] = js.native
+    var queryByPlaceholderText: BoundFunction[QueryByBoundAttribute] = js.native
+    var queryByRole: BoundFunction[QueryByRole_] = js.native
+    var queryByTestId: BoundFunction[QueryByBoundAttribute] = js.native
+    var queryByText: BoundFunction[QueryByText_] = js.native
+    var queryByTitle: BoundFunction[QueryByBoundAttribute] = js.native
+    def debug(element: js.Array[Element | HTMLDocument]): Unit = js.native
+    def debug(element: js.Array[Element | HTMLDocument], maxLength: Double): Unit = js.native
+    def debug(element: js.Array[Element | HTMLDocument], maxLength: Double, options: OptionsReceived): Unit = js.native
+    /**
+      * Convenience function for `pretty-dom` which also allows an array
+      * of elements
+      */
+    def debug(element: Element): Unit = js.native
+    def debug(element: Element, maxLength: Double): Unit = js.native
+    def debug(element: Element, maxLength: Double, options: OptionsReceived): Unit = js.native
+    def debug(element: HTMLDocument): Unit = js.native
+    def debug(element: HTMLDocument, maxLength: Double): Unit = js.native
+    def debug(element: HTMLDocument, maxLength: Double, options: OptionsReceived): Unit = js.native
   }
   
   @js.native

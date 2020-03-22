@@ -1,5 +1,6 @@
 package typings.jestConfig
 
+import typings.jestTypes.configMod.Argv
 import typings.jestTypes.configMod.InitialOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -15,11 +15,11 @@ trait PutRuleRequest extends js.Object {
     */
   var EventBusName: js.UndefOr[typings.awsSdk.cloudwatcheventsMod.EventBusName] = js.native
   /**
-    * The event pattern. For more information, see Event Patterns in the Amazon EventBridge User Guide.
+    * The event pattern. For more information, see Events and Event Patterns in the Amazon EventBridge User Guide.
     */
   var EventPattern: js.UndefOr[typings.awsSdk.cloudwatcheventsMod.EventPattern] = js.native
   /**
-    * The name of the rule that you're creating or updating.
+    * The name of the rule that you are creating or updating.
     */
   var Name: RuleName = js.native
   /**
@@ -27,7 +27,7 @@ trait PutRuleRequest extends js.Object {
     */
   var RoleArn: js.UndefOr[typings.awsSdk.cloudwatcheventsMod.RoleArn] = js.native
   /**
-    * The scheduling expression: for example, "cron(0 20 * * ? *)" or "rate(5 minutes)".
+    * The scheduling expression. For example, "cron(0 20 * * ? *)" or "rate(5 minutes)".
     */
   var ScheduleExpression: js.UndefOr[typings.awsSdk.cloudwatcheventsMod.ScheduleExpression] = js.native
   /**

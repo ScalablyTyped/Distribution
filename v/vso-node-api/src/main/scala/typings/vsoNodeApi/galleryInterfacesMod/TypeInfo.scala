@@ -6,28 +6,28 @@ import typings.vsoNodeApi.AnonEnumValuesAnonAdmin
 import typings.vsoNodeApi.AnonEnumValuesAnonAdminReply
 import typings.vsoNodeApi.AnonEnumValuesAnonAdminResponseForReview
 import typings.vsoNodeApi.AnonEnumValuesAnonAllAttributes
-import typings.vsoNodeApi.AnonEnumValuesAnonAllFirstParty
-import typings.vsoNodeApi.AnonEnumValuesAnonAllMe
 import typings.vsoNodeApi.AnonEnumValuesAnonAllow
 import typings.vsoNodeApi.AnonEnumValuesAnonAscending
 import typings.vsoNodeApi.AnonEnumValuesAnonAuthor
 import typings.vsoNodeApi.AnonEnumValuesAnonBackward
-import typings.vsoNodeApi.AnonEnumValuesAnonBuiltInDisabled
 import typings.vsoNodeApi.AnonEnumValuesAnonBuy
 import typings.vsoNodeApi.AnonEnumValuesAnonCancel
 import typings.vsoNodeApi.AnonEnumValuesAnonCancelled
 import typings.vsoNodeApi.AnonEnumValuesAnonCategory
-import typings.vsoNodeApi.AnonEnumValuesAnonCompletedFailed
-import typings.vsoNodeApi.AnonEnumValuesAnonCreateDelete
 import typings.vsoNodeApi.AnonEnumValuesAnonCustomerContactNotification
 import typings.vsoNodeApi.AnonEnumValuesAnonDaily
 import typings.vsoNodeApi.AnonEnumValuesAnonDecrement
-import typings.vsoNodeApi.AnonEnumValuesAnonDisabledNone
+import typings.vsoNodeApi.AnonEnumValuesAnonDelete
 import typings.vsoNodeApi.AnonEnumValuesAnonExe
 import typings.vsoNodeApi.AnonEnumValuesAnonFilterEmptyReviews
+import typings.vsoNodeApi.AnonEnumValuesAnonFirstParty
 import typings.vsoNodeApi.AnonEnumValuesAnonIncludeEmailAddress
-import typings.vsoNodeApi.AnonEnumValuesAnonNonePublisherCreated
-import typings.vsoNodeApi.AnonEnumValuesAnonNoneValidated
+import typings.vsoNodeApi.AnonEnumValuesAnonInprogress
+import typings.vsoNodeApi.AnonEnumValuesAnonLocked
+import typings.vsoNodeApi.AnonEnumValuesAnonMe
+import typings.vsoNodeApi.AnonEnumValuesAnonPublisherCreated
+import typings.vsoNodeApi.AnonEnumValuesAnonServiceFlags
+import typings.vsoNodeApi.AnonEnumValuesAnonValidated
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,7 +35,7 @@ import scala.scalajs.js.annotation._
 @JSImport("vso-node-api/interfaces/GalleryInterfaces", "TypeInfo")
 @js.native
 object TypeInfo extends js.Object {
-  var AcquisitionAssignmentType: AnonEnumValuesAnonAllMe = js.native
+  var AcquisitionAssignmentType: AnonEnumValuesAnonMe = js.native
   var AcquisitionOperation: js.Any = js.native
   var AcquisitionOperationState: AnonEnumValuesAnonAllow = js.native
   var AcquisitionOperationType: AnonEnumValuesAnonBuy = js.native
@@ -58,7 +58,7 @@ object TypeInfo extends js.Object {
   var ExtensionLifecycleEventType: AnonEnumValuesAnonAcquisition = js.native
   var ExtensionPayload: js.Any = js.native
   var ExtensionPolicy: js.Any = js.native
-  var ExtensionPolicyFlags: AnonEnumValuesAnonAllFirstParty = js.native
+  var ExtensionPolicyFlags: AnonEnumValuesAnonFirstParty = js.native
   var ExtensionQuery: js.Any = js.native
   var ExtensionQueryFilterType: AnonEnumValuesAnonCategory = js.native
   var ExtensionQueryFlags: AnonEnumValuesAnonAllAttributes = js.native
@@ -67,30 +67,30 @@ object TypeInfo extends js.Object {
   var ExtensionStatisticUpdate: js.Any = js.native
   var ExtensionStatsAggregateType: AnonEnumValuesAnonDaily = js.native
   var ExtensionVersion: js.Any = js.native
-  var ExtensionVersionFlags: AnonEnumValuesAnonNoneValidated = js.native
+  var ExtensionVersionFlags: AnonEnumValuesAnonValidated = js.native
   var NotificationTemplateType: AnonEnumValuesAnonCustomerContactNotification = js.native
   var NotificationsData: js.Any = js.native
   var PagingDirection: AnonEnumValuesAnonBackward = js.native
   var PublishedExtension: js.Any = js.native
-  var PublishedExtensionFlags: AnonEnumValuesAnonBuiltInDisabled = js.native
+  var PublishedExtensionFlags: AnonEnumValuesAnonLocked = js.native
   var Publisher: js.Any = js.native
   var PublisherFacts: js.Any = js.native
   var PublisherFilterResult: js.Any = js.native
-  var PublisherFlags: AnonEnumValuesAnonDisabledNone = js.native
+  var PublisherFlags: AnonEnumValuesAnonServiceFlags = js.native
   var PublisherPermissions: AnonEnumValuesAnonAdmin = js.native
   var PublisherQuery: js.Any = js.native
   var PublisherQueryFlags: AnonEnumValuesAnonIncludeEmailAddress = js.native
   var PublisherQueryResult: js.Any = js.native
   var QnAItem: js.Any = js.native
-  var QnAItemStatus: AnonEnumValuesAnonNonePublisherCreated = js.native
+  var QnAItemStatus: AnonEnumValuesAnonPublisherCreated = js.native
   var QueryFilter: js.Any = js.native
   var Question: js.Any = js.native
   var QuestionsResult: js.Any = js.native
   var Response: js.Any = js.native
-  var RestApiResponseStatus: AnonEnumValuesAnonCompletedFailed = js.native
+  var RestApiResponseStatus: AnonEnumValuesAnonInprogress = js.native
   var RestApiResponseStatusModel: js.Any = js.native
   var Review: js.Any = js.native
-  var ReviewEventOperation: AnonEnumValuesAnonCreateDelete = js.native
+  var ReviewEventOperation: AnonEnumValuesAnonDelete = js.native
   var ReviewEventProperties: js.Any = js.native
   var ReviewFilterOptions: AnonEnumValuesAnonFilterEmptyReviews = js.native
   var ReviewPatch: js.Any = js.native

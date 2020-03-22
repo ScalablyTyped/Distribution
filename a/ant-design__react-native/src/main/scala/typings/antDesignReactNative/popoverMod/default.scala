@@ -1,7 +1,7 @@
 package typings.antDesignReactNative.popoverMod
 
 import typings.antDesignReactNative.AnonOnSelect
-import typings.antDesignReactNative.TypeofClassPopoverItem
+import typings.antDesignReactNative.TypeofPopoverItem
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ class default () extends Popover
 @JSImport("@ant-design/react-native/lib/popover", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var Item: TypeofClassPopoverItem = js.native
+  var Item: TypeofPopoverItem = js.native
   var defaultProps: AnonOnSelect = js.native
 }
 

@@ -1,6 +1,6 @@
 package typings.reactInstantsearchCore.mod
 
-import typings.reactInstantsearchCore.AnonAttributeHighlightProperty
+import typings.reactInstantsearchCore.AnonHighlightProperty
 import typings.reactInstantsearchCore.AnonIsHighlighted
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -23,12 +23,12 @@ trait HighlightProvided[TDoc] extends js.Object {
     * }) as Array<Array<{value: string, isHighlighted: boolean}>>
     * ```
     */
-  def highlight(configuration: AnonAttributeHighlightProperty[TDoc]): js.Array[AnonIsHighlighted]
+  def highlight(configuration: AnonHighlightProperty[TDoc]): js.Array[AnonIsHighlighted]
 }
 
 object HighlightProvided {
   @scala.inline
-  def apply[TDoc](highlight: AnonAttributeHighlightProperty[TDoc] => js.Array[AnonIsHighlighted]): HighlightProvided[TDoc] = {
+  def apply[TDoc](highlight: AnonHighlightProperty[TDoc] => js.Array[AnonIsHighlighted]): HighlightProvided[TDoc] = {
     val __obj = js.Dynamic.literal(highlight = js.Any.fromFunction1(highlight))
   
     __obj.asInstanceOf[HighlightProvided[TDoc]]

@@ -1,6 +1,6 @@
 package typings.istanbulLibHook.mod
 
-import typings.std.Partial
+import typings.istanbulLibHook.PartialHookRequireOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object hookRequire extends js.Object {
   def apply(matcher: Matcher, transformer: Transformer): js.Function0[Unit] = js.native
-  def apply(matcher: Matcher, transformer: Transformer, options: Partial[HookRequireOptions]): js.Function0[Unit] = js.native
+  def apply(matcher: Matcher, transformer: Transformer, options: PartialHookRequireOptions): js.Function0[Unit] = js.native
 }
 

@@ -1,28 +1,20 @@
 package typings.oracleOraclejet
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait AnonKey
-  extends /* key */ StringDictionary[js.Any] {
-  var path: String
-  var previousValue: js.Any
-  var value: js.Any
+trait AnonKey[K, D] extends js.Object {
+  var data: D
+  var key: K
 }
 
 object AnonKey {
   @scala.inline
-  def apply(
-    path: String,
-    previousValue: js.Any,
-    value: js.Any,
-    StringDictionary: /* key */ StringDictionary[js.Any] = null
-  ): AnonKey = {
-    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], previousValue = previousValue.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    __obj.asInstanceOf[AnonKey]
+  def apply[K, D](data: D, key: K): AnonKey[K, D] = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[AnonKey[K, D]]
   }
 }
 

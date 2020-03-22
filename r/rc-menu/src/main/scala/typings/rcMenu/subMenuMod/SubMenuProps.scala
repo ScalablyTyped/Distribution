@@ -1,10 +1,10 @@
 package typings.rcMenu.subMenuMod
 
 import typings.rcMenu.AnonDomEvent
-import typings.rcMenu.AnonDomEventKey
 import typings.rcMenu.AnonHover
-import typings.rcMenu.AnonIsRootMenu
-import typings.rcMenu.AnonItem
+import typings.rcMenu.AnonKey
+import typings.rcMenu.AnonOpen
+import typings.rcMenu.ReactElementisRootMenuboo
 import typings.rcMenu.interfaceMod.BuiltinPlacements
 import typings.rcMenu.interfaceMod.DestroyEventHandler
 import typings.rcMenu.interfaceMod.HoverEventHandler
@@ -14,14 +14,15 @@ import typings.rcMenu.interfaceMod.MenuHoverEventHandler
 import typings.rcMenu.interfaceMod.MenuInfo
 import typings.rcMenu.interfaceMod.MenuMode
 import typings.rcMenu.interfaceMod.MiniStore
-import typings.rcMenu.interfaceMod.MotionType
 import typings.rcMenu.interfaceMod.OpenEventHandler
 import typings.rcMenu.interfaceMod.RenderIconType
 import typings.rcMenu.interfaceMod.SelectEventHandler
 import typings.rcMenu.interfaceMod.SelectInfo
 import typings.rcMenu.interfaceMod.TriggerSubMenuAction
+import typings.rcMenu.rcMenuStrings.ltr
+import typings.rcMenu.rcMenuStrings.rtl
+import typings.rcTrigger.interfaceMod.MotionType
 import typings.react.mod.Key
-import typings.react.mod.ReactElement
 import typings.react.mod.ReactInstance
 import typings.react.mod.ReactNode
 import scala.scalajs.js
@@ -33,6 +34,7 @@ trait SubMenuProps extends js.Object {
   var builtinPlacements: js.UndefOr[BuiltinPlacements] = js.undefined
   var children: js.UndefOr[ReactNode] = js.undefined
   var className: js.UndefOr[String] = js.undefined
+  var direction: js.UndefOr[ltr | rtl] = js.undefined
   var disabled: js.UndefOr[Boolean] = js.undefined
   var eventKey: js.UndefOr[String] = js.undefined
   var expandIcon: js.UndefOr[RenderIconType] = js.undefined
@@ -57,7 +59,7 @@ trait SubMenuProps extends js.Object {
   var onTitleMouseEnter: js.UndefOr[MenuHoverEventHandler] = js.undefined
   var onTitleMouseLeave: js.UndefOr[MenuHoverEventHandler] = js.undefined
   var openKeys: js.UndefOr[js.Array[String]] = js.undefined
-  var parentMenu: js.UndefOr[ReactElement with AnonIsRootMenu] = js.undefined
+  var parentMenu: js.UndefOr[ReactElementisRootMenuboo] = js.undefined
   var popupClassName: js.UndefOr[String] = js.undefined
   var popupOffset: js.UndefOr[js.Array[Double]] = js.undefined
   var rootPrefixCls: js.UndefOr[String] = js.undefined
@@ -76,6 +78,7 @@ object SubMenuProps {
     builtinPlacements: BuiltinPlacements = null,
     children: ReactNode = null,
     className: String = null,
+    direction: ltr | rtl = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     eventKey: String = null,
     expandIcon: RenderIconType = null,
@@ -92,15 +95,15 @@ object SubMenuProps {
     onDeselect: /* info */ SelectInfo => Unit = null,
     onDestroy: /* key */ Key => Unit = null,
     onItemHover: /* info */ AnonHover => Unit = null,
-    onMouseEnter: /* info */ AnonDomEventKey => Unit = null,
-    onMouseLeave: /* info */ AnonDomEventKey => Unit = null,
-    onOpenChange: /* keys */ js.Array[Key] | AnonItem => Unit = null,
+    onMouseEnter: /* info */ AnonKey => Unit = null,
+    onMouseLeave: /* info */ AnonKey => Unit = null,
+    onOpenChange: /* keys */ js.Array[Key] | AnonOpen => Unit = null,
     onSelect: /* info */ SelectInfo => Unit = null,
     onTitleClick: /* info */ AnonDomEvent => Unit = null,
-    onTitleMouseEnter: /* info */ AnonDomEventKey => Unit = null,
-    onTitleMouseLeave: /* info */ AnonDomEventKey => Unit = null,
+    onTitleMouseEnter: /* info */ AnonKey => Unit = null,
+    onTitleMouseLeave: /* info */ AnonKey => Unit = null,
     openKeys: js.Array[String] = null,
-    parentMenu: ReactElement with AnonIsRootMenu = null,
+    parentMenu: ReactElementisRootMenuboo = null,
     popupClassName: String = null,
     popupOffset: js.Array[Double] = null,
     rootPrefixCls: String = null,
@@ -116,6 +119,7 @@ object SubMenuProps {
     if (builtinPlacements != null) __obj.updateDynamic("builtinPlacements")(builtinPlacements.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
     if (eventKey != null) __obj.updateDynamic("eventKey")(eventKey.asInstanceOf[js.Any])
     if (expandIcon != null) __obj.updateDynamic("expandIcon")(expandIcon.asInstanceOf[js.Any])

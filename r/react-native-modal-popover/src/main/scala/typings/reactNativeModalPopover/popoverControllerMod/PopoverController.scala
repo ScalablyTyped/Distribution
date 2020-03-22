@@ -1,7 +1,7 @@
 package typings.reactNativeModalPopover.popoverControllerMod
 
 import typings.react.mod.Component
-import typings.reactNativeModalPopover.AnonArgsChildren
+import typings.reactNativeModalPopover.AnonChildren
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,6 +26,6 @@ class PopoverController ()
 @JSImport("react-native-modal-popover/lib/PopoverController", "PopoverController")
 @js.native
 object PopoverController extends js.Object {
-  var propTypes: AnonArgsChildren = js.native
+  var propTypes: AnonChildren = js.native
 }
 

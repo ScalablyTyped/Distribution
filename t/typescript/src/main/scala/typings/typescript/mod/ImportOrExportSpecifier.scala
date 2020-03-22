@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
   - typings.typescript.mod.ImportSpecifier
   - typings.typescript.mod.ExportSpecifier
 */
-trait ImportOrExportSpecifier extends js.Object
+trait ImportOrExportSpecifier extends TypeOnlyCompatibleAliasDeclaration
 

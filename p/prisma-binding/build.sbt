@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "prisma-binding"
-version := "2.3.16-7a68ec"
+version := "2.3.16-e5a2b3"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "apollo-link" % "1.2.13-aa671f",
-  "org.scalablytyped" %%% "ava" % "2.4.0-da0d65",
-  "org.scalablytyped" %%% "graphql" % "14.6.0-800d77",
-  "org.scalablytyped" %%% "graphql-binding" % "2.5.2-8dd185",
-  "org.scalablytyped" %%% "graphql-tools" % "4.0.6-0718f3",
-  "org.scalablytyped" %%% "std" % "3.7-1b8369",
-  "org.scalablytyped" %%% "zen-observable-ts" % "0.8.20-17d6b8")
+  "org.scalablytyped" %%% "apollo-link" % "1.2.13-824d3c",
+  "org.scalablytyped" %%% "ava" % "3.5.0-aa26e9",
+  "org.scalablytyped" %%% "graphql" % "14.6.0-603e55",
+  "org.scalablytyped" %%% "graphql-binding" % "2.5.2-726d61",
+  "org.scalablytyped" %%% "graphql-tools" % "4.0.7-bc19a6",
+  "org.scalablytyped" %%% "std" % "3.8-a0108c",
+  "org.scalablytyped" %%% "zen-observable-ts" % "0.8.20-09c27c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -27,10 +27,10 @@ import typings.reactNative.reactNativeStrings.polite
 import typings.reactNative.reactNativeStrings.radiobutton_checked
 import typings.reactNative.reactNativeStrings.radiobutton_unchecked
 import typings.reactNative.reactNativeStrings.yes
+import typings.reactNativeMaps.Anon0
 import typings.reactNativeMaps.AnonAction
-import typings.reactNativeMaps.AnonActionCalloutpress
 import typings.reactNativeMaps.AnonActionId
-import typings.reactNativeMaps.AnonActionIdMarkerdeselect
+import typings.reactNativeMaps.AnonId
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -47,13 +47,13 @@ trait MarkerProps extends ViewProps {
   var icon: js.UndefOr[ImageURISource | ImageRequireSource] = js.undefined
   var identifier: js.UndefOr[String] = js.undefined
   var image: js.UndefOr[ImageURISource | ImageRequireSource] = js.undefined
-  var onCalloutPress: js.UndefOr[js.Function1[/* event */ MapEvent[AnonActionCalloutpress], Unit]] = js.undefined
-  var onDeselect: js.UndefOr[js.Function1[/* event */ MapEvent[AnonActionIdMarkerdeselect], Unit]] = js.undefined
+  var onCalloutPress: js.UndefOr[js.Function1[/* event */ MapEvent[Anon0], Unit]] = js.undefined
+  var onDeselect: js.UndefOr[js.Function1[/* event */ MapEvent[AnonActionId], Unit]] = js.undefined
   var onDrag: js.UndefOr[js.Function1[/* event */ MapEvent[js.Object], Unit]] = js.undefined
   var onDragEnd: js.UndefOr[js.Function1[/* event */ MapEvent[js.Object], Unit]] = js.undefined
   var onDragStart: js.UndefOr[js.Function1[/* event */ MapEvent[js.Object], Unit]] = js.undefined
   var onPress: js.UndefOr[js.Function1[/* event */ MapEvent[AnonAction], Unit]] = js.undefined
-  var onSelect: js.UndefOr[js.Function1[/* event */ MapEvent[AnonActionId], Unit]] = js.undefined
+  var onSelect: js.UndefOr[js.Function1[/* event */ MapEvent[AnonId], Unit]] = js.undefined
   var opacity: js.UndefOr[Double] = js.undefined
   var pinColor: js.UndefOr[String] = js.undefined
   var reuseIdentifier: js.UndefOr[String] = js.undefined
@@ -101,8 +101,8 @@ object MarkerProps {
     needsOffscreenAlphaCompositing: js.UndefOr[Boolean] = js.undefined,
     onAccessibilityAction: /* event */ AccessibilityActionEvent => Unit = null,
     onAccessibilityTap: () => Unit = null,
-    onCalloutPress: /* event */ MapEvent[AnonActionCalloutpress] => Unit = null,
-    onDeselect: /* event */ MapEvent[AnonActionIdMarkerdeselect] => Unit = null,
+    onCalloutPress: /* event */ MapEvent[Anon0] => Unit = null,
+    onDeselect: /* event */ MapEvent[AnonActionId] => Unit = null,
     onDrag: /* event */ MapEvent[js.Object] => Unit = null,
     onDragEnd: /* event */ MapEvent[js.Object] => Unit = null,
     onDragStart: /* event */ MapEvent[js.Object] => Unit = null,
@@ -119,7 +119,7 @@ object MarkerProps {
     onResponderStart: /* event */ GestureResponderEvent => Unit = null,
     onResponderTerminate: /* event */ GestureResponderEvent => Unit = null,
     onResponderTerminationRequest: /* event */ GestureResponderEvent => Boolean = null,
-    onSelect: /* event */ MapEvent[AnonActionId] => Unit = null,
+    onSelect: /* event */ MapEvent[AnonId] => Unit = null,
     onStartShouldSetResponder: /* event */ GestureResponderEvent => Boolean = null,
     onStartShouldSetResponderCapture: /* event */ GestureResponderEvent => Boolean = null,
     onTouchCancel: /* event */ GestureResponderEvent => Unit = null,

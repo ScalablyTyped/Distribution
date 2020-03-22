@@ -7,8 +7,8 @@ import typings.mapboxMapboxSdk.AnonFormat
 import typings.mapboxMapboxSdk.AnonIconId
 import typings.mapboxMapboxSdk.AnonLastKnownModification
 import typings.mapboxMapboxSdk.AnonOwnerId
-import typings.mapboxMapboxSdk.AnonOwnerIdStart
-import typings.mapboxMapboxSdk.AnonOwnerIdStyle
+import typings.mapboxMapboxSdk.AnonStart
+import typings.mapboxMapboxSdk.AnonStyle
 import typings.mapboxMapboxSdk.mapiRequestMod.MapiRequest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,13 +20,13 @@ trait StylesService extends js.Object {
     * @param style
     * @param ownerId
     */
-  def createStyle(config: AnonOwnerIdStyle): MapiRequest
+  def createStyle(config: AnonStyle): MapiRequest
   /**
     * Delete a style.
     * @param style
     * @param ownerId
     */
-  def deleteStyle(config: AnonOwnerIdStyle): MapiRequest
+  def deleteStyle(config: AnonStyle): MapiRequest
   /**
     * Remove an icon from a style.
     * @param styleId
@@ -71,7 +71,7 @@ trait StylesService extends js.Object {
     * @param start
     * @param ownerId
     */
-  def listStyles(config: AnonOwnerIdStart): MapiRequest
+  def listStyles(config: AnonStart): MapiRequest
   /**
     * Add an icon to a style, or update an existing one.
     * @param styleId
@@ -94,14 +94,14 @@ trait StylesService extends js.Object {
 object StylesService {
   @scala.inline
   def apply(
-    createStyle: AnonOwnerIdStyle => MapiRequest,
-    deleteStyle: AnonOwnerIdStyle => MapiRequest,
+    createStyle: AnonStyle => MapiRequest,
+    deleteStyle: AnonStyle => MapiRequest,
     deleteStyleIcon: AnonIconId => Unit,
     getEmbeddableHtml: AnonConfig => MapiRequest,
     getFontGlyphRange: AnonEnd => MapiRequest,
     getStyle: AnonOwnerId => MapiRequest,
     getStyleSprite: AnonFormat => MapiRequest,
-    listStyles: AnonOwnerIdStart => MapiRequest,
+    listStyles: AnonStart => MapiRequest,
     putStyleIcon: AnonFile => MapiRequest,
     updateStyle: AnonLastKnownModification => Unit
   ): StylesService = {

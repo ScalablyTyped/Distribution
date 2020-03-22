@@ -11,7 +11,7 @@ trait TryFn[Context] extends js.Object {
   	* the test will fail. A macro may be provided.
   	*/
   def apply[Args /* <: js.Array[_] */](
-    fn: js.Array[EitherMacro[Args, Context]],
+    fn: Array[EitherMacro[Args, Context]],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Args is not an array type */ args: Args
   ): js.Promise[js.Array[TryResult]] = js.native
   /**
@@ -29,7 +29,7 @@ trait TryFn[Context] extends js.Object {
   	 */
   def apply[Args /* <: js.Array[_] */](
     title: String,
-    fn: js.Array[EitherMacro[Args, Context]],
+    fn: Array[EitherMacro[Args, Context]],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Args is not an array type */ args: Args
   ): js.Promise[js.Array[TryResult]] = js.native
   /**

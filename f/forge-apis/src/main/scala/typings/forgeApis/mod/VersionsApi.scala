@@ -1,7 +1,7 @@
 package typings.forgeApis.mod
 
 import typings.forgeApis.AnonFilterDirection
-import typings.forgeApis.AnonFilterExtensionTypeFilterId
+import typings.forgeApis.AnonFilterId
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,7 +25,7 @@ class VersionsApi () extends js.Object {
   def getVersionRefs(
     projectId: String,
     versionId: String,
-    opts: AnonFilterExtensionTypeFilterId,
+    opts: AnonFilterId,
     oauth2Client: AuthClient,
     credentials: AuthToken
   ): js.Promise[ApiResponse] = js.native

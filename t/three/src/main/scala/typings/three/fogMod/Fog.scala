@@ -1,6 +1,7 @@
 package typings.three.fogMod
 
 import typings.three.colorMod.Color
+import typings.three.threeBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,6 +19,7 @@ class Fog protected () extends IFog {
   	 * Default is 1000.
   	 */
   var far: Double = js.native
+  val isFog: `true` = js.native
   /* CompleteClass */
   override var name: String = js.native
   /**

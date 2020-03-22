@@ -1,6 +1,6 @@
 package typings.jupyterlabApputils
 
-import typings.phosphorWidgets.mod.Widget
+import typings.luminoWidgets.mod.Widget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,7 +43,7 @@ object printingMod extends js.Object {
     /**
       * Function that takes no arguments and when invoked prints out some object or null if printing is not defined.
       */
-    type OptionalAsyncThunk = js.Function0[js.Promise[Unit] | Null]
+    type OptionalAsyncThunk = js.Function0[js.Promise[Unit]] | Null
   }
   
 }

@@ -1,22 +1,22 @@
 package typings.tensorflowTfjsCore
 
-import typings.tensorflowTfjsCore.tensorMod.Scalar
-import typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap
+import typings.tensorflowTfjsCore.distTypesMod.Rank
+import typings.tensorflowTfjsCore.tensorMod.Tensor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait AnonGradsValue extends js.Object {
-  var grads: NamedTensorMap
-  var value: Scalar
+trait AnonGradsValue[O /* <: Tensor[Rank] */] extends js.Object {
+  var grads: js.Array[Tensor[Rank]]
+  var value: O
 }
 
 object AnonGradsValue {
   @scala.inline
-  def apply(grads: NamedTensorMap, value: Scalar): AnonGradsValue = {
+  def apply[O /* <: Tensor[Rank] */](grads: js.Array[Tensor[Rank]], value: O): AnonGradsValue[O] = {
     val __obj = js.Dynamic.literal(grads = grads.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
-    __obj.asInstanceOf[AnonGradsValue]
+    __obj.asInstanceOf[AnonGradsValue[O]]
   }
 }
 

@@ -32,13 +32,13 @@ package object swan {
   type DefaultMethods[V] = org.scalablytyped.runtime.StringDictionary[js.ThisFunction1[/* this */ V, /* repeated */ js.Any, js.Any]]
   type DefaultProps = js.Object | (typings.std.Record[java.lang.String, js.Any])
   type ExtendedComponent[Instance /* <: typings.baiduApp.swan.Component[Data, Props] */, Data, Methods, Props] = (typings.baiduApp.swan.CombinedInstance[Instance, Data, Methods, Props]) with (typings.baiduApp.swan.Component[Data, Props])
-  type FormEvent = typings.baiduApp.swan.BuiltInEvent[typings.baiduApp.baiduAppStrings.form, typings.baiduApp.AnonNameValue]
+  type FormEvent = typings.baiduApp.swan.BuiltInEvent[typings.baiduApp.baiduAppStrings.form, typings.baiduApp.AnonValue]
   /**
   	 * 指定focus时的光标位置
   	 * @version 1.5.0
   	 */
   type InputEvent = typings.baiduApp.swan.BuiltInEvent[typings.baiduApp.baiduAppStrings.input, typings.baiduApp.AnonCursor]
-  type Prop[T] = js.Function0[T] | typings.baiduApp.AnonArgs[T]
+  type Prop[T] = js.Function0[T] | typings.baiduApp.AnonInstantiable[T]
   type PropValidator[T] = typings.baiduApp.swan.PropOptions[T] | typings.baiduApp.swan.Prop[T] | js.Array[typings.baiduApp.swan.Prop[T]]
   type PropsDefinition[T] = typings.baiduApp.swan.ArrayPropsDefinition[T] | typings.baiduApp.swan.RecordPropsDefinition[T]
   type RecordPropsDefinition[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 

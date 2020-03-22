@@ -1,8 +1,8 @@
 package typings.electron.originalFsMod
 
-import typings.node.AnonBufferEncoding
-import typings.node.AnonEncodingBufferEncoding
-import typings.node.AnonEncodingNull
+import typings.node.Anon2
+import typings.node.Anon3
+import typings.node.AnonEncoding
 import typings.node.Buffer
 import typings.node.BufferEncoding
 import scala.scalajs.js
@@ -24,9 +24,9 @@ object mkdtempSync extends js.Object {
     * Generates six random characters to be appended behind a required prefix to create a unique temporary directory.
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
-  def apply(prefix: String, options: AnonBufferEncoding): Buffer = js.native
-  def apply(prefix: String, options: AnonEncodingBufferEncoding): String = js.native
-  def apply(prefix: String, options: AnonEncodingNull): String | Buffer = js.native
+  def apply(prefix: String, options: Anon2): Buffer = js.native
+  def apply(prefix: String, options: Anon3): String | Buffer = js.native
+  def apply(prefix: String, options: AnonEncoding): String = js.native
   def apply(prefix: String, options: BufferEncoding): String = js.native
 }
 

@@ -4,6 +4,7 @@ import typings.node.Buffer
 import typings.node.eventsMod.EventEmitter
 import typings.node.streamMod.Readable
 import typings.node.streamMod.Stream
+import typings.nodeTelegramBotApi.PartialAnswerCallbackQuer
 import typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.callback_query
 import typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.channel_post
 import typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.chosen_inline_result
@@ -21,7 +22,6 @@ import typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.pre_checkout_query
 import typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.shipping_query
 import typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.webhook_error
 import typings.std.Error
-import typings.std.Partial
 import typings.std.RegExp
 import typings.std.RegExpExecArray
 import scala.scalajs.js
@@ -68,7 +68,7 @@ trait TelegramBot extends EventEmitter {
     */
   def answerCallbackQuery(): js.Promise[Boolean] = js.native
   def answerCallbackQuery(callbackQueryId: String): js.Promise[Boolean] = js.native
-  def answerCallbackQuery(callbackQueryId: String, options: Partial[AnswerCallbackQueryOptions]): js.Promise[Boolean] = js.native
+  def answerCallbackQuery(callbackQueryId: String, options: PartialAnswerCallbackQuer): js.Promise[Boolean] = js.native
   def answerCallbackQuery(options: AnswerCallbackQueryOptions): js.Promise[Boolean] = js.native
   def answerInlineQuery(inlineQueryId: String, results: js.Array[InlineQueryResult]): js.Promise[Boolean] = js.native
   def answerInlineQuery(inlineQueryId: String, results: js.Array[InlineQueryResult], options: AnswerInlineQueryOptions): js.Promise[Boolean] = js.native

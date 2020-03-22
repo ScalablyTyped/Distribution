@@ -28,20 +28,20 @@ object stickerBuilderStickerBuilderMod extends js.Object {
   /* static members */
   @js.native
   object StickerBuilder extends js.Object {
-    def attachment(options: DiffAttachmentStickerInstaSticker): AttachmentSticker = js.native
-    def attachmentFromMedia(mediaInfo: AnonPkUser): AttachmentSticker = js.native
-    def attachmentFromMedia(mediaInfo: AnonPkUser, additional: PartialAttachmentSticker): AttachmentSticker = js.native
-    def chat(options: DiffChatStickerInstaSticker): ChatSticker = js.native
-    def countdown(options: DiffCountdownStickerInstaSticker): CountdownSticker = js.native
-    def hashtag(options: DiffHashtagStickerInstaSticker): HashtagSticker = js.native
-    def location(options: DiffLocationStickerInstaSticker): LocationSticker = js.native
-    def mention(options: DiffMentionStickerInstaSticker): MentionSticker = js.native
-    def mentionReel(mediaInfo: AnonPkUser): MentionSticker = js.native
-    def mentionReel(mediaInfo: AnonPkUser, additional: PartialMentionSticker): MentionSticker = js.native
-    def poll(options: DiffPollStickerInstaSticker): PollSticker = js.native
-    def question(options: DiffQuestionStickerInstaSticker): QuestionSticker = js.native
-    def quiz(options: DiffQuizStickerInstaSticker): QuizSticker = js.native
-    def slider(options: DiffSliderStickerInstaSticker): SliderSticker = js.native
+    def attachment(options: DiffAttachmentStickerInst): AttachmentSticker = js.native
+    def attachmentFromMedia(mediaInfo: AnonUser): AttachmentSticker = js.native
+    def attachmentFromMedia(mediaInfo: AnonUser, additional: PartialAttachmentSticker): AttachmentSticker = js.native
+    def chat(options: DiffChatStickerInstaStick): ChatSticker = js.native
+    def countdown(options: DiffCountdownStickerInsta): CountdownSticker = js.native
+    def hashtag(options: DiffHashtagStickerInstaSt): HashtagSticker = js.native
+    def location(options: DiffLocationStickerInstaS): LocationSticker = js.native
+    def mention(options: DiffMentionStickerInstaSt): MentionSticker = js.native
+    def mentionReel(mediaInfo: AnonUser): MentionSticker = js.native
+    def mentionReel(mediaInfo: AnonUser, additional: PartialMentionSticker): MentionSticker = js.native
+    def poll(options: DiffPollStickerInstaStick): PollSticker = js.native
+    def question(options: DiffQuestionStickerInstaS): QuestionSticker = js.native
+    def quiz(options: DiffQuizStickerInstaStick): QuizSticker = js.native
+    def slider(options: DiffSliderStickerInstaSti): SliderSticker = js.native
   }
   
   type StickerConfig = js.Any with AnonStorystickerids

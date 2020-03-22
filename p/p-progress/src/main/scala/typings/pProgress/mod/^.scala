@@ -38,6 +38,7 @@ class ^[ValueType] protected () extends PProgress[ValueType] {
   def this(/**
   		@param progress - Call this with progress updates. It expects a number between 0 and 1.
   		Multiple calls with the same number will result in only one `onProgress()` event.
+  		Calling with a number lower than previously will be ignored.
   		Progress percentage `1` is reported for you when the promise resolves. If you set it yourself, it will simply be ignored.
   		*/
   executor: js.Function3[

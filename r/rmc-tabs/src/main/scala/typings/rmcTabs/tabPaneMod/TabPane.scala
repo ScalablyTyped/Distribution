@@ -1,8 +1,8 @@
 package typings.rmcTabs.tabPaneMod
 
 import typings.react.mod.Component
-import typings.rmcTabs.AnonChildren
 import typings.rmcTabs.AnonFixX
+import typings.rmcTabs.PropsTypechildrenReactNod
 import typings.std.HTMLDivElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,7 +16,7 @@ class TabPane ()
   var offsetX: Double = js.native
   var offsetY: Double = js.native
   @JSName("componentWillReceiveProps")
-  def componentWillReceiveProps_MTabPane(nextProps: PropsType with AnonChildren): Unit = js.native
+  def componentWillReceiveProps_MTabPane(nextProps: PropsTypechildrenReactNod): Unit = js.native
   def setLayout(div: HTMLDivElement): Unit = js.native
 }
 

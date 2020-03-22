@@ -1,6 +1,6 @@
 package typings.aliApp.my
 
-import typings.std.Partial
+import typings.aliApp.PartialChooseImageOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,6 +11,6 @@ object chooseImage extends js.Object {
   /**
   	 * 从本地相册选择图片或使用相机拍照。
   	 */
-  def apply(options: Partial[ChooseImageOptions]): Unit = js.native
+  def apply(options: PartialChooseImageOptions): Unit = js.native
 }
 

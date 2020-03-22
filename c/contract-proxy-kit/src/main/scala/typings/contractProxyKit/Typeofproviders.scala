@@ -19,9 +19,9 @@ trait Typeofproviders extends js.Object {
   ] = js.native
   var InfuraProvider: Instantiable0[typings.ethers.mod.ethers.providers.InfuraProvider] = js.native
   var IpcProvider: Instantiable1[/* path */ String, typings.ethers.mod.ethers.providers.IpcProvider] = js.native
-  var JsonRpcProvider: TypeofClassJsonRpcProvider = js.native
+  var JsonRpcProvider: TypeofJsonRpcProvider = js.native
   var JsonRpcSigner: Instantiable1[/* provider */ JsonRpcProvider, typings.ethers.mod.ethers.providers.JsonRpcSigner] = js.native
-  var Provider: TypeofClassProvider = js.native
+  var Provider: TypeofProvider = js.native
   var Web3Provider: Instantiable1[/* web3Provider */ AsyncProvider, typings.ethers.mod.ethers.providers.Web3Provider] = js.native
   def getDefaultProvider(): Provider = js.native
   def getDefaultProvider(network: String): Provider = js.native

@@ -19,7 +19,7 @@ object summarySerializerMod extends js.Object {
     summaryResolver: SummaryResolver[StaticSymbol],
     libraryFileName: String,
     json: String
-  ): AnonImportAsModuleName = js.native
+  ): AnonModuleName = js.native
   def serializeSummaries(
     srcFileName: String,
     forJitCtx: Null,
@@ -27,7 +27,7 @@ object summarySerializerMod extends js.Object {
     symbolResolver: StaticSymbolResolver,
     symbols: js.Array[ResolvedStaticSymbol],
     types: js.Array[AnonMetadata]
-  ): AnonExportAsJson = js.native
+  ): AnonJson = js.native
   def serializeSummaries(
     srcFileName: String,
     forJitCtx: Null,
@@ -36,7 +36,7 @@ object summarySerializerMod extends js.Object {
     symbols: js.Array[ResolvedStaticSymbol],
     types: js.Array[AnonMetadata],
     createExternalSymbolReexports: Boolean
-  ): AnonExportAsJson = js.native
+  ): AnonJson = js.native
   def serializeSummaries(
     srcFileName: String,
     forJitCtx: OutputContext,
@@ -44,7 +44,7 @@ object summarySerializerMod extends js.Object {
     symbolResolver: StaticSymbolResolver,
     symbols: js.Array[ResolvedStaticSymbol],
     types: js.Array[AnonMetadata]
-  ): AnonExportAsJson = js.native
+  ): AnonJson = js.native
   def serializeSummaries(
     srcFileName: String,
     forJitCtx: OutputContext,
@@ -53,6 +53,6 @@ object summarySerializerMod extends js.Object {
     symbols: js.Array[ResolvedStaticSymbol],
     types: js.Array[AnonMetadata],
     createExternalSymbolReexports: Boolean
-  ): AnonExportAsJson = js.native
+  ): AnonJson = js.native
 }
 

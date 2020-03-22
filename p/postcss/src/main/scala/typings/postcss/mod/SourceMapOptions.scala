@@ -1,6 +1,5 @@
 package typings.postcss.mod
 
-import typings.postcss.postcssBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +16,7 @@ trait SourceMapOptions extends js.Object {
     *
     * If you have set inline: true, annotation cannot be disabled.
     */
-  var annotation: js.UndefOr[String | `false`] = js.undefined
+  var annotation: js.UndefOr[String | Boolean] = js.undefined
   /**
     * Override "from" in map's sources.
     */
@@ -51,7 +50,7 @@ trait SourceMapOptions extends js.Object {
 object SourceMapOptions {
   @scala.inline
   def apply(
-    annotation: String | `false` = null,
+    annotation: String | Boolean = null,
     from: String = null,
     `inline`: js.UndefOr[Boolean] = js.undefined,
     prev: js.Any = null,

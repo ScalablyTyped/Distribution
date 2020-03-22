@@ -468,6 +468,8 @@ import typings.blueprintjsIcons.blueprintjsIconsStrings.Privateuseareae909
 import typings.blueprintjsIcons.blueprintjsIconsStrings.Privateuseareae90a
 import typings.blueprintjsIcons.blueprintjsIconsStrings.Privateuseareae90b
 import typings.blueprintjsIcons.blueprintjsIconsStrings.Privateuseareae90c
+import typings.blueprintjsIcons.blueprintjsIconsStrings.Privateuseareae90d
+import typings.blueprintjsIcons.blueprintjsIconsStrings.Privateuseareae90e
 import typings.blueprintjsIcons.blueprintjsIconsStrings.Questionmark
 import typings.blueprintjsIcons.blueprintjsIconsStrings.Rightpointinganglebracket
 import typings.blueprintjsIcons.blueprintjsIconsStrings.Rightwardsarrow
@@ -631,6 +633,7 @@ import typings.blueprintjsIcons.blueprintjsIconsStrings.`key-option`
 import typings.blueprintjsIcons.blueprintjsIconsStrings.`key-shift`
 import typings.blueprintjsIcons.blueprintjsIconsStrings.`key-tab`
 import typings.blueprintjsIcons.blueprintjsIconsStrings.`known-vehicle`
+import typings.blueprintjsIcons.blueprintjsIconsStrings.`lab-test`
 import typings.blueprintjsIcons.blueprintjsIconsStrings.`layout-auto`
 import typings.blueprintjsIcons.blueprintjsIconsStrings.`layout-balloon`
 import typings.blueprintjsIcons.blueprintjsIconsStrings.`layout-circle`
@@ -808,6 +811,7 @@ import typings.blueprintjsIcons.blueprintjsIconsStrings.database
 import typings.blueprintjsIcons.blueprintjsIconsStrings.delete
 import typings.blueprintjsIcons.blueprintjsIconsStrings.delta
 import typings.blueprintjsIcons.blueprintjsIconsStrings.desktop
+import typings.blueprintjsIcons.blueprintjsIconsStrings.diagnosis
 import typings.blueprintjsIcons.blueprintjsIconsStrings.disable
 import typings.blueprintjsIcons.blueprintjsIconsStrings.document
 import typings.blueprintjsIcons.blueprintjsIconsStrings.dollar
@@ -1084,6 +1088,7 @@ object mod extends js.Object {
     val DELTA: Δ = js.native
     val DERIVE_COLUMN: Privateuseareae739 = js.native
     val DESKTOP: Privateuseareae6af = js.native
+    val DIAGNOSIS: Privateuseareae90d = js.native
     val DIAGRAM_TREE: Privateuseareae7b3 = js.native
     val DIRECTION_LEFT: Privateuseareae681 = js.native
     val DIRECTION_RIGHT: Privateuseareae682 = js.native
@@ -1230,6 +1235,7 @@ object mod extends js.Object {
     val KEY_TAB: Privateuseareae757 = js.native
     val KNOWN_VEHICLE: Privateuseareae73c = js.native
     val LABEL: Privateuseareae665 = js.native
+    val LAB_TEST: Privateuseareae90e = js.native
     val LAYER: Privateuseareae6cf = js.native
     val LAYERS: Privateuseareae618 = js.native
     val LAYOUT: Privateuseareae60c = js.native
@@ -1572,6 +1578,7 @@ object mod extends js.Object {
     val DELTA: delta = js.native
     val DERIVE_COLUMN: `derive-column` = js.native
     val DESKTOP: desktop = js.native
+    val DIAGNOSIS: diagnosis = js.native
     val DIAGRAM_TREE: `diagram-tree` = js.native
     val DIRECTION_LEFT: `direction-left` = js.native
     val DIRECTION_RIGHT: `direction-right` = js.native
@@ -1718,6 +1725,7 @@ object mod extends js.Object {
     val KEY_TAB: `key-tab` = js.native
     val KNOWN_VEHICLE: `known-vehicle` = js.native
     val LABEL: label = js.native
+    val LAB_TEST: `lab-test` = js.native
     val LAYER: layer = js.native
     val LAYERS: layers = js.native
     val LAYOUT: layout = js.native

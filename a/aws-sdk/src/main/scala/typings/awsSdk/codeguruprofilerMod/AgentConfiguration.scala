@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait AgentConfiguration extends js.Object {
   /**
-    * Specifies the period to follow the configuration (to profile or not) and call back to get a new configuration.
+    * 
     */
   var periodInSeconds: Integer = js.native
   /**
-    * Specifies if the profiling should be enabled by the agent.
+    * 
     */
   var shouldProfile: Boolean = js.native
 }

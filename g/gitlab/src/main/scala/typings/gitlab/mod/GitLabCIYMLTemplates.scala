@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("gitlab", "GitLabCIYMLTemplates")
 @js.native
-class GitLabCIYMLTemplates ()
+class GitLabCIYMLTemplates protected ()
   extends typings.gitlab.servicesMod.GitLabCIYMLTemplates {
   def this(options: BaseServiceOptions) = this()
 }

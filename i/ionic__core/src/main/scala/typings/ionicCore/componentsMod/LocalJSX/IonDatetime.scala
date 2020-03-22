@@ -35,6 +35,10 @@ trait IonDatetime extends js.Object {
     */
   var displayFormat: js.UndefOr[String] = js.undefined
   /**
+    * The timezone to use for display purposes only. See [Date.prototype.toLocaleString()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleString) for a list of supported timezones. If no value is provided, the component will default to displaying times in the user's local timezone.
+    */
+  var displayTimezone: js.UndefOr[String] = js.undefined
+  /**
     * The text to display on the picker's "Done" button.
     */
   var doneText: js.UndefOr[String] = js.undefined
@@ -125,6 +129,7 @@ object IonDatetime {
     dayValues: js.Array[Double] | Double | String = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     displayFormat: String = null,
+    displayTimezone: String = null,
     doneText: String = null,
     hourValues: js.Array[Double] | Double | String = null,
     max: String = null,
@@ -153,6 +158,7 @@ object IonDatetime {
     if (dayValues != null) __obj.updateDynamic("dayValues")(dayValues.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
     if (displayFormat != null) __obj.updateDynamic("displayFormat")(displayFormat.asInstanceOf[js.Any])
+    if (displayTimezone != null) __obj.updateDynamic("displayTimezone")(displayTimezone.asInstanceOf[js.Any])
     if (doneText != null) __obj.updateDynamic("doneText")(doneText.asInstanceOf[js.Any])
     if (hourValues != null) __obj.updateDynamic("hourValues")(hourValues.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])

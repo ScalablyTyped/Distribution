@@ -1,7 +1,7 @@
 
 # Scala.js typings for gulp-shell
 
-Typings are for version 0.7.1
+Typings are for version 0.8.0
 
 ## Library description:
 A handy command line interface for gulp

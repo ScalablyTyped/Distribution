@@ -5,11 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // Config object for mariasql: https://github.com/mscdex/node-mariasql#client-methods
-trait MariaSqlConnectionConfig extends js.Object {
+trait MariaSqlConnectionConfig extends _StaticConnectionConfig {
   var charset: js.UndefOr[String] = js.undefined
   var compress: js.UndefOr[Boolean] = js.undefined
   var connTimeout: js.UndefOr[Double] = js.undefined
   var db: js.UndefOr[String] = js.undefined
+  var expirationChecker: js.UndefOr[js.Function0[Boolean]] = js.undefined
   var host: js.UndefOr[String] = js.undefined
   var keepQueries: js.UndefOr[Boolean] = js.undefined
   var local_infile: js.UndefOr[Boolean] = js.undefined
@@ -34,6 +35,7 @@ object MariaSqlConnectionConfig {
     compress: js.UndefOr[Boolean] = js.undefined,
     connTimeout: Int | Double = null,
     db: String = null,
+    expirationChecker: () => Boolean = null,
     host: String = null,
     keepQueries: js.UndefOr[Boolean] = js.undefined,
     local_infile: js.UndefOr[Boolean] = js.undefined,
@@ -55,6 +57,7 @@ object MariaSqlConnectionConfig {
     if (!js.isUndefined(compress)) __obj.updateDynamic("compress")(compress.asInstanceOf[js.Any])
     if (connTimeout != null) __obj.updateDynamic("connTimeout")(connTimeout.asInstanceOf[js.Any])
     if (db != null) __obj.updateDynamic("db")(db.asInstanceOf[js.Any])
+    if (expirationChecker != null) __obj.updateDynamic("expirationChecker")(js.Any.fromFunction0(expirationChecker))
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     if (!js.isUndefined(keepQueries)) __obj.updateDynamic("keepQueries")(keepQueries.asInstanceOf[js.Any])
     if (!js.isUndefined(local_infile)) __obj.updateDynamic("local_infile")(local_infile.asInstanceOf[js.Any])

@@ -2,8 +2,8 @@ package typings.sccBrokerClient.clusterBrokerClientMod
 
 import typings.asyncStreamEmitter.mod.AsyncStreamEmitter
 import typings.jsonwebtoken.mod.Secret
-import typings.sccBrokerClient.AnonChannelName
 import typings.sccBrokerClient.AnonError
+import typings.sccBrokerClient.AnonNoMatchingPublishTargetError
 import typings.sccBrokerClient.clientPoolMod.PublishData
 import typings.sccBrokerClient.clientPoolMod.PublishFailData
 import typings.sccBrokerClient.clientPoolMod.SubscribeData
@@ -29,7 +29,7 @@ trait ClusterBrokerClient
   var authKey: js.UndefOr[Secret] = js.native
   var broker: typings.scBroker.scbrokerMod.^ = js.native
   var clientPoolSize: Double = js.native
-  var errors: AnonChannelName = js.native
+  var errors: AnonNoMatchingPublishTargetError = js.native
   var isReady: Boolean = js.native
   var mapper: MappingEngine = js.native
   var mappingEngine: skeletonRendezvous | simple | MappingEngine = js.native

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "expo-sqlite" : "7.0.0"
+      "expo-sqlite" : "8.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "expo-sqlite" : "7.0.0"
+      "expo-sqlite" : "8.0.0"
     }
   ],
   "compile-devDependencies" : [

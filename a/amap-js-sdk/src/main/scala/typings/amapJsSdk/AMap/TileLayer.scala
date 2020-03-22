@@ -2,7 +2,7 @@ package typings.amapJsSdk.AMap
 
 import typings.amapJsSdk.AnonAutoRefresh
 import typings.amapJsSdk.AnonDetectRetina
-import typings.amapJsSdk.AnonDetectRetinaMap
+import typings.amapJsSdk.AnonMap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +18,7 @@ class TileLayer () extends Layer {
 object TileLayer extends js.Object {
   @js.native
   abstract class MapTypeLayer () extends Layer {
-    def this(options: AnonDetectRetinaMap) = this()
+    def this(options: AnonMap) = this()
   }
   
   @js.native

@@ -47,6 +47,14 @@ trait RestoreDBClusterFromS3Message extends js.Object {
     */
   var DeletionProtection: js.UndefOr[BooleanOptional] = js.native
   /**
+    * Specify the Active Directory directory ID to restore the DB cluster in. The domain must be created prior to this operation.   For Amazon Aurora DB clusters, Amazon RDS can use Kerberos Authentication to authenticate users that connect to the DB cluster. For more information, see Using Kerberos Authentication for Aurora MySQL in the Amazon Aurora User Guide. 
+    */
+  var Domain: js.UndefOr[String] = js.native
+  /**
+    * Specify the name of the IAM role to be used when making API calls to the Directory Service.
+    */
+  var DomainIAMRoleName: js.UndefOr[String] = js.native
+  /**
     * The list of logs that the restored DB cluster is to export to CloudWatch Logs. The values in the list depend on the DB engine being used. For more information, see Publishing Database Logs to Amazon CloudWatch Logs in the Amazon Aurora User Guide.
     */
   var EnableCloudwatchLogsExports: js.UndefOr[LogTypeList] = js.native
@@ -141,6 +149,8 @@ object RestoreDBClusterFromS3Message {
     DBSubnetGroupName: String = null,
     DatabaseName: String = null,
     DeletionProtection: js.UndefOr[scala.Boolean] = js.undefined,
+    Domain: String = null,
+    DomainIAMRoleName: String = null,
     EnableCloudwatchLogsExports: LogTypeList = null,
     EnableIAMDatabaseAuthentication: js.UndefOr[scala.Boolean] = js.undefined,
     EngineVersion: String = null,
@@ -164,6 +174,8 @@ object RestoreDBClusterFromS3Message {
     if (DBSubnetGroupName != null) __obj.updateDynamic("DBSubnetGroupName")(DBSubnetGroupName.asInstanceOf[js.Any])
     if (DatabaseName != null) __obj.updateDynamic("DatabaseName")(DatabaseName.asInstanceOf[js.Any])
     if (!js.isUndefined(DeletionProtection)) __obj.updateDynamic("DeletionProtection")(DeletionProtection.asInstanceOf[js.Any])
+    if (Domain != null) __obj.updateDynamic("Domain")(Domain.asInstanceOf[js.Any])
+    if (DomainIAMRoleName != null) __obj.updateDynamic("DomainIAMRoleName")(DomainIAMRoleName.asInstanceOf[js.Any])
     if (EnableCloudwatchLogsExports != null) __obj.updateDynamic("EnableCloudwatchLogsExports")(EnableCloudwatchLogsExports.asInstanceOf[js.Any])
     if (!js.isUndefined(EnableIAMDatabaseAuthentication)) __obj.updateDynamic("EnableIAMDatabaseAuthentication")(EnableIAMDatabaseAuthentication.asInstanceOf[js.Any])
     if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion.asInstanceOf[js.Any])

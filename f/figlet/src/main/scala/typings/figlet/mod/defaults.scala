@@ -1,6 +1,6 @@
 package typings.figlet.mod
 
-import typings.std.Partial
+import typings.figlet.PartialDefaults
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object defaults extends js.Object {
   def apply(): Defaults_ = js.native
-  def apply(opt: Partial[Defaults_]): Defaults_ = js.native
+  def apply(opt: PartialDefaults): Defaults_ = js.native
 }
 

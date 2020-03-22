@@ -29,7 +29,7 @@ object indexNativeMod extends js.Object {
   /* static members */
   @js.native
   object Tabs extends js.Object {
-    var DefaultTabBar: TypeofClassDefaultTabBar = js.native
+    var DefaultTabBar: TypeofDefaultTabBar = js.native
     var defaultProps: typings.rmcTabs.tabsNativeMod.PropsType = js.native
   }
   

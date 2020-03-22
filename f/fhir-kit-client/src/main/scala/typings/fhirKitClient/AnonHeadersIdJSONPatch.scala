@@ -1,6 +1,6 @@
 package typings.fhirKitClient
 
-import typings.fhirKitClient.fhirKitClientStrings.Library
+import typings.fhirKitClient.fhirKitClientStrings.AllergyIntolerance
 import typings.jsonPatch.mod.OpPatch
 import typings.request.mod.Headers
 import typings.request.mod.Options
@@ -13,7 +13,7 @@ trait AnonHeadersIdJSONPatch extends js.Object {
   var headers: js.UndefOr[Headers] = js.undefined
   var id: String
   var options: js.UndefOr[Options] = js.undefined
-  var resourceType: Library
+  var resourceType: AllergyIntolerance
 }
 
 object AnonHeadersIdJSONPatch {
@@ -21,7 +21,7 @@ object AnonHeadersIdJSONPatch {
   def apply(
     JSONPatch: js.Array[OpPatch],
     id: String,
-    resourceType: Library,
+    resourceType: AllergyIntolerance,
     headers: Headers = null,
     options: Options = null
   ): AnonHeadersIdJSONPatch = {

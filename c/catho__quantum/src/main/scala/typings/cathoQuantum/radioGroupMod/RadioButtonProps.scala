@@ -1,6 +1,6 @@
 package typings.cathoQuantum.radioGroupMod
 
-import typings.cathoQuantum.AnonBaseFontSizeColorsComponentsSpacing
+import typings.cathoQuantum.AnonColorsComponents
 import typings.cathoQuantum.cathoQuantumStrings.error
 import typings.cathoQuantum.cathoQuantumStrings.neutral
 import typings.cathoQuantum.cathoQuantumStrings.primary
@@ -23,7 +23,7 @@ trait RadioButtonProps[T] extends js.Object {
   var label: js.UndefOr[String] = js.undefined
   var onChange: js.UndefOr[ChangeEventHandler[T]] = js.undefined
   var skin: js.UndefOr[neutral | primary | success | warning | error] = js.undefined
-  var theme: js.UndefOr[AnonBaseFontSizeColorsComponentsSpacing] = js.undefined
+  var theme: js.UndefOr[AnonColorsComponents] = js.undefined
   var value: String
 }
 
@@ -41,7 +41,7 @@ object RadioButtonProps {
     label: String = null,
     onChange: ChangeEvent[T] => Unit = null,
     skin: neutral | primary | success | warning | error = null,
-    theme: AnonBaseFontSizeColorsComponentsSpacing = null
+    theme: AnonColorsComponents = null
   ): RadioButtonProps[T] = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])

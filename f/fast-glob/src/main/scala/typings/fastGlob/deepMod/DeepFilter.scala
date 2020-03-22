@@ -1,68 +1,41 @@
 package typings.fastGlob.deepMod
 
-import typings.fastGlob.patternsMod.Pattern
-import typings.mrmlncReaddirEnhanced.mod.FilterFunction
+import typings.fastGlob.typesMod.EntryFilterFunction
+import typings.fastGlob.typesMod.Pattern
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DeepFilter extends js.Object {
-  /**
-    * Returns «true» for directory that should be read.
-    */
-  var filter: js.Any
-  /**
-    * Returns max depth of the provided patterns.
-    */
-  var getMaxPatternDepth: js.Any
-  /**
-    * Returns RegExp's for patterns that can affect the depth of reading.
-    */
-  var getNegativePatternsRe: js.Any
-  /**
-    * Returns «true» when the «deep» option is disabled or number and depth of the entry is greater that the option value.
-    */
-  var isSkippedByDeepOption: js.Any
-  /**
-    * Returns «true» when depth parameter is not an Infinity and entry depth greater that the parameter value.
-    */
-  var isSkippedByMaxPatternDepth: js.Any
-  /**
-    * Returns «true» for a directory whose path math to any negative pattern.
-    */
-  var isSkippedByNegativePatterns: js.Any
-  /**
-    * Returns «true» for a directory whose name starts with a period if «dot» option is disabled.
-    */
-  var isSkippedDotDirectory: js.Any
-  /**
-    * Returns «true» for symlinked directory if the «followSymlinkedDirectories» option is disabled.
-    */
-  var isSkippedSymlinkedDirectory: js.Any
-  val micromatchOptions: js.Any
-  val options: js.Any
-  /**
-    * Returns filter for directories.
-    */
-  def getFilter(positive: js.Array[Pattern], negative: js.Array[Pattern]): FilterFunction
+  var _filter: js.Any
+  var _getEntryLevel: js.Any
+  var _getMatcher: js.Any
+  var _getNegativePatternsRe: js.Any
+  var _isSkippedByDeep: js.Any
+  var _isSkippedByNegativePatterns: js.Any
+  var _isSkippedByPositivePatterns: js.Any
+  var _isSkippedSymbolicLink: js.Any
+  val _micromatchOptions: js.Any
+  val _settings: js.Any
+  def getFilter(basePath: String, positive: js.Array[Pattern], negative: js.Array[Pattern]): EntryFilterFunction
 }
 
 object DeepFilter {
   @scala.inline
   def apply(
-    filter: js.Any,
-    getFilter: (js.Array[Pattern], js.Array[Pattern]) => FilterFunction,
-    getMaxPatternDepth: js.Any,
-    getNegativePatternsRe: js.Any,
-    isSkippedByDeepOption: js.Any,
-    isSkippedByMaxPatternDepth: js.Any,
-    isSkippedByNegativePatterns: js.Any,
-    isSkippedDotDirectory: js.Any,
-    isSkippedSymlinkedDirectory: js.Any,
-    micromatchOptions: js.Any,
-    options: js.Any
+    _filter: js.Any,
+    _getEntryLevel: js.Any,
+    _getMatcher: js.Any,
+    _getNegativePatternsRe: js.Any,
+    _isSkippedByDeep: js.Any,
+    _isSkippedByNegativePatterns: js.Any,
+    _isSkippedByPositivePatterns: js.Any,
+    _isSkippedSymbolicLink: js.Any,
+    _micromatchOptions: js.Any,
+    _settings: js.Any,
+    getFilter: (String, js.Array[Pattern], js.Array[Pattern]) => EntryFilterFunction
   ): DeepFilter = {
-    val __obj = js.Dynamic.literal(filter = filter.asInstanceOf[js.Any], getFilter = js.Any.fromFunction2(getFilter), getMaxPatternDepth = getMaxPatternDepth.asInstanceOf[js.Any], getNegativePatternsRe = getNegativePatternsRe.asInstanceOf[js.Any], isSkippedByDeepOption = isSkippedByDeepOption.asInstanceOf[js.Any], isSkippedByMaxPatternDepth = isSkippedByMaxPatternDepth.asInstanceOf[js.Any], isSkippedByNegativePatterns = isSkippedByNegativePatterns.asInstanceOf[js.Any], isSkippedDotDirectory = isSkippedDotDirectory.asInstanceOf[js.Any], isSkippedSymlinkedDirectory = isSkippedSymlinkedDirectory.asInstanceOf[js.Any], micromatchOptions = micromatchOptions.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(_filter = _filter.asInstanceOf[js.Any], _getEntryLevel = _getEntryLevel.asInstanceOf[js.Any], _getMatcher = _getMatcher.asInstanceOf[js.Any], _getNegativePatternsRe = _getNegativePatternsRe.asInstanceOf[js.Any], _isSkippedByDeep = _isSkippedByDeep.asInstanceOf[js.Any], _isSkippedByNegativePatterns = _isSkippedByNegativePatterns.asInstanceOf[js.Any], _isSkippedByPositivePatterns = _isSkippedByPositivePatterns.asInstanceOf[js.Any], _isSkippedSymbolicLink = _isSkippedSymbolicLink.asInstanceOf[js.Any], _micromatchOptions = _micromatchOptions.asInstanceOf[js.Any], _settings = _settings.asInstanceOf[js.Any], getFilter = js.Any.fromFunction3(getFilter))
   
     __obj.asInstanceOf[DeepFilter]
   }

@@ -25,13 +25,13 @@ trait GetTransitGatewayAttachmentPropagationsRequest extends js.Object {
   /**
     * The ID of the attachment.
     */
-  var TransitGatewayAttachmentId: String = js.native
+  var TransitGatewayAttachmentId: typings.awsSdk.ec2Mod.TransitGatewayAttachmentId = js.native
 }
 
 object GetTransitGatewayAttachmentPropagationsRequest {
   @scala.inline
   def apply(
-    TransitGatewayAttachmentId: String,
+    TransitGatewayAttachmentId: TransitGatewayAttachmentId,
     DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     Filters: FilterList = null,
     MaxResults: Int | scala.Double = null,

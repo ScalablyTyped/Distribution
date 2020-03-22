@@ -9,8 +9,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BadgeProps extends js.Object {
-  var status: positive | negative | neutral | warning | critical
+  var status: positive | negative | neutral | warning | critical = js.native
 }
 
 object BadgeProps {

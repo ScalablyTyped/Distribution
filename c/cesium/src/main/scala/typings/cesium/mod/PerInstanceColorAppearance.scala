@@ -1,6 +1,6 @@
 package typings.cesium.mod
 
-import typings.cesium.AnonClosedFaceForwardFlat
+import typings.cesium.AnonFlat
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("cesium", "PerInstanceColorAppearance")
 @js.native
 class PerInstanceColorAppearance () extends Appearance {
-  def this(options: AnonClosedFaceForwardFlat) = this()
+  def this(options: AnonFlat) = this()
   val faceForward: Boolean = js.native
   val flat: Boolean = js.native
   val vertexFormat: VertexFormat = js.native

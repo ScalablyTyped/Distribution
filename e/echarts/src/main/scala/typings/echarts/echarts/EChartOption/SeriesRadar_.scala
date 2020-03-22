@@ -1,11 +1,11 @@
 package typings.echarts.echarts.EChartOption
 
-import typings.echarts.AnonAlignBackgroundColorBorderColor
 import typings.echarts.AnonAreaStyle
-import typings.echarts.AnonBackgroundColorBorderColor
-import typings.echarts.AnonBorderColorBorderTypeBorderWidthColor
-import typings.echarts.AnonColorOpacity
-import typings.echarts.AnonColorOpacityShadowBlur
+import typings.echarts.AnonBorderRadius
+import typings.echarts.AnonExtraCssText
+import typings.echarts.AnonOpacity
+import typings.echarts.AnonShadowBlur
+import typings.echarts.AnonShadowOffsetY
 import typings.echarts.echarts.EChartOption.SeriesRadar.DataObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -130,7 +130,7 @@ trait SeriesRadar_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-radar.areaStyle
     */
-  var areaStyle: js.UndefOr[AnonColorOpacity] = js.undefined
+  var areaStyle: js.UndefOr[AnonOpacity] = js.undefined
   /**
     * The data in radar chart is multi-variable (dimension).
     * Here is an example:
@@ -165,7 +165,7 @@ trait SeriesRadar_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-radar.itemStyle
     */
-  var itemStyle: js.UndefOr[AnonBorderColorBorderTypeBorderWidthColor] = js.undefined
+  var itemStyle: js.UndefOr[AnonShadowOffsetY] = js.undefined
   /**
     * Text label of , to explain some data information about graphic
     * item like value, name and so on.
@@ -177,14 +177,14 @@ trait SeriesRadar_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-radar.label
     */
-  var label: js.UndefOr[AnonAlignBackgroundColorBorderColor] = js.undefined
+  var label: js.UndefOr[AnonBorderRadius] = js.undefined
   /**
     * Line style.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-radar.lineStyle
     */
-  var lineStyle: js.UndefOr[AnonColorOpacityShadowBlur] = js.undefined
+  var lineStyle: js.UndefOr[AnonShadowBlur] = js.undefined
   /**
     * Series name used for displaying in
     * [tooltip](https://echarts.apache.org/en/option.html#tooltip)
@@ -325,7 +325,7 @@ trait SeriesRadar_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-radar.tooltip
     */
-  var tooltip: js.UndefOr[AnonBackgroundColorBorderColor] = js.undefined
+  var tooltip: js.UndefOr[AnonExtraCssText] = js.undefined
   /**
     * @default
     * "radar"
@@ -378,13 +378,13 @@ object SeriesRadar_ {
     animationEasing: String = null,
     animationEasingUpdate: String = null,
     animationThreshold: Int | Double = null,
-    areaStyle: AnonColorOpacity = null,
+    areaStyle: AnonOpacity = null,
     data: js.Array[DataObject] = null,
     emphasis: AnonAreaStyle = null,
     id: String = null,
-    itemStyle: AnonBorderColorBorderTypeBorderWidthColor = null,
-    label: AnonAlignBackgroundColorBorderColor = null,
-    lineStyle: AnonColorOpacityShadowBlur = null,
+    itemStyle: AnonShadowOffsetY = null,
+    label: AnonBorderRadius = null,
+    lineStyle: AnonShadowBlur = null,
     name: String = null,
     radarIndex: Int | Double = null,
     silent: js.UndefOr[Boolean] = js.undefined,
@@ -393,7 +393,7 @@ object SeriesRadar_ {
     symbolOffset: js.Array[_] = null,
     symbolRotate: Int | Double = null,
     symbolSize: js.Array[_] | js.Function | Double = null,
-    tooltip: AnonBackgroundColorBorderColor = null,
+    tooltip: AnonExtraCssText = null,
     `type`: String = null,
     z: Int | Double = null,
     zlevel: Int | Double = null

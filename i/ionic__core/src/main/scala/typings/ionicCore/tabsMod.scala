@@ -35,7 +35,6 @@ object tabsMod extends js.Object {
     var setActive: js.Any = js.native
     var shouldSwitch: js.Any = js.native
     var tabSwitch: js.Any = js.native
-    val tabs: js.Any = js.native
     var transitioning: js.Any = js.native
     /** @internal */
     var useRouter: Boolean = js.native
@@ -62,6 +61,7 @@ object tabsMod extends js.Object {
     def select(tab: HTMLIonTabElement): js.Promise[Boolean] = js.native
     /** @internal */
     def setRouteId(id: String): js.Promise[RouteWrite] = js.native
+    /* private */ def tabs(): js.Any = js.native
   }
   
 }

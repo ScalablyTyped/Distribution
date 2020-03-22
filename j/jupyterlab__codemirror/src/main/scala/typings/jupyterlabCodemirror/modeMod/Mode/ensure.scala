@@ -15,7 +15,7 @@ object ensure extends js.Object {
     *
     * @returns A promise that resolves when the mode is available.
     */
-  def apply(mode: String): js.Promise[ISpec] = js.native
-  def apply(mode: ISpec): js.Promise[ISpec] = js.native
+  def apply(mode: String): js.Promise[ISpec | Null] = js.native
+  def apply(mode: ISpec): js.Promise[ISpec | Null] = js.native
 }
 

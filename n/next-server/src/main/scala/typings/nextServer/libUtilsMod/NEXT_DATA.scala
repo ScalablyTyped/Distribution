@@ -1,9 +1,8 @@
 package typings.nextServer.libUtilsMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.nextServer.AnonStatusCode
+import typings.nextServer.ErrorstatusCodenumber
 import typings.node.querystringMod.ParsedUrlQuery
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +12,7 @@ trait NEXT_DATA extends js.Object {
   var buildId: String
   var dataManager: String
   var dynamicIds: js.UndefOr[js.Array[String]] = js.undefined
-  var err: js.UndefOr[Error with AnonStatusCode] = js.undefined
+  var err: js.UndefOr[ErrorstatusCodenumber] = js.undefined
   var nextExport: js.UndefOr[Boolean] = js.undefined
   var page: String
   var props: js.Any
@@ -32,7 +31,7 @@ object NEXT_DATA {
     query: ParsedUrlQuery,
     assetPrefix: String = null,
     dynamicIds: js.Array[String] = null,
-    err: Error with AnonStatusCode = null,
+    err: ErrorstatusCodenumber = null,
     nextExport: js.UndefOr[Boolean] = js.undefined,
     runtimeConfig: StringDictionary[js.Any] = null,
     skeleton: js.UndefOr[Boolean] = js.undefined

@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 trait MigratorConfig extends js.Object {
   var database: js.UndefOr[String] = js.undefined
   var directory: js.UndefOr[String | js.Array[String]] = js.undefined
+  var disableMigrationsListValidation: js.UndefOr[Boolean] = js.undefined
   var disableTransactions: js.UndefOr[Boolean] = js.undefined
   var extension: js.UndefOr[String] = js.undefined
   var loadExtensions: js.UndefOr[js.Array[String]] = js.undefined
@@ -22,6 +23,7 @@ object MigratorConfig {
   def apply(
     database: String = null,
     directory: String | js.Array[String] = null,
+    disableMigrationsListValidation: js.UndefOr[Boolean] = js.undefined,
     disableTransactions: js.UndefOr[Boolean] = js.undefined,
     extension: String = null,
     loadExtensions: js.Array[String] = null,
@@ -34,6 +36,7 @@ object MigratorConfig {
     val __obj = js.Dynamic.literal()
     if (database != null) __obj.updateDynamic("database")(database.asInstanceOf[js.Any])
     if (directory != null) __obj.updateDynamic("directory")(directory.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableMigrationsListValidation)) __obj.updateDynamic("disableMigrationsListValidation")(disableMigrationsListValidation.asInstanceOf[js.Any])
     if (!js.isUndefined(disableTransactions)) __obj.updateDynamic("disableTransactions")(disableTransactions.asInstanceOf[js.Any])
     if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
     if (loadExtensions != null) __obj.updateDynamic("loadExtensions")(loadExtensions.asInstanceOf[js.Any])

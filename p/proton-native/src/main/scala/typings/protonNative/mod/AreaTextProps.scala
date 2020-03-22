@@ -1,6 +1,6 @@
 package typings.protonNative.mod
 
-import typings.protonNative.AnonAuxiliary
+import typings.protonNative.AnonBackgroundColor
 import typings.protonNative.AnonH
 import typings.protonNative.AnonX
 import typings.protonNative.protonNativeStrings.bevel
@@ -33,7 +33,7 @@ object AreaTextProps {
     strokeMiterlimit: Int | Double = null,
     strokeOpacity: Int | Double = null,
     strokeWidth: Int | Double = null,
-    style: AnonAuxiliary = null,
+    style: AnonBackgroundColor = null,
     transform: String = null,
     x: Double | String = null,
     y: Double | String = null

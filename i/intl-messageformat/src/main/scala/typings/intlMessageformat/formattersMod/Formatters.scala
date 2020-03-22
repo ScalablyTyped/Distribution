@@ -1,8 +1,8 @@
 package typings.intlMessageformat.formattersMod
 
-import typings.intlMessageformat.AnonLocales
-import typings.intlMessageformat.AnonLocalesOptions
-import typings.intlMessageformat.AnonLocalesOptionsSupportedLocalesOf
+import typings.intlMessageformat.AnonCall
+import typings.intlMessageformat.AnonInstantiable
+import typings.intlMessageformat.AnonSupportedLocalesOf
 import typings.std.ConstructorParameters
 import typings.std.Intl.DateTimeFormat
 import typings.std.Intl.NumberFormat
@@ -13,22 +13,22 @@ import scala.scalajs.js.annotation._
 
 trait Formatters extends js.Object {
   def getDateTimeFormat(
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type ConstructorParameters<typeof Intl.DateTimeFormat> is not an array type */ args: ConstructorParameters[AnonLocalesOptions]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type ConstructorParameters<typeof Intl.DateTimeFormat> is not an array type */ args: ConstructorParameters[AnonInstantiable]
   ): DateTimeFormat
   def getNumberFormat(
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type ConstructorParameters<typeof Intl.NumberFormat> is not an array type */ args: ConstructorParameters[AnonLocales]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type ConstructorParameters<typeof Intl.NumberFormat> is not an array type */ args: ConstructorParameters[AnonCall]
   ): NumberFormat
   def getPluralRules(
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type ConstructorParameters<typeof Intl.PluralRules> is not an array type */ args: ConstructorParameters[AnonLocalesOptionsSupportedLocalesOf]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type ConstructorParameters<typeof Intl.PluralRules> is not an array type */ args: ConstructorParameters[AnonSupportedLocalesOf]
   ): PluralRules
 }
 
 object Formatters {
   @scala.inline
   def apply(
-    getDateTimeFormat: ConstructorParameters[AnonLocalesOptions] => DateTimeFormat,
-    getNumberFormat: ConstructorParameters[AnonLocales] => NumberFormat,
-    getPluralRules: ConstructorParameters[AnonLocalesOptionsSupportedLocalesOf] => PluralRules
+    getDateTimeFormat: ConstructorParameters[AnonInstantiable] => DateTimeFormat,
+    getNumberFormat: ConstructorParameters[AnonCall] => NumberFormat,
+    getPluralRules: ConstructorParameters[AnonSupportedLocalesOf] => PluralRules
   ): Formatters = {
     val __obj = js.Dynamic.literal(getDateTimeFormat = js.Any.fromFunction1(getDateTimeFormat), getNumberFormat = js.Any.fromFunction1(getNumberFormat), getPluralRules = js.Any.fromFunction1(getPluralRules))
   

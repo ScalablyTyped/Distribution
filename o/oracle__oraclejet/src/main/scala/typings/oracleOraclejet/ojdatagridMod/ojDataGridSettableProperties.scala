@@ -4,9 +4,9 @@ import typings.oracleOraclejet.AnonAccessibleActionableMode
 import typings.oracleOraclejet.AnonCell
 import typings.oracleOraclejet.AnonClassName
 import typings.oracleOraclejet.AnonColumn
-import typings.oracleOraclejet.AnonColumnColumnEnd
+import typings.oracleOraclejet.AnonColumnEnd
 import typings.oracleOraclejet.AnonColumnIndex
-import typings.oracleOraclejet.AnonHidden
+import typings.oracleOraclejet.AnonHorizontal
 import typings.oracleOraclejet.AnonMaxColumnCount
 import typings.oracleOraclejet.AnonReorder
 import typings.oracleOraclejet.mod.baseComponentSettableProperties
@@ -30,8 +30,8 @@ trait ojDataGridSettableProperties[K, D] extends baseComponentSettableProperties
   var data: (DataProvider[K, D]) | Null
   var dnd: AnonReorder
   var editMode: none | cellNavigation | cellEdit
-  var gridlines: AnonHidden
-  var header: AnonColumnColumnEnd[K, D]
+  var gridlines: AnonHorizontal
+  var header: AnonColumnEnd[K, D]
   var scrollPolicy: auto | loadMoreOnScroll | scroll
   var scrollPolicyOptions: AnonMaxColumnCount
   var scrollPosition: AnonColumnIndex[K]
@@ -48,8 +48,8 @@ object ojDataGridSettableProperties {
     cell: AnonClassName[K, D],
     dnd: AnonReorder,
     editMode: none | cellNavigation | cellEdit,
-    gridlines: AnonHidden,
-    header: AnonColumnColumnEnd[K, D],
+    gridlines: AnonHorizontal,
+    header: AnonColumnEnd[K, D],
     scrollPolicy: auto | loadMoreOnScroll | scroll,
     scrollPolicyOptions: AnonMaxColumnCount,
     scrollPosition: AnonColumnIndex[K],

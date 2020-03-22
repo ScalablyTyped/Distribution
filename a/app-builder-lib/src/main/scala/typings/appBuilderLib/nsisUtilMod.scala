@@ -29,7 +29,16 @@ object nsisUtilMod extends js.Object {
     def copy(appOutDir: String, target: NsisTarget): js.Promise[_] = js.native
   }
   
+  @js.native
+  class UninstallerReader () extends js.Object
+  
   val NSIS_PATH: Lazy[String] = js.native
   val nsisTemplatesDir: String = js.native
+  /* static members */
+  @js.native
+  object UninstallerReader extends js.Object {
+    def exec(installerPath: String, uninstallerPath: String): Unit = js.native
+  }
+  
 }
 

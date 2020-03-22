@@ -1,10 +1,10 @@
 package typings.jupyterlabServices.contentsMod.Contents
 
 import typings.jupyterlabObservables.modeldbMod.ModelDB.IFactory
+import typings.jupyterlabServices.PartialIModel
 import typings.jupyterlabServices.serverconnectionMod.ServerConnection.ISettings
-import typings.phosphorDisposable.mod.IDisposable
-import typings.phosphorSignaling.mod.ISignal
-import typings.std.Partial
+import typings.luminoDisposable.mod.IDisposable
+import typings.luminoSignaling.mod.ISignal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -171,6 +171,6 @@ trait IManager extends IDisposable {
     *   file is saved.
     */
   def save(path: String): js.Promise[IModel] = js.native
-  def save(path: String, options: Partial[IModel]): js.Promise[IModel] = js.native
+  def save(path: String, options: PartialIModel): js.Promise[IModel] = js.native
 }
 

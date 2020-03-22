@@ -14,21 +14,21 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.figma.AnonONCLICK
-  - typings.figma.AnonAFTERTIMEOUT
+  - typings.figma.Anon1
+  - typings.figma.AnonTimeout
   - typings.figma.AnonDelay
 */
 trait Trigger extends js.Object
 
 object Trigger {
   @scala.inline
-  def AnonONCLICK(`type`: ON_CLICK | ON_HOVER | ON_PRESS | ON_DRAG): Trigger = {
+  def Anon1(`type`: ON_CLICK | ON_HOVER | ON_PRESS | ON_DRAG): Trigger = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Trigger]
   }
   @scala.inline
-  def AnonAFTERTIMEOUT(timeout: Double, `type`: AFTER_TIMEOUT): Trigger = {
+  def AnonTimeout(timeout: Double, `type`: AFTER_TIMEOUT): Trigger = {
     val __obj = js.Dynamic.literal(timeout = timeout.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Trigger]

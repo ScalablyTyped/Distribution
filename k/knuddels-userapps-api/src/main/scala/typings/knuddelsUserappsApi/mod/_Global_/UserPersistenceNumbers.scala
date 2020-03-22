@@ -1,11 +1,11 @@
 package typings.knuddelsUserappsApi.mod._Global_
 
 import typings.knuddelsUserappsApi.AnonAscendingCount
-import typings.knuddelsUserappsApi.AnonAscendingCountBoolean
-import typings.knuddelsUserappsApi.AnonAscendingKey
 import typings.knuddelsUserappsApi.AnonAscendingMinimumValue
+import typings.knuddelsUserappsApi.AnonCount
+import typings.knuddelsUserappsApi.AnonMaximumCount
 import typings.knuddelsUserappsApi.AnonMaximumValue
-import typings.knuddelsUserappsApi.AnonMaximumValueMinimumValue
+import typings.knuddelsUserappsApi.AnonMinimumValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,7 +25,7 @@ object UserPersistenceNumbers extends js.Object {
   		 * @see https://developer.knuddels.de/docs/classes/UserPersistenceNumbers.html#method_addNumber
   		 */
   def addNumber(key: java.lang.String, value: Double): Double = js.native
-  def addNumber(key: java.lang.String, value: Double, parameters: AnonMaximumValueMinimumValue): Double = js.native
+  def addNumber(key: java.lang.String, value: Double, parameters: AnonMinimumValue): Double = js.native
   /**
   		 * @see https://developer.knuddels.de/docs/classes/UserPersistenceNumbers.html#method_deleteAll
   		 */
@@ -54,7 +54,7 @@ object UserPersistenceNumbers extends js.Object {
       /* key */ java.lang.String, 
       Boolean
     ],
-    parameters: AnonAscendingKey
+    parameters: AnonMaximumCount
   ): Unit = js.native
   /**
   		 * @see https://developer.knuddels.de/docs/classes/UserPersistenceNumbers.html#method_getAllKeys
@@ -85,14 +85,14 @@ object UserPersistenceNumbers extends js.Object {
   		 * @see https://developer.knuddels.de/docs/classes/UserPersistenceNumbers.html#method_getSortedEntries
   		 */
   def getSortedEntries(key: java.lang.String): js.Array[UserPersistenceNumberEntry] = js.native
-  def getSortedEntries(key: java.lang.String, parameters: AnonAscendingCount): js.Array[UserPersistenceNumberEntry] = js.native
+  def getSortedEntries(key: java.lang.String, parameters: AnonCount): js.Array[UserPersistenceNumberEntry] = js.native
   def getSortedEntriesAdjacent(key: java.lang.String, user_or_userId: Double): js.Array[UserPersistenceNumberEntry] = js.native
-  def getSortedEntriesAdjacent(key: java.lang.String, user_or_userId: Double, parameters: AnonAscendingCountBoolean): js.Array[UserPersistenceNumberEntry] = js.native
+  def getSortedEntriesAdjacent(key: java.lang.String, user_or_userId: Double, parameters: AnonAscendingCount): js.Array[UserPersistenceNumberEntry] = js.native
   /**
   		 * @see https://developer.knuddels.de/docs/classes/UserPersistenceNumbers.html#method_getSortedEntriesAdjacent
   		 */
   def getSortedEntriesAdjacent(key: java.lang.String, user_or_userId: User): js.Array[UserPersistenceNumberEntry] = js.native
-  def getSortedEntriesAdjacent(key: java.lang.String, user_or_userId: User, parameters: AnonAscendingCountBoolean): js.Array[UserPersistenceNumberEntry] = js.native
+  def getSortedEntriesAdjacent(key: java.lang.String, user_or_userId: User, parameters: AnonAscendingCount): js.Array[UserPersistenceNumberEntry] = js.native
   /**
   		 * @see https://developer.knuddels.de/docs/classes/UserPersistenceNumbers.html#method_getSum
   		 */

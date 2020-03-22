@@ -1,7 +1,7 @@
 package typings.oracleOraclejet.ojvalidationNumberMod.NumberRangeValidator
 
-import typings.oracleOraclejet.AnonExactInRange
-import typings.oracleOraclejet.AnonExactRangeOverflowRangeUnderflow
+import typings.oracleOraclejet.AnonExactRangeOverflow
+import typings.oracleOraclejet.AnonMax
 import typings.oracleOraclejet.AnonRangeOverflowRangeUnderflow
 import typings.oracleOraclejet.ojvalidationNumberMod.NumberConverter
 import scala.scalajs.js
@@ -11,9 +11,9 @@ import scala.scalajs.js.annotation._
 // tslint:disable-next-line interface-over-type-literal
 trait ValidatorOptions extends js.Object {
   var converter: js.UndefOr[NumberConverter] = js.undefined
-  var hint: js.UndefOr[AnonExactInRange] = js.undefined
+  var hint: js.UndefOr[AnonMax] = js.undefined
   var max: js.UndefOr[Double] = js.undefined
-  var messageDetail: js.UndefOr[AnonExactRangeOverflowRangeUnderflow] = js.undefined
+  var messageDetail: js.UndefOr[AnonExactRangeOverflow] = js.undefined
   var messageSummary: js.UndefOr[AnonRangeOverflowRangeUnderflow] = js.undefined
   var min: js.UndefOr[Double] = js.undefined
 }
@@ -22,9 +22,9 @@ object ValidatorOptions {
   @scala.inline
   def apply(
     converter: NumberConverter = null,
-    hint: AnonExactInRange = null,
+    hint: AnonMax = null,
     max: Int | Double = null,
-    messageDetail: AnonExactRangeOverflowRangeUnderflow = null,
+    messageDetail: AnonExactRangeOverflow = null,
     messageSummary: AnonRangeOverflowRangeUnderflow = null,
     min: Int | Double = null
   ): ValidatorOptions = {

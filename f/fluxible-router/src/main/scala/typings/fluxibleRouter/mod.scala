@@ -35,13 +35,13 @@ object mod extends js.Object {
     def rehydrate_MRouteStore(state: js.Any): Unit = js.native
   }
   
-  def handleHistory(Component: TypeofClassComponent): TypeofClassComponent = js.native
-  def handleHistory(Component: TypeofClassComponent, opts: js.Object): TypeofClassComponent = js.native
+  def handleHistory(Component: TypeofComponent): TypeofComponent = js.native
+  def handleHistory(Component: TypeofComponent, opts: js.Object): TypeofComponent = js.native
   def navigateAction(context: FluxibleContext, params: js.Object): js.UndefOr[scala.Nothing] = js.native
   /* static members */
   @js.native
   object RouteStore extends js.Object {
-    def withStaticRoutes(routes: js.Object): TypeofClassRouteStore = js.native
+    def withStaticRoutes(routes: js.Object): TypeofRouteStore = js.native
   }
   
 }

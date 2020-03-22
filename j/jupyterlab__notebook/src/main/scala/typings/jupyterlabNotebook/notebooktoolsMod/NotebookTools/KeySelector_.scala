@@ -34,10 +34,6 @@ class KeySelector_ protected () extends Tool {
     */
   val key: String = js.native
   /**
-    * The select node for the widget.
-    */
-  val selectNode: HTMLSelectElement = js.native
-  /**
     * Handle the DOM events for the widget.
     *
     * @param event - The DOM event sent to the widget.
@@ -52,5 +48,9 @@ class KeySelector_ protected () extends Tool {
     * Handle a change to the value.
     */
   /* protected */ def onValueChanged(): Unit = js.native
+  /**
+    * The select node for the widget.
+    */
+  def selectNode(): HTMLSelectElement = js.native
 }
 

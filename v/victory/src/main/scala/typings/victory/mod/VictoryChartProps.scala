@@ -1,11 +1,10 @@
 package typings.victory.mod
 
 import typings.react.mod.ReactElement
-import typings.std.Pick
-import typings.victory.AnonXY
-import typings.victory.AnonXYBoolean
-import typings.victory.AnonXYD3ScaleScalePropType
-import typings.victory.victoryStrings.parent
+import typings.victory.Anon1
+import typings.victory.AnonXBoolean
+import typings.victory.AnonY
+import typings.victory.PickVictoryStyleInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -81,7 +80,7 @@ trait VictoryChartProps extends VictoryCommonProps {
     * components within chart.
     * @example {border: "1px solid #ccc", margin: "2%", maxWidth: "40%"}
     */
-  var style: js.UndefOr[Pick[VictoryStyleInterface, parent]] = js.undefined
+  var style: js.UndefOr[PickVictoryStyleInterface] = js.undefined
 }
 
 object VictoryChartProps {
@@ -96,14 +95,14 @@ object VictoryChartProps {
     groupComponent: ReactElement = null,
     height: Int | Double = null,
     horizontal: js.UndefOr[Boolean] = js.undefined,
-    maxDomain: Double | AnonXY = null,
-    minDomain: Double | AnonXY = null,
+    maxDomain: Double | AnonY = null,
+    minDomain: Double | AnonY = null,
     name: String = null,
     padding: PaddingProps = null,
-    scale: ScalePropType | D3Scale | AnonXYD3ScaleScalePropType = null,
-    singleQuadrantDomainPadding: Boolean | AnonXYBoolean = null,
+    scale: ScalePropType | D3Scale | Anon1 = null,
+    singleQuadrantDomainPadding: Boolean | AnonXBoolean = null,
     standalone: js.UndefOr[Boolean] = js.undefined,
-    style: Pick[VictoryStyleInterface, parent] = null,
+    style: PickVictoryStyleInterface = null,
     theme: VictoryThemeDefinition = null,
     width: Int | Double = null
   ): VictoryChartProps = {

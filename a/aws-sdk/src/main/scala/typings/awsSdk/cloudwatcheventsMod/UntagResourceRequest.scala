@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait UntagResourceRequest extends js.Object {
   /**
-    * The ARN of the rule that you're removing tags from.
+    * The ARN of the EventBridge resource from which you are removing tags.
     */
   var ResourceARN: Arn = js.native
   /**

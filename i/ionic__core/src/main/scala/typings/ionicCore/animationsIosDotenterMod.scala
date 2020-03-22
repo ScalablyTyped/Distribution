@@ -10,5 +10,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object animationsIosDotenterMod extends js.Object {
   def iosEnterAnimation(baseEl: HTMLElement): Animation = js.native
+  def iosEnterAnimation(baseEl: HTMLElement, presentingEl: HTMLElement): Animation = js.native
 }
 

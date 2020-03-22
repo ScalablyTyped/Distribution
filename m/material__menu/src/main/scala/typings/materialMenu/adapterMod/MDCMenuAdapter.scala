@@ -1,9 +1,9 @@
 package typings.materialMenu.adapterMod
 
 import typings.materialMenu.AnonBottom
-import typings.materialMenu.AnonBottomLeft
 import typings.materialMenu.AnonHeight
 import typings.materialMenu.AnonIndex
+import typings.materialMenu.AnonLeft
 import typings.std.EventListener
 import typings.std.EventTarget
 import scala.scalajs.js
@@ -40,7 +40,7 @@ trait MDCMenuAdapter extends js.Object {
   def saveFocus(): Unit
   def setAttrForOptionAtIndex(index: Double, attr: String, value: String): Unit
   def setMaxHeight(height: Double): Unit
-  def setPosition(position: AnonBottomLeft): Unit
+  def setPosition(position: AnonLeft): Unit
   def setTransformOrigin(origin: String): Unit
 }
 
@@ -76,7 +76,7 @@ object MDCMenuAdapter {
     saveFocus: () => Unit,
     setAttrForOptionAtIndex: (Double, String, String) => Unit,
     setMaxHeight: Double => Unit,
-    setPosition: AnonBottomLeft => Unit,
+    setPosition: AnonLeft => Unit,
     setTransformOrigin: String => Unit
   ): MDCMenuAdapter = {
     val __obj = js.Dynamic.literal(addClass = js.Any.fromFunction1(addClass), addClassForOptionAtIndex = js.Any.fromFunction2(addClassForOptionAtIndex), deregisterBodyClickHandler = js.Any.fromFunction1(deregisterBodyClickHandler), deregisterInteractionHandler = js.Any.fromFunction2(deregisterInteractionHandler), focus = js.Any.fromFunction0(focus), focusItemAtIndex = js.Any.fromFunction1(focusItemAtIndex), getAnchorDimensions = js.Any.fromFunction0(getAnchorDimensions), getAttributeForEventTarget = js.Any.fromFunction2(getAttributeForEventTarget), getFocusedItemIndex = js.Any.fromFunction0(getFocusedItemIndex), getIndexForEventTarget = js.Any.fromFunction1(getIndexForEventTarget), getInnerDimensions = js.Any.fromFunction0(getInnerDimensions), getNumberOfItems = js.Any.fromFunction0(getNumberOfItems), getWindowDimensions = js.Any.fromFunction0(getWindowDimensions), hasAnchor = js.Any.fromFunction0(hasAnchor), hasClass = js.Any.fromFunction1(hasClass), hasNecessaryDom = js.Any.fromFunction0(hasNecessaryDom), isFocused = js.Any.fromFunction0(isFocused), isRtl = js.Any.fromFunction0(isRtl), notifyCancel = js.Any.fromFunction0(notifyCancel), notifySelected = js.Any.fromFunction1(notifySelected), registerBodyClickHandler = js.Any.fromFunction1(registerBodyClickHandler), registerInteractionHandler = js.Any.fromFunction2(registerInteractionHandler), removeClass = js.Any.fromFunction1(removeClass), restoreFocus = js.Any.fromFunction0(restoreFocus), rmAttrForOptionAtIndex = js.Any.fromFunction2(rmAttrForOptionAtIndex), rmClassForOptionAtIndex = js.Any.fromFunction2(rmClassForOptionAtIndex), saveFocus = js.Any.fromFunction0(saveFocus), setAttrForOptionAtIndex = js.Any.fromFunction3(setAttrForOptionAtIndex), setMaxHeight = js.Any.fromFunction1(setMaxHeight), setPosition = js.Any.fromFunction1(setPosition), setTransformOrigin = js.Any.fromFunction1(setTransformOrigin))

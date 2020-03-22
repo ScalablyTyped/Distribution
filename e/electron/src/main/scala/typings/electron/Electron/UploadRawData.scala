@@ -12,7 +12,7 @@ trait UploadRawData extends js.Object {
     */
   var bytes: Buffer
   /**
-    * rawData.
+    * `rawData`.
     */
   var `type`: String
 }

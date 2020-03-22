@@ -1,22 +1,26 @@
 package typings.koaSession.mod
 
-import typings.koaSession.AnonCtx
+import typings.koa.mod.Context
+import typings.koaSession.AnonInstantiable
+import typings.koaSession.PartialSession
+import typings.koaSession.koaSessionStrings.lax
+import typings.koaSession.koaSessionStrings.none
 import typings.koaSession.koaSessionStrings.session
-import typings.koaSession.mod.koaAugmentingMod.Context
-import typings.std.Partial
+import typings.koaSession.koaSessionStrings.strict
+import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof cookies.cookies.SetOption, 'maxAge'> ]: cookies.cookies.SetOption[P]} */ @js.native
+/* Inlined parent koa-session.koa-session.Omit<cookies.cookies.SetOption, 'maxAge'> */
+@js.native
 trait opts extends js.Object {
   /**
     * If your session store requires data or utilities from context, opts.ContextStore is alse supported.
     * ContextStore must be a class which claims three instance methods demonstrated above.
     * new ContextStore(ctx) will be executed on every request.
     */
-  var ContextStore: js.UndefOr[AnonCtx] = js.native
+  var ContextStore: js.UndefOr[AnonInstantiable] = js.native
   /**
     * Hook: before save session
     */
@@ -26,11 +30,14 @@ trait opts extends js.Object {
     */
   @JSName("decode")
   var decode_Original: js.Function1[/* str */ String, js.Object] = js.native
+  var domain: js.UndefOr[String] = js.native
   /**
     * custom encode method
     */
   @JSName("encode")
   var encode_Original: js.Function1[/* obj */ js.Object, String] = js.native
+  var expires: js.UndefOr[Date] = js.native
+  var httpOnly: js.UndefOr[Boolean] = js.native
   /**
     * cookie key (default is koa:sess)
     */
@@ -41,6 +48,8 @@ trait opts extends js.Object {
     * Warning: If a session cookie is stolen, this cookie will never expire
     */
   var maxAge: js.UndefOr[Double | session] = js.native
+  var overwrite: js.UndefOr[Boolean] = js.native
+  var path: js.UndefOr[String] = js.native
   /**
     * If you want to add prefix for all external session id, you can use options.prefix, it will not work if options.genid present.
     */
@@ -53,6 +62,10 @@ trait opts extends js.Object {
     * Force a session identifier cookie to be set on every response. The expiration is reset to the original maxAge, resetting the expiration countdown. default is false
     */
   var rolling: js.UndefOr[Boolean] = js.native
+  var sameSite: js.UndefOr[strict | lax | none | Boolean] = js.native
+  var secure: js.UndefOr[Boolean] = js.native
+  var secureProxy: js.UndefOr[Boolean] = js.native
+  var signed: js.UndefOr[Boolean] = js.native
   /**
     * You can store the session content in external stores(redis, mongodb or other DBs)
     */
@@ -60,7 +73,7 @@ trait opts extends js.Object {
   /**
     * Hook: valid session value before use it
     */
-  var valid: js.UndefOr[js.Function2[/* ctx */ Context, /* session */ Partial[Session], Unit]] = js.native
+  var valid: js.UndefOr[js.Function2[/* ctx */ Context, /* session */ PartialSession, Unit]] = js.native
   /**
     * custom decode method
     */

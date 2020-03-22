@@ -8,5 +8,5 @@ package object Nag {
   type AnimationSettings = typings.semanticUiNag.SemanticUI.Nag.AnimationSettings.Param
   type ClassNameSettings = typings.semanticUiNag.SemanticUI.Nag.ClassNameSettings.Param
   type ErrorSettings = typings.semanticUiNag.SemanticUI.Nag.ErrorSettings.Param
-  type SelectorSettings = typings.semanticUiNag.SemanticUI.Nag.SelectorSettings.Param
+  type SelectorSettings = typings.semanticUiNag.SemanticUI.Nag.SelectorSettings_
 }

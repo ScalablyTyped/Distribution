@@ -25,7 +25,7 @@ class MethodOptions () extends IMethodOptions {
   var deprecated_MethodOptions: Boolean = js.native
   /** MethodOptions idempotencyLevel. */
   @JSName("idempotencyLevel")
-  var idempotencyLevel_MethodOptions: IdempotencyLevel = js.native
+  var idempotencyLevel_MethodOptions: IdempotencyLevel | String = js.native
   /** MethodOptions uninterpretedOption. */
   @JSName("uninterpretedOption")
   var uninterpretedOption_MethodOptions: js.Array[IUninterpretedOption] = js.native

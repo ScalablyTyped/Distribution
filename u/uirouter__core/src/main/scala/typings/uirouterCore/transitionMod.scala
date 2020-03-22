@@ -207,7 +207,7 @@ object transitionMod extends js.Object {
   @js.native
   object Transition extends js.Object {
     /** @hidden */
-    var diToken: TypeofClassTransition = js.native
+    var diToken: TypeofTransition = js.native
   }
   
   /* static members */

@@ -14,6 +14,7 @@ trait Intersection extends js.Object {
   var face: js.UndefOr[Face3 | Null] = js.undefined
   var faceIndex: js.UndefOr[Double] = js.undefined
   var index: js.UndefOr[Double] = js.undefined
+  var instanceId: js.UndefOr[Double] = js.undefined
   var `object`: Object3D
   var point: Vector3
   var uv: js.UndefOr[Vector2] = js.undefined
@@ -29,6 +30,7 @@ object Intersection {
     face: Face3 = null,
     faceIndex: Int | Double = null,
     index: Int | Double = null,
+    instanceId: Int | Double = null,
     uv: Vector2 = null
   ): Intersection = {
     val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], point = point.asInstanceOf[js.Any])
@@ -37,6 +39,7 @@ object Intersection {
     if (face != null) __obj.updateDynamic("face")(face.asInstanceOf[js.Any])
     if (faceIndex != null) __obj.updateDynamic("faceIndex")(faceIndex.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId.asInstanceOf[js.Any])
     if (uv != null) __obj.updateDynamic("uv")(uv.asInstanceOf[js.Any])
     __obj.asInstanceOf[Intersection]
   }

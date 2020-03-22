@@ -7,7 +7,7 @@ import typings.prosemirrorModel.mod.Node
 import typings.prosemirrorModel.mod.ResolvedPos
 import typings.prosemirrorModel.mod.Schema
 import typings.prosemirrorModel.mod.Slice
-import typings.prosemirrorView.AnonBottomLeft
+import typings.prosemirrorView.AnonRight
 import typings.std.Event_
 import typings.std.KeyboardEvent
 import typings.std.MouseEvent
@@ -77,8 +77,8 @@ object DirectEditorProps {
         NodeView[S]
       ]
     ] = null,
-    scrollMargin: Double | AnonBottomLeft = null,
-    scrollThreshold: Double | AnonBottomLeft = null,
+    scrollMargin: Double | AnonRight = null,
+    scrollThreshold: Double | AnonRight = null,
     transformPasted: /* p */ Slice[S] => Slice[S] = null,
     transformPastedHTML: /* html */ String => String = null,
     transformPastedText: /* text */ String => String = null

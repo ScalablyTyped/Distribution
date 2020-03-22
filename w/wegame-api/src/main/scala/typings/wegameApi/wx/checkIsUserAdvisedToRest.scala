@@ -1,6 +1,6 @@
 package typings.wegameApi.wx
 
-import typings.wegameApi.AnonCompleteFailRes
+import typings.wegameApi.AnonTodayPlayedTime
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,6 +12,6 @@ object checkIsUserAdvisedToRest extends js.Object {
   /**
     * 根据用户当天游戏时间判断用户是否需要休息
     */
-  def apply(param: AnonCompleteFailRes): Unit = js.native
+  def apply(param: AnonTodayPlayedTime): Unit = js.native
 }
 

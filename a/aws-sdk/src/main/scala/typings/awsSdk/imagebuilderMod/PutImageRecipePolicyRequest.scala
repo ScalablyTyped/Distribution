@@ -13,12 +13,12 @@ trait PutImageRecipePolicyRequest extends js.Object {
   /**
     *  The policy to apply. 
     */
-  var policy: NonEmptyString = js.native
+  var policy: ResourcePolicyDocument = js.native
 }
 
 object PutImageRecipePolicyRequest {
   @scala.inline
-  def apply(imageRecipeArn: ImageRecipeArn, policy: NonEmptyString): PutImageRecipePolicyRequest = {
+  def apply(imageRecipeArn: ImageRecipeArn, policy: ResourcePolicyDocument): PutImageRecipePolicyRequest = {
     val __obj = js.Dynamic.literal(imageRecipeArn = imageRecipeArn.asInstanceOf[js.Any], policy = policy.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PutImageRecipePolicyRequest]

@@ -1,8 +1,8 @@
 package typings.stripeV3.stripe.paymentRequest
 
 import typings.stripeV3.AnonApplePay
-import typings.stripeV3.AnonOptions
-import typings.stripeV3.AnonOptionsShippingOption
+import typings.stripeV3.AnonShippingAddress
+import typings.stripeV3.AnonShippingOption
 import typings.stripeV3.stripeV3Strings.cancel
 import typings.stripeV3.stripeV3Strings.paymentmethod
 import typings.stripeV3.stripeV3Strings.shippingaddresschange
@@ -24,9 +24,9 @@ trait StripePaymentRequest extends js.Object {
     handler: js.Function1[/* response */ StripePaymentMethodPaymentResponse, Unit]
   ): Unit = js.native
   @JSName("on")
-  def on_shippingaddresschange(event: shippingaddresschange, handler: js.Function1[/* response */ AnonOptions, Unit]): Unit = js.native
+  def on_shippingaddresschange(event: shippingaddresschange, handler: js.Function1[/* response */ AnonShippingAddress, Unit]): Unit = js.native
   @JSName("on")
-  def on_shippingoptionchange(event: shippingoptionchange, handler: js.Function1[/* response */ AnonOptionsShippingOption, Unit]): Unit = js.native
+  def on_shippingoptionchange(event: shippingoptionchange, handler: js.Function1[/* response */ AnonShippingOption, Unit]): Unit = js.native
   @JSName("on")
   def on_source(event: source, handler: js.Function1[/* response */ StripeSourcePaymentResponse, Unit]): Unit = js.native
   @JSName("on")

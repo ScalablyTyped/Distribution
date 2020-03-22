@@ -1,9 +1,8 @@
 package typings.materializeCss.mod
 
-import typings.materializeCss.M.CollapsibleOptions
 import typings.materializeCss.MElements
+import typings.materializeCss.PartialCollapsibleOptions
 import typings.std.Element
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,11 +24,11 @@ object Collapsible extends js.Object {
     * Init Collapsibles
     */
   def init(els: MElements): js.Array[typings.materializeCss.M.Collapsible] = js.native
-  def init(els: MElements, options: Partial[CollapsibleOptions]): js.Array[typings.materializeCss.M.Collapsible] = js.native
+  def init(els: MElements, options: PartialCollapsibleOptions): js.Array[typings.materializeCss.M.Collapsible] = js.native
   /**
     * Init Collapsible
     */
   def init(els: Element): typings.materializeCss.M.Collapsible = js.native
-  def init(els: Element, options: Partial[CollapsibleOptions]): typings.materializeCss.M.Collapsible = js.native
+  def init(els: Element, options: PartialCollapsibleOptions): typings.materializeCss.M.Collapsible = js.native
 }
 

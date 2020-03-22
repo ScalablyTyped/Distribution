@@ -1,6 +1,6 @@
 package typings.cathoQuantum.inputMod
 
-import typings.cathoQuantum.AnonBaseFontSizeColorsSpacing
+import typings.cathoQuantum.AnonBaseFontSizeColors
 import typings.cathoQuantum.cathoQuantumStrings.email
 import typings.cathoQuantum.cathoQuantumStrings.number
 import typings.cathoQuantum.cathoQuantumStrings.password
@@ -28,7 +28,7 @@ trait InputProps[T] extends js.Object {
   var onClean: js.UndefOr[MouseEventHandler[T]] = js.undefined
   var placeholder: js.UndefOr[String] = js.undefined
   var required: js.UndefOr[Boolean] = js.undefined
-  var theme: js.UndefOr[AnonBaseFontSizeColorsSpacing] = js.undefined
+  var theme: js.UndefOr[AnonBaseFontSizeColors] = js.undefined
   var `type`: js.UndefOr[email | text | tel | number | password | search] = js.undefined
   var validate: js.UndefOr[Validate | CustomValidate | (js.Array[Validate | CustomValidate])] = js.undefined
   var value: js.UndefOr[String] = js.undefined
@@ -48,7 +48,7 @@ object InputProps {
     onClean: MouseEvent[T, NativeMouseEvent] => Unit = null,
     placeholder: String = null,
     required: js.UndefOr[Boolean] = js.undefined,
-    theme: AnonBaseFontSizeColorsSpacing = null,
+    theme: AnonBaseFontSizeColors = null,
     `type`: email | text | tel | number | password | search = null,
     validate: Validate | CustomValidate | (js.Array[Validate | CustomValidate]) = null,
     value: String = null

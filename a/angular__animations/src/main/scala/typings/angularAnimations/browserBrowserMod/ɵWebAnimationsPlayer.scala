@@ -130,5 +130,7 @@ class ɵWebAnimationsPlayer protected () extends AnimationPlayer {
   /* CompleteClass */
   override def setPosition(position: js.Any): Unit = js.native
   def setPosition(p: Double): Unit = js.native
+  @JSName("totalTime")
+  def totalTime_MɵWebAnimationsPlayer(): Double = js.native
 }
 

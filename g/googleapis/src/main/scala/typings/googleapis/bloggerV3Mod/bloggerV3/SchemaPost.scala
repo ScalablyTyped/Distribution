@@ -1,7 +1,7 @@
 package typings.googleapis.bloggerV3Mod.bloggerV3
 
-import typings.googleapis.AnonDisplayNameId
 import typings.googleapis.AnonIdString
+import typings.googleapis.AnonImage
 import typings.googleapis.AnonItemsSelfLink
 import typings.googleapis.AnonLat
 import typings.googleapis.AnonUrl
@@ -14,7 +14,7 @@ trait SchemaPost extends js.Object {
   /**
     * The author of this Post.
     */
-  var author: js.UndefOr[AnonDisplayNameId] = js.native
+  var author: js.UndefOr[AnonImage] = js.native
   /**
     * Data about the blog containing this Post.
     */
@@ -92,7 +92,7 @@ trait SchemaPost extends js.Object {
 object SchemaPost {
   @scala.inline
   def apply(
-    author: AnonDisplayNameId = null,
+    author: AnonImage = null,
     blog: AnonIdString = null,
     content: String = null,
     customMetaData: String = null,

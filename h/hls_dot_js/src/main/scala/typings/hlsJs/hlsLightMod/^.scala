@@ -3,8 +3,8 @@ package typings.hlsJs.hlsLightMod
 import typings.hlsJs.AnonAUDIOTRACKLOADED
 import typings.hlsJs.AnonAUDIOTRACKLOADERROR
 import typings.hlsJs.AnonKEYSYSTEMERROR
+import typings.hlsJs.PartialConfig
 import typings.hlsJs.mod.Config
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
   */
 class ^ ()
   extends typings.hlsJs.mod.^ {
-  def this(config: Partial[Config]) = this()
+  def this(config: PartialConfig) = this()
 }
 
 @JSImport("hls.js/dist/hls.light", JSImport.Namespace)

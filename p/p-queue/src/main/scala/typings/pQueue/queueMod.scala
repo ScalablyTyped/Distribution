@@ -9,11 +9,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object queueMod extends js.Object {
   @js.native
-  trait Queue[Options] extends js.Object {
+  trait Queue[Element, Options] extends js.Object {
     var size: Double = js.native
-    def dequeue(): js.UndefOr[RunFunction] = js.native
-    def enqueue(run: RunFunction): Unit = js.native
-    def enqueue(run: RunFunction, options: Partial[Options]): Unit = js.native
+    def dequeue(): js.UndefOr[Element] = js.native
+    def enqueue(run: Element): Unit = js.native
+    def enqueue(run: Element, options: Partial[Options]): Unit = js.native
+    def filter(options: Partial[Options]): js.Array[Element] = js.native
   }
   
   type RunFunction = js.Function0[js.Promise[js.Any]]

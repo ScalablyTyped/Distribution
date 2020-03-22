@@ -6,7 +6,7 @@ import typings.prosemirrorModel.mod.Node
 import typings.prosemirrorModel.mod.Schema
 import typings.prosemirrorState.AnonDoc
 import typings.prosemirrorState.AnonPlugins
-import typings.prosemirrorState.AnonPluginsSchema
+import typings.prosemirrorState.AnonSchema
 import typings.prosemirrorState.AnonState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -88,9 +88,9 @@ object EditorState extends js.Object {
     * to deserialize the state of plugins, by associating plugin
     * instances with the property names they use in the JSON object.
     */
-  def fromJSON[S /* <: Schema[_, _] */](config: AnonPluginsSchema[S], json: StringDictionary[js.Any]): EditorState[S] = js.native
+  def fromJSON[S /* <: Schema[_, _] */](config: AnonSchema[S], json: StringDictionary[js.Any]): EditorState[S] = js.native
   def fromJSON[S /* <: Schema[_, _] */](
-    config: AnonPluginsSchema[S],
+    config: AnonSchema[S],
     json: StringDictionary[js.Any],
     pluginFields: StringDictionary[Plugin[_, S]]
   ): EditorState[S] = js.native

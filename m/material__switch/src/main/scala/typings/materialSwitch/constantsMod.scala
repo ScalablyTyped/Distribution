@@ -19,6 +19,8 @@ object constantsMod extends js.Object {
   /** String constants used by the switch. */
   @js.native
   object strings extends js.Object {
+    /** Aria attribute for checked or unchecked state of switch */
+    var ARIA_CHECKED_ATTR: String = js.native
     /** A CSS selector used to locate the native HTML control for the switch.  */
     var NATIVE_CONTROL_SELECTOR: String = js.native
     /** A CSS selector used to locate the ripple surface element for the switch. */

@@ -9,9 +9,6 @@ import scala.scalajs.js.annotation._
 
 object intlRelativeformatStrings {
   @js.native
-  sealed trait LocaleData extends js.Object
-  
-  @js.native
   sealed trait `best fit` extends STYLE
   
   @js.native
@@ -43,9 +40,6 @@ object intlRelativeformatStrings {
   sealed trait `hour-short`
     extends DATA_FIELD
        with SUPPORTED_FIELD
-  
-  @js.native
-  sealed trait localeMatcher extends js.Object
   
   @js.native
   sealed trait minute
@@ -135,8 +129,6 @@ object intlRelativeformatStrings {
        with SUPPORTED_FIELD
   
   @scala.inline
-  def LocaleData: LocaleData = "LocaleData".asInstanceOf[LocaleData]
-  @scala.inline
   def `best fit`: `best fit` = "best fit".asInstanceOf[`best fit`]
   @scala.inline
   def day: day = "day".asInstanceOf[day]
@@ -150,8 +142,6 @@ object intlRelativeformatStrings {
   def `hour-narrow`: `hour-narrow` = "hour-narrow".asInstanceOf[`hour-narrow`]
   @scala.inline
   def `hour-short`: `hour-short` = "hour-short".asInstanceOf[`hour-short`]
-  @scala.inline
-  def localeMatcher: localeMatcher = "localeMatcher".asInstanceOf[localeMatcher]
   @scala.inline
   def minute: minute = "minute".asInstanceOf[minute]
   @scala.inline

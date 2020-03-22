@@ -18,7 +18,7 @@ object Arm64RegMsrOperand {
     `type`: `reg-msr`,
     value: Arm64Register,
     ext: Arm64Extender = null,
-    shift: AnonTypeValue = null,
+    shift: AnonValue = null,
     vas: Arm64Vas = null,
     vectorIndex: Int | Double = null
   ): Arm64RegMsrOperand = {

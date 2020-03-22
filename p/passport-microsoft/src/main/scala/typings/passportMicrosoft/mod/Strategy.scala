@@ -10,9 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("passport-microsoft", "Strategy")
 @js.native
 class Strategy protected () extends OAuth2Strategy {
-  def this(
-    options: MicrosoftStrategyOptions | MicrosoftStrategyOptionsWithRequest,
-    verify: VerifyFunction | VerifyFunctionWithRequest
-  ) = this()
+  def this(options: MicrosoftStrategyOptionsWithRequest, verify: VerifyFunctionWithRequest) = this()
+  def this(options: MicrosoftStrategyOptions, verify: VerifyFunction) = this()
 }
 

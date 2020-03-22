@@ -98,7 +98,7 @@ trait CSSStyleDeclaration
   var clip: java.lang.String = js.native
   var clipPath: java.lang.String = js.native
   var clipRule: java.lang.String = js.native
-  var color: java.lang.String | Null = js.native
+  var color: java.lang.String = js.native
   var colorInterpolation: java.lang.String = js.native
   var colorInterpolationFilters: java.lang.String = js.native
   var columnCount: java.lang.String = js.native
@@ -277,7 +277,7 @@ trait CSSStyleDeclaration
   var msWrapThrough: java.lang.String = js.native
   var objectFit: java.lang.String = js.native
   var objectPosition: java.lang.String = js.native
-  var opacity: java.lang.String | Null = js.native
+  var opacity: java.lang.String = js.native
   var order: java.lang.String = js.native
   var orphans: java.lang.String = js.native
   var outline: java.lang.String = js.native
@@ -317,14 +317,14 @@ trait CSSStyleDeclaration
   var right: java.lang.String = js.native
   var rotate: java.lang.String = js.native
   var rowGap: java.lang.String = js.native
-  var rubyAlign: java.lang.String | Null = js.native
+  var rubyAlign: java.lang.String = js.native
   var rubyOverhang: java.lang.String | Null = js.native
-  var rubyPosition: java.lang.String | Null = js.native
+  var rubyPosition: java.lang.String = js.native
   var scale: java.lang.String = js.native
   var scrollBehavior: java.lang.String = js.native
   var shapeRendering: java.lang.String = js.native
-  var stopColor: java.lang.String | Null = js.native
-  var stopOpacity: java.lang.String | Null = js.native
+  var stopColor: java.lang.String = js.native
+  var stopOpacity: java.lang.String = js.native
   var stroke: java.lang.String = js.native
   var strokeDasharray: java.lang.String = js.native
   var strokeDashoffset: java.lang.String = js.native
@@ -337,7 +337,7 @@ trait CSSStyleDeclaration
   var tableLayout: java.lang.String = js.native
   var textAlign: java.lang.String = js.native
   var textAlignLast: java.lang.String = js.native
-  var textAnchor: java.lang.String | Null = js.native
+  var textAnchor: java.lang.String = js.native
   var textCombineUpright: java.lang.String = js.native
   var textDecoration: java.lang.String = js.native
   var textDecorationColor: java.lang.String = js.native
@@ -425,7 +425,8 @@ trait CSSStyleDeclaration
   var webkitBoxFlex: java.lang.String = js.native
   /** @deprecated */
   var webkitBoxOrdinalGroup: java.lang.String = js.native
-  var webkitBoxOrient: java.lang.String | Null = js.native
+  /** @deprecated */
+  var webkitBoxOrient: java.lang.String = js.native
   /** @deprecated */
   var webkitBoxPack: java.lang.String = js.native
   /** @deprecated */

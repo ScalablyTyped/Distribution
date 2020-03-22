@@ -1,11 +1,10 @@
 package typings.kiiCloudSdk.KiiCloud
 
-import typings.kiiCloudSdk.AnonAddMembersArrayAnErrorString
-import typings.kiiCloudSdk.AnonAnErrorString
-import typings.kiiCloudSdk.AnonAnErrorStringFailureMemberList
-import typings.kiiCloudSdk.AnonAnErrorStringFailureSuccessTheDeletedGroup
-import typings.kiiCloudSdk.AnonAnErrorStringFailureSuccessTheGroup
-import typings.kiiCloudSdk.AnonAnErrorStringFailureSuccessTheGroupTheOwner
+import typings.kiiCloudSdk.Anon11
+import typings.kiiCloudSdk.Anon12
+import typings.kiiCloudSdk.Anon13
+import typings.kiiCloudSdk.Anon14
+import typings.kiiCloudSdk.AnonSuccess
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -86,7 +85,7 @@ class KiiGroup () extends KiiACLSubject {
     *     );
     */
   def changeGroupName(newName: String): js.Promise[KiiGroup] = js.native
-  def changeGroupName(newName: String, callbacks: AnonAnErrorStringFailureSuccessTheGroup): js.Promise[KiiGroup] = js.native
+  def changeGroupName(newName: String, callbacks: Anon13): js.Promise[KiiGroup] = js.native
   /**
     * Delete the group from the server
     *
@@ -134,7 +133,7 @@ class KiiGroup () extends KiiACLSubject {
     *     );
     */
   def delete(): js.Promise[KiiGroup] = js.native
-  def delete(callbacks: AnonAnErrorStringFailureSuccessTheDeletedGroup): js.Promise[KiiGroup] = js.native
+  def delete(callbacks: Anon13): js.Promise[KiiGroup] = js.native
   /**
     * Creates a reference to a encrypted bucket for this group
     *
@@ -227,7 +226,7 @@ class KiiGroup () extends KiiACLSubject {
     *     );
     */
   def getMemberList(): js.Promise[js.Tuple2[KiiGroup, js.Array[KiiUser]]] = js.native
-  def getMemberList(callbacks: AnonAnErrorStringFailureMemberList): js.Promise[js.Tuple2[KiiGroup, js.Array[KiiUser]]] = js.native
+  def getMemberList(callbacks: Anon12): js.Promise[js.Tuple2[KiiGroup, js.Array[KiiUser]]] = js.native
   /**
     * The name of this group
     *
@@ -281,7 +280,7 @@ class KiiGroup () extends KiiACLSubject {
     *     );
     */
   def getOwner(): js.Promise[js.Tuple2[KiiGroup, KiiUser]] = js.native
-  def getOwner(callbacks: AnonAnErrorStringFailureSuccessTheGroupTheOwner): js.Promise[js.Tuple2[KiiGroup, KiiUser]] = js.native
+  def getOwner(callbacks: Anon14): js.Promise[js.Tuple2[KiiGroup, KiiUser]] = js.native
   /**
     *
     *
@@ -357,8 +356,8 @@ class KiiGroup () extends KiiACLSubject {
     *     );
     */
   def listTopics(): js.Promise[js.Tuple2[js.Array[KiiTopic], String]] = js.native
-  def listTopics(callbacks: AnonAnErrorString): js.Promise[js.Tuple2[js.Array[KiiTopic], String]] = js.native
-  def listTopics(callbacks: AnonAnErrorString, paginationKey: String): js.Promise[js.Tuple2[js.Array[KiiTopic], String]] = js.native
+  def listTopics(callbacks: AnonSuccess): js.Promise[js.Tuple2[js.Array[KiiTopic], String]] = js.native
+  def listTopics(callbacks: AnonSuccess, paginationKey: String): js.Promise[js.Tuple2[js.Array[KiiTopic], String]] = js.native
   /**
     * Get a specifically formatted string referencing the group
     *
@@ -414,7 +413,7 @@ class KiiGroup () extends KiiACLSubject {
     *     );
     */
   def refresh(): js.Promise[KiiGroup] = js.native
-  def refresh(callbacks: AnonAnErrorStringFailureSuccessTheGroup): js.Promise[KiiGroup] = js.native
+  def refresh(callbacks: Anon13): js.Promise[KiiGroup] = js.native
   /**
     * Removes a user from the given group
     *
@@ -478,7 +477,7 @@ class KiiGroup () extends KiiACLSubject {
     *     });
     */
   def save(): js.Promise[KiiGroup] = js.native
-  def save(callbacks: AnonAddMembersArrayAnErrorString): js.Promise[KiiGroup] = js.native
+  def save(callbacks: Anon11): js.Promise[KiiGroup] = js.native
   /**
     * Saves the latest group values to the server with specified owner.
     * This method can be used only by the group owner or app admin.
@@ -530,7 +529,7 @@ class KiiGroup () extends KiiACLSubject {
     *     });
     */
   def saveWithOwner(user: String): js.Promise[KiiGroup] = js.native
-  def saveWithOwner(user: String, callbacks: AnonAddMembersArrayAnErrorString): js.Promise[KiiGroup] = js.native
+  def saveWithOwner(user: String, callbacks: Anon11): js.Promise[KiiGroup] = js.native
   /**
     * Instantiate topic belongs to this group.
     *
@@ -661,11 +660,6 @@ object KiiGroup extends js.Object {
     *     });
     */
   def registerGroupWithID(groupID: String, groupName: String, members: js.Array[KiiUser]): js.Promise[KiiGroup] = js.native
-  def registerGroupWithID(
-    groupID: String,
-    groupName: String,
-    members: js.Array[KiiUser],
-    callbacks: AnonAddMembersArrayAnErrorString
-  ): js.Promise[KiiGroup] = js.native
+  def registerGroupWithID(groupID: String, groupName: String, members: js.Array[KiiUser], callbacks: Anon11): js.Promise[KiiGroup] = js.native
 }
 

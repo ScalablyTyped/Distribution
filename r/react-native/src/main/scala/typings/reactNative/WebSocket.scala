@@ -39,7 +39,7 @@ object WebSocket
      with Instantiable3[
       /* uri */ String, 
       (/* protocols */ js.Array[String]) | (/* protocols */ Null) | (/* protocols */ String), 
-      /* options */ AnonHeaderName, 
+      /* options */ AnonDictoptionName, 
       WebSocket
     ] {
   val CLOSED: Double = js.native

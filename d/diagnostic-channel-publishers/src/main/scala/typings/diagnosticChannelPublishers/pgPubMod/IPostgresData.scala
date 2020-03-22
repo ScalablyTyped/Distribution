@@ -1,14 +1,14 @@
 package typings.diagnosticChannelPublishers.pgPubMod
 
-import typings.diagnosticChannelPublishers.AnonHostPort
 import typings.diagnosticChannelPublishers.AnonPlan
+import typings.diagnosticChannelPublishers.AnonPort
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IPostgresData extends js.Object {
-  var database: AnonHostPort
+  var database: AnonPort
   var duration: Double
   var error: js.UndefOr[Error] = js.undefined
   var query: AnonPlan
@@ -18,7 +18,7 @@ trait IPostgresData extends js.Object {
 object IPostgresData {
   @scala.inline
   def apply(
-    database: AnonHostPort,
+    database: AnonPort,
     duration: Double,
     query: AnonPlan,
     error: Error = null,

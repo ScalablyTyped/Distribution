@@ -1,5 +1,6 @@
 package typings.ionicCore
 
+import typings.ionicCore.animationInterfaceMod.AnimationKeyFrames
 import typings.std.HTMLElement
 import typings.std.TransitionEvent
 import scala.scalajs.js
@@ -21,7 +22,9 @@ object animationUtilsMod extends js.Object {
   def generateKeyframeName(keyframeRules: String): String = js.native
   def generateKeyframeRules(): String = js.native
   def generateKeyframeRules(keyframes: js.Array[_]): String = js.native
+  def getAnimationPrefix(el: HTMLElement): String = js.native
   def getStyleContainer(element: HTMLElement): js.Any = js.native
+  def processKeyframes(keyframes: AnimationKeyFrames): AnimationKeyFrames = js.native
   def removeStyleProperty(element: HTMLElement, propertyName: String): Unit = js.native
   def setStyleProperty(element: HTMLElement, propertyName: String): Unit = js.native
   def setStyleProperty(element: HTMLElement, propertyName: String, value: String): Unit = js.native

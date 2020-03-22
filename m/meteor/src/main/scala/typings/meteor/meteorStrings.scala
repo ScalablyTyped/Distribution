@@ -14,6 +14,9 @@ object meteorStrings {
   sealed trait ElementsOf extends js.Object
   
   @js.native
+  sealed trait PatternMatch extends js.Object
+  
+  @js.native
   sealed trait PushModifier extends js.Object
   
   @js.native
@@ -164,6 +167,8 @@ object meteorStrings {
   def ArraysOrEach: ArraysOrEach = "ArraysOrEach".asInstanceOf[ArraysOrEach]
   @scala.inline
   def ElementsOf: ElementsOf = "ElementsOf".asInstanceOf[ElementsOf]
+  @scala.inline
+  def PatternMatch: PatternMatch = "PatternMatch".asInstanceOf[PatternMatch]
   @scala.inline
   def PushModifier: PushModifier = "PushModifier".asInstanceOf[PushModifier]
   @scala.inline

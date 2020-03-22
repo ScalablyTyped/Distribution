@@ -23,7 +23,7 @@ object mod extends js.Object {
       * @return result from ajv instance
       */
     @JSName("addSchema")
-    var addSchema_Original: FnKey = js.native
+    var addSchema_Original: FnCall = js.native
     /**
       * add custom keyword to the instance
       * @return result from ajv instance

@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SourceCodeProps extends js.Object {
-  var code: js.UndefOr[String] = js.undefined
-  var dark: js.UndefOr[Boolean] = js.undefined
-  var format: js.UndefOr[Boolean] = js.undefined
-  var language: js.UndefOr[String] = js.undefined
+  var code: js.UndefOr[String] = js.native
+  var dark: js.UndefOr[Boolean] = js.native
+  var format: js.UndefOr[Boolean] = js.native
+  var language: js.UndefOr[String] = js.native
 }
 
 object SourceCodeProps {

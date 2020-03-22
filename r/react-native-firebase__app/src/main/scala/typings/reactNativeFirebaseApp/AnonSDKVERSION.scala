@@ -1,5 +1,6 @@
 package typings.reactNativeFirebaseApp
 
+import typings.reactNativeFirebaseApp.ReactNativeFirebase.FirebaseApp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,5 +12,6 @@ trait AnonSDKVERSION[M] extends js.Object {
     */
   val SDK_VERSION: String = js.native
   def apply(): M = js.native
+  def apply(app: FirebaseApp): M = js.native
 }
 

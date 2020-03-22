@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/common/locales/extra/el", JSImport.Namespace)
 @js.native
 object extraElMod extends js.Object {
-  val default: js.Array[js.UndefOr[js.Array[js.UndefOr[js.Array[String]]]]] = js.native
+  val default: js.Array[js.Array[js.UndefOr[js.Array[String]]]] = js.native
 }
 

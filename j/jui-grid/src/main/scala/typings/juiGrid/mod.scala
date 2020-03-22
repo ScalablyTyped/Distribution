@@ -158,7 +158,7 @@ object mod extends js.Object {
   @js.native
   trait GridTable extends UIEvent {
     def apply(selector: js.Any): this.type = js.native
-    def apply(selector: js.Any, options: AnonAsc): this.type = js.native
+    def apply(selector: js.Any, options: AnonColshow): this.type = js.native
     /**
       * Gets the index of a row that is activated in an extended/modified/selected state.
       *

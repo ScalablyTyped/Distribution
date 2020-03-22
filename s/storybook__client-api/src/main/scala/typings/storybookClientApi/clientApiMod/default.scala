@@ -6,7 +6,7 @@ import typings.storybookAddons.typesMod.Parameters
 import typings.storybookAddons.typesMod.StoryApi
 import typings.storybookClientApi.AnonFileName
 import typings.storybookClientApi.AnonHierarchyRootSeparator
-import typings.storybookClientApi.AnonHierarchyRootSeparatorHierarchySeparator
+import typings.storybookClientApi.AnonHierarchySeparator
 import typings.storybookClientApi.typesMod.ClientApiParams
 import typings.storybookClientApi.typesMod.StoreItem
 import scala.scalajs.js
@@ -32,7 +32,7 @@ class default protected () extends ClientApi {
   /* CompleteClass */
   override def clearParameters(): Unit = js.native
   /* CompleteClass */
-  override def getSeparators(): AnonHierarchyRootSeparator | AnonHierarchyRootSeparatorHierarchySeparator = js.native
+  override def getSeparators(): AnonHierarchyRootSeparator | AnonHierarchySeparator = js.native
   /* CompleteClass */
   override def getStorybook(): js.Array[AnonFileName] = js.native
   /* CompleteClass */

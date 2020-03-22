@@ -1,19 +1,18 @@
 package typings.screeps
 
-import typings.screeps.screepsNumbers.`2`
+import typings.screeps.screepsStrings.KH2O
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon2 extends js.Object {
-  var build: `2`
-  var repair: `2`
+  var OH: KH2O
 }
 
 object Anon2 {
   @scala.inline
-  def apply(build: `2`, repair: `2`): Anon2 = {
-    val __obj = js.Dynamic.literal(build = build.asInstanceOf[js.Any], repair = repair.asInstanceOf[js.Any])
+  def apply(OH: KH2O): Anon2 = {
+    val __obj = js.Dynamic.literal(OH = OH.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon2]
   }

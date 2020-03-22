@@ -54,7 +54,7 @@ trait TypeofbrowserAction extends js.Object {
     * @param details Specifies to which tab or window the value should be set, or from which one it should be
     *     retrieved. If no tab nor window is specified, the global value is set or retrieved.
     */
-  def setBadgeText(details: AnonTabIdText): js.Promise[Unit] = js.native
+  def setBadgeText(details: AnonText): js.Promise[Unit] = js.native
   /**
     * Sets the text color for the badge.
     * @param details Specifies to which tab or window the value should be set, or from which one it should be
@@ -81,6 +81,6 @@ trait TypeofbrowserAction extends js.Object {
     * @param details Specifies to which tab or window the value should be set, or from which one it should be
     *     retrieved. If no tab nor window is specified, the global value is set or retrieved.
     */
-  def setTitle(details: AnonTabIdTitle): js.Promise[Unit] = js.native
+  def setTitle(details: AnonWindowId): js.Promise[Unit] = js.native
 }
 

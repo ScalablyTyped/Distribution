@@ -1,22 +1,20 @@
 package typings.downshift.mod
 
-import org.scalablytyped.runtime.TopLevel
+import typings.downshift.AnonBlurButton
 import typings.react.mod.Component
-import typings.react.mod.ComponentState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("downshift", JSImport.Default)
 @js.native
-class default protected ()
-  extends Component[DownshiftProps[js.Any], ComponentState, js.Any] {
-  def this(props: DownshiftProps[_]) = this()
-  def this(props: DownshiftProps[_], context: js.Any) = this()
-}
+class default[Item] ()
+  extends Component[DownshiftProps[Item], js.Object, js.Any]
 
+/* static members */
 @JSImport("downshift", JSImport.Default)
 @js.native
-object default
-  extends TopLevel[DownshiftInterface[js.Any]]
+object default extends js.Object {
+  var stateChangeTypes: AnonBlurButton = js.native
+}
 

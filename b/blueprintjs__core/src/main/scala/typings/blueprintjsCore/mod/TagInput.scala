@@ -1,8 +1,9 @@
 package typings.blueprintjsCore.mod
 
-import typings.blueprintjsCore.tagInputMod.ITagInputProps
-import typings.blueprintjsCore.tagInputMod.ITagInputState
-import typings.std.Partial
+import typings.blueprintjsCore.PartialITagInputProps
+import typings.blueprintjsCore.PartialITagInputState
+import typings.blueprintjsCore.ReadonlyITagInputProps
+import typings.blueprintjsCore.ReadonlyITagInputState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,8 +17,8 @@ class TagInput ()
 @JSImport("@blueprintjs/core", "TagInput")
 @js.native
 object TagInput extends js.Object {
-  var defaultProps: Partial[ITagInputProps] with js.Object = js.native
+  var defaultProps: PartialITagInputProps with js.Object = js.native
   var displayName: String = js.native
-  def getDerivedStateFromProps(props: ITagInputProps, state: ITagInputState): Partial[ITagInputState] | Null = js.native
+  def getDerivedStateFromProps(props: ReadonlyITagInputProps, state: ReadonlyITagInputState): PartialITagInputState | Null = js.native
 }
 

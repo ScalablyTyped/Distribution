@@ -1,6 +1,8 @@
 package typings.awsSdk.rdsMod
 
-import typings.awsSdk.AnonWaiter
+import typings.awsSdk.DescribeDBClusterSnapshot
+import typings.awsSdk.DescribeDBInstancesMessagFilters
+import typings.awsSdk.DescribeDBSnapshotsMessag
 import typings.awsSdk.awsSdkStrings.dBClusterSnapshotAvailable
 import typings.awsSdk.awsSdkStrings.dBClusterSnapshotDeleted
 import typings.awsSdk.awsSdkStrings.dBInstanceAvailable
@@ -1555,12 +1557,12 @@ trait RDS extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ RestoreDBClusterFromS3Result, Unit]
   ): Request[RestoreDBClusterFromS3Result, AWSError] = js.native
   /**
-    * Creates a new DB cluster from a DB snapshot or DB cluster snapshot. This action only applies to Aurora DB clusters. The target DB cluster is created from the source snapshot with a default configuration. If you don't specify a security group, the new DB cluster is associated with the default security group.  This action only restores the DB cluster, not the DB instances for that DB cluster. You must invoke the CreateDBInstance action to create DB instances for the restored DB cluster, specifying the identifier of the restored DB cluster in DBClusterIdentifier. You can create DB instances only after the RestoreDBClusterFromSnapshot action has completed and the DB cluster is available.  For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide. 
+    * Creates a new DB cluster from a DB snapshot or DB cluster snapshot. If a DB snapshot is specified, the target DB cluster is created from the source DB snapshot with a default configuration and default security group. If a DB cluster snapshot is specified, the target DB cluster is created from the source DB cluster restore point with the same configuration as the original source DB cluster. If you don't specify a security group, the new DB cluster is associated with the default security group. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters. 
     */
   def restoreDBClusterFromSnapshot(): Request[RestoreDBClusterFromSnapshotResult, AWSError] = js.native
   def restoreDBClusterFromSnapshot(callback: js.Function2[/* err */ AWSError, /* data */ RestoreDBClusterFromSnapshotResult, Unit]): Request[RestoreDBClusterFromSnapshotResult, AWSError] = js.native
   /**
-    * Creates a new DB cluster from a DB snapshot or DB cluster snapshot. This action only applies to Aurora DB clusters. The target DB cluster is created from the source snapshot with a default configuration. If you don't specify a security group, the new DB cluster is associated with the default security group.  This action only restores the DB cluster, not the DB instances for that DB cluster. You must invoke the CreateDBInstance action to create DB instances for the restored DB cluster, specifying the identifier of the restored DB cluster in DBClusterIdentifier. You can create DB instances only after the RestoreDBClusterFromSnapshot action has completed and the DB cluster is available.  For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide. 
+    * Creates a new DB cluster from a DB snapshot or DB cluster snapshot. If a DB snapshot is specified, the target DB cluster is created from the source DB snapshot with a default configuration and default security group. If a DB cluster snapshot is specified, the target DB cluster is created from the source DB cluster restore point with the same configuration as the original source DB cluster. If you don't specify a security group, the new DB cluster is associated with the default security group. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters. 
     */
   def restoreDBClusterFromSnapshot(params: RestoreDBClusterFromSnapshotMessage): Request[RestoreDBClusterFromSnapshotResult, AWSError] = js.native
   def restoreDBClusterFromSnapshot(
@@ -1737,11 +1739,11 @@ trait RDS extends Service {
     * Waits for the dBClusterSnapshotAvailable state by periodically calling the underlying RDS.describeDBClusterSnapshotsoperation every 30 seconds (at most 60 times).
     */
   @JSName("waitFor")
-  def waitFor_dBClusterSnapshotAvailable(state: dBClusterSnapshotAvailable, params: DescribeDBClusterSnapshotsMessage with AnonWaiter): Request[DBClusterSnapshotMessage, AWSError] = js.native
+  def waitFor_dBClusterSnapshotAvailable(state: dBClusterSnapshotAvailable, params: DescribeDBClusterSnapshot): Request[DBClusterSnapshotMessage, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_dBClusterSnapshotAvailable(
     state: dBClusterSnapshotAvailable,
-    params: DescribeDBClusterSnapshotsMessage with AnonWaiter,
+    params: DescribeDBClusterSnapshot,
     callback: js.Function2[/* err */ AWSError, /* data */ DBClusterSnapshotMessage, Unit]
   ): Request[DBClusterSnapshotMessage, AWSError] = js.native
   /**
@@ -1758,11 +1760,11 @@ trait RDS extends Service {
     * Waits for the dBClusterSnapshotDeleted state by periodically calling the underlying RDS.describeDBClusterSnapshotsoperation every 30 seconds (at most 60 times).
     */
   @JSName("waitFor")
-  def waitFor_dBClusterSnapshotDeleted(state: dBClusterSnapshotDeleted, params: DescribeDBClusterSnapshotsMessage with AnonWaiter): Request[DBClusterSnapshotMessage, AWSError] = js.native
+  def waitFor_dBClusterSnapshotDeleted(state: dBClusterSnapshotDeleted, params: DescribeDBClusterSnapshot): Request[DBClusterSnapshotMessage, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_dBClusterSnapshotDeleted(
     state: dBClusterSnapshotDeleted,
-    params: DescribeDBClusterSnapshotsMessage with AnonWaiter,
+    params: DescribeDBClusterSnapshot,
     callback: js.Function2[/* err */ AWSError, /* data */ DBClusterSnapshotMessage, Unit]
   ): Request[DBClusterSnapshotMessage, AWSError] = js.native
   /**
@@ -1779,11 +1781,11 @@ trait RDS extends Service {
     * Waits for the dBInstanceAvailable state by periodically calling the underlying RDS.describeDBInstancesoperation every 30 seconds (at most 60 times).
     */
   @JSName("waitFor")
-  def waitFor_dBInstanceAvailable(state: dBInstanceAvailable, params: DescribeDBInstancesMessage with AnonWaiter): Request[DBInstanceMessage, AWSError] = js.native
+  def waitFor_dBInstanceAvailable(state: dBInstanceAvailable, params: DescribeDBInstancesMessagFilters): Request[DBInstanceMessage, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_dBInstanceAvailable(
     state: dBInstanceAvailable,
-    params: DescribeDBInstancesMessage with AnonWaiter,
+    params: DescribeDBInstancesMessagFilters,
     callback: js.Function2[/* err */ AWSError, /* data */ DBInstanceMessage, Unit]
   ): Request[DBInstanceMessage, AWSError] = js.native
   /**
@@ -1800,11 +1802,11 @@ trait RDS extends Service {
     * Waits for the dBInstanceDeleted state by periodically calling the underlying RDS.describeDBInstancesoperation every 30 seconds (at most 60 times).
     */
   @JSName("waitFor")
-  def waitFor_dBInstanceDeleted(state: dBInstanceDeleted, params: DescribeDBInstancesMessage with AnonWaiter): Request[DBInstanceMessage, AWSError] = js.native
+  def waitFor_dBInstanceDeleted(state: dBInstanceDeleted, params: DescribeDBInstancesMessagFilters): Request[DBInstanceMessage, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_dBInstanceDeleted(
     state: dBInstanceDeleted,
-    params: DescribeDBInstancesMessage with AnonWaiter,
+    params: DescribeDBInstancesMessagFilters,
     callback: js.Function2[/* err */ AWSError, /* data */ DBInstanceMessage, Unit]
   ): Request[DBInstanceMessage, AWSError] = js.native
   /**
@@ -1821,11 +1823,11 @@ trait RDS extends Service {
     * Waits for the dBSnapshotAvailable state by periodically calling the underlying RDS.describeDBSnapshotsoperation every 30 seconds (at most 60 times).
     */
   @JSName("waitFor")
-  def waitFor_dBSnapshotAvailable(state: dBSnapshotAvailable, params: DescribeDBSnapshotsMessage with AnonWaiter): Request[DBSnapshotMessage, AWSError] = js.native
+  def waitFor_dBSnapshotAvailable(state: dBSnapshotAvailable, params: DescribeDBSnapshotsMessag): Request[DBSnapshotMessage, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_dBSnapshotAvailable(
     state: dBSnapshotAvailable,
-    params: DescribeDBSnapshotsMessage with AnonWaiter,
+    params: DescribeDBSnapshotsMessag,
     callback: js.Function2[/* err */ AWSError, /* data */ DBSnapshotMessage, Unit]
   ): Request[DBSnapshotMessage, AWSError] = js.native
   /**
@@ -1842,11 +1844,11 @@ trait RDS extends Service {
     * Waits for the dBSnapshotDeleted state by periodically calling the underlying RDS.describeDBSnapshotsoperation every 30 seconds (at most 60 times).
     */
   @JSName("waitFor")
-  def waitFor_dBSnapshotDeleted(state: dBSnapshotDeleted, params: DescribeDBSnapshotsMessage with AnonWaiter): Request[DBSnapshotMessage, AWSError] = js.native
+  def waitFor_dBSnapshotDeleted(state: dBSnapshotDeleted, params: DescribeDBSnapshotsMessag): Request[DBSnapshotMessage, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_dBSnapshotDeleted(
     state: dBSnapshotDeleted,
-    params: DescribeDBSnapshotsMessage with AnonWaiter,
+    params: DescribeDBSnapshotsMessag,
     callback: js.Function2[/* err */ AWSError, /* data */ DBSnapshotMessage, Unit]
   ): Request[DBSnapshotMessage, AWSError] = js.native
 }

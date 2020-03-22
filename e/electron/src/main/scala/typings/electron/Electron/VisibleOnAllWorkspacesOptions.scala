@@ -6,7 +6,9 @@ import scala.scalajs.js.annotation._
 
 trait VisibleOnAllWorkspacesOptions extends js.Object {
   /**
-    * Sets whether the window should be visible above fullscreen windows
+    * Sets whether the window should be visible above fullscreen windows _deprecated_
+    *
+    * @platform darwin
     */
   var visibleOnFullScreen: js.UndefOr[Boolean] = js.undefined
 }

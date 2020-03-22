@@ -1,8 +1,8 @@
 package typings.gapiClientPlusdomains.gapi.client.plusdomains
 
-import typings.gapiClientPlusdomains.AnonClientSpecificActorInfoDisplayName
-import typings.gapiClientPlusdomains.AnonContentObjectType
+import typings.gapiClientPlusdomains.AnonDisplayName
 import typings.gapiClientPlusdomains.AnonId
+import typings.gapiClientPlusdomains.AnonObjectType
 import typings.gapiClientPlusdomains.AnonTotalItems
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 
 trait Comment extends js.Object {
   /** The person who posted this comment. */
-  var actor: js.UndefOr[AnonClientSpecificActorInfoDisplayName] = js.undefined
+  var actor: js.UndefOr[AnonDisplayName] = js.undefined
   /** ETag of this response for caching purposes. */
   var etag: js.UndefOr[String] = js.undefined
   /** The ID of this comment. */
@@ -20,7 +20,7 @@ trait Comment extends js.Object {
   /** Identifies this resource as a comment. Value: "plus#comment". */
   var kind: js.UndefOr[String] = js.undefined
   /** The object of this comment. */
-  var `object`: js.UndefOr[AnonContentObjectType] = js.undefined
+  var `object`: js.UndefOr[AnonObjectType] = js.undefined
   /** People who +1'd this comment. */
   var plusoners: js.UndefOr[AnonTotalItems] = js.undefined
   /** The time at which this comment was initially published. Formatted as an RFC 3339 timestamp. */
@@ -39,12 +39,12 @@ trait Comment extends js.Object {
 object Comment {
   @scala.inline
   def apply(
-    actor: AnonClientSpecificActorInfoDisplayName = null,
+    actor: AnonDisplayName = null,
     etag: String = null,
     id: String = null,
     inReplyTo: js.Array[AnonId] = null,
     kind: String = null,
-    `object`: AnonContentObjectType = null,
+    `object`: AnonObjectType = null,
     plusoners: AnonTotalItems = null,
     published: String = null,
     selfLink: String = null,

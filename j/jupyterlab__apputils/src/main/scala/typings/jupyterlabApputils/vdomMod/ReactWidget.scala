@@ -1,6 +1,6 @@
 package typings.jupyterlabApputils.vdomMod
 
-import typings.phosphorWidgets.mod.Widget
+import typings.luminoWidgets.mod.Widget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,7 +23,7 @@ abstract class ReactWidget () extends Widget {
     *
     * Subclasses should define this method and return the root React nodes here.
     */
-  /* protected */ def render(): ReactRenderElement = js.native
+  /* protected */ def render(): ReactRenderElement | Null = js.native
 }
 
 /* static members */

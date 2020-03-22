@@ -1,9 +1,9 @@
 package typings.ckeditorCkeditor5Engine.mod
 
-import typings.ckeditorCkeditor5Engine.AnonArg
 import typings.ckeditorCkeditor5Engine.AnonBatchType
 import typings.ckeditorCkeditor5Engine.AnonContext
 import typings.ckeditorCkeditor5Engine.AnonConvertMarkers
+import typings.ckeditorCkeditor5Engine.AnonError
 import typings.ckeditorCkeditor5Engine.AnonIgnoreRoot
 import typings.ckeditorCkeditor5Engine.AnonLastRangeBackward
 import typings.ckeditorCkeditor5Engine.AnonRenderUIElements
@@ -38,7 +38,7 @@ object devUtils extends js.Object {
   class OperationReplayer () extends js.Object
   
   def disableEngineDebug(): Unit = js.native
-  def enableEngineDebug(_logger: AnonArg): DebugPlugin = js.native
+  def enableEngineDebug(_logger: AnonError): DebugPlugin = js.native
   // engine/dev-utils/view
   def getData(view: View): String = js.native
   def getData(view: View, options: AnonRenderUIElements): String = js.native

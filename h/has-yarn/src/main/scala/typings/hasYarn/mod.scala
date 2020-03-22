@@ -11,7 +11,7 @@ object mod extends js.Object {
   // declare function hasYarn(cwd?: string): boolean;
   // export = hasYarn;
   @JSName("default")
-  var default_Original: AnonCwd = js.native
+  var default_Original: AnonCall = js.native
   /**
   	 * Check if a project is using [Yarn](https://yarnpkg.com).
   	 *

@@ -14,7 +14,7 @@ object arrowKeyStepperMod extends js.Object {
   /* static members */
   @js.native
   object ArrowKeyStepper extends js.Object {
-    var defaultProps: Anon0 = js.native
+    var defaultProps: AnonDisabled = js.native
   }
   
 }

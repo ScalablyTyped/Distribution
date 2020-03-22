@@ -1,7 +1,7 @@
 package typings.configYaml.mod
 
+import typings.configYaml.PartialOptions
 import typings.node.fsMod.PathLike
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(path: PathLike): js.Any = js.native
-  def apply(path: PathLike, options: Partial[Options]): js.Any = js.native
+  def apply(path: PathLike, options: PartialOptions): js.Any = js.native
 }
 

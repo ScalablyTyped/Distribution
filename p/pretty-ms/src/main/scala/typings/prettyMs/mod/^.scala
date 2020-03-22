@@ -21,7 +21,7 @@ object ^ extends js.Object {
   //=> '133ms'
   // `compact` option
   prettyMilliseconds(1337, {compact: true});
-  //=> '~1s'
+  //=> '1s'
   // `verbose` option
   prettyMilliseconds(1335669000, {verbose: true});
   //=> '15 days 11 hours 1 minute 9 seconds'

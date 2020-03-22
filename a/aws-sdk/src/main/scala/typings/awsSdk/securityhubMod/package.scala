@@ -57,6 +57,13 @@ package object securityhubMod {
   type InsightList = js.Array[typings.awsSdk.securityhubMod.Insight]
   type InsightResultValueList = js.Array[typings.awsSdk.securityhubMod.InsightResultValue]
   type Integer = scala.Double
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.SEND_FINDINGS_TO_SECURITY_HUB
+    - typings.awsSdk.awsSdkStrings.RECEIVE_FINDINGS_FROM_SECURITY_HUB
+    - java.lang.String
+  */
+  type IntegrationType = typings.awsSdk.securityhubMod._IntegrationType | java.lang.String
+  type IntegrationTypeList = js.Array[typings.awsSdk.securityhubMod.IntegrationType]
   type InvitationList = js.Array[typings.awsSdk.securityhubMod.Invitation]
   type IpFilterList = js.Array[typings.awsSdk.securityhubMod.IpFilter]
   type KeywordFilterList = js.Array[typings.awsSdk.securityhubMod.KeywordFilter]

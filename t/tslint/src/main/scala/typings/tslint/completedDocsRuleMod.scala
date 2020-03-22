@@ -8,6 +8,7 @@ import typings.tslint.tslintStrings.`private`
 import typings.tslint.tslintStrings.`protected`
 import typings.tslint.tslintStrings.all
 import typings.tslint.tslintStrings.classes
+import typings.tslint.tslintStrings.constructors
 import typings.tslint.tslintStrings.content
 import typings.tslint.tslintStrings.enums
 import typings.tslint.tslintStrings.existence
@@ -51,6 +52,7 @@ object completedDocsRuleMod extends js.Object {
   @JSName("ALL")
   val ALL_ : all = js.native
   val ARGUMENT_CLASSES: classes = js.native
+  val ARGUMENT_CONSTRUCTORS: constructors = js.native
   val ARGUMENT_ENUMS: enums = js.native
   val ARGUMENT_ENUM_MEMBERS: `enum-members` = js.native
   val ARGUMENT_FUNCTIONS: functions = js.native
@@ -78,9 +80,10 @@ object completedDocsRuleMod extends js.Object {
   @js.native
   object Rule extends js.Object {
     var ARGUMENT_DESCRIPTOR_BLOCK: AnonPropertiesType = js.native
-    var ARGUMENT_DESCRIPTOR_CLASS: AnonPropertiesTypeAnonLocations = js.native
-    var ARGUMENT_DESCRIPTOR_FUNCTION: AnonPropertiesTypeAnonOverloads = js.native
-    var ARGUMENT_DESCRIPTOR_METHOD: AnonPropertiesTypeAnonLocationsOverloads = js.native
+    var ARGUMENT_DESCRIPTOR_CLASS: AnonPropertiesAnonLocations = js.native
+    var ARGUMENT_DESCRIPTOR_CONSTRUCTOR: AnonPropertiesAnonOverloads = js.native
+    var ARGUMENT_DESCRIPTOR_FUNCTION: AnonPropertiesAnonVisibilities = js.native
+    var ARGUMENT_DESCRIPTOR_METHOD: AnonPropertiesAnonPrivacies = js.native
     var FAILURE_STRING_EXIST: String = js.native
     var defaultArguments: IInputExclusionDescriptors = js.native
     var metadata: IRuleMetadata = js.native
@@ -90,6 +93,7 @@ object completedDocsRuleMod extends js.Object {
   /* Rewritten from type alias, can be one of: 
     - typings.tslint.completedDocsRuleMod.All
     - typings.tslint.tslintStrings.classes
+    - typings.tslint.tslintStrings.constructors
     - typings.tslint.tslintStrings.enums
     - typings.tslint.tslintStrings.`enum-members`
     - typings.tslint.tslintStrings.functions

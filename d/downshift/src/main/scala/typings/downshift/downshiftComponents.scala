@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 object downshiftComponents extends downshiftProps {
   @scala.inline
-  def Downshift: ComponentType[DownshiftProps[js.Any]] = js.constructorOf[typings.downshift.mod.default].asInstanceOf[typings.react.mod.ComponentType[DownshiftProps[js.Any]]]
+  def Downshift[Item]: ComponentType[DownshiftProps[Item]] = js.constructorOf[typings.downshift.mod.default[Item]].asInstanceOf[typings.react.mod.ComponentType[DownshiftProps[Item]]]
 }
 

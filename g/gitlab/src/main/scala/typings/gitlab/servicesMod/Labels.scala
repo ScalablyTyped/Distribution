@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("gitlab/dist/types/core/services", "Labels")
 @js.native
-class Labels ()
+class Labels protected ()
   extends typings.gitlab.labelsMod.Labels {
   def this(options: BaseServiceOptions) = this()
 }

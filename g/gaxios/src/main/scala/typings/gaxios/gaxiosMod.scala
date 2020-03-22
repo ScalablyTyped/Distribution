@@ -16,13 +16,17 @@ object gaxiosMod extends js.Object {
     */
   class Gaxios () extends js.Object {
     def this(defaults: GaxiosOptions) = this()
+    /**
+      * Internal, retryable version of the `request` method.
+      * @param opts Set of HTTP options that will be used for this HTTP request.
+      */
+    var _request: js.Any = js.native
     var agentCache: js.Any = js.native
     /**
       * Default HTTP options that will be used for every HTTP request.
       */
     var defaults: GaxiosOptions = js.native
     var getResponseData: js.Any = js.native
-    var isReadableStream: js.Any = js.native
     /**
       * Encode a set of key/value pars into a querystring format (?foo=bar&baz=boo)
       * @param params key value pars to encode

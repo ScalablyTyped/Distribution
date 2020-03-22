@@ -2,8 +2,8 @@ package typings.atom.mod
 
 import typings.atom.AnonAutoFocus
 import typings.atom.AnonFilePath
-import typings.atom.AnonItemPriority
 import typings.atom.AnonPane
+import typings.atom.AnonPriority
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,13 +16,13 @@ trait Workspace extends js.Object {
   /** Make the previous pane active. */
   def activatePreviousPane(): Boolean = js.native
   /** Adds a panel item to the bottom of the editor window. */
-  def addBottomPanel[T](options: AnonItemPriority[T]): Panel[T] = js.native
+  def addBottomPanel[T](options: AnonPriority[T]): Panel[T] = js.native
   /** Adds a panel item to the footer. */
-  def addFooterPanel[T](options: AnonItemPriority[T]): Panel[T] = js.native
+  def addFooterPanel[T](options: AnonPriority[T]): Panel[T] = js.native
   /** Adds a panel item to the header. */
-  def addHeaderPanel[T](options: AnonItemPriority[T]): Panel[T] = js.native
+  def addHeaderPanel[T](options: AnonPriority[T]): Panel[T] = js.native
   /** Adds a panel item to the left of the editor window. */
-  def addLeftPanel[T](options: AnonItemPriority[T]): Panel[T] = js.native
+  def addLeftPanel[T](options: AnonPriority[T]): Panel[T] = js.native
   /** Adds a panel item as a modal dialog. */
   def addModalPanel[T](options: AnonAutoFocus[T]): Panel[T] = js.native
   /** Register an opener for a URI. */
@@ -34,9 +34,9 @@ trait Workspace extends js.Object {
     ]
   ): Disposable = js.native
   /** Adds a panel item to the right of the editor window. */
-  def addRightPanel[T](options: AnonItemPriority[T]): Panel[T] = js.native
+  def addRightPanel[T](options: AnonPriority[T]): Panel[T] = js.native
   /** Adds a panel item to the top of the editor window above the tabs. */
-  def addTopPanel[T](options: AnonItemPriority[T]): Panel[T] = js.native
+  def addTopPanel[T](options: AnonPriority[T]): Panel[T] = js.native
   /** Create a new text editor. */
   def buildTextEditor(params: js.Object): TextEditor = js.native
   /**

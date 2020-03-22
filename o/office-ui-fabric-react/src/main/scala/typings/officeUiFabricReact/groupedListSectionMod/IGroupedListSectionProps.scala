@@ -13,7 +13,7 @@ import typings.officeUiFabricReact.listTypesMod.IListProps
 import typings.officeUiFabricReact.withViewportMod.IViewport
 import typings.react.mod.ClassAttributes
 import typings.react.mod.ReactNode
-import typings.uifabricUtilities.iclassnamesMod.IClassNames
+import typings.uifabricMergeStyles.istylesetMod.IProcessedStyleSet
 import typings.uifabricUtilities.irenderfunctionMod.IRenderFunction
 import typings.uifabricUtilities.selectionTypesMod.IObjectWithKey
 import typings.uifabricUtilities.selectionTypesMod.ISelection
@@ -49,7 +49,7 @@ trait IGroupedListSectionProps extends ClassAttributes[GroupedListSection] {
   /** Optional override properties to render groups. */
   var groupProps: js.UndefOr[IGroupRenderProps] = js.native
   /** GroupedList resolved class names */
-  var groupedListClassNames: js.UndefOr[IClassNames[IGroupedListStyles]] = js.native
+  var groupedListClassNames: js.UndefOr[IProcessedStyleSet[IGroupedListStyles]] = js.native
   /** Stores parent group's children. */
   var groups: js.UndefOr[js.Array[IGroup]] = js.native
   /** Information to pass in to the group header. */

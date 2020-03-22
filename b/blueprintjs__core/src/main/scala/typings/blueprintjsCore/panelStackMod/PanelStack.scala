@@ -11,7 +11,8 @@ class PanelStack ()
   extends AbstractPureComponent2[IPanelStackProps, IPanelStackState, js.Object] {
   var handlePanelClose: js.Any = js.native
   var handlePanelOpen: js.Any = js.native
-  var renderCurrentPanel: js.Any = js.native
+  var renderPanel: js.Any = js.native
+  var renderPanels: js.Any = js.native
   @JSName("componentDidUpdate")
   def componentDidUpdate_MPanelStack(prevProps: IPanelStackProps, _prevState: IPanelStackState, _snapshot: js.Object): Unit = js.native
 }

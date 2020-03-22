@@ -28,7 +28,7 @@ class ValidationError () extends IValidationError {
   var errorMessage_ValidationError: String = js.native
   /** ValidationError severity. */
   @JSName("severity")
-  var severity_ValidationError: Severity = js.native
+  var severity_ValidationError: Severity | String = js.native
   /**
     * Converts this ValidationError to JSON.
     * @returns JSON object

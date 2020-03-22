@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 	 * @see {@link https://keycloak.gitbooks.io/securing-client-applications-guide/content/topics/oidc/javascript-adapter.html|Keycloak JS adapter documentation}
 	 */
 @js.native
-trait KeycloakInstance[TPromise /* <: PromiseType */] extends js.Object {
+trait KeycloakInstance[TPromise /* <: KeycloakPromiseType */] extends js.Object {
   /**
   		 * @private Undocumented.
   		 */

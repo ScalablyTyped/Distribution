@@ -43,7 +43,7 @@ class Document () extends IDocument {
   var name_Document: String = js.native
   /** Document rawContent. */
   @JSName("rawContent")
-  var rawContent_Document: Uint8Array = js.native
+  var rawContent_Document: Uint8Array | String = js.native
   /** Document source. */
   var source: js.UndefOr[contentUri | content | rawContent] = js.native
   /**

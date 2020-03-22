@@ -1,7 +1,7 @@
 package typings.cesium.mod
 
 import typings.cesium.AnonCloseBottom
-import typings.cesium.AnonEllipsoidExtrudedHeight
+import typings.cesium.AnonPerPositionHeight
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("cesium", "PolygonGeometry")
 @js.native
 class PolygonGeometry protected () extends Packable {
-  def this(options: AnonEllipsoidExtrudedHeight) = this()
+  def this(options: AnonPerPositionHeight) = this()
 }
 
 /* static members */

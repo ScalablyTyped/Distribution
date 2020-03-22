@@ -26,30 +26,30 @@ class RouterOutlet protected ()
   var _activatedRoute: js.Any = js.native
   var activateEvents: EventEmitter[_] = js.native
   var activated: js.Any = js.native
-  val activatedRoute: ActivatedRoute = js.native
-  val activatedRouteData: Data = js.native
   var changeDetector: js.Any = js.native
-  val component: js.Object = js.native
   var deactivateEvents: EventEmitter[_] = js.native
-  val isActivated: Boolean = js.native
   var location: js.Any = js.native
   var name: js.Any = js.native
   var parentContexts: js.Any = js.native
   var resolver: js.Any = js.native
   def activateWith(activatedRoute: ActivatedRoute): Unit = js.native
   def activateWith(activatedRoute: ActivatedRoute, resolver: ComponentFactoryResolver): Unit = js.native
+  def activatedRoute(): ActivatedRoute = js.native
+  def activatedRouteData(): Data = js.native
   /**
     * Called when the `RouteReuseStrategy` instructs to re-attach a previously detached subtree
     */
   def attach(ref: ComponentRef[_], activatedRoute: ActivatedRoute): Unit = js.native
+  def component(): js.Object = js.native
   def deactivate(): Unit = js.native
   /**
     * Called when the `RouteReuseStrategy` instructs to detach the subtree
     */
   def detach(): ComponentRef[_] = js.native
+  def isActivated(): Boolean = js.native
   /**
     * A callback method that performs custom clean-up, invoked immediately
-    * after a directive, pipe, or service instance is destroyed.
+    * before a directive, pipe, or service instance is destroyed.
     */
   /* CompleteClass */
   override def ngOnDestroy(): Unit = js.native

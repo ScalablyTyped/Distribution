@@ -6,8 +6,9 @@ import scala.scalajs.js.annotation._
 
 @JSImport("js2xmlparser/lib/options", "DtdOptions")
 @js.native
-class DtdOptions () extends IDtdOptions {
-  def this(dtdOptions: IDtdOptions) = this()
+class DtdOptions protected () extends IDtdOptions {
+  def this(validation: Boolean) = this()
+  def this(validation: Boolean, dtdOptions: IDtdOptions) = this()
   @JSName("include")
   var include_DtdOptions: Boolean = js.native
 }

@@ -1,6 +1,6 @@
 package typings.evernote.mod.Evernote
 
-import typings.evernote.AnonBusinessIdGuid
+import typings.evernote.AnonNoteStoreUrl
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -80,7 +80,7 @@ import scala.scalajs.js.annotation._
 @JSImport("evernote", "Evernote.LinkedNotebook")
 @js.native
 class LinkedNotebook () extends js.Object {
-  def this(args: AnonBusinessIdGuid) = this()
+  def this(args: AnonNoteStoreUrl) = this()
   var businessId: Double = js.native
   var guid: String = js.native
   var noteStoreUrl: String = js.native

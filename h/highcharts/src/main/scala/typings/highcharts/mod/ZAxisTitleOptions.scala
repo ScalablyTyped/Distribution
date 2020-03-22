@@ -81,7 +81,7 @@ trait ZAxisTitleOptions extends AxisTitleOptions {
   var style: js.UndefOr[CSSObject] = js.undefined
   /**
     * (Highcharts) The actual text of the axis title. It can contain basic HTML
-    * text markup like <b>, <i> and spans with style.
+    * tags like `b`, `i` and `span` with style.
     */
   var text: js.UndefOr[String | Null] = js.undefined
   /**

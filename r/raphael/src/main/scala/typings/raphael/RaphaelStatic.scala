@@ -13,7 +13,7 @@ trait RaphaelStatic extends js.Object {
   var el: js.Any = js.native
   var fn: js.Any = js.native
   @JSName("getColor")
-  var getColor_Original: AnonReset = js.native
+  var getColor_Original: AnonCall = js.native
   var st: js.Any = js.native
   var svg: Boolean = js.native
   var `type`: String = js.native
@@ -58,19 +58,19 @@ trait RaphaelStatic extends js.Object {
     p2x: Double,
     p2y: Double,
     t: Double
-  ): AnonAlphaEnd = js.native
+  ): AnonEnd = js.native
   def format(token: String, parameters: js.Any*): String = js.native
   def fullfill(token: String, json: JSON): String = js.native
   def getColor(): String = js.native
   def getColor(value: Double): String = js.native
   def getPointAtLength(path: String, length: Double): AnonAlpha = js.native
-  def getRGB(colour: String): AnonBError = js.native
+  def getRGB(colour: String): AnonError = js.native
   def getSubpath(path: String, from: Double, to: Double): String = js.native
   def getTotalLength(path: String): Double = js.native
   def hsb(h: Double, s: Double, b: Double): String = js.native
-  def hsb2rgb(h: Double, s: Double, v: Double): AnonBG = js.native
+  def hsb2rgb(h: Double, s: Double, v: Double): AnonG = js.native
   def hsl(h: Double, s: Double, l: Double): String = js.native
-  def hsl2rgb(h: Double, s: Double, l: Double): AnonBG = js.native
+  def hsl2rgb(h: Double, s: Double, l: Double): AnonG = js.native
   def is(o: js.Any, `type`: String): Boolean = js.native
   def isBBoxIntersect(bbox1: String, bbox2: String): Boolean = js.native
   def isPointInsideBBox(bbox: String, x: Double, y: Double): Boolean = js.native
@@ -90,8 +90,8 @@ trait RaphaelStatic extends js.Object {
   def rad(deg: Double): Double = js.native
   def registerFont(font: RaphaelFont): RaphaelFont = js.native
   def rgb(r: Double, g: Double, b: Double): String = js.native
-  def rgb2hsb(r: Double, g: Double, b: Double): AnonBH = js.native
-  def rgb2hsl(r: Double, g: Double, b: Double): AnonH = js.native
+  def rgb2hsb(r: Double, g: Double, b: Double): AnonH = js.native
+  def rgb2hsl(r: Double, g: Double, b: Double): AnonL = js.native
   def setWindow(newwin: Window_): Unit = js.native
   def snapTo(values: js.Array[Double], value: Double): Double = js.native
   def snapTo(values: js.Array[Double], value: Double, tolerance: Double): Double = js.native

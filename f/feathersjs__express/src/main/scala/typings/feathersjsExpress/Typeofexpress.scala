@@ -32,13 +32,13 @@ trait Typeofexpress extends js.Object {
     * @since 4.16.0
     */
   @JSName("json")
-  var json_Original: FnOptions = js.native
+  var json_Original: FnCall = js.native
   /**
     * This is a built-in middleware function in Express. It parses incoming requests with Buffer payloads and is based on body-parser.
     * @since 4.17.0
     */
   @JSName("raw")
-  var raw_Original: FnOptionsNextHandleFunction179348451 = js.native
+  var raw_Original: Fn1 = js.native
   var request: Request_[ParamsDictionary] = js.native
   var response: Response_ = js.native
   /**
@@ -51,13 +51,13 @@ trait Typeofexpress extends js.Object {
     * @since 4.17.0
     */
   @JSName("text")
-  var text_Original: FnOptionsNextHandleFunctionOptionsText = js.native
+  var text_Original: Fn0 = js.native
   /**
     * This is a built-in middleware function in Express. It parses incoming requests with urlencoded payloads and is based on body-parser.
     * @since 4.16.0
     */
   @JSName("urlencoded")
-  var urlencoded_Original: FnOptionsNextHandleFunction = js.native
+  var urlencoded_Original: FnCallOptions = js.native
   def Router(): typings.expressServeStaticCore.mod.Router = js.native
   def Router(options: RouterOptions): typings.expressServeStaticCore.mod.Router = js.native
   /**

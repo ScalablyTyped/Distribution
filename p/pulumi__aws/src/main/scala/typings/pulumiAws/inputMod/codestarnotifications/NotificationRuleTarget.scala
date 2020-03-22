@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait NotificationRuleTarget extends js.Object {
   var address: Input[String] = js.native
   /**
-    * The status of the notification rule. Possible balues are `ENABLED` and `DISABLED`, default is `ENABLED`.
+    * The status of the notification rule. Possible values are `ENABLED` and `DISABLED`, default is `ENABLED`.
     */
   var status: js.UndefOr[Input[String]] = js.native
   var `type`: js.UndefOr[Input[String]] = js.native

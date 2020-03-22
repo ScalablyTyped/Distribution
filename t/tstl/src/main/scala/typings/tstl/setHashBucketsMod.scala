@@ -23,5 +23,14 @@ object setHashBucketsMod extends js.Object {
     def key_eq(): Comparator[Key, Key] = js.native
   }
   
+  /* static members */
+  @js.native
+  object SetHashBuckets extends js.Object {
+    /**
+      * @internal
+      */
+    def _Swap_source[Key, Unique /* <: Boolean */, Source /* <: IHashSet[Key, Unique, Source] */](x: SetHashBuckets[Key, Unique, Source], y: SetHashBuckets[Key, Unique, Source]): Unit = js.native
+  }
+  
 }
 

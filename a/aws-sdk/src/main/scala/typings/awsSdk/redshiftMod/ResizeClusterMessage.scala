@@ -25,22 +25,23 @@ trait ResizeClusterMessage extends js.Object {
   /**
     * The new number of nodes for the cluster.
     */
-  var NumberOfNodes: Integer = js.native
+  var NumberOfNodes: js.UndefOr[Integer] = js.native
 }
 
 object ResizeClusterMessage {
   @scala.inline
   def apply(
     ClusterIdentifier: String,
-    NumberOfNodes: Integer,
     Classic: js.UndefOr[scala.Boolean] = js.undefined,
     ClusterType: String = null,
-    NodeType: String = null
+    NodeType: String = null,
+    NumberOfNodes: Int | scala.Double = null
   ): ResizeClusterMessage = {
-    val __obj = js.Dynamic.literal(ClusterIdentifier = ClusterIdentifier.asInstanceOf[js.Any], NumberOfNodes = NumberOfNodes.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(ClusterIdentifier = ClusterIdentifier.asInstanceOf[js.Any])
     if (!js.isUndefined(Classic)) __obj.updateDynamic("Classic")(Classic.asInstanceOf[js.Any])
     if (ClusterType != null) __obj.updateDynamic("ClusterType")(ClusterType.asInstanceOf[js.Any])
     if (NodeType != null) __obj.updateDynamic("NodeType")(NodeType.asInstanceOf[js.Any])
+    if (NumberOfNodes != null) __obj.updateDynamic("NumberOfNodes")(NumberOfNodes.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResizeClusterMessage]
   }
 }

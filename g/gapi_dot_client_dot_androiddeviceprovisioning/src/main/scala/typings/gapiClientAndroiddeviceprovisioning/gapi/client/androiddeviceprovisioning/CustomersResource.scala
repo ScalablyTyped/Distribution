@@ -1,8 +1,8 @@
 package typings.gapiClientAndroiddeviceprovisioning.gapi.client.androiddeviceprovisioning
 
 import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientAndroiddeviceprovisioning.AnonAccesstokenAlt
-import typings.gapiClientAndroiddeviceprovisioning.AnonAccesstokenAltBearertoken
+import typings.gapiClientAndroiddeviceprovisioning.AnonAlt
+import typings.gapiClientAndroiddeviceprovisioning.AnonBearertoken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,21 +14,18 @@ trait CustomersResource extends js.Object {
     * by calling API methods or using their zero-touch enrollment portal. The API
     * doesn't notify the customer that they have access.
     */
-  def create(request: AnonAccesstokenAlt): Request_[Company]
+  def create(request: AnonAlt): Request_[Company]
   /**
     * Lists the customers that are enrolled to the reseller identified by the
     * `partnerId` argument. This list includes customers that the reseller
     * created and customers that enrolled themselves using the portal.
     */
-  def list(request: AnonAccesstokenAltBearertoken): Request_[ListCustomersResponse]
+  def list(request: AnonBearertoken): Request_[ListCustomersResponse]
 }
 
 object CustomersResource {
   @scala.inline
-  def apply(
-    create: AnonAccesstokenAlt => Request_[Company],
-    list: AnonAccesstokenAltBearertoken => Request_[ListCustomersResponse]
-  ): CustomersResource = {
+  def apply(create: AnonAlt => Request_[Company], list: AnonBearertoken => Request_[ListCustomersResponse]): CustomersResource = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[CustomersResource]

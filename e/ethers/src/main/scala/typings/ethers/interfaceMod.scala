@@ -24,7 +24,7 @@ object interfaceMod extends js.Object {
     val deployFunction: DeployDescription = js.native
     val events: StringDictionary[EventDescription] = js.native
     val functions: StringDictionary[FunctionDescription] = js.native
-    def parseLog(log: AnonDataTopics): LogDescription = js.native
+    def parseLog(log: AnonTopics): LogDescription = js.native
     def parseTransaction(tx: AnonData): TransactionDescription = js.native
   }
   

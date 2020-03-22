@@ -8,7 +8,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object deBEMod extends js.Object {
   val default: js.Array[
-    String | Double | (js.Array[js.UndefOr[js.Array[String] | Double | String]]) | (js.Function1[/* n */ Double, Double]) | AnonATS
+    js.UndefOr[
+      String | Double | (js.Array[js.UndefOr[js.Array[String] | Double | String]]) | (js.Function1[/* n */ Double, Double]) | AnonATS
+    ]
   ] = js.native
 }
 

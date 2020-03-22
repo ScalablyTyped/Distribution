@@ -22,5 +22,8 @@ trait reactFocusLockProps {
   @scala.inline
   def ReactFocusLockProps: typings.reactFocusLock.interfacesMod.ReactFocusLockProps.type = typings.reactFocusLock.interfacesMod.ReactFocusLockProps
   type ReactFocusLockProps[ChildrenType, LockProps] = typings.reactFocusLock.interfacesMod.ReactFocusLockProps[ChildrenType, LockProps]
+  @scala.inline
+  def UIProps: ReactFocusLockPropsReactN.type = typings.reactFocusLock.ReactFocusLockPropsReactN
+  type UIProps = ReactFocusLockPropsReactN
 }
 

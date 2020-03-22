@@ -87,6 +87,10 @@ object mod extends js.Object {
       */
     val GOOGLE_OAUTH2_FEDERATED_SIGNON_PEM_CERTS_URL_ : js.Any = js.native
     /**
+      * Google Sign on certificates in JWK format.
+      */
+    val GOOGLE_OAUTH2_IAP_PUBLIC_KEY_URL_ : js.Any = js.native
+    /**
       * The base endpoint to revoke tokens.
       */
     val GOOGLE_OAUTH2_REVOKE_URL_ : js.Any = js.native

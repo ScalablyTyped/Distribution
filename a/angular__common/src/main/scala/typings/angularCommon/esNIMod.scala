@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 object esNIMod extends js.Object {
   val default: js.Array[
     js.UndefOr[
-      String | Double | (js.Array[js.UndefOr[js.Array[String] | Double | String]]) | (js.Function1[/* n */ Double, Double]) | AnonAUDBRLCADCNYESPEURFKPGBPHKD
+      String | Double | (js.Array[js.UndefOr[js.Array[String] | Double | String]]) | (js.Function1[/* n */ Double, Double]) | AnonNIO
     ]
   ] = js.native
 }

@@ -13,12 +13,15 @@ trait DeleteLocalGatewayRouteTableVpcAssociationRequest extends js.Object {
   /**
     * The ID of the association.
     */
-  var LocalGatewayRouteTableVpcAssociationId: String = js.native
+  var LocalGatewayRouteTableVpcAssociationId: typings.awsSdk.ec2Mod.LocalGatewayRouteTableVpcAssociationId = js.native
 }
 
 object DeleteLocalGatewayRouteTableVpcAssociationRequest {
   @scala.inline
-  def apply(LocalGatewayRouteTableVpcAssociationId: String, DryRun: js.UndefOr[scala.Boolean] = js.undefined): DeleteLocalGatewayRouteTableVpcAssociationRequest = {
+  def apply(
+    LocalGatewayRouteTableVpcAssociationId: LocalGatewayRouteTableVpcAssociationId,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined
+  ): DeleteLocalGatewayRouteTableVpcAssociationRequest = {
     val __obj = js.Dynamic.literal(LocalGatewayRouteTableVpcAssociationId = LocalGatewayRouteTableVpcAssociationId.asInstanceOf[js.Any])
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteLocalGatewayRouteTableVpcAssociationRequest]

@@ -4,9 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LinkInnerProps extends js.Object {
-  var containsIcon: js.UndefOr[Boolean] = js.undefined
-  var withArrow: js.UndefOr[Boolean] = js.undefined
+  var containsIcon: js.UndefOr[Boolean] = js.native
+  var withArrow: js.UndefOr[Boolean] = js.native
 }
 
 object LinkInnerProps {

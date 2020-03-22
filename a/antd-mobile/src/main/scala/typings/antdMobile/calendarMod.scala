@@ -20,7 +20,7 @@ object calendarMod extends js.Object {
   @js.native
   object default extends js.Object {
     var contextTypes: AnonAntLocale = js.native
-    var defaultProps: AnonPrefixClsTimePickerPickerPrefixCls = js.native
+    var defaultProps: AnonTimePickerPickerPrefixCls = js.native
   }
   
 }

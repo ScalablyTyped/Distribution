@@ -31,7 +31,7 @@ trait Typeofcompilation extends js.Object {
   var Compilation: Instantiable0[typings.webpack.mod.compilation.Compilation]
   var ContextModuleFactory: Instantiable0[typings.webpack.mod.compilation.ContextModuleFactory]
   var DependenciesBlock: Instantiable0[typings.webpack.mod.compilation.DependenciesBlock]
-  var Dependency: TypeofClassDependency
+  var Dependency: TypeofDependency
   var DllModuleFactory: Instantiable0[typings.webpack.mod.compilation.DllModuleFactory]
   var HotUpdateChunkTemplate: Instantiable0[typings.webpack.mod.compilation.HotUpdateChunkTemplate]
   var MainTemplate: Instantiable0[typings.webpack.mod.compilation.MainTemplate]
@@ -54,7 +54,7 @@ object Typeofcompilation {
     Compilation: Instantiable0[Compilation],
     ContextModuleFactory: Instantiable0[ContextModuleFactory],
     DependenciesBlock: Instantiable0[DependenciesBlock],
-    Dependency: TypeofClassDependency,
+    Dependency: TypeofDependency,
     DllModuleFactory: Instantiable0[DllModuleFactory],
     HotUpdateChunkTemplate: Instantiable0[HotUpdateChunkTemplate],
     MainTemplate: Instantiable0[MainTemplate],

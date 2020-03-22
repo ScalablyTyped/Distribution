@@ -1,8 +1,6 @@
 package typings.jsrsasign.mod.KJUR.asn1.x509
 
-import typings.jsrsasign.AnonCriticalBooleanOptional
-import typings.jsrsasign.jsrsasign.KJUR.asn1.ArrayParam
-import typings.jsrsasign.jsrsasign.KJUR.asn1.x509.UriParam
+import typings.jsrsasign.ArrayParamUriParamcritica
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,6 +37,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class SubjectAltName ()
   extends typings.jsrsasign.jsrsasign.KJUR.asn1.x509.SubjectAltName {
-  def this(params: ArrayParam[UriParam] with AnonCriticalBooleanOptional) = this()
+  def this(params: ArrayParamUriParamcritica) = this()
 }
 

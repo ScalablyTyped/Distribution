@@ -5,7 +5,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object typesMod {
-  type ErrorWithCode = typings.std.Error with typings.jestRunner.AnonCode
   type OnTestFailure = js.Function2[
     /* test */ typings.jestRunner.typesMod.Test, 
     /* serializableError */ typings.jestTestResult.typesMod.SerializableError, 

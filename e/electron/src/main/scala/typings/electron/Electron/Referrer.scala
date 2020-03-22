@@ -15,9 +15,9 @@ import scala.scalajs.js.annotation._
 trait Referrer extends js.Object {
   // Docs: http://electronjs.org/docs/api/structures/referrer
   /**
-    * Can be default, unsafe-url, no-referrer-when-downgrade, no-referrer, origin,
-    * strict-origin-when-cross-origin, same-origin or strict-origin. See the for more
-    * details on the meaning of these values.
+    * Can be `default`, `unsafe-url`, `no-referrer-when-downgrade`, `no-referrer`,
+    * `origin`, `strict-origin-when-cross-origin`, `same-origin` or `strict-origin`.
+    * See the Referrer-Policy spec for more details on the meaning of these values.
     */
   var policy: default | `unsafe-url` | `no-referrer-when-downgrade` | `no-referrer` | origin | `strict-origin-when-cross-origin` | `same-origin` | `strict-origin`
   /**

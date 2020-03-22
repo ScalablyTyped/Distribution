@@ -8,8 +8,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class CancellationTokenSource () extends js.Object {
   def this(parent: CancellationToken) = this()
-  val token: CancellationToken = js.native
   def cancel(): Unit = js.native
   def dispose(): Unit = js.native
+  def dispose(cancel: Boolean): Unit = js.native
+  def token(): CancellationToken = js.native
 }
 

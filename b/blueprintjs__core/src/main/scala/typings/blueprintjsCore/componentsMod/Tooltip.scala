@@ -1,7 +1,6 @@
 package typings.blueprintjsCore.componentsMod
 
-import typings.blueprintjsCore.tooltipMod.ITooltipProps
-import typings.std.Partial
+import typings.blueprintjsCore.PartialITooltipProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +14,7 @@ class Tooltip ()
 @JSImport("@blueprintjs/core/lib/esm/components", "Tooltip")
 @js.native
 object Tooltip extends js.Object {
-  var defaultProps: Partial[ITooltipProps] = js.native
+  var defaultProps: PartialITooltipProps = js.native
   var displayName: String = js.native
 }
 

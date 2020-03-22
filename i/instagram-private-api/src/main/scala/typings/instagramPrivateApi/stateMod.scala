@@ -40,7 +40,7 @@ object stateMod extends js.Object {
     var pigeonSessionIdLifetime: Double = js.native
     var proxyUrl: String = js.native
     var radioType: String = js.native
-    var supportedCapabilities: js.Array[AnonName | AnonNameValue] = js.native
+    var supportedCapabilities: js.Array[AnonName | AnonValue] = js.native
     var thumbnailCacheBustingValue: Double = js.native
     var timezoneOffset: String = js.native
     var uuid: String = js.native

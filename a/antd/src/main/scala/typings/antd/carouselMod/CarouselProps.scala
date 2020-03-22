@@ -1,13 +1,13 @@
 package typings.antd.carouselMod
 
+import typings.antDesignReactSlick.mod.LazyLoadTypes
+import typings.antDesignReactSlick.mod.ResponsiveObject
+import typings.antDesignReactSlick.mod.Settings
+import typings.antDesignReactSlick.mod.Slider
+import typings.antDesignReactSlick.mod.SwipeDirection
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
 import typings.react.mod._Global_.JSX.Element
-import typings.reactSlick.mod.LazyLoadTypes
-import typings.reactSlick.mod.ResponsiveObject
-import typings.reactSlick.mod.Settings
-import typings.reactSlick.mod.Slider
-import typings.reactSlick.mod.SwipeDirection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

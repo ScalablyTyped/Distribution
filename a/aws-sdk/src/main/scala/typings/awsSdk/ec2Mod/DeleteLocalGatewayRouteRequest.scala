@@ -17,14 +17,14 @@ trait DeleteLocalGatewayRouteRequest extends js.Object {
   /**
     * The ID of the local gateway route table.
     */
-  var LocalGatewayRouteTableId: String = js.native
+  var LocalGatewayRouteTableId: LocalGatewayRoutetableId = js.native
 }
 
 object DeleteLocalGatewayRouteRequest {
   @scala.inline
   def apply(
     DestinationCidrBlock: String,
-    LocalGatewayRouteTableId: String,
+    LocalGatewayRouteTableId: LocalGatewayRoutetableId,
     DryRun: js.UndefOr[scala.Boolean] = js.undefined
   ): DeleteLocalGatewayRouteRequest = {
     val __obj = js.Dynamic.literal(DestinationCidrBlock = DestinationCidrBlock.asInstanceOf[js.Any], LocalGatewayRouteTableId = LocalGatewayRouteTableId.asInstanceOf[js.Any])

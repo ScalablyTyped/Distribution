@@ -1,5 +1,6 @@
 package typings.ionicCore
 
+import typings.ionicCore.componentsMod._Global_.HTMLIonRefresherContentElement
 import typings.ionicCore.spinnerConfigsMod.SpinnerTypes
 import typings.ionicCore.stencilCoreMod.ComponentInterface
 import scala.scalajs.js
@@ -11,10 +12,13 @@ import scala.scalajs.js.annotation._
 object refresherContentMod extends js.Object {
   @js.native
   class RefresherContent () extends ComponentInterface {
+    var el: HTMLIonRefresherContentElement = js.native
     /**
-      * A static icon to display when you begin to pull down
+      * A static icon or a spinner to display when you begin to pull down.
+      * A spinner name can be provided to gradually show tick marks
+      * when pulling down on iOS devices.
       */
-    var pullingIcon: js.UndefOr[String | Null] = js.native
+    var pullingIcon: js.UndefOr[SpinnerTypes | String | Null] = js.native
     /**
       * The text you want to display when you begin to pull down.
       * `pullingText` can accept either plaintext or HTML as a string.

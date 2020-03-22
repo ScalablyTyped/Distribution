@@ -43,8 +43,8 @@ package object optionsMod {
   type InjectOptions = (org.scalablytyped.runtime.StringDictionary[typings.vue.optionsMod.InjectKey | typings.vue.AnonDefault]) | js.Array[java.lang.String]
   /* Rewritten from type alias, can be one of: 
     - js.Function0[T]
-    - typings.vue.AnonArgs[T]
-    - typings.vue.AnonArgsFunction
+    - typings.vue.AnonInstantiable[T]
+    - typings.vue.AnonInstantiableFunction
   */
   type Prop[T] = typings.vue.optionsMod._Prop[T] | js.Function0[T]
   type PropType[T] = typings.vue.optionsMod.Prop[T] | js.Array[typings.vue.optionsMod.Prop[T]]

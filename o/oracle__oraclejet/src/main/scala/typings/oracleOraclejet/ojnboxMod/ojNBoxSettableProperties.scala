@@ -1,8 +1,8 @@
 package typings.oracleOraclejet.ojnboxMod
 
-import typings.oracleOraclejet.AnonAnimationDurationCellDefaults
-import typings.oracleOraclejet.AnonComponentNameHighlightedCount
-import typings.oracleOraclejet.AnonContextRendererAnonInsertAnonPreventDefaultK
+import typings.oracleOraclejet.Anon13
+import typings.oracleOraclejet.AnonCellDefaults
+import typings.oracleOraclejet.AnonHighlightedCount
 import typings.oracleOraclejet.ojdataproviderMod.DataProvider
 import typings.oracleOraclejet.ojdvtBaseMod.dvtBaseComponentSettableProperties
 import typings.oracleOraclejet.ojnboxMod.ojNBox.Cell
@@ -57,11 +57,11 @@ trait ojNBoxSettableProperties[K, D] extends dvtBaseComponentSettableProperties 
   var rowsTitle: String
   var selection: js.Array[K]
   var selectionMode: none | single | multiple
-  var styleDefaults: AnonAnimationDurationCellDefaults
-  var tooltip: AnonContextRendererAnonInsertAnonPreventDefaultK[K]
+  var styleDefaults: AnonCellDefaults
+  var tooltip: Anon13[K]
   var touchResponse: touchStart | auto
   @JSName("translations")
-  var translations_ojNBoxSettableProperties: AnonComponentNameHighlightedCount
+  var translations_ojNBoxSettableProperties: AnonHighlightedCount
   def countLabel(context: CountLabelContext): String | Null
 }
 
@@ -89,11 +89,11 @@ object ojNBoxSettableProperties {
     rowsTitle: String,
     selection: js.Array[K],
     selectionMode: none | single | multiple,
-    styleDefaults: AnonAnimationDurationCellDefaults,
-    tooltip: AnonContextRendererAnonInsertAnonPreventDefaultK[K],
+    styleDefaults: AnonCellDefaults,
+    tooltip: Anon13[K],
     touchResponse: touchStart | auto,
     trackResize: on | off,
-    translations: AnonComponentNameHighlightedCount,
+    translations: AnonHighlightedCount,
     cells: js.Array[Cell] | js.Promise[js.Array[Cell]] = null,
     columns: js.Array[Column] | js.Promise[js.Array[Column]] = null,
     data: DataProvider[K, D] = null,

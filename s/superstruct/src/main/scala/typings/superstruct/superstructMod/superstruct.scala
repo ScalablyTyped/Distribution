@@ -1,6 +1,6 @@
 package typings.superstruct.superstructMod
 
-import typings.std.Partial
+import typings.superstruct.PartialSuperstructSetting
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object superstruct extends js.Object {
   def apply(): Superstruct_ = js.native
-  def apply(settings: Partial[SuperstructSettings]): Superstruct_ = js.native
+  def apply(settings: PartialSuperstructSetting): Superstruct_ = js.native
 }
 

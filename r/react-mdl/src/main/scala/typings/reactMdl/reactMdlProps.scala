@@ -1,6 +1,5 @@
 package typings.reactMdl
 
-import typings.react.mod.HTMLProps
 import typings.reactMdl.mod.CardActionProps
 import typings.reactMdl.mod.MDLOtherProps
 import typings.reactMdl.mod.StandardButtonProps
@@ -21,14 +20,8 @@ trait reactMdlProps {
   @scala.inline
   def CardActionsProps: CardActionProps.type = typings.reactMdl.mod.CardActionProps
   type CardActionsProps = CardActionProps
-  @scala.inline
-  def CardMediaProps: HTMLProps.type = typings.react.mod.HTMLProps
   type CardMediaProps = MDLOtherProps
-  @scala.inline
-  def CardMenuProps: HTMLProps.type = typings.react.mod.HTMLProps
   type CardMenuProps = MDLOtherProps
-  @scala.inline
-  def CardTextProps: HTMLProps.type = typings.react.mod.HTMLProps
   type CardTextProps = MDLOtherProps
   @scala.inline
   def CardTitleProps: typings.reactMdl.mod.CardTitleProps.type = typings.reactMdl.mod.CardTitleProps
@@ -42,8 +35,6 @@ trait reactMdlProps {
   @scala.inline
   def ChipProps: typings.reactMdl.mod.ChipProps.type = typings.reactMdl.mod.ChipProps
   type ChipProps = typings.reactMdl.mod.ChipProps
-  @scala.inline
-  def ChipContactProps: HTMLProps.type = typings.react.mod.HTMLProps
   type ChipContactProps = MDLOtherProps
   @scala.inline
   def ContentProps: typings.reactMdl.mod.ContentProps.type = typings.reactMdl.mod.ContentProps
@@ -57,8 +48,6 @@ trait reactMdlProps {
   @scala.inline
   def DialogActionsProps: typings.reactMdl.mod.DialogActionsProps.type = typings.reactMdl.mod.DialogActionsProps
   type DialogActionsProps = typings.reactMdl.mod.DialogActionsProps
-  @scala.inline
-  def DialogContentProps: HTMLProps.type = typings.react.mod.HTMLProps
   type DialogContentProps = MDLOtherProps
   @scala.inline
   def DialogTitleProps: typings.reactMdl.mod.DialogTitleProps.type = typings.reactMdl.mod.DialogTitleProps
@@ -105,8 +94,6 @@ trait reactMdlProps {
   @scala.inline
   def LayoutProps: typings.reactMdl.mod.LayoutProps.type = typings.reactMdl.mod.LayoutProps
   type LayoutProps = typings.reactMdl.mod.LayoutProps
-  @scala.inline
-  def ListProps: HTMLProps.type = typings.react.mod.HTMLProps
   type ListProps = MDLOtherProps
   @scala.inline
   def ListItemProps: typings.reactMdl.mod.ListItemProps.type = typings.reactMdl.mod.ListItemProps
@@ -117,8 +104,6 @@ trait reactMdlProps {
   @scala.inline
   def ListItemContentProps: typings.reactMdl.mod.ListItemContentProps.type = typings.reactMdl.mod.ListItemContentProps
   type ListItemContentProps = typings.reactMdl.mod.ListItemContentProps
-  @scala.inline
-  def MDLBasicComponentProps: HTMLProps.type = typings.react.mod.HTMLProps
   type MDLBasicComponentProps = MDLOtherProps
   @scala.inline
   def MDLComponentProps: AnonRecursive.type = typings.reactMdl.AnonRecursive
@@ -126,8 +111,6 @@ trait reactMdlProps {
   @scala.inline
   def MenuProps: typings.reactMdl.mod.MenuProps.type = typings.reactMdl.mod.MenuProps
   type MenuProps = typings.reactMdl.mod.MenuProps
-  @scala.inline
-  def MenuItemProps: HTMLProps.type = typings.react.mod.HTMLProps
   type MenuItemProps = MDLOtherProps
   @scala.inline
   def NavigationProps: typings.reactMdl.mod.NavigationProps.type = typings.reactMdl.mod.NavigationProps
@@ -147,8 +130,6 @@ trait reactMdlProps {
   @scala.inline
   def SnackbarProps: typings.reactMdl.mod.SnackbarProps.type = typings.reactMdl.mod.SnackbarProps
   type SnackbarProps = typings.reactMdl.mod.SnackbarProps
-  @scala.inline
-  def SpacerProps: HTMLProps.type = typings.react.mod.HTMLProps
   type SpacerProps = MDLOtherProps
   @scala.inline
   def SpinnerProps: typings.reactMdl.mod.SpinnerProps.type = typings.reactMdl.mod.SpinnerProps

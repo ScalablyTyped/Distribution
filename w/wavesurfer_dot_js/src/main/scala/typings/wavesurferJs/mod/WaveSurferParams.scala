@@ -3,7 +3,7 @@ package typings.wavesurferJs.mod
 import typings.std.AudioContext
 import typings.std.HTMLElement
 import typings.std.ScriptProcessorNode
-import typings.wavesurferJs.AnonContainer
+import typings.wavesurferJs.AnonInstantiable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -38,7 +38,7 @@ trait WaveSurferParams extends js.Object {
   var plugins: js.UndefOr[js.Array[PluginDefinition]] = js.undefined
   var progressColor: js.UndefOr[String] = js.undefined
   var removeMediaElementOnDestroy: js.UndefOr[Boolean] = js.undefined
-  var renderer: js.UndefOr[AnonContainer] = js.undefined
+  var renderer: js.UndefOr[AnonInstantiable] = js.undefined
   var responsive: js.UndefOr[Boolean | Double] = js.undefined
   var scrollParent: js.UndefOr[Boolean] = js.undefined
   var skipLength: js.UndefOr[Double] = js.undefined
@@ -79,7 +79,7 @@ object WaveSurferParams {
     plugins: js.Array[PluginDefinition] = null,
     progressColor: String = null,
     removeMediaElementOnDestroy: js.UndefOr[Boolean] = js.undefined,
-    renderer: AnonContainer = null,
+    renderer: AnonInstantiable = null,
     responsive: Boolean | Double = null,
     scrollParent: js.UndefOr[Boolean] = js.undefined,
     skipLength: Int | Double = null,

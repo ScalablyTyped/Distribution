@@ -11,11 +11,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class ObjectValue protected () extends FieldValue {
   def this(internalValue: SortedMap[String, FieldValue]) = this()
-  var child: js.Any = js.native
   val internalValue: SortedMap[String, FieldValue] = js.native
-  var setChild: js.Any = js.native
   def contains(path: FieldPath): Boolean = js.native
-  def delete(path: FieldPath): ObjectValue = js.native
   def field(path: FieldPath): FieldValue | Null = js.native
   /**
     * Returns a FieldMask built from all FieldPaths starting from this ObjectValue,
@@ -23,7 +20,8 @@ class ObjectValue protected () extends FieldValue {
     */
   def fieldMask(): FieldMask = js.native
   def forEach(action: js.Function2[/* key */ String, /* value */ FieldValue, Unit]): Unit = js.native
-  def set(path: FieldPath, to: FieldValue): ObjectValue = js.native
+  /** Creates a ObjectValueBuilder instance that is based on the current value. */
+  def toBuilder(): ObjectValueBuilder = js.native
 }
 
 /* static members */
@@ -31,5 +29,7 @@ class ObjectValue protected () extends FieldValue {
 @js.native
 object ObjectValue extends js.Object {
   var EMPTY: ObjectValue = js.native
+  /** Returns a new ObjectValueBuilder instance that is based on an empty object. */
+  def newBuilder(): ObjectValueBuilder = js.native
 }
 

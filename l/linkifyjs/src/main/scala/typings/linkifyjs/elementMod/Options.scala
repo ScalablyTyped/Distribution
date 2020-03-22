@@ -1,12 +1,15 @@
 package typings.linkifyjs.elementMod
 
+import typings.linkifyjs.PartialGlobalEventHandler
+import typings.linkifyjs.PartialRecordLinkEntityTy
+import typings.linkifyjs.PartialRecordLinkEntityTyEmail
+import typings.linkifyjs.PartialRecordLinkEntityTyHashtag
+import typings.linkifyjs.PartialRecordLinkEntityTyMention
 import typings.linkifyjs.linkifyjsStrings.ftp
 import typings.linkifyjs.linkifyjsStrings.ftps
 import typings.linkifyjs.linkifyjsStrings.http
 import typings.linkifyjs.linkifyjsStrings.https
 import typings.linkifyjs.mod.LinkEntityType
-import typings.std.GlobalEventHandlers
-import typings.std.Partial
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -23,7 +26,7 @@ trait Options
     * @default null
     */
   var events: js.UndefOr[
-    Partial[GlobalEventHandlers] | (js.Function2[/* href */ String, /* type */ LinkEntityType, Partial[GlobalEventHandlers]])
+    PartialGlobalEventHandler | (js.Function2[/* href */ String, /* type */ LinkEntityType, PartialGlobalEventHandler])
   ] = js.undefined
   /**
     *  Prevent linkify from trying to parse links in the specified tags.
@@ -39,16 +42,16 @@ object Options {
   @scala.inline
   def apply(
     attributes: (Record[String, String]) | (js.Function2[/* href */ String, /* type */ LinkEntityType, Record[String, String]]) = null,
-    className: String | (Partial[Record[LinkEntityType, String | (js.Function1[/* href */ String, String])]]) | (js.Function2[/* href */ String, /* type */ LinkEntityType, String]) = null,
+    className: String | PartialRecordLinkEntityTy | (js.Function2[/* href */ String, /* type */ LinkEntityType, String]) = null,
     defaultProtocol: http | https | ftp | ftps | String = null,
-    events: Partial[GlobalEventHandlers] | (js.Function2[/* href */ String, /* type */ LinkEntityType, Partial[GlobalEventHandlers]]) = null,
-    format: (js.Function2[/* value */ String, /* type */ LinkEntityType, String]) | (Partial[Record[LinkEntityType, js.Function1[/* value */ String, String]]]) = null,
-    formatHref: (js.Function2[/* href */ String, /* type */ LinkEntityType, String]) | (Partial[Record[LinkEntityType, js.Function1[/* href */ String, String]]]) = null,
+    events: PartialGlobalEventHandler | (js.Function2[/* href */ String, /* type */ LinkEntityType, PartialGlobalEventHandler]) = null,
+    format: (js.Function2[/* value */ String, /* type */ LinkEntityType, String]) | PartialRecordLinkEntityTyEmail = null,
+    formatHref: (js.Function2[/* href */ String, /* type */ LinkEntityType, String]) | PartialRecordLinkEntityTyEmail = null,
     ignoreTags: js.Array[String] = null,
     nl2br: js.UndefOr[Boolean] = js.undefined,
-    tagName: String | (js.Function2[/* href */ String, /* type */ LinkEntityType, String]) | (Partial[Record[LinkEntityType, String]]) = null,
-    target: String | (js.Function2[/* href */ String, /* type */ LinkEntityType, String]) | (Partial[Record[LinkEntityType, String | Null]]) = null,
-    validate: Boolean | (js.Function2[/* href */ String, /* type */ LinkEntityType, Boolean]) | (Partial[Record[LinkEntityType, js.Function1[/* href */ String, Boolean]]]) = null
+    tagName: String | (js.Function2[/* href */ String, /* type */ LinkEntityType, String]) | PartialRecordLinkEntityTyHashtag = null,
+    target: String | (js.Function2[/* href */ String, /* type */ LinkEntityType, String]) | PartialRecordLinkEntityTyHashtag = null,
+    validate: Boolean | (js.Function2[/* href */ String, /* type */ LinkEntityType, Boolean]) | PartialRecordLinkEntityTyMention = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])

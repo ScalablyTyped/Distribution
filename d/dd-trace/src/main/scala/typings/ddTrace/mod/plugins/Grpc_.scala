@@ -23,7 +23,7 @@ trait Grpc_
 object Grpc_ {
   @scala.inline
   def apply(
-    analytics: Boolean | Double = null,
+    analytics: Boolean | Double | (StringDictionary[Boolean | Double]) = null,
     enabled: js.UndefOr[Boolean] = js.undefined,
     metadata: js.Array[String] | (js.Function1[/* variables */ StringDictionary[js.Any], StringDictionary[_]]) = null,
     service: String = null

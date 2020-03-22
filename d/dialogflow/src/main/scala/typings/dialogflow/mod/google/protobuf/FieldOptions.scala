@@ -23,13 +23,13 @@ class FieldOptions () extends IFieldOptions {
   def this(properties: IFieldOptions) = this()
   /** FieldOptions ctype. */
   @JSName("ctype")
-  var ctype_FieldOptions: CType = js.native
+  var ctype_FieldOptions: CType | String = js.native
   /** FieldOptions deprecated. */
   @JSName("deprecated")
   var deprecated_FieldOptions: Boolean = js.native
   /** FieldOptions jstype. */
   @JSName("jstype")
-  var jstype_FieldOptions: JSType = js.native
+  var jstype_FieldOptions: JSType | String = js.native
   /** FieldOptions lazy. */
   @JSName("lazy")
   var lazy_FieldOptions: Boolean = js.native

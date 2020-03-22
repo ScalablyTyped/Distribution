@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 trait MongoMemoryInstancePropT extends MongoMemoryInstancePropBaseT {
   var auth: js.UndefOr[Boolean] = js.undefined
   var dbName: js.UndefOr[String] = js.undefined
-  var debug: js.UndefOr[DebugPropT] = js.undefined
   var ip: js.UndefOr[String] = js.undefined
   var replSet: js.UndefOr[String] = js.undefined
 }
@@ -19,7 +18,6 @@ object MongoMemoryInstancePropT {
     auth: js.UndefOr[Boolean] = js.undefined,
     dbName: String = null,
     dbPath: String = null,
-    debug: DebugPropT = null,
     ip: String = null,
     port: Int | Double = null,
     replSet: String = null,
@@ -30,7 +28,6 @@ object MongoMemoryInstancePropT {
     if (!js.isUndefined(auth)) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
     if (dbName != null) __obj.updateDynamic("dbName")(dbName.asInstanceOf[js.Any])
     if (dbPath != null) __obj.updateDynamic("dbPath")(dbPath.asInstanceOf[js.Any])
-    if (debug != null) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
     if (ip != null) __obj.updateDynamic("ip")(ip.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     if (replSet != null) __obj.updateDynamic("replSet")(replSet.asInstanceOf[js.Any])

@@ -18,6 +18,6 @@ object mod extends js.Object {
   def getConstructorName(errorLike: ErrorInstanceOrConstructor): String = js.native
   def getMessage(err: String): String = js.native
   def getMessage(err: Error): String = js.native
-  type ErrorInstanceOrConstructor = Error | AnonArgs | (js.Function1[/* repeated */ js.Any, Error])
+  type ErrorInstanceOrConstructor = Error | AnonInstantiable | (js.Function1[/* repeated */ js.Any, Error])
 }
 

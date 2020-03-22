@@ -73,13 +73,11 @@ trait Options extends js.Object {
     *
     * ### Legacy
     *
-    * In Highcharts 3.x, the default colors were:
+    * In Highcharts 3.x, the default colors were: (see online documentation for
+    * example)
     *
-    *  (see online documentation for example)
-    *
-    * In Highcharts 2.x, the default colors were:
-    *
-    *  (see online documentation for example)
+    * In Highcharts 2.x, the default colors were: (see online documentation for
+    * example)
     */
   var colors: js.UndefOr[js.Array[ColorString]] = js.undefined
   /**
@@ -136,9 +134,7 @@ trait Options extends js.Object {
     * (Highcharts, Highstock, Highmaps, Gantt) Language object. The language
     * object is global and it can't be set on each chart initialization.
     * Instead, use `Highcharts.setOptions` to set it before any chart is
-    * initialized.
-    *
-    *  (see online documentation for example)
+    * initialized. (see online documentation for example)
     */
   var lang: js.UndefOr[LangOptions] = js.undefined
   /**
@@ -236,7 +232,7 @@ trait Options extends js.Object {
     * the [stockTools module]() to be loaded. For a description of the module
     * and information on its features, see [Highcharts StockTools]().
     */
-  var stockTools: js.UndefOr[js.Object | StockToolsOptions] = js.undefined
+  var stockTools: js.UndefOr[StockToolsOptions] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The chart's subtitle. This can
     * be used both to display a subtitle below the main title, and to display
@@ -324,7 +320,7 @@ object Options {
     responsive: ResponsiveOptions = null,
     scrollbar: ScrollbarOptions = null,
     series: js.Array[SeriesOptionsType] = null,
-    stockTools: js.Object | StockToolsOptions = null,
+    stockTools: StockToolsOptions = null,
     subtitle: SubtitleOptions = null,
     time: TimeOptions = null,
     title: TitleOptions = null,

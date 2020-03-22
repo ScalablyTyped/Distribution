@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object mod extends js.Object {
   def clearDriftless(id: Double): Unit = js.native
-  def clearDriftless(id: Double, options: AnonArgs): Unit = js.native
+  def clearDriftless(id: Double, options: AnonCustomClearTimeout): Unit = js.native
   def setDriftlessInterval(callback: String, delayMs: Double, params: js.Any*): Double = js.native
   def setDriftlessInterval(callback: js.Function1[/* repeated */ js.Any, Unit], delayMs: Double, params: js.Any*): Double = js.native
   def setDriftlessTimeout(callback: String, delayMs: Double, params: js.Any*): Double = js.native

@@ -3,9 +3,9 @@ package typings.jupyterlabDocumentsearch.tokensMod
 import org.scalablytyped.runtime.TopLevel
 import typings.jupyterlabDocumentsearch.interfacesMod.ISearchProvider
 import typings.jupyterlabDocumentsearch.interfacesMod.ISearchProviderConstructor
-import typings.phosphorCoreutils.mod.Token
-import typings.phosphorDisposable.mod.IDisposable
-import typings.phosphorSignaling.mod.ISignal
+import typings.luminoCoreutils.mod.Token
+import typings.luminoDisposable.mod.IDisposable
+import typings.luminoSignaling.mod.ISignal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

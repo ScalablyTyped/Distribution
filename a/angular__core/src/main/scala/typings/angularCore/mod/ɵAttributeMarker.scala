@@ -1,5 +1,6 @@
 package typings.angularCore.mod
 
+import typings.angularCore.angularCoreNumbers.`-1`
 import typings.angularCore.angularCoreNumbers.`0`
 import typings.angularCore.angularCoreNumbers.`1`
 import typings.angularCore.angularCoreNumbers.`2`
@@ -12,6 +13,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
+  - typings.angularCore.angularCoreNumbers.`-1`
   - typings.angularCore.angularCoreNumbers.`0`
   - typings.angularCore.angularCoreNumbers.`1`
   - typings.angularCore.angularCoreNumbers.`2`
@@ -74,6 +76,15 @@ object ɵAttributeMarker {
     */
   @scala.inline
   def I18n: `6` = this.cast(6)
+  /**
+    * An implicit marker which indicates that the value in the array are of `attributeKey`,
+    * `attributeValue` format.
+    *
+    * NOTE: This is implicit as it is the type when no marker is present in array. We indicate that
+    * it should not be present at runtime by the negative number.
+    */
+  @scala.inline
+  def ImplicitAttributes: `-1` = this.cast(-1)
   /**
     * Marker indicates that the following 3 values in the attributes array are:
     * namespaceUri, attributeName, attributeValue

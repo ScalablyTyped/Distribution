@@ -2,13 +2,13 @@ package typings.zapierPlatformCore.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.node.Buffer
-import typings.std.ReadableStream
+import typings.node.NodeJS.ReadableStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RawHttpResponse extends BaseHttpResponse {
-  var body: ReadableStream[_]
+  var body: ReadableStream
   var content: Buffer
   var json: js.Promise[js.UndefOr[js.Object]]
 }
@@ -16,7 +16,7 @@ trait RawHttpResponse extends BaseHttpResponse {
 object RawHttpResponse {
   @scala.inline
   def apply(
-    body: ReadableStream[_],
+    body: ReadableStream,
     content: Buffer,
     getHeader: String => js.UndefOr[String],
     headers: StringDictionary[String],

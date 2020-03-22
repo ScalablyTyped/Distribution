@@ -2,7 +2,7 @@ package typings.stripe.mod
 
 import typings.node.httpMod.Agent
 import typings.stripe.AnonBindingsversion
-import typings.stripe.AnonNamePartnerid
+import typings.stripe.AnonPartnerid
 import typings.stripe.mod.resources.Accounts
 import typings.stripe.mod.resources.ApplicationFees
 import typings.stripe.mod.resources.Balance
@@ -134,7 +134,7 @@ trait Stripe extends js.Object {
   def setApiVersion(): Unit = js.native
   def setApiVersion(version: String): Unit = js.native
   def setAppInfo(): Unit = js.native
-  def setAppInfo(info: AnonNamePartnerid): Unit = js.native
+  def setAppInfo(info: AnonPartnerid): Unit = js.native
   def setHost(host: String): Unit = js.native
   def setHost(host: String, port: String): Unit = js.native
   def setHost(host: String, port: String, protocol: String): Unit = js.native

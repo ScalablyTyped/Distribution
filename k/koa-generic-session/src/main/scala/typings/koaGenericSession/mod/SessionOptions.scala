@@ -1,7 +1,7 @@
 package typings.koaGenericSession.mod
 
+import typings.koa.mod.Context
 import typings.koaGenericSession.AnonHttpOnly
-import typings.koaGenericSession.mod.koaAugmentingMod.Context
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

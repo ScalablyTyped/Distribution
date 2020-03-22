@@ -4,6 +4,7 @@ import typings.antd.contextMod.ConfigConsumerProps
 import typings.antd.uploadInterfaceMod.UploadFile
 import typings.antd.uploadInterfaceMod.UploadListProps
 import typings.react.mod.Component
+import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
 import typings.react.mod._Global_.JSX.Element
 import typings.std.Event_
@@ -20,10 +21,13 @@ object uploadListMod extends js.Object {
     extends Component[UploadListProps, js.Any, js.Any] {
     @JSName("componentDidUpdate")
     def componentDidUpdate_MUploadList(): Unit = js.native
+    def handleActionIconRender(customIcon: ReactNode, callback: js.Function0[Unit]): Element = js.native
+    def handleActionIconRender(customIcon: ReactNode, callback: js.Function0[Unit], title: String): Element = js.native
     def handleClose(file: UploadFile[_]): Unit = js.native
     def handleDownload(file: UploadFile[_]): Unit = js.native
+    def handleIconRender(file: UploadFile[_]): js.UndefOr[js.Object | Null] = js.native
     def handlePreview(file: UploadFile[_], e: SyntheticEvent[HTMLElement, Event_]): Unit = js.native
-    def renderUploadList(hasGetPrefixCls: ConfigConsumerProps): Element = js.native
+    def renderUploadList(hasGetPrefixClsDirection: ConfigConsumerProps): Element = js.native
   }
   
   @js.native
@@ -32,7 +36,7 @@ object uploadListMod extends js.Object {
   /* static members */
   @js.native
   object default extends js.Object {
-    var defaultProps: AnonFile = js.native
+    var defaultProps: AnonListType = js.native
   }
   
 }

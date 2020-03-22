@@ -11,23 +11,23 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonAxisLine extends js.Object {
-  var axisLine: AnonLineColor
+  var axisLine: AnonLineWidth
   var baselineScaling: min | zero
   var dataMax: Double
   var dataMin: Double
-  var majorTick: AnonAutoBaselineColor
+  var majorTick: AnonBaselineColor
   var max: Double | String
   var maxSize: String
   var min: Double | String
   var minStep: Double
   var minorStep: Double
-  var minorTick: AnonAutoDashed
-  var referenceObjects: js.Array[AnonArea]
+  var minorTick: AnonLineStyle
+  var referenceObjects: js.Array[AnonCategories]
   var rendered: off | on
   var scale: log | linear
   var size: String
   var step: Double
-  var tickLabel: AnonAutoBillionConverterMillion
+  var tickLabel: AnonRotation
   var title: String
   var titleStyle: js.Object
   var viewportEndGroup: Double | String
@@ -39,23 +39,23 @@ trait AnonAxisLine extends js.Object {
 object AnonAxisLine {
   @scala.inline
   def apply(
-    axisLine: AnonLineColor,
+    axisLine: AnonLineWidth,
     baselineScaling: min | zero,
     dataMax: Double,
     dataMin: Double,
-    majorTick: AnonAutoBaselineColor,
+    majorTick: AnonBaselineColor,
     max: Double | String,
     maxSize: String,
     min: Double | String,
     minStep: Double,
     minorStep: Double,
-    minorTick: AnonAutoDashed,
-    referenceObjects: js.Array[AnonArea],
+    minorTick: AnonLineStyle,
+    referenceObjects: js.Array[AnonCategories],
     rendered: off | on,
     scale: log | linear,
     size: String,
     step: Double,
-    tickLabel: AnonAutoBillionConverterMillion,
+    tickLabel: AnonRotation,
     title: String,
     titleStyle: js.Object,
     viewportEndGroup: Double | String,

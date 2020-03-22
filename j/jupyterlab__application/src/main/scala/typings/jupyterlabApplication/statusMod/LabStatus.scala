@@ -2,8 +2,8 @@ package typings.jupyterlabApplication.statusMod
 
 import typings.jupyterlabApplication.frontendMod.JupyterFrontEnd
 import typings.jupyterlabApplication.frontendMod.JupyterFrontEnd.IShell
-import typings.phosphorDisposable.mod.IDisposable
-import typings.phosphorSignaling.mod.ISignal
+import typings.luminoDisposable.mod.IDisposable
+import typings.luminoSignaling.mod.ISignal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,6 +39,26 @@ class LabStatus protected () extends ILabStatus {
     */
   /* CompleteClass */
   override val isDirty: Boolean = js.native
+  /**
+    * Returns a signal for when application changes its busy status.
+    */
+  @JSName("busySignal")
+  def busySignal_MLabStatus(): ISignal[JupyterFrontEnd[IShell], Boolean] = js.native
+  /**
+    * Returns a signal for when application changes its dirty status.
+    */
+  @JSName("dirtySignal")
+  def dirtySignal_MLabStatus(): ISignal[JupyterFrontEnd[IShell], Boolean] = js.native
+  /**
+    * Whether the application is busy.
+    */
+  @JSName("isBusy")
+  def isBusy_MLabStatus(): Boolean = js.native
+  /**
+    * Whether the application is dirty.
+    */
+  @JSName("isDirty")
+  def isDirty_MLabStatus(): Boolean = js.native
   /**
     * Set the application state to busy.
     *

@@ -1,26 +1,39 @@
 package typings.objection
 
-import typings.objection.mod.JsonSchemaFormatType
+import typings.objection.mod.OrderByDirection
 import typings.objection.mod.ValidationErrorType
+import typings.objection.mod._JSONSchemaTypeName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object objectionStrings {
   @js.native
-  sealed trait DeepPartialGraphModel extends js.Object
+  sealed trait ASC extends OrderByDirection
   
   @js.native
-  sealed trait GraphModel extends js.Object
+  sealed trait DESC extends OrderByDirection
   
   @js.native
   sealed trait InvalidGraph extends ValidationErrorType
   
   @js.native
+  sealed trait ModelObject extends js.Object
+  
+  @js.native
   sealed trait ModelValidation extends ValidationErrorType
   
   @js.native
-  sealed trait PartialUpdate extends js.Object
+  sealed trait NotFound extends js.Object
+  
+  @js.native
+  sealed trait PartialModelGraph extends js.Object
+  
+  @js.native
+  sealed trait PartialModelObject extends js.Object
+  
+  @js.native
+  sealed trait QueryBuilderType extends js.Object
   
   @js.native
   sealed trait RelationExpression extends ValidationErrorType
@@ -29,103 +42,71 @@ object objectionStrings {
   sealed trait UnallowedRelation extends ValidationErrorType
   
   @js.native
-  sealed trait date extends JsonSchemaFormatType
+  sealed trait array extends _JSONSchemaTypeName
   
   @js.native
-  sealed trait `date-time` extends JsonSchemaFormatType
+  sealed trait asc_ extends OrderByDirection
   
   @js.native
-  sealed trait email extends JsonSchemaFormatType
+  sealed trait boolean extends _JSONSchemaTypeName
   
   @js.native
-  sealed trait hostname extends JsonSchemaFormatType
+  sealed trait desc_ extends OrderByDirection
   
   @js.native
-  sealed trait `idn-email` extends JsonSchemaFormatType
+  sealed trait integer extends _JSONSchemaTypeName
   
   @js.native
-  sealed trait `idn-hostname` extends JsonSchemaFormatType
+  sealed trait `null` extends _JSONSchemaTypeName
   
   @js.native
-  sealed trait ipv4 extends JsonSchemaFormatType
+  sealed trait number extends _JSONSchemaTypeName
   
   @js.native
-  sealed trait ipv6 extends JsonSchemaFormatType
+  sealed trait `object` extends _JSONSchemaTypeName
   
   @js.native
-  sealed trait iri extends JsonSchemaFormatType
-  
-  @js.native
-  sealed trait `iri-reference` extends JsonSchemaFormatType
-  
-  @js.native
-  sealed trait `json-pointer` extends JsonSchemaFormatType
-  
-  @js.native
-  sealed trait regex extends JsonSchemaFormatType
-  
-  @js.native
-  sealed trait `relative-json-pointer` extends JsonSchemaFormatType
-  
-  @js.native
-  sealed trait time extends JsonSchemaFormatType
-  
-  @js.native
-  sealed trait uri extends JsonSchemaFormatType
-  
-  @js.native
-  sealed trait `uri-reference` extends JsonSchemaFormatType
-  
-  @js.native
-  sealed trait `uri-template` extends JsonSchemaFormatType
+  sealed trait string extends _JSONSchemaTypeName
   
   @scala.inline
-  def DeepPartialGraphModel: DeepPartialGraphModel = "DeepPartialGraphModel".asInstanceOf[DeepPartialGraphModel]
+  def ASC: ASC = "ASC".asInstanceOf[ASC]
   @scala.inline
-  def GraphModel: GraphModel = "GraphModel".asInstanceOf[GraphModel]
+  def DESC: DESC = "DESC".asInstanceOf[DESC]
   @scala.inline
   def InvalidGraph: InvalidGraph = "InvalidGraph".asInstanceOf[InvalidGraph]
   @scala.inline
+  def ModelObject: ModelObject = "ModelObject".asInstanceOf[ModelObject]
+  @scala.inline
   def ModelValidation: ModelValidation = "ModelValidation".asInstanceOf[ModelValidation]
   @scala.inline
-  def PartialUpdate: PartialUpdate = "PartialUpdate".asInstanceOf[PartialUpdate]
+  def NotFound: NotFound = "NotFound".asInstanceOf[NotFound]
+  @scala.inline
+  def PartialModelGraph: PartialModelGraph = "PartialModelGraph".asInstanceOf[PartialModelGraph]
+  @scala.inline
+  def PartialModelObject: PartialModelObject = "PartialModelObject".asInstanceOf[PartialModelObject]
+  @scala.inline
+  def QueryBuilderType: QueryBuilderType = "QueryBuilderType".asInstanceOf[QueryBuilderType]
   @scala.inline
   def RelationExpression: RelationExpression = "RelationExpression".asInstanceOf[RelationExpression]
   @scala.inline
   def UnallowedRelation: UnallowedRelation = "UnallowedRelation".asInstanceOf[UnallowedRelation]
   @scala.inline
-  def date: date = "date".asInstanceOf[date]
+  def array: array = "array".asInstanceOf[array]
   @scala.inline
-  def `date-time`: `date-time` = "date-time".asInstanceOf[`date-time`]
+  def asc_ : asc_ = "asc".asInstanceOf[asc_]
   @scala.inline
-  def email: email = "email".asInstanceOf[email]
+  def boolean: boolean = "boolean".asInstanceOf[boolean]
   @scala.inline
-  def hostname: hostname = "hostname".asInstanceOf[hostname]
+  def desc_ : desc_ = "desc".asInstanceOf[desc_]
   @scala.inline
-  def `idn-email`: `idn-email` = "idn-email".asInstanceOf[`idn-email`]
+  def integer: integer = "integer".asInstanceOf[integer]
   @scala.inline
-  def `idn-hostname`: `idn-hostname` = "idn-hostname".asInstanceOf[`idn-hostname`]
+  def `null`: `null` = "null".asInstanceOf[`null`]
   @scala.inline
-  def ipv4: ipv4 = "ipv4".asInstanceOf[ipv4]
+  def number: number = "number".asInstanceOf[number]
   @scala.inline
-  def ipv6: ipv6 = "ipv6".asInstanceOf[ipv6]
+  def `object`: `object` = "object".asInstanceOf[`object`]
   @scala.inline
-  def iri: iri = "iri".asInstanceOf[iri]
-  @scala.inline
-  def `iri-reference`: `iri-reference` = "iri-reference".asInstanceOf[`iri-reference`]
-  @scala.inline
-  def `json-pointer`: `json-pointer` = "json-pointer".asInstanceOf[`json-pointer`]
-  @scala.inline
-  def regex: regex = "regex".asInstanceOf[regex]
-  @scala.inline
-  def `relative-json-pointer`: `relative-json-pointer` = "relative-json-pointer".asInstanceOf[`relative-json-pointer`]
-  @scala.inline
-  def time: time = "time".asInstanceOf[time]
-  @scala.inline
-  def uri: uri = "uri".asInstanceOf[uri]
-  @scala.inline
-  def `uri-reference`: `uri-reference` = "uri-reference".asInstanceOf[`uri-reference`]
-  @scala.inline
-  def `uri-template`: `uri-template` = "uri-template".asInstanceOf[`uri-template`]
+  def string: string = "string".asInstanceOf[string]
 }
 

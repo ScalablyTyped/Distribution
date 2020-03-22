@@ -18,7 +18,21 @@ object ɵɵattributeInterpolate4 extends js.Object {
     i2: String,
     v3: js.Any,
     suffix: String
-  ): TsickleIssue1009 = js.native
+  ): js.Function12[
+    /* attrName */ String, 
+    /* prefix */ String, 
+    /* v0 */ js.Any, 
+    /* i0 */ String, 
+    /* v1 */ js.Any, 
+    /* i1 */ String, 
+    /* v2 */ js.Any, 
+    /* i2 */ String, 
+    /* v3 */ js.Any, 
+    /* suffix */ String, 
+    /* sanitizer */ js.UndefOr[SanitizerFn], 
+    /* namespace */ js.UndefOr[String], 
+    /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate4 */ js.Any
+  ] = js.native
   def apply(
     attrName: String,
     prefix: String,
@@ -31,7 +45,21 @@ object ɵɵattributeInterpolate4 extends js.Object {
     v3: js.Any,
     suffix: String,
     sanitizer: SanitizerFn
-  ): TsickleIssue1009 = js.native
+  ): js.Function12[
+    /* attrName */ String, 
+    /* prefix */ String, 
+    /* v0 */ js.Any, 
+    /* i0 */ String, 
+    /* v1 */ js.Any, 
+    /* i1 */ String, 
+    /* v2 */ js.Any, 
+    /* i2 */ String, 
+    /* v3 */ js.Any, 
+    /* suffix */ String, 
+    /* sanitizer */ js.UndefOr[SanitizerFn], 
+    /* namespace */ js.UndefOr[String], 
+    /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate4 */ js.Any
+  ] = js.native
   def apply(
     attrName: String,
     prefix: String,
@@ -45,6 +73,20 @@ object ɵɵattributeInterpolate4 extends js.Object {
     suffix: String,
     sanitizer: SanitizerFn,
     namespace: String
-  ): TsickleIssue1009 = js.native
+  ): js.Function12[
+    /* attrName */ String, 
+    /* prefix */ String, 
+    /* v0 */ js.Any, 
+    /* i0 */ String, 
+    /* v1 */ js.Any, 
+    /* i1 */ String, 
+    /* v2 */ js.Any, 
+    /* i2 */ String, 
+    /* v3 */ js.Any, 
+    /* suffix */ String, 
+    /* sanitizer */ js.UndefOr[SanitizerFn], 
+    /* namespace */ js.UndefOr[String], 
+    /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate4 */ js.Any
+  ] = js.native
 }
 

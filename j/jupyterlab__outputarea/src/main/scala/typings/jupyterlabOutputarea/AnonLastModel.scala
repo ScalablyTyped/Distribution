@@ -1,6 +1,6 @@
 package typings.jupyterlabOutputarea
 
-import typings.jupyterlabCoreutils.nbformatMod.nbformat.IOutput
+import typings.jupyterlabNbformat.mod.IOutput
 import typings.jupyterlabRendermime.outputmodelMod.IOutputModel
 import scala.scalajs.js
 import scala.scalajs.js.`|`

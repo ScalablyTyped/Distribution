@@ -2,7 +2,7 @@ package typings.reactWidgets.multiselectMod
 
 import typings.react.mod.ReactType
 import typings.reactWidgets.AnonAction
-import typings.reactWidgets.AnonActionClear
+import typings.reactWidgets.AnonLastSearchTerm
 import typings.reactWidgets.AnonOriginalEvent
 import typings.reactWidgets.commonPropsMod.AutoFocus
 import typings.reactWidgets.commonPropsMod.ReactWidgetsCommonDropdownProps
@@ -119,7 +119,7 @@ trait MultiselectProps
     * Called when the value of the text box changes either from typing or a pasted value.
     * onSearch should be used when the searchTerm prop is set.
     */
-  var onSearch: js.UndefOr[js.Function2[/* searchTerm */ String, /* metadata */ AnonActionClear, Unit]] = js.undefined
+  var onSearch: js.UndefOr[js.Function2[/* searchTerm */ String, /* metadata */ AnonLastSearchTerm, Unit]] = js.undefined
   /**
     * This handler fires when an item has been selected from the list. It fires before the
     * onChange handler, and fires regardless of whether the value has actually changed
@@ -205,7 +205,7 @@ object MultiselectProps {
     minLength: Int | Double = null,
     onChange: (/* dataItems */ js.Array[_], /* metadata */ AnonAction) => Unit = null,
     onCreate: /* searchTerm */ String => Unit = null,
-    onSearch: (/* searchTerm */ String, /* metadata */ AnonActionClear) => Unit = null,
+    onSearch: (/* searchTerm */ String, /* metadata */ AnonLastSearchTerm) => Unit = null,
     onSelect: (/* value */ js.Any, /* metadata */ AnonOriginalEvent) => Unit = null,
     onToggle: /* isOpen */ Boolean => Unit = null,
     open: js.UndefOr[Boolean] = js.undefined,

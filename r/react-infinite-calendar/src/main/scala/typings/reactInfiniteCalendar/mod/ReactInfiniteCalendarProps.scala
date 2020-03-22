@@ -1,7 +1,7 @@
 package typings.reactInfiniteCalendar.mod
 
-import typings.reactInfiniteCalendar.Anon0
 import typings.reactInfiniteCalendar.AnonAccentColor
+import typings.reactInfiniteCalendar.AnonBlank
 import typings.reactInfiniteCalendar.AnonEnd
 import typings.reactInfiniteCalendar.AnonHideYearsOnSelect
 import typings.reactInfiniteCalendar.reactInfiniteCalendarBooleans.`false`
@@ -31,7 +31,7 @@ trait ReactInfiniteCalendarProps extends js.Object {
   var displayOptions: js.UndefOr[AnonHideYearsOnSelect] = js.undefined
   var height: js.UndefOr[Double | auto] = js.undefined
   var interpolateSelection: js.UndefOr[js.Function2[/* date */ Date, /* selected */ js.Array[Date], js.Array[Date]]] = js.undefined
-  var locale: js.UndefOr[Anon0] = js.undefined
+  var locale: js.UndefOr[AnonBlank] = js.undefined
   var max: js.UndefOr[DateType] = js.undefined
   var maxDate: js.UndefOr[DateType] = js.undefined
   var min: js.UndefOr[DateType] = js.undefined
@@ -58,7 +58,7 @@ object ReactInfiniteCalendarProps {
     displayOptions: AnonHideYearsOnSelect = null,
     height: Double | auto = null,
     interpolateSelection: (/* date */ Date, /* selected */ js.Array[Date]) => js.Array[Date] = null,
-    locale: Anon0 = null,
+    locale: AnonBlank = null,
     max: DateType = null,
     maxDate: DateType = null,
     min: DateType = null,

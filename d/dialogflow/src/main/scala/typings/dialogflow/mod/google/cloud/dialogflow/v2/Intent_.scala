@@ -73,7 +73,7 @@ class Intent_ () extends IIntent {
   var trainingPhrases_Intent_ : js.Array[ITrainingPhrase] = js.native
   /** Intent webhookState. */
   @JSName("webhookState")
-  var webhookState_Intent_ : WebhookState = js.native
+  var webhookState_Intent_ : WebhookState | String = js.native
   /**
     * Converts this Intent to JSON.
     * @returns JSON object

@@ -33,7 +33,7 @@ trait ChocolateChipElementArray extends js.Object {
     * @return void
     */
   def UIEditList(): Unit = js.native
-  def UIEditList(options: AnonCallbackDeletable): Unit = js.native
+  def UIEditList(options: AnonDeletable): Unit = js.native
   /**
     * This method allows the user to use a segmented control to toggle a set of panels. It is executed on the segmented control.
     * The options id is the contain of the panels. The options callback is to execute when the user toggles a panel.
@@ -59,7 +59,7 @@ trait ChocolateChipElementArray extends js.Object {
     * @return void
     */
   def UISegmented(): Unit = js.native
-  def UISegmented(options: AnonCallbackSelected): Unit = js.native
+  def UISegmented(options: AnonSelected): Unit = js.native
   /**
     * Convert a simple list into a selection list. This converts the list into a radio button group, meaning only one can be selected at any time.
     * You can name the radios buttons using the options name. Options: {name: "selectedNamesGroup", selected: 2, callback: function() {alert('hi');}}
@@ -67,7 +67,7 @@ trait ChocolateChipElementArray extends js.Object {
     * @return void
     */
   def UISelectList(): Unit = js.native
-  def UISelectList(options: AnonCallbackName): Unit = js.native
+  def UISelectList(options: AnonName): Unit = js.native
   /**
     * Create a stepper control by executing it on a span with the class "stepper". Possible options: {start: 0, end: 10, defaultValue: 3}.
     *

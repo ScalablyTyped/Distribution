@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
   - typings.atom.mod.ContextMenuItemOptions
-  - typings.atom.AnonSeparator
+  - typings.atom.AnonType
 */
 trait ContextMenuOptions extends js.Object
 
@@ -42,7 +42,7 @@ object ContextMenuOptions {
     __obj.asInstanceOf[ContextMenuOptions]
   }
   @scala.inline
-  def AnonSeparator(`type`: separator): ContextMenuOptions = {
+  def AnonType(`type`: separator): ContextMenuOptions = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContextMenuOptions]

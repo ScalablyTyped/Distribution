@@ -39,11 +39,11 @@ class ProviderElementContext protected () extends js.Object {
   var _seenProviders: js.Any = js.native
   var _sourceSpan: js.Any = js.native
   var _transformedProviders: js.Any = js.native
-  val queryMatches: js.Array[QueryMatch] = js.native
-  val transformProviders: js.Array[ProviderAst] = js.native
-  val transformedDirectiveAsts: js.Array[DirectiveAst] = js.native
   val transformedHasViewContainer: Boolean = js.native
   var viewContext: ProviderViewContext = js.native
   def afterElement(): Unit = js.native
+  def queryMatches(): js.Array[QueryMatch] = js.native
+  def transformProviders(): js.Array[ProviderAst] = js.native
+  def transformedDirectiveAsts(): js.Array[DirectiveAst] = js.native
 }
 

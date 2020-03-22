@@ -14,24 +14,38 @@ trait AboutPanelOptionsOptions extends js.Object {
     */
   var applicationVersion: js.UndefOr[String] = js.undefined
   /**
+    * List of app authors.
+    *
+    * @platform linux
+    */
+  var authors: js.UndefOr[js.Array[String]] = js.undefined
+  /**
     * Copyright information.
     */
   var copyright: js.UndefOr[String] = js.undefined
   /**
     * Credit information.
+    *
+    * @platform darwin,win32
     */
   var credits: js.UndefOr[String] = js.undefined
   /**
-    * Path to the app's icon. Will be shown as 64x64 pixels while retaining aspect
-    * ratio.
+    * Path to the app's icon. On Linux, will be shown as 64x64 pixels while retaining
+    * aspect ratio.
+    *
+    * @platform linux,win32
     */
   var iconPath: js.UndefOr[String] = js.undefined
   /**
     * The app's build version number.
+    *
+    * @platform darwin
     */
   var version: js.UndefOr[String] = js.undefined
   /**
     * The app's website.
+    *
+    * @platform linux
     */
   var website: js.UndefOr[String] = js.undefined
 }
@@ -41,6 +55,7 @@ object AboutPanelOptionsOptions {
   def apply(
     applicationName: String = null,
     applicationVersion: String = null,
+    authors: js.Array[String] = null,
     copyright: String = null,
     credits: String = null,
     iconPath: String = null,
@@ -50,6 +65,7 @@ object AboutPanelOptionsOptions {
     val __obj = js.Dynamic.literal()
     if (applicationName != null) __obj.updateDynamic("applicationName")(applicationName.asInstanceOf[js.Any])
     if (applicationVersion != null) __obj.updateDynamic("applicationVersion")(applicationVersion.asInstanceOf[js.Any])
+    if (authors != null) __obj.updateDynamic("authors")(authors.asInstanceOf[js.Any])
     if (copyright != null) __obj.updateDynamic("copyright")(copyright.asInstanceOf[js.Any])
     if (credits != null) __obj.updateDynamic("credits")(credits.asInstanceOf[js.Any])
     if (iconPath != null) __obj.updateDynamic("iconPath")(iconPath.asInstanceOf[js.Any])

@@ -5,16 +5,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonColumns extends js.Object {
-  var columns: AnonDataTypesDragEnterDragLeaveDragOverDrop
-  var rows: AnonDataTypesDragEnterDragLeaveDragOverDropParam0
+  var columns: AnonDataTypesDragEnter
+  var rows: AnonDragEnterDragLeave
 }
 
 object AnonColumns {
   @scala.inline
-  def apply(
-    columns: AnonDataTypesDragEnterDragLeaveDragOverDrop,
-    rows: AnonDataTypesDragEnterDragLeaveDragOverDropParam0
-  ): AnonColumns = {
+  def apply(columns: AnonDataTypesDragEnter, rows: AnonDragEnterDragLeave): AnonColumns = {
     val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AnonColumns]

@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @JSImport("graphql-tools/dist/transforms/transformSchema", JSImport.Namespace)
 @js.native
 object transformSchemaMod extends js.Object {
-  def default(targetSchema: GraphQLSchema, transforms: js.Array[Transform]): GraphQLSchema with AnonTransforms = js.native
+  def default(targetSchema: GraphQLSchema, transforms: js.Array[Transform]): GraphQLSchematransformsAr = js.native
 }
 

@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait OracleDbConnectionConfig extends js.Object {
+trait OracleDbConnectionConfig extends _StaticConnectionConfig {
   var connectString: js.UndefOr[String] = js.undefined
   var database: js.UndefOr[String] = js.undefined
   var debug: js.UndefOr[Boolean] = js.undefined
   var domain: js.UndefOr[String] = js.undefined
+  var expirationChecker: js.UndefOr[js.Function0[Boolean]] = js.undefined
   var host: String
   var instanceName: js.UndefOr[String] = js.undefined
   var password: js.UndefOr[String] = js.undefined
@@ -25,6 +26,7 @@ object OracleDbConnectionConfig {
     database: String = null,
     debug: js.UndefOr[Boolean] = js.undefined,
     domain: String = null,
+    expirationChecker: () => Boolean = null,
     instanceName: String = null,
     password: String = null,
     requestTimeout: Int | Double = null
@@ -34,6 +36,7 @@ object OracleDbConnectionConfig {
     if (database != null) __obj.updateDynamic("database")(database.asInstanceOf[js.Any])
     if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
     if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
+    if (expirationChecker != null) __obj.updateDynamic("expirationChecker")(js.Any.fromFunction0(expirationChecker))
     if (instanceName != null) __obj.updateDynamic("instanceName")(instanceName.asInstanceOf[js.Any])
     if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
     if (requestTimeout != null) __obj.updateDynamic("requestTimeout")(requestTimeout.asInstanceOf[js.Any])

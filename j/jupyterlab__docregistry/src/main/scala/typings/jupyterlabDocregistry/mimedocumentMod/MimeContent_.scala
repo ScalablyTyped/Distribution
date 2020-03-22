@@ -2,7 +2,7 @@ package typings.jupyterlabDocregistry.mimedocumentMod
 
 import typings.jupyterlabDocregistry.mimedocumentMod.MimeContent.IOptions
 import typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.IRenderer
-import typings.phosphorWidgets.mod.Widget
+import typings.luminoWidgets.mod.Widget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,11 +33,11 @@ class MimeContent_ protected () extends Widget {
     * The mimetype for this rendered content.
     */
   val mimeType: String = js.native
+  val renderer: IRenderer = js.native
   /**
     * A promise that resolves when the widget is ready.
     */
-  val ready: js.Promise[Unit] = js.native
-  val renderer: IRenderer = js.native
+  def ready(): js.Promise[Unit] = js.native
   /**
     * Set URI fragment identifier.
     */

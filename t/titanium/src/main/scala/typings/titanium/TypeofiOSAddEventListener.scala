@@ -285,7 +285,7 @@ trait TypeofiOSAddEventListener extends js.Object {
   			 * The top-level App iOS Notification Center module. It is used to control scheduled notifications
   			 * and receive details about the system-wide notification settings.
   			 */
-  val UserNotificationCenter: TypeofUserNotificationCenter = js.native
+  val UserNotificationCenter: TypeofUserNotificationCen = js.native
   /**
   			 * The name of the API that this proxy corresponds to.
   			 */

@@ -4,10 +4,8 @@ import typings.materialBase.componentMod.MDCComponent
 import typings.materialBase.foundationMod.default
 import typings.materialMenuSurface.constantsMod.Corner
 import typings.materialMenuSurface.foundationMod.MDCMenuSurfaceFoundation
-import typings.materialMenuSurface.typesMod.MDCMenuDistance
 import typings.std.Element
 import typings.std.HTMLElement
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +20,6 @@ object componentMod extends js.Object {
     var root_ : HTMLElement = js.native
     def close(): Unit = js.native
     def close(skipRestoreFocus: Boolean): Unit = js.native
-    /**
-      * Removes the menu-surface from it's current location and appends it to the
-      * body to overcome any overflow:hidden issues.
-      */
-    def hoistMenuToBody(): Unit = js.native
     def isOpen(): Boolean = js.native
     def open(): Unit = js.native
     /** Sets the absolute x/y position to position based on. Requires the menu to be hoisted. */
@@ -35,7 +28,7 @@ object componentMod extends js.Object {
       * @param corner Default anchor corner alignment of top-left surface corner.
       */
     def setAnchorCorner(corner: Corner): Unit = js.native
-    def setAnchorMargin(margin: Partial[MDCMenuDistance]): Unit = js.native
+    def setAnchorMargin(margin: PartialMDCMenuDistance): Unit = js.native
     /** Sets the menu-surface to position: fixed. */
     def setFixedPosition(isFixed: Boolean): Unit = js.native
     /** Sets the foundation to use page offsets for an positioning when the menu is hoisted to the body. */

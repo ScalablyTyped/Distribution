@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait AnonExtendFont extends js.Object {
   var extend: js.UndefOr[ExtendType] = js.undefined
   var font: js.UndefOr[js.Object] = js.undefined
-  var level: js.UndefOr[Anon1] = js.undefined
+  var level: js.UndefOr[Anon4] = js.undefined
   var responsiveBreakpoint: js.UndefOr[String] = js.undefined
   var weight: js.UndefOr[Double] = js.undefined
 }
@@ -18,7 +18,7 @@ object AnonExtendFont {
   def apply(
     extend: ExtendType = null,
     font: js.Object = null,
-    level: Anon1 = null,
+    level: Anon4 = null,
     responsiveBreakpoint: String = null,
     weight: Int | Double = null
   ): AnonExtendFont = {

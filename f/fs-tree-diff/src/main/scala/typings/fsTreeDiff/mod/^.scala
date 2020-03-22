@@ -1,21 +1,27 @@
 package typings.fsTreeDiff.mod
 
+import typings.fsTreeDiff.AnonEntries
+import typings.fsTreeDiff.entryMod.BaseEntry
+import typings.fsTreeDiff.entryMod.DefaultEntry
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("fs-tree-diff", JSImport.Namespace)
 @js.native
-class ^ () extends FSTree {
-  def this(options: PartialFSTreeOptions) = this()
+class ^[T /* <: BaseEntry */] () extends FSTree[T] {
+  def this(options: AnonEntries[T]) = this()
 }
 
 @JSImport("fs-tree-diff", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def applyPatch(inputDir: String, outputDir: String, patch: js.Array[Patch]): Unit = js.native
-  def fromEntries(entries: js.Array[Entry]): FSTree = js.native
-  def fromPaths(paths: js.Array[String]): FSTree = js.native
-  def isEqual(a: FSTree, b: FSTree): Boolean = js.native
+  def applyPatch(input: String, output: String, patch: Patch): Unit = js.native
+  def applyPatch(input: String, output: String, patch: Patch, _delegate: PatchDelegate): Unit = js.native
+  def defaultIsEqual(entryA: DefaultEntry, entryB: DefaultEntry): Boolean = js.native
+  def fromEntries[T /* <: BaseEntry */](entries: js.Array[T]): FSTree[T] = js.native
+  def fromEntries[T /* <: BaseEntry */](entries: js.Array[T], options: StaticOptions): FSTree[T] = js.native
+  def fromPaths(paths: js.Array[String]): FSTree[Entry] = js.native
+  def fromPaths(paths: js.Array[String], options: StaticOptions): FSTree[Entry] = js.native
 }
 

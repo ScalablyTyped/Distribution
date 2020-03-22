@@ -1,12 +1,12 @@
 package typings.protonNative.mod
 
-import typings.protonNative.AnonAuxiliary
+import typings.protonNative.AnonBackgroundColor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait StyledTextProps extends js.Object {
-  var style: js.UndefOr[AnonAuxiliary] = js.undefined
+  var style: js.UndefOr[AnonBackgroundColor] = js.undefined
   /**
     * The x coordinate of the text's top left corner. (Only in a top level text component.)
     */
@@ -19,7 +19,7 @@ trait StyledTextProps extends js.Object {
 
 object StyledTextProps {
   @scala.inline
-  def apply(style: AnonAuxiliary = null, x: Double | String = null, y: Double | String = null): StyledTextProps = {
+  def apply(style: AnonBackgroundColor = null, x: Double | String = null, y: Double | String = null): StyledTextProps = {
     val __obj = js.Dynamic.literal()
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])

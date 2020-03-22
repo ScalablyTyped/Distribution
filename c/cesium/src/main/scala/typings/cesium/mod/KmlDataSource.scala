@@ -1,7 +1,7 @@
 package typings.cesium.mod
 
 import typings.cesium.AnonCamera
-import typings.cesium.AnonCameraCanvas
+import typings.cesium.AnonCanvas
 import typings.cesium.AnonClampToGroundEllipsoid
 import typings.std.Blob
 import typings.std.Document_
@@ -30,12 +30,12 @@ class KmlDataSource () extends DataSource {
 @js.native
 object KmlDataSource extends js.Object {
   def load(data: String): js.Promise[KmlDataSource] = js.native
-  def load(data: String, options: AnonCameraCanvas): js.Promise[KmlDataSource] = js.native
+  def load(data: String, options: AnonCanvas): js.Promise[KmlDataSource] = js.native
   def load(data: Resource): js.Promise[KmlDataSource] = js.native
-  def load(data: Resource, options: AnonCameraCanvas): js.Promise[KmlDataSource] = js.native
+  def load(data: Resource, options: AnonCanvas): js.Promise[KmlDataSource] = js.native
   def load(data: Blob): js.Promise[KmlDataSource] = js.native
-  def load(data: Blob, options: AnonCameraCanvas): js.Promise[KmlDataSource] = js.native
+  def load(data: Blob, options: AnonCanvas): js.Promise[KmlDataSource] = js.native
   def load(data: Document_): js.Promise[KmlDataSource] = js.native
-  def load(data: Document_, options: AnonCameraCanvas): js.Promise[KmlDataSource] = js.native
+  def load(data: Document_, options: AnonCanvas): js.Promise[KmlDataSource] = js.native
 }
 

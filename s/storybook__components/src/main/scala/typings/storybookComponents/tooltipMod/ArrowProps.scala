@@ -4,9 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ArrowProps extends js.Object {
-  var color: String
-  var placement: String
+  var color: String = js.native
+  var placement: String = js.native
 }
 
 object ArrowProps {

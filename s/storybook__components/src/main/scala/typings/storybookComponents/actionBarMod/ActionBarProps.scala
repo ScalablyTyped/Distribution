@@ -4,8 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ActionBarProps extends js.Object {
-  var actionItems: js.Array[ActionItem]
+  var actionItems: js.Array[ActionItem] = js.native
 }
 
 object ActionBarProps {

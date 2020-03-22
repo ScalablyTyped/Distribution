@@ -6,7 +6,6 @@ import typings.rotJs.typesMod.DisplayData
 import typings.rotJs.typesMod.DisplayOptions
 import typings.std.HTMLElement
 import typings.std.MouseEvent
-import typings.std.Partial
 import typings.std.TouchEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -103,22 +102,22 @@ object displayMod extends js.Object {
     /**
       * @see ROT.Display
       */
-    def setOptions(options: Partial[DisplayOptions]): this.type = js.native
+    def setOptions(options: PartialDisplayOptions): this.type = js.native
   }
   
   @js.native
   class default () extends Display {
-    def this(options: Partial[DisplayOptions]) = this()
+    def this(options: PartialDisplayOptions) = this()
   }
   
   /* static members */
   @js.native
   object default extends js.Object {
     var Hex: Instantiable0[typings.rotJs.hexMod.default] = js.native
-    var Rect: TypeofClassRect = js.native
+    var Rect: TypeofRect = js.native
     var Term: Instantiable0[typings.rotJs.termMod.default] = js.native
     var Tile: Instantiable0[typings.rotJs.tileMod.default] = js.native
-    var TileGL: TypeofClassTileGL = js.native
+    var TileGL: TypeofTileGL = js.native
   }
   
 }

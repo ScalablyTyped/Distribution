@@ -1,6 +1,6 @@
 package typings.awsSdk.glacierMod
 
-import typings.awsSdk.AnonWaiter
+import typings.awsSdk.DescribeVaultInputwaiterW
 import typings.awsSdk.awsSdkStrings.vaultExists
 import typings.awsSdk.awsSdkStrings.vaultNotExists
 import typings.awsSdk.configMod.ConfigBase
@@ -449,11 +449,11 @@ trait Glacier extends GlacierCustomizations {
     * Waits for the vaultExists state by periodically calling the underlying Glacier.describeVaultoperation every 3 seconds (at most 15 times).
     */
   @JSName("waitFor")
-  def waitFor_vaultExists(state: vaultExists, params: DescribeVaultInput with AnonWaiter): Request[DescribeVaultOutput, AWSError] = js.native
+  def waitFor_vaultExists(state: vaultExists, params: DescribeVaultInputwaiterW): Request[DescribeVaultOutput, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_vaultExists(
     state: vaultExists,
-    params: DescribeVaultInput with AnonWaiter,
+    params: DescribeVaultInputwaiterW,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeVaultOutput, Unit]
   ): Request[DescribeVaultOutput, AWSError] = js.native
   /**
@@ -470,11 +470,11 @@ trait Glacier extends GlacierCustomizations {
     * Waits for the vaultNotExists state by periodically calling the underlying Glacier.describeVaultoperation every 3 seconds (at most 15 times).
     */
   @JSName("waitFor")
-  def waitFor_vaultNotExists(state: vaultNotExists, params: DescribeVaultInput with AnonWaiter): Request[DescribeVaultOutput, AWSError] = js.native
+  def waitFor_vaultNotExists(state: vaultNotExists, params: DescribeVaultInputwaiterW): Request[DescribeVaultOutput, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_vaultNotExists(
     state: vaultNotExists,
-    params: DescribeVaultInput with AnonWaiter,
+    params: DescribeVaultInputwaiterW,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeVaultOutput, Unit]
   ): Request[DescribeVaultOutput, AWSError] = js.native
 }

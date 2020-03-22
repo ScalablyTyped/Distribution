@@ -10,7 +10,8 @@ import scala.scalajs.js.annotation._
 - typings.typescript.mod.Declaration because var conflicts: decorators, end, flags, kind, modifiers, parent, pos. Inlined _declarationBrand */ @js.native
 trait CallExpression
   extends LeftHandSideExpression
-     with CallLikeExpression {
+     with CallLikeExpression
+     with HasTypeArguments {
   var _declarationBrand: js.Any = js.native
   var arguments: NodeArray[Expression] = js.native
   var expression: LeftHandSideExpression = js.native

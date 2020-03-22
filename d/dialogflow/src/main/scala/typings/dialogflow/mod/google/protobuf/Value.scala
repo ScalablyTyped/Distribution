@@ -31,7 +31,7 @@ class Value () extends IValue {
   var kind: js.UndefOr[nullValue | numberValue | stringValue | boolValue | structValue | listValue] = js.native
   /** Value nullValue. */
   @JSName("nullValue")
-  var nullValue_Value: NullValue = js.native
+  var nullValue_Value: NullValue | String = js.native
   /** Value numberValue. */
   @JSName("numberValue")
   var numberValue_Value: Double = js.native

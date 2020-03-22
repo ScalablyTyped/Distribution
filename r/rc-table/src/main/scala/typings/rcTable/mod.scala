@@ -1,11 +1,11 @@
 package typings.rcTable
 
+import typings.rcTable.columnGroupMod.ColumnGroupProps
 import typings.rcTable.columnMod.ColumnProps
-import typings.rcTable.interfaceMod.DefaultValueType
+import typings.rcTable.interfaceMod.DefaultRecordType
 import typings.rcTable.rcTableStrings.RC_TABLE_INTERNAL_COL_DEFINE
 import typings.rcTable.tableMod.TableProps
-import typings.rcTable.tableMod.TableState
-import typings.react.mod.FC
+import typings.react.mod._Global_.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,32 +13,37 @@ import scala.scalajs.js.annotation._
 @JSImport("rc-table/lib", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
-  @js.native
-  class ColumnGroup ()
-    extends typings.rcTable.columnGroupMod.default
-  
-  @js.native
-  class default[ValueType] protected ()
-    extends typings.rcTable.tableMod.default[ValueType] {
-    def this(props: TableProps[ValueType]) = this()
-  }
-  
-  val Column: FC[ColumnProps] = js.native
   val INTERNAL_COL_DEFINE: RC_TABLE_INTERNAL_COL_DEFINE = js.native
-  /* static members */
-  @js.native
-  object ColumnGroup extends js.Object {
-    var isTableColumnGroup: Boolean = js.native
-  }
-  
-  /* static members */
+  /**
+    * This is a syntactic sugar for `columns` prop.
+    * So HOC will not work on this.
+    */
+  def Column[RecordType](_underscore: ColumnProps[RecordType]): js.Any = js.native
+  /**
+    * This is a syntactic sugar for `columns` prop.
+    * So HOC will not work on this.
+    */
+  def ColumnGroup[RecordType](_underscore: ColumnGroupProps[RecordType]): js.Any = js.native
   @js.native
   object default extends js.Object {
-    var Column: FC[ColumnProps] = js.native
-    var ColumnGroup: TypeofClassColumnGroup = js.native
-    var childContextTypes: AnonComponents = js.native
-    var defaultProps: AnonBodyStyle = js.native
-    def getDerivedStateFromProps(nextProps: TableProps[DefaultValueType], prevState: TableState): AnonChildren | AnonChildrenColumns = js.native
+    def apply[RecordType /* <: DefaultRecordType */](props: TableProps[RecordType]): Element = js.native
+    @js.native
+    object Column extends js.Object {
+      def apply[RecordType](_underscore: ColumnProps[RecordType]): js.Any = js.native
+    }
+    
+    @js.native
+    object ColumnGroup extends js.Object {
+      def apply[RecordType](_underscore: ColumnGroupProps[RecordType]): js.Any = js.native
+    }
+    
+    @js.native
+    object defaultProps extends js.Object {
+      var prefixCls: String = js.native
+      var rowKey: String = js.native
+      def emptyText(): String = js.native
+    }
+    
   }
   
 }

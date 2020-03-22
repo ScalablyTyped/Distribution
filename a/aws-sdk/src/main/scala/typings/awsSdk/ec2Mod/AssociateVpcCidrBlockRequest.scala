@@ -25,7 +25,7 @@ trait AssociateVpcCidrBlockRequest extends js.Object {
   /**
     * The ID of an IPv6 address pool from which to allocate the IPv6 CIDR block.
     */
-  var Ipv6Pool: js.UndefOr[String] = js.native
+  var Ipv6Pool: js.UndefOr[Ipv6PoolEc2Id] = js.native
   /**
     * The ID of the VPC.
     */
@@ -40,7 +40,7 @@ object AssociateVpcCidrBlockRequest {
     CidrBlock: String = null,
     Ipv6CidrBlock: String = null,
     Ipv6CidrBlockNetworkBorderGroup: String = null,
-    Ipv6Pool: String = null
+    Ipv6Pool: Ipv6PoolEc2Id = null
   ): AssociateVpcCidrBlockRequest = {
     val __obj = js.Dynamic.literal(VpcId = VpcId.asInstanceOf[js.Any])
     if (!js.isUndefined(AmazonProvidedIpv6CidrBlock)) __obj.updateDynamic("AmazonProvidedIpv6CidrBlock")(AmazonProvidedIpv6CidrBlock.asInstanceOf[js.Any])

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("objection", "mixin")
 @js.native
-object mixin extends TopLevel[Mixin_]
+object mixin extends TopLevel[MixinFunction]
 

@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/core/dist/types/utils/menu-controller/animations/base", JSImport.Namespace)
 @js.native
 object baseMod extends js.Object {
-  def baseAnimation(): Animation = js.native
+  def baseAnimation(isIos: Boolean): Animation = js.native
 }
 

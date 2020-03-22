@@ -1,6 +1,6 @@
 package typings.wegameApi.wx
 
-import typings.wegameApi.AnonMessageStack
+import typings.wegameApi.AnonStack
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSGlobal("wx.offError")
 @js.native
 object offError extends js.Object {
-  def apply(cb: js.Function1[/* res */ AnonMessageStack, Unit]): Unit = js.native
+  def apply(cb: js.Function1[/* res */ AnonStack, Unit]): Unit = js.native
 }
 

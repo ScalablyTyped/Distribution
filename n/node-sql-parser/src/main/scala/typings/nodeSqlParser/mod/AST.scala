@@ -31,32 +31,6 @@ object AST {
     __obj.asInstanceOf[AST]
   }
   @scala.inline
-  def Select(
-    columns: js.Array[_] | Asterisk,
-    `type`: select,
-    where: js.Any,
-    distinct: DISTINCT = null,
-    from: js.Array[From | Dual] = null,
-    groupby: js.Array[ColumnRef] = null,
-    having: js.Array[_] = null,
-    limit: js.Array[Limit] = null,
-    options: js.Array[_] = null,
-    orderby: js.Array[OrderBy] = null,
-    `with`: With = null
-  ): AST = {
-    val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], where = where.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (distinct != null) __obj.updateDynamic("distinct")(distinct.asInstanceOf[js.Any])
-    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
-    if (groupby != null) __obj.updateDynamic("groupby")(groupby.asInstanceOf[js.Any])
-    if (having != null) __obj.updateDynamic("having")(having.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (orderby != null) __obj.updateDynamic("orderby")(orderby.asInstanceOf[js.Any])
-    if (`with` != null) __obj.updateDynamic("with")(`with`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[AST]
-  }
-  @scala.inline
   def Alter(expr: js.Any, table: From, `type`: alter): AST = {
     val __obj = js.Dynamic.literal(expr = expr.asInstanceOf[js.Any], table = table.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -80,6 +54,32 @@ object AST {
   def Delete(from: js.Array[From | Dual], table: js.Any, `type`: delete, where: js.Any): AST = {
     val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], table = table.asInstanceOf[js.Any], where = where.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AST]
+  }
+  @scala.inline
+  def Select(
+    columns: js.Array[_] | Asterisk,
+    `type`: select,
+    where: js.Any,
+    distinct: DISTINCT = null,
+    from: js.Array[From | Dual] = null,
+    groupby: js.Array[ColumnRef] = null,
+    having: js.Array[_] = null,
+    limit: js.Array[Limit] = null,
+    options: js.Array[_] = null,
+    orderby: js.Array[OrderBy] = null,
+    `with`: With = null
+  ): AST = {
+    val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], where = where.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (distinct != null) __obj.updateDynamic("distinct")(distinct.asInstanceOf[js.Any])
+    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
+    if (groupby != null) __obj.updateDynamic("groupby")(groupby.asInstanceOf[js.Any])
+    if (having != null) __obj.updateDynamic("having")(having.asInstanceOf[js.Any])
+    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (orderby != null) __obj.updateDynamic("orderby")(orderby.asInstanceOf[js.Any])
+    if (`with` != null) __obj.updateDynamic("with")(`with`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AST]
   }
   @scala.inline

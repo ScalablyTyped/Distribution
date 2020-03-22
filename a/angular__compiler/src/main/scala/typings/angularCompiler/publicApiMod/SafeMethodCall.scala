@@ -10,6 +10,7 @@ class SafeMethodCall protected ()
   extends typings.angularCompiler.srcCompilerMod.SafeMethodCall {
   def this(
     span: typings.angularCompiler.astMod.ParseSpan,
+    sourceSpan: typings.angularCompiler.astMod.AbsoluteSourceSpan,
     receiver: typings.angularCompiler.astMod.AST,
     name: String,
     args: js.Array[_]

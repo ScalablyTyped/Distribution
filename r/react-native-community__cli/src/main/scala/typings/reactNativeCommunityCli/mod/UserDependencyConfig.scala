@@ -1,7 +1,7 @@
 package typings.reactNativeCommunityCli.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.reactNativeCommunityCli.AnonAssetsHooksParams
+import typings.reactNativeCommunityCli.AnonHooks
 import typings.reactNativeCommunityCli.AnonPlatforms
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,7 +11,7 @@ trait UserDependencyConfig extends js.Object {
   // An array of commands that ship with the dependency
   var commands: js.Array[Command]
   // Additional dependency settings
-  var dependency: js.UndefOr[AnonAssetsHooksParams] = js.undefined
+  var dependency: js.UndefOr[AnonHooks] = js.undefined
   // Haste config defined by legacy `rnpm`
   var haste: js.UndefOr[AnonPlatforms] = js.undefined
   // An array of extra platforms to load
@@ -22,7 +22,7 @@ object UserDependencyConfig {
   @scala.inline
   def apply(
     commands: js.Array[Command],
-    dependency: AnonAssetsHooksParams = null,
+    dependency: AnonHooks = null,
     haste: AnonPlatforms = null,
     platforms: StringDictionary[js.Any] = null
   ): UserDependencyConfig = {

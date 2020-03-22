@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "change-case" : "3.1.0"
+      "change-case" : "4.1.1"
     }
   ],
   "test-dependencies" : [
     {
-      "change-case" : "3.1.0"
+      "change-case" : "4.1.1"
     }
   ],
   "compile-devDependencies" : [

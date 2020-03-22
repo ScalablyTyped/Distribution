@@ -52,7 +52,12 @@ trait IModelServerClient extends js.Object {
   /**
     * Deletes the file with the specified filepath.
     */
-  def deleteFile(workingCopyId: String, filePath: String, callback: IVoidCallback, errorCallback: IErrorCallback): Unit = js.native
+  def deleteFile(
+    workingCopyId: String,
+    filePath: String,
+    callback: ICallback[Double],
+    errorCallback: IErrorCallback
+  ): Unit = js.native
   def deleteWorkingCopy(workingCopyId: String, callback: IVoidCallback, errorCallback: IErrorCallback): Unit = js.native
   /**
     * Deletes the project-to-working copy mapping for given project ID.
@@ -106,7 +111,7 @@ trait IModelServerClient extends js.Object {
     errorCallback: IErrorCallback
   ): Unit = js.native
   /**
-    * Returns an EventSource instance that will emit events that occur on the working copy.
+    * Returns an EventSource instance that will emit events that occur on the working copy model.
     */
   def getModelEventSource(workingCopyId: String, lastFetchedEventId: Double): ^ = js.native
   def getMyWorkingCopies(callback: ICallback[js.Array[IWorkingCopy]], errorCallback: IErrorCallback): Unit = js.native
@@ -114,6 +119,10 @@ trait IModelServerClient extends js.Object {
     * Retrieves the working copy id that the given project ID maps to.
     */
   def getWorkingCopyByProject(projectId: String, callback: ICallback[String], errorCallback: IErrorCallback): Unit = js.native
+  /**
+    * Returns an EventSource instance that will emit events that occur on the working copy level.
+    */
+  def getWorkingCopyEventSource(workingCopyId: String): ^ = js.native
   def grantAccess(
     workingCopyId: String,
     memberOpenId: String,
@@ -180,14 +189,14 @@ trait IModelServerClient extends js.Object {
     workingCopyId: String,
     inFilePath: String,
     filePath: String,
-    callback: IVoidCallback,
+    callback: ICallback[Double],
     errorCallback: IErrorCallback
   ): Unit = js.native
   def putFile(
     workingCopyId: String,
     inFilePath: Blob,
     filePath: String,
-    callback: IVoidCallback,
+    callback: ICallback[Double],
     errorCallback: IErrorCallback
   ): Unit = js.native
   def revokeAccess(

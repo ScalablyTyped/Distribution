@@ -4,8 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SectionRowProps extends js.Object {
-  var section: String
+  var section: String = js.native
 }
 
 object SectionRowProps {

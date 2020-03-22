@@ -1,9 +1,7 @@
 package typings.reactLazylog
 
 import typings.react.mod.Component
-import typings.reactLazylog.lazyLogMod.LazyLogProps
 import typings.reactLazylog.scrollFollowMod.ScrollFollowProps
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,7 +20,7 @@ object mod extends js.Object {
   /* static members */
   @js.native
   object LazyLog extends js.Object {
-    var defaultProps: Partial[LazyLogProps] = js.native
+    var defaultProps: PartialLazyLogProps = js.native
   }
   
 }

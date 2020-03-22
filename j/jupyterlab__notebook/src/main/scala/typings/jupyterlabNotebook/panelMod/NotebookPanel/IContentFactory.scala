@@ -3,7 +3,7 @@ package typings.jupyterlabNotebook.panelMod.NotebookPanel
 import org.scalablytyped.runtime.TopLevel
 import typings.jupyterlabNotebook.widgetMod.Notebook
 import typings.jupyterlabNotebook.widgetMod.Notebook.IOptions
-import typings.phosphorCoreutils.mod.Token
+import typings.luminoCoreutils.mod.Token
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

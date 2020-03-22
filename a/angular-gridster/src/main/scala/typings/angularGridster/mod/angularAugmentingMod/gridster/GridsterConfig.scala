@@ -1,7 +1,7 @@
 package typings.angularGridster.mod.angularAugmentingMod.gridster
 
 import typings.angularGridster.AnonDrag
-import typings.angularGridster.AnonElement
+import typings.angularGridster.AnonEnabled
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -48,7 +48,7 @@ trait GridsterConfig extends js.Object {
   var pushing: js.UndefOr[Boolean] = js.undefined
   // grid item height in mobile display. true- to use the calculated height by sizeY given
   // options to pass to resizable handler
-  var resizable: js.UndefOr[AnonElement] = js.undefined
+  var resizable: js.UndefOr[AnonEnabled] = js.undefined
   // height of grid rows. 'match' will make it the same as the column width, a numeric value will be interpreted as pixels,
   // '/2' is half the column width, '*5' is five times the column width, etc.
   var rowHeight: js.UndefOr[String] = js.undefined
@@ -81,7 +81,7 @@ object GridsterConfig {
     mobileModeEnabled: js.UndefOr[Boolean] = js.undefined,
     outerMargin: js.UndefOr[Boolean] = js.undefined,
     pushing: js.UndefOr[Boolean] = js.undefined,
-    resizable: AnonElement = null,
+    resizable: AnonEnabled = null,
     rowHeight: String = null,
     saveGridItemCalculatedHeightInMobile: js.UndefOr[Boolean] = js.undefined,
     swapping: js.UndefOr[Boolean] = js.undefined,

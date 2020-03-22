@@ -4,11 +4,11 @@ import typings.angularCore.mod.ChangeDetectorRef
 import typings.angularCore.mod.ElementRef
 import typings.angularCore.mod.EventEmitter
 import typings.angularCore.mod.NgZone
-import typings.ionicCore.ionicCoreStrings.decimal
+import typings.ionicCore.ionicCoreStrings.always
 import typings.ionicCore.ionicCoreStrings.email
-import typings.ionicCore.ionicCoreStrings.none
+import typings.ionicCore.ionicCoreStrings.focus
+import typings.ionicCore.ionicCoreStrings.never
 import typings.ionicCore.ionicCoreStrings.number
-import typings.ionicCore.ionicCoreStrings.numeric
 import typings.ionicCore.ionicCoreStrings.off
 import typings.ionicCore.ionicCoreStrings.on
 import typings.ionicCore.ionicCoreStrings.password
@@ -23,7 +23,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ionic/angular/dist/directives/proxies", "IonSearchbar")
+@JSImport("@ionic/angular/directives/proxies", "IonSearchbar")
 @js.native
 class IonSearchbar protected ()
   extends typings.ionicCore.componentsMod.Components.IonSearchbar {
@@ -44,7 +44,7 @@ class IonSearchbar protected ()
   /* CompleteClass */
   override var autocorrect: on | off = js.native
   /**
-    * Set the cancel button icon. Only applies to `md` mode.
+    * Set the cancel button icon. Only applies to `md` mode. Defaults to `"arrow-back-sharp"`.
     */
   /* CompleteClass */
   override var cancelButtonIcon: String = js.native
@@ -64,11 +64,6 @@ class IonSearchbar protected ()
   /* CompleteClass */
   override var disabled: Boolean = js.native
   var el: HTMLElement = js.native
-  /**
-    * A hint to the browser for which keyboard to display. Possible values: `"none"`, `"text"`, `"tel"`, `"url"`, `"email"`, `"numeric"`, `"decimal"`, and `"search"`.
-    */
-  /* CompleteClass */
-  override var inputmode: none | text | tel | url | email | numeric | decimal | search = js.native
   var ionBlur: EventEmitter[CustomEvent[_]] = js.native
   var ionCancel: EventEmitter[CustomEvent[_]] = js.native
   var ionChange: EventEmitter[CustomEvent[_]] = js.native
@@ -81,15 +76,10 @@ class IonSearchbar protected ()
   /* CompleteClass */
   override var placeholder: String = js.native
   /**
-    * The icon to use as the search icon.
-    */
-  /* CompleteClass */
-  override var searchIcon: String = js.native
-  /**
     * Sets the behavior for the cancel button. Defaults to `"never"`. Setting to `"focus"` shows the cancel button on focus. Setting to `"never"` hides the cancel button. Setting to `"always"` shows the cancel button regardless of focus state.
     */
   /* CompleteClass */
-  override var showCancelButton: Boolean | String = js.native
+  override var showCancelButton: never | focus | always = js.native
   /**
     * If `true`, enable spellcheck on the input.
     */

@@ -32,7 +32,7 @@ trait Layout[P] extends js.Object {
   /**
     * Set the top tabs
     */
-  var topTabs: js.UndefOr[TopTabs] = js.undefined
+  var topTabs: js.UndefOr[LayoutTopTabs] = js.undefined
 }
 
 object Layout {
@@ -44,7 +44,7 @@ object Layout {
     sideMenu: LayoutSideMenu = null,
     splitView: LayoutSplitView = null,
     stack: LayoutStack = null,
-    topTabs: TopTabs = null
+    topTabs: LayoutTopTabs = null
   ): Layout[P] = {
     val __obj = js.Dynamic.literal()
     if (bottomTabs != null) __obj.updateDynamic("bottomTabs")(bottomTabs.asInstanceOf[js.Any])

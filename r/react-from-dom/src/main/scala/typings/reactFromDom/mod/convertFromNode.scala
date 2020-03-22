@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object convertFromNode extends js.Object {
   def apply(input: Node): ReactNode = js.native
-  def apply(input: Node, options: IOptions): ReactNode = js.native
+  def apply(input: Node, options: Options): ReactNode = js.native
 }
 

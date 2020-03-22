@@ -10,6 +10,9 @@ object jestGetTypeStrings {
   sealed trait array extends ValueType
   
   @js.native
+  sealed trait bigint extends ValueType
+  
+  @js.native
   sealed trait boolean extends ValueType
   
   @js.native
@@ -47,6 +50,8 @@ object jestGetTypeStrings {
   
   @scala.inline
   def array: array = "array".asInstanceOf[array]
+  @scala.inline
+  def bigint: bigint = "bigint".asInstanceOf[bigint]
   @scala.inline
   def boolean: boolean = "boolean".asInstanceOf[boolean]
   @scala.inline

@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PropValueProps extends js.Object {
-  var value: js.UndefOr[PropSummaryValue] = js.undefined
+  var value: js.UndefOr[PropSummaryValue] = js.native
 }
 
 object PropValueProps {

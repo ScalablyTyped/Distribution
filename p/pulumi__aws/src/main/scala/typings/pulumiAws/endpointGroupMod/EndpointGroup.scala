@@ -26,6 +26,9 @@ class EndpointGroup protected () extends CustomResource {
     * The list of endpoint objects. Fields documented below.
     */
   val endpointConfigurations: Output_[js.UndefOr[js.Array[EndpointGroupEndpointConfiguration]]] = js.native
+  /**
+    * The name of the AWS Region where the endpoint group is located.
+    */
   val endpointGroupRegion: Output_[String] = js.native
   /**
     * The time—10 seconds or 30 seconds—between each health check for an endpoint. The default value is 30.

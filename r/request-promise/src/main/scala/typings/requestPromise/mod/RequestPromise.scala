@@ -5,8 +5,8 @@ import typings.bluebird.mod.CatchFilter
 import typings.bluebird.mod.Constructor
 import typings.bluebird.mod.Resolvable
 import typings.request.mod.Request
-import typings.requestPromise.FnError
-import typings.requestPromise.FnErrorFilter1
+import typings.requestPromise.FnCall
+import typings.requestPromise.FnCallFilter1Filter2Filter3Filter4Filter5OnReject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,11 +16,11 @@ trait RequestPromise[T] extends Request {
   @JSName("cancel")
   var cancel_Original: js.Function0[Unit] = js.native
   @JSName("catch")
-  var catch_Original: FnErrorFilter1[T] = js.native
+  var catch_Original: FnCallFilter1Filter2Filter3Filter4Filter5OnReject[T] = js.native
   @JSName("finally")
   var finally_Original: js.Function1[/* handler */ js.Function0[Resolvable[_]], Bluebird[T]] = js.native
   @JSName("then")
-  var then_Original: FnError[T] = js.native
+  var then_Original: FnCall[T] = js.native
   def cancel(): Unit = js.native
   def `catch`[U](): Bluebird[U | T] = js.native
   def `catch`[U](onReject: js.Function1[/* error */ js.Any, Resolvable[U]]): Bluebird[U | T] = js.native

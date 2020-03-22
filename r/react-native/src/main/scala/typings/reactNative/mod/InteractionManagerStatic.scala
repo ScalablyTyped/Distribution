@@ -1,6 +1,6 @@
 package typings.reactNative.mod
 
-import typings.reactNative.AnonArgs
+import typings.reactNative.AnonCancel
 import typings.reactNative.AnonInteractionComplete
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -21,10 +21,10 @@ trait InteractionManagerStatic extends EventEmitterListener {
     * Schedule a function to run after all interactions have completed.
     * Returns a cancellable
     */
-  def runAfterInteractions(): AnonArgs = js.native
-  def runAfterInteractions(task: js.Function0[_]): AnonArgs = js.native
-  def runAfterInteractions(task: PromiseTask): AnonArgs = js.native
-  def runAfterInteractions(task: SimpleTask): AnonArgs = js.native
+  def runAfterInteractions(): AnonCancel = js.native
+  def runAfterInteractions(task: js.Function0[_]): AnonCancel = js.native
+  def runAfterInteractions(task: PromiseTask): AnonCancel = js.native
+  def runAfterInteractions(task: SimpleTask): AnonCancel = js.native
   /**
     * A positive number will use setTimeout to schedule any tasks after
     * the eventLoopRunningTime hits the deadline value, otherwise all

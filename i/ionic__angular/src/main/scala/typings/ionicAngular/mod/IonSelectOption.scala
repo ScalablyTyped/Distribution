@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/angular", "IonSelectOption")
 @js.native
 class IonSelectOption protected ()
-  extends typings.ionicAngular.distMod.IonSelectOption {
+  extends typings.ionicAngular.proxiesMod.IonSelectOption {
   def this(c: ChangeDetectorRef, r: ElementRef[_], z: NgZone) = this()
 }
 

@@ -22,7 +22,7 @@ object bindingToSyntaxMod extends js.Object {
     def this(binding: Binding[T]) = this()
     var _binding: js.Any = js.native
     /* CompleteClass */
-    override def to(constructor: AnonArgs[T]): BindingInWhenOnSyntax[T] = js.native
+    override def to(constructor: AnonInstantiable[T]): BindingInWhenOnSyntax[T] = js.native
     /* CompleteClass */
     override def toAutoFactory[T2](serviceIdentifier: ServiceIdentifier[T2]): BindingWhenOnSyntax[T] = js.native
     /* CompleteClass */

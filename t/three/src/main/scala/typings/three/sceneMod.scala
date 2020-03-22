@@ -5,6 +5,7 @@ import typings.three.fogMod.IFog
 import typings.three.materialMod.Material
 import typings.three.object3DMod.Object3D
 import typings.three.textureMod.Texture
+import typings.three.threeBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,10 +17,12 @@ object sceneMod extends js.Object {
   class Scene () extends Object3D {
     var autoUpdate: Boolean = js.native
     var background: Null | Color | Texture = js.native
+    var environment: Null | Texture = js.native
     /**
     	 * A fog instance defining the type of fog that affects everything rendered in the scene. Default is null.
     	 */
     var fog: IFog | Null = js.native
+    val isScene: `true` = js.native
     /**
     	 * If not null, it will force everything in the scene to be rendered with that material. Default is null.
     	 */

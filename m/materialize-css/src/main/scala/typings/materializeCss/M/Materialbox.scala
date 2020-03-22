@@ -1,8 +1,8 @@
 package typings.materializeCss.M
 
 import typings.materializeCss.MElements
+import typings.materializeCss.PartialMaterialboxOptions
 import typings.std.Element
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -52,11 +52,11 @@ object Materialbox extends js.Object {
     * Init Materialboxes
     */
   def init(els: MElements): js.Array[Materialbox] = js.native
-  def init(els: MElements, options: Partial[MaterialboxOptions]): js.Array[Materialbox] = js.native
+  def init(els: MElements, options: PartialMaterialboxOptions): js.Array[Materialbox] = js.native
   /**
     * Init Materialbox
     */
   def init(els: Element): Materialbox = js.native
-  def init(els: Element, options: Partial[MaterialboxOptions]): Materialbox = js.native
+  def init(els: Element, options: PartialMaterialboxOptions): Materialbox = js.native
 }
 

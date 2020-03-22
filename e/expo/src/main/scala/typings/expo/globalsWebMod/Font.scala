@@ -1,7 +1,7 @@
 package typings.expo.globalsWebMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.expoFont.mod.FontSource
+import typings.expoFont.fontTypesMod.FontSource
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

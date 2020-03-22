@@ -5,14 +5,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonEncodingBufferEncoding extends js.Object {
-  var encoding: js.UndefOr[BufferEncoding | Null] = js.undefined
+  var encoding: BufferEncoding
+  var flag: js.UndefOr[java.lang.String | Double] = js.undefined
 }
 
 object AnonEncodingBufferEncoding {
   @scala.inline
-  def apply(encoding: BufferEncoding = null): AnonEncodingBufferEncoding = {
-    val __obj = js.Dynamic.literal()
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
+  def apply(encoding: BufferEncoding, flag: java.lang.String | Double = null): AnonEncodingBufferEncoding = {
+    val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any])
+    if (flag != null) __obj.updateDynamic("flag")(flag.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnonEncodingBufferEncoding]
   }
 }

@@ -1,7 +1,7 @@
 package typings.jsrsasign.jsrsasign.KJUR.crypto
 
-import typings.jsrsasign.AnonAlgProv
 import typings.jsrsasign.AnonMd5
+import typings.jsrsasign.AnonProv
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,7 +37,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("jsrsasign.KJUR.crypto.MessageDigest")
 @js.native
 class MessageDigest protected () extends js.Object {
-  def this(params: AnonAlgProv) = this()
+  def this(params: AnonProv) = this()
   /**
     * completes hash calculation and returns hash result
     * @description

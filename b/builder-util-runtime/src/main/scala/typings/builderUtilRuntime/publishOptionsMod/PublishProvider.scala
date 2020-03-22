@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   - typings.builderUtilRuntime.builderUtilRuntimeStrings.spaces
   - typings.builderUtilRuntime.builderUtilRuntimeStrings.generic
   - typings.builderUtilRuntime.builderUtilRuntimeStrings.custom
+  - typings.builderUtilRuntime.builderUtilRuntimeStrings.snapStore
 */
 trait PublishProvider extends js.Object
 
@@ -27,6 +28,8 @@ object PublishProvider {
   def github: typings.builderUtilRuntime.builderUtilRuntimeStrings.github = this.cast("github")
   @scala.inline
   def s3: typings.builderUtilRuntime.builderUtilRuntimeStrings.s3 = this.cast("s3")
+  @scala.inline
+  def snapStore: typings.builderUtilRuntime.builderUtilRuntimeStrings.snapStore = this.cast("snapStore")
   @scala.inline
   def spaces: typings.builderUtilRuntime.builderUtilRuntimeStrings.spaces = this.cast("spaces")
 }

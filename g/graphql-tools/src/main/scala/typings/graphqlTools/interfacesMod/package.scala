@@ -28,7 +28,7 @@ package object interfacesMod {
     /* source */ TSource, 
     /* args */ TArgs, 
     /* context */ TContext, 
-    /* info */ typings.graphql.definitionMod.GraphQLResolveInfo with typings.graphqlTools.AnonMergeInfo, 
+    /* info */ typings.graphqlTools.GraphQLResolveInfomergeIn, 
     js.Any
   ]
   type IMockFn = typings.graphql.definitionMod.GraphQLFieldResolver[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]]
@@ -59,7 +59,6 @@ package object interfacesMod {
   ]) | java.lang.String | typings.graphql.astMod.DocumentNode | typings.graphql.astMod.ASTNode
   type NextResolverFn = js.Function0[js.Promise[js.Any]]
   type ResolveType[T /* <: typings.graphql.definitionMod.GraphQLType */] = js.Function1[/* type */ T, T]
-  type Result = typings.graphql.executeMod.ExecutionResult[typings.graphql.executeMod.ExecutionResultDataDefault] with typings.graphqlTools.AnonExtensions
   type UnitOrList[Type] = Type | js.Array[Type]
   type VisitType = js.Function2[
     /* name */ java.lang.String, 

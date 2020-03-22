@@ -1,8 +1,8 @@
 package typings.adalAngular.mod
 
 import typings.adalAngular.Anon0
-import typings.adalAngular.Anon01
 import typings.adalAngular.AnonACCESSTOKENKEY
+import typings.adalAngular.AnonERROR
 import typings.adalAngular.adalAngularNumbers.`483`
 import typings.adalAngular.adalAngularNumbers.`600`
 import typings.adalAngular.adalAngularStrings.Canceled
@@ -27,9 +27,9 @@ trait Constants extends js.Object {
   var ERROR_DESCRIPTION: error_description
   var EXPIRES_IN: expires_in
   var ID_TOKEN: id_token
-  var LEVEL_STRING_MAP: Anon01
+  var LEVEL_STRING_MAP: Anon0
   var LOADFRAME_TIMEOUT: `6000`
-  var LOGGING_LEVEL: Anon0
+  var LOGGING_LEVEL: AnonERROR
   var POPUP_HEIGHT: `600`
   var POPUP_WIDTH: `483`
   var RESOURCE_DELIMETER: Verticalline
@@ -47,9 +47,9 @@ object Constants {
     ERROR_DESCRIPTION: error_description,
     EXPIRES_IN: expires_in,
     ID_TOKEN: id_token,
-    LEVEL_STRING_MAP: Anon01,
+    LEVEL_STRING_MAP: Anon0,
     LOADFRAME_TIMEOUT: `6000`,
-    LOGGING_LEVEL: Anon0,
+    LOGGING_LEVEL: AnonERROR,
     POPUP_HEIGHT: `600`,
     POPUP_WIDTH: `483`,
     RESOURCE_DELIMETER: Verticalline,

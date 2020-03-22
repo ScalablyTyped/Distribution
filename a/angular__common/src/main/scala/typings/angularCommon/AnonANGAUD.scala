@@ -15,6 +15,7 @@ trait AnonANGAUD extends js.Object {
   var TWD: js.Array[String]
   var USD: js.Array[String]
   var XPF: js.Array[scala.Nothing]
+  var XXX: js.Array[scala.Nothing]
 }
 
 object AnonANGAUD {
@@ -29,9 +30,10 @@ object AnonANGAUD {
     THB: js.Array[String],
     TWD: js.Array[String],
     USD: js.Array[String],
-    XPF: js.Array[scala.Nothing]
+    XPF: js.Array[scala.Nothing],
+    XXX: js.Array[scala.Nothing]
   ): AnonANGAUD = {
-    val __obj = js.Dynamic.literal(ANG = ANG.asInstanceOf[js.Any], AUD = AUD.asInstanceOf[js.Any], CAD = CAD.asInstanceOf[js.Any], FJD = FJD.asInstanceOf[js.Any], JPY = JPY.asInstanceOf[js.Any], SBD = SBD.asInstanceOf[js.Any], THB = THB.asInstanceOf[js.Any], TWD = TWD.asInstanceOf[js.Any], USD = USD.asInstanceOf[js.Any], XPF = XPF.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(ANG = ANG.asInstanceOf[js.Any], AUD = AUD.asInstanceOf[js.Any], CAD = CAD.asInstanceOf[js.Any], FJD = FJD.asInstanceOf[js.Any], JPY = JPY.asInstanceOf[js.Any], SBD = SBD.asInstanceOf[js.Any], THB = THB.asInstanceOf[js.Any], TWD = TWD.asInstanceOf[js.Any], USD = USD.asInstanceOf[js.Any], XPF = XPF.asInstanceOf[js.Any], XXX = XXX.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AnonANGAUD]
   }

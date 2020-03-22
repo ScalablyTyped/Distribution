@@ -26,10 +26,10 @@ trait AsyncOptions[T]
   var promiseFn: js.UndefOr[PromiseFn[T]] = js.undefined
   var reducer: js.UndefOr[
     js.Function3[
-      /* state */ AsyncState[T], 
+      /* state */ ReducerAsyncState[T], 
       /* action */ AsyncAction[T], 
-      /* internalReducer */ js.Function2[/* state */ AsyncState[T], /* action */ AsyncAction[T], AsyncState[T]], 
-      AsyncState[T]
+      /* internalReducer */ js.Function2[/* state */ ReducerAsyncState[T], /* action */ AsyncAction[T], ReducerAsyncState[T]], 
+      AsyncState[T, AbstractState[T]]
     ]
   ] = js.undefined
   var watch: js.UndefOr[js.Any] = js.undefined
@@ -48,7 +48,7 @@ object AsyncOptions {
     onResolve: /* data */ T => Unit = null,
     promise: js.Promise[T] = null,
     promiseFn: (/* props */ AsyncProps[T], /* controller */ AbortController) => js.Promise[T] = null,
-    reducer: (/* state */ AsyncState[T], /* action */ AsyncAction[T], /* internalReducer */ js.Function2[/* state */ AsyncState[T], /* action */ AsyncAction[T], AsyncState[T]]) => AsyncState[T] = null,
+    reducer: (/* state */ ReducerAsyncState[T], /* action */ AsyncAction[T], /* internalReducer */ js.Function2[/* state */ ReducerAsyncState[T], /* action */ AsyncAction[T], ReducerAsyncState[T]]) => AsyncState[T, AbstractState[T]] = null,
     watch: js.Any = null,
     watchFn: (/* props */ AsyncProps[T], /* prevProps */ AsyncProps[T]) => _ = null
   ): AsyncOptions[T] = {

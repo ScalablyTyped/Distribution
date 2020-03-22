@@ -1,7 +1,7 @@
 package typings.ionic.definitionsMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Record
+import typings.ionic.RecordHookNamestringArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +17,7 @@ object ProjectFile {
   def IProjectConfig(
     integrations: ProjectIntegrations,
     name: String,
-    hooks: Record[HookName, js.UndefOr[String | js.Array[String]]] = null,
+    hooks: RecordHookNamestringArray = null,
     id: String = null,
     root: String = null,
     `type`: ProjectType = null

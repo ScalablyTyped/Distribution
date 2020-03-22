@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CreateLabelsRequest extends js.Object {
   /**
-    * Amazon WorkDocs authentication token. Do not set this field when using administrative API actions, as in accessing the API using AWS credentials.
+    * Amazon WorkDocs authentication token. Not required when using AWS administrator credentials to access the API.
     */
   var AuthenticationToken: js.UndefOr[AuthenticationHeaderType] = js.native
   /**

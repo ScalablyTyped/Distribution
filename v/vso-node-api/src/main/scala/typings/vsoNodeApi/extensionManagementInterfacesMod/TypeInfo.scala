@@ -2,7 +2,6 @@ package typings.vsoNodeApi.extensionManagementInterfacesMod
 
 import typings.vsoNodeApi.AnonEnumValuesAnonAccepted
 import typings.vsoNodeApi.AnonEnumValuesAnonActionRequired
-import typings.vsoNodeApi.AnonEnumValuesAnonAllMe
 import typings.vsoNodeApi.AnonEnumValuesAnonAllow
 import typings.vsoNodeApi.AnonEnumValuesAnonAlwaysInclude
 import typings.vsoNodeApi.AnonEnumValuesAnonApproved
@@ -10,8 +9,9 @@ import typings.vsoNodeApi.AnonEnumValuesAnonArray
 import typings.vsoNodeApi.AnonEnumValuesAnonAutoUpgradeError
 import typings.vsoNodeApi.AnonEnumValuesAnonBuiltIn
 import typings.vsoNodeApi.AnonEnumValuesAnonBuy
-import typings.vsoNodeApi.AnonEnumValuesAnonErrorWarning
 import typings.vsoNodeApi.AnonEnumValuesAnonIgnoreConstraints
+import typings.vsoNodeApi.AnonEnumValuesAnonMe
+import typings.vsoNodeApi.AnonEnumValuesAnonWarning
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation._
 @JSImport("vso-node-api/interfaces/ExtensionManagementInterfaces", "TypeInfo")
 @js.native
 object TypeInfo extends js.Object {
-  var AcquisitionAssignmentType: AnonEnumValuesAnonAllMe = js.native
+  var AcquisitionAssignmentType: AnonEnumValuesAnonMe = js.native
   var AcquisitionOperation: js.Any = js.native
   var AcquisitionOperationState: AnonEnumValuesAnonAllow = js.native
   var AcquisitionOperationType: AnonEnumValuesAnonBuy = js.native
@@ -48,7 +48,7 @@ object TypeInfo extends js.Object {
   var InstalledExtension: js.Any = js.native
   var InstalledExtensionState: js.Any = js.native
   var InstalledExtensionStateIssue: js.Any = js.native
-  var InstalledExtensionStateIssueType: AnonEnumValuesAnonErrorWarning = js.native
+  var InstalledExtensionStateIssueType: AnonEnumValuesAnonWarning = js.native
   var LicensingOverride: js.Any = js.native
   var RequestedExtension: js.Any = js.native
 }

@@ -5,6 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
+  - typings.csstype.csstypeStrings.`Colon-khtml-any-link`
   - typings.csstype.csstypeStrings.`Colon-moz-any-link`
   - typings.csstype.csstypeStrings.`Colon-moz-focusring`
   - typings.csstype.csstypeStrings.`Colon-moz-full-screen`
@@ -100,6 +101,8 @@ import scala.scalajs.js.annotation._
 trait SimplePseudos extends js.Object
 
 object SimplePseudos {
+  @scala.inline
+  def `Colon-khtml-any-link`: typings.csstype.csstypeStrings.`Colon-khtml-any-link` = this.cast(":-khtml-any-link")
   @scala.inline
   def `Colon-moz-any-link`: typings.csstype.csstypeStrings.`Colon-moz-any-link` = this.cast(":-moz-any-link")
   @scala.inline

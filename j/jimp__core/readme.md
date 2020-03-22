@@ -1,7 +1,7 @@
 
 # Scala.js typings for jimp__core
 
-Typings are for version 0.8.5
+Typings are for version 0.9.3
 
 ## Library description:
 Jimp core

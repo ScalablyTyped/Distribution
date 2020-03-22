@@ -1,7 +1,7 @@
 package typings.intercomClient.companyMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.intercomClient.AnonIdName
+import typings.intercomClient.AnonName
 import typings.intercomClient.intercomClientStrings.company
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,7 +16,7 @@ trait Company extends js.Object {
   var industry: js.UndefOr[String] = js.undefined
   var monthly_spend: js.UndefOr[Double] = js.undefined
   var name: js.UndefOr[String] = js.undefined
-  var plan: js.UndefOr[String | AnonIdName] = js.undefined
+  var plan: js.UndefOr[String | AnonName] = js.undefined
   var remote_created_at: js.UndefOr[Double] = js.undefined
   var session_count: js.UndefOr[Double] = js.undefined
   var size: js.UndefOr[Double] = js.undefined
@@ -39,7 +39,7 @@ object Company {
     industry: String = null,
     monthly_spend: Int | Double = null,
     name: String = null,
-    plan: String | AnonIdName = null,
+    plan: String | AnonName = null,
     remote_created_at: Int | Double = null,
     session_count: Int | Double = null,
     size: Int | Double = null,

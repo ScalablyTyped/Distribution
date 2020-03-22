@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "chunkd" : "2.0.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "chunkd" : "2.0.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

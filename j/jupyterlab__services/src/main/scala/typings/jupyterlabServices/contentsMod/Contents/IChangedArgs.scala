@@ -1,10 +1,10 @@
 package typings.jupyterlabServices.contentsMod.Contents
 
+import typings.jupyterlabServices.PartialIModel
 import typings.jupyterlabServices.jupyterlabServicesStrings.`new`
 import typings.jupyterlabServices.jupyterlabServicesStrings.delete
 import typings.jupyterlabServices.jupyterlabServicesStrings.rename
 import typings.jupyterlabServices.jupyterlabServicesStrings.save
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,11 +16,11 @@ trait IChangedArgs extends js.Object {
   /**
     * The old contents.
     */
-  var newValue: Partial[IModel] | Null
+  var newValue: PartialIModel | Null
   /**
     * The new contents.
     */
-  var oldValue: Partial[IModel] | Null
+  var oldValue: PartialIModel | Null
   /**
     * The type of change.
     */
@@ -31,8 +31,8 @@ object IChangedArgs {
   @scala.inline
   def apply(
     `type`: `new` | delete | rename | save,
-    newValue: Partial[IModel] = null,
-    oldValue: Partial[IModel] = null
+    newValue: PartialIModel = null,
+    oldValue: PartialIModel = null
   ): IChangedArgs = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

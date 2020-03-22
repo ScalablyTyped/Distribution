@@ -5,11 +5,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object ImmutableArray {
-  /** NOTE: These methods mutate data, but seamless-immutable does not ban them. We will ban them in our type definitions. */
-  type AdditionalMutatingArrayMethods = typings.std.Extract[
-    js.Array[java.lang.String], 
-    typings.seamlessImmutable.seamlessImmutableStrings.copyWithin | typings.seamlessImmutable.seamlessImmutableStrings.fill
-  ]
   /** These methods are banned by seamless-immutable. */
   type MutatingArrayMethods = typings.std.Extract[
     js.Array[java.lang.String], 

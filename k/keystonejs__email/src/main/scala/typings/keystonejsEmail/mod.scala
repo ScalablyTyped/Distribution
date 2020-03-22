@@ -18,6 +18,6 @@ object mod extends js.Object {
   }
   
   val emailSender: MailSenderBuilder = js.native
-  type Sender = js.Function1[/* fileName */ String, AnonRendererOpts]
+  type Sender = js.Function1[/* fileName */ String, AnonSend]
 }
 

@@ -1,7 +1,6 @@
 package typings.baiduApp.swan
 
-import typings.baiduApp.AnonBubbles
-import typings.std.Partial
+import typings.baiduApp.Partialbubblesbooleancomp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -95,6 +94,6 @@ trait Component[D, P] extends js.Object {
   		 */
   def triggerEvent(name: String): Unit = js.native
   def triggerEvent(name: String, details: js.Any): Unit = js.native
-  def triggerEvent(name: String, details: js.Any, options: Partial[AnonBubbles]): Unit = js.native
+  def triggerEvent(name: String, details: js.Any, options: Partialbubblesbooleancomp): Unit = js.native
 }
 

@@ -49,8 +49,6 @@ package object cypress {
     */
   // tslint:disable-next-line:no-empty-interface
   type JQuerySupport = typings.cypress.JQuery_.PlainObject[js.Any]
-  // tslint:disable-next-line:no-empty-interface
-  type JQueryXHR = typings.cypress.JQuery_.jqXHR[js.Any]
   type JQuery_[TElement] = typings.cypress.JQuery__[TElement]
   type KeyboardEvent = typings.std.KeyboardEvent
   // #endregion Browser augmentations

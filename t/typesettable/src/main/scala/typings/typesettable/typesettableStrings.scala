@@ -9,9 +9,6 @@ import scala.scalajs.js.annotation._
 
 object typesettableStrings {
   @js.native
-  sealed trait Writer extends js.Object
-  
-  @js.native
   sealed trait bottom extends IYAlign
   
   @js.native
@@ -37,8 +34,6 @@ object typesettableStrings {
   @js.native
   sealed trait top extends IYAlign
   
-  @scala.inline
-  def Writer: Writer = "Writer".asInstanceOf[Writer]
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
   @scala.inline

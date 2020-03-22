@@ -1,6 +1,6 @@
 package typings.googleapis.identitytoolkitV3Mod.identitytoolkitV3
 
-import typings.googleapis.AnonDisplayNameEmailFederatedId
+import typings.googleapis.AnonPhoneNumber
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -65,7 +65,7 @@ trait SchemaUserInfo extends js.Object {
   /**
     * The IDP of the user.
     */
-  var providerUserInfo: js.UndefOr[js.Array[AnonDisplayNameEmailFederatedId]] = js.native
+  var providerUserInfo: js.UndefOr[js.Array[AnonPhoneNumber]] = js.native
   /**
     * The user&#39;s plain text password.
     */
@@ -104,7 +104,7 @@ object SchemaUserInfo {
     passwordUpdatedAt: Int | Double = null,
     phoneNumber: String = null,
     photoUrl: String = null,
-    providerUserInfo: js.Array[AnonDisplayNameEmailFederatedId] = null,
+    providerUserInfo: js.Array[AnonPhoneNumber] = null,
     rawPassword: String = null,
     salt: String = null,
     screenName: String = null,

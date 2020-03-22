@@ -1,6 +1,7 @@
 package typings.hapiHapi.mod
 
 import typings.hapiHapi.AnonEtag
+import typings.hapiHapi.ReadonlyRequest
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -38,7 +39,7 @@ trait ResponseToolkit extends js.Object {
     * The [request] object. This is a duplication of the request lifecycle method argument used by
     * [toolkit decorations](https://github.com/hapijs/hapi/blob/master/API.md#server.decorate()) to access the current request.
     */
-  val request: Request = js.native
+  val request: ReadonlyRequest = js.native
   /**
     * Used by the [authentication] method to pass back valid credentials where:
     * @param data - an object with:

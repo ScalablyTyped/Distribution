@@ -1,6 +1,6 @@
 package typings.officeJs.Excel
 
-import typings.officeJs.AnonColumnWidth
+import typings.officeJs.CellPropertiesFormatLoadOAutoIndent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,7 +33,7 @@ trait ColumnPropertiesLoadOptions extends CellPropertiesLoadOptions {
     * [Api set: ExcelApi 1.9]
     */
   @JSName("format")
-  var format_ColumnPropertiesLoadOptions: js.UndefOr[CellPropertiesFormatLoadOptions with AnonColumnWidth] = js.undefined
+  var format_ColumnPropertiesLoadOptions: js.UndefOr[CellPropertiesFormatLoadOAutoIndent] = js.undefined
 }
 
 object ColumnPropertiesLoadOptions {
@@ -43,7 +43,7 @@ object ColumnPropertiesLoadOptions {
     addressLocal: js.UndefOr[Boolean] = js.undefined,
     columnHidden: js.UndefOr[Boolean] = js.undefined,
     columnIndex: js.UndefOr[Boolean] = js.undefined,
-    format: CellPropertiesFormatLoadOptions with AnonColumnWidth = null,
+    format: CellPropertiesFormatLoadOAutoIndent = null,
     hidden: js.UndefOr[Boolean] = js.undefined,
     hyperlink: js.UndefOr[Boolean] = js.undefined,
     style: js.UndefOr[Boolean] = js.undefined

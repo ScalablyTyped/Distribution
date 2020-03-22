@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait From extends js.Object {
+trait From extends FromFacet {
   var data: js.UndefOr[String] = js.undefined
 }
 

@@ -3,13 +3,13 @@ package typings.jimpTiff.mod
 import typings.jimpTiff.AnonImagetiff
 import typings.jimpTiff.AnonImagetiffDecoderFn
 import typings.jimpTiff.AnonImagetiffEncoderFn
-import typings.jimpTiff.AnonImagetiffMIMETIFF
+import typings.jimpTiff.AnonMIMETIFF
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Tiff extends js.Object {
-  var constants: AnonImagetiffMIMETIFF
+  var constants: AnonMIMETIFF
   var decoders: AnonImagetiffDecoderFn
   var encoders: AnonImagetiffEncoderFn
   var mime: AnonImagetiff
@@ -18,7 +18,7 @@ trait Tiff extends js.Object {
 object Tiff {
   @scala.inline
   def apply(
-    constants: AnonImagetiffMIMETIFF,
+    constants: AnonMIMETIFF,
     decoders: AnonImagetiffDecoderFn,
     encoders: AnonImagetiffEncoderFn,
     mime: AnonImagetiff

@@ -1,7 +1,7 @@
 package typings.lobibox.LobiboxModule
 
-import typings.lobibox.AnonClassIcon
 import typings.lobibox.AnonClassString
+import typings.lobibox.AnonIcon
 import typings.lobibox.AnonWidth
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,15 +11,15 @@ trait NotifyOptions
   extends NotifyDefault
      with NotifyMethods {
   var `class`: js.UndefOr[String] = js.undefined
-  var error: js.UndefOr[AnonClassIcon] = js.undefined
-  var info: js.UndefOr[AnonClassIcon] = js.undefined
+  var error: js.UndefOr[AnonIcon] = js.undefined
+  var info: js.UndefOr[AnonIcon] = js.undefined
    //You can override options for large notifications from here
   var large: js.UndefOr[AnonWidth] = js.undefined
     //You can override options for small notifications from here
   var mini: js.UndefOr[AnonClassString] = js.undefined
      //Default options of different style notifications
-  var success: js.UndefOr[AnonClassIcon] = js.undefined
-  var warning: js.UndefOr[AnonClassIcon] = js.undefined
+  var success: js.UndefOr[AnonIcon] = js.undefined
+  var warning: js.UndefOr[AnonIcon] = js.undefined
 }
 
 object NotifyOptions {
@@ -31,11 +31,11 @@ object NotifyOptions {
     continueDelayOnInactiveTab: js.UndefOr[Boolean] = js.undefined,
     delay: Int | Double = null,
     delayIndicator: js.UndefOr[Boolean] = js.undefined,
-    error: AnonClassIcon = null,
+    error: AnonIcon = null,
     hideClass: String = null,
     icon: js.UndefOr[Boolean] = js.undefined,
     img: String = null,
-    info: AnonClassIcon = null,
+    info: AnonIcon = null,
     large: AnonWidth = null,
     mini: AnonClassString = null,
     msg: String = null,
@@ -49,9 +49,9 @@ object NotifyOptions {
     sound: js.UndefOr[Boolean] = js.undefined,
     soundExt: String = null,
     soundPath: String = null,
-    success: AnonClassIcon = null,
+    success: AnonIcon = null,
     title: String | Boolean = null,
-    warning: AnonClassIcon = null,
+    warning: AnonIcon = null,
     width: Int | Double = null
   ): NotifyOptions = {
     val __obj = js.Dynamic.literal()

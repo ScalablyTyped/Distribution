@@ -2,7 +2,7 @@ package typings.winrtUwp.Windows.Web.Http.Headers
 
 import typings.std.Array
 import typings.winrtUwp.AnonIndex
-import typings.winrtUwp.AnonItemsReturnValueLanguage
+import typings.winrtUwp.AnonItemsLanguage
 import typings.winrtUwp.Windows.Foundation.Collections.IIterator
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Globalization.Language
@@ -38,7 +38,7 @@ abstract class HttpLanguageHeaderValueCollection () extends Array[Language] {
     * Retrieves the Language items that start at the specified index in the collection.
     * @param startIndex The zero-based index of the start of the Language items in the HttpLanguageHeaderValueCollection .
     */
-  def getMany(startIndex: Double): AnonItemsReturnValueLanguage = js.native
+  def getMany(startIndex: Double): AnonItemsLanguage = js.native
   /**
     * Returns an immutable view of the HttpLanguageHeaderValueCollection .
     * @return The view of the HttpLanguageHeaderValueCollection .

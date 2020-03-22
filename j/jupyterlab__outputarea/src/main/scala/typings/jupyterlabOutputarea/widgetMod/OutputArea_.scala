@@ -6,14 +6,14 @@ import typings.jupyterlabOutputarea.widgetMod.OutputArea.IContentFactory
 import typings.jupyterlabOutputarea.widgetMod.OutputArea.IOptions
 import typings.jupyterlabRendermime.outputmodelMod.IOutputModel
 import typings.jupyterlabRendermime.tokensMod.IRenderMimeRegistry
-import typings.jupyterlabServices.kernelKernelMod.Kernel.IShellFuture
-import typings.jupyterlabServices.messagesMod.KernelMessage.IExecuteReplyMsg
-import typings.jupyterlabServices.messagesMod.KernelMessage.IExecuteRequestMsg
-import typings.jupyterlabServices.messagesMod.KernelMessage.IInputRequestMsg
-import typings.jupyterlabServices.messagesMod.KernelMessage.IShellMessage
-import typings.jupyterlabServices.messagesMod.KernelMessage.ShellMessageType
-import typings.phosphorSignaling.mod.Signal
-import typings.phosphorWidgets.mod.Widget
+import typings.jupyterlabServices.kernelKernelMod.IShellFuture
+import typings.jupyterlabServices.messagesMod.IExecuteReplyMsg
+import typings.jupyterlabServices.messagesMod.IExecuteRequestMsg
+import typings.jupyterlabServices.messagesMod.IInputRequestMsg
+import typings.jupyterlabServices.messagesMod.IShellMessage
+import typings.jupyterlabServices.messagesMod.ShellMessageType
+import typings.luminoSignaling.mod.Signal
+import typings.luminoWidgets.mod.Widget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -63,10 +63,6 @@ class OutputArea_ protected () extends Widget {
     */
   val contentFactory: IContentFactory = js.native
   /**
-    * The kernel future associated with the output area.
-    */
-  var future: (IShellFuture[IExecuteRequestMsg, IExecuteReplyMsg]) | Null = js.native
-  /**
     * The model used by the widget.
     */
   val model: IOutputAreaModel = js.native
@@ -83,10 +79,6 @@ class OutputArea_ protected () extends Widget {
     */
   val rendermime: IRenderMimeRegistry = js.native
   /**
-    * A read-only sequence of the chidren widgets in the output area.
-    */
-  val widgets: js.Array[Widget] = js.native
-  /**
     * Create an output item with a prompt and actual output
     *
     * @returns a rendered widget, or null if we cannot render
@@ -97,6 +89,11 @@ class OutputArea_ protected () extends Widget {
     * Render a mimetype
     */
   /* protected */ def createRenderedMimetype(model: IOutputModel): Widget | Null = js.native
+  /**
+    * The kernel future associated with the output area.
+    */
+  def future(): IShellFuture[IExecuteRequestMsg, IExecuteReplyMsg] = js.native
+  def future(value: IShellFuture[IExecuteRequestMsg, IExecuteReplyMsg]): js.Any = js.native
   /**
     * Handle an input request from a kernel.
     */
@@ -112,5 +109,9 @@ class OutputArea_ protected () extends Widget {
     * Follow changes on the output model state.
     */
   /* protected */ def onStateChanged(sender: IOutputAreaModel): Unit = js.native
+  /**
+    * A read-only sequence of the chidren widgets in the output area.
+    */
+  def widgets(): js.Array[Widget] = js.native
 }
 

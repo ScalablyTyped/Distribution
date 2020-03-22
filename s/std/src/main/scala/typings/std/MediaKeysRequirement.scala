@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.std.stdStrings.required_
-  - typings.std.stdStrings.optional
   - typings.std.stdStrings.`not-allowed`
+  - typings.std.stdStrings.optional
+  - typings.std.stdStrings.required_
 */
 trait MediaKeysRequirement extends js.Object
 

@@ -54,7 +54,11 @@ trait reactElementalProps {
   @scala.inline
   def TextProps: typings.reactElemental.mod.TextProps.type = typings.reactElemental.mod.TextProps
   type TextProps = typings.reactElemental.mod.TextProps
+  @scala.inline
+  def TextAreaProps: typings.reactElemental.mod.TextAreaProps.type = typings.reactElemental.mod.TextAreaProps
   type TextAreaProps = typings.reactElemental.mod.TextAreaProps
+  @scala.inline
+  def TextFieldProps: typings.reactElemental.mod.TextFieldProps.type = typings.reactElemental.mod.TextFieldProps
   type TextFieldProps = typings.reactElemental.mod.TextFieldProps
   @scala.inline
   def ToastProps: typings.reactElemental.mod.ToastProps.type = typings.reactElemental.mod.ToastProps

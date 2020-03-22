@@ -1,9 +1,11 @@
 package typings.officeUiFabricReact.colorSliderBaseMod
 
+import typings.officeUiFabricReact.PartialIColorSliderProps
+import typings.officeUiFabricReact.ReadonlyIColorSliderProps
+import typings.officeUiFabricReact.ReadonlyIColorSliderState
 import typings.officeUiFabricReact.colorSliderTypesMod.IColorSlider
 import typings.officeUiFabricReact.colorSliderTypesMod.IColorSliderProps
 import typings.react.mod.Component
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,7 +27,7 @@ class ColorSliderBase protected ()
   /* CompleteClass */
   override var value: Double = js.native
   @JSName("componentDidUpdate")
-  def componentDidUpdate_MColorSliderBase(prevProps: IColorSliderProps, prevState: IColorSliderState): Unit = js.native
+  def componentDidUpdate_MColorSliderBase(prevProps: ReadonlyIColorSliderProps, prevState: ReadonlyIColorSliderState): Unit = js.native
   @JSName("componentWillUnmount")
   def componentWillUnmount_MColorSliderBase(): Unit = js.native
 }
@@ -34,6 +36,6 @@ class ColorSliderBase protected ()
 @JSImport("office-ui-fabric-react/lib/components/ColorPicker/ColorSlider/ColorSlider.base", "ColorSliderBase")
 @js.native
 object ColorSliderBase extends js.Object {
-  var defaultProps: Partial[IColorSliderProps] = js.native
+  var defaultProps: PartialIColorSliderProps = js.native
 }
 

@@ -1,7 +1,7 @@
 package typings.blueprintjsCore.htmlSelectMod
 
+import typings.blueprintjsCore.PartialIIconProps
 import typings.blueprintjsCore.htmlMod.IElementRefProps
-import typings.blueprintjsCore.iconMod.IIconProps
 import typings.blueprintjsCore.propsMod.IOptionProps
 import typings.react.AnonHtml
 import typings.react.mod.AnimationEvent
@@ -72,7 +72,6 @@ import typings.react.reactStrings.vertical
 import typings.react.reactStrings.yes
 import typings.std.Event_
 import typings.std.HTMLSelectElement
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -83,7 +82,7 @@ trait IHTMLSelectProps
   /** Whether this element should fill its container. */
   var fill: js.UndefOr[Boolean] = js.undefined
   /** Props to spread to the `<Icon>` element. */
-  var iconProps: js.UndefOr[Partial[IIconProps]] = js.undefined
+  var iconProps: js.UndefOr[PartialIIconProps] = js.undefined
   /** Whether to use large styles. */
   var large: js.UndefOr[Boolean] = js.undefined
   /** Whether to use minimal styles. */
@@ -176,7 +175,7 @@ object IHTMLSelectProps {
     fill: js.UndefOr[Boolean] = js.undefined,
     form: String = null,
     hidden: js.UndefOr[Boolean] = js.undefined,
-    iconProps: Partial[IIconProps] = null,
+    iconProps: PartialIIconProps = null,
     id: String = null,
     inlist: js.Any = null,
     inputMode: none | text | tel | url | email | numeric | decimal | search = null,

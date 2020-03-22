@@ -1,6 +1,6 @@
 package typings.exceljs.mod.stream.xlsx
 
-import typings.std.Partial
+import typings.exceljs.PartialZlibOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ trait ArchiverZipOptions extends js.Object {
   var forceLocalTime: Boolean
   var forceZip64: Boolean
   var store: Boolean
-  var zlib: Partial[ZlibOptions]
+  var zlib: PartialZlibOptions
 }
 
 object ArchiverZipOptions {
@@ -20,7 +20,7 @@ object ArchiverZipOptions {
     forceLocalTime: Boolean,
     forceZip64: Boolean,
     store: Boolean,
-    zlib: Partial[ZlibOptions]
+    zlib: PartialZlibOptions
   ): ArchiverZipOptions = {
     val __obj = js.Dynamic.literal(comment = comment.asInstanceOf[js.Any], forceLocalTime = forceLocalTime.asInstanceOf[js.Any], forceZip64 = forceZip64.asInstanceOf[js.Any], store = store.asInstanceOf[js.Any], zlib = zlib.asInstanceOf[js.Any])
   

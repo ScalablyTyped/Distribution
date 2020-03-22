@@ -9,7 +9,7 @@ import typings.jupyterlabMainmenu.settingsMod.ISettingsMenu
 import typings.jupyterlabMainmenu.tabsMod.ITabsMenu
 import typings.jupyterlabMainmenu.tokensMod.IMainMenu.IAddOptions
 import typings.jupyterlabMainmenu.viewMod.IViewMenu
-import typings.phosphorWidgets.mod.Menu
+import typings.luminoWidgets.mod.Menu
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

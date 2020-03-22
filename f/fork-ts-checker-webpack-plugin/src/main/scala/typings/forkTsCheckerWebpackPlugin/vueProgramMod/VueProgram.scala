@@ -2,9 +2,9 @@ package typings.forkTsCheckerWebpackPlugin.vueProgramMod
 
 import typings.forkTsCheckerWebpackPlugin.Typeofts
 import typings.forkTsCheckerWebpackPlugin.filesRegisterMod.FilesRegister
-import typings.forkTsCheckerWebpackPlugin.filesWatcherMod.FilesWatcher
 import typings.forkTsCheckerWebpackPlugin.resolutionMod.ResolveModuleName
 import typings.forkTsCheckerWebpackPlugin.resolutionMod.ResolveTypeReferenceDirective
+import typings.forkTsCheckerWebpackPlugin.vueOptionsMod.VueOptions
 import typings.typescript.mod.CompilerOptions
 import typings.typescript.mod.ParsedCommandLine
 import typings.typescript.mod.Program
@@ -26,37 +26,80 @@ object VueProgram extends js.Object {
     programConfig: ParsedCommandLine,
     basedir: String,
     files: FilesRegister,
-    watcher: FilesWatcher,
-    oldProgram: Program
+    oldProgram: js.UndefOr[scala.Nothing],
+    userResolveModuleName: js.UndefOr[scala.Nothing],
+    userResolveTypeReferenceDirective: js.UndefOr[scala.Nothing],
+    vueOptions: VueOptions
   ): Program = js.native
   def createProgram(
     typescript: Typeofts,
     programConfig: ParsedCommandLine,
     basedir: String,
     files: FilesRegister,
-    watcher: FilesWatcher,
+    oldProgram: js.UndefOr[scala.Nothing],
+    userResolveModuleName: js.UndefOr[scala.Nothing],
+    userResolveTypeReferenceDirective: ResolveTypeReferenceDirective,
+    vueOptions: VueOptions
+  ): Program = js.native
+  def createProgram(
+    typescript: Typeofts,
+    programConfig: ParsedCommandLine,
+    basedir: String,
+    files: FilesRegister,
+    oldProgram: js.UndefOr[scala.Nothing],
+    userResolveModuleName: ResolveModuleName,
+    userResolveTypeReferenceDirective: js.UndefOr[scala.Nothing],
+    vueOptions: VueOptions
+  ): Program = js.native
+  def createProgram(
+    typescript: Typeofts,
+    programConfig: ParsedCommandLine,
+    basedir: String,
+    files: FilesRegister,
+    oldProgram: js.UndefOr[scala.Nothing],
+    userResolveModuleName: ResolveModuleName,
+    userResolveTypeReferenceDirective: ResolveTypeReferenceDirective,
+    vueOptions: VueOptions
+  ): Program = js.native
+  def createProgram(
+    typescript: Typeofts,
+    programConfig: ParsedCommandLine,
+    basedir: String,
+    files: FilesRegister,
     oldProgram: Program,
     userResolveModuleName: js.UndefOr[scala.Nothing],
-    userResolveTypeReferenceDirective: ResolveTypeReferenceDirective
+    userResolveTypeReferenceDirective: js.UndefOr[scala.Nothing],
+    vueOptions: VueOptions
   ): Program = js.native
   def createProgram(
     typescript: Typeofts,
     programConfig: ParsedCommandLine,
     basedir: String,
     files: FilesRegister,
-    watcher: FilesWatcher,
     oldProgram: Program,
-    userResolveModuleName: ResolveModuleName
+    userResolveModuleName: js.UndefOr[scala.Nothing],
+    userResolveTypeReferenceDirective: ResolveTypeReferenceDirective,
+    vueOptions: VueOptions
   ): Program = js.native
   def createProgram(
     typescript: Typeofts,
     programConfig: ParsedCommandLine,
     basedir: String,
     files: FilesRegister,
-    watcher: FilesWatcher,
     oldProgram: Program,
     userResolveModuleName: ResolveModuleName,
-    userResolveTypeReferenceDirective: ResolveTypeReferenceDirective
+    userResolveTypeReferenceDirective: js.UndefOr[scala.Nothing],
+    vueOptions: VueOptions
+  ): Program = js.native
+  def createProgram(
+    typescript: Typeofts,
+    programConfig: ParsedCommandLine,
+    basedir: String,
+    files: FilesRegister,
+    oldProgram: Program,
+    userResolveModuleName: ResolveModuleName,
+    userResolveTypeReferenceDirective: ResolveTypeReferenceDirective,
+    vueOptions: VueOptions
   ): Program = js.native
   def isVue(filePath: String): Boolean = js.native
   def loadProgramConfig(typescript: Typeofts, configFile: String, compilerOptions: js.Object): ParsedCommandLine = js.native
@@ -67,6 +110,6 @@ object VueProgram extends js.Object {
     * (This is a fast, simplified inspiration of what's described here: https://github.com/Microsoft/TypeScript/issues/5039)
     */
   def resolveNonTsModuleName(moduleName: String, containingFile: String, basedir: String, options: CompilerOptions): String = js.native
-  def resolveScriptBlock(typescript: Typeofts, content: String): ResolvedScript = js.native
+  def resolveScriptBlock(typescript: Typeofts, content: String, compiler: String): ResolvedScript = js.native
 }
 

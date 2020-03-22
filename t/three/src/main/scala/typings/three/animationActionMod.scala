@@ -3,6 +3,7 @@ package typings.three
 import typings.three.animationClipMod.AnimationClip
 import typings.three.animationMixerMod.AnimationMixer
 import typings.three.constantsMod.AnimationActionLoopStyles
+import typings.three.object3DMod.Object3D
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +12,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object animationActionMod extends js.Object {
   @js.native
-  class AnimationAction () extends js.Object {
+  class AnimationAction protected () extends js.Object {
+    def this(mixer: AnimationMixer, clip: AnimationClip) = this()
+    def this(mixer: AnimationMixer, clip: AnimationClip, localRoot: Object3D) = this()
     var clampWhenFinished: Boolean = js.native
     var enabled: Boolean = js.native
     var loop: AnimationActionLoopStyles = js.native
@@ -30,7 +33,7 @@ object animationActionMod extends js.Object {
     def getEffectiveTimeScale(): Double = js.native
     def getEffectiveWeight(): Double = js.native
     def getMixer(): AnimationMixer = js.native
-    def getRoot(): js.Any = js.native
+    def getRoot(): Object3D = js.native
     def halt(duration: Double): AnimationAction = js.native
     def isRunning(): Boolean = js.native
     def isScheduled(): Boolean = js.native

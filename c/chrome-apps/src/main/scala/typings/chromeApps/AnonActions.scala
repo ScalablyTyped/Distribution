@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait AnonActions extends js.Object {
   var actions: js.UndefOr[js.Array[AnonTypeDeclarativeWebRequestActionsList]] = js.undefined
-  var conditions: js.UndefOr[js.Array[AnonKey]] = js.undefined
+  var conditions: js.UndefOr[js.Array[AnonDictkey]] = js.undefined
   /** Event name */
   var event: js.UndefOr[DeclarativeWebRequestEventList] = js.undefined
 }
@@ -16,7 +16,7 @@ object AnonActions {
   @scala.inline
   def apply(
     actions: js.Array[AnonTypeDeclarativeWebRequestActionsList] = null,
-    conditions: js.Array[AnonKey] = null,
+    conditions: js.Array[AnonDictkey] = null,
     event: DeclarativeWebRequestEventList = null
   ): AnonActions = {
     val __obj = js.Dynamic.literal()

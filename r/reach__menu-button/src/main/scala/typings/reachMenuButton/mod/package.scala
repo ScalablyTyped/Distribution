@@ -5,13 +5,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mod {
-  type MenuButtonProps = typings.reachMenuButton.AnonChildren with typings.react.mod.HTMLProps[typings.std.HTMLButtonElement]
-  type MenuItemProps = typings.reachMenuButton.AnonE with typings.react.mod.HTMLProps[typings.std.HTMLDivElement]
   type MenuLinkProps[T /* <: typings.reachMenuButton.mod.SupportedMenuLinkComponent */] = typings.reachMenuButton.mod.ResolvedMenuLinkProps[T] with typings.reachMenuButton.AnonAs[T]
   type MenuListProps = (typings.react.mod.DetailedHTMLProps[
     typings.react.mod.HTMLAttributes[typings.std.HTMLDivElement], 
     typings.std.HTMLDivElement
-  ]) with typings.reachMenuButton.AnonChildrenReactNode
+  ]) with typings.reachMenuButton.AnonChildren
   type ResolvedMenuLinkComponent[T] = typings.react.mod.ComponentType[T] | T
   type ResolvedMenuLinkProps[T] = T | (/* import warning: importer.ImportType#apply Failed type conversion: react.react._Global_.JSX.IntrinsicElements[T] */ js.Any)
   /* Rewritten from type alias, can be one of: 

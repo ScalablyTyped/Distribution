@@ -11,7 +11,7 @@ trait GetBlueprintsResult extends js.Object {
     */
   var blueprints: js.UndefOr[BlueprintList] = js.native
   /**
-    * A token used for advancing to the next page of results from your get blueprints request.
+    * The token to advance to the next page of resutls from your request. A next page token is not returned if there are no more results to display. To get the next page of results, perform another GetBlueprints request and specify the next page token using the pageToken parameter.
     */
   var nextPageToken: js.UndefOr[String] = js.native
 }

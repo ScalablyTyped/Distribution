@@ -1,7 +1,7 @@
 package typings.reactImageMagnify.mod
 
 import typings.react.mod.ReactElement
-import typings.reactImageMagnify.AnonChildren
+import typings.reactImageMagnify.ReactImageMagnifyPropsRea
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @JSImport("react-image-magnify", JSImport.Default)
 @js.native
 object default extends js.Object {
-  def apply(props: ReactImageMagnifyProps with AnonChildren): ReactElement = js.native
+  def apply(props: ReactImageMagnifyPropsRea): ReactElement = js.native
 }
 

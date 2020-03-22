@@ -1,7 +1,7 @@
 package typings.aureliaDependencyInjection.mod
 
 import typings.aureliaDependencyInjection.AnonInjectAny
-import typings.aureliaDependencyInjection.TypeofClassContainer
+import typings.aureliaDependencyInjection.TypeofContainer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +19,7 @@ class Container () extends js.Object {
   def autoRegister[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](key: Primitive, fn: DependencyCtorOrFunctor[TBase, TImpl, TArgs]): Resolver_ = js.native
   def autoRegisterAll(fns: js.Array[DependencyCtor[_, _, _]]): Unit = js.native
   def createChild(): Container = js.native
-  def get[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](key: TypeofClassContainer): Container = js.native
+  def get[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](key: TypeofContainer): Container = js.native
   def get[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](key: PrimitiveOrDependencyCtor[TBase, TImpl, TArgs]): ImplOrAny[TImpl] = js.native
   def getAll[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](key: PrimitiveOrDependencyCtor[TBase, TImpl, TArgs]): js.Array[ImplOrAny[TImpl]] = js.native
   def getResolver[TStrategyKey /* <: String */, TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](key: PrimitiveOrDependencyCtorOrFunctor[TBase, TImpl, TArgs]): StrategyResolver[TBase, TImpl, TArgs, TStrategyKey] = js.native

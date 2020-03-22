@@ -1,6 +1,6 @@
 package typings.qlik.mod
 
-import typings.qlik.AnonApp
+import typings.qlik.AnonGetContent
 import typings.qlik.AnonNoInteraction
 import typings.qlik.qlikStrings.CurrentSelections
 import typings.qlik.qlikStrings.`0`
@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait App extends js.Object {
-  var variable: AnonApp = js.native
+  var variable: AnonGetContent = js.native
   def addAlternateState(qStateName: String): js.Promise[_] = js.native
   def back(): js.Promise[_] = js.native
   def clearrAll(): js.Promise[_] = js.native

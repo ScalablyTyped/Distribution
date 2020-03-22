@@ -1,7 +1,7 @@
 
 # Scala.js typings for make-error
 
-Typings are for version 1.3.5
+Typings are for version 1.3.6
 
 ## Library description:
 Make your own error types!

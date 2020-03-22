@@ -1,7 +1,7 @@
 package typings.graphql.definitionMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.graphql.AnonExtensionASTNodesKey
+import typings.graphql.GraphQLUnionTypeConfigany
 import typings.graphql.astMod.UnionTypeDefinitionNode
 import typings.graphql.astMod.UnionTypeExtensionNode
 import typings.graphql.maybeMod.Maybe
@@ -28,7 +28,7 @@ class GraphQLUnionType protected ()
   var resolveType: Maybe[GraphQLTypeResolver[_, _, StringDictionary[_]]] = js.native
   def getTypes(): js.Array[GraphQLObjectType[_, _, StringDictionary[_]]] = js.native
   def inspect(): String = js.native
-  def toConfig(): (GraphQLUnionTypeConfig[_, _]) with AnonExtensionASTNodesKey = js.native
+  def toConfig(): GraphQLUnionTypeConfigany = js.native
   def toJSON(): String = js.native
 }
 

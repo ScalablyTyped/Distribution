@@ -10,6 +10,7 @@ import typings.tstl.iforwardcontainerMod.IForwardContainer
 import typings.tstl.iforwarditeratorMod.IForwardIterator
 import typings.tstl.ifrontMod.IFront
 import typings.tstl.ilistalgorithmMod.IListAlgorithm
+import typings.tstl.ipointerMod.IPointer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -215,19 +216,7 @@ object forwardListMod extends js.Object {
       var _Try_value: js.Any = js.native
       var next_ : js.Any = js.native
       var source_ptr_ : js.Any = js.native
-      /**
-        * Reference of the value.
-        */
-      /* CompleteClass */
-      override var value: T = js.native
       var value_ : js.Any = js.native
-      /**
-        * Get next iterator.
-        *
-        * @return The next iterator.
-        */
-      /* CompleteClass */
-      override def next(): Iterator[T] = js.native
       /**
         * Get source container.
         *
@@ -244,6 +233,20 @@ object forwardListMod extends js.Object {
         */
       @JSName("value")
       def value_MIterator(`val`: T): js.Any = js.native
+    }
+    
+    /* static members */
+    @js.native
+    object Iterator extends js.Object {
+      /**
+        * @internal
+        */
+      def _Set_next[T](it: Iterator[T], next: Iterator[T]): Unit = js.native
+      /**
+        * @internal
+        */
+      def create[T](source: IPointer[ForwardList[T]], next: Iterator[T]): Iterator[T] = js.native
+      def create[T](source: IPointer[ForwardList[T]], next: Iterator[T], value: T): Iterator[T] = js.native
     }
     
   }

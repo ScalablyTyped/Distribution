@@ -1,6 +1,6 @@
 package typings.cesium.mod
 
-import typings.cesium.AnonBottomRadiusFill
+import typings.cesium.AnonMaterial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("cesium", "CylinderGraphics")
 @js.native
 class CylinderGraphics () extends js.Object {
-  def this(options: AnonBottomRadiusFill) = this()
+  def this(options: AnonMaterial) = this()
   var bottomRadius: Property = js.native
   var definitionChanged: Event[js.Array[_]] = js.native
   var fill: Property = js.native

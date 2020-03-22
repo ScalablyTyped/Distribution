@@ -1,6 +1,6 @@
 package typings.reactOnsenui.mod
 
-import typings.reactOnsenui.HTMLAttributesidclassNamestyle
+import typings.reactOnsenui.HTMLAttributesidclassName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-onsenui", "Component")
 @js.native
 class Component[P, S] ()
-  extends typings.react.mod.Component[HTMLAttributesidclassNamestyle with P, S, js.Any]
+  extends typings.react.mod.Component[HTMLAttributesidclassName with P, S, js.Any]
 

@@ -1,8 +1,8 @@
 package typings.ionicCore.utilsConfigMod
 
+import typings.ionicCore.animationInterfaceMod.Animation
+import typings.ionicCore.animationInterfaceMod.AnimationBuilder
 import typings.ionicCore.mod.Mode
-import typings.ionicCore.oldAnimationAnimationInterfaceMod.Animation
-import typings.ionicCore.oldAnimationAnimationInterfaceMod.AnimationBuilder
 import typings.ionicCore.spinnerConfigsMod.SpinnerTypes
 import typings.ionicCore.tabBarInterfaceMod.TabButtonLayout
 import scala.scalajs.js
@@ -165,10 +165,10 @@ object IonicConfig {
     _forceStatusbarPadding: js.UndefOr[Boolean] = js.undefined,
     _testing: js.UndefOr[Boolean] = js.undefined,
     _zoneGate: /* h */ js.Function0[_] => _ = null,
-    actionSheetEnter: (/* Animation */ Animation, /* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => js.Promise[Animation] = null,
-    actionSheetLeave: (/* Animation */ Animation, /* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => js.Promise[Animation] = null,
-    alertEnter: (/* Animation */ Animation, /* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => js.Promise[Animation] = null,
-    alertLeave: (/* Animation */ Animation, /* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => js.Promise[Animation] = null,
+    actionSheetEnter: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation = null,
+    actionSheetLeave: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation = null,
+    alertEnter: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation = null,
+    alertLeave: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation = null,
     animated: js.UndefOr[Boolean] = js.undefined,
     backButtonIcon: String = null,
     backButtonText: String = null,
@@ -179,20 +179,20 @@ object IonicConfig {
     inputBlurring: js.UndefOr[Boolean] = js.undefined,
     inputShims: js.UndefOr[Boolean] = js.undefined,
     keyboardHeight: Int | Double = null,
-    loadingEnter: (/* Animation */ Animation, /* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => js.Promise[Animation] = null,
-    loadingLeave: (/* Animation */ Animation, /* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => js.Promise[Animation] = null,
+    loadingEnter: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation = null,
+    loadingLeave: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation = null,
     loadingSpinner: SpinnerTypes = null,
     menuIcon: String = null,
     menuType: String = null,
-    modalEnter: (/* Animation */ Animation, /* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => js.Promise[Animation] = null,
-    modalLeave: (/* Animation */ Animation, /* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => js.Promise[Animation] = null,
+    modalEnter: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation = null,
+    modalLeave: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation = null,
     mode: Mode = null,
-    navAnimation: (/* Animation */ Animation, /* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => js.Promise[Animation] = null,
+    navAnimation: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation = null,
     persistConfig: js.UndefOr[Boolean] = js.undefined,
-    pickerEnter: (/* Animation */ Animation, /* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => js.Promise[Animation] = null,
-    pickerLeave: (/* Animation */ Animation, /* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => js.Promise[Animation] = null,
-    popoverEnter: (/* Animation */ Animation, /* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => js.Promise[Animation] = null,
-    popoverLeave: (/* Animation */ Animation, /* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => js.Promise[Animation] = null,
+    pickerEnter: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation = null,
+    pickerLeave: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation = null,
+    popoverEnter: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation = null,
+    popoverLeave: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation = null,
     refreshingIcon: String = null,
     refreshingSpinner: SpinnerTypes = null,
     rippleEffect: js.UndefOr[Boolean] = js.undefined,
@@ -202,17 +202,17 @@ object IonicConfig {
     statusTap: js.UndefOr[Boolean] = js.undefined,
     swipeBackEnabled: js.UndefOr[Boolean] = js.undefined,
     tabButtonLayout: TabButtonLayout = null,
-    toastEnter: (/* Animation */ Animation, /* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => js.Promise[Animation] = null,
-    toastLeave: (/* Animation */ Animation, /* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => js.Promise[Animation] = null
+    toastEnter: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation = null,
+    toastLeave: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation = null
   ): IonicConfig = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(_forceStatusbarPadding)) __obj.updateDynamic("_forceStatusbarPadding")(_forceStatusbarPadding.asInstanceOf[js.Any])
     if (!js.isUndefined(_testing)) __obj.updateDynamic("_testing")(_testing.asInstanceOf[js.Any])
     if (_zoneGate != null) __obj.updateDynamic("_zoneGate")(js.Any.fromFunction1(_zoneGate))
-    if (actionSheetEnter != null) __obj.updateDynamic("actionSheetEnter")(js.Any.fromFunction3(actionSheetEnter))
-    if (actionSheetLeave != null) __obj.updateDynamic("actionSheetLeave")(js.Any.fromFunction3(actionSheetLeave))
-    if (alertEnter != null) __obj.updateDynamic("alertEnter")(js.Any.fromFunction3(alertEnter))
-    if (alertLeave != null) __obj.updateDynamic("alertLeave")(js.Any.fromFunction3(alertLeave))
+    if (actionSheetEnter != null) __obj.updateDynamic("actionSheetEnter")(js.Any.fromFunction2(actionSheetEnter))
+    if (actionSheetLeave != null) __obj.updateDynamic("actionSheetLeave")(js.Any.fromFunction2(actionSheetLeave))
+    if (alertEnter != null) __obj.updateDynamic("alertEnter")(js.Any.fromFunction2(alertEnter))
+    if (alertLeave != null) __obj.updateDynamic("alertLeave")(js.Any.fromFunction2(alertLeave))
     if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.asInstanceOf[js.Any])
     if (backButtonIcon != null) __obj.updateDynamic("backButtonIcon")(backButtonIcon.asInstanceOf[js.Any])
     if (backButtonText != null) __obj.updateDynamic("backButtonText")(backButtonText.asInstanceOf[js.Any])
@@ -223,20 +223,20 @@ object IonicConfig {
     if (!js.isUndefined(inputBlurring)) __obj.updateDynamic("inputBlurring")(inputBlurring.asInstanceOf[js.Any])
     if (!js.isUndefined(inputShims)) __obj.updateDynamic("inputShims")(inputShims.asInstanceOf[js.Any])
     if (keyboardHeight != null) __obj.updateDynamic("keyboardHeight")(keyboardHeight.asInstanceOf[js.Any])
-    if (loadingEnter != null) __obj.updateDynamic("loadingEnter")(js.Any.fromFunction3(loadingEnter))
-    if (loadingLeave != null) __obj.updateDynamic("loadingLeave")(js.Any.fromFunction3(loadingLeave))
+    if (loadingEnter != null) __obj.updateDynamic("loadingEnter")(js.Any.fromFunction2(loadingEnter))
+    if (loadingLeave != null) __obj.updateDynamic("loadingLeave")(js.Any.fromFunction2(loadingLeave))
     if (loadingSpinner != null) __obj.updateDynamic("loadingSpinner")(loadingSpinner.asInstanceOf[js.Any])
     if (menuIcon != null) __obj.updateDynamic("menuIcon")(menuIcon.asInstanceOf[js.Any])
     if (menuType != null) __obj.updateDynamic("menuType")(menuType.asInstanceOf[js.Any])
-    if (modalEnter != null) __obj.updateDynamic("modalEnter")(js.Any.fromFunction3(modalEnter))
-    if (modalLeave != null) __obj.updateDynamic("modalLeave")(js.Any.fromFunction3(modalLeave))
+    if (modalEnter != null) __obj.updateDynamic("modalEnter")(js.Any.fromFunction2(modalEnter))
+    if (modalLeave != null) __obj.updateDynamic("modalLeave")(js.Any.fromFunction2(modalLeave))
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (navAnimation != null) __obj.updateDynamic("navAnimation")(js.Any.fromFunction3(navAnimation))
+    if (navAnimation != null) __obj.updateDynamic("navAnimation")(js.Any.fromFunction2(navAnimation))
     if (!js.isUndefined(persistConfig)) __obj.updateDynamic("persistConfig")(persistConfig.asInstanceOf[js.Any])
-    if (pickerEnter != null) __obj.updateDynamic("pickerEnter")(js.Any.fromFunction3(pickerEnter))
-    if (pickerLeave != null) __obj.updateDynamic("pickerLeave")(js.Any.fromFunction3(pickerLeave))
-    if (popoverEnter != null) __obj.updateDynamic("popoverEnter")(js.Any.fromFunction3(popoverEnter))
-    if (popoverLeave != null) __obj.updateDynamic("popoverLeave")(js.Any.fromFunction3(popoverLeave))
+    if (pickerEnter != null) __obj.updateDynamic("pickerEnter")(js.Any.fromFunction2(pickerEnter))
+    if (pickerLeave != null) __obj.updateDynamic("pickerLeave")(js.Any.fromFunction2(pickerLeave))
+    if (popoverEnter != null) __obj.updateDynamic("popoverEnter")(js.Any.fromFunction2(popoverEnter))
+    if (popoverLeave != null) __obj.updateDynamic("popoverLeave")(js.Any.fromFunction2(popoverLeave))
     if (refreshingIcon != null) __obj.updateDynamic("refreshingIcon")(refreshingIcon.asInstanceOf[js.Any])
     if (refreshingSpinner != null) __obj.updateDynamic("refreshingSpinner")(refreshingSpinner.asInstanceOf[js.Any])
     if (!js.isUndefined(rippleEffect)) __obj.updateDynamic("rippleEffect")(rippleEffect.asInstanceOf[js.Any])
@@ -246,8 +246,8 @@ object IonicConfig {
     if (!js.isUndefined(statusTap)) __obj.updateDynamic("statusTap")(statusTap.asInstanceOf[js.Any])
     if (!js.isUndefined(swipeBackEnabled)) __obj.updateDynamic("swipeBackEnabled")(swipeBackEnabled.asInstanceOf[js.Any])
     if (tabButtonLayout != null) __obj.updateDynamic("tabButtonLayout")(tabButtonLayout.asInstanceOf[js.Any])
-    if (toastEnter != null) __obj.updateDynamic("toastEnter")(js.Any.fromFunction3(toastEnter))
-    if (toastLeave != null) __obj.updateDynamic("toastLeave")(js.Any.fromFunction3(toastLeave))
+    if (toastEnter != null) __obj.updateDynamic("toastEnter")(js.Any.fromFunction2(toastEnter))
+    if (toastLeave != null) __obj.updateDynamic("toastLeave")(js.Any.fromFunction2(toastLeave))
     __obj.asInstanceOf[IonicConfig]
   }
 }

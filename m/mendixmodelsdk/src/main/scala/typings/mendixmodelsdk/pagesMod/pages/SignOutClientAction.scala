@@ -179,6 +179,15 @@ object SignOutClientAction extends js.Object {
   def createInStaticImageViewerUnderClickAction(container: StaticImageViewer): SignOutClientAction = js.native
   /**
     * Creates and returns a new SignOutClientAction instance in the SDK and on the server.
+    * The new SignOutClientAction will be automatically stored in the 'onEnterKeyPressAction' property
+    * of the parent TextBox element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.7.0 and higher
+    */
+  def createInTextBoxUnderOnEnterKeyPressAction(container: TextBox): SignOutClientAction = js.native
+  /**
+    * Creates and returns a new SignOutClientAction instance in the SDK and on the server.
     * The new SignOutClientAction will be automatically stored in the 'action' property
     * of the parent customwidgets.WidgetValue element passed as argument.
     *

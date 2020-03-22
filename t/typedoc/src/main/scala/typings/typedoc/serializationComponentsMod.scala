@@ -1,10 +1,9 @@
 package typings.typedoc
 
-import org.scalablytyped.runtime.Instantiable3
-import typings.typedoc.abstractMod.ReflectionKind
-import typings.typedoc.libUtilsMod.AbstractComponent
+import typings.std.Partial
 import typings.typedoc.modelsMod.Reflection
 import typings.typedoc.modelsMod.Type
+import typings.typedoc.schemaMod.ModelToObject
 import typings.typedoc.serializerMod.Serializer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,31 +13,21 @@ import scala.scalajs.js.annotation._
 @js.native
 object serializationComponentsMod extends js.Object {
   @js.native
-  abstract class ReflectionSerializerComponent[T /* <: Reflection */] () extends SerializerComponent[T] {
-    @JSName("serializeGroupSymbol")
-    var serializeGroupSymbol_ReflectionSerializerComponent: Instantiable3[
-        /* name */ String, 
-        /* kind */ ReflectionKind, 
-        js.UndefOr[/* parent */ typings.typedoc.abstractMod.Reflection], 
-        Reflection
-      ] = js.native
-  }
+  abstract class ReflectionSerializerComponent[T /* <: Reflection */] () extends SerializerComponent[T]
   
   @js.native
-  abstract class SerializerComponent[T] () extends AbstractComponent[Serializer] {
-    var serializeGroupSymbol: js.Any = js.native
+  abstract class SerializerComponent[T] protected () extends js.Object {
+    def this(owner: Serializer) = this()
+    var owner: Serializer = js.native
     def priority(): Double = js.native
     def serializeGroup(instance: js.Any): Boolean = js.native
     def supports(item: js.Any): Boolean = js.native
-    def toObject(item: T): js.Any = js.native
-    def toObject(item: T, obj: js.Any): js.Any = js.native
+    def toObject(item: T): Partial[ModelToObject[T]] = js.native
+    def toObject(item: T, obj: js.Object): Partial[ModelToObject[T]] = js.native
   }
   
   @js.native
-  abstract class TypeSerializerComponent[T /* <: Type */] () extends SerializerComponent[T] {
-    @JSName("serializeGroupSymbol")
-    var serializeGroupSymbol_TypeSerializerComponent: TypeofClassType = js.native
-  }
+  abstract class TypeSerializerComponent[T /* <: Type */] () extends SerializerComponent[T]
   
   /* static members */
   @js.native

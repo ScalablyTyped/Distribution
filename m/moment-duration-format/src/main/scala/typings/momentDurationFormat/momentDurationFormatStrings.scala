@@ -11,12 +11,6 @@ import scala.scalajs.js.annotation._
 
 object momentDurationFormatStrings {
   @js.native
-  sealed trait DurationLabelDef extends js.Object
-  
-  @js.native
-  sealed trait DurationTimeDef extends js.Object
-  
-  @js.native
   sealed trait HM extends DurationTemplate
   
   @js.native
@@ -130,10 +124,6 @@ object momentDurationFormatStrings {
   @js.native
   sealed trait yyy extends DurationToken
   
-  @scala.inline
-  def DurationLabelDef: DurationLabelDef = "DurationLabelDef".asInstanceOf[DurationLabelDef]
-  @scala.inline
-  def DurationTimeDef: DurationTimeDef = "DurationTimeDef".asInstanceOf[DurationTimeDef]
   @scala.inline
   def HM: HM = "HM".asInstanceOf[HM]
   @scala.inline

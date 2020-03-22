@@ -6,7 +6,7 @@ import typings.reactNative.mod.ImageStyle
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
-import typings.std.Partial
+import typings.reactNativeElements.PartialImageProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,7 +46,7 @@ trait CardProps extends js.Object {
   /**
     * Optional properties to pass to the image if provided e.g "resizeMode"
     */
-  var imageProps: js.UndefOr[Partial[ImageProps]] = js.undefined
+  var imageProps: js.UndefOr[PartialImageProps] = js.undefined
   /**
     * Specify image styling if image is provided
     */
@@ -79,7 +79,7 @@ object CardProps {
     featuredTitle: String = null,
     featuredTitleStyle: StyleProp[TextStyle] = null,
     image: ImageSourcePropType = null,
-    imageProps: Partial[ImageProps] = null,
+    imageProps: PartialImageProps = null,
     imageStyle: ImageStyle = null,
     imageWrapperStyle: StyleProp[ViewStyle] = null,
     title: String | ReactElement = null,

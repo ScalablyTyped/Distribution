@@ -1,6 +1,6 @@
 package typings.reactOnsenui.mod
 
-import typings.reactOnsenui.HTMLAttributesidclassNamestylesideleftrightcollaps
+import typings.reactOnsenui.HTMLAttributesidclassNameAnimation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-onsenui", "SplitterSide")
 @js.native
 class SplitterSide ()
-  extends typings.react.mod.Component[HTMLAttributesidclassNamestylesideleftrightcollaps, js.Any, js.Any]
+  extends typings.react.mod.Component[HTMLAttributesidclassNameAnimation, js.Any, js.Any]
 

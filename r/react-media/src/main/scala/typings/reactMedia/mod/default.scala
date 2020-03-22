@@ -9,5 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object default extends js.Object {
   def apply(props: SingleQueryProps): ReactElement = js.native
+  def apply[Q](props: MultiQueryProps[Q]): ReactElement = js.native
 }
 

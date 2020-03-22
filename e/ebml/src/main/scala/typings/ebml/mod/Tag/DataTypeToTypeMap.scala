@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in ebml.ebml.TagType ]: any} */ trait DataTypeToTypeMap extends js.Object {
+/* Inlined parent std.Record<ebml.ebml.TagType, any> */
+trait DataTypeToTypeMap extends js.Object {
   var `8`: String
   var b: Double
   var d: Date

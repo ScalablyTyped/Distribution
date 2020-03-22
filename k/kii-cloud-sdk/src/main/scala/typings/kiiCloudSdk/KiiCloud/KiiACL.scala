@@ -1,7 +1,7 @@
 package typings.kiiCloudSdk.KiiCloud
 
-import typings.kiiCloudSdk.AnonAnErrorStringFailure
-import typings.kiiCloudSdk.AnonAnErrorStringFailureSuccess
+import typings.kiiCloudSdk.Anon0
+import typings.kiiCloudSdk.Anon1
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -61,7 +61,7 @@ class KiiACL () extends js.Object {
     *     });
     */
   def listACLEntries(): js.Promise[js.Tuple2[KiiACL, js.Array[KiiACLEntry]]] = js.native
-  def listACLEntries(callbacks: AnonAnErrorStringFailure): js.Promise[js.Tuple2[KiiACL, js.Array[KiiACLEntry]]] = js.native
+  def listACLEntries(callbacks: Anon0): js.Promise[js.Tuple2[KiiACL, js.Array[KiiACLEntry]]] = js.native
   /**
     * Add a KiiACLEntry to the local object, if not already present. This does not explicitly grant any permissions, which should be done through the KiiACLEntry itself. This method simply adds
     * the entry to the local ACL object so it can be saved to the server.
@@ -132,6 +132,6 @@ class KiiACL () extends js.Object {
     *     });
     */
   def save(): js.Promise[KiiACL] = js.native
-  def save(callbacks: AnonAnErrorStringFailureSuccess): js.Promise[KiiACL] = js.native
+  def save(callbacks: Anon1): js.Promise[KiiACL] = js.native
 }
 

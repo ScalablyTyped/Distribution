@@ -1,24 +1,24 @@
 package typings.reactPlotlyJs.mod
 
 import typings.plotlyJs.mod.ButtonClickEvent
-import typings.plotlyJs.mod.ClickAnnotationEvent
-import typings.plotlyJs.mod.Config
 import typings.plotlyJs.mod.Data
 import typings.plotlyJs.mod.Frame
-import typings.plotlyJs.mod.FrameAnimationEvent
-import typings.plotlyJs.mod.Layout
-import typings.plotlyJs.mod.LegendClickEvent
-import typings.plotlyJs.mod.PlotMouseEvent
-import typings.plotlyJs.mod.PlotRelayoutEvent
 import typings.plotlyJs.mod.PlotRestyleEvent
-import typings.plotlyJs.mod.PlotSelectionEvent
-import typings.plotlyJs.mod.SliderChangeEvent
-import typings.plotlyJs.mod.SliderEndEvent
-import typings.plotlyJs.mod.SliderStartEvent
 import typings.react.mod.CSSProperties
-import typings.std.Error
-import typings.std.HTMLElement
-import typings.std.Partial
+import typings.reactPlotlyJs.PartialConfig
+import typings.reactPlotlyJs.PartialLayout
+import typings.reactPlotlyJs.ReadonlyClickAnnotationEv
+import typings.reactPlotlyJs.ReadonlyError
+import typings.reactPlotlyJs.ReadonlyFigure
+import typings.reactPlotlyJs.ReadonlyFrameAnimationEve
+import typings.reactPlotlyJs.ReadonlyHTMLElement
+import typings.reactPlotlyJs.ReadonlyLegendClickEvent
+import typings.reactPlotlyJs.ReadonlyPlotMouseEvent
+import typings.reactPlotlyJs.ReadonlyPlotRelayoutEvent
+import typings.reactPlotlyJs.ReadonlyPlotSelectionEven
+import typings.reactPlotlyJs.ReadonlySliderChangeEvent
+import typings.reactPlotlyJs.ReadonlySliderEndEvent
+import typings.reactPlotlyJs.ReadonlySliderStartEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,7 +28,7 @@ trait PlotParams extends js.Object {
     * applied to the <div> into which the plot is rendered
     */
   var className: js.UndefOr[String] = js.undefined
-  var config: js.UndefOr[Partial[Config]] = js.undefined
+  var config: js.UndefOr[PartialConfig] = js.undefined
   var data: js.Array[Data]
   /**
     * Assign the graph div to window.gd for debugging
@@ -39,57 +39,63 @@ trait PlotParams extends js.Object {
     */
   var divId: js.UndefOr[String] = js.undefined
   var frames: js.UndefOr[js.Array[Frame]] = js.undefined
-  var layout: Partial[Layout]
+  var layout: PartialLayout
   var onAfterExport: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onAfterPlot: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onAnimated: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onAnimatingFrame: js.UndefOr[js.Function1[/* event */ FrameAnimationEvent, Unit]] = js.undefined
+  var onAnimatingFrame: js.UndefOr[js.Function1[/* event */ ReadonlyFrameAnimationEve, Unit]] = js.undefined
   var onAnimationInterrupted: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onAutoSize: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onBeforeExport: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onButtonClicked: js.UndefOr[js.Function1[/* event */ ButtonClickEvent, Unit]] = js.undefined
-  var onClick: js.UndefOr[js.Function1[/* event */ PlotMouseEvent, Unit]] = js.undefined
-  var onClickAnnotation: js.UndefOr[js.Function1[/* event */ ClickAnnotationEvent, Unit]] = js.undefined
+  var onClick: js.UndefOr[js.Function1[/* event */ ReadonlyPlotMouseEvent, Unit]] = js.undefined
+  var onClickAnnotation: js.UndefOr[js.Function1[/* event */ ReadonlyClickAnnotationEv, Unit]] = js.undefined
   var onDeselect: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onDoubleClick: js.UndefOr[js.Function0[Unit]] = js.undefined
   /**
     * Callback executed when a plotly.js API method rejects
     * @param err Error
     */
-  var onError: js.UndefOr[js.Function1[/* err */ Error, Unit]] = js.undefined
+  var onError: js.UndefOr[js.Function1[/* err */ ReadonlyError, Unit]] = js.undefined
   var onFramework: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onHover: js.UndefOr[js.Function1[/* event */ PlotMouseEvent, Unit]] = js.undefined
+  var onHover: js.UndefOr[js.Function1[/* event */ ReadonlyPlotMouseEvent, Unit]] = js.undefined
   /**
     * Callback executed after plot is initialized.
     * @param figure Object with three keys corresponding to input props: data, layout and frames.
     * @param graphDiv Reference to the DOM node into which the figure was rendered.
     */
-  var onInitialized: js.UndefOr[js.Function2[/* figure */ Figure, /* graphDiv */ HTMLElement, Unit]] = js.undefined
-  var onLegendClick: js.UndefOr[js.Function1[/* event */ LegendClickEvent, Boolean]] = js.undefined
-  var onLegendDoubleClick: js.UndefOr[js.Function1[/* event */ LegendClickEvent, Boolean]] = js.undefined
+  var onInitialized: js.UndefOr[
+    js.Function2[/* figure */ ReadonlyFigure, /* graphDiv */ ReadonlyHTMLElement, Unit]
+  ] = js.undefined
+  var onLegendClick: js.UndefOr[js.Function1[/* event */ ReadonlyLegendClickEvent, Boolean]] = js.undefined
+  var onLegendDoubleClick: js.UndefOr[js.Function1[/* event */ ReadonlyLegendClickEvent, Boolean]] = js.undefined
   /**
     * Callback executed when component unmounts, before Plotly.purge strips the graphDiv of all private attributes.
     * @param figure Object with three keys corresponding to input props: data, layout and frames.
     * @param graphDiv Reference to the DOM node into which the figure was rendered.
     */
-  var onPurge: js.UndefOr[js.Function2[/* figure */ Figure, /* graphDiv */ HTMLElement, Unit]] = js.undefined
+  var onPurge: js.UndefOr[
+    js.Function2[/* figure */ ReadonlyFigure, /* graphDiv */ ReadonlyHTMLElement, Unit]
+  ] = js.undefined
   var onRedraw: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onRelayout: js.UndefOr[js.Function1[/* event */ PlotRelayoutEvent, Unit]] = js.undefined
+  var onRelayout: js.UndefOr[js.Function1[/* event */ ReadonlyPlotRelayoutEvent, Unit]] = js.undefined
   var onRestyle: js.UndefOr[js.Function1[/* event */ PlotRestyleEvent, Unit]] = js.undefined
-  var onSelected: js.UndefOr[js.Function1[/* event */ PlotSelectionEvent, Unit]] = js.undefined
-  var onSelecting: js.UndefOr[js.Function1[/* event */ PlotSelectionEvent, Unit]] = js.undefined
-  var onSliderChange: js.UndefOr[js.Function1[/* event */ SliderChangeEvent, Unit]] = js.undefined
-  var onSliderEnd: js.UndefOr[js.Function1[/* event */ SliderEndEvent, Unit]] = js.undefined
-  var onSliderStart: js.UndefOr[js.Function1[/* event */ SliderStartEvent, Unit]] = js.undefined
+  var onSelected: js.UndefOr[js.Function1[/* event */ ReadonlyPlotSelectionEven, Unit]] = js.undefined
+  var onSelecting: js.UndefOr[js.Function1[/* event */ ReadonlyPlotSelectionEven, Unit]] = js.undefined
+  var onSliderChange: js.UndefOr[js.Function1[/* event */ ReadonlySliderChangeEvent, Unit]] = js.undefined
+  var onSliderEnd: js.UndefOr[js.Function1[/* event */ ReadonlySliderEndEvent, Unit]] = js.undefined
+  var onSliderStart: js.UndefOr[js.Function1[/* event */ ReadonlySliderStartEvent, Unit]] = js.undefined
   var onTransitionInterrupted: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onTransitioning: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onUnhover: js.UndefOr[js.Function1[/* event */ PlotMouseEvent, Unit]] = js.undefined
+  var onUnhover: js.UndefOr[js.Function1[/* event */ ReadonlyPlotMouseEvent, Unit]] = js.undefined
   /**
     * Callback executed when when a plot is updated due to new data or layout, or when user interacts with a plot.
     * @param figure Object with three keys corresponding to input props: data, layout and frames.
     * @param graphDiv Reference to the DOM node into which the figure was rendered.
     */
-  var onUpdate: js.UndefOr[js.Function2[/* figure */ Figure, /* graphDiv */ HTMLElement, Unit]] = js.undefined
+  var onUpdate: js.UndefOr[
+    js.Function2[/* figure */ ReadonlyFigure, /* graphDiv */ ReadonlyHTMLElement, Unit]
+  ] = js.undefined
   /**
     * When provided, causes the plot to update only when the revision is incremented.
     */
@@ -108,43 +114,43 @@ object PlotParams {
   @scala.inline
   def apply(
     data: js.Array[Data],
-    layout: Partial[Layout],
+    layout: PartialLayout,
     className: String = null,
-    config: Partial[Config] = null,
+    config: PartialConfig = null,
     debug: js.UndefOr[Boolean] = js.undefined,
     divId: String = null,
     frames: js.Array[Frame] = null,
     onAfterExport: () => Unit = null,
     onAfterPlot: () => Unit = null,
     onAnimated: () => Unit = null,
-    onAnimatingFrame: /* event */ FrameAnimationEvent => Unit = null,
+    onAnimatingFrame: /* event */ ReadonlyFrameAnimationEve => Unit = null,
     onAnimationInterrupted: () => Unit = null,
     onAutoSize: () => Unit = null,
     onBeforeExport: () => Unit = null,
     onButtonClicked: /* event */ ButtonClickEvent => Unit = null,
-    onClick: /* event */ PlotMouseEvent => Unit = null,
-    onClickAnnotation: /* event */ ClickAnnotationEvent => Unit = null,
+    onClick: /* event */ ReadonlyPlotMouseEvent => Unit = null,
+    onClickAnnotation: /* event */ ReadonlyClickAnnotationEv => Unit = null,
     onDeselect: () => Unit = null,
     onDoubleClick: () => Unit = null,
-    onError: /* err */ Error => Unit = null,
+    onError: /* err */ ReadonlyError => Unit = null,
     onFramework: () => Unit = null,
-    onHover: /* event */ PlotMouseEvent => Unit = null,
-    onInitialized: (/* figure */ Figure, /* graphDiv */ HTMLElement) => Unit = null,
-    onLegendClick: /* event */ LegendClickEvent => Boolean = null,
-    onLegendDoubleClick: /* event */ LegendClickEvent => Boolean = null,
-    onPurge: (/* figure */ Figure, /* graphDiv */ HTMLElement) => Unit = null,
+    onHover: /* event */ ReadonlyPlotMouseEvent => Unit = null,
+    onInitialized: (/* figure */ ReadonlyFigure, /* graphDiv */ ReadonlyHTMLElement) => Unit = null,
+    onLegendClick: /* event */ ReadonlyLegendClickEvent => Boolean = null,
+    onLegendDoubleClick: /* event */ ReadonlyLegendClickEvent => Boolean = null,
+    onPurge: (/* figure */ ReadonlyFigure, /* graphDiv */ ReadonlyHTMLElement) => Unit = null,
     onRedraw: () => Unit = null,
-    onRelayout: /* event */ PlotRelayoutEvent => Unit = null,
+    onRelayout: /* event */ ReadonlyPlotRelayoutEvent => Unit = null,
     onRestyle: /* event */ PlotRestyleEvent => Unit = null,
-    onSelected: /* event */ PlotSelectionEvent => Unit = null,
-    onSelecting: /* event */ PlotSelectionEvent => Unit = null,
-    onSliderChange: /* event */ SliderChangeEvent => Unit = null,
-    onSliderEnd: /* event */ SliderEndEvent => Unit = null,
-    onSliderStart: /* event */ SliderStartEvent => Unit = null,
+    onSelected: /* event */ ReadonlyPlotSelectionEven => Unit = null,
+    onSelecting: /* event */ ReadonlyPlotSelectionEven => Unit = null,
+    onSliderChange: /* event */ ReadonlySliderChangeEvent => Unit = null,
+    onSliderEnd: /* event */ ReadonlySliderEndEvent => Unit = null,
+    onSliderStart: /* event */ ReadonlySliderStartEvent => Unit = null,
     onTransitionInterrupted: () => Unit = null,
     onTransitioning: () => Unit = null,
-    onUnhover: /* event */ PlotMouseEvent => Unit = null,
-    onUpdate: (/* figure */ Figure, /* graphDiv */ HTMLElement) => Unit = null,
+    onUnhover: /* event */ ReadonlyPlotMouseEvent => Unit = null,
+    onUpdate: (/* figure */ ReadonlyFigure, /* graphDiv */ ReadonlyHTMLElement) => Unit = null,
     revision: Int | Double = null,
     style: CSSProperties = null,
     useResizeHandler: js.UndefOr[Boolean] = js.undefined

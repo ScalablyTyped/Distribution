@@ -11,7 +11,7 @@ trait AwsVpcConfiguration extends js.Object {
     */
   var AssignPublicIp: js.UndefOr[typings.awsSdk.eventbridgeMod.AssignPublicIp] = js.native
   /**
-    * Specifies the security groups associated with the task. These security groups must all be in the same VPC. You can specify as many as five security groups. If you don't specify a security group, the default security group for the VPC is used.
+    * Specifies the security groups associated with the task. These security groups must all be in the same VPC. You can specify as many as five security groups. If you do not specify a security group, the default security group for the VPC is used.
     */
   var SecurityGroups: js.UndefOr[StringList] = js.native
   /**

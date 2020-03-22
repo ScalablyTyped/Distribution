@@ -1,12 +1,12 @@
 package typings.reactVirtualized.esGridMod
 
 import typings.react.mod.Component
-import typings.reactVirtualized.Anon01
 import typings.reactVirtualized.AnonAlignment
+import typings.reactVirtualized.AnonAriareadonly
 import typings.reactVirtualized.AnonColumnIndex
-import typings.reactVirtualized.AnonColumnIndexRowIndex
+import typings.reactVirtualized.AnonRowIndex
 import typings.reactVirtualized.AnonScrollLeft
-import typings.std.Partial
+import typings.reactVirtualized.PartialScrollOffset
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,7 +24,7 @@ class Grid ()
     * This method handles a scroll event originating from an external scroll control.
     * It's an advanced method and should probably not be used unless you're implementing a custom scroll-bar solution.
     */
-  def handleScrollEvent(params: Partial[ScrollOffset]): Unit = js.native
+  def handleScrollEvent(params: PartialScrollOffset): Unit = js.native
   /**
     * Invalidate Grid size and recompute visible cells.
     * This is a deferred wrapper for recomputeGridSize().
@@ -45,7 +45,7 @@ class Grid ()
     * Since Grid only receives :columnCount and :rowCount it has no way of detecting when the underlying data changes.
     */
   def recomputeGridSize(): Unit = js.native
-  def recomputeGridSize(params: AnonColumnIndexRowIndex): Unit = js.native
+  def recomputeGridSize(params: AnonRowIndex): Unit = js.native
   /**
     * Ensure column and row are visible.
     */
@@ -62,6 +62,6 @@ class Grid ()
 @JSImport("react-virtualized/dist/es/Grid", "Grid")
 @js.native
 object Grid extends js.Object {
-  var defaultProps: Anon01 = js.native
+  var defaultProps: AnonAriareadonly = js.native
 }
 

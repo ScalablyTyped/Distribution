@@ -9,7 +9,7 @@ trait AnonEndGroup
   extends /* propName */ StringDictionary[js.Any] {
   var endGroup: String
   var items: js.Array[String]
-  var selectionData: js.Array[AnonDataGroupData]
+  var selectionData: js.Array[AnonGroupData]
   var startGroup: String
   var xMax: Double
   var xMin: Double
@@ -22,7 +22,7 @@ object AnonEndGroup {
   def apply(
     endGroup: String,
     items: js.Array[String],
-    selectionData: js.Array[AnonDataGroupData],
+    selectionData: js.Array[AnonGroupData],
     startGroup: String,
     xMax: Double,
     xMin: Double,

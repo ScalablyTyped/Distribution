@@ -40,7 +40,6 @@ import typings.delegatedEvents.delegatedEventsStrings.keyup
 import typings.delegatedEvents.delegatedEventsStrings.load
 import typings.delegatedEvents.delegatedEventsStrings.loadeddata
 import typings.delegatedEvents.delegatedEventsStrings.loadedmetadata
-import typings.delegatedEvents.delegatedEventsStrings.loadend
 import typings.delegatedEvents.delegatedEventsStrings.loadstart
 import typings.delegatedEvents.delegatedEventsStrings.lostpointercapture
 import typings.delegatedEvents.delegatedEventsStrings.mousedown
@@ -89,7 +88,6 @@ import typings.delegatedEvents.delegatedEventsStrings.volumechange
 import typings.delegatedEvents.delegatedEventsStrings.waiting
 import typings.delegatedEvents.delegatedEventsStrings.wheel
 import typings.std.AnimationEvent
-import typings.std.CustomEvent
 import typings.std.DragEvent
 import typings.std.Element
 import typings.std.ErrorEvent
@@ -961,27 +959,6 @@ object mod extends js.Object {
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("on")
-  def on_loadend(
-    name: loadend,
-    selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ ProgressEvent[EventTarget] with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_loadend(
-    name: loadend,
-    selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ ProgressEvent[EventTarget] with AnonCurrentTarget, 
-      _
-    ],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
   def on_loadstart(
     name: loadstart,
     selector: String,
@@ -1968,6 +1945,6 @@ object mod extends js.Object {
     ],
     options: EventListenerOptions
   ): Unit = js.native
-  type DelegatedEventListener = js.ThisFunction1[/* this */ Element, /* ev */ CustomEvent[_] with AnonCurrentTarget, js.Any]
+  type DelegatedEventListener = js.ThisFunction1[/* this */ Element, /* ev */ CustomEventanycurrentTarg, js.Any]
 }
 

@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 object subscriptionDataMod extends js.Object {
   @js.native
   class SubscriptionData[TData, TVariables] protected () extends OperationData[SubscriptionOptions[TData, TVariables]] {
-    def this(hasOptionsContextSetResult: AnonContextOptions[TData, TVariables]) = this()
+    def this(hasOptionsContextSetResult: AnonOptions[TData, TVariables]) = this()
     var completeSubscription: js.Any = js.native
     var currentObservable: js.Any = js.native
     var endSubscription: js.Any = js.native

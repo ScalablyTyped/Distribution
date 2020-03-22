@@ -1,6 +1,6 @@
 package typings.gestalt.mod
 
-import typings.gestalt.AnonEventValueBoolean
+import typings.gestalt.AnonEventValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,14 +10,14 @@ trait SwitchProps extends js.Object {
   var id: String
   var name: js.UndefOr[String] = js.undefined
   var switched: js.UndefOr[Boolean] = js.undefined
-  def onChange(args: AnonEventValueBoolean): Unit
+  def onChange(args: AnonEventValue): Unit
 }
 
 object SwitchProps {
   @scala.inline
   def apply(
     id: String,
-    onChange: AnonEventValueBoolean => Unit,
+    onChange: AnonEventValue => Unit,
     disabled: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
     switched: js.UndefOr[Boolean] = js.undefined

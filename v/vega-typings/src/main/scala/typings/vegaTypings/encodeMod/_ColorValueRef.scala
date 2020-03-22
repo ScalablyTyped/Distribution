@@ -8,7 +8,7 @@ trait _ColorValueRef extends js.Object
 
 object _ColorValueRef {
   @scala.inline
-  def AnonValueLinearGradient(value: LinearGradient | RadialGradient): _ColorValueRef = {
+  def Anon0(value: LinearGradient | RadialGradient): _ColorValueRef = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_ColorValueRef]

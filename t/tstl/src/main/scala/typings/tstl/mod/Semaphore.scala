@@ -16,3 +16,17 @@ class Semaphore[Max /* <: Double */] protected ()
   def this(max: Max) = this()
 }
 
+@JSImport("tstl", "Semaphore")
+@js.native
+object Semaphore extends js.Object {
+  /**
+    * @internal
+    */
+  @js.native
+  class Lockable protected ()
+    extends typings.tstl.threadMod.Semaphore.Lockable {
+    def this(semaphore: typings.tstl.semaphoreMod.Semaphore[Double]) = this()
+  }
+  
+}
+

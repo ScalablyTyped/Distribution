@@ -1,9 +1,7 @@
 package typings.reactFns
 
 import typings.react.mod.ComponentType
-import typings.reactFns.windowSizeWindowSizeMod.WindowSizeConfig
 import typings.reactFns.windowSizeWindowSizeMod.WindowSizeProps
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +17,7 @@ object windowSizeMod extends js.Object {
   /* static members */
   @js.native
   object WindowSize extends js.Object {
-    var defaultProps: Partial[WindowSizeConfig] = js.native
+    var defaultProps: PartialWindowSizeConfig = js.native
   }
   
 }

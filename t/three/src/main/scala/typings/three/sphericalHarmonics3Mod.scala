@@ -1,6 +1,7 @@
 package typings.three
 
 import typings.std.ArrayLike
+import typings.three.threeBooleans.`true`
 import typings.three.vector3Mod.Vector3
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,7 +13,7 @@ object sphericalHarmonics3Mod extends js.Object {
   @js.native
   class SphericalHarmonics3 () extends js.Object {
     var coefficients: js.Array[Vector3] = js.native
-    var isSphericalHarmonics3: Boolean = js.native
+    val isSphericalHarmonics3: `true` = js.native
     def add(sh: SphericalHarmonics3): SphericalHarmonics3 = js.native
     def copy(sh: SphericalHarmonics3): SphericalHarmonics3 = js.native
     def equals(sh: SphericalHarmonics3): Boolean = js.native

@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
 import typings.mongodb.mod.MongoError
 import typings.mongodb.mod.SessionOptions
-import typings.mongoose.AnonCatch
+import typings.mongoose.ConnectionthenPromiseConnAddListener
 import typings.mongoose.TypeofSchema
 import typings.mongoose.Typeofmongoose
 import scala.scalajs.js
@@ -36,8 +36,8 @@ trait Mongoose extends js.Object {
   def connect(uris: String, options: ConnectionOptions): js.Promise[Mongoose] = js.native
   def connect(uris: String, options: ConnectionOptions, callback: js.Function1[/* err */ MongoError, Unit]): js.Promise[Mongoose] = js.native
   def createConnection(): Connection_ = js.native
-  def createConnection(uri: String): Connection_ with AnonCatch = js.native
-  def createConnection(uri: String, options: ConnectionOptions): Connection_ with AnonCatch = js.native
+  def createConnection(uri: String): ConnectionthenPromiseConnAddListener = js.native
+  def createConnection(uri: String, options: ConnectionOptions): ConnectionthenPromiseConnAddListener = js.native
   def disconnect(): js.Promise[Unit] = js.native
   def disconnect(fn: js.Function1[/* error */ js.UndefOr[js.Any], Unit]): Unit = js.native
   def get(key: String): js.Any = js.native

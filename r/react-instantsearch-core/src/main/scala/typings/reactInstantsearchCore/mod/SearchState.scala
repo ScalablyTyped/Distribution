@@ -1,8 +1,8 @@
 package typings.reactInstantsearchCore.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.reactInstantsearchCore.AnonAroundLatLng
 import typings.reactInstantsearchCore.AnonConfigure
+import typings.reactInstantsearchCore.AnonDictkey
 import typings.reactInstantsearchCore.AnonMax
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 
 trait SearchState
   extends /* widgetId */ StringDictionary[js.Any] {
-  var configure: js.UndefOr[AnonAroundLatLng] = js.undefined
+  var configure: js.UndefOr[AnonDictkey] = js.undefined
   var hierarchicalMenu: js.UndefOr[StringDictionary[String]] = js.undefined
   var hitsPerPage: js.UndefOr[Double] = js.undefined
   var indices: js.UndefOr[StringDictionary[AnonConfigure]] = js.undefined
@@ -28,7 +28,7 @@ object SearchState {
   @scala.inline
   def apply(
     StringDictionary: /* widgetId */ StringDictionary[js.Any] = null,
-    configure: AnonAroundLatLng = null,
+    configure: AnonDictkey = null,
     hierarchicalMenu: StringDictionary[String] = null,
     hitsPerPage: Int | Double = null,
     indices: StringDictionary[AnonConfigure] = null,

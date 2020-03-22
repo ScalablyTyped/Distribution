@@ -21,7 +21,7 @@ object gridMod extends js.Object {
   /* static members */
   @js.native
   object Grid extends js.Object {
-    var defaultProps: Anon01 = js.native
+    var defaultProps: AnonAriareadonly = js.native
   }
   
 }

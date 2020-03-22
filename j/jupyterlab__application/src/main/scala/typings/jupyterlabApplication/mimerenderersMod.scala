@@ -6,7 +6,7 @@ import typings.jupyterlabApputils.widgettrackerMod.IWidgetTracker
 import typings.jupyterlabDocregistry.mod.MimeDocument
 import typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.IExtension
 import typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.IExtensionModule
-import typings.phosphorCoreutils.mod.Token
+import typings.luminoCoreutils.mod.Token
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -10,5 +10,6 @@ class ParseSpan protected () extends js.Object {
   def this(start: Double, end: Double) = this()
   var end: Double = js.native
   var start: Double = js.native
+  def toAbsolute(absoluteOffset: Double): AbsoluteSourceSpan = js.native
 }
 

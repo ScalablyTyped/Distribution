@@ -14,7 +14,7 @@ trait CallOptions
   /**
     * The credentials that should be used to make this particular call.
     */
-  var credentials: CallCredentials
+  var credentials: js.UndefOr[CallCredentials] = js.undefined
   /**
     * The deadline for the entire call to complete.
     */
@@ -34,28 +34,30 @@ trait CallOptions
     * Indicates which properties of a parent call should propagate to this
     * call. Bitwise combination of flags in `grpc.propagate`.
     */
-  var propagate_flags: Double
+  var propagate_flags: js.UndefOr[Double] = js.undefined
 }
 
 object CallOptions {
   @scala.inline
   def apply(
-    credentials: CallCredentials,
-    propagate_flags: Double,
     StringDictionary: /**
     * Additional custom call options. These can be used to pass additional
     * data per-call to client interceptors
     */
   /* key */ StringDictionary[js.Any] = null,
+    credentials: CallCredentials = null,
     deadline: Deadline = null,
     host: String = null,
-    parent: Call = null
+    parent: Call = null,
+    propagate_flags: Int | Double = null
   ): CallOptions = {
-    val __obj = js.Dynamic.literal(credentials = credentials.asInstanceOf[js.Any], propagate_flags = propagate_flags.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (credentials != null) __obj.updateDynamic("credentials")(credentials.asInstanceOf[js.Any])
     if (deadline != null) __obj.updateDynamic("deadline")(deadline.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (propagate_flags != null) __obj.updateDynamic("propagate_flags")(propagate_flags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CallOptions]
   }
 }

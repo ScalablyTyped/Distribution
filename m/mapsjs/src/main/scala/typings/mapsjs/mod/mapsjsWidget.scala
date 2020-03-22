@@ -1,6 +1,6 @@
 package typings.mapsjs.mod
 
-import typings.mapsjs.AnonDelta
+import typings.mapsjs.AnonDownAction
 import typings.mapsjs.AnonH
 import typings.mapsjs.mod.tile.layer
 import typings.std.HTMLElement
@@ -39,7 +39,7 @@ trait mapsjsWidget extends js.Object {
     mapUnitsX: Double,
     mapUnitsY: Double,
     addAction: js.Function1[/* ele */ HTMLElement, Unit],
-    dragOptions: AnonDelta
+    dragOptions: AnonDownAction
   ): Unit = js.native
   /**
   	 * Add a styled path geometry to the content area which resides at a z-level 

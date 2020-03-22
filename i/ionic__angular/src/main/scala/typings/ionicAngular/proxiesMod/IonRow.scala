@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ionic/angular/dist/directives/proxies", "IonRow")
+@JSImport("@ionic/angular/directives/proxies", "IonRow")
 @js.native
 class IonRow protected ()
   extends typings.ionicCore.componentsMod.Components.IonRow {

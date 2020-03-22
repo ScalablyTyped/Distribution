@@ -1,8 +1,8 @@
 package typings.reactEasyChart.mod
 
 import typings.reactEasyChart.AnonBottom
-import typings.reactEasyChart.AnonColorStroke
-import typings.reactEasyChart.AnonXY
+import typings.reactEasyChart.AnonStroke
+import typings.reactEasyChart.AnonY
 import typings.reactEasyChart.reactEasyChartStrings.linear
 import typings.reactEasyChart.reactEasyChartStrings.text
 import typings.reactEasyChart.reactEasyChartStrings.time
@@ -16,10 +16,10 @@ trait ScatterplotChartProps extends js.Object {
   /** Whether to show axis labels */
   var axes: js.UndefOr[Boolean] = js.undefined
   /** Labels for each of the axis */
-  var axisLabels: js.UndefOr[AnonXY] = js.undefined
+  var axisLabels: js.UndefOr[AnonY] = js.undefined
   var clickHandler: js.UndefOr[js.Function2[/* data */ ScatterplotData, /* mouseEvent */ MouseEvent, _]] = js.undefined
   /** Allows styling of individual types of points */
-  var config: js.UndefOr[js.Array[AnonColorStroke]] = js.undefined
+  var config: js.UndefOr[js.Array[AnonStroke]] = js.undefined
   var data: js.Array[ScatterplotData]
   /** Radius of the dots on the chart */
   var dotRadius: js.UndefOr[Double] = js.undefined
@@ -53,9 +53,9 @@ object ScatterplotChartProps {
   def apply(
     data: js.Array[ScatterplotData],
     axes: js.UndefOr[Boolean] = js.undefined,
-    axisLabels: AnonXY = null,
+    axisLabels: AnonY = null,
     clickHandler: (/* data */ ScatterplotData, /* mouseEvent */ MouseEvent) => _ = null,
-    config: js.Array[AnonColorStroke] = null,
+    config: js.Array[AnonStroke] = null,
     dotRadius: Int | Double = null,
     grid: js.UndefOr[Boolean] = js.undefined,
     height: Int | Double = null,

@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("xmlcreate/lib/options", "StringOptions")
 @js.native
-class StringOptions () extends IStringOptions {
-  def this(stringOptions: IStringOptions) = this()
+class StringOptions protected () extends IStringOptions {
+  def this(options: IStringOptions) = this()
   @JSName("doubleQuotes")
   var doubleQuotes_StringOptions: Boolean = js.native
   @JSName("indent")

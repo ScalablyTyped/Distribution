@@ -1,7 +1,7 @@
 package typings.rollupPluginBuble.mod
 
-import typings.buble.Anon010
 import typings.buble.AnonArrow
+import typings.buble.AnonChrome
 import typings.buble.mod.TransformOptions
 import typings.std.RegExp
 import scala.scalajs.js
@@ -25,7 +25,7 @@ object Options {
     namedFunctionExpressions: js.UndefOr[Boolean] = js.undefined,
     objectAssign: String | Boolean = null,
     source: String = null,
-    target: Anon010 = null,
+    target: AnonChrome = null,
     transforms: AnonArrow = null
   ): Options = {
     val __obj = js.Dynamic.literal()

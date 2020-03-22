@@ -1,7 +1,7 @@
 package typings.firefoxWebextBrowser.browser.webRequest
 
 import org.scalablytyped.runtime.TopLevel
-import typings.firefoxWebextBrowser.AnonCookieStoreIdDocumentUrlFrameId
+import typings.firefoxWebextBrowser.AnonIncognito
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +18,7 @@ object onBeforeSendHeaders
   extends TopLevel[
       WebRequestOnBeforeSendHeadersEvent[
         js.Function1[
-          /* details */ AnonCookieStoreIdDocumentUrlFrameId, 
+          /* details */ AnonIncognito, 
           BlockingResponse | js.Promise[BlockingResponse] | Unit
         ]
       ]

@@ -1,7 +1,7 @@
 package typings.googleapis.v2betaMod.deploymentmanagerV2beta
 
 import typings.googleapis.AnonCode
-import typings.googleapis.AnonErrorsAnonCodeLocation
+import typings.googleapis.AnonErrorsArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -38,7 +38,7 @@ trait SchemaOperation extends js.Object {
     * [Output Only] If errors are generated during processing of the operation,
     * this field will be populated.
     */
-  var error: js.UndefOr[AnonErrorsAnonCodeLocation] = js.native
+  var error: js.UndefOr[AnonErrorsArray] = js.native
   /**
     * [Output Only] If the operation fails, this field contains the HTTP error
     * message that was returned, such as NOT FOUND.
@@ -145,7 +145,7 @@ object SchemaOperation {
     creationTimestamp: String = null,
     description: String = null,
     endTime: String = null,
-    error: AnonErrorsAnonCodeLocation = null,
+    error: AnonErrorsArray = null,
     httpErrorMessage: String = null,
     httpErrorStatusCode: Int | Double = null,
     id: String = null,

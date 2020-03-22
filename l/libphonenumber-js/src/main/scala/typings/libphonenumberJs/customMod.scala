@@ -91,13 +91,7 @@ object customMod extends js.Object {
   def formatNumber(phone: NationalNumber, format: NumberFormat, options: FormatNumberOptions, metadata: Metadata): String = js.native
   def getCountries(metadata: Metadata): js.Array[CountryCode] = js.native
   def getCountryCallingCode(countryCode: CountryCode, metadata: Metadata): CountryCallingCode = js.native
-  def getExampleNumber(
-    country: CountryCode,
-    examples: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ country in libphonenumber-js.libphonenumber-js/types.CountryCode ]: libphonenumber-js.libphonenumber-js/types.NationalNumber}
-    */ typings.libphonenumberJs.libphonenumberJsStrings.getExampleNumber with js.Any,
-    metadata: Metadata
-  ): js.UndefOr[typings.libphonenumberJs.typesMod.PhoneNumber] = js.native
+  def getExampleNumber(country: CountryCode, examples: countryinCountryCodeNatio, metadata: Metadata): js.UndefOr[typings.libphonenumberJs.typesMod.PhoneNumber] = js.native
   def getExtPrefix(countryCode: CountryCode, metadata: Metadata): String = js.native
   def getNumberType(parsedNumber: ParsedNumber, metadata: Metadata): NumberType = js.native
   def getNumberType(phone: NationalNumber, country: CountryCode, metadata: Metadata): NumberType = js.native

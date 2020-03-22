@@ -9,6 +9,6 @@ object reactCircularProgressbarComponents extends reactCircularProgressbarProps 
   @scala.inline
   def CircularProgressbar: ComponentType[CircularProgressbarProps] = js.constructorOf[typings.reactCircularProgressbar.circularProgressbarMod.default].asInstanceOf[typings.react.mod.ComponentType[CircularProgressbarProps]]
   @scala.inline
-  def CircularProgressbarWithChildren: ComponentType[CircularProgressbarWithChildrenProps] = typings.reactCircularProgressbar.mod.asInstanceOf[js.Dynamic].selectDynamic("CircularProgressbarWithChildren").asInstanceOf[typings.react.mod.ComponentType[CircularProgressbarWithChildrenProps]]
+  def CircularProgressbarWithChildren: ComponentType[CircularProgressbarWithChildrenProps] = typings.reactCircularProgressbar.circularProgressbarWithChildrenMod.default.asInstanceOf[typings.react.mod.ComponentType[CircularProgressbarWithChildrenProps]]
 }
 

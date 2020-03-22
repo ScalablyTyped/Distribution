@@ -20,6 +20,6 @@ object hotkeysTargetMod extends js.Object {
     def renderHotkeys(): ReactElement = js.native
   }
   
-  def HotkeysTarget[T /* <: IConstructor[IHotkeysTargetComponent] */](WrappedComponent: T): AnonArgsDisplayName with T = js.native
+  def HotkeysTarget[T /* <: IConstructor[IHotkeysTargetComponent] */](WrappedComponent: T): AnonDisplayName with T = js.native
 }
 

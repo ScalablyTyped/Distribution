@@ -1,8 +1,7 @@
 package typings.storybookApi.storeMod
 
 import typings.reachRouter.mod.NavigateFn
-import typings.storybookApi.VersionsUnknownEntries
-import typings.storybookApi.WindowLocation
+import typings.reachRouter.mod.WindowLocation
 import typings.storybookApi.layoutMod.Layout
 import typings.storybookApi.layoutMod.UI
 import typings.storybookApi.notificationsMod.Notification
@@ -11,6 +10,8 @@ import typings.storybookApi.storiesMod.StoriesHash
 import typings.storybookApi.storiesMod.StoryId
 import typings.storybookApi.storiesMod.ViewMode
 import typings.storybookApi.urlMod.QueryParams
+import typings.storybookApi.versionsMod.UnknownEntries
+import typings.storybookApi.versionsMod.Versions
 import typings.storybookTheming.typesMod.ThemeVars
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -35,7 +36,7 @@ trait Patch extends js.Object {
   var theme: js.UndefOr[ThemeVars] = js.undefined
   var ui: js.UndefOr[UI] = js.undefined
   var uri: js.UndefOr[String] = js.undefined
-  var versions: js.UndefOr[VersionsUnknownEntries] = js.undefined
+  var versions: js.UndefOr[Versions with UnknownEntries] = js.undefined
   var viewMode: js.UndefOr[ViewMode] = js.undefined
 }
 
@@ -59,7 +60,7 @@ object Patch {
     theme: ThemeVars = null,
     ui: UI = null,
     uri: String = null,
-    versions: VersionsUnknownEntries = null,
+    versions: Versions with UnknownEntries = null,
     viewMode: ViewMode = null
   ): Patch = {
     val __obj = js.Dynamic.literal()

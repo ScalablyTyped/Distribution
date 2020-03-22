@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("router5-transition-path/types/transitionPath", JSImport.Default)
+@JSImport("router5-transition-path/dist/transitionPath", JSImport.Default)
 @js.native
 object default extends js.Object {
   def apply(toState: State): TransitionPath = js.native

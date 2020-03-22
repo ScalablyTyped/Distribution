@@ -21,7 +21,7 @@ trait DescribePublicIpv4PoolsRequest extends js.Object {
   /**
     * The IDs of the address pools.
     */
-  var PoolIds: js.UndefOr[ValueStringList] = js.native
+  var PoolIds: js.UndefOr[PublicIpv4PoolIdStringList] = js.native
 }
 
 object DescribePublicIpv4PoolsRequest {
@@ -30,7 +30,7 @@ object DescribePublicIpv4PoolsRequest {
     Filters: FilterList = null,
     MaxResults: Int | scala.Double = null,
     NextToken: NextToken = null,
-    PoolIds: ValueStringList = null
+    PoolIds: PublicIpv4PoolIdStringList = null
   ): DescribePublicIpv4PoolsRequest = {
     val __obj = js.Dynamic.literal()
     if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])

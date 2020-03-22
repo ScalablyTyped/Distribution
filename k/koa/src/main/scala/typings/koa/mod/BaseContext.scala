@@ -1,6 +1,6 @@
 package typings.koa.mod
 
-import typings.koa.AnonDeepEqual
+import typings.koa.AnonCall
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,7 +18,7 @@ trait BaseContext
     * See: https://github.com/jshttp/http-assert
     */
   @JSName("assert")
-  var assert_Original: AnonDeepEqual = js.native
+  var assert_Original: AnonCall = js.native
   /**
     * Similar to .throw(), adds assertion.
     *

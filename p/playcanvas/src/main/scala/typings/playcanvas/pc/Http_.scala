@@ -1,8 +1,8 @@
 package typings.playcanvas.pc
 
 import typings.playcanvas.AnonAsync
-import typings.playcanvas.AnonAsyncCache
-import typings.playcanvas.AnonAsyncCacheHeaders
+import typings.playcanvas.AnonCache
+import typings.playcanvas.AnonHeaders
 import typings.playcanvas.pc.callbacks.HttpResponse
 import typings.std.Document_
 import typings.std.XMLHttpRequest
@@ -135,9 +135,9 @@ class Http_ () extends js.Object {
     * err is the error code.
     * @returns {XMLHttpRequest} The request object.
     */
-  def post(url: String, data: js.Any, options: AnonAsyncCache, callback: HttpResponse): XMLHttpRequest = js.native
+  def post(url: String, data: js.Any, options: AnonCache, callback: HttpResponse): XMLHttpRequest = js.native
   def put(url: String, data: js.Any, callback: HttpResponse): XMLHttpRequest = js.native
-  def put(url: String, data: js.Any, options: AnonAsyncCache, callback: HttpResponse): XMLHttpRequest = js.native
+  def put(url: String, data: js.Any, options: AnonCache, callback: HttpResponse): XMLHttpRequest = js.native
   /**
     * @function
     * @name pc.Http#put
@@ -177,7 +177,7 @@ class Http_ () extends js.Object {
     * err is the error code.
     * @returns {XMLHttpRequest} The request object.
     */
-  def put(url: String, data: Document_, options: AnonAsyncCache, callback: HttpResponse): XMLHttpRequest = js.native
+  def put(url: String, data: Document_, options: AnonCache, callback: HttpResponse): XMLHttpRequest = js.native
   /**
     * @function
     * @name pc.Http#request
@@ -215,6 +215,6 @@ class Http_ () extends js.Object {
     * err is the error code.
     * @returns {XMLHttpRequest} The request object.
     */
-  def request(method: String, url: String, options: AnonAsyncCacheHeaders, callback: HttpResponse): XMLHttpRequest = js.native
+  def request(method: String, url: String, options: AnonHeaders, callback: HttpResponse): XMLHttpRequest = js.native
 }
 

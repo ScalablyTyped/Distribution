@@ -1,7 +1,7 @@
 package typings.blueprintjsDatetime.shortcutsMod
 
+import typings.blueprintjsDatetime.PartialIShortcutsProps
 import typings.react.mod.Component
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,6 +18,6 @@ class Shortcuts ()
 @JSImport("@blueprintjs/datetime/lib/esm/shortcuts", "Shortcuts")
 @js.native
 object Shortcuts extends js.Object {
-  var defaultProps: Partial[IShortcutsProps] = js.native
+  var defaultProps: PartialIShortcutsProps = js.native
 }
 

@@ -18,7 +18,6 @@ class DigestTransform protected () extends Transform {
   def this(expected: String, algorithm: String, encoding: hex) = this()
   def this(expected: String, algorithm: String, encoding: latin1) = this()
   var _actual: js.Any = js.native
-  val actual: String | Null = js.native
   val algorithm: js.Any = js.native
   val digester: js.Any = js.native
   val encoding: js.Any = js.native
@@ -26,6 +25,7 @@ class DigestTransform protected () extends Transform {
   var isValidateOnEnd: Boolean = js.native
   def _flush(callback: js.Any): Unit = js.native
   def _transform(chunk: Buffer, encoding: String, callback: js.Any): Unit = js.native
+  def actual(): String | Null = js.native
   def validate(): Null = js.native
 }
 

@@ -15,5 +15,5 @@ package object fsMod {
     - typings.node.urlMod.URL_
   */
   type PathLike = typings.node.fsMod._PathLike | java.lang.String
-  type WriteFileOptions = typings.node.AnonEncodingFlagMode | java.lang.String | scala.Null
+  type WriteFileOptions = typings.node.AnonMode | java.lang.String | scala.Null
 }

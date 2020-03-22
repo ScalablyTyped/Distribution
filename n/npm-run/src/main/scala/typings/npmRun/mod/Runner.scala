@@ -16,9 +16,9 @@ import typings.node.childProcessMod.SpawnSyncOptionsWithStringEncoding
 import typings.node.childProcessMod.SpawnSyncReturns
 import typings.node.childProcessMod.StdioNull
 import typings.node.childProcessMod.StdioPipe
-import typings.npmRun.FnArgs
-import typings.npmRun.FnArgsCommand
-import typings.npmRun.FnCommand
+import typings.npmRun.Fn0
+import typings.npmRun.FnCall
+import typings.npmRun.FnCallCommandArgsOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,13 +27,13 @@ import scala.scalajs.js.annotation._
 trait Runner extends ExecFunction {
   var exec: ExecFunction = js.native
   @JSName("execSync")
-  var execSync_Original: FnCommand = js.native
+  var execSync_Original: FnCall = js.native
   @JSName("spawnSync")
-  var spawnSync_Original: FnArgs = js.native
+  var spawnSync_Original: FnCallCommandArgsOptions = js.native
   @JSName("spawn")
-  var spawn_Original: FnArgsCommand = js.native
+  var spawn_Original: Fn0 = js.native
   @JSName("sync")
-  var sync_Original: FnCommand = js.native
+  var sync_Original: FnCall = js.native
   def execSync(command: String): String = js.native
   def execSync(command: String, options: ExecSyncOptions): Buffer = js.native
   def execSync(command: String, options: ExecSyncOptionsWithBufferEncoding): Buffer = js.native

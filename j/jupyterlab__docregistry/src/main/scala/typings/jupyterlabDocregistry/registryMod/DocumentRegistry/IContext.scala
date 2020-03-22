@@ -1,11 +1,11 @@
 package typings.jupyterlabDocregistry.registryMod.DocumentRegistry
 
-import typings.jupyterlabApputils.clientsessionMod.IClientSession
+import typings.jupyterlabApputils.sessioncontextMod.ISessionContext
 import typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.IResolver
 import typings.jupyterlabServices.contentsMod.Contents.ICheckpointModel
-import typings.phosphorDisposable.mod.IDisposable
-import typings.phosphorSignaling.mod.ISignal
-import typings.phosphorWidgets.mod.Widget
+import typings.luminoDisposable.mod.IDisposable
+import typings.luminoSignaling.mod.ISignal
+import typings.luminoWidgets.mod.Widget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -62,9 +62,9 @@ trait IContext[T /* <: IModel */] extends IDisposable {
     */
   var saveState: ISignal[this.type, SaveState] = js.native
   /**
-    * The client session object associated with the context.
+    * The session context object associated with the context.
     */
-  val session: IClientSession = js.native
+  val sessionContext: ISessionContext = js.native
   /**
     * The url resolver for the context.
     */
@@ -99,6 +99,10 @@ trait IContext[T /* <: IModel */] extends IDisposable {
     * @returns A promise which resolves when the checkpoint is deleted.
     */
   def deleteCheckpoint(checkpointID: String): js.Promise[Unit] = js.native
+  /**
+    * Save the document to a different path chosen by the user.
+    */
+  def download(): js.Promise[Unit] = js.native
   /**
     * List available checkpoints for the file.
     *

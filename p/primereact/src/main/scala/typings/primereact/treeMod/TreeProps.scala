@@ -1,7 +1,7 @@
 package typings.primereact.treeMod
 
 import typings.primereact.AnonNodeOriginalEvent
-import typings.primereact.AnonOriginalEventValue
+import typings.primereact.AnonValue
 import typings.primereact.treeNodeMod.TreeNode
 import typings.react.mod._Global_.JSX.Element
 import scala.scalajs.js
@@ -27,12 +27,12 @@ trait TreeProps extends js.Object {
   var nodeTemplate: js.UndefOr[js.Function1[/* node */ js.Any, Element]] = js.undefined
   var onCollapse: js.UndefOr[js.Function1[/* e */ AnonNodeOriginalEvent, Unit]] = js.undefined
   var onContextMenu: js.UndefOr[js.Function1[/* e */ AnonNodeOriginalEvent, Unit]] = js.undefined
-  var onContextMenuSelectionChange: js.UndefOr[js.Function1[/* e */ AnonOriginalEventValue, Unit]] = js.undefined
-  var onDragDrop: js.UndefOr[js.Function1[/* e */ AnonOriginalEventValue, Unit]] = js.undefined
+  var onContextMenuSelectionChange: js.UndefOr[js.Function1[/* e */ AnonValue, Unit]] = js.undefined
+  var onDragDrop: js.UndefOr[js.Function1[/* e */ AnonValue, Unit]] = js.undefined
   var onExpand: js.UndefOr[js.Function1[/* e */ AnonNodeOriginalEvent, Unit]] = js.undefined
   var onSelect: js.UndefOr[js.Function1[/* e */ AnonNodeOriginalEvent, Unit]] = js.undefined
-  var onSelectionChange: js.UndefOr[js.Function1[/* e */ AnonOriginalEventValue, Unit]] = js.undefined
-  var onToggle: js.UndefOr[js.Function1[/* e */ AnonOriginalEventValue, Unit]] = js.undefined
+  var onSelectionChange: js.UndefOr[js.Function1[/* e */ AnonValue, Unit]] = js.undefined
+  var onToggle: js.UndefOr[js.Function1[/* e */ AnonValue, Unit]] = js.undefined
   var onUnselect: js.UndefOr[js.Function1[/* e */ AnonNodeOriginalEvent, Unit]] = js.undefined
   var propagateSelectionDown: js.UndefOr[Boolean] = js.undefined
   var propagateSelectionUp: js.UndefOr[Boolean] = js.undefined
@@ -63,12 +63,12 @@ object TreeProps {
     nodeTemplate: /* node */ js.Any => Element = null,
     onCollapse: /* e */ AnonNodeOriginalEvent => Unit = null,
     onContextMenu: /* e */ AnonNodeOriginalEvent => Unit = null,
-    onContextMenuSelectionChange: /* e */ AnonOriginalEventValue => Unit = null,
-    onDragDrop: /* e */ AnonOriginalEventValue => Unit = null,
+    onContextMenuSelectionChange: /* e */ AnonValue => Unit = null,
+    onDragDrop: /* e */ AnonValue => Unit = null,
     onExpand: /* e */ AnonNodeOriginalEvent => Unit = null,
     onSelect: /* e */ AnonNodeOriginalEvent => Unit = null,
-    onSelectionChange: /* e */ AnonOriginalEventValue => Unit = null,
-    onToggle: /* e */ AnonOriginalEventValue => Unit = null,
+    onSelectionChange: /* e */ AnonValue => Unit = null,
+    onToggle: /* e */ AnonValue => Unit = null,
     onUnselect: /* e */ AnonNodeOriginalEvent => Unit = null,
     propagateSelectionDown: js.UndefOr[Boolean] = js.undefined,
     propagateSelectionUp: js.UndefOr[Boolean] = js.undefined,

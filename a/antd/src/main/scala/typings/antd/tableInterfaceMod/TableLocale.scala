@@ -14,6 +14,7 @@ trait TableLocale extends js.Object {
   var filterTitle: js.UndefOr[String] = js.undefined
   var selectAll: js.UndefOr[ReactNode] = js.undefined
   var selectInvert: js.UndefOr[ReactNode] = js.undefined
+  var selectionAll: js.UndefOr[ReactNode] = js.undefined
   var sortTitle: js.UndefOr[String] = js.undefined
 }
 
@@ -28,6 +29,7 @@ object TableLocale {
     filterTitle: String = null,
     selectAll: ReactNode = null,
     selectInvert: ReactNode = null,
+    selectionAll: ReactNode = null,
     sortTitle: String = null
   ): TableLocale = {
     val __obj = js.Dynamic.literal()
@@ -39,6 +41,7 @@ object TableLocale {
     if (filterTitle != null) __obj.updateDynamic("filterTitle")(filterTitle.asInstanceOf[js.Any])
     if (selectAll != null) __obj.updateDynamic("selectAll")(selectAll.asInstanceOf[js.Any])
     if (selectInvert != null) __obj.updateDynamic("selectInvert")(selectInvert.asInstanceOf[js.Any])
+    if (selectionAll != null) __obj.updateDynamic("selectionAll")(selectionAll.asInstanceOf[js.Any])
     if (sortTitle != null) __obj.updateDynamic("sortTitle")(sortTitle.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableLocale]
   }

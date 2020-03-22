@@ -1,6 +1,6 @@
 package typings.kiiCloudSdk.KiiCloud
 
-import typings.kiiCloudSdk.AnonAnErrorString
+import typings.kiiCloudSdk.AnonSuccess
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -125,8 +125,8 @@ class KiiThingContext () extends js.Object {
     *     );
     */
   def listTopics(): js.Promise[js.Tuple2[js.Array[KiiTopic], String]] = js.native
-  def listTopics(callbacks: AnonAnErrorString): js.Promise[js.Tuple2[js.Array[KiiTopic], String]] = js.native
-  def listTopics(callbacks: AnonAnErrorString, paginationKey: String): js.Promise[js.Tuple2[js.Array[KiiTopic], String]] = js.native
+  def listTopics(callbacks: AnonSuccess): js.Promise[js.Tuple2[js.Array[KiiTopic], String]] = js.native
+  def listTopics(callbacks: AnonSuccess, paginationKey: String): js.Promise[js.Tuple2[js.Array[KiiTopic], String]] = js.native
   /**
     * Creates a reference to an object operated by thing using object`s URI.
     *

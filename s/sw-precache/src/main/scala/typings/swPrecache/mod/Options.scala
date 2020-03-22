@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.node.Buffer
 import typings.std.RegExp
 import typings.swPrecache.AnonHandler
-import typings.swPrecache.FnMessage
+import typings.swPrecache.FnCall
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +18,7 @@ trait Options extends js.Object {
   var handleFetch: js.UndefOr[Boolean] = js.undefined
   var ignoreUrlParametersMatching: js.UndefOr[js.Array[RegExp]] = js.undefined
   var importScripts: js.UndefOr[js.Array[String]] = js.undefined
-  var logger: js.UndefOr[FnMessage] = js.undefined
+  var logger: js.UndefOr[FnCall] = js.undefined
   var maximumFileSizeToCacheInBytes: js.UndefOr[Double] = js.undefined
   var navigateFallback: js.UndefOr[String] = js.undefined
   var navigateFallbackWhitelist: js.UndefOr[js.Array[RegExp]] = js.undefined
@@ -43,7 +43,7 @@ object Options {
     handleFetch: js.UndefOr[Boolean] = js.undefined,
     ignoreUrlParametersMatching: js.Array[RegExp] = null,
     importScripts: js.Array[String] = null,
-    logger: FnMessage = null,
+    logger: FnCall = null,
     maximumFileSizeToCacheInBytes: Int | Double = null,
     navigateFallback: String = null,
     navigateFallbackWhitelist: js.Array[RegExp] = null,

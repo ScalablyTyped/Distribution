@@ -1,19 +1,24 @@
 package typings.escpos
 
-import typings.escpos.escposStrings.InformationseparatorthreeLeftparenthesiskEndoftextNull1E
+import typings.escpos.escposNumbers.`12`
+import typings.escpos.escposNumbers.`1`
+import typings.escpos.escposNumbers.`24`
+import typings.escpos.escposStrings.EscapeNumbersignNumbersignQPIX
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonCMD extends js.Object {
-  var CMD: InformationseparatorthreeLeftparenthesiskEndoftextNull1E
-  var OPTIONS: Anon48
+  var CMD: EscapeNumbersignNumbersignQPIX
+  var DEFAULT: `12`
+  var MAX: `24`
+  var MIN: `1`
 }
 
 object AnonCMD {
   @scala.inline
-  def apply(CMD: InformationseparatorthreeLeftparenthesiskEndoftextNull1E, OPTIONS: Anon48): AnonCMD = {
-    val __obj = js.Dynamic.literal(CMD = CMD.asInstanceOf[js.Any], OPTIONS = OPTIONS.asInstanceOf[js.Any])
+  def apply(CMD: EscapeNumbersignNumbersignQPIX, DEFAULT: `12`, MAX: `24`, MIN: `1`): AnonCMD = {
+    val __obj = js.Dynamic.literal(CMD = CMD.asInstanceOf[js.Any], DEFAULT = DEFAULT.asInstanceOf[js.Any], MAX = MAX.asInstanceOf[js.Any], MIN = MIN.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AnonCMD]
   }

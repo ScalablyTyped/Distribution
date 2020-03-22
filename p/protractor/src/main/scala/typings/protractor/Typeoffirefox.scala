@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Typeoffirefox extends js.Object {
-  var Driver: TypeofClassDriver = js.native
+  var Driver: TypeofDriver = js.native
   var Options: Instantiable0[typings.seleniumWebdriver.firefoxMod.Options] = js.native
   var ServiceBuilder: Instantiable0[typings.seleniumWebdriver.firefoxMod.ServiceBuilder] = js.native
   def createWiresService(binary: String): DriverService = js.native

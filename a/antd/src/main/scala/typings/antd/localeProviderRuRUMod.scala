@@ -9,16 +9,16 @@ import scala.scalajs.js.annotation._
 object localeProviderRuRUMod extends js.Object {
   @js.native
   object default extends js.Object {
-    var Calendar: AnonLang = js.native
-    var DatePicker: AnonLang = js.native
+    var Calendar: AnonTimePickerLocale = js.native
+    var DatePicker: AnonTimePickerLocale = js.native
     var Empty: AnonDescription = js.native
     var Modal: AnonCancelText = js.native
     var PageHeader: AnonBack = js.native
     var Pagination: js.Any = js.native
-    var Popconfirm: AnonCancelTextOkText = js.native
-    var Table: AnonFilterConfirmFilterResetFilterTitle = js.native
+    var Popconfirm: AnonOkText = js.native
+    var Table: AnonFilterTitle = js.native
     var Text: AnonCopied = js.native
-    var TimePicker: AnonPlaceholder = js.native
+    var TimePicker: AnonPlaceholderString = js.native
     var Transfer: AnonItemUnit = js.native
     var Upload: AnonDownloadFile = js.native
     var locale: String = js.native

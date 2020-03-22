@@ -15,6 +15,7 @@ import typings.std.FocusEvent
 import typings.std.KeyboardEvent
 import typings.std.MouseEvent
 import typings.std.PointerEvent
+import typings.std.ReferrerPolicy
 import typings.std.TouchEvent
 import typings.std.TransitionEvent
 import typings.std.UIEvent
@@ -38,6 +39,7 @@ trait IframeHTMLAttributes[T] extends HTMLAttributes[T] {
   var marginheight: js.UndefOr[String | Double] = js.undefined
   var marginwidth: js.UndefOr[String | Double] = js.undefined
   var name: js.UndefOr[String] = js.undefined
+  var referrerPolicy: js.UndefOr[ReferrerPolicy] = js.undefined
   var sandbox: js.UndefOr[String] = js.undefined
   var scrolling: js.UndefOr[String] = js.undefined
   var seamless: js.UndefOr[Boolean] = js.undefined
@@ -217,6 +219,7 @@ object IframeHTMLAttributes {
     radioGroup: String = null,
     radiogroup: String = null,
     ref: /* elm */ js.UndefOr[T] => Unit = null,
+    referrerPolicy: ReferrerPolicy = null,
     resource: String = null,
     results: Int | Double = null,
     role: String = null,
@@ -407,6 +410,7 @@ object IframeHTMLAttributes {
     if (radioGroup != null) __obj.updateDynamic("radioGroup")(radioGroup.asInstanceOf[js.Any])
     if (radiogroup != null) __obj.updateDynamic("radiogroup")(radiogroup.asInstanceOf[js.Any])
     if (ref != null) __obj.updateDynamic("ref")(js.Any.fromFunction1(ref))
+    if (referrerPolicy != null) __obj.updateDynamic("referrerPolicy")(referrerPolicy.asInstanceOf[js.Any])
     if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
     if (results != null) __obj.updateDynamic("results")(results.asInstanceOf[js.Any])
     if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])

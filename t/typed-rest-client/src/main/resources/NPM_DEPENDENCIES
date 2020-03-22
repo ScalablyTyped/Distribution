@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "typed-rest-client" : "1.7.1"
+      "typed-rest-client" : "1.7.2"
     }
   ],
   "test-dependencies" : [
     {
-      "typed-rest-client" : "1.7.1"
+      "typed-rest-client" : "1.7.2"
     }
   ],
   "compile-devDependencies" : [

@@ -3,7 +3,7 @@ package typings.jupyterlabDocmanager.savingstatusMod.SavingStatus
 import typings.jupyterlabApputils.vdomMod.VDomModel
 import typings.jupyterlabDocmanager.tokensMod.IDocumentManager
 import typings.jupyterlabDocregistry.registryMod.DocumentRegistry.SaveState
-import typings.phosphorWidgets.mod.Widget
+import typings.luminoWidgets.mod.Widget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,12 +28,15 @@ class Model protected () extends VDomModel {
   /**
     * The current status of the model.
     */
-  val status: SaveState | Null = js.native
+  def status(): SaveState | Null = js.native
+  def widget(): js.Any = js.native
+  def widget(widget: Widget): js.Any = js.native
   /**
     * The current widget for the model. Any widget can be assigned,
     * but it only has any effect if the widget is an IDocument widget
     * known to the application document manager.
     */
-  var widget: Widget | Null = js.native
+  @JSName("widget")
+  def widget_Union(): Widget | Null = js.native
 }
 

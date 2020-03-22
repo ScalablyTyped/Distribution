@@ -1,6 +1,6 @@
 package typings.jupyterlabAttachments.modelMod.IAttachmentsModel
 
-import typings.jupyterlabCoreutils.nbformatMod.nbformat.IAttachments
+import typings.jupyterlabNbformat.mod.IAttachments
 import typings.jupyterlabObservables.modeldbMod.IModelDB
 import scala.scalajs.js
 import scala.scalajs.js.`|`

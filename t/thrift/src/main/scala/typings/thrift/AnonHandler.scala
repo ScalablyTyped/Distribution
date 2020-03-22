@@ -1,13 +1,21 @@
 package typings.thrift
 
-import org.scalablytyped.runtime.Instantiable1
 import typings.thrift.mod.TProcessorConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
-trait AnonHandler[THandler, TProcessor]
-  extends TProcessorConstructor[TProcessor, THandler]
-     with Instantiable1[/* handler */ THandler, TProcessor]
+trait AnonHandler[TProcessor, THandler] extends js.Object {
+  var handler: THandler
+  var processor: TProcessorConstructor[TProcessor, THandler]
+}
+
+object AnonHandler {
+  @scala.inline
+  def apply[TProcessor, THandler](handler: THandler, processor: TProcessorConstructor[TProcessor, THandler]): AnonHandler[TProcessor, THandler] = {
+    val __obj = js.Dynamic.literal(handler = handler.asInstanceOf[js.Any], processor = processor.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[AnonHandler[TProcessor, THandler]]
+  }
+}
 

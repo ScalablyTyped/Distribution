@@ -2,8 +2,8 @@ package typings.gapiUrlshortener.gapi.client.urlshortener
 
 import typings.gapi.gapi.client.HttpRequest
 import typings.gapiUrlshortener.AnonFields
-import typings.gapiUrlshortener.AnonFieldsProjection
-import typings.gapiUrlshortener.AnonFieldsRequestBody
+import typings.gapiUrlshortener.AnonProjection
+import typings.gapiUrlshortener.AnonRequestBody
 import typings.gapiUrlshortener.GoogleApiUrlShortenerUrlResource
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,19 +17,19 @@ trait url extends js.Object {
   /**
     * Creates a new short URL.
     */
-  def insert(`object`: AnonFieldsRequestBody): HttpRequest[GoogleApiUrlShortenerUrlResource]
+  def insert(`object`: AnonRequestBody): HttpRequest[GoogleApiUrlShortenerUrlResource]
   /**
     * Retrieves a list of URLs shortened by a user.
     */
-  def list(`object`: AnonFieldsProjection): HttpRequest[GoogleApiUrlShortenerUrlResource]
+  def list(`object`: AnonProjection): HttpRequest[GoogleApiUrlShortenerUrlResource]
 }
 
 object url {
   @scala.inline
   def apply(
     get: AnonFields => HttpRequest[GoogleApiUrlShortenerUrlResource],
-    insert: AnonFieldsRequestBody => HttpRequest[GoogleApiUrlShortenerUrlResource],
-    list: AnonFieldsProjection => HttpRequest[GoogleApiUrlShortenerUrlResource]
+    insert: AnonRequestBody => HttpRequest[GoogleApiUrlShortenerUrlResource],
+    list: AnonProjection => HttpRequest[GoogleApiUrlShortenerUrlResource]
   ): url = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list))
   

@@ -7,7 +7,17 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler/src/expression_parser/ast", "AST")
 @js.native
 class AST protected () extends js.Object {
-  def this(span: ParseSpan) = this()
+  def this(
+    span: ParseSpan,
+    /**
+    * Absolute location of the expression AST in a source code file.
+    */
+  sourceSpan: AbsoluteSourceSpan
+  ) = this()
+  /**
+    * Absolute location of the expression AST in a source code file.
+    */
+  var sourceSpan: AbsoluteSourceSpan = js.native
   var span: ParseSpan = js.native
   def visit(visitor: AstVisitor): js.Any = js.native
   def visit(visitor: AstVisitor, context: js.Any): js.Any = js.native

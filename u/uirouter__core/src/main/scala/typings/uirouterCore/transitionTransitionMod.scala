@@ -287,7 +287,7 @@ object transitionTransitionMod extends js.Object {
     def injector(): UIInjector = js.native
     def injector(state: StateOrName): UIInjector = js.native
     def injector(state: StateOrName, pathName: String): UIInjector = js.native
-    def is(compare: AnonFromTo): Boolean = js.native
+    def is(compare: AnonTo): Boolean = js.native
     /**
       * Determines whether two transitions are equivalent.
       * @deprecated
@@ -524,7 +524,7 @@ object transitionTransitionMod extends js.Object {
   @js.native
   object Transition extends js.Object {
     /** @hidden */
-    var diToken: TypeofClassTransition = js.native
+    var diToken: TypeofTransition = js.native
   }
   
 }

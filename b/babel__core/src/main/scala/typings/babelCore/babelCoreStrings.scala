@@ -198,9 +198,6 @@ object babelCoreStrings {
   sealed trait preset extends js.Object
   
   @js.native
-  sealed trait property extends js.Object
-  
-  @js.native
   sealed trait root extends js.Object
   
   @js.native
@@ -367,8 +364,6 @@ object babelCoreStrings {
   def plus: plus = "plus".asInstanceOf[plus]
   @scala.inline
   def preset: preset = "preset".asInstanceOf[preset]
-  @scala.inline
-  def property: property = "property".asInstanceOf[property]
   @scala.inline
   def root: root = "root".asInstanceOf[root]
   @scala.inline

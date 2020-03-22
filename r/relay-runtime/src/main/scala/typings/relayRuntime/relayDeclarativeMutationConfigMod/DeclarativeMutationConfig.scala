@@ -1,7 +1,7 @@
 package typings.relayRuntime.relayDeclarativeMutationConfigMod
 
 import typings.relayRuntime.AnonFilters
-import typings.relayRuntime.AnonFiltersKey
+import typings.relayRuntime.AnonKey
 import typings.relayRuntime.relayRuntimeStrings.NODE_DELETE
 import typings.relayRuntime.relayRuntimeStrings.RANGE_ADD
 import typings.relayRuntime.relayRuntimeStrings.RANGE_DELETE
@@ -41,7 +41,7 @@ object DeclarativeMutationConfig {
     deletedIDFieldName: String | js.Array[String],
     pathToConnection: js.Array[String],
     `type`: RANGE_DELETE,
-    connectionKeys: js.Array[AnonFiltersKey] = null,
+    connectionKeys: js.Array[AnonKey] = null,
     connectionName: String = null,
     parentID: String = null,
     parentName: String = null

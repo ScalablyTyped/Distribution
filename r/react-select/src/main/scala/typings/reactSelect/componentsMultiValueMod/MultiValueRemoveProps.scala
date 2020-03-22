@@ -1,7 +1,7 @@
 package typings.reactSelect.componentsMultiValueMod
 
 import typings.react.mod.ReactNode
-import typings.reactSelect.AnonClassNameEvent
+import typings.reactSelect.AnonOnTouchEnd
 import typings.reactSelect.selectMod.Props
 import typings.reactSelect.typesMod.ActionTypes
 import typings.reactSelect.typesMod.ClassNamesState
@@ -18,7 +18,7 @@ trait MultiValueRemoveProps[OptionType /* <: OptionTypeBase */] extends js.Objec
   var children: ReactNode = js.native
   var className: js.UndefOr[String] = js.native
   var hasValue: Boolean = js.native
-  var innerProps: AnonClassNameEvent = js.native
+  var innerProps: AnonOnTouchEnd = js.native
   var isMulti: Boolean = js.native
   var options: OptionsType[OptionType] = js.native
   var selectProps: Props[OptionType] with js.Any = js.native

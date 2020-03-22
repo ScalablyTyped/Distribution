@@ -1,5 +1,6 @@
 package typings.typedoc
 
+import typings.typedoc.typedocStrings.unknown
 import typings.typedoc.typesAbstractMod.Type
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,6 +13,8 @@ object typesUnknownMod extends js.Object {
   class UnknownType protected () extends Type {
     def this(name: String) = this()
     var name: String = js.native
+    @JSName("type")
+    val type_UnknownType: unknown = js.native
     def equals(`type`: UnknownType): Boolean = js.native
   }
   

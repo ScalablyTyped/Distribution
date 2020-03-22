@@ -1,7 +1,7 @@
 
 # Scala.js typings for path-parser
 
-Typings are for version 4.2.0
+Typings are for version 6.1.0
 
 ## Library description:
 A small utility to parse, match and generate paths

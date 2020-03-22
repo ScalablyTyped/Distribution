@@ -5,7 +5,6 @@ import typings.tstl.ipairMod.IPair
 import typings.tstl.listContainerMod.ListContainer
 import typings.tstl.listIteratorMod.ListIterator
 import typings.tstl.mapContainerMod.MapContainer
-import typings.tstl.mapContainerMod.MapContainer.IteratorBase
 import typings.tstl.mapElementListMod.MapElementList.Iterator
 import typings.tstl.mapElementListMod.MapElementList.ReverseIterator
 import scala.scalajs.js
@@ -34,6 +33,7 @@ object mapElementListMod extends js.Object {
     def associative(): Source = js.native
   }
   
+  /* static members */
   @js.native
   object MapElementList extends js.Object {
     /**
@@ -46,8 +46,8 @@ object mapElementListMod extends js.Object {
       *
       * @author Jeongho Nam - https://github.com/samchon
       */
-    /* import warning: RemoveDifficultInheritance.summarizeChanges 
-    - Dropped {readonly [ P in keyof tstl.tstl/base/container/IContainer.IContainer.Iterator<tstl.tstl/utility/Entry.Entry<Key, T>, Source, tstl.tstl/internal/container/associative/MapElementList.MapElementList.Iterator<Key, T, Unique, Source>, tstl.tstl/internal/container/associative/MapElementList.MapElementList.ReverseIterator<Key, T, Unique, Source>, tstl.tstl/utility/IPair.IPair<Key, T>> ]: tstl.tstl/base/container/IContainer.IContainer.Iterator<tstl.tstl/utility/Entry.Entry<Key, T>, Source, tstl.tstl/internal/container/associative/MapElementList.MapElementList.Iterator<Key, T, Unique, Source>, tstl.tstl/internal/container/associative/MapElementList.MapElementList.ReverseIterator<Key, T, Unique, Source>, tstl.tstl/utility/IPair.IPair<Key, T>>[P]} */ @js.native
+    /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+    - typings.tstl.mapContainerMod.MapContainer.Iterator because var conflicts: value. Inlined first, second */ @js.native
     class Iterator[Key, T, Unique /* <: Boolean */, Source /* <: MapContainer[
         Key, 
         T, 
@@ -55,41 +55,36 @@ object mapElementListMod extends js.Object {
         Source, 
         Iterator[Key, T, Unique, Source], 
         ReverseIterator[Key, T, Unique, Source]
-      ] */] protected ()
-      extends ListIterator[
+      ] */] protected () extends ListIterator[
               Entry[Key, T], 
               Source, 
               Iterator[Key, T, Unique, Source], 
               ReverseIterator[Key, T, Unique, Source], 
               IPair[Key, T]
-            ]
-         with IteratorBase[Key, T] {
+            ] {
       /**
         * The first, key element.
         */
-      /* CompleteClass */
-      override val first: Key = js.native
+      @JSName("first")
+      val first_FIterator: Key = js.native
       var list_ : js.Any = js.native
       /**
         * The second, stored element.
         */
-      /* CompleteClass */
-      override var second: T = js.native
-      /**
-        * @inheritDoc
-        */
-      @JSName("first")
-      def first_MIterator(): Key = js.native
-      /**
-        * @inheritDoc
-        */
       @JSName("second")
-      def second_MIterator(): T = js.native
+      var second_FIterator: T = js.native
       /**
         * @inheritDoc
         */
-      @JSName("second")
-      def second_MIterator(`val`: T): js.Any = js.native
+      def first(): Key = js.native
+      /**
+        * @inheritDoc
+        */
+      def second(): T = js.native
+      /**
+        * @inheritDoc
+        */
+      def second(`val`: T): js.Any = js.native
     }
     
     /**
@@ -102,8 +97,8 @@ object mapElementListMod extends js.Object {
       *
       * @author Jeongho Nam - https://github.com/samchon
       */
-    /* import warning: RemoveDifficultInheritance.summarizeChanges 
-    - Dropped {readonly [ P in keyof tstl.tstl/base/container/IContainer.IContainer.ReverseIterator<tstl.tstl/utility/Entry.Entry<Key, T>, Source, tstl.tstl/internal/container/associative/MapElementList.MapElementList.Iterator<Key, T, Unique, Source>, tstl.tstl/internal/container/associative/MapElementList.MapElementList.ReverseIterator<Key, T, Unique, Source>, tstl.tstl/utility/IPair.IPair<Key, T>> ]: tstl.tstl/base/container/IContainer.IContainer.ReverseIterator<tstl.tstl/utility/Entry.Entry<Key, T>, Source, tstl.tstl/internal/container/associative/MapElementList.MapElementList.Iterator<Key, T, Unique, Source>, tstl.tstl/internal/container/associative/MapElementList.MapElementList.ReverseIterator<Key, T, Unique, Source>, tstl.tstl/utility/IPair.IPair<Key, T>>[P]} */ @js.native
+    /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+    - typings.tstl.mapContainerMod.MapContainer.ReverseIterator because var conflicts: value. Inlined first, second */ @js.native
     class ReverseIterator[Key, T, Unique /* <: Boolean */, Source /* <: MapContainer[
         Key, 
         T, 
@@ -118,18 +113,57 @@ object mapElementListMod extends js.Object {
               Iterator[Key, T, Unique, Source], 
               ReverseIterator[Key, T, Unique, Source], 
               IPair[Key, T]
-            ]
-         with IteratorBase[Key, T] {
+            ] {
       /**
-        * The first, key element.
+        * Get the first, key element.
+        *
+        * @return The first element.
         */
-      /* CompleteClass */
-      override val first: Key = js.native
+      def first(): Key = js.native
       /**
-        * The second, stored element.
+        * Get the second, stored element.
+        *
+        * @return The second element.
         */
-      /* CompleteClass */
-      override var second: T = js.native
+      def second(): T = js.native
+      /**
+        * Set the second, stored element.
+        *
+        * @param val The value to set.
+        */
+      def second(`val`: T): js.Any = js.native
+    }
+    
+    /**
+      * @internal
+      */
+    def _Swap_associative[Key, T, Unique /* <: Boolean */, Source /* <: MapContainer[
+        Key, 
+        T, 
+        Unique, 
+        Source, 
+        Iterator[Key, T, Unique, Source], 
+        ReverseIterator[Key, T, Unique, Source]
+      ] */](x: MapElementList[Key, T, Unique, Source], y: MapElementList[Key, T, Unique, Source]): Unit = js.native
+    /* static members */
+    @js.native
+    object Iterator extends js.Object {
+      /**
+        * @internal
+        */
+      def create[Key, T, Unique /* <: Boolean */, Source /* <: MapContainer[
+            Key, 
+            T, 
+            Unique, 
+            Source, 
+            Iterator[Key, T, Unique, Source], 
+            ReverseIterator[Key, T, Unique, Source]
+          ] */](
+        list: MapElementList[Key, T, Unique, Source],
+        prev: Iterator[Key, T, Unique, Source],
+        next: Iterator[Key, T, Unique, Source],
+        `val`: Entry[Key, T]
+      ): Iterator[Key, T, Unique, Source] = js.native
     }
     
   }

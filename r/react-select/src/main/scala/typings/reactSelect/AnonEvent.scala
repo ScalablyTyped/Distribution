@@ -1,20 +1,20 @@
 package typings.reactSelect
 
+import typings.reactSelect.accessibilityMod.InstructionsContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonEvent extends js.Object {
-  def onClick(event: js.Any): Unit
-  def onMouseDown(event: js.Any): Unit
-  def onTouchEnd(event: js.Any): Unit
+  var context: js.UndefOr[InstructionsContext] = js.undefined
+  var event: String
 }
 
 object AnonEvent {
   @scala.inline
-  def apply(onClick: js.Any => Unit, onMouseDown: js.Any => Unit, onTouchEnd: js.Any => Unit): AnonEvent = {
-    val __obj = js.Dynamic.literal(onClick = js.Any.fromFunction1(onClick), onMouseDown = js.Any.fromFunction1(onMouseDown), onTouchEnd = js.Any.fromFunction1(onTouchEnd))
-  
+  def apply(event: String, context: InstructionsContext = null): AnonEvent = {
+    val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any])
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnonEvent]
   }
 }

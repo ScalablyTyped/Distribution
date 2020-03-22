@@ -13,14 +13,13 @@ import typings.react.mod.ReactNode
 import typings.react.mod.SFC
 import typings.react.mod.TouchEvent
 import typings.reactDayPicker.AnonNextMonth
+import typings.reactDayPicker.PartialModifiers
 import typings.reactDayPicker.commonMod.ClassNames
 import typings.reactDayPicker.commonMod.DayModifiers
 import typings.reactDayPicker.commonMod.Modifier
-import typings.reactDayPicker.commonMod.Modifiers
 import typings.std.Date
 import typings.std.HTMLButtonElement
 import typings.std.HTMLDivElement
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -45,7 +44,7 @@ trait DayPickerProps extends js.Object {
   var localeUtils: js.UndefOr[
     /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LocaleUtils */ js.Any
   ] = js.undefined
-  var modifiers: js.UndefOr[Partial[Modifiers]] = js.undefined
+  var modifiers: js.UndefOr[PartialModifiers] = js.undefined
   var modifiersStyles: js.UndefOr[js.Object] = js.undefined
   var month: js.UndefOr[Date] = js.undefined
   var months: js.UndefOr[js.Array[String]] = js.undefined
@@ -168,7 +167,7 @@ object DayPickerProps {
     labels: AnonNextMonth = null,
     locale: String = null,
     localeUtils: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LocaleUtils */ js.Any = null,
-    modifiers: Partial[Modifiers] = null,
+    modifiers: PartialModifiers = null,
     modifiersStyles: js.Object = null,
     month: Date = null,
     months: js.Array[String] = null,

@@ -1,21 +1,22 @@
 package typings.oracleOraclejet
 
-import typings.oracleOraclejet.ojtableMod.ojTable.CurrentRow
+import typings.oracleOraclejet.oracleOraclejetStrings.`oj-gantt-taskbar`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait AnonRowIndex[K] extends CurrentRow[K] {
+trait AnonRowIndex extends js.Object {
+  var index: Double
   var rowIndex: Double
-  var rowKey: js.UndefOr[K] = js.undefined
+  var subId: `oj-gantt-taskbar`
 }
 
 object AnonRowIndex {
   @scala.inline
-  def apply[K](rowIndex: Double, rowKey: K = null): AnonRowIndex[K] = {
-    val __obj = js.Dynamic.literal(rowIndex = rowIndex.asInstanceOf[js.Any])
-    if (rowKey != null) __obj.updateDynamic("rowKey")(rowKey.asInstanceOf[js.Any])
-    __obj.asInstanceOf[AnonRowIndex[K]]
+  def apply(index: Double, rowIndex: Double, subId: `oj-gantt-taskbar`): AnonRowIndex = {
+    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], rowIndex = rowIndex.asInstanceOf[js.Any], subId = subId.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[AnonRowIndex]
   }
 }
 

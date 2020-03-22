@@ -1,7 +1,7 @@
 package typings.oracleOraclejet.ojnavigationlistMod
 
-import typings.oracleOraclejet.AnonContextRendererSelectable
 import typings.oracleOraclejet.AnonDefaultRootLabel
+import typings.oracleOraclejet.AnonSelectable
 import typings.oracleOraclejet.mod.baseComponentSettableProperties
 import typings.oracleOraclejet.ojdataproviderMod.DataProvider
 import typings.oracleOraclejet.ojkeysetMod.KeySet
@@ -27,7 +27,7 @@ trait ojNavigationListSettableProperties[K, D] extends baseComponentSettableProp
   var edge: top | start
   var expanded: KeySet[K]
   var hierarchyMenuThreshold: Double
-  var item: AnonContextRendererSelectable[K, D]
+  var item: AnonSelectable[K, D]
   var overflow: popup | hidden
   var rootLabel: String | Null
   var selection: K
@@ -45,7 +45,7 @@ object ojNavigationListSettableProperties {
     edge: top | start,
     expanded: KeySet[K],
     hierarchyMenuThreshold: Double,
-    item: AnonContextRendererSelectable[K, D],
+    item: AnonSelectable[K, D],
     overflow: popup | hidden,
     selection: K,
     translations: AnonDefaultRootLabel,

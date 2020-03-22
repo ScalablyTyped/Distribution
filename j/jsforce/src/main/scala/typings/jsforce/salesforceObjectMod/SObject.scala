@@ -1,9 +1,9 @@
 package typings.jsforce.salesforceObjectMod
 
-import typings.jsforce.AnonCallbackClearApprovalLayoutInfo
-import typings.jsforce.AnonCallbackClearCompactLayoutInfo
-import typings.jsforce.AnonCallbackClearDescribeSObjectResult
-import typings.jsforce.AnonCallbackClearLayoutName
+import typings.jsforce.AnonCallCallback
+import typings.jsforce.AnonCallCallbackClear
+import typings.jsforce.AnonCallClear
+import typings.jsforce.AnonCallLayoutNameCallback
 import typings.jsforce.AnonExtIdField
 import typings.jsforce.batchMod.Batch
 import typings.jsforce.batchMod.BatchResultInfo
@@ -27,14 +27,14 @@ import scala.scalajs.js.annotation._
 @js.native
 class SObject[T] () extends js.Object {
   @JSName("approvalLayouts$")
-  var approvalLayouts$_Original: AnonCallbackClearApprovalLayoutInfo = js.native
+  var approvalLayouts$_Original: AnonCallClear = js.native
   @JSName("compactLayouts$")
-  var compactLayouts$_Original: AnonCallbackClearCompactLayoutInfo = js.native
+  var compactLayouts$_Original: AnonCallCallback = js.native
   @JSName("describe$")
-  var describe$_Original: AnonCallbackClearDescribeSObjectResult = js.native
+  var describe$_Original: AnonCallCallbackClear = js.native
   /** Returns a value from the cache if it exists, otherwise calls SObject.layouts */
   @JSName("layouts$")
-  var layouts$_Original: AnonCallbackClearLayoutName = js.native
+  var layouts$_Original: AnonCallLayoutNameCallback = js.native
   def approvalLayouts(): js.Promise[ApprovalLayoutInfo] = js.native
   def approvalLayouts(callback: Callback[ApprovalLayoutInfo]): js.Promise[ApprovalLayoutInfo] = js.native
   /** Returns a value from the cache if it exists, otherwise calls SObject.approvalLayouts */

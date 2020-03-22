@@ -33,9 +33,10 @@ trait AnonAED extends js.Object {
   var KWD: js.Array[String]
   var KYD: js.Array[js.UndefOr[String]]
   var LBP: js.Array[String]
+  var LRD: js.Array[js.UndefOr[String]]
   var LYD: js.Array[String]
   var MAD: js.Array[String]
-  var MRO: js.Array[String]
+  var MRU: js.Array[String]
   var MXN: js.Array[String]
   var NZD: js.Array[String]
   var OMR: js.Array[String]
@@ -87,9 +88,10 @@ object AnonAED {
     KWD: js.Array[String],
     KYD: js.Array[js.UndefOr[String]],
     LBP: js.Array[String],
+    LRD: js.Array[js.UndefOr[String]],
     LYD: js.Array[String],
     MAD: js.Array[String],
-    MRO: js.Array[String],
+    MRU: js.Array[String],
     MXN: js.Array[String],
     NZD: js.Array[String],
     OMR: js.Array[String],
@@ -109,7 +111,7 @@ object AnonAED {
     XXX: js.Array[String],
     YER: js.Array[String]
   ): AnonAED = {
-    val __obj = js.Dynamic.literal(AED = AED.asInstanceOf[js.Any], ARS = ARS.asInstanceOf[js.Any], AUD = AUD.asInstanceOf[js.Any], BBD = BBD.asInstanceOf[js.Any], BHD = BHD.asInstanceOf[js.Any], BMD = BMD.asInstanceOf[js.Any], BSD = BSD.asInstanceOf[js.Any], BZD = BZD.asInstanceOf[js.Any], CAD = CAD.asInstanceOf[js.Any], CLP = CLP.asInstanceOf[js.Any], CNY = CNY.asInstanceOf[js.Any], COP = COP.asInstanceOf[js.Any], CUP = CUP.asInstanceOf[js.Any], DOP = DOP.asInstanceOf[js.Any], DZD = DZD.asInstanceOf[js.Any], EGP = EGP.asInstanceOf[js.Any], FJD = FJD.asInstanceOf[js.Any], GBP = GBP.asInstanceOf[js.Any], GYD = GYD.asInstanceOf[js.Any], HKD = HKD.asInstanceOf[js.Any], IQD = IQD.asInstanceOf[js.Any], IRR = IRR.asInstanceOf[js.Any], JMD = JMD.asInstanceOf[js.Any], JOD = JOD.asInstanceOf[js.Any], JPY = JPY.asInstanceOf[js.Any], KWD = KWD.asInstanceOf[js.Any], KYD = KYD.asInstanceOf[js.Any], LBP = LBP.asInstanceOf[js.Any], LYD = LYD.asInstanceOf[js.Any], MAD = MAD.asInstanceOf[js.Any], MRO = MRO.asInstanceOf[js.Any], MXN = MXN.asInstanceOf[js.Any], NZD = NZD.asInstanceOf[js.Any], OMR = OMR.asInstanceOf[js.Any], QAR = QAR.asInstanceOf[js.Any], SAR = SAR.asInstanceOf[js.Any], SBD = SBD.asInstanceOf[js.Any], SDD = SDD.asInstanceOf[js.Any], SDG = SDG.asInstanceOf[js.Any], SRD = SRD.asInstanceOf[js.Any], SYP = SYP.asInstanceOf[js.Any], THB = THB.asInstanceOf[js.Any], TND = TND.asInstanceOf[js.Any], TTD = TTD.asInstanceOf[js.Any], TWD = TWD.asInstanceOf[js.Any], USD = USD.asInstanceOf[js.Any], UYU = UYU.asInstanceOf[js.Any], XXX = XXX.asInstanceOf[js.Any], YER = YER.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(AED = AED.asInstanceOf[js.Any], ARS = ARS.asInstanceOf[js.Any], AUD = AUD.asInstanceOf[js.Any], BBD = BBD.asInstanceOf[js.Any], BHD = BHD.asInstanceOf[js.Any], BMD = BMD.asInstanceOf[js.Any], BSD = BSD.asInstanceOf[js.Any], BZD = BZD.asInstanceOf[js.Any], CAD = CAD.asInstanceOf[js.Any], CLP = CLP.asInstanceOf[js.Any], CNY = CNY.asInstanceOf[js.Any], COP = COP.asInstanceOf[js.Any], CUP = CUP.asInstanceOf[js.Any], DOP = DOP.asInstanceOf[js.Any], DZD = DZD.asInstanceOf[js.Any], EGP = EGP.asInstanceOf[js.Any], FJD = FJD.asInstanceOf[js.Any], GBP = GBP.asInstanceOf[js.Any], GYD = GYD.asInstanceOf[js.Any], HKD = HKD.asInstanceOf[js.Any], IQD = IQD.asInstanceOf[js.Any], IRR = IRR.asInstanceOf[js.Any], JMD = JMD.asInstanceOf[js.Any], JOD = JOD.asInstanceOf[js.Any], JPY = JPY.asInstanceOf[js.Any], KWD = KWD.asInstanceOf[js.Any], KYD = KYD.asInstanceOf[js.Any], LBP = LBP.asInstanceOf[js.Any], LRD = LRD.asInstanceOf[js.Any], LYD = LYD.asInstanceOf[js.Any], MAD = MAD.asInstanceOf[js.Any], MRU = MRU.asInstanceOf[js.Any], MXN = MXN.asInstanceOf[js.Any], NZD = NZD.asInstanceOf[js.Any], OMR = OMR.asInstanceOf[js.Any], QAR = QAR.asInstanceOf[js.Any], SAR = SAR.asInstanceOf[js.Any], SBD = SBD.asInstanceOf[js.Any], SDD = SDD.asInstanceOf[js.Any], SDG = SDG.asInstanceOf[js.Any], SRD = SRD.asInstanceOf[js.Any], SYP = SYP.asInstanceOf[js.Any], THB = THB.asInstanceOf[js.Any], TND = TND.asInstanceOf[js.Any], TTD = TTD.asInstanceOf[js.Any], TWD = TWD.asInstanceOf[js.Any], USD = USD.asInstanceOf[js.Any], UYU = UYU.asInstanceOf[js.Any], XXX = XXX.asInstanceOf[js.Any], YER = YER.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AnonAED]
   }

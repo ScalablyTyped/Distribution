@@ -7,7 +7,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait JQueryColorpickerStatic_ extends js.Object {
-  var Color: AnonA
+  var Color: AnonInstantiable
   var limits: StringDictionary[js.Function1[/* color */ js.Any, Unit]]
   var parsers: StringDictionary[js.Function1[/* color */ js.Any, _]]
   var parts: StringDictionary[js.Function1[/* inst */ js.Any, _]]
@@ -20,7 +20,7 @@ trait JQueryColorpickerStatic_ extends js.Object {
 object JQueryColorpickerStatic_ {
   @scala.inline
   def apply(
-    Color: AnonA,
+    Color: AnonInstantiable,
     limits: StringDictionary[js.Function1[/* color */ js.Any, Unit]],
     parsers: StringDictionary[js.Function1[/* color */ js.Any, _]],
     parts: StringDictionary[js.Function1[/* inst */ js.Any, _]],

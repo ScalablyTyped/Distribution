@@ -1,7 +1,7 @@
 package typings.typescriptCollections.multiRootTreeMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.typescriptCollections.AnonId
+import typings.typescriptCollections.AnonNodes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +17,7 @@ trait MultiRootTree extends js.Object {
   /* private */ def findRootId(id: js.Any): js.Any = js.native
   def flatten(): js.Array[FlatTreeNode] = js.native
   def getNodes(): StringDictionary[js.Array[String]] = js.native
-  def getObject(): AnonId = js.native
+  def getObject(): AnonNodes = js.native
   def getRootIds(): js.Array[String] = js.native
   def initNodes(): Unit = js.native
   def initRootIds(): Unit = js.native
@@ -46,6 +46,6 @@ trait MultiRootTree extends js.Object {
   /* private */ def swapArrayElements(arr: js.Any, indexA: js.Any, indexB: js.Any): js.Any = js.native
   def swapRootIdWithRootId(rootId: String, withRootId: String): Unit = js.native
   def swapRootPositionWithRootPosition(swapRootPosition: Double, withRootPosition: Double): Unit = js.native
-  def toObject(): AnonId = js.native
+  def toObject(): AnonNodes = js.native
 }
 

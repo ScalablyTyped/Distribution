@@ -1,6 +1,6 @@
 package typings.antDesignReactNative.inputNumberMod
 
-import typings.antDesignReactNative.AnonInputMax
+import typings.antDesignReactNative.AnonMax
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,6 +15,6 @@ class default[P /* <: InputNumberProps */, S /* <: InputNumberState */] protecte
 @JSImport("@ant-design/react-native/lib/stepper/InputNumber", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: AnonInputMax = js.native
+  var defaultProps: AnonMax = js.native
 }
 

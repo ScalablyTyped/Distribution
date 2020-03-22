@@ -1,10 +1,10 @@
 package typings.firefoxWebextBrowser.browser
 
-import typings.firefoxWebextBrowser.AnonImageDataKeyPath
+import typings.firefoxWebextBrowser.AnonImageDataPath
 import typings.firefoxWebextBrowser.AnonPanel
-import typings.firefoxWebextBrowser.AnonTabIdTitle
 import typings.firefoxWebextBrowser.AnonTabIdWindowId
 import typings.firefoxWebextBrowser.AnonWindowId
+import typings.firefoxWebextBrowser.AnonWindowIdNumber
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,7 +26,7 @@ object sidebarAction extends js.Object {
   /** Gets the title of the sidebar action. */
   def getTitle(details: AnonTabIdWindowId): js.Promise[String] = js.native
   /** Checks whether the sidebar action is open. */
-  def isOpen(details: AnonWindowId): js.Promise[Boolean] = js.native
+  def isOpen(details: AnonWindowIdNumber): js.Promise[Boolean] = js.native
   /** Opens the extension sidebar in the active window. */
   def open(): js.Promise[Unit] = js.native
   /**
@@ -34,14 +34,14 @@ object sidebarAction extends js.Object {
     * pixel data from a canvas element, or as dictionary of either one of those. Either the **path** or the
     * **imageData** property must be specified.
     */
-  def setIcon(details: AnonImageDataKeyPath): js.Promise[Unit] = js.native
+  def setIcon(details: AnonImageDataPath): js.Promise[Unit] = js.native
   /**
     * Sets the url to the html document to be opened in the sidebar when the user clicks on the sidebar action's icon.
     */
   def setPanel(details: AnonPanel): js.Promise[Unit] = js.native
   /* sidebarAction functions */
   /** Sets the title of the sidebar action. This shows up in the tooltip. */
-  def setTitle(details: AnonTabIdTitle): js.Promise[Unit] = js.native
+  def setTitle(details: AnonWindowId): js.Promise[Unit] = js.native
   /* sidebarAction types */
   /** Pixel data for an image. Must be an ImageData object (for example, from a `canvas` element). */
   type ImageDataType = js.Object

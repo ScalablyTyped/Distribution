@@ -22,6 +22,5 @@ package object mod {
   type CellValue = typings.exceljs.mod._CellValue | scala.Null | scala.Double | java.lang.String | scala.Boolean | typings.std.Date
   type DefinedNamesModel = js.Array[typings.exceljs.mod.DefinedNamesRanges]
   type DocumentType = typings.exceljs.exceljsNumbers.`1`
-  type TableColumn = typings.std.Required[typings.exceljs.mod.TableColumnProperties]
   type WorksheetView = typings.exceljs.mod.WorksheetViewCommon with (typings.exceljs.mod.WorksheetViewNormal | typings.exceljs.mod.WorksheetViewFrozen | typings.exceljs.mod.WorksheetViewSplit)
 }

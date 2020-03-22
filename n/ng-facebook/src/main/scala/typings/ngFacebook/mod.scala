@@ -15,7 +15,6 @@ import typings.facebookJsSdk.facebook.PaymentsLiteDialogParams
 import typings.facebookJsSdk.facebook.SendDialogParams
 import typings.facebookJsSdk.facebook.ShareDialogParams
 import typings.facebookJsSdk.facebook.ShareOpenGraphDialogParams
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,7 +32,7 @@ object mod extends js.Object {
       def getPermissions(): String = js.native
       def getVersion(): String = js.native
       def setAppId(appId: String): IFacebookProvider = js.native
-      def setCustomInit(customInit: Partial[InitParams]): IFacebookProvider = js.native
+      def setCustomInit(customInit: PartialInitParams): IFacebookProvider = js.native
       def setPermissions(permissions: String): IFacebookProvider = js.native
       def setPermissions(permissions: js.Array[String]): IFacebookProvider = js.native
       def setVersion(version: String): IFacebookProvider = js.native

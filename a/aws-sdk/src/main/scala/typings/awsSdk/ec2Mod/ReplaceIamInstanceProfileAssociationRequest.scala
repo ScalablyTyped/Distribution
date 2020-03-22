@@ -9,7 +9,7 @@ trait ReplaceIamInstanceProfileAssociationRequest extends js.Object {
   /**
     * The ID of the existing IAM instance profile association.
     */
-  var AssociationId: String = js.native
+  var AssociationId: IamInstanceProfileAssociationId = js.native
   /**
     * The IAM instance profile.
     */
@@ -18,7 +18,10 @@ trait ReplaceIamInstanceProfileAssociationRequest extends js.Object {
 
 object ReplaceIamInstanceProfileAssociationRequest {
   @scala.inline
-  def apply(AssociationId: String, IamInstanceProfile: IamInstanceProfileSpecification): ReplaceIamInstanceProfileAssociationRequest = {
+  def apply(
+    AssociationId: IamInstanceProfileAssociationId,
+    IamInstanceProfile: IamInstanceProfileSpecification
+  ): ReplaceIamInstanceProfileAssociationRequest = {
     val __obj = js.Dynamic.literal(AssociationId = AssociationId.asInstanceOf[js.Any], IamInstanceProfile = IamInstanceProfile.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReplaceIamInstanceProfileAssociationRequest]

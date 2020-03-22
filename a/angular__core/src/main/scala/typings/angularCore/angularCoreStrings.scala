@@ -1,8 +1,9 @@
 package typings.angularCore
 
 import typings.angularCore.helpersMod.HelperFunction
-import typings.angularCore.mod.BypassType
 import typings.angularCore.mod.GlobalTargetName
+import typings.angularCore.mod.ɵBypassType
+import typings.angularCore.propertyNameMod.PropertyNameWithText
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,13 +16,10 @@ object angularCoreStrings {
   sealed trait `@angularSlashplatform-browser` extends js.Object
   
   @js.native
-  sealed trait Anon_ChangeDetection extends js.Object
+  sealed trait AnonChangeDetection extends js.Object
   
   @js.native
-  sealed trait Anon_ContentQueries extends js.Object
-  
-  @js.native
-  sealed trait Anon_ContentQueriesExportAs extends js.Object
+  sealed trait AnonContentQueries extends js.Object
   
   @js.native
   sealed trait AnyDuringRendererMigration extends HelperFunction
@@ -39,22 +37,31 @@ object angularCoreStrings {
   sealed trait DOCUMENT extends js.Object
   
   @js.native
-  sealed trait Html extends BypassType
+  sealed trait Directive extends js.Object
+  
+  @js.native
+  sealed trait HTML extends ɵBypassType
   
   @js.native
   sealed trait NO_CHANGE extends js.Object
   
   @js.native
-  sealed trait ResourceUrl extends BypassType
+  sealed trait ResourceURL extends ɵBypassType
   
   @js.native
-  sealed trait Script extends BypassType
+  sealed trait Script extends ɵBypassType
   
   @js.native
-  sealed trait Style extends BypassType
+  sealed trait Style extends ɵBypassType
   
   @js.native
-  sealed trait Url extends BypassType
+  sealed trait TStylingRange extends js.Object
+  
+  @js.native
+  sealed trait URL extends ɵBypassType
+  
+  @js.native
+  sealed trait USD extends js.Object
   
   @js.native
   sealed trait __ngRendererAnimateHelper extends HelperFunction
@@ -93,6 +100,9 @@ object angularCoreStrings {
   sealed trait any extends js.Object
   
   @js.native
+  sealed trait `array-map` extends js.Object
+  
+  @js.native
   sealed trait body extends GlobalTargetName
   
   @js.native
@@ -111,10 +121,25 @@ object angularCoreStrings {
   sealed trait `en-US` extends js.Object
   
   @js.native
+  sealed trait escapedText extends PropertyNameWithText
+  
+  @js.native
+  sealed trait isInJSDocNamespace extends PropertyNameWithText
+  
+  @js.native
   sealed trait noop extends js.Object
   
   @js.native
+  sealed trait originalKeywordKind extends PropertyNameWithText
+  
+  @js.native
+  sealed trait platform extends js.Object
+  
+  @js.native
   sealed trait root extends js.Object
+  
+  @js.native
+  sealed trait text extends PropertyNameWithText
   
   @js.native
   sealed trait window extends GlobalTargetName
@@ -123,18 +148,16 @@ object angularCoreStrings {
   sealed trait zoneDotjs extends js.Object
   
   @js.native
-  sealed trait ɵɵBaseDef extends js.Object
+  sealed trait ɵDirectiveDef extends js.Object
   
   @scala.inline
   def `@angularSlashcommon`: `@angularSlashcommon` = "@angular/common".asInstanceOf[`@angularSlashcommon`]
   @scala.inline
   def `@angularSlashplatform-browser`: `@angularSlashplatform-browser` = "@angular/platform-browser".asInstanceOf[`@angularSlashplatform-browser`]
   @scala.inline
-  def Anon_ChangeDetection: Anon_ChangeDetection = "Anon_ChangeDetection".asInstanceOf[Anon_ChangeDetection]
+  def AnonChangeDetection: AnonChangeDetection = "AnonChangeDetection".asInstanceOf[AnonChangeDetection]
   @scala.inline
-  def Anon_ContentQueries: Anon_ContentQueries = "Anon_ContentQueries".asInstanceOf[Anon_ContentQueries]
-  @scala.inline
-  def Anon_ContentQueriesExportAs: Anon_ContentQueriesExportAs = "Anon_ContentQueriesExportAs".asInstanceOf[Anon_ContentQueriesExportAs]
+  def AnonContentQueries: AnonContentQueries = "AnonContentQueries".asInstanceOf[AnonContentQueries]
   @scala.inline
   def AnyDuringRendererMigration: AnyDuringRendererMigration = "AnyDuringRendererMigration".asInstanceOf[AnyDuringRendererMigration]
   @scala.inline
@@ -146,17 +169,23 @@ object angularCoreStrings {
   @scala.inline
   def DOCUMENT: DOCUMENT = "DOCUMENT".asInstanceOf[DOCUMENT]
   @scala.inline
-  def Html: Html = "Html".asInstanceOf[Html]
+  def Directive: Directive = "Directive".asInstanceOf[Directive]
+  @scala.inline
+  def HTML: HTML = "HTML".asInstanceOf[HTML]
   @scala.inline
   def NO_CHANGE: NO_CHANGE = "NO_CHANGE".asInstanceOf[NO_CHANGE]
   @scala.inline
-  def ResourceUrl: ResourceUrl = "ResourceUrl".asInstanceOf[ResourceUrl]
+  def ResourceURL: ResourceURL = "ResourceURL".asInstanceOf[ResourceURL]
   @scala.inline
   def Script: Script = "Script".asInstanceOf[Script]
   @scala.inline
   def Style: Style = "Style".asInstanceOf[Style]
   @scala.inline
-  def Url: Url = "Url".asInstanceOf[Url]
+  def TStylingRange: TStylingRange = "TStylingRange".asInstanceOf[TStylingRange]
+  @scala.inline
+  def URL: URL = "URL".asInstanceOf[URL]
+  @scala.inline
+  def USD: USD = "USD".asInstanceOf[USD]
   @scala.inline
   def __ngRendererAnimateHelper: __ngRendererAnimateHelper = "__ngRendererAnimateHelper".asInstanceOf[__ngRendererAnimateHelper]
   @scala.inline
@@ -182,6 +211,8 @@ object angularCoreStrings {
   @scala.inline
   def any: any = "any".asInstanceOf[any]
   @scala.inline
+  def `array-map`: `array-map` = "array-map".asInstanceOf[`array-map`]
+  @scala.inline
   def body: body = "body".asInstanceOf[body]
   @scala.inline
   def comment: comment = "comment".asInstanceOf[comment]
@@ -194,14 +225,24 @@ object angularCoreStrings {
   @scala.inline
   def `en-US`: `en-US` = "en-US".asInstanceOf[`en-US`]
   @scala.inline
+  def escapedText: escapedText = "escapedText".asInstanceOf[escapedText]
+  @scala.inline
+  def isInJSDocNamespace: isInJSDocNamespace = "isInJSDocNamespace".asInstanceOf[isInJSDocNamespace]
+  @scala.inline
   def noop: noop = "noop".asInstanceOf[noop]
   @scala.inline
+  def originalKeywordKind: originalKeywordKind = "originalKeywordKind".asInstanceOf[originalKeywordKind]
+  @scala.inline
+  def platform: platform = "platform".asInstanceOf[platform]
+  @scala.inline
   def root: root = "root".asInstanceOf[root]
+  @scala.inline
+  def text: text = "text".asInstanceOf[text]
   @scala.inline
   def window: window = "window".asInstanceOf[window]
   @scala.inline
   def zoneDotjs: zoneDotjs = "zone.js".asInstanceOf[zoneDotjs]
   @scala.inline
-  def ɵɵBaseDef: ɵɵBaseDef = "\u0275\u0275BaseDef".asInstanceOf[ɵɵBaseDef]
+  def ɵDirectiveDef: ɵDirectiveDef = "\u0275DirectiveDef".asInstanceOf[ɵDirectiveDef]
 }
 

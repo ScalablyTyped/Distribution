@@ -44,6 +44,7 @@ trait Component extends Directive {
     * this component. For each component listed here,
     * Angular creates a {@link ComponentFactory} and stores it in the
     * {@link ComponentFactoryResolver}.
+    * @deprecated Since 9.0.0. With Ivy, this property is no longer necessary.
     */
   var entryComponents: js.UndefOr[js.Array[Type[_] | js.Array[_]]] = js.undefined
   /**

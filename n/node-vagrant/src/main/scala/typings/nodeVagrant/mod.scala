@@ -195,7 +195,7 @@ object mod extends js.Object {
   def boxUpdate(box: String, provider: String, cb: Callback): ProgressEmitter = js.native
   def boxUpdate(box: String, provider: Null, cb: Callback): ProgressEmitter = js.native
   def create(): Machine = js.native
-  def create(opts: AnonCwdEnv): Machine = js.native
+  def create(opts: AnonEnv): Machine = js.native
   def globalStatus(args: String, cb: js.Function2[/* err */ ErrorArg, /* out */ js.UndefOr[js.Array[AnonId]], Unit]): Unit = js.native
   def globalStatus(
     args: js.Array[String],

@@ -4,6 +4,7 @@ import typings.baseui.AnonSelect
 import typings.baseui.baseuiStrings.compact
 import typings.baseui.baseuiStrings.default_
 import typings.baseui.baseuiStrings.large_
+import typings.baseui.baseuiStrings.mini
 import typings.baseui.selectMod.Option
 import typings.react.mod.ReactNode
 import typings.std.Date
@@ -19,7 +20,7 @@ trait TimezonePickerProps extends js.Object {
   var onChange: js.UndefOr[js.Function1[/* value */ Timezone, _]] = js.undefined
   var overrides: js.UndefOr[AnonSelect] = js.undefined
   var positive: js.UndefOr[Boolean] = js.undefined
-  var size: js.UndefOr[default_ | compact | large_] = js.undefined
+  var size: js.UndefOr[mini | default_ | compact | large_] = js.undefined
   var value: js.UndefOr[String] = js.undefined
 }
 
@@ -33,7 +34,7 @@ object TimezonePickerProps {
     onChange: /* value */ Timezone => _ = null,
     overrides: AnonSelect = null,
     positive: js.UndefOr[Boolean] = js.undefined,
-    size: default_ | compact | large_ = null,
+    size: mini | default_ | compact | large_ = null,
     value: String = null
   ): TimezonePickerProps = {
     val __obj = js.Dynamic.literal()

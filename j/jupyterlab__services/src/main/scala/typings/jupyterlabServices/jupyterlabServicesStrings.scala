@@ -2,20 +2,33 @@ package typings.jupyterlabServices
 
 import typings.jupyterlabServices.contentsMod.Contents.ContentType
 import typings.jupyterlabServices.contentsMod.Contents.FileFormat
-import typings.jupyterlabServices.kernelKernelMod.Kernel.Status
-import typings.jupyterlabServices.messagesMod.KernelMessage.Channel
-import typings.jupyterlabServices.messagesMod.KernelMessage.ControlMessageType
-import typings.jupyterlabServices.messagesMod.KernelMessage.IOPubMessageType
-import typings.jupyterlabServices.messagesMod.KernelMessage.MessageType
-import typings.jupyterlabServices.messagesMod.KernelMessage.ShellMessageType
-import typings.jupyterlabServices.messagesMod.KernelMessage.StdinMessageType
+import typings.jupyterlabServices.messagesMod.Channel
+import typings.jupyterlabServices.messagesMod.ControlMessageType
+import typings.jupyterlabServices.messagesMod.IOPubMessageType
+import typings.jupyterlabServices.messagesMod.MessageType
+import typings.jupyterlabServices.messagesMod.ShellMessageType
+import typings.jupyterlabServices.messagesMod.Status
+import typings.jupyterlabServices.messagesMod.StdinMessageType
+import typings.jupyterlabServices.terminalTerminalMod.ConnectionStatus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object jupyterlabServicesStrings {
   @js.native
+  sealed trait DeepPartial extends js.Object
+  
+  @js.native
   sealed trait abort extends js.Object
+  
+  @js.native
+  sealed trait apiSlashkernels extends js.Object
+  
+  @js.native
+  sealed trait apiSlashsessions extends js.Object
+  
+  @js.native
+  sealed trait apiSlashterminals extends js.Object
   
   @js.native
   sealed trait autorestarting extends Status
@@ -76,7 +89,14 @@ object jupyterlabServicesStrings {
        with ShellMessageType
   
   @js.native
-  sealed trait connected extends Status
+  sealed trait connected
+    extends ConnectionStatus
+       with typings.jupyterlabServices.kernelKernelMod.ConnectionStatus
+  
+  @js.native
+  sealed trait connecting
+    extends ConnectionStatus
+       with typings.jupyterlabServices.kernelKernelMod.ConnectionStatus
   
   @js.native
   sealed trait control extends Channel
@@ -107,7 +127,12 @@ object jupyterlabServicesStrings {
   
   @js.native
   sealed trait disconnect
-    extends typings.jupyterlabServices.terminalTerminalMod.TerminalSession.MessageType
+    extends typings.jupyterlabServices.terminalTerminalMod.MessageType
+  
+  @js.native
+  sealed trait disconnected
+    extends ConnectionStatus
+       with typings.jupyterlabServices.kernelKernelMod.ConnectionStatus
   
   @js.native
   sealed trait display_data
@@ -211,6 +236,9 @@ object jupyterlabServicesStrings {
   sealed trait json extends FileFormat
   
   @js.native
+  sealed trait kernel extends js.Object
+  
+  @js.native
   sealed trait kernel_info_reply
     extends MessageType
        with ShellMessageType
@@ -242,9 +270,6 @@ object jupyterlabServicesStrings {
   sealed trait range extends js.Object
   
   @js.native
-  sealed trait reconnecting extends Status
-  
-  @js.native
   sealed trait recv extends js.Object
   
   @js.native
@@ -270,7 +295,7 @@ object jupyterlabServicesStrings {
   
   @js.native
   sealed trait set_size
-    extends typings.jupyterlabServices.terminalTerminalMod.TerminalSession.MessageType
+    extends typings.jupyterlabServices.terminalTerminalMod.MessageType
   
   @js.native
   sealed trait shell extends Channel
@@ -302,11 +327,11 @@ object jupyterlabServicesStrings {
   @js.native
   sealed trait stdin
     extends Channel
-       with typings.jupyterlabServices.terminalTerminalMod.TerminalSession.MessageType
+       with typings.jupyterlabServices.terminalTerminalMod.MessageType
   
   @js.native
   sealed trait stdout
-    extends typings.jupyterlabServices.terminalTerminalMod.TerminalSession.MessageType
+    extends typings.jupyterlabServices.terminalTerminalMod.MessageType
   
   @js.native
   sealed trait stream
@@ -331,7 +356,15 @@ object jupyterlabServicesStrings {
        with MessageType
   
   @scala.inline
+  def DeepPartial: DeepPartial = "DeepPartial".asInstanceOf[DeepPartial]
+  @scala.inline
   def abort: abort = "abort".asInstanceOf[abort]
+  @scala.inline
+  def apiSlashkernels: apiSlashkernels = "api/kernels".asInstanceOf[apiSlashkernels]
+  @scala.inline
+  def apiSlashsessions: apiSlashsessions = "api/sessions".asInstanceOf[apiSlashsessions]
+  @scala.inline
+  def apiSlashterminals: apiSlashterminals = "api/terminals".asInstanceOf[apiSlashterminals]
   @scala.inline
   def autorestarting: autorestarting = "autorestarting".asInstanceOf[autorestarting]
   @scala.inline
@@ -361,6 +394,8 @@ object jupyterlabServicesStrings {
   @scala.inline
   def connected: connected = "connected".asInstanceOf[connected]
   @scala.inline
+  def connecting: connecting = "connecting".asInstanceOf[connecting]
+  @scala.inline
   def control: control = "control".asInstanceOf[control]
   @scala.inline
   def dead: dead = "dead".asInstanceOf[dead]
@@ -376,6 +411,8 @@ object jupyterlabServicesStrings {
   def directory: directory = "directory".asInstanceOf[directory]
   @scala.inline
   def disconnect: disconnect = "disconnect".asInstanceOf[disconnect]
+  @scala.inline
+  def disconnected: disconnected = "disconnected".asInstanceOf[disconnected]
   @scala.inline
   def display_data: display_data = "display_data".asInstanceOf[display_data]
   @scala.inline
@@ -423,6 +460,8 @@ object jupyterlabServicesStrings {
   @scala.inline
   def json: json = "json".asInstanceOf[json]
   @scala.inline
+  def kernel: kernel = "kernel".asInstanceOf[kernel]
+  @scala.inline
   def kernel_info_reply: kernel_info_reply = "kernel_info_reply".asInstanceOf[kernel_info_reply]
   @scala.inline
   def kernel_info_request: kernel_info_request = "kernel_info_request".asInstanceOf[kernel_info_request]
@@ -440,8 +479,6 @@ object jupyterlabServicesStrings {
   def path: path = "path".asInstanceOf[path]
   @scala.inline
   def range: range = "range".asInstanceOf[range]
-  @scala.inline
-  def reconnecting: reconnecting = "reconnecting".asInstanceOf[reconnecting]
   @scala.inline
   def recv: recv = "recv".asInstanceOf[recv]
   @scala.inline

@@ -44,7 +44,6 @@ import typings.stardustUiReactComponentEventListener.stardustUiReactComponentEve
 import typings.stardustUiReactComponentEventListener.stardustUiReactComponentEventListenerStrings.load
 import typings.stardustUiReactComponentEventListener.stardustUiReactComponentEventListenerStrings.loadeddata
 import typings.stardustUiReactComponentEventListener.stardustUiReactComponentEventListenerStrings.loadedmetadata
-import typings.stardustUiReactComponentEventListener.stardustUiReactComponentEventListenerStrings.loadend
 import typings.stardustUiReactComponentEventListener.stardustUiReactComponentEventListenerStrings.loadstart
 import typings.stardustUiReactComponentEventListener.stardustUiReactComponentEventListenerStrings.lostpointercapture
 import typings.stardustUiReactComponentEventListener.stardustUiReactComponentEventListenerStrings.mousedown
@@ -108,10 +107,10 @@ object eventListenerMod extends js.Object {
   @js.native
   object default extends js.Object {
     var displayName: String = js.native
-    var propTypes: AnonAbort | AnonCapture = js.native
+    var propTypes: AnonCapture | AnonListener = js.native
     def apply(
       props: EventListenerOptions[
-          abort | animationcancel | animationend | animationiteration | animationstart | auxclick | blur | cancel | canplay | canplaythrough | change | click | close | contextmenu | copy | cuechange | cut | dblclick | drag | dragend | dragenter | dragexit | dragleave | dragover | dragstart | drop | durationchange | emptied | ended | error | focus | focusin | focusout | fullscreenchange | fullscreenerror | gotpointercapture | input | invalid | keydown | keypress | keyup | load | loadeddata | loadedmetadata | loadend | loadstart | lostpointercapture | mousedown | mouseenter | mouseleave | mousemove | mouseout | mouseover | mouseup | paste | pause | play | playing | pointercancel | pointerdown | pointerenter | pointerleave | pointerlockchange | pointerlockerror | pointermove | pointerout | pointerover | pointerup | progress | ratechange | readystatechange | reset | resize | scroll | securitypolicyviolation | seeked | seeking | select | selectionchange | selectstart | stalled | submit | suspend | timeupdate | toggle | touchcancel | touchend | touchmove | touchstart | transitioncancel | transitionend | transitionrun | transitionstart | visibilitychange | volumechange | waiting | wheel
+          abort | animationcancel | animationend | animationiteration | animationstart | auxclick | blur | cancel | canplay | canplaythrough | change | click | close | contextmenu | copy | cuechange | cut | dblclick | drag | dragend | dragenter | dragexit | dragleave | dragover | dragstart | drop | durationchange | emptied | ended | error | focus | focusin | focusout | fullscreenchange | fullscreenerror | gotpointercapture | input | invalid | keydown | keypress | keyup | load | loadeddata | loadedmetadata | loadstart | lostpointercapture | mousedown | mouseenter | mouseleave | mousemove | mouseout | mouseover | mouseup | paste | pause | play | playing | pointercancel | pointerdown | pointerenter | pointerleave | pointerlockchange | pointerlockerror | pointermove | pointerout | pointerover | pointerup | progress | ratechange | readystatechange | reset | resize | scroll | securitypolicyviolation | seeked | seeking | select | selectionchange | selectstart | stalled | submit | suspend | timeupdate | toggle | touchcancel | touchend | touchmove | touchstart | transitioncancel | transitionend | transitionrun | transitionstart | visibilitychange | volumechange | waiting | wheel
         ]
     ): js.Any = js.native
     @js.native

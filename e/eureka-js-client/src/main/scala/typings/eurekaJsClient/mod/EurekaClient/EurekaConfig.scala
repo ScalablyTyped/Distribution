@@ -1,6 +1,6 @@
 package typings.eurekaJsClient.mod.EurekaClient
 
-import typings.eurekaJsClient.AnonArgs
+import typings.eurekaJsClient.AnonDebug
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait EurekaConfig extends js.Object {
   var eureka: EurekaClientConfig
   var instance: EurekaInstanceConfig
-  var logger: js.UndefOr[AnonArgs] = js.undefined
+  var logger: js.UndefOr[AnonDebug] = js.undefined
   var requestMiddleware: js.UndefOr[
     js.Function2[/* requestOpts */ js.Any, /* done */ js.Function1[/* opts */ js.Any, Unit], Unit]
   ] = js.undefined
@@ -20,7 +20,7 @@ object EurekaConfig {
   def apply(
     eureka: EurekaClientConfig,
     instance: EurekaInstanceConfig,
-    logger: AnonArgs = null,
+    logger: AnonDebug = null,
     requestMiddleware: (/* requestOpts */ js.Any, /* done */ js.Function1[/* opts */ js.Any, Unit]) => Unit = null,
     shouldUseDelta: js.UndefOr[Boolean] = js.undefined
   ): EurekaConfig = {

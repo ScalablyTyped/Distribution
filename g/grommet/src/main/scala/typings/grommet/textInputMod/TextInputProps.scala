@@ -1,8 +1,8 @@
 package typings.grommet.textInputMod
 
-import typings.grommet.AnonBottomLeft
 import typings.grommet.AnonEnterSelect
-import typings.grommet.AnonLabel
+import typings.grommet.AnonLabelValue
+import typings.grommet.AnonLeft
 import typings.grommet.AnonSuggestion
 import typings.grommet.dropMod.DropProps
 import typings.grommet.grommetStrings.large
@@ -16,7 +16,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TextInputProps extends js.Object {
-  var dropAlign: js.UndefOr[AnonBottomLeft] = js.undefined
+  var dropAlign: js.UndefOr[AnonLeft] = js.undefined
   var dropHeight: js.UndefOr[xsmall | small | medium | large | xlarge | String] = js.undefined
   var dropProps: js.UndefOr[DropProps] = js.undefined
   var dropTarget: js.UndefOr[js.Object] = js.undefined
@@ -30,14 +30,14 @@ trait TextInputProps extends js.Object {
   var placeholder: js.UndefOr[PlaceHolderType] = js.undefined
   var plain: js.UndefOr[Boolean] = js.undefined
   var size: js.UndefOr[small | medium | large | xlarge | String] = js.undefined
-  var suggestions: js.UndefOr[js.Array[AnonLabel | String]] = js.undefined
+  var suggestions: js.UndefOr[js.Array[AnonLabelValue | String]] = js.undefined
   var value: js.UndefOr[String | Double] = js.undefined
 }
 
 object TextInputProps {
   @scala.inline
   def apply(
-    dropAlign: AnonBottomLeft = null,
+    dropAlign: AnonLeft = null,
     dropHeight: xsmall | small | medium | large | xlarge | String = null,
     dropProps: DropProps = null,
     dropTarget: js.Object = null,
@@ -51,7 +51,7 @@ object TextInputProps {
     placeholder: PlaceHolderType = null,
     plain: js.UndefOr[Boolean] = js.undefined,
     size: small | medium | large | xlarge | String = null,
-    suggestions: js.Array[AnonLabel | String] = null,
+    suggestions: js.Array[AnonLabelValue | String] = null,
     value: String | Double = null
   ): TextInputProps = {
     val __obj = js.Dynamic.literal()

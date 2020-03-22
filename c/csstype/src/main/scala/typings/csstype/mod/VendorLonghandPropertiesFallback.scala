@@ -66,12 +66,6 @@ trait VendorLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var MozBackfaceVisibility: js.UndefOr[BackfaceVisibilityProperty | js.Array[BackfaceVisibilityProperty]] = js.undefined
   /**
-    * In Mozilla applications like Firefox, the **`-moz-border-bottom-colors`** CSS property sets a list of colors for the bottom border.
-    *
-    * **Initial value**: `none`
-    */
-  var MozBorderBottomColors: js.UndefOr[MozBorderBottomColorsProperty | js.Array[MozBorderBottomColorsProperty]] = js.undefined
-  /**
     * The **`border-inline-end-color`** CSS property defines the color of the logical inline-end border of an element, which maps to a physical border color depending on the element's writing mode, directionality, and text orientation. It corresponds to the `border-top-color`, `border-right-color`, `border-bottom-color`, or `border-left-color` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
     *
     * **Initial value**: `currentcolor`
@@ -92,18 +86,6 @@ trait VendorLonghandPropertiesFallback[TLength] extends js.Object {
     BorderInlineEndWidthProperty[TLength] | js.Array[BorderInlineEndWidthProperty[TLength]]
   ] = js.undefined
   /**
-    * In Mozilla applications like Firefox, the **`-moz-border-left-colors`** CSS property sets a list of colors for the left border.
-    *
-    * **Initial value**: `none`
-    */
-  var MozBorderLeftColors: js.UndefOr[MozBorderLeftColorsProperty | js.Array[MozBorderLeftColorsProperty]] = js.undefined
-  /**
-    * In Mozilla applications like Firefox, the **`-moz-border-right-colors`** CSS property sets a list of colors for the right border.
-    *
-    * **Initial value**: `none`
-    */
-  var MozBorderRightColors: js.UndefOr[MozBorderRightColorsProperty | js.Array[MozBorderRightColorsProperty]] = js.undefined
-  /**
     * The **`border-inline-start-color`** CSS property defines the color of the logical inline start border of an element, which maps to a physical border color depending on the element's writing mode, directionality, and text orientation. It corresponds to the `border-top-color`, `border-right-color`, `border-bottom-color`, or `border-left-color` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
     *
     * **Initial value**: `currentcolor`
@@ -115,12 +97,6 @@ trait VendorLonghandPropertiesFallback[TLength] extends js.Object {
     * **Initial value**: `none`
     */
   var MozBorderStartStyle: js.UndefOr[BorderInlineStartStyleProperty | js.Array[BorderInlineStartStyleProperty]] = js.undefined
-  /**
-    * In Mozilla applications like Firefox, the **`-moz-border-top-colors`** CSS property sets a list of colors for the top border.
-    *
-    * **Initial value**: `none`
-    */
-  var MozBorderTopColors: js.UndefOr[MozBorderTopColorsProperty | js.Array[MozBorderTopColorsProperty]] = js.undefined
   /**
     * The **`box-sizing`** CSS property defines how the user agent should calculate the total width and height of an element.
     *
@@ -1284,12 +1260,6 @@ trait VendorLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var msScrollbarShadowColor: js.UndefOr[MsScrollbarShadowColorProperty | js.Array[MsScrollbarShadowColorProperty]] = js.undefined
   /**
-    * The **`-ms-scrollbar-track-color`** CSS property is a Microsoft extension that specifies the color of the track element of a scrollbar.
-    *
-    * **Initial value**: `Scrollbar`
-    */
-  var msScrollbarTrackColor: js.UndefOr[MsScrollbarTrackColorProperty | js.Array[MsScrollbarTrackColorProperty]] = js.undefined
-  /**
     * The **`-ms-text-autospace`** CSS property is a Microsoft extension that specifies the autospacing and narrow space width adjustment of text.
     *
     * **Initial value**: `none`
@@ -1406,15 +1376,11 @@ object VendorLonghandPropertiesFallback {
     MozAnimationTimingFunction: AnimationTimingFunctionProperty | js.Array[AnimationTimingFunctionProperty] = null,
     MozAppearance: MozAppearanceProperty | js.Array[MozAppearanceProperty] = null,
     MozBackfaceVisibility: BackfaceVisibilityProperty | js.Array[BackfaceVisibilityProperty] = null,
-    MozBorderBottomColors: MozBorderBottomColorsProperty | js.Array[MozBorderBottomColorsProperty] = null,
     MozBorderEndColor: BorderInlineEndColorProperty | js.Array[BorderInlineEndColorProperty] = null,
     MozBorderEndStyle: BorderInlineEndStyleProperty | js.Array[BorderInlineEndStyleProperty] = null,
     MozBorderEndWidth: BorderInlineEndWidthProperty[TLength] | js.Array[BorderInlineEndWidthProperty[TLength]] = null,
-    MozBorderLeftColors: MozBorderLeftColorsProperty | js.Array[MozBorderLeftColorsProperty] = null,
-    MozBorderRightColors: MozBorderRightColorsProperty | js.Array[MozBorderRightColorsProperty] = null,
     MozBorderStartColor: BorderInlineStartColorProperty | js.Array[BorderInlineStartColorProperty] = null,
     MozBorderStartStyle: BorderInlineStartStyleProperty | js.Array[BorderInlineStartStyleProperty] = null,
-    MozBorderTopColors: MozBorderTopColorsProperty | js.Array[MozBorderTopColorsProperty] = null,
     MozBoxSizing: BoxSizingProperty | js.Array[BoxSizingProperty] = null,
     MozColumnCount: ColumnCountProperty | js.Array[ColumnCountProperty] = null,
     MozColumnFill: ColumnFillProperty | js.Array[ColumnFillProperty] = null,
@@ -1603,7 +1569,6 @@ object VendorLonghandPropertiesFallback {
     msScrollbarFaceColor: MsScrollbarFaceColorProperty | js.Array[MsScrollbarFaceColorProperty] = null,
     msScrollbarHighlightColor: MsScrollbarHighlightColorProperty | js.Array[MsScrollbarHighlightColorProperty] = null,
     msScrollbarShadowColor: MsScrollbarShadowColorProperty | js.Array[MsScrollbarShadowColorProperty] = null,
-    msScrollbarTrackColor: MsScrollbarTrackColorProperty | js.Array[MsScrollbarTrackColorProperty] = null,
     msTextAutospace: MsTextAutospaceProperty | js.Array[MsTextAutospaceProperty] = null,
     msTextCombineHorizontal: TextCombineUprightProperty | js.Array[TextCombineUprightProperty] = null,
     msTextOverflow: TextOverflowProperty | js.Array[TextOverflowProperty] = null,
@@ -1633,15 +1598,11 @@ object VendorLonghandPropertiesFallback {
     if (MozAnimationTimingFunction != null) __obj.updateDynamic("MozAnimationTimingFunction")(MozAnimationTimingFunction.asInstanceOf[js.Any])
     if (MozAppearance != null) __obj.updateDynamic("MozAppearance")(MozAppearance.asInstanceOf[js.Any])
     if (MozBackfaceVisibility != null) __obj.updateDynamic("MozBackfaceVisibility")(MozBackfaceVisibility.asInstanceOf[js.Any])
-    if (MozBorderBottomColors != null) __obj.updateDynamic("MozBorderBottomColors")(MozBorderBottomColors.asInstanceOf[js.Any])
     if (MozBorderEndColor != null) __obj.updateDynamic("MozBorderEndColor")(MozBorderEndColor.asInstanceOf[js.Any])
     if (MozBorderEndStyle != null) __obj.updateDynamic("MozBorderEndStyle")(MozBorderEndStyle.asInstanceOf[js.Any])
     if (MozBorderEndWidth != null) __obj.updateDynamic("MozBorderEndWidth")(MozBorderEndWidth.asInstanceOf[js.Any])
-    if (MozBorderLeftColors != null) __obj.updateDynamic("MozBorderLeftColors")(MozBorderLeftColors.asInstanceOf[js.Any])
-    if (MozBorderRightColors != null) __obj.updateDynamic("MozBorderRightColors")(MozBorderRightColors.asInstanceOf[js.Any])
     if (MozBorderStartColor != null) __obj.updateDynamic("MozBorderStartColor")(MozBorderStartColor.asInstanceOf[js.Any])
     if (MozBorderStartStyle != null) __obj.updateDynamic("MozBorderStartStyle")(MozBorderStartStyle.asInstanceOf[js.Any])
-    if (MozBorderTopColors != null) __obj.updateDynamic("MozBorderTopColors")(MozBorderTopColors.asInstanceOf[js.Any])
     if (MozBoxSizing != null) __obj.updateDynamic("MozBoxSizing")(MozBoxSizing.asInstanceOf[js.Any])
     if (MozColumnCount != null) __obj.updateDynamic("MozColumnCount")(MozColumnCount.asInstanceOf[js.Any])
     if (MozColumnFill != null) __obj.updateDynamic("MozColumnFill")(MozColumnFill.asInstanceOf[js.Any])
@@ -1830,7 +1791,6 @@ object VendorLonghandPropertiesFallback {
     if (msScrollbarFaceColor != null) __obj.updateDynamic("msScrollbarFaceColor")(msScrollbarFaceColor.asInstanceOf[js.Any])
     if (msScrollbarHighlightColor != null) __obj.updateDynamic("msScrollbarHighlightColor")(msScrollbarHighlightColor.asInstanceOf[js.Any])
     if (msScrollbarShadowColor != null) __obj.updateDynamic("msScrollbarShadowColor")(msScrollbarShadowColor.asInstanceOf[js.Any])
-    if (msScrollbarTrackColor != null) __obj.updateDynamic("msScrollbarTrackColor")(msScrollbarTrackColor.asInstanceOf[js.Any])
     if (msTextAutospace != null) __obj.updateDynamic("msTextAutospace")(msTextAutospace.asInstanceOf[js.Any])
     if (msTextCombineHorizontal != null) __obj.updateDynamic("msTextCombineHorizontal")(msTextCombineHorizontal.asInstanceOf[js.Any])
     if (msTextOverflow != null) __obj.updateDynamic("msTextOverflow")(msTextOverflow.asInstanceOf[js.Any])

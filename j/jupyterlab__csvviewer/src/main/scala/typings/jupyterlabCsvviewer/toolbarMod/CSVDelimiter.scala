@@ -1,8 +1,8 @@
 package typings.jupyterlabCsvviewer.toolbarMod
 
 import typings.jupyterlabCsvviewer.toolbarMod.CSVToolbar.IOptions
-import typings.phosphorSignaling.mod.ISignal
-import typings.phosphorWidgets.mod.Widget
+import typings.luminoSignaling.mod.ISignal
+import typings.luminoWidgets.mod.Widget
 import typings.std.Event_
 import typings.std.HTMLSelectElement
 import scala.scalajs.js
@@ -20,11 +20,7 @@ class CSVDelimiter protected () extends Widget {
   /**
     * A signal emitted when the delimiter selection has changed.
     */
-  val delimiterChanged: ISignal[this.type, String] = js.native
-  /**
-    * The delimiter dropdown menu.
-    */
-  val selectNode: HTMLSelectElement = js.native
+  def delimiterChanged(): ISignal[this.type, String] = js.native
   /**
     * Handle the DOM events for the widget.
     *
@@ -36,5 +32,9 @@ class CSVDelimiter protected () extends Widget {
     * not be called directly by user code.
     */
   def handleEvent(event: Event_): Unit = js.native
+  /**
+    * The delimiter dropdown menu.
+    */
+  def selectNode(): HTMLSelectElement = js.native
 }
 

@@ -1,9 +1,7 @@
 package typings.reactFns
 
 import typings.react.mod.ComponentType
-import typings.reactFns.scrollScrollMod.ScrollConfig
 import typings.reactFns.scrollScrollMod.ScrollProps
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +17,7 @@ object scrollMod extends js.Object {
   /* static members */
   @js.native
   object Scroll extends js.Object {
-    var defaultProps: Partial[ScrollConfig] = js.native
+    var defaultProps: PartialScrollConfig = js.native
   }
   
 }

@@ -24,7 +24,7 @@ class ImportAgentRequest () extends IImportAgentRequest {
   var agent: js.UndefOr[agentUri | agentContent] = js.native
   /** ImportAgentRequest agentContent. */
   @JSName("agentContent")
-  var agentContent_ImportAgentRequest: Uint8Array = js.native
+  var agentContent_ImportAgentRequest: Uint8Array | String = js.native
   /** ImportAgentRequest agentUri. */
   @JSName("agentUri")
   var agentUri_ImportAgentRequest: String = js.native

@@ -7,8 +7,11 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("Electron.TouchBar")
 @js.native
-class TouchBar protected () extends EventEmitter {
+class TouchBar protected () extends js.Object {
   // Docs: http://electronjs.org/docs/api/touch-bar
+  /**
+    * TouchBar
+    */
   def this(options: TouchBarConstructorOptions) = this()
   var escapeItem: TouchBarButton | TouchBarColorPicker | TouchBarGroup | TouchBarLabel | TouchBarPopover | TouchBarScrubber | TouchBarSegmentedControl | TouchBarSlider | TouchBarSpacer | Null = js.native
 }

@@ -13,12 +13,12 @@ trait StartVpcEndpointServicePrivateDnsVerificationRequest extends js.Object {
   /**
     * The ID of the endpoint service.
     */
-  var ServiceId: typings.awsSdk.ec2Mod.ServiceId = js.native
+  var ServiceId: VpcEndpointServiceId = js.native
 }
 
 object StartVpcEndpointServicePrivateDnsVerificationRequest {
   @scala.inline
-  def apply(ServiceId: ServiceId, DryRun: js.UndefOr[scala.Boolean] = js.undefined): StartVpcEndpointServicePrivateDnsVerificationRequest = {
+  def apply(ServiceId: VpcEndpointServiceId, DryRun: js.UndefOr[scala.Boolean] = js.undefined): StartVpcEndpointServicePrivateDnsVerificationRequest = {
     val __obj = js.Dynamic.literal(ServiceId = ServiceId.asInstanceOf[js.Any])
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartVpcEndpointServicePrivateDnsVerificationRequest]

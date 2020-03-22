@@ -1,7 +1,6 @@
 package typings.jupyterlabNotebook.notebooktoolsMod.NotebookTools
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.phosphorCoreutils.jsonMod.JSONValue
+import typings.luminoCoreutils.jsonMod.ReadonlyPartialJSONObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,6 +11,6 @@ object createNBConvertSelector extends js.Object {
   /**
     * Create an nbconvert selector.
     */
-  def apply(optionsMap: StringDictionary[JSONValue]): KeySelector = js.native
+  def apply(optionsMap: ReadonlyPartialJSONObject): KeySelector = js.native
 }
 

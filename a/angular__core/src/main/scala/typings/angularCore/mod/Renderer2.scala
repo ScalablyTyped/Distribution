@@ -12,12 +12,6 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class Renderer2 () extends js.Object {
   /**
-    * Use to store arbitrary developer-defined data on a renderer instance,
-    * as an object containing key-value pairs.
-    * This is useful for renderers that delegate to other renderers.
-    */
-  val data: StringDictionary[js.Any] = js.native
-  /**
     * If null or undefined, the view engine won't call it.
     * This is used as a performance optimization for production mode.
     */
@@ -55,6 +49,12 @@ abstract class Renderer2 () extends js.Object {
     */
   def createText(value: String): js.Any = js.native
   /**
+    * Use to store arbitrary developer-defined data on a renderer instance,
+    * as an object containing key-value pairs.
+    * This is useful for renderers that delegate to other renderers.
+    */
+  def data(): StringDictionary[js.Any] = js.native
+  /**
     * Implement this callback to destroy the renderer or the host element.
     */
   def destroy(): Unit = js.native
@@ -63,7 +63,7 @@ abstract class Renderer2 () extends js.Object {
     * in the host element DOM.
     * @param parent The parent node.
     * @param newChild The new child nodes.
-    * @param refChild The existing child node that should precede the new node.
+    * @param refChild The existing child node before which `newChild` is inserted.
     */
   def insertBefore(parent: js.Any, newChild: js.Any, refChild: js.Any): Unit = js.native
   def listen(target: js.Any, eventName: String, callback: js.Function1[/* event */ js.Any, Boolean | Unit]): js.Function0[Unit] = js.native

@@ -32,7 +32,7 @@ object utilsMod extends js.Object {
   def getOptions(): AnonPassive | AnonPassiveUndefined = js.native
   def getOptions(isPassiveSupported: Boolean): AnonPassive | AnonPassiveUndefined = js.native
   def noop(): Unit = js.native
-  def rotateByAngle(position: AnonXY): typings.vanillaSwipe.rotateByAngleMod.Value = js.native
-  def rotateByAngle(position: AnonXY, angle: Double): typings.vanillaSwipe.rotateByAngleMod.Value = js.native
+  def rotateByAngle(position: AnonY): typings.vanillaSwipe.rotateByAngleMod.Value = js.native
+  def rotateByAngle(position: AnonY, angle: Double): typings.vanillaSwipe.rotateByAngleMod.Value = js.native
 }
 

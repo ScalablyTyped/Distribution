@@ -5,7 +5,6 @@ import typings.three.constantsMod.Blending
 import typings.three.constantsMod.BlendingDstFactor
 import typings.three.constantsMod.BlendingEquation
 import typings.three.constantsMod.BlendingSrcFactor
-import typings.three.constantsMod.Colors
 import typings.three.constantsMod.DepthModes
 import typings.three.constantsMod.NormalMapTypes
 import typings.three.constantsMod.Side
@@ -51,6 +50,7 @@ trait MeshStandardMaterialParameters extends MaterialParameters {
   var roughness: js.UndefOr[Double] = js.undefined
   var roughnessMap: js.UndefOr[Texture | Null] = js.undefined
   var skinning: js.UndefOr[Boolean] = js.undefined
+  var vertexTangents: js.UndefOr[Boolean] = js.undefined
   var wireframe: js.UndefOr[Boolean] = js.undefined
   var wireframeLinewidth: js.UndefOr[Double] = js.undefined
 }
@@ -76,6 +76,7 @@ object MeshStandardMaterialParameters {
     clippingPlanes: js.Array[Plane] = null,
     color: Color | String | Double = null,
     colorWrite: js.UndefOr[Boolean] = js.undefined,
+    defines: js.Any = null,
     depthFunc: DepthModes = null,
     depthTest: js.UndefOr[Boolean] = js.undefined,
     depthWrite: js.UndefOr[Boolean] = js.undefined,
@@ -102,7 +103,6 @@ object MeshStandardMaterialParameters {
     normalMapType: NormalMapTypes = null,
     normalScale: Vector2 = null,
     opacity: Int | Double = null,
-    overdraw: Int | Double = null,
     polygonOffset: js.UndefOr[Boolean] = js.undefined,
     polygonOffsetFactor: Int | Double = null,
     polygonOffsetUnits: Int | Double = null,
@@ -123,7 +123,7 @@ object MeshStandardMaterialParameters {
     stencilZPass: StencilOp = null,
     toneMapped: js.UndefOr[Boolean] = js.undefined,
     transparent: js.UndefOr[Boolean] = js.undefined,
-    vertexColors: Colors = null,
+    vertexColors: js.UndefOr[Boolean] = js.undefined,
     vertexTangents: js.UndefOr[Boolean] = js.undefined,
     visible: js.UndefOr[Boolean] = js.undefined,
     wireframe: js.UndefOr[Boolean] = js.undefined,
@@ -148,6 +148,7 @@ object MeshStandardMaterialParameters {
     if (clippingPlanes != null) __obj.updateDynamic("clippingPlanes")(clippingPlanes.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (!js.isUndefined(colorWrite)) __obj.updateDynamic("colorWrite")(colorWrite.asInstanceOf[js.Any])
+    if (defines != null) __obj.updateDynamic("defines")(defines.asInstanceOf[js.Any])
     if (depthFunc != null) __obj.updateDynamic("depthFunc")(depthFunc.asInstanceOf[js.Any])
     if (!js.isUndefined(depthTest)) __obj.updateDynamic("depthTest")(depthTest.asInstanceOf[js.Any])
     if (!js.isUndefined(depthWrite)) __obj.updateDynamic("depthWrite")(depthWrite.asInstanceOf[js.Any])
@@ -174,7 +175,6 @@ object MeshStandardMaterialParameters {
     if (normalMapType != null) __obj.updateDynamic("normalMapType")(normalMapType.asInstanceOf[js.Any])
     if (normalScale != null) __obj.updateDynamic("normalScale")(normalScale.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (overdraw != null) __obj.updateDynamic("overdraw")(overdraw.asInstanceOf[js.Any])
     if (!js.isUndefined(polygonOffset)) __obj.updateDynamic("polygonOffset")(polygonOffset.asInstanceOf[js.Any])
     if (polygonOffsetFactor != null) __obj.updateDynamic("polygonOffsetFactor")(polygonOffsetFactor.asInstanceOf[js.Any])
     if (polygonOffsetUnits != null) __obj.updateDynamic("polygonOffsetUnits")(polygonOffsetUnits.asInstanceOf[js.Any])
@@ -195,7 +195,7 @@ object MeshStandardMaterialParameters {
     if (stencilZPass != null) __obj.updateDynamic("stencilZPass")(stencilZPass.asInstanceOf[js.Any])
     if (!js.isUndefined(toneMapped)) __obj.updateDynamic("toneMapped")(toneMapped.asInstanceOf[js.Any])
     if (!js.isUndefined(transparent)) __obj.updateDynamic("transparent")(transparent.asInstanceOf[js.Any])
-    if (vertexColors != null) __obj.updateDynamic("vertexColors")(vertexColors.asInstanceOf[js.Any])
+    if (!js.isUndefined(vertexColors)) __obj.updateDynamic("vertexColors")(vertexColors.asInstanceOf[js.Any])
     if (!js.isUndefined(vertexTangents)) __obj.updateDynamic("vertexTangents")(vertexTangents.asInstanceOf[js.Any])
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     if (!js.isUndefined(wireframe)) __obj.updateDynamic("wireframe")(wireframe.asInstanceOf[js.Any])

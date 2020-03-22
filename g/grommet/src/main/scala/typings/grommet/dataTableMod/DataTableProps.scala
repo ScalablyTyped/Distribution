@@ -1,13 +1,13 @@
 package typings.grommet.dataTableMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.grommet.AnonAggregateAlign
-import typings.grommet.AnonAllBody
-import typings.grommet.AnonArgsExpand
+import typings.grommet.AnonAlign
 import typings.grommet.AnonBackground
 import typings.grommet.AnonBody
-import typings.grommet.AnonBodyBottom
 import typings.grommet.AnonDatum
+import typings.grommet.AnonExpand
+import typings.grommet.AnonFooter
+import typings.grommet.AnonHeader
 import typings.grommet.grommetStrings.all
 import typings.grommet.grommetStrings.bottom
 import typings.grommet.grommetStrings.horizontal
@@ -37,13 +37,11 @@ trait DataTableProps extends js.Object {
   var a11yTitle: js.UndefOr[A11yTitleType] = js.undefined
   var alignSelf: js.UndefOr[AlignSelfType] = js.undefined
   var background: js.UndefOr[String | AnonBody] = js.undefined
-  var border: js.UndefOr[
-    Boolean | top | left | bottom | right | horizontal | vertical | all | AnonAllBody
-  ] = js.undefined
-  var columns: js.UndefOr[js.Array[AnonAggregateAlign]] = js.undefined
+  var border: js.UndefOr[Boolean | top | left | bottom | right | horizontal | vertical | all | AnonFooter] = js.undefined
+  var columns: js.UndefOr[js.Array[AnonAlign]] = js.undefined
   var data: js.UndefOr[js.Array[js.Object]] = js.undefined
   var gridArea: js.UndefOr[GridAreaType] = js.undefined
-  var groupBy: js.UndefOr[String | AnonArgsExpand] = js.undefined
+  var groupBy: js.UndefOr[String | AnonExpand] = js.undefined
   var margin: js.UndefOr[MarginType] = js.undefined
   var onClickRow: js.UndefOr[
     js.Function1[
@@ -53,9 +51,7 @@ trait DataTableProps extends js.Object {
   ] = js.undefined
   var onMore: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
   var onSearch: js.UndefOr[js.Function1[/* search */ String, Unit]] = js.undefined
-  var pad: js.UndefOr[
-    none | xxsmall | xsmall | small | medium | large | xlarge | AnonBodyBottom | String
-  ] = js.undefined
+  var pad: js.UndefOr[none | xxsmall | xsmall | small | medium | large | xlarge | AnonHeader | String] = js.undefined
   var primaryKey: js.UndefOr[String] = js.undefined
   var replace: js.UndefOr[Boolean] = js.undefined
   var resizeable: js.UndefOr[Boolean] = js.undefined
@@ -71,16 +67,16 @@ object DataTableProps {
     a11yTitle: A11yTitleType = null,
     alignSelf: AlignSelfType = null,
     background: String | AnonBody = null,
-    border: Boolean | top | left | bottom | right | horizontal | vertical | all | AnonAllBody = null,
-    columns: js.Array[AnonAggregateAlign] = null,
+    border: Boolean | top | left | bottom | right | horizontal | vertical | all | AnonFooter = null,
+    columns: js.Array[AnonAlign] = null,
     data: js.Array[js.Object] = null,
     gridArea: GridAreaType = null,
-    groupBy: String | AnonArgsExpand = null,
+    groupBy: String | AnonExpand = null,
     margin: MarginType = null,
     onClickRow: (/* event */ AnonDatum) | (/* event */ MouseEvent[Element, NativeMouseEvent]) => Unit = null,
     onMore: /* repeated */ js.Any => _ = null,
     onSearch: /* search */ String => Unit = null,
-    pad: none | xxsmall | xsmall | small | medium | large | xlarge | AnonBodyBottom | String = null,
+    pad: none | xxsmall | xsmall | small | medium | large | xlarge | AnonHeader | String = null,
     primaryKey: String = null,
     replace: js.UndefOr[Boolean] = js.undefined,
     resizeable: js.UndefOr[Boolean] = js.undefined,

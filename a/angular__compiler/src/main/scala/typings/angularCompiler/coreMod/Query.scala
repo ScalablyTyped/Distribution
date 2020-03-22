@@ -10,7 +10,7 @@ trait Query extends js.Object {
   var isViewQuery: Boolean
   var read: js.Any
   var selector: js.Any
-  var static: Boolean
+  var static: js.UndefOr[Boolean] = js.undefined
 }
 
 object Query {
@@ -21,10 +21,10 @@ object Query {
     isViewQuery: Boolean,
     read: js.Any,
     selector: js.Any,
-    static: Boolean
+    static: js.UndefOr[Boolean] = js.undefined
   ): Query = {
-    val __obj = js.Dynamic.literal(descendants = descendants.asInstanceOf[js.Any], first = first.asInstanceOf[js.Any], isViewQuery = isViewQuery.asInstanceOf[js.Any], read = read.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any], static = static.asInstanceOf[js.Any])
-  
+    val __obj = js.Dynamic.literal(descendants = descendants.asInstanceOf[js.Any], first = first.asInstanceOf[js.Any], isViewQuery = isViewQuery.asInstanceOf[js.Any], read = read.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any])
+    if (!js.isUndefined(static)) __obj.updateDynamic("static")(static.asInstanceOf[js.Any])
     __obj.asInstanceOf[Query]
   }
 }

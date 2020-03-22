@@ -5,7 +5,10 @@ import typings.grommet.grommetStrings._parent
 import typings.grommet.grommetStrings._self
 import typings.grommet.grommetStrings._top
 import typings.grommet.grommetStrings.button
+import typings.grommet.grommetStrings.large
+import typings.grommet.grommetStrings.medium
 import typings.grommet.grommetStrings.reset
+import typings.grommet.grommetStrings.small
 import typings.grommet.grommetStrings.submit
 import typings.grommet.utilsMod.A11yTitleType
 import typings.grommet.utilsMod.AlignSelfType
@@ -41,6 +44,7 @@ trait ButtonProps extends js.Object {
   var plain: js.UndefOr[Boolean] = js.undefined
   var primary: js.UndefOr[Boolean] = js.undefined
   var reverse: js.UndefOr[Boolean] = js.undefined
+  var size: js.UndefOr[small | medium | large] = js.undefined
   var target: js.UndefOr[_self | _blank | _parent | _top] = js.undefined
   var `type`: js.UndefOr[button | reset | submit] = js.undefined
 }
@@ -66,6 +70,7 @@ object ButtonProps {
     plain: js.UndefOr[Boolean] = js.undefined,
     primary: js.UndefOr[Boolean] = js.undefined,
     reverse: js.UndefOr[Boolean] = js.undefined,
+    size: small | medium | large = null,
     target: _self | _blank | _parent | _top = null,
     `type`: button | reset | submit = null
   ): ButtonProps = {
@@ -88,6 +93,7 @@ object ButtonProps {
     if (!js.isUndefined(plain)) __obj.updateDynamic("plain")(plain.asInstanceOf[js.Any])
     if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary.asInstanceOf[js.Any])
     if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ButtonProps]

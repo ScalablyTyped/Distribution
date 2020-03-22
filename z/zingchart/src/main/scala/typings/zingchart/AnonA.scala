@@ -52,10 +52,8 @@ trait AnonA extends js.Object {
     * ys the year in 4-digit format. `%y` Displays the year in 2-digit format.
     */
   var all: js.UndefOr[String] = js.undefined
-  var guide: js.UndefOr[AnonAlphaLinecolorLinestyleLinewidthVisibleAny] = js.undefined
-  var item: js.UndefOr[
-    AnonAlphaAngleBackgroundcolorBackgroundcolor1Backgroundcolor2BackgroundfitBackgroundimageBackgroundpositionBackgroundrepeatBoldBorderbottomBordercolor
-  ] = js.undefined
+  var guide: js.UndefOr[AnonLinewidthVisible] = js.undefined
+  var item: js.UndefOr[AnonBorderradiustopright] = js.undefined
 }
 
 object AnonA {
@@ -79,8 +77,8 @@ object AnonA {
     GraveaccentPercentsignsGraveaccent: js.Any = null,
     GraveaccentPercentsignyGraveaccent: js.Any = null,
     all: String = null,
-    guide: AnonAlphaLinecolorLinestyleLinewidthVisibleAny = null,
-    item: AnonAlphaAngleBackgroundcolorBackgroundcolor1Backgroundcolor2BackgroundfitBackgroundimageBackgroundpositionBackgroundrepeatBoldBorderbottomBordercolor = null
+    guide: AnonLinewidthVisible = null,
+    item: AnonBorderradiustopright = null
   ): AnonA = {
     val __obj = js.Dynamic.literal()
     if (GraveaccentPercentsignAGraveaccent != null) __obj.updateDynamic("`%A`")(GraveaccentPercentsignAGraveaccent.asInstanceOf[js.Any])

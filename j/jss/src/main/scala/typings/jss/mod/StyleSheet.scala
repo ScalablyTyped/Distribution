@@ -1,5 +1,6 @@
 package typings.jss.mod
 
+import typings.jss.PartialRuleOptions
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,19 +16,19 @@ trait StyleSheet[RuleName /* <: String | Double | js.Symbol */] extends js.Objec
   var linked: Boolean = js.native
   var options: StyleSheetOptions = js.native
   def addRule(name: RuleName, style: JssStyle): Rule = js.native
-  def addRule(name: RuleName, style: JssStyle, options: Partial[RuleOptions]): Rule = js.native
+  def addRule(name: RuleName, style: JssStyle, options: PartialRuleOptions): Rule = js.native
   /**
     * Add a rule to the current stylesheet.
     * Will insert a rule also after the stylesheet has been rendered first time.
     */
   def addRule(style: JssStyle): Rule = js.native
-  def addRule(style: JssStyle, options: Partial[RuleOptions]): Rule = js.native
+  def addRule(style: JssStyle, options: PartialRuleOptions): Rule = js.native
   /**
     * Create and add rules.
     * Will render also after Style Sheet was rendered the first time.
     */
   def addRules(styles: Partial[Styles[RuleName]]): js.Array[Rule] = js.native
-  def addRules(styles: Partial[Styles[RuleName]], options: Partial[RuleOptions]): js.Array[Rule] = js.native
+  def addRules(styles: Partial[Styles[RuleName]], options: PartialRuleOptions): js.Array[Rule] = js.native
   /**
     * Attach renderable to the render tree.
     */

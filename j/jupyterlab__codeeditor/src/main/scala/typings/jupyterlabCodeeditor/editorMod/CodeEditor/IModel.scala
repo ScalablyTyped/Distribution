@@ -4,8 +4,8 @@ import typings.jupyterlabCoreutils.interfacesMod.IChangedArgs
 import typings.jupyterlabObservables.modeldbMod.IModelDB
 import typings.jupyterlabObservables.observablemapMod.IObservableMap
 import typings.jupyterlabObservables.observablestringMod.IObservableString
-import typings.phosphorDisposable.mod.IDisposable
-import typings.phosphorSignaling.mod.ISignal
+import typings.luminoDisposable.mod.IDisposable
+import typings.luminoSignaling.mod.ISignal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,7 +40,7 @@ trait IModel extends IDisposable {
   /**
     * A signal emitted when a property changes.
     */
-  var mimeTypeChanged: ISignal[IModel, IChangedArgs[String, String]]
+  var mimeTypeChanged: ISignal[IModel, IChangedArgs[String, String, String]]
   /**
     * The underlying `IModelDB` instance in which model
     * data is stored.
@@ -62,7 +62,7 @@ object IModel {
     dispose: () => Unit,
     isDisposed: Boolean,
     mimeType: String,
-    mimeTypeChanged: ISignal[IModel, IChangedArgs[String, String]],
+    mimeTypeChanged: ISignal[IModel, IChangedArgs[String, String, String]],
     modelDB: IModelDB,
     selections: IObservableMap[js.Array[ITextSelection]],
     value: IObservableString

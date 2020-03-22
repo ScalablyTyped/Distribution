@@ -1,12 +1,12 @@
 package typings.atlassianCrowdClient.settingsMod
 
-import typings.atlassianCrowdClient.AnonNamePassword
+import typings.atlassianCrowdClient.AnonPassword
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Settings extends js.Object {
-  val application: AnonNamePassword
+  val application: AnonPassword
   val attributesEncoder: js.UndefOr[js.Function1[/* obj */ js.Any, String]] = js.undefined
   val attributesParser: js.UndefOr[js.Function1[/* json */ String, _]] = js.undefined
   val baseUrl: String
@@ -18,7 +18,7 @@ trait Settings extends js.Object {
 object Settings {
   @scala.inline
   def apply(
-    application: AnonNamePassword,
+    application: AnonPassword,
     baseUrl: String,
     attributesEncoder: /* obj */ js.Any => String = null,
     attributesParser: /* json */ String => _ = null,

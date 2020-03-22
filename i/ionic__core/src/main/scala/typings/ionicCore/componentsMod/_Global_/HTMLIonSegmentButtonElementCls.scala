@@ -15,11 +15,6 @@ import scala.scalajs.js.annotation._
 class HTMLIonSegmentButtonElementCls () extends HTMLIonSegmentButtonElement {
   /* CompleteClass */
   override val assignedSlot: HTMLSlotElement | Null = js.native
-  /**
-    * If `true`, the segment button is selected.
-    */
-  /* CompleteClass */
-  override var checked: Boolean = js.native
   /* CompleteClass */
   override var contentEditable: String = js.native
   /**

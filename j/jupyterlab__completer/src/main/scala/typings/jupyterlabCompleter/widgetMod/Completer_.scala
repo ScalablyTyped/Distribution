@@ -3,8 +3,8 @@ package typings.jupyterlabCompleter.widgetMod
 import typings.jupyterlabCodeeditor.editorMod.CodeEditor.IEditor
 import typings.jupyterlabCompleter.widgetMod.Completer.IModel
 import typings.jupyterlabCompleter.widgetMod.Completer.IOptions
-import typings.phosphorSignaling.mod.ISignal
-import typings.phosphorWidgets.mod.Widget
+import typings.luminoSignaling.mod.ISignal
+import typings.luminoWidgets.mod.Widget
 import typings.std.Event_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -55,26 +55,13 @@ class Completer_ protected () extends Widget {
     */
   var _setGeometry: js.Any = js.native
   var _visibilityChanged: js.Any = js.native
+  def editor(): js.Any = js.native
+  def editor(newValue: IEditor): js.Any = js.native
   /**
     * The editor used by the completion widget.
     */
-  var editor: IEditor | Null = js.native
-  /**
-    * The model used by the completer widget.
-    */
-  var model: IModel | Null = js.native
-  /**
-    * A signal emitted when a selection is made from the completer menu.
-    */
-  val selected: ISignal[this.type, String] = js.native
-  /**
-    * A signal emitted when the completer widget's visibility changes.
-    *
-    * #### Notes
-    * This signal is useful when there are multiple floating widgets that may
-    * contend with the same space and ought to be mutually exclusive.
-    */
-  val visibilityChanged: ISignal[this.type, Unit] = js.native
+  @JSName("editor")
+  def editor_Union(): IEditor | Null = js.native
   /**
     * Handle the DOM events for the widget.
     *
@@ -86,6 +73,13 @@ class Completer_ protected () extends Widget {
     * not be called directly by user code.
     */
   def handleEvent(event: Event_): Unit = js.native
+  def model(): js.Any = js.native
+  def model(model: IModel): js.Any = js.native
+  /**
+    * The model used by the completer widget.
+    */
+  @JSName("model")
+  def model_Union(): IModel | Null = js.native
   /**
     * Handle model state changes.
     */
@@ -98,5 +92,17 @@ class Completer_ protected () extends Widget {
     * Emit the selected signal for the current active item and reset.
     */
   def selectActive(): Unit = js.native
+  /**
+    * A signal emitted when a selection is made from the completer menu.
+    */
+  def selected(): ISignal[this.type, String] = js.native
+  /**
+    * A signal emitted when the completer widget's visibility changes.
+    *
+    * #### Notes
+    * This signal is useful when there are multiple floating widgets that may
+    * contend with the same space and ought to be mutually exclusive.
+    */
+  def visibilityChanged(): ISignal[this.type, Unit] = js.native
 }
 

@@ -5,7 +5,7 @@ import typings.googleapis.AnonEntity
 import typings.googleapis.AnonLogBucket
 import typings.googleapis.AnonMainPageSuffix
 import typings.googleapis.AnonMaxAgeSeconds
-import typings.googleapis.AnonRuleAnonActionCondition
+import typings.googleapis.AnonRuleArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,7 +43,7 @@ trait SchemaBucket extends js.Object {
     * The bucket&#39;s lifecycle configuration. See object lifecycle management
     * for more information.
     */
-  var lifecycle: js.UndefOr[AnonRuleAnonActionCondition] = js.native
+  var lifecycle: js.UndefOr[AnonRuleArray] = js.native
   /**
     * The location of the bucket. Object data for objects in the bucket resides
     * in physical storage within this region. Typical values are US and EU.
@@ -102,7 +102,7 @@ object SchemaBucket {
     etag: String = null,
     id: String = null,
     kind: String = null,
-    lifecycle: AnonRuleAnonActionCondition = null,
+    lifecycle: AnonRuleArray = null,
     location: String = null,
     logging: AnonLogBucket = null,
     metageneration: String = null,

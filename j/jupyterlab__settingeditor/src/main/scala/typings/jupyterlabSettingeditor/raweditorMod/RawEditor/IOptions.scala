@@ -2,8 +2,8 @@ package typings.jupyterlabSettingeditor.raweditorMod.RawEditor
 
 import typings.jupyterlabCodeeditor.editorMod.CodeEditor.Factory
 import typings.jupyterlabCodeeditor.editorMod.CodeEditor.IEditor
-import typings.jupyterlabCoreutils.tokensMod.ISettingRegistry
 import typings.jupyterlabRendermime.tokensMod.IRenderMimeRegistry
+import typings.jupyterlabSettingregistry.tokensMod.ISettingRegistry
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -3,7 +3,7 @@ package typings.winrtUwp.Windows.Devices.Enumeration
 import org.scalablytyped.runtime.TopLevel
 import typings.std.Array
 import typings.winrtUwp.AnonIndex
-import typings.winrtUwp.AnonItemsReturnValueNumberPnpObject
+import typings.winrtUwp.AnonItemsPnpObject
 import typings.winrtUwp.Windows.Foundation.Collections.IIterable
 import typings.winrtUwp.Windows.Foundation.Collections.IIterator
 import typings.winrtUwp.Windows.Foundation.Collections.IMapView
@@ -60,7 +60,7 @@ object Pnp extends js.Object {
       * Retrieves multiple elements in a single pass through the iterator.
       * @param startIndex The index from which to start retrieval.
       */
-    def getMany(startIndex: Double): AnonItemsReturnValueNumberPnpObject = js.native
+    def getMany(startIndex: Double): AnonItemsPnpObject = js.native
     def indexOf(value: PnpObject, extra: js.Any*): AnonIndex = js.native
     /* hack */
     @JSName("indexOf")

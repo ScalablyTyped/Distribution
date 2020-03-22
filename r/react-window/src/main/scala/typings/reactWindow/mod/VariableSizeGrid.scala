@@ -2,7 +2,7 @@ package typings.reactWindow.mod
 
 import typings.react.mod.Component
 import typings.reactWindow.AnonAlign
-import typings.reactWindow.AnonColumnIndexRowIndex
+import typings.reactWindow.AnonRowIndex
 import typings.reactWindow.AnonScrollLeft
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -32,7 +32,7 @@ class VariableSizeGrid ()
     * If you would like to delay this re-render until e.g. a state update has completed in the parent component,
     * specify a value of false for the optional shouldForceUpdate parameter.
     */
-  def resetAfterIndices(params: AnonColumnIndexRowIndex): Unit = js.native
+  def resetAfterIndices(params: AnonRowIndex): Unit = js.native
   /**
     * VariableSizeGrid caches offsets and measurements for each row index for performance purposes.
     * This method clears that cached data for all rows after (and including) the specified index.

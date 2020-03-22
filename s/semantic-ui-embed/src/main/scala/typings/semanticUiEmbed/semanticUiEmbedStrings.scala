@@ -6,9 +6,6 @@ import scala.scalajs.js.annotation._
 
 object semanticUiEmbedStrings {
   @js.native
-  sealed trait active extends js.Object
-  
-  @js.native
   sealed trait auto extends js.Object
   
   @js.native
@@ -31,9 +28,6 @@ object semanticUiEmbedStrings {
   
   @js.native
   sealed trait destroy extends js.Object
-  
-  @js.native
-  sealed trait embed extends js.Object
   
   @js.native
   sealed trait error extends js.Object
@@ -69,22 +63,13 @@ object semanticUiEmbedStrings {
   sealed trait id extends js.Object
   
   @js.native
-  sealed trait iframe extends js.Object
-  
-  @js.native
   sealed trait metadata extends js.Object
-  
-  @js.native
-  sealed trait method extends js.Object
   
   @js.native
   sealed trait name extends js.Object
   
   @js.native
   sealed trait namespace extends js.Object
-  
-  @js.native
-  sealed trait noURL extends js.Object
   
   @js.native
   sealed trait onCreate extends js.Object
@@ -103,12 +88,6 @@ object semanticUiEmbedStrings {
   
   @js.native
   sealed trait performance extends js.Object
-  
-  @js.native
-  sealed trait placeholder extends js.Object
-  
-  @js.native
-  sealed trait play extends js.Object
   
   @js.native
   sealed trait reset extends js.Object
@@ -138,8 +117,6 @@ object semanticUiEmbedStrings {
   sealed trait verbose extends js.Object
   
   @scala.inline
-  def active: active = "active".asInstanceOf[active]
-  @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
   @scala.inline
   def autoplay: autoplay = "autoplay".asInstanceOf[autoplay]
@@ -155,8 +132,6 @@ object semanticUiEmbedStrings {
   def debug: debug = "debug".asInstanceOf[debug]
   @scala.inline
   def destroy: destroy = "destroy".asInstanceOf[destroy]
-  @scala.inline
-  def embed: embed = "embed".asInstanceOf[embed]
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   @scala.inline
@@ -180,17 +155,11 @@ object semanticUiEmbedStrings {
   @scala.inline
   def id: id = "id".asInstanceOf[id]
   @scala.inline
-  def iframe: iframe = "iframe".asInstanceOf[iframe]
-  @scala.inline
   def metadata: metadata = "metadata".asInstanceOf[metadata]
-  @scala.inline
-  def method: method = "method".asInstanceOf[method]
   @scala.inline
   def name: name = "name".asInstanceOf[name]
   @scala.inline
   def namespace: namespace = "namespace".asInstanceOf[namespace]
-  @scala.inline
-  def noURL: noURL = "noURL".asInstanceOf[noURL]
   @scala.inline
   def onCreate: onCreate = "onCreate".asInstanceOf[onCreate]
   @scala.inline
@@ -203,10 +172,6 @@ object semanticUiEmbedStrings {
   def parameters: parameters = "parameters".asInstanceOf[parameters]
   @scala.inline
   def performance: performance = "performance".asInstanceOf[performance]
-  @scala.inline
-  def placeholder: placeholder = "placeholder".asInstanceOf[placeholder]
-  @scala.inline
-  def play: play = "play".asInstanceOf[play]
   @scala.inline
   def reset: reset = "reset".asInstanceOf[reset]
   @scala.inline

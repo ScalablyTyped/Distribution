@@ -2,7 +2,7 @@ package typings.firebaseFirestore.specsSpecTestRunnerMod
 
 import org.scalablytyped.runtime.NumberDictionary
 import typings.firebaseFirestore.AnonAcknowledgedDocs
-import typings.firebaseFirestore.AnonQueriesResumeToken
+import typings.firebaseFirestore.AnonResumeToken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ trait StateExpectation extends js.Object {
   /**
     * Current expected active targets. Verified in each step until overwritten.
     */
-  var activeTargets: js.UndefOr[NumberDictionary[AnonQueriesResumeToken]] = js.undefined
+  var activeTargets: js.UndefOr[NumberDictionary[AnonResumeToken]] = js.undefined
   /**
     * Whether the instance holds the primary lease. Used in multi-client tests.
     */
@@ -37,7 +37,7 @@ trait StateExpectation extends js.Object {
 object StateExpectation {
   @scala.inline
   def apply(
-    activeTargets: NumberDictionary[AnonQueriesResumeToken] = null,
+    activeTargets: NumberDictionary[AnonResumeToken] = null,
     isPrimary: js.UndefOr[Boolean] = js.undefined,
     isShutdown: js.UndefOr[Boolean] = js.undefined,
     limboDocs: js.Array[String] = null,

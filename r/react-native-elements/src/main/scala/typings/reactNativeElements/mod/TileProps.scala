@@ -6,7 +6,7 @@ import typings.reactNative.mod.ImageURISource
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
-import typings.std.Partial
+import typings.reactNativeElements.PartialImageProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -64,7 +64,7 @@ trait TileProps extends js.Object {
   /**
     * Optional properties to pass to the image if provided e.g "resizeMode"
     */
-  var imageProps: js.UndefOr[Partial[ImageProps]] = js.undefined
+  var imageProps: js.UndefOr[PartialImageProps] = js.undefined
   /**
     * Source for the image
     */
@@ -108,7 +108,7 @@ object TileProps {
     icon: IconObject = null,
     iconContainerStyle: StyleProp[ViewStyle] = null,
     imageContainerStyle: StyleProp[ViewStyle] = null,
-    imageProps: Partial[ImageProps] = null,
+    imageProps: PartialImageProps = null,
     onPress: () => Unit = null,
     overlayContainerStyle: StyleProp[ViewStyle] = null,
     title: String = null,

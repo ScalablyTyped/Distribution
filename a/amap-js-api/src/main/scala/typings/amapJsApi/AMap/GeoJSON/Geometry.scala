@@ -13,8 +13,8 @@ import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
   - typings.amapJsApi.AnonCoordinates
-  - typings.amapJsApi.AnonCoordinatesLineString
-  - typings.amapJsApi.AnonCoordinatesMultiLineString
+  - typings.amapJsApi.AnonType
+  - typings.amapJsApi.AnonCoordinatesType
   - typings.amapJsApi.AnonGeometries
 */
 trait Geometry extends js.Object
@@ -27,13 +27,13 @@ object Geometry {
     __obj.asInstanceOf[Geometry]
   }
   @scala.inline
-  def AnonCoordinatesLineString(coordinates: js.Array[js.Tuple2[Double, Double]], `type`: MultiPoint | LineString | Polygon): Geometry = {
+  def AnonType(coordinates: js.Array[js.Tuple2[Double, Double]], `type`: MultiPoint | LineString | Polygon): Geometry = {
     val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Geometry]
   }
   @scala.inline
-  def AnonCoordinatesMultiLineString(coordinates: js.Array[js.Array[js.Tuple2[Double, Double]]], `type`: MultiLineString | MultiPolygon): Geometry = {
+  def AnonCoordinatesType(coordinates: js.Array[js.Array[js.Tuple2[Double, Double]]], `type`: MultiLineString | MultiPolygon): Geometry = {
     val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Geometry]

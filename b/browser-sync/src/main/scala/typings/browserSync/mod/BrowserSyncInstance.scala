@@ -1,6 +1,6 @@
 package typings.browserSync.mod
 
-import typings.browserSync.AnonBs
+import typings.browserSync.AnonPlugin
 import typings.browserSync.AnonStream
 import typings.chokidar.mod.WatchOptions
 import typings.node.NodeJS.ErrnoException
@@ -104,9 +104,9 @@ trait BrowserSyncInstance extends js.Object {
     * @param {object} options The
     * @param {any} cb A callback function that will return any errors.
     */
-  def use(module: AnonBs): Unit = js.native
-  def use(module: AnonBs, options: js.Object): Unit = js.native
-  def use(module: AnonBs, options: js.Object, cb: js.Any): Unit = js.native
+  def use(module: AnonPlugin): Unit = js.native
+  def use(module: AnonPlugin, options: js.Object): Unit = js.native
+  def use(module: AnonPlugin, options: js.Object, cb: js.Any): Unit = js.native
   /**
     * Stand alone file-watcher. Use this along with Browsersync to create your own, minimal build system
     */

@@ -13,11 +13,11 @@ import typings.chrome.AnonConfigurable
 import typings.chrome.AnonContentsecuritypolicy
 import typings.chrome.AnonDefaulttitle
 import typings.chrome.AnonDescription
-import typings.chrome.AnonDescriptionId
 import typings.chrome.AnonDictionaryformat
 import typings.chrome.AnonHomepage
 import typings.chrome.AnonId
 import typings.chrome.AnonKeyword
+import typings.chrome.AnonLanguage
 import typings.chrome.AnonManagedschema
 import typings.chrome.AnonMatches
 import typings.chrome.AnonMimetype
@@ -62,7 +62,7 @@ trait Manifest
   var icons: js.UndefOr[ManifestIcons] = js.undefined
   var `import`: js.UndefOr[js.Array[AnonId]] = js.undefined
   var incognito: js.UndefOr[String] = js.undefined
-  var input_components: js.UndefOr[js.Array[AnonDescriptionId]] = js.undefined
+  var input_components: js.UndefOr[js.Array[AnonLanguage]] = js.undefined
   var key: js.UndefOr[String] = js.undefined
   // Required
   var manifest_version: Double
@@ -127,7 +127,7 @@ object Manifest {
     icons: ManifestIcons = null,
     `import`: js.Array[AnonId] = null,
     incognito: String = null,
-    input_components: js.Array[AnonDescriptionId] = null,
+    input_components: js.Array[AnonLanguage] = null,
     key: String = null,
     minimum_chrome_version: String = null,
     nacl_modules: js.Array[AnonMimetype] = null,

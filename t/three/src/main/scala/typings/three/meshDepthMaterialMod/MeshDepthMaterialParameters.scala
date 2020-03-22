@@ -4,7 +4,6 @@ import typings.three.constantsMod.Blending
 import typings.three.constantsMod.BlendingDstFactor
 import typings.three.constantsMod.BlendingEquation
 import typings.three.constantsMod.BlendingSrcFactor
-import typings.three.constantsMod.Colors
 import typings.three.constantsMod.DepthModes
 import typings.three.constantsMod.DepthPackingStrategies
 import typings.three.constantsMod.Side
@@ -21,10 +20,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MeshDepthMaterialParameters extends MaterialParameters {
+  var alphaMap: js.UndefOr[Texture | Null] = js.undefined
   var depthPacking: js.UndefOr[DepthPackingStrategies] = js.undefined
   var displacementBias: js.UndefOr[Double] = js.undefined
   var displacementMap: js.UndefOr[Texture | Null] = js.undefined
   var displacementScale: js.UndefOr[Double] = js.undefined
+  var map: js.UndefOr[Texture | Null] = js.undefined
   var wireframe: js.UndefOr[Boolean] = js.undefined
   var wireframeLinewidth: js.UndefOr[Double] = js.undefined
 }
@@ -32,6 +33,7 @@ trait MeshDepthMaterialParameters extends MaterialParameters {
 object MeshDepthMaterialParameters {
   @scala.inline
   def apply(
+    alphaMap: Texture = null,
     alphaTest: Int | Double = null,
     blendDst: BlendingDstFactor = null,
     blendDstAlpha: Int | Double = null,
@@ -44,6 +46,7 @@ object MeshDepthMaterialParameters {
     clipShadows: js.UndefOr[Boolean] = js.undefined,
     clippingPlanes: js.Array[Plane] = null,
     colorWrite: js.UndefOr[Boolean] = js.undefined,
+    defines: js.Any = null,
     depthFunc: DepthModes = null,
     depthPacking: DepthPackingStrategies = null,
     depthTest: js.UndefOr[Boolean] = js.undefined,
@@ -54,9 +57,9 @@ object MeshDepthMaterialParameters {
     dithering: js.UndefOr[Boolean] = js.undefined,
     flatShading: js.UndefOr[Boolean] = js.undefined,
     fog: js.UndefOr[Boolean] = js.undefined,
+    map: Texture = null,
     name: String = null,
     opacity: Int | Double = null,
-    overdraw: Int | Double = null,
     polygonOffset: js.UndefOr[Boolean] = js.undefined,
     polygonOffsetFactor: Int | Double = null,
     polygonOffsetUnits: Int | Double = null,
@@ -73,13 +76,13 @@ object MeshDepthMaterialParameters {
     stencilZPass: StencilOp = null,
     toneMapped: js.UndefOr[Boolean] = js.undefined,
     transparent: js.UndefOr[Boolean] = js.undefined,
-    vertexColors: Colors = null,
-    vertexTangents: js.UndefOr[Boolean] = js.undefined,
+    vertexColors: js.UndefOr[Boolean] = js.undefined,
     visible: js.UndefOr[Boolean] = js.undefined,
     wireframe: js.UndefOr[Boolean] = js.undefined,
     wireframeLinewidth: Int | Double = null
   ): MeshDepthMaterialParameters = {
     val __obj = js.Dynamic.literal()
+    if (alphaMap != null) __obj.updateDynamic("alphaMap")(alphaMap.asInstanceOf[js.Any])
     if (alphaTest != null) __obj.updateDynamic("alphaTest")(alphaTest.asInstanceOf[js.Any])
     if (blendDst != null) __obj.updateDynamic("blendDst")(blendDst.asInstanceOf[js.Any])
     if (blendDstAlpha != null) __obj.updateDynamic("blendDstAlpha")(blendDstAlpha.asInstanceOf[js.Any])
@@ -92,6 +95,7 @@ object MeshDepthMaterialParameters {
     if (!js.isUndefined(clipShadows)) __obj.updateDynamic("clipShadows")(clipShadows.asInstanceOf[js.Any])
     if (clippingPlanes != null) __obj.updateDynamic("clippingPlanes")(clippingPlanes.asInstanceOf[js.Any])
     if (!js.isUndefined(colorWrite)) __obj.updateDynamic("colorWrite")(colorWrite.asInstanceOf[js.Any])
+    if (defines != null) __obj.updateDynamic("defines")(defines.asInstanceOf[js.Any])
     if (depthFunc != null) __obj.updateDynamic("depthFunc")(depthFunc.asInstanceOf[js.Any])
     if (depthPacking != null) __obj.updateDynamic("depthPacking")(depthPacking.asInstanceOf[js.Any])
     if (!js.isUndefined(depthTest)) __obj.updateDynamic("depthTest")(depthTest.asInstanceOf[js.Any])
@@ -102,9 +106,9 @@ object MeshDepthMaterialParameters {
     if (!js.isUndefined(dithering)) __obj.updateDynamic("dithering")(dithering.asInstanceOf[js.Any])
     if (!js.isUndefined(flatShading)) __obj.updateDynamic("flatShading")(flatShading.asInstanceOf[js.Any])
     if (!js.isUndefined(fog)) __obj.updateDynamic("fog")(fog.asInstanceOf[js.Any])
+    if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (overdraw != null) __obj.updateDynamic("overdraw")(overdraw.asInstanceOf[js.Any])
     if (!js.isUndefined(polygonOffset)) __obj.updateDynamic("polygonOffset")(polygonOffset.asInstanceOf[js.Any])
     if (polygonOffsetFactor != null) __obj.updateDynamic("polygonOffsetFactor")(polygonOffsetFactor.asInstanceOf[js.Any])
     if (polygonOffsetUnits != null) __obj.updateDynamic("polygonOffsetUnits")(polygonOffsetUnits.asInstanceOf[js.Any])
@@ -121,8 +125,7 @@ object MeshDepthMaterialParameters {
     if (stencilZPass != null) __obj.updateDynamic("stencilZPass")(stencilZPass.asInstanceOf[js.Any])
     if (!js.isUndefined(toneMapped)) __obj.updateDynamic("toneMapped")(toneMapped.asInstanceOf[js.Any])
     if (!js.isUndefined(transparent)) __obj.updateDynamic("transparent")(transparent.asInstanceOf[js.Any])
-    if (vertexColors != null) __obj.updateDynamic("vertexColors")(vertexColors.asInstanceOf[js.Any])
-    if (!js.isUndefined(vertexTangents)) __obj.updateDynamic("vertexTangents")(vertexTangents.asInstanceOf[js.Any])
+    if (!js.isUndefined(vertexColors)) __obj.updateDynamic("vertexColors")(vertexColors.asInstanceOf[js.Any])
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     if (!js.isUndefined(wireframe)) __obj.updateDynamic("wireframe")(wireframe.asInstanceOf[js.Any])
     if (wireframeLinewidth != null) __obj.updateDynamic("wireframeLinewidth")(wireframeLinewidth.asInstanceOf[js.Any])

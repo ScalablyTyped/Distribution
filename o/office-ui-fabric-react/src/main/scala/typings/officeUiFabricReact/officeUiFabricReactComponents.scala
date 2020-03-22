@@ -828,8 +828,6 @@ object officeUiFabricReactComponents extends officeUiFabricReactProps {
   @scala.inline
   def PositioningContainer: ComponentType[PositioningContainerProps] = js.constructorOf[typings.officeUiFabricReact.positioningContainerPositioningContainerMod.PositioningContainer].asInstanceOf[typings.react.mod.ComponentType[PositioningContainerProps]]
   @scala.inline
-  def PositioningContainerBasicExample: ComponentType[js.Object] = js.constructorOf[typings.officeUiFabricReact.positioningContainerBasicExampleMod.PositioningContainerBasicExample].asInstanceOf[typings.react.mod.ComponentType[js.Object]]
-  @scala.inline
   def PrimaryButton: ComponentType[PrimaryButtonProps] = js.constructorOf[typings.officeUiFabricReact.mod.PrimaryButton].asInstanceOf[typings.react.mod.ComponentType[PrimaryButtonProps]]
   @scala.inline
   def ProgressIndicator: ComponentType[ProgressIndicatorProps] = typings.officeUiFabricReact.mod.ProgressIndicator.asInstanceOf[typings.react.mod.ComponentType[ProgressIndicatorProps]]

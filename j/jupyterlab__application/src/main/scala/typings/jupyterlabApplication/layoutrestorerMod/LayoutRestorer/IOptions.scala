@@ -1,8 +1,8 @@
 package typings.jupyterlabApplication.layoutrestorerMod.LayoutRestorer
 
-import typings.jupyterlabCoreutils.interfacesMod.IDataConnector
-import typings.phosphorCommands.mod.CommandRegistry
-import typings.phosphorCoreutils.jsonMod.ReadonlyJSONValue
+import typings.jupyterlabStatedb.interfacesMod.IDataConnector
+import typings.luminoCommands.mod.CommandRegistry
+import typings.luminoCoreutils.jsonMod.ReadonlyPartialJSONValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ trait IOptions extends js.Object {
   /**
     * The data connector used for layout saving and fetching.
     */
-  var connector: IDataConnector[ReadonlyJSONValue, ReadonlyJSONValue, String]
+  var connector: IDataConnector[ReadonlyPartialJSONValue, ReadonlyPartialJSONValue, String, String]
   /**
     * The initial promise that has to be resolved before restoration.
     *
@@ -31,7 +31,7 @@ trait IOptions extends js.Object {
 object IOptions {
   @scala.inline
   def apply(
-    connector: IDataConnector[ReadonlyJSONValue, ReadonlyJSONValue, String],
+    connector: IDataConnector[ReadonlyPartialJSONValue, ReadonlyPartialJSONValue, String, String],
     first: js.Promise[_],
     registry: CommandRegistry
   ): IOptions = {

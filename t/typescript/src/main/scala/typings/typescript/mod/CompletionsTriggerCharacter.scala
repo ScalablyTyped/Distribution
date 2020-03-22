@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
   - typings.typescript.typescriptStrings.Slash
   - typings.typescript.typescriptStrings.`@`
   - typings.typescript.typescriptStrings.Lessthansign
+  - typings.typescript.typescriptStrings.Numbersign
 */
 trait CompletionsTriggerCharacter extends js.Object
 
@@ -26,6 +27,8 @@ object CompletionsTriggerCharacter {
   def Graveaccent: typings.typescript.typescriptStrings.Graveaccent = this.cast("`")
   @scala.inline
   def Lessthansign: typings.typescript.typescriptStrings.Lessthansign = this.cast("<")
+  @scala.inline
+  def Numbersign: typings.typescript.typescriptStrings.Numbersign = this.cast("#")
   @scala.inline
   def Quotationmark: typings.typescript.typescriptStrings.Quotationmark = this.cast("\"")
   @scala.inline

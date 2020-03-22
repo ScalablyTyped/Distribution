@@ -1,6 +1,6 @@
 package typings.officeJs.Excel
 
-import typings.officeJs.AnonColumnWidthNumber
+import typings.officeJs.CellPropertiesFormatcolum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -42,7 +42,7 @@ object ColumnProperties {
     addressLocal: String = null,
     columnHidden: js.UndefOr[Boolean] = js.undefined,
     columnIndex: Int | Double = null,
-    format: CellPropertiesFormat with AnonColumnWidthNumber = null,
+    format: CellPropertiesFormatcolum = null,
     hyperlink: RangeHyperlink = null,
     style: String = null
   ): ColumnProperties = {

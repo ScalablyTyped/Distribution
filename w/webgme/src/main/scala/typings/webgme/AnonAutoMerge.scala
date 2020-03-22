@@ -33,7 +33,7 @@ trait AnonAutoMerge extends js.Object {
     *   config.storage.clientCache = 2000;
     */
   var clientCache: Double
-  var database: AnonMemory
+  var database: AnonType
   /**
     * Since v2.6.2 patched objects on the server are being 
     * checked for consistency w.r.t. the provided hash 
@@ -90,7 +90,7 @@ object AnonAutoMerge {
     broadcastProjectEvents: Boolean,
     cache: Double,
     clientCache: Double,
-    database: AnonMemory,
+    database: AnonType,
     disableHashChecks: Boolean,
     keyType: plainSHA1 | rand160Bits | ZSSHA,
     loadBucketSize: Double,

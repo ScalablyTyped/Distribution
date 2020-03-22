@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object Colors extends js.Object {
   @JSBracketAccess
-  def apply(value: scala.Nothing): js.UndefOr[typings.three.constantsMod.Colors with scala.Nothing] = js.native
+  def apply(value: scala.Nothing): js.UndefOr[typings.three.threeLegacyMod.Colors with scala.Nothing] = js.native
 }
 

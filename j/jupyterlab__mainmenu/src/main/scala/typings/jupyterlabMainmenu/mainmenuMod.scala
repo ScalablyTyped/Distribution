@@ -10,15 +10,15 @@ import typings.jupyterlabMainmenu.tabsMod.TabsMenu
 import typings.jupyterlabMainmenu.tokensMod.IMainMenu
 import typings.jupyterlabMainmenu.tokensMod.IMainMenu.IAddOptions
 import typings.jupyterlabMainmenu.viewMod.ViewMenu
-import typings.phosphorAlgorithm.iterMod.IIterator
-import typings.phosphorCommands.mod.CommandRegistry
-import typings.phosphorMessaging.mod.Message
-import typings.phosphorWidgets.menuMod.Menu
-import typings.phosphorWidgets.mod.MenuBar
-import typings.phosphorWidgets.widgetMod.Widget
-import typings.phosphorWidgets.widgetMod.Widget.ChildMessage
-import typings.phosphorWidgets.widgetMod.Widget.Flag
-import typings.phosphorWidgets.widgetMod.Widget.ResizeMessage
+import typings.luminoAlgorithm.iterMod.IIterator
+import typings.luminoCommands.mod.CommandRegistry
+import typings.luminoMessaging.mod.Message
+import typings.luminoWidgets.menuMod.Menu
+import typings.luminoWidgets.mod.MenuBar
+import typings.luminoWidgets.widgetMod.Widget
+import typings.luminoWidgets.widgetMod.Widget.ChildMessage
+import typings.luminoWidgets.widgetMod.Widget.Flag
+import typings.luminoWidgets.widgetMod.Widget.ResizeMessage
 import typings.std.Event_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -114,9 +114,9 @@ object mainmenuMod extends js.Object {
       * Add a new menu to the main menu bar.
       */
     /* InferMemberOverrides */
-    override def addMenu(menu: typings.phosphorWidgets.mod.Menu): Unit = js.native
+    override def addMenu(menu: typings.luminoWidgets.mod.Menu): Unit = js.native
     /* InferMemberOverrides */
-    override def addMenu(menu: typings.phosphorWidgets.mod.Menu, options: IAddOptions): Unit = js.native
+    override def addMenu(menu: typings.luminoWidgets.mod.Menu, options: IAddOptions): Unit = js.native
     /**
       * Create an iterator over the widget's children.
       *
@@ -170,6 +170,7 @@ object mainmenuMod extends js.Object {
       * It is undefined behavior to use any functionality of the object
       * after it has been disposed unless otherwise explicitly noted.
       */
+    /* CompleteClass */
     /* InferMemberOverrides */
     override def dispose(): Unit = js.native
     /**
@@ -370,6 +371,7 @@ object mainmenuMod extends js.Object {
       *
       * @param msg - The message to be processed.
       */
+    /* CompleteClass */
     /* InferMemberOverrides */
     override def processMessage(msg: Message): Unit = js.native
     /**

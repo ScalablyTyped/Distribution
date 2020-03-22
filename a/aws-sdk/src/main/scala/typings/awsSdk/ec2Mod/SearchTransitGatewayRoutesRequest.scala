@@ -21,14 +21,14 @@ trait SearchTransitGatewayRoutesRequest extends js.Object {
   /**
     * The ID of the transit gateway route table.
     */
-  var TransitGatewayRouteTableId: String = js.native
+  var TransitGatewayRouteTableId: typings.awsSdk.ec2Mod.TransitGatewayRouteTableId = js.native
 }
 
 object SearchTransitGatewayRoutesRequest {
   @scala.inline
   def apply(
     Filters: FilterList,
-    TransitGatewayRouteTableId: String,
+    TransitGatewayRouteTableId: TransitGatewayRouteTableId,
     DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     MaxResults: Int | scala.Double = null
   ): SearchTransitGatewayRoutesRequest = {

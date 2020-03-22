@@ -20,6 +20,7 @@ trait AnonAnnotation extends js.Object {
   		[Inform iTerm2](https://www.iterm2.com/documentation-escape-codes.html) of the current directory to help semantic history and enable [Cmd-clicking relative paths](https://coderwall.com/p/b7e82q/quickly-open-files-in-iterm-with-cmd-click).
   		@param cwd - Current directory. Default: `process.cwd()`.
   		*/
+  def setCwd(): String = js.native
   def setCwd(cwd: String): String = js.native
 }
 

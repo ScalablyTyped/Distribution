@@ -21,7 +21,7 @@ object cylinderGeometryMod extends js.Object {
       thetaStart: js.UndefOr[Double],
       thetaLength: js.UndefOr[Double]
     ) = this()
-    var parameters: AnonHeight = js.native
+    var parameters: AnonHeightSegments = js.native
   }
   
   @js.native
@@ -44,7 +44,7 @@ object cylinderGeometryMod extends js.Object {
       thetaStart: js.UndefOr[Double],
       thetaLength: js.UndefOr[Double]
     ) = this()
-    var parameters: AnonHeight = js.native
+    var parameters: AnonHeightSegments = js.native
   }
   
 }

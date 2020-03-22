@@ -1,6 +1,6 @@
 package typings.reactMapGl.mod
 
-import typings.std.Partial
+import typings.reactMapGl.PartialMapState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class MapController () extends BaseMapController {
   /* CompleteClass */
   override var events: js.Array[String] = js.native
-  def getMapState(overrides: Partial[MapState]): MapState = js.native
+  def getMapState(overrides: PartialMapState): MapState = js.native
   /* CompleteClass */
   override def handleEvent(event: MapControlEvent): Unit = js.native
   def setOptions(options: MapControllerOptions): Unit = js.native

@@ -25,10 +25,10 @@ import typings.reactNative.reactNativeStrings.polite
 import typings.reactNative.reactNativeStrings.radiobutton_checked
 import typings.reactNative.reactNativeStrings.radiobutton_unchecked
 import typings.reactNative.reactNativeStrings.yes
+import typings.reactNativeMaps.Anon0
 import typings.reactNativeMaps.AnonAction
-import typings.reactNativeMaps.AnonActionCalloutpress
 import typings.reactNativeMaps.AnonActionId
-import typings.reactNativeMaps.AnonActionIdMarkerdeselect
+import typings.reactNativeMaps.AnonId
 import typings.reactNativeMaps.AnonName
 import typings.reactNativeMaps.reactNativeMapsStrings.google
 import scala.scalajs.js
@@ -57,16 +57,16 @@ trait MapViewProps extends ViewProps {
   var minDelta: js.UndefOr[Double] = js.undefined
   var minZoomLevel: js.UndefOr[Double] = js.undefined
   var moveOnMarkerPress: js.UndefOr[Boolean] = js.undefined
-  var onCalloutPress: js.UndefOr[js.Function1[/* event */ MapEvent[AnonActionCalloutpress], Unit]] = js.undefined
+  var onCalloutPress: js.UndefOr[js.Function1[/* event */ MapEvent[Anon0], Unit]] = js.undefined
   var onKmlReady: js.UndefOr[js.Function1[/* values */ KmlMapEvent, Unit]] = js.undefined
   var onLongPress: js.UndefOr[js.Function1[/* event */ MapEvent[js.Object], Unit]] = js.undefined
   var onMapReady: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onMarkerDeselect: js.UndefOr[js.Function1[/* event */ MapEvent[AnonActionIdMarkerdeselect], Unit]] = js.undefined
+  var onMarkerDeselect: js.UndefOr[js.Function1[/* event */ MapEvent[AnonActionId], Unit]] = js.undefined
   var onMarkerDrag: js.UndefOr[js.Function1[/* event */ MapEvent[js.Object], Unit]] = js.undefined
   var onMarkerDragEnd: js.UndefOr[js.Function1[/* event */ MapEvent[js.Object], Unit]] = js.undefined
   var onMarkerDragStart: js.UndefOr[js.Function1[/* event */ MapEvent[js.Object], Unit]] = js.undefined
   var onMarkerPress: js.UndefOr[js.Function1[/* event */ MapEvent[AnonAction], Unit]] = js.undefined
-  var onMarkerSelect: js.UndefOr[js.Function1[/* event */ MapEvent[AnonActionId], Unit]] = js.undefined
+  var onMarkerSelect: js.UndefOr[js.Function1[/* event */ MapEvent[AnonId], Unit]] = js.undefined
   var onPanDrag: js.UndefOr[js.Function1[/* event */ MapEvent[js.Object], Unit]] = js.undefined
   var onPoiClick: js.UndefOr[js.Function1[/* event */ MapEvent[AnonName], Unit]] = js.undefined
   var onPress: js.UndefOr[js.Function1[/* event */ MapEvent[js.Object], Unit]] = js.undefined
@@ -140,18 +140,18 @@ object MapViewProps {
     needsOffscreenAlphaCompositing: js.UndefOr[Boolean] = js.undefined,
     onAccessibilityAction: /* event */ AccessibilityActionEvent => Unit = null,
     onAccessibilityTap: () => Unit = null,
-    onCalloutPress: /* event */ MapEvent[AnonActionCalloutpress] => Unit = null,
+    onCalloutPress: /* event */ MapEvent[Anon0] => Unit = null,
     onKmlReady: /* values */ KmlMapEvent => Unit = null,
     onLayout: /* event */ LayoutChangeEvent => Unit = null,
     onLongPress: /* event */ MapEvent[js.Object] => Unit = null,
     onMagicTap: () => Unit = null,
     onMapReady: () => Unit = null,
-    onMarkerDeselect: /* event */ MapEvent[AnonActionIdMarkerdeselect] => Unit = null,
+    onMarkerDeselect: /* event */ MapEvent[AnonActionId] => Unit = null,
     onMarkerDrag: /* event */ MapEvent[js.Object] => Unit = null,
     onMarkerDragEnd: /* event */ MapEvent[js.Object] => Unit = null,
     onMarkerDragStart: /* event */ MapEvent[js.Object] => Unit = null,
     onMarkerPress: /* event */ MapEvent[AnonAction] => Unit = null,
-    onMarkerSelect: /* event */ MapEvent[AnonActionId] => Unit = null,
+    onMarkerSelect: /* event */ MapEvent[AnonId] => Unit = null,
     onMoveShouldSetResponder: /* event */ GestureResponderEvent => Boolean = null,
     onMoveShouldSetResponderCapture: /* event */ GestureResponderEvent => Boolean = null,
     onPanDrag: /* event */ MapEvent[js.Object] => Unit = null,

@@ -1,18 +1,12 @@
 package typings.fundamentalReact.mod
 
-import typings.fundamentalReact.AnonDisplayNameTreeViewBranch
-import typings.fundamentalReact.AnonDisplayNameTreeViewCol
-import typings.fundamentalReact.AnonDisplayNameTreeViewHead
-import typings.fundamentalReact.AnonDisplayNameTreeViewItem
-import typings.fundamentalReact.AnonDisplayNameTreeViewRow
-import typings.fundamentalReact.AnonDisplayNameTreeViewTree
-import typings.fundamentalReact.treeViewMod.TreeColProps
-import typings.fundamentalReact.treeViewMod.TreeHeadProps
-import typings.fundamentalReact.treeViewMod.TreeItemProps
-import typings.fundamentalReact.treeViewMod.TreeRowProps
+import typings.fundamentalReact.ComponentClassComponentSt
+import typings.fundamentalReact.ComponentClassComponentStInstantiable
+import typings.fundamentalReact.ComponentClassTreeColProp
+import typings.fundamentalReact.ComponentClassTreeHeadPro
+import typings.fundamentalReact.ComponentClassTreeItemPro
+import typings.fundamentalReact.ComponentClassTreeRowProp
 import typings.fundamentalReact.treeViewMod.default
-import typings.react.mod.ComponentClass
-import typings.react.mod.ComponentState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,11 +19,11 @@ class TreeView () extends default
 @JSImport("fundamental-react", "TreeView")
 @js.native
 object TreeView extends js.Object {
-  var Branch: (ComponentClass[js.Object, ComponentState]) with AnonDisplayNameTreeViewBranch = js.native
-  var Col: (ComponentClass[TreeColProps, ComponentState]) with AnonDisplayNameTreeViewCol = js.native
-  var Head: (ComponentClass[TreeHeadProps, ComponentState]) with AnonDisplayNameTreeViewHead = js.native
-  var Item: (ComponentClass[TreeItemProps, ComponentState]) with AnonDisplayNameTreeViewItem = js.native
-  var Row: (ComponentClass[TreeRowProps, ComponentState]) with AnonDisplayNameTreeViewRow = js.native
-  var Tree: (ComponentClass[js.Object, ComponentState]) with AnonDisplayNameTreeViewTree = js.native
+  var Branch: ComponentClassComponentStInstantiable = js.native
+  var Col: ComponentClassTreeColProp = js.native
+  var Head: ComponentClassTreeHeadPro = js.native
+  var Item: ComponentClassTreeItemPro = js.native
+  var Row: ComponentClassTreeRowProp = js.native
+  var Tree: ComponentClassComponentSt = js.native
 }
 

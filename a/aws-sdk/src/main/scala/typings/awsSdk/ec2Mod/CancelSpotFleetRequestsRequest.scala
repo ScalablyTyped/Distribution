@@ -13,7 +13,7 @@ trait CancelSpotFleetRequestsRequest extends js.Object {
   /**
     * The IDs of the Spot Fleet requests.
     */
-  var SpotFleetRequestIds: ValueStringList = js.native
+  var SpotFleetRequestIds: SpotFleetRequestIdList = js.native
   /**
     * Indicates whether to terminate instances for a Spot Fleet request if it is canceled successfully.
     */
@@ -23,7 +23,7 @@ trait CancelSpotFleetRequestsRequest extends js.Object {
 object CancelSpotFleetRequestsRequest {
   @scala.inline
   def apply(
-    SpotFleetRequestIds: ValueStringList,
+    SpotFleetRequestIds: SpotFleetRequestIdList,
     TerminateInstances: Boolean,
     DryRun: js.UndefOr[scala.Boolean] = js.undefined
   ): CancelSpotFleetRequestsRequest = {

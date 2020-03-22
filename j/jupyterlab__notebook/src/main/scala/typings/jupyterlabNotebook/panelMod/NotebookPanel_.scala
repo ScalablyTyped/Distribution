@@ -1,6 +1,6 @@
 package typings.jupyterlabNotebook.panelMod
 
-import typings.jupyterlabApputils.clientsessionMod.IClientSession
+import typings.jupyterlabApputils.sessioncontextMod.ISessionContext
 import typings.jupyterlabDocregistry.defaultMod.DocumentWidget.IOptions
 import typings.jupyterlabDocregistry.mod.DocumentWidget
 import typings.jupyterlabDocregistry.registryMod.DocumentRegistry.Context
@@ -8,7 +8,6 @@ import typings.jupyterlabDocregistry.registryMod.DocumentRegistry.SaveState
 import typings.jupyterlabNotebook.modelMod.INotebookModel
 import typings.jupyterlabNotebook.panelMod.NotebookPanel.IConfig
 import typings.jupyterlabNotebook.widgetMod.Notebook
-import typings.phosphorSignaling.mod.ISignal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,7 +19,6 @@ class NotebookPanel_ protected () extends DocumentWidget[Notebook, INotebookMode
     * Construct a new notebook panel.
     */
   def this(options: IOptions[Notebook, INotebookModel]) = this()
-  var _activated: js.Any = js.native
   /**
     * Whether we are currently in a series of autorestarts we have already
     * notified the user about.
@@ -40,18 +38,19 @@ class NotebookPanel_ protected () extends DocumentWidget[Notebook, INotebookMode
     */
   var _updateSpec: js.Any = js.native
   /**
-    * A signal emitted when the panel has been activated.
+    * The notebook used by the widget.
     */
-  val activated: ISignal[this.type, Unit] = js.native
+  @JSName("content")
+  val content_FNotebookPanel_ : Notebook = js.native
+  def _onSave(sender: Context, state: SaveState): Unit = js.native
   /**
     * The model for the widget.
     */
-  val model: INotebookModel = js.native
+  def model(): INotebookModel | Null = js.native
   /**
-    * The client session used by the panel.
+    * The session context used by the panel.
     */
-  val session: IClientSession = js.native
-  def _onSave(sender: Context, state: SaveState): Unit = js.native
+  def sessionContext(): ISessionContext = js.native
   /**
     * Update the options for the current notebook panel.
     *

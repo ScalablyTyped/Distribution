@@ -2,7 +2,7 @@ package typings.tooltipster.JQueryTooltipster
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.tooltipster.AnonClick
-import typings.tooltipster.AnonClickMouseenter
+import typings.tooltipster.AnonMouseenter
 import typings.tooltipster.JQuery
 import typings.tooltipster.tooltipsterStrings.current
 import typings.tooltipster.tooltipsterStrings.fade
@@ -240,7 +240,7 @@ trait ITooltipsterOptions
   		 * allows you to reactivate the triggers of your choice to create a customized behavior. Only applies 
   		 * if 'trigger' is set to 'custom'. See http://iamceege.github.io/tooltipster/#triggers.
   		 */
-  var triggerOpen: js.UndefOr[AnonClickMouseenter] = js.undefined
+  var triggerOpen: js.UndefOr[AnonMouseenter] = js.undefined
   /**
   		 * Plays a subtle animation when the content of the tooltip is updated (if the tooltip is open). You 
   		 * may create custom animations in your CSS files. Set to null to disable the animation. 
@@ -303,7 +303,7 @@ object ITooltipsterOptions {
     trackerInterval: Int | Double = null,
     trigger: String = null,
     triggerClose: AnonClick = null,
-    triggerOpen: AnonClickMouseenter = null,
+    triggerOpen: AnonMouseenter = null,
     updateAnimation: fade | rotate | scale = null,
     viewportAware: js.UndefOr[Boolean] = js.undefined,
     zIndex: Int | Double = null

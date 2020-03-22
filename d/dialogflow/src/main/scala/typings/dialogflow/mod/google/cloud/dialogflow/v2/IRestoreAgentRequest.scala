@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 /** Properties of a RestoreAgentRequest. */
 trait IRestoreAgentRequest extends js.Object {
   /** RestoreAgentRequest agentContent */
-  var agentContent: js.UndefOr[Uint8Array | Null] = js.undefined
+  var agentContent: js.UndefOr[Uint8Array | String | Null] = js.undefined
   /** RestoreAgentRequest agentUri */
   var agentUri: js.UndefOr[String | Null] = js.undefined
   /** RestoreAgentRequest parent */
@@ -17,7 +17,7 @@ trait IRestoreAgentRequest extends js.Object {
 
 object IRestoreAgentRequest {
   @scala.inline
-  def apply(agentContent: Uint8Array = null, agentUri: String = null, parent: String = null): IRestoreAgentRequest = {
+  def apply(agentContent: Uint8Array | String = null, agentUri: String = null, parent: String = null): IRestoreAgentRequest = {
     val __obj = js.Dynamic.literal()
     if (agentContent != null) __obj.updateDynamic("agentContent")(agentContent.asInstanceOf[js.Any])
     if (agentUri != null) __obj.updateDynamic("agentUri")(agentUri.asInstanceOf[js.Any])

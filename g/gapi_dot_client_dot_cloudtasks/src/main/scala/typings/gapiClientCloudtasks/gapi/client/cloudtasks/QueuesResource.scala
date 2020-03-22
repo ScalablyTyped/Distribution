@@ -2,10 +2,10 @@ package typings.gapiClientCloudtasks.gapi.client.cloudtasks
 
 import typings.gapiClient.gapi.client.Request_
 import typings.gapiClientCloudtasks.AnonAccesstoken
-import typings.gapiClientCloudtasks.AnonAccesstokenAlt
-import typings.gapiClientCloudtasks.AnonAccesstokenAltBearertokenCallbackFields
-import typings.gapiClientCloudtasks.AnonAccesstokenAltBearertokenCallbackFieldsFilter
-import typings.gapiClientCloudtasks.AnonAccesstokenAltBearertokenCallbackFieldsKey
+import typings.gapiClientCloudtasks.AnonAlt
+import typings.gapiClientCloudtasks.AnonFields
+import typings.gapiClientCloudtasks.AnonFilter
+import typings.gapiClientCloudtasks.AnonKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +21,7 @@ trait QueuesResource extends js.Object {
     * carefully and then sign up for
     * [whitelist access to this method](https://goo.gl/Fe5mUy).
     */
-  def create(request: AnonAccesstokenAlt): Request_[Queue]
+  def create(request: AnonAlt): Request_[Queue]
   /**
     * Deletes a queue.
     *
@@ -49,13 +49,13 @@ trait QueuesResource extends js.Object {
     *
     * &#42; `cloudtasks.queues.getIamPolicy`
     */
-  def getIamPolicy(request: AnonAccesstokenAltBearertokenCallbackFields): Request_[Policy]
+  def getIamPolicy(request: AnonFields): Request_[Policy]
   /**
     * Lists queues.
     *
     * Queues are returned in lexicographical order.
     */
-  def list(request: AnonAccesstokenAltBearertokenCallbackFieldsFilter): Request_[ListQueuesResponse]
+  def list(request: AnonFilter): Request_[ListQueuesResponse]
   /**
     * Updates a queue.
     *
@@ -68,7 +68,7 @@ trait QueuesResource extends js.Object {
     * carefully and then sign up for
     * [whitelist access to this method](https://goo.gl/Fe5mUy).
     */
-  def patch(request: AnonAccesstokenAltBearertokenCallbackFieldsKey): Request_[Queue]
+  def patch(request: AnonKey): Request_[Queue]
   /**
     * Pauses the queue.
     *
@@ -124,7 +124,7 @@ trait QueuesResource extends js.Object {
     *
     * &#42; `cloudtasks.queues.setIamPolicy`
     */
-  def setIamPolicy(request: AnonAccesstokenAltBearertokenCallbackFields): Request_[Policy]
+  def setIamPolicy(request: AnonFields): Request_[Policy]
   /**
     * Returns permissions that a caller has on a Queue.
     * If the resource does not exist, this will return an empty set of
@@ -134,24 +134,24 @@ trait QueuesResource extends js.Object {
     * UIs and command-line tools, not for authorization checking. This operation
     * may "fail open" without warning.
     */
-  def testIamPermissions(request: AnonAccesstokenAltBearertokenCallbackFields): Request_[TestIamPermissionsResponse]
+  def testIamPermissions(request: AnonFields): Request_[TestIamPermissionsResponse]
 }
 
 object QueuesResource {
   @scala.inline
   def apply(
-    create: AnonAccesstokenAlt => Request_[Queue],
+    create: AnonAlt => Request_[Queue],
     delete: AnonAccesstoken => Request_[js.Object],
     get: AnonAccesstoken => Request_[Queue],
-    getIamPolicy: AnonAccesstokenAltBearertokenCallbackFields => Request_[Policy],
-    list: AnonAccesstokenAltBearertokenCallbackFieldsFilter => Request_[ListQueuesResponse],
-    patch: AnonAccesstokenAltBearertokenCallbackFieldsKey => Request_[Queue],
+    getIamPolicy: AnonFields => Request_[Policy],
+    list: AnonFilter => Request_[ListQueuesResponse],
+    patch: AnonKey => Request_[Queue],
     pause: AnonAccesstoken => Request_[Queue],
     purge: AnonAccesstoken => Request_[Queue],
     resume: AnonAccesstoken => Request_[Queue],
-    setIamPolicy: AnonAccesstokenAltBearertokenCallbackFields => Request_[Policy],
+    setIamPolicy: AnonFields => Request_[Policy],
     tasks: TasksResource,
-    testIamPermissions: AnonAccesstokenAltBearertokenCallbackFields => Request_[TestIamPermissionsResponse]
+    testIamPermissions: AnonFields => Request_[TestIamPermissionsResponse]
   ): QueuesResource = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), getIamPolicy = js.Any.fromFunction1(getIamPolicy), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), pause = js.Any.fromFunction1(pause), purge = js.Any.fromFunction1(purge), resume = js.Any.fromFunction1(resume), setIamPolicy = js.Any.fromFunction1(setIamPolicy), tasks = tasks.asInstanceOf[js.Any], testIamPermissions = js.Any.fromFunction1(testIamPermissions))
   

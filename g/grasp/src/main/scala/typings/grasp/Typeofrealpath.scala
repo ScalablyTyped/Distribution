@@ -1,9 +1,9 @@
 package typings.grasp
 
 import typings.grasp.graspStrings.buffer
-import typings.node.AnonBufferEncoding
-import typings.node.AnonEncodingBufferEncoding
-import typings.node.AnonEncodingNull
+import typings.node.Anon2
+import typings.node.Anon3
+import typings.node.AnonEncoding
 import typings.node.Buffer
 import typings.node.BufferEncoding
 import typings.node.NodeJS.ErrnoException
@@ -49,7 +49,7 @@ trait Typeofrealpath extends js.Object {
     */
   def apply(
     path: PathLike,
-    options: AnonBufferEncoding,
+    options: Anon2,
     callback: js.Function2[/* err */ ErrnoException | Null, /* resolvedPath */ Buffer, Unit]
   ): Unit = js.native
   /**
@@ -59,8 +59,8 @@ trait Typeofrealpath extends js.Object {
     */
   def apply(
     path: PathLike,
-    options: AnonEncodingBufferEncoding,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* resolvedPath */ String, Unit]
+    options: Anon3,
+    callback: js.Function2[/* err */ ErrnoException | Null, /* resolvedPath */ String | Buffer, Unit]
   ): Unit = js.native
   /**
     * Asynchronous realpath(3) - return the canonicalized absolute pathname.
@@ -69,8 +69,8 @@ trait Typeofrealpath extends js.Object {
     */
   def apply(
     path: PathLike,
-    options: AnonEncodingNull,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* resolvedPath */ String | Buffer, Unit]
+    options: AnonEncoding,
+    callback: js.Function2[/* err */ ErrnoException | Null, /* resolvedPath */ String, Unit]
   ): Unit = js.native
   def apply(
     path: PathLike,
@@ -89,9 +89,9 @@ trait Typeofrealpath extends js.Object {
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
-  def __promisify__(path: PathLike, options: AnonBufferEncoding): js.Promise[Buffer] = js.native
-  def __promisify__(path: PathLike, options: AnonEncodingBufferEncoding): js.Promise[String] = js.native
-  def __promisify__(path: PathLike, options: AnonEncodingNull): js.Promise[String | Buffer] = js.native
+  def __promisify__(path: PathLike, options: Anon2): js.Promise[Buffer] = js.native
+  def __promisify__(path: PathLike, options: Anon3): js.Promise[String | Buffer] = js.native
+  def __promisify__(path: PathLike, options: AnonEncoding): js.Promise[String] = js.native
   def __promisify__(path: PathLike, options: BufferEncoding): js.Promise[String] = js.native
   @JSName("__promisify__")
   def __promisify___buffer(path: PathLike, options: buffer): js.Promise[Buffer] = js.native
@@ -116,18 +116,18 @@ trait Typeofrealpath extends js.Object {
   ): Unit = js.native
   def native(
     path: PathLike,
-    options: AnonBufferEncoding,
+    options: Anon2,
     callback: js.Function2[/* err */ ErrnoException | Null, /* resolvedPath */ Buffer, Unit]
   ): Unit = js.native
   def native(
     path: PathLike,
-    options: AnonEncodingBufferEncoding,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* resolvedPath */ String, Unit]
+    options: Anon3,
+    callback: js.Function2[/* err */ ErrnoException | Null, /* resolvedPath */ String | Buffer, Unit]
   ): Unit = js.native
   def native(
     path: PathLike,
-    options: AnonEncodingNull,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* resolvedPath */ String | Buffer, Unit]
+    options: AnonEncoding,
+    callback: js.Function2[/* err */ ErrnoException | Null, /* resolvedPath */ String, Unit]
   ): Unit = js.native
   def native(
     path: PathLike,

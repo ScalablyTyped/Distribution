@@ -1,6 +1,6 @@
 package typings.jui.mod
 
-import typings.jui.AnonBottom
+import typings.jui.AnonFlex
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait UICombo extends js.Object {
   def apply(selector: js.Any): this.type = js.native
-  def apply(selector: js.Any, options: AnonBottom): this.type = js.native
+  def apply(selector: js.Any, options: AnonFlex): this.type = js.native
   def fold(): Unit = js.native
   /**
     * Gets the data of the button currently selected

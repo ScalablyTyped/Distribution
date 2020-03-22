@@ -12,12 +12,9 @@ trait TextDocumentRegistrationOptions extends js.Object {
   var documentSelector: DocumentSelector | Null
 }
 
-object TextDocumentRegistrationOptions {
-  @scala.inline
-  def apply(documentSelector: DocumentSelector = null): TextDocumentRegistrationOptions = {
-    val __obj = js.Dynamic.literal()
-    if (documentSelector != null) __obj.updateDynamic("documentSelector")(documentSelector.asInstanceOf[js.Any])
-    __obj.asInstanceOf[TextDocumentRegistrationOptions]
-  }
+@JSImport("vscode-languageserver-protocol/lib/protocol", "TextDocumentRegistrationOptions")
+@js.native
+object TextDocumentRegistrationOptions extends js.Object {
+  def is(value: js.Any): /* is vscode-languageserver-protocol.vscode-languageserver-protocol/lib/protocol.TextDocumentRegistrationOptions */ Boolean = js.native
 }
 

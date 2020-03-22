@@ -38,16 +38,10 @@ object formatjsIntlUnifiedNumberformatStrings {
        with typings.formatjsIntlUnifiedNumberformat.coreMod._UnifiedNumberFormatPartTypes
   
   @js.native
-  sealed trait compactDisplay extends js.Object
-  
-  @js.native
   sealed trait compactLong extends js.Object
   
   @js.native
   sealed trait compactShort extends js.Object
-  
-  @js.native
-  sealed trait currencySign extends js.Object
   
   @js.native
   sealed trait day
@@ -155,9 +149,6 @@ object formatjsIntlUnifiedNumberformatStrings {
        with typings.formatjsIntlUnifiedNumberformat.coreMod._UnifiedNumberFormatPartTypes
   
   @js.native
-  sealed trait localeMatcher extends js.Object
-  
-  @js.native
   sealed trait megabit
     extends Unit
        with typings.formatjsIntlUnifiedNumberformat.unitsConstantsMod.Unit
@@ -208,9 +199,6 @@ object formatjsIntlUnifiedNumberformatStrings {
        with typings.formatjsIntlUnifiedNumberformat.unitsConstantsMod.Unit
   
   @js.native
-  sealed trait notation extends js.Object
-  
-  @js.native
   sealed trait ounce
     extends Unit
        with typings.formatjsIntlUnifiedNumberformat.unitsConstantsMod.Unit
@@ -236,9 +224,6 @@ object formatjsIntlUnifiedNumberformatStrings {
        with typings.formatjsIntlUnifiedNumberformat.unitsConstantsMod.Unit
   
   @js.native
-  sealed trait signDisplay extends js.Object
-  
-  @js.native
   sealed trait stone
     extends Unit
        with typings.formatjsIntlUnifiedNumberformat.unitsConstantsMod.Unit
@@ -257,9 +242,6 @@ object formatjsIntlUnifiedNumberformatStrings {
   sealed trait unit
     extends _UnifiedNumberFormatPartTypes
        with typings.formatjsIntlUnifiedNumberformat.coreMod._UnifiedNumberFormatPartTypes
-  
-  @js.native
-  sealed trait unitDisplay extends js.Object
   
   @js.native
   sealed trait week
@@ -289,13 +271,9 @@ object formatjsIntlUnifiedNumberformatStrings {
   @scala.inline
   def compact: compact = "compact".asInstanceOf[compact]
   @scala.inline
-  def compactDisplay: compactDisplay = "compactDisplay".asInstanceOf[compactDisplay]
-  @scala.inline
   def compactLong: compactLong = "compactLong".asInstanceOf[compactLong]
   @scala.inline
   def compactShort: compactShort = "compactShort".asInstanceOf[compactShort]
-  @scala.inline
-  def currencySign: currencySign = "currencySign".asInstanceOf[currencySign]
   @scala.inline
   def day: day = "day".asInstanceOf[day]
   @scala.inline
@@ -339,8 +317,6 @@ object formatjsIntlUnifiedNumberformatStrings {
   @scala.inline
   def literal: literal = "literal".asInstanceOf[literal]
   @scala.inline
-  def localeMatcher: localeMatcher = "localeMatcher".asInstanceOf[localeMatcher]
-  @scala.inline
   def megabit: megabit = "megabit".asInstanceOf[megabit]
   @scala.inline
   def megabyte: megabyte = "megabyte".asInstanceOf[megabyte]
@@ -361,8 +337,6 @@ object formatjsIntlUnifiedNumberformatStrings {
   @scala.inline
   def month: month = "month".asInstanceOf[month]
   @scala.inline
-  def notation: notation = "notation".asInstanceOf[notation]
-  @scala.inline
   def ounce: ounce = "ounce".asInstanceOf[ounce]
   @scala.inline
   def percent: percent = "percent".asInstanceOf[percent]
@@ -373,8 +347,6 @@ object formatjsIntlUnifiedNumberformatStrings {
   @scala.inline
   def second: second = "second".asInstanceOf[second]
   @scala.inline
-  def signDisplay: signDisplay = "signDisplay".asInstanceOf[signDisplay]
-  @scala.inline
   def stone: stone = "stone".asInstanceOf[stone]
   @scala.inline
   def terabit: terabit = "terabit".asInstanceOf[terabit]
@@ -382,8 +354,6 @@ object formatjsIntlUnifiedNumberformatStrings {
   def terabyte: terabyte = "terabyte".asInstanceOf[terabyte]
   @scala.inline
   def unit: unit = "unit".asInstanceOf[unit]
-  @scala.inline
-  def unitDisplay: unitDisplay = "unitDisplay".asInstanceOf[unitDisplay]
   @scala.inline
   def week: week = "week".asInstanceOf[week]
   @scala.inline

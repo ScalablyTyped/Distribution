@@ -3,7 +3,7 @@ package typings.frctlFractal.mod.fractal
 import typings.frctlFractal.AnonCli
 import typings.frctlFractal.AnonCurrent
 import typings.frctlFractal.AnonDescription
-import typings.frctlFractal.AnonFractal
+import typings.frctlFractal.ClifractalFractalConsole
 import typings.frctlFractal.mod.CliTheme
 import typings.std.Error
 import scala.scalajs.js
@@ -21,7 +21,7 @@ object cli extends js.Object {
     def command(
       commandString: String,
       callback: js.ThisFunction2[
-          /* this */ this.type with AnonFractal, 
+          /* this */ ClifractalFractalConsole, 
           /* args */ js.Any, 
           /* done */ js.Function0[Unit], 
           Unit
@@ -30,7 +30,7 @@ object cli extends js.Object {
     def command(
       commandString: String,
       callback: js.ThisFunction2[
-          /* this */ this.type with AnonFractal, 
+          /* this */ ClifractalFractalConsole, 
           /* args */ js.Any, 
           /* done */ js.Function0[Unit], 
           Unit
@@ -40,7 +40,7 @@ object cli extends js.Object {
     def command(
       commandString: String,
       callback: js.ThisFunction2[
-          /* this */ this.type with AnonFractal, 
+          /* this */ ClifractalFractalConsole, 
           /* args */ js.Any, 
           /* done */ js.Function0[Unit], 
           Unit

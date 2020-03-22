@@ -1,66 +1,41 @@
 package typings.electron.Electron
 
+import typings.electron.electronStrings.audio
+import typings.electron.electronStrings.unknown_
+import typings.electron.electronStrings.video
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Details extends js.Object {
   /**
-    * The domain of the cookie. Empty by default if omitted.
+    * Whether the frame making the request is the main frame
     */
-  var domain: js.UndefOr[String] = js.undefined
+  var isMainFrame: Boolean
   /**
-    * The expiration date of the cookie as the number of seconds since the UNIX epoch.
-    * If omitted then the cookie becomes a session cookie and will not be retained
-    * between sessions.
+    * The type of media access being requested, can be `video`, `audio` or `unknown`
     */
-  var expirationDate: js.UndefOr[Double] = js.undefined
+  var mediaType: video | audio | unknown_
   /**
-    * Whether the cookie should be marked as HTTP only. Defaults to false.
+    * The last URL the requesting frame loaded
     */
-  var httpOnly: js.UndefOr[Boolean] = js.undefined
+  var requestingUrl: String
   /**
-    * The name of the cookie. Empty by default if omitted.
+    * The security orign of the `media` check.
     */
-  var name: js.UndefOr[String] = js.undefined
-  /**
-    * The path of the cookie. Empty by default if omitted.
-    */
-  var path: js.UndefOr[String] = js.undefined
-  /**
-    * Whether the cookie should be marked as Secure. Defaults to false.
-    */
-  var secure: js.UndefOr[Boolean] = js.undefined
-  /**
-    * The url to associate the cookie with.
-    */
-  var url: String
-  /**
-    * The value of the cookie. Empty by default if omitted.
-    */
-  var value: js.UndefOr[String] = js.undefined
+  var securityOrigin: String
 }
 
 object Details {
   @scala.inline
   def apply(
-    url: String,
-    domain: String = null,
-    expirationDate: Int | Double = null,
-    httpOnly: js.UndefOr[Boolean] = js.undefined,
-    name: String = null,
-    path: String = null,
-    secure: js.UndefOr[Boolean] = js.undefined,
-    value: String = null
+    isMainFrame: Boolean,
+    mediaType: video | audio | unknown_,
+    requestingUrl: String,
+    securityOrigin: String
   ): Details = {
-    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
-    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
-    if (expirationDate != null) __obj.updateDynamic("expirationDate")(expirationDate.asInstanceOf[js.Any])
-    if (!js.isUndefined(httpOnly)) __obj.updateDynamic("httpOnly")(httpOnly.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(isMainFrame = isMainFrame.asInstanceOf[js.Any], mediaType = mediaType.asInstanceOf[js.Any], requestingUrl = requestingUrl.asInstanceOf[js.Any], securityOrigin = securityOrigin.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Details]
   }
 }

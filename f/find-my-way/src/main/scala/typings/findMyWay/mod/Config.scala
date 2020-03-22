@@ -1,6 +1,6 @@
 package typings.findMyWay.mod
 
-import typings.findMyWay.AnonCtx
+import typings.findMyWay.AnonDeriveVersion
 import typings.node.http2Mod.Http2ServerRequest
 import typings.node.http2Mod.Http2ServerResponse
 import typings.node.httpMod.IncomingMessage
@@ -21,7 +21,7 @@ trait Config[V /* <: HTTPVersion */] extends js.Object {
   ] = js.undefined
   var ignoreTrailingSlash: js.UndefOr[Boolean] = js.undefined
   var maxParamLength: js.UndefOr[Double] = js.undefined
-  var versioning: js.UndefOr[AnonCtx[V]] = js.undefined
+  var versioning: js.UndefOr[AnonDeriveVersion[V]] = js.undefined
 }
 
 object Config {
@@ -32,7 +32,7 @@ object Config {
     defaultRoute: (/* req */ Http2ServerRequest | IncomingMessage, /* res */ Http2ServerResponse | ServerResponse) => Unit = null,
     ignoreTrailingSlash: js.UndefOr[Boolean] = js.undefined,
     maxParamLength: Int | Double = null,
-    versioning: AnonCtx[V] = null
+    versioning: AnonDeriveVersion[V] = null
   ): Config[V] = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(allowUnsafeRegex)) __obj.updateDynamic("allowUnsafeRegex")(allowUnsafeRegex.asInstanceOf[js.Any])

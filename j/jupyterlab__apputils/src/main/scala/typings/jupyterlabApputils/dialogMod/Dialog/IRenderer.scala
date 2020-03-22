@@ -1,6 +1,6 @@
 package typings.jupyterlabApputils.dialogMod.Dialog
 
-import typings.phosphorWidgets.mod.Widget
+import typings.luminoWidgets.mod.Widget
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

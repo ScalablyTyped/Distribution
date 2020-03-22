@@ -1,6 +1,6 @@
 package typings.reactInstantsearchDom.mod
 
-import typings.reactInstantsearchDom.AnonArgs
+import typings.reactInstantsearchDom.AnonProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,7 +25,7 @@ object UsingManualInfoProps {
     onSearchStateChange: /* repeated */ js.Any => _ = null,
     refresh: js.UndefOr[Boolean] = js.undefined,
     resultsState: js.Any = null,
-    root: AnonArgs = null,
+    root: AnonProps = null,
     searchState: js.Any = null,
     stalledSearchDelay: Int | Double = null
   ): UsingManualInfoProps = {

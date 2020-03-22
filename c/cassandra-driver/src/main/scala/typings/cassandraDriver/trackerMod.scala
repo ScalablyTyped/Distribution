@@ -49,7 +49,7 @@ object trackerMod extends js.Object {
       ): Unit = js.native
       def onError(
         host: Host,
-        query: js.Array[AnonParamsQueryAny],
+        query: js.Array[AnonParamsQuery],
         parameters: js.Array[_],
         executionOptions: ExecutionOptions,
         requestLength: Double,
@@ -58,7 +58,7 @@ object trackerMod extends js.Object {
       ): Unit = js.native
       def onError(
         host: Host,
-        query: js.Array[AnonParamsQueryAny],
+        query: js.Array[AnonParamsQuery],
         parameters: StringDictionary[js.Any],
         executionOptions: ExecutionOptions,
         requestLength: Double,
@@ -67,7 +67,7 @@ object trackerMod extends js.Object {
       ): Unit = js.native
       def onError(
         host: Host,
-        query: js.Array[AnonParamsQueryAny],
+        query: js.Array[AnonParamsQuery],
         parameters: Null,
         executionOptions: ExecutionOptions,
         requestLength: Double,
@@ -103,7 +103,7 @@ object trackerMod extends js.Object {
       ): Unit = js.native
       def onSuccess(
         host: Host,
-        query: js.Array[AnonParamsQueryAny],
+        query: js.Array[AnonParamsQuery],
         parameters: js.Array[_],
         executionOptions: ExecutionOptions,
         requestLength: Double,
@@ -112,7 +112,7 @@ object trackerMod extends js.Object {
       ): Unit = js.native
       def onSuccess(
         host: Host,
-        query: js.Array[AnonParamsQueryAny],
+        query: js.Array[AnonParamsQuery],
         parameters: StringDictionary[js.Any],
         executionOptions: ExecutionOptions,
         requestLength: Double,
@@ -121,7 +121,7 @@ object trackerMod extends js.Object {
       ): Unit = js.native
       def onSuccess(
         host: Host,
-        query: js.Array[AnonParamsQueryAny],
+        query: js.Array[AnonParamsQuery],
         parameters: Null,
         executionOptions: ExecutionOptions,
         requestLength: Double,

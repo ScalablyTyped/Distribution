@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait AnonConjugations extends js.Object {
-  var conjugations: js.UndefOr[js.Array[AnonTypeValue]] = js.native
+  var conjugations: js.UndefOr[js.Array[AnonValue]] = js.native
   var definitions: js.UndefOr[js.Array[AnonDefinition]] = js.native
   var partOfSpeech: js.UndefOr[String] = js.native
   var pronunciation: js.UndefOr[String] = js.native
@@ -19,7 +19,7 @@ trait AnonConjugations extends js.Object {
 object AnonConjugations {
   @scala.inline
   def apply(
-    conjugations: js.Array[AnonTypeValue] = null,
+    conjugations: js.Array[AnonValue] = null,
     definitions: js.Array[AnonDefinition] = null,
     partOfSpeech: String = null,
     pronunciation: String = null,

@@ -1,7 +1,7 @@
 
 # Scala.js typings for qunit-dom
 
-Typings are for version 0.9.2
+Typings are for version 1.0.0
 
 ## Library description:
 High Level DOM Assertions for QUnit

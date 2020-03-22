@@ -13,7 +13,8 @@ trait ColumnNameQueryBuilder[TRecord, TResult] extends js.Object {
   // we can extend our selection by these columns
   def apply(columnName: Asterisk): QueryBuilder[
     TRecord, 
-    js.Array[
+    ArrayIfAlready[
+      TResult, 
       DeferredKeySelection[TRecord, String, `false`, js.Object, `false`, js.Object, scala.Nothing]
     ]
   ] = js.native

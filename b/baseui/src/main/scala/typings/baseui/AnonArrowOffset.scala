@@ -19,23 +19,23 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonArrowOffset extends js.Object {
-  var arrowOffset: Anon0
+  var arrowOffset: AnonLeft
   var isAnimating: `false`
   var isLayerMounted: `false`
   var isMounted: `false`
   var placement: topLeft | leftBottom | topRight | rightBottom | bottomLeft | right | auto | bottomRight | leftTop | left | bottom | rightTop | top
-  var popoverOffset: Anon0
+  var popoverOffset: AnonLeft
 }
 
 object AnonArrowOffset {
   @scala.inline
   def apply(
-    arrowOffset: Anon0,
+    arrowOffset: AnonLeft,
     isAnimating: `false`,
     isLayerMounted: `false`,
     isMounted: `false`,
     placement: topLeft | leftBottom | topRight | rightBottom | bottomLeft | right | auto | bottomRight | leftTop | left | bottom | rightTop | top,
-    popoverOffset: Anon0
+    popoverOffset: AnonLeft
   ): AnonArrowOffset = {
     val __obj = js.Dynamic.literal(arrowOffset = arrowOffset.asInstanceOf[js.Any], isAnimating = isAnimating.asInstanceOf[js.Any], isLayerMounted = isLayerMounted.asInstanceOf[js.Any], isMounted = isMounted.asInstanceOf[js.Any], placement = placement.asInstanceOf[js.Any], popoverOffset = popoverOffset.asInstanceOf[js.Any])
   

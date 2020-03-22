@@ -18,10 +18,10 @@ object rcMentionsComponents extends rcMentionsProps {
   @scala.inline
   def Mentions: ComponentType[MentionsProps] = js.constructorOf[typings.rcMentions.mentionsMod.default].asInstanceOf[typings.react.mod.ComponentType[MentionsProps]]
   @scala.inline
-  def MentionsContextConsumer: ComponentType[MentionsContextConsumerProps[MentionsContextProps]] = js.constructorOf[typings.rcMentions.mentionsContextMod.MentionsContextConsumer].asInstanceOf[typings.react.mod.ComponentType[
+  def MentionsContextConsumer: ComponentType[MentionsContextConsumerProps[MentionsContextProps]] = typings.rcMentions.mentionsContextMod.MentionsContextConsumer.asInstanceOf[typings.react.mod.ComponentType[
   MentionsContextConsumerProps[typings.rcMentions.mentionsContextMod.MentionsContextProps]]]
   @scala.inline
-  def MentionsContextProvider: ComponentType[MentionsContextProviderProps[MentionsContextProps]] = js.constructorOf[typings.rcMentions.mentionsContextMod.MentionsContextProvider].asInstanceOf[typings.react.mod.ComponentType[
+  def MentionsContextProvider: ComponentType[MentionsContextProviderProps[MentionsContextProps]] = typings.rcMentions.mentionsContextMod.MentionsContextProvider.asInstanceOf[typings.react.mod.ComponentType[
   MentionsContextProviderProps[typings.rcMentions.mentionsContextMod.MentionsContextProps]]]
   @scala.inline
   def Option: ComponentType[OptionProps] = typings.rcMentions.optionMod.default.asInstanceOf[typings.react.mod.ComponentType[OptionProps]]

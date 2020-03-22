@@ -1,7 +1,7 @@
 package typings.vexflow.mod.Flow
 
 import typings.vexflow.AnonFirstnote
-import typings.vexflow.AnonHeightLeftshiftticks
+import typings.vexflow.AnonLeftshiftticks
 import typings.vexflow.Vex.Flow.Modifier.Position
 import typings.vexflow.Vex.Flow.StaveHairpin.`type`
 import typings.vexflow.Vex.IRenderContext
@@ -33,7 +33,7 @@ object StaveHairpin extends js.Object {
     notes: AnonFirstnote,
     `type`: `type`,
     position: Position,
-    options: AnonHeightLeftshiftticks
+    options: AnonLeftshiftticks
   ): Unit = js.native
 }
 

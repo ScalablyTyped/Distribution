@@ -1,12 +1,15 @@
 package typings.reactNativeZssRichTextEditor
 
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait reactNativeZssRichTextEditorProps {
-  type RichTextEditorProps[T] = Partial[T]
-  type RichTextToolbarProps[T] = Partial[T]
+  @scala.inline
+  def RichTextEditorProps: PartialRichTextEditorProp.type = typings.reactNativeZssRichTextEditor.PartialRichTextEditorProp
+  type RichTextEditorProps = PartialRichTextEditorProp
+  @scala.inline
+  def RichTextToolbarProps: PartialRichTextToolbarPro.type = typings.reactNativeZssRichTextEditor.PartialRichTextToolbarPro
+  type RichTextToolbarProps = PartialRichTextToolbarPro
 }
 

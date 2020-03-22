@@ -7,9 +7,6 @@ import scala.scalajs.js.annotation._
 
 object firebaseAppStrings {
   @js.native
-  sealed trait ErrorParams extends js.Object
-  
-  @js.native
   sealed trait `[DEFAULT]` extends js.Object
   
   @js.native
@@ -66,8 +63,6 @@ object firebaseAppStrings {
   @js.native
   sealed trait `no-app` extends AppError
   
-  @scala.inline
-  def ErrorParams: ErrorParams = "ErrorParams".asInstanceOf[ErrorParams]
   @scala.inline
   def `[DEFAULT]`: `[DEFAULT]` = "[DEFAULT]".asInstanceOf[`[DEFAULT]`]
   @scala.inline

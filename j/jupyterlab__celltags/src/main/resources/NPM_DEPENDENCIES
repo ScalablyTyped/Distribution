@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@jupyterlab/celltags" : "2.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@jupyterlab/celltags" : "2.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

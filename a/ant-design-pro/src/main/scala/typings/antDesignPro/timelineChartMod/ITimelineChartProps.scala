@@ -1,25 +1,25 @@
 package typings.antDesignPro.timelineChartMod
 
-import typings.antDesignPro.AnonXY1
 import typings.antDesignPro.AnonY1
+import typings.antDesignPro.AnonY2
 import typings.react.mod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ITimelineChartProps extends js.Object {
-  var data: js.Array[AnonXY1]
+  var data: js.Array[AnonY1]
   var height: js.UndefOr[Double] = js.undefined
   var padding: js.UndefOr[js.Tuple4[Double, Double, Double, Double]] = js.undefined
   var style: js.UndefOr[CSSProperties] = js.undefined
-  var titleMap: AnonY1
+  var titleMap: AnonY2
 }
 
 object ITimelineChartProps {
   @scala.inline
   def apply(
-    data: js.Array[AnonXY1],
-    titleMap: AnonY1,
+    data: js.Array[AnonY1],
+    titleMap: AnonY2,
     height: Int | Double = null,
     padding: js.Tuple4[Double, Double, Double, Double] = null,
     style: CSSProperties = null

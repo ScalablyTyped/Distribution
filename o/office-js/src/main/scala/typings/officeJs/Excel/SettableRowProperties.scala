@@ -1,6 +1,6 @@
 package typings.officeJs.Excel
 
-import typings.officeJs.AnonRowHeightNumber
+import typings.officeJs.CellPropertiesFormatrowHe
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +19,7 @@ trait SettableRowProperties extends SettableCellProperties {
     * [Api set: ExcelApi 1.9]
     */
   @JSName("format")
-  var format_SettableRowProperties: js.UndefOr[CellPropertiesFormat with AnonRowHeightNumber] = js.undefined
+  var format_SettableRowProperties: js.UndefOr[CellPropertiesFormatrowHe] = js.undefined
   /**
     *
     * Represents the `rowHidden` property.
@@ -32,7 +32,7 @@ trait SettableRowProperties extends SettableCellProperties {
 object SettableRowProperties {
   @scala.inline
   def apply(
-    format: CellPropertiesFormat with AnonRowHeightNumber = null,
+    format: CellPropertiesFormatrowHe = null,
     hyperlink: RangeHyperlink = null,
     rowHidden: js.UndefOr[Boolean] = js.undefined,
     style: String = null

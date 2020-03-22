@@ -14,6 +14,11 @@ trait IWebWorkerOptions extends js.Object {
     */
   var host: js.UndefOr[js.Any] = js.undefined
   /**
+    * Keep idle models.
+    * Defaults to false, which means that idle models will stop syncing after a while.
+    */
+  var keepIdleModels: js.UndefOr[Boolean] = js.undefined
+  /**
     * A label to be used to identify the web worker for debugging purposes.
     */
   var label: js.UndefOr[String] = js.undefined
@@ -26,10 +31,17 @@ trait IWebWorkerOptions extends js.Object {
 
 object IWebWorkerOptions {
   @scala.inline
-  def apply(moduleId: String, createData: js.Any = null, host: js.Any = null, label: String = null): IWebWorkerOptions = {
+  def apply(
+    moduleId: String,
+    createData: js.Any = null,
+    host: js.Any = null,
+    keepIdleModels: js.UndefOr[Boolean] = js.undefined,
+    label: String = null
+  ): IWebWorkerOptions = {
     val __obj = js.Dynamic.literal(moduleId = moduleId.asInstanceOf[js.Any])
     if (createData != null) __obj.updateDynamic("createData")(createData.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepIdleModels)) __obj.updateDynamic("keepIdleModels")(keepIdleModels.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWebWorkerOptions]
   }

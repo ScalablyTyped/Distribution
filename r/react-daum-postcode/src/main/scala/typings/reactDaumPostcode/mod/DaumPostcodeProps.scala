@@ -23,6 +23,7 @@ trait DaumPostcodeProps extends js.Object {
   var shorthand: js.UndefOr[Boolean] = js.undefined
   var showMoreHName: js.UndefOr[Boolean] = js.undefined
   var style: js.UndefOr[js.Object] = js.undefined
+  var submitMode: js.UndefOr[Boolean] = js.undefined
   var theme: js.UndefOr[js.Object] = js.undefined
   var useSuggest: js.UndefOr[Boolean] = js.undefined
   var width: js.UndefOr[Double | String] = js.undefined
@@ -51,6 +52,7 @@ object DaumPostcodeProps {
     shorthand: js.UndefOr[Boolean] = js.undefined,
     showMoreHName: js.UndefOr[Boolean] = js.undefined,
     style: js.Object = null,
+    submitMode: js.UndefOr[Boolean] = js.undefined,
     theme: js.Object = null,
     useSuggest: js.UndefOr[Boolean] = js.undefined,
     width: Double | String = null,
@@ -74,6 +76,7 @@ object DaumPostcodeProps {
     if (!js.isUndefined(shorthand)) __obj.updateDynamic("shorthand")(shorthand.asInstanceOf[js.Any])
     if (!js.isUndefined(showMoreHName)) __obj.updateDynamic("showMoreHName")(showMoreHName.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (!js.isUndefined(submitMode)) __obj.updateDynamic("submitMode")(submitMode.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (!js.isUndefined(useSuggest)) __obj.updateDynamic("useSuggest")(useSuggest.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])

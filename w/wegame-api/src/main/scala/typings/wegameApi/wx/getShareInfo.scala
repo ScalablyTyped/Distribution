@@ -1,6 +1,6 @@
 package typings.wegameApi.wx
 
-import typings.wegameApi.AnonCompleteFailResShareTicket
+import typings.wegameApi.AnonFailShareTicket
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,6 +12,6 @@ object getShareInfo extends js.Object {
   /**
     * 获取转发详细信息
     */
-  def apply(param: AnonCompleteFailResShareTicket): Unit = js.native
+  def apply(param: AnonFailShareTicket): Unit = js.native
 }
 

@@ -24,7 +24,7 @@ object mod extends js.Object {
     
     @js.native
     trait IHttpBuffer extends js.Object {
-      def append(config: IRequestConfig, deferred: AnonData): Unit = js.native
+      def append(config: IRequestConfig, deferred: AnonReject): Unit = js.native
       def rejectAll(): Unit = js.native
       def rejectAll(reason: js.Any): Unit = js.native
       def retryAll(): Unit = js.native

@@ -1,6 +1,6 @@
 package typings.reactTable.mod
 
-import typings.std.Partial
+import typings.reactTable.PartialTableToggleHideAll
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,7 +25,7 @@ trait UseTableInstanceProps[D /* <: js.Object */] extends js.Object {
   def getTableProps(): TableProps = js.native
   def getTableProps(propGetter: TablePropGetter[D]): TableProps = js.native
   def getToggleHideAllColumnsProps(): TableToggleHideAllColumnProps = js.native
-  def getToggleHideAllColumnsProps(props: Partial[TableToggleHideAllColumnProps]): TableToggleHideAllColumnProps = js.native
+  def getToggleHideAllColumnsProps(props: PartialTableToggleHideAll): TableToggleHideAllColumnProps = js.native
   def prepareRow(row: Row[D]): Unit = js.native
   def setHiddenColumns(param: js.Array[IdType[D]]): Unit = js.native
   def setHiddenColumns(param: UpdateHiddenColumns[D]): Unit = js.native

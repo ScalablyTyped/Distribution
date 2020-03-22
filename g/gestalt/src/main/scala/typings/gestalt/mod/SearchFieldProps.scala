@@ -1,6 +1,6 @@
 package typings.gestalt.mod
 
-import typings.gestalt.AnonEventHTMLInputElement
+import typings.gestalt.Anon0
 import typings.gestalt.AnonSyntheticEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait SearchFieldProps extends js.Object {
   var accessibilityLabel: String
   var id: String
-  var onBlur: js.UndefOr[js.Function1[/* args */ AnonEventHTMLInputElement, Unit]] = js.undefined
+  var onBlur: js.UndefOr[js.Function1[/* args */ Anon0, Unit]] = js.undefined
   var onFocus: js.UndefOr[js.Function1[/* args */ AnonSyntheticEvent, Unit]] = js.undefined
   var placeholder: js.UndefOr[String] = js.undefined
   var value: js.UndefOr[String] = js.undefined
@@ -22,7 +22,7 @@ object SearchFieldProps {
     accessibilityLabel: String,
     id: String,
     onChange: AnonSyntheticEvent => Unit,
-    onBlur: /* args */ AnonEventHTMLInputElement => Unit = null,
+    onBlur: /* args */ Anon0 => Unit = null,
     onFocus: /* args */ AnonSyntheticEvent => Unit = null,
     placeholder: String = null,
     value: String = null

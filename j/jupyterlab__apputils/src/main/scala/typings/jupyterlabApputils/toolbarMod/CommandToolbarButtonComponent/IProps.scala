@@ -1,7 +1,7 @@
 package typings.jupyterlabApputils.toolbarMod.CommandToolbarButtonComponent
 
-import typings.phosphorCommands.mod.CommandRegistry
-import typings.phosphorCoreutils.jsonMod.ReadonlyJSONObject
+import typings.luminoCommands.mod.CommandRegistry
+import typings.luminoCoreutils.jsonMod.ReadonlyJSONObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

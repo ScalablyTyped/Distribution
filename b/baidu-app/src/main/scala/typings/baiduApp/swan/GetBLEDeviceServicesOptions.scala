@@ -1,6 +1,6 @@
 package typings.baiduApp.swan
 
-import typings.baiduApp.AnonServices
+import typings.baiduApp.servicesArrayuuidstringis
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,14 +15,14 @@ trait GetBLEDeviceServicesOptions
   		 * 成功则返回本机蓝牙适配器状态
   		 */
   @JSName("success")
-  def success_MGetBLEDeviceServicesOptions(res: AnonServices with ErrMsgResponse): Unit
+  def success_MGetBLEDeviceServicesOptions(res: servicesArrayuuidstringis): Unit
 }
 
 object GetBLEDeviceServicesOptions {
   @scala.inline
   def apply(
     deviceId: String,
-    success: AnonServices with ErrMsgResponse => Unit,
+    success: servicesArrayuuidstringis => Unit,
     complete: /* res */ js.Any => Unit = null,
     fail: js.Any => Unit = null
   ): GetBLEDeviceServicesOptions = {

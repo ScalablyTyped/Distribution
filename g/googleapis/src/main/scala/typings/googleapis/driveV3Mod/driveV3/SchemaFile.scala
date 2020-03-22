@@ -1,8 +1,8 @@
 package typings.googleapis.driveV3Mod.driveV3
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.googleapis.AnonApertureCameraMake
-import typings.googleapis.AnonCanAddChildrenCanChangeCopyRequiresWriterPermission
+import typings.googleapis.AnonCameraMake
+import typings.googleapis.AnonCanChangeCopyRequiresWriterPermission
 import typings.googleapis.AnonDurationMillis
 import typings.googleapis.AnonIndexableText
 import scala.scalajs.js
@@ -24,7 +24,7 @@ trait SchemaFile extends js.Object {
     * Capabilities the current user has on this file. Each capability
     * corresponds to a fine-grained action that a user may take.
     */
-  var capabilities: js.UndefOr[AnonCanAddChildrenCanChangeCopyRequiresWriterPermission] = js.native
+  var capabilities: js.UndefOr[AnonCanChangeCopyRequiresWriterPermission] = js.native
   /**
     * Additional information about the content of the file. These fields are
     * never populated in responses.
@@ -99,7 +99,7 @@ trait SchemaFile extends js.Object {
   /**
     * Additional metadata about image media, if available.
     */
-  var imageMediaMetadata: js.UndefOr[AnonApertureCameraMake] = js.native
+  var imageMediaMetadata: js.UndefOr[AnonCameraMake] = js.native
   /**
     * Whether the file was created or opened by the requesting app.
     */
@@ -291,7 +291,7 @@ object SchemaFile {
   @scala.inline
   def apply(
     appProperties: StringDictionary[String] = null,
-    capabilities: AnonCanAddChildrenCanChangeCopyRequiresWriterPermission = null,
+    capabilities: AnonCanChangeCopyRequiresWriterPermission = null,
     contentHints: AnonIndexableText = null,
     copyRequiresWriterPermission: js.UndefOr[Boolean] = js.undefined,
     createdTime: String = null,
@@ -306,7 +306,7 @@ object SchemaFile {
     headRevisionId: String = null,
     iconLink: String = null,
     id: String = null,
-    imageMediaMetadata: AnonApertureCameraMake = null,
+    imageMediaMetadata: AnonCameraMake = null,
     isAppAuthorized: js.UndefOr[Boolean] = js.undefined,
     kind: String = null,
     lastModifyingUser: SchemaUser = null,

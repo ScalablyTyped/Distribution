@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-crypto__sha256-universal
 
-Typings are for version 0.1.0-preview.1
+Typings are for version 0.1.0-preview.4
 
 ## Library description:
 A consistent interface for SHA256 across browsers and NodeJs

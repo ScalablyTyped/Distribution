@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object groupIssueBoardsMod extends js.Object {
   @js.native
-  class GroupIssueBoards () extends ResourceIssueBoards {
+  class GroupIssueBoards protected () extends ResourceIssueBoards {
     def this(options: BaseServiceOptions) = this()
   }
   

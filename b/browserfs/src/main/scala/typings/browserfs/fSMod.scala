@@ -58,8 +58,8 @@ object fSMod extends js.Object {
     def appendFile(filename: String, data: js.Any, cb: BFSOneArgCallback): Unit = js.native
     def appendFile(filename: String, data: js.Any, encoding: String): Unit = js.native
     def appendFile(filename: String, data: js.Any, encoding: String, cb: BFSOneArgCallback): Unit = js.native
-    def appendFile(filename: String, data: js.Any, options: AnonEncodingFlagMode): Unit = js.native
-    def appendFile(filename: String, data: js.Any, options: AnonEncodingFlagMode, cb: BFSOneArgCallback): Unit = js.native
+    def appendFile(filename: String, data: js.Any, options: AnonEncodingFlag): Unit = js.native
+    def appendFile(filename: String, data: js.Any, options: AnonEncodingFlag, cb: BFSOneArgCallback): Unit = js.native
     /**
       * Asynchronously append data to a file, creating the file if it not yet
       * exists.
@@ -78,7 +78,7 @@ object fSMod extends js.Object {
       */
     def appendFileSync(filename: String, data: js.Any): Unit = js.native
     def appendFileSync(filename: String, data: js.Any, encoding: String): Unit = js.native
-    def appendFileSync(filename: String, data: js.Any, options: AnonEncodingFlagMode): Unit = js.native
+    def appendFileSync(filename: String, data: js.Any, options: AnonEncodingFlag): Unit = js.native
     def chmod(path: String, mode: String): Unit = js.native
     def chmod(path: String, mode: String, cb: BFSOneArgCallback): Unit = js.native
     /**
@@ -128,7 +128,7 @@ object fSMod extends js.Object {
     def createReadStream(path: String): ReadStream = js.native
     def createReadStream(path: String, options: AnonAutoClose): ReadStream = js.native
     def createWriteStream(path: String): WriteStream = js.native
-    def createWriteStream(path: String, options: AnonEncodingFd): WriteStream = js.native
+    def createWriteStream(path: String, options: AnonFd): WriteStream = js.native
     /**
       * Test whether or not the given path exists by checking with the file system.
       * Then call the callback argument with either true or false.
@@ -778,8 +778,8 @@ object fSMod extends js.Object {
     def writeFile(filename: String, data: js.Any, cb: BFSOneArgCallback): Unit = js.native
     def writeFile(filename: String, data: js.Any, encoding: String): Unit = js.native
     def writeFile(filename: String, data: js.Any, encoding: String, cb: BFSOneArgCallback): Unit = js.native
-    def writeFile(filename: String, data: js.Any, options: AnonEncodingFlag): Unit = js.native
-    def writeFile(filename: String, data: js.Any, options: AnonEncodingFlag, cb: BFSOneArgCallback): Unit = js.native
+    def writeFile(filename: String, data: js.Any, options: AnonMode): Unit = js.native
+    def writeFile(filename: String, data: js.Any, options: AnonMode, cb: BFSOneArgCallback): Unit = js.native
     /**
       * Synchronously writes data to a file, replacing the file if it already
       * exists.
@@ -794,7 +794,7 @@ object fSMod extends js.Object {
       */
     def writeFileSync(filename: String, data: js.Any): Unit = js.native
     def writeFileSync(filename: String, data: js.Any, encoding: String): Unit = js.native
-    def writeFileSync(filename: String, data: js.Any, options: AnonEncodingFlagMode): Unit = js.native
+    def writeFileSync(filename: String, data: js.Any, options: AnonEncodingFlag): Unit = js.native
     /**
       * Write buffer to the file specified by `fd`.
       * Note that it is unsafe to use fs.write multiple times on the same file
@@ -821,7 +821,7 @@ object fSMod extends js.Object {
     /**
       * The FS constructor.
       */
-    var FS: TypeofClassFS = js.native
+    var FS: TypeofFS = js.native
     /**
       * Set the FS object backing the fs module.
       */
@@ -838,7 +838,7 @@ object fSMod extends js.Object {
   /* static members */
   @js.native
   object default extends js.Object {
-    var Stats: TypeofClassStats = js.native
+    var Stats: TypeofStats = js.native
   }
   
 }

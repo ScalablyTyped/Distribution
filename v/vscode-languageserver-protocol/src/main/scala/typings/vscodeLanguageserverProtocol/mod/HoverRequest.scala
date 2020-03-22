@@ -1,7 +1,9 @@
 package typings.vscodeLanguageserverProtocol.mod
 
-import typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentPositionParams
-import typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions
+import typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType
+import typings.vscodeLanguageserverProtocol.protocolMod.HoverParams
+import typings.vscodeLanguageserverProtocol.protocolMod.HoverRegistrationOptions
+import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.textDocumentSlashhover
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,11 +11,13 @@ import scala.scalajs.js.annotation._
 @JSImport("vscode-languageserver-protocol", "HoverRequest")
 @js.native
 object HoverRequest extends js.Object {
-  val `type`: typings.vscodeJsonrpc.mod.RequestType[
-    TextDocumentPositionParams, 
+  val method: textDocumentSlashhover = js.native
+  val `type`: ProtocolRequestType[
+    HoverParams, 
     typings.vscodeLanguageserverTypes.mod.Hover | Null, 
+    scala.Nothing, 
     Unit, 
-    TextDocumentRegistrationOptions
+    HoverRegistrationOptions
   ] = js.native
 }
 

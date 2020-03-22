@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
   - typings.angularCompiler.AnonTagName
-  - typings.angularCompiler.AnonTagNameText
+  - typings.angularCompiler.AnonText
 */
 trait JSDocTag extends js.Object
 
@@ -18,7 +18,7 @@ object JSDocTag {
     __obj.asInstanceOf[JSDocTag]
   }
   @scala.inline
-  def AnonTagNameText(text: String, tagName: js.UndefOr[scala.Nothing] = js.undefined): JSDocTag = {
+  def AnonText(text: String, tagName: js.UndefOr[scala.Nothing] = js.undefined): JSDocTag = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
     if (!js.isUndefined(tagName)) __obj.updateDynamic("tagName")(tagName.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSDocTag]

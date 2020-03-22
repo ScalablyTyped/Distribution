@@ -29,7 +29,7 @@ object reactOnsenuiComponents extends reactOnsenuiProps {
   @scala.inline
   def Col: ComponentType[ColProps] = js.constructorOf[typings.reactOnsenui.mod.Col].asInstanceOf[typings.react.mod.ComponentType[ColProps]]
   @scala.inline
-  def Component[P, S]: ComponentType[HTMLAttributesidclassNamestyle with P] = js.constructorOf[typings.reactOnsenui.mod.Component[P, S]].asInstanceOf[typings.react.mod.ComponentType[typings.reactOnsenui.HTMLAttributesidclassNamestyle with P]]
+  def Component[P, S]: ComponentType[HTMLAttributesidclassName with P] = js.constructorOf[typings.reactOnsenui.mod.Component[P, S]].asInstanceOf[typings.react.mod.ComponentType[typings.reactOnsenui.HTMLAttributesidclassName with P]]
   @scala.inline
   def Dialog: ComponentType[DialogProps] = js.constructorOf[typings.reactOnsenui.mod.Dialog].asInstanceOf[typings.react.mod.ComponentType[DialogProps]]
   @scala.inline

@@ -16,7 +16,7 @@ trait HumanLoopConfig extends js.Object {
     */
   var TaskAvailabilityLifetimeInSeconds: js.UndefOr[FlowDefinitionTaskAvailabilityLifetimeInSeconds] = js.native
   /**
-    * The number of human tasks.
+    * The number of distinct workers who will perform the same task on each object. For example, if TaskCount is set to 3 for an image classification labeling job, three workers will classify each input image. Increasing TaskCount can improve label accuracy.
     */
   var TaskCount: FlowDefinitionTaskCount = js.native
   /**

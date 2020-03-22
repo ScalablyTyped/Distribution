@@ -1,7 +1,7 @@
 package typings.antDesignReactNative.localeProviderMod
 
 import typings.antDesignReactNative.AnonAntLocale
-import typings.antDesignReactNative.AnonLocale
+import typings.antDesignReactNative.AnonLocaleRequireable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,6 +15,6 @@ class default () extends LocaleProvider
 @js.native
 object default extends js.Object {
   var childContextTypes: AnonAntLocale = js.native
-  var propTypes: AnonLocale = js.native
+  var propTypes: AnonLocaleRequireable = js.native
 }
 

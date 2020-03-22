@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait UpdateRelationalDatabaseParametersResult extends js.Object {
   /**
-    * An object describing the result of your update relational database parameters request.
+    * An array of objects that describe the result of the action, such as the status of the request, the time stamp of the request, and the resources affected by the request.
     */
   var operations: js.UndefOr[OperationList] = js.native
 }

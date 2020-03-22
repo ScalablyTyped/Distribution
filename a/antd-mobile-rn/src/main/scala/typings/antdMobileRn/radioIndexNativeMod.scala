@@ -18,7 +18,7 @@ object radioIndexNativeMod extends js.Object {
   @js.native
   object default extends js.Object {
     var RadioItem: js.Any = js.native
-    var defaultProps: AnonStylesX = js.native
+    var defaultProps: Anon0 = js.native
   }
   
 }

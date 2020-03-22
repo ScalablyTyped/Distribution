@@ -2,7 +2,7 @@ package typings.vis.mod
 
 import typings.vis.AnonAlign
 import typings.vis.AnonColor
-import typings.vis.AnonEnabledForceDirection
+import typings.vis.AnonForceDirection
 import typings.vis.AnonFrom
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -26,7 +26,7 @@ trait EdgeOptions extends js.Object {
    // please note, selectionWidth could be also a function. This case is not represented here
   var selfReferenceSize: js.UndefOr[Double] = js.undefined
   var shadow: js.UndefOr[Boolean | OptionsShadow] = js.undefined
-  var smooth: js.UndefOr[Boolean | AnonEnabledForceDirection] = js.undefined
+  var smooth: js.UndefOr[Boolean | AnonForceDirection] = js.undefined
   var title: js.UndefOr[String] = js.undefined
   var value: js.UndefOr[Double] = js.undefined
   var width: js.UndefOr[Double] = js.undefined
@@ -50,7 +50,7 @@ object EdgeOptions {
     selectionWidth: Int | Double = null,
     selfReferenceSize: Int | Double = null,
     shadow: Boolean | OptionsShadow = null,
-    smooth: Boolean | AnonEnabledForceDirection = null,
+    smooth: Boolean | AnonForceDirection = null,
     title: String = null,
     value: Int | Double = null,
     width: Int | Double = null

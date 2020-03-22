@@ -1,8 +1,5 @@
 package typings.vscodeLanguageserverProtocol.protocolMod
 
-import typings.vscodeLanguageserverProtocol.AnonDocumentChanges
-import typings.vscodeLanguageserverProtocol.AnonDynamicRegistration
-import typings.vscodeLanguageserverProtocol.AnonDynamicRegistrationSymbolKind
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,34 +14,34 @@ trait WorkspaceClientCapabilities extends js.Object {
   /**
     * Capabilities specific to the `workspace/didChangeConfiguration` notification.
     */
-  var didChangeConfiguration: js.UndefOr[AnonDynamicRegistration] = js.undefined
+  var didChangeConfiguration: js.UndefOr[DidChangeConfigurationClientCapabilities] = js.undefined
   /**
     * Capabilities specific to the `workspace/didChangeWatchedFiles` notification.
     */
-  var didChangeWatchedFiles: js.UndefOr[AnonDynamicRegistration] = js.undefined
+  var didChangeWatchedFiles: js.UndefOr[DidChangeWatchedFilesClientCapabilities] = js.undefined
   /**
     * Capabilities specific to the `workspace/executeCommand` request.
     */
-  var executeCommand: js.UndefOr[AnonDynamicRegistration] = js.undefined
+  var executeCommand: js.UndefOr[ExecuteCommandClientCapabilities] = js.undefined
   /**
     * Capabilities specific to the `workspace/symbol` request.
     */
-  var symbol: js.UndefOr[AnonDynamicRegistrationSymbolKind] = js.undefined
+  var symbol: js.UndefOr[WorkspaceSymbolClientCapabilities] = js.undefined
   /**
     * Capabilities specific to `WorkspaceEdit`s
     */
-  var workspaceEdit: js.UndefOr[AnonDocumentChanges] = js.undefined
+  var workspaceEdit: js.UndefOr[WorkspaceEditClientCapabilities] = js.undefined
 }
 
 object WorkspaceClientCapabilities {
   @scala.inline
   def apply(
     applyEdit: js.UndefOr[Boolean] = js.undefined,
-    didChangeConfiguration: AnonDynamicRegistration = null,
-    didChangeWatchedFiles: AnonDynamicRegistration = null,
-    executeCommand: AnonDynamicRegistration = null,
-    symbol: AnonDynamicRegistrationSymbolKind = null,
-    workspaceEdit: AnonDocumentChanges = null
+    didChangeConfiguration: DidChangeConfigurationClientCapabilities = null,
+    didChangeWatchedFiles: DidChangeWatchedFilesClientCapabilities = null,
+    executeCommand: ExecuteCommandClientCapabilities = null,
+    symbol: WorkspaceSymbolClientCapabilities = null,
+    workspaceEdit: WorkspaceEditClientCapabilities = null
   ): WorkspaceClientCapabilities = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(applyEdit)) __obj.updateDynamic("applyEdit")(applyEdit.asInstanceOf[js.Any])

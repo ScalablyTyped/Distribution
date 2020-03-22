@@ -1,6 +1,6 @@
 package typings.wegameApi.wx
 
-import typings.wegameApi.AnonCompleteFailKVDataList
+import typings.wegameApi.AnonCompleteFail
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,6 +15,6 @@ object setUserCloudStorage extends js.Object {
     *      > 上报的key-value列表当中每一项的key+value长度都不能超过1K(1024)字节。
     *      > 上报的key-value列表当中每一个key长度都不能超过128字节。
     */
-  def apply(param: AnonCompleteFailKVDataList): Unit = js.native
+  def apply(param: AnonCompleteFail): Unit = js.native
 }
 

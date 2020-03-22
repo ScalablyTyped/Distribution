@@ -1,6 +1,6 @@
 package typings.vorpal.mod
 
-import typings.vorpal.AnonClear
+import typings.vorpal.AnonCall
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class UI () extends js.Object {
   @JSName("redraw")
-  var redraw_Original: AnonClear = js.native
+  var redraw_Original: AnonCall = js.native
   def cancel(): Unit = js.native
   def delimiter(): String = js.native
   def delimiter(text: String): String = js.native

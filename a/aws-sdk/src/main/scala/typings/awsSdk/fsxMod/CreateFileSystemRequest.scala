@@ -11,7 +11,7 @@ trait CreateFileSystemRequest extends js.Object {
     */
   var ClientRequestToken: js.UndefOr[typings.awsSdk.fsxMod.ClientRequestToken] = js.native
   /**
-    * The type of Amazon FSx file system to create.
+    * The type of Amazon FSx file system to create, either WINDOWS or LUSTRE.
     */
   var FileSystemType: typings.awsSdk.fsxMod.FileSystemType = js.native
   var KmsKeyId: js.UndefOr[typings.awsSdk.fsxMod.KmsKeyId] = js.native
@@ -21,11 +21,11 @@ trait CreateFileSystemRequest extends js.Object {
     */
   var SecurityGroupIds: js.UndefOr[typings.awsSdk.fsxMod.SecurityGroupIds] = js.native
   /**
-    * The storage capacity of the file system being created. For Windows file systems, valid values are 32 GiB - 65,536 GiB. For Lustre file systems, valid values are 1,200, 2,400, 3,600, then continuing in increments of 3600 GiB.
+    * The storage capacity of the file system being created. For Windows file systems, valid values are 32 GiB - 65,536 GiB. For SCRATCH_1 Lustre file systems, valid values are 1,200, 2,400, 3,600, then continuing in increments of 3600 GiB. For SCRATCH_2 and PERSISTENT_1 file systems, valid values are 1200, 2400, then continuing in increments of 2400 GiB.
     */
   var StorageCapacity: typings.awsSdk.fsxMod.StorageCapacity = js.native
   /**
-    * Specifies the IDs of the subnets that the file system will be accessible from. For Windows MULTI_AZ_1 file system deployment types, provide exactly two subnet IDs, one for the preferred file server and one for the standy file server. You specify one of these subnets as the preferred subnet using the WindowsConfiguration &gt; PreferredSubnetID property. For Windows SINGLE_AZ_1 file system deployment types and Lustre file systems, provide exactly one subnet ID. The file server is launched in that subnet's Availability Zone.
+    * Specifies the IDs of the subnets that the file system will be accessible from. For Windows MULTI_AZ_1 file system deployment types, provide exactly two subnet IDs, one for the preferred file server and one for the standby file server. You specify one of these subnets as the preferred subnet using the WindowsConfiguration &gt; PreferredSubnetID property. For Windows SINGLE_AZ_1 file system deployment types and Lustre file systems, provide exactly one subnet ID. The file server is launched in that subnet's Availability Zone.
     */
   var SubnetIds: typings.awsSdk.fsxMod.SubnetIds = js.native
   /**

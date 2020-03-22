@@ -109,7 +109,7 @@ object mod extends js.Object {
       * grab all cookies matching this access_info
       * @param accessInfo CookieAccessInfo
       */
-    def getCookies(accessInfo: CookieAccessInfo): js.Array[Cookie] with AnonToValueString = js.native
+    def getCookies(accessInfo: CookieAccessInfo): ReadonlyArrayCookietoValu = js.native
     /**
       * modify (or add if not already-existing) a cookie to the jar
       * @param cookie string | Cookie

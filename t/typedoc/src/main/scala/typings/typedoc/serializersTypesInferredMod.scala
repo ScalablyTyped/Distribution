@@ -10,7 +10,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object serializersTypesInferredMod extends js.Object {
   @js.native
-  class InferredTypeSerializer () extends TypeSerializerComponent[InferredType]
+  class InferredTypeSerializer () extends TypeSerializerComponent[InferredType] {
+    def toObject(inferred: InferredType, obj: TypePickInferredTypetype): typings.typedoc.schemaMod.InferredType = js.native
+  }
   
 }
 

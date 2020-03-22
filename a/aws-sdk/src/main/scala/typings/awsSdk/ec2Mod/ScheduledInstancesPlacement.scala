@@ -13,12 +13,12 @@ trait ScheduledInstancesPlacement extends js.Object {
   /**
     * The name of the placement group.
     */
-  var GroupName: js.UndefOr[String] = js.native
+  var GroupName: js.UndefOr[PlacementGroupName] = js.native
 }
 
 object ScheduledInstancesPlacement {
   @scala.inline
-  def apply(AvailabilityZone: String = null, GroupName: String = null): ScheduledInstancesPlacement = {
+  def apply(AvailabilityZone: String = null, GroupName: PlacementGroupName = null): ScheduledInstancesPlacement = {
     val __obj = js.Dynamic.literal()
     if (AvailabilityZone != null) __obj.updateDynamic("AvailabilityZone")(AvailabilityZone.asInstanceOf[js.Any])
     if (GroupName != null) __obj.updateDynamic("GroupName")(GroupName.asInstanceOf[js.Any])

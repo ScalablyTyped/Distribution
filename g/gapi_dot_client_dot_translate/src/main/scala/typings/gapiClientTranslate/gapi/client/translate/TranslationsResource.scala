@@ -1,8 +1,8 @@
 package typings.gapiClientTranslate.gapi.client.translate
 
 import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientTranslate.AnonAccesstokenAlt
-import typings.gapiClientTranslate.AnonAccesstokenAltBearertoken
+import typings.gapiClientTranslate.AnonAlt
+import typings.gapiClientTranslate.AnonBearertoken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,16 +24,16 @@ trait TranslationsResource extends js.Object {
   /** Text translated into the target language. */
   var translatedText: js.UndefOr[String] = js.undefined
   /** Translates input text, returning translated text. */
-  def list(request: AnonAccesstokenAlt): Request_[TranslationsListResponse]
+  def list(request: AnonAlt): Request_[TranslationsListResponse]
   /** Translates input text, returning translated text. */
-  def translate(request: AnonAccesstokenAltBearertoken): Request_[TranslationsListResponse]
+  def translate(request: AnonBearertoken): Request_[TranslationsListResponse]
 }
 
 object TranslationsResource {
   @scala.inline
   def apply(
-    list: AnonAccesstokenAlt => Request_[TranslationsListResponse],
-    translate: AnonAccesstokenAltBearertoken => Request_[TranslationsListResponse],
+    list: AnonAlt => Request_[TranslationsListResponse],
+    translate: AnonBearertoken => Request_[TranslationsListResponse],
     detectedSourceLanguage: String = null,
     model: String = null,
     translatedText: String = null

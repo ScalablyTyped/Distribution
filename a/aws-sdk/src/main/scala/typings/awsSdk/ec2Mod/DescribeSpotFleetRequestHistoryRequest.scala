@@ -25,7 +25,7 @@ trait DescribeSpotFleetRequestHistoryRequest extends js.Object {
   /**
     * The ID of the Spot Fleet request.
     */
-  var SpotFleetRequestId: String = js.native
+  var SpotFleetRequestId: typings.awsSdk.ec2Mod.SpotFleetRequestId = js.native
   /**
     * The starting date and time for the events, in UTC format (for example, YYYY-MM-DDTHH:MM:SSZ).
     */
@@ -35,7 +35,7 @@ trait DescribeSpotFleetRequestHistoryRequest extends js.Object {
 object DescribeSpotFleetRequestHistoryRequest {
   @scala.inline
   def apply(
-    SpotFleetRequestId: String,
+    SpotFleetRequestId: SpotFleetRequestId,
     StartTime: DateTime,
     DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     EventType: EventType = null,

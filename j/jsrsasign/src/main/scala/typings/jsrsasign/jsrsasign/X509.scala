@@ -1,10 +1,10 @@
 package typings.jsrsasign.jsrsasign
 
+import typings.jsrsasign.AnonCA_
 import typings.jsrsasign.AnonCaissuer
 import typings.jsrsasign.AnonCps
-import typings.jsrsasign.AnonCriticalOid
 import typings.jsrsasign.AnonKid
-import typings.jsrsasign.Anon_CA
+import typings.jsrsasign.AnonVidx
 import typings.jsrsasign.jsrsasign.KJUR.crypto.DSA
 import typings.jsrsasign.jsrsasign.KJUR.crypto.ECDSA
 import scala.scalajs.js
@@ -72,7 +72,7 @@ class X509 () extends js.Object {
     * x.readCertPEM(sCertPEM); // parseExt() will also be called internally.
     * x.getExtBasicConstraints() → { cA: true, pathLen: 3 };
     */
-  def getExtBasicConstraints(): Anon_CA = js.native
+  def getExtBasicConstraints(): AnonCA_ = js.native
   /**
     * get array of string for fullName URIs in cRLDistributionPoints(CDP) in the certificate
     * @return array of fullName URIs of CDP of the certificate
@@ -416,7 +416,7 @@ class X509 () extends js.Object {
     * x.aExtInfo →
     * [ { oid: "2.5.29,19", critical: true, vidx: 2504 }, ... ]
     */
-  def parseExt(params: AnonCriticalOid): Unit = js.native
+  def parseExt(params: AnonVidx): Unit = js.native
   /**
     * read a hexadecimal string of X.509 certificate
     * @param sCertHex hexadecimal string of X.509 certificate

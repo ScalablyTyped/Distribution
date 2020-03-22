@@ -1,6 +1,6 @@
 package typings.jsrsasign.jsrsasign.KJUR.jws.JWS
 
-import typings.jsrsasign.AnonAlgString1998155737
+import typings.jsrsasign.Anon0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -69,13 +69,13 @@ object sign extends js.Object {
     * // header and payload can be passed by both string and object
     * sJWS = KJUR.jws.JWS.sign(null, '{alg:"HS256",cty:"JWT"}', '{age:21}', "aaa");
     */
-  def apply(alg: String, spHead: AnonAlgString1998155737, spPayload: String): String = js.native
-  def apply(alg: String, spHead: AnonAlgString1998155737, spPayload: String, pass: String): String = js.native
-  def apply(alg: String, spHead: AnonAlgString1998155737, spPayload: js.Object): String = js.native
-  def apply(alg: String, spHead: AnonAlgString1998155737, spPayload: js.Object, pass: String): String = js.native
-  def apply(alg: Null, spHead: AnonAlgString1998155737, spPayload: String): String = js.native
-  def apply(alg: Null, spHead: AnonAlgString1998155737, spPayload: String, pass: String): String = js.native
-  def apply(alg: Null, spHead: AnonAlgString1998155737, spPayload: js.Object): String = js.native
-  def apply(alg: Null, spHead: AnonAlgString1998155737, spPayload: js.Object, pass: String): String = js.native
+  def apply(alg: String, spHead: Anon0, spPayload: String): String = js.native
+  def apply(alg: String, spHead: Anon0, spPayload: String, pass: String): String = js.native
+  def apply(alg: String, spHead: Anon0, spPayload: js.Object): String = js.native
+  def apply(alg: String, spHead: Anon0, spPayload: js.Object, pass: String): String = js.native
+  def apply(alg: Null, spHead: Anon0, spPayload: String): String = js.native
+  def apply(alg: Null, spHead: Anon0, spPayload: String, pass: String): String = js.native
+  def apply(alg: Null, spHead: Anon0, spPayload: js.Object): String = js.native
+  def apply(alg: Null, spHead: Anon0, spPayload: js.Object, pass: String): String = js.native
 }
 

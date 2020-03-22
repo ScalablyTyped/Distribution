@@ -4,8 +4,8 @@ import typings.gapi.gapi.client.HttpRequest
 import typings.gapiYoutube.AnonAutoLevels
 import typings.gapiYoutube.AnonChart
 import typings.gapiYoutube.AnonIdOnBehalfOfContentOwner
-import typings.gapiYoutube.AnonIdOnBehalfOfContentOwnerRating
-import typings.gapiYoutube.AnonOnBehalfOfContentOwnerPart
+import typings.gapiYoutube.AnonRating
+import typings.gapiYoutube.AnonRequestBody
 import typings.gapiYoutube.GoogleApiYouTubePaginationInfo
 import typings.gapiYoutube.GoogleApiYouTubeVideoGetRatingResponse
 import typings.gapiYoutube.GoogleApiYouTubeVideoResource
@@ -33,11 +33,11 @@ trait videos extends js.Object {
   /**
     * Like, dislike, or remove rating from a video.
     */
-  def rate(`object`: AnonIdOnBehalfOfContentOwnerRating): HttpRequest[_]
+  def rate(`object`: AnonRating): HttpRequest[_]
   /**
     * Updates a video's metadata.
     */
-  def update(`object`: AnonOnBehalfOfContentOwnerPart): HttpRequest[GoogleApiYouTubeVideoResource]
+  def update(`object`: AnonRequestBody): HttpRequest[GoogleApiYouTubeVideoResource]
 }
 
 object videos {
@@ -47,8 +47,8 @@ object videos {
     getRating: AnonIdOnBehalfOfContentOwner => HttpRequest[GoogleApiYouTubeVideoGetRatingResponse],
     insert: AnonAutoLevels => HttpRequest[GoogleApiYouTubeVideoResource],
     list: AnonChart => HttpRequest[GoogleApiYouTubePaginationInfo[GoogleApiYouTubeVideoResource]],
-    rate: AnonIdOnBehalfOfContentOwnerRating => HttpRequest[_],
-    update: AnonOnBehalfOfContentOwnerPart => HttpRequest[GoogleApiYouTubeVideoResource]
+    rate: AnonRating => HttpRequest[_],
+    update: AnonRequestBody => HttpRequest[GoogleApiYouTubeVideoResource]
   ): videos = {
     val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), getRating = js.Any.fromFunction1(getRating), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), rate = js.Any.fromFunction1(rate), update = js.Any.fromFunction1(update))
   

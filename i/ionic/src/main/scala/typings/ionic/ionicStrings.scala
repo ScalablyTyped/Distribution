@@ -72,9 +72,6 @@ object ionicStrings {
   sealed trait LOCAL_CLI_NOT_FOUND extends js.Object
   
   @js.native
-  sealed trait OAuthIdentity extends js.Object
-  
-  @js.native
   sealed trait OPTIONS extends HttpMethod
   
   @js.native
@@ -217,9 +214,6 @@ object ionicStrings {
   sealed trait global extends js.Object
   
   @js.native
-  sealed trait guard extends js.Object
-  
-  @js.native
   sealed trait httpsColonSlashSlashd2ql0qc7j8u4b2DotcloudfrontDotnet extends js.Object
   
   @js.native
@@ -289,13 +283,7 @@ object ionicStrings {
   sealed trait managed extends js.Object
   
   @js.native
-  sealed trait max extends js.Object
-  
-  @js.native
   sealed trait multiapp extends js.Object
-  
-  @js.native
-  sealed trait name extends js.Object
   
   @js.native
   sealed trait ng extends js.Object
@@ -308,9 +296,6 @@ object ionicStrings {
   
   @js.native
   sealed trait `npm-installed-locally` extends js.Object
-  
-  @js.native
-  sealed trait org extends js.Object
   
   @js.native
   sealed trait portrait extends js.Object
@@ -337,9 +322,6 @@ object ionicStrings {
   sealed trait repo extends js.Object
   
   @js.native
-  sealed trait reqgen extends js.Object
-  
-  @js.native
   sealed trait run extends PkgManagerCommand
   
   @js.native
@@ -356,9 +338,6 @@ object ionicStrings {
   
   @js.native
   sealed trait `ssl-commands` extends js.Object
-  
-  @js.native
-  sealed trait state extends js.Object
   
   @js.native
   sealed trait system extends InfoItemGroup
@@ -435,8 +414,6 @@ object ionicStrings {
   def `Ionic Enterprise Edition provides premier native solutionsComma UIComma Ampersand support for companies building cross-platform appsDot`: `Ionic Enterprise Edition provides premier native solutionsComma UIComma Ampersand support for companies building cross-platform appsDot` = "Ionic Enterprise Edition provides premier native solutions, UI, & support for companies building cross-platform apps.".asInstanceOf[`Ionic Enterprise Edition provides premier native solutionsComma UIComma Ampersand support for companies building cross-platform appsDot`]
   @scala.inline
   def LOCAL_CLI_NOT_FOUND: LOCAL_CLI_NOT_FOUND = "LOCAL_CLI_NOT_FOUND".asInstanceOf[LOCAL_CLI_NOT_FOUND]
-  @scala.inline
-  def OAuthIdentity: OAuthIdentity = "OAuthIdentity".asInstanceOf[OAuthIdentity]
   @scala.inline
   def OPTIONS: OPTIONS = "OPTIONS".asInstanceOf[OPTIONS]
   @scala.inline
@@ -530,8 +507,6 @@ object ionicStrings {
   @scala.inline
   def global: global = "global".asInstanceOf[global]
   @scala.inline
-  def guard: guard = "guard".asInstanceOf[guard]
-  @scala.inline
   def httpsColonSlashSlashd2ql0qc7j8u4b2DotcloudfrontDotnet: httpsColonSlashSlashd2ql0qc7j8u4b2DotcloudfrontDotnet = "https://d2ql0qc7j8u4b2.cloudfront.net".asInstanceOf[httpsColonSlashSlashd2ql0qc7j8u4b2DotcloudfrontDotnet]
   @scala.inline
   def `httpsColonSlashSlashd2ql0qc7j8u4b2DotcloudfrontDotnetSlashintegration-cordovaDottarDotgz`: `httpsColonSlashSlashd2ql0qc7j8u4b2DotcloudfrontDotnetSlashintegration-cordovaDottarDotgz` = "https://d2ql0qc7j8u4b2.cloudfront.net/integration-cordova.tar.gz".asInstanceOf[`httpsColonSlashSlashd2ql0qc7j8u4b2DotcloudfrontDotnetSlashintegration-cordovaDottarDotgz`]
@@ -578,11 +553,7 @@ object ionicStrings {
   @scala.inline
   def managed: managed = "managed".asInstanceOf[managed]
   @scala.inline
-  def max: max = "max".asInstanceOf[max]
-  @scala.inline
   def multiapp: multiapp = "multiapp".asInstanceOf[multiapp]
-  @scala.inline
-  def name: name = "name".asInstanceOf[name]
   @scala.inline
   def ng: ng = "ng".asInstanceOf[ng]
   @scala.inline
@@ -591,8 +562,6 @@ object ionicStrings {
   def `npm CLI`: `npm CLI` = "npm CLI".asInstanceOf[`npm CLI`]
   @scala.inline
   def `npm-installed-locally`: `npm-installed-locally` = "npm-installed-locally".asInstanceOf[`npm-installed-locally`]
-  @scala.inline
-  def org: org = "org".asInstanceOf[org]
   @scala.inline
   def portrait: portrait = "portrait".asInstanceOf[portrait]
   @scala.inline
@@ -610,8 +579,6 @@ object ionicStrings {
   @scala.inline
   def repo: repo = "repo".asInstanceOf[repo]
   @scala.inline
-  def reqgen: reqgen = "reqgen".asInstanceOf[reqgen]
-  @scala.inline
   def run: run = "run".asInstanceOf[run]
   @scala.inline
   def serveColonafter: serveColonafter = "serve:after".asInstanceOf[serveColonafter]
@@ -623,8 +590,6 @@ object ionicStrings {
   def splash: splash = "splash".asInstanceOf[splash]
   @scala.inline
   def `ssl-commands`: `ssl-commands` = "ssl-commands".asInstanceOf[`ssl-commands`]
-  @scala.inline
-  def state: state = "state".asInstanceOf[state]
   @scala.inline
   def system: system = "system".asInstanceOf[system]
   @scala.inline

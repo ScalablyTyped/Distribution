@@ -1,13 +1,13 @@
 package typings.oracleOraclejet.ojmasonrylayoutMod
 
 import typings.oracleOraclejet.AnonAction
-import typings.oracleOraclejet.AnonActionElement
+import typings.oracleOraclejet.AnonDictpropNameTile
+import typings.oracleOraclejet.AnonElement
 import typings.oracleOraclejet.AnonFromIndex
-import typings.oracleOraclejet.AnonFromIndexPropName
-import typings.oracleOraclejet.AnonIndexPropName
 import typings.oracleOraclejet.AnonLabelCut
 import typings.oracleOraclejet.AnonPreviousSizeStyleClass
-import typings.oracleOraclejet.AnonPropNameTile
+import typings.oracleOraclejet.AnonTile
+import typings.oracleOraclejet.AnonToIndex
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.mod.baseComponent
 import typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojAnimateEnd
@@ -184,14 +184,14 @@ trait ojMasonryLayout extends baseComponent[ojMasonryLayoutSettableProperties] {
 @js.native
 object ojMasonryLayout extends js.Object {
   type ojAnimateEnd = CustomEvent[AnonAction]
-  type ojAnimateStart = CustomEvent[AnonActionElement]
-  type ojBeforeInsert = CustomEvent[AnonIndexPropName]
-  type ojBeforeRemove = CustomEvent[AnonPropNameTile]
+  type ojAnimateStart = CustomEvent[AnonElement]
+  type ojBeforeInsert = CustomEvent[AnonTile]
+  type ojBeforeRemove = CustomEvent[AnonDictpropNameTile]
   type ojBeforeReorder = CustomEvent[AnonFromIndex]
   type ojBeforeResize = CustomEvent[AnonPreviousSizeStyleClass]
-  type ojInsert = CustomEvent[AnonIndexPropName]
-  type ojRemove = CustomEvent[AnonPropNameTile]
-  type ojReorder = CustomEvent[AnonFromIndexPropName]
+  type ojInsert = CustomEvent[AnonTile]
+  type ojRemove = CustomEvent[AnonDictpropNameTile]
+  type ojReorder = CustomEvent[AnonToIndex]
   type ojResize = CustomEvent[AnonPreviousSizeStyleClass]
 }
 

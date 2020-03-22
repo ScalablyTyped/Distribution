@@ -3,7 +3,7 @@ package typings.jupyterlabSettingeditor
 import typings.jupyterlabApputils.mod.MainAreaWidget
 import typings.jupyterlabApputils.widgettrackerMod.IWidgetTracker
 import typings.jupyterlabSettingeditor.settingeditorMod.SettingEditor
-import typings.phosphorCoreutils.mod.Token
+import typings.luminoCoreutils.mod.Token
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

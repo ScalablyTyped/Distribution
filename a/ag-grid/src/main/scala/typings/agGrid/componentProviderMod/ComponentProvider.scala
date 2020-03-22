@@ -1,6 +1,6 @@
 package typings.agGrid.componentProviderMod
 
-import typings.agGrid.AnonBIComponent
+import typings.agGrid.Anon0
 import typings.agGrid.iComponentMod.IComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -22,7 +22,7 @@ class ComponentProvider () extends js.Object {
     * B the business interface (ie IHeader)
     * A the agGridComponent interface (ie IHeaderComp). The final object acceptable by ag-grid
     */
-  def registerFwComponent[A /* <: IComponent[_] with B */, B](rawName: String, component: AnonBIComponent[B]): Unit = js.native
+  def registerFwComponent[A /* <: IComponent[_] with B */, B](rawName: String, component: Anon0[B]): Unit = js.native
   /**
     * B the business interface (ie IHeader)
     * A the agGridComponent interface (ie IHeaderComp). The final object acceptable by ag-grid

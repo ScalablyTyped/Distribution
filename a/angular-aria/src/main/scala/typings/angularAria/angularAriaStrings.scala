@@ -7,9 +7,6 @@ import scala.scalajs.js.annotation._
 
 object angularAriaStrings {
   @js.native
-  sealed trait IAriaProviderOptions extends js.Object
-  
-  @js.native
   sealed trait ariaChecked extends IAriaAttribute
   
   @js.native
@@ -39,8 +36,6 @@ object angularAriaStrings {
   @js.native
   sealed trait tabindex extends IAriaAttribute
   
-  @scala.inline
-  def IAriaProviderOptions: IAriaProviderOptions = "IAriaProviderOptions".asInstanceOf[IAriaProviderOptions]
   @scala.inline
   def ariaChecked: ariaChecked = "ariaChecked".asInstanceOf[ariaChecked]
   @scala.inline

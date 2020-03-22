@@ -5,9 +5,9 @@ import typings.ddTrace.ddTraceNumbers.`0`
 import typings.ddTrace.ddTraceNumbers.`1`
 import typings.ddTrace.ddTraceNumbers.`2`
 import typings.ddTrace.ddTraceStrings._dd1DotsrDoteausr
-import typings.ddTrace.ddTraceStrings.`agent-exporter`
-import typings.ddTrace.ddTraceStrings.`log-exporter`
+import typings.ddTrace.ddTraceStrings.agent
 import typings.ddTrace.ddTraceStrings.binary
+import typings.ddTrace.ddTraceStrings.browser
 import typings.ddTrace.ddTraceStrings.client
 import typings.ddTrace.ddTraceStrings.consumer
 import typings.ddTrace.ddTraceStrings.error
@@ -40,8 +40,9 @@ import scala.scalajs.js.annotation._
 object extMod extends js.Object {
   @js.native
   object exporters extends js.Object {
-    var AGENT: `agent-exporter` = js.native
-    var LOG: `log-exporter` = js.native
+    var AGENT: agent = js.native
+    var BROWSER: browser = js.native
+    var LOG: log = js.native
   }
   
   @js.native

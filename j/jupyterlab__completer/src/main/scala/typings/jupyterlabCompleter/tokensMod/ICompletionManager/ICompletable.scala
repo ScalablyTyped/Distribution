@@ -3,8 +3,8 @@ package typings.jupyterlabCompleter.tokensMod.ICompletionManager
 import typings.jupyterlabCodeeditor.editorMod.CodeEditor.IEditor
 import typings.jupyterlabCompleter.handlerMod.CompletionHandler.IReply
 import typings.jupyterlabCompleter.handlerMod.CompletionHandler.IRequest
-import typings.jupyterlabCoreutils.interfacesMod.IDataConnector
-import typings.phosphorWidgets.mod.Widget
+import typings.jupyterlabStatedb.interfacesMod.IDataConnector
+import typings.luminoWidgets.mod.Widget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +21,7 @@ trait ICompletable extends ICompletableAttributes {
 
 object ICompletable {
   @scala.inline
-  def apply(connector: IDataConnector[IReply, Unit, IRequest], parent: Widget, editor: IEditor = null): ICompletable = {
+  def apply(connector: IDataConnector[IReply, Unit, IRequest, String], parent: Widget, editor: IEditor = null): ICompletable = {
     val __obj = js.Dynamic.literal(connector = connector.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any])
     if (editor != null) __obj.updateDynamic("editor")(editor.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICompletable]

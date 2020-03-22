@@ -310,6 +310,24 @@ object Vec2 extends js.Object {
     * @field
     * @static
     * @readonly
+    * @name pc.Vec2.DOWN
+    * @type {pc.Vec2}
+    * @description A constant vector set to [0, -1].
+    */
+  val DOWN: Vec2 = js.native
+  /**
+    * @field
+    * @static
+    * @readonly
+    * @name pc.Vec2.LEFT
+    * @type {pc.Vec2}
+    * @description A constant vector set to [-1, 0].
+    */
+  val LEFT: Vec2 = js.native
+  /**
+    * @field
+    * @static
+    * @readonly
     * @name pc.Vec2.ONE
     * @type {pc.Vec2}
     * @description A constant vector set to [1, 1].

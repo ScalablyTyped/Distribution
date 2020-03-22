@@ -1,7 +1,7 @@
 package typings.tinajsTina.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Partial
+import typings.tinajsTina.PartialComponentDefinitioCompute
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +17,7 @@ class Component () extends js.Object {
 @JSImport("@tinajs/tina", "Component")
 @js.native
 object Component extends js.Object {
-  def define(definitions: Partial[ComponentDefinitions]): Unit = js.native
-  def mixin(definitions: Partial[ComponentDefinitions]): Unit = js.native
+  def define(definitions: PartialComponentDefinitioCompute): Unit = js.native
+  def mixin(definitions: PartialComponentDefinitioCompute): Unit = js.native
 }
 

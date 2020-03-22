@@ -10,7 +10,7 @@ trait ExportingOptions extends js.Object {
     * (Highcharts, Highstock, Highmaps, Gantt) Accessibility options for the
     * exporting menu. Requires the Accessibility module.
     */
-  var accessibility: js.UndefOr[js.Object | ExportingAccessibilityOptions] = js.undefined
+  var accessibility: js.UndefOr[ExportingAccessibilityOptions] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Experimental setting to allow
     * HTML inside the chart (added through the `useHTML` options), directly in
@@ -30,7 +30,7 @@ trait ExportingOptions extends js.Object {
     * here, custom buttons can be added. See navigation.buttonOptions for
     * general options.
     */
-  var buttons: js.UndefOr[ExportingButtonsOptions | Dictionary[ExportingButtonsContextButtonOptions]] = js.undefined
+  var buttons: js.UndefOr[ExportingButtonsOptions | Dictionary[ExportingButtonsOptionsObject]] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Additional chart options to be
     * merged into the chart before exporting to an image format. This does not
@@ -189,9 +189,9 @@ trait ExportingOptions extends js.Object {
 object ExportingOptions {
   @scala.inline
   def apply(
-    accessibility: js.Object | ExportingAccessibilityOptions = null,
+    accessibility: ExportingAccessibilityOptions = null,
     allowHTML: js.UndefOr[Boolean] = js.undefined,
-    buttons: ExportingButtonsOptions | Dictionary[ExportingButtonsContextButtonOptions] = null,
+    buttons: ExportingButtonsOptions | Dictionary[ExportingButtonsOptionsObject] = null,
     chartOptions: Options = null,
     csv: ExportingCsvOptions = null,
     enabled: js.UndefOr[Boolean] = js.undefined,

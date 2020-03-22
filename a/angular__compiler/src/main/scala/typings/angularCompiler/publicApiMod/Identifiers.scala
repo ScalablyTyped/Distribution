@@ -45,6 +45,7 @@ object Identifiers extends js.Object {
   var createModuleFactory: typings.angularCompiler.outputAstMod.ExternalReference = js.native
   var createRendererType2: typings.angularCompiler.outputAstMod.ExternalReference = js.native
   var directiveDef: typings.angularCompiler.outputAstMod.ExternalReference = js.native
+  var directiveInject: typings.angularCompiler.outputAstMod.ExternalReference = js.native
   var elementDef: typings.angularCompiler.outputAstMod.ExternalReference = js.native
   var inject: typings.angularCompiler.outputAstMod.ExternalReference = js.native
   var inlineInterpolate: typings.angularCompiler.outputAstMod.ExternalReference = js.native

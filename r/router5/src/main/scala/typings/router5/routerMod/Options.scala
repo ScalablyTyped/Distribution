@@ -1,7 +1,8 @@
 package typings.router5.routerMod
 
-import typings.routeNode.mod.QueryParamsMode
-import typings.routeNode.mod.TrailingSlashMode
+import typings.pathParser.encodingMod.URLParamsEncodingType
+import typings.routeNode.routeNodeMod.QueryParamsMode
+import typings.routeNode.routeNodeMod.TrailingSlashMode
 import typings.router5.baseMod.Params
 import typings.searchParams.encodeMod.IOptions
 import scala.scalajs.js
@@ -20,6 +21,7 @@ trait Options extends js.Object {
   var strictTrailingSlash: Boolean
   var strongMatching: Boolean
   var trailingSlashMode: TrailingSlashMode
+  var urlParamsEncoding: js.UndefOr[URLParamsEncodingType] = js.undefined
 }
 
 object Options {
@@ -35,12 +37,14 @@ object Options {
     trailingSlashMode: TrailingSlashMode,
     defaultParams: Params = null,
     defaultRoute: String = null,
-    queryParams: IOptions = null
+    queryParams: IOptions = null,
+    urlParamsEncoding: URLParamsEncodingType = null
   ): Options = {
     val __obj = js.Dynamic.literal(allowNotFound = allowNotFound.asInstanceOf[js.Any], autoCleanUp = autoCleanUp.asInstanceOf[js.Any], caseSensitive = caseSensitive.asInstanceOf[js.Any], queryParamsMode = queryParamsMode.asInstanceOf[js.Any], rewritePathOnMatch = rewritePathOnMatch.asInstanceOf[js.Any], strictTrailingSlash = strictTrailingSlash.asInstanceOf[js.Any], strongMatching = strongMatching.asInstanceOf[js.Any], trailingSlashMode = trailingSlashMode.asInstanceOf[js.Any])
     if (defaultParams != null) __obj.updateDynamic("defaultParams")(defaultParams.asInstanceOf[js.Any])
     if (defaultRoute != null) __obj.updateDynamic("defaultRoute")(defaultRoute.asInstanceOf[js.Any])
     if (queryParams != null) __obj.updateDynamic("queryParams")(queryParams.asInstanceOf[js.Any])
+    if (urlParamsEncoding != null) __obj.updateDynamic("urlParamsEncoding")(urlParamsEncoding.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

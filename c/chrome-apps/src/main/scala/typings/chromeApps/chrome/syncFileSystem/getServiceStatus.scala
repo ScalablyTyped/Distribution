@@ -1,6 +1,6 @@
 package typings.chromeApps.chrome.syncFileSystem
 
-import typings.chromeApps.Anon_AUTHENTICATIONREQUIRED
+import typings.chromeApps.AnonAUTHENTICATIONREQUIRED
 import typings.chromeApps.chrome.ToStringLiteral
 import typings.chromeApps.chromeAppsStrings.authentication_required
 import typings.chromeApps.chromeAppsStrings.disabled_
@@ -24,7 +24,7 @@ object getServiceStatus extends js.Object {
   def apply(
     callback: js.Function1[
       /* status */ ToStringLiteral[
-        Anon_AUTHENTICATIONREQUIRED, 
+        AnonAUTHENTICATIONREQUIRED, 
         String, 
         Exclude[
           String, 

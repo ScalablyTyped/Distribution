@@ -1,6 +1,6 @@
 package typings.cypress.sinonMod
 
-import typings.std.Partial
+import typings.cypress.PartialSinonFakeTimersCon
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,7 +27,7 @@ trait SinonSandboxConfig extends js.Object {
     * If set to true, the sandbox will have a clock property.
     * You can optionally pass in a configuration object that follows the specification for fake timers, such as { toFake: ["setTimeout", "setInterval"] }.
     */
-  var useFakeTimers: Boolean | Partial[SinonFakeTimersConfig]
+  var useFakeTimers: Boolean | PartialSinonFakeTimersCon
 }
 
 object SinonSandboxConfig {
@@ -35,7 +35,7 @@ object SinonSandboxConfig {
   def apply(
     properties: js.Array[String],
     useFakeServer: Boolean | SinonFakeServer,
-    useFakeTimers: Boolean | Partial[SinonFakeTimersConfig],
+    useFakeTimers: Boolean | PartialSinonFakeTimersCon,
     injectInto: js.Object = null
   ): SinonSandboxConfig = {
     val __obj = js.Dynamic.literal(properties = properties.asInstanceOf[js.Any], useFakeServer = useFakeServer.asInstanceOf[js.Any], useFakeTimers = useFakeTimers.asInstanceOf[js.Any])

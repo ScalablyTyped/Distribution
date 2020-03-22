@@ -1,6 +1,6 @@
 package typings.mixpanelBrowser.mod
 
-import typings.std.Partial
+import typings.mixpanelBrowser.PartialOutTrackingOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object optOutTracking extends js.Object {
   def apply(): Unit = js.native
-  def apply(options: Partial[OutTrackingOptions]): Unit = js.native
+  def apply(options: PartialOutTrackingOptions): Unit = js.native
 }
 

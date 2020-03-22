@@ -3,7 +3,7 @@ package typings.codemirror.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
 import typings.codemirror.AnonChanged
-import typings.codemirror.AnonChangedDoc
+import typings.codemirror.AnonDoc
 import typings.std.Error
 import typings.tern.ternMod.Query
 import typings.tern.ternMod.Server
@@ -16,7 +16,7 @@ trait TernServer extends js.Object {
   val docs: StringDictionary[AnonChanged] = js.native
   val options: TernOptions = js.native
   val server: Server = js.native
-  def addDoc(name: String, doc: Doc): AnonChangedDoc = js.native
+  def addDoc(name: String, doc: Doc): AnonDoc = js.native
   def complete(cm: Doc): Unit = js.native
   def delDoc(id: String): Unit = js.native
   def delDoc(id: Doc): Unit = js.native

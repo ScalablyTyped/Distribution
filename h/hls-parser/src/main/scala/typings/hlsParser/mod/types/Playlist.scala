@@ -1,7 +1,7 @@
 package typings.hlsParser.mod.types
 
-import typings.hlsParser.AnonIsMasterPlaylist
 import typings.hlsParser.AnonOffset
+import typings.hlsParser.BasePlaylistConstructorPr
 import typings.hlsParser.mod.Data
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("hls-parser", "types.Playlist")
 @js.native
 class Playlist protected () extends Data {
-  def this(properties: BasePlaylistConstructorProperties with AnonIsMasterPlaylist) = this()
+  def this(properties: BasePlaylistConstructorPr) = this()
   var independentSegments: Boolean = js.native
   var isMasterPlaylist: Boolean = js.native
   var source: js.UndefOr[String] = js.native

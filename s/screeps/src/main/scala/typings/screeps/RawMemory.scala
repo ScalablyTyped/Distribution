@@ -14,7 +14,7 @@ trait RawMemory extends js.Object {
   /**
     * An object with a memory segment of another player available on this tick. Use `setActiveForeignSegment` to fetch segments on the next tick.
     */
-  var foreignSegment: AnonDataId = js.native
+  var foreignSegment: AnonId = js.native
   /**
     *  @deprecated Use `InterShardMemory` instead.
     *

@@ -10,7 +10,6 @@ import typings.react.mod.SyntheticEvent
 import typings.react.mod._Global_.JSX.Element
 import typings.std.Event_
 import typings.std.HTMLElement
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -286,7 +285,7 @@ object tableQuadrantStackMod extends js.Object {
   /* static members */
   @js.native
   object TableQuadrantStack extends js.Object {
-    var defaultProps: Partial[ITableQuadrantStackProps] = js.native
+    var defaultProps: PartialITableQuadrantStac = js.native
   }
   
 }

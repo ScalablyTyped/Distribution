@@ -82,7 +82,7 @@ object systemMod extends js.Object {
   
   @js.native
   object TypeInfo extends js.Object {
-    var DayOfWeek: AnonEnumValuesAnonFriday = js.native
+    var DayOfWeek: AnonEnumValuesAnonMonday = js.native
   }
   
 }

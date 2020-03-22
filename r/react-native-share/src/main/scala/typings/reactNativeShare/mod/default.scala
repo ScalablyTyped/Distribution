@@ -1,6 +1,6 @@
 package typings.reactNativeShare.mod
 
-import typings.reactNativeShare.AnonSocial
+import typings.reactNativeShare.OptionssocialSocial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ object default extends js.Object {
   def isPackageInstalled(packageName: String): js.Promise[ShareSingleReturn] = js.native
   def open(options: MultipleOptions): js.Promise[OpenReturn] = js.native
   def open(options: Options): js.Promise[OpenReturn] = js.native
-  def shareSingle(options: Options with AnonSocial): js.Promise[ShareSingleReturn] = js.native
+  def shareSingle(options: OptionssocialSocial): js.Promise[ShareSingleReturn] = js.native
   @js.native
   object InstagramStories extends js.Object {
     /* "shareBackgroundAndStickerImage" */ val SHARE_BACKGROUND_AND_STICKER_IMAGE: typings.reactNativeShare.mod.Share.InstagramStories.SHARE_BACKGROUND_AND_STICKER_IMAGE with String = js.native

@@ -22,13 +22,19 @@ class ResourceDescriptor () extends IResourceDescriptor {
   def this(properties: IResourceDescriptor) = this()
   /** ResourceDescriptor history. */
   @JSName("history")
-  var history_ResourceDescriptor: History = js.native
+  var history_ResourceDescriptor: History | String = js.native
   /** ResourceDescriptor nameField. */
   @JSName("nameField")
   var nameField_ResourceDescriptor: String = js.native
   /** ResourceDescriptor pattern. */
   @JSName("pattern")
   var pattern_ResourceDescriptor: js.Array[String] = js.native
+  /** ResourceDescriptor plural. */
+  @JSName("plural")
+  var plural_ResourceDescriptor: String = js.native
+  /** ResourceDescriptor singular. */
+  @JSName("singular")
+  var singular_ResourceDescriptor: String = js.native
   /** ResourceDescriptor type. */
   @JSName("type")
   var type_ResourceDescriptor: String = js.native

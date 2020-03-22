@@ -49,13 +49,22 @@ trait TooltipOptions extends js.Object {
     */
   var className: js.UndefOr[String] = js.undefined
   /**
+    * (Highcharts, Highstock, Highmaps, Gantt) The HTML of the cluster point's
+    * in the tooltip. Works only with marker-clusters module and analogously to
+    * pointFormat.
+    *
+    * The cluster tooltip can be also formatted using `tooltip.formatter`
+    * callback function and `point.isCluster` flag.
+    */
+  var clusterFormat: js.UndefOr[js.Object] = js.undefined
+  /**
     * (Highcharts, Highstock, Gantt) For series on a datetime axes, the date
     * format in the tooltip's header will by default be guessed based on the
     * closest data points. This member gives the default string representations
     * used for each unit. For an overview of the replacement codes, see
     * dateFormat.
     */
-  var dateTimeLabelFormats: js.UndefOr[TooltipDateTimeLabelFormatsOptions | Dictionary[String]] = js.undefined
+  var dateTimeLabelFormats: js.UndefOr[Dictionary[String]] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Distance from point to tooltip
     * in pixels.
@@ -104,9 +113,9 @@ trait TooltipOptions extends js.Object {
     *
     * A subset of HTML is supported. Unless `useHTML` is true, the HTML of the
     * tooltip is parsed and converted to SVG, therefore this isn't a complete
-    * HTML renderer. The following tags are supported: `<b>`, `<strong>`,
-    * `<i>`, `<em>`, `<br/>`, `<span>`. Spans can be styled with a `style`
-    * attribute, but only text-related CSS that is shared with SVG is handled.
+    * HTML renderer. The following HTML tags are supported: `b`, `br`, `em`,
+    * `i`, `span`, `strong`. Spans can be styled with a `style` attribute, but
+    * only text-related CSS, that is shared with SVG, is handled.
     *
     * The available data in the formatter differ a bit depending on whether the
     * tooltip is shared or split, or belongs to a single point. In a
@@ -115,7 +124,27 @@ trait TooltipOptions extends js.Object {
     *
     * Available data are:
     *
-    *  (see online documentation for example)
+    * - **this.percentage (not shared) / ** **this.points[i].percentage
+    * (shared)**: Stacked series and pies only. The point's percentage of the
+    * total.
+    *
+    * - **this.point (not shared) / this.points[i].point (shared)**: The point
+    * object. The point name, if defined, is available through
+    * `this.point.name`.
+    *
+    * - **this.points**: In a shared tooltip, this is an array containing all
+    * other properties for each point.
+    *
+    * - **this.series (not shared) / this.points[i].series (shared)**: The
+    * series object. The series name is available through `this.series.name`.
+    *
+    * - **this.total (not shared) / this.points[i].total (shared)**: Stacked
+    * series only. The total value at this point's x value.
+    *
+    * - **this.x**: The x value. This property is the same regardless of the
+    * tooltip being shared or not.
+    *
+    * - **this.y (not shared) / this.points[i].y (shared)**: The y value.
     */
   var formatter: js.UndefOr[TooltipFormatterCallbackFunction] = js.undefined
   /**
@@ -303,7 +332,8 @@ object TooltipOptions {
     borderWidth: Int | Double = null,
     changeDecimals: Int | Double = null,
     className: String = null,
-    dateTimeLabelFormats: TooltipDateTimeLabelFormatsOptions | Dictionary[String] = null,
+    clusterFormat: js.Object = null,
+    dateTimeLabelFormats: Dictionary[String] = null,
     distance: Int | Double = null,
     enabled: js.UndefOr[Boolean] = js.undefined,
     followPointer: js.UndefOr[Boolean] = js.undefined,
@@ -340,6 +370,7 @@ object TooltipOptions {
     if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
     if (changeDecimals != null) __obj.updateDynamic("changeDecimals")(changeDecimals.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (clusterFormat != null) __obj.updateDynamic("clusterFormat")(clusterFormat.asInstanceOf[js.Any])
     if (dateTimeLabelFormats != null) __obj.updateDynamic("dateTimeLabelFormats")(dateTimeLabelFormats.asInstanceOf[js.Any])
     if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])

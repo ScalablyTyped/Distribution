@@ -6,10 +6,9 @@ import scala.scalajs.js.annotation._
 
 trait PlotKeltnerchannelsOptions extends js.Object {
   /**
-    * (Highstock) Accessibility options for a series. Requires the
-    * accessibility module.
+    * (Highstock) Accessibility options for a series.
     */
-  var accessibility: js.UndefOr[js.Object | PlotKeltnerchannelsAccessibilityOptions] = js.undefined
+  var accessibility: js.UndefOr[SeriesAccessibilityOptionsObject] = js.undefined
   /**
     * (Highstock) Allow this series' points to be selected by clicking on the
     * graphic (columns, point markers, pie slices, map areas etc).
@@ -36,7 +35,7 @@ trait PlotKeltnerchannelsOptions extends js.Object {
     * Due to poor performance, animation is disabled in old IE browsers for
     * several chart types.
     */
-  var animation: js.UndefOr[Boolean | AnimationOptionsObject | PlotKeltnerchannelsAnimationOptions] = js.undefined
+  var animation: js.UndefOr[Boolean | AnimationOptionsObject] = js.undefined
   /**
     * (Highstock) For some series, there is a limit that shuts down initial
     * animation by default when the total number of points in the chart is too
@@ -124,11 +123,12 @@ trait PlotKeltnerchannelsOptions extends js.Object {
   var colorKey: js.UndefOr[String] = js.undefined
   /**
     * (Highstock) Defines if comparison should start from the first point
-    * within the visible range or should start from the first point (see online
-    * documentation for example) the range. In other words, this flag
-    * determines if first point within the visible range will have 0%
-    * (`compareStart=true`) or should have been already calculated according to
-    * the previous point (`compareStart=false`).
+    * within the visible range or should start from the first point **before**
+    * the range.
+    *
+    * In other words, this flag determines if first point within the visible
+    * range will have 0% (`compareStart=true`) or should have been already
+    * calculated according to the previous point (`compareStart=false`).
     */
   var compareStart: js.UndefOr[Boolean] = js.undefined
   /**
@@ -151,7 +151,7 @@ trait PlotKeltnerchannelsOptions extends js.Object {
     * (Gantt) Override Pathfinder connector options for a series. Requires
     * Highcharts Gantt to be loaded.
     */
-  var connectors: js.UndefOr[PlotKeltnerchannelsConnectorsOptions] = js.undefined
+  var connectors: js.UndefOr[SeriesConnectorsOptionsObject] = js.undefined
   /**
     * (Highcharts, Highstock) When the series contains less points than the
     * crop threshold, all points are drawn, even if the points fall outside the
@@ -194,10 +194,10 @@ trait PlotKeltnerchannelsOptions extends js.Object {
     * of the first point instance are copied over to the group point. This can
     * be altered through a custom `approximation` callback function.
     */
-  var dataGrouping: js.UndefOr[PlotKeltnerchannelsDataGroupingOptions] = js.undefined
+  var dataGrouping: js.UndefOr[DataGroupingOptionsObject] = js.undefined
   /**
-    * (Highstock) Options for the series data labels, appearing next to each
-    * data point.
+    * (Highcharts, Highstock, Highmaps, Gantt) Options for the series data
+    * labels, appearing next to each data point.
     *
     * Since v6.2.0, multiple data labels can be applied to each single point by
     * defining them as an array of configs.
@@ -207,6 +207,10 @@ trait PlotKeltnerchannelsOptions extends js.Object {
     * (see example).
     */
   var dataLabels: js.UndefOr[DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject]] = js.undefined
+  /**
+    * (Highcharts, Highstock) Options for the series data sorting.
+    */
+  var dataSorting: js.UndefOr[DataSortingOptionsObject | PlotKeltnerchannelsDataSortingOptions] = js.undefined
   /**
     * (Highstock) A description of the series to add to the screen reader
     * information about the series.
@@ -223,7 +227,7 @@ trait PlotKeltnerchannelsOptions extends js.Object {
     * hooks can also be attached to the series at run time using the
     * `Highcharts.addEvent` function.
     */
-  var events: js.UndefOr[PlotKeltnerchannelsEventsOptions] = js.undefined
+  var events: js.UndefOr[SeriesEventsOptionsObject] = js.undefined
   /**
     * (Highstock) Determines whether the series should look for the nearest
     * point in both dimensions or just the x-dimension when hovering the
@@ -288,15 +292,15 @@ trait PlotKeltnerchannelsOptions extends js.Object {
     * The series labels currently work with series types having a `graph` or an
     * `area`.
     */
-  var label: js.UndefOr[PlotKeltnerchannelsLabelOptions] = js.undefined
+  var label: js.UndefOr[SeriesLabelOptionsObject] = js.undefined
   /**
     * (Highstock) The line marks the last price from all points.
     */
-  var lastPrice: js.UndefOr[PlotKeltnerchannelsLastPriceOptions] = js.undefined
+  var lastPrice: js.UndefOr[SeriesLastPriceOptionsObject] = js.undefined
   /**
     * (Highstock) The line marks the last price from visible range of points.
     */
-  var lastVisiblePrice: js.UndefOr[PlotKeltnerchannelsLastVisiblePriceOptions] = js.undefined
+  var lastVisiblePrice: js.UndefOr[SeriesLastVisiblePriceOptionsObject] = js.undefined
   /**
     * (Highcharts, Highstock) Pixel width of the graph line.
     */
@@ -321,7 +325,7 @@ trait PlotKeltnerchannelsOptions extends js.Object {
     * In styled mode, the markers can be styled with the `.highcharts-point`,
     * `.highcharts-point-hover` and `.highcharts-point-select` class names.
     */
-  var marker: js.UndefOr[PlotKeltnerchannelsMarkerOptions] = js.undefined
+  var marker: js.UndefOr[PointMarkerOptionsObject] = js.undefined
   /**
     * (Highstock) The name of the series as shown in the legend, tooltip etc.
     * If not set, it will be based on a technical indicator type and default
@@ -330,7 +334,9 @@ trait PlotKeltnerchannelsOptions extends js.Object {
   var name: js.UndefOr[String] = js.undefined
   /**
     * (Highstock) The color for the parts of the graph or points that are below
-    * the threshold.
+    * the threshold. Note that `zones` takes precedence over the negative
+    * color. Using `negativeColor` is equivalent to applying a zone with value
+    * of 0.
     */
   var negativeColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
@@ -345,7 +351,7 @@ trait PlotKeltnerchannelsOptions extends js.Object {
   /**
     * (Highstock) Properties for each single point.
     */
-  var point: js.UndefOr[PlotKeltnerchannelsPointOptions] = js.undefined
+  var point: js.UndefOr[PlotSeriesPointOptions] = js.undefined
   /**
     * (Highstock) Same as accessibility.pointDescriptionFormatter, but for an
     * individual series. Overrides the chart wide configuration.
@@ -391,7 +397,7 @@ trait PlotKeltnerchannelsOptions extends js.Object {
     * option. If `softThreshold` is `true`, the Y axis starts at 0.
     */
   var softThreshold: js.UndefOr[Boolean] = js.undefined
-  var states: js.UndefOr[PlotKeltnerchannelsStatesOptions] = js.undefined
+  var states: js.UndefOr[SeriesStatesOptionsObject] = js.undefined
   /**
     * (Highcharts, Highstock) Whether to apply steps to the line. Possible
     * values are `left`, `center` and `right`.
@@ -422,7 +428,7 @@ trait PlotKeltnerchannelsOptions extends js.Object {
     * single series. Properties are inherited from tooltip, but only the
     * following properties can be defined on a series level.
     */
-  var tooltip: js.UndefOr[PlotKeltnerchannelsTooltipOptions] = js.undefined
+  var tooltip: js.UndefOr[SeriesTooltipOptionsObject] = js.undefined
   /**
     * (Highstock) Top line options.
     */
@@ -461,15 +467,15 @@ trait PlotKeltnerchannelsOptions extends js.Object {
     * `.highcharts-zone-{n}` class, or custom classed from the `className`
     * option (view live demo).
     */
-  var zones: js.UndefOr[js.Array[PlotKeltnerchannelsZonesOptions]] = js.undefined
+  var zones: js.UndefOr[js.Array[SeriesZonesOptionsObject]] = js.undefined
 }
 
 object PlotKeltnerchannelsOptions {
   @scala.inline
   def apply(
-    accessibility: js.Object | PlotKeltnerchannelsAccessibilityOptions = null,
+    accessibility: SeriesAccessibilityOptionsObject = null,
     allowPointSelect: js.UndefOr[Boolean] = js.undefined,
-    animation: Boolean | AnimationOptionsObject | PlotKeltnerchannelsAnimationOptions = null,
+    animation: Boolean | AnimationOptionsObject = null,
     animationLimit: Int | Double = null,
     boostBlending: OptionsBoostBlendingValue = null,
     boostThreshold: Int | Double = null,
@@ -485,32 +491,33 @@ object PlotKeltnerchannelsOptions {
     compareToMain: js.UndefOr[Boolean] = js.undefined,
     connectEnds: js.UndefOr[Boolean] = js.undefined,
     connectNulls: js.UndefOr[Boolean] = js.undefined,
-    connectors: PlotKeltnerchannelsConnectorsOptions = null,
+    connectors: SeriesConnectorsOptionsObject = null,
     cropThreshold: Int | Double = null,
     cursor: String | CursorValue = null,
     dashStyle: DashStyleValue = null,
-    dataGrouping: PlotKeltnerchannelsDataGroupingOptions = null,
+    dataGrouping: DataGroupingOptionsObject = null,
     dataLabels: DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject] = null,
+    dataSorting: DataSortingOptionsObject | PlotKeltnerchannelsDataSortingOptions = null,
     description: String = null,
     enableMouseTracking: js.UndefOr[Boolean] = js.undefined,
-    events: PlotKeltnerchannelsEventsOptions = null,
+    events: SeriesEventsOptionsObject = null,
     findNearestPointBy: OptionsFindNearestPointByValue = null,
     gapSize: Int | Double = null,
     gapUnit: OptionsGapUnitValue = null,
     getExtremesFromAll: js.UndefOr[Boolean] = js.undefined,
     includeInDataExport: js.UndefOr[Boolean] = js.undefined,
-    label: PlotKeltnerchannelsLabelOptions = null,
-    lastPrice: PlotKeltnerchannelsLastPriceOptions = null,
-    lastVisiblePrice: PlotKeltnerchannelsLastVisiblePriceOptions = null,
+    label: SeriesLabelOptionsObject = null,
+    lastPrice: SeriesLastPriceOptionsObject = null,
+    lastVisiblePrice: SeriesLastVisiblePriceOptionsObject = null,
     lineWidth: Int | Double = null,
     linecap: SeriesLinecapValue = null,
     linkedTo: String = null,
-    marker: PlotKeltnerchannelsMarkerOptions = null,
+    marker: PointMarkerOptionsObject = null,
     name: String = null,
     negativeColor: ColorString | GradientColorObject | PatternObject = null,
     opacity: Int | Double = null,
     params: PlotKeltnerchannelsParamsOptions = null,
-    point: PlotKeltnerchannelsPointOptions = null,
+    point: PlotSeriesPointOptions = null,
     pointDescriptionFormatter: js.Function = null,
     selected: js.UndefOr[Boolean] = js.undefined,
     shadow: Boolean | ShadowOptionsObject = null,
@@ -518,17 +525,17 @@ object PlotKeltnerchannelsOptions {
     showInLegend: js.UndefOr[Boolean] = js.undefined,
     skipKeyboardNavigation: js.UndefOr[Boolean] = js.undefined,
     softThreshold: js.UndefOr[Boolean] = js.undefined,
-    states: PlotKeltnerchannelsStatesOptions = null,
+    states: SeriesStatesOptionsObject = null,
     step: OptionsStepValue = null,
     stickyTracking: js.UndefOr[Boolean] = js.undefined,
     threshold: Int | Double = null,
-    tooltip: PlotKeltnerchannelsTooltipOptions = null,
+    tooltip: SeriesTooltipOptionsObject = null,
     topLine: PlotKeltnerchannelsTopLineOptions = null,
     turboThreshold: Int | Double = null,
     visible: js.UndefOr[Boolean] = js.undefined,
     zIndex: Int | Double = null,
     zoneAxis: String = null,
-    zones: js.Array[PlotKeltnerchannelsZonesOptions] = null
+    zones: js.Array[SeriesZonesOptionsObject] = null
   ): PlotKeltnerchannelsOptions = {
     val __obj = js.Dynamic.literal()
     if (accessibility != null) __obj.updateDynamic("accessibility")(accessibility.asInstanceOf[js.Any])
@@ -555,6 +562,7 @@ object PlotKeltnerchannelsOptions {
     if (dashStyle != null) __obj.updateDynamic("dashStyle")(dashStyle.asInstanceOf[js.Any])
     if (dataGrouping != null) __obj.updateDynamic("dataGrouping")(dataGrouping.asInstanceOf[js.Any])
     if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
+    if (dataSorting != null) __obj.updateDynamic("dataSorting")(dataSorting.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (!js.isUndefined(enableMouseTracking)) __obj.updateDynamic("enableMouseTracking")(enableMouseTracking.asInstanceOf[js.Any])
     if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])

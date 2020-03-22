@@ -18,7 +18,7 @@ trait AnonEnd extends js.Object {
     * 辅助线起始位置，值为原始数据值，支持 callback
     */
   var start: js.UndefOr[js.Any | js.Function | (js.Array[String | Double])] = js.undefined
-  var text: js.UndefOr[Anon05] = js.undefined
+  var text: js.UndefOr[AnonAutoRotate] = js.undefined
   /**
     * 指定 guide 是否绘制在 canvas 最上层，默认为 false, 即绘制在最下层
     */
@@ -31,7 +31,7 @@ object AnonEnd {
     end: js.Any | js.Function | (js.Array[String | Double]) = null,
     lineStyle: line = null,
     start: js.Any | js.Function | (js.Array[String | Double]) = null,
-    text: Anon05 = null,
+    text: AnonAutoRotate = null,
     top: js.UndefOr[Boolean] = js.undefined
   ): AnonEnd = {
     val __obj = js.Dynamic.literal()

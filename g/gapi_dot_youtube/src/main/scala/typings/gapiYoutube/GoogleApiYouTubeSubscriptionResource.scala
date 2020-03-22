@@ -24,7 +24,7 @@ trait GoogleApiYouTubeSubscriptionResource extends js.Object {
   /**
     * The snippet object contains basic details about the subscription, including its title and the channel that the user subscribed to.
     */
-  var snippet: AnonChannelIdChannelTitleDescriptionPublishedAtResourceId
+  var snippet: AnonChannelIdChannelTitle
   /**
     *
     */
@@ -38,7 +38,7 @@ object GoogleApiYouTubeSubscriptionResource {
     etag: String,
     id: String,
     kind: String,
-    snippet: AnonChannelIdChannelTitleDescriptionPublishedAtResourceId,
+    snippet: AnonChannelIdChannelTitle,
     subscriberSnippet: AnonChannelIdDescription
   ): GoogleApiYouTubeSubscriptionResource = {
     val __obj = js.Dynamic.literal(contentDetails = contentDetails.asInstanceOf[js.Any], etag = etag.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], snippet = snippet.asInstanceOf[js.Any], subscriberSnippet = subscriberSnippet.asInstanceOf[js.Any])

@@ -537,14 +537,14 @@ trait ServiceCatalog extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeServiceActionOutput, Unit]
   ): Request[DescribeServiceActionOutput, AWSError] = js.native
   /**
-    * 
+    * Finds the default parameters for a specific self-service action on a specific provisioned product and returns a map of the results to the user.
     */
   def describeServiceActionExecutionParameters(): Request[DescribeServiceActionExecutionParametersOutput, AWSError] = js.native
   def describeServiceActionExecutionParameters(
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeServiceActionExecutionParametersOutput, Unit]
   ): Request[DescribeServiceActionExecutionParametersOutput, AWSError] = js.native
   /**
-    * 
+    * Finds the default parameters for a specific self-service action on a specific provisioned product and returns a map of the results to the user.
     */
   def describeServiceActionExecutionParameters(params: DescribeServiceActionExecutionParametersInput): Request[DescribeServiceActionExecutionParametersOutput, AWSError] = js.native
   def describeServiceActionExecutionParameters(

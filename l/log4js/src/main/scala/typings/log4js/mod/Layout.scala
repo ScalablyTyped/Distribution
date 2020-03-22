@@ -23,16 +23,15 @@ trait Layout extends js.Object
 
 object Layout {
   @scala.inline
-  def DummyLayout(`type`: dummy): Layout = {
+  def MessagePassThroughLayout(`type`: messagePassThrough): Layout = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Layout]
   }
   @scala.inline
-  def CustomLayout(`type`: String, StringDictionary: /* key */ StringDictionary[js.Any] = null): Layout = {
+  def DummyLayout(`type`: dummy): Layout = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Layout]
   }
   @scala.inline
@@ -48,16 +47,17 @@ object Layout {
     __obj.asInstanceOf[Layout]
   }
   @scala.inline
+  def CustomLayout(`type`: String, StringDictionary: /* key */ StringDictionary[js.Any] = null): Layout = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[Layout]
+  }
+  @scala.inline
   def PatternLayout(pattern: String, `type`: pattern, tokens: StringDictionary[Token] = null): Layout = {
     val __obj = js.Dynamic.literal(pattern = pattern.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (tokens != null) __obj.updateDynamic("tokens")(tokens.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Layout]
-  }
-  @scala.inline
-  def MessagePassThroughLayout(`type`: messagePassThrough): Layout = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Layout]
   }
 }

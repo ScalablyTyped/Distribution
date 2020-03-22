@@ -1,6 +1,6 @@
 package typings.gapiClientDrive.gapi.client.drive
 
-import typings.gapiClientDrive.AnonCanAddChildrenCanChangeTeamDriveBackground
+import typings.gapiClientDrive.AnonCanChangeTeamDriveBackground
 import typings.gapiClientDrive.AnonId
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,7 +15,7 @@ trait TeamDrive extends js.Object {
   /** A short-lived link to this Team Drive's background image. */
   var backgroundImageLink: js.UndefOr[String] = js.undefined
   /** Capabilities the current user has on this Team Drive. */
-  var capabilities: js.UndefOr[AnonCanAddChildrenCanChangeTeamDriveBackground] = js.undefined
+  var capabilities: js.UndefOr[AnonCanChangeTeamDriveBackground] = js.undefined
   /** The color of this Team Drive as an RGB hex string. It can only be set on a drive.teamdrives.update request that does not set themeId. */
   var colorRgb: js.UndefOr[String] = js.undefined
   /** The time at which the Team Drive was created (RFC 3339 date-time). */
@@ -39,7 +39,7 @@ object TeamDrive {
   def apply(
     backgroundImageFile: AnonId = null,
     backgroundImageLink: String = null,
-    capabilities: AnonCanAddChildrenCanChangeTeamDriveBackground = null,
+    capabilities: AnonCanChangeTeamDriveBackground = null,
     colorRgb: String = null,
     createdTime: String = null,
     id: String = null,

@@ -1,10 +1,10 @@
 package typings.tstl.mod
 
 import org.scalablytyped.runtime.Instantiable0
+import typings.tstl.ReadonlyIForwardIteratorb
 import typings.tstl.arrayContainerMod.ArrayContainer
 import typings.tstl.arrayIteratorMod.ArrayIterator
 import typings.tstl.arrayReverseIteratorMod.ArrayReverseIterator
-import typings.tstl.iforwarditeratorMod.IForwardIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,10 +34,7 @@ class VectorBoolean ()
     * @param first Input iterator of the first position.
     * @param last Input iteartor of the last position.
     */
-  def this(
-    first: IForwardIterator[Boolean, IForwardIterator[Boolean, _]],
-    last: IForwardIterator[Boolean, IForwardIterator[Boolean, _]]
-  ) = this()
+  def this(first: ReadonlyIForwardIteratorb, last: ReadonlyIForwardIteratorb) = this()
   /**
     * Fill Constructor.
     *

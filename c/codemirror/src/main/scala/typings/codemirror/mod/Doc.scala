@@ -1,11 +1,11 @@
 package typings.codemirror.mod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.codemirror.AnonAnchorHead
 import typings.codemirror.AnonBias
-import typings.codemirror.AnonFromMode
+import typings.codemirror.AnonHead
 import typings.codemirror.AnonInsertLeft
 import typings.codemirror.AnonRedo
+import typings.codemirror.AnonSharedHist
 import typings.std.HTMLElement
 import typings.std.RegExp
 import scala.scalajs.js
@@ -112,10 +112,10 @@ trait Doc extends js.Object {
   /** Get the number of lines in the editor. */
   def lineCount(): Double = js.native
   /** Create a new document that's linked to the target document. Linked documents will stay in sync (changes to one are also applied to the other) until unlinked. */
-  def linkedDoc(options: AnonFromMode): Doc = js.native
+  def linkedDoc(options: AnonSharedHist): Doc = js.native
   /** Retrieves a list of all current selections. These will always be sorted, and never overlap (overlapping selections are merged).
     Each object in the array contains anchor and head properties referring to {line, ch} objects. */
-  def listSelections(): js.Array[AnonAnchorHead] = js.native
+  def listSelections(): js.Array[AnonHead] = js.native
   /** Set the editor content as 'clean', a flag that it will retain until it is edited, and which will be set again
     when such an edit is undone again. Useful to track whether the content needs to be saved. This function is deprecated
     in favor of changeGeneration, which allows multiple subsystems to track different notions of cleanness without interfering.*/
@@ -171,9 +171,9 @@ trait Doc extends js.Object {
     number, it determines which selection is the primary one. When it is not given, the primary index is taken from
     the previous selection, or set to the last range if the previous selection had less ranges than the new one.
     Supports the same options as setSelection. */
-  def setSelections(ranges: js.Array[AnonAnchorHead]): Unit = js.native
-  def setSelections(ranges: js.Array[AnonAnchorHead], primary: Double): Unit = js.native
-  def setSelections(ranges: js.Array[AnonAnchorHead], primary: Double, options: AnonBias): Unit = js.native
+  def setSelections(ranges: js.Array[AnonHead]): Unit = js.native
+  def setSelections(ranges: js.Array[AnonHead], primary: Double): Unit = js.native
+  def setSelections(ranges: js.Array[AnonHead], primary: Double, options: AnonBias): Unit = js.native
   /** Set the editor content. */
   def setValue(content: String): Unit = js.native
   /** Return true if any text is selected. */

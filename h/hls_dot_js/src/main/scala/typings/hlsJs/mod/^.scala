@@ -3,7 +3,7 @@ package typings.hlsJs.mod
 import typings.hlsJs.AnonAUDIOTRACKLOADED
 import typings.hlsJs.AnonAUDIOTRACKLOADERROR
 import typings.hlsJs.AnonKEYSYSTEMERROR
-import typings.std.Partial
+import typings.hlsJs.PartialConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
   * Constructor. Can be provided an HlsConfig object as default properties and or overrides
   */
 class ^ () extends Hls {
-  def this(config: Partial[Config]) = this()
+  def this(config: PartialConfig) = this()
 }
 
 @JSImport("hls.js", JSImport.Namespace)

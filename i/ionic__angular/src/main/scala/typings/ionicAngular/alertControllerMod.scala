@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ionic/angular/dist/providers/alert-controller", JSImport.Namespace)
+@JSImport("@ionic/angular/providers/alert-controller", JSImport.Namespace)
 @js.native
 object alertControllerMod extends js.Object {
   @js.native

@@ -12,14 +12,14 @@ trait IOptions extends js.Object {
   /**
     * The session used by the context connector.
     */
-  var editor: IEditor
+  var editor: IEditor | Null
 }
 
 object IOptions {
   @scala.inline
-  def apply(editor: IEditor): IOptions = {
-    val __obj = js.Dynamic.literal(editor = editor.asInstanceOf[js.Any])
-  
+  def apply(editor: IEditor = null): IOptions = {
+    val __obj = js.Dynamic.literal()
+    if (editor != null) __obj.updateDynamic("editor")(editor.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

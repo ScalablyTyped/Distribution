@@ -1,7 +1,7 @@
 package typings.awsLambda.cloudformationCustomResourceMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.awsLambda.AnonKeyServiceToken
+import typings.awsLambda.AnonDictKey
 import typings.awsLambda.awsLambdaStrings.Create
 import typings.awsLambda.awsLambdaStrings.Delete
 import typings.awsLambda.awsLambdaStrings.Update
@@ -22,7 +22,7 @@ object CloudFormationCustomResourceEvent {
     LogicalResourceId: String,
     RequestId: String,
     RequestType: Create,
-    ResourceProperties: AnonKeyServiceToken,
+    ResourceProperties: AnonDictKey,
     ResourceType: String,
     ResponseURL: String,
     ServiceToken: String,
@@ -39,7 +39,7 @@ object CloudFormationCustomResourceEvent {
     PhysicalResourceId: String,
     RequestId: String,
     RequestType: Update,
-    ResourceProperties: AnonKeyServiceToken,
+    ResourceProperties: AnonDictKey,
     ResourceType: String,
     ResponseURL: String,
     ServiceToken: String,
@@ -55,7 +55,7 @@ object CloudFormationCustomResourceEvent {
     PhysicalResourceId: String,
     RequestId: String,
     RequestType: Delete,
-    ResourceProperties: AnonKeyServiceToken,
+    ResourceProperties: AnonDictKey,
     ResourceType: String,
     ResponseURL: String,
     ServiceToken: String,

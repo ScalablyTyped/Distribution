@@ -1,12 +1,14 @@
 package typings.wordpressApiFetch.mod.Schema
 
 import typings.std.Record
-import typings.wordpressApiFetch.AnonHref
+import typings.wordpressApiFetch.AnonDictk
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait BaseCategory extends BaseResponse {
+trait BaseCategory
+  extends BaseResponse
+     with Category[js.Any] {
   var count: Double
   var description: String
   var id: Double
@@ -21,7 +23,7 @@ trait BaseCategory extends BaseResponse {
 object BaseCategory {
   @scala.inline
   def apply(
-    _links: Record[String, js.Array[AnonHref]],
+    _links: Record[String, js.Array[AnonDictk]],
     count: Double,
     description: String,
     id: Double,

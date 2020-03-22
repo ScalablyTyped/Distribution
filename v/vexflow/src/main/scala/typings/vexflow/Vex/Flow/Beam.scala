@@ -2,7 +2,7 @@ package typings.vexflow.Vex.Flow
 
 import typings.vexflow.AnonBeammiddleonly
 import typings.vexflow.AnonEnd
-import typings.vexflow.Anon_FillStyle
+import typings.vexflow.AnonFillStyle_
 import typings.vexflow.Vex.IRenderContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -27,7 +27,7 @@ class Beam protected () extends js.Object {
   def postFormat(): Beam = js.native
   def preFormat(): Beam = js.native
   def setContext(context: IRenderContext): Beam = js.native
-  def setStyle(style: Anon_FillStyle): Beam = js.native
+  def setStyle(style: AnonFillStyle_): Beam = js.native
 }
 
 /* static members */

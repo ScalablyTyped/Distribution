@@ -127,7 +127,7 @@ trait ActiveXObject extends js.Object {
     obj: Application,
     event: PresentationSync,
     argNames: js.Tuple2[Pres, SyncEventType],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonPresSyncEventType, Unit]
+    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonSyncEventType, Unit]
   ): Unit = js.native
   def on(
     obj: Application,
@@ -139,13 +139,13 @@ trait ActiveXObject extends js.Object {
     obj: Application,
     event: ProtectedViewWindowBeforeClose,
     argNames: js.Tuple3[ProtViewWindow, ProtectedViewCloseReason, Cancel],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonCancelProtViewWindow, Unit]
+    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonProtectedViewCloseReason, Unit]
   ): Unit = js.native
   def on(
     obj: Application,
     event: ProtectedViewWindowBeforeEdit,
     argNames: js.Tuple2[ProtViewWindow, Cancel],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonCancelProtViewWindowBoolean, Unit]
+    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonCancelProtViewWindow, Unit]
   ): Unit = js.native
   def on(
     obj: Application,
@@ -217,13 +217,13 @@ trait ActiveXObject extends js.Object {
     obj: Application,
     event: WindowBeforeDoubleClick,
     argNames: js.Tuple2[Sel, Cancel],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonCancelSel, Unit]
+    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonSel, Unit]
   ): Unit = js.native
   def on(
     obj: Application,
     event: WindowBeforeRightClick,
     argNames: js.Tuple2[Sel, Cancel],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonCancelSel, Unit]
+    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonSel, Unit]
   ): Unit = js.native
   def on(
     obj: Application,
@@ -235,7 +235,7 @@ trait ActiveXObject extends js.Object {
     obj: Application,
     event: WindowSelectionChange,
     argNames: js.Array[Sel],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonSel, Unit]
+    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonSelSelection, Unit]
   ): Unit = js.native
   @JSName("on")
   def on_GotFocus(

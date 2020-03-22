@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation._
 
 package object Accordion {
   type ClassNameSettings = typings.semanticUiAccordion.SemanticUI.Accordion.ClassNameSettings.Param
-  type ErrorSettings = typings.semanticUiAccordion.SemanticUI.Accordion.ErrorSettings.Param
+  type ErrorSettings = typings.semanticUiAccordion.SemanticUI.Accordion.ErrorSettings_
   type SelectorSettings = typings.semanticUiAccordion.SemanticUI.Accordion.SelectorSettings.Param
 }

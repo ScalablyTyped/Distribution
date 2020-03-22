@@ -3,7 +3,7 @@ package typings.jupyterlabApplication.labMod.JupyterLab
 import org.scalablytyped.runtime.TopLevel
 import typings.jupyterlabApplication.AnonMatches
 import typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.IExtensionModule
-import typings.phosphorCoreutils.mod.Token
+import typings.luminoCoreutils.mod.Token
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 object webGLShadowMapMod extends js.Object {
   @js.native
   class WebGLShadowMap protected () extends js.Object {
-    def this(_renderer: WebGLRenderer, _lights: js.Array[_], _objects: js.Array[_], capabilities: js.Any) = this()
+    def this(_renderer: WebGLRenderer, _objects: js.Array[_], maxTextureSize: Double) = this()
     var autoUpdate: Boolean = js.native
     /**
     	 * @deprecated Use {@link WebGLShadowMap#renderReverseSided .shadowMap.renderReverseSided} instead.

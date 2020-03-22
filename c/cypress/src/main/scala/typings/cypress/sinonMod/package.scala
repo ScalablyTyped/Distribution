@@ -19,10 +19,4 @@ package object sinonMod {
     */
   type SinonStubbedMember[T] = T | typings.cypress.sinonMod.SinonStub
   type SinonTimerId = scala.Double | typings.cypress.AnonId
-  /**
-    * Stubbed type of an object with members replaced by stubs.
-    *
-    * @template TType Type being stubbed.
-    */
-  type StubbableType[TType] = js.Function with js.Object
 }

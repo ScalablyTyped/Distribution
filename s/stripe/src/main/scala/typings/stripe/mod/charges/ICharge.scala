@@ -1,8 +1,8 @@
 package typings.stripe.mod.charges
 
 import typings.stripe.AnonAddress
-import typings.stripe.AnonAmountDestination
-import typings.stripe.AnonFraudulent
+import typings.stripe.AnonDestination
+import typings.stripe.AnonStripereport
 import typings.stripe.mod.IMetadata
 import typings.stripe.mod.IResourceObject
 import typings.stripe.mod.IShippingInformation
@@ -101,7 +101,7 @@ trait ICharge extends IResourceObject {
   /**
     * Hash with information on fraud assessments for the charge.
     */
-  var fraud_details: AnonFraudulent
+  var fraud_details: AnonStripereport
   /**
     * ID of the invoice this charge is for if one exists. [Expandable]
     */
@@ -213,7 +213,7 @@ trait ICharge extends IResourceObject {
     * An optional dictionary including the account to automatically transfer
     * to as part of a destination charge. See the Connect documentation for details.
     */
-  var transfer_data: js.UndefOr[AnonAmountDestination | Null] = js.undefined
+  var transfer_data: js.UndefOr[AnonDestination | Null] = js.undefined
   /**
     * A string that identifies this transaction as part of a group.
     * See the [Connect documentation]
@@ -232,7 +232,7 @@ object ICharge {
     captured: Boolean,
     created: Double,
     currency: String,
-    fraud_details: AnonFraudulent,
+    fraud_details: AnonStripereport,
     id: String,
     livemode: Boolean,
     metadata: IMetadata,
@@ -268,7 +268,7 @@ object ICharge {
     statement_descriptor: String = null,
     statement_descriptor_suffix: String = null,
     transfer: String | ITransfer = null,
-    transfer_data: AnonAmountDestination = null,
+    transfer_data: AnonDestination = null,
     transfer_group: String = null
   ): ICharge = {
     val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], amount_refunded = amount_refunded.asInstanceOf[js.Any], balance_transaction = balance_transaction.asInstanceOf[js.Any], captured = captured.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], fraud_details = fraud_details.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], paid = paid.asInstanceOf[js.Any], receipt_url = receipt_url.asInstanceOf[js.Any], refunded = refunded.asInstanceOf[js.Any], refunds = refunds.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])

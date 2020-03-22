@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "highcharts-react-official" : "2.2.2"
+      "highcharts-react-official" : "3.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "highcharts-react-official" : "2.2.2"
+      "highcharts-react-official" : "3.0.0"
     }
   ],
   "compile-devDependencies" : [

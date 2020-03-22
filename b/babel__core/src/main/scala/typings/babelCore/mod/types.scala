@@ -53,7 +53,6 @@ import typings.babelCore.babelCoreStrings.minus
 import typings.babelCore.babelCoreStrings.module
 import typings.babelCore.babelCoreStrings.number
 import typings.babelCore.babelCoreStrings.plus
-import typings.babelCore.babelCoreStrings.property
 import typings.babelCore.babelCoreStrings.script
 import typings.babelCore.babelCoreStrings.set
 import typings.babelCore.babelCoreStrings.string
@@ -69,6 +68,7 @@ import typings.babelTypes.AnonCooked
 import typings.babelTypes.AnonPreserveComments
 import typings.babelTypes.AnonToString
 import typings.babelTypes.AnonType
+import typings.babelTypes.PickMemberExpressionobjec
 import typings.babelTypes.mod.AnyTypeAnnotation_
 import typings.babelTypes.mod.ArgumentPlaceholder_
 import typings.babelTypes.mod.ArrayExpression_
@@ -324,7 +324,6 @@ import typings.babelTypes.mod.WithStatement_
 import typings.babelTypes.mod.YieldExpression_
 import typings.std.Extract
 import typings.std.Partial
-import typings.std.Pick
 import typings.std.Record
 import typings.std.RegExp
 import scala.scalajs.js
@@ -339,12 +338,12 @@ object types extends js.Object {
   def addComments[T /* <: typings.babelTypes.mod.Node */](node: T, `type`: CommentTypeShorthand, comments: js.Array[Comment]): T = js.native
   def anyTypeAnnotation(): AnyTypeAnnotation_ = js.native
   @JSName("appendToMemberExpression")
-  def appendToMemberExpression_property[T /* <: Pick[MemberExpression_, `object` | property] */](
+  def appendToMemberExpression_property[T /* <: PickMemberExpressionobjec */](
     member: T,
     append: /* import warning: importer.ImportType#apply Failed type conversion: @babel/types.@babel/types.MemberExpression['property'] */ js.Any
   ): T = js.native
   @JSName("appendToMemberExpression")
-  def appendToMemberExpression_property[T /* <: Pick[MemberExpression_, `object` | property] */](
+  def appendToMemberExpression_property[T /* <: PickMemberExpressionobjec */](
     member: T,
     append: /* import warning: importer.ImportType#apply Failed type conversion: @babel/types.@babel/types.MemberExpression['property'] */ js.Any,
     computed: Boolean
@@ -2167,8 +2166,8 @@ object types extends js.Object {
   ): /* is @babel/types.@babel/types.Node */ Boolean = js.native
   def is(`type`: String, n: Null, required: Partial[typings.babelTypes.mod.Node]): /* is @babel/types.@babel/types.Node */ Boolean = js.native
   def is(`type`: String, n: typings.babelTypes.mod.Node): /* is @babel/types.@babel/types.Node */ Boolean = js.native
-  def is[T /* <: /* import warning: importer.ImportType#apply Failed type conversion: @babel/types.@babel/types.Node['type'] */ js.Any */](`type`: T): /* is std.Extract<@babel/types.@babel/types.Node, @babel/types.Anon_Type<T>> */ Boolean = js.native
-  def is[T /* <: /* import warning: importer.ImportType#apply Failed type conversion: @babel/types.@babel/types.Node['type'] */ js.Any */](`type`: T, n: typings.babelTypes.mod.Node): /* is std.Extract<@babel/types.@babel/types.Node, @babel/types.Anon_Type<T>> */ Boolean = js.native
+  def is[T /* <: /* import warning: importer.ImportType#apply Failed type conversion: @babel/types.@babel/types.Node['type'] */ js.Any */](`type`: T): /* is std.Extract<@babel/types.@babel/types.Node, @babel/types.AnonType<T>> */ Boolean = js.native
+  def is[T /* <: /* import warning: importer.ImportType#apply Failed type conversion: @babel/types.@babel/types.Node['type'] */ js.Any */](`type`: T, n: typings.babelTypes.mod.Node): /* is std.Extract<@babel/types.@babel/types.Node, @babel/types.AnonType<T>> */ Boolean = js.native
   def is[T /* <: /* import warning: importer.ImportType#apply Failed type conversion: @babel/types.@babel/types.Node['type'] */ js.Any */, P /* <: Extract[typings.babelTypes.mod.Node, AnonType[T]] */](`type`: T, n: js.UndefOr[typings.babelTypes.mod.Node], required: Partial[P]): /* is P */ Boolean = js.native
   def is[T /* <: /* import warning: importer.ImportType#apply Failed type conversion: @babel/types.@babel/types.Node['type'] */ js.Any */, P /* <: Extract[typings.babelTypes.mod.Node, AnonType[T]] */](`type`: T, n: Null, required: Partial[P]): /* is P */ Boolean = js.native
   def isAnyTypeAnnotation(): /* is @babel/types.@babel/types.AnyTypeAnnotation */ Boolean = js.native
@@ -4045,7 +4044,7 @@ object types extends js.Object {
   def placeholder_Statement(expectedNode: typings.babelCore.babelCoreStrings.Statement, name: Identifier_): Placeholder_ = js.native
   @JSName("placeholder")
   def placeholder_StringLiteral(expectedNode: StringLiteral, name: Identifier_): Placeholder_ = js.native
-  def prependToMemberExpression[T /* <: Pick[MemberExpression_, `object` | property] */](member: T, prepend: Expression): T = js.native
+  def prependToMemberExpression[T /* <: PickMemberExpressionobjec */](member: T, prepend: Expression): T = js.native
   def privateName(id: Identifier_): PrivateName_ = js.native
   def program(body: js.Array[Statement]): Program_ = js.native
   def program(body: js.Array[Statement], directives: js.Array[Directive_]): Program_ = js.native

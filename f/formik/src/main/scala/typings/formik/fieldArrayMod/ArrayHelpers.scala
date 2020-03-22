@@ -5,21 +5,37 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ArrayHelpers extends js.Object {
+  /** Curried fn to insert an element at a given index into the array */
   def handleInsert(index: Double, value: js.Any): js.Function0[Unit]
+  /** Imperatively move an element in an array to another index */
   def handleMove(from: Double, to: Double): js.Function0[Unit]
+  /** Curried fn to remove a value from the end of the array */
   def handlePop(): js.Function0[Unit]
+  /** Curried fn to add a value to the end of an array */
   def handlePush(obj: js.Any): js.Function0[Unit]
+  /** Curried fn to remove an element at an index of an array */
   def handleRemove(index: Double): js.Function0[Unit]
+  /** Curried fn to replace an element at a given index into the array */
   def handleReplace(index: Double, value: js.Any): js.Function0[Unit]
+  /** Curried fn to swap two values in an array */
   def handleSwap(indexA: Double, indexB: Double): js.Function0[Unit]
+  /** Curried fn to add an element to the beginning of an array */
   def handleUnshift(value: js.Any): js.Function0[Unit]
+  /** Imperatively insert an element at a given index into the array */
   def insert(index: Double, value: js.Any): Unit
+  /** Imperatively move an element in an array to another index */
   def move(from: Double, to: Double): Unit
+  /** Imperatively remove and return value from the end of the array */
   def pop[T](): js.UndefOr[T]
+  /** Imperatively add a value to the end of an array */
   def push(obj: js.Any): Unit
+  /** Imperatively remove and element at an index of an array */
   def remove[T](index: Double): js.UndefOr[T]
+  /** Imperatively replace a value at an index of an array  */
   def replace(index: Double, value: js.Any): Unit
+  /** Imperatively swap two values in an array */
   def swap(indexA: Double, indexB: Double): Unit
+  /** Imperatively add an element to the beginning of an array and return its length */
   def unshift(value: js.Any): Double
 }
 

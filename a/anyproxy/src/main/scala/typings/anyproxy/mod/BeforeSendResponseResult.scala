@@ -1,17 +1,17 @@
 package typings.anyproxy.mod
 
-import typings.std.Partial
+import typings.anyproxy.PartialResponse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait BeforeSendResponseResult extends js.Object {
-  var response: Partial[Response]
+  var response: PartialResponse
 }
 
 object BeforeSendResponseResult {
   @scala.inline
-  def apply(response: Partial[Response]): BeforeSendResponseResult = {
+  def apply(response: PartialResponse): BeforeSendResponseResult = {
     val __obj = js.Dynamic.literal(response = response.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BeforeSendResponseResult]

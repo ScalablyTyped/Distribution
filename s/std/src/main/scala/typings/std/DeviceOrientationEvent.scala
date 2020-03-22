@@ -23,5 +23,7 @@ object DeviceOrientationEvent
       /* type */ java.lang.String, 
       /* eventInitDict */ DeviceOrientationEventInit, 
       DeviceOrientationEvent
-    ]
+    ] {
+  def requestPermission(): js.Promise[PermissionState] = js.native
+}
 

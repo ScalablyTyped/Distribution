@@ -1,6 +1,6 @@
 package typings.oracleOraclejet.ojchartMod
 
-import typings.oracleOraclejet.AnonMedianSvgClassNameMedianSvgStyle
+import typings.oracleOraclejet.AnonMedianSvgStyle
 import typings.oracleOraclejet.mod.JetElement
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.mod.JetSetPropertyType
@@ -90,7 +90,6 @@ import typings.oracleOraclejet.oracleOraclejetStrings.largeTriangle
 import typings.oracleOraclejet.oracleOraclejetStrings.load
 import typings.oracleOraclejet.oracleOraclejetStrings.loadeddata
 import typings.oracleOraclejet.oracleOraclejetStrings.loadedmetadata
-import typings.oracleOraclejet.oracleOraclejetStrings.loadend
 import typings.oracleOraclejet.oracleOraclejetStrings.loadstart
 import typings.oracleOraclejet.oracleOraclejetStrings.lostpointercapture
 import typings.oracleOraclejet.oracleOraclejetStrings.low
@@ -226,7 +225,7 @@ import scala.scalajs.js.annotation._
 trait ojChartItem extends JetElement[ojChartItemSettableProperties] {
   var borderColor: js.UndefOr[String] = js.native
   var borderWidth: js.UndefOr[Double] = js.native
-  var boxPlot: js.UndefOr[AnonMedianSvgClassNameMedianSvgStyle] = js.native
+  var boxPlot: js.UndefOr[AnonMedianSvgStyle] = js.native
   var categories: js.UndefOr[js.Array[String]] = js.native
   var close: js.UndefOr[Double] = js.native
   var color: js.UndefOr[String] = js.native
@@ -247,10 +246,7 @@ trait ojChartItem extends JetElement[ojChartItemSettableProperties] {
   var markerSize: js.UndefOr[Double] = js.native
   var onBorderColorChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[String]], _]) | Null = js.native
   var onBorderWidthChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[Double]], _]) | Null = js.native
-  var onBoxPlotChanged: (js.Function1[
-    /* event */ JetElementCustomEvent[js.UndefOr[AnonMedianSvgClassNameMedianSvgStyle]], 
-    _
-  ]) | Null = js.native
+  var onBoxPlotChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[AnonMedianSvgStyle]], _]) | Null = js.native
   var onCategoriesChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[js.Array[String]]], _]) | Null = js.native
   var onCloseChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[Double]], _]) | Null = js.native
   var onColorChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[String]], _]) | Null = js.native
@@ -530,7 +526,7 @@ trait ojChartItem extends JetElement[ojChartItemSettableProperties] {
     `type`: boxPlotChanged,
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[js.UndefOr[AnonMedianSvgClassNameMedianSvgStyle]], 
+      /* ev */ JetElementCustomEvent[js.UndefOr[AnonMedianSvgStyle]], 
       _
     ]
   ): Unit = js.native
@@ -539,7 +535,7 @@ trait ojChartItem extends JetElement[ojChartItemSettableProperties] {
     `type`: boxPlotChanged,
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[js.UndefOr[AnonMedianSvgClassNameMedianSvgStyle]], 
+      /* ev */ JetElementCustomEvent[js.UndefOr[AnonMedianSvgStyle]], 
       _
     ],
     useCapture: Boolean
@@ -961,17 +957,6 @@ trait ojChartItem extends JetElement[ojChartItemSettableProperties] {
   def addEventListener_loadedmetadata(
     `type`: loadedmetadata,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event_, _],
-    useCapture: Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_loadend(
-    `type`: loadend,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent[EventTarget], _]
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_loadend(
-    `type`: loadend,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent[EventTarget], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -1616,7 +1601,7 @@ trait ojChartItem extends JetElement[ojChartItemSettableProperties] {
   @JSName("getProperty")
   def getProperty_borderWidth(property: borderWidth): js.UndefOr[Double] = js.native
   @JSName("getProperty")
-  def getProperty_boxPlot(property: boxPlot): js.UndefOr[AnonMedianSvgClassNameMedianSvgStyle] = js.native
+  def getProperty_boxPlot(property: boxPlot): js.UndefOr[AnonMedianSvgStyle] = js.native
   @JSName("getProperty")
   def getProperty_categories(property: categories): js.UndefOr[js.Array[String]] = js.native
   @JSName("getProperty")
@@ -1714,7 +1699,7 @@ trait ojChartItem extends JetElement[ojChartItemSettableProperties] {
   @JSName("setProperty")
   def setProperty_borderWidth(property: borderWidth, value: Double): Unit = js.native
   @JSName("setProperty")
-  def setProperty_boxPlot(property: boxPlot, value: AnonMedianSvgClassNameMedianSvgStyle): Unit = js.native
+  def setProperty_boxPlot(property: boxPlot, value: AnonMedianSvgStyle): Unit = js.native
   @JSName("setProperty")
   def setProperty_categories(property: categories, value: js.Array[String]): Unit = js.native
   @JSName("setProperty")

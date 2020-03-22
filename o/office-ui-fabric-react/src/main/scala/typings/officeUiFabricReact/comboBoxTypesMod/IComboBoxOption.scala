@@ -1,8 +1,8 @@
 package typings.officeUiFabricReact.comboBoxTypesMod
 
+import typings.officeUiFabricReact.PartialIComboBoxOptionSty
 import typings.officeUiFabricReact.selectableOptionTypesMod.ISelectableOption
 import typings.officeUiFabricReact.selectableOptionTypesMod.SelectableOptionMenuItemType
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ trait IComboBoxOption extends ISelectableOption {
     * common styles to all comboBox option please use
     * the prop comboBoxOptionStyles
     */
-  var styles: js.UndefOr[Partial[IComboBoxOptionStyles]] = js.undefined
+  var styles: js.UndefOr[PartialIComboBoxOptionSty] = js.undefined
   /**
     * In scenarios where embedded data is used at the text prop, we will use the ariaLabel prop
     * to set the aria-label and preview text. Default to false
@@ -35,7 +35,7 @@ object IComboBoxOption {
     index: Int | Double = null,
     itemType: SelectableOptionMenuItemType = null,
     selected: js.UndefOr[Boolean] = js.undefined,
-    styles: Partial[IComboBoxOptionStyles] = null,
+    styles: PartialIComboBoxOptionSty = null,
     title: String = null,
     useAriaLabelAsText: js.UndefOr[Boolean] = js.undefined
   ): IComboBoxOption = {

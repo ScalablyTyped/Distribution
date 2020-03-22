@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/angular", "VirtualFooter")
 @js.native
 class VirtualFooter protected ()
-  extends typings.ionicAngular.distMod.VirtualFooter {
+  extends typings.ionicAngular.virtualFooterMod.VirtualFooter {
   def this(templateRef: TemplateRef[VirtualContext]) = this()
 }
 

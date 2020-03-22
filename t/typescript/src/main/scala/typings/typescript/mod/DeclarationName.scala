@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
   - typings.typescript.mod.Identifier
+  - typings.typescript.mod.PrivateIdentifier
   - typings.typescript.mod.StringLiteralLike
   - typings.typescript.mod.NumericLiteral
   - typings.typescript.mod.ComputedPropertyName

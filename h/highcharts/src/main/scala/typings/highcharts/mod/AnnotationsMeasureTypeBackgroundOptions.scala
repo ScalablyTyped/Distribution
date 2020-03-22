@@ -12,7 +12,7 @@ trait AnnotationsMeasureTypeBackgroundOptions extends js.Object {
   /**
     * (Highstock) The color of border.
     */
-  var stroke: js.UndefOr[js.Any] = js.undefined
+  var stroke: js.UndefOr[String] = js.undefined
   /**
     * (Highstock) The width of border.
     */
@@ -21,7 +21,7 @@ trait AnnotationsMeasureTypeBackgroundOptions extends js.Object {
 
 object AnnotationsMeasureTypeBackgroundOptions {
   @scala.inline
-  def apply(fill: String = null, stroke: js.Any = null, strokeWidth: Int | Double = null): AnnotationsMeasureTypeBackgroundOptions = {
+  def apply(fill: String = null, stroke: String = null, strokeWidth: Int | Double = null): AnnotationsMeasureTypeBackgroundOptions = {
     val __obj = js.Dynamic.literal()
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])

@@ -21,13 +21,13 @@ trait ModifyVpcEndpointServicePermissionsRequest extends js.Object {
   /**
     * The ID of the service.
     */
-  var ServiceId: String = js.native
+  var ServiceId: VpcEndpointServiceId = js.native
 }
 
 object ModifyVpcEndpointServicePermissionsRequest {
   @scala.inline
   def apply(
-    ServiceId: String,
+    ServiceId: VpcEndpointServiceId,
     AddAllowedPrincipals: ValueStringList = null,
     DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     RemoveAllowedPrincipals: ValueStringList = null

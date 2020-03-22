@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "sendgrid-rest" : "2.6.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "sendgrid-rest" : "2.6.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

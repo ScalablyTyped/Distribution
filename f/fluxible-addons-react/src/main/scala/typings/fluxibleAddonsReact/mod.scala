@@ -12,17 +12,17 @@ import scala.scalajs.js.annotation._
 @js.native
 object mod extends js.Object {
   def connectToStores(
-    Component: TypeofClassComponent,
+    Component: TypeofComponent,
     stores: js.Array[(Instantiable1[/* dispatcher */ DispatcherInterface, ^[js.Object]]) | String],
     getStateFromStores: js.Function2[/* context */ ComponentContext, /* props */ js.Any, _]
-  ): TypeofClassComponent = js.native
+  ): TypeofComponent = js.native
   def connectToStores(
-    Component: TypeofClassComponent,
+    Component: TypeofComponent,
     stores: js.Array[(Instantiable1[/* dispatcher */ DispatcherInterface, ^[js.Object]]) | String],
     getStateFromStores: js.Function2[/* context */ ComponentContext, /* props */ js.Any, _],
     customContextTypes: js.Any
-  ): TypeofClassComponent = js.native
-  def provideContext(Component: TypeofClassComponent): TypeofClassComponent = js.native
-  def provideContext(Component: TypeofClassComponent, customContextTypes: js.Any): TypeofClassComponent = js.native
+  ): TypeofComponent = js.native
+  def provideContext(Component: TypeofComponent): TypeofComponent = js.native
+  def provideContext(Component: TypeofComponent, customContextTypes: js.Any): TypeofComponent = js.native
 }
 

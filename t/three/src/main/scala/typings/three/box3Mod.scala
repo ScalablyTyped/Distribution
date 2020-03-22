@@ -1,10 +1,12 @@
 package typings.three
 
 import typings.std.ArrayLike
+import typings.three.bufferAttributeMod.BufferAttribute
 import typings.three.matrix4Mod.Matrix4
 import typings.three.object3DMod.Object3D
 import typings.three.planeMod.Plane
 import typings.three.sphereMod.Sphere
+import typings.three.threeBooleans.`true`
 import typings.three.triangleMod.Triangle
 import typings.three.vector3Mod.Vector3
 import scala.scalajs.js
@@ -18,6 +20,7 @@ object box3Mod extends js.Object {
   class Box3 () extends js.Object {
     def this(min: Vector3) = this()
     def this(min: Vector3, max: Vector3) = this()
+    val isBox3: `true` = js.native
     var max: Vector3 = js.native
     var min: Vector3 = js.native
     def applyMatrix4(matrix: Matrix4): this.type = js.native
@@ -56,6 +59,7 @@ object box3Mod extends js.Object {
     def makeEmpty(): this.type = js.native
     def set(min: Vector3, max: Vector3): this.type = js.native
     def setFromArray(array: ArrayLike[Double]): this.type = js.native
+    def setFromBufferAttribute(bufferAttribute: BufferAttribute): this.type = js.native
     def setFromCenterAndSize(center: Vector3, size: Vector3): this.type = js.native
     def setFromObject(`object`: Object3D): this.type = js.native
     def setFromPoints(points: js.Array[Vector3]): this.type = js.native

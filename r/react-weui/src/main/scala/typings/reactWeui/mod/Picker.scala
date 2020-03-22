@@ -1,6 +1,6 @@
 package typings.reactWeui.mod
 
-import typings.reactWeui.AnonActionsGroups
+import typings.reactWeui.AnonGroups
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +21,7 @@ class Picker protected () extends js.Object {
 @JSImport("react-weui", "Picker")
 @js.native
 object Picker extends js.Object {
-  var defaultProps: AnonActionsGroups = js.native
+  var defaultProps: AnonGroups = js.native
   @js.native
   object propTypes extends js.Object {
     @js.native

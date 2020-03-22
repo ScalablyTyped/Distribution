@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("three/src/constants", "UnsignedShort5551Type")
 @js.native
-object UnsignedShort5551Type extends TopLevel[PixelType]
+object UnsignedShort5551Type extends TopLevel[TextureDataType]
 

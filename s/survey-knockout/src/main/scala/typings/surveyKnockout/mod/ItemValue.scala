@@ -24,6 +24,7 @@ class ItemValue protected ()
   var visibleIf: String = js.native
   /* protected */ def getConditionRunner(isVisible: Boolean): ConditionRunner = js.native
   def getData(): js.Any = js.native
+  def getLocale(): String = js.native
   def onCreating(): js.Any = js.native
   def setData(value: js.Any): Unit = js.native
   def setIsEnabled(`val`: Boolean): Unit = js.native

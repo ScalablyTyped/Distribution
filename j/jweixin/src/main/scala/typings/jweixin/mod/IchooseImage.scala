@@ -1,6 +1,6 @@
 package typings.jweixin.mod
 
-import typings.jweixin.AnonErrMsgLocalIds
+import typings.jweixin.AnonLocalIds
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,14 +17,14 @@ trait IchooseImage extends BaseParams {
   def cancel(): Unit
   /** 成功则返回图片的本地文件路径列表 tempFilePaths */
   @JSName("success")
-  def success_MIchooseImage(res: AnonErrMsgLocalIds): Unit
+  def success_MIchooseImage(res: AnonLocalIds): Unit
 }
 
 object IchooseImage {
   @scala.inline
   def apply(
     cancel: () => Unit,
-    success: AnonErrMsgLocalIds => Unit,
+    success: AnonLocalIds => Unit,
     complete: /* repeated */ js.Any => Unit = null,
     count: Int | Double = null,
     fail: /* repeated */ js.Any => Unit = null,

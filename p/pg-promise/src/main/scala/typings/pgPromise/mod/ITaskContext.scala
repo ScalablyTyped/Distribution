@@ -20,6 +20,9 @@ trait ITaskContext extends js.Object {
   val level: Double
   val parent: ITaskContext | Null
   val result: js.UndefOr[js.Any] = js.undefined
+  // Version of PostgreSQL Server to which we are connected;
+  // This property is not available with Native Bindings!
+  val serverVersion: String
   val start: Date
   val success: js.UndefOr[Boolean] = js.undefined
   val tag: js.Any
@@ -37,6 +40,7 @@ object ITaskContext {
     inTransaction: Boolean,
     isTX: Boolean,
     level: Double,
+    serverVersion: String,
     start: Date,
     tag: js.Any,
     useCount: Double,
@@ -47,7 +51,7 @@ object ITaskContext {
     success: js.UndefOr[Boolean] = js.undefined,
     txLevel: Int | Double = null
   ): ITaskContext = {
-    val __obj = js.Dynamic.literal(connected = connected.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], dc = dc.asInstanceOf[js.Any], inTransaction = inTransaction.asInstanceOf[js.Any], isTX = isTX.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], useCount = useCount.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(connected = connected.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], dc = dc.asInstanceOf[js.Any], inTransaction = inTransaction.asInstanceOf[js.Any], isTX = isTX.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], serverVersion = serverVersion.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], useCount = useCount.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (finish != null) __obj.updateDynamic("finish")(finish.asInstanceOf[js.Any])
     if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])

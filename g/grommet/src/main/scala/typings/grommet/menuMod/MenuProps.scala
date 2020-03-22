@@ -1,8 +1,8 @@
 package typings.grommet.menuMod
 
-import typings.grommet.AnonBottomLeftRight
 import typings.grommet.AnonCloseMenu
-import typings.grommet.AnonColorMedium
+import typings.grommet.AnonOpacity
+import typings.grommet.AnonTop
 import typings.grommet.dropMod.DropProps
 import typings.grommet.grommetStrings.large
 import typings.grommet.grommetStrings.medium
@@ -22,8 +22,8 @@ trait MenuProps extends js.Object {
   var a11yTitle: js.UndefOr[A11yTitleType] = js.undefined
   var alignSelf: js.UndefOr[AlignSelfType] = js.undefined
   var disabled: js.UndefOr[Boolean] = js.undefined
-  var dropAlign: js.UndefOr[AnonBottomLeftRight] = js.undefined
-  var dropBackground: js.UndefOr[String | AnonColorMedium] = js.undefined
+  var dropAlign: js.UndefOr[AnonTop] = js.undefined
+  var dropBackground: js.UndefOr[String | AnonOpacity] = js.undefined
   var dropProps: js.UndefOr[DropProps] = js.undefined
   var dropTarget: js.UndefOr[js.Object] = js.undefined
   var gridArea: js.UndefOr[GridAreaType] = js.undefined
@@ -44,8 +44,8 @@ object MenuProps {
     a11yTitle: A11yTitleType = null,
     alignSelf: AlignSelfType = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
-    dropAlign: AnonBottomLeftRight = null,
-    dropBackground: String | AnonColorMedium = null,
+    dropAlign: AnonTop = null,
+    dropBackground: String | AnonOpacity = null,
     dropProps: DropProps = null,
     dropTarget: js.Object = null,
     gridArea: GridAreaType = null,

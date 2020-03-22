@@ -1,8 +1,8 @@
 package typings.officeUiFabricReact.basePickerTypesMod
 
 import typings.officeUiFabricReact.AnonInput
-import typings.officeUiFabricReact.baseAutoFillMod.BaseAutoFill
 import typings.officeUiFabricReact.calloutTypesMod.ICalloutProps
+import typings.officeUiFabricReact.libAutofillMod.Autofill
 import typings.officeUiFabricReact.pickerItemTypesMod.IPickerItemProps
 import typings.officeUiFabricReact.suggestionsItemTypesMod.ISuggestionItemProps
 import typings.officeUiFabricReact.suggestionsTypesMod.ISuggestionModel
@@ -68,7 +68,7 @@ trait IBasePickerProps[T]
   /**
     * A callback for when the user moves the focus away from the picker
     */
-  var onBlur: js.UndefOr[FocusEventHandler[HTMLInputElement | BaseAutoFill]] = js.native
+  var onBlur: js.UndefOr[FocusEventHandler[HTMLInputElement | Autofill]] = js.native
   /**
     * A callback for when the selected list of items changes.
     */
@@ -106,7 +106,7 @@ trait IBasePickerProps[T]
     * A callback for when the user put focus on the picker
     * @deprecated Use `inputProps.onFocus` instead
     */
-  var onFocus: js.UndefOr[FocusEventHandler[HTMLInputElement | BaseAutoFill]] = js.native
+  var onFocus: js.UndefOr[FocusEventHandler[HTMLInputElement | Autofill]] = js.native
   /**
     * A callback that gets the rest of the results when a user clicks get more results.
     */

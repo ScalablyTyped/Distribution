@@ -14,6 +14,6 @@ object mod extends js.Object {
   def stringify(`object`: js.Array[Node], replacer: js.Function1[/* node */ Cheerio_, _]): String = js.native
   def stringify(`object`: js.Array[Node], replacer: js.Function1[/* node */ Cheerio_, _], indent: Double): String = js.native
   def stringify(`object`: js.Array[Node], replacer: Null, indent: Double): String = js.native
-  type Node = String | (js.Array[String | js.Any])
+  type Node = String | (Array[String | js.Any])
 }
 

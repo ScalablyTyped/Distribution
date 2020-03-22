@@ -1,8 +1,7 @@
 package typings.typedoc
 
-import org.scalablytyped.runtime.Instantiable1
-import typings.typedoc.abstractMod.Decorator
 import typings.typedoc.decoratorWrapperMod.DecoratorWrapper
+import typings.typedoc.schemaMod.Decorator
 import typings.typedoc.serializationComponentsMod.SerializerComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,8 +12,7 @@ import scala.scalajs.js.annotation._
 object decoratorMod extends js.Object {
   @js.native
   class DecoratorContainerSerializer () extends SerializerComponent[DecoratorWrapper] {
-    @JSName("serializeGroupSymbol")
-    var serializeGroupSymbol_DecoratorContainerSerializer: Instantiable1[/* decorator */ Decorator, DecoratorWrapper] = js.native
+    def toObject(hasDecorator: DecoratorWrapper, obj: PartialDecorator): Decorator = js.native
   }
   
   /* static members */

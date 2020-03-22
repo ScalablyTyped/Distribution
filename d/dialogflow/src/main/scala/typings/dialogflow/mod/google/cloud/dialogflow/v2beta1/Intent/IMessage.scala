@@ -46,7 +46,7 @@ trait IMessage extends js.Object {
   /** Message payload */
   var payload: js.UndefOr[IStruct | Null] = js.undefined
   /** Message platform */
-  var platform: js.UndefOr[Platform | Null] = js.undefined
+  var platform: js.UndefOr[Platform | String | Null] = js.undefined
   /** Message quickReplies */
   var quickReplies: js.UndefOr[IQuickReplies | Null] = js.undefined
   /** Message rbmCarouselRichCard */
@@ -83,7 +83,7 @@ object IMessage {
     listSelect: IListSelect = null,
     mediaContent: IMediaContent = null,
     payload: IStruct = null,
-    platform: Platform = null,
+    platform: Platform | String = null,
     quickReplies: IQuickReplies = null,
     rbmCarouselRichCard: IRbmCarouselCard = null,
     rbmStandaloneRichCard: IRbmStandaloneCard = null,

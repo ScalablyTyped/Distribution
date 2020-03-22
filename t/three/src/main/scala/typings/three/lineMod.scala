@@ -27,7 +27,7 @@ object lineMod extends js.Object {
     def this(geometry: Geometry, material: js.Array[Material], mode: Double) = this()
     def this(geometry: Geometry, material: Material, mode: Double) = this()
     var geometry: Geometry | BufferGeometry = js.native
-    var isLine: `true` = js.native
+    val isLine: `true` = js.native
     var material: Material | js.Array[Material] = js.native
     @JSName("type")
     var type_Line: typings.three.threeStrings.Line | LineLoop | LineSegments = js.native

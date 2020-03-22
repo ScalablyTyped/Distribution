@@ -1,6 +1,6 @@
 package typings.antdMobileRn.agreeItemNativeMod
 
-import typings.antdMobileRn.AnonStylesX
+import typings.antdMobileRn.Anon0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,6 +13,6 @@ class default () extends AgreeItem
 @JSImport("antd-mobile-rn/lib/checkbox/AgreeItem.native", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: AnonStylesX = js.native
+  var defaultProps: Anon0 = js.native
 }
 

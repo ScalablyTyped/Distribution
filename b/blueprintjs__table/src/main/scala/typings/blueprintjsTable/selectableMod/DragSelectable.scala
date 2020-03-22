@@ -1,7 +1,7 @@
 package typings.blueprintjsTable.selectableMod
 
+import typings.blueprintjsTable.PartialIDragSelectablePro
 import typings.react.mod.Component
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,6 +40,6 @@ class DragSelectable ()
 @JSImport("@blueprintjs/table/lib/esm/interactions/selectable", "DragSelectable")
 @js.native
 object DragSelectable extends js.Object {
-  var defaultProps: Partial[IDragSelectableProps] = js.native
+  var defaultProps: PartialIDragSelectablePro = js.native
 }
 

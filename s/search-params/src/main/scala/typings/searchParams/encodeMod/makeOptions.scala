@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("search-params/typings/encode", "makeOptions")
+@JSImport("search-params/dist/encode", "makeOptions")
 @js.native
 object makeOptions extends js.Object {
   def apply(): IFinalOptions = js.native

@@ -1,7 +1,7 @@
 package typings.officeUiFabricReact.detailsRowTypesMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.officeUiFabricReact.AnonCallbackEvent
+import typings.officeUiFabricReact.AnonEventName
 import typings.officeUiFabricReact.detailsListTypesMod.CheckboxVisibility
 import typings.officeUiFabricReact.detailsListTypesMod.IColumn
 import typings.officeUiFabricReact.detailsRowBaseMod.DetailsRowBase
@@ -17,7 +17,6 @@ import typings.react.mod.ReactNode
 import typings.react.mod._Global_.JSX.Element
 import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricStyling.ithemeMod.ITheme
-import typings.uifabricUtilities.baseComponentTypesMod.IBaseProps
 import typings.uifabricUtilities.createRefMod.IRefObject
 import typings.uifabricUtilities.irenderfunctionMod.IRenderFunction
 import typings.uifabricUtilities.selectionTypesMod.IObjectWithKey
@@ -27,10 +26,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in 'onRenderItemColumn' | 'getCellValueKey' ]: office-ui-fabric-react.office-ui-fabric-react/lib/components/DetailsList/DetailsList.types.IDetailsListProps[P]} */ trait IDetailsRowBaseProps
-  extends IBaseProps[IDetailsRow]
-     with IDetailsItemProps {
+/* Inlined parent std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/DetailsList/DetailsList.types.IDetailsListProps, 'onRenderItemColumn' | 'getCellValueKey'> */
+/* Inlined parent office-ui-fabric-react.office-ui-fabric-react/lib/Utilities.IBaseProps<office-ui-fabric-react.office-ui-fabric-react/lib/components/DetailsList/DetailsRow.types.IDetailsRow> */
+/* Inlined parent office-ui-fabric-react.office-ui-fabric-react/lib/components/DetailsList/DetailsRow.types.IDetailsItemProps */
+trait IDetailsRowBaseProps extends js.Object {
+  /**
+    * Rules for rendering column cells.
+    */
+  var cellStyleProps: js.UndefOr[ICellStyleProps] = js.undefined
   /**
     * Optional pre-rendered content per column. Preferred over onRender or onRenderItemColumn if provided.
     */
@@ -44,6 +47,10 @@ import scala.scalajs.js.annotation._
     */
   var checkboxCellClassName: js.UndefOr[String] = js.undefined
   /**
+    * Checkbox visibility
+    */
+  var checkboxVisibility: js.UndefOr[CheckboxVisibility] = js.undefined
+  /**
     * Overriding class name
     */
   var className: js.UndefOr[String] = js.undefined
@@ -52,9 +59,17 @@ import scala.scalajs.js.annotation._
     */
   var collapseAllVisibility: js.UndefOr[CollapseAllVisibility] = js.undefined
   /**
+    * Column metadata
+    */
+  var columns: js.UndefOr[js.Array[IColumn]] = js.undefined
+  /**
     * Whether to render in compact mode
     */
   var compact: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Ref of the component
+    */
+  var componentRef: js.UndefOr[IRefObject[IDetailsRow]] = js.undefined
   /**
     * Handling drag and drop events
     */
@@ -68,7 +83,15 @@ import scala.scalajs.js.annotation._
   /**
     * A list of events to register
     */
-  var eventsToRegister: js.UndefOr[js.Array[AnonCallbackEvent]] = js.undefined
+  var eventsToRegister: js.UndefOr[js.Array[AnonEventName]] = js.undefined
+  var getCellValueKey: js.UndefOr[
+    js.Function3[
+      /* item */ js.UndefOr[js.Any], 
+      /* index */ js.UndefOr[Double], 
+      /* column */ js.UndefOr[IColumn], 
+      String
+    ]
+  ] = js.undefined
   /**
     * Callback for getting the row aria-describedby
     */
@@ -77,6 +100,14 @@ import scala.scalajs.js.annotation._
     * Callback for getting the row aria label
     */
   var getRowAriaLabel: js.UndefOr[js.Function1[/* item */ js.Any, String]] = js.undefined
+  /**
+    * Nesting depth of a grouping
+    */
+  var groupNestingDepth: js.UndefOr[Double] = js.undefined
+  /**
+    * How much to indent
+    */
+  var indentWidth: js.UndefOr[Double] = js.undefined
   /**
     * Data source for this component
     */
@@ -97,6 +128,14 @@ import scala.scalajs.js.annotation._
     * If provided, can be used to render a custom checkbox
     */
   var onRenderDetailsCheckbox: js.UndefOr[IRenderFunction[IDetailsCheckboxProps]] = js.undefined
+  var onRenderItemColumn: js.UndefOr[
+    js.Function3[
+      /* item */ js.UndefOr[js.Any], 
+      /* index */ js.UndefOr[Double], 
+      /* column */ js.UndefOr[IColumn], 
+      ReactNode
+    ]
+  ] = js.undefined
   /**
     * Callback for will mount for parent
     */
@@ -105,6 +144,20 @@ import scala.scalajs.js.annotation._
     * DOM element into which to render row field
     */
   var rowFieldsAs: js.UndefOr[ComponentType[IDetailsRowFieldsProps]] = js.undefined
+  /**
+    * Minimum width of the row.
+    *
+    * @defaultvalue 0
+    */
+  var rowWidth: js.UndefOr[Double] = js.undefined
+  /**
+    * Selection from utilities
+    */
+  var selection: js.UndefOr[ISelection[IObjectWithKey]] = js.undefined
+  /**
+    * Selection mode
+    */
+  var selectionMode: js.UndefOr[SelectionMode] = js.undefined
   /**
     * Overriding styles to this row
     */
@@ -124,6 +177,12 @@ import scala.scalajs.js.annotation._
     * @defaultvalue false
     */
   var useReducedRowRenderer: js.UndefOr[Boolean] = js.undefined
+  /**
+    * View port of the virtualized list
+    *
+    * @deprecated use rowWidth instead
+    */
+  var viewport: js.UndefOr[IViewport] = js.undefined
 }
 
 object IDetailsRowBaseProps {
@@ -144,7 +203,8 @@ object IDetailsRowBaseProps {
     dragDropEvents: IDragDropEvents = null,
     dragDropHelper: IDragDropHelper = null,
     enableUpdateAnimations: js.UndefOr[Boolean] = js.undefined,
-    eventsToRegister: js.Array[AnonCallbackEvent] = null,
+    eventsToRegister: js.Array[AnonEventName] = null,
+    getCellValueKey: (/* item */ js.UndefOr[js.Any], /* index */ js.UndefOr[Double], /* column */ js.UndefOr[IColumn]) => String = null,
     getRowAriaDescribedBy: /* item */ js.Any => String = null,
     getRowAriaLabel: /* item */ js.Any => String = null,
     groupNestingDepth: Int | Double = null,
@@ -152,6 +212,7 @@ object IDetailsRowBaseProps {
     onDidMount: /* row */ js.UndefOr[DetailsRowBase] => Unit = null,
     onRenderCheck: /* props */ IDetailsRowCheckProps => Element = null,
     onRenderDetailsCheckbox: (/* props */ js.UndefOr[IDetailsCheckboxProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IDetailsCheckboxProps], Element | Null]]) => Element | Null = null,
+    onRenderItemColumn: (/* item */ js.UndefOr[js.Any], /* index */ js.UndefOr[Double], /* column */ js.UndefOr[IColumn]) => ReactNode = null,
     onWillUnmount: /* row */ js.UndefOr[DetailsRowBase] => Unit = null,
     rowFieldsAs: ComponentType[IDetailsRowFieldsProps] = null,
     rowWidth: Int | Double = null,
@@ -178,6 +239,7 @@ object IDetailsRowBaseProps {
     if (dragDropHelper != null) __obj.updateDynamic("dragDropHelper")(dragDropHelper.asInstanceOf[js.Any])
     if (!js.isUndefined(enableUpdateAnimations)) __obj.updateDynamic("enableUpdateAnimations")(enableUpdateAnimations.asInstanceOf[js.Any])
     if (eventsToRegister != null) __obj.updateDynamic("eventsToRegister")(eventsToRegister.asInstanceOf[js.Any])
+    if (getCellValueKey != null) __obj.updateDynamic("getCellValueKey")(js.Any.fromFunction3(getCellValueKey))
     if (getRowAriaDescribedBy != null) __obj.updateDynamic("getRowAriaDescribedBy")(js.Any.fromFunction1(getRowAriaDescribedBy))
     if (getRowAriaLabel != null) __obj.updateDynamic("getRowAriaLabel")(js.Any.fromFunction1(getRowAriaLabel))
     if (groupNestingDepth != null) __obj.updateDynamic("groupNestingDepth")(groupNestingDepth.asInstanceOf[js.Any])
@@ -185,6 +247,7 @@ object IDetailsRowBaseProps {
     if (onDidMount != null) __obj.updateDynamic("onDidMount")(js.Any.fromFunction1(onDidMount))
     if (onRenderCheck != null) __obj.updateDynamic("onRenderCheck")(js.Any.fromFunction1(onRenderCheck))
     if (onRenderDetailsCheckbox != null) __obj.updateDynamic("onRenderDetailsCheckbox")(js.Any.fromFunction2(onRenderDetailsCheckbox))
+    if (onRenderItemColumn != null) __obj.updateDynamic("onRenderItemColumn")(js.Any.fromFunction3(onRenderItemColumn))
     if (onWillUnmount != null) __obj.updateDynamic("onWillUnmount")(js.Any.fromFunction1(onWillUnmount))
     if (rowFieldsAs != null) __obj.updateDynamic("rowFieldsAs")(rowFieldsAs.asInstanceOf[js.Any])
     if (rowWidth != null) __obj.updateDynamic("rowWidth")(rowWidth.asInstanceOf[js.Any])

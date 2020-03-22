@@ -1,10 +1,12 @@
 package typings.ddTrace.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.ddTrace.AnonAgentexporter
+import typings.ddTrace.AnonB3
 import typings.ddTrace.AnonDebug
 import typings.ddTrace.AnonPort
 import typings.ddTrace.ddTraceStrings.async_hooks
+import typings.ddTrace.ddTraceStrings.debug
+import typings.ddTrace.ddTraceStrings.error
 import typings.ddTrace.ddTraceStrings.noop
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,6 +18,10 @@ trait TracerOptions extends js.Object {
     * @default false
     */
   var analytics: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Client token for browser tracing. Can be generated in the UI at `Integrations -> APIs`.
+    */
+  var clientToken: js.UndefOr[String] = js.undefined
   /**
     * Enable debug logging in the tracer.
     * @default false
@@ -38,7 +44,7 @@ trait TracerOptions extends js.Object {
     * Experimental features can be enabled all at once by using true or individually using key / value pairs.
     * @default {}
     */
-  var experimental: js.UndefOr[Boolean | AnonAgentexporter] = js.undefined
+  var experimental: js.UndefOr[Boolean | AnonB3] = js.undefined
   /**
     * Interval in milliseconds at which the tracer will submit traces to the agent.
     * @default 2000
@@ -56,11 +62,21 @@ trait TracerOptions extends js.Object {
     */
   var logInjection: js.UndefOr[Boolean] = js.undefined
   /**
+    * A string representing the minimum tracer log level to use when debug logging is enabled
+    * @default 'debug'
+    */
+  var logLevel: js.UndefOr[error | debug] = js.undefined
+  /**
     * Custom logger to be used by the tracer (if debug = true),
     * should support debug() and error() methods
     * see https://datadog.github.io/dd-trace-js/#custom-logging
     */
   var logger: js.UndefOr[AnonDebug] = js.undefined
+  /**
+    * If false, require a parent in order to trace.
+    * @default true
+    */
+  var orphanable: js.UndefOr[Boolean] = js.undefined
   /**
     * Whether to load all built-in plugins.
     * @default true
@@ -102,6 +118,11 @@ trait TracerOptions extends js.Object {
     */
   var tags: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   /**
+    * Whether to track the scope of async functions. This is needed for async/await to work with non-native promises (thenables). Only disable this if you are sure only native promises are used with async/await.
+    * @default true
+    */
+  var trackAsyncScope: js.UndefOr[Boolean] = js.undefined
+  /**
     * The url of the trace agent that the tracer will submit to.
     * Takes priority over hostname and port, if set.
     */
@@ -112,15 +133,18 @@ object TracerOptions {
   @scala.inline
   def apply(
     analytics: js.UndefOr[Boolean] = js.undefined,
+    clientToken: String = null,
     debug: js.UndefOr[Boolean] = js.undefined,
     dogstatsd: AnonPort = null,
     enabled: js.UndefOr[Boolean] = js.undefined,
     env: String = null,
-    experimental: Boolean | AnonAgentexporter = null,
+    experimental: Boolean | AnonB3 = null,
     flushInterval: Int | Double = null,
     hostname: String = null,
     logInjection: js.UndefOr[Boolean] = js.undefined,
+    logLevel: error | debug = null,
     logger: AnonDebug = null,
+    orphanable: js.UndefOr[Boolean] = js.undefined,
     plugins: js.UndefOr[Boolean] = js.undefined,
     port: Double | String = null,
     reportHostname: js.UndefOr[Boolean] = js.undefined,
@@ -129,10 +153,12 @@ object TracerOptions {
     scope: async_hooks | noop = null,
     service: String = null,
     tags: StringDictionary[js.Any] = null,
+    trackAsyncScope: js.UndefOr[Boolean] = js.undefined,
     url: String = null
   ): TracerOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(analytics)) __obj.updateDynamic("analytics")(analytics.asInstanceOf[js.Any])
+    if (clientToken != null) __obj.updateDynamic("clientToken")(clientToken.asInstanceOf[js.Any])
     if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
     if (dogstatsd != null) __obj.updateDynamic("dogstatsd")(dogstatsd.asInstanceOf[js.Any])
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
@@ -141,7 +167,9 @@ object TracerOptions {
     if (flushInterval != null) __obj.updateDynamic("flushInterval")(flushInterval.asInstanceOf[js.Any])
     if (hostname != null) __obj.updateDynamic("hostname")(hostname.asInstanceOf[js.Any])
     if (!js.isUndefined(logInjection)) __obj.updateDynamic("logInjection")(logInjection.asInstanceOf[js.Any])
+    if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel.asInstanceOf[js.Any])
     if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
+    if (!js.isUndefined(orphanable)) __obj.updateDynamic("orphanable")(orphanable.asInstanceOf[js.Any])
     if (!js.isUndefined(plugins)) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     if (!js.isUndefined(reportHostname)) __obj.updateDynamic("reportHostname")(reportHostname.asInstanceOf[js.Any])
@@ -150,6 +178,7 @@ object TracerOptions {
     if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     if (service != null) __obj.updateDynamic("service")(service.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (!js.isUndefined(trackAsyncScope)) __obj.updateDynamic("trackAsyncScope")(trackAsyncScope.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[TracerOptions]
   }

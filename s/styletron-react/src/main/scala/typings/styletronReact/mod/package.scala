@@ -15,7 +15,6 @@ package object mod {
   type StyleObjectFn[P /* <: js.Object */] = js.Function1[/* props */ P, typings.styletronStandard.mod.StyleObject]
   type StyleProp[P /* <: js.Object */] = typings.styletronStandard.mod.StyleObject | typings.styletronReact.mod.StyleObjectFn[P]
   type StyletronBase = typings.react.mod.ElementType[js.Any]
-  type StyletronComponent[P /* <: js.Object */] = (typings.react.mod.FC[P with typings.styletronReact.mod.StyletronComponentInjectedProps[P]]) with typings.styletronReact.AnonSTYLETRON
   type StyletronDriver = js.Function2[
     /* style */ typings.styletronStandard.mod.StyleObject, 
     /* styletron */ typings.styletronStandard.mod.StandardEngine, 

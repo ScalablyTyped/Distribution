@@ -1,7 +1,7 @@
 package typings.firefoxWebextBrowser.browser.tabs
 
 import org.scalablytyped.runtime.TopLevel
-import typings.firefoxWebextBrowser.AnonAttention
+import typings.firefoxWebextBrowser.AnonAudible
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
 object onUpdated
   extends TopLevel[
       TabsOnUpdatedEvent[
-        js.Function3[/* tabId */ Double, /* changeInfo */ AnonAttention, /* tab */ Tab, Unit]
+        js.Function3[/* tabId */ Double, /* changeInfo */ AnonAudible, /* tab */ Tab, Unit]
       ]
     ]
 

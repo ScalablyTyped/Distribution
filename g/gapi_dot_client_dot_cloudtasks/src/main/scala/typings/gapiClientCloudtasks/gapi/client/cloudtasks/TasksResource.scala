@@ -2,9 +2,9 @@ package typings.gapiClientCloudtasks.gapi.client.cloudtasks
 
 import typings.gapiClient.gapi.client.Request_
 import typings.gapiClientCloudtasks.AnonAccesstoken
-import typings.gapiClientCloudtasks.AnonAccesstokenAlt
-import typings.gapiClientCloudtasks.AnonAccesstokenAltBearertoken
-import typings.gapiClientCloudtasks.AnonAccesstokenAltBearertokenCallback
+import typings.gapiClientCloudtasks.AnonAlt
+import typings.gapiClientCloudtasks.AnonBearertoken
+import typings.gapiClientCloudtasks.AnonCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -48,7 +48,7 @@ trait TasksResource extends js.Object {
     * &#42; For [pull queues](google.cloud.tasks.v2beta2.PullTarget), this
     * the maximum task size is 1MB.
     */
-  def create(request: AnonAccesstokenAlt): Request_[Task]
+  def create(request: AnonAlt): Request_[Task]
   /**
     * Deletes a task.
     *
@@ -58,7 +58,7 @@ trait TasksResource extends js.Object {
     */
   def delete(request: AnonAccesstoken): Request_[js.Object]
   /** Gets a task. */
-  def get(request: AnonAccesstokenAltBearertoken): Request_[Task]
+  def get(request: AnonBearertoken): Request_[Task]
   /**
     * Lists the tasks in a queue.
     *
@@ -67,7 +67,7 @@ trait TasksResource extends js.Object {
     * considerations; ListTasksRequest.response_view controls the
     * subset of information which is returned.
     */
-  def list(request: AnonAccesstokenAltBearertokenCallback): Request_[ListTasksResponse]
+  def list(request: AnonCallback): Request_[ListTasksResponse]
   /**
     * Pulls tasks from a pull queue and acquires a lease on them for a
     * specified PullTasksRequest.lease_duration.
@@ -131,10 +131,10 @@ object TasksResource {
   def apply(
     acknowledge: AnonAccesstoken => Request_[js.Object],
     cancelLease: AnonAccesstoken => Request_[Task],
-    create: AnonAccesstokenAlt => Request_[Task],
+    create: AnonAlt => Request_[Task],
     delete: AnonAccesstoken => Request_[js.Object],
-    get: AnonAccesstokenAltBearertoken => Request_[Task],
-    list: AnonAccesstokenAltBearertokenCallback => Request_[ListTasksResponse],
+    get: AnonBearertoken => Request_[Task],
+    list: AnonCallback => Request_[ListTasksResponse],
     pull: AnonAccesstoken => Request_[PullTasksResponse],
     renewLease: AnonAccesstoken => Request_[Task],
     run: AnonAccesstoken => Request_[Task]

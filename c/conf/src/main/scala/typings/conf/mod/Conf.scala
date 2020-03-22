@@ -57,12 +57,14 @@ trait Conf[T]
   /**
   	Watches the whole config object, calling `callback` on any changes.
   	@param callback - A callback function that is called on any changes. When a `key` is first set `oldValue` will be `undefined`, and when a key is deleted `newValue` will be `undefined`.
+  	@returns A function, that when called, will unsubscribe.
   	*/
   def onDidAnyChange(callback: js.Function2[/* newValue */ js.UndefOr[T], /* oldValue */ js.UndefOr[T], Unit]): js.Function0[Unit] = js.native
   /**
   	Watches the given `key`, calling `callback` on any changes.
   	@param key - The key wo watch.
   	@param callback - A callback function that is called on any changes. When a `key` is first set `oldValue` will be `undefined`, and when a key is deleted `newValue` will be `undefined`.
+  	@returns A function, that when called, will unsubscribe.
   	*/
   def onDidChange[K /* <: String */](
     key: K,

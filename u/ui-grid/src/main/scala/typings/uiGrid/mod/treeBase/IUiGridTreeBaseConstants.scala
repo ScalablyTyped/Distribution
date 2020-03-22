@@ -1,6 +1,6 @@
 package typings.uiGrid.mod.treeBase
 
-import typings.uiGrid.Anon_AVG
+import typings.uiGrid.AnonAVG_
 import typings.uiGrid.mod.ISharedTreeConstants
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,7 +15,7 @@ object IUiGridTreeBaseConstants {
   def apply(
     COLLAPSED: String,
     EXPANDED: String,
-    aggregation: Anon_AVG,
+    aggregation: AnonAVG_,
     featureName: String,
     rowHeaderColName: String
   ): IUiGridTreeBaseConstants = {

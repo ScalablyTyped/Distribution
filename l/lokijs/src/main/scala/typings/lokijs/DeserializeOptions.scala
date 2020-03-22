@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
   - typings.lokijs.AnonDelimited
-  - typings.lokijs.AnonDelimitedDelimiter
+  - typings.lokijs.AnonDelimiter
 */
 trait DeserializeOptions extends js.Object
 
@@ -27,7 +27,7 @@ object DeserializeOptions {
     __obj.asInstanceOf[DeserializeOptions]
   }
   @scala.inline
-  def AnonDelimitedDelimiter(
+  def AnonDelimiter(
     delimiter: String,
     delimited: `true` = null,
     partition: Int | Double = null,

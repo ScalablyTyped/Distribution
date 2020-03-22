@@ -2,7 +2,7 @@ package typings.jupyterlabNotebook.notebooktoolsMod.NotebookTools
 
 import typings.jupyterlabNotebook.tokensMod.INotebookTools.ITool
 import typings.jupyterlabObservables.mod.ObservableJSON.ChangeMessage
-import typings.phosphorMessaging.mod.Message
+import typings.luminoMessaging.mod.Message
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

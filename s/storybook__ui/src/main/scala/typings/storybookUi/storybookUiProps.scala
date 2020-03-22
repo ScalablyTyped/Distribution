@@ -12,6 +12,8 @@ trait storybookUiProps {
   @scala.inline
   def ListItemIconProps: typings.storybookUi.mod.ListItemIconProps.type = typings.storybookUi.mod.ListItemIconProps
   type ListItemIconProps = typings.storybookUi.mod.ListItemIconProps
+  @scala.inline
+  def PureSidebarSearchProps: typings.storybookUi.sidebarSearchMod.PureSidebarSearchProps.type = typings.storybookUi.sidebarSearchMod.PureSidebarSearchProps
   type PureSidebarSearchProps = typings.storybookUi.sidebarSearchMod.PureSidebarSearchProps
   @scala.inline
   def SidebarProps: typings.storybookUi.sidebarMod.SidebarProps.type = typings.storybookUi.sidebarMod.SidebarProps
@@ -22,6 +24,9 @@ trait storybookUiProps {
   @scala.inline
   def SidebarHeadingProps: typings.storybookUi.sidebarHeadingMod.SidebarHeadingProps.type = typings.storybookUi.sidebarHeadingMod.SidebarHeadingProps
   type SidebarHeadingProps = typings.storybookUi.sidebarHeadingMod.SidebarHeadingProps
+  @scala.inline
+  def SidebarSearchProps: typings.storybookUi.sidebarSearchMod.PureSidebarSearchProps.type = typings.storybookUi.sidebarSearchMod.PureSidebarSearchProps
+  type SidebarSearchProps = typings.storybookUi.sidebarSearchMod.PureSidebarSearchProps
   @scala.inline
   def SidebarStoriesProps: StoriesProps.type = typings.storybookUi.sidebarSidebarStoriesMod.StoriesProps
   type SidebarStoriesProps = StoriesProps

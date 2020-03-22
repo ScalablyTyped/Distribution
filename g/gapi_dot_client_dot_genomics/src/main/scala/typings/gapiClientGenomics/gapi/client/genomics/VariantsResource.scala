@@ -2,8 +2,8 @@ package typings.gapiClientGenomics.gapi.client.genomics
 
 import typings.gapiClient.gapi.client.Request_
 import typings.gapiClientGenomics.AnonAccesstoken
-import typings.gapiClientGenomics.AnonAccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPpPrettyPrintQuotaUserUpdateMask
-import typings.gapiClientGenomics.AnonAccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPpPrettyPrintQuotaUserUploadType
+import typings.gapiClientGenomics.AnonUpdateMask
+import typings.gapiClientGenomics.AnonUploadType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,7 +24,7 @@ trait VariantsResource extends js.Object {
     * [Fundamentals of Google
     * Genomics](https://cloud.google.com/genomics/fundamentals-of-google-genomics)
     */
-  def delete(request: AnonAccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPpPrettyPrintQuotaUserUploadType): Request_[js.Object]
+  def delete(request: AnonUploadType): Request_[js.Object]
   /**
     * Gets a variant by ID.
     *
@@ -32,7 +32,7 @@ trait VariantsResource extends js.Object {
     * [Fundamentals of Google
     * Genomics](https://cloud.google.com/genomics/fundamentals-of-google-genomics)
     */
-  def get(request: AnonAccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPpPrettyPrintQuotaUserUploadType): Request_[Variant]
+  def get(request: AnonUploadType): Request_[Variant]
   /**
     * Creates variant data by asynchronously importing the provided information.
     *
@@ -158,7 +158,7 @@ trait VariantsResource extends js.Object {
     * This method supports patch semantics. Returns the modified variant without
     * its calls.
     */
-  def patch(request: AnonAccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPpPrettyPrintQuotaUserUpdateMask): Request_[Variant]
+  def patch(request: AnonUpdateMask): Request_[Variant]
   /**
     * Gets a list of variants matching the criteria.
     *
@@ -176,11 +176,11 @@ object VariantsResource {
   @scala.inline
   def apply(
     create: AnonAccesstoken => Request_[Variant],
-    delete: AnonAccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPpPrettyPrintQuotaUserUploadType => Request_[js.Object],
-    get: AnonAccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPpPrettyPrintQuotaUserUploadType => Request_[Variant],
+    delete: AnonUploadType => Request_[js.Object],
+    get: AnonUploadType => Request_[Variant],
     `import`: AnonAccesstoken => Request_[Operation],
     merge: AnonAccesstoken => Request_[js.Object],
-    patch: AnonAccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPpPrettyPrintQuotaUserUpdateMask => Request_[Variant],
+    patch: AnonUpdateMask => Request_[Variant],
     search: AnonAccesstoken => Request_[SearchVariantsResponse]
   ): VariantsResource = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), merge = js.Any.fromFunction1(merge), patch = js.Any.fromFunction1(patch), search = js.Any.fromFunction1(search))

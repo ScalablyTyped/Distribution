@@ -1,7 +1,7 @@
 package typings.jupyterlabMainmenu.labmenuMod
 
-import typings.phosphorWidgets.menuMod.Menu.IOptions
-import typings.phosphorWidgets.mod.Menu
+import typings.luminoWidgets.menuMod.Menu.IOptions
+import typings.luminoWidgets.mod.Menu
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -47,5 +47,10 @@ class JupyterLabMenu protected () extends IJupyterLabMenu {
     */
   /* CompleteClass */
   override def dispose(): Unit = js.native
+  /**
+    * Whether the menu has been disposed.
+    */
+  @JSName("isDisposed")
+  def isDisposed_MJupyterLabMenu(): Boolean = js.native
 }
 

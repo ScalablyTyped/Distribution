@@ -1,6 +1,6 @@
 package typings.stripeV3.stripe
 
-import typings.stripeV3.AnonBillingdetailsCardAnonToken
+import typings.stripeV3.AnonBillingdetailsBillingDetails
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ trait ConfirmCardPaymentData extends js.Object {
     * See the use case sections below for details.
     * Recomended
     */
-  var payment_method: js.UndefOr[String | AnonBillingdetailsCardAnonToken] = js.undefined
+  var payment_method: js.UndefOr[String | AnonBillingdetailsBillingDetails] = js.undefined
   /**
     * Email address that the receipt for the resulting payment will be sent to.
     */
@@ -46,7 +46,7 @@ trait ConfirmCardPaymentData extends js.Object {
 object ConfirmCardPaymentData {
   @scala.inline
   def apply(
-    payment_method: String | AnonBillingdetailsCardAnonToken = null,
+    payment_method: String | AnonBillingdetailsBillingDetails = null,
     receipt_email: String = null,
     return_url: String = null,
     save_payment_method: js.UndefOr[Boolean] = js.undefined,

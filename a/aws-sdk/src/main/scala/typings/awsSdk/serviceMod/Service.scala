@@ -2,7 +2,7 @@ package typings.awsSdk.serviceMod
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
-import typings.awsSdk.AnonKey
+import typings.awsSdk.AnonDictkey
 import typings.awsSdk.configMod.ConfigBase
 import typings.awsSdk.endpointMod.Endpoint
 import typings.awsSdk.errorMod.AWSError
@@ -71,10 +71,10 @@ class Service () extends js.Object {
     */
   def waitFor(state: String): Request[_, AWSError] = js.native
   def waitFor(state: String, callback: js.Function2[/* err */ AWSError, /* data */ js.Any, Unit]): Request[_, AWSError] = js.native
-  def waitFor(state: String, params: AnonKey): Request[_, AWSError] = js.native
+  def waitFor(state: String, params: AnonDictkey): Request[_, AWSError] = js.native
   def waitFor(
     state: String,
-    params: AnonKey,
+    params: AnonDictkey,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Any, Unit]
   ): Request[_, AWSError] = js.native
 }

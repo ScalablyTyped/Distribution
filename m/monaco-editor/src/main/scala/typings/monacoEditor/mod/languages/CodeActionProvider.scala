@@ -11,13 +11,13 @@ trait CodeActionProvider extends js.Object {
   /**
     * Provide commands for the given document and range.
     */
-  def provideCodeActions(model: ITextModel, range: Range, context: CodeActionContext, token: CancellationToken): CodeActionList | js.Promise[CodeActionList]
+  def provideCodeActions(model: ITextModel, range: Range, context: CodeActionContext, token: CancellationToken): ProviderResult[CodeActionList]
 }
 
 object CodeActionProvider {
   @scala.inline
   def apply(
-    provideCodeActions: (ITextModel, Range, CodeActionContext, CancellationToken) => CodeActionList | js.Promise[CodeActionList]
+    provideCodeActions: (ITextModel, Range, CodeActionContext, CancellationToken) => ProviderResult[CodeActionList]
   ): CodeActionProvider = {
     val __obj = js.Dynamic.literal(provideCodeActions = js.Any.fromFunction4(provideCodeActions))
   

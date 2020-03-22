@@ -18,35 +18,10 @@ class FormArrayName protected ()
     * @description
     * Async validator function composed of all the async validators registered with this directive.
     */
-  val asyncValidator: AsyncValidatorFn | Null = js.native
-  /**
-    * @description
-    * The `FormArray` bound to this directive.
-    */
-  @JSName("control")
-  val control_FormArrayName: FormArray = js.native
-  /**
-    * @description
-    * The top-level directive for this group if present, otherwise null.
-    */
-  @JSName("formDirective")
-  val formDirective_FormArrayName: FormGroupDirective | Null = js.native
-  /**
-    * @description
-    * Returns an array that represents the path from the top-level form to this control.
-    * Each index is the string name of the control on that level.
-    */
-  @JSName("path")
-  val path_FormArrayName: js.Array[String] = js.native
-  /**
-    * @description
-    * Synchronous validator function composed of all the synchronous validators registered with this
-    * directive.
-    */
-  val validator: ValidatorFn | Null = js.native
+  def asyncValidator(): AsyncValidatorFn | Null = js.native
   /**
     * A callback method that performs custom clean-up, invoked immediately
-    * after a directive, pipe, or service instance is destroyed.
+    * before a directive, pipe, or service instance is destroyed.
     */
   /* CompleteClass */
   override def ngOnDestroy(): Unit = js.native
@@ -59,5 +34,11 @@ class FormArrayName protected ()
     */
   /* CompleteClass */
   override def ngOnInit(): Unit = js.native
+  /**
+    * @description
+    * Synchronous validator function composed of all the synchronous validators registered with this
+    * directive.
+    */
+  def validator(): ValidatorFn | Null = js.native
 }
 

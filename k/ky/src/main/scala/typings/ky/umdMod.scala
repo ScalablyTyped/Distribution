@@ -66,7 +66,7 @@ object umdMod extends js.Object {
     	Create a new Ky instance with complete new defaults.
     	@returns A new Ky instance.
     	*/
-    def create(defaultOptions: Options): AnonCreate = js.native
+    def create(defaultOptions: Options): AnonCall = js.native
     /**
     	Fetch the given `url` using the option `{method: 'delete'}`.
     	@param url - `Request` object, `URL` object, or URL string.
@@ -79,7 +79,7 @@ object umdMod extends js.Object {
     	In contrast to `ky.create()`, `ky.extend()` inherits defaults from its parent.
     	@returns A new Ky instance.
     	*/
-    def extend(defaultOptions: Options): AnonCreate = js.native
+    def extend(defaultOptions: Options): AnonCall = js.native
     /**
     	Fetch the given `url` using the option `{method: 'get'}`.
     	@param url - `Request` object, `URL` object, or URL string.

@@ -1,6 +1,8 @@
 package typings.awsSdk.acmpcaMod
 
-import typings.awsSdk.AnonWaiter
+import typings.awsSdk.DescribeCertificateAuthor
+import typings.awsSdk.GetCertificateAuthorityCs
+import typings.awsSdk.GetCertificateRequestwait
 import typings.awsSdk.awsSdkStrings.auditReportCreated
 import typings.awsSdk.awsSdkStrings.certificateAuthorityCSRCreated
 import typings.awsSdk.awsSdkStrings.certificateIssued
@@ -296,11 +298,11 @@ trait ACMPCA extends Service {
     * Waits for the auditReportCreated state by periodically calling the underlying ACMPCA.describeCertificateAuthorityAuditReportoperation every 3 seconds (at most 60 times). Wait until a Audit Report is created
     */
   @JSName("waitFor")
-  def waitFor_auditReportCreated(state: auditReportCreated, params: DescribeCertificateAuthorityAuditReportRequest with AnonWaiter): Request[DescribeCertificateAuthorityAuditReportResponse, AWSError] = js.native
+  def waitFor_auditReportCreated(state: auditReportCreated, params: DescribeCertificateAuthor): Request[DescribeCertificateAuthorityAuditReportResponse, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_auditReportCreated(
     state: auditReportCreated,
-    params: DescribeCertificateAuthorityAuditReportRequest with AnonWaiter,
+    params: DescribeCertificateAuthor,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeCertificateAuthorityAuditReportResponse, Unit]
   ): Request[DescribeCertificateAuthorityAuditReportResponse, AWSError] = js.native
   /**
@@ -317,11 +319,11 @@ trait ACMPCA extends Service {
     * Waits for the certificateAuthorityCSRCreated state by periodically calling the underlying ACMPCA.getCertificateAuthorityCsroperation every 3 seconds (at most 60 times). Wait until a Certificate Authority CSR is created
     */
   @JSName("waitFor")
-  def waitFor_certificateAuthorityCSRCreated(state: certificateAuthorityCSRCreated, params: GetCertificateAuthorityCsrRequest with AnonWaiter): Request[GetCertificateAuthorityCsrResponse, AWSError] = js.native
+  def waitFor_certificateAuthorityCSRCreated(state: certificateAuthorityCSRCreated, params: GetCertificateAuthorityCs): Request[GetCertificateAuthorityCsrResponse, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_certificateAuthorityCSRCreated(
     state: certificateAuthorityCSRCreated,
-    params: GetCertificateAuthorityCsrRequest with AnonWaiter,
+    params: GetCertificateAuthorityCs,
     callback: js.Function2[/* err */ AWSError, /* data */ GetCertificateAuthorityCsrResponse, Unit]
   ): Request[GetCertificateAuthorityCsrResponse, AWSError] = js.native
   /**
@@ -338,11 +340,11 @@ trait ACMPCA extends Service {
     * Waits for the certificateIssued state by periodically calling the underlying ACMPCA.getCertificateoperation every 3 seconds (at most 60 times). Wait until a certificate is issued
     */
   @JSName("waitFor")
-  def waitFor_certificateIssued(state: certificateIssued, params: GetCertificateRequest with AnonWaiter): Request[GetCertificateResponse, AWSError] = js.native
+  def waitFor_certificateIssued(state: certificateIssued, params: GetCertificateRequestwait): Request[GetCertificateResponse, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_certificateIssued(
     state: certificateIssued,
-    params: GetCertificateRequest with AnonWaiter,
+    params: GetCertificateRequestwait,
     callback: js.Function2[/* err */ AWSError, /* data */ GetCertificateResponse, Unit]
   ): Request[GetCertificateResponse, AWSError] = js.native
 }

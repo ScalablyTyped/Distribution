@@ -1,6 +1,7 @@
 package typings.awsSdk.s3Mod
 
-import typings.awsSdk.AnonWaiter
+import typings.awsSdk.HeadBucketRequestwaiterWa
+import typings.awsSdk.HeadObjectRequestwaiterWa
 import typings.awsSdk.awsSdkStrings.bucketExists
 import typings.awsSdk.awsSdkStrings.bucketNotExists
 import typings.awsSdk.awsSdkStrings.objectExists
@@ -1167,11 +1168,11 @@ trait S3 extends S3Customizations {
     * Waits for the bucketExists state by periodically calling the underlying S3.headBucketoperation every 5 seconds (at most 20 times).
     */
   @JSName("waitFor")
-  def waitFor_bucketExists(state: bucketExists, params: HeadBucketRequest with AnonWaiter): Request[js.Object, AWSError] = js.native
+  def waitFor_bucketExists(state: bucketExists, params: HeadBucketRequestwaiterWa): Request[js.Object, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_bucketExists(
     state: bucketExists,
-    params: HeadBucketRequest with AnonWaiter,
+    params: HeadBucketRequestwaiterWa,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   /**
@@ -1185,11 +1186,11 @@ trait S3 extends S3Customizations {
     * Waits for the bucketNotExists state by periodically calling the underlying S3.headBucketoperation every 5 seconds (at most 20 times).
     */
   @JSName("waitFor")
-  def waitFor_bucketNotExists(state: bucketNotExists, params: HeadBucketRequest with AnonWaiter): Request[js.Object, AWSError] = js.native
+  def waitFor_bucketNotExists(state: bucketNotExists, params: HeadBucketRequestwaiterWa): Request[js.Object, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_bucketNotExists(
     state: bucketNotExists,
-    params: HeadBucketRequest with AnonWaiter,
+    params: HeadBucketRequestwaiterWa,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   /**
@@ -1203,11 +1204,11 @@ trait S3 extends S3Customizations {
     * Waits for the objectExists state by periodically calling the underlying S3.headObjectoperation every 5 seconds (at most 20 times).
     */
   @JSName("waitFor")
-  def waitFor_objectExists(state: objectExists, params: HeadObjectRequest with AnonWaiter): Request[HeadObjectOutput, AWSError] = js.native
+  def waitFor_objectExists(state: objectExists, params: HeadObjectRequestwaiterWa): Request[HeadObjectOutput, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_objectExists(
     state: objectExists,
-    params: HeadObjectRequest with AnonWaiter,
+    params: HeadObjectRequestwaiterWa,
     callback: js.Function2[/* err */ AWSError, /* data */ HeadObjectOutput, Unit]
   ): Request[HeadObjectOutput, AWSError] = js.native
   /**
@@ -1224,11 +1225,11 @@ trait S3 extends S3Customizations {
     * Waits for the objectNotExists state by periodically calling the underlying S3.headObjectoperation every 5 seconds (at most 20 times).
     */
   @JSName("waitFor")
-  def waitFor_objectNotExists(state: objectNotExists, params: HeadObjectRequest with AnonWaiter): Request[HeadObjectOutput, AWSError] = js.native
+  def waitFor_objectNotExists(state: objectNotExists, params: HeadObjectRequestwaiterWa): Request[HeadObjectOutput, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_objectNotExists(
     state: objectNotExists,
-    params: HeadObjectRequest with AnonWaiter,
+    params: HeadObjectRequestwaiterWa,
     callback: js.Function2[/* err */ AWSError, /* data */ HeadObjectOutput, Unit]
   ): Request[HeadObjectOutput, AWSError] = js.native
 }

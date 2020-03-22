@@ -1,12 +1,12 @@
 package typings.athenajs.mod
 
-import typings.athenajs.AnonOptions
+import typings.athenajs.AnonInstantiable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DrawableOptions extends js.Object {
-  var behavior: js.UndefOr[AnonOptions] = js.undefined
+  var behavior: js.UndefOr[AnonInstantiable] = js.undefined
   var canCollide: js.UndefOr[Boolean] = js.undefined
   var canCollideFriendBullet: js.UndefOr[Boolean] = js.undefined
   var collideGroup: js.UndefOr[Double] = js.undefined
@@ -22,7 +22,7 @@ trait DrawableOptions extends js.Object {
 object DrawableOptions {
   @scala.inline
   def apply(
-    behavior: AnonOptions = null,
+    behavior: AnonInstantiable = null,
     canCollide: js.UndefOr[Boolean] = js.undefined,
     canCollideFriendBullet: js.UndefOr[Boolean] = js.undefined,
     collideGroup: Int | Double = null,

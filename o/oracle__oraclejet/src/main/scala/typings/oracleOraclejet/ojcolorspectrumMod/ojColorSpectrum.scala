@@ -1,7 +1,7 @@
 package typings.oracleOraclejet.ojcolorspectrumMod
 
 import typings.oracleOraclejet.AnonAction
-import typings.oracleOraclejet.AnonActionElement
+import typings.oracleOraclejet.AnonElement
 import typings.oracleOraclejet.AnonLabelHue
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.ojcolorMod.^
@@ -71,6 +71,6 @@ trait ojColorSpectrum extends editableValue[^, ojColorSpectrumSettableProperties
 @js.native
 object ojColorSpectrum extends js.Object {
   type ojAnimateEnd = CustomEvent[AnonAction]
-  type ojAnimateStart = CustomEvent[AnonActionElement]
+  type ojAnimateStart = CustomEvent[AnonElement]
 }
 

@@ -1,6 +1,6 @@
 package typings.reactSketchapp.typesMod
 
-import typings.reactSketchapp.AnonHeightWidth
+import typings.reactSketchapp.AnonWidth
 import typings.reactSketchapp.reactSketchappStrings.auto
 import typings.reactSketchapp.reactSketchappStrings.center
 import typings.reactSketchapp.reactSketchappStrings.italic
@@ -28,7 +28,7 @@ trait TextStyle extends js.Object {
   var textAlign: js.UndefOr[auto | left | right | center | justify] = js.undefined
   var textDecoration: js.UndefOr[String] = js.undefined
   var textShadowColor: js.UndefOr[Color] = js.undefined
-  var textShadowOffset: js.UndefOr[AnonHeightWidth] = js.undefined
+  var textShadowOffset: js.UndefOr[AnonWidth] = js.undefined
   var textShadowOpacity: js.UndefOr[Double] = js.undefined
   var textShadowRadius: js.UndefOr[Double] = js.undefined
   var textShadowSpread: js.UndefOr[Double] = js.undefined
@@ -50,7 +50,7 @@ object TextStyle {
     textAlign: auto | left | right | center | justify = null,
     textDecoration: String = null,
     textShadowColor: Color = null,
-    textShadowOffset: AnonHeightWidth = null,
+    textShadowOffset: AnonWidth = null,
     textShadowOpacity: Int | Double = null,
     textShadowRadius: Int | Double = null,
     textShadowSpread: Int | Double = null,

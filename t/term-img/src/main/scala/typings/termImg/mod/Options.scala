@@ -2,7 +2,7 @@ package typings.termImg.mod
 
 import typings.ansiEscapes.ansiEscapesStrings.auto
 import typings.ansiEscapes.mod.ImageOptions
-import typings.typeFest.mod.LiteralUnion
+import typings.typeFest.literalUnionMod.LiteralUnion
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

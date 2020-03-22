@@ -14,8 +14,8 @@ object infiniteLoaderMod extends js.Object {
   /* static members */
   @js.native
   object InfiniteLoader extends js.Object {
-    var defaultProps: Anon010 = js.native
-    var propTypes: AnonChildrenIsRowLoaded = js.native
+    var defaultProps: AnonMinimumBatchSize = js.native
+    var propTypes: AnonIsRowLoaded = js.native
   }
   
 }

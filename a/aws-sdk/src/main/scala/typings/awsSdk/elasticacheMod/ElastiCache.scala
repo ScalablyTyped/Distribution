@@ -1,6 +1,7 @@
 package typings.awsSdk.elasticacheMod
 
-import typings.awsSdk.AnonWaiter
+import typings.awsSdk.DescribeCacheClustersMess
+import typings.awsSdk.DescribeReplicationGroups
 import typings.awsSdk.awsSdkStrings.cacheClusterAvailable
 import typings.awsSdk.awsSdkStrings.cacheClusterDeleted
 import typings.awsSdk.awsSdkStrings.replicationGroupAvailable
@@ -661,11 +662,11 @@ trait ElastiCache extends Service {
     * Waits for the cacheClusterAvailable state by periodically calling the underlying ElastiCache.describeCacheClustersoperation every 15 seconds (at most 40 times). Wait until ElastiCache cluster is available.
     */
   @JSName("waitFor")
-  def waitFor_cacheClusterAvailable(state: cacheClusterAvailable, params: DescribeCacheClustersMessage with AnonWaiter): Request[CacheClusterMessage, AWSError] = js.native
+  def waitFor_cacheClusterAvailable(state: cacheClusterAvailable, params: DescribeCacheClustersMess): Request[CacheClusterMessage, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_cacheClusterAvailable(
     state: cacheClusterAvailable,
-    params: DescribeCacheClustersMessage with AnonWaiter,
+    params: DescribeCacheClustersMess,
     callback: js.Function2[/* err */ AWSError, /* data */ CacheClusterMessage, Unit]
   ): Request[CacheClusterMessage, AWSError] = js.native
   /**
@@ -682,11 +683,11 @@ trait ElastiCache extends Service {
     * Waits for the cacheClusterDeleted state by periodically calling the underlying ElastiCache.describeCacheClustersoperation every 15 seconds (at most 40 times). Wait until ElastiCache cluster is deleted.
     */
   @JSName("waitFor")
-  def waitFor_cacheClusterDeleted(state: cacheClusterDeleted, params: DescribeCacheClustersMessage with AnonWaiter): Request[CacheClusterMessage, AWSError] = js.native
+  def waitFor_cacheClusterDeleted(state: cacheClusterDeleted, params: DescribeCacheClustersMess): Request[CacheClusterMessage, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_cacheClusterDeleted(
     state: cacheClusterDeleted,
-    params: DescribeCacheClustersMessage with AnonWaiter,
+    params: DescribeCacheClustersMess,
     callback: js.Function2[/* err */ AWSError, /* data */ CacheClusterMessage, Unit]
   ): Request[CacheClusterMessage, AWSError] = js.native
   /**
@@ -703,11 +704,11 @@ trait ElastiCache extends Service {
     * Waits for the replicationGroupAvailable state by periodically calling the underlying ElastiCache.describeReplicationGroupsoperation every 15 seconds (at most 40 times). Wait until ElastiCache replication group is available.
     */
   @JSName("waitFor")
-  def waitFor_replicationGroupAvailable(state: replicationGroupAvailable, params: DescribeReplicationGroupsMessage with AnonWaiter): Request[ReplicationGroupMessage, AWSError] = js.native
+  def waitFor_replicationGroupAvailable(state: replicationGroupAvailable, params: DescribeReplicationGroups): Request[ReplicationGroupMessage, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_replicationGroupAvailable(
     state: replicationGroupAvailable,
-    params: DescribeReplicationGroupsMessage with AnonWaiter,
+    params: DescribeReplicationGroups,
     callback: js.Function2[/* err */ AWSError, /* data */ ReplicationGroupMessage, Unit]
   ): Request[ReplicationGroupMessage, AWSError] = js.native
   /**
@@ -724,11 +725,11 @@ trait ElastiCache extends Service {
     * Waits for the replicationGroupDeleted state by periodically calling the underlying ElastiCache.describeReplicationGroupsoperation every 15 seconds (at most 40 times). Wait until ElastiCache replication group is deleted.
     */
   @JSName("waitFor")
-  def waitFor_replicationGroupDeleted(state: replicationGroupDeleted, params: DescribeReplicationGroupsMessage with AnonWaiter): Request[ReplicationGroupMessage, AWSError] = js.native
+  def waitFor_replicationGroupDeleted(state: replicationGroupDeleted, params: DescribeReplicationGroups): Request[ReplicationGroupMessage, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_replicationGroupDeleted(
     state: replicationGroupDeleted,
-    params: DescribeReplicationGroupsMessage with AnonWaiter,
+    params: DescribeReplicationGroups,
     callback: js.Function2[/* err */ AWSError, /* data */ ReplicationGroupMessage, Unit]
   ): Request[ReplicationGroupMessage, AWSError] = js.native
 }

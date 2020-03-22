@@ -25,7 +25,7 @@ class Triangle () extends js.Object {
   def getBarycoord(point: Vector3, target: Vector3): Vector3 = js.native
   def getMidpoint(target: Vector3): Vector3 = js.native
   def getNormal(target: Vector3): Vector3 = js.native
-  def getPlane(target: Vector3): Plane = js.native
+  def getPlane(target: Plane): Plane = js.native
   def getUV(point: Vector3, uv1: Vector2, uv2: Vector2, uv3: Vector2, target: Vector2): Vector2 = js.native
   def intersectsBox(box: Box3): Boolean = js.native
   def isFrontFacing(direction: Vector3): Boolean = js.native

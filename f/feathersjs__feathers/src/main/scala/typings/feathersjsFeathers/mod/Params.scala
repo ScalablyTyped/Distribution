@@ -1,16 +1,15 @@
 package typings.feathersjsFeathers.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.feathersjsFeathers.PickPaginationOptionsmax
 import typings.feathersjsFeathers.feathersjsFeathersBooleans.`false`
-import typings.feathersjsFeathers.feathersjsFeathersStrings.max
-import typings.std.Pick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Params
   extends /* key */ StringDictionary[js.Any] {
-  var paginate: js.UndefOr[`false` | (Pick[PaginationOptions, max])] = js.undefined
+  var paginate: js.UndefOr[`false` | PickPaginationOptionsmax] = js.undefined
   var query: js.UndefOr[Query] = js.undefined
 }
 
@@ -18,7 +17,7 @@ object Params {
   @scala.inline
   def apply(
     StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    paginate: `false` | (Pick[PaginationOptions, max]) = null,
+    paginate: `false` | PickPaginationOptionsmax = null,
     query: Query = null
   ): Params = {
     val __obj = js.Dynamic.literal()

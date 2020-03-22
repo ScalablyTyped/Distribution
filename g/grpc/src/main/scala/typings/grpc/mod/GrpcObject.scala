@@ -2,7 +2,6 @@ package typings.grpc.mod
 
 import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.StringDictionary
-import typings.protobufjs.mod.Message
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +13,7 @@ trait GrpcObject
         /* credentials */ ChannelCredentials, 
         js.UndefOr[/* options */ js.Object], 
         Client
-      ]) | Message[js.Object]
+      ]) | ProtobufMessage
     ]
 
 object GrpcObject {
@@ -26,7 +25,7 @@ object GrpcObject {
         /* credentials */ ChannelCredentials, 
         js.UndefOr[/* options */ js.Object], 
         Client
-      ]) | Message[js.Object]
+      ]) | ProtobufMessage
     ] = null
   ): GrpcObject = {
     val __obj = js.Dynamic.literal()

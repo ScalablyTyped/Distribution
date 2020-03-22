@@ -5,7 +5,7 @@ import typings.amapJsApi.AMap.Map.Options
 import typings.amapJsApi.AMap.Map.Status
 import typings.amapJsApi.AMap.Map.ViewMode
 import typings.amapJsApi.AnonCity
-import typings.amapJsApi.AnonIdLocation
+import typings.amapJsApi.AnonLocation
 import typings.amapJsApi.PartialStatus
 import typings.amapJsApi.amapJsApiBooleans.`false`
 import typings.amapJsApi.amapJsApiStrings.all
@@ -67,7 +67,7 @@ class Map_ protected () extends EventEmitter {
     * 唤起高德地图客户端marker详情页
     * @param obj 唤起参数
     */
-  def detailOnAMAP(obj: AnonIdLocation): Unit = js.native
+  def detailOnAMAP(obj: AnonLocation): Unit = js.native
   def geodeticCoordToLngLat(pixel: Pixel): LngLat = js.native
   /**
     * 返回添加的覆盖物对象
@@ -209,7 +209,7 @@ class Map_ protected () extends EventEmitter {
     * 唤起高德地图客户端marker页
     * @param obj 唤起参数
     */
-  def poiOnAMAP(obj: AnonIdLocation): Unit = js.native
+  def poiOnAMAP(obj: AnonLocation): Unit = js.native
   def remove(overlay: js.Array[Overlay[_]]): Unit = js.native
   /**
     * 删除覆盖物/图层

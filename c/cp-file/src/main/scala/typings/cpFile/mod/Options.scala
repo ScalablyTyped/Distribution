@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
   /**
-  		Overwrite existing file.
+  		Overwrite existing destination file.
   		@default true
   		*/
   val overwrite: js.UndefOr[Boolean] = js.undefined

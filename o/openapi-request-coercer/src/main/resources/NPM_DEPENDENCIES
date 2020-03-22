@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "openapi-request-coercer" : "2.3.0"
+      "openapi-request-coercer" : "2.4.0"
     }
   ],
   "test-dependencies" : [
     {
-      "openapi-request-coercer" : "2.3.0"
+      "openapi-request-coercer" : "2.4.0"
     }
   ],
   "compile-devDependencies" : [

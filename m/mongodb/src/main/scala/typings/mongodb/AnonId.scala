@@ -1,19 +1,18 @@
 package typings.mongodb
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait AnonId extends /* index */ StringDictionary[Double] {
-  var _id_ : Double
+trait AnonId extends js.Object {
+  var _id: js.Any
 }
 
 object AnonId {
   @scala.inline
-  def apply(_id_ : Double, StringDictionary: /* index */ StringDictionary[Double] = null): AnonId = {
-    val __obj = js.Dynamic.literal(_id_ = _id_.asInstanceOf[js.Any])
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+  def apply(_id: js.Any): AnonId = {
+    val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[AnonId]
   }
 }

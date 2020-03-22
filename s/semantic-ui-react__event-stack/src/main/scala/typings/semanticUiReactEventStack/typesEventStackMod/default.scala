@@ -1,6 +1,6 @@
 package typings.semanticUiReactEventStack.typesEventStackMod
 
-import typings.semanticUiReactEventStack.AnonArgs
+import typings.semanticUiReactEventStack.AnonName
 import typings.semanticUiReactEventStack.AnonPool
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,6 +15,6 @@ class default () extends EventStack
 @js.native
 object default extends js.Object {
   var defaultProps: AnonPool = js.native
-  var propTypes: AnonArgs = js.native
+  var propTypes: AnonName = js.native
 }
 

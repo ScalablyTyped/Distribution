@@ -17,7 +17,7 @@ trait DescribeFlowLogsRequest extends js.Object {
   /**
     * One or more flow log IDs. Constraint: Maximum of 1000 flow log IDs.
     */
-  var FlowLogIds: js.UndefOr[ValueStringList] = js.native
+  var FlowLogIds: js.UndefOr[FlowLogIdList] = js.native
   /**
     * The maximum number of results to return with a single call. To retrieve the remaining results, make another call with the returned nextToken value.
     */
@@ -33,7 +33,7 @@ object DescribeFlowLogsRequest {
   def apply(
     DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     Filter: FilterList = null,
-    FlowLogIds: ValueStringList = null,
+    FlowLogIds: FlowLogIdList = null,
     MaxResults: Int | scala.Double = null,
     NextToken: String = null
   ): DescribeFlowLogsRequest = {

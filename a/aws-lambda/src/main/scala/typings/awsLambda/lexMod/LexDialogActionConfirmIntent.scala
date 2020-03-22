@@ -1,8 +1,8 @@
 package typings.awsLambda.lexMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.awsLambda.AnonApplicationvndamazonawscardgeneric
 import typings.awsLambda.AnonContent
+import typings.awsLambda.AnonContentType
 import typings.awsLambda.awsLambdaStrings.ConfirmIntent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -24,7 +24,7 @@ object LexDialogActionConfirmIntent {
     slots: StringDictionary[String | Null],
     `type`: ConfirmIntent,
     message: AnonContent = null,
-    responseCard: AnonApplicationvndamazonawscardgeneric = null
+    responseCard: AnonContentType = null
   ): LexDialogActionConfirmIntent = {
     val __obj = js.Dynamic.literal(intentName = intentName.asInstanceOf[js.Any], slots = slots.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

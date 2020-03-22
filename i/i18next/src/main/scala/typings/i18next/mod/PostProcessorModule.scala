@@ -5,10 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/**
-  * Used to extend or manipulate the translated values before returning them in `t` function.
-  * Need to be a singleton object.
-  */
 trait PostProcessorModule extends Module {
   /** Unique name */
   var name: String

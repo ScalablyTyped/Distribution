@@ -9,7 +9,7 @@ trait DescribeClientVpnRoutesRequest extends js.Object {
   /**
     * The ID of the Client VPN endpoint.
     */
-  var ClientVpnEndpointId: String = js.native
+  var ClientVpnEndpointId: typings.awsSdk.ec2Mod.ClientVpnEndpointId = js.native
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
@@ -31,7 +31,7 @@ trait DescribeClientVpnRoutesRequest extends js.Object {
 object DescribeClientVpnRoutesRequest {
   @scala.inline
   def apply(
-    ClientVpnEndpointId: String,
+    ClientVpnEndpointId: ClientVpnEndpointId,
     DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     Filters: FilterList = null,
     MaxResults: Int | scala.Double = null,

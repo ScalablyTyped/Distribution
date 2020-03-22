@@ -48,6 +48,7 @@ trait CreateClusterRequest extends js.Object {
     
     */
   var KafkaVersion: stringMin1Max128 = js.native
+  var LoggingInfo: js.UndefOr[typings.awsSdk.kafkaMod.LoggingInfo] = js.native
   /**
     * 
     The number of broker nodes in the cluster.
@@ -79,6 +80,7 @@ object CreateClusterRequest {
     ConfigurationInfo: ConfigurationInfo = null,
     EncryptionInfo: EncryptionInfo = null,
     EnhancedMonitoring: EnhancedMonitoring = null,
+    LoggingInfo: LoggingInfo = null,
     OpenMonitoring: OpenMonitoringInfo = null,
     Tags: mapOfString = null
   ): CreateClusterRequest = {
@@ -87,6 +89,7 @@ object CreateClusterRequest {
     if (ConfigurationInfo != null) __obj.updateDynamic("ConfigurationInfo")(ConfigurationInfo.asInstanceOf[js.Any])
     if (EncryptionInfo != null) __obj.updateDynamic("EncryptionInfo")(EncryptionInfo.asInstanceOf[js.Any])
     if (EnhancedMonitoring != null) __obj.updateDynamic("EnhancedMonitoring")(EnhancedMonitoring.asInstanceOf[js.Any])
+    if (LoggingInfo != null) __obj.updateDynamic("LoggingInfo")(LoggingInfo.asInstanceOf[js.Any])
     if (OpenMonitoring != null) __obj.updateDynamic("OpenMonitoring")(OpenMonitoring.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateClusterRequest]

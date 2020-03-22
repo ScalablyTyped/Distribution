@@ -1,7 +1,7 @@
 package typings.jupyterlabDocmanager.savehandlerMod
 
 import typings.jupyterlabDocmanager.savehandlerMod.SaveHandler.IOptions
-import typings.phosphorDisposable.mod.IDisposable
+import typings.luminoDisposable.mod.IDisposable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,10 +30,6 @@ class SaveHandler_ protected () extends IDisposable {
     */
   var _setTimer: js.Any = js.native
   /**
-    * Get whether the handler is active.
-    */
-  val isActive: Boolean = js.native
-  /**
     * Test whether the object has been disposed.
     *
     * #### Notes
@@ -41,10 +37,6 @@ class SaveHandler_ protected () extends IDisposable {
     */
   /* CompleteClass */
   override val isDisposed: Boolean = js.native
-  /**
-    * The save interval used by the timer (in seconds).
-    */
-  var saveInterval: Double = js.native
   /**
     * Dispose of the resources held by the object.
     *
@@ -58,6 +50,20 @@ class SaveHandler_ protected () extends IDisposable {
     */
   /* CompleteClass */
   override def dispose(): Unit = js.native
+  /**
+    * Get whether the handler is active.
+    */
+  def isActive(): Boolean = js.native
+  /**
+    * Get whether the save handler is disposed.
+    */
+  @JSName("isDisposed")
+  def isDisposed_MSaveHandler_(): Boolean = js.native
+  /**
+    * The save interval used by the timer (in seconds).
+    */
+  def saveInterval(): Double = js.native
+  def saveInterval(value: Double): js.Any = js.native
   /**
     * Start the autosaver.
     */

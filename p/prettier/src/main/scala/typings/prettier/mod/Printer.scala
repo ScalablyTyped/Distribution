@@ -1,6 +1,6 @@
 package typings.prettier.mod
 
-import typings.prettier.AnonAst
+import typings.prettier.AnonEndOfLine
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ trait Printer extends js.Object {
       Doc_ | Null
     ]
   ] = js.undefined
-  var handleComments: js.UndefOr[AnonAst] = js.undefined
+  var handleComments: js.UndefOr[AnonEndOfLine] = js.undefined
   var hasPrettierIgnore: js.UndefOr[js.Function1[/* path */ FastPath[_], Boolean]] = js.undefined
   var insertPragma: js.UndefOr[js.Function1[/* text */ String, String]] = js.undefined
   /**
@@ -44,7 +44,7 @@ object Printer {
     print: (FastPath[_], ParserOptions, js.Function1[/* path */ FastPath[_], Doc_]) => Doc_,
     canAttachComment: /* node */ js.Any => Boolean = null,
     embed: (/* path */ FastPath[_], /* print */ js.Function1[/* path */ FastPath[_], Doc_], /* textToDoc */ js.Function2[/* text */ String, /* options */ Options, Doc_], /* options */ ParserOptions) => Doc_ | Null = null,
-    handleComments: AnonAst = null,
+    handleComments: AnonEndOfLine = null,
     hasPrettierIgnore: /* path */ FastPath[_] => Boolean = null,
     insertPragma: /* text */ String => String = null,
     massageAstNode: (/* node */ js.Any, /* newNode */ js.Any, /* parent */ js.Any) => _ = null,

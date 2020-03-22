@@ -44,7 +44,7 @@ class Server_ protected () extends js.Object {
   def friendbot(address: String): FriendbotBuilder = js.native
   def ledgers(): LedgerCallBuilder = js.native
   def loadAccount(accountId: String): js.Promise[AccountResponse] = js.native
-  def offers(resource: String, resourceParams: String*): OfferCallBuilder = js.native
+  def offers(): OfferCallBuilder = js.native
   def operations(): OperationCallBuilder = js.native
   def orderbook(selling: Asset, buying: Asset): OrderbookCallBuilder = js.native
   def paths(source: String, destination: String, destinationAsset: Asset, destinationAmount: String): PathCallBuilder = js.native

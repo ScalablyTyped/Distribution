@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "walk-sync" : "0.3.4"
+      "walk-sync" : "2.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "walk-sync" : "0.3.4"
+      "walk-sync" : "2.0.2"
     }
   ],
   "compile-devDependencies" : [

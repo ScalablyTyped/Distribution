@@ -3,13 +3,11 @@ package typings.rdfjsFetchLite.mod
 import typings.rdfJs.mod.BaseQuad
 import typings.rdfJs.mod.DatasetCore
 import typings.rdfJs.mod.DatasetCoreFactory
-import typings.rdfjsFetchLite.AnonParsers
-import typings.rdfjsFetchLite.FnInit
-import typings.rdfjsFetchLite.rdfjsFetchLiteStrings.parsers
+import typings.rdfjsFetchLite.FnCall
+import typings.rdfjsFetchLite.PickparsersSinkMapEventEm
 import typings.std.AbortSignal
 import typings.std.BodyInit
 import typings.std.HeadersInit
-import typings.std.Pick
 import typings.std.ReferrerPolicy
 import typings.std.RequestCache
 import typings.std.RequestCredentials
@@ -27,11 +25,11 @@ object FactoryInit {
   @scala.inline
   def apply[D /* <: DatasetCore[OutQuad, InQuad] */, OutQuad /* <: BaseQuad */, InQuad /* <: BaseQuad */](
     factory: DatasetCoreFactory[OutQuad, InQuad, D],
-    formats: Pick[AnonParsers, parsers],
+    formats: PickparsersSinkMapEventEm,
     body: BodyInit = null,
     cache: RequestCache = null,
     credentials: RequestCredentials = null,
-    fetch: FnInit = null,
+    fetch: FnCall = null,
     headers: HeadersInit = null,
     integrity: String = null,
     keepalive: js.UndefOr[Boolean] = js.undefined,

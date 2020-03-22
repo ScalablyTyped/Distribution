@@ -12,15 +12,15 @@ trait SourcesOptions extends js.Object {
     */
   var fetchWindowIcons: js.UndefOr[Boolean] = js.undefined
   /**
-    * The size that the media source thumbnail should be scaled to. Default is 150 x
-    * 150. Set width or height to 0 when you do not need the thumbnails. This will
+    * The size that the media source thumbnail should be scaled to. Default is `150` x
+    * `150`. Set width or height to 0 when you do not need the thumbnails. This will
     * save the processing time required for capturing the content of each window and
     * screen.
     */
   var thumbnailSize: js.UndefOr[Size] = js.undefined
   /**
     * An array of Strings that lists the types of desktop sources to be captured,
-    * available types are screen and window.
+    * available types are `screen` and `window`.
     */
   var types: js.Array[String]
 }

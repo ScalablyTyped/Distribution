@@ -1,9 +1,9 @@
 package typings.googleapis.plusV1Mod.plusV1
 
-import typings.googleapis.AnonClientSpecificActorInfoDisplayName
-import typings.googleapis.AnonContentObjectType
 import typings.googleapis.AnonIdUrl
-import typings.googleapis.AnonTotalItems
+import typings.googleapis.AnonObjectType
+import typings.googleapis.AnonTotalItemsNumber
+import typings.googleapis.AnonVerification
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ trait SchemaComment extends js.Object {
   /**
     * The person who posted this comment.
     */
-  var actor: js.UndefOr[AnonClientSpecificActorInfoDisplayName] = js.native
+  var actor: js.UndefOr[AnonVerification] = js.native
   /**
     * ETag of this response for caching purposes.
     */
@@ -33,11 +33,11 @@ trait SchemaComment extends js.Object {
   /**
     * The object of this comment.
     */
-  var `object`: js.UndefOr[AnonContentObjectType] = js.native
+  var `object`: js.UndefOr[AnonObjectType] = js.native
   /**
     * People who +1&#39;d this comment.
     */
-  var plusoners: js.UndefOr[AnonTotalItems] = js.native
+  var plusoners: js.UndefOr[AnonTotalItemsNumber] = js.native
   /**
     * The time at which this comment was initially published. Formatted as an
     * RFC 3339 timestamp.
@@ -62,13 +62,13 @@ trait SchemaComment extends js.Object {
 object SchemaComment {
   @scala.inline
   def apply(
-    actor: AnonClientSpecificActorInfoDisplayName = null,
+    actor: AnonVerification = null,
     etag: String = null,
     id: String = null,
     inReplyTo: js.Array[AnonIdUrl] = null,
     kind: String = null,
-    `object`: AnonContentObjectType = null,
-    plusoners: AnonTotalItems = null,
+    `object`: AnonObjectType = null,
+    plusoners: AnonTotalItemsNumber = null,
     published: String = null,
     selfLink: String = null,
     updated: String = null,

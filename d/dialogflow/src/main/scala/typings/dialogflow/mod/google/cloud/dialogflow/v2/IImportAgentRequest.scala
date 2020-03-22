@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 /** Properties of an ImportAgentRequest. */
 trait IImportAgentRequest extends js.Object {
   /** ImportAgentRequest agentContent */
-  var agentContent: js.UndefOr[Uint8Array | Null] = js.undefined
+  var agentContent: js.UndefOr[Uint8Array | String | Null] = js.undefined
   /** ImportAgentRequest agentUri */
   var agentUri: js.UndefOr[String | Null] = js.undefined
   /** ImportAgentRequest parent */
@@ -17,7 +17,7 @@ trait IImportAgentRequest extends js.Object {
 
 object IImportAgentRequest {
   @scala.inline
-  def apply(agentContent: Uint8Array = null, agentUri: String = null, parent: String = null): IImportAgentRequest = {
+  def apply(agentContent: Uint8Array | String = null, agentUri: String = null, parent: String = null): IImportAgentRequest = {
     val __obj = js.Dynamic.literal()
     if (agentContent != null) __obj.updateDynamic("agentContent")(agentContent.asInstanceOf[js.Any])
     if (agentUri != null) __obj.updateDynamic("agentUri")(agentUri.asInstanceOf[js.Any])

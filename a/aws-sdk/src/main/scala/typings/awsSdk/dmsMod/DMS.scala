@@ -1,6 +1,9 @@
 package typings.awsSdk.dmsMod
 
-import typings.awsSdk.AnonWaiter
+import typings.awsSdk.DescribeConnectionsMessag
+import typings.awsSdk.DescribeEndpointsMessagew
+import typings.awsSdk.DescribeReplicationInstan
+import typings.awsSdk.DescribeReplicationTasksM
 import typings.awsSdk.awsSdkStrings.endpointDeleted
 import typings.awsSdk.awsSdkStrings.replicationInstanceAvailable
 import typings.awsSdk.awsSdkStrings.replicationInstanceDeleted
@@ -666,11 +669,11 @@ trait DMS extends Service {
     * Waits for the endpointDeleted state by periodically calling the underlying DMS.describeEndpointsoperation every 5 seconds (at most 60 times). Wait until testing endpoint is deleted.
     */
   @JSName("waitFor")
-  def waitFor_endpointDeleted(state: endpointDeleted, params: DescribeEndpointsMessage with AnonWaiter): Request[DescribeEndpointsResponse, AWSError] = js.native
+  def waitFor_endpointDeleted(state: endpointDeleted, params: DescribeEndpointsMessagew): Request[DescribeEndpointsResponse, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_endpointDeleted(
     state: endpointDeleted,
-    params: DescribeEndpointsMessage with AnonWaiter,
+    params: DescribeEndpointsMessagew,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeEndpointsResponse, Unit]
   ): Request[DescribeEndpointsResponse, AWSError] = js.native
   /**
@@ -687,11 +690,11 @@ trait DMS extends Service {
     * Waits for the replicationInstanceAvailable state by periodically calling the underlying DMS.describeReplicationInstancesoperation every 60 seconds (at most 60 times). Wait until DMS replication instance is available.
     */
   @JSName("waitFor")
-  def waitFor_replicationInstanceAvailable(state: replicationInstanceAvailable, params: DescribeReplicationInstancesMessage with AnonWaiter): Request[DescribeReplicationInstancesResponse, AWSError] = js.native
+  def waitFor_replicationInstanceAvailable(state: replicationInstanceAvailable, params: DescribeReplicationInstan): Request[DescribeReplicationInstancesResponse, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_replicationInstanceAvailable(
     state: replicationInstanceAvailable,
-    params: DescribeReplicationInstancesMessage with AnonWaiter,
+    params: DescribeReplicationInstan,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeReplicationInstancesResponse, Unit]
   ): Request[DescribeReplicationInstancesResponse, AWSError] = js.native
   /**
@@ -708,11 +711,11 @@ trait DMS extends Service {
     * Waits for the replicationInstanceDeleted state by periodically calling the underlying DMS.describeReplicationInstancesoperation every 15 seconds (at most 60 times). Wait until DMS replication instance is deleted.
     */
   @JSName("waitFor")
-  def waitFor_replicationInstanceDeleted(state: replicationInstanceDeleted, params: DescribeReplicationInstancesMessage with AnonWaiter): Request[DescribeReplicationInstancesResponse, AWSError] = js.native
+  def waitFor_replicationInstanceDeleted(state: replicationInstanceDeleted, params: DescribeReplicationInstan): Request[DescribeReplicationInstancesResponse, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_replicationInstanceDeleted(
     state: replicationInstanceDeleted,
-    params: DescribeReplicationInstancesMessage with AnonWaiter,
+    params: DescribeReplicationInstan,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeReplicationInstancesResponse, Unit]
   ): Request[DescribeReplicationInstancesResponse, AWSError] = js.native
   /**
@@ -729,11 +732,11 @@ trait DMS extends Service {
     * Waits for the replicationTaskDeleted state by periodically calling the underlying DMS.describeReplicationTasksoperation every 15 seconds (at most 60 times). Wait until DMS replication task is deleted.
     */
   @JSName("waitFor")
-  def waitFor_replicationTaskDeleted(state: replicationTaskDeleted, params: DescribeReplicationTasksMessage with AnonWaiter): Request[DescribeReplicationTasksResponse, AWSError] = js.native
+  def waitFor_replicationTaskDeleted(state: replicationTaskDeleted, params: DescribeReplicationTasksM): Request[DescribeReplicationTasksResponse, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_replicationTaskDeleted(
     state: replicationTaskDeleted,
-    params: DescribeReplicationTasksMessage with AnonWaiter,
+    params: DescribeReplicationTasksM,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeReplicationTasksResponse, Unit]
   ): Request[DescribeReplicationTasksResponse, AWSError] = js.native
   /**
@@ -750,11 +753,11 @@ trait DMS extends Service {
     * Waits for the replicationTaskReady state by periodically calling the underlying DMS.describeReplicationTasksoperation every 15 seconds (at most 60 times). Wait until DMS replication task is ready.
     */
   @JSName("waitFor")
-  def waitFor_replicationTaskReady(state: replicationTaskReady, params: DescribeReplicationTasksMessage with AnonWaiter): Request[DescribeReplicationTasksResponse, AWSError] = js.native
+  def waitFor_replicationTaskReady(state: replicationTaskReady, params: DescribeReplicationTasksM): Request[DescribeReplicationTasksResponse, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_replicationTaskReady(
     state: replicationTaskReady,
-    params: DescribeReplicationTasksMessage with AnonWaiter,
+    params: DescribeReplicationTasksM,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeReplicationTasksResponse, Unit]
   ): Request[DescribeReplicationTasksResponse, AWSError] = js.native
   /**
@@ -771,11 +774,11 @@ trait DMS extends Service {
     * Waits for the replicationTaskRunning state by periodically calling the underlying DMS.describeReplicationTasksoperation every 15 seconds (at most 60 times). Wait until DMS replication task is running.
     */
   @JSName("waitFor")
-  def waitFor_replicationTaskRunning(state: replicationTaskRunning, params: DescribeReplicationTasksMessage with AnonWaiter): Request[DescribeReplicationTasksResponse, AWSError] = js.native
+  def waitFor_replicationTaskRunning(state: replicationTaskRunning, params: DescribeReplicationTasksM): Request[DescribeReplicationTasksResponse, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_replicationTaskRunning(
     state: replicationTaskRunning,
-    params: DescribeReplicationTasksMessage with AnonWaiter,
+    params: DescribeReplicationTasksM,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeReplicationTasksResponse, Unit]
   ): Request[DescribeReplicationTasksResponse, AWSError] = js.native
   /**
@@ -792,11 +795,11 @@ trait DMS extends Service {
     * Waits for the replicationTaskStopped state by periodically calling the underlying DMS.describeReplicationTasksoperation every 15 seconds (at most 60 times). Wait until DMS replication task is stopped.
     */
   @JSName("waitFor")
-  def waitFor_replicationTaskStopped(state: replicationTaskStopped, params: DescribeReplicationTasksMessage with AnonWaiter): Request[DescribeReplicationTasksResponse, AWSError] = js.native
+  def waitFor_replicationTaskStopped(state: replicationTaskStopped, params: DescribeReplicationTasksM): Request[DescribeReplicationTasksResponse, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_replicationTaskStopped(
     state: replicationTaskStopped,
-    params: DescribeReplicationTasksMessage with AnonWaiter,
+    params: DescribeReplicationTasksM,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeReplicationTasksResponse, Unit]
   ): Request[DescribeReplicationTasksResponse, AWSError] = js.native
   /**
@@ -813,11 +816,11 @@ trait DMS extends Service {
     * Waits for the testConnectionSucceeds state by periodically calling the underlying DMS.describeConnectionsoperation every 5 seconds (at most 60 times). Wait until testing connection succeeds.
     */
   @JSName("waitFor")
-  def waitFor_testConnectionSucceeds(state: testConnectionSucceeds, params: DescribeConnectionsMessage with AnonWaiter): Request[DescribeConnectionsResponse, AWSError] = js.native
+  def waitFor_testConnectionSucceeds(state: testConnectionSucceeds, params: DescribeConnectionsMessag): Request[DescribeConnectionsResponse, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_testConnectionSucceeds(
     state: testConnectionSucceeds,
-    params: DescribeConnectionsMessage with AnonWaiter,
+    params: DescribeConnectionsMessag,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeConnectionsResponse, Unit]
   ): Request[DescribeConnectionsResponse, AWSError] = js.native
 }

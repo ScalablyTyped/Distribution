@@ -33,7 +33,6 @@ object helpersMod extends js.Object {
   val USE_EMULATOR: Boolean = js.native
   val apiDescribe: ApiDescribe_ = js.native
   def isPersistenceAvailable(): Boolean = js.native
-  def isRunningAgainstEmulator(): Boolean = js.native
   def toChangesArray(docSet: QuerySnapshot[DocumentData]): js.Array[DocumentData] = js.native
   def toChangesArray(docSet: QuerySnapshot[DocumentData], options: SnapshotListenOptions): js.Array[DocumentData] = js.native
   def toDataArray(docSet: QuerySnapshot[DocumentData]): js.Array[DocumentData] = js.native

@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Typeofmarked extends js.Object {
-  var InlineLexer: TypeofClassInlineLexer = js.native
-  var Lexer: TypeofClassLexer = js.native
-  var Parser: TypeofClassParser = js.native
+  var InlineLexer: TypeofInlineLexer = js.native
+  var Lexer: TypeofLexer = js.native
+  var Parser: TypeofParser = js.native
   var Renderer: Instantiable1[js.UndefOr[/* options */ MarkedOptions], typings.marked.mod.Renderer] = js.native
   var Slugger: Instantiable0[typings.marked.mod.Slugger] = js.native
   var TextRenderer: Instantiable0[typings.marked.mod.TextRenderer] = js.native

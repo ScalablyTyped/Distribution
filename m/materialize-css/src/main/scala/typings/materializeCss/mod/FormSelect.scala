@@ -1,9 +1,8 @@
 package typings.materializeCss.mod
 
-import typings.materializeCss.M.FormSelectOptions
 import typings.materializeCss.MElements
+import typings.materializeCss.PartialFormSelectOptions
 import typings.std.Element
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,11 +24,11 @@ object FormSelect extends js.Object {
     * Init FormSelects
     */
   def init(els: MElements): js.Array[typings.materializeCss.M.FormSelect] = js.native
-  def init(els: MElements, options: Partial[FormSelectOptions]): js.Array[typings.materializeCss.M.FormSelect] = js.native
+  def init(els: MElements, options: PartialFormSelectOptions): js.Array[typings.materializeCss.M.FormSelect] = js.native
   /**
     * Init FormSelect
     */
   def init(els: Element): typings.materializeCss.M.FormSelect = js.native
-  def init(els: Element, options: Partial[FormSelectOptions]): typings.materializeCss.M.FormSelect = js.native
+  def init(els: Element, options: PartialFormSelectOptions): typings.materializeCss.M.FormSelect = js.native
 }
 

@@ -2,7 +2,7 @@ package typings.powerAssert.mod.strict
 
 import org.scalablytyped.runtime.Instantiable1
 import typings.powerAssert.AnonActual
-import typings.powerAssert.FnBlock
+import typings.powerAssert.FnCall
 import typings.powerAssert.mod.Options
 import typings.std.RegExp
 import scala.scalajs.js
@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   var AssertionError: Instantiable1[js.UndefOr[/* options */ AnonActual], typings.powerAssert.mod.AssertionError] = js.native
   @JSName("doesNotThrow")
-  var doesNotThrow_Original: FnBlock = js.native
+  var doesNotThrow_Original: FnCall = js.native
   @JSName("throws")
-  var throws_Original: FnBlock = js.native
+  var throws_Original: FnCall = js.native
   def apply(value: js.Any): Unit = js.native
   def apply(value: js.Any, message: String): Unit = js.native
   def customize(options: Options): /* import warning: importer.ImportType#apply Failed type conversion: typeof assert */ js.Any = js.native

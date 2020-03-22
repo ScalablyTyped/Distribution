@@ -2,7 +2,7 @@ package typings.winrtUwp.Windows.ApplicationModel.Resources.Core
 
 import typings.std.Array
 import typings.winrtUwp.AnonIndex
-import typings.winrtUwp.AnonItemsReturnValueNumberResourceQualifier
+import typings.winrtUwp.AnonItemsResourceQualifier
 import typings.winrtUwp.Windows.Foundation.Collections.IIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -29,7 +29,7 @@ abstract class ResourceQualifierVectorView () extends Array[ResourceQualifier] {
     * Returns the ResourceQualifier objects that start at the specified index in the view.
     * @param startIndex The zero-based index of the start of the objects in the view to return.
     */
-  def getMany(startIndex: Double): AnonItemsReturnValueNumberResourceQualifier = js.native
+  def getMany(startIndex: Double): AnonItemsResourceQualifier = js.native
   def indexOf(value: ResourceQualifier, extra: js.Any*): AnonIndex = js.native
   /* hack */
   @JSName("indexOf")

@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 object xhrmockMod extends js.Object {
   @js.native
   class XHRMock () extends js.Object {
-    var RealXMLHttpRequest: AnonXMLHttpRequest = js.native
+    var RealXMLHttpRequest: AnonInstantiable = js.native
     def delete(url: String, mock: Mock): XHRMock = js.native
     def delete(url: RegExp, mock: Mock): XHRMock = js.native
     def error(callback: js.Function1[/* event */ ErrorCallbackEvent, Unit]): XHRMock = js.native

@@ -1,14 +1,12 @@
 package typings.logProcessErrors.mod
 
-import typings.logProcessErrors.AnonDefault
+import typings.logProcessErrors.PartialRecordExceptionTyp
 import typings.logProcessErrors.logProcessErrorsStrings.`node-tap`
 import typings.logProcessErrors.logProcessErrorsStrings.ava
 import typings.logProcessErrors.logProcessErrorsStrings.jasmine
 import typings.logProcessErrors.logProcessErrorsStrings.mocha
 import typings.logProcessErrors.logProcessErrorsStrings.tape
 import typings.std.Error
-import typings.std.Partial
-import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,7 +32,7 @@ trait Options extends js.Object {
     *
     * https://github.com/ehmicky/log-process-errors/blob/master/docs/API.md#log
     */
-  var level: js.UndefOr[(Partial[Record[ExceptionType, LogLevel]]) with AnonDefault] = js.undefined
+  var level: js.UndefOr[PartialRecordExceptionTyp] = js.undefined
   /**
     * Override logger
     *
@@ -54,7 +52,7 @@ object Options {
   def apply(
     colors: js.UndefOr[Boolean] = js.undefined,
     exitOn: js.Array[ExceptionType] = null,
-    level: (Partial[Record[ExceptionType, LogLevel]]) with AnonDefault = null,
+    level: PartialRecordExceptionTyp = null,
     log: (/* error */ Error, /* level */ LogLevel) => js.Promise[Unit] | Unit = null,
     testing: ava | mocha | jasmine | tape | `node-tap` = null
   ): Options = {

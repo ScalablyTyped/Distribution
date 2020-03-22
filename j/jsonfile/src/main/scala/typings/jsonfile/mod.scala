@@ -1,8 +1,8 @@
 package typings.jsonfile
 
 import typings.node.AnonEncodingFlag
-import typings.node.AnonEncodingFlagNull
-import typings.node.AnonEncodingFlagString
+import typings.node.AnonFlag
+import typings.node.AnonFlagString
 import typings.node.Buffer
 import typings.node.NodeJS.ErrnoException
 import typings.node.fsMod.PathLike
@@ -19,20 +19,20 @@ object mod extends js.Object {
   trait FS extends js.Object {
     var readFile: TypeoffsReadFile = js.native
     @JSName("readFileSync")
-    var readFileSync_Original: FnOptions = js.native
+    var readFileSync_Original: FnCall = js.native
     var writeFile: TypeoffsWriteFile = js.native
     @JSName("writeFileSync")
-    var writeFileSync_Original: FnData = js.native
+    var writeFileSync_Original: FnCallPathDataOptions = js.native
     def readFileSync(path: Double): String | Buffer = js.native
     def readFileSync(path: Double, options: String): String = js.native
-    def readFileSync(path: Double, options: AnonEncodingFlag): Buffer = js.native
-    def readFileSync(path: Double, options: AnonEncodingFlagNull): String | Buffer = js.native
-    def readFileSync(path: Double, options: AnonEncodingFlagString): String = js.native
+    def readFileSync(path: Double, options: AnonEncodingFlag): String = js.native
+    def readFileSync(path: Double, options: AnonFlag): Buffer = js.native
+    def readFileSync(path: Double, options: AnonFlagString): String | Buffer = js.native
     def readFileSync(path: PathLike): String | Buffer = js.native
     def readFileSync(path: PathLike, options: String): String = js.native
-    def readFileSync(path: PathLike, options: AnonEncodingFlag): Buffer = js.native
-    def readFileSync(path: PathLike, options: AnonEncodingFlagNull): String | Buffer = js.native
-    def readFileSync(path: PathLike, options: AnonEncodingFlagString): String = js.native
+    def readFileSync(path: PathLike, options: AnonEncodingFlag): String = js.native
+    def readFileSync(path: PathLike, options: AnonFlag): Buffer = js.native
+    def readFileSync(path: PathLike, options: AnonFlagString): String | Buffer = js.native
     @JSName("readFileSync")
     def readFileSync_Buffer(path: Double): Buffer = js.native
     @JSName("readFileSync")

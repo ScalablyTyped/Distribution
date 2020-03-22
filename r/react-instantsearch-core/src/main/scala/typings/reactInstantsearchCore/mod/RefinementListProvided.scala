@@ -1,6 +1,6 @@
 package typings.reactInstantsearchCore.mod
 
-import typings.reactInstantsearchCore.AnonCountIsRefined
+import typings.reactInstantsearchCore.HitcountnumberisRefinedbo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ trait RefinementListProvided extends js.Object {
     * The list of items the RefinementList can display.
     * If isFromSearch is false, the hit properties like _highlightResult are undefined
     */
-  var items: js.Array[Hit[AnonCountIsRefined]]
+  var items: js.Array[HitcountnumberisRefinedbo]
   /** a function to generate a URL for the corresponding search state */
   def createURL(args: js.Any*): js.Any
   /** a function to toggle a refinement */
@@ -32,7 +32,7 @@ object RefinementListProvided {
     createURL: /* repeated */ js.Any => js.Any,
     currentRefinement: js.Array[String],
     isFromSearch: Boolean,
-    items: js.Array[Hit[AnonCountIsRefined]],
+    items: js.Array[HitcountnumberisRefinedbo],
     refine: js.Array[String] => js.Any,
     searchForItems: /* repeated */ js.Any => js.Any
   ): RefinementListProvided = {

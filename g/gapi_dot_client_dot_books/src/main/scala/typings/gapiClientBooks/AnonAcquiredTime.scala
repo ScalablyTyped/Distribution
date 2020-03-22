@@ -15,7 +15,7 @@ trait AnonAcquiredTime extends js.Object {
   /** How this volume was acquired. */
   var acquisitionType: js.UndefOr[Double] = js.undefined
   /** Copy/Paste accounting information. */
-  var copy: js.UndefOr[AnonAllowedCharacterCountLimitType] = js.undefined
+  var copy: js.UndefOr[AnonLimitType] = js.undefined
   /** Whether this volume is purchased, sample, pd download etc. */
   var entitlementType: js.UndefOr[Double] = js.undefined
   /** Information on the ability to share with the family. */
@@ -57,7 +57,7 @@ object AnonAcquiredTime {
   def apply(
     acquiredTime: String = null,
     acquisitionType: Int | Double = null,
-    copy: AnonAllowedCharacterCountLimitType = null,
+    copy: AnonLimitType = null,
     entitlementType: Int | Double = null,
     familySharing: AnonFamilyRole = null,
     isFamilySharedFromUser: js.UndefOr[Boolean] = js.undefined,

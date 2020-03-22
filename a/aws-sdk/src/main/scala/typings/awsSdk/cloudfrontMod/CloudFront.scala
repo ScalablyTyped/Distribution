@@ -1,6 +1,8 @@
 package typings.awsSdk.cloudfrontMod
 
-import typings.awsSdk.AnonWaiter
+import typings.awsSdk.GetDistributionRequestwai
+import typings.awsSdk.GetInvalidationRequestwai
+import typings.awsSdk.GetStreamingDistributionR
 import typings.awsSdk.awsSdkStrings.distributionDeployed
 import typings.awsSdk.awsSdkStrings.invalidationCompleted
 import typings.awsSdk.awsSdkStrings.streamingDistributionDeployed
@@ -636,11 +638,11 @@ trait CloudFront extends CloudFrontCustomizations {
     * Waits for the distributionDeployed state by periodically calling the underlying CloudFront.getDistributionoperation every 60 seconds (at most 35 times). Wait until a distribution is deployed.
     */
   @JSName("waitFor")
-  def waitFor_distributionDeployed(state: distributionDeployed, params: GetDistributionRequest with AnonWaiter): Request[GetDistributionResult, AWSError] = js.native
+  def waitFor_distributionDeployed(state: distributionDeployed, params: GetDistributionRequestwai): Request[GetDistributionResult, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_distributionDeployed(
     state: distributionDeployed,
-    params: GetDistributionRequest with AnonWaiter,
+    params: GetDistributionRequestwai,
     callback: js.Function2[/* err */ AWSError, /* data */ GetDistributionResult, Unit]
   ): Request[GetDistributionResult, AWSError] = js.native
   /**
@@ -657,11 +659,11 @@ trait CloudFront extends CloudFrontCustomizations {
     * Waits for the invalidationCompleted state by periodically calling the underlying CloudFront.getInvalidationoperation every 20 seconds (at most 30 times). Wait until an invalidation has completed.
     */
   @JSName("waitFor")
-  def waitFor_invalidationCompleted(state: invalidationCompleted, params: GetInvalidationRequest with AnonWaiter): Request[GetInvalidationResult, AWSError] = js.native
+  def waitFor_invalidationCompleted(state: invalidationCompleted, params: GetInvalidationRequestwai): Request[GetInvalidationResult, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_invalidationCompleted(
     state: invalidationCompleted,
-    params: GetInvalidationRequest with AnonWaiter,
+    params: GetInvalidationRequestwai,
     callback: js.Function2[/* err */ AWSError, /* data */ GetInvalidationResult, Unit]
   ): Request[GetInvalidationResult, AWSError] = js.native
   /**
@@ -678,11 +680,11 @@ trait CloudFront extends CloudFrontCustomizations {
     * Waits for the streamingDistributionDeployed state by periodically calling the underlying CloudFront.getStreamingDistributionoperation every 60 seconds (at most 25 times). Wait until a streaming distribution is deployed.
     */
   @JSName("waitFor")
-  def waitFor_streamingDistributionDeployed(state: streamingDistributionDeployed, params: GetStreamingDistributionRequest with AnonWaiter): Request[GetStreamingDistributionResult, AWSError] = js.native
+  def waitFor_streamingDistributionDeployed(state: streamingDistributionDeployed, params: GetStreamingDistributionR): Request[GetStreamingDistributionResult, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_streamingDistributionDeployed(
     state: streamingDistributionDeployed,
-    params: GetStreamingDistributionRequest with AnonWaiter,
+    params: GetStreamingDistributionR,
     callback: js.Function2[/* err */ AWSError, /* data */ GetStreamingDistributionResult, Unit]
   ): Request[GetStreamingDistributionResult, AWSError] = js.native
 }

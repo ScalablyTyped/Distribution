@@ -1,9 +1,7 @@
 package typings.smoothScrollbar
 
-import typings.smoothScrollbar.scrollbarMod.ScrollbarOptions
 import typings.std.HTMLElement
 import typings.std.Map
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +13,7 @@ object smoothScrollbarScrollbarMod extends js.Object {
   class Scrollbar protected ()
     extends typings.smoothScrollbar.scrollbarMod.Scrollbar {
     def this(containerEl: HTMLElement) = this()
-    def this(containerEl: HTMLElement, options: Partial[ScrollbarOptions]) = this()
+    def this(containerEl: HTMLElement, options: PartialScrollbarOptions) = this()
     var _init: js.Any = js.native
     var _listeners: js.Any = js.native
     var _momentum: js.Any = js.native

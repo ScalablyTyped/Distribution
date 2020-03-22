@@ -15,7 +15,7 @@ trait Typeofchrome extends js.Object {
     * Permissions: "accessibilityFeatures.read"
     * Important: This API works only on Chrome OS.
     */
-  val accessibilityFeatures: TypeofaccessibilityFeatures
+  val accessibilityFeatures: TypeofaccessibilityFeatur
   ////////////////////
   // Alarms
   ////////////////////
@@ -109,7 +109,7 @@ trait Typeofchrome extends js.Object {
   ////////////////////
   // Declarative Web Request
   ////////////////////
-  val declarativeWebRequest: TypeofdeclarativeWebRequest
+  val declarativeWebRequest: TypeofdeclarativeWebReque
   ////////////////////
   // DesktopCapture
   ////////////////////
@@ -294,7 +294,7 @@ trait Typeofchrome extends js.Object {
     * Important: This API works only on Chrome OS.
     * @since Chrome 45.
     */
-  val platformKeys: TypeofplatformKeysCallback
+  val platformKeys: TypeofplatformKeysGetKeyPair
   ////////////////////
   // Power
   ////////////////////
@@ -491,7 +491,7 @@ object Typeofchrome {
   @scala.inline
   def apply(
     _debugger: TypeofDebugger,
-    accessibilityFeatures: TypeofaccessibilityFeatures,
+    accessibilityFeatures: TypeofaccessibilityFeatur,
     alarms: Typeofalarms,
     bookmarks: Typeofbookmarks,
     browser: Typeofbrowser,
@@ -503,7 +503,7 @@ object Typeofchrome {
     contextMenus: TypeofcontextMenus,
     cookies: Typeofcookies,
     declarativeContent: TypeofdeclarativeContent,
-    declarativeWebRequest: TypeofdeclarativeWebRequest,
+    declarativeWebRequest: TypeofdeclarativeWebReque,
     desktopCapture: TypeofdesktopCapture,
     devtools: Typeofdevtools,
     documentScan: TypeofdocumentScan,
@@ -527,7 +527,7 @@ object Typeofchrome {
     pageAction: TypeofpageAction,
     pageCapture: TypeofpageCapture,
     permissions: Typeofpermissions,
-    platformKeys: TypeofplatformKeysCallback,
+    platformKeys: TypeofplatformKeysGetKeyPair,
     power: Typeofpower,
     printerProvider: TypeofprinterProvider,
     privacy: Typeofprivacy,

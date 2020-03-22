@@ -1,6 +1,6 @@
 package typings.exceljs.mod
 
-import typings.std.Partial
+import typings.exceljs.PartialColor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,7 +30,7 @@ trait WorksheetProperties extends js.Object {
   /**
   	 * Color of the tab
   	 */
-  var tabColor: Partial[Color]
+  var tabColor: PartialColor
 }
 
 object WorksheetProperties {
@@ -41,7 +41,7 @@ object WorksheetProperties {
     outlineLevelCol: Double,
     outlineLevelRow: Double,
     showGridLines: Boolean,
-    tabColor: Partial[Color],
+    tabColor: PartialColor,
     defaultColWidth: Int | Double = null
   ): WorksheetProperties = {
     val __obj = js.Dynamic.literal(defaultRowHeight = defaultRowHeight.asInstanceOf[js.Any], dyDescent = dyDescent.asInstanceOf[js.Any], outlineLevelCol = outlineLevelCol.asInstanceOf[js.Any], outlineLevelRow = outlineLevelRow.asInstanceOf[js.Any], showGridLines = showGridLines.asInstanceOf[js.Any], tabColor = tabColor.asInstanceOf[js.Any])

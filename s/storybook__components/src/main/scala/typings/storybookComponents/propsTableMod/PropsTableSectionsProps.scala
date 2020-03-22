@@ -6,8 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PropsTableSectionsProps extends PropsTableProps {
-  var sections: js.UndefOr[Record[String, js.Array[PropDef]]] = js.undefined
+  var sections: js.UndefOr[Record[String, js.Array[PropDef]]] = js.native
 }
 
 object PropsTableSectionsProps {

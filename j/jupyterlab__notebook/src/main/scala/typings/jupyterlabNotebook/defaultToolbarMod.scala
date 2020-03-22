@@ -1,10 +1,11 @@
 package typings.jupyterlabNotebook
 
 import typings.jupyterlabApputils.mod.ReactWidget
+import typings.jupyterlabApputils.tokensMod.ISessionContextDialogs
 import typings.jupyterlabDocregistry.registryMod.DocumentRegistry.IToolbarItem
 import typings.jupyterlabNotebook.panelMod.NotebookPanel
 import typings.jupyterlabNotebook.widgetMod.Notebook
-import typings.phosphorWidgets.mod.Widget
+import typings.luminoWidgets.mod.Widget
 import typings.react.mod.ChangeEvent
 import typings.react.mod.KeyboardEvent
 import typings.std.Element
@@ -75,6 +76,7 @@ object defaultToolbarMod extends js.Object {
       * Get the default toolbar items for panel
       */
     def getDefaultItems(panel: NotebookPanel): js.Array[IToolbarItem] = js.native
+    def getDefaultItems(panel: NotebookPanel, sessionDialogs: ISessionContextDialogs): js.Array[IToolbarItem] = js.native
   }
   
 }

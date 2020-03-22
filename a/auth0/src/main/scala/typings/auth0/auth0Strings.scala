@@ -313,9 +313,6 @@ object auth0Strings {
        with UnlinkAccountsParamsProvider
   
   @js.native
-  sealed trait scope extends js.Object
-  
-  @js.native
   sealed trait sentry extends ClientAppType
   
   @js.native
@@ -570,8 +567,6 @@ object auth0Strings {
   def `salesforce-sandbox`: `salesforce-sandbox` = "salesforce-sandbox".asInstanceOf[`salesforce-sandbox`]
   @scala.inline
   def samlp: samlp = "samlp".asInstanceOf[samlp]
-  @scala.inline
-  def scope: scope = "scope".asInstanceOf[scope]
   @scala.inline
   def sentry: sentry = "sentry".asInstanceOf[sentry]
   @scala.inline

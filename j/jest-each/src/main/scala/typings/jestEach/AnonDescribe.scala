@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait AnonDescribe extends js.Object {
-  var describe: AnonOnly = js.native
-  var it: AnonOnly = js.native
-  var test: AnonOnly = js.native
+  var describe: AnonCall = js.native
+  var it: AnonCall = js.native
+  var test: AnonCall = js.native
   def fdescribe(title: String, test: EachTestFn): Unit = js.native
   def fdescribe(title: String, test: EachTestFn, timeout: Double): Unit = js.native
   def fit(title: String, test: EachTestFn): Unit = js.native

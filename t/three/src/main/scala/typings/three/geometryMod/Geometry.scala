@@ -11,6 +11,7 @@ import typings.three.matrix3Mod.Matrix
 import typings.three.matrix4Mod.Matrix4
 import typings.three.meshMod.Mesh
 import typings.three.sphereMod.Sphere
+import typings.three.threeBooleans.`true`
 import typings.three.vector2Mod.Vector2
 import typings.three.vector3Mod.Vector3
 import typings.three.vector4Mod.Vector4
@@ -68,7 +69,7 @@ class Geometry () extends EventDispatcher {
   	 * Unique number of this geometry instance
   	 */
   var id: Double = js.native
-  var isGeometry: Boolean = js.native
+  val isGeometry: `true` = js.native
   /**
   	 *
   	 */
@@ -125,7 +126,7 @@ class Geometry () extends EventDispatcher {
   /**
   	 * Bakes matrix transform directly into vertex coordinates.
   	 */
-  def applyMatrix(matrix: Matrix4): Geometry = js.native
+  def applyMatrix4(matrix: Matrix4): Geometry = js.native
   def center(): Geometry = js.native
   /**
   	 * Computes bounding box of the geometry, updating {@link Geometry.boundingBox} attribute.

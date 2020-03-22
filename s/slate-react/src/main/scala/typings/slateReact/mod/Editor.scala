@@ -16,88 +16,88 @@ import typings.slate.mod.RangeTypeProperties
 import typings.slate.mod.SchemaProperties
 import typings.slate.mod.Value
 import typings.slateReact.AnonNode
-import typings.slateReact.FnAnnotation
-import typings.slateReact.FnAnnotationNewProperties
-import typings.slateReact.FnArgs
-import typings.slateReact.FnArgsKey
-import typings.slateReact.FnArgsQuery
-import typings.slateReact.FnBlock
-import typings.slateReact.FnBlockPath
-import typings.slateReact.FnBlockRange
-import typings.slateReact.FnCommand
-import typings.slateReact.FnController
-import typings.slateReact.FnData
-import typings.slateReact.FnDepth
-import typings.slateReact.FnDepthController
-import typings.slateReact.FnFn
-import typings.slateReact.FnFnEditor
-import typings.slateReact.FnFragment
-import typings.slateReact.FnFragmentIndex
-import typings.slateReact.FnFragmentIndexPath
-import typings.slateReact.FnFragmentRange
-import typings.slateReact.FnHeight
-import typings.slateReact.FnIndex
-import typings.slateReact.FnIndexNode
-import typings.slateReact.FnInline
-import typings.slateReact.FnInlineRange
-import typings.slateReact.FnKey
-import typings.slateReact.FnKeyController
-import typings.slateReact.FnKeyLength
-import typings.slateReact.FnKeyLengthNewProperties
-import typings.slateReact.FnKeyMarks
-import typings.slateReact.FnKeyMarksText
-import typings.slateReact.FnKeyNewIndex
-import typings.slateReact.FnKeyNode
-import typings.slateReact.FnKeyOffset
-import typings.slateReact.FnKeyParent
-import typings.slateReact.FnKeyProperties
-import typings.slateReact.FnKeyPropertiesBlockProperties
-import typings.slateReact.FnKeyPropertiesController
-import typings.slateReact.FnKeyTextKey
-import typings.slateReact.FnLength
-import typings.slateReact.FnLengthMarks
-import typings.slateReact.FnLengthMarksOffset
-import typings.slateReact.FnLengthNewProperties
-import typings.slateReact.FnLengthOffset
-import typings.slateReact.FnMark
-import typings.slateReact.FnMarkArray
-import typings.slateReact.FnMarkController
-import typings.slateReact.FnMarkNewMark
-import typings.slateReact.FnMarkRange
-import typings.slateReact.FnMarkRangeController
-import typings.slateReact.FnMarks
-import typings.slateReact.FnMarksOffset
-import typings.slateReact.FnMarksPath
-import typings.slateReact.FnN
-import typings.slateReact.FnNPath
-import typings.slateReact.FnNRange
-import typings.slateReact.FnNewIndex
-import typings.slateReact.FnNewNode
-import typings.slateReact.FnNewProperties
-import typings.slateReact.FnNode
-import typings.slateReact.FnOffset
-import typings.slateReact.FnOperation
-import typings.slateReact.FnOptions
-import typings.slateReact.FnOptionsPath
-import typings.slateReact.FnParent
-import typings.slateReact.FnPath
-import typings.slateReact.FnPathArray
-import typings.slateReact.FnPathProperties
-import typings.slateReact.FnPathPropertiesController
-import typings.slateReact.FnPathTextOffset
-import typings.slateReact.FnPrefix
-import typings.slateReact.FnPrefixRange
-import typings.slateReact.FnProperties
-import typings.slateReact.FnPropertiesBlock
-import typings.slateReact.FnPropertiesController
-import typings.slateReact.FnPropertiesControllerEditor
-import typings.slateReact.FnPropertiesRange
-import typings.slateReact.FnPropertiesRangeBlock
-import typings.slateReact.FnPropertiesRangeController
-import typings.slateReact.FnQuery
-import typings.slateReact.FnRange
-import typings.slateReact.FnRangeText
-import typings.slateReact.FnText
+import typings.slateReact.Fn0
+import typings.slateReact.Fn1
+import typings.slateReact.Fn10
+import typings.slateReact.Fn11
+import typings.slateReact.Fn12
+import typings.slateReact.Fn13
+import typings.slateReact.Fn14
+import typings.slateReact.Fn2
+import typings.slateReact.Fn3
+import typings.slateReact.Fn4
+import typings.slateReact.Fn5
+import typings.slateReact.Fn6
+import typings.slateReact.Fn7
+import typings.slateReact.Fn8
+import typings.slateReact.Fn9
+import typings.slateReact.FnCall
+import typings.slateReact.FnCallAnnotationNewProperties
+import typings.slateReact.FnCallBlock
+import typings.slateReact.FnCallCommand
+import typings.slateReact.FnCallData
+import typings.slateReact.FnCallDepth
+import typings.slateReact.FnCallFn
+import typings.slateReact.FnCallFragment
+import typings.slateReact.FnCallInline
+import typings.slateReact.FnCallKey
+import typings.slateReact.FnCallKeyArgs
+import typings.slateReact.FnCallKeyIndexFragment
+import typings.slateReact.FnCallKeyIndexNode
+import typings.slateReact.FnCallKeyNewKeyNewIndex
+import typings.slateReact.FnCallKeyNode
+import typings.slateReact.FnCallKeyOffset
+import typings.slateReact.FnCallKeyOffsetLength
+import typings.slateReact.FnCallKeyOffsetLengthMark
+import typings.slateReact.FnCallKeyOffsetLengthPropertiesNewProperties
+import typings.slateReact.FnCallKeyOffsetTextMarks
+import typings.slateReact.FnCallKeyParent
+import typings.slateReact.FnCallKeyProperties
+import typings.slateReact.FnCallKeyTextKeyTextOffset
+import typings.slateReact.FnCallKeyTextMarks
+import typings.slateReact.FnCallMark
+import typings.slateReact.FnCallMarkNewMark
+import typings.slateReact.FnCallN
+import typings.slateReact.FnCallNode
+import typings.slateReact.FnCallOperation
+import typings.slateReact.FnCallPath
+import typings.slateReact.FnCallPathBlock
+import typings.slateReact.FnCallPathIndexFragment
+import typings.slateReact.FnCallPathIndexNode
+import typings.slateReact.FnCallPathN
+import typings.slateReact.FnCallPathNewNode
+import typings.slateReact.FnCallPathNewPathNewIndex
+import typings.slateReact.FnCallPathNewProperties
+import typings.slateReact.FnCallPathOffset
+import typings.slateReact.FnCallPathOffsetLength
+import typings.slateReact.FnCallPathOffsetLengthMark
+import typings.slateReact.FnCallPathOffsetLengthMarks
+import typings.slateReact.FnCallPathOffsetLengthPropertiesNewProperties
+import typings.slateReact.FnCallPathOffsetLengthTextMarks
+import typings.slateReact.FnCallPathOffsetTextMarks
+import typings.slateReact.FnCallPathParent
+import typings.slateReact.FnCallPathPositionOptions
+import typings.slateReact.FnCallPathProperties
+import typings.slateReact.FnCallPathTextMarks
+import typings.slateReact.FnCallPathTextPathTextOffset
+import typings.slateReact.FnCallPrefixSuffix
+import typings.slateReact.FnCallProperties
+import typings.slateReact.FnCallPropertiesOptions
+import typings.slateReact.FnCallQuery
+import typings.slateReact.FnCallQueryArgs
+import typings.slateReact.FnCallRange
+import typings.slateReact.FnCallRangeBlock
+import typings.slateReact.FnCallRangeFragment
+import typings.slateReact.FnCallRangeHeight
+import typings.slateReact.FnCallRangeInline
+import typings.slateReact.FnCallRangeMark
+import typings.slateReact.FnCallRangeMarks
+import typings.slateReact.FnCallRangeN
+import typings.slateReact.FnCallRangePrefixSuffix
+import typings.slateReact.FnCallRangeProperties
+import typings.slateReact.FnCallRangeText
+import typings.slateReact.FnCallText
+import typings.slateReact.FnCallTypeArgs
 import typings.std.Element
 import typings.std.Event_
 import typings.std.Range
@@ -112,427 +112,427 @@ class Editor ()
   extends Component[EditorProps[Editor], EditorState, js.Any]
      with Controller {
   // Controller
-  var addAnnotation: FnAnnotation = js.native
-  var addMark: FnMark = js.native
-  var addMarkAtRange: FnMarkRange = js.native
-  var addMarkByKey: FnKey = js.native
-  var addMarkByPath: FnLength = js.native
-  var addMarks: FnMarkArray = js.native
-  var addMarksAtRange: FnMarks = js.native
-  var addMarksByPath: FnLengthMarks = js.native
-  var applyOperation: FnOperation = js.native
+  var addAnnotation: FnCall = js.native
+  var addMark: FnCallMark = js.native
+  var addMarkAtRange: FnCallRangeMark = js.native
+  var addMarkByKey: FnCallKeyOffsetLengthMark = js.native
+  var addMarkByPath: FnCallPathOffsetLengthMark = js.native
+  var addMarks: Fn0 = js.native
+  var addMarksAtRange: FnCallRangeMarks = js.native
+  var addMarksByPath: FnCallPathOffsetLengthMarks = js.native
+  var applyOperation: FnCallOperation = js.native
   @JSName("blur")
-  var blur_FEditor: FnController = js.native
-  var command: FnArgs = js.native
+  var blur_FEditor: Fn1 = js.native
+  var command: FnCallTypeArgs = js.native
   var controller: typings.slate.mod.Editor = js.native
-  var deleteAtRange: FnRange = js.native
-  var deleteBackwardAtRange: FnNRange = js.native
+  var deleteAtRange: FnCallRange = js.native
+  var deleteBackwardAtRange: FnCallRangeN = js.native
   @JSName("deleteBackward")
-  var deleteBackward_FEditor: FnN = js.native
-  var deleteCharBackwardAtRange: FnRange = js.native
+  var deleteBackward_FEditor: FnCallN = js.native
+  var deleteCharBackwardAtRange: FnCallRange = js.native
   @JSName("deleteCharBackward")
-  var deleteCharBackward_FEditor: FnController = js.native
-  var deleteCharForwardAtRange: FnRange = js.native
+  var deleteCharBackward_FEditor: Fn1 = js.native
+  var deleteCharForwardAtRange: FnCallRange = js.native
   @JSName("deleteCharForward")
-  var deleteCharForward_FEditor: FnController = js.native
-  var deleteForwardAtRange: FnNRange = js.native
+  var deleteCharForward_FEditor: Fn1 = js.native
+  var deleteForwardAtRange: FnCallRangeN = js.native
   @JSName("deleteForward")
-  var deleteForward_FEditor: FnN = js.native
-  var deleteLineBackwardAtRange: FnRange = js.native
+  var deleteForward_FEditor: FnCallN = js.native
+  var deleteLineBackwardAtRange: FnCallRange = js.native
   @JSName("deleteLineBackward")
-  var deleteLineBackward_FEditor: FnController = js.native
-  var deleteLineForwardAtRange: FnRange = js.native
+  var deleteLineBackward_FEditor: Fn1 = js.native
+  var deleteLineForwardAtRange: FnCallRange = js.native
   @JSName("deleteLineForward")
-  var deleteLineForward_FEditor: FnController = js.native
-  var deleteWordBackwardAtRange: FnRange = js.native
+  var deleteLineForward_FEditor: Fn1 = js.native
+  var deleteWordBackwardAtRange: FnCallRange = js.native
   @JSName("deleteWordBackward")
-  var deleteWordBackward_FEditor: FnController = js.native
-  var deleteWordForwardAtRange: FnRange = js.native
+  var deleteWordBackward_FEditor: Fn1 = js.native
+  var deleteWordForwardAtRange: FnCallRange = js.native
   @JSName("deleteWordForward")
-  var deleteWordForward_FEditor: FnController = js.native
+  var deleteWordForward_FEditor: Fn1 = js.native
   @JSName("delete")
-  var delete_FEditor: FnController = js.native
+  var delete_FEditor: Fn1 = js.native
   @JSName("deselect")
-  var deselect_FEditor: FnController = js.native
+  var deselect_FEditor: Fn1 = js.native
   @JSName("flip")
-  var flip_FEditor: FnController = js.native
+  var flip_FEditor: Fn1 = js.native
   @JSName("focus")
-  var focus_FEditor: FnController = js.native
+  var focus_FEditor: Fn1 = js.native
   var hasCommand: js.Function1[/* type */ String, Boolean] = js.native
   var hasQuery: js.Function1[/* type */ String, Boolean] = js.native
-  var insertBlock: FnBlock = js.native
-  var insertBlockAtRange: FnBlockRange = js.native
-  var insertFragment: FnFragment = js.native
-  var insertFragmentAtRange: FnFragmentRange = js.native
-  var insertFragmentByKey: FnFragmentIndex = js.native
-  var insertFragmentByPath: FnFragmentIndexPath = js.native
-  var insertInline: FnInline = js.native
-  var insertInlineAtRange: FnInlineRange = js.native
-  var insertNodeByKey: FnIndex = js.native
-  var insertNodeByPath: FnIndexNode = js.native
-  var insertText: FnText = js.native
-  var insertTextAtRange: FnRangeText = js.native
-  var insertTextByKey: FnKeyMarks = js.native
-  var insertTextByPath: FnMarksOffset = js.native
-  var mergeNodeByKey: FnKeyController = js.native
-  var mergeNodeByPath: FnPath = js.native
+  var insertBlock: FnCallBlock = js.native
+  var insertBlockAtRange: FnCallRangeBlock = js.native
+  var insertFragment: FnCallFragment = js.native
+  var insertFragmentAtRange: FnCallRangeFragment = js.native
+  var insertFragmentByKey: FnCallKeyIndexFragment = js.native
+  var insertFragmentByPath: FnCallPathIndexFragment = js.native
+  var insertInline: FnCallInline = js.native
+  var insertInlineAtRange: FnCallRangeInline = js.native
+  var insertNodeByKey: FnCallKeyIndexNode = js.native
+  var insertNodeByPath: FnCallPathIndexNode = js.native
+  var insertText: FnCallText = js.native
+  var insertTextAtRange: FnCallRangeText = js.native
+  var insertTextByKey: FnCallKeyOffsetTextMarks = js.native
+  var insertTextByPath: FnCallPathOffsetTextMarks = js.native
+  var mergeNodeByKey: FnCallKey = js.native
+  var mergeNodeByPath: FnCallPath = js.native
   @JSName("moveAnchorBackward")
-  var moveAnchorBackward_FEditor: FnN = js.native
+  var moveAnchorBackward_FEditor: FnCallN = js.native
   @JSName("moveAnchorForward")
-  var moveAnchorForward_FEditor: FnN = js.native
-  var moveAnchorTo: FnOffset = js.native
+  var moveAnchorForward_FEditor: FnCallN = js.native
+  var moveAnchorTo: FnCallPathOffset = js.native
   @JSName("moveAnchorToEndOfBlock")
-  var moveAnchorToEndOfBlock_FEditor: FnController = js.native
+  var moveAnchorToEndOfBlock_FEditor: Fn1 = js.native
   @JSName("moveAnchorToEndOfDocument")
-  var moveAnchorToEndOfDocument_FEditor: FnController = js.native
+  var moveAnchorToEndOfDocument_FEditor: Fn1 = js.native
   @JSName("moveAnchorToEndOfInline")
-  var moveAnchorToEndOfInline_FEditor: FnController = js.native
+  var moveAnchorToEndOfInline_FEditor: Fn1 = js.native
   @JSName("moveAnchorToEndOfNextBlock")
-  var moveAnchorToEndOfNextBlock_FEditor: FnController = js.native
+  var moveAnchorToEndOfNextBlock_FEditor: Fn1 = js.native
   @JSName("moveAnchorToEndOfNextInline")
-  var moveAnchorToEndOfNextInline_FEditor: FnController = js.native
+  var moveAnchorToEndOfNextInline_FEditor: Fn1 = js.native
   @JSName("moveAnchorToEndOfNextText")
-  var moveAnchorToEndOfNextText_FEditor: FnController = js.native
-  var moveAnchorToEndOfNode: FnNode = js.native
+  var moveAnchorToEndOfNextText_FEditor: Fn1 = js.native
+  var moveAnchorToEndOfNode: FnCallNode = js.native
   @JSName("moveAnchorToEndOfPreviousBlock")
-  var moveAnchorToEndOfPreviousBlock_FEditor: FnController = js.native
+  var moveAnchorToEndOfPreviousBlock_FEditor: Fn1 = js.native
   @JSName("moveAnchorToEndOfPreviousInline")
-  var moveAnchorToEndOfPreviousInline_FEditor: FnController = js.native
+  var moveAnchorToEndOfPreviousInline_FEditor: Fn1 = js.native
   @JSName("moveAnchorToEndOfPreviousText")
-  var moveAnchorToEndOfPreviousText_FEditor: FnController = js.native
+  var moveAnchorToEndOfPreviousText_FEditor: Fn1 = js.native
   @JSName("moveAnchorToEndOfText")
-  var moveAnchorToEndOfText_FEditor: FnController = js.native
+  var moveAnchorToEndOfText_FEditor: Fn1 = js.native
   @JSName("moveAnchorToStartOfBlock")
-  var moveAnchorToStartOfBlock_FEditor: FnController = js.native
+  var moveAnchorToStartOfBlock_FEditor: Fn1 = js.native
   @JSName("moveAnchorToStartOfDocument")
-  var moveAnchorToStartOfDocument_FEditor: FnController = js.native
+  var moveAnchorToStartOfDocument_FEditor: Fn1 = js.native
   @JSName("moveAnchorToStartOfInline")
-  var moveAnchorToStartOfInline_FEditor: FnController = js.native
+  var moveAnchorToStartOfInline_FEditor: Fn1 = js.native
   @JSName("moveAnchorToStartOfNextBlock")
-  var moveAnchorToStartOfNextBlock_FEditor: FnController = js.native
+  var moveAnchorToStartOfNextBlock_FEditor: Fn1 = js.native
   @JSName("moveAnchorToStartOfNextInline")
-  var moveAnchorToStartOfNextInline_FEditor: FnController = js.native
+  var moveAnchorToStartOfNextInline_FEditor: Fn1 = js.native
   @JSName("moveAnchorToStartOfNextText")
-  var moveAnchorToStartOfNextText_FEditor: FnController = js.native
-  var moveAnchorToStartOfNode: FnNode = js.native
+  var moveAnchorToStartOfNextText_FEditor: Fn1 = js.native
+  var moveAnchorToStartOfNode: FnCallNode = js.native
   @JSName("moveAnchorToStartOfPreviousBlock")
-  var moveAnchorToStartOfPreviousBlock_FEditor: FnController = js.native
+  var moveAnchorToStartOfPreviousBlock_FEditor: Fn1 = js.native
   @JSName("moveAnchorToStartOfPreviousInline")
-  var moveAnchorToStartOfPreviousInline_FEditor: FnController = js.native
+  var moveAnchorToStartOfPreviousInline_FEditor: Fn1 = js.native
   @JSName("moveAnchorToStartOfPreviousText")
-  var moveAnchorToStartOfPreviousText_FEditor: FnController = js.native
+  var moveAnchorToStartOfPreviousText_FEditor: Fn1 = js.native
   @JSName("moveAnchorToStartOfText")
-  var moveAnchorToStartOfText_FEditor: FnController = js.native
+  var moveAnchorToStartOfText_FEditor: Fn1 = js.native
   @JSName("moveAnchorWordBackward")
-  var moveAnchorWordBackward_FEditor: FnController = js.native
+  var moveAnchorWordBackward_FEditor: Fn1 = js.native
   @JSName("moveAnchorWordForward")
-  var moveAnchorWordForward_FEditor: FnController = js.native
+  var moveAnchorWordForward_FEditor: Fn1 = js.native
   @JSName("moveBackward")
-  var moveBackward_FEditor: FnN = js.native
+  var moveBackward_FEditor: FnCallN = js.native
   @JSName("moveEndBackward")
-  var moveEndBackward_FEditor: FnN = js.native
+  var moveEndBackward_FEditor: FnCallN = js.native
   @JSName("moveEndForward")
-  var moveEndForward_FEditor: FnN = js.native
-  var moveEndTo: FnOffset = js.native
+  var moveEndForward_FEditor: FnCallN = js.native
+  var moveEndTo: FnCallPathOffset = js.native
   @JSName("moveEndToEndOfBlock")
-  var moveEndToEndOfBlock_FEditor: FnController = js.native
+  var moveEndToEndOfBlock_FEditor: Fn1 = js.native
   @JSName("moveEndToEndOfDocument")
-  var moveEndToEndOfDocument_FEditor: FnController = js.native
+  var moveEndToEndOfDocument_FEditor: Fn1 = js.native
   @JSName("moveEndToEndOfInline")
-  var moveEndToEndOfInline_FEditor: FnController = js.native
+  var moveEndToEndOfInline_FEditor: Fn1 = js.native
   @JSName("moveEndToEndOfNextBlock")
-  var moveEndToEndOfNextBlock_FEditor: FnController = js.native
+  var moveEndToEndOfNextBlock_FEditor: Fn1 = js.native
   @JSName("moveEndToEndOfNextInline")
-  var moveEndToEndOfNextInline_FEditor: FnController = js.native
+  var moveEndToEndOfNextInline_FEditor: Fn1 = js.native
   @JSName("moveEndToEndOfNextText")
-  var moveEndToEndOfNextText_FEditor: FnController = js.native
-  var moveEndToEndOfNode: FnNode = js.native
+  var moveEndToEndOfNextText_FEditor: Fn1 = js.native
+  var moveEndToEndOfNode: FnCallNode = js.native
   @JSName("moveEndToEndOfPreviousBlock")
-  var moveEndToEndOfPreviousBlock_FEditor: FnController = js.native
+  var moveEndToEndOfPreviousBlock_FEditor: Fn1 = js.native
   @JSName("moveEndToEndOfPreviousInline")
-  var moveEndToEndOfPreviousInline_FEditor: FnController = js.native
+  var moveEndToEndOfPreviousInline_FEditor: Fn1 = js.native
   @JSName("moveEndToEndOfPreviousText")
-  var moveEndToEndOfPreviousText_FEditor: FnController = js.native
+  var moveEndToEndOfPreviousText_FEditor: Fn1 = js.native
   @JSName("moveEndToEndOfText")
-  var moveEndToEndOfText_FEditor: FnController = js.native
+  var moveEndToEndOfText_FEditor: Fn1 = js.native
   @JSName("moveEndToStartOfBlock")
-  var moveEndToStartOfBlock_FEditor: FnController = js.native
+  var moveEndToStartOfBlock_FEditor: Fn1 = js.native
   @JSName("moveEndToStartOfDocument")
-  var moveEndToStartOfDocument_FEditor: FnController = js.native
+  var moveEndToStartOfDocument_FEditor: Fn1 = js.native
   @JSName("moveEndToStartOfInline")
-  var moveEndToStartOfInline_FEditor: FnController = js.native
+  var moveEndToStartOfInline_FEditor: Fn1 = js.native
   @JSName("moveEndToStartOfNextBlock")
-  var moveEndToStartOfNextBlock_FEditor: FnController = js.native
+  var moveEndToStartOfNextBlock_FEditor: Fn1 = js.native
   @JSName("moveEndToStartOfNextInline")
-  var moveEndToStartOfNextInline_FEditor: FnController = js.native
+  var moveEndToStartOfNextInline_FEditor: Fn1 = js.native
   @JSName("moveEndToStartOfNextText")
-  var moveEndToStartOfNextText_FEditor: FnController = js.native
-  var moveEndToStartOfNode: FnNode = js.native
+  var moveEndToStartOfNextText_FEditor: Fn1 = js.native
+  var moveEndToStartOfNode: FnCallNode = js.native
   @JSName("moveEndToStartOfPreviousBlock")
-  var moveEndToStartOfPreviousBlock_FEditor: FnController = js.native
+  var moveEndToStartOfPreviousBlock_FEditor: Fn1 = js.native
   @JSName("moveEndToStartOfPreviousInline")
-  var moveEndToStartOfPreviousInline_FEditor: FnController = js.native
+  var moveEndToStartOfPreviousInline_FEditor: Fn1 = js.native
   @JSName("moveEndToStartOfPreviousText")
-  var moveEndToStartOfPreviousText_FEditor: FnController = js.native
+  var moveEndToStartOfPreviousText_FEditor: Fn1 = js.native
   @JSName("moveEndToStartOfText")
-  var moveEndToStartOfText_FEditor: FnController = js.native
+  var moveEndToStartOfText_FEditor: Fn1 = js.native
   @JSName("moveEndWordBackward")
-  var moveEndWordBackward_FEditor: FnController = js.native
+  var moveEndWordBackward_FEditor: Fn1 = js.native
   @JSName("moveEndWordForward")
-  var moveEndWordForward_FEditor: FnController = js.native
+  var moveEndWordForward_FEditor: Fn1 = js.native
   @JSName("moveFocusBackward")
-  var moveFocusBackward_FEditor: FnN = js.native
+  var moveFocusBackward_FEditor: FnCallN = js.native
   @JSName("moveFocusForward")
-  var moveFocusForward_FEditor: FnN = js.native
-  var moveFocusTo: FnOffset = js.native
+  var moveFocusForward_FEditor: FnCallN = js.native
+  var moveFocusTo: FnCallPathOffset = js.native
   @JSName("moveFocusToEndOfBlock")
-  var moveFocusToEndOfBlock_FEditor: FnController = js.native
+  var moveFocusToEndOfBlock_FEditor: Fn1 = js.native
   @JSName("moveFocusToEndOfDocument")
-  var moveFocusToEndOfDocument_FEditor: FnController = js.native
+  var moveFocusToEndOfDocument_FEditor: Fn1 = js.native
   @JSName("moveFocusToEndOfInline")
-  var moveFocusToEndOfInline_FEditor: FnController = js.native
+  var moveFocusToEndOfInline_FEditor: Fn1 = js.native
   @JSName("moveFocusToEndOfNextBlock")
-  var moveFocusToEndOfNextBlock_FEditor: FnController = js.native
+  var moveFocusToEndOfNextBlock_FEditor: Fn1 = js.native
   @JSName("moveFocusToEndOfNextInline")
-  var moveFocusToEndOfNextInline_FEditor: FnController = js.native
+  var moveFocusToEndOfNextInline_FEditor: Fn1 = js.native
   @JSName("moveFocusToEndOfNextText")
-  var moveFocusToEndOfNextText_FEditor: FnController = js.native
-  var moveFocusToEndOfNode: FnNode = js.native
+  var moveFocusToEndOfNextText_FEditor: Fn1 = js.native
+  var moveFocusToEndOfNode: FnCallNode = js.native
   @JSName("moveFocusToEndOfPreviousBlock")
-  var moveFocusToEndOfPreviousBlock_FEditor: FnController = js.native
+  var moveFocusToEndOfPreviousBlock_FEditor: Fn1 = js.native
   @JSName("moveFocusToEndOfPreviousInline")
-  var moveFocusToEndOfPreviousInline_FEditor: FnController = js.native
+  var moveFocusToEndOfPreviousInline_FEditor: Fn1 = js.native
   @JSName("moveFocusToEndOfPreviousText")
-  var moveFocusToEndOfPreviousText_FEditor: FnController = js.native
+  var moveFocusToEndOfPreviousText_FEditor: Fn1 = js.native
   @JSName("moveFocusToEndOfText")
-  var moveFocusToEndOfText_FEditor: FnController = js.native
+  var moveFocusToEndOfText_FEditor: Fn1 = js.native
   @JSName("moveFocusToStartOfBlock")
-  var moveFocusToStartOfBlock_FEditor: FnController = js.native
+  var moveFocusToStartOfBlock_FEditor: Fn1 = js.native
   @JSName("moveFocusToStartOfDocument")
-  var moveFocusToStartOfDocument_FEditor: FnController = js.native
+  var moveFocusToStartOfDocument_FEditor: Fn1 = js.native
   @JSName("moveFocusToStartOfInline")
-  var moveFocusToStartOfInline_FEditor: FnController = js.native
+  var moveFocusToStartOfInline_FEditor: Fn1 = js.native
   @JSName("moveFocusToStartOfNextBlock")
-  var moveFocusToStartOfNextBlock_FEditor: FnController = js.native
+  var moveFocusToStartOfNextBlock_FEditor: Fn1 = js.native
   @JSName("moveFocusToStartOfNextInline")
-  var moveFocusToStartOfNextInline_FEditor: FnController = js.native
+  var moveFocusToStartOfNextInline_FEditor: Fn1 = js.native
   @JSName("moveFocusToStartOfNextText")
-  var moveFocusToStartOfNextText_FEditor: FnController = js.native
-  var moveFocusToStartOfNode: FnNode = js.native
+  var moveFocusToStartOfNextText_FEditor: Fn1 = js.native
+  var moveFocusToStartOfNode: FnCallNode = js.native
   @JSName("moveFocusToStartOfPreviousBlock")
-  var moveFocusToStartOfPreviousBlock_FEditor: FnController = js.native
+  var moveFocusToStartOfPreviousBlock_FEditor: Fn1 = js.native
   @JSName("moveFocusToStartOfPreviousInline")
-  var moveFocusToStartOfPreviousInline_FEditor: FnController = js.native
+  var moveFocusToStartOfPreviousInline_FEditor: Fn1 = js.native
   @JSName("moveFocusToStartOfPreviousText")
-  var moveFocusToStartOfPreviousText_FEditor: FnController = js.native
+  var moveFocusToStartOfPreviousText_FEditor: Fn1 = js.native
   @JSName("moveFocusToStartOfText")
-  var moveFocusToStartOfText_FEditor: FnController = js.native
+  var moveFocusToStartOfText_FEditor: Fn1 = js.native
   @JSName("moveFocusWordBackward")
-  var moveFocusWordBackward_FEditor: FnController = js.native
+  var moveFocusWordBackward_FEditor: Fn1 = js.native
   @JSName("moveFocusWordForward")
-  var moveFocusWordForward_FEditor: FnController = js.native
+  var moveFocusWordForward_FEditor: Fn1 = js.native
   @JSName("moveForward")
-  var moveForward_FEditor: FnN = js.native
-  var moveNodeByKey: FnKeyNewIndex = js.native
-  var moveNodeByPath: FnNewIndex = js.native
+  var moveForward_FEditor: FnCallN = js.native
+  var moveNodeByKey: FnCallKeyNewKeyNewIndex = js.native
+  var moveNodeByPath: FnCallPathNewPathNewIndex = js.native
   @JSName("moveStartBackward")
-  var moveStartBackward_FEditor: FnN = js.native
+  var moveStartBackward_FEditor: FnCallN = js.native
   @JSName("moveStartForward")
-  var moveStartForward_FEditor: FnN = js.native
-  var moveStartTo: FnNPath = js.native
+  var moveStartForward_FEditor: FnCallN = js.native
+  var moveStartTo: FnCallPathN = js.native
   @JSName("moveStartToEndOfBlock")
-  var moveStartToEndOfBlock_FEditor: FnController = js.native
+  var moveStartToEndOfBlock_FEditor: Fn1 = js.native
   @JSName("moveStartToEndOfDocument")
-  var moveStartToEndOfDocument_FEditor: FnController = js.native
+  var moveStartToEndOfDocument_FEditor: Fn1 = js.native
   @JSName("moveStartToEndOfInline")
-  var moveStartToEndOfInline_FEditor: FnController = js.native
+  var moveStartToEndOfInline_FEditor: Fn1 = js.native
   @JSName("moveStartToEndOfNextBlock")
-  var moveStartToEndOfNextBlock_FEditor: FnController = js.native
+  var moveStartToEndOfNextBlock_FEditor: Fn1 = js.native
   @JSName("moveStartToEndOfNextInline")
-  var moveStartToEndOfNextInline_FEditor: FnController = js.native
+  var moveStartToEndOfNextInline_FEditor: Fn1 = js.native
   @JSName("moveStartToEndOfNextText")
-  var moveStartToEndOfNextText_FEditor: FnController = js.native
-  var moveStartToEndOfNode: FnNode = js.native
+  var moveStartToEndOfNextText_FEditor: Fn1 = js.native
+  var moveStartToEndOfNode: FnCallNode = js.native
   @JSName("moveStartToEndOfPreviousBlock")
-  var moveStartToEndOfPreviousBlock_FEditor: FnController = js.native
+  var moveStartToEndOfPreviousBlock_FEditor: Fn1 = js.native
   @JSName("moveStartToEndOfPreviousInline")
-  var moveStartToEndOfPreviousInline_FEditor: FnController = js.native
+  var moveStartToEndOfPreviousInline_FEditor: Fn1 = js.native
   @JSName("moveStartToEndOfPreviousText")
-  var moveStartToEndOfPreviousText_FEditor: FnController = js.native
+  var moveStartToEndOfPreviousText_FEditor: Fn1 = js.native
   @JSName("moveStartToEndOfText")
-  var moveStartToEndOfText_FEditor: FnController = js.native
+  var moveStartToEndOfText_FEditor: Fn1 = js.native
   @JSName("moveStartToStartOfBlock")
-  var moveStartToStartOfBlock_FEditor: FnController = js.native
+  var moveStartToStartOfBlock_FEditor: Fn1 = js.native
   @JSName("moveStartToStartOfDocument")
-  var moveStartToStartOfDocument_FEditor: FnController = js.native
+  var moveStartToStartOfDocument_FEditor: Fn1 = js.native
   @JSName("moveStartToStartOfInline")
-  var moveStartToStartOfInline_FEditor: FnController = js.native
+  var moveStartToStartOfInline_FEditor: Fn1 = js.native
   @JSName("moveStartToStartOfNextBlock")
-  var moveStartToStartOfNextBlock_FEditor: FnController = js.native
+  var moveStartToStartOfNextBlock_FEditor: Fn1 = js.native
   @JSName("moveStartToStartOfNextInline")
-  var moveStartToStartOfNextInline_FEditor: FnController = js.native
+  var moveStartToStartOfNextInline_FEditor: Fn1 = js.native
   @JSName("moveStartToStartOfNextText")
-  var moveStartToStartOfNextText_FEditor: FnController = js.native
-  var moveStartToStartOfNode: FnNode = js.native
+  var moveStartToStartOfNextText_FEditor: Fn1 = js.native
+  var moveStartToStartOfNode: FnCallNode = js.native
   @JSName("moveStartToStartOfPreviousBlock")
-  var moveStartToStartOfPreviousBlock_FEditor: FnController = js.native
+  var moveStartToStartOfPreviousBlock_FEditor: Fn1 = js.native
   @JSName("moveStartToStartOfPreviousInline")
-  var moveStartToStartOfPreviousInline_FEditor: FnController = js.native
+  var moveStartToStartOfPreviousInline_FEditor: Fn1 = js.native
   @JSName("moveStartToStartOfPreviousText")
-  var moveStartToStartOfPreviousText_FEditor: FnController = js.native
+  var moveStartToStartOfPreviousText_FEditor: Fn1 = js.native
   @JSName("moveStartToStartOfText")
-  var moveStartToStartOfText_FEditor: FnController = js.native
+  var moveStartToStartOfText_FEditor: Fn1 = js.native
   @JSName("moveStartWordBackward")
-  var moveStartWordBackward_FEditor: FnController = js.native
+  var moveStartWordBackward_FEditor: Fn1 = js.native
   @JSName("moveStartWordForward")
-  var moveStartWordForward_FEditor: FnController = js.native
-  var moveTo: FnOffset = js.native
+  var moveStartWordForward_FEditor: Fn1 = js.native
+  var moveTo: FnCallPathOffset = js.native
   @JSName("moveToAnchor")
-  var moveToAnchor_FEditor: FnController = js.native
+  var moveToAnchor_FEditor: Fn1 = js.native
   @JSName("moveToEndOfBlock")
-  var moveToEndOfBlock_FEditor: FnController = js.native
+  var moveToEndOfBlock_FEditor: Fn1 = js.native
   @JSName("moveToEndOfDocument")
-  var moveToEndOfDocument_FEditor: FnController = js.native
+  var moveToEndOfDocument_FEditor: Fn1 = js.native
   @JSName("moveToEndOfInline")
-  var moveToEndOfInline_FEditor: FnController = js.native
+  var moveToEndOfInline_FEditor: Fn1 = js.native
   @JSName("moveToEndOfNextBlock")
-  var moveToEndOfNextBlock_FEditor: FnController = js.native
+  var moveToEndOfNextBlock_FEditor: Fn1 = js.native
   @JSName("moveToEndOfNextInline")
-  var moveToEndOfNextInline_FEditor: FnController = js.native
+  var moveToEndOfNextInline_FEditor: Fn1 = js.native
   @JSName("moveToEndOfNextText")
-  var moveToEndOfNextText_FEditor: FnController = js.native
-  var moveToEndOfNode: FnNode = js.native
+  var moveToEndOfNextText_FEditor: Fn1 = js.native
+  var moveToEndOfNode: FnCallNode = js.native
   @JSName("moveToEndOfPreviousBlock")
-  var moveToEndOfPreviousBlock_FEditor: FnController = js.native
+  var moveToEndOfPreviousBlock_FEditor: Fn1 = js.native
   @JSName("moveToEndOfPreviousInline")
-  var moveToEndOfPreviousInline_FEditor: FnController = js.native
+  var moveToEndOfPreviousInline_FEditor: Fn1 = js.native
   @JSName("moveToEndOfPreviousText")
-  var moveToEndOfPreviousText_FEditor: FnController = js.native
+  var moveToEndOfPreviousText_FEditor: Fn1 = js.native
   @JSName("moveToEndOfText")
-  var moveToEndOfText_FEditor: FnController = js.native
+  var moveToEndOfText_FEditor: Fn1 = js.native
   @JSName("moveToEnd")
-  var moveToEnd_FEditor: FnController = js.native
+  var moveToEnd_FEditor: Fn1 = js.native
   @JSName("moveToFocus")
-  var moveToFocus_FEditor: FnController = js.native
+  var moveToFocus_FEditor: Fn1 = js.native
   @JSName("moveToRangeOfDocument")
-  var moveToRangeOfDocument_FEditor: FnController = js.native
-  var moveToRangeOfNode: FnNode = js.native
+  var moveToRangeOfDocument_FEditor: Fn1 = js.native
+  var moveToRangeOfNode: FnCallNode = js.native
   @JSName("moveToStartOfBlock")
-  var moveToStartOfBlock_FEditor: FnController = js.native
+  var moveToStartOfBlock_FEditor: Fn1 = js.native
   @JSName("moveToStartOfDocument")
-  var moveToStartOfDocument_FEditor: FnController = js.native
+  var moveToStartOfDocument_FEditor: Fn1 = js.native
   @JSName("moveToStartOfInline")
-  var moveToStartOfInline_FEditor: FnController = js.native
+  var moveToStartOfInline_FEditor: Fn1 = js.native
   @JSName("moveToStartOfNextBlock")
-  var moveToStartOfNextBlock_FEditor: FnController = js.native
+  var moveToStartOfNextBlock_FEditor: Fn1 = js.native
   @JSName("moveToStartOfNextInline")
-  var moveToStartOfNextInline_FEditor: FnController = js.native
+  var moveToStartOfNextInline_FEditor: Fn1 = js.native
   @JSName("moveToStartOfNextText")
-  var moveToStartOfNextText_FEditor: FnController = js.native
-  var moveToStartOfNode: FnNode = js.native
+  var moveToStartOfNextText_FEditor: Fn1 = js.native
+  var moveToStartOfNode: FnCallNode = js.native
   @JSName("moveToStartOfPreviousBlock")
-  var moveToStartOfPreviousBlock_FEditor: FnController = js.native
+  var moveToStartOfPreviousBlock_FEditor: Fn1 = js.native
   @JSName("moveToStartOfPreviousInline")
-  var moveToStartOfPreviousInline_FEditor: FnController = js.native
+  var moveToStartOfPreviousInline_FEditor: Fn1 = js.native
   @JSName("moveToStartOfPreviousText")
-  var moveToStartOfPreviousText_FEditor: FnController = js.native
+  var moveToStartOfPreviousText_FEditor: Fn1 = js.native
   @JSName("moveToStartOfText")
-  var moveToStartOfText_FEditor: FnController = js.native
+  var moveToStartOfText_FEditor: Fn1 = js.native
   @JSName("moveToStart")
-  var moveToStart_FEditor: FnController = js.native
+  var moveToStart_FEditor: Fn1 = js.native
   @JSName("moveWordBackward")
-  var moveWordBackward_FEditor: FnController = js.native
+  var moveWordBackward_FEditor: Fn1 = js.native
   @JSName("moveWordForward")
-  var moveWordForward_FEditor: FnController = js.native
+  var moveWordForward_FEditor: Fn1 = js.native
   @JSName("normalize")
-  var normalize_FEditor: FnController = js.native
+  var normalize_FEditor: Fn1 = js.native
   val operations: List[Operation] = js.native
   val plugins: js.Array[Plugin[Editor]] = js.native
-  var query: FnArgsQuery = js.native
+  var query: FnCallQueryArgs = js.native
   val readOnly: Boolean = js.native
   @JSName("redo")
-  var redo_FEditor: FnController = js.native
-  var registerCommand: FnCommand = js.native
-  var registerQuery: FnQuery = js.native
-  var removeAllMarksByKey: FnKeyController = js.native
-  var removeAllMarksByPath: FnPath = js.native
-  var removeAnnotation: FnAnnotation = js.native
-  var removeMark: FnMarkController = js.native
-  var removeMarkAtRange: FnMarkRangeController = js.native
-  var removeMarkByKey: FnKey = js.native
-  var removeMarkByPath: FnLength = js.native
-  var removeMarksByPath: FnLengthMarks = js.native
-  var removeNodeByKey: FnKeyController = js.native
-  var removeNodeByPath: FnPath = js.native
-  var removeTextByKey: FnKeyLength = js.native
-  var removeTextByPath: FnLengthOffset = js.native
-  var replaceMark: FnMarkNewMark = js.native
-  var replaceNodeByKey: FnKeyNode = js.native
-  var replaceNodeByPath: FnNewNode = js.native
-  var replaceTextByKey: FnKeyNode = js.native
-  var replaceTextByPath: FnLengthMarksOffset = js.native
-  var run: FnArgsKey = js.native
+  var redo_FEditor: Fn1 = js.native
+  var registerCommand: FnCallCommand = js.native
+  var registerQuery: FnCallQuery = js.native
+  var removeAllMarksByKey: FnCallKey = js.native
+  var removeAllMarksByPath: FnCallPath = js.native
+  var removeAnnotation: FnCall = js.native
+  var removeMark: Fn4 = js.native
+  var removeMarkAtRange: Fn7 = js.native
+  var removeMarkByKey: FnCallKeyOffsetLengthMark = js.native
+  var removeMarkByPath: FnCallPathOffsetLengthMark = js.native
+  var removeMarksByPath: FnCallPathOffsetLengthMarks = js.native
+  var removeNodeByKey: FnCallKey = js.native
+  var removeNodeByPath: FnCallPath = js.native
+  var removeTextByKey: FnCallKeyOffsetLength = js.native
+  var removeTextByPath: FnCallPathOffsetLength = js.native
+  var replaceMark: FnCallMarkNewMark = js.native
+  var replaceNodeByKey: FnCallKeyNode = js.native
+  var replaceNodeByPath: FnCallPathNewNode = js.native
+  var replaceTextByKey: FnCallKeyNode = js.native
+  var replaceTextByPath: FnCallPathOffsetLengthTextMarks = js.native
+  var run: FnCallKeyArgs = js.native
   var save: js.Function1[/* operation */ Operation, Unit] = js.native
-  var select: FnOptions = js.native
+  var select: FnCallPropertiesOptions = js.native
   var setAnchor: js.Function1[/* point */ Point, Unit] = js.native
-  var setAnnotation: FnAnnotationNewProperties = js.native
-  var setBlocks: FnProperties = js.native
-  var setBlocksAtRange: FnPropertiesRange = js.native
-  var setData: FnData = js.native
+  var setAnnotation: FnCallAnnotationNewProperties = js.native
+  var setBlocks: FnCallProperties = js.native
+  var setBlocksAtRange: FnCallRangeProperties = js.native
+  var setData: FnCallData = js.native
   var setEnd: js.Function1[/* point */ Point, Unit] = js.native
   var setFocus: js.Function1[/* point */ Point, Unit] = js.native
-  var setInlines: FnPropertiesController = js.native
-  var setInlinesAtRange: FnPropertiesRangeController = js.native
-  var setMarkByKey: FnKeyLengthNewProperties = js.native
-  var setMarkByPath: FnLengthNewProperties = js.native
-  var setNodeByKey: FnKeyProperties = js.native
-  var setNodeByPath: FnNewProperties = js.native
+  var setInlines: Fn2 = js.native
+  var setInlinesAtRange: Fn8 = js.native
+  var setMarkByKey: FnCallKeyOffsetLengthPropertiesNewProperties = js.native
+  var setMarkByPath: FnCallPathOffsetLengthPropertiesNewProperties = js.native
+  var setNodeByKey: FnCallKeyProperties = js.native
+  var setNodeByPath: FnCallPathNewProperties = js.native
   var setStart: js.Function1[/* point */ Point, Unit] = js.native
-  var setTextByKey: FnKeyMarksText = js.native
-  var setTextByPath: FnMarksPath = js.native
+  var setTextByKey: FnCallKeyTextMarks = js.native
+  var setTextByPath: FnCallPathTextMarks = js.native
   @JSName("snapshotSelection")
-  var snapshotSelection_FEditor: FnController = js.native
-  var splitBlockAtRange: FnHeight = js.native
+  var snapshotSelection_FEditor: Fn1 = js.native
+  var splitBlockAtRange: FnCallRangeHeight = js.native
   @JSName("splitBlock")
-  var splitBlock_FEditor: FnDepth = js.native
-  var splitDescendantsByKey: FnKeyTextKey = js.native
-  var splitDescendantsByPath: FnPathTextOffset = js.native
-  var splitInline: FnDepthController = js.native
-  var splitInlineAtRange: FnHeight = js.native
-  var splitNodeByKey: FnKeyOffset = js.native
-  var splitNodeByPath: FnOptionsPath = js.native
-  var toggleMark: FnMark = js.native
-  var toggleMarkAtRange: FnMarkRangeController = js.native
+  var splitBlock_FEditor: FnCallDepth = js.native
+  var splitDescendantsByKey: FnCallKeyTextKeyTextOffset = js.native
+  var splitDescendantsByPath: FnCallPathTextPathTextOffset = js.native
+  var splitInline: Fn3 = js.native
+  var splitInlineAtRange: FnCallRangeHeight = js.native
+  var splitNodeByKey: FnCallKeyOffset = js.native
+  var splitNodeByPath: FnCallPathPositionOptions = js.native
+  var toggleMark: FnCallMark = js.native
+  var toggleMarkAtRange: Fn7 = js.native
   @JSName("undo")
-  var undo_FEditor: FnController = js.native
-  var unwrapBlock: FnPropertiesBlock = js.native
-  var unwrapBlockAtRange: FnPropertiesRangeBlock = js.native
-  var unwrapBlockByKey: FnKeyPropertiesBlockProperties = js.native
-  var unwrapBlockByPath: FnPathProperties = js.native
-  var unwrapChildrenByKey: FnKeyController = js.native
-  var unwrapChildrenByPath: FnPathArray = js.native
-  var unwrapInline: FnPropertiesControllerEditor = js.native
-  var unwrapInlineAtRange: FnPropertiesRangeController = js.native
-  var unwrapInlineByKey: FnKeyPropertiesController = js.native
-  var unwrapInlineByPath: FnPathPropertiesController = js.native
-  var unwrapNodeByKey: FnKeyController = js.native
-  var unwrapNodeByPath: FnPath = js.native
+  var undo_FEditor: Fn1 = js.native
+  var unwrapBlock: Fn5 = js.native
+  var unwrapBlockAtRange: Fn9 = js.native
+  var unwrapBlockByKey: Fn10 = js.native
+  var unwrapBlockByPath: FnCallPathProperties = js.native
+  var unwrapChildrenByKey: FnCallKey = js.native
+  var unwrapChildrenByPath: Fn11 = js.native
+  var unwrapInline: Fn6 = js.native
+  var unwrapInlineAtRange: Fn8 = js.native
+  var unwrapInlineByKey: Fn12 = js.native
+  var unwrapInlineByPath: Fn13 = js.native
+  var unwrapNodeByKey: FnCallKey = js.native
+  var unwrapNodeByPath: FnCallPath = js.native
   val value: Value = js.native
-  var withoutMerging: FnFnEditor = js.native
-  var withoutNormalizing: FnFn = js.native
-  var withoutSaving: FnFnEditor = js.native
-  var wrapBlock: FnPropertiesBlock = js.native
-  var wrapBlockAtRange: FnPropertiesRangeBlock = js.native
-  var wrapBlockByKey: FnKeyPropertiesBlockProperties = js.native
-  var wrapBlockByPath: FnBlockPath = js.native
-  var wrapInline: FnPropertiesControllerEditor = js.native
-  var wrapInlineAtRange: FnPropertiesRangeController = js.native
-  var wrapInlineByKey: FnKeyPropertiesController = js.native
-  var wrapInlineByPath: FnPathPropertiesController = js.native
-  var wrapNodeByKey: FnKeyParent = js.native
-  var wrapNodeByPath: FnParent = js.native
-  var wrapText: FnPrefix = js.native
-  var wrapTextAtRange: FnPrefixRange = js.native
+  var withoutMerging: Fn14 = js.native
+  var withoutNormalizing: FnCallFn = js.native
+  var withoutSaving: Fn14 = js.native
+  var wrapBlock: Fn5 = js.native
+  var wrapBlockAtRange: Fn9 = js.native
+  var wrapBlockByKey: Fn10 = js.native
+  var wrapBlockByPath: FnCallPathBlock = js.native
+  var wrapInline: Fn6 = js.native
+  var wrapInlineAtRange: Fn8 = js.native
+  var wrapInlineByKey: Fn12 = js.native
+  var wrapInlineByPath: Fn13 = js.native
+  var wrapNodeByKey: FnCallKeyParent = js.native
+  var wrapNodeByPath: FnCallPathParent = js.native
+  var wrapText: FnCallPrefixSuffix = js.native
+  var wrapTextAtRange: FnCallRangePrefixSuffix = js.native
   def findDOMNode(path: js.Array[Double]): ReactNode | Null = js.native
   def findDOMNode(path: List[Double]): ReactNode | Null = js.native
   def findDOMPoint(point: Point): AnonNode | Null = js.native

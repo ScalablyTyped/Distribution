@@ -1,10 +1,10 @@
 package typings.jupyterlabConsole.historyMod
 
-import typings.jupyterlabApputils.clientsessionMod.IClientSession
+import typings.jupyterlabApputils.sessioncontextMod.ISessionContext
 import typings.jupyterlabCodeeditor.editorMod.CodeEditor.EdgeLocation
 import typings.jupyterlabCodeeditor.editorMod.CodeEditor.IEditor
 import typings.jupyterlabConsole.historyMod.ConsoleHistory.IOptions
-import typings.jupyterlabServices.messagesMod.KernelMessage.IHistoryReplyMsg
+import typings.jupyterlabServices.messagesMod.IHistoryReplyMsg
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -47,10 +47,10 @@ class ConsoleHistory_ protected () extends IConsoleHistory {
   /* CompleteClass */
   override val placeholder: String = js.native
   /**
-    * The client session used by the foreign handler.
+    * The session context used by the foreign handler.
     */
   /* CompleteClass */
-  override val session: IClientSession = js.native
+  override val sessionContext: ISessionContext = js.native
   /**
     * Get the previous item in the console history.
     *
@@ -75,6 +75,15 @@ class ConsoleHistory_ protected () extends IConsoleHistory {
     */
   /* CompleteClass */
   override def dispose(): Unit = js.native
+  @JSName("editor")
+  def editor_MConsoleHistory_(): js.Any = js.native
+  @JSName("editor")
+  def editor_MConsoleHistory_(value: IEditor): js.Any = js.native
+  /**
+    * The current editor used by the history manager.
+    */
+  @JSName("editor")
+  def editor_Union(): IEditor | Null = js.native
   /**
     * Get the next item in the console history.
     *
@@ -86,6 +95,11 @@ class ConsoleHistory_ protected () extends IConsoleHistory {
     */
   /* CompleteClass */
   override def forward(placeholder: String): js.Promise[String] = js.native
+  /**
+    * Get whether the console history manager is disposed.
+    */
+  @JSName("isDisposed")
+  def isDisposed_MConsoleHistory_(): Boolean = js.native
   /**
     * Handle an edge requested signal.
     */
@@ -105,6 +119,11 @@ class ConsoleHistory_ protected () extends IConsoleHistory {
     * Handle a text change signal from the editor.
     */
   /* protected */ def onTextChange(): Unit = js.native
+  /**
+    * The placeholder text that a history session began with.
+    */
+  @JSName("placeholder")
+  def placeholder_MConsoleHistory_(): String = js.native
   /**
     * Add a new item to the bottom of history.
     *

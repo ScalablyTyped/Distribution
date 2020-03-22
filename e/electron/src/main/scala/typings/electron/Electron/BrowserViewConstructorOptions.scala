@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait BrowserViewConstructorOptions extends js.Object {
   /**
-    * See .
+    * See BrowserWindow.
     */
   var webPreferences: js.UndefOr[WebPreferences] = js.undefined
 }

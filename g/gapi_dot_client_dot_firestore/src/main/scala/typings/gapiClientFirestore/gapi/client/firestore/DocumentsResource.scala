@@ -2,13 +2,13 @@ package typings.gapiClientFirestore.gapi.client.firestore
 
 import typings.gapiClient.gapi.client.Request_
 import typings.gapiClientFirestore.AnonAccesstoken
-import typings.gapiClientFirestore.AnonAccesstokenAlt
-import typings.gapiClientFirestore.AnonAccesstokenAltBearertoken
-import typings.gapiClientFirestore.AnonAccesstokenAltBearertokenCallback
-import typings.gapiClientFirestore.AnonAccesstokenAltBearertokenCallbackCollectionId
-import typings.gapiClientFirestore.AnonAccesstokenAltBearertokenCallbackCurrentDocumentexists
-import typings.gapiClientFirestore.AnonAccesstokenAltBearertokenCallbackFields
-import typings.gapiClientFirestore.AnonAccesstokenAltBearertokenCallbackFieldsKey
+import typings.gapiClientFirestore.AnonAlt
+import typings.gapiClientFirestore.AnonBearertoken
+import typings.gapiClientFirestore.AnonCallback
+import typings.gapiClientFirestore.AnonCollectionId
+import typings.gapiClientFirestore.AnonCurrentDocumentexists
+import typings.gapiClientFirestore.AnonFields
+import typings.gapiClientFirestore.AnonKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,23 +26,23 @@ trait DocumentsResource extends js.Object {
   /** Commits a transaction, while optionally updating documents. */
   def commit(request: AnonAccesstoken): Request_[CommitResponse]
   /** Creates a new document. */
-  def createDocument(request: AnonAccesstokenAlt): Request_[Document]
+  def createDocument(request: AnonAlt): Request_[Document]
   /** Deletes a document. */
-  def delete(request: AnonAccesstokenAltBearertoken): Request_[js.Object]
+  def delete(request: AnonBearertoken): Request_[js.Object]
   /** Gets a single document. */
-  def get(request: AnonAccesstokenAltBearertokenCallback): Request_[Document]
+  def get(request: AnonCallback): Request_[Document]
   /** Lists documents. */
-  def list(request: AnonAccesstokenAltBearertokenCallbackCollectionId): Request_[ListDocumentsResponse]
+  def list(request: AnonCollectionId): Request_[ListDocumentsResponse]
   /** Lists all the collection IDs underneath a document. */
-  def listCollectionIds(request: AnonAccesstokenAltBearertokenCallbackFields): Request_[ListCollectionIdsResponse]
+  def listCollectionIds(request: AnonFields): Request_[ListCollectionIdsResponse]
   /** Listens to changes. */
   def listen(request: AnonAccesstoken): Request_[ListenResponse]
   /** Updates or inserts a document. */
-  def patch(request: AnonAccesstokenAltBearertokenCallbackCurrentDocumentexists): Request_[Document]
+  def patch(request: AnonCurrentDocumentexists): Request_[Document]
   /** Rolls back a transaction. */
   def rollback(request: AnonAccesstoken): Request_[js.Object]
   /** Runs a query. */
-  def runQuery(request: AnonAccesstokenAltBearertokenCallbackFieldsKey): Request_[RunQueryResponse]
+  def runQuery(request: AnonKey): Request_[RunQueryResponse]
   /** Streams batches of document updates and deletes, in order. */
   def write(request: AnonAccesstoken): Request_[WriteResponse]
 }
@@ -53,15 +53,15 @@ object DocumentsResource {
     batchGet: AnonAccesstoken => Request_[BatchGetDocumentsResponse],
     beginTransaction: AnonAccesstoken => Request_[BeginTransactionResponse],
     commit: AnonAccesstoken => Request_[CommitResponse],
-    createDocument: AnonAccesstokenAlt => Request_[Document],
-    delete: AnonAccesstokenAltBearertoken => Request_[js.Object],
-    get: AnonAccesstokenAltBearertokenCallback => Request_[Document],
-    list: AnonAccesstokenAltBearertokenCallbackCollectionId => Request_[ListDocumentsResponse],
-    listCollectionIds: AnonAccesstokenAltBearertokenCallbackFields => Request_[ListCollectionIdsResponse],
+    createDocument: AnonAlt => Request_[Document],
+    delete: AnonBearertoken => Request_[js.Object],
+    get: AnonCallback => Request_[Document],
+    list: AnonCollectionId => Request_[ListDocumentsResponse],
+    listCollectionIds: AnonFields => Request_[ListCollectionIdsResponse],
     listen: AnonAccesstoken => Request_[ListenResponse],
-    patch: AnonAccesstokenAltBearertokenCallbackCurrentDocumentexists => Request_[Document],
+    patch: AnonCurrentDocumentexists => Request_[Document],
     rollback: AnonAccesstoken => Request_[js.Object],
-    runQuery: AnonAccesstokenAltBearertokenCallbackFieldsKey => Request_[RunQueryResponse],
+    runQuery: AnonKey => Request_[RunQueryResponse],
     write: AnonAccesstoken => Request_[WriteResponse]
   ): DocumentsResource = {
     val __obj = js.Dynamic.literal(batchGet = js.Any.fromFunction1(batchGet), beginTransaction = js.Any.fromFunction1(beginTransaction), commit = js.Any.fromFunction1(commit), createDocument = js.Any.fromFunction1(createDocument), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), listCollectionIds = js.Any.fromFunction1(listCollectionIds), listen = js.Any.fromFunction1(listen), patch = js.Any.fromFunction1(patch), rollback = js.Any.fromFunction1(rollback), runQuery = js.Any.fromFunction1(runQuery), write = js.Any.fromFunction1(write))

@@ -1,7 +1,7 @@
 package typings.mongodb.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.mongodb.AnonDate
+import typings.mongodb.AnonType
 import typings.mongodb.mongodbBooleans.`true`
 import typings.mongodb.mongodbNumbers.`-1`
 import typings.mongodb.mongodbNumbers.`1`
@@ -21,7 +21,7 @@ trait UpdateQuery[TSchema] extends js.Object {
   var $bit: js.UndefOr[StringDictionary[typings.mongodb.mongodbStrings.UpdateQuery with js.Any]] = js.native
   /** https://docs.mongodb.com/manual/reference/operator/update-field/ */
   @JSName("$currentDate")
-  var $currentDate: js.UndefOr[OnlyFieldsOfType[TSchema, Date, `true` | AnonDate]] = js.native
+  var $currentDate: js.UndefOr[OnlyFieldsOfType[TSchema, Date, `true` | AnonType]] = js.native
   @JSName("$inc")
   var $inc: js.UndefOr[OnlyFieldsOfType[TSchema, scala.Double, scala.Double]] = js.native
   @JSName("$max")

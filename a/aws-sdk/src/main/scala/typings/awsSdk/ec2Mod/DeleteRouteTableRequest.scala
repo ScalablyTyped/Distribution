@@ -13,12 +13,12 @@ trait DeleteRouteTableRequest extends js.Object {
   /**
     * The ID of the route table.
     */
-  var RouteTableId: String = js.native
+  var RouteTableId: typings.awsSdk.ec2Mod.RouteTableId = js.native
 }
 
 object DeleteRouteTableRequest {
   @scala.inline
-  def apply(RouteTableId: String, DryRun: js.UndefOr[scala.Boolean] = js.undefined): DeleteRouteTableRequest = {
+  def apply(RouteTableId: RouteTableId, DryRun: js.UndefOr[scala.Boolean] = js.undefined): DeleteRouteTableRequest = {
     val __obj = js.Dynamic.literal(RouteTableId = RouteTableId.asInstanceOf[js.Any])
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteRouteTableRequest]

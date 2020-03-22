@@ -5,7 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ResolveContext extends Context {
+trait ResolveContext extends RouterContext {
+  /**
+    * URL which was transmitted to `router.resolve()`.
+    */
   var pathname: String
 }
 

@@ -1,14 +1,14 @@
 package typings.onesignalCordovaPlugin.OneSignalCordovaPlugin
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.onesignalCordovaPlugin.Anon0
-import typings.onesignalCordovaPlugin.Anon01
+import typings.onesignalCordovaPlugin.AnonAuthorized
 import typings.onesignalCordovaPlugin.AnonFrom
 import typings.onesignalCordovaPlugin.AnonFromTo
-import typings.onesignalCordovaPlugin.AnonFromToOSSubscriptionState
+import typings.onesignalCordovaPlugin.AnonInAppAlert
 import typings.onesignalCordovaPlugin.AnonLogLevel
 import typings.onesignalCordovaPlugin.AnonPushToken
-import typings.std.Partial
+import typings.onesignalCordovaPlugin.AnonTo
+import typings.onesignalCordovaPlugin.PartialOSNotification
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,19 +16,19 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait OneSignalCordovaPlugin extends js.Object {
-  var OSInFocusDisplayOption: Anon0 = js.native
-  var OSNotificationPermission: Anon01 = js.native
+  var OSInFocusDisplayOption: AnonInAppAlert = js.native
+  var OSNotificationPermission: AnonAuthorized = js.native
   def addEmailSubscriptionObserver(callback: js.Function1[/* change */ AnonFrom, Unit]): Unit = js.native
   /**
     *  The passed in function will be fired when a notification permission
     *  setting changes.
     */
-  def addPermissionObserver(callback: js.Function1[/* change */ AnonFromTo, Unit]): Unit = js.native
+  def addPermissionObserver(callback: js.Function1[/* change */ AnonTo, Unit]): Unit = js.native
   /**
     *  The passed in function will be fired when a notification subscription
     *  property changes.
     */
-  def addSubscriptionObserver(callback: js.Function1[/* change */ AnonFromToOSSubscriptionState, Unit]): Unit = js.native
+  def addSubscriptionObserver(callback: js.Function1[/* change */ AnonFromTo, Unit]): Unit = js.native
   /**
     *  Add a trigger, may show an In-App Message if its triggers conditions
     *  were met.
@@ -105,7 +105,7 @@ trait OneSignalCordovaPlugin extends js.Object {
     *  in the future to be delivered to the current device.
     */
   def postNotification(
-    notificationObj: Partial[OSNotification],
+    notificationObj: PartialOSNotification,
     onSuccess: js.Function1[/* json */ js.Any, Unit],
     onFailure: js.Function1[/* json */ js.Any, Unit]
   ): Unit = js.native

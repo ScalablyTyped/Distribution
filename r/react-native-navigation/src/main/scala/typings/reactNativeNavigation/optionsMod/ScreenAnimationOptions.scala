@@ -35,15 +35,23 @@ trait ScreenAnimationOptions extends js.Object {
     */
   var scaleY: js.UndefOr[OptionsAnimationPropertyConfig] = js.undefined
   /**
+    * Animate the element over translateX
+    */
+  var translationX: js.UndefOr[OptionsAnimationPropertyConfig] = js.undefined
+  /**
+    * Animate the element over translateY
+    */
+  var translationY: js.UndefOr[OptionsAnimationPropertyConfig] = js.undefined
+  /**
     * Wait for the root view to render before start animation
     */
   var waitForRender: js.UndefOr[Boolean] = js.undefined
   /**
-    * Animate the element over translateX
+    * Animate the element over x value
     */
   var x: js.UndefOr[OptionsAnimationPropertyConfig] = js.undefined
   /**
-    * Animate the element over translateY
+    * Animate the element over y value
     */
   var y: js.UndefOr[OptionsAnimationPropertyConfig] = js.undefined
 }
@@ -58,6 +66,8 @@ object ScreenAnimationOptions {
     rotationY: OptionsAnimationPropertyConfig = null,
     scaleX: OptionsAnimationPropertyConfig = null,
     scaleY: OptionsAnimationPropertyConfig = null,
+    translationX: OptionsAnimationPropertyConfig = null,
+    translationY: OptionsAnimationPropertyConfig = null,
     waitForRender: js.UndefOr[Boolean] = js.undefined,
     x: OptionsAnimationPropertyConfig = null,
     y: OptionsAnimationPropertyConfig = null
@@ -70,6 +80,8 @@ object ScreenAnimationOptions {
     if (rotationY != null) __obj.updateDynamic("rotationY")(rotationY.asInstanceOf[js.Any])
     if (scaleX != null) __obj.updateDynamic("scaleX")(scaleX.asInstanceOf[js.Any])
     if (scaleY != null) __obj.updateDynamic("scaleY")(scaleY.asInstanceOf[js.Any])
+    if (translationX != null) __obj.updateDynamic("translationX")(translationX.asInstanceOf[js.Any])
+    if (translationY != null) __obj.updateDynamic("translationY")(translationY.asInstanceOf[js.Any])
     if (!js.isUndefined(waitForRender)) __obj.updateDynamic("waitForRender")(waitForRender.asInstanceOf[js.Any])
     if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
     if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])

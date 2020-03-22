@@ -4,7 +4,21 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ K in keyof @styled-system/css.@styled-system/css.CSSProperties ]: @styled-system/css.@styled-system/css.CSSProperties[K]}
-- Dropped {[ K in csstype.csstype.Pseudos ]:? @styled-system/css.@styled-system/css.CSSObject} */ trait CSSObject extends CSSOthersObjectForCSSObject
+trait CSSObject
+  extends CSSOthersObjectForCSSObject
+     with CSSPropertiesWithMultiValues
+     with CSSPseudosForCSSObject
+
+object CSSObject {
+  @scala.inline
+  def apply(
+    CSSPropertiesWithMultiValues: CSSPropertiesWithMultiValues = null,
+    CSSPseudosForCSSObject: CSSPseudosForCSSObject = null
+  ): CSSObject = {
+    val __obj = js.Dynamic.literal()
+    if (CSSPropertiesWithMultiValues != null) js.Dynamic.global.Object.assign(__obj, CSSPropertiesWithMultiValues)
+    if (CSSPseudosForCSSObject != null) js.Dynamic.global.Object.assign(__obj, CSSPseudosForCSSObject)
+    __obj.asInstanceOf[CSSObject]
+  }
+}
 

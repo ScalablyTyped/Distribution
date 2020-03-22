@@ -10,7 +10,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object serializersTypesConditionalMod extends js.Object {
   @js.native
-  class ConditionalTypeSerializer () extends TypeSerializerComponent[ConditionalType]
+  class ConditionalTypeSerializer () extends TypeSerializerComponent[ConditionalType] {
+    def toObject(conditional: ConditionalType, obj: PickConditionalTypetypeTy): typings.typedoc.schemaMod.ConditionalType = js.native
+  }
   
 }
 

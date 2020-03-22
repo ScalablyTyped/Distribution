@@ -1,6 +1,6 @@
 package typings.reactOnsenui.mod
 
-import typings.reactOnsenui.HTMLAttributesidclassNamestylemodifierstringlength
+import typings.reactOnsenui.HTMLAttributesidclassNameCalculateItemHeight
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-onsenui", "LazyList")
 @js.native
 class LazyList ()
-  extends typings.react.mod.Component[HTMLAttributesidclassNamestylemodifierstringlength, js.Any, js.Any]
+  extends typings.react.mod.Component[HTMLAttributesidclassNameCalculateItemHeight, js.Any, js.Any]
 

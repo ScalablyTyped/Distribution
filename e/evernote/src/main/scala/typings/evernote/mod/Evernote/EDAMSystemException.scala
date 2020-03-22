@@ -1,6 +1,6 @@
 package typings.evernote.mod.Evernote
 
-import typings.evernote.AnonErrorCodeMessage
+import typings.evernote.AnonMessage
 import typings.thrift.mod.Thrift.TException
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -23,7 +23,7 @@ import scala.scalajs.js.annotation._
 @JSImport("evernote", "Evernote.EDAMSystemException")
 @js.native
 class EDAMSystemException () extends TException {
-  def this(args: AnonErrorCodeMessage) = this()
+  def this(args: AnonMessage) = this()
   var errorCode: EDAMErrorCode = js.native
   var rateLimitDuration: Double = js.native
 }

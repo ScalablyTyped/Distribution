@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 
 trait reactRelayProps {
   @scala.inline
-  def LazyLoadEntryPointContainerProps: AnonEntryPointEntryPointParams.type = typings.reactRelay.AnonEntryPointEntryPointParams
+  def LazyLoadEntryPointContainerProps: EntryPointContainerProps.type = typings.reactRelay.lazyLoadEntryPointContainerMod.EntryPointContainerProps
   type LazyLoadEntryPointContainerProps[TEntryPointParams, TPreloadedQueries, TPreloadedEntryPoints, TRuntimeProps, TExtraProps] = EntryPointContainerProps[TEntryPointParams, TPreloadedQueries, TPreloadedEntryPoints, TRuntimeProps, TExtraProps]
   @scala.inline
   def LocalQueryRendererProps: QueryRendererProps.type = typings.reactRelay.mod.QueryRendererProps

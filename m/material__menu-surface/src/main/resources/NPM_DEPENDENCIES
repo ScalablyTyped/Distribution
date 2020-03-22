@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@material/menu-surface" : "3.2.0"
+      "@material/menu-surface" : "5.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@material/menu-surface" : "3.2.0"
+      "@material/menu-surface" : "5.1.0"
     }
   ],
   "compile-devDependencies" : [

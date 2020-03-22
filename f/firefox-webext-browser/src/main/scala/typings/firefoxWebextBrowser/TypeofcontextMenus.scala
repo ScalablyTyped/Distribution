@@ -32,7 +32,7 @@ trait TypeofcontextMenus extends js.Object {
     *     permissions for the given context: linkUrl, linkText, srcUrl, pageUrl, frameUrl, selectionText.
     * @param tab The details of the tab where the menu was opened.
     */
-  val onShown: WebExtEvent[js.Function2[/* info */ AnonContexts, /* tab */ Tab, Unit]] = js.native
+  val onShown: WebExtEvent[js.Function2[/* info */ AnonEditable, /* tab */ Tab, Unit]] = js.native
   /* contextMenus functions */
   /**
     * Creates a new context menu item. Note that if an error occurs during creation, you may not find out until the
@@ -68,12 +68,12 @@ trait TypeofcontextMenus extends js.Object {
   def remove(menuItemId: Double): js.Promise[Unit] = js.native
   /** Removes all context menu items added by this extension. */
   def removeAll(): js.Promise[Unit] = js.native
-  def update(id: String, updateProperties: AnonCheckedContexts): js.Promise[Unit] = js.native
+  def update(id: String, updateProperties: AnonContexts): js.Promise[Unit] = js.native
   /**
     * Updates a previously created context menu item.
     * @param id The ID of the item to update.
     * @param updateProperties The properties to update. Accepts the same values as the create function.
     */
-  def update(id: Double, updateProperties: AnonCheckedContexts): js.Promise[Unit] = js.native
+  def update(id: Double, updateProperties: AnonContexts): js.Promise[Unit] = js.native
 }
 

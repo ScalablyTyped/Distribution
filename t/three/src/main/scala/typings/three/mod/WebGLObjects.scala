@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class WebGLObjects protected ()
   extends typings.three.webGLObjectsMod.WebGLObjects {
-  def this(gl: WebGLRenderingContext, properties: js.Any, info: js.Any) = this()
+  def this(gl: WebGLRenderingContext, geometries: js.Any, attributes: js.Any, info: js.Any) = this()
 }
 

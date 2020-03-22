@@ -1,6 +1,6 @@
 package typings.jupyterlabApplication.tokensMod.IRouter
 
-import typings.phosphorCoreutils.jsonMod.ReadonlyJSONObject
+import typings.luminoCoreutils.jsonMod.ReadonlyPartialJSONObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 /**
   * The parsed location currently being routed.
   */
-trait ILocation extends ReadonlyJSONObject {
+trait ILocation extends ReadonlyPartialJSONObject {
   /**
     * The location hash.
     */
@@ -28,14 +28,14 @@ trait ILocation extends ReadonlyJSONObject {
     * The search element, including leading question mark (`'?'`), if any,
     * of the path.
     */
-  var search: String
+  var search: js.UndefOr[String] = js.undefined
 }
 
 object ILocation {
   @scala.inline
-  def apply(hash: String, path: String, request: String, search: String): ILocation = {
-    val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any])
-  
+  def apply(hash: String, path: String, request: String, search: String = null): ILocation = {
+    val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
+    if (search != null) __obj.updateDynamic("search")(search.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILocation]
   }
 }

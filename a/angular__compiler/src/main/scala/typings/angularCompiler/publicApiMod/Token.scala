@@ -10,6 +10,7 @@ class Token protected ()
   extends typings.angularCompiler.srcCompilerMod.Token {
   def this(
     index: Double,
+    end: Double,
     `type`: typings.angularCompiler.lexerMod.TokenType,
     numValue: Double,
     strValue: String

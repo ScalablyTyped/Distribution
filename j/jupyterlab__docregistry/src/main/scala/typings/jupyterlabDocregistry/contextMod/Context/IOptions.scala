@@ -1,12 +1,13 @@
 package typings.jupyterlabDocregistry.contextMod.Context
 
-import typings.jupyterlabApputils.clientsessionMod.IClientSession.IKernelPreference
+import typings.jupyterlabApputils.sessioncontextMod.ISessionContext.IDialogs
+import typings.jupyterlabApputils.sessioncontextMod.ISessionContext.IKernelPreference
 import typings.jupyterlabDocregistry.registryMod.DocumentRegistry.IModel
 import typings.jupyterlabDocregistry.registryMod.DocumentRegistry.IModelFactory
 import typings.jupyterlabObservables.modeldbMod.ModelDB.IFactory
 import typings.jupyterlabServices.libManagerMod.ServiceManager.IManager
-import typings.phosphorDisposable.mod.IDisposable
-import typings.phosphorWidgets.mod.Widget
+import typings.luminoDisposable.mod.IDisposable
+import typings.luminoWidgets.mod.Widget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,6 +41,10 @@ trait IOptions[T /* <: IModel */] extends js.Object {
     */
   var path: String
   /**
+    * The dialogs used for the session context.
+    */
+  var sessionDialogs: js.UndefOr[IDialogs] = js.undefined
+  /**
     * A function to call when the kernel is busy.
     */
   var setBusy: js.UndefOr[js.Function0[IDisposable]] = js.undefined
@@ -54,12 +59,14 @@ object IOptions {
     kernelPreference: IKernelPreference = null,
     modelDBFactory: IFactory = null,
     opener: /* widget */ Widget => Unit = null,
+    sessionDialogs: IDialogs = null,
     setBusy: () => IDisposable = null
   ): IOptions[T] = {
     val __obj = js.Dynamic.literal(factory = factory.asInstanceOf[js.Any], manager = manager.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
     if (kernelPreference != null) __obj.updateDynamic("kernelPreference")(kernelPreference.asInstanceOf[js.Any])
     if (modelDBFactory != null) __obj.updateDynamic("modelDBFactory")(modelDBFactory.asInstanceOf[js.Any])
     if (opener != null) __obj.updateDynamic("opener")(js.Any.fromFunction1(opener))
+    if (sessionDialogs != null) __obj.updateDynamic("sessionDialogs")(sessionDialogs.asInstanceOf[js.Any])
     if (setBusy != null) __obj.updateDynamic("setBusy")(js.Any.fromFunction0(setBusy))
     __obj.asInstanceOf[IOptions[T]]
   }

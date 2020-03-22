@@ -18,12 +18,6 @@ object postcssStrings {
   sealed trait end extends js.Object
   
   @js.native
-  sealed trait from extends js.Object
-  
-  @js.native
-  sealed trait map extends js.Object
-  
-  @js.native
   sealed trait root extends js.Object
   
   @js.native
@@ -40,10 +34,6 @@ object postcssStrings {
   def decl: decl = "decl".asInstanceOf[decl]
   @scala.inline
   def end: end = "end".asInstanceOf[end]
-  @scala.inline
-  def from: from = "from".asInstanceOf[from]
-  @scala.inline
-  def map: map = "map".asInstanceOf[map]
   @scala.inline
   def root: root = "root".asInstanceOf[root]
   @scala.inline

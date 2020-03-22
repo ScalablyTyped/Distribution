@@ -1,6 +1,6 @@
 package typings.primereact.inplaceMod
 
-import typings.primereact.AnonOriginalEventValueBoolean
+import typings.primereact.AnonValueBoolean
 import typings.std.Event_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,7 +13,7 @@ trait InplaceProps extends js.Object {
   var disabled: js.UndefOr[Boolean] = js.undefined
   var onClose: js.UndefOr[js.Function1[/* event */ Event_, Unit]] = js.undefined
   var onOpen: js.UndefOr[js.Function1[/* event */ Event_, Unit]] = js.undefined
-  var onToggle: js.UndefOr[js.Function1[/* e */ AnonOriginalEventValueBoolean, Unit]] = js.undefined
+  var onToggle: js.UndefOr[js.Function1[/* e */ AnonValueBoolean, Unit]] = js.undefined
   var style: js.UndefOr[js.Object] = js.undefined
   var tabIndex: js.UndefOr[String] = js.undefined
 }
@@ -27,7 +27,7 @@ object InplaceProps {
     disabled: js.UndefOr[Boolean] = js.undefined,
     onClose: /* event */ Event_ => Unit = null,
     onOpen: /* event */ Event_ => Unit = null,
-    onToggle: /* e */ AnonOriginalEventValueBoolean => Unit = null,
+    onToggle: /* e */ AnonValueBoolean => Unit = null,
     style: js.Object = null,
     tabIndex: String = null
   ): InplaceProps = {

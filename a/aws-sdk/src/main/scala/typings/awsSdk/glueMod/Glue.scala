@@ -1169,6 +1169,19 @@ trait Glue extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListJobsResponse, Unit]
   ): Request[ListJobsResponse, AWSError] = js.native
   /**
+    *  Retrieves a sortable, filterable list of existing AWS Glue machine learning transforms in this AWS account, or the resources with the specified tag. This operation takes the optional Tags field, which you can use as a filter of the responses so that tagged resources can be retrieved as a group. If you choose to use tag filtering, only resources with the tags are retrieved. 
+    */
+  def listMLTransforms(): Request[ListMLTransformsResponse, AWSError] = js.native
+  def listMLTransforms(callback: js.Function2[/* err */ AWSError, /* data */ ListMLTransformsResponse, Unit]): Request[ListMLTransformsResponse, AWSError] = js.native
+  /**
+    *  Retrieves a sortable, filterable list of existing AWS Glue machine learning transforms in this AWS account, or the resources with the specified tag. This operation takes the optional Tags field, which you can use as a filter of the responses so that tagged resources can be retrieved as a group. If you choose to use tag filtering, only resources with the tags are retrieved. 
+    */
+  def listMLTransforms(params: ListMLTransformsRequest): Request[ListMLTransformsResponse, AWSError] = js.native
+  def listMLTransforms(
+    params: ListMLTransformsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListMLTransformsResponse, Unit]
+  ): Request[ListMLTransformsResponse, AWSError] = js.native
+  /**
     * Retrieves the names of all trigger resources in this AWS account, or the resources with the specified tag. This operation allows you to see which resources are available in your account, and their names. This operation takes the optional Tags field, which you can use as a filter on the response so that tagged resources can be retrieved as a group. If you choose to use tags filtering, only resources with the tag are retrieved.
     */
   def listTriggers(): Request[ListTriggersResponse, AWSError] = js.native

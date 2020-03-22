@@ -26,7 +26,6 @@ object uploadUploadMod extends js.Object {
     var progressTimer: js.Any = js.native
     var recentUploadStatus: Boolean | js.Thenable[_] = js.native
     var upload: js.Any = js.native
-    def autoUpdateProgress(_underscore: js.Any, file: UploadFile[_]): Unit = js.native
     def beforeUpload(file: RcFile, fileList: js.Array[RcFile]): Boolean | js.Thenable[Unit] = js.native
     def clearProgressTimer(): Unit = js.native
     @JSName("componentWillUnmount")
@@ -38,7 +37,7 @@ object uploadUploadMod extends js.Object {
     def onProgress(e: AnonPercent, file: UploadFile[_]): Unit = js.native
     def onStart(file: RcFile): Unit = js.native
     def onSuccess(response: js.Any, file: UploadFile[_], xhr: js.Any): Unit = js.native
-    def renderUpload(hasGetPrefixCls: ConfigConsumerProps): Element = js.native
+    def renderUpload(hasGetPrefixClsDirection: ConfigConsumerProps): Element = js.native
     def renderUploadList(locale: UploadLocale): Element = js.native
     def saveUpload(node: js.Any): Unit = js.native
   }

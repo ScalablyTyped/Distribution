@@ -1,6 +1,6 @@
 package typings.gapiClientResourceviews.gapi.client.resourceviews
 
-import typings.gapiClientResourceviews.AnonCodeData
+import typings.gapiClientResourceviews.AnonData
 import typings.gapiClientResourceviews.AnonErrors
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -55,7 +55,7 @@ trait Operation extends js.Object {
   /** [Output Only] User who requested the operation, for example: user@example.com. */
   var user: js.UndefOr[String] = js.undefined
   /** [Output Only] If there are issues with this operation, a warning is returned. */
-  var warnings: js.UndefOr[js.Array[AnonCodeData]] = js.undefined
+  var warnings: js.UndefOr[js.Array[AnonData]] = js.undefined
   /** [Output Only] URL of the zone where the operation resides. Only available when performing per-zone operations. */
   var zone: js.UndefOr[String] = js.undefined
 }
@@ -83,7 +83,7 @@ object Operation {
     targetId: String = null,
     targetLink: String = null,
     user: String = null,
-    warnings: js.Array[AnonCodeData] = null,
+    warnings: js.Array[AnonData] = null,
     zone: String = null
   ): Operation = {
     val __obj = js.Dynamic.literal()

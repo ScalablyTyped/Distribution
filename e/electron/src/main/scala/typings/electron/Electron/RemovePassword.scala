@@ -16,24 +16,24 @@ trait RemovePassword extends js.Object {
     */
   var origin: js.UndefOr[String] = js.undefined
   /**
-    * Credentials of the authentication. Must be provided if removing by origin.
+    * Credentials of the authentication. Must be provided if removing by `origin`.
     */
   var password: js.UndefOr[String] = js.undefined
   /**
-    * Realm of the authentication. Must be provided if removing by origin.
+    * Realm of the authentication. Must be provided if removing by `origin`.
     */
   var realm: js.UndefOr[String] = js.undefined
   /**
-    * Scheme of the authentication. Can be basic, digest, ntlm, negotiate. Must be
-    * provided if removing by origin.
+    * Scheme of the authentication. Can be `basic`, `digest`, `ntlm`, `negotiate`.
+    * Must be provided if removing by `origin`.
     */
   var scheme: js.UndefOr[basic | digest | ntlm | negotiate] = js.undefined
   /**
-    * password.
+    * `password`.
     */
   var `type`: String
   /**
-    * Credentials of the authentication. Must be provided if removing by origin.
+    * Credentials of the authentication. Must be provided if removing by `origin`.
     */
   var username: js.UndefOr[String] = js.undefined
 }

@@ -1,8 +1,8 @@
 package typings.angularCommon.httpHttpMod
 
-import typings.angularCommon.AnonArraybuffer
-import typings.angularCommon.AnonArraybufferBlobBody
-import typings.angularCommon.AnonArraybufferBlobBodyHeaders
+import typings.angularCommon.AnonMethod
+import typings.angularCommon.AnonParams
+import typings.angularCommon.AnonSetHeaders
 import typings.angularCommon.angularCommonStrings.DELETE
 import typings.angularCommon.angularCommonStrings.GET
 import typings.angularCommon.angularCommonStrings.HEAD
@@ -35,22 +35,22 @@ class HttpRequest[T] protected () extends js.Object {
   def this(method: POST, url: String) = this()
   def this(method: PUT, url: String) = this()
   def this(method: String, url: String, body: T) = this()
-  def this(method: DELETE, url: String, init: AnonArraybuffer) = this()
-  def this(method: GET, url: String, init: AnonArraybuffer) = this()
-  def this(method: HEAD, url: String, init: AnonArraybuffer) = this()
-  def this(method: JSONP, url: String, init: AnonArraybuffer) = this()
-  def this(method: OPTIONS, url: String, init: AnonArraybuffer) = this()
+  def this(method: DELETE, url: String, init: AnonParams) = this()
+  def this(method: GET, url: String, init: AnonParams) = this()
+  def this(method: HEAD, url: String, init: AnonParams) = this()
+  def this(method: JSONP, url: String, init: AnonParams) = this()
+  def this(method: OPTIONS, url: String, init: AnonParams) = this()
   def this(method: PATCH, url: String, body: T) = this()
   def this(method: POST, url: String, body: T) = this()
   def this(method: PUT, url: String, body: T) = this()
-  def this(method: String, url: String, body: T, init: AnonArraybuffer) = this()
-  def this(method: String, url: String, body: Null, init: AnonArraybuffer) = this()
-  def this(method: PATCH, url: String, body: T, init: AnonArraybuffer) = this()
-  def this(method: PATCH, url: String, body: Null, init: AnonArraybuffer) = this()
-  def this(method: POST, url: String, body: T, init: AnonArraybuffer) = this()
-  def this(method: POST, url: String, body: Null, init: AnonArraybuffer) = this()
-  def this(method: PUT, url: String, body: T, init: AnonArraybuffer) = this()
-  def this(method: PUT, url: String, body: Null, init: AnonArraybuffer) = this()
+  def this(method: String, url: String, body: T, init: AnonParams) = this()
+  def this(method: String, url: String, body: Null, init: AnonParams) = this()
+  def this(method: PATCH, url: String, body: T, init: AnonParams) = this()
+  def this(method: PATCH, url: String, body: Null, init: AnonParams) = this()
+  def this(method: POST, url: String, body: T, init: AnonParams) = this()
+  def this(method: POST, url: String, body: Null, init: AnonParams) = this()
+  def this(method: PUT, url: String, body: T, init: AnonParams) = this()
+  def this(method: PUT, url: String, body: Null, init: AnonParams) = this()
   /**
     * The request body, or `null` if one isn't set.
     *
@@ -94,8 +94,8 @@ class HttpRequest[T] protected () extends js.Object {
     * Whether this request should be sent with outgoing credentials (cookies).
     */
   val withCredentials: Boolean = js.native
-  def clone(update: AnonArraybufferBlobBody[T]): HttpRequest[T] = js.native
-  def clone[V](update: AnonArraybufferBlobBodyHeaders[V]): HttpRequest[V] = js.native
+  def clone(update: AnonMethod[T]): HttpRequest[T] = js.native
+  def clone[V](update: AnonSetHeaders[V]): HttpRequest[V] = js.native
   /**
     * Examine the body and attempt to infer an appropriate MIME type
     * for it.

@@ -11,9 +11,9 @@ import typings.webgme.AnonClientOptions
 import typings.webgme.AnonComponents
 import typings.webgme.AnonDecoratorPaths
 import typings.webgme.AnonEnableCustomConstraints
-import typings.webgme.AnonEnableManager
 import typings.webgme.AnonLog
-import typings.webgme.AnonOptionsUri
+import typings.webgme.AnonManager
+import typings.webgme.AnonUri
 import typings.webgme.Blobs.ObjectBlob
 import typings.webgme.GmeCommon.Dictionary
 import scala.scalajs.js
@@ -43,7 +43,7 @@ class GmeConfig () extends js.Object {
   /** Executor related settings. */
   var executor: AnonClearOldDataAtStartUp = js.native
   /** Mongo database related settings. */
-  var mongo: AnonOptionsUri = js.native
+  var mongo: AnonUri = js.native
   /** Plugin related settings. */
   var plugin: AnonAllowBrowserExecution = js.native
   /** Additional paths to for requirejs. 
@@ -66,7 +66,7 @@ class GmeConfig () extends js.Object {
   var storage: AnonAutoMerge = js.native
   /** Visualization related settings. */
   var visualization: AnonDecoratorPaths = js.native
-  var webhooks: AnonEnableManager = js.native
+  var webhooks: AnonManager = js.native
   /**
     *  Serialize the configuration.
     * @returns {*} 

@@ -1,6 +1,6 @@
 package typings.jupyterlabCoreutils.urlMod.URLExt
 
-import typings.phosphorCoreutils.jsonMod.JSONObject
+import typings.luminoCoreutils.jsonMod.PartialJSONObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,6 +18,6 @@ object objectToQueryString extends js.Object {
     * #### Notes
     * Modified version of [stackoverflow](http://stackoverflow.com/a/30707423).
     */
-  def apply(value: JSONObject): String = js.native
+  def apply(value: PartialJSONObject): String = js.native
 }
 

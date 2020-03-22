@@ -1,6 +1,6 @@
 package typings.cathoQuantum.skeletonMod
 
-import typings.cathoQuantum.AnonBaseFontSizeSpacingNumber
+import typings.cathoQuantum.AnonBaseFontSizeNumber
 import typings.cathoQuantum.cathoQuantumStrings.button
 import typings.cathoQuantum.cathoQuantumStrings.circle
 import typings.cathoQuantum.cathoQuantumStrings.large
@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation._
 trait SkeletonProps extends js.Object {
   var height: js.UndefOr[String] = js.undefined
   var size: js.UndefOr[xsmall | small | medium | large] = js.undefined
-  var theme: js.UndefOr[AnonBaseFontSizeSpacingNumber] = js.undefined
+  var theme: js.UndefOr[AnonBaseFontSizeNumber] = js.undefined
   var `type`: js.UndefOr[rect | circle | text | button | tag] = js.undefined
   var width: js.UndefOr[String] = js.undefined
 }
@@ -27,7 +27,7 @@ object SkeletonProps {
   def apply(
     height: String = null,
     size: xsmall | small | medium | large = null,
-    theme: AnonBaseFontSizeSpacingNumber = null,
+    theme: AnonBaseFontSizeNumber = null,
     `type`: rect | circle | text | button | tag = null,
     width: String = null
   ): SkeletonProps = {

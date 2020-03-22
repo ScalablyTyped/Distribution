@@ -43,9 +43,13 @@ trait CreateClusterRequest extends js.Object {
     */
   var ShippingOption: typings.awsSdk.snowballMod.ShippingOption = js.native
   /**
-    * The type of AWS Snowball device to use for this cluster. Currently, the only supported device type for cluster jobs is EDGE.
+    * The type of AWS Snowball device to use for this cluster. Currently, the only supported device type for cluster jobs is EDGE. For more information, see Snowball Edge Device Options in the Snowball Edge Developer Guide.
     */
   var SnowballType: js.UndefOr[typings.awsSdk.snowballMod.SnowballType] = js.native
+  /**
+    * The tax documents required in your AWS Region.
+    */
+  var TaxDocuments: js.UndefOr[typings.awsSdk.snowballMod.TaxDocuments] = js.native
 }
 
 object CreateClusterRequest {
@@ -60,7 +64,8 @@ object CreateClusterRequest {
     ForwardingAddressId: AddressId = null,
     KmsKeyARN: KmsKeyARN = null,
     Notification: Notification = null,
-    SnowballType: SnowballType = null
+    SnowballType: SnowballType = null,
+    TaxDocuments: TaxDocuments = null
   ): CreateClusterRequest = {
     val __obj = js.Dynamic.literal(AddressId = AddressId.asInstanceOf[js.Any], JobType = JobType.asInstanceOf[js.Any], Resources = Resources.asInstanceOf[js.Any], RoleARN = RoleARN.asInstanceOf[js.Any], ShippingOption = ShippingOption.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
@@ -68,6 +73,7 @@ object CreateClusterRequest {
     if (KmsKeyARN != null) __obj.updateDynamic("KmsKeyARN")(KmsKeyARN.asInstanceOf[js.Any])
     if (Notification != null) __obj.updateDynamic("Notification")(Notification.asInstanceOf[js.Any])
     if (SnowballType != null) __obj.updateDynamic("SnowballType")(SnowballType.asInstanceOf[js.Any])
+    if (TaxDocuments != null) __obj.updateDynamic("TaxDocuments")(TaxDocuments.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateClusterRequest]
   }
 }

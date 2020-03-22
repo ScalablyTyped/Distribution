@@ -1,7 +1,7 @@
 package typings.weixinApp.wx
 
-import typings.weixinApp.Anon0
 import typings.weixinApp.AnonColor
+import typings.weixinApp.AnonDirection
 import typings.weixinApp.weixinAppNumbers.`0.5`
 import typings.weixinApp.weixinAppNumbers.`0.8`
 import typings.weixinApp.weixinAppNumbers.`1.0`
@@ -44,7 +44,7 @@ trait VideoContext extends js.Object {
   		 *  进入全屏
   		 */
   def requestFullScreen(): Unit = js.native
-  def requestFullScreen(options: Anon0): Unit = js.native
+  def requestFullScreen(options: AnonDirection): Unit = js.native
   /**
   		 * 跳转到指定位置，单位 s
   		 */

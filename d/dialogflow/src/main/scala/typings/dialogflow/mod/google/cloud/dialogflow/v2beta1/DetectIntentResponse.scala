@@ -23,7 +23,7 @@ class DetectIntentResponse () extends IDetectIntentResponse {
   var alternativeQueryResults_DetectIntentResponse: js.Array[IQueryResult] = js.native
   /** DetectIntentResponse outputAudio. */
   @JSName("outputAudio")
-  var outputAudio_DetectIntentResponse: Uint8Array = js.native
+  var outputAudio_DetectIntentResponse: Uint8Array | String = js.native
   /** DetectIntentResponse responseId. */
   @JSName("responseId")
   var responseId_DetectIntentResponse: String = js.native

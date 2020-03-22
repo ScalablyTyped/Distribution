@@ -1,13 +1,11 @@
 package typings.columnify.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.columnify.PickOptionsminWidthmaxWid
 import typings.columnify.columnifyStrings.center
 import typings.columnify.columnifyStrings.centre
 import typings.columnify.columnifyStrings.left
-import typings.columnify.columnifyStrings.maxWidth
-import typings.columnify.columnifyStrings.minWidth
 import typings.columnify.columnifyStrings.right
-import typings.std.Pick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +16,7 @@ trait GlobalOptions extends Options {
   var config: js.UndefOr[StringDictionary[Options]] = js.undefined
   var maxLineWidth: js.UndefOr[Double] = js.undefined
   var truncate: js.UndefOr[Boolean] = js.undefined
-  var widths: js.UndefOr[StringDictionary[Pick[Options, minWidth | maxWidth]]] = js.undefined
+  var widths: js.UndefOr[StringDictionary[PickOptionsminWidthmaxWid]] = js.undefined
 }
 
 object GlobalOptions {
@@ -38,7 +36,7 @@ object GlobalOptions {
     showHeaders: js.UndefOr[Boolean] = js.undefined,
     truncate: js.UndefOr[Boolean] = js.undefined,
     truncateMarker: String = null,
-    widths: StringDictionary[Pick[Options, minWidth | maxWidth]] = null
+    widths: StringDictionary[PickOptionsminWidthmaxWid] = null
   ): GlobalOptions = {
     val __obj = js.Dynamic.literal()
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])

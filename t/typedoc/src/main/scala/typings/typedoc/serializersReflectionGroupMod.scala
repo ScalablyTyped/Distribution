@@ -1,7 +1,5 @@
 package typings.typedoc
 
-import org.scalablytyped.runtime.Instantiable2
-import typings.typedoc.abstractMod.ReflectionKind
 import typings.typedoc.reflectionGroupMod.ReflectionGroup
 import typings.typedoc.serializationComponentsMod.SerializerComponent
 import scala.scalajs.js
@@ -13,8 +11,7 @@ import scala.scalajs.js.annotation._
 object serializersReflectionGroupMod extends js.Object {
   @js.native
   class ReflectionGroupSerializer () extends SerializerComponent[ReflectionGroup] {
-    @JSName("serializeGroupSymbol")
-    var serializeGroupSymbol_ReflectionGroupSerializer: Instantiable2[/* title */ String, /* kind */ ReflectionKind, ReflectionGroup] = js.native
+    def toObject(group: ReflectionGroup, obj: PartialReflectionGroup): typings.typedoc.schemaMod.ReflectionGroup = js.native
   }
   
   /* static members */

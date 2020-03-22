@@ -1,22 +1,22 @@
 package typings.sdpTransform.mod
 
-import typings.sdpTransform.AnonAddressIpVer
 import typings.sdpTransform.AnonAddressTypes
 import typings.sdpTransform.AnonApp
 import typings.sdpTransform.AnonAttribute
 import typings.sdpTransform.AnonAttrs1
 import typings.sdpTransform.AnonCodec
-import typings.sdpTransform.AnonComponentFoundation
 import typings.sdpTransform.AnonConfig
-import typings.sdpTransform.AnonConfigId
-import typings.sdpTransform.AnonConfigPayload
 import typings.sdpTransform.AnonDir1
 import typings.sdpTransform.AnonDirection
+import typings.sdpTransform.AnonFoundation
 import typings.sdpTransform.AnonHash
+import typings.sdpTransform.AnonId
+import typings.sdpTransform.AnonIpVer
 import typings.sdpTransform.AnonPayload
-import typings.sdpTransform.AnonPayloadValue
 import typings.sdpTransform.AnonSemantics
+import typings.sdpTransform.AnonUri
 import typings.sdpTransform.AnonValue
+import typings.sdpTransform.AnonValueString
 import typings.sdpTransform.sdpTransformStrings.inactive
 import typings.sdpTransform.sdpTransformStrings.recvonly
 import typings.sdpTransform.sdpTransformStrings.sendonly
@@ -27,13 +27,13 @@ import scala.scalajs.js.annotation._
 
 trait MediaAttributes extends SharedAttributes {
   // a=candidate
-  var candidates: js.UndefOr[js.Array[AnonComponentFoundation]] = js.undefined
+  var candidates: js.UndefOr[js.Array[AnonFoundation]] = js.undefined
   // a=crypto
-  var crypto: js.UndefOr[AnonConfigId] = js.undefined
+  var crypto: js.UndefOr[AnonId] = js.undefined
   // a=end-of-candidates
   var endOfCandidates: js.UndefOr[String] = js.undefined
   // a=fmtp
-  var fmtp: js.Array[AnonConfigPayload]
+  var fmtp: js.Array[AnonConfig]
   // a=framerate
   var framerate: js.UndefOr[Double | String] = js.undefined
   // a=imageattr
@@ -49,11 +49,11 @@ trait MediaAttributes extends SharedAttributes {
   var remoteCandidates: js.UndefOr[String] = js.undefined
   // a=rid
   var rids: js.UndefOr[js.Array[AnonDirection]] = js.undefined
-  var rtcp: js.UndefOr[AnonAddressIpVer] = js.undefined
+  var rtcp: js.UndefOr[AnonIpVer] = js.undefined
   // a=rtcp-fb:98 nack rpsi
   var rtcpFb: js.UndefOr[AnonPayload] = js.undefined
   // a=rtcp-fb:98 trr-int 100
-  var rtcpFbTrrInt: js.UndefOr[AnonPayloadValue] = js.undefined
+  var rtcpFbTrrInt: js.UndefOr[AnonValue] = js.undefined
   // a=rtcp-mux
   var rtcpMux: js.UndefOr[String] = js.undefined
   // a=rtcp-rsize
@@ -62,7 +62,7 @@ trait MediaAttributes extends SharedAttributes {
   // a=sctpmap
   var sctpmap: js.UndefOr[AnonApp] = js.undefined
   var simulcast: js.UndefOr[AnonDir1] = js.undefined
-  var simulcast_03: js.UndefOr[AnonValue] = js.undefined
+  var simulcast_03: js.UndefOr[AnonValueString] = js.undefined
   // a=ssrc-group:
   var ssrcGroups: js.UndefOr[js.Array[AnonSemantics]] = js.undefined
   // a=ssrc:
@@ -74,35 +74,35 @@ trait MediaAttributes extends SharedAttributes {
 object MediaAttributes {
   @scala.inline
   def apply(
-    fmtp: js.Array[AnonConfigPayload],
+    fmtp: js.Array[AnonConfig],
     rtp: js.Array[AnonCodec],
-    candidates: js.Array[AnonComponentFoundation] = null,
+    candidates: js.Array[AnonFoundation] = null,
     control: String = null,
-    crypto: AnonConfigId = null,
+    crypto: AnonId = null,
     direction: sendrecv | recvonly | sendonly | inactive = null,
     endOfCandidates: String = null,
-    ext: js.Array[AnonConfig] = null,
+    ext: js.Array[AnonUri] = null,
     fingerprint: AnonHash = null,
     framerate: Double | String = null,
     icePwd: String = null,
     iceUfrag: String = null,
     imageattrs: js.Array[AnonAttrs1] = null,
-    invalid: js.Array[AnonValue] = null,
+    invalid: js.Array[AnonValueString] = null,
     maxptime: Int | Double = null,
     mid: String = null,
     msid: String = null,
     ptime: Int | Double = null,
     remoteCandidates: String = null,
     rids: js.Array[AnonDirection] = null,
-    rtcp: AnonAddressIpVer = null,
+    rtcp: AnonIpVer = null,
     rtcpFb: AnonPayload = null,
-    rtcpFbTrrInt: AnonPayloadValue = null,
+    rtcpFbTrrInt: AnonValue = null,
     rtcpMux: String = null,
     rtcpRsize: String = null,
     sctpmap: AnonApp = null,
     setup: String = null,
     simulcast: AnonDir1 = null,
-    simulcast_03: AnonValue = null,
+    simulcast_03: AnonValueString = null,
     sourceFilter: AnonAddressTypes = null,
     ssrcGroups: js.Array[AnonSemantics] = null,
     ssrcs: js.Array[AnonAttribute] = null,

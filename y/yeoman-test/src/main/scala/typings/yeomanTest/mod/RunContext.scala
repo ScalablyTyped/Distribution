@@ -2,8 +2,8 @@ package typings.yeomanTest.mod
 
 import typings.node.eventsMod.EventEmitter
 import typings.yeomanGenerator.mod.Answers
-import typings.yeomanTest.FnOnfulfilled
-import typings.yeomanTest.FnOnrejected
+import typings.yeomanTest.FnCall
+import typings.yeomanTest.FnCallOnrejected
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +18,7 @@ trait RunContext
   	 * Promise `.catch()` duck typing
   	 */
   @JSName("catch")
-  var catch_Original: FnOnrejected = js.native
+  var catch_Original: FnCallOnrejected = js.native
   var dependencies: js.Array[Dependency] = js.native
   var inDirSet: Boolean = js.native
   var ran: Boolean = js.native
@@ -26,7 +26,7 @@ trait RunContext
   	 * Promise `.then()` duck typing
   	 */
   @JSName("then")
-  var then_Original: FnOnfulfilled = js.native
+  var then_Original: FnCall = js.native
   /**
   	 * Hold the execution until the returned callback is triggered
   	 * @return Callback to notify the normal execution can resume

@@ -1,6 +1,6 @@
 package typings.oniguruma.mod
 
-import typings.oniguruma.AnonMatch
+import typings.oniguruma.CaptureIndexmatchstring
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,7 +26,7 @@ class OnigRegExp protected () extends js.Object {
     * @return An array of CaptureIndex objects which have been augmented with
     *         the original text that triggered the match
     */
-  def captureIndicesForMatch(string: js.Any, `match`: Match): js.Array[CaptureIndex with AnonMatch] = js.native
+  def captureIndicesForMatch(string: js.Any, `match`: Match): js.Array[CaptureIndexmatchstring] = js.native
   /**
     * Search the string for a match starting at the beginning of the string.
     * @param string The string to search.

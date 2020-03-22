@@ -2,7 +2,7 @@ package typings.uifabricUtilities.asyncMod
 
 import typings.std.Element
 import typings.uifabricUtilities.AnonLeading
-import typings.uifabricUtilities.AnonLeadingMaxWait
+import typings.uifabricUtilities.AnonMaxWait
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -57,7 +57,7 @@ class Async () extends js.Object {
     */
   def debounce[T /* <: js.Function */](func: T): ICancelable[T] with js.Function0[Unit] = js.native
   def debounce[T /* <: js.Function */](func: T, wait: Double): ICancelable[T] with js.Function0[Unit] = js.native
-  def debounce[T /* <: js.Function */](func: T, wait: Double, options: AnonLeadingMaxWait): ICancelable[T] with js.Function0[Unit] = js.native
+  def debounce[T /* <: js.Function */](func: T, wait: Double, options: AnonMaxWait): ICancelable[T] with js.Function0[Unit] = js.native
   /**
     * Dispose function, clears all async operations.
     */

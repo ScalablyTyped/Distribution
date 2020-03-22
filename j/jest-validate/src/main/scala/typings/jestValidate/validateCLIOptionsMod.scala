@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object validateCLIOptionsMod extends js.Object {
   val DOCUMENTATION_NOTE: String = js.native
-  def default(argv: Argv, options: AnonDeprecationEntries): Boolean = js.native
-  def default(argv: Argv, options: AnonDeprecationEntries, rawArgv: js.Array[String]): Boolean = js.native
+  def default(argv: Argv, options: AnonDicts): Boolean = js.native
+  def default(argv: Argv, options: AnonDicts, rawArgv: js.Array[String]): Boolean = js.native
 }
 

@@ -1,8 +1,8 @@
 package typings.googleapis.bloggerV2Mod.bloggerV2
 
-import typings.googleapis.AnonDisplayNameId
 import typings.googleapis.AnonIdString
-import typings.googleapis.AnonSelfLinkTotalItems
+import typings.googleapis.AnonImage
+import typings.googleapis.AnonTotalItems
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ trait SchemaPost extends js.Object {
   /**
     * The author of this Post.
     */
-  var author: js.UndefOr[AnonDisplayNameId] = js.native
+  var author: js.UndefOr[AnonImage] = js.native
   /**
     * Data about the blog containing this Post.
     */
@@ -40,7 +40,7 @@ trait SchemaPost extends js.Object {
   /**
     * The container of comments on this Post.
     */
-  var replies: js.UndefOr[AnonSelfLinkTotalItems] = js.native
+  var replies: js.UndefOr[AnonTotalItems] = js.native
   /**
     * The API REST URL to fetch this resource from.
     */
@@ -62,14 +62,14 @@ trait SchemaPost extends js.Object {
 object SchemaPost {
   @scala.inline
   def apply(
-    author: AnonDisplayNameId = null,
+    author: AnonImage = null,
     blog: AnonIdString = null,
     content: String = null,
     id: String = null,
     kind: String = null,
     labels: js.Array[String] = null,
     published: String = null,
-    replies: AnonSelfLinkTotalItems = null,
+    replies: AnonTotalItems = null,
     selfLink: String = null,
     title: String = null,
     updated: String = null,

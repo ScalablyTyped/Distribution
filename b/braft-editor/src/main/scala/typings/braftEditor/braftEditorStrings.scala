@@ -221,6 +221,9 @@ object braftEditorStrings {
   sealed trait undo extends BuiltInControlType
   
   @js.native
+  sealed trait `vi-vn` extends js.Object
+  
+  @js.native
   sealed trait zh extends js.Object
   
   @js.native
@@ -364,6 +367,8 @@ object braftEditorStrings {
   def underline: underline = "underline".asInstanceOf[underline]
   @scala.inline
   def undo: undo = "undo".asInstanceOf[undo]
+  @scala.inline
+  def `vi-vn`: `vi-vn` = "vi-vn".asInstanceOf[`vi-vn`]
   @scala.inline
   def zh: zh = "zh".asInstanceOf[zh]
   @scala.inline

@@ -1,9 +1,6 @@
 package typings.socketIoEmitter.mod
 
-import typings.socketIoEmitter.socketIoEmitterStrings.broadcast
-import typings.socketIoEmitter.socketIoEmitterStrings.json
-import typings.socketIoEmitter.socketIoEmitterStrings.volatile
-import typings.std.Record
+import typings.socketIoEmitter.Recordbroadcastjsonvolati
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("socket.io-emitter", "SocketIOEmitter")
 @js.native
 class SocketIOEmitter () extends js.Object {
-  var _flags: Record[broadcast | json | volatile, js.UndefOr[Boolean]] = js.native
+  var _flags: Recordbroadcastjsonvolati = js.native
   var _rooms: js.Array[String] = js.native
   var channel: String = js.native
   var nsp: String = js.native

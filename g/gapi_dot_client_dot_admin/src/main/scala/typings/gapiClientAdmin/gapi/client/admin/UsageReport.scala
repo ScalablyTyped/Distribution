@@ -1,7 +1,7 @@
 package typings.gapiClientAdmin.gapi.client.admin
 
-import typings.gapiClientAdmin.AnonBoolValueDatetimeValue
 import typings.gapiClientAdmin.AnonCustomerId
+import typings.gapiClientAdmin.AnonDatetimeValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ trait UsageReport extends js.Object {
   /** The kind of object. */
   var kind: js.UndefOr[String] = js.undefined
   /** Parameter value pairs for various applications. */
-  var parameters: js.UndefOr[js.Array[AnonBoolValueDatetimeValue]] = js.undefined
+  var parameters: js.UndefOr[js.Array[AnonDatetimeValue]] = js.undefined
 }
 
 object UsageReport {
@@ -26,7 +26,7 @@ object UsageReport {
     entity: AnonCustomerId = null,
     etag: String = null,
     kind: String = null,
-    parameters: js.Array[AnonBoolValueDatetimeValue] = null
+    parameters: js.Array[AnonDatetimeValue] = null
   ): UsageReport = {
     val __obj = js.Dynamic.literal()
     if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])

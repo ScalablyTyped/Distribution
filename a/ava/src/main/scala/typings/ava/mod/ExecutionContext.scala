@@ -31,7 +31,7 @@ trait ExecutionContext[Context] extends Assertions {
   	* the test will fail. A macro may be provided.
   	*/
   def `try`[Args /* <: js.Array[_] */](
-    fn: js.Array[EitherMacro[Args, Context]],
+    fn: Array[EitherMacro[Args, Context]],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Args is not an array type */ args: Args
   ): js.Promise[js.Array[TryResult]] = js.native
   /**
@@ -49,7 +49,7 @@ trait ExecutionContext[Context] extends Assertions {
   	 */
   def `try`[Args /* <: js.Array[_] */](
     title: String,
-    fn: js.Array[EitherMacro[Args, Context]],
+    fn: Array[EitherMacro[Args, Context]],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Args is not an array type */ args: Args
   ): js.Promise[js.Array[TryResult]] = js.native
   /**

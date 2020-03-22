@@ -10,7 +10,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ionic/angular/dist/directives/proxies", "IonRadioGroup")
+@JSImport("@ionic/angular/directives/proxies", "IonRadioGroup")
 @js.native
 class IonRadioGroup protected ()
   extends typings.ionicCore.componentsMod.Components.IonRadioGroup {

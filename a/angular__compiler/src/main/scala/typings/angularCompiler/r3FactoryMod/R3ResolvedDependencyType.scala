@@ -26,6 +26,12 @@ object R3ResolvedDependencyType extends js.Object {
   sealed trait ChangeDetectorRef extends R3ResolvedDependencyType
   
   /**
+    * An invalid dependency (no token could be determined). An error should be thrown at runtime.
+    */
+  @js.native
+  sealed trait Invalid extends R3ResolvedDependencyType
+  
+  /**
     * A normal token dependency.
     */
   @js.native
@@ -38,6 +44,9 @@ object R3ResolvedDependencyType extends js.Object {
   
   /* 2 */ @js.native
   object ChangeDetectorRef extends TopLevel[ChangeDetectorRef with Double]
+  
+  /* 3 */ @js.native
+  object Invalid extends TopLevel[Invalid with Double]
   
   /* 0 */ @js.native
   object Token extends TopLevel[Token with Double]

@@ -1,6 +1,6 @@
 package typings.reactNative.mod
 
-import typings.reactNative.FnArgs
+import typings.reactNative.FnCall
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,8 +12,8 @@ trait TimerMixin extends js.Object {
   var clearTimeout: js.Function1[/* handle */ Double, Unit]
   var requestAnimationFrame: js.Function1[/* callback */ js.Function1[/* time */ Double, Unit], Double]
   var setImmediate: js.Function1[/* handler */ js.Function1[/* repeated */ js.Any, Unit], Double]
-  var setInterval: FnArgs
-  var setTimeout: FnArgs
+  var setInterval: FnCall
+  var setTimeout: FnCall
 }
 
 object TimerMixin {
@@ -25,8 +25,8 @@ object TimerMixin {
     clearTimeout: /* handle */ Double => Unit,
     requestAnimationFrame: /* callback */ js.Function1[/* time */ Double, Unit] => Double,
     setImmediate: /* handler */ js.Function1[/* repeated */ js.Any, Unit] => Double,
-    setInterval: FnArgs,
-    setTimeout: FnArgs
+    setInterval: FnCall,
+    setTimeout: FnCall
   ): TimerMixin = {
     val __obj = js.Dynamic.literal(cancelAnimationFrame = js.Any.fromFunction1(cancelAnimationFrame), clearImmediate = js.Any.fromFunction1(clearImmediate), clearInterval = js.Any.fromFunction1(clearInterval), clearTimeout = js.Any.fromFunction1(clearTimeout), requestAnimationFrame = js.Any.fromFunction1(requestAnimationFrame), setImmediate = js.Any.fromFunction1(setImmediate), setInterval = setInterval.asInstanceOf[js.Any], setTimeout = setTimeout.asInstanceOf[js.Any])
   

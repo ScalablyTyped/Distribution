@@ -5,8 +5,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object Blaze {
-  import org.scalablytyped.runtime.StringDictionary
-
-  type EventsMap = StringDictionary[js.Function]
-  type HelpersMap = StringDictionary[js.Function]
+  type EventsMap = org.scalablytyped.runtime.StringDictionary[js.Function]
+  type HelpersMap = org.scalablytyped.runtime.StringDictionary[js.Function]
 }

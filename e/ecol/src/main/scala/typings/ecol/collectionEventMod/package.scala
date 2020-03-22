@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object collectionEventMod {
-  type CollectionEvent[T, SourceT /* <: typings.tstl.mod.base.Container[T, SourceT, IteratorT, ReverseT, T] */, IteratorT /* <: typings.std.Iterator[T, SourceT, IteratorT] */, ReverseT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.ReverseIterator<T, SourceT, IteratorT, ReverseT> */ js.Any */] = typings.ecol.collectionEventMod.CollectionEvent_[T, SourceT, IteratorT, ReverseT]
+  type CollectionEvent[T, SourceT /* <: typings.tstl.icontainerMod.IContainer[T, SourceT, IteratorT, ReverseT, T] */, IteratorT /* <: typings.tstl.icontainerMod.IContainer.Iterator[T, SourceT, IteratorT, ReverseT, T] */, ReverseT /* <: typings.tstl.icontainerMod.IContainer.ReverseIterator[T, SourceT, IteratorT, ReverseT, T] */] = typings.ecol.collectionEventMod.CollectionEvent_[T, SourceT, IteratorT, ReverseT]
 }

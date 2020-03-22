@@ -20,7 +20,7 @@ package object mod {
     */ typings.yup.yupStrings.ObjectSchemaDefinition with T
   type RequiredProps[T] = typings.std.Pick[T, typings.std.Exclude[java.lang.String, typings.yup.mod.KeyOfUndefined[T]]]
   type Shape[T /* <: js.UndefOr[js.Object | scala.Null] */, U /* <: js.Object */] = typings.yup.yupStrings.Shape with js.Any with U
-  type TestOptionsMessage[Extra /* <: typings.std.Record[java.lang.String, _] */, R] = java.lang.String | (js.Function1[/* params */ Extra with typings.std.Partial[typings.yup.mod.TestMessageParams], R])
+  type TestOptionsMessage[Extra /* <: typings.std.Record[java.lang.String, _] */, R] = java.lang.String | (js.Function1[/* params */ Extra with typings.yup.PartialTestMessageParams, R])
   type TransformFunction[T] = js.ThisFunction2[/* this */ T, /* value */ js.Any, /* originalValue */ js.Any, js.Any]
   type WhenOptions[T] = typings.yup.mod.WhenOptionsBuilderFunction[T] | typings.yup.mod.WhenOptionsBuilderObject
   type WhenOptionsBuilderObject = typings.yup.AnonIs | js.Object

@@ -1,8 +1,8 @@
 package typings.kiiCloudSdk.KiiCloud
 
-import typings.kiiCloudSdk.AnonAdminContext
-import typings.kiiCloudSdk.AnonAnErrorString
-import typings.kiiCloudSdk.AnonError
+import typings.kiiCloudSdk.AnonFailure
+import typings.kiiCloudSdk.AnonFailureSuccess
+import typings.kiiCloudSdk.AnonSuccess
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -67,7 +67,7 @@ object Kii extends js.Object {
     *     );
     */
   def authenticateAsAppAdmin(clientId: String, clientSecret: String): js.Promise[KiiAppAdminContext] = js.native
-  def authenticateAsAppAdmin(clientId: String, clientSecret: String, callbacks: AnonAdminContext): js.Promise[KiiAppAdminContext] = js.native
+  def authenticateAsAppAdmin(clientId: String, clientSecret: String, callbacks: AnonFailure): js.Promise[KiiAppAdminContext] = js.native
   /**
     * Authenticate as Thing.
     * <br><br>
@@ -116,7 +116,7 @@ object Kii extends js.Object {
     *     );
     */
   def authenticateAsThing(vendorThingID: String, password: String): js.Promise[KiiThingContext] = js.native
-  def authenticateAsThing(vendorThingID: String, password: String, callbacks: AnonError): js.Promise[KiiThingContext] = js.native
+  def authenticateAsThing(vendorThingID: String, password: String, callbacks: AnonFailureSuccess): js.Promise[KiiThingContext] = js.native
   /**
     * Create a KiiThingContext reference
     * <br><br>
@@ -165,7 +165,7 @@ object Kii extends js.Object {
     *     );
     */
   def authenticateAsThingWithToken(thingID: String, token: String): js.Promise[KiiThingContext] = js.native
-  def authenticateAsThingWithToken(thingID: String, token: String, callbacks: AnonError): js.Promise[KiiThingContext] = js.native
+  def authenticateAsThingWithToken(thingID: String, token: String, callbacks: AnonFailureSuccess): js.Promise[KiiThingContext] = js.native
   /**
     * Creates a reference to a bucket for this app
     *
@@ -363,8 +363,8 @@ object Kii extends js.Object {
     *     );
     */
   def listTopics(): js.Promise[js.Tuple2[js.Array[KiiTopic], String]] = js.native
-  def listTopics(callbacks: AnonAnErrorString): js.Promise[js.Tuple2[js.Array[KiiTopic], String]] = js.native
-  def listTopics(callbacks: AnonAnErrorString, paginationKey: String): js.Promise[js.Tuple2[js.Array[KiiTopic], String]] = js.native
+  def listTopics(callbacks: AnonSuccess): js.Promise[js.Tuple2[js.Array[KiiTopic], String]] = js.native
+  def listTopics(callbacks: AnonSuccess, paginationKey: String): js.Promise[js.Tuple2[js.Array[KiiTopic], String]] = js.native
   /**
     * Instantiate KiiServerCodeEntry with specified entry name.
     *

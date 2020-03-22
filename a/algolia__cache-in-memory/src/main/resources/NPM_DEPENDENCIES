@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@algolia/cache-in-memory" : "4.0.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@algolia/cache-in-memory" : "4.0.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

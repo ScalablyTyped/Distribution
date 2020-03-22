@@ -4,13 +4,11 @@ import typings.blueprintjsDatetime.blueprintjsDatetimeStrings.`DayPicker-Day`
 import typings.blueprintjsDatetime.blueprintjsDatetimeStrings.millisecond
 import typings.blueprintjsDatetime.blueprintjsDatetimeStrings.minute
 import typings.blueprintjsDatetime.blueprintjsDatetimeStrings.second
-import typings.blueprintjsDatetime.dateInputMod.IDateInputProps
 import typings.blueprintjsDatetime.datePickerMod.IDatePickerProps
 import typings.blueprintjsDatetime.dateRangeInputMod.IDateRangeInputProps
 import typings.blueprintjsDatetime.dateRangePickerMod.IDateRangePickerProps
 import typings.blueprintjsDatetime.dateTimePickerMod.IDateTimePickerProps
 import typings.blueprintjsDatetime.timePickerMod.ITimePickerProps
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -100,7 +98,7 @@ object mod extends js.Object {
   /* static members */
   @js.native
   object DateInput extends js.Object {
-    var defaultProps: Partial[IDateInputProps] = js.native
+    var defaultProps: PartialIDateInputProps = js.native
     var displayName: String = js.native
   }
   
@@ -114,7 +112,7 @@ object mod extends js.Object {
   /* static members */
   @js.native
   object DateRangeInput extends js.Object {
-    var defaultProps: Partial[IDateRangeInputProps] = js.native
+    var defaultProps: PartialIDateRangeInputPro = js.native
     var displayName: String = js.native
   }
   

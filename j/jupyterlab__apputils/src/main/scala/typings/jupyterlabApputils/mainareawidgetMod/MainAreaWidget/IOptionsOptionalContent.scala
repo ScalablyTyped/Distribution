@@ -1,7 +1,7 @@
 package typings.jupyterlabApputils.mainareawidgetMod.MainAreaWidget
 
 import typings.jupyterlabApputils.toolbarMod.Toolbar
-import typings.phosphorWidgets.mod.Widget
+import typings.luminoWidgets.mod.Widget
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation._
   * https://stackoverflow.com/a/46941824
   */
 trait IOptionsOptionalContent[T /* <: Widget */]
-  extends typings.phosphorWidgets.widgetMod.Widget.IOptions {
+  extends typings.luminoWidgets.widgetMod.Widget.IOptions {
   /**
     * The child widget to wrap.
     */

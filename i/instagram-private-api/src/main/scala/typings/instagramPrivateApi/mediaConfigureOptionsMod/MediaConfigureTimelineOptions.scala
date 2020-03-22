@@ -1,6 +1,6 @@
 package typings.instagramPrivateApi.mediaConfigureOptionsMod
 
-import typings.instagramPrivateApi.AnonCropcenterCroporiginalsize
+import typings.instagramPrivateApi.AnonCroporiginalsize
 import typings.instagramPrivateApi.AnonSourceheight
 import typings.instagramPrivateApi.instagramPrivateApiStrings.`0`
 import typings.instagramPrivateApi.instagramPrivateApiStrings.`1`
@@ -34,7 +34,7 @@ object MediaConfigureTimelineOptions {
     date_time_original: String = null,
     device_id: String = null,
     disable_comments: js.UndefOr[Boolean] = js.undefined,
-    edits: AnonCropcenterCroporiginalsize = null,
+    edits: AnonCroporiginalsize = null,
     extra: AnonSourceheight = null,
     geotag_enabled: `1` | `0` = null,
     height: Int | Double = null,

@@ -22,8 +22,8 @@ object libResizeGroupMod extends js.Object {
     typings.officeUiFabricReact.resizeGroupBaseMod.ResizeGroupBase
   ] = js.native
   def getMeasurementCache(): AnonAddMeasurementToCache = js.native
-  def getNextResizeGroupStateProvider(): AnonCurrentState = js.native
-  def getNextResizeGroupStateProvider(measurementCache: AnonAddMeasurementToCache): AnonCurrentState = js.native
+  def getNextResizeGroupStateProvider(): AnonGetInitialResizeGroupState = js.native
+  def getNextResizeGroupStateProvider(measurementCache: AnonAddMeasurementToCache): AnonGetInitialResizeGroupState = js.native
   @js.native
   object ResizeGroupDirection extends js.Object {
     /* 0 */ val horizontal: typings.officeUiFabricReact.resizeGroupTypesMod.ResizeGroupDirection.horizontal with Double = js.native

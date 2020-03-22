@@ -11,6 +11,7 @@ object Surveys extends js.Object {
   def hasRespondedToSurvey(surveyToken: String, surveyTokenCallback: js.Function0[Unit]): Unit = js.native
   def onDismissCallback(didDismissSurveyHandler: js.Function0[Unit]): Unit = js.native
   def onShowCallback(willShowSurveyHandler: js.Function0[Unit]): Unit = js.native
+  def setAppStoreURL(appStoreURL: String): Unit = js.native
   def setAutoShowingEnabled(autoShowingSurveysEnabled: Boolean): Unit = js.native
   def setEnabled(isEnabled: Boolean): Unit = js.native
   def setOnDismissHandler(onDismissHandler: js.Function0[Unit]): Unit = js.native

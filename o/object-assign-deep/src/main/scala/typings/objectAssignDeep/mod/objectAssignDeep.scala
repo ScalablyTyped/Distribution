@@ -1,6 +1,6 @@
 package typings.objectAssignDeep.mod
 
-import typings.objectAssignDeep.FnSource
+import typings.objectAssignDeep.FnCall
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait objectAssignDeep extends js.Object {
   @JSName("noMutate")
-  var noMutate_Original: FnSource = js.native
+  var noMutate_Original: FnCall = js.native
   def noMutate(target: js.Object, sources: js.Any*): js.Any = js.native
   def noMutate[T, U](target: T, source: U): T with U = js.native
   def noMutate[T, U, V](target: T, source1: U, source2: V): T with U with V = js.native

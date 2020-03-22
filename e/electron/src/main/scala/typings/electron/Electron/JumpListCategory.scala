@@ -11,11 +11,12 @@ import scala.scalajs.js.annotation._
 trait JumpListCategory extends js.Object {
   // Docs: http://electronjs.org/docs/api/structures/jump-list-category
   /**
-    * Array of objects if type is tasks or custom, otherwise it should be omitted.
+    * Array of `JumpListItem` objects if `type` is `tasks` or `custom`, otherwise it
+    * should be omitted.
     */
   var items: js.UndefOr[js.Array[JumpListItem]] = js.undefined
   /**
-    * Must be set if type is custom, otherwise it should be omitted.
+    * Must be set if `type` is `custom`, otherwise it should be omitted.
     */
   var name: js.UndefOr[String] = js.undefined
   /**

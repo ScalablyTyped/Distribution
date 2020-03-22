@@ -1,34 +1,44 @@
 package typings.rcTable
 
+import typings.rcTable.interfaceMod.DefaultRecordType
 import typings.react.mod.ComponentType
+import typings.react.mod.RefAttributes
+import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object rcTableComponents extends rcTableProps {
   @scala.inline
-  def BodyTable[ValueType]: ComponentType[BodyTableProps[ValueType]] = typings.rcTable.bodyTableMod.default.asInstanceOf[typings.react.mod.ComponentType[BodyTableProps[ValueType]]]
+  def Body: ComponentType[BodyProps] = typings.rcTable.bodyMod.default.asInstanceOf[typings.react.mod.ComponentType[BodyProps]]
   @scala.inline
-  def ColGroup: ComponentType[ColGroupProps] = typings.rcTable.colGroupMod.default.asInstanceOf[typings.react.mod.ComponentType[ColGroupProps]]
+  def BodyRow[RecordType /* <: AnonChildren[RecordType] */]: ComponentType[BodyRowProps[RecordType]] = typings.rcTable.bodyRowMod.default.asInstanceOf[typings.react.mod.ComponentType[BodyRowProps[RecordType]]]
   @scala.inline
-  def Column: ComponentType[ColumnProps] = typings.rcTable.columnMod.default.asInstanceOf[typings.react.mod.ComponentType[ColumnProps]]
+  def Cell: ComponentType[
+    CellProps[
+      (typings.rcTable.cellMod.CellProps[Record[String, js.Any]]) with RefAttributes[js.Any]
+    ]
+  ] = typings.rcTable.cellMod.default.asInstanceOf[typings.react.mod.ComponentType[
+  CellProps[
+    (typings.rcTable.cellMod.CellProps[typings.std.Record[java.lang.String, js.Any]]) with typings.react.mod.RefAttributes[js.Any]
+  ]]]
   @scala.inline
-  def ColumnGroup: ComponentType[ColumnGroupProps] = js.constructorOf[typings.rcTable.columnGroupMod.default].asInstanceOf[typings.react.mod.ComponentType[ColumnGroupProps]]
+  def ColGroup[RecordType]: ComponentType[ColGroupProps[RecordType]] = typings.rcTable.colGroupMod.default.asInstanceOf[typings.react.mod.ComponentType[ColGroupProps[RecordType]]]
   @scala.inline
-  def ExpandIcon[ValueType]: ComponentType[ExpandIconProps[ValueType]] = js.constructorOf[typings.rcTable.expandIconMod.default[ValueType]].asInstanceOf[typings.react.mod.ComponentType[ExpandIconProps[ValueType]]]
+  def ExpandedRow[RecordType]: ComponentType[ExpandedRowProps[RecordType]] = typings.rcTable.expandedRowMod.default.asInstanceOf[typings.react.mod.ComponentType[ExpandedRowProps[RecordType]]]
   @scala.inline
-  def HeadTable: ComponentType[HeadTableProps] = typings.rcTable.headTableMod.default.asInstanceOf[typings.react.mod.ComponentType[HeadTableProps]]
+  def FixedHeader[RecordType]: ComponentType[FixedHeaderProps[RecordType]] = typings.rcTable.fixedHeaderMod.default.asInstanceOf[typings.react.mod.ComponentType[FixedHeaderProps[RecordType]]]
   @scala.inline
-  def Lib[ValueType]: ComponentType[LibProps[ValueType]] = js.constructorOf[typings.rcTable.mod.default[ValueType]].asInstanceOf[typings.react.mod.ComponentType[LibProps[ValueType]]]
+  def Footer: ComponentType[FooterProps] = typings.rcTable.footerMod.default.asInstanceOf[typings.react.mod.ComponentType[FooterProps]]
   @scala.inline
-  def LibColumn: ComponentType[LibColumnProps] = typings.rcTable.mod.default.Column.asInstanceOf[typings.react.mod.ComponentType[LibColumnProps]]
+  def Header[RecordType]: ComponentType[HeaderProps[RecordType]] = typings.rcTable.headerMod.default.asInstanceOf[typings.react.mod.ComponentType[HeaderProps[RecordType]]]
   @scala.inline
-  def Table[ValueType]: ComponentType[TableProps[ValueType]] = js.constructorOf[typings.rcTable.tableMod.default[ValueType]].asInstanceOf[typings.react.mod.ComponentType[TableProps[ValueType]]]
+  def HeaderRow[RecordType]: ComponentType[HeaderRowProps[RecordType]] = typings.rcTable.headerRowMod.default.asInstanceOf[typings.react.mod.ComponentType[HeaderRowProps[RecordType]]]
   @scala.inline
-  def TableCell[ValueType]: ComponentType[TableCellProps[ValueType]] = js.constructorOf[typings.rcTable.tableCellMod.default[ValueType]].asInstanceOf[typings.react.mod.ComponentType[TableCellProps[ValueType]]]
+  def Lib[RecordType /* <: DefaultRecordType */]: ComponentType[LibProps[RecordType]] = typings.rcTable.mod.default.asInstanceOf[typings.react.mod.ComponentType[LibProps[RecordType]]]
   @scala.inline
-  def TableColumn: ComponentType[TableColumnProps] = typings.rcTable.tableMod.default.Column.asInstanceOf[typings.react.mod.ComponentType[TableColumnProps]]
+  def Panel: ComponentType[PanelProps] = typings.rcTable.panelMod.default.asInstanceOf[typings.react.mod.ComponentType[PanelProps]]
   @scala.inline
-  def TableHeader: ComponentType[TableHeaderProps] = typings.rcTable.tableHeaderMod.default.asInstanceOf[typings.react.mod.ComponentType[TableHeaderProps]]
+  def Table[RecordType /* <: DefaultRecordType */]: ComponentType[TableProps[RecordType]] = typings.rcTable.tableMod.default.asInstanceOf[typings.react.mod.ComponentType[TableProps[RecordType]]]
 }
 

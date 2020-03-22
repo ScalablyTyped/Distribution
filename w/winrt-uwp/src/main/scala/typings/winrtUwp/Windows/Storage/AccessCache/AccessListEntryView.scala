@@ -2,7 +2,7 @@ package typings.winrtUwp.Windows.Storage.AccessCache
 
 import typings.std.Array
 import typings.winrtUwp.AnonIndex
-import typings.winrtUwp.AnonItemsReturnValueAccessListEntry
+import typings.winrtUwp.AnonItemsAccessListEntry
 import typings.winrtUwp.Windows.Foundation.Collections.IIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -29,7 +29,7 @@ abstract class AccessListEntryView () extends Array[AccessListEntry] {
     * Retrieves the storage items that start at the specified index in the access list or most recently used (MRU) list.
     * @param startIndex The zero-based index of the start of the items in the collection to retrieve.
     */
-  def getMany(startIndex: Double): AnonItemsReturnValueAccessListEntry = js.native
+  def getMany(startIndex: Double): AnonItemsAccessListEntry = js.native
   def indexOf(value: AccessListEntry, extra: js.Any*): AnonIndex = js.native
   /* hack */
   @JSName("indexOf")

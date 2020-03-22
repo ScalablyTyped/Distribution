@@ -5,11 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/**
-  * Used to load data for i18next.
-  * Can be provided as a singleton or as a prototype constructor (preferred for supporting multiple instances of i18next).
-  * For singleton set property `type` to `'backend'` For a prototype constructor set static property.
-  */
 trait BackendModule[TOptions] extends Module {
   /** Load multiple languages and namespaces. For backends supporting multiple resources loading */
   var readMulti: js.UndefOr[

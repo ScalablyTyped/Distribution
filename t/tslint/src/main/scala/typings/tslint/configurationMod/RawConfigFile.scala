@@ -1,7 +1,6 @@
 package typings.tslint.configurationMod
 
-import typings.std.Partial
-import typings.tslint.AnonExclude
+import typings.tslint.PartialexcludeArraystring
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +9,7 @@ trait RawConfigFile extends js.Object {
   var defaultSeverity: js.UndefOr[String] = js.undefined
   var `extends`: js.UndefOr[String | js.Array[String]] = js.undefined
   var jsRules: js.UndefOr[RawRulesConfig | Boolean] = js.undefined
-  var linterOptions: js.UndefOr[Partial[AnonExclude]] = js.undefined
+  var linterOptions: js.UndefOr[PartialexcludeArraystring] = js.undefined
   var rules: js.UndefOr[RawRulesConfig] = js.undefined
   var rulesDirectory: js.UndefOr[String | js.Array[String]] = js.undefined
 }
@@ -21,7 +20,7 @@ object RawConfigFile {
     defaultSeverity: String = null,
     `extends`: String | js.Array[String] = null,
     jsRules: RawRulesConfig | Boolean = null,
-    linterOptions: Partial[AnonExclude] = null,
+    linterOptions: PartialexcludeArraystring = null,
     rules: RawRulesConfig = null,
     rulesDirectory: String | js.Array[String] = null
   ): RawConfigFile = {

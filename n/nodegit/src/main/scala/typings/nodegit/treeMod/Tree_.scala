@@ -1,7 +1,6 @@
 package typings.nodegit.treeMod
 
-import typings.node.NodeJS.EventEmitter
-import typings.nodegit.AnonStart
+import typings.nodegit.EventEmitterstartvoid
 import typings.nodegit.diffFileMod.DiffFile
 import typings.nodegit.objectMod.Object
 import typings.nodegit.oidMod.Oid
@@ -66,7 +65,7 @@ class Tree_ () extends js.Object {
   /**
     * Recursively walk the tree in breadth-first order. Fires an event for each entry.
     */
-  def walk(): EventEmitter with AnonStart = js.native
-  def walk(blobsOnly: Boolean): EventEmitter with AnonStart = js.native
+  def walk(): EventEmitterstartvoid = js.native
+  def walk(blobsOnly: Boolean): EventEmitterstartvoid = js.native
 }
 

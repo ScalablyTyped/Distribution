@@ -1,6 +1,5 @@
 package typings.stylefire
 
-import typings.stylefire.typesMod.Props
 import typings.stylefire.typesMod.Styler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,6 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object viewportMod extends js.Object {
   def default(): Styler = js.native
-  def default(hasProps: Props): Styler = js.native
+  def default(
+    hasProps: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_types.Props */ js.Any
+  ): Styler = js.native
 }
 

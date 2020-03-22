@@ -1,6 +1,6 @@
 package typings.arangodb.ArangoDB
 
-import typings.arangodb.AnonAllowUserKeysIncrement
+import typings.arangodb.AnonIncrement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ trait CollectionProperties extends js.Object {
   var isSystem: Boolean
   var isVolatile: Boolean
   var journalSize: Double
-  var keyOptions: js.UndefOr[AnonAllowUserKeysIncrement] = js.undefined
+  var keyOptions: js.UndefOr[AnonIncrement] = js.undefined
   var numberOfShards: js.UndefOr[Double] = js.undefined
   var replicationFactor: js.UndefOr[Double] = js.undefined
   var shardKeys: js.UndefOr[js.Array[String]] = js.undefined
@@ -25,7 +25,7 @@ object CollectionProperties {
     isVolatile: Boolean,
     journalSize: Double,
     waitForSync: Boolean,
-    keyOptions: AnonAllowUserKeysIncrement = null,
+    keyOptions: AnonIncrement = null,
     numberOfShards: Int | Double = null,
     replicationFactor: Int | Double = null,
     shardKeys: js.Array[String] = null

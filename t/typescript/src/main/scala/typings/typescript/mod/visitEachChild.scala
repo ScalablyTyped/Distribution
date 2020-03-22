@@ -1,6 +1,6 @@
 package typings.typescript.mod
 
-import typings.typescript.FnCount
+import typings.typescript.FnCall
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,12 +16,12 @@ object visitEachChild extends js.Object {
     * @param context A lexical environment context for the visitor.
     */
   def apply[T /* <: Node */](node: T, visitor: Visitor, context: TransformationContext): js.UndefOr[T] = js.native
-  def apply[T /* <: Node */](node: T, visitor: Visitor, context: TransformationContext, nodesVisitor: FnCount): js.UndefOr[T] = js.native
+  def apply[T /* <: Node */](node: T, visitor: Visitor, context: TransformationContext, nodesVisitor: FnCall): js.UndefOr[T] = js.native
   def apply[T /* <: Node */](
     node: T,
     visitor: Visitor,
     context: TransformationContext,
-    nodesVisitor: FnCount,
+    nodesVisitor: FnCall,
     tokenVisitor: Visitor
   ): js.UndefOr[T] = js.native
   def apply[T /* <: Node */](node: js.UndefOr[scala.Nothing], visitor: Visitor, context: TransformationContext): js.UndefOr[T] = js.native
@@ -29,13 +29,13 @@ object visitEachChild extends js.Object {
     node: js.UndefOr[scala.Nothing],
     visitor: Visitor,
     context: TransformationContext,
-    nodesVisitor: FnCount
+    nodesVisitor: FnCall
   ): js.UndefOr[T] = js.native
   def apply[T /* <: Node */](
     node: js.UndefOr[scala.Nothing],
     visitor: Visitor,
     context: TransformationContext,
-    nodesVisitor: FnCount,
+    nodesVisitor: FnCall,
     tokenVisitor: Visitor
   ): js.UndefOr[T] = js.native
 }

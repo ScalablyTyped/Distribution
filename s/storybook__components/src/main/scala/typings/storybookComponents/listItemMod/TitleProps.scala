@@ -4,10 +4,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TitleProps extends js.Object {
-  var active: js.UndefOr[Boolean] = js.undefined
-  var disabled: js.UndefOr[Boolean] = js.undefined
-  var loading: js.UndefOr[Boolean] = js.undefined
+  var active: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.native
+  var loading: js.UndefOr[Boolean] = js.native
 }
 
 object TitleProps {

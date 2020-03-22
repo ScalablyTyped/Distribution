@@ -1,6 +1,6 @@
 package typings.mkdirp.mod
 
-import typings.mkdirp.FnOptions
+import typings.mkdirp.FnCall
 import typings.node.fsMod.MakeDirectoryOptions
 import typings.node.fsMod.PathLike
 import typings.node.fsMod.Stats
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait FsImplementationSync extends js.Object {
   @JSName("mkdirSync")
-  var mkdirSync_Original: FnOptions = js.native
+  var mkdirSync_Original: FnCall = js.native
   @JSName("statSync")
   var statSync_Original: js.Function1[/* path */ PathLike, Stats] = js.native
   def mkdirSync(path: PathLike): Unit = js.native

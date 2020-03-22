@@ -2,8 +2,8 @@ package typings.swaggerNodeRunner.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.node.eventsMod.EventEmitter
-import typings.swaggerNodeRunner.AnonApiDeclarations
 import typings.swaggerNodeRunner.AnonSwagger
+import typings.swaggerNodeRunner.AnonSwaggerMetadata
 import typings.swaggerSchemaOfficial.mod.Spec
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -27,7 +27,7 @@ trait Runner extends EventEmitter {
     * References to Swagger Tools Midleware (from _swagger-tools_ module)     *
     * @see {@link https://github.com/apigee-127/swagger-tools|Github Source}
     */
-  var swaggerTools: AnonApiDeclarations = js.native
+  var swaggerTools: AnonSwaggerMetadata = js.native
   /** Create new Connect middleware */
   def connectMiddleware(): ConnectMiddleware = js.native
   def defaultErrorHandler(): js.Any = js.native

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ListTagsForResourceRequest extends js.Object {
   /**
-    * The ARN of the rule for which you want to view tags.
+    * The ARN of the EventBridge resource for which you want to view tags.
     */
   var ResourceARN: Arn = js.native
 }

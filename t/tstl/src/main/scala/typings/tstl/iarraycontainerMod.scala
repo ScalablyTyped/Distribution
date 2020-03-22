@@ -3,7 +3,6 @@ package typings.tstl
 import typings.tstl.iarraycontainerMod.IArrayContainer.Iterator
 import typings.tstl.iarraycontainerMod.IArrayContainer.ReverseIterator
 import typings.tstl.ilinearcontainerMod.ILinearContainer
-import typings.tstl.irandomaccessiteratorMod.IRandomAccessIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,13 +42,80 @@ object iarraycontainerMod extends js.Object {
       *
       * @author Jenogho Nam <http://samchon.org>
       */
-    type Iterator[T /* <: ElemT */, SourceT /* <: IArrayContainer[T, SourceT, IteratorT, ReverseT, T] */, IteratorT /* <: /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias tstl.tstl/base/container/IArrayContainer.IArrayContainer.Iterator<T, SourceT, IteratorT, ReverseT, T> */ js.Object */, ReverseT /* <: ReverseIterator[T, SourceT, IteratorT, ReverseT, T] */, ElemT] = (typings.tstl.ilinearcontainerMod.ILinearContainer.Iterator[T, SourceT, IteratorT, ReverseT, ElemT]) with (IRandomAccessIterator[T, IteratorT])
+    /* Inlined tstl.tstl/base/container/ILinearContainer.ILinearContainer.Iterator<T, SourceT, IteratorT, ReverseT, ElemT> & tstl.tstl/iterator/IRandomAccessIterator.IRandomAccessIterator<T, IteratorT> */
+    @js.native
+    trait Iterator[T /* <: ElemT */, SourceT /* <: IArrayContainer[T, SourceT, IteratorT, ReverseT, T] */, IteratorT /* <: Iterator[T, SourceT, IteratorT, ReverseT, T] */, ReverseT /* <: ReverseIterator[T, SourceT, IteratorT, ReverseT, T] */, ElemT] extends js.Object {
+      @JSName("equals")
+      var equals_Original: js.Function1[/* obj */ IteratorT, Boolean] = js.native
+      /**
+        * Reference of the value.
+        */
+      val value: T = js.native
+      /**
+        * Advance iterator.
+        *
+        * @param n Step to advance.
+        * @return The advanced iterator.
+        */
+      def advance(n: Double): IteratorT = js.native
+      /**
+        * Get index.
+        *
+        * @return The index.
+        */
+      def index(): Double = js.native
+      def next(): IteratorT = js.native
+      def prev(): IteratorT = js.native
+      /**
+        * @inheritDoc
+        */
+      def reverse(): ReverseT = js.native
+      /**
+        * Get source container.
+        *
+        * @return The source container.
+        */
+      def source(): SourceT = js.native
+    }
+    
     /**
       * Reverse iterator of {@link IArrayContainer}
       *
       * @author Jeongho Nam - https://github.com/samchon
       */
-    type ReverseIterator[T /* <: ElemT */, SourceT /* <: IArrayContainer[T, SourceT, IteratorT, ReverseT, T] */, IteratorT /* <: Iterator[T, SourceT, IteratorT, ReverseT, T] */, ReverseT /* <: /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias tstl.tstl/base/container/IArrayContainer.IArrayContainer.ReverseIterator<T, SourceT, IteratorT, ReverseT, T> */ js.Object */, ElemT] = (typings.tstl.ilinearcontainerMod.ILinearContainer.ReverseIterator[T, SourceT, IteratorT, ReverseT, ElemT]) with (IRandomAccessIterator[T, ReverseT])
+    /* Inlined tstl.tstl/base/container/ILinearContainer.ILinearContainer.ReverseIterator<T, SourceT, IteratorT, ReverseT, ElemT> & tstl.tstl/iterator/IRandomAccessIterator.IRandomAccessIterator<T, ReverseT> */
+    @js.native
+    trait ReverseIterator[T /* <: ElemT */, SourceT /* <: IArrayContainer[T, SourceT, IteratorT, ReverseT, T] */, IteratorT /* <: Iterator[T, SourceT, IteratorT, ReverseT, T] */, ReverseT /* <: ReverseIterator[T, SourceT, IteratorT, ReverseT, T] */, ElemT] extends js.Object {
+      @JSName("equals")
+      var equals_Original: js.Function1[/* obj */ ReverseT, Boolean] = js.native
+      /**
+        * Reference of the value.
+        */
+      val value: T = js.native
+      /**
+        * Advance iterator.
+        *
+        * @param n Step to advance.
+        * @return The advanced iterator.
+        */
+      def advance(n: Double): ReverseT = js.native
+      def base(): IteratorT = js.native
+      /**
+        * Get index.
+        *
+        * @return The index.
+        */
+      def index(): Double = js.native
+      def next(): ReverseT = js.native
+      def prev(): ReverseT = js.native
+      /**
+        * Get source container.
+        *
+        * @return The source container.
+        */
+      def source(): SourceT = js.native
+    }
+    
   }
   
 }

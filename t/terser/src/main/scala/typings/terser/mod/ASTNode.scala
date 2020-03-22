@@ -1,7 +1,7 @@
 package typings.terser.mod
 
 import typings.std.Record
-import typings.terser.TypeofClassASTNode
+import typings.terser.TypeofASTNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ASTNode () extends js.Object {
   def this(props: js.Object) = this()
-  var CTOR: TypeofClassASTNode = js.native
+  var CTOR: TypeofASTNode = js.native
   var TYPE: String = js.native
   def print_to_string(): String = js.native
   def print_to_string(options: OutputOptions): String = js.native

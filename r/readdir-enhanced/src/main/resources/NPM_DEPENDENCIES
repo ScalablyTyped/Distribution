@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "readdir-enhanced" : "4.0.3"
+      "readdir-enhanced" : "6.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "readdir-enhanced" : "4.0.3"
+      "readdir-enhanced" : "6.0.0"
     }
   ],
   "compile-devDependencies" : [

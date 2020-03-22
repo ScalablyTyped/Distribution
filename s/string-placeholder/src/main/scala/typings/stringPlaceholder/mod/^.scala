@@ -1,5 +1,6 @@
 package typings.stringPlaceholder.mod
 
+import typings.stringPlaceholder.ReadonlyOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(str: String, data: js.Any): String = js.native
-  def apply(str: String, data: js.Any, options: Options): String = js.native
+  def apply(str: String, data: js.Any, options: ReadonlyOptions): String = js.native
 }
 

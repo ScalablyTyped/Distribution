@@ -1,15 +1,16 @@
 package typings.ionicCore
 
+import typings.ionicCore.animationInterfaceMod.Animation
 import typings.ionicCore.componentsMod._Global_.HTMLIonModalElement
 import typings.ionicCore.ionicCoreStrings.ios
 import typings.ionicCore.ionicCoreStrings.md
 import typings.ionicCore.mod.ComponentProps
 import typings.ionicCore.mod.ComponentRef
 import typings.ionicCore.mod.FrameworkDelegate
-import typings.ionicCore.oldAnimationAnimationInterfaceMod.Animation
 import typings.ionicCore.overlaysInterfaceMod.OverlayEventDetail
 import typings.ionicCore.overlaysInterfaceMod.OverlayInterface
 import typings.ionicCore.stencilCoreMod.ComponentInterface
+import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,8 +22,7 @@ object modalMod extends js.Object {
   class Modal ()
     extends ComponentInterface
        with OverlayInterface {
-    @JSName("animation")
-    var animation_Modal: js.UndefOr[Animation] = js.native
+    var animation: js.UndefOr[Animation] = js.native
     /**
       * If `true`, the modal will be dismissed when the backdrop is clicked.
       */
@@ -44,15 +44,26 @@ object modalMod extends js.Object {
     var delegate: js.UndefOr[FrameworkDelegate] = js.native
     @JSName("el")
     var el_Modal: HTMLIonModalElement = js.native
+    var gesture: js.UndefOr[js.Any] = js.native
+    var gestureAnimationDismissing: js.Any = js.native
     @JSName("mode")
     var mode_Modal: ios | md = js.native
     var onBackdropTap: js.Any = js.native
     var onDismiss: js.Any = js.native
     var onLifecycle: js.Any = js.native
     /**
+      * The element that presented the modal. This is used for card presentation effects
+      * and for stacking multiple modals on top of each other. Only applies in iOS mode.
+      */
+    var presentingElement: js.UndefOr[HTMLElement] = js.native
+    /**
       * If `true`, a backdrop will be displayed behind the modal.
       */
     var showBackdrop: Boolean = js.native
+    /**
+      * If `true`, the modal can be swiped to dismiss. Only applies in iOS mode.
+      */
+    var swipeToClose: Boolean = js.native
     var usersElement: js.UndefOr[js.Any] = js.native
     /**
       * Returns a promise that resolves when the modal did dismiss.

@@ -4,7 +4,7 @@ import typings.std.Record
 import typings.wordpressApiFetch.AnonAddnew
 import typings.wordpressApiFetch.AnonAuthor
 import typings.wordpressApiFetch.AnonCreateposts
-import typings.wordpressApiFetch.AnonHref
+import typings.wordpressApiFetch.AnonDictk
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,7 +25,7 @@ trait BaseType[T /* <: Context */] extends BaseResponse {
 object BaseType {
   @scala.inline
   def apply[T /* <: Context */](
-    _links: Record[String, js.Array[AnonHref]],
+    _links: Record[String, js.Array[AnonDictk]],
     capabilities: AnonCreateposts,
     description: String,
     hierarchical: Boolean,

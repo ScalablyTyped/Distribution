@@ -5,7 +5,7 @@ import typings.prosemirrorModel.mod.Node
 import typings.prosemirrorModel.mod.ResolvedPos
 import typings.prosemirrorModel.mod.Schema
 import typings.prosemirrorModel.mod.Slice
-import typings.prosemirrorState.AnonArgs
+import typings.prosemirrorState.AnonInstantiable
 import typings.prosemirrorTransform.mod.Mappable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -152,7 +152,7 @@ object Selection extends js.Object {
     * can be disambiguated. Try to pick something that's unlikely to
     * clash with classes from other modules.
     */
-  def jsonID(id: String, selectionClass: AnonArgs): Unit = js.native
+  def jsonID(id: String, selectionClass: AnonInstantiable): Unit = js.native
   /**
     * Find a valid cursor or leaf node selection near the given
     * position. Searches forward first by default, but if `bias` is

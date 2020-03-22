@@ -5,14 +5,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object serverMod {
-  type AuthenticateBewitOptions = typings.std.Pick[
-    typings.hapiHawk.serverMod.AuthenticateOptions, 
-    typings.hapiHawk.hapiHawkStrings.hostHeaderName | typings.hapiHawk.hapiHawkStrings.localtimeOffsetMsec | typings.hapiHawk.hapiHawkStrings.host | typings.hapiHawk.hapiHawkStrings.port
-  ]
-  type AuthenticateMessageOptions = typings.std.Pick[
-    typings.hapiHawk.serverMod.AuthenticateOptions, 
-    typings.hapiHawk.hapiHawkStrings.nonceFunc | typings.hapiHawk.hapiHawkStrings.timestampSkewSec | typings.hapiHawk.hapiHawkStrings.localtimeOffsetMsec
-  ]
   type CredentialsFunc = js.Function1[
     /* id */ java.lang.String, 
     js.Promise[typings.hapiHawk.serverMod.Credentials] | typings.hapiHawk.serverMod.Credentials

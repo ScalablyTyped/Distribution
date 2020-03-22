@@ -1,8 +1,7 @@
 package typings.antdMobile.mod
 
-import typings.antdMobile.toastMod.IToastConfig
+import typings.antdMobile.PartialIToastConfig
 import typings.react.mod.ReactNode
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +12,7 @@ object Toast extends js.Object {
   var LONG: Double = js.native
   var SHORT: Double = js.native
   def config(): Unit = js.native
-  def config(conf: Partial[IToastConfig]): Unit = js.native
+  def config(conf: PartialIToastConfig): Unit = js.native
   def fail(content: ReactNode): Unit = js.native
   def fail(
     content: ReactNode,

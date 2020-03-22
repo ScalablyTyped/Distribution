@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FieldProps extends js.Object {
-  var label: js.UndefOr[ReactNode] = js.undefined
+  var label: js.UndefOr[ReactNode] = js.native
 }
 
 object FieldProps {

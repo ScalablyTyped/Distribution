@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait BatchEnableStandardsRequest extends js.Object {
   /**
-    * The list of standards compliance checks to enable.
+    * The list of standards checks to enable.
     */
   var StandardsSubscriptionRequests: typings.awsSdk.securityhubMod.StandardsSubscriptionRequests = js.native
 }

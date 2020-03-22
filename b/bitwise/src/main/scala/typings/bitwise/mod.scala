@@ -69,12 +69,12 @@ object mod extends js.Object {
   
   @js.native
   object default extends js.Object {
-    var bits: AnonAndBits = js.native
-    var buffer: AnonAAnd = js.native
-    var byte: AnonByteRead = js.native
-    var integer: AnonGetBitInt32 = js.native
-    var nibble: AnonNibbleRead = js.native
-    var string: AnonStringToBits = js.native
+    var bits: AnonNand = js.native
+    var buffer: AnonModify = js.native
+    var byte: AnonReadWrite = js.native
+    var integer: AnonSetBit = js.native
+    var nibble: Anon0 = js.native
+    var string: Anon1 = js.native
   }
   
   @js.native

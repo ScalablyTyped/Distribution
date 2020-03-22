@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "decompress-response" : "4.2.1"
+      "decompress-response" : "5.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "decompress-response" : "4.2.1"
+      "decompress-response" : "5.0.0"
     }
   ],
   "compile-devDependencies" : [

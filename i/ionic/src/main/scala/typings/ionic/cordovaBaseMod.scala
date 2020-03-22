@@ -4,8 +4,6 @@ import typings.ionic.commandMod.Command
 import typings.ionic.definitionsMod.CommandInstanceInfo
 import typings.ionic.definitionsMod.CommandMetadataOption
 import typings.ionic.definitionsMod.IShellRunOptions
-import typings.ionic.definitionsMod.ProjectIntegration
-import typings.std.Required
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +17,7 @@ object cordovaBaseMod extends js.Object {
     /* protected */ def checkCordova(runinfo: CommandInstanceInfo): js.Promise[Unit] = js.native
     /* protected */ def checkForPlatformInstallation(platform: String): js.Promise[Unit] = js.native
     /* protected */ def checkForPlatformInstallation(platform: String, hasPromptToInstallPromptToInstallRefusalMsg: AnonPromptToInstall): js.Promise[Unit] = js.native
-    /* protected */ def integration(): Required[ProjectIntegration] = js.native
+    /* protected */ def integration(): RequiredProjectIntegratio = js.native
     /* protected */ def preRunChecks(runinfo: CommandInstanceInfo): js.Promise[Unit] = js.native
     /* protected */ def runCordova(argList: js.Array[String]): js.Promise[Unit] = js.native
     /* protected */ def runCordova(argList: js.Array[String], hasFatalOnNotFoundTruncateErrorOutputOptions: IShellRunOptions): js.Promise[Unit] = js.native

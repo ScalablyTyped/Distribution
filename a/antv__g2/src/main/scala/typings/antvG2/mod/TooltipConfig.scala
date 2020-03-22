@@ -1,6 +1,6 @@
 package typings.antvG2.mod
 
-import typings.antvG2.AnonCross
+import typings.antvG2.AnonStyle
 import typings.antvG2.antvG2Booleans.`false`
 import typings.antvG2.antvG2Booleans.`true`
 import typings.antvG2.antvG2Strings.bottom
@@ -30,7 +30,7 @@ object TooltipConfig {
   @scala.inline
   def HtmlTooltipConfig(
     containerTpl: String = null,
-    crosshairs: AnonCross = null,
+    crosshairs: AnonStyle = null,
     enterable: js.UndefOr[Boolean] = js.undefined,
     follow: js.UndefOr[Boolean] = js.undefined,
     `g2-tooltip`: Record[String, _] = null,
@@ -81,7 +81,7 @@ object TooltipConfig {
   def CanvasTooltipConfig(
     useHtml: `false`,
     boardStyle: background = null,
-    crosshairs: AnonCross = null,
+    crosshairs: AnonStyle = null,
     follow: js.UndefOr[Boolean] = js.undefined,
     hideMarkers: js.UndefOr[Boolean] = js.undefined,
     inPlot: js.UndefOr[Boolean] = js.undefined,
@@ -120,7 +120,7 @@ object TooltipConfig {
   def MiniTooltipConfig(
     `type`: mini,
     boardStyle: background = null,
-    crosshairs: AnonCross = null,
+    crosshairs: AnonStyle = null,
     follow: js.UndefOr[Boolean] = js.undefined,
     hideMarkers: js.UndefOr[Boolean] = js.undefined,
     inPlot: js.UndefOr[Boolean] = js.undefined,

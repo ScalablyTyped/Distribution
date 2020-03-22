@@ -1,6 +1,6 @@
 package typings.cesium.mod
 
-import typings.cesium.AnonCreditCrs
+import typings.cesium.AnonCrs
 import typings.cesium.AnonFormat
 import typings.cesium.AnonRequest
 import scala.scalajs.js
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("cesium", "WebMapServiceImageryProvider")
 @js.native
 class WebMapServiceImageryProvider protected () extends ImageryProvider {
-  def this(options: AnonCreditCrs) = this()
+  def this(options: AnonCrs) = this()
   val url: String = js.native
 }
 

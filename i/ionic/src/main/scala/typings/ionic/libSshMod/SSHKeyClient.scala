@@ -1,11 +1,15 @@
 package typings.ionic.libSshMod
 
 import typings.ionic.AnonIdNumber
+import typings.ionic.PartialPaginateArgsResponMax
 import typings.ionic.definitionsMod.IClient
+import typings.ionic.definitionsMod.IPaginator
+import typings.ionic.definitionsMod.PaginatorState
 import typings.ionic.definitionsMod.ResourceClientCreate
 import typings.ionic.definitionsMod.ResourceClientDelete
 import typings.ionic.definitionsMod.ResourceClientLoad
 import typings.ionic.definitionsMod.ResourceClientPaginate
+import typings.ionic.definitionsMod.Response
 import typings.ionic.definitionsMod.SSHKey
 import typings.ionic.httpMod.ResourceClient
 import scala.scalajs.js
@@ -27,5 +31,6 @@ class SSHKeyClient protected ()
   /* CompleteClass */
   override def create(details: SSHKeyCreateDetails): js.Promise[SSHKey] = js.native
   def load(id: String): js.Promise[SSHKey] = js.native
+  def paginate(args: PartialPaginateArgsResponMax): IPaginator[Response[js.Array[SSHKey]], PaginatorState] = js.native
 }
 

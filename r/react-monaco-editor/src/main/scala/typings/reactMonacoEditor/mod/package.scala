@@ -17,6 +17,9 @@ package object mod {
     scala.Unit
   ]
   type DiffEditorWillMount = js.Function1[/* monaco */ typings.reactMonacoEditor.TypeofmonacoEditor, scala.Unit]
+  type EditorConstructionOptions = typings.std.NonNullable[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<react-monaco-editor.FnCall>[1] */ js.Any
+  ]
   type EditorDidMount = js.Function2[
     /* editor */ typings.monacoEditor.mod.editor.IStandaloneCodeEditor, 
     /* monaco */ typings.reactMonacoEditor.TypeofmonacoEditor, 
@@ -24,6 +27,6 @@ package object mod {
   ]
   type EditorWillMount = js.Function1[
     /* monaco */ typings.reactMonacoEditor.TypeofmonacoEditor, 
-    scala.Unit | typings.monacoEditor.mod.editor.IEditorConstructionOptions
+    scala.Unit | typings.reactMonacoEditor.mod.EditorConstructionOptions
   ]
 }

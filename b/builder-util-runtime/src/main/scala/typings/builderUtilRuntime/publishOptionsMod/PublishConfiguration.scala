@@ -1,5 +1,6 @@
 package typings.builderUtilRuntime.publishOptionsMod
 
+import typings.node.httpMod.OutgoingHttpHeaders
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,6 +25,10 @@ trait PublishConfiguration extends js.Object {
     */
   var publisherName: js.UndefOr[js.Array[String] | Null] = js.undefined
   /**
+    * Any custom request headers
+    */
+  val requestHeaders: js.UndefOr[OutgoingHttpHeaders] = js.undefined
+  /**
     * @private
     * win-only
     */
@@ -36,11 +41,13 @@ object PublishConfiguration {
     provider: PublishProvider,
     publishAutoUpdate: js.UndefOr[Boolean] = js.undefined,
     publisherName: js.Array[String] = null,
+    requestHeaders: OutgoingHttpHeaders = null,
     updaterCacheDirName: String = null
   ): PublishConfiguration = {
     val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any])
     if (!js.isUndefined(publishAutoUpdate)) __obj.updateDynamic("publishAutoUpdate")(publishAutoUpdate.asInstanceOf[js.Any])
     if (publisherName != null) __obj.updateDynamic("publisherName")(publisherName.asInstanceOf[js.Any])
+    if (requestHeaders != null) __obj.updateDynamic("requestHeaders")(requestHeaders.asInstanceOf[js.Any])
     if (updaterCacheDirName != null) __obj.updateDynamic("updaterCacheDirName")(updaterCacheDirName.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublishConfiguration]
   }

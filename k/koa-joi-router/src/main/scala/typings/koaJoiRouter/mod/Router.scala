@@ -3,7 +3,7 @@ package typings.koaJoiRouter.mod
 import typings.koa.mod.DefaultContext
 import typings.koa.mod.DefaultState
 import typings.koa.mod.Middleware
-import typings.koaJoiRouter.FnMiddleware
+import typings.koaJoiRouter.FnCall
 import typings.koaRouter.mod.IMiddleware
 import typings.koaRouter.mod.IParamMiddleware
 import typings.std.RegExp
@@ -37,7 +37,7 @@ trait Router extends js.Object {
   var put_Original: Method = js.native
   var routes: js.Array[Spec] = js.native
   @JSName("use")
-  var use_Original: FnMiddleware = js.native
+  var use_Original: FnCall = js.native
   def delete(path: String, handlerOrConfig: Config, handlers: Handler*): Router = js.native
   def delete(path: String, handlerOrConfig: Handler, handlers: Handler*): Router = js.native
   def delete(path: RegExp, handlerOrConfig: Config, handlers: Handler*): Router = js.native

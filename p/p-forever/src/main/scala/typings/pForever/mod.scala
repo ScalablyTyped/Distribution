@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 object mod extends js.Object {
   // TODO: Remove this for the next major release
   @JSName("default")
-  var default_Original: AnonDefault = js.native
+  var default_Original: AnonCall = js.native
   /**
   	Symbol used to end the loop.
   	*/

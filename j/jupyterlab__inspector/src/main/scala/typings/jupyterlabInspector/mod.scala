@@ -2,7 +2,7 @@ package typings.jupyterlabInspector
 
 import org.scalablytyped.runtime.TopLevel
 import typings.jupyterlabInspector.handlerMod.InspectionHandler.IOptions
-import typings.phosphorCoreutils.mod.Token
+import typings.luminoCoreutils.mod.Token
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

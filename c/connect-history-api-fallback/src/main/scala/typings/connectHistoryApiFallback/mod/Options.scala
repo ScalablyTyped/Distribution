@@ -1,6 +1,6 @@
 package typings.connectHistoryApiFallback.mod
 
-import typings.connectHistoryApiFallback.FnMessage
+import typings.connectHistoryApiFallback.FnCall
 import typings.connectHistoryApiFallback.connectHistoryApiFallbackBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,7 +10,7 @@ trait Options extends js.Object {
   var disableDotRule: js.UndefOr[`true`] = js.undefined
   var htmlAcceptHeaders: js.UndefOr[js.Array[String]] = js.undefined
   var index: js.UndefOr[String] = js.undefined
-  var logger: js.UndefOr[FnMessage] = js.undefined
+  var logger: js.UndefOr[FnCall] = js.undefined
   var rewrites: js.UndefOr[js.Array[Rewrite]] = js.undefined
   var verbose: js.UndefOr[Boolean] = js.undefined
 }
@@ -21,7 +21,7 @@ object Options {
     disableDotRule: `true` = null,
     htmlAcceptHeaders: js.Array[String] = null,
     index: String = null,
-    logger: FnMessage = null,
+    logger: FnCall = null,
     rewrites: js.Array[Rewrite] = null,
     verbose: js.UndefOr[Boolean] = js.undefined
   ): Options = {

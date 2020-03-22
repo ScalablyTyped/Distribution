@@ -1,7 +1,7 @@
 package typings.postmanCollection.mod
 
 import typings.postmanCollection.AnonEncode
-import typings.postmanCollection.AnonKeyValueString
+import typings.postmanCollection.AnonKeyValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +18,7 @@ class QueryParam protected () extends Property[QueryParamDefinition] {
   var system: js.UndefOr[Boolean] = js.native
   var value: Null | String = js.native
   def update(param: String): Unit = js.native
-  def update(param: AnonKeyValueString): Unit = js.native
+  def update(param: AnonKeyValue): Unit = js.native
 }
 
 /* static members */

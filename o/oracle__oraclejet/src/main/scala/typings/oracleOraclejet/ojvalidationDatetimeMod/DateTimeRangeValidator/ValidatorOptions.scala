@@ -1,6 +1,6 @@
 package typings.oracleOraclejet.ojvalidationDatetimeMod.DateTimeRangeValidator
 
-import typings.oracleOraclejet.AnonInRangeMax
+import typings.oracleOraclejet.AnonMin
 import typings.oracleOraclejet.AnonRangeOverflowRangeUnderflow
 import typings.oracleOraclejet.ojvalidationDatetimeMod.DateTimeConverter
 import scala.scalajs.js
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 // tslint:disable-next-line interface-over-type-literal
 trait ValidatorOptions extends js.Object {
   var converter: DateTimeConverter
-  var hint: js.UndefOr[AnonInRangeMax] = js.undefined
+  var hint: js.UndefOr[AnonMin] = js.undefined
   var max: js.UndefOr[String] = js.undefined
   var messageDetail: js.UndefOr[AnonRangeOverflowRangeUnderflow] = js.undefined
   var messageSummary: js.UndefOr[AnonRangeOverflowRangeUnderflow] = js.undefined
@@ -22,7 +22,7 @@ object ValidatorOptions {
   @scala.inline
   def apply(
     converter: DateTimeConverter,
-    hint: AnonInRangeMax = null,
+    hint: AnonMin = null,
     max: String = null,
     messageDetail: AnonRangeOverflowRangeUnderflow = null,
     messageSummary: AnonRangeOverflowRangeUnderflow = null,

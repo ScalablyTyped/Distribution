@@ -1,12 +1,12 @@
 package typings.jupyterlabServices
 
 import typings.jupyterlabServices.serverconnectionMod.ServerConnection.ISettings
-import typings.jupyterlabServices.terminalTerminalMod.TerminalSession.IMessage
-import typings.jupyterlabServices.terminalTerminalMod.TerminalSession.IModel
-import typings.jupyterlabServices.terminalTerminalMod.TerminalSession.IOptions
-import typings.jupyterlabServices.terminalTerminalMod.TerminalSession.ISession
-import typings.phosphorSignaling.mod.ISignal
-import typings.phosphorSignaling.mod.Signal
+import typings.jupyterlabServices.terminalRestapiMod.IModel
+import typings.jupyterlabServices.terminalTerminalMod.ConnectionStatus
+import typings.jupyterlabServices.terminalTerminalMod.IMessage
+import typings.jupyterlabServices.terminalTerminalMod.ITerminalConnection
+import typings.jupyterlabServices.terminalTerminalMod.ITerminalConnection.IOptions
+import typings.luminoSignaling.mod.ISignal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,29 +15,69 @@ import scala.scalajs.js.annotation._
 @js.native
 object terminalDefaultMod extends js.Object {
   @js.native
-  class DefaultTerminalSession protected () extends ISession {
+  class TerminalConnection protected () extends ITerminalConnection {
     /**
       * Construct a new terminal session.
       */
-    def this(name: String) = this()
-    def this(name: String, options: IOptions) = this()
-    var _disconnected: js.Any = js.native
+    def this(options: IOptions) = this()
     /**
-      * Connect to the websocket.
+      * Forcefully clear the socket state.
+      *
+      * #### Notes
+      * This will clear all socket state without calling any handlers and will
+      * not update the connection status. If you call this method, you are
+      * responsible for updating the connection status as needed and recreating
+      * the socket if you plan to reconnect.
       */
-    var _initializeSocket: js.Any = js.native
+    var _clearSocket: js.Any = js.native
+    var _connectionStatus: js.Any = js.native
+    var _connectionStatusChanged: js.Any = js.native
+    /**
+      * Create the terminal websocket connection and add socket status handlers.
+      *
+      * #### Notes
+      * You are responsible for updating the connection status as appropriate.
+      */
+    var _createSocket: js.Any = js.native
+    var _disposed: js.Any = js.native
+    /**
+      * Utility function to throw an error if this instance is disposed.
+      */
+    var _errorIfDisposed: js.Any = js.native
     var _isDisposed: js.Any = js.native
-    var _isReady: js.Any = js.native
     var _messageReceived: js.Any = js.native
     var _name: js.Any = js.native
     var _noOp: js.Any = js.native
-    var _readyPromise: js.Any = js.native
+    var _onWSClose: js.Any = js.native
+    var _onWSMessage: js.Any = js.native
+    var _pendingMessages: js.Any = js.native
     var _reconnectAttempt: js.Any = js.native
     var _reconnectLimit: js.Any = js.native
-    var _reconnectSocket: js.Any = js.native
-    var _terminated: js.Any = js.native
-    var _url: js.Any = js.native
+    var _reconnectTimeout: js.Any = js.native
+    /**
+      * Send pending messages to the kernel.
+      */
+    var _sendPending: js.Any = js.native
+    /**
+      * Handle connection status changes.
+      */
+    var _updateConnectionStatus: js.Any = js.native
     var _ws: js.Any = js.native
+    /**
+      * The current connection status of the terminal.
+      */
+    /* CompleteClass */
+    override val connectionStatus: ConnectionStatus = js.native
+    /**
+      * A signal emitted when the terminal connection status changes.
+      */
+    /* CompleteClass */
+    override var connectionStatusChanged: ISignal[this.type, ConnectionStatus] = js.native
+    /**
+      * A signal emitted when the object is disposed.
+      */
+    /* CompleteClass */
+    override val disposed: ISignal[this.type, Unit] = js.native
     /**
       * Test whether the object has been disposed.
       *
@@ -47,20 +87,10 @@ object terminalDefaultMod extends js.Object {
     /* CompleteClass */
     override val isDisposed: Boolean = js.native
     /**
-      * Test whether the session is ready.
-      */
-    /* CompleteClass */
-    override val isReady: Boolean = js.native
-    /**
       * A signal emitted when a message is received from the server.
       */
     /* CompleteClass */
-    override var messageReceived: ISignal[ISession, IMessage] = js.native
-    /**
-      * A signal emitted when a message is received from the server.
-      */
-    @JSName("messageReceived")
-    val messageReceived_DefaultTerminalSession: ISignal[this.type, IMessage] = js.native
+    override var messageReceived: ISignal[ITerminalConnection, IMessage] = js.native
     /**
       * The model associated with the session.
       */
@@ -72,25 +102,31 @@ object terminalDefaultMod extends js.Object {
     /* CompleteClass */
     override val name: String = js.native
     /**
-      * A promise that fulfills when the session is initially ready.
-      */
-    /* CompleteClass */
-    override val ready: js.Promise[Unit] = js.native
-    /**
       * The server settings for the session.
       */
     /* CompleteClass */
     override val serverSettings: ISettings = js.native
     /**
-      * A signal emitted when the session is shut down.
+      * Attempt a connection if we have not exhausted connection attempts.
       */
-    /* CompleteClass */
-    override var terminated: ISignal[ISession, Unit] = js.native
+    def _reconnect(): Unit = js.native
     /**
-      * A signal emitted when the session is shut down.
+      * Send a message on the websocket, or possibly queue for later sending.
+      *
+      * @param queue - whether to queue the message if it cannot be sent
       */
-    @JSName("terminated")
-    val terminated_DefaultTerminalSession: Signal[this.type, Unit] = js.native
+    def _sendMessage(message: IMessage): Unit = js.native
+    def _sendMessage(message: IMessage, queue: Boolean): Unit = js.native
+    /**
+      * A signal emitted when the terminal connection status changes.
+      */
+    @JSName("connectionStatusChanged")
+    def connectionStatusChanged_MTerminalConnection(): ISignal[this.type, ConnectionStatus] = js.native
+    /**
+      * The current connection status of the terminal connection.
+      */
+    @JSName("connectionStatus")
+    def connectionStatus_MTerminalConnection(): ConnectionStatus = js.native
     /**
       * Dispose of the resources held by the object.
       *
@@ -104,6 +140,31 @@ object terminalDefaultMod extends js.Object {
       */
     /* CompleteClass */
     override def dispose(): Unit = js.native
+    /**
+      * A signal emitted when the session is disposed.
+      */
+    @JSName("disposed")
+    def disposed_MTerminalConnection(): ISignal[this.type, Unit] = js.native
+    /**
+      * Test whether the session is disposed.
+      */
+    @JSName("isDisposed")
+    def isDisposed_MTerminalConnection(): Boolean = js.native
+    /**
+      * A signal emitted when a message is received from the server.
+      */
+    @JSName("messageReceived")
+    def messageReceived_MTerminalConnection(): ISignal[this.type, IMessage] = js.native
+    /**
+      * Get the model for the terminal session.
+      */
+    @JSName("model")
+    def model_MTerminalConnection(): IModel = js.native
+    /**
+      * Get the name of the terminal session.
+      */
+    @JSName("name")
+    def name_MTerminalConnection(): String = js.native
     /**
       * Reconnect to the terminal.
       *
@@ -121,54 +182,6 @@ object terminalDefaultMod extends js.Object {
       */
     /* CompleteClass */
     override def shutdown(): js.Promise[Unit] = js.native
-  }
-  
-  @js.native
-  object DefaultTerminalSession extends js.Object {
-    def connectTo(name: String): js.Promise[ISession] = js.native
-    def connectTo(name: String, options: IOptions): js.Promise[ISession] = js.native
-    /**
-      * Whether the terminal service is available.
-      */
-    def isAvailable(): Boolean = js.native
-    /**
-      * List the running terminal sessions.
-      *
-      * @param settings - The server settings to use.
-      *
-      * @returns A promise that resolves with the list of running session models.
-      */
-    def listRunning(): js.Promise[js.Array[IModel]] = js.native
-    def listRunning(settings: ISettings): js.Promise[js.Array[IModel]] = js.native
-    /**
-      * Shut down a terminal session by name.
-      *
-      * @param name - The name of the target session.
-      *
-      * @param settings - The server settings to use.
-      *
-      * @returns A promise that resolves when the session is shut down.
-      */
-    def shutdown(name: String): js.Promise[Unit] = js.native
-    def shutdown(name: String, settings: ISettings): js.Promise[Unit] = js.native
-    /**
-      * Shut down all terminal sessions.
-      *
-      * @param settings - The server settings to use.
-      *
-      * @returns A promise that resolves when all the sessions are shut down.
-      */
-    def shutdownAll(): js.Promise[Unit] = js.native
-    def shutdownAll(settings: ISettings): js.Promise[Unit] = js.native
-    /**
-      * Start a new terminal session.
-      *
-      * @param options - The session options to use.
-      *
-      * @returns A promise that resolves with the session instance.
-      */
-    def startNew(): js.Promise[ISession] = js.native
-    def startNew(options: IOptions): js.Promise[ISession] = js.native
   }
   
 }

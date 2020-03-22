@@ -1,6 +1,6 @@
 package typings.insertModuleGlobals.mod
 
-import typings.insertModuleGlobals.AnonBasedir
+import typings.insertModuleGlobals.AnonBuffer
 import typings.node.streamMod.Transform
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,7 +11,7 @@ trait InsertModuleGlobals extends js.Object {
   /**
     * Defaults
     */
-  val vars: AnonBasedir = js.native
+  val vars: AnonBuffer = js.native
   /**
     * Return a transform stream inserter for the filename file that will accept a javascript file as input and
     * will output the file with a closure around the contents as necessary to define extra builtins.

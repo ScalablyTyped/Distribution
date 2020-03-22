@@ -1,7 +1,7 @@
 package typings.jsDataAdapter.mod
 
 import typings.jsData.mod.Mapper
-import typings.jsDataAdapter.TypeofClassAdapter
+import typings.jsDataAdapter.TypeofAdapter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -91,8 +91,8 @@ class Adapter () extends js.Object {
 @JSImport("js-data-adapter", "Adapter")
 @js.native
 object Adapter extends js.Object {
-  def extend(): TypeofClassAdapter = js.native
-  def extend(instanceProps: IDict): TypeofClassAdapter = js.native
-  def extend(instanceProps: IDict, classProps: IDict): TypeofClassAdapter = js.native
+  def extend(): TypeofAdapter = js.native
+  def extend(instanceProps: IDict): TypeofAdapter = js.native
+  def extend(instanceProps: IDict, classProps: IDict): TypeofAdapter = js.native
 }
 

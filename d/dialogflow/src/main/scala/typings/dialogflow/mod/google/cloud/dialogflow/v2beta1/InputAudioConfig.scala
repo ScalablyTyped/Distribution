@@ -20,7 +20,7 @@ class InputAudioConfig () extends IInputAudioConfig {
   def this(properties: IInputAudioConfig) = this()
   /** InputAudioConfig audioEncoding. */
   @JSName("audioEncoding")
-  var audioEncoding_InputAudioConfig: AudioEncoding = js.native
+  var audioEncoding_InputAudioConfig: AudioEncoding | String = js.native
   /** InputAudioConfig enableWordInfo. */
   @JSName("enableWordInfo")
   var enableWordInfo_InputAudioConfig: Boolean = js.native
@@ -29,7 +29,7 @@ class InputAudioConfig () extends IInputAudioConfig {
   var languageCode_InputAudioConfig: String = js.native
   /** InputAudioConfig modelVariant. */
   @JSName("modelVariant")
-  var modelVariant_InputAudioConfig: SpeechModelVariant = js.native
+  var modelVariant_InputAudioConfig: SpeechModelVariant | String = js.native
   /** InputAudioConfig model. */
   @JSName("model")
   var model_InputAudioConfig: String = js.native

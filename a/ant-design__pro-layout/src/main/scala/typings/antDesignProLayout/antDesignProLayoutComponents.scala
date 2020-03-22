@@ -1,6 +1,9 @@
 package typings.antDesignProLayout
 
+import typings.antDesignProLayout.themeColorMod.ThemeColorProps
 import typings.react.mod.ComponentType
+import typings.react.mod.RefAttributes
+import typings.std.HTMLDivElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,7 +40,8 @@ object antDesignProLayoutComponents extends antDesignProLayoutProps {
   @scala.inline
   def SiderMenu: ComponentType[SiderMenuProps] = typings.antDesignProLayout.siderMenuMod.default.asInstanceOf[typings.react.mod.ComponentType[SiderMenuProps]]
   @scala.inline
-  def ThemeColor: ComponentType[ThemeColorProps] = typings.antDesignProLayout.themeColorMod.default.asInstanceOf[typings.react.mod.ComponentType[ThemeColorProps]]
+  def ThemeColor: ComponentType[ThemeColorProps with RefAttributes[HTMLDivElement]] = typings.antDesignProLayout.themeColorMod.default.asInstanceOf[typings.react.mod.ComponentType[
+  typings.antDesignProLayout.themeColorMod.ThemeColorProps with typings.react.mod.RefAttributes[typings.std.HTMLDivElement]]]
   @scala.inline
   def TopNavHeader: ComponentType[TopNavHeaderProps] = typings.antDesignProLayout.topNavHeaderMod.default.asInstanceOf[typings.react.mod.ComponentType[TopNavHeaderProps]]
   @scala.inline

@@ -11,7 +11,7 @@ object mod extends js.Object {
   // declare function copyTextToClipboard(text: string): boolean;
   // export = copyTextToClipboard;
   @JSName("default")
-  var default_Original: AnonDefault = js.native
+  var default_Original: AnonCall = js.native
   /**
   	Copy text to the clipboard.
   	Must be called in response to a user gesture event, like `click` or `keyup`.

@@ -1,7 +1,7 @@
 package typings.chromaJs.mod
 
 import typings.chromaJs.AnonAccent
-import typings.chromaJs.AnonScale
+import typings.chromaJs.AnonCall
 import typings.chromaJs.chromaJsStrings.burn
 import typings.chromaJs.chromaJsStrings.cmyk
 import typings.chromaJs.chromaJsStrings.darken
@@ -88,7 +88,7 @@ trait ChromaStatic extends js.Object {
     * colors in Lab space. The input range of the function is [0..1].
     * You can convert it to a scale instance by calling <code>chroma.bezier(...).scale()</code>
     */
-  def bezier(colors: js.Array[String]): AnonScale = js.native
+  def bezier(colors: js.Array[String]): AnonCall = js.native
   /**
     * Blends two colors using RGB channel-wise blend functions.
     */

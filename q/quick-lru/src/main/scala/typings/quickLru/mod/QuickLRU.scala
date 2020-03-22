@@ -7,7 +7,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait QuickLRU[KeyType /* <: js.Any */, ValueType /* <: js.Any */]
+trait QuickLRU[KeyType, ValueType]
   extends Iterable[js.Tuple2[KeyType, ValueType]] {
   @JSName(scala.scalajs.js.Symbol.iterator)
   var iterator_QuickLRU: js.Function0[IterableIterator[js.Tuple2[KeyType, ValueType]]] = js.native

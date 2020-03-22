@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "electron-publish" : "21.2.0"
+      "electron-publish" : "22.3.2"
     }
   ],
   "test-dependencies" : [
     {
-      "electron-publish" : "21.2.0"
+      "electron-publish" : "22.3.2"
     }
   ],
   "compile-devDependencies" : [

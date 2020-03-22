@@ -1,6 +1,6 @@
 package typings.cesium.mod
 
-import typings.cesium.AnonCloseBottomCloseTop
+import typings.cesium.AnonCloseTop
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("cesium", "RectangleGraphics")
 @js.native
 class RectangleGraphics () extends js.Object {
-  def this(options: AnonCloseBottomCloseTop) = this()
+  def this(options: AnonCloseTop) = this()
   var closeBottom: Property = js.native
   var closeTop: Property = js.native
   var coordinates: Property = js.native

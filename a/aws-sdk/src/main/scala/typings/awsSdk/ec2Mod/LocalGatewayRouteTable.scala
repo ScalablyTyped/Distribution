@@ -9,7 +9,7 @@ trait LocalGatewayRouteTable extends js.Object {
   /**
     * The ID of the local gateway.
     */
-  var LocalGatewayId: js.UndefOr[String] = js.native
+  var LocalGatewayId: js.UndefOr[typings.awsSdk.ec2Mod.LocalGatewayId] = js.native
   /**
     * The ID of the local gateway route table.
     */
@@ -31,7 +31,7 @@ trait LocalGatewayRouteTable extends js.Object {
 object LocalGatewayRouteTable {
   @scala.inline
   def apply(
-    LocalGatewayId: String = null,
+    LocalGatewayId: LocalGatewayId = null,
     LocalGatewayRouteTableId: String = null,
     OutpostArn: String = null,
     State: String = null,

@@ -1,6 +1,6 @@
 package typings.seleniumWebdriver.mod
 
-import typings.std.Partial
+import typings.seleniumWebdriver.PartialIRectangle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -55,7 +55,7 @@ class Window protected () extends js.Object {
     * just the size by omitting `x` & `y`, or just the position by omitting
     * `width` & `height` options.
     */
-  def setRect(hasXYWidthHeight: Partial[IRectangle]): js.Promise[IRectangle] = js.native
+  def setRect(hasXYWidthHeight: PartialIRectangle): js.Promise[IRectangle] = js.native
   /**
     * Resizes the current window.
     * @param {number} width The desired window width.

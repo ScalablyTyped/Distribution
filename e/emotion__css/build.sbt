@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "emotion__css"
-version := "10.0.14-985ab3"
+version := "10.0.27-1e88d7"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "csstype" % "2.6.6-ffacbb",
-  "org.scalablytyped" %%% "emotion__serialize" % "0.11.11-fdbdaf",
-  "org.scalablytyped" %%% "emotion__utils" % "0.11.2-70bad0",
-  "org.scalablytyped" %%% "std" % "3.7-1b8369")
+  "org.scalablytyped" %%% "csstype" % "2.6.9-2d2033",
+  "org.scalablytyped" %%% "emotion__serialize" % "0.11.15-c752a7",
+  "org.scalablytyped" %%% "emotion__utils" % "0.11.3-263465",
+  "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

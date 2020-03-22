@@ -2,9 +2,9 @@ package typings.gapiClientLicensing.gapi.client.licensing
 
 import typings.gapiClient.gapi.client.Request_
 import typings.gapiClientLicensing.AnonAlt
-import typings.gapiClientLicensing.AnonAltCustomerId
-import typings.gapiClientLicensing.AnonAltCustomerIdFields
-import typings.gapiClientLicensing.AnonAltFields
+import typings.gapiClientLicensing.AnonCustomerId
+import typings.gapiClientLicensing.AnonFields
+import typings.gapiClientLicensing.AnonKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,11 +15,11 @@ trait LicenseAssignmentsResource extends js.Object {
   /** Get license assignment of a particular product and sku for a user */
   def get(request: AnonAlt): Request_[LicenseAssignment]
   /** Assign License. */
-  def insert(request: AnonAltFields): Request_[LicenseAssignment]
+  def insert(request: AnonFields): Request_[LicenseAssignment]
   /** List license assignments for given product of the customer. */
-  def listForProduct(request: AnonAltCustomerId): Request_[LicenseAssignmentList]
+  def listForProduct(request: AnonCustomerId): Request_[LicenseAssignmentList]
   /** List license assignments for given product and sku of the customer. */
-  def listForProductAndSku(request: AnonAltCustomerIdFields): Request_[LicenseAssignmentList]
+  def listForProductAndSku(request: AnonKey): Request_[LicenseAssignmentList]
   /** Assign License. This method supports patch semantics. */
   def patch(request: AnonAlt): Request_[LicenseAssignment]
   /** Assign License. */
@@ -31,9 +31,9 @@ object LicenseAssignmentsResource {
   def apply(
     delete: AnonAlt => Request_[Unit],
     get: AnonAlt => Request_[LicenseAssignment],
-    insert: AnonAltFields => Request_[LicenseAssignment],
-    listForProduct: AnonAltCustomerId => Request_[LicenseAssignmentList],
-    listForProductAndSku: AnonAltCustomerIdFields => Request_[LicenseAssignmentList],
+    insert: AnonFields => Request_[LicenseAssignment],
+    listForProduct: AnonCustomerId => Request_[LicenseAssignmentList],
+    listForProductAndSku: AnonKey => Request_[LicenseAssignmentList],
     patch: AnonAlt => Request_[LicenseAssignment],
     update: AnonAlt => Request_[LicenseAssignment]
   ): LicenseAssignmentsResource = {

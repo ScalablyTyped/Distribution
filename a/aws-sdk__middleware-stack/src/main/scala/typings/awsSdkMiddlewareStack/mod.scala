@@ -1,5 +1,6 @@
 package typings.awsSdkMiddlewareStack
 
+import typings.awsSdkTypes.middlewareMod.Middleware
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,6 +16,7 @@ object mod extends js.Object {
     var removeByTag: js.Any = js.native
     var sort: js.Any = js.native
     var sorted: js.Any = js.native
+    def add(middleware: Middleware[Input, Output], options: HandlerOptionsstepinitial): Unit = js.native
     def concat[InputType /* <: Input */, OutputType /* <: Output */](from: MiddlewareStack[InputType, OutputType, Stream]): MiddlewareStack[InputType, OutputType, Stream] = js.native
   }
   

@@ -17,7 +17,7 @@ trait AnonBody extends js.Object {
     * as a dictionary containing the keys `name` and either `value` or `binaryValue`, restricted to those allowed
     * by XMLHttpRequest.
     */
-  var headers: js.UndefOr[js.Array[AnonNameValue]] = js.undefined
+  var headers: js.UndefOr[js.Array[AnonValue]] = js.undefined
   /** Whether to associate the download with a private browsing session. */
   var incognito: js.UndefOr[Boolean] = js.undefined
   /** The HTTP method to use if the URL uses the HTTP[S] protocol. */
@@ -39,7 +39,7 @@ object AnonBody {
     body: String = null,
     conflictAction: FilenameConflictAction = null,
     filename: String = null,
-    headers: js.Array[AnonNameValue] = null,
+    headers: js.Array[AnonValue] = null,
     incognito: js.UndefOr[Boolean] = js.undefined,
     method: DownloadMethod = null,
     saveAs: js.UndefOr[Boolean] = js.undefined

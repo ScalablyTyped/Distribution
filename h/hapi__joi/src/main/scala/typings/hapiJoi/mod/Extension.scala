@@ -1,7 +1,7 @@
 package typings.hapiJoi.mod
 
 import typings.hapiJoi.AnonBuild
-import typings.hapiJoi.AnonFromHelpers
+import typings.hapiJoi.AnonTo
 import typings.std.Record
 import typings.std.ThisType
 import scala.scalajs.js
@@ -14,7 +14,7 @@ trait Extension extends js.Object {
   /**
     * undocumented options
     */
-  var cast: js.UndefOr[Record[String, AnonFromHelpers]] = js.undefined
+  var cast: js.UndefOr[Record[String, AnonTo]] = js.undefined
   var coerce: js.UndefOr[CoerceFunction | CoerceObject] = js.undefined
   var flags: js.UndefOr[Record[String, ExtensionFlag]] = js.undefined
   var manifest: js.UndefOr[AnonBuild] = js.undefined
@@ -36,7 +36,7 @@ object Extension {
     `type`: String,
     args: /* repeated */ SchemaLike => Schema = null,
     base: Schema = null,
-    cast: Record[String, AnonFromHelpers] = null,
+    cast: Record[String, AnonTo] = null,
     coerce: CoerceFunction | CoerceObject = null,
     flags: Record[String, ExtensionFlag] = null,
     manifest: AnonBuild = null,

@@ -4,7 +4,7 @@ import typings.react.mod.Component
 import typings.react.mod.ComponentType
 import typings.react.mod.Ref
 import typings.reactNative.mod.ImageRequireSource
-import typings.reactNativePhoneInput.TypeofClassTextInput
+import typings.reactNativePhoneInput.TypeofTextInput
 import typings.std.ThisType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ReactNativePhoneInput[TextComponentType /* <: ComponentType[js.Object] */]
   extends Component[ReactNativePhoneInputProps[TextComponentType], js.Object, js.Any] {
-  var picker: js.UndefOr[Ref[ThisType[ReactNativePhoneInput[TypeofClassTextInput]]]] = js.native
+  var picker: js.UndefOr[Ref[ThisType[ReactNativePhoneInput[TypeofTextInput]]]] = js.native
   /**
     * Blur the phone input
     */

@@ -33,3 +33,10 @@ class ViewCompiler protected () extends js.Object {
   def compile(source: Element, resources: ViewResources_, compileInstruction: ViewCompileInstruction): ViewFactory = js.native
 }
 
+/* static members */
+@JSImport("aurelia-templating", "ViewCompiler")
+@js.native
+object ViewCompiler extends js.Object {
+  def inject(): js.Any = js.native
+}
+

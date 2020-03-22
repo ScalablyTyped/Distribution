@@ -21,7 +21,7 @@ trait LocalGatewayVirtualInterface extends js.Object {
   /**
     * The ID of the virtual interface.
     */
-  var LocalGatewayVirtualInterfaceId: js.UndefOr[String] = js.native
+  var LocalGatewayVirtualInterfaceId: js.UndefOr[typings.awsSdk.ec2Mod.LocalGatewayVirtualInterfaceId] = js.native
   /**
     * The peer address.
     */
@@ -46,7 +46,7 @@ object LocalGatewayVirtualInterface {
     LocalAddress: String = null,
     LocalBgpAsn: Int | scala.Double = null,
     LocalGatewayId: String = null,
-    LocalGatewayVirtualInterfaceId: String = null,
+    LocalGatewayVirtualInterfaceId: LocalGatewayVirtualInterfaceId = null,
     PeerAddress: String = null,
     PeerBgpAsn: Int | scala.Double = null,
     Tags: TagList = null,

@@ -1,7 +1,7 @@
 
 # Scala.js typings for base-x
 
-Typings are for version 3.0.7
+Typings are for version 3.0.8
 
 ## Library description:
 Fast base encoding / decoding of any given alphabet

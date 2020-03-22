@@ -19,12 +19,12 @@ object d3v4adaptorMod extends js.Object {
   @js.native
   trait D3Context extends js.Object {
     @JSName("dispatch")
-    var dispatch_Original: FnTypes = js.native
+    var dispatch_Original: FnCallTypes = js.native
     @JSName("drag")
-    var drag_Original: FnDatum = js.native
+    var drag_Original: Fn0 = js.native
     var event: js.Any = js.native
     @JSName("timer")
-    var timer_Original: FnCallback = js.native
+    var timer_Original: FnCall = js.native
     def dispatch[T /* <: EventTarget */](types: String*): Dispatch_[T] = js.native
     def drag[GElement /* <: DraggedElementBaseType */, Datum](): DragBehavior[GElement, Datum, Datum | SubjectPosition] = js.native
     @JSName("drag")

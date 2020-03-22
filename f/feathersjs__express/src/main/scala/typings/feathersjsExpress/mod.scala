@@ -18,11 +18,8 @@ import typings.expressServeStaticCore.mod.RequestHandler
 import typings.expressServeStaticCore.mod.RequestHandlerParams
 import typings.expressServeStaticCore.mod.Response
 import typings.feathersjsExpress.feathersjsExpressStrings.use
-import typings.feathersjsFeathers.mod.ServiceMethods
-import typings.feathersjsFeathers.mod.SetupMethod
 import typings.serveStatic.mod.ServeStaticOptions
 import typings.std.Exclude
-import typings.std.Partial
 import typings.std.Pick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -42,7 +39,7 @@ object mod extends js.Object {
     ): T = js.native
     def use(
       path: PathParams,
-      handlers: ((RequestHandler[ParamsDictionary, _, _]) | (RequestHandlerParams[ParamsDictionary, _, _]) | (Partial[ServiceMethods[_] with SetupMethod]) | Application[_])*
+      handlers: ((RequestHandler[ParamsDictionary, _, _]) | (RequestHandlerParams[ParamsDictionary, _, _]) | PartialServiceMethodsanyS | Application[_])*
     ): T = js.native
   }
   
@@ -99,7 +96,7 @@ object mod extends js.Object {
   type FeathersApplicationRequestHandler[T] = IRouterHandler[T] with FeathersRouterMatcher[T] with (js.Function1[/* repeated */ RequestHandlerParams[ParamsDictionary, _, _], T])
   type FeathersRouterMatcher[T] = js.Function2[
     /* path */ PathParams, 
-    /* repeated */ (RequestHandler[ParamsDictionary, js.Any, js.Any]) | (RequestHandlerParams[ParamsDictionary, js.Any, js.Any]) | (Partial[ServiceMethods[_] with SetupMethod]) | Application[js.Any], 
+    /* repeated */ (RequestHandler[ParamsDictionary, js.Any, js.Any]) | (RequestHandlerParams[ParamsDictionary, js.Any, js.Any]) | PartialServiceMethodsanyS | Application[js.Any], 
     T
   ]
   type FeathersServiceOptions = js.Any

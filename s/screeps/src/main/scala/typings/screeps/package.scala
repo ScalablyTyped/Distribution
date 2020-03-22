@@ -81,11 +81,6 @@ package object screeps {
   type EventHealType = typings.screeps.EVENT_HEAL_TYPE_MELEE | typings.screeps.EVENT_HEAL_TYPE_RANGED
   // Find Constants
   type ExitConstant = typings.screeps.FIND_EXIT_TOP | typings.screeps.FIND_EXIT_RIGHT | typings.screeps.FIND_EXIT_BOTTOM | typings.screeps.FIND_EXIT_LEFT
-  // type SD<K extends ResourceConstant> = {
-  //   [P in K]: number;
-  //   energy: number;
-  // }
-  type ExitsInformation = typings.std.Partial[typings.std.Record[typings.screeps.ExitKey, java.lang.String]]
   type FIND_CONSTRUCTION_SITES = typings.screeps.screepsNumbers.`111`
   type FIND_CREEPS = typings.screeps.screepsNumbers.`101`
   type FIND_DEPOSITS = typings.screeps.screepsNumbers.`122`
@@ -120,7 +115,6 @@ package object screeps {
   ]
   type FilterObject = org.scalablytyped.runtime.StringDictionary[js.Any]
   type FindConstant = typings.screeps.FIND_EXIT_TOP | typings.screeps.FIND_EXIT_RIGHT | typings.screeps.FIND_EXIT_BOTTOM | typings.screeps.FIND_EXIT_LEFT | typings.screeps.FIND_EXIT | typings.screeps.FIND_CREEPS | typings.screeps.FIND_MY_CREEPS | typings.screeps.FIND_HOSTILE_CREEPS | typings.screeps.FIND_SOURCES_ACTIVE | typings.screeps.FIND_SOURCES | typings.screeps.FIND_DROPPED_RESOURCES | typings.screeps.FIND_STRUCTURES | typings.screeps.FIND_MY_STRUCTURES | typings.screeps.FIND_HOSTILE_STRUCTURES | typings.screeps.FIND_FLAGS | typings.screeps.FIND_CONSTRUCTION_SITES | typings.screeps.FIND_MY_SPAWNS | typings.screeps.FIND_HOSTILE_SPAWNS | typings.screeps.FIND_MY_CONSTRUCTION_SITES | typings.screeps.FIND_HOSTILE_CONSTRUCTION_SITES | typings.screeps.FIND_MINERALS | typings.screeps.FIND_NUKES | typings.screeps.FIND_TOMBSTONES | typings.screeps.FIND_POWER_CREEPS | typings.screeps.FIND_MY_POWER_CREEPS | typings.screeps.FIND_HOSTILE_POWER_CREEPS | typings.screeps.FIND_DEPOSITS | typings.screeps.FIND_RUINS
-  type GenericStore = typings.screeps.GenericStoreBase with typings.screeps.screepsStrings.GenericStore with js.Any
   type HEAL = typings.screeps.screepsStrings.heal
   type Id[T] = java.lang.String with typings.screeps.Tag.OpaqueTag[T]
   type LEFT = typings.screeps.screepsNumbers.`7`
@@ -142,15 +136,14 @@ package object screeps {
   type LookAtResultMatrix[K /* <: typings.screeps.LookConstant */] = org.scalablytyped.runtime.NumberDictionary[
     org.scalablytyped.runtime.NumberDictionary[js.Array[typings.screeps.LookAtResult[K]]]
   ]
-  type LookAtResultWithPos[K /* <: typings.screeps.LookConstant */] = typings.screeps.LookAtResult[K] with typings.screeps.AnonXY
-  type LookAtTypes = typings.std.Partial[typings.screeps.AllLookAtTypes]
+  type LookAtResultWithPos[K /* <: typings.screeps.LookConstant */] = typings.screeps.LookAtResult[K] with typings.screeps.AnonY
   // Look Constants
   type LookConstant = typings.screeps.LOOK_CREEPS | typings.screeps.LOOK_ENERGY | typings.screeps.LOOK_RESOURCES | typings.screeps.LOOK_SOURCES | typings.screeps.LOOK_MINERALS | typings.screeps.LOOK_DEPOSITS | typings.screeps.LOOK_STRUCTURES | typings.screeps.LOOK_FLAGS | typings.screeps.LOOK_CONSTRUCTION_SITES | typings.screeps.LOOK_NUKES | typings.screeps.LOOK_TERRAIN | typings.screeps.LOOK_TOMBSTONES | typings.screeps.LOOK_POWER_CREEPS | typings.screeps.LOOK_RUINS
-  type LookForAtAreaResultArray[T, K /* <: java.lang.String */] = js.Array[typings.screeps.LookForAtAreaResultWithPos[T, K]]
-  type LookForAtAreaResultMatrix[T, K /* <: java.lang.String */] = org.scalablytyped.runtime.NumberDictionary[
+  type LookForAtAreaResultArray[T, K /* <: typings.screeps.screepsStrings.exit | typings.screeps.screepsStrings.structure | typings.screeps.screepsStrings.source | typings.screeps.screepsStrings.nuke | typings.screeps.screepsStrings.deposit | typings.screeps.screepsStrings.powerCreep | typings.screeps.screepsStrings.terrain | typings.screeps.screepsStrings.tombstone | typings.screeps.screepsStrings.resource | typings.screeps.screepsStrings.flag | typings.screeps.screepsStrings.mineral | typings.screeps.screepsStrings.ruin | typings.screeps.screepsStrings.constructionSite | typings.screeps.screepsStrings.creep | typings.screeps.screepsStrings.energy */] = js.Array[typings.screeps.LookForAtAreaResultWithPos[T, K]]
+  type LookForAtAreaResultMatrix[T, K /* <: typings.screeps.screepsStrings.exit | typings.screeps.screepsStrings.structure | typings.screeps.screepsStrings.source | typings.screeps.screepsStrings.nuke | typings.screeps.screepsStrings.deposit | typings.screeps.screepsStrings.powerCreep | typings.screeps.screepsStrings.terrain | typings.screeps.screepsStrings.tombstone | typings.screeps.screepsStrings.resource | typings.screeps.screepsStrings.flag | typings.screeps.screepsStrings.mineral | typings.screeps.screepsStrings.ruin | typings.screeps.screepsStrings.constructionSite | typings.screeps.screepsStrings.creep | typings.screeps.screepsStrings.energy */] = org.scalablytyped.runtime.NumberDictionary[
     org.scalablytyped.runtime.NumberDictionary[js.Array[typings.screeps.LookForAtAreaResult[T, K]]]
   ]
-  type LookForAtAreaResultWithPos[T, K /* <: java.lang.String */] = (typings.screeps.LookForAtAreaResult[T, K]) with typings.screeps.AnonXY
+  type LookForAtAreaResultWithPos[T, K /* <: typings.screeps.screepsStrings.exit | typings.screeps.screepsStrings.structure | typings.screeps.screepsStrings.source | typings.screeps.screepsStrings.nuke | typings.screeps.screepsStrings.deposit | typings.screeps.screepsStrings.powerCreep | typings.screeps.screepsStrings.terrain | typings.screeps.screepsStrings.tombstone | typings.screeps.screepsStrings.resource | typings.screeps.screepsStrings.flag | typings.screeps.screepsStrings.mineral | typings.screeps.screepsStrings.ruin | typings.screeps.screepsStrings.constructionSite | typings.screeps.screepsStrings.creep | typings.screeps.screepsStrings.energy */] = (typings.screeps.LookForAtAreaResult[T, K]) with typings.screeps.AnonY
   type MOVE = typings.screeps.screepsStrings.move
   type MarketResourceConstant = typings.screeps.ResourceConstant | typings.screeps.SUBSCRIPTION_TOKEN
   /** The compounds which can't boost */
@@ -188,7 +181,7 @@ package object screeps {
   /**
     * Available powers, an object with power ID as a key, and the following properties
     */
-  type PowerCreepPowers = org.scalablytyped.runtime.NumberDictionary[typings.screeps.AnonCooldown]
+  type PowerCreepPowers = org.scalablytyped.runtime.NumberDictionary[typings.screeps.AnonCooldownLevel]
   type RANGED_ATTACK = typings.screeps.screepsStrings.ranged_attack
   type RESOURCE_ALLOY = typings.screeps.screepsStrings.alloy
   type RESOURCE_BATTERY = typings.screeps.screepsStrings.battery
@@ -277,7 +270,6 @@ package object screeps {
   type RIGHT = typings.screeps.screepsNumbers.`3`
   // Resource Constants
   type ResourceConstant = typings.screeps.RESOURCE_ENERGY | typings.screeps.RESOURCE_POWER | typings.screeps.RESOURCE_OPS | typings.screeps.MineralConstant | typings.screeps.MineralCompoundConstant | typings.screeps.DepositConstant | typings.screeps.CommodityConstant
-  type ResourceConstantSansEnergy = typings.std.Exclude[typings.screeps.ResourceConstant, typings.screeps.RESOURCE_ENERGY]
   type STRUCTURE_CONTAINER = typings.screeps.screepsStrings.container
   type STRUCTURE_CONTROLLER = typings.screeps.screepsStrings.controller
   type STRUCTURE_EXTENSION = typings.screeps.screepsStrings.extension
@@ -303,10 +295,6 @@ package object screeps {
   // Return Codes
   type ScreepsReturnCode = typings.screeps.OK | typings.screeps.ERR_NOT_OWNER | typings.screeps.ERR_NO_PATH | typings.screeps.ERR_BUSY | typings.screeps.ERR_NAME_EXISTS | typings.screeps.ERR_NOT_FOUND | typings.screeps.ERR_NOT_ENOUGH_RESOURCES | typings.screeps.ERR_NOT_ENOUGH_ENERGY | typings.screeps.ERR_INVALID_TARGET | typings.screeps.ERR_FULL | typings.screeps.ERR_NOT_IN_RANGE | typings.screeps.ERR_INVALID_ARGS | typings.screeps.ERR_TIRED | typings.screeps.ERR_NO_BODYPART | typings.screeps.ERR_NOT_ENOUGH_EXTENSIONS | typings.screeps.ERR_RCL_NOT_ENOUGH | typings.screeps.ERR_GCL_NOT_ENOUGH
   type Store[POSSIBLE_RESOURCES /* <: typings.screeps.ResourceConstant */, UNLIMITED_STORE /* <: scala.Boolean */] = (typings.screeps.StoreBase[POSSIBLE_RESOURCES, UNLIMITED_STORE]) with typings.screeps.screepsStrings.Store with js.Any
-  /** A general purpose Store, which has a limited capacity */
-  type StoreDefinition = typings.screeps.Store[typings.screeps.ResourceConstant, typings.screeps.screepsBooleans.`false`]
-  /** A general purpose Store, which has an unlimited capacity */
-  type StoreDefinitionUnlimited = typings.screeps.Store[typings.screeps.ResourceConstant, typings.screeps.screepsBooleans.`true`]
   type StructureConstant = typings.screeps.BuildableStructureConstant | typings.screeps.STRUCTURE_KEEPER_LAIR | typings.screeps.STRUCTURE_CONTROLLER | typings.screeps.STRUCTURE_POWER_BANK | typings.screeps.STRUCTURE_PORTAL | typings.screeps.STRUCTURE_INVADER_CORE
   type TERRAIN_MASK_LAVA = typings.screeps.screepsNumbers.`4`
   type TERRAIN_MASK_SWAMP = typings.screeps.screepsNumbers.`2`

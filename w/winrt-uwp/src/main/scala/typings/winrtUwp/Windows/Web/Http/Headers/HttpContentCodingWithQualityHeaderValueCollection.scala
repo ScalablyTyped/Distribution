@@ -2,7 +2,7 @@ package typings.winrtUwp.Windows.Web.Http.Headers
 
 import typings.std.Array
 import typings.winrtUwp.AnonIndex
-import typings.winrtUwp.AnonItemsReturnValueHttpContentCodingWithQualityHeaderValue
+import typings.winrtUwp.AnonItemsHttpContentCodingWithQualityHeaderValue
 import typings.winrtUwp.Windows.Foundation.Collections.IIterator
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import scala.scalajs.js
@@ -37,7 +37,7 @@ abstract class HttpContentCodingWithQualityHeaderValueCollection () extends Arra
     * Retrieves the HttpContentCodingWithQualityHeaderValue items that start at the specified index in the collection.
     * @param startIndex The zero-based index of the start of the HttpContentCodingWithQualityHeaderValue items in the HttpContentCodingWithQualityHeaderValueCollection .
     */
-  def getMany(startIndex: Double): AnonItemsReturnValueHttpContentCodingWithQualityHeaderValue = js.native
+  def getMany(startIndex: Double): AnonItemsHttpContentCodingWithQualityHeaderValue = js.native
   /**
     * Returns an immutable view of the HttpContentCodingWithQualityHeaderValueCollection .
     * @return The view of the HttpContentCodingWithQualityHeaderValueCollection .

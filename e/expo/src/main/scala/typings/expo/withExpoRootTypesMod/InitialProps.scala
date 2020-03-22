@@ -1,14 +1,14 @@
 package typings.expo.withExpoRootTypesMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.expo.AnonErrorRecovery
+import typings.expo.AnonDictkey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait InitialProps
   extends /* key */ StringDictionary[js.Any] {
-  var exp: AnonErrorRecovery
+  var exp: AnonDictkey
   var shell: js.UndefOr[Boolean] = js.undefined
   var shellManifestUrl: js.UndefOr[String] = js.undefined
 }
@@ -16,7 +16,7 @@ trait InitialProps
 object InitialProps {
   @scala.inline
   def apply(
-    exp: AnonErrorRecovery,
+    exp: AnonDictkey,
     StringDictionary: /* key */ StringDictionary[js.Any] = null,
     shell: js.UndefOr[Boolean] = js.undefined,
     shellManifestUrl: String = null

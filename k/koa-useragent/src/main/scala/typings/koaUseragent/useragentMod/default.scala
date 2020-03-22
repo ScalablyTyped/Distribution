@@ -1,5 +1,6 @@
 package typings.koaUseragent.useragentMod
 
+import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,108 +10,246 @@ import scala.scalajs.js.annotation._
 class default () extends UserAgent {
   def this(source: String) = this()
   /* CompleteClass */
-  override val SilkAccelerated: Boolean = js.native
-  /* CompleteClass */
   override val _agent: js.Any = js.native
   /* CompleteClass */
-  override val browser: String = js.native
+  override var browser: String = js.native
   /* CompleteClass */
-  override val geoIp: String = js.native
+  override var geoIp: StringDictionary[js.Any] = js.native
   /* CompleteClass */
-  override val isAlamoFire: Boolean = js.native
+  override var isAmaya: Boolean = js.native
   /* CompleteClass */
-  override val isAmaya: Boolean = js.native
+  override var isAndroid: Boolean = js.native
   /* CompleteClass */
-  override val isAndroid: Boolean = js.native
+  override var isAndroidTablet: Boolean = js.native
   /* CompleteClass */
-  override val isAndroidTablet: Boolean = js.native
+  override var isBada: Boolean = js.native
   /* CompleteClass */
-  override val isAuthoritative: Boolean = js.native
+  override var isBlackberry: Boolean = js.native
   /* CompleteClass */
-  override val isBada: Boolean = js.native
+  override var isBot: Boolean = js.native
   /* CompleteClass */
-  override val isBlackberry: Boolean = js.native
+  override var isCaptive: Boolean = js.native
   /* CompleteClass */
-  override val isBot: Boolean = js.native
+  override var isChrome: Boolean = js.native
   /* CompleteClass */
-  override val isCaptive: Boolean = js.native
+  override var isChromeOS: Boolean = js.native
   /* CompleteClass */
-  override val isChrome: Boolean = js.native
+  override var isCurl: Boolean = js.native
   /* CompleteClass */
-  override val isChromeOS: Boolean = js.native
+  override var isDesktop: Boolean = js.native
   /* CompleteClass */
-  override val isCurl: Boolean = js.native
+  override var isEdge: Boolean = js.native
   /* CompleteClass */
-  override val isDesktop: Boolean = js.native
+  override var isEpiphany: Boolean = js.native
   /* CompleteClass */
-  override val isEdge: Boolean = js.native
+  override var isFirefox: Boolean = js.native
   /* CompleteClass */
-  override val isEpiphany: Boolean = js.native
+  override var isFlock: Boolean = js.native
   /* CompleteClass */
-  override val isFacebook: Boolean = js.native
+  override var isIE: Boolean = js.native
   /* CompleteClass */
-  override val isFirefox: Boolean = js.native
+  override var isIECompatibilityMode: Boolean = js.native
   /* CompleteClass */
-  override val isFlock: Boolean = js.native
+  override var isKindleFire: Boolean = js.native
   /* CompleteClass */
-  override val isIE: Boolean = js.native
+  override var isKonqueror: Boolean = js.native
   /* CompleteClass */
-  override val isIECompatibilityMode: Boolean = js.native
+  override var isLinux: Boolean = js.native
   /* CompleteClass */
-  override val isKindleFire: Boolean = js.native
+  override var isLinux64: Boolean = js.native
   /* CompleteClass */
-  override val isKonqueror: Boolean = js.native
+  override var isMac: Boolean = js.native
   /* CompleteClass */
-  override val isLinux: Boolean = js.native
+  override var isMobile: Boolean = js.native
   /* CompleteClass */
-  override val isLinux64: Boolean = js.native
+  override var isOmniWeb: Boolean = js.native
   /* CompleteClass */
-  override val isMac: Boolean = js.native
+  override var isOpera: Boolean = js.native
   /* CompleteClass */
-  override val isMobile: Boolean = js.native
+  override var isRaspberry: Boolean = js.native
   /* CompleteClass */
-  override val isOmniWeb: Boolean = js.native
+  override var isSafari: Boolean = js.native
   /* CompleteClass */
-  override val isOpera: Boolean = js.native
+  override var isSamsung: Boolean = js.native
   /* CompleteClass */
-  override val isPhantomJS: Boolean = js.native
+  override var isSeaMonkey: Boolean = js.native
   /* CompleteClass */
-  override val isRaspberry: Boolean = js.native
+  override var isSilk: Boolean = js.native
   /* CompleteClass */
-  override val isSafari: Boolean = js.native
+  override var isSmartTV: Boolean = js.native
   /* CompleteClass */
-  override val isSamsung: Boolean = js.native
+  override var isTablet: Boolean = js.native
   /* CompleteClass */
-  override val isSeaMonkey: Boolean = js.native
+  override var isWebkit: Boolean = js.native
   /* CompleteClass */
-  override val isSilk: Boolean = js.native
+  override var isWinJs: Boolean = js.native
   /* CompleteClass */
-  override val isSmartTV: Boolean = js.native
+  override var isWindows: Boolean = js.native
   /* CompleteClass */
-  override val isTablet: Boolean = js.native
+  override var isWindowsPhone: Boolean = js.native
   /* CompleteClass */
-  override val isWebkit: Boolean = js.native
+  override var isiPad: Boolean = js.native
   /* CompleteClass */
-  override val isWinJs: Boolean = js.native
+  override var isiPhone: Boolean = js.native
   /* CompleteClass */
-  override val isWindows: Boolean = js.native
+  override var isiPod: Boolean = js.native
   /* CompleteClass */
-  override val isWindowsPhone: Boolean = js.native
+  override var os: String = js.native
   /* CompleteClass */
-  override val isiPad: Boolean = js.native
+  override var platform: String = js.native
   /* CompleteClass */
-  override val isiPhone: Boolean = js.native
+  override var silkAccelerated: Boolean = js.native
   /* CompleteClass */
-  override val isiPod: Boolean = js.native
+  override var source: String = js.native
   /* CompleteClass */
-  override val os: String = js.native
+  override var version: String = js.native
   /* CompleteClass */
-  override val platform: String = js.native
+  override def SilkAccelerated(): Boolean = js.native
   /* CompleteClass */
-  override val silkAccelerated: Boolean = js.native
+  @JSName("browser")
+  override def browser_MUserAgent(): String = js.native
   /* CompleteClass */
-  override val source: String = js.native
+  @JSName("geoIp")
+  override def geoIp_MUserAgent(): StringDictionary[js.Any] = js.native
   /* CompleteClass */
-  override val version: String = js.native
+  override def isAlamoFire(): Boolean = js.native
+  /* CompleteClass */
+  @JSName("isAmaya")
+  override def isAmaya_MUserAgent(): Boolean = js.native
+  /* CompleteClass */
+  @JSName("isAndroidTablet")
+  override def isAndroidTablet_MUserAgent(): Boolean = js.native
+  /* CompleteClass */
+  @JSName("isAndroid")
+  override def isAndroid_MUserAgent(): Boolean = js.native
+  /* CompleteClass */
+  override def isAuthoritative(): Boolean = js.native
+  /* CompleteClass */
+  @JSName("isBada")
+  override def isBada_MUserAgent(): Boolean = js.native
+  /* CompleteClass */
+  @JSName("isBlackberry")
+  override def isBlackberry_MUserAgent(): Boolean = js.native
+  /* CompleteClass */
+  @JSName("isBot")
+  override def isBot_MUserAgent(): Boolean = js.native
+  /* CompleteClass */
+  @JSName("isCaptive")
+  override def isCaptive_MUserAgent(): Boolean = js.native
+  /* CompleteClass */
+  @JSName("isChromeOS")
+  override def isChromeOS_MUserAgent(): Boolean = js.native
+  /* CompleteClass */
+  @JSName("isChrome")
+  override def isChrome_MUserAgent(): Boolean = js.native
+  /* CompleteClass */
+  @JSName("isCurl")
+  override def isCurl_MUserAgent(): Boolean = js.native
+  /* CompleteClass */
+  @JSName("isDesktop")
+  override def isDesktop_MUserAgent(): Boolean = js.native
+  /* CompleteClass */
+  @JSName("isEdge")
+  override def isEdge_MUserAgent(): Boolean = js.native
+  /* CompleteClass */
+  @JSName("isEpiphany")
+  override def isEpiphany_MUserAgent(): Boolean = js.native
+  /* CompleteClass */
+  override def isFacebook(): Boolean = js.native
+  /* CompleteClass */
+  @JSName("isFirefox")
+  override def isFirefox_MUserAgent(): Boolean = js.native
+  /* CompleteClass */
+  @JSName("isFlock")
+  override def isFlock_MUserAgent(): Boolean = js.native
+  /* CompleteClass */
+  @JSName("isIECompatibilityMode")
+  override def isIECompatibilityMode_MUserAgent(): Boolean = js.native
+  /* CompleteClass */
+  @JSName("isIE")
+  override def isIE_MUserAgent(): Boolean = js.native
+  /* CompleteClass */
+  @JSName("isKindleFire")
+  override def isKindleFire_MUserAgent(): Boolean = js.native
+  /* CompleteClass */
+  @JSName("isKonqueror")
+  override def isKonqueror_MUserAgent(): Boolean = js.native
+  /* CompleteClass */
+  @JSName("isLinux64")
+  override def isLinux64_MUserAgent(): Boolean = js.native
+  /* CompleteClass */
+  @JSName("isLinux")
+  override def isLinux_MUserAgent(): Boolean = js.native
+  /* CompleteClass */
+  @JSName("isMac")
+  override def isMac_MUserAgent(): Boolean = js.native
+  /* CompleteClass */
+  @JSName("isMobile")
+  override def isMobile_MUserAgent(): Boolean = js.native
+  /* CompleteClass */
+  @JSName("isOmniWeb")
+  override def isOmniWeb_MUserAgent(): Boolean = js.native
+  /* CompleteClass */
+  @JSName("isOpera")
+  override def isOpera_MUserAgent(): Boolean = js.native
+  /* CompleteClass */
+  override def isPhantomJS(): Boolean = js.native
+  /* CompleteClass */
+  @JSName("isRaspberry")
+  override def isRaspberry_MUserAgent(): Boolean = js.native
+  /* CompleteClass */
+  @JSName("isSafari")
+  override def isSafari_MUserAgent(): Boolean = js.native
+  /* CompleteClass */
+  @JSName("isSamsung")
+  override def isSamsung_MUserAgent(): Boolean = js.native
+  /* CompleteClass */
+  @JSName("isSeaMonkey")
+  override def isSeaMonkey_MUserAgent(): Boolean = js.native
+  /* CompleteClass */
+  @JSName("isSilk")
+  override def isSilk_MUserAgent(): Boolean = js.native
+  /* CompleteClass */
+  @JSName("isSmartTV")
+  override def isSmartTV_MUserAgent(): Boolean = js.native
+  /* CompleteClass */
+  @JSName("isTablet")
+  override def isTablet_MUserAgent(): Boolean = js.native
+  /* CompleteClass */
+  @JSName("isWebkit")
+  override def isWebkit_MUserAgent(): Boolean = js.native
+  /* CompleteClass */
+  @JSName("isWinJs")
+  override def isWinJs_MUserAgent(): Boolean = js.native
+  /* CompleteClass */
+  @JSName("isWindowsPhone")
+  override def isWindowsPhone_MUserAgent(): Boolean = js.native
+  /* CompleteClass */
+  @JSName("isWindows")
+  override def isWindows_MUserAgent(): Boolean = js.native
+  /* CompleteClass */
+  @JSName("isiPad")
+  override def isiPad_MUserAgent(): Boolean = js.native
+  /* CompleteClass */
+  @JSName("isiPhone")
+  override def isiPhone_MUserAgent(): Boolean = js.native
+  /* CompleteClass */
+  @JSName("isiPod")
+  override def isiPod_MUserAgent(): Boolean = js.native
+  /* CompleteClass */
+  @JSName("os")
+  override def os_MUserAgent(): String = js.native
+  /* CompleteClass */
+  @JSName("platform")
+  override def platform_MUserAgent(): String = js.native
+  /* CompleteClass */
+  @JSName("silkAccelerated")
+  override def silkAccelerated_MUserAgent(): Boolean = js.native
+  /* CompleteClass */
+  @JSName("source")
+  override def source_MUserAgent(): String = js.native
+  /* CompleteClass */
+  @JSName("version")
+  override def version_MUserAgent(): String = js.native
 }
 

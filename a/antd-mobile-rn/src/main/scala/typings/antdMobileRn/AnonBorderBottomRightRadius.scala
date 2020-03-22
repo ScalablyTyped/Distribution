@@ -5,14 +5,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonBorderBottomRightRadius extends js.Object {
+  var borderBottomLeftRadius: Double
   var borderBottomRightRadius: Double
-  var borderTopRightRadius: Double
 }
 
 object AnonBorderBottomRightRadius {
   @scala.inline
-  def apply(borderBottomRightRadius: Double, borderTopRightRadius: Double): AnonBorderBottomRightRadius = {
-    val __obj = js.Dynamic.literal(borderBottomRightRadius = borderBottomRightRadius.asInstanceOf[js.Any], borderTopRightRadius = borderTopRightRadius.asInstanceOf[js.Any])
+  def apply(borderBottomLeftRadius: Double, borderBottomRightRadius: Double): AnonBorderBottomRightRadius = {
+    val __obj = js.Dynamic.literal(borderBottomLeftRadius = borderBottomLeftRadius.asInstanceOf[js.Any], borderBottomRightRadius = borderBottomRightRadius.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AnonBorderBottomRightRadius]
   }

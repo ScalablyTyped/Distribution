@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** More flags associated with an LView (saved in LView[FLAGS_MORE]) */
+/** More flags associated with an LView (saved in LView[PREORDER_HOOK_FLAGS]) */
 /* Rewritten from type alias, can be one of: 
   - typings.angularCore.angularCoreNumbers.`65535`
   - typings.angularCore.angularCoreNumbers.`65536`

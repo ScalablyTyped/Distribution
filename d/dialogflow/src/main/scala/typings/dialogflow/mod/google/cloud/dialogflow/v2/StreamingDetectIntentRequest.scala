@@ -20,7 +20,7 @@ class StreamingDetectIntentRequest () extends IStreamingDetectIntentRequest {
   def this(properties: IStreamingDetectIntentRequest) = this()
   /** StreamingDetectIntentRequest inputAudio. */
   @JSName("inputAudio")
-  var inputAudio_StreamingDetectIntentRequest: Uint8Array = js.native
+  var inputAudio_StreamingDetectIntentRequest: Uint8Array | String = js.native
   /** StreamingDetectIntentRequest session. */
   @JSName("session")
   var session_StreamingDetectIntentRequest: String = js.native

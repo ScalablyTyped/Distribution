@@ -8,9 +8,10 @@ import scala.scalajs.js.annotation._
 @JSImport("knex", "QueryBuilder")
 @js.native
 class QueryBuilder[TRecord /* <: js.Object */, TResult] ()
-  extends ChainableInterface[ResolveResult[TResult]]
-     with QueryInterface[TRecord, TResult] {
+  extends QueryInterface[TRecord, TResult]
+     with ChainableInterface[ResolveResult[TResult]] {
   var and: QueryBuilder[TRecord, TResult] = js.native
+  var client: Client = js.native
   var not: QueryBuilder[TRecord, TResult] = js.native
   var or: QueryBuilder[TRecord, TResult] = js.native
   // TODO: Promise?
@@ -22,6 +23,7 @@ class QueryBuilder[TRecord /* <: js.Object */, TResult] ()
   def forUpdate(tableNames: js.Array[String]): QueryBuilder[TRecord, TResult] = js.native
   def noWait(): QueryBuilder[TRecord, TResult] = js.native
   def on(event: String, callback: js.Function): QueryBuilder[TRecord, TResult] = js.native
+  def queryContext(): js.Any = js.native
   def queryContext(context: js.Any): QueryBuilder[TRecord, TResult] = js.native
   def skipLocked(): QueryBuilder[TRecord, TResult] = js.native
   def timeout(ms: Double): QueryBuilder[TRecord, TResult] = js.native
@@ -35,7 +37,11 @@ class QueryBuilder[TRecord /* <: js.Object */, TResult] ()
 object QueryBuilder extends js.Object {
   def extend(
     methodName: String,
-    fn: js.ThisFunction1[/* this */ Knex[_, js.Array[_]], /* repeated */ js.Any, QueryBuilder[_, js.Array[_]]]
+    fn: js.ThisFunction1[
+      /* this */ QueryBuilder[_, js.Array[_]], 
+      /* repeated */ js.Any, 
+      QueryBuilder[_, js.Array[_]]
+    ]
   ): Unit = js.native
 }
 

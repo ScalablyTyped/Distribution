@@ -10,7 +10,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonDatatype extends js.Object {
-  var datatype: AnonTermTypeValueNamedNode
+  var datatype: AnonTermTypeValue
   var language: PropType[Literal, typings.rdfExt.rdfExtStrings.language]
   var termType: PropType[Literal, typings.rdfExt.rdfExtStrings.termType]
   var value: PropType[Literal, typings.rdfExt.rdfExtStrings.value]
@@ -19,7 +19,7 @@ trait AnonDatatype extends js.Object {
 object AnonDatatype {
   @scala.inline
   def apply(
-    datatype: AnonTermTypeValueNamedNode,
+    datatype: AnonTermTypeValue,
     language: PropType[Literal, language],
     termType: PropType[Literal, termType],
     value: PropType[Literal, value]

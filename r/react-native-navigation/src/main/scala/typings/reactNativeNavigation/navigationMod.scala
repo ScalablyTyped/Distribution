@@ -15,8 +15,7 @@ import scala.scalajs.js.annotation._
 object navigationMod extends js.Object {
   @js.native
   class NavigationRoot () extends js.Object {
-    val Element: TypeofClassSharedElement = js.native
-    val TouchablePreview: TypeofClassTouchablePreview = js.native
+    val TouchablePreview: TypeofTouchablePreview = js.native
     val commands: js.Any = js.native
     val commandsObserver: js.Any = js.native
     val componentEventsObserver: js.Any = js.native

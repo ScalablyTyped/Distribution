@@ -1,7 +1,7 @@
 package typings.reactDevUtils
 
 import typings.reactDevUtils.reactDevUtilsBooleans.`false`
-import typings.webpack.AnonIdNumber
+import typings.webpack.Anon0
 import typings.webpack.mod.compilation.Chunk
 import typings.webpack.mod.compilation.Module
 import typings.webpack.mod.compilation.ModuleTemplate
@@ -15,7 +15,7 @@ trait TypeofTemplate extends js.Object {
   def asString(str: String): String = js.native
   def asString(str: js.Array[String]): String = js.native
   def getFunctionContent(fn: js.Function1[/* repeated */ js.Any, _]): String = js.native
-  def getModulesArrayBounds(modules: js.Array[AnonIdNumber]): (js.Tuple2[Double, Double]) | `false` = js.native
+  def getModulesArrayBounds(modules: js.Array[Anon0]): (js.Tuple2[Double, Double]) | `false` = js.native
   def indent(s: String): String = js.native
   def indent(s: js.Array[String]): String = js.native
   def numberToIdentifer(n: Double): String = js.native

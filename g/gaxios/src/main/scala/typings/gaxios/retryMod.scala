@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("gaxios/build/src/retry", JSImport.Namespace)
 @js.native
 object retryMod extends js.Object {
-  def getRetryConfig(err: GaxiosError[_]): js.Promise[AnonConfig | AnonConfigShouldRetry] = js.native
+  def getRetryConfig(err: GaxiosError[_]): js.Promise[AnonConfig | AnonShouldRetry] = js.native
 }
 

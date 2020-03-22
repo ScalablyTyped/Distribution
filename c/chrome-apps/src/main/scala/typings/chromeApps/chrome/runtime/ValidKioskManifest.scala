@@ -1,12 +1,10 @@
 package typings.chromeApps.chrome.runtime
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.chromeApps.Anon
 import typings.chromeApps.Anon3D
 import typings.chromeApps.AnonAccepttlschannelid
 import typings.chromeApps.AnonActions
 import typings.chromeApps.AnonAlwaysupdate
-import typings.chromeApps.AnonArm
 import typings.chromeApps.AnonBackground
 import typings.chromeApps.AnonClientid
 import typings.chromeApps.AnonConfigurable
@@ -14,6 +12,7 @@ import typings.chromeApps.AnonContentsecuritypolicy
 import typings.chromeApps.AnonDefaulticon
 import typings.chromeApps.AnonDescription
 import typings.chromeApps.AnonEmail
+import typings.chromeApps.AnonExtensions
 import typings.chromeApps.AnonFilters
 import typings.chromeApps.AnonId
 import typings.chromeApps.AnonLowenergy
@@ -21,6 +20,7 @@ import typings.chromeApps.AnonManagedschema
 import typings.chromeApps.AnonMatches
 import typings.chromeApps.AnonMimetype
 import typings.chromeApps.AnonNEWNOTE
+import typings.chromeApps.AnonNaclarch
 import typings.chromeApps.AnonPartitions
 import typings.chromeApps.AnonTcp
 import typings.chromeApps.chrome.ToStringLiteral
@@ -77,7 +77,7 @@ object ValidKioskManifest {
     display_in_new_tab_page: js.UndefOr[Boolean] = js.undefined,
     event_rules: js.Array[AnonActions] = null,
     file_browser_handlers: js.Array[AnonDefaulticon] = null,
-    file_handlers: StringDictionary[Anon] = null,
+    file_handlers: StringDictionary[AnonExtensions] = null,
     file_system_provider_capabilities: AnonConfigurable = null,
     icons: ManifestIcons = null,
     `import`: js.Array[AnonId] = null,
@@ -91,7 +91,7 @@ object ValidKioskManifest {
     offline_enabled: js.UndefOr[Boolean] = js.undefined,
     optional_permissions: js.Array[js.Array[UrlMatches] | OptionalPermission | String] = null,
     permissions: js.Array[Permission | String] = null,
-    platforms: js.Array[AnonArm] = null,
+    platforms: js.Array[AnonNaclarch] = null,
     requirements: Anon3D = null,
     sandbox: AnonContentsecuritypolicy = null,
     short_name: String = null,

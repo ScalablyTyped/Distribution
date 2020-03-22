@@ -5,15 +5,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonDuration extends js.Object {
-  var duration: Double
-  var line: js.UndefOr[Double] = js.undefined
+  var dots: Double
+  var duration: String
+  var ticks: Double
+  var `type`: String
 }
 
 object AnonDuration {
   @scala.inline
-  def apply(duration: Double, line: Int | Double = null): AnonDuration = {
-    val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any])
-    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
+  def apply(dots: Double, duration: String, ticks: Double, `type`: String): AnonDuration = {
+    val __obj = js.Dynamic.literal(dots = dots.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], ticks = ticks.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnonDuration]
   }
 }

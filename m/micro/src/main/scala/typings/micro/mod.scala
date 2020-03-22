@@ -14,8 +14,8 @@ import scala.scalajs.js.annotation._
 object mod extends js.Object {
   def buffer(req: IncomingMessage): js.Promise[Buffer | String] = js.native
   def buffer(req: IncomingMessage, info: AnonEncoding): js.Promise[Buffer | String] = js.native
-  def createError(code: Double, msg: String): Error with AnonOriginalError = js.native
-  def createError(code: Double, msg: String, orig: Error): Error with AnonOriginalError = js.native
+  def createError(code: Double, msg: String): ErrorstatusCodenumberorig = js.native
+  def createError(code: Double, msg: String, orig: Error): ErrorstatusCodenumberorig = js.native
   def default(fn: RequestHandler): Server = js.native
   def json(req: IncomingMessage): js.Promise[js.Object] = js.native
   def json(req: IncomingMessage, info: AnonEncoding): js.Promise[js.Object] = js.native

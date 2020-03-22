@@ -554,7 +554,7 @@ object mod extends js.Object {
     /**
       * Returns the current unknown value, which defaults to "implicit".
       */
-    def unknown(): Range | AnonImplicit = js.native
+    def unknown(): Range | AnonName = js.native
     /**
       * Sets the output value of the scale for unknown input values and returns this scale.
       * The implicit value enables implicit domain construction. scaleImplicit can be used as a convenience to set the implicit value.
@@ -562,7 +562,7 @@ object mod extends js.Object {
       * @param value Unknown value to be used or scaleImplicit to set implicit scale generation.
       */
     def unknown(value: Range): this.type = js.native
-    def unknown(value: AnonImplicit): this.type = js.native
+    def unknown(value: AnonName): this.type = js.native
   }
   
   @js.native

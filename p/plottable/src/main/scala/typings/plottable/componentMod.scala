@@ -364,7 +364,7 @@ object componentMod extends js.Object {
   }
   
   type ComponentCallback = js.Function1[/* component */ Component, Unit]
-  type IResizeHandler = js.Function1[/* size */ AnonHeightWidth, Unit]
+  type IResizeHandler = js.Function1[/* size */ AnonWidth, Unit]
   type XAlignment = String
   type YAlignment = String
 }

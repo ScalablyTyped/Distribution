@@ -1,7 +1,7 @@
 package typings.braintree.mod
 
 import typings.braintree.AnonCompany
-import typings.braintree.AnonFailOnDuplicatePaymentMethodMakeDefault
+import typings.braintree.AnonMakeDefault
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +17,7 @@ trait PaymentMethodCreateRequest extends js.Object {
   var expirationMonth: js.UndefOr[String] = js.undefined
   var expirationYear: js.UndefOr[String] = js.undefined
   var number: js.UndefOr[String] = js.undefined
-  var options: js.UndefOr[AnonFailOnDuplicatePaymentMethodMakeDefault] = js.undefined
+  var options: js.UndefOr[AnonMakeDefault] = js.undefined
   var paymentMethodNonce: String
 }
 
@@ -35,7 +35,7 @@ object PaymentMethodCreateRequest {
     expirationMonth: String = null,
     expirationYear: String = null,
     number: String = null,
-    options: AnonFailOnDuplicatePaymentMethodMakeDefault = null
+    options: AnonMakeDefault = null
   ): PaymentMethodCreateRequest = {
     val __obj = js.Dynamic.literal(customerId = customerId.asInstanceOf[js.Any], paymentMethodNonce = paymentMethodNonce.asInstanceOf[js.Any])
     if (billingAddress != null) __obj.updateDynamic("billingAddress")(billingAddress.asInstanceOf[js.Any])

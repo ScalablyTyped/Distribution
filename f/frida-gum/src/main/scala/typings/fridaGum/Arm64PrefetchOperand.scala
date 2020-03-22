@@ -18,7 +18,7 @@ object Arm64PrefetchOperand {
     `type`: prefetch,
     value: Double,
     ext: Arm64Extender = null,
-    shift: AnonTypeValue = null,
+    shift: AnonValue = null,
     vas: Arm64Vas = null,
     vectorIndex: Int | Double = null
   ): Arm64PrefetchOperand = {

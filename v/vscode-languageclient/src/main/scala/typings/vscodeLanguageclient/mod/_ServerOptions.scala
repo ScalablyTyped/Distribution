@@ -21,7 +21,7 @@ object _ServerOptions {
     __obj.asInstanceOf[_ServerOptions]
   }
   @scala.inline
-  def AnonDebugRun(debug: NodeModule, run: NodeModule): _ServerOptions = {
+  def AnonRun(debug: NodeModule, run: NodeModule): _ServerOptions = {
     val __obj = js.Dynamic.literal(debug = debug.asInstanceOf[js.Any], run = run.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_ServerOptions]

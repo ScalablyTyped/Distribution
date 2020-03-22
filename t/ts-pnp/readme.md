@@ -1,7 +1,7 @@
 
 # Scala.js typings for ts-pnp
 
-Typings are for version 1.1.5
+Typings are for version 1.1.6
 
 ## Library description:
 plug'n'play resolver for TypeScript

@@ -1,6 +1,6 @@
 package typings.exceljs.mod
 
-import typings.std.Partial
+import typings.exceljs.PartialColor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ trait BorderDiagonal extends Border {
 
 object BorderDiagonal {
   @scala.inline
-  def apply(color: Partial[Color], down: Boolean, style: BorderStyle, up: Boolean): BorderDiagonal = {
+  def apply(color: PartialColor, down: Boolean, style: BorderStyle, up: Boolean): BorderDiagonal = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], down = down.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], up = up.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BorderDiagonal]

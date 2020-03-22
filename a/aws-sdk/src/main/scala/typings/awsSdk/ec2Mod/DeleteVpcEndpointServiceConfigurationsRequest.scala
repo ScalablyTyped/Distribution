@@ -13,12 +13,12 @@ trait DeleteVpcEndpointServiceConfigurationsRequest extends js.Object {
   /**
     * The IDs of one or more services.
     */
-  var ServiceIds: ValueStringList = js.native
+  var ServiceIds: VpcEndpointServiceIdList = js.native
 }
 
 object DeleteVpcEndpointServiceConfigurationsRequest {
   @scala.inline
-  def apply(ServiceIds: ValueStringList, DryRun: js.UndefOr[scala.Boolean] = js.undefined): DeleteVpcEndpointServiceConfigurationsRequest = {
+  def apply(ServiceIds: VpcEndpointServiceIdList, DryRun: js.UndefOr[scala.Boolean] = js.undefined): DeleteVpcEndpointServiceConfigurationsRequest = {
     val __obj = js.Dynamic.literal(ServiceIds = ServiceIds.asInstanceOf[js.Any])
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteVpcEndpointServiceConfigurationsRequest]

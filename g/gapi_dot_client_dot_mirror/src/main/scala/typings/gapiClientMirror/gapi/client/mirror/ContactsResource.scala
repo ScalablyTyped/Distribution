@@ -2,7 +2,7 @@ package typings.gapiClientMirror.gapi.client.mirror
 
 import typings.gapiClient.gapi.client.Request_
 import typings.gapiClientMirror.AnonAlt
-import typings.gapiClientMirror.AnonAltFields
+import typings.gapiClientMirror.AnonFields
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,9 +13,9 @@ trait ContactsResource extends js.Object {
   /** Gets a single contact by ID. */
   def get(request: AnonAlt): Request_[Contact]
   /** Inserts a new contact. */
-  def insert(request: AnonAltFields): Request_[Contact]
+  def insert(request: AnonFields): Request_[Contact]
   /** Retrieves a list of contacts for the authenticated user. */
-  def list(request: AnonAltFields): Request_[ContactsListResponse]
+  def list(request: AnonFields): Request_[ContactsListResponse]
   /** Updates a contact in place. This method supports patch semantics. */
   def patch(request: AnonAlt): Request_[Contact]
   /** Updates a contact in place. */
@@ -27,8 +27,8 @@ object ContactsResource {
   def apply(
     delete: AnonAlt => Request_[Unit],
     get: AnonAlt => Request_[Contact],
-    insert: AnonAltFields => Request_[Contact],
-    list: AnonAltFields => Request_[ContactsListResponse],
+    insert: AnonFields => Request_[Contact],
+    list: AnonFields => Request_[ContactsListResponse],
     patch: AnonAlt => Request_[Contact],
     update: AnonAlt => Request_[Contact]
   ): ContactsResource = {

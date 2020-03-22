@@ -1,7 +1,7 @@
 package typings.loopback.mod
 
-import typings.loopback.AnonAclsCaseSensitiveEmail
-import typings.loopback.AnonFromGenerateVerificationToken
+import typings.loopback.AnonCaseSensitiveEmail
+import typings.loopback.AnonGenerateVerificationToken
 import typings.std.Date
 import typings.std.Error
 import scala.scalajs.js
@@ -75,7 +75,7 @@ class User () extends PersistedModel {
     * settings.caseSensitiveEmail Enable case sensitive email.
     */
   @JSName("settings")
-  var settings_User: AnonAclsCaseSensitiveEmail = js.native
+  var settings_User: AnonCaseSensitiveEmail = js.native
   /** The property is not used by LoopBack, you are free to use it for your own purposes. */
   var status: String = js.native
   /** Must be unique. */
@@ -138,7 +138,7 @@ class User () extends PersistedModel {
     *  object, instead simply execute the callback with the token! User saving
     *  and email sending will be handled in the `verify()` method
     */
-  def verify(options: AnonFromGenerateVerificationToken): Unit = js.native
+  def verify(options: AnonGenerateVerificationToken): Unit = js.native
 }
 
 /* static members */

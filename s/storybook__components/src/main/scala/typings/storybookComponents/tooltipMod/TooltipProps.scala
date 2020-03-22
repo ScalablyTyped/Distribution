@@ -4,13 +4,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TooltipProps extends js.Object {
-  var arrowProps: js.UndefOr[js.Any] = js.undefined
-  var arrowRef: js.UndefOr[js.Any] = js.undefined
-  var color: js.UndefOr[String] = js.undefined
-  var hasChrome: js.UndefOr[Boolean] = js.undefined
-  var placement: js.UndefOr[String] = js.undefined
-  var tooltipRef: js.UndefOr[js.Any] = js.undefined
+  var arrowProps: js.UndefOr[js.Any] = js.native
+  var arrowRef: js.UndefOr[js.Any] = js.native
+  var color: js.UndefOr[String] = js.native
+  var hasChrome: js.UndefOr[Boolean] = js.native
+  var placement: js.UndefOr[String] = js.native
+  var tooltipRef: js.UndefOr[js.Any] = js.native
 }
 
 object TooltipProps {

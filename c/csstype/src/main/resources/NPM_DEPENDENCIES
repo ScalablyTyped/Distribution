@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "csstype" : "2.6.6"
+      "csstype" : "2.6.9"
     }
   ],
   "test-dependencies" : [
     {
-      "csstype" : "2.6.6"
+      "csstype" : "2.6.9"
     }
   ],
   "compile-devDependencies" : [

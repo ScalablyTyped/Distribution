@@ -1,11 +1,12 @@
 package typings.rcTimePicker
 
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait rcTimePickerProps {
-  type RcTimePickerProps[T] = Partial[T]
+  @scala.inline
+  def RcTimePickerProps: PartialTimePickerProps.type = typings.rcTimePicker.PartialTimePickerProps
+  type RcTimePickerProps = PartialTimePickerProps
 }
 

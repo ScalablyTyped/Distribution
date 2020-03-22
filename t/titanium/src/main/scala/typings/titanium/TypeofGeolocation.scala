@@ -101,7 +101,7 @@ trait TypeofGeolocation extends js.Object {
   /**
   		 * Module for Android-specific geolocation functionality.
   		 */
-  val Android: TypeofAndroidAddEventListenerAddLocationProvider = js.native
+  val Android: TypeofAndroidAddLocationProvider = js.native
   /**
   		 * Error code indicating that the user denied access to the location service.
   		 */

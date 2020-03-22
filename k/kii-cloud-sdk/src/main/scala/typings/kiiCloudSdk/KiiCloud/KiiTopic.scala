@@ -1,8 +1,8 @@
 package typings.kiiCloudSdk.KiiCloud
 
-import typings.kiiCloudSdk.AnonErrorExisted
-import typings.kiiCloudSdk.AnonErrorFailureMessage
-import typings.kiiCloudSdk.AnonErrorFailureSuccessTopic
+import typings.kiiCloudSdk.Anon32
+import typings.kiiCloudSdk.Anon33
+import typings.kiiCloudSdk.Anon34
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -61,7 +61,7 @@ class KiiTopic () extends js.Object {
     *     );
     */
   def deleteTopic(): js.Promise[KiiTopic] = js.native
-  def deleteTopic(callbacks: AnonErrorFailureSuccessTopic): js.Promise[KiiTopic] = js.native
+  def deleteTopic(callbacks: Anon33): js.Promise[KiiTopic] = js.native
   /**
     * Checks whether the topic already exists or not.
     *
@@ -99,7 +99,7 @@ class KiiTopic () extends js.Object {
     *         });
     */
   def exists(): js.Promise[Boolean] = js.native
-  def exists(callbacks: AnonErrorExisted): js.Promise[Boolean] = js.native
+  def exists(callbacks: Anon32): js.Promise[Boolean] = js.native
   /**
     * get name of this topic
     *
@@ -147,7 +147,7 @@ class KiiTopic () extends js.Object {
     *     );
     */
   def save(): js.Promise[KiiTopic] = js.native
-  def save(callbacks: AnonErrorFailureSuccessTopic): js.Promise[KiiTopic] = js.native
+  def save(callbacks: Anon33): js.Promise[KiiTopic] = js.native
   /**
     * Send message to the topic.
     *
@@ -202,6 +202,6 @@ class KiiTopic () extends js.Object {
     *     );
     */
   def sendMessage[T](message: T): js.Promise[js.Tuple2[KiiTopic, T]] = js.native
-  def sendMessage[T](message: T, callbacks: AnonErrorFailureMessage[T]): js.Promise[js.Tuple2[KiiTopic, T]] = js.native
+  def sendMessage[T](message: T, callbacks: Anon34[T]): js.Promise[js.Tuple2[KiiTopic, T]] = js.native
 }
 

@@ -1,6 +1,6 @@
 package typings.awsSdk.appstreamMod
 
-import typings.awsSdk.AnonWaiter
+import typings.awsSdk.DescribeFleetsRequestwait
 import typings.awsSdk.awsSdkStrings.fleetStarted
 import typings.awsSdk.awsSdkStrings.fleetStopped
 import typings.awsSdk.configMod.ConfigBase
@@ -642,11 +642,11 @@ trait AppStream extends Service {
     * Waits for the fleetStarted state by periodically calling the underlying AppStream.describeFleetsoperation every 30 seconds (at most 40 times).
     */
   @JSName("waitFor")
-  def waitFor_fleetStarted(state: fleetStarted, params: DescribeFleetsRequest with AnonWaiter): Request[DescribeFleetsResult, AWSError] = js.native
+  def waitFor_fleetStarted(state: fleetStarted, params: DescribeFleetsRequestwait): Request[DescribeFleetsResult, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_fleetStarted(
     state: fleetStarted,
-    params: DescribeFleetsRequest with AnonWaiter,
+    params: DescribeFleetsRequestwait,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeFleetsResult, Unit]
   ): Request[DescribeFleetsResult, AWSError] = js.native
   /**
@@ -663,11 +663,11 @@ trait AppStream extends Service {
     * Waits for the fleetStopped state by periodically calling the underlying AppStream.describeFleetsoperation every 30 seconds (at most 40 times).
     */
   @JSName("waitFor")
-  def waitFor_fleetStopped(state: fleetStopped, params: DescribeFleetsRequest with AnonWaiter): Request[DescribeFleetsResult, AWSError] = js.native
+  def waitFor_fleetStopped(state: fleetStopped, params: DescribeFleetsRequestwait): Request[DescribeFleetsResult, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_fleetStopped(
     state: fleetStopped,
-    params: DescribeFleetsRequest with AnonWaiter,
+    params: DescribeFleetsRequestwait,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeFleetsResult, Unit]
   ): Request[DescribeFleetsResult, AWSError] = js.native
 }

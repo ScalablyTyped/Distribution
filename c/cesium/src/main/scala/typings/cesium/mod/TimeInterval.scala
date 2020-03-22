@@ -1,7 +1,7 @@
 package typings.cesium.mod
 
 import typings.cesium.AnonData
-import typings.cesium.AnonDataIsStartIncluded
+import typings.cesium.AnonIsStartIncluded
 import typings.cesium.mod.TimeInterval.DataComparer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -39,8 +39,8 @@ object TimeInterval extends js.Object {
   def equals(left: TimeInterval, right: TimeInterval, dataComparer: DataComparer): Boolean = js.native
   def equalsEpsilon(left: TimeInterval, right: TimeInterval, epsilon: Double): Boolean = js.native
   def equalsEpsilon(left: TimeInterval, right: TimeInterval, epsilon: Double, dataComparer: DataComparer): Boolean = js.native
-  def fromIso8601(options: AnonDataIsStartIncluded): TimeInterval = js.native
-  def fromIso8601(options: AnonDataIsStartIncluded, result: TimeInterval): TimeInterval = js.native
+  def fromIso8601(options: AnonIsStartIncluded): TimeInterval = js.native
+  def fromIso8601(options: AnonIsStartIncluded, result: TimeInterval): TimeInterval = js.native
   def intersect(left: TimeInterval, right: TimeInterval, result: TimeInterval): TimeInterval = js.native
   def intersect(left: TimeInterval, right: TimeInterval, result: TimeInterval, mergeCallback: MergeCallback): TimeInterval = js.native
   def toIso8601(timeInterval: TimeInterval): String = js.native

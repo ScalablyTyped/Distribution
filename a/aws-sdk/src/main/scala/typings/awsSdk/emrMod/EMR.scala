@@ -1,6 +1,7 @@
 package typings.awsSdk.emrMod
 
-import typings.awsSdk.AnonWaiter
+import typings.awsSdk.DescribeClusterInputwaite
+import typings.awsSdk.DescribeStepInputwaiterWa
 import typings.awsSdk.awsSdkStrings.clusterRunning
 import typings.awsSdk.awsSdkStrings.clusterTerminated
 import typings.awsSdk.awsSdkStrings.stepComplete
@@ -432,11 +433,11 @@ trait EMR extends Service {
     * Waits for the clusterRunning state by periodically calling the underlying EMR.describeClusteroperation every 30 seconds (at most 60 times).
     */
   @JSName("waitFor")
-  def waitFor_clusterRunning(state: clusterRunning, params: DescribeClusterInput with AnonWaiter): Request[DescribeClusterOutput, AWSError] = js.native
+  def waitFor_clusterRunning(state: clusterRunning, params: DescribeClusterInputwaite): Request[DescribeClusterOutput, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_clusterRunning(
     state: clusterRunning,
-    params: DescribeClusterInput with AnonWaiter,
+    params: DescribeClusterInputwaite,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeClusterOutput, scala.Unit]
   ): Request[DescribeClusterOutput, AWSError] = js.native
   /**
@@ -453,11 +454,11 @@ trait EMR extends Service {
     * Waits for the clusterTerminated state by periodically calling the underlying EMR.describeClusteroperation every 30 seconds (at most 60 times).
     */
   @JSName("waitFor")
-  def waitFor_clusterTerminated(state: clusterTerminated, params: DescribeClusterInput with AnonWaiter): Request[DescribeClusterOutput, AWSError] = js.native
+  def waitFor_clusterTerminated(state: clusterTerminated, params: DescribeClusterInputwaite): Request[DescribeClusterOutput, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_clusterTerminated(
     state: clusterTerminated,
-    params: DescribeClusterInput with AnonWaiter,
+    params: DescribeClusterInputwaite,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeClusterOutput, scala.Unit]
   ): Request[DescribeClusterOutput, AWSError] = js.native
   /**
@@ -474,11 +475,11 @@ trait EMR extends Service {
     * Waits for the stepComplete state by periodically calling the underlying EMR.describeStepoperation every 30 seconds (at most 60 times).
     */
   @JSName("waitFor")
-  def waitFor_stepComplete(state: stepComplete, params: DescribeStepInput with AnonWaiter): Request[DescribeStepOutput, AWSError] = js.native
+  def waitFor_stepComplete(state: stepComplete, params: DescribeStepInputwaiterWa): Request[DescribeStepOutput, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_stepComplete(
     state: stepComplete,
-    params: DescribeStepInput with AnonWaiter,
+    params: DescribeStepInputwaiterWa,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeStepOutput, scala.Unit]
   ): Request[DescribeStepOutput, AWSError] = js.native
 }

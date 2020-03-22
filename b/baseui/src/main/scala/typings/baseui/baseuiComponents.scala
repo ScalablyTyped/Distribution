@@ -188,7 +188,7 @@ object baseuiComponents extends baseuiProps {
   @scala.inline
   def Modal: ComponentType[ModalProps] = js.constructorOf[typings.baseui.modalMod.Modal].asInstanceOf[typings.react.mod.ComponentType[ModalProps]]
   @scala.inline
-  def ModalButton: ComponentType[typings.baseui.buttonMod.ButtonProps with AnonAutoFocus] = js.constructorOf[typings.baseui.modalMod.ModalButton].asInstanceOf[typings.react.mod.ComponentType[typings.baseui.buttonMod.ButtonProps with typings.baseui.AnonAutoFocus]]
+  def ModalButton: ComponentType[ModalButtonProps] = js.constructorOf[typings.baseui.modalMod.ModalButton].asInstanceOf[typings.react.mod.ComponentType[ModalButtonProps]]
   @scala.inline
   def MultiValue: ComponentType[js.Any] = typings.baseui.selectMod.MultiValue.asInstanceOf[typings.react.mod.ComponentType[js.Any]]
   @scala.inline
@@ -234,6 +234,8 @@ object baseuiComponents extends baseuiProps {
   @scala.inline
   def PhoneInputLite: ComponentType[PhoneInputLiteProps] = typings.baseui.phoneInputMod.PhoneInputLite.asInstanceOf[typings.react.mod.ComponentType[PhoneInputLiteProps]]
   @scala.inline
+  def PhoneInputNext: ComponentType[PhoneInputNextProps] = typings.baseui.phoneInputMod.PhoneInputNext.asInstanceOf[typings.react.mod.ComponentType[PhoneInputNextProps]]
+  @scala.inline
   def PinCode: ComponentType[PinCodeProps] = js.constructorOf[typings.baseui.pinCodeMod.PinCode].asInstanceOf[typings.react.mod.ComponentType[PinCodeProps]]
   @scala.inline
   def Plus: ComponentType[PlusProps] = typings.baseui.iconMod.Plus.asInstanceOf[typings.react.mod.ComponentType[PlusProps]]
@@ -268,13 +270,13 @@ object baseuiComponents extends baseuiProps {
   @scala.inline
   def StatefulButtonGroup: ComponentType[StatefulButtonGroupProps] = typings.baseui.buttonGroupMod.StatefulButtonGroup.asInstanceOf[typings.react.mod.ComponentType[StatefulButtonGroupProps]]
   @scala.inline
-  def StatefulCalendar: ComponentType[StatefulCalendarProps[typings.baseui.datepickerMod.CalendarProps]] = typings.baseui.datepickerMod.StatefulCalendar.asInstanceOf[typings.react.mod.ComponentType[StatefulCalendarProps[typings.baseui.datepickerMod.CalendarProps]]]
+  def StatefulCalendar: ComponentType[StatefulCalendarProps] = typings.baseui.datepickerMod.StatefulCalendar.asInstanceOf[typings.react.mod.ComponentType[StatefulCalendarProps]]
   @scala.inline
   def StatefulCheckbox: ComponentType[StatefulCheckboxProps] = typings.baseui.checkboxMod.StatefulCheckbox.asInstanceOf[typings.react.mod.ComponentType[StatefulCheckboxProps]]
   @scala.inline
   def StatefulContainer: ComponentType[StatefulContainerProps] = js.constructorOf[typings.baseui.menuMod.StatefulContainer].asInstanceOf[typings.react.mod.ComponentType[StatefulContainerProps]]
   @scala.inline
-  def StatefulDatepicker: ComponentType[StatefulDatepickerProps[typings.baseui.datepickerMod.DatepickerProps]] = typings.baseui.datepickerMod.StatefulDatepicker.asInstanceOf[typings.react.mod.ComponentType[StatefulDatepickerProps[typings.baseui.datepickerMod.DatepickerProps]]]
+  def StatefulDatepicker: ComponentType[StatefulDatepickerProps] = typings.baseui.datepickerMod.StatefulDatepicker.asInstanceOf[typings.react.mod.ComponentType[StatefulDatepickerProps]]
   @scala.inline
   def StatefulInput: ComponentType[StatefulInputProps] = typings.baseui.inputMod.StatefulInput.asInstanceOf[typings.react.mod.ComponentType[StatefulInputProps]]
   @scala.inline

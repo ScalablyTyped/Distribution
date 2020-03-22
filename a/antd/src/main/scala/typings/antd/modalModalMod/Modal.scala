@@ -15,6 +15,6 @@ trait Modal
   def handleCancel(e: typings.react.mod.MouseEvent[HTMLButtonElement, MouseEvent]): Unit = js.native
   def handleOk(e: typings.react.mod.MouseEvent[HTMLButtonElement, MouseEvent]): Unit = js.native
   def renderFooter(locale: ModalLocale): Element = js.native
-  def renderModal(hasGetPopupContainerGetPrefixCls: ConfigConsumerProps): Element = js.native
+  def renderModal(hasGetPopupContainerGetPrefixClsDirection: ConfigConsumerProps): Element = js.native
 }
 

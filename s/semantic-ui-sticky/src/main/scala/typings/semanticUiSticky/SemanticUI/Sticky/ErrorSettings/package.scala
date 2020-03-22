@@ -5,13 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object ErrorSettings {
-  type Param = (typings.std.Pick[
-    typings.semanticUiSticky.SemanticUI.Sticky.ErrorSettings.Impl, 
-    typings.semanticUiSticky.semanticUiStickyStrings.container | typings.semanticUiSticky.semanticUiStickyStrings.visible | typings.semanticUiSticky.semanticUiStickyStrings.method | typings.semanticUiSticky.semanticUiStickyStrings.invalidContext | typings.semanticUiSticky.semanticUiStickyStrings.elementSize
-  ]) with (typings.std.Partial[
-    typings.std.Pick[
-      typings.semanticUiSticky.SemanticUI.Sticky.ErrorSettings.Impl, 
-      typings.semanticUiSticky.semanticUiStickyStrings.container | typings.semanticUiSticky.semanticUiStickyStrings.visible | typings.semanticUiSticky.semanticUiStickyStrings.method | typings.semanticUiSticky.semanticUiStickyStrings.invalidContext | typings.semanticUiSticky.semanticUiStickyStrings.elementSize
-    ]
-  ])
+  type Param = (typings.semanticUiSticky.PickImplcontainer | typings.semanticUiSticky.PickImplvisible | typings.semanticUiSticky.PickImplmethod | typings.semanticUiSticky.PickImplinvalidContext | typings.semanticUiSticky.PickImplelementSize) with typings.semanticUiSticky.PartialPickImplkeyofImplContainer
 }

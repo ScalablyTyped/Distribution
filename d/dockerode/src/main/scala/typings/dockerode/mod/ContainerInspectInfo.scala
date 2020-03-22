@@ -4,7 +4,7 @@ import typings.dockerode.AnonAttachStderr
 import typings.dockerode.AnonBridge
 import typings.dockerode.AnonData
 import typings.dockerode.AnonDead
-import typings.dockerode.AnonDestinationMode
+import typings.dockerode.AnonMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,7 +24,7 @@ trait ContainerInspectInfo extends js.Object {
   var Image: String
   var LogPath: String
   var MountLabel: String
-  var Mounts: js.Array[AnonDestinationMode]
+  var Mounts: js.Array[AnonMode]
   var Name: String
   var NetworkSettings: AnonBridge
   var Path: String
@@ -50,7 +50,7 @@ object ContainerInspectInfo {
     Image: String,
     LogPath: String,
     MountLabel: String,
-    Mounts: js.Array[AnonDestinationMode],
+    Mounts: js.Array[AnonMode],
     Name: String,
     NetworkSettings: AnonBridge,
     Path: String,

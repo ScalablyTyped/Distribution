@@ -1,7 +1,7 @@
 package typings.yandexMaps.mod
 
 import typings.std.HTMLElement
-import typings.yandexMaps.AnonAlways
+import typings.yandexMaps.AnonAutoFitToViewport
 import typings.yandexMaps.AnonDirection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -27,8 +27,8 @@ object panorama extends js.Object {
   class Player protected () extends IEventEmitter {
     def this(element: String, panorama: IPanorama) = this()
     def this(element: HTMLElement, panorama: IPanorama) = this()
-    def this(element: String, panorama: IPanorama, options: AnonAlways) = this()
-    def this(element: HTMLElement, panorama: IPanorama, options: AnonAlways) = this()
+    def this(element: String, panorama: IPanorama, options: AnonAutoFitToViewport) = this()
+    def this(element: HTMLElement, panorama: IPanorama, options: AnonAutoFitToViewport) = this()
     /* CompleteClass */
     override var events: IEventManager = js.native
     def destroy(): Unit = js.native

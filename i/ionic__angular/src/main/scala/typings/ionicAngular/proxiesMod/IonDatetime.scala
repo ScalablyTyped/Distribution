@@ -10,7 +10,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ionic/angular/dist/directives/proxies", "IonDatetime")
+@JSImport("@ionic/angular/directives/proxies", "IonDatetime")
 @js.native
 class IonDatetime protected ()
   extends typings.ionicCore.componentsMod.Components.IonDatetime {

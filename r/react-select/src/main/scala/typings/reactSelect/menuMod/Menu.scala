@@ -3,7 +3,6 @@ package typings.reactSelect.menuMod
 import typings.react.mod.Component
 import typings.react.mod.Ref
 import typings.reactSelect.AnonGetPortalPlacement
-import typings.reactSelect.MenuPropsOptionTypeMenuState
 import typings.reactSelect.typesMod.OptionTypeBase
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,7 +13,7 @@ import scala.scalajs.js.annotation._
 class Menu[OptionType /* <: OptionTypeBase */] ()
   extends Component[MenuProps[OptionType], MenuState, js.Any] {
   def getPlacement(ref: Ref[_]): Unit = js.native
-  def getState(): MenuPropsOptionTypeMenuState[OptionType] = js.native
+  def getState(): MenuProps[OptionType] with MenuState = js.native
 }
 
 /* static members */

@@ -11,16 +11,34 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ECKey extends Key {
-  var crv: ECCurve = js.native
-  var d: js.UndefOr[String] = js.native
+  @JSName("crv")
+  val crv_ECKey: ECCurve = js.native
+  @JSName("dp")
+  val dp_ECKey: js.UndefOr[scala.Nothing] = js.native
+  @JSName("dq")
+  val dq_ECKey: js.UndefOr[scala.Nothing] = js.native
+  @JSName("e")
+  val e_ECKey: js.UndefOr[scala.Nothing] = js.native
+  @JSName("k")
+  val k_ECKey: js.UndefOr[scala.Nothing] = js.native
   @JSName("kty")
-  var kty_ECKey: EC = js.native
+  val kty_ECKey: EC = js.native
+  @JSName("n")
+  val n_ECKey: js.UndefOr[scala.Nothing] = js.native
+  @JSName("p")
+  val p_ECKey: js.UndefOr[scala.Nothing] = js.native
+  @JSName("q")
+  val q_ECKey: js.UndefOr[scala.Nothing] = js.native
+  @JSName("qi")
+  val qi_ECKey: js.UndefOr[scala.Nothing] = js.native
   @JSName("secret")
-  var secret_ECKey: `false` = js.native
+  val secret_ECKey: `false` = js.native
   @JSName("type")
-  var type_ECKey: asymmetricKeyObjectTypes = js.native
-  var x: String = js.native
-  var y: String = js.native
+  val type_ECKey: asymmetricKeyObjectTypes = js.native
+  @JSName("x")
+  val x_ECKey: String = js.native
+  @JSName("y")
+  val y_ECKey: String = js.native
   def toJWK(): JWKECKey = js.native
   def toJWK(`private`: Boolean): JWKECKey = js.native
 }

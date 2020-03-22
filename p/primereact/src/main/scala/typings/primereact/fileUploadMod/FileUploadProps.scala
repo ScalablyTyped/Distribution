@@ -1,10 +1,11 @@
 package typings.primereact.fileUploadMod
 
+import typings.primereact.AnonFile
 import typings.primereact.AnonFiles
 import typings.primereact.AnonFilesAny
 import typings.primereact.AnonFilesOriginalEvent
 import typings.primereact.AnonFormData
-import typings.primereact.AnonOriginalEventProgress
+import typings.primereact.AnonProgress
 import typings.std.File
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -29,7 +30,8 @@ trait FileUploadProps extends js.Object {
   var onBeforeUpload: js.UndefOr[js.Function1[/* e */ AnonFormData, Unit]] = js.undefined
   var onClear: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onError: js.UndefOr[js.Function1[/* e */ AnonFiles, Unit]] = js.undefined
-  var onProgress: js.UndefOr[js.Function1[/* e */ AnonOriginalEventProgress, Unit]] = js.undefined
+  var onProgress: js.UndefOr[js.Function1[/* e */ AnonProgress, Unit]] = js.undefined
+  var onRemove: js.UndefOr[js.Function1[/* e */ AnonFile, Unit]] = js.undefined
   var onSelect: js.UndefOr[js.Function1[/* e */ AnonFilesOriginalEvent, Unit]] = js.undefined
   var onUpload: js.UndefOr[js.Function1[/* e */ AnonFiles, Unit]] = js.undefined
   var onValidationFail: js.UndefOr[js.Function1[/* file */ File, Unit]] = js.undefined
@@ -62,7 +64,8 @@ object FileUploadProps {
     onBeforeUpload: /* e */ AnonFormData => Unit = null,
     onClear: () => Unit = null,
     onError: /* e */ AnonFiles => Unit = null,
-    onProgress: /* e */ AnonOriginalEventProgress => Unit = null,
+    onProgress: /* e */ AnonProgress => Unit = null,
+    onRemove: /* e */ AnonFile => Unit = null,
     onSelect: /* e */ AnonFilesOriginalEvent => Unit = null,
     onUpload: /* e */ AnonFiles => Unit = null,
     onValidationFail: /* file */ File => Unit = null,
@@ -93,6 +96,7 @@ object FileUploadProps {
     if (onClear != null) __obj.updateDynamic("onClear")(js.Any.fromFunction0(onClear))
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
     if (onProgress != null) __obj.updateDynamic("onProgress")(js.Any.fromFunction1(onProgress))
+    if (onRemove != null) __obj.updateDynamic("onRemove")(js.Any.fromFunction1(onRemove))
     if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1(onSelect))
     if (onUpload != null) __obj.updateDynamic("onUpload")(js.Any.fromFunction1(onUpload))
     if (onValidationFail != null) __obj.updateDynamic("onValidationFail")(js.Any.fromFunction1(onValidationFail))

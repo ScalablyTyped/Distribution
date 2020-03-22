@@ -1,11 +1,11 @@
 package typings.oracleOraclejet.ojgaugeMod
 
-import typings.oracleOraclejet.AnonAutoBillionCenter
-import typings.oracleOraclejet.AnonAutoBorderColor
-import typings.oracleOraclejet.AnonAutoCenter
-import typings.oracleOraclejet.AnonComponentNameLabelAndValue
-import typings.oracleOraclejet.AnonContextRendererAnonInsertAnonPreventDefaultCenterContext
-import typings.oracleOraclejet.AnonContextRendererAnonInsertAnonPreventDefaultTooltipContext848864392
+import typings.oracleOraclejet.Anon10
+import typings.oracleOraclejet.Anon11
+import typings.oracleOraclejet.AnonBorderColorBorderRadius
+import typings.oracleOraclejet.AnonConverterPosition
+import typings.oracleOraclejet.AnonLabelAndValue
+import typings.oracleOraclejet.AnonPositionStyle
 import typings.oracleOraclejet.ojgaugeMod.ojStatusMeterGauge.ReferenceLine
 import typings.oracleOraclejet.ojgaugeMod.ojStatusMeterGauge.Threshold
 import typings.oracleOraclejet.oracleOraclejetStrings.all
@@ -29,16 +29,16 @@ trait ojStatusMeterGaugeSettableProperties extends dvtBaseGaugeSettablePropertie
   var animationOnDisplay: auto | none
   var borderColor: String
   var borderRadius: String
-  var center: AnonContextRendererAnonInsertAnonPreventDefaultCenterContext
+  var center: Anon10
   var color: String
   var indicatorSize: Double
   var innerRadius: Double
-  var label: AnonAutoCenter
+  var label: AnonPositionStyle
   var max: Double
-  var metricLabel: AnonAutoBillionCenter
+  var metricLabel: AnonConverterPosition
   var min: Double
   var orientation: circular | vertical | horizontal
-  var plotArea: AnonAutoBorderColor
+  var plotArea: AnonBorderColorBorderRadius
   var readonly: Boolean
   var referenceLines: js.Array[ReferenceLine]
   var startAngle: Double
@@ -47,7 +47,7 @@ trait ojStatusMeterGaugeSettableProperties extends dvtBaseGaugeSettablePropertie
   var svgStyle: js.Object
   var thresholdDisplay: currentOnly | all | onIndicator
   var thresholds: js.Array[Threshold]
-  var tooltip: AnonContextRendererAnonInsertAnonPreventDefaultTooltipContext848864392
+  var tooltip: Anon11
   val transientValue: Double | Null
   var value: Double | Null
   var visualEffects: none | auto
@@ -61,16 +61,16 @@ object ojStatusMeterGaugeSettableProperties {
     animationOnDisplay: auto | none,
     borderColor: String,
     borderRadius: String,
-    center: AnonContextRendererAnonInsertAnonPreventDefaultCenterContext,
+    center: Anon10,
     color: String,
     indicatorSize: Double,
     innerRadius: Double,
-    label: AnonAutoCenter,
+    label: AnonPositionStyle,
     max: Double,
-    metricLabel: AnonAutoBillionCenter,
+    metricLabel: AnonConverterPosition,
     min: Double,
     orientation: circular | vertical | horizontal,
-    plotArea: AnonAutoBorderColor,
+    plotArea: AnonBorderColorBorderRadius,
     readonly: Boolean,
     referenceLines: js.Array[ReferenceLine],
     startAngle: Double,
@@ -78,9 +78,9 @@ object ojStatusMeterGaugeSettableProperties {
     svgStyle: js.Object,
     thresholdDisplay: currentOnly | all | onIndicator,
     thresholds: js.Array[Threshold],
-    tooltip: AnonContextRendererAnonInsertAnonPreventDefaultTooltipContext848864392,
+    tooltip: Anon11,
     trackResize: on | off,
-    translations: AnonComponentNameLabelAndValue,
+    translations: AnonLabelAndValue,
     visualEffects: none | auto,
     animationDuration: Int | Double = null,
     step: Int | Double = null,

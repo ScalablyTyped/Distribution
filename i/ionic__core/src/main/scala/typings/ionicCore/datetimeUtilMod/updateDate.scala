@@ -8,5 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object updateDate extends js.Object {
   def apply(existingData: DatetimeData, newData: js.Any): Boolean = js.native
+  def apply(existingData: DatetimeData, newData: js.Any, displayTimezone: String): Boolean = js.native
 }
 

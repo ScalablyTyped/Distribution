@@ -11,7 +11,7 @@ trait UploadFile extends js.Object {
     */
   var filePath: String
   /**
-    * Number of bytes to read from offset. Defaults to 0.
+    * Number of bytes to read from `offset`. Defaults to `0`.
     */
   var length: Double
   /**
@@ -19,11 +19,11 @@ trait UploadFile extends js.Object {
     */
   var modificationTime: Double
   /**
-    * Defaults to 0.
+    * Defaults to `0`.
     */
   var offset: Double
   /**
-    * file.
+    * `file`.
     */
   var `type`: String
 }

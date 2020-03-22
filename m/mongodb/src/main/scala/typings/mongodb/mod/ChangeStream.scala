@@ -1,6 +1,6 @@
 package typings.mongodb.mod
 
-import typings.mongodb.AnonTransform
+import typings.mongodb.AnonTransformFunction
 import typings.node.streamMod.Readable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -31,6 +31,6 @@ class ChangeStream protected () extends Readable {
   def next(callback: MongoCallback[_]): Unit = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/ChangeStream.html#stream */
   def stream(): Cursor[Default] = js.native
-  def stream(options: AnonTransform): Cursor[Default] = js.native
+  def stream(options: AnonTransformFunction): Cursor[Default] = js.native
 }
 

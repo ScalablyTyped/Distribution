@@ -5,6 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mod {
+  type AccessibilityAnnouncementFormatter = js.Function3[
+    /* updatedSeries */ js.Array[typings.highcharts.mod.Series], 
+    /* addedSeries */ js.UndefOr[typings.highcharts.mod.Series], 
+    /* addedPoint */ js.UndefOr[typings.highcharts.mod.Point], 
+    typings.highcharts.highchartsBooleans.`false` | java.lang.String
+  ]
   type AnimationStepCallbackFunction = js.ThisFunction0[/* this */ typings.highcharts.mod.SVGElement, scala.Unit]
   type AxisEventCallbackFunction = js.ThisFunction0[/* this */ typings.highcharts.mod.Axis, scala.Unit]
   type AxisPointBreakEventCallbackFunction = js.ThisFunction1[
@@ -102,6 +108,18 @@ package object mod {
   type FormatterCallbackFunction[T] = js.ThisFunction0[/* this */ T, java.lang.String]
   type HTMLAttributes = typings.highcharts.mod.Dictionary[scala.Boolean | scala.Double | java.lang.String | js.Function]
   type HTMLDOMElement = typings.std.HTMLElement
+  type MarkerClusterDrillCallbackFunction = js.ThisFunction1[
+    /* this */ typings.highcharts.mod.Point, 
+    /* event */ typings.highcharts.mod.PointClickEventObject, 
+    scala.Unit
+  ]
+  type NumberFormatterCallbackFunction = js.Function4[
+    /* number */ scala.Double, 
+    /* decimals */ scala.Double, 
+    /* decimalPoint */ js.UndefOr[java.lang.String], 
+    /* thousandsSep */ js.UndefOr[java.lang.String], 
+    java.lang.String
+  ]
   type ObjectEachCallbackFunction[T] = js.ThisFunction3[
     /* this */ T, 
     /* value */ js.Any, 
@@ -215,7 +233,7 @@ package object mod {
     java.lang.String
   ]
   type SeriesPackedBubbleDataLabelsFormatterCallbackFunction = js.ThisFunction0[
-    /* this */ typings.highcharts.mod.DataLabelsFormatterContextObject | typings.highcharts.mod.SeriesPackedBubbleDataLabelsFormatterContextObject, 
+    /* this */ typings.highcharts.mod.SeriesPackedBubbleDataLabelsFormatterContextObject, 
     java.lang.String
   ]
   type SeriesSankeyDataLabelsFormatterCallbackFunction = js.ThisFunction0[

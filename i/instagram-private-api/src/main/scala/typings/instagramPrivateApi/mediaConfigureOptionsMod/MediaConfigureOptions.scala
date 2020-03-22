@@ -1,6 +1,6 @@
 package typings.instagramPrivateApi.mediaConfigureOptionsMod
 
-import typings.instagramPrivateApi.AnonCropcenterCroporiginalsize
+import typings.instagramPrivateApi.AnonCroporiginalsize
 import typings.instagramPrivateApi.AnonSourceheight
 import typings.instagramPrivateApi.instagramPrivateApiStrings.`0`
 import typings.instagramPrivateApi.instagramPrivateApiStrings.`1`
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 
 trait MediaConfigureOptions extends js.Object {
   var disable_comments: js.UndefOr[Boolean] = js.undefined
-  var edits: js.UndefOr[AnonCropcenterCroporiginalsize] = js.undefined
+  var edits: js.UndefOr[AnonCroporiginalsize] = js.undefined
   var extra: js.UndefOr[AnonSourceheight] = js.undefined
   var geotag_enabled: js.UndefOr[`1` | `0`] = js.undefined
   var height: js.UndefOr[Double] = js.undefined
@@ -31,7 +31,7 @@ object MediaConfigureOptions {
   def apply(
     upload_id: String,
     disable_comments: js.UndefOr[Boolean] = js.undefined,
-    edits: AnonCropcenterCroporiginalsize = null,
+    edits: AnonCroporiginalsize = null,
     extra: AnonSourceheight = null,
     geotag_enabled: `1` | `0` = null,
     height: Int | Double = null,

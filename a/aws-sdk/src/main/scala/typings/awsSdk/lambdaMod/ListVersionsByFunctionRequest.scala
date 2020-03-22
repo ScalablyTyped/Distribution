@@ -15,7 +15,7 @@ trait ListVersionsByFunctionRequest extends js.Object {
     */
   var Marker: js.UndefOr[String] = js.native
   /**
-    * Limit the number of versions that are returned.
+    * The maximum number of versions to return.
     */
   var MaxItems: js.UndefOr[MaxListItems] = js.native
 }

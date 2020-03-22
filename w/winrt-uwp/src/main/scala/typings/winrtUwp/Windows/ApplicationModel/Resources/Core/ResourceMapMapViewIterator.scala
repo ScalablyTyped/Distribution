@@ -1,6 +1,6 @@
 package typings.winrtUwp.Windows.ApplicationModel.Resources.Core
 
-import typings.winrtUwp.AnonItemsReturnValueAny
+import typings.winrtUwp.AnonItemsIKeyValuePair
 import typings.winrtUwp.Windows.Foundation.Collections.IKeyValuePair
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,7 +17,7 @@ abstract class ResourceMapMapViewIterator () extends js.Object {
   /**
     * Returns all the items in the ResourceMapMapView .
     */
-  def getMany(): AnonItemsReturnValueAny = js.native
+  def getMany(): AnonItemsIKeyValuePair = js.native
   /**
     * Moves the iterator forward to the next item and returns HasCurrent .
     * @return TRUE if the iterator refers to a valid item that is in the map view, and otherwise FALSE.

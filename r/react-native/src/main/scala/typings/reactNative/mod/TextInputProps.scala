@@ -1,6 +1,6 @@
 package typings.reactNative.mod
 
-import typings.reactNative.AnonEndStart
+import typings.reactNative.AnonStart
 import typings.reactNative.reactNativeStrings.URL
 import typings.reactNative.reactNativeStrings.`box-none`
 import typings.reactNative.reactNativeStrings.`box-only`
@@ -241,7 +241,7 @@ trait TextInputProps
     * The start and end of the text input's selection. Set start and end to
     * the same value to position the cursor.
     */
-  var selection: js.UndefOr[AnonEndStart] = js.undefined
+  var selection: js.UndefOr[AnonStart] = js.undefined
   /**
     * The highlight (and cursor on ios) color of the text input
     */
@@ -352,7 +352,7 @@ object TextInputProps {
     scrollEnabled: js.UndefOr[Boolean] = js.undefined,
     secureTextEntry: js.UndefOr[Boolean] = js.undefined,
     selectTextOnFocus: js.UndefOr[Boolean] = js.undefined,
-    selection: AnonEndStart = null,
+    selection: AnonStart = null,
     selectionColor: String = null,
     selectionState: DocumentSelectionState = null,
     shouldRasterizeIOS: js.UndefOr[Boolean] = js.undefined,

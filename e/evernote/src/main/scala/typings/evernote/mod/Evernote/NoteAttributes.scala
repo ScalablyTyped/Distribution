@@ -1,7 +1,7 @@
 package typings.evernote.mod.Evernote
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.evernote.AnonAltitudeApplicationData
+import typings.evernote.AnonApplicationData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -181,7 +181,7 @@ import scala.scalajs.js.annotation._
 @JSImport("evernote", "Evernote.NoteAttributes")
 @js.native
 class NoteAttributes () extends js.Object {
-  def this(args: AnonAltitudeApplicationData) = this()
+  def this(args: AnonApplicationData) = this()
   var altitude: Double = js.native
   var applicationData: LazyMap = js.native
   var author: String = js.native

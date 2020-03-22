@@ -2,11 +2,11 @@ package typings.googleapis.plusDomainsV1Mod.plusDomainsV1
 
 import typings.googleapis.AnonCoverInfo
 import typings.googleapis.AnonDepartment
-import typings.googleapis.AnonFamilyNameFormatted
+import typings.googleapis.AnonFormatted
 import typings.googleapis.AnonIsDefault
 import typings.googleapis.AnonLabelType
 import typings.googleapis.AnonPrimary
-import typings.googleapis.AnonTypeValue
+import typings.googleapis.AnonValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -55,7 +55,7 @@ trait SchemaPerson extends js.Object {
     * these email addresses, or the email scope can be used to retrieve just
     * the Google account email address.
     */
-  var emails: js.UndefOr[js.Array[AnonTypeValue]] = js.native
+  var emails: js.UndefOr[js.Array[AnonValue]] = js.native
   /**
     * ETag of this response for caching purposes.
     */
@@ -86,7 +86,7 @@ trait SchemaPerson extends js.Object {
     * An object representation of the individual components of a person&#39;s
     * name.
     */
-  var name: js.UndefOr[AnonFamilyNameFormatted] = js.native
+  var name: js.UndefOr[AnonFormatted] = js.native
   /**
     * The nickname of this person.
     */
@@ -159,14 +159,14 @@ object SchemaPerson {
     currentLocation: String = null,
     displayName: String = null,
     domain: String = null,
-    emails: js.Array[AnonTypeValue] = null,
+    emails: js.Array[AnonValue] = null,
     etag: String = null,
     gender: String = null,
     id: String = null,
     image: AnonIsDefault = null,
     isPlusUser: js.UndefOr[Boolean] = js.undefined,
     kind: String = null,
-    name: AnonFamilyNameFormatted = null,
+    name: AnonFormatted = null,
     nickname: String = null,
     objectType: String = null,
     occupation: String = null,

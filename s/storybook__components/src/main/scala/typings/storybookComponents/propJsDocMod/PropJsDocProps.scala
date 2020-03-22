@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PropJsDocProps extends js.Object {
-  var tags: JsDocTags
+  var tags: JsDocTags = js.native
 }
 
 object PropJsDocProps {

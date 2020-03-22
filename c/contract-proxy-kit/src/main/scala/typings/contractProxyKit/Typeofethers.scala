@@ -24,7 +24,7 @@ trait Typeofethers extends js.Object {
   val HDNode: TypeofHDNode
   var Interface: Instantiable1[/* abi */ js.Array[String | ParamType], typings.ethers.mod.ethers.Interface]
   var SigningKey: Instantiable1[/* privateKey */ Arrayish, typings.ethers.mod.ethers.SigningKey]
-  var Wallet: TypeofClassWallet
+  var Wallet: TypeofWallet
   val constants: AnonAddressZero
   val errors: Typeoferrors
   val platform: node
@@ -47,7 +47,7 @@ object Typeofethers {
     HDNode: TypeofHDNode,
     Interface: Instantiable1[/* abi */ js.Array[String | ParamType], Interface],
     SigningKey: Instantiable1[/* privateKey */ Arrayish, SigningKey],
-    Wallet: TypeofClassWallet,
+    Wallet: TypeofWallet,
     constants: AnonAddressZero,
     errors: Typeoferrors,
     platform: node,

@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply[TRecord, TResult](config: String): Knex[TRecord, TResult] = js.native
-  def apply[TRecord, TResult](config: Config): Knex[TRecord, TResult] = js.native
+  def apply[TRecord, TResult](config: Config[_]): Knex[TRecord, TResult] = js.native
 }
 

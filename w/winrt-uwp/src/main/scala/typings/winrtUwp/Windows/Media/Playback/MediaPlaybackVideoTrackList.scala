@@ -2,7 +2,7 @@ package typings.winrtUwp.Windows.Media.Playback
 
 import typings.std.Array
 import typings.winrtUwp.AnonIndex
-import typings.winrtUwp.AnonItemsReturnValueNumberVideoTrack
+import typings.winrtUwp.AnonItemsVideoTrack
 import typings.winrtUwp.Windows.Foundation.Collections.IIterator
 import typings.winrtUwp.Windows.Foundation.EventHandler
 import typings.winrtUwp.Windows.Foundation.TypedEventHandler
@@ -43,7 +43,7 @@ abstract class MediaPlaybackVideoTrackList () extends Array[VideoTrack] {
     * Retrieves the video tracks that start at the specified index in the list.
     * @param startIndex The zero-based index of the start of the video tracks in the list.
     */
-  def getMany(startIndex: Double): AnonItemsReturnValueNumberVideoTrack = js.native
+  def getMany(startIndex: Double): AnonItemsVideoTrack = js.native
   def indexOf(value: VideoTrack, extra: js.Any*): AnonIndex = js.native
   /* hack */
   @JSName("indexOf")

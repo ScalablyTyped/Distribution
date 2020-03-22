@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 object gridStyleIndexNativeMod extends js.Object {
   @js.native
   object default extends js.Object {
-    var grayBorderBox: AnonBorderColor = js.native
+    var grayBorderBox: AnonBorderColorString = js.native
     var icon: AnonHeightWidth = js.native
-    var text: AnonColorFontSizeMarginTop = js.native
+    var text: AnonMarginTop = js.native
   }
   
 }

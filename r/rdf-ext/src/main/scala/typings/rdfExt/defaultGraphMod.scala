@@ -11,7 +11,7 @@ object defaultGraphMod extends js.Object {
   @js.native
   trait DefaultGraphExt extends DefaultGraph {
     def toCanonical(): String = js.native
-    def toJSON(): AnonTermTypeValue = js.native
+    def toJSON(): AnonValue = js.native
   }
   
 }

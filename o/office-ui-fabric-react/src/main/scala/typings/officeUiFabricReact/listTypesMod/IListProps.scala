@@ -123,6 +123,11 @@ trait IListProps[T] extends HTMLAttributes[List[T] | HTMLDivElement] {
     * the height and passed in heights will be ignored.
     */
   var getPageStyle: js.UndefOr[js.Function1[/* page */ IPage[T], _]] = js.undefined
+  /**
+    * Boolean value to disable scroll state updates. This will cause the isScrolling argument in onRenderCell to always be undefined.
+    * This is a performance optimization to let List skip a render cycle by not updating its scrolling state.
+    */
+  var ignoreScrollingState: js.UndefOr[Boolean] = js.undefined
   /** Items to render. */
   var items: js.UndefOr[js.Array[T]] = js.undefined
   /** Optional callback for monitoring when a page is added. */
@@ -271,6 +276,7 @@ object IListProps {
     getPageStyle: /* page */ IPage[T] => _ = null,
     hidden: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
+    ignoreScrollingState: js.UndefOr[Boolean] = js.undefined,
     inlist: js.Any = null,
     inputMode: none | text | tel | url | email | numeric | decimal | search = null,
     is: String = null,
@@ -465,6 +471,7 @@ object IListProps {
     if (getPageStyle != null) __obj.updateDynamic("getPageStyle")(js.Any.fromFunction1(getPageStyle))
     if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreScrollingState)) __obj.updateDynamic("ignoreScrollingState")(ignoreScrollingState.asInstanceOf[js.Any])
     if (inlist != null) __obj.updateDynamic("inlist")(inlist.asInstanceOf[js.Any])
     if (inputMode != null) __obj.updateDynamic("inputMode")(inputMode.asInstanceOf[js.Any])
     if (is != null) __obj.updateDynamic("is")(is.asInstanceOf[js.Any])

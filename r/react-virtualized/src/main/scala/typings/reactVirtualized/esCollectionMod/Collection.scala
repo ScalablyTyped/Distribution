@@ -4,8 +4,8 @@ import typings.react.mod.Component
 import typings.react.mod.ReactNode
 import typings.reactVirtualized.AnonAlign
 import typings.reactVirtualized.AnonArialabel
-import typings.reactVirtualized.AnonArialabelCellGroupRenderer
-import typings.reactVirtualized.AnonIsScrolling
+import typings.reactVirtualized.AnonCellGroupRenderer
+import typings.reactVirtualized.isScrollingbooleanSizeInf
 import typings.reactVirtualized.mod.ScrollPosition
 import typings.reactVirtualized.mod.SizeInfo
 import scala.scalajs.js
@@ -18,7 +18,7 @@ class Collection ()
   extends Component[CollectionProps, js.Object, js.Any] {
   /** CellLayoutManager interface */
   def calculateSizeAndPositionData(): Unit = js.native
-  def cellRenderers(params: AnonIsScrolling with SizeInfo): js.Array[ReactNode] = js.native
+  def cellRenderers(params: isScrollingbooleanSizeInf): js.Array[ReactNode] = js.native
   /**
     * Returns the most recently rendered set of cell indices.
     */
@@ -36,7 +36,7 @@ class Collection ()
 @JSImport("react-virtualized/dist/es/Collection", "Collection")
 @js.native
 object Collection extends js.Object {
-  var defaultProps: AnonArialabelCellGroupRenderer = js.native
+  var defaultProps: AnonCellGroupRenderer = js.native
   var propTypes: AnonArialabel = js.native
 }
 

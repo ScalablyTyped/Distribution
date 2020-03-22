@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "rc-notification" : "4.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "rc-notification" : "4.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

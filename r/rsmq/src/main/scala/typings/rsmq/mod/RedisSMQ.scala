@@ -27,8 +27,8 @@ trait RedisSMQ extends js.Object {
   def quit(): Unit
   def receiveMessage(opts: ReceiveMessageOptions, cb: Callback[QueueMessage | js.Object]): Unit
   def receiveMessageAsync(opts: ReceiveMessageOptions): js.Promise[QueueMessage | js.Object]
-  def sendMessage(opts: SendMessageOptions, cb: Callback[Double]): Unit
-  def sendMessageAsync(opts: SendMessageOptions): js.Promise[Double]
+  def sendMessage(opts: SendMessageOptions, cb: Callback[String]): Unit
+  def sendMessageAsync(opts: SendMessageOptions): js.Promise[String]
   def setQueueAttributes(opts: SetQueueAttributesOptions, cb: Callback[QueueAttributes]): Unit
   def setQueueAttributesAsync(opts: SetQueueAttributesOptions): js.Promise[QueueAttributes]
 }
@@ -53,8 +53,8 @@ object RedisSMQ {
     quit: () => Unit,
     receiveMessage: (ReceiveMessageOptions, Callback[QueueMessage | js.Object]) => Unit,
     receiveMessageAsync: ReceiveMessageOptions => js.Promise[QueueMessage | js.Object],
-    sendMessage: (SendMessageOptions, Callback[Double]) => Unit,
-    sendMessageAsync: SendMessageOptions => js.Promise[Double],
+    sendMessage: (SendMessageOptions, Callback[String]) => Unit,
+    sendMessageAsync: SendMessageOptions => js.Promise[String],
     setQueueAttributes: (SetQueueAttributesOptions, Callback[QueueAttributes]) => Unit,
     setQueueAttributesAsync: SetQueueAttributesOptions => js.Promise[QueueAttributes]
   ): RedisSMQ = {

@@ -14,9 +14,9 @@ object cascaderCascaderMod extends js.Object {
   trait Cascader
     extends Component[CascaderProps, js.Any, js.Any] {
     @JSName("state")
-    var state_Cascader: AnonValueAnyArray = js.native
+    var state_Cascader: AnonValueArray = js.native
     @JSName("componentWillReceiveProps")
-    def componentWillReceiveProps_MCascader(nextProps: AnonData): Unit = js.native
+    def componentWillReceiveProps_MCascader(nextProps: AnonDataValue): Unit = js.native
     def getCols(): js.Array[Element] = js.native
     def getValue(d: js.Any, `val`: js.Any): js.Array[_] = js.native
     def onValueChange(value: js.Any, index: js.Any): Unit = js.native
@@ -28,7 +28,7 @@ object cascaderCascaderMod extends js.Object {
   /* static members */
   @js.native
   object default extends js.Object {
-    var defaultProps: AnonColsData = js.native
+    var defaultProps: AnonData = js.native
   }
   
 }

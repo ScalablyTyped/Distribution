@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "fkill" : "6.2.0"
+      "fkill" : "7.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "fkill" : "6.2.0"
+      "fkill" : "7.0.0"
     }
   ],
   "compile-devDependencies" : [

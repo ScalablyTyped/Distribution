@@ -2,6 +2,7 @@ package typings.jupyterlabDocmanager.managerMod
 
 import typings.jupyterlabDocmanager.managerMod.DocumentManager.IOptions
 import typings.jupyterlabDocmanager.tokensMod.IDocumentManager
+import typings.luminoSignaling.mod.ISignal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,6 +40,7 @@ class DocumentManager_ protected () extends IDocumentManager {
     * of the widget and launching of the kernel are identical.
     */
   var _createOrOpenDocument: js.Any = js.native
+  var _dialogs: js.Any = js.native
   /**
     * Find a context for a given path and factory name.
     */
@@ -69,6 +71,25 @@ class DocumentManager_ protected () extends IDocumentManager {
   /* CompleteClass */
   override val isDisposed: Boolean = js.native
   /**
+    * A signal emitted when one of the documents is activated.
+    */
+  @JSName("activateRequested")
+  def activateRequested_MDocumentManager_(): ISignal[this.type, String] = js.native
+  /**
+    * Determines the time interval for autosave in seconds.
+    */
+  @JSName("autosaveInterval")
+  def autosaveInterval_MDocumentManager_(): Double = js.native
+  @JSName("autosaveInterval")
+  def autosaveInterval_MDocumentManager_(value: Double): js.Any = js.native
+  /**
+    * Whether to autosave documents.
+    */
+  @JSName("autosave")
+  def autosave_MDocumentManager_(): Boolean = js.native
+  @JSName("autosave")
+  def autosave_MDocumentManager_(value: Boolean): js.Any = js.native
+  /**
     * Dispose of the resources held by the object.
     *
     * #### Notes
@@ -81,5 +102,10 @@ class DocumentManager_ protected () extends IDocumentManager {
     */
   /* CompleteClass */
   override def dispose(): Unit = js.native
+  /**
+    * Get whether the document manager has been disposed.
+    */
+  @JSName("isDisposed")
+  def isDisposed_MDocumentManager_(): Boolean = js.native
 }
 

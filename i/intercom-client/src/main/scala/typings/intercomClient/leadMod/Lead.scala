@@ -2,9 +2,9 @@ package typings.intercomClient.leadMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.intercomClient.AnonCompanies
-import typings.intercomClient.AnonSegmentlist
-import typings.intercomClient.AnonSocialprofilelist
-import typings.intercomClient.AnonTaglist
+import typings.intercomClient.AnonSegments
+import typings.intercomClient.AnonSocialprofiles
+import typings.intercomClient.AnonTags
 import typings.intercomClient.intercomClientStrings.contact
 import typings.intercomClient.userMod.Avatar
 import typings.intercomClient.userMod.LocationData
@@ -25,9 +25,9 @@ trait Lead extends js.Object {
   var name: String | Null
   var phone: String | Null
   var referrer: String | Null
-  var segments: AnonSegmentlist
-  var social_profiles: AnonSocialprofilelist
-  var tags: AnonTaglist
+  var segments: AnonSegments
+  var social_profiles: AnonSocialprofiles
+  var tags: AnonTags
   var `type`: contact
   var unsubscribed_from_emails: Boolean
   val updated_at: Double
@@ -44,9 +44,9 @@ object Lead {
     custom_attributes: StringDictionary[js.Any],
     id: String,
     location_data: LocationData | js.Object,
-    segments: AnonSegmentlist,
-    social_profiles: AnonSocialprofilelist,
-    tags: AnonTaglist,
+    segments: AnonSegments,
+    social_profiles: AnonSocialprofiles,
+    tags: AnonTags,
     `type`: contact,
     unsubscribed_from_emails: Boolean,
     updated_at: Double,

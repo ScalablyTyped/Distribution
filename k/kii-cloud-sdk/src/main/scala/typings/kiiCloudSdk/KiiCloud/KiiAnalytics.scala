@@ -1,6 +1,6 @@
 package typings.kiiCloudSdk.KiiCloud
 
-import typings.kiiCloudSdk.AnonErrorFailure
+import typings.kiiCloudSdk.Anon2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -181,6 +181,6 @@ object KiiAnalytics extends js.Object {
     *     </ul>
     */
   def trackEventWithExtrasAndCallbacks(eventName: String, extras: js.Any): js.Promise[Unit] = js.native
-  def trackEventWithExtrasAndCallbacks(eventName: String, extras: js.Any, callbacks: AnonErrorFailure): js.Promise[Unit] = js.native
+  def trackEventWithExtrasAndCallbacks(eventName: String, extras: js.Any, callbacks: Anon2): js.Promise[Unit] = js.native
 }
 

@@ -21,7 +21,7 @@ object mod extends js.Object {
     @JSName("clear")
     var clear_Original: js.Function0[Unit] = js.native
     @JSName("getItem")
-    var getItem_Original: FnFallback = js.native
+    var getItem_Original: FnCall = js.native
     @JSName("removeItem")
     var removeItem_Original: js.Function1[/* key */ String, Unit] = js.native
     @JSName("setItem")

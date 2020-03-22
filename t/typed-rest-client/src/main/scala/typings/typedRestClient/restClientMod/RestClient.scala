@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("typed-rest-client/RestClient", "RestClient")
 @js.native
-class RestClient protected () extends js.Object {
+class RestClient () extends js.Object {
   /**
     * Creates an instance of the RestClient
     * @constructor
@@ -19,10 +19,26 @@ class RestClient protected () extends js.Object {
     * @param {ifm.IRequestOptions} requestOptions - options for each http requests (http proxy setting, socket timeout)
     */
   def this(userAgent: String) = this()
+  def this(userAgent: js.UndefOr[scala.Nothing], baseUrl: String) = this()
   def this(userAgent: String, baseUrl: String) = this()
+  def this(userAgent: Null, baseUrl: String) = this()
+  def this(userAgent: js.UndefOr[scala.Nothing], baseUrl: String, handlers: js.Array[IRequestHandler]) = this()
   def this(userAgent: String, baseUrl: String, handlers: js.Array[IRequestHandler]) = this()
+  def this(userAgent: Null, baseUrl: String, handlers: js.Array[IRequestHandler]) = this()
+  def this(
+    userAgent: js.UndefOr[scala.Nothing],
+    baseUrl: String,
+    handlers: js.Array[IRequestHandler],
+    requestOptions: typings.typedRestClient.interfacesMod.IRequestOptions
+  ) = this()
   def this(
     userAgent: String,
+    baseUrl: String,
+    handlers: js.Array[IRequestHandler],
+    requestOptions: typings.typedRestClient.interfacesMod.IRequestOptions
+  ) = this()
+  def this(
+    userAgent: Null,
     baseUrl: String,
     handlers: js.Array[IRequestHandler],
     requestOptions: typings.typedRestClient.interfacesMod.IRequestOptions

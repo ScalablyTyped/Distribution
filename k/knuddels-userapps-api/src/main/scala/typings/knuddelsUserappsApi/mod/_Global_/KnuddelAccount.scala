@@ -1,6 +1,6 @@
 package typings.knuddelsUserappsApi.mod._Global_
 
-import typings.knuddelsUserappsApi.AnonMessage
+import typings.knuddelsUserappsApi.AnonOnError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,6 +43,6 @@ class KnuddelAccount () extends js.Object {
   		 * @see https://developer.knuddels.de/docs/classes/KnuddelAccount.html#method_use
   		 */
   def use(knuddelAmount: KnuddelAmount, displayReasonText: java.lang.String): Unit = js.native
-  def use(knuddelAmount: KnuddelAmount, displayReasonText: java.lang.String, parameters: AnonMessage): Unit = js.native
+  def use(knuddelAmount: KnuddelAmount, displayReasonText: java.lang.String, parameters: AnonOnError): Unit = js.native
 }
 

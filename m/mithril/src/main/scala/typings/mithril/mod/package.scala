@@ -27,7 +27,7 @@ package object mod {
   /** Components are a mechanism to encapsulate parts of a view to make code easier to organize and/or reuse. Components can be consumed via the m() utility. */
   /* Rewritten from type alias, can be one of: 
     - typings.mithril.mod.Component[A, S]
-    - typings.mithril.AnonVnode[A]
+    - typings.mithril.AnonInstantiable[A]
     - typings.mithril.mod.FactoryComponent[A]
   */
   type ComponentTypes[A, S /* <: typings.mithril.mod.Lifecycle[A, S] */] = (typings.mithril.mod._ComponentTypes[A, S]) | typings.mithril.mod.FactoryComponent[A]

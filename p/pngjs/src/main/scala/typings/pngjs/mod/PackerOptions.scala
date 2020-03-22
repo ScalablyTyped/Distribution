@@ -1,7 +1,7 @@
 package typings.pngjs.mod
 
 import typings.pngjs.AnonBlue
-import typings.pngjs.FnOptions
+import typings.pngjs.FnCall
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ trait PackerOptions extends js.Object {
   var bitDepth: js.UndefOr[BitDepth] = js.undefined
   var colorType: js.UndefOr[ColorType] = js.undefined
   var deflateChunkSize: js.UndefOr[Double] = js.undefined
-  var deflateFactory: js.UndefOr[FnOptions] = js.undefined
+  var deflateFactory: js.UndefOr[FnCall] = js.undefined
   var deflateLevel: js.UndefOr[Double] = js.undefined
   var deflateStrategy: js.UndefOr[Double] = js.undefined
   var filterType: js.UndefOr[Double | js.Array[Double]] = js.undefined
@@ -26,7 +26,7 @@ object PackerOptions {
     bitDepth: BitDepth = null,
     colorType: ColorType = null,
     deflateChunkSize: Int | Double = null,
-    deflateFactory: FnOptions = null,
+    deflateFactory: FnCall = null,
     deflateLevel: Int | Double = null,
     deflateStrategy: Int | Double = null,
     filterType: Double | js.Array[Double] = null,

@@ -21,6 +21,9 @@ class KnowledgeBase () extends IKnowledgeBase {
   /** KnowledgeBase displayName. */
   @JSName("displayName")
   var displayName_KnowledgeBase: String = js.native
+  /** KnowledgeBase languageCode. */
+  @JSName("languageCode")
+  var languageCode_KnowledgeBase: String = js.native
   /** KnowledgeBase name. */
   @JSName("name")
   var name_KnowledgeBase: String = js.native

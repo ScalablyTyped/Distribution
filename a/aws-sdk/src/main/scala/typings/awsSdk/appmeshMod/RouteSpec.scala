@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait RouteSpec extends js.Object {
   /**
-    * An object that represents the specification of a GRPC route.
+    * An object that represents the specification of a gRPC route.
     */
   var grpcRoute: js.UndefOr[GrpcRoute] = js.native
   /**
-    * An object that represents the specification of an HTTP2 route.
+    * An object that represents the specification of an HTTP/2 route.
     */
   var http2Route: js.UndefOr[HttpRoute] = js.native
   /**

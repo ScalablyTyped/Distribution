@@ -1,11 +1,11 @@
 package typings.echarts.echarts.EChartOption
 
-import typings.echarts.AnonAnimationAnimationDelay
-import typings.echarts.AnonAnimationAnimationDelayAnimationDelayUpdate
-import typings.echarts.AnonAnimationAnimationDelayAnimationDelayUpdateAnimationDuration
-import typings.echarts.AnonBackgroundColorBorderColor
-import typings.echarts.AnonBorderColorBorderType
-import typings.echarts.AnonItemStyleAnonBorderColorBorderType
+import typings.echarts.AnonAnimationDelay
+import typings.echarts.AnonAnimationDelayUpdate
+import typings.echarts.AnonAnimationDuration
+import typings.echarts.AnonBorderType
+import typings.echarts.AnonExtraCssText
+import typings.echarts.AnonItemStyleAnonBorderType
 import typings.echarts.echarts.EChartOption.SeriesBoxplot.DataObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -183,7 +183,7 @@ trait SeriesBoxplot_ extends js.Object {
   /**
     * @see https://echarts.apache.org/en/option.html#series-boxplot.emphasis
     */
-  var emphasis: js.UndefOr[AnonItemStyleAnonBorderColorBorderType] = js.undefined
+  var emphasis: js.UndefOr[AnonItemStyleAnonBorderType] = js.undefined
   /**
     * Define what is encoded to for each dimension of `data`.
     * For example:
@@ -242,7 +242,7 @@ trait SeriesBoxplot_ extends js.Object {
   /**
     * @see https://echarts.apache.org/en/option.html#series-boxplot.itemStyle
     */
-  var itemStyle: js.UndefOr[AnonBorderColorBorderType] = js.undefined
+  var itemStyle: js.UndefOr[AnonBorderType] = js.undefined
   /**
     * Layout methods, whose optional values are:
     *
@@ -279,21 +279,21 @@ trait SeriesBoxplot_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-boxplot.markArea
     */
-  var markArea: js.UndefOr[AnonAnimationAnimationDelayAnimationDelayUpdate] = js.undefined
+  var markArea: js.UndefOr[AnonAnimationDelayUpdate] = js.undefined
   /**
     * Use a line in the chart to illustrate.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-boxplot.markLine
     */
-  var markLine: js.UndefOr[AnonAnimationAnimationDelay] = js.undefined
+  var markLine: js.UndefOr[AnonAnimationDelay] = js.undefined
   /**
     * Mark point in a chart.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-boxplot.markPoint
     */
-  var markPoint: js.UndefOr[AnonAnimationAnimationDelayAnimationDelayUpdateAnimationDuration] = js.undefined
+  var markPoint: js.UndefOr[AnonAnimationDuration] = js.undefined
   /**
     * Series name used for displaying in
     * [tooltip](https://echarts.apache.org/en/option.html#tooltip)
@@ -320,7 +320,7 @@ trait SeriesBoxplot_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-boxplot.tooltip
     */
-  var tooltip: js.UndefOr[AnonBackgroundColorBorderColor] = js.undefined
+  var tooltip: js.UndefOr[AnonExtraCssText] = js.undefined
   /**
     * @default
     * "boxplot"
@@ -390,19 +390,19 @@ object SeriesBoxplot_ {
     coordinateSystem: String = null,
     data: js.Array[js.Array[Double | DataObject]] = null,
     dimensions: js.Array[_] = null,
-    emphasis: AnonItemStyleAnonBorderColorBorderType = null,
+    emphasis: AnonItemStyleAnonBorderType = null,
     encode: js.Object = null,
     hoverAnimation: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
-    itemStyle: AnonBorderColorBorderType = null,
+    itemStyle: AnonBorderType = null,
     layout: String = null,
     legendHoverLink: js.UndefOr[Boolean] = js.undefined,
-    markArea: AnonAnimationAnimationDelayAnimationDelayUpdate = null,
-    markLine: AnonAnimationAnimationDelay = null,
-    markPoint: AnonAnimationAnimationDelayAnimationDelayUpdateAnimationDuration = null,
+    markArea: AnonAnimationDelayUpdate = null,
+    markLine: AnonAnimationDelay = null,
+    markPoint: AnonAnimationDuration = null,
     name: String = null,
     silent: js.UndefOr[Boolean] = js.undefined,
-    tooltip: AnonBackgroundColorBorderColor = null,
+    tooltip: AnonExtraCssText = null,
     `type`: String = null,
     xAxisIndex: Int | Double = null,
     yAxisIndex: Int | Double = null,

@@ -29,10 +29,10 @@ object rayMod extends js.Object {
     def distanceToPlane(plane: Plane): Double = js.native
     def distanceToPoint(point: Vector3): Double = js.native
     def equals(ray: Ray): Boolean = js.native
-    def intersectBox(box: Box3, target: Vector3): Vector3 = js.native
-    def intersectPlane(plane: Plane, target: Vector3): Vector3 = js.native
-    def intersectSphere(sphere: Sphere, target: Vector3): Vector3 = js.native
-    def intersectTriangle(a: Vector3, b: Vector3, c: Vector3, backfaceCulling: Boolean, target: Vector3): Vector3 = js.native
+    def intersectBox(box: Box3, target: Vector3): Vector3 | Null = js.native
+    def intersectPlane(plane: Plane, target: Vector3): Vector3 | Null = js.native
+    def intersectSphere(sphere: Sphere, target: Vector3): Vector3 | Null = js.native
+    def intersectTriangle(a: Vector3, b: Vector3, c: Vector3, backfaceCulling: Boolean, target: Vector3): Vector3 | Null = js.native
     def intersectsBox(box: Box3): Boolean = js.native
     def intersectsPlane(plane: Plane): Boolean = js.native
     def intersectsSphere(sphere: Sphere): Boolean = js.native
@@ -48,7 +48,7 @@ object rayMod extends js.Object {
     	 * @deprecated Use {@link Ray#intersectsSphere .intersectsSphere()} instead.
     	 */
     def isIntersectionSphere(s: js.Any): js.Any = js.native
-    def lookAt(v: Vector3): Vector3 = js.native
+    def lookAt(v: Vector3): Ray = js.native
     def recast(t: Double): Ray = js.native
     def set(origin: Vector3, direction: Vector3): Ray = js.native
   }

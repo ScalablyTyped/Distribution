@@ -1,8 +1,13 @@
 package typings.exceljs.mod
 
-import typings.exceljs.AnonEditAs
-import typings.exceljs.AnonImage
+import typings.exceljs.AnonImageId
 import typings.exceljs.AnonIncludeEmpty
+import typings.exceljs.PartialColumn
+import typings.exceljs.PartialColumnAlignment
+import typings.exceljs.PartialPageSetup
+import typings.exceljs.PartialWorksheetProtectio
+import typings.exceljs.editAsstringhyperlinksIma
+import typings.exceljs.editAsstringhyperlinksImaEditAs
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -32,7 +37,7 @@ trait Worksheet extends js.Object {
   	 * Note: these column structures are a workbook-building convenience only,
   	 * apart from the column width, they will not be fully persisted.
   	 */
-  var columns: js.Array[Partial[Column]] = js.native
+  var columns: js.Array[PartialColumn] = js.native
   val dimensions: Range = js.native
   val hasMerges: Boolean = js.native
   /**
@@ -49,7 +54,7 @@ trait Worksheet extends js.Object {
   /**
   	 * Contains information related to how a worksheet is printed
   	 */
-  var pageSetup: Partial[PageSetup] = js.native
+  var pageSetup: PartialPageSetup = js.native
   /**
   	 * Worksheet Properties
   	 */
@@ -71,12 +76,13 @@ trait Worksheet extends js.Object {
   	 * Using the image id from `Workbook.addImage`, set the background to the worksheet
   	 */
   def addBackgroundImage(imageId: Double): Unit = js.native
-  def addImage(imageId: Double, range: AnonEditAs with ImageRange with ImagePosition): Unit = js.native
   /**
   	 * Using the image id from `Workbook.addImage`,
   	 * embed an image within the worksheet to cover a range
   	 */
   def addImage(imageId: Double, range: String): Unit = js.native
+  def addImage(imageId: Double, range: editAsstringhyperlinksIma): Unit = js.native
+  def addImage(imageId: Double, range: editAsstringhyperlinksImaEditAs): Unit = js.native
   def addRow(data: js.Any): Row = js.native
   /**
   	 * Add a couple of Rows by key-value, after the last current row, using the column keys,
@@ -94,7 +100,7 @@ trait Worksheet extends js.Object {
   def commit(): Unit = js.native
   def deleteColumnKey(key: String): Unit = js.native
   def destroy(): Unit = js.native
-  def eachColumnKey(callback: js.Function2[/* col */ Partial[Column], /* index */ Double, Unit]): Unit = js.native
+  def eachColumnKey(callback: js.Function2[/* col */ PartialColumnAlignment, /* index */ Double, Unit]): Unit = js.native
   /**
   	 * Iterate over all rows that have values in a worksheet
   	 */
@@ -142,13 +148,13 @@ trait Worksheet extends js.Object {
   def getCell(r: Double): Cell = js.native
   def getCell(r: Double, c: String): Cell = js.native
   def getCell(r: Double, c: Double): Cell = js.native
-  def getColumn(indexOrKey: String): Partial[Column] = js.native
+  def getColumn(indexOrKey: String): PartialColumn = js.native
   /**
   	 * Access an individual columns by key, letter and 1-based column number
   	 */
-  def getColumn(indexOrKey: Double): Partial[Column] = js.native
-  def getColumnKey(key: String): Partial[Column] = js.native
-  def getImages(): js.Array[AnonImage] = js.native
+  def getColumn(indexOrKey: Double): PartialColumn = js.native
+  def getColumnKey(key: String): PartialColumn = js.native
+  def getImages(): js.Array[AnonImageId] = js.native
   /**
   	 * Get or create row by 1-based index
   	 */
@@ -197,8 +203,8 @@ trait Worksheet extends js.Object {
   /**
   	 * Worksheet protection
   	 */
-  def protect(password: String, options: Partial[WorksheetProtection]): js.Promise[Unit] = js.native
-  def setColumnKey(key: String, value: Partial[Column]): Unit = js.native
+  def protect(password: String, options: PartialWorksheetProtectio): js.Promise[Unit] = js.native
+  def setColumnKey(key: String, value: PartialColumn): Unit = js.native
   /**
   	 * Cut one or more columns (columns to the right are shifted left)
   	 * and optionally insert more

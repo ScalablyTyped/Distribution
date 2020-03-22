@@ -9,6 +9,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait reactCalendarTimelineProps {
+  @scala.inline
+  def CursorMarkerProps: typings.reactCalendarTimeline.mod.CursorMarkerProps.type = typings.reactCalendarTimeline.mod.CursorMarkerProps
   type CursorMarkerProps = typings.reactCalendarTimeline.mod.CursorMarkerProps
   type CustomHeaderProps[Data] = typings.reactCalendarTimeline.mod.CustomHeaderProps[Data]
   @scala.inline
@@ -26,8 +28,6 @@ trait reactCalendarTimelineProps {
   @scala.inline
   def TimelineHeaderProps: typings.reactCalendarTimeline.mod.TimelineHeaderProps.type = typings.reactCalendarTimeline.mod.TimelineHeaderProps
   type TimelineHeaderProps = typings.reactCalendarTimeline.mod.TimelineHeaderProps
-  @scala.inline
-  def TimelineHeadersProps: HTMLAttributes.type = typings.react.mod.HTMLAttributes
   type TimelineHeadersProps[T] = HTMLAttributes[T]
   @scala.inline
   def TodayMarkerProps: typings.reactCalendarTimeline.mod.TodayMarkerProps.type = typings.reactCalendarTimeline.mod.TodayMarkerProps

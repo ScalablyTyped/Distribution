@@ -23,9 +23,7 @@ trait AxisProps
   var subTickCount: js.UndefOr[Double] = js.undefined
   var subTickLine: js.UndefOr[tickLine] = js.undefined
   var tickLine: js.UndefOr[typings.antvG2.mod.Styles.tickLine | Null] = js.undefined
-  var title: js.UndefOr[
-    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify G2.AxisTile */ js.Any) | Boolean | Null
-  ] = js.undefined
+  var title: js.UndefOr[typings.antvG2.mod.AxisTitle | Boolean | Null] = js.undefined
   var visible: js.UndefOr[Boolean] = js.undefined
   var zIndex: js.UndefOr[Double] = js.undefined
 }
@@ -45,7 +43,7 @@ object AxisProps {
     subTickCount: Int | Double = null,
     subTickLine: tickLine = null,
     tickLine: tickLine = null,
-    title: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify G2.AxisTile */ js.Any) | Boolean = null,
+    title: typings.antvG2.mod.AxisTitle | Boolean = null,
     visible: js.UndefOr[Boolean] = js.undefined,
     zIndex: Int | Double = null
   ): AxisProps = {

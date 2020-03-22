@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 @JSImport("vega-typings/types/spec/padding", JSImport.Namespace)
 @js.native
 object paddingMod extends js.Object {
-  type Padding = Double | AnonBottomLeft
+  type Padding = Double | AnonLeft
 }
 

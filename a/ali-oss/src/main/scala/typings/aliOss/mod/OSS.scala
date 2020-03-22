@@ -3,16 +3,16 @@ package typings.aliOss.mod
 import typings.aliOss.AnonAcl
 import typings.aliOss.AnonAllowEmpty
 import typings.aliOss.AnonBucket
-import typings.aliOss.AnonDataResNormalSuccessResponse
+import typings.aliOss.AnonDataPutChannelConf
 import typings.aliOss.AnonEnable
 import typings.aliOss.AnonEndTime
 import typings.aliOss.AnonError
 import typings.aliOss.AnonEtag
-import typings.aliOss.AnonHeadersTimeout
 import typings.aliOss.AnonName
 import typings.aliOss.AnonResRules
-import typings.aliOss.AnonResRulesArray
+import typings.aliOss.AnonRules
 import typings.aliOss.AnonSourceBucketName
+import typings.aliOss.AnonTimeout
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -113,7 +113,7 @@ trait OSS extends js.Object {
   /**
     * Get CORS rules of the bucket object.
     */
-  def getBucketCORS(name: String): js.Promise[AnonResRulesArray] = js.native
+  def getBucketCORS(name: String): js.Promise[AnonResRules] = js.native
   /**
     * Get bucket information,include CreationDate、ExtranetEndpoint、IntranetEndpoint、Location、Name、StorageClass、 Owner、AccessControlList
     */
@@ -121,8 +121,8 @@ trait OSS extends js.Object {
   /**
     * Get the bucket object lifecycle.
     */
-  def getBucketLifecycle(name: String): js.Promise[AnonResRules] = js.native
-  def getBucketLifecycle(name: String, options: RequestOptions): js.Promise[AnonResRules] = js.native
+  def getBucketLifecycle(name: String): js.Promise[AnonRules] = js.native
+  def getBucketLifecycle(name: String, options: RequestOptions): js.Promise[AnonRules] = js.native
   /**
     * Get bucket location
     */
@@ -145,8 +145,8 @@ trait OSS extends js.Object {
   /**
     * Get live channel info.
     */
-  def getChannel(id: String): js.Promise[AnonDataResNormalSuccessResponse] = js.native
-  def getChannel(id: String, options: RequestOptions): js.Promise[AnonDataResNormalSuccessResponse] = js.native
+  def getChannel(id: String): js.Promise[AnonDataPutChannelConf] = js.native
+  def getChannel(id: String, options: RequestOptions): js.Promise[AnonDataPutChannelConf] = js.native
   /**
     * Get the live channel history.
     */
@@ -331,7 +331,7 @@ trait OSS extends js.Object {
     partNo: Double,
     range: String,
     sourceData: AnonSourceBucketName,
-    options: AnonHeadersTimeout
+    options: AnonTimeout
   ): js.Promise[UploadPartResult] = js.native
   /**
     * Use the bucket.

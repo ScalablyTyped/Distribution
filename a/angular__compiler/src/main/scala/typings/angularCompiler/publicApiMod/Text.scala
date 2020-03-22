@@ -1,7 +1,6 @@
 package typings.angularCompiler.publicApiMod
 
-import typings.angularCompiler.i18nAstMod.Message
-import typings.angularCompiler.i18nAstMod.Node
+import typings.angularCompiler.i18nAstMod.I18nMeta
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation._
 class Text protected ()
   extends typings.angularCompiler.srcCompilerMod.Text {
   def this(value: String, sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan) = this()
-  def this(value: String, sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan, i18n: Message) = this()
-  def this(value: String, sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan, i18n: Node) = this()
+  def this(value: String, sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan, i18n: I18nMeta) = this()
 }
 

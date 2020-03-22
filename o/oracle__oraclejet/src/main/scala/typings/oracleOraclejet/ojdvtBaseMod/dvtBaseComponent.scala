@@ -1,6 +1,6 @@
 package typings.oracleOraclejet.ojdvtBaseMod
 
-import typings.oracleOraclejet.AnonLabelAndValue
+import typings.oracleOraclejet.AnonLabelCountWithTotal
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.mod.baseComponent
 import typings.oracleOraclejet.oracleOraclejetStrings.off
@@ -18,7 +18,7 @@ trait dvtBaseComponent[SP /* <: dvtBaseComponentSettableProperties */] extends b
   var onTrackResizeChanged: (js.Function1[/* event */ JetElementCustomEvent[on | off], _]) | Null = js.native
   var trackResize: on | off = js.native
   @JSName("translations")
-  var translations_dvtBaseComponent: AnonLabelAndValue = js.native
+  var translations_dvtBaseComponent: AnonLabelCountWithTotal = js.native
   def addEventListener(
     `type`: trackResizeChanged,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[on | off], _]
@@ -34,6 +34,6 @@ trait dvtBaseComponent[SP /* <: dvtBaseComponentSettableProperties */] extends b
   def setProperty(property: trackResize, value: off): Unit = js.native
   def setProperty(property: trackResize, value: on): Unit = js.native
   @JSName("setProperty")
-  def setProperty_translations(property: translations, value: AnonLabelAndValue): Unit = js.native
+  def setProperty_translations(property: translations, value: AnonLabelCountWithTotal): Unit = js.native
 }
 

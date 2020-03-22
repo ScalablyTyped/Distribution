@@ -11,7 +11,7 @@ object dateFnsParseISOMod extends js.Object {
   @js.native
   object default extends js.Object {
     def apply(argument: String): Date = js.native
-    def apply(argument: String, options: Anon01): Date = js.native
+    def apply(argument: String, options: AnonAdditionalDigits): Date = js.native
   }
   
 }

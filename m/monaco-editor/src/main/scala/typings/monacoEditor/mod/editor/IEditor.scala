@@ -61,6 +61,8 @@ trait IEditor extends js.Object {
   /**
     * Instructs the editor to remeasure its container. This method should
     * be called when the container of the editor gets resized.
+    *
+    * If a dimension is passed in, the passed in value will be used.
     */
   def layout(): Unit = js.native
   def layout(dimension: IDimension): Unit = js.native

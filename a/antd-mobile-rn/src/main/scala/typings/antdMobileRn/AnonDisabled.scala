@@ -6,36 +6,21 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AnonDisabled extends js.Object {
-  var disabled: Boolean
-  var placeholder: String
-  var prefixCls: String
-  var showCancelButton: Boolean
-  var styles: StringDictionary[RegisteredStyle[_]]
-  def onBlur(): Unit
-  def onChange(): Unit
-  def onClear(): Unit
-  def onFocus(): Unit
-  def onSubmit(): Unit
-}
-
-object AnonDisabled {
-  @scala.inline
-  def apply(
-    disabled: Boolean,
-    onBlur: () => Unit,
-    onChange: () => Unit,
-    onClear: () => Unit,
-    onFocus: () => Unit,
-    onSubmit: () => Unit,
-    placeholder: String,
-    prefixCls: String,
-    showCancelButton: Boolean,
-    styles: StringDictionary[RegisteredStyle[_]]
-  ): AnonDisabled = {
-    val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], onBlur = js.Any.fromFunction0(onBlur), onChange = js.Any.fromFunction0(onChange), onClear = js.Any.fromFunction0(onClear), onFocus = js.Any.fromFunction0(onFocus), onSubmit = js.Any.fromFunction0(onSubmit), placeholder = placeholder.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any], showCancelButton = showCancelButton.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[AnonDisabled]
-  }
+  var disabled: Boolean = js.native
+  var loading: Boolean = js.native
+  var pressIn: Boolean = js.native
+  var styles: StringDictionary[RegisteredStyle[_]] = js.native
+  def onClick(): Unit = js.native
+  def onClick(_underscore: js.Any): Unit = js.native
+  def onHideUnderlay(): Unit = js.native
+  def onHideUnderlay(_underscore: js.Any): Unit = js.native
+  def onPressIn(): Unit = js.native
+  def onPressIn(_underscore: js.Any): Unit = js.native
+  def onPressOut(): Unit = js.native
+  def onPressOut(_underscore: js.Any): Unit = js.native
+  def onShowUnderlay(): Unit = js.native
+  def onShowUnderlay(_underscore: js.Any): Unit = js.native
 }
 

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("gitlab", "GroupCustomAttributes")
 @js.native
-class GroupCustomAttributes ()
+class GroupCustomAttributes protected ()
   extends typings.gitlab.servicesMod.GroupCustomAttributes {
   def this(options: BaseServiceOptions) = this()
 }

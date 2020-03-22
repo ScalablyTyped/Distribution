@@ -1,8 +1,8 @@
 package typings.spex.mod
 
 import typings.spex.AnonCb
-import typings.spex.AnonData
-import typings.spex.AnonDataDelay
+import typings.spex.AnonDest
+import typings.spex.AnonLimit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,13 +17,13 @@ trait ISpexBase extends js.Object {
   def page(source: js.Function3[/* index */ Double, /* data */ js.Any, /* delay */ Double, _]): js.Promise[IPageResult] = js.native
   def page(
     source: js.Function3[/* index */ Double, /* data */ js.Any, /* delay */ Double, _],
-    options: AnonData
+    options: AnonDest
   ): js.Promise[IPageResult] = js.native
   // API: http://vitaly-t.github.io/spex/global.html#sequence
   def sequence(source: js.Function3[/* index */ Double, /* data */ js.Any, /* delay */ Double, _]): js.Promise[ISequenceResult | IArrayExt[_]] = js.native
   def sequence(
     source: js.Function3[/* index */ Double, /* data */ js.Any, /* delay */ Double, _],
-    options: AnonDataDelay
+    options: AnonLimit
   ): js.Promise[ISequenceResult | IArrayExt[_]] = js.native
 }
 

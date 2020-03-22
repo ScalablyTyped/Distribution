@@ -1,9 +1,9 @@
 package typings.ionicCore.componentsMod.LocalJSX
 
+import typings.ionicCore.animationInterfaceMod.Animation
+import typings.ionicCore.animationInterfaceMod.AnimationBuilder
 import typings.ionicCore.ionicCoreStrings.ios
 import typings.ionicCore.ionicCoreStrings.md
-import typings.ionicCore.oldAnimationAnimationInterfaceMod.Animation
-import typings.ionicCore.oldAnimationAnimationInterfaceMod.AnimationBuilder
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,12 +27,12 @@ object IonRouterOutlet {
   @scala.inline
   def apply(
     animated: js.UndefOr[Boolean] = js.undefined,
-    animation: (/* Animation */ Animation, /* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => js.Promise[Animation] = null,
+    animation: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation = null,
     mode: ios | md = null
   ): IonRouterOutlet = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.asInstanceOf[js.Any])
-    if (animation != null) __obj.updateDynamic("animation")(js.Any.fromFunction3(animation))
+    if (animation != null) __obj.updateDynamic("animation")(js.Any.fromFunction2(animation))
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonRouterOutlet]
   }

@@ -10,6 +10,8 @@ import scala.scalajs.js.annotation._
 class IcuPlaceholder protected () extends Node {
   def this(value: Icu, name: String, sourceSpan: ParseSourceSpan) = this()
   var name: String = js.native
+  /** Used to capture a message computed from a previous processing pass (see `setI18nRefs()`). */
+  var previousMessage: js.UndefOr[Message] = js.native
   var value: Icu = js.native
 }
 

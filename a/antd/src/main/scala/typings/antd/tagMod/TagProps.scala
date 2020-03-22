@@ -72,7 +72,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TagProps extends HTMLAttributes[HTMLSpanElement] {
-  var afterClose: js.UndefOr[js.Function] = js.undefined
   var closable: js.UndefOr[Boolean] = js.undefined
   var onClose: js.UndefOr[js.Function] = js.undefined
   var prefixCls: js.UndefOr[String] = js.undefined
@@ -84,7 +83,6 @@ object TagProps {
   def apply(
     about: String = null,
     accessKey: String = null,
-    afterClose: js.Function = null,
     `aria-activedescendant`: String = null,
     `aria-atomic`: js.UndefOr[Boolean] = js.undefined,
     `aria-autocomplete`: none | `inline` | list | both = null,
@@ -264,7 +262,6 @@ object TagProps {
     val __obj = js.Dynamic.literal()
     if (about != null) __obj.updateDynamic("about")(about.asInstanceOf[js.Any])
     if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
-    if (afterClose != null) __obj.updateDynamic("afterClose")(afterClose.asInstanceOf[js.Any])
     if (`aria-activedescendant` != null) __obj.updateDynamic("aria-activedescendant")(`aria-activedescendant`.asInstanceOf[js.Any])
     if (!js.isUndefined(`aria-atomic`)) __obj.updateDynamic("aria-atomic")(`aria-atomic`.asInstanceOf[js.Any])
     if (`aria-autocomplete` != null) __obj.updateDynamic("aria-autocomplete")(`aria-autocomplete`.asInstanceOf[js.Any])

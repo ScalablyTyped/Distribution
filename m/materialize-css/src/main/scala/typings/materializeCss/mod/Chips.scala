@@ -1,9 +1,8 @@
 package typings.materializeCss.mod
 
-import typings.materializeCss.M.ChipsOptions
 import typings.materializeCss.MElements
+import typings.materializeCss.PartialChipsOptions
 import typings.std.Element
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,11 +24,11 @@ object Chips extends js.Object {
     * Init Chipses
     */
   def init(els: MElements): js.Array[typings.materializeCss.M.Chips] = js.native
-  def init(els: MElements, options: Partial[ChipsOptions]): js.Array[typings.materializeCss.M.Chips] = js.native
+  def init(els: MElements, options: PartialChipsOptions): js.Array[typings.materializeCss.M.Chips] = js.native
   /**
     * Init Chips
     */
   def init(els: Element): typings.materializeCss.M.Chips = js.native
-  def init(els: Element, options: Partial[ChipsOptions]): typings.materializeCss.M.Chips = js.native
+  def init(els: Element, options: PartialChipsOptions): typings.materializeCss.M.Chips = js.native
 }
 

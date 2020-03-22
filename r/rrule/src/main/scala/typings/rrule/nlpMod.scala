@@ -4,8 +4,6 @@ import typings.rrule.i18nMod.Language
 import typings.rrule.mod.default
 import typings.rrule.totextMod.DateFormatter
 import typings.rrule.totextMod.GetText
-import typings.rrule.typesMod.Options
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +17,7 @@ object nlpMod extends js.Object {
     var fromText_Original: js.Function2[/* text */ String, /* language */ js.UndefOr[Language], default] = js.native
     var isFullyConvertible: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ToText.isFullyConvertible */ js.Any = js.native
     @JSName("parseText")
-    var parseText_Original: js.Function2[/* text */ String, /* language */ js.UndefOr[Language], Partial[Options] | Null] = js.native
+    var parseText_Original: js.Function2[/* text */ String, /* language */ js.UndefOr[Language], PartialOptions | Null] = js.native
     @JSName("toText")
     var toText_Original: js.Function4[
         /* rrule */ default, 
@@ -30,8 +28,8 @@ object nlpMod extends js.Object {
       ] = js.native
     def fromText(text: String): default = js.native
     def fromText(text: String, language: Language): default = js.native
-    def parseText(text: String): Partial[Options] | Null = js.native
-    def parseText(text: String, language: Language): Partial[Options] | Null = js.native
+    def parseText(text: String): PartialOptions | Null = js.native
+    def parseText(text: String, language: Language): PartialOptions | Null = js.native
     def toText(rrule: default): String = js.native
     def toText(
       rrule: default,
@@ -146,8 +144,8 @@ object nlpMod extends js.Object {
     */
   def fromText(text: String): default = js.native
   def fromText(text: String, language: Language): default = js.native
-  def parseText(text: String): Partial[Options] | Null = js.native
-  def parseText(text: String, language: Language): Partial[Options] | Null = js.native
+  def parseText(text: String): PartialOptions | Null = js.native
+  def parseText(text: String, language: Language): PartialOptions | Null = js.native
   def toText(rrule: default): String = js.native
   def toText(
     rrule: default,

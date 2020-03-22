@@ -1,6 +1,6 @@
 package typings.antDesignReactNative.mod
 
-import typings.antDesignReactNative.Anon
+import typings.antDesignReactNative.AnonDisabled
 import typings.antDesignReactNative.buttonMod.ButtonProps
 import typings.antDesignReactNative.buttonMod.default
 import scala.scalajs.js
@@ -17,6 +17,6 @@ class Button protected () extends default {
 @JSImport("@ant-design/react-native", "Button")
 @js.native
 object Button extends js.Object {
-  var defaultProps: Anon = js.native
+  var defaultProps: AnonDisabled = js.native
 }
 

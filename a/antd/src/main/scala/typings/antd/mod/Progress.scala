@@ -1,6 +1,5 @@
 package typings.antd.mod
 
-import typings.antd.AnonActive
 import typings.antd.AnonGapDegree
 import typings.antd.progressMod.default
 import scala.scalajs.js
@@ -16,6 +15,5 @@ class Progress () extends default
 @js.native
 object Progress extends js.Object {
   var defaultProps: AnonGapDegree = js.native
-  var propTypes: AnonActive = js.native
 }
 

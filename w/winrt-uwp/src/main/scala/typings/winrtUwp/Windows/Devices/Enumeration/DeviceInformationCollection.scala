@@ -2,7 +2,7 @@ package typings.winrtUwp.Windows.Devices.Enumeration
 
 import typings.std.Array
 import typings.winrtUwp.AnonIndex
-import typings.winrtUwp.AnonItemsReturnValueDeviceInformation
+import typings.winrtUwp.AnonItemsDeviceInformation
 import typings.winrtUwp.Windows.Foundation.Collections.IIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -29,7 +29,7 @@ abstract class DeviceInformationCollection () extends Array[DeviceInformation] {
     * Gets a range of DeviceInformation objects.
     * @param startIndex The index at which to start retrieving DeviceInformation objects.
     */
-  def getMany(startIndex: Double): AnonItemsReturnValueDeviceInformation = js.native
+  def getMany(startIndex: Double): AnonItemsDeviceInformation = js.native
   def indexOf(value: DeviceInformation, extra: js.Any*): AnonIndex = js.native
   /* hack */
   @JSName("indexOf")

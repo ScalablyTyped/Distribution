@@ -1,7 +1,7 @@
 package typings.graphqlTools.interfacesMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.graphqlTools.TypeofClassSchemaDirectiveVisitor
+import typings.graphqlTools.TypeofSchemaDirectiveVisi
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ trait IExecutableSchemaDefinition[TContext] extends js.Object {
   var parseOptions: js.UndefOr[GraphQLParseOptions] = js.undefined
   var resolverValidationOptions: js.UndefOr[IResolverValidationOptions] = js.undefined
   var resolvers: js.UndefOr[(IResolvers[_, TContext]) | (js.Array[IResolvers[_, TContext]])] = js.undefined
-  var schemaDirectives: js.UndefOr[StringDictionary[TypeofClassSchemaDirectiveVisitor]] = js.undefined
+  var schemaDirectives: js.UndefOr[StringDictionary[TypeofSchemaDirectiveVisi]] = js.undefined
   var typeDefs: ITypeDefinitions
 }
 
@@ -31,7 +31,7 @@ object IExecutableSchemaDefinition {
     parseOptions: GraphQLParseOptions = null,
     resolverValidationOptions: IResolverValidationOptions = null,
     resolvers: (IResolvers[_, TContext]) | (js.Array[IResolvers[_, TContext]]) = null,
-    schemaDirectives: StringDictionary[TypeofClassSchemaDirectiveVisitor] = null
+    schemaDirectives: StringDictionary[TypeofSchemaDirectiveVisi] = null
   ): IExecutableSchemaDefinition[TContext] = {
     val __obj = js.Dynamic.literal(typeDefs = typeDefs.asInstanceOf[js.Any])
     if (!js.isUndefined(allowUndefinedInResolve)) __obj.updateDynamic("allowUndefinedInResolve")(allowUndefinedInResolve.asInstanceOf[js.Any])

@@ -28,19 +28,7 @@ trait GatsbyGraphQLType extends js.Object
 
 object GatsbyGraphQLType {
   @scala.inline
-  def GatsbyGraphQLEnumType(config: ComposeEnumTypeConfig, kind: ENUM): GatsbyGraphQLType = {
-    val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[GatsbyGraphQLType]
-  }
-  @scala.inline
-  def GatsbyGraphQLScalarType(config: ComposeScalarTypeConfig, kind: SCALAR): GatsbyGraphQLType = {
-    val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[GatsbyGraphQLType]
-  }
-  @scala.inline
-  def GatsbyGraphQLObjectType(config: ComposeObjectTypeConfig[_, _], kind: OBJECT): GatsbyGraphQLType = {
+  def GatsbyGraphQLUnionType(config: ComposeUnionTypeConfig[_, _], kind: UNION): GatsbyGraphQLType = {
     val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GatsbyGraphQLType]
@@ -52,13 +40,25 @@ object GatsbyGraphQLType {
     __obj.asInstanceOf[GatsbyGraphQLType]
   }
   @scala.inline
-  def GatsbyGraphQLInterfaceType(config: ComposeInterfaceTypeConfig[_, _], kind: INTERFACE): GatsbyGraphQLType = {
+  def GatsbyGraphQLEnumType(config: ComposeEnumTypeConfig, kind: ENUM): GatsbyGraphQLType = {
     val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GatsbyGraphQLType]
   }
   @scala.inline
-  def GatsbyGraphQLUnionType(config: ComposeUnionTypeConfig[_, _], kind: UNION): GatsbyGraphQLType = {
+  def GatsbyGraphQLObjectType(config: ComposeObjectTypeConfig[_, _], kind: OBJECT): GatsbyGraphQLType = {
+    val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[GatsbyGraphQLType]
+  }
+  @scala.inline
+  def GatsbyGraphQLScalarType(config: ComposeScalarTypeConfig, kind: SCALAR): GatsbyGraphQLType = {
+    val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[GatsbyGraphQLType]
+  }
+  @scala.inline
+  def GatsbyGraphQLInterfaceType(config: ComposeInterfaceTypeConfig[_, _], kind: INTERFACE): GatsbyGraphQLType = {
     val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GatsbyGraphQLType]

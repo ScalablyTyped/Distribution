@@ -1,23 +1,23 @@
 package typings.markdownlint.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.markdownlint.Anon0
+import typings.markdownlint.Anon1
 import typings.markdownlint.AnonAllowdifferentnesting
 import typings.markdownlint.AnonAllowedelements
-import typings.markdownlint.AnonAsterisk
-import typings.markdownlint.AnonAtx
 import typings.markdownlint.AnonBrspaces
 import typings.markdownlint.AnonCodeblocks
-import typings.markdownlint.AnonCodeblocksHeaders
-import typings.markdownlint.AnonCodeblocksNames
 import typings.markdownlint.AnonFrontmattertitle
+import typings.markdownlint.AnonHeaders
 import typings.markdownlint.AnonIndent
 import typings.markdownlint.AnonLevel
 import typings.markdownlint.AnonLinesabove
 import typings.markdownlint.AnonMaximum
+import typings.markdownlint.AnonNames
 import typings.markdownlint.AnonOlmulti
-import typings.markdownlint.AnonOne
 import typings.markdownlint.AnonPunctuation
 import typings.markdownlint.AnonStyle
+import typings.markdownlint.AnonStyleString
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -62,7 +62,7 @@ trait MarkdownlintConfig
     * Heading style.
     * @default "consistent"
     */
-  var `header-style`: js.UndefOr[AnonAtx] = js.undefined
+  var `header-style`: js.UndefOr[AnonStyle] = js.undefined
   /**
     * Heading levels should only increment by one level at a time.
     *
@@ -74,9 +74,9 @@ trait MarkdownlintConfig
     * Heading style.
     * @default "consistent"
     */
-  var `heading-style`: js.UndefOr[AnonAtx] = js.undefined
-  var `hr-style`: js.UndefOr[AnonStyle] = js.undefined
-  var `line-length`: js.UndefOr[Boolean | AnonCodeblocksHeaders] = js.undefined
+  var `heading-style`: js.UndefOr[AnonStyle] = js.undefined
+  var `hr-style`: js.UndefOr[AnonStyleString] = js.undefined
+  var `line-length`: js.UndefOr[Boolean | AnonHeaders] = js.undefined
   /**
     * Inconsistent indentation for list items at the same level
     */
@@ -104,8 +104,8 @@ trait MarkdownlintConfig
   var `no-space-in-links`: js.UndefOr[Boolean] = js.undefined
   var `no-trailing-punctuation`: js.UndefOr[Boolean | AnonPunctuation] = js.undefined
   var `no-trailing-spaces`: js.UndefOr[Boolean | AnonBrspaces] = js.undefined
-  var `ol-prefix`: js.UndefOr[Boolean | AnonOne] = js.undefined
-  var `proper-names`: js.UndefOr[AnonCodeblocksNames] = js.undefined
+  var `ol-prefix`: js.UndefOr[Boolean | Anon1] = js.undefined
+  var `proper-names`: js.UndefOr[AnonNames] = js.undefined
   var `required-headers`: js.UndefOr[js.Array[String]] = js.undefined
   var `required-headings`: js.UndefOr[js.Array[String]] = js.undefined
   var `single-h1`: js.UndefOr[Boolean | AnonFrontmattertitle] = js.undefined
@@ -130,7 +130,7 @@ trait MarkdownlintConfig
     *
     * @default "consistent"
     */
-  var `ul-style`: js.UndefOr[AnonAsterisk] = js.undefined
+  var `ul-style`: js.UndefOr[Anon0] = js.undefined
 }
 
 object MarkdownlintConfig {
@@ -150,12 +150,12 @@ object MarkdownlintConfig {
     `first-line-heading`: AnonFrontmattertitle = null,
     `header-increment`: js.UndefOr[Boolean] = js.undefined,
     `header-start-left`: js.UndefOr[Boolean] = js.undefined,
-    `header-style`: AnonAtx = null,
+    `header-style`: AnonStyle = null,
     `heading-increment`: js.UndefOr[Boolean] = js.undefined,
     `heading-start-left`: js.UndefOr[Boolean] = js.undefined,
-    `heading-style`: AnonAtx = null,
-    `hr-style`: AnonStyle = null,
-    `line-length`: Boolean | AnonCodeblocksHeaders = null,
+    `heading-style`: AnonStyle = null,
+    `hr-style`: AnonStyleString = null,
+    `line-length`: Boolean | AnonHeaders = null,
     `list-indent`: js.UndefOr[Boolean] = js.undefined,
     `list-marker-space`: Boolean | AnonOlmulti = null,
     `no-alt-text`: js.UndefOr[Boolean] = js.undefined,
@@ -180,15 +180,15 @@ object MarkdownlintConfig {
     `no-space-in-links`: js.UndefOr[Boolean] = js.undefined,
     `no-trailing-punctuation`: Boolean | AnonPunctuation = null,
     `no-trailing-spaces`: Boolean | AnonBrspaces = null,
-    `ol-prefix`: Boolean | AnonOne = null,
-    `proper-names`: AnonCodeblocksNames = null,
+    `ol-prefix`: Boolean | Anon1 = null,
+    `proper-names`: AnonNames = null,
     `required-headers`: js.Array[String] = null,
     `required-headings`: js.Array[String] = null,
     `single-h1`: Boolean | AnonFrontmattertitle = null,
     `single-title`: Boolean | AnonFrontmattertitle = null,
     `ul-indent`: Boolean | AnonIndent = null,
     `ul-start-left`: js.UndefOr[Boolean] = js.undefined,
-    `ul-style`: AnonAsterisk = null
+    `ul-style`: Anon0 = null
   ): MarkdownlintConfig = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)

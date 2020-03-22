@@ -1,29 +1,31 @@
 package typings.reactNavigation
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.reactNavigation.mod.NavigationScreenConfig
+import typings.reactNavigation.mod.NavigationAction
+import typings.reactNavigation.mod.NavigationParams
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait AnonKey[Options, NavigationScreenPropType, ScreenProps] extends js.Object {
-  var navigationOptions: js.UndefOr[NavigationScreenConfig[Options, NavigationScreenPropType, ScreenProps]] = js.undefined
-  var params: js.UndefOr[StringDictionary[js.Any]] = js.undefined
-  var path: js.UndefOr[String] = js.undefined
+trait AnonKey[T /* <: NavigationParams */] extends js.Object {
+  var action: js.UndefOr[NavigationAction] = js.undefined
+  var key: js.UndefOr[String] = js.undefined
+  var params: js.UndefOr[T] = js.undefined
+  var routeName: String | AnonAction[T]
 }
 
 object AnonKey {
   @scala.inline
-  def apply[Options, NavigationScreenPropType, ScreenProps](
-    navigationOptions: NavigationScreenConfig[Options, NavigationScreenPropType, ScreenProps] = null,
-    params: StringDictionary[js.Any] = null,
-    path: String = null
-  ): AnonKey[Options, NavigationScreenPropType, ScreenProps] = {
-    val __obj = js.Dynamic.literal()
-    if (navigationOptions != null) __obj.updateDynamic("navigationOptions")(navigationOptions.asInstanceOf[js.Any])
+  def apply[T /* <: NavigationParams */](
+    routeName: String | AnonAction[T],
+    action: NavigationAction = null,
+    key: String = null,
+    params: T = null
+  ): AnonKey[T] = {
+    val __obj = js.Dynamic.literal(routeName = routeName.asInstanceOf[js.Any])
+    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    __obj.asInstanceOf[AnonKey[Options, NavigationScreenPropType, ScreenProps]]
+    __obj.asInstanceOf[AnonKey[T]]
   }
 }
 

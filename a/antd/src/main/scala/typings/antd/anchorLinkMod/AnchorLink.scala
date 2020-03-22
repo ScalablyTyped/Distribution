@@ -1,6 +1,6 @@
 package typings.antd.anchorLinkMod
 
-import typings.antd.AnonAntAnchor578726292
+import typings.antd.AnonAntAnchorAntAnchor
 import typings.antd.contextMod.ConfigConsumerProps
 import typings.react.mod.Component
 import typings.react.mod._Global_.JSX.Element
@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 trait AnchorLink
   extends Component[AnchorLinkProps, js.Any, js.Any] {
   @JSName("context")
-  var context_AnchorLink: AnonAntAnchor578726292 = js.native
+  var context_AnchorLink: AnonAntAnchorAntAnchor = js.native
   @JSName("componentDidMount")
   def componentDidMount_MAnchorLink(): Unit = js.native
   @JSName("componentDidUpdate")

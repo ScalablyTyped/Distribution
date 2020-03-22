@@ -29,7 +29,7 @@ trait DescribeHostReservationOfferingsRequest extends js.Object {
   /**
     * The ID of the reservation offering.
     */
-  var OfferingId: js.UndefOr[String] = js.native
+  var OfferingId: js.UndefOr[typings.awsSdk.ec2Mod.OfferingId] = js.native
 }
 
 object DescribeHostReservationOfferingsRequest {
@@ -40,7 +40,7 @@ object DescribeHostReservationOfferingsRequest {
     MaxResults: Int | scala.Double = null,
     MinDuration: Int | scala.Double = null,
     NextToken: String = null,
-    OfferingId: String = null
+    OfferingId: OfferingId = null
   ): DescribeHostReservationOfferingsRequest = {
     val __obj = js.Dynamic.literal()
     if (Filter != null) __obj.updateDynamic("Filter")(Filter.asInstanceOf[js.Any])

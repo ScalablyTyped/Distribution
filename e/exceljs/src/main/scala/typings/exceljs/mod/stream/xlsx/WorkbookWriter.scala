@@ -1,7 +1,7 @@
 package typings.exceljs.mod.stream.xlsx
 
+import typings.exceljs.PartialWorkbookStreamWrit
 import typings.exceljs.mod.Workbook
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("exceljs", "stream.xlsx.WorkbookWriter")
 @js.native
 class WorkbookWriter protected () extends Workbook {
-  def this(options: Partial[WorkbookStreamWriterOptions]) = this()
+  def this(options: PartialWorkbookStreamWrit) = this()
   def addApp(): js.Promise[Unit] = js.native
   def addContentTypes(): js.Promise[Unit] = js.native
   def addCore(): js.Promise[Unit] = js.native

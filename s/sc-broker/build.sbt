@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "sc-broker"
-version := "8.0-dt-20200205Z-088d93"
+version := "8.0-dt-20200205Z-849e5b"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "expirymanager" % "0.9-dt-20181130Z-c75a6b",
-  "org.scalablytyped" %%% "fleximap" % "0.9-dt-20181205Z-df76a2",
-  "org.scalablytyped" %%% "ncom" % "1.0-dt-20200205Z-8ed998",
-  "org.scalablytyped" %%% "node" % "13.7-dt-20200211Z-d6af7e",
-  "org.scalablytyped" %%% "std" % "3.7-1b8369")
+  "org.scalablytyped" %%% "expirymanager" % "0.9-dt-20181130Z-5ff1b8",
+  "org.scalablytyped" %%% "fleximap" % "0.9-dt-20181205Z-b5ca0a",
+  "org.scalablytyped" %%% "ncom" % "1.0-dt-20200205Z-cf7c16",
+  "org.scalablytyped" %%% "node" % "13.7-dt-20200211Z-b30bde",
+  "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

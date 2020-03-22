@@ -1,6 +1,6 @@
 package typings.powerAssertFormatter.powerAssertFormatter
 
-import typings.powerAssertFormatter.AnonAny
+import typings.powerAssertFormatter.AnonInstantiable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +17,7 @@ trait Options extends js.Object {
   var renderers: js.UndefOr[js.Array[_]] = js.undefined
   var stringify: js.UndefOr[js.Function] = js.undefined
   var widthOf: js.UndefOr[js.Function] = js.undefined
-  var writerClass: js.UndefOr[AnonAny] = js.undefined
+  var writerClass: js.UndefOr[AnonInstantiable] = js.undefined
 }
 
 object Options {
@@ -34,7 +34,7 @@ object Options {
     renderers: js.Array[_] = null,
     stringify: js.Function = null,
     widthOf: js.Function = null,
-    writerClass: AnonAny = null
+    writerClass: AnonInstantiable = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (ambiguousEastAsianCharWidth != null) __obj.updateDynamic("ambiguousEastAsianCharWidth")(ambiguousEastAsianCharWidth.asInstanceOf[js.Any])

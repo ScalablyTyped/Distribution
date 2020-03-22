@@ -1,6 +1,6 @@
 package typings.arangodb.queuesMod
 
-import typings.arangodb.ArangoDB.Document
+import typings.arangodb.DocumentJob
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ trait Queue extends js.Object {
   def delete(jobId: String): Boolean = js.native
   def failed(): js.Array[String] = js.native
   def failed(script: Script): js.Array[String] = js.native
-  def get(jobId: String): Document[Job] = js.native
+  def get(jobId: String): DocumentJob = js.native
   def pending(): js.Array[String] = js.native
   def pending(script: Script): js.Array[String] = js.native
   def progress(): js.Array[String] = js.native

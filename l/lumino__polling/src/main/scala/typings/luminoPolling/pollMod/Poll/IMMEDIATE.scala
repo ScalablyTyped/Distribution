@@ -1,0 +1,15 @@
+package typings.luminoPolling.pollMod.Poll
+
+import org.scalablytyped.runtime.TopLevel
+import typings.luminoPolling.luminoPollingNumbers.`0`
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/**
+  * An interval value that indicates the poll should tick immediately.
+  */
+@JSImport("@lumino/polling/lib/poll", "Poll.IMMEDIATE")
+@js.native
+object IMMEDIATE extends TopLevel[`0`]
+

@@ -1,7 +1,6 @@
 package typings.angularRouter.mod
 
 import typings.angularCommon.mod.Location
-import typings.angularCore.mod.ApplicationRef
 import typings.angularCore.mod.Compiler
 import typings.angularCore.mod.Injector
 import typings.angularCore.mod.NgModuleFactoryLoader
@@ -13,7 +12,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ɵangularPackagesRouterRouterF extends js.Object {
   def apply(
-    ref: ApplicationRef,
     urlSerializer: UrlSerializer,
     contexts: ChildrenOutletContexts,
     location: Location,
@@ -23,7 +21,6 @@ object ɵangularPackagesRouterRouterF extends js.Object {
     config: js.Array[js.Array[Route]]
   ): Router = js.native
   def apply(
-    ref: ApplicationRef,
     urlSerializer: UrlSerializer,
     contexts: ChildrenOutletContexts,
     location: Location,
@@ -34,7 +31,6 @@ object ɵangularPackagesRouterRouterF extends js.Object {
     opts: ExtraOptions
   ): Router = js.native
   def apply(
-    ref: ApplicationRef,
     urlSerializer: UrlSerializer,
     contexts: ChildrenOutletContexts,
     location: Location,
@@ -46,7 +42,6 @@ object ɵangularPackagesRouterRouterF extends js.Object {
     urlHandlingStrategy: UrlHandlingStrategy
   ): Router = js.native
   def apply(
-    ref: ApplicationRef,
     urlSerializer: UrlSerializer,
     contexts: ChildrenOutletContexts,
     location: Location,

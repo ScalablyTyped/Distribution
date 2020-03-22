@@ -1,7 +1,7 @@
 package typings.htmlparser2.mod
 
+import typings.htmlparser2.PartialDomHandler
 import typings.std.Error
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @JSImport("htmlparser2", "Parser")
 @js.native
 class Parser protected () extends js.Object {
-  def this(handler: Partial[typings.domhandler.mod.DomHandler]) = this()
-  def this(handler: Partial[typings.domhandler.mod.DomHandler], options: ParserOptions) = this()
+  def this(handler: PartialDomHandler) = this()
+  def this(handler: PartialDomHandler, options: ParserOptions) = this()
   /***
     * alias for backwards compat
     */

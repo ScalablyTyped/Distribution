@@ -9,7 +9,7 @@ trait FleetLaunchTemplateSpecificationRequest extends js.Object {
   /**
     * The ID of the launch template.
     */
-  var LaunchTemplateId: js.UndefOr[String] = js.native
+  var LaunchTemplateId: js.UndefOr[typings.awsSdk.ec2Mod.LaunchTemplateId] = js.native
   /**
     * The name of the launch template.
     */
@@ -23,7 +23,7 @@ trait FleetLaunchTemplateSpecificationRequest extends js.Object {
 object FleetLaunchTemplateSpecificationRequest {
   @scala.inline
   def apply(
-    LaunchTemplateId: String = null,
+    LaunchTemplateId: LaunchTemplateId = null,
     LaunchTemplateName: LaunchTemplateName = null,
     Version: String = null
   ): FleetLaunchTemplateSpecificationRequest = {

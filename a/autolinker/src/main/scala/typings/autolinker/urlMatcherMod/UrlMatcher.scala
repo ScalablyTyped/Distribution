@@ -1,9 +1,8 @@
 package typings.autolinker.urlMatcherMod
 
-import typings.autolinker.autolinkerMod.StripPrefixConfigObj
+import typings.autolinker.RequiredStripPrefixConfig
 import typings.autolinker.matcherMatcherMod.Matcher
 import typings.std.RegExp
-import typings.std.Required
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -62,7 +61,7 @@ class UrlMatcher protected () extends Matcher {
     *
     * The Object form of {@link Autolinker#cfg-stripPrefix}.
     */
-  var stripPrefix: Required[StripPrefixConfigObj] = js.native
+  var stripPrefix: RequiredStripPrefixConfig = js.native
   /**
     * @cfg {Boolean} stripTrailingSlash (required)
     * @inheritdoc Autolinker#stripTrailingSlash

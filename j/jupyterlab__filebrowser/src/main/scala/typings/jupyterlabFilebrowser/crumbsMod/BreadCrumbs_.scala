@@ -1,7 +1,7 @@
 package typings.jupyterlabFilebrowser.crumbsMod
 
 import typings.jupyterlabFilebrowser.crumbsMod.BreadCrumbs.IOptions
-import typings.phosphorWidgets.mod.Widget
+import typings.luminoWidgets.mod.Widget
 import typings.std.Event_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -23,19 +23,19 @@ class BreadCrumbs_ protected () extends Widget {
     */
   var _evtClick: js.Any = js.native
   /**
-    * Handle the `'p-dragenter'` event for the widget.
+    * Handle the `'lm-dragenter'` event for the widget.
     */
   var _evtDragEnter: js.Any = js.native
   /**
-    * Handle the `'p-dragleave'` event for the widget.
+    * Handle the `'lm-dragleave'` event for the widget.
     */
   var _evtDragLeave: js.Any = js.native
   /**
-    * Handle the `'p-dragover'` event for the widget.
+    * Handle the `'lm-dragover'` event for the widget.
     */
   var _evtDragOver: js.Any = js.native
   /**
-    * Handle the `'p-drop'` event for the widget.
+    * Handle the `'lm-drop'` event for the widget.
     */
   var _evtDrop: js.Any = js.native
   var _model: js.Any = js.native

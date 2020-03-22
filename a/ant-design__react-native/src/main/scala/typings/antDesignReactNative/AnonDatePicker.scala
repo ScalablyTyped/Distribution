@@ -5,13 +5,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonDatePicker extends js.Object {
-  var DatePicker: js.UndefOr[AnonDatePickerLocaleDismissText] = js.undefined
-  var DatePickerView: js.UndefOr[AnonAmDay] = js.undefined
+  var DatePicker: js.UndefOr[AnonDismissText] = js.undefined
+  var DatePickerView: js.UndefOr[AnonDay] = js.undefined
   var InputItem: js.UndefOr[AnonBackspaceLabel] = js.undefined
   var ListView: js.UndefOr[AnonDone] = js.undefined
   var Modal: js.UndefOr[AnonButtonText] = js.undefined
   var Pagination: js.UndefOr[AnonNextText] = js.undefined
-  var Picker: js.UndefOr[AnonDismissText] = js.undefined
+  var Picker: js.UndefOr[AnonExtra] = js.undefined
   var SearchBar: js.UndefOr[AnonCancelText] = js.undefined
   var exist: Boolean
   var locale: js.UndefOr[String] = js.undefined
@@ -21,13 +21,13 @@ object AnonDatePicker {
   @scala.inline
   def apply(
     exist: Boolean,
-    DatePicker: AnonDatePickerLocaleDismissText = null,
-    DatePickerView: AnonAmDay = null,
+    DatePicker: AnonDismissText = null,
+    DatePickerView: AnonDay = null,
     InputItem: AnonBackspaceLabel = null,
     ListView: AnonDone = null,
     Modal: AnonButtonText = null,
     Pagination: AnonNextText = null,
-    Picker: AnonDismissText = null,
+    Picker: AnonExtra = null,
     SearchBar: AnonCancelText = null,
     locale: String = null
   ): AnonDatePicker = {

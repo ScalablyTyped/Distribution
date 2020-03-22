@@ -2,6 +2,7 @@ package typings.jupyterlabDocregistry.registryMod.DocumentRegistry
 
 import typings.jupyterlabServices.contentsMod.Contents.ContentType
 import typings.jupyterlabServices.contentsMod.Contents.FileFormat
+import typings.jupyterlabUiComponents.mod.LabIcon
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,6 +28,10 @@ trait IFileType extends js.Object {
     * The format of the new file.
     */
   val fileFormat: FileFormat
+  /**
+    * The icon for the file type.
+    */
+  val icon: js.UndefOr[LabIcon] = js.undefined
   /**
     * The icon class name for the file type.
     */
@@ -58,12 +63,14 @@ object IFileType {
     mimeTypes: js.Array[String],
     name: String,
     displayName: String = null,
+    icon: LabIcon = null,
     iconClass: String = null,
     iconLabel: String = null,
     pattern: String = null
   ): IFileType = {
     val __obj = js.Dynamic.literal(contentType = contentType.asInstanceOf[js.Any], extensions = extensions.asInstanceOf[js.Any], fileFormat = fileFormat.asInstanceOf[js.Any], mimeTypes = mimeTypes.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass.asInstanceOf[js.Any])
     if (iconLabel != null) __obj.updateDynamic("iconLabel")(iconLabel.asInstanceOf[js.Any])
     if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])

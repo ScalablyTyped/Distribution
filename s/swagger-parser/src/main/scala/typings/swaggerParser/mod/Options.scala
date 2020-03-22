@@ -1,8 +1,8 @@
 package typings.swaggerParser.mod
 
 import typings.swaggerParser.AnonCircular
+import typings.swaggerParser.AnonDictkey
 import typings.swaggerParser.AnonExternal
-import typings.swaggerParser.AnonJson
 import typings.swaggerParser.AnonSchema
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,7 +18,7 @@ trait Options extends js.Object {
     *
     * JSON Schema `$Ref` Parser comes with built-in JSON, YAML, plain-text, and binary parsers, any of which you can configure or disable. You can also add your own custom parsers if you want.
     */
-  var parse: js.UndefOr[AnonJson] = js.undefined
+  var parse: js.UndefOr[AnonDictkey] = js.undefined
   /**
     * The `resolve` options control how Swagger Parser will resolve file paths and URLs, and how those files will be read/downloaded.
     *
@@ -35,7 +35,7 @@ object Options {
   @scala.inline
   def apply(
     dereference: AnonCircular = null,
-    parse: AnonJson = null,
+    parse: AnonDictkey = null,
     resolve: AnonExternal = null,
     validate: AnonSchema = null
   ): Options = {

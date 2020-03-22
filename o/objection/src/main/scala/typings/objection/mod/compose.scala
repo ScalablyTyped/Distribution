@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("objection", "compose")
 @js.native
-object compose extends TopLevel[Compose_]
+object compose extends TopLevel[ComposeFunction]
 

@@ -1,10 +1,7 @@
 package typings.jestMessageUtil.mod
 
-import typings.jestMessageUtil.jestMessageUtilStrings.rootDir
-import typings.jestMessageUtil.jestMessageUtilStrings.testMatch
+import typings.jestMessageUtil.PickProjectConfigrootDirt
 import typings.jestTestResult.typesMod.AssertionResult
-import typings.jestTypes.configMod.ProjectConfig
-import typings.std.Pick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,12 +11,12 @@ import scala.scalajs.js.annotation._
 object formatResultsErrors extends js.Object {
   def apply(
     testResults: js.Array[AssertionResult],
-    config: Pick[ProjectConfig, rootDir | testMatch],
+    config: PickProjectConfigrootDirt,
     options: StackTraceOptions
   ): String | Null = js.native
   def apply(
     testResults: js.Array[AssertionResult],
-    config: Pick[ProjectConfig, rootDir | testMatch],
+    config: PickProjectConfigrootDirt,
     options: StackTraceOptions,
     testPath: String
   ): String | Null = js.native

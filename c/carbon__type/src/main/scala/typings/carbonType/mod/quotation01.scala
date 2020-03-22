@@ -1,7 +1,7 @@
 package typings.carbonType.mod
 
 import typings.carbonType.AnonFontFamily
-import typings.carbonType.AnonFontFamilyFontSize
+import typings.carbonType.AnonFontWeight
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object quotation01 extends js.Object {
   @JSName("@media (min-width: 42rem)")
-  var `@media Leftparenthesismin-widthColon 42remRightparenthesis`: AnonFontFamilyFontSize = js.native
+  var `@media Leftparenthesismin-widthColon 42remRightparenthesis`: AnonFontWeight = js.native
   @JSName("@media (min-width: 66rem)")
   var `@media Leftparenthesismin-widthColon 66remRightparenthesis`: AnonFontFamily = js.native
   @JSName("@media (min-width: 82rem)")

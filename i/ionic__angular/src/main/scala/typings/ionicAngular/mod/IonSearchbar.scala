@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/angular", "IonSearchbar")
 @js.native
 class IonSearchbar protected ()
-  extends typings.ionicAngular.distMod.IonSearchbar {
+  extends typings.ionicAngular.proxiesMod.IonSearchbar {
   def this(c: ChangeDetectorRef, r: ElementRef[_], z: NgZone) = this()
 }
 

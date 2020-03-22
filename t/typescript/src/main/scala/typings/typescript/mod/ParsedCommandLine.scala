@@ -12,6 +12,7 @@ trait ParsedCommandLine extends js.Object {
   var projectReferences: js.UndefOr[js.Array[ProjectReference]] = js.undefined
   var raw: js.UndefOr[js.Any] = js.undefined
   var typeAcquisition: js.UndefOr[TypeAcquisition] = js.undefined
+  var watchOptions: js.UndefOr[WatchOptions] = js.undefined
   var wildcardDirectories: js.UndefOr[MapLike[WatchDirectoryFlags]] = js.undefined
 }
 
@@ -25,6 +26,7 @@ object ParsedCommandLine {
     projectReferences: js.Array[ProjectReference] = null,
     raw: js.Any = null,
     typeAcquisition: TypeAcquisition = null,
+    watchOptions: WatchOptions = null,
     wildcardDirectories: MapLike[WatchDirectoryFlags] = null
   ): ParsedCommandLine = {
     val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], fileNames = fileNames.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
@@ -32,6 +34,7 @@ object ParsedCommandLine {
     if (projectReferences != null) __obj.updateDynamic("projectReferences")(projectReferences.asInstanceOf[js.Any])
     if (raw != null) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
     if (typeAcquisition != null) __obj.updateDynamic("typeAcquisition")(typeAcquisition.asInstanceOf[js.Any])
+    if (watchOptions != null) __obj.updateDynamic("watchOptions")(watchOptions.asInstanceOf[js.Any])
     if (wildcardDirectories != null) __obj.updateDynamic("wildcardDirectories")(wildcardDirectories.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParsedCommandLine]
   }

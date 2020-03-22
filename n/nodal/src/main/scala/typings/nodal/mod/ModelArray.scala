@@ -1,6 +1,6 @@
 package typings.nodal.mod
 
-import typings.nodal.TypeofClassModel
+import typings.nodal.TypeofModel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("nodal", "ModelArray")
 @js.native
 class ModelArray[T] protected () extends ItemArray[T] {
-  def this(modelConstructor: TypeofClassModel) = this()
-  var Model: TypeofClassModel = js.native
+  def this(modelConstructor: TypeofModel) = this()
+  var Model: TypeofModel = js.native
   /* private */ def __saveAll__(callback: js.Any): js.Any = js.native
   def destroyAll(callback: js.Function): Unit = js.native
   def destroyCascade(callback: js.Function): Unit = js.native

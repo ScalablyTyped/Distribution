@@ -33,7 +33,7 @@ object hemisphereLightProbeMod extends js.Object {
     def this(skyColor: Color, groundColor: String, intensity: Double) = this()
     def this(skyColor: Color, groundColor: Double, intensity: Double) = this()
     def this(skyColor: Color, groundColor: Color, intensity: Double) = this()
-    var isHemisphereLightProbe: `true` = js.native
+    val isHemisphereLightProbe: `true` = js.native
   }
   
 }

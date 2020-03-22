@@ -6,11 +6,15 @@ import scala.scalajs.js.annotation._
 
 trait OpenExternalOptions extends js.Object {
   /**
-    * true to bring the opened application to the foreground. The default is true.
+    * `true` to bring the opened application to the foreground. The default is `true`.
+    *
+    * @platform darwin
     */
   var activate: js.UndefOr[Boolean] = js.undefined
   /**
     * The working directory.
+    *
+    * @platform win32
     */
   var workingDirectory: js.UndefOr[String] = js.undefined
 }

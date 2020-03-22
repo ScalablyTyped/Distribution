@@ -2,8 +2,8 @@ package typings.gapiClientFirebaserules.gapi.client.firebaserules
 
 import typings.gapiClient.gapi.client.Request_
 import typings.gapiClientFirebaserules.AnonAccesstoken
-import typings.gapiClientFirebaserules.AnonAccesstokenAlt
-import typings.gapiClientFirebaserules.AnonAccesstokenAltBearertoken
+import typings.gapiClientFirebaserules.AnonAlt
+import typings.gapiClientFirebaserules.AnonBearertoken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,13 +39,13 @@ trait ReleasesResource extends js.Object {
   /** Get a `Release` by name. */
   def get(request: AnonAccesstoken): Request_[Release]
   /** Get the `Release` executable to use when enforcing rules. */
-  def getExecutable(request: AnonAccesstokenAlt): Request_[GetReleaseExecutableResponse]
+  def getExecutable(request: AnonAlt): Request_[GetReleaseExecutableResponse]
   /**
     * List the `Release` values for a project. This list may optionally be
     * filtered by `Release` name, `Ruleset` name, `TestSuite` name, or any
     * combination thereof.
     */
-  def list(request: AnonAccesstokenAltBearertoken): Request_[ListReleasesResponse]
+  def list(request: AnonBearertoken): Request_[ListReleasesResponse]
   /**
     * Update a `Release`.
     *
@@ -62,8 +62,8 @@ object ReleasesResource {
     create: AnonAccesstoken => Request_[Release],
     delete: AnonAccesstoken => Request_[js.Object],
     get: AnonAccesstoken => Request_[Release],
-    getExecutable: AnonAccesstokenAlt => Request_[GetReleaseExecutableResponse],
-    list: AnonAccesstokenAltBearertoken => Request_[ListReleasesResponse],
+    getExecutable: AnonAlt => Request_[GetReleaseExecutableResponse],
+    list: AnonBearertoken => Request_[ListReleasesResponse],
     update: AnonAccesstoken => Request_[Release]
   ): ReleasesResource = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), getExecutable = js.Any.fromFunction1(getExecutable), list = js.Any.fromFunction1(list), update = js.Any.fromFunction1(update))

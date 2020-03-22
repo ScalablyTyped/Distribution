@@ -1,6 +1,8 @@
 package typings.vscodeLanguageserverProtocol.protocolMod
 
-import typings.vscodeJsonrpc.mod.RequestType
+import typings.vscodeJsonrpc.mod.ProgressType
+import typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType
+import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.textDocumentSlashdocumentSymbol
 import typings.vscodeLanguageserverTypes.mod.DocumentSymbol
 import typings.vscodeLanguageserverTypes.mod.SymbolInformation
 import scala.scalajs.js
@@ -10,11 +12,15 @@ import scala.scalajs.js.annotation._
 @JSImport("vscode-languageserver-protocol/lib/protocol", "DocumentSymbolRequest")
 @js.native
 object DocumentSymbolRequest extends js.Object {
-  val `type`: RequestType[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DocumentSymbolParams */ js.Any, 
+  val method: textDocumentSlashdocumentSymbol = js.native
+  /** @deprecated Use DocumentSymbolRequest.type */
+  val resultType: ProgressType[js.Array[DocumentSymbol | SymbolInformation]] = js.native
+  val `type`: ProtocolRequestType[
+    DocumentSymbolParams, 
     (js.Array[DocumentSymbol | SymbolInformation]) | Null, 
+    js.Array[DocumentSymbol | SymbolInformation], 
     Unit, 
-    TextDocumentRegistrationOptions
+    DocumentSymbolRegistrationOptions
   ] = js.native
 }
 

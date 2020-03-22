@@ -1,19 +1,20 @@
 package typings.victory
 
-import typings.victory.mod._CategoryPropType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait AnonY extends _CategoryPropType {
-  var y: js.Array[String]
+trait AnonY extends js.Object {
+  var x: js.UndefOr[Double] = js.undefined
+  var y: js.UndefOr[Double] = js.undefined
 }
 
 object AnonY {
   @scala.inline
-  def apply(y: js.Array[String]): AnonY = {
-    val __obj = js.Dynamic.literal(y = y.asInstanceOf[js.Any])
-  
+  def apply(x: Int | Double = null, y: Int | Double = null): AnonY = {
+    val __obj = js.Dynamic.literal()
+    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
+    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnonY]
   }
 }

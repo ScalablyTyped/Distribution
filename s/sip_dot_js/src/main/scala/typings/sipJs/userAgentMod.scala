@@ -15,10 +15,7 @@ import typings.sipJs.subscriptionMod.Subscription
 import typings.sipJs.transportMod.Transport
 import typings.sipJs.userAgentCoreConfigurationMod.Contact
 import typings.sipJs.userAgentDelegateMod.UserAgentDelegate
-import typings.sipJs.userAgentOptionsMod.UserAgentOptions
 import typings.sipJs.userAgentStateMod.UserAgentState
-import typings.std.Partial
-import typings.std.Required
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,7 +29,7 @@ object userAgentMod extends js.Object {
     * @param options - Options bucket. See {@link UserAgentOptions} for details.
     */
   class UserAgent () extends js.Object {
-    def this(options: Partial[UserAgentOptions]) = this()
+    def this(options: PartialUserAgentOptions) = this()
     var _contact: js.Any = js.native
     /** @internal */
     var _publishers: StringDictionary[Publisher] = js.native
@@ -55,7 +52,7 @@ object userAgentMod extends js.Object {
     /**
       * User agent configuration.
       */
-    val configuration: Required[UserAgentOptions] = js.native
+    val configuration: RequiredUserAgentOptions = js.native
     /**
       * User agent contact.
       */

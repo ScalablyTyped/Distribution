@@ -1,6 +1,6 @@
 package typings.oracleOraclejet.ojthematicmapMod
 
-import typings.oracleOraclejet.AnonIdLocation
+import typings.oracleOraclejet.AnonLocation
 import typings.oracleOraclejet.mod.JetSettableProperties
 import typings.oracleOraclejet.oracleOraclejetStrings.auto
 import typings.oracleOraclejet.oracleOraclejetStrings.off
@@ -11,10 +11,10 @@ import scala.scalajs.js.annotation._
 trait ojThematicMapLinkSettableProperties extends JetSettableProperties {
   var categories: js.Array[String]
   var color: String
-  var endLocation: AnonIdLocation
+  var endLocation: AnonLocation
   var selectable: auto | off
   var shortDesc: String
-  var startLocation: AnonIdLocation
+  var startLocation: AnonLocation
   var svgClassName: String
   var svgStyle: js.Object
   var width: Double
@@ -25,10 +25,10 @@ object ojThematicMapLinkSettableProperties {
   def apply(
     categories: js.Array[String],
     color: String,
-    endLocation: AnonIdLocation,
+    endLocation: AnonLocation,
     selectable: auto | off,
     shortDesc: String,
-    startLocation: AnonIdLocation,
+    startLocation: AnonLocation,
     svgClassName: String,
     svgStyle: js.Object,
     width: Double

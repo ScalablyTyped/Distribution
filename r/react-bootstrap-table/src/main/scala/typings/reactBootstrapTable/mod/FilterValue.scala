@@ -17,6 +17,12 @@ trait FilterValue extends js.Object
 
 object FilterValue {
   @scala.inline
+  def TextFilterData(`type`: typings.reactBootstrapTable.reactBootstrapTableStrings.TextFilter, value: String): FilterValue = {
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FilterValue]
+  }
+  @scala.inline
   def NumberFilterData(
     `type`: typings.reactBootstrapTable.reactBootstrapTableStrings.NumberFilter,
     value: NumberFilterValue
@@ -26,19 +32,7 @@ object FilterValue {
     __obj.asInstanceOf[FilterValue]
   }
   @scala.inline
-  def RegexFilterData(`type`: typings.reactBootstrapTable.reactBootstrapTableStrings.RegexFilter, value: String): FilterValue = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FilterValue]
-  }
-  @scala.inline
   def ArrayFilterData(`type`: ArrayFilter, value: js.Array[Double | String]): FilterValue = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FilterValue]
-  }
-  @scala.inline
-  def TextFilterData(`type`: typings.reactBootstrapTable.reactBootstrapTableStrings.TextFilter, value: String): FilterValue = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterValue]
@@ -51,6 +45,12 @@ object FilterValue {
   }
   @scala.inline
   def DateFilterData(`type`: typings.reactBootstrapTable.reactBootstrapTableStrings.DateFilter, value: DateFilterValue): FilterValue = {
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FilterValue]
+  }
+  @scala.inline
+  def RegexFilterData(`type`: typings.reactBootstrapTable.reactBootstrapTableStrings.RegexFilter, value: String): FilterValue = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterValue]

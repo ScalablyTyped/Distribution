@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 object fpParseWithOptionsMod extends js.Object {
   @js.native
   object default extends TopLevel[
-          CurriedFn4[Anon01234567FirstWeekContainsDate, Date | Double, String, String, Date]
+          CurriedFn4[AnonLocaleUseAdditionalDayOfYearTokens, Date | Double, String, String, Date]
         ]
   
 }

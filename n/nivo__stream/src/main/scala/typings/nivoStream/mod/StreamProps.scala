@@ -3,7 +3,7 @@ package typings.nivoStream.mod
 import typings.nivoAxes.mod.AxisProps
 import typings.nivoColors.mod.InheritedColorProp
 import typings.nivoColors.mod.OrdinalColorsInstruction
-import typings.nivoCore.Anon
+import typings.nivoCore.AnonDictkey
 import typings.nivoCore.AnonId
 import typings.nivoCore.mod.AreaCurve
 import typings.nivoCore.mod.Box
@@ -32,7 +32,7 @@ trait StreamProps[T] extends js.Object {
   var colors: js.UndefOr[OrdinalColorsInstruction[_]] = js.undefined
   var curve: js.UndefOr[AreaCurve] = js.undefined
   var data: js.Array[T]
-  var defs: js.UndefOr[js.Array[AnonId]] = js.undefined
+  var defs: js.UndefOr[js.Array[AnonDictkey]] = js.undefined
   var dotBorderColor: js.UndefOr[InheritedColorProp[_]] = js.undefined
   var dotBorderWidth: js.UndefOr[DatumToNumber | Double] = js.undefined
   var dotColor: js.UndefOr[InheritedColorProp[_]] = js.undefined
@@ -42,7 +42,7 @@ trait StreamProps[T] extends js.Object {
   var enableGridX: js.UndefOr[Boolean] = js.undefined
   var enableGridY: js.UndefOr[Boolean] = js.undefined
   var enableStackTooltip: js.UndefOr[Boolean] = js.undefined
-  var fill: js.UndefOr[js.Array[Anon[T]]] = js.undefined
+  var fill: js.UndefOr[js.Array[AnonId[T]]] = js.undefined
   var fillOpacity: js.UndefOr[Double] = js.undefined
   var isInteractive: js.UndefOr[Boolean] = js.undefined
   var keys: js.Array[String]
@@ -75,7 +75,7 @@ object StreamProps {
     borderWidth: Int | Double = null,
     colors: OrdinalColorsInstruction[_] = null,
     curve: AreaCurve = null,
-    defs: js.Array[AnonId] = null,
+    defs: js.Array[AnonDictkey] = null,
     dotBorderColor: InheritedColorProp[_] = null,
     dotBorderWidth: DatumToNumber | Double = null,
     dotColor: InheritedColorProp[_] = null,
@@ -85,7 +85,7 @@ object StreamProps {
     enableGridX: js.UndefOr[Boolean] = js.undefined,
     enableGridY: js.UndefOr[Boolean] = js.undefined,
     enableStackTooltip: js.UndefOr[Boolean] = js.undefined,
-    fill: js.Array[Anon[T]] = null,
+    fill: js.Array[AnonId[T]] = null,
     fillOpacity: Int | Double = null,
     isInteractive: js.UndefOr[Boolean] = js.undefined,
     legends: js.Array[LegendProps] = null,

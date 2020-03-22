@@ -1,8 +1,8 @@
 package typings.ptyJs.mod
 
 import typings.ptyJs.AnonFd
-import typings.ptyJs.AnonFdPid
 import typings.ptyJs.AnonMaster
+import typings.ptyJs.AnonPid
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,7 +32,7 @@ object native extends js.Object {
   ): AnonFd = js.native
   def kill(pid: Double): Unit = js.native
   def open(cols: Double, rows: Double): AnonMaster = js.native
-  def open(dataPipe: String, cols: Double, rows: Double, debug: Boolean): AnonFdPid = js.native
+  def open(dataPipe: String, cols: Double, rows: Double, debug: Boolean): AnonPid = js.native
   def process(fd: Double, tty: String): String = js.native
   def resize(fd: Double, cols: Double, rows: Double): Unit = js.native
   def startProcess(pid: Double, file: String, cmdline: String, env: js.Array[String], cwd: String): Unit = js.native

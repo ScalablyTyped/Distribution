@@ -8,28 +8,28 @@ trait AnonEdgeLabel extends js.Object {
   /**
     * @see https://echarts.apache.org/en/option.html#series-graph.emphasis.edgeLabel
     */
-  var edgeLabel: js.UndefOr[AnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamily] = js.undefined
+  var edgeLabel: js.UndefOr[AnonFontStyle] = js.undefined
   /**
     * @see https://echarts.apache.org/en/option.html#series-graph.emphasis.itemStyle
     */
-  var itemStyle: js.UndefOr[AnonBorderColorBorderType] = js.undefined
+  var itemStyle: js.UndefOr[AnonBorderType] = js.undefined
   /**
     * @see https://echarts.apache.org/en/option.html#series-graph.emphasis.label
     */
-  var label: js.UndefOr[AnonAlignBackgroundColorBorderColorBorderRadiusBorderWidth] = js.undefined
+  var label: js.UndefOr[AnonDistance] = js.undefined
   /**
     * @see https://echarts.apache.org/en/option.html#series-graph.emphasis.lineStyle
     */
-  var lineStyle: js.UndefOr[AnonColorOpacityShadowBlur] = js.undefined
+  var lineStyle: js.UndefOr[AnonShadowBlur] = js.undefined
 }
 
 object AnonEdgeLabel {
   @scala.inline
   def apply(
-    edgeLabel: AnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamily = null,
-    itemStyle: AnonBorderColorBorderType = null,
-    label: AnonAlignBackgroundColorBorderColorBorderRadiusBorderWidth = null,
-    lineStyle: AnonColorOpacityShadowBlur = null
+    edgeLabel: AnonFontStyle = null,
+    itemStyle: AnonBorderType = null,
+    label: AnonDistance = null,
+    lineStyle: AnonShadowBlur = null
   ): AnonEdgeLabel = {
     val __obj = js.Dynamic.literal()
     if (edgeLabel != null) __obj.updateDynamic("edgeLabel")(edgeLabel.asInstanceOf[js.Any])

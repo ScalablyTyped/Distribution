@@ -2,8 +2,8 @@ package typings.arangodb.ArangoDB
 
 import typings.arangodb.AnonBytesRead
 import typings.arangodb.AnonCount
-import typings.arangodb.AnonCountDeletion
-import typings.arangodb.AnonCountFileSize
+import typings.arangodb.AnonDeletion
+import typings.arangodb.AnonFileSize
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,14 +12,14 @@ trait CollectionFigures extends js.Object {
   var alive: AnonCount
   var attributes: AnonCount
   var compactionStatus: AnonBytesRead
-  var compactors: AnonCountFileSize
-  var datafiles: AnonCountFileSize
-  var dead: AnonCountDeletion
+  var compactors: AnonFileSize
+  var datafiles: AnonFileSize
+  var dead: AnonDeletion
   var documentReferences: Double
   var indexes: AnonCount
-  var journals: AnonCountFileSize
+  var journals: AnonFileSize
   var lastTick: Double
-  var shapefiles: AnonCountFileSize
+  var shapefiles: AnonFileSize
   var shapes: AnonCount
   var uncollectedLogfileEntries: Double
   var waitingFor: String
@@ -31,14 +31,14 @@ object CollectionFigures {
     alive: AnonCount,
     attributes: AnonCount,
     compactionStatus: AnonBytesRead,
-    compactors: AnonCountFileSize,
-    datafiles: AnonCountFileSize,
-    dead: AnonCountDeletion,
+    compactors: AnonFileSize,
+    datafiles: AnonFileSize,
+    dead: AnonDeletion,
     documentReferences: Double,
     indexes: AnonCount,
-    journals: AnonCountFileSize,
+    journals: AnonFileSize,
     lastTick: Double,
-    shapefiles: AnonCountFileSize,
+    shapefiles: AnonFileSize,
     shapes: AnonCount,
     uncollectedLogfileEntries: Double,
     waitingFor: String

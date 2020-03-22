@@ -1,6 +1,6 @@
 package typings.azure.mod
 
-import typings.azure.AnonKeyVersionEndpointEnvironmentName
+import typings.azure.AnonDictkey
 import typings.node.eventsMod.EventEmitter
 import typings.std.Date
 import scala.scalajs.js
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 //#region RoleEnvironment
 @js.native
 trait RoleEnvironmentInterface extends EventEmitter {
-  var EnvironmentVariables: AnonKeyVersionEndpointEnvironmentName = js.native
+  var EnvironmentVariables: AnonDictkey = js.native
   var VersionEndpointFixedPath: String = js.native
   var clientId: String = js.native
   var incorrectCallbackErr: String = js.native

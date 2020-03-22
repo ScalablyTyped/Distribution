@@ -8,8 +8,8 @@ import typings.reduxActions.mod.ActionFunction3
 import typings.reduxActions.mod.ActionFunction4
 import typings.reduxActions.mod.ActionFunctionAny
 import typings.reduxActions.mod.ActionMeta
-import typings.reduxSagaRoutines.AnonFAILUREFULFILL
-import typings.reduxSagaRoutines.Anon_FAILURE
+import typings.reduxSagaRoutines.AnonFAILURE_
+import typings.reduxSagaRoutines.AnonFULFILL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -41,7 +41,7 @@ object createRoutine extends js.Object {
   def apply[TTriggerMetaCreator, TRequestMetaCreator, TSuccessMetaCreator, TFailureMetaCreator, TFulfillMetaCreator](
     typePrefix: String,
     payloadCreator: js.UndefOr[scala.Nothing],
-    metaCreator: AnonFAILUREFULFILL[
+    metaCreator: AnonFULFILL[
       TTriggerMetaCreator, 
       TRequestMetaCreator, 
       TSuccessMetaCreator, 
@@ -93,7 +93,7 @@ object createRoutine extends js.Object {
   def apply[TTriggerMetaCreator, TRequestMetaCreator, TSuccessMetaCreator, TFailureMetaCreator, TFulfillMetaCreator](
     typePrefix: String,
     payloadCreator: Null,
-    metaCreator: AnonFAILUREFULFILL[
+    metaCreator: AnonFULFILL[
       TTriggerMetaCreator, 
       TRequestMetaCreator, 
       TSuccessMetaCreator, 
@@ -150,7 +150,7 @@ object createRoutine extends js.Object {
   def apply[Payload, Arg1, Arg2, Arg3, Arg4](typePrefix: String, payloadCreator: ActionFunction4[Arg1, Arg2, Arg3, Arg4, Payload]): UnifiedRoutine[ActionFunction4[Arg1, Arg2, Arg3, Arg4, Action[Payload]]] = js.native
   def apply[TTriggerPayloadCreator, TRequestPayloadCreator, TSuccessPayloadCreator, TFailurePayloadCreator, TFulfillPayloadCreator](
     typePrefix: String,
-    payloadCreator: Anon_FAILURE[
+    payloadCreator: AnonFAILURE_[
       TTriggerPayloadCreator, 
       TRequestPayloadCreator, 
       TSuccessPayloadCreator, 
@@ -206,14 +206,14 @@ object createRoutine extends js.Object {
   ): UnifiedRoutine[ActionFunction4[Arg1, Arg2, Arg3, Arg4, ActionMeta[Payload, Meta]]] = js.native
   def apply[TTriggerPayloadCreator, TRequestPayloadCreator, TSuccessPayloadCreator, TFailurePayloadCreator, TFulfillPayloadCreator, TTriggerMetaCreator, TRequestMetaCreator, TSuccessMetaCreator, TFailureMetaCreator, TFulfillMetaCreator](
     typePrefix: String,
-    payloadCreator: Anon_FAILURE[
+    payloadCreator: AnonFAILURE_[
       TTriggerPayloadCreator, 
       TRequestPayloadCreator, 
       TSuccessPayloadCreator, 
       TFailurePayloadCreator, 
       TFulfillPayloadCreator
     ],
-    metaCreator: AnonFAILUREFULFILL[
+    metaCreator: AnonFULFILL[
       TTriggerMetaCreator, 
       TRequestMetaCreator, 
       TSuccessMetaCreator, 

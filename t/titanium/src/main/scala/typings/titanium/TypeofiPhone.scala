@@ -8,7 +8,7 @@ trait TypeofiPhone extends js.Object {
   /**
   			 * A set of constants for the styles available for <Titanium.UI.ActivityIndicator> objects.
   			 */
-  val ActivityIndicatorStyle: TypeofActivityIndicatorStyleAddEventListener
+  val ActivityIndicatorStyle: TypeofActivityIndicatorStAddEventListener
   /**
   			 * A set of constants for the style that can be used for the `style` property of
   			 * <Titanium.UI.AlertDialog>.
@@ -22,7 +22,7 @@ trait TypeofiPhone extends js.Object {
   			 * A set of constants for the style that can be used for the `separatorStyle` property of
   			 * <Titanium.UI.ListView>.
   			 */
-  val ListViewSeparatorStyle: TypeofListViewSeparatorStyle
+  val ListViewSeparatorStyle: TypeofListViewSeparatorSt
   /**
   			 * View presented with the same style as its parent window.
   			 */
@@ -75,7 +75,7 @@ trait TypeofiPhone extends js.Object {
   /**
   			 * A set of constants for the styles available for scrollbars used with <Titanium.UI.ScrollView.scrollIndicatorStyle> and <Titanium.UI.TableView.scrollIndicatorStyle> properties.
   			 */
-  val ScrollIndicatorStyle: TypeofScrollIndicatorStyle
+  val ScrollIndicatorStyle: TypeofScrollIndicatorStyl
   /**
   			 * A set of constants for creating standard iOS system buttons.
   			 */
@@ -92,17 +92,17 @@ trait TypeofiPhone extends js.Object {
   			 * A set of constants for the style that can be used for the `selectionStyle` property of
   			 * <Titanium.UI.TableViewRow>.
   			 */
-  val TableViewCellSelectionStyle: TypeofTableViewCellSelectionStyle
+  val TableViewCellSelectionStyle: TypeofTableViewCellSelect
   /**
   			 * A set of constants for the position value that can be used for the `position` property of
   			 * <Titanium.UI.TableView> when invoking `scrollToIndex`.
   			 */
-  val TableViewScrollPosition: TypeofTableViewScrollPosition
+  val TableViewScrollPosition: TypeofTableViewScrollPosi
   /**
   			 * A set of constants for the style that can be used for the `separatorStyle` property of
   			 * <Titanium.UI.TableView>.
   			 */
-  val TableViewSeparatorStyle: TypeofTableViewSeparatorStyle
+  val TableViewSeparatorStyle: TypeofTableViewSeparatorS
   /**
   			 * A set of constants for the style that can be used for the button `style` property of
   			 * <Titanium.UI.TableView>.
@@ -173,10 +173,10 @@ trait TypeofiPhone extends js.Object {
 object TypeofiPhone {
   @scala.inline
   def apply(
-    ActivityIndicatorStyle: TypeofActivityIndicatorStyleAddEventListener,
+    ActivityIndicatorStyle: TypeofActivityIndicatorStAddEventListener,
     AlertDialogStyle: TypeofAlertDialogStyle,
     AnimationStyle: TypeofAnimationStyleAddEventListener,
-    ListViewSeparatorStyle: TypeofListViewSeparatorStyle,
+    ListViewSeparatorStyle: TypeofListViewSeparatorSt,
     MODAL_PRESENTATION_CURRENT_CONTEXT: Double,
     MODAL_PRESENTATION_FORMSHEET: Double,
     MODAL_PRESENTATION_FULLSCREEN: Double,
@@ -187,13 +187,13 @@ object TypeofiPhone {
     MODAL_TRANSITION_STYLE_PARTIAL_CURL: Double,
     ProgressBarStyle: TypeofProgressBarStyle,
     RowAnimationStyle: TypeofRowAnimationStyle,
-    ScrollIndicatorStyle: TypeofScrollIndicatorStyle,
+    ScrollIndicatorStyle: TypeofScrollIndicatorStyl,
     SystemButton: TypeofSystemButton,
     SystemButtonStyle: TypeofSystemButtonStyleAddEventListener,
     SystemIcon: TypeofSystemIcon,
-    TableViewCellSelectionStyle: TypeofTableViewCellSelectionStyle,
-    TableViewScrollPosition: TypeofTableViewScrollPosition,
-    TableViewSeparatorStyle: TypeofTableViewSeparatorStyle,
+    TableViewCellSelectionStyle: TypeofTableViewCellSelect,
+    TableViewScrollPosition: TypeofTableViewScrollPosi,
+    TableViewSeparatorStyle: TypeofTableViewSeparatorS,
     TableViewStyle: TypeofTableViewStyle,
     addEventListener: (String, js.Function1[/* param0 */ js.Any, _]) => Unit,
     apiName: String,

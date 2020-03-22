@@ -5,7 +5,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mod {
-  type WalkEmitter = typings.node.eventsMod.EventEmitter with typings.walkdir.AnonBlockdevice
   type WalkEventListener = js.ThisFunction3[
     /* this */ typings.walkdir.mod.WalkEmitter, 
     /* path */ java.lang.String, 

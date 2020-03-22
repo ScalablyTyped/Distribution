@@ -19,7 +19,7 @@ object datePickerDatepickerDatePickerMod extends js.Object {
     var state_DatePicker: AnonDate = js.native
     def clipDate(date: js.Any): js.Any = js.native
     @JSName("componentWillReceiveProps")
-    def componentWillReceiveProps_MDatePicker(nextProps: AnonDateDefaultDate): Unit = js.native
+    def componentWillReceiveProps_MDatePicker(nextProps: AnonDefaultDate): Unit = js.native
     def getDate(): js.Any = js.native
     def getDateData(): js.Array[AnonKey] = js.native
     def getDefaultMaxDate(): js.Any = js.native
@@ -53,7 +53,7 @@ object datePickerDatepickerDatePickerMod extends js.Object {
   /* static members */
   @js.native
   object default extends js.Object {
-    var defaultProps: AnonDisabled = js.native
+    var defaultProps: AnonLocale = js.native
   }
   
 }

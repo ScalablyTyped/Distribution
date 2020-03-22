@@ -1,6 +1,6 @@
 package typings.hapiHapi.mod
 
-import typings.hapiHapi.AnonPrefixVhost
+import typings.hapiHapi.AnonVhost
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,7 +22,7 @@ object ServerRegisterPluginObject {
     plugin: Plugin[T],
     once: js.UndefOr[Boolean] = js.undefined,
     options: T = null,
-    routes: AnonPrefixVhost = null
+    routes: AnonVhost = null
   ): ServerRegisterPluginObject[T] = {
     val __obj = js.Dynamic.literal(plugin = plugin.asInstanceOf[js.Any])
     if (!js.isUndefined(once)) __obj.updateDynamic("once")(once.asInstanceOf[js.Any])

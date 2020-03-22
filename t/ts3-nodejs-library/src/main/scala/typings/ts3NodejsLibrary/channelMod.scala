@@ -1,7 +1,6 @@
 package typings.ts3NodejsLibrary
 
 import typings.node.Buffer
-import typings.std.Partial
 import typings.ts3NodejsLibrary.abstractMod.Abstract
 import typings.ts3NodejsLibrary.clientMod.TeamSpeakClient
 import typings.ts3NodejsLibrary.enumMod.Codec
@@ -9,7 +8,6 @@ import typings.ts3NodejsLibrary.propertyTypesMod.ChannelEdit
 import typings.ts3NodejsLibrary.queryResponseMod.QueryResponseTypes
 import typings.ts3NodejsLibrary.responseTypesMod.ChannelInfo
 import typings.ts3NodejsLibrary.responseTypesMod.ChannelList
-import typings.ts3NodejsLibrary.responseTypesMod.ClientList
 import typings.ts3NodejsLibrary.responseTypesMod.PermList
 import typings.ts3NodejsLibrary.teamSpeakMod.TeamSpeak
 import scala.scalajs.js
@@ -57,7 +55,7 @@ object channelMod extends js.Object {
       * @param filter the filter object
       */
     def getClients(): js.Promise[js.Array[TeamSpeakClient]] = js.native
-    def getClients(filter: Partial[ClientList]): js.Promise[js.Array[TeamSpeakClient]] = js.native
+    def getClients(filter: PartialClientList): js.Promise[js.Array[TeamSpeakClient]] = js.native
     /** returns a buffer with the icon of the channel */
     def getIcon(): js.Promise[Buffer] = js.native
     /** returns the icon name of the channel */

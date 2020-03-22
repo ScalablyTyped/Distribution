@@ -6,19 +6,24 @@ import scala.scalajs.js.annotation._
 
 trait TouchBarLabelConstructorOptions extends js.Object {
   /**
+    * A short description of the button for use by screenreaders like VoiceOver.
+    */
+  var accessibilityLabel: js.UndefOr[String] = js.undefined
+  /**
     * Text to display.
     */
   var label: js.UndefOr[String] = js.undefined
   /**
-    * Hex color of text, i.e #ABCDEF.
+    * Hex color of text, i.e `#ABCDEF`.
     */
   var textColor: js.UndefOr[String] = js.undefined
 }
 
 object TouchBarLabelConstructorOptions {
   @scala.inline
-  def apply(label: String = null, textColor: String = null): TouchBarLabelConstructorOptions = {
+  def apply(accessibilityLabel: String = null, label: String = null, textColor: String = null): TouchBarLabelConstructorOptions = {
     val __obj = js.Dynamic.literal()
+    if (accessibilityLabel != null) __obj.updateDynamic("accessibilityLabel")(accessibilityLabel.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (textColor != null) __obj.updateDynamic("textColor")(textColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[TouchBarLabelConstructorOptions]

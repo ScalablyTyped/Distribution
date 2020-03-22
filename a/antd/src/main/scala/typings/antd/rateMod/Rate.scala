@@ -15,7 +15,7 @@ trait Rate
   def blur(): Unit = js.native
   def characterRender(node: ReactNode, hasIndex: RateNodeProps): js.UndefOr[js.Object | Null] = js.native
   def focus(): Unit = js.native
-  def renderRate(hasGetPrefixCls: ConfigConsumerProps): Element = js.native
+  def renderRate(hasGetPrefixClsDirection: ConfigConsumerProps): Element = js.native
   def saveRate(node: js.Any): Unit = js.native
 }
 

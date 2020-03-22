@@ -1,6 +1,6 @@
 package typings.reactOnsenui.mod
 
-import typings.reactOnsenui.HTMLAttributesidclassNamestyleindexnumberrenderTab
+import typings.reactOnsenui.HTMLAttributesidclassNameIgnoreEdgeWidth
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-onsenui", "Tabbar")
 @js.native
 class Tabbar ()
-  extends typings.react.mod.Component[HTMLAttributesidclassNamestyleindexnumberrenderTab, js.Any, js.Any]
+  extends typings.react.mod.Component[HTMLAttributesidclassNameIgnoreEdgeWidth, js.Any, js.Any]
 

@@ -14,8 +14,8 @@ trait AvatarProps extends js.Object {
   var alt: js.UndefOr[String] = js.undefined
   var children: js.UndefOr[ReactNode] = js.undefined
   var className: js.UndefOr[String] = js.undefined
-  /** Type of the Icon to be used in avatar */
-  var icon: js.UndefOr[String | ReactNode] = js.undefined
+  /** icon to be used in avatar */
+  var icon: js.UndefOr[ReactNode] = js.undefined
   var onError: js.UndefOr[js.Function0[Boolean]] = js.undefined
   var prefixCls: js.UndefOr[String] = js.undefined
   /** Shape of avatar, options:`circle`, `square` */
@@ -34,7 +34,7 @@ object AvatarProps {
     alt: String = null,
     children: ReactNode = null,
     className: String = null,
-    icon: String | ReactNode = null,
+    icon: ReactNode = null,
     onError: () => Boolean = null,
     prefixCls: String = null,
     shape: circle | square = null,

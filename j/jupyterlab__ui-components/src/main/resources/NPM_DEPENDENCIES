@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jupyterlab/ui-components" : "1.2.1"
+      "@jupyterlab/ui-components" : "2.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@jupyterlab/ui-components" : "1.2.1"
+      "@jupyterlab/ui-components" : "2.0.0"
     }
   ],
   "compile-devDependencies" : [

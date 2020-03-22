@@ -1,8 +1,8 @@
 package typings.materializeCss.M
 
 import typings.materializeCss.MElements
+import typings.materializeCss.PartialAutocompleteOption
 import typings.std.Element
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -50,11 +50,11 @@ object Autocomplete extends js.Object {
     * Init autocompletes
     */
   def init(els: MElements): js.Array[Autocomplete] = js.native
-  def init(els: MElements, options: Partial[AutocompleteOptions]): js.Array[Autocomplete] = js.native
+  def init(els: MElements, options: PartialAutocompleteOption): js.Array[Autocomplete] = js.native
   /**
     * Init autocomplete
     */
   def init(els: Element): Autocomplete = js.native
-  def init(els: Element, options: Partial[AutocompleteOptions]): Autocomplete = js.native
+  def init(els: Element, options: PartialAutocompleteOption): Autocomplete = js.native
 }
 

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "fastq" : "1.6.0"
+      "fastq" : "1.6.1"
     }
   ],
   "test-dependencies" : [
     {
-      "fastq" : "1.6.0"
+      "fastq" : "1.6.1"
     }
   ],
   "compile-devDependencies" : [

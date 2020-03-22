@@ -8,7 +8,7 @@ trait ProgressData extends js.Object {
   /**
   		Absolute path to destination.
   		*/
-  var dest: String
+  var destinationPath: String
   /**
   		Copied percentage, a value between `0` and `1`.
   		*/
@@ -20,17 +20,17 @@ trait ProgressData extends js.Object {
   /**
   		Absolute path to source.
   		*/
-  var src: String
+  var sourcePath: String
   /**
   		Copied size in bytes.
   		*/
-  var written: Double
+  var writtenBytes: Double
 }
 
 object ProgressData {
   @scala.inline
-  def apply(dest: String, percent: Double, size: Double, src: String, written: Double): ProgressData = {
-    val __obj = js.Dynamic.literal(dest = dest.asInstanceOf[js.Any], percent = percent.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any], written = written.asInstanceOf[js.Any])
+  def apply(destinationPath: String, percent: Double, size: Double, sourcePath: String, writtenBytes: Double): ProgressData = {
+    val __obj = js.Dynamic.literal(destinationPath = destinationPath.asInstanceOf[js.Any], percent = percent.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], sourcePath = sourcePath.asInstanceOf[js.Any], writtenBytes = writtenBytes.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ProgressData]
   }

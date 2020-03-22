@@ -4,10 +4,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait InputStyleProps extends js.Object {
-  var align: js.UndefOr[Alignments] = js.undefined
-  var size: js.UndefOr[Sizes] = js.undefined
-  var valid: js.UndefOr[ValidationStates] = js.undefined
+  var align: js.UndefOr[Alignments] = js.native
+  var size: js.UndefOr[Sizes] = js.native
+  var valid: js.UndefOr[ValidationStates] = js.native
 }
 
 object InputStyleProps {

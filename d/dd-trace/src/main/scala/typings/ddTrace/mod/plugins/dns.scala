@@ -1,5 +1,6 @@
 package typings.ddTrace.mod.plugins
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.ddTrace.mod.Analyzable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,7 +17,7 @@ trait dns
 object dns {
   @scala.inline
   def apply(
-    analytics: Boolean | Double = null,
+    analytics: Boolean | Double | (StringDictionary[Boolean | Double]) = null,
     enabled: js.UndefOr[Boolean] = js.undefined,
     service: String = null
   ): dns = {

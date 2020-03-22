@@ -2,7 +2,7 @@ package typings.cesium
 
 import typings.cesium.mod.Credit
 import typings.cesium.mod.Ellipsoid
-import typings.cesium.mod.Proxy
+import typings.cesium.mod.Rectangle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,9 +10,8 @@ import scala.scalajs.js.annotation._
 trait AnonCreditEllipsoid extends js.Object {
   var credit: js.UndefOr[Credit | String] = js.undefined
   var ellipsoid: js.UndefOr[Ellipsoid] = js.undefined
-  var proxy: js.UndefOr[Proxy] = js.undefined
-  var requestVertexNormals: js.UndefOr[Boolean] = js.undefined
-  var requestWaterMask: js.UndefOr[Boolean] = js.undefined
+  var proxy: js.UndefOr[js.Any] = js.undefined
+  var rectangle: js.UndefOr[Rectangle] = js.undefined
   var url: String
 }
 
@@ -22,16 +21,14 @@ object AnonCreditEllipsoid {
     url: String,
     credit: Credit | String = null,
     ellipsoid: Ellipsoid = null,
-    proxy: Proxy = null,
-    requestVertexNormals: js.UndefOr[Boolean] = js.undefined,
-    requestWaterMask: js.UndefOr[Boolean] = js.undefined
+    proxy: js.Any = null,
+    rectangle: Rectangle = null
   ): AnonCreditEllipsoid = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     if (credit != null) __obj.updateDynamic("credit")(credit.asInstanceOf[js.Any])
     if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid.asInstanceOf[js.Any])
     if (proxy != null) __obj.updateDynamic("proxy")(proxy.asInstanceOf[js.Any])
-    if (!js.isUndefined(requestVertexNormals)) __obj.updateDynamic("requestVertexNormals")(requestVertexNormals.asInstanceOf[js.Any])
-    if (!js.isUndefined(requestWaterMask)) __obj.updateDynamic("requestWaterMask")(requestWaterMask.asInstanceOf[js.Any])
+    if (rectangle != null) __obj.updateDynamic("rectangle")(rectangle.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnonCreditEllipsoid]
   }
 }

@@ -1,5 +1,6 @@
 package typings.exceljs.mod
 
+import typings.exceljs.PartialColor
 import typings.exceljs.exceljsStrings.double
 import typings.exceljs.exceljsStrings.doubleAccounting
 import typings.exceljs.exceljsStrings.major
@@ -9,7 +10,6 @@ import typings.exceljs.exceljsStrings.single
 import typings.exceljs.exceljsStrings.singleAccounting
 import typings.exceljs.exceljsStrings.subscript
 import typings.exceljs.exceljsStrings.superscript
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation._
 trait Font extends js.Object {
   var bold: Boolean
   var charset: Double
-  var color: Partial[Color]
+  var color: PartialColor
   var family: Double
   var italic: Boolean
   var name: String
@@ -34,7 +34,7 @@ object Font {
   def apply(
     bold: Boolean,
     charset: Double,
-    color: Partial[Color],
+    color: PartialColor,
     family: Double,
     italic: Boolean,
     name: String,

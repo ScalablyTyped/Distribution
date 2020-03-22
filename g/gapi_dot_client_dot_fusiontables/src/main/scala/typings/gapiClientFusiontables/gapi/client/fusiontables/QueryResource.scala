@@ -1,7 +1,7 @@
 package typings.gapiClientFusiontables.gapi.client.fusiontables
 
 import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientFusiontables.AnonAltFieldsHdrs
+import typings.gapiClientFusiontables.AnonHdrs
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,22 +17,19 @@ trait QueryResource extends js.Object {
     * - DESCRIBE
     * - CREATE statement.
     */
-  def sql(request: AnonAltFieldsHdrs): Request_[Sqlresponse]
+  def sql(request: AnonHdrs): Request_[Sqlresponse]
   /**
     * Executes a SQL statement which can be any of
     * - SELECT
     * - SHOW
     * - DESCRIBE
     */
-  def sqlGet(request: AnonAltFieldsHdrs): Request_[Sqlresponse]
+  def sqlGet(request: AnonHdrs): Request_[Sqlresponse]
 }
 
 object QueryResource {
   @scala.inline
-  def apply(
-    sql: AnonAltFieldsHdrs => Request_[Sqlresponse],
-    sqlGet: AnonAltFieldsHdrs => Request_[Sqlresponse]
-  ): QueryResource = {
+  def apply(sql: AnonHdrs => Request_[Sqlresponse], sqlGet: AnonHdrs => Request_[Sqlresponse]): QueryResource = {
     val __obj = js.Dynamic.literal(sql = js.Any.fromFunction1(sql), sqlGet = js.Any.fromFunction1(sqlGet))
   
     __obj.asInstanceOf[QueryResource]

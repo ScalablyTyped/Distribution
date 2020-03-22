@@ -1,6 +1,6 @@
 package typings.oracleOraclejet.ojmessageMod
 
-import typings.oracleOraclejet.AnonCategories
+import typings.oracleOraclejet.AnonCategoriesLabelCloseIcon
 import typings.oracleOraclejet.mod.JetElement
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.mod.JetSetPropertyType
@@ -55,7 +55,6 @@ import typings.oracleOraclejet.oracleOraclejetStrings.keyup
 import typings.oracleOraclejet.oracleOraclejetStrings.load
 import typings.oracleOraclejet.oracleOraclejetStrings.loadeddata
 import typings.oracleOraclejet.oracleOraclejetStrings.loadedmetadata
-import typings.oracleOraclejet.oracleOraclejetStrings.loadend
 import typings.oracleOraclejet.oracleOraclejetStrings.loadstart
 import typings.oracleOraclejet.oracleOraclejetStrings.lostpointercapture
 import typings.oracleOraclejet.oracleOraclejetStrings.message
@@ -138,8 +137,8 @@ trait ojMessage_ extends JetElement[ojMessageSettableProperties] {
   var onOjAnimateEnd: (js.Function1[/* event */ ojAnimateEnd, _]) | Null = js.native
   var onOjAnimateStart: (js.Function1[/* event */ ojAnimateStart, _]) | Null = js.native
   var onOjClose: (js.Function1[/* event */ ojClose, _]) | Null = js.native
-  var onTranslationsChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonCategories], _]) | Null = js.native
-  var translations: AnonCategories = js.native
+  var onTranslationsChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonCategoriesLabelCloseIcon], _]) | Null = js.native
+  var translations: AnonCategoriesLabelCloseIcon = js.native
   @JSName("addEventListener")
   def addEventListener_abort(`type`: abort, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ UIEvent, _]): Unit = js.native
   @JSName("addEventListener")
@@ -516,17 +515,6 @@ trait ojMessage_ extends JetElement[ojMessageSettableProperties] {
   def addEventListener_loadedmetadata(
     `type`: loadedmetadata,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event_, _],
-    useCapture: Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_loadend(
-    `type`: loadend,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent[EventTarget], _]
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_loadend(
-    `type`: loadend,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent[EventTarget], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -960,12 +948,20 @@ trait ojMessage_ extends JetElement[ojMessageSettableProperties] {
   @JSName("addEventListener")
   def addEventListener_translationsChanged(
     `type`: translationsChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonCategories], _]
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ JetElementCustomEvent[AnonCategoriesLabelCloseIcon], 
+      _
+    ]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_translationsChanged(
     `type`: translationsChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonCategories], _],
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ JetElementCustomEvent[AnonCategoriesLabelCloseIcon], 
+      _
+    ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -999,7 +995,7 @@ trait ojMessage_ extends JetElement[ojMessageSettableProperties] {
   @JSName("getProperty")
   def getProperty_message(property: message): Message = js.native
   @JSName("getProperty")
-  def getProperty_translations(property: translations): AnonCategories = js.native
+  def getProperty_translations(property: translations): AnonCategoriesLabelCloseIcon = js.native
   def setProperties(properties: ojMessageSettablePropertiesLenient): Unit = js.native
   def setProperty[T /* <: String */](property: T, value: JetSetPropertyType[T, ojMessageSettableProperties]): Unit = js.native
   @JSName("setProperty")
@@ -1007,6 +1003,6 @@ trait ojMessage_ extends JetElement[ojMessageSettableProperties] {
   @JSName("setProperty")
   def setProperty_message(property: message, value: Message): Unit = js.native
   @JSName("setProperty")
-  def setProperty_translations(property: translations, value: AnonCategories): Unit = js.native
+  def setProperty_translations(property: translations, value: AnonCategoriesLabelCloseIcon): Unit = js.native
 }
 

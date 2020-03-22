@@ -1,11 +1,11 @@
 package typings.agGrid.gridOptionsMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.agGrid.AnonAny1238347583
-import typings.agGrid.AnonICellRendererComp
-import typings.agGrid.AnonIDateComp
-import typings.agGrid.AnonILoadingOverlayComp
-import typings.agGrid.AnonINoRowsOverlayComp
+import typings.agGrid.AnonInstantiable
+import typings.agGrid.AnonInstantiableAny
+import typings.agGrid.AnonInstantiableICellRendererComp
+import typings.agGrid.AnonInstantiableILoadingOverlayComp
+import typings.agGrid.AnonInstantiableINoRowsOverlayComp
 import typings.agGrid.colDefMod.ColDef
 import typings.agGrid.colDefMod.ColGroupDef
 import typings.agGrid.colDefMod.IAggFunc
@@ -117,7 +117,7 @@ trait GridOptions extends ComponentHolder {
   var context: js.UndefOr[js.Any] = js.undefined
   var contractColumnSelection: js.UndefOr[Boolean] = js.undefined
   var datasource: js.UndefOr[IDatasource] = js.undefined
-  var dateComponent: js.UndefOr[AnonIDateComp] = js.undefined
+  var dateComponent: js.UndefOr[AnonInstantiable] = js.undefined
   var dateComponentFramework: js.UndefOr[js.Any] = js.undefined
   var debug: js.UndefOr[Boolean] = js.undefined
   var defaultColDef: js.UndefOr[ColDef] = js.undefined
@@ -125,7 +125,7 @@ trait GridOptions extends ComponentHolder {
   var defaultExportParams: js.UndefOr[CsvExportParams] = js.undefined
   var defaultGroupSortComparator: js.UndefOr[js.Function2[/* nodeA */ RowNode, /* nodeB */ RowNode, Double]] = js.undefined
   var deltaRowDataMode: js.UndefOr[Boolean] = js.undefined
-  var detailCellRenderer: js.UndefOr[AnonICellRendererComp | ICellRendererFunc | String] = js.undefined
+  var detailCellRenderer: js.UndefOr[AnonInstantiableICellRendererComp | ICellRendererFunc | String] = js.undefined
   var detailCellRendererFramework: js.UndefOr[js.Any] = js.undefined
   var detailCellRendererParams: js.UndefOr[js.Any] = js.undefined
   var detailRowHeight: js.UndefOr[Double] = js.undefined
@@ -153,8 +153,8 @@ trait GridOptions extends ComponentHolder {
   var floatingFilter: js.UndefOr[Boolean] = js.undefined
   var floatingFiltersHeight: js.UndefOr[Double] = js.undefined
   var forPrint: js.UndefOr[Boolean] = js.undefined
-  var frameworkComponents: js.UndefOr[StringDictionary[AnonAny1238347583]] = js.undefined
-  var fullWidthCellRenderer: js.UndefOr[AnonICellRendererComp | ICellRendererFunc | String] = js.undefined
+  var frameworkComponents: js.UndefOr[StringDictionary[AnonInstantiableAny]] = js.undefined
+  var fullWidthCellRenderer: js.UndefOr[AnonInstantiableICellRendererComp | ICellRendererFunc | String] = js.undefined
   var fullWidthCellRendererFramework: js.UndefOr[js.Any] = js.undefined
   var fullWidthCellRendererParams: js.UndefOr[js.Any] = js.undefined
   var functionsPassive: js.UndefOr[Boolean] = js.undefined
@@ -181,9 +181,9 @@ trait GridOptions extends ComponentHolder {
   var groupRemoveLowestSingleChildren: js.UndefOr[Boolean] = js.undefined
   var groupRemoveSingleChildren: js.UndefOr[Boolean] = js.undefined
   var groupRowAggNodes: js.UndefOr[js.Function1[/* nodes */ js.Array[RowNode], _]] = js.undefined
-  var groupRowInnerRenderer: js.UndefOr[AnonICellRendererComp | ICellRendererFunc | String] = js.undefined
+  var groupRowInnerRenderer: js.UndefOr[AnonInstantiableICellRendererComp | ICellRendererFunc | String] = js.undefined
   var groupRowInnerRendererFramework: js.UndefOr[js.Any] = js.undefined
-  var groupRowRenderer: js.UndefOr[AnonICellRendererComp | ICellRendererFunc | String] = js.undefined
+  var groupRowRenderer: js.UndefOr[AnonInstantiableICellRendererComp | ICellRendererFunc | String] = js.undefined
   var groupRowRendererFramework: js.UndefOr[js.Any] = js.undefined
   var groupRowRendererParams: js.UndefOr[js.Any] = js.undefined
   var groupSelectsChildren: js.UndefOr[Boolean] = js.undefined
@@ -202,7 +202,7 @@ trait GridOptions extends ComponentHolder {
   var isFullWidthCell: js.UndefOr[js.Function1[/* rowNode */ RowNode, Boolean]] = js.undefined
   var isRowMaster: js.UndefOr[IsRowMaster] = js.undefined
   var isRowSelectable: js.UndefOr[IsRowSelectable] = js.undefined
-  var loadingOverlayComponent: js.UndefOr[AnonILoadingOverlayComp | String] = js.undefined
+  var loadingOverlayComponent: js.UndefOr[AnonInstantiableILoadingOverlayComp | String] = js.undefined
   var loadingOverlayComponentFramework: js.UndefOr[js.Any] = js.undefined
   /****************************************************************
     * Don't forget to update ComponentUtil if changing this class. *
@@ -216,7 +216,7 @@ trait GridOptions extends ComponentHolder {
   var minColWidth: js.UndefOr[Double] = js.undefined
   var multiSortKey: js.UndefOr[String] = js.undefined
   var navigateToNextCell: js.UndefOr[js.Function1[/* params */ NavigateToNextCellParams, GridCellDef]] = js.undefined
-  var noRowsOverlayComponent: js.UndefOr[AnonINoRowsOverlayComp | String] = js.undefined
+  var noRowsOverlayComponent: js.UndefOr[AnonInstantiableINoRowsOverlayComp | String] = js.undefined
   var noRowsOverlayComponentFramework: js.UndefOr[js.Any] = js.undefined
   var onBodyScroll: js.UndefOr[js.Function1[/* event */ BodyScrollEvent, Unit]] = js.undefined
   var onCellClicked: js.UndefOr[js.Function1[/* event */ CellClickedEvent, Unit]] = js.undefined
@@ -428,7 +428,7 @@ object GridOptions {
     context: js.Any = null,
     contractColumnSelection: js.UndefOr[Boolean] = js.undefined,
     datasource: IDatasource = null,
-    dateComponent: AnonIDateComp = null,
+    dateComponent: AnonInstantiable = null,
     dateComponentFramework: js.Any = null,
     debug: js.UndefOr[Boolean] = js.undefined,
     defaultColDef: ColDef = null,
@@ -436,7 +436,7 @@ object GridOptions {
     defaultExportParams: CsvExportParams = null,
     defaultGroupSortComparator: (/* nodeA */ RowNode, /* nodeB */ RowNode) => Double = null,
     deltaRowDataMode: js.UndefOr[Boolean] = js.undefined,
-    detailCellRenderer: AnonICellRendererComp | ICellRendererFunc | String = null,
+    detailCellRenderer: AnonInstantiableICellRendererComp | ICellRendererFunc | String = null,
     detailCellRendererFramework: js.Any = null,
     detailCellRendererParams: js.Any = null,
     detailRowHeight: Int | Double = null,
@@ -464,8 +464,8 @@ object GridOptions {
     floatingFilter: js.UndefOr[Boolean] = js.undefined,
     floatingFiltersHeight: Int | Double = null,
     forPrint: js.UndefOr[Boolean] = js.undefined,
-    frameworkComponents: StringDictionary[AnonAny1238347583] = null,
-    fullWidthCellRenderer: AnonICellRendererComp | ICellRendererFunc | String = null,
+    frameworkComponents: StringDictionary[AnonInstantiableAny] = null,
+    fullWidthCellRenderer: AnonInstantiableICellRendererComp | ICellRendererFunc | String = null,
     fullWidthCellRendererFramework: js.Any = null,
     fullWidthCellRendererParams: js.Any = null,
     functionsPassive: js.UndefOr[Boolean] = js.undefined,
@@ -492,9 +492,9 @@ object GridOptions {
     groupRemoveLowestSingleChildren: js.UndefOr[Boolean] = js.undefined,
     groupRemoveSingleChildren: js.UndefOr[Boolean] = js.undefined,
     groupRowAggNodes: /* nodes */ js.Array[RowNode] => _ = null,
-    groupRowInnerRenderer: AnonICellRendererComp | ICellRendererFunc | String = null,
+    groupRowInnerRenderer: AnonInstantiableICellRendererComp | ICellRendererFunc | String = null,
     groupRowInnerRendererFramework: js.Any = null,
-    groupRowRenderer: AnonICellRendererComp | ICellRendererFunc | String = null,
+    groupRowRenderer: AnonInstantiableICellRendererComp | ICellRendererFunc | String = null,
     groupRowRendererFramework: js.Any = null,
     groupRowRendererParams: js.Any = null,
     groupSelectsChildren: js.UndefOr[Boolean] = js.undefined,
@@ -510,7 +510,7 @@ object GridOptions {
     isFullWidthCell: /* rowNode */ RowNode => Boolean = null,
     isRowMaster: /* dataItem */ js.Any => Boolean = null,
     isRowSelectable: /* node */ RowNode => Boolean = null,
-    loadingOverlayComponent: AnonILoadingOverlayComp | String = null,
+    loadingOverlayComponent: AnonInstantiableILoadingOverlayComp | String = null,
     loadingOverlayComponentFramework: js.Any = null,
     localeText: js.Any = null,
     localeTextFunc: js.Function = null,
@@ -521,7 +521,7 @@ object GridOptions {
     minColWidth: Int | Double = null,
     multiSortKey: String = null,
     navigateToNextCell: /* params */ NavigateToNextCellParams => GridCellDef = null,
-    noRowsOverlayComponent: AnonINoRowsOverlayComp | String = null,
+    noRowsOverlayComponent: AnonInstantiableINoRowsOverlayComp | String = null,
     noRowsOverlayComponentFramework: js.Any = null,
     onBodyScroll: /* event */ BodyScrollEvent => Unit = null,
     onCellClicked: /* event */ CellClickedEvent => Unit = null,

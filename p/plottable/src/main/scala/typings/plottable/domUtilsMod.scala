@@ -26,7 +26,7 @@ object domUtilsMod extends js.Object {
   def elementWidth(elementOrSelection: Selection_[Element, _, _, _]): Double = js.native
   def elementWidth(elementOrSelection: Element): Double = js.native
   def entityBounds(element: Element): IEntityBounds = js.native
-  def expandRect(rect: ClientRect, amount: Double): AnonBottomHeight = js.native
+  def expandRect(rect: ClientRect, amount: Double): AnonLeft = js.native
   def getElementTransform(elem: Element): ICssTransformMatrix | Null = js.native
   def getHtmlElementAncestors(elem: Element): js.Array[HTMLElement] = js.native
   def getRotate(el: SimpleSelection[_]): Double = js.native

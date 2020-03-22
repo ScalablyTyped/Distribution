@@ -1,7 +1,7 @@
 package typings.select2.mod
 
-import typings.select2.AnonKey
 import typings.select2.AnonRequire
+import typings.select2.AnonReset
 import typings.select2.mod._Global_.JQuery
 import typings.select2.select2Strings.close
 import typings.select2.select2Strings.data
@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Select2Plugin[TElement] extends js.Object {
   var amd: AnonRequire = js.native
-  var defaults: AnonKey = js.native
+  var defaults: AnonReset = js.native
   def apply(): JQuery[TElement] = js.native
   /**
   	 * Closes the dropdown

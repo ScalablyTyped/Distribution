@@ -23,13 +23,13 @@ object containerMod extends js.Object {
     def appendChild(other: Blot): Unit = js.native
     def build(): Unit = js.native
     def descendant(criteria: js.Function1[/* blot */ Blot, Boolean], index: Double): js.Tuple2[Blot | Null, Double] = js.native
-    def descendant(criteria: AnonBlot, index: Double): js.Tuple2[Blot | Null, Double] = js.native
-    def descendant[T](`type`: AnonT[T], index: Double): js.Tuple2[T, Double] = js.native
+    def descendant(criteria: AnonInstantiableBlot, index: Double): js.Tuple2[Blot | Null, Double] = js.native
+    def descendant[T](`type`: AnonInstantiable[T], index: Double): js.Tuple2[T, Double] = js.native
     @JSName("descendant")
     def descendant_T[T](matcher: js.Function1[/* blot */ Blot, Boolean], index: Double): js.Tuple2[T, Double] = js.native
     def descendants(criteria: js.Function1[/* blot */ Blot, Boolean], index: Double, length: Double): js.Array[Blot] = js.native
-    def descendants(criteria: AnonBlot, index: Double, length: Double): js.Array[Blot] = js.native
-    def descendants[T](`type`: AnonT[T], index: Double, length: Double): js.Array[T] = js.native
+    def descendants(criteria: AnonInstantiableBlot, index: Double, length: Double): js.Array[Blot] = js.native
+    def descendants[T](`type`: AnonInstantiable[T], index: Double, length: Double): js.Array[T] = js.native
     @JSName("descendants")
     def descendants_T[T](matcher: js.Function1[/* blot */ Blot, Boolean], index: Double, length: Double): js.Array[T] = js.native
     def insertBefore(childBlot: Blot): Unit = js.native

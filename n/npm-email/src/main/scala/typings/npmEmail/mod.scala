@@ -11,7 +11,7 @@ object mod extends js.Object {
   // declare function npmEmail(username: string): Promise<string>;
   // export = npmEmail;
   @JSName("default")
-  var default_Original: AnonDefault = js.native
+  var default_Original: AnonCall = js.native
   /**
   	Get the email of an npm user.
   	@param username - npm username to look up.

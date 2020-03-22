@@ -26,6 +26,32 @@ trait Outposts extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateOutpostOutput, Unit]
   ): Request[CreateOutpostOutput, AWSError] = js.native
   /**
+    * Deletes the Outpost.
+    */
+  def deleteOutpost(): Request[DeleteOutpostOutput, AWSError] = js.native
+  def deleteOutpost(callback: js.Function2[/* err */ AWSError, /* data */ DeleteOutpostOutput, Unit]): Request[DeleteOutpostOutput, AWSError] = js.native
+  /**
+    * Deletes the Outpost.
+    */
+  def deleteOutpost(params: DeleteOutpostInput): Request[DeleteOutpostOutput, AWSError] = js.native
+  def deleteOutpost(
+    params: DeleteOutpostInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteOutpostOutput, Unit]
+  ): Request[DeleteOutpostOutput, AWSError] = js.native
+  /**
+    * Deletes the site.
+    */
+  def deleteSite(): Request[DeleteSiteOutput, AWSError] = js.native
+  def deleteSite(callback: js.Function2[/* err */ AWSError, /* data */ DeleteSiteOutput, Unit]): Request[DeleteSiteOutput, AWSError] = js.native
+  /**
+    * Deletes the site.
+    */
+  def deleteSite(params: DeleteSiteInput): Request[DeleteSiteOutput, AWSError] = js.native
+  def deleteSite(
+    params: DeleteSiteInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteSiteOutput, Unit]
+  ): Request[DeleteSiteOutput, AWSError] = js.native
+  /**
     * Gets information about the specified Outpost.
     */
   def getOutpost(): Request[GetOutpostOutput, AWSError] = js.native

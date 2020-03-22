@@ -1,9 +1,9 @@
 package typings.jupyterlabApputils.widgettrackerMod
 
 import typings.jupyterlabApputils.widgettrackerMod.WidgetTracker.IOptions
-import typings.jupyterlabCoreutils.interfacesMod.IRestorable
-import typings.phosphorSignaling.mod.ISignal
-import typings.phosphorWidgets.mod.Widget
+import typings.jupyterlabStatedb.interfacesMod.IRestorable
+import typings.luminoSignaling.mod.ISignal
+import typings.luminoWidgets.mod.Widget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -87,6 +87,20 @@ class WidgetTracker_[T /* <: Widget */] protected ()
     */
   def add(widget: T): js.Promise[Unit] = js.native
   /**
+    * A signal emitted when the current widget changes.
+    */
+  @JSName("currentChanged")
+  def currentChanged_MWidgetTracker_(): ISignal[this.type, T | Null] = js.native
+  /**
+    * The current widget is the most recently focused or added widget.
+    *
+    * #### Notes
+    * It is the most recently focused widget, or the most recently added
+    * widget if no widget has taken focus.
+    */
+  @JSName("currentWidget")
+  def currentWidget_MWidgetTracker_(): T | Null = js.native
+  /**
     * Dispose of the resources held by the object.
     *
     * #### Notes
@@ -138,6 +152,11 @@ class WidgetTracker_[T /* <: Widget */] protected ()
     */
   /* CompleteClass */
   override def inject(obj: T): Unit = js.native
+  /**
+    * Test whether the tracker is disposed.
+    */
+  @JSName("isDisposed")
+  def isDisposed_MWidgetTracker_(): Boolean = js.native
   /* protected */ def onCurrentChanged(): Unit = js.native
   /**
     * Handle the current change event.
@@ -155,12 +174,36 @@ class WidgetTracker_[T /* <: Widget */] protected ()
     *
     */
   /* InferMemberOverrides */
-  override def restore(options: typings.jupyterlabCoreutils.interfacesMod.IRestorable.IOptions[T]): js.Promise[js.Any] = js.native
+  override def restore(options: typings.jupyterlabStatedb.interfacesMod.IRestorable.IOptions[T]): js.Promise[js.Any] = js.native
+  /**
+    * A promise resolved when the tracker has been restored.
+    */
+  @JSName("restored")
+  def restored_MWidgetTracker_(): js.Promise[Unit] = js.native
   /**
     * Save the restore data for a given widget.
     *
     * @param widget - The widget being saved.
     */
   def save(widget: T): js.Promise[Unit] = js.native
+  /**
+    * The number of widgets held by the tracker.
+    */
+  @JSName("size")
+  def size_MWidgetTracker_(): Double = js.native
+  /**
+    * A signal emitted when a widget is added.
+    *
+    * #### Notes
+    * This signal will only fire when a widget is added to the tracker. It will
+    * not fire if a widget is injected into the tracker.
+    */
+  @JSName("widgetAdded")
+  def widgetAdded_MWidgetTracker_(): ISignal[this.type, T] = js.native
+  /**
+    * A signal emitted when a widget is updated.
+    */
+  @JSName("widgetUpdated")
+  def widgetUpdated_MWidgetTracker_(): ISignal[this.type, T] = js.native
 }
 

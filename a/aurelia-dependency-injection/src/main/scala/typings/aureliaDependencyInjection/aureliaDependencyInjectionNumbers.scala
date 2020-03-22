@@ -1,42 +1,26 @@
 package typings.aureliaDependencyInjection
 
 import typings.aureliaDependencyInjection.mod.IStrategy
-import typings.aureliaDependencyInjection.mod.Strategy
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object aureliaDependencyInjectionNumbers {
   @js.native
-  sealed trait `0` extends Strategy
+  sealed trait `1` extends IStrategy
   
   @js.native
-  sealed trait `1`
-    extends IStrategy
-       with Strategy
+  sealed trait `2` extends IStrategy
   
   @js.native
-  sealed trait `2`
-    extends IStrategy
-       with Strategy
+  sealed trait `3` extends IStrategy
   
   @js.native
-  sealed trait `3`
-    extends IStrategy
-       with Strategy
+  sealed trait `4` extends IStrategy
   
   @js.native
-  sealed trait `4`
-    extends IStrategy
-       with Strategy
+  sealed trait `5` extends IStrategy
   
-  @js.native
-  sealed trait `5`
-    extends IStrategy
-       with Strategy
-  
-  @scala.inline
-  def `0`: `0` = 0.asInstanceOf[`0`]
   @scala.inline
   def `1`: `1` = 1.asInstanceOf[`1`]
   @scala.inline

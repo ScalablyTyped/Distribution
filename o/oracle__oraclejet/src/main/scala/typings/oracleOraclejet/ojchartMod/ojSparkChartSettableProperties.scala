@@ -1,7 +1,7 @@
 package typings.oracleOraclejet.ojchartMod
 
-import typings.oracleOraclejet.AnonComponentNameLabelAndValue
-import typings.oracleOraclejet.AnonContextRenderer
+import typings.oracleOraclejet.Anon0
+import typings.oracleOraclejet.AnonLabelAndValue
 import typings.oracleOraclejet.ojchartMod.ojSparkChart.ReferenceObject
 import typings.oracleOraclejet.ojdataproviderMod.DataProvider
 import typings.oracleOraclejet.ojdvtBaseMod.dvtBaseComponentSettableProperties
@@ -60,9 +60,9 @@ trait ojSparkChartSettableProperties[K, D] extends dvtBaseComponentSettablePrope
   var referenceObjects: js.Array[ReferenceObject]
   var svgClassName: String
   var svgStyle: js.Object
-  var tooltip: AnonContextRenderer
+  var tooltip: Anon0
   @JSName("translations")
-  var translations_ojSparkChartSettableProperties: AnonComponentNameLabelAndValue
+  var translations_ojSparkChartSettableProperties: AnonLabelAndValue
   var `type`: area | lineWithArea | bar | line
   var visualEffects: none | auto
 }
@@ -91,9 +91,9 @@ object ojSparkChartSettableProperties {
     referenceObjects: js.Array[ReferenceObject],
     svgClassName: String,
     svgStyle: js.Object,
-    tooltip: AnonContextRenderer,
+    tooltip: Anon0,
     trackResize: on | off,
-    translations: AnonComponentNameLabelAndValue,
+    translations: AnonLabelAndValue,
     `type`: area | lineWithArea | bar | line,
     visualEffects: none | auto,
     animationDuration: Int | Double = null,

@@ -6,6 +6,7 @@ import typings.googleCloudStorage.fileMod.File
 import typings.googleCloudStorage.fileMod.FileOptions
 import typings.googleCloudStorage.iamMod.Iam
 import typings.googleCloudStorage.notificationMod.Notification
+import typings.googleCloudStorage.storageMod.Cors
 import typings.googleCloudStorage.storageMod.Storage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -146,6 +147,28 @@ class Bucket protected ()
     *   .on('data', function(file) {
     *     this.end();
     *   });
+    *
+    * //-
+    * // If you're filtering files with a delimiter, you should use
+    * // {@link Bucket#getFiles} and set `autoPaginate: false` in order to
+    * // preserve the `apiResponse` argument.
+    * //-
+    * const prefixes = [];
+    *
+    * function callback(err, files, nextQuery, apiResponse) {
+    *   prefixes = prefixes.concat(apiResponse.prefixes);
+    *
+    *   if (nextQuery) {
+    *     bucket.getFiles(nextQuery, callback);
+    *   } else {
+    *     // prefixes = The finished array of prefixes.
+    *   }
+    * }
+    *
+    * bucket.getFiles({
+    *   autoPaginate: false,
+    *   delimiter: '/'
+    * }, callback);
     */
   var getFilesStream: js.Function = js.native
   /**
@@ -330,6 +353,8 @@ class Bucket protected ()
   def notification(id: String): Notification = js.native
   def removeRetentionPeriod(): js.Promise[SetBucketMetadataResponse] = js.native
   def removeRetentionPeriod(callback: SetBucketMetadataCallback): Unit = js.native
+  def setCorsConfiguration(corsConfiguration: js.Array[Cors]): js.Promise[SetBucketMetadataResponse] = js.native
+  def setCorsConfiguration(corsConfiguration: js.Array[Cors], callback: SetBucketMetadataCallback): Unit = js.native
   def setLabels(labels: Labels): js.Promise[SetLabelsResponse] = js.native
   def setLabels(labels: Labels, callback: SetLabelsCallback): Unit = js.native
   def setLabels(labels: Labels, options: SetLabelsOptions): js.Promise[SetLabelsResponse] = js.native

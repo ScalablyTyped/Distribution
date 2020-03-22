@@ -6,15 +6,21 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait PostAgentProfileRequest extends js.Object {
+  /**
+    * 
+    */
   var agentProfile: AgentProfile = js.native
   /**
-    * The content type of the agent profile in the payload. Recommended to send the profile gzipped with content-type application/octet-stream. Other accepted values are application/x-amzn-ion and application/json for unzipped Ion and JSON respectively.
+    * 
     */
   var contentType: String = js.native
   /**
-    * Client generated token to deduplicate the agent profile during aggregation.
+    * 
     */
   var profileToken: js.UndefOr[ClientToken] = js.native
+  /**
+    * 
+    */
   var profilingGroupName: ProfilingGroupName = js.native
 }
 

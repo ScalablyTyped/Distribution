@@ -1,6 +1,5 @@
 package typings.reactFoundation
 
-import typings.react.mod.HTMLAttributes
 import typings.reactFoundation.accordionMod.AccordianContentProps
 import typings.reactFoundation.accordionMod.AccordianItemProps
 import typings.reactFoundation.accordionMod.AccordianProps
@@ -135,8 +134,6 @@ trait reactFoundationProps {
   @scala.inline
   def SliderFillProps: typings.reactFoundation.sliderMod.SliderFillProps.type = typings.reactFoundation.sliderMod.SliderFillProps
   type SliderFillProps = typings.reactFoundation.sliderMod.SliderFillProps
-  @scala.inline
-  def SliderHandleProps: HTMLAttributes.type = typings.react.mod.HTMLAttributes
   type SliderHandleProps = typings.reactFoundation.sliderMod.SliderHandleProps
   @scala.inline
   def SwitchProps: typings.reactFoundation.switchMod.SwitchProps.type = typings.reactFoundation.switchMod.SwitchProps

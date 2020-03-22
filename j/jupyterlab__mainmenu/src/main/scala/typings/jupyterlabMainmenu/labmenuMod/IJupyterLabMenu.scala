@@ -1,7 +1,7 @@
 package typings.jupyterlabMainmenu.labmenuMod
 
-import typings.phosphorDisposable.mod.IDisposable
-import typings.phosphorWidgets.menuMod.Menu.IItemOptions
+import typings.luminoDisposable.mod.IDisposable
+import typings.luminoWidgets.menuMod.Menu.IItemOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

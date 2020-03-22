@@ -1,6 +1,6 @@
 package typings.cypress.fpMod
 
-import typings.cypress.TypeofcypressTypesLodash
+import typings.cypress.TypeofcypressTypesLodas
 import typings.cypress.cypressBooleans.`false`
 import typings.cypress.cypressBooleans.`true`
 import typings.cypress.cypressNumbers.`0`
@@ -3486,7 +3486,7 @@ trait LoDashFp extends js.Object {
   def isArray(value: js.Any): /* is std.Array<any> */ Boolean = js.native
   def isArrayBuffer(value: js.Any): /* is std.ArrayBuffer */ Boolean = js.native
   def isArrayLike(): /* is never */ Boolean = js.native
-  def isArrayLike(value: js.Any): /* is cypress.Anon_LengthNumber */ Boolean = js.native
+  def isArrayLike(value: js.Any): /* is cypress.AnonLengthNumber */ Boolean = js.native
   def isArrayLike(value: js.Function1[/* repeated */ js.Any, _]): /* is never */ Boolean = js.native
   def isArrayLike[T](value: T with String with Double): Boolean = js.native
   def isArrayLikeObject(): /* is never */ Boolean = js.native
@@ -3858,7 +3858,7 @@ trait LoDashFp extends js.Object {
   def negate[A1, A2](predicate: js.Function2[/* a1 */ A1, /* a2 */ A2, Boolean]): js.Function2[/* a1 */ A1, /* a2 */ A2, Boolean] = js.native
   @JSName("negate")
   def negate_A1[A1](predicate: js.Function1[/* a1 */ A1, Boolean]): js.Function1[/* a1 */ A1, Boolean] = js.native
-  def noConflict(): TypeofcypressTypesLodash = js.native
+  def noConflict(): TypeofcypressTypesLodas = js.native
   def noop(args: js.Any*): Unit = js.native
   def now(): Double = js.native
   def nth(n: Double): LodashNth1x1 = js.native

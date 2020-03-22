@@ -1,7 +1,7 @@
 package typings.saslDigestMd5.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.saslDigestMd5.TypeofClassDigestMd5Mechanism
+import typings.saslDigestMd5.TypeofDigestMd5Mechanism
 import typings.saslDigestMd5.saslDigestMd5Booleans.`false`
 import typings.saslDigestMd5.saslDigestMd5Strings.`DIGEST-MD5`
 import scala.scalajs.js
@@ -30,6 +30,6 @@ class ^ () extends DigestMd5Mechanism {
 @JSImport("sasl-digest-md5", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  var Mechanism: TypeofClassDigestMd5Mechanism = js.native
+  var Mechanism: TypeofDigestMd5Mechanism = js.native
 }
 

@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ionic/angular/dist/directives/control-value-accessors/boolean-value-accessor", JSImport.Namespace)
+@JSImport("@ionic/angular/directives/control-value-accessors/boolean-value-accessor", JSImport.Namespace)
 @js.native
 object booleanValueAccessorMod extends js.Object {
   @js.native

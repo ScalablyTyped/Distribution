@@ -1,12 +1,12 @@
 package typings.forgeApis.mod
 
-import typings.forgeApis.AnonAcceptEncodingIfModifiedSince
-import typings.forgeApis.AnonAcceptEncodingIfModifiedSinceIfNoneMatch
 import typings.forgeApis.AnonAccess
 import typings.forgeApis.AnonBeginsWith
 import typings.forgeApis.AnonContentDisposition
-import typings.forgeApis.AnonContentDispositionIfMatch
+import typings.forgeApis.AnonIfMatch
 import typings.forgeApis.AnonIfModifiedSince
+import typings.forgeApis.AnonIfNoneMatch
+import typings.forgeApis.AnonWith
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -52,7 +52,7 @@ class ObjectsApi () extends js.Object {
   def getObject(
     bucketKey: String,
     objectName: String,
-    opts: AnonAcceptEncodingIfModifiedSince,
+    opts: AnonIfModifiedSince,
     oauth2Client: AuthClient,
     credentials: AuthToken
   ): js.Promise[ApiResponse] = js.native
@@ -62,7 +62,7 @@ class ObjectsApi () extends js.Object {
   def getObjectDetails(
     bucketKey: String,
     objectName: String,
-    opts: AnonIfModifiedSince,
+    opts: AnonWith,
     oauth2Client: AuthClient,
     credentials: AuthToken
   ): js.Promise[ApiResponse] = js.native
@@ -73,12 +73,7 @@ class ObjectsApi () extends js.Object {
   /**
     * Download an object using a signed URL.
     */
-  def getSignedResource(
-    id: String,
-    opts: AnonAcceptEncodingIfModifiedSinceIfNoneMatch,
-    oauth2Client: AuthClient,
-    credentials: AuthToken
-  ): js.Promise[ApiResponse] = js.native
+  def getSignedResource(id: String, opts: AnonIfNoneMatch, oauth2Client: AuthClient, credentials: AuthToken): js.Promise[ApiResponse] = js.native
   /**
     * This endpoint returns status information about a resumable upload.
     */
@@ -144,7 +139,7 @@ class ObjectsApi () extends js.Object {
     id: String,
     contentLength: Double,
     body: String,
-    opts: AnonContentDispositionIfMatch,
+    opts: AnonIfMatch,
     oauth2Client: AuthClient,
     credentials: AuthToken
   ): js.Promise[ApiResponse] = js.native
@@ -152,7 +147,7 @@ class ObjectsApi () extends js.Object {
     id: String,
     contentLength: Double,
     body: Buffer,
-    opts: AnonContentDispositionIfMatch,
+    opts: AnonIfMatch,
     oauth2Client: AuthClient,
     credentials: AuthToken
   ): js.Promise[ApiResponse] = js.native

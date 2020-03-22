@@ -5,7 +5,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mod {
-  type Context = typings.koa.mod.ParameterizedContext[typings.koa.mod.DefaultState, typings.koa.mod.DefaultContext]
   type DefaultContextExtends = js.Object
   /**
     * This interface can be augmented by users to add types to Koa's default state

@@ -1,6 +1,6 @@
 package typings.typedoc.tsInternalMod
 
-import typings.typedoc.typedocStrings.object_
+import typings.typedoc.typedocStrings.`object`
 import typings.typescript.mod.DiagnosticMessage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,14 +10,14 @@ trait TsConfigOnlyOption
   extends CommandLineOptionBase
      with CommandLineOption {
   @JSName("type")
-  var type_TsConfigOnlyOption: object_
+  var type_TsConfigOnlyOption: `object`
 }
 
 object TsConfigOnlyOption {
   @scala.inline
   def apply(
     name: String,
-    `type`: object_,
+    `type`: `object`,
     description: DiagnosticMessage = null,
     experimental: js.UndefOr[Boolean] = js.undefined,
     isFilePath: js.UndefOr[Boolean] = js.undefined,

@@ -5,10 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ScrollProps
   extends /* key */ StringDictionary[js.Any] {
-  var horizontal: js.UndefOr[Boolean] = js.undefined
-  var vertical: js.UndefOr[Boolean] = js.undefined
+  var horizontal: js.UndefOr[Boolean] = js.native
+  var vertical: js.UndefOr[Boolean] = js.native
 }
 
 object ScrollProps {

@@ -1,8 +1,8 @@
 package typings.vexflow.Vex.Flow
 
 import typings.vexflow.AnonBaseY
+import typings.vexflow.AnonFillStyle_
 import typings.vexflow.AnonStemdirection
-import typings.vexflow.Anon_FillStyle
 import typings.vexflow.Vex.IRenderContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,12 +20,12 @@ class Stem protected () extends js.Object {
   def getCategory(): String = js.native
   def getExtents(): AnonBaseY = js.native
   def getHeight(): Double = js.native
-  def getStyle(): Anon_FillStyle = js.native
+  def getStyle(): AnonFillStyle_ = js.native
   def setContext(context: IRenderContext): Stem = js.native
   def setDirection(direction: Double): Unit = js.native
   def setExtension(extension: Double): Unit = js.native
   def setNoteHeadXBounds(x_begin: Double, x_end: Double): Stem = js.native
-  def setStyle(style: Anon_FillStyle): Unit = js.native
+  def setStyle(style: AnonFillStyle_): Unit = js.native
   def setYBounds(y_top: Double, y_bottom: Double): Unit = js.native
 }
 

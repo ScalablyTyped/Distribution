@@ -1,6 +1,6 @@
 package typings.wegameApi.wx
 
-import typings.wegameApi.AnonCompleteFailSuccess
+import typings.wegameApi.AnonWithShareTicket
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,6 +11,6 @@ object updateShareMenu extends js.Object {
   /**
     * 更新转发属性
     */
-  def apply(param: AnonCompleteFailSuccess): Unit = js.native
+  def apply(param: AnonWithShareTicket): Unit = js.native
 }
 

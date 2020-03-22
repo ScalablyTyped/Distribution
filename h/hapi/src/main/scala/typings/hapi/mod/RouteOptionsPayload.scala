@@ -1,6 +1,6 @@
 package typings.hapi.mod
 
-import typings.hapi.AnonAnnotated
+import typings.hapi.AnonOutput
 import typings.hapi.hapiBooleans.`false`
 import typings.hapi.hapiStrings.gunzip
 import typings.hapi.mod.Lifecycle.FailAction
@@ -59,7 +59,7 @@ trait RouteOptionsPayload extends js.Object {
     * * * * payload - the processed part payload.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionspayloadmultipart)
     */
-  var multipart: js.UndefOr[`false` | AnonAnnotated] = js.undefined
+  var multipart: js.UndefOr[`false` | AnonOutput] = js.undefined
   /**
     * Default value: 'data'.
     * The processed payload format. The value must be one of:
@@ -114,7 +114,7 @@ object RouteOptionsPayload {
     defaultContentType: String = null,
     failAction: FailAction = null,
     maxBytes: Int | Double = null,
-    multipart: `false` | AnonAnnotated = null,
+    multipart: `false` | AnonOutput = null,
     output: PayloadOutput = null,
     `override`: String = null,
     parse: Boolean | gunzip = null,

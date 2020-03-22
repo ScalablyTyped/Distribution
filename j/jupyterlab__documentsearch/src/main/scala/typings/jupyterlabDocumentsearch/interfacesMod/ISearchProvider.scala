@@ -1,7 +1,7 @@
 package typings.jupyterlabDocumentsearch.interfacesMod
 
-import typings.phosphorSignaling.mod.ISignal
-import typings.phosphorWidgets.mod.Widget
+import typings.luminoSignaling.mod.ISignal
+import typings.luminoWidgets.mod.Widget
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,6 +16,11 @@ trait ISearchProvider[T /* <: Widget */] extends js.Object {
     * The current index of the selected match.
     */
   val currentMatchIndex: Double | Null
+  /**
+    * Set to true if the widget under search has outputs to search.
+    * Defaults to false.
+    */
+  val hasOutputs: js.UndefOr[Boolean] = js.undefined
   /**
     * Set to true if the widget under search is read-only, false
     * if it is editable.  Will be used to determine whether to show
@@ -80,10 +85,11 @@ trait ISearchProvider[T /* <: Widget */] extends js.Object {
     *
     * @param query A RegExp to be use to perform the search
     * @param searchTarget The widget to be searched
+    * @param filters Filter parameters to pass to provider
     *
     * @returns A promise that resolves with a list of all matches
     */
-  def startQuery(query: RegExp, searchTarget: T): js.Promise[js.Array[ISearchMatch]]
+  def startQuery(query: RegExp, searchTarget: T, filters: IFiltersType): js.Promise[js.Array[ISearchMatch]]
 }
 
 object ISearchProvider {
@@ -99,11 +105,13 @@ object ISearchProvider {
     matches: js.Array[ISearchMatch],
     replaceAllMatches: String => js.Promise[Boolean],
     replaceCurrentMatch: String => js.Promise[Boolean],
-    startQuery: (RegExp, T) => js.Promise[js.Array[ISearchMatch]],
-    currentMatchIndex: Int | Double = null
+    startQuery: (RegExp, T, IFiltersType) => js.Promise[js.Array[ISearchMatch]],
+    currentMatchIndex: Int | Double = null,
+    hasOutputs: js.UndefOr[Boolean] = js.undefined
   ): ISearchProvider[T] = {
-    val __obj = js.Dynamic.literal(changed = changed.asInstanceOf[js.Any], endQuery = js.Any.fromFunction0(endQuery), endSearch = js.Any.fromFunction0(endSearch), getInitialQuery = js.Any.fromFunction1(getInitialQuery), highlightNext = js.Any.fromFunction0(highlightNext), highlightPrevious = js.Any.fromFunction0(highlightPrevious), isReadOnly = isReadOnly.asInstanceOf[js.Any], matches = matches.asInstanceOf[js.Any], replaceAllMatches = js.Any.fromFunction1(replaceAllMatches), replaceCurrentMatch = js.Any.fromFunction1(replaceCurrentMatch), startQuery = js.Any.fromFunction2(startQuery))
+    val __obj = js.Dynamic.literal(changed = changed.asInstanceOf[js.Any], endQuery = js.Any.fromFunction0(endQuery), endSearch = js.Any.fromFunction0(endSearch), getInitialQuery = js.Any.fromFunction1(getInitialQuery), highlightNext = js.Any.fromFunction0(highlightNext), highlightPrevious = js.Any.fromFunction0(highlightPrevious), isReadOnly = isReadOnly.asInstanceOf[js.Any], matches = matches.asInstanceOf[js.Any], replaceAllMatches = js.Any.fromFunction1(replaceAllMatches), replaceCurrentMatch = js.Any.fromFunction1(replaceCurrentMatch), startQuery = js.Any.fromFunction3(startQuery))
     if (currentMatchIndex != null) __obj.updateDynamic("currentMatchIndex")(currentMatchIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasOutputs)) __obj.updateDynamic("hasOutputs")(hasOutputs.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISearchProvider[T]]
   }
 }

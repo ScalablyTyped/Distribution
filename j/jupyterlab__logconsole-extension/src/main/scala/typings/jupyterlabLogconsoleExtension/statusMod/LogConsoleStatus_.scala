@@ -1,6 +1,6 @@
 package typings.jupyterlabLogconsoleExtension.statusMod
 
-import typings.jupyterlabApputils.vdomMod.VDomRenderer
+import typings.jupyterlabApputils.mod.VDomRenderer
 import typings.jupyterlabLogconsoleExtension.statusMod.LogConsoleStatus.IOptions
 import typings.jupyterlabLogconsoleExtension.statusMod.LogConsoleStatus.Model
 import scala.scalajs.js

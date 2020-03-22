@@ -1,5 +1,6 @@
 package typings.plotlyJs.mod
 
+import typings.plotlyJs.PartialFont
 import typings.plotlyJs.plotlyJsStrings.auto
 import typings.plotlyJs.plotlyJsStrings.bottom
 import typings.plotlyJs.plotlyJsStrings.center
@@ -12,7 +13,6 @@ import typings.plotlyJs.plotlyJsStrings.reversed
 import typings.plotlyJs.plotlyJsStrings.right
 import typings.plotlyJs.plotlyJsStrings.top
 import typings.plotlyJs.plotlyJsStrings.v
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,7 +34,7 @@ object Legend {
     bgcolor: String,
     bordercolor: String,
     borderwidth: Double,
-    font: Partial[Font],
+    font: PartialFont,
     orientation: v | h,
     tracegroupgap: Double,
     traceorder: grouped | normal | reversed,

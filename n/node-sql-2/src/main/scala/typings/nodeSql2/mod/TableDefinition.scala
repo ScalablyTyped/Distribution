@@ -1,6 +1,6 @@
 package typings.nodeSql2.mod
 
-import typings.nodeSql2.AnonCascadeColumns
+import typings.nodeSql2.AnonColumns
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ trait TableDefinition[Name /* <: String */, Row] extends js.Object {
   {[ CName in keyof Row ]: node-sql-2.sql.ColumnDefinition<CName, Row[CName]>}
     */ typings.nodeSql2.nodeSql2Strings.TableDefinition with Row
   var dialect: js.UndefOr[SQLDialects] = js.undefined
-  var foreignKeys: js.UndefOr[AnonCascadeColumns[Row]] = js.undefined
+  var foreignKeys: js.UndefOr[AnonColumns[Row]] = js.undefined
   var isTemporary: js.UndefOr[Boolean] = js.undefined
   var name: Name
   var schema: String
@@ -25,7 +25,7 @@ object TableDefinition {
     name: Name,
     schema: String,
     dialect: SQLDialects = null,
-    foreignKeys: AnonCascadeColumns[Row] = null,
+    foreignKeys: AnonColumns[Row] = null,
     isTemporary: js.UndefOr[Boolean] = js.undefined
   ): TableDefinition[Name, Row] = {
     val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any])

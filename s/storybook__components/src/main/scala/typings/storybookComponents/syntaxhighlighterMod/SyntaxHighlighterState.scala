@@ -4,8 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SyntaxHighlighterState extends js.Object {
-  var copied: Boolean
+  var copied: Boolean = js.native
 }
 
 object SyntaxHighlighterState {

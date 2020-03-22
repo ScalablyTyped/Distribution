@@ -10,8 +10,9 @@ import scala.scalajs.js.annotation._
 @JSImport("gulp-typescript/release/input", "FileDictionary")
 @js.native
 class FileDictionary protected () extends js.Object {
-  def this(typescript: Typeofts) = this()
+  def this(caseSensitive: Boolean, typescript: Typeofts) = this()
   var addFile: js.Any = js.native
+  var caseSensitive: Boolean = js.native
   var commonBasePath: String = js.native
   var commonSourceDirectory: String = js.native
   var files: Map[File] = js.native

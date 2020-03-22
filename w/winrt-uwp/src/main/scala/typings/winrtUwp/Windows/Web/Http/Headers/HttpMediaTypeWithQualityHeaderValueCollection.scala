@@ -2,7 +2,7 @@ package typings.winrtUwp.Windows.Web.Http.Headers
 
 import typings.std.Array
 import typings.winrtUwp.AnonIndex
-import typings.winrtUwp.AnonItemsReturnValueHttpMediaTypeWithQualityHeaderValue
+import typings.winrtUwp.AnonItemsHttpMediaTypeWithQualityHeaderValue
 import typings.winrtUwp.Windows.Foundation.Collections.IIterator
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import scala.scalajs.js
@@ -37,7 +37,7 @@ abstract class HttpMediaTypeWithQualityHeaderValueCollection () extends Array[Ht
     * Retrieves the HttpMediaTypeWithQualityHeaderValue items that start at the specified index in the collection.
     * @param startIndex The zero-based index of the start of the HttpMediaTypeWithQualityHeaderValue items in the HttpMediaTypeWithQualityHeaderValueCollection .
     */
-  def getMany(startIndex: Double): AnonItemsReturnValueHttpMediaTypeWithQualityHeaderValue = js.native
+  def getMany(startIndex: Double): AnonItemsHttpMediaTypeWithQualityHeaderValue = js.native
   /**
     * Returns an immutable view of the HttpMediaTypeWithQualityHeaderValueCollection .
     * @return The view of the HttpMediaTypeWithQualityHeaderValueCollection .

@@ -1,12 +1,12 @@
 package typings.argparse.mod
 
-import typings.argparse.AnonOptions
+import typings.argparse.AnonInstantiableAction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ArgumentOptions extends js.Object {
-  var action: js.UndefOr[String | AnonOptions] = js.undefined
+  var action: js.UndefOr[String | AnonInstantiableAction] = js.undefined
    // tslint:disable-line:ban-types
   var choices: js.UndefOr[String | js.Array[String]] = js.undefined
   var constant: js.UndefOr[js.Any] = js.undefined
@@ -24,7 +24,7 @@ trait ArgumentOptions extends js.Object {
 object ArgumentOptions {
   @scala.inline
   def apply(
-    action: String | AnonOptions = null,
+    action: String | AnonInstantiableAction = null,
     choices: String | js.Array[String] = null,
     constant: js.Any = null,
     defaultValue: js.Any = null,

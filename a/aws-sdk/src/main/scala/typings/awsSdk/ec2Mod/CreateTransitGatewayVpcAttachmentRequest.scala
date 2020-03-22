@@ -17,7 +17,7 @@ trait CreateTransitGatewayVpcAttachmentRequest extends js.Object {
   /**
     * The IDs of one or more subnets. You can specify only one subnet per Availability Zone. You must specify at least one subnet, but we recommend that you specify two subnets for better availability. The transit gateway uses one IP address from each specified subnet.
     */
-  var SubnetIds: ValueStringList = js.native
+  var SubnetIds: TransitGatewaySubnetIdList = js.native
   /**
     * The tags to apply to the VPC attachment.
     */
@@ -25,19 +25,19 @@ trait CreateTransitGatewayVpcAttachmentRequest extends js.Object {
   /**
     * The ID of the transit gateway.
     */
-  var TransitGatewayId: String = js.native
+  var TransitGatewayId: typings.awsSdk.ec2Mod.TransitGatewayId = js.native
   /**
     * The ID of the VPC.
     */
-  var VpcId: String = js.native
+  var VpcId: typings.awsSdk.ec2Mod.VpcId = js.native
 }
 
 object CreateTransitGatewayVpcAttachmentRequest {
   @scala.inline
   def apply(
-    SubnetIds: ValueStringList,
-    TransitGatewayId: String,
-    VpcId: String,
+    SubnetIds: TransitGatewaySubnetIdList,
+    TransitGatewayId: TransitGatewayId,
+    VpcId: VpcId,
     DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     Options: CreateTransitGatewayVpcAttachmentRequestOptions = null,
     TagSpecifications: TagSpecificationList = null

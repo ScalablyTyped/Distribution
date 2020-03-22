@@ -3,7 +3,6 @@ package typings.googleAuthLibrary.oauth2clientMod
 import typings.gaxios.commonMod.GaxiosOptions
 import typings.gaxios.commonMod.GaxiosPromise
 import typings.gaxios.commonMod.GaxiosResponse
-import typings.googleAuthLibrary.AnonCodeChallenge
 import typings.googleAuthLibrary.authclientMod.AuthClient
 import typings.googleAuthLibrary.googleAuthLibraryStrings.httpsColonSlashSlashoauth2DotgoogleapisDotcomSlashtokeninfo
 import typings.googleAuthLibrary.loginticketMod.LoginTicket
@@ -38,6 +37,7 @@ class OAuth2Client () extends AuthClient {
   var certificateCacheFormat: js.Any = js.native
   var certificateExpiry: js.Any = js.native
   var eagerRefreshThresholdMillis: Double = js.native
+  var forceRefreshOnFailure: Boolean = js.native
   var getAccessTokenAsync: js.Any = js.native
   var getTokenAsync: js.Any = js.native
   var projectId: js.UndefOr[String] = js.native
@@ -58,8 +58,11 @@ class OAuth2Client () extends AuthClient {
     * Convenience method to automatically generate a code_verifier, and it's
     * resulting SHA256. If used, this must be paired with a S256
     * code_challenge_method.
+    *
+    * For a full example see:
+    * https://github.com/googleapis/google-auth-library-nodejs/blob/master/samples/oauth2-codeVerifier.js
     */
-  def generateCodeVerifierAsync(): js.Promise[AnonCodeChallenge] = js.native
+  def generateCodeVerifierAsync(): js.Promise[CodeVerifierResults] = js.native
   /**
     * Get a non-expired access token, after refreshing if necessary
     *
@@ -76,6 +79,15 @@ class OAuth2Client () extends AuthClient {
   def getFederatedSignonCerts(): js.Promise[FederatedSignonCertsResponse] = js.native
   def getFederatedSignonCerts(callback: GetFederatedSignonCertsCallback): Unit = js.native
   def getFederatedSignonCertsAsync(): js.Promise[FederatedSignonCertsResponse] = js.native
+  /**
+    * Gets federated sign-on certificates to use for verifying identity tokens.
+    * Returns certs as array structure, where keys are key ids, and values
+    * are certificates in either PEM or JWK format.
+    * @param callback Callback supplying the certificates
+    */
+  def getIapPublicKeys(): js.Promise[IapPublicKeysResponse] = js.native
+  def getIapPublicKeys(callback: GetIapPublicKeysCallback): Unit = js.native
+  def getIapPublicKeysAsync(): js.Promise[IapPublicKeysResponse] = js.native
   /**
     * The main authentication interface.  It takes an optional url which when
     * present is the endpoint being accessed, and returns a Promise which
@@ -177,20 +189,25 @@ class OAuth2Client () extends AuthClient {
     * @param maxExpiry The max expiry the certificate can be (Optional).
     * @return Returns a promise resolving to LoginTicket on verification.
     */
-  def verifySignedJwtWithCertsAsync(jwt: String, certs: Certificates, requiredAudience: String): js.Promise[LoginTicket] = js.native
-  def verifySignedJwtWithCertsAsync(jwt: String, certs: Certificates, requiredAudience: String, issuers: js.Array[String]): js.Promise[LoginTicket] = js.native
+  def verifySignedJwtWithCertsAsync(jwt: String, certs: Certificates | PublicKeys, requiredAudience: String): js.Promise[LoginTicket] = js.native
+  def verifySignedJwtWithCertsAsync(jwt: String, certs: Certificates | PublicKeys, requiredAudience: String, issuers: js.Array[String]): js.Promise[LoginTicket] = js.native
   def verifySignedJwtWithCertsAsync(
     jwt: String,
-    certs: Certificates,
+    certs: Certificates | PublicKeys,
     requiredAudience: String,
     issuers: js.Array[String],
     maxExpiry: Double
   ): js.Promise[LoginTicket] = js.native
-  def verifySignedJwtWithCertsAsync(jwt: String, certs: Certificates, requiredAudience: js.Array[String]): js.Promise[LoginTicket] = js.native
-  def verifySignedJwtWithCertsAsync(jwt: String, certs: Certificates, requiredAudience: js.Array[String], issuers: js.Array[String]): js.Promise[LoginTicket] = js.native
+  def verifySignedJwtWithCertsAsync(jwt: String, certs: Certificates | PublicKeys, requiredAudience: js.Array[String]): js.Promise[LoginTicket] = js.native
   def verifySignedJwtWithCertsAsync(
     jwt: String,
-    certs: Certificates,
+    certs: Certificates | PublicKeys,
+    requiredAudience: js.Array[String],
+    issuers: js.Array[String]
+  ): js.Promise[LoginTicket] = js.native
+  def verifySignedJwtWithCertsAsync(
+    jwt: String,
+    certs: Certificates | PublicKeys,
     requiredAudience: js.Array[String],
     issuers: js.Array[String],
     maxExpiry: Double
@@ -217,6 +234,10 @@ object OAuth2Client extends js.Object {
     * Google Sign on certificates in PEM format.
     */
   val GOOGLE_OAUTH2_FEDERATED_SIGNON_PEM_CERTS_URL_ : js.Any = js.native
+  /**
+    * Google Sign on certificates in JWK format.
+    */
+  val GOOGLE_OAUTH2_IAP_PUBLIC_KEY_URL_ : js.Any = js.native
   /**
     * The base endpoint to revoke tokens.
     */

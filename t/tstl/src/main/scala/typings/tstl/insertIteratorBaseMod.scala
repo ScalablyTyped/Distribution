@@ -11,18 +11,6 @@ object insertIteratorBaseMod extends js.Object {
   @js.native
   abstract class InsertIteratorBase[T, This /* <: InsertIteratorBase[T, This] */] () extends IForwardIterator[T, This] {
     /**
-      * Reference of the value.
-      */
-    /* CompleteClass */
-    override var value: T = js.native
-    /**
-      * Get next iterator.
-      *
-      * @return The next iterator.
-      */
-    /* CompleteClass */
-    override def next(): This = js.native
-    /**
       * Set value.
       *
       * @param val The value to set.

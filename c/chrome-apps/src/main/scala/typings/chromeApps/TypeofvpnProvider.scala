@@ -34,7 +34,7 @@ trait TypeofvpnProvider extends js.Object {
     * The OS has resumed and the user has logged back in, so the VPN should try to reconnect.
     * @enum
     */
-  val PlatformMessage: AnonCONNECTEDConnectedDISCONNECTED = js.native
+  val PlatformMessage: AnonDISCONNECTED = js.native
   /**
     * The enum is used by the platform to indicate the event that triggered *onUIEvent*
     *
@@ -55,7 +55,7 @@ trait TypeofvpnProvider extends js.Object {
     * VPN connection failed.
     * @enum
     */
-  val VpnConnectionState: AnonCONNECTEDConnected = js.native
+  val VpnConnectionState: AnonCONNECTEDFAILURE = js.native
   /** Triggered when a configuration is created by the platform for the extension. */
   val onConfigCreated: Event[js.Function3[/* id */ String, /* name */ String, /* data */ js.Object, Unit]] = js.native
   /** Triggered when a configuration created by the extension is removed by the platform. */

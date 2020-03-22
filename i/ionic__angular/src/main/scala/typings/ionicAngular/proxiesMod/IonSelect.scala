@@ -10,7 +10,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ionic/angular/dist/directives/proxies", "IonSelect")
+@JSImport("@ionic/angular/directives/proxies", "IonSelect")
 @js.native
 class IonSelect protected ()
   extends typings.ionicCore.componentsMod.Components.IonSelect {

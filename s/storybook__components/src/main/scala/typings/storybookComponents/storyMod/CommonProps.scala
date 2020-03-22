@@ -4,10 +4,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CommonProps extends js.Object {
-  var height: js.UndefOr[String] = js.undefined
-  var id: String
-  var title: String
+  var height: js.UndefOr[String] = js.native
+  var id: String = js.native
+  var title: String = js.native
 }
 
 object CommonProps {

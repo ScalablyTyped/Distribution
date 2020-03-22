@@ -1,10 +1,7 @@
 package typings.rrule
 
 import typings.rrule.i18nMod.Language
-import typings.rrule.rrulestrMod.RRuleStrOptions
-import typings.rrule.typesMod.Options
 import typings.rrule.weekdayMod.WeekdayStr
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,8 +12,8 @@ object mod extends js.Object {
   @js.native
   class RRule ()
     extends typings.rrule.rruleMod.default {
-    def this(options: Partial[Options]) = this()
-    def this(options: Partial[Options], noCache: Boolean) = this()
+    def this(options: PartialOptions) = this()
+    def this(options: PartialOptions, noCache: Boolean) = this()
   }
   
   @js.native
@@ -41,12 +38,12 @@ object mod extends js.Object {
   @js.native
   class default ()
     extends typings.rrule.rruleMod.default {
-    def this(options: Partial[Options]) = this()
-    def this(options: Partial[Options], noCache: Boolean) = this()
+    def this(options: PartialOptions) = this()
+    def this(options: PartialOptions, noCache: Boolean) = this()
   }
   
   def rrulestr(s: String): typings.rrule.rruleMod.default | typings.rrule.rrulesetMod.default = js.native
-  def rrulestr(s: String, options: Partial[RRuleStrOptions]): typings.rrule.rruleMod.default | typings.rrule.rrulesetMod.default = js.native
+  def rrulestr(s: String, options: PartialRRuleStrOptions): typings.rrule.rruleMod.default | typings.rrule.rrulesetMod.default = js.native
   @js.native
   object Frequency extends js.Object {
     /* 3 */ val DAILY: typings.rrule.typesMod.Frequency.DAILY with Double = js.native
@@ -79,16 +76,16 @@ object mod extends js.Object {
     val WEEKLY: String | Double = js.native
     val YEARLY: String | Double = js.native
     @JSName("optionsToString")
-    var optionsToString_Original: js.Function1[/* options */ Partial[Options], String] = js.native
+    var optionsToString_Original: js.Function1[/* options */ PartialOptions, String] = js.native
     @JSName("parseString")
-    var parseString_Original: js.Function1[/* rfcString */ String, Partial[Options]] = js.native
+    var parseString_Original: js.Function1[/* rfcString */ String, PartialOptions] = js.native
     def fromString(str: String): typings.rrule.rruleMod.RRule = js.native
     def fromText(text: String): typings.rrule.rruleMod.RRule = js.native
     def fromText(text: String, language: Language): typings.rrule.rruleMod.RRule = js.native
-    def optionsToString(options: Partial[Options]): String = js.native
-    def parseString(rfcString: String): Partial[Options] = js.native
-    def parseText(text: String): Partial[Options] | Null = js.native
-    def parseText(text: String, language: Language): Partial[Options] | Null = js.native
+    def optionsToString(options: PartialOptions): String = js.native
+    def parseString(rfcString: String): PartialOptions = js.native
+    def parseText(text: String): PartialOptions | Null = js.native
+    def parseText(text: String, language: Language): PartialOptions | Null = js.native
   }
   
   /* static members */
@@ -116,16 +113,16 @@ object mod extends js.Object {
     val WEEKLY: String | Double = js.native
     val YEARLY: String | Double = js.native
     @JSName("optionsToString")
-    var optionsToString_Original: js.Function1[/* options */ Partial[Options], String] = js.native
+    var optionsToString_Original: js.Function1[/* options */ PartialOptions, String] = js.native
     @JSName("parseString")
-    var parseString_Original: js.Function1[/* rfcString */ String, Partial[Options]] = js.native
+    var parseString_Original: js.Function1[/* rfcString */ String, PartialOptions] = js.native
     def fromString(str: String): typings.rrule.rruleMod.RRule = js.native
     def fromText(text: String): typings.rrule.rruleMod.RRule = js.native
     def fromText(text: String, language: Language): typings.rrule.rruleMod.RRule = js.native
-    def optionsToString(options: Partial[Options]): String = js.native
-    def parseString(rfcString: String): Partial[Options] = js.native
-    def parseText(text: String): Partial[Options] | Null = js.native
-    def parseText(text: String, language: Language): Partial[Options] | Null = js.native
+    def optionsToString(options: PartialOptions): String = js.native
+    def parseString(rfcString: String): PartialOptions = js.native
+    def parseText(text: String): PartialOptions | Null = js.native
+    def parseText(text: String, language: Language): PartialOptions | Null = js.native
   }
   
 }

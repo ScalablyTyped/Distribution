@@ -6,32 +6,40 @@ import scala.scalajs.js.annotation._
 
 trait AutoResizeOptions extends js.Object {
   /**
-    * If true, the view's height will grow and shrink together with the window. false
-    * by default.
+    * If `true`, the view's height will grow and shrink together with the window.
+    * `false` by default.
     */
-  var height: Boolean
+  var height: js.UndefOr[Boolean] = js.undefined
   /**
-    * If true, the view's x position and width will grow and shrink proportionly with
-    * the window. false by default.
+    * If `true`, the view's x position and width will grow and shrink proportionally
+    * with the window. `false` by default.
     */
-  var horizontal: Boolean
+  var horizontal: js.UndefOr[Boolean] = js.undefined
   /**
-    * If true, the view's y position and height will grow and shrink proportinaly with
-    * the window. false by default.
+    * If `true`, the view's y position and height will grow and shrink proportionally
+    * with the window. `false` by default.
     */
-  var vertical: Boolean
+  var vertical: js.UndefOr[Boolean] = js.undefined
   /**
-    * If true, the view's width will grow and shrink together with the window. false
-    * by default.
+    * If `true`, the view's width will grow and shrink together with the window.
+    * `false` by default.
     */
-  var width: Boolean
+  var width: js.UndefOr[Boolean] = js.undefined
 }
 
 object AutoResizeOptions {
   @scala.inline
-  def apply(height: Boolean, horizontal: Boolean, vertical: Boolean, width: Boolean): AutoResizeOptions = {
-    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], horizontal = horizontal.asInstanceOf[js.Any], vertical = vertical.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-  
+  def apply(
+    height: js.UndefOr[Boolean] = js.undefined,
+    horizontal: js.UndefOr[Boolean] = js.undefined,
+    vertical: js.UndefOr[Boolean] = js.undefined,
+    width: js.UndefOr[Boolean] = js.undefined
+  ): AutoResizeOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal.asInstanceOf[js.Any])
+    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoResizeOptions]
   }
 }

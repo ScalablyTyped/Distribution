@@ -1,6 +1,6 @@
 package typings.reactInstantsearchNative.mod
 
-import typings.reactInstantsearchNative.AnonArgs
+import typings.reactInstantsearchNative.AnonProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +21,7 @@ object InstantSearchProps {
     onSearchStateChange: /* repeated */ js.Any => _ = null,
     refresh: js.UndefOr[Boolean] = js.undefined,
     resultsState: js.Any = null,
-    root: AnonArgs = null,
+    root: AnonProps = null,
     searchState: js.Any = null
   ): InstantSearchProps = {
     val __obj = js.Dynamic.literal(indexName = indexName.asInstanceOf[js.Any], searchClient = searchClient.asInstanceOf[js.Any])
@@ -45,7 +45,7 @@ object InstantSearchProps {
     onSearchStateChange: /* repeated */ js.Any => _ = null,
     refresh: js.UndefOr[Boolean] = js.undefined,
     resultsState: js.Any = null,
-    root: AnonArgs = null,
+    root: AnonProps = null,
     searchState: js.Any = null
   ): InstantSearchProps = {
     val __obj = js.Dynamic.literal(apiKey = apiKey.asInstanceOf[js.Any], appId = appId.asInstanceOf[js.Any], indexName = indexName.asInstanceOf[js.Any])

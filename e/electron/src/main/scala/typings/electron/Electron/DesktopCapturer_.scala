@@ -1,23 +1,29 @@
 package typings.electron.Electron
 
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
-trait DesktopCapturer_ extends EventEmitter {
-  def getSources(options: SourcesOptions): js.Promise[js.Array[DesktopCapturerSource]] = js.native
+trait DesktopCapturer_ extends js.Object {
   // Docs: http://electronjs.org/docs/api/desktop-capturer
   /**
-    * Starts gathering information about all available desktop media sources, and
-    * calls callback(error, sources) when finished. sources is an array of
-    * DesktopCapturerSource objects, each DesktopCapturerSource represents a screen or
-    * an individual window that can be captured. Deprecated Soon
+    * Resolves with an array of `DesktopCapturerSource` objects, each
+    * `DesktopCapturerSource` represents a screen or an individual window that can be
+    * captured.
+    *
+    * **Note** Capturing the screen contents requires user consent on macOS 10.15
+    * Catalina or higher, which can detected by
+    * `systemPreferences.getMediaAccessStatus`.
     */
-  def getSources(
-    options: SourcesOptions,
-    callback: js.Function2[/* error */ Error, /* sources */ js.Array[DesktopCapturerSource], Unit]
-  ): Unit = js.native
+  def getSources(options: SourcesOptions): js.Promise[js.Array[DesktopCapturerSource]]
+}
+
+object DesktopCapturer_ {
+  @scala.inline
+  def apply(getSources: SourcesOptions => js.Promise[js.Array[DesktopCapturerSource]]): DesktopCapturer_ = {
+    val __obj = js.Dynamic.literal(getSources = js.Any.fromFunction1(getSources))
+  
+    __obj.asInstanceOf[DesktopCapturer_]
+  }
 }
 

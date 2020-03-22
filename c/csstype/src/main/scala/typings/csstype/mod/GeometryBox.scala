@@ -17,7 +17,6 @@ trait GeometryBox
   extends _MaskLayer[js.Any]
      with _ClipPathProperty
      with _MaskClipProperty
-     with _MaskOriginProperty
      with _OffsetPathProperty
      with _OffsetProperty[js.Any]
 

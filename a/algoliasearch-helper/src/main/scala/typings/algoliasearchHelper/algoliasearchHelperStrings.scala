@@ -28,9 +28,6 @@ object algoliasearchHelperStrings {
   sealed trait ManagedParameters extends js.Object
   
   @js.native
-  sealed trait OperatorList extends js.Object
-  
-  @js.native
   sealed trait allOptional extends js.Object
   
   @js.native
@@ -146,8 +143,6 @@ object algoliasearchHelperStrings {
   def LessthansignEqualssign: LessthansignEqualssign = "<=".asInstanceOf[LessthansignEqualssign]
   @scala.inline
   def ManagedParameters: ManagedParameters = "ManagedParameters".asInstanceOf[ManagedParameters]
-  @scala.inline
-  def OperatorList: OperatorList = "OperatorList".asInstanceOf[OperatorList]
   @scala.inline
   def allOptional: allOptional = "allOptional".asInstanceOf[allOptional]
   @scala.inline

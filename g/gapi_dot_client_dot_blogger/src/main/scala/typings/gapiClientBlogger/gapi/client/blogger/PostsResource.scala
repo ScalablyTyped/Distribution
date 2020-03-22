@@ -1,54 +1,54 @@
 package typings.gapiClientBlogger.gapi.client.blogger
 
 import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientBlogger.AnonAltBlogIdEndDateFetchBodiesFetchImages
-import typings.gapiClientBlogger.AnonAltBlogIdFetchBodiesFields
-import typings.gapiClientBlogger.AnonAltBlogIdFetchBody
-import typings.gapiClientBlogger.AnonAltBlogIdFetchBodyFetchImages
-import typings.gapiClientBlogger.AnonAltBlogIdFetchBodyFetchImagesFields
-import typings.gapiClientBlogger.AnonAltBlogIdFieldsKeyMaxCommentsOauthtoken
-import typings.gapiClientBlogger.AnonAltBlogIdFieldsKeyOauthtokenPostId
-import typings.gapiClientBlogger.AnonAltBlogIdFieldsKeyOauthtokenPostIdPrettyPrint
+import typings.gapiClientBlogger.AnonFetchBody
+import typings.gapiClientBlogger.AnonFetchImages
+import typings.gapiClientBlogger.AnonOrderBy
+import typings.gapiClientBlogger.AnonPath
+import typings.gapiClientBlogger.AnonPostId
+import typings.gapiClientBlogger.AnonPublishDate
+import typings.gapiClientBlogger.AnonQ
+import typings.gapiClientBlogger.AnonQuotaUser
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PostsResource extends js.Object {
   /** Delete a post by ID. */
-  def delete(request: AnonAltBlogIdFieldsKeyOauthtokenPostId): Request_[Unit]
+  def delete(request: AnonPostId): Request_[Unit]
   /** Get a post by ID. */
-  def get(request: AnonAltBlogIdFetchBody): Request_[Post]
+  def get(request: AnonFetchBody): Request_[Post]
   /** Retrieve a Post by Path. */
-  def getByPath(request: AnonAltBlogIdFieldsKeyMaxCommentsOauthtoken): Request_[Post]
+  def getByPath(request: AnonPath): Request_[Post]
   /** Add a post. */
-  def insert(request: AnonAltBlogIdFetchBodyFetchImages): Request_[Post]
+  def insert(request: AnonFetchImages): Request_[Post]
   /** Retrieves a list of posts, possibly filtered. */
-  def list(request: AnonAltBlogIdEndDateFetchBodiesFetchImages): Request_[PostList]
+  def list(request: AnonOrderBy): Request_[PostList]
   /** Update a post. This method supports patch semantics. */
-  def patch(request: AnonAltBlogIdFetchBodyFetchImagesFields): Request_[Post]
+  def patch(request: AnonQuotaUser): Request_[Post]
   /** Publishes a draft post, optionally at the specific time of the given publishDate parameter. */
-  def publish(request: AnonAltBlogIdFieldsKeyOauthtokenPostIdPrettyPrint): Request_[Post]
+  def publish(request: AnonPublishDate): Request_[Post]
   /** Revert a published or scheduled post to draft state. */
-  def revert(request: AnonAltBlogIdFieldsKeyOauthtokenPostId): Request_[Post]
+  def revert(request: AnonPostId): Request_[Post]
   /** Search for a post. */
-  def search(request: AnonAltBlogIdFetchBodiesFields): Request_[PostList]
+  def search(request: AnonQ): Request_[PostList]
   /** Update a post. */
-  def update(request: AnonAltBlogIdFetchBodyFetchImagesFields): Request_[Post]
+  def update(request: AnonQuotaUser): Request_[Post]
 }
 
 object PostsResource {
   @scala.inline
   def apply(
-    delete: AnonAltBlogIdFieldsKeyOauthtokenPostId => Request_[Unit],
-    get: AnonAltBlogIdFetchBody => Request_[Post],
-    getByPath: AnonAltBlogIdFieldsKeyMaxCommentsOauthtoken => Request_[Post],
-    insert: AnonAltBlogIdFetchBodyFetchImages => Request_[Post],
-    list: AnonAltBlogIdEndDateFetchBodiesFetchImages => Request_[PostList],
-    patch: AnonAltBlogIdFetchBodyFetchImagesFields => Request_[Post],
-    publish: AnonAltBlogIdFieldsKeyOauthtokenPostIdPrettyPrint => Request_[Post],
-    revert: AnonAltBlogIdFieldsKeyOauthtokenPostId => Request_[Post],
-    search: AnonAltBlogIdFetchBodiesFields => Request_[PostList],
-    update: AnonAltBlogIdFetchBodyFetchImagesFields => Request_[Post]
+    delete: AnonPostId => Request_[Unit],
+    get: AnonFetchBody => Request_[Post],
+    getByPath: AnonPath => Request_[Post],
+    insert: AnonFetchImages => Request_[Post],
+    list: AnonOrderBy => Request_[PostList],
+    patch: AnonQuotaUser => Request_[Post],
+    publish: AnonPublishDate => Request_[Post],
+    revert: AnonPostId => Request_[Post],
+    search: AnonQ => Request_[PostList],
+    update: AnonQuotaUser => Request_[Post]
   ): PostsResource = {
     val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), getByPath = js.Any.fromFunction1(getByPath), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), publish = js.Any.fromFunction1(publish), revert = js.Any.fromFunction1(revert), search = js.Any.fromFunction1(search), update = js.Any.fromFunction1(update))
   

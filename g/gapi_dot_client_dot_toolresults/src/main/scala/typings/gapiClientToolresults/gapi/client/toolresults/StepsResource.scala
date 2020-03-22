@@ -1,10 +1,10 @@
 package typings.gapiClientToolresults.gapi.client.toolresults
 
 import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientToolresults.AnonAltExecutionIdFields
-import typings.gapiClientToolresults.AnonAltExecutionIdFieldsHistoryIdKeyOauthtokenPageSize
-import typings.gapiClientToolresults.AnonAltExecutionIdFieldsHistoryIdKeyOauthtokenPrettyPrint
-import typings.gapiClientToolresults.AnonAltExecutionIdFieldsHistoryIdKeyOauthtokenPrettyPrintProjectId
+import typings.gapiClientToolresults.AnonFields
+import typings.gapiClientToolresults.AnonPageSize
+import typings.gapiClientToolresults.AnonPrettyPrint
+import typings.gapiClientToolresults.AnonProjectId
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,7 +23,7 @@ trait StepsResource extends js.Object {
     * - PERMISSION_DENIED - if the user is not authorized to write to project - INVALID_ARGUMENT - if the request is malformed - FAILED_PRECONDITION - if the
     * step is too large (more than 10Mib) - NOT_FOUND - if the containing Execution does not exist
     */
-  def create(request: AnonAltExecutionIdFieldsHistoryIdKeyOauthtokenPrettyPrint): Request_[Step]
+  def create(request: AnonPrettyPrint): Request_[Step]
   /**
     * Gets a Step.
     *
@@ -32,13 +32,13 @@ trait StepsResource extends js.Object {
     * - PERMISSION_DENIED - if the user is not authorized to read project - INVALID_ARGUMENT - if the request is malformed - NOT_FOUND - if the Step does not
     * exist
     */
-  def get(request: AnonAltExecutionIdFields): Request_[Step]
+  def get(request: AnonFields): Request_[Step]
   /**
     * Retrieves a PerfMetricsSummary.
     *
     * May return any of the following error code(s): - NOT_FOUND - The specified PerfMetricsSummary does not exist
     */
-  def getPerfMetricsSummary(request: AnonAltExecutionIdFields): Request_[PerfMetricsSummary]
+  def getPerfMetricsSummary(request: AnonFields): Request_[PerfMetricsSummary]
   /**
     * Lists Steps for a given Execution.
     *
@@ -50,7 +50,7 @@ trait StepsResource extends js.Object {
     * argument in the request happens to be invalid; e.g. if an attempt is made to list the children of a nonexistent Step - NOT_FOUND - if the containing
     * Execution does not exist
     */
-  def list(request: AnonAltExecutionIdFieldsHistoryIdKeyOauthtokenPageSize): Request_[ListStepsResponse]
+  def list(request: AnonPageSize): Request_[ListStepsResponse]
   /**
     * Updates an existing Step with the supplied partial entity.
     *
@@ -60,7 +60,7 @@ trait StepsResource extends js.Object {
     * requested state transition is illegal (e.g try to upload a duplicate xml file), if the updated step is too large (more than 10Mib) - NOT_FOUND - if the
     * containing Execution does not exist
     */
-  def patch(request: AnonAltExecutionIdFieldsHistoryIdKeyOauthtokenPrettyPrintProjectId): Request_[Step]
+  def patch(request: AnonProjectId): Request_[Step]
   /**
     * Publish xml files to an existing Step.
     *
@@ -70,20 +70,20 @@ trait StepsResource extends js.Object {
     * requested state transition is illegal, e.g try to upload a duplicate xml file or a file too large. - NOT_FOUND - if the containing Execution does not
     * exist
     */
-  def publishXunitXmlFiles(request: AnonAltExecutionIdFields): Request_[Step]
+  def publishXunitXmlFiles(request: AnonFields): Request_[Step]
 }
 
 object StepsResource {
   @scala.inline
   def apply(
-    create: AnonAltExecutionIdFieldsHistoryIdKeyOauthtokenPrettyPrint => Request_[Step],
-    get: AnonAltExecutionIdFields => Request_[Step],
-    getPerfMetricsSummary: AnonAltExecutionIdFields => Request_[PerfMetricsSummary],
-    list: AnonAltExecutionIdFieldsHistoryIdKeyOauthtokenPageSize => Request_[ListStepsResponse],
-    patch: AnonAltExecutionIdFieldsHistoryIdKeyOauthtokenPrettyPrintProjectId => Request_[Step],
+    create: AnonPrettyPrint => Request_[Step],
+    get: AnonFields => Request_[Step],
+    getPerfMetricsSummary: AnonFields => Request_[PerfMetricsSummary],
+    list: AnonPageSize => Request_[ListStepsResponse],
+    patch: AnonProjectId => Request_[Step],
     perfMetricsSummary: PerfMetricsSummaryResource,
     perfSampleSeries: PerfSampleSeriesResource,
-    publishXunitXmlFiles: AnonAltExecutionIdFields => Request_[Step],
+    publishXunitXmlFiles: AnonFields => Request_[Step],
     thumbnails: ThumbnailsResource
   ): StepsResource = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), get = js.Any.fromFunction1(get), getPerfMetricsSummary = js.Any.fromFunction1(getPerfMetricsSummary), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), perfMetricsSummary = perfMetricsSummary.asInstanceOf[js.Any], perfSampleSeries = perfSampleSeries.asInstanceOf[js.Any], publishXunitXmlFiles = js.Any.fromFunction1(publishXunitXmlFiles), thumbnails = thumbnails.asInstanceOf[js.Any])

@@ -1,6 +1,6 @@
 package typings.kendoUi.kendo.ui
 
-import typings.kendoUi.TypeofClassWidget
+import typings.kendoUi.TypeofWidget
 import typings.kendoUi.Typeofui
 import typings.kendoUi.TypeofuiActionSheet
 import typings.kendoUi.TypeofuiArcGauge
@@ -18,12 +18,12 @@ object plugin extends js.Object {
   def apply(widget: js.Any, register: TypeofuiArcGauge): Unit = js.native
   def apply(widget: js.Any, register: TypeofuiArcGauge, prefix: String): Unit = js.native
   def apply(widget: js.Any, register: Typeofui, prefix: String): Unit = js.native
-  def apply(widget: TypeofClassWidget): Unit = js.native
-  def apply(widget: TypeofClassWidget, register: Typeofui): Unit = js.native
-  def apply(widget: TypeofClassWidget, register: TypeofuiActionSheet): Unit = js.native
-  def apply(widget: TypeofClassWidget, register: TypeofuiActionSheet, prefix: String): Unit = js.native
-  def apply(widget: TypeofClassWidget, register: TypeofuiArcGauge): Unit = js.native
-  def apply(widget: TypeofClassWidget, register: TypeofuiArcGauge, prefix: String): Unit = js.native
-  def apply(widget: TypeofClassWidget, register: Typeofui, prefix: String): Unit = js.native
+  def apply(widget: TypeofWidget): Unit = js.native
+  def apply(widget: TypeofWidget, register: Typeofui): Unit = js.native
+  def apply(widget: TypeofWidget, register: TypeofuiActionSheet): Unit = js.native
+  def apply(widget: TypeofWidget, register: TypeofuiActionSheet, prefix: String): Unit = js.native
+  def apply(widget: TypeofWidget, register: TypeofuiArcGauge): Unit = js.native
+  def apply(widget: TypeofWidget, register: TypeofuiArcGauge, prefix: String): Unit = js.native
+  def apply(widget: TypeofWidget, register: Typeofui, prefix: String): Unit = js.native
 }
 

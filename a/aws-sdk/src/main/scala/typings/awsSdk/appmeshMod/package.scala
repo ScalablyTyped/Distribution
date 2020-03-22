@@ -12,6 +12,7 @@ package object appmeshMod {
   type AwsCloudMapName = java.lang.String
   type Backends = js.Array[typings.awsSdk.appmeshMod.Backend]
   type Boolean = scala.Boolean
+  type CertificateAuthorityArns = js.Array[typings.awsSdk.appmeshMod.Arn]
   type ClientConfiguration = typings.awsSdk.serviceMod.ServiceConfigurationOptions with typings.awsSdk.appmeshMod.ClientApiVersions
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.ms_
@@ -71,6 +72,13 @@ package object appmeshMod {
   type ListVirtualNodesLimit = scala.Double
   type ListVirtualRoutersLimit = scala.Double
   type ListVirtualServicesLimit = scala.Double
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.DISABLED
+    - typings.awsSdk.awsSdkStrings.PERMISSIVE
+    - typings.awsSdk.awsSdkStrings.STRICT
+    - java.lang.String
+  */
+  type ListenerTlsMode = typings.awsSdk.appmeshMod._ListenerTlsMode | java.lang.String
   type Listeners = js.Array[typings.awsSdk.appmeshMod.Listener]
   type Long = scala.Double
   type MaxRetries = scala.Double
@@ -93,6 +101,7 @@ package object appmeshMod {
     - java.lang.String
   */
   type PortProtocol = typings.awsSdk.appmeshMod._PortProtocol | java.lang.String
+  type PortSet = js.Array[typings.awsSdk.appmeshMod.PortNumber]
   type ResourceName = java.lang.String
   type RouteList = js.Array[typings.awsSdk.appmeshMod.RouteRef]
   type RoutePriority = scala.Double

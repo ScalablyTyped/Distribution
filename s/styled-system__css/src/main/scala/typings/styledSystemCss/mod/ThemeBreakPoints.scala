@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ThemeBreakPoints extends js.Object {
+trait ThemeBreakPoints extends _Theme {
   var breakpoints: js.Array[Double | String]
 }
 

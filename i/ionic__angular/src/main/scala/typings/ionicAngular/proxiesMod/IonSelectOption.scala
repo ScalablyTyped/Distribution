@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ionic/angular/dist/directives/proxies", "IonSelectOption")
+@JSImport("@ionic/angular/directives/proxies", "IonSelectOption")
 @js.native
 class IonSelectOption protected ()
   extends typings.ionicCore.componentsMod.Components.IonSelectOption {
@@ -19,11 +19,6 @@ class IonSelectOption protected ()
   /* CompleteClass */
   override var disabled: Boolean = js.native
   var el: HTMLElement = js.native
-  /**
-    * If `true`, the element is selected.
-    */
-  /* CompleteClass */
-  override var selected: Boolean = js.native
   var z: NgZone = js.native
 }
 

@@ -1,8 +1,8 @@
 package typings.gapiClientToolresults.gapi.client.toolresults
 
 import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientToolresults.AnonAltExecutionIdFieldsHistoryId
-import typings.gapiClientToolresults.AnonAltExecutionIdFieldsHistoryIdKey
+import typings.gapiClientToolresults.AnonHistoryId
+import typings.gapiClientToolresults.AnonKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ trait SamplesResource extends js.Object {
     *
     * May return any of the following canonical error codes: - NOT_FOUND - The containing PerfSampleSeries does not exist
     */
-  def batchCreate(request: AnonAltExecutionIdFieldsHistoryId): Request_[BatchCreatePerfSamplesResponse]
+  def batchCreate(request: AnonHistoryId): Request_[BatchCreatePerfSamplesResponse]
   /**
     * Lists the Performance Samples of a given Sample Series - The list results are sorted by timestamps ascending - The default page size is 500 samples;
     * and maximum size allowed 5000 - The response token indicates the last returned PerfSample timestamp - When the results size exceeds the page size,
@@ -24,14 +24,14 @@ trait SamplesResource extends js.Object {
     * May return any of the following canonical error codes: - OUT_OF_RANGE - The specified request page_token is out of valid range - NOT_FOUND - The
     * containing PerfSampleSeries does not exist
     */
-  def list(request: AnonAltExecutionIdFieldsHistoryIdKey): Request_[ListPerfSamplesResponse]
+  def list(request: AnonKey): Request_[ListPerfSamplesResponse]
 }
 
 object SamplesResource {
   @scala.inline
   def apply(
-    batchCreate: AnonAltExecutionIdFieldsHistoryId => Request_[BatchCreatePerfSamplesResponse],
-    list: AnonAltExecutionIdFieldsHistoryIdKey => Request_[ListPerfSamplesResponse]
+    batchCreate: AnonHistoryId => Request_[BatchCreatePerfSamplesResponse],
+    list: AnonKey => Request_[ListPerfSamplesResponse]
   ): SamplesResource = {
     val __obj = js.Dynamic.literal(batchCreate = js.Any.fromFunction1(batchCreate), list = js.Any.fromFunction1(list))
   

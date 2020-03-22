@@ -11,21 +11,21 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonBlock extends _Coordinates {
-  var block: js.UndefOr[BlockBehavior | AnonXYBlockBehavior | (js.Tuple2[BlockBehavior, BlockBehavior])] = js.undefined
+  var block: js.UndefOr[BlockBehavior | AnonXY | (js.Tuple2[BlockBehavior, BlockBehavior])] = js.undefined
   var el: HTMLElement | JQuery
   var margin: js.UndefOr[
     Margin | AnonBottom | (js.Tuple2[Margin, Margin]) | (js.Tuple4[Margin, Margin, Margin, Margin])
   ] = js.undefined
-  var scroll: js.UndefOr[ScrollBehavior | AnonXY | (js.Tuple2[ScrollBehavior, ScrollBehavior])] = js.undefined
+  var scroll: js.UndefOr[ScrollBehavior | AnonY | (js.Tuple2[ScrollBehavior, ScrollBehavior])] = js.undefined
 }
 
 object AnonBlock {
   @scala.inline
   def apply(
     el: HTMLElement | JQuery,
-    block: BlockBehavior | AnonXYBlockBehavior | (js.Tuple2[BlockBehavior, BlockBehavior]) = null,
+    block: BlockBehavior | AnonXY | (js.Tuple2[BlockBehavior, BlockBehavior]) = null,
     margin: Margin | AnonBottom | (js.Tuple2[Margin, Margin]) | (js.Tuple4[Margin, Margin, Margin, Margin]) = null,
-    scroll: ScrollBehavior | AnonXY | (js.Tuple2[ScrollBehavior, ScrollBehavior]) = null
+    scroll: ScrollBehavior | AnonY | (js.Tuple2[ScrollBehavior, ScrollBehavior]) = null
   ): AnonBlock = {
     val __obj = js.Dynamic.literal(el = el.asInstanceOf[js.Any])
     if (block != null) __obj.updateDynamic("block")(block.asInstanceOf[js.Any])

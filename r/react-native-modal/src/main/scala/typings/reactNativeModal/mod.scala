@@ -24,7 +24,7 @@ object mod extends js.Object {
   /* static members */
   @js.native
   object ReactNativeModal extends js.Object {
-    var defaultProps: AnonAnimationInAnimationInTiming = js.native
+    var defaultProps: AnonAnimationInTiming = js.native
     var propTypes: AnonAnimationIn = js.native
     def getDerivedStateFromProps(nextProps: ModalProps, state: State): AnonIsVisible | Null = js.native
   }
@@ -32,7 +32,7 @@ object mod extends js.Object {
   /* static members */
   @js.native
   object default extends js.Object {
-    var defaultProps: AnonAnimationInAnimationInTiming = js.native
+    var defaultProps: AnonAnimationInTiming = js.native
     var propTypes: AnonAnimationIn = js.native
     def getDerivedStateFromProps(nextProps: ModalProps, state: State): AnonIsVisible | Null = js.native
   }

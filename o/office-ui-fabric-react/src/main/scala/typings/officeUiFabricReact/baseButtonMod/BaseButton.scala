@@ -1,8 +1,8 @@
 package typings.officeUiFabricReact.baseButtonMod
 
+import typings.officeUiFabricReact.PartialIBaseButtonProps
 import typings.officeUiFabricReact.buttonTypesMod.IButton
 import typings.officeUiFabricReact.utilitiesMod.BaseComponent
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -79,6 +79,6 @@ class BaseButton protected ()
 @JSImport("office-ui-fabric-react/lib/components/Button/BaseButton", "BaseButton")
 @js.native
 object BaseButton extends js.Object {
-  var defaultProps: Partial[IBaseButtonProps] = js.native
+  var defaultProps: PartialIBaseButtonProps = js.native
 }
 

@@ -1,9 +1,9 @@
 package typings.atom.mod
 
-import typings.atom.AnonBackwardClipDirectionClosest
-import typings.atom.AnonBackwardClipDirectionClosestExclusive
 import typings.atom.AnonExclusive
-import typings.atom.AnonExclusiveInside
+import typings.atom.AnonExclusiveBoolean
+import typings.atom.AnonExclusiveInvalidate
+import typings.atom.AnonInvalidate
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,20 +40,20 @@ trait DisplayMarkerLayer extends js.Object {
     *  and no tail.
     */
   def markBufferPosition(bufferPosition: PointCompatible): DisplayMarker = js.native
-  def markBufferPosition(bufferPosition: PointCompatible, options: AnonExclusiveInside): DisplayMarker = js.native
+  def markBufferPosition(bufferPosition: PointCompatible, options: AnonExclusiveBoolean): DisplayMarker = js.native
   /** Create a marker with the given buffer range. */
   def markBufferRange(range: RangeCompatible): DisplayMarker = js.native
-  def markBufferRange(range: RangeCompatible, options: AnonExclusive): DisplayMarker = js.native
+  def markBufferRange(range: RangeCompatible, options: AnonExclusiveInvalidate): DisplayMarker = js.native
   /**
     *  Create a marker on this layer with its head at the given screen position
     *  and no tail.
     */
   def markScreenPosition(screenPosition: PointCompatible): DisplayMarker = js.native
-  def markScreenPosition(screenPosition: PointCompatible, options: AnonBackwardClipDirectionClosestExclusive): DisplayMarker = js.native
+  def markScreenPosition(screenPosition: PointCompatible, options: AnonInvalidate): DisplayMarker = js.native
   // Marker creation
   /** Create a marker with the given screen range. */
   def markScreenRange(range: RangeCompatible): DisplayMarker = js.native
-  def markScreenRange(range: RangeCompatible, options: AnonBackwardClipDirectionClosest): DisplayMarker = js.native
+  def markScreenRange(range: RangeCompatible, options: AnonExclusive): DisplayMarker = js.native
   /**
     *  Subscribe to be notified synchronously whenever markers are created on this
     *  layer. Avoid this method for optimal performance when interacting with layers

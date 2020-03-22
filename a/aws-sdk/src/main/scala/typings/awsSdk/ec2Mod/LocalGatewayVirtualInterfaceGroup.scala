@@ -13,7 +13,7 @@ trait LocalGatewayVirtualInterfaceGroup extends js.Object {
   /**
     * The ID of the virtual interface group.
     */
-  var LocalGatewayVirtualInterfaceGroupId: js.UndefOr[String] = js.native
+  var LocalGatewayVirtualInterfaceGroupId: js.UndefOr[typings.awsSdk.ec2Mod.LocalGatewayVirtualInterfaceGroupId] = js.native
   /**
     * The IDs of the virtual interfaces.
     */
@@ -28,7 +28,7 @@ object LocalGatewayVirtualInterfaceGroup {
   @scala.inline
   def apply(
     LocalGatewayId: String = null,
-    LocalGatewayVirtualInterfaceGroupId: String = null,
+    LocalGatewayVirtualInterfaceGroupId: LocalGatewayVirtualInterfaceGroupId = null,
     LocalGatewayVirtualInterfaceIds: LocalGatewayVirtualInterfaceIdSet = null,
     Tags: TagList = null
   ): LocalGatewayVirtualInterfaceGroup = {

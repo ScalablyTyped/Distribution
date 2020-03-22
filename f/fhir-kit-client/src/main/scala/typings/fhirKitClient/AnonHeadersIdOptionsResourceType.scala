@@ -1,6 +1,6 @@
 package typings.fhirKitClient
 
-import typings.fhirKitClient.fhirKitClientStrings.RiskAssessment
+import typings.fhirKitClient.fhirKitClientStrings.CapabilityStatement
 import typings.request.mod.Headers
 import typings.request.mod.Options
 import scala.scalajs.js
@@ -11,7 +11,7 @@ trait AnonHeadersIdOptionsResourceType extends js.Object {
   var headers: js.UndefOr[Headers] = js.undefined
   var id: String
   var options: js.UndefOr[Options] = js.undefined
-  var resourceType: RiskAssessment
+  var resourceType: CapabilityStatement
   var version: String
 }
 
@@ -19,7 +19,7 @@ object AnonHeadersIdOptionsResourceType {
   @scala.inline
   def apply(
     id: String,
-    resourceType: RiskAssessment,
+    resourceType: CapabilityStatement,
     version: String,
     headers: Headers = null,
     options: Options = null

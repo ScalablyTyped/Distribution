@@ -1,6 +1,6 @@
 package typings.jupyterlabCodeeditor.mimetypeMod
 
-import typings.jupyterlabCoreutils.nbformatMod.nbformat.ILanguageInfoMetadata
+import typings.jupyterlabNbformat.mod.ILanguageInfoMetadata
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

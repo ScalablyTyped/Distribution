@@ -1,6 +1,9 @@
 package typings.antd.tooltipMod
 
 import typings.antd.placementsMod.AdjustOverflow
+import typings.rcTrigger.interfaceMod.ActionType
+import typings.rcTrigger.interfaceMod.AlignType
+import typings.rcTrigger.interfaceMod.BuildInPlacements
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
 import typings.std.HTMLElement
@@ -17,10 +20,10 @@ trait TooltipProps extends js.Object
 object TooltipProps {
   @scala.inline
   def TooltipPropsWithTitle(
-    align: TooltipAlignConfig = null,
+    align: AlignType = null,
     arrowPointAtCenter: js.UndefOr[Boolean] = js.undefined,
     autoAdjustOverflow: Boolean | AdjustOverflow = null,
-    builtinPlacements: js.Object = null,
+    builtinPlacements: BuildInPlacements = null,
     children: ReactNode = null,
     className: String = null,
     defaultVisible: js.UndefOr[Boolean] = js.undefined,
@@ -39,7 +42,7 @@ object TooltipProps {
     style: CSSProperties = null,
     title: ReactNode | RenderFunction = null,
     transitionName: String = null,
-    trigger: TooltipTrigger = null,
+    trigger: ActionType = null,
     visible: js.UndefOr[Boolean] = js.undefined
   ): TooltipProps = {
     val __obj = js.Dynamic.literal()
@@ -71,10 +74,10 @@ object TooltipProps {
   }
   @scala.inline
   def TooltipPropsWithOverlay(
-    align: TooltipAlignConfig = null,
+    align: AlignType = null,
     arrowPointAtCenter: js.UndefOr[Boolean] = js.undefined,
     autoAdjustOverflow: Boolean | AdjustOverflow = null,
-    builtinPlacements: js.Object = null,
+    builtinPlacements: BuildInPlacements = null,
     children: ReactNode = null,
     className: String = null,
     defaultVisible: js.UndefOr[Boolean] = js.undefined,
@@ -93,7 +96,7 @@ object TooltipProps {
     style: CSSProperties = null,
     title: ReactNode | RenderFunction = null,
     transitionName: String = null,
-    trigger: TooltipTrigger = null,
+    trigger: ActionType = null,
     visible: js.UndefOr[Boolean] = js.undefined
   ): TooltipProps = {
     val __obj = js.Dynamic.literal()

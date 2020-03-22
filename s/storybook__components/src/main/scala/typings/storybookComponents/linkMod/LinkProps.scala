@@ -7,14 +7,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LinkProps
   extends LinkInnerProps
      with LinkStylesProps {
-  var cancel: js.UndefOr[Boolean] = js.undefined
-  var className: js.UndefOr[String] = js.undefined
-  var href: js.UndefOr[String] = js.undefined
-  var onClick: js.UndefOr[js.Function1[/* e */ MouseEvent[Element, NativeMouseEvent], Unit]] = js.undefined
-  var style: js.UndefOr[js.Object] = js.undefined
+  var cancel: js.UndefOr[Boolean] = js.native
+  var className: js.UndefOr[String] = js.native
+  var href: js.UndefOr[String] = js.native
+  var onClick: js.UndefOr[js.Function1[/* e */ MouseEvent[Element, NativeMouseEvent], Unit]] = js.native
+  var style: js.UndefOr[js.Object] = js.native
 }
 
 object LinkProps {

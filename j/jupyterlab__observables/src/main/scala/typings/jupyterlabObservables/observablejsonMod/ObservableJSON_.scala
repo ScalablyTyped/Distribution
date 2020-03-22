@@ -2,8 +2,8 @@ package typings.jupyterlabObservables.observablejsonMod
 
 import typings.jupyterlabObservables.observablejsonMod.ObservableJSON.IOptions
 import typings.jupyterlabObservables.observablemapMod.ObservableMap
-import typings.phosphorCoreutils.jsonMod.JSONObject
-import typings.phosphorCoreutils.jsonMod.JSONValue
+import typings.luminoCoreutils.jsonMod.PartialJSONObject
+import typings.luminoCoreutils.jsonMod.ReadonlyPartialJSONValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,11 +13,11 @@ import scala.scalajs.js.annotation._
 /**
   * Construct a new observable JSON object.
   */
-class ObservableJSON_ () extends ObservableMap[JSONValue] {
+class ObservableJSON_ () extends ObservableMap[ReadonlyPartialJSONValue] {
   def this(options: IOptions) = this()
   /**
     * Serialize the model to JSON.
     */
-  def toJSON(): JSONObject = js.native
+  def toJSON(): PartialJSONObject = js.native
 }
 

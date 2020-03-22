@@ -28,11 +28,29 @@ object reflectionsMod extends js.Object {
   }
   
   @js.native
+  class ReferenceReflection protected ()
+    extends typings.typedoc.reflectionsReferenceMod.ReferenceReflection {
+    def this(
+      name: String,
+      state: /* import warning: importer.ImportType#apply Failed type conversion: typedoc.typedoc/dist/lib/models/reflections/reference.ReferenceReflection['_state'] */ js.Any
+    ) = this()
+    def this(
+      name: String,
+      state: /* import warning: importer.ImportType#apply Failed type conversion: typedoc.typedoc/dist/lib/models/reflections/reference.ReferenceReflection['_state'] */ js.Any,
+      parent: typings.typedoc.abstractMod.Reflection
+    ) = this()
+  }
+  
+  @js.native
   abstract class Reflection protected ()
     extends typings.typedoc.abstractMod.Reflection {
     def this(name: String, kind: ReflectionKind) = this()
     def this(name: String, kind: ReflectionKind, parent: typings.typedoc.abstractMod.Reflection) = this()
   }
+  
+  @js.native
+  class ReflectionFlags ()
+    extends typings.typedoc.abstractMod.ReflectionFlags
   
   @js.native
   class SignatureReflection ()
@@ -91,6 +109,7 @@ object reflectionsMod extends js.Object {
     /* 2097152 */ val ObjectLiteral: typings.typedoc.abstractMod.ReflectionKind.ObjectLiteral with Double = js.native
     /* 32768 */ val Parameter: typings.typedoc.abstractMod.ReflectionKind.Parameter with Double = js.native
     /* 1024 */ val Property: typings.typedoc.abstractMod.ReflectionKind.Property with Double = js.native
+    /* 16777216 */ val Reference: typings.typedoc.abstractMod.ReflectionKind.Reference with Double = js.native
     /* 1048576 */ val SetSignature: typings.typedoc.abstractMod.ReflectionKind.SetSignature with Double = js.native
     /* 3 */ val SomeModule: typings.typedoc.abstractMod.ReflectionKind.SomeModule with Double = js.native
     /* 1601536 */ val SomeSignature: typings.typedoc.abstractMod.ReflectionKind.SomeSignature with Double = js.native

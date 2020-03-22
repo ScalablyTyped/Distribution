@@ -1,7 +1,7 @@
 package typings.jupyterlabNotebook
 
+import typings.jupyterlabApputils.mod.VDomRenderer
 import typings.jupyterlabApputils.vdomMod.VDomModel
-import typings.jupyterlabApputils.vdomMod.VDomRenderer
 import typings.jupyterlabNotebook.mod.Notebook
 import typings.jupyterlabNotebook.truststatusMod.NotebookTrustStatus.Model
 import scala.scalajs.js
@@ -51,19 +51,22 @@ object truststatusMod extends js.Object {
       /**
         * Whether the active cell is trusted.
         */
-      val activeCellTrusted: Boolean = js.native
+      def activeCellTrusted(): Boolean = js.native
+      def notebook(): js.Any = js.native
+      def notebook(model: Notebook): js.Any = js.native
       /**
         * The current notebook for the model.
         */
-      var notebook: Notebook | Null = js.native
+      @JSName("notebook")
+      def notebook_Union(): Notebook | Null = js.native
       /**
         * The total number of cells in the current notebook.
         */
-      val totalCells: Double = js.native
+      def totalCells(): Double = js.native
       /**
         * The number of trusted cells in the current notebook.
         */
-      val trustedCells: Double = js.native
+      def trustedCells(): Double = js.native
     }
     
   }

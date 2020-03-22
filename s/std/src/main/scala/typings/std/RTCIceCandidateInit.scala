@@ -8,7 +8,7 @@ trait RTCIceCandidateInit extends js.Object {
   var candidate: js.UndefOr[java.lang.String] = js.undefined
   var sdpMLineIndex: js.UndefOr[Double | Null] = js.undefined
   var sdpMid: js.UndefOr[java.lang.String | Null] = js.undefined
-  var usernameFragment: js.UndefOr[java.lang.String] = js.undefined
+  var usernameFragment: js.UndefOr[java.lang.String | Null] = js.undefined
 }
 
 object RTCIceCandidateInit {

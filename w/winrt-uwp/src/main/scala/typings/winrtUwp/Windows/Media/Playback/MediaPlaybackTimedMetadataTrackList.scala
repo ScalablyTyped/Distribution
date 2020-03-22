@@ -2,7 +2,7 @@ package typings.winrtUwp.Windows.Media.Playback
 
 import typings.std.Array
 import typings.winrtUwp.AnonIndex
-import typings.winrtUwp.AnonItemsReturnValueNumber
+import typings.winrtUwp.AnonItemsTimedMetadataTrack
 import typings.winrtUwp.Windows.Foundation.Collections.IIterator
 import typings.winrtUwp.Windows.Foundation.EventHandler
 import typings.winrtUwp.Windows.Foundation.TypedEventHandler
@@ -43,7 +43,7 @@ abstract class MediaPlaybackTimedMetadataTrackList () extends Array[TimedMetadat
     * Retrieves the timed metadata tracks that start at the specified index in the list.
     * @param startIndex The zero-based index of the start of the timed metadata tracks in the list.
     */
-  def getMany(startIndex: Double): AnonItemsReturnValueNumber = js.native
+  def getMany(startIndex: Double): AnonItemsTimedMetadataTrack = js.native
   /**
     * Gets the presentation mode of the timed metadata track with the specified index.
     * @param index The index of the timed metadata track for which the presentation mode is queried.

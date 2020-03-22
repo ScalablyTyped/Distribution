@@ -4,9 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CenterTextProps extends js.Object {
-  var active: js.UndefOr[Boolean] = js.undefined
-  var disabled: js.UndefOr[Boolean] = js.undefined
+  var active: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.native
 }
 
 object CenterTextProps {

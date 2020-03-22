@@ -1,10 +1,10 @@
 package typings.jupyterlabCompleter.widgetMod.Completer
 
-import typings.phosphorAlgorithm.iterMod.IIterator
-import typings.phosphorAlgorithm.iterMod.IterableOrArrayLike
-import typings.phosphorCoreutils.jsonMod.JSONObject
-import typings.phosphorDisposable.mod.IDisposable
-import typings.phosphorSignaling.mod.ISignal
+import typings.luminoAlgorithm.iterMod.IIterator
+import typings.luminoAlgorithm.iterMod.IterableOrArrayLike
+import typings.luminoCoreutils.jsonMod.JSONObject
+import typings.luminoDisposable.mod.IDisposable
+import typings.luminoSignaling.mod.ISignal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

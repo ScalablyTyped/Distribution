@@ -2,7 +2,7 @@ package typings.gapiClientReseller.gapi.client.reseller
 
 import typings.gapiClient.gapi.client.Request_
 import typings.gapiClientReseller.AnonAlt
-import typings.gapiClientReseller.AnonAltFields
+import typings.gapiClientReseller.AnonFields
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,17 +13,17 @@ trait ResellernotifyResource extends js.Object {
   /** Returns all the details of the watch corresponding to the reseller. */
   def getwatchdetails(request: AnonAlt): Request_[ResellernotifyGetwatchdetailsResponse]
   /** Registers a Reseller for receiving notifications. */
-  def register(request: AnonAltFields): Request_[ResellernotifyResource]
+  def register(request: AnonFields): Request_[ResellernotifyResource]
   /** Unregisters a Reseller for receiving notifications. */
-  def unregister(request: AnonAltFields): Request_[ResellernotifyResource]
+  def unregister(request: AnonFields): Request_[ResellernotifyResource]
 }
 
 object ResellernotifyResource {
   @scala.inline
   def apply(
     getwatchdetails: AnonAlt => Request_[ResellernotifyGetwatchdetailsResponse],
-    register: AnonAltFields => Request_[ResellernotifyResource],
-    unregister: AnonAltFields => Request_[ResellernotifyResource],
+    register: AnonFields => Request_[ResellernotifyResource],
+    unregister: AnonFields => Request_[ResellernotifyResource],
     topicName: String = null
   ): ResellernotifyResource = {
     val __obj = js.Dynamic.literal(getwatchdetails = js.Any.fromFunction1(getwatchdetails), register = js.Any.fromFunction1(register), unregister = js.Any.fromFunction1(unregister))

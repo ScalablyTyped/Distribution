@@ -25,6 +25,13 @@ trait IPanelStackProps extends IProps {
     */
   var onOpen: js.UndefOr[js.Function1[/* addedPanel */ IPanel[js.Object], Unit]] = js.undefined
   /**
+    * If false, PanelStack will render all panels in the stack to the DOM, allowing their
+    * React component trees to maintain state as a user navigates through the stack.
+    * Panels other than the currently active one will be invisible.
+    * @default true
+    */
+  var renderActivePanelOnly: js.UndefOr[Boolean] = js.undefined
+  /**
     * Whether to show the header with the "back" button in each panel.
     * @default true
     */
@@ -43,6 +50,7 @@ object IPanelStackProps {
     initialPanel: IPanel[_] = null,
     onClose: /* removedPanel */ IPanel[js.Object] => Unit = null,
     onOpen: /* addedPanel */ IPanel[js.Object] => Unit = null,
+    renderActivePanelOnly: js.UndefOr[Boolean] = js.undefined,
     showPanelHeader: js.UndefOr[Boolean] = js.undefined,
     stack: js.Array[IPanel[_]] = null
   ): IPanelStackProps = {
@@ -51,6 +59,7 @@ object IPanelStackProps {
     if (initialPanel != null) __obj.updateDynamic("initialPanel")(initialPanel.asInstanceOf[js.Any])
     if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction1(onClose))
     if (onOpen != null) __obj.updateDynamic("onOpen")(js.Any.fromFunction1(onOpen))
+    if (!js.isUndefined(renderActivePanelOnly)) __obj.updateDynamic("renderActivePanelOnly")(renderActivePanelOnly.asInstanceOf[js.Any])
     if (!js.isUndefined(showPanelHeader)) __obj.updateDynamic("showPanelHeader")(showPanelHeader.asInstanceOf[js.Any])
     if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPanelStackProps]

@@ -14,9 +14,12 @@ import scala.scalajs.js.annotation._
 class Model () extends VDomModel {
   var _config: js.Any = js.native
   var _triggerChange: js.Any = js.native
+  def config(): js.Any = js.native
+  def config(`val`: IConfig): js.Any = js.native
   /**
     * The editor config from the settings system.
     */
-  var config: IConfig | Null = js.native
+  @JSName("config")
+  def config_Union(): IConfig | Null = js.native
 }
 

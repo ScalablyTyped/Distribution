@@ -1,6 +1,7 @@
 package typings.electron.Electron
 
 import typings.electron.electronStrings.createDirectory
+import typings.electron.electronStrings.dontAddToRecent
 import typings.electron.electronStrings.multiSelections
 import typings.electron.electronStrings.noResolveAliases
 import typings.electron.electronStrings.openDirectory
@@ -22,6 +23,8 @@ trait OpenDialogSyncOptions extends js.Object {
   var filters: js.UndefOr[js.Array[FileFilter]] = js.undefined
   /**
     * Message to display above input boxes.
+    *
+    * @platform darwin
     */
   var message: js.UndefOr[String] = js.undefined
   /**
@@ -30,11 +33,13 @@ trait OpenDialogSyncOptions extends js.Object {
     */
   var properties: js.UndefOr[
     js.Array[
-      openFile | openDirectory | multiSelections | showHiddenFiles | createDirectory | promptToCreate | noResolveAliases | treatPackageAsDirectory
+      openFile | openDirectory | multiSelections | showHiddenFiles | createDirectory | promptToCreate | noResolveAliases | treatPackageAsDirectory | dontAddToRecent
     ]
   ] = js.undefined
   /**
-    * Create when packaged for the Mac App Store.
+    * Create security scoped bookmarks when packaged for the Mac App Store.
+    *
+    * @platform darwin,mas
     */
   var securityScopedBookmarks: js.UndefOr[Boolean] = js.undefined
   var title: js.UndefOr[String] = js.undefined
@@ -48,7 +53,7 @@ object OpenDialogSyncOptions {
     filters: js.Array[FileFilter] = null,
     message: String = null,
     properties: js.Array[
-      openFile | openDirectory | multiSelections | showHiddenFiles | createDirectory | promptToCreate | noResolveAliases | treatPackageAsDirectory
+      openFile | openDirectory | multiSelections | showHiddenFiles | createDirectory | promptToCreate | noResolveAliases | treatPackageAsDirectory | dontAddToRecent
     ] = null,
     securityScopedBookmarks: js.UndefOr[Boolean] = js.undefined,
     title: String = null

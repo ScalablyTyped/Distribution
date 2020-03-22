@@ -1,8 +1,8 @@
 package typings.shelljs.mod
 
 import typings.node.childProcessMod.ChildProcess
-import typings.shelljs.AnonAsync
-import typings.shelljs.AnonAsyncTrue
+import typings.shelljs.ExecOptionsasyncfalse
+import typings.shelljs.ExecOptionsasynctrue
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -149,6 +149,42 @@ trait ShellReturnValue extends ExecOutputReturnValue {
   	 */
   def exec(command: String, callback: ExecCallback): ChildProcess = js.native
   /**
+  	 * Executes the given command synchronously.
+  	 *
+  	 * @param command The command to execute.
+  	 * @param options Silence and synchronous options.
+  	 * @return        Returns an object containing the return code and output as string,
+  	 *                or if `{async: true}` was passed, a `ChildProcess`.
+  	 */
+  /**
+  	 * Executes the given command.
+  	 *
+  	 * @param command The command to execute.
+  	 * @param options Silence and synchronous options.
+  	 * @param [callback] Receives code and output asynchronously.
+  	 * @return Returns an object containing the return code and output as string,
+  	 *         or if `{async: true}` or a `callback` was passed, a `ChildProcess`.
+  	 */
+  def exec(command: String, options: ExecOptionsasyncfalse): ShellString = js.native
+  /**
+  	 * Executes the given command asynchronously.
+  	 *
+  	 * @param command The command to execute.
+  	 * @param options Silence and synchronous options.
+  	 * @return        Returns an object containing the return code and output as string,
+  	 *                or if `{async: true}` was passed, a `ChildProcess`.
+  	 */
+  /**
+  	 * Executes the given command.
+  	 *
+  	 * @param command The command to execute.
+  	 * @param options Silence and synchronous options.
+  	 * @param [callback] Receives code and output asynchronously.
+  	 * @return Returns an object containing the return code and output as string,
+  	 *         or if `{async: true}` or a `callback` was passed, a `ChildProcess`.
+  	 */
+  def exec(command: String, options: ExecOptionsasynctrue): ChildProcess = js.native
+  /**
   	 * Executes the given command.
   	 *
   	 * @param command The command to execute.
@@ -183,44 +219,6 @@ trait ShellReturnValue extends ExecOutputReturnValue {
   	 *         or if `{async: true}` or a `callback` was passed, a `ChildProcess`.
   	 */
   def exec(command: String, options: ExecOptions, callback: ExecCallback): ChildProcess = js.native
-  /**
-  	 * Executes the given command asynchronously.
-  	 *
-  	 * @param command The command to execute.
-  	 * @param options Silence and synchronous options.
-  	 * @return        Returns an object containing the return code and output as string,
-  	 *                or if `{async: true}` was passed, a `ChildProcess`.
-  	 */
-  /**
-  	 * Executes the given command.
-  	 *
-  	 * @param command The command to execute.
-  	 * @param options Silence and synchronous options.
-  	 * @param [callback] Receives code and output asynchronously.
-  	 * @return Returns an object containing the return code and output as string,
-  	 *         or if `{async: true}` or a `callback` was passed, a `ChildProcess`.
-  	 */
-  @JSName("exec")
-  def exec_ChildProcess(command: String, options: ExecOptions with AnonAsyncTrue): ChildProcess = js.native
-  /**
-  	 * Executes the given command synchronously.
-  	 *
-  	 * @param command The command to execute.
-  	 * @param options Silence and synchronous options.
-  	 * @return        Returns an object containing the return code and output as string,
-  	 *                or if `{async: true}` was passed, a `ChildProcess`.
-  	 */
-  /**
-  	 * Executes the given command.
-  	 *
-  	 * @param command The command to execute.
-  	 * @param options Silence and synchronous options.
-  	 * @param [callback] Receives code and output asynchronously.
-  	 * @return Returns an object containing the return code and output as string,
-  	 *         or if `{async: true}` or a `callback` was passed, a `ChildProcess`.
-  	 */
-  @JSName("exec")
-  def exec_ShellString(command: String, options: ExecOptions with AnonAsync): ShellString = js.native
   /**
   	 * Reads input string from given files and returns a string containing all lines
   	 * of the file that match the given `regex_filter`. Wildcard `*` accepted.

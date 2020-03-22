@@ -1,6 +1,5 @@
 package typings.mongodbMemoryServerCore.mongoBinaryMod
 
-import typings.mongodbMemoryServerCore.typesMod.DebugFn
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,9 +13,6 @@ class default () extends MongoBinary
 @js.native
 object default extends js.Object {
   var cache: MongoBinaryCache = js.native
-  @JSName("debug")
-  var debug_Original: DebugFn = js.native
-  def debug(args: js.Any*): js.Any = js.native
   def getCachePath(version: String): js.Promise[String] = js.native
   def getDownloadPath(options: js.Any): js.Promise[String] = js.native
   def getPath(): js.Promise[String] = js.native

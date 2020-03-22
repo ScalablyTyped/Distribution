@@ -1,10 +1,9 @@
 package typings.formatjsIntlDisplaynames.intlDisplaynamesMod
 
+import typings.formatjsIntlDisplaynames.PickDisplayNamesOptionslo
 import typings.formatjsIntlDisplaynames.formatjsIntlDisplaynamesBooleans.`true`
-import typings.formatjsIntlDisplaynames.formatjsIntlDisplaynamesStrings.localeMatcher
 import typings.formatjsIntlUtils.displaynamesTypesMod.DisplayNamesData
 import typings.formatjsIntlUtils.displaynamesTypesMod.DisplayNamesLocaleData
-import typings.std.Pick
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -35,10 +34,8 @@ object DisplayNames extends js.Object {
   def __addLocaleData(data: DisplayNamesLocaleData*): Unit = js.native
   def supportedLocalesOf(): js.Array[String] = js.native
   def supportedLocalesOf(locales: String): js.Array[String] = js.native
+  def supportedLocalesOf(locales: String, options: PickDisplayNamesOptionslo): js.Array[String] = js.native
   def supportedLocalesOf(locales: js.Array[String]): js.Array[String] = js.native
-  @JSName("supportedLocalesOf")
-  def supportedLocalesOf_localeMatcher(locales: String, options: Pick[DisplayNamesOptions, localeMatcher]): js.Array[String] = js.native
-  @JSName("supportedLocalesOf")
-  def supportedLocalesOf_localeMatcher(locales: js.Array[String], options: Pick[DisplayNamesOptions, localeMatcher]): js.Array[String] = js.native
+  def supportedLocalesOf(locales: js.Array[String], options: PickDisplayNamesOptionslo): js.Array[String] = js.native
 }
 

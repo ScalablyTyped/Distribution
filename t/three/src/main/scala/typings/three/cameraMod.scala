@@ -15,7 +15,7 @@ object cameraMod extends js.Object {
   	 * This constructor sets following properties to the correct type: matrixWorldInverse, projectionMatrix and projectionMatrixInverse.
   	 */
   class Camera () extends Object3D {
-    var isCamera: `true` = js.native
+    val isCamera: `true` = js.native
     /**
     	 * This is the inverse of matrixWorld. MatrixWorld contains the Matrix which has the world transform of the Camera.
     	 */

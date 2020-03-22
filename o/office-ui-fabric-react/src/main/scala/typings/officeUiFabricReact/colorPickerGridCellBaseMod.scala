@@ -2,7 +2,6 @@ package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.colorPickerGridCellTypesMod.IColorPickerGridCellProps
 import typings.react.mod.Component
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,7 +29,7 @@ object colorPickerGridCellBaseMod extends js.Object {
   /* static members */
   @js.native
   object ColorPickerGridCellBase extends js.Object {
-    var defaultProps: Partial[IColorPickerGridCellProps] = js.native
+    var defaultProps: PartialIColorPickerGridCe = js.native
   }
   
 }

@@ -27,19 +27,6 @@ trait IDLInterfaceMemberType extends js.Object
 
 object IDLInterfaceMemberType {
   @scala.inline
-  def ConstantMemberType(
-    extAttrs: js.Array[ExtendedAttribute],
-    idlType: IDLTypeDescription,
-    name: String,
-    nullable: Boolean,
-    `type`: const,
-    value: ValueDescription
-  ): IDLInterfaceMemberType = {
-    val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], idlType = idlType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nullable = nullable.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[IDLInterfaceMemberType]
-  }
-  @scala.inline
   def AttributeMemberType(
     extAttrs: js.Array[ExtendedAttribute],
     idlType: IDLTypeDescription,
@@ -82,6 +69,19 @@ object IDLInterfaceMemberType {
   @scala.inline
   def ConstructorMemberType(arguments: js.Array[Argument], extAttrs: js.Array[ExtendedAttribute], `type`: constructor): IDLInterfaceMemberType = {
     val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], extAttrs = extAttrs.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IDLInterfaceMemberType]
+  }
+  @scala.inline
+  def ConstantMemberType(
+    extAttrs: js.Array[ExtendedAttribute],
+    idlType: IDLTypeDescription,
+    name: String,
+    nullable: Boolean,
+    `type`: const,
+    value: ValueDescription
+  ): IDLInterfaceMemberType = {
+    val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], idlType = idlType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nullable = nullable.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDLInterfaceMemberType]
   }

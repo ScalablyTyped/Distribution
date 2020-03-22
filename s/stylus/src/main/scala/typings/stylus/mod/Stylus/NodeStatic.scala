@@ -4,8 +4,8 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
-import typings.stylus.TypeofClassHSLA
-import typings.stylus.TypeofClassRGBA
+import typings.stylus.TypeofHSLA
+import typings.stylus.TypeofRGBA
 import typings.stylus.mod.Stylus.Nodes.Arguments
 import typings.stylus.mod.Stylus.Nodes.Atblock
 import typings.stylus.mod.Stylus.Nodes.Atrule
@@ -78,7 +78,7 @@ trait NodeStatic extends js.Object {
     typings.stylus.mod.Stylus.Nodes.Function
   ]
   var Group: Instantiable0[typings.stylus.mod.Stylus.Nodes.Group]
-  var HSLA: TypeofClassHSLA
+  var HSLA: TypeofHSLA
   var Ident: Instantiable2[/* name */ String, /* val */ Node, typings.stylus.mod.Stylus.Nodes.Ident]
   var If: Instantiable2[/* cond */ Expression, /* negate */ Boolean, typings.stylus.mod.Stylus.Nodes.If]
   var Import: Instantiable1[/* path */ Expression, typings.stylus.mod.Stylus.Nodes.Import]
@@ -99,7 +99,7 @@ trait NodeStatic extends js.Object {
   var Query: Instantiable0[typings.stylus.mod.Stylus.Nodes.Query]
   var QueryExpr: Instantiable1[/* segs */ js.Array[Node], typings.stylus.mod.Stylus.Nodes.QueryExpr]
   var QueryList: Instantiable0[typings.stylus.mod.Stylus.Nodes.QueryList]
-  var RGBA: TypeofClassRGBA
+  var RGBA: TypeofRGBA
   var Return: Instantiable1[/* expr */ Expression, typings.stylus.mod.Stylus.Nodes.Return]
   var Root: Instantiable0[typings.stylus.mod.Stylus.Nodes.Root]
   var Selector: Instantiable1[/* segs */ js.Array[Node], typings.stylus.mod.Stylus.Nodes.Selector]
@@ -134,7 +134,7 @@ object NodeStatic {
     Extend: Instantiable1[/* selectors */ js.Array[Selector], Extend],
     Function: Instantiable3[/* name */ String, /* params */ Params, /* body */ Block, Function],
     Group: Instantiable0[Group],
-    HSLA: TypeofClassHSLA,
+    HSLA: TypeofHSLA,
     Ident: Instantiable2[/* name */ String, /* val */ Node, Ident],
     If: Instantiable2[/* cond */ Expression, /* negate */ Boolean, If],
     Import: Instantiable1[/* path */ Expression, Import],
@@ -151,7 +151,7 @@ object NodeStatic {
     Query: Instantiable0[Query],
     QueryExpr: Instantiable1[/* segs */ js.Array[Node], QueryExpr],
     QueryList: Instantiable0[QueryList],
-    RGBA: TypeofClassRGBA,
+    RGBA: TypeofRGBA,
     Return: Instantiable1[/* expr */ Expression, Return],
     Root: Instantiable0[Root],
     Selector: Instantiable1[/* segs */ js.Array[Node], Selector],

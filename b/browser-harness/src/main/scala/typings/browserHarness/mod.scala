@@ -17,7 +17,7 @@ object mod extends js.Object {
   @js.native
   class Browser protected () extends js.Object {
     //constructor(args: { type: string; location?: string; args?: string[] });
-    def this(args: AnonArgsLocation) = this()
+    def this(args: AnonLocation) = this()
     def close(): js.Any = js.native
     def open(harnessUrl: String): js.Any = js.native
     def open(harnessUrl: String, serverUrl: String): js.Any = js.native

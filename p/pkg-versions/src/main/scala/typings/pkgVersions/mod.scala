@@ -12,7 +12,7 @@ object mod extends js.Object {
   // declare function pkgVersions(packageName: string): Promise<Set<string>>;
   // export = pkgVersions;
   @JSName("default")
-  var default_Original: AnonDefault = js.native
+  var default_Original: AnonCall = js.native
   /**
   	Get the version numbers of a package from the npm registry.
   	@returns The version numbers.

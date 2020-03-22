@@ -10,7 +10,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object serializersTypesTypeParameterMod extends js.Object {
   @js.native
-  class TypeParameterTypeSerializer () extends TypeSerializerComponent[TypeParameterType]
+  class TypeParameterTypeSerializer () extends TypeSerializerComponent[TypeParameterType] {
+    def toObject(`type`: TypeParameterType, obj: PickTypeParameterTypetype): typings.typedoc.schemaMod.TypeParameterType = js.native
+  }
   
 }
 

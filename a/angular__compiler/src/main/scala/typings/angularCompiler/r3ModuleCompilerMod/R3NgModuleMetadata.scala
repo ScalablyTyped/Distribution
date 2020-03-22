@@ -8,6 +8,14 @@ import scala.scalajs.js.annotation._
 
 trait R3NgModuleMetadata extends js.Object {
   /**
+    * An expression intended for use by statements that are adjacent (i.e. tightly coupled) to but
+    * not internal to a class definition.
+    *
+    * This can differ from the outer `type` if the class is being compiled by ngcc and is inside
+    * an IIFE structure that uses a different name internally.
+    */
+  var adjacentType: Expression
+  /**
     * An array of expressions representing the bootstrap components specified by the module.
     */
   var bootstrap: js.Array[R3Reference]
@@ -36,29 +44,39 @@ trait R3NgModuleMetadata extends js.Object {
     */
   var imports: js.Array[R3Reference]
   /**
+    * An expression representing the module type being compiled, intended for use within a class
+    * definition itself.
+    *
+    * This can differ from the outer `type` if the class is being compiled by ngcc and is inside
+    * an IIFE structure that uses a different name internally.
+    */
+  var internalType: Expression
+  /**
     * The set of schemas that declare elements to be allowed in the NgModule.
     */
   var schemas: js.Array[R3Reference] | Null
   /**
     * An expression representing the module type being compiled.
     */
-  var `type`: Expression
+  var `type`: R3Reference
 }
 
 object R3NgModuleMetadata {
   @scala.inline
   def apply(
+    adjacentType: Expression,
     bootstrap: js.Array[R3Reference],
     containsForwardDecls: Boolean,
     declarations: js.Array[R3Reference],
     emitInline: Boolean,
     exports: js.Array[R3Reference],
     imports: js.Array[R3Reference],
-    `type`: Expression,
+    internalType: Expression,
+    `type`: R3Reference,
     id: Expression = null,
     schemas: js.Array[R3Reference] = null
   ): R3NgModuleMetadata = {
-    val __obj = js.Dynamic.literal(bootstrap = bootstrap.asInstanceOf[js.Any], containsForwardDecls = containsForwardDecls.asInstanceOf[js.Any], declarations = declarations.asInstanceOf[js.Any], emitInline = emitInline.asInstanceOf[js.Any], exports = exports.asInstanceOf[js.Any], imports = imports.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(adjacentType = adjacentType.asInstanceOf[js.Any], bootstrap = bootstrap.asInstanceOf[js.Any], containsForwardDecls = containsForwardDecls.asInstanceOf[js.Any], declarations = declarations.asInstanceOf[js.Any], emitInline = emitInline.asInstanceOf[js.Any], exports = exports.asInstanceOf[js.Any], imports = imports.asInstanceOf[js.Any], internalType = internalType.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (schemas != null) __obj.updateDynamic("schemas")(schemas.asInstanceOf[js.Any])

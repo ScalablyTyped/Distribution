@@ -18,7 +18,7 @@ object mod extends js.Object {
   // ): FunctionType;
   // export = mimicFn;
   @JSName("default")
-  var default_Original: AnonArguments = js.native
+  var default_Original: AnonCall = js.native
   /**
   	Make a function mimic another one. It will copy over the properties `name`, `length`, `displayName`, and any custom properties you may have set.
   	@param to - Mimicking function.

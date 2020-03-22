@@ -10,7 +10,8 @@ import scala.scalajs.js.annotation._
 @JSImport("gulp-typescript/release/input", "FileCache")
 @js.native
 class FileCache protected () extends js.Object {
-  def this(typescript: Typeofts, options: CompilerOptions) = this()
+  def this(typescript: Typeofts, options: CompilerOptions, caseSensitive: Boolean) = this()
+  var caseSensitive: Boolean = js.native
   var commonBasePath: String = js.native
   var commonSourceDirectory: String = js.native
   var createDictionary: js.Any = js.native

@@ -1,8 +1,8 @@
 package typings.jupyterlabApplication.shellMod.ILabShell
 
-import typings.phosphorWidgets.docklayoutMod.DockLayout.ILayoutConfig
-import typings.phosphorWidgets.dockpanelMod.DockPanel.Mode
-import typings.phosphorWidgets.mod.Widget
+import typings.luminoWidgets.docklayoutMod.DockLayout.ILayoutConfig
+import typings.luminoWidgets.dockpanelMod.DockPanel.Mode
+import typings.luminoWidgets.mod.Widget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

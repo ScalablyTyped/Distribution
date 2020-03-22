@@ -1,10 +1,10 @@
 package typings.childProcessPromise.mod
 
-import typings.childProcessPromise.AnonBuffer
-import typings.childProcessPromise.AnonEncoding
-import typings.childProcessPromise.AnonEncodingString
+import typings.childProcessPromise.ReadonlyOptionsExecOption
+import typings.childProcessPromise.ReadonlyOptionsencodingBu_
+import typings.childProcessPromise.ReadonlyOptionsencodingbu
+import typings.childProcessPromise.ReadonlyOptionsencodingst
 import typings.node.Buffer
-import typings.node.childProcessMod.ExecOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,9 +13,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object exec extends js.Object {
   def apply(command: String): ChildProcessPromise[PromiseResult[String]] = js.native
-  def apply(
-    command: String,
-    options: Options with AnonBuffer with ExecOptions with AnonEncoding with AnonEncodingString
-  ): ChildProcessPromise[PromiseResult[Buffer]] = js.native
+  def apply(command: String, options: ReadonlyOptionsExecOption): ChildProcessPromise[PromiseResult[String]] = js.native
+  def apply(command: String, options: ReadonlyOptionsencodingBu_): ChildProcessPromise[PromiseResult[String]] = js.native
+  def apply(command: String, options: ReadonlyOptionsencodingbu): ChildProcessPromise[PromiseResult[Buffer]] = js.native
+  def apply(command: String, options: ReadonlyOptionsencodingst): ChildProcessPromise[PromiseResult[String | Buffer]] = js.native
 }
 

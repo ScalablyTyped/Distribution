@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@nivo/radar" : "0.59.1"
+      "@nivo/radar" : "0.61.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@nivo/radar" : "0.59.1"
+      "@nivo/radar" : "0.61.1"
     }
   ],
   "compile-devDependencies" : [

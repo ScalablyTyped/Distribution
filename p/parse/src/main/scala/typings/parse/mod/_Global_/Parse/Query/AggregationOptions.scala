@@ -1,7 +1,7 @@
 package typings.parse.mod._Global_.Parse.Query
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.parse.AnonKey
+import typings.parse.AnonDictkey
 import typings.parse.parseNumbers.`-1`
 import typings.parse.parseNumbers.`1`
 import scala.scalajs.js
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 
 // According to http://docs.parseplatform.org/rest/guide/#aggregate-queries
 trait AggregationOptions extends js.Object {
-  var group: js.UndefOr[AnonKey] = js.undefined
+  var group: js.UndefOr[AnonDictkey] = js.undefined
   var limit: js.UndefOr[Double] = js.undefined
   var `match`: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   var project: js.UndefOr[StringDictionary[js.Any]] = js.undefined
@@ -22,7 +22,7 @@ trait AggregationOptions extends js.Object {
 object AggregationOptions {
   @scala.inline
   def apply(
-    group: AnonKey = null,
+    group: AnonDictkey = null,
     limit: Int | Double = null,
     `match`: StringDictionary[js.Any] = null,
     project: StringDictionary[js.Any] = null,

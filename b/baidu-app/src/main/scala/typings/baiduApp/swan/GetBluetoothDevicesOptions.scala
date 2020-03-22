@@ -1,6 +1,6 @@
 package typings.baiduApp.swan
 
-import typings.baiduApp.AnonDevices
+import typings.baiduApp.devicesArrayBluetoothDevi
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation._
 trait GetBluetoothDevicesOptions
   extends BaseOptions[js.Any, js.Any] {
   @JSName("success")
-  def success_MGetBluetoothDevicesOptions(res: AnonDevices with ErrMsgResponse): Unit
+  def success_MGetBluetoothDevicesOptions(res: devicesArrayBluetoothDevi): Unit
 }
 
 object GetBluetoothDevicesOptions {
   @scala.inline
   def apply(
-    success: AnonDevices with ErrMsgResponse => Unit,
+    success: devicesArrayBluetoothDevi => Unit,
     complete: /* res */ js.Any => Unit = null,
     fail: js.Any => Unit = null
   ): GetBluetoothDevicesOptions = {

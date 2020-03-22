@@ -4,9 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TabButtonProps extends js.Object {
-  var active: js.UndefOr[Boolean] = js.undefined
-  var textColor: js.UndefOr[String] = js.undefined
+  var active: js.UndefOr[Boolean] = js.native
+  var textColor: js.UndefOr[String] = js.native
 }
 
 object TabButtonProps {

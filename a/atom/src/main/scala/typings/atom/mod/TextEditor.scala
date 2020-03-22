@@ -1,15 +1,15 @@
 package typings.atom.mod
 
+import typings.atom.Anon23
+import typings.atom.Anon24
 import typings.atom.AnonAllowPrevious
 import typings.atom.AnonAutoscroll
-import typings.atom.AnonBackwardClipDirectionClosestForward
-import typings.atom.AnonBackwardClipDirectionClosestForwardInside
 import typings.atom.AnonCancel
 import typings.atom.AnonCenter
-import typings.atom.AnonInside
-import typings.atom.AnonInsideInvalidate
+import typings.atom.AnonClipDirectionInvalidate
 import typings.atom.AnonMaintainHistory
 import typings.atom.AnonPath
+import typings.atom.AnonPersistent
 import typings.atom.AnonPreserveFolds
 import typings.atom.AnonPreserveLeadingWhitespace
 import typings.atom.AnonReversedBoolean
@@ -42,7 +42,7 @@ class TextEditor () extends js.Object {
   def addGutter(options: GutterOptions): Gutter = js.native
   /** Create a marker layer to group related markers. */
   def addMarkerLayer(): DisplayMarkerLayer = js.native
-  def addMarkerLayer(options: AnonMaintainHistory): DisplayMarkerLayer = js.native
+  def addMarkerLayer(options: AnonPersistent): DisplayMarkerLayer = js.native
   /** Add a selection for the given range in buffer coordinates. */
   def addSelectionForBufferRange(bufferRange: RangeCompatible): Selection = js.native
   def addSelectionForBufferRange(bufferRange: RangeCompatible, options: AnonPreserveFolds): Selection = js.native
@@ -65,7 +65,7 @@ class TextEditor () extends js.Object {
   def backwardsScanInBufferRange(regex: RegExp, range: RangeCompatible, iterator: js.Function1[/* params */ BufferScanResult, Unit]): Unit = js.native
   /** Convert a position in screen-coordinates to buffer-coordinates. */
   def bufferPositionForScreenPosition(bufferPosition: PointCompatible): Point = js.native
-  def bufferPositionForScreenPosition(bufferPosition: PointCompatible, options: AnonBackwardClipDirectionClosestForward): Point = js.native
+  def bufferPositionForScreenPosition(bufferPosition: PointCompatible, options: Anon23): Point = js.native
   /**
     *  Get the range in buffer coordinates of all tokens surrounding the cursor
     *  that match the given scope selector.
@@ -84,13 +84,13 @@ class TextEditor () extends js.Object {
   def clipBufferRange(range: RangeCompatible): Range = js.native
   /** Clip the given Point to a valid position on screen. */
   def clipScreenPosition(screenPosition: PointCompatible): Point = js.native
-  def clipScreenPosition(screenPosition: PointCompatible, options: AnonBackwardClipDirectionClosestForward): Point = js.native
+  def clipScreenPosition(screenPosition: PointCompatible, options: Anon23): Point = js.native
   /**
     *  Clip the start and end of the given range to valid positions on screen.
     *  See ::clipScreenPosition for more information.
     */
   def clipScreenRange(range: RangeCompatible): Range = js.native
-  def clipScreenRange(range: RangeCompatible, options: AnonBackwardClipDirectionClosestForward): Range = js.native
+  def clipScreenRange(range: RangeCompatible, options: Anon23): Range = js.native
   // Clipboard Operations
   /** For each selection, copy the selected text. */
   def copySelectedText(): Unit = js.native
@@ -456,7 +456,7 @@ class TextEditor () extends js.Object {
     *  To group multiple markers together in their own private layer, see ::addMarkerLayer.
     */
   def markBufferPosition(bufferPosition: PointCompatible): DisplayMarker = js.native
-  def markBufferPosition(bufferPosition: PointCompatible, options: AnonInsideInvalidate): DisplayMarker = js.native
+  def markBufferPosition(bufferPosition: PointCompatible, options: Anon24): DisplayMarker = js.native
   // Markers
   /**
     *  Create a marker on the default marker layer with the given range in buffer coordinates.
@@ -465,13 +465,13 @@ class TextEditor () extends js.Object {
     *  in the buffer changes.
     */
   def markBufferRange(range: RangeCompatible): DisplayMarker = js.native
-  def markBufferRange(range: RangeCompatible, properties: AnonInside): DisplayMarker = js.native
+  def markBufferRange(range: RangeCompatible, properties: AnonMaintainHistory): DisplayMarker = js.native
   /**
     *  Create a marker on the default marker layer with the given screen position and no tail.
     *  To group multiple markers together in their own private layer, see ::addMarkerLayer.
     */
   def markScreenPosition(screenPosition: PointCompatible): DisplayMarker = js.native
-  def markScreenPosition(screenPosition: PointCompatible, options: AnonBackwardClipDirectionClosestForwardInside): DisplayMarker = js.native
+  def markScreenPosition(screenPosition: PointCompatible, options: AnonClipDirectionInvalidate): DisplayMarker = js.native
   /**
     *  Create a marker on the default marker layer with the given range in screen coordinates.
     *  This marker will maintain its logical location as the buffer is changed, so if you mark
@@ -479,7 +479,7 @@ class TextEditor () extends js.Object {
     *  the buffer changes.
     */
   def markScreenRange(range: RangeCompatible): DisplayMarker = js.native
-  def markScreenRange(range: RangeCompatible, properties: AnonInside): DisplayMarker = js.native
+  def markScreenRange(range: RangeCompatible, properties: AnonMaintainHistory): DisplayMarker = js.native
   /** Move every cursor down one row in screen coordinates. */
   def moveDown(): Unit = js.native
   def moveDown(lineCount: Double): Unit = js.native
@@ -687,7 +687,7 @@ class TextEditor () extends js.Object {
   // TextEditor Coordinates
   /** Convert a position in buffer-coordinates to screen-coordinates. */
   def screenPositionForBufferPosition(bufferPosition: PointCompatible): Point = js.native
-  def screenPositionForBufferPosition(bufferPosition: PointCompatible, options: AnonBackwardClipDirectionClosestForward): Point = js.native
+  def screenPositionForBufferPosition(bufferPosition: PointCompatible, options: Anon23): Point = js.native
   /** Convert a range in buffer-coordinates to screen-coordinates. */
   def screenRangeForBufferRange(bufferRange: RangeCompatible): Range = js.native
   /** Scrolls the editor to the given buffer position. */

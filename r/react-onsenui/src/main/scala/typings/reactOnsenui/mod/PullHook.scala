@@ -1,6 +1,6 @@
 package typings.reactOnsenui.mod
 
-import typings.reactOnsenui.HTMLAttributesidclassNamestyleonChangeePullHookCha
+import typings.reactOnsenui.HTMLAttributesidclassNameFixedContent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-onsenui", "PullHook")
 @js.native
 class PullHook ()
-  extends typings.react.mod.Component[HTMLAttributesidclassNamestyleonChangeePullHookCha, js.Any, js.Any]
+  extends typings.react.mod.Component[HTMLAttributesidclassNameFixedContent, js.Any, js.Any]
 

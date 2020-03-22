@@ -1,7 +1,7 @@
 package typings.reactNativeMaterialUi.mod
 
 import typings.react.mod._Global_.JSX.Element
-import typings.reactNativeMaterialUi.AnonContainerIconViewStyle
+import typings.reactNativeMaterialUi.AnonContainerIcon
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ trait IconToggleProps extends js.Object {
   var onPress: js.UndefOr[js.Function0[Unit]] = js.undefined
   var percent: js.UndefOr[Double] = js.undefined
   var size: js.UndefOr[Double] = js.undefined
-  var style: js.UndefOr[AnonContainerIconViewStyle] = js.undefined
+  var style: js.UndefOr[AnonContainerIcon] = js.undefined
   var testID: js.UndefOr[String] = js.undefined
   var underlayColor: js.UndefOr[String] = js.undefined
 }
@@ -31,7 +31,7 @@ object IconToggleProps {
     onPress: () => Unit = null,
     percent: Int | Double = null,
     size: Int | Double = null,
-    style: AnonContainerIconViewStyle = null,
+    style: AnonContainerIcon = null,
     testID: String = null,
     underlayColor: String = null
   ): IconToggleProps = {

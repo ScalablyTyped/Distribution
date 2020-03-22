@@ -1,7 +1,6 @@
 package typings.knexDbManager.mod
 
 import typings.knex.mod.QueryBuilder
-import typings.knex.mod.SafePartial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +18,7 @@ trait KnexDbManager extends js.Object {
   def dbVersion(): js.Promise[String] = js.native
   def dropDb(): js.Promise[Unit] = js.native
   def dropDb(dbName: String): js.Promise[Unit] = js.native
-  def knexInstance(): QueryBuilder[_, js.Array[SafePartial[_]]] = js.native
+  def knexInstance(): QueryBuilder[_, _] = js.native
   def migrateDb(): js.Promise[Unit] = js.native
   def populateDb(glob: String): js.Promise[Unit] = js.native
   def truncateDb(): js.Promise[Unit] = js.native

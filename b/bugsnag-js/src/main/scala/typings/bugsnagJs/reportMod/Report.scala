@@ -1,6 +1,6 @@
 package typings.bugsnagJs.reportMod
 
-import typings.bugsnagJs.AnonKey
+import typings.bugsnagJs.AnonDictkey
 import typings.bugsnagJs.AnonUrl
 import typings.bugsnagJs.bugsnagJsStrings.error
 import typings.bugsnagJs.bugsnagJsStrings.info
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Report extends js.Object {
   var apiKey: String = js.native
-  var app: AnonKey = js.native
+  var app: AnonDictkey = js.native
   var breadcrumbs: js.Array[typings.bugsnagJs.breadcrumbMod.default] = js.native
   var context: String = js.native
   var device: js.Object = js.native

@@ -1,6 +1,5 @@
 package typings.storybookApi.versionsMod
 
-import typings.storybookApi.VersionsUnknownEntries
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,14 +7,14 @@ import scala.scalajs.js.annotation._
 trait SubState extends js.Object {
   var dismissedVersionNotification: js.UndefOr[String] = js.undefined
   var lastVersionCheck: Double
-  var versions: VersionsUnknownEntries
+  var versions: Versions with UnknownEntries
 }
 
 object SubState {
   @scala.inline
   def apply(
     lastVersionCheck: Double,
-    versions: VersionsUnknownEntries,
+    versions: Versions with UnknownEntries,
     dismissedVersionNotification: String = null
   ): SubState = {
     val __obj = js.Dynamic.literal(lastVersionCheck = lastVersionCheck.asInstanceOf[js.Any], versions = versions.asInstanceOf[js.Any])

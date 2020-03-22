@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 object stylesMod extends js.Object {
   @js.native
   object default extends js.Object {
-    val innerStyle: Anon100 = js.native
-    val style: Anon0 = js.native
+    val innerStyle: AnonMargin = js.native
+    val style: AnonAlignItems = js.native
   }
   
 }

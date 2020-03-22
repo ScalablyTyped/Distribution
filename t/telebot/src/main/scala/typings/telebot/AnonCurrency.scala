@@ -11,7 +11,7 @@ trait AnonCurrency extends js.Object {
   var need: js.UndefOr[AnonEmail] = js.undefined
   var notification: js.UndefOr[Boolean] = js.undefined
   var payload: String
-  var photo: js.UndefOr[AnonHeight] = js.undefined
+  var photo: js.UndefOr[AnonUrl] = js.undefined
   var prices: js.Array[_]
   var providerToken: String
   var replyMarkup: js.UndefOr[js.Any] = js.undefined
@@ -33,7 +33,7 @@ object AnonCurrency {
     isFlexible: js.UndefOr[Boolean] = js.undefined,
     need: AnonEmail = null,
     notification: js.UndefOr[Boolean] = js.undefined,
-    photo: AnonHeight = null,
+    photo: AnonUrl = null,
     replyMarkup: js.Any = null,
     replyToMessage: Int | Double = null
   ): AnonCurrency = {

@@ -9,21 +9,21 @@ import scala.scalajs.js.annotation._
 object listStyleIndexNativeMod extends js.Object {
   @js.native
   object default extends js.Object {
-    var Arrow: AnonHeightMarginLeftMarginTop = js.native
-    var ArrowV: AnonHeightMarginLeftWidth = js.native
-    var Body: AnonBackgroundColorBorderTopColor = js.native
-    var BodyBottomLine: AnonBackgroundColorBorderBottomColor = js.native
-    var Brief: AnonMinHeight = js.native
-    var BriefText: AnonColorFontSizePaddingTop = js.native
-    var Content: AnonColorFontSizeTextAlignVertical = js.native
-    var Extra: AnonColorFontSizeTextAlignTextAlignVertical = js.native
-    var Footer: AnonBackgroundColorColorFontSizePaddingHorizontal = js.native
-    var Header: AnonBackgroundColorColorFontSizePaddingBottom = js.native
-    var Item: AnonAlignItemsBackgroundColorFlexDirection = js.native
-    var Line: AnonAlignItemsBorderBottomColorBorderBottomWidth = js.native
+    var Arrow: AnonMarginLeftMarginTop = js.native
+    var ArrowV: AnonMarginLeftWidth = js.native
+    var Body: AnonBorderTopColor = js.native
+    var BodyBottomLine: AnonBorderBottomWidth = js.native
+    var Brief: AnonMinHeightNumber = js.native
+    var BriefText: AnonFontSizePaddingTop = js.native
+    var Content: AnonFontSizeTextAlignVertical = js.native
+    var Extra: AnonFontSizeTextAlign = js.native
+    var Footer: AnonPaddingVertical = js.native
+    var Header: AnonPaddingTop = js.native
+    var Item: AnonFlexGrow = js.native
+    var Line: AnonMinHeight = js.native
     var Thumb: AnonHeightMarginRight = js.native
     var column: AnonFlexFlexDirection = js.native
-    var multipleLine: AnonPaddingVertical = js.native
+    var multipleLine: AnonPaddingVerticalNumber = js.native
     var multipleThumb: AnonHeightWidth = js.native
     var underlayColor: AnonBackgroundColorString = js.native
   }

@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait BaseData extends js.Object {
+trait BaseData extends Data {
   var name: String
   var on: js.UndefOr[js.Array[OnTrigger]] = js.undefined
   var transform: js.UndefOr[js.Array[Transforms]] = js.undefined

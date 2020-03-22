@@ -26,12 +26,6 @@ trait KeycloakLoginOptions extends js.Object {
   		 */
   var idpHint: js.UndefOr[String] = js.undefined
   /**
-  		 * Specifies the desired Keycloak locale for the UI.  This differs from
-    * the locale param in that it tells the Keycloak server to set a cookie and update
-    * the user's profile to a new preferred locale.
-  		 */
-  var kcLocale: js.UndefOr[String] = js.undefined
-  /**
   		 * Sets the 'ui_locales' query param in compliance with section 3.1.2.1
     * of the OIDC 1.0 specification.
   		 */
@@ -71,7 +65,6 @@ object KeycloakLoginOptions {
     action: register = null,
     cordovaOptions: StringDictionary[String] = null,
     idpHint: String = null,
-    kcLocale: String = null,
     locale: String = null,
     loginHint: String = null,
     maxAge: Int | Double = null,
@@ -83,7 +76,6 @@ object KeycloakLoginOptions {
     if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
     if (cordovaOptions != null) __obj.updateDynamic("cordovaOptions")(cordovaOptions.asInstanceOf[js.Any])
     if (idpHint != null) __obj.updateDynamic("idpHint")(idpHint.asInstanceOf[js.Any])
-    if (kcLocale != null) __obj.updateDynamic("kcLocale")(kcLocale.asInstanceOf[js.Any])
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (loginHint != null) __obj.updateDynamic("loginHint")(loginHint.asInstanceOf[js.Any])
     if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])

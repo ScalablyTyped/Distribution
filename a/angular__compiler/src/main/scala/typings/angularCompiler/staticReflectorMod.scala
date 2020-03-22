@@ -78,6 +78,11 @@ object staticReflectorMod extends js.Object {
       */
     def getStaticSymbol(declarationFile: String, name: String): StaticSymbol = js.native
     def getStaticSymbol(declarationFile: String, name: String, members: js.Array[String]): StaticSymbol = js.native
+    /**
+      * Invalidate the specified `symbols` on program change.
+      * @param symbols
+      */
+    def invalidateSymbols(symbols: js.Array[StaticSymbol]): Unit = js.native
     def parameters(`type`: StaticSymbol): js.Array[_] = js.native
     def propMetadata(`type`: StaticSymbol): StringDictionary[js.Array[_]] = js.native
     def resolveExternalReference(ref: ExternalReference, containingFile: String): StaticSymbol = js.native

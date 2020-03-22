@@ -2,8 +2,8 @@ package typings.googleapis.pagespeedonlineV4Mod.pagespeedonlineV4
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.googleapis.AnonCms
-import typings.googleapis.AnonIdInitialurl
-import typings.googleapis.AnonKeyLocaleRuleResultsAnonBeta
+import typings.googleapis.AnonInitialurl
+import typings.googleapis.AnonLocaleRuleResults
 import typings.googleapis.AnonMajor
 import typings.googleapis.AnonPass
 import scala.scalajs.js
@@ -20,7 +20,7 @@ trait SchemaPagespeedApiPagespeedResponseV4 extends js.Object {
     * Localized PageSpeed results. Contains a ruleResults entry for each
     * PageSpeed rule instantiated and run by the server.
     */
-  var formattedResults: js.UndefOr[AnonKeyLocaleRuleResultsAnonBeta] = js.native
+  var formattedResults: js.UndefOr[AnonLocaleRuleResults] = js.native
   /**
     * Canonicalized and final URL for the document, after following page
     * redirects (if any).
@@ -38,7 +38,7 @@ trait SchemaPagespeedApiPagespeedResponseV4 extends js.Object {
   /**
     * Metrics of end users&#39; page loading experience.
     */
-  var loadingExperience: js.UndefOr[AnonIdInitialurl] = js.native
+  var loadingExperience: js.UndefOr[AnonInitialurl] = js.native
   /**
     * Summary statistics for the page, such as number of JavaScript bytes,
     * number of HTML bytes, etc.
@@ -76,11 +76,11 @@ object SchemaPagespeedApiPagespeedResponseV4 {
   @scala.inline
   def apply(
     captchaResult: String = null,
-    formattedResults: AnonKeyLocaleRuleResultsAnonBeta = null,
+    formattedResults: AnonLocaleRuleResults = null,
     id: String = null,
     invalidRules: js.Array[String] = null,
     kind: String = null,
-    loadingExperience: AnonIdInitialurl = null,
+    loadingExperience: AnonInitialurl = null,
     pageStats: AnonCms = null,
     responseCode: Int | Double = null,
     ruleGroups: StringDictionary[AnonPass] = null,

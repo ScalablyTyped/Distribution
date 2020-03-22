@@ -1,6 +1,6 @@
 package typings.eventTargetShim.mod
 
-import typings.eventTargetShim.eventTargetShimStrings.standard
+import typings.eventTargetShim.EventTargetstandard
 import typings.eventTargetShim.mod.EventTarget._EventData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -45,7 +45,7 @@ trait Event
   /**
     * The current target of this event.
     */
-  val currentTarget: (EventTarget[js.Object, js.Object, standard]) | Null = js.native
+  val currentTarget: EventTargetstandard | Null = js.native
   /**
     * The flag to indicating whether the event was canceled.
     */
@@ -71,7 +71,7 @@ trait Event
   /**
     * The target of this event.
     */
-  val target: (EventTarget[js.Object, js.Object, standard]) | Null = js.native
+  val target: EventTargetstandard | Null = js.native
   /**
     * The unix time of this event.
     */
@@ -83,7 +83,7 @@ trait Event
   /**
     * The composed path of this event.
     */
-  def composedPath(): js.Array[EventTarget[js.Object, js.Object, standard]] = js.native
+  def composedPath(): js.Array[EventTargetstandard] = js.native
   /**
     * Initialize event.
     * @deprecated

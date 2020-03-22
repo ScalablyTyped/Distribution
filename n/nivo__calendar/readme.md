@@ -1,7 +1,7 @@
 
 # Scala.js typings for nivo__calendar
 
-Typings are for version 0.59.1
+Typings are for version 0.61.1
 
 ## Library description:
 [![version](https://img.shields.io/npm/v/@nivo/calendar.svg?style=flat-square)](https://www.npmjs.com/package/@nivo/calendar)

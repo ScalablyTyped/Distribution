@@ -3,7 +3,7 @@ package typings.jupyterlabRendermime.mimemodelMod
 import typings.jupyterlabRendermime.mimemodelMod.MimeModel.IOptions
 import typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.IMimeModel
 import typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.IMimeModel.ISetDataOptions
-import typings.phosphorCoreutils.jsonMod.ReadonlyJSONObject
+import typings.luminoCoreutils.jsonMod.ReadonlyPartialJSONObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,7 +22,7 @@ class MimeModel_ () extends IMimeModel {
     * The data associated with the model.
     */
   /* CompleteClass */
-  override val data: ReadonlyJSONObject = js.native
+  override val data: ReadonlyPartialJSONObject = js.native
   /**
     * The metadata associated with the model.
     *
@@ -30,12 +30,22 @@ class MimeModel_ () extends IMimeModel {
     * that stores a URI fragment identifier for the MIME resource.
     */
   /* CompleteClass */
-  override val metadata: ReadonlyJSONObject = js.native
+  override val metadata: ReadonlyPartialJSONObject = js.native
   /**
     * Whether the data in the model is trusted.
     */
   /* CompleteClass */
   override val trusted: Boolean = js.native
+  /**
+    * The data associated with the model.
+    */
+  @JSName("data")
+  def data_MMimeModel_(): ReadonlyPartialJSONObject = js.native
+  /**
+    * The metadata associated with the model.
+    */
+  @JSName("metadata")
+  def metadata_MMimeModel_(): ReadonlyPartialJSONObject = js.native
   /**
     * Set the data associated with the model.
     *

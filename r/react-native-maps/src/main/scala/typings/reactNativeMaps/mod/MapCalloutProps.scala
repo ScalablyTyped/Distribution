@@ -25,13 +25,13 @@ import typings.reactNative.reactNativeStrings.polite
 import typings.reactNative.reactNativeStrings.radiobutton_checked
 import typings.reactNative.reactNativeStrings.radiobutton_unchecked
 import typings.reactNative.reactNativeStrings.yes
-import typings.reactNativeMaps.AnonActionCalloutpress
+import typings.reactNativeMaps.Anon0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MapCalloutProps extends ViewProps {
-  var onPress: js.UndefOr[js.Function1[/* event */ MapEvent[AnonActionCalloutpress], Unit]] = js.undefined
+  var onPress: js.UndefOr[js.Function1[/* event */ MapEvent[Anon0], Unit]] = js.undefined
   var tooltip: js.UndefOr[Boolean] = js.undefined
 }
 
@@ -64,7 +64,7 @@ object MapCalloutProps {
     onMagicTap: () => Unit = null,
     onMoveShouldSetResponder: /* event */ GestureResponderEvent => Boolean = null,
     onMoveShouldSetResponderCapture: /* event */ GestureResponderEvent => Boolean = null,
-    onPress: /* event */ MapEvent[AnonActionCalloutpress] => Unit = null,
+    onPress: /* event */ MapEvent[Anon0] => Unit = null,
     onResponderEnd: /* event */ GestureResponderEvent => Unit = null,
     onResponderGrant: /* event */ GestureResponderEvent => Unit = null,
     onResponderMove: /* event */ GestureResponderEvent => Unit = null,

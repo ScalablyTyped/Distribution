@@ -5,11 +5,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object configMod {
-  type AxisConfig = typings.vegaTypings.configMod.ExcludeMappedValueRef[typings.vegaTypings.axisMod.BaseAxis]
-  type DefaultsConfig = typings.std.Record[
-    typings.vegaTypings.vegaTypingsStrings.prevent | typings.vegaTypings.vegaTypingsStrings.allow, 
-    scala.Boolean | js.Array[typings.vegaTypings.streamMod.EventType]
-  ]
   type ExcludeMappedValueRef[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: vega-typings.vega-typings/types/spec/config.ExcludeValueRefKeepSignal<T[P]>}
     */ typings.vegaTypings.vegaTypingsStrings.ExcludeMappedValueRef with T
@@ -19,6 +14,4 @@ package object configMod {
   ]) | typings.vegaTypings.configMod.KeepSignal[T]
   type KeepSignal[T] = typings.vegaTypings.signalMod.SignalRef
   type MarkConfigKeys = typings.vegaTypings.vegaTypingsStrings.mark | (/* import warning: importer.ImportType#apply Failed type conversion: vega-typings.vega-typings/types/spec/mark.Mark['type'] */ js.Any)
-  type ProjectionConfig = typings.vegaTypings.configMod.ExcludeMappedValueRef[typings.vegaTypings.projectionMod.BaseProjection]
-  type TitleConfig = typings.vegaTypings.configMod.ExcludeMappedValueRef[typings.vegaTypings.titleMod.BaseTitle]
 }

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@material/icon-button" : "3.2.0"
+      "@material/icon-button" : "5.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@material/icon-button" : "3.2.0"
+      "@material/icon-button" : "5.1.0"
     }
   ],
   "compile-devDependencies" : [

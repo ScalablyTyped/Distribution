@@ -11,9 +11,6 @@ object chanceStrings {
   sealed trait Asterisk extends LastNameNationalities
   
   @js.native
-  sealed trait Chance extends js.Object
-  
-  @js.native
   sealed trait Colon extends js.Object
   
   @js.native
@@ -124,8 +121,6 @@ object chanceStrings {
   
   @scala.inline
   def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
-  @scala.inline
-  def Chance: Chance = "Chance".asInstanceOf[Chance]
   @scala.inline
   def Colon: Colon = ":".asInstanceOf[Colon]
   @scala.inline

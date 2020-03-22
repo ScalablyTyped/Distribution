@@ -2,7 +2,7 @@ package typings.escpos.mod
 
 import typings.escpos.AnonColors
 import typings.escpos.AnonData
-import typings.escpos.AnonDataHeight
+import typings.escpos.AnonHeight
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,7 +15,7 @@ class Image protected () extends js.Object {
   def size(): AnonColors = js.native
   def toBitmap(): AnonData = js.native
   def toBitmap(density: Double): AnonData = js.native
-  def toRaster(): AnonDataHeight = js.native
+  def toRaster(): AnonHeight = js.native
 }
 
 /* static members */

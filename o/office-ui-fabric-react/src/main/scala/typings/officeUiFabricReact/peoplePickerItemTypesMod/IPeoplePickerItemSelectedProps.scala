@@ -1,7 +1,6 @@
 package typings.officeUiFabricReact.peoplePickerItemTypesMod
 
-import typings.officeUiFabricReact.AnonValidationState
-import typings.officeUiFabricReact.personaTypesMod.IPersonaProps
+import typings.officeUiFabricReact.IPersonaPropsValidationSt
 import typings.officeUiFabricReact.pickerItemTypesMod.IPickerItemProps
 import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricStyling.ithemeMod.ITheme
@@ -10,7 +9,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.officeUiFabricReact.peoplePickerItemTypesMod.IPeoplePickerItemSharedProps because var conflicts: className. Inlined theme */ trait IPeoplePickerItemSelectedProps extends IPickerItemProps[IPersonaProps with AnonValidationState] {
+- typings.officeUiFabricReact.peoplePickerItemTypesMod.IPeoplePickerItemSharedProps because var conflicts: className. Inlined theme */ trait IPeoplePickerItemSelectedProps extends IPickerItemProps[IPersonaPropsValidationSt] {
   /** Call to provide customized styling that will layer on top of the variant rules. */
   var styles: js.UndefOr[
     IStyleFunctionOrObject[IPeoplePickerItemSelectedStyleProps, IPeoplePickerItemSelectedStyles]
@@ -22,7 +21,7 @@ import scala.scalajs.js.annotation._
 object IPeoplePickerItemSelectedProps {
   @scala.inline
   def apply(
-    IPickerItemProps: IPickerItemProps[IPersonaProps with AnonValidationState],
+    IPickerItemProps: IPickerItemProps[IPersonaPropsValidationSt],
     styles: IStyleFunctionOrObject[IPeoplePickerItemSelectedStyleProps, IPeoplePickerItemSelectedStyles] = null,
     theme: ITheme = null
   ): IPeoplePickerItemSelectedProps = {

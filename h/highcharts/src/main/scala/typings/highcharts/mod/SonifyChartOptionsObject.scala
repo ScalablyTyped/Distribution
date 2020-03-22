@@ -20,7 +20,7 @@ trait SonifyChartOptionsObject extends js.Object {
     * of point data properties to objects with min/max values: (see online
     * documentation for example)
     */
-  var dataExtremes: js.UndefOr[js.Object] = js.undefined
+  var dataExtremes: js.UndefOr[Dictionary[RangeObject]] = js.undefined
   /**
     * Duration for sonifying the entire chart. The duration is distributed
     * across the different series intelligently, but does not take earcons
@@ -98,7 +98,7 @@ object SonifyChartOptionsObject {
     ]),
     pointPlayTime: String | js.Function,
     afterSeriesWait: Int | Double = null,
-    dataExtremes: js.Object = null,
+    dataExtremes: Dictionary[RangeObject] = null,
     earcons: js.Array[typings.highcharts.sonificationMod.highchartsAugmentingMod.EarconConfiguration] = null,
     instruments: js.Array[typings.highcharts.sonificationMod.highchartsAugmentingMod.PointInstrumentObject] = null,
     onEnd: js.Function = null,

@@ -1,7 +1,7 @@
 package typings.fabric.fabricImplMod
 
 import typings.fabric.AnonAngle
-import typings.fabric.AnonAngleFlipX
+import typings.fabric.AnonFlipX
 import typings.fabric.AnonX
 import typings.std.CanvasRenderingContext2D
 import typings.std.HTMLCanvasElement
@@ -187,7 +187,7 @@ trait IUtilMisc extends js.Object {
   	 * @param  {fabric.Object} target object to read from
   	 * @return {Object} Components of transform
   	 */
-  def saveObjectTransform(target: Object): AnonAngleFlipX = js.native
+  def saveObjectTransform(target: Object): AnonFlipX = js.native
   /**
   	 * A wrapper around Number#toFixed, which contrary to native method returns number, not string.
   	 * @param number number to operate on

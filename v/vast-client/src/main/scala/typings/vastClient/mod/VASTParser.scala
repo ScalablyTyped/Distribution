@@ -2,12 +2,8 @@ package typings.vastClient.mod
 
 import typings.node.eventsMod.EventEmitter
 import typings.std.Document_
-import typings.std.Exclude
-import typings.std.Pick
-import typings.vastClient.vastClientStrings.ERRORCODE
-import typings.vastClient.vastClientStrings.ERRORMESSAGE
-import typings.vastClient.vastClientStrings.extensions
-import typings.vastClient.vastClientStrings.system
+import typings.vastClient.PickVastErrorERRORCODE
+import typings.vastClient.PickVastErrorExcludekeyof
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -112,8 +108,8 @@ class VASTParser () extends EventEmitter {
     * An Array of url templates to use to make the tracking call
     */
   urlTemplates: js.Array[String],
-    errorCode: Pick[VastError, ERRORCODE],
-    data: (Pick[VastError, Exclude[ERRORCODE | ERRORMESSAGE | extensions | system, ERRORCODE]])*
+    errorCode: PickVastErrorERRORCODE,
+    data: PickVastErrorExcludekeyof*
   ): Unit = js.native
 }
 

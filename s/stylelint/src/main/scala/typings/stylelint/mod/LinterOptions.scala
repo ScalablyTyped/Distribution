@@ -1,6 +1,6 @@
 package typings.stylelint.mod
 
-import typings.std.Partial
+import typings.stylelint.PartialConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,10 +10,10 @@ trait LinterOptions extends js.Object {
   var cacheLocation: String
   var code: String
   var codeFilename: String
-  var config: Partial[Configuration]
+  var config: PartialConfiguration
   var configBasedir: String
   var configFile: String
-  var configOverrides: Partial[Configuration]
+  var configOverrides: PartialConfiguration
   var customSyntax: String
   var disableDefaultIgnores: Boolean
   var files: String | js.Array[String]
@@ -33,10 +33,10 @@ object LinterOptions {
     cacheLocation: String,
     code: String,
     codeFilename: String,
-    config: Partial[Configuration],
+    config: PartialConfiguration,
     configBasedir: String,
     configFile: String,
-    configOverrides: Partial[Configuration],
+    configOverrides: PartialConfiguration,
     customSyntax: String,
     disableDefaultIgnores: Boolean,
     files: String | js.Array[String],

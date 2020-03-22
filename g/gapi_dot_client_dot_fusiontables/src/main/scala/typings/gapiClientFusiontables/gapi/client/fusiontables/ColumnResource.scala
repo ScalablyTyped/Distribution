@@ -2,8 +2,8 @@ package typings.gapiClientFusiontables.gapi.client.fusiontables
 
 import typings.gapiClient.gapi.client.Request_
 import typings.gapiClientFusiontables.AnonAlt
-import typings.gapiClientFusiontables.AnonAltFields
-import typings.gapiClientFusiontables.AnonAltFieldsKey
+import typings.gapiClientFusiontables.AnonFields
+import typings.gapiClientFusiontables.AnonKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,9 +14,9 @@ trait ColumnResource extends js.Object {
   /** Retrieves a specific column by its ID. */
   def get(request: AnonAlt): Request_[Column]
   /** Adds a new column to the table. */
-  def insert(request: AnonAltFields): Request_[Column]
+  def insert(request: AnonFields): Request_[Column]
   /** Retrieves a list of columns. */
-  def list(request: AnonAltFieldsKey): Request_[ColumnList]
+  def list(request: AnonKey): Request_[ColumnList]
   /** Updates the name or type of an existing column. This method supports patch semantics. */
   def patch(request: AnonAlt): Request_[Column]
   /** Updates the name or type of an existing column. */
@@ -28,8 +28,8 @@ object ColumnResource {
   def apply(
     delete: AnonAlt => Request_[Unit],
     get: AnonAlt => Request_[Column],
-    insert: AnonAltFields => Request_[Column],
-    list: AnonAltFieldsKey => Request_[ColumnList],
+    insert: AnonFields => Request_[Column],
+    list: AnonKey => Request_[ColumnList],
     patch: AnonAlt => Request_[Column],
     update: AnonAlt => Request_[Column]
   ): ColumnResource = {

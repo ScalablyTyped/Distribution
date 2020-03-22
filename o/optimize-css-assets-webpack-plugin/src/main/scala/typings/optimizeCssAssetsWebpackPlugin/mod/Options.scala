@@ -1,6 +1,6 @@
 package typings.optimizeCssAssetsWebpackPlugin.mod
 
-import typings.optimizeCssAssetsWebpackPlugin.AnonCss
+import typings.optimizeCssAssetsWebpackPlugin.AnonProcess
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -29,7 +29,7 @@ trait Options extends js.Object {
     *
     * @default cssnano
     */
-  var cssProcessor: js.UndefOr[AnonCss] = js.undefined
+  var cssProcessor: js.UndefOr[AnonProcess] = js.undefined
   /**
     * The options passed to the `cssProcessor`.
     *
@@ -49,7 +49,7 @@ object Options {
   def apply(
     assetNameRegExp: RegExp = null,
     canPrint: js.UndefOr[Boolean] = js.undefined,
-    cssProcessor: AnonCss = null,
+    cssProcessor: AnonProcess = null,
     cssProcessorOptions: js.Object = null,
     cssProcessorPluginOptions: js.Object = null
   ): Options = {

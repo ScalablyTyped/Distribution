@@ -25,7 +25,7 @@ trait DescribeIpv6PoolsRequest extends js.Object {
   /**
     * The IDs of the IPv6 address pools.
     */
-  var PoolIds: js.UndefOr[ValueStringList] = js.native
+  var PoolIds: js.UndefOr[Ipv6PoolIdList] = js.native
 }
 
 object DescribeIpv6PoolsRequest {
@@ -35,7 +35,7 @@ object DescribeIpv6PoolsRequest {
     Filters: FilterList = null,
     MaxResults: Int | scala.Double = null,
     NextToken: NextToken = null,
-    PoolIds: ValueStringList = null
+    PoolIds: Ipv6PoolIdList = null
   ): DescribeIpv6PoolsRequest = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])

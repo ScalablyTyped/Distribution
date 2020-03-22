@@ -4,8 +4,9 @@ import typings.jupyterlabCodeeditor.editorMod.CodeEditor.ITextSelection
 import typings.jupyterlabObservables.modeldbMod.IModelDB
 import typings.jupyterlabObservables.observablemapMod.IObservableMap
 import typings.jupyterlabObservables.observablestringMod.IObservableString
-import typings.phosphorCoreutils.jsonMod.JSONValue
-import typings.phosphorSignaling.mod.ISignal
+import typings.luminoCoreutils.jsonMod.PartialJSONValue
+import typings.luminoCoreutils.jsonMod.ReadonlyPartialJSONValue
+import typings.luminoSignaling.mod.ISignal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,20 +33,20 @@ object ICodeModel {
     defaultKernelName: String,
     dirty: Boolean,
     dispose: () => Unit,
-    fromJSON: js.Any => Unit,
+    fromJSON: ReadonlyPartialJSONValue => Unit,
     fromString: String => Unit,
     initialize: () => Unit,
     isDisposed: Boolean,
     mimeType: String,
     mimeTypeChanged: ISignal[
       typings.jupyterlabCodeeditor.editorMod.CodeEditor.IModel, 
-      typings.jupyterlabCoreutils.interfacesMod.IChangedArgs[String, String]
+      typings.jupyterlabCoreutils.interfacesMod.IChangedArgs[String, String, String]
     ],
     modelDB: IModelDB,
     readOnly: Boolean,
     selections: IObservableMap[js.Array[ITextSelection]],
-    stateChanged: ISignal[ICodeModel, typings.jupyterlabCoreutils.interfacesMod.IChangedArgs[_, String]],
-    toJSON: () => JSONValue,
+    stateChanged: ISignal[ICodeModel, typings.jupyterlabCoreutils.interfacesMod.IChangedArgs[_, _, String]],
+    toJSON: () => PartialJSONValue,
     value: IObservableString
   ): ICodeModel = {
     val __obj = js.Dynamic.literal(contentChanged = contentChanged.asInstanceOf[js.Any], defaultKernelLanguage = defaultKernelLanguage.asInstanceOf[js.Any], defaultKernelName = defaultKernelName.asInstanceOf[js.Any], dirty = dirty.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), fromJSON = js.Any.fromFunction1(fromJSON), fromString = js.Any.fromFunction1(fromString), initialize = js.Any.fromFunction0(initialize), isDisposed = isDisposed.asInstanceOf[js.Any], mimeType = mimeType.asInstanceOf[js.Any], mimeTypeChanged = mimeTypeChanged.asInstanceOf[js.Any], modelDB = modelDB.asInstanceOf[js.Any], readOnly = readOnly.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any], stateChanged = stateChanged.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON), value = value.asInstanceOf[js.Any])

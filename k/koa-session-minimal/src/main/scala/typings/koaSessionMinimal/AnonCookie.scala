@@ -1,7 +1,7 @@
 package typings.koaSessionMinimal
 
 import typings.cookies.mod.IOptions
-import typings.koaSessionMinimal.mod.koaAugmentingMod.Context
+import typings.koa.mod.Context
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -3,8 +3,8 @@ package typings.textBuffer.mod._Global_.TextBuffer
 import typings.eventKit.mod.Disposable
 import typings.pathwatcher.mod.File
 import typings.std.RegExp
-import typings.textBuffer.AnonExclusiveInside
-import typings.textBuffer.AnonExclusiveInsideInvalidate
+import typings.textBuffer.AnonExclusiveInvalidate
+import typings.textBuffer.AnonInvalidate
 import typings.textBuffer.AnonMaintainHistory
 import typings.textBuffer.AnonNewExtent
 import typings.textBuffer.AnonNormalizeLineEndings
@@ -213,10 +213,10 @@ trait TextBuffer extends js.Object {
   def lineLengthForRow(row: Double): Double = js.native
   /** Create a marker at the given position with no tail in the default marker layer. */
   def markPosition(position: PointCompatible): Marker = js.native
-  def markPosition(position: PointCompatible, options: AnonExclusiveInsideInvalidate): Marker = js.native
+  def markPosition(position: PointCompatible, options: AnonExclusiveInvalidate): Marker = js.native
   /** Create a marker with the given range in the default marker layer. */
   def markRange(range: RangeCompatible): Marker = js.native
-  def markRange(range: RangeCompatible, properties: AnonExclusiveInside): Marker = js.native
+  def markRange(range: RangeCompatible, properties: AnonInvalidate): Marker = js.native
   /**
     *  Given a row, find the next row that's not blank.
     *  Returns a number or null if there's no next non-blank row.

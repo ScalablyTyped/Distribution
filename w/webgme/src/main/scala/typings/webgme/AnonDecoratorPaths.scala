@@ -29,7 +29,7 @@ trait AnonDecoratorPaths extends js.Object {
     * (directory name must be present in any of the provided base-paths).
     * 
     */
-  var layout: AnonBasePathsDefault
+  var layout: AnonDefault
   /**
     * Array of base paths that will be mapped from 'panels' in requirejs.
     * 
@@ -55,7 +55,7 @@ object AnonDecoratorPaths {
   def apply(
     decoratorPaths: js.Array[String],
     extraCss: js.Array[String],
-    layout: AnonBasePathsDefault,
+    layout: AnonDefault,
     panelPaths: js.Array[String],
     svgDirs: js.Array[String],
     visualizerDescriptors: js.Array[String],

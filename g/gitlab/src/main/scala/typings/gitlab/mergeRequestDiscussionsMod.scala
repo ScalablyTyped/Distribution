@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object mergeRequestDiscussionsMod extends js.Object {
   @js.native
-  class MergeRequestDiscussions () extends ResourceDiscussions {
+  class MergeRequestDiscussions protected () extends ResourceDiscussions {
     def this(options: BaseServiceOptions) = this()
   }
   

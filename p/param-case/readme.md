@@ -1,7 +1,7 @@
 
 # Scala.js typings for param-case
 
-Typings are for version 2.1.1
+Typings are for version 3.0.3
 
 ## Library description:
 Transform into a lower cased string with dashes between words

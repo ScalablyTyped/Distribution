@@ -1,6 +1,6 @@
 package typings.forgeApis.mod
 
-import typings.forgeApis.AnonFilterExtensionTypeFilterIdArray
+import typings.forgeApis.AnonFilterExtensionTypeFilterId
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,6 +15,6 @@ class HubsApi () extends js.Object {
   /**
     * Returns a collection of accessible hubs for this member. A Hub represents an A360 Team/Personal hub or a BIM 360 account.
     */
-  def getHubs(opts: AnonFilterExtensionTypeFilterIdArray, oauth2Client: AuthClient, credentials: AuthToken): js.Promise[ApiResponse] = js.native
+  def getHubs(opts: AnonFilterExtensionTypeFilterId, oauth2Client: AuthClient, credentials: AuthToken): js.Promise[ApiResponse] = js.native
 }
 

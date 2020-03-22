@@ -1,7 +1,7 @@
 package typings.easyXapiSupertest.fsMod
 
-import typings.easyXapiSupertest.AnonEncoding
 import typings.easyXapiSupertest.AnonFlag
+import typings.easyXapiSupertest.AnonFlagString
 import typings.easyXapiSupertest.NodeJS.ErrnoException
 import typings.node.Buffer
 import scala.scalajs.js
@@ -19,13 +19,13 @@ object readFile extends js.Object {
   ): Unit = js.native
   def apply(
     filename: String,
-    options: AnonEncoding,
-    callback: js.Function2[/* err */ ErrnoException, /* data */ String, Unit]
+    options: AnonFlagString,
+    callback: js.Function2[/* err */ ErrnoException, /* data */ Buffer, Unit]
   ): Unit = js.native
   def apply(
     filename: String,
     options: AnonFlag,
-    callback: js.Function2[/* err */ ErrnoException, /* data */ Buffer, Unit]
+    callback: js.Function2[/* err */ ErrnoException, /* data */ String, Unit]
   ): Unit = js.native
 }
 

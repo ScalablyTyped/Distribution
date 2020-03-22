@@ -2,9 +2,9 @@ package typings.vinyl.mod
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
-import typings.vinyl.AnonContents
-import typings.vinyl.AnonContentsBuffer
-import typings.vinyl.AnonContentsReadableStream
+import typings.vinyl.ConstructorOptionscontent
+import typings.vinyl.ConstructorOptionscontentBase
+import typings.vinyl.ConstructorOptionscontentDictcustomOption
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 trait FileConstructor
   extends Instantiable0[typings.std.File]
      with Instantiable1[
-      (/* options */ ConstructorOptions with AnonContents) | (/* options */ ConstructorOptions with AnonContentsBuffer) | (/* options */ ConstructorOptions with AnonContentsReadableStream) | (/* options */ ConstructorOptions), 
+      (/* options */ ConstructorOptions) | (/* options */ ConstructorOptionscontent) | (/* options */ ConstructorOptionscontentBase) | (/* options */ ConstructorOptionscontentDictcustomOption), 
       BufferFile | typings.std.File | NullFile | StreamFile
     ] {
   /**

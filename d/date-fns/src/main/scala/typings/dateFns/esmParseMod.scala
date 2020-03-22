@@ -15,26 +15,26 @@ object esmParseMod extends js.Object {
       dateString: String,
       formatString: String,
       backupDate: Double,
-      options: Anon01234567FirstWeekContainsDateLocaleUseAdditionalDayOfYearTokens
+      options: AnonUseAdditionalDayOfYearTokensUseAdditionalWeekYearTokens
     ): Date = js.native
     def apply(
       dateString: String,
       formatString: String,
       backupDate: Double,
-      options: Anon01234567FirstWeekContainsDateLocaleUseAdditionalDayOfYearTokensUseAdditionalWeekYearTokens
+      options: AnonUseAdditionalWeekYearTokensWeekStartsOn
     ): Date = js.native
     def apply(dateString: String, formatString: String, backupDate: Date): Date = js.native
     def apply(
       dateString: String,
       formatString: String,
       backupDate: Date,
-      options: Anon01234567FirstWeekContainsDateLocaleUseAdditionalDayOfYearTokens
+      options: AnonUseAdditionalDayOfYearTokensUseAdditionalWeekYearTokens
     ): Date = js.native
     def apply(
       dateString: String,
       formatString: String,
       backupDate: Date,
-      options: Anon01234567FirstWeekContainsDateLocaleUseAdditionalDayOfYearTokensUseAdditionalWeekYearTokens
+      options: AnonUseAdditionalWeekYearTokensWeekStartsOn
     ): Date = js.native
   }
   

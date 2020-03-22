@@ -1,7 +1,6 @@
 package typings.reactDropzone.mod
 
 import typings.react.mod.DragEvent
-import typings.react.mod.DragEventHandler
 import typings.react.mod._Global_.JSX.Element
 import typings.std.DataTransferItem
 import typings.std.File
@@ -10,36 +9,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined parent react-dropzone.react-dropzone.DropzoneOptions */
-trait DropzoneProps extends js.Object {
-  var accept: js.UndefOr[String | js.Array[String]] = js.undefined
+trait DropzoneProps extends DropzoneOptions {
   var children: js.UndefOr[js.Function1[/* state */ DropzoneState, Element]] = js.undefined
-  var disabled: js.UndefOr[Boolean] = js.undefined
-  var getFilesFromEvent: js.UndefOr[
-    js.Function1[/* event */ DropEvent, js.Promise[js.Array[File | DataTransferItem]]]
-  ] = js.undefined
-  var maxSize: js.UndefOr[Double] = js.undefined
-  var minSize: js.UndefOr[Double] = js.undefined
-  var multiple: js.UndefOr[Boolean] = js.undefined
-  var noClick: js.UndefOr[Boolean] = js.undefined
-  var noDrag: js.UndefOr[Boolean] = js.undefined
-  var noDragEventsBubbling: js.UndefOr[Boolean] = js.undefined
-  var noKeyboard: js.UndefOr[Boolean] = js.undefined
-  var onDragEnter: js.UndefOr[DragEventHandler[HTMLElement]] = js.undefined
-  var onDragLeave: js.UndefOr[DragEventHandler[HTMLElement]] = js.undefined
-  var onDragOver: js.UndefOr[DragEventHandler[HTMLElement]] = js.undefined
-  var onDrop: js.UndefOr[
-    js.Function3[
-      /* acceptedFiles */ js.Array[File], 
-      /* rejectedFiles */ js.Array[File], 
-      /* event */ DropEvent, 
-      Unit
-    ]
-  ] = js.undefined
-  var onDropAccepted: js.UndefOr[js.Function2[/* files */ js.Array[File], /* event */ DropEvent, Unit]] = js.undefined
-  var onDropRejected: js.UndefOr[js.Function2[/* files */ js.Array[File], /* event */ DropEvent, Unit]] = js.undefined
-  var onFileDialogCancel: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var preventDropOnDocument: js.UndefOr[Boolean] = js.undefined
 }
 
 object DropzoneProps {

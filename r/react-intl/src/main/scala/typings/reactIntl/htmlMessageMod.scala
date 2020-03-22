@@ -19,7 +19,7 @@ object htmlMessageMod extends js.Object {
   /* static members */
   @js.native
   object default extends js.Object {
-    var defaultProps: AnonSpan = js.native
+    var defaultProps: AnonTagName = js.native
     var displayName: String = js.native
   }
   

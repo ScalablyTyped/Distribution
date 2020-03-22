@@ -58,7 +58,6 @@ import typings.graphql.tokenKindMod._TokenKind
 import typings.graphql.typeInfoMod.TypeInfo
 import typings.graphql.visitorMod.VisitFn
 import typings.graphql.visitorMod.Visitor
-import typings.graphql.visitorMod.VisitorKeyMap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -126,7 +125,7 @@ object languageMod extends js.Object {
       EnumValueDefinitionNode | ObjectValueNode | FieldDefinitionNode | SchemaDefinitionNode | InputObjectTypeDefinitionNode | DocumentNode | DirectiveDefinitionNode | InputValueDefinitionNode | ListValueNode | ScalarTypeDefinitionNode | IntValueNode | OperationDefinitionNode | ArgumentNode | FragmentDefinitionNode | OperationTypeDefinitionNode | FieldNode | StringValueNode | NameNode | ObjectFieldNode | EnumValueNode | SchemaExtensionNode | UnionTypeExtensionNode | VariableDefinitionNode | VariableNode | ObjectTypeDefinitionNode | EnumTypeExtensionNode | InterfaceTypeDefinitionNode | FloatValueNode | NonNullTypeNode | DirectiveNode | SelectionSetNode | InputObjectTypeExtensionNode | ScalarTypeExtensionNode | UnionTypeDefinitionNode | NullValueNode | InterfaceTypeExtensionNode | InlineFragmentNode | EnumTypeDefinitionNode | NamedTypeNode | BooleanValueNode | ListTypeNode | ObjectTypeExtensionNode | FragmentSpreadNode
     ],
      // default: QueryDocumentKeys
-  visitorKeys: VisitorKeyMap[ASTKindToNode]
+  visitorKeys: VisitorKeyMapASTKindToNod
   ): js.Any = js.native
   def visitInParallel(
     visitors: js.Array[

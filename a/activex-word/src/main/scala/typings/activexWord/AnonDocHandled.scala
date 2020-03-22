@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait AnonDocHandled extends js.Object {
   val Doc: Document
-  val Handled: Boolean
+  var Handled: Boolean
 }
 
 object AnonDocHandled {

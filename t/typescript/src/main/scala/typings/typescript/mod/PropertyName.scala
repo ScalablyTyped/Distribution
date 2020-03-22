@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
   - typings.typescript.mod.StringLiteral
   - typings.typescript.mod.NumericLiteral
   - typings.typescript.mod.ComputedPropertyName
+  - typings.typescript.mod.PrivateIdentifier
 */
 trait PropertyName extends js.Object
 

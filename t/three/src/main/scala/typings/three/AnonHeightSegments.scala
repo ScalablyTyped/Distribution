@@ -5,27 +5,29 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonHeightSegments extends js.Object {
+  var height: Double
   var heightSegments: Double
-  var phiLength: Double
-  var phiStart: Double
-  var radius: Double
+  var openEnded: Boolean
+  var radialSegments: Double
+  var radiusBottom: Double
+  var radiusTop: Double
   var thetaLength: Double
   var thetaStart: Double
-  var widthSegments: Double
 }
 
 object AnonHeightSegments {
   @scala.inline
   def apply(
+    height: Double,
     heightSegments: Double,
-    phiLength: Double,
-    phiStart: Double,
-    radius: Double,
+    openEnded: Boolean,
+    radialSegments: Double,
+    radiusBottom: Double,
+    radiusTop: Double,
     thetaLength: Double,
-    thetaStart: Double,
-    widthSegments: Double
+    thetaStart: Double
   ): AnonHeightSegments = {
-    val __obj = js.Dynamic.literal(heightSegments = heightSegments.asInstanceOf[js.Any], phiLength = phiLength.asInstanceOf[js.Any], phiStart = phiStart.asInstanceOf[js.Any], radius = radius.asInstanceOf[js.Any], thetaLength = thetaLength.asInstanceOf[js.Any], thetaStart = thetaStart.asInstanceOf[js.Any], widthSegments = widthSegments.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], heightSegments = heightSegments.asInstanceOf[js.Any], openEnded = openEnded.asInstanceOf[js.Any], radialSegments = radialSegments.asInstanceOf[js.Any], radiusBottom = radiusBottom.asInstanceOf[js.Any], radiusTop = radiusTop.asInstanceOf[js.Any], thetaLength = thetaLength.asInstanceOf[js.Any], thetaStart = thetaStart.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AnonHeightSegments]
   }

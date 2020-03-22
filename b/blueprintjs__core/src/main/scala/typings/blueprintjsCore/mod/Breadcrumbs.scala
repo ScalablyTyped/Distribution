@@ -1,7 +1,6 @@
 package typings.blueprintjsCore.mod
 
-import typings.blueprintjsCore.breadcrumbsMod.IBreadcrumbsProps
-import typings.std.Partial
+import typings.blueprintjsCore.PartialIBreadcrumbsProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,6 +14,6 @@ class Breadcrumbs ()
 @JSImport("@blueprintjs/core", "Breadcrumbs")
 @js.native
 object Breadcrumbs extends js.Object {
-  var defaultProps: Partial[IBreadcrumbsProps] = js.native
+  var defaultProps: PartialIBreadcrumbsProps = js.native
 }
 

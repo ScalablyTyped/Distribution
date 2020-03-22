@@ -1,7 +1,7 @@
 package typings.cypress.sinonMod
 
 import typings.cypress.AnonCreate
-import typings.std.Partial
+import typings.cypress.PartialSinonSandboxConfig
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 trait SinonApi extends js.Object {
   var FakeXMLHttpRequest: SinonFakeXMLHttpRequestStatic = js.native
   var clock: AnonCreate = js.native
-  var defaultConfig: Partial[SinonSandboxConfig] = js.native
+  var defaultConfig: PartialSinonSandboxConfig = js.native
   var expectation: SinonExpectationStatic = js.native
   var fakeServer: SinonFakeServerStatic = js.native
   var fakeServerWithClock: SinonFakeServerStatic = js.native
@@ -24,7 +24,7 @@ trait SinonApi extends js.Object {
     * @param config
     */
   def createSandbox(): SinonSandbox = js.native
-  def createSandbox(config: Partial[SinonSandboxConfig]): SinonSandbox = js.native
+  def createSandbox(config: PartialSinonSandboxConfig): SinonSandbox = js.native
   /**
     * Creates a basic fake, with no behavior
     */

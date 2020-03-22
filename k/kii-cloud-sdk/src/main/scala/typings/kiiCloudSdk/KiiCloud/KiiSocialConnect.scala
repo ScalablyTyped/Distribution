@@ -1,6 +1,6 @@
 package typings.kiiCloudSdk.KiiCloud
 
-import typings.kiiCloudSdk.AnonAnErrorStringFailureNetwork
+import typings.kiiCloudSdk.Anon27
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -239,11 +239,7 @@ object KiiSocialConnect extends js.Object {
     *      );
     */
   def linkCurrentUserWithNetwork(networkName: KiiSocialNetworkName, options: KiiSocialConnectOptions): js.Promise[js.Tuple2[KiiUser, KiiSocialNetworkName]] = js.native
-  def linkCurrentUserWithNetwork(
-    networkName: KiiSocialNetworkName,
-    options: KiiSocialConnectOptions,
-    callbacks: AnonAnErrorStringFailureNetwork
-  ): js.Promise[js.Tuple2[KiiUser, KiiSocialNetworkName]] = js.native
+  def linkCurrentUserWithNetwork(networkName: KiiSocialNetworkName, options: KiiSocialConnectOptions, callbacks: Anon27): js.Promise[js.Tuple2[KiiUser, KiiSocialNetworkName]] = js.native
   /**
     * Log a user into the social network provided
     *
@@ -412,11 +408,7 @@ object KiiSocialConnect extends js.Object {
     *      );
     */
   def logIn(networkName: KiiSocialNetworkName, options: KiiSocialConnectOptions): js.Promise[js.Tuple2[KiiUser, KiiSocialNetworkName]] = js.native
-  def logIn(
-    networkName: KiiSocialNetworkName,
-    options: KiiSocialConnectOptions,
-    callbacks: AnonAnErrorStringFailureNetwork
-  ): js.Promise[js.Tuple2[KiiUser, KiiSocialNetworkName]] = js.native
+  def logIn(networkName: KiiSocialNetworkName, options: KiiSocialConnectOptions, callbacks: Anon27): js.Promise[js.Tuple2[KiiUser, KiiSocialNetworkName]] = js.native
   /**
     *
     *
@@ -595,6 +587,6 @@ object KiiSocialConnect extends js.Object {
     *      );
     */
   def unLinkCurrentUserFromNetwork(networkName: KiiSocialNetworkName): js.Promise[js.Tuple2[KiiUser, KiiSocialNetworkName]] = js.native
-  def unLinkCurrentUserFromNetwork(networkName: KiiSocialNetworkName, callbacks: AnonAnErrorStringFailureNetwork): js.Promise[js.Tuple2[KiiUser, KiiSocialNetworkName]] = js.native
+  def unLinkCurrentUserFromNetwork(networkName: KiiSocialNetworkName, callbacks: Anon27): js.Promise[js.Tuple2[KiiUser, KiiSocialNetworkName]] = js.native
 }
 

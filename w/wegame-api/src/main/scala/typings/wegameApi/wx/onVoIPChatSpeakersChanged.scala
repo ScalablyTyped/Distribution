@@ -1,6 +1,6 @@
 package typings.wegameApi.wx
 
-import typings.wegameApi.AnonErrCodeErrMsg
+import typings.wegameApi.AnonOpenIdList
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,6 +12,6 @@ object onVoIPChatSpeakersChanged extends js.Object {
     * 监听实时语音通话成员通话状态变化事件。有成员开始/停止说话时触发回调
     * @param callback 实时语音通话成员通话状态变化事件的回调函数
     */
-  def apply(callback: js.Function1[/* res */ AnonErrCodeErrMsg, Unit]): Unit = js.native
+  def apply(callback: js.Function1[/* res */ AnonOpenIdList, Unit]): Unit = js.native
 }
 

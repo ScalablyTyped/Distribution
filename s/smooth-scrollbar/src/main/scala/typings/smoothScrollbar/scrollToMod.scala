@@ -1,8 +1,6 @@
 package typings.smoothScrollbar
 
-import typings.smoothScrollbar.scrollbarMod.ScrollToOptions
 import typings.smoothScrollbar.scrollbarMod.Scrollbar
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +15,7 @@ object scrollToMod extends js.Object {
     x: Double,
     y: Double,
     duration: Double,
-    hasEasingCallback: Partial[ScrollToOptions]
+    hasEasingCallback: PartialScrollToOptionsCallback
   ): Unit = js.native
 }
 

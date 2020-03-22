@@ -34,7 +34,7 @@ object localTestRemoteDocumentCacheMod extends js.Object {
     def getDocumentsMatchingQuery(query: Query, sinceReadTime: SnapshotVersion): js.Promise[DocumentMap_] = js.native
     def getEntries(documentKeys: DocumentKeySet_): js.Promise[NullableMaybeDocumentMap_] = js.native
     def getEntry(documentKey: DocumentKey): js.Promise[MaybeDocument | Null] = js.native
-    def getNewDocumentChanges(sinceReadTime: SnapshotVersion): js.Promise[AnonChangedDocsReadTime] = js.native
+    def getNewDocumentChanges(sinceReadTime: SnapshotVersion): js.Promise[AnonReadTime] = js.native
     def getSize(): js.Promise[Double] = js.native
     def newChangeBuffer(): RemoteDocumentChangeBuffer = js.native
     def newChangeBuffer(options: AnonTrackRemovals): RemoteDocumentChangeBuffer = js.native

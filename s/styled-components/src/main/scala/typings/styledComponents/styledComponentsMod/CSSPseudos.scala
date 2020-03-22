@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation._
 
 /* Inlined {[ K in csstype.csstype.Pseudos ]:? styled-components.styled-components.CSSObject} */
 trait CSSPseudos extends js.Object {
+  @JSName(":-khtml-any-link")
+  var `Colon-khtml-any-link`: js.UndefOr[CSSObject] = js.undefined
   @JSName(":-moz-any-link")
   var `Colon-moz-any-link`: js.UndefOr[CSSObject] = js.undefined
   @JSName(":-moz-any()")
@@ -229,6 +231,7 @@ trait CSSPseudos extends js.Object {
 object CSSPseudos {
   @scala.inline
   def apply(
+    `Colon-khtml-any-link`: CSSObject = null,
     `Colon-moz-any-link`: CSSObject = null,
     `Colon-moz-anyLeftparenthesisRightparenthesis`: CSSObject = null,
     `Colon-moz-dir`: CSSObject = null,
@@ -340,6 +343,7 @@ object CSSPseudos {
     Colonwhere: CSSObject = null
   ): CSSPseudos = {
     val __obj = js.Dynamic.literal()
+    if (`Colon-khtml-any-link` != null) __obj.updateDynamic(":-khtml-any-link")(`Colon-khtml-any-link`.asInstanceOf[js.Any])
     if (`Colon-moz-any-link` != null) __obj.updateDynamic(":-moz-any-link")(`Colon-moz-any-link`.asInstanceOf[js.Any])
     if (`Colon-moz-anyLeftparenthesisRightparenthesis` != null) __obj.updateDynamic(":-moz-any()")(`Colon-moz-anyLeftparenthesisRightparenthesis`.asInstanceOf[js.Any])
     if (`Colon-moz-dir` != null) __obj.updateDynamic(":-moz-dir")(`Colon-moz-dir`.asInstanceOf[js.Any])

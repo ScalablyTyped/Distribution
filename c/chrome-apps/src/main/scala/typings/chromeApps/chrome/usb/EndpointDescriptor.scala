@@ -2,8 +2,8 @@ package typings.chromeApps.chrome.usb
 
 import typings.chromeApps.AnonADAPTIVE
 import typings.chromeApps.AnonBULK
+import typings.chromeApps.AnonDATA_
 import typings.chromeApps.AnonIN
-import typings.chromeApps.Anon_DATA
 import typings.chromeApps.chrome.ToStringLiteral
 import typings.chromeApps.chrome.integer
 import typings.chromeApps.chromeAppsStrings.adaptive
@@ -63,7 +63,7 @@ trait EndpointDescriptor extends js.Object {
     */
   var usage: js.UndefOr[
     ToStringLiteral[
-      Anon_DATA, 
+      AnonDATA_, 
       String, 
       Exclude[String, notification | data | periodic | feedback | explicitFeedback]
     ]
@@ -81,7 +81,7 @@ object EndpointDescriptor {
     pollingInterval: Int | Double = null,
     synchronization: ToStringLiteral[AnonADAPTIVE, String, Exclude[String, asynchronous | adaptive | synchronous]] = null,
     usage: ToStringLiteral[
-      Anon_DATA, 
+      AnonDATA_, 
       String, 
       Exclude[String, notification | data | periodic | feedback | explicitFeedback]
     ] = null

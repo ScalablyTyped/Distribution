@@ -115,7 +115,7 @@ trait Node extends EventTarget {
   /**
     * Returns the previous sibling.
     */
-  val previousSibling: Node | Null = js.native
+  val previousSibling: ChildNode | Null = js.native
   var textContent: java.lang.String | Null = js.native
   def appendChild[T /* <: Node */](newChild: T): T = js.native
   /**

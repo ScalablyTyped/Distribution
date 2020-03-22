@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 object enSSMod extends js.Object {
   val default: js.Array[
     js.UndefOr[
-      String | Double | (js.Array[js.UndefOr[js.Array[String] | Double | String]]) | (js.Function1[/* n */ Double, Double]) | AnonGBPJPYSSP
+      String | Double | (js.Array[js.UndefOr[js.Array[String] | Double | String]]) | (js.Function1[/* n */ Double, Double]) | AnonSSP
     ]
   ] = js.native
 }

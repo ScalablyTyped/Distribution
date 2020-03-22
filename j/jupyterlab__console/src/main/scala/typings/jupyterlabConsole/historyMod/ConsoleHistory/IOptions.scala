@@ -1,6 +1,6 @@
 package typings.jupyterlabConsole.historyMod.ConsoleHistory
 
-import typings.jupyterlabApputils.clientsessionMod.IClientSession
+import typings.jupyterlabApputils.sessioncontextMod.ISessionContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,13 +12,13 @@ trait IOptions extends js.Object {
   /**
     * The client session used by the foreign handler.
     */
-  var session: IClientSession
+  var sessionContext: ISessionContext
 }
 
 object IOptions {
   @scala.inline
-  def apply(session: IClientSession): IOptions = {
-    val __obj = js.Dynamic.literal(session = session.asInstanceOf[js.Any])
+  def apply(sessionContext: ISessionContext): IOptions = {
+    val __obj = js.Dynamic.literal(sessionContext = sessionContext.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IOptions]
   }

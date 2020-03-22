@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ConnectionConfig extends js.Object {
+trait ConnectionConfig extends _StaticConnectionConfig {
   var database: String
   var debug: js.UndefOr[Boolean] = js.undefined
   var domain: js.UndefOr[String] = js.undefined

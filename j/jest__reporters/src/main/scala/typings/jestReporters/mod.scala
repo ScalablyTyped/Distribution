@@ -11,6 +11,7 @@ import typings.jestTestResult.typesMod.AssertionResult
 import typings.jestTestResult.typesMod.Suite
 import typings.jestTestResult.typesMod.TestResult
 import typings.jestTypes.configMod.GlobalConfig
+import typings.jestTypes.configMod.ProjectConfig
 import typings.std.Error
 import typings.std.Set
 import scala.scalajs.js
@@ -24,11 +25,7 @@ object mod extends js.Object {
   class BaseReporter ()
     extends typings.jestReporters.baseReporterMod.BaseReporter {
     /* CompleteClass */
-    /* protected */ override def _setError(error: Error): Unit = js.native
-    /* CompleteClass */
     override def getLastError(): Error | Unit = js.native
-    /* CompleteClass */
-    override def log(message: String): Unit = js.native
     /* CompleteClass */
     override def onRunComplete(contexts: Set[Context], results: AggregatedResult): js.Promise[Unit] | Unit = js.native
     /* CompleteClass */
@@ -78,6 +75,17 @@ object mod extends js.Object {
   object VerboseReporter extends js.Object {
     def filterTestResults(testResults: js.Array[AssertionResult]): js.Array[AssertionResult] = js.native
     def groupTestsBySuites(testResults: js.Array[AssertionResult]): Suite = js.native
+  }
+  
+  @js.native
+  object utils extends js.Object {
+    def formatTestPath(config: GlobalConfig, testPath: String): String = js.native
+    def formatTestPath(config: ProjectConfig, testPath: String): String = js.native
+    def printDisplayName(config: ProjectConfig): String = js.native
+    def relativePath(config: GlobalConfig, testPath: String): AnonBasename = js.native
+    def relativePath(config: ProjectConfig, testPath: String): AnonBasename = js.native
+    def trimAndFormatPath(pad: Double, config: GlobalConfig, testPath: String, columns: Double): String = js.native
+    def trimAndFormatPath(pad: Double, config: ProjectConfig, testPath: String, columns: Double): String = js.native
   }
   
 }

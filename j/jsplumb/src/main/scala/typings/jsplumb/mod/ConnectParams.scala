@@ -8,6 +8,7 @@ trait ConnectParams extends js.Object {
   var anchor: js.UndefOr[AnchorSpec] = js.undefined
   var anchors: js.UndefOr[js.Tuple2[AnchorSpec, AnchorSpec]] = js.undefined
   var connector: js.UndefOr[ConnectorSpec] = js.undefined
+  var cssClass: js.UndefOr[String] = js.undefined
   var deleteEndpointsOnDetach: js.UndefOr[Boolean] = js.undefined
   var detachable: js.UndefOr[Boolean] = js.undefined
   var endpoint: js.UndefOr[EndpointSpec] = js.undefined
@@ -24,6 +25,7 @@ object ConnectParams {
     anchor: AnchorSpec = null,
     anchors: js.Tuple2[AnchorSpec, AnchorSpec] = null,
     connector: ConnectorSpec = null,
+    cssClass: String = null,
     deleteEndpointsOnDetach: js.UndefOr[Boolean] = js.undefined,
     detachable: js.UndefOr[Boolean] = js.undefined,
     endpoint: EndpointSpec = null,
@@ -37,6 +39,7 @@ object ConnectParams {
     if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
     if (anchors != null) __obj.updateDynamic("anchors")(anchors.asInstanceOf[js.Any])
     if (connector != null) __obj.updateDynamic("connector")(connector.asInstanceOf[js.Any])
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
     if (!js.isUndefined(deleteEndpointsOnDetach)) __obj.updateDynamic("deleteEndpointsOnDetach")(deleteEndpointsOnDetach.asInstanceOf[js.Any])
     if (!js.isUndefined(detachable)) __obj.updateDynamic("detachable")(detachable.asInstanceOf[js.Any])
     if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])

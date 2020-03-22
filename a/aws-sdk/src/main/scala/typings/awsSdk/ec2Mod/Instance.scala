@@ -55,7 +55,7 @@ trait Instance extends js.Object {
     */
   var HibernationOptions: js.UndefOr[typings.awsSdk.ec2Mod.HibernationOptions] = js.native
   /**
-    * The hypervisor type of the instance.
+    * The hypervisor type of the instance. The value xen is used for both Xen and Nitro hypervisors.
     */
   var Hypervisor: js.UndefOr[HypervisorType] = js.native
   /**

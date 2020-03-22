@@ -1,7 +1,7 @@
 
 # Scala.js typings for typescript-collections
 
-Typings are for version 1.3.2
+Typings are for version 1.3.3
 
 ## Library description:
 A complete, fully tested data structure library written in TypeScript.

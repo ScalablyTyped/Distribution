@@ -1,6 +1,6 @@
 package typings.antDesignPro.miniAreaMod
 
-import typings.antDesignPro.AnonXY
+import typings.antDesignPro.AnonY
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ trait IMiniAreaProps extends js.Object {
   var animate: js.UndefOr[Boolean] = js.undefined
   var borderColor: js.UndefOr[String] = js.undefined
   var color: js.UndefOr[String] = js.undefined
-  var data: js.Array[AnonXY]
+  var data: js.Array[AnonY]
   var height: Double
   var line: js.UndefOr[Boolean] = js.undefined
   var xAxis: js.UndefOr[IAxis] = js.undefined
@@ -19,7 +19,7 @@ trait IMiniAreaProps extends js.Object {
 object IMiniAreaProps {
   @scala.inline
   def apply(
-    data: js.Array[AnonXY],
+    data: js.Array[AnonY],
     height: Double,
     animate: js.UndefOr[Boolean] = js.undefined,
     borderColor: String = null,

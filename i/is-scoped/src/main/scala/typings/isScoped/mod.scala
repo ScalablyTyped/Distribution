@@ -11,7 +11,7 @@ object mod extends js.Object {
   // declare function isScoped(input: string): boolean;
   // export = isScoped;
   @JSName("default")
-  var default_Original: AnonDefault = js.native
+  var default_Original: AnonCall = js.native
   /**
   	Check if a string is a [scoped npm package name](https://docs.npmjs.com/misc/scope).
   	@example

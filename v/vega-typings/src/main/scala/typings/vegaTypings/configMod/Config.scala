@@ -1,7 +1,7 @@
 package typings.vegaTypings.configMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.vegaTypings.AnonAny
+import typings.vegaTypings.AnonBind
 import typings.vegaTypings.autosizeMod.AutoSize
 import typings.vegaTypings.colorMod.Color
 import typings.vegaTypings.signalMod.InitSignal
@@ -13,11 +13,11 @@ import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped {[ P in keyof std.Record<vega-typings.vega-typings/types/spec/config.MarkConfigKeys, vega-typings.vega-typings/types/spec/config.MarkConfig> ]:? std.Record<vega-typings.vega-typings/types/spec/config.MarkConfigKeys, vega-typings.vega-typings/types/spec/config.MarkConfig>[P]}
-- Dropped {[ P in keyof std.Record<vega-typings.vega-typings/types/spec/config.AxisConfigKeys, vega-typings.vega-typings/types/spec/config.AxisConfig> ]:? std.Record<vega-typings.vega-typings/types/spec/config.AxisConfigKeys, vega-typings.vega-typings/types/spec/config.AxisConfig>[P]} */ trait Config extends js.Object {
+- Dropped {[ P in keyof vega-typings.RecordAxisConfigKeysAxisC ]:? vega-typings.RecordAxisConfigKeysAxisC[P]} */ trait Config extends js.Object {
   var autosize: js.UndefOr[AutoSize] = js.undefined
   var background: js.UndefOr[Null | Color | SignalRef] = js.undefined
    // TODO
-  var events: js.UndefOr[AnonAny] = js.undefined
+  var events: js.UndefOr[AnonBind] = js.undefined
   var group: js.UndefOr[js.Any] = js.undefined
   var legend: js.UndefOr[LegendConfig] = js.undefined
   var projection: js.UndefOr[ProjectionConfig] = js.undefined
@@ -32,7 +32,7 @@ object Config {
   def apply(
     autosize: AutoSize = null,
     background: Color | SignalRef = null,
-    events: AnonAny = null,
+    events: AnonBind = null,
     group: js.Any = null,
     legend: LegendConfig = null,
     projection: ProjectionConfig = null,

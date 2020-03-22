@@ -1,5 +1,7 @@
 package typings.ionicCore
 
+import typings.ionicCore.ionicCoreStrings.ios
+import typings.ionicCore.ionicCoreStrings.md
 import typings.ionicCore.menuInterfaceMod.MenuChangeEventDetail
 import typings.ionicCore.menuInterfaceMod.MenuI
 import typings.ionicCore.stencilCoreMod.ComponentInterface
@@ -27,6 +29,8 @@ object menuMod extends js.Object {
       * The content's id the menu should use.
       */
     var contentId: js.UndefOr[String] = js.native
+    var easing: js.Any = js.native
+    var easingReverse: js.Any = js.native
     var forceClosing: js.Any = js.native
     var gesture: js.UndefOr[js.Any] = js.native
     /**
@@ -58,7 +62,8 @@ object menuMod extends js.Object {
       * If a drag/swipe happens over this value, the menu is not triggered.
       */
     var maxEdgeStart: Double = js.native
-    var mode: js.Any = js.native
+    @JSName("mode")
+    var mode_Menu: ios | md = js.native
     var onEnd: js.Any = js.native
     var onMove: js.Any = js.native
     var onStart: js.Any = js.native

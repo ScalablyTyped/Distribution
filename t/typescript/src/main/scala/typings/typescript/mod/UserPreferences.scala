@@ -17,7 +17,7 @@ trait UserPreferences extends js.Object {
   val disableSuggestions: js.UndefOr[Boolean] = js.undefined
   /** Determines whether we import `foo/index.ts` as "foo", "foo/index", or "foo/index.js" */
   val importModuleSpecifierEnding: js.UndefOr[minimal | index | js_] = js.undefined
-  val importModuleSpecifierPreference: js.UndefOr[relative | `non-relative`] = js.undefined
+  val importModuleSpecifierPreference: js.UndefOr[auto | relative | `non-relative`] = js.undefined
   val includeAutomaticOptionalChainCompletions: js.UndefOr[Boolean] = js.undefined
   val includeCompletionsForModuleExports: js.UndefOr[Boolean] = js.undefined
   val includeCompletionsWithInsertText: js.UndefOr[Boolean] = js.undefined
@@ -31,7 +31,7 @@ object UserPreferences {
     allowTextChangesInNewFiles: js.UndefOr[Boolean] = js.undefined,
     disableSuggestions: js.UndefOr[Boolean] = js.undefined,
     importModuleSpecifierEnding: minimal | index | js_ = null,
-    importModuleSpecifierPreference: relative | `non-relative` = null,
+    importModuleSpecifierPreference: auto | relative | `non-relative` = null,
     includeAutomaticOptionalChainCompletions: js.UndefOr[Boolean] = js.undefined,
     includeCompletionsForModuleExports: js.UndefOr[Boolean] = js.undefined,
     includeCompletionsWithInsertText: js.UndefOr[Boolean] = js.undefined,

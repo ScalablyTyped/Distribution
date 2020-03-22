@@ -197,7 +197,7 @@ trait AnonChildrenVisibleMin extends js.Object {
   /**
     * @see https://echarts.apache.org/en/option.html#series-treemap.levels.emphasis
     */
-  var emphasis: js.UndefOr[AnonItemStyleLabelUpperLabel] = js.undefined
+  var emphasis: js.UndefOr[AnonUpperLabel] = js.undefined
   /**
     *
     * > Tps: In treemap, `itemStyle` attribute could appear in
@@ -219,7 +219,7 @@ trait AnonChildrenVisibleMin extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.levels.itemStyle
     */
-  var itemStyle: js.UndefOr[AnonBorderColorBorderColorSaturation] = js.undefined
+  var itemStyle: js.UndefOr[AnonBorderColorSaturation] = js.undefined
   /**
     * `label` decribes the style of the label in each node.
     *
@@ -242,7 +242,7 @@ trait AnonChildrenVisibleMin extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.levels.label
     */
-  var label: js.UndefOr[AnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEllipsis] = js.undefined
+  var label: js.UndefOr[AnonEllipsis] = js.undefined
   /**
     * `upperLabel` is used to specify whether show label when the
     * node has children. When
@@ -289,9 +289,7 @@ trait AnonChildrenVisibleMin extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.levels.upperLabel
     */
-  var upperLabel: js.UndefOr[
-    AnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEllipsisFontFamily
-  ] = js.undefined
+  var upperLabel: js.UndefOr[AnonTextShadowOffsetX] = js.undefined
   /**
     * A node will not be shown when its area size is smaller than
     * this value (unit: px square).
@@ -398,10 +396,10 @@ object AnonChildrenVisibleMin {
     colorAlpha: js.Array[_] = null,
     colorMappingBy: String = null,
     colorSaturation: Int | Double = null,
-    emphasis: AnonItemStyleLabelUpperLabel = null,
-    itemStyle: AnonBorderColorBorderColorSaturation = null,
-    label: AnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEllipsis = null,
-    upperLabel: AnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEllipsisFontFamily = null,
+    emphasis: AnonUpperLabel = null,
+    itemStyle: AnonBorderColorSaturation = null,
+    label: AnonEllipsis = null,
+    upperLabel: AnonTextShadowOffsetX = null,
     visibleMin: Int | Double = null,
     visualDimension: Int | Double = null,
     visualMax: Int | Double = null,

@@ -1,7 +1,7 @@
 package typings.rcMentions
 
-import typings.antDesignCreateReactContext.mod.ConsumerProps
-import typings.antDesignCreateReactContext.mod.ProviderProps
+import typings.react.mod.ConsumerProps
+import typings.react.mod.ProviderProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +22,7 @@ trait rcMentionsProps {
   @scala.inline
   def MentionsProps: typings.rcMentions.mentionsMod.MentionsProps.type = typings.rcMentions.mentionsMod.MentionsProps
   type MentionsProps = typings.rcMentions.mentionsMod.MentionsProps
-  @scala.inline
-  def MentionsContextConsumerProps: ConsumerProps.type = typings.antDesignCreateReactContext.mod.ConsumerProps
   type MentionsContextConsumerProps[T] = ConsumerProps[T]
-  @scala.inline
-  def MentionsContextProviderProps: ProviderProps.type = typings.antDesignCreateReactContext.mod.ProviderProps
   type MentionsContextProviderProps[T] = ProviderProps[T]
   @scala.inline
   def OptionProps: typings.rcMentions.optionMod.OptionProps.type = typings.rcMentions.optionMod.OptionProps

@@ -4,10 +4,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ContainerProps extends js.Object {
-  var col: js.UndefOr[Double] = js.undefined
-  var outer: js.UndefOr[Double] = js.undefined
-  var row: js.UndefOr[Double] = js.undefined
+  var col: js.UndefOr[Double] = js.native
+  var outer: js.UndefOr[Double] = js.native
+  var row: js.UndefOr[Double] = js.native
 }
 
 object ContainerProps {

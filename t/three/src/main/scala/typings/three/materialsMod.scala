@@ -14,6 +14,7 @@ import typings.three.meshStandardMaterialMod.MeshStandardMaterialParameters
 import typings.three.meshToonMaterialMod.MeshToonMaterialParameters
 import typings.three.pointsMaterialMod.PointsMaterialParameters
 import typings.three.shaderMaterialMod.ShaderMaterialParameters
+import typings.three.shadowMaterialMod.ShadowMaterialParameters
 import typings.three.spriteMaterialMod.SpriteMaterialParameters
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -125,7 +126,7 @@ object materialsMod extends js.Object {
   @js.native
   class ShadowMaterial ()
     extends typings.three.shadowMaterialMod.ShadowMaterial {
-    def this(parameters: ShaderMaterialParameters) = this()
+    def this(parameters: ShadowMaterialParameters) = this()
   }
   
   @js.native

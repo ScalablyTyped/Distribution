@@ -1,6 +1,6 @@
 package typings.awesomplete.mod
 
-import typings.awesomplete.AnonLabelValue
+import typings.awesomplete.AnonValue
 import typings.std.Element
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -12,9 +12,7 @@ trait Options extends js.Object {
   var data: js.UndefOr[js.Function2[/* item */ Suggestion, /* input */ String, String]] = js.undefined
   var filter: js.UndefOr[js.Function2[/* text */ String, /* input */ String, Boolean]] = js.undefined
   var item: js.UndefOr[js.Function2[/* text */ String, /* input */ String, HTMLElement]] = js.undefined
-  var list: js.UndefOr[
-    String | (js.Array[AnonLabelValue | String | (js.Tuple2[String, String])]) | Element
-  ] = js.undefined
+  var list: js.UndefOr[String | (js.Array[AnonValue | String | (js.Tuple2[String, String])]) | Element] = js.undefined
   var maxItems: js.UndefOr[Double] = js.undefined
   var minChars: js.UndefOr[Double] = js.undefined
   var replace: js.UndefOr[js.Function1[/* suggestion */ String | Suggestion, Unit]] = js.undefined
@@ -28,7 +26,7 @@ object Options {
     data: (/* item */ Suggestion, /* input */ String) => String = null,
     filter: (/* text */ String, /* input */ String) => Boolean = null,
     item: (/* text */ String, /* input */ String) => HTMLElement = null,
-    list: String | (js.Array[AnonLabelValue | String | (js.Tuple2[String, String])]) | Element = null,
+    list: String | (js.Array[AnonValue | String | (js.Tuple2[String, String])]) | Element = null,
     maxItems: Int | Double = null,
     minChars: Int | Double = null,
     replace: /* suggestion */ String | Suggestion => Unit = null,

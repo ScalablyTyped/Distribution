@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class MultiMaterial () extends Material {
   def this(materials: js.Array[Material]) = this()
-  var isMultiMaterial: `true` = js.native
+  val isMultiMaterial: `true` = js.native
   var materials: js.Array[Material] = js.native
 }
 

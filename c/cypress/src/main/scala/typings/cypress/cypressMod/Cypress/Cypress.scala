@@ -1,12 +1,13 @@
 package typings.cypress.cypressMod.Cypress
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.cypress.AnonAbsoluteName
-import typings.cypress.AnonAddArgs
+import typings.cypress.Anon2
 import typings.cypress.AnonDebug
 import typings.cypress.AnonDefaults
-import typings.cypress.AnonDefaultsOptions
-import typings.cypress.AnonElement
+import typings.cypress.AnonIsHidden
+import typings.cypress.AnonName
+import typings.cypress.AnonOpenMode
+import typings.cypress.AnonOverwrite
 import typings.cypress.JQueryStatic
 import typings.cypress.JQuery_
 import typings.cypress.JQuery_.PlainObject
@@ -14,11 +15,15 @@ import typings.cypress.JQuery_.Selector
 import typings.cypress.JQuery_.htmlString
 import typings.cypress.Mocha_.IRunnable
 import typings.cypress.Mocha_.ITest
+import typings.cypress.PartialBrowser
+import typings.cypress.PartialConfigOptions
+import typings.cypress.PartialLogConfig
 import typings.cypress.cyBlobUtilMod.BlobUtilStatic
 import typings.cypress.cyBluebirdMod.BluebirdStatic
 import typings.cypress.cyMinimatchMod.MinimatchOptions
 import typings.cypress.cyMomentMod.MomentStatic
 import typings.cypress.cypressBooleans.`false`
+import typings.cypress.cypressMod.Nullable
 import typings.cypress.cypressStrings.animationDistanceThreshold
 import typings.cypress.cypressStrings.baseUrl
 import typings.cypress.cypressStrings.bundled
@@ -32,6 +37,8 @@ import typings.cypress.cypressStrings.env
 import typings.cypress.cypressStrings.execTimeout
 import typings.cypress.cypressStrings.fail
 import typings.cypress.cypressStrings.fileServerFolder
+import typings.cypress.cypressStrings.firefoxColonforceColongc
+import typings.cypress.cypressStrings.firefoxGcInterval
 import typings.cypress.cypressStrings.fixturesFolder
 import typings.cypress.cypressStrings.ignoreTestFiles
 import typings.cypress.cypressStrings.integrationFolder
@@ -53,6 +60,7 @@ import typings.cypress.cypressStrings.supportFile
 import typings.cypress.cypressStrings.system
 import typings.cypress.cypressStrings.testColonafterColonrun
 import typings.cypress.cypressStrings.testColonbeforeColonrun
+import typings.cypress.cypressStrings.testColonbeforeColonrunColonasync
 import typings.cypress.cypressStrings.trashAssetsBeforeRuns
 import typings.cypress.cypressStrings.uncaughtColonexception
 import typings.cypress.cypressStrings.urlColonchanged
@@ -86,7 +94,6 @@ import typings.std.Error
 import typings.std.Event_
 import typings.std.HTMLElement
 import typings.std.HTMLSelectElement
-import typings.std.Partial
 import typings.std.Window_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -120,7 +127,7 @@ trait Cypress extends js.Object {
   /**
     * @see https://on.cypress.io/api/commands
     */
-  var Commands: AnonAddArgs = js.native
+  var Commands: AnonOverwrite = js.native
   /**
     * @see https://on.cypress.io/cookies
     */
@@ -139,9 +146,9 @@ trait Cypress extends js.Object {
     */
   var Promise: BluebirdStatic = js.native
   /**
-    * @see https://on.cypress.io/api/screenshot-api
+    * @see https://on.cypress.io/screenshot-api
     */
-  var Screenshot: AnonDefaultsOptions = js.native
+  var Screenshot: Anon2 = js.native
   /**
     * @see https://on.cypress.io/api/api-server
     */
@@ -164,13 +171,18 @@ trait Cypress extends js.Object {
     */
   var arch: String = js.native
   /**
+    * Promise wrapper for certain internal tasks.
+    */
+  @JSName("backend")
+  var backend_Original: Backend = js.native
+  /**
     * Information about the browser currently running the tests
     */
   var browser: Browser = js.native
   /**
     * @see https://on.cypress.io/dom
     */
-  var dom: AnonElement = js.native
+  var dom: AnonIsHidden = js.native
   /**
     * Cypress automatically includes minimatch and exposes it as Cypress.minimatch.
     *
@@ -231,7 +243,7 @@ trait Cypress extends js.Object {
     // }
     ```
     */
-  var spec: AnonAbsoluteName = js.native
+  var spec: AnonName = js.native
   /**
     * Cypress version string. i.e. "1.1.2"
     * @see https://on.cypress.io/version
@@ -550,6 +562,11 @@ trait Cypress extends js.Object {
   @JSName("_")
   def _underscore[T](value: T): LoDashImplicitWrapper[T] = js.native
   /**
+    * Promise wrapper for certain internal tasks.
+    */
+  @JSName("backend")
+  def backend_firefoxforcegc(task: firefoxColonforceColongc): js.Promise[Unit] = js.native
+  /**
     * Returns all configuration objects.
     * @see https://on.cypress.io/config
     * @example
@@ -570,7 +587,7 @@ trait Cypress extends js.Object {
     })
     ```
     */
-  def config(Object: Partial[ConfigOptions]): Unit = js.native
+  def config(Object: PartialConfigOptions): Unit = js.native
   def config(key: nodeVersion, value: bundled): Unit = js.native
   def config(key: nodeVersion, value: system): Unit = js.native
   @JSName("config")
@@ -620,6 +637,10 @@ trait Cypress extends js.Object {
   def config_fileServerFolder(key: fileServerFolder): String = js.native
   @JSName("config")
   def config_fileServerFolder(key: fileServerFolder, value: String): Unit = js.native
+  @JSName("config")
+  def config_firefoxGcInterval(key: firefoxGcInterval): Nullable[Double | AnonOpenMode] = js.native
+  @JSName("config")
+  def config_firefoxGcInterval(key: firefoxGcInterval, value: Nullable[Double | AnonOpenMode]): Unit = js.native
   @JSName("config")
   def config_fixturesFolder(key: fixturesFolder): String = js.native
   @JSName("config")
@@ -749,6 +770,22 @@ trait Cypress extends js.Object {
     *    Cypress.env({ host: "http://server.dev.local", foo: "foo" })
     */
   def env(`object`: ObjectLike): Unit = js.native
+  /**
+    * Firefox only: Get the current number of tests that will run between forced garbage collections.
+    *
+    * Returns undefined if not in Firefox, returns a null or 0 if forced GC is disabled.
+    *
+    * @see https://on.cypress.io/firefox-gc-issue
+    */
+  def getFirefoxGcInterval(): js.UndefOr[Double | Null] = js.native
+  def isBrowser(name: PartialBrowser): Boolean = js.native
+  /**
+    * Returns true if currently running the supplied browser name or matcher object.
+    * @example isBrowser('chrome') will be true for the browser 'chrome:canary' and 'chrome:stable'
+    * @example isBrowser({ name: 'firefox', channel: 'dev' }) will be true only for the browser 'firefox:dev' (Firefox Developer Edition)
+    * @param matcher browser name or matcher object to check.
+    */
+  def isBrowser(name: BrowserName): Boolean = js.native
   def isCy(obj: js.Any): /* is cypress.cypress.Cypress.Chainable<any> */ Boolean = js.native
   /**
     * Checks if a variable is a valid instance of `cy` or a `cy` chainable.
@@ -763,7 +800,7 @@ trait Cypress extends js.Object {
     *
     * @see https://on.cypress.io/cypress-log
     */
-  def log(options: Partial[LogConfig]): Log = js.native
+  def log(options: PartialLogConfig): Log = js.native
   /**
     * Cypress automatically includes minimatch and exposes it as Cypress.minimatch.
     *
@@ -981,6 +1018,18 @@ trait Cypress extends js.Object {
   def off_testbeforerun(
     action: testColonbeforeColonrun,
     fn: js.Function2[/* attributes */ ObjectLike, /* test */ ITest, Unit]
+  ): Unit = js.native
+  /**
+    * Fires before the test and all **before** and **beforeEach** hooks run. If a `Promise` is returned, it will be awaited before proceeding.
+    */
+  /**
+    * These events come from Cypress as it issues commands and reacts to their state. These are all useful to listen to for debugging purposes.
+    * @see https://on.cypress.io/catalog-of-events#App-Events
+    */
+  @JSName("off")
+  def off_testbeforerunasync(
+    action: testColonbeforeColonrunColonasync,
+    fn: js.Function2[/* attributes */ ObjectLike, /* test */ ITest, Unit | js.Promise[_]]
   ): Unit = js.native
   /**
     * Fires whenever Cypress detects that your application's URL has changed.
@@ -1226,6 +1275,18 @@ trait Cypress extends js.Object {
     fn: js.Function2[/* attributes */ ObjectLike, /* test */ ITest, Unit]
   ): Unit = js.native
   /**
+    * Fires before the test and all **before** and **beforeEach** hooks run. If a `Promise` is returned, it will be awaited before proceeding.
+    */
+  /**
+    * These events come from Cypress as it issues commands and reacts to their state. These are all useful to listen to for debugging purposes.
+    * @see https://on.cypress.io/catalog-of-events#App-Events
+    */
+  @JSName("on")
+  def on_testbeforerunasync(
+    action: testColonbeforeColonrunColonasync,
+    fn: js.Function2[/* attributes */ ObjectLike, /* test */ ITest, Unit | js.Promise[_]]
+  ): Unit = js.native
+  /**
     * Fires whenever Cypress detects that your application's URL has changed.
     * @see https://on.cypress.io/catalog-of-events#App-Events
     */
@@ -1467,6 +1528,18 @@ trait Cypress extends js.Object {
   def once_testbeforerun(
     action: testColonbeforeColonrun,
     fn: js.Function2[/* attributes */ ObjectLike, /* test */ ITest, Unit]
+  ): Unit = js.native
+  /**
+    * Fires before the test and all **before** and **beforeEach** hooks run. If a `Promise` is returned, it will be awaited before proceeding.
+    */
+  /**
+    * These events come from Cypress as it issues commands and reacts to their state. These are all useful to listen to for debugging purposes.
+    * @see https://on.cypress.io/catalog-of-events#App-Events
+    */
+  @JSName("once")
+  def once_testbeforerunasync(
+    action: testColonbeforeColonrunColonasync,
+    fn: js.Function2[/* attributes */ ObjectLike, /* test */ ITest, Unit | js.Promise[_]]
   ): Unit = js.native
   /**
     * Fires whenever Cypress detects that your application's URL has changed.

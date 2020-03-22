@@ -3,7 +3,7 @@ package typings.gapiClientPlus.gapi.client.plus
 import typings.gapiClient.gapi.client.Request_
 import typings.gapiClientPlus.AnonActivityId
 import typings.gapiClientPlus.AnonAlt
-import typings.gapiClientPlus.AnonAltFields
+import typings.gapiClientPlus.AnonFields
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ trait ActivitiesResource extends js.Object {
   /** List all of the activities in the specified collection for a particular user. */
   def list(request: AnonAlt): Request_[ActivityFeed]
   /** Search public activities. */
-  def search(request: AnonAltFields): Request_[ActivityFeed]
+  def search(request: AnonFields): Request_[ActivityFeed]
 }
 
 object ActivitiesResource {
@@ -22,7 +22,7 @@ object ActivitiesResource {
   def apply(
     get: AnonActivityId => Request_[Activity],
     list: AnonAlt => Request_[ActivityFeed],
-    search: AnonAltFields => Request_[ActivityFeed]
+    search: AnonFields => Request_[ActivityFeed]
   ): ActivitiesResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), search = js.Any.fromFunction1(search))
   

@@ -3,14 +3,14 @@ package typings.jupyterlabCompleter.contextconnectorMod
 import typings.jupyterlabCompleter.contextconnectorMod.ContextConnector.IOptions
 import typings.jupyterlabCompleter.handlerMod.CompletionHandler.IReply
 import typings.jupyterlabCompleter.handlerMod.CompletionHandler.IRequest
-import typings.jupyterlabCoreutils.dataconnectorMod.DataConnector
+import typings.jupyterlabStatedb.dataconnectorMod.DataConnector
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("@jupyterlab/completer/lib/contextconnector", "ContextConnector")
 @js.native
-class ContextConnector_ protected () extends DataConnector[IReply, Unit, IRequest] {
+class ContextConnector_ protected () extends DataConnector[IReply, Unit, IRequest, String] {
   /**
     * Create a new context connector for completion requests.
     *

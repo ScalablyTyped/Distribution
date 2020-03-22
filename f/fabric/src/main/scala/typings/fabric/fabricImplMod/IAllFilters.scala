@@ -1,25 +1,25 @@
 package typings.fabric.fabricImplMod
 
 import typings.fabric.AnonFromObject
-import typings.fabric.AnonFromObjectObject
-import typings.fabric.AnonFromObjectObjectOptions
-import typings.fabric.AnonFromObjectObjectOptionsAnonBlocksize
-import typings.fabric.AnonFromObjectObjectOptionsAnonChannel
-import typings.fabric.AnonFromObjectObjectOptionsAnonColorOpacity
-import typings.fabric.AnonFromObjectObjectOptionsAnonColorString
-import typings.fabric.AnonFromObjectObjectOptionsAnonContrast
-import typings.fabric.AnonFromObjectObjectOptionsAnonDistance
-import typings.fabric.AnonFromObjectObjectOptionsAnonMatrix
-import typings.fabric.AnonFromObjectObjectOptionsAnonMatrixOpaque
-import typings.fabric.AnonFromObjectObjectOptionsAnonNoise
-import typings.fabric.AnonFromObjectObjectOptionsAnonSaturation
-import typings.fabric.AnonFromObjectObjectOptionsAnonThreshold
-import typings.fabric.AnonFromObjectObjectOptionsAny
-import typings.fabric.AnonFromObjectObjectOptionsAnyIInvertFilter
-import typings.fabric.AnonFromObjectObjectOptionsAnyIResizeFilter
-import typings.fabric.AnonFromObjectObjectOptionsAnyISepia2Filter
-import typings.fabric.AnonFromObjectObjectOptionsAnyISepiaFilter
-import typings.fabric.AnonOptions
+import typings.fabric.AnonInstantiable
+import typings.fabric.AnonInstantiableFromObject
+import typings.fabric.AnonInstantiableIBrightnessFilter
+import typings.fabric.AnonInstantiableIColorMatrix
+import typings.fabric.AnonInstantiableIContrastFilter
+import typings.fabric.AnonInstantiableIConvoluteFilter
+import typings.fabric.AnonInstantiableIGradientTransparencyFilter
+import typings.fabric.AnonInstantiableIGrayscaleFilter
+import typings.fabric.AnonInstantiableIInvertFilter
+import typings.fabric.AnonInstantiableIMaskFilter
+import typings.fabric.AnonInstantiableIMultiplyFilter
+import typings.fabric.AnonInstantiableINoiseFilter
+import typings.fabric.AnonInstantiableIPixelateFilter
+import typings.fabric.AnonInstantiableIRemoveWhiteFilter
+import typings.fabric.AnonInstantiableIResizeFilter
+import typings.fabric.AnonInstantiableISaturationFilter
+import typings.fabric.AnonInstantiableISepia2Filter
+import typings.fabric.AnonInstantiableISepiaFilter
+import typings.fabric.AnonInstantiableITintFilter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,51 +28,51 @@ import scala.scalajs.js.annotation._
 // Filters
 ////////////////////////////////////////////////////////////
 trait IAllFilters extends js.Object {
-  var BaseFilter: AnonOptions
+  var BaseFilter: AnonInstantiable
   var BlendColor: AnonFromObject
-  var BlendImage: AnonFromObjectObject
-  var Brightness: AnonFromObjectObjectOptions
-  var ColorMatrix: AnonFromObjectObjectOptionsAnonMatrix
-  var Contrast: AnonFromObjectObjectOptionsAnonContrast
-  var Convolute: AnonFromObjectObjectOptionsAnonMatrixOpaque
-  var GradientTransparency: AnonFromObjectObjectOptionsAnonThreshold
-  var Grayscale: AnonFromObjectObjectOptionsAny
-  var Invert: AnonFromObjectObjectOptionsAnyIInvertFilter
-  var Mask: AnonFromObjectObjectOptionsAnonChannel
-  var Multiply: AnonFromObjectObjectOptionsAnonColorString
-  var Noise: AnonFromObjectObjectOptionsAnonNoise
-  var Pixelate: AnonFromObjectObjectOptionsAnonBlocksize
-  var RemoveWhite: AnonFromObjectObjectOptionsAnonDistance
-  var Resize: AnonFromObjectObjectOptionsAnyIResizeFilter
-  var Saturation: AnonFromObjectObjectOptionsAnonSaturation
-  var Sepia: AnonFromObjectObjectOptionsAnyISepiaFilter
-  var Sepia2: AnonFromObjectObjectOptionsAnyISepia2Filter
-  var Tint: AnonFromObjectObjectOptionsAnonColorOpacity
+  var BlendImage: AnonInstantiableFromObject
+  var Brightness: AnonInstantiableIBrightnessFilter
+  var ColorMatrix: AnonInstantiableIColorMatrix
+  var Contrast: AnonInstantiableIContrastFilter
+  var Convolute: AnonInstantiableIConvoluteFilter
+  var GradientTransparency: AnonInstantiableIGradientTransparencyFilter
+  var Grayscale: AnonInstantiableIGrayscaleFilter
+  var Invert: AnonInstantiableIInvertFilter
+  var Mask: AnonInstantiableIMaskFilter
+  var Multiply: AnonInstantiableIMultiplyFilter
+  var Noise: AnonInstantiableINoiseFilter
+  var Pixelate: AnonInstantiableIPixelateFilter
+  var RemoveWhite: AnonInstantiableIRemoveWhiteFilter
+  var Resize: AnonInstantiableIResizeFilter
+  var Saturation: AnonInstantiableISaturationFilter
+  var Sepia: AnonInstantiableISepiaFilter
+  var Sepia2: AnonInstantiableISepia2Filter
+  var Tint: AnonInstantiableITintFilter
 }
 
 object IAllFilters {
   @scala.inline
   def apply(
-    BaseFilter: AnonOptions,
+    BaseFilter: AnonInstantiable,
     BlendColor: AnonFromObject,
-    BlendImage: AnonFromObjectObject,
-    Brightness: AnonFromObjectObjectOptions,
-    ColorMatrix: AnonFromObjectObjectOptionsAnonMatrix,
-    Contrast: AnonFromObjectObjectOptionsAnonContrast,
-    Convolute: AnonFromObjectObjectOptionsAnonMatrixOpaque,
-    GradientTransparency: AnonFromObjectObjectOptionsAnonThreshold,
-    Grayscale: AnonFromObjectObjectOptionsAny,
-    Invert: AnonFromObjectObjectOptionsAnyIInvertFilter,
-    Mask: AnonFromObjectObjectOptionsAnonChannel,
-    Multiply: AnonFromObjectObjectOptionsAnonColorString,
-    Noise: AnonFromObjectObjectOptionsAnonNoise,
-    Pixelate: AnonFromObjectObjectOptionsAnonBlocksize,
-    RemoveWhite: AnonFromObjectObjectOptionsAnonDistance,
-    Resize: AnonFromObjectObjectOptionsAnyIResizeFilter,
-    Saturation: AnonFromObjectObjectOptionsAnonSaturation,
-    Sepia: AnonFromObjectObjectOptionsAnyISepiaFilter,
-    Sepia2: AnonFromObjectObjectOptionsAnyISepia2Filter,
-    Tint: AnonFromObjectObjectOptionsAnonColorOpacity
+    BlendImage: AnonInstantiableFromObject,
+    Brightness: AnonInstantiableIBrightnessFilter,
+    ColorMatrix: AnonInstantiableIColorMatrix,
+    Contrast: AnonInstantiableIContrastFilter,
+    Convolute: AnonInstantiableIConvoluteFilter,
+    GradientTransparency: AnonInstantiableIGradientTransparencyFilter,
+    Grayscale: AnonInstantiableIGrayscaleFilter,
+    Invert: AnonInstantiableIInvertFilter,
+    Mask: AnonInstantiableIMaskFilter,
+    Multiply: AnonInstantiableIMultiplyFilter,
+    Noise: AnonInstantiableINoiseFilter,
+    Pixelate: AnonInstantiableIPixelateFilter,
+    RemoveWhite: AnonInstantiableIRemoveWhiteFilter,
+    Resize: AnonInstantiableIResizeFilter,
+    Saturation: AnonInstantiableISaturationFilter,
+    Sepia: AnonInstantiableISepiaFilter,
+    Sepia2: AnonInstantiableISepia2Filter,
+    Tint: AnonInstantiableITintFilter
   ): IAllFilters = {
     val __obj = js.Dynamic.literal(BaseFilter = BaseFilter.asInstanceOf[js.Any], BlendColor = BlendColor.asInstanceOf[js.Any], BlendImage = BlendImage.asInstanceOf[js.Any], Brightness = Brightness.asInstanceOf[js.Any], ColorMatrix = ColorMatrix.asInstanceOf[js.Any], Contrast = Contrast.asInstanceOf[js.Any], Convolute = Convolute.asInstanceOf[js.Any], GradientTransparency = GradientTransparency.asInstanceOf[js.Any], Grayscale = Grayscale.asInstanceOf[js.Any], Invert = Invert.asInstanceOf[js.Any], Mask = Mask.asInstanceOf[js.Any], Multiply = Multiply.asInstanceOf[js.Any], Noise = Noise.asInstanceOf[js.Any], Pixelate = Pixelate.asInstanceOf[js.Any], RemoveWhite = RemoveWhite.asInstanceOf[js.Any], Resize = Resize.asInstanceOf[js.Any], Saturation = Saturation.asInstanceOf[js.Any], Sepia = Sepia.asInstanceOf[js.Any], Sepia2 = Sepia2.asInstanceOf[js.Any], Tint = Tint.asInstanceOf[js.Any])
   

@@ -26,6 +26,7 @@ class Logger ()
   def isTraceEnabled(): Boolean = js.native
   def isWarnEnabled(): Boolean = js.native
   def log(args: js.Any*): Unit = js.native
+  def mark(message: js.Any, args: js.Any*): Unit = js.native
   def removeContext(key: String): Unit = js.native
   def setParseCallStackFunction(parseFunction: js.Function): Unit = js.native
   def trace(message: js.Any, args: js.Any*): Unit = js.native

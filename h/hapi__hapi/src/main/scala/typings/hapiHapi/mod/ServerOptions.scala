@@ -1,9 +1,9 @@
 package typings.hapiHapi.mod
 
 import typings.hapiCatbox.mod.ClientOptions
-import typings.hapiHapi.AnonBase64
-import typings.hapiHapi.AnonFalse
+import typings.hapiHapi.AnonEncoding
 import typings.hapiHapi.AnonIsCaseSensitive
+import typings.hapiHapi.AnonLog
 import typings.hapiHapi.AnonMaxEventLoopDelay
 import typings.hapiHapi.AnonParser
 import typings.hapiHapi.hapiHapiBooleans.`false`
@@ -69,7 +69,7 @@ trait ServerOptions extends js.Object {
     * or request to ['error']. To turn off all output set the log or request to false. To display all server logs, set the log or request to '*'. To disable all debug information, set debug to
     * false.
     */
-  var debug: js.UndefOr[`false` | AnonFalse] = js.undefined
+  var debug: js.UndefOr[`false` | AnonLog] = js.undefined
   /**
     * @default the operating system hostname and if not available, to 'localhost'.
     * The public hostname or IP address. Used to set server.info.host and server.info.uri and as address is none provided.
@@ -144,7 +144,7 @@ trait ServerOptions extends js.Object {
     */
   // TODO I am not sure if I need to use all the server.state() definition (like the default value) OR only the options below. The v16 use "any" here.
   // state?: ServerStateCookieOptions;
-  var state: js.UndefOr[AnonBase64] = js.undefined
+  var state: js.UndefOr[AnonEncoding] = js.undefined
   /**
     * @default none.
     * Used to create an HTTPS connection. The tls object is passed unchanged to the node HTTPS server as described in the node HTTPS documentation.
@@ -165,7 +165,7 @@ object ServerOptions {
     autoListen: js.UndefOr[Boolean] = js.undefined,
     cache: CacheProvider[ClientOptions] | ServerOptionsCache | js.Array[ServerOptionsCache] = null,
     compression: Boolean | ServerOptionsCompression = null,
-    debug: `false` | AnonFalse = null,
+    debug: `false` | AnonLog = null,
     host: String = null,
     listener: typings.node.httpMod.Server = null,
     load: AnonMaxEventLoopDelay = null,
@@ -175,7 +175,7 @@ object ServerOptions {
     query: AnonParser = null,
     router: AnonIsCaseSensitive = null,
     routes: RouteOptions = null,
-    state: AnonBase64 = null,
+    state: AnonEncoding = null,
     tls: Boolean | typings.node.httpsMod.ServerOptions = null,
     uri: String = null
   ): ServerOptions = {

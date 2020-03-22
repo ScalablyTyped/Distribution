@@ -17,10 +17,10 @@ import typings.tensorflowTfjsCore.typesMod.TrainingConfig
 import typings.tensorflowTfjsCore.typesMod.WeightGroup
 import typings.tensorflowTfjsCore.typesMod.WeightsManifestConfig
 import typings.tensorflowTfjsCore.typesMod.WeightsManifestEntry
-import typings.tensorflowTfjsNode.FnFilePathPrefix
-import typings.tensorflowTfjsNode.FnGroup
-import typings.tensorflowTfjsNode.FnLoadOptions
-import typings.tensorflowTfjsNode.FnModelArtifacts
+import typings.tensorflowTfjsNode.FnCall
+import typings.tensorflowTfjsNode.FnCallManifestFilePathPrefixWeightNamesRequestInit
+import typings.tensorflowTfjsNode.FnCallModelArtifactsWeightSpecsWeightDataTrainingConfig
+import typings.tensorflowTfjsNode.FnCallTensorsGroup
 import typings.tensorflowTfjsNode.fileSystemMod.NodeFileSystem
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -32,7 +32,7 @@ object io extends js.Object {
   @JSName("browserFiles")
   var browserFiles_Original: js.Function1[/* files */ js.Array[File], IOHandler] = js.native
   @JSName("browserHTTPRequest")
-  var browserHTTPRequest_Original: FnLoadOptions = js.native
+  var browserHTTPRequest_Original: FnCall = js.native
   @JSName("concatenateArrayBuffers")
   var concatenateArrayBuffers_Original: js.Function1[/* buffers */ js.Array[ArrayBuffer], ArrayBuffer] = js.native
   @JSName("copyModel")
@@ -40,21 +40,21 @@ object io extends js.Object {
   @JSName("decodeWeights")
   var decodeWeights_Original: js.Function2[/* buffer */ ArrayBuffer, /* specs */ js.Array[WeightsManifestEntry], NamedTensorMap] = js.native
   @JSName("encodeWeights")
-  var encodeWeights_Original: FnGroup = js.native
+  var encodeWeights_Original: FnCallTensorsGroup = js.native
   @JSName("fileSystem")
   var fileSystem_Original: js.Function1[/* path */ String | js.Array[String], NodeFileSystem] = js.native
   @JSName("fromMemory")
-  var fromMemory_Original: FnModelArtifacts = js.native
+  var fromMemory_Original: FnCallModelArtifactsWeightSpecsWeightDataTrainingConfig = js.native
   @JSName("getModelArtifactsInfoForJSON")
   var getModelArtifactsInfoForJSON_Original: js.Function1[/* modelArtifacts */ ModelArtifacts, ModelArtifactsInfo] = js.native
   @JSName("http")
-  var http_Original: FnLoadOptions = js.native
+  var http_Original: FnCall = js.native
   @JSName("isHTTPScheme")
   var isHTTPScheme_Original: js.Function1[/* url */ String, Boolean] = js.native
   @JSName("listModels")
   var listModels_Original: js.Function0[js.Promise[StringDictionary[ModelArtifactsInfo]]] = js.native
   @JSName("loadWeights")
-  var loadWeights_Original: FnFilePathPrefix = js.native
+  var loadWeights_Original: FnCallManifestFilePathPrefixWeightNamesRequestInit = js.native
   @JSName("moveModel")
   var moveModel_Original: js.Function2[/* sourceURL */ String, /* destURL */ String, js.Promise[ModelArtifactsInfo]] = js.native
   @JSName("nodeHTTPRequest")

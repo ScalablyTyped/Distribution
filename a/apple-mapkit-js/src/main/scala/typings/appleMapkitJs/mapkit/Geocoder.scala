@@ -1,7 +1,7 @@
 package typings.appleMapkitJs.mapkit
 
+import typings.appleMapkitJs.PickGeocoderConstructorOp
 import typings.std.Error
-import typings.std.Pick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -56,11 +56,10 @@ class Geocoder () extends js.Object {
     coordinate: Coordinate,
     callback: js.Function2[/* error */ Error | Null, /* data */ GeocoderResponse, Unit]
   ): Double = js.native
-  @JSName("reverseLookup")
-  def reverseLookup_language(
+  def reverseLookup(
     coordinate: Coordinate,
     callback: js.Function2[/* error */ Error | Null, /* data */ GeocoderResponse, Unit],
-    options: Pick[GeocoderConstructorOptions, typings.appleMapkitJs.appleMapkitJsStrings.language]
+    options: PickGeocoderConstructorOp
   ): Double = js.native
 }
 

@@ -4,6 +4,7 @@ import typings.tstl.idequeMod.IDeque
 import typings.tstl.iforwarditeratorMod.IForwardIterator
 import typings.tstl.ifrontMod.IFront
 import typings.tstl.ilistalgorithmMod.IListAlgorithm
+import typings.tstl.ipointerMod.IPointer
 import typings.tstl.listContainerMod.ListContainer
 import typings.tstl.listIteratorMod.ListIterator
 import typings.tstl.listMod.List.Iterator
@@ -187,11 +188,19 @@ object listMod extends js.Object {
       */
     @js.native
     class ReverseIterator[T] ()
-      extends typings.tstl.reverseIteratorMod.ReverseIterator[T, List[T], Iterator[T], ReverseIterator[T], T] {
+      extends typings.tstl.reverseIteratorMod.ReverseIterator[T, List[T], Iterator[T], ReverseIterator[T], T]
+    
+    /* static members */
+    @js.native
+    object Iterator extends js.Object {
       /**
-        * @inheritDoc
+        * @internal
         */
-      def value(`val`: T): js.Any = js.native
+      def _Set_source_ptr[T](it: Iterator[T], ptr: IPointer[List[T]]): Unit = js.native
+      /**
+        * @internal
+        */
+      def create[T](sourcePtr: IPointer[List[T]], prev: Iterator[T], next: Iterator[T], value: T): Iterator[T] = js.native
     }
     
   }

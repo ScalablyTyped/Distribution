@@ -1,0 +1,30 @@
+package typings.jupyterlabServices
+
+import typings.jupyterlabServices.jupyterlabServicesStrings.apiSlashsessions
+import typings.jupyterlabServices.serverconnectionMod.ServerConnection.ISettings
+import typings.jupyterlabServices.sessionSessionMod.IModel
+import typings.jupyterlabServices.sessionSessionMod.ISessionOptions
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@jupyterlab/services/lib/session/restapi", JSImport.Namespace)
+@js.native
+object sessionRestapiMod extends js.Object {
+  val SESSION_SERVICE_URL: apiSlashsessions = js.native
+  def getSessionModel(id: String): js.Promise[IModel] = js.native
+  def getSessionModel(id: String, settings: ISettings): js.Promise[IModel] = js.native
+  def getSessionUrl(baseUrl: String, id: String): String = js.native
+  def listRunning(): js.Promise[js.Array[IModel]] = js.native
+  def listRunning(settings: ISettings): js.Promise[js.Array[IModel]] = js.native
+  def shutdownSession(id: String): js.Promise[Unit] = js.native
+  def shutdownSession(id: String, settings: ISettings): js.Promise[Unit] = js.native
+  def startSession(options: ISessionOptions): js.Promise[IModel] = js.native
+  def startSession(options: ISessionOptions, settings: ISettings): js.Promise[IModel] = js.native
+  def updateSession(model: PickIModelidDeepPartialOm): js.Promise[IModel] = js.native
+  def updateSession(model: PickIModelidDeepPartialOm, settings: ISettings): js.Promise[IModel] = js.native
+  type DeepPartial[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in keyof T ]:? / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias @jupyterlab/services.@jupyterlab/services/lib/session/restapi.DeepPartial<T[P]> * / object}
+    */ typings.jupyterlabServices.jupyterlabServicesStrings.DeepPartial with js.Any
+}
+

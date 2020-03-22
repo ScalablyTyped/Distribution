@@ -5,21 +5,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonTabIdTitle extends js.Object {
-  /** Sets the sidebar title for the tab specified by tabId. Automatically resets when the tab is closed. */
-  var tabId: js.UndefOr[Double] = js.undefined
-  /** The string the sidebar action should display when moused over. */
+  /** The id of the tab for which you want to modify the page action. */
+  var tabId: Double
+  /** The tooltip string. */
   var title: String | Null
-  /** Sets the sidebar title for the window specified by windowId. */
-  var windowId: js.UndefOr[Double] = js.undefined
 }
 
 object AnonTabIdTitle {
   @scala.inline
-  def apply(tabId: Int | Double = null, title: String = null, windowId: Int | Double = null): AnonTabIdTitle = {
-    val __obj = js.Dynamic.literal()
-    if (tabId != null) __obj.updateDynamic("tabId")(tabId.asInstanceOf[js.Any])
+  def apply(tabId: Double, title: String = null): AnonTabIdTitle = {
+    val __obj = js.Dynamic.literal(tabId = tabId.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (windowId != null) __obj.updateDynamic("windowId")(windowId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnonTabIdTitle]
   }
 }

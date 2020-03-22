@@ -1,14 +1,14 @@
 package typings.uiGrid.mod.cellNav
 
 import typings.angular.mod.IPromise
-import typings.uiGrid.AnonHandler
+import typings.uiGrid.AnonNavigate
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ICellNavApi[TEntity] extends js.Object {
   // Events
-  var on: AnonHandler[TEntity]
+  var on: AnonNavigate[TEntity]
   // Methods
   /**
     * Gets the currently selected rows and columns.  array is empty if no selection has occurred
@@ -39,7 +39,7 @@ object ICellNavApi {
   def apply[TEntity](
     getCurrentSelection: () => js.Array[IRowCol[TEntity]],
     getFocusedCell: () => IRowCol[TEntity],
-    on: AnonHandler[TEntity],
+    on: AnonNavigate[TEntity],
     rowColSelectIndex: IRowCol[TEntity] => Double,
     scrollToFocus: (TEntity, IColumnDef) => IPromise[_]
   ): ICellNavApi[TEntity] = {

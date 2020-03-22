@@ -3,13 +3,13 @@ package typings.jsrsasign.jsrsasign.KJUR.asn1
 import typings.jsrsasign.AnonAccuracy
 import typings.jsrsasign.AnonAddInfoNotAvailable
 import typings.jsrsasign.AnonCertreq
-import typings.jsrsasign.AnonCertreqMi
-import typings.jsrsasign.AnonCertsHashAlg
-import typings.jsrsasign.AnonCertsHashAlgSigAlg
 import typings.jsrsasign.AnonFailinfo
 import typings.jsrsasign.AnonGranted
-import typings.jsrsasign.AnonHashAlgHashValue
+import typings.jsrsasign.AnonHashValue
+import typings.jsrsasign.AnonMi
 import typings.jsrsasign.AnonMicros
+import typings.jsrsasign.AnonSigAlg
+import typings.jsrsasign.AnonSignerCert
 import typings.jsrsasign.AnonStatus
 import typings.jsrsasign.jsrsasign.KJUR.asn1.cms.SignedData
 import scala.scalajs.js
@@ -78,7 +78,7 @@ object tsp extends js.Object {
     */
   @js.native
   class FixedTSAAdapter () extends js.Object {
-    def this(initParams: AnonCertsHashAlg) = this()
+    def this(initParams: AnonSigAlg) = this()
     def getTSTHex(msgHex: String, hashAlg: String): String = js.native
   }
   
@@ -97,7 +97,7 @@ object tsp extends js.Object {
     */
   @js.native
   class MessageImprint () extends ASN1Object {
-    def this(params: AnonHashAlgHashValue) = this()
+    def this(params: AnonHashValue) = this()
   }
   
   /**
@@ -178,7 +178,7 @@ object tsp extends js.Object {
     */
   @js.native
   class SimpleTSAAdapter () extends js.Object {
-    def this(initParams: AnonCertsHashAlg) = this()
+    def this(initParams: AnonSigAlg) = this()
     def getTSTHex(msgHex: String, hashAlg: String): String = js.native
   }
   
@@ -231,7 +231,7 @@ object tsp extends js.Object {
     */
   @js.native
   class TimeStampReq () extends ASN1Object {
-    def this(params: AnonCertreqMi) = this()
+    def this(params: AnonMi) = this()
     def setMessageImprint(params: MessageImprint): Unit = js.native
   }
   
@@ -303,7 +303,7 @@ object tsp extends js.Object {
       * @example
       */
     def newTimeStampToken(): SignedData = js.native
-    def newTimeStampToken(param: AnonCertsHashAlgSigAlg): SignedData = js.native
+    def newTimeStampToken(param: AnonSignerCert): SignedData = js.native
   }
   
 }

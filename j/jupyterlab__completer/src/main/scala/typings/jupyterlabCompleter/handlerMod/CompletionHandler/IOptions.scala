@@ -1,7 +1,7 @@
 package typings.jupyterlabCompleter.handlerMod.CompletionHandler
 
 import typings.jupyterlabCompleter.widgetMod.Completer
-import typings.jupyterlabCoreutils.interfacesMod.IDataConnector
+import typings.jupyterlabStatedb.interfacesMod.IDataConnector
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,12 +22,12 @@ trait IOptions extends js.Object {
     * it is acceptable for the other methods to be simple functions that return
     * rejected promises.
     */
-  var connector: IDataConnector[IReply, Unit, IRequest]
+  var connector: IDataConnector[IReply, Unit, IRequest, String]
 }
 
 object IOptions {
   @scala.inline
-  def apply(completer: Completer, connector: IDataConnector[IReply, Unit, IRequest]): IOptions = {
+  def apply(completer: Completer, connector: IDataConnector[IReply, Unit, IRequest, String]): IOptions = {
     val __obj = js.Dynamic.literal(completer = completer.asInstanceOf[js.Any], connector = connector.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IOptions]

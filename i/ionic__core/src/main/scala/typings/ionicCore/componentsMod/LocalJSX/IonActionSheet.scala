@@ -1,10 +1,10 @@
 package typings.ionicCore.componentsMod.LocalJSX
 
 import typings.ionicCore.actionSheetInterfaceMod.ActionSheetButton
+import typings.ionicCore.animationInterfaceMod.Animation
+import typings.ionicCore.animationInterfaceMod.AnimationBuilder
 import typings.ionicCore.ionicCoreStrings.ios
 import typings.ionicCore.ionicCoreStrings.md
-import typings.ionicCore.oldAnimationAnimationInterfaceMod.Animation
-import typings.ionicCore.oldAnimationAnimationInterfaceMod.AnimationBuilder
 import typings.ionicCore.overlaysInterfaceMod.OverlayEventDetail
 import typings.std.CustomEvent
 import scala.scalajs.js
@@ -81,10 +81,10 @@ object IonActionSheet {
     backdropDismiss: js.UndefOr[Boolean] = js.undefined,
     buttons: js.Array[ActionSheetButton | String] = null,
     cssClass: String | js.Array[String] = null,
-    enterAnimation: (/* Animation */ Animation, /* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => js.Promise[Animation] = null,
+    enterAnimation: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation = null,
     header: String = null,
     keyboardClose: js.UndefOr[Boolean] = js.undefined,
-    leaveAnimation: (/* Animation */ Animation, /* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => js.Promise[Animation] = null,
+    leaveAnimation: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation = null,
     mode: ios | md = null,
     onIonActionSheetDidDismiss: /* event */ CustomEvent[OverlayEventDetail[_]] => Unit = null,
     onIonActionSheetDidPresent: /* event */ CustomEvent[Unit] => Unit = null,
@@ -98,10 +98,10 @@ object IonActionSheet {
     if (!js.isUndefined(backdropDismiss)) __obj.updateDynamic("backdropDismiss")(backdropDismiss.asInstanceOf[js.Any])
     if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
-    if (enterAnimation != null) __obj.updateDynamic("enterAnimation")(js.Any.fromFunction3(enterAnimation))
+    if (enterAnimation != null) __obj.updateDynamic("enterAnimation")(js.Any.fromFunction2(enterAnimation))
     if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
     if (!js.isUndefined(keyboardClose)) __obj.updateDynamic("keyboardClose")(keyboardClose.asInstanceOf[js.Any])
-    if (leaveAnimation != null) __obj.updateDynamic("leaveAnimation")(js.Any.fromFunction3(leaveAnimation))
+    if (leaveAnimation != null) __obj.updateDynamic("leaveAnimation")(js.Any.fromFunction2(leaveAnimation))
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (onIonActionSheetDidDismiss != null) __obj.updateDynamic("onIonActionSheetDidDismiss")(js.Any.fromFunction1(onIonActionSheetDidDismiss))
     if (onIonActionSheetDidPresent != null) __obj.updateDynamic("onIonActionSheetDidPresent")(js.Any.fromFunction1(onIonActionSheetDidPresent))

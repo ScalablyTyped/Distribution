@@ -2,7 +2,6 @@ package typings.ionic
 
 import typings.ionic.definitionsMod.BaseBuildOptions
 import typings.ionic.definitionsMod.BuildOptions
-import typings.ionic.definitionsMod.CommandMetadata
 import typings.ionic.definitionsMod.CommandMetadataOption
 import typings.ionic.definitionsMod.IConfig
 import typings.ionic.definitionsMod.ILogger
@@ -26,7 +25,6 @@ import typings.ionicCliFrameworkPrompts.mod.PromptValueCheckbox
 import typings.ionicCliFrameworkPrompts.mod.PromptValueConfirm
 import typings.ionicCliFrameworkPrompts.mod.PromptValueOther
 import typings.node.NodeJS.ProcessEnv
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -86,7 +84,7 @@ object libBuildMod extends js.Object {
     def createBaseOptionsFromCommandLine(inputs: CommandLineInputs, options: CommandLineOptions): BaseBuildOptions = js.native
     def createOptionsFromCommandLine(inputs: CommandLineInputs, options: CommandLineOptions): T = js.native
     def determineEngineFromCommandLine(options: CommandLineOptions): String = js.native
-    def getCommandMetadata(): js.Promise[Partial[CommandMetadata]] = js.native
+    def getCommandMetadata(): js.Promise[PartialCommandMetadata] = js.native
     def getPkgManagerBuildCLI(): PkgManagerBuildCLI = js.native
     /* CompleteClass */
     override def run(options: T): js.Promise[Unit] = js.native

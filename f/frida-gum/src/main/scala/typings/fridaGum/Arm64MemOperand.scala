@@ -9,16 +9,16 @@ trait Arm64MemOperand
   extends Arm64BaseOperand
      with Arm64Operand {
   var `type`: mem
-  var value: AnonBaseDispIndex
+  var value: AnonIndex
 }
 
 object Arm64MemOperand {
   @scala.inline
   def apply(
     `type`: mem,
-    value: AnonBaseDispIndex,
+    value: AnonIndex,
     ext: Arm64Extender = null,
-    shift: AnonTypeValue = null,
+    shift: AnonValue = null,
     vas: Arm64Vas = null,
     vectorIndex: Int | Double = null
   ): Arm64MemOperand = {

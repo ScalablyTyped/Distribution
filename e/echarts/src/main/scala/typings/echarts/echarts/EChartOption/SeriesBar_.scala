@@ -1,11 +1,11 @@
 package typings.echarts.echarts.EChartOption
 
-import typings.echarts.AnonAlignBackgroundColor
 import typings.echarts.AnonAnimation
-import typings.echarts.AnonAnimationAnimationDelay
-import typings.echarts.AnonAnimationAnimationDelayAnimationDelayUpdate
-import typings.echarts.AnonBackgroundColorBorderColor
+import typings.echarts.AnonAnimationDelay
+import typings.echarts.AnonAnimationDelayUpdate
 import typings.echarts.AnonBarBorderColor
+import typings.echarts.AnonDictunknownProperty
+import typings.echarts.AnonExtraCssText
 import typings.echarts.AnonItemStyle
 import typings.echarts.echarts.EChartOption.SeriesBar.DataObject
 import typings.echarts.echartsStrings.bar
@@ -490,7 +490,7 @@ trait SeriesBar_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-bar.label
     */
-  var label: js.UndefOr[AnonAlignBackgroundColor] = js.undefined
+  var label: js.UndefOr[AnonDictunknownProperty] = js.undefined
   /**
     * Whether to enable the optimization of large-scale data.
     * It could be set when large data causes performance problem.
@@ -532,14 +532,14 @@ trait SeriesBar_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-bar.markArea
     */
-  var markArea: js.UndefOr[AnonAnimationAnimationDelayAnimationDelayUpdate] = js.undefined
+  var markArea: js.UndefOr[AnonAnimationDelayUpdate] = js.undefined
   /**
     * Use a line in the chart to illustrate.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-bar.markLine
     */
-  var markLine: js.UndefOr[AnonAnimationAnimationDelay] = js.undefined
+  var markLine: js.UndefOr[AnonAnimationDelay] = js.undefined
   /**
     * Mark point in a chart.
     *
@@ -636,7 +636,7 @@ trait SeriesBar_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-bar.tooltip
     */
-  var tooltip: js.UndefOr[AnonBackgroundColorBorderColor] = js.undefined
+  var tooltip: js.UndefOr[AnonExtraCssText] = js.undefined
   /**
     * @default
     * "bar"
@@ -723,12 +723,12 @@ object SeriesBar_ {
     encode: js.Object = null,
     id: String = null,
     itemStyle: AnonBarBorderColor = null,
-    label: AnonAlignBackgroundColor = null,
+    label: AnonDictunknownProperty = null,
     large: js.UndefOr[Boolean] = js.undefined,
     largeThreshold: Int | Double = null,
     legendHoverLink: js.UndefOr[Boolean] = js.undefined,
-    markArea: AnonAnimationAnimationDelayAnimationDelayUpdate = null,
-    markLine: AnonAnimationAnimationDelay = null,
+    markArea: AnonAnimationDelayUpdate = null,
+    markLine: AnonAnimationDelay = null,
     markPoint: AnonAnimation = null,
     name: String = null,
     progressive: Int | Double = null,
@@ -736,7 +736,7 @@ object SeriesBar_ {
     progressiveThreshold: Int | Double = null,
     seriesLayoutBy: String = null,
     stack: String = null,
-    tooltip: AnonBackgroundColorBorderColor = null,
+    tooltip: AnonExtraCssText = null,
     `type`: bar = null,
     xAxisIndex: Int | Double = null,
     yAxisIndex: Int | Double = null,

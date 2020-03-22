@@ -5,6 +5,7 @@ import typings.express.mod.Request_
 import typings.express.mod.Response_
 import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.formidable.mod.Files
+import typings.server.keyinLogLevelLogFn
 import typings.server.optionsMod.Options
 import typings.std.Error
 import scala.scalajs.js
@@ -19,9 +20,7 @@ trait Context extends js.Object {
   var headers: StringDictionary[String]
   var ip: String
   var ips: js.UndefOr[js.Array[String]] = js.undefined
-  var log: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in server.server/typings/common.LogLevel ]: server.server/typings/common.LogFn}
-    */ typings.server.serverStrings.Context with js.Any
+  var log: keyinLogLevelLogFn
   var method: String
   var options: Options
   var params: StringDictionary[String]
@@ -44,9 +43,7 @@ object Context {
     files: Files,
     headers: StringDictionary[String],
     ip: String,
-    log: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in server.server/typings/common.LogLevel ]: server.server/typings/common.LogFn}
-    */ typings.server.serverStrings.Context with js.Any,
+    log: keyinLogLevelLogFn,
     method: String,
     options: Options,
     params: StringDictionary[String],

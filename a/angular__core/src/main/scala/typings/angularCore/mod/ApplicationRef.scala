@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/core", "ApplicationRef")
 @js.native
 class ApplicationRef () extends js.Object {
-  var _bootstrapListeners: js.Any = js.native
   var _componentFactoryResolver: js.Any = js.native
   var _console: js.Any = js.native
   var _enforceNoNewChanges: js.Any = js.native
@@ -36,10 +35,6 @@ class ApplicationRef () extends js.Object {
     * @see  [Usage notes](#is-stable-examples) for examples and caveats when using this API.
     */
   val isStable: Observable_[Boolean] = js.native
-  /**
-    * Returns the number of attached views.
-    */
-  val viewCount: Double = js.native
   /**
     * Attaches a view so that it will be dirty checked.
     * The view will be automatically detached when it is destroyed.
@@ -83,5 +78,9 @@ class ApplicationRef () extends js.Object {
     * detection pass during which all change detection must complete.
     */
   def tick(): Unit = js.native
+  /**
+    * Returns the number of attached views.
+    */
+  def viewCount(): Double = js.native
 }
 

@@ -5,6 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonLabelAndValue extends js.Object {
+  var componentName: js.UndefOr[String] = js.undefined
   var labelAndValue: js.UndefOr[String] = js.undefined
   var labelClearSelection: js.UndefOr[String] = js.undefined
   var labelCountWithTotal: js.UndefOr[String] = js.undefined
@@ -26,6 +27,7 @@ trait AnonLabelAndValue extends js.Object {
 object AnonLabelAndValue {
   @scala.inline
   def apply(
+    componentName: String = null,
     labelAndValue: String = null,
     labelClearSelection: String = null,
     labelCountWithTotal: String = null,
@@ -44,6 +46,7 @@ object AnonLabelAndValue {
     stateVisible: String = null
   ): AnonLabelAndValue = {
     val __obj = js.Dynamic.literal()
+    if (componentName != null) __obj.updateDynamic("componentName")(componentName.asInstanceOf[js.Any])
     if (labelAndValue != null) __obj.updateDynamic("labelAndValue")(labelAndValue.asInstanceOf[js.Any])
     if (labelClearSelection != null) __obj.updateDynamic("labelClearSelection")(labelClearSelection.asInstanceOf[js.Any])
     if (labelCountWithTotal != null) __obj.updateDynamic("labelCountWithTotal")(labelCountWithTotal.asInstanceOf[js.Any])

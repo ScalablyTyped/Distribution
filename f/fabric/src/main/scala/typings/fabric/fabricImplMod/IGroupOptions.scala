@@ -1,7 +1,7 @@
 package typings.fabric.fabricImplMod
 
-import typings.fabric.AnonBlBrMbMl
-import typings.fabric.AnonBlBrTlTr
+import typings.fabric.AnonMl
+import typings.fabric.AnonTr
 import typings.fabric.fabricStrings.circle
 import typings.fabric.fabricStrings.rect
 import scala.scalajs.js
@@ -27,7 +27,7 @@ trait IGroupOptions extends IObjectOptions {
 object IGroupOptions {
   @scala.inline
   def apply(
-    aCoords: AnonBlBrTlTr = null,
+    aCoords: AnonTr = null,
     absolutePositioned: js.UndefOr[Boolean] = js.undefined,
     angle: Int | Double = null,
     backgroundColor: String = null,
@@ -78,7 +78,7 @@ object IGroupOptions {
     moveCursor: String = null,
     name: String = null,
     noScaleCache: js.UndefOr[Boolean] = js.undefined,
-    oCoords: AnonBlBrMbMl = null,
+    oCoords: AnonMl = null,
     objectCaching: js.UndefOr[Boolean] = js.undefined,
     opacity: Int | Double = null,
     originX: String = null,

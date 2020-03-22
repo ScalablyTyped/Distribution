@@ -21,15 +21,6 @@ package object mod {
     typings.emotionSerialize.mod._CSSInterpolation | scala.Null | scala.Boolean | scala.Double | java.lang.String | typings.emotionSerialize.mod.Keyframes | typings.emotionUtils.mod.SerializedStyles
   ]
   type CSSProperties = typings.csstype.mod.PropertiesFallback[scala.Double | java.lang.String]
-  type CSSPropertiesWithMultiValues = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof @emotion/serialize.@emotion/serialize.CSSProperties ]: @emotion/serialize.@emotion/serialize.CSSProperties[K] | std.Array<std.Extract<@emotion/serialize.@emotion/serialize.CSSProperties[K], string>>}
-    */ typings.emotionSerialize.emotionSerializeStrings.CSSPropertiesWithMultiValues with js.Any
-  type CSSPseudos[MP] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in csstype.csstype.Pseudos ]:? @emotion/serialize.@emotion/serialize.ObjectInterpolation<MP>}
-    */ typings.emotionSerialize.emotionSerializeStrings.CSSPseudos with js.Any
-  type CSSPseudosForCSSObject = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in csstype.csstype.Pseudos ]:? @emotion/serialize.@emotion/serialize.CSSObject}
-    */ typings.emotionSerialize.emotionSerializeStrings.CSSPseudosForCSSObject with js.Any
   /* Rewritten from type alias, can be one of: 
     - scala.Null
     - `js.undefined`

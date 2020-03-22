@@ -17,24 +17,24 @@ import scala.scalajs.js.annotation._
 
 trait AnonAlignTickMarks extends js.Object {
   var alignTickMarks: off | on
-  var axisLine: AnonAutoLineColor
+  var axisLine: AnonLineColorLineWidth
   var baselineScaling: min | zero
   var dataMax: Double
   var dataMin: Double
-  var majorTick: AnonAutoBaselineColor
+  var majorTick: AnonBaselineColor
   var max: Double
   var maxSize: String
   var min: Double
   var minStep: Double
   var minorStep: Double
-  var minorTick: AnonAutoDashed
+  var minorTick: AnonLineStyle
   var position: start | end | top | bottom | auto
-  var referenceObjects: js.Array[AnonAreaBack]
+  var referenceObjects: js.Array[AnonDisplayInLegend]
   var rendered: off | on
   var scale: log | linear
   var size: String
   var step: Double
-  var tickLabel: AnonAutoBillionConverterInside
+  var tickLabel: AnonPosition
   var title: String
   var titleStyle: js.Object
 }
@@ -43,24 +43,24 @@ object AnonAlignTickMarks {
   @scala.inline
   def apply(
     alignTickMarks: off | on,
-    axisLine: AnonAutoLineColor,
+    axisLine: AnonLineColorLineWidth,
     baselineScaling: min | zero,
     dataMax: Double,
     dataMin: Double,
-    majorTick: AnonAutoBaselineColor,
+    majorTick: AnonBaselineColor,
     max: Double,
     maxSize: String,
     min: Double,
     minStep: Double,
     minorStep: Double,
-    minorTick: AnonAutoDashed,
+    minorTick: AnonLineStyle,
     position: start | end | top | bottom | auto,
-    referenceObjects: js.Array[AnonAreaBack],
+    referenceObjects: js.Array[AnonDisplayInLegend],
     rendered: off | on,
     scale: log | linear,
     size: String,
     step: Double,
-    tickLabel: AnonAutoBillionConverterInside,
+    tickLabel: AnonPosition,
     title: String,
     titleStyle: js.Object
   ): AnonAlignTickMarks = {

@@ -1,8 +1,8 @@
 package typings.amapJsSdk.AMap
 
-import typings.amapJsSdk.AnonCityKeyword
 import typings.amapJsSdk.AnonDestination
 import typings.amapJsSdk.AnonExtensions
+import typings.amapJsSdk.AnonKeyword
 import typings.amapJsSdk.AnonWaypoints
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -26,7 +26,7 @@ class Driving () extends EventBindable {
     callback: js.Function2[/* status */ String, /* result */ String | DrivingResult, Unit]
   ): Unit = js.native
   def search(
-    point: js.Array[AnonCityKeyword],
+    point: js.Array[AnonKeyword],
     callback: js.Function2[/* status */ String, /* result */ String | DrivingResult, Unit]
   ): Unit = js.native
   def searchOnAMAP(obj: AnonDestination): Unit = js.native

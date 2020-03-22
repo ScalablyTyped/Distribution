@@ -4,8 +4,9 @@ import typings.std.Element
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLElement
 import typings.vegaTypings.AnonBottom
+import typings.vegaTypings.AnonContext
 import typings.vegaTypings.AnonData
-import typings.vegaTypings.AnonDataSignals
+import typings.vegaTypings.AnonSignals
 import typings.vegaTypings.dataflowMod.Changeset_
 import typings.vegaTypings.encodeMod.EncodeEntryName
 import typings.vegaTypings.rendererMod.Renderers
@@ -28,8 +29,8 @@ class View protected () extends js.Object {
   def container(): HTMLElement | Null = js.native
   def data(name: String): js.Array[_] = js.native
   def data(name: String, tuples: js.Any): this.type = js.native
-  def getState(): AnonDataSignals = js.native
-  def getState(options: AnonData): AnonDataSignals = js.native
+  def getState(): AnonSignals = js.native
+  def getState(options: AnonData): AnonSignals = js.native
   def height(): Double = js.native
   def height(h: Double): this.type = js.native
   def hover(): this.type = js.native
@@ -57,13 +58,16 @@ class View protected () extends js.Object {
   def runAfter(callback: js.Function1[/* view */ this.type, Unit], enqueue: Boolean): this.type = js.native
   def runAfter(callback: js.Function1[/* view */ this.type, Unit], enqueue: Boolean, priority: Double): this.type = js.native
   def runAsync(): js.Promise[View] = js.native
-  def setState(state: AnonDataSignals): this.type = js.native
+  def setState(state: AnonSignals): this.type = js.native
   def signal(name: String): SignalValue = js.native
   def signal(name: String, value: SignalValue): this.type = js.native
   def toCanvas(): js.Promise[HTMLCanvasElement] = js.native
+  def toCanvas(scaleFactor: Double): js.Promise[HTMLCanvasElement] = js.native
+  def toCanvas(scaleFactor: Double, options: AnonContext): js.Promise[HTMLCanvasElement] = js.native
   def toImageURL(`type`: String): js.Promise[String] = js.native
   def toImageURL(`type`: String, scaleFactor: Double): js.Promise[String] = js.native
   def toSVG(): js.Promise[String] = js.native
+  def toSVG(scaleFactor: Double): js.Promise[String] = js.native
   def tooltip(handler: TooltipHandler): this.type = js.native
   def width(): Double = js.native
   def width(w: Double): this.type = js.native

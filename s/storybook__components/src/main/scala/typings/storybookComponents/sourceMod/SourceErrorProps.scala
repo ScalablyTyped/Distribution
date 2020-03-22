@@ -4,8 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SourceErrorProps extends js.Object {
-  var error: js.UndefOr[SourceError] = js.undefined
+  var error: js.UndefOr[SourceError] = js.native
 }
 
 object SourceErrorProps {

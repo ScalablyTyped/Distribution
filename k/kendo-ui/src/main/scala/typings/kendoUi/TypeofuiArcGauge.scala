@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TypeofuiArcGauge extends js.Object {
-  var ArcGauge: TypeofClassArcGauge = js.native
-  var Barcode: TypeofClassBarcode = js.native
-  var Chart: TypeofClassChart = js.native
-  var Diagram: TypeofClassDiagram = js.native
-  var LinearGauge: TypeofClassLinearGauge = js.native
-  var Map: TypeofClassMap = js.native
-  var QRCode: TypeofClassQRCode = js.native
-  var RadialGauge: TypeofClassRadialGauge = js.native
-  var Sparkline: TypeofClassSparkline = js.native
-  var StockChart: TypeofClassStockChart = js.native
-  var TreeMap: TypeofClassTreeMap = js.native
+  var ArcGauge: TypeofArcGauge = js.native
+  var Barcode: TypeofBarcode = js.native
+  var Chart: TypeofChart = js.native
+  var Diagram: TypeofDiagram = js.native
+  var LinearGauge: TypeofLinearGauge = js.native
+  var Map: TypeofMap = js.native
+  var QRCode: TypeofQRCode = js.native
+  var RadialGauge: TypeofRadialGauge = js.native
+  var Sparkline: TypeofSparkline = js.native
+  var StockChart: TypeofStockChart = js.native
+  var TreeMap: TypeofTreeMap = js.native
   def plugin(
     widget: /* import warning: importer.ImportType#apply Failed type conversion: typeof kendo.ui.Widget */ js.Any
   ): Unit = js.native

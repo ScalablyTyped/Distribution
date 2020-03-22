@@ -1,7 +1,7 @@
 package typings.oracleOraclejet.ojnboxMod
 
-import typings.oracleOraclejet.AnonBorderColorBorderRadiusBorderWidthCircleColor
-import typings.oracleOraclejet.AnonBorderColorBorderRadiusBorderWidthCircleColorDiamond
+import typings.oracleOraclejet.AnonBorderRadiusBorderWidth
+import typings.oracleOraclejet.AnonBorderWidthColor
 import typings.oracleOraclejet.mod.JetElement
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.mod.JetSetPropertyType
@@ -69,7 +69,6 @@ import typings.oracleOraclejet.oracleOraclejetStrings.labelChanged
 import typings.oracleOraclejet.oracleOraclejetStrings.load
 import typings.oracleOraclejet.oracleOraclejetStrings.loadeddata
 import typings.oracleOraclejet.oracleOraclejetStrings.loadedmetadata
-import typings.oracleOraclejet.oracleOraclejetStrings.loadend
 import typings.oracleOraclejet.oracleOraclejetStrings.loadstart
 import typings.oracleOraclejet.oracleOraclejetStrings.lostpointercapture
 import typings.oracleOraclejet.oracleOraclejetStrings.mousedown
@@ -161,9 +160,9 @@ trait ojNBoxNode extends JetElement[ojNBoxNodeSettableProperties] {
   var color: js.UndefOr[String] = js.native
   var column: String = js.native
   var groupCategory: js.UndefOr[String] = js.native
-  var icon: js.UndefOr[AnonBorderColorBorderRadiusBorderWidthCircleColor] = js.native
+  var icon: js.UndefOr[AnonBorderRadiusBorderWidth] = js.native
   var indicatorColor: js.UndefOr[String] = js.native
-  var indicatorIcon: js.UndefOr[AnonBorderColorBorderRadiusBorderWidthCircleColorDiamond] = js.native
+  var indicatorIcon: js.UndefOr[AnonBorderWidthColor] = js.native
   var label: String = js.native
   var onBorderColorChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
   var onBorderWidthChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
@@ -171,15 +170,9 @@ trait ojNBoxNode extends JetElement[ojNBoxNodeSettableProperties] {
   var onColorChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[String]], _]) | Null = js.native
   var onColumnChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
   var onGroupCategoryChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[String]], _]) | Null = js.native
-  var onIconChanged: (js.Function1[
-    /* event */ JetElementCustomEvent[js.UndefOr[AnonBorderColorBorderRadiusBorderWidthCircleColor]], 
-    _
-  ]) | Null = js.native
+  var onIconChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[AnonBorderRadiusBorderWidth]], _]) | Null = js.native
   var onIndicatorColorChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[String]], _]) | Null = js.native
-  var onIndicatorIconChanged: (js.Function1[
-    /* event */ JetElementCustomEvent[js.UndefOr[AnonBorderColorBorderRadiusBorderWidthCircleColorDiamond]], 
-    _
-  ]) | Null = js.native
+  var onIndicatorIconChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[AnonBorderWidthColor]], _]) | Null = js.native
   var onLabelChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
   var onRowChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
   var onSecondaryLabelChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
@@ -569,7 +562,7 @@ trait ojNBoxNode extends JetElement[ojNBoxNodeSettableProperties] {
     `type`: iconChanged,
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[js.UndefOr[AnonBorderColorBorderRadiusBorderWidthCircleColor]], 
+      /* ev */ JetElementCustomEvent[js.UndefOr[AnonBorderRadiusBorderWidth]], 
       _
     ]
   ): Unit = js.native
@@ -578,7 +571,7 @@ trait ojNBoxNode extends JetElement[ojNBoxNodeSettableProperties] {
     `type`: iconChanged,
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[js.UndefOr[AnonBorderColorBorderRadiusBorderWidthCircleColor]], 
+      /* ev */ JetElementCustomEvent[js.UndefOr[AnonBorderRadiusBorderWidth]], 
       _
     ],
     useCapture: Boolean
@@ -599,7 +592,7 @@ trait ojNBoxNode extends JetElement[ojNBoxNodeSettableProperties] {
     `type`: indicatorIconChanged,
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[js.UndefOr[AnonBorderColorBorderRadiusBorderWidthCircleColorDiamond]], 
+      /* ev */ JetElementCustomEvent[js.UndefOr[AnonBorderWidthColor]], 
       _
     ]
   ): Unit = js.native
@@ -608,7 +601,7 @@ trait ojNBoxNode extends JetElement[ojNBoxNodeSettableProperties] {
     `type`: indicatorIconChanged,
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[js.UndefOr[AnonBorderColorBorderRadiusBorderWidthCircleColorDiamond]], 
+      /* ev */ JetElementCustomEvent[js.UndefOr[AnonBorderWidthColor]], 
       _
     ],
     useCapture: Boolean
@@ -686,17 +679,6 @@ trait ojNBoxNode extends JetElement[ojNBoxNodeSettableProperties] {
   def addEventListener_loadedmetadata(
     `type`: loadedmetadata,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event_, _],
-    useCapture: Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_loadend(
-    `type`: loadend,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent[EventTarget], _]
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_loadend(
-    `type`: loadend,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent[EventTarget], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -1198,11 +1180,11 @@ trait ojNBoxNode extends JetElement[ojNBoxNodeSettableProperties] {
   @JSName("getProperty")
   def getProperty_groupCategory(property: groupCategory): js.UndefOr[String] = js.native
   @JSName("getProperty")
-  def getProperty_icon(property: icon): js.UndefOr[AnonBorderColorBorderRadiusBorderWidthCircleColor] = js.native
+  def getProperty_icon(property: icon): js.UndefOr[AnonBorderRadiusBorderWidth] = js.native
   @JSName("getProperty")
   def getProperty_indicatorColor(property: indicatorColor): js.UndefOr[String] = js.native
   @JSName("getProperty")
-  def getProperty_indicatorIcon(property: indicatorIcon): js.UndefOr[AnonBorderColorBorderRadiusBorderWidthCircleColorDiamond] = js.native
+  def getProperty_indicatorIcon(property: indicatorIcon): js.UndefOr[AnonBorderWidthColor] = js.native
   @JSName("getProperty")
   def getProperty_label(property: label): String = js.native
   @JSName("getProperty")
@@ -1234,11 +1216,11 @@ trait ojNBoxNode extends JetElement[ojNBoxNodeSettableProperties] {
   @JSName("setProperty")
   def setProperty_groupCategory(property: groupCategory, value: String): Unit = js.native
   @JSName("setProperty")
-  def setProperty_icon(property: icon, value: AnonBorderColorBorderRadiusBorderWidthCircleColor): Unit = js.native
+  def setProperty_icon(property: icon, value: AnonBorderRadiusBorderWidth): Unit = js.native
   @JSName("setProperty")
   def setProperty_indicatorColor(property: indicatorColor, value: String): Unit = js.native
   @JSName("setProperty")
-  def setProperty_indicatorIcon(property: indicatorIcon, value: AnonBorderColorBorderRadiusBorderWidthCircleColorDiamond): Unit = js.native
+  def setProperty_indicatorIcon(property: indicatorIcon, value: AnonBorderWidthColor): Unit = js.native
   @JSName("setProperty")
   def setProperty_label(property: label, value: String): Unit = js.native
   @JSName("setProperty")

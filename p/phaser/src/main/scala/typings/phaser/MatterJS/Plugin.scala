@@ -1,7 +1,7 @@
 package typings.phaser.MatterJS
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.phaser.Anon
+import typings.phaser.AnonDict
 import typings.phaser.AnonIsRange
 import typings.phaser.AnonName
 import typings.phaser.AnonUses
@@ -49,7 +49,7 @@ object Plugin extends js.Object {
     * @param module {} The module.
     * @return {boolean} `true` if `plugin.for` is applicable to `module`, otherwise `false`.
     */
-  def isFor(plugin: Plugin, module: Anon): Boolean = js.native
+  def isFor(plugin: Plugin, module: AnonDict): Boolean = js.native
   /**
     * Returns `true` if the object meets the minimum standard to be considered a plugin.
     * This means it must define the following properties:

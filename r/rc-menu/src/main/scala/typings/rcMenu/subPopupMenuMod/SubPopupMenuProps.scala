@@ -1,6 +1,6 @@
 package typings.rcMenu.subPopupMenuMod
 
-import typings.rcMenu.AnonItem
+import typings.rcMenu.AnonOpen
 import typings.rcMenu.interfaceMod.BuiltinPlacements
 import typings.rcMenu.interfaceMod.DestroyEventHandler
 import typings.rcMenu.interfaceMod.LegacyFunctionRef
@@ -8,12 +8,14 @@ import typings.rcMenu.interfaceMod.MenuClickEventHandler
 import typings.rcMenu.interfaceMod.MenuInfo
 import typings.rcMenu.interfaceMod.MenuMode
 import typings.rcMenu.interfaceMod.MiniStore
-import typings.rcMenu.interfaceMod.MotionType
 import typings.rcMenu.interfaceMod.OpenEventHandler
 import typings.rcMenu.interfaceMod.RenderIconType
 import typings.rcMenu.interfaceMod.SelectEventHandler
 import typings.rcMenu.interfaceMod.SelectInfo
 import typings.rcMenu.interfaceMod.TriggerSubMenuAction
+import typings.rcMenu.rcMenuStrings.ltr
+import typings.rcMenu.rcMenuStrings.rtl
+import typings.rcTrigger.interfaceMod.MotionType
 import typings.react.mod.CSSProperties
 import typings.react.mod.Key
 import typings.react.mod.ReactInstance
@@ -30,6 +32,7 @@ trait SubPopupMenuProps extends js.Object {
   var defaultActiveFirst: js.UndefOr[Boolean] = js.undefined
   var defaultOpenKeys: js.UndefOr[js.Array[String]] = js.undefined
   var defaultSelectedKeys: js.UndefOr[js.Array[String]] = js.undefined
+  var direction: js.UndefOr[ltr | rtl] = js.undefined
   var eventKey: js.UndefOr[Key] = js.undefined
   var expandIcon: js.UndefOr[RenderIconType] = js.undefined
   var focusable: js.UndefOr[Boolean] = js.undefined
@@ -72,6 +75,7 @@ object SubPopupMenuProps {
     defaultActiveFirst: js.UndefOr[Boolean] = js.undefined,
     defaultOpenKeys: js.Array[String] = null,
     defaultSelectedKeys: js.Array[String] = null,
+    direction: ltr | rtl = null,
     eventKey: Key = null,
     expandIcon: RenderIconType = null,
     focusable: js.UndefOr[Boolean] = js.undefined,
@@ -87,7 +91,7 @@ object SubPopupMenuProps {
     onClick: /* info */ MenuInfo => Unit = null,
     onDeselect: /* info */ SelectInfo => Unit = null,
     onDestroy: /* key */ Key => Unit = null,
-    onOpenChange: /* keys */ js.Array[Key] | AnonItem => Unit = null,
+    onOpenChange: /* keys */ js.Array[Key] | AnonOpen => Unit = null,
     onSelect: /* info */ SelectInfo => Unit = null,
     openKeys: js.Array[String] = null,
     overflowedIndicator: ReactNode = null,
@@ -111,6 +115,7 @@ object SubPopupMenuProps {
     if (!js.isUndefined(defaultActiveFirst)) __obj.updateDynamic("defaultActiveFirst")(defaultActiveFirst.asInstanceOf[js.Any])
     if (defaultOpenKeys != null) __obj.updateDynamic("defaultOpenKeys")(defaultOpenKeys.asInstanceOf[js.Any])
     if (defaultSelectedKeys != null) __obj.updateDynamic("defaultSelectedKeys")(defaultSelectedKeys.asInstanceOf[js.Any])
+    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     if (eventKey != null) __obj.updateDynamic("eventKey")(eventKey.asInstanceOf[js.Any])
     if (expandIcon != null) __obj.updateDynamic("expandIcon")(expandIcon.asInstanceOf[js.Any])
     if (!js.isUndefined(focusable)) __obj.updateDynamic("focusable")(focusable.asInstanceOf[js.Any])

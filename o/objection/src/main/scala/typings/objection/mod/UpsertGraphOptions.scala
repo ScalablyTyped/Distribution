@@ -5,6 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait UpsertGraphOptions extends js.Object {
+  var allowRefs: js.UndefOr[Boolean] = js.undefined
   var insertMissing: js.UndefOr[Boolean | js.Array[String]] = js.undefined
   var noDelete: js.UndefOr[Boolean | js.Array[String]] = js.undefined
   var noInsert: js.UndefOr[Boolean | js.Array[String]] = js.undefined
@@ -19,6 +20,7 @@ trait UpsertGraphOptions extends js.Object {
 object UpsertGraphOptions {
   @scala.inline
   def apply(
+    allowRefs: js.UndefOr[Boolean] = js.undefined,
     insertMissing: Boolean | js.Array[String] = null,
     noDelete: Boolean | js.Array[String] = null,
     noInsert: Boolean | js.Array[String] = null,
@@ -30,6 +32,7 @@ object UpsertGraphOptions {
     update: Boolean | js.Array[String] = null
   ): UpsertGraphOptions = {
     val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowRefs)) __obj.updateDynamic("allowRefs")(allowRefs.asInstanceOf[js.Any])
     if (insertMissing != null) __obj.updateDynamic("insertMissing")(insertMissing.asInstanceOf[js.Any])
     if (noDelete != null) __obj.updateDynamic("noDelete")(noDelete.asInstanceOf[js.Any])
     if (noInsert != null) __obj.updateDynamic("noInsert")(noInsert.asInstanceOf[js.Any])

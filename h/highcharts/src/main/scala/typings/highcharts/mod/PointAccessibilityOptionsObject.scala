@@ -6,6 +6,10 @@ import scala.scalajs.js.annotation._
 
 trait PointAccessibilityOptionsObject extends js.Object {
   /**
+    * (Highcharts, Highstock, Gantt) Provide a description of the data point,
+    * announced to screen readers.
+    */
+  /**
     * Provide a description of the data point, announced to screen readers.
     */
   var description: js.UndefOr[String] = js.undefined

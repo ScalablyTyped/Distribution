@@ -1,6 +1,6 @@
 package typings.antdMobileRn.listItemNativeMod
 
-import typings.antdMobileRn.AnonStylesX
+import typings.antdMobileRn.Anon0
 import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,6 +15,6 @@ class Brief ()
 @JSImport("antd-mobile-rn/lib/list/ListItem.native", "Brief")
 @js.native
 object Brief extends js.Object {
-  var defaultProps: AnonStylesX = js.native
+  var defaultProps: Anon0 = js.native
 }
 

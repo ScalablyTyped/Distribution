@@ -2,31 +2,31 @@ package typings.zingchart.mod
 
 import typings.zingchart.AnonActive
 import typings.zingchart.AnonAdjustlayout
-import typings.zingchart.AnonAdjustlayoutAlpha
-import typings.zingchart.AnonAdjustlayoutAlphaBackgroundcolor
 import typings.zingchart.AnonAlign
 import typings.zingchart.AnonAlpha
-import typings.zingchart.AnonAlphaAnchor
-import typings.zingchart.AnonAlphaAngleAngleend
-import typings.zingchart.AnonAlphaAngleAutofit
-import typings.zingchart.AnonAlphaAngleBackgroundcolorBackgroundcolor1Backgroundcolor2BackgroundfitBackgroundimageBackgroundpositionBackgroundrepeatBorderalphaBorderbottom
-import typings.zingchart.AnonAlphaAnimation
-import typings.zingchart.AnonAlphaAsync
-import typings.zingchart.AnonAlphaBackgroundcolorBackgroundcolor1Backgroundcolor2BackgroundfitBackgroundimageBackgroundpositionBackgroundrepeatBold
-import typings.zingchart.AnonAlphaBackgroundcolorBordercolorBorderwidthLabel
-import typings.zingchart.AnonAlphaExact
+import typings.zingchart.AnonAnchor
 import typings.zingchart.AnonAngle
+import typings.zingchart.AnonAngleend
+import typings.zingchart.AnonAnimation
 import typings.zingchart.AnonAspect
-import typings.zingchart.AnonAspectFormat
+import typings.zingchart.AnonAsync
 import typings.zingchart.AnonAutofit
-import typings.zingchart.AnonBackgroundcolor
-import typings.zingchart.AnonBarHandle
+import typings.zingchart.AnonBackgroundimage
+import typings.zingchart.AnonBorderradiusbottomright
+import typings.zingchart.AnonCalloutextension
+import typings.zingchart.AnonCalloutheight
+import typings.zingchart.AnonCallouthook
 import typings.zingchart.AnonCenter
 import typings.zingchart.AnonColumns
+import typings.zingchart.AnonDecimalsseparator
+import typings.zingchart.AnonExact
 import typings.zingchart.AnonFormat
+import typings.zingchart.AnonGuide
+import typings.zingchart.AnonHandle
 import typings.zingchart.AnonMaxheight
+import typings.zingchart.AnonPreservezoom
 import typings.zingchart.AnonSizefactor
-import typings.zingchart.AnonType
+import typings.zingchart.AnonTypeString
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -57,15 +57,15 @@ trait graphset extends js.Object {
     * Sets the border width of the object. 1 | 3 | | "6px" | ...
     */
   var `border-width`: js.UndefOr[Double] = js.undefined
-  var crosshair: js.UndefOr[AnonAlphaExact] = js.undefined
+  var crosshair: js.UndefOr[AnonExact] = js.undefined
   var csv: js.UndefOr[AnonColumns] = js.undefined
-  var heatmap: js.UndefOr[AnonAlphaAsync] = js.undefined
+  var heatmap: js.UndefOr[AnonAsync] = js.undefined
   /**
     * Sets the height of the object. 10 | "20px" | 0.3 | "30%" | ...
     */
   var height: js.UndefOr[Double] = js.undefined
-  var images: js.UndefOr[js.Array[AnonBackgroundcolor]] = js.undefined
-  var labels: js.UndefOr[js.Array[AnonAlphaAnchor]] = js.undefined
+  var images: js.UndefOr[js.Array[AnonBackgroundimage]] = js.undefined
+  var labels: js.UndefOr[js.Array[AnonAnchor]] = js.undefined
   var legend: js.UndefOr[AnonAdjustlayout] = js.undefined
   /**
     * Sets the line style of the object. "solid" | "dotted" | "dashed" | "dashdot"
@@ -74,38 +74,32 @@ trait graphset extends js.Object {
   var `media-rules`: js.UndefOr[js.Array[AnonMaxheight]] = js.undefined
   var `no-data`: js.UndefOr[AnonAlign] = js.undefined
   var options: js.UndefOr[AnonAspect] = js.undefined
-  var plot: js.UndefOr[AnonAlphaAnimation] = js.undefined
-  var plotarea: js.UndefOr[AnonAdjustlayoutAlpha] = js.undefined
+  var plot: js.UndefOr[AnonAnimation] = js.undefined
+  var plotarea: js.UndefOr[AnonBorderradiusbottomright] = js.undefined
   var preview: js.UndefOr[AnonActive] = js.undefined
   var scale: js.UndefOr[AnonSizefactor] = js.undefined
-  var `scale-k`: js.UndefOr[AnonAspectFormat] = js.undefined
+  var `scale-k`: js.UndefOr[AnonFormat] = js.undefined
   var `scale-r`: js.UndefOr[AnonCenter] = js.undefined
-  var `scale-v`: js.UndefOr[AnonFormat] = js.undefined
+  var `scale-v`: js.UndefOr[AnonGuide] = js.undefined
   var `scale-x`: js.UndefOr[AnonAutofit] = js.undefined
-  var `scale-y`: js.UndefOr[AnonAlphaAngleAutofit] = js.undefined
-  var `scroll-x-scroll-y`: js.UndefOr[AnonBarHandle] = js.undefined
+  var `scale-y`: js.UndefOr[AnonDecimalsseparator] = js.undefined
+  var `scroll-x-scroll-y`: js.UndefOr[AnonHandle] = js.undefined
   var series: js.UndefOr[js.Array[typings.zingchart.mod.series]] = js.undefined
-  var shapes: js.UndefOr[js.Array[AnonAlphaAngleAngleend]] = js.undefined
-  var source: js.UndefOr[
-    AnonAlphaBackgroundcolorBackgroundcolor1Backgroundcolor2BackgroundfitBackgroundimageBackgroundpositionBackgroundrepeatBold
-  ] = js.undefined
-  var subtitle: js.UndefOr[
-    AnonAlphaBackgroundcolorBackgroundcolor1Backgroundcolor2BackgroundfitBackgroundimageBackgroundpositionBackgroundrepeatBold
-  ] = js.undefined
-  var title: js.UndefOr[AnonAdjustlayoutAlphaBackgroundcolor] = js.undefined
-  var tooltip: js.UndefOr[
-    AnonAlphaAngleBackgroundcolorBackgroundcolor1Backgroundcolor2BackgroundfitBackgroundimageBackgroundpositionBackgroundrepeatBorderalphaBorderbottom
-  ] = js.undefined
+  var shapes: js.UndefOr[js.Array[AnonAngleend]] = js.undefined
+  var source: js.UndefOr[AnonCalloutextension] = js.undefined
+  var subtitle: js.UndefOr[AnonCalloutextension] = js.undefined
+  var title: js.UndefOr[AnonCalloutheight] = js.undefined
+  var tooltip: js.UndefOr[AnonCallouthook] = js.undefined
   /**
     * The type of the chart "line" | "bar"...
     */
   var `type`: js.UndefOr[String] = js.undefined
-  var widget: js.UndefOr[AnonType] = js.undefined
+  var widget: js.UndefOr[AnonTypeString] = js.undefined
   /**
     * Sets the width of the object. 10 | "20px" | 0.3 | "30%" | ...
     */
   var width: js.UndefOr[Double] = js.undefined
-  var zoom: js.UndefOr[AnonAlphaBackgroundcolorBordercolorBorderwidthLabel] = js.undefined
+  var zoom: js.UndefOr[AnonPreservezoom] = js.undefined
 }
 
 object graphset {
@@ -118,37 +112,37 @@ object graphset {
     `border-color`: String = null,
     `border-radius`: js.Any = null,
     `border-width`: Int | Double = null,
-    crosshair: AnonAlphaExact = null,
+    crosshair: AnonExact = null,
     csv: AnonColumns = null,
-    heatmap: AnonAlphaAsync = null,
+    heatmap: AnonAsync = null,
     height: Int | Double = null,
-    images: js.Array[AnonBackgroundcolor] = null,
-    labels: js.Array[AnonAlphaAnchor] = null,
+    images: js.Array[AnonBackgroundimage] = null,
+    labels: js.Array[AnonAnchor] = null,
     legend: AnonAdjustlayout = null,
     `line-style`: String = null,
     `media-rules`: js.Array[AnonMaxheight] = null,
     `no-data`: AnonAlign = null,
     options: AnonAspect = null,
-    plot: AnonAlphaAnimation = null,
-    plotarea: AnonAdjustlayoutAlpha = null,
+    plot: AnonAnimation = null,
+    plotarea: AnonBorderradiusbottomright = null,
     preview: AnonActive = null,
     scale: AnonSizefactor = null,
-    `scale-k`: AnonAspectFormat = null,
+    `scale-k`: AnonFormat = null,
     `scale-r`: AnonCenter = null,
-    `scale-v`: AnonFormat = null,
+    `scale-v`: AnonGuide = null,
     `scale-x`: AnonAutofit = null,
-    `scale-y`: AnonAlphaAngleAutofit = null,
-    `scroll-x-scroll-y`: AnonBarHandle = null,
+    `scale-y`: AnonDecimalsseparator = null,
+    `scroll-x-scroll-y`: AnonHandle = null,
     series: js.Array[series] = null,
-    shapes: js.Array[AnonAlphaAngleAngleend] = null,
-    source: AnonAlphaBackgroundcolorBackgroundcolor1Backgroundcolor2BackgroundfitBackgroundimageBackgroundpositionBackgroundrepeatBold = null,
-    subtitle: AnonAlphaBackgroundcolorBackgroundcolor1Backgroundcolor2BackgroundfitBackgroundimageBackgroundpositionBackgroundrepeatBold = null,
-    title: AnonAdjustlayoutAlphaBackgroundcolor = null,
-    tooltip: AnonAlphaAngleBackgroundcolorBackgroundcolor1Backgroundcolor2BackgroundfitBackgroundimageBackgroundpositionBackgroundrepeatBorderalphaBorderbottom = null,
+    shapes: js.Array[AnonAngleend] = null,
+    source: AnonCalloutextension = null,
+    subtitle: AnonCalloutextension = null,
+    title: AnonCalloutheight = null,
+    tooltip: AnonCallouthook = null,
     `type`: String = null,
-    widget: AnonType = null,
+    widget: AnonTypeString = null,
     width: Int | Double = null,
-    zoom: AnonAlphaBackgroundcolorBordercolorBorderwidthLabel = null
+    zoom: AnonPreservezoom = null
   ): graphset = {
     val __obj = js.Dynamic.literal()
     if (`3d-aspect` != null) __obj.updateDynamic("3d-aspect")(`3d-aspect`.asInstanceOf[js.Any])

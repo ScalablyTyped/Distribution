@@ -5,10 +5,9 @@ import typings.d3Scale.mod.ScaleBand_
 import typings.d3Shape.mod.CurveGenerator
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativeSvg.mod.PathProps
 import typings.reactNativeSvgCharts.AnonBottom
+import typings.reactNativeSvgCharts.PartialPathProps
 import typings.std.CanvasRenderingContext2D
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,7 +33,7 @@ object BarChartProps {
     spacingInner: Int | Double = null,
     spacingOuter: Int | Double = null,
     style: StyleProp[ViewStyle] = null,
-    svg: Partial[PathProps] = null,
+    svg: PartialPathProps = null,
     width: Int | Double = null,
     xAccessor: /* props */ AccessorFunctionProps[T] => Double = null,
     xMax: Int | Double = null,

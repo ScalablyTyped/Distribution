@@ -2,6 +2,8 @@ package typings.antd
 
 import typings.antd.buttonButtonMod.ButtonProps
 import typings.antd.buttonGroupMod.ButtonGroupProps
+import typings.antd.contextMod.ConfigConsumerProps
+import typings.react.mod.Context
 import typings.react.mod.SFC
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -21,8 +23,8 @@ object buttonMod extends js.Object {
   object default extends js.Object {
     var Group: SFC[ButtonGroupProps] = js.native
     var __ANT_BUTTON: Boolean = js.native
+    var contextType: Context[ConfigConsumerProps] = js.native
     var defaultProps: AnonBlock = js.native
-    var propTypes: AnonArgs = js.native
   }
   
 }

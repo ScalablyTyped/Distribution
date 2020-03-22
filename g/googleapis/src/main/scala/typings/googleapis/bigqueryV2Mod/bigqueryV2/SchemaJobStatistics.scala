@@ -1,6 +1,6 @@
 package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
-import typings.googleapis.AnonNameSlotMs
+import typings.googleapis.AnonSlotMs
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -49,7 +49,7 @@ trait SchemaJobStatistics extends js.Object {
   /**
     * [Output-only] Job resource usage breakdown by reservation.
     */
-  var reservationUsage: js.UndefOr[js.Array[AnonNameSlotMs]] = js.native
+  var reservationUsage: js.UndefOr[js.Array[AnonSlotMs]] = js.native
   /**
     * [Output-only] Start time of this job, in milliseconds since the epoch.
     * This field will be present when the job transitions from the PENDING
@@ -79,7 +79,7 @@ object SchemaJobStatistics {
     parentJobId: String = null,
     query: SchemaJobStatistics2 = null,
     quotaDeferments: js.Array[String] = null,
-    reservationUsage: js.Array[AnonNameSlotMs] = null,
+    reservationUsage: js.Array[AnonSlotMs] = null,
     startTime: String = null,
     totalBytesProcessed: String = null,
     totalSlotMs: String = null

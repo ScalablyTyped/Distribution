@@ -11,7 +11,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ionic/angular/dist/directives/proxies", "IonRange")
+@JSImport("@ionic/angular/directives/proxies", "IonRange")
 @js.native
 class IonRange protected ()
   extends typings.ionicCore.componentsMod.Components.IonRange {

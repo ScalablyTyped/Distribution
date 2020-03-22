@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import typings.express.mod.Application_
 import typings.restIo.AnonADMIN
-import typings.restIo.TypeofClassResource
+import typings.restIo.TypeofResource
 import typings.restIo.TypeofauthorizedResource
 import typings.restIo.authorizedSubResourceMod.ISubResource
 import scala.scalajs.js
@@ -25,7 +25,7 @@ object default extends js.Object {
   var AuthorizedResource: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof authorizedResource.AuthorizedResource */ js.Any = js.native
   var AuthorizedSubResource: Instantiable1[/* subResDef */ ISubResource, typings.restIo.authorizedSubResourceMod.default] = js.native
   var ROLES: AnonADMIN = js.native
-  var Resource: TypeofClassResource = js.native
+  var Resource: TypeofResource = js.native
   var SubResource: Instantiable1[
     /* subResDef */ typings.restIo.subResourceMod.ISubResource, 
     typings.restIo.subResourceMod.default

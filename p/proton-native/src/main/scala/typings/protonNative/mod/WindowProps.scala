@@ -1,7 +1,7 @@
 package typings.protonNative.mod
 
-import typings.protonNative.AnonHW
-import typings.protonNative.AnonHY
+import typings.protonNative.AnonW
+import typings.protonNative.AnonY
 import typings.react.mod._Global_.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -43,11 +43,11 @@ trait WindowProps extends js.Object {
   /**
     * Called when the window size is changed by the user. The new size is passed as an argument, in an object.
     */
-  var onContentSizeChange: js.UndefOr[js.Function1[/* size */ AnonHY, Unit]] = js.undefined
+  var onContentSizeChange: js.UndefOr[js.Function1[/* size */ AnonY, Unit]] = js.undefined
   /**
     * How big the window is when the application is first started.
     */
-  var size: js.UndefOr[AnonHW] = js.undefined
+  var size: js.UndefOr[AnonW] = js.undefined
   /**
     * The title of the window. Will be shown at the top left ribbon.
     */
@@ -65,8 +65,8 @@ object WindowProps {
     margined: js.UndefOr[Boolean] = js.undefined,
     menuBar: js.UndefOr[Boolean] = js.undefined,
     onClose: () => Unit = null,
-    onContentSizeChange: /* size */ AnonHY => Unit = null,
-    size: AnonHW = null,
+    onContentSizeChange: /* size */ AnonY => Unit = null,
+    size: AnonW = null,
     title: String = null
   ): WindowProps = {
     val __obj = js.Dynamic.literal()

@@ -3,7 +3,6 @@ package typings.officeUiFabricReact
 import org.scalablytyped.runtime.Instantiable0
 import typings.officeUiFabricReact.baseButtonMod.IBaseButtonProps
 import typings.officeUiFabricReact.buttonTypesMod.IButtonProps
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -55,7 +54,7 @@ object buttonMod extends js.Object {
   /* static members */
   @js.native
   object BaseButton extends js.Object {
-    var defaultProps: Partial[IBaseButtonProps] = js.native
+    var defaultProps: PartialIBaseButtonProps = js.native
   }
   
   @js.native

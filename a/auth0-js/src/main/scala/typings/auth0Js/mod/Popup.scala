@@ -1,10 +1,10 @@
 package typings.auth0Js.mod
 
 import typings.auth0Js.AnonAudience
-import typings.auth0Js.AnonCode
 import typings.auth0Js.AnonConnection
-import typings.auth0Js.AnonConnectionEmail
+import typings.auth0Js.AnonEmail
 import typings.auth0Js.AnonHash
+import typings.auth0Js.AnonResponseMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,11 +33,11 @@ class Popup protected () extends js.Object {
     * This method is not compatible with API Auth so if you need to fetch API tokens with audience
     * you should use {@link authorize} or {@link login}.
     */
-  def loginWithCredentials(options: AnonCode, callback: Auth0Callback[_, Auth0Error]): Unit = js.native
+  def loginWithCredentials(options: AnonResponseMode, callback: Auth0Callback[_, Auth0Error]): Unit = js.native
   /**
     * Verifies the passwordless TOTP and returns the requested token
     */
-  def passwordlessVerify(options: AnonConnectionEmail, callback: Auth0Callback[_, Auth0Error]): Unit = js.native
+  def passwordlessVerify(options: AnonEmail, callback: Auth0Callback[_, Auth0Error]): Unit = js.native
   /**
     * Initializes the popup window and returns the instance to be used later in order to avoid being blocked by the browser.
     *

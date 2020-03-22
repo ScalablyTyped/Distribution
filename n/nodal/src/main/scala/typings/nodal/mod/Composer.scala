@@ -1,6 +1,6 @@
 package typings.nodal.mod
 
-import typings.nodal.TypeofClassModel
+import typings.nodal.TypeofModel
 import typings.nodal.nodalStrings.ASC
 import typings.nodal.nodalStrings.DESC
 import typings.nodal.nodalStrings.DSC
@@ -17,8 +17,8 @@ class Composer[T /* <: Model */] protected () extends js.Object {
     * @param {Nodal.Model} Model The model class the composer is querying from
     * @param {Nodal.Composer} [parent=null] The composer's parent (another composer instance)
     */
-  def this(modelConstructor: TypeofClassModel) = this()
-  def this(modelConstructor: TypeofClassModel, parent: Composer[_]) = this()
+  def this(modelConstructor: TypeofModel) = this()
+  def this(modelConstructor: TypeofModel, parent: Composer[_]) = this()
   var Model: T = js.native
   var _command: js.Any = js.native
   var _parent: js.Any = js.native

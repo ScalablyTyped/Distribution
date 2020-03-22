@@ -45,7 +45,7 @@ class RecorderManager () extends js.Object {
   /**
     * 开始录音
     */
-  def start(param: Anon1): Unit = js.native
+  def start(param: AnonAudioSource): Unit = js.native
   /**
     * 停止录音
     */

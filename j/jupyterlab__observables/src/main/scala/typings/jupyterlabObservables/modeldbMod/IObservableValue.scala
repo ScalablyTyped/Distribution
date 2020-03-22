@@ -2,8 +2,8 @@ package typings.jupyterlabObservables.modeldbMod
 
 import typings.jupyterlabObservables.jupyterlabObservablesStrings.Value
 import typings.jupyterlabObservables.modeldbMod.ObservableValue.IChangedArgs
-import typings.phosphorCoreutils.jsonMod.JSONValue
-import typings.phosphorSignaling.mod.ISignal
+import typings.luminoCoreutils.jsonMod.PartialJSONValue
+import typings.luminoSignaling.mod.ISignal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,11 +21,11 @@ trait IObservableValue extends IObservable {
   /**
     * Get the current value, or `undefined` if it has not been set.
     */
-  def get(): js.UndefOr[JSONValue]
+  def get(): js.UndefOr[PartialJSONValue]
   /**
     * Set the value.
     */
-  def set(value: JSONValue): Unit
+  def set(value: PartialJSONValue): Unit
 }
 
 object IObservableValue {
@@ -33,9 +33,9 @@ object IObservableValue {
   def apply(
     changed: ISignal[IObservableValue, IChangedArgs],
     dispose: () => Unit,
-    get: () => js.UndefOr[JSONValue],
+    get: () => js.UndefOr[PartialJSONValue],
     isDisposed: Boolean,
-    set: JSONValue => Unit,
+    set: PartialJSONValue => Unit,
     `type`: Value
   ): IObservableValue = {
     val __obj = js.Dynamic.literal(changed = changed.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), get = js.Any.fromFunction0(get), isDisposed = isDisposed.asInstanceOf[js.Any], set = js.Any.fromFunction1(set))

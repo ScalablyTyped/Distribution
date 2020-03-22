@@ -2,7 +2,7 @@ package typings.wordpressApiFetch.mod.Schema
 
 import typings.std.Record
 import typings.wordpressApiFetch.AnonBlockversion
-import typings.wordpressApiFetch.AnonHref
+import typings.wordpressApiFetch.AnonDictk
 import typings.wordpressApiFetch.AnonProtectedRaw
 import typings.wordpressApiFetch.AnonRawString
 import scala.scalajs.js
@@ -29,7 +29,7 @@ trait BaseBlock[T /* <: Context */] extends BaseResponse {
 object BaseBlock {
   @scala.inline
   def apply[T /* <: Context */](
-    _links: Record[String, js.Array[AnonHref]],
+    _links: Record[String, js.Array[AnonDictk]],
     content: AnonProtectedRaw with (js.Object | AnonBlockversion),
     date: String,
     date_gmt: String,

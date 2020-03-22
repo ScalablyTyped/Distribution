@@ -17,7 +17,7 @@ trait Options_ extends js.Object {
   var debounceRendering: js.UndefOr[js.Function1[/* cb */ js.Function0[Unit], Unit]] = js.undefined
   /** Attach a hook that is invoked after a vnode has rendered. */
   var diffed: js.UndefOr[js.Function1[/* vnode */ VNode[js.Object], Unit]] = js.undefined
-  var event: js.UndefOr[js.Function1[/* e */ Event_, Unit]] = js.undefined
+  var event: js.UndefOr[js.Function1[/* e */ Event_, _]] = js.undefined
   var requestAnimationFrame: js.UndefOr[js.Function1[/* callback */ FrameRequestCallback, Double]] = js.undefined
   /** Attach a hook that is invoked immediately before a vnode is unmounted. */
   var unmount: js.UndefOr[js.Function1[/* vnode */ VNode[js.Object], Unit]] = js.undefined
@@ -32,7 +32,7 @@ object Options_ {
     __suspenseDidResolve: (/* vnode */ VNode[js.Object], /* cb */ js.Function0[Unit]) => Unit = null,
     debounceRendering: /* cb */ js.Function0[Unit] => Unit = null,
     diffed: /* vnode */ VNode[js.Object] => Unit = null,
-    event: /* e */ Event_ => Unit = null,
+    event: /* e */ Event_ => _ = null,
     requestAnimationFrame: /* callback */ FrameRequestCallback => Double = null,
     unmount: /* vnode */ VNode[js.Object] => Unit = null,
     useDebugValue: /* value */ String | Double => Unit = null,

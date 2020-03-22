@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 object linkifyjsStrings {
   @js.native
+  sealed trait abort extends js.Object
+  
+  @js.native
   sealed trait email extends LinkEntityType
   
   @js.native
@@ -30,6 +33,8 @@ object linkifyjsStrings {
   @js.native
   sealed trait url extends LinkEntityType
   
+  @scala.inline
+  def abort: abort = "abort".asInstanceOf[abort]
   @scala.inline
   def email: email = "email".asInstanceOf[email]
   @scala.inline

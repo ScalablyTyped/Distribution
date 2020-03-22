@@ -8,7 +8,7 @@ trait PaneBackgroundOptions extends js.Object {
   /**
     * (Highcharts) The background color or gradient for the pane.
     */
-  var backgroundColor: js.UndefOr[GradientColorObject] = js.undefined
+  var backgroundColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * (Highcharts) The pane background border color.
     */
@@ -42,7 +42,7 @@ trait PaneBackgroundOptions extends js.Object {
 object PaneBackgroundOptions {
   @scala.inline
   def apply(
-    backgroundColor: GradientColorObject = null,
+    backgroundColor: ColorString | GradientColorObject | PatternObject = null,
     borderColor: ColorString | GradientColorObject | PatternObject = null,
     borderWidth: Int | Double = null,
     className: String = null,

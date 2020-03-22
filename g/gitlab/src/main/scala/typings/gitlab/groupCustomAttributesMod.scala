@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object groupCustomAttributesMod extends js.Object {
   @js.native
-  class GroupCustomAttributes () extends ResourceCustomAttributes {
+  class GroupCustomAttributes protected () extends ResourceCustomAttributes {
     def this(options: BaseServiceOptions) = this()
   }
   

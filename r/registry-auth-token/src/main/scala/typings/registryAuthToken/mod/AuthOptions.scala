@@ -1,6 +1,6 @@
 package typings.registryAuthToken.mod
 
-import typings.registryAuthToken.AnonRegistry
+import typings.registryAuthToken.AnonDictregistryUrls
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ trait AuthOptions extends js.Object {
     * An npmrc configuration object used when searching for tokens. If no object is provided,
     * the `.npmrc` file at the base of the project is used.
     */
-  var npmrc: js.UndefOr[AnonRegistry] = js.undefined
+  var npmrc: js.UndefOr[AnonDictregistryUrls] = js.undefined
   /**
     * Wether or not url's path parts are recursively trimmed from the registry
     * url when searching for tokens
@@ -23,7 +23,7 @@ trait AuthOptions extends js.Object {
 
 object AuthOptions {
   @scala.inline
-  def apply(npmrc: AnonRegistry = null, recursive: js.UndefOr[Boolean] = js.undefined): AuthOptions = {
+  def apply(npmrc: AnonDictregistryUrls = null, recursive: js.UndefOr[Boolean] = js.undefined): AuthOptions = {
     val __obj = js.Dynamic.literal()
     if (npmrc != null) __obj.updateDynamic("npmrc")(npmrc.asInstanceOf[js.Any])
     if (!js.isUndefined(recursive)) __obj.updateDynamic("recursive")(recursive.asInstanceOf[js.Any])

@@ -2,7 +2,7 @@ package typings.jupyterlabObservables.observablestringMod
 
 import typings.jupyterlabObservables.modeldbMod.IObservable
 import typings.jupyterlabObservables.observablestringMod.IObservableString.IChangedArgs
-import typings.phosphorSignaling.mod.ISignal
+import typings.luminoSignaling.mod.ISignal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

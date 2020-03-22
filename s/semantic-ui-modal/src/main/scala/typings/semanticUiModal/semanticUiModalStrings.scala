@@ -6,13 +6,7 @@ import scala.scalajs.js.annotation._
 
 object semanticUiModalStrings {
   @js.native
-  sealed trait active extends js.Object
-  
-  @js.native
   sealed trait allowMultiple extends js.Object
-  
-  @js.native
-  sealed trait approve extends js.Object
   
   @js.native
   sealed trait `attach events` extends js.Object
@@ -33,16 +27,10 @@ object semanticUiModalStrings {
   sealed trait closable extends js.Object
   
   @js.native
-  sealed trait close extends js.Object
-  
-  @js.native
   sealed trait context extends js.Object
   
   @js.native
   sealed trait debug extends js.Object
-  
-  @js.native
-  sealed trait deny extends js.Object
   
   @js.native
   sealed trait destroy extends js.Object
@@ -76,9 +64,6 @@ object semanticUiModalStrings {
   
   @js.native
   sealed trait keyboardShortcuts extends js.Object
-  
-  @js.native
-  sealed trait method extends js.Object
   
   @js.native
   sealed trait name extends js.Object
@@ -120,9 +105,6 @@ object semanticUiModalStrings {
   sealed trait refresh extends js.Object
   
   @js.native
-  sealed trait scrolling extends js.Object
-  
-  @js.native
   sealed trait selector extends js.Object
   
   @js.native
@@ -150,11 +132,7 @@ object semanticUiModalStrings {
   sealed trait verbose extends js.Object
   
   @scala.inline
-  def active: active = "active".asInstanceOf[active]
-  @scala.inline
   def allowMultiple: allowMultiple = "allowMultiple".asInstanceOf[allowMultiple]
-  @scala.inline
-  def approve: approve = "approve".asInstanceOf[approve]
   @scala.inline
   def `attach events`: `attach events` = "attach events".asInstanceOf[`attach events`]
   @scala.inline
@@ -168,13 +146,9 @@ object semanticUiModalStrings {
   @scala.inline
   def closable: closable = "closable".asInstanceOf[closable]
   @scala.inline
-  def close: close = "close".asInstanceOf[close]
-  @scala.inline
   def context: context = "context".asInstanceOf[context]
   @scala.inline
   def debug: debug = "debug".asInstanceOf[debug]
-  @scala.inline
-  def deny: deny = "deny".asInstanceOf[deny]
   @scala.inline
   def destroy: destroy = "destroy".asInstanceOf[destroy]
   @scala.inline
@@ -197,8 +171,6 @@ object semanticUiModalStrings {
   def `is active`: `is active` = "is active".asInstanceOf[`is active`]
   @scala.inline
   def keyboardShortcuts: keyboardShortcuts = "keyboardShortcuts".asInstanceOf[keyboardShortcuts]
-  @scala.inline
-  def method: method = "method".asInstanceOf[method]
   @scala.inline
   def name: name = "name".asInstanceOf[name]
   @scala.inline
@@ -225,8 +197,6 @@ object semanticUiModalStrings {
   def queue: queue = "queue".asInstanceOf[queue]
   @scala.inline
   def refresh: refresh = "refresh".asInstanceOf[refresh]
-  @scala.inline
-  def scrolling: scrolling = "scrolling".asInstanceOf[scrolling]
   @scala.inline
   def selector: selector = "selector".asInstanceOf[selector]
   @scala.inline

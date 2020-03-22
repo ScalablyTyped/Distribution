@@ -6,7 +6,13 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ConfigureAgentRequest extends js.Object {
+  /**
+    * 
+    */
   var fleetInstanceId: js.UndefOr[FleetInstanceId] = js.native
+  /**
+    * 
+    */
   var profilingGroupName: ProfilingGroupName = js.native
 }
 

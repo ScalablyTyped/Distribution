@@ -5,29 +5,29 @@ import typings.vsoNodeApi.AnonEnumValuesAnonAbandoned
 import typings.vsoNodeApi.AnonEnumValuesAnonAboveNormal
 import typings.vsoNodeApi.AnonEnumValuesAnonAdd
 import typings.vsoNodeApi.AnonEnumValuesAnonAll
-import typings.vsoNodeApi.AnonEnumValuesAnonAllBatchedContinuousIntegration
 import typings.vsoNodeApi.AnonEnumValuesAnonAllBuildDir
-import typings.vsoNodeApi.AnonEnumValuesAnonAllCancelling
-import typings.vsoNodeApi.AnonEnumValuesAnonAllDetails
-import typings.vsoNodeApi.AnonEnumValuesAnonAllFriday
-import typings.vsoNodeApi.AnonEnumValuesAnonAllHosted
+import typings.vsoNodeApi.AnonEnumValuesAnonBatchedContinuousIntegration
 import typings.vsoNodeApi.AnonEnumValuesAnonBoolean
 import typings.vsoNodeApi.AnonEnumValuesAnonBuild
 import typings.vsoNodeApi.AnonEnumValuesAnonCanceled
+import typings.vsoNodeApi.AnonEnumValuesAnonCancelling
 import typings.vsoNodeApi.AnonEnumValuesAnonCloak
 import typings.vsoNodeApi.AnonEnumValuesAnonCompleted
 import typings.vsoNodeApi.AnonEnumValuesAnonCustom
-import typings.vsoNodeApi.AnonEnumValuesAnonCustomDefault
+import typings.vsoNodeApi.AnonEnumValuesAnonDefault
 import typings.vsoNodeApi.AnonEnumValuesAnonDefinition
 import typings.vsoNodeApi.AnonEnumValuesAnonDefinitionNameAscending
+import typings.vsoNodeApi.AnonEnumValuesAnonDetails
 import typings.vsoNodeApi.AnonEnumValuesAnonDisabled
 import typings.vsoNodeApi.AnonEnumValuesAnonDoNotRun
 import typings.vsoNodeApi.AnonEnumValuesAnonError
-import typings.vsoNodeApi.AnonEnumValuesAnonErrorOK
 import typings.vsoNodeApi.AnonEnumValuesAnonExcludeDeleted
 import typings.vsoNodeApi.AnonEnumValuesAnonFailed
 import typings.vsoNodeApi.AnonEnumValuesAnonFinishTimeAscending
 import typings.vsoNodeApi.AnonEnumValuesAnonFolderAscending
+import typings.vsoNodeApi.AnonEnumValuesAnonFriday
+import typings.vsoNodeApi.AnonEnumValuesAnonHosted
+import typings.vsoNodeApi.AnonEnumValuesAnonOK
 import typings.vsoNodeApi.AnonEnumValuesAnonOffline
 import typings.vsoNodeApi.AnonEnumValuesAnonProject
 import typings.vsoNodeApi.AnonEnumValuesAnonRequired
@@ -75,7 +75,7 @@ object TypeInfo extends js.Object {
   var BuildResult: AnonEnumValuesAnonCanceled = js.native
   var BuildServer: js.Any = js.native
   var BuildStartedEvent: js.Any = js.native
-  var BuildStatus: AnonEnumValuesAnonAllCancelling = js.native
+  var BuildStatus: AnonEnumValuesAnonCancelling = js.native
   var BuildSummary: js.Any = js.native
   var BuildTrigger: js.Any = js.native
   var BuildUpdatedEvent: js.Any = js.native
@@ -87,9 +87,9 @@ object TypeInfo extends js.Object {
   var DefinitionQueryOrder: AnonEnumValuesAnonDefinitionNameAscending = js.native
   var DefinitionQueueStatus: AnonEnumValuesAnonDisabled = js.native
   var DefinitionReference: js.Any = js.native
-  var DefinitionTriggerType: AnonEnumValuesAnonAllBatchedContinuousIntegration = js.native
+  var DefinitionTriggerType: AnonEnumValuesAnonBatchedContinuousIntegration = js.native
   var DefinitionType: AnonEnumValuesAnonBuild = js.native
-  var DeleteOptions: AnonEnumValuesAnonAllDetails = js.native
+  var DeleteOptions: AnonEnumValuesAnonDetails = js.native
   var DesignerProcess: js.Any = js.native
   var Folder: js.Any = js.native
   var FolderQueryOrder: AnonEnumValuesAnonFolderAscending = js.native
@@ -99,18 +99,18 @@ object TypeInfo extends js.Object {
   var Issue: js.Any = js.native
   var IssueType: AnonEnumValuesAnonError = js.native
   var Phase: js.Any = js.native
-  var ProcessTemplateType: AnonEnumValuesAnonCustomDefault = js.native
+  var ProcessTemplateType: AnonEnumValuesAnonDefault = js.native
   var PullRequestTrigger: js.Any = js.native
   var QueryDeletedOption: AnonEnumValuesAnonExcludeDeleted = js.native
   var QueueOptions: AnonEnumValuesAnonDoNotRun = js.native
   var QueuePriority: AnonEnumValuesAnonAboveNormal = js.native
   var RepositoryCleanOptions: AnonEnumValuesAnonAllBuildDir = js.native
   var Schedule: js.Any = js.native
-  var ScheduleDays: AnonEnumValuesAnonAllFriday = js.native
+  var ScheduleDays: AnonEnumValuesAnonFriday = js.native
   var ScheduleTrigger: js.Any = js.native
   var ServiceHostStatus: AnonEnumValuesAnonOffline = js.native
   var SourceProviderAttributes: js.Any = js.native
-  var SourceProviderAvailability: AnonEnumValuesAnonAllHosted = js.native
+  var SourceProviderAvailability: AnonEnumValuesAnonHosted = js.native
   var SupportLevel: AnonEnumValuesAnonRequired = js.native
   var SupportedTrigger: js.Any = js.native
   var SyncBuildCompletedEvent: js.Any = js.native
@@ -120,7 +120,7 @@ object TypeInfo extends js.Object {
   var TimelineRecord: js.Any = js.native
   var TimelineRecordState: AnonEnumValuesAnonCompleted = js.native
   var TimelineRecordsUpdatedEvent: js.Any = js.native
-  var ValidationResult: AnonEnumValuesAnonErrorOK = js.native
+  var ValidationResult: AnonEnumValuesAnonOK = js.native
   var WorkspaceMapping: js.Any = js.native
   var WorkspaceMappingType: AnonEnumValuesAnonCloak = js.native
   var WorkspaceTemplate: js.Any = js.native

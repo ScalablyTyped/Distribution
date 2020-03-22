@@ -1,8 +1,8 @@
 package typings.ionicCore.componentsMod.Components
 
+import typings.ionicCore.animationInterfaceMod.AnimationBuilder
 import typings.ionicCore.ionicCoreStrings.ios
 import typings.ionicCore.ionicCoreStrings.md
-import typings.ionicCore.oldAnimationAnimationInterfaceMod.AnimationBuilder
 import typings.ionicCore.overlaysInterfaceMod.OverlayEventDetail
 import typings.ionicCore.spinnerConfigsMod.SpinnerTypes
 import scala.scalajs.js

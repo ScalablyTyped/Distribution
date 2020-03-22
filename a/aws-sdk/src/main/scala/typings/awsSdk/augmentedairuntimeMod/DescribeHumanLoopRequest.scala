@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DescribeHumanLoopRequest extends js.Object {
   /**
-    * The name of the human loop.
+    * The unique name of the human loop.
     */
   var HumanLoopName: typings.awsSdk.augmentedairuntimeMod.HumanLoopName = js.native
 }

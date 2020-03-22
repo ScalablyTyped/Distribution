@@ -24,7 +24,7 @@ class RestoreAgentRequest () extends IRestoreAgentRequest {
   var agent: js.UndefOr[agentUri | agentContent] = js.native
   /** RestoreAgentRequest agentContent. */
   @JSName("agentContent")
-  var agentContent_RestoreAgentRequest: Uint8Array = js.native
+  var agentContent_RestoreAgentRequest: Uint8Array | String = js.native
   /** RestoreAgentRequest agentUri. */
   @JSName("agentUri")
   var agentUri_RestoreAgentRequest: String = js.native

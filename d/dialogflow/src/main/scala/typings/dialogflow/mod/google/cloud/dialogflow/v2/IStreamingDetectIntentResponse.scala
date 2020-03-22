@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 /** Properties of a StreamingDetectIntentResponse. */
 trait IStreamingDetectIntentResponse extends js.Object {
   /** StreamingDetectIntentResponse outputAudio */
-  var outputAudio: js.UndefOr[Uint8Array | Null] = js.undefined
+  var outputAudio: js.UndefOr[Uint8Array | String | Null] = js.undefined
   /** StreamingDetectIntentResponse outputAudioConfig */
   var outputAudioConfig: js.UndefOr[IOutputAudioConfig | Null] = js.undefined
   /** StreamingDetectIntentResponse queryResult */
@@ -25,7 +25,7 @@ trait IStreamingDetectIntentResponse extends js.Object {
 object IStreamingDetectIntentResponse {
   @scala.inline
   def apply(
-    outputAudio: Uint8Array = null,
+    outputAudio: Uint8Array | String = null,
     outputAudioConfig: IOutputAudioConfig = null,
     queryResult: IQueryResult = null,
     recognitionResult: IStreamingRecognitionResult = null,

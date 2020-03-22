@@ -13,7 +13,6 @@ package object mod {
   type IndexDocuments[T] = org.scalablytyped.runtime.StringDictionary[T]
   type IndexTokens = org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]]
   type InvertedIndexDocs = org.scalablytyped.runtime.StringDictionary[typings.elasticlunr.AnonTf]
-  type InvertedIndexNode = typings.elasticlunr.mod.InvertedIndexCharNode with typings.elasticlunr.AnonDf
   type PipelineFunction = js.Function3[
     /* token */ java.lang.String, 
     /* i */ scala.Double, 

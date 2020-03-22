@@ -1,6 +1,6 @@
 package typings.stripe.mod.paymentMethods
 
-import typings.stripe.AnonAddressEmail
+import typings.stripe.AnonEmail
 import typings.stripe.mod.IMetadata
 import typings.stripe.mod.customers.ICustomer
 import typings.stripe.stripeStrings.card_present
@@ -24,7 +24,7 @@ object ICardPresentPaymentMethod {
     metadata: IMetadata,
     `object`: payment_method,
     `type`: card_present,
-    billing_details: AnonAddressEmail = null,
+    billing_details: AnonEmail = null,
     customer: String | ICustomer = null
   ): ICardPresentPaymentMethod = {
     val __obj = js.Dynamic.literal(created = created.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any])

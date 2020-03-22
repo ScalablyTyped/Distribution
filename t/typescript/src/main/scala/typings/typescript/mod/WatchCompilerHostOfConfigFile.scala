@@ -15,6 +15,7 @@ trait WatchCompilerHostOfConfigFile[T /* <: BuilderProgram */]
   var configFileName: java.lang.String = js.native
   /** Options to extend */
   var optionsToExtend: js.UndefOr[CompilerOptions] = js.native
+  var watchOptionsToExtend: js.UndefOr[WatchOptions] = js.native
   /**
     * Used to generate source file names from the config file and its include, exclude, files rules
     * and also to cache the directory stucture

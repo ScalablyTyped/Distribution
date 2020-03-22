@@ -1,6 +1,6 @@
 package typings.fhirJsClient.FHIR.SMART
 
-import typings.fhirJsClient.AnonAt
+import typings.fhirJsClient.AnonDictpropName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -50,7 +50,7 @@ object SearchParams {
   def apply(
     `type`: String,
     count: Int | Double = null,
-    params: AnonAt = null,
+    params: AnonDictpropName = null,
     patient: String = null,
     query: js.Any = null,
     since: String = null

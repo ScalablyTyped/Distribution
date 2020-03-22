@@ -1,9 +1,8 @@
 package typings.materializeCss.mod
 
-import typings.materializeCss.M.FloatingActionButtonOptions
 import typings.materializeCss.MElements
+import typings.materializeCss.PartialFloatingActionButt
 import typings.std.Element
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,11 +24,11 @@ object FloatingActionButton extends js.Object {
     * Init FloatingActionButtons
     */
   def init(els: MElements): js.Array[typings.materializeCss.M.FloatingActionButton] = js.native
-  def init(els: MElements, options: Partial[FloatingActionButtonOptions]): js.Array[typings.materializeCss.M.FloatingActionButton] = js.native
+  def init(els: MElements, options: PartialFloatingActionButt): js.Array[typings.materializeCss.M.FloatingActionButton] = js.native
   /**
     * Init FloatingActionButton
     */
   def init(els: Element): typings.materializeCss.M.FloatingActionButton = js.native
-  def init(els: Element, options: Partial[FloatingActionButtonOptions]): typings.materializeCss.M.FloatingActionButton = js.native
+  def init(els: Element, options: PartialFloatingActionButt): typings.materializeCss.M.FloatingActionButton = js.native
 }
 

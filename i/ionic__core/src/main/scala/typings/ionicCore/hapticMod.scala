@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object hapticMod extends js.Object {
   def hapticAvailable(): Boolean = js.native
-  def hapticImpact(options: AnonHeavy): Unit = js.native
-  def hapticNotification(options: AnonError): Unit = js.native
+  def hapticImpact(options: Anon0): Unit = js.native
+  def hapticNotification(options: AnonType): Unit = js.native
   def hapticSelection(): Unit = js.native
   def hapticSelectionChanged(): Unit = js.native
   def hapticSelectionEnd(): Unit = js.native

@@ -1,6 +1,7 @@
 package typings.pdfImage.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.pdfImage.ReadonlyConvertOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,7 +27,7 @@ class PDFImage[CombinedImage /* <: Boolean */] protected () extends js.Object {
   def setConvertExtension(): Unit = js.native
   def setConvertExtension(convertExtension: String): Unit = js.native
   def setConvertOptions(): Unit = js.native
-  def setConvertOptions(convertOptions: ConvertOptions): Unit = js.native
+  def setConvertOptions(convertOptions: ReadonlyConvertOptions): Unit = js.native
   def setPdfFileBaseName(): Unit = js.native
   def setPdfFileBaseName(pdfFileBaseName: String): Unit = js.native
 }

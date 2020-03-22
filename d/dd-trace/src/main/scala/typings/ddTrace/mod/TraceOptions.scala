@@ -1,5 +1,6 @@
 package typings.ddTrace.mod
 
+import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,7 +25,7 @@ trait TraceOptions extends Analyzable {
 object TraceOptions {
   @scala.inline
   def apply(
-    analytics: Boolean | Double = null,
+    analytics: Boolean | Double | (StringDictionary[Boolean | Double]) = null,
     resource: String = null,
     service: String = null,
     `type`: String = null

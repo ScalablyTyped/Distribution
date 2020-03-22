@@ -1,7 +1,7 @@
 package typings.reactLazylog.searchBarMod
 
 import typings.react.mod.Component
-import typings.std.Partial
+import typings.reactLazylog.PartialSearchBarProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,6 +15,6 @@ class default ()
 @JSImport("react-lazylog/build/SearchBar", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: Partial[SearchBarProps] = js.native
+  var defaultProps: PartialSearchBarProps = js.native
 }
 

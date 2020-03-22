@@ -28,7 +28,7 @@ trait GoogleApiYouTubePlaylistResource extends js.Object {
   /**
     * The snippet object contains basic details about the playlist, such as its title and description.
     */
-  var snippet: AnonChannelIdChannelTitleDescriptionPublishedAt
+  var snippet: AnonPublishedAt
   /**
     * The status object contains status information for the playlist.
     */
@@ -43,7 +43,7 @@ object GoogleApiYouTubePlaylistResource {
     id: String,
     kind: String,
     player: AnonEmbedHtml,
-    snippet: AnonChannelIdChannelTitleDescriptionPublishedAt,
+    snippet: AnonPublishedAt,
     status: AnonPrivacyStatus
   ): GoogleApiYouTubePlaylistResource = {
     val __obj = js.Dynamic.literal(contentDetails = contentDetails.asInstanceOf[js.Any], etag = etag.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], player = player.asInstanceOf[js.Any], snippet = snippet.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])

@@ -17,6 +17,6 @@ class AttachmentsCellModel_ protected () extends CellModel {
   /**
     * Get the attachments of the model.
     */
-  val attachments: IAttachmentsModel = js.native
+  def attachments(): IAttachmentsModel = js.native
 }
 

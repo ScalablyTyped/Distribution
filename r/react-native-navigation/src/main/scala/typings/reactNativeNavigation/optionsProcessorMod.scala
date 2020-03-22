@@ -2,6 +2,7 @@ package typings.reactNativeNavigation
 
 import typings.reactNativeNavigation.assetResolverMod.AssetService
 import typings.reactNativeNavigation.colorServiceMod.ColorService
+import typings.reactNativeNavigation.deprecationsMod.Deprecations
 import typings.reactNativeNavigation.optionsMod.Options
 import typings.reactNativeNavigation.storeMod.Store
 import typings.reactNativeNavigation.uniqueIdProviderMod.UniqueIdProvider
@@ -18,10 +19,12 @@ object optionsProcessorMod extends js.Object {
       store: Store,
       uniqueIdProvider: UniqueIdProvider,
       colorService: ColorService,
-      assetService: AssetService
+      assetService: AssetService,
+      deprecations: Deprecations
     ) = this()
     var assetService: js.Any = js.native
     var colorService: js.Any = js.native
+    var deprecations: js.Any = js.native
     var processButtonsPassProps: js.Any = js.native
     var processColor: js.Any = js.native
     var processComponent: js.Any = js.native
@@ -29,6 +32,7 @@ object optionsProcessorMod extends js.Object {
     var processObject: js.Any = js.native
     var store: js.Any = js.native
     var uniqueIdProvider: js.Any = js.native
+    def processDefaultOptions(options: Options): Unit = js.native
     def processOptions(options: Options): Unit = js.native
   }
   

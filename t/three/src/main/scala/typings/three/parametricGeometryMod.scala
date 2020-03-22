@@ -17,7 +17,7 @@ object parametricGeometryMod extends js.Object {
       slices: Double,
       stacks: Double
     ) = this()
-    var parameters: AnonDest = js.native
+    var parameters: AnonFunc = js.native
   }
   
   @js.native
@@ -27,7 +27,7 @@ object parametricGeometryMod extends js.Object {
       slices: Double,
       stacks: Double
     ) = this()
-    var parameters: AnonDest = js.native
+    var parameters: AnonFunc = js.native
   }
   
 }

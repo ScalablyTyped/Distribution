@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 object defaultMathSymbolsMod extends js.Object {
   @js.native
   object default extends js.Object {
-    var symbols: AnonMax = js.native
+    var symbols: Anon = js.native
   }
   
 }

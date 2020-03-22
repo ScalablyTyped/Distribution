@@ -2,6 +2,12 @@ package typings.officeUiFabricReact.navTypesMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.officeUiFabricReact.iconTypesMod.IIconProps
+import typings.officeUiFabricReact.officeUiFabricReactStrings.`true`
+import typings.officeUiFabricReact.officeUiFabricReactStrings.date
+import typings.officeUiFabricReact.officeUiFabricReactStrings.location
+import typings.officeUiFabricReact.officeUiFabricReactStrings.page
+import typings.officeUiFabricReact.officeUiFabricReactStrings.step
+import typings.officeUiFabricReact.officeUiFabricReactStrings.time
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.std.HTMLElement
@@ -14,6 +20,10 @@ trait INavLink
   * (Optional) Any additional properties to apply to the rendered links.
   */
 /* propertyName */ StringDictionary[js.Any] {
+  /**
+    * Aria-current token for active nav links. Must be a valid token value, and defaults to 'page'.
+    */
+  var ariaCurrent: js.UndefOr[page | step | location | date | time | `true`] = js.undefined
   /**
     * Aria label for nav link. Ignored if `collapseAriaLabel` or `expandAriaLabel` is provided.
     */
@@ -104,6 +114,7 @@ object INavLink {
     * (Optional) Any additional properties to apply to the rendered links.
     */
   /* propertyName */ StringDictionary[js.Any] = null,
+    ariaCurrent: page | step | location | date | time | `true` = null,
     ariaLabel: String = null,
     automationId: String = null,
     collapseAriaLabel: String = null,
@@ -122,6 +133,7 @@ object INavLink {
   ): INavLink = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (ariaCurrent != null) __obj.updateDynamic("ariaCurrent")(ariaCurrent.asInstanceOf[js.Any])
     if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel.asInstanceOf[js.Any])
     if (automationId != null) __obj.updateDynamic("automationId")(automationId.asInstanceOf[js.Any])
     if (collapseAriaLabel != null) __obj.updateDynamic("collapseAriaLabel")(collapseAriaLabel.asInstanceOf[js.Any])

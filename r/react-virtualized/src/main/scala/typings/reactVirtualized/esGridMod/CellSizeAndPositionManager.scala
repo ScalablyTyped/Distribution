@@ -1,6 +1,6 @@
 package typings.reactVirtualized.esGridMod
 
-import typings.reactVirtualized.AnonAlignContainerSize
+import typings.reactVirtualized.AnonContainerSize
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,7 +35,7 @@ trait CellSizeAndPositionManager extends js.Object {
     * @param totalSize Total size (width or height) of all cells
     * @return Offset to use to ensure the specified cell is visible
     */
-  def getUpdatedOffsetForIndex(params: AnonAlignContainerSize): Double
+  def getUpdatedOffsetForIndex(params: AnonContainerSize): Double
   def getVisibleCellRange(params: GetVisibleCellRangeParams): VisibleCellRange
   /**
     * Clear all cached values for cells after the specified index.
@@ -57,7 +57,7 @@ object CellSizeAndPositionManager {
     getSizeAndPositionOfCell: Double => SizeAndPositionData,
     getSizeAndPositionOfLastMeasuredCell: () => SizeAndPositionData,
     getTotalSize: () => Double,
-    getUpdatedOffsetForIndex: AnonAlignContainerSize => Double,
+    getUpdatedOffsetForIndex: AnonContainerSize => Double,
     getVisibleCellRange: GetVisibleCellRangeParams => VisibleCellRange,
     resetCell: Double => Unit
   ): CellSizeAndPositionManager = {

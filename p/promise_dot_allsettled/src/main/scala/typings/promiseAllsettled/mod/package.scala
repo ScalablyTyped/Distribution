@@ -8,5 +8,5 @@ package object mod {
   type PromiseRejection[E] = typings.promiseAllsettled.typesMod.PromiseRejection[E]
   type PromiseResolution[T] = typings.promiseAllsettled.typesMod.PromiseResolution[T]
   type PromiseResult[T, E] = typings.promiseAllsettled.typesMod.PromiseResult[T, E]
-  type PromiseResultTuple[T /* <: js.Array[_] */] = typings.promiseAllsettled.typesMod.PromiseResultTuple[T]
+  type PromiseResultTuple[T /* <: Array[js.Any] */] = typings.promiseAllsettled.typesMod.PromiseResultTuple[T]
 }

@@ -27,6 +27,7 @@ import typings.menubar.menubarStrings.tooltip
 import typings.menubar.menubarStrings.topCenter
 import typings.menubar.menubarStrings.topLeft
 import typings.menubar.menubarStrings.topRight
+import typings.menubar.menubarStrings.tray
 import typings.menubar.menubarStrings.trayBottomCenter
 import typings.menubar.menubarStrings.trayBottomLeft
 import typings.menubar.menubarStrings.trayBottomRight
@@ -34,9 +35,7 @@ import typings.menubar.menubarStrings.trayCenter
 import typings.menubar.menubarStrings.trayLeft
 import typings.menubar.menubarStrings.trayRight
 import typings.menubar.menubarStrings.windowPosition
-import typings.menubar.typesMod.Options
 import typings.node.eventsMod.EventEmitter
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -47,18 +46,13 @@ object menubarMod extends js.Object {
   @js.native
   class Menubar protected () extends EventEmitter {
     def this(app: App_) = this()
-    def this(app: App_, options: Partial[Options]) = this()
+    def this(app: App_, options: PartialOptions) = this()
     var _app: js.Any = js.native
     var _browserWindow: js.UndefOr[js.Any] = js.native
     var _cachedBounds: js.UndefOr[js.Any] = js.native
     var _options: js.Any = js.native
     var _positioner: js.Any = js.native
     var _tray: js.UndefOr[js.Any] = js.native
-    /**
-      * The Electron [App](https://electronjs.org/docs/api/app)
-      * instance.
-      */
-    val app: App_ = js.native
     var appReady: js.Any = js.native
     /**
       * Callback on tray icon click or double-click.
@@ -68,21 +62,12 @@ object menubarMod extends js.Object {
       */
     var clicked: js.Any = js.native
     var createWindow: js.Any = js.native
+    var windowClear: js.Any = js.native
     /**
-      * The [electron-positioner](https://github.com/jenslind/electron-positioner)
+      * The Electron [App](https://electronjs.org/docs/api/app)
       * instance.
       */
-    val positioner: js.Any = js.native
-    /**
-      * The Electron [Tray](https://electronjs.org/docs/api/tray) instance.
-      */
-    val tray: Tray = js.native
-    /**
-      * The Electron [BrowserWindow](https://electronjs.org/docs/api/browser-window)
-      * instance, if it's present.
-      */
-    val window: js.UndefOr[BrowserWindow] = js.native
-    var windowClear: js.Any = js.native
+    def app(): App_ = js.native
     /**
       * Retrieve a menubar option.
       *
@@ -109,13 +94,18 @@ object menubarMod extends js.Object {
     @JSName("getOption")
     def getOption_tooltip(key: tooltip): String = js.native
     @JSName("getOption")
-    def getOption_tray(key: typings.menubar.menubarStrings.tray): Tray = js.native
+    def getOption_tray(key: tray): Tray = js.native
     @JSName("getOption")
     def getOption_windowPosition(key: windowPosition): trayLeft | trayBottomLeft | trayRight | trayBottomRight | trayCenter | trayBottomCenter | topLeft | topRight | bottomLeft | bottomRight | topCenter | bottomCenter | leftCenter | rightCenter | center = js.native
     /**
       * Hide the menubar window.
       */
     def hideWindow(): Unit = js.native
+    /**
+      * The [electron-positioner](https://github.com/jenslind/electron-positioner)
+      * instance.
+      */
+    def positioner(): js.Any = js.native
     def setOption(key: index, value: `false`): Unit = js.native
     def setOption(
       key: windowPosition,
@@ -150,7 +140,7 @@ object menubarMod extends js.Object {
     @JSName("setOption")
     def setOption_tooltip(key: tooltip, value: String): Unit = js.native
     @JSName("setOption")
-    def setOption_tray(key: typings.menubar.menubarStrings.tray, value: Tray): Unit = js.native
+    def setOption_tray(key: tray, value: Tray): Unit = js.native
     /**
       * Show the menubar window.
       *
@@ -158,6 +148,15 @@ object menubarMod extends js.Object {
       */
     def showWindow(): js.Promise[Unit] = js.native
     def showWindow(trayPos: Rectangle): js.Promise[Unit] = js.native
+    /**
+      * The Electron [Tray](https://electronjs.org/docs/api/tray) instance.
+      */
+    def tray(): Tray = js.native
+    /**
+      * The Electron [BrowserWindow](https://electronjs.org/docs/api/browser-window)
+      * instance, if it's present.
+      */
+    def window(): js.UndefOr[BrowserWindow] = js.native
   }
   
 }

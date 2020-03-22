@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object groupVariablesMod extends js.Object {
   @js.native
-  class GroupVariables () extends ResourceVariables {
+  class GroupVariables protected () extends ResourceVariables {
     def this(options: BaseServiceOptions) = this()
   }
   

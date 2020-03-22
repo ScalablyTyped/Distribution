@@ -23,9 +23,7 @@ trait Typeofbunyan extends js.Object {
   var RotatingFileStream: Instantiable1[/* options */ RotatingFileStreamOptions, typings.bunyan.mod.RotatingFileStream]
   val TRACE: Double
   val WARN: Double
-  val levelFromName: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ name in bunyan.bunyan.LogLevelString ]: number}
-    */ typings.browserBunyan.browserBunyanStrings.Typeofbunyan with js.Any
+  val levelFromName: nameinLogLevelStringnumbe
   val nameFromLevel: NumberDictionary[String]
   val stdSerializers: StdSerializers_
   def createLogger(options: LoggerOptions): Logger
@@ -45,9 +43,7 @@ object Typeofbunyan {
     TRACE: Double,
     WARN: Double,
     createLogger: LoggerOptions => Logger,
-    levelFromName: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ name in bunyan.bunyan.LogLevelString ]: number}
-    */ typings.browserBunyan.browserBunyanStrings.Typeofbunyan with js.Any,
+    levelFromName: nameinLogLevelStringnumbe,
     nameFromLevel: NumberDictionary[String],
     resolveLevel: LogLevel => Double,
     safeCycles: () => js.Function2[/* key */ String, /* value */ js.Any, _],

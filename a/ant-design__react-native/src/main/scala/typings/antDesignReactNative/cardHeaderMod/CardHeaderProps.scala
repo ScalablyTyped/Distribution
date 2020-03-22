@@ -1,6 +1,6 @@
 package typings.antDesignReactNative.cardHeaderMod
 
-import typings.antDesignReactNative.PickCardStyleheaderContentWrapheaderContentheaderE
+import typings.antDesignReactNative.PickCardStyleheaderConten
 import typings.react.mod.ReactNode
 import typings.reactNative.mod.ImageStyle
 import typings.reactNative.mod.StyleProp
@@ -20,7 +20,7 @@ object CardHeaderProps {
   def apply(
     extra: ReactNode = null,
     style: StyleProp[ViewStyle] = null,
-    styles: Partial[PickCardStyleheaderContentWrapheaderContentheaderE] = null,
+    styles: Partial[PickCardStyleheaderConten] = null,
     thumb: ReactNode = null,
     thumbStyle: StyleProp[ImageStyle] = null,
     title: ReactNode = null

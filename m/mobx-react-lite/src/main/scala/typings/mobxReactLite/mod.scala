@@ -22,7 +22,7 @@ object mod extends js.Object {
   def isUsingStaticRendering(): Boolean = js.native
   def observer[P /* <: js.Object */](baseComponent: FunctionComponent[P]): FunctionComponent[P] = js.native
   def observer[P /* <: js.Object */](baseComponent: FunctionComponent[P], options: IObserverOptions): FunctionComponent[P] = js.native
-  def observer[P /* <: js.Object */, TRef](baseComponent: RefForwardingComponent[TRef, P], options: IObserverOptions with AnonForwardRef): MemoExoticComponent[ForwardRefExoticComponent[PropsWithoutRef[P] with RefAttributes[TRef]]] = js.native
+  def observer[P /* <: js.Object */, TRef](baseComponent: RefForwardingComponent[TRef, P], options: IObserverOptionsforwardRe): MemoExoticComponent[ForwardRefExoticComponent[PropsWithoutRef[P] with RefAttributes[TRef]]] = js.native
   def optimizeScheduler(reactionScheduler: IBatchedUpdates): Unit = js.native
   def useAsObservableSource[TSource](current: TSource): TSource = js.native
   def useComputed[T](func: js.Function0[T]): T = js.native

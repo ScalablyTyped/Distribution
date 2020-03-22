@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/angular", "SelectValueAccessor")
 @js.native
 class SelectValueAccessor protected ()
-  extends typings.ionicAngular.distMod.SelectValueAccessor {
+  extends typings.ionicAngular.selectValueAccessorMod.SelectValueAccessor {
   def this(el: ElementRef[_]) = this()
 }
 

@@ -1,5 +1,6 @@
 package typings.vscodeLanguageclient
 
+import typings.vscodeJsonrpc.Thenable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,6 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object isMod extends js.Object {
   def array[T](value: js.Any): /* is std.Array<T> */ Boolean = js.native
+  def asPromise[T](value: T): js.Promise[T] = js.native
+  def asPromise[T](value: js.Promise[T]): js.Promise[T] = js.native
+  def asPromise[T](value: Thenable[T]): js.Promise[T] = js.native
   def boolean(value: js.Any): /* is boolean */ Boolean = js.native
   def error(value: js.Any): /* is std.Error */ Boolean = js.native
   def func(value: js.Any): /* is std.Function */ Boolean = js.native

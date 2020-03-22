@@ -2,7 +2,7 @@ package typings.angularCompiler.compileMetadataMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.angularCompiler.AnonChangeDetection
-import typings.angularCompiler.AnonChangeDetectionComponentFactory
+import typings.angularCompiler.AnonComponentFactory
 import typings.angularCompiler.coreMod.ChangeDetectionStrategy
 import typings.angularCompiler.staticSymbolMod.StaticSymbol
 import scala.scalajs.js
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler/src/compile_metadata", "CompileDirectiveMetadata")
 @js.native
 class CompileDirectiveMetadata protected () extends js.Object {
-  def this(hasIsHostTypeIsComponentSelectorExportAsChangeDetectionInputsOutputsHostListenersHostPropertiesHostAttributesProvidersViewProvidersQueriesGuardsViewQueriesEntryComponentsTemplateComponentViewTypeRendererTypeComponentFactory: AnonChangeDetectionComponentFactory) = this()
+  def this(hasIsHostTypeIsComponentSelectorExportAsChangeDetectionInputsOutputsHostListenersHostPropertiesHostAttributesProvidersViewProvidersQueriesGuardsViewQueriesEntryComponentsTemplateComponentViewTypeRendererTypeComponentFactory: AnonComponentFactory) = this()
   var changeDetection: ChangeDetectionStrategy | Null = js.native
   var componentFactory: StaticSymbol | js.Object | Null = js.native
   var componentViewType: StaticSymbol | ProxyClass | Null = js.native

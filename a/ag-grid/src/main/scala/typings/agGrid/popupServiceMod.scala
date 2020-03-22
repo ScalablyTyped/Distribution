@@ -34,8 +34,8 @@ object popupServiceMod extends js.Object {
     /* private */ def keepYWithinBounds(params: js.Any, y: js.Any): js.Any = js.native
     /* private */ def positionPopup(params: js.Any): js.Any = js.native
     def positionPopupForMenu(params: AnonEPopup): Unit = js.native
-    def positionPopupOverComponent(params: AnonColumnEPopupEventSource): Unit = js.native
-    def positionPopupUnderComponent(params: AnonColumnEPopup): Unit = js.native
+    def positionPopupOverComponent(params: AnonKeepWithinBounds): Unit = js.native
+    def positionPopupUnderComponent(params: AnonEventSource): Unit = js.native
     def positionPopupUnderMouseEvent(params: AnonColumn): Unit = js.native
   }
   

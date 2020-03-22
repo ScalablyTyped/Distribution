@@ -1,7 +1,7 @@
 package typings.reactBootstrapTable.mod
 
 import typings.reactBootstrapTable.AnonComparatorDate
-import typings.reactBootstrapTable.AnonComparatorDateCSSProperties
+import typings.reactBootstrapTable.AnonDate
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ trait DateFilter extends _Filter {
   /**
   	 * Default value for the filter.
   	 */
-  var defaultValue: js.UndefOr[AnonComparatorDate] = js.undefined
+  var defaultValue: js.UndefOr[AnonDate] = js.undefined
   /**
   	 * Delay time in milliseconds after the last key press prior to applying the filter. Defaults to 500ms.
   	 */
@@ -22,7 +22,7 @@ trait DateFilter extends _Filter {
   /**
   	 * CSS Style to use for the select filter.
   	 */
-  var style: js.UndefOr[AnonComparatorDateCSSProperties] = js.undefined
+  var style: js.UndefOr[AnonComparatorDate] = js.undefined
   /**
   	 * Filter type must be 'DateFilter'
   	 */
@@ -34,9 +34,9 @@ object DateFilter {
   def apply(
     `type`: typings.reactBootstrapTable.reactBootstrapTableStrings.DateFilter,
     dateComparators: js.Array[FilterComparator] = null,
-    defaultValue: AnonComparatorDate = null,
+    defaultValue: AnonDate = null,
     delay: Int | Double = null,
-    style: AnonComparatorDateCSSProperties = null
+    style: AnonComparatorDate = null
   ): DateFilter = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

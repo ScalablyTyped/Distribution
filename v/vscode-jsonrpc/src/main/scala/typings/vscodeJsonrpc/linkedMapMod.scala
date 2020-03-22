@@ -19,7 +19,6 @@ object linkedMapMod extends js.Object {
     var addItemFirst: js.Any = js.native
     var addItemLast: js.Any = js.native
     var removeItem: js.Any = js.native
-    val size: Double = js.native
     var touch: js.Any = js.native
     def clear(): Unit = js.native
     def delete(key: K): Boolean = js.native
@@ -40,6 +39,7 @@ object linkedMapMod extends js.Object {
     def set(key: K, value: V): Unit = js.native
     def set(key: K, value: V, touch: Touch): Unit = js.native
     def shift(): js.UndefOr[V] = js.native
+    def size(): Double = js.native
     def values(): js.Array[V] = js.native
   }
   

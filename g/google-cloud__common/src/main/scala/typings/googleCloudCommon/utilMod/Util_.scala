@@ -1,7 +1,7 @@
 package typings.googleCloudCommon.utilMod
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.googleCloudCommon.TypeofClassApiError
+import typings.googleCloudCommon.TypeofApiError
 import typings.std.Error
 import typings.teenyRequest.mod.Response
 import scala.scalajs.js
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@google-cloud/common/build/src/util", "Util")
 @js.native
 class Util_ () extends js.Object {
-  var ApiError: TypeofClassApiError = js.native
+  var ApiError: TypeofApiError = js.native
   var PartialFailureError: Instantiable1[/* b */ GoogleErrorBody, typings.googleCloudCommon.utilMod.PartialFailureError] = js.native
   /**
     * Decorate the options about to be made in a request.

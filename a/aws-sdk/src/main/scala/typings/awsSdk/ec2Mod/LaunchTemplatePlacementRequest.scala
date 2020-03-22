@@ -17,11 +17,11 @@ trait LaunchTemplatePlacementRequest extends js.Object {
   /**
     * The name of the placement group for the instance.
     */
-  var GroupName: js.UndefOr[String] = js.native
+  var GroupName: js.UndefOr[PlacementGroupName] = js.native
   /**
     * The ID of the Dedicated Host for the instance.
     */
-  var HostId: js.UndefOr[String] = js.native
+  var HostId: js.UndefOr[DedicatedHostId] = js.native
   /**
     * The ARN of the host resource group in which to launch the instances. If you specify a host resource group ARN, omit the Tenancy parameter or set it to host.
     */
@@ -45,8 +45,8 @@ object LaunchTemplatePlacementRequest {
   def apply(
     Affinity: String = null,
     AvailabilityZone: String = null,
-    GroupName: String = null,
-    HostId: String = null,
+    GroupName: PlacementGroupName = null,
+    HostId: DedicatedHostId = null,
     HostResourceGroupArn: String = null,
     PartitionNumber: Int | scala.Double = null,
     SpreadDomain: String = null,

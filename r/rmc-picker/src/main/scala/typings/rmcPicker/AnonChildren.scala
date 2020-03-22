@@ -1,19 +1,18 @@
 package typings.rmcPicker
 
-import typings.react.mod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonChildren extends js.Object {
-  var children: js.UndefOr[ReactNode] = js.undefined
+  var children: js.Array[_]
 }
 
 object AnonChildren {
   @scala.inline
-  def apply(children: ReactNode = null): AnonChildren = {
-    val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+  def apply(children: js.Array[_]): AnonChildren = {
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[AnonChildren]
   }
 }

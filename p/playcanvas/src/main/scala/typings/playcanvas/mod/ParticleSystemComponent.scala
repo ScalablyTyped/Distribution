@@ -39,6 +39,7 @@ import scala.scalajs.js.annotation._
   * @property {boolean} animLoop Controls whether the sprite sheet animation plays once or loops continuously.
   * @property {number} animTilesX Number of horizontal tiles in the sprite sheet.
   * @property {number} animTilesY Number of vertical tiles in the sprite sheet.
+  * @property {number} animStartFrame The zero based sprite sheet frame that the animation should be played from. The animation will play for animNumFrames frames beyond this. AnimStartFrame + AnimNumFrames should not exceed animTilesX * animTilesY.
   * @property {number} animNumFrames Number of sprite sheet frames to play. It is valid to set the number of frames to a value less than animTilesX multiplied by animTilesY.
   * @property {number} animSpeed Sprite sheet animation speed. 1 = particle lifetime, 2 = twice during lifetime etc...
   * @property {number} depthSoftening Controls fading of particles near their intersections with scene geometry. This effect, when it's non-zero, requires scene depth map to be rendered. Multiple depth-dependent effects can share the same map, but if you only use it for particles, bear in mind that it can double engine draw calls.

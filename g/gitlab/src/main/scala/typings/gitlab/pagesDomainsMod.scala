@@ -3,7 +3,6 @@ package typings.gitlab
 import typings.gitlab.infrastructureMod.BaseService
 import typings.gitlab.requestHelperMod.BaseRequestOptions
 import typings.gitlab.requestHelperMod.GetResponse
-import typings.gitlab.requestHelperMod.PaginatedRequestOptions
 import typings.gitlab.requestHelperMod.Sudo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,7 +14,7 @@ object pagesDomainsMod extends js.Object {
   @js.native
   class PagesDomains () extends BaseService {
     def all(): js.Promise[GetResponse] = js.native
-    def all(hasProjectIdOptions: AnonProjectId with PaginatedRequestOptions): js.Promise[GetResponse] = js.native
+    def all(hasProjectIdOptions: projectIdstringnumberPagi): js.Promise[GetResponse] = js.native
     def create(projectId: String, domain: String): js.Promise[js.Object] = js.native
     def create(projectId: String, domain: String, options: BaseRequestOptions): js.Promise[js.Object] = js.native
     def create(projectId: Double, domain: String): js.Promise[js.Object] = js.native

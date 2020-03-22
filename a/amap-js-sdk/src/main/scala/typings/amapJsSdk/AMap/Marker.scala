@@ -1,7 +1,7 @@
 package typings.amapJsSdk.AMap
 
-import typings.amapJsSdk.AnonContentOffset
 import typings.amapJsSdk.AnonName
+import typings.amapJsSdk.AnonOffset
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -21,7 +21,7 @@ class Marker () extends EventBindable {
   def getDraggable(): Boolean = js.native
   def getExtData(): js.Any = js.native
   def getIcon(): String | Icon = js.native
-  def getLabel(): AnonContentOffset = js.native
+  def getLabel(): AnonOffset = js.native
   def getMap(): Map = js.native
   def getOffset(): Pixel = js.native
   def getPosition(): LngLat = js.native
@@ -53,7 +53,7 @@ class Marker () extends EventBindable {
   def setExtData(ext: js.Any): Unit = js.native
   def setIcon(content: String): Unit = js.native
   def setIcon(content: Icon): Unit = js.native
-  def setLabel(label: AnonContentOffset): Unit = js.native
+  def setLabel(label: AnonOffset): Unit = js.native
   def setMap(map: Map): Unit = js.native
   def setOffset(offset: Pixel): Unit = js.native
   def setPosition(lnglat: LngLat): Unit = js.native

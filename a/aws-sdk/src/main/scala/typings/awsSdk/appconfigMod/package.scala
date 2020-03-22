@@ -33,7 +33,12 @@ package object appconfigMod {
   */
   type EnvironmentState = typings.awsSdk.appconfigMod._EnvironmentState | java.lang.String
   type GrowthFactor = scala.Double
-  type GrowthType = typings.awsSdk.awsSdkStrings.LINEAR | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.LINEAR
+    - typings.awsSdk.awsSdkStrings.EXPONENTIAL
+    - java.lang.String
+  */
+  type GrowthType = typings.awsSdk.appconfigMod._GrowthType | java.lang.String
   type Id = java.lang.String
   type Integer = scala.Double
   type Iso8601DateTime = typings.std.Date

@@ -4,9 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DocsPageProps extends js.Object {
-  var subtitle: js.UndefOr[String] = js.undefined
-  var title: String
+  var subtitle: js.UndefOr[String] = js.native
+  var title: String = js.native
 }
 
 object DocsPageProps {

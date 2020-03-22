@@ -40,7 +40,7 @@ trait AlloyController extends EventsMixin {
     * @param opts Dictionary of styles to apply.
     * @returns Dictionary of properties that can be passed to a view factory function or applyProperties().
     */
-  def createStyle(opts: js.Any): Partial[Proxy] = js.native
+  def createStyle(opts: js.Any): PartialProxy = js.native
   def destroy(): Unit = js.native
   def getListener(): js.Array[_] = js.native
   def getListener(proxy: Proxy): js.Array[_] = js.native

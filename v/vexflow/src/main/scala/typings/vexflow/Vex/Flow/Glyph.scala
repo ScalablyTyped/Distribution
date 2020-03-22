@@ -1,8 +1,8 @@
 package typings.vexflow.Vex.Flow
 
 import typings.vexflow.AnonCache
-import typings.vexflow.AnonHaOutline
 import typings.vexflow.AnonHeight
+import typings.vexflow.AnonOutline
 import typings.vexflow.Vex.IFont
 import typings.vexflow.Vex.IRenderContext
 import scala.scalajs.js
@@ -31,7 +31,7 @@ class Glyph protected () extends js.Object {
 @JSGlobal("Vex.Flow.Glyph")
 @js.native
 object Glyph extends js.Object {
-  def loadMetrics(font: IFont, code: String, cache: Boolean): AnonHaOutline = js.native
+  def loadMetrics(font: IFont, code: String, cache: Boolean): AnonOutline = js.native
   def renderOutline(ctx: IRenderContext, outline: js.Array[Double], scale: Double, x_pos: Double, y_pos: Double): Unit = js.native
 }
 

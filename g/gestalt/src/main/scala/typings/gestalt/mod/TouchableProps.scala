@@ -1,7 +1,7 @@
 package typings.gestalt.mod
 
-import typings.gestalt.AnonEventHTMLDivElement
-import typings.gestalt.AnonEventHTMLDivElementKeyboardEvent
+import typings.gestalt.Anon1
+import typings.gestalt.AnonEventSyntheticEvent
 import typings.gestalt.gestaltStrings.circle
 import typings.gestalt.gestaltStrings.copy
 import typings.gestalt.gestaltStrings.grab
@@ -28,24 +28,24 @@ trait TouchableProps extends js.Object {
   var fullHeight: js.UndefOr[Boolean] = js.undefined
   var fullWidth: js.UndefOr[Boolean] = js.undefined
   var mouseCursor: js.UndefOr[copy | grab | grabbing | move | noDrop | pointer | zoomIn | zoomOut] = js.undefined
-  var onMouseEnter: js.UndefOr[js.Function1[/* args */ AnonEventHTMLDivElement, Unit]] = js.undefined
-  var onMouseLeave: js.UndefOr[js.Function1[/* args */ AnonEventHTMLDivElement, Unit]] = js.undefined
+  var onMouseEnter: js.UndefOr[js.Function1[/* args */ AnonEventSyntheticEvent, Unit]] = js.undefined
+  var onMouseLeave: js.UndefOr[js.Function1[/* args */ AnonEventSyntheticEvent, Unit]] = js.undefined
   var shape: js.UndefOr[
     square | rounded | pill | circle | roundedTop | roundedBottom | roundedLeft | roundedRight
   ] = js.undefined
-  def onTouch(args: AnonEventHTMLDivElementKeyboardEvent): Unit
+  def onTouch(args: Anon1): Unit
 }
 
 object TouchableProps {
   @scala.inline
   def apply(
-    onTouch: AnonEventHTMLDivElementKeyboardEvent => Unit,
+    onTouch: Anon1 => Unit,
     children: ReactNode = null,
     fullHeight: js.UndefOr[Boolean] = js.undefined,
     fullWidth: js.UndefOr[Boolean] = js.undefined,
     mouseCursor: copy | grab | grabbing | move | noDrop | pointer | zoomIn | zoomOut = null,
-    onMouseEnter: /* args */ AnonEventHTMLDivElement => Unit = null,
-    onMouseLeave: /* args */ AnonEventHTMLDivElement => Unit = null,
+    onMouseEnter: /* args */ AnonEventSyntheticEvent => Unit = null,
+    onMouseLeave: /* args */ AnonEventSyntheticEvent => Unit = null,
     shape: square | rounded | pill | circle | roundedTop | roundedBottom | roundedLeft | roundedRight = null
   ): TouchableProps = {
     val __obj = js.Dynamic.literal(onTouch = js.Any.fromFunction1(onTouch))

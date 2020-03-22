@@ -1,8 +1,8 @@
 package typings.promiseFs.mod
 
 import typings.node.AnonEncodingFlag
-import typings.node.AnonEncodingFlagNull
-import typings.node.AnonEncodingFlagString
+import typings.node.AnonFlag
+import typings.node.AnonFlagString
 import typings.node.Buffer
 import typings.node.NodeJS.ErrnoException
 import typings.node.fsMod.PathLike
@@ -35,22 +35,22 @@ object readFile extends js.Object {
   ): Unit = js.native
   def apply(
     path: Double,
-    options: AnonEncodingFlagNull,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* data */ String | Buffer, Unit]
-  ): Unit = js.native
-  def apply(
-    path: Double,
-    options: AnonEncodingFlagString,
+    options: AnonEncodingFlag,
     callback: js.Function2[/* err */ ErrnoException | Null, /* data */ String, Unit]
   ): Unit = js.native
   def apply(
     path: Double,
-    options: AnonEncodingFlag,
+    options: AnonFlagString,
+    callback: js.Function2[/* err */ ErrnoException | Null, /* data */ String | Buffer, Unit]
+  ): Unit = js.native
+  def apply(
+    path: Double,
+    options: AnonFlag,
     callback: js.Function2[/* err */ ErrnoException | Null, /* data */ Buffer, Unit]
   ): Unit = js.native
   def apply(path: Double, options: AnonEncoding): js.Promise[Buffer] = js.native
-  def apply(path: Double, options: typings.promiseFs.AnonEncodingFlag): js.Promise[String] = js.native
-  def apply(path: Double, options: typings.promiseFs.AnonEncodingFlagNull): js.Promise[String | Buffer] = js.native
+  def apply(path: Double, options: typings.promiseFs.AnonEncodingFlag): js.Promise[String | Buffer] = js.native
+  def apply(path: Double, options: typings.promiseFs.AnonFlag): js.Promise[String] = js.native
   def apply(path: PathLike): js.Promise[Buffer] = js.native
   /**
     * Asynchronously reads the entire contents of a file.
@@ -84,8 +84,8 @@ object readFile extends js.Object {
     */
   def apply(
     path: PathLike,
-    options: AnonEncodingFlagNull,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* data */ String | Buffer, Unit]
+    options: AnonEncodingFlag,
+    callback: js.Function2[/* err */ ErrnoException | Null, /* data */ String, Unit]
   ): Unit = js.native
   /**
     * Asynchronously reads the entire contents of a file.
@@ -97,8 +97,8 @@ object readFile extends js.Object {
     */
   def apply(
     path: PathLike,
-    options: AnonEncodingFlagString,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* data */ String, Unit]
+    options: AnonFlagString,
+    callback: js.Function2[/* err */ ErrnoException | Null, /* data */ String | Buffer, Unit]
   ): Unit = js.native
   /**
     * Asynchronously reads the entire contents of a file.
@@ -109,22 +109,22 @@ object readFile extends js.Object {
     */
   def apply(
     path: PathLike,
-    options: AnonEncodingFlag,
+    options: AnonFlag,
     callback: js.Function2[/* err */ ErrnoException | Null, /* data */ Buffer, Unit]
   ): Unit = js.native
   def apply(path: PathLike, options: AnonEncoding): js.Promise[Buffer] = js.native
-  def apply(path: PathLike, options: typings.promiseFs.AnonEncodingFlag): js.Promise[String] = js.native
-  def apply(path: PathLike, options: typings.promiseFs.AnonEncodingFlagNull): js.Promise[String | Buffer] = js.native
+  def apply(path: PathLike, options: typings.promiseFs.AnonEncodingFlag): js.Promise[String | Buffer] = js.native
+  def apply(path: PathLike, options: typings.promiseFs.AnonFlag): js.Promise[String] = js.native
   @JSName("__promisify__")
   def promisify(path: Double): js.Promise[Buffer] = js.native
   @JSName("__promisify__")
   def promisify(path: Double, options: String): js.Promise[String] = js.native
   @JSName("__promisify__")
-  def promisify(path: Double, options: AnonEncodingFlag): js.Promise[Buffer] = js.native
+  def promisify(path: Double, options: AnonEncodingFlag): js.Promise[String] = js.native
   @JSName("__promisify__")
-  def promisify(path: Double, options: AnonEncodingFlagNull): js.Promise[String | Buffer] = js.native
+  def promisify(path: Double, options: AnonFlag): js.Promise[Buffer] = js.native
   @JSName("__promisify__")
-  def promisify(path: Double, options: AnonEncodingFlagString): js.Promise[String] = js.native
+  def promisify(path: Double, options: AnonFlagString): js.Promise[String | Buffer] = js.native
   /**
     * Asynchronously reads the entire contents of a file.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
@@ -144,10 +144,6 @@ object readFile extends js.Object {
   def promisify(path: PathLike): js.Promise[Buffer] = js.native
   @JSName("__promisify__")
   def promisify(path: PathLike, options: String): js.Promise[String] = js.native
-  @JSName("__promisify__")
-  def promisify(path: PathLike, options: AnonEncodingFlag): js.Promise[Buffer] = js.native
-  @JSName("__promisify__")
-  def promisify(path: PathLike, options: AnonEncodingFlagNull): js.Promise[String | Buffer] = js.native
   /**
     * Asynchronously reads the entire contents of a file.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
@@ -157,6 +153,10 @@ object readFile extends js.Object {
     * If a flag is not provided, it defaults to `'r'`.
     */
   @JSName("__promisify__")
-  def promisify(path: PathLike, options: AnonEncodingFlagString): js.Promise[String] = js.native
+  def promisify(path: PathLike, options: AnonEncodingFlag): js.Promise[String] = js.native
+  @JSName("__promisify__")
+  def promisify(path: PathLike, options: AnonFlag): js.Promise[Buffer] = js.native
+  @JSName("__promisify__")
+  def promisify(path: PathLike, options: AnonFlagString): js.Promise[String | Buffer] = js.native
 }
 

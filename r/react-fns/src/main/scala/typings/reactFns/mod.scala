@@ -8,12 +8,9 @@ import typings.reactFns.geoPositionGeoPositionMod.GeoPositionProps
 import typings.reactFns.localesLocalesMod.LocalesProps
 import typings.reactFns.mediaMediaMod.MediaProps
 import typings.reactFns.networkNetworkMod.NetworkProps
-import typings.reactFns.scrollScrollMod.ScrollConfig
 import typings.reactFns.scrollScrollMod.ScrollProps
 import typings.reactFns.typesMod.SharedRenderProps
-import typings.reactFns.windowSizeWindowSizeMod.WindowSizeConfig
 import typings.reactFns.windowSizeWindowSizeMod.WindowSizeProps
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -60,13 +57,13 @@ object mod extends js.Object {
   /* static members */
   @js.native
   object Scroll extends js.Object {
-    var defaultProps: Partial[ScrollConfig] = js.native
+    var defaultProps: PartialScrollConfig = js.native
   }
   
   /* static members */
   @js.native
   object WindowSize extends js.Object {
-    var defaultProps: Partial[WindowSizeConfig] = js.native
+    var defaultProps: PartialWindowSizeConfig = js.native
   }
   
 }

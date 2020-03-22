@@ -29,7 +29,7 @@ trait FleetLaunchTemplateOverridesRequest extends js.Object {
   /**
     * The IDs of the subnets in which to launch the instances. Separate multiple subnet IDs using commas (for example, subnet-1234abcdeexample1, subnet-0987cdef6example2). A request of type instant can have only one subnet ID.
     */
-  var SubnetId: js.UndefOr[String] = js.native
+  var SubnetId: js.UndefOr[typings.awsSdk.ec2Mod.SubnetId] = js.native
   /**
     * The number of units provided by the specified instance type.
     */
@@ -44,7 +44,7 @@ object FleetLaunchTemplateOverridesRequest {
     MaxPrice: String = null,
     Placement: Placement = null,
     Priority: Int | scala.Double = null,
-    SubnetId: String = null,
+    SubnetId: SubnetId = null,
     WeightedCapacity: Int | scala.Double = null
   ): FleetLaunchTemplateOverridesRequest = {
     val __obj = js.Dynamic.literal()

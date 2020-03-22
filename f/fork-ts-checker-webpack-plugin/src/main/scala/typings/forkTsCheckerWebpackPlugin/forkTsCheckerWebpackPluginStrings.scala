@@ -1,8 +1,9 @@
 package typings.forkTsCheckerWebpackPlugin
 
+import typings.forkTsCheckerWebpackPlugin.formatterFactoryMod._FormatterType
 import typings.forkTsCheckerWebpackPlugin.hooksMod.ForkTsCheckerHooks
-import typings.forkTsCheckerWebpackPlugin.normalizedMessageMod.ErrorType
-import typings.forkTsCheckerWebpackPlugin.normalizedMessageMod.Severity
+import typings.forkTsCheckerWebpackPlugin.issueOriginMod.IssueOrigin
+import typings.forkTsCheckerWebpackPlugin.issueSeverityMod.IssueSeverity
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,22 +13,16 @@ object forkTsCheckerWebpackPluginStrings {
   sealed trait `0Dot8` extends js.Object
   
   @js.native
-  sealed trait `3Dot7` extends js.Object
-  
-  @js.native
-  sealed trait INTERNAL_ERROR extends js.Object
+  sealed trait `3Dot8` extends js.Object
   
   @js.native
   sealed trait cancel extends ForkTsCheckerHooks
   
   @js.native
-  sealed trait codeframe extends js.Object
+  sealed trait codeframe extends _FormatterType
   
   @js.native
-  sealed trait default extends js.Object
-  
-  @js.native
-  sealed trait diagnostic extends ErrorType
+  sealed trait default extends _FormatterType
   
   @js.native
   sealed trait done extends ForkTsCheckerHooks
@@ -39,13 +34,16 @@ object forkTsCheckerWebpackPluginStrings {
   sealed trait emit extends ForkTsCheckerHooks
   
   @js.native
-  sealed trait error extends Severity
+  sealed trait error extends IssueSeverity
+  
+  @js.native
+  sealed trait eslint extends IssueOrigin
+  
+  @js.native
+  sealed trait internal extends IssueOrigin
   
   @js.native
   sealed trait js_ extends js.Object
-  
-  @js.native
-  sealed trait lint extends ErrorType
   
   @js.native
   sealed trait receive extends ForkTsCheckerHooks
@@ -66,25 +64,24 @@ object forkTsCheckerWebpackPluginStrings {
   sealed trait serviceStartError extends ForkTsCheckerHooks
   
   @js.native
+  sealed trait typescript extends IssueOrigin
+  
+  @js.native
   sealed trait waiting extends ForkTsCheckerHooks
   
   @js.native
-  sealed trait warning extends Severity
+  sealed trait warning extends IssueSeverity
   
   @scala.inline
   def `0Dot8`: `0Dot8` = "0.8".asInstanceOf[`0Dot8`]
   @scala.inline
-  def `3Dot7`: `3Dot7` = "3.7".asInstanceOf[`3Dot7`]
-  @scala.inline
-  def INTERNAL_ERROR: INTERNAL_ERROR = "INTERNAL_ERROR".asInstanceOf[INTERNAL_ERROR]
+  def `3Dot8`: `3Dot8` = "3.8".asInstanceOf[`3Dot8`]
   @scala.inline
   def cancel: cancel = "cancel".asInstanceOf[cancel]
   @scala.inline
   def codeframe: codeframe = "codeframe".asInstanceOf[codeframe]
   @scala.inline
   def default: default = "default".asInstanceOf[default]
-  @scala.inline
-  def diagnostic: diagnostic = "diagnostic".asInstanceOf[diagnostic]
   @scala.inline
   def done: done = "done".asInstanceOf[done]
   @scala.inline
@@ -94,9 +91,11 @@ object forkTsCheckerWebpackPluginStrings {
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   @scala.inline
-  def js_ : js_ = "js".asInstanceOf[js_]
+  def eslint: eslint = "eslint".asInstanceOf[eslint]
   @scala.inline
-  def lint: lint = "lint".asInstanceOf[lint]
+  def internal: internal = "internal".asInstanceOf[internal]
+  @scala.inline
+  def js_ : js_ = "js".asInstanceOf[js_]
   @scala.inline
   def receive: receive = "receive".asInstanceOf[receive]
   @scala.inline
@@ -109,6 +108,8 @@ object forkTsCheckerWebpackPluginStrings {
   def serviceStart: serviceStart = "serviceStart".asInstanceOf[serviceStart]
   @scala.inline
   def serviceStartError: serviceStartError = "serviceStartError".asInstanceOf[serviceStartError]
+  @scala.inline
+  def typescript: typescript = "typescript".asInstanceOf[typescript]
   @scala.inline
   def waiting: waiting = "waiting".asInstanceOf[waiting]
   @scala.inline

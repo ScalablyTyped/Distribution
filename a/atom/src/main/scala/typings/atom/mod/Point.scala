@@ -1,5 +1,6 @@
 package typings.atom.mod
 
+import typings.atom.ReadonlyPointCompare
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,7 +27,7 @@ class Point () extends js.Object {
   def copy(): Point = js.native
   // Operations
   /** Makes this point immutable and returns itself. */
-  def freeze(): Point = js.native
+  def freeze(): ReadonlyPointCompare = js.native
   /**
     *  Returns a boolean indicating whether this point has the same row and
     *  column as the given Point.

@@ -21,13 +21,13 @@ trait DescribeSpotFleetInstancesRequest extends js.Object {
   /**
     * The ID of the Spot Fleet request.
     */
-  var SpotFleetRequestId: String = js.native
+  var SpotFleetRequestId: typings.awsSdk.ec2Mod.SpotFleetRequestId = js.native
 }
 
 object DescribeSpotFleetInstancesRequest {
   @scala.inline
   def apply(
-    SpotFleetRequestId: String,
+    SpotFleetRequestId: SpotFleetRequestId,
     DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     MaxResults: Int | scala.Double = null,
     NextToken: String = null

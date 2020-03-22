@@ -8,11 +8,12 @@ import typings.reactNative.mod.ImageStyle
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
+import typings.reactNativeElements.PartialIconProps
+import typings.reactNativeElements.PartialImageProps
 import typings.reactNativeElements.reactNativeElementsStrings.large
 import typings.reactNativeElements.reactNativeElementsStrings.medium
 import typings.reactNativeElements.reactNativeElementsStrings.small
 import typings.reactNativeElements.reactNativeElementsStrings.xlarge
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -48,7 +49,7 @@ trait AvatarProps extends js.Object {
     *
     * @default "{size: null, iconName: 'mode-edit', iconType: 'material', iconColor: '#fff', underlayColor: '#000', style: null}"
     */
-  var editButton: js.UndefOr[Partial[IconProps]] = js.undefined
+  var editButton: js.UndefOr[PartialIconProps] = js.undefined
   /**
     * Icon for the avatar
     */
@@ -60,7 +61,7 @@ trait AvatarProps extends js.Object {
   /**
     * Optional properties to pass to the image if provided e.g "resizeMode"
     */
-  var imageProps: js.UndefOr[Partial[ImageProps]] = js.undefined
+  var imageProps: js.UndefOr[PartialImageProps] = js.undefined
   /**
     * Callback function when pressing Edit button
     */
@@ -124,10 +125,10 @@ object AvatarProps {
     activeOpacity: Int | Double = null,
     avatarStyle: ImageStyle = null,
     containerStyle: StyleProp[ViewStyle] = null,
-    editButton: Partial[IconProps] = null,
+    editButton: PartialIconProps = null,
     icon: AvatarIcon = null,
     iconStyle: StyleProp[TextStyle] = null,
-    imageProps: Partial[ImageProps] = null,
+    imageProps: PartialImageProps = null,
     onEditPress: () => Unit = null,
     onLongPress: () => Unit = null,
     onPress: () => Unit = null,

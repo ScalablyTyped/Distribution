@@ -3,7 +3,7 @@ package typings.nivoStream.mod
 import typings.nivoAxes.mod.AxisProps
 import typings.nivoColors.mod.InheritedColorProp
 import typings.nivoColors.mod.OrdinalColorsInstruction
-import typings.nivoCore.Anon
+import typings.nivoCore.AnonDictkey
 import typings.nivoCore.AnonId
 import typings.nivoCore.mod.AreaCurve
 import typings.nivoCore.mod.Box
@@ -20,47 +20,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined parent @nivo/stream.@nivo/stream.StreamProps<T> */
-/* Inlined parent @nivo/core.@nivo/core.MotionProps */
-trait StreamSvgProps[T] extends js.Object {
-  var animate: js.UndefOr[Boolean] = js.undefined
-  var axisBottom: js.UndefOr[AxisProps] = js.undefined
-  var axisLeft: js.UndefOr[AxisProps] = js.undefined
-  var axisRight: js.UndefOr[AxisProps] = js.undefined
-  var axisTop: js.UndefOr[AxisProps] = js.undefined
-  var borderColor: js.UndefOr[InheritedColorProp[_]] = js.undefined
-  var borderWidth: js.UndefOr[Double] = js.undefined
-  var colors: js.UndefOr[OrdinalColorsInstruction[_]] = js.undefined
-  var curve: js.UndefOr[AreaCurve] = js.undefined
-  var data: js.Array[T]
-  var defs: js.UndefOr[js.Array[AnonId]] = js.undefined
-  var dotBorderColor: js.UndefOr[InheritedColorProp[_]] = js.undefined
-  var dotBorderWidth: js.UndefOr[DatumToNumber | Double] = js.undefined
-  var dotColor: js.UndefOr[InheritedColorProp[_]] = js.undefined
-  var dotPosition: js.UndefOr[start | center | end] = js.undefined
-  var dotSize: js.UndefOr[DatumToNumber | Double] = js.undefined
-  var enableDots: js.UndefOr[Boolean] = js.undefined
-  var enableGridX: js.UndefOr[Boolean] = js.undefined
-  var enableGridY: js.UndefOr[Boolean] = js.undefined
-  var enableStackTooltip: js.UndefOr[Boolean] = js.undefined
-  var fill: js.UndefOr[js.Array[Anon[T]]] = js.undefined
-  var fillOpacity: js.UndefOr[Double] = js.undefined
-  var isInteractive: js.UndefOr[Boolean] = js.undefined
-  var keys: js.Array[String]
-  var legends: js.UndefOr[js.Array[LegendProps]] = js.undefined
-  var margin: js.UndefOr[Box] = js.undefined
-  var motionDamping: js.UndefOr[Double] = js.undefined
-  var motionStiffness: js.UndefOr[Double] = js.undefined
-  var offsetType: js.UndefOr[StackOffset] = js.undefined
-  var order: js.UndefOr[StackOrder] = js.undefined
-  var renderDot: js.UndefOr[StreamDotsItem] = js.undefined
-  var stack: js.UndefOr[StackFunc[T]] = js.undefined
-  var theme: js.UndefOr[Theme] = js.undefined
-  var tooltipFormat: js.UndefOr[TooltipFormatter[T] | String] = js.undefined
-  var tooltipLabel: js.UndefOr[TooltipLabel[T]] = js.undefined
-  var xScale: js.UndefOr[Scale] = js.undefined
-  var yScale: js.UndefOr[Scale] = js.undefined
-}
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.nivoCore.mod.MotionProps because var conflicts: animate, motionDamping, motionStiffness. Inlined  */ trait StreamSvgProps[T] extends StreamProps[T]
 
 object StreamSvgProps {
   @scala.inline
@@ -76,7 +37,7 @@ object StreamSvgProps {
     borderWidth: Int | Double = null,
     colors: OrdinalColorsInstruction[_] = null,
     curve: AreaCurve = null,
-    defs: js.Array[AnonId] = null,
+    defs: js.Array[AnonDictkey] = null,
     dotBorderColor: InheritedColorProp[_] = null,
     dotBorderWidth: DatumToNumber | Double = null,
     dotColor: InheritedColorProp[_] = null,
@@ -86,7 +47,7 @@ object StreamSvgProps {
     enableGridX: js.UndefOr[Boolean] = js.undefined,
     enableGridY: js.UndefOr[Boolean] = js.undefined,
     enableStackTooltip: js.UndefOr[Boolean] = js.undefined,
-    fill: js.Array[Anon[T]] = null,
+    fill: js.Array[AnonId[T]] = null,
     fillOpacity: Int | Double = null,
     isInteractive: js.UndefOr[Boolean] = js.undefined,
     legends: js.Array[LegendProps] = null,

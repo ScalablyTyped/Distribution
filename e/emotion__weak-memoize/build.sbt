@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "emotion__weak-memoize"
-version := "0.2.4-9d528a"
+version := "0.2.5-2ab771"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

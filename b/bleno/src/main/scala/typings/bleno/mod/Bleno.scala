@@ -1,7 +1,7 @@
 package typings.bleno.mod
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.bleno.TypeofClassCharacteristic
+import typings.bleno.TypeofCharacteristic
 import typings.bleno.blenoStrings.accept
 import typings.bleno.blenoStrings.advertisingStart
 import typings.bleno.blenoStrings.advertisingStartError
@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Bleno extends EventEmitter {
-  val Characteristic: TypeofClassCharacteristic = js.native
+  val Characteristic: TypeofCharacteristic = js.native
   val Descriptor: Instantiable1[/* options */ DescriptorOptions, typings.bleno.mod.Descriptor] = js.native
   val PrimaryService: Instantiable1[/* options */ PrimaryServiceOptions, typings.bleno.mod.PrimaryService] = js.native
   val address: String = js.native

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("Electron.BrowserWindowProxy")
 @js.native
-class BrowserWindowProxy () extends EventEmitter {
+class BrowserWindowProxy () extends js.Object {
   var closed: Boolean = js.native
   // Docs: http://electronjs.org/docs/api/browser-window-proxy
   /**
@@ -26,11 +26,13 @@ class BrowserWindowProxy () extends EventEmitter {
     */
   def focus(): Unit = js.native
   /**
-    * Sends a message to the child window with the specified origin or * for no origin
-    * preference. In addition to these methods, the child window implements
-    * window.opener object with no properties and a single method.
+    * Sends a message to the child window with the specified origin or `*` for no
+    * origin preference.
+    *
+    * In addition to these methods, the child window implements `window.opener` object
+    * with no properties and a single method.
     */
-  def postMessage(message: String, targetOrigin: String): Unit = js.native
+  def postMessage(message: js.Any, targetOrigin: String): Unit = js.native
   /**
     * Invokes the print dialog on the child window.
     */

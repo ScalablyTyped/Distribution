@@ -8,7 +8,7 @@ import typings.node.http2Mod.SecureServerOptions
 import typings.node.http2Mod.ServerOptions
 import typings.webpackPluginServe.AnonAddress
 import typings.webpackPluginServe.AnonApp
-import typings.webpackPluginServe.AnonDebug
+import typings.webpackPluginServe.AnonLevel
 import typings.webpackPluginServe.webpackPluginServeStrings.minimal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -23,7 +23,7 @@ trait WebpackPluginServeOptions extends js.Object {
   var http2: js.UndefOr[Boolean | ServerOptions | SecureServerOptions] = js.undefined
   var https: js.UndefOr[typings.node.httpsMod.ServerOptions] = js.undefined
   var liveReload: js.UndefOr[Boolean] = js.undefined
-  var log: js.UndefOr[AnonDebug] = js.undefined
+  var log: js.UndefOr[AnonLevel] = js.undefined
   var middleware: js.UndefOr[
     js.Function2[/* app */ ^[DefaultState, DefaultContext], /* builtins */ Builtins, Unit]
   ] = js.undefined
@@ -46,7 +46,7 @@ object WebpackPluginServeOptions {
     http2: Boolean | ServerOptions | SecureServerOptions = null,
     https: typings.node.httpsMod.ServerOptions = null,
     liveReload: js.UndefOr[Boolean] = js.undefined,
-    log: AnonDebug = null,
+    log: AnonLevel = null,
     middleware: (/* app */ ^[DefaultState, DefaultContext], /* builtins */ Builtins) => Unit = null,
     open: Boolean | AnonApp = null,
     port: Double | js.Promise[Double] = null,

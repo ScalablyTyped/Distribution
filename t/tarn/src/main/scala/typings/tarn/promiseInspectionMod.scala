@@ -21,7 +21,7 @@ object promiseInspectionMod extends js.Object {
   
   /* Rewritten from type alias, can be one of: 
     - typings.tarn.AnonError[T]
-    - typings.tarn.AnonErrorValue[T]
+    - typings.tarn.AnonValue[T]
   */
   trait PromiseInspectionArgs[T] extends js.Object
   

@@ -1,8 +1,8 @@
 package typings.antd.mod
 
-import typings.antd.AnonBorderedDataSource
+import typings.antd.AnonDataSource
 import typings.antd.AnonGrid
-import typings.antd.TypeofClassItem
+import typings.antd.TypeofItem
 import typings.antd.listMod.ListProps
 import typings.antd.listMod.default
 import scala.scalajs.js
@@ -19,8 +19,8 @@ class List[T] protected () extends default[T] {
 @JSImport("antd", "List")
 @js.native
 object List extends js.Object {
-  var Item: TypeofClassItem = js.native
+  var Item: TypeofItem = js.native
   var childContextTypes: AnonGrid = js.native
-  var defaultProps: AnonBorderedDataSource = js.native
+  var defaultProps: AnonDataSource = js.native
 }
 

@@ -8,6 +8,7 @@ import typings.builderUtilRuntime.builderUtilRuntimeStrings.`private`
 import typings.builderUtilRuntime.builderUtilRuntimeStrings.`public-read`
 import typings.builderUtilRuntime.builderUtilRuntimeStrings.awsColonkms
 import typings.builderUtilRuntime.builderUtilRuntimeStrings.s3
+import typings.node.httpMod.OutgoingHttpHeaders
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -57,6 +58,7 @@ object S3Options {
     publishAutoUpdate: js.UndefOr[Boolean] = js.undefined,
     publisherName: js.Array[String] = null,
     region: String = null,
+    requestHeaders: OutgoingHttpHeaders = null,
     storageClass: STANDARD | REDUCED_REDUNDANCY | STANDARD_IA = null,
     updaterCacheDirName: String = null
   ): S3Options = {
@@ -69,6 +71,7 @@ object S3Options {
     if (!js.isUndefined(publishAutoUpdate)) __obj.updateDynamic("publishAutoUpdate")(publishAutoUpdate.asInstanceOf[js.Any])
     if (publisherName != null) __obj.updateDynamic("publisherName")(publisherName.asInstanceOf[js.Any])
     if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
+    if (requestHeaders != null) __obj.updateDynamic("requestHeaders")(requestHeaders.asInstanceOf[js.Any])
     if (storageClass != null) __obj.updateDynamic("storageClass")(storageClass.asInstanceOf[js.Any])
     if (updaterCacheDirName != null) __obj.updateDynamic("updaterCacheDirName")(updaterCacheDirName.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3Options]

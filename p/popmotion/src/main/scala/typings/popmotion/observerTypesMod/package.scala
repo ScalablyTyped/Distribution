@@ -24,6 +24,5 @@ package object observerTypesMod {
     /* props */ typings.popmotion.observerTypesMod.ObserverProps, 
     typings.popmotion.observerTypesMod.IObserver
   ]
-  type ObserverProps = typings.popmotion.observerTypesMod.PartialObserver with typings.popmotion.AnonMiddleware
   type Update = js.Function
 }

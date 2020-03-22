@@ -2,7 +2,7 @@ package typings.nivoPie.mod
 
 import typings.nivoColors.mod.InheritedColorProp
 import typings.nivoColors.mod.OrdinalColorsInstruction
-import typings.nivoCore.Anon
+import typings.nivoCore.AnonDictkey
 import typings.nivoCore.AnonId
 import typings.nivoCore.mod.Box
 import typings.nivoCore.mod.Theme
@@ -23,11 +23,11 @@ trait PieSvgProps extends js.Object {
   var colors: js.UndefOr[OrdinalColorsInstruction[PieDatum]] = js.undefined
   var cornerRadius: js.UndefOr[Double] = js.undefined
   var data: js.Array[PieDatum]
-  var defs: js.UndefOr[js.Array[AnonId]] = js.undefined
+  var defs: js.UndefOr[js.Array[AnonDictkey]] = js.undefined
   var enableRadialLabels: js.UndefOr[Boolean] = js.undefined
   var enableSlicesLabels: js.UndefOr[Boolean] = js.undefined
   var endAngle: js.UndefOr[Double] = js.undefined
-  var fill: js.UndefOr[js.Array[Anon[PieDatum]]] = js.undefined
+  var fill: js.UndefOr[js.Array[AnonId[PieDatum]]] = js.undefined
   var fit: js.UndefOr[Boolean] = js.undefined
   var innerRadius: js.UndefOr[Double] = js.undefined
   var isInteractive: js.UndefOr[Boolean] = js.undefined
@@ -67,11 +67,11 @@ object PieSvgProps {
     borderWidth: Int | Double = null,
     colors: OrdinalColorsInstruction[PieDatum] = null,
     cornerRadius: Int | Double = null,
-    defs: js.Array[AnonId] = null,
+    defs: js.Array[AnonDictkey] = null,
     enableRadialLabels: js.UndefOr[Boolean] = js.undefined,
     enableSlicesLabels: js.UndefOr[Boolean] = js.undefined,
     endAngle: Int | Double = null,
-    fill: js.Array[Anon[PieDatum]] = null,
+    fill: js.Array[AnonId[PieDatum]] = null,
     fit: js.UndefOr[Boolean] = js.undefined,
     innerRadius: Int | Double = null,
     isInteractive: js.UndefOr[Boolean] = js.undefined,

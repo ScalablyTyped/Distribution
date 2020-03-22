@@ -1,7 +1,7 @@
 package typings.oracleOraclejet.ojdatagridMod.ojDataGrid
 
+import typings.oracleOraclejet.AnonColumnK
 import typings.oracleOraclejet.AnonColumnRow
-import typings.oracleOraclejet.AnonColumnRowK
 import typings.oracleOraclejet.ojdataproviderMod.DataProvider
 import typings.oracleOraclejet.oracleOraclejetStrings.edit
 import typings.oracleOraclejet.oracleOraclejetStrings.navigation
@@ -18,7 +18,7 @@ trait CellContext[K, D] extends js.Object {
   var datasource: (DataProvider[K, D]) | Null
   var extents: AnonColumnRow
   var indexes: AnonColumnRow
-  var keys: AnonColumnRowK[K]
+  var keys: AnonColumnK[K]
   var mode: edit | navigation
   var parentElement: Element
 }
@@ -31,7 +31,7 @@ object CellContext {
     data: D,
     extents: AnonColumnRow,
     indexes: AnonColumnRow,
-    keys: AnonColumnRowK[K],
+    keys: AnonColumnK[K],
     mode: edit | navigation,
     parentElement: Element,
     datasource: DataProvider[K, D] = null

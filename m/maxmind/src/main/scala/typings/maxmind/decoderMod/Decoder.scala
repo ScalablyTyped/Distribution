@@ -1,6 +1,5 @@
 package typings.maxmind.decoderMod
 
-import typings.node.Buffer
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,22 +9,22 @@ trait Decoder extends js.Object {
   var baseOffset: js.Any
   var cache: js.Any
   var db: js.Any
+  var decodeArray: js.Any
+  var decodeBigUint: js.Any
+  var decodeBoolean: js.Any
+  var decodeByType: js.Any
+  var decodeBytes: js.Any
+  var decodeDouble: js.Any
+  var decodeFloat: js.Any
+  var decodeInt32: js.Any
+  var decodeMap: js.Any
+  var decodePointer: js.Any
+  var decodeString: js.Any
+  var decodeUint: js.Any
+  var sizeFromCtrlByte: js.Any
   var telemetry: Record[String, _]
   def decode(offset: Double): js.Any
-  def decodeArray(size: Double, offset: Double): Cursor
-  def decodeBigUint(offset: Double, size: Double): String
-  def decodeBoolean(size: Double): Boolean
-  def decodeByType(`type`: String, offset: Double, size: Double): Cursor
-  def decodeBytes(offset: Double, size: Double): Buffer
-  def decodeDouble(offset: Double): Double
   def decodeFast(offset: Double): js.Any
-  def decodeFloat(offset: Double): Double
-  def decodeInt32(offset: Double, size: Double): Double
-  def decodeMap(size: Double, offset: Double): Cursor
-  def decodePointer(ctrlByte: Double, offset: Double): Cursor
-  def decodeString(offset: Double, size: Double): js.Any
-  def decodeUint(offset: Double, size: Double): String | Double
-  def sizeFromCtrlByte(ctrlByte: Double, offset: Double): Cursor
 }
 
 object Decoder {
@@ -35,23 +34,23 @@ object Decoder {
     cache: js.Any,
     db: js.Any,
     decode: Double => js.Any,
-    decodeArray: (Double, Double) => Cursor,
-    decodeBigUint: (Double, Double) => String,
-    decodeBoolean: Double => Boolean,
-    decodeByType: (String, Double, Double) => Cursor,
-    decodeBytes: (Double, Double) => Buffer,
-    decodeDouble: Double => Double,
+    decodeArray: js.Any,
+    decodeBigUint: js.Any,
+    decodeBoolean: js.Any,
+    decodeByType: js.Any,
+    decodeBytes: js.Any,
+    decodeDouble: js.Any,
     decodeFast: Double => js.Any,
-    decodeFloat: Double => Double,
-    decodeInt32: (Double, Double) => Double,
-    decodeMap: (Double, Double) => Cursor,
-    decodePointer: (Double, Double) => Cursor,
-    decodeString: (Double, Double) => js.Any,
-    decodeUint: (Double, Double) => String | Double,
-    sizeFromCtrlByte: (Double, Double) => Cursor,
+    decodeFloat: js.Any,
+    decodeInt32: js.Any,
+    decodeMap: js.Any,
+    decodePointer: js.Any,
+    decodeString: js.Any,
+    decodeUint: js.Any,
+    sizeFromCtrlByte: js.Any,
     telemetry: Record[String, _]
   ): Decoder = {
-    val __obj = js.Dynamic.literal(baseOffset = baseOffset.asInstanceOf[js.Any], cache = cache.asInstanceOf[js.Any], db = db.asInstanceOf[js.Any], decode = js.Any.fromFunction1(decode), decodeArray = js.Any.fromFunction2(decodeArray), decodeBigUint = js.Any.fromFunction2(decodeBigUint), decodeBoolean = js.Any.fromFunction1(decodeBoolean), decodeByType = js.Any.fromFunction3(decodeByType), decodeBytes = js.Any.fromFunction2(decodeBytes), decodeDouble = js.Any.fromFunction1(decodeDouble), decodeFast = js.Any.fromFunction1(decodeFast), decodeFloat = js.Any.fromFunction1(decodeFloat), decodeInt32 = js.Any.fromFunction2(decodeInt32), decodeMap = js.Any.fromFunction2(decodeMap), decodePointer = js.Any.fromFunction2(decodePointer), decodeString = js.Any.fromFunction2(decodeString), decodeUint = js.Any.fromFunction2(decodeUint), sizeFromCtrlByte = js.Any.fromFunction2(sizeFromCtrlByte), telemetry = telemetry.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(baseOffset = baseOffset.asInstanceOf[js.Any], cache = cache.asInstanceOf[js.Any], db = db.asInstanceOf[js.Any], decode = js.Any.fromFunction1(decode), decodeArray = decodeArray.asInstanceOf[js.Any], decodeBigUint = decodeBigUint.asInstanceOf[js.Any], decodeBoolean = decodeBoolean.asInstanceOf[js.Any], decodeByType = decodeByType.asInstanceOf[js.Any], decodeBytes = decodeBytes.asInstanceOf[js.Any], decodeDouble = decodeDouble.asInstanceOf[js.Any], decodeFast = js.Any.fromFunction1(decodeFast), decodeFloat = decodeFloat.asInstanceOf[js.Any], decodeInt32 = decodeInt32.asInstanceOf[js.Any], decodeMap = decodeMap.asInstanceOf[js.Any], decodePointer = decodePointer.asInstanceOf[js.Any], decodeString = decodeString.asInstanceOf[js.Any], decodeUint = decodeUint.asInstanceOf[js.Any], sizeFromCtrlByte = sizeFromCtrlByte.asInstanceOf[js.Any], telemetry = telemetry.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Decoder]
   }

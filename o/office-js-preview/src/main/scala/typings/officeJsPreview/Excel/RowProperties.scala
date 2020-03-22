@@ -1,6 +1,6 @@
 package typings.officeJsPreview.Excel
 
-import typings.officeJsPreview.AnonRowHeightNumber
+import typings.officeJsPreview.CellPropertiesFormatrowHe
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,7 +40,7 @@ object RowProperties {
   def apply(
     address: String = null,
     addressLocal: String = null,
-    format: CellPropertiesFormat with AnonRowHeightNumber = null,
+    format: CellPropertiesFormatrowHe = null,
     hyperlink: RangeHyperlink = null,
     rowHidden: js.UndefOr[Boolean] = js.undefined,
     rowIndex: Int | Double = null,

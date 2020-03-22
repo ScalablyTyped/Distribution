@@ -1,7 +1,7 @@
 
 # Scala.js typings for p-queue
 
-Typings are for version 6.2.1
+Typings are for version 6.3.0
 
 ## Library description:
 Promise queue with concurrency control

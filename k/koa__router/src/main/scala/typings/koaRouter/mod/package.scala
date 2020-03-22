@@ -8,7 +8,7 @@ package object mod {
   type Middleware[StateT, CustomT] = typings.koa.mod.Middleware[StateT, CustomT with (typings.koaRouter.mod.RouterParamContext[StateT, CustomT])]
   type ParamMiddleware = js.Function3[
     /* param */ java.lang.String, 
-    /* ctx */ typings.koaRouter.mod.RouterContext[js.Any, js.Object], 
+    /* ctx */ typings.koaRouter.RouterContextany, 
     /* next */ typings.koa.mod.Next, 
     js.Any
   ]

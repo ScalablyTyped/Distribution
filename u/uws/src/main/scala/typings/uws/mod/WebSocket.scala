@@ -3,14 +3,14 @@ package typings.uws.mod
 import typings.node.eventsMod.EventEmitter
 import typings.node.httpMod.IncomingMessage
 import typings.std.Error
+import typings.uws.Anon0
 import typings.uws.AnonBinary
 import typings.uws.AnonBinaryBoolean
 import typings.uws.AnonCode
-import typings.uws.AnonCodeReason
 import typings.uws.AnonData
-import typings.uws.AnonDataTarget
+import typings.uws.AnonReason
 import typings.uws.AnonTarget
-import typings.uws.AnonTarget1916242669
+import typings.uws.AnonType
 import typings.uws.uwsStrings.close
 import typings.uws.uwsStrings.error
 import typings.uws.uwsStrings.message
@@ -39,7 +39,7 @@ trait WebSocket extends EventEmitter {
   @JSName("addEventListener")
   def addEventListener_close(method: close): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_close(method: close, cb: js.Function1[/* event */ AnonCodeReason, Unit]): Unit = js.native
+  def addEventListener_close(method: close, cb: js.Function1[/* event */ AnonReason, Unit]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_error(method: error): Unit = js.native
   @JSName("addEventListener")
@@ -48,11 +48,11 @@ trait WebSocket extends EventEmitter {
   @JSName("addEventListener")
   def addEventListener_message(method: message): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_message(method: message, cb: js.Function1[/* event */ AnonDataTarget, Unit]): Unit = js.native
+  def addEventListener_message(method: message, cb: js.Function1[/* event */ AnonType, Unit]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_open(method: open): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_open(method: open, cb: js.Function1[/* event */ AnonTarget1916242669, Unit]): Unit = js.native
+  def addEventListener_open(method: open, cb: js.Function1[/* event */ Anon0, Unit]): Unit = js.native
   @JSName("addListener")
   def addListener_close(event: close, cb: js.Function2[/* code */ Double, /* message */ String, Unit]): this.type = js.native
   @JSName("addListener")

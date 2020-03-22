@@ -2,6 +2,7 @@ package typings.coinbaseCommerceNode.mod
 
 import typings.coinbaseCommerceNode.AnonBlock
 import typings.coinbaseCommerceNode.AnonContext
+import typings.coinbaseCommerceNode.PartialRecordCryptoNamest
 import typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.charge
 import typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.chargeColonconfirmed
 import typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.chargeColoncreated
@@ -11,8 +12,6 @@ import typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.chargeColonpendi
 import typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.chargeColonresolved
 import typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.checkout
 import typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.event
-import typings.std.Partial
-import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -36,7 +35,7 @@ object resources extends js.Object {
       * Set of addresses associated with the charge.
       */
     /* CompleteClass */
-    override var addresses: Partial[Record[CryptoName, String]] = js.native
+    override var addresses: PartialRecordCryptoNamest = js.native
     /**
       * User fiendly primary key.
       */

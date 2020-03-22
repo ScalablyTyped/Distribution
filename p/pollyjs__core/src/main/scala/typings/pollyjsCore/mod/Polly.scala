@@ -1,6 +1,6 @@
 package typings.pollyjsCore.mod
 
-import typings.pollyjsCore.TypeofClassPersister
+import typings.pollyjsCore.TypeofPersister
 import typings.pollyjsPersister.mod.default
 import typings.std.Map
 import scala.scalajs.js
@@ -46,8 +46,8 @@ object Polly extends js.Object {
   def on(event: PollyEvent, listener: PollyEventListener): Unit = js.native
   def once(event: PollyEvent, listener: PollyEventListener): Unit = js.native
   def register(Factory: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Adapter */ js.Any): Unit = js.native
-  def register(Factory: TypeofClassPersister): Unit = js.native
+  def register(Factory: TypeofPersister): Unit = js.native
   def unregister(Factory: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Adapter */ js.Any): Unit = js.native
-  def unregister(Factory: TypeofClassPersister): Unit = js.native
+  def unregister(Factory: TypeofPersister): Unit = js.native
 }
 

@@ -1,7 +1,7 @@
 package typings.flatpickr.localeMod
 
 import typings.flatpickr.AnonLonghand
-import typings.flatpickr.AnonLonghandShorthand
+import typings.flatpickr.AnonShorthand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ trait Locale extends js.Object {
   var firstDayOfWeek: Double
   var hourAriaLabel: String
   var minuteAriaLabel: String
-  var months: AnonLonghandShorthand
+  var months: AnonShorthand
   var rangeSeparator: String
   var scrollTitle: String
   var time_24hr: Boolean
@@ -31,7 +31,7 @@ object Locale {
     firstDayOfWeek: Double,
     hourAriaLabel: String,
     minuteAriaLabel: String,
-    months: AnonLonghandShorthand,
+    months: AnonShorthand,
     ordinal: Double => String,
     rangeSeparator: String,
     scrollTitle: String,

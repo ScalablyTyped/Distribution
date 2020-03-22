@@ -13,6 +13,9 @@ object sindresorhusIsStrings {
   sealed trait ArrayBuffer extends TypeName
   
   @js.native
+  sealed trait AsyncFunction extends TypeName
+  
+  @js.native
   sealed trait Buffer extends TypeName
   
   @js.native
@@ -34,6 +37,9 @@ object sindresorhusIsStrings {
   sealed trait Function extends TypeName
   
   @js.native
+  sealed trait GeneratorFunction extends TypeName
+  
+  @js.native
   sealed trait Int16Array extends TypeName
   
   @js.native
@@ -49,6 +55,9 @@ object sindresorhusIsStrings {
   sealed trait Object extends TypeName
   
   @js.native
+  sealed trait Observable extends TypeName
+  
+  @js.native
   sealed trait Promise extends TypeName
   
   @js.native
@@ -59,6 +68,9 @@ object sindresorhusIsStrings {
   
   @js.native
   sealed trait SharedArrayBuffer extends TypeName
+  
+  @js.native
+  sealed trait URL extends TypeName
   
   @js.native
   sealed trait Uint16Array extends TypeName
@@ -101,6 +113,8 @@ object sindresorhusIsStrings {
   @scala.inline
   def ArrayBuffer: ArrayBuffer = "ArrayBuffer".asInstanceOf[ArrayBuffer]
   @scala.inline
+  def AsyncFunction: AsyncFunction = "AsyncFunction".asInstanceOf[AsyncFunction]
+  @scala.inline
   def Buffer: Buffer = "Buffer".asInstanceOf[Buffer]
   @scala.inline
   def DataView: DataView = "DataView".asInstanceOf[DataView]
@@ -115,6 +129,8 @@ object sindresorhusIsStrings {
   @scala.inline
   def Function: Function = "Function".asInstanceOf[Function]
   @scala.inline
+  def GeneratorFunction: GeneratorFunction = "GeneratorFunction".asInstanceOf[GeneratorFunction]
+  @scala.inline
   def Int16Array: Int16Array = "Int16Array".asInstanceOf[Int16Array]
   @scala.inline
   def Int32Array: Int32Array = "Int32Array".asInstanceOf[Int32Array]
@@ -125,6 +141,8 @@ object sindresorhusIsStrings {
   @scala.inline
   def Object: Object = "Object".asInstanceOf[Object]
   @scala.inline
+  def Observable: Observable = "Observable".asInstanceOf[Observable]
+  @scala.inline
   def Promise: Promise = "Promise".asInstanceOf[Promise]
   @scala.inline
   def RegExp: RegExp = "RegExp".asInstanceOf[RegExp]
@@ -132,6 +150,8 @@ object sindresorhusIsStrings {
   def Set: Set = "Set".asInstanceOf[Set]
   @scala.inline
   def SharedArrayBuffer: SharedArrayBuffer = "SharedArrayBuffer".asInstanceOf[SharedArrayBuffer]
+  @scala.inline
+  def URL: URL = "URL".asInstanceOf[URL]
   @scala.inline
   def Uint16Array: Uint16Array = "Uint16Array".asInstanceOf[Uint16Array]
   @scala.inline

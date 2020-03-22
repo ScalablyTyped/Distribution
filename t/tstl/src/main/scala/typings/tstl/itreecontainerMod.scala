@@ -1,5 +1,6 @@
 package typings.tstl
 
+import org.scalablytyped.runtime.Instantiable1
 import typings.tstl.comparatorMod.Comparator
 import typings.tstl.iassociativecontainerMod.IAssociativeContainer
 import typings.tstl.icontainerMod.IContainer.Iterator
@@ -47,6 +48,23 @@ object itreecontainerMod extends js.Object {
       * @return The value comparison function.
       */
     def value_comp(): Comparator[Elem, Elem] = js.native
+  }
+  
+  @js.native
+  object ITreeContainer extends js.Object {
+    /**
+      * @internal
+      */
+    @js.native
+    trait Factory[T, Arguments /* <: js.Array[_] */] extends Instantiable1[/* args */ Arguments, T]
+    
+    def construct[Key, T /* <: Elem */, SourceT /* <: ITreeContainer[Key, T, SourceT, IteratorT, ReverseIteratorT, Elem] */, IteratorT /* <: Iterator[T, SourceT, IteratorT, ReverseIteratorT, Elem] */, ReverseIteratorT /* <: ReverseIterator[T, SourceT, IteratorT, ReverseIteratorT, Elem] */, Elem](
+      source: SourceT,
+      Source: Factory[SourceT, js.Array[_]],
+      treeFactory: js.Function1[/* comp */ Comparator[Key, Key], Unit],
+      args: js.Any*
+    ): Unit = js.native
+    def emplacable[Key, T /* <: Elem */, SourceT /* <: ITreeContainer[Key, T, SourceT, IteratorT, ReverseIteratorT, Elem] */, IteratorT /* <: Iterator[T, SourceT, IteratorT, ReverseIteratorT, Elem] */, ReverseIteratorT /* <: ReverseIterator[T, SourceT, IteratorT, ReverseIteratorT, Elem] */, Elem](source: SourceT, hint: IteratorT, elem: T): Boolean = js.native
   }
   
 }

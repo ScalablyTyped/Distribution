@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ConfigureAgentResponse extends js.Object {
   /**
-    * The configuration for the agent to use.
+    * 
     */
   var configuration: AgentConfiguration = js.native
 }

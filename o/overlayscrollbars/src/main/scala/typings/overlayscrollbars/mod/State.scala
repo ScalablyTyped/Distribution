@@ -2,9 +2,9 @@ package typings.overlayscrollbars.mod
 
 import typings.overlayscrollbars.AnonB
 import typings.overlayscrollbars.AnonHeight
-import typings.overlayscrollbars.AnonXXs
-import typings.overlayscrollbars.AnonXYBoolean
-import typings.overlayscrollbars.AnonXYNumber
+import typings.overlayscrollbars.AnonXBoolean
+import typings.overlayscrollbars.AnonXNumber
+import typings.overlayscrollbars.AnonXs
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,11 +14,11 @@ trait State extends js.Object {
   var contentScrollSize: AnonHeight
   var destroyed: Boolean
   var documentMixed: Boolean
-  var hasOverflow: AnonXYBoolean
+  var hasOverflow: AnonXBoolean
   var heightAuto: Boolean
-  var hideOverflow: AnonXXs
+  var hideOverflow: AnonXs
   var hostSize: AnonHeight
-  var overflowAmount: AnonXYNumber
+  var overflowAmount: AnonXNumber
   var padding: AnonB
   var sleeping: Boolean
   var viewportSize: AnonHeight
@@ -32,11 +32,11 @@ object State {
     contentScrollSize: AnonHeight,
     destroyed: Boolean,
     documentMixed: Boolean,
-    hasOverflow: AnonXYBoolean,
+    hasOverflow: AnonXBoolean,
     heightAuto: Boolean,
-    hideOverflow: AnonXXs,
+    hideOverflow: AnonXs,
     hostSize: AnonHeight,
-    overflowAmount: AnonXYNumber,
+    overflowAmount: AnonXNumber,
     padding: AnonB,
     sleeping: Boolean,
     viewportSize: AnonHeight,

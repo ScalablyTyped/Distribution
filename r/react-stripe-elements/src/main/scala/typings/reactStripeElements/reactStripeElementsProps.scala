@@ -22,8 +22,6 @@ trait reactStripeElementsProps {
   @scala.inline
   def CardNumberElementProps: ElementProps.type = typings.reactStripeElements.mod.ReactStripeElements.ElementProps
   type CardNumberElementProps = ElementProps
-  @scala.inline
-  def ElementsProps: ElementsCreateOptions.type = typings.stripeV3.stripe.elements.ElementsCreateOptions
   type ElementsProps = ElementsCreateOptions
   @scala.inline
   def IbanElementProps: ElementProps.type = typings.reactStripeElements.mod.ReactStripeElements.ElementProps
@@ -37,6 +35,8 @@ trait reactStripeElementsProps {
   @scala.inline
   def PostalCodeElementProps: ElementProps.type = typings.reactStripeElements.mod.ReactStripeElements.ElementProps
   type PostalCodeElementProps = ElementProps
+  @scala.inline
+  def StripeProviderProps: typings.reactStripeElements.mod.ReactStripeElements.StripeProviderProps.type = typings.reactStripeElements.mod.ReactStripeElements.StripeProviderProps
   type StripeProviderProps = typings.reactStripeElements.mod.ReactStripeElements.StripeProviderProps
 }
 

@@ -1,13 +1,16 @@
 package typings.koaSession.mod
 
+import typings.koa.mod.Application
+import typings.koa.mod.Context
+import typings.koa.mod.DefaultContext
+import typings.koa.mod.DefaultState
 import typings.koaSession.koaSessionBooleans.`false`
-import typings.koaSession.mod.koaAugmentingMod.Context
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ContextSession extends js.Object {
-  var app: /* import warning: importer.ImportType#apply Failed type conversion: koa-session.koa-session.koa.Context['app'] */ js.Any
+  var app: Application[DefaultState, DefaultContext]
   var ctx: Context
   var opts: typings.koaSession.mod.opts
   var prevHash: String
@@ -35,7 +38,7 @@ trait ContextSession extends js.Object {
 object ContextSession {
   @scala.inline
   def apply(
-    app: /* import warning: importer.ImportType#apply Failed type conversion: koa-session.koa-session.koa.Context['app'] */ js.Any,
+    app: Application[DefaultState, DefaultContext],
     commit: () => js.Promise[Unit],
     ctx: Context,
     get: () => Session,

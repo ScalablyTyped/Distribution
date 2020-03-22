@@ -28,6 +28,11 @@ trait SnapOptions
     */
   val assumes: js.UndefOr[js.Array[String] | String | Null] = js.undefined
   /**
+    * Whether or not the snap should automatically start on login.
+    * @default false
+    */
+  val autoStart: js.UndefOr[Boolean] = js.undefined
+  /**
     * The list of debian packages needs to be installed for building this snap.
     */
   val buildPackages: js.UndefOr[js.Array[String] | Null] = js.undefined
@@ -52,7 +57,7 @@ trait SnapOptions
   val hooks: js.UndefOr[String | Null] = js.undefined
   /**
     * The list of [plugs](https://snapcraft.io/docs/reference/interfaces).
-    * Defaults to `["desktop", "desktop-legacy", "home", "x11", "unity7", "browser-support", "network", "gsettings", "pulseaudio", "opengl"]`.
+    * Defaults to `["desktop", "desktop-legacy", "home", "x11", "unity7", "browser-support", "network", "gsettings", "audio-playback", "pulseaudio", "opengl"]`.
     *
     * If list contains `default`, it will be replaced to default list, so, `["default", "foo"]` can be used to add custom plug `foo` in addition to defaults.
     *
@@ -93,12 +98,14 @@ object SnapOptions {
     after: js.Array[String] = null,
     artifactName: String = null,
     assumes: js.Array[String] | String = null,
+    autoStart: js.UndefOr[Boolean] = js.undefined,
     buildPackages: js.Array[String] = null,
     category: String = null,
     confinement: devmode | strict | classic = null,
     description: String = null,
     desktop: js.Any = null,
     environment: StringDictionary[String] = null,
+    executableArgs: js.Array[String] = null,
     grade: devel | stable = null,
     hooks: String = null,
     mimeTypes: js.Array[String] = null,
@@ -113,12 +120,14 @@ object SnapOptions {
     if (after != null) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])
     if (artifactName != null) __obj.updateDynamic("artifactName")(artifactName.asInstanceOf[js.Any])
     if (assumes != null) __obj.updateDynamic("assumes")(assumes.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoStart)) __obj.updateDynamic("autoStart")(autoStart.asInstanceOf[js.Any])
     if (buildPackages != null) __obj.updateDynamic("buildPackages")(buildPackages.asInstanceOf[js.Any])
     if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
     if (confinement != null) __obj.updateDynamic("confinement")(confinement.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (desktop != null) __obj.updateDynamic("desktop")(desktop.asInstanceOf[js.Any])
     if (environment != null) __obj.updateDynamic("environment")(environment.asInstanceOf[js.Any])
+    if (executableArgs != null) __obj.updateDynamic("executableArgs")(executableArgs.asInstanceOf[js.Any])
     if (grade != null) __obj.updateDynamic("grade")(grade.asInstanceOf[js.Any])
     if (hooks != null) __obj.updateDynamic("hooks")(hooks.asInstanceOf[js.Any])
     if (mimeTypes != null) __obj.updateDynamic("mimeTypes")(mimeTypes.asInstanceOf[js.Any])

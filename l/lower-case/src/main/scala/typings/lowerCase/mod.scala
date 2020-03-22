@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("lower-case", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
-  def apply(value: String): String = js.native
-  def apply(value: String, locale: String): String = js.native
+  def localeLowerCase(str: String, locale: String): String = js.native
+  def lowerCase(str: String): String = js.native
 }
 

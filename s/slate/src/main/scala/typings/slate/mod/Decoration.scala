@@ -1,7 +1,7 @@
 package typings.slate.mod
 
 import typings.immutable.Immutable.List
-import typings.slate.AnonMark
+import typings.slate.DecorationJSONmarkMarkJSO
 import typings.slate.slateStrings.decoration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -32,7 +32,7 @@ object Decoration extends js.Object {
   def createProperties(attrs: RangeType): DecorationProperties = js.native
   def createProperties(attrs: RangeTypeJSON): DecorationProperties = js.native
   def createProperties(attrs: RangeTypeProperties): DecorationProperties = js.native
-  def fromJSON(properties: DecorationJSON with AnonMark): Decoration = js.native
+  def fromJSON(properties: DecorationJSONmarkMarkJSO): Decoration = js.native
   def isDecoration(maybeDecoration: js.Any): /* is slate.slate.Decoration */ Boolean = js.native
 }
 

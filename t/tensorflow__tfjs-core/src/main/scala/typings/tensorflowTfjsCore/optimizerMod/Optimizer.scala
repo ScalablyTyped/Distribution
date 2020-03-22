@@ -1,6 +1,6 @@
 package typings.tensorflowTfjsCore.optimizerMod
 
-import typings.tensorflowTfjsCore.AnonGradsValue
+import typings.tensorflowTfjsCore.AnonValue
 import typings.tensorflowTfjsCore.distTypesMod.Rank
 import typings.tensorflowTfjsCore.serializationMod.Serializable
 import typings.tensorflowTfjsCore.tensorMod.Scalar
@@ -37,8 +37,8 @@ abstract class Optimizer () extends Serializable {
     * respect to. If specified, only the trainable variables in varList will have
     * gradients computed with respect to. Defaults to all trainable variables.
     */
-  def computeGradients(f: js.Function0[Scalar]): AnonGradsValue = js.native
-  def computeGradients(f: js.Function0[Scalar], varList: js.Array[Variable[Rank]]): AnonGradsValue = js.native
+  def computeGradients(f: js.Function0[Scalar]): AnonValue = js.native
+  def computeGradients(f: js.Function0[Scalar], varList: js.Array[Variable[Rank]]): AnonValue = js.native
   /**
     * Dispose the variables (if any) owned by this optimizer instance.
     */

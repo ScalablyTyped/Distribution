@@ -11,5 +11,7 @@ trait PropertyAccessEntityNameExpression
   var _propertyAccessExpressionLikeQualifiedNameBrand: js.UndefOr[js.Any] = js.native
   @JSName("expression")
   var expression_PropertyAccessEntityNameExpression: EntityNameExpression = js.native
+  @JSName("name")
+  var name_PropertyAccessEntityNameExpression: Identifier = js.native
 }
 

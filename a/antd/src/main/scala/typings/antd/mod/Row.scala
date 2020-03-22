@@ -1,6 +1,5 @@
 package typings.antd.mod
 
-import typings.antd.AnonAlign
 import typings.antd.AnonGutter
 import typings.antd.libRowMod.default
 import scala.scalajs.js
@@ -16,6 +15,5 @@ class Row () extends default
 @js.native
 object Row extends js.Object {
   var defaultProps: AnonGutter = js.native
-  var propTypes: AnonAlign = js.native
 }
 

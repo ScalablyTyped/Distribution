@@ -1,5 +1,6 @@
 package typings.textBuffer.mod._Global_.TextBuffer
 
+import typings.textBuffer.ReadonlyRangeContainsPoint
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,7 +41,7 @@ trait Range extends js.Object {
     *  Freezes the range and its start and end point so it becomes immutable
     *  and returns itself.
     */
-  def freeze(): Range = js.native
+  def freeze(): ReadonlyRangeContainsPoint = js.native
   /** Get the number of rows in this range. */
   def getRowCount(): Double = js.native
   /** Returns an array of all rows in the range. */

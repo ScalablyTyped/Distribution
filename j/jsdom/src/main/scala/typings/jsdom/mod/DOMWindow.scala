@@ -1,337 +1,405 @@
 package typings.jsdom.mod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.jsdom.AnonABORTERR
 import typings.jsdom.AnonANYTYPE
 import typings.jsdom.AnonATTARGET
 import typings.jsdom.AnonATTRIBUTENODE
-import typings.jsdom.AnonAbortController
-import typings.jsdom.AnonAbortSignal
-import typings.jsdom.AnonAttr
-import typings.jsdom.AnonBarProp
-import typings.jsdom.AnonBase
-import typings.jsdom.AnonBlobParts
-import typings.jsdom.AnonCDATASection
 import typings.jsdom.AnonCHARSETRULE
 import typings.jsdom.AnonCLOSED
-import typings.jsdom.AnonCSSImportRule
-import typings.jsdom.AnonCSSMediaRule
-import typings.jsdom.AnonCSSStyleDeclaration
-import typings.jsdom.AnonCSSStyleRule
-import typings.jsdom.AnonCSSStyleSheet
-import typings.jsdom.AnonCallback
-import typings.jsdom.AnonCharacterData
+import typings.jsdom.AnonCreateObjectURL
 import typings.jsdom.AnonDOMDELTALINE
-import typings.jsdom.AnonDOMImplementation
 import typings.jsdom.AnonDOMKEYLOCATIONLEFT
-import typings.jsdom.AnonDOMParser
-import typings.jsdom.AnonDOMStringMap
-import typings.jsdom.AnonDOMTokenList
 import typings.jsdom.AnonDONE
-import typings.jsdom.AnonDONEHEADERSRECEIVED
-import typings.jsdom.AnonData
-import typings.jsdom.AnonDataComment
-import typings.jsdom.AnonDocument
-import typings.jsdom.AnonDocumentFragment
-import typings.jsdom.AnonDocumentType
 import typings.jsdom.AnonENDTOEND
 import typings.jsdom.AnonERROR
-import typings.jsdom.AnonElement
-import typings.jsdom.AnonEventInitDict
-import typings.jsdom.AnonEventInitDictType
-import typings.jsdom.AnonEventInitDictTypeArg
-import typings.jsdom.AnonEventInitDictTypeCompositionEvent
-import typings.jsdom.AnonEventInitDictTypeErrorEvent
-import typings.jsdom.AnonEventInitDictTypeEventTarget
-import typings.jsdom.AnonEventInitDictTypeFocusEvent
-import typings.jsdom.AnonEventInitDictTypeHashChangeEvent
-import typings.jsdom.AnonEventInitDictTypeMouseEvent
-import typings.jsdom.AnonEventInitDictTypePopStateEvent
-import typings.jsdom.AnonEventInitDictTypeStorageEvent
-import typings.jsdom.AnonEventInitDictTypeString
-import typings.jsdom.AnonEventInitDictTypeStringTouchEvent
-import typings.jsdom.AnonEventTarget
 import typings.jsdom.AnonFILTERACCEPT
-import typings.jsdom.AnonFileBits
-import typings.jsdom.AnonFileList
-import typings.jsdom.AnonForm
 import typings.jsdom.AnonHAVECURRENTDATA
-import typings.jsdom.AnonHTMLAnchorElement
-import typings.jsdom.AnonHTMLAreaElement
-import typings.jsdom.AnonHTMLAudioElement
-import typings.jsdom.AnonHTMLBRElement
-import typings.jsdom.AnonHTMLBaseElement
-import typings.jsdom.AnonHTMLBodyElement
-import typings.jsdom.AnonHTMLButtonElement
-import typings.jsdom.AnonHTMLCanvasElement
-import typings.jsdom.AnonHTMLCollection
-import typings.jsdom.AnonHTMLDListElement
-import typings.jsdom.AnonHTMLDataElement
-import typings.jsdom.AnonHTMLDataListElement
-import typings.jsdom.AnonHTMLDetailsElement
-import typings.jsdom.AnonHTMLDialogElement
-import typings.jsdom.AnonHTMLDirectoryElement
-import typings.jsdom.AnonHTMLDivElement
-import typings.jsdom.AnonHTMLElement
-import typings.jsdom.AnonHTMLEmbedElement
-import typings.jsdom.AnonHTMLFieldSetElement
-import typings.jsdom.AnonHTMLFontElement
-import typings.jsdom.AnonHTMLFormElement
-import typings.jsdom.AnonHTMLFrameElement
-import typings.jsdom.AnonHTMLFrameSetElement
-import typings.jsdom.AnonHTMLHRElement
-import typings.jsdom.AnonHTMLHeadElement
-import typings.jsdom.AnonHTMLHeadingElement
-import typings.jsdom.AnonHTMLHtmlElement
-import typings.jsdom.AnonHTMLIFrameElement
-import typings.jsdom.AnonHTMLImageElement
-import typings.jsdom.AnonHTMLInputElement
-import typings.jsdom.AnonHTMLLIElement
-import typings.jsdom.AnonHTMLLabelElement
-import typings.jsdom.AnonHTMLLegendElement
-import typings.jsdom.AnonHTMLLinkElement
-import typings.jsdom.AnonHTMLMapElement
-import typings.jsdom.AnonHTMLMarqueeElement
-import typings.jsdom.AnonHTMLMenuElement
-import typings.jsdom.AnonHTMLMetaElement
-import typings.jsdom.AnonHTMLMeterElement
-import typings.jsdom.AnonHTMLModElement
-import typings.jsdom.AnonHTMLOListElement
-import typings.jsdom.AnonHTMLObjectElement
-import typings.jsdom.AnonHTMLOptGroupElement
-import typings.jsdom.AnonHTMLOptionElement
-import typings.jsdom.AnonHTMLOptionsCollection
-import typings.jsdom.AnonHTMLOutputElement
-import typings.jsdom.AnonHTMLParagraphElement
-import typings.jsdom.AnonHTMLParamElement
-import typings.jsdom.AnonHTMLPictureElement
-import typings.jsdom.AnonHTMLPreElement
-import typings.jsdom.AnonHTMLProgressElement
-import typings.jsdom.AnonHTMLQuoteElement
-import typings.jsdom.AnonHTMLScriptElement
-import typings.jsdom.AnonHTMLSelectElement
-import typings.jsdom.AnonHTMLSourceElement
-import typings.jsdom.AnonHTMLSpanElement
-import typings.jsdom.AnonHTMLStyleElement
-import typings.jsdom.AnonHTMLTableCaptionElement
-import typings.jsdom.AnonHTMLTableCellElement
-import typings.jsdom.AnonHTMLTableColElement
-import typings.jsdom.AnonHTMLTableElement
-import typings.jsdom.AnonHTMLTableRowElement
-import typings.jsdom.AnonHTMLTableSectionElement
-import typings.jsdom.AnonHTMLTemplateElement
-import typings.jsdom.AnonHTMLTextAreaElement
-import typings.jsdom.AnonHTMLTimeElement
-import typings.jsdom.AnonHTMLTitleElement
-import typings.jsdom.AnonHTMLUListElement
-import typings.jsdom.AnonHTMLUnknownElement
-import typings.jsdom.AnonHTMLVideoElement
-import typings.jsdom.AnonHistory
-import typings.jsdom.AnonInit
-import typings.jsdom.AnonInitHeaders
-import typings.jsdom.AnonLocation
-import typings.jsdom.AnonMediaList
-import typings.jsdom.AnonMimeType
-import typings.jsdom.AnonMimeTypeArray
-import typings.jsdom.AnonMutationRecord
-import typings.jsdom.AnonNamedNodeMap
-import typings.jsdom.AnonNavigator
-import typings.jsdom.AnonNodeIterator
-import typings.jsdom.AnonNodeList
-import typings.jsdom.AnonPageTransitionEvent
-import typings.jsdom.AnonPerformance
-import typings.jsdom.AnonPlugin
-import typings.jsdom.AnonPluginArray
-import typings.jsdom.AnonProcessingInstruction
-import typings.jsdom.AnonSVGAnimatedString
-import typings.jsdom.AnonSVGElement
-import typings.jsdom.AnonSVGGraphicsElement
-import typings.jsdom.AnonSVGNumber
-import typings.jsdom.AnonSVGStringList
-import typings.jsdom.AnonSVGTitleElement
+import typings.jsdom.AnonHEADERSRECEIVED
+import typings.jsdom.AnonInstantiable
+import typings.jsdom.AnonInstantiableAbortController
+import typings.jsdom.AnonInstantiableAbortSignal
+import typings.jsdom.AnonInstantiableAttr
+import typings.jsdom.AnonInstantiableBarProp
+import typings.jsdom.AnonInstantiableBlob
+import typings.jsdom.AnonInstantiableCDATASection
+import typings.jsdom.AnonInstantiableCSSImportRule
+import typings.jsdom.AnonInstantiableCSSMediaRule
+import typings.jsdom.AnonInstantiableCSSStyleDeclaration
+import typings.jsdom.AnonInstantiableCSSStyleRule
+import typings.jsdom.AnonInstantiableCSSStyleSheet
+import typings.jsdom.AnonInstantiableCharacterData
+import typings.jsdom.AnonInstantiableCloseEvent
+import typings.jsdom.AnonInstantiableComment
+import typings.jsdom.AnonInstantiableCompositionEvent
+import typings.jsdom.AnonInstantiableCustomEvent
+import typings.jsdom.AnonInstantiableDOMImplementation
+import typings.jsdom.AnonInstantiableDOMParser
+import typings.jsdom.AnonInstantiableDOMStringMap
+import typings.jsdom.AnonInstantiableDOMTokenList
+import typings.jsdom.AnonInstantiableDocument
+import typings.jsdom.AnonInstantiableDocumentFragment
+import typings.jsdom.AnonInstantiableDocumentType
+import typings.jsdom.AnonInstantiableElement
+import typings.jsdom.AnonInstantiableErrorEvent
+import typings.jsdom.AnonInstantiableEventTarget
+import typings.jsdom.AnonInstantiableFile
+import typings.jsdom.AnonInstantiableFileList
+import typings.jsdom.AnonInstantiableFocusEvent
+import typings.jsdom.AnonInstantiableFormData
+import typings.jsdom.AnonInstantiableHTMLAnchorElement
+import typings.jsdom.AnonInstantiableHTMLAreaElement
+import typings.jsdom.AnonInstantiableHTMLAudioElement
+import typings.jsdom.AnonInstantiableHTMLBRElement
+import typings.jsdom.AnonInstantiableHTMLBaseElement
+import typings.jsdom.AnonInstantiableHTMLBodyElement
+import typings.jsdom.AnonInstantiableHTMLButtonElement
+import typings.jsdom.AnonInstantiableHTMLCanvasElement
+import typings.jsdom.AnonInstantiableHTMLCollection
+import typings.jsdom.AnonInstantiableHTMLDListElement
+import typings.jsdom.AnonInstantiableHTMLDataElement
+import typings.jsdom.AnonInstantiableHTMLDataListElement
+import typings.jsdom.AnonInstantiableHTMLDetailsElement
+import typings.jsdom.AnonInstantiableHTMLDialogElement
+import typings.jsdom.AnonInstantiableHTMLDirectoryElement
+import typings.jsdom.AnonInstantiableHTMLDivElement
+import typings.jsdom.AnonInstantiableHTMLElement
+import typings.jsdom.AnonInstantiableHTMLEmbedElement
+import typings.jsdom.AnonInstantiableHTMLFieldSetElement
+import typings.jsdom.AnonInstantiableHTMLFontElement
+import typings.jsdom.AnonInstantiableHTMLFormElement
+import typings.jsdom.AnonInstantiableHTMLFrameElement
+import typings.jsdom.AnonInstantiableHTMLFrameSetElement
+import typings.jsdom.AnonInstantiableHTMLHRElement
+import typings.jsdom.AnonInstantiableHTMLHeadElement
+import typings.jsdom.AnonInstantiableHTMLHeadingElement
+import typings.jsdom.AnonInstantiableHTMLHtmlElement
+import typings.jsdom.AnonInstantiableHTMLIFrameElement
+import typings.jsdom.AnonInstantiableHTMLImageElement
+import typings.jsdom.AnonInstantiableHTMLInputElement
+import typings.jsdom.AnonInstantiableHTMLLIElement
+import typings.jsdom.AnonInstantiableHTMLLabelElement
+import typings.jsdom.AnonInstantiableHTMLLegendElement
+import typings.jsdom.AnonInstantiableHTMLLinkElement
+import typings.jsdom.AnonInstantiableHTMLMapElement
+import typings.jsdom.AnonInstantiableHTMLMarqueeElement
+import typings.jsdom.AnonInstantiableHTMLMenuElement
+import typings.jsdom.AnonInstantiableHTMLMetaElement
+import typings.jsdom.AnonInstantiableHTMLMeterElement
+import typings.jsdom.AnonInstantiableHTMLModElement
+import typings.jsdom.AnonInstantiableHTMLOListElement
+import typings.jsdom.AnonInstantiableHTMLObjectElement
+import typings.jsdom.AnonInstantiableHTMLOptGroupElement
+import typings.jsdom.AnonInstantiableHTMLOptionElement
+import typings.jsdom.AnonInstantiableHTMLOptionsCollection
+import typings.jsdom.AnonInstantiableHTMLOutputElement
+import typings.jsdom.AnonInstantiableHTMLParagraphElement
+import typings.jsdom.AnonInstantiableHTMLParamElement
+import typings.jsdom.AnonInstantiableHTMLPictureElement
+import typings.jsdom.AnonInstantiableHTMLPreElement
+import typings.jsdom.AnonInstantiableHTMLProgressElement
+import typings.jsdom.AnonInstantiableHTMLQuoteElement
+import typings.jsdom.AnonInstantiableHTMLScriptElement
+import typings.jsdom.AnonInstantiableHTMLSelectElement
+import typings.jsdom.AnonInstantiableHTMLSourceElement
+import typings.jsdom.AnonInstantiableHTMLSpanElement
+import typings.jsdom.AnonInstantiableHTMLStyleElement
+import typings.jsdom.AnonInstantiableHTMLTableCaptionElement
+import typings.jsdom.AnonInstantiableHTMLTableCellElement
+import typings.jsdom.AnonInstantiableHTMLTableColElement
+import typings.jsdom.AnonInstantiableHTMLTableElement
+import typings.jsdom.AnonInstantiableHTMLTableRowElement
+import typings.jsdom.AnonInstantiableHTMLTableSectionElement
+import typings.jsdom.AnonInstantiableHTMLTemplateElement
+import typings.jsdom.AnonInstantiableHTMLTextAreaElement
+import typings.jsdom.AnonInstantiableHTMLTimeElement
+import typings.jsdom.AnonInstantiableHTMLTitleElement
+import typings.jsdom.AnonInstantiableHTMLUListElement
+import typings.jsdom.AnonInstantiableHTMLUnknownElement
+import typings.jsdom.AnonInstantiableHTMLVideoElement
+import typings.jsdom.AnonInstantiableHashChangeEvent
+import typings.jsdom.AnonInstantiableHeaders
+import typings.jsdom.AnonInstantiableHistory
+import typings.jsdom.AnonInstantiableLocation
+import typings.jsdom.AnonInstantiableMediaList
+import typings.jsdom.AnonInstantiableMessageEvent
+import typings.jsdom.AnonInstantiableMimeType
+import typings.jsdom.AnonInstantiableMimeTypeArray
+import typings.jsdom.AnonInstantiableMouseEvent
+import typings.jsdom.AnonInstantiableMutationObserver
+import typings.jsdom.AnonInstantiableMutationRecord
+import typings.jsdom.AnonInstantiableNamedNodeMap
+import typings.jsdom.AnonInstantiableNavigator
+import typings.jsdom.AnonInstantiableNodeIterator
+import typings.jsdom.AnonInstantiableNodeList
+import typings.jsdom.AnonInstantiablePageTransitionEvent
+import typings.jsdom.AnonInstantiablePerformance
+import typings.jsdom.AnonInstantiablePlugin
+import typings.jsdom.AnonInstantiablePluginArray
+import typings.jsdom.AnonInstantiablePopStateEvent
+import typings.jsdom.AnonInstantiableProcessingInstruction
+import typings.jsdom.AnonInstantiableProgressEvent
+import typings.jsdom.AnonInstantiableSVGAnimatedString
+import typings.jsdom.AnonInstantiableSVGElement
+import typings.jsdom.AnonInstantiableSVGGraphicsElement
+import typings.jsdom.AnonInstantiableSVGNumber
+import typings.jsdom.AnonInstantiableSVGStringList
+import typings.jsdom.AnonInstantiableSVGTitleElement
+import typings.jsdom.AnonInstantiableScreen
+import typings.jsdom.AnonInstantiableStorage
+import typings.jsdom.AnonInstantiableStorageEvent
+import typings.jsdom.AnonInstantiableStyleSheet
+import typings.jsdom.AnonInstantiableStyleSheetList
+import typings.jsdom.AnonInstantiableText
+import typings.jsdom.AnonInstantiableToString
+import typings.jsdom.AnonInstantiableTouchEvent
+import typings.jsdom.AnonInstantiableTreeWalker
+import typings.jsdom.AnonInstantiableUIEvent
+import typings.jsdom.AnonInstantiableValidityState
+import typings.jsdom.AnonInstantiableXMLDocument
+import typings.jsdom.AnonInstantiableXMLHttpRequestEventTarget
+import typings.jsdom.AnonInstantiableXMLHttpRequestUpload
+import typings.jsdom.AnonInstantiableXMLSerializer
+import typings.jsdom.AnonInstantiableXPathEvaluator
+import typings.jsdom.AnonInstantiableXPathExpression
 import typings.jsdom.AnonSVGZOOMANDPANDISABLE
-import typings.jsdom.AnonScreen
-import typings.jsdom.AnonSelection
-import typings.jsdom.AnonStorage
-import typings.jsdom.AnonStyleSheet
-import typings.jsdom.AnonStyleSheetList
-import typings.jsdom.AnonTreeWalker
-import typings.jsdom.AnonValidityState
-import typings.jsdom.AnonWindow
-import typings.jsdom.AnonXMLDocument
-import typings.jsdom.AnonXMLHttpRequestEventTarget
-import typings.jsdom.AnonXMLHttpRequestUpload
-import typings.jsdom.AnonXMLSerializer
-import typings.jsdom.AnonXPathEvaluator
-import typings.jsdom.AnonXPathExpression
+import typings.jsdom.AnonToString
 import typings.jsdom.TypeofIntl
 import typings.jsdom.TypeofReflect
-import typings.node.vmMod.Context
+import typings.jsdom.jsdomStrings.abort
+import typings.std.AnimationEvent
+import typings.std.ApplicationCache_
 import typings.std.ArrayBufferConstructor
 import typings.std.ArrayConstructor
+import typings.std.BarProp
+import typings.std.BeforeUnloadEvent
 import typings.std.BooleanConstructor
+import typings.std.CSSRuleList
+import typings.std.CSSStyleDeclaration
+import typings.std.CacheStorage
+import typings.std.Console_
+import typings.std.Crypto_
+import typings.std.CustomElementRegistry
 import typings.std.DataViewConstructor
 import typings.std.DateConstructor
+import typings.std.DeviceLightEvent
+import typings.std.DeviceMotionEvent
+import typings.std.DeviceOrientationEvent
+import typings.std.Document_
+import typings.std.DragEvent
+import typings.std.Element
+import typings.std.Error
 import typings.std.ErrorConstructor
+import typings.std.EvalError
 import typings.std.EvalErrorConstructor
+import typings.std.EventTarget
+import typings.std.Event_
+import typings.std.ExtensionScriptApis
+import typings.std.External_
 import typings.std.Float32ArrayConstructor
 import typings.std.Float64ArrayConstructor
+import typings.std.FocusEvent
+import typings.std.FocusNavigationOrigin
+import typings.std.FrameRequestCallback
 import typings.std.FunctionConstructor
+import typings.std.HashChangeEvent
+import typings.std.History_
+import typings.std.IDBFactory
+import typings.std.ImageBitmap
+import typings.std.ImageBitmapSource
 import typings.std.Int16ArrayConstructor
 import typings.std.Int32ArrayConstructor
 import typings.std.Int8ArrayConstructor
+import typings.std.KeyboardEvent
+import typings.std.Location_
 import typings.std.MapConstructor
+import typings.std.MediaQueryList
+import typings.std.MessageEvent
+import typings.std.MouseEvent
+import typings.std.NavigationReason
+import typings.std.Navigator_
+import typings.std.Node
 import typings.std.NumberConstructor
 import typings.std.ObjectConstructor
+import typings.std.OnErrorEventHandler
+import typings.std.PageTransitionEvent
+import typings.std.Performance_
+import typings.std.PointerEvent
+import typings.std.PopStateEvent
+import typings.std.ProgressEvent
 import typings.std.PromiseConstructor
+import typings.std.PromiseRejectionEvent
 import typings.std.ProxyConstructor
 import typings.std.RangeErrorConstructor
+import typings.std.ReferenceError
 import typings.std.ReferenceErrorConstructor
 import typings.std.RegExpConstructor
+import typings.std.RequestInfo
+import typings.std.Response
+import typings.std.Screen_
+import typings.std.SecurityPolicyViolationEvent
+import typings.std.Selection
 import typings.std.SetConstructor
+import typings.std.SpeechSynthesis_
+import typings.std.Storage
+import typings.std.StorageEvent
 import typings.std.StringConstructor
+import typings.std.StyleMedia_
 import typings.std.SymbolConstructor
 import typings.std.SyntaxErrorConstructor
+import typings.std.TimerHandler
+import typings.std.TouchEvent
+import typings.std.TransitionEvent
+import typings.std.TypeError
 import typings.std.TypeErrorConstructor
+import typings.std.UIEvent
+import typings.std.URIError
 import typings.std.URIErrorConstructor
 import typings.std.Uint16ArrayConstructor
 import typings.std.Uint32ArrayConstructor
 import typings.std.Uint8ArrayConstructor
 import typings.std.Uint8ClampedArrayConstructor
+import typings.std.VoidFunction
 import typings.std.WeakMapConstructor
 import typings.std.WeakSetConstructor
+import typings.std.WebKitPoint
+import typings.std.WheelEvent
+import typings.std.Window_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<'applicationCache' | 'caches' | 'clientInformation' | 'closed' | 'crypto' | 'customElements' | 'defaultStatus' | 'devicePixelRatio' | 'doNotTrack' | 'document' | 'event' | 'external' | 'frameElement' | 'frames' | 'history' | 'innerHeight' | 'innerWidth' | 'isSecureContext' | 'length' | 'location' | 'locationbar' | 'menubar' | 'msContentScript' | 'name' | 'navigator' | 'offscreenBuffering' | 'oncompassneedscalibration' | 'ondevicelight' | 'ondevicemotion' | 'ondeviceorientation' | 'ondeviceorientationabsolute' | 'onmousewheel' | 'onmsgesturechange' | 'onmsgesturedoubletap' | 'onmsgestureend' | 'onmsgesturehold' | 'onmsgesturestart' | 'onmsgesturetap' | 'onmsinertiastart' | 'onmspointercancel' | 'onmspointerdown' | 'onmspointerenter' | 'onmspointerleave' | 'onmspointermove' | 'onmspointerout' | 'onmspointerover' | 'onmspointerup' | 'onorientationchange' | 'onreadystatechange' | 'onvrdisplayactivate' | 'onvrdisplayblur' | 'onvrdisplayconnect' | 'onvrdisplaydeactivate' | 'onvrdisplaydisconnect' | 'onvrdisplayfocus' | 'onvrdisplaypointerrestricted' | 'onvrdisplaypointerunrestricted' | 'onvrdisplaypresentchange' | 'opener' | 'orientation' | 'outerHeight' | 'outerWidth' | 'pageXOffset' | 'pageYOffset' | 'parent' | 'performance' | 'personalbar' | 'screen' | 'screenLeft' | 'screenTop' | 'screenX' | 'screenY' | 'scrollX' | 'scrollY' | 'scrollbars' | 'self' | 'speechSynthesis' | 'status' | 'statusbar' | 'styleMedia' | 'toolbar' | 'top' | 'window', 'top' | 'self' | 'window'> ]: std.Window[P]} */ @js.native
-trait DOMWindow extends Context {
-  var AbortController: AnonAbortController = js.native
-  var AbortSignal: AnonAbortSignal = js.native
+/* Inlined parent std.Pick<std.Window, std.Exclude<keyof std.Window, 'top' | 'self' | 'window'>> */
+/* Inlined parent node.vm.Context */
+@js.native
+trait DOMWindow
+  extends /* key */ StringDictionary[js.Any] {
+  var AbortController: AnonInstantiableAbortController = js.native
+  var AbortSignal: AnonInstantiableAbortSignal = js.native
   var ArrayBuffer: ArrayBufferConstructor = js.native
   @JSName("Array")
   var Array_Original: ArrayConstructor = js.native
-  var Attr: AnonAttr = js.native
-  var BarProp: AnonBarProp = js.native
-  var Blob: AnonBlobParts = js.native
+  var Attr: AnonInstantiableAttr = js.native
+  var BarProp: AnonInstantiableBarProp = js.native
+  var Blob: AnonInstantiableBlob = js.native
   @JSName("Boolean")
   var Boolean_Original: BooleanConstructor = js.native
-  var CDATASection: AnonCDATASection = js.native
-  var CSSImportRule: AnonCSSImportRule = js.native
-  var CSSMediaRule: AnonCSSMediaRule = js.native
+  var CDATASection: AnonInstantiableCDATASection = js.native
+  var CSSImportRule: AnonInstantiableCSSImportRule = js.native
+  var CSSMediaRule: AnonInstantiableCSSMediaRule = js.native
   var CSSRule: AnonCHARSETRULE = js.native
-  var CSSStyleDeclaration: AnonCSSStyleDeclaration = js.native
-  var CSSStyleRule: AnonCSSStyleRule = js.native
-  var CSSStyleSheet: AnonCSSStyleSheet = js.native
-  var CharacterData: AnonCharacterData = js.native
-  var CloseEvent: AnonEventInitDict = js.native
-  var Comment: AnonDataComment = js.native
-  var CompositionEvent: AnonEventInitDictTypeCompositionEvent = js.native
-  var CustomEvent: AnonEventInitDictTypeArg = js.native
+  var CSSStyleDeclaration: AnonInstantiableCSSStyleDeclaration = js.native
+  var CSSStyleRule: AnonInstantiableCSSStyleRule = js.native
+  var CSSStyleSheet: AnonInstantiableCSSStyleSheet = js.native
+  var CharacterData: AnonInstantiableCharacterData = js.native
+  var CloseEvent: AnonInstantiableCloseEvent = js.native
+  var Comment: AnonInstantiableComment = js.native
+  var CompositionEvent: AnonInstantiableCompositionEvent = js.native
+  var CustomEvent: AnonInstantiableCustomEvent = js.native
   /* node_modules/jsdom/living/interfaces.js */
   var DOMException: AnonABORTERR = js.native
-  var DOMImplementation: AnonDOMImplementation = js.native
-  var DOMParser: AnonDOMParser = js.native
-  var DOMStringMap: AnonDOMStringMap = js.native
-  var DOMTokenList: AnonDOMTokenList = js.native
+  var DOMImplementation: AnonInstantiableDOMImplementation = js.native
+  var DOMParser: AnonInstantiableDOMParser = js.native
+  var DOMStringMap: AnonInstantiableDOMStringMap = js.native
+  var DOMTokenList: AnonInstantiableDOMTokenList = js.native
   var DataView: DataViewConstructor = js.native
   @JSName("Date")
   var Date_Original: DateConstructor = js.native
-  var Document: AnonDocument = js.native
-  var DocumentFragment: AnonDocumentFragment = js.native
-  var DocumentType: AnonDocumentType = js.native
-  var Element: AnonElement = js.native
-  var ErrorEvent: AnonEventInitDictTypeErrorEvent = js.native
+  var Document: AnonInstantiableDocument = js.native
+  var DocumentFragment: AnonInstantiableDocumentFragment = js.native
+  var DocumentType: AnonInstantiableDocumentType = js.native
+  var Element: AnonInstantiableElement = js.native
+  var ErrorEvent: AnonInstantiableErrorEvent = js.native
   @JSName("Error")
   var Error_Original: ErrorConstructor = js.native
   @JSName("EvalError")
   var EvalError_Original: EvalErrorConstructor = js.native
   var Event: AnonATTARGET = js.native
-  var EventTarget: AnonEventTarget = js.native
-  var File: AnonFileBits = js.native
-  var FileList: AnonFileList = js.native
+  var EventTarget: AnonInstantiableEventTarget = js.native
+  var File: AnonInstantiableFile = js.native
+  var FileList: AnonInstantiableFileList = js.native
   var FileReader: AnonDONE = js.native
   var Float32Array: Float32ArrayConstructor = js.native
   var Float64Array: Float64ArrayConstructor = js.native
-  var FocusEvent: AnonEventInitDictTypeFocusEvent = js.native
-  var FormData: AnonForm = js.native
+  var FocusEvent: AnonInstantiableFocusEvent = js.native
+  var FormData: AnonInstantiableFormData = js.native
   @JSName("Function")
   var Function_Original: FunctionConstructor = js.native
-  var HTMLAnchorElement: AnonHTMLAnchorElement = js.native
-  var HTMLAreaElement: AnonHTMLAreaElement = js.native
-  var HTMLAudioElement: AnonHTMLAudioElement = js.native
-  var HTMLBRElement: AnonHTMLBRElement = js.native
-  var HTMLBaseElement: AnonHTMLBaseElement = js.native
-  var HTMLBodyElement: AnonHTMLBodyElement = js.native
-  var HTMLButtonElement: AnonHTMLButtonElement = js.native
-  var HTMLCanvasElement: AnonHTMLCanvasElement = js.native
-  var HTMLCollection: AnonHTMLCollection = js.native
-  var HTMLDListElement: AnonHTMLDListElement = js.native
-  var HTMLDataElement: AnonHTMLDataElement = js.native
-  var HTMLDataListElement: AnonHTMLDataListElement = js.native
-  var HTMLDetailsElement: AnonHTMLDetailsElement = js.native
-  var HTMLDialogElement: AnonHTMLDialogElement = js.native
-  var HTMLDirectoryElement: AnonHTMLDirectoryElement = js.native
-  var HTMLDivElement: AnonHTMLDivElement = js.native
-  var HTMLElement: AnonHTMLElement = js.native
-  var HTMLEmbedElement: AnonHTMLEmbedElement = js.native
-  var HTMLFieldSetElement: AnonHTMLFieldSetElement = js.native
-  var HTMLFontElement: AnonHTMLFontElement = js.native
-  var HTMLFormElement: AnonHTMLFormElement = js.native
-  var HTMLFrameElement: AnonHTMLFrameElement = js.native
-  var HTMLFrameSetElement: AnonHTMLFrameSetElement = js.native
-  var HTMLHRElement: AnonHTMLHRElement = js.native
-  var HTMLHeadElement: AnonHTMLHeadElement = js.native
-  var HTMLHeadingElement: AnonHTMLHeadingElement = js.native
-  var HTMLHtmlElement: AnonHTMLHtmlElement = js.native
-  var HTMLIFrameElement: AnonHTMLIFrameElement = js.native
-  var HTMLImageElement: AnonHTMLImageElement = js.native
-  var HTMLInputElement: AnonHTMLInputElement = js.native
-  var HTMLLIElement: AnonHTMLLIElement = js.native
-  var HTMLLabelElement: AnonHTMLLabelElement = js.native
-  var HTMLLegendElement: AnonHTMLLegendElement = js.native
-  var HTMLLinkElement: AnonHTMLLinkElement = js.native
-  var HTMLMapElement: AnonHTMLMapElement = js.native
-  var HTMLMarqueeElement: AnonHTMLMarqueeElement = js.native
+  var HTMLAnchorElement: AnonInstantiableHTMLAnchorElement = js.native
+  var HTMLAreaElement: AnonInstantiableHTMLAreaElement = js.native
+  var HTMLAudioElement: AnonInstantiableHTMLAudioElement = js.native
+  var HTMLBRElement: AnonInstantiableHTMLBRElement = js.native
+  var HTMLBaseElement: AnonInstantiableHTMLBaseElement = js.native
+  var HTMLBodyElement: AnonInstantiableHTMLBodyElement = js.native
+  var HTMLButtonElement: AnonInstantiableHTMLButtonElement = js.native
+  var HTMLCanvasElement: AnonInstantiableHTMLCanvasElement = js.native
+  var HTMLCollection: AnonInstantiableHTMLCollection = js.native
+  var HTMLDListElement: AnonInstantiableHTMLDListElement = js.native
+  var HTMLDataElement: AnonInstantiableHTMLDataElement = js.native
+  var HTMLDataListElement: AnonInstantiableHTMLDataListElement = js.native
+  var HTMLDetailsElement: AnonInstantiableHTMLDetailsElement = js.native
+  var HTMLDialogElement: AnonInstantiableHTMLDialogElement = js.native
+  var HTMLDirectoryElement: AnonInstantiableHTMLDirectoryElement = js.native
+  var HTMLDivElement: AnonInstantiableHTMLDivElement = js.native
+  var HTMLElement: AnonInstantiableHTMLElement = js.native
+  var HTMLEmbedElement: AnonInstantiableHTMLEmbedElement = js.native
+  var HTMLFieldSetElement: AnonInstantiableHTMLFieldSetElement = js.native
+  var HTMLFontElement: AnonInstantiableHTMLFontElement = js.native
+  var HTMLFormElement: AnonInstantiableHTMLFormElement = js.native
+  var HTMLFrameElement: AnonInstantiableHTMLFrameElement = js.native
+  var HTMLFrameSetElement: AnonInstantiableHTMLFrameSetElement = js.native
+  var HTMLHRElement: AnonInstantiableHTMLHRElement = js.native
+  var HTMLHeadElement: AnonInstantiableHTMLHeadElement = js.native
+  var HTMLHeadingElement: AnonInstantiableHTMLHeadingElement = js.native
+  var HTMLHtmlElement: AnonInstantiableHTMLHtmlElement = js.native
+  var HTMLIFrameElement: AnonInstantiableHTMLIFrameElement = js.native
+  var HTMLImageElement: AnonInstantiableHTMLImageElement = js.native
+  var HTMLInputElement: AnonInstantiableHTMLInputElement = js.native
+  var HTMLLIElement: AnonInstantiableHTMLLIElement = js.native
+  var HTMLLabelElement: AnonInstantiableHTMLLabelElement = js.native
+  var HTMLLegendElement: AnonInstantiableHTMLLegendElement = js.native
+  var HTMLLinkElement: AnonInstantiableHTMLLinkElement = js.native
+  var HTMLMapElement: AnonInstantiableHTMLMapElement = js.native
+  var HTMLMarqueeElement: AnonInstantiableHTMLMarqueeElement = js.native
   var HTMLMediaElement: AnonHAVECURRENTDATA = js.native
-  var HTMLMenuElement: AnonHTMLMenuElement = js.native
-  var HTMLMetaElement: AnonHTMLMetaElement = js.native
-  var HTMLMeterElement: AnonHTMLMeterElement = js.native
-  var HTMLModElement: AnonHTMLModElement = js.native
-  var HTMLOListElement: AnonHTMLOListElement = js.native
-  var HTMLObjectElement: AnonHTMLObjectElement = js.native
-  var HTMLOptGroupElement: AnonHTMLOptGroupElement = js.native
-  var HTMLOptionElement: AnonHTMLOptionElement = js.native
-  var HTMLOptionsCollection: AnonHTMLOptionsCollection = js.native
-  var HTMLOutputElement: AnonHTMLOutputElement = js.native
-  var HTMLParagraphElement: AnonHTMLParagraphElement = js.native
-  var HTMLParamElement: AnonHTMLParamElement = js.native
-  var HTMLPictureElement: AnonHTMLPictureElement = js.native
-  var HTMLPreElement: AnonHTMLPreElement = js.native
-  var HTMLProgressElement: AnonHTMLProgressElement = js.native
-  var HTMLQuoteElement: AnonHTMLQuoteElement = js.native
-  var HTMLScriptElement: AnonHTMLScriptElement = js.native
-  var HTMLSelectElement: AnonHTMLSelectElement = js.native
-  var HTMLSourceElement: AnonHTMLSourceElement = js.native
-  var HTMLSpanElement: AnonHTMLSpanElement = js.native
-  var HTMLStyleElement: AnonHTMLStyleElement = js.native
-  var HTMLTableCaptionElement: AnonHTMLTableCaptionElement = js.native
-  var HTMLTableCellElement: AnonHTMLTableCellElement = js.native
-  var HTMLTableColElement: AnonHTMLTableColElement = js.native
-  var HTMLTableElement: AnonHTMLTableElement = js.native
-  var HTMLTableRowElement: AnonHTMLTableRowElement = js.native
-  var HTMLTableSectionElement: AnonHTMLTableSectionElement = js.native
-  var HTMLTemplateElement: AnonHTMLTemplateElement = js.native
-  var HTMLTextAreaElement: AnonHTMLTextAreaElement = js.native
-  var HTMLTimeElement: AnonHTMLTimeElement = js.native
-  var HTMLTitleElement: AnonHTMLTitleElement = js.native
+  var HTMLMenuElement: AnonInstantiableHTMLMenuElement = js.native
+  var HTMLMetaElement: AnonInstantiableHTMLMetaElement = js.native
+  var HTMLMeterElement: AnonInstantiableHTMLMeterElement = js.native
+  var HTMLModElement: AnonInstantiableHTMLModElement = js.native
+  var HTMLOListElement: AnonInstantiableHTMLOListElement = js.native
+  var HTMLObjectElement: AnonInstantiableHTMLObjectElement = js.native
+  var HTMLOptGroupElement: AnonInstantiableHTMLOptGroupElement = js.native
+  var HTMLOptionElement: AnonInstantiableHTMLOptionElement = js.native
+  var HTMLOptionsCollection: AnonInstantiableHTMLOptionsCollection = js.native
+  var HTMLOutputElement: AnonInstantiableHTMLOutputElement = js.native
+  var HTMLParagraphElement: AnonInstantiableHTMLParagraphElement = js.native
+  var HTMLParamElement: AnonInstantiableHTMLParamElement = js.native
+  var HTMLPictureElement: AnonInstantiableHTMLPictureElement = js.native
+  var HTMLPreElement: AnonInstantiableHTMLPreElement = js.native
+  var HTMLProgressElement: AnonInstantiableHTMLProgressElement = js.native
+  var HTMLQuoteElement: AnonInstantiableHTMLQuoteElement = js.native
+  var HTMLScriptElement: AnonInstantiableHTMLScriptElement = js.native
+  var HTMLSelectElement: AnonInstantiableHTMLSelectElement = js.native
+  var HTMLSourceElement: AnonInstantiableHTMLSourceElement = js.native
+  var HTMLSpanElement: AnonInstantiableHTMLSpanElement = js.native
+  var HTMLStyleElement: AnonInstantiableHTMLStyleElement = js.native
+  var HTMLTableCaptionElement: AnonInstantiableHTMLTableCaptionElement = js.native
+  var HTMLTableCellElement: AnonInstantiableHTMLTableCellElement = js.native
+  var HTMLTableColElement: AnonInstantiableHTMLTableColElement = js.native
+  var HTMLTableElement: AnonInstantiableHTMLTableElement = js.native
+  var HTMLTableRowElement: AnonInstantiableHTMLTableRowElement = js.native
+  var HTMLTableSectionElement: AnonInstantiableHTMLTableSectionElement = js.native
+  var HTMLTemplateElement: AnonInstantiableHTMLTemplateElement = js.native
+  var HTMLTextAreaElement: AnonInstantiableHTMLTextAreaElement = js.native
+  var HTMLTimeElement: AnonInstantiableHTMLTimeElement = js.native
+  var HTMLTitleElement: AnonInstantiableHTMLTitleElement = js.native
   var HTMLTrackElement: AnonERROR = js.native
-  var HTMLUListElement: AnonHTMLUListElement = js.native
-  var HTMLUnknownElement: AnonHTMLUnknownElement = js.native
-  var HTMLVideoElement: AnonHTMLVideoElement = js.native
-  var HashChangeEvent: AnonEventInitDictTypeHashChangeEvent = js.native
-  var Headers: AnonInitHeaders = js.native
-  var History: AnonHistory = js.native
+  var HTMLUListElement: AnonInstantiableHTMLUListElement = js.native
+  var HTMLUnknownElement: AnonInstantiableHTMLUnknownElement = js.native
+  var HTMLVideoElement: AnonInstantiableHTMLVideoElement = js.native
+  var HashChangeEvent: AnonInstantiableHashChangeEvent = js.native
+  var Headers: AnonInstantiableHeaders = js.native
+  var History: AnonInstantiableHistory = js.native
   val Infinity: Double = js.native
   var Int16Array: Int16ArrayConstructor = js.native
   var Int32Array: Int32ArrayConstructor = js.native
@@ -339,35 +407,35 @@ trait DOMWindow extends Context {
   var Intl: TypeofIntl = js.native
   var JSON: typings.std.JSON = js.native
   var KeyboardEvent: AnonDOMKEYLOCATIONLEFT = js.native
-  var Location: AnonLocation = js.native
+  var Location: AnonInstantiableLocation = js.native
   var Map: MapConstructor = js.native
   var Math: typings.std.Math = js.native
-  var MediaList: AnonMediaList = js.native
-  var MessageEvent: AnonEventInitDictType = js.native
-  var MimeType: AnonMimeType = js.native
-  var MimeTypeArray: AnonMimeTypeArray = js.native
-  var MouseEvent: AnonEventInitDictTypeMouseEvent = js.native
-  var MutationObserver: AnonCallback = js.native
-  var MutationRecord: AnonMutationRecord = js.native
+  var MediaList: AnonInstantiableMediaList = js.native
+  var MessageEvent: AnonInstantiableMessageEvent = js.native
+  var MimeType: AnonInstantiableMimeType = js.native
+  var MimeTypeArray: AnonInstantiableMimeTypeArray = js.native
+  var MouseEvent: AnonInstantiableMouseEvent = js.native
+  var MutationObserver: AnonInstantiableMutationObserver = js.native
+  var MutationRecord: AnonInstantiableMutationRecord = js.native
   val NaN: Double = js.native
-  var NamedNodeMap: AnonNamedNodeMap = js.native
-  var Navigator: AnonNavigator = js.native
+  var NamedNodeMap: AnonInstantiableNamedNodeMap = js.native
+  var Navigator: AnonInstantiableNavigator = js.native
   var Node: AnonATTRIBUTENODE = js.native
   /* node_modules/jsdom/living/node-filter.js */
   var NodeFilter: AnonFILTERACCEPT = js.native
-  var NodeIterator: AnonNodeIterator = js.native
-  var NodeList: AnonNodeList = js.native
+  var NodeIterator: AnonInstantiableNodeIterator = js.native
+  var NodeList: AnonInstantiableNodeList = js.native
   @JSName("Number")
   var Number_Original: NumberConstructor = js.native
   @JSName("Object")
   var Object_Original: ObjectConstructor = js.native
-  var PageTransitionEvent: AnonPageTransitionEvent = js.native
-  var Performance: AnonPerformance = js.native
-  var Plugin: AnonPlugin = js.native
-  var PluginArray: AnonPluginArray = js.native
-  var PopStateEvent: AnonEventInitDictTypePopStateEvent = js.native
-  var ProcessingInstruction: AnonProcessingInstruction = js.native
-  var ProgressEvent: AnonEventInitDictTypeEventTarget = js.native
+  var PageTransitionEvent: AnonInstantiablePageTransitionEvent = js.native
+  var Performance: AnonInstantiablePerformance = js.native
+  var Plugin: AnonInstantiablePlugin = js.native
+  var PluginArray: AnonInstantiablePluginArray = js.native
+  var PopStateEvent: AnonInstantiablePopStateEvent = js.native
+  var ProcessingInstruction: AnonInstantiableProcessingInstruction = js.native
+  var ProgressEvent: AnonInstantiableProgressEvent = js.native
   var Promise: PromiseConstructor = js.native
   var Proxy: ProxyConstructor = js.native
   var Range: AnonENDTOEND = js.native
@@ -378,63 +446,343 @@ trait DOMWindow extends Context {
   var Reflect: TypeofReflect = js.native
   @JSName("RegExp")
   var RegExp_Original: RegExpConstructor = js.native
-  var SVGAnimatedString: AnonSVGAnimatedString = js.native
-  var SVGElement: AnonSVGElement = js.native
-  var SVGGraphicsElement: AnonSVGGraphicsElement = js.native
-  var SVGNumber: AnonSVGNumber = js.native
+  var SVGAnimatedString: AnonInstantiableSVGAnimatedString = js.native
+  var SVGElement: AnonInstantiableSVGElement = js.native
+  var SVGGraphicsElement: AnonInstantiableSVGGraphicsElement = js.native
+  var SVGNumber: AnonInstantiableSVGNumber = js.native
   var SVGSVGElement: AnonSVGZOOMANDPANDISABLE = js.native
-  var SVGStringList: AnonSVGStringList = js.native
-  var SVGTitleElement: AnonSVGTitleElement = js.native
-  var Screen: AnonScreen = js.native
-  var Selection: AnonSelection = js.native
+  var SVGStringList: AnonInstantiableSVGStringList = js.native
+  var SVGTitleElement: AnonInstantiableSVGTitleElement = js.native
+  var Screen: AnonInstantiableScreen = js.native
+  var Selection: AnonInstantiableToString = js.native
   var Set: SetConstructor = js.native
-  var Storage: AnonStorage = js.native
-  var StorageEvent: AnonEventInitDictTypeStorageEvent = js.native
+  var Storage: AnonInstantiableStorage = js.native
+  var StorageEvent: AnonInstantiableStorageEvent = js.native
   @JSName("String")
   var String_Original: StringConstructor = js.native
   /* node_modules/jsdom/level2/style.js */
-  var StyleSheet: AnonStyleSheet = js.native
-  var StyleSheetList: AnonStyleSheetList = js.native
+  var StyleSheet: AnonInstantiableStyleSheet = js.native
+  var StyleSheetList: AnonInstantiableStyleSheetList = js.native
   @JSName("Symbol")
   var Symbol_Original: SymbolConstructor = js.native
   @JSName("SyntaxError")
   var SyntaxError_Original: SyntaxErrorConstructor = js.native
-  var Text: AnonData = js.native
-  var TouchEvent: AnonEventInitDictTypeStringTouchEvent = js.native
-  var TreeWalker: AnonTreeWalker = js.native
+  var Text: AnonInstantiableText = js.native
+  var TouchEvent: AnonInstantiableTouchEvent = js.native
+  var TreeWalker: AnonInstantiableTreeWalker = js.native
   @JSName("TypeError")
   var TypeError_Original: TypeErrorConstructor = js.native
-  var UIEvent: AnonEventInitDictTypeString = js.native
+  var UIEvent: AnonInstantiableUIEvent = js.native
   @JSName("URIError")
   var URIError_Original: URIErrorConstructor = js.native
-  var URL: AnonBase = js.native
-  var URLSearchParams: AnonInit = js.native
+  var URL: AnonCreateObjectURL = js.native
+  var URLSearchParams: AnonToString = js.native
   var Uint16Array: Uint16ArrayConstructor = js.native
   var Uint32Array: Uint32ArrayConstructor = js.native
   var Uint8Array: Uint8ArrayConstructor = js.native
   var Uint8ClampedArray: Uint8ClampedArrayConstructor = js.native
-  var ValidityState: AnonValidityState = js.native
+  var ValidityState: AnonInstantiableValidityState = js.native
   var WeakMap: WeakMapConstructor = js.native
   var WeakSet: WeakSetConstructor = js.native
   var WebSocket: AnonCLOSED = js.native
   var WheelEvent: AnonDOMDELTALINE = js.native
   /* node_modules/jsdom/browser/Window.js */
-  var Window: AnonWindow = js.native
-  var XMLDocument: AnonXMLDocument = js.native
-  var XMLHttpRequest: AnonDONEHEADERSRECEIVED = js.native
-  var XMLHttpRequestEventTarget: AnonXMLHttpRequestEventTarget = js.native
-  var XMLHttpRequestUpload: AnonXMLHttpRequestUpload = js.native
-  var XMLSerializer: AnonXMLSerializer = js.native
-  var XPathEvaluator: AnonXPathEvaluator = js.native
+  var Window: AnonInstantiable = js.native
+  var XMLDocument: AnonInstantiableXMLDocument = js.native
+  var XMLHttpRequest: AnonHEADERSRECEIVED = js.native
+  var XMLHttpRequestEventTarget: AnonInstantiableXMLHttpRequestEventTarget = js.native
+  var XMLHttpRequestUpload: AnonInstantiableXMLHttpRequestUpload = js.native
+  var XMLSerializer: AnonInstantiableXMLSerializer = js.native
+  var XPathEvaluator: AnonInstantiableXPathEvaluator = js.native
   /* node_modules/jsdom/level3/xpath.js */
   // XPathException: typeof XPathException;
-  var XPathExpression: AnonXPathExpression = js.native
+  var XPathExpression: AnonInstantiableXPathExpression = js.native
   var XPathResult: AnonANYTYPE = js.native
+  @JSName("addEventListener")
+  var addEventListener_Original: js.Function2[
+    abort, 
+    /* listener */ js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _], 
+    Unit
+  ] = js.native
+  @JSName("alert")
+  var alert_Original: js.Function0[Unit] = js.native
+  var applicationCache: ApplicationCache_ = js.native
+  @JSName("atob")
+  var atob_Original: js.Function1[/* data */ String, String] = js.native
+  @JSName("blur")
+  var blur_Original: js.Function0[Unit] = js.native
+  @JSName("btoa")
+  var btoa_Original: js.Function1[/* data */ String, String] = js.native
+  var caches: CacheStorage = js.native
+  @JSName("cancelAnimationFrame")
+  var cancelAnimationFrame_Original: js.Function1[/* handle */ Double, Unit] = js.native
+  @JSName("captureEvents")
+  var captureEvents_Original: js.Function0[Unit] = js.native
+  @JSName("clearInterval")
+  var clearInterval_Original: js.Function0[Unit] = js.native
+  @JSName("clearTimeout")
+  var clearTimeout_Original: js.Function0[Unit] = js.native
+  var clientInformation: Navigator_ = js.native
+  @JSName("close")
+  var close_Original: js.Function0[Unit] = js.native
+  var closed: Boolean = js.native
+  @JSName("confirm")
+  var confirm_Original: js.Function0[Boolean] = js.native
+  var console: Console_ = js.native
+  @JSName("createImageBitmap")
+  var createImageBitmap_Original: js.Function1[/* image */ ImageBitmapSource, js.Promise[ImageBitmap]] = js.native
+  var crypto: Crypto_ = js.native
+  var customElements: CustomElementRegistry = js.native
+  var defaultStatus: String = js.native
+  @JSName("departFocus")
+  var departFocus_Original: js.Function2[/* navigationReason */ NavigationReason, /* origin */ FocusNavigationOrigin, Unit] = js.native
+  var devicePixelRatio: Double = js.native
+  @JSName("dispatchEvent")
+  var dispatchEvent_Original: js.Function1[/* event */ Event_, Boolean] = js.native
+  var doNotTrack: String = js.native
+  var document: Document_ = js.native
+  var event: js.UndefOr[Event_] = js.native
+  var external: External_ = js.native
+  @JSName("fetch")
+  var fetch_Original: js.Function1[/* input */ RequestInfo, js.Promise[Response]] = js.native
+  @JSName("focus")
+  var focus_Original: js.Function0[Unit] = js.native
+  var frameElement: Element = js.native
+  var frames: Window_ = js.native
+  @JSName("getComputedStyle")
+  var getComputedStyle_Original: js.Function1[/* elt */ Element, CSSStyleDeclaration] = js.native
+  @JSName("getMatchedCSSRules")
+  var getMatchedCSSRules_Original: js.Function1[/* elt */ Element, CSSRuleList] = js.native
+  @JSName("getSelection")
+  var getSelection_Original: js.Function0[Selection | Null] = js.native
   /* ECMAScript Globals */
   var globalThis: DOMWindow = js.native
+  var history: History_ = js.native
+  var indexedDB: IDBFactory = js.native
+  var innerHeight: Double = js.native
+  var innerWidth: Double = js.native
+  var isSecureContext: Boolean = js.native
+  var length: Double = js.native
+  var localStorage: Storage = js.native
+  var location: Location_ = js.native
+  var locationbar: BarProp = js.native
+  @JSName("matchMedia")
+  var matchMedia_Original: js.Function1[/* query */ String, MediaQueryList] = js.native
+  var menubar: BarProp = js.native
+  @JSName("moveBy")
+  var moveBy_Original: js.Function2[/* x */ Double, /* y */ Double, Unit] = js.native
+  @JSName("moveTo")
+  var moveTo_Original: js.Function2[/* x */ Double, /* y */ Double, Unit] = js.native
+  var msContentScript: ExtensionScriptApis = js.native
+  @JSName("msWriteProfilerMark")
+  var msWriteProfilerMark_Original: js.Function1[/* profilerMarkName */ String, Unit] = js.native
+  var name: String = js.native
+  var navigator: Navigator_ = js.native
+  var offscreenBuffering: String | Boolean = js.native
+  var onabort: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _]] = js.native
+  var onafterprint: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.native
+  var onanimationcancel: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, _]] = js.native
+  var onanimationend: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, _]] = js.native
+  var onanimationiteration: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, _]] = js.native
+  var onanimationstart: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, _]] = js.native
+  var onauxclick: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]] = js.native
+  var onbeforeprint: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.native
+  var onbeforeunload: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ BeforeUnloadEvent, _]] = js.native
+  var onblur: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _]] = js.native
+  var oncancel: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.native
+  var oncanplay: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.native
+  var oncanplaythrough: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.native
+  var onchange: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.native
+  var onclick: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]] = js.native
+  var onclose: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.native
+  var oncompassneedscalibration: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.native
+  var oncontextmenu: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]] = js.native
+  var oncuechange: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.native
+  var ondblclick: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]] = js.native
+  var ondevicelight: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ DeviceLightEvent, _]] = js.native
+  var ondevicemotion: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ DeviceMotionEvent, _]] = js.native
+  var ondeviceorientation: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ DeviceOrientationEvent, _]] = js.native
+  var ondeviceorientationabsolute: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ DeviceOrientationEvent, _]] = js.native
+  var ondrag: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _]] = js.native
+  var ondragend: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _]] = js.native
+  var ondragenter: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _]] = js.native
+  var ondragexit: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.native
+  var ondragleave: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _]] = js.native
+  var ondragover: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _]] = js.native
+  var ondragstart: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _]] = js.native
+  var ondrop: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _]] = js.native
+  var ondurationchange: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.native
+  var onemptied: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.native
+  var onended: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.native
+  var onerror: OnErrorEventHandler = js.native
+  var onfocus: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _]] = js.native
+  var ongotpointercapture: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]] = js.native
+  var onhashchange: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ HashChangeEvent, _]] = js.native
+  var oninput: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.native
+  var oninvalid: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.native
+  var onkeydown: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, _]] = js.native
+  var onkeypress: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, _]] = js.native
+  var onkeyup: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, _]] = js.native
+  var onlanguagechange: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.native
+  var onload: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.native
+  var onloadeddata: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.native
+  var onloadedmetadata: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.native
+  var onloadstart: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.native
+  var onlostpointercapture: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]] = js.native
+  var onmessage: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent, _]] = js.native
+  var onmessageerror: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent, _]] = js.native
+  var onmousedown: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]] = js.native
+  var onmouseenter: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]] = js.native
+  var onmouseleave: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]] = js.native
+  var onmousemove: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]] = js.native
+  var onmouseout: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]] = js.native
+  var onmouseover: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]] = js.native
+  var onmouseup: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]] = js.native
+  var onmousewheel: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.native
+  var onmsgesturechange: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.native
+  var onmsgesturedoubletap: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.native
+  var onmsgestureend: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.native
+  var onmsgesturehold: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.native
+  var onmsgesturestart: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.native
+  var onmsgesturetap: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.native
+  var onmsinertiastart: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.native
+  var onmspointercancel: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.native
+  var onmspointerdown: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.native
+  var onmspointerenter: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.native
+  var onmspointerleave: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.native
+  var onmspointermove: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.native
+  var onmspointerout: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.native
+  var onmspointerover: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.native
+  var onmspointerup: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.native
+  var onoffline: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.native
+  var ononline: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.native
+  var onorientationchange: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.native
+  var onpagehide: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ PageTransitionEvent, _]] = js.native
+  var onpageshow: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ PageTransitionEvent, _]] = js.native
+  var onpause: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.native
+  var onplay: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.native
+  var onplaying: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.native
+  var onpointercancel: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]] = js.native
+  var onpointerdown: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]] = js.native
+  var onpointerenter: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]] = js.native
+  var onpointerleave: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]] = js.native
+  var onpointermove: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]] = js.native
+  var onpointerout: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]] = js.native
+  var onpointerover: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]] = js.native
+  var onpointerup: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]] = js.native
+  var onpopstate: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ PopStateEvent, _]] = js.native
+  var onprogress: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[EventTarget], _]] = js.native
+  var onratechange: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.native
+  var onreadystatechange: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], _]] = js.native
+  var onrejectionhandled: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ PromiseRejectionEvent, _]] = js.native
+  var onreset: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.native
+  var onresize: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _]] = js.native
+  var onscroll: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.native
+  var onsecuritypolicyviolation: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ SecurityPolicyViolationEvent, _]] = js.native
+  var onseeked: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.native
+  var onseeking: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.native
+  var onselect: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.native
+  var onselectionchange: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.native
+  var onselectstart: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.native
+  var onstalled: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.native
+  var onstorage: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ StorageEvent, _]] = js.native
+  var onsubmit: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.native
+  var onsuspend: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.native
+  var ontimeupdate: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.native
+  var ontoggle: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.native
+  var ontouchcancel: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]] = js.native
+  var ontouchend: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]] = js.native
+  var ontouchmove: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]] = js.native
+  var ontouchstart: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]] = js.native
+  var ontransitioncancel: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, _]] = js.native
+  var ontransitionend: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, _]] = js.native
+  var ontransitionrun: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, _]] = js.native
+  var ontransitionstart: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, _]] = js.native
+  var onunhandledrejection: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ PromiseRejectionEvent, _]] = js.native
+  var onunload: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.native
+  var onvolumechange: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.native
+  var onvrdisplayactivate: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.native
+  var onvrdisplayblur: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.native
+  var onvrdisplayconnect: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.native
+  var onvrdisplaydeactivate: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.native
+  var onvrdisplaydisconnect: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.native
+  var onvrdisplayfocus: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.native
+  var onvrdisplaypointerrestricted: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.native
+  var onvrdisplaypointerunrestricted: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.native
+  var onvrdisplaypresentchange: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.native
+  var onwaiting: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]] = js.native
+  var onwheel: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* ev */ WheelEvent, _]] = js.native
+  @JSName("open")
+  var open_Original: js.Function0[Window_ | Null] = js.native
+  var opener: js.Any = js.native
+  var orientation: String | Double = js.native
+  var origin: String = js.native
+  var outerHeight: Double = js.native
+  var outerWidth: Double = js.native
+  var pageXOffset: Double = js.native
+  var pageYOffset: Double = js.native
+  var parent: Window_ = js.native
+  var performance: Performance_ = js.native
+  var personalbar: BarProp = js.native
+  @JSName("postMessage")
+  var postMessage_Original: js.Function2[/* message */ js.Any, /* targetOrigin */ String, Unit] = js.native
+  @JSName("print")
+  var print_Original: js.Function0[Unit] = js.native
+  @JSName("prompt")
+  var prompt_Original: js.Function0[String | Null] = js.native
+  @JSName("queueMicrotask")
+  var queueMicrotask_Original: js.Function1[/* callback */ VoidFunction, Unit] = js.native
+  @JSName("releaseEvents")
+  var releaseEvents_Original: js.Function0[Unit] = js.native
+  @JSName("removeEventListener")
+  var removeEventListener_Original: js.Function2[
+    abort, 
+    /* listener */ js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _], 
+    Unit
+  ] = js.native
+  @JSName("requestAnimationFrame")
+  var requestAnimationFrame_Original: js.Function1[/* callback */ FrameRequestCallback, Double] = js.native
+  @JSName("resizeBy")
+  var resizeBy_Original: js.Function2[/* x */ Double, /* y */ Double, Unit] = js.native
+  @JSName("resizeTo")
+  var resizeTo_Original: js.Function2[/* x */ Double, /* y */ Double, Unit] = js.native
+  var screen: Screen_ = js.native
+  var screenLeft: Double = js.native
+  var screenTop: Double = js.native
+  var screenX: Double = js.native
+  var screenY: Double = js.native
+  @JSName("scrollBy")
+  var scrollBy_Original: js.Function0[Unit] = js.native
+  @JSName("scrollTo")
+  var scrollTo_Original: js.Function0[Unit] = js.native
+  var scrollX: Double = js.native
+  var scrollY: Double = js.native
+  @JSName("scroll")
+  var scroll_Original: js.Function0[Unit] = js.native
+  var scrollbars: BarProp = js.native
   val self: DOMWindow = js.native
+  var sessionStorage: Storage = js.native
+  @JSName("setInterval")
+  var setInterval_Original: js.Function1[/* handler */ TimerHandler, Double] = js.native
+  @JSName("setTimeout")
+  var setTimeout_Original: js.Function1[/* handler */ TimerHandler, Double] = js.native
+  var speechSynthesis: SpeechSynthesis_ = js.native
+  var status: String = js.native
+  var statusbar: BarProp = js.native
+  @JSName("stop")
+  var stop_Original: js.Function0[Unit] = js.native
+  var styleMedia: StyleMedia_ = js.native
+  var toolbar: BarProp = js.native
   val top: DOMWindow = js.native
   val undefined: js.UndefOr[scala.Nothing] = js.native
+  @JSName("webkitCancelAnimationFrame")
+  var webkitCancelAnimationFrame_Original: js.Function1[/* handle */ Double, Unit] = js.native
+  @JSName("webkitConvertPointFromNodeToPage")
+  var webkitConvertPointFromNodeToPage_Original: js.Function2[/* node */ Node, /* pt */ WebKitPoint, WebKitPoint] = js.native
+  @JSName("webkitConvertPointFromPageToNode")
+  var webkitConvertPointFromPageToNode_Original: js.Function2[/* node */ Node, /* pt */ WebKitPoint, WebKitPoint] = js.native
+  @JSName("webkitRequestAnimationFrame")
+  var webkitRequestAnimationFrame_Original: js.Function1[/* callback */ FrameRequestCallback, Double] = js.native
   val window: DOMWindow = js.native
   def Array(): js.Array[_] = js.native
   def Array(arrayLength: Double): js.Array[_] = js.native
@@ -446,8 +794,12 @@ trait DOMWindow extends Context {
   def Date(): String = js.native
   def Error(): typings.std.Error = js.native
   def Error(message: String): typings.std.Error = js.native
-  def EvalError(): typings.std.EvalError = js.native
-  def EvalError(message: String): typings.std.EvalError = js.native
+  def EvalError(): Error = js.native
+  def EvalError(message: String): Error = js.native
+  @JSName("EvalError")
+  def EvalError_EvalError(): EvalError = js.native
+  @JSName("EvalError")
+  def EvalError_EvalError(message: String): EvalError = js.native
   def Function(args: String*): js.Function = js.native
   def Number(): Double = js.native
   def Number(value: js.Any): Double = js.native
@@ -455,8 +807,16 @@ trait DOMWindow extends Context {
   def Object(value: js.Any): js.Any = js.native
   def RangeError(): typings.std.RangeError = js.native
   def RangeError(message: String): typings.std.RangeError = js.native
-  def ReferenceError(): typings.std.ReferenceError = js.native
-  def ReferenceError(message: String): typings.std.ReferenceError = js.native
+  @JSName("RangeError")
+  def RangeError_Error(): Error = js.native
+  @JSName("RangeError")
+  def RangeError_Error(message: String): Error = js.native
+  def ReferenceError(): Error = js.native
+  def ReferenceError(message: String): Error = js.native
+  @JSName("ReferenceError")
+  def ReferenceError_ReferenceError(): ReferenceError = js.native
+  @JSName("ReferenceError")
+  def ReferenceError_ReferenceError(message: String): ReferenceError = js.native
   def RegExp(pattern: String): typings.std.RegExp = js.native
   def RegExp(pattern: String, flags: String): typings.std.RegExp = js.native
   def RegExp(pattern: typings.std.RegExp): typings.std.RegExp = js.native
@@ -472,23 +832,80 @@ trait DOMWindow extends Context {
   def Symbol(description: Double): js.Symbol = js.native
   def SyntaxError(): typings.std.SyntaxError = js.native
   def SyntaxError(message: String): typings.std.SyntaxError = js.native
-  def TypeError(): typings.std.TypeError = js.native
-  def TypeError(message: String): typings.std.TypeError = js.native
-  def URIError(): typings.std.URIError = js.native
-  def URIError(message: String): typings.std.URIError = js.native
+  @JSName("SyntaxError")
+  def SyntaxError_Error(): Error = js.native
+  @JSName("SyntaxError")
+  def SyntaxError_Error(message: String): Error = js.native
+  def TypeError(): Error = js.native
+  def TypeError(message: String): Error = js.native
+  @JSName("TypeError")
+  def TypeError_TypeError(): TypeError = js.native
+  @JSName("TypeError")
+  def TypeError_TypeError(message: String): TypeError = js.native
+  def URIError(): Error = js.native
+  def URIError(message: String): Error = js.native
+  @JSName("URIError")
+  def URIError_URIError(): URIError = js.native
+  @JSName("URIError")
+  def URIError_URIError(message: String): URIError = js.native
+  @JSName("addEventListener")
+  def addEventListener_abort(`type`: abort, listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _]): Unit = js.native
+  def alert(): Unit = js.native
+  def atob(data: String): String = js.native
+  def blur(): Unit = js.native
+  def btoa(data: String): String = js.native
+  def cancelAnimationFrame(handle: Double): Unit = js.native
+  def captureEvents(): Unit = js.native
+  def clearInterval(): Unit = js.native
+  def clearTimeout(): Unit = js.native
+  def close(): Unit = js.native
+  def confirm(): Boolean = js.native
+  def createImageBitmap(image: ImageBitmapSource): js.Promise[ImageBitmap] = js.native
   def decodeURI(encodedURI: String): String = js.native
   def decodeURIComponent(encodedURIComponent: String): String = js.native
+  def departFocus(navigationReason: NavigationReason, origin: FocusNavigationOrigin): Unit = js.native
+  def dispatchEvent(event: Event_): Boolean = js.native
   def encodeURI(uri: String): String = js.native
   def encodeURIComponent(uriComponent: String): String = js.native
   def encodeURIComponent(uriComponent: Boolean): String = js.native
   def encodeURIComponent(uriComponent: Double): String = js.native
   def escape(string: String): String = js.native
   def eval(script: String): js.Any = js.native
+  def fetch(input: RequestInfo): js.Promise[Response] = js.native
+  def focus(): Unit = js.native
+  def getComputedStyle(elt: Element): CSSStyleDeclaration = js.native
+  def getMatchedCSSRules(elt: Element): CSSRuleList = js.native
+  def getSelection(): Selection | Null = js.native
   def isFinite(number: Double): Boolean = js.native
   def isNaN(number: Double): Boolean = js.native
+  def matchMedia(query: String): MediaQueryList = js.native
+  def moveBy(x: Double, y: Double): Unit = js.native
+  def moveTo(x: Double, y: Double): Unit = js.native
+  def msWriteProfilerMark(profilerMarkName: String): Unit = js.native
+  def open(): Window_ | Null = js.native
   def parseFloat(string: String): Double = js.native
   def parseInt(s: String): Double = js.native
   def parseInt(s: String, radix: Double): Double = js.native
+  def postMessage(message: js.Any, targetOrigin: String): Unit = js.native
+  def print(): Unit = js.native
+  def prompt(): String | Null = js.native
+  def queueMicrotask(callback: VoidFunction): Unit = js.native
+  def releaseEvents(): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_abort(`type`: abort, listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _]): Unit = js.native
+  def requestAnimationFrame(callback: FrameRequestCallback): Double = js.native
+  def resizeBy(x: Double, y: Double): Unit = js.native
+  def resizeTo(x: Double, y: Double): Unit = js.native
+  def scroll(): Unit = js.native
+  def scrollBy(): Unit = js.native
+  def scrollTo(): Unit = js.native
+  def setInterval(handler: TimerHandler): Double = js.native
+  def setTimeout(handler: TimerHandler): Double = js.native
+  def stop(): Unit = js.native
   def unescape(string: String): String = js.native
+  def webkitCancelAnimationFrame(handle: Double): Unit = js.native
+  def webkitConvertPointFromNodeToPage(node: Node, pt: WebKitPoint): WebKitPoint = js.native
+  def webkitConvertPointFromPageToNode(node: Node, pt: WebKitPoint): WebKitPoint = js.native
+  def webkitRequestAnimationFrame(callback: FrameRequestCallback): Double = js.native
 }
 

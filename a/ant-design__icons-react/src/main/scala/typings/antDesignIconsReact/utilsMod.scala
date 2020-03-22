@@ -1,7 +1,6 @@
 package typings.antDesignIconsReact
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.antDesignIcons.typesMod.AbstractNode
 import typings.antDesignIconsReact.antDesignIconsReactBooleans.`false`
 import typings.antDesignIconsReact.antDesignIconsReactStrings.fill
 import typings.antDesignIconsReact.antDesignIconsReactStrings.outline
@@ -24,12 +23,23 @@ object utilsMod extends js.Object {
     def set(key: String, value: V): this.type = js.native
   }
   
-  def generate(node: AbstractNode, key: String): js.Any = js.native
-  def generate(node: AbstractNode, key: String, rootProps: StringDictionary[js.Any]): js.Any = js.native
+  def generate(
+    node: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AbstractNode */ js.Any,
+    key: String
+  ): js.Any = js.native
+  def generate(
+    node: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AbstractNode */ js.Any,
+    key: String,
+    rootProps: StringDictionary[js.Any]
+  ): js.Any = js.native
   @JSName("generate")
-  def generate_false(node: AbstractNode, key: String, rootProps: `false`): js.Any = js.native
+  def generate_false(
+    node: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AbstractNode */ js.Any,
+    key: String,
+    rootProps: `false`
+  ): js.Any = js.native
   def getSecondaryColor(primaryColor: String): String = js.native
-  def isIconDefinition(target: js.Any): /* is @ant-design/icons.@ant-design/icons/lib/types.IconDefinition */ Boolean = js.native
+  def isIconDefinition(target: js.Any): /* is / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconDefinition * / any */ Boolean = js.native
   def log(message: String): Unit = js.native
   def normalizeAttrs(): Attrs = js.native
   def normalizeAttrs(attrs: Attrs): Attrs = js.native

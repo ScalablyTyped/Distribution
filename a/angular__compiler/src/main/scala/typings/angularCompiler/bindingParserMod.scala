@@ -48,6 +48,14 @@ object bindingParserMod extends js.Object {
     var _parseBinding: js.Any = js.native
     var _parsePropertyAst: js.Any = js.native
     var _parseRegularEvent: js.Any = js.native
+    /**
+      * Parses the bindings in an inline template binding, e.g.
+      *    <tag *tplKey="let value1 = prop; let value2 = localVar">
+      * @param tplKey template binding name
+      * @param tplValue template binding value
+      * @param sourceSpan span of template binding relative to entire the template
+      * @param absoluteValueOffset start of the tplValue relative to the entire template
+      */
     var _parseTemplateBindings: js.Any = js.native
     var _reportError: js.Any = js.native
     var _reportExpressionParserErrors: js.Any = js.native
@@ -60,7 +68,6 @@ object bindingParserMod extends js.Object {
       */
     var _validatePropertyOrAttributeName: js.Any = js.native
     var errors: js.Array[ParseError] = js.native
-    val interpolationConfig: InterpolationConfig = js.native
     var pipesByName: (Map[String, CompilePipeSummary]) | Null = js.native
     def calcPossibleSecurityContexts(selector: String, propName: String, isAttribute: Boolean): js.Array[SecurityContext] = js.native
     def createBoundElementProperty(elementSelector: String, boundProp: ParsedProperty): BoundElementProperty = js.native
@@ -75,6 +82,7 @@ object bindingParserMod extends js.Object {
     def createDirectiveHostEventAsts(dirMeta: CompileDirectiveSummary, sourceSpan: ParseSourceSpan): js.Array[ParsedEvent] | Null = js.native
     def createDirectiveHostPropertyAsts(dirMeta: CompileDirectiveSummary, elementSelector: String, sourceSpan: ParseSourceSpan): js.Array[BoundElementProperty] | Null = js.native
     def getUsedPipes(): js.Array[CompilePipeSummary] = js.native
+    def interpolationConfig(): InterpolationConfig = js.native
     def parseEvent(
       name: String,
       expression: String,
@@ -83,11 +91,22 @@ object bindingParserMod extends js.Object {
       targetMatchableAttrs: js.Array[js.Array[String]],
       targetEvents: js.Array[ParsedEvent]
     ): Unit = js.native
+    /**
+      * Parses an inline template binding, e.g.
+      *    <tag *tplKey="<tplValue>">
+      * @param tplKey template binding name
+      * @param tplValue template binding value
+      * @param sourceSpan span of template binding relative to entire the template
+      * @param absoluteValueOffset start of the tplValue relative to the entire template
+      * @param targetMatchableAttrs potential attributes to match in the template
+      * @param targetProps target property bindings in the template
+      * @param targetVars target variables in the template
+      */
     def parseInlineTemplateBinding(
       tplKey: String,
       tplValue: String,
       sourceSpan: ParseSourceSpan,
-      absoluteOffset: Double,
+      absoluteValueOffset: Double,
       targetMatchableAttrs: js.Array[js.Array[String]],
       targetProps: js.Array[ParsedProperty],
       targetVars: js.Array[ParsedVariable]

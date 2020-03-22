@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact.listListMod
 
-import typings.officeUiFabricReact.AnonContainsFocus
+import typings.officeUiFabricReact.AnonOnRenderCell
 import typings.officeUiFabricReact.listTypesMod.IList
 import typings.officeUiFabricReact.listTypesMod.IListProps
 import typings.react.mod.Component
@@ -120,6 +120,6 @@ class List[T] protected ()
 @JSImport("office-ui-fabric-react/lib/components/List/List", "List")
 @js.native
 object List extends js.Object {
-  var defaultProps: AnonContainsFocus = js.native
+  var defaultProps: AnonOnRenderCell = js.native
 }
 

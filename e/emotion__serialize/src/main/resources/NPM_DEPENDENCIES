@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@emotion/serialize" : "0.11.11"
+      "@emotion/serialize" : "0.11.15"
     }
   ],
   "test-dependencies" : [
     {
-      "@emotion/serialize" : "0.11.11"
+      "@emotion/serialize" : "0.11.15"
     }
   ],
   "compile-devDependencies" : [

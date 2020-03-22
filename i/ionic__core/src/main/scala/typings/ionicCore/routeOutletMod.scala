@@ -1,12 +1,12 @@
 package typings.ionicCore
 
+import typings.ionicCore.animationInterfaceMod.AnimationBuilder
 import typings.ionicCore.interfaceMod.NavOutlet
 import typings.ionicCore.ionicCoreStrings.ios
 import typings.ionicCore.ionicCoreStrings.md
 import typings.ionicCore.mod.FrameworkDelegate
 import typings.ionicCore.navInterfaceMod.RouterOutletOptions
 import typings.ionicCore.navInterfaceMod.SwipeGestureHandler
-import typings.ionicCore.oldAnimationAnimationInterfaceMod.AnimationBuilder
 import typings.ionicCore.stencilCoreMod.ComponentInterface
 import typings.ionicCore.stencilCoreMod.EventEmitter
 import typings.std.HTMLElement

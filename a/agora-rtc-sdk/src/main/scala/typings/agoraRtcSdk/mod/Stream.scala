@@ -1,8 +1,8 @@
 package typings.agoraRtcSdk.mod
 
 import typings.agoraRtcSdk.AnonCacheResource
-import typings.agoraRtcSdk.AnonContain
 import typings.agoraRtcSdk.AnonCycle
+import typings.agoraRtcSdk.AnonFit
 import typings.agoraRtcSdk.AnonSoundId
 import typings.agoraRtcSdk.agoraRtcSdkStrings.accessAllowed
 import typings.agoraRtcSdk.agoraRtcSdkStrings.accessDenied
@@ -409,7 +409,7 @@ trait Stream extends js.Object {
     *
     */
   def play(HTMLElementID: String): Unit = js.native
-  def play(HTMLElementID: String, option: AnonContain): Unit = js.native
+  def play(HTMLElementID: String, option: AnonFit): Unit = js.native
   /**
     * Plays a specified audio effect.
     *

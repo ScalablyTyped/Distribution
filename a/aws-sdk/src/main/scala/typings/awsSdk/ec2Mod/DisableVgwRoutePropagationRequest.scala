@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait DisableVgwRoutePropagationRequest extends js.Object {
+  var DryRun: js.UndefOr[Boolean] = js.native
   /**
     * The ID of the virtual private gateway.
     */
@@ -18,9 +19,13 @@ trait DisableVgwRoutePropagationRequest extends js.Object {
 
 object DisableVgwRoutePropagationRequest {
   @scala.inline
-  def apply(GatewayId: VpnGatewayId, RouteTableId: RouteTableId): DisableVgwRoutePropagationRequest = {
+  def apply(
+    GatewayId: VpnGatewayId,
+    RouteTableId: RouteTableId,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined
+  ): DisableVgwRoutePropagationRequest = {
     val __obj = js.Dynamic.literal(GatewayId = GatewayId.asInstanceOf[js.Any], RouteTableId = RouteTableId.asInstanceOf[js.Any])
-  
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisableVgwRoutePropagationRequest]
   }
 }

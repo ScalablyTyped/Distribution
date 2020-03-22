@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "coa" : "2.0.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "coa" : "2.0.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

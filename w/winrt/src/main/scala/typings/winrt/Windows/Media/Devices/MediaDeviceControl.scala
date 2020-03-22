@@ -1,7 +1,7 @@
 package typings.winrt.Windows.Media.Devices
 
+import typings.winrt.AnonSucceededBoolean
 import typings.winrt.AnonSucceededValue
-import typings.winrt.AnonSucceededValueBoolean
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ class MediaDeviceControl () extends IMediaDeviceControl {
   /* CompleteClass */
   override var capabilities: MediaDeviceControlCapabilities = js.native
   /* CompleteClass */
-  override def tryGetAuto(): AnonSucceededValueBoolean = js.native
+  override def tryGetAuto(): AnonSucceededBoolean = js.native
   /* CompleteClass */
   override def tryGetValue(): AnonSucceededValue = js.native
   /* CompleteClass */

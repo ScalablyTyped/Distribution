@@ -1,6 +1,6 @@
 package typings.plotlyJs.mod
 
-import typings.std.Partial
+import typings.plotlyJs.PartialLayout
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,7 +26,7 @@ trait Frame extends js.Object {
   	 * Layout properties which this frame modifies. The format is identical
   	 * to the normal layout definition.
   	 */
-  var layout: Partial[Layout]
+  var layout: PartialLayout
   /**
   	 * A label by which to identify the frame
   	 */
@@ -44,7 +44,7 @@ object Frame {
     baseframe: String,
     data: js.Array[Data],
     group: String,
-    layout: Partial[Layout],
+    layout: PartialLayout,
     name: String,
     traces: js.Array[Double]
   ): Frame = {

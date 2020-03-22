@@ -1,6 +1,5 @@
 package typings.typedoc
 
-import org.scalablytyped.runtime.Instantiable2
 import typings.typedoc.modelsMod.Comment
 import typings.typedoc.serializationComponentsMod.SerializerComponent
 import scala.scalajs.js
@@ -12,8 +11,7 @@ import scala.scalajs.js.annotation._
 object serializersCommentsCommentMod extends js.Object {
   @js.native
   class CommentSerializer () extends SerializerComponent[Comment] {
-    @JSName("serializeGroupSymbol")
-    var serializeGroupSymbol_CommentSerializer: Instantiable2[js.UndefOr[/* shortText */ String], js.UndefOr[/* text */ String], Comment] = js.native
+    def toObject(comment: Comment, obj: PartialComment): typings.typedoc.schemaMod.Comment = js.native
   }
   
   /* static members */

@@ -11,6 +11,6 @@ object peopleExampleDataMod extends js.Object {
   val groupOne: js.Array[IExtendedPersonaProps] = js.native
   val groupTwo: js.Array[IExtendedPersonaProps] = js.native
   val mru: js.Array[IExtendedPersonaProps] = js.native
-  val people: js.Array[IExtendedPersonaProps with AnonKeyNumberString] = js.native
+  val people: js.Array[IExtendedPersonaPropskeys] = js.native
 }
 

@@ -1,5 +1,6 @@
 package typings.highcharts.mod
 
+import typings.highcharts.highchartsStrings._empty
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -82,12 +83,24 @@ class Series protected () extends js.Object {
     */
   var data: js.Array[Point] = js.native
   /**
+    * Contains the maximum value of the series' data point.
+    */
+  val dataMax: Double = js.native
+  /**
+    * Contains the minimum value of the series' data point.
+    */
+  val dataMin: Double = js.native
+  /**
     * SVG element of line-based charts. Can be used for styling purposes. If
     * zones are configured, this element will be hidden and replaced by
     * multiple zone lines, accessible via `series['zone-graph-x']` (where x is
     * a number, starting with 0).
     */
   var graph: js.UndefOr[SVGElement] = js.native
+  /**
+    * Contains the series' index in the `Chart.series` array.
+    */
+  val index: Double = js.native
   /**
     * The series name as given in the options. Defaults to "Series {n}".
     */
@@ -417,14 +430,18 @@ class Series protected () extends js.Object {
     * series.
     *
     * @param state
-    *        Can be either `hover` or undefined to set to normal state.
+    *        The new state, can be either `'hover'`, `'inactive'`, `'select'`,
+    *        or `''` (an empty string), `'normal'` or `undefined` to set to
+    *        normal state.
     *
     * @param inherit
     *        Determines if state should be inherited by points too.
     */
   def setState(): Unit = js.native
-  def setState(state: String): Unit = js.native
-  def setState(state: String, inherit: Boolean): Unit = js.native
+  def setState(state: _empty): Unit = js.native
+  def setState(state: _empty, inherit: Boolean): Unit = js.native
+  def setState(state: SeriesStateValue): Unit = js.native
+  def setState(state: SeriesStateValue, inherit: Boolean): Unit = js.native
   /**
     * Show or hide the series.
     *

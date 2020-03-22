@@ -1,6 +1,6 @@
 package typings.awsSdk.codedeployMod
 
-import typings.awsSdk.AnonWaiter
+import typings.awsSdk.GetDeploymentInputwaiterW
 import typings.awsSdk.awsSdkStrings.deploymentSuccessful
 import typings.awsSdk.configMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
@@ -628,11 +628,11 @@ trait CodeDeploy extends Service {
     * Waits for the deploymentSuccessful state by periodically calling the underlying CodeDeploy.getDeploymentoperation every 15 seconds (at most 120 times).
     */
   @JSName("waitFor")
-  def waitFor_deploymentSuccessful(state: deploymentSuccessful, params: GetDeploymentInput with AnonWaiter): Request[GetDeploymentOutput, AWSError] = js.native
+  def waitFor_deploymentSuccessful(state: deploymentSuccessful, params: GetDeploymentInputwaiterW): Request[GetDeploymentOutput, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_deploymentSuccessful(
     state: deploymentSuccessful,
-    params: GetDeploymentInput with AnonWaiter,
+    params: GetDeploymentInputwaiterW,
     callback: js.Function2[/* err */ AWSError, /* data */ GetDeploymentOutput, Unit]
   ): Request[GetDeploymentOutput, AWSError] = js.native
 }

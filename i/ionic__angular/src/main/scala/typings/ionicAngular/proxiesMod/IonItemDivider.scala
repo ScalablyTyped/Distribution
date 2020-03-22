@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ionic/angular/dist/directives/proxies", "IonItemDivider")
+@JSImport("@ionic/angular/directives/proxies", "IonItemDivider")
 @js.native
 class IonItemDivider protected ()
   extends typings.ionicCore.componentsMod.Components.IonItemDivider {

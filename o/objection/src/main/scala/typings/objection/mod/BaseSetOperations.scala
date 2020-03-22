@@ -5,88 +5,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait BaseSetOperations[QM /* <: Model */] extends js.Object {
-  def apply(
-    callback: js.ThisFunction1[
-      /* this */ QueryBuilder[
-        QM, 
-        js.Array[QM], 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for RV */ _
-      ], 
-      /* queryBuilder */ QueryBuilder[
-        QM, 
-        js.Array[QM], 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for RV */ _
-      ], 
-      Unit
-    ]
-  ): QueryBuilder[
-    QM, 
-    js.Array[QM], 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for RV */ _
-  ] = js.native
-  def apply(
-    callback: js.ThisFunction1[
-      /* this */ QueryBuilder[
-        QM, 
-        js.Array[QM], 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for RV */ _
-      ], 
-      /* queryBuilder */ QueryBuilder[
-        QM, 
-        js.Array[QM], 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for RV */ _
-      ], 
-      Unit
-    ],
-    wrap: Boolean
-  ): QueryBuilder[
-    QM, 
-    js.Array[QM], 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for RV */ _
-  ] = js.native
-  def apply(
-    callbacks: js.Array[
-      js.ThisFunction1[
-        /* this */ QueryBuilder[
-          QM, 
-          js.Array[QM], 
-          /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for RV */ _
-        ], 
-        /* queryBuilder */ QueryBuilder[
-          QM, 
-          js.Array[QM], 
-          /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for RV */ _
-        ], 
-        Unit
-      ]
-    ]
-  ): QueryBuilder[
-    QM, 
-    js.Array[QM], 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for RV */ _
-  ] = js.native
-  def apply(
-    callbacks: js.Array[
-      js.ThisFunction1[
-        /* this */ QueryBuilder[
-          QM, 
-          js.Array[QM], 
-          /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for RV */ _
-        ], 
-        /* queryBuilder */ QueryBuilder[
-          QM, 
-          js.Array[QM], 
-          /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for RV */ _
-        ], 
-        Unit
-      ]
-    ],
-    wrap: Boolean
-  ): QueryBuilder[
-    QM, 
-    js.Array[QM], 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for RV */ _
-  ] = js.native
+trait BaseSetOperations[QB /* <: AnyQueryBuilder */] extends js.Object {
+  def apply(callbackOrBuilder: QBOrCallback[QB]): QB = js.native
+  def apply(callbackOrBuilder: QBOrCallback[QB], wrap: Boolean): QB = js.native
+  def apply(callbacksOrBuilders: js.Array[QBOrCallback[QB]]): QB = js.native
+  def apply(callbacksOrBuilders: js.Array[QBOrCallback[QB]], wrap: Boolean): QB = js.native
 }
 

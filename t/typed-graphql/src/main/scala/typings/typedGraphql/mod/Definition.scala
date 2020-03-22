@@ -13,8 +13,35 @@ trait Definition extends js.Object
 
 object Definition {
   @scala.inline
-  def ScalarTypeDefinition(kind: String, name: Name, loc: Location = null): Definition = {
-    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  def ObjectTypeDefinition(
+    fields: js.Array[FieldDefinition],
+    kind: String,
+    name: Name,
+    interfaces: js.Array[NamedType] = null,
+    loc: Location = null
+  ): Definition = {
+    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (interfaces != null) __obj.updateDynamic("interfaces")(interfaces.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Definition]
+  }
+  @scala.inline
+  def TypeExtensionDefinition(definition: ObjectTypeDefinition, kind: String, loc: Location = null): Definition = {
+    val __obj = js.Dynamic.literal(definition = definition.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Definition]
+  }
+  @scala.inline
+  def FragmentDefinition(
+    kind: String,
+    name: Name,
+    selectionSet: SelectionSet,
+    typeCondition: NamedType,
+    directives: js.Array[Directive] = null,
+    loc: Location = null
+  ): Definition = {
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], selectionSet = selectionSet.asInstanceOf[js.Any], typeCondition = typeCondition.asInstanceOf[js.Any])
+    if (directives != null) __obj.updateDynamic("directives")(directives.asInstanceOf[js.Any])
     if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[Definition]
   }
@@ -42,41 +69,14 @@ object Definition {
     __obj.asInstanceOf[Definition]
   }
   @scala.inline
+  def ScalarTypeDefinition(kind: String, name: Name, loc: Location = null): Definition = {
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Definition]
+  }
+  @scala.inline
   def InterfaceTypeDefinition(fields: js.Array[FieldDefinition], kind: String, name: Name, loc: Location = null): Definition = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Definition]
-  }
-  @scala.inline
-  def InputObjectTypeDefinition(fields: js.Array[InputValueDefinition], kind: String, name: Name, loc: Location = null): Definition = {
-    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Definition]
-  }
-  @scala.inline
-  def ObjectTypeDefinition(
-    fields: js.Array[FieldDefinition],
-    kind: String,
-    name: Name,
-    interfaces: js.Array[NamedType] = null,
-    loc: Location = null
-  ): Definition = {
-    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (interfaces != null) __obj.updateDynamic("interfaces")(interfaces.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Definition]
-  }
-  @scala.inline
-  def FragmentDefinition(
-    kind: String,
-    name: Name,
-    selectionSet: SelectionSet,
-    typeCondition: NamedType,
-    directives: js.Array[Directive] = null,
-    loc: Location = null
-  ): Definition = {
-    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], selectionSet = selectionSet.asInstanceOf[js.Any], typeCondition = typeCondition.asInstanceOf[js.Any])
-    if (directives != null) __obj.updateDynamic("directives")(directives.asInstanceOf[js.Any])
     if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[Definition]
   }
@@ -87,8 +87,8 @@ object Definition {
     __obj.asInstanceOf[Definition]
   }
   @scala.inline
-  def TypeExtensionDefinition(definition: ObjectTypeDefinition, kind: String, loc: Location = null): Definition = {
-    val __obj = js.Dynamic.literal(definition = definition.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any])
+  def InputObjectTypeDefinition(fields: js.Array[InputValueDefinition], kind: String, name: Name, loc: Location = null): Definition = {
+    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[Definition]
   }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for dialogflow
 
-Typings are for version 0.12.2
+Typings are for version 1.2.0
 
 ## Library description:
 Dialogflow API client for Node.js

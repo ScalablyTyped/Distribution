@@ -782,13 +782,13 @@ object elementMod extends js.Object {
   @JSName("build$")
   var build: js.Function2[
     /* element */ ElementHelper, 
-    /* by */ TypeofClassBy, 
+    /* by */ TypeofBy, 
     js.Function1[/* selector */ String, ElementFinder]
   ] = js.native
   @JSName("build$$")
   var build$: js.Function2[
     /* element */ ElementHelper, 
-    /* by */ TypeofClassBy, 
+    /* by */ TypeofBy, 
     js.Function1[/* selector */ String, ElementArrayFinder]
   ] = js.native
   /* static members */

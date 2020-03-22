@@ -32,12 +32,6 @@ object awsSdkS3RequestPresignerStrings {
   @js.native
   sealed trait host extends js.Object
   
-  @js.native
-  sealed trait service extends js.Object
-  
-  @js.native
-  sealed trait uriEscapePath extends js.Object
-  
   @scala.inline
   def `AWS4-HMAC-SHA256`: `AWS4-HMAC-SHA256` = "AWS4-HMAC-SHA256".asInstanceOf[`AWS4-HMAC-SHA256`]
   @scala.inline
@@ -56,9 +50,5 @@ object awsSdkS3RequestPresignerStrings {
   def `X-Amz-SignedHeaders`: `X-Amz-SignedHeaders` = "X-Amz-SignedHeaders".asInstanceOf[`X-Amz-SignedHeaders`]
   @scala.inline
   def host: host = "host".asInstanceOf[host]
-  @scala.inline
-  def service: service = "service".asInstanceOf[service]
-  @scala.inline
-  def uriEscapePath: uriEscapePath = "uriEscapePath".asInstanceOf[uriEscapePath]
 }
 

@@ -1,8 +1,6 @@
 package typings.postcss.mod
 
-import typings.postcss.postcssStrings.from
-import typings.postcss.postcssStrings.map
-import typings.std.Pick
+import typings.postcss.PickProcessOptionsmapfrom
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -41,7 +39,7 @@ object ProcessOptions {
   def apply(
     from: String = null,
     map: SourceMapOptions | Boolean = null,
-    parser: (/* css */ ParserInput, /* opts */ js.UndefOr[Pick[ProcessOptions, map | from]]) => Root_ = null,
+    parser: (/* css */ ParserInput, /* opts */ js.UndefOr[PickProcessOptionsmapfrom]) => Root_ = null,
     stringifier: (/* node */ Node, /* builder */ Builder) => Unit = null,
     syntax: Syntax = null,
     to: String = null

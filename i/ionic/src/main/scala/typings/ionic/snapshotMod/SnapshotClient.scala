@@ -1,9 +1,13 @@
 package typings.ionic.snapshotMod
 
 import typings.ionic.AnonIdString
+import typings.ionic.PartialPaginateArgsResponGuard
 import typings.ionic.definitionsMod.IClient
+import typings.ionic.definitionsMod.IPaginator
+import typings.ionic.definitionsMod.PaginatorState
 import typings.ionic.definitionsMod.ResourceClientLoad
 import typings.ionic.definitionsMod.ResourceClientPaginate
+import typings.ionic.definitionsMod.Response
 import typings.ionic.definitionsMod.Snapshot
 import typings.ionic.httpMod.ResourceClient
 import scala.scalajs.js
@@ -21,5 +25,6 @@ class SnapshotClient protected ()
   var client: IClient = js.native
   var token: String = js.native
   def load(id: String): js.Promise[Snapshot] = js.native
+  def paginate(args: PartialPaginateArgsResponGuard): IPaginator[Response[js.Array[Snapshot]], PaginatorState] = js.native
 }
 

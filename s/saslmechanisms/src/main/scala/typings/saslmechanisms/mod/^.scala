@@ -1,6 +1,6 @@
 package typings.saslmechanisms.mod
 
-import typings.saslmechanisms.TypeofClassFactory
+import typings.saslmechanisms.TypeofFactory
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,6 +12,6 @@ class ^ () extends Factory
 @JSImport("saslmechanisms", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  var Factory: TypeofClassFactory = js.native
+  var Factory: TypeofFactory = js.native
 }
 

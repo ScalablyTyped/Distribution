@@ -70,6 +70,10 @@ trait PkgOptions extends TargetSpecificOptions {
     */
   val license: js.UndefOr[String | Null] = js.undefined
   /**
+    * Identifies applications that must be closed before the package is installed.\n\nCorresponds to [must-close](https://developer.apple.com/library/archive/documentation/DeveloperTools/Reference/DistributionDefinitionRef/Chapters/Distribution_XML_Ref.html#//apple_ref/doc/uid/TP40005370-CH100-SW77)
+    */
+  val mustClose: js.UndefOr[js.Array[String] | Null] = js.undefined
+  /**
     * Specifies how an existing version of the bundle on disk should be handled when the version in
     * the package is installed.
     *
@@ -122,6 +126,7 @@ object PkgOptions {
     isRelocatable: js.UndefOr[Boolean] = js.undefined,
     isVersionChecked: js.UndefOr[Boolean] = js.undefined,
     license: String = null,
+    mustClose: js.Array[String] = null,
     overwriteAction: upgrade | update = null,
     productbuild: js.Array[String] = null,
     publish: Publish = null,
@@ -141,6 +146,7 @@ object PkgOptions {
     if (!js.isUndefined(isRelocatable)) __obj.updateDynamic("isRelocatable")(isRelocatable.asInstanceOf[js.Any])
     if (!js.isUndefined(isVersionChecked)) __obj.updateDynamic("isVersionChecked")(isVersionChecked.asInstanceOf[js.Any])
     if (license != null) __obj.updateDynamic("license")(license.asInstanceOf[js.Any])
+    if (mustClose != null) __obj.updateDynamic("mustClose")(mustClose.asInstanceOf[js.Any])
     if (overwriteAction != null) __obj.updateDynamic("overwriteAction")(overwriteAction.asInstanceOf[js.Any])
     if (productbuild != null) __obj.updateDynamic("productbuild")(productbuild.asInstanceOf[js.Any])
     if (publish != null) __obj.updateDynamic("publish")(publish.asInstanceOf[js.Any])

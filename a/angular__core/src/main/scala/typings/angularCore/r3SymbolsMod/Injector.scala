@@ -5,12 +5,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Concrete injectors implement this interface.
+  * Concrete injectors implement this interface. Injectors are configured
+  * with [providers](guide/glossary#provider) that associate
+  * dependencies of various types with [injection tokens](guide/glossary#di-token).
   *
-  * For more details, see the ["Dependency Injection Guide"](guide/dependency-injection).
+  * @see ["DI Providers"](guide/dependency-injection-providers).
+  * @see `StaticProvider`
   *
   * @usageNotes
-  * ### Example
+  *
+  *  The following example creates a service injector instance.
+  *
+  * {@example core/di/ts/provider_spec.ts region='ConstructorProvider'}
+  *
+  * ### Usage example
   *
   * {@example core/di/ts/injector_spec.ts region='Injector'}
   *
@@ -28,6 +36,9 @@ trait Injector extends js.Object {
     */
   def get(token: js.Any): js.Any = js.native
   def get(token: js.Any, notFoundValue: js.Any): js.Any = js.native
+  def get[T](token: AbstractType[T]): T = js.native
+  def get[T](token: AbstractType[T], notFoundValue: T): T = js.native
+  def get[T](token: AbstractType[T], notFoundValue: T, flags: InjectFlags): T = js.native
   def get[T](token: InjectionToken[T]): T = js.native
   def get[T](token: InjectionToken[T], notFoundValue: T): T = js.native
   def get[T](token: InjectionToken[T], notFoundValue: T, flags: InjectFlags): T = js.native

@@ -1,6 +1,6 @@
 package typings.octokitEndpoint
 
-import typings.octokitEndpoint.octokitEndpointStrings.`5Dot5Dot2`
+import typings.octokitEndpoint.octokitEndpointStrings.`5Dot5Dot3`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@octokit/endpoint/dist-types/version", JSImport.Namespace)
 @js.native
 object versionMod extends js.Object {
-  val VERSION: `5Dot5Dot2` = js.native
+  val VERSION: `5Dot5Dot3` = js.native
 }
 

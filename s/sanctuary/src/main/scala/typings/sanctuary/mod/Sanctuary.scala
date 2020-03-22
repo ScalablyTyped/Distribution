@@ -2,16 +2,16 @@ package typings.sanctuary.mod
 
 import typings.sanctuary.AnonCheckTypes
 import typings.sanctuary.AnonName
-import typings.sanctuary.FnContravariant
-import typings.sanctuary.FnF
-import typings.sanctuary.FnFoldable
-import typings.sanctuary.FnM
-import typings.sanctuary.FnQ
-import typings.sanctuary.FnQA
-import typings.sanctuary.FnR
-import typings.sanctuary.FnX
-import typings.sanctuary.FnXY
-import typings.sanctuary.FnXs
+import typings.sanctuary.Fn0
+import typings.sanctuary.FnCall
+import typings.sanctuary.FnCallContravariant
+import typings.sanctuary.FnCallF
+import typings.sanctuary.FnCallFoldable
+import typings.sanctuary.FnCallM
+import typings.sanctuary.FnCallQ
+import typings.sanctuary.FnCallR
+import typings.sanctuary.FnCallX
+import typings.sanctuary.FnCallXs
 import typings.std.Date
 import typings.std.Error
 import typings.std.RegExp
@@ -51,11 +51,11 @@ object Sanctuary extends js.Object {
     def apSecond(x: Apply[_]): js.Function1[/* y */ Apply[_], Apply[_]] = js.native
     //  Array
     //  TODO: Fantasyland overloads, non-curried versions
-    def append[A](x: A): FnXs[A] = js.native
-    def at(p: Integer): FnQA = js.native
+    def append[A](x: A): FnCallXs[A] = js.native
+    def at(p: Integer): FnCallQ = js.native
     def bimap[A, B](p: Fn[A, B]): js.Function1[/* q */ Fn[_, _], js.Function1[/* r */ Bifunctor[A, _], Bifunctor[B, _]]] = js.native
     def chain[A, B](f: Fn[A, Chain[B]]): js.Function1[/* chain_ */ Chain[A], Chain[B]] = js.native
-    def chainRec(typeRep: TypeRep): FnF = js.native
+    def chainRec(typeRep: TypeRep): FnCallF = js.native
     @JSName("chain")
     def chain_ABX[A, B, X](f: Fn2[A, X, B]): js.Function1[/* chain_ */ Fn[X, A], Fn[X, B]] = js.native
     def complement[A](p: Predicate[A]): Predicate[A] = js.native
@@ -66,7 +66,7 @@ object Sanctuary extends js.Object {
     def concat[A](x: js.Array[A]): js.Function1[/* y */ js.Array[A], js.Array[A]] = js.native
     def concat[A](x: Semigroup[A]): js.Function1[/* y */ Semigroup[A], Semigroup[A]] = js.native
     def concat[A](x: StrMap[A]): js.Function1[/* y */ StrMap[A], StrMap[A]] = js.native
-    def contramap[A, B](f: Fn[B, A]): FnContravariant[A, B] = js.native
+    def contramap[A, B](f: Fn[B, A]): FnCallContravariant[A, B] = js.native
     //  Function
     def curry2[A, B, C](f: Fn2_[A, B, C]): Fn2[A, B, C] = js.native
     def curry3[A, B, C, D](f: Fn3_[A, B, C, D]): Fn3[A, B, C, D] = js.native
@@ -92,8 +92,8 @@ object Sanctuary extends js.Object {
     def even(n: Integer): Boolean = js.native
     def extend[A, B](f: Fn[Extend[A], B]): js.Function1[/* extend_ */ Extend[A], Extend[B]] = js.native
     def extract[A](comonad: Comonad[A]): A = js.native
-    def filter[A](pred: Predicate[A]): FnM[A] = js.native
-    def filterM[A](pred: Predicate[A]): FnM[A] = js.native
+    def filter[A](pred: Predicate[A]): FnCallM[A] = js.native
+    def filterM[A](pred: Predicate[A]): FnCallM[A] = js.native
     def find[A](p: Predicate[A]): js.Function1[/* q */ js.Array[A] | StrMap[A] | Foldable[A], Maybe[A]] = js.native
     def flip[A, B, C](f: Fn2[A, B, C]): Fn2[B, A, C] = js.native
     def fromEither[B](p: B): js.Function1[/* q */ Either[_, B], B] = js.native
@@ -128,12 +128,12 @@ object Sanctuary extends js.Object {
     def last(xs: String): Maybe[String] = js.native
     def last[A](xs: js.Array[A]): Maybe[A] = js.native
     def lefts[A](p: js.Array[Either[A, _]]): js.Array[A] = js.native
-    def lift2[A, B, C](f: Fn2[A, B, C]): FnX[A, B, C] = js.native
-    def lift3[A, B, C, D](f: Fn3[A, B, C, D]): FnXY[A, B, C, D] = js.native
+    def lift2[A, B, C](f: Fn2[A, B, C]): FnCallX[A, B, C] = js.native
+    def lift3[A, B, C, D](f: Fn3[A, B, C, D]): Fn0[A, B, C, D] = js.native
     def lines(s: String): js.Array[String] = js.native
     def lt[A](x: Ord[A]): js.Function1[/* y */ Ord[A], Boolean] = js.native
     def lte[A](x: Ord[A]): js.Function1[/* y */ Ord[A], Boolean] = js.native
-    def map[A, B](p: Fn[A, B]): FnQ[A, B] = js.native
+    def map[A, B](p: Fn[A, B]): FnCall[A, B] = js.native
     def mapMaybe[A](p: Fn[A, Maybe[_]]): js.Function1[/* q */ js.Array[A], js.Array[A]] = js.native
     def `match`(pattern: RegExp): js.Function1[/* q */ String, js.Array[Maybe[MatchObj]]] = js.native
     def matchAll(pattern: RegExp): js.Function1[/* q */ String, js.Array[MatchObj]] = js.native
@@ -168,10 +168,10 @@ object Sanctuary extends js.Object {
     def pipe_AB[A, B](fs: js.Array[Fn[A, B]]): js.Function1[/* x */ A, B] = js.native
     def pluck(key: String): js.Function1[/* xs */ Functor[_], Functor[_]] = js.native
     def pow(p: FiniteNumber): js.Function1[/* q */ FiniteNumber, FiniteNumber] = js.native
-    def prepend[A](x: A): FnXs[A] = js.native
+    def prepend[A](x: A): FnCallXs[A] = js.native
     def product(p: js.Array[FiniteNumber]): FiniteNumber = js.native
     def product(p: Foldable[FiniteNumber]): FiniteNumber = js.native
-    def promap[A, B](p: Fn[A, B]): js.Function1[/* q */ Fn[_, _], FnR[B, _, A, _]] = js.native
+    def promap[A, B](p: Fn[A, B]): js.Function1[/* q */ Fn[_, _], FnCallR[B, _, A, _]] = js.native
     //  Object
     def prop(p: String): js.Function1[/* q */ js.Any, _] = js.native
     def props(p: js.Array[String]): js.Function1[/* q */ js.Any, _] = js.native
@@ -191,7 +191,7 @@ object Sanctuary extends js.Object {
     def slice(p: Integer): js.Function1[/* q */ Integer, ListToMaybeList] = js.native
     def sort[A](foldable: js.Array[A]): js.Array[A] = js.native
     def sort[A](foldable: Foldable[A]): Foldable[A] = js.native
-    def sortBy[A](f: Fn[A, Ord[_]]): FnFoldable[A] = js.native
+    def sortBy[A](f: Fn[A, Ord[_]]): FnCallFoldable[A] = js.native
     def splitOn(separator: String): js.Function1[/* q */ String, js.Array[String]] = js.native
     def splitOnRegex(pattern: RegExp): js.Function1[/* q */ String, js.Array[String]] = js.native
     def stripPrefix(prefix: String): js.Function1[/* q */ String, Maybe[String]] = js.native

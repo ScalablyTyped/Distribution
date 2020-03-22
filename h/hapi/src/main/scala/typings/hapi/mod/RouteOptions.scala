@@ -5,6 +5,7 @@ import typings.hapi.AnonFailAction
 import typings.hapi.AnonRelativeTo
 import typings.hapi.AnonServer
 import typings.hapi.hapiBooleans.`false`
+import typings.hapi.keyinRouteRequestExtTypeR
 import typings.hapi.mod.Json.StringifyArguments
 import typings.hapi.mod.Lifecycle.Method
 import typings.hapi.mod.Util.Dictionary
@@ -83,11 +84,7 @@ trait RouteOptions extends js.Object {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionsext)
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#request-lifecycle)
     */
-  var ext: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in hapi.hapi.RouteRequestExtType ]:? hapi.hapi.RouteExtObject | std.Array<hapi.hapi.RouteExtObject>}
-    */ typings.hapi.hapiStrings.RouteOptions with js.Any
-  ] = js.undefined
+  var ext: js.UndefOr[keyinRouteRequestExtTypeR] = js.undefined
   /**
     * Default value: { relativeTo: '.' }.
     * Defines the behavior for accessing files:
@@ -229,9 +226,7 @@ object RouteOptions {
     compression: Dictionary[RouteCompressionEncoderSettings] = null,
     cors: Boolean | RouteOptionsCors = null,
     description: String = null,
-    ext: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in hapi.hapi.RouteRequestExtType ]:? hapi.hapi.RouteExtObject | std.Array<hapi.hapi.RouteExtObject>}
-    */ typings.hapi.hapiStrings.RouteOptions with js.Any = null,
+    ext: keyinRouteRequestExtTypeR = null,
     files: AnonRelativeTo = null,
     handler: Method | js.Object = null,
     id: String = null,

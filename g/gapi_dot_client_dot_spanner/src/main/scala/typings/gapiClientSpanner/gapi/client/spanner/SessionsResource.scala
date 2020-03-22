@@ -2,9 +2,9 @@ package typings.gapiClientSpanner.gapi.client.spanner
 
 import typings.gapiClient.gapi.client.Request_
 import typings.gapiClientSpanner.AnonAccesstoken
-import typings.gapiClientSpanner.AnonAccesstokenAltBearertokenCallback
-import typings.gapiClientSpanner.AnonAccesstokenAltBearertokenCallbackDatabase
-import typings.gapiClientSpanner.AnonAccesstokenAltBearertokenCallbackDatabaseFields
+import typings.gapiClientSpanner.AnonCallback
+import typings.gapiClientSpanner.AnonDatabase
+import typings.gapiClientSpanner.AnonFields
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ trait SessionsResource extends js.Object {
     * Commit can begin a new transaction as a
     * side-effect.
     */
-  def beginTransaction(request: AnonAccesstokenAltBearertokenCallback): Request_[Transaction]
+  def beginTransaction(request: AnonCallback): Request_[Transaction]
   /**
     * Commits a transaction. The request includes the mutations to be
     * applied to rows in the database.
@@ -27,7 +27,7 @@ trait SessionsResource extends js.Object {
     * reasons. If `Commit` returns `ABORTED`, the caller should re-attempt
     * the transaction from the beginning, re-using the same session.
     */
-  def commit(request: AnonAccesstokenAltBearertokenCallback): Request_[CommitResponse]
+  def commit(request: AnonCallback): Request_[CommitResponse]
   /**
     * Creates a new session. A session can be used to perform
     * transactions that read and/or modify data in a Cloud Spanner database.
@@ -49,7 +49,7 @@ trait SessionsResource extends js.Object {
     * Idle sessions can be kept alive by sending a trivial SQL query
     * periodically, e.g., `"SELECT 1"`.
     */
-  def create(request: AnonAccesstokenAltBearertokenCallbackDatabase): Request_[Session]
+  def create(request: AnonDatabase): Request_[Session]
   /** Ends a session, releasing server resources associated with it. */
   def delete(request: AnonAccesstoken): Request_[js.Object]
   /**
@@ -65,7 +65,7 @@ trait SessionsResource extends js.Object {
     * Larger result sets can be fetched in streaming fashion by calling
     * ExecuteStreamingSql instead.
     */
-  def executeSql(request: AnonAccesstokenAltBearertokenCallback): Request_[ResultSet]
+  def executeSql(request: AnonCallback): Request_[ResultSet]
   /**
     * Like ExecuteSql, except returns the result
     * set as a stream. Unlike ExecuteSql, there
@@ -73,7 +73,7 @@ trait SessionsResource extends js.Object {
     * individual row in the result set can exceed 100 MiB, and no
     * column value can exceed 10 MiB.
     */
-  def executeStreamingSql(request: AnonAccesstokenAltBearertokenCallback): Request_[PartialResultSet]
+  def executeStreamingSql(request: AnonCallback): Request_[PartialResultSet]
   /**
     * Gets a session. Returns `NOT_FOUND` if the session does not exist.
     * This is mainly useful for determining whether a session is still
@@ -81,7 +81,7 @@ trait SessionsResource extends js.Object {
     */
   def get(request: AnonAccesstoken): Request_[Session]
   /** Lists all sessions in a given database. */
-  def list(request: AnonAccesstokenAltBearertokenCallbackDatabaseFields): Request_[ListSessionsResponse]
+  def list(request: AnonFields): Request_[ListSessionsResponse]
   /**
     * Reads rows from the database using key lookups and scans, as a
     * simple key/value style alternative to
@@ -97,7 +97,7 @@ trait SessionsResource extends js.Object {
     * Larger result sets can be yielded in streaming fashion by calling
     * StreamingRead instead.
     */
-  def read(request: AnonAccesstokenAltBearertokenCallback): Request_[ResultSet]
+  def read(request: AnonCallback): Request_[ResultSet]
   /**
     * Rolls back a transaction, releasing any locks it holds. It is a good
     * idea to call this for any transaction that includes one or more
@@ -108,7 +108,7 @@ trait SessionsResource extends js.Object {
     * transaction was already aborted, or the transaction is not
     * found. `Rollback` never returns `ABORTED`.
     */
-  def rollback(request: AnonAccesstokenAltBearertokenCallback): Request_[js.Object]
+  def rollback(request: AnonCallback): Request_[js.Object]
   /**
     * Like Read, except returns the result set as a
     * stream. Unlike Read, there is no limit on the
@@ -116,23 +116,23 @@ trait SessionsResource extends js.Object {
     * the result set can exceed 100 MiB, and no column value can exceed
     * 10 MiB.
     */
-  def streamingRead(request: AnonAccesstokenAltBearertokenCallback): Request_[PartialResultSet]
+  def streamingRead(request: AnonCallback): Request_[PartialResultSet]
 }
 
 object SessionsResource {
   @scala.inline
   def apply(
-    beginTransaction: AnonAccesstokenAltBearertokenCallback => Request_[Transaction],
-    commit: AnonAccesstokenAltBearertokenCallback => Request_[CommitResponse],
-    create: AnonAccesstokenAltBearertokenCallbackDatabase => Request_[Session],
+    beginTransaction: AnonCallback => Request_[Transaction],
+    commit: AnonCallback => Request_[CommitResponse],
+    create: AnonDatabase => Request_[Session],
     delete: AnonAccesstoken => Request_[js.Object],
-    executeSql: AnonAccesstokenAltBearertokenCallback => Request_[ResultSet],
-    executeStreamingSql: AnonAccesstokenAltBearertokenCallback => Request_[PartialResultSet],
+    executeSql: AnonCallback => Request_[ResultSet],
+    executeStreamingSql: AnonCallback => Request_[PartialResultSet],
     get: AnonAccesstoken => Request_[Session],
-    list: AnonAccesstokenAltBearertokenCallbackDatabaseFields => Request_[ListSessionsResponse],
-    read: AnonAccesstokenAltBearertokenCallback => Request_[ResultSet],
-    rollback: AnonAccesstokenAltBearertokenCallback => Request_[js.Object],
-    streamingRead: AnonAccesstokenAltBearertokenCallback => Request_[PartialResultSet]
+    list: AnonFields => Request_[ListSessionsResponse],
+    read: AnonCallback => Request_[ResultSet],
+    rollback: AnonCallback => Request_[js.Object],
+    streamingRead: AnonCallback => Request_[PartialResultSet]
   ): SessionsResource = {
     val __obj = js.Dynamic.literal(beginTransaction = js.Any.fromFunction1(beginTransaction), commit = js.Any.fromFunction1(commit), create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), executeSql = js.Any.fromFunction1(executeSql), executeStreamingSql = js.Any.fromFunction1(executeStreamingSql), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), read = js.Any.fromFunction1(read), rollback = js.Any.fromFunction1(rollback), streamingRead = js.Any.fromFunction1(streamingRead))
   

@@ -1,7 +1,6 @@
 package typings.syntaxError
 
 import typings.acorn.mod.Options
-import typings.std.SyntaxError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,8 +16,8 @@ object mod extends js.Object {
     * Options will be passed through to acorn-node. acorn-node defaults to options
     * that match the most recent Node versions.
     */
-  def apply(src: js.Any): js.UndefOr[SyntaxError with AnonAnnotated] = js.native
-  def apply(src: js.Any, file: String): js.UndefOr[SyntaxError with AnonAnnotated] = js.native
-  def apply(src: js.Any, file: String, opts: Options): js.UndefOr[SyntaxError with AnonAnnotated] = js.native
+  def apply(src: js.Any): js.UndefOr[SyntaxErrorlinenumbercolu] = js.native
+  def apply(src: js.Any, file: String): js.UndefOr[SyntaxErrorlinenumbercolu] = js.native
+  def apply(src: js.Any, file: String, opts: Options): js.UndefOr[SyntaxErrorlinenumbercolu] = js.native
 }
 

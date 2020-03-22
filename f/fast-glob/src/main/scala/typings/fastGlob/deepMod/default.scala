@@ -1,10 +1,8 @@
 package typings.fastGlob.deepMod
 
-import typings.fastGlob.entriesMod.EntryItem
-import typings.fastGlob.optionsMod.IOptions
-import typings.fastGlob.patternsMod.Pattern
-import typings.micromatch.mod.Options
-import typings.mrmlncReaddirEnhanced.mod.FilterFunction
+import typings.fastGlob.typesMod.EntryFilterFunction
+import typings.fastGlob.typesMod.MicromatchOptions
+import typings.fastGlob.typesMod.Pattern
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,55 +10,28 @@ import scala.scalajs.js.annotation._
 @JSImport("fast-glob/out/providers/filters/deep", JSImport.Default)
 @js.native
 class default protected () extends DeepFilter {
-  def this(options: IOptions[EntryItem], micromatchOptions: Options) = this()
-  /**
-    * Returns «true» for directory that should be read.
-    */
+  def this(_settings: typings.fastGlob.settingsMod.default, _micromatchOptions: MicromatchOptions) = this()
   /* CompleteClass */
-  override var filter: js.Any = js.native
-  /**
-    * Returns max depth of the provided patterns.
-    */
+  override var _filter: js.Any = js.native
   /* CompleteClass */
-  override var getMaxPatternDepth: js.Any = js.native
-  /**
-    * Returns RegExp's for patterns that can affect the depth of reading.
-    */
+  override var _getEntryLevel: js.Any = js.native
   /* CompleteClass */
-  override var getNegativePatternsRe: js.Any = js.native
-  /**
-    * Returns «true» when the «deep» option is disabled or number and depth of the entry is greater that the option value.
-    */
+  override var _getMatcher: js.Any = js.native
   /* CompleteClass */
-  override var isSkippedByDeepOption: js.Any = js.native
-  /**
-    * Returns «true» when depth parameter is not an Infinity and entry depth greater that the parameter value.
-    */
+  override var _getNegativePatternsRe: js.Any = js.native
   /* CompleteClass */
-  override var isSkippedByMaxPatternDepth: js.Any = js.native
-  /**
-    * Returns «true» for a directory whose path math to any negative pattern.
-    */
+  override var _isSkippedByDeep: js.Any = js.native
   /* CompleteClass */
-  override var isSkippedByNegativePatterns: js.Any = js.native
-  /**
-    * Returns «true» for a directory whose name starts with a period if «dot» option is disabled.
-    */
+  override var _isSkippedByNegativePatterns: js.Any = js.native
   /* CompleteClass */
-  override var isSkippedDotDirectory: js.Any = js.native
-  /**
-    * Returns «true» for symlinked directory if the «followSymlinkedDirectories» option is disabled.
-    */
+  override var _isSkippedByPositivePatterns: js.Any = js.native
   /* CompleteClass */
-  override var isSkippedSymlinkedDirectory: js.Any = js.native
+  override var _isSkippedSymbolicLink: js.Any = js.native
   /* CompleteClass */
-  override val micromatchOptions: js.Any = js.native
+  override val _micromatchOptions: js.Any = js.native
   /* CompleteClass */
-  override val options: js.Any = js.native
-  /**
-    * Returns filter for directories.
-    */
+  override val _settings: js.Any = js.native
   /* CompleteClass */
-  override def getFilter(positive: js.Array[Pattern], negative: js.Array[Pattern]): FilterFunction = js.native
+  override def getFilter(basePath: String, positive: js.Array[Pattern], negative: js.Array[Pattern]): EntryFilterFunction = js.native
 }
 

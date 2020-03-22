@@ -1,7 +1,7 @@
 package typings.firefoxWebextBrowser.browser.webRequest
 
 import org.scalablytyped.runtime.TopLevel
-import typings.firefoxWebextBrowser.AnonCookieStoreIdDocumentUrlFrameIdFromCacheIncognitoIp
+import typings.firefoxWebextBrowser.AnonOriginUrl
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,9 +10,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("browser.webRequest.onCompleted")
 @js.native
 object onCompleted
-  extends TopLevel[
-      WebRequestOnCompletedEvent[
-        js.Function1[/* details */ AnonCookieStoreIdDocumentUrlFrameIdFromCacheIncognitoIp, Unit]
-      ]
-    ]
+  extends TopLevel[WebRequestOnCompletedEvent[js.Function1[/* details */ AnonOriginUrl, Unit]]]
 

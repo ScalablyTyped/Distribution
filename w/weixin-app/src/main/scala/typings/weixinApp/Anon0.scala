@@ -1,21 +1,19 @@
 package typings.weixinApp
 
-import typings.weixinApp.weixinAppNumbers.`-90`
-import typings.weixinApp.weixinAppNumbers.`0`
-import typings.weixinApp.weixinAppNumbers.`90`
+import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon0 extends js.Object {
-  var direction: `0` | `90` | `-90`
+  var data: js.UndefOr[(Record[String, _]) | String] = js.undefined
 }
 
 object Anon0 {
   @scala.inline
-  def apply(direction: `0` | `90` | `-90`): Anon0 = {
-    val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any])
-  
+  def apply(data: (Record[String, _]) | String = null): Anon0 = {
+    val __obj = js.Dynamic.literal()
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon0]
   }
 }

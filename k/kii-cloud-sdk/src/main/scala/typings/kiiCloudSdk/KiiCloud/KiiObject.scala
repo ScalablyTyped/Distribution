@@ -1,11 +1,9 @@
 package typings.kiiCloudSdk.KiiCloud
 
-import typings.kiiCloudSdk.AnonAnErrorStringBodyBlob
-import typings.kiiCloudSdk.AnonAnErrorStringFailureObj
-import typings.kiiCloudSdk.AnonAnErrorStringFailureObjPublishedUrl
-import typings.kiiCloudSdk.AnonAnErrorStringFailureSuccessTheDeletedObject
-import typings.kiiCloudSdk.AnonAnErrorStringFailureSuccessTheObject
-import typings.kiiCloudSdk.AnonAnErrorStringFailureSuccessTheSrcObject
+import typings.kiiCloudSdk.Anon15
+import typings.kiiCloudSdk.Anon16
+import typings.kiiCloudSdk.Anon17
+import typings.kiiCloudSdk.Anon18
 import typings.std.Blob
 import typings.std.Date
 import scala.scalajs.js
@@ -59,7 +57,7 @@ class KiiObject () extends js.Object {
     *     );
     */
   def delete(): js.Promise[KiiObject] = js.native
-  def delete(callbacks: AnonAnErrorStringFailureSuccessTheDeletedObject): js.Promise[KiiObject] = js.native
+  def delete(callbacks: Anon15): js.Promise[KiiObject] = js.native
   /**
     * Delete the object body from the server.<br>
     * If the KiiObject has not saved on the cloud or deleted
@@ -104,7 +102,7 @@ class KiiObject () extends js.Object {
     *     );
     */
   def deleteBody(): js.Promise[KiiObject] = js.native
-  def deleteBody(callbacks: AnonAnErrorStringFailureObj): js.Promise[KiiObject] = js.native
+  def deleteBody(callbacks: Anon15): js.Promise[KiiObject] = js.native
   /**
     * Download body data of this object.<br>
     * If the KiiObject has not saved on the cloud or deleted
@@ -179,7 +177,7 @@ class KiiObject () extends js.Object {
     *     );
     */
   def downloadBody(): js.Promise[js.Tuple2[KiiObject, Blob]] = js.native
-  def downloadBody(callbacks: AnonAnErrorStringBodyBlob): js.Promise[js.Tuple2[KiiObject, Blob]] = js.native
+  def downloadBody(callbacks: Anon17): js.Promise[js.Tuple2[KiiObject, Blob]] = js.native
   /**
     * Gets the value associated with the given key
     *
@@ -306,7 +304,7 @@ class KiiObject () extends js.Object {
     *     );
     */
   def moveBody(targetObjectUri: String): js.Promise[js.Tuple2[KiiObject, String]] = js.native
-  def moveBody(targetObjectUri: String, callbacks: AnonAnErrorStringFailureSuccessTheSrcObject): js.Promise[js.Tuple2[KiiObject, String]] = js.native
+  def moveBody(targetObjectUri: String, callbacks: Anon16): js.Promise[js.Tuple2[KiiObject, String]] = js.native
   /**
     * Get the ACL handle for this file
     *
@@ -383,7 +381,7 @@ class KiiObject () extends js.Object {
     *     );
     */
   def publishBody(): js.Promise[js.Tuple2[KiiObject, String]] = js.native
-  def publishBody(callbacks: AnonAnErrorStringFailureObjPublishedUrl): js.Promise[js.Tuple2[KiiObject, String]] = js.native
+  def publishBody(callbacks: Anon18): js.Promise[js.Tuple2[KiiObject, String]] = js.native
   /**
     * Publish object body with expiration date.<br>
     * Publish object body and obtain public URL links to the body.<br>
@@ -439,7 +437,7 @@ class KiiObject () extends js.Object {
     *     );
     */
   def publishBodyExpiresAt(expiresAt: Date): js.Promise[js.Tuple2[KiiObject, String]] = js.native
-  def publishBodyExpiresAt(expiresAt: Date, callbacks: AnonAnErrorStringFailureObjPublishedUrl): js.Promise[js.Tuple2[KiiObject, String]] = js.native
+  def publishBodyExpiresAt(expiresAt: Date, callbacks: Anon18): js.Promise[js.Tuple2[KiiObject, String]] = js.native
   /**
     * Publish object body with expiration duration.<br>
     * Publish object body and obtain public URL links to the body.<br>
@@ -495,7 +493,7 @@ class KiiObject () extends js.Object {
     *     );
     */
   def publishBodyExpiresIn(expiresIn: Double): js.Promise[js.Tuple2[KiiObject, String]] = js.native
-  def publishBodyExpiresIn(expiresIn: Double, callbacks: AnonAnErrorStringFailureObjPublishedUrl): js.Promise[js.Tuple2[KiiObject, String]] = js.native
+  def publishBodyExpiresIn(expiresIn: Double, callbacks: Anon18): js.Promise[js.Tuple2[KiiObject, String]] = js.native
   /**
     * Updates the local object's data with the user data on the server
     *
@@ -539,7 +537,7 @@ class KiiObject () extends js.Object {
     *     );
     */
   def refresh(): js.Promise[KiiObject] = js.native
-  def refresh(callbacks: AnonAnErrorStringFailureSuccessTheObject): js.Promise[KiiObject] = js.native
+  def refresh(callbacks: Anon15): js.Promise[KiiObject] = js.native
   /**
     * Removes a pair of key/value from this object.
     * This pair is also removed from server when saveAllFields() is succeeded.
@@ -608,8 +606,8 @@ class KiiObject () extends js.Object {
     *     );
     */
   def save(): js.Promise[KiiObject] = js.native
-  def save(callbacks: AnonAnErrorStringFailureSuccessTheObject): js.Promise[KiiObject] = js.native
-  def save(callbacks: AnonAnErrorStringFailureSuccessTheObject, overwrite: Boolean): js.Promise[KiiObject] = js.native
+  def save(callbacks: Anon15): js.Promise[KiiObject] = js.native
+  def save(callbacks: Anon15, overwrite: Boolean): js.Promise[KiiObject] = js.native
   /**
     * Create or update the KiiObject on KiiCloud.
     * <br><br>When call this method for the object that has not saved on cloud, will send all fields.
@@ -666,8 +664,8 @@ class KiiObject () extends js.Object {
     *     );
     */
   def saveAllFields(): js.Promise[KiiObject] = js.native
-  def saveAllFields(callbacks: AnonAnErrorStringFailureSuccessTheObject): js.Promise[KiiObject] = js.native
-  def saveAllFields(callbacks: AnonAnErrorStringFailureSuccessTheObject, overwrite: Boolean): js.Promise[KiiObject] = js.native
+  def saveAllFields(callbacks: Anon15): js.Promise[KiiObject] = js.native
+  def saveAllFields(callbacks: Anon15, overwrite: Boolean): js.Promise[KiiObject] = js.native
   /**
     * Sets a key/value pair to a KiiObject
     *
@@ -778,7 +776,7 @@ class KiiObject () extends js.Object {
     *     );
     */
   def uploadBody(srcDataBlob: Blob): js.Promise[KiiObject] = js.native
-  def uploadBody(srcDataBlob: Blob, callbacks: AnonAnErrorStringFailureObj): js.Promise[KiiObject] = js.native
+  def uploadBody(srcDataBlob: Blob, callbacks: Anon15): js.Promise[KiiObject] = js.native
 }
 
 /* static members */

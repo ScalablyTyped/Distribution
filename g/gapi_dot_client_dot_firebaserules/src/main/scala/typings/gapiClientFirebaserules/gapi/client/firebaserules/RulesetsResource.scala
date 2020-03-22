@@ -2,7 +2,7 @@ package typings.gapiClientFirebaserules.gapi.client.firebaserules
 
 import typings.gapiClient.gapi.client.Request_
 import typings.gapiClientFirebaserules.AnonAccesstoken
-import typings.gapiClientFirebaserules.AnonAccesstokenAltBearertoken
+import typings.gapiClientFirebaserules.AnonBearertoken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,7 +32,7 @@ trait RulesetsResource extends js.Object {
     * The full `Source` contents of a `Ruleset` may be retrieved with
     * GetRuleset.
     */
-  def list(request: AnonAccesstokenAltBearertoken): Request_[ListRulesetsResponse]
+  def list(request: AnonBearertoken): Request_[ListRulesetsResponse]
 }
 
 object RulesetsResource {
@@ -41,7 +41,7 @@ object RulesetsResource {
     create: AnonAccesstoken => Request_[Ruleset],
     delete: AnonAccesstoken => Request_[js.Object],
     get: AnonAccesstoken => Request_[Ruleset],
-    list: AnonAccesstokenAltBearertoken => Request_[ListRulesetsResponse]
+    list: AnonBearertoken => Request_[ListRulesetsResponse]
   ): RulesetsResource = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
   

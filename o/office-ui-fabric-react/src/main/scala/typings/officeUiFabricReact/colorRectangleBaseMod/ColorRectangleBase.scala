@@ -1,10 +1,12 @@
 package typings.officeUiFabricReact.colorRectangleBaseMod
 
+import typings.officeUiFabricReact.PartialIColorRectanglePro
+import typings.officeUiFabricReact.ReadonlyIColorRectanglePr
+import typings.officeUiFabricReact.ReadonlyIColorRectangleSt
 import typings.officeUiFabricReact.colorRectangleTypesMod.IColorRectangle
 import typings.officeUiFabricReact.colorRectangleTypesMod.IColorRectangleProps
 import typings.officeUiFabricReact.interfacesMod.IColor
 import typings.react.mod.Component
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,7 +30,7 @@ class ColorRectangleBase protected ()
   /* CompleteClass */
   override var color: IColor = js.native
   @JSName("componentDidUpdate")
-  def componentDidUpdate_MColorRectangleBase(prevProps: IColorRectangleProps, prevState: IColorRectangleState): Unit = js.native
+  def componentDidUpdate_MColorRectangleBase(prevProps: ReadonlyIColorRectanglePr, prevState: ReadonlyIColorRectangleSt): Unit = js.native
   @JSName("componentWillUnmount")
   def componentWillUnmount_MColorRectangleBase(): Unit = js.native
 }
@@ -37,6 +39,6 @@ class ColorRectangleBase protected ()
 @JSImport("office-ui-fabric-react/lib/components/ColorPicker/ColorRectangle/ColorRectangle.base", "ColorRectangleBase")
 @js.native
 object ColorRectangleBase extends js.Object {
-  var defaultProps: Partial[IColorRectangleProps] = js.native
+  var defaultProps: PartialIColorRectanglePro = js.native
 }
 

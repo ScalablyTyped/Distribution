@@ -1,6 +1,6 @@
 package typings.istanbulLibHook.mod
 
-import typings.std.Partial
+import typings.istanbulLibHook.PartialHookRunInContextOp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object hookRunInContext extends js.Object {
   def apply(matcher: Matcher, transformer: Transformer): Unit = js.native
-  def apply(matcher: Matcher, transformer: Transformer, options: Partial[HookRunInContextOptions]): Unit = js.native
+  def apply(matcher: Matcher, transformer: Transformer, options: PartialHookRunInContextOp): Unit = js.native
 }
 

@@ -1,6 +1,6 @@
 package typings.jsrsasign.jsrsasign.KJUR.asn1.x509
 
-import typings.jsrsasign.Anon_CA
+import typings.jsrsasign.AnonCA_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("jsrsasign.KJUR.asn1.x509.BasicConstraints")
 @js.native
 class BasicConstraints () extends Extension {
-  def this(params: Anon_CA) = this()
+  def this(params: AnonCA_) = this()
   def getExtnValueHex(): String = js.native
 }
 

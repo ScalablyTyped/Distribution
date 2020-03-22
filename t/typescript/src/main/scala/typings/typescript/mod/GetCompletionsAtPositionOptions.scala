@@ -30,7 +30,7 @@ object GetCompletionsAtPositionOptions {
     allowTextChangesInNewFiles: js.UndefOr[Boolean] = js.undefined,
     disableSuggestions: js.UndefOr[Boolean] = js.undefined,
     importModuleSpecifierEnding: minimal | index | js_ = null,
-    importModuleSpecifierPreference: relative | `non-relative` = null,
+    importModuleSpecifierPreference: auto | relative | `non-relative` = null,
     includeAutomaticOptionalChainCompletions: js.UndefOr[Boolean] = js.undefined,
     includeCompletionsForModuleExports: js.UndefOr[Boolean] = js.undefined,
     includeCompletionsWithInsertText: js.UndefOr[Boolean] = js.undefined,

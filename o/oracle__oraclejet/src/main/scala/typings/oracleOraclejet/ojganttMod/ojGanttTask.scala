@@ -1,7 +1,7 @@
 package typings.oracleOraclejet.ojganttMod
 
-import typings.oracleOraclejet.AnonBorderRadiusEnd
-import typings.oracleOraclejet.AnonBorderRadiusHeightSvgClassName
+import typings.oracleOraclejet.AnonEnd
+import typings.oracleOraclejet.AnonValue
 import typings.oracleOraclejet.mod.JetElement
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.mod.JetSetPropertyType
@@ -68,7 +68,6 @@ import typings.oracleOraclejet.oracleOraclejetStrings.labelStyleChanged
 import typings.oracleOraclejet.oracleOraclejetStrings.load
 import typings.oracleOraclejet.oracleOraclejetStrings.loadeddata
 import typings.oracleOraclejet.oracleOraclejetStrings.loadedmetadata
-import typings.oracleOraclejet.oracleOraclejetStrings.loadend
 import typings.oracleOraclejet.oracleOraclejetStrings.loadstart
 import typings.oracleOraclejet.oracleOraclejetStrings.lostpointercapture
 import typings.oracleOraclejet.oracleOraclejetStrings.milestone
@@ -156,14 +155,14 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ojGanttTask extends JetElement[ojGanttTaskSettableProperties] {
-  var baseline: AnonBorderRadiusEnd = js.native
+  var baseline: AnonEnd = js.native
   var borderRadius: String = js.native
   var end: String = js.native
   var height: Double | Null = js.native
   var label: String = js.native
   var labelPosition: start | innerCenter | innerStart | innerEnd | end | none = js.native
   var labelStyle: js.Object = js.native
-  var onBaselineChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonBorderRadiusEnd], _]) | Null = js.native
+  var onBaselineChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonEnd], _]) | Null = js.native
   var onBorderRadiusChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
   var onEndChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
   var onHeightChanged: (js.Function1[/* event */ JetElementCustomEvent[Double | Null], _]) | Null = js.native
@@ -178,7 +177,7 @@ trait ojGanttTask extends JetElement[ojGanttTaskSettableProperties] {
     ], 
     _
   ]) | Null = js.native
-  var onProgressChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonBorderRadiusHeightSvgClassName], _]) | Null = js.native
+  var onProgressChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonValue], _]) | Null = js.native
   var onRowIdChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[_]], _]) | Null = js.native
   var onShortDescChanged: (js.Function1[/* event */ JetElementCustomEvent[String | Null], _]) | Null = js.native
   var onStartChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
@@ -190,7 +189,7 @@ trait ojGanttTask extends JetElement[ojGanttTaskSettableProperties] {
     _
   ]) | Null = js.native
   var onTypeChanged: (js.Function1[/* event */ JetElementCustomEvent[normal | milestone | summary | auto], _]) | Null = js.native
-  var progress: AnonBorderRadiusHeightSvgClassName = js.native
+  var progress: AnonValue = js.native
   var rowId: js.UndefOr[js.Any] = js.native
   var shortDesc: String | Null = js.native
   var start: String = js.native
@@ -336,12 +335,12 @@ trait ojGanttTask extends JetElement[ojGanttTaskSettableProperties] {
   @JSName("addEventListener")
   def addEventListener_baselineChanged(
     `type`: baselineChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonBorderRadiusEnd], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonEnd], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_baselineChanged(
     `type`: baselineChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonBorderRadiusEnd], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonEnd], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -696,17 +695,6 @@ trait ojGanttTask extends JetElement[ojGanttTaskSettableProperties] {
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_loadend(
-    `type`: loadend,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent[EventTarget], _]
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_loadend(
-    `type`: loadend,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent[EventTarget], _],
-    useCapture: Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
   def addEventListener_loadstart(`type`: loadstart, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event_, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_loadstart(
@@ -894,20 +882,12 @@ trait ojGanttTask extends JetElement[ojGanttTaskSettableProperties] {
   @JSName("addEventListener")
   def addEventListener_progressChanged(
     `type`: progressChanged,
-    listener: js.ThisFunction1[
-      /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[AnonBorderRadiusHeightSvgClassName], 
-      _
-    ]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonValue], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_progressChanged(
     `type`: progressChanged,
-    listener: js.ThisFunction1[
-      /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[AnonBorderRadiusHeightSvgClassName], 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonValue], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -1179,7 +1159,7 @@ trait ojGanttTask extends JetElement[ojGanttTaskSettableProperties] {
   ): Unit = js.native
   def getProperty(property: String): js.Any = js.native
   @JSName("getProperty")
-  def getProperty_baseline(property: baseline): AnonBorderRadiusEnd = js.native
+  def getProperty_baseline(property: baseline): AnonEnd = js.native
   @JSName("getProperty")
   def getProperty_borderRadius(property: borderRadius): String = js.native
   @JSName("getProperty")
@@ -1193,7 +1173,7 @@ trait ojGanttTask extends JetElement[ojGanttTaskSettableProperties] {
   @JSName("getProperty")
   def getProperty_labelStyle(property: labelStyle): /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojgantt.ojGanttTask['labelStyle'] */ js.Any = js.native
   @JSName("getProperty")
-  def getProperty_progress(property: progress): AnonBorderRadiusHeightSvgClassName = js.native
+  def getProperty_progress(property: progress): AnonValue = js.native
   @JSName("getProperty")
   def getProperty_rowId(property: rowId): js.UndefOr[js.Any] = js.native
   @JSName("getProperty")
@@ -1219,7 +1199,7 @@ trait ojGanttTask extends JetElement[ojGanttTaskSettableProperties] {
   def setProperty(property: labelPosition, value: start): Unit = js.native
   def setProperty[T /* <: String */](property: T, value: JetSetPropertyType[T, ojGanttTaskSettableProperties]): Unit = js.native
   @JSName("setProperty")
-  def setProperty_baseline(property: baseline, value: AnonBorderRadiusEnd): Unit = js.native
+  def setProperty_baseline(property: baseline, value: AnonEnd): Unit = js.native
   @JSName("setProperty")
   def setProperty_borderRadius(property: borderRadius, value: String): Unit = js.native
   @JSName("setProperty")
@@ -1233,7 +1213,7 @@ trait ojGanttTask extends JetElement[ojGanttTaskSettableProperties] {
   @JSName("setProperty")
   def setProperty_labelStyle(property: labelStyle, value: js.Object): Unit = js.native
   @JSName("setProperty")
-  def setProperty_progress(property: progress, value: AnonBorderRadiusHeightSvgClassName): Unit = js.native
+  def setProperty_progress(property: progress, value: AnonValue): Unit = js.native
   @JSName("setProperty")
   def setProperty_rowId(property: rowId, value: js.Any): Unit = js.native
   @JSName("setProperty")

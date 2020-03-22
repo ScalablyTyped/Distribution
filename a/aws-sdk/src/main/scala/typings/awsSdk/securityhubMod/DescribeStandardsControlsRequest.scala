@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DescribeStandardsControlsRequest extends js.Object {
   /**
-    * The maximum number of compliance standard controls to return.
+    * The maximum number of security standard controls to return.
     */
   var MaxResults: js.UndefOr[typings.awsSdk.securityhubMod.MaxResults] = js.native
   /**

@@ -3,7 +3,6 @@ package typings.jose.mod.JWK
 import typings.jose.joseBooleans.`false`
 import typings.jose.joseBooleans.`true`
 import typings.jose.joseStrings.oct
-import typings.jose.joseStrings.secret
 import typings.jose.mod.JWKOctKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,17 +10,38 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait OctKey extends Key {
-  var k: js.UndefOr[String] = js.native
+  @JSName("crv")
+  val crv_OctKey: js.UndefOr[scala.Nothing] = js.native
+  @JSName("d")
+  val d_OctKey: js.UndefOr[scala.Nothing] = js.native
+  @JSName("dp")
+  val dp_OctKey: js.UndefOr[scala.Nothing] = js.native
+  @JSName("dq")
+  val dq_OctKey: js.UndefOr[scala.Nothing] = js.native
+  @JSName("e")
+  val e_OctKey: js.UndefOr[scala.Nothing] = js.native
   @JSName("kty")
-  var kty_OctKey: oct = js.native
+  val kty_OctKey: oct = js.native
+  @JSName("n")
+  val n_OctKey: js.UndefOr[scala.Nothing] = js.native
+  @JSName("p")
+  val p_OctKey: js.UndefOr[scala.Nothing] = js.native
   @JSName("private")
-  var private_OctKey: `false` = js.native
+  val private_OctKey: `false` = js.native
   @JSName("public")
-  var public_OctKey: `false` = js.native
+  val public_OctKey: `false` = js.native
+  @JSName("q")
+  val q_OctKey: js.UndefOr[scala.Nothing] = js.native
+  @JSName("qi")
+  val qi_OctKey: js.UndefOr[scala.Nothing] = js.native
   @JSName("secret")
-  var secret_OctKey: `true` = js.native
+  val secret_OctKey: `true` = js.native
   @JSName("type")
-  var type_OctKey: secret = js.native
+  val type_OctKey: typings.jose.joseStrings.secret = js.native
+  @JSName("x")
+  val x_OctKey: js.UndefOr[scala.Nothing] = js.native
+  @JSName("y")
+  val y_OctKey: js.UndefOr[scala.Nothing] = js.native
   def toJWK(): JWKOctKey = js.native
   def toJWK(`private`: Boolean): JWKOctKey = js.native
 }

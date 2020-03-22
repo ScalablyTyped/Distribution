@@ -1,6 +1,6 @@
 package typings.jsplumb.mod
 
-import typings.jsplumb.AnonConn
+import typings.jsplumb.AnonEach
 import typings.jsplumb.jsplumbStrings.click
 import typings.jsplumb.jsplumbStrings.connection
 import typings.std.Element
@@ -68,7 +68,7 @@ class jsPlumbInstance () extends js.Object {
   def empty(el: Selector | String): Unit = js.native
   def empty(el: Element): Unit = js.native
   def fire(event: String, value: js.Object, originalEvent: Event_): Unit = js.native
-  def getAllConnections(): js.Object = js.native
+  def getAllConnections(): js.Array[Connection] = js.native
   def getConnections(scope: String, options: js.Object): js.Array[_] | (Map[_, _]) = js.native
   def getConnections(scope: String, options: js.Object, scope2: String): js.Array[_] | (Map[_, _]) = js.native
   def getConnections(scope: String, options: js.Object, scope2: String, source: Selector | String): js.Array[_] | (Map[_, _]) = js.native
@@ -212,18 +212,18 @@ class jsPlumbInstance () extends js.Object {
   def restoreDefaults(): jsPlumbInstance = js.native
   def revalidate(el: Selector | String): Unit = js.native
   def revalidate(el: Element): Unit = js.native
-  def select(): AnonConn = js.native
-  def select(params: js.Object): AnonConn = js.native
-  def select(params: js.Object, scope: String): AnonConn = js.native
-  def select(params: js.Object, scope: String, source: String): AnonConn = js.native
-  def select(params: js.Object, scope: String, source: String, target: String): AnonConn = js.native
+  def select(): AnonEach = js.native
+  def select(params: js.Object): AnonEach = js.native
+  def select(params: js.Object, scope: String): AnonEach = js.native
+  def select(params: js.Object, scope: String, source: String): AnonEach = js.native
+  def select(params: js.Object, scope: String, source: String, target: String): AnonEach = js.native
   def select(
     params: js.Object,
     scope: String,
     source: String,
     target: String,
     connections: js.Array[Connection]
-  ): AnonConn = js.native
+  ): AnonEach = js.native
   def setContainer(el: Selector | String): Unit = js.native
   def setContainer(el: Element): Unit = js.native
   def setDefaultScope(scope: String): jsPlumbInstance = js.native

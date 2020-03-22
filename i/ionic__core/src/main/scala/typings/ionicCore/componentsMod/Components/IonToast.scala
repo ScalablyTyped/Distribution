@@ -1,12 +1,12 @@
 package typings.ionicCore.componentsMod.Components
 
+import typings.ionicCore.animationInterfaceMod.AnimationBuilder
 import typings.ionicCore.ionicCoreStrings.bottom
 import typings.ionicCore.ionicCoreStrings.ios
 import typings.ionicCore.ionicCoreStrings.md
 import typings.ionicCore.ionicCoreStrings.middle
 import typings.ionicCore.ionicCoreStrings.top
 import typings.ionicCore.mod.Color
-import typings.ionicCore.oldAnimationAnimationInterfaceMod.AnimationBuilder
 import typings.ionicCore.overlaysInterfaceMod.OverlayEventDetail
 import typings.ionicCore.toastInterfaceMod.ToastButton
 import scala.scalajs.js
@@ -23,10 +23,6 @@ trait IonToast extends js.Object {
     * An array of buttons for the toast.
     */
   var buttons: js.UndefOr[js.Array[ToastButton | String]] = js.native
-  /**
-    * @deprecated Use `buttons` instead. Text to display in the close button.
-    */
-  var closeButtonText: js.UndefOr[String] = js.native
   /**
     * The color to use from your application's color palette. Default options are: `"primary"`, `"secondary"`, `"tertiary"`, `"success"`, `"warning"`, `"danger"`, `"light"`, `"medium"`, and `"dark"`. For more information on colors, see [theming](/docs/theming/basics).
     */
@@ -68,10 +64,6 @@ trait IonToast extends js.Object {
     * The position of the toast on the screen.
     */
   var position: top | bottom | middle = js.native
-  /**
-    * @deprecated Use `buttons` instead. If `true`, the close button will be displayed.
-    */
-  var showCloseButton: Boolean = js.native
   /**
     * If `true`, the toast will be translucent. Only applies when the mode is `"ios"` and the device supports [`backdrop-filter`](https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter#Browser_compatibility).
     */

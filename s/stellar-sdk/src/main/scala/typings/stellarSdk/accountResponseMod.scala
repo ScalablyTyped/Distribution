@@ -21,8 +21,7 @@ import scala.scalajs.js.annotation._
 @JSImport("stellar-sdk/lib/account_response", JSImport.Namespace)
 @js.native
 object accountResponseMod extends js.Object {
-  /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped stellar-sdk.stellar-sdk/lib/server_api.ServerApi.AccountRecord extends any ? std.Pick<stellar-sdk.stellar-sdk/lib/server_api.ServerApi.AccountRecord, utility-types.utility-types/dist/mapped-types.SetComplement<keyof stellar-sdk.stellar-sdk/lib/server_api.ServerApi.AccountRecord, '_links'>> : never */ @js.native
+  @js.native
   class AccountResponse protected () extends js.Object {
     def this(response: AccountRecord) = this()
     val _baseAccount: js.Any = js.native

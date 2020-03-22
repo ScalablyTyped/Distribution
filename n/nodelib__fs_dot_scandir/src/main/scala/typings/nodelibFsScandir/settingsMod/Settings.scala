@@ -10,7 +10,7 @@ trait Settings extends js.Object {
   val _options: js.Any
   val followSymbolicLinks: Boolean
   val fs: FileSystemAdapter
-  val fsStatSettings: Settings
+  val fsStatSettings: typings.nodelibFsStat.mod.Settings
   val pathSegmentSeparator: String
   val stats: Boolean
   val throwErrorOnBrokenSymbolicLink: Boolean
@@ -23,7 +23,7 @@ object Settings {
     _options: js.Any,
     followSymbolicLinks: Boolean,
     fs: FileSystemAdapter,
-    fsStatSettings: Settings,
+    fsStatSettings: typings.nodelibFsStat.mod.Settings,
     pathSegmentSeparator: String,
     stats: Boolean,
     throwErrorOnBrokenSymbolicLink: Boolean

@@ -11,7 +11,7 @@ trait DescribeSSLPoliciesOutput extends js.Object {
     */
   var NextMarker: js.UndefOr[Marker] = js.native
   /**
-    * Information about the policies.
+    * Information about the security policies.
     */
   var SslPolicies: js.UndefOr[typings.awsSdk.elbv2Mod.SslPolicies] = js.native
 }

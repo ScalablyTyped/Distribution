@@ -1,14 +1,14 @@
 package typings.xummApi.mod
 
-import typings.xummApi.Anon0
 import typings.xummApi.AnonAccount
 import typings.xummApi.AnonCreatedat
+import typings.xummApi.AnonDescription
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait XummGetPayloadResponse extends js.Object {
-  var application: Anon0
+  var application: AnonDescription
   var custom_meta: XummCustomMeta
   var meta: XummPayloadMeta
   var payload: AnonCreatedat
@@ -18,7 +18,7 @@ trait XummGetPayloadResponse extends js.Object {
 object XummGetPayloadResponse {
   @scala.inline
   def apply(
-    application: Anon0,
+    application: AnonDescription,
     custom_meta: XummCustomMeta,
     meta: XummPayloadMeta,
     payload: AnonCreatedat,

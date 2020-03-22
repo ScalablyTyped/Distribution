@@ -23,6 +23,10 @@ trait ScalingPolicy extends js.Object {
     */
   var Cooldown: js.UndefOr[typings.awsSdk.autoscalingMod.Cooldown] = js.native
   /**
+    * Indicates whether the policy is enabled (true) or disabled (false).
+    */
+  var Enabled: js.UndefOr[ScalingPolicyEnabled] = js.native
+  /**
     * The estimated time, in seconds, until a newly launched instance can contribute to the CloudWatch metrics.
     */
   var EstimatedInstanceWarmup: js.UndefOr[typings.awsSdk.autoscalingMod.EstimatedInstanceWarmup] = js.native
@@ -71,6 +75,7 @@ object ScalingPolicy {
     Alarms: Alarms = null,
     AutoScalingGroupName: XmlStringMaxLen255 = null,
     Cooldown: Int | Double = null,
+    Enabled: js.UndefOr[Boolean] = js.undefined,
     EstimatedInstanceWarmup: Int | Double = null,
     MetricAggregationType: XmlStringMaxLen32 = null,
     MinAdjustmentMagnitude: Int | Double = null,
@@ -87,6 +92,7 @@ object ScalingPolicy {
     if (Alarms != null) __obj.updateDynamic("Alarms")(Alarms.asInstanceOf[js.Any])
     if (AutoScalingGroupName != null) __obj.updateDynamic("AutoScalingGroupName")(AutoScalingGroupName.asInstanceOf[js.Any])
     if (Cooldown != null) __obj.updateDynamic("Cooldown")(Cooldown.asInstanceOf[js.Any])
+    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.asInstanceOf[js.Any])
     if (EstimatedInstanceWarmup != null) __obj.updateDynamic("EstimatedInstanceWarmup")(EstimatedInstanceWarmup.asInstanceOf[js.Any])
     if (MetricAggregationType != null) __obj.updateDynamic("MetricAggregationType")(MetricAggregationType.asInstanceOf[js.Any])
     if (MinAdjustmentMagnitude != null) __obj.updateDynamic("MinAdjustmentMagnitude")(MinAdjustmentMagnitude.asInstanceOf[js.Any])

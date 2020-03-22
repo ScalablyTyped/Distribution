@@ -4,16 +4,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ButtonProps extends js.Object {
-  var containsIcon: js.UndefOr[Boolean] = js.undefined
-  var disabled: js.UndefOr[Boolean] = js.undefined
-  var inForm: js.UndefOr[Boolean] = js.undefined
-  var isLink: js.UndefOr[Boolean] = js.undefined
-  var outline: js.UndefOr[Boolean] = js.undefined
-  var primary: js.UndefOr[Boolean] = js.undefined
-  var secondary: js.UndefOr[Boolean] = js.undefined
-  var small: js.UndefOr[Boolean] = js.undefined
-  var tertiary: js.UndefOr[Boolean] = js.undefined
+  var containsIcon: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.native
+  var inForm: js.UndefOr[Boolean] = js.native
+  var isLink: js.UndefOr[Boolean] = js.native
+  var outline: js.UndefOr[Boolean] = js.native
+  var primary: js.UndefOr[Boolean] = js.native
+  var secondary: js.UndefOr[Boolean] = js.native
+  var small: js.UndefOr[Boolean] = js.native
+  var tertiary: js.UndefOr[Boolean] = js.native
 }
 
 object ButtonProps {

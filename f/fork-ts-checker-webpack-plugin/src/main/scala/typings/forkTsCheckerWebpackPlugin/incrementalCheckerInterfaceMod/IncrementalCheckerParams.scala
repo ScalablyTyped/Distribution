@@ -1,12 +1,12 @@
 package typings.forkTsCheckerWebpackPlugin.incrementalCheckerInterfaceMod
 
-import typings.forkTsCheckerWebpackPlugin.AnonFilepath
+import typings.forkTsCheckerWebpackPlugin.AnonGetReport
 import typings.forkTsCheckerWebpackPlugin.Typeofts
-import typings.forkTsCheckerWebpackPlugin.normalizedMessageMod.NormalizedMessage
+import typings.forkTsCheckerWebpackPlugin.resolutionMod.ResolveModuleName
+import typings.forkTsCheckerWebpackPlugin.resolutionMod.ResolveTypeReferenceDirective
+import typings.forkTsCheckerWebpackPlugin.vueOptionsMod.VueOptions
 import typings.std.ReturnType
-import typings.tslint.mod.RuleFailure
 import typings.typescript.mod.CompilerOptions
-import typings.typescript.mod.Diagnostic
 import typings.typescript.mod.ModuleResolutionHost
 import typings.typescript.mod.ResolvedModuleWithFailedLookupLocations
 import typings.typescript.mod.ResolvedTypeReferenceDirectiveWithFailedLookupLocations
@@ -14,11 +14,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IncrementalCheckerParams extends ApiIncrementalCheckerParams {
-  var vue: Boolean
-  var watchPaths: js.Array[String]
-  var workDivision: Double
-  var workNumber: Double
+trait IncrementalCheckerParams extends js.Object {
+  var checkSyntacticErrors: Boolean
+  var compilerOptions: CompilerOptions
+  var context: String
+  var eslinter: js.UndefOr[ReturnType[js.Function1[/* eslintOptions */ js.Object, AnonGetReport]]] = js.undefined
+  var programConfigFile: String
+  var resolveModuleName: js.UndefOr[ResolveModuleName] = js.undefined
+  var resolveTypeReferenceDirective: js.UndefOr[ResolveTypeReferenceDirective] = js.undefined
+  var typescript: Typeofts
+  var vue: VueOptions
 }
 
 object IncrementalCheckerParams {
@@ -27,21 +32,14 @@ object IncrementalCheckerParams {
     checkSyntacticErrors: Boolean,
     compilerOptions: CompilerOptions,
     context: String,
-    createNormalizedMessageFromDiagnostic: Diagnostic => NormalizedMessage,
-    createNormalizedMessageFromRuleFailure: RuleFailure => NormalizedMessage,
-    linterAutoFix: Boolean,
-    linterConfigFile: String | Boolean,
     programConfigFile: String,
     typescript: Typeofts,
-    vue: Boolean,
-    watchPaths: js.Array[String],
-    workDivision: Double,
-    workNumber: Double,
-    eslinter: ReturnType[js.Function1[/* eslintOptions */ js.Object, AnonFilepath]] = null,
+    vue: VueOptions,
+    eslinter: ReturnType[js.Function1[/* eslintOptions */ js.Object, AnonGetReport]] = null,
     resolveModuleName: (/* typescript */ Typeofts, /* moduleName */ String, /* containingFile */ String, /* compilerOptions */ CompilerOptions, /* moduleResolutionHost */ ModuleResolutionHost) => ResolvedModuleWithFailedLookupLocations = null,
     resolveTypeReferenceDirective: (/* typescript */ Typeofts, /* typeDirectiveName */ String, /* containingFile */ String, /* compilerOptions */ CompilerOptions, /* moduleResolutionHost */ ModuleResolutionHost) => ResolvedTypeReferenceDirectiveWithFailedLookupLocations = null
   ): IncrementalCheckerParams = {
-    val __obj = js.Dynamic.literal(checkSyntacticErrors = checkSyntacticErrors.asInstanceOf[js.Any], compilerOptions = compilerOptions.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], createNormalizedMessageFromDiagnostic = js.Any.fromFunction1(createNormalizedMessageFromDiagnostic), createNormalizedMessageFromRuleFailure = js.Any.fromFunction1(createNormalizedMessageFromRuleFailure), linterAutoFix = linterAutoFix.asInstanceOf[js.Any], linterConfigFile = linterConfigFile.asInstanceOf[js.Any], programConfigFile = programConfigFile.asInstanceOf[js.Any], typescript = typescript.asInstanceOf[js.Any], vue = vue.asInstanceOf[js.Any], watchPaths = watchPaths.asInstanceOf[js.Any], workDivision = workDivision.asInstanceOf[js.Any], workNumber = workNumber.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(checkSyntacticErrors = checkSyntacticErrors.asInstanceOf[js.Any], compilerOptions = compilerOptions.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], programConfigFile = programConfigFile.asInstanceOf[js.Any], typescript = typescript.asInstanceOf[js.Any], vue = vue.asInstanceOf[js.Any])
     if (eslinter != null) __obj.updateDynamic("eslinter")(eslinter.asInstanceOf[js.Any])
     if (resolveModuleName != null) __obj.updateDynamic("resolveModuleName")(js.Any.fromFunction5(resolveModuleName))
     if (resolveTypeReferenceDirective != null) __obj.updateDynamic("resolveTypeReferenceDirective")(js.Any.fromFunction5(resolveTypeReferenceDirective))

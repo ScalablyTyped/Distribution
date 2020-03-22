@@ -1,7 +1,7 @@
 package typings.firebaseFirestore.remoteWatchChangeMod
 
-import typings.firebaseFirestore.coreTypesMod.ProtoByteString
 import typings.firebaseFirestore.coreTypesMod.TargetId
+import typings.firebaseFirestore.utilByteStringMod.ByteString
 import typings.firebaseFirestore.utilErrorMod.FirestoreError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -27,7 +27,7 @@ class WatchTargetChange protected () extends WatchChange {
     * matches the target. The resume token essentially identifies a point in
     * time from which the server should resume sending results.
     */
-  resumeToken: ProtoByteString
+  resumeToken: ByteString
   ) = this()
   def this(
     /** What kind of change occurred to the watch target. */
@@ -40,7 +40,7 @@ class WatchTargetChange protected () extends WatchChange {
     * matches the target. The resume token essentially identifies a point in
     * time from which the server should resume sending results.
     */
-  resumeToken: ProtoByteString,
+  resumeToken: ByteString,
     /** An RPC error indicating why the watch failed. */
   cause: FirestoreError
   ) = this()
@@ -52,7 +52,7 @@ class WatchTargetChange protected () extends WatchChange {
     * matches the target. The resume token essentially identifies a point in
     * time from which the server should resume sending results.
     */
-  var resumeToken: ProtoByteString = js.native
+  var resumeToken: ByteString = js.native
   /** What kind of change occurred to the watch target. */
   var state: WatchTargetChangeState = js.native
   /** The target IDs that were added/removed/set. */

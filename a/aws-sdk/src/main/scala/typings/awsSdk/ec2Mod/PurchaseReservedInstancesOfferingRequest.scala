@@ -25,14 +25,14 @@ trait PurchaseReservedInstancesOfferingRequest extends js.Object {
   /**
     * The ID of the Reserved Instance offering to purchase.
     */
-  var ReservedInstancesOfferingId: String = js.native
+  var ReservedInstancesOfferingId: typings.awsSdk.ec2Mod.ReservedInstancesOfferingId = js.native
 }
 
 object PurchaseReservedInstancesOfferingRequest {
   @scala.inline
   def apply(
     InstanceCount: Integer,
-    ReservedInstancesOfferingId: String,
+    ReservedInstancesOfferingId: ReservedInstancesOfferingId,
     DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     LimitPrice: ReservedInstanceLimitPrice = null,
     PurchaseTime: DateTime = null

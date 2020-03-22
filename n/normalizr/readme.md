@@ -1,7 +1,7 @@
 
 # Scala.js typings for normalizr
 
-Typings are for version 3.5.0
+Typings are for version 3.6.0
 
 ## Library description:
 Normalizes and denormalizes JSON according to schema for Redux and Flux applications

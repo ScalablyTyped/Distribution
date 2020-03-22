@@ -11,11 +11,11 @@ object esmStartOfWeekYearMod extends js.Object {
   @js.native
   object default extends js.Object {
     def apply(date: Double): Date = js.native
-    def apply(date: Double, options: Anon01234567FirstWeekContainsDateLocale): Date = js.native
-    def apply(date: Double, options: Anon01234567FirstWeekContainsDateLocaleWeekStartsOn): Date = js.native
+    def apply(date: Double, options: AnonFirstWeekContainsDateLocaleWeekStartsOn): Date = js.native
+    def apply(date: Double, options: AnonLocaleLocale): Date = js.native
     def apply(date: Date): Date = js.native
-    def apply(date: Date, options: Anon01234567FirstWeekContainsDateLocale): Date = js.native
-    def apply(date: Date, options: Anon01234567FirstWeekContainsDateLocaleWeekStartsOn): Date = js.native
+    def apply(date: Date, options: AnonFirstWeekContainsDateLocaleWeekStartsOn): Date = js.native
+    def apply(date: Date, options: AnonLocaleLocale): Date = js.native
   }
   
 }

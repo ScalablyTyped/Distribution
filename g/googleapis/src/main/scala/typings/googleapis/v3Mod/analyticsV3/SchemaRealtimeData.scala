@@ -3,7 +3,7 @@ package typings.googleapis.v3Mod.analyticsV3
 import org.scalablytyped.runtime.StringDictionary
 import typings.googleapis.AnonAccountId
 import typings.googleapis.AnonColumnType
-import typings.googleapis.AnonDimensionsFilters
+import typings.googleapis.AnonFilters
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,7 +34,7 @@ trait SchemaRealtimeData extends js.Object {
   /**
     * Real time data request query parameters.
     */
-  var query: js.UndefOr[AnonDimensionsFilters] = js.native
+  var query: js.UndefOr[AnonFilters] = js.native
   /**
     * Real time data rows, where each row contains a list of dimension values
     * followed by the metric values. The order of dimensions and metrics is
@@ -65,7 +65,7 @@ object SchemaRealtimeData {
     id: String = null,
     kind: String = null,
     profileInfo: AnonAccountId = null,
-    query: AnonDimensionsFilters = null,
+    query: AnonFilters = null,
     rows: js.Array[js.Array[String]] = null,
     selfLink: String = null,
     totalResults: Int | Double = null,

@@ -1,15 +1,15 @@
 package typings.jupyterlabObservables.undoablelistMod
 
 import typings.jupyterlabObservables.observablelistMod.ObservableList
-import typings.phosphorCoreutils.jsonMod.JSONValue
+import typings.luminoCoreutils.jsonMod.JSONValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.phosphorDisposable.mod.IDisposable because Already inherited
+- typings.luminoDisposable.mod.IDisposable because Already inherited
 - typings.jupyterlabObservables.observablelistMod.IObservableList because Already inherited
-- typings.jupyterlabObservables.undoablelistMod.IObservableUndoableList because var conflicts: length. Inlined canRedo, canUndo, beginCompoundOperation, beginCompoundOperation, endCompoundOperation, undo, redo, clearUndo */ @JSImport("@jupyterlab/observables/lib/undoablelist", "ObservableUndoableList")
+- typings.jupyterlabObservables.undoablelistMod.IObservableUndoableList because var conflicts: changed, isDisposed, length, `type`. Inlined canRedo, canUndo, beginCompoundOperation, beginCompoundOperation, endCompoundOperation, undo, redo, clearUndo */ @JSImport("@jupyterlab/observables/lib/undoablelist", "ObservableUndoableList")
 @js.native
 class ObservableUndoableList[T] protected () extends ObservableList[T] {
   /**
@@ -41,11 +41,13 @@ class ObservableUndoableList[T] protected () extends ObservableList[T] {
   /**
     * Whether the object can redo changes.
     */
-  val canRedo: Boolean = js.native
+  @JSName("canRedo")
+  val canRedo_FObservableUndoableList: Boolean = js.native
   /**
     * Whether the object can undo changes.
     */
-  val canUndo: Boolean = js.native
+  @JSName("canUndo")
+  val canUndo_FObservableUndoableList: Boolean = js.native
   /**
     * Begin a compound operation.
     *
@@ -60,6 +62,14 @@ class ObservableUndoableList[T] protected () extends ObservableList[T] {
     */
   def beginCompoundOperation(): Unit = js.native
   def beginCompoundOperation(isUndoAble: Boolean): Unit = js.native
+  /**
+    * Whether the object can redo changes.
+    */
+  def canRedo(): Boolean = js.native
+  /**
+    * Whether the object can undo changes.
+    */
+  def canUndo(): Boolean = js.native
   /**
     * Clear the change stack.
     */

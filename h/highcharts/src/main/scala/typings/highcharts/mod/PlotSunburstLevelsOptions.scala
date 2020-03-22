@@ -31,10 +31,12 @@ trait PlotSunburstLevelsOptions extends js.Object {
     */
   var colorVariation: js.UndefOr[PlotSunburstLevelsColorVariationOptions] = js.undefined
   /**
-    * (Highcharts) Can set `dataLabels` on all points which lies on the same
-    * level.
+    * (Highcharts, Highstock, Highmaps, Gantt) Can set `dataLabels` on all
+    * points which lies on the same level.
     */
-  var dataLabels: js.UndefOr[SeriesSunburstDataLabelsOptionsObject] = js.undefined
+  var dataLabels: js.UndefOr[
+    SeriesSunburstDataLabelsOptionsObject | js.Array[SeriesSunburstDataLabelsOptionsObject]
+  ] = js.undefined
   /**
     * (Highcharts) Can set a `levelSize` on all points which lies on the same
     * level.
@@ -60,7 +62,7 @@ object PlotSunburstLevelsOptions {
     borderWidth: Int | Double = null,
     color: ColorString | GradientColorObject | PatternObject = null,
     colorVariation: PlotSunburstLevelsColorVariationOptions = null,
-    dataLabels: SeriesSunburstDataLabelsOptionsObject = null,
+    dataLabels: SeriesSunburstDataLabelsOptionsObject | js.Array[SeriesSunburstDataLabelsOptionsObject] = null,
     levelSize: js.Object = null,
     rotation: Int | Double = null,
     rotationMode: String = null

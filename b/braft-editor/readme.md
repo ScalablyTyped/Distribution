@@ -1,7 +1,7 @@
 
 # Scala.js typings for braft-editor
 
-Typings are for version 2.3.8
+Typings are for version 2.3.9
 
 ## Library description:
 Rich Text Editor Based On Draft.js

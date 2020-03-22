@@ -13,8 +13,8 @@ trait IConnectionParameters[C /* <: IClient */] extends js.Object {
   var application_name: js.UndefOr[String] = js.undefined
   var binary: js.UndefOr[Boolean] = js.undefined
   var client_encoding: js.UndefOr[String] = js.undefined
-  var connect_timeout: js.UndefOr[Double] = js.undefined
   var connectionString: js.UndefOr[String] = js.undefined
+  var connectionTimeoutMillis: js.UndefOr[Double] = js.undefined
   var database: js.UndefOr[String] = js.undefined
   var encoding: js.UndefOr[String] = js.undefined
   var fallback_application_name: js.UndefOr[String] = js.undefined
@@ -26,7 +26,6 @@ trait IConnectionParameters[C /* <: IClient */] extends js.Object {
   var keepalives: js.UndefOr[Double] = js.undefined
   var keepalives_idle: js.UndefOr[Double] = js.undefined
   var max: js.UndefOr[Double] = js.undefined
-  var min: js.UndefOr[Double] = js.undefined
   var parseInputDatesAsUTC: js.UndefOr[Boolean] = js.undefined
   var password: js.UndefOr[DynamicPassword] = js.undefined
   var port: js.UndefOr[Double] = js.undefined
@@ -44,8 +43,8 @@ object IConnectionParameters {
     application_name: String = null,
     binary: js.UndefOr[Boolean] = js.undefined,
     client_encoding: String = null,
-    connect_timeout: Int | Double = null,
     connectionString: String = null,
+    connectionTimeoutMillis: Int | Double = null,
     database: String = null,
     encoding: String = null,
     fallback_application_name: String = null,
@@ -57,7 +56,6 @@ object IConnectionParameters {
     keepalives: Int | Double = null,
     keepalives_idle: Int | Double = null,
     max: Int | Double = null,
-    min: Int | Double = null,
     parseInputDatesAsUTC: js.UndefOr[Boolean] = js.undefined,
     password: DynamicPassword = null,
     port: Int | Double = null,
@@ -72,8 +70,8 @@ object IConnectionParameters {
     if (application_name != null) __obj.updateDynamic("application_name")(application_name.asInstanceOf[js.Any])
     if (!js.isUndefined(binary)) __obj.updateDynamic("binary")(binary.asInstanceOf[js.Any])
     if (client_encoding != null) __obj.updateDynamic("client_encoding")(client_encoding.asInstanceOf[js.Any])
-    if (connect_timeout != null) __obj.updateDynamic("connect_timeout")(connect_timeout.asInstanceOf[js.Any])
     if (connectionString != null) __obj.updateDynamic("connectionString")(connectionString.asInstanceOf[js.Any])
+    if (connectionTimeoutMillis != null) __obj.updateDynamic("connectionTimeoutMillis")(connectionTimeoutMillis.asInstanceOf[js.Any])
     if (database != null) __obj.updateDynamic("database")(database.asInstanceOf[js.Any])
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     if (fallback_application_name != null) __obj.updateDynamic("fallback_application_name")(fallback_application_name.asInstanceOf[js.Any])
@@ -85,7 +83,6 @@ object IConnectionParameters {
     if (keepalives != null) __obj.updateDynamic("keepalives")(keepalives.asInstanceOf[js.Any])
     if (keepalives_idle != null) __obj.updateDynamic("keepalives_idle")(keepalives_idle.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     if (!js.isUndefined(parseInputDatesAsUTC)) __obj.updateDynamic("parseInputDatesAsUTC")(parseInputDatesAsUTC.asInstanceOf[js.Any])
     if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])

@@ -5,10 +5,10 @@ import typings.jupyterlabFilebrowser.listingMod.DirListing.IRenderer
 import typings.jupyterlabFilebrowser.listingMod.DirListing.ISortState
 import typings.jupyterlabFilebrowser.modelMod.FileBrowserModel
 import typings.jupyterlabServices.contentsMod.Contents.IModel
-import typings.phosphorAlgorithm.iterMod.IIterator
-import typings.phosphorSignaling.mod.ISignal
-import typings.phosphorWidgets.mod.Widget
-import typings.phosphorWidgets.mod.Widget.ResizeMessage
+import typings.luminoAlgorithm.iterMod.IIterator
+import typings.luminoSignaling.mod.ISignal
+import typings.luminoWidgets.mod.Widget
+import typings.luminoWidgets.mod.Widget.ResizeMessage
 import typings.std.Event_
 import typings.std.HTMLElement
 import typings.std.MouseEvent
@@ -50,19 +50,19 @@ class DirListing_ protected () extends Widget {
     */
   var _evtDblClick: js.Any = js.native
   /**
-    * Handle the `'p-dragenter'` event for the widget.
+    * Handle the `'lm-dragenter'` event for the widget.
     */
   var _evtDragEnter: js.Any = js.native
   /**
-    * Handle the `'p-dragleave'` event for the widget.
+    * Handle the `'lm-dragleave'` event for the widget.
     */
   var _evtDragLeave: js.Any = js.native
   /**
-    * Handle the `'p-dragover'` event for the widget.
+    * Handle the `'lm-dragover'` event for the widget.
     */
   var _evtDragOver: js.Any = js.native
   /**
-    * Handle the `'p-drop'` event for the widget.
+    * Handle the `'lm-drop'` event for the widget.
     */
   var _evtDrop: js.Any = js.native
   /**
@@ -142,6 +142,10 @@ class DirListing_ protected () extends Widget {
     */
   var _startDrag: js.Any = js.native
   /**
+    * Clear the selected items.
+    */
+  def clearSelectedItems(): Unit = js.native
+  /**
     * Get the dir listing content node.
     *
     * #### Notes
@@ -149,36 +153,7 @@ class DirListing_ protected () extends Widget {
     *
     * Modifying this node directly can lead to undefined behavior.
     */
-  val contentNode: HTMLElement = js.native
-  /**
-    * Get the dir listing header node.
-    *
-    * #### Notes
-    * This is the node which holds the header cells.
-    *
-    * Modifying this node directly can lead to undefined behavior.
-    */
-  val headerNode: HTMLElement = js.native
-  /**
-    * Get the model used by the listing.
-    */
-  val model: FileBrowserModel = js.native
-  /**
-    * A signal fired when an item is opened.
-    */
-  val onItemOpened: ISignal[DirListing, IModel] = js.native
-  /**
-    * The renderer instance used by the directory listing.
-    */
-  val renderer: IRenderer = js.native
-  /**
-    * The current sort state.
-    */
-  val sortState: ISortState = js.native
-  /**
-    * Clear the selected items.
-    */
-  def clearSelectedItems(): Unit = js.native
+  def contentNode(): HTMLElement = js.native
   /**
     * Copy the selected items.
     */
@@ -215,6 +190,15 @@ class DirListing_ protected () extends Widget {
     */
   def handleEvent(event: Event_): Unit = js.native
   /**
+    * Get the dir listing header node.
+    *
+    * #### Notes
+    * This is the node which holds the header cells.
+    *
+    * Modifying this node directly can lead to undefined behavior.
+    */
+  def headerNode(): HTMLElement = js.native
+  /**
     * Get whether an item is selected by name.
     *
     * @param name - The name of of the item.
@@ -223,6 +207,10 @@ class DirListing_ protected () extends Widget {
     */
   def isSelected(name: String): Boolean = js.native
   /**
+    * Get the model used by the listing.
+    */
+  def model(): FileBrowserModel = js.native
+  /**
     * Find a model given a click.
     *
     * @param event - The mouse event.
@@ -230,6 +218,10 @@ class DirListing_ protected () extends Widget {
     * @returns The model for the selected file.
     */
   def modelForClick(event: MouseEvent): js.UndefOr[IModel] = js.native
+  /**
+    * A signal fired when an item is opened.
+    */
+  def onItemOpened(): ISignal[DirListing, IModel] = js.native
   def onResize(msg: ResizeMessage): Unit = js.native
   /**
     * Paste the items from the clipboard.
@@ -243,6 +235,10 @@ class DirListing_ protected () extends Widget {
     * @returns A promise that resolves with the new name of the item.
     */
   def rename(): js.Promise[String] = js.native
+  /**
+    * The renderer instance used by the directory listing.
+    */
+  def renderer(): IRenderer = js.native
   /**
     * Select the first item that starts with prefix being typed.
     */
@@ -285,6 +281,10 @@ class DirListing_ protected () extends Widget {
     * Sort the items using a sort condition.
     */
   def sort(state: ISortState): Unit = js.native
+  /**
+    * The current sort state.
+    */
+  def sortState(): ISortState = js.native
   /**
     * Create an iterator over the listing's sorted items.
     *

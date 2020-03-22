@@ -3,7 +3,6 @@ package typings.ionicCore
 import typings.ionicCore.componentsMod._Global_.HTMLIonLoadingElement
 import typings.ionicCore.ionicCoreStrings.ios
 import typings.ionicCore.ionicCoreStrings.md
-import typings.ionicCore.oldAnimationAnimationInterfaceMod.Animation
 import typings.ionicCore.overlaysInterfaceMod.OverlayEventDetail
 import typings.ionicCore.overlaysInterfaceMod.OverlayInterface
 import typings.ionicCore.spinnerConfigsMod.SpinnerTypes
@@ -19,8 +18,6 @@ object loadingMod extends js.Object {
   class Loading ()
     extends ComponentInterface
        with OverlayInterface {
-    @JSName("animation")
-    var animation_Loading: js.UndefOr[Animation] = js.native
     /**
       * If `true`, the loading indicator will be dismissed when the backdrop is clicked.
       */

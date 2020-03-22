@@ -21,9 +21,11 @@ trait DialogProps extends js.Object {
   var header: js.UndefOr[js.Any] = js.undefined
   var iconsTemplate: js.UndefOr[js.Function0[js.UndefOr[Element]]] = js.undefined
   var id: js.UndefOr[String] = js.undefined
+  var maskClassName: js.UndefOr[String] = js.undefined
   var maximizable: js.UndefOr[Boolean] = js.undefined
   var modal: js.UndefOr[Boolean] = js.undefined
   var onShow: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var position: js.UndefOr[String] = js.undefined
   var rtl: js.UndefOr[Boolean] = js.undefined
   var showHeader: js.UndefOr[Boolean] = js.undefined
   var style: js.UndefOr[js.Object] = js.undefined
@@ -49,9 +51,11 @@ object DialogProps {
     header: js.Any = null,
     iconsTemplate: () => js.UndefOr[Element] = null,
     id: String = null,
+    maskClassName: String = null,
     maximizable: js.UndefOr[Boolean] = js.undefined,
     modal: js.UndefOr[Boolean] = js.undefined,
     onShow: () => Unit = null,
+    position: String = null,
     rtl: js.UndefOr[Boolean] = js.undefined,
     showHeader: js.UndefOr[Boolean] = js.undefined,
     style: js.Object = null,
@@ -72,9 +76,11 @@ object DialogProps {
     if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
     if (iconsTemplate != null) __obj.updateDynamic("iconsTemplate")(js.Any.fromFunction0(iconsTemplate))
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (maskClassName != null) __obj.updateDynamic("maskClassName")(maskClassName.asInstanceOf[js.Any])
     if (!js.isUndefined(maximizable)) __obj.updateDynamic("maximizable")(maximizable.asInstanceOf[js.Any])
     if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal.asInstanceOf[js.Any])
     if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction0(onShow))
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (!js.isUndefined(rtl)) __obj.updateDynamic("rtl")(rtl.asInstanceOf[js.Any])
     if (!js.isUndefined(showHeader)) __obj.updateDynamic("showHeader")(showHeader.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])

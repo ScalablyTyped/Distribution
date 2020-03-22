@@ -22,7 +22,7 @@ object typescriptGeneratorMod extends js.Object {
   class TypescriptGenerator protected () extends Generator {
     def this(hasSchemaInputSchemaPathOutputBindingPathIsDefaultExport: AnonInputSchemaPath) = this()
     var graphqlRenderers: AnonGraphQLEnumType = js.native
-    var scalarMapping: AnonBooleanDateTime = js.native
+    var scalarMapping: AnonDateTime = js.native
     def getPayloadType(operation: String, nonNullType: Boolean): String = js.native
     def getTypeNames(): js.Array[String] = js.native
     def renderDescription(description: Maybe[String]): String = js.native

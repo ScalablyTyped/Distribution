@@ -13,13 +13,13 @@ trait IpcMainEvent extends Event {
   var frameId: Double = js.native
   /**
     * A function that will send an IPC message to the renderer frame that sent the
-    * original message that you are currently handling. You should use this method to
-    * "reply" to the sent message in order to guaruntee the reply will go to the
+    * original message that you are currently handling.  You should use this method to
+    * "reply" to the sent message in order to guarantee the reply will go to the
     * correct process and frame.
     */
   var reply: js.Function = js.native
   /**
-    * Returns the webContents that sent the message
+    * Returns the `webContents` that sent the message
     */
   var sender: WebContents_ = js.native
 }

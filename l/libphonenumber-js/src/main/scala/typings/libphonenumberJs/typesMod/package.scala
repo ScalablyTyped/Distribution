@@ -6,9 +6,6 @@ import scala.scalajs.js.annotation._
 
 package object typesMod {
   type CarrierCode = java.lang.String
-  type Countries = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ country in libphonenumber-js.libphonenumber-js/types.CountryCode ]: std.Array<any>}
-    */ typings.libphonenumberJs.libphonenumberJsStrings.Countries with js.Any
   type CountryCallingCode = java.lang.String
   type CountryCallingCodes = org.scalablytyped.runtime.StringDictionary[js.Array[typings.libphonenumberJs.typesMod.CountryCode]]
   type E164Number = java.lang.String

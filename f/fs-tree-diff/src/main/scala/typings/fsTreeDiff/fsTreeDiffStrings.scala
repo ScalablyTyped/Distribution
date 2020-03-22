@@ -1,31 +1,26 @@
 package typings.fsTreeDiff
 
-import typings.fsTreeDiff.mod.ChangeType
+import typings.fsTreeDiff.mod.Operand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object fsTreeDiffStrings {
   @js.native
-  sealed trait FSTreeDelegates extends js.Object
+  sealed trait change extends Operand
   
   @js.native
-  sealed trait change extends ChangeType
+  sealed trait create extends Operand
   
   @js.native
-  sealed trait create extends ChangeType
+  sealed trait mkdir extends Operand
   
   @js.native
-  sealed trait mkdir extends ChangeType
+  sealed trait rmdir extends Operand
   
   @js.native
-  sealed trait rmdir extends ChangeType
+  sealed trait unlink extends Operand
   
-  @js.native
-  sealed trait unlink extends ChangeType
-  
-  @scala.inline
-  def FSTreeDelegates: FSTreeDelegates = "FSTreeDelegates".asInstanceOf[FSTreeDelegates]
   @scala.inline
   def change: change = "change".asInstanceOf[change]
   @scala.inline

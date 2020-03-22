@@ -6,14 +6,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.vegaTypings.AnonDataField
+  - typings.vegaTypings.AnonName
   - typings.vegaTypings.AnonAggregate
 */
 trait Facet extends js.Object
 
 object Facet {
   @scala.inline
-  def AnonDataField(data: String, field: String, name: String): Facet = {
+  def AnonName(data: String, field: String, name: String): Facet = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Facet]

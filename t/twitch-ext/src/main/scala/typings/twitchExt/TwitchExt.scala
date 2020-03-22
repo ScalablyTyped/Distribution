@@ -1,6 +1,5 @@
 package typings.twitchExt
 
-import typings.std.Partial
 import typings.twitchExt.twitchExtBooleans.`false`
 import typings.twitchExt.twitchExtBooleans.`true`
 import typings.twitchExt.twitchExtStrings.production
@@ -69,7 +68,7 @@ trait TwitchExt extends js.Object {
   	 * @see https://dev.twitch.tv/docs/extensions/reference/#oncontext
   	 */
   def onContext(
-    contextCallback: js.Function2[/* context */ Partial[TwitchExtContext], /* changed */ js.Array[String], Unit]
+    contextCallback: js.Function2[/* context */ PartialTwitchExtContext, /* changed */ js.Array[String], Unit]
   ): Unit = js.native
   /**
   	 * This function binds the callback to any internal error.
@@ -97,7 +96,7 @@ trait TwitchExt extends js.Object {
   @JSName("onVisibilityChanged")
   def onVisibilityChanged_false(callback: js.Function1[`false`, Unit]): Unit = js.native
   @JSName("onVisibilityChanged")
-  def onVisibilityChanged_true(callback: js.Function2[`true`, /* context */ Partial[TwitchExtContext], Unit]): Unit = js.native
+  def onVisibilityChanged_true(callback: js.Function2[`true`, /* context */ PartialTwitchExtContext, Unit]): Unit = js.native
   def send(target: String, contentType: String, message: String): Unit = js.native
   /**
   	 * This function can be called by the front end to send directly to PubSub.

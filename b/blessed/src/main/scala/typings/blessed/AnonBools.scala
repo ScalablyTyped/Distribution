@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 trait AnonBools extends js.Object {
   var bools: js.Any
   var desc: String
-  var header: AnonBoolCountDataSize
+  var header: AnonDataSize
   var name: String
   var names: js.Array[String]
   var numbers: js.Any
@@ -19,7 +19,7 @@ object AnonBools {
   def apply(
     bools: js.Any,
     desc: String,
-    header: AnonBoolCountDataSize,
+    header: AnonDataSize,
     name: String,
     names: js.Array[String],
     numbers: js.Any,

@@ -1,8 +1,8 @@
 package typings.oracleOraclejet.ojnboxMod
 
-import typings.oracleOraclejet.AnonAnimationDurationCellDefaults
-import typings.oracleOraclejet.AnonComponentNameHighlightedCount
-import typings.oracleOraclejet.AnonContextRendererAnonInsertAnonPreventDefaultK
+import typings.oracleOraclejet.Anon13
+import typings.oracleOraclejet.AnonCellDefaults
+import typings.oracleOraclejet.AnonHighlightedCount
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.ojdataproviderMod.DataProvider
 import typings.oracleOraclejet.ojdvtBaseMod.dvtBaseComponent
@@ -144,11 +144,8 @@ trait ojNBox_[K, D] extends dvtBaseComponent[ojNBoxSettableProperties[K, D]] {
   var onRowsTitleChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
   var onSelectionChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[K]], _]) | Null = js.native
   var onSelectionModeChanged: (js.Function1[/* event */ JetElementCustomEvent[none | single | multiple], _]) | Null = js.native
-  var onStyleDefaultsChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonAnimationDurationCellDefaults], _]) | Null = js.native
-  var onTooltipChanged: (js.Function1[
-    /* event */ JetElementCustomEvent[AnonContextRendererAnonInsertAnonPreventDefaultK[K]], 
-    _
-  ]) | Null = js.native
+  var onStyleDefaultsChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonCellDefaults], _]) | Null = js.native
+  var onTooltipChanged: (js.Function1[/* event */ JetElementCustomEvent[Anon13[K]], _]) | Null = js.native
   var onTouchResponseChanged: (js.Function1[/* event */ JetElementCustomEvent[touchStart | auto], _]) | Null = js.native
   var otherColor: String = js.native
   var otherThreshold: Double = js.native
@@ -156,11 +153,11 @@ trait ojNBox_[K, D] extends dvtBaseComponent[ojNBoxSettableProperties[K, D]] {
   var rowsTitle: String = js.native
   var selection: js.Array[K] = js.native
   var selectionMode: none | single | multiple = js.native
-  var styleDefaults: AnonAnimationDurationCellDefaults = js.native
-  var tooltip: AnonContextRendererAnonInsertAnonPreventDefaultK[K] = js.native
+  var styleDefaults: AnonCellDefaults = js.native
+  var tooltip: Anon13[K] = js.native
   var touchResponse: touchStart | auto = js.native
   @JSName("translations")
-  var translations_ojNBox_ : AnonComponentNameHighlightedCount = js.native
+  var translations_ojNBox_ : AnonHighlightedCount = js.native
   def addEventListener(
     `type`: animationOnDataChangeChanged,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | none], _]
@@ -488,39 +485,23 @@ trait ojNBox_[K, D] extends dvtBaseComponent[ojNBoxSettableProperties[K, D]] {
   @JSName("addEventListener")
   def addEventListener_styleDefaultsChanged(
     `type`: styleDefaultsChanged,
-    listener: js.ThisFunction1[
-      /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[AnonAnimationDurationCellDefaults], 
-      _
-    ]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonCellDefaults], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_styleDefaultsChanged(
     `type`: styleDefaultsChanged,
-    listener: js.ThisFunction1[
-      /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[AnonAnimationDurationCellDefaults], 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonCellDefaults], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_tooltipChanged(
     `type`: tooltipChanged,
-    listener: js.ThisFunction1[
-      /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[AnonContextRendererAnonInsertAnonPreventDefaultK[K]], 
-      _
-    ]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Anon13[K]], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_tooltipChanged(
     `type`: tooltipChanged,
-    listener: js.ThisFunction1[
-      /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[AnonContextRendererAnonInsertAnonPreventDefaultK[K]], 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Anon13[K]], _],
     useCapture: Boolean
   ): Unit = js.native
   def countLabel(context: CountLabelContext): String | Null = js.native
@@ -581,9 +562,9 @@ trait ojNBox_[K, D] extends dvtBaseComponent[ojNBoxSettableProperties[K, D]] {
   @JSName("getProperty")
   def getProperty_selectionMode(property: selectionMode): none | single | multiple = js.native
   @JSName("getProperty")
-  def getProperty_styleDefaults(property: styleDefaults): AnonAnimationDurationCellDefaults = js.native
+  def getProperty_styleDefaults(property: styleDefaults): AnonCellDefaults = js.native
   @JSName("getProperty")
-  def getProperty_tooltip(property: tooltip): AnonContextRendererAnonInsertAnonPreventDefaultK[K] = js.native
+  def getProperty_tooltip(property: tooltip): Anon13[K] = js.native
   @JSName("getProperty")
   def getProperty_touchResponse(property: touchResponse): touchStart | auto = js.native
   def getRow(rowValue: String): js.Object | Null = js.native
@@ -660,10 +641,10 @@ trait ojNBox_[K, D] extends dvtBaseComponent[ojNBoxSettableProperties[K, D]] {
   @JSName("setProperty")
   def setProperty_selection(property: selection, value: js.Array[K]): Unit = js.native
   @JSName("setProperty")
-  def setProperty_styleDefaults(property: styleDefaults, value: AnonAnimationDurationCellDefaults): Unit = js.native
+  def setProperty_styleDefaults(property: styleDefaults, value: AnonCellDefaults): Unit = js.native
   @JSName("setProperty")
-  def setProperty_tooltip(property: tooltip, value: AnonContextRendererAnonInsertAnonPreventDefaultK[K]): Unit = js.native
+  def setProperty_tooltip(property: tooltip, value: Anon13[K]): Unit = js.native
   @JSName("setProperty")
-  def setProperty_translations(property: translations, value: AnonComponentNameHighlightedCount): Unit = js.native
+  def setProperty_translations(property: translations, value: AnonHighlightedCount): Unit = js.native
 }
 

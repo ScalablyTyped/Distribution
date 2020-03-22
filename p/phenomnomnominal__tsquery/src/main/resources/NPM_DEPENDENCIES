@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@phenomnomnominal/tsquery" : "3.0.0"
+      "@phenomnomnominal/tsquery" : "4.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@phenomnomnominal/tsquery" : "3.0.0"
+      "@phenomnomnominal/tsquery" : "4.0.0"
     }
   ],
   "compile-devDependencies" : [

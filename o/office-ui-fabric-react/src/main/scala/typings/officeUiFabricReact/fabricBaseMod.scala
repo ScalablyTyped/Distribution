@@ -18,6 +18,7 @@ object fabricBaseMod extends js.Object {
     var _getClassNames: js.Any = js.native
     var _onKeyDown: js.Any = js.native
     var _onMouseDown: js.Any = js.native
+    var _onPointerDown: js.Any = js.native
     var _removeClassNameFromBody: js.UndefOr[js.Any] = js.native
     var _rootElement: js.Any = js.native
     @JSName("componentDidMount")

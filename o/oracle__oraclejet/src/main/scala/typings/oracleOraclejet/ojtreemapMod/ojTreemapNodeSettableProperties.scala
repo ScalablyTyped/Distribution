@@ -1,6 +1,6 @@
 package typings.oracleOraclejet.ojtreemapMod
 
-import typings.oracleOraclejet.AnonCenterEndIsolate
+import typings.oracleOraclejet.AnonIsolate
 import typings.oracleOraclejet.mod.JetSettableProperties
 import typings.oracleOraclejet.oracleOraclejetStrings.auto
 import typings.oracleOraclejet.oracleOraclejetStrings.bottom
@@ -35,7 +35,7 @@ trait ojTreemapNodeSettableProperties extends JetSettableProperties {
   var color: js.UndefOr[String] = js.undefined
   var drilling: js.UndefOr[on | off | inherit] = js.undefined
   var groupLabelDisplay: js.UndefOr[node | off | header] = js.undefined
-  var header: js.UndefOr[AnonCenterEndIsolate] = js.undefined
+  var header: js.UndefOr[AnonIsolate] = js.undefined
   var label: js.UndefOr[String] = js.undefined
   var labelDisplay: js.UndefOr[off | node] = js.undefined
   var labelHalign: js.UndefOr[start | end | center] = js.undefined
@@ -59,7 +59,7 @@ object ojTreemapNodeSettableProperties {
     color: String = null,
     drilling: on | off | inherit = null,
     groupLabelDisplay: node | off | header = null,
-    header: AnonCenterEndIsolate = null,
+    header: AnonIsolate = null,
     label: String = null,
     labelDisplay: off | node = null,
     labelHalign: start | end | center = null,

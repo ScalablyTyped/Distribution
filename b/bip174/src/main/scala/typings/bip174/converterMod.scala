@@ -18,7 +18,7 @@ object converterMod extends js.Object {
   
   @js.native
   object inputs extends js.Object {
-    var bip32Derivation: AnonArray = js.native
+    var bip32Derivation: AnonCanAddToArray = js.native
     var finalScriptSig: TypeoffinalScriptSig = js.native
     var finalScriptWitness: TypeoffinalScriptWitness = js.native
     var nonWitnessUtxo: TypeofnonWitnessUtxo = js.native
@@ -33,7 +33,7 @@ object converterMod extends js.Object {
   
   @js.native
   object outputs extends js.Object {
-    var bip32Derivation: AnonArray = js.native
+    var bip32Derivation: AnonCanAddToArray = js.native
     var redeemScript: AnonCanAdd = js.native
     var witnessScript: AnonCanAdd = js.native
     def checkPubkey(keyVal: KeyValue): js.UndefOr[Buffer] = js.native

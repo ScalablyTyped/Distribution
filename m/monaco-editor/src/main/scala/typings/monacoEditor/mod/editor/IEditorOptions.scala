@@ -1,46 +1,54 @@
 package typings.monacoEditor.mod.editor
 
-import typings.monacoEditor.AnonComments
-import typings.monacoEditor.monacoEditorStrings.`100`
-import typings.monacoEditor.monacoEditorStrings.`200`
-import typings.monacoEditor.monacoEditorStrings.`300`
-import typings.monacoEditor.monacoEditorStrings.`400`
-import typings.monacoEditor.monacoEditorStrings.`500`
-import typings.monacoEditor.monacoEditorStrings.`600`
-import typings.monacoEditor.monacoEditorStrings.`700`
-import typings.monacoEditor.monacoEditorStrings.`800`
-import typings.monacoEditor.monacoEditorStrings.`900`
+import typings.monacoEditor.monacoEditorStrings.`block-outline`
 import typings.monacoEditor.monacoEditorStrings.`inline`
+import typings.monacoEditor.monacoEditorStrings.`line-thin`
+import typings.monacoEditor.monacoEditorStrings.`underline-thin`
+import typings.monacoEditor.monacoEditorStrings.advanced
 import typings.monacoEditor.monacoEditorStrings.all
 import typings.monacoEditor.monacoEditorStrings.alt
 import typings.monacoEditor.monacoEditorStrings.always
 import typings.monacoEditor.monacoEditorStrings.auto
-import typings.monacoEditor.monacoEditorStrings.bold
-import typings.monacoEditor.monacoEditorStrings.bolder
+import typings.monacoEditor.monacoEditorStrings.blink
+import typings.monacoEditor.monacoEditorStrings.block
 import typings.monacoEditor.monacoEditorStrings.bottom
 import typings.monacoEditor.monacoEditorStrings.boundary
 import typings.monacoEditor.monacoEditorStrings.bounded
+import typings.monacoEditor.monacoEditorStrings.brackets
+import typings.monacoEditor.monacoEditorStrings.copy
 import typings.monacoEditor.monacoEditorStrings.ctrlCmd
+import typings.monacoEditor.monacoEditorStrings.deepIndent
+import typings.monacoEditor.monacoEditorStrings.default
+import typings.monacoEditor.monacoEditorStrings.editable
+import typings.monacoEditor.monacoEditorStrings.expand
 import typings.monacoEditor.monacoEditorStrings.first
+import typings.monacoEditor.monacoEditorStrings.full
 import typings.monacoEditor.monacoEditorStrings.gutter
+import typings.monacoEditor.monacoEditorStrings.indent
 import typings.monacoEditor.monacoEditorStrings.indentation
-import typings.monacoEditor.monacoEditorStrings.inherit
-import typings.monacoEditor.monacoEditorStrings.initial
-import typings.monacoEditor.monacoEditorStrings.interval
-import typings.monacoEditor.monacoEditorStrings.lighter
+import typings.monacoEditor.monacoEditorStrings.keep
 import typings.monacoEditor.monacoEditorStrings.line
 import typings.monacoEditor.monacoEditorStrings.mouseover
+import typings.monacoEditor.monacoEditorStrings.near
+import typings.monacoEditor.monacoEditorStrings.never
 import typings.monacoEditor.monacoEditorStrings.none
-import typings.monacoEditor.monacoEditorStrings.normal
 import typings.monacoEditor.monacoEditorStrings.off
 import typings.monacoEditor.monacoEditorStrings.on
 import typings.monacoEditor.monacoEditorStrings.onlySnippets
+import typings.monacoEditor.monacoEditorStrings.phase
 import typings.monacoEditor.monacoEditorStrings.recentlyUsed
 import typings.monacoEditor.monacoEditorStrings.recentlyUsedByPrefix
-import typings.monacoEditor.monacoEditorStrings.relative
+import typings.monacoEditor.monacoEditorStrings.same
 import typings.monacoEditor.monacoEditorStrings.selection
+import typings.monacoEditor.monacoEditorStrings.simple
 import typings.monacoEditor.monacoEditorStrings.smart
+import typings.monacoEditor.monacoEditorStrings.smooth
+import typings.monacoEditor.monacoEditorStrings.solid
+import typings.monacoEditor.monacoEditorStrings.spread
+import typings.monacoEditor.monacoEditorStrings.text
 import typings.monacoEditor.monacoEditorStrings.top
+import typings.monacoEditor.monacoEditorStrings.tree
+import typings.monacoEditor.monacoEditorStrings.underline
 import typings.monacoEditor.monacoEditorStrings.wordWrapColumn
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -56,7 +64,11 @@ trait IEditorOptions extends js.Object {
     * Accept suggestions on ENTER.
     * Defaults to 'on'.
     */
-  var acceptSuggestionOnEnter: js.UndefOr[Boolean | on | smart | off] = js.undefined
+  var acceptSuggestionOnEnter: js.UndefOr[on | smart | off] = js.undefined
+  /**
+    * Controls the number of lines in the editor that can be read out by a screen reader
+    */
+  var accessibilityPageSize: js.UndefOr[Double] = js.undefined
   /**
     * Configure the editor's accessibility support.
     * Defaults to 'auto'. It is best to leave this to 'auto'.
@@ -81,10 +93,10 @@ trait IEditorOptions extends js.Object {
     */
   var autoClosingQuotes: js.UndefOr[EditorAutoClosingStrategy] = js.undefined
   /**
-    * Enable auto indentation adjustment.
-    * Defaults to false.
+    * Controls whether the editor should automatically adjust the indentation when users type, paste, move or indent lines.
+    * Defaults to advanced.
     */
-  var autoIndent: js.UndefOr[Boolean] = js.undefined
+  var autoIndent: js.UndefOr[none | keep | brackets | advanced | full] = js.undefined
   /**
     * Options for auto surrounding.
     * Defaults to always allowing auto surrounding.
@@ -96,10 +108,6 @@ trait IEditorOptions extends js.Object {
     * Defaults to false.
     */
   var automaticLayout: js.UndefOr[Boolean] = js.undefined
-  /**
-    * Code action kinds to be run on save.
-    */
-  var codeActionsOnSave: js.UndefOr[ICodeActionsOnSaveOptions] = js.undefined
   /**
     * Timeout for running code actions on save.
     */
@@ -114,6 +122,10 @@ trait IEditorOptions extends js.Object {
     */
   var colorDecorators: js.UndefOr[Boolean] = js.undefined
   /**
+    * Control the behaviour of comments in the editor.
+    */
+  var comments: js.UndefOr[IEditorCommentsOptions] = js.undefined
+  /**
     * Enable custom contextmenu.
     * Defaults to true.
     */
@@ -126,7 +138,7 @@ trait IEditorOptions extends js.Object {
     * Control the cursor animation style, possible values are 'blink', 'smooth', 'phase', 'expand' and 'solid'.
     * Defaults to 'blink'.
     */
-  var cursorBlinking: js.UndefOr[String] = js.undefined
+  var cursorBlinking: js.UndefOr[blink | smooth | phase | expand | solid] = js.undefined
   /**
     * Enable smooth caret animation.
     * Defaults to false.
@@ -136,19 +148,25 @@ trait IEditorOptions extends js.Object {
     * Control the cursor style, either 'block' or 'line'.
     * Defaults to 'line'.
     */
-  var cursorStyle: js.UndefOr[String] = js.undefined
+  var cursorStyle: js.UndefOr[line | block | underline | `line-thin` | `block-outline` | `underline-thin`] = js.undefined
   /**
     * Controls the minimal number of visible leading and trailing lines surrounding the cursor.
     * Defaults to 0.
     */
   var cursorSurroundingLines: js.UndefOr[Double] = js.undefined
   /**
+    * Controls when `cursorSurroundingLines` should be enforced
+    * Defaults to `default`, `cursorSurroundingLines` is not enforced when cursor position is changed
+    * by mouse.
+    */
+  var cursorSurroundingLinesStyle: js.UndefOr[default | all] = js.undefined
+  /**
     * Control the width of the cursor when cursorStyle is set to 'line'
     */
   var cursorWidth: js.UndefOr[Double] = js.undefined
   /**
-    * Disable the use of `will-change` for the editor margin and lines layers.
-    * The usage of `will-change` acts as a hint for browsers to create an extra layer.
+    * Disable the use of `transform: translate3d(0px, 0px, 0px)` for the editor margin and lines layers.
+    * The usage of `transform: translate3d(0px, 0px, 0px)` acts as a hint for browsers to create an extra layer.
     * Defaults to false.
     */
   var disableLayerHinting: js.UndefOr[Boolean] = js.undefined
@@ -185,10 +203,15 @@ trait IEditorOptions extends js.Object {
     */
   var fixedOverflowWidgets: js.UndefOr[Boolean] = js.undefined
   /**
-    * Enable code folding
+    * Enable code folding.
     * Defaults to true.
     */
   var folding: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Enable highlight for folded regions.
+    * Defaults to true.
+    */
+  var foldingHighlight: js.UndefOr[Boolean] = js.undefined
   /**
     * Selects the folding strategy. 'auto' uses the strategies contributed for the current document, 'indentation' uses the indentation based folding strategy.
     * Defaults to 'auto'.
@@ -202,7 +225,7 @@ trait IEditorOptions extends js.Object {
     * Enable font ligatures.
     * Defaults to false.
     */
-  var fontLigatures: js.UndefOr[Boolean] = js.undefined
+  var fontLigatures: js.UndefOr[Boolean | String] = js.undefined
   /**
     * The font size
     */
@@ -210,9 +233,7 @@ trait IEditorOptions extends js.Object {
   /**
     * The font weight
     */
-  var fontWeight: js.UndefOr[
-    normal | bold | bolder | lighter | initial | inherit | `100` | `200` | `300` | `400` | `500` | `600` | `700` | `800` | `900`
-  ] = js.undefined
+  var fontWeight: js.UndefOr[String] = js.undefined
   /**
     * Enable format on paste.
     * Defaults to false.
@@ -247,6 +268,10 @@ trait IEditorOptions extends js.Object {
     */
   var hover: js.UndefOr[IEditorHoverOptions] = js.undefined
   /**
+    * This editor is used inside a diff editor.
+    */
+  var inDiffEditor: js.UndefOr[Boolean] = js.undefined
+  /**
     * The letter spacing
     */
   var letterSpacing: js.UndefOr[Double] = js.undefined
@@ -270,9 +295,9 @@ trait IEditorOptions extends js.Object {
     * If it is a function, it will be invoked when rendering a line number and the return value will be rendered.
     * Otherwise, if it is a truey, line numbers will be rendered normally (equivalent of using an identity function).
     * Otherwise, line numbers will not be rendered.
-    * Defaults to true.
+    * Defaults to `on`.
     */
-  var lineNumbers: js.UndefOr[on | off | relative | interval | (js.Function1[/* lineNumber */ Double, String])] = js.undefined
+  var lineNumbers: js.UndefOr[LineNumbersType] = js.undefined
   /**
     * Control the width of line numbers, by reserving horizontal space for rendering at least an amount of digits.
     * Defaults to 5.
@@ -285,13 +310,18 @@ trait IEditorOptions extends js.Object {
   var links: js.UndefOr[Boolean] = js.undefined
   /**
     * Enable highlighting of matching brackets.
-    * Defaults to true.
+    * Defaults to 'always'.
     */
-  var matchBrackets: js.UndefOr[Boolean] = js.undefined
+  var matchBrackets: js.UndefOr[never | near | always] = js.undefined
   /**
     * Control the behavior and rendering of the minimap.
     */
   var minimap: js.UndefOr[IEditorMinimapOptions] = js.undefined
+  /**
+    * Control the mouse pointer style, either 'text' or 'default' or 'copy'
+    * Defaults to 'text'
+    */
+  var mouseStyle: js.UndefOr[text | default | copy] = js.undefined
   /**
     * A multiplier to be used on the `deltaX` and `deltaY` of mouse wheel scroll events.
     * Defaults to 1.
@@ -313,6 +343,11 @@ trait IEditorOptions extends js.Object {
     */
   var multiCursorModifier: js.UndefOr[ctrlCmd | alt] = js.undefined
   /**
+    * Configure the behaviour when pasting a text with the line count equal to the cursor count.
+    * Defaults to 'spread'.
+    */
+  var multiCursorPaste: js.UndefOr[spread | full] = js.undefined
+  /**
     * Enable semantic occurrences highlight.
     * Defaults to true.
     */
@@ -324,7 +359,7 @@ trait IEditorOptions extends js.Object {
   var overviewRulerBorder: js.UndefOr[Boolean] = js.undefined
   /**
     * The number of vertical lanes the overview ruler should render.
-    * Defaults to 2.
+    * Defaults to 3.
     */
   var overviewRulerLanes: js.UndefOr[Double] = js.undefined
   /**
@@ -332,13 +367,18 @@ trait IEditorOptions extends js.Object {
     */
   var parameterHints: js.UndefOr[IEditorParameterHintOptions] = js.undefined
   /**
+    * Controls whether to focus the inline editor in the peek widget by default.
+    * Defaults to false.
+    */
+  var peekWidgetDefaultFocus: js.UndefOr[tree | typings.monacoEditor.monacoEditorStrings.editor] = js.undefined
+  /**
     * Enable quick suggestions (shadow suggestions)
     * Defaults to true.
     */
-  var quickSuggestions: js.UndefOr[Boolean | AnonComments] = js.undefined
+  var quickSuggestions: js.UndefOr[Boolean | IQuickSuggestionsOptions] = js.undefined
   /**
     * Quick suggestions show delay (in ms)
-    * Defaults to 500 (ms)
+    * Defaults to 10 (ms)
     */
   var quickSuggestionsDelay: js.UndefOr[Double] = js.undefined
   /**
@@ -366,6 +406,11 @@ trait IEditorOptions extends js.Object {
     * Defaults to all.
     */
   var renderLineHighlight: js.UndefOr[none | gutter | line | all] = js.undefined
+  /**
+    * Should the editor render validation decorations.
+    * Defaults to editable.
+    */
+  var renderValidationDecorations: js.UndefOr[editable | on | off] = js.undefined
   /**
     * Enable rendering of whitespace.
     * Defaults to none.
@@ -466,15 +511,11 @@ trait IEditorOptions extends js.Object {
   /**
     * Enable tab completion.
     */
-  var tabCompletion: js.UndefOr[Boolean | on | off | onlySnippets] = js.undefined
+  var tabCompletion: js.UndefOr[on | off | onlySnippets] = js.undefined
   /**
     * Inserting and deleting whitespace follows tab stops.
     */
   var useTabStops: js.UndefOr[Boolean] = js.undefined
-  /**
-    * Enable word based suggestions. Defaults to 'true'
-    */
-  var wordBasedSuggestions: js.UndefOr[Boolean] = js.undefined
   /**
     * A string containing the word separators used when doing word navigation.
     * Defaults to `~!@#$%^&*()-=+[{]}\\|;:\'",.<>/?
@@ -491,19 +532,14 @@ trait IEditorOptions extends js.Object {
   var wordWrap: js.UndefOr[off | on | wordWrapColumn | bounded] = js.undefined
   /**
     * Configure word wrapping characters. A break will be introduced after these characters.
-    * Defaults to ' \t})]?|&,;'.
+    * Defaults to ' \t})]?|/&.,;¢°′″‰℃、。｡､￠，．：；？！％・･ゝゞヽヾーァィゥェォッャュョヮヵヶぁぃぅぇぉっゃゅょゎゕゖㇰㇱㇲㇳㇴㇵㇶㇷㇸㇹㇺㇻㇼㇽㇾㇿ々〻ｧｨｩｪｫｬｭｮｯｰ”〉》」』】〕）］｝｣'.
     */
   var wordWrapBreakAfterCharacters: js.UndefOr[String] = js.undefined
   /**
     * Configure word wrapping characters. A break will be introduced before these characters.
-    * Defaults to '{([+'.
+    * Defaults to '([{‘“〈《「『【〔（［｛｢£¥＄￡￥+＋'.
     */
   var wordWrapBreakBeforeCharacters: js.UndefOr[String] = js.undefined
-  /**
-    * Configure word wrapping characters. A break will be introduced after these characters only if no `wordWrapBreakBeforeCharacters` or `wordWrapBreakAfterCharacters` were found.
-    * Defaults to '.'.
-    */
-  var wordWrapBreakObtrusiveCharacters: js.UndefOr[String] = js.undefined
   /**
     * Control the wrapping of the editor.
     * When `wordWrap` = "off", the lines will never wrap.
@@ -522,32 +558,39 @@ trait IEditorOptions extends js.Object {
     * Control indentation of wrapped lines. Can be: 'none', 'same', 'indent' or 'deepIndent'.
     * Defaults to 'same' in vscode and to 'none' in monaco-editor.
     */
-  var wrappingIndent: js.UndefOr[String] = js.undefined
+  var wrappingIndent: js.UndefOr[none | same | indent | deepIndent] = js.undefined
+  /**
+    * Controls the wrapping strategy to use.
+    * Defaults to 'simple'.
+    */
+  var wrappingStrategy: js.UndefOr[simple | advanced] = js.undefined
 }
 
 object IEditorOptions {
   @scala.inline
   def apply(
     acceptSuggestionOnCommitCharacter: js.UndefOr[Boolean] = js.undefined,
-    acceptSuggestionOnEnter: Boolean | on | smart | off = null,
+    acceptSuggestionOnEnter: on | smart | off = null,
+    accessibilityPageSize: Int | Double = null,
     accessibilitySupport: auto | off | on = null,
     ariaLabel: String = null,
     autoClosingBrackets: EditorAutoClosingStrategy = null,
     autoClosingOvertype: EditorAutoClosingOvertypeStrategy = null,
     autoClosingQuotes: EditorAutoClosingStrategy = null,
-    autoIndent: js.UndefOr[Boolean] = js.undefined,
+    autoIndent: none | keep | brackets | advanced | full = null,
     autoSurround: EditorAutoSurroundStrategy = null,
     automaticLayout: js.UndefOr[Boolean] = js.undefined,
-    codeActionsOnSave: ICodeActionsOnSaveOptions = null,
     codeActionsOnSaveTimeout: Int | Double = null,
     codeLens: js.UndefOr[Boolean] = js.undefined,
     colorDecorators: js.UndefOr[Boolean] = js.undefined,
+    comments: IEditorCommentsOptions = null,
     contextmenu: js.UndefOr[Boolean] = js.undefined,
     copyWithSyntaxHighlighting: js.UndefOr[Boolean] = js.undefined,
-    cursorBlinking: String = null,
+    cursorBlinking: blink | smooth | phase | expand | solid = null,
     cursorSmoothCaretAnimation: js.UndefOr[Boolean] = js.undefined,
-    cursorStyle: String = null,
+    cursorStyle: line | block | underline | `line-thin` | `block-outline` | `underline-thin` = null,
     cursorSurroundingLines: Int | Double = null,
+    cursorSurroundingLinesStyle: default | all = null,
     cursorWidth: Int | Double = null,
     disableLayerHinting: js.UndefOr[Boolean] = js.undefined,
     disableMonospaceOptimizations: js.UndefOr[Boolean] = js.undefined,
@@ -558,11 +601,12 @@ object IEditorOptions {
     find: IEditorFindOptions = null,
     fixedOverflowWidgets: js.UndefOr[Boolean] = js.undefined,
     folding: js.UndefOr[Boolean] = js.undefined,
+    foldingHighlight: js.UndefOr[Boolean] = js.undefined,
     foldingStrategy: auto | indentation = null,
     fontFamily: String = null,
-    fontLigatures: js.UndefOr[Boolean] = js.undefined,
+    fontLigatures: Boolean | String = null,
     fontSize: Int | Double = null,
-    fontWeight: normal | bold | bolder | lighter | initial | inherit | `100` | `200` | `300` | `400` | `500` | `600` | `700` | `800` | `900` = null,
+    fontWeight: String = null,
     formatOnPaste: js.UndefOr[Boolean] = js.undefined,
     formatOnType: js.UndefOr[Boolean] = js.undefined,
     glyphMargin: js.UndefOr[Boolean] = js.undefined,
@@ -570,30 +614,35 @@ object IEditorOptions {
     hideCursorInOverviewRuler: js.UndefOr[Boolean] = js.undefined,
     highlightActiveIndentGuide: js.UndefOr[Boolean] = js.undefined,
     hover: IEditorHoverOptions = null,
+    inDiffEditor: js.UndefOr[Boolean] = js.undefined,
     letterSpacing: Int | Double = null,
     lightbulb: IEditorLightbulbOptions = null,
     lineDecorationsWidth: Double | String = null,
     lineHeight: Int | Double = null,
-    lineNumbers: on | off | relative | interval | (js.Function1[/* lineNumber */ Double, String]) = null,
+    lineNumbers: LineNumbersType = null,
     lineNumbersMinChars: Int | Double = null,
     links: js.UndefOr[Boolean] = js.undefined,
-    matchBrackets: js.UndefOr[Boolean] = js.undefined,
+    matchBrackets: never | near | always = null,
     minimap: IEditorMinimapOptions = null,
+    mouseStyle: text | default | copy = null,
     mouseWheelScrollSensitivity: Int | Double = null,
     mouseWheelZoom: js.UndefOr[Boolean] = js.undefined,
     multiCursorMergeOverlapping: js.UndefOr[Boolean] = js.undefined,
     multiCursorModifier: ctrlCmd | alt = null,
+    multiCursorPaste: spread | full = null,
     occurrencesHighlight: js.UndefOr[Boolean] = js.undefined,
     overviewRulerBorder: js.UndefOr[Boolean] = js.undefined,
     overviewRulerLanes: Int | Double = null,
     parameterHints: IEditorParameterHintOptions = null,
-    quickSuggestions: Boolean | AnonComments = null,
+    peekWidgetDefaultFocus: tree | typings.monacoEditor.monacoEditorStrings.editor = null,
+    quickSuggestions: Boolean | IQuickSuggestionsOptions = null,
     quickSuggestionsDelay: Int | Double = null,
     readOnly: js.UndefOr[Boolean] = js.undefined,
     renderControlCharacters: js.UndefOr[Boolean] = js.undefined,
     renderFinalNewline: js.UndefOr[Boolean] = js.undefined,
     renderIndentGuides: js.UndefOr[Boolean] = js.undefined,
     renderLineHighlight: none | gutter | line | all = null,
+    renderValidationDecorations: editable | on | off = null,
     renderWhitespace: none | boundary | selection | all = null,
     revealHorizontalRightPadding: Int | Double = null,
     roundedSelection: js.UndefOr[Boolean] = js.undefined,
@@ -614,39 +663,40 @@ object IEditorOptions {
     suggestLineHeight: Int | Double = null,
     suggestOnTriggerCharacters: js.UndefOr[Boolean] = js.undefined,
     suggestSelection: first | recentlyUsed | recentlyUsedByPrefix = null,
-    tabCompletion: Boolean | on | off | onlySnippets = null,
+    tabCompletion: on | off | onlySnippets = null,
     useTabStops: js.UndefOr[Boolean] = js.undefined,
-    wordBasedSuggestions: js.UndefOr[Boolean] = js.undefined,
     wordSeparators: String = null,
     wordWrap: off | on | wordWrapColumn | bounded = null,
     wordWrapBreakAfterCharacters: String = null,
     wordWrapBreakBeforeCharacters: String = null,
-    wordWrapBreakObtrusiveCharacters: String = null,
     wordWrapColumn: Int | Double = null,
     wordWrapMinified: js.UndefOr[Boolean] = js.undefined,
-    wrappingIndent: String = null
+    wrappingIndent: none | same | indent | deepIndent = null,
+    wrappingStrategy: simple | advanced = null
   ): IEditorOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(acceptSuggestionOnCommitCharacter)) __obj.updateDynamic("acceptSuggestionOnCommitCharacter")(acceptSuggestionOnCommitCharacter.asInstanceOf[js.Any])
     if (acceptSuggestionOnEnter != null) __obj.updateDynamic("acceptSuggestionOnEnter")(acceptSuggestionOnEnter.asInstanceOf[js.Any])
+    if (accessibilityPageSize != null) __obj.updateDynamic("accessibilityPageSize")(accessibilityPageSize.asInstanceOf[js.Any])
     if (accessibilitySupport != null) __obj.updateDynamic("accessibilitySupport")(accessibilitySupport.asInstanceOf[js.Any])
     if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel.asInstanceOf[js.Any])
     if (autoClosingBrackets != null) __obj.updateDynamic("autoClosingBrackets")(autoClosingBrackets.asInstanceOf[js.Any])
     if (autoClosingOvertype != null) __obj.updateDynamic("autoClosingOvertype")(autoClosingOvertype.asInstanceOf[js.Any])
     if (autoClosingQuotes != null) __obj.updateDynamic("autoClosingQuotes")(autoClosingQuotes.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoIndent)) __obj.updateDynamic("autoIndent")(autoIndent.asInstanceOf[js.Any])
+    if (autoIndent != null) __obj.updateDynamic("autoIndent")(autoIndent.asInstanceOf[js.Any])
     if (autoSurround != null) __obj.updateDynamic("autoSurround")(autoSurround.asInstanceOf[js.Any])
     if (!js.isUndefined(automaticLayout)) __obj.updateDynamic("automaticLayout")(automaticLayout.asInstanceOf[js.Any])
-    if (codeActionsOnSave != null) __obj.updateDynamic("codeActionsOnSave")(codeActionsOnSave.asInstanceOf[js.Any])
     if (codeActionsOnSaveTimeout != null) __obj.updateDynamic("codeActionsOnSaveTimeout")(codeActionsOnSaveTimeout.asInstanceOf[js.Any])
     if (!js.isUndefined(codeLens)) __obj.updateDynamic("codeLens")(codeLens.asInstanceOf[js.Any])
     if (!js.isUndefined(colorDecorators)) __obj.updateDynamic("colorDecorators")(colorDecorators.asInstanceOf[js.Any])
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
     if (!js.isUndefined(contextmenu)) __obj.updateDynamic("contextmenu")(contextmenu.asInstanceOf[js.Any])
     if (!js.isUndefined(copyWithSyntaxHighlighting)) __obj.updateDynamic("copyWithSyntaxHighlighting")(copyWithSyntaxHighlighting.asInstanceOf[js.Any])
     if (cursorBlinking != null) __obj.updateDynamic("cursorBlinking")(cursorBlinking.asInstanceOf[js.Any])
     if (!js.isUndefined(cursorSmoothCaretAnimation)) __obj.updateDynamic("cursorSmoothCaretAnimation")(cursorSmoothCaretAnimation.asInstanceOf[js.Any])
     if (cursorStyle != null) __obj.updateDynamic("cursorStyle")(cursorStyle.asInstanceOf[js.Any])
     if (cursorSurroundingLines != null) __obj.updateDynamic("cursorSurroundingLines")(cursorSurroundingLines.asInstanceOf[js.Any])
+    if (cursorSurroundingLinesStyle != null) __obj.updateDynamic("cursorSurroundingLinesStyle")(cursorSurroundingLinesStyle.asInstanceOf[js.Any])
     if (cursorWidth != null) __obj.updateDynamic("cursorWidth")(cursorWidth.asInstanceOf[js.Any])
     if (!js.isUndefined(disableLayerHinting)) __obj.updateDynamic("disableLayerHinting")(disableLayerHinting.asInstanceOf[js.Any])
     if (!js.isUndefined(disableMonospaceOptimizations)) __obj.updateDynamic("disableMonospaceOptimizations")(disableMonospaceOptimizations.asInstanceOf[js.Any])
@@ -657,9 +707,10 @@ object IEditorOptions {
     if (find != null) __obj.updateDynamic("find")(find.asInstanceOf[js.Any])
     if (!js.isUndefined(fixedOverflowWidgets)) __obj.updateDynamic("fixedOverflowWidgets")(fixedOverflowWidgets.asInstanceOf[js.Any])
     if (!js.isUndefined(folding)) __obj.updateDynamic("folding")(folding.asInstanceOf[js.Any])
+    if (!js.isUndefined(foldingHighlight)) __obj.updateDynamic("foldingHighlight")(foldingHighlight.asInstanceOf[js.Any])
     if (foldingStrategy != null) __obj.updateDynamic("foldingStrategy")(foldingStrategy.asInstanceOf[js.Any])
     if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
-    if (!js.isUndefined(fontLigatures)) __obj.updateDynamic("fontLigatures")(fontLigatures.asInstanceOf[js.Any])
+    if (fontLigatures != null) __obj.updateDynamic("fontLigatures")(fontLigatures.asInstanceOf[js.Any])
     if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
     if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
     if (!js.isUndefined(formatOnPaste)) __obj.updateDynamic("formatOnPaste")(formatOnPaste.asInstanceOf[js.Any])
@@ -669,6 +720,7 @@ object IEditorOptions {
     if (!js.isUndefined(hideCursorInOverviewRuler)) __obj.updateDynamic("hideCursorInOverviewRuler")(hideCursorInOverviewRuler.asInstanceOf[js.Any])
     if (!js.isUndefined(highlightActiveIndentGuide)) __obj.updateDynamic("highlightActiveIndentGuide")(highlightActiveIndentGuide.asInstanceOf[js.Any])
     if (hover != null) __obj.updateDynamic("hover")(hover.asInstanceOf[js.Any])
+    if (!js.isUndefined(inDiffEditor)) __obj.updateDynamic("inDiffEditor")(inDiffEditor.asInstanceOf[js.Any])
     if (letterSpacing != null) __obj.updateDynamic("letterSpacing")(letterSpacing.asInstanceOf[js.Any])
     if (lightbulb != null) __obj.updateDynamic("lightbulb")(lightbulb.asInstanceOf[js.Any])
     if (lineDecorationsWidth != null) __obj.updateDynamic("lineDecorationsWidth")(lineDecorationsWidth.asInstanceOf[js.Any])
@@ -676,16 +728,19 @@ object IEditorOptions {
     if (lineNumbers != null) __obj.updateDynamic("lineNumbers")(lineNumbers.asInstanceOf[js.Any])
     if (lineNumbersMinChars != null) __obj.updateDynamic("lineNumbersMinChars")(lineNumbersMinChars.asInstanceOf[js.Any])
     if (!js.isUndefined(links)) __obj.updateDynamic("links")(links.asInstanceOf[js.Any])
-    if (!js.isUndefined(matchBrackets)) __obj.updateDynamic("matchBrackets")(matchBrackets.asInstanceOf[js.Any])
+    if (matchBrackets != null) __obj.updateDynamic("matchBrackets")(matchBrackets.asInstanceOf[js.Any])
     if (minimap != null) __obj.updateDynamic("minimap")(minimap.asInstanceOf[js.Any])
+    if (mouseStyle != null) __obj.updateDynamic("mouseStyle")(mouseStyle.asInstanceOf[js.Any])
     if (mouseWheelScrollSensitivity != null) __obj.updateDynamic("mouseWheelScrollSensitivity")(mouseWheelScrollSensitivity.asInstanceOf[js.Any])
     if (!js.isUndefined(mouseWheelZoom)) __obj.updateDynamic("mouseWheelZoom")(mouseWheelZoom.asInstanceOf[js.Any])
     if (!js.isUndefined(multiCursorMergeOverlapping)) __obj.updateDynamic("multiCursorMergeOverlapping")(multiCursorMergeOverlapping.asInstanceOf[js.Any])
     if (multiCursorModifier != null) __obj.updateDynamic("multiCursorModifier")(multiCursorModifier.asInstanceOf[js.Any])
+    if (multiCursorPaste != null) __obj.updateDynamic("multiCursorPaste")(multiCursorPaste.asInstanceOf[js.Any])
     if (!js.isUndefined(occurrencesHighlight)) __obj.updateDynamic("occurrencesHighlight")(occurrencesHighlight.asInstanceOf[js.Any])
     if (!js.isUndefined(overviewRulerBorder)) __obj.updateDynamic("overviewRulerBorder")(overviewRulerBorder.asInstanceOf[js.Any])
     if (overviewRulerLanes != null) __obj.updateDynamic("overviewRulerLanes")(overviewRulerLanes.asInstanceOf[js.Any])
     if (parameterHints != null) __obj.updateDynamic("parameterHints")(parameterHints.asInstanceOf[js.Any])
+    if (peekWidgetDefaultFocus != null) __obj.updateDynamic("peekWidgetDefaultFocus")(peekWidgetDefaultFocus.asInstanceOf[js.Any])
     if (quickSuggestions != null) __obj.updateDynamic("quickSuggestions")(quickSuggestions.asInstanceOf[js.Any])
     if (quickSuggestionsDelay != null) __obj.updateDynamic("quickSuggestionsDelay")(quickSuggestionsDelay.asInstanceOf[js.Any])
     if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
@@ -693,6 +748,7 @@ object IEditorOptions {
     if (!js.isUndefined(renderFinalNewline)) __obj.updateDynamic("renderFinalNewline")(renderFinalNewline.asInstanceOf[js.Any])
     if (!js.isUndefined(renderIndentGuides)) __obj.updateDynamic("renderIndentGuides")(renderIndentGuides.asInstanceOf[js.Any])
     if (renderLineHighlight != null) __obj.updateDynamic("renderLineHighlight")(renderLineHighlight.asInstanceOf[js.Any])
+    if (renderValidationDecorations != null) __obj.updateDynamic("renderValidationDecorations")(renderValidationDecorations.asInstanceOf[js.Any])
     if (renderWhitespace != null) __obj.updateDynamic("renderWhitespace")(renderWhitespace.asInstanceOf[js.Any])
     if (revealHorizontalRightPadding != null) __obj.updateDynamic("revealHorizontalRightPadding")(revealHorizontalRightPadding.asInstanceOf[js.Any])
     if (!js.isUndefined(roundedSelection)) __obj.updateDynamic("roundedSelection")(roundedSelection.asInstanceOf[js.Any])
@@ -715,15 +771,14 @@ object IEditorOptions {
     if (suggestSelection != null) __obj.updateDynamic("suggestSelection")(suggestSelection.asInstanceOf[js.Any])
     if (tabCompletion != null) __obj.updateDynamic("tabCompletion")(tabCompletion.asInstanceOf[js.Any])
     if (!js.isUndefined(useTabStops)) __obj.updateDynamic("useTabStops")(useTabStops.asInstanceOf[js.Any])
-    if (!js.isUndefined(wordBasedSuggestions)) __obj.updateDynamic("wordBasedSuggestions")(wordBasedSuggestions.asInstanceOf[js.Any])
     if (wordSeparators != null) __obj.updateDynamic("wordSeparators")(wordSeparators.asInstanceOf[js.Any])
     if (wordWrap != null) __obj.updateDynamic("wordWrap")(wordWrap.asInstanceOf[js.Any])
     if (wordWrapBreakAfterCharacters != null) __obj.updateDynamic("wordWrapBreakAfterCharacters")(wordWrapBreakAfterCharacters.asInstanceOf[js.Any])
     if (wordWrapBreakBeforeCharacters != null) __obj.updateDynamic("wordWrapBreakBeforeCharacters")(wordWrapBreakBeforeCharacters.asInstanceOf[js.Any])
-    if (wordWrapBreakObtrusiveCharacters != null) __obj.updateDynamic("wordWrapBreakObtrusiveCharacters")(wordWrapBreakObtrusiveCharacters.asInstanceOf[js.Any])
     if (wordWrapColumn != null) __obj.updateDynamic("wordWrapColumn")(wordWrapColumn.asInstanceOf[js.Any])
     if (!js.isUndefined(wordWrapMinified)) __obj.updateDynamic("wordWrapMinified")(wordWrapMinified.asInstanceOf[js.Any])
     if (wrappingIndent != null) __obj.updateDynamic("wrappingIndent")(wrappingIndent.asInstanceOf[js.Any])
+    if (wrappingStrategy != null) __obj.updateDynamic("wrappingStrategy")(wrappingStrategy.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEditorOptions]
   }
 }

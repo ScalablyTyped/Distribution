@@ -32,7 +32,10 @@ trait ChartOptions extends js.Object {
     * ms. If used as a configuration object, the following properties are
     * supported:
     *
-    *  (see online documentation for example)
+    * - **duration**: The duration of the animation in milliseconds.
+    *
+    * - **easing**: A string reference to an easing function set on the `Math`
+    * object. See the easing demo.
     */
   var animation: js.UndefOr[Boolean | AnimationOptionsObject] = js.undefined
   /**
@@ -156,6 +159,12 @@ trait ChartOptions extends js.Object {
     */
   var marginTop: js.UndefOr[Double] = js.undefined
   /**
+    * (Highcharts, Highstock, Highmaps, Gantt) Callback function to override
+    * the default function that formats all the numbers in the chart. Returns a
+    * string with the formatted number.
+    */
+  var numberFormatter: js.UndefOr[NumberFormatterCallbackFunction] = js.undefined
+  /**
     * (Highcharts) Options to render charts in 3 dimensions. This feature
     * requires `highcharts-3d.js`, found in the download package or online at
     * code.highcharts.com/highcharts-3d.js.
@@ -177,7 +186,7 @@ trait ChartOptions extends js.Object {
     * (default), panning requires two fingers. To allow panning with one
     * finger, set `followTouchMove` to `false`.
     */
-  var panning: js.UndefOr[Boolean] = js.undefined
+  var panning: js.UndefOr[ChartPanningOptions] = js.undefined
   /**
     * (Highcharts) Common options for all yAxes rendered in a parallel
     * coordinates plot. This feature requires
@@ -386,9 +395,10 @@ object ChartOptions {
     marginLeft: Int | Double = null,
     marginRight: Int | Double = null,
     marginTop: Int | Double = null,
+    numberFormatter: (/* number */ Double, /* decimals */ Double, /* decimalPoint */ js.UndefOr[String], /* thousandsSep */ js.UndefOr[String]) => String = null,
     options3d: Chart3dOptions = null,
     panKey: OptionsPanKeyValue = null,
-    panning: js.UndefOr[Boolean] = js.undefined,
+    panning: ChartPanningOptions = null,
     parallelAxes: ChartParallelAxesOptions | js.Array[ChartParallelAxesOptions] = null,
     parallelCoordinates: js.UndefOr[Boolean] = js.undefined,
     pinchType: OptionsPinchTypeValue = null,
@@ -438,9 +448,10 @@ object ChartOptions {
     if (marginLeft != null) __obj.updateDynamic("marginLeft")(marginLeft.asInstanceOf[js.Any])
     if (marginRight != null) __obj.updateDynamic("marginRight")(marginRight.asInstanceOf[js.Any])
     if (marginTop != null) __obj.updateDynamic("marginTop")(marginTop.asInstanceOf[js.Any])
+    if (numberFormatter != null) __obj.updateDynamic("numberFormatter")(js.Any.fromFunction4(numberFormatter))
     if (options3d != null) __obj.updateDynamic("options3d")(options3d.asInstanceOf[js.Any])
     if (panKey != null) __obj.updateDynamic("panKey")(panKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(panning)) __obj.updateDynamic("panning")(panning.asInstanceOf[js.Any])
+    if (panning != null) __obj.updateDynamic("panning")(panning.asInstanceOf[js.Any])
     if (parallelAxes != null) __obj.updateDynamic("parallelAxes")(parallelAxes.asInstanceOf[js.Any])
     if (!js.isUndefined(parallelCoordinates)) __obj.updateDynamic("parallelCoordinates")(parallelCoordinates.asInstanceOf[js.Any])
     if (pinchType != null) __obj.updateDynamic("pinchType")(pinchType.asInstanceOf[js.Any])

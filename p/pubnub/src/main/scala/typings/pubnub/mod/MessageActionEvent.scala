@@ -1,13 +1,13 @@
 package typings.pubnub.mod
 
-import typings.pubnub.AnonDataEventMessageAction
+import typings.pubnub.AnonDataEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MessageActionEvent extends js.Object {
   var channel: String
-  var message: AnonDataEventMessageAction
+  var message: AnonDataEvent
   var publisher: String
   var subscription: js.UndefOr[String] = js.undefined
   var timetoken: String
@@ -17,7 +17,7 @@ object MessageActionEvent {
   @scala.inline
   def apply(
     channel: String,
-    message: AnonDataEventMessageAction,
+    message: AnonDataEvent,
     publisher: String,
     timetoken: String,
     subscription: String = null

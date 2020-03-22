@@ -1,7 +1,7 @@
 package typings.angularCompiler.publicApiMod
 
 import typings.angularCompiler.AnonChangeDetection
-import typings.angularCompiler.AnonChangeDetectionComponentFactory
+import typings.angularCompiler.AnonComponentFactory
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class CompileDirectiveMetadata protected ()
   extends typings.angularCompiler.srcCompilerMod.CompileDirectiveMetadata {
-  def this(hasIsHostTypeIsComponentSelectorExportAsChangeDetectionInputsOutputsHostListenersHostPropertiesHostAttributesProvidersViewProvidersQueriesGuardsViewQueriesEntryComponentsTemplateComponentViewTypeRendererTypeComponentFactory: AnonChangeDetectionComponentFactory) = this()
+  def this(hasIsHostTypeIsComponentSelectorExportAsChangeDetectionInputsOutputsHostListenersHostPropertiesHostAttributesProvidersViewProvidersQueriesGuardsViewQueriesEntryComponentsTemplateComponentViewTypeRendererTypeComponentFactory: AnonComponentFactory) = this()
 }
 
 /* static members */

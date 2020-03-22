@@ -2,9 +2,9 @@ package typings.gapiClientAppengine.gapi.client.appengine
 
 import typings.gapiClient.gapi.client.Request_
 import typings.gapiClientAppengine.AnonAccesstoken
-import typings.gapiClientAppengine.AnonAccesstokenAltAppsIdBearertokenCallbackFields
-import typings.gapiClientAppengine.AnonAccesstokenAltAppsIdBearertokenCallbackFieldsIngressRulesId
-import typings.gapiClientAppengine.AnonAccesstokenAltAppsIdBearertokenCallbackFieldsKey
+import typings.gapiClientAppengine.AnonIngressRulesId
+import typings.gapiClientAppengine.AnonKey
+import typings.gapiClientAppengine.AnonOauthtoken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,13 +18,13 @@ trait IngressRulesResource extends js.Object {
   /** Creates a firewall rule for the application. */
   def create(request: AnonAccesstoken): Request_[FirewallRule]
   /** Deletes the specified firewall rule. */
-  def delete(request: AnonAccesstokenAltAppsIdBearertokenCallbackFields): Request_[js.Object]
+  def delete(request: AnonIngressRulesId): Request_[js.Object]
   /** Gets the specified firewall rule. */
-  def get(request: AnonAccesstokenAltAppsIdBearertokenCallbackFields): Request_[FirewallRule]
+  def get(request: AnonIngressRulesId): Request_[FirewallRule]
   /** Lists the firewall rules of an application. */
-  def list(request: AnonAccesstokenAltAppsIdBearertokenCallbackFieldsKey): Request_[ListIngressRulesResponse]
+  def list(request: AnonKey): Request_[ListIngressRulesResponse]
   /** Updates the specified firewall rule. */
-  def patch(request: AnonAccesstokenAltAppsIdBearertokenCallbackFieldsIngressRulesId): Request_[FirewallRule]
+  def patch(request: AnonOauthtoken): Request_[FirewallRule]
 }
 
 object IngressRulesResource {
@@ -32,10 +32,10 @@ object IngressRulesResource {
   def apply(
     batchUpdate: AnonAccesstoken => Request_[BatchUpdateIngressRulesResponse],
     create: AnonAccesstoken => Request_[FirewallRule],
-    delete: AnonAccesstokenAltAppsIdBearertokenCallbackFields => Request_[js.Object],
-    get: AnonAccesstokenAltAppsIdBearertokenCallbackFields => Request_[FirewallRule],
-    list: AnonAccesstokenAltAppsIdBearertokenCallbackFieldsKey => Request_[ListIngressRulesResponse],
-    patch: AnonAccesstokenAltAppsIdBearertokenCallbackFieldsIngressRulesId => Request_[FirewallRule]
+    delete: AnonIngressRulesId => Request_[js.Object],
+    get: AnonIngressRulesId => Request_[FirewallRule],
+    list: AnonKey => Request_[ListIngressRulesResponse],
+    patch: AnonOauthtoken => Request_[FirewallRule]
   ): IngressRulesResource = {
     val __obj = js.Dynamic.literal(batchUpdate = js.Any.fromFunction1(batchUpdate), create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch))
   

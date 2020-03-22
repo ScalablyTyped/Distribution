@@ -1,15 +1,24 @@
 package typings.pgPromise
 
-import org.scalablytyped.runtime.Instantiable0
-import typings.pgMinify.mod.IMinifyOptions
+import typings.pgPromise.mod.IFormattingOptions
+import typings.pgPromise.mod.QueryFile
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait AnonOptions extends js.Object {
-  var SQLParsingError: Instantiable0[typings.pgMinify.mod.SQLParsingError] = js.native
-  def apply(sql: String): String = js.native
-  def apply(sql: String, options: IMinifyOptions): String = js.native
+  var options: js.UndefOr[IFormattingOptions] = js.undefined
+  var query: String | QueryFile
+  var values: js.UndefOr[js.Any] = js.undefined
+}
+
+object AnonOptions {
+  @scala.inline
+  def apply(query: String | QueryFile, options: IFormattingOptions = null, values: js.Any = null): AnonOptions = {
+    val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AnonOptions]
+  }
 }
 

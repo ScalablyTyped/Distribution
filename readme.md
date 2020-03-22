@@ -16,7 +16,7 @@ Expect the first stable release soon.
 
 ## About
 
-This is the home of Scala.js typings for **8416** Javascript libraries,
+This is the home of Scala.js typings for **8505** Javascript libraries,
  which should span more or less the entire set of modern and popular libraries.
 
 This should make it one of the biggest Scala repos on the planet:
@@ -25,13 +25,13 @@ This should make it one of the biggest Scala repos on the planet:
 --------------------------------------------------------------------------------
  Language             Files        Lines        Blank      Comment         Code
 --------------------------------------------------------------------------------
- Scala               369800     15621080      1547412      3720654     10353014
- Markdown              8588       305672       101558            0       204114
+ Scala               375089     16422031      1568393      3781633     11072005
+ Markdown              8707       309991       102998            0       206993
  JSON                     9           90            0            0           90
  Makefile                 5           69           16            0           53
  HTML                     1            6            0            0            6
 --------------------------------------------------------------------------------
- Total               378403     15926917      1648986      3720654     10557277
+ Total               383811     16732187      1671407      3781633     11279147
 --------------------------------------------------------------------------------
 
 ```
@@ -100,7 +100,7 @@ These should be the main steps you would have to follow:
 ScalablyTyped is hosted at bintray, so make sure to include the resolver
 ```scala
   resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
-  addSbtPlugin("org.scalablytyped" % "sbt-scalablytyped" % "202002201029")
+  addSbtPlugin("org.scalablytyped" % "sbt-scalablytyped" % "202003210711")
   If you're still on 2.12, this is the last distribution release.
   addSbtPlugin("org.scalablytyped" % "sbt-scalablytyped" % "202001240947")
 ```
@@ -138,7 +138,6 @@ As you can imagine with all this casting and other nonsense,
 a more scala-like facade will often be a better way.
 
 For now we have the following facades:
-- [antd-slinky](facades/antd-slinky)
 - [react-router-native-slinky](facades/react-router-native-slinky)
 - [react-router-dom-slinky](facades/react-router-dom-slinky)
 - [react](facades/react)

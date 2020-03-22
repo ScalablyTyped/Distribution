@@ -66,7 +66,7 @@ import typings.antDesignReactNative.antDesignReactNativeStrings.username
 import typings.antDesignReactNative.antDesignReactNativeStrings.words
 import typings.antDesignReactNative.antDesignReactNativeStrings.yes
 import typings.antDesignReactNative.antDesignReactNativeStrings.yesExcludeDescendants
-import typings.reactNative.AnonEndStart
+import typings.reactNative.AnonStart
 import typings.reactNative.mod.AccessibilityActionEvent
 import typings.reactNative.mod.AccessibilityActionInfo
 import typings.reactNative.mod.AccessibilityRole
@@ -189,7 +189,7 @@ trait TextInputProps extends js.Object {
   var scrollEnabled: js.UndefOr[Boolean] = js.undefined
   var secureTextEntry: js.UndefOr[Boolean] = js.undefined
   var selectTextOnFocus: js.UndefOr[Boolean] = js.undefined
-  var selection: js.UndefOr[AnonEndStart] = js.undefined
+  var selection: js.UndefOr[AnonStart] = js.undefined
   var selectionColor: js.UndefOr[String] = js.undefined
   var selectionState: js.UndefOr[DocumentSelectionState] = js.undefined
   var shouldRasterizeIOS: js.UndefOr[Boolean] = js.undefined
@@ -298,7 +298,7 @@ object TextInputProps {
     scrollEnabled: js.UndefOr[Boolean] = js.undefined,
     secureTextEntry: js.UndefOr[Boolean] = js.undefined,
     selectTextOnFocus: js.UndefOr[Boolean] = js.undefined,
-    selection: AnonEndStart = null,
+    selection: AnonStart = null,
     selectionColor: String = null,
     selectionState: DocumentSelectionState = null,
     shouldRasterizeIOS: js.UndefOr[Boolean] = js.undefined,

@@ -3,8 +3,8 @@ package typings.mathjs.mod
 import typings.decimalJs.mod.Decimal
 import typings.mathjs.AnonCoefficients
 import typings.mathjs.AnonL
-import typings.mathjs.AnonLR
 import typings.mathjs.AnonQ
+import typings.mathjs.AnonR
 import typings.mathjs.AnonSimplify
 import typings.mathjs.mathjsBooleans.`false`
 import typings.mathjs.mathjsBooleans.`true`
@@ -2340,10 +2340,10 @@ trait MathJsStatic extends FactoryDependencies {
   def sign(x: Matrix): Matrix = js.native
   def sign(x: Unit): Unit = js.native
   def simplify(expr: String): MathNode = js.native
-  def simplify(expr: String, rules: js.Array[AnonLR | String | (js.Function1[/* node */ MathNode, MathNode])]): MathNode = js.native
+  def simplify(expr: String, rules: js.Array[AnonR | String | (js.Function1[/* node */ MathNode, MathNode])]): MathNode = js.native
   def simplify(
     expr: String,
-    rules: js.Array[AnonLR | String | (js.Function1[/* node */ MathNode, MathNode])],
+    rules: js.Array[AnonR | String | (js.Function1[/* node */ MathNode, MathNode])],
     scope: js.Object
   ): MathNode = js.native
   /**
@@ -2357,10 +2357,10 @@ trait MathJsStatic extends FactoryDependencies {
     * @returns Returns the simplified form of expr
     */
   def simplify(expr: MathNode): MathNode = js.native
-  def simplify(expr: MathNode, rules: js.Array[AnonLR | String | (js.Function1[/* node */ MathNode, MathNode])]): MathNode = js.native
+  def simplify(expr: MathNode, rules: js.Array[AnonR | String | (js.Function1[/* node */ MathNode, MathNode])]): MathNode = js.native
   def simplify(
     expr: MathNode,
-    rules: js.Array[AnonLR | String | (js.Function1[/* node */ MathNode, MathNode])],
+    rules: js.Array[AnonR | String | (js.Function1[/* node */ MathNode, MathNode])],
     scope: js.Object
   ): MathNode = js.native
   /**

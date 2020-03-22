@@ -1,7 +1,7 @@
 package typings.i18next.mod
 
 import typings.i18next.AnonAllowedHosts
-import typings.i18next.AnonAltKey
+import typings.i18next.AnonAutoOpen
 import typings.i18next.i18nextBooleans.`false`
 import typings.i18next.i18nextStrings.all
 import typings.i18next.i18nextStrings.current
@@ -70,7 +70,7 @@ trait InitOptions extends js.Object {
     * Options for https://github.com/locize/locize-editor
     * @default undefined
     */
-  var editor: js.UndefOr[AnonAltKey] = js.undefined
+  var editor: js.UndefOr[AnonAutoOpen] = js.undefined
   /**
     * Language to use if translations in user language are not available.
     * @default 'dev'
@@ -272,7 +272,7 @@ object InitOptions {
     debug: js.UndefOr[Boolean] = js.undefined,
     defaultNS: String = null,
     detection: js.Object = null,
-    editor: AnonAltKey = null,
+    editor: AnonAutoOpen = null,
     fallbackLng: `false` | FallbackLng = null,
     fallbackNS: `false` | String | js.Array[String] = null,
     i18nFormat: js.Object = null,

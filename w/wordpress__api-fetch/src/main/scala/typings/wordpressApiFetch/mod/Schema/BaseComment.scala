@@ -1,7 +1,7 @@
 package typings.wordpressApiFetch.mod.Schema
 
 import typings.std.Record
-import typings.wordpressApiFetch.AnonHref
+import typings.wordpressApiFetch.AnonDictk
 import typings.wordpressApiFetch.wordpressApiFetchStrings.approved
 import typings.wordpressApiFetch.wordpressApiFetchStrings.hold
 import typings.wordpressApiFetch.wordpressApiFetchStrings.spam
@@ -33,7 +33,7 @@ trait BaseComment[T /* <: Context */] extends BaseResponse {
 object BaseComment {
   @scala.inline
   def apply[T /* <: Context */](
-    _links: Record[String, js.Array[AnonHref]],
+    _links: Record[String, js.Array[AnonDictk]],
     author: Double,
     author_avatar_urls: Record[Double, String],
     author_email: String,

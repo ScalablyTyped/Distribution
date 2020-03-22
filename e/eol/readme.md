@@ -1,7 +1,7 @@
 
 # Scala.js typings for eol
 
-Typings are for version 0.8.1
+Typings are for version 0.9.1
 
 ## Library description:
 Newline character converter

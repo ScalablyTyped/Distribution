@@ -3,7 +3,7 @@ package typings.jupyterlabServices.contentsMod
 import typings.jupyterlabServices.contentsMod.Contents.IChangedArgs
 import typings.jupyterlabServices.contentsMod.Contents.IManager
 import typings.jupyterlabServices.contentsMod.ContentsManager.IOptions
-import typings.phosphorSignaling.mod.ISignal
+import typings.luminoSignaling.mod.ISignal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -51,11 +51,6 @@ class ContentsManager_ () extends IManager {
     */
   var _toGlobalPath: js.Any = js.native
   /**
-    * A signal emitted when a file operation takes place.
-    */
-  @JSName("fileChanged")
-  val fileChanged_ContentsManager_ : ISignal[this.type, IChangedArgs] = js.native
-  /**
     * Test whether the object has been disposed.
     *
     * #### Notes
@@ -76,5 +71,15 @@ class ContentsManager_ () extends IManager {
     */
   /* CompleteClass */
   override def dispose(): Unit = js.native
+  /**
+    * A signal emitted when a file operation takes place.
+    */
+  @JSName("fileChanged")
+  def fileChanged_MContentsManager_(): ISignal[this.type, IChangedArgs] = js.native
+  /**
+    * Test whether the manager has been disposed.
+    */
+  @JSName("isDisposed")
+  def isDisposed_MContentsManager_(): Boolean = js.native
 }
 

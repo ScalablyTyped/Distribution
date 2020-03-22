@@ -3,7 +3,7 @@ package typings.jupyterlabServices.contentsMod
 import typings.jupyterlabServices.contentsMod.Contents.IChangedArgs
 import typings.jupyterlabServices.contentsMod.Contents.IDrive
 import typings.jupyterlabServices.contentsMod.Drive.IOptions
-import typings.phosphorSignaling.mod.ISignal
+import typings.luminoSignaling.mod.ISignal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,11 +25,6 @@ class Drive_ () extends IDrive {
   var _getUrl: js.Any = js.native
   var _isDisposed: js.Any = js.native
   /**
-    * A signal emitted when a file operation takes place.
-    */
-  @JSName("fileChanged")
-  val fileChanged_Drive_ : ISignal[this.type, IChangedArgs] = js.native
-  /**
     * Test whether the object has been disposed.
     *
     * #### Notes
@@ -50,5 +45,15 @@ class Drive_ () extends IDrive {
     */
   /* CompleteClass */
   override def dispose(): Unit = js.native
+  /**
+    * A signal emitted when a file operation takes place.
+    */
+  @JSName("fileChanged")
+  def fileChanged_MDrive_(): ISignal[this.type, IChangedArgs] = js.native
+  /**
+    * Test whether the manager has been disposed.
+    */
+  @JSName("isDisposed")
+  def isDisposed_MDrive_(): Boolean = js.native
 }
 

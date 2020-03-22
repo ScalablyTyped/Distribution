@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "get-own-enumerable-property-symbols" : "3.0.0"
+      "get-own-enumerable-property-symbols" : "3.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "get-own-enumerable-property-symbols" : "3.0.0"
+      "get-own-enumerable-property-symbols" : "3.0.2"
     }
   ],
   "compile-devDependencies" : [

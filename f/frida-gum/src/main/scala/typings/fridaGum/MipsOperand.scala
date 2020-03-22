@@ -28,7 +28,7 @@ object MipsOperand {
     __obj.asInstanceOf[MipsOperand]
   }
   @scala.inline
-  def MipsMemOperand(`type`: mem, value: AnonBaseDispMipsRegister): MipsOperand = {
+  def MipsMemOperand(`type`: mem, value: AnonBaseDisp): MipsOperand = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MipsOperand]

@@ -12,7 +12,7 @@ trait AnonRegister extends js.Object {
     * @see {@link https://hapijs.com/tutorials/plugins|Hapi Docs}
     */
   @JSName("register")
-  var register_Original: AnonAttributes = js.native
+  var register_Original: AnonCall = js.native
   /**
     * Registers Plugin with `onRequest` and traces `request-error` callbacks
     *             *

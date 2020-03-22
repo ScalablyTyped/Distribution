@@ -1,6 +1,6 @@
 package typings.googleapis.identitytoolkitV3Mod.identitytoolkitV3
 
-import typings.googleapis.AnonDisplayNameFederatedId
+import typings.googleapis.AnonFederatedId
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -54,7 +54,7 @@ trait SchemaSetAccountInfoResponse extends js.Object {
   /**
     * The user&#39;s profiles at the associated IdPs.
     */
-  var providerUserInfo: js.UndefOr[js.Array[AnonDisplayNameFederatedId]] = js.native
+  var providerUserInfo: js.UndefOr[js.Array[AnonFederatedId]] = js.native
   /**
     * If idToken is STS id token, then this field will be refresh token.
     */
@@ -74,7 +74,7 @@ object SchemaSetAccountInfoResponse {
     newEmail: String = null,
     passwordHash: String = null,
     photoUrl: String = null,
-    providerUserInfo: js.Array[AnonDisplayNameFederatedId] = null,
+    providerUserInfo: js.Array[AnonFederatedId] = null,
     refreshToken: String = null
   ): SchemaSetAccountInfoResponse = {
     val __obj = js.Dynamic.literal()

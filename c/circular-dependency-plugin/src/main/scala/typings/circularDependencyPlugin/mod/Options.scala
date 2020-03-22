@@ -1,7 +1,7 @@
 package typings.circularDependencyPlugin.mod
 
 import typings.circularDependencyPlugin.AnonCompilation
-import typings.circularDependencyPlugin.AnonCompilation1329229261
+import typings.circularDependencyPlugin.AnonCompilationCompilation
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,8 +13,8 @@ trait Options extends js.Object {
   var exclude: js.UndefOr[RegExp] = js.undefined
   var failOnError: js.UndefOr[Boolean] = js.undefined
   var onDetected: js.UndefOr[js.Function1[/* x */ AnonCompilation, Unit]] = js.undefined
-  var onEnd: js.UndefOr[js.Function1[/* x */ AnonCompilation1329229261, Unit]] = js.undefined
-  var onStart: js.UndefOr[js.Function1[/* x */ AnonCompilation1329229261, Unit]] = js.undefined
+  var onEnd: js.UndefOr[js.Function1[/* x */ AnonCompilationCompilation, Unit]] = js.undefined
+  var onStart: js.UndefOr[js.Function1[/* x */ AnonCompilationCompilation, Unit]] = js.undefined
 }
 
 object Options {
@@ -25,8 +25,8 @@ object Options {
     exclude: RegExp = null,
     failOnError: js.UndefOr[Boolean] = js.undefined,
     onDetected: /* x */ AnonCompilation => Unit = null,
-    onEnd: /* x */ AnonCompilation1329229261 => Unit = null,
-    onStart: /* x */ AnonCompilation1329229261 => Unit = null
+    onEnd: /* x */ AnonCompilationCompilation => Unit = null,
+    onStart: /* x */ AnonCompilationCompilation => Unit = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(allowAsyncCycles)) __obj.updateDynamic("allowAsyncCycles")(allowAsyncCycles.asInstanceOf[js.Any])

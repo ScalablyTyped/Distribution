@@ -112,6 +112,8 @@ import typings.csstype.mod.OverflowInlineProperty
 import typings.csstype.mod.OverflowWrapProperty
 import typings.csstype.mod.OverflowXProperty
 import typings.csstype.mod.OverflowYProperty
+import typings.csstype.mod.OverscrollBehaviorBlockProperty
+import typings.csstype.mod.OverscrollBehaviorInlineProperty
 import typings.csstype.mod.OverscrollBehaviorXProperty
 import typings.csstype.mod.OverscrollBehaviorYProperty
 import typings.csstype.mod.PageBreakAfterProperty
@@ -173,6 +175,7 @@ import typings.csstype.mod._AnimateableFeature
 import typings.csstype.mod._AnimationIterationCountProperty
 import typings.csstype.mod._AnimationNameProperty
 import typings.csstype.mod._AnimationPlayStateProperty
+import typings.csstype.mod._AspectRatioProperty
 import typings.csstype.mod._BackdropFilterProperty
 import typings.csstype.mod._BackgroundImageProperty
 import typings.csstype.mod._BackgroundPositionXProperty
@@ -287,6 +290,7 @@ import typings.csstype.mod._MaskBorderWidthProperty
 import typings.csstype.mod._MaskClipProperty
 import typings.csstype.mod._MaskImageProperty
 import typings.csstype.mod._MaskLayer
+import typings.csstype.mod._MaskOriginProperty
 import typings.csstype.mod._MaxBlockSizeProperty
 import typings.csstype.mod._MaxHeightProperty
 import typings.csstype.mod._MaxInlineSizeProperty
@@ -312,7 +316,6 @@ import typings.csstype.mod._MsScrollLimitXMaxProperty
 import typings.csstype.mod._MsScrollLimitYMaxProperty
 import typings.csstype.mod._OffsetAnchorProperty
 import typings.csstype.mod._OffsetPathProperty
-import typings.csstype.mod._OffsetPositionProperty
 import typings.csstype.mod._OffsetProperty
 import typings.csstype.mod._OffsetRotateProperty
 import typings.csstype.mod._OutlineColorProperty
@@ -320,7 +323,6 @@ import typings.csstype.mod._OutlineProperty
 import typings.csstype.mod._OutlineStyleProperty
 import typings.csstype.mod._OverflowProperty
 import typings.csstype.mod._OverscrollBehaviorProperty
-import typings.csstype.mod._PageMarksProperty
 import typings.csstype.mod._Paint
 import typings.csstype.mod._PaintOrderProperty
 import typings.csstype.mod._PerspectiveProperty
@@ -361,11 +363,13 @@ import typings.csstype.mod._TextCombineUprightProperty
 import typings.csstype.mod._TextDecorationLineProperty
 import typings.csstype.mod._TextDecorationProperty
 import typings.csstype.mod._TextDecorationSkipProperty
+import typings.csstype.mod._TextDecorationThicknessProperty
 import typings.csstype.mod._TextEmphasisProperty
 import typings.csstype.mod._TextEmphasisStyleProperty
 import typings.csstype.mod._TextOverflowProperty
 import typings.csstype.mod._TextShadowProperty
 import typings.csstype.mod._TextSizeAdjustProperty
+import typings.csstype.mod._TextUnderlineOffsetProperty
 import typings.csstype.mod._TextUnderlinePositionProperty
 import typings.csstype.mod._TimingFunction
 import typings.csstype.mod._TopProperty
@@ -502,6 +506,8 @@ object csstypeStrings {
        with OverflowWrapProperty
        with OverflowXProperty
        with OverflowYProperty
+       with OverscrollBehaviorBlockProperty
+       with OverscrollBehaviorInlineProperty
        with OverscrollBehaviorXProperty
        with OverscrollBehaviorYProperty
        with PageBreakAfterProperty
@@ -683,9 +689,6 @@ object csstypeStrings {
   sealed trait `-ms-zoom` extends ViewportUserZoomProperty
   
   @js.native
-  sealed trait `-o-crisp-edges` extends ImageRenderingProperty
-  
-  @js.native
   sealed trait `-webkit-auto`
     extends _FlexBasisProperty[js.Any]
   
@@ -702,7 +705,8 @@ object csstypeStrings {
   
   @js.native
   sealed trait `-webkit-fit-content`
-    extends _MaxHeightProperty[js.Any]
+    extends _HeightProperty[js.Any]
+       with _MaxHeightProperty[js.Any]
        with _MaxWidthProperty[js.Any]
        with _MinHeightProperty[js.Any]
        with _MinWidthProperty[js.Any]
@@ -722,15 +726,17 @@ object csstypeStrings {
   
   @js.native
   sealed trait `-webkit-max-content`
-    extends _MaxWidthProperty[js.Any]
-       with _MinInlineSizeProperty[js.Any]
+    extends _MaxHeightProperty[js.Any]
+       with _MaxWidthProperty[js.Any]
+       with _MinHeightProperty[js.Any]
        with _MinWidthProperty[js.Any]
        with _WidthProperty[js.Any]
   
   @js.native
   sealed trait `-webkit-min-content`
-    extends _MaxWidthProperty[js.Any]
-       with _MinInlineSizeProperty[js.Any]
+    extends _MaxHeightProperty[js.Any]
+       with _MaxWidthProperty[js.Any]
+       with _MinHeightProperty[js.Any]
        with _MinWidthProperty[js.Any]
   
   @js.native
@@ -801,6 +807,11 @@ object csstypeStrings {
   
   @js.native
   sealed trait CaptionText extends DeprecatedSystemColor
+  
+  @js.native
+  sealed trait `Colon-khtml-any-link`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
   sealed trait `Colon-moz-any-link`
@@ -2033,6 +2044,9 @@ object csstypeStrings {
   sealed trait `[link]` extends HtmlAttributes
   
   @js.native
+  sealed trait `[loading]` extends HtmlAttributes
+  
+  @js.native
   sealed trait `[local]` extends SvgAttributes
   
   @js.native
@@ -2872,7 +2886,9 @@ object csstypeStrings {
   sealed trait antiquewhite extends NamedColor
   
   @js.native
-  sealed trait anywhere extends OverflowWrapProperty
+  sealed trait anywhere
+    extends LineBreakProperty
+       with OverflowWrapProperty
   
   @js.native
   sealed trait aqua extends NamedColor
@@ -2909,6 +2925,8 @@ object csstypeStrings {
        with OverflowInlineProperty
        with OverflowXProperty
        with OverflowYProperty
+       with OverscrollBehaviorBlockProperty
+       with OverscrollBehaviorInlineProperty
        with OverscrollBehaviorXProperty
        with OverscrollBehaviorYProperty
        with PageBreakAfterProperty
@@ -2928,6 +2946,7 @@ object csstypeStrings {
        with ViewportOrientationProperty
        with WebkitOverflowScrollingProperty
        with _AlignSelfProperty
+       with _AspectRatioProperty
        with _BgSize[js.Any]
        with _BlockSizeProperty[js.Any]
        with _BorderImageWidthProperty[js.Any]
@@ -2975,7 +2994,6 @@ object csstypeStrings {
        with _MsScrollLimitXMaxProperty[js.Any]
        with _MsScrollLimitYMaxProperty[js.Any]
        with _OffsetAnchorProperty[js.Any]
-       with _OffsetPositionProperty[js.Any]
        with _OffsetProperty[js.Any]
        with _OffsetRotateProperty
        with _OutlineProperty[js.Any]
@@ -2983,6 +3001,7 @@ object csstypeStrings {
        with _OverflowProperty
        with _OverscrollBehaviorProperty
        with _PlaceSelfProperty
+       with _QuotesProperty
        with _RightProperty[js.Any]
        with _ScrollPaddingBlockEndProperty[js.Any]
        with _ScrollPaddingBlockProperty[js.Any]
@@ -2996,7 +3015,10 @@ object csstypeStrings {
        with _ScrollPaddingRightProperty[js.Any]
        with _ScrollPaddingTopProperty[js.Any]
        with _ScrollbarColorProperty
+       with _TextDecorationProperty[js.Any]
+       with _TextDecorationThicknessProperty[js.Any]
        with _TextSizeAdjustProperty
+       with _TextUnderlineOffsetProperty[js.Any]
        with _TextUnderlinePositionProperty
        with _TopProperty[js.Any]
        with _TouchActionProperty
@@ -3096,7 +3118,7 @@ object csstypeStrings {
   sealed trait blink
     extends MozTextBlinkProperty
        with _TextDecorationLineProperty
-       with _TextDecorationProperty
+       with _TextDecorationProperty[js.Any]
   
   @js.native
   sealed trait block
@@ -3164,6 +3186,9 @@ object csstypeStrings {
   
   @js.native
   sealed trait `break-all` extends WordBreakProperty
+  
+  @js.native
+  sealed trait `break-spaces` extends WhiteSpaceProperty
   
   @js.native
   sealed trait `break-word`
@@ -3298,10 +3323,7 @@ object csstypeStrings {
   sealed trait clip
     extends OverflowBlockProperty
        with OverflowInlineProperty
-       with OverflowXProperty
-       with OverflowYProperty
        with _BlockOverflowProperty
-       with _OverflowProperty
        with _TextOverflowProperty
   
   @js.native
@@ -3360,6 +3382,8 @@ object csstypeStrings {
   sealed trait contain
     extends _BgSize[js.Any]
        with ObjectFitProperty
+       with OverscrollBehaviorBlockProperty
+       with OverscrollBehaviorInlineProperty
        with OverscrollBehaviorXProperty
        with OverscrollBehaviorYProperty
        with UserSelectProperty
@@ -3430,12 +3454,6 @@ object csstypeStrings {
   
   @js.native
   sealed trait crispEdges extends ShapeRenderingProperty
-  
-  @js.native
-  sealed trait crop extends _PageMarksProperty
-  
-  @js.native
-  sealed trait cross extends _PageMarksProperty
   
   @js.native
   sealed trait crosshair extends _CursorProperty
@@ -3537,7 +3555,7 @@ object csstypeStrings {
        with BorderRightStyleProperty
        with BorderTopStyleProperty
        with TextDecorationStyleProperty
-       with _TextDecorationProperty
+       with _TextDecorationProperty[js.Any]
   
   @js.native
   sealed trait deeppink extends NamedColor
@@ -3622,7 +3640,7 @@ object csstypeStrings {
        with BorderRightStyleProperty
        with BorderTopStyleProperty
        with TextDecorationStyleProperty
-       with _TextDecorationProperty
+       with _TextDecorationProperty[js.Any]
   
   @js.native
   sealed trait double
@@ -3638,7 +3656,7 @@ object csstypeStrings {
        with BorderRightStyleProperty
        with BorderTopStyleProperty
        with TextDecorationStyleProperty
-       with _TextDecorationProperty
+       with _TextDecorationProperty[js.Any]
   
   @js.native
   sealed trait `double-circle`
@@ -3837,6 +3855,12 @@ object csstypeStrings {
   sealed trait forwards extends SingleAnimationFillMode
   
   @js.native
+  sealed trait `from-font`
+    extends _TextDecorationProperty[js.Any]
+       with _TextDecorationThicknessProperty[js.Any]
+       with _TextUnderlineOffsetProperty[js.Any]
+  
+  @js.native
   sealed trait `from-image`
     extends _ImageOrientationProperty
        with _ImageResolutionProperty
@@ -3876,6 +3900,11 @@ object csstypeStrings {
   
   @js.native
   sealed trait grabbing extends _CursorProperty
+  
+  @js.native
+  sealed trait `grammar-error`
+    extends _TextDecorationLineProperty
+       with _TextDecorationProperty[js.Any]
   
   @js.native
   sealed trait gray extends NamedColor
@@ -4111,6 +4140,8 @@ object csstypeStrings {
        with OverflowWrapProperty
        with OverflowXProperty
        with OverflowYProperty
+       with OverscrollBehaviorBlockProperty
+       with OverscrollBehaviorInlineProperty
        with OverscrollBehaviorXProperty
        with OverscrollBehaviorYProperty
        with PageBreakAfterProperty
@@ -4247,6 +4278,8 @@ object csstypeStrings {
        with OverflowWrapProperty
        with OverflowXProperty
        with OverflowYProperty
+       with OverscrollBehaviorBlockProperty
+       with OverscrollBehaviorInlineProperty
        with OverscrollBehaviorXProperty
        with OverscrollBehaviorYProperty
        with PageBreakAfterProperty
@@ -4534,7 +4567,7 @@ object csstypeStrings {
   @js.native
   sealed trait `line-through`
     extends _TextDecorationLineProperty
-       with _TextDecorationProperty
+       with _TextDecorationProperty[js.Any]
   
   @js.native
   sealed trait linear extends _TimingFunction
@@ -4614,6 +4647,7 @@ object csstypeStrings {
   sealed trait `margin-box`
     extends GeometryBox
        with MozFloatEdgeProperty
+       with _MaskOriginProperty
        with _ShapeOutsideProperty
   
   @js.native
@@ -4986,6 +5020,8 @@ object csstypeStrings {
        with MsWrapThroughProperty
        with ObjectFitProperty
        with OverflowAnchorProperty
+       with OverscrollBehaviorBlockProperty
+       with OverscrollBehaviorInlineProperty
        with OverscrollBehaviorXProperty
        with OverscrollBehaviorYProperty
        with PointerEventsProperty
@@ -5058,7 +5094,6 @@ object csstypeStrings {
        with _OffsetPathProperty
        with _OffsetProperty[js.Any]
        with _OverscrollBehaviorProperty
-       with _PageMarksProperty
        with _Paint
        with _PerspectiveProperty[js.Any]
        with _QuotesProperty
@@ -5074,7 +5109,7 @@ object csstypeStrings {
        with _StrokeDasharrayProperty[js.Any]
        with _TextCombineUprightProperty
        with _TextDecorationLineProperty
-       with _TextDecorationProperty
+       with _TextDecorationProperty[js.Any]
        with _TextDecorationSkipProperty
        with _TextEmphasisProperty
        with _TextEmphasisStyleProperty
@@ -5259,7 +5294,7 @@ object csstypeStrings {
   @js.native
   sealed trait overline
     extends _TextDecorationLineProperty
-       with _TextDecorationProperty
+       with _TextDecorationProperty[js.Any]
   
   @js.native
   sealed trait padding
@@ -5607,6 +5642,8 @@ object csstypeStrings {
        with OverflowWrapProperty
        with OverflowXProperty
        with OverflowYProperty
+       with OverscrollBehaviorBlockProperty
+       with OverscrollBehaviorInlineProperty
        with OverscrollBehaviorXProperty
        with OverscrollBehaviorYProperty
        with PageBreakAfterProperty
@@ -6024,7 +6061,7 @@ object csstypeStrings {
        with BorderRightStyleProperty
        with BorderTopStyleProperty
        with TextDecorationStyleProperty
-       with _TextDecorationProperty
+       with _TextDecorationProperty[js.Any]
   
   @js.native
   sealed trait `source-atop` extends CompositeStyle
@@ -6066,6 +6103,11 @@ object csstypeStrings {
   
   @js.native
   sealed trait `spell-out` extends _CounterStyleSpeakAsProperty
+  
+  @js.native
+  sealed trait `spelling-error`
+    extends _TextDecorationLineProperty
+       with _TextDecorationProperty[js.Any]
   
   @js.native
   sealed trait spinner extends MozAppearanceProperty
@@ -6182,6 +6224,11 @@ object csstypeStrings {
     extends FontVariantPositionProperty
        with _BaselineShiftProperty[js.Any]
        with _VerticalAlignProperty[js.Any]
+  
+  @js.native
+  sealed trait subgrid
+    extends _GridTemplateColumnsProperty[js.Any]
+       with _GridTemplateRowsProperty[js.Any]
   
   @js.native
   sealed trait subtract extends CompositingOperator
@@ -6411,7 +6458,7 @@ object csstypeStrings {
   @js.native
   sealed trait underline
     extends _TextDecorationLineProperty
-       with _TextDecorationProperty
+       with _TextDecorationProperty[js.Any]
   
   @js.native
   sealed trait unicase
@@ -6509,6 +6556,8 @@ object csstypeStrings {
        with OverflowWrapProperty
        with OverflowXProperty
        with OverflowYProperty
+       with OverscrollBehaviorBlockProperty
+       with OverscrollBehaviorInlineProperty
        with OverscrollBehaviorXProperty
        with OverscrollBehaviorYProperty
        with PageBreakAfterProperty
@@ -6626,7 +6675,7 @@ object csstypeStrings {
   @js.native
   sealed trait wavy
     extends TextDecorationStyleProperty
-       with _TextDecorationProperty
+       with _TextDecorationProperty[js.Any]
   
   @js.native
   sealed trait weight extends _FontSynthesisProperty
@@ -6682,6 +6731,9 @@ object csstypeStrings {
   
   @js.native
   sealed trait `xx-small` extends AbsoluteSize
+  
+  @js.native
+  sealed trait `xxx-large` extends AbsoluteSize
   
   @js.native
   sealed trait y extends _ScrollSnapTypeProperty
@@ -6792,8 +6844,6 @@ object csstypeStrings {
   @scala.inline
   def `-ms-zoom`: `-ms-zoom` = "-ms-zoom".asInstanceOf[`-ms-zoom`]
   @scala.inline
-  def `-o-crisp-edges`: `-o-crisp-edges` = "-o-crisp-edges".asInstanceOf[`-o-crisp-edges`]
-  @scala.inline
   def `-webkit-auto`: `-webkit-auto` = "-webkit-auto".asInstanceOf[`-webkit-auto`]
   @scala.inline
   def `-webkit-fill-available`: `-webkit-fill-available` = "-webkit-fill-available".asInstanceOf[`-webkit-fill-available`]
@@ -6857,6 +6907,8 @@ object csstypeStrings {
   def ButtonText: ButtonText = "ButtonText".asInstanceOf[ButtonText]
   @scala.inline
   def CaptionText: CaptionText = "CaptionText".asInstanceOf[CaptionText]
+  @scala.inline
+  def `Colon-khtml-any-link`: `Colon-khtml-any-link` = ":-khtml-any-link".asInstanceOf[`Colon-khtml-any-link`]
   @scala.inline
   def `Colon-moz-any-link`: `Colon-moz-any-link` = ":-moz-any-link".asInstanceOf[`Colon-moz-any-link`]
   @scala.inline
@@ -7520,6 +7572,8 @@ object csstypeStrings {
   @scala.inline
   def `[link]`: `[link]` = "[link]".asInstanceOf[`[link]`]
   @scala.inline
+  def `[loading]`: `[loading]` = "[loading]".asInstanceOf[`[loading]`]
+  @scala.inline
   def `[local]`: `[local]` = "[local]".asInstanceOf[`[local]`]
   @scala.inline
   def `[longdesc]`: `[longdesc]` = "[longdesc]".asInstanceOf[`[longdesc]`]
@@ -8118,6 +8172,8 @@ object csstypeStrings {
   @scala.inline
   def `break-all`: `break-all` = "break-all".asInstanceOf[`break-all`]
   @scala.inline
+  def `break-spaces`: `break-spaces` = "break-spaces".asInstanceOf[`break-spaces`]
+  @scala.inline
   def `break-word`: `break-word` = "break-word".asInstanceOf[`break-word`]
   @scala.inline
   def brown: brown = "brown".asInstanceOf[brown]
@@ -8231,10 +8287,6 @@ object csstypeStrings {
   def `crisp-edges`: `crisp-edges` = "crisp-edges".asInstanceOf[`crisp-edges`]
   @scala.inline
   def crispEdges: crispEdges = "crispEdges".asInstanceOf[crispEdges]
-  @scala.inline
-  def crop: crop = "crop".asInstanceOf[crop]
-  @scala.inline
-  def cross: cross = "cross".asInstanceOf[cross]
   @scala.inline
   def crosshair: crosshair = "crosshair".asInstanceOf[crosshair]
   @scala.inline
@@ -8424,6 +8476,8 @@ object csstypeStrings {
   @scala.inline
   def forwards: forwards = "forwards".asInstanceOf[forwards]
   @scala.inline
+  def `from-font`: `from-font` = "from-font".asInstanceOf[`from-font`]
+  @scala.inline
   def `from-image`: `from-image` = "from-image".asInstanceOf[`from-image`]
   @scala.inline
   def fuchsia: fuchsia = "fuchsia".asInstanceOf[fuchsia]
@@ -8445,6 +8499,8 @@ object csstypeStrings {
   def grab: grab = "grab".asInstanceOf[grab]
   @scala.inline
   def grabbing: grabbing = "grabbing".asInstanceOf[grabbing]
+  @scala.inline
+  def `grammar-error`: `grammar-error` = "grammar-error".asInstanceOf[`grammar-error`]
   @scala.inline
   def gray: gray = "gray".asInstanceOf[gray]
   @scala.inline
@@ -9244,6 +9300,8 @@ object csstypeStrings {
   @scala.inline
   def `spell-out`: `spell-out` = "spell-out".asInstanceOf[`spell-out`]
   @scala.inline
+  def `spelling-error`: `spelling-error` = "spelling-error".asInstanceOf[`spelling-error`]
+  @scala.inline
   def spinner: spinner = "spinner".asInstanceOf[spinner]
   @scala.inline
   def `spinner-downbutton`: `spinner-downbutton` = "spinner-downbutton".asInstanceOf[`spinner-downbutton`]
@@ -9295,6 +9353,8 @@ object csstypeStrings {
   def style: style = "style".asInstanceOf[style]
   @scala.inline
   def sub: sub = "sub".asInstanceOf[sub]
+  @scala.inline
+  def subgrid: subgrid = "subgrid".asInstanceOf[subgrid]
   @scala.inline
   def subtract: subtract = "subtract".asInstanceOf[subtract]
   @scala.inline
@@ -9489,6 +9549,8 @@ object csstypeStrings {
   def `xx-large`: `xx-large` = "xx-large".asInstanceOf[`xx-large`]
   @scala.inline
   def `xx-small`: `xx-small` = "xx-small".asInstanceOf[`xx-small`]
+  @scala.inline
+  def `xxx-large`: `xxx-large` = "xxx-large".asInstanceOf[`xxx-large`]
   @scala.inline
   def y: y = "y".asInstanceOf[y]
   @scala.inline

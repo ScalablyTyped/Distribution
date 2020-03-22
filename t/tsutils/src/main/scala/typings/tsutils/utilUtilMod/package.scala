@@ -18,5 +18,12 @@ package object utilUtilMod {
     /* parent */ typings.typescript.mod.Node, 
     scala.Unit
   ]
-  type ImportLike = typings.typescript.mod.ImportDeclaration | (typings.typescript.mod.ImportEqualsDeclaration with typings.tsutils.AnonModuleReference) | (typings.typescript.mod.ExportDeclaration with typings.tsutils.AnonModuleSpecifier) | (typings.typescript.mod.CallExpression with typings.tsutils.AnonArguments) | typings.typescript.mod.ImportTypeNode
+  /* Rewritten from type alias, can be one of: 
+    - typings.typescript.mod.ImportDeclaration
+    - typings.tsutils.ImportEqualsDeclarationmo
+    - typings.tsutils.ExportDeclarationmoduleSp
+    - typings.tsutils.CallExpressionexpressionT
+    - typings.typescript.mod.ImportTypeNode
+  */
+  type ImportLike = typings.tsutils.utilUtilMod._ImportLike | typings.typescript.mod.ImportDeclaration | typings.typescript.mod.ImportTypeNode
 }

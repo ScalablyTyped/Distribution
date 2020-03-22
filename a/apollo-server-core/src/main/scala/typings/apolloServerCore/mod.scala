@@ -8,8 +8,8 @@ import typings.apolloServerCore.runHttpQueryMod.HttpQueryResponse
 import typings.apolloServerCore.typesMod.Config
 import typings.apolloServerEnv.mod.Request
 import typings.apolloServerErrors.AnonDebug
-import typings.apolloServerErrors.AnonExtensions
-import typings.apolloServerErrors.AnonExtensionsAny
+import typings.apolloServerErrors.ErrorextensionsRecordstri
+import typings.apolloServerErrors.ErrorextensionsRecordstriExtensions
 import typings.apolloServerTypes.mod.ValueOrPromise
 import typings.apollographqlGraphqlPlaygroundHtml.renderPlaygroundPageMod.RenderPageOptions
 import typings.graphql.astMod.DocumentNode
@@ -87,7 +87,7 @@ object mod extends js.Object {
   }
   
   val GraphQLUpload: js.UndefOr[GraphQLScalarType] = js.native
-  val processFileUploads: js.UndefOr[FnRequest] = js.native
+  val processFileUploads: js.UndefOr[FnCall] = js.native
   def convertNodeHttpToRequest(req: IncomingMessage): Request = js.native
   def createPlaygroundOptions(): js.UndefOr[RenderPageOptions] = js.native
   def createPlaygroundOptions(playground: PlaygroundConfig): js.UndefOr[RenderPageOptions] = js.native
@@ -101,8 +101,8 @@ object mod extends js.Object {
   ): js.Promise[GraphQLServerOptions[Record[String, _], _]] = js.native
   def resolveGraphqlOptions(options: GraphQLServerOptions[Record[String, _], _], args: js.Any*): js.Promise[GraphQLServerOptions[Record[String, _], _]] = js.native
   def runHttpQuery(handlerArguments: js.Array[_], request: HttpQueryRequest): js.Promise[HttpQueryResponse] = js.native
-  def toApolloError(error: Error with AnonExtensions): Error with AnonExtensionsAny = js.native
-  def toApolloError(error: Error with AnonExtensions, code: String): Error with AnonExtensionsAny = js.native
+  def toApolloError(error: ErrorextensionsRecordstri): ErrorextensionsRecordstriExtensions = js.native
+  def toApolloError(error: ErrorextensionsRecordstri, code: String): ErrorextensionsRecordstriExtensions = js.native
   @js.native
   object defaultPlaygroundOptions extends js.Object {
     var settings: AnonEditorcursorShape = js.native

@@ -13,7 +13,6 @@ import scala.scalajs.js.annotation._
 abstract class Publisher protected () extends js.Object {
   protected def this(context: PublishContext) = this()
   val context: PublishContext = js.native
-  val providerName: String = js.native
   /* protected */ def createProgressBar(fileName: String, size: Double): ProgressBar | Null = js.native
   /* protected */ def createReadStreamAndProgressBar(file: String, fileStat: Stats, progressBar: Null, reject: js.Function1[/* error */ Error, Unit]): ReadableStream = js.native
   /* protected */ def createReadStreamAndProgressBar(
@@ -22,6 +21,7 @@ abstract class Publisher protected () extends js.Object {
     progressBar: ProgressBar,
     reject: js.Function1[/* error */ Error, Unit]
   ): ReadableStream = js.native
+  def providerName(): String = js.native
   def upload(task: UploadTask): js.Promise[_] = js.native
 }
 

@@ -37,6 +37,11 @@ trait InterpolationOptions extends js.Object {
     */
   var maxReplaces: js.UndefOr[Double] = js.undefined
   /**
+    * Separates options from key
+    * @default ','
+    */
+  var nestingOptionsSeparator: js.UndefOr[String] = js.undefined
+  /**
     * Prefix for nesting
     * @default '$t('
     */
@@ -102,6 +107,7 @@ object InterpolationOptions {
     format: (/* value */ js.Any, /* format */ js.UndefOr[String], /* lng */ js.UndefOr[String]) => String = null,
     formatSeparator: String = null,
     maxReplaces: Int | Double = null,
+    nestingOptionsSeparator: String = null,
     nestingPrefix: String = null,
     nestingPrefixEscaped: String = null,
     nestingSuffix: String = null,
@@ -121,6 +127,7 @@ object InterpolationOptions {
     if (format != null) __obj.updateDynamic("format")(js.Any.fromFunction3(format))
     if (formatSeparator != null) __obj.updateDynamic("formatSeparator")(formatSeparator.asInstanceOf[js.Any])
     if (maxReplaces != null) __obj.updateDynamic("maxReplaces")(maxReplaces.asInstanceOf[js.Any])
+    if (nestingOptionsSeparator != null) __obj.updateDynamic("nestingOptionsSeparator")(nestingOptionsSeparator.asInstanceOf[js.Any])
     if (nestingPrefix != null) __obj.updateDynamic("nestingPrefix")(nestingPrefix.asInstanceOf[js.Any])
     if (nestingPrefixEscaped != null) __obj.updateDynamic("nestingPrefixEscaped")(nestingPrefixEscaped.asInstanceOf[js.Any])
     if (nestingSuffix != null) __obj.updateDynamic("nestingSuffix")(nestingSuffix.asInstanceOf[js.Any])

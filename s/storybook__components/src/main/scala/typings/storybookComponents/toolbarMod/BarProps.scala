@@ -4,8 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BarProps extends js.Object {
-  var border: js.UndefOr[Boolean] = js.undefined
+  var border: js.UndefOr[Boolean] = js.native
 }
 
 object BarProps {

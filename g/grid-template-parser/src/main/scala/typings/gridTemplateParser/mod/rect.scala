@@ -1,6 +1,6 @@
 package typings.gridTemplateParser.mod
 
-import typings.std.Partial
+import typings.gridTemplateParser.PartialArea
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object rect extends js.Object {
   def apply(): Rect_ = js.native
-  def apply(area: Partial[Area_]): Rect_ = js.native
+  def apply(area: PartialArea): Rect_ = js.native
 }
 

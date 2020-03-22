@@ -1,11 +1,10 @@
 package typings.antd.mod
 
 import typings.antd.AnonBlockNode
-import typings.antd.TypeofClassDirectoryTree
+import typings.antd.TypeofDirectoryTree
 import typings.antd.treeMod.default
-import typings.antd.treeTreeMod.AntTreeNodeProps
-import typings.react.mod.ComponentClass
-import typings.react.mod.ComponentState
+import typings.rcTree.mod.TreeNodeProps
+import typings.react.mod.FC
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,8 +17,8 @@ class Tree () extends default
 @JSImport("antd", "Tree")
 @js.native
 object Tree extends js.Object {
-  var DirectoryTree: TypeofClassDirectoryTree = js.native
-  var TreeNode: ComponentClass[AntTreeNodeProps, ComponentState] = js.native
+  var DirectoryTree: TypeofDirectoryTree = js.native
+  var TreeNode: FC[TreeNodeProps] = js.native
   var defaultProps: AnonBlockNode = js.native
 }
 

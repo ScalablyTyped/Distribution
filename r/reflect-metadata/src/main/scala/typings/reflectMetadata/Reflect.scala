@@ -497,6 +497,6 @@ object Reflect extends js.Object {
     *     }
     *
     */
-  def metadata(metadataKey: js.Any, metadataValue: js.Any): FnTarget = js.native
+  def metadata(metadataKey: js.Any, metadataValue: js.Any): FnCall = js.native
 }
 

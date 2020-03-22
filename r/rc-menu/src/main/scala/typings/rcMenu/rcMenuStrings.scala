@@ -1,8 +1,6 @@
 package typings.rcMenu
 
 import typings.rcMenu.interfaceMod.MenuMode
-import typings.rcMenu.interfaceMod.MotionActiveStatus
-import typings.rcMenu.interfaceMod.MotionStatus
 import typings.rcMenu.interfaceMod.TriggerSubMenuAction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -41,9 +39,6 @@ object rcMenuStrings {
   
   @js.native
   sealed trait KhtmlUserSelect extends js.Object
-  
-  @js.native
-  sealed trait MotionNameObject extends js.Object
   
   @js.native
   sealed trait MozAnimation extends js.Object
@@ -757,6 +752,12 @@ object rcMenuStrings {
   sealed trait WebkitWritingMode extends js.Object
   
   @js.native
+  sealed trait additions extends js.Object
+  
+  @js.native
+  sealed trait `additions text` extends js.Object
+  
+  @js.native
   sealed trait alignContent extends js.Object
   
   @js.native
@@ -799,16 +800,16 @@ object rcMenuStrings {
   sealed trait animationTimingFunction extends js.Object
   
   @js.native
-  sealed trait appear extends MotionStatus
-  
-  @js.native
-  sealed trait `appear-active` extends MotionActiveStatus
-  
-  @js.native
   sealed trait appearance extends js.Object
   
   @js.native
+  sealed trait ascending extends js.Object
+  
+  @js.native
   sealed trait aspectRatio extends js.Object
+  
+  @js.native
+  sealed trait assertive extends js.Object
   
   @js.native
   sealed trait backdropFilter extends js.Object
@@ -1045,6 +1046,9 @@ object rcMenuStrings {
   sealed trait borderWidth extends js.Object
   
   @js.native
+  sealed trait both extends js.Object
+  
+  @js.native
   sealed trait bottom extends js.Object
   
   @js.native
@@ -1159,6 +1163,9 @@ object rcMenuStrings {
   sealed trait content extends js.Object
   
   @js.native
+  sealed trait copy extends js.Object
+  
+  @js.native
   sealed trait counterIncrement extends js.Object
   
   @js.native
@@ -1171,6 +1178,18 @@ object rcMenuStrings {
   sealed trait cursor extends js.Object
   
   @js.native
+  sealed trait date extends js.Object
+  
+  @js.native
+  sealed trait decimal extends js.Object
+  
+  @js.native
+  sealed trait descending extends js.Object
+  
+  @js.native
+  sealed trait dialog extends js.Object
+  
+  @js.native
   sealed trait direction extends js.Object
   
   @js.native
@@ -1180,13 +1199,13 @@ object rcMenuStrings {
   sealed trait dominantBaseline extends js.Object
   
   @js.native
+  sealed trait email extends js.Object
+  
+  @js.native
   sealed trait emptyCells extends js.Object
   
   @js.native
-  sealed trait enter extends MotionStatus
-  
-  @js.native
-  sealed trait `enter-active` extends MotionActiveStatus
+  sealed trait execute extends js.Object
   
   @js.native
   sealed trait fill extends js.Object
@@ -1297,6 +1316,9 @@ object rcMenuStrings {
   sealed trait glyphOrientationVertical extends js.Object
   
   @js.native
+  sealed trait grammar extends js.Object
+  
+  @js.native
   sealed trait grid extends js.Object
   
   @js.native
@@ -1378,6 +1400,9 @@ object rcMenuStrings {
   sealed trait imeMode extends js.Object
   
   @js.native
+  sealed trait inherit extends js.Object
+  
+  @js.native
   sealed trait initialLetter extends js.Object
   
   @js.native
@@ -1420,12 +1445,6 @@ object rcMenuStrings {
   sealed trait justifySelf extends js.Object
   
   @js.native
-  sealed trait leave extends MotionStatus
-  
-  @js.native
-  sealed trait `leave-active` extends MotionActiveStatus
-  
-  @js.native
   sealed trait left extends js.Object
   
   @js.native
@@ -1447,6 +1466,12 @@ object rcMenuStrings {
   sealed trait lineHeightStep extends js.Object
   
   @js.native
+  sealed trait link extends js.Object
+  
+  @js.native
+  sealed trait list extends js.Object
+  
+  @js.native
   sealed trait listStyle extends js.Object
   
   @js.native
@@ -1457,6 +1482,15 @@ object rcMenuStrings {
   
   @js.native
   sealed trait listStyleType extends js.Object
+  
+  @js.native
+  sealed trait listbox extends js.Object
+  
+  @js.native
+  sealed trait location extends js.Object
+  
+  @js.native
+  sealed trait ltr extends js.Object
   
   @js.native
   sealed trait margin extends js.Object
@@ -1570,6 +1604,9 @@ object rcMenuStrings {
   sealed trait maxWidth extends js.Object
   
   @js.native
+  sealed trait menu extends js.Object
+  
+  @js.native
   sealed trait minBlockSize extends js.Object
   
   @js.native
@@ -1585,6 +1622,9 @@ object rcMenuStrings {
   sealed trait mixBlendMode extends js.Object
   
   @js.native
+  sealed trait mixed extends js.Object
+  
+  @js.native
   sealed trait motion extends js.Object
   
   @js.native
@@ -1595,6 +1635,9 @@ object rcMenuStrings {
   
   @js.native
   sealed trait motionRotation extends js.Object
+  
+  @js.native
+  sealed trait move extends js.Object
   
   @js.native
   sealed trait msAccelerator extends js.Object
@@ -1807,13 +1850,22 @@ object rcMenuStrings {
   sealed trait msWritingMode extends js.Object
   
   @js.native
-  sealed trait none extends MotionStatus
+  sealed trait no extends js.Object
+  
+  @js.native
+  sealed trait none extends js.Object
+  
+  @js.native
+  sealed trait numeric extends js.Object
   
   @js.native
   sealed trait objectFit extends js.Object
   
   @js.native
   sealed trait objectPosition extends js.Object
+  
+  @js.native
+  sealed trait off extends js.Object
   
   @js.native
   sealed trait offset extends js.Object
@@ -1852,6 +1904,9 @@ object rcMenuStrings {
   sealed trait offsetRotation extends js.Object
   
   @js.native
+  sealed trait on extends js.Object
+  
+  @js.native
   sealed trait opacity extends js.Object
   
   @js.native
@@ -1859,6 +1914,9 @@ object rcMenuStrings {
   
   @js.native
   sealed trait orphans extends js.Object
+  
+  @js.native
+  sealed trait other extends js.Object
   
   @js.native
   sealed trait outline extends js.Object
@@ -1903,6 +1961,12 @@ object rcMenuStrings {
   sealed trait overscrollBehavior extends js.Object
   
   @js.native
+  sealed trait overscrollBehaviorBlock extends js.Object
+  
+  @js.native
+  sealed trait overscrollBehaviorInline extends js.Object
+  
+  @js.native
   sealed trait overscrollBehaviorX extends js.Object
   
   @js.native
@@ -1942,6 +2006,9 @@ object rcMenuStrings {
   sealed trait paddingTop extends js.Object
   
   @js.native
+  sealed trait page extends js.Object
+  
+  @js.native
   sealed trait pageBreakAfter extends js.Object
   
   @js.native
@@ -1972,10 +2039,19 @@ object rcMenuStrings {
   sealed trait pointerEvents extends js.Object
   
   @js.native
+  sealed trait polite extends js.Object
+  
+  @js.native
+  sealed trait popup extends js.Object
+  
+  @js.native
   sealed trait position extends js.Object
   
   @js.native
   sealed trait quotes extends js.Object
+  
+  @js.native
+  sealed trait removals extends js.Object
   
   @js.native
   sealed trait resize extends js.Object
@@ -1988,6 +2064,9 @@ object rcMenuStrings {
   
   @js.native
   sealed trait rowGap extends js.Object
+  
+  @js.native
+  sealed trait rtl extends js.Object
   
   @js.native
   sealed trait rubyAlign extends js.Object
@@ -2101,7 +2180,13 @@ object rcMenuStrings {
   sealed trait scrollbarColor extends js.Object
   
   @js.native
+  sealed trait scrollbarTrackColor extends js.Object
+  
+  @js.native
   sealed trait scrollbarWidth extends js.Object
+  
+  @js.native
+  sealed trait search extends js.Object
   
   @js.native
   sealed trait shapeImageThreshold extends js.Object
@@ -2114,6 +2199,12 @@ object rcMenuStrings {
   
   @js.native
   sealed trait shapeRendering extends js.Object
+  
+  @js.native
+  sealed trait spelling extends js.Object
+  
+  @js.native
+  sealed trait step extends js.Object
   
   @js.native
   sealed trait stopColor extends js.Object
@@ -2150,6 +2241,12 @@ object rcMenuStrings {
   
   @js.native
   sealed trait tableLayout extends js.Object
+  
+  @js.native
+  sealed trait tel extends js.Object
+  
+  @js.native
+  sealed trait text extends js.Object
   
   @js.native
   sealed trait textAlign extends js.Object
@@ -2233,6 +2330,9 @@ object rcMenuStrings {
   sealed trait textUnderlinePosition extends js.Object
   
   @js.native
+  sealed trait time extends js.Object
+  
+  @js.native
   sealed trait top extends js.Object
   
   @js.native
@@ -2269,7 +2369,13 @@ object rcMenuStrings {
   sealed trait translate extends js.Object
   
   @js.native
+  sealed trait tree extends js.Object
+  
+  @js.native
   sealed trait unicodeBidi extends js.Object
+  
+  @js.native
+  sealed trait url extends js.Object
   
   @js.native
   sealed trait userSelect extends js.Object
@@ -2317,6 +2423,9 @@ object rcMenuStrings {
   sealed trait writingMode extends js.Object
   
   @js.native
+  sealed trait yes extends js.Object
+  
+  @js.native
   sealed trait zIndex extends js.Object
   
   @js.native
@@ -2344,8 +2453,6 @@ object rcMenuStrings {
   def KhtmlOpacity: KhtmlOpacity = "KhtmlOpacity".asInstanceOf[KhtmlOpacity]
   @scala.inline
   def KhtmlUserSelect: KhtmlUserSelect = "KhtmlUserSelect".asInstanceOf[KhtmlUserSelect]
-  @scala.inline
-  def MotionNameObject: MotionNameObject = "MotionNameObject".asInstanceOf[MotionNameObject]
   @scala.inline
   def MozAnimation: MozAnimation = "MozAnimation".asInstanceOf[MozAnimation]
   @scala.inline
@@ -2821,6 +2928,10 @@ object rcMenuStrings {
   @scala.inline
   def WebkitWritingMode: WebkitWritingMode = "WebkitWritingMode".asInstanceOf[WebkitWritingMode]
   @scala.inline
+  def additions: additions = "additions".asInstanceOf[additions]
+  @scala.inline
+  def `additions text`: `additions text` = "additions text".asInstanceOf[`additions text`]
+  @scala.inline
   def alignContent: alignContent = "alignContent".asInstanceOf[alignContent]
   @scala.inline
   def alignItems: alignItems = "alignItems".asInstanceOf[alignItems]
@@ -2849,13 +2960,13 @@ object rcMenuStrings {
   @scala.inline
   def animationTimingFunction: animationTimingFunction = "animationTimingFunction".asInstanceOf[animationTimingFunction]
   @scala.inline
-  def appear: appear = "appear".asInstanceOf[appear]
-  @scala.inline
-  def `appear-active`: `appear-active` = "appear-active".asInstanceOf[`appear-active`]
-  @scala.inline
   def appearance: appearance = "appearance".asInstanceOf[appearance]
   @scala.inline
+  def ascending: ascending = "ascending".asInstanceOf[ascending]
+  @scala.inline
   def aspectRatio: aspectRatio = "aspectRatio".asInstanceOf[aspectRatio]
+  @scala.inline
+  def assertive: assertive = "assertive".asInstanceOf[assertive]
   @scala.inline
   def backdropFilter: backdropFilter = "backdropFilter".asInstanceOf[backdropFilter]
   @scala.inline
@@ -3013,6 +3124,8 @@ object rcMenuStrings {
   @scala.inline
   def borderWidth: borderWidth = "borderWidth".asInstanceOf[borderWidth]
   @scala.inline
+  def both: both = "both".asInstanceOf[both]
+  @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
   @scala.inline
   def boxAlign: boxAlign = "boxAlign".asInstanceOf[boxAlign]
@@ -3089,6 +3202,8 @@ object rcMenuStrings {
   @scala.inline
   def content: content = "content".asInstanceOf[content]
   @scala.inline
+  def copy: copy = "copy".asInstanceOf[copy]
+  @scala.inline
   def counterIncrement: counterIncrement = "counterIncrement".asInstanceOf[counterIncrement]
   @scala.inline
   def counterReset: counterReset = "counterReset".asInstanceOf[counterReset]
@@ -3097,17 +3212,25 @@ object rcMenuStrings {
   @scala.inline
   def cursor: cursor = "cursor".asInstanceOf[cursor]
   @scala.inline
+  def date: date = "date".asInstanceOf[date]
+  @scala.inline
+  def decimal: decimal = "decimal".asInstanceOf[decimal]
+  @scala.inline
+  def descending: descending = "descending".asInstanceOf[descending]
+  @scala.inline
+  def dialog: dialog = "dialog".asInstanceOf[dialog]
+  @scala.inline
   def direction: direction = "direction".asInstanceOf[direction]
   @scala.inline
   def display: display = "display".asInstanceOf[display]
   @scala.inline
   def dominantBaseline: dominantBaseline = "dominantBaseline".asInstanceOf[dominantBaseline]
   @scala.inline
+  def email: email = "email".asInstanceOf[email]
+  @scala.inline
   def emptyCells: emptyCells = "emptyCells".asInstanceOf[emptyCells]
   @scala.inline
-  def enter: enter = "enter".asInstanceOf[enter]
-  @scala.inline
-  def `enter-active`: `enter-active` = "enter-active".asInstanceOf[`enter-active`]
+  def execute: execute = "execute".asInstanceOf[execute]
   @scala.inline
   def fill: fill = "fill".asInstanceOf[fill]
   @scala.inline
@@ -3181,6 +3304,8 @@ object rcMenuStrings {
   @scala.inline
   def glyphOrientationVertical: glyphOrientationVertical = "glyphOrientationVertical".asInstanceOf[glyphOrientationVertical]
   @scala.inline
+  def grammar: grammar = "grammar".asInstanceOf[grammar]
+  @scala.inline
   def grid: grid = "grid".asInstanceOf[grid]
   @scala.inline
   def gridArea: gridArea = "gridArea".asInstanceOf[gridArea]
@@ -3235,6 +3360,8 @@ object rcMenuStrings {
   @scala.inline
   def imeMode: imeMode = "imeMode".asInstanceOf[imeMode]
   @scala.inline
+  def inherit: inherit = "inherit".asInstanceOf[inherit]
+  @scala.inline
   def initialLetter: initialLetter = "initialLetter".asInstanceOf[initialLetter]
   @scala.inline
   def `inline`: `inline` = "inline".asInstanceOf[`inline`]
@@ -3263,10 +3390,6 @@ object rcMenuStrings {
   @scala.inline
   def justifySelf: justifySelf = "justifySelf".asInstanceOf[justifySelf]
   @scala.inline
-  def leave: leave = "leave".asInstanceOf[leave]
-  @scala.inline
-  def `leave-active`: `leave-active` = "leave-active".asInstanceOf[`leave-active`]
-  @scala.inline
   def left: left = "left".asInstanceOf[left]
   @scala.inline
   def letterSpacing: letterSpacing = "letterSpacing".asInstanceOf[letterSpacing]
@@ -3281,6 +3404,10 @@ object rcMenuStrings {
   @scala.inline
   def lineHeightStep: lineHeightStep = "lineHeightStep".asInstanceOf[lineHeightStep]
   @scala.inline
+  def link: link = "link".asInstanceOf[link]
+  @scala.inline
+  def list: list = "list".asInstanceOf[list]
+  @scala.inline
   def listStyle: listStyle = "listStyle".asInstanceOf[listStyle]
   @scala.inline
   def listStyleImage: listStyleImage = "listStyleImage".asInstanceOf[listStyleImage]
@@ -3288,6 +3415,12 @@ object rcMenuStrings {
   def listStylePosition: listStylePosition = "listStylePosition".asInstanceOf[listStylePosition]
   @scala.inline
   def listStyleType: listStyleType = "listStyleType".asInstanceOf[listStyleType]
+  @scala.inline
+  def listbox: listbox = "listbox".asInstanceOf[listbox]
+  @scala.inline
+  def location: location = "location".asInstanceOf[location]
+  @scala.inline
+  def ltr: ltr = "ltr".asInstanceOf[ltr]
   @scala.inline
   def margin: margin = "margin".asInstanceOf[margin]
   @scala.inline
@@ -3363,6 +3496,8 @@ object rcMenuStrings {
   @scala.inline
   def maxWidth: maxWidth = "maxWidth".asInstanceOf[maxWidth]
   @scala.inline
+  def menu: menu = "menu".asInstanceOf[menu]
+  @scala.inline
   def minBlockSize: minBlockSize = "minBlockSize".asInstanceOf[minBlockSize]
   @scala.inline
   def minHeight: minHeight = "minHeight".asInstanceOf[minHeight]
@@ -3373,6 +3508,8 @@ object rcMenuStrings {
   @scala.inline
   def mixBlendMode: mixBlendMode = "mixBlendMode".asInstanceOf[mixBlendMode]
   @scala.inline
+  def mixed: mixed = "mixed".asInstanceOf[mixed]
+  @scala.inline
   def motion: motion = "motion".asInstanceOf[motion]
   @scala.inline
   def motionDistance: motionDistance = "motionDistance".asInstanceOf[motionDistance]
@@ -3380,6 +3517,8 @@ object rcMenuStrings {
   def motionPath: motionPath = "motionPath".asInstanceOf[motionPath]
   @scala.inline
   def motionRotation: motionRotation = "motionRotation".asInstanceOf[motionRotation]
+  @scala.inline
+  def move: move = "move".asInstanceOf[move]
   @scala.inline
   def msAccelerator: msAccelerator = "msAccelerator".asInstanceOf[msAccelerator]
   @scala.inline
@@ -3521,11 +3660,17 @@ object rcMenuStrings {
   @scala.inline
   def msWritingMode: msWritingMode = "msWritingMode".asInstanceOf[msWritingMode]
   @scala.inline
+  def no: no = "no".asInstanceOf[no]
+  @scala.inline
   def none: none = "none".asInstanceOf[none]
+  @scala.inline
+  def numeric: numeric = "numeric".asInstanceOf[numeric]
   @scala.inline
   def objectFit: objectFit = "objectFit".asInstanceOf[objectFit]
   @scala.inline
   def objectPosition: objectPosition = "objectPosition".asInstanceOf[objectPosition]
+  @scala.inline
+  def off: off = "off".asInstanceOf[off]
   @scala.inline
   def offset: offset = "offset".asInstanceOf[offset]
   @scala.inline
@@ -3551,11 +3696,15 @@ object rcMenuStrings {
   @scala.inline
   def offsetRotation: offsetRotation = "offsetRotation".asInstanceOf[offsetRotation]
   @scala.inline
+  def on: on = "on".asInstanceOf[on]
+  @scala.inline
   def opacity: opacity = "opacity".asInstanceOf[opacity]
   @scala.inline
   def order: order = "order".asInstanceOf[order]
   @scala.inline
   def orphans: orphans = "orphans".asInstanceOf[orphans]
+  @scala.inline
+  def other: other = "other".asInstanceOf[other]
   @scala.inline
   def outline: outline = "outline".asInstanceOf[outline]
   @scala.inline
@@ -3585,6 +3734,10 @@ object rcMenuStrings {
   @scala.inline
   def overscrollBehavior: overscrollBehavior = "overscrollBehavior".asInstanceOf[overscrollBehavior]
   @scala.inline
+  def overscrollBehaviorBlock: overscrollBehaviorBlock = "overscrollBehaviorBlock".asInstanceOf[overscrollBehaviorBlock]
+  @scala.inline
+  def overscrollBehaviorInline: overscrollBehaviorInline = "overscrollBehaviorInline".asInstanceOf[overscrollBehaviorInline]
+  @scala.inline
   def overscrollBehaviorX: overscrollBehaviorX = "overscrollBehaviorX".asInstanceOf[overscrollBehaviorX]
   @scala.inline
   def overscrollBehaviorY: overscrollBehaviorY = "overscrollBehaviorY".asInstanceOf[overscrollBehaviorY]
@@ -3611,6 +3764,8 @@ object rcMenuStrings {
   @scala.inline
   def paddingTop: paddingTop = "paddingTop".asInstanceOf[paddingTop]
   @scala.inline
+  def page: page = "page".asInstanceOf[page]
+  @scala.inline
   def pageBreakAfter: pageBreakAfter = "pageBreakAfter".asInstanceOf[pageBreakAfter]
   @scala.inline
   def pageBreakBefore: pageBreakBefore = "pageBreakBefore".asInstanceOf[pageBreakBefore]
@@ -3631,9 +3786,15 @@ object rcMenuStrings {
   @scala.inline
   def pointerEvents: pointerEvents = "pointerEvents".asInstanceOf[pointerEvents]
   @scala.inline
+  def polite: polite = "polite".asInstanceOf[polite]
+  @scala.inline
+  def popup: popup = "popup".asInstanceOf[popup]
+  @scala.inline
   def position: position = "position".asInstanceOf[position]
   @scala.inline
   def quotes: quotes = "quotes".asInstanceOf[quotes]
+  @scala.inline
+  def removals: removals = "removals".asInstanceOf[removals]
   @scala.inline
   def resize: resize = "resize".asInstanceOf[resize]
   @scala.inline
@@ -3642,6 +3803,8 @@ object rcMenuStrings {
   def rotate: rotate = "rotate".asInstanceOf[rotate]
   @scala.inline
   def rowGap: rowGap = "rowGap".asInstanceOf[rowGap]
+  @scala.inline
+  def rtl: rtl = "rtl".asInstanceOf[rtl]
   @scala.inline
   def rubyAlign: rubyAlign = "rubyAlign".asInstanceOf[rubyAlign]
   @scala.inline
@@ -3717,7 +3880,11 @@ object rcMenuStrings {
   @scala.inline
   def scrollbarColor: scrollbarColor = "scrollbarColor".asInstanceOf[scrollbarColor]
   @scala.inline
+  def scrollbarTrackColor: scrollbarTrackColor = "scrollbarTrackColor".asInstanceOf[scrollbarTrackColor]
+  @scala.inline
   def scrollbarWidth: scrollbarWidth = "scrollbarWidth".asInstanceOf[scrollbarWidth]
+  @scala.inline
+  def search: search = "search".asInstanceOf[search]
   @scala.inline
   def shapeImageThreshold: shapeImageThreshold = "shapeImageThreshold".asInstanceOf[shapeImageThreshold]
   @scala.inline
@@ -3726,6 +3893,10 @@ object rcMenuStrings {
   def shapeOutside: shapeOutside = "shapeOutside".asInstanceOf[shapeOutside]
   @scala.inline
   def shapeRendering: shapeRendering = "shapeRendering".asInstanceOf[shapeRendering]
+  @scala.inline
+  def spelling: spelling = "spelling".asInstanceOf[spelling]
+  @scala.inline
+  def step: step = "step".asInstanceOf[step]
   @scala.inline
   def stopColor: stopColor = "stopColor".asInstanceOf[stopColor]
   @scala.inline
@@ -3750,6 +3921,10 @@ object rcMenuStrings {
   def tabSize: tabSize = "tabSize".asInstanceOf[tabSize]
   @scala.inline
   def tableLayout: tableLayout = "tableLayout".asInstanceOf[tableLayout]
+  @scala.inline
+  def tel: tel = "tel".asInstanceOf[tel]
+  @scala.inline
+  def text: text = "text".asInstanceOf[text]
   @scala.inline
   def textAlign: textAlign = "textAlign".asInstanceOf[textAlign]
   @scala.inline
@@ -3805,6 +3980,8 @@ object rcMenuStrings {
   @scala.inline
   def textUnderlinePosition: textUnderlinePosition = "textUnderlinePosition".asInstanceOf[textUnderlinePosition]
   @scala.inline
+  def time: time = "time".asInstanceOf[time]
+  @scala.inline
   def top: top = "top".asInstanceOf[top]
   @scala.inline
   def touchAction: touchAction = "touchAction".asInstanceOf[touchAction]
@@ -3829,7 +4006,11 @@ object rcMenuStrings {
   @scala.inline
   def translate: translate = "translate".asInstanceOf[translate]
   @scala.inline
+  def tree: tree = "tree".asInstanceOf[tree]
+  @scala.inline
   def unicodeBidi: unicodeBidi = "unicodeBidi".asInstanceOf[unicodeBidi]
+  @scala.inline
+  def url: url = "url".asInstanceOf[url]
   @scala.inline
   def userSelect: userSelect = "userSelect".asInstanceOf[userSelect]
   @scala.inline
@@ -3860,6 +4041,8 @@ object rcMenuStrings {
   def wordWrap: wordWrap = "wordWrap".asInstanceOf[wordWrap]
   @scala.inline
   def writingMode: writingMode = "writingMode".asInstanceOf[writingMode]
+  @scala.inline
+  def yes: yes = "yes".asInstanceOf[yes]
   @scala.inline
   def zIndex: zIndex = "zIndex".asInstanceOf[zIndex]
   @scala.inline

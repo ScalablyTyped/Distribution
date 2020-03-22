@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 object mod extends js.Object {
   // TODO: remove this in the next major version
   @JSName("default")
-  var default_Original: AnonAssert = js.native
+  var default_Original: AnonCall = js.native
   /**
   	Whether the platform is macOS.
   	@example

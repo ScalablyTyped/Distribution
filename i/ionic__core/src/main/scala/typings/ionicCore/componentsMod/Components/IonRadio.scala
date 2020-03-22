@@ -9,10 +9,6 @@ import scala.scalajs.js.annotation._
 
 trait IonRadio extends js.Object {
   /**
-    * If `true`, the radio is selected.
-    */
-  var checked: Boolean
-  /**
     * The color to use from your application's color palette. Default options are: `"primary"`, `"secondary"`, `"tertiary"`, `"success"`, `"warning"`, `"danger"`, `"light"`, `"medium"`, and `"dark"`. For more information on colors, see [theming](/docs/theming/basics).
     */
   var color: js.UndefOr[Color] = js.undefined
@@ -36,15 +32,8 @@ trait IonRadio extends js.Object {
 
 object IonRadio {
   @scala.inline
-  def apply(
-    checked: Boolean,
-    disabled: Boolean,
-    name: String,
-    color: Color = null,
-    mode: ios | md = null,
-    value: js.Any = null
-  ): IonRadio = {
-    val __obj = js.Dynamic.literal(checked = checked.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  def apply(disabled: Boolean, name: String, color: Color = null, mode: ios | md = null, value: js.Any = null): IonRadio = {
+    val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])

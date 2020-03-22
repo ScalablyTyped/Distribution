@@ -1,8 +1,8 @@
 package typings.braintree.mod
 
 import typings.braintree.AnonAdd
-import typings.braintree.AnonAddRemove
 import typings.braintree.AnonDoNotInheritAddOnsOrDiscounts
+import typings.braintree.AnonRemove
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,7 +12,7 @@ trait SubscriptionRequest extends js.Object {
   var addOns: js.UndefOr[AnonAdd] = js.undefined
   var billingDayOfMonth: js.UndefOr[Double] = js.undefined
   var descriptor: js.UndefOr[Descriptor] = js.undefined
-  var discounts: js.UndefOr[AnonAddRemove] = js.undefined
+  var discounts: js.UndefOr[AnonRemove] = js.undefined
   var firstBillingDate: js.UndefOr[Date] = js.undefined
   var id: js.UndefOr[String] = js.undefined
   var merchantAccountId: js.UndefOr[String] = js.undefined
@@ -36,7 +36,7 @@ object SubscriptionRequest {
     addOns: AnonAdd = null,
     billingDayOfMonth: Int | Double = null,
     descriptor: Descriptor = null,
-    discounts: AnonAddRemove = null,
+    discounts: AnonRemove = null,
     firstBillingDate: Date = null,
     id: String = null,
     merchantAccountId: String = null,

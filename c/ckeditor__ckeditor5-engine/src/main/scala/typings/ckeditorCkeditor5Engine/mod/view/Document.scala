@@ -1,7 +1,7 @@
 package typings.ckeditorCkeditor5Engine.mod.view
 
+import typings.ckeditorCkeditor5Engine.Anon0
 import typings.ckeditorCkeditor5Engine.AnonPriority
-import typings.ckeditorCkeditor5Engine.AnonPriorityNumber
 import typings.ckeditorCkeditor5Utils.mod.Collection
 import typings.ckeditorCkeditor5Utils.mod.Emitter
 import typings.ckeditorCkeditor5Utils.mod.Observable
@@ -22,8 +22,8 @@ class Document () extends Observable {
   def getRoot(): RootEditableElement | Null = js.native
   def getRoot(name: String): RootEditableElement | Null = js.native
   def listenTo(emitter: Emitter, event: String, callback: js.Function, options: AnonPriority): Unit = js.native
-  def on(event: String, callback: js.Function, options: AnonPriorityNumber): Unit = js.native
-  def once(event: String, callback: js.Function, options: AnonPriorityNumber): Unit = js.native
+  def on(event: String, callback: js.Function, options: Anon0): Unit = js.native
+  def once(event: String, callback: js.Function, options: Anon0): Unit = js.native
   def registerPostFixer(postFixer: js.Function1[/* downcastWriter */ DowncastWriter, Boolean]): Unit = js.native
 }
 

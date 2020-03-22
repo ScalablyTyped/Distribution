@@ -10,7 +10,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ionic/angular/dist/directives/proxies", "IonProgressBar")
+@JSImport("@ionic/angular/directives/proxies", "IonProgressBar")
 @js.native
 class IonProgressBar protected ()
   extends typings.ionicCore.componentsMod.Components.IonProgressBar {

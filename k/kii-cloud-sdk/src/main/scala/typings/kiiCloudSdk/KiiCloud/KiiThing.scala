@@ -1,13 +1,13 @@
 package typings.kiiCloudSdk.KiiCloud
 
-import typings.kiiCloudSdk.AnonAnErrorString
-import typings.kiiCloudSdk.AnonErrorFailureGroup
-import typings.kiiCloudSdk.AnonErrorFailureGroupSuccess
-import typings.kiiCloudSdk.AnonErrorFailureGroupSuccessThing
-import typings.kiiCloudSdk.AnonErrorFailureGroupSuccessThingAny
-import typings.kiiCloudSdk.AnonErrorFailureIsOwner
-import typings.kiiCloudSdk.AnonErrorFailureIsOwnerSuccess
-import typings.kiiCloudSdk.AnonErrorFailureSuccess
+import typings.kiiCloudSdk.Anon28
+import typings.kiiCloudSdk.Anon29
+import typings.kiiCloudSdk.Anon30
+import typings.kiiCloudSdk.Anon31
+import typings.kiiCloudSdk.Anon5
+import typings.kiiCloudSdk.Anon6
+import typings.kiiCloudSdk.Anon7
+import typings.kiiCloudSdk.AnonSuccess
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -81,7 +81,7 @@ class KiiThing () extends KiiACLSubject {
     *     );
     */
   def deleteThing(): js.Promise[KiiThing] = js.native
-  def deleteThing(callbacks: AnonErrorFailureSuccess): js.Promise[KiiThing] = js.native
+  def deleteThing(callbacks: Anon5): js.Promise[KiiThing] = js.native
   /**
     * Disable the thing.
     * <br>This API is authorized by owner of thing.
@@ -132,7 +132,7 @@ class KiiThing () extends KiiACLSubject {
     *     );
     */
   def disable(): js.Promise[KiiThing] = js.native
-  def disable(callbacks: AnonErrorFailureSuccess): js.Promise[KiiThing] = js.native
+  def disable(callbacks: Anon5): js.Promise[KiiThing] = js.native
   /**
     * Enable the thing.
     * <br>This API is authorized by owner of thing.
@@ -183,7 +183,7 @@ class KiiThing () extends KiiACLSubject {
     *     );
     */
   def enable(): js.Promise[KiiThing] = js.native
-  def enable(callbacks: AnonErrorFailureSuccess): js.Promise[KiiThing] = js.native
+  def enable(callbacks: Anon5): js.Promise[KiiThing] = js.native
   /**
     * Creates a reference to a encrypted bucket for this thing
     *
@@ -241,7 +241,7 @@ class KiiThing () extends KiiACLSubject {
     */
   def isOnline(): Boolean = js.native
   def isOwner(owner: KiiGroup): js.Promise[js.Tuple3[KiiThing, KiiGroup, Boolean]] = js.native
-  def isOwner(owner: KiiGroup, callbacks: AnonErrorFailureIsOwnerSuccess): js.Promise[js.Tuple3[KiiThing, KiiGroup, Boolean]] = js.native
+  def isOwner(owner: KiiGroup, callbacks: Anon29): js.Promise[js.Tuple3[KiiThing, KiiGroup, Boolean]] = js.native
   /**
     * Check if user/ group is owner of the thing.
     * <br>This API is authorized by owner of thing.
@@ -307,7 +307,7 @@ class KiiThing () extends KiiACLSubject {
     *     );
     */
   def isOwner(owner: KiiUser): js.Promise[js.Tuple3[KiiThing, KiiUser, Boolean]] = js.native
-  def isOwner(owner: KiiUser, callbacks: AnonErrorFailureIsOwner): js.Promise[js.Tuple3[KiiThing, KiiUser, Boolean]] = js.native
+  def isOwner(owner: KiiUser, callbacks: Anon28): js.Promise[js.Tuple3[KiiThing, KiiUser, Boolean]] = js.native
   /**
     * Gets a list of topics in this thing scope
     *
@@ -375,8 +375,8 @@ class KiiThing () extends KiiACLSubject {
     *     );
     */
   def listTopics(): js.Promise[js.Tuple2[js.Array[KiiTopic], String]] = js.native
-  def listTopics(callbacks: AnonAnErrorString): js.Promise[js.Tuple2[js.Array[KiiTopic], String]] = js.native
-  def listTopics(callbacks: AnonAnErrorString, paginationKey: String): js.Promise[js.Tuple2[js.Array[KiiTopic], String]] = js.native
+  def listTopics(callbacks: AnonSuccess): js.Promise[js.Tuple2[js.Array[KiiTopic], String]] = js.native
+  def listTopics(callbacks: AnonSuccess, paginationKey: String): js.Promise[js.Tuple2[js.Array[KiiTopic], String]] = js.native
   /**
     * Instantiate push subscription for this thing.
     *
@@ -428,9 +428,9 @@ class KiiThing () extends KiiACLSubject {
     *     );
     */
   def refresh(): js.Promise[KiiThing] = js.native
-  def refresh(callbacks: AnonErrorFailureSuccess): js.Promise[KiiThing] = js.native
+  def refresh(callbacks: Anon5): js.Promise[KiiThing] = js.native
   def registerOwner(owner: KiiGroup): js.Promise[js.Tuple2[KiiThing, KiiGroup]] = js.native
-  def registerOwner(owner: KiiGroup, callbacks: AnonErrorFailureGroupSuccessThingAny): js.Promise[js.Tuple2[KiiThing, KiiGroup]] = js.native
+  def registerOwner(owner: KiiGroup, callbacks: Anon31): js.Promise[js.Tuple2[KiiThing, KiiGroup]] = js.native
   /**
     * Register user/group as owner of this thing.
     * <br>Need user login before execute this API.
@@ -484,7 +484,7 @@ class KiiThing () extends KiiACLSubject {
     *     );
     */
   def registerOwner(owner: KiiUser): js.Promise[js.Tuple2[KiiThing, KiiUser]] = js.native
-  def registerOwner(owner: KiiUser, callbacks: AnonErrorFailureGroupSuccessThing): js.Promise[js.Tuple2[KiiThing, KiiUser]] = js.native
+  def registerOwner(owner: KiiUser, callbacks: Anon30): js.Promise[js.Tuple2[KiiThing, KiiUser]] = js.native
   /**
     * Instantiate topic belongs to this thing.
     *
@@ -494,7 +494,7 @@ class KiiThing () extends KiiACLSubject {
     */
   def topicWithName(topicName: String): KiiTopic = js.native
   def unregisterOwner(owner: KiiGroup): js.Promise[js.Tuple2[KiiThing, KiiGroup]] = js.native
-  def unregisterOwner(owner: KiiGroup, callbacks: AnonErrorFailureGroupSuccessThingAny): js.Promise[js.Tuple2[KiiThing, KiiGroup]] = js.native
+  def unregisterOwner(owner: KiiGroup, callbacks: Anon31): js.Promise[js.Tuple2[KiiThing, KiiGroup]] = js.native
   /**
     * Remove ownership of thing from specified user/group.
     * <br>This API is authorized by owner of thing.
@@ -547,7 +547,7 @@ class KiiThing () extends KiiACLSubject {
     *     );
     */
   def unregisterOwner(owner: KiiUser): js.Promise[js.Tuple2[KiiThing, KiiUser]] = js.native
-  def unregisterOwner(owner: KiiUser, callbacks: AnonErrorFailureGroupSuccessThing): js.Promise[js.Tuple2[KiiThing, KiiUser]] = js.native
+  def unregisterOwner(owner: KiiUser, callbacks: Anon30): js.Promise[js.Tuple2[KiiThing, KiiUser]] = js.native
   /**
     * Update registered thing information in Kii Cloud
     * <br>This API is authorized by owner of thing.
@@ -605,7 +605,7 @@ class KiiThing () extends KiiACLSubject {
     *     );
     */
   def update(): js.Promise[KiiThing] = js.native
-  def update(callbacks: AnonErrorFailureSuccess): js.Promise[KiiThing] = js.native
+  def update(callbacks: Anon5): js.Promise[KiiThing] = js.native
 }
 
 /* static members */
@@ -657,7 +657,7 @@ object KiiThing extends js.Object {
     *     );
     */
   def loadWithThingID(thingID: String): js.Promise[KiiThing] = js.native
-  def loadWithThingID(thingID: String, callbacks: AnonErrorFailureSuccess): js.Promise[KiiThing] = js.native
+  def loadWithThingID(thingID: String, callbacks: Anon5): js.Promise[KiiThing] = js.native
   /**
     * Load thing with given vendor thing id.
     * <br>This API is authorized by owner of thing.
@@ -701,7 +701,7 @@ object KiiThing extends js.Object {
     *     );
     */
   def loadWithVendorThingID(vendorThingID: String): js.Promise[KiiThing] = js.native
-  def loadWithVendorThingID(vendorThingID: String, callbacks: AnonErrorFailureSuccess): js.Promise[KiiThing] = js.native
+  def loadWithVendorThingID(vendorThingID: String, callbacks: Anon5): js.Promise[KiiThing] = js.native
   /**
     * Register thing in KiiCloud.<br>
     * This API doesnt require users login Anonymous user can register thing.
@@ -779,9 +779,9 @@ object KiiThing extends js.Object {
     *     );
     */
   def register(fields: KiiThingFields): js.Promise[KiiThing] = js.native
-  def register(fields: KiiThingFields, callbacks: AnonErrorFailureSuccess): js.Promise[KiiThing] = js.native
+  def register(fields: KiiThingFields, callbacks: Anon5): js.Promise[KiiThing] = js.native
   def registerOwnerWithThingID(thingID: String, owner: KiiGroup): js.Promise[KiiGroup] = js.native
-  def registerOwnerWithThingID(thingID: String, owner: KiiGroup, callbacks: AnonErrorFailureGroupSuccess): js.Promise[KiiGroup] = js.native
+  def registerOwnerWithThingID(thingID: String, owner: KiiGroup, callbacks: Anon7): js.Promise[KiiGroup] = js.native
   /**
     * Register user/group as owner of specified thing.
     * <br>Need user login before execute this API.
@@ -833,9 +833,9 @@ object KiiThing extends js.Object {
     *     );
     */
   def registerOwnerWithThingID(thingID: String, owner: KiiUser): js.Promise[KiiUser] = js.native
-  def registerOwnerWithThingID(thingID: String, owner: KiiUser, callbacks: AnonErrorFailureGroup): js.Promise[KiiUser] = js.native
+  def registerOwnerWithThingID(thingID: String, owner: KiiUser, callbacks: Anon6): js.Promise[KiiUser] = js.native
   def registerOwnerWithVendorThingID(vendorThingID: String, owner: KiiGroup): js.Promise[KiiGroup] = js.native
-  def registerOwnerWithVendorThingID(vendorThingID: String, owner: KiiGroup, callbacks: AnonErrorFailureGroupSuccess): js.Promise[KiiGroup] = js.native
+  def registerOwnerWithVendorThingID(vendorThingID: String, owner: KiiGroup, callbacks: Anon7): js.Promise[KiiGroup] = js.native
   /**
     * Register user/group as owner of specified thing.
     * <br>Need user login before execute this API.
@@ -886,6 +886,6 @@ object KiiThing extends js.Object {
     *     );
     */
   def registerOwnerWithVendorThingID(vendorThingID: String, owner: KiiUser): js.Promise[KiiUser] = js.native
-  def registerOwnerWithVendorThingID(vendorThingID: String, owner: KiiUser, callbacks: AnonErrorFailureGroup): js.Promise[KiiUser] = js.native
+  def registerOwnerWithVendorThingID(vendorThingID: String, owner: KiiUser, callbacks: Anon6): js.Promise[KiiUser] = js.native
 }
 

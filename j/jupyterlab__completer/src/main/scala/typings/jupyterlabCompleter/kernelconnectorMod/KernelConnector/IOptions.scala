@@ -1,7 +1,6 @@
 package typings.jupyterlabCompleter.kernelconnectorMod.KernelConnector
 
-import typings.jupyterlabApputils.clientsessionMod.IClientSession
-import typings.jupyterlabServices.sessionSessionMod.Session.ISession
+import typings.jupyterlabServices.sessionSessionMod.ISessionConnection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,14 +12,14 @@ trait IOptions extends js.Object {
   /**
     * The session used by the kernel connector.
     */
-  var session: IClientSession | ISession
+  var session: ISessionConnection | Null
 }
 
 object IOptions {
   @scala.inline
-  def apply(session: IClientSession | ISession): IOptions = {
-    val __obj = js.Dynamic.literal(session = session.asInstanceOf[js.Any])
-  
+  def apply(session: ISessionConnection = null): IOptions = {
+    val __obj = js.Dynamic.literal()
+    if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

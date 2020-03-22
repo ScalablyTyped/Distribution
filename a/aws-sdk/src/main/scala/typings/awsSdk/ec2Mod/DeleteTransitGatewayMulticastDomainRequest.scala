@@ -13,12 +13,15 @@ trait DeleteTransitGatewayMulticastDomainRequest extends js.Object {
   /**
     * The ID of the transit gateway multicast domain.
     */
-  var TransitGatewayMulticastDomainId: String = js.native
+  var TransitGatewayMulticastDomainId: typings.awsSdk.ec2Mod.TransitGatewayMulticastDomainId = js.native
 }
 
 object DeleteTransitGatewayMulticastDomainRequest {
   @scala.inline
-  def apply(TransitGatewayMulticastDomainId: String, DryRun: js.UndefOr[scala.Boolean] = js.undefined): DeleteTransitGatewayMulticastDomainRequest = {
+  def apply(
+    TransitGatewayMulticastDomainId: TransitGatewayMulticastDomainId,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined
+  ): DeleteTransitGatewayMulticastDomainRequest = {
     val __obj = js.Dynamic.literal(TransitGatewayMulticastDomainId = TransitGatewayMulticastDomainId.asInstanceOf[js.Any])
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteTransitGatewayMulticastDomainRequest]

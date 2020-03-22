@@ -1,9 +1,9 @@
 package typings.antDesignReactNative.mod
 
 import typings.antDesignReactNative.AnonFull
-import typings.antDesignReactNative.TypeofClassCardBody
-import typings.antDesignReactNative.TypeofClassCardFooter
-import typings.antDesignReactNative.TypeofClassCardHeader
+import typings.antDesignReactNative.TypeofCardBody
+import typings.antDesignReactNative.TypeofCardFooter
+import typings.antDesignReactNative.TypeofCardHeader
 import typings.antDesignReactNative.cardMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,9 +17,9 @@ class Card () extends default
 @JSImport("@ant-design/react-native", "Card")
 @js.native
 object Card extends js.Object {
-  var Body: TypeofClassCardBody = js.native
-  var Footer: TypeofClassCardFooter = js.native
-  var Header: TypeofClassCardHeader = js.native
+  var Body: TypeofCardBody = js.native
+  var Footer: TypeofCardFooter = js.native
+  var Header: TypeofCardHeader = js.native
   var defaultProps: AnonFull = js.native
 }
 

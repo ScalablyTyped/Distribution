@@ -1,6 +1,6 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.AnonCookedRaw
+import typings.babelTypes.AnonRaw
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object templateElement extends js.Object {
   def apply(): TemplateElement_ = js.native
-  def apply(value: AnonCookedRaw): TemplateElement_ = js.native
-  def apply(value: AnonCookedRaw, tail: Boolean): TemplateElement_ = js.native
+  def apply(value: AnonRaw): TemplateElement_ = js.native
+  def apply(value: AnonRaw, tail: Boolean): TemplateElement_ = js.native
 }
 

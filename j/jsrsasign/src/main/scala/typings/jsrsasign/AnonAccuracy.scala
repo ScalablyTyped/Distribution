@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 trait AnonAccuracy extends js.Object {
   var accuracy: js.UndefOr[AnonMicros] = js.undefined
   var genTime: js.UndefOr[StringParam | HexParam | DateParam | String] = js.undefined
-  var messageImprint: AnonHashAlgHashMsgHex
+  var messageImprint: AnonHashMsgHex
   var nonce: js.UndefOr[IntegerParam | BigIntegerParam | HexParam | Double] = js.undefined
   var ordering: js.UndefOr[Boolean] = js.undefined
   var policy: String
@@ -23,7 +23,7 @@ trait AnonAccuracy extends js.Object {
 object AnonAccuracy {
   @scala.inline
   def apply(
-    messageImprint: AnonHashAlgHashMsgHex,
+    messageImprint: AnonHashMsgHex,
     policy: String,
     accuracy: AnonMicros = null,
     genTime: StringParam | HexParam | DateParam | String = null,

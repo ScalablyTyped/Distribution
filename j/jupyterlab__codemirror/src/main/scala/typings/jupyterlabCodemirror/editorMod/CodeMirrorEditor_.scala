@@ -9,8 +9,10 @@ import typings.codemirror.mod.StyleActiveLine
 import typings.codemirror.mod.TextMarker
 import typings.jupyterlabCodeeditor.editorMod.CodeEditor.EdgeLocation
 import typings.jupyterlabCodeeditor.editorMod.CodeEditor.IEditor
+import typings.jupyterlabCodeeditor.editorMod.CodeEditor.IModel
 import typings.jupyterlabCodeeditor.editorMod.CodeEditor.IPosition
 import typings.jupyterlabCodeeditor.editorMod.CodeEditor.IRange
+import typings.jupyterlabCodeeditor.editorMod.CodeEditor.ISelectionStyle
 import typings.jupyterlabCodemirror.AnonBias
 import typings.jupyterlabCodemirror.AnonBottom
 import typings.jupyterlabCodemirror.AnonFrom
@@ -53,7 +55,7 @@ import typings.jupyterlabCodemirror.jupyterlabCodemirrorStrings.theme
 import typings.jupyterlabCodemirror.jupyterlabCodemirrorStrings.window
 import typings.jupyterlabCodemirror.jupyterlabCodemirrorStrings.wordWrapColumn
 import typings.jupyterlabCodemirror.modeMod.Mode.IMode
-import typings.phosphorSignaling.mod.Signal
+import typings.luminoSignaling.mod.Signal
 import typings.std.Event_
 import typings.std.KeyboardEvent
 import typings.std.RegExp
@@ -162,18 +164,10 @@ class CodeMirrorEditor_ protected () extends IEditor {
   var _toTextMarkerOptions: js.Any = js.native
   var _uuid: js.Any = js.native
   /**
-    * Get the codemirror doc wrapped by the widget.
-    */
-  val doc: Doc = js.native
-  /**
     * A signal emitted when either the top or bottom edge is requested.
     */
   @JSName("edgeRequested")
   val edgeRequested_CodeMirrorEditor_ : Signal[this.type, EdgeLocation] = js.native
-  /**
-    * Get the codemirror editor wrapped by the editor.
-    */
-  val editor: Editor = js.native
   /**
     * Test whether the object has been disposed.
     *
@@ -183,7 +177,6 @@ class CodeMirrorEditor_ protected () extends IEditor {
   /* CompleteClass */
   override val isDisposed: Boolean = js.native
   var selectionMarkers: StringDictionary[js.UndefOr[js.Array[TextMarker]]] = js.native
-  val state: js.Any = js.native
   /**
     * The uuid of this selection owner.
     */
@@ -193,6 +186,11 @@ class CodeMirrorEditor_ protected () extends IEditor {
   def addOverlay(mode: String, options: js.Object): Unit = js.native
   def addOverlay(mode: js.Object): Unit = js.native
   def addOverlay(mode: js.Object, options: js.Object): Unit = js.native
+  /**
+    * The widget of a character in the editor in pixels.
+    */
+  @JSName("charWidth")
+  def charWidth_MCodeMirrorEditor_(): Double = js.native
   def cursorCoords(where: Boolean): AnonBottom = js.native
   @JSName("cursorCoords")
   def cursorCoords_local(where: Boolean, mode: local): AnonBottom = js.native
@@ -213,6 +211,14 @@ class CodeMirrorEditor_ protected () extends IEditor {
     */
   /* CompleteClass */
   override def dispose(): Unit = js.native
+  /**
+    * Get the codemirror doc wrapped by the widget.
+    */
+  def doc(): Doc = js.native
+  /**
+    * Get the codemirror editor wrapped by the editor.
+    */
+  def editor(): Editor = js.native
   /**
     * Execute a codemirror command on the editor.
     *
@@ -323,7 +329,27 @@ class CodeMirrorEditor_ protected () extends IEditor {
     * not be called directly by user code.
     */
   def handleEvent(event: Event_): Unit = js.native
+  /**
+    * Tests whether the editor is disposed.
+    */
+  @JSName("isDisposed")
+  def isDisposed_MCodeMirrorEditor_(): Boolean = js.native
   def lastLine(): Double = js.native
+  /**
+    * Get the number of lines in the editor.
+    */
+  @JSName("lineCount")
+  def lineCount_MCodeMirrorEditor_(): Double = js.native
+  /**
+    * The height of a line in the editor in pixels.
+    */
+  @JSName("lineHeight")
+  def lineHeight_MCodeMirrorEditor_(): Double = js.native
+  /**
+    * Returns a model for this editor.
+    */
+  @JSName("model")
+  def model_MCodeMirrorEditor_(): IModel = js.native
   /**
     * Handle keydown events from the editor.
     */
@@ -332,6 +358,13 @@ class CodeMirrorEditor_ protected () extends IEditor {
   def removeOverlay(mode: String): Unit = js.native
   def removeOverlay(mode: js.Object): Unit = js.native
   def scrollIntoView(pos: AnonFrom, margin: Double): Unit = js.native
+  /**
+    * The selection style of this editor.
+    */
+  @JSName("selectionStyle")
+  def selectionStyle_MCodeMirrorEditor_(): ISelectionStyle = js.native
+  @JSName("selectionStyle")
+  def selectionStyle_MCodeMirrorEditor_(value: ISelectionStyle): js.Any = js.native
   /**
     * Set the primary position of the cursor.
     *
@@ -448,5 +481,13 @@ class CodeMirrorEditor_ protected () extends IEditor {
     */
   /* CompleteClass */
   override def setSelections(selections: js.Array[IRange]): Unit = js.native
+  def state(): js.Any = js.native
+  /**
+    * The uuid of this editor;
+    */
+  @JSName("uuid")
+  def uuid_MCodeMirrorEditor_(): String = js.native
+  @JSName("uuid")
+  def uuid_MCodeMirrorEditor_(value: String): js.Any = js.native
 }
 

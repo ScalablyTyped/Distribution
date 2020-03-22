@@ -1,13 +1,13 @@
 package typings.uiGrid.mod.pagination
 
-import typings.uiGrid.AnonHandlerPaginationChanged
+import typings.uiGrid.AnonPaginationChanged
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IGridPaginationApi extends js.Object {
   // Events
-  var on: AnonHandlerPaginationChanged
+  var on: AnonPaginationChanged
   // Methods
   /**
     * Get the current page
@@ -40,7 +40,7 @@ object IGridPaginationApi {
     getPage: () => Double,
     getTotalPages: () => Double,
     nextPage: () => Unit,
-    on: AnonHandlerPaginationChanged,
+    on: AnonPaginationChanged,
     previousPage: () => Unit,
     seek: Double => Unit
   ): IGridPaginationApi = {

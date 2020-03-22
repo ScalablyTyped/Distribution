@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 trait AnonAcquiredTime extends js.Object {
   var acquiredTime: js.UndefOr[String] = js.native
   var acquisitionType: js.UndefOr[Double] = js.native
-  var copy: js.UndefOr[AnonAllowedCharacterCountLimitType] = js.native
+  var copy: js.UndefOr[AnonLimitType] = js.native
   var entitlementType: js.UndefOr[Double] = js.native
   var familySharing: js.UndefOr[AnonFamilyRole] = js.native
   var isFamilySharedFromUser: js.UndefOr[Boolean] = js.native
@@ -34,7 +34,7 @@ object AnonAcquiredTime {
   def apply(
     acquiredTime: String = null,
     acquisitionType: Int | Double = null,
-    copy: AnonAllowedCharacterCountLimitType = null,
+    copy: AnonLimitType = null,
     entitlementType: Int | Double = null,
     familySharing: AnonFamilyRole = null,
     isFamilySharedFromUser: js.UndefOr[Boolean] = js.undefined,

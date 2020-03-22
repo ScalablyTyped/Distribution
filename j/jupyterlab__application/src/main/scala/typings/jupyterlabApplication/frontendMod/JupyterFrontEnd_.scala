@@ -5,7 +5,7 @@ import typings.jupyterlabApplication.frontendMod.JupyterFrontEnd.IShell
 import typings.jupyterlabApputils.mod.CommandLinker
 import typings.jupyterlabDocregistry.mod.DocumentRegistry
 import typings.jupyterlabServices.mod.ServiceManager
-import typings.phosphorApplication.mod.Application
+import typings.luminoApplication.mod.Application
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

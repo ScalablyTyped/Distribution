@@ -1,7 +1,7 @@
 package typings.chromeApps.chrome.bluetoothLowEnergy
 
 import typings.chromeApps.AnonData
-import typings.chromeApps.AnonDataUuid
+import typings.chromeApps.AnonUuid
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ trait Advertisement extends js.Object {
   /** List of manufacturer specific data to be included in 'Manufacturer Specific Data' fields of the advertising data. */
   var manufacturerData: js.UndefOr[AnonData] = js.undefined
   /** List of service data to be included in 'Service Data' fields of the advertising data. */
-  var serviceData: AnonDataUuid
+  var serviceData: AnonUuid
   /** List of UUIDs to include in the 'Service UUIDs' field of the Advertising Data. These UUIDs can be of the 16bit, 32bit or 128 formats. */
   var serviceUuids: js.UndefOr[js.Array[String]] = js.undefined
   /** List of UUIDs to include in the 'Solicit UUIDs' field of the Advertising Data. These UUIDs can be of the 16bit, 32bit or 128 formats. */
@@ -22,7 +22,7 @@ trait Advertisement extends js.Object {
 object Advertisement {
   @scala.inline
   def apply(
-    serviceData: AnonDataUuid,
+    serviceData: AnonUuid,
     `type`: AdvertisementType,
     manufacturerData: AnonData = null,
     serviceUuids: js.Array[String] = null,

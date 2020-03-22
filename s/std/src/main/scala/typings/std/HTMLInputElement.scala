@@ -29,10 +29,6 @@ trait HTMLInputElement extends HTMLElement {
     */
   var autocomplete: java.lang.String = js.native
   /**
-    * Provides a way to direct a user to a specific field when a document loads. This can provide both direction and convenience for a user, reducing the need to click or tab to a field when a page opens. This attribute is true when present on an element, and false when missing.
-    */
-  var autofocus: scala.Boolean = js.native
-  /**
     * Sets or retrieves the state of the check box or radio button.
     */
   var checked: scala.Boolean = js.native
@@ -118,7 +114,7 @@ trait HTMLInputElement extends HTMLElement {
     * When present, marks an element that can't be submitted without a value.
     */
   var required: scala.Boolean = js.native
-  var selectionDirection: java.lang.String | Null = js.native
+  var selectionDirection: forward | backward | none | Null = js.native
   /**
     * Gets or sets the end position or offset of a text selection.
     */

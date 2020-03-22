@@ -5,6 +5,7 @@ import typings.baseui.AnonCountrySelect
 import typings.baseui.baseuiStrings.compact
 import typings.baseui.baseuiStrings.default_
 import typings.baseui.baseuiStrings.large_
+import typings.baseui.baseuiStrings.mini
 import typings.baseui.selectMod.OnChangeParams
 import typings.react.mod.Ref
 import typings.std.HTMLInputElement
@@ -21,7 +22,7 @@ trait CountrySelectProps extends js.Object {
   var maxDropdownWidth: js.UndefOr[String] = js.undefined
   var onCountryChange: js.UndefOr[js.Function1[/* event */ OnChangeParams, _]] = js.undefined
   var overrides: js.UndefOr[AnonCountrySelect] = js.undefined
-  var size: js.UndefOr[default_ | compact | large_] = js.undefined
+  var size: js.UndefOr[mini | default_ | compact | large_] = js.undefined
 }
 
 object CountrySelectProps {
@@ -35,7 +36,7 @@ object CountrySelectProps {
     maxDropdownWidth: String = null,
     onCountryChange: /* event */ OnChangeParams => _ = null,
     overrides: AnonCountrySelect = null,
-    size: default_ | compact | large_ = null
+    size: mini | default_ | compact | large_ = null
   ): CountrySelectProps = {
     val __obj = js.Dynamic.literal(countries = countries.asInstanceOf[js.Any])
     if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])

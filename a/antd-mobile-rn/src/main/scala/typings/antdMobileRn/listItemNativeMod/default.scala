@@ -1,7 +1,7 @@
 package typings.antdMobileRn.listItemNativeMod
 
-import typings.antdMobileRn.TypeofClassBrief
-import typings.std.Partial
+import typings.antdMobileRn.PartialListItemProps
+import typings.antdMobileRn.TypeofBrief
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ class default () extends Item
 @JSImport("antd-mobile-rn/lib/list/ListItem.native", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var Brief: TypeofClassBrief = js.native
-  var defaultProps: Partial[ListItemProps] = js.native
+  var Brief: TypeofBrief = js.native
+  var defaultProps: PartialListItemProps = js.native
 }
 

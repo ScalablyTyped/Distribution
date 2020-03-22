@@ -3,7 +3,7 @@ package typings.jupyterlabCodeeditor
 import typings.jupyterlabCodeeditor.editorMod.CodeEditor.IConfig
 import typings.jupyterlabCodeeditor.editorMod.CodeEditor.ISelectionStyle
 import typings.jupyterlabCodeeditor.widgetMod.CodeEditorWrapper.IOptions
-import typings.phosphorCoreutils.mod.Token
+import typings.luminoCoreutils.mod.Token
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

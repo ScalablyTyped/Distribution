@@ -1,6 +1,6 @@
 package typings.blueprintjsSelect.queryListMod
 
-import typings.blueprintjsCore.propsMod.IProps
+import typings.blueprintjsSelect.listItemsUtilsMod.ICreateNewItem
 import typings.react.mod.ChangeEventHandler
 import typings.react.mod.KeyboardEventHandler
 import typings.react.mod.ReactNode
@@ -12,9 +12,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in 'activeItem' | 'filteredItems' | 'query' ]: @blueprintjs/select.@blueprintjs/select/lib/esm/components/query-list/queryList.IQueryListState<T>[P]} */ @js.native
-trait IQueryListRendererProps[T] extends IProps {
+/* Inlined parent std.Pick<@blueprintjs/select.@blueprintjs/select/lib/esm/components/query-list/queryList.IQueryListState<T>, 'activeItem' | 'filteredItems' | 'query'> */
+/* Inlined parent @blueprintjs/core.@blueprintjs/core.IProps */
+@js.native
+trait IQueryListRendererProps[T] extends js.Object {
+  var activeItem: js.UndefOr[T | ICreateNewItem] = js.native
+  /** A space-delimited list of class names to pass along to a child element. */
+  var className: js.UndefOr[String] = js.native
+  var filteredItems: js.Array[T] = js.native
   /**
     * Keyboard handler for up/down arrow keys to shift the active item.
     * Attach this handler to any element that should support this interaction.
@@ -32,6 +37,7 @@ trait IQueryListRendererProps[T] extends IProps {
   var handleQueryChange: ChangeEventHandler[HTMLInputElement] = js.native
   /** Rendered elements returned from `itemListRenderer` prop. */
   var itemList: ReactNode = js.native
+  var query: String = js.native
   /**
     * Selection handler that should be invoked when a new item has been chosen,
     * perhaps because the user clicked it.

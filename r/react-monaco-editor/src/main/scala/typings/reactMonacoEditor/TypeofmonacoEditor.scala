@@ -12,17 +12,17 @@ import scala.scalajs.js.annotation._
 trait TypeofmonacoEditor extends js.Object {
   var CancellationTokenSource: Instantiable0[typings.monacoEditor.mod.CancellationTokenSource]
   var Emitter: Instantiable0[typings.monacoEditor.mod.Emitter[js.Object]]
-  var KeyMod: TypeofClassKeyMod
-  var Position: TypeofClassPosition
-  var Range: TypeofClassRange
-  var Selection: TypeofClassSelection
+  var KeyMod: TypeofKeyMod
+  var Position: TypeofPosition
+  var Range: TypeofRange
+  var Selection: TypeofSelection
   var Token: Instantiable3[
     /* offset */ Double, 
     /* type */ String, 
     /* language */ String, 
     typings.monacoEditor.mod.Token
   ]
-  var Uri: TypeofClassUri
+  var Uri: TypeofUri
   val editor: Typeofeditor
   val languages: Typeoflanguages
   val worker: js.Any
@@ -33,12 +33,12 @@ object TypeofmonacoEditor {
   def apply(
     CancellationTokenSource: Instantiable0[CancellationTokenSource],
     Emitter: Instantiable0[Emitter[js.Object]],
-    KeyMod: TypeofClassKeyMod,
-    Position: TypeofClassPosition,
-    Range: TypeofClassRange,
-    Selection: TypeofClassSelection,
+    KeyMod: TypeofKeyMod,
+    Position: TypeofPosition,
+    Range: TypeofRange,
+    Selection: TypeofSelection,
     Token: Instantiable3[/* offset */ Double, /* type */ String, /* language */ String, Token],
-    Uri: TypeofClassUri,
+    Uri: TypeofUri,
     editor: Typeofeditor,
     languages: Typeoflanguages,
     worker: js.Any

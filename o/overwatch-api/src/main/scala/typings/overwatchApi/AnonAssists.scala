@@ -13,7 +13,7 @@ trait AnonAssists extends js.Object {
   var game: QuickplayCompetitiveStats
   var match_awards: QuickplayCompetitiveStats
   var miscellaneous: QuickplayCompetitiveStats
-  var top_heroes: AnonCompetitiveQuickplayAnonEliminationsperlife
+  var top_heroes: AnonCompetitiveQuickplay
 }
 
 object AnonAssists {
@@ -26,7 +26,7 @@ object AnonAssists {
     game: QuickplayCompetitiveStats,
     match_awards: QuickplayCompetitiveStats,
     miscellaneous: QuickplayCompetitiveStats,
-    top_heroes: AnonCompetitiveQuickplayAnonEliminationsperlife
+    top_heroes: AnonCompetitiveQuickplay
   ): AnonAssists = {
     val __obj = js.Dynamic.literal(assists = assists.asInstanceOf[js.Any], average = average.asInstanceOf[js.Any], best = best.asInstanceOf[js.Any], combat = combat.asInstanceOf[js.Any], game = game.asInstanceOf[js.Any], match_awards = match_awards.asInstanceOf[js.Any], miscellaneous = miscellaneous.asInstanceOf[js.Any], top_heroes = top_heroes.asInstanceOf[js.Any])
   

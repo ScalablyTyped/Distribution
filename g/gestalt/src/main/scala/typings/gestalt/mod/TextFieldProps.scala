@@ -1,7 +1,7 @@
 package typings.gestalt.mod
 
-import typings.gestalt.AnonEventValue
-import typings.gestalt.AnonEventValueElement
+import typings.gestalt.AnonValue
+import typings.gestalt.AnonValueString
 import typings.gestalt.gestaltStrings.`current-password`
 import typings.gestalt.gestaltStrings.date
 import typings.gestalt.gestaltStrings.down
@@ -27,26 +27,26 @@ trait TextFieldProps extends js.Object {
   var id: String
   var idealErrorDirection: js.UndefOr[up | right | down | left] = js.undefined
   var name: js.UndefOr[String] = js.undefined
-  var onBlur: js.UndefOr[js.Function1[/* args */ AnonEventValueElement, Unit]] = js.undefined
-  var onFocus: js.UndefOr[js.Function1[/* args */ AnonEventValueElement, Unit]] = js.undefined
+  var onBlur: js.UndefOr[js.Function1[/* args */ AnonValueString, Unit]] = js.undefined
+  var onFocus: js.UndefOr[js.Function1[/* args */ AnonValueString, Unit]] = js.undefined
   var placeholder: js.UndefOr[String] = js.undefined
   var `type`: js.UndefOr[date | email | number | password | text | url] = js.undefined
   var value: js.UndefOr[String] = js.undefined
-  def onChange(args: AnonEventValue): Unit
+  def onChange(args: AnonValue): Unit
 }
 
 object TextFieldProps {
   @scala.inline
   def apply(
     id: String,
-    onChange: AnonEventValue => Unit,
+    onChange: AnonValue => Unit,
     autoComplete: `current-password` | on | off | username = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     errorMessage: String = null,
     idealErrorDirection: up | right | down | left = null,
     name: String = null,
-    onBlur: /* args */ AnonEventValueElement => Unit = null,
-    onFocus: /* args */ AnonEventValueElement => Unit = null,
+    onBlur: /* args */ AnonValueString => Unit = null,
+    onFocus: /* args */ AnonValueString => Unit = null,
     placeholder: String = null,
     `type`: date | email | number | password | text | url = null,
     value: String = null

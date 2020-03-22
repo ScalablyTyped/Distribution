@@ -14,7 +14,7 @@ object mod extends js.Object {
   // ): Promise<ValueType[]>;
   // export = pSeries;
   @JSName("default")
-  var default_Original: AnonDefault = js.native
+  var default_Original: AnonCall = js.native
   /**
   	Run promise-returning & async functions in series.
   	@param tasks - Functions are expected to return a value. If a Promise is returned, it's awaited before continuing with the next task.

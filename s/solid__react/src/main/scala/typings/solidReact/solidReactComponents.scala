@@ -3,9 +3,7 @@ package typings.solidReact
 import typings.react.mod.ComponentType
 import typings.react.mod.HTMLAttributes
 import typings.solidReact.mod.ActivityButtonProps
-import typings.std.HTMLAnchorElement
 import typings.std.HTMLButtonElement
-import typings.std.HTMLImageElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,8 +27,7 @@ object solidReactComponents extends solidReactProps {
   def FollowButton: ComponentType[ActivityButtonProps with HTMLAttributes[HTMLButtonElement]] = js.constructorOf[typings.solidReact.mod.FollowButton].asInstanceOf[typings.react.mod.ComponentType[
   typings.solidReact.mod.ActivityButtonProps with typings.react.mod.HTMLAttributes[typings.std.HTMLButtonElement]]]
   @scala.inline
-  def Image: ComponentType[AnonDefaultSrc with HTMLAttributes[HTMLImageElement]] = js.constructorOf[typings.solidReact.mod.Image].asInstanceOf[typings.react.mod.ComponentType[
-  typings.solidReact.AnonDefaultSrc with typings.react.mod.HTMLAttributes[typings.std.HTMLImageElement]]]
+  def Image: ComponentType[ImageProps] = js.constructorOf[typings.solidReact.mod.Image].asInstanceOf[typings.react.mod.ComponentType[ImageProps]]
   @scala.inline
   def Label: ComponentType[LabelProps] = js.constructorOf[typings.solidReact.mod.Label].asInstanceOf[typings.react.mod.ComponentType[LabelProps]]
   @scala.inline
@@ -40,8 +37,7 @@ object solidReactComponents extends solidReactProps {
   def LikeButton: ComponentType[ActivityButtonProps with HTMLAttributes[HTMLButtonElement]] = js.constructorOf[typings.solidReact.mod.LikeButton].asInstanceOf[typings.react.mod.ComponentType[
   typings.solidReact.mod.ActivityButtonProps with typings.react.mod.HTMLAttributes[typings.std.HTMLButtonElement]]]
   @scala.inline
-  def Link: ComponentType[AnonHref with HTMLAttributes[HTMLAnchorElement]] = js.constructorOf[typings.solidReact.mod.Link].asInstanceOf[typings.react.mod.ComponentType[
-  typings.solidReact.AnonHref with typings.react.mod.HTMLAttributes[typings.std.HTMLAnchorElement]]]
+  def Link: ComponentType[LinkProps] = js.constructorOf[typings.solidReact.mod.Link].asInstanceOf[typings.react.mod.ComponentType[LinkProps]]
   @scala.inline
   def List: ComponentType[ListProps] = js.constructorOf[typings.solidReact.mod.List].asInstanceOf[typings.react.mod.ComponentType[ListProps]]
   @scala.inline

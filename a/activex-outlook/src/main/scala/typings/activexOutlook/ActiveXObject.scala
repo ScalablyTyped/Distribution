@@ -269,7 +269,7 @@ trait ActiveXObject extends js.Object {
     obj: Application,
     event: ItemContextMenuDisplay,
     argNames: js.Tuple2[CommandBar, Selection],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonCommandBarSelection, Unit]
+    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonSelection, Unit]
   ): Unit = js.native
   def on(
     obj: Application,
@@ -305,19 +305,19 @@ trait ActiveXObject extends js.Object {
     obj: Application,
     event: ShortcutContextMenuDisplay,
     argNames: js.Tuple2[CommandBar, Shortcut],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonCommandBarShortcut, Unit]
+    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonShortcut, Unit]
   ): Unit = js.native
   def on(
     obj: Application,
     event: StoreContextMenuDisplay,
     argNames: js.Tuple2[CommandBar, Store],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonCommandBarStore, Unit]
+    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonStore, Unit]
   ): Unit = js.native
   def on(
     obj: Application,
     event: ViewContextMenuDisplay,
     argNames: js.Tuple2[CommandBar, View],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonCommandBarView, Unit]
+    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonView, Unit]
   ): Unit = js.native
   def on(
     obj: AppointmentItem,
@@ -407,7 +407,7 @@ trait ActiveXObject extends js.Object {
     obj: AppointmentItem,
     event: Forward,
     argNames: js.Tuple2[Forward, Cancel],
-    handler: js.ThisFunction1[/* this */ AppointmentItem, /* parameter */ AnonCancelForward, Unit]
+    handler: js.ThisFunction1[/* this */ AppointmentItem, /* parameter */ AnonForward, Unit]
   ): Unit = js.native
   def on(
     obj: AppointmentItem,
@@ -425,13 +425,13 @@ trait ActiveXObject extends js.Object {
     obj: AppointmentItem,
     event: ReplyAll,
     argNames: js.Tuple2[Response, Cancel],
-    handler: js.ThisFunction1[/* this */ AppointmentItem, /* parameter */ AnonCancelResponse, Unit]
+    handler: js.ThisFunction1[/* this */ AppointmentItem, /* parameter */ AnonResponse, Unit]
   ): Unit = js.native
   def on(
     obj: AppointmentItem,
     event: Reply,
     argNames: js.Tuple2[Response, Cancel],
-    handler: js.ThisFunction1[/* this */ AppointmentItem, /* parameter */ AnonCancelResponse, Unit]
+    handler: js.ThisFunction1[/* this */ AppointmentItem, /* parameter */ AnonResponse, Unit]
   ): Unit = js.native
   def on(
     obj: AppointmentItem,
@@ -533,7 +533,7 @@ trait ActiveXObject extends js.Object {
     obj: ContactItem,
     event: Forward,
     argNames: js.Tuple2[Forward, Cancel],
-    handler: js.ThisFunction1[/* this */ ContactItem, /* parameter */ AnonCancelForward, Unit]
+    handler: js.ThisFunction1[/* this */ ContactItem, /* parameter */ AnonForward, Unit]
   ): Unit = js.native
   def on(
     obj: ContactItem,
@@ -551,13 +551,13 @@ trait ActiveXObject extends js.Object {
     obj: ContactItem,
     event: ReplyAll,
     argNames: js.Tuple2[Response, Cancel],
-    handler: js.ThisFunction1[/* this */ ContactItem, /* parameter */ AnonCancelResponse, Unit]
+    handler: js.ThisFunction1[/* this */ ContactItem, /* parameter */ AnonResponse, Unit]
   ): Unit = js.native
   def on(
     obj: ContactItem,
     event: Reply,
     argNames: js.Tuple2[Response, Cancel],
-    handler: js.ThisFunction1[/* this */ ContactItem, /* parameter */ AnonCancelResponse, Unit]
+    handler: js.ThisFunction1[/* this */ ContactItem, /* parameter */ AnonResponse, Unit]
   ): Unit = js.native
   def on(
     obj: ContactItem,
@@ -659,7 +659,7 @@ trait ActiveXObject extends js.Object {
     obj: DistListItem,
     event: Forward,
     argNames: js.Tuple2[Forward, Cancel],
-    handler: js.ThisFunction1[/* this */ DistListItem, /* parameter */ AnonCancelForward, Unit]
+    handler: js.ThisFunction1[/* this */ DistListItem, /* parameter */ AnonForward, Unit]
   ): Unit = js.native
   def on(
     obj: DistListItem,
@@ -677,13 +677,13 @@ trait ActiveXObject extends js.Object {
     obj: DistListItem,
     event: ReplyAll,
     argNames: js.Tuple2[Response, Cancel],
-    handler: js.ThisFunction1[/* this */ DistListItem, /* parameter */ AnonCancelResponse, Unit]
+    handler: js.ThisFunction1[/* this */ DistListItem, /* parameter */ AnonResponse, Unit]
   ): Unit = js.native
   def on(
     obj: DistListItem,
     event: Reply,
     argNames: js.Tuple2[Response, Cancel],
-    handler: js.ThisFunction1[/* this */ DistListItem, /* parameter */ AnonCancelResponse, Unit]
+    handler: js.ThisFunction1[/* this */ DistListItem, /* parameter */ AnonResponse, Unit]
   ): Unit = js.native
   def on(
     obj: DistListItem,
@@ -785,7 +785,7 @@ trait ActiveXObject extends js.Object {
     obj: DocumentItem,
     event: Forward,
     argNames: js.Tuple2[Forward, Cancel],
-    handler: js.ThisFunction1[/* this */ DocumentItem, /* parameter */ AnonCancelForward, Unit]
+    handler: js.ThisFunction1[/* this */ DocumentItem, /* parameter */ AnonForward, Unit]
   ): Unit = js.native
   def on(
     obj: DocumentItem,
@@ -803,13 +803,13 @@ trait ActiveXObject extends js.Object {
     obj: DocumentItem,
     event: ReplyAll,
     argNames: js.Tuple2[Response, Cancel],
-    handler: js.ThisFunction1[/* this */ DocumentItem, /* parameter */ AnonCancelResponse, Unit]
+    handler: js.ThisFunction1[/* this */ DocumentItem, /* parameter */ AnonResponse, Unit]
   ): Unit = js.native
   def on(
     obj: DocumentItem,
     event: Reply,
     argNames: js.Tuple2[Response, Cancel],
-    handler: js.ThisFunction1[/* this */ DocumentItem, /* parameter */ AnonCancelResponse, Unit]
+    handler: js.ThisFunction1[/* this */ DocumentItem, /* parameter */ AnonResponse, Unit]
   ): Unit = js.native
   def on(
     obj: DocumentItem,
@@ -827,7 +827,7 @@ trait ActiveXObject extends js.Object {
     obj: Explorer,
     event: BeforeFolderSwitch,
     argNames: js.Tuple2[NewFolder, Cancel],
-    handler: js.ThisFunction1[/* this */ Explorer, /* parameter */ AnonCancelNewFolder, Unit]
+    handler: js.ThisFunction1[/* this */ Explorer, /* parameter */ AnonNewFolder, Unit]
   ): Unit = js.native
   def on(
     obj: Explorer,
@@ -845,7 +845,7 @@ trait ActiveXObject extends js.Object {
     obj: Explorer,
     event: BeforeItemPaste,
     argNames: js.Tuple3[ClipboardContent, Target, Cancel],
-    handler: js.ThisFunction1[/* this */ Explorer, /* parameter */ AnonCancelClipboardContent, Unit]
+    handler: js.ThisFunction1[/* this */ Explorer, /* parameter */ AnonClipboardContent, Unit]
   ): Unit = js.native
   def on(
     obj: Explorer,
@@ -875,7 +875,7 @@ trait ActiveXObject extends js.Object {
     obj: Explorer,
     event: BeforeViewSwitch,
     argNames: js.Tuple2[NewView, Cancel],
-    handler: js.ThisFunction1[/* this */ Explorer, /* parameter */ AnonCancelNewView, Unit]
+    handler: js.ThisFunction1[/* this */ Explorer, /* parameter */ AnonNewView, Unit]
   ): Unit = js.native
   def on(
     obj: Explorers,
@@ -887,11 +887,7 @@ trait ActiveXObject extends js.Object {
     obj: typings.activexOutlook.Outlook.Folder,
     event: BeforeFolderMove,
     argNames: js.Tuple2[MoveTo, Cancel],
-    handler: js.ThisFunction1[
-      /* this */ typings.activexOutlook.Outlook.Folder, 
-      /* parameter */ AnonCancelMoveTo, 
-      Unit
-    ]
+    handler: js.ThisFunction1[/* this */ typings.activexOutlook.Outlook.Folder, /* parameter */ AnonMoveTo, Unit]
   ): Unit = js.native
   def on(
     obj: typings.activexOutlook.Outlook.Folder,
@@ -899,7 +895,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Tuple3[Item, MoveTo, Cancel],
     handler: js.ThisFunction1[
       /* this */ typings.activexOutlook.Outlook.Folder, 
-      /* parameter */ AnonCancelItemMoveTo, 
+      /* parameter */ AnonItemMoveTo, 
       Unit
     ]
   ): Unit = js.native
@@ -1057,7 +1053,7 @@ trait ActiveXObject extends js.Object {
     obj: JournalItem,
     event: Forward,
     argNames: js.Tuple2[Forward, Cancel],
-    handler: js.ThisFunction1[/* this */ JournalItem, /* parameter */ AnonCancelForward, Unit]
+    handler: js.ThisFunction1[/* this */ JournalItem, /* parameter */ AnonForward, Unit]
   ): Unit = js.native
   def on(
     obj: JournalItem,
@@ -1075,13 +1071,13 @@ trait ActiveXObject extends js.Object {
     obj: JournalItem,
     event: ReplyAll,
     argNames: js.Tuple2[Response, Cancel],
-    handler: js.ThisFunction1[/* this */ JournalItem, /* parameter */ AnonCancelResponse, Unit]
+    handler: js.ThisFunction1[/* this */ JournalItem, /* parameter */ AnonResponse, Unit]
   ): Unit = js.native
   def on(
     obj: JournalItem,
     event: Reply,
     argNames: js.Tuple2[Response, Cancel],
-    handler: js.ThisFunction1[/* this */ JournalItem, /* parameter */ AnonCancelResponse, Unit]
+    handler: js.ThisFunction1[/* this */ JournalItem, /* parameter */ AnonResponse, Unit]
   ): Unit = js.native
   def on(
     obj: JournalItem,
@@ -1183,7 +1179,7 @@ trait ActiveXObject extends js.Object {
     obj: MailItem,
     event: Forward,
     argNames: js.Tuple2[Forward, Cancel],
-    handler: js.ThisFunction1[/* this */ MailItem, /* parameter */ AnonCancelForward, Unit]
+    handler: js.ThisFunction1[/* this */ MailItem, /* parameter */ AnonForward, Unit]
   ): Unit = js.native
   def on(
     obj: MailItem,
@@ -1201,13 +1197,13 @@ trait ActiveXObject extends js.Object {
     obj: MailItem,
     event: ReplyAll,
     argNames: js.Tuple2[Response, Cancel],
-    handler: js.ThisFunction1[/* this */ MailItem, /* parameter */ AnonCancelResponse, Unit]
+    handler: js.ThisFunction1[/* this */ MailItem, /* parameter */ AnonResponse, Unit]
   ): Unit = js.native
   def on(
     obj: MailItem,
     event: Reply,
     argNames: js.Tuple2[Response, Cancel],
-    handler: js.ThisFunction1[/* this */ MailItem, /* parameter */ AnonCancelResponse, Unit]
+    handler: js.ThisFunction1[/* this */ MailItem, /* parameter */ AnonResponse, Unit]
   ): Unit = js.native
   def on(
     obj: MailItem,
@@ -1309,7 +1305,7 @@ trait ActiveXObject extends js.Object {
     obj: MeetingItem,
     event: Forward,
     argNames: js.Tuple2[Forward, Cancel],
-    handler: js.ThisFunction1[/* this */ MeetingItem, /* parameter */ AnonCancelForward, Unit]
+    handler: js.ThisFunction1[/* this */ MeetingItem, /* parameter */ AnonForward, Unit]
   ): Unit = js.native
   def on(
     obj: MeetingItem,
@@ -1327,13 +1323,13 @@ trait ActiveXObject extends js.Object {
     obj: MeetingItem,
     event: ReplyAll,
     argNames: js.Tuple2[Response, Cancel],
-    handler: js.ThisFunction1[/* this */ MeetingItem, /* parameter */ AnonCancelResponse, Unit]
+    handler: js.ThisFunction1[/* this */ MeetingItem, /* parameter */ AnonResponse, Unit]
   ): Unit = js.native
   def on(
     obj: MeetingItem,
     event: Reply,
     argNames: js.Tuple2[Response, Cancel],
-    handler: js.ThisFunction1[/* this */ MeetingItem, /* parameter */ AnonCancelResponse, Unit]
+    handler: js.ThisFunction1[/* this */ MeetingItem, /* parameter */ AnonResponse, Unit]
   ): Unit = js.native
   def on(
     obj: MeetingItem,
@@ -1435,7 +1431,7 @@ trait ActiveXObject extends js.Object {
     obj: MobileItem,
     event: Forward,
     argNames: js.Tuple2[Forward, Cancel],
-    handler: js.ThisFunction1[/* this */ MobileItem, /* parameter */ AnonCancelForward, Unit]
+    handler: js.ThisFunction1[/* this */ MobileItem, /* parameter */ AnonForward, Unit]
   ): Unit = js.native
   def on(
     obj: MobileItem,
@@ -1453,13 +1449,13 @@ trait ActiveXObject extends js.Object {
     obj: MobileItem,
     event: ReplyAll,
     argNames: js.Tuple2[Response, Cancel],
-    handler: js.ThisFunction1[/* this */ MobileItem, /* parameter */ AnonCancelResponse, Unit]
+    handler: js.ThisFunction1[/* this */ MobileItem, /* parameter */ AnonResponse, Unit]
   ): Unit = js.native
   def on(
     obj: MobileItem,
     event: Reply,
     argNames: js.Tuple2[Response, Cancel],
-    handler: js.ThisFunction1[/* this */ MobileItem, /* parameter */ AnonCancelResponse, Unit]
+    handler: js.ThisFunction1[/* this */ MobileItem, /* parameter */ AnonResponse, Unit]
   ): Unit = js.native
   def on(
     obj: MobileItem,
@@ -1519,7 +1515,7 @@ trait ActiveXObject extends js.Object {
     obj: OlkCategory,
     event: Exit,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ OlkCategory, /* parameter */ AnonCancelBooleanReadOnly, Unit]
+    handler: js.ThisFunction1[/* this */ OlkCategory, /* parameter */ Anon0, Unit]
   ): Unit = js.native
   def on(
     obj: OlkCategory,
@@ -1561,13 +1557,13 @@ trait ActiveXObject extends js.Object {
     obj: OlkCheckBox,
     event: BeforeUpdate,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ OlkCheckBox, /* parameter */ AnonCancelBooleanReadOnly, Unit]
+    handler: js.ThisFunction1[/* this */ OlkCheckBox, /* parameter */ Anon0, Unit]
   ): Unit = js.native
   def on(
     obj: OlkCheckBox,
     event: Exit,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ OlkCheckBox, /* parameter */ AnonCancelBooleanReadOnly, Unit]
+    handler: js.ThisFunction1[/* this */ OlkCheckBox, /* parameter */ Anon0, Unit]
   ): Unit = js.native
   def on(
     obj: OlkCheckBox,
@@ -1609,13 +1605,13 @@ trait ActiveXObject extends js.Object {
     obj: OlkComboBox,
     event: BeforeUpdate,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ OlkComboBox, /* parameter */ AnonCancelBooleanReadOnly, Unit]
+    handler: js.ThisFunction1[/* this */ OlkComboBox, /* parameter */ Anon0, Unit]
   ): Unit = js.native
   def on(
     obj: OlkComboBox,
     event: Exit,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ OlkComboBox, /* parameter */ AnonCancelBooleanReadOnly, Unit]
+    handler: js.ThisFunction1[/* this */ OlkComboBox, /* parameter */ Anon0, Unit]
   ): Unit = js.native
   def on(
     obj: OlkComboBox,
@@ -1657,13 +1653,13 @@ trait ActiveXObject extends js.Object {
     obj: OlkCommandButton,
     event: BeforeUpdate,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ OlkCommandButton, /* parameter */ AnonCancelBooleanReadOnly, Unit]
+    handler: js.ThisFunction1[/* this */ OlkCommandButton, /* parameter */ Anon0, Unit]
   ): Unit = js.native
   def on(
     obj: OlkCommandButton,
     event: Exit,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ OlkCommandButton, /* parameter */ AnonCancelBooleanReadOnly, Unit]
+    handler: js.ThisFunction1[/* this */ OlkCommandButton, /* parameter */ Anon0, Unit]
   ): Unit = js.native
   def on(
     obj: OlkCommandButton,
@@ -1705,7 +1701,7 @@ trait ActiveXObject extends js.Object {
     obj: OlkContactPhoto,
     event: Exit,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ OlkContactPhoto, /* parameter */ AnonCancelBooleanReadOnly, Unit]
+    handler: js.ThisFunction1[/* this */ OlkContactPhoto, /* parameter */ Anon0, Unit]
   ): Unit = js.native
   def on(
     obj: OlkContactPhoto,
@@ -1747,13 +1743,13 @@ trait ActiveXObject extends js.Object {
     obj: OlkDateControl,
     event: BeforeUpdate,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ OlkDateControl, /* parameter */ AnonCancelBooleanReadOnly, Unit]
+    handler: js.ThisFunction1[/* this */ OlkDateControl, /* parameter */ Anon0, Unit]
   ): Unit = js.native
   def on(
     obj: OlkDateControl,
     event: Exit,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ OlkDateControl, /* parameter */ AnonCancelBooleanReadOnly, Unit]
+    handler: js.ThisFunction1[/* this */ OlkDateControl, /* parameter */ Anon0, Unit]
   ): Unit = js.native
   def on(
     obj: OlkDateControl,
@@ -1831,13 +1827,13 @@ trait ActiveXObject extends js.Object {
     obj: OlkListBox,
     event: BeforeUpdate,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ OlkListBox, /* parameter */ AnonCancelBooleanReadOnly, Unit]
+    handler: js.ThisFunction1[/* this */ OlkListBox, /* parameter */ Anon0, Unit]
   ): Unit = js.native
   def on(
     obj: OlkListBox,
     event: Exit,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ OlkListBox, /* parameter */ AnonCancelBooleanReadOnly, Unit]
+    handler: js.ThisFunction1[/* this */ OlkListBox, /* parameter */ Anon0, Unit]
   ): Unit = js.native
   def on(
     obj: OlkListBox,
@@ -1879,13 +1875,13 @@ trait ActiveXObject extends js.Object {
     obj: OlkOptionButton,
     event: BeforeUpdate,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ OlkOptionButton, /* parameter */ AnonCancelBooleanReadOnly, Unit]
+    handler: js.ThisFunction1[/* this */ OlkOptionButton, /* parameter */ Anon0, Unit]
   ): Unit = js.native
   def on(
     obj: OlkOptionButton,
     event: Exit,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ OlkOptionButton, /* parameter */ AnonCancelBooleanReadOnly, Unit]
+    handler: js.ThisFunction1[/* this */ OlkOptionButton, /* parameter */ Anon0, Unit]
   ): Unit = js.native
   def on(
     obj: OlkOptionButton,
@@ -1945,13 +1941,13 @@ trait ActiveXObject extends js.Object {
     obj: OlkTextBox,
     event: BeforeUpdate,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ OlkTextBox, /* parameter */ AnonCancelBooleanReadOnly, Unit]
+    handler: js.ThisFunction1[/* this */ OlkTextBox, /* parameter */ Anon0, Unit]
   ): Unit = js.native
   def on(
     obj: OlkTextBox,
     event: Exit,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ OlkTextBox, /* parameter */ AnonCancelBooleanReadOnly, Unit]
+    handler: js.ThisFunction1[/* this */ OlkTextBox, /* parameter */ Anon0, Unit]
   ): Unit = js.native
   def on(
     obj: OlkTextBox,
@@ -1993,13 +1989,13 @@ trait ActiveXObject extends js.Object {
     obj: OlkTimeControl,
     event: BeforeUpdate,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ OlkTimeControl, /* parameter */ AnonCancelBooleanReadOnly, Unit]
+    handler: js.ThisFunction1[/* this */ OlkTimeControl, /* parameter */ Anon0, Unit]
   ): Unit = js.native
   def on(
     obj: OlkTimeControl,
     event: Exit,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ OlkTimeControl, /* parameter */ AnonCancelBooleanReadOnly, Unit]
+    handler: js.ThisFunction1[/* this */ OlkTimeControl, /* parameter */ Anon0, Unit]
   ): Unit = js.native
   def on(
     obj: OlkTimeControl,
@@ -2041,13 +2037,13 @@ trait ActiveXObject extends js.Object {
     obj: OlkTimeZoneControl,
     event: BeforeUpdate,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ OlkTimeZoneControl, /* parameter */ AnonCancelBooleanReadOnly, Unit]
+    handler: js.ThisFunction1[/* this */ OlkTimeZoneControl, /* parameter */ Anon0, Unit]
   ): Unit = js.native
   def on(
     obj: OlkTimeZoneControl,
     event: Exit,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ OlkTimeZoneControl, /* parameter */ AnonCancelBooleanReadOnly, Unit]
+    handler: js.ThisFunction1[/* this */ OlkTimeZoneControl, /* parameter */ Anon0, Unit]
   ): Unit = js.native
   def on(
     obj: OlkTimeZoneControl,
@@ -2095,7 +2091,7 @@ trait ActiveXObject extends js.Object {
     obj: OutlookBarGroups,
     event: BeforeGroupRemove,
     argNames: js.Tuple2[Group, Cancel],
-    handler: js.ThisFunction1[/* this */ OutlookBarGroups, /* parameter */ AnonCancelGroup, Unit]
+    handler: js.ThisFunction1[/* this */ OutlookBarGroups, /* parameter */ AnonGroup, Unit]
   ): Unit = js.native
   def on(
     obj: OutlookBarGroups,
@@ -2107,7 +2103,7 @@ trait ActiveXObject extends js.Object {
     obj: OutlookBarPane,
     event: BeforeGroupSwitch,
     argNames: js.Tuple2[ToGroup, Cancel],
-    handler: js.ThisFunction1[/* this */ OutlookBarPane, /* parameter */ AnonCancelToGroup, Unit]
+    handler: js.ThisFunction1[/* this */ OutlookBarPane, /* parameter */ AnonToGroup, Unit]
   ): Unit = js.native
   def on(
     obj: OutlookBarPane,
@@ -2221,7 +2217,7 @@ trait ActiveXObject extends js.Object {
     obj: PostItem,
     event: Forward,
     argNames: js.Tuple2[Forward, Cancel],
-    handler: js.ThisFunction1[/* this */ PostItem, /* parameter */ AnonCancelForward, Unit]
+    handler: js.ThisFunction1[/* this */ PostItem, /* parameter */ AnonForward, Unit]
   ): Unit = js.native
   def on(
     obj: PostItem,
@@ -2239,13 +2235,13 @@ trait ActiveXObject extends js.Object {
     obj: PostItem,
     event: ReplyAll,
     argNames: js.Tuple2[Response, Cancel],
-    handler: js.ThisFunction1[/* this */ PostItem, /* parameter */ AnonCancelResponse, Unit]
+    handler: js.ThisFunction1[/* this */ PostItem, /* parameter */ AnonResponse, Unit]
   ): Unit = js.native
   def on(
     obj: PostItem,
     event: Reply,
     argNames: js.Tuple2[Response, Cancel],
-    handler: js.ThisFunction1[/* this */ PostItem, /* parameter */ AnonCancelResponse, Unit]
+    handler: js.ThisFunction1[/* this */ PostItem, /* parameter */ AnonResponse, Unit]
   ): Unit = js.native
   def on(
     obj: PostItem,
@@ -2377,7 +2373,7 @@ trait ActiveXObject extends js.Object {
     obj: RemoteItem,
     event: Forward,
     argNames: js.Tuple2[Forward, Cancel],
-    handler: js.ThisFunction1[/* this */ RemoteItem, /* parameter */ AnonCancelForward, Unit]
+    handler: js.ThisFunction1[/* this */ RemoteItem, /* parameter */ AnonForward, Unit]
   ): Unit = js.native
   def on(
     obj: RemoteItem,
@@ -2395,13 +2391,13 @@ trait ActiveXObject extends js.Object {
     obj: RemoteItem,
     event: ReplyAll,
     argNames: js.Tuple2[Response, Cancel],
-    handler: js.ThisFunction1[/* this */ RemoteItem, /* parameter */ AnonCancelResponse, Unit]
+    handler: js.ThisFunction1[/* this */ RemoteItem, /* parameter */ AnonResponse, Unit]
   ): Unit = js.native
   def on(
     obj: RemoteItem,
     event: Reply,
     argNames: js.Tuple2[Response, Cancel],
-    handler: js.ThisFunction1[/* this */ RemoteItem, /* parameter */ AnonCancelResponse, Unit]
+    handler: js.ThisFunction1[/* this */ RemoteItem, /* parameter */ AnonResponse, Unit]
   ): Unit = js.native
   def on(
     obj: RemoteItem,
@@ -2503,7 +2499,7 @@ trait ActiveXObject extends js.Object {
     obj: ReportItem,
     event: Forward,
     argNames: js.Tuple2[Forward, Cancel],
-    handler: js.ThisFunction1[/* this */ ReportItem, /* parameter */ AnonCancelForward, Unit]
+    handler: js.ThisFunction1[/* this */ ReportItem, /* parameter */ AnonForward, Unit]
   ): Unit = js.native
   def on(
     obj: ReportItem,
@@ -2521,13 +2517,13 @@ trait ActiveXObject extends js.Object {
     obj: ReportItem,
     event: ReplyAll,
     argNames: js.Tuple2[Response, Cancel],
-    handler: js.ThisFunction1[/* this */ ReportItem, /* parameter */ AnonCancelResponse, Unit]
+    handler: js.ThisFunction1[/* this */ ReportItem, /* parameter */ AnonResponse, Unit]
   ): Unit = js.native
   def on(
     obj: ReportItem,
     event: Reply,
     argNames: js.Tuple2[Response, Cancel],
-    handler: js.ThisFunction1[/* this */ ReportItem, /* parameter */ AnonCancelResponse, Unit]
+    handler: js.ThisFunction1[/* this */ ReportItem, /* parameter */ AnonResponse, Unit]
   ): Unit = js.native
   def on(
     obj: ReportItem,
@@ -2641,7 +2637,7 @@ trait ActiveXObject extends js.Object {
     obj: SharingItem,
     event: Forward,
     argNames: js.Tuple2[Forward, Cancel],
-    handler: js.ThisFunction1[/* this */ SharingItem, /* parameter */ AnonCancelForward, Unit]
+    handler: js.ThisFunction1[/* this */ SharingItem, /* parameter */ AnonForward, Unit]
   ): Unit = js.native
   def on(
     obj: SharingItem,
@@ -2659,13 +2655,13 @@ trait ActiveXObject extends js.Object {
     obj: SharingItem,
     event: ReplyAll,
     argNames: js.Tuple2[Response, Cancel],
-    handler: js.ThisFunction1[/* this */ SharingItem, /* parameter */ AnonCancelResponse, Unit]
+    handler: js.ThisFunction1[/* this */ SharingItem, /* parameter */ AnonResponse, Unit]
   ): Unit = js.native
   def on(
     obj: SharingItem,
     event: Reply,
     argNames: js.Tuple2[Response, Cancel],
-    handler: js.ThisFunction1[/* this */ SharingItem, /* parameter */ AnonCancelResponse, Unit]
+    handler: js.ThisFunction1[/* this */ SharingItem, /* parameter */ AnonResponse, Unit]
   ): Unit = js.native
   def on(
     obj: SharingItem,
@@ -2689,7 +2685,7 @@ trait ActiveXObject extends js.Object {
     obj: Stores,
     event: StoreAdd,
     argNames: js.Array[Store],
-    handler: js.ThisFunction1[/* this */ Stores, /* parameter */ AnonStore, Unit]
+    handler: js.ThisFunction1[/* this */ Stores, /* parameter */ AnonStoreStore, Unit]
   ): Unit = js.native
   def on(
     obj: SyncObject,
@@ -2791,7 +2787,7 @@ trait ActiveXObject extends js.Object {
     obj: TaskItem,
     event: Forward,
     argNames: js.Tuple2[Forward, Cancel],
-    handler: js.ThisFunction1[/* this */ TaskItem, /* parameter */ AnonCancelForward, Unit]
+    handler: js.ThisFunction1[/* this */ TaskItem, /* parameter */ AnonForward, Unit]
   ): Unit = js.native
   def on(
     obj: TaskItem,
@@ -2809,13 +2805,13 @@ trait ActiveXObject extends js.Object {
     obj: TaskItem,
     event: ReplyAll,
     argNames: js.Tuple2[Response, Cancel],
-    handler: js.ThisFunction1[/* this */ TaskItem, /* parameter */ AnonCancelResponse, Unit]
+    handler: js.ThisFunction1[/* this */ TaskItem, /* parameter */ AnonResponse, Unit]
   ): Unit = js.native
   def on(
     obj: TaskItem,
     event: Reply,
     argNames: js.Tuple2[Response, Cancel],
-    handler: js.ThisFunction1[/* this */ TaskItem, /* parameter */ AnonCancelResponse, Unit]
+    handler: js.ThisFunction1[/* this */ TaskItem, /* parameter */ AnonResponse, Unit]
   ): Unit = js.native
   def on(
     obj: TaskItem,
@@ -2917,7 +2913,7 @@ trait ActiveXObject extends js.Object {
     obj: TaskRequestAcceptItem,
     event: Forward,
     argNames: js.Tuple2[Forward, Cancel],
-    handler: js.ThisFunction1[/* this */ TaskRequestAcceptItem, /* parameter */ AnonCancelForward, Unit]
+    handler: js.ThisFunction1[/* this */ TaskRequestAcceptItem, /* parameter */ AnonForward, Unit]
   ): Unit = js.native
   def on(
     obj: TaskRequestAcceptItem,
@@ -2935,13 +2931,13 @@ trait ActiveXObject extends js.Object {
     obj: TaskRequestAcceptItem,
     event: ReplyAll,
     argNames: js.Tuple2[Response, Cancel],
-    handler: js.ThisFunction1[/* this */ TaskRequestAcceptItem, /* parameter */ AnonCancelResponse, Unit]
+    handler: js.ThisFunction1[/* this */ TaskRequestAcceptItem, /* parameter */ AnonResponse, Unit]
   ): Unit = js.native
   def on(
     obj: TaskRequestAcceptItem,
     event: Reply,
     argNames: js.Tuple2[Response, Cancel],
-    handler: js.ThisFunction1[/* this */ TaskRequestAcceptItem, /* parameter */ AnonCancelResponse, Unit]
+    handler: js.ThisFunction1[/* this */ TaskRequestAcceptItem, /* parameter */ AnonResponse, Unit]
   ): Unit = js.native
   def on(
     obj: TaskRequestAcceptItem,
@@ -3043,7 +3039,7 @@ trait ActiveXObject extends js.Object {
     obj: TaskRequestDeclineItem,
     event: Forward,
     argNames: js.Tuple2[Forward, Cancel],
-    handler: js.ThisFunction1[/* this */ TaskRequestDeclineItem, /* parameter */ AnonCancelForward, Unit]
+    handler: js.ThisFunction1[/* this */ TaskRequestDeclineItem, /* parameter */ AnonForward, Unit]
   ): Unit = js.native
   def on(
     obj: TaskRequestDeclineItem,
@@ -3061,13 +3057,13 @@ trait ActiveXObject extends js.Object {
     obj: TaskRequestDeclineItem,
     event: ReplyAll,
     argNames: js.Tuple2[Response, Cancel],
-    handler: js.ThisFunction1[/* this */ TaskRequestDeclineItem, /* parameter */ AnonCancelResponse, Unit]
+    handler: js.ThisFunction1[/* this */ TaskRequestDeclineItem, /* parameter */ AnonResponse, Unit]
   ): Unit = js.native
   def on(
     obj: TaskRequestDeclineItem,
     event: Reply,
     argNames: js.Tuple2[Response, Cancel],
-    handler: js.ThisFunction1[/* this */ TaskRequestDeclineItem, /* parameter */ AnonCancelResponse, Unit]
+    handler: js.ThisFunction1[/* this */ TaskRequestDeclineItem, /* parameter */ AnonResponse, Unit]
   ): Unit = js.native
   def on(
     obj: TaskRequestDeclineItem,
@@ -3169,7 +3165,7 @@ trait ActiveXObject extends js.Object {
     obj: TaskRequestItem,
     event: Forward,
     argNames: js.Tuple2[Forward, Cancel],
-    handler: js.ThisFunction1[/* this */ TaskRequestItem, /* parameter */ AnonCancelForward, Unit]
+    handler: js.ThisFunction1[/* this */ TaskRequestItem, /* parameter */ AnonForward, Unit]
   ): Unit = js.native
   def on(
     obj: TaskRequestItem,
@@ -3187,13 +3183,13 @@ trait ActiveXObject extends js.Object {
     obj: TaskRequestItem,
     event: ReplyAll,
     argNames: js.Tuple2[Response, Cancel],
-    handler: js.ThisFunction1[/* this */ TaskRequestItem, /* parameter */ AnonCancelResponse, Unit]
+    handler: js.ThisFunction1[/* this */ TaskRequestItem, /* parameter */ AnonResponse, Unit]
   ): Unit = js.native
   def on(
     obj: TaskRequestItem,
     event: Reply,
     argNames: js.Tuple2[Response, Cancel],
-    handler: js.ThisFunction1[/* this */ TaskRequestItem, /* parameter */ AnonCancelResponse, Unit]
+    handler: js.ThisFunction1[/* this */ TaskRequestItem, /* parameter */ AnonResponse, Unit]
   ): Unit = js.native
   def on(
     obj: TaskRequestItem,
@@ -3295,7 +3291,7 @@ trait ActiveXObject extends js.Object {
     obj: TaskRequestUpdateItem,
     event: Forward,
     argNames: js.Tuple2[Forward, Cancel],
-    handler: js.ThisFunction1[/* this */ TaskRequestUpdateItem, /* parameter */ AnonCancelForward, Unit]
+    handler: js.ThisFunction1[/* this */ TaskRequestUpdateItem, /* parameter */ AnonForward, Unit]
   ): Unit = js.native
   def on(
     obj: TaskRequestUpdateItem,
@@ -3313,13 +3309,13 @@ trait ActiveXObject extends js.Object {
     obj: TaskRequestUpdateItem,
     event: ReplyAll,
     argNames: js.Tuple2[Response, Cancel],
-    handler: js.ThisFunction1[/* this */ TaskRequestUpdateItem, /* parameter */ AnonCancelResponse, Unit]
+    handler: js.ThisFunction1[/* this */ TaskRequestUpdateItem, /* parameter */ AnonResponse, Unit]
   ): Unit = js.native
   def on(
     obj: TaskRequestUpdateItem,
     event: Reply,
     argNames: js.Tuple2[Response, Cancel],
-    handler: js.ThisFunction1[/* this */ TaskRequestUpdateItem, /* parameter */ AnonCancelResponse, Unit]
+    handler: js.ThisFunction1[/* this */ TaskRequestUpdateItem, /* parameter */ AnonResponse, Unit]
   ): Unit = js.native
   def on(
     obj: TaskRequestUpdateItem,
@@ -3337,13 +3333,13 @@ trait ActiveXObject extends js.Object {
     obj: Views,
     event: ViewAdd,
     argNames: js.Array[View],
-    handler: js.ThisFunction1[/* this */ Views, /* parameter */ AnonView, Unit]
+    handler: js.ThisFunction1[/* this */ Views, /* parameter */ AnonViewView, Unit]
   ): Unit = js.native
   def on(
     obj: Views,
     event: ViewRemove,
     argNames: js.Array[View],
-    handler: js.ThisFunction1[/* this */ Views, /* parameter */ AnonView, Unit]
+    handler: js.ThisFunction1[/* this */ Views, /* parameter */ AnonViewView, Unit]
   ): Unit = js.native
   @JSName("on")
   def on_Activate(

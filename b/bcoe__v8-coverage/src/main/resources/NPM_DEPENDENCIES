@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@bcoe/v8-coverage" : "0.2.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@bcoe/v8-coverage" : "0.2.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

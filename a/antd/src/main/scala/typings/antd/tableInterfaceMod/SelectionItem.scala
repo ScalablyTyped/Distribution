@@ -13,7 +13,7 @@ trait SelectionItem extends js.Object {
 
 object SelectionItem {
   @scala.inline
-  def apply(key: String, onSelect: /* key */ js.Array[String] => Unit = null, text: ReactNode = null): SelectionItem = {
+  def apply(key: String, onSelect: /* currentRowKeys */ js.Array[Key] => Unit = null, text: ReactNode = null): SelectionItem = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
     if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1(onSelect))
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])

@@ -27,7 +27,7 @@ object checkboxMod extends js.Object {
   @js.native
   object CheckboxBase extends js.Object {
     var defaultProps: ICheckboxProps = js.native
-    def getDerivedStateFromProps(nextProps: ICheckboxProps, prevState: ICheckboxState): ICheckboxState | Null = js.native
+    def getDerivedStateFromProps(nextProps: ReadonlyICheckboxProps, prevState: ReadonlyICheckboxState): ICheckboxState | Null = js.native
   }
   
 }

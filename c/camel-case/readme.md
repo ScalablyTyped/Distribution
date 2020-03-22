@@ -1,7 +1,7 @@
 
 # Scala.js typings for camel-case
 
-Typings are for version 3.0.0
+Typings are for version 4.1.1
 
 ## Library description:
 Transform into a string with the separator denoted by the next word capitalized

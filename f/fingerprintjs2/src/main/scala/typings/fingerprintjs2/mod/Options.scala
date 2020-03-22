@@ -2,10 +2,10 @@ package typings.fingerprintjs2.mod
 
 import typings.fingerprintjs2.AnonAdBlock
 import typings.fingerprintjs2.AnonDetectScreenOrientation
-import typings.fingerprintjs2.AnonDone
 import typings.fingerprintjs2.AnonExcludeIE
 import typings.fingerprintjs2.AnonExcludeIOS11
 import typings.fingerprintjs2.AnonExtendedJsFonts
+import typings.fingerprintjs2.AnonGetData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ trait Options extends js.Object {
   var NOT_AVAILABLE: js.UndefOr[String] = js.undefined
   var audio: js.UndefOr[AnonExcludeIOS11] = js.undefined
   var excludes: js.UndefOr[AnonAdBlock] = js.undefined
-  var extraComponents: js.UndefOr[js.Array[AnonDone]] = js.undefined
+  var extraComponents: js.UndefOr[js.Array[AnonGetData]] = js.undefined
   var fonts: js.UndefOr[AnonExtendedJsFonts] = js.undefined
   var plugins: js.UndefOr[AnonExcludeIE] = js.undefined
   var preprocessor: js.UndefOr[js.Function2[/* key */ String, /* value */ js.Any, _]] = js.undefined
@@ -31,7 +31,7 @@ object Options {
     NOT_AVAILABLE: String = null,
     audio: AnonExcludeIOS11 = null,
     excludes: AnonAdBlock = null,
-    extraComponents: js.Array[AnonDone] = null,
+    extraComponents: js.Array[AnonGetData] = null,
     fonts: AnonExtendedJsFonts = null,
     plugins: AnonExcludeIE = null,
     preprocessor: (/* key */ String, /* value */ js.Any) => _ = null,

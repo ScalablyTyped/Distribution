@@ -26,7 +26,7 @@ trait ChocolateChipStatic extends js.Object {
     * data: this is used by $(element).data() to store data.
     * events: this is used by the event system.
     */
-  var chch_cache: AnonDataEvents = js.native
+  var chch_cache: AnonData = js.native
   /**
     * The base for extending ChocolateChipJS collections, which are arrays of elements.
     */
@@ -128,7 +128,7 @@ trait ChocolateChipStatic extends js.Object {
     *
     */
   @JSName("template")
-  var template_Original: AnonData = js.native
+  var template_Original: AnonCall = js.native
   /**
     * Object used to store string templates and parsed templates.
     *

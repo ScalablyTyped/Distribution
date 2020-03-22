@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/angular", "IonSplitPane")
 @js.native
 class IonSplitPane protected ()
-  extends typings.ionicAngular.distMod.IonSplitPane {
+  extends typings.ionicAngular.proxiesMod.IonSplitPane {
   def this(c: ChangeDetectorRef, r: ElementRef[_], z: NgZone) = this()
 }
 

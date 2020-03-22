@@ -1,6 +1,7 @@
 package typings.nodeJose.mod.JWK
 
 import typings.node.Buffer
+import typings.nodeJose.PartialKeyStoreGetOptions
 import typings.nodeJose.nodeJoseStrings.`private`
 import typings.nodeJose.nodeJoseStrings.json
 import typings.nodeJose.nodeJoseStrings.pem
@@ -9,7 +10,6 @@ import typings.nodeJose.nodeJoseStrings.pkix
 import typings.nodeJose.nodeJoseStrings.public
 import typings.nodeJose.nodeJoseStrings.spki
 import typings.nodeJose.nodeJoseStrings.x509
-import typings.std.Partial
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -44,7 +44,7 @@ trait KeyStore extends js.Object {
   ): js.Promise[Key] = js.native
   def add(key: RawKey): js.Promise[Key] = js.native
   def all(): js.Array[RawKey] = js.native
-  def all(options: Partial[KeyStoreGetOptions]): js.Array[RawKey] = js.native
+  def all(options: PartialKeyStoreGetOptions): js.Array[RawKey] = js.native
   def generate(kty: String): js.Promise[Key] = js.native
   def generate(kty: String, size: String): js.Promise[Key] = js.native
   def generate(kty: String, size: String, props: js.Any): js.Promise[Key] = js.native

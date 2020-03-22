@@ -4,17 +4,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Page[QM] extends js.Object {
-  var results: js.Array[QM]
+trait Page[M /* <: Model */] extends js.Object {
+  var results: js.Array[M]
   var total: Double
 }
 
 object Page {
   @scala.inline
-  def apply[QM](results: js.Array[QM], total: Double): Page[QM] = {
+  def apply[M /* <: Model */](results: js.Array[M], total: Double): Page[M] = {
     val __obj = js.Dynamic.literal(results = results.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
   
-    __obj.asInstanceOf[Page[QM]]
+    __obj.asInstanceOf[Page[M]]
   }
 }
 

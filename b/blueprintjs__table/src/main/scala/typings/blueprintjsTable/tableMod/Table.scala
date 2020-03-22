@@ -3,12 +3,12 @@ package typings.blueprintjsTable.tableMod
 import typings.blueprintjsCore.mod.AbstractComponent2
 import typings.blueprintjsTable.AnonChildrenArray
 import typings.blueprintjsTable.AnonNextScrollLeft
+import typings.blueprintjsTable.ValidationMapIColumnInter
 import typings.blueprintjsTable.contextMod.IColumnInteractionBarContextTypes
 import typings.blueprintjsTable.esmRegionsMod.IRegion
 import typings.blueprintjsTable.gridMod.Grid
 import typings.blueprintjsTable.gridMod.ICellMapper
 import typings.blueprintjsTable.locatorMod.Locator
-import typings.react.mod.ValidationMap
 import typings.react.mod._Global_.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -182,7 +182,7 @@ class Table protected () extends AbstractComponent2[ITableProps, ITableState, IT
 object Table extends js.Object {
   var SHALLOW_COMPARE_PROP_KEYS_BLACKLIST: js.Any = js.native
   var SHALLOW_COMPARE_STATE_KEYS_BLACKLIST: js.Any = js.native
-  var childContextTypes: ValidationMap[IColumnInteractionBarContextTypes] = js.native
+  var childContextTypes: ValidationMapIColumnInter = js.native
   var createColumnIdIndex: js.Any = js.native
   var defaultProps: ITableProps = js.native
   var displayName: String = js.native

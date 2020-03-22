@@ -29,9 +29,6 @@ object reactHammerjsStrings {
   @js.native
   sealed trait DIRECTION_VERTICAL extends js.Object
   
-  @js.native
-  sealed trait recognizers extends js.Object
-  
   @scala.inline
   def DIRECTION_ALL: DIRECTION_ALL = "DIRECTION_ALL".asInstanceOf[DIRECTION_ALL]
   @scala.inline
@@ -48,7 +45,5 @@ object reactHammerjsStrings {
   def DIRECTION_UP: DIRECTION_UP = "DIRECTION_UP".asInstanceOf[DIRECTION_UP]
   @scala.inline
   def DIRECTION_VERTICAL: DIRECTION_VERTICAL = "DIRECTION_VERTICAL".asInstanceOf[DIRECTION_VERTICAL]
-  @scala.inline
-  def recognizers: recognizers = "recognizers".asInstanceOf[recognizers]
 }
 

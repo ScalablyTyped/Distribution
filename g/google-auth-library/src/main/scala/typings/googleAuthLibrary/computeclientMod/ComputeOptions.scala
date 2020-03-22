@@ -23,11 +23,13 @@ object ComputeOptions {
   @scala.inline
   def apply(
     eagerRefreshThresholdMillis: Int | Double = null,
+    forceRefreshOnFailure: js.UndefOr[Boolean] = js.undefined,
     scopes: String | js.Array[String] = null,
     serviceAccountEmail: String = null
   ): ComputeOptions = {
     val __obj = js.Dynamic.literal()
     if (eagerRefreshThresholdMillis != null) __obj.updateDynamic("eagerRefreshThresholdMillis")(eagerRefreshThresholdMillis.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceRefreshOnFailure)) __obj.updateDynamic("forceRefreshOnFailure")(forceRefreshOnFailure.asInstanceOf[js.Any])
     if (scopes != null) __obj.updateDynamic("scopes")(scopes.asInstanceOf[js.Any])
     if (serviceAccountEmail != null) __obj.updateDynamic("serviceAccountEmail")(serviceAccountEmail.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComputeOptions]

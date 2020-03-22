@@ -1,7 +1,7 @@
 package typings.antDesignReactNative.mod
 
 import typings.antDesignReactNative.AnonAntLocale
-import typings.antDesignReactNative.AnonDisabledOnBlur
+import typings.antDesignReactNative.AnonOnBlur
 import typings.antDesignReactNative.searchBarMod.SearchBarProps
 import typings.antDesignReactNative.searchBarMod.default
 import scala.scalajs.js
@@ -19,6 +19,6 @@ class SearchBar protected () extends default {
 @js.native
 object SearchBar extends js.Object {
   var contextTypes: AnonAntLocale = js.native
-  var defaultProps: AnonDisabledOnBlur = js.native
+  var defaultProps: AnonOnBlur = js.native
 }
 

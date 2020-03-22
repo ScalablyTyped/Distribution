@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait OnEnterLifecycle extends js.Object {
   /**
-    * Specifies the actions that are performed when the state is entered and the "condition" is TRUE.
+    * Specifies the actions that are performed when the state is entered and the condition is TRUE.
     */
   var events: js.UndefOr[Events] = js.native
 }

@@ -1,6 +1,6 @@
 package typings.gulp.mod
 
-import typings.gulp.FnFile
+import typings.gulp.FnCall
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,7 +24,7 @@ trait Gulp
     * Functions exactly like gulp.dest, but will create symlinks instead of copying a directory.
     * @param folder A folder path or a function that receives in a file and returns a folder path.
     */
-  var symlink: FnFile = js.native
+  var symlink: FnCall = js.native
   /**
     * Takes a path string, an array of path strings, a glob string or an array of glob strings as globs to watch on the filesystem.
     * Also optionally takes options to configure the watcher and a fn to execute when a file changes.

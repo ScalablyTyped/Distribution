@@ -1,6 +1,6 @@
 package typings.gapiClientDeploymentmanager.gapi.client.deploymentmanager
 
-import typings.gapiClientDeploymentmanager.AnonCodeData
+import typings.gapiClientDeploymentmanager.AnonData
 import typings.gapiClientDeploymentmanager.AnonErrors
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -22,7 +22,7 @@ trait ResourceUpdate extends js.Object {
   /** Output only. The state of the resource. */
   var state: js.UndefOr[String] = js.undefined
   /** Output only. If warning messages are generated during processing of this resource, this field will be populated. */
-  var warnings: js.UndefOr[js.Array[AnonCodeData]] = js.undefined
+  var warnings: js.UndefOr[js.Array[AnonData]] = js.undefined
 }
 
 object ResourceUpdate {
@@ -35,7 +35,7 @@ object ResourceUpdate {
     manifest: String = null,
     properties: String = null,
     state: String = null,
-    warnings: js.Array[AnonCodeData] = null
+    warnings: js.Array[AnonData] = null
   ): ResourceUpdate = {
     val __obj = js.Dynamic.literal()
     if (accessControl != null) __obj.updateDynamic("accessControl")(accessControl.asInstanceOf[js.Any])

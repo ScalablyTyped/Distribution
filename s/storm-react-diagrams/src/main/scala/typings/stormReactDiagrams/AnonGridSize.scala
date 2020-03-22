@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 trait AnonGridSize extends js.Object {
   var gridSize: Double
   var id: String
-  var links: js.Array[AnonExtras]
-  var nodes: js.Array[AnonExtrasId]
+  var links: js.Array[AnonLabels]
+  var nodes: js.Array[AnonPorts]
   var offsetX: Double
   var offsetY: Double
   var zoom: Double
@@ -19,8 +19,8 @@ object AnonGridSize {
   def apply(
     gridSize: Double,
     id: String,
-    links: js.Array[AnonExtras],
-    nodes: js.Array[AnonExtrasId],
+    links: js.Array[AnonLabels],
+    nodes: js.Array[AnonPorts],
     offsetX: Double,
     offsetY: Double,
     zoom: Double

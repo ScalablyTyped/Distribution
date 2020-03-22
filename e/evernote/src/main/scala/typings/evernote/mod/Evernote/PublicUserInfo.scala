@@ -1,6 +1,6 @@
 package typings.evernote.mod.Evernote
 
-import typings.evernote.AnonNoteStoreUrl
+import typings.evernote.AnonPrivilege
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -44,7 +44,7 @@ import scala.scalajs.js.annotation._
 @JSImport("evernote", "Evernote.PublicUserInfo")
 @js.native
 class PublicUserInfo () extends js.Object {
-  def this(args: AnonNoteStoreUrl) = this()
+  def this(args: AnonPrivilege) = this()
   var noteStoreUrl: String = js.native
   var privilege: PrivilegeLevel = js.native
   var shardId: String = js.native

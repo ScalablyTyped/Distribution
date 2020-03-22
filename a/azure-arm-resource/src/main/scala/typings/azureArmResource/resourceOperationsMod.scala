@@ -215,11 +215,11 @@ object resourceOperationsMod extends js.Object {
       deploymentName: String,
       callback: ServiceCallback[DeploymentOperationsListResult]
     ): Unit = js.native
-    def list(resourceGroupName: String, deploymentName: String, options: AnonCustomHeadersHeaderNameTop): js.Promise[DeploymentOperationsListResult] = js.native
+    def list(resourceGroupName: String, deploymentName: String, options: AnonCustomHeadersTop): js.Promise[DeploymentOperationsListResult] = js.native
     def list(
       resourceGroupName: String,
       deploymentName: String,
-      options: AnonCustomHeadersHeaderNameTop,
+      options: AnonCustomHeadersTop,
       callback: ServiceCallback[DeploymentOperationsListResult]
     ): Unit = js.native
     /**
@@ -260,10 +260,10 @@ object resourceOperationsMod extends js.Object {
       */
     def listAtSubscriptionScope(deploymentName: String): js.Promise[DeploymentOperationsListResult] = js.native
     def listAtSubscriptionScope(deploymentName: String, callback: ServiceCallback[DeploymentOperationsListResult]): Unit = js.native
-    def listAtSubscriptionScope(deploymentName: String, options: AnonCustomHeadersHeaderNameTop): js.Promise[DeploymentOperationsListResult] = js.native
+    def listAtSubscriptionScope(deploymentName: String, options: AnonCustomHeadersTop): js.Promise[DeploymentOperationsListResult] = js.native
     def listAtSubscriptionScope(
       deploymentName: String,
-      options: AnonCustomHeadersHeaderNameTop,
+      options: AnonCustomHeadersTop,
       callback: ServiceCallback[DeploymentOperationsListResult]
     ): Unit = js.native
     /**
@@ -347,7 +347,7 @@ object resourceOperationsMod extends js.Object {
       * @reject {Error|ServiceError} - The error object.
       */
     def listAtSubscriptionScopeWithHttpOperationResponse(deploymentName: String): js.Promise[HttpOperationResponse[DeploymentOperationsListResult]] = js.native
-    def listAtSubscriptionScopeWithHttpOperationResponse(deploymentName: String, options: AnonCustomHeadersHeaderNameTop): js.Promise[HttpOperationResponse[DeploymentOperationsListResult]] = js.native
+    def listAtSubscriptionScopeWithHttpOperationResponse(deploymentName: String, options: AnonCustomHeadersTop): js.Promise[HttpOperationResponse[DeploymentOperationsListResult]] = js.native
     /**
       * Gets all deployments operations for a deployment.
       *
@@ -432,7 +432,7 @@ object resourceOperationsMod extends js.Object {
       * @reject {Error|ServiceError} - The error object.
       */
     def listWithHttpOperationResponse(resourceGroupName: String, deploymentName: String): js.Promise[HttpOperationResponse[DeploymentOperationsListResult]] = js.native
-    def listWithHttpOperationResponse(resourceGroupName: String, deploymentName: String, options: AnonCustomHeadersHeaderNameTop): js.Promise[HttpOperationResponse[DeploymentOperationsListResult]] = js.native
+    def listWithHttpOperationResponse(resourceGroupName: String, deploymentName: String, options: AnonCustomHeadersTop): js.Promise[HttpOperationResponse[DeploymentOperationsListResult]] = js.native
   }
   
   @js.native
@@ -2183,8 +2183,8 @@ object resourceOperationsMod extends js.Object {
       */
     def listAtSubscriptionScope(): js.Promise[DeploymentListResult] = js.native
     def listAtSubscriptionScope(callback: ServiceCallback[DeploymentListResult]): Unit = js.native
-    def listAtSubscriptionScope(options: AnonCustomHeadersFilterHeaderName): js.Promise[DeploymentListResult] = js.native
-    def listAtSubscriptionScope(options: AnonCustomHeadersFilterHeaderName, callback: ServiceCallback[DeploymentListResult]): Unit = js.native
+    def listAtSubscriptionScope(options: AnonTop): js.Promise[DeploymentListResult] = js.native
+    def listAtSubscriptionScope(options: AnonTop, callback: ServiceCallback[DeploymentListResult]): Unit = js.native
     /**
       * Get all the deployments for a subscription.
       *
@@ -2262,7 +2262,7 @@ object resourceOperationsMod extends js.Object {
       * @reject {Error|ServiceError} - The error object.
       */
     def listAtSubscriptionScopeWithHttpOperationResponse(): js.Promise[HttpOperationResponse[DeploymentListResult]] = js.native
-    def listAtSubscriptionScopeWithHttpOperationResponse(options: AnonCustomHeadersFilterHeaderName): js.Promise[HttpOperationResponse[DeploymentListResult]] = js.native
+    def listAtSubscriptionScopeWithHttpOperationResponse(options: AnonTop): js.Promise[HttpOperationResponse[DeploymentListResult]] = js.native
     /**
       * Get all the deployments for a resource group.
       *
@@ -2304,12 +2304,8 @@ object resourceOperationsMod extends js.Object {
       */
     def listByResourceGroup(resourceGroupName: String): js.Promise[DeploymentListResult] = js.native
     def listByResourceGroup(resourceGroupName: String, callback: ServiceCallback[DeploymentListResult]): Unit = js.native
-    def listByResourceGroup(resourceGroupName: String, options: AnonCustomHeadersFilterHeaderName): js.Promise[DeploymentListResult] = js.native
-    def listByResourceGroup(
-      resourceGroupName: String,
-      options: AnonCustomHeadersFilterHeaderName,
-      callback: ServiceCallback[DeploymentListResult]
-    ): Unit = js.native
+    def listByResourceGroup(resourceGroupName: String, options: AnonTop): js.Promise[DeploymentListResult] = js.native
+    def listByResourceGroup(resourceGroupName: String, options: AnonTop, callback: ServiceCallback[DeploymentListResult]): Unit = js.native
     /**
       * Get all the deployments for a resource group.
       *
@@ -2390,7 +2386,7 @@ object resourceOperationsMod extends js.Object {
       * @reject {Error|ServiceError} - The error object.
       */
     def listByResourceGroupWithHttpOperationResponse(resourceGroupName: String): js.Promise[HttpOperationResponse[DeploymentListResult]] = js.native
-    def listByResourceGroupWithHttpOperationResponse(resourceGroupName: String, options: AnonCustomHeadersFilterHeaderName): js.Promise[HttpOperationResponse[DeploymentListResult]] = js.native
+    def listByResourceGroupWithHttpOperationResponse(resourceGroupName: String, options: AnonTop): js.Promise[HttpOperationResponse[DeploymentListResult]] = js.native
     /**
       * Validates whether the specified template is syntactically correct and will
       * be accepted by Azure Resource Manager..
@@ -2981,12 +2977,8 @@ object resourceOperationsMod extends js.Object {
       */
     def get(resourceProviderNamespace: String): js.Promise[Provider] = js.native
     def get(resourceProviderNamespace: String, callback: ServiceCallback[Provider]): Unit = js.native
-    def get(resourceProviderNamespace: String, options: AnonCustomHeadersExpandHeaderNameString): js.Promise[Provider] = js.native
-    def get(
-      resourceProviderNamespace: String,
-      options: AnonCustomHeadersExpandHeaderNameString,
-      callback: ServiceCallback[Provider]
-    ): Unit = js.native
+    def get(resourceProviderNamespace: String, options: AnonExpandString): js.Promise[Provider] = js.native
+    def get(resourceProviderNamespace: String, options: AnonExpandString, callback: ServiceCallback[Provider]): Unit = js.native
     /**
       * Gets the specified resource provider.
       *
@@ -3008,7 +3000,7 @@ object resourceOperationsMod extends js.Object {
       * @reject {Error|ServiceError} - The error object.
       */
     def getWithHttpOperationResponse(resourceProviderNamespace: String): js.Promise[HttpOperationResponse[Provider]] = js.native
-    def getWithHttpOperationResponse(resourceProviderNamespace: String, options: AnonCustomHeadersExpandHeaderNameString): js.Promise[HttpOperationResponse[Provider]] = js.native
+    def getWithHttpOperationResponse(resourceProviderNamespace: String, options: AnonExpandString): js.Promise[HttpOperationResponse[Provider]] = js.native
     /**
       * Gets all resource providers for a subscription.
       *
@@ -3049,8 +3041,8 @@ object resourceOperationsMod extends js.Object {
       */
     def list(): js.Promise[ProviderListResult] = js.native
     def list(callback: ServiceCallback[ProviderListResult]): Unit = js.native
-    def list(options: AnonCustomHeadersExpandHeaderName): js.Promise[ProviderListResult] = js.native
-    def list(options: AnonCustomHeadersExpandHeaderName, callback: ServiceCallback[ProviderListResult]): Unit = js.native
+    def list(options: AnonCustomHeadersExpand): js.Promise[ProviderListResult] = js.native
+    def list(options: AnonCustomHeadersExpand, callback: ServiceCallback[ProviderListResult]): Unit = js.native
     /**
       * Gets all resource providers for a subscription.
       *
@@ -3130,7 +3122,7 @@ object resourceOperationsMod extends js.Object {
       * @reject {Error|ServiceError} - The error object.
       */
     def listWithHttpOperationResponse(): js.Promise[HttpOperationResponse[ProviderListResult]] = js.native
-    def listWithHttpOperationResponse(options: AnonCustomHeadersExpandHeaderName): js.Promise[HttpOperationResponse[ProviderListResult]] = js.native
+    def listWithHttpOperationResponse(options: AnonCustomHeadersExpand): js.Promise[HttpOperationResponse[ProviderListResult]] = js.native
     /**
       * Registers a subscription with a resource provider.
       *
@@ -3702,8 +3694,8 @@ object resourceOperationsMod extends js.Object {
       */
     def list(): js.Promise[ResourceGroupListResult] = js.native
     def list(callback: ServiceCallback[ResourceGroupListResult]): Unit = js.native
-    def list(options: AnonCustomHeadersFilterHeaderName): js.Promise[ResourceGroupListResult] = js.native
-    def list(options: AnonCustomHeadersFilterHeaderName, callback: ServiceCallback[ResourceGroupListResult]): Unit = js.native
+    def list(options: AnonTop): js.Promise[ResourceGroupListResult] = js.native
+    def list(options: AnonTop, callback: ServiceCallback[ResourceGroupListResult]): Unit = js.native
     /**
       * Gets all the resource groups for a subscription.
       *
@@ -3788,7 +3780,7 @@ object resourceOperationsMod extends js.Object {
       * @reject {Error|ServiceError} - The error object.
       */
     def listWithHttpOperationResponse(): js.Promise[HttpOperationResponse[ResourceGroupListResult]] = js.native
-    def listWithHttpOperationResponse(options: AnonCustomHeadersFilterHeaderName): js.Promise[HttpOperationResponse[ResourceGroupListResult]] = js.native
+    def listWithHttpOperationResponse(options: AnonTop): js.Promise[HttpOperationResponse[ResourceGroupListResult]] = js.native
     /**
       * @summary Updates a resource group.
       *
@@ -6094,8 +6086,8 @@ object resourceOperationsMod extends js.Object {
       */
     def list(): js.Promise[ResourceListResult] = js.native
     def list(callback: ServiceCallback[ResourceListResult]): Unit = js.native
-    def list(options: AnonCustomHeadersExpandFilter): js.Promise[ResourceListResult] = js.native
-    def list(options: AnonCustomHeadersExpandFilter, callback: ServiceCallback[ResourceListResult]): Unit = js.native
+    def list(options: AnonExpandFilter): js.Promise[ResourceListResult] = js.native
+    def list(options: AnonExpandFilter, callback: ServiceCallback[ResourceListResult]): Unit = js.native
     /**
       * Get all the resources for a resource group.
       *
@@ -6155,10 +6147,10 @@ object resourceOperationsMod extends js.Object {
       */
     def listByResourceGroup(resourceGroupName: String): js.Promise[ResourceListResult] = js.native
     def listByResourceGroup(resourceGroupName: String, callback: ServiceCallback[ResourceListResult]): Unit = js.native
-    def listByResourceGroup(resourceGroupName: String, options: AnonCustomHeadersExpandFilter): js.Promise[ResourceListResult] = js.native
+    def listByResourceGroup(resourceGroupName: String, options: AnonExpandFilter): js.Promise[ResourceListResult] = js.native
     def listByResourceGroup(
       resourceGroupName: String,
-      options: AnonCustomHeadersExpandFilter,
+      options: AnonExpandFilter,
       callback: ServiceCallback[ResourceListResult]
     ): Unit = js.native
     /**
@@ -6259,7 +6251,7 @@ object resourceOperationsMod extends js.Object {
       * @reject {Error|ServiceError} - The error object.
       */
     def listByResourceGroupWithHttpOperationResponse(resourceGroupName: String): js.Promise[HttpOperationResponse[ResourceListResult]] = js.native
-    def listByResourceGroupWithHttpOperationResponse(resourceGroupName: String, options: AnonCustomHeadersExpandFilter): js.Promise[HttpOperationResponse[ResourceListResult]] = js.native
+    def listByResourceGroupWithHttpOperationResponse(resourceGroupName: String, options: AnonExpandFilter): js.Promise[HttpOperationResponse[ResourceListResult]] = js.native
     /**
       * Get all the resources in a subscription.
       *
@@ -6355,7 +6347,7 @@ object resourceOperationsMod extends js.Object {
       * @reject {Error|ServiceError} - The error object.
       */
     def listWithHttpOperationResponse(): js.Promise[HttpOperationResponse[ResourceListResult]] = js.native
-    def listWithHttpOperationResponse(options: AnonCustomHeadersExpandFilter): js.Promise[HttpOperationResponse[ResourceListResult]] = js.native
+    def listWithHttpOperationResponse(options: AnonExpandFilter): js.Promise[HttpOperationResponse[ResourceListResult]] = js.native
     /**
       * @summary Moves resources from one resource group to another resource group.
       *

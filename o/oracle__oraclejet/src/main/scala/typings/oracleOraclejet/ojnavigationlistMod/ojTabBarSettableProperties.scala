@@ -1,7 +1,7 @@
 package typings.oracleOraclejet.ojnavigationlistMod
 
 import typings.oracleOraclejet.AnonAccessibleReorderAfterItem
-import typings.oracleOraclejet.AnonContextRendererSelectableBoolean
+import typings.oracleOraclejet.AnonRendererSelectable
 import typings.oracleOraclejet.mod.baseComponentSettableProperties
 import typings.oracleOraclejet.ojdataproviderMod.DataProvider
 import typings.oracleOraclejet.oracleOraclejetStrings.all
@@ -26,7 +26,7 @@ trait ojTabBarSettableProperties[K, D] extends baseComponentSettableProperties {
   var data: (DataProvider[K, D]) | Null
   var display: all | icons
   var edge: top | bottom | start | end
-  var item: AnonContextRendererSelectableBoolean[K, D]
+  var item: AnonRendererSelectable[K, D]
   var overflow: popup | hidden
   var reorderable: enabled | disabled
   var selection: js.Any
@@ -42,7 +42,7 @@ object ojTabBarSettableProperties {
     currentItem: js.Any,
     display: all | icons,
     edge: top | bottom | start | end,
-    item: AnonContextRendererSelectableBoolean[K, D],
+    item: AnonRendererSelectable[K, D],
     overflow: popup | hidden,
     reorderable: enabled | disabled,
     selection: js.Any,

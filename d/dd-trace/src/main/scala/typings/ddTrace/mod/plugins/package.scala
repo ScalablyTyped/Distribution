@@ -39,6 +39,11 @@ package object plugins {
   type genericPool = typings.ddTrace.mod.plugins.Integration
   /**
     * This plugin automatically instruments the
+    * [@google-cloud/pubsub](https://github.com/googleapis/nodejs-pubsub) module.
+    */
+  type googleCloudPubsub = typings.ddTrace.mod.plugins.Integration
+  /**
+    * This plugin automatically instruments the
     * [hapi](https://hapijs.com/) module.
     */
   type hapi = typings.ddTrace.mod.plugins.HttpServer

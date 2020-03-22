@@ -1,8 +1,7 @@
 package typings.storybookAddonStoryshotsPuppeteer.axeTestMod
 
-import typings.std.Partial
 import typings.storybookAddonStoryshotsPuppeteer.AnonAfterAll
-import typings.storybookAddonStoryshotsPuppeteer.configMod.CommonConfig
+import typings.storybookAddonStoryshotsPuppeteer.PartialCommonConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,6 +10,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object axeTest extends js.Object {
   def apply(): AnonAfterAll = js.native
-  def apply(customConfig: Partial[CommonConfig]): AnonAfterAll = js.native
+  def apply(customConfig: PartialCommonConfig): AnonAfterAll = js.native
 }
 

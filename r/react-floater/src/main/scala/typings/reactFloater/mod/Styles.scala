@@ -1,14 +1,14 @@
 package typings.reactFloater.mod
 
 import typings.react.mod.CSSProperties
-import typings.reactFloater.AnonLength
 import typings.reactFloater.AnonZIndex
+import typings.reactFloater.CSSPropertieslengthnumber
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Styles extends js.Object {
-  var arrow: CSSProperties with AnonLength
+  var arrow: CSSPropertieslengthnumber
   var close: CSSProperties
   var container: CSSProperties
   var content: CSSProperties
@@ -28,7 +28,7 @@ trait Styles extends js.Object {
 object Styles {
   @scala.inline
   def apply(
-    arrow: CSSProperties with AnonLength,
+    arrow: CSSPropertieslengthnumber,
     close: CSSProperties,
     container: CSSProperties,
     content: CSSProperties,

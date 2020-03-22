@@ -1,6 +1,6 @@
 package typings.firefoxWebextBrowser.browser.history
 
-import typings.firefoxWebextBrowser.AnonUrl
+import typings.firefoxWebextBrowser.AnonUrlString
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object getVisits extends js.Object {
   /** Retrieves information about visits to a URL. */
-  def apply(details: AnonUrl): js.Promise[js.Array[VisitItem]] = js.native
+  def apply(details: AnonUrlString): js.Promise[js.Array[VisitItem]] = js.native
 }
 

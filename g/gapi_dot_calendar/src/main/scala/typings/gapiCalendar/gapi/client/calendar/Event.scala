@@ -1,14 +1,14 @@
 package typings.gapiCalendar.gapi.client.calendar
 
-import typings.gapiCalendar.AnonAdditionalGuestsComment
+import typings.gapiCalendar.AnonComment
 import typings.gapiCalendar.AnonDate
-import typings.gapiCalendar.AnonDateDateTimeTimeZone
-import typings.gapiCalendar.AnonDisplayHeight
 import typings.gapiCalendar.AnonDisplayName
 import typings.gapiCalendar.AnonFileId
-import typings.gapiCalendar.AnonKey
-import typings.gapiCalendar.AnonOverridesUseDefault
+import typings.gapiCalendar.AnonHeight
+import typings.gapiCalendar.AnonPrivate
+import typings.gapiCalendar.AnonTimeZone
 import typings.gapiCalendar.AnonTitle
+import typings.gapiCalendar.AnonUseDefault
 import typings.gapiCalendar.gapiCalendarStrings.calendarNumbersignevent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -21,7 +21,7 @@ class Event () extends js.Object {
   // File attachments for the event. Currently only Google Drive attachments are supported.
   var attachments: js.UndefOr[js.Array[AnonFileId]] = js.native
   // The attendees of the event.
-  var attendees: js.UndefOr[js.Array[AnonAdditionalGuestsComment]] = js.native
+  var attendees: js.UndefOr[js.Array[AnonComment]] = js.native
   var attendeesOmitted: js.UndefOr[Boolean] = js.native
   var colorId: js.UndefOr[String] = js.native
   var created: datetime = js.native
@@ -35,9 +35,9 @@ class Event () extends js.Object {
   var endTimeUnspecified: js.UndefOr[Boolean] = js.native
   var etag: typings.gapiCalendar.gapi.client.calendar.etag = js.native
   // Extended properties of the event.
-  var extendedProperties: js.UndefOr[AnonKey] = js.native
+  var extendedProperties: js.UndefOr[AnonPrivate] = js.native
   // A gadget that extends this event.
-  var gadget: js.UndefOr[AnonDisplayHeight] = js.native
+  var gadget: js.UndefOr[AnonHeight] = js.native
   var guestsCanInviteOthers: js.UndefOr[Boolean] = js.native
   var guestsCanModify: js.UndefOr[Boolean] = js.native
   var guestsCanSeeOtherGuests: js.UndefOr[Boolean] = js.native
@@ -53,12 +53,12 @@ class Event () extends js.Object {
   // The organizer of the event.
   var organizer: AnonDisplayName = js.native
   // Whether the organizer corresponds to the calendar on which this copy of the event appears. Read-only. The default is False.
-  var originalStartTime: js.UndefOr[AnonDateDateTimeTimeZone] = js.native
+  var originalStartTime: js.UndefOr[AnonTimeZone] = js.native
   var privateCopy: js.UndefOr[Boolean] = js.native
   var recurrence: js.Array[String] = js.native
   // For an instance of a recurring event, this is the id of the recurring event to which this instance belongs. Immutable.
   var recurringEventId: js.UndefOr[String] = js.native
-  var reminders: AnonOverridesUseDefault = js.native
+  var reminders: AnonUseDefault = js.native
   var sequence: integer = js.native
   // Source from which the event was created. For example, a web page, an email message or any document identifiable by an URL with HTTP or HTTPS scheme.
   // Can only be seen or modified by the creator of the event.

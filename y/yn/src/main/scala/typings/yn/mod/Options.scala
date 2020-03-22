@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 trait Options extends js.Object {
   /**
   		Default value if no match was found.
-  		@default null
+  		@default undefined
   		*/
-  val default: js.UndefOr[Boolean | Null] = js.undefined
+  val default: js.UndefOr[Boolean] = js.undefined
   /**
   		Use a key distance-based score to leniently accept typos of `yes` and `no`.
   		@default false

@@ -1,6 +1,6 @@
 package typings.antDesignReactNative.mod
 
-import typings.antDesignReactNative.TypeofClassItem
+import typings.antDesignReactNative.TypeofItem
 import typings.antDesignReactNative.listMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,6 +14,6 @@ class List () extends default
 @JSImport("@ant-design/react-native", "List")
 @js.native
 object List extends js.Object {
-  var Item: TypeofClassItem = js.native
+  var Item: TypeofItem = js.native
 }
 

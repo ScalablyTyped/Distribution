@@ -4,8 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ContentProps extends js.Object {
-  var absolute: js.UndefOr[Boolean] = js.undefined
+  var absolute: js.UndefOr[Boolean] = js.native
 }
 
 object ContentProps {

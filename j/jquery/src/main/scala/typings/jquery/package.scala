@@ -47,8 +47,6 @@ package object jquery {
     */
   // tslint:disable-next-line:no-empty-interface
   type JQuerySupport = typings.jquery.JQuery_.PlainObject[js.Any]
-  // tslint:disable-next-line:no-empty-interface
-  type JQueryXHR = typings.jquery.JQuery_.jqXHR[js.Any]
   type JQuery_[TElement] = typings.jquery.JQuery__[TElement]
   type KeyboardEvent = typings.std.KeyboardEvent
   type MouseEvent = typings.std.MouseEvent

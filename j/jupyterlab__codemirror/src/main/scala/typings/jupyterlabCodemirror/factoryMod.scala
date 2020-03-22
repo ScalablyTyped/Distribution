@@ -3,8 +3,6 @@ package typings.jupyterlabCodemirror
 import typings.jupyterlabCodeeditor.editorMod.CodeEditor.IEditor
 import typings.jupyterlabCodeeditor.editorMod.CodeEditor.IOptions
 import typings.jupyterlabCodeeditor.factoryMod.IEditorFactoryService
-import typings.jupyterlabCodemirror.editorMod.CodeMirrorEditor.IConfig
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,9 +15,9 @@ object factoryMod extends js.Object {
     * Construct an IEditorFactoryService for CodeMirrorEditors.
     */
   class CodeMirrorEditorFactory () extends IEditorFactoryService {
-    def this(defaults: Partial[IConfig]) = this()
-    var documentCodeMirrorConfig: Partial[IConfig] = js.native
-    var inlineCodeMirrorConfig: Partial[IConfig] = js.native
+    def this(defaults: PartialIConfig) = this()
+    var documentCodeMirrorConfig: PartialIConfig = js.native
+    var inlineCodeMirrorConfig: PartialIConfig = js.native
     /**
       * Create a new editor for a full document.
       */

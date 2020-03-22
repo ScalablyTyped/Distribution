@@ -1,14 +1,14 @@
 package typings.jsrsasign.mod.KJUR
 
 import typings.jsrsasign.Anon2a864886f70d010101
-import typings.jsrsasign.AnonAlgPass
-import typings.jsrsasign.AnonAlgProv
 import typings.jsrsasign.AnonAlgString
 import typings.jsrsasign.AnonCurve
 import typings.jsrsasign.AnonHmacmd5
 import typings.jsrsasign.AnonMd2
 import typings.jsrsasign.AnonMd5
-import typings.jsrsasign.AnonMd5Ripemd160
+import typings.jsrsasign.AnonPass
+import typings.jsrsasign.AnonProv
+import typings.jsrsasign.AnonRipemd160
 import typings.jsrsasign.jsrsasign.BigInteger
 import typings.jsrsasign.jsrsasign.KJUR.crypto.ECParameter
 import typings.jsrsasign.jsrsasign.RSAKey
@@ -95,7 +95,7 @@ object crypto extends js.Object {
   @js.native
   class Mac protected ()
     extends typings.jsrsasign.jsrsasign.KJUR.crypto.Mac {
-    def this(params: AnonAlgPass) = this()
+    def this(params: AnonPass) = this()
   }
   
   /**
@@ -129,7 +129,7 @@ object crypto extends js.Object {
   @js.native
   class MessageDigest protected ()
     extends typings.jsrsasign.jsrsasign.KJUR.crypto.MessageDigest {
-    def this(params: AnonAlgProv) = this()
+    def this(params: AnonProv) = this()
   }
   
   /**
@@ -429,7 +429,7 @@ object crypto extends js.Object {
   /** static object for cryptographic function utilities */
   @js.native
   object Util extends js.Object {
-    var CRYPTOJSMESSAGEDIGESTNAME: AnonMd5Ripemd160 = js.native
+    var CRYPTOJSMESSAGEDIGESTNAME: AnonRipemd160 = js.native
     /** associative array of default provider name for each hash and signature algorithms */
     var DEFAULTPROVIDER: AnonHmacmd5 = js.native
     /** PKCS#1 DigestInfo heading hexadecimal bytes for each hash algorithms */

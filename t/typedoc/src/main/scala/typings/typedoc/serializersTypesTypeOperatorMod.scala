@@ -10,7 +10,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object serializersTypesTypeOperatorMod extends js.Object {
   @js.native
-  class TypeOperatorTypeSerializer () extends TypeSerializerComponent[TypeOperatorType]
+  class TypeOperatorTypeSerializer () extends TypeSerializerComponent[TypeOperatorType] {
+    def toObject(`type`: TypeOperatorType, obj: PickTypeOperatorTypetype): typings.typedoc.schemaMod.TypeOperatorType = js.native
+  }
   
 }
 

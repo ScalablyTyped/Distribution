@@ -388,8 +388,6 @@ trait semanticUiReactProps {
   @scala.inline
   def RatingIconProps: typings.semanticUiReact.ratingIconMod.RatingIconProps.type = typings.semanticUiReact.ratingIconMod.RatingIconProps
   type RatingIconProps = typings.semanticUiReact.ratingIconMod.RatingIconProps
-  @scala.inline
-  def RefProps: typings.stardustUiReactComponentRef.typesMod.RefProps.type = typings.stardustUiReactComponentRef.typesMod.RefProps
   type RefProps = typings.stardustUiReactComponentRef.typesMod.RefProps
   @scala.inline
   def ResponsiveProps: typings.semanticUiReact.responsiveResponsiveMod.ResponsiveProps.type = typings.semanticUiReact.responsiveResponsiveMod.ResponsiveProps

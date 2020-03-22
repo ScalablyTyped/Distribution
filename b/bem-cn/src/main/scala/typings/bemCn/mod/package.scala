@@ -16,6 +16,5 @@ package object mod {
   type BemMix = js.UndefOr[typings.bemCn.mod._BemMix | js.Array[java.lang.String] | java.lang.String]
   type BemMods = org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Boolean | js.Any]
   type BemState = typings.std.Record[java.lang.String, scala.Boolean]
-  type BemStates = typings.std.Record[typings.bemCn.mod.BemStatePrefix, typings.bemCn.mod.BemState]
   type Block_ = typings.bemCn.mod.IBlock with java.lang.String
 }

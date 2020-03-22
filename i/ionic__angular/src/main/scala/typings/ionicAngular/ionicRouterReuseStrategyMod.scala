@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ionic/angular/dist/util/ionic-router-reuse-strategy", JSImport.Namespace)
+@JSImport("@ionic/angular/util/ionic-router-reuse-strategy", JSImport.Namespace)
 @js.native
 object ionicRouterReuseStrategyMod extends js.Object {
   @js.native

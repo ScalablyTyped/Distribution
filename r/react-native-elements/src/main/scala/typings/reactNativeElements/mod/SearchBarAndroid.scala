@@ -1,6 +1,6 @@
 package typings.reactNativeElements.mod
 
-import typings.reactNative.AnonEndStart
+import typings.reactNative.AnonStart
 import typings.reactNative.mod.AccessibilityActionEvent
 import typings.reactNative.mod.AccessibilityActionInfo
 import typings.reactNative.mod.AccessibilityRole
@@ -207,7 +207,7 @@ object SearchBarAndroid {
     searchIcon: IconNode = null,
     secureTextEntry: js.UndefOr[Boolean] = js.undefined,
     selectTextOnFocus: js.UndefOr[Boolean] = js.undefined,
-    selection: AnonEndStart = null,
+    selection: AnonStart = null,
     selectionColor: String = null,
     selectionState: DocumentSelectionState = null,
     shouldRasterizeIOS: js.UndefOr[Boolean] = js.undefined,

@@ -1,8 +1,8 @@
 package typings.angularCommon.httpHttpMod
 
 import typings.angularCommon.AnonBody
-import typings.angularCommon.AnonBodyHeaders
 import typings.angularCommon.AnonHeaders
+import typings.angularCommon.AnonStatus
 import typings.angularCommon.httpHttpMod.HttpEventType.Response
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -24,6 +24,6 @@ class HttpResponse[T] ()
   @JSName("type")
   val type_HttpResponse: Response = js.native
   def clone(update: AnonHeaders): HttpResponse[T] = js.native
-  def clone[V](update: AnonBodyHeaders[V]): HttpResponse[V] = js.native
+  def clone[V](update: AnonStatus[V]): HttpResponse[V] = js.native
 }
 

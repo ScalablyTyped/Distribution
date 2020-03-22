@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 object webGLIndexedBufferRendererMod extends js.Object {
   @js.native
   class WebGLIndexedBufferRenderer protected () extends js.Object {
-    def this(gl: WebGLRenderingContext, properties: js.Any, info: js.Any) = this()
+    def this(gl: WebGLRenderingContext, extensions: js.Any, info: js.Any, capabilities: js.Any) = this()
     def render(start: js.Any, count: Double): Unit = js.native
-    def renderInstances(geometry: js.Any, start: js.Any, count: Double): Unit = js.native
+    def renderInstances(geometry: js.Any, start: js.Any, count: Double, primcount: Double): Unit = js.native
     def setIndex(index: js.Any): Unit = js.native
     def setMode(value: js.Any): Unit = js.native
   }

@@ -1,11 +1,11 @@
 package typings.jupyterlabConsole.foreignMod
 
-import typings.jupyterlabApputils.clientsessionMod.IClientSession
+import typings.jupyterlabApputils.sessioncontextMod.ISessionContext
 import typings.jupyterlabConsole.foreignMod.ForeignHandler.IOptions
 import typings.jupyterlabConsole.foreignMod.ForeignHandler.IReceiver
-import typings.jupyterlabServices.messagesMod.KernelMessage.IIOPubMessage
-import typings.jupyterlabServices.messagesMod.KernelMessage.IOPubMessageType
-import typings.phosphorDisposable.mod.IDisposable
+import typings.jupyterlabServices.messagesMod.IIOPubMessage
+import typings.jupyterlabServices.messagesMod.IOPubMessageType
+import typings.luminoDisposable.mod.IDisposable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,10 +25,6 @@ class ForeignHandler_ protected () extends IDisposable {
   var _newCell: js.Any = js.native
   var _parent: js.Any = js.native
   /**
-    * Set whether the handler is able to inject foreign cells into a console.
-    */
-  var enabled: Boolean = js.native
-  /**
     * Test whether the object has been disposed.
     *
     * #### Notes
@@ -37,13 +33,9 @@ class ForeignHandler_ protected () extends IDisposable {
   /* CompleteClass */
   override val isDisposed: Boolean = js.native
   /**
-    * The foreign handler's parent receiver.
-    */
-  val parent: IReceiver = js.native
-  /**
     * The client session used by the foreign handler.
     */
-  val session: IClientSession = js.native
+  val sessionContext: ISessionContext = js.native
   /**
     * Dispose of the resources held by the object.
     *
@@ -58,11 +50,25 @@ class ForeignHandler_ protected () extends IDisposable {
   /* CompleteClass */
   override def dispose(): Unit = js.native
   /**
+    * Set whether the handler is able to inject foreign cells into a console.
+    */
+  def enabled(): Boolean = js.native
+  def enabled(value: Boolean): js.Any = js.native
+  /**
+    * Test whether the handler is disposed.
+    */
+  @JSName("isDisposed")
+  def isDisposed_MForeignHandler_(): Boolean = js.native
+  /**
     * Handler IOPub messages.
     *
     * @returns `true` if the message resulted in a new cell injection or a
     * previously injected cell being updated and `false` for all other messages.
     */
-  /* protected */ def onIOPubMessage(sender: IClientSession, msg: IIOPubMessage[IOPubMessageType]): Boolean = js.native
+  /* protected */ def onIOPubMessage(sender: ISessionContext, msg: IIOPubMessage[IOPubMessageType]): Boolean = js.native
+  /**
+    * The foreign handler's parent receiver.
+    */
+  def parent(): IReceiver = js.native
 }
 

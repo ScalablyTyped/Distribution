@@ -278,7 +278,7 @@ object mod extends js.Object {
   def ValidatorConstraint(): js.Function1[/* target */ js.Function, Unit] = js.native
   def ValidatorConstraint(options: AnonAsync): js.Function1[/* target */ js.Function, Unit] = js.native
   def getFromContainer[T](someClass: js.Function): T = js.native
-  def getFromContainer[T](someClass: AnonArgs[T]): T = js.native
+  def getFromContainer[T](someClass: AnonInstantiable[T]): T = js.native
   def registerDecorator(options: ValidationDecoratorOptions): Unit = js.native
   def registerSchema(schema: ValidationSchema): Unit = js.native
   def useContainer(iocContainer: AnonGet): Unit = js.native

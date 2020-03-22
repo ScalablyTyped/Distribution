@@ -1,5 +1,6 @@
 package typings.angularCore
 
+import typings.angularCore.mod.ActiveIndexFlag
 import typings.angularCore.mod.IcuType
 import typings.angularCore.mod.LViewFlags
 import typings.angularCore.mod.OutputType
@@ -7,17 +8,17 @@ import typings.angularCore.mod.PreOrderHookFlags
 import typings.angularCore.mod.RootContextFlags
 import typings.angularCore.mod.SelectorFlags
 import typings.angularCore.mod.StyleSanitizeMode
-import typings.angularCore.mod.StylingMapArrayIndex
 import typings.angularCore.mod.TNodeFlags
 import typings.angularCore.mod.TNodeProviderIndexes
 import typings.angularCore.mod.TNodeType
-import typings.angularCore.mod.TStylingConfigFlags
-import typings.angularCore.mod.TStylingContextIndex
+import typings.angularCore.mod.TViewType
 import typings.angularCore.mod.ViewState
 import typings.angularCore.mod.ɵArgumentType
 import typings.angularCore.mod.ɵAttributeMarker
 import typings.angularCore.mod.ɵBindingFlags
+import typings.angularCore.mod.ɵCurrencyIndex
 import typings.angularCore.mod.ɵDepFlags
+import typings.angularCore.mod.ɵExtraLocaleDataIndex
 import typings.angularCore.mod.ɵNodeFlags
 import typings.angularCore.mod.ɵPlayState
 import typings.angularCore.mod.ɵQueryBindingType
@@ -30,18 +31,23 @@ import scala.scalajs.js.annotation._
 
 object angularCoreNumbers {
   @js.native
+  sealed trait `-1`
+    extends ActiveIndexFlag
+       with ɵAttributeMarker
+  
+  @js.native
   sealed trait `0`
     extends IcuType
        with OutputType
        with RootContextFlags
-       with StylingMapArrayIndex
        with TNodeType
-       with TStylingConfigFlags
-       with TStylingContextIndex
+       with TViewType
        with ViewState
        with ɵArgumentType
        with ɵAttributeMarker
+       with ɵCurrencyIndex
        with ɵDepFlags
+       with ɵExtraLocaleDataIndex
        with ɵNodeFlags
        with ɵPlayState
        with ɵQueryBindingType
@@ -50,22 +56,23 @@ object angularCoreNumbers {
   
   @js.native
   sealed trait `1`
-    extends IcuType
+    extends ActiveIndexFlag
+       with IcuType
        with LViewFlags
        with OutputType
        with RootContextFlags
        with SelectorFlags
        with StyleSanitizeMode
-       with StylingMapArrayIndex
        with TNodeFlags
        with TNodeType
-       with TStylingConfigFlags
-       with TStylingContextIndex
+       with TViewType
        with ViewState
        with ɵArgumentType
        with ɵAttributeMarker
        with ɵBindingFlags
+       with ɵCurrencyIndex
        with ɵDepFlags
+       with ɵExtraLocaleDataIndex
        with ɵNodeFlags
        with ɵPlayState
        with ɵQueryBindingType
@@ -99,6 +106,7 @@ object angularCoreNumbers {
   @js.native
   sealed trait `128`
     extends LViewFlags
+       with TNodeFlags
        with ViewState
        with ɵNodeFlags
   
@@ -135,18 +143,19 @@ object angularCoreNumbers {
   
   @js.native
   sealed trait `2`
-    extends RootContextFlags
+    extends ActiveIndexFlag
+       with RootContextFlags
        with SelectorFlags
        with StyleSanitizeMode
-       with StylingMapArrayIndex
        with TNodeFlags
        with TNodeType
-       with TStylingConfigFlags
-       with TStylingContextIndex
+       with TViewType
        with ViewState
        with ɵAttributeMarker
        with ɵBindingFlags
+       with ɵCurrencyIndex
        with ɵDepFlags
+       with ɵExtraLocaleDataIndex
        with ɵNodeFlags
        with ɵPlayState
        with ɵQueryValueType
@@ -191,8 +200,6 @@ object angularCoreNumbers {
     extends LViewFlags
        with StyleSanitizeMode
        with TNodeType
-       with TStylingConfigFlags
-       with TStylingContextIndex
        with ɵAttributeMarker
        with ɵNodeFlags
        with ɵQueryValueType
@@ -220,7 +227,6 @@ object angularCoreNumbers {
        with SelectorFlags
        with TNodeFlags
        with TNodeType
-       with TStylingContextIndex
        with ViewState
        with ɵAttributeMarker
        with ɵBindingFlags
@@ -240,7 +246,6 @@ object angularCoreNumbers {
   @js.native
   sealed trait `5`
     extends TNodeType
-       with TStylingContextIndex
        with ɵAttributeMarker
   
   @js.native
@@ -256,13 +261,12 @@ object angularCoreNumbers {
   sealed trait `536870912` extends ɵNodeFlags
   
   @js.native
-  sealed trait `6`
-    extends TStylingContextIndex
-       with ɵAttributeMarker
+  sealed trait `6` extends ɵAttributeMarker
   
   @js.native
   sealed trait `64`
     extends LViewFlags
+       with TNodeFlags
        with ViewState
        with ɵNodeFlags
   
@@ -302,6 +306,8 @@ object angularCoreNumbers {
   @js.native
   sealed trait _4294901760 extends PreOrderHookFlags
   
+  @scala.inline
+  def `-1`: `-1` = -1.asInstanceOf[`-1`]
   @scala.inline
   def `0`: `0` = 0.asInstanceOf[`0`]
   @scala.inline

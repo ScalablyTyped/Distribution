@@ -2,10 +2,10 @@ package typings.gapiClientDfareporting.gapi.client.dfareporting
 
 import typings.gapiClientDfareporting.AnonActive
 import typings.gapiClientDfareporting.AnonActivities
-import typings.gapiClientDfareporting.AnonActivitiesCustomRichMediaEvents
 import typings.gapiClientDfareporting.AnonActivityFilters
 import typings.gapiClientDfareporting.AnonBreakdown
 import typings.gapiClientDfareporting.AnonCustomRichMediaEvents
+import typings.gapiClientDfareporting.AnonDateRange
 import typings.gapiClientDfareporting.AnonEmailOwner
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -44,7 +44,7 @@ trait Report extends js.Object {
   /** The report criteria for a report of type "PATH_TO_CONVERSION". */
   var pathToConversionCriteria: js.UndefOr[AnonActivityFilters] = js.undefined
   /** The report criteria for a report of type "REACH". */
-  var reachCriteria: js.UndefOr[AnonActivitiesCustomRichMediaEvents] = js.undefined
+  var reachCriteria: js.UndefOr[AnonDateRange] = js.undefined
   /** The report's schedule. Can only be set if the report's 'dateRange' is a relative date range and the relative date range is not "TODAY". */
   var schedule: js.UndefOr[AnonActive] = js.undefined
   /** The subaccount ID to which this report belongs if applicable. */
@@ -70,7 +70,7 @@ object Report {
     name: String = null,
     ownerProfileId: String = null,
     pathToConversionCriteria: AnonActivityFilters = null,
-    reachCriteria: AnonActivitiesCustomRichMediaEvents = null,
+    reachCriteria: AnonDateRange = null,
     schedule: AnonActive = null,
     subAccountId: String = null,
     `type`: String = null

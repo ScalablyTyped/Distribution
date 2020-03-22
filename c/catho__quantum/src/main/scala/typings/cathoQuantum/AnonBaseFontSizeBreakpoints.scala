@@ -8,7 +8,7 @@ trait AnonBaseFontSizeBreakpoints extends js.Object {
   var baseFontSize: js.UndefOr[Double] = js.undefined
   var breakpoints: js.UndefOr[js.Object] = js.undefined
   var colors: js.UndefOr[js.Object] = js.undefined
-  var components: js.UndefOr[AnonButtonObject] = js.undefined
+  var components: js.UndefOr[AnonSnackbar] = js.undefined
   var spacing: js.UndefOr[js.Object] = js.undefined
 }
 
@@ -18,7 +18,7 @@ object AnonBaseFontSizeBreakpoints {
     baseFontSize: Int | Double = null,
     breakpoints: js.Object = null,
     colors: js.Object = null,
-    components: AnonButtonObject = null,
+    components: AnonSnackbar = null,
     spacing: js.Object = null
   ): AnonBaseFontSizeBreakpoints = {
     val __obj = js.Dynamic.literal()

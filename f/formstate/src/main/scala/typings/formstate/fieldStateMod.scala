@@ -42,7 +42,7 @@ object fieldStateMod extends js.Object {
       */
     /* protected */ def _onDidChange(config: AnonNewValue[TValue]): js.Any = js.native
     /* protected */ def _onUpdate(state: FieldState[TValue]): js.Any = js.native
-    def enableAutoValidationAndValidate(): js.Promise[AnonHasError | AnonFalse[TValue]] = js.native
+    def enableAutoValidationAndValidate(): js.Promise[AnonHasError | AnonValue[TValue]] = js.native
     /* protected */ def executeOnDidChange(config: AnonNewValue[TValue]): Unit = js.native
     /* protected */ def executeOnUpdate(): Unit = js.native
     def getAutoValidationDefault(): Boolean = js.native

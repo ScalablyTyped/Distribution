@@ -11,7 +11,7 @@ trait IDetectIntentResponse extends js.Object {
   /** DetectIntentResponse alternativeQueryResults */
   var alternativeQueryResults: js.UndefOr[js.Array[IQueryResult] | Null] = js.undefined
   /** DetectIntentResponse outputAudio */
-  var outputAudio: js.UndefOr[Uint8Array | Null] = js.undefined
+  var outputAudio: js.UndefOr[Uint8Array | String | Null] = js.undefined
   /** DetectIntentResponse outputAudioConfig */
   var outputAudioConfig: js.UndefOr[IOutputAudioConfig | Null] = js.undefined
   /** DetectIntentResponse queryResult */
@@ -26,7 +26,7 @@ object IDetectIntentResponse {
   @scala.inline
   def apply(
     alternativeQueryResults: js.Array[IQueryResult] = null,
-    outputAudio: Uint8Array = null,
+    outputAudio: Uint8Array | String = null,
     outputAudioConfig: IOutputAudioConfig = null,
     queryResult: IQueryResult = null,
     responseId: String = null,

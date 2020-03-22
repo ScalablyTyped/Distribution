@@ -1,6 +1,5 @@
 package typings.gapiClientSheets
 
-import typings.gapiClientSheets.gapi.client.sheets.SearchDeveloperMetadataRequest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,10 +25,6 @@ trait AnonAccesstokenAlt extends js.Object {
   var prettyPrint: js.UndefOr[Boolean] = js.native
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.native
-  /** Request body */
-  var resource: SearchDeveloperMetadataRequest = js.native
-  /** The ID of the spreadsheet to retrieve metadata from. */
-  var spreadsheetId: String = js.native
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.native
   /** Upload protocol for media (e.g. "raw", "multipart"). */

@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonAccountIdAlt extends js.Object {
-  /** Account for which to retrieve the alerts. */
+  /** Account for which to retrieve the payments. */
   var accountId: String
   /** Data format for the response. */
   var alt: js.UndefOr[String] = js.undefined
@@ -13,11 +13,6 @@ trait AnonAccountIdAlt extends js.Object {
   var fields: js.UndefOr[String] = js.undefined
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
-  /**
-    * The locale to use for translating alert messages. The account locale will be used if this is not supplied. The AdSense default (English) will be used
-    * if the supplied locale is invalid or unsupported.
-    */
-  var locale: js.UndefOr[String] = js.undefined
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   /** Returns response with indentations and line breaks. */
@@ -38,7 +33,6 @@ object AnonAccountIdAlt {
     alt: String = null,
     fields: String = null,
     key: String = null,
-    locale: String = null,
     oauth_token: String = null,
     prettyPrint: js.UndefOr[Boolean] = js.undefined,
     quotaUser: String = null,
@@ -48,7 +42,6 @@ object AnonAccountIdAlt {
     if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
     if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
     if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])

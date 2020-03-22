@@ -1,9 +1,9 @@
 package typings.braintreeWeb.mod
 
 import typings.braintreeWeb.AnonCard
-import typings.braintreeWeb.AnonCardEnrollmentId
-import typings.braintreeWeb.AnonCardHostedFields
 import typings.braintreeWeb.AnonClient
+import typings.braintreeWeb.AnonEnrollmentId
+import typings.braintreeWeb.AnonHostedFields
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -93,7 +93,7 @@ trait UnionPay_ extends js.Object {
     * });
     * @returns {void}
     */
-  def enroll(options: AnonCardHostedFields, callback: callback): Unit = js.native
+  def enroll(options: AnonHostedFields, callback: callback): Unit = js.native
   /**
     * Fetches the capabilities of a card, including whether or not the SMS enrollment process is required.
     * @public
@@ -229,6 +229,6 @@ trait UnionPay_ extends js.Object {
     * });
     * @returns {void}
     */
-  def tokenize(options: AnonCardEnrollmentId, callback: callback): Unit = js.native
+  def tokenize(options: AnonEnrollmentId, callback: callback): Unit = js.native
 }
 

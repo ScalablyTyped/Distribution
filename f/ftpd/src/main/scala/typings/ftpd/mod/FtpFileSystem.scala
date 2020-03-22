@@ -3,9 +3,9 @@ package typings.ftpd.mod
 import typings.ftpd.AnonBufferSize
 import typings.ftpd.AnonEncoding
 import typings.ftpd.AnonEncodingFlag
-import typings.ftpd.AnonEncodingFlagMode
-import typings.ftpd.AnonEncodingFlagModeString
 import typings.ftpd.AnonFlag
+import typings.ftpd.AnonFlagString
+import typings.ftpd.AnonMode
 import typings.node.Buffer
 import typings.node.NodeJS.ErrnoException
 import typings.node.fsMod.ReadStream
@@ -59,7 +59,7 @@ trait FtpFileSystem extends js.Object {
   var readFile: js.UndefOr[
     (js.Function3[
       /* filename */ String, 
-      (/* options */ AnonEncodingFlag) | (/* options */ AnonFlag) | (/* encoding */ String), 
+      (/* options */ AnonFlag) | (/* options */ AnonFlagString) | (/* encoding */ String), 
       /* callback */ js.Function2[/* err */ ErrnoException, (/* data */ Buffer) | (/* data */ String), Unit], 
       Unit
     ]) | (js.Function2[
@@ -80,7 +80,7 @@ trait FtpFileSystem extends js.Object {
     ]) | (js.Function4[
       /* filename */ String, 
       /* data */ js.Any, 
-      (/* options */ AnonEncodingFlagMode) | (/* options */ AnonEncodingFlagModeString), 
+      (/* options */ AnonEncodingFlag) | (/* options */ AnonMode), 
       js.UndefOr[js.Function1[/* err */ ErrnoException, Unit]], 
       Unit
     ])

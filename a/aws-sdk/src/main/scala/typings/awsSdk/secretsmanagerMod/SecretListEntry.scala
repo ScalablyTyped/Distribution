@@ -38,9 +38,12 @@ trait SecretListEntry extends js.Object {
     * The friendly name of the secret. You can use forward slashes in the name to represent a path hierarchy. For example, /prod/databases/dbserver1 could represent the secret for a server named dbserver1 in the folder databases in the folder prod. 
     */
   var Name: js.UndefOr[SecretNameType] = js.native
+  /**
+    * Returns the name of the service that created the secret.
+    */
   var OwningService: js.UndefOr[OwningServiceType] = js.native
   /**
-    * Indicated whether automatic, scheduled rotation is enabled for this secret.
+    * Indicates whether automatic, scheduled rotation is enabled for this secret.
     */
   var RotationEnabled: js.UndefOr[RotationEnabledType] = js.native
   /**

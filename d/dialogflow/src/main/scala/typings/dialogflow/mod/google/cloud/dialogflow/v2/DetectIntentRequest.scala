@@ -20,7 +20,7 @@ class DetectIntentRequest () extends IDetectIntentRequest {
   def this(properties: IDetectIntentRequest) = this()
   /** DetectIntentRequest inputAudio. */
   @JSName("inputAudio")
-  var inputAudio_DetectIntentRequest: Uint8Array = js.native
+  var inputAudio_DetectIntentRequest: Uint8Array | String = js.native
   /** DetectIntentRequest session. */
   @JSName("session")
   var session_DetectIntentRequest: String = js.native

@@ -1,35 +1,53 @@
 package typings.reactNavigationStack
 
 import typings.react.mod.ComponentType
-import typings.reactNative.mod.Animated.AnimatedComponent
-import typings.reactNative.mod.Text
+import typings.react.mod._Global_.JSX.Element
+import typings.reactNavigationStack.cardContainerMod.Props
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object reactNavigationStackComponents extends reactNavigationStackProps {
   @scala.inline
-  def BackButtonWeb: ComponentType[BackButtonWebProps] = typings.reactNavigationStack.backButtonWebMod.default.asInstanceOf[typings.react.mod.ComponentType[BackButtonWebProps]]
-  @scala.inline
   def BorderlessButton: ComponentType[BorderlessButtonProps] = js.constructorOf[typings.reactNavigationStack.borderlessButtonMod.default].asInstanceOf[typings.react.mod.ComponentType[BorderlessButtonProps]]
   @scala.inline
-  def Header: ComponentType[HeaderProps] = js.constructorOf[typings.reactNavigationStack.headerMod.default].asInstanceOf[typings.react.mod.ComponentType[HeaderProps]]
+  def Card: ComponentType[CardProps] = js.constructorOf[typings.reactNavigationStack.cardMod.default].asInstanceOf[typings.react.mod.ComponentType[CardProps]]
   @scala.inline
-  def HeaderBackButton: ComponentType[HeaderBackButtonProps] = js.constructorOf[typings.reactNavigationStack.headerBackButtonMod.default].asInstanceOf[typings.react.mod.ComponentType[HeaderBackButtonProps]]
+  def CardContainer: ComponentType[
+    CardContainerProps[
+      /* hasActiveCardOverlayEnabledCardShadowEnabledCardStyleCardStyleInterpolatorClosingGestureFocusedGestureDirectionGestureEnabledGestureResponseDistanceGestureVelocityImpactGetPreviousRouteGetFocusedRouteHeaderModeHeaderShownHeaderStyleInterpolatorHeaderTransparentHeaderHeightOnHeaderHeightChangeIndexLayoutOnCloseRouteOnOpenRouteOnPageChangeCancelOnPageChangeConfirmOnPageChangeStartOnTransitionEndOnTransitionStartPreviousSceneRenderHeaderRenderSceneSafeAreaInsetBottomSafeAreaInsetLeftSafeAreaInsetRightSafeAreaInsetTopSceneTransitionSpec */ Props, 
+      Element
+    ]
+  ] = typings.reactNavigationStack.cardContainerMod.default.asInstanceOf[typings.react.mod.ComponentType[
+  CardContainerProps[
+    /* hasActiveCardOverlayEnabledCardShadowEnabledCardStyleCardStyleInterpolatorClosingGestureFocusedGestureDirectionGestureEnabledGestureResponseDistanceGestureVelocityImpactGetPreviousRouteGetFocusedRouteHeaderModeHeaderShownHeaderStyleInterpolatorHeaderTransparentHeaderHeightOnHeaderHeightChangeIndexLayoutOnCloseRouteOnOpenRouteOnPageChangeCancelOnPageChangeConfirmOnPageChangeStartOnTransitionEndOnTransitionStartPreviousSceneRenderHeaderRenderSceneSafeAreaInsetBottomSafeAreaInsetLeftSafeAreaInsetRightSafeAreaInsetTopSceneTransitionSpec */ typings.reactNavigationStack.cardContainerMod.Props, 
+    typings.react.mod._Global_.JSX.Element
+  ]]]
   @scala.inline
-  def HeaderTitle: ComponentType[HeaderTitleProps[AnimatedComponent[Text]]] = js.constructorOf[typings.reactNavigationStack.headerTitleMod.default].asInstanceOf[typings.react.mod.ComponentType[
-  HeaderTitleProps[typings.reactNative.mod.Animated.AnimatedComponent[typings.reactNative.mod.Text]]]]
+  def CardStack: ComponentType[CardStackProps] = js.constructorOf[typings.reactNavigationStack.cardStackMod.default].asInstanceOf[typings.react.mod.ComponentType[CardStackProps]]
   @scala.inline
-  def ModularHeaderBackButton: ComponentType[ModularHeaderBackButtonProps] = js.constructorOf[typings.reactNavigationStack.modularHeaderBackButtonMod.default].asInstanceOf[typings.react.mod.ComponentType[ModularHeaderBackButtonProps]]
+  def Header: ComponentType[HeaderProps] = typings.reactNavigationStack.headerMod.default.asInstanceOf[typings.react.mod.ComponentType[HeaderProps]]
   @scala.inline
-  def StackView: ComponentType[StackViewProps] = js.constructorOf[typings.reactNavigationStack.stackViewMod.default].asInstanceOf[typings.react.mod.ComponentType[StackViewProps]]
+  def HeaderBackButton: ComponentType[HeaderBackButtonProps] = typings.reactNavigationStack.mod.asInstanceOf[js.Dynamic].selectDynamic("HeaderBackButton").asInstanceOf[typings.react.mod.ComponentType[HeaderBackButtonProps]]
   @scala.inline
-  def StackViewCard: ComponentType[StackViewCardProps] = js.constructorOf[typings.reactNavigationStack.stackViewCardMod.default].asInstanceOf[typings.react.mod.ComponentType[StackViewCardProps]]
+  def HeaderBackground: ComponentType[HeaderBackgroundProps] = typings.reactNavigationStack.headerBackgroundMod.default.asInstanceOf[typings.react.mod.ComponentType[HeaderBackgroundProps]]
   @scala.inline
-  def StackViewLayout: ComponentType[StackViewLayoutProps] = js.constructorOf[typings.reactNavigationStack.stackViewLayoutMod.default].asInstanceOf[typings.react.mod.ComponentType[StackViewLayoutProps]]
+  def HeaderContainer: ComponentType[HeaderContainerProps] = typings.reactNavigationStack.headerContainerMod.default.asInstanceOf[typings.react.mod.ComponentType[HeaderContainerProps]]
+  @scala.inline
+  def HeaderSegment: ComponentType[HeaderSegmentProps] = js.constructorOf[typings.reactNavigationStack.headerSegmentMod.default].asInstanceOf[typings.react.mod.ComponentType[HeaderSegmentProps]]
+  @scala.inline
+  def HeaderTitle: ComponentType[HeaderTitleProps] = typings.reactNavigationStack.headerTitleMod.default.asInstanceOf[typings.react.mod.ComponentType[HeaderTitleProps]]
+  @scala.inline
+  def KeyboardManager: ComponentType[KeyboardManagerProps] = js.constructorOf[typings.reactNavigationStack.keyboardManagerMod.default].asInstanceOf[typings.react.mod.ComponentType[KeyboardManagerProps]]
+  @scala.inline
+  def MaskedView: ComponentType[MaskedViewProps] = typings.reactNavigationStack.maskedViewMod.default.asInstanceOf[typings.react.mod.ComponentType[MaskedViewProps]]
+  @scala.inline
+  def MaskedViewDotnative: ComponentType[MaskedViewDotnativeProps] = typings.reactNavigationStack.maskedViewNativeMod.default.asInstanceOf[typings.react.mod.ComponentType[MaskedViewDotnativeProps]]
+  @scala.inline
+  def SafeAreaProviderCompat: ComponentType[SafeAreaProviderCompatProps] = typings.reactNavigationStack.safeAreaProviderCompatMod.default.asInstanceOf[typings.react.mod.ComponentType[SafeAreaProviderCompatProps]]
+  @scala.inline
+  def StackView: ComponentType[StackViewProps] = typings.reactNavigationStack.viewsStackViewMod.default.asInstanceOf[typings.react.mod.ComponentType[StackViewProps]]
   @scala.inline
   def TouchableItem: ComponentType[TouchableItemProps] = js.constructorOf[typings.reactNavigationStack.touchableItemMod.default].asInstanceOf[typings.react.mod.ComponentType[TouchableItemProps]]
-  @scala.inline
-  def Transitioner: ComponentType[TransitionerProps] = js.constructorOf[typings.reactNavigationStack.transitionerMod.default].asInstanceOf[typings.react.mod.ComponentType[TransitionerProps]]
 }
 

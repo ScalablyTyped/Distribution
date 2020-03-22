@@ -1,8 +1,8 @@
 package typings.reactFns.scrollScrollMod
 
 import typings.react.mod.Component
+import typings.reactFns.PartialScrollConfig
 import typings.reactFns.typesMod.SharedRenderProps
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,6 +22,6 @@ class Scroll ()
 @JSImport("react-fns/dist/Scroll/Scroll", "Scroll")
 @js.native
 object Scroll extends js.Object {
-  var defaultProps: Partial[ScrollConfig] = js.native
+  var defaultProps: PartialScrollConfig = js.native
 }
 

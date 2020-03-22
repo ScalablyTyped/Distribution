@@ -1,6 +1,6 @@
 package typings.nivoBar.mod
 
-import typings.nivoBar.BarSvgPropsDimensions
+import typings.nivoCore.mod.Dimensions
 import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,5 +9,5 @@ import scala.scalajs.js.annotation._
 @JSImport("@nivo/bar", "Bar")
 @js.native
 class Bar ()
-  extends Component[BarSvgPropsDimensions, js.Object, js.Any]
+  extends Component[BarSvgProps with Dimensions, js.Object, js.Any]
 

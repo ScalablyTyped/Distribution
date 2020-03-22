@@ -14,7 +14,7 @@ trait Slider
   var rcSlider: js.Any = js.native
   def blur(): Unit = js.native
   def focus(): Unit = js.native
-  def renderSlider(hasGetPrefixCls: ConfigConsumerProps): Element = js.native
+  def renderSlider(hasGetPrefixClsDirection: ConfigConsumerProps): Element = js.native
   def saveSlider(node: js.Any): Unit = js.native
   def toggleTooltipVisible(index: Double, visible: Boolean): Unit = js.native
 }

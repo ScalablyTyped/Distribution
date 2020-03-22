@@ -1,8 +1,8 @@
 package typings.jupyterlabApplication.frontendMod.JupyterFrontEnd
 
 import typings.jupyterlabDocregistry.registryMod.DocumentRegistry.IOpenOptions
-import typings.phosphorAlgorithm.iterMod.IIterator
-import typings.phosphorWidgets.mod.Widget
+import typings.luminoAlgorithm.iterMod.IIterator
+import typings.luminoWidgets.mod.Widget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +19,7 @@ trait IShell extends Widget {
     * Different shell implementations have latitude to decide what "current"
     * or "focused" mean, depending on their user interface characteristics.
     */
-  val currentWidget: Widget = js.native
+  val currentWidget: Widget | Null = js.native
   /**
     * Activates a widget inside the application shell.
     *

@@ -5,11 +5,11 @@ import typings.angularCommon.httpMod.HttpClient
 import typings.angularCore.mod.Renderer2
 import typings.angularCore.mod.RendererFactory2
 import typings.angularPlatformBrowser.mod.DomSanitizer
-import typings.antDesignIconsAngular.antDesignIconsAngularTypesMod.CachedIconDefinition
-import typings.antDesignIconsAngular.antDesignIconsAngularTypesMod.IconDefinition
-import typings.antDesignIconsAngular.antDesignIconsAngularTypesMod.ThemeType
-import typings.antDesignIconsAngular.antDesignIconsAngularTypesMod.TwoToneColorPalette
-import typings.antDesignIconsAngular.antDesignIconsAngularTypesMod.TwoToneColorPaletteSetter
+import typings.antDesignIconsAngular.typesMod.CachedIconDefinition
+import typings.antDesignIconsAngular.typesMod.IconDefinition
+import typings.antDesignIconsAngular.typesMod.ThemeType
+import typings.antDesignIconsAngular.typesMod.TwoToneColorPalette
+import typings.antDesignIconsAngular.typesMod.TwoToneColorPaletteSetter
 import typings.rxjs.mod.Observable_
 import typings.std.Map
 import typings.std.SVGElement

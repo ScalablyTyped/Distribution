@@ -6,16 +6,16 @@ import typings.react.mod._Global_.JSX.Element
 import typings.rmcNukaCarousel.AnonBeginValue
 import typings.rmcNukaCarousel.AnonBottom
 import typings.rmcNukaCarousel.AnonBottomPosition
-import typings.rmcNukaCarousel.AnonBottomPositionRight
 import typings.rmcNukaCarousel.AnonBoxSizing
-import typings.rmcNukaCarousel.AnonE
-import typings.rmcNukaCarousel.AnonEOnMouseDown
 import typings.rmcNukaCarousel.AnonLeft
-import typings.rmcNukaCarousel.AnonLeftMsTransform
-import typings.rmcNukaCarousel.AnonLeftMsTransformPosition
-import typings.rmcNukaCarousel.AnonLeftMsTransformPositionTop
 import typings.rmcNukaCarousel.AnonMsTransform
+import typings.rmcNukaCarousel.AnonOnMouseDown
+import typings.rmcNukaCarousel.AnonOnTouchCancel
 import typings.rmcNukaCarousel.AnonPosition
+import typings.rmcNukaCarousel.AnonRight
+import typings.rmcNukaCarousel.AnonTextAlign
+import typings.rmcNukaCarousel.AnonTop
+import typings.rmcNukaCarousel.AnonTransform
 import typings.rmcNukaCarousel.rmcNukaCarouselNumbers.`-1`
 import typings.rmcNukaCarousel.rmcNukaCarouselNumbers.`0`
 import typings.rmcNukaCarousel.rmcNukaCarouselNumbers.`1`
@@ -48,10 +48,10 @@ trait Carousel
   @JSName("componentWillUnmount")
   def componentWillUnmount_MCarousel(): Unit = js.native
   def formatChildren(children: js.Any): js.Array[Element] = js.native
-  def getDecoratorStyles(position: js.Any): AnonLeft | AnonLeftMsTransform | AnonPosition | AnonLeftMsTransformPosition | AnonLeftMsTransformPositionTop | AnonMsTransform | AnonBottom | AnonBottomPosition | AnonBottomPositionRight = js.native
+  def getDecoratorStyles(position: js.Any): AnonLeft | AnonMsTransform | AnonPosition | AnonTop | AnonTransform | AnonRight | AnonBottom | AnonTextAlign | AnonBottomPosition = js.native
   def getFrameStyles(): CSSProperties = js.native
   def getListStyles(): CSSProperties = js.native
-  def getMouseEvents(): AnonEOnMouseDown | Null = js.native
+  def getMouseEvents(): AnonOnMouseDown | Null = js.native
   def getSlideStyles(index: js.Any, positionValue: js.Any): CSSProperties = js.native
   def getSlideTargetPosition(index: js.Any, positionValue: js.Any): Double = js.native
   def getSliderStyles(): AnonBoxSizing = js.native
@@ -59,7 +59,7 @@ trait Carousel
   def getTargetLeft(): Double = js.native
   def getTargetLeft(touchOffset: js.Any): Double = js.native
   def getTargetLeft(touchOffset: js.Any, slide: js.Any): Double = js.native
-  def getTouchEvents(): AnonE | Null = js.native
+  def getTouchEvents(): AnonOnTouchCancel | Null = js.native
   def getTweeningValue(path: js.Any): js.Any = js.native
   def goToSlide(index: js.Any): Unit = js.native
   def handleClick(e: js.Any): Unit = js.native

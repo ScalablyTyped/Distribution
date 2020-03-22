@@ -1,6 +1,6 @@
 package typings.reactOnsenui.mod
 
-import typings.reactOnsenui.HTMLAttributesidclassNamestyleonCancelvoidisOpenboAnimation
+import typings.reactOnsenui.HTMLAttributesidclassNameIsDisabled
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-onsenui", "ActionSheet")
 @js.native
 class ActionSheet ()
-  extends typings.react.mod.Component[HTMLAttributesidclassNamestyleonCancelvoidisOpenboAnimation, js.Any, js.Any]
+  extends typings.react.mod.Component[HTMLAttributesidclassNameIsDisabled, js.Any, js.Any]
 

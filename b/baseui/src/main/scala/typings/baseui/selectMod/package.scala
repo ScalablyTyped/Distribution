@@ -13,13 +13,12 @@ package object selectMod {
     /* currentState */ typings.baseui.selectMod.State, 
     typings.baseui.selectMod.State
   ]
-  type StatefulSelectProps = typings.baseui.selectMod.SelectProps with typings.baseui.AnonInitialState
   type Value = js.Array[typings.baseui.selectMod.Option]
   type filterOptions = js.Function4[
     /* options */ typings.baseui.selectMod.Value, 
     /* filterValue */ java.lang.String, 
     /* excludeOptions */ js.UndefOr[typings.baseui.selectMod.Value], 
-    /* newProps */ js.UndefOr[typings.baseui.AnonAny], 
+    /* newProps */ js.UndefOr[typings.baseui.AnonFilterOption], 
     typings.baseui.selectMod.Value
   ]
 }

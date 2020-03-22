@@ -2,6 +2,7 @@ package typings.smartBuffer
 
 import typings.node.BufferEncoding
 import typings.smartBuffer.mod.SmartBuffer
+import typings.std.BigInt
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +10,30 @@ import scala.scalajs.js.annotation._
 @JSImport("smart-buffer/typings/utils", JSImport.Namespace)
 @js.native
 object utilsMod extends js.Object {
+  @js.native
+  trait Buffer extends js.Object {
+    def readBigInt64BE(): BigInt = js.native
+    def readBigInt64BE(offset: Double): BigInt = js.native
+    def readBigInt64LE(): BigInt = js.native
+    def readBigInt64LE(offset: Double): BigInt = js.native
+    def readBigUInt64BE(): BigInt = js.native
+    def readBigUInt64BE(offset: Double): BigInt = js.native
+    def readBigUInt64LE(): BigInt = js.native
+    def readBigUInt64LE(offset: Double): BigInt = js.native
+    def writeBigInt64BE(value: BigInt): Double = js.native
+    def writeBigInt64BE(value: BigInt, offset: Double): Double = js.native
+    def writeBigInt64LE(value: BigInt): Double = js.native
+    def writeBigInt64LE(value: BigInt, offset: Double): Double = js.native
+    def writeBigUInt64BE(value: BigInt): Double = js.native
+    def writeBigUInt64BE(value: BigInt, offset: Double): Double = js.native
+    def writeBigUInt64LE(value: BigInt): Double = js.native
+    def writeBigUInt64LE(value: BigInt, offset: Double): Double = js.native
+  }
+  
+  /**
+    * Throws if Node.js version is too low to support bigint
+    */
+  def bigIntAndBufferInt64Check(bufferMethod: String): Unit = js.native
   /**
     * Checks if a given encoding is a valid Buffer encoding. (Throws an exception if check fails)
     *

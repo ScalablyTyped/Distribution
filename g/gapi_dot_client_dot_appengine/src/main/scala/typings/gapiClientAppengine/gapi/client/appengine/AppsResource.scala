@@ -2,8 +2,8 @@ package typings.gapiClientAppengine.gapi.client.appengine
 
 import typings.gapiClient.gapi.client.Request_
 import typings.gapiClientAppengine.AnonAccesstoken
-import typings.gapiClientAppengine.AnonAccesstokenAltAppsIdBearertokenCallbackFieldsKeyOauthtokenPpPrettyPrintQuotaUserUpdateMask
-import typings.gapiClientAppengine.AnonAccesstokenAltBearertoken
+import typings.gapiClientAppengine.AnonUpdateMask
+import typings.gapiClientAppengine.AnonUploadType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,7 +22,7 @@ trait AppsResource extends js.Object {
     * location - The region (https://cloud.google.com/appengine/docs/locations) where you want the App Engine application located.For more information about
     * App Engine applications, see Managing Projects, Applications, and Billing (https://cloud.google.com/appengine/docs/python/console/).
     */
-  def create(request: AnonAccesstokenAltBearertoken): Request_[Operation]
+  def create(request: AnonUploadType): Request_[Operation]
   /** Gets information about an application. */
   def get(request: AnonAccesstoken): Request_[Application]
   /**
@@ -30,9 +30,7 @@ trait AppsResource extends js.Object {
     * auth_domain - Google authentication domain for controlling user access to the application.
     * default_cookie_expiration - Cookie expiration policy for the application.
     */
-  def patch(
-    request: AnonAccesstokenAltAppsIdBearertokenCallbackFieldsKeyOauthtokenPpPrettyPrintQuotaUserUpdateMask
-  ): Request_[Operation]
+  def patch(request: AnonUpdateMask): Request_[Operation]
   /**
     * Recreates the required App Engine features for the specified App Engine application, for example a Cloud Storage bucket or App Engine service account.
     * Use this method if you receive an error message about a missing feature, for example, Error retrieving the App Engine service account.
@@ -45,13 +43,13 @@ object AppsResource {
   def apply(
     authorizedCertificates: AuthorizedCertificatesResource,
     authorizedDomains: AuthorizedDomainsResource,
-    create: AnonAccesstokenAltBearertoken => Request_[Operation],
+    create: AnonUploadType => Request_[Operation],
     domainMappings: DomainMappingsResource,
     firewall: FirewallResource,
     get: AnonAccesstoken => Request_[Application],
     locations: LocationsResource,
     operations: OperationsResource,
-    patch: AnonAccesstokenAltAppsIdBearertokenCallbackFieldsKeyOauthtokenPpPrettyPrintQuotaUserUpdateMask => Request_[Operation],
+    patch: AnonUpdateMask => Request_[Operation],
     repair: AnonAccesstoken => Request_[Operation],
     services: ServicesResource
   ): AppsResource = {

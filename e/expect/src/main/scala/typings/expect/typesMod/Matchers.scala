@@ -1,5 +1,6 @@
 package typings.expect.typesMod
 
+import typings.std.BigInt
 import typings.std.Error
 import typings.std.Partial
 import typings.std.Record
@@ -77,10 +78,12 @@ trait Matchers[R] extends js.Object {
     * For comparing floating point numbers.
     */
   def toBeGreaterThan(expected: Double): R = js.native
+  def toBeGreaterThan(expected: BigInt): R = js.native
   /**
     * For comparing floating point numbers.
     */
   def toBeGreaterThanOrEqual(expected: Double): R = js.native
+  def toBeGreaterThanOrEqual(expected: BigInt): R = js.native
   /**
     * Ensure that an object is an instance of a class.
     * This matcher uses `instanceof` underneath.
@@ -90,10 +93,12 @@ trait Matchers[R] extends js.Object {
     * For comparing floating point numbers.
     */
   def toBeLessThan(expected: Double): R = js.native
+  def toBeLessThan(expected: BigInt): R = js.native
   /**
     * For comparing floating point numbers.
     */
   def toBeLessThanOrEqual(expected: Double): R = js.native
+  def toBeLessThanOrEqual(expected: BigInt): R = js.native
   /**
     * Used to check that a variable is NaN.
     */

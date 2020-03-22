@@ -2,7 +2,7 @@ package typings.sparqlHttpClient.mod
 
 import org.scalablytyped.runtime.Instantiable1
 import typings.node.urlMod.URL_
-import typings.sparqlHttpClient.FnInit
+import typings.sparqlHttpClient.FnCall
 import typings.std.HeadersInit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 trait SparqlClientOptions extends SparqlHttpOptions {
   var URL: js.UndefOr[Instantiable1[/* input */ String, URL_]] = js.undefined
   var defaultHeaders: js.UndefOr[HeadersInit] = js.undefined
-  var fetch: js.UndefOr[FnInit] = js.undefined
+  var fetch: js.UndefOr[FnCall] = js.undefined
 }
 
 object SparqlClientOptions {
@@ -20,7 +20,7 @@ object SparqlClientOptions {
     URL: Instantiable1[/* input */ String, URL_] = null,
     defaultHeaders: HeadersInit = null,
     endpointUrl: String = null,
-    fetch: FnInit = null,
+    fetch: FnCall = null,
     updateUrl: String = null
   ): SparqlClientOptions = {
     val __obj = js.Dynamic.literal()

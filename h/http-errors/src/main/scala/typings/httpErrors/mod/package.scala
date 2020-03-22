@@ -10,9 +10,5 @@ package object mod {
     typings.httpErrors.mod.HttpError
   ]
   type HttpErrorConstructor = org.scalablytyped.runtime.Instantiable1[js.UndefOr[/* msg */ java.lang.String], typings.httpErrors.mod.HttpError]
-  type NamedConstructors = typings.httpErrors.AnonCode with (typings.std.Record[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 82 */ js.Any, 
-    typings.httpErrors.mod.HttpErrorConstructor
-  ])
   type UnknownError = typings.std.Error | java.lang.String | scala.Double | org.scalablytyped.runtime.StringDictionary[js.Any]
 }

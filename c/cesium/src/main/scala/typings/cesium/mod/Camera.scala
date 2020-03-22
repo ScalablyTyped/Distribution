@@ -1,7 +1,7 @@
 package typings.cesium.mod
 
 import typings.cesium.AnonCancel
-import typings.cesium.AnonCancelComplete
+import typings.cesium.AnonComplete
 import typings.cesium.AnonConvert
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -53,7 +53,7 @@ class Camera protected () extends js.Object {
   def flyHome(duration: Double): Unit = js.native
   def flyTo(options: AnonCancel): Unit = js.native
   def flyToBoundingSphere(boundingSphere: BoundingSphere): Unit = js.native
-  def flyToBoundingSphere(boundingSphere: BoundingSphere, options: AnonCancelComplete): Unit = js.native
+  def flyToBoundingSphere(boundingSphere: BoundingSphere, options: AnonComplete): Unit = js.native
   def getMagnitude(): Double = js.native
   def getPickRay(windowPosition: Cartesian2): Ray = js.native
   def getPickRay(windowPosition: Cartesian2, result: Ray): Ray = js.native

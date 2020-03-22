@@ -19,7 +19,7 @@ object shapeMod extends js.Object {
     	 * @deprecated Use {@link Shape#extractPoints .extractPoints()} instead.
     	 */
     def extractAllPoints(divisions: Double): AnonHoles = js.native
-    def extractPoints(divisions: Double): js.Array[Vector2] = js.native
+    def extractPoints(divisions: Double): AnonHoles = js.native
     /**
     	 * @deprecated Use {@link ExtrudeGeometry ExtrudeGeometry()} instead.
     	 */

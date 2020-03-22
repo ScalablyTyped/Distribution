@@ -41,7 +41,7 @@ trait SvgProperties[TLength] extends js.Object {
   var markerMid: js.UndefOr[MarkerMidProperty] = js.undefined
   var markerStart: js.UndefOr[MarkerStartProperty] = js.undefined
   var mask: js.UndefOr[MaskProperty[TLength]] = js.undefined
-  var opacity: js.UndefOr[GlobalsNumber] = js.undefined
+  var opacity: js.UndefOr[OpacityProperty] = js.undefined
   var overflow: js.UndefOr[OverflowProperty] = js.undefined
   var paintOrder: js.UndefOr[PaintOrderProperty] = js.undefined
   var pointerEvents: js.UndefOr[PointerEventsProperty] = js.undefined
@@ -57,7 +57,7 @@ trait SvgProperties[TLength] extends js.Object {
   var strokeOpacity: js.UndefOr[GlobalsNumber] = js.undefined
   var strokeWidth: js.UndefOr[StrokeWidthProperty[TLength]] = js.undefined
   var textAnchor: js.UndefOr[TextAnchorProperty] = js.undefined
-  var textDecoration: js.UndefOr[TextDecorationProperty] = js.undefined
+  var textDecoration: js.UndefOr[TextDecorationProperty[TLength]] = js.undefined
   var textRendering: js.UndefOr[TextRenderingProperty] = js.undefined
   var unicodeBidi: js.UndefOr[UnicodeBidiProperty] = js.undefined
   var vectorEffect: js.UndefOr[VectorEffectProperty] = js.undefined
@@ -106,7 +106,7 @@ object SvgProperties {
     markerMid: MarkerMidProperty = null,
     markerStart: MarkerStartProperty = null,
     mask: MaskProperty[TLength] = null,
-    opacity: GlobalsNumber = null,
+    opacity: OpacityProperty = null,
     overflow: OverflowProperty = null,
     paintOrder: PaintOrderProperty = null,
     pointerEvents: PointerEventsProperty = null,
@@ -122,7 +122,7 @@ object SvgProperties {
     strokeOpacity: GlobalsNumber = null,
     strokeWidth: StrokeWidthProperty[TLength] = null,
     textAnchor: TextAnchorProperty = null,
-    textDecoration: TextDecorationProperty = null,
+    textDecoration: TextDecorationProperty[TLength] = null,
     textRendering: TextRenderingProperty = null,
     unicodeBidi: UnicodeBidiProperty = null,
     vectorEffect: VectorEffectProperty = null,

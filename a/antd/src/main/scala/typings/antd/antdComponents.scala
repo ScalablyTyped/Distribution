@@ -1,7 +1,18 @@
 package typings.antd
 
-import typings.antd.treeSelectInterfaceMod.TreeNodeValue
+import typings.antDesignIcons.componentsAntdIconMod.AntdIconProps
+import typings.antd.formFormMod.FormProps
+import typings.antd.formItemInputMod.FormItemInputMiscProps
+import typings.antd.formItemInputMod.FormItemInputProps
+import typings.antd.formUtilMod.FormInstance
+import typings.antd.hookModalMod.HookModalProps
+import typings.antd.hookModalMod.HookModalRef
+import typings.antd.radioInterfaceMod.RadioGroupContextProps
+import typings.antd.selectMod.SelectValue
+import typings.moment.mod.Moment
 import typings.react.mod.ComponentType
+import typings.react.mod.RefAttributes
+import typings.std.HTMLSpanElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,12 +28,6 @@ object antdComponents extends antdProps {
   def Anchor: ComponentType[AnchorProps] = js.constructorOf[typings.antd.anchorMod.default].asInstanceOf[typings.react.mod.ComponentType[AnchorProps]]
   @scala.inline
   def AnchorLink: ComponentType[AnchorLinkProps] = js.constructorOf[typings.antd.anchorLinkMod.default].asInstanceOf[typings.react.mod.ComponentType[AnchorLinkProps]]
-  @scala.inline
-  def AutoComplete: ComponentType[AutoCompleteProps] = js.constructorOf[typings.antd.autoCompleteMod.default].asInstanceOf[typings.react.mod.ComponentType[AutoCompleteProps]]
-  @scala.inline
-  def AutoCompleteOptGroup: ComponentType[AutoCompleteOptGroupProps] = typings.antd.mod.AutoComplete.OptGroup.asInstanceOf[typings.react.mod.ComponentType[AutoCompleteOptGroupProps]]
-  @scala.inline
-  def AutoCompleteOption: ComponentType[AutoCompleteOptionProps] = typings.antd.mod.AutoComplete.Option.asInstanceOf[typings.react.mod.ComponentType[AutoCompleteOptionProps]]
   @scala.inline
   def Avatar: ComponentType[AvatarProps] = js.constructorOf[typings.antd.avatarMod.default].asInstanceOf[typings.react.mod.ComponentType[AvatarProps]]
   @scala.inline
@@ -42,7 +47,7 @@ object antdComponents extends antdProps {
   @scala.inline
   def ButtonGroup: ComponentType[ButtonGroupProps] = typings.antd.buttonGroupMod.default.asInstanceOf[typings.react.mod.ComponentType[ButtonGroupProps]]
   @scala.inline
-  def Calendar: ComponentType[CalendarProps] = js.constructorOf[typings.antd.calendarMod.default].asInstanceOf[typings.react.mod.ComponentType[CalendarProps]]
+  def Calendar: ComponentType[CalendarProps[Moment]] = typings.antd.mod.Calendar.asInstanceOf[typings.react.mod.ComponentType[CalendarProps[typings.moment.mod.Moment]]]
   @scala.inline
   def Card: ComponentType[CardProps] = js.constructorOf[typings.antd.cardMod.default].asInstanceOf[typings.react.mod.ComponentType[CardProps]]
   @scala.inline
@@ -53,6 +58,8 @@ object antdComponents extends antdProps {
   def Carousel: ComponentType[CarouselProps] = js.constructorOf[typings.antd.carouselMod.default].asInstanceOf[typings.react.mod.ComponentType[CarouselProps]]
   @scala.inline
   def Cascader: ComponentType[CascaderProps] = js.constructorOf[typings.antd.cascaderMod.default].asInstanceOf[typings.react.mod.ComponentType[CascaderProps]]
+  @scala.inline
+  def Cell: ComponentType[CellProps] = typings.antd.cellMod.default.asInstanceOf[typings.react.mod.ComponentType[CellProps]]
   @scala.inline
   def CheckableTag: ComponentType[CheckableTagProps] = js.constructorOf[typings.antd.checkableTagMod.default].asInstanceOf[typings.react.mod.ComponentType[CheckableTagProps]]
   @scala.inline
@@ -68,21 +75,31 @@ object antdComponents extends antdProps {
   @scala.inline
   def CollapsePanel: ComponentType[CollapsePanelProps] = js.constructorOf[typings.antd.collapsePanelMod.default].asInstanceOf[typings.react.mod.ComponentType[CollapsePanelProps]]
   @scala.inline
-  def Column[T]: ComponentType[ColumnProps[T]] = js.constructorOf[typings.antd.columnMod.default[T]].asInstanceOf[typings.react.mod.ComponentType[ColumnProps[T]]]
-  @scala.inline
-  def ColumnGroup: ComponentType[ColumnGroupProps] = js.constructorOf[typings.antd.columnGroupMod.default].asInstanceOf[typings.react.mod.ComponentType[ColumnGroupProps]]
-  @scala.inline
   def Comment: ComponentType[CommentProps] = js.constructorOf[typings.antd.commentMod.default].asInstanceOf[typings.react.mod.ComponentType[CommentProps]]
   @scala.inline
-  def ConfigConsumer: ComponentType[ConfigConsumerProps[typings.antd.contextMod.ConfigConsumerProps]] = js.constructorOf[typings.antd.configProviderMod.ConfigConsumer].asInstanceOf[typings.react.mod.ComponentType[ConfigConsumerProps[typings.antd.contextMod.ConfigConsumerProps]]]
+  def ConfigConsumer: ComponentType[ConfigConsumerProps[typings.antd.contextMod.ConfigConsumerProps]] = typings.antd.configProviderMod.ConfigConsumer.asInstanceOf[typings.react.mod.ComponentType[ConfigConsumerProps[typings.antd.contextMod.ConfigConsumerProps]]]
   @scala.inline
   def ConfigProvider: ComponentType[ConfigProviderProps] = js.constructorOf[typings.antd.configProviderMod.default].asInstanceOf[typings.react.mod.ComponentType[ConfigProviderProps]]
   @scala.inline
+  def ConfirmDialog: ComponentType[ConfirmDialogProps] = typings.antd.confirmDialogMod.default.asInstanceOf[typings.react.mod.ComponentType[ConfirmDialogProps]]
+  @scala.inline
   def Countdown: ComponentType[CountdownProps] = js.constructorOf[typings.antd.countdownMod.default].asInstanceOf[typings.react.mod.ComponentType[CountdownProps]]
   @scala.inline
-  def DatePicker: ComponentType[DatePickerProps] = js.constructorOf[typings.antd.datePickerMod.default].asInstanceOf[typings.react.mod.ComponentType[DatePickerProps]]
+  def DatePicker: ComponentType[DatePickerProps[Moment]] = js.constructorOf[typings.antd.datePickerMod.default].asInstanceOf[typings.react.mod.ComponentType[DatePickerProps[typings.moment.mod.Moment]]]
   @scala.inline
-  def Descriptions: ComponentType[DescriptionsProps] = js.constructorOf[typings.antd.descriptionsMod.default].asInstanceOf[typings.react.mod.ComponentType[DescriptionsProps]]
+  def DatePickerMonthPicker: ComponentType[DatePickerMonthPickerProps] = typings.antd.mod.DatePicker.MonthPicker.asInstanceOf[typings.react.mod.ComponentType[DatePickerMonthPickerProps]]
+  @scala.inline
+  def DatePickerRangePicker: ComponentType[DatePickerRangePickerProps[Moment]] = typings.antd.mod.DatePicker.RangePicker.asInstanceOf[typings.react.mod.ComponentType[DatePickerRangePickerProps[typings.moment.mod.Moment]]]
+  @scala.inline
+  def DatePickerTimePicker: ComponentType[DatePickerTimePickerProps] = typings.antd.mod.DatePicker.TimePicker.asInstanceOf[typings.react.mod.ComponentType[DatePickerTimePickerProps]]
+  @scala.inline
+  def DatePickerWeekPicker: ComponentType[DatePickerWeekPickerProps] = typings.antd.mod.DatePicker.WeekPicker.asInstanceOf[typings.react.mod.ComponentType[DatePickerWeekPickerProps]]
+  @scala.inline
+  def DatePickerYearPicker: ComponentType[DatePickerYearPickerProps] = typings.antd.mod.DatePicker.YearPicker.asInstanceOf[typings.react.mod.ComponentType[DatePickerYearPickerProps]]
+  @scala.inline
+  def Default: ComponentType[DefaultProps] = js.constructorOf[typings.antd.modalMod.defaultCls].asInstanceOf[typings.react.mod.ComponentType[DefaultProps]]
+  @scala.inline
+  def Descriptions: ComponentType[DescriptionsProps] = typings.antd.descriptionsMod.default.asInstanceOf[typings.react.mod.ComponentType[DescriptionsProps]]
   @scala.inline
   def DescriptionsItem: ComponentType[DescriptionsItemProps] = typings.antd.mod.Descriptions.Item.asInstanceOf[typings.react.mod.ComponentType[DescriptionsItemProps]]
   @scala.inline
@@ -100,35 +117,60 @@ object antdComponents extends antdProps {
   @scala.inline
   def Editable: ComponentType[EditableProps] = js.constructorOf[typings.antd.editableMod.default].asInstanceOf[typings.react.mod.ComponentType[EditableProps]]
   @scala.inline
+  def Element: ComponentType[ElementProps] = js.constructorOf[typings.antd.elementMod.default].asInstanceOf[typings.react.mod.ComponentType[ElementProps]]
+  @scala.inline
   def Empty: ComponentType[EmptyProps] = typings.antd.emptyMod.default.asInstanceOf[typings.react.mod.ComponentType[EmptyProps]]
   @scala.inline
-  def FilterDropdown[T]: ComponentType[FilterDropdownProps[T]] = js.constructorOf[typings.antd.filterDropdownMod.default[T]].asInstanceOf[typings.react.mod.ComponentType[FilterDropdownProps[T]]]
+  def ErrorBoundary: ComponentType[ErrorBoundaryProps] = js.constructorOf[typings.antd.errorBoundaryMod.default].asInstanceOf[typings.react.mod.ComponentType[ErrorBoundaryProps]]
   @scala.inline
-  def FilterDropdownMenuWrapper: ComponentType[FilterDropdownMenuWrapperProps] = typings.antd.filterDropdownMenuWrapperMod.default.asInstanceOf[typings.react.mod.ComponentType[FilterDropdownMenuWrapperProps]]
+  def FilterDropdown[RecordType]: ComponentType[FilterDropdownProps[RecordType]] = typings.antd.filterDropdownMod.default.asInstanceOf[typings.react.mod.ComponentType[FilterDropdownProps[RecordType]]]
   @scala.inline
-  def Form: ComponentType[FormProps] = js.constructorOf[typings.antd.formMod.default].asInstanceOf[typings.react.mod.ComponentType[FormProps]]
+  def FilterWrapper: ComponentType[FilterWrapperProps] = typings.antd.filterWrapperMod.default.asInstanceOf[typings.react.mod.ComponentType[FilterWrapperProps]]
   @scala.inline
-  def FormItem: ComponentType[FormItemProps] = js.constructorOf[typings.antd.formItemMod.default].asInstanceOf[typings.react.mod.ComponentType[FormItemProps]]
+  def Form: ComponentType[FormProps with RefAttributes[FormInstance]] = typings.antd.formMod.default.asInstanceOf[typings.react.mod.ComponentType[
+  typings.antd.formFormMod.FormProps with typings.react.mod.RefAttributes[typings.antd.formUtilMod.FormInstance]]]
+  @scala.inline
+  def FormItem: ComponentType[FormItemProps] = typings.antd.formItemMod.default.asInstanceOf[typings.react.mod.ComponentType[FormItemProps]]
+  @scala.inline
+  def FormItemInput: ComponentType[FormItemInputProps with FormItemInputMiscProps] = typings.antd.formItemInputMod.default.asInstanceOf[typings.react.mod.ComponentType[
+  typings.antd.formItemInputMod.FormItemInputProps with typings.antd.formItemInputMod.FormItemInputMiscProps]]
+  @scala.inline
+  def FormItemLabel: ComponentType[FormItemLabelProps] = typings.antd.formItemLabelMod.default.asInstanceOf[typings.react.mod.ComponentType[FormItemLabelProps]]
+  @scala.inline
+  def FormList: ComponentType[FormListProps] = typings.antd.formListMod.default.asInstanceOf[typings.react.mod.ComponentType[FormListProps]]
+  @scala.inline
+  def FormProvider: ComponentType[FormProviderProps] = typings.antd.formContextMod.FormProvider.asInstanceOf[typings.react.mod.ComponentType[FormProviderProps]]
   @scala.inline
   def Grid: ComponentType[GridProps] = typings.antd.gridMod.default.asInstanceOf[typings.react.mod.ComponentType[GridProps]]
   @scala.inline
   def Group: ComponentType[GroupProps] = typings.antd.inputGroupMod.default.asInstanceOf[typings.react.mod.ComponentType[GroupProps]]
   @scala.inline
-  def Header: ComponentType[HeaderProps] = js.constructorOf[typings.antd.headerMod.default].asInstanceOf[typings.react.mod.ComponentType[HeaderProps]]
+  def Header[DateType]: ComponentType[HeaderProps[DateType]] = typings.antd.headerMod.default.asInstanceOf[typings.react.mod.ComponentType[HeaderProps[DateType]]]
   @scala.inline
-  def Icon: ComponentType[IconProps] = typings.antd.iconMod.default.asInstanceOf[typings.react.mod.ComponentType[IconProps]]
+  def HookModal: ComponentType[HookModalProps with RefAttributes[HookModalRef]] = typings.antd.hookModalMod.default.asInstanceOf[typings.react.mod.ComponentType[
+  typings.antd.hookModalMod.HookModalProps with typings.react.mod.RefAttributes[typings.antd.hookModalMod.HookModalRef]]]
+  @scala.inline
+  def IconMapError: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antd.resultMod.IconMap.error.asInstanceOf[typings.react.mod.ComponentType[
+  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  @scala.inline
+  def IconMapInfo: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antd.resultMod.IconMap.info.asInstanceOf[typings.react.mod.ComponentType[
+  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  @scala.inline
+  def IconMapSuccess: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antd.resultMod.IconMap.success.asInstanceOf[typings.react.mod.ComponentType[
+  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  @scala.inline
+  def IconMapWarning: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antd.resultMod.IconMap.warning.asInstanceOf[typings.react.mod.ComponentType[
+  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
   @scala.inline
   def Input: ComponentType[InputProps] = js.constructorOf[typings.antd.inputMod.default].asInstanceOf[typings.react.mod.ComponentType[InputProps]]
-  @scala.inline
-  def InputElement: ComponentType[InputElementProps] = js.constructorOf[typings.antd.inputElementMod.default].asInstanceOf[typings.react.mod.ComponentType[InputElementProps]]
   @scala.inline
   def InputGroup: ComponentType[InputGroupProps] = typings.antd.mod.Input.Group.asInstanceOf[typings.react.mod.ComponentType[InputGroupProps]]
   @scala.inline
   def InputNumber: ComponentType[InputNumberProps] = js.constructorOf[typings.antd.inputNumberMod.default].asInstanceOf[typings.react.mod.ComponentType[InputNumberProps]]
   @scala.inline
-  def Item: ComponentType[ItemProps] = js.constructorOf[typings.antd.itemMod.default].asInstanceOf[typings.react.mod.ComponentType[ItemProps]]
+  def Item: ComponentType[ItemProps] = js.constructorOf[typings.antd.listItemMod.default].asInstanceOf[typings.react.mod.ComponentType[ItemProps]]
   @scala.inline
-  def ItemMeta: ComponentType[ItemMetaProps] = typings.antd.itemMod.default.asInstanceOf[js.Dynamic].selectDynamic("Meta").asInstanceOf[typings.react.mod.ComponentType[ItemMetaProps]]
+  def ItemMeta: ComponentType[ItemMetaProps] = typings.antd.listItemMod.default.asInstanceOf[js.Dynamic].selectDynamic("Meta").asInstanceOf[typings.react.mod.ComponentType[ItemMetaProps]]
   @scala.inline
   def Layout: ComponentType[LayoutProps] = js.constructorOf[typings.antd.layoutMod.default].asInstanceOf[typings.react.mod.ComponentType[LayoutProps]]
   @scala.inline
@@ -144,13 +186,11 @@ object antdComponents extends antdProps {
   @scala.inline
   def List[T]: ComponentType[ListProps[T]] = js.constructorOf[typings.antd.listMod.default[T]].asInstanceOf[typings.react.mod.ComponentType[ListProps[T]]]
   @scala.inline
-  def ListItem: ComponentType[js.Any] = js.constructorOf[typings.antd.listItemMod.default].asInstanceOf[typings.react.mod.ComponentType[js.Any]]
+  def ListItem: ComponentType[js.Any] = js.constructorOf[typings.antd.transferListItemMod.default].asInstanceOf[typings.react.mod.ComponentType[js.Any]]
   @scala.inline
   def LocaleProvider: ComponentType[LocaleProviderProps] = js.constructorOf[typings.antd.localeProviderMod.default].asInstanceOf[typings.react.mod.ComponentType[LocaleProviderProps]]
   @scala.inline
   def LocaleReceiver: ComponentType[LocaleReceiverProps] = js.constructorOf[typings.antd.localeReceiverMod.default].asInstanceOf[typings.react.mod.ComponentType[LocaleReceiverProps]]
-  @scala.inline
-  def Mention: ComponentType[MentionProps] = js.constructorOf[typings.antd.mentionMod.default].asInstanceOf[typings.react.mod.ComponentType[MentionProps]]
   @scala.inline
   def Mentions: ComponentType[MentionsProps] = js.constructorOf[typings.antd.mentionsMod.default].asInstanceOf[typings.react.mod.ComponentType[MentionsProps]]
   @scala.inline
@@ -166,17 +206,15 @@ object antdComponents extends antdProps {
   @scala.inline
   def MiniSelect: ComponentType[js.Any] = js.constructorOf[typings.antd.miniSelectMod.default].asInstanceOf[typings.react.mod.ComponentType[js.Any]]
   @scala.inline
-  def MiniSelectOption: ComponentType[MiniSelectOptionProps] = typings.antd.miniSelectMod.default.Option.asInstanceOf[typings.react.mod.ComponentType[MiniSelectOptionProps]]
+  def Modal: ComponentType[ModalProps] = js.constructorOf[typings.antd.modalModalMod.default].asInstanceOf[typings.react.mod.ComponentType[ModalProps]]
   @scala.inline
-  def Modal: ComponentType[ModalProps] = js.constructorOf[typings.antd.modalMod.default].asInstanceOf[typings.react.mod.ComponentType[ModalProps]]
+  def MonthPicker: ComponentType[MonthPickerProps] = typings.antd.datePickerMod.default.MonthPicker.asInstanceOf[typings.react.mod.ComponentType[MonthPickerProps]]
   @scala.inline
   def Number: ComponentType[NumberProps] = typings.antd.numberMod.default.asInstanceOf[typings.react.mod.ComponentType[NumberProps]]
   @scala.inline
   def Operation: ComponentType[OperationProps] = typings.antd.operationMod.default.asInstanceOf[typings.react.mod.ComponentType[OperationProps]]
   @scala.inline
-  def OptGroup: ComponentType[OptGroupProps] = typings.antd.selectMod.default.OptGroup.asInstanceOf[typings.react.mod.ComponentType[OptGroupProps]]
-  @scala.inline
-  def Option: ComponentType[OptionProps] = typings.antd.selectMod.default.Option.asInstanceOf[typings.react.mod.ComponentType[OptionProps]]
+  def Option: ComponentType[OptionProps] = typings.antd.mentionsMod.default.Option.asInstanceOf[typings.react.mod.ComponentType[OptionProps]]
   @scala.inline
   def PageHeader: ComponentType[PageHeaderProps] = typings.antd.pageHeaderMod.default.asInstanceOf[typings.react.mod.ComponentType[PageHeaderProps]]
   @scala.inline
@@ -194,9 +232,12 @@ object antdComponents extends antdProps {
   @scala.inline
   def Radio: ComponentType[RadioProps] = js.constructorOf[typings.antd.radioMod.default].asInstanceOf[typings.react.mod.ComponentType[RadioProps]]
   @scala.inline
-  def RadioButton: ComponentType[RadioButtonProps] = js.constructorOf[typings.antd.radioButtonMod.default].asInstanceOf[typings.react.mod.ComponentType[RadioButtonProps]]
+  def RadioButton: ComponentType[RadioButtonProps] = typings.antd.mod.Radio.asInstanceOf[js.Dynamic].selectDynamic("Button").asInstanceOf[typings.react.mod.ComponentType[RadioButtonProps]]
   @scala.inline
-  def RangePicker: ComponentType[RangePickerProps] = js.constructorOf[typings.antd.rangePickerMod.default].asInstanceOf[typings.react.mod.ComponentType[RangePickerProps]]
+  def RadioGroupContextProvider: ComponentType[RadioGroupContextProviderProps[RadioGroupContextProps | Null]] = typings.antd.radioContextMod.RadioGroupContextProvider.asInstanceOf[typings.react.mod.ComponentType[
+  RadioGroupContextProviderProps[typings.antd.radioInterfaceMod.RadioGroupContextProps | scala.Null]]]
+  @scala.inline
+  def RangePicker: ComponentType[RangePickerProps[Moment]] = typings.antd.datePickerMod.default.RangePicker.asInstanceOf[typings.react.mod.ComponentType[RangePickerProps[typings.moment.mod.Moment]]]
   @scala.inline
   def Rate: ComponentType[RateProps] = js.constructorOf[typings.antd.rateMod.default].asInstanceOf[typings.react.mod.ComponentType[RateProps]]
   @scala.inline
@@ -212,17 +253,11 @@ object antdComponents extends antdProps {
   @scala.inline
   def Search: ComponentType[SearchProps] = js.constructorOf[typings.antd.searchMod.default].asInstanceOf[typings.react.mod.ComponentType[SearchProps]]
   @scala.inline
-  def Select[T]: ComponentType[SelectProps[T]] = js.constructorOf[typings.antd.selectMod.default[T]].asInstanceOf[typings.react.mod.ComponentType[SelectProps[T]]]
-  @scala.inline
-  def SelectOptGroup: ComponentType[SelectOptGroupProps] = typings.antd.mod.Select.OptGroup.asInstanceOf[typings.react.mod.ComponentType[SelectOptGroupProps]]
-  @scala.inline
-  def SelectOption: ComponentType[SelectOptionProps] = typings.antd.mod.Select.Option.asInstanceOf[typings.react.mod.ComponentType[SelectOptionProps]]
-  @scala.inline
-  def SelectionBox: ComponentType[SelectionBoxProps] = js.constructorOf[typings.antd.selectionBoxMod.default].asInstanceOf[typings.react.mod.ComponentType[SelectionBoxProps]]
-  @scala.inline
-  def SelectionCheckboxAll[T]: ComponentType[SelectionCheckboxAllProps[T]] = js.constructorOf[typings.antd.selectionCheckboxAllMod.default[T]].asInstanceOf[typings.react.mod.ComponentType[SelectionCheckboxAllProps[T]]]
+  def Select[ValueType /* <: SelectValue */]: ComponentType[SelectProps[ValueType]] = js.constructorOf[typings.antd.selectMod.default[ValueType]].asInstanceOf[typings.react.mod.ComponentType[SelectProps[ValueType]]]
   @scala.inline
   def Sider: ComponentType[js.Object] = js.constructorOf[typings.antd.siderMod.default].asInstanceOf[typings.react.mod.ComponentType[js.Object]]
+  @scala.inline
+  def SizeContextProvider: ComponentType[SizeContextProviderProps] = typings.antd.sizeContextMod.SizeContextProvider.asInstanceOf[typings.react.mod.ComponentType[SizeContextProviderProps]]
   @scala.inline
   def Skeleton: ComponentType[SkeletonProps] = js.constructorOf[typings.antd.skeletonMod.default].asInstanceOf[typings.react.mod.ComponentType[SkeletonProps]]
   @scala.inline
@@ -230,7 +265,9 @@ object antdComponents extends antdProps {
   @scala.inline
   def Spin: ComponentType[SpinProps] = js.constructorOf[typings.antd.spinMod.default].asInstanceOf[typings.react.mod.ComponentType[SpinProps]]
   @scala.inline
-  def Steps: ComponentType[StepsProps] = js.constructorOf[typings.antd.stepsMod.default].asInstanceOf[typings.react.mod.ComponentType[StepsProps]]
+  def Statistic: ComponentType[StatisticProps[typings.antd.statisticStatisticMod.StatisticProps]] = typings.antd.statisticMod.default.asInstanceOf[typings.react.mod.ComponentType[StatisticProps[typings.antd.statisticStatisticMod.StatisticProps]]]
+  @scala.inline
+  def Steps: ComponentType[StepsProps] = js.constructorOf[typings.antd.libStepsMod.default].asInstanceOf[typings.react.mod.ComponentType[StepsProps]]
   @scala.inline
   def StepsStep: ComponentType[StepsStepProps] = typings.antd.mod.Steps.Step.asInstanceOf[typings.react.mod.ComponentType[StepsStepProps]]
   @scala.inline
@@ -242,7 +279,7 @@ object antdComponents extends antdProps {
   @scala.inline
   def TabPane: ComponentType[TabPaneProps] = typings.antd.tabsMod.default.TabPane.asInstanceOf[typings.react.mod.ComponentType[TabPaneProps]]
   @scala.inline
-  def Table[T]: ComponentType[TableProps[T]] = js.constructorOf[typings.antd.tableMod.default[T]].asInstanceOf[typings.react.mod.ComponentType[TableProps[T]]]
+  def Table[RecordType /* <: js.Object */]: ComponentType[TableProps[RecordType]] = typings.antd.tableMod.default.asInstanceOf[typings.react.mod.ComponentType[TableProps[RecordType]]]
   @scala.inline
   def Tabs: ComponentType[TabsProps] = js.constructorOf[typings.antd.tabsMod.default].asInstanceOf[typings.react.mod.ComponentType[TabsProps]]
   @scala.inline
@@ -254,7 +291,7 @@ object antdComponents extends antdProps {
   @scala.inline
   def TextArea: ComponentType[TextAreaProps] = js.constructorOf[typings.antd.textAreaMod.default].asInstanceOf[typings.react.mod.ComponentType[TextAreaProps]]
   @scala.inline
-  def TimePicker: ComponentType[TimePickerProps] = js.constructorOf[typings.antd.timePickerMod.default].asInstanceOf[typings.react.mod.ComponentType[TimePickerProps]]
+  def TimePicker: ComponentType[TimePickerProps] = typings.antd.datePickerMod.default.TimePicker.asInstanceOf[typings.react.mod.ComponentType[TimePickerProps]]
   @scala.inline
   def Timeline: ComponentType[TimelineProps] = js.constructorOf[typings.antd.timelineMod.default].asInstanceOf[typings.react.mod.ComponentType[TimelineProps]]
   @scala.inline
@@ -274,7 +311,9 @@ object antdComponents extends antdProps {
   @scala.inline
   def TreeNode: ComponentType[TreeNodeProps] = typings.antd.treeTreeMod.default.TreeNode.asInstanceOf[typings.react.mod.ComponentType[TreeNodeProps]]
   @scala.inline
-  def TreeSelect[T /* <: TreeNodeValue */]: ComponentType[TreeSelectProps[T]] = js.constructorOf[typings.antd.treeSelectMod.default[T]].asInstanceOf[typings.react.mod.ComponentType[TreeSelectProps[T]]]
+  def TreeSelect[T]: ComponentType[TreeSelectProps[T]] = js.constructorOf[typings.antd.treeSelectMod.default[T]].asInstanceOf[typings.react.mod.ComponentType[TreeSelectProps[T]]]
+  @scala.inline
+  def TreeSelectTreeNode: ComponentType[TreeSelectTreeNodeProps] = typings.antd.mod.TreeSelect.TreeNode.asInstanceOf[typings.react.mod.ComponentType[TreeSelectTreeNodeProps]]
   @scala.inline
   def TreeTreeNode: ComponentType[TreeTreeNodeProps] = typings.antd.mod.Tree.TreeNode.asInstanceOf[typings.react.mod.ComponentType[TreeTreeNodeProps]]
   @scala.inline
@@ -286,6 +325,8 @@ object antdComponents extends antdProps {
   @scala.inline
   def Wave: ComponentType[WaveProps] = js.constructorOf[typings.antd.waveMod.default].asInstanceOf[typings.react.mod.ComponentType[WaveProps]]
   @scala.inline
-  def WeekPicker: ComponentType[js.Any] = js.constructorOf[typings.antd.weekPickerMod.default].asInstanceOf[typings.react.mod.ComponentType[js.Any]]
+  def WeekPicker: ComponentType[WeekPickerProps] = typings.antd.datePickerMod.default.WeekPicker.asInstanceOf[typings.react.mod.ComponentType[WeekPickerProps]]
+  @scala.inline
+  def YearPicker: ComponentType[YearPickerProps] = typings.antd.datePickerMod.default.YearPicker.asInstanceOf[typings.react.mod.ComponentType[YearPickerProps]]
 }
 

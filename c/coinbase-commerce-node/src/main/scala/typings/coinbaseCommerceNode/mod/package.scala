@@ -22,12 +22,6 @@ package object mod {
     */
   type CreateCheckout = typings.coinbaseCommerceNode.mod.BaseCheckout with (typings.coinbaseCommerceNode.mod.FixedPrice | typings.coinbaseCommerceNode.mod.NoPrice)
   /**
-    * Crypto pricing object.
-    */
-  type CryptoPricing = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in coinbase-commerce-node.coinbase-commerce-node.CryptoName ]:? coinbase-commerce-node.coinbase-commerce-node.Price<coinbase-commerce-node.coinbase-commerce-node.CryptoCurrency>}
-    */ typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.CryptoPricing with js.Any
-  /**
     * Fiat currency.
     */
   /* Rewritten from type alias, can be one of: 

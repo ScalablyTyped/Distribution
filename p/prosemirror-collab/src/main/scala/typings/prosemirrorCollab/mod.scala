@@ -16,6 +16,6 @@ object mod extends js.Object {
   def collab(config: AnonClientID): Plugin[_, _] = js.native
   def getVersion(state: EditorState[_]): Double = js.native
   def receiveTransaction[S /* <: Schema[_, _] */](state: EditorState[S], steps: js.Array[Step[S]], clientIDs: js.Array[Double | String]): Transaction[S] = js.native
-  def sendableSteps[S /* <: Schema[_, _] */](state: EditorState[S]): js.UndefOr[AnonClientIDOrigins[S] | Null] = js.native
+  def sendableSteps[S /* <: Schema[_, _] */](state: EditorState[S]): js.UndefOr[AnonOrigins[S] | Null] = js.native
 }
 

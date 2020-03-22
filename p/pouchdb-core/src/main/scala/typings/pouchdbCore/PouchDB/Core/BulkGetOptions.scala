@@ -1,6 +1,6 @@
 package typings.pouchdbCore.PouchDB.Core
 
-import typings.pouchdbCore.AnonIdRev
+import typings.pouchdbCore.AnonRev
 import typings.std.Request
 import typings.std.RequestInit
 import scala.scalajs.js
@@ -10,14 +10,14 @@ import scala.scalajs.js.annotation._
 trait BulkGetOptions extends Options {
   var attachments: js.UndefOr[Boolean] = js.undefined
   var binary: js.UndefOr[Boolean] = js.undefined
-  var docs: js.Array[AnonIdRev]
+  var docs: js.Array[AnonRev]
   var revs: js.UndefOr[Boolean] = js.undefined
 }
 
 object BulkGetOptions {
   @scala.inline
   def apply(
-    docs: js.Array[AnonIdRev],
+    docs: js.Array[AnonRev],
     attachments: js.UndefOr[Boolean] = js.undefined,
     binary: js.UndefOr[Boolean] = js.undefined,
     fetch: (/* url */ String | Request, /* opts */ js.UndefOr[RequestInit]) => js.Promise[typings.std.Response] = null,

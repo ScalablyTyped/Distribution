@@ -1,6 +1,6 @@
 package typings.chartist.mod
 
-import typings.chartist.AnonXY
+import typings.chartist.AnonY
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +19,7 @@ object IChartistAutoScaleAxis {
   def apply(
     high: Int | Double = null,
     labelInterpolationFnc: js.Function = null,
-    labelOffset: AnonXY = null,
+    labelOffset: AnonY = null,
     low: Int | Double = null,
     offset: Int | Double = null,
     onlyInteger: js.UndefOr[Boolean] = js.undefined,

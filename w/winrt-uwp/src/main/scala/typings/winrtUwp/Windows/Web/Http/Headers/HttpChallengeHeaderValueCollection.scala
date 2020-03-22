@@ -2,7 +2,7 @@ package typings.winrtUwp.Windows.Web.Http.Headers
 
 import typings.std.Array
 import typings.winrtUwp.AnonIndex
-import typings.winrtUwp.AnonItemsReturnValueHttpChallengeHeaderValue
+import typings.winrtUwp.AnonItemsHttpChallengeHeaderValue
 import typings.winrtUwp.Windows.Foundation.Collections.IIterator
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import scala.scalajs.js
@@ -37,7 +37,7 @@ abstract class HttpChallengeHeaderValueCollection () extends Array[HttpChallenge
     * Retrieves the HttpChallengeHeaderValue items that start at the specified index in the collection.
     * @param startIndex The zero-based index of the start of the HttpChallengeHeaderValue items in the HttpChallengeHeaderValueCollection .
     */
-  def getMany(startIndex: Double): AnonItemsReturnValueHttpChallengeHeaderValue = js.native
+  def getMany(startIndex: Double): AnonItemsHttpChallengeHeaderValue = js.native
   /**
     * Returns an immutable view of the HttpChallengeHeaderValueCollection .
     * @return The view of the HttpChallengeHeaderValueCollection .

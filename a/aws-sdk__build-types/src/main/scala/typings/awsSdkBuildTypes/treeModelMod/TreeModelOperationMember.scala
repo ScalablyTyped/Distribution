@@ -15,6 +15,7 @@ object TreeModelOperationMember {
   @scala.inline
   def apply(
     shape: TreeModelStructure,
+    documentation: String = null,
     flattened: js.UndefOr[Boolean] = js.undefined,
     location: MemberLocation = null,
     locationName: String = null,
@@ -26,6 +27,7 @@ object TreeModelOperationMember {
     xmlNamespace: XmlNamespace = null
   ): TreeModelOperationMember = {
     val __obj = js.Dynamic.literal(shape = shape.asInstanceOf[js.Any])
+    if (documentation != null) __obj.updateDynamic("documentation")(documentation.asInstanceOf[js.Any])
     if (!js.isUndefined(flattened)) __obj.updateDynamic("flattened")(flattened.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (locationName != null) __obj.updateDynamic("locationName")(locationName.asInstanceOf[js.Any])

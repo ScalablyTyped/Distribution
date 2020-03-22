@@ -14,12 +14,9 @@ trait DescribeStateMachineOutput extends js.Object {
     * The Amazon States Language definition of the state machine. See Amazon States Language.
     */
   var definition: Definition = js.native
-  /**
-    * 
-    */
   var loggingConfiguration: js.UndefOr[LoggingConfiguration] = js.native
   /**
-    * The name of the state machine. A name must not contain:   white space   brackets &lt; &gt; { } [ ]    wildcard characters ? *    special characters " # % \ ^ | ~ ` $ &amp; , ; : /    control characters (U+0000-001F, U+007F-009F)  
+    * The name of the state machine. A name must not contain:   white space   brackets &lt; &gt; { } [ ]    wildcard characters ? *    special characters " # % \ ^ | ~ ` $ &amp; , ; : /    control characters (U+0000-001F, U+007F-009F)   To enable logging with CloudWatch Logs, the name should only contain 0-9, A-Z, a-z, - and _.
     */
   var name: Name = js.native
   /**
@@ -35,7 +32,7 @@ trait DescribeStateMachineOutput extends js.Object {
     */
   var status: js.UndefOr[StateMachineStatus] = js.native
   /**
-    * 
+    * The type of the state machine (STANDARD or EXPRESS).
     */
   var `type`: StateMachineType = js.native
 }

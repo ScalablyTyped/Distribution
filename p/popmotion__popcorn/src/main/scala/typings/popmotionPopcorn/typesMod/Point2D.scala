@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Point2D extends js.Object {
+trait Point2D extends Point {
   var x: Double
   var y: Double
 }

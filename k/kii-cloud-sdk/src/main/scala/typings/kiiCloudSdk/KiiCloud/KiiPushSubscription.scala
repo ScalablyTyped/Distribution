@@ -1,9 +1,9 @@
 package typings.kiiCloudSdk.KiiCloud
 
-import typings.kiiCloudSdk.AnonErrorFailureIsSubscribed
-import typings.kiiCloudSdk.AnonErrorFailureIsSubscribedSubscription
-import typings.kiiCloudSdk.AnonErrorFailureSubscription
-import typings.kiiCloudSdk.AnonErrorFailureSubscriptionSuccess
+import typings.kiiCloudSdk.Anon22
+import typings.kiiCloudSdk.Anon23
+import typings.kiiCloudSdk.Anon24
+import typings.kiiCloudSdk.Anon25
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -76,9 +76,9 @@ class KiiPushSubscription () extends js.Object {
     *     );
     */
   def isSubscribed(target: KiiBucket): js.Promise[js.Tuple3[KiiPushSubscription, KiiBucket, Boolean]] = js.native
-  def isSubscribed(target: KiiBucket, callbacks: AnonErrorFailureIsSubscribed): js.Promise[js.Tuple3[KiiPushSubscription, KiiBucket, Boolean]] = js.native
+  def isSubscribed(target: KiiBucket, callbacks: Anon24): js.Promise[js.Tuple3[KiiPushSubscription, KiiBucket, Boolean]] = js.native
   def isSubscribed(target: KiiTopic): js.Promise[js.Tuple3[KiiPushSubscription, KiiTopic, Boolean]] = js.native
-  def isSubscribed(target: KiiTopic, callbacks: AnonErrorFailureIsSubscribedSubscription): js.Promise[js.Tuple3[KiiPushSubscription, KiiTopic, Boolean]] = js.native
+  def isSubscribed(target: KiiTopic, callbacks: Anon25): js.Promise[js.Tuple3[KiiPushSubscription, KiiTopic, Boolean]] = js.native
   /**
     * Subscribe to bucket or topic.
     *
@@ -129,9 +129,9 @@ class KiiPushSubscription () extends js.Object {
     *     );
     */
   def subscribe(target: KiiBucket): js.Promise[js.Tuple2[KiiPushSubscription, KiiBucket]] = js.native
-  def subscribe(target: KiiBucket, callbacks: AnonErrorFailureSubscription): js.Promise[js.Tuple2[KiiPushSubscription, KiiBucket]] = js.native
+  def subscribe(target: KiiBucket, callbacks: Anon22): js.Promise[js.Tuple2[KiiPushSubscription, KiiBucket]] = js.native
   def subscribe(target: KiiTopic): js.Promise[js.Tuple2[KiiPushSubscription, KiiTopic]] = js.native
-  def subscribe(target: KiiTopic, callbacks: AnonErrorFailureSubscriptionSuccess): js.Promise[js.Tuple2[KiiPushSubscription, KiiTopic]] = js.native
+  def subscribe(target: KiiTopic, callbacks: Anon23): js.Promise[js.Tuple2[KiiPushSubscription, KiiTopic]] = js.native
   /**
     * Unsubscribe to bucket or topic.
     *
@@ -182,8 +182,8 @@ class KiiPushSubscription () extends js.Object {
     *     );
     */
   def unsubscribe(target: KiiBucket): js.Promise[js.Tuple2[KiiPushSubscription, KiiBucket]] = js.native
-  def unsubscribe(target: KiiBucket, callbacks: AnonErrorFailureSubscription): js.Promise[js.Tuple2[KiiPushSubscription, KiiBucket]] = js.native
+  def unsubscribe(target: KiiBucket, callbacks: Anon22): js.Promise[js.Tuple2[KiiPushSubscription, KiiBucket]] = js.native
   def unsubscribe(target: KiiTopic): js.Promise[js.Tuple2[KiiPushSubscription, KiiTopic]] = js.native
-  def unsubscribe(target: KiiTopic, callbacks: AnonErrorFailureSubscriptionSuccess): js.Promise[js.Tuple2[KiiPushSubscription, KiiTopic]] = js.native
+  def unsubscribe(target: KiiTopic, callbacks: Anon23): js.Promise[js.Tuple2[KiiPushSubscription, KiiTopic]] = js.native
 }
 

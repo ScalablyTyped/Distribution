@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@sindresorhus/is" : "0.7.0"
+      "@sindresorhus/is" : "0.14.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@sindresorhus/is" : "0.7.0"
+      "@sindresorhus/is" : "0.14.0"
     }
   ],
   "compile-devDependencies" : [

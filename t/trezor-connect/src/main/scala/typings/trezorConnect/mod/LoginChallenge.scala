@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait LoginChallenge extends js.Object {
+trait LoginChallenge extends RequestLoginParams {
   var challengeHidden: String
   var challengeVisual: String
 }

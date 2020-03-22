@@ -1,6 +1,5 @@
 package typings.ionicReact.ionIconMod
 
-import typings.ionicReact.AnonIos
 import typings.ionicReact.ionicReactStrings.ios
 import typings.ionicReact.ionicReactStrings.md
 import scala.scalajs.js
@@ -11,10 +10,10 @@ trait IonIconProps extends js.Object {
   var ariaLabel: js.UndefOr[String] = js.undefined
   var color: js.UndefOr[String] = js.undefined
   var flipRtl: js.UndefOr[Boolean] = js.undefined
-  var icon: js.UndefOr[AnonIos | String] = js.undefined
-  var ios: js.UndefOr[AnonIos | String] = js.undefined
+  var icon: js.UndefOr[String] = js.undefined
+  var ios: js.UndefOr[String] = js.undefined
   var `lazy`: js.UndefOr[Boolean] = js.undefined
-  var md: js.UndefOr[AnonIos | String] = js.undefined
+  var md: js.UndefOr[String] = js.undefined
   var mode: js.UndefOr[ios | md] = js.undefined
   var name: js.UndefOr[String] = js.undefined
   var size: js.UndefOr[String] = js.undefined
@@ -27,10 +26,10 @@ object IonIconProps {
     ariaLabel: String = null,
     color: String = null,
     flipRtl: js.UndefOr[Boolean] = js.undefined,
-    icon: AnonIos | String = null,
-    ios: AnonIos | String = null,
+    icon: String = null,
+    ios: String = null,
     `lazy`: js.UndefOr[Boolean] = js.undefined,
-    md: AnonIos | String = null,
+    md: String = null,
     mode: ios | md = null,
     name: String = null,
     size: String = null,

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "rc-util" : "4.11.2"
+      "rc-util" : "4.20.0"
     }
   ],
   "test-dependencies" : [
     {
-      "rc-util" : "4.11.2"
+      "rc-util" : "4.20.0"
     }
   ],
   "compile-devDependencies" : [

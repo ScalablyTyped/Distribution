@@ -12,8 +12,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class SpriteMaterial () extends Material {
   def this(parameters: SpriteMaterialParameters) = this()
+  var alphaMap: Texture | Null = js.native
   var color: Color = js.native
-  var isSpriteMaterial: `true` = js.native
+  val isSpriteMaterial: `true` = js.native
   var map: Texture | Null = js.native
   var rotation: Double = js.native
   var sizeAttenuation: Boolean = js.native

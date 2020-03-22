@@ -1,25 +1,28 @@
 package typings.reactAdal
 
-import typings.reactAdal.reactAdalNumbers.`0`
-import typings.reactAdal.reactAdalNumbers.`1`
-import typings.reactAdal.reactAdalNumbers.`2`
-import typings.reactAdal.reactAdalNumbers.`3`
+import typings.reactAdal.reactAdalStrings.ERRORColon
+import typings.reactAdal.reactAdalStrings.INFOColon
+import typings.reactAdal.reactAdalStrings.VERBOSEColon
+import typings.reactAdal.reactAdalStrings.WARNINGColon
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon0 extends js.Object {
-  var ERROR: `0`
-  var INFO: `2`
-  var VERBOSE: `3`
-  var WARN: `1`
+  var `0`: ERRORColon
+  var `1`: WARNINGColon
+  var `2`: INFOColon
+  var `3`: VERBOSEColon
 }
 
 object Anon0 {
   @scala.inline
-  def apply(ERROR: `0`, INFO: `2`, VERBOSE: `3`, WARN: `1`): Anon0 = {
-    val __obj = js.Dynamic.literal(ERROR = ERROR.asInstanceOf[js.Any], INFO = INFO.asInstanceOf[js.Any], VERBOSE = VERBOSE.asInstanceOf[js.Any], WARN = WARN.asInstanceOf[js.Any])
-  
+  def apply(`0`: ERRORColon, `1`: WARNINGColon, `2`: INFOColon, `3`: VERBOSEColon): Anon0 = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("0")(`0`.asInstanceOf[js.Any])
+    __obj.updateDynamic("1")(`1`.asInstanceOf[js.Any])
+    __obj.updateDynamic("2")(`2`.asInstanceOf[js.Any])
+    __obj.updateDynamic("3")(`3`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon0]
   }
 }

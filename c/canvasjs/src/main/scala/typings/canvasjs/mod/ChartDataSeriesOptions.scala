@@ -1,6 +1,6 @@
 package typings.canvasjs.mod
 
-import typings.canvasjs.AnonChartDataPoint
+import typings.canvasjs.AnonDataSeries
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -190,7 +190,7 @@ object ChartDataSeriesOptions {
     indexLabelFontSize: Int | Double = null,
     indexLabelFontStyle: String = null,
     indexLabelFontWeight: String = null,
-    indexLabelFormatter: /* e */ AnonChartDataPoint => String = null,
+    indexLabelFormatter: /* e */ AnonDataSeries => String = null,
     indexLabelLineColor: String = null,
     indexLabelLineDashType: DashType = null,
     indexLabelLineThickness: Int | Double = null,

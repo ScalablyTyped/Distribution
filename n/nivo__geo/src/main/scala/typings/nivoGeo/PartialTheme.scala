@@ -1,37 +1,37 @@
 package typings.nivoGeo
 
-import typings.nivoCore.PartialcontainerPartialCSSPropertiesbasicPartialCS
-import typings.nivoCore.PartialdomainPartiallinePartialCSSPropertiesticksP
-import typings.nivoCore.PartiallineColorstringlineStrokeWidthnumbertextCol
-import typings.nivoCore.PartiallinePartialCSSProperties
-import typings.nivoCore.PartialtextPartialCSSProperties
+import typings.nivoCore.PartialcontainerPartialCS
+import typings.nivoCore.PartialdomainPartiallineP
+import typings.nivoCore.PartiallineColorstringlin
+import typings.nivoCore.PartiallinePartialCSSProp
+import typings.nivoCore.PartialtextPartialCSSProp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@nivo/core.@nivo/core.Theme> */
 trait PartialTheme extends js.Object {
-  var axis: js.UndefOr[PartialdomainPartiallinePartialCSSPropertiesticksP] = js.undefined
+  var axis: js.UndefOr[PartialdomainPartiallineP] = js.undefined
   var background: js.UndefOr[String] = js.undefined
-  var dots: js.UndefOr[PartialtextPartialCSSProperties] = js.undefined
-  var grid: js.UndefOr[PartiallinePartialCSSProperties] = js.undefined
-  var labels: js.UndefOr[PartialtextPartialCSSProperties] = js.undefined
-  var legends: js.UndefOr[PartialtextPartialCSSProperties] = js.undefined
-  var markers: js.UndefOr[PartiallineColorstringlineStrokeWidthnumbertextCol] = js.undefined
-  var tooltip: js.UndefOr[PartialcontainerPartialCSSPropertiesbasicPartialCS] = js.undefined
+  var dots: js.UndefOr[PartialtextPartialCSSProp] = js.undefined
+  var grid: js.UndefOr[PartiallinePartialCSSProp] = js.undefined
+  var labels: js.UndefOr[PartialtextPartialCSSProp] = js.undefined
+  var legends: js.UndefOr[PartialtextPartialCSSProp] = js.undefined
+  var markers: js.UndefOr[PartiallineColorstringlin] = js.undefined
+  var tooltip: js.UndefOr[PartialcontainerPartialCS] = js.undefined
 }
 
 object PartialTheme {
   @scala.inline
   def apply(
-    axis: PartialdomainPartiallinePartialCSSPropertiesticksP = null,
+    axis: PartialdomainPartiallineP = null,
     background: String = null,
-    dots: PartialtextPartialCSSProperties = null,
-    grid: PartiallinePartialCSSProperties = null,
-    labels: PartialtextPartialCSSProperties = null,
-    legends: PartialtextPartialCSSProperties = null,
-    markers: PartiallineColorstringlineStrokeWidthnumbertextCol = null,
-    tooltip: PartialcontainerPartialCSSPropertiesbasicPartialCS = null
+    dots: PartialtextPartialCSSProp = null,
+    grid: PartiallinePartialCSSProp = null,
+    labels: PartialtextPartialCSSProp = null,
+    legends: PartialtextPartialCSSProp = null,
+    markers: PartiallineColorstringlin = null,
+    tooltip: PartialcontainerPartialCS = null
   ): PartialTheme = {
     val __obj = js.Dynamic.literal()
     if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])

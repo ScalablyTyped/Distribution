@@ -24,6 +24,23 @@ trait FlowBaseAnnotation extends js.Object
 
 object FlowBaseAnnotation {
   @scala.inline
+  def MixedTypeAnnotation_(
+    end: Double,
+    loc: SourceLocation,
+    start: Double,
+    `type`: MixedTypeAnnotation,
+    innerComments: js.Array[Comment] = null,
+    leadingComments: js.Array[Comment] = null,
+    trailingComments: js.Array[Comment] = null
+  ): FlowBaseAnnotation = {
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
+    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
+    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FlowBaseAnnotation]
+  }
+  @scala.inline
   def NumberTypeAnnotation_(
     end: Double,
     loc: SourceLocation,
@@ -41,11 +58,28 @@ object FlowBaseAnnotation {
     __obj.asInstanceOf[FlowBaseAnnotation]
   }
   @scala.inline
-  def MixedTypeAnnotation_(
+  def StringTypeAnnotation_(
     end: Double,
     loc: SourceLocation,
     start: Double,
-    `type`: MixedTypeAnnotation,
+    `type`: StringTypeAnnotation,
+    innerComments: js.Array[Comment] = null,
+    leadingComments: js.Array[Comment] = null,
+    trailingComments: js.Array[Comment] = null
+  ): FlowBaseAnnotation = {
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
+    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
+    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FlowBaseAnnotation]
+  }
+  @scala.inline
+  def AnyTypeAnnotation_(
+    end: Double,
+    loc: SourceLocation,
+    start: Double,
+    `type`: AnyTypeAnnotation,
     innerComments: js.Array[Comment] = null,
     leadingComments: js.Array[Comment] = null,
     trailingComments: js.Array[Comment] = null
@@ -80,40 +114,6 @@ object FlowBaseAnnotation {
     loc: SourceLocation,
     start: Double,
     `type`: VoidTypeAnnotation,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    trailingComments: js.Array[Comment] = null
-  ): FlowBaseAnnotation = {
-    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FlowBaseAnnotation]
-  }
-  @scala.inline
-  def AnyTypeAnnotation_(
-    end: Double,
-    loc: SourceLocation,
-    start: Double,
-    `type`: AnyTypeAnnotation,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    trailingComments: js.Array[Comment] = null
-  ): FlowBaseAnnotation = {
-    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FlowBaseAnnotation]
-  }
-  @scala.inline
-  def StringTypeAnnotation_(
-    end: Double,
-    loc: SourceLocation,
-    start: Double,
-    `type`: StringTypeAnnotation,
     innerComments: js.Array[Comment] = null,
     leadingComments: js.Array[Comment] = null,
     trailingComments: js.Array[Comment] = null

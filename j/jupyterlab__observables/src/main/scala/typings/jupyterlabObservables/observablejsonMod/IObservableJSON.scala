@@ -1,17 +1,18 @@
 package typings.jupyterlabObservables.observablejsonMod
 
 import typings.jupyterlabObservables.observablemapMod.IObservableMap
-import typings.phosphorCoreutils.jsonMod.JSONObject
-import typings.phosphorCoreutils.jsonMod.JSONValue
+import typings.luminoCoreutils.jsonMod.PartialJSONObject
+import typings.luminoCoreutils.jsonMod.ReadonlyPartialJSONValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IObservableJSON extends IObservableMap[JSONValue] {
+trait IObservableJSON
+  extends IObservableMap[js.UndefOr[ReadonlyPartialJSONValue]] {
   /**
     * Serialize the model to JSON.
     */
-  def toJSON(): JSONObject
+  def toJSON(): PartialJSONObject
 }
 
 @JSImport("@jupyterlab/observables/lib/observablejson", "IObservableJSON")
@@ -20,6 +21,6 @@ object IObservableJSON extends js.Object {
   /**
     * A type alias for observable JSON changed args.
     */
-  type IChangedArgs = typings.jupyterlabObservables.observablemapMod.IObservableMap.IChangedArgs[JSONValue]
+  type IChangedArgs = typings.jupyterlabObservables.observablemapMod.IObservableMap.IChangedArgs[ReadonlyPartialJSONValue]
 }
 

@@ -3,12 +3,12 @@ package typings.jupyterlabApputils.mainareawidgetMod
 import typings.jupyterlabApputils.mainareawidgetMod.MainAreaWidget.IOptions
 import typings.jupyterlabApputils.printingMod.Printing.IPrintable
 import typings.jupyterlabApputils.toolbarMod.Toolbar
-import typings.phosphorAlgorithm.iterMod.IIterator
-import typings.phosphorMessaging.mod.Message
-import typings.phosphorWidgets.mod.Widget
-import typings.phosphorWidgets.widgetMod.Widget.ChildMessage
-import typings.phosphorWidgets.widgetMod.Widget.Flag
-import typings.phosphorWidgets.widgetMod.Widget.ResizeMessage
+import typings.luminoAlgorithm.iterMod.IIterator
+import typings.luminoMessaging.mod.Message
+import typings.luminoWidgets.mod.Widget
+import typings.luminoWidgets.widgetMod.Widget.ChildMessage
+import typings.luminoWidgets.widgetMod.Widget.Flag
+import typings.luminoWidgets.widgetMod.Widget.ResizeMessage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,22 +43,6 @@ class MainAreaWidget_[T /* <: Widget */] protected ()
     */
   var _updateTitle: js.Any = js.native
   /**
-    * The content hosted by the widget.
-    */
-  val content: T = js.native
-  /**
-    * Whether the content widget or an error is revealed.
-    */
-  val isRevealed: Boolean = js.native
-  /**
-    * A promise that resolves when the widget is revealed.
-    */
-  val revealed: js.Promise[Unit] = js.native
-  /**
-    * The toolbar hosted by the widget.
-    */
-  val toolbar: Toolbar[Widget] = js.native
-  /**
     * Post an `'activate-request'` message to the widget.
     *
     * #### Notes
@@ -89,7 +73,7 @@ class MainAreaWidget_[T /* <: Widget */] protected ()
     * If a layout is not installed, the returned iterator will be empty.
     */
   /* InferMemberOverrides */
-  override def children(): IIterator[typings.phosphorWidgets.widgetMod.Widget] = js.native
+  override def children(): IIterator[typings.luminoWidgets.widgetMod.Widget] = js.native
   /**
     * Clear the given widget flag.
     *
@@ -114,7 +98,11 @@ class MainAreaWidget_[T /* <: Widget */] protected ()
     * @returns `true` if the widget is a descendant, `false` otherwise.
     */
   /* InferMemberOverrides */
-  override def contains(widget: typings.phosphorWidgets.widgetMod.Widget): Boolean = js.native
+  override def contains(widget: typings.luminoWidgets.widgetMod.Widget): Boolean = js.native
+  /**
+    * The content hosted by the widget.
+    */
+  def content(): T = js.native
   /**
     * Dispose of the resources held by the object.
     *
@@ -126,6 +114,7 @@ class MainAreaWidget_[T /* <: Widget */] protected ()
     * It is undefined behavior to use any functionality of the object
     * after it has been disposed unless otherwise explicitly noted.
     */
+  /* CompleteClass */
   /* InferMemberOverrides */
   override def dispose(): Unit = js.native
   /**
@@ -155,6 +144,10 @@ class MainAreaWidget_[T /* <: Widget */] protected ()
     */
   /* InferMemberOverrides */
   override def hide(): Unit = js.native
+  /**
+    * Whether the content widget or an error is revealed.
+    */
+  def isRevealed(): Boolean = js.native
   /**
     * Invoke the message processing routine of the widget's layout.
     *
@@ -292,6 +285,7 @@ class MainAreaWidget_[T /* <: Widget */] protected ()
     *
     * @param msg - The message to be processed.
     */
+  /* CompleteClass */
   /* InferMemberOverrides */
   override def processMessage(msg: Message): Unit = js.native
   /**
@@ -306,6 +300,10 @@ class MainAreaWidget_[T /* <: Widget */] protected ()
     */
   /* InferMemberOverrides */
   override def removeClass(name: String): Unit = js.native
+  /**
+    * A promise that resolves when the widget is revealed.
+    */
+  def revealed(): js.Promise[Unit] = js.native
   /**
     * Set the given widget flag.
     *
@@ -360,6 +358,10 @@ class MainAreaWidget_[T /* <: Widget */] protected ()
   override def toggleClass(name: String): Boolean = js.native
   /* InferMemberOverrides */
   override def toggleClass(name: String, force: Boolean): Boolean = js.native
+  /**
+    * The toolbar hosted by the widget.
+    */
+  def toolbar(): Toolbar[Widget] = js.native
   /**
     * Post an `'update-request'` message to the widget.
     *

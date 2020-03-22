@@ -2,9 +2,9 @@ package typings.reactBigCalendar.dragAndDropMod
 
 import typings.react.mod.DragEvent
 import typings.react.mod.HTMLAttributes
-import typings.reactBigCalendar.AnonActionDOWN
 import typings.reactBigCalendar.AnonAllDay
 import typings.reactBigCalendar.AnonAllDayEnd
+import typings.reactBigCalendar.AnonDirection
 import typings.reactBigCalendar.mod.Components_
 import typings.reactBigCalendar.reactBigCalendarBooleans.`false`
 import typings.reactBigCalendar.reactBigCalendarBooleans.`true`
@@ -22,7 +22,7 @@ trait withDragAndDropProps[TEvent /* <: js.Object */] extends js.Object {
   var draggableAccessor: js.UndefOr[String | (js.Function1[/* event */ TEvent, Boolean])] = js.undefined
   var elementProps: js.UndefOr[HTMLAttributes[HTMLElement]] = js.undefined
   var onDragOver: js.UndefOr[js.Function1[/* event */ DragEvent[Element], Unit]] = js.undefined
-  var onDragStart: js.UndefOr[js.Function1[/* args */ AnonActionDOWN[TEvent], Unit]] = js.undefined
+  var onDragStart: js.UndefOr[js.Function1[/* args */ AnonDirection[TEvent], Unit]] = js.undefined
   var onDropFromOutside: js.UndefOr[js.Function1[/* args */ AnonAllDayEnd, Unit]] = js.undefined
   var onEventDrop: js.UndefOr[js.Function1[/* args */ AnonAllDay[TEvent], Unit]] = js.undefined
   var onEventResize: js.UndefOr[js.Function1[/* args */ AnonAllDay[TEvent], Unit]] = js.undefined
@@ -40,7 +40,7 @@ object withDragAndDropProps {
     draggableAccessor: String | (js.Function1[/* event */ TEvent, Boolean]) = null,
     elementProps: HTMLAttributes[HTMLElement] = null,
     onDragOver: /* event */ DragEvent[Element] => Unit = null,
-    onDragStart: /* args */ AnonActionDOWN[TEvent] => Unit = null,
+    onDragStart: /* args */ AnonDirection[TEvent] => Unit = null,
     onDropFromOutside: /* args */ AnonAllDayEnd => Unit = null,
     onEventDrop: /* args */ AnonAllDay[TEvent] => Unit = null,
     onEventResize: /* args */ AnonAllDay[TEvent] => Unit = null,

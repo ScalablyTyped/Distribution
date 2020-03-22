@@ -1,13 +1,13 @@
 package typings.prettier.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Partial
+import typings.prettier.PartialRequiredOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Plugin extends js.Object {
-  var defaultOptions: js.UndefOr[Partial[RequiredOptions]] = js.undefined
+  var defaultOptions: js.UndefOr[PartialRequiredOptions] = js.undefined
   var languages: js.UndefOr[js.Array[SupportLanguage]] = js.undefined
   var options: js.UndefOr[js.Array[SupportOption]] = js.undefined
   var parsers: js.UndefOr[StringDictionary[Parser]] = js.undefined
@@ -17,7 +17,7 @@ trait Plugin extends js.Object {
 object Plugin {
   @scala.inline
   def apply(
-    defaultOptions: Partial[RequiredOptions] = null,
+    defaultOptions: PartialRequiredOptions = null,
     languages: js.Array[SupportLanguage] = null,
     options: js.Array[SupportOption] = null,
     parsers: StringDictionary[Parser] = null,

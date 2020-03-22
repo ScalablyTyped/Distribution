@@ -215,20 +215,20 @@ trait Room extends js.Object {
     * This method works for any room in the world even if you have no access to it.
     */
   def getTerrain(): RoomTerrain = js.native
-  def lookAt(target: AnonPos): js.Array[LookAtResult[LookConstant]] = js.native
+  def lookAt(target: AnonPos): js.Array[LookAtResultLookConstant] = js.native
   /**
     * Get the list of objects at the specified room position.
     * @param target Can be a RoomPosition object or any object containing RoomPosition.
     * @returns An array with objects at the specified position
     */
-  def lookAt(target: RoomPosition): js.Array[LookAtResult[LookConstant]] = js.native
+  def lookAt(target: RoomPosition): js.Array[LookAtResultLookConstant] = js.native
   /**
     * Get the list of objects at the specified room position.
     * @param x The X position.
     * @param y The Y position.
     * @returns An array with objects at the specified position
     */
-  def lookAt(x: Double, y: Double): js.Array[LookAtResult[LookConstant]] = js.native
+  def lookAt(x: Double, y: Double): js.Array[LookAtResultLookConstant] = js.native
   /**
     * Get the list of objects at the specified room area. This method is more CPU efficient in comparison to multiple lookAt calls.
     * @param top The top Y boundary of the area.
@@ -251,7 +251,7 @@ trait Room extends js.Object {
     * @returns An object with all the objects in the specified area
     */
   @JSName("lookAtArea")
-  def lookAtArea_true(top: Double, left: Double, bottom: Double, right: Double, asArray: `true`): js.Array[LookAtResultWithPos[LookConstant]] = js.native
+  def lookAtArea_true(top: Double, left: Double, bottom: Double, right: Double, asArray: `true`): js.Array[LookAtResultWithPosLookCo] = js.native
   def lookForAtArea(
     `type`: constructionSite,
     top: Double,

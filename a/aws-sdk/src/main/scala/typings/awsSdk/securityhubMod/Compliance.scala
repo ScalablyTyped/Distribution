@@ -11,7 +11,7 @@ trait Compliance extends js.Object {
     */
   var RelatedRequirements: js.UndefOr[RelatedRequirementsList] = js.native
   /**
-    * The result of a compliance check.
+    * The result of a standards check.
     */
   var Status: js.UndefOr[ComplianceStatus] = js.native
 }

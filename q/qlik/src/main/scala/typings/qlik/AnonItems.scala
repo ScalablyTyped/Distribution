@@ -2,7 +2,7 @@ package typings.qlik
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.qlik.mod.CustomProperty
-import typings.qlik.qlikStrings.measures
+import typings.qlik.qlikStrings.dimensions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,13 +12,13 @@ trait AnonItems extends js.Object {
   var max: js.UndefOr[Double] = js.undefined
   var min: js.UndefOr[Double] = js.undefined
   var ref: js.UndefOr[String] = js.undefined
-  var uses: measures
+  var uses: dimensions
 }
 
 object AnonItems {
   @scala.inline
   def apply(
-    uses: measures,
+    uses: dimensions,
     items: StringDictionary[CustomProperty] = null,
     max: Int | Double = null,
     min: Int | Double = null,

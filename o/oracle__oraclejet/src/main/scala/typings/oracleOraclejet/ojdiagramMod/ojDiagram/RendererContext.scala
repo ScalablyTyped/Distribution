@@ -1,6 +1,6 @@
 package typings.oracleOraclejet.ojdiagramMod.ojDiagram
 
-import typings.oracleOraclejet.AnonElement
+import typings.oracleOraclejet.AnonElementHeight
 import typings.oracleOraclejet.AnonExpanded
 import typings.std.Element
 import scala.scalajs.js
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 // tslint:disable-next-line interface-over-type-literal
 trait RendererContext[K1, D1] extends js.Object {
   var componentElement: Element
-  var content: AnonElement
+  var content: AnonElementHeight
   var data: js.Object
   var id: K1
   var itemData: D1
@@ -27,7 +27,7 @@ object RendererContext {
   @scala.inline
   def apply[K1, D1](
     componentElement: Element,
-    content: AnonElement,
+    content: AnonElementHeight,
     data: js.Object,
     id: K1,
     itemData: D1,

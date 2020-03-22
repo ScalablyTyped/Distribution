@@ -24,13 +24,15 @@ trait Cascader
   def generateFilteredOptions(prefixCls: js.UndefOr[scala.Nothing], renderEmpty: RenderEmptyHandler): js.Array[CascaderOptionType] = js.native
   def generateFilteredOptions(prefixCls: String, renderEmpty: RenderEmptyHandler): js.Array[CascaderOptionType] = js.native
   def getLabel(): js.Any = js.native
+  def getPopupPlacement(): String = js.native
+  def getPopupPlacement(direction: String): String = js.native
   def handleChange(value: js.Any, selectedOptions: js.Array[CascaderOptionType]): Unit = js.native
   def handleInputBlur(): Unit = js.native
   def handleInputChange(e: ChangeEvent[HTMLInputElement]): Unit = js.native
   def handleInputClick(e: typings.react.mod.MouseEvent[HTMLInputElement, MouseEvent]): Unit = js.native
   def handleKeyDown(e: KeyboardEvent[HTMLInputElement]): Unit = js.native
   def handlePopupVisibleChange(popupVisible: Boolean): Unit = js.native
-  def renderCascader(hasGetPopupContainerGetPrefixClsRenderEmpty: ConfigConsumerProps, locale: CascaderLocale): Element = js.native
+  def renderCascader(hasGetPopupContainerGetPrefixClsRenderEmptyDirection: ConfigConsumerProps, locale: CascaderLocale): Element = js.native
   def saveInput(node: typings.antd.inputMod.default): Unit = js.native
   def setValue(value: js.Array[String]): Unit = js.native
   def setValue(value: js.Array[String], selectedOptions: js.Array[CascaderOptionType]): Unit = js.native

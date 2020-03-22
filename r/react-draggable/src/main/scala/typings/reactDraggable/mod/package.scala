@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mod {
-  type Draggable = typings.react.mod.Component[typings.std.Partial[typings.reactDraggable.mod.DraggableProps], js.Object, js.Any]
+  type Draggable = typings.react.mod.Component[typings.reactDraggable.PartialDraggableProps, js.Object, js.Any]
   type DraggableEvent = (typings.react.mod.MouseEvent[
     typings.std.HTMLElement | typings.std.SVGElement, 
     typings.react.mod.NativeMouseEvent

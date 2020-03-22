@@ -1,6 +1,6 @@
 package typings.primereact.dataViewMod
 
-import typings.primereact.AnonOriginalEventValueEvent
+import typings.primereact.AnonValueString
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,13 +10,13 @@ trait DataViewLayoutOptionsProps extends js.Object {
   var id: js.UndefOr[String] = js.undefined
   var layout: js.UndefOr[String] = js.undefined
   var style: js.UndefOr[String] = js.undefined
-  def onChange(e: AnonOriginalEventValueEvent): Unit
+  def onChange(e: AnonValueString): Unit
 }
 
 object DataViewLayoutOptionsProps {
   @scala.inline
   def apply(
-    onChange: AnonOriginalEventValueEvent => Unit,
+    onChange: AnonValueString => Unit,
     className: String = null,
     id: String = null,
     layout: String = null,

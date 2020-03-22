@@ -1,7 +1,7 @@
 package typings.expoFont
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.expoAsset.mod.Asset
+import typings.expoFont.fontTypesMod.FontSource
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,9 +17,5 @@ object mod extends js.Object {
   def loadAsync(nameOrMap: StringDictionary[FontSource], source: FontSource): js.Promise[Unit] = js.native
   def processFontFamily(): String | Null = js.native
   def processFontFamily(name: String): String | Null = js.native
-  /**
-    * A font source can be a URI, a module ID, or an Expo Asset.
-    */
-  type FontSource = String | Double | Asset
 }
 

@@ -14,6 +14,8 @@ package object rekognitionMod {
   type Attribute = typings.awsSdk.rekognitionMod._Attribute | java.lang.String
   type Attributes = js.Array[typings.awsSdk.rekognitionMod.Attribute]
   type Boolean = scala.Boolean
+  type BoundingBoxHeight = scala.Double
+  type BoundingBoxWidth = scala.Double
   type CelebrityList = js.Array[typings.awsSdk.rekognitionMod.Celebrity]
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.ID
@@ -220,6 +222,7 @@ package object rekognitionMod {
   */
   type Reason = typings.awsSdk.rekognitionMod._Reason | java.lang.String
   type Reasons = js.Array[typings.awsSdk.rekognitionMod.Reason]
+  type RegionsOfInterest = js.Array[typings.awsSdk.rekognitionMod.RegionOfInterest]
   type RekognitionUniqueId = java.lang.String
   type RoleArn = java.lang.String
   type S3Bucket = java.lang.String
@@ -242,6 +245,7 @@ package object rekognitionMod {
   type StreamProcessorStatus = typings.awsSdk.rekognitionMod._StreamProcessorStatus | java.lang.String
   type String = java.lang.String
   type TextDetectionList = js.Array[typings.awsSdk.rekognitionMod.TextDetection]
+  type TextDetectionResults = js.Array[typings.awsSdk.rekognitionMod.TextDetectionResult]
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.LINE
     - typings.awsSdk.awsSdkStrings.WORD

@@ -1,11 +1,11 @@
 package typings.storybookReactNative.previewMod
 
-import typings.std.Partial
 import typings.storybookClientApi.mod.ClientApi
 import typings.storybookClientApi.mod.StoryStore
 import typings.storybookClientApi.typesMod.StoreItem
-import typings.storybookReactNative.AnonContext
+import typings.storybookReactNative.AnonInstantiable
 import typings.storybookReactNative.AnonStoryId
+import typings.storybookReactNative.PartialParams
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,7 +29,7 @@ trait Preview extends js.Object {
   def _setInitialStory(initialSelection: js.Any, shouldPersistSelection: Boolean): js.Promise[Unit] = js.native
   def api(): ClientApi = js.native
   def configure(loadStories: js.Function0[Unit], module: js.Any): Unit = js.native
-  def getStorybookUI(): AnonContext = js.native
-  def getStorybookUI(params: Partial[Params]): AnonContext = js.native
+  def getStorybookUI(): AnonInstantiable = js.native
+  def getStorybookUI(params: PartialParams): AnonInstantiable = js.native
 }
 

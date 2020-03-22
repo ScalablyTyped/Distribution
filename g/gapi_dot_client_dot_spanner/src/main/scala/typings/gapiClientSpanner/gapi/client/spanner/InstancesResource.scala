@@ -2,9 +2,9 @@ package typings.gapiClientSpanner.gapi.client.spanner
 
 import typings.gapiClient.gapi.client.Request_
 import typings.gapiClientSpanner.AnonAccesstoken
-import typings.gapiClientSpanner.AnonAccesstokenAltBearertokenCallbackFields
-import typings.gapiClientSpanner.AnonAccesstokenAltBearertokenCallbackFieldsFilter
-import typings.gapiClientSpanner.AnonAccesstokenAltBearertokenCallbackFieldsKey
+import typings.gapiClientSpanner.AnonFilter
+import typings.gapiClientSpanner.AnonKey
+import typings.gapiClientSpanner.AnonOauthtoken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -48,7 +48,7 @@ trait InstancesResource extends js.Object {
     * The response field type is
     * Instance, if successful.
     */
-  def create(request: AnonAccesstokenAltBearertokenCallbackFields): Request_[Operation]
+  def create(request: AnonKey): Request_[Operation]
   /**
     * Deletes an instance.
     *
@@ -72,9 +72,9 @@ trait InstancesResource extends js.Object {
     * Authorization requires `spanner.instances.getIamPolicy` on
     * resource.
     */
-  def getIamPolicy(request: AnonAccesstokenAltBearertokenCallbackFieldsKey): Request_[Policy]
+  def getIamPolicy(request: AnonOauthtoken): Request_[Policy]
   /** Lists all instances in the given project. */
-  def list(request: AnonAccesstokenAltBearertokenCallbackFieldsFilter): Request_[ListInstancesResponse]
+  def list(request: AnonFilter): Request_[ListInstancesResponse]
   /**
     * Updates an instance, and begins allocating or releasing resources
     * as requested. The returned long-running
@@ -125,7 +125,7 @@ trait InstancesResource extends js.Object {
     * Authorization requires `spanner.instances.setIamPolicy` on
     * resource.
     */
-  def setIamPolicy(request: AnonAccesstokenAltBearertokenCallbackFieldsKey): Request_[Policy]
+  def setIamPolicy(request: AnonOauthtoken): Request_[Policy]
   /**
     * Returns permissions that the caller has on the specified instance resource.
     *
@@ -134,22 +134,22 @@ trait InstancesResource extends js.Object {
     * permission on the containing Google Cloud Project. Otherwise returns an
     * empty set of permissions.
     */
-  def testIamPermissions(request: AnonAccesstokenAltBearertokenCallbackFieldsKey): Request_[TestIamPermissionsResponse]
+  def testIamPermissions(request: AnonOauthtoken): Request_[TestIamPermissionsResponse]
 }
 
 object InstancesResource {
   @scala.inline
   def apply(
-    create: AnonAccesstokenAltBearertokenCallbackFields => Request_[Operation],
+    create: AnonKey => Request_[Operation],
     databases: DatabasesResource,
     delete: AnonAccesstoken => Request_[js.Object],
     get: AnonAccesstoken => Request_[Instance],
-    getIamPolicy: AnonAccesstokenAltBearertokenCallbackFieldsKey => Request_[Policy],
-    list: AnonAccesstokenAltBearertokenCallbackFieldsFilter => Request_[ListInstancesResponse],
+    getIamPolicy: AnonOauthtoken => Request_[Policy],
+    list: AnonFilter => Request_[ListInstancesResponse],
     operations: OperationsResource,
     patch: AnonAccesstoken => Request_[Operation],
-    setIamPolicy: AnonAccesstokenAltBearertokenCallbackFieldsKey => Request_[Policy],
-    testIamPermissions: AnonAccesstokenAltBearertokenCallbackFieldsKey => Request_[TestIamPermissionsResponse]
+    setIamPolicy: AnonOauthtoken => Request_[Policy],
+    testIamPermissions: AnonOauthtoken => Request_[TestIamPermissionsResponse]
   ): InstancesResource = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), databases = databases.asInstanceOf[js.Any], delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), getIamPolicy = js.Any.fromFunction1(getIamPolicy), list = js.Any.fromFunction1(list), operations = operations.asInstanceOf[js.Any], patch = js.Any.fromFunction1(patch), setIamPolicy = js.Any.fromFunction1(setIamPolicy), testIamPermissions = js.Any.fromFunction1(testIamPermissions))
   

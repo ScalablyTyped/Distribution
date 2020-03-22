@@ -2,7 +2,7 @@ package typings.sipJs.uAMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.events.mod.EventEmitter
-import typings.sipJs.AnonOptions
+import typings.sipJs.AnonPubGruu
 import typings.sipJs.clientContextMod.ClientContext
 import typings.sipJs.coreMod.IncomingRequestMessage
 import typings.sipJs.coreMod.Logger
@@ -41,7 +41,7 @@ class UA_ () extends EventEmitter {
   var applicants: StringDictionary[InviteClientContext] = js.native
   var checkAuthenticationFactory: js.Any = js.native
   var configuration: Options = js.native
-  var contact: AnonOptions = js.native
+  var contact: AnonPubGruu = js.native
   var data: js.Any = js.native
   var error: js.Any = js.native
   /**

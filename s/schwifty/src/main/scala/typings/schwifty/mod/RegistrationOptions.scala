@@ -9,7 +9,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RegistrationOptions extends js.Object {
-  var knex: js.UndefOr[(Knex[_, js.Array[_]]) | Config] = js.undefined
+  var knex: js.UndefOr[(Knex[_, js.Array[_]]) | Config[_]] = js.undefined
   var migrateOnStart: js.UndefOr[Boolean | latest | rollback] = js.undefined
   var migrationsDir: js.UndefOr[String] = js.undefined
   var models: js.UndefOr[js.Array[ModelClass] | String] = js.undefined
@@ -19,7 +19,7 @@ trait RegistrationOptions extends js.Object {
 object RegistrationOptions {
   @scala.inline
   def apply(
-    knex: (Knex[_, js.Array[_]]) | Config = null,
+    knex: (Knex[_, js.Array[_]]) | Config[_] = null,
     migrateOnStart: Boolean | latest | rollback = null,
     migrationsDir: String = null,
     models: js.Array[ModelClass] | String = null,

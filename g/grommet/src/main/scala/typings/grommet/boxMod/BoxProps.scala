@@ -1,10 +1,9 @@
 package typings.grommet.boxMod
 
-import typings.grommet.AnonAuto
-import typings.grommet.AnonBottom
 import typings.grommet.AnonDelay
 import typings.grommet.AnonGrow
-import typings.grommet.AnonLarge
+import typings.grommet.AnonHorizontal
+import typings.grommet.AnonMax
 import typings.grommet.grommetStrings.`column-reverse`
 import typings.grommet.grommetStrings.`row-responsive`
 import typings.grommet.grommetStrings.`row-reverse`
@@ -18,7 +17,6 @@ import typings.grommet.grommetStrings.end
 import typings.grommet.grommetStrings.evenly
 import typings.grommet.grommetStrings.fadeIn
 import typings.grommet.grommetStrings.fadeOut
-import typings.grommet.grommetStrings.full
 import typings.grommet.grommetStrings.grow
 import typings.grommet.grommetStrings.hidden
 import typings.grommet.grommetStrings.jiggle
@@ -56,6 +54,7 @@ import typings.grommet.utilsMod.GridAreaType
 import typings.grommet.utilsMod.MarginType
 import typings.grommet.utilsMod.PadType
 import typings.grommet.utilsMod.PolymorphicType
+import typings.grommet.utilsMod.RoundType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -81,21 +80,17 @@ trait BoxProps extends js.Object {
   var focusIndicator: js.UndefOr[Boolean] = js.undefined
   var gap: js.UndefOr[GapType] = js.undefined
   var gridArea: js.UndefOr[GridAreaType] = js.undefined
-  var height: js.UndefOr[
-    xxsmall | xsmall | small | medium | large | xlarge | xxlarge | String | AnonLarge
-  ] = js.undefined
+  var height: js.UndefOr[xxsmall | xsmall | small | medium | large | xlarge | xxlarge | String | AnonMax] = js.undefined
   var hoverIndicator: js.UndefOr[BackgroundType | Boolean] = js.undefined
   var justify: js.UndefOr[around | between | center | end | evenly | start | stretch] = js.undefined
   var margin: js.UndefOr[MarginType] = js.undefined
   var onClick: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
-  var overflow: js.UndefOr[auto | hidden | scroll | visible | AnonAuto | String] = js.undefined
+  var overflow: js.UndefOr[auto | hidden | scroll | visible | AnonHorizontal | String] = js.undefined
   var pad: js.UndefOr[PadType] = js.undefined
   var responsive: js.UndefOr[Boolean] = js.undefined
-  var round: js.UndefOr[Boolean | xsmall | small | medium | large | xlarge | full | String | AnonBottom] = js.undefined
+  var round: js.UndefOr[RoundType] = js.undefined
   var tag: js.UndefOr[PolymorphicType] = js.undefined
-  var width: js.UndefOr[
-    xxsmall | xsmall | small | medium | large | xlarge | xxlarge | String | AnonLarge
-  ] = js.undefined
+  var width: js.UndefOr[xxsmall | xsmall | small | medium | large | xlarge | xxlarge | String | AnonMax] = js.undefined
   var wrap: js.UndefOr[Boolean | reverse] = js.undefined
 }
 
@@ -120,17 +115,17 @@ object BoxProps {
     focusIndicator: js.UndefOr[Boolean] = js.undefined,
     gap: GapType = null,
     gridArea: GridAreaType = null,
-    height: xxsmall | xsmall | small | medium | large | xlarge | xxlarge | String | AnonLarge = null,
+    height: xxsmall | xsmall | small | medium | large | xlarge | xxlarge | String | AnonMax = null,
     hoverIndicator: BackgroundType | Boolean = null,
     justify: around | between | center | end | evenly | start | stretch = null,
     margin: MarginType = null,
     onClick: /* repeated */ js.Any => _ = null,
-    overflow: auto | hidden | scroll | visible | AnonAuto | String = null,
+    overflow: auto | hidden | scroll | visible | AnonHorizontal | String = null,
     pad: PadType = null,
     responsive: js.UndefOr[Boolean] = js.undefined,
-    round: Boolean | xsmall | small | medium | large | xlarge | full | String | AnonBottom = null,
+    round: RoundType = null,
     tag: PolymorphicType = null,
-    width: xxsmall | xsmall | small | medium | large | xlarge | xxlarge | String | AnonLarge = null,
+    width: xxsmall | xsmall | small | medium | large | xlarge | xxlarge | String | AnonMax = null,
     wrap: Boolean | reverse = null
   ): BoxProps = {
     val __obj = js.Dynamic.literal()

@@ -1,6 +1,6 @@
 package typings.aliApp.my
 
-import typings.aliApp.AnonDevices
+import typings.aliApp.devicesArrayBluetoothDevi
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,13 +9,13 @@ trait GetConnectedBluetoothDevicesOptions
   extends BaseOptions[js.Any, js.Any] {
   var services: js.UndefOr[js.Array[String]] = js.undefined
   @JSName("success")
-  def success_MGetConnectedBluetoothDevicesOptions(res: AnonDevices with ErrMsgResponse): Unit
+  def success_MGetConnectedBluetoothDevicesOptions(res: devicesArrayBluetoothDevi): Unit
 }
 
 object GetConnectedBluetoothDevicesOptions {
   @scala.inline
   def apply(
-    success: AnonDevices with ErrMsgResponse => Unit,
+    success: devicesArrayBluetoothDevi => Unit,
     complete: /* res */ js.Any => Unit = null,
     fail: js.Any => Unit = null,
     services: js.Array[String] = null

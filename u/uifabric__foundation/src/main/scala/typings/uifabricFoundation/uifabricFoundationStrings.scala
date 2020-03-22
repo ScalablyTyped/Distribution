@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 object uifabricFoundationStrings {
   @js.native
-  sealed trait Anon_Slots extends js.Object
+  sealed trait AnonSlots extends js.Object
   
   @js.native
   sealed trait IComponentStyles extends js.Object
@@ -24,16 +24,7 @@ object uifabricFoundationStrings {
   sealed trait abbr extends js.Object
   
   @js.native
-  sealed trait additions extends js.Object
-  
-  @js.native
-  sealed trait `additions text` extends js.Object
-  
-  @js.native
   sealed trait address extends js.Object
-  
-  @js.native
-  sealed trait all extends js.Object
   
   @js.native
   sealed trait animate extends js.Object
@@ -51,13 +42,7 @@ object uifabricFoundationStrings {
   sealed trait article extends js.Object
   
   @js.native
-  sealed trait ascending extends js.Object
-  
-  @js.native
   sealed trait aside extends js.Object
-  
-  @js.native
-  sealed trait assertive extends js.Object
   
   @js.native
   sealed trait audio extends js.Object
@@ -82,9 +67,6 @@ object uifabricFoundationStrings {
   
   @js.native
   sealed trait body extends js.Object
-  
-  @js.native
-  sealed trait both extends js.Object
   
   @js.native
   sealed trait br extends js.Object
@@ -120,22 +102,13 @@ object uifabricFoundationStrings {
   sealed trait colgroup extends js.Object
   
   @js.native
-  sealed trait copy extends js.Object
-  
-  @js.native
   sealed trait data extends js.Object
   
   @js.native
   sealed trait datalist extends js.Object
   
   @js.native
-  sealed trait date extends js.Object
-  
-  @js.native
   sealed trait dd extends js.Object
-  
-  @js.native
-  sealed trait decimal extends js.Object
   
   @js.native
   sealed trait defs extends js.Object
@@ -145,9 +118,6 @@ object uifabricFoundationStrings {
   
   @js.native
   sealed trait desc extends js.Object
-  
-  @js.native
-  sealed trait descending extends js.Object
   
   @js.native
   sealed trait details extends js.Object
@@ -174,13 +144,7 @@ object uifabricFoundationStrings {
   sealed trait em extends js.Object
   
   @js.native
-  sealed trait email extends js.Object
-  
-  @js.native
   sealed trait embed extends js.Object
-  
-  @js.native
-  sealed trait execute extends js.Object
   
   @js.native
   sealed trait feBlend extends js.Object
@@ -282,12 +246,6 @@ object uifabricFoundationStrings {
   sealed trait g extends js.Object
   
   @js.native
-  sealed trait grammar extends js.Object
-  
-  @js.native
-  sealed trait grid extends js.Object
-  
-  @js.native
   sealed trait h1 extends js.Object
   
   @js.native
@@ -315,9 +273,6 @@ object uifabricFoundationStrings {
   sealed trait hgroup extends js.Object
   
   @js.native
-  sealed trait horizontal extends js.Object
-  
-  @js.native
   sealed trait hr extends js.Object
   
   @js.native
@@ -334,12 +289,6 @@ object uifabricFoundationStrings {
   
   @js.native
   sealed trait img extends js.Object
-  
-  @js.native
-  sealed trait inherit extends js.Object
-  
-  @js.native
-  sealed trait `inline` extends js.Object
   
   @js.native
   sealed trait input extends js.Object
@@ -372,15 +321,6 @@ object uifabricFoundationStrings {
   sealed trait link extends js.Object
   
   @js.native
-  sealed trait list extends js.Object
-  
-  @js.native
-  sealed trait listbox extends js.Object
-  
-  @js.native
-  sealed trait location extends js.Object
-  
-  @js.native
   sealed trait main extends js.Object
   
   @js.native
@@ -411,43 +351,22 @@ object uifabricFoundationStrings {
   sealed trait meter extends js.Object
   
   @js.native
-  sealed trait mixed extends js.Object
-  
-  @js.native
-  sealed trait move extends js.Object
-  
-  @js.native
   sealed trait mpath extends js.Object
   
   @js.native
   sealed trait nav extends js.Object
   
   @js.native
-  sealed trait no extends js.Object
-  
-  @js.native
   sealed trait noindex extends js.Object
-  
-  @js.native
-  sealed trait none extends js.Object
   
   @js.native
   sealed trait noscript extends js.Object
   
   @js.native
-  sealed trait numeric extends js.Object
-  
-  @js.native
   sealed trait `object` extends js.Object
   
   @js.native
-  sealed trait off extends js.Object
-  
-  @js.native
   sealed trait ol extends js.Object
-  
-  @js.native
-  sealed trait on extends js.Object
   
   @js.native
   sealed trait optgroup extends js.Object
@@ -456,16 +375,10 @@ object uifabricFoundationStrings {
   sealed trait option extends js.Object
   
   @js.native
-  sealed trait other extends js.Object
-  
-  @js.native
   sealed trait output extends js.Object
   
   @js.native
   sealed trait p extends js.Object
-  
-  @js.native
-  sealed trait page extends js.Object
   
   @js.native
   sealed trait param extends js.Object
@@ -480,16 +393,10 @@ object uifabricFoundationStrings {
   sealed trait picture extends js.Object
   
   @js.native
-  sealed trait polite extends js.Object
-  
-  @js.native
   sealed trait polygon extends js.Object
   
   @js.native
   sealed trait polyline extends js.Object
-  
-  @js.native
-  sealed trait popup extends js.Object
   
   @js.native
   sealed trait pre extends js.Object
@@ -505,9 +412,6 @@ object uifabricFoundationStrings {
   
   @js.native
   sealed trait rect extends js.Object
-  
-  @js.native
-  sealed trait removals extends js.Object
   
   @js.native
   sealed trait rp extends js.Object
@@ -528,9 +432,6 @@ object uifabricFoundationStrings {
   sealed trait script extends js.Object
   
   @js.native
-  sealed trait search extends js.Object
-  
-  @js.native
   sealed trait section extends js.Object
   
   @js.native
@@ -544,12 +445,6 @@ object uifabricFoundationStrings {
   
   @js.native
   sealed trait span extends js.Object
-  
-  @js.native
-  sealed trait spelling extends js.Object
-  
-  @js.native
-  sealed trait step extends js.Object
   
   @js.native
   sealed trait stop extends js.Object
@@ -588,9 +483,6 @@ object uifabricFoundationStrings {
   sealed trait td extends js.Object
   
   @js.native
-  sealed trait tel extends js.Object
-  
-  @js.native
   sealed trait template extends js.Object
   
   @js.native
@@ -624,9 +516,6 @@ object uifabricFoundationStrings {
   sealed trait track extends js.Object
   
   @js.native
-  sealed trait tree extends js.Object
-  
-  @js.native
   sealed trait tspan extends js.Object
   
   @js.native
@@ -636,16 +525,10 @@ object uifabricFoundationStrings {
   sealed trait ul extends js.Object
   
   @js.native
-  sealed trait url extends js.Object
-  
-  @js.native
   sealed trait use extends js.Object
   
   @js.native
   sealed trait `var` extends js.Object
-  
-  @js.native
-  sealed trait vertical extends js.Object
   
   @js.native
   sealed trait video extends js.Object
@@ -659,11 +542,8 @@ object uifabricFoundationStrings {
   @js.native
   sealed trait webview extends js.Object
   
-  @js.native
-  sealed trait yes extends js.Object
-  
   @scala.inline
-  def Anon_Slots: Anon_Slots = "Anon_Slots".asInstanceOf[Anon_Slots]
+  def AnonSlots: AnonSlots = "AnonSlots".asInstanceOf[AnonSlots]
   @scala.inline
   def IComponentStyles: IComponentStyles = "IComponentStyles".asInstanceOf[IComponentStyles]
   @scala.inline
@@ -675,13 +555,7 @@ object uifabricFoundationStrings {
   @scala.inline
   def abbr: abbr = "abbr".asInstanceOf[abbr]
   @scala.inline
-  def additions: additions = "additions".asInstanceOf[additions]
-  @scala.inline
-  def `additions text`: `additions text` = "additions text".asInstanceOf[`additions text`]
-  @scala.inline
   def address: address = "address".asInstanceOf[address]
-  @scala.inline
-  def all: all = "all".asInstanceOf[all]
   @scala.inline
   def animate: animate = "animate".asInstanceOf[animate]
   @scala.inline
@@ -693,11 +567,7 @@ object uifabricFoundationStrings {
   @scala.inline
   def article: article = "article".asInstanceOf[article]
   @scala.inline
-  def ascending: ascending = "ascending".asInstanceOf[ascending]
-  @scala.inline
   def aside: aside = "aside".asInstanceOf[aside]
-  @scala.inline
-  def assertive: assertive = "assertive".asInstanceOf[assertive]
   @scala.inline
   def audio: audio = "audio".asInstanceOf[audio]
   @scala.inline
@@ -714,8 +584,6 @@ object uifabricFoundationStrings {
   def blockquote: blockquote = "blockquote".asInstanceOf[blockquote]
   @scala.inline
   def body: body = "body".asInstanceOf[body]
-  @scala.inline
-  def both: both = "both".asInstanceOf[both]
   @scala.inline
   def br: br = "br".asInstanceOf[br]
   @scala.inline
@@ -739,25 +607,17 @@ object uifabricFoundationStrings {
   @scala.inline
   def colgroup: colgroup = "colgroup".asInstanceOf[colgroup]
   @scala.inline
-  def copy: copy = "copy".asInstanceOf[copy]
-  @scala.inline
   def data: data = "data".asInstanceOf[data]
   @scala.inline
   def datalist: datalist = "datalist".asInstanceOf[datalist]
   @scala.inline
-  def date: date = "date".asInstanceOf[date]
-  @scala.inline
   def dd: dd = "dd".asInstanceOf[dd]
-  @scala.inline
-  def decimal: decimal = "decimal".asInstanceOf[decimal]
   @scala.inline
   def defs: defs = "defs".asInstanceOf[defs]
   @scala.inline
   def del: del = "del".asInstanceOf[del]
   @scala.inline
   def desc: desc = "desc".asInstanceOf[desc]
-  @scala.inline
-  def descending: descending = "descending".asInstanceOf[descending]
   @scala.inline
   def details: details = "details".asInstanceOf[details]
   @scala.inline
@@ -775,11 +635,7 @@ object uifabricFoundationStrings {
   @scala.inline
   def em: em = "em".asInstanceOf[em]
   @scala.inline
-  def email: email = "email".asInstanceOf[email]
-  @scala.inline
   def embed: embed = "embed".asInstanceOf[embed]
-  @scala.inline
-  def execute: execute = "execute".asInstanceOf[execute]
   @scala.inline
   def feBlend: feBlend = "feBlend".asInstanceOf[feBlend]
   @scala.inline
@@ -847,10 +703,6 @@ object uifabricFoundationStrings {
   @scala.inline
   def g: g = "g".asInstanceOf[g]
   @scala.inline
-  def grammar: grammar = "grammar".asInstanceOf[grammar]
-  @scala.inline
-  def grid: grid = "grid".asInstanceOf[grid]
-  @scala.inline
   def h1: h1 = "h1".asInstanceOf[h1]
   @scala.inline
   def h2: h2 = "h2".asInstanceOf[h2]
@@ -869,8 +721,6 @@ object uifabricFoundationStrings {
   @scala.inline
   def hgroup: hgroup = "hgroup".asInstanceOf[hgroup]
   @scala.inline
-  def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
-  @scala.inline
   def hr: hr = "hr".asInstanceOf[hr]
   @scala.inline
   def html: html = "html".asInstanceOf[html]
@@ -882,10 +732,6 @@ object uifabricFoundationStrings {
   def image: image = "image".asInstanceOf[image]
   @scala.inline
   def img: img = "img".asInstanceOf[img]
-  @scala.inline
-  def inherit: inherit = "inherit".asInstanceOf[inherit]
-  @scala.inline
-  def `inline`: `inline` = "inline".asInstanceOf[`inline`]
   @scala.inline
   def input: input = "input".asInstanceOf[input]
   @scala.inline
@@ -907,12 +753,6 @@ object uifabricFoundationStrings {
   @scala.inline
   def link: link = "link".asInstanceOf[link]
   @scala.inline
-  def list: list = "list".asInstanceOf[list]
-  @scala.inline
-  def listbox: listbox = "listbox".asInstanceOf[listbox]
-  @scala.inline
-  def location: location = "location".asInstanceOf[location]
-  @scala.inline
   def main: main = "main".asInstanceOf[main]
   @scala.inline
   def map: map = "map".asInstanceOf[map]
@@ -933,43 +773,25 @@ object uifabricFoundationStrings {
   @scala.inline
   def meter: meter = "meter".asInstanceOf[meter]
   @scala.inline
-  def mixed: mixed = "mixed".asInstanceOf[mixed]
-  @scala.inline
-  def move: move = "move".asInstanceOf[move]
-  @scala.inline
   def mpath: mpath = "mpath".asInstanceOf[mpath]
   @scala.inline
   def nav: nav = "nav".asInstanceOf[nav]
   @scala.inline
-  def no: no = "no".asInstanceOf[no]
-  @scala.inline
   def noindex: noindex = "noindex".asInstanceOf[noindex]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
   @scala.inline
   def noscript: noscript = "noscript".asInstanceOf[noscript]
   @scala.inline
-  def numeric: numeric = "numeric".asInstanceOf[numeric]
-  @scala.inline
   def `object`: `object` = "object".asInstanceOf[`object`]
   @scala.inline
-  def off: off = "off".asInstanceOf[off]
-  @scala.inline
   def ol: ol = "ol".asInstanceOf[ol]
-  @scala.inline
-  def on: on = "on".asInstanceOf[on]
   @scala.inline
   def optgroup: optgroup = "optgroup".asInstanceOf[optgroup]
   @scala.inline
   def option: option = "option".asInstanceOf[option]
   @scala.inline
-  def other: other = "other".asInstanceOf[other]
-  @scala.inline
   def output: output = "output".asInstanceOf[output]
   @scala.inline
   def p: p = "p".asInstanceOf[p]
-  @scala.inline
-  def page: page = "page".asInstanceOf[page]
   @scala.inline
   def param: param = "param".asInstanceOf[param]
   @scala.inline
@@ -979,13 +801,9 @@ object uifabricFoundationStrings {
   @scala.inline
   def picture: picture = "picture".asInstanceOf[picture]
   @scala.inline
-  def polite: polite = "polite".asInstanceOf[polite]
-  @scala.inline
   def polygon: polygon = "polygon".asInstanceOf[polygon]
   @scala.inline
   def polyline: polyline = "polyline".asInstanceOf[polyline]
-  @scala.inline
-  def popup: popup = "popup".asInstanceOf[popup]
   @scala.inline
   def pre: pre = "pre".asInstanceOf[pre]
   @scala.inline
@@ -996,8 +814,6 @@ object uifabricFoundationStrings {
   def radialGradient: radialGradient = "radialGradient".asInstanceOf[radialGradient]
   @scala.inline
   def rect: rect = "rect".asInstanceOf[rect]
-  @scala.inline
-  def removals: removals = "removals".asInstanceOf[removals]
   @scala.inline
   def rp: rp = "rp".asInstanceOf[rp]
   @scala.inline
@@ -1011,8 +827,6 @@ object uifabricFoundationStrings {
   @scala.inline
   def script: script = "script".asInstanceOf[script]
   @scala.inline
-  def search: search = "search".asInstanceOf[search]
-  @scala.inline
   def section: section = "section".asInstanceOf[section]
   @scala.inline
   def select: select = "select".asInstanceOf[select]
@@ -1022,10 +836,6 @@ object uifabricFoundationStrings {
   def source: source = "source".asInstanceOf[source]
   @scala.inline
   def span: span = "span".asInstanceOf[span]
-  @scala.inline
-  def spelling: spelling = "spelling".asInstanceOf[spelling]
-  @scala.inline
-  def step: step = "step".asInstanceOf[step]
   @scala.inline
   def stop: stop = "stop".asInstanceOf[stop]
   @scala.inline
@@ -1051,8 +861,6 @@ object uifabricFoundationStrings {
   @scala.inline
   def td: td = "td".asInstanceOf[td]
   @scala.inline
-  def tel: tel = "tel".asInstanceOf[tel]
-  @scala.inline
   def template: template = "template".asInstanceOf[template]
   @scala.inline
   def text: text = "text".asInstanceOf[text]
@@ -1075,21 +883,15 @@ object uifabricFoundationStrings {
   @scala.inline
   def track: track = "track".asInstanceOf[track]
   @scala.inline
-  def tree: tree = "tree".asInstanceOf[tree]
-  @scala.inline
   def tspan: tspan = "tspan".asInstanceOf[tspan]
   @scala.inline
   def u: u = "u".asInstanceOf[u]
   @scala.inline
   def ul: ul = "ul".asInstanceOf[ul]
   @scala.inline
-  def url: url = "url".asInstanceOf[url]
-  @scala.inline
   def use: use = "use".asInstanceOf[use]
   @scala.inline
   def `var`: `var` = "var".asInstanceOf[`var`]
-  @scala.inline
-  def vertical: vertical = "vertical".asInstanceOf[vertical]
   @scala.inline
   def video: video = "video".asInstanceOf[video]
   @scala.inline
@@ -1098,7 +900,5 @@ object uifabricFoundationStrings {
   def wbr: wbr = "wbr".asInstanceOf[wbr]
   @scala.inline
   def webview: webview = "webview".asInstanceOf[webview]
-  @scala.inline
-  def yes: yes = "yes".asInstanceOf[yes]
 }
 

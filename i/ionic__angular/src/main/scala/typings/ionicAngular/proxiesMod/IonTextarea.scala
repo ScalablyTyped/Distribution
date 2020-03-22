@@ -11,7 +11,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ionic/angular/dist/directives/proxies", "IonTextarea")
+@JSImport("@ionic/angular/directives/proxies", "IonTextarea")
 @js.native
 class IonTextarea protected ()
   extends typings.ionicCore.componentsMod.Components.IonTextarea {

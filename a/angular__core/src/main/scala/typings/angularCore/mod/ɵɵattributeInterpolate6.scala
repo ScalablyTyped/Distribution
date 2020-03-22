@@ -22,7 +22,25 @@ object ɵɵattributeInterpolate6 extends js.Object {
     i4: String,
     v5: js.Any,
     suffix: String
-  ): TsickleIssue1009 = js.native
+  ): js.Function16[
+    /* attrName */ String, 
+    /* prefix */ String, 
+    /* v0 */ js.Any, 
+    /* i0 */ String, 
+    /* v1 */ js.Any, 
+    /* i1 */ String, 
+    /* v2 */ js.Any, 
+    /* i2 */ String, 
+    /* v3 */ js.Any, 
+    /* i3 */ String, 
+    /* v4 */ js.Any, 
+    /* i4 */ String, 
+    /* v5 */ js.Any, 
+    /* suffix */ String, 
+    /* sanitizer */ js.UndefOr[SanitizerFn], 
+    /* namespace */ js.UndefOr[String], 
+    /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate6 */ js.Any
+  ] = js.native
   def apply(
     attrName: String,
     prefix: String,
@@ -39,7 +57,25 @@ object ɵɵattributeInterpolate6 extends js.Object {
     v5: js.Any,
     suffix: String,
     sanitizer: SanitizerFn
-  ): TsickleIssue1009 = js.native
+  ): js.Function16[
+    /* attrName */ String, 
+    /* prefix */ String, 
+    /* v0 */ js.Any, 
+    /* i0 */ String, 
+    /* v1 */ js.Any, 
+    /* i1 */ String, 
+    /* v2 */ js.Any, 
+    /* i2 */ String, 
+    /* v3 */ js.Any, 
+    /* i3 */ String, 
+    /* v4 */ js.Any, 
+    /* i4 */ String, 
+    /* v5 */ js.Any, 
+    /* suffix */ String, 
+    /* sanitizer */ js.UndefOr[SanitizerFn], 
+    /* namespace */ js.UndefOr[String], 
+    /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate6 */ js.Any
+  ] = js.native
   def apply(
     attrName: String,
     prefix: String,
@@ -57,6 +93,24 @@ object ɵɵattributeInterpolate6 extends js.Object {
     suffix: String,
     sanitizer: SanitizerFn,
     namespace: String
-  ): TsickleIssue1009 = js.native
+  ): js.Function16[
+    /* attrName */ String, 
+    /* prefix */ String, 
+    /* v0 */ js.Any, 
+    /* i0 */ String, 
+    /* v1 */ js.Any, 
+    /* i1 */ String, 
+    /* v2 */ js.Any, 
+    /* i2 */ String, 
+    /* v3 */ js.Any, 
+    /* i3 */ String, 
+    /* v4 */ js.Any, 
+    /* i4 */ String, 
+    /* v5 */ js.Any, 
+    /* suffix */ String, 
+    /* sanitizer */ js.UndefOr[SanitizerFn], 
+    /* namespace */ js.UndefOr[String], 
+    /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate6 */ js.Any
+  ] = js.native
 }
 

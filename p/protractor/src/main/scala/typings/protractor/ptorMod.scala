@@ -27,7 +27,7 @@ object ptorMod extends js.Object {
     var Builder: Instantiable0[typings.seleniumWebdriver.mod.Builder] = js.native
     var Button: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webdriver.IButton */ js.Any = js.native
     var By: ProtractorBy = js.native
-    var Capabilities: TypeofClassCapabilities = js.native
+    var Capabilities: TypeofCapabilities = js.native
     var Capability: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webdriver.ICapability */ js.Any = js.native
     var Command: js.Any = js.native
     var CommandName: js.Any = js.native
@@ -45,8 +45,8 @@ object ptorMod extends js.Object {
         /* capabilities */ Capabilities, 
         typings.seleniumWebdriver.mod.Session
       ] = js.native
-    var WebDriver: TypeofClassWebDriver = js.native
-    var WebElement: TypeofClassWebElement = js.native
+    var WebDriver: TypeofWebDriver = js.native
+    var WebElement: TypeofWebElement = js.native
     var WebElementPromise: Instantiable2[
         /* driver */ WebDriver, 
         /* el */ js.Promise[WebElement], 

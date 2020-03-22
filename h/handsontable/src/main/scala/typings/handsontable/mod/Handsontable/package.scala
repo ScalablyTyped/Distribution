@@ -5,9 +5,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object Handsontable {
-  type Bucket = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof handsontable.handsontable.Handsontable.Hooks.Events ]: std.Array<handsontable.handsontable.Handsontable.Hooks.Events[P]>}
-    */ typings.handsontable.handsontableStrings.Bucket with typings.handsontable.mod.Handsontable.Hooks.Events
   /**
     * A cell change represented by `[row, column, prevValue, nextValue]`.
     */

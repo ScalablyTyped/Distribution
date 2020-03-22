@@ -1,24 +1,27 @@
 package typings.rcTable.colGroupMod
 
 import typings.rcTable.interfaceMod.ColumnType
-import typings.rcTable.interfaceMod.DefaultValueType
-import typings.rcTable.interfaceMod.FixedType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ColGroupProps extends js.Object {
-  /** FIXME: Not used. Should confirm why this prop here */
-  var columns: js.UndefOr[js.Array[ColumnType[DefaultValueType]]] = js.undefined
-  var fixed: FixedType
+trait ColGroupProps[RecordType] extends js.Object {
+  var colWidths: js.Array[Double | String]
+  var columCount: js.UndefOr[Double] = js.undefined
+  var columns: js.UndefOr[js.Array[ColumnType[RecordType]]] = js.undefined
 }
 
 object ColGroupProps {
   @scala.inline
-  def apply(fixed: FixedType, columns: js.Array[ColumnType[DefaultValueType]] = null): ColGroupProps = {
-    val __obj = js.Dynamic.literal(fixed = fixed.asInstanceOf[js.Any])
+  def apply[RecordType](
+    colWidths: js.Array[Double | String],
+    columCount: Int | Double = null,
+    columns: js.Array[ColumnType[RecordType]] = null
+  ): ColGroupProps[RecordType] = {
+    val __obj = js.Dynamic.literal(colWidths = colWidths.asInstanceOf[js.Any])
+    if (columCount != null) __obj.updateDynamic("columCount")(columCount.asInstanceOf[js.Any])
     if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ColGroupProps]
+    __obj.asInstanceOf[ColGroupProps[RecordType]]
   }
 }
 

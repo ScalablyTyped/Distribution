@@ -1,7 +1,7 @@
 package typings.oracleOraclejet.ojinputtextMod
 
 import typings.oracleOraclejet.AnonAction
-import typings.oracleOraclejet.AnonActionElement
+import typings.oracleOraclejet.AnonElement
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.ojinputtextMod.ojInputText.ojAnimateEnd
 import typings.oracleOraclejet.ojinputtextMod.ojInputText.ojAnimateStart
@@ -190,6 +190,6 @@ trait ojInputText
 @js.native
 object ojInputText extends js.Object {
   type ojAnimateEnd = CustomEvent[AnonAction]
-  type ojAnimateStart = CustomEvent[AnonActionElement]
+  type ojAnimateStart = CustomEvent[AnonElement]
 }
 

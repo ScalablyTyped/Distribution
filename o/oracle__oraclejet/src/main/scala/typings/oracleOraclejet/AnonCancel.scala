@@ -8,11 +8,11 @@ trait AnonCancel extends js.Object {
   var cancel: js.UndefOr[String] = js.undefined
   var currentText: js.UndefOr[String] = js.undefined
   var dateRestriction: js.UndefOr[AnonHint] = js.undefined
-  var dateTimeRange: js.UndefOr[AnonHintMessageDetail] = js.undefined
+  var dateTimeRange: js.UndefOr[AnonMessageDetail] = js.undefined
   var done: js.UndefOr[String] = js.undefined
   var nextText: js.UndefOr[String] = js.undefined
   var prevText: js.UndefOr[String] = js.undefined
-  var regexp: js.UndefOr[AnonMessageDetail] = js.undefined
+  var regexp: js.UndefOr[AnonMessageSummary] = js.undefined
   var required: js.UndefOr[AnonHint] = js.undefined
   var tooltipCalendar: js.UndefOr[String] = js.undefined
   var tooltipCalendarDisabled: js.UndefOr[String] = js.undefined
@@ -27,11 +27,11 @@ object AnonCancel {
     cancel: String = null,
     currentText: String = null,
     dateRestriction: AnonHint = null,
-    dateTimeRange: AnonHintMessageDetail = null,
+    dateTimeRange: AnonMessageDetail = null,
     done: String = null,
     nextText: String = null,
     prevText: String = null,
-    regexp: AnonMessageDetail = null,
+    regexp: AnonMessageSummary = null,
     required: AnonHint = null,
     tooltipCalendar: String = null,
     tooltipCalendarDisabled: String = null,

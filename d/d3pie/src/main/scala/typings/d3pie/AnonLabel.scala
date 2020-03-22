@@ -5,18 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonLabel extends js.Object {
-  var label: js.UndefOr[String] = js.undefined
-  var percentage: js.UndefOr[Double] = js.undefined
-  var value: js.UndefOr[Double] = js.undefined
+  var color: js.UndefOr[String] = js.undefined
+  var label: String
+  var value: Double
 }
 
 object AnonLabel {
   @scala.inline
-  def apply(label: String = null, percentage: Int | Double = null, value: Int | Double = null): AnonLabel = {
-    val __obj = js.Dynamic.literal()
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (percentage != null) __obj.updateDynamic("percentage")(percentage.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+  def apply(label: String, value: Double, color: String = null): AnonLabel = {
+    val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnonLabel]
   }
 }

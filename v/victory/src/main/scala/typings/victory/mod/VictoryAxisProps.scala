@@ -1,10 +1,10 @@
 package typings.victory.mod
 
 import typings.react.mod.ReactElement
-import typings.victory.AnonAxisAxisLabel
-import typings.victory.AnonXY
-import typings.victory.AnonXYBoolean
-import typings.victory.AnonXYD3ScaleScalePropType
+import typings.victory.Anon1
+import typings.victory.AnonAxisLabel
+import typings.victory.AnonXBoolean
+import typings.victory.AnonY
 import typings.victory.victoryStrings.axis
 import typings.victory.victoryStrings.axisLabel
 import typings.victory.victoryStrings.bottom
@@ -169,7 +169,7 @@ trait VictoryAxisProps extends VictoryCommonProps {
     *
     * note: custom angle and verticalAnchor properties may be included in labels styles.
     */
-  var style: js.UndefOr[AnonAxisAxisLabel] = js.undefined
+  var style: js.UndefOr[AnonAxisLabel] = js.undefined
   /**
     * The tickComponent prop takes in an entire component which will be used
     * to create tick lines. The new element created from the passed tickComponent
@@ -237,17 +237,17 @@ object VictoryAxisProps {
     horizontal: js.UndefOr[Boolean] = js.undefined,
     invertAxis: js.UndefOr[Boolean] = js.undefined,
     label: js.Any = null,
-    maxDomain: Double | AnonXY = null,
-    minDomain: Double | AnonXY = null,
+    maxDomain: Double | AnonY = null,
+    minDomain: Double | AnonY = null,
     name: String = null,
     offsetX: Int | Double = null,
     offsetY: Int | Double = null,
     orientation: top | bottom | left | right = null,
     padding: PaddingProps = null,
-    scale: ScalePropType | D3Scale | AnonXYD3ScaleScalePropType = null,
-    singleQuadrantDomainPadding: Boolean | AnonXYBoolean = null,
+    scale: ScalePropType | D3Scale | Anon1 = null,
+    singleQuadrantDomainPadding: Boolean | AnonXBoolean = null,
     standalone: js.UndefOr[Boolean] = js.undefined,
-    style: AnonAxisAxisLabel = null,
+    style: AnonAxisLabel = null,
     theme: VictoryThemeDefinition = null,
     tickComponent: ReactElement = null,
     tickCount: Int | Double = null,

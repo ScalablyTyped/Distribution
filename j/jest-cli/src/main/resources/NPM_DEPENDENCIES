@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "jest-cli" : "24.9.0"
+      "jest-cli" : "25.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "jest-cli" : "24.9.0"
+      "jest-cli" : "25.1.0"
     }
   ],
   "compile-devDependencies" : [

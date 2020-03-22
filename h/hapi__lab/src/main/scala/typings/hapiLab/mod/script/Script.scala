@@ -1,7 +1,6 @@
 package typings.hapiLab.mod.script
 
-import typings.hapiLab.hapiLabStrings.plan
-import typings.std.Omit
+import typings.hapiLab.OmitTestOptionsplan
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,16 +34,13 @@ trait Script extends js.Object {
   def beforeEach(action: Action): Unit = js.native
   def beforeEach(options: TestOptions, action: Action): Unit = js.native
   def describe(title: String, content: js.Function0[Unit]): Unit = js.native
-  @JSName("describe")
-  def describe_plan(title: String, options: Omit[TestOptions, plan], content: js.Function0[Unit]): Unit = js.native
+  def describe(title: String, options: OmitTestOptionsplan, content: js.Function0[Unit]): Unit = js.native
   def experiment(title: String, content: js.Function0[Unit]): Unit = js.native
-  @JSName("experiment")
-  def experiment_plan(title: String, options: Omit[TestOptions, plan], content: js.Function0[Unit]): Unit = js.native
+  def experiment(title: String, options: OmitTestOptionsplan, content: js.Function0[Unit]): Unit = js.native
   def it(title: String, options: TestOptions, test: Action): Unit = js.native
   def it(title: String, test: Action): Unit = js.native
   def suite(title: String, content: js.Function0[Unit]): Unit = js.native
-  @JSName("suite")
-  def suite_plan(title: String, options: Omit[TestOptions, plan], content: js.Function0[Unit]): Unit = js.native
+  def suite(title: String, options: OmitTestOptionsplan, content: js.Function0[Unit]): Unit = js.native
   def test(title: String, options: TestOptions, test: Action): Unit = js.native
   def test(title: String, test: Action): Unit = js.native
 }

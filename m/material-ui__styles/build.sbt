@@ -1,19 +1,18 @@
 organization := "org.scalablytyped"
 name := "material-ui__styles"
-version := "4.8.2-3b5f2b"
-scalaVersion := "2.12.10"
+version := "4.9.0-05c2d7"
+scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "csstype" % "2.6.6-fd5644",
-  "org.scalablytyped" %%% "jss" % "10.0.3-ca3ac9",
-  "org.scalablytyped" %%% "material-ui__types" % "4.1.1-74618a",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-b24434",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20191220Z-22d23f",
-  "org.scalablytyped" %%% "std" % "3.7-b6d959")
+  "org.scalablytyped" %%% "csstype" % "2.6.9-2d2033",
+  "org.scalablytyped" %%% "jss" % "10.0.4-d017cb",
+  "org.scalablytyped" %%% "material-ui__types" % "5.0.0-bbff12",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-ece683",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20200122Z-fc5268",
+  "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
+scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
-        

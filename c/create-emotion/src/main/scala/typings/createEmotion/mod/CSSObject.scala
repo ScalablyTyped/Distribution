@@ -35,8 +35,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ K in csstype.csstype.Pseudos ]:? create-emotion.create-emotion.CSSObject} */ /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
 - typings.csstype.mod.SvgPropertiesFallback because var conflicts: clip, clipPath, color, cursor, direction, display, filter, font, fontFamily, fontSize, fontSizeAdjust, fontStretch, fontStyle, fontVariant, fontWeight, imageRendering, letterSpacing, lineHeight, mask, opacity, overflow, paintOrder, pointerEvents, textDecoration, textRendering, unicodeBidi, visibility, whiteSpace, wordSpacing, writingMode. Inlined alignmentBaseline, baselineShift, clipRule, colorInterpolation, colorRendering, dominantBaseline, fill, fillOpacity, fillRule, floodColor, floodOpacity, glyphOrientationVertical, lightingColor, marker, markerEnd, markerMid, markerStart, shapeRendering, stopColor, stopOpacity, stroke, strokeDasharray, strokeDashoffset, strokeLinecap, strokeLinejoin, strokeMiterlimit, strokeOpacity, strokeWidth, textAnchor, vectorEffect */ trait CSSObject
   extends CSSOthersObject
      with StandardLonghandPropertiesFallback[Double | String]
@@ -44,6 +43,7 @@ import scala.scalajs.js.annotation._
      with VendorLonghandPropertiesFallback[Double | String]
      with VendorShorthandPropertiesFallback[Double | String]
      with ObsoletePropertiesFallback[Double | String]
+     with CSSPseudoObject
      with _Interpolation {
   var alignmentBaseline: js.UndefOr[AlignmentBaselineProperty | js.Array[AlignmentBaselineProperty]] = js.undefined
   var baselineShift: js.UndefOr[
@@ -88,7 +88,7 @@ import scala.scalajs.js.annotation._
 object CSSObject {
   @scala.inline
   def apply(
-    CSSOthersObject: CSSOthersObject = null,
+    CSSPseudoObject: CSSPseudoObject = null,
     ObsoletePropertiesFallback: ObsoletePropertiesFallback[Double | String] = null,
     StandardLonghandPropertiesFallback: StandardLonghandPropertiesFallback[Double | String] = null,
     StandardShorthandPropertiesFallback: StandardShorthandPropertiesFallback[Double | String] = null,
@@ -127,7 +127,7 @@ object CSSObject {
     vectorEffect: VectorEffectProperty | js.Array[VectorEffectProperty] = null
   ): CSSObject = {
     val __obj = js.Dynamic.literal()
-    if (CSSOthersObject != null) js.Dynamic.global.Object.assign(__obj, CSSOthersObject)
+    if (CSSPseudoObject != null) js.Dynamic.global.Object.assign(__obj, CSSPseudoObject)
     if (ObsoletePropertiesFallback != null) js.Dynamic.global.Object.assign(__obj, ObsoletePropertiesFallback)
     if (StandardLonghandPropertiesFallback != null) js.Dynamic.global.Object.assign(__obj, StandardLonghandPropertiesFallback)
     if (StandardShorthandPropertiesFallback != null) js.Dynamic.global.Object.assign(__obj, StandardShorthandPropertiesFallback)

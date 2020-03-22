@@ -3,21 +3,21 @@ package typings.angularRoute.mod.angularAugmentingMod.route
 import org.scalablytyped.runtime.StringDictionary
 import typings.angular.mod.IPromise
 import typings.angular.mod.Injectable
-import typings.angularRoute.AnonIndex
+import typings.angularRoute.AnonDictindex
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // see http://docs.angularjs.org/api/ng.$route#current
 trait ICurrentRoute extends IRoute {
-  var locals: AnonIndex
+  var locals: AnonDictindex
   var params: js.Any
 }
 
 object ICurrentRoute {
   @scala.inline
   def apply(
-    locals: AnonIndex,
+    locals: AnonDictindex,
     params: js.Any,
     caseInsensitiveMatch: js.UndefOr[Boolean] = js.undefined,
     controller: String | InlineAnnotatedFunction = null,

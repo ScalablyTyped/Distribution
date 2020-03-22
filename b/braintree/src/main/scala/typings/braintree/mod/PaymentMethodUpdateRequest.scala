@@ -1,13 +1,13 @@
 package typings.braintree.mod
 
-import typings.braintree.AnonCompanyCountryCodeAlpha2
-import typings.braintree.AnonMakeDefault
+import typings.braintree.AnonCountryCodeAlpha2
+import typings.braintree.AnonVerificationAcmount
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PaymentMethodUpdateRequest extends js.Object {
-  var billingAddress: js.UndefOr[AnonCompanyCountryCodeAlpha2] = js.undefined
+  var billingAddress: js.UndefOr[AnonCountryCodeAlpha2] = js.undefined
   var billingAddressId: js.UndefOr[String] = js.undefined
   var cardholderName: js.UndefOr[String] = js.undefined
   var cvv: js.UndefOr[String] = js.undefined
@@ -16,14 +16,14 @@ trait PaymentMethodUpdateRequest extends js.Object {
   var expirationMonth: js.UndefOr[String] = js.undefined
   var expirationYear: js.UndefOr[String] = js.undefined
   var number: js.UndefOr[String] = js.undefined
-  var options: js.UndefOr[AnonMakeDefault] = js.undefined
+  var options: js.UndefOr[AnonVerificationAcmount] = js.undefined
   var paymentMethodNonce: js.UndefOr[String] = js.undefined
 }
 
 object PaymentMethodUpdateRequest {
   @scala.inline
   def apply(
-    billingAddress: AnonCompanyCountryCodeAlpha2 = null,
+    billingAddress: AnonCountryCodeAlpha2 = null,
     billingAddressId: String = null,
     cardholderName: String = null,
     cvv: String = null,
@@ -32,7 +32,7 @@ object PaymentMethodUpdateRequest {
     expirationMonth: String = null,
     expirationYear: String = null,
     number: String = null,
-    options: AnonMakeDefault = null,
+    options: AnonVerificationAcmount = null,
     paymentMethodNonce: String = null
   ): PaymentMethodUpdateRequest = {
     val __obj = js.Dynamic.literal()

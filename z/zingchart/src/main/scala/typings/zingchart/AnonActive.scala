@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonActive extends js.Object {
-  var active: js.UndefOr[AnonAlphaBackgroundcolorNumber] = js.undefined
+  var active: js.UndefOr[AnonAlphaNumber] = js.undefined
   /**
     * Forces the plotarea to consider the preview object positioning and prevent overlapping with it. true | false | 1 | 0
     */
@@ -29,14 +29,12 @@ trait AnonActive extends js.Object {
     * Sets the border width of the object. 4 | "6px" | ...
     */
   var `border-width`: js.UndefOr[js.Any] = js.undefined
-  var handle: js.UndefOr[AnonAlphaBackgroundcolorBorderbottomBordercolor] = js.undefined
+  var handle: js.UndefOr[AnonBorderright] = js.undefined
   /**
     * Sets the object's height. 10 | "20px" | 0.3 | "30%" | ...
     */
   var height: js.UndefOr[js.Any] = js.undefined
-  var label: js.UndefOr[
-    AnonAlphaAngleBackgroundcolorBackgroundcolor1Backgroundcolor2BackgroundfitBackgroundimageBackgroundpositionBackgroundrepeatBoldBorderbottom
-  ] = js.undefined
+  var label: js.UndefOr[AnonBorderradiustopleft] = js.undefined
   /**
     * Sets whether the chart is updated when the preview active area is being moved. Default is false for classic theme and true for lig
     * ht/dark themes. The graph will update only when a the mouse is released. true | false | 1 | 0
@@ -46,7 +44,7 @@ trait AnonActive extends js.Object {
     * Sets the object's margins. 10 | "5px" | "10 20" | "5px 10px 15px 20px" | ...
     */
   var margin: js.UndefOr[js.Any] = js.undefined
-  var mask: js.UndefOr[AnonAlphaBackgroundcolorNumber] = js.undefined
+  var mask: js.UndefOr[AnonAlphaNumber] = js.undefined
   /**
     * Sets the minimum width of preview's active area. 5 | 10 | ...
     */
@@ -76,18 +74,18 @@ trait AnonActive extends js.Object {
 object AnonActive {
   @scala.inline
   def apply(
-    active: AnonAlphaBackgroundcolorNumber = null,
+    active: AnonAlphaNumber = null,
     `adjust-layout`: js.UndefOr[Boolean] = js.undefined,
     alpha: Int | Double = null,
     `background-color`: String = null,
     `border-color`: String = null,
     `border-width`: js.Any = null,
-    handle: AnonAlphaBackgroundcolorBorderbottomBordercolor = null,
+    handle: AnonBorderright = null,
     height: js.Any = null,
-    label: AnonAlphaAngleBackgroundcolorBackgroundcolor1Backgroundcolor2BackgroundfitBackgroundimageBackgroundpositionBackgroundrepeatBoldBorderbottom = null,
+    label: AnonBorderradiustopleft = null,
     live: js.UndefOr[Boolean] = js.undefined,
     margin: js.Any = null,
-    mask: AnonAlphaBackgroundcolorNumber = null,
+    mask: AnonAlphaNumber = null,
     `min-distance`: Int | Double = null,
     position: String = null,
     `preserve-zoom`: js.UndefOr[Boolean] = js.undefined,

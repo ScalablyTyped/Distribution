@@ -4,7 +4,6 @@ import typings.materialBase.foundationMod.MDCFoundation
 import typings.materialTabScroller.adapterMod.MDCTabScrollerAdapter
 import typings.materialTabScroller.rtlScrollerMod.MDCTabScrollerRTL
 import typings.std.Event_
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +13,7 @@ import scala.scalajs.js.annotation._
 object foundationMod extends js.Object {
   @js.native
   class MDCTabScrollerFoundation () extends MDCFoundation[MDCTabScrollerAdapter] {
-    def this(adapter: Partial[MDCTabScrollerAdapter]) = this()
+    def this(adapter: PartialMDCTabScrollerAdap) = this()
     // Subclasses should override this method to perform de-initialization routines (de-registering events, etc.)
     /* CompleteClass */
     override def destroy(): Unit = js.native
@@ -35,10 +34,15 @@ object foundationMod extends js.Object {
       */
     def handleTransitionEnd(evt: Event_): Unit = js.native
     /**
-      * Increment the scroll value by the scrollXIncrement
+      * Increment the scroll value by the scrollXIncrement using animation.
       * @param scrollXIncrement The value by which to increment the scroll position
       */
     def incrementScroll(scrollXIncrement: Double): Unit = js.native
+    /**
+      * Increment the scroll value by the scrollXIncrement without animation.
+      * @param scrollXIncrement The value by which to increment the scroll position
+      */
+    def incrementScrollImmediate(scrollXIncrement: Double): Unit = js.native
     // Subclasses should override this method to perform initialization routines (registering events, etc.)
     /* CompleteClass */
     override def init(): Unit = js.native
@@ -50,7 +54,7 @@ object foundationMod extends js.Object {
   
   @js.native
   class default () extends MDCTabScrollerFoundation {
-    def this(adapter: Partial[MDCTabScrollerAdapter]) = this()
+    def this(adapter: PartialMDCTabScrollerAdap) = this()
   }
   
   /* static members */

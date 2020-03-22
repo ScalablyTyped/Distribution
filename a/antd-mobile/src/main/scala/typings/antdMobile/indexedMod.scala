@@ -32,7 +32,7 @@ object indexedMod extends js.Object {
   /* static members */
   @js.native
   object default extends js.Object {
-    var defaultProps: AnonListPrefixClsListViewPrefixCls = js.native
+    var defaultProps: AnonListViewPrefixCls = js.native
   }
   
 }

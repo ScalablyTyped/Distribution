@@ -3,7 +3,7 @@ package typings.loopback.mod
 import typings.expressServeStaticCore.mod.Handler
 import typings.loopback.AnonDataSource
 import typings.loopback.AnonEnabled
-import typings.loopback.TypeofClassModel
+import typings.loopback.TypeofModel
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -211,7 +211,7 @@ trait LoopBackApplication
     * ``
     *  @returns {Array} Array of model classes
     */
-  def models(): js.Array[TypeofClassModel] = js.native
+  def models(): js.Array[TypeofModel] = js.native
   /**
     * Get all remote objects.
     * @returns {any} [Remote objects](apidocs.strongloop.com/strong-remoting/#remoteObjectsoptions).

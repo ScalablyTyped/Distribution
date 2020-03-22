@@ -1,6 +1,6 @@
 package typings.oracleOraclejet.ojlegendMod
 
-import typings.oracleOraclejet.AnonComponentNameLabelAndValue
+import typings.oracleOraclejet.AnonLabelAndValue
 import typings.oracleOraclejet.ojdataproviderMod.DataProvider
 import typings.oracleOraclejet.ojdvtBaseMod.dvtBaseComponentSettableProperties
 import typings.oracleOraclejet.ojkeysetMod.KeySet
@@ -38,7 +38,7 @@ trait ojLegendSettableProperties[K, D] extends dvtBaseComponentSettablePropertie
   var symbolWidth: Double
   var textStyle: js.UndefOr[js.Object] = js.undefined
   @JSName("translations")
-  var translations_ojLegendSettableProperties: AnonComponentNameLabelAndValue
+  var translations_ojLegendSettableProperties: AnonLabelAndValue
   var valign: middle | bottom | top
 }
 
@@ -58,7 +58,7 @@ object ojLegendSettableProperties {
     symbolHeight: Double,
     symbolWidth: Double,
     trackResize: on | off,
-    translations: AnonComponentNameLabelAndValue,
+    translations: AnonLabelAndValue,
     valign: middle | bottom | top,
     data: DataProvider[K, D] = null,
     expanded: KeySet[K] = null,

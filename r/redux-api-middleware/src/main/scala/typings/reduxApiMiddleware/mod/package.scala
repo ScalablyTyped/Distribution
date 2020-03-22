@@ -16,5 +16,4 @@ package object mod {
   type RSAASuccessAction[Payload, Meta] = typings.reduxApiMiddleware.mod.RSAAResultAction[Payload, Meta]
   type RSAASuccessType[State, Payload, Meta] = java.lang.String | js.Symbol | (typings.reduxApiMiddleware.mod.RSAASuccessTypeDescriptor[State, Payload, Meta])
   type TypeOrResolver[Arg, Type] = Type | (js.Function1[/* arg */ Arg, Type])
-  type ValidAction[Payload, Meta] = typings.reduxApiMiddleware.AnonError with (typings.reduxApiMiddleware.AnonPayload[Payload] | js.Object) with (typings.reduxApiMiddleware.AnonMeta[Meta] | js.Object)
 }

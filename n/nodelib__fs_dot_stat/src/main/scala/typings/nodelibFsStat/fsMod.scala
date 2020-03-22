@@ -2,7 +2,6 @@ package typings.nodelibFsStat
 
 import typings.node.fsMod.PathLike
 import typings.node.fsMod.Stats
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,7 +22,7 @@ object fsMod extends js.Object {
   }
   
   val FILE_SYSTEM_ADAPTER: FileSystemAdapter = js.native
-  def getFileSystemAdapter(): FileSystemAdapter = js.native
-  def getFileSystemAdapter(fsMethods: Partial[FileSystemAdapter]): FileSystemAdapter = js.native
+  def createFileSystemAdapter(): FileSystemAdapter = js.native
+  def createFileSystemAdapter(fsMethods: PartialFileSystemAdapter): FileSystemAdapter = js.native
 }
 

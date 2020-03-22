@@ -6,12 +6,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/* Inlined {  active ? :grommet.grommet/utils.ColorType,   black ? :grommet.grommet/utils.ColorType,   border ? :grommet.grommet/utils.ColorType,   brand ? :grommet.grommet/utils.ColorType,   control ? :grommet.grommet/utils.ColorType,   focus ? :grommet.grommet/utils.ColorType,   placeholder ? :grommet.grommet/utils.ColorType,   selected ? :grommet.grommet/utils.ColorType,   text ? :grommet.grommet/utils.ColorType,   icon ? :grommet.grommet/utils.ColorType,   white ? :grommet.grommet/utils.ColorType} & {  accent-1 ? :grommet.grommet/utils.ColorType,   accent-2 ? :grommet.grommet/utils.ColorType,   accent-3 ? :grommet.grommet/utils.ColorType,   accent-4 ? :grommet.grommet/utils.ColorType,   background-back ? :grommet.grommet/utils.ColorType,   background-contrast ? :grommet.grommet/utils.ColorType,   background-front ? :grommet.grommet/utils.ColorType,   neutral-1 ? :grommet.grommet/utils.ColorType,   neutral-2 ? :grommet.grommet/utils.ColorType,   neutral-3 ? :grommet.grommet/utils.ColorType,   neutral-4 ? :grommet.grommet/utils.ColorType,   dark-1 ? :grommet.grommet/utils.ColorType,   dark-2 ? :grommet.grommet/utils.ColorType,   dark-3 ? :grommet.grommet/utils.ColorType,   dark-4 ? :grommet.grommet/utils.ColorType,   dark-5 ? :grommet.grommet/utils.ColorType,   dark-6 ? :grommet.grommet/utils.ColorType,   light-1 ? :grommet.grommet/utils.ColorType,   light-2 ? :grommet.grommet/utils.ColorType,   light-3 ? :grommet.grommet/utils.ColorType,   light-4 ? :grommet.grommet/utils.ColorType,   light-5 ? :grommet.grommet/utils.ColorType,   light-6 ? :grommet.grommet/utils.ColorType,   status-critical ? :grommet.grommet/utils.ColorType,   status-error ? :grommet.grommet/utils.ColorType,   status-warning ? :grommet.grommet/utils.ColorType,   status-ok ? :grommet.grommet/utils.ColorType,   status-unknown ? :grommet.grommet/utils.ColorType,   status-disabled ? :grommet.grommet/utils.ColorType,   graph-0 ? :grommet.grommet/utils.ColorType,   graph-1 ? :grommet.grommet/utils.ColorType,   graph-2 ? :grommet.grommet/utils.ColorType,   graph-3 ? :grommet.grommet/utils.ColorType,   graph-4 ? :grommet.grommet/utils.ColorType,   graph-5 ? :grommet.grommet/utils.ColorType, [x: string] : grommet.grommet/utils.ColorType} */
 trait Colors extends /* x */ StringDictionary[ColorType] {
   var `accent-1`: js.UndefOr[ColorType] = js.undefined
   var `accent-2`: js.UndefOr[ColorType] = js.undefined
   var `accent-3`: js.UndefOr[ColorType] = js.undefined
   var `accent-4`: js.UndefOr[ColorType] = js.undefined
   var active: js.UndefOr[ColorType] = js.undefined
+  var `background-back`: js.UndefOr[ColorType] = js.undefined
+  var `background-contrast`: js.UndefOr[ColorType] = js.undefined
+  var `background-front`: js.UndefOr[ColorType] = js.undefined
   var black: js.UndefOr[ColorType] = js.undefined
   var border: js.UndefOr[ColorType] = js.undefined
   var brand: js.UndefOr[ColorType] = js.undefined
@@ -61,6 +65,9 @@ object Colors {
     `accent-3`: ColorType = null,
     `accent-4`: ColorType = null,
     active: ColorType = null,
+    `background-back`: ColorType = null,
+    `background-contrast`: ColorType = null,
+    `background-front`: ColorType = null,
     black: ColorType = null,
     border: ColorType = null,
     brand: ColorType = null,
@@ -107,6 +114,9 @@ object Colors {
     if (`accent-3` != null) __obj.updateDynamic("accent-3")(`accent-3`.asInstanceOf[js.Any])
     if (`accent-4` != null) __obj.updateDynamic("accent-4")(`accent-4`.asInstanceOf[js.Any])
     if (active != null) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (`background-back` != null) __obj.updateDynamic("background-back")(`background-back`.asInstanceOf[js.Any])
+    if (`background-contrast` != null) __obj.updateDynamic("background-contrast")(`background-contrast`.asInstanceOf[js.Any])
+    if (`background-front` != null) __obj.updateDynamic("background-front")(`background-front`.asInstanceOf[js.Any])
     if (black != null) __obj.updateDynamic("black")(black.asInstanceOf[js.Any])
     if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
     if (brand != null) __obj.updateDynamic("brand")(brand.asInstanceOf[js.Any])

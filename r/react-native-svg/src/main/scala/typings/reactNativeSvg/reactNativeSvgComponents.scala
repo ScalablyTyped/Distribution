@@ -15,6 +15,8 @@ object reactNativeSvgComponents extends reactNativeSvgProps {
   @scala.inline
   def Ellipse: ComponentType[EllipseProps] = js.constructorOf[typings.reactNativeSvg.mod.Ellipse].asInstanceOf[typings.react.mod.ComponentType[EllipseProps]]
   @scala.inline
+  def ForeignObject: ComponentType[ForeignObjectProps] = js.constructorOf[typings.reactNativeSvg.mod.ForeignObject].asInstanceOf[typings.react.mod.ComponentType[ForeignObjectProps]]
+  @scala.inline
   def G: ComponentType[GProps] = js.constructorOf[typings.reactNativeSvg.mod.G].asInstanceOf[typings.react.mod.ComponentType[GProps]]
   @scala.inline
   def Image: ComponentType[ImageProps] = js.constructorOf[typings.reactNativeSvg.mod.Image].asInstanceOf[typings.react.mod.ComponentType[ImageProps]]

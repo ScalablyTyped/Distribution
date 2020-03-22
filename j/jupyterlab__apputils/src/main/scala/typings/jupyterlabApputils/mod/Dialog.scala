@@ -1,6 +1,7 @@
 package typings.jupyterlabApputils.mod
 
-import typings.jupyterlabApputils.dialogMod.Dialog.IButton
+import typings.jupyterlabApputils.PartialIButton
+import typings.jupyterlabApputils.ReadonlyIButton
 import typings.jupyterlabApputils.dialogMod.Dialog.IOptions
 import typings.std.Partial
 import scala.scalajs.js
@@ -40,12 +41,12 @@ object Dialog extends js.Object {
   /**
     * Create a reject button.
     */
-  def cancelButton(): IButton = js.native
-  def cancelButton(options: Partial[IButton]): IButton = js.native
+  def cancelButton(): ReadonlyIButton = js.native
+  def cancelButton(options: PartialIButton): ReadonlyIButton = js.native
   /**
     * Create a button item.
     */
-  def createButton(value: Partial[IButton]): IButton = js.native
+  def createButton(value: PartialIButton): ReadonlyIButton = js.native
   /**
     * Disposes all dialog instances.
     *
@@ -57,12 +58,12 @@ object Dialog extends js.Object {
   /**
     * Create an accept button.
     */
-  def okButton(): IButton = js.native
-  def okButton(options: Partial[IButton]): IButton = js.native
+  def okButton(): ReadonlyIButton = js.native
+  def okButton(options: PartialIButton): ReadonlyIButton = js.native
   /**
     * Create a warn button.
     */
-  def warnButton(): IButton = js.native
-  def warnButton(options: Partial[IButton]): IButton = js.native
+  def warnButton(): ReadonlyIButton = js.native
+  def warnButton(options: PartialIButton): ReadonlyIButton = js.native
 }
 

@@ -1,7 +1,7 @@
 package typings.graphql.schemaMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.graphql.AnonAllowedLegacyNames
+import typings.graphql.GraphQLSchemaConfigtypesA
 import typings.graphql.astMod.SchemaDefinitionNode
 import typings.graphql.astMod.SchemaExtensionNode
 import typings.graphql.definitionMod.GraphQLAbstractType
@@ -30,6 +30,6 @@ class GraphQLSchema protected () extends js.Object {
   def getType(name: String): Maybe[GraphQLNamedType] = js.native
   def getTypeMap(): TypeMap = js.native
   def isPossibleType(abstractType: GraphQLAbstractType, possibleType: GraphQLObjectType[_, _, StringDictionary[_]]): Boolean = js.native
-  def toConfig(): GraphQLSchemaConfig with AnonAllowedLegacyNames = js.native
+  def toConfig(): GraphQLSchemaConfigtypesA = js.native
 }
 

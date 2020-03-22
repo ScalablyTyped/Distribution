@@ -1,17 +1,23 @@
 package typings.tcomb
 
-import typings.tcomb.mod.TypeGuardPredicate
+import typings.tcomb.mod.Constructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait AnonIdentityKind[T] extends js.Object {
-  var identity: Boolean = js.native
-  var kind: String = js.native
-  var name: String = js.native
-  @JSName("predicate")
-  var predicate_Original: TypeGuardPredicate[T] = js.native
-  def predicate(x: js.Any): /* is T */ Boolean = js.native
+  var identity: Boolean
+  var kind: String
+  var name: String
+  var types: js.Array[Constructor[T]]
+}
+
+object AnonIdentityKind {
+  @scala.inline
+  def apply[T](identity: Boolean, kind: String, name: String, types: js.Array[Constructor[T]]): AnonIdentityKind[T] = {
+    val __obj = js.Dynamic.literal(identity = identity.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[AnonIdentityKind[T]]
+  }
 }
 

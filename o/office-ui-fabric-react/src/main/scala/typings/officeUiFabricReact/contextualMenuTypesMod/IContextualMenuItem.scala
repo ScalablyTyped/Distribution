@@ -1,6 +1,7 @@
 package typings.officeUiFabricReact.contextualMenuTypesMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.officeUiFabricReact.PartialIContextualMenuIte
 import typings.officeUiFabricReact.contextualMenuClassNamesMod.IMenuItemClassNames
 import typings.officeUiFabricReact.contextualMenuItemTypesMod.IContextualMenuItemProps
 import typings.officeUiFabricReact.contextualMenuItemTypesMod.IContextualMenuRenderItem
@@ -14,7 +15,6 @@ import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
 import typings.react.mod._Global_.JSX.Element
 import typings.std.HTMLElement
-import typings.std.Partial
 import typings.uifabricStyling.ithemeMod.ITheme
 import typings.uifabricUtilities.createRefMod.IRefObject
 import typings.uifabricUtilities.irenderfunctionMod.IRenderFunction
@@ -107,7 +107,7 @@ trait IContextualMenuItem
   /**
     * Optional IContextualMenuItemProps overrides to customize behaviors such as item styling via `styles`.
     */
-  var itemProps: js.UndefOr[Partial[IContextualMenuItemProps]] = js.undefined
+  var itemProps: js.UndefOr[PartialIContextualMenuIte] = js.undefined
   var itemType: js.UndefOr[ContextualMenuItemType] = js.undefined
   /**
     * Unique id to identify the item
@@ -250,7 +250,7 @@ object IContextualMenuItem {
     href: String = null,
     iconProps: IIconProps = null,
     inactive: js.UndefOr[Boolean] = js.undefined,
-    itemProps: Partial[IContextualMenuItemProps] = null,
+    itemProps: PartialIContextualMenuIte = null,
     itemType: ContextualMenuItemType = null,
     keytipProps: IKeytipProps = null,
     name: String = null,

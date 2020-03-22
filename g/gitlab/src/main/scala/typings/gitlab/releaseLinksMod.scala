@@ -21,7 +21,9 @@ object releaseLinksMod extends js.Object {
     def create(projectId: String, tagName: String, name: String, url: String, options: Sudo): js.Promise[js.Object] = js.native
     def create(projectId: Double, tagName: String, name: String, url: String): js.Promise[js.Object] = js.native
     def create(projectId: Double, tagName: String, name: String, url: String, options: Sudo): js.Promise[js.Object] = js.native
+    def edit(projectId: String, tagName: String, linkId: Double): js.Promise[js.Object] = js.native
     def edit(projectId: String, tagName: String, linkId: Double, options: Sudo with (AnonName | AnonUrl)): js.Promise[js.Object] = js.native
+    def edit(projectId: Double, tagName: String, linkId: Double): js.Promise[js.Object] = js.native
     def edit(projectId: Double, tagName: String, linkId: Double, options: Sudo with (AnonName | AnonUrl)): js.Promise[js.Object] = js.native
     def remove(projectId: String, tagName: String, linkId: Double): js.Promise[js.Object] = js.native
     def remove(projectId: String, tagName: String, linkId: Double, options: Sudo): js.Promise[js.Object] = js.native

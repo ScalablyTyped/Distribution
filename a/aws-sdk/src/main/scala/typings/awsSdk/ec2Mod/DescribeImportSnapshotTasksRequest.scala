@@ -17,7 +17,7 @@ trait DescribeImportSnapshotTasksRequest extends js.Object {
   /**
     * A list of import snapshot task IDs.
     */
-  var ImportTaskIds: js.UndefOr[ImportTaskIdList] = js.native
+  var ImportTaskIds: js.UndefOr[ImportSnapshotTaskIdList] = js.native
   /**
     * The maximum number of results to return in a single call. To retrieve the remaining results, make another call with the returned NextToken value.
     */
@@ -33,7 +33,7 @@ object DescribeImportSnapshotTasksRequest {
   def apply(
     DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     Filters: FilterList = null,
-    ImportTaskIds: ImportTaskIdList = null,
+    ImportTaskIds: ImportSnapshotTaskIdList = null,
     MaxResults: Int | scala.Double = null,
     NextToken: String = null
   ): DescribeImportSnapshotTasksRequest = {

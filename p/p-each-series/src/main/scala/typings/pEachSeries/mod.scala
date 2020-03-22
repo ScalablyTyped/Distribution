@@ -15,7 +15,7 @@ object mod extends js.Object {
   // ): Promise<ValueType[]>;
   // export = pEachSeries;
   @JSName("default")
-  var default_Original: AnonDefault = js.native
+  var default_Original: AnonCall = js.native
   /**
   	Iterate over promises serially.
   	@param input - Iterated over serially in the `iterator` function.

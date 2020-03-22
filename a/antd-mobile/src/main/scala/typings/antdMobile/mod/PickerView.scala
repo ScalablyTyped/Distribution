@@ -1,6 +1,6 @@
 package typings.antdMobile.mod
 
-import typings.antdMobile.AnonCascadeCols
+import typings.antdMobile.AnonCols
 import typings.antdMobile.pickerViewMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,6 +14,6 @@ class PickerView () extends default
 @JSImport("antd-mobile", "PickerView")
 @js.native
 object PickerView extends js.Object {
-  var defaultProps: AnonCascadeCols = js.native
+  var defaultProps: AnonCols = js.native
 }
 

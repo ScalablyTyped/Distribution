@@ -2,8 +2,8 @@ package typings.gapiClientGenomics.gapi.client.genomics
 
 import typings.gapiClient.gapi.client.Request_
 import typings.gapiClientGenomics.AnonAccesstoken
-import typings.gapiClientGenomics.AnonAccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPpPrettyPrintQuotaUserUpdateMaskUploadType
-import typings.gapiClientGenomics.AnonAccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPpPrettyPrintQuotaUserUploadTypeUploadprotocol
+import typings.gapiClientGenomics.AnonUploadprotocol
+import typings.gapiClientGenomics.AnonVariantSetId
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,9 +29,7 @@ trait VariantsetsResource extends js.Object {
     * [Fundamentals of Google
     * Genomics](https://cloud.google.com/genomics/fundamentals-of-google-genomics)
     */
-  def delete(
-    request: AnonAccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPpPrettyPrintQuotaUserUploadTypeUploadprotocol
-  ): Request_[js.Object]
+  def delete(request: AnonUploadprotocol): Request_[js.Object]
   /**
     * Exports variant set data to an external destination.
     *
@@ -39,9 +37,7 @@ trait VariantsetsResource extends js.Object {
     * [Fundamentals of Google
     * Genomics](https://cloud.google.com/genomics/fundamentals-of-google-genomics)
     */
-  def export(
-    request: AnonAccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPpPrettyPrintQuotaUserUploadTypeUploadprotocol
-  ): Request_[Operation]
+  def export(request: AnonUploadprotocol): Request_[Operation]
   /**
     * Gets a variant set by ID.
     *
@@ -49,9 +45,7 @@ trait VariantsetsResource extends js.Object {
     * [Fundamentals of Google
     * Genomics](https://cloud.google.com/genomics/fundamentals-of-google-genomics)
     */
-  def get(
-    request: AnonAccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPpPrettyPrintQuotaUserUploadTypeUploadprotocol
-  ): Request_[VariantSet]
+  def get(request: AnonUploadprotocol): Request_[VariantSet]
   /**
     * Updates a variant set using patch semantics.
     *
@@ -59,9 +53,7 @@ trait VariantsetsResource extends js.Object {
     * [Fundamentals of Google
     * Genomics](https://cloud.google.com/genomics/fundamentals-of-google-genomics)
     */
-  def patch(
-    request: AnonAccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPpPrettyPrintQuotaUserUpdateMaskUploadType
-  ): Request_[VariantSet]
+  def patch(request: AnonVariantSetId): Request_[VariantSet]
   /**
     * Returns a list of all variant sets matching search criteria.
     *
@@ -79,10 +71,10 @@ object VariantsetsResource {
   @scala.inline
   def apply(
     create: AnonAccesstoken => Request_[VariantSet],
-    delete: AnonAccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPpPrettyPrintQuotaUserUploadTypeUploadprotocol => Request_[js.Object],
-    export: AnonAccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPpPrettyPrintQuotaUserUploadTypeUploadprotocol => Request_[Operation],
-    get: AnonAccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPpPrettyPrintQuotaUserUploadTypeUploadprotocol => Request_[VariantSet],
-    patch: AnonAccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPpPrettyPrintQuotaUserUpdateMaskUploadType => Request_[VariantSet],
+    delete: AnonUploadprotocol => Request_[js.Object],
+    export: AnonUploadprotocol => Request_[Operation],
+    get: AnonUploadprotocol => Request_[VariantSet],
+    patch: AnonVariantSetId => Request_[VariantSet],
     search: AnonAccesstoken => Request_[SearchVariantSetsResponse]
   ): VariantsetsResource = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), export = js.Any.fromFunction1(export), get = js.Any.fromFunction1(get), patch = js.Any.fromFunction1(patch), search = js.Any.fromFunction1(search))

@@ -11,7 +11,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonAcceptance extends js.Object {
-  var acceptance: js.UndefOr[AnonAccepted] = js.undefined
+  var acceptance: js.UndefOr[AnonOffline] = js.undefined
   var amount: js.UndefOr[Double | Null] = js.undefined
   var currency: js.UndefOr[String] = js.undefined
   var interval: js.UndefOr[one_time | scheduled | variable] = js.undefined
@@ -21,7 +21,7 @@ trait AnonAcceptance extends js.Object {
 object AnonAcceptance {
   @scala.inline
   def apply(
-    acceptance: AnonAccepted = null,
+    acceptance: AnonOffline = null,
     amount: Int | Double = null,
     currency: String = null,
     interval: one_time | scheduled | variable = null,

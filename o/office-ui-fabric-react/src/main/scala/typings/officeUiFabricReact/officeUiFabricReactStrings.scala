@@ -78,10 +78,13 @@ object officeUiFabricReactStrings {
   sealed trait IBaseCardProps extends js.Object
   
   @js.native
-  sealed trait IDetailsRowFieldsProps extends js.Object
+  sealed trait PartialIStackProps extends js.Object
   
   @js.native
   sealed trait References extends PageKind
+  
+  @js.native
+  sealed trait WeakValidationMapIStackPr extends js.Object
   
   @js.native
   sealed trait _empty extends js.Object
@@ -111,7 +114,10 @@ object officeUiFabricReactStrings {
   sealed trait actionButton_c28b7666 extends js.Object
   
   @js.native
-  sealed trait alignContent extends js.Object
+  sealed trait additions extends js.Object
+  
+  @js.native
+  sealed trait `additions text` extends js.Object
   
   @js.native
   sealed trait all extends js.Object
@@ -120,7 +126,7 @@ object officeUiFabricReactStrings {
   sealed trait always extends ScrollbarVisibility
   
   @js.native
-  sealed trait anySelected extends js.Object
+  sealed trait ascending extends js.Object
   
   @js.native
   sealed trait assertive extends js.Object
@@ -130,9 +136,6 @@ object officeUiFabricReactStrings {
     extends Overflow
        with typings.officeUiFabricReact.stackHorizontalWrapAdvancedExampleMod.Overflow
        with ScrollbarVisibility
-  
-  @js.native
-  sealed trait autoAdjustHeight extends js.Object
   
   @js.native
   sealed trait b extends js.Object
@@ -192,7 +195,7 @@ object officeUiFabricReactStrings {
   sealed trait borderBottom extends js.Object
   
   @js.native
-  sealed trait borderless extends js.Object
+  sealed trait both extends js.Object
   
   @js.native
   sealed trait bottom extends SpinnerLabelPosition
@@ -208,6 +211,9 @@ object officeUiFabricReactStrings {
   
   @js.native
   sealed trait buildClassMap extends js.Object
+  
+  @js.native
+  sealed trait button extends js.Object
   
   @js.native
   sealed trait buttonBackground extends js.Object
@@ -246,15 +252,6 @@ object officeUiFabricReactStrings {
   sealed trait callout_13859ee7 extends js.Object
   
   @js.native
-  sealed trait canSelect extends js.Object
-  
-  @js.native
-  sealed trait cellStyleProps extends js.Object
-  
-  @js.native
-  sealed trait cellsByColumn extends js.Object
-  
-  @js.native
   sealed trait center extends Alignment
   
   @js.native
@@ -270,9 +267,6 @@ object officeUiFabricReactStrings {
   sealed trait checkbox extends js.Object
   
   @js.native
-  sealed trait checked extends js.Object
-  
-  @js.native
   sealed trait circle extends js.Object
   
   @js.native
@@ -282,25 +276,16 @@ object officeUiFabricReactStrings {
   sealed trait `class` extends ApiKind
   
   @js.native
-  sealed trait className extends js.Object
-  
-  @js.native
-  sealed trait clearButtonProps extends js.Object
-  
-  @js.native
   sealed trait closeButton_640b6fe8 extends js.Object
   
   @js.native
   sealed trait closeButton_c28b7666 extends js.Object
   
   @js.native
-  sealed trait compact extends js.Object
-  
-  @js.native
-  sealed trait containerClassName extends js.Object
-  
-  @js.native
   sealed trait content_35e9f74a extends js.Object
+  
+  @js.native
+  sealed trait copy extends js.Object
   
   @js.native
   sealed trait currentDecade_640b6fe8 extends js.Object
@@ -331,6 +316,9 @@ object officeUiFabricReactStrings {
   
   @js.native
   sealed trait `data-portal-element` extends js.Object
+  
+  @js.native
+  sealed trait date extends js.Object
   
   @js.native
   sealed trait dayBackground_640b6fe8 extends js.Object
@@ -378,7 +366,7 @@ object officeUiFabricReactStrings {
   sealed trait decade_640b6fe8 extends js.Object
   
   @js.native
-  sealed trait decrementButtonIcon extends js.Object
+  sealed trait decimal extends js.Object
   
   @js.native
   sealed trait defaultStateBackground extends js.Object
@@ -387,10 +375,10 @@ object officeUiFabricReactStrings {
   sealed trait defaultValue extends js.Object
   
   @js.native
-  sealed trait disableAnimation extends js.Object
+  sealed trait descending extends js.Object
   
   @js.native
-  sealed trait disabled extends js.Object
+  sealed trait dialog extends js.Object
   
   @js.native
   sealed trait disabledBackground extends js.Object
@@ -408,6 +396,9 @@ object officeUiFabricReactStrings {
   sealed trait editingInput_c43ee834 extends js.Object
   
   @js.native
+  sealed trait email extends js.Object
+  
+  @js.native
   sealed trait end extends Alignment
   
   @js.native
@@ -418,6 +409,9 @@ object officeUiFabricReactStrings {
   
   @js.native
   sealed trait errorBackground extends js.Object
+  
+  @js.native
+  sealed trait execute extends js.Object
   
   @js.native
   sealed trait exitKeytipMode extends js.Object
@@ -432,22 +426,10 @@ object officeUiFabricReactStrings {
   sealed trait focusBorder extends js.Object
   
   @js.native
-  sealed trait footerItemsProps extends js.Object
-  
-  @js.native
-  sealed trait forceResolveText extends js.Object
-  
-  @js.native
   sealed trait frame_640b6fe8 extends js.Object
   
   @js.native
   sealed trait g extends js.Object
-  
-  @js.native
-  sealed trait getCellValueKey extends js.Object
-  
-  @js.native
-  sealed trait getClassNames extends js.Object
   
   @js.native
   sealed trait goToTodayIsDisabled_640b6fe8 extends js.Object
@@ -462,6 +444,9 @@ object officeUiFabricReactStrings {
   sealed trait goToday_640b6fe8 extends js.Object
   
   @js.native
+  sealed trait grammar extends js.Object
+  
+  @js.native
   sealed trait green extends js.Object
   
   @js.native
@@ -469,6 +454,9 @@ object officeUiFabricReactStrings {
   
   @js.native
   sealed trait greenLight extends js.Object
+  
+  @js.native
+  sealed trait grid extends js.Object
   
   @js.native
   sealed trait grow extends js.Object
@@ -490,15 +478,6 @@ object officeUiFabricReactStrings {
   
   @js.native
   sealed trait h6 extends js.Object
-  
-  @js.native
-  sealed trait hasCondensedHeadline extends js.Object
-  
-  @js.native
-  sealed trait hasSmallHeadline extends js.Object
-  
-  @js.native
-  sealed trait headerItemsProps extends js.Object
   
   @js.native
   sealed trait headerToggleView_640b6fe8 extends js.Object
@@ -530,16 +509,13 @@ object officeUiFabricReactStrings {
   sealed trait iconContainer_1f34f0f8 extends js.Object
   
   @js.native
-  sealed trait incrementButtonIcon extends js.Object
-  
-  @js.native
   sealed trait inherit extends js.Object
   
   @js.native
   sealed trait initial extends js.Object
   
   @js.native
-  sealed trait initialsColor extends js.Object
+  sealed trait `inline` extends js.Object
   
   @js.native
   sealed trait inputBackground extends js.Object
@@ -555,9 +531,6 @@ object officeUiFabricReactStrings {
   
   @js.native
   sealed trait inputBorderHovered extends js.Object
-  
-  @js.native
-  sealed trait inputClassName extends js.Object
   
   @js.native
   sealed trait inputFocusBorderAlt extends js.Object
@@ -584,25 +557,10 @@ object officeUiFabricReactStrings {
   sealed trait interface extends ApiKind
   
   @js.native
-  sealed trait isAlpha extends js.Object
-  
-  @js.native
-  sealed trait isHeader extends js.Object
-  
-  @js.native
   sealed trait isHighlighted_640b6fe8 extends js.Object
   
   @js.native
-  sealed trait isModeless extends js.Object
-  
-  @js.native
-  sealed trait isOutOfOffice extends js.Object
-  
-  @js.native
   sealed trait isPickingYears_640b6fe8 extends js.Object
-  
-  @js.native
-  sealed trait isWide extends js.Object
   
   @js.native
   sealed trait itemButton_ac7082eb extends js.Object
@@ -650,16 +608,16 @@ object officeUiFabricReactStrings {
   sealed trait `ktp-layer-id` extends js.Object
   
   @js.native
-  sealed trait label extends js.Object
-  
-  @js.native
-  sealed trait labelPosition extends js.Object
-  
-  @js.native
   sealed trait left extends SpinnerLabelPosition
   
   @js.native
   sealed trait leftdate_640b6fe8 extends js.Object
+  
+  @js.native
+  sealed trait link extends js.Object
+  
+  @js.native
+  sealed trait list extends js.Object
   
   @js.native
   sealed trait listBackground extends js.Object
@@ -683,7 +641,10 @@ object officeUiFabricReactStrings {
   sealed trait listText extends js.Object
   
   @js.native
-  sealed trait loadingText extends js.Object
+  sealed trait listbox extends js.Object
+  
+  @js.native
+  sealed trait location extends js.Object
   
   @js.native
   sealed trait logoFillIcon_1f34f0f8 extends js.Object
@@ -704,7 +665,7 @@ object officeUiFabricReactStrings {
   sealed trait magentaLight extends js.Object
   
   @js.native
-  sealed trait max extends js.Object
+  sealed trait menu extends js.Object
   
   @js.native
   sealed trait menuBackground extends js.Object
@@ -734,10 +695,13 @@ object officeUiFabricReactStrings {
   sealed trait menuItemTextHovered extends js.Object
   
   @js.native
+  sealed trait menuitemcheckbox extends js.Object
+  
+  @js.native
   sealed trait method extends js.Object
   
   @js.native
-  sealed trait min extends js.Object
+  sealed trait mixed extends js.Object
   
   @js.native
   sealed trait monthAndYear_640b6fe8 extends js.Object
@@ -773,16 +737,13 @@ object officeUiFabricReactStrings {
   sealed trait monthSelection_640b6fe8 extends js.Object
   
   @js.native
-  sealed trait mostRecentlyUsedHeaderText extends js.Object
+  sealed trait move extends js.Object
   
   @js.native
   sealed trait `ms-Fabric--isFocusVisible` extends js.Object
   
   @js.native
   sealed trait `ms-Icon` extends js.Object
-  
-  @js.native
-  sealed trait multiline extends js.Object
   
   @js.native
   sealed trait neutralDark extends js.Object
@@ -839,22 +800,22 @@ object officeUiFabricReactStrings {
   sealed trait nextYear_640b6fe8 extends js.Object
   
   @js.native
-  sealed trait noResultsFoundText extends js.Object
+  sealed trait no extends js.Object
   
   @js.native
   sealed trait nonLayered_35e9f74a extends js.Object
+  
+  @js.native
+  sealed trait none extends js.Object
+  
+  @js.native
+  sealed trait numeric extends js.Object
   
   @js.native
   sealed trait off extends js.Object
   
   @js.native
   sealed trait on extends js.Object
-  
-  @js.native
-  sealed trait onRenderItemColumn extends js.Object
-  
-  @js.native
-  sealed trait onRenderNoResultFound extends js.Object
   
   @js.native
   sealed trait optionGrid_640b6fe8 extends js.Object
@@ -867,6 +828,12 @@ object officeUiFabricReactStrings {
   
   @js.native
   sealed trait orangeLighter extends js.Object
+  
+  @js.native
+  sealed trait other extends js.Object
+  
+  @js.native
+  sealed trait page extends js.Object
   
   @js.native
   sealed trait peoplePickerPersonaContent_2c1ddeba extends js.Object
@@ -959,7 +926,7 @@ object officeUiFabricReactStrings {
   sealed trait polite extends js.Object
   
   @js.native
-  sealed trait presence extends js.Object
+  sealed trait popup extends js.Object
   
   @js.native
   sealed trait prevDecadeIsDisabled_640b6fe8 extends js.Object
@@ -995,9 +962,6 @@ object officeUiFabricReactStrings {
   sealed trait primaryButtonBorder extends js.Object
   
   @js.native
-  sealed trait primaryText extends js.Object
-  
-  @js.native
   sealed trait property extends js.Object
   
   @js.native
@@ -1022,6 +986,9 @@ object officeUiFabricReactStrings {
   sealed trait relative extends js.Object
   
   @js.native
+  sealed trait removals extends js.Object
+  
+  @js.native
   sealed trait removeButton_23549cfb extends js.Object
   
   @js.native
@@ -1034,7 +1001,7 @@ object officeUiFabricReactStrings {
   sealed trait required extends js.Object
   
   @js.native
-  sealed trait resizable extends js.Object
+  sealed trait reset extends js.Object
   
   @js.native
   sealed trait resultContent_8cc03844 extends js.Object
@@ -1047,15 +1014,6 @@ object officeUiFabricReactStrings {
   
   @js.native
   sealed trait resultItem_b8ec3aca extends js.Object
-  
-  @js.native
-  sealed trait resultsFooter extends js.Object
-  
-  @js.native
-  sealed trait resultsFooterFull extends js.Object
-  
-  @js.native
-  sealed trait resultsMaximumNumber extends js.Object
   
   @js.native
   sealed trait right extends SpinnerLabelPosition
@@ -1097,25 +1055,7 @@ object officeUiFabricReactStrings {
   sealed trait screenReaderOnly_ddf45a20 extends js.Object
   
   @js.native
-  sealed trait scrollableContentClassName extends js.Object
-  
-  @js.native
-  sealed trait searchForMoreText extends js.Object
-  
-  @js.native
-  sealed trait searchingText extends js.Object
-  
-  @js.native
-  sealed trait selected extends js.Object
-  
-  @js.native
-  sealed trait shouldSelectFirstItem extends js.Object
-  
-  @js.native
-  sealed trait showForceResolve extends js.Object
-  
-  @js.native
-  sealed trait showRemoveButtons extends js.Object
+  sealed trait search extends js.Object
   
   @js.native
   sealed trait showWeekNumbersRTL_640b6fe8 extends js.Object
@@ -1125,9 +1065,6 @@ object officeUiFabricReactStrings {
   
   @js.native
   sealed trait shrink extends js.Object
-  
-  @js.native
-  sealed trait size extends js.Object
   
   @js.native
   sealed trait smallInputBorder extends js.Object
@@ -1140,6 +1077,9 @@ object officeUiFabricReactStrings {
   
   @js.native
   sealed trait `space-evenly` extends Alignment
+  
+  @js.native
+  sealed trait spelling extends js.Object
   
   @js.native
   sealed trait square extends js.Object
@@ -1160,31 +1100,19 @@ object officeUiFabricReactStrings {
   sealed trait stretch extends Alignment
   
   @js.native
+  sealed trait submit extends js.Object
+  
+  @js.native
   sealed trait successBackground extends js.Object
   
   @js.native
-  sealed trait suggestionsAvailableAlertText extends js.Object
-  
-  @js.native
   sealed trait suggestionsAvailable_c28b7666 extends js.Object
-  
-  @js.native
-  sealed trait suggestionsClassName extends js.Object
-  
-  @js.native
-  sealed trait suggestionsContainerAriaLabel extends js.Object
   
   @js.native
   sealed trait suggestionsContainer_37972f9d extends js.Object
   
   @js.native
   sealed trait suggestionsContainer_c28b7666 extends js.Object
-  
-  @js.native
-  sealed trait suggestionsHeaderText extends js.Object
-  
-  @js.native
-  sealed trait suggestionsItemClassName extends js.Object
   
   @js.native
   sealed trait suggestionsItemIsSuggested_c28b7666 extends js.Object
@@ -1223,6 +1151,9 @@ object officeUiFabricReactStrings {
   sealed trait tealLight extends js.Object
   
   @js.native
+  sealed trait tel extends js.Object
+  
+  @js.native
   sealed trait text extends js.Object
   
   @js.native
@@ -1259,6 +1190,9 @@ object officeUiFabricReactStrings {
   sealed trait themeTertiary extends js.Object
   
   @js.native
+  sealed trait time extends js.Object
+  
+  @js.native
   sealed trait toggleMonthView_640b6fe8 extends js.Object
   
   @js.native
@@ -1271,10 +1205,13 @@ object officeUiFabricReactStrings {
   sealed trait topLeftCornerDate_640b6fe8 extends js.Object
   
   @js.native
-  sealed trait topOffsetFixed extends js.Object
+  sealed trait topRightCornerDate_640b6fe8 extends js.Object
   
   @js.native
-  sealed trait topRightCornerDate_640b6fe8 extends js.Object
+  sealed trait tree extends js.Object
+  
+  @js.native
+  sealed trait `true` extends js.Object
   
   @js.native
   sealed trait typeAlias extends ApiKind
@@ -1283,10 +1220,10 @@ object officeUiFabricReactStrings {
   sealed trait typeTokens extends js.Object
   
   @js.native
-  sealed trait underlined extends js.Object
+  sealed trait unset extends js.Object
   
   @js.native
-  sealed trait unset extends js.Object
+  sealed trait url extends js.Object
   
   @js.native
   sealed trait validationError_23549cfb extends js.Object
@@ -1374,6 +1311,9 @@ object officeUiFabricReactStrings {
   @js.native
   sealed trait yellowLight extends js.Object
   
+  @js.native
+  sealed trait yes extends js.Object
+  
   @scala.inline
   def `-_`: `-_` = "-".asInstanceOf[`-_`]
   @scala.inline
@@ -1419,9 +1359,11 @@ object officeUiFabricReactStrings {
   @scala.inline
   def IBaseCardProps: IBaseCardProps = "IBaseCardProps".asInstanceOf[IBaseCardProps]
   @scala.inline
-  def IDetailsRowFieldsProps: IDetailsRowFieldsProps = "IDetailsRowFieldsProps".asInstanceOf[IDetailsRowFieldsProps]
+  def PartialIStackProps: PartialIStackProps = "PartialIStackProps".asInstanceOf[PartialIStackProps]
   @scala.inline
   def References: References = "References".asInstanceOf[References]
+  @scala.inline
+  def WeakValidationMapIStackPr: WeakValidationMapIStackPr = "WeakValidationMapIStackPr".asInstanceOf[WeakValidationMapIStackPr]
   @scala.inline
   def _empty: _empty = "".asInstanceOf[_empty]
   @scala.inline
@@ -1441,19 +1383,19 @@ object officeUiFabricReactStrings {
   @scala.inline
   def actionButton_c28b7666: actionButton_c28b7666 = "actionButton_c28b7666".asInstanceOf[actionButton_c28b7666]
   @scala.inline
-  def alignContent: alignContent = "alignContent".asInstanceOf[alignContent]
+  def additions: additions = "additions".asInstanceOf[additions]
+  @scala.inline
+  def `additions text`: `additions text` = "additions text".asInstanceOf[`additions text`]
   @scala.inline
   def all: all = "all".asInstanceOf[all]
   @scala.inline
   def always: always = "always".asInstanceOf[always]
   @scala.inline
-  def anySelected: anySelected = "anySelected".asInstanceOf[anySelected]
+  def ascending: ascending = "ascending".asInstanceOf[ascending]
   @scala.inline
   def assertive: assertive = "assertive".asInstanceOf[assertive]
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
-  @scala.inline
-  def autoAdjustHeight: autoAdjustHeight = "autoAdjustHeight".asInstanceOf[autoAdjustHeight]
   @scala.inline
   def b: b = "b".asInstanceOf[b]
   @scala.inline
@@ -1493,7 +1435,7 @@ object officeUiFabricReactStrings {
   @scala.inline
   def borderBottom: borderBottom = "borderBottom".asInstanceOf[borderBottom]
   @scala.inline
-  def borderless: borderless = "borderless".asInstanceOf[borderless]
+  def both: both = "both".asInstanceOf[both]
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
   @scala.inline
@@ -1504,6 +1446,8 @@ object officeUiFabricReactStrings {
   def bottomRightCornerDate_640b6fe8: bottomRightCornerDate_640b6fe8 = "bottomRightCornerDate_640b6fe8".asInstanceOf[bottomRightCornerDate_640b6fe8]
   @scala.inline
   def buildClassMap: buildClassMap = "buildClassMap".asInstanceOf[buildClassMap]
+  @scala.inline
+  def button: button = "button".asInstanceOf[button]
   @scala.inline
   def buttonBackground: buttonBackground = "buttonBackground".asInstanceOf[buttonBackground]
   @scala.inline
@@ -1529,12 +1473,6 @@ object officeUiFabricReactStrings {
   @scala.inline
   def callout_13859ee7: callout_13859ee7 = "callout_13859ee7".asInstanceOf[callout_13859ee7]
   @scala.inline
-  def canSelect: canSelect = "canSelect".asInstanceOf[canSelect]
-  @scala.inline
-  def cellStyleProps: cellStyleProps = "cellStyleProps".asInstanceOf[cellStyleProps]
-  @scala.inline
-  def cellsByColumn: cellsByColumn = "cellsByColumn".asInstanceOf[cellsByColumn]
-  @scala.inline
   def center: center = "center".asInstanceOf[center]
   @scala.inline
   def change: change = "change".asInstanceOf[change]
@@ -1545,27 +1483,19 @@ object officeUiFabricReactStrings {
   @scala.inline
   def checkbox: checkbox = "checkbox".asInstanceOf[checkbox]
   @scala.inline
-  def checked: checked = "checked".asInstanceOf[checked]
-  @scala.inline
   def circle: circle = "circle".asInstanceOf[circle]
   @scala.inline
   def circle_ffcbc2a3: circle_ffcbc2a3 = "circle_ffcbc2a3".asInstanceOf[circle_ffcbc2a3]
   @scala.inline
   def `class`: `class` = "class".asInstanceOf[`class`]
   @scala.inline
-  def className: className = "className".asInstanceOf[className]
-  @scala.inline
-  def clearButtonProps: clearButtonProps = "clearButtonProps".asInstanceOf[clearButtonProps]
-  @scala.inline
   def closeButton_640b6fe8: closeButton_640b6fe8 = "closeButton_640b6fe8".asInstanceOf[closeButton_640b6fe8]
   @scala.inline
   def closeButton_c28b7666: closeButton_c28b7666 = "closeButton_c28b7666".asInstanceOf[closeButton_c28b7666]
   @scala.inline
-  def compact: compact = "compact".asInstanceOf[compact]
-  @scala.inline
-  def containerClassName: containerClassName = "containerClassName".asInstanceOf[containerClassName]
-  @scala.inline
   def content_35e9f74a: content_35e9f74a = "content_35e9f74a".asInstanceOf[content_35e9f74a]
+  @scala.inline
+  def copy: copy = "copy".asInstanceOf[copy]
   @scala.inline
   def currentDecade_640b6fe8: currentDecade_640b6fe8 = "currentDecade_640b6fe8".asInstanceOf[currentDecade_640b6fe8]
   @scala.inline
@@ -1586,6 +1516,8 @@ object officeUiFabricReactStrings {
   def `data-no-vertical-wrap`: `data-no-vertical-wrap` = "data-no-vertical-wrap".asInstanceOf[`data-no-vertical-wrap`]
   @scala.inline
   def `data-portal-element`: `data-portal-element` = "data-portal-element".asInstanceOf[`data-portal-element`]
+  @scala.inline
+  def date: date = "date".asInstanceOf[date]
   @scala.inline
   def dayBackground_640b6fe8: dayBackground_640b6fe8 = "dayBackground_640b6fe8".asInstanceOf[dayBackground_640b6fe8]
   @scala.inline
@@ -1617,15 +1549,15 @@ object officeUiFabricReactStrings {
   @scala.inline
   def decade_640b6fe8: decade_640b6fe8 = "decade_640b6fe8".asInstanceOf[decade_640b6fe8]
   @scala.inline
-  def decrementButtonIcon: decrementButtonIcon = "decrementButtonIcon".asInstanceOf[decrementButtonIcon]
+  def decimal: decimal = "decimal".asInstanceOf[decimal]
   @scala.inline
   def defaultStateBackground: defaultStateBackground = "defaultStateBackground".asInstanceOf[defaultStateBackground]
   @scala.inline
   def defaultValue: defaultValue = "defaultValue".asInstanceOf[defaultValue]
   @scala.inline
-  def disableAnimation: disableAnimation = "disableAnimation".asInstanceOf[disableAnimation]
+  def descending: descending = "descending".asInstanceOf[descending]
   @scala.inline
-  def disabled: disabled = "disabled".asInstanceOf[disabled]
+  def dialog: dialog = "dialog".asInstanceOf[dialog]
   @scala.inline
   def disabledBackground: disabledBackground = "disabledBackground".asInstanceOf[disabledBackground]
   @scala.inline
@@ -1637,6 +1569,8 @@ object officeUiFabricReactStrings {
   @scala.inline
   def editingInput_c43ee834: editingInput_c43ee834 = "editingInput_c43ee834".asInstanceOf[editingInput_c43ee834]
   @scala.inline
+  def email: email = "email".asInstanceOf[email]
+  @scala.inline
   def end: end = "end".asInstanceOf[end]
   @scala.inline
   def enterKeytipMode: enterKeytipMode = "enterKeytipMode".asInstanceOf[enterKeytipMode]
@@ -1644,6 +1578,8 @@ object officeUiFabricReactStrings {
   def enum: enum = "enum".asInstanceOf[enum]
   @scala.inline
   def errorBackground: errorBackground = "errorBackground".asInstanceOf[errorBackground]
+  @scala.inline
+  def execute: execute = "execute".asInstanceOf[execute]
   @scala.inline
   def exitKeytipMode: exitKeytipMode = "exitKeytipMode".asInstanceOf[exitKeytipMode]
   @scala.inline
@@ -1653,17 +1589,9 @@ object officeUiFabricReactStrings {
   @scala.inline
   def focusBorder: focusBorder = "focusBorder".asInstanceOf[focusBorder]
   @scala.inline
-  def footerItemsProps: footerItemsProps = "footerItemsProps".asInstanceOf[footerItemsProps]
-  @scala.inline
-  def forceResolveText: forceResolveText = "forceResolveText".asInstanceOf[forceResolveText]
-  @scala.inline
   def frame_640b6fe8: frame_640b6fe8 = "frame_640b6fe8".asInstanceOf[frame_640b6fe8]
   @scala.inline
   def g: g = "g".asInstanceOf[g]
-  @scala.inline
-  def getCellValueKey: getCellValueKey = "getCellValueKey".asInstanceOf[getCellValueKey]
-  @scala.inline
-  def getClassNames: getClassNames = "getClassNames".asInstanceOf[getClassNames]
   @scala.inline
   def goToTodayIsDisabled_640b6fe8: goToTodayIsDisabled_640b6fe8 = "goToTodayIsDisabled_640b6fe8".asInstanceOf[goToTodayIsDisabled_640b6fe8]
   @scala.inline
@@ -1673,11 +1601,15 @@ object officeUiFabricReactStrings {
   @scala.inline
   def goToday_640b6fe8: goToday_640b6fe8 = "goToday_640b6fe8".asInstanceOf[goToday_640b6fe8]
   @scala.inline
+  def grammar: grammar = "grammar".asInstanceOf[grammar]
+  @scala.inline
   def green: green = "green".asInstanceOf[green]
   @scala.inline
   def greenDark: greenDark = "greenDark".asInstanceOf[greenDark]
   @scala.inline
   def greenLight: greenLight = "greenLight".asInstanceOf[greenLight]
+  @scala.inline
+  def grid: grid = "grid".asInstanceOf[grid]
   @scala.inline
   def grow: grow = "grow".asInstanceOf[grow]
   @scala.inline
@@ -1692,12 +1624,6 @@ object officeUiFabricReactStrings {
   def h5: h5 = "h5".asInstanceOf[h5]
   @scala.inline
   def h6: h6 = "h6".asInstanceOf[h6]
-  @scala.inline
-  def hasCondensedHeadline: hasCondensedHeadline = "hasCondensedHeadline".asInstanceOf[hasCondensedHeadline]
-  @scala.inline
-  def hasSmallHeadline: hasSmallHeadline = "hasSmallHeadline".asInstanceOf[hasSmallHeadline]
-  @scala.inline
-  def headerItemsProps: headerItemsProps = "headerItemsProps".asInstanceOf[headerItemsProps]
   @scala.inline
   def headerToggleView_640b6fe8: headerToggleView_640b6fe8 = "headerToggleView_640b6fe8".asInstanceOf[headerToggleView_640b6fe8]
   @scala.inline
@@ -1717,13 +1643,11 @@ object officeUiFabricReactStrings {
   @scala.inline
   def iconContainer_1f34f0f8: iconContainer_1f34f0f8 = "iconContainer_1f34f0f8".asInstanceOf[iconContainer_1f34f0f8]
   @scala.inline
-  def incrementButtonIcon: incrementButtonIcon = "incrementButtonIcon".asInstanceOf[incrementButtonIcon]
-  @scala.inline
   def inherit: inherit = "inherit".asInstanceOf[inherit]
   @scala.inline
   def initial: initial = "initial".asInstanceOf[initial]
   @scala.inline
-  def initialsColor: initialsColor = "initialsColor".asInstanceOf[initialsColor]
+  def `inline`: `inline` = "inline".asInstanceOf[`inline`]
   @scala.inline
   def inputBackground: inputBackground = "inputBackground".asInstanceOf[inputBackground]
   @scala.inline
@@ -1734,8 +1658,6 @@ object officeUiFabricReactStrings {
   def inputBorder: inputBorder = "inputBorder".asInstanceOf[inputBorder]
   @scala.inline
   def inputBorderHovered: inputBorderHovered = "inputBorderHovered".asInstanceOf[inputBorderHovered]
-  @scala.inline
-  def inputClassName: inputClassName = "inputClassName".asInstanceOf[inputClassName]
   @scala.inline
   def inputFocusBorderAlt: inputFocusBorderAlt = "inputFocusBorderAlt".asInstanceOf[inputFocusBorderAlt]
   @scala.inline
@@ -1753,19 +1675,9 @@ object officeUiFabricReactStrings {
   @scala.inline
   def interface: interface = "interface".asInstanceOf[interface]
   @scala.inline
-  def isAlpha: isAlpha = "isAlpha".asInstanceOf[isAlpha]
-  @scala.inline
-  def isHeader: isHeader = "isHeader".asInstanceOf[isHeader]
-  @scala.inline
   def isHighlighted_640b6fe8: isHighlighted_640b6fe8 = "isHighlighted_640b6fe8".asInstanceOf[isHighlighted_640b6fe8]
   @scala.inline
-  def isModeless: isModeless = "isModeless".asInstanceOf[isModeless]
-  @scala.inline
-  def isOutOfOffice: isOutOfOffice = "isOutOfOffice".asInstanceOf[isOutOfOffice]
-  @scala.inline
   def isPickingYears_640b6fe8: isPickingYears_640b6fe8 = "isPickingYears_640b6fe8".asInstanceOf[isPickingYears_640b6fe8]
-  @scala.inline
-  def isWide: isWide = "isWide".asInstanceOf[isWide]
   @scala.inline
   def itemButton_ac7082eb: itemButton_ac7082eb = "itemButton_ac7082eb".asInstanceOf[itemButton_ac7082eb]
   @scala.inline
@@ -1797,13 +1709,13 @@ object officeUiFabricReactStrings {
   @scala.inline
   def `ktp-layer-id`: `ktp-layer-id` = "ktp-layer-id".asInstanceOf[`ktp-layer-id`]
   @scala.inline
-  def label: label = "label".asInstanceOf[label]
-  @scala.inline
-  def labelPosition: labelPosition = "labelPosition".asInstanceOf[labelPosition]
-  @scala.inline
   def left: left = "left".asInstanceOf[left]
   @scala.inline
   def leftdate_640b6fe8: leftdate_640b6fe8 = "leftdate_640b6fe8".asInstanceOf[leftdate_640b6fe8]
+  @scala.inline
+  def link: link = "link".asInstanceOf[link]
+  @scala.inline
+  def list: list = "list".asInstanceOf[list]
   @scala.inline
   def listBackground: listBackground = "listBackground".asInstanceOf[listBackground]
   @scala.inline
@@ -1819,7 +1731,9 @@ object officeUiFabricReactStrings {
   @scala.inline
   def listText: listText = "listText".asInstanceOf[listText]
   @scala.inline
-  def loadingText: loadingText = "loadingText".asInstanceOf[loadingText]
+  def listbox: listbox = "listbox".asInstanceOf[listbox]
+  @scala.inline
+  def location: location = "location".asInstanceOf[location]
   @scala.inline
   def logoFillIcon_1f34f0f8: logoFillIcon_1f34f0f8 = "logoFillIcon_1f34f0f8".asInstanceOf[logoFillIcon_1f34f0f8]
   @scala.inline
@@ -1833,7 +1747,7 @@ object officeUiFabricReactStrings {
   @scala.inline
   def magentaLight: magentaLight = "magentaLight".asInstanceOf[magentaLight]
   @scala.inline
-  def max: max = "max".asInstanceOf[max]
+  def menu: menu = "menu".asInstanceOf[menu]
   @scala.inline
   def menuBackground: menuBackground = "menuBackground".asInstanceOf[menuBackground]
   @scala.inline
@@ -1853,9 +1767,11 @@ object officeUiFabricReactStrings {
   @scala.inline
   def menuItemTextHovered: menuItemTextHovered = "menuItemTextHovered".asInstanceOf[menuItemTextHovered]
   @scala.inline
+  def menuitemcheckbox: menuitemcheckbox = "menuitemcheckbox".asInstanceOf[menuitemcheckbox]
+  @scala.inline
   def method: method = "method".asInstanceOf[method]
   @scala.inline
-  def min: min = "min".asInstanceOf[min]
+  def mixed: mixed = "mixed".asInstanceOf[mixed]
   @scala.inline
   def monthAndYear_640b6fe8: monthAndYear_640b6fe8 = "monthAndYear_640b6fe8".asInstanceOf[monthAndYear_640b6fe8]
   @scala.inline
@@ -1879,13 +1795,11 @@ object officeUiFabricReactStrings {
   @scala.inline
   def monthSelection_640b6fe8: monthSelection_640b6fe8 = "monthSelection_640b6fe8".asInstanceOf[monthSelection_640b6fe8]
   @scala.inline
-  def mostRecentlyUsedHeaderText: mostRecentlyUsedHeaderText = "mostRecentlyUsedHeaderText".asInstanceOf[mostRecentlyUsedHeaderText]
+  def move: move = "move".asInstanceOf[move]
   @scala.inline
   def `ms-Fabric--isFocusVisible`: `ms-Fabric--isFocusVisible` = "ms-Fabric--isFocusVisible".asInstanceOf[`ms-Fabric--isFocusVisible`]
   @scala.inline
   def `ms-Icon`: `ms-Icon` = "ms-Icon".asInstanceOf[`ms-Icon`]
-  @scala.inline
-  def multiline: multiline = "multiline".asInstanceOf[multiline]
   @scala.inline
   def neutralDark: neutralDark = "neutralDark".asInstanceOf[neutralDark]
   @scala.inline
@@ -1923,17 +1837,17 @@ object officeUiFabricReactStrings {
   @scala.inline
   def nextYear_640b6fe8: nextYear_640b6fe8 = "nextYear_640b6fe8".asInstanceOf[nextYear_640b6fe8]
   @scala.inline
-  def noResultsFoundText: noResultsFoundText = "noResultsFoundText".asInstanceOf[noResultsFoundText]
+  def no: no = "no".asInstanceOf[no]
   @scala.inline
   def nonLayered_35e9f74a: nonLayered_35e9f74a = "nonLayered_35e9f74a".asInstanceOf[nonLayered_35e9f74a]
+  @scala.inline
+  def none: none = "none".asInstanceOf[none]
+  @scala.inline
+  def numeric: numeric = "numeric".asInstanceOf[numeric]
   @scala.inline
   def off: off = "off".asInstanceOf[off]
   @scala.inline
   def on: on = "on".asInstanceOf[on]
-  @scala.inline
-  def onRenderItemColumn: onRenderItemColumn = "onRenderItemColumn".asInstanceOf[onRenderItemColumn]
-  @scala.inline
-  def onRenderNoResultFound: onRenderNoResultFound = "onRenderNoResultFound".asInstanceOf[onRenderNoResultFound]
   @scala.inline
   def optionGrid_640b6fe8: optionGrid_640b6fe8 = "optionGrid_640b6fe8".asInstanceOf[optionGrid_640b6fe8]
   @scala.inline
@@ -1942,6 +1856,10 @@ object officeUiFabricReactStrings {
   def orangeLight: orangeLight = "orangeLight".asInstanceOf[orangeLight]
   @scala.inline
   def orangeLighter: orangeLighter = "orangeLighter".asInstanceOf[orangeLighter]
+  @scala.inline
+  def other: other = "other".asInstanceOf[other]
+  @scala.inline
+  def page: page = "page".asInstanceOf[page]
   @scala.inline
   def peoplePickerPersonaContent_2c1ddeba: peoplePickerPersonaContent_2c1ddeba = "peoplePickerPersonaContent_2c1ddeba".asInstanceOf[peoplePickerPersonaContent_2c1ddeba]
   @scala.inline
@@ -2003,7 +1921,7 @@ object officeUiFabricReactStrings {
   @scala.inline
   def polite: polite = "polite".asInstanceOf[polite]
   @scala.inline
-  def presence: presence = "presence".asInstanceOf[presence]
+  def popup: popup = "popup".asInstanceOf[popup]
   @scala.inline
   def prevDecadeIsDisabled_640b6fe8: prevDecadeIsDisabled_640b6fe8 = "prevDecadeIsDisabled_640b6fe8".asInstanceOf[prevDecadeIsDisabled_640b6fe8]
   @scala.inline
@@ -2027,8 +1945,6 @@ object officeUiFabricReactStrings {
   @scala.inline
   def primaryButtonBorder: primaryButtonBorder = "primaryButtonBorder".asInstanceOf[primaryButtonBorder]
   @scala.inline
-  def primaryText: primaryText = "primaryText".asInstanceOf[primaryText]
-  @scala.inline
   def property: property = "property".asInstanceOf[property]
   @scala.inline
   def purple: purple = "purple".asInstanceOf[purple]
@@ -2045,6 +1961,8 @@ object officeUiFabricReactStrings {
   @scala.inline
   def relative: relative = "relative".asInstanceOf[relative]
   @scala.inline
+  def removals: removals = "removals".asInstanceOf[removals]
+  @scala.inline
   def removeButton_23549cfb: removeButton_23549cfb = "removeButton_23549cfb".asInstanceOf[removeButton_23549cfb]
   @scala.inline
   def removeButton_9e4a605c: removeButton_9e4a605c = "removeButton_9e4a605c".asInstanceOf[removeButton_9e4a605c]
@@ -2053,7 +1971,7 @@ object officeUiFabricReactStrings {
   @scala.inline
   def required: required = "required".asInstanceOf[required]
   @scala.inline
-  def resizable: resizable = "resizable".asInstanceOf[resizable]
+  def reset: reset = "reset".asInstanceOf[reset]
   @scala.inline
   def resultContent_8cc03844: resultContent_8cc03844 = "resultContent_8cc03844".asInstanceOf[resultContent_8cc03844]
   @scala.inline
@@ -2062,12 +1980,6 @@ object officeUiFabricReactStrings {
   def resultItem_8cc03844: resultItem_8cc03844 = "resultItem_8cc03844".asInstanceOf[resultItem_8cc03844]
   @scala.inline
   def resultItem_b8ec3aca: resultItem_b8ec3aca = "resultItem_b8ec3aca".asInstanceOf[resultItem_b8ec3aca]
-  @scala.inline
-  def resultsFooter: resultsFooter = "resultsFooter".asInstanceOf[resultsFooter]
-  @scala.inline
-  def resultsFooterFull: resultsFooterFull = "resultsFooterFull".asInstanceOf[resultsFooterFull]
-  @scala.inline
-  def resultsMaximumNumber: resultsMaximumNumber = "resultsMaximumNumber".asInstanceOf[resultsMaximumNumber]
   @scala.inline
   def right: right = "right".asInstanceOf[right]
   @scala.inline
@@ -2095,27 +2007,13 @@ object officeUiFabricReactStrings {
   @scala.inline
   def screenReaderOnly_ddf45a20: screenReaderOnly_ddf45a20 = "screenReaderOnly_ddf45a20".asInstanceOf[screenReaderOnly_ddf45a20]
   @scala.inline
-  def scrollableContentClassName: scrollableContentClassName = "scrollableContentClassName".asInstanceOf[scrollableContentClassName]
-  @scala.inline
-  def searchForMoreText: searchForMoreText = "searchForMoreText".asInstanceOf[searchForMoreText]
-  @scala.inline
-  def searchingText: searchingText = "searchingText".asInstanceOf[searchingText]
-  @scala.inline
-  def selected: selected = "selected".asInstanceOf[selected]
-  @scala.inline
-  def shouldSelectFirstItem: shouldSelectFirstItem = "shouldSelectFirstItem".asInstanceOf[shouldSelectFirstItem]
-  @scala.inline
-  def showForceResolve: showForceResolve = "showForceResolve".asInstanceOf[showForceResolve]
-  @scala.inline
-  def showRemoveButtons: showRemoveButtons = "showRemoveButtons".asInstanceOf[showRemoveButtons]
+  def search: search = "search".asInstanceOf[search]
   @scala.inline
   def showWeekNumbersRTL_640b6fe8: showWeekNumbersRTL_640b6fe8 = "showWeekNumbersRTL_640b6fe8".asInstanceOf[showWeekNumbersRTL_640b6fe8]
   @scala.inline
   def showWeekNumbers_640b6fe8: showWeekNumbers_640b6fe8 = "showWeekNumbers_640b6fe8".asInstanceOf[showWeekNumbers_640b6fe8]
   @scala.inline
   def shrink: shrink = "shrink".asInstanceOf[shrink]
-  @scala.inline
-  def size: size = "size".asInstanceOf[size]
   @scala.inline
   def smallInputBorder: smallInputBorder = "smallInputBorder".asInstanceOf[smallInputBorder]
   @scala.inline
@@ -2124,6 +2022,8 @@ object officeUiFabricReactStrings {
   def `space-between`: `space-between` = "space-between".asInstanceOf[`space-between`]
   @scala.inline
   def `space-evenly`: `space-evenly` = "space-evenly".asInstanceOf[`space-evenly`]
+  @scala.inline
+  def spelling: spelling = "spelling".asInstanceOf[spelling]
   @scala.inline
   def square: square = "square".asInstanceOf[square]
   @scala.inline
@@ -2137,23 +2037,15 @@ object officeUiFabricReactStrings {
   @scala.inline
   def stretch: stretch = "stretch".asInstanceOf[stretch]
   @scala.inline
+  def submit: submit = "submit".asInstanceOf[submit]
+  @scala.inline
   def successBackground: successBackground = "successBackground".asInstanceOf[successBackground]
   @scala.inline
-  def suggestionsAvailableAlertText: suggestionsAvailableAlertText = "suggestionsAvailableAlertText".asInstanceOf[suggestionsAvailableAlertText]
-  @scala.inline
   def suggestionsAvailable_c28b7666: suggestionsAvailable_c28b7666 = "suggestionsAvailable_c28b7666".asInstanceOf[suggestionsAvailable_c28b7666]
-  @scala.inline
-  def suggestionsClassName: suggestionsClassName = "suggestionsClassName".asInstanceOf[suggestionsClassName]
-  @scala.inline
-  def suggestionsContainerAriaLabel: suggestionsContainerAriaLabel = "suggestionsContainerAriaLabel".asInstanceOf[suggestionsContainerAriaLabel]
   @scala.inline
   def suggestionsContainer_37972f9d: suggestionsContainer_37972f9d = "suggestionsContainer_37972f9d".asInstanceOf[suggestionsContainer_37972f9d]
   @scala.inline
   def suggestionsContainer_c28b7666: suggestionsContainer_c28b7666 = "suggestionsContainer_c28b7666".asInstanceOf[suggestionsContainer_c28b7666]
-  @scala.inline
-  def suggestionsHeaderText: suggestionsHeaderText = "suggestionsHeaderText".asInstanceOf[suggestionsHeaderText]
-  @scala.inline
-  def suggestionsItemClassName: suggestionsItemClassName = "suggestionsItemClassName".asInstanceOf[suggestionsItemClassName]
   @scala.inline
   def suggestionsItemIsSuggested_c28b7666: suggestionsItemIsSuggested_c28b7666 = "suggestionsItemIsSuggested_c28b7666".asInstanceOf[suggestionsItemIsSuggested_c28b7666]
   @scala.inline
@@ -2179,6 +2071,8 @@ object officeUiFabricReactStrings {
   @scala.inline
   def tealLight: tealLight = "tealLight".asInstanceOf[tealLight]
   @scala.inline
+  def tel: tel = "tel".asInstanceOf[tel]
+  @scala.inline
   def text: text = "text".asInstanceOf[text]
   @scala.inline
   def textContent_35e9f74a: textContent_35e9f74a = "textContent_35e9f74a".asInstanceOf[textContent_35e9f74a]
@@ -2203,6 +2097,8 @@ object officeUiFabricReactStrings {
   @scala.inline
   def themeTertiary: themeTertiary = "themeTertiary".asInstanceOf[themeTertiary]
   @scala.inline
+  def time: time = "time".asInstanceOf[time]
+  @scala.inline
   def toggleMonthView_640b6fe8: toggleMonthView_640b6fe8 = "toggleMonthView_640b6fe8".asInstanceOf[toggleMonthView_640b6fe8]
   @scala.inline
   def top: top = "top".asInstanceOf[top]
@@ -2211,17 +2107,19 @@ object officeUiFabricReactStrings {
   @scala.inline
   def topLeftCornerDate_640b6fe8: topLeftCornerDate_640b6fe8 = "topLeftCornerDate_640b6fe8".asInstanceOf[topLeftCornerDate_640b6fe8]
   @scala.inline
-  def topOffsetFixed: topOffsetFixed = "topOffsetFixed".asInstanceOf[topOffsetFixed]
-  @scala.inline
   def topRightCornerDate_640b6fe8: topRightCornerDate_640b6fe8 = "topRightCornerDate_640b6fe8".asInstanceOf[topRightCornerDate_640b6fe8]
+  @scala.inline
+  def tree: tree = "tree".asInstanceOf[tree]
+  @scala.inline
+  def `true`: `true` = "true".asInstanceOf[`true`]
   @scala.inline
   def typeAlias: typeAlias = "typeAlias".asInstanceOf[typeAlias]
   @scala.inline
   def typeTokens: typeTokens = "typeTokens".asInstanceOf[typeTokens]
   @scala.inline
-  def underlined: underlined = "underlined".asInstanceOf[underlined]
-  @scala.inline
   def unset: unset = "unset".asInstanceOf[unset]
+  @scala.inline
+  def url: url = "url".asInstanceOf[url]
   @scala.inline
   def validationError_23549cfb: validationError_23549cfb = "validationError_23549cfb".asInstanceOf[validationError_23549cfb]
   @scala.inline
@@ -2278,5 +2176,7 @@ object officeUiFabricReactStrings {
   def yellowDark: yellowDark = "yellowDark".asInstanceOf[yellowDark]
   @scala.inline
   def yellowLight: yellowLight = "yellowLight".asInstanceOf[yellowLight]
+  @scala.inline
+  def yes: yes = "yes".asInstanceOf[yes]
 }
 

@@ -2,11 +2,11 @@ package typings.ckeditor.CKEDITOR
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.ckeditor.AnonAria
-import typings.ckeditor.AnonAriaDisplay
 import typings.ckeditor.AnonBottom
 import typings.ckeditor.AnonColor
-import typings.ckeditor.AnonColorStyle
+import typings.ckeditor.AnonDisplay
 import typings.ckeditor.AnonInput
+import typings.ckeditor.AnonStyle
 import typings.ckeditor.Window
 import typings.std.DocumentFragment
 import typings.std.Document_
@@ -57,7 +57,7 @@ object tools extends js.Object {
   def isArray[T](`object`: js.Any): /* is std.Array<T> */ Boolean = js.native
   def isEmpty(`object`: StringDictionary[js.Any]): Boolean = js.native
   def keystrokeToArray(lang: StringDictionary[js.Any], keystroke: Double): AnonAria = js.native
-  def keystrokeToString(lang: StringDictionary[js.Any], keystroke: Double): AnonAriaDisplay = js.native
+  def keystrokeToString(lang: StringDictionary[js.Any], keystroke: Double): AnonDisplay = js.native
   def ltrim(str: String): String = js.native
   def normalizeCssText(styleText: String, nativeNormalize: Boolean): String = js.native
   def normalizeHex(styleText: String): String = js.native
@@ -147,7 +147,7 @@ object tools extends js.Object {
     @js.native
     object parse extends js.Object {
       def background(value: String): AnonColor = js.native
-      def border(value: String): AnonColorStyle = js.native
+      def border(value: String): AnonStyle = js.native
       def margin(value: String): AnonBottom = js.native
     }
     

@@ -1,6 +1,6 @@
 package typings.firebaseAppTypes.mod
 
-import typings.firebaseAppTypes.AnonApp
+import typings.firebaseAppTypes.AnonCall
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ trait FirebaseNamespace extends js.Object {
   // The current SDK version.
   var SDK_VERSION: String = js.native
   @JSName("app")
-  var app_Original: AnonApp = js.native
+  var app_Original: AnonCall = js.native
   /**
     * A (read-only) array of all the initialized Apps.
     */

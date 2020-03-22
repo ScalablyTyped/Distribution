@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.prosemirrorModel.mod.Node
 import typings.prosemirrorModel.mod.Schema
 import typings.prosemirrorTransform.mod.Mapping
-import typings.prosemirrorView.AnonDecorationSpec
+import typings.prosemirrorView.AnonOnRemove
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,7 +35,7 @@ class DecorationSet[S /* <: Schema[_, _] */] () extends js.Object {
     * document.
     */
   def map(mapping: Mapping, doc: Node[S]): DecorationSet[S] = js.native
-  def map(mapping: Mapping, doc: Node[S], options: AnonDecorationSpec): DecorationSet[S] = js.native
+  def map(mapping: Mapping, doc: Node[S], options: AnonOnRemove): DecorationSet[S] = js.native
   /**
     * Create a new set that contains the decorations in this set, minus
     * the ones in the given array.

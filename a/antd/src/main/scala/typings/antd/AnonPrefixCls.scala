@@ -1,26 +1,22 @@
 package typings.antd
 
-import typings.propTypes.mod.ReactNodeLike
-import typings.propTypes.mod.Requireable
+import typings.antd.sliderMod.HandleGeneratorInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonPrefixCls extends js.Object {
-  var prefixCls: Requireable[String]
-  var routes: Requireable[js.Array[_]]
-  var separator: Requireable[ReactNodeLike]
+  var info: HandleGeneratorInfo
+  var prefixCls: js.UndefOr[String] = js.undefined
+  var tooltipPrefixCls: js.UndefOr[String] = js.undefined
 }
 
 object AnonPrefixCls {
   @scala.inline
-  def apply(
-    prefixCls: Requireable[String],
-    routes: Requireable[js.Array[_]],
-    separator: Requireable[ReactNodeLike]
-  ): AnonPrefixCls = {
-    val __obj = js.Dynamic.literal(prefixCls = prefixCls.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any], separator = separator.asInstanceOf[js.Any])
-  
+  def apply(info: HandleGeneratorInfo, prefixCls: String = null, tooltipPrefixCls: String = null): AnonPrefixCls = {
+    val __obj = js.Dynamic.literal(info = info.asInstanceOf[js.Any])
+    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
+    if (tooltipPrefixCls != null) __obj.updateDynamic("tooltipPrefixCls")(tooltipPrefixCls.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnonPrefixCls]
   }
 }

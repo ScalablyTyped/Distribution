@@ -37,7 +37,7 @@ object errorsMod extends js.Object {
     /* CompleteClass */
     override var name: String = js.native
     var response: AnonData = js.native
-    def getResponse(): AnonDataStatus = js.native
+    def getResponse(): AnonStatus = js.native
   }
   
   @js.native

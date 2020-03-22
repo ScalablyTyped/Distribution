@@ -1,6 +1,6 @@
 package typings.googleapis.booksV1Mod.booksV1
 
-import typings.googleapis.AnonCfiRangeContentVersion
+import typings.googleapis.AnonContentVersion
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,7 +22,7 @@ trait SchemaVolumeannotation extends js.Object {
   /**
     * The content ranges to identify the selected text.
     */
-  var contentRanges: js.UndefOr[AnonCfiRangeContentVersion] = js.native
+  var contentRanges: js.UndefOr[AnonContentVersion] = js.native
   /**
     * Data for this annotation.
     */
@@ -72,7 +72,7 @@ object SchemaVolumeannotation {
     annotationDataId: String = null,
     annotationDataLink: String = null,
     annotationType: String = null,
-    contentRanges: AnonCfiRangeContentVersion = null,
+    contentRanges: AnonContentVersion = null,
     data: String = null,
     deleted: js.UndefOr[Boolean] = js.undefined,
     id: String = null,

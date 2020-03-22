@@ -2,8 +2,8 @@ package typings.istanbulLibInstrument.mod
 
 import typings.istanbulLibCoverage.mod.FileCoverage
 import typings.istanbulLibCoverage.mod.FileCoverageData
+import typings.istanbulLibInstrument.PartialInstrumenterOption
 import typings.sourceMap.mod.RawSourceMap
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 @JSImport("istanbul-lib-instrument", "Instrumenter")
 @js.native
 class Instrumenter () extends js.Object {
-  def this(options: Partial[InstrumenterOptions]) = this()
+  def this(options: PartialInstrumenterOption) = this()
   var fileCoverage: FileCoverage = js.native
   var opts: InstrumenterOptions = js.native
   var sourceMap: RawSourceMap | Null = js.native
@@ -36,6 +36,6 @@ class Instrumenter () extends js.Object {
   def lastFileCoverage(): FileCoverageData = js.native
   def lastSourceMap(): RawSourceMap = js.native
   def normalizeOpts(): InstrumenterOptions = js.native
-  def normalizeOpts(options: Partial[InstrumenterOptions]): InstrumenterOptions = js.native
+  def normalizeOpts(options: PartialInstrumenterOption): InstrumenterOptions = js.native
 }
 

@@ -8,12 +8,12 @@ trait PlotErrorbarDragDropGuideBoxOptions extends js.Object {
   /**
     * (Highcharts, Highstock) Style options for the guide box default state.
     */
-  var default: js.UndefOr[PlotErrorbarDragDropGuideBoxDefaultOptions] = js.undefined
+  var default: js.UndefOr[DragDropGuideBoxOptionsObject] = js.undefined
 }
 
 object PlotErrorbarDragDropGuideBoxOptions {
   @scala.inline
-  def apply(default: PlotErrorbarDragDropGuideBoxDefaultOptions = null): PlotErrorbarDragDropGuideBoxOptions = {
+  def apply(default: DragDropGuideBoxOptionsObject = null): PlotErrorbarDragDropGuideBoxOptions = {
     val __obj = js.Dynamic.literal()
     if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotErrorbarDragDropGuideBoxOptions]

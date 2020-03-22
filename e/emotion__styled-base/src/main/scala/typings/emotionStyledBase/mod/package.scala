@@ -13,5 +13,5 @@ package object mod {
   ]
   type JSXInEl = typings.react.mod._Global_.JSX.IntrinsicElements
   type ReactClassPropKeys = java.lang.String
-  type WithTheme[P, T] = (P with typings.emotionStyledBase.AnonThemeT[T]) | (P with typings.emotionStyledBase.AnonThemeAny)
+  type WithTheme[P, T] = (P with typings.emotionStyledBase.AnonThemeT[T]) | (P with typings.emotionStyledBase.AnonThemeExclude)
 }

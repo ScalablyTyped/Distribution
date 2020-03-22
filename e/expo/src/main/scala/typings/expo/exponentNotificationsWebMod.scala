@@ -20,7 +20,7 @@ object exponentNotificationsWebMod extends js.Object {
     def getExponentPushTokenAsync(): js.Promise[String] = js.native
     def presentLocalNotification(notification: LocalNotification): js.Promise[ReactText] = js.native
     def scheduleLocalNotification(notification: js.Any): js.Promise[String] = js.native
-    def scheduleLocalNotification(notification: js.Any, options: AnonDay): js.Promise[String] = js.native
+    def scheduleLocalNotification(notification: js.Any, options: AnonIntervalMs): js.Promise[String] = js.native
   }
   
 }

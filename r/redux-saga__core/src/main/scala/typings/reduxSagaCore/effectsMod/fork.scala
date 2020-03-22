@@ -1,7 +1,7 @@
 package typings.reduxSagaCore.effectsMod
 
 import typings.reduxSagaCore.AnonContext
-import typings.reduxSagaCore.AnonContextFn
+import typings.reduxSagaCore.AnonFn
 import typings.reduxSagaCore.reduxSagaCoreStrings.fork_
 import typings.std.Parameters
 import scala.scalajs.js
@@ -32,7 +32,7 @@ object fork extends js.Object {
     ]
   ): ForkEffect = js.native
   def apply[Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ js.Any, _] */](
-    ctxAndFn: AnonContextFn[Ctx, Fn],
+    ctxAndFn: AnonFn[Ctx, Fn],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<Fn> is not an array type */ args: Parameters[Fn]
   ): ForkEffect = js.native
 }

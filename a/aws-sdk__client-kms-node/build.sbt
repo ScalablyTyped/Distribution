@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "aws-sdk__client-kms-node"
-version := "0.1.0-preview.2-e8e7f7"
+version := "0.1.0-preview.2-ac827a"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "aws-sdk__middleware-stack" % "0.1.0-preview.2-ddfd62",
-  "org.scalablytyped" %%% "aws-sdk__types" % "0.1.0-preview.1-7dd7f4",
-  "org.scalablytyped" %%% "node" % "13.7-dt-20200211Z-d6af7e",
-  "org.scalablytyped" %%% "std" % "3.7-1b8369")
+  "org.scalablytyped" %%% "aws-sdk__middleware-stack" % "0.1.0-preview.2-e3994e",
+  "org.scalablytyped" %%% "aws-sdk__types" % "0.1.0-preview.1-968c36",
+  "org.scalablytyped" %%% "node" % "13.7-dt-20200211Z-b30bde",
+  "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -1,9 +1,7 @@
 package typings.tern.inferMod
 
-import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
 import typings.estree.mod.Node
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,8 +10,6 @@ import scala.scalajs.js.annotation._
 trait AVal extends ANull {
   var originNode: js.UndefOr[Node] = js.native
   val propertyOf: js.UndefOr[Obj] = js.native
-  /** An object mapping the object’s known properties to AVals. Don’t manipulate this directly (ever), only use it if you have to iterate over the properties. */
-  var props: Partial[StringDictionary[AVal]] = js.native
   val types: js.Array[Type] = js.native
   /**
     * Add a type to this abstract value. If the type is already in there,

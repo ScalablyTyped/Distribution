@@ -1,6 +1,6 @@
 package typings.primereact.multiSelectMod
 
-import typings.primereact.AnonOriginalEventValue
+import typings.primereact.AnonValue
 import typings.primereact.tooltipOptionsMod.TooltipOptions
 import typings.react.mod._Global_.JSX.Element
 import typings.std.Event_
@@ -21,7 +21,7 @@ trait MultiSelectProps extends js.Object {
   var itemTemplate: js.UndefOr[js.Function1[/* item */ js.Any, js.UndefOr[Element]]] = js.undefined
   var maxSelectedLabels: js.UndefOr[Double] = js.undefined
   var onBlur: js.UndefOr[js.Function1[/* event */ Event_, Unit]] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* e */ AnonOriginalEventValue, Unit]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* e */ AnonValue, Unit]] = js.undefined
   var onFocus: js.UndefOr[js.Function1[/* event */ Event_, Unit]] = js.undefined
   var optionLabel: js.UndefOr[String] = js.undefined
   var options: js.UndefOr[js.Array[_]] = js.undefined
@@ -50,7 +50,7 @@ object MultiSelectProps {
     itemTemplate: /* item */ js.Any => js.UndefOr[Element] = null,
     maxSelectedLabels: Int | Double = null,
     onBlur: /* event */ Event_ => Unit = null,
-    onChange: /* e */ AnonOriginalEventValue => Unit = null,
+    onChange: /* e */ AnonValue => Unit = null,
     onFocus: /* event */ Event_ => Unit = null,
     optionLabel: String = null,
     options: js.Array[_] = null,

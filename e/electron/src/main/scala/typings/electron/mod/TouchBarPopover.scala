@@ -10,6 +10,9 @@ import scala.scalajs.js.annotation._
 class TouchBarPopover protected ()
   extends typings.electron.Electron.TouchBarPopover {
   // Docs: http://electronjs.org/docs/api/touch-bar-popover
+  /**
+    * TouchBarPopover
+    */
   def this(options: TouchBarPopoverConstructorOptions) = this()
 }
 

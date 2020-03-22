@@ -15,7 +15,7 @@ trait NavigatorXAxisGridOptions extends js.Object {
   var borderWidth: js.UndefOr[Double] = js.undefined
   /**
     * (Gantt) Set cell height for grid axis labels. By default this is
-    * calculated from font size.
+    * calculated from font size. This option only applies to horizontal axes.
     */
   var cellHeight: js.UndefOr[Double] = js.undefined
   /**

@@ -1,6 +1,14 @@
 package typings.semanticUiProgress.SemanticUI
 
 import typings.semanticUiProgress.JQuery
+import typings.semanticUiProgress.SemanticUI.Progress.ClassNameSettings
+import typings.semanticUiProgress.SemanticUI.Progress.ErrorSettings
+import typings.semanticUiProgress.SemanticUI.Progress.MetadataSettings
+import typings.semanticUiProgress.SemanticUI.Progress.RandomSettings
+import typings.semanticUiProgress.SemanticUI.Progress.RegExpSettings
+import typings.semanticUiProgress.SemanticUI.Progress.SelectorSettings
+import typings.semanticUiProgress.SemanticUI.Progress.TextSettings
+import typings.semanticUiProgress.semanticUiProgressBooleans.`false`
 import typings.semanticUiProgress.semanticUiProgressStrings.`get normalized value`
 import typings.semanticUiProgress.semanticUiProgressStrings.`get percent`
 import typings.semanticUiProgress.semanticUiProgressStrings.`get text`
@@ -26,12 +34,39 @@ import typings.semanticUiProgress.semanticUiProgressStrings.`set success`
 import typings.semanticUiProgress.semanticUiProgressStrings.`set total`
 import typings.semanticUiProgress.semanticUiProgressStrings.`set warning`
 import typings.semanticUiProgress.semanticUiProgressStrings.`update progress`
+import typings.semanticUiProgress.semanticUiProgressStrings.autoSuccess
+import typings.semanticUiProgress.semanticUiProgressStrings.className
 import typings.semanticUiProgress.semanticUiProgressStrings.complete
+import typings.semanticUiProgress.semanticUiProgressStrings.debug
 import typings.semanticUiProgress.semanticUiProgressStrings.decrement
 import typings.semanticUiProgress.semanticUiProgressStrings.destroy
+import typings.semanticUiProgress.semanticUiProgressStrings.error
 import typings.semanticUiProgress.semanticUiProgressStrings.increment
+import typings.semanticUiProgress.semanticUiProgressStrings.label
+import typings.semanticUiProgress.semanticUiProgressStrings.limitValues
+import typings.semanticUiProgress.semanticUiProgressStrings.metadata
+import typings.semanticUiProgress.semanticUiProgressStrings.name
+import typings.semanticUiProgress.semanticUiProgressStrings.namespace
+import typings.semanticUiProgress.semanticUiProgressStrings.onActive
+import typings.semanticUiProgress.semanticUiProgressStrings.onChange
+import typings.semanticUiProgress.semanticUiProgressStrings.onError
+import typings.semanticUiProgress.semanticUiProgressStrings.onSuccess
+import typings.semanticUiProgress.semanticUiProgressStrings.onWarning
+import typings.semanticUiProgress.semanticUiProgressStrings.percent
+import typings.semanticUiProgress.semanticUiProgressStrings.performance
+import typings.semanticUiProgress.semanticUiProgressStrings.precision
+import typings.semanticUiProgress.semanticUiProgressStrings.random
+import typings.semanticUiProgress.semanticUiProgressStrings.ratio
+import typings.semanticUiProgress.semanticUiProgressStrings.regExp
 import typings.semanticUiProgress.semanticUiProgressStrings.reset
+import typings.semanticUiProgress.semanticUiProgressStrings.selector
 import typings.semanticUiProgress.semanticUiProgressStrings.setting
+import typings.semanticUiProgress.semanticUiProgressStrings.showActivity
+import typings.semanticUiProgress.semanticUiProgressStrings.silent
+import typings.semanticUiProgress.semanticUiProgressStrings.text
+import typings.semanticUiProgress.semanticUiProgressStrings.total
+import typings.semanticUiProgress.semanticUiProgressStrings.value
+import typings.semanticUiProgress.semanticUiProgressStrings.verbose
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -159,13 +194,80 @@ trait Progress_ extends js.Object {
     * Resets progress to zero
     */
   def apply(behavior: reset): JQuery = js.native
+  def apply(behavior: setting, name: autoSuccess): Boolean = js.native
+  def apply(behavior: setting, name: autoSuccess, value: Boolean): JQuery = js.native
+  def apply(behavior: setting, name: className): ClassNameSettings = js.native
+  def apply(behavior: setting, name: className, value: ClassNameSettings): JQuery = js.native
+  def apply(behavior: setting, name: debug): Boolean = js.native
+  def apply(behavior: setting, name: debug, value: Boolean): JQuery = js.native
+  def apply(behavior: setting, name: error): ErrorSettings = js.native
+  def apply(behavior: setting, name: error, value: ErrorSettings): JQuery = js.native
+  def apply(behavior: setting, name: label): percent | ratio = js.native
+  def apply(behavior: setting, name: label, value: percent): JQuery = js.native
+  def apply(behavior: setting, name: label, value: ratio): JQuery = js.native
+  def apply(behavior: setting, name: limitValues): Boolean = js.native
+  def apply(behavior: setting, name: limitValues, value: Boolean): JQuery = js.native
+  def apply(behavior: setting, name: metadata): MetadataSettings = js.native
+  def apply(behavior: setting, name: metadata, value: MetadataSettings): JQuery = js.native
+  def apply(behavior: setting, name: name): String = js.native
+  def apply(behavior: setting, name: namespace): String = js.native
+  def apply(behavior: setting, name: namespace, value: String): JQuery = js.native
+  def apply(behavior: setting, name: name, value: String): JQuery = js.native
+  def apply(behavior: setting, name: onActive): js.ThisFunction2[/* this */ JQuery, /* value */ Double, /* total */ Double, Unit] = js.native
+  def apply(
+    behavior: setting,
+    name: onActive,
+    value: js.ThisFunction2[/* this */ JQuery, /* value */ Double, /* total */ Double, Unit]
+  ): JQuery = js.native
+  def apply(behavior: setting, name: onChange): js.ThisFunction3[/* this */ JQuery, /* percent */ Double, /* value */ Double, /* total */ Double, Unit] = js.native
+  def apply(
+    behavior: setting,
+    name: onChange,
+    value: js.ThisFunction3[/* this */ JQuery, /* percent */ Double, /* value */ Double, /* total */ Double, Unit]
+  ): JQuery = js.native
+  def apply(behavior: setting, name: onError): js.ThisFunction2[/* this */ JQuery, /* value */ Double, /* total */ Double, Unit] = js.native
+  def apply(
+    behavior: setting,
+    name: onError,
+    value: js.ThisFunction2[/* this */ JQuery, /* value */ Double, /* total */ Double, Unit]
+  ): JQuery = js.native
+  def apply(behavior: setting, name: onSuccess): js.ThisFunction1[/* this */ JQuery, /* total */ Double, Unit] = js.native
+  def apply(
+    behavior: setting,
+    name: onSuccess,
+    value: js.ThisFunction1[/* this */ JQuery, /* total */ Double, Unit]
+  ): JQuery = js.native
+  def apply(behavior: setting, name: onWarning): js.ThisFunction2[/* this */ JQuery, /* value */ Double, /* total */ Double, Unit] = js.native
+  def apply(
+    behavior: setting,
+    name: onWarning,
+    value: js.ThisFunction2[/* this */ JQuery, /* value */ Double, /* total */ Double, Unit]
+  ): JQuery = js.native
+  def apply(behavior: setting, name: performance): Boolean = js.native
+  def apply(behavior: setting, name: performance, value: Boolean): JQuery = js.native
+  def apply(behavior: setting, name: precision): Double = js.native
+  def apply(behavior: setting, name: precision, value: Double): JQuery = js.native
+  def apply(behavior: setting, name: random): RandomSettings = js.native
+  def apply(behavior: setting, name: random, value: RandomSettings): JQuery = js.native
+  def apply(behavior: setting, name: regExp): RegExpSettings = js.native
+  def apply(behavior: setting, name: regExp, value: RegExpSettings): JQuery = js.native
+  def apply(behavior: setting, name: selector): SelectorSettings = js.native
+  def apply(behavior: setting, name: selector, value: SelectorSettings): JQuery = js.native
+  def apply(behavior: setting, name: showActivity): Boolean = js.native
+  def apply(behavior: setting, name: showActivity, value: Boolean): JQuery = js.native
+  def apply(behavior: setting, name: silent): Boolean = js.native
+  def apply(behavior: setting, name: silent, value: Boolean): JQuery = js.native
+  def apply(behavior: setting, name: text): TextSettings = js.native
+  def apply(behavior: setting, name: text, value: TextSettings): JQuery = js.native
+  def apply(behavior: setting, name: total): `false` | Double = js.native
+  def apply(behavior: setting, name: total, value: Double): JQuery = js.native
+  def apply(behavior: setting, name: total, value: `false`): JQuery = js.native
+  def apply(behavior: setting, name: value): `false` | Double = js.native
+  def apply(behavior: setting, name: value, value: Double): JQuery = js.native
+  def apply(behavior: setting, name: value, value: `false`): JQuery = js.native
+  def apply(behavior: setting, name: verbose): Boolean = js.native
+  def apply(behavior: setting, name: verbose, value: Boolean): JQuery = js.native
   def apply(behavior: setting, value: ProgressSettings): JQuery = js.native
   def apply(settings: ProgressSettings): JQuery = js.native
-  def apply[K /* <: String */](behavior: setting, name: K): /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-progress.SemanticUI.ProgressSettings._Impl[K] */ js.Any = js.native
-  def apply[K /* <: String */](
-    behavior: setting,
-    name: K,
-    value: /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-progress.SemanticUI.ProgressSettings._Impl[K] */ js.Any
-  ): JQuery = js.native
 }
 

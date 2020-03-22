@@ -1,6 +1,6 @@
 package typings.antDesignReactNative.cardHeaderMod
 
-import typings.antDesignReactNative.PickCardStyleheaderContentWrapheaderContentheaderE
+import typings.antDesignReactNative.PickCardStyleheaderConten
 import typings.antDesignReactNative.libStyleMod.WithThemeStyles
 import typings.react.mod.ReactNode
 import typings.std.Partial
@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait CardHeaderPropsType extends WithThemeStyles[PickCardStyleheaderContentWrapheaderContentheaderE] {
+trait CardHeaderPropsType extends WithThemeStyles[PickCardStyleheaderConten] {
   var extra: js.UndefOr[ReactNode] = js.undefined
   /** need url of img, if this is string. */
   var thumb: js.UndefOr[ReactNode] = js.undefined
@@ -19,7 +19,7 @@ object CardHeaderPropsType {
   @scala.inline
   def apply(
     extra: ReactNode = null,
-    styles: Partial[PickCardStyleheaderContentWrapheaderContentheaderE] = null,
+    styles: Partial[PickCardStyleheaderConten] = null,
     thumb: ReactNode = null,
     title: ReactNode = null
   ): CardHeaderPropsType = {

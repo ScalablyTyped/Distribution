@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 object groupMod extends js.Object {
   @js.native
   class Group () extends Object3D {
-    var isGroup: `true` = js.native
+    val isGroup: `true` = js.native
     @JSName("type")
     var type_Group: typings.three.threeStrings.Group = js.native
   }

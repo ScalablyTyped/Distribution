@@ -1,6 +1,5 @@
 package typings.materialUi
 
-import typings.react.mod.HTMLAttributes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -3834,8 +3833,6 @@ trait materialUiProps {
   @scala.inline
   def LinkedCameraProps: typings.materialUi.MaterialUI.SvgIconProps.type = typings.materialUi.MaterialUI.SvgIconProps
   type LinkedCameraProps = typings.materialUi.MaterialUI.SvgIconProps
-  @scala.inline
-  def ListProps: HTMLAttributes.type = typings.react.mod.HTMLAttributes
   type ListProps = typings.materialUi.MaterialUI.List.ListProps
   @scala.inline
   def ListItemProps: typings.materialUi.MaterialUI.List.ListItemProps.type = typings.materialUi.MaterialUI.List.ListItemProps

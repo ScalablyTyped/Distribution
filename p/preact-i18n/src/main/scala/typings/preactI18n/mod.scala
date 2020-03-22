@@ -49,7 +49,7 @@ object mod extends js.Object {
       /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for P */ _, 
       /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for S */ _
     ],
-    options: AnonDefinitionScope
+    options: AnonScope
   ): VNode[js.Object] = js.native
   def withText[Props, Context](mapping: js.Object): js.Function1[
     /* Child */ ComponentChild, 

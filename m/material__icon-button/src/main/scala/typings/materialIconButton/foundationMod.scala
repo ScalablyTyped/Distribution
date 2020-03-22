@@ -2,7 +2,6 @@ package typings.materialIconButton
 
 import typings.materialBase.foundationMod.MDCFoundation
 import typings.materialIconButton.adapterMod.MDCIconButtonToggleAdapter
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +11,7 @@ import scala.scalajs.js.annotation._
 object foundationMod extends js.Object {
   @js.native
   class MDCIconButtonToggleFoundation () extends MDCFoundation[MDCIconButtonToggleAdapter] {
-    def this(adapter: Partial[MDCIconButtonToggleAdapter]) = this()
+    def this(adapter: PartialMDCIconButtonToggl) = this()
     // Subclasses should override this method to perform de-initialization routines (de-registering events, etc.)
     /* CompleteClass */
     override def destroy(): Unit = js.native
@@ -27,7 +26,7 @@ object foundationMod extends js.Object {
   
   @js.native
   class default () extends MDCIconButtonToggleFoundation {
-    def this(adapter: Partial[MDCIconButtonToggleAdapter]) = this()
+    def this(adapter: PartialMDCIconButtonToggl) = this()
   }
   
   /* static members */

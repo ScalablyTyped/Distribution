@@ -44,20 +44,20 @@ trait Token extends js.Object
 
 object Token {
   @scala.inline
-  def Space(`type`: space): Token = {
-    val __obj = js.Dynamic.literal()
+  def ListStart(ordered: Boolean, `type`: list_start): Token = {
+    val __obj = js.Dynamic.literal(ordered = ordered.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Token]
   }
   @scala.inline
-  def LooseItemStart(`type`: loose_item_start): Token = {
-    val __obj = js.Dynamic.literal()
+  def Text(text: String, `type`: text): Token = {
+    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Token]
   }
   @scala.inline
-  def HTML(pre: Boolean, text: String, `type`: html): Token = {
-    val __obj = js.Dynamic.literal(pre = pre.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+  def Hr(`type`: hr): Token = {
+    val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Token]
   }
@@ -68,7 +68,7 @@ object Token {
     __obj.asInstanceOf[Token]
   }
   @scala.inline
-  def BlockquoteEnd(`type`: blockquote_end): Token = {
+  def Space(`type`: space): Token = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Token]
@@ -80,26 +80,14 @@ object Token {
     __obj.asInstanceOf[Token]
   }
   @scala.inline
+  def ListItemEnd(`type`: list_item_end): Token = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Token]
+  }
+  @scala.inline
   def ListEnd(`type`: list_end): Token = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Token]
-  }
-  @scala.inline
-  def Heading(depth: Double, text: String, `type`: heading): Token = {
-    val __obj = js.Dynamic.literal(depth = depth.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Token]
-  }
-  @scala.inline
-  def Hr(`type`: hr): Token = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Token]
-  }
-  @scala.inline
-  def Text(text: String, `type`: text): Token = {
-    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Token]
   }
@@ -109,6 +97,18 @@ object Token {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (codeBlockStyle != null) __obj.updateDynamic("codeBlockStyle")(codeBlockStyle.asInstanceOf[js.Any])
     if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Token]
+  }
+  @scala.inline
+  def BlockquoteEnd(`type`: blockquote_end): Token = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Token]
+  }
+  @scala.inline
+  def LooseItemStart(`type`: loose_item_start): Token = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Token]
   }
   @scala.inline
@@ -130,14 +130,14 @@ object Token {
     __obj.asInstanceOf[Token]
   }
   @scala.inline
-  def ListStart(ordered: Boolean, `type`: list_start): Token = {
-    val __obj = js.Dynamic.literal(ordered = ordered.asInstanceOf[js.Any])
+  def Heading(depth: Double, text: String, `type`: heading): Token = {
+    val __obj = js.Dynamic.literal(depth = depth.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Token]
   }
   @scala.inline
-  def ListItemEnd(`type`: list_item_end): Token = {
-    val __obj = js.Dynamic.literal()
+  def HTML(pre: Boolean, text: String, `type`: html): Token = {
+    val __obj = js.Dynamic.literal(pre = pre.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Token]
   }

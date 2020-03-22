@@ -58,10 +58,10 @@ object createjs extends js.Object {
       listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
       useCapture: Boolean
     ): js.Function = js.native
-    def addEventListener(`type`: String, listener: AnonEventObj): js.Object = js.native
-    def addEventListener(`type`: String, listener: AnonEventObjHandleEvent): js.Object = js.native
-    def addEventListener(`type`: String, listener: AnonEventObjHandleEvent, useCapture: Boolean): js.Object = js.native
-    def addEventListener(`type`: String, listener: AnonEventObj, useCapture: Boolean): js.Object = js.native
+    def addEventListener(`type`: String, listener: Anon0): js.Object = js.native
+    def addEventListener(`type`: String, listener: Anon0, useCapture: Boolean): js.Object = js.native
+    def addEventListener(`type`: String, listener: AnonHandleEvent): js.Object = js.native
+    def addEventListener(`type`: String, listener: AnonHandleEvent, useCapture: Boolean): js.Object = js.native
     def dispatchEvent(eventObj: String): Boolean = js.native
     def dispatchEvent(eventObj: String, target: js.Object): Boolean = js.native
     def dispatchEvent(eventObj: js.Object): Boolean = js.native
@@ -77,10 +77,10 @@ object createjs extends js.Object {
       useCapture: Boolean
     ): Unit = js.native
     def off(`type`: String, listener: js.Function, useCapture: Boolean): Unit = js.native
-    def off(`type`: String, listener: AnonEventObj): Unit = js.native
-    def off(`type`: String, listener: AnonEventObjHandleEvent): Unit = js.native
-    def off(`type`: String, listener: AnonEventObjHandleEvent, useCapture: Boolean): Unit = js.native
-    def off(`type`: String, listener: AnonEventObj, useCapture: Boolean): Unit = js.native
+    def off(`type`: String, listener: Anon0): Unit = js.native
+    def off(`type`: String, listener: Anon0, useCapture: Boolean): Unit = js.native
+    def off(`type`: String, listener: AnonHandleEvent): Unit = js.native
+    def off(`type`: String, listener: AnonHandleEvent, useCapture: Boolean): Unit = js.native
      // It is necessary for "arguments.callee"
     def on(`type`: String, listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit]): js.Function = js.native
     def on(`type`: String, listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit], scope: js.Object): js.Function = js.native
@@ -105,25 +105,25 @@ object createjs extends js.Object {
       data: js.Any,
       useCapture: Boolean
     ): js.Function = js.native
-    def on(`type`: String, listener: AnonEventObj): js.Object = js.native
-    def on(`type`: String, listener: AnonEventObjHandleEvent): js.Object = js.native
-    def on(`type`: String, listener: AnonEventObjHandleEvent, scope: js.Object): js.Object = js.native
-    def on(`type`: String, listener: AnonEventObjHandleEvent, scope: js.Object, once: Boolean): js.Object = js.native
-    def on(`type`: String, listener: AnonEventObjHandleEvent, scope: js.Object, once: Boolean, data: js.Any): js.Object = js.native
+    def on(`type`: String, listener: Anon0): js.Object = js.native
+    def on(`type`: String, listener: Anon0, scope: js.Object): js.Object = js.native
+    def on(`type`: String, listener: Anon0, scope: js.Object, once: Boolean): js.Object = js.native
+    def on(`type`: String, listener: Anon0, scope: js.Object, once: Boolean, data: js.Any): js.Object = js.native
     def on(
       `type`: String,
-      listener: AnonEventObjHandleEvent,
+      listener: Anon0,
       scope: js.Object,
       once: Boolean,
       data: js.Any,
       useCapture: Boolean
     ): js.Object = js.native
-    def on(`type`: String, listener: AnonEventObj, scope: js.Object): js.Object = js.native
-    def on(`type`: String, listener: AnonEventObj, scope: js.Object, once: Boolean): js.Object = js.native
-    def on(`type`: String, listener: AnonEventObj, scope: js.Object, once: Boolean, data: js.Any): js.Object = js.native
+    def on(`type`: String, listener: AnonHandleEvent): js.Object = js.native
+    def on(`type`: String, listener: AnonHandleEvent, scope: js.Object): js.Object = js.native
+    def on(`type`: String, listener: AnonHandleEvent, scope: js.Object, once: Boolean): js.Object = js.native
+    def on(`type`: String, listener: AnonHandleEvent, scope: js.Object, once: Boolean, data: js.Any): js.Object = js.native
     def on(
       `type`: String,
-      listener: AnonEventObj,
+      listener: AnonHandleEvent,
       scope: js.Object,
       once: Boolean,
       data: js.Any,
@@ -139,10 +139,10 @@ object createjs extends js.Object {
       useCapture: Boolean
     ): Unit = js.native
     def removeEventListener(`type`: String, listener: js.Function, useCapture: Boolean): Unit = js.native
-    def removeEventListener(`type`: String, listener: AnonEventObj): Unit = js.native
-    def removeEventListener(`type`: String, listener: AnonEventObjHandleEvent): Unit = js.native
-    def removeEventListener(`type`: String, listener: AnonEventObjHandleEvent, useCapture: Boolean): Unit = js.native
-    def removeEventListener(`type`: String, listener: AnonEventObj, useCapture: Boolean): Unit = js.native
+    def removeEventListener(`type`: String, listener: Anon0): Unit = js.native
+    def removeEventListener(`type`: String, listener: Anon0, useCapture: Boolean): Unit = js.native
+    def removeEventListener(`type`: String, listener: AnonHandleEvent): Unit = js.native
+    def removeEventListener(`type`: String, listener: AnonHandleEvent, useCapture: Boolean): Unit = js.native
     def willTrigger(`type`: String): Boolean = js.native
   }
   
@@ -150,8 +150,8 @@ object createjs extends js.Object {
   def indexOf(array: js.Array[_], searchElement: js.Object): Double = js.native
   def promote(subclass: js.Function0[_], prefix: String): js.Function0[_] = js.native
   def proxy(method: js.Function1[/* eventObj */ js.Object, Boolean | Unit], scope: js.Object, arg: js.Any*): js.Function1[/* eventObj */ js.Object, _] = js.native
-  def proxy(method: AnonEventObjHandleEvent, scope: js.Object, arg: js.Any*): js.Function1[/* eventObj */ js.Object, _] = js.native
-  def proxy(method: AnonEventObj, scope: js.Object, arg: js.Any*): js.Function1[/* eventObj */ js.Object, _] = js.native
+  def proxy(method: Anon0, scope: js.Object, arg: js.Any*): js.Function1[/* eventObj */ js.Object, _] = js.native
+  def proxy(method: AnonHandleEvent, scope: js.Object, arg: js.Any*): js.Function1[/* eventObj */ js.Object, _] = js.native
   /* static members */
   @js.native
   object EventDispatcher extends js.Object {

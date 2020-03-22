@@ -10,6 +10,7 @@ import typings.flatpickr.flatpickrStrings.time
 import typings.flatpickr.globalsMod._Global_.Date
 import typings.flatpickr.globalsMod._Global_.HTMLElement
 import typings.flatpickr.localeMod.CustomLocale
+import typings.flatpickr.localeMod.Locale
 import typings.flatpickr.localeMod.key
 import typings.std.Error
 import scala.scalajs.js
@@ -43,9 +44,7 @@ trait ParsedOptions extends js.Object {
   var enable: js.Array[DateLimit[Date]]
   var enableSeconds: Boolean
   var enableTime: Boolean
-  var formatDate: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: flatpickr.flatpickr/dist/types/options.Options['formatDate'] */ js.Any
-  ] = js.undefined
+  var formatDate: js.UndefOr[js.Function3[/* date */ Date, /* format */ String, /* locale */ Locale, String]] = js.undefined
   var hourIncrement: Double
   var ignoredFocusElements: js.Array[HTMLElement]
   var `inline`: Boolean
@@ -149,7 +148,7 @@ object ParsedOptions {
     _minTime: Date = null,
     appendTo: HTMLElement = null,
     defaultDate: Date | js.Array[Date] = null,
-    formatDate: /* import warning: importer.ImportType#apply Failed type conversion: flatpickr.flatpickr/dist/types/options.Options['formatDate'] */ js.Any = null,
+    formatDate: (/* date */ Date, /* format */ String, /* locale */ Locale) => String = null,
     maxDate: Date = null,
     maxTime: Date = null,
     minDate: Date = null,
@@ -165,7 +164,7 @@ object ParsedOptions {
     if (_minTime != null) __obj.updateDynamic("_minTime")(_minTime.asInstanceOf[js.Any])
     if (appendTo != null) __obj.updateDynamic("appendTo")(appendTo.asInstanceOf[js.Any])
     if (defaultDate != null) __obj.updateDynamic("defaultDate")(defaultDate.asInstanceOf[js.Any])
-    if (formatDate != null) __obj.updateDynamic("formatDate")(formatDate.asInstanceOf[js.Any])
+    if (formatDate != null) __obj.updateDynamic("formatDate")(js.Any.fromFunction3(formatDate))
     if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])
     if (maxTime != null) __obj.updateDynamic("maxTime")(maxTime.asInstanceOf[js.Any])
     if (minDate != null) __obj.updateDynamic("minDate")(minDate.asInstanceOf[js.Any])

@@ -1,7 +1,7 @@
 package typings.reactElemental.mod
 
 import typings.react.mod.CSSProperties
-import typings.reactElemental.AnonLabelValueReactNode
+import typings.reactElemental.AnonLabelValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ trait TabsProps extends js.Object {
   val fit: js.UndefOr[Boolean] = js.undefined
   val invert: js.UndefOr[Boolean] = js.undefined
   val onChange: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.undefined
-  val options: js.UndefOr[js.Array[AnonLabelValueReactNode]] = js.undefined
+  val options: js.UndefOr[js.Array[AnonLabelValue]] = js.undefined
   val secondary: js.UndefOr[Boolean] = js.undefined
   val style: js.UndefOr[CSSProperties] = js.undefined
   val value: js.UndefOr[String] = js.undefined
@@ -22,7 +22,7 @@ object TabsProps {
     fit: js.UndefOr[Boolean] = js.undefined,
     invert: js.UndefOr[Boolean] = js.undefined,
     onChange: /* value */ String => Unit = null,
-    options: js.Array[AnonLabelValueReactNode] = null,
+    options: js.Array[AnonLabelValue] = null,
     secondary: js.UndefOr[Boolean] = js.undefined,
     style: CSSProperties = null,
     value: String = null

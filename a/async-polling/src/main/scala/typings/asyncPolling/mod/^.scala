@@ -1,6 +1,6 @@
 package typings.asyncPolling.mod
 
-import typings.asyncPolling.AnonEventName
+import typings.asyncPolling.AnonOn
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,6 +15,6 @@ object ^ extends js.Object {
       _
     ],
     delay: Double
-  ): AnonEventName = js.native
+  ): AnonOn = js.native
 }
 

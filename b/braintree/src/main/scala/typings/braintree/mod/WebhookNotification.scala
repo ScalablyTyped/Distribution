@@ -19,12 +19,6 @@ trait WebhookNotification extends js.Object
 
 object WebhookNotification {
   @scala.inline
-  def TransactionNotification(kind: TransactionNotificationKind, timestamp: Date, transaction: Transaction): WebhookNotification = {
-    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], transaction = transaction.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[WebhookNotification]
-  }
-  @scala.inline
   def SubMerchantAccountApprovedNotification(
     kind: SubMerchantAccountApprovedNotificationKind,
     merchantAccount: MerchantAccount,
@@ -35,20 +29,14 @@ object WebhookNotification {
     __obj.asInstanceOf[WebhookNotification]
   }
   @scala.inline
-  def PaymentMethodNotification(kind: PaymentMethodNotificationKind, revokedPaymentMethodMetadata: AnonCustomerId, timestamp: Date): WebhookNotification = {
-    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], revokedPaymentMethodMetadata = revokedPaymentMethodMetadata.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[WebhookNotification]
-  }
-  @scala.inline
   def DisputeNotification(dispute: Dispute, kind: DisputeNotificationKind, timestamp: Date): WebhookNotification = {
     val __obj = js.Dynamic.literal(dispute = dispute.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WebhookNotification]
   }
   @scala.inline
-  def SubscriptionNotification(kind: SubscriptionNotificationKind, subscription: Subscription, timestamp: Date): WebhookNotification = {
-    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], subscription = subscription.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
+  def PaymentMethodNotification(kind: PaymentMethodNotificationKind, revokedPaymentMethodMetadata: AnonCustomerId, timestamp: Date): WebhookNotification = {
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], revokedPaymentMethodMetadata = revokedPaymentMethodMetadata.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WebhookNotification]
   }
@@ -59,6 +47,18 @@ object WebhookNotification {
     timestamp: Date
   ): WebhookNotification = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], merchantAccount = merchantAccount.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[WebhookNotification]
+  }
+  @scala.inline
+  def SubscriptionNotification(kind: SubscriptionNotificationKind, subscription: Subscription, timestamp: Date): WebhookNotification = {
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], subscription = subscription.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[WebhookNotification]
+  }
+  @scala.inline
+  def TransactionNotification(kind: TransactionNotificationKind, timestamp: Date, transaction: Transaction): WebhookNotification = {
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], transaction = transaction.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WebhookNotification]
   }

@@ -2,8 +2,8 @@ package typings.vsoNodeApi.coreInterfacesMod
 
 import typings.vsoNodeApi.AnonEnumValuesAnonAdded
 import typings.vsoNodeApi.AnonEnumValuesAnonAzureSubscription
-import typings.vsoNodeApi.AnonEnumValuesAnonCustomInherited
 import typings.vsoNodeApi.AnonEnumValuesAnonGit
+import typings.vsoNodeApi.AnonEnumValuesAnonInherited
 import typings.vsoNodeApi.AnonEnumValuesAnonOrganization
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 object TypeInfo extends js.Object {
   var ConnectedServiceKind: AnonEnumValuesAnonAzureSubscription = js.native
   var Process: js.Any = js.native
-  var ProcessType: AnonEnumValuesAnonCustomInherited = js.native
+  var ProcessType: AnonEnumValuesAnonInherited = js.native
   var ProjectChangeType: AnonEnumValuesAnonAdded = js.native
   var ProjectInfo: js.Any = js.native
   var ProjectMessage: js.Any = js.native

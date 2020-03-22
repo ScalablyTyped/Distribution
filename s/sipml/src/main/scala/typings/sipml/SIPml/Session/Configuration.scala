@@ -1,7 +1,7 @@
 package typings.sipml.SIPml.Session
 
 import typings.sipml.AnonAudio
-import typings.sipml.AnonE
+import typings.sipml.AnonEvents
 import typings.sipml.AnonMaxHeight
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 trait Configuration extends js.Object {
   var audio_remote: js.UndefOr[HTMLElement] = js.undefined
   var bandwidth: js.UndefOr[AnonAudio] = js.undefined
-  var events_listener: js.UndefOr[AnonE] = js.undefined
+  var events_listener: js.UndefOr[AnonEvents] = js.undefined
   var expires: js.UndefOr[Double] = js.undefined
   var from: js.UndefOr[String] = js.undefined
   var sip_caps: js.UndefOr[js.Array[js.Object]] = js.undefined
@@ -26,7 +26,7 @@ object Configuration {
   def apply(
     audio_remote: HTMLElement = null,
     bandwidth: AnonAudio = null,
-    events_listener: AnonE = null,
+    events_listener: AnonEvents = null,
     expires: Int | Double = null,
     from: String = null,
     sip_caps: js.Array[js.Object] = null,

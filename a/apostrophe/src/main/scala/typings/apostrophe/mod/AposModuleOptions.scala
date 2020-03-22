@@ -1,7 +1,7 @@
 package typings.apostrophe.mod
 
 import typings.apostrophe.AnonFields
-import typings.apostrophe.AnonKey
+import typings.apostrophe.AnonProjection
 import typings.apostrophe.apostropheBooleans.`false`
 import typings.apostrophe.apostropheStrings.user
 import scala.scalajs.js
@@ -15,7 +15,7 @@ trait AposModuleOptions[C] extends js.Object {
   var beforeConstruct: js.UndefOr[js.Function2[/* self */ js.Any, /* options */ js.Any, _]] = js.undefined
   var defer: js.UndefOr[Boolean] = js.undefined
   var extend: AposCoreModules | C
-  var filters: js.UndefOr[AnonKey] = js.undefined
+  var filters: js.UndefOr[AnonProjection] = js.undefined
   var label: String
   var name: js.UndefOr[String] = js.undefined
   var playerData: js.UndefOr[`false` | js.Array[String]] = js.undefined
@@ -33,7 +33,7 @@ object AposModuleOptions {
     arrangeFields: js.Array[AnonFields] = null,
     beforeConstruct: (/* self */ js.Any, /* options */ js.Any) => _ = null,
     defer: js.UndefOr[Boolean] = js.undefined,
-    filters: AnonKey = null,
+    filters: AnonProjection = null,
     name: String = null,
     playerData: `false` | js.Array[String] = null,
     pluralLabel: String = null,

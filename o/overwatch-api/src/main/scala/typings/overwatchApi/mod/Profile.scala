@@ -1,9 +1,9 @@
 package typings.overwatchApi.mod
 
 import typings.overwatchApi.AnonCompetitive
-import typings.overwatchApi.AnonCompetitiveQuickplay
 import typings.overwatchApi.AnonDamage
 import typings.overwatchApi.AnonFrame
+import typings.overwatchApi.AnonQuickplay
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ trait Profile extends js.Object {
   var games: AnonCompetitive
   var level: Double
   var levelFrame: String
-  var playtime: AnonCompetitiveQuickplay
+  var playtime: AnonQuickplay
   var portrait: String
   var `private`: Boolean
   var star: String
@@ -29,7 +29,7 @@ object Profile {
     games: AnonCompetitive,
     level: Double,
     levelFrame: String,
-    playtime: AnonCompetitiveQuickplay,
+    playtime: AnonQuickplay,
     portrait: String,
     `private`: Boolean,
     star: String,

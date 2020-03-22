@@ -1,10 +1,10 @@
 package typings.materializeCss.M
 
 import typings.materializeCss.MElements
+import typings.materializeCss.PartialFormSelectOptions
 import typings.std.Element
 import typings.std.HTMLInputElement
 import typings.std.HTMLUListElement
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -50,11 +50,11 @@ object FormSelect extends js.Object {
     * Init FormSelects
     */
   def init(els: MElements): js.Array[FormSelect] = js.native
-  def init(els: MElements, options: Partial[FormSelectOptions]): js.Array[FormSelect] = js.native
+  def init(els: MElements, options: PartialFormSelectOptions): js.Array[FormSelect] = js.native
   /**
     * Init FormSelect
     */
   def init(els: Element): FormSelect = js.native
-  def init(els: Element, options: Partial[FormSelectOptions]): FormSelect = js.native
+  def init(els: Element, options: PartialFormSelectOptions): FormSelect = js.native
 }
 

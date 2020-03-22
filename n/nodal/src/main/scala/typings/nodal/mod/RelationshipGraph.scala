@@ -1,6 +1,6 @@
 package typings.nodal.mod
 
-import typings.nodal.TypeofClassModel
+import typings.nodal.TypeofModel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 class RelationshipGraph () extends js.Object {
   var edges: js.Array[RelationshipEdge] = js.native
   var nodes: js.Array[RelationshipNode] = js.native
-  def of(mModel: TypeofClassModel): RelationshipNode = js.native
+  def of(mModel: TypeofModel): RelationshipNode = js.native
 }
 

@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 
 trait AnonEventValue extends js.Object {
   var event: SyntheticEvent[HTMLInputElement, Event_]
-  var value: String
+  var value: Boolean
 }
 
 object AnonEventValue {
   @scala.inline
-  def apply(event: SyntheticEvent[HTMLInputElement, Event_], value: String): AnonEventValue = {
+  def apply(event: SyntheticEvent[HTMLInputElement, Event_], value: Boolean): AnonEventValue = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AnonEventValue]

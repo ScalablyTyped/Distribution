@@ -2,8 +2,8 @@ package typings.backboneMarionette.mod
 
 import typings.backbone.mod.Collection
 import typings.backbone.mod.Model
-import typings.backboneMarionette.AnonArgs
-import typings.backboneMarionette.AnonArgsAny
+import typings.backboneMarionette.AnonInstantiable
+import typings.backboneMarionette.AnonInstantiableView
 import typings.backboneMarionette.AnonPreventRender
 import typings.backboneMarionette.backboneMarionetteBooleans.`false`
 import typings.std.DocumentFragment
@@ -18,7 +18,7 @@ class CollectionView[TModel /* <: Model */, TView /* <: View[TModel] */, TCollec
   /**
     * Specify a child view to use.
     */
-  var childView: (js.Function1[/* model */ TModel, AnonArgs[TView]]) | AnonArgs[TView] = js.native
+  var childView: (js.Function1[/* model */ TModel, AnonInstantiable[TView]]) | AnonInstantiable[TView] = js.native
   /**
     * Customize the event prefix for events that are forwarded through the
     * collection view.
@@ -54,7 +54,7 @@ class CollectionView[TModel /* <: Model */, TView /* <: View[TModel] */, TCollec
   /**
     * Specify a view to use if the collection has no children.
     */
-  var emptyView: js.Function0[AnonArgsAny[TModel]] | AnonArgsAny[TModel] = js.native
+  var emptyView: js.Function0[AnonInstantiableView[TModel]] | AnonInstantiableView[TModel] = js.native
   /**
     * Define options to pass to the emptyView constructor.
     */
@@ -88,7 +88,7 @@ class CollectionView[TModel /* <: Model */, TView /* <: View[TModel] */, TCollec
     * The buildChildView is responsible for taking the ChildView class and
     * instantiating it with the appropriate data.
     */
-  def buildChildView(child: TModel, childViewClass: AnonArgs[TView], childViewOptions: ViewOptions[TModel]): Unit = js.native
+  def buildChildView(child: TModel, childViewClass: AnonInstantiable[TView], childViewOptions: ViewOptions[TModel]): Unit = js.native
   /**
     * Automatically destroys this Collection's children and cleans up
     * listeners.

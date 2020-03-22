@@ -2,7 +2,7 @@ package typings.gapiClientCloudfunctions.gapi.client.cloudfunctions
 
 import typings.gapiClient.gapi.client.Request_
 import typings.gapiClientCloudfunctions.AnonAccesstoken
-import typings.gapiClientCloudfunctions.AnonAccesstokenAlt
+import typings.gapiClientCloudfunctions.AnonAlt
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,15 +26,12 @@ trait OperationsResource extends js.Object {
     * collection id, however overriding users must ensure the name binding
     * is the parent resource, without the operations collection id.
     */
-  def list(request: AnonAccesstokenAlt): Request_[ListOperationsResponse]
+  def list(request: AnonAlt): Request_[ListOperationsResponse]
 }
 
 object OperationsResource {
   @scala.inline
-  def apply(
-    get: AnonAccesstoken => Request_[Operation],
-    list: AnonAccesstokenAlt => Request_[ListOperationsResponse]
-  ): OperationsResource = {
+  def apply(get: AnonAccesstoken => Request_[Operation], list: AnonAlt => Request_[ListOperationsResponse]): OperationsResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[OperationsResource]

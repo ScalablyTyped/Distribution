@@ -1,6 +1,6 @@
 package typings.reactNativeMaterialUi.mod
 
-import typings.reactNativeMaterialUi.AnonContainerMessage
+import typings.reactNativeMaterialUi.AnonMessage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ trait SnackbarProps extends js.Object {
   var button: js.UndefOr[ButtonProps] = js.undefined
   var message: String
   var onActionPress: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var style: js.UndefOr[AnonContainerMessage] = js.undefined
+  var style: js.UndefOr[AnonMessage] = js.undefined
   var timeout: Double
   var visible: Boolean
   def onRequestClose(): Unit
@@ -28,7 +28,7 @@ object SnackbarProps {
     actionText: String = null,
     button: ButtonProps = null,
     onActionPress: () => Unit = null,
-    style: AnonContainerMessage = null
+    style: AnonMessage = null
   ): SnackbarProps = {
     val __obj = js.Dynamic.literal(bottomNavigation = bottomNavigation.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], onRequestClose = js.Any.fromFunction0(onRequestClose), timeout = timeout.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
     if (actionText != null) __obj.updateDynamic("actionText")(actionText.asInstanceOf[js.Any])

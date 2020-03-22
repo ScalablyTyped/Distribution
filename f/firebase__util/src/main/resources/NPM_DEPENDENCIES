@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@firebase/util" : "0.2.40"
+      "@firebase/util" : "0.2.41"
     }
   ],
   "test-dependencies" : [
     {
-      "@firebase/util" : "0.2.40"
+      "@firebase/util" : "0.2.41"
     }
   ],
   "compile-devDependencies" : [

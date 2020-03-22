@@ -1,7 +1,7 @@
 
 # Scala.js typings for tensorflow-models__universal-sentence-encoder
 
-Typings are for version 1.2.0
+Typings are for version 1.2.2
 
 ## Library description:
 Universal Sentence Encoder lite in TensorFlow.js

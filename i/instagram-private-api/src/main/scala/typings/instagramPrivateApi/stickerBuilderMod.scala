@@ -58,20 +58,20 @@ object stickerBuilderMod extends js.Object {
   /* static members */
   @js.native
   object StickerBuilder extends js.Object {
-    def attachment(options: DiffAttachmentStickerInstaSticker): typings.instagramPrivateApi.stickersMod.AttachmentSticker = js.native
-    def attachmentFromMedia(mediaInfo: AnonPkUser): typings.instagramPrivateApi.stickersMod.AttachmentSticker = js.native
-    def attachmentFromMedia(mediaInfo: AnonPkUser, additional: PartialAttachmentSticker): typings.instagramPrivateApi.stickersMod.AttachmentSticker = js.native
-    def chat(options: DiffChatStickerInstaSticker): typings.instagramPrivateApi.stickersMod.ChatSticker = js.native
-    def countdown(options: DiffCountdownStickerInstaSticker): typings.instagramPrivateApi.stickersMod.CountdownSticker = js.native
-    def hashtag(options: DiffHashtagStickerInstaSticker): typings.instagramPrivateApi.stickersMod.HashtagSticker = js.native
-    def location(options: DiffLocationStickerInstaSticker): typings.instagramPrivateApi.stickersMod.LocationSticker = js.native
-    def mention(options: DiffMentionStickerInstaSticker): typings.instagramPrivateApi.stickersMod.MentionSticker = js.native
-    def mentionReel(mediaInfo: AnonPkUser): typings.instagramPrivateApi.stickersMod.MentionSticker = js.native
-    def mentionReel(mediaInfo: AnonPkUser, additional: PartialMentionSticker): typings.instagramPrivateApi.stickersMod.MentionSticker = js.native
-    def poll(options: DiffPollStickerInstaSticker): typings.instagramPrivateApi.stickersMod.PollSticker = js.native
-    def question(options: DiffQuestionStickerInstaSticker): typings.instagramPrivateApi.stickersMod.QuestionSticker = js.native
-    def quiz(options: DiffQuizStickerInstaSticker): typings.instagramPrivateApi.stickersMod.QuizSticker = js.native
-    def slider(options: DiffSliderStickerInstaSticker): typings.instagramPrivateApi.stickersMod.SliderSticker = js.native
+    def attachment(options: DiffAttachmentStickerInst): typings.instagramPrivateApi.stickersMod.AttachmentSticker = js.native
+    def attachmentFromMedia(mediaInfo: AnonUser): typings.instagramPrivateApi.stickersMod.AttachmentSticker = js.native
+    def attachmentFromMedia(mediaInfo: AnonUser, additional: PartialAttachmentSticker): typings.instagramPrivateApi.stickersMod.AttachmentSticker = js.native
+    def chat(options: DiffChatStickerInstaStick): typings.instagramPrivateApi.stickersMod.ChatSticker = js.native
+    def countdown(options: DiffCountdownStickerInsta): typings.instagramPrivateApi.stickersMod.CountdownSticker = js.native
+    def hashtag(options: DiffHashtagStickerInstaSt): typings.instagramPrivateApi.stickersMod.HashtagSticker = js.native
+    def location(options: DiffLocationStickerInstaS): typings.instagramPrivateApi.stickersMod.LocationSticker = js.native
+    def mention(options: DiffMentionStickerInstaSt): typings.instagramPrivateApi.stickersMod.MentionSticker = js.native
+    def mentionReel(mediaInfo: AnonUser): typings.instagramPrivateApi.stickersMod.MentionSticker = js.native
+    def mentionReel(mediaInfo: AnonUser, additional: PartialMentionSticker): typings.instagramPrivateApi.stickersMod.MentionSticker = js.native
+    def poll(options: DiffPollStickerInstaStick): typings.instagramPrivateApi.stickersMod.PollSticker = js.native
+    def question(options: DiffQuestionStickerInstaS): typings.instagramPrivateApi.stickersMod.QuestionSticker = js.native
+    def quiz(options: DiffQuizStickerInstaStick): typings.instagramPrivateApi.stickersMod.QuizSticker = js.native
+    def slider(options: DiffSliderStickerInstaSti): typings.instagramPrivateApi.stickersMod.SliderSticker = js.native
   }
   
 }

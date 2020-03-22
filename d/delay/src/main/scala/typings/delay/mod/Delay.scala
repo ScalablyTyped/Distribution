@@ -1,6 +1,6 @@
 package typings.delay.mod
 
-import typings.delay.AnonValueUnknown
+import typings.delay.Optionsvalueunknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,6 +21,6 @@ trait Delay extends js.Object {
   	*/
   // TODO: Allow providing value type after https://github.com/Microsoft/TypeScript/issues/5413 will be resolved.
   def reject(milliseconds: Double): ClearablePromise[scala.Nothing] = js.native
-  def reject(milliseconds: Double, options: Options with AnonValueUnknown): ClearablePromise[scala.Nothing] = js.native
+  def reject(milliseconds: Double, options: Optionsvalueunknown): ClearablePromise[scala.Nothing] = js.native
 }
 

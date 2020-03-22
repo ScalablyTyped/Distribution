@@ -30,6 +30,7 @@ trait TitleProps extends js.Object {
   var mark: js.UndefOr[Boolean] = js.undefined
   var prefixCls: js.UndefOr[String] = js.undefined
   var style: js.UndefOr[CSSProperties] = js.undefined
+  var title: js.UndefOr[String] = js.undefined
   var `type`: js.UndefOr[BaseType] = js.undefined
   var underline: js.UndefOr[Boolean] = js.undefined
 }
@@ -51,6 +52,7 @@ object TitleProps {
     mark: js.UndefOr[Boolean] = js.undefined,
     prefixCls: String = null,
     style: CSSProperties = null,
+    title: String = null,
     `type`: BaseType = null,
     underline: js.UndefOr[Boolean] = js.undefined
   ): TitleProps = {
@@ -69,6 +71,7 @@ object TitleProps {
     if (!js.isUndefined(mark)) __obj.updateDynamic("mark")(mark.asInstanceOf[js.Any])
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (!js.isUndefined(underline)) __obj.updateDynamic("underline")(underline.asInstanceOf[js.Any])
     __obj.asInstanceOf[TitleProps]

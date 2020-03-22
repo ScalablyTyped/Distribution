@@ -4,10 +4,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ColorProps extends js.Object {
-  var colors: js.Array[String]
-  var subtitle: String
-  var title: String
+  var colors: js.Array[String] = js.native
+  var subtitle: String = js.native
+  var title: String = js.native
 }
 
 object ColorProps {

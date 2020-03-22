@@ -12,12 +12,9 @@ trait StaticRegistrationOptions extends js.Object {
   var id: js.UndefOr[String] = js.undefined
 }
 
-object StaticRegistrationOptions {
-  @scala.inline
-  def apply(id: String = null): StaticRegistrationOptions = {
-    val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    __obj.asInstanceOf[StaticRegistrationOptions]
-  }
+@JSImport("vscode-languageserver-protocol/lib/protocol", "StaticRegistrationOptions")
+@js.native
+object StaticRegistrationOptions extends js.Object {
+  def hasId(value: js.Object): /* is vscode-languageserver-protocol.AnonId */ Boolean = js.native
 }
 

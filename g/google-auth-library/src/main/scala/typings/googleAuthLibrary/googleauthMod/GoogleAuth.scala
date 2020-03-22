@@ -3,12 +3,13 @@ package typings.googleAuthLibrary.googleauthMod
 import typings.gaxios.commonMod.GaxiosOptions
 import typings.gaxios.commonMod.GaxiosResponse
 import typings.googleAuthLibrary.AnonHeaders
-import typings.googleAuthLibrary.AnonHeadersUri
-import typings.googleAuthLibrary.TypeofClassDefaultTransporter
+import typings.googleAuthLibrary.AnonUri
+import typings.googleAuthLibrary.TypeofDefaultTransporter
 import typings.googleAuthLibrary.computeclientMod.Compute
 import typings.googleAuthLibrary.credentialsMod.CredentialBody
 import typings.googleAuthLibrary.credentialsMod.JWTInput
 import typings.googleAuthLibrary.envDetectMod.GCPEnv
+import typings.googleAuthLibrary.idtokenclientMod.IdTokenClient
 import typings.googleAuthLibrary.jwtclientMod.JWT
 import typings.googleAuthLibrary.oauth2clientMod.Headers
 import typings.googleAuthLibrary.oauth2clientMod.RefreshOptions
@@ -107,7 +108,7 @@ class GoogleAuth () extends js.Object {
     * the request options.
     * @param opts Axios or Request options on which to attach the headers
     */
-  def authorizeRequest(opts: AnonHeaders): js.Promise[AnonHeadersUri] = js.native
+  def authorizeRequest(opts: AnonHeaders): js.Promise[AnonUri] = js.native
   /**
     * Create a credentials instance using the given API key string.
     * @param apiKey The API key string
@@ -177,6 +178,12 @@ class GoogleAuth () extends js.Object {
     */
   def getEnv(): js.Promise[GCPEnv] = js.native
   /**
+    * Creates a client which will fetch an ID token for authorization.
+    * @param targetAudience the audience for the fetched ID token.
+    * @returns IdTokenClient for making HTTP calls authenticated with ID tokens.
+    */
+  def getIdTokenClient(targetAudience: String): js.Promise[IdTokenClient] = js.native
+  /**
     * Obtains the default project ID for the application.
     * @param callback Optional callback
     * @returns Promise that resolves with project Id (if used without callback)
@@ -216,6 +223,6 @@ object GoogleAuth extends js.Object {
   /**
     * Export DefaultTransporter as a static property of the class.
     */
-  var DefaultTransporter: TypeofClassDefaultTransporter = js.native
+  var DefaultTransporter: TypeofDefaultTransporter = js.native
 }
 

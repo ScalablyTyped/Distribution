@@ -1,7 +1,7 @@
 package typings.kendoUi.kendo.data
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.kendoUi.TypeofClassModel
+import typings.kendoUi.TypeofModel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,7 +28,7 @@ class Model () extends ObservableObject {
 object Model extends js.Object {
   var fields: DataSourceSchemaModelFields = js.native
   var idField: String = js.native
-  def define(options: DataSourceSchemaModelWithFieldsArray): TypeofClassModel = js.native
-  def define(options: DataSourceSchemaModelWithFieldsObject): TypeofClassModel = js.native
+  def define(options: DataSourceSchemaModelWithFieldsArray): TypeofModel = js.native
+  def define(options: DataSourceSchemaModelWithFieldsObject): TypeofModel = js.native
 }
 

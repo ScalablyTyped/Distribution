@@ -4,8 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait JsDocReturns extends js.Object {
-  var description: js.UndefOr[String] = js.undefined
+  var description: js.UndefOr[String] = js.native
 }
 
 object JsDocReturns {

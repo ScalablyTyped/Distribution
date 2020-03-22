@@ -4,7 +4,7 @@ import typings.jupyterlabCells.modelMod.ICellModel
 import typings.jupyterlabCells.modelMod.ICodeCellModel
 import typings.jupyterlabCells.modelMod.IMarkdownCellModel
 import typings.jupyterlabCells.modelMod.IRawCellModel
-import typings.jupyterlabCoreutils.nbformatMod.nbformat.CellType
+import typings.jupyterlabNbformat.mod.CellType
 import typings.jupyterlabObservables.modeldbMod.IModelDB
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,10 +1,10 @@
 package typings.packageJson.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.packageJson.AnonCreated
+import typings.packageJson.AnonDictversion
 import typings.packageJson.AnonEmail
-import typings.packageJson.AnonEmailUrl
 import typings.packageJson.AnonType
+import typings.packageJson.AnonUrl
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ trait FullMetadata
      with HoistedData {
   val _id: String
   val _rev: String
-  val time: AnonCreated
+  val time: AnonDictversion
   val users: js.UndefOr[StringDictionary[Boolean]] = js.undefined
   @JSName("versions")
   val versions_FullMetadata: StringDictionary[FullVersion]
@@ -28,10 +28,10 @@ object FullMetadata {
     `dist-tags`: DistTags,
     modified: String,
     name: String,
-    time: AnonCreated,
+    time: AnonDictversion,
     versions: StringDictionary[FullVersion],
     author: Person = null,
-    bugs: AnonEmail | AnonEmailUrl = null,
+    bugs: AnonEmail | AnonUrl = null,
     contributors: js.Array[Person] = null,
     description: String = null,
     homepage: String = null,

@@ -5,13 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object SelectorSettings {
-  type Param = (typings.std.Pick[
-    typings.semanticUiSidebar.SemanticUI.Sidebar.SelectorSettings.Impl, 
-    typings.semanticUiSidebar.semanticUiSidebarStrings.fixed | typings.semanticUiSidebar.semanticUiSidebarStrings.omitted | typings.semanticUiSidebar.semanticUiSidebarStrings.pusher | typings.semanticUiSidebar.semanticUiSidebarStrings.sidebar
-  ]) with (typings.std.Partial[
-    typings.std.Pick[
-      typings.semanticUiSidebar.SemanticUI.Sidebar.SelectorSettings.Impl, 
-      typings.semanticUiSidebar.semanticUiSidebarStrings.fixed | typings.semanticUiSidebar.semanticUiSidebarStrings.omitted | typings.semanticUiSidebar.semanticUiSidebarStrings.pusher | typings.semanticUiSidebar.semanticUiSidebarStrings.sidebar
-    ]
-  ])
+  type Param = (typings.semanticUiSidebar.PickImplfixed | typings.semanticUiSidebar.PickImplomitted | typings.semanticUiSidebar.PickImplpusher | typings.semanticUiSidebar.PickImplsidebar) with typings.semanticUiSidebar.PartialPickImplkeyofImplFixed
 }

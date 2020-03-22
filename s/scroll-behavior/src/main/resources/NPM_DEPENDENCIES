@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "scroll-behavior" : "0.9.11"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "scroll-behavior" : "0.9.11"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

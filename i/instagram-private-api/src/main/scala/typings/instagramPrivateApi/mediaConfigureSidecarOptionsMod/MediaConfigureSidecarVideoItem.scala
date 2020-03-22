@@ -1,6 +1,6 @@
 package typings.instagramPrivateApi.mediaConfigureSidecarOptionsMod
 
-import typings.instagramPrivateApi.AnonAndroidreleaseAndroidversion
+import typings.instagramPrivateApi.AnonAndroidversion
 import typings.instagramPrivateApi.AnonCropcenter
 import typings.instagramPrivateApi.AnonLength
 import typings.instagramPrivateApi.AnonSourceheight
@@ -30,7 +30,7 @@ object MediaConfigureSidecarVideoItem {
     caption: js.UndefOr[scala.Nothing] = js.undefined,
     clips: js.Array[AnonLength] | String = null,
     date_time_original: String = null,
-    device: AnonAndroidreleaseAndroidversion | String = null,
+    device: AnonAndroidversion | String = null,
     edits: AnonCropcenter | String = null,
     extra: AnonSourceheight | String = null,
     filter_type: String = null,

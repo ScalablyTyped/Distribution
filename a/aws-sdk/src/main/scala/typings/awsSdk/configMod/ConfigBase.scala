@@ -1,6 +1,6 @@
 package typings.awsSdk.configMod
 
-import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdk.ConfigurationOptionskeyst
 import typings.awsSdk.awsSdkBooleans.`false`
 import typings.awsSdk.awsSdkBooleans.`true`
 import typings.awsSdk.errorMod.AWSError
@@ -50,6 +50,6 @@ class ConfigBase () extends ConfigurationOptions {
     * @param {boolean} allowUnknownKeys - Whether unknown keys can be set on the configuration object.
     */
   @JSName("update")
-  def update_true(options: ConfigurationOptions with StringDictionary[js.Any], allowUnknownKeys: `true`): Unit = js.native
+  def update_true(options: ConfigurationOptionskeyst, allowUnknownKeys: `true`): Unit = js.native
 }
 

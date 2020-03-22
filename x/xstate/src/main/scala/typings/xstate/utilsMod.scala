@@ -111,20 +111,20 @@ object utilsMod extends js.Object {
     configLike: SingleOrArray[
       (TransitionConfig[TContext, TEvent]) | (TransitionConfigTargetShortcut[TContext, TEvent])
     ]
-  ): js.Array[(TransitionConfig[TContext, TEvent]) with Anon[TEvent]] = js.native
+  ): js.Array[(TransitionConfig[TContext, TEvent]) with AnonEvent[TEvent]] = js.native
   def toTransitionConfigArray[TContext, TEvent /* <: EventObject */](
     event: Asterisk,
     configLike: SingleOrArray[
       (TransitionConfig[TContext, TEvent]) | (TransitionConfigTargetShortcut[TContext, TEvent])
     ]
-  ): js.Array[(TransitionConfig[TContext, TEvent]) with Anon[TEvent]] = js.native
+  ): js.Array[(TransitionConfig[TContext, TEvent]) with AnonEvent[TEvent]] = js.native
   @JSName("toTransitionConfigArray")
   def toTransitionConfigArray_type[TContext, TEvent /* <: EventObject */](
     event: /* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any,
     configLike: SingleOrArray[
       (TransitionConfig[TContext, TEvent]) | (TransitionConfigTargetShortcut[TContext, TEvent])
     ]
-  ): js.Array[(TransitionConfig[TContext, TEvent]) with Anon[TEvent]] = js.native
+  ): js.Array[(TransitionConfig[TContext, TEvent]) with AnonEvent[TEvent]] = js.native
   def uniqueId(): String = js.native
   def updateContext[TContext, TEvent /* <: EventObject */](
     context: TContext,

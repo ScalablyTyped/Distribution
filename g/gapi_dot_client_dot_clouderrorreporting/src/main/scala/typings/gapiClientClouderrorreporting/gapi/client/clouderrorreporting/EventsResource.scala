@@ -2,7 +2,7 @@ package typings.gapiClientClouderrorreporting.gapi.client.clouderrorreporting
 
 import typings.gapiClient.gapi.client.Request_
 import typings.gapiClientClouderrorreporting.AnonAccesstoken
-import typings.gapiClientClouderrorreporting.AnonAccesstokenAlt
+import typings.gapiClientClouderrorreporting.AnonAlt
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,15 +20,12 @@ trait EventsResource extends js.Object {
     * a `key` parameter. For example:
     * <pre>POST https://clouderrorreporting.googleapis.com/v1beta1/projects/example-project/events:report?key=123ABC456</pre>
     */
-  def report(request: AnonAccesstokenAlt): Request_[js.Object]
+  def report(request: AnonAlt): Request_[js.Object]
 }
 
 object EventsResource {
   @scala.inline
-  def apply(
-    list: AnonAccesstoken => Request_[ListEventsResponse],
-    report: AnonAccesstokenAlt => Request_[js.Object]
-  ): EventsResource = {
+  def apply(list: AnonAccesstoken => Request_[ListEventsResponse], report: AnonAlt => Request_[js.Object]): EventsResource = {
     val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list), report = js.Any.fromFunction1(report))
   
     __obj.asInstanceOf[EventsResource]

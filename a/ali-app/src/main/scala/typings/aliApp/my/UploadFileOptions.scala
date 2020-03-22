@@ -1,6 +1,6 @@
 package typings.aliApp.my
 
-import typings.aliApp.AnonDataHeader
+import typings.aliApp.AnonHeader
 import typings.aliApp.aliAppStrings.audio
 import typings.aliApp.aliAppStrings.image
 import typings.aliApp.aliAppStrings.video
@@ -23,7 +23,7 @@ trait UploadFileOptions
   /** HTTP 请求 Header */
   var header: js.UndefOr[RequestHeader] = js.undefined
   @JSName("success")
-  var success_UploadFileOptions: js.UndefOr[js.Function1[/* res */ AnonDataHeader, Unit]] = js.undefined
+  var success_UploadFileOptions: js.UndefOr[js.Function1[/* res */ AnonHeader, Unit]] = js.undefined
   /** 开发者服务器地址 */
   var url: String
 }
@@ -39,7 +39,7 @@ object UploadFileOptions {
     fail: js.Any => Unit = null,
     formData: js.Any = null,
     header: RequestHeader = null,
-    success: /* res */ AnonDataHeader => Unit = null
+    success: /* res */ AnonHeader => Unit = null
   ): UploadFileOptions = {
     val __obj = js.Dynamic.literal(fileName = fileName.asInstanceOf[js.Any], filePath = filePath.asInstanceOf[js.Any], fileType = fileType.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))

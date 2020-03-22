@@ -3,6 +3,7 @@ package typings.ionicCore
 import typings.ionicCore.actionSheetInterfaceMod.ActionSheetOptions
 import typings.ionicCore.alertInterfaceMod.AlertOptions
 import typings.ionicCore.animationInterfaceMod.Animation
+import typings.ionicCore.animationInterfaceMod.AnimationBuilder
 import typings.ionicCore.componentsMod._Global_.HTMLIonActionSheetElement
 import typings.ionicCore.componentsMod._Global_.HTMLIonAlertElement
 import typings.ionicCore.componentsMod._Global_.HTMLIonLoadingElement
@@ -56,7 +57,6 @@ import typings.ionicCore.ionicCoreStrings.toastLeave
 import typings.ionicCore.loadingInterfaceMod.LoadingOptions
 import typings.ionicCore.mod.ComponentRef
 import typings.ionicCore.modalInterfaceMod.ModalOptions
-import typings.ionicCore.oldAnimationAnimationInterfaceMod.AnimationBuilder
 import typings.ionicCore.overlaysInterfaceMod.HTMLIonOverlayElement
 import typings.ionicCore.overlaysInterfaceMod.OverlayInterface
 import typings.ionicCore.pickerInterfaceMod.PickerOptions
@@ -65,6 +65,7 @@ import typings.ionicCore.toastInterfaceMod.ToastOptions
 import typings.std.Document_
 import typings.std.Event_
 import typings.std.HTMLElement
+import typings.std.WeakMap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -73,6 +74,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object overlaysMod extends js.Object {
   val BACKDROP: backdrop = js.native
+  val activeAnimations: WeakMap[OverlayInterface, js.Array[Animation]] = js.native
   def connectListeners(doc: Document_): Unit = js.native
   def createOverlay[T /* <: HTMLIonOverlayElement */](tagName: String): js.Promise[T] = js.native
   def createOverlay[T /* <: HTMLIonOverlayElement */](tagName: String, opts: js.Object): js.Promise[T] = js.native
@@ -96,57 +98,6 @@ object overlaysMod extends js.Object {
   def dismiss(
     overlay: OverlayInterface,
     data: js.Any,
-    role: js.UndefOr[scala.Nothing],
-    name: mode | animated | rippleEffect | hardwareBackButton | statusTap | backButtonIcon | backButtonText | menuIcon | menuType | spinner | loadingSpinner | refreshingIcon | refreshingSpinner | infiniteLoadingSpinner | swipeBackEnabled | tabButtonLayout | navAnimation | actionSheetEnter | alertEnter | loadingEnter | modalEnter | popoverEnter | toastEnter | pickerEnter | actionSheetLeave | alertLeave | loadingLeave | modalLeave | popoverLeave | toastLeave | pickerLeave | experimentalTransitionShadow | keyboardHeight | inputShims | scrollPadding | inputBlurring | scrollAssist | hideCaretOnScroll | persistConfig | _forceStatusbarPadding | _testing | _zoneGate,
-    iosLeaveAnimation: AnimationBuilder,
-    mdLeaveAnimation: IonicAnimationInterface
-  ): js.Promise[Boolean] = js.native
-  def dismiss(
-    overlay: OverlayInterface,
-    data: js.Any,
-    role: js.UndefOr[scala.Nothing],
-    name: mode | animated | rippleEffect | hardwareBackButton | statusTap | backButtonIcon | backButtonText | menuIcon | menuType | spinner | loadingSpinner | refreshingIcon | refreshingSpinner | infiniteLoadingSpinner | swipeBackEnabled | tabButtonLayout | navAnimation | actionSheetEnter | alertEnter | loadingEnter | modalEnter | popoverEnter | toastEnter | pickerEnter | actionSheetLeave | alertLeave | loadingLeave | modalLeave | popoverLeave | toastLeave | pickerLeave | experimentalTransitionShadow | keyboardHeight | inputShims | scrollPadding | inputBlurring | scrollAssist | hideCaretOnScroll | persistConfig | _forceStatusbarPadding | _testing | _zoneGate,
-    iosLeaveAnimation: AnimationBuilder,
-    mdLeaveAnimation: IonicAnimationInterface,
-    opts: js.Any
-  ): js.Promise[Boolean] = js.native
-  def dismiss(
-    overlay: OverlayInterface,
-    data: js.Any,
-    role: js.UndefOr[scala.Nothing],
-    name: mode | animated | rippleEffect | hardwareBackButton | statusTap | backButtonIcon | backButtonText | menuIcon | menuType | spinner | loadingSpinner | refreshingIcon | refreshingSpinner | infiniteLoadingSpinner | swipeBackEnabled | tabButtonLayout | navAnimation | actionSheetEnter | alertEnter | loadingEnter | modalEnter | popoverEnter | toastEnter | pickerEnter | actionSheetLeave | alertLeave | loadingLeave | modalLeave | popoverLeave | toastLeave | pickerLeave | experimentalTransitionShadow | keyboardHeight | inputShims | scrollPadding | inputBlurring | scrollAssist | hideCaretOnScroll | persistConfig | _forceStatusbarPadding | _testing | _zoneGate,
-    iosLeaveAnimation: IonicAnimationInterface,
-    mdLeaveAnimation: AnimationBuilder
-  ): js.Promise[Boolean] = js.native
-  def dismiss(
-    overlay: OverlayInterface,
-    data: js.Any,
-    role: js.UndefOr[scala.Nothing],
-    name: mode | animated | rippleEffect | hardwareBackButton | statusTap | backButtonIcon | backButtonText | menuIcon | menuType | spinner | loadingSpinner | refreshingIcon | refreshingSpinner | infiniteLoadingSpinner | swipeBackEnabled | tabButtonLayout | navAnimation | actionSheetEnter | alertEnter | loadingEnter | modalEnter | popoverEnter | toastEnter | pickerEnter | actionSheetLeave | alertLeave | loadingLeave | modalLeave | popoverLeave | toastLeave | pickerLeave | experimentalTransitionShadow | keyboardHeight | inputShims | scrollPadding | inputBlurring | scrollAssist | hideCaretOnScroll | persistConfig | _forceStatusbarPadding | _testing | _zoneGate,
-    iosLeaveAnimation: IonicAnimationInterface,
-    mdLeaveAnimation: AnimationBuilder,
-    opts: js.Any
-  ): js.Promise[Boolean] = js.native
-  def dismiss(
-    overlay: OverlayInterface,
-    data: js.Any,
-    role: js.UndefOr[scala.Nothing],
-    name: mode | animated | rippleEffect | hardwareBackButton | statusTap | backButtonIcon | backButtonText | menuIcon | menuType | spinner | loadingSpinner | refreshingIcon | refreshingSpinner | infiniteLoadingSpinner | swipeBackEnabled | tabButtonLayout | navAnimation | actionSheetEnter | alertEnter | loadingEnter | modalEnter | popoverEnter | toastEnter | pickerEnter | actionSheetLeave | alertLeave | loadingLeave | modalLeave | popoverLeave | toastLeave | pickerLeave | experimentalTransitionShadow | keyboardHeight | inputShims | scrollPadding | inputBlurring | scrollAssist | hideCaretOnScroll | persistConfig | _forceStatusbarPadding | _testing | _zoneGate,
-    iosLeaveAnimation: IonicAnimationInterface,
-    mdLeaveAnimation: IonicAnimationInterface
-  ): js.Promise[Boolean] = js.native
-  def dismiss(
-    overlay: OverlayInterface,
-    data: js.Any,
-    role: js.UndefOr[scala.Nothing],
-    name: mode | animated | rippleEffect | hardwareBackButton | statusTap | backButtonIcon | backButtonText | menuIcon | menuType | spinner | loadingSpinner | refreshingIcon | refreshingSpinner | infiniteLoadingSpinner | swipeBackEnabled | tabButtonLayout | navAnimation | actionSheetEnter | alertEnter | loadingEnter | modalEnter | popoverEnter | toastEnter | pickerEnter | actionSheetLeave | alertLeave | loadingLeave | modalLeave | popoverLeave | toastLeave | pickerLeave | experimentalTransitionShadow | keyboardHeight | inputShims | scrollPadding | inputBlurring | scrollAssist | hideCaretOnScroll | persistConfig | _forceStatusbarPadding | _testing | _zoneGate,
-    iosLeaveAnimation: IonicAnimationInterface,
-    mdLeaveAnimation: IonicAnimationInterface,
-    opts: js.Any
-  ): js.Promise[Boolean] = js.native
-  def dismiss(
-    overlay: OverlayInterface,
-    data: js.Any,
     role: String,
     name: mode | animated | rippleEffect | hardwareBackButton | statusTap | backButtonIcon | backButtonText | menuIcon | menuType | spinner | loadingSpinner | refreshingIcon | refreshingSpinner | infiniteLoadingSpinner | swipeBackEnabled | tabButtonLayout | navAnimation | actionSheetEnter | alertEnter | loadingEnter | modalEnter | popoverEnter | toastEnter | pickerEnter | actionSheetLeave | alertLeave | loadingLeave | modalLeave | popoverLeave | toastLeave | pickerLeave | experimentalTransitionShadow | keyboardHeight | inputShims | scrollPadding | inputBlurring | scrollAssist | hideCaretOnScroll | persistConfig | _forceStatusbarPadding | _testing | _zoneGate,
     iosLeaveAnimation: AnimationBuilder,
@@ -159,57 +110,6 @@ object overlaysMod extends js.Object {
     name: mode | animated | rippleEffect | hardwareBackButton | statusTap | backButtonIcon | backButtonText | menuIcon | menuType | spinner | loadingSpinner | refreshingIcon | refreshingSpinner | infiniteLoadingSpinner | swipeBackEnabled | tabButtonLayout | navAnimation | actionSheetEnter | alertEnter | loadingEnter | modalEnter | popoverEnter | toastEnter | pickerEnter | actionSheetLeave | alertLeave | loadingLeave | modalLeave | popoverLeave | toastLeave | pickerLeave | experimentalTransitionShadow | keyboardHeight | inputShims | scrollPadding | inputBlurring | scrollAssist | hideCaretOnScroll | persistConfig | _forceStatusbarPadding | _testing | _zoneGate,
     iosLeaveAnimation: AnimationBuilder,
     mdLeaveAnimation: AnimationBuilder,
-    opts: js.Any
-  ): js.Promise[Boolean] = js.native
-  def dismiss(
-    overlay: OverlayInterface,
-    data: js.Any,
-    role: String,
-    name: mode | animated | rippleEffect | hardwareBackButton | statusTap | backButtonIcon | backButtonText | menuIcon | menuType | spinner | loadingSpinner | refreshingIcon | refreshingSpinner | infiniteLoadingSpinner | swipeBackEnabled | tabButtonLayout | navAnimation | actionSheetEnter | alertEnter | loadingEnter | modalEnter | popoverEnter | toastEnter | pickerEnter | actionSheetLeave | alertLeave | loadingLeave | modalLeave | popoverLeave | toastLeave | pickerLeave | experimentalTransitionShadow | keyboardHeight | inputShims | scrollPadding | inputBlurring | scrollAssist | hideCaretOnScroll | persistConfig | _forceStatusbarPadding | _testing | _zoneGate,
-    iosLeaveAnimation: AnimationBuilder,
-    mdLeaveAnimation: IonicAnimationInterface
-  ): js.Promise[Boolean] = js.native
-  def dismiss(
-    overlay: OverlayInterface,
-    data: js.Any,
-    role: String,
-    name: mode | animated | rippleEffect | hardwareBackButton | statusTap | backButtonIcon | backButtonText | menuIcon | menuType | spinner | loadingSpinner | refreshingIcon | refreshingSpinner | infiniteLoadingSpinner | swipeBackEnabled | tabButtonLayout | navAnimation | actionSheetEnter | alertEnter | loadingEnter | modalEnter | popoverEnter | toastEnter | pickerEnter | actionSheetLeave | alertLeave | loadingLeave | modalLeave | popoverLeave | toastLeave | pickerLeave | experimentalTransitionShadow | keyboardHeight | inputShims | scrollPadding | inputBlurring | scrollAssist | hideCaretOnScroll | persistConfig | _forceStatusbarPadding | _testing | _zoneGate,
-    iosLeaveAnimation: AnimationBuilder,
-    mdLeaveAnimation: IonicAnimationInterface,
-    opts: js.Any
-  ): js.Promise[Boolean] = js.native
-  def dismiss(
-    overlay: OverlayInterface,
-    data: js.Any,
-    role: String,
-    name: mode | animated | rippleEffect | hardwareBackButton | statusTap | backButtonIcon | backButtonText | menuIcon | menuType | spinner | loadingSpinner | refreshingIcon | refreshingSpinner | infiniteLoadingSpinner | swipeBackEnabled | tabButtonLayout | navAnimation | actionSheetEnter | alertEnter | loadingEnter | modalEnter | popoverEnter | toastEnter | pickerEnter | actionSheetLeave | alertLeave | loadingLeave | modalLeave | popoverLeave | toastLeave | pickerLeave | experimentalTransitionShadow | keyboardHeight | inputShims | scrollPadding | inputBlurring | scrollAssist | hideCaretOnScroll | persistConfig | _forceStatusbarPadding | _testing | _zoneGate,
-    iosLeaveAnimation: IonicAnimationInterface,
-    mdLeaveAnimation: AnimationBuilder
-  ): js.Promise[Boolean] = js.native
-  def dismiss(
-    overlay: OverlayInterface,
-    data: js.Any,
-    role: String,
-    name: mode | animated | rippleEffect | hardwareBackButton | statusTap | backButtonIcon | backButtonText | menuIcon | menuType | spinner | loadingSpinner | refreshingIcon | refreshingSpinner | infiniteLoadingSpinner | swipeBackEnabled | tabButtonLayout | navAnimation | actionSheetEnter | alertEnter | loadingEnter | modalEnter | popoverEnter | toastEnter | pickerEnter | actionSheetLeave | alertLeave | loadingLeave | modalLeave | popoverLeave | toastLeave | pickerLeave | experimentalTransitionShadow | keyboardHeight | inputShims | scrollPadding | inputBlurring | scrollAssist | hideCaretOnScroll | persistConfig | _forceStatusbarPadding | _testing | _zoneGate,
-    iosLeaveAnimation: IonicAnimationInterface,
-    mdLeaveAnimation: AnimationBuilder,
-    opts: js.Any
-  ): js.Promise[Boolean] = js.native
-  def dismiss(
-    overlay: OverlayInterface,
-    data: js.Any,
-    role: String,
-    name: mode | animated | rippleEffect | hardwareBackButton | statusTap | backButtonIcon | backButtonText | menuIcon | menuType | spinner | loadingSpinner | refreshingIcon | refreshingSpinner | infiniteLoadingSpinner | swipeBackEnabled | tabButtonLayout | navAnimation | actionSheetEnter | alertEnter | loadingEnter | modalEnter | popoverEnter | toastEnter | pickerEnter | actionSheetLeave | alertLeave | loadingLeave | modalLeave | popoverLeave | toastLeave | pickerLeave | experimentalTransitionShadow | keyboardHeight | inputShims | scrollPadding | inputBlurring | scrollAssist | hideCaretOnScroll | persistConfig | _forceStatusbarPadding | _testing | _zoneGate,
-    iosLeaveAnimation: IonicAnimationInterface,
-    mdLeaveAnimation: IonicAnimationInterface
-  ): js.Promise[Boolean] = js.native
-  def dismiss(
-    overlay: OverlayInterface,
-    data: js.Any,
-    role: String,
-    name: mode | animated | rippleEffect | hardwareBackButton | statusTap | backButtonIcon | backButtonText | menuIcon | menuType | spinner | loadingSpinner | refreshingIcon | refreshingSpinner | infiniteLoadingSpinner | swipeBackEnabled | tabButtonLayout | navAnimation | actionSheetEnter | alertEnter | loadingEnter | modalEnter | popoverEnter | toastEnter | pickerEnter | actionSheetLeave | alertLeave | loadingLeave | modalLeave | popoverLeave | toastLeave | pickerLeave | experimentalTransitionShadow | keyboardHeight | inputShims | scrollPadding | inputBlurring | scrollAssist | hideCaretOnScroll | persistConfig | _forceStatusbarPadding | _testing | _zoneGate,
-    iosLeaveAnimation: IonicAnimationInterface,
-    mdLeaveAnimation: IonicAnimationInterface,
     opts: js.Any
   ): js.Promise[Boolean] = js.native
   def dismissOverlay(doc: Document_, data: js.Any, role: js.UndefOr[scala.Nothing], overlayTag: String): js.Promise[Boolean] = js.native
@@ -238,45 +138,6 @@ object overlaysMod extends js.Object {
     name: mode | animated | rippleEffect | hardwareBackButton | statusTap | backButtonIcon | backButtonText | menuIcon | menuType | spinner | loadingSpinner | refreshingIcon | refreshingSpinner | infiniteLoadingSpinner | swipeBackEnabled | tabButtonLayout | navAnimation | actionSheetEnter | alertEnter | loadingEnter | modalEnter | popoverEnter | toastEnter | pickerEnter | actionSheetLeave | alertLeave | loadingLeave | modalLeave | popoverLeave | toastLeave | pickerLeave | experimentalTransitionShadow | keyboardHeight | inputShims | scrollPadding | inputBlurring | scrollAssist | hideCaretOnScroll | persistConfig | _forceStatusbarPadding | _testing | _zoneGate,
     iosEnterAnimation: AnimationBuilder,
     mdEnterAnimation: AnimationBuilder,
-    opts: js.Any
-  ): js.Promise[Unit] = js.native
-  def present(
-    overlay: OverlayInterface,
-    name: mode | animated | rippleEffect | hardwareBackButton | statusTap | backButtonIcon | backButtonText | menuIcon | menuType | spinner | loadingSpinner | refreshingIcon | refreshingSpinner | infiniteLoadingSpinner | swipeBackEnabled | tabButtonLayout | navAnimation | actionSheetEnter | alertEnter | loadingEnter | modalEnter | popoverEnter | toastEnter | pickerEnter | actionSheetLeave | alertLeave | loadingLeave | modalLeave | popoverLeave | toastLeave | pickerLeave | experimentalTransitionShadow | keyboardHeight | inputShims | scrollPadding | inputBlurring | scrollAssist | hideCaretOnScroll | persistConfig | _forceStatusbarPadding | _testing | _zoneGate,
-    iosEnterAnimation: AnimationBuilder,
-    mdEnterAnimation: IonicAnimationInterface
-  ): js.Promise[Unit] = js.native
-  def present(
-    overlay: OverlayInterface,
-    name: mode | animated | rippleEffect | hardwareBackButton | statusTap | backButtonIcon | backButtonText | menuIcon | menuType | spinner | loadingSpinner | refreshingIcon | refreshingSpinner | infiniteLoadingSpinner | swipeBackEnabled | tabButtonLayout | navAnimation | actionSheetEnter | alertEnter | loadingEnter | modalEnter | popoverEnter | toastEnter | pickerEnter | actionSheetLeave | alertLeave | loadingLeave | modalLeave | popoverLeave | toastLeave | pickerLeave | experimentalTransitionShadow | keyboardHeight | inputShims | scrollPadding | inputBlurring | scrollAssist | hideCaretOnScroll | persistConfig | _forceStatusbarPadding | _testing | _zoneGate,
-    iosEnterAnimation: AnimationBuilder,
-    mdEnterAnimation: IonicAnimationInterface,
-    opts: js.Any
-  ): js.Promise[Unit] = js.native
-  def present(
-    overlay: OverlayInterface,
-    name: mode | animated | rippleEffect | hardwareBackButton | statusTap | backButtonIcon | backButtonText | menuIcon | menuType | spinner | loadingSpinner | refreshingIcon | refreshingSpinner | infiniteLoadingSpinner | swipeBackEnabled | tabButtonLayout | navAnimation | actionSheetEnter | alertEnter | loadingEnter | modalEnter | popoverEnter | toastEnter | pickerEnter | actionSheetLeave | alertLeave | loadingLeave | modalLeave | popoverLeave | toastLeave | pickerLeave | experimentalTransitionShadow | keyboardHeight | inputShims | scrollPadding | inputBlurring | scrollAssist | hideCaretOnScroll | persistConfig | _forceStatusbarPadding | _testing | _zoneGate,
-    iosEnterAnimation: IonicAnimationInterface,
-    mdEnterAnimation: AnimationBuilder
-  ): js.Promise[Unit] = js.native
-  def present(
-    overlay: OverlayInterface,
-    name: mode | animated | rippleEffect | hardwareBackButton | statusTap | backButtonIcon | backButtonText | menuIcon | menuType | spinner | loadingSpinner | refreshingIcon | refreshingSpinner | infiniteLoadingSpinner | swipeBackEnabled | tabButtonLayout | navAnimation | actionSheetEnter | alertEnter | loadingEnter | modalEnter | popoverEnter | toastEnter | pickerEnter | actionSheetLeave | alertLeave | loadingLeave | modalLeave | popoverLeave | toastLeave | pickerLeave | experimentalTransitionShadow | keyboardHeight | inputShims | scrollPadding | inputBlurring | scrollAssist | hideCaretOnScroll | persistConfig | _forceStatusbarPadding | _testing | _zoneGate,
-    iosEnterAnimation: IonicAnimationInterface,
-    mdEnterAnimation: AnimationBuilder,
-    opts: js.Any
-  ): js.Promise[Unit] = js.native
-  def present(
-    overlay: OverlayInterface,
-    name: mode | animated | rippleEffect | hardwareBackButton | statusTap | backButtonIcon | backButtonText | menuIcon | menuType | spinner | loadingSpinner | refreshingIcon | refreshingSpinner | infiniteLoadingSpinner | swipeBackEnabled | tabButtonLayout | navAnimation | actionSheetEnter | alertEnter | loadingEnter | modalEnter | popoverEnter | toastEnter | pickerEnter | actionSheetLeave | alertLeave | loadingLeave | modalLeave | popoverLeave | toastLeave | pickerLeave | experimentalTransitionShadow | keyboardHeight | inputShims | scrollPadding | inputBlurring | scrollAssist | hideCaretOnScroll | persistConfig | _forceStatusbarPadding | _testing | _zoneGate,
-    iosEnterAnimation: IonicAnimationInterface,
-    mdEnterAnimation: IonicAnimationInterface
-  ): js.Promise[Unit] = js.native
-  def present(
-    overlay: OverlayInterface,
-    name: mode | animated | rippleEffect | hardwareBackButton | statusTap | backButtonIcon | backButtonText | menuIcon | menuType | spinner | loadingSpinner | refreshingIcon | refreshingSpinner | infiniteLoadingSpinner | swipeBackEnabled | tabButtonLayout | navAnimation | actionSheetEnter | alertEnter | loadingEnter | modalEnter | popoverEnter | toastEnter | pickerEnter | actionSheetLeave | alertLeave | loadingLeave | modalLeave | popoverLeave | toastLeave | pickerLeave | experimentalTransitionShadow | keyboardHeight | inputShims | scrollPadding | inputBlurring | scrollAssist | hideCaretOnScroll | persistConfig | _forceStatusbarPadding | _testing | _zoneGate,
-    iosEnterAnimation: IonicAnimationInterface,
-    mdEnterAnimation: IonicAnimationInterface,
     opts: js.Any
   ): js.Promise[Unit] = js.native
   def safeCall(handler: js.Any): js.Any = js.native
@@ -358,6 +219,5 @@ object overlaysMod extends js.Object {
     def getTop(): js.Promise[js.UndefOr[HTMLIonToastElement]] = js.native
   }
   
-  type IonicAnimationInterface = js.Function2[/* baseEl */ js.Any, /* opts */ js.Any, Animation]
 }
 

@@ -6,12 +6,6 @@ import scala.scalajs.js.annotation._
 
 object semanticUiShapeStrings {
   @js.native
-  sealed trait active extends js.Object
-  
-  @js.native
-  sealed trait animating extends js.Object
-  
-  @js.native
   sealed trait beforeChange extends js.Object
   
   @js.native
@@ -63,19 +57,10 @@ object semanticUiShapeStrings {
   sealed trait height extends js.Object
   
   @js.native
-  sealed trait hidden extends js.Object
-  
-  @js.native
   sealed trait initial extends js.Object
   
   @js.native
   sealed trait `is animating` extends js.Object
-  
-  @js.native
-  sealed trait loading extends js.Object
-  
-  @js.native
-  sealed trait method extends js.Object
   
   @js.native
   sealed trait name extends js.Object
@@ -120,12 +105,6 @@ object semanticUiShapeStrings {
   sealed trait setting extends js.Object
   
   @js.native
-  sealed trait side extends js.Object
-  
-  @js.native
-  sealed trait sides extends js.Object
-  
-  @js.native
   sealed trait silent extends js.Object
   
   @js.native
@@ -134,10 +113,6 @@ object semanticUiShapeStrings {
   @js.native
   sealed trait width extends js.Object
   
-  @scala.inline
-  def active: active = "active".asInstanceOf[active]
-  @scala.inline
-  def animating: animating = "animating".asInstanceOf[animating]
   @scala.inline
   def beforeChange: beforeChange = "beforeChange".asInstanceOf[beforeChange]
   @scala.inline
@@ -173,15 +148,9 @@ object semanticUiShapeStrings {
   @scala.inline
   def height: height = "height".asInstanceOf[height]
   @scala.inline
-  def hidden: hidden = "hidden".asInstanceOf[hidden]
-  @scala.inline
   def initial: initial = "initial".asInstanceOf[initial]
   @scala.inline
   def `is animating`: `is animating` = "is animating".asInstanceOf[`is animating`]
-  @scala.inline
-  def loading: loading = "loading".asInstanceOf[loading]
-  @scala.inline
-  def method: method = "method".asInstanceOf[method]
   @scala.inline
   def name: name = "name".asInstanceOf[name]
   @scala.inline
@@ -210,10 +179,6 @@ object semanticUiShapeStrings {
   def `set stage size`: `set stage size` = "set stage size".asInstanceOf[`set stage size`]
   @scala.inline
   def setting: setting = "setting".asInstanceOf[setting]
-  @scala.inline
-  def side: side = "side".asInstanceOf[side]
-  @scala.inline
-  def sides: sides = "sides".asInstanceOf[sides]
   @scala.inline
   def silent: silent = "silent".asInstanceOf[silent]
   @scala.inline

@@ -1,7 +1,7 @@
 package typings.jupyterlabSettingeditor
 
 import typings.jupyterlabSettingeditor.settingeditorMod.SettingEditor.IOptions
-import typings.phosphorCoreutils.mod.Token
+import typings.luminoCoreutils.mod.Token
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

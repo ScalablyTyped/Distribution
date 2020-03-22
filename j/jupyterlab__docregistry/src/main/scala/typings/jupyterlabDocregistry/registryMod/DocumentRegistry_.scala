@@ -1,17 +1,18 @@
 package typings.jupyterlabDocregistry.registryMod
 
-import typings.jupyterlabApputils.clientsessionMod.IClientSession.IKernelPreference
+import typings.jupyterlabApputils.sessioncontextMod.ISessionContext.IKernelPreference
+import typings.jupyterlabDocregistry.PartialIFileType
+import typings.jupyterlabDocregistry.PartialIModel
+import typings.jupyterlabDocregistry.PartialIModelChunk
 import typings.jupyterlabDocregistry.registryMod.DocumentRegistry.IChangedArgs
 import typings.jupyterlabDocregistry.registryMod.DocumentRegistry.IFileType
 import typings.jupyterlabDocregistry.registryMod.DocumentRegistry.IOptions
 import typings.jupyterlabDocregistry.registryMod.DocumentRegistry.ModelFactory
 import typings.jupyterlabDocregistry.registryMod.DocumentRegistry.WidgetExtension
 import typings.jupyterlabDocregistry.registryMod.DocumentRegistry.WidgetFactory
-import typings.jupyterlabServices.contentsMod.Contents.IModel
-import typings.phosphorAlgorithm.iterMod.IIterator
-import typings.phosphorDisposable.mod.IDisposable
-import typings.phosphorSignaling.mod.ISignal
-import typings.std.Partial
+import typings.luminoAlgorithm.iterMod.IIterator
+import typings.luminoDisposable.mod.IDisposable
+import typings.luminoSignaling.mod.ISignal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,10 +36,6 @@ class DocumentRegistry_ () extends IDisposable {
   var _widgetFactories: js.Any = js.native
   var _widgetFactoriesForFileType: js.Any = js.native
   /**
-    * A signal emitted when the registry has changed.
-    */
-  val changed: ISignal[this.type, IChangedArgs] = js.native
-  /**
     * Test whether the object has been disposed.
     *
     * #### Notes
@@ -56,7 +53,7 @@ class DocumentRegistry_ () extends IDisposable {
     * #### Notes
     * These are used to populate the "Create New" dialog.
     */
-  def addFileType(fileType: Partial[IFileType]): IDisposable = js.native
+  def addFileType(fileType: PartialIFileType): IDisposable = js.native
   /**
     * Add a model factory to the registry.
     *
@@ -101,6 +98,10 @@ class DocumentRegistry_ () extends IDisposable {
     * The factory cannot be named an empty string or the string `'default'`.
     */
   def addWidgetFactory(factory: WidgetFactory): IDisposable = js.native
+  /**
+    * A signal emitted when the registry has changed.
+    */
+  def changed(): ISignal[this.type, IChangedArgs] = js.native
   /**
     * Get the default rendered widget factory for a path.
     *
@@ -157,7 +158,7 @@ class DocumentRegistry_ () extends IDisposable {
     *
     * @returns The best matching file type.
     */
-  def getFileTypeForModel(model: Partial[IModel]): IFileType = js.native
+  def getFileTypeForModel(model: PartialIModelChunk): IFileType = js.native
   /**
     * Get the file types that match a file name.
     *
@@ -178,11 +179,7 @@ class DocumentRegistry_ () extends IDisposable {
     * @returns A kernel preference.
     */
   def getKernelPreference(path: String, widgetName: String): js.UndefOr[IKernelPreference] = js.native
-  def getKernelPreference(
-    path: String,
-    widgetName: String,
-    kernel: Partial[typings.jupyterlabServices.kernelKernelMod.Kernel.IModel]
-  ): js.UndefOr[IKernelPreference] = js.native
+  def getKernelPreference(path: String, widgetName: String, kernel: PartialIModel): js.UndefOr[IKernelPreference] = js.native
   /**
     * Get a model factory by name.
     *
@@ -199,6 +196,11 @@ class DocumentRegistry_ () extends IDisposable {
     * @returns A widget factory instance.
     */
   def getWidgetFactory(widgetName: String): js.UndefOr[WidgetFactory] = js.native
+  /**
+    * Get whether the document registry has been disposed.
+    */
+  @JSName("isDisposed")
+  def isDisposed_MDocumentRegistry_(): Boolean = js.native
   /**
     * Create an iterator over the model factories that have been registered.
     *

@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Typeoflogging extends js.Object {
   var Entry: Instantiable2[/* level */ Level, /* message */ String, typings.seleniumWebdriver.mod.logging.Entry] = js.native
-  var Level: TypeofClassLevel = js.native
+  var Level: TypeofLevel = js.native
   var LogManager: Instantiable0[typings.seleniumWebdriver.mod.logging.LogManager] = js.native
   var Logger: Instantiable1[/* name */ String, typings.seleniumWebdriver.mod.logging.Logger] = js.native
   var Preferences: Instantiable0[typings.seleniumWebdriver.mod.logging.Preferences] = js.native

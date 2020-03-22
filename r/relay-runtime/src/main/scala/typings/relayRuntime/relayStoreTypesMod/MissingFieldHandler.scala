@@ -5,9 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.relayRuntime.AnonArgsField
-  - typings.relayRuntime.AnonArgsFieldHandle
-  - typings.relayRuntime.AnonArgsFieldHandleKind
+  - typings.relayRuntime.AnonHandle
+  - typings.relayRuntime.AnonKind
+  - typings.relayRuntime.AnonHandleKind
 */
 trait MissingFieldHandler extends js.Object
 

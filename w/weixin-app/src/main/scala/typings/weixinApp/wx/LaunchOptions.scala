@@ -1,6 +1,6 @@
 package typings.weixinApp.wx
 
-import typings.weixinApp.AnonAppIdExtraData
+import typings.weixinApp.AnonExtraData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +17,7 @@ trait LaunchOptions extends js.Object {
   /**
   		 * 当场景为由从另一个小程序或公众号或App打开时，返回此字段
   		 */
-  var referrerInfo: AnonAppIdExtraData
+  var referrerInfo: AnonExtraData
   /**
   		 * 打开小程序的[场景值](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/app-service/scene.html)
   		 *
@@ -103,7 +103,7 @@ object LaunchOptions {
   def apply(
     path: String,
     query: js.Object,
-    referrerInfo: AnonAppIdExtraData,
+    referrerInfo: AnonExtraData,
     scene: SceneValues,
     shareTicket: String
   ): LaunchOptions = {

@@ -50,6 +50,7 @@ import typings.chromeApps.chrome.runtime.DevOnly
 import typings.chromeApps.chrome.runtime.JSONBasicTypes
 import typings.chromeApps.chrome.runtime.KioskOnlyPermissions
 import typings.chromeApps.chrome.runtime.NotAllowedAsOptionalPermissions
+import typings.chromeApps.chrome.runtime.OptionalPermission
 import typings.chromeApps.chrome.runtime.Permission
 import typings.chromeApps.chrome.runtime.UndocumentedPermissions
 import typings.chromeApps.chrome.runtime.UrlMatches
@@ -256,7 +257,9 @@ object chromeAppsStrings {
   sealed trait LINEOUT extends DeviceType
   
   @js.native
-  sealed trait Lessthansignall_urlsGreaterthansign extends UrlMatches
+  sealed trait Lessthansignall_urlsGreaterthansign
+    extends UrlMatches
+       with OptionalPermission
   
   @js.native
   sealed trait MAX_ATTEMPTS_EXCEEDED extends js.Object
@@ -519,7 +522,9 @@ object chromeAppsStrings {
        with kLanguageInfoTable
   
   @js.native
-  sealed trait alarms extends Permission
+  sealed trait alarms
+    extends OptionalPermission
+       with Permission
   
   @js.native
   sealed trait alert extends DialogMessageType
@@ -534,7 +539,9 @@ object chromeAppsStrings {
        with MetadataOptionsType
   
   @js.native
-  sealed trait alwaysOnTopWindows extends Permission
+  sealed trait alwaysOnTopWindows
+    extends OptionalPermission
+       with Permission
   
   @js.native
   sealed trait am
@@ -565,19 +572,27 @@ object chromeAppsStrings {
   sealed trait appDotwindowDotalpha extends DevOnly
   
   @js.native
-  sealed trait appDotwindowDotalwaysOnTop extends Permission
+  sealed trait appDotwindowDotalwaysOnTop
+    extends OptionalPermission
+       with Permission
   
   @js.native
-  sealed trait appDotwindowDotfullscreen extends Permission
+  sealed trait appDotwindowDotfullscreen
+    extends OptionalPermission
+       with Permission
   
   @js.native
-  sealed trait appDotwindowDotfullscreenDotoverrideEsc extends Permission
+  sealed trait appDotwindowDotfullscreenDotoverrideEsc
+    extends OptionalPermission
+       with Permission
   
   @js.native
   sealed trait appDotwindowDotime extends UndocumentedPermissions
   
   @js.native
-  sealed trait appDotwindowDotshape extends Permission
+  sealed trait appDotwindowDotshape
+    extends OptionalPermission
+       with Permission
   
   @js.native
   sealed trait app_launcher extends js.Object
@@ -586,7 +601,9 @@ object chromeAppsStrings {
   sealed trait app_update extends js.Object
   
   @js.native
-  sealed trait appview extends Permission
+  sealed trait appview
+    extends OptionalPermission
+       with Permission
   
   @js.native
   sealed trait ar
@@ -619,9 +636,12 @@ object chromeAppsStrings {
        with ContextType
        with typings.chromeApps.chrome.bluetooth.DeviceType
        with MediaType
+       with OptionalPermission
   
   @js.native
-  sealed trait audioCapture extends Permission
+  sealed trait audioCapture
+    extends OptionalPermission
+       with Permission
   
   @js.native
   sealed trait authenticatedSignedWrites extends CharacteristicProperties
@@ -647,7 +667,9 @@ object chromeAppsStrings {
        with kLanguageInfoTable
   
   @js.native
-  sealed trait background extends Permission
+  sealed trait background
+    extends OptionalPermission
+       with Permission
   
   @js.native
   sealed trait basic extends js.Object
@@ -692,7 +714,9 @@ object chromeAppsStrings {
        with CharacteristicProperties
   
   @js.native
-  sealed trait browser extends Permission
+  sealed trait browser
+    extends OptionalPermission
+       with Permission
   
   @js.native
   sealed trait browser_action extends js.Object
@@ -732,7 +756,9 @@ object chromeAppsStrings {
        with kLanguageInfoTable
   
   @js.native
-  sealed trait certificateProvider extends ChromeOSOnlyPermissions
+  sealed trait certificateProvider
+    extends ChromeOSOnlyPermissions
+       with OptionalPermission
   
   @js.native
   sealed trait change extends js.Object
@@ -747,7 +773,9 @@ object chromeAppsStrings {
   sealed trait chrome extends js.Object
   
   @js.native
-  sealed trait chromeColonSlashSlashfaviconSlash extends UrlMatches
+  sealed trait chromeColonSlashSlashfaviconSlash
+    extends UrlMatches
+       with OptionalPermission
   
   @js.native
   sealed trait chrome_internal extends js.Object
@@ -773,13 +801,19 @@ object chromeAppsStrings {
   sealed trait click extends js.Object
   
   @js.native
-  sealed trait clipboard extends ChromeOSOnlyPermissions
+  sealed trait clipboard
+    extends ChromeOSOnlyPermissions
+       with OptionalPermission
   
   @js.native
-  sealed trait clipboardRead extends Permission
+  sealed trait clipboardRead
+    extends OptionalPermission
+       with Permission
   
   @js.native
-  sealed trait clipboardWrite extends Permission
+  sealed trait clipboardWrite
+    extends OptionalPermission
+       with Permission
   
   @js.native
   sealed trait close extends js.Object
@@ -821,7 +855,9 @@ object chromeAppsStrings {
   sealed trait contents_changed extends GalleryChangedType
   
   @js.native
-  sealed trait contextMenus extends Permission
+  sealed trait contextMenus
+    extends OptionalPermission
+       with Permission
   
   @js.native
   sealed trait context_menu extends js.Object
@@ -1014,7 +1050,9 @@ object chromeAppsStrings {
   sealed trait denied extends js.Object
   
   @js.native
-  sealed trait desktopCapture extends Permission
+  sealed trait desktopCapture
+    extends OptionalPermission
+       with Permission
   
   @js.native
   sealed trait desktop_or_laptop
@@ -1048,10 +1086,14 @@ object chromeAppsStrings {
   sealed trait displaySource extends DevOnly
   
   @js.native
-  sealed trait dns extends ChromeOSOnlyPermissions
+  sealed trait dns
+    extends ChromeOSOnlyPermissions
+       with OptionalPermission
   
   @js.native
-  sealed trait documentScan extends ChromeOSOnlyPermissions
+  sealed trait documentScan
+    extends ChromeOSOnlyPermissions
+       with OptionalPermission
   
   @js.native
   sealed trait document_end extends RunAt
@@ -1190,10 +1232,14 @@ object chromeAppsStrings {
   sealed trait endpoint extends js.Object
   
   @js.native
-  sealed trait enterpriseDotdeviceAttributes extends ChromeOSOnlyPermissions
+  sealed trait enterpriseDotdeviceAttributes
+    extends ChromeOSOnlyPermissions
+       with OptionalPermission
   
   @js.native
-  sealed trait enterpriseDotplatformKeys extends ChromeOSOnlyPermissions
+  sealed trait enterpriseDotplatformKeys
+    extends ChromeOSOnlyPermissions
+       with OptionalPermission
   
   @js.native
   sealed trait eo
@@ -1329,16 +1375,24 @@ object chromeAppsStrings {
        with kLanguageInfoTable
   
   @js.native
-  sealed trait fileBrowserHandler extends ChromeOSOnlyPermissions
+  sealed trait fileBrowserHandler
+    extends ChromeOSOnlyPermissions
+       with OptionalPermission
   
   @js.native
-  sealed trait fileColonSlashSlashSlashAsteriskSlashAsterisk extends UrlMatches
+  sealed trait fileColonSlashSlashSlashAsteriskSlashAsterisk
+    extends UrlMatches
+       with OptionalPermission
   
   @js.native
-  sealed trait fileSystem extends Permission
+  sealed trait fileSystem
+    extends OptionalPermission
+       with Permission
   
   @js.native
-  sealed trait fileSystemProvider extends ChromeOSOnlyPermissions
+  sealed trait fileSystemProvider
+    extends ChromeOSOnlyPermissions
+       with OptionalPermission
   
   @js.native
   sealed trait file_handler extends js.Object
@@ -1424,7 +1478,9 @@ object chromeAppsStrings {
     extends typings.chromeApps.chrome.bluetooth.DeviceType
   
   @js.native
-  sealed trait gcm extends Permission
+  sealed trait gcm
+    extends OptionalPermission
+       with Permission
   
   @js.native
   sealed trait gd
@@ -1491,7 +1547,9 @@ object chromeAppsStrings {
        with kLanguageInfoTable
   
   @js.native
-  sealed trait hid extends Permission
+  sealed trait hid
+    extends OptionalPermission
+       with Permission
   
   @js.native
   sealed trait hmn
@@ -1512,16 +1570,24 @@ object chromeAppsStrings {
        with kLanguageInfoTable
   
   @js.native
-  sealed trait httpColonSlashSlashAsteriskSlashAsterisk extends UrlMatches
+  sealed trait httpColonSlashSlashAsteriskSlashAsterisk
+    extends UrlMatches
+       with OptionalPermission
   
   @js.native
-  sealed trait httpsColonSlashSlashAsteriskSlashAsterisk extends UrlMatches
+  sealed trait httpsColonSlashSlashAsteriskSlashAsterisk
+    extends UrlMatches
+       with OptionalPermission
   
   @js.native
-  sealed trait `httpsColonSlashSlashwwwDotgoogle-analyticsDotcomSlashAsterisk` extends UrlMatches
+  sealed trait `httpsColonSlashSlashwwwDotgoogle-analyticsDotcomSlashAsterisk`
+    extends UrlMatches
+       with OptionalPermission
   
   @js.native
-  sealed trait httpsColonSlashSlashwwwDotgoogleapisDotcomSlashAsterisk extends UrlMatches
+  sealed trait httpsColonSlashSlashwwwDotgoogleapisDotcomSlashAsterisk
+    extends UrlMatches
+       with OptionalPermission
   
   @js.native
   sealed trait hu
@@ -1544,11 +1610,14 @@ object chromeAppsStrings {
        with kLanguageInfoTable
   
   @js.native
-  sealed trait identity extends Permission
+  sealed trait identity
+    extends OptionalPermission
+       with Permission
   
   @js.native
   sealed trait idle
     extends IdleState
+       with OptionalPermission
        with Permission
   
   @js.native
@@ -1787,9 +1856,6 @@ object chromeAppsStrings {
   sealed trait loadedmetadata extends js.Object
   
   @js.native
-  sealed trait loadend extends js.Object
-  
-  @js.native
   sealed trait loadplugin extends RequestedPermission
   
   @js.native
@@ -1857,7 +1923,9 @@ object chromeAppsStrings {
        with ResourceType
   
   @js.native
-  sealed trait mediaGalleries extends Permission
+  sealed trait mediaGalleries
+    extends OptionalPermission
+       with Permission
   
   @js.native
   sealed trait media_pipeline_error extends js.Object
@@ -1963,7 +2031,9 @@ object chromeAppsStrings {
        with kLanguageInfoTable
   
   @js.native
-  sealed trait nativeMessaging extends Permission
+  sealed trait nativeMessaging
+    extends OptionalPermission
+       with Permission
   
   @js.native
   sealed trait nb
@@ -1979,10 +2049,14 @@ object chromeAppsStrings {
   sealed trait network extends js.Object
   
   @js.native
-  sealed trait networkingDotconfig extends ChromeOSOnlyPermissions
+  sealed trait networkingDotconfig
+    extends ChromeOSOnlyPermissions
+       with OptionalPermission
   
   @js.native
-  sealed trait networkingDotonc extends KioskOnlyPermissions
+  sealed trait networkingDotonc
+    extends KioskOnlyPermissions
+       with OptionalPermission
   
   @js.native
   sealed trait new_background_tab extends WindowOpenDisposition
@@ -2048,7 +2122,9 @@ object chromeAppsStrings {
   sealed trait notification extends js.Object
   
   @js.native
-  sealed trait notifications extends Permission
+  sealed trait notifications
+    extends OptionalPermission
+       with Permission
   
   @js.native
   sealed trait notify extends CharacteristicProperties
@@ -2184,7 +2260,9 @@ object chromeAppsStrings {
        with kLanguageInfoTable
   
   @js.native
-  sealed trait platformKeys extends ChromeOSOnlyPermissions
+  sealed trait platformKeys
+    extends ChromeOSOnlyPermissions
+       with OptionalPermission
   
   @js.native
   sealed trait play extends js.Object
@@ -2197,7 +2275,8 @@ object chromeAppsStrings {
   
   @js.native
   sealed trait pointerLock
-    extends Permission
+    extends OptionalPermission
+       with Permission
        with RequestedPermission
   
   @js.native
@@ -2225,10 +2304,14 @@ object chromeAppsStrings {
   sealed trait pointerup extends js.Object
   
   @js.native
-  sealed trait power extends Permission
+  sealed trait power
+    extends OptionalPermission
+       with Permission
   
   @js.native
-  sealed trait printerProvider extends Permission
+  sealed trait printerProvider
+    extends OptionalPermission
+       with Permission
   
   @js.native
   sealed trait progress extends js.Object
@@ -2352,7 +2435,9 @@ object chromeAppsStrings {
   sealed trait running extends js.Object
   
   @js.native
-  sealed trait runtime extends Permission
+  sealed trait runtime
+    extends OptionalPermission
+       with Permission
   
   @js.native
   sealed trait saveFile extends js.Object
@@ -2399,7 +2484,9 @@ object chromeAppsStrings {
   sealed trait separator extends js.Object
   
   @js.native
-  sealed trait serial extends Permission
+  sealed trait serial
+    extends OptionalPermission
+       with Permission
   
   @js.native
   sealed trait serviceType extends js.Object
@@ -2470,6 +2557,9 @@ object chromeAppsStrings {
        with kLanguageInfoTable
   
   @js.native
+  sealed trait socket extends OptionalPermission
+  
+  @js.native
   sealed trait sq
     extends LanguageCode
        with kLanguageInfoTable
@@ -2512,7 +2602,9 @@ object chromeAppsStrings {
   sealed trait start extends ScanProgressType
   
   @js.native
-  sealed trait storage extends Permission
+  sealed trait storage
+    extends OptionalPermission
+       with Permission
   
   @js.native
   sealed trait string extends JSONBasicTypes
@@ -2554,7 +2646,9 @@ object chromeAppsStrings {
   sealed trait sync extends StorageAreas
   
   @js.native
-  sealed trait syncFileSystem extends Permission
+  sealed trait syncFileSystem
+    extends OptionalPermission
+       with Permission
   
   @js.native
   sealed trait synced extends js.Object
@@ -2566,22 +2660,34 @@ object chromeAppsStrings {
   sealed trait system extends js.Object
   
   @js.native
-  sealed trait systemDotcpu extends Permission
+  sealed trait systemDotcpu
+    extends OptionalPermission
+       with Permission
   
   @js.native
-  sealed trait systemDotdisplay extends Permission
+  sealed trait systemDotdisplay
+    extends OptionalPermission
+       with Permission
   
   @js.native
-  sealed trait systemDotmemory extends Permission
+  sealed trait systemDotmemory
+    extends OptionalPermission
+       with Permission
   
   @js.native
-  sealed trait systemDotnetwork extends Permission
+  sealed trait systemDotnetwork
+    extends OptionalPermission
+       with Permission
   
   @js.native
-  sealed trait systemDotpowerSource extends KioskOnlyPermissions
+  sealed trait systemDotpowerSource
+    extends KioskOnlyPermissions
+       with OptionalPermission
   
   @js.native
-  sealed trait systemDotstorage extends Permission
+  sealed trait systemDotstorage
+    extends OptionalPermission
+       with Permission
   
   @js.native
   sealed trait system_error
@@ -2746,7 +2852,9 @@ object chromeAppsStrings {
   sealed trait unknown_error_ extends js.Object
   
   @js.native
-  sealed trait unlimitedStorage extends Permission
+  sealed trait unlimitedStorage
+    extends OptionalPermission
+       with Permission
   
   @js.native
   sealed trait unmanaged extends ManagedObject
@@ -2775,11 +2883,14 @@ object chromeAppsStrings {
   sealed trait url_handler extends js.Object
   
   @js.native
-  sealed trait usbDevices extends Permission
+  sealed trait usbDevices
+    extends OptionalPermission
+       with Permission
   
   @js.native
   sealed trait usb_
     extends DeviceVendorIdSource
+       with OptionalPermission
        with Permission
   
   @js.native
@@ -2805,16 +2916,22 @@ object chromeAppsStrings {
        with MediaType
   
   @js.native
-  sealed trait videoCapture extends Permission
+  sealed trait videoCapture
+    extends OptionalPermission
+       with Permission
   
   @js.native
-  sealed trait virtualKeyboard extends KioskOnlyPermissions
+  sealed trait virtualKeyboard
+    extends KioskOnlyPermissions
+       with OptionalPermission
   
   @js.native
   sealed trait volumechange extends js.Object
   
   @js.native
-  sealed trait vpnProvider extends ChromeOSOnlyPermissions
+  sealed trait vpnProvider
+    extends ChromeOSOnlyPermissions
+       with OptionalPermission
   
   @js.native
   sealed trait wa
@@ -2839,7 +2956,9 @@ object chromeAppsStrings {
   sealed trait websocket extends ResourceType
   
   @js.native
-  sealed trait webview extends Permission
+  sealed trait webview
+    extends OptionalPermission
+       with Permission
   
   @js.native
   sealed trait wheel extends js.Object
@@ -3936,8 +4055,6 @@ object chromeAppsStrings {
   @scala.inline
   def loadedmetadata: loadedmetadata = "loadedmetadata".asInstanceOf[loadedmetadata]
   @scala.inline
-  def loadend: loadend = "loadend".asInstanceOf[loadend]
-  @scala.inline
   def loadplugin: loadplugin = "loadplugin".asInstanceOf[loadplugin]
   @scala.inline
   def loadredirect: loadredirect = "loadredirect".asInstanceOf[loadredirect]
@@ -4321,6 +4438,8 @@ object chromeAppsStrings {
   def sn: sn = "sn".asInstanceOf[sn]
   @scala.inline
   def so: so = "so".asInstanceOf[so]
+  @scala.inline
+  def socket: socket = "socket".asInstanceOf[socket]
   @scala.inline
   def sq: sq = "sq".asInstanceOf[sq]
   @scala.inline

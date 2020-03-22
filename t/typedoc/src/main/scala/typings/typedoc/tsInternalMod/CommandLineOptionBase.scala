@@ -1,10 +1,10 @@
 package typings.typedoc.tsInternalMod
 
 import typings.std.Map
+import typings.typedoc.typedocStrings.`object`
 import typings.typedoc.typedocStrings.boolean
 import typings.typedoc.typedocStrings.list
 import typings.typedoc.typedocStrings.number
-import typings.typedoc.typedocStrings.object_
 import typings.typedoc.typedocStrings.string
 import typings.typescript.mod.DiagnosticMessage
 import scala.scalajs.js
@@ -19,14 +19,14 @@ trait CommandLineOptionBase extends js.Object {
   var name: String
   var paramType: js.UndefOr[DiagnosticMessage] = js.undefined
   var shortName: js.UndefOr[String] = js.undefined
-  var `type`: string | number | boolean | object_ | list | (Map[Double | String, _])
+  var `type`: string | number | boolean | `object` | list | (Map[Double | String, _])
 }
 
 object CommandLineOptionBase {
   @scala.inline
   def apply(
     name: String,
-    `type`: string | number | boolean | object_ | list | (Map[Double | String, _]),
+    `type`: string | number | boolean | `object` | list | (Map[Double | String, _]),
     description: DiagnosticMessage = null,
     experimental: js.UndefOr[Boolean] = js.undefined,
     isFilePath: js.UndefOr[Boolean] = js.undefined,

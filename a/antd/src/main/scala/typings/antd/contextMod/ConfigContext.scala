@@ -1,7 +1,7 @@
 package typings.antd.contextMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.antDesignCreateReactContext.mod.Context
+import typings.react.mod.Context
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

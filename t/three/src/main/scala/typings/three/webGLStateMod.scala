@@ -39,13 +39,8 @@ object webGLStateMod extends js.Object {
   
   @js.native
   class WebGLState protected () extends js.Object {
-    def this(
-      gl: WebGLRenderingContext,
-      extensions: WebGLExtensions,
-      utils: js.Any,
-      capabilities: WebGLCapabilities
-    ) = this()
-    var buffers: AnonColorDepth = js.native
+    def this(gl: WebGLRenderingContext, extensions: WebGLExtensions, capabilities: WebGLCapabilities) = this()
+    var buffers: AnonStencil = js.native
     def activeTexture(webglSlot: Double): Unit = js.native
     def bindTexture(webglType: Double, webglTexture: js.Any): Unit = js.native
     // Same interface as https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/compressedTexImage2D
@@ -63,7 +58,6 @@ object webGLStateMod extends js.Object {
     def enable(id: Double): Unit = js.native
     def enableAttribute(attribute: Double): Unit = js.native
     def enableAttributeAndDivisor(attribute: Double, meshPerAttribute: Double): Unit = js.native
-    def getCompressedTextureFormats(): js.Array[Double] = js.native
     def initAttributes(): Unit = js.native
     def reset(): Unit = js.native
     def scissor(scissor: Vector4): Unit = js.native
@@ -125,6 +119,7 @@ object webGLStateMod extends js.Object {
       `type`: Double,
       pixels: js.Any
     ): Unit = js.native
+    def unbindTexture(): Unit = js.native
     def useProgram(program: js.Any): Boolean = js.native
     def viewport(viewport: Vector4): Unit = js.native
   }

@@ -1,17 +1,25 @@
 package typings.promiseFs.mod
 
+import typings.node.AnonBuffer
+import typings.node.AnonBufferDataView
+import typings.node.AnonBufferFloat32Array
+import typings.node.AnonBufferFloat64Array
+import typings.node.AnonBufferInt16Array
+import typings.node.AnonBufferInt32Array
+import typings.node.AnonBufferInt8Array
+import typings.node.AnonBufferUint32Array
 import typings.node.NodeJS.ErrnoException
 import typings.promiseFs.AnonBufferBytesWritten
-import typings.promiseFs.AnonBufferBytesWrittenDataView
-import typings.promiseFs.AnonBufferBytesWrittenFloat32Array
-import typings.promiseFs.AnonBufferBytesWrittenFloat64Array
-import typings.promiseFs.AnonBufferBytesWrittenInt16Array
-import typings.promiseFs.AnonBufferBytesWrittenInt32Array
-import typings.promiseFs.AnonBufferBytesWrittenInt8Array
-import typings.promiseFs.AnonBufferBytesWrittenNumber
-import typings.promiseFs.AnonBufferBytesWrittenNumberString
-import typings.promiseFs.AnonBufferBytesWrittenNumberUint16Array
-import typings.promiseFs.AnonBufferBytesWrittenNumberUint32Array
+import typings.promiseFs.AnonBufferDataViewBytesWrittenNumber
+import typings.promiseFs.AnonBufferFloat32ArrayBytesWrittenNumber
+import typings.promiseFs.AnonBufferFloat64ArrayBytesWrittenNumber
+import typings.promiseFs.AnonBufferInt16ArrayBytesWrittenNumber
+import typings.promiseFs.AnonBufferInt32ArrayBytesWrittenNumber
+import typings.promiseFs.AnonBufferInt8ArrayBytesWrittenNumber
+import typings.promiseFs.AnonBufferString
+import typings.promiseFs.AnonBufferUint16Array
+import typings.promiseFs.AnonBytesWritten
+import typings.promiseFs.AnonBytesWrittenNumber
 import typings.std.DataView
 import typings.std.Float32Array
 import typings.std.Float64Array
@@ -30,8 +38,8 @@ import scala.scalajs.js.annotation._
 @JSImport("promise-fs", "write")
 @js.native
 object write extends js.Object {
-  def apply(fd: Double): js.Promise[AnonBufferBytesWritten] = js.native
-  def apply(fd: Double, buffer: DataView): js.Promise[AnonBufferBytesWrittenDataView] = js.native
+  def apply(fd: Double): js.Promise[AnonBytesWritten] = js.native
+  def apply(fd: Double, buffer: DataView): js.Promise[AnonBufferDataViewBytesWrittenNumber] = js.native
   def apply(
     fd: Double,
     buffer: DataView,
@@ -72,7 +80,7 @@ object write extends js.Object {
     length: Null,
     callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ DataView, Unit]
   ): Unit = js.native
-  def apply(fd: Double, buffer: DataView, offset: Double): js.Promise[AnonBufferBytesWrittenDataView] = js.native
+  def apply(fd: Double, buffer: DataView, offset: Double): js.Promise[AnonBufferDataViewBytesWrittenNumber] = js.native
   def apply(
     fd: Double,
     buffer: DataView,
@@ -86,7 +94,7 @@ object write extends js.Object {
     length: js.UndefOr[scala.Nothing],
     callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ DataView, Unit]
   ): Unit = js.native
-  def apply(fd: Double, buffer: DataView, offset: Double, length: Double): js.Promise[AnonBufferBytesWrittenDataView] = js.native
+  def apply(fd: Double, buffer: DataView, offset: Double, length: Double): js.Promise[AnonBufferDataViewBytesWrittenNumber] = js.native
   def apply(
     fd: Double,
     buffer: DataView,
@@ -94,7 +102,7 @@ object write extends js.Object {
     length: Double,
     callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ DataView, Unit]
   ): Unit = js.native
-  def apply(fd: Double, buffer: DataView, offset: Double, length: Double, position: Double): js.Promise[AnonBufferBytesWrittenDataView] = js.native
+  def apply(fd: Double, buffer: DataView, offset: Double, length: Double, position: Double): js.Promise[AnonBufferDataViewBytesWrittenNumber] = js.native
   def apply(
     fd: Double,
     buffer: DataView,
@@ -129,7 +137,7 @@ object write extends js.Object {
     length: Null,
     callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ DataView, Unit]
   ): Unit = js.native
-  def apply(fd: Double, buffer: Float32Array): js.Promise[AnonBufferBytesWrittenFloat32Array] = js.native
+  def apply(fd: Double, buffer: Float32Array): js.Promise[AnonBufferFloat32ArrayBytesWrittenNumber] = js.native
   def apply(
     fd: Double,
     buffer: Float32Array,
@@ -170,7 +178,7 @@ object write extends js.Object {
     length: Null,
     callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Float32Array, Unit]
   ): Unit = js.native
-  def apply(fd: Double, buffer: Float32Array, offset: Double): js.Promise[AnonBufferBytesWrittenFloat32Array] = js.native
+  def apply(fd: Double, buffer: Float32Array, offset: Double): js.Promise[AnonBufferFloat32ArrayBytesWrittenNumber] = js.native
   def apply(
     fd: Double,
     buffer: Float32Array,
@@ -184,7 +192,7 @@ object write extends js.Object {
     length: js.UndefOr[scala.Nothing],
     callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Float32Array, Unit]
   ): Unit = js.native
-  def apply(fd: Double, buffer: Float32Array, offset: Double, length: Double): js.Promise[AnonBufferBytesWrittenFloat32Array] = js.native
+  def apply(fd: Double, buffer: Float32Array, offset: Double, length: Double): js.Promise[AnonBufferFloat32ArrayBytesWrittenNumber] = js.native
   def apply(
     fd: Double,
     buffer: Float32Array,
@@ -192,7 +200,7 @@ object write extends js.Object {
     length: Double,
     callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Float32Array, Unit]
   ): Unit = js.native
-  def apply(fd: Double, buffer: Float32Array, offset: Double, length: Double, position: Double): js.Promise[AnonBufferBytesWrittenFloat32Array] = js.native
+  def apply(fd: Double, buffer: Float32Array, offset: Double, length: Double, position: Double): js.Promise[AnonBufferFloat32ArrayBytesWrittenNumber] = js.native
   def apply(
     fd: Double,
     buffer: Float32Array,
@@ -227,7 +235,7 @@ object write extends js.Object {
     length: Null,
     callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Float32Array, Unit]
   ): Unit = js.native
-  def apply(fd: Double, buffer: Float64Array): js.Promise[AnonBufferBytesWrittenFloat64Array] = js.native
+  def apply(fd: Double, buffer: Float64Array): js.Promise[AnonBufferFloat64ArrayBytesWrittenNumber] = js.native
   def apply(
     fd: Double,
     buffer: Float64Array,
@@ -268,7 +276,7 @@ object write extends js.Object {
     length: Null,
     callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Float64Array, Unit]
   ): Unit = js.native
-  def apply(fd: Double, buffer: Float64Array, offset: Double): js.Promise[AnonBufferBytesWrittenFloat64Array] = js.native
+  def apply(fd: Double, buffer: Float64Array, offset: Double): js.Promise[AnonBufferFloat64ArrayBytesWrittenNumber] = js.native
   def apply(
     fd: Double,
     buffer: Float64Array,
@@ -282,7 +290,7 @@ object write extends js.Object {
     length: js.UndefOr[scala.Nothing],
     callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Float64Array, Unit]
   ): Unit = js.native
-  def apply(fd: Double, buffer: Float64Array, offset: Double, length: Double): js.Promise[AnonBufferBytesWrittenFloat64Array] = js.native
+  def apply(fd: Double, buffer: Float64Array, offset: Double, length: Double): js.Promise[AnonBufferFloat64ArrayBytesWrittenNumber] = js.native
   def apply(
     fd: Double,
     buffer: Float64Array,
@@ -290,7 +298,7 @@ object write extends js.Object {
     length: Double,
     callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Float64Array, Unit]
   ): Unit = js.native
-  def apply(fd: Double, buffer: Float64Array, offset: Double, length: Double, position: Double): js.Promise[AnonBufferBytesWrittenFloat64Array] = js.native
+  def apply(fd: Double, buffer: Float64Array, offset: Double, length: Double, position: Double): js.Promise[AnonBufferFloat64ArrayBytesWrittenNumber] = js.native
   def apply(
     fd: Double,
     buffer: Float64Array,
@@ -325,7 +333,7 @@ object write extends js.Object {
     length: Null,
     callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Float64Array, Unit]
   ): Unit = js.native
-  def apply(fd: Double, buffer: Int16Array): js.Promise[AnonBufferBytesWrittenInt16Array] = js.native
+  def apply(fd: Double, buffer: Int16Array): js.Promise[AnonBufferInt16ArrayBytesWrittenNumber] = js.native
   def apply(
     fd: Double,
     buffer: Int16Array,
@@ -366,7 +374,7 @@ object write extends js.Object {
     length: Null,
     callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Int16Array, Unit]
   ): Unit = js.native
-  def apply(fd: Double, buffer: Int16Array, offset: Double): js.Promise[AnonBufferBytesWrittenInt16Array] = js.native
+  def apply(fd: Double, buffer: Int16Array, offset: Double): js.Promise[AnonBufferInt16ArrayBytesWrittenNumber] = js.native
   def apply(
     fd: Double,
     buffer: Int16Array,
@@ -380,7 +388,7 @@ object write extends js.Object {
     length: js.UndefOr[scala.Nothing],
     callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Int16Array, Unit]
   ): Unit = js.native
-  def apply(fd: Double, buffer: Int16Array, offset: Double, length: Double): js.Promise[AnonBufferBytesWrittenInt16Array] = js.native
+  def apply(fd: Double, buffer: Int16Array, offset: Double, length: Double): js.Promise[AnonBufferInt16ArrayBytesWrittenNumber] = js.native
   def apply(
     fd: Double,
     buffer: Int16Array,
@@ -388,7 +396,7 @@ object write extends js.Object {
     length: Double,
     callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Int16Array, Unit]
   ): Unit = js.native
-  def apply(fd: Double, buffer: Int16Array, offset: Double, length: Double, position: Double): js.Promise[AnonBufferBytesWrittenInt16Array] = js.native
+  def apply(fd: Double, buffer: Int16Array, offset: Double, length: Double, position: Double): js.Promise[AnonBufferInt16ArrayBytesWrittenNumber] = js.native
   def apply(
     fd: Double,
     buffer: Int16Array,
@@ -423,7 +431,7 @@ object write extends js.Object {
     length: Null,
     callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Int16Array, Unit]
   ): Unit = js.native
-  def apply(fd: Double, buffer: Int32Array): js.Promise[AnonBufferBytesWrittenInt32Array] = js.native
+  def apply(fd: Double, buffer: Int32Array): js.Promise[AnonBufferInt32ArrayBytesWrittenNumber] = js.native
   def apply(
     fd: Double,
     buffer: Int32Array,
@@ -464,7 +472,7 @@ object write extends js.Object {
     length: Null,
     callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Int32Array, Unit]
   ): Unit = js.native
-  def apply(fd: Double, buffer: Int32Array, offset: Double): js.Promise[AnonBufferBytesWrittenInt32Array] = js.native
+  def apply(fd: Double, buffer: Int32Array, offset: Double): js.Promise[AnonBufferInt32ArrayBytesWrittenNumber] = js.native
   def apply(
     fd: Double,
     buffer: Int32Array,
@@ -478,7 +486,7 @@ object write extends js.Object {
     length: js.UndefOr[scala.Nothing],
     callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Int32Array, Unit]
   ): Unit = js.native
-  def apply(fd: Double, buffer: Int32Array, offset: Double, length: Double): js.Promise[AnonBufferBytesWrittenInt32Array] = js.native
+  def apply(fd: Double, buffer: Int32Array, offset: Double, length: Double): js.Promise[AnonBufferInt32ArrayBytesWrittenNumber] = js.native
   def apply(
     fd: Double,
     buffer: Int32Array,
@@ -486,7 +494,7 @@ object write extends js.Object {
     length: Double,
     callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Int32Array, Unit]
   ): Unit = js.native
-  def apply(fd: Double, buffer: Int32Array, offset: Double, length: Double, position: Double): js.Promise[AnonBufferBytesWrittenInt32Array] = js.native
+  def apply(fd: Double, buffer: Int32Array, offset: Double, length: Double, position: Double): js.Promise[AnonBufferInt32ArrayBytesWrittenNumber] = js.native
   def apply(
     fd: Double,
     buffer: Int32Array,
@@ -521,7 +529,7 @@ object write extends js.Object {
     length: Null,
     callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Int32Array, Unit]
   ): Unit = js.native
-  def apply(fd: Double, buffer: Int8Array): js.Promise[AnonBufferBytesWrittenInt8Array] = js.native
+  def apply(fd: Double, buffer: Int8Array): js.Promise[AnonBufferInt8ArrayBytesWrittenNumber] = js.native
   def apply(
     fd: Double,
     buffer: Int8Array,
@@ -562,7 +570,7 @@ object write extends js.Object {
     length: Null,
     callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Int8Array, Unit]
   ): Unit = js.native
-  def apply(fd: Double, buffer: Int8Array, offset: Double): js.Promise[AnonBufferBytesWrittenInt8Array] = js.native
+  def apply(fd: Double, buffer: Int8Array, offset: Double): js.Promise[AnonBufferInt8ArrayBytesWrittenNumber] = js.native
   def apply(
     fd: Double,
     buffer: Int8Array,
@@ -576,7 +584,7 @@ object write extends js.Object {
     length: js.UndefOr[scala.Nothing],
     callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Int8Array, Unit]
   ): Unit = js.native
-  def apply(fd: Double, buffer: Int8Array, offset: Double, length: Double): js.Promise[AnonBufferBytesWrittenInt8Array] = js.native
+  def apply(fd: Double, buffer: Int8Array, offset: Double, length: Double): js.Promise[AnonBufferInt8ArrayBytesWrittenNumber] = js.native
   def apply(
     fd: Double,
     buffer: Int8Array,
@@ -584,7 +592,7 @@ object write extends js.Object {
     length: Double,
     callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Int8Array, Unit]
   ): Unit = js.native
-  def apply(fd: Double, buffer: Int8Array, offset: Double, length: Double, position: Double): js.Promise[AnonBufferBytesWrittenInt8Array] = js.native
+  def apply(fd: Double, buffer: Int8Array, offset: Double, length: Double, position: Double): js.Promise[AnonBufferInt8ArrayBytesWrittenNumber] = js.native
   def apply(
     fd: Double,
     buffer: Int8Array,
@@ -619,7 +627,7 @@ object write extends js.Object {
     length: Null,
     callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Int8Array, Unit]
   ): Unit = js.native
-  def apply(fd: Double, buffer: Uint16Array): js.Promise[AnonBufferBytesWrittenNumberUint16Array] = js.native
+  def apply(fd: Double, buffer: Uint16Array): js.Promise[AnonBufferUint16Array] = js.native
   def apply(
     fd: Double,
     buffer: Uint16Array,
@@ -660,7 +668,7 @@ object write extends js.Object {
     length: Null,
     callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Uint16Array, Unit]
   ): Unit = js.native
-  def apply(fd: Double, buffer: Uint16Array, offset: Double): js.Promise[AnonBufferBytesWrittenNumberUint16Array] = js.native
+  def apply(fd: Double, buffer: Uint16Array, offset: Double): js.Promise[AnonBufferUint16Array] = js.native
   def apply(
     fd: Double,
     buffer: Uint16Array,
@@ -674,7 +682,7 @@ object write extends js.Object {
     length: js.UndefOr[scala.Nothing],
     callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Uint16Array, Unit]
   ): Unit = js.native
-  def apply(fd: Double, buffer: Uint16Array, offset: Double, length: Double): js.Promise[AnonBufferBytesWrittenNumberUint16Array] = js.native
+  def apply(fd: Double, buffer: Uint16Array, offset: Double, length: Double): js.Promise[AnonBufferUint16Array] = js.native
   def apply(
     fd: Double,
     buffer: Uint16Array,
@@ -682,7 +690,7 @@ object write extends js.Object {
     length: Double,
     callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Uint16Array, Unit]
   ): Unit = js.native
-  def apply(fd: Double, buffer: Uint16Array, offset: Double, length: Double, position: Double): js.Promise[AnonBufferBytesWrittenNumberUint16Array] = js.native
+  def apply(fd: Double, buffer: Uint16Array, offset: Double, length: Double, position: Double): js.Promise[AnonBufferUint16Array] = js.native
   def apply(
     fd: Double,
     buffer: Uint16Array,
@@ -717,7 +725,7 @@ object write extends js.Object {
     length: Null,
     callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Uint16Array, Unit]
   ): Unit = js.native
-  def apply(fd: Double, buffer: Uint32Array): js.Promise[AnonBufferBytesWrittenNumberUint32Array] = js.native
+  def apply(fd: Double, buffer: Uint32Array): js.Promise[AnonBytesWrittenNumber] = js.native
   def apply(
     fd: Double,
     buffer: Uint32Array,
@@ -758,7 +766,7 @@ object write extends js.Object {
     length: Null,
     callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Uint32Array, Unit]
   ): Unit = js.native
-  def apply(fd: Double, buffer: Uint32Array, offset: Double): js.Promise[AnonBufferBytesWrittenNumberUint32Array] = js.native
+  def apply(fd: Double, buffer: Uint32Array, offset: Double): js.Promise[AnonBytesWrittenNumber] = js.native
   def apply(
     fd: Double,
     buffer: Uint32Array,
@@ -772,7 +780,7 @@ object write extends js.Object {
     length: js.UndefOr[scala.Nothing],
     callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Uint32Array, Unit]
   ): Unit = js.native
-  def apply(fd: Double, buffer: Uint32Array, offset: Double, length: Double): js.Promise[AnonBufferBytesWrittenNumberUint32Array] = js.native
+  def apply(fd: Double, buffer: Uint32Array, offset: Double, length: Double): js.Promise[AnonBytesWrittenNumber] = js.native
   def apply(
     fd: Double,
     buffer: Uint32Array,
@@ -780,7 +788,7 @@ object write extends js.Object {
     length: Double,
     callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Uint32Array, Unit]
   ): Unit = js.native
-  def apply(fd: Double, buffer: Uint32Array, offset: Double, length: Double, position: Double): js.Promise[AnonBufferBytesWrittenNumberUint32Array] = js.native
+  def apply(fd: Double, buffer: Uint32Array, offset: Double, length: Double, position: Double): js.Promise[AnonBytesWrittenNumber] = js.native
   def apply(
     fd: Double,
     buffer: Uint32Array,
@@ -815,7 +823,7 @@ object write extends js.Object {
     length: Null,
     callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Uint32Array, Unit]
   ): Unit = js.native
-  def apply(fd: Double, buffer: Uint8Array): js.Promise[AnonBufferBytesWritten] = js.native
+  def apply(fd: Double, buffer: Uint8Array): js.Promise[AnonBytesWritten] = js.native
   /**
     * Asynchronously writes `buffer` to the file referenced by the supplied file descriptor.
     * @param fd A file descriptor.
@@ -867,7 +875,7 @@ object write extends js.Object {
     length: Null,
     callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Uint8Array, Unit]
   ): Unit = js.native
-  def apply(fd: Double, buffer: Uint8Array, offset: Double): js.Promise[AnonBufferBytesWritten] = js.native
+  def apply(fd: Double, buffer: Uint8Array, offset: Double): js.Promise[AnonBytesWritten] = js.native
   /**
     * Asynchronously writes `buffer` to the file referenced by the supplied file descriptor.
     * @param fd A file descriptor.
@@ -886,7 +894,7 @@ object write extends js.Object {
     length: js.UndefOr[scala.Nothing],
     callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Uint8Array, Unit]
   ): Unit = js.native
-  def apply(fd: Double, buffer: Uint8Array, offset: Double, length: Double): js.Promise[AnonBufferBytesWritten] = js.native
+  def apply(fd: Double, buffer: Uint8Array, offset: Double, length: Double): js.Promise[AnonBytesWritten] = js.native
   /**
     * Asynchronously writes `buffer` to the file referenced by the supplied file descriptor.
     * @param fd A file descriptor.
@@ -900,7 +908,7 @@ object write extends js.Object {
     length: Double,
     callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Uint8Array, Unit]
   ): Unit = js.native
-  def apply(fd: Double, buffer: Uint8Array, offset: Double, length: Double, position: Double): js.Promise[AnonBufferBytesWritten] = js.native
+  def apply(fd: Double, buffer: Uint8Array, offset: Double, length: Double, position: Double): js.Promise[AnonBytesWritten] = js.native
   def apply(
     fd: Double,
     buffer: Uint8Array,
@@ -935,7 +943,7 @@ object write extends js.Object {
     length: Null,
     callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Uint8Array, Unit]
   ): Unit = js.native
-  def apply(fd: Double, buffer: Uint8ClampedArray): js.Promise[AnonBufferBytesWrittenNumber] = js.native
+  def apply(fd: Double, buffer: Uint8ClampedArray): js.Promise[AnonBufferBytesWritten] = js.native
   def apply(
     fd: Double,
     buffer: Uint8ClampedArray,
@@ -1006,7 +1014,7 @@ object write extends js.Object {
       Unit
     ]
   ): Unit = js.native
-  def apply(fd: Double, buffer: Uint8ClampedArray, offset: Double): js.Promise[AnonBufferBytesWrittenNumber] = js.native
+  def apply(fd: Double, buffer: Uint8ClampedArray, offset: Double): js.Promise[AnonBufferBytesWritten] = js.native
   def apply(
     fd: Double,
     buffer: Uint8ClampedArray,
@@ -1030,7 +1038,7 @@ object write extends js.Object {
       Unit
     ]
   ): Unit = js.native
-  def apply(fd: Double, buffer: Uint8ClampedArray, offset: Double, length: Double): js.Promise[AnonBufferBytesWrittenNumber] = js.native
+  def apply(fd: Double, buffer: Uint8ClampedArray, offset: Double, length: Double): js.Promise[AnonBufferBytesWritten] = js.native
   def apply(
     fd: Double,
     buffer: Uint8ClampedArray,
@@ -1043,7 +1051,7 @@ object write extends js.Object {
       Unit
     ]
   ): Unit = js.native
-  def apply(fd: Double, buffer: Uint8ClampedArray, offset: Double, length: Double, position: Double): js.Promise[AnonBufferBytesWrittenNumber] = js.native
+  def apply(fd: Double, buffer: Uint8ClampedArray, offset: Double, length: Double, position: Double): js.Promise[AnonBufferBytesWritten] = js.native
   def apply(
     fd: Double,
     buffer: Uint8ClampedArray,
@@ -1103,7 +1111,7 @@ object write extends js.Object {
       Unit
     ]
   ): Unit = js.native
-  def apply(fd: Double, string: js.Any): js.Promise[AnonBufferBytesWrittenNumberString] = js.native
+  def apply(fd: Double, string: js.Any): js.Promise[AnonBufferString] = js.native
   /**
     * Asynchronously writes `string` to the file referenced by the supplied file descriptor.
     * @param fd A file descriptor.
@@ -1141,7 +1149,7 @@ object write extends js.Object {
     encoding: Null,
     callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* str */ String, Unit]
   ): Unit = js.native
-  def apply(fd: Double, string: js.Any, position: Double): js.Promise[AnonBufferBytesWrittenNumberString] = js.native
+  def apply(fd: Double, string: js.Any, position: Double): js.Promise[AnonBufferString] = js.native
   /**
     * Asynchronously writes `string` to the file referenced by the supplied file descriptor.
     * @param fd A file descriptor.
@@ -1161,7 +1169,7 @@ object write extends js.Object {
     encoding: js.UndefOr[scala.Nothing],
     callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* str */ String, Unit]
   ): Unit = js.native
-  def apply(fd: Double, string: js.Any, position: Double, encoding: String): js.Promise[AnonBufferBytesWrittenNumberString] = js.native
+  def apply(fd: Double, string: js.Any, position: Double, encoding: String): js.Promise[AnonBufferString] = js.native
   /**
     * Asynchronously writes `string` to the file referenced by the supplied file descriptor.
     * @param fd A file descriptor.
@@ -1196,7 +1204,7 @@ object write extends js.Object {
     encoding: js.UndefOr[scala.Nothing],
     callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* str */ String, Unit]
   ): Unit = js.native
-  def apply(fd: Double, string: js.Any, position: Null, encoding: String): js.Promise[AnonBufferBytesWrittenNumberString] = js.native
+  def apply(fd: Double, string: js.Any, position: Null, encoding: String): js.Promise[AnonBufferString] = js.native
   def apply(
     fd: Double,
     string: js.Any,
@@ -1219,87 +1227,87 @@ object write extends js.Object {
     * @param position The offset from the beginning of the file where this data should be written. If not supplied, defaults to the current position.
     */
   @JSName("__promisify__")
-  def promisify(fd: Double): js.Promise[typings.node.AnonBufferBytesWritten] = js.native
+  def promisify(fd: Double): js.Promise[AnonBuffer] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: DataView): js.Promise[typings.node.AnonBufferBytesWrittenDataView] = js.native
+  def promisify(fd: Double, buffer: DataView): js.Promise[AnonBufferDataView] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: DataView, offset: Double): js.Promise[typings.node.AnonBufferBytesWrittenDataView] = js.native
+  def promisify(fd: Double, buffer: DataView, offset: Double): js.Promise[AnonBufferDataView] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: DataView, offset: Double, length: Double): js.Promise[typings.node.AnonBufferBytesWrittenDataView] = js.native
+  def promisify(fd: Double, buffer: DataView, offset: Double, length: Double): js.Promise[AnonBufferDataView] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: DataView, offset: Double, length: Double, position: Double): js.Promise[typings.node.AnonBufferBytesWrittenDataView] = js.native
+  def promisify(fd: Double, buffer: DataView, offset: Double, length: Double, position: Double): js.Promise[AnonBufferDataView] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: Float32Array): js.Promise[typings.node.AnonBufferBytesWrittenFloat32Array] = js.native
+  def promisify(fd: Double, buffer: Float32Array): js.Promise[AnonBufferFloat32Array] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: Float32Array, offset: Double): js.Promise[typings.node.AnonBufferBytesWrittenFloat32Array] = js.native
+  def promisify(fd: Double, buffer: Float32Array, offset: Double): js.Promise[AnonBufferFloat32Array] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: Float32Array, offset: Double, length: Double): js.Promise[typings.node.AnonBufferBytesWrittenFloat32Array] = js.native
+  def promisify(fd: Double, buffer: Float32Array, offset: Double, length: Double): js.Promise[AnonBufferFloat32Array] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: Float32Array, offset: Double, length: Double, position: Double): js.Promise[typings.node.AnonBufferBytesWrittenFloat32Array] = js.native
+  def promisify(fd: Double, buffer: Float32Array, offset: Double, length: Double, position: Double): js.Promise[AnonBufferFloat32Array] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: Float64Array): js.Promise[typings.node.AnonBufferBytesWrittenFloat64Array] = js.native
+  def promisify(fd: Double, buffer: Float64Array): js.Promise[AnonBufferFloat64Array] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: Float64Array, offset: Double): js.Promise[typings.node.AnonBufferBytesWrittenFloat64Array] = js.native
+  def promisify(fd: Double, buffer: Float64Array, offset: Double): js.Promise[AnonBufferFloat64Array] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: Float64Array, offset: Double, length: Double): js.Promise[typings.node.AnonBufferBytesWrittenFloat64Array] = js.native
+  def promisify(fd: Double, buffer: Float64Array, offset: Double, length: Double): js.Promise[AnonBufferFloat64Array] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: Float64Array, offset: Double, length: Double, position: Double): js.Promise[typings.node.AnonBufferBytesWrittenFloat64Array] = js.native
+  def promisify(fd: Double, buffer: Float64Array, offset: Double, length: Double, position: Double): js.Promise[AnonBufferFloat64Array] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: Int16Array): js.Promise[typings.node.AnonBufferBytesWrittenInt16Array] = js.native
+  def promisify(fd: Double, buffer: Int16Array): js.Promise[AnonBufferInt16Array] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: Int16Array, offset: Double): js.Promise[typings.node.AnonBufferBytesWrittenInt16Array] = js.native
+  def promisify(fd: Double, buffer: Int16Array, offset: Double): js.Promise[AnonBufferInt16Array] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: Int16Array, offset: Double, length: Double): js.Promise[typings.node.AnonBufferBytesWrittenInt16Array] = js.native
+  def promisify(fd: Double, buffer: Int16Array, offset: Double, length: Double): js.Promise[AnonBufferInt16Array] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: Int16Array, offset: Double, length: Double, position: Double): js.Promise[typings.node.AnonBufferBytesWrittenInt16Array] = js.native
+  def promisify(fd: Double, buffer: Int16Array, offset: Double, length: Double, position: Double): js.Promise[AnonBufferInt16Array] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: Int32Array): js.Promise[typings.node.AnonBufferBytesWrittenInt32Array] = js.native
+  def promisify(fd: Double, buffer: Int32Array): js.Promise[AnonBufferInt32Array] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: Int32Array, offset: Double): js.Promise[typings.node.AnonBufferBytesWrittenInt32Array] = js.native
+  def promisify(fd: Double, buffer: Int32Array, offset: Double): js.Promise[AnonBufferInt32Array] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: Int32Array, offset: Double, length: Double): js.Promise[typings.node.AnonBufferBytesWrittenInt32Array] = js.native
+  def promisify(fd: Double, buffer: Int32Array, offset: Double, length: Double): js.Promise[AnonBufferInt32Array] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: Int32Array, offset: Double, length: Double, position: Double): js.Promise[typings.node.AnonBufferBytesWrittenInt32Array] = js.native
+  def promisify(fd: Double, buffer: Int32Array, offset: Double, length: Double, position: Double): js.Promise[AnonBufferInt32Array] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: Int8Array): js.Promise[typings.node.AnonBufferBytesWrittenInt8Array] = js.native
+  def promisify(fd: Double, buffer: Int8Array): js.Promise[AnonBufferInt8Array] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: Int8Array, offset: Double): js.Promise[typings.node.AnonBufferBytesWrittenInt8Array] = js.native
+  def promisify(fd: Double, buffer: Int8Array, offset: Double): js.Promise[AnonBufferInt8Array] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: Int8Array, offset: Double, length: Double): js.Promise[typings.node.AnonBufferBytesWrittenInt8Array] = js.native
+  def promisify(fd: Double, buffer: Int8Array, offset: Double, length: Double): js.Promise[AnonBufferInt8Array] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: Int8Array, offset: Double, length: Double, position: Double): js.Promise[typings.node.AnonBufferBytesWrittenInt8Array] = js.native
+  def promisify(fd: Double, buffer: Int8Array, offset: Double, length: Double, position: Double): js.Promise[AnonBufferInt8Array] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: Uint16Array): js.Promise[typings.node.AnonBufferBytesWrittenNumberUint16Array] = js.native
+  def promisify(fd: Double, buffer: Uint16Array): js.Promise[typings.node.AnonBufferBytesWritten] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: Uint16Array, offset: Double): js.Promise[typings.node.AnonBufferBytesWrittenNumberUint16Array] = js.native
+  def promisify(fd: Double, buffer: Uint16Array, offset: Double): js.Promise[typings.node.AnonBufferBytesWritten] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: Uint16Array, offset: Double, length: Double): js.Promise[typings.node.AnonBufferBytesWrittenNumberUint16Array] = js.native
+  def promisify(fd: Double, buffer: Uint16Array, offset: Double, length: Double): js.Promise[typings.node.AnonBufferBytesWritten] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: Uint16Array, offset: Double, length: Double, position: Double): js.Promise[typings.node.AnonBufferBytesWrittenNumberUint16Array] = js.native
+  def promisify(fd: Double, buffer: Uint16Array, offset: Double, length: Double, position: Double): js.Promise[typings.node.AnonBufferBytesWritten] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: Uint32Array): js.Promise[typings.node.AnonBufferBytesWrittenNumberUint32Array] = js.native
+  def promisify(fd: Double, buffer: Uint32Array): js.Promise[AnonBufferUint32Array] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: Uint32Array, offset: Double): js.Promise[typings.node.AnonBufferBytesWrittenNumberUint32Array] = js.native
+  def promisify(fd: Double, buffer: Uint32Array, offset: Double): js.Promise[AnonBufferUint32Array] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: Uint32Array, offset: Double, length: Double): js.Promise[typings.node.AnonBufferBytesWrittenNumberUint32Array] = js.native
+  def promisify(fd: Double, buffer: Uint32Array, offset: Double, length: Double): js.Promise[AnonBufferUint32Array] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: Uint32Array, offset: Double, length: Double, position: Double): js.Promise[typings.node.AnonBufferBytesWrittenNumberUint32Array] = js.native
+  def promisify(fd: Double, buffer: Uint32Array, offset: Double, length: Double, position: Double): js.Promise[AnonBufferUint32Array] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: Uint8Array): js.Promise[typings.node.AnonBufferBytesWritten] = js.native
+  def promisify(fd: Double, buffer: Uint8Array): js.Promise[AnonBuffer] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: Uint8Array, offset: Double): js.Promise[typings.node.AnonBufferBytesWritten] = js.native
+  def promisify(fd: Double, buffer: Uint8Array, offset: Double): js.Promise[AnonBuffer] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: Uint8Array, offset: Double, length: Double): js.Promise[typings.node.AnonBufferBytesWritten] = js.native
+  def promisify(fd: Double, buffer: Uint8Array, offset: Double, length: Double): js.Promise[AnonBuffer] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: Uint8Array, offset: Double, length: Double, position: Double): js.Promise[typings.node.AnonBufferBytesWritten] = js.native
+  def promisify(fd: Double, buffer: Uint8Array, offset: Double, length: Double, position: Double): js.Promise[AnonBuffer] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: Uint8ClampedArray): js.Promise[typings.node.AnonBufferBytesWrittenNumber] = js.native
+  def promisify(fd: Double, buffer: Uint8ClampedArray): js.Promise[typings.node.AnonBytesWritten] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: Uint8ClampedArray, offset: Double): js.Promise[typings.node.AnonBufferBytesWrittenNumber] = js.native
+  def promisify(fd: Double, buffer: Uint8ClampedArray, offset: Double): js.Promise[typings.node.AnonBytesWritten] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: Uint8ClampedArray, offset: Double, length: Double): js.Promise[typings.node.AnonBufferBytesWrittenNumber] = js.native
+  def promisify(fd: Double, buffer: Uint8ClampedArray, offset: Double, length: Double): js.Promise[typings.node.AnonBytesWritten] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: Uint8ClampedArray, offset: Double, length: Double, position: Double): js.Promise[typings.node.AnonBufferBytesWrittenNumber] = js.native
+  def promisify(fd: Double, buffer: Uint8ClampedArray, offset: Double, length: Double, position: Double): js.Promise[typings.node.AnonBytesWritten] = js.native
   /**
     * Asynchronously writes `string` to the file referenced by the supplied file descriptor.
     * @param fd A file descriptor.
@@ -1308,12 +1316,12 @@ object write extends js.Object {
     * @param encoding The expected string encoding.
     */
   @JSName("__promisify__")
-  def promisify(fd: Double, string: js.Any): js.Promise[typings.node.AnonBufferBytesWrittenNumberString] = js.native
+  def promisify(fd: Double, string: js.Any): js.Promise[typings.node.AnonBufferString] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, string: js.Any, position: Double): js.Promise[typings.node.AnonBufferBytesWrittenNumberString] = js.native
+  def promisify(fd: Double, string: js.Any, position: Double): js.Promise[typings.node.AnonBufferString] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, string: js.Any, position: Double, encoding: String): js.Promise[typings.node.AnonBufferBytesWrittenNumberString] = js.native
+  def promisify(fd: Double, string: js.Any, position: Double, encoding: String): js.Promise[typings.node.AnonBufferString] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, string: js.Any, position: Null, encoding: String): js.Promise[typings.node.AnonBufferBytesWrittenNumberString] = js.native
+  def promisify(fd: Double, string: js.Any, position: Null, encoding: String): js.Promise[typings.node.AnonBufferString] = js.native
 }
 

@@ -1,5 +1,6 @@
 package typings.reactNativeElements.mod
 
+import typings.reactNativeElements.RecursivePartialFullTheme
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,9 +14,9 @@ trait ThemeProps[T] extends js.Object {
 object ThemeProps {
   @scala.inline
   def apply[T](
-    replaceTheme: /* updates */ RecursivePartial[FullTheme] => Unit,
+    replaceTheme: /* updates */ RecursivePartialFullTheme => Unit,
     theme: Theme[T],
-    updateTheme: /* updates */ RecursivePartial[FullTheme] => Unit
+    updateTheme: /* updates */ RecursivePartialFullTheme => Unit
   ): ThemeProps[T] = {
     val __obj = js.Dynamic.literal(replaceTheme = js.Any.fromFunction1(replaceTheme), theme = theme.asInstanceOf[js.Any], updateTheme = js.Any.fromFunction1(updateTheme))
   

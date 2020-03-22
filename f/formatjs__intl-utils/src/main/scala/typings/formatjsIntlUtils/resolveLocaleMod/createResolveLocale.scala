@@ -1,6 +1,6 @@
 package typings.formatjsIntlUtils.resolveLocaleMod
 
-import typings.formatjsIntlUtils.AnonK
+import typings.formatjsIntlUtils.AnonDictk
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,7 +14,7 @@ object createResolveLocale extends js.Object {
     */ typings.formatjsIntlUtils.formatjsIntlUtilsStrings.createResolveLocale with js.Any */](getDefaultLocale: js.Function0[String]): js.Function5[
     /* availableLocales */ js.Array[String], 
     /* requestedLocales */ js.Array[String], 
-    /* options */ AnonK, 
+    /* options */ AnonDictk, 
     /* relevantExtensionKeys */ js.Array[K], 
     /* localeData */ Record[String, D], 
     ResolveLocaleResult

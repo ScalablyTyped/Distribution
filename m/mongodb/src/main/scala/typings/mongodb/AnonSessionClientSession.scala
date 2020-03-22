@@ -6,14 +6,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonSessionClientSession extends js.Object {
-  var session: ClientSession
+  var session: js.UndefOr[ClientSession] = js.undefined
 }
 
 object AnonSessionClientSession {
   @scala.inline
-  def apply(session: ClientSession): AnonSessionClientSession = {
-    val __obj = js.Dynamic.literal(session = session.asInstanceOf[js.Any])
-  
+  def apply(session: ClientSession = null): AnonSessionClientSession = {
+    val __obj = js.Dynamic.literal()
+    if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnonSessionClientSession]
   }
 }

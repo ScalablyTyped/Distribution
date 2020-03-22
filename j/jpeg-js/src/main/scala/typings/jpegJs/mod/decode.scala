@@ -1,7 +1,7 @@
 package typings.jpegJs.mod
 
 import typings.jpegJs.AnonColorTransform
-import typings.jpegJs.AnonColorTransformFalse
+import typings.jpegJs.AnonUseTArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation._
 object decode extends js.Object {
   def apply(jpegData: BufferLike): BufferRet = js.native
   def apply(jpegData: BufferLike, opts: AnonColorTransform): UintArrRet = js.native
-  def apply(jpegData: BufferLike, opts: AnonColorTransformFalse): BufferRet = js.native
+  def apply(jpegData: BufferLike, opts: AnonUseTArray): BufferRet = js.native
 }
 

@@ -1,7 +1,7 @@
 package typings.googleCloudCommon.utilMod
 
-import typings.googleCloudCommon.AnonAuthenticatedReqOpts
 import typings.googleCloudCommon.AnonContentType
+import typings.googleCloudCommon.AnonOnAuthenticated
 import typings.teenyRequest.mod.Options
 import typings.teenyRequest.mod.OptionsWithUri
 import scala.scalajs.js
@@ -22,13 +22,13 @@ trait MakeWritableStreamOptions extends js.Object {
     * Request object, in the format of a standard Node.js http.request() object.
     */
   var request: js.UndefOr[Options] = js.undefined
-  def makeAuthenticatedRequest(reqOpts: OptionsWithUri, fnobj: AnonAuthenticatedReqOpts): Unit
+  def makeAuthenticatedRequest(reqOpts: OptionsWithUri, fnobj: AnonOnAuthenticated): Unit
 }
 
 object MakeWritableStreamOptions {
   @scala.inline
   def apply(
-    makeAuthenticatedRequest: (OptionsWithUri, AnonAuthenticatedReqOpts) => Unit,
+    makeAuthenticatedRequest: (OptionsWithUri, AnonOnAuthenticated) => Unit,
     connection: js.Object = null,
     metadata: AnonContentType = null,
     request: Options = null

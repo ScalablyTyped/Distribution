@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/angular", "NavParams")
 @js.native
 class NavParams ()
-  extends typings.ionicAngular.distMod.NavParams {
+  extends typings.ionicAngular.navParamsMod.NavParams {
   def this(data: StringDictionary[js.Any]) = this()
 }
 

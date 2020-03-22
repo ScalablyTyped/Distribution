@@ -1,10 +1,9 @@
 package typings.ebml.mod
 
-import typings.ebml.ebmlStrings.end
+import typings.ebml.PickTagStackItemend
 import typings.ebml.mod.Encoder.TagStackItem
 import typings.node.Buffer
 import typings.node.streamMod.Transform
-import typings.std.Pick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,9 +19,10 @@ class Encoder_ () extends Transform {
     * @param tagName The name of the tag to start
     * @param info an information object with an `end` parameter
     */
-  def startTag(
+  @JSName("startTag")
+  def startTag_name(
     tagName: /* import warning: importer.ImportType#apply Failed type conversion: ebml.ebml.EBMLTagSchema['name'] */ js.Any,
-    info: Pick[TagStackItem, end]
+    info: PickTagStackItemend
   ): Unit = js.native
   @JSName("writeTag")
   def writeTag_name(

@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-navigation
 
-Typings are for version 4.1.1
+Typings are for version 4.2.2
 
 ## Library description:
 Routing and navigation for your React Native apps

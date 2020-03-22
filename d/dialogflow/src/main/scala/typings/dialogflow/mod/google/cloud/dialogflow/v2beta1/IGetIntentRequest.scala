@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 /** Properties of a GetIntentRequest. */
 trait IGetIntentRequest extends js.Object {
   /** GetIntentRequest intentView */
-  var intentView: js.UndefOr[IntentView | Null] = js.undefined
+  var intentView: js.UndefOr[IntentView | String | Null] = js.undefined
   /** GetIntentRequest languageCode */
   var languageCode: js.UndefOr[String | Null] = js.undefined
   /** GetIntentRequest name */
@@ -16,7 +16,7 @@ trait IGetIntentRequest extends js.Object {
 
 object IGetIntentRequest {
   @scala.inline
-  def apply(intentView: IntentView = null, languageCode: String = null, name: String = null): IGetIntentRequest = {
+  def apply(intentView: IntentView | String = null, languageCode: String = null, name: String = null): IGetIntentRequest = {
     val __obj = js.Dynamic.literal()
     if (intentView != null) __obj.updateDynamic("intentView")(intentView.asInstanceOf[js.Any])
     if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])

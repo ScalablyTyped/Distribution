@@ -1,13 +1,13 @@
 package typings.yandexMoneySdk.YandexMoneySDK.ExternalPayment
 
-import typings.yandexMoneySdk.AnonKey
+import typings.yandexMoneySdk.AnonDictkey
 import typings.yandexMoneySdk.AnonMoneysourcetoken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ProcessResult extends js.Object {
-  var acs_params: js.UndefOr[AnonKey] = js.undefined
+  var acs_params: js.UndefOr[AnonDictkey] = js.undefined
   var acs_uri: js.UndefOr[String] = js.undefined
   var error: js.UndefOr[String] = js.undefined
   var invoice_id: js.UndefOr[String] = js.undefined
@@ -20,7 +20,7 @@ object ProcessResult {
   @scala.inline
   def apply(
     status: String,
-    acs_params: AnonKey = null,
+    acs_params: AnonDictkey = null,
     acs_uri: String = null,
     error: String = null,
     invoice_id: String = null,

@@ -15,8 +15,8 @@ import typings.jupyterlabCodeeditor.jupyterlabCodeeditorStrings.readOnly
 import typings.jupyterlabCodeeditor.jupyterlabCodeeditorStrings.rulers
 import typings.jupyterlabCodeeditor.jupyterlabCodeeditorStrings.tabSize
 import typings.jupyterlabCodeeditor.jupyterlabCodeeditorStrings.wordWrapColumn
-import typings.phosphorDisposable.mod.IDisposable
-import typings.phosphorSignaling.mod.ISignal
+import typings.luminoDisposable.mod.IDisposable
+import typings.luminoSignaling.mod.ISignal
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

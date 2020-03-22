@@ -8,7 +8,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.highcharts.mod.SeriesOptions because var conflicts: zIndex. Inlined id, index, legendIndex, mapData, name, stack, treemap, `type`, xAxis, yAxis */ trait SeriesPackedbubbleOptions
+- typings.highcharts.mod.SeriesOptions because var conflicts: zIndex. Inlined id, index, legendIndex, mapData, name, stack, `type`, xAxis, yAxis */ trait SeriesPackedbubbleOptions
   extends PlotPackedbubbleOptions
      with SeriesOptionsType {
   /**
@@ -22,7 +22,7 @@ import scala.scalajs.js.annotation._
     * exceeds the series' turboThreshold, this option is not available. (see
     * online documentation for example)
     */
-  var data: js.UndefOr[SeriesPackedbubbleDataOptions | (js.Array[js.Object | js.Array[_]])] = js.undefined
+  var data: js.UndefOr[PointOptionsObject | (js.Array[js.Object | js.Array[_]])] = js.undefined
   /**
     * Not available
     */
@@ -63,7 +63,6 @@ import scala.scalajs.js.annotation._
     * Not available
     */
   var stack: js.UndefOr[Double | String] = js.undefined
-  var treemap: js.UndefOr[SeriesTreemapOptions] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) This property is only in
     * TypeScript non-optional and might be `undefined` in series objects from
@@ -90,10 +89,10 @@ object SeriesPackedbubbleOptions {
   @scala.inline
   def apply(
     `type`: String | packedbubble,
-    accessibility: js.Object | PlotPackedbubbleAccessibilityOptions = null,
+    accessibility: SeriesAccessibilityOptionsObject = null,
     allAreas: js.UndefOr[Boolean] = js.undefined,
     allowPointSelect: js.UndefOr[Boolean] = js.undefined,
-    animation: Boolean | AnimationOptionsObject | PlotPackedbubbleAnimationOptions = null,
+    animation: Boolean | AnimationOptionsObject = null,
     animationLimit: Int | Double = null,
     boostBlending: OptionsBoostBlendingValue = null,
     boostThreshold: Int | Double = null,
@@ -108,20 +107,21 @@ object SeriesPackedbubbleOptions {
     compare: String = null,
     compareBase: `0` | `100` = null,
     compareStart: js.UndefOr[Boolean] = js.undefined,
-    connectors: PlotPackedbubbleConnectorsOptions = null,
+    connectors: SeriesConnectorsOptionsObject = null,
     cropThreshold: Int | Double = null,
     cursor: String | CursorValue = null,
     dashStyle: DashStyleValue = null,
-    data: SeriesPackedbubbleDataOptions | (js.Array[js.Object | js.Array[_]]) = null,
-    dataGrouping: PlotPackedbubbleDataGroupingOptions = null,
+    data: PointOptionsObject | (js.Array[js.Object | js.Array[_]]) = null,
+    dataGrouping: DataGroupingOptionsObject = null,
     dataLabels: SeriesPackedBubbleDataLabelsOptionsObject | js.Array[SeriesPackedBubbleDataLabelsOptionsObject] = null,
     dataParser: js.UndefOr[scala.Nothing] = js.undefined,
+    dataSorting: DataSortingOptionsObject | PlotPackedbubbleDataSortingOptions = null,
     dataURL: js.UndefOr[scala.Nothing] = js.undefined,
     description: String = null,
     displayNegative: js.UndefOr[Boolean] = js.undefined,
     draggable: js.UndefOr[Boolean] = js.undefined,
     enableMouseTracking: js.UndefOr[Boolean] = js.undefined,
-    events: PlotPackedbubbleEventsOptions = null,
+    events: SeriesEventsOptionsObject = null,
     findNearestPointBy: OptionsFindNearestPointByValue = null,
     gapSize: Int | Double = null,
     gapUnit: OptionsGapUnitValue = null,
@@ -130,23 +130,23 @@ object SeriesPackedbubbleOptions {
     includeInDataExport: js.UndefOr[Boolean] = js.undefined,
     index: Int | Double = null,
     joinBy: String | js.Array[String] = null,
-    label: PlotPackedbubbleLabelOptions = null,
-    lastPrice: PlotPackedbubbleLastPriceOptions = null,
-    lastVisiblePrice: PlotPackedbubbleLastVisiblePriceOptions = null,
+    label: SeriesLabelOptionsObject = null,
+    lastPrice: SeriesLastPriceOptionsObject = null,
+    lastVisiblePrice: SeriesLastVisiblePriceOptionsObject = null,
     layoutAlgorithm: PlotPackedbubbleLayoutAlgorithmOptions = null,
     legendIndex: Int | Double = null,
     lineWidth: Int | Double = null,
     linecap: SeriesLinecapValue = null,
     linkedTo: String = null,
     mapData: js.Array[SeriesMapDataOptions] | js.Any = null,
-    marker: PlotPackedbubbleMarkerOptions = null,
+    marker: PointMarkerOptionsObject = null,
     maxSize: Double | String = null,
     minSize: Double | String = null,
     name: String = null,
     navigatorOptions: PlotSeriesOptions = null,
     negativeColor: ColorString | GradientColorObject | PatternObject = null,
     opacity: Int | Double = null,
-    point: PlotPackedbubblePointOptions = null,
+    point: PlotSeriesPointOptions = null,
     pointDescriptionFormatter: js.Function = null,
     pointInterval: Int | Double = null,
     pointIntervalUnit: OptionsPointIntervalUnitValue = null,
@@ -161,11 +161,10 @@ object SeriesPackedbubbleOptions {
     softThreshold: js.UndefOr[Boolean] = js.undefined,
     stack: Double | scala.Nothing | String = null,
     stacking: OptionsStackingValue = null,
-    states: PlotPackedbubbleStatesOptions = null,
+    states: SeriesStatesOptionsObject = null,
     stickyTracking: js.UndefOr[Boolean] = js.undefined,
     threshold: Int | Double = null,
-    tooltip: PlotPackedbubbleTooltipOptions = null,
-    treemap: SeriesTreemapOptions = null,
+    tooltip: SeriesTooltipOptionsObject = null,
     turboThreshold: Int | Double = null,
     useSimulation: js.UndefOr[Boolean] = js.undefined,
     visible: js.UndefOr[Boolean] = js.undefined,
@@ -174,7 +173,7 @@ object SeriesPackedbubbleOptions {
     zIndex: Int | Double = null,
     zThreshold: Int | Double = null,
     zoneAxis: String = null,
-    zones: js.Array[PlotPackedbubbleZonesOptions] = null
+    zones: js.Array[SeriesZonesOptionsObject] = null
   ): SeriesPackedbubbleOptions = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -204,6 +203,7 @@ object SeriesPackedbubbleOptions {
     if (dataGrouping != null) __obj.updateDynamic("dataGrouping")(dataGrouping.asInstanceOf[js.Any])
     if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
     if (!js.isUndefined(dataParser)) __obj.updateDynamic("dataParser")(dataParser.asInstanceOf[js.Any])
+    if (dataSorting != null) __obj.updateDynamic("dataSorting")(dataSorting.asInstanceOf[js.Any])
     if (!js.isUndefined(dataURL)) __obj.updateDynamic("dataURL")(dataURL.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (!js.isUndefined(displayNegative)) __obj.updateDynamic("displayNegative")(displayNegative.asInstanceOf[js.Any])
@@ -253,7 +253,6 @@ object SeriesPackedbubbleOptions {
     if (!js.isUndefined(stickyTracking)) __obj.updateDynamic("stickyTracking")(stickyTracking.asInstanceOf[js.Any])
     if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (treemap != null) __obj.updateDynamic("treemap")(treemap.asInstanceOf[js.Any])
     if (turboThreshold != null) __obj.updateDynamic("turboThreshold")(turboThreshold.asInstanceOf[js.Any])
     if (!js.isUndefined(useSimulation)) __obj.updateDynamic("useSimulation")(useSimulation.asInstanceOf[js.Any])
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])

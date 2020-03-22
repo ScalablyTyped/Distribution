@@ -1,13 +1,8 @@
 package typings.graphqlExtensions
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.apolloServerEnv.mod.Request
 import typings.apolloServerTypes.mod.GraphQLRequestContext
 import typings.graphql.astMod.DocumentNode
-import typings.graphqlExtensions.graphqlExtensionsStrings.headers
-import typings.graphqlExtensions.graphqlExtensionsStrings.method
-import typings.graphqlExtensions.graphqlExtensionsStrings.url
-import typings.std.Pick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +14,7 @@ trait AnonContext[TContext] extends js.Object {
   var persistedQueryHit: js.UndefOr[Boolean] = js.undefined
   var persistedQueryRegister: js.UndefOr[Boolean] = js.undefined
   var queryString: js.UndefOr[String] = js.undefined
-  var request: Pick[Request, url | method | headers]
+  var request: PickRequesturlmethodheade
   var requestContext: GraphQLRequestContext[TContext]
   var variables: js.UndefOr[StringDictionary[js.Any]] = js.undefined
 }
@@ -28,7 +23,7 @@ object AnonContext {
   @scala.inline
   def apply[TContext](
     context: TContext,
-    request: Pick[Request, url | method | headers],
+    request: PickRequesturlmethodheade,
     requestContext: GraphQLRequestContext[TContext],
     operationName: String = null,
     parsedQuery: DocumentNode = null,

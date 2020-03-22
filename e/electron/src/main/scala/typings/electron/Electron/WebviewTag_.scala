@@ -41,7 +41,7 @@ import typings.electron.electronStrings.change
 import typings.electron.electronStrings.clearSelection
 import typings.electron.electronStrings.click
 import typings.electron.electronStrings.close
-import typings.electron.electronStrings.contextmenu
+import typings.electron.electronStrings.contextmenu_
 import typings.electron.electronStrings.copy
 import typings.electron.electronStrings.crashed
 import typings.electron.electronStrings.cuechange
@@ -69,22 +69,21 @@ import typings.electron.electronStrings.gotpointercapture
 import typings.electron.electronStrings.input
 import typings.electron.electronStrings.invalid
 import typings.electron.electronStrings.keepSelection
-import typings.electron.electronStrings.keydown
+import typings.electron.electronStrings.keydown_
 import typings.electron.electronStrings.keypress
-import typings.electron.electronStrings.keyup
+import typings.electron.electronStrings.keyup_
 import typings.electron.electronStrings.load
 import typings.electron.electronStrings.loadeddata
 import typings.electron.electronStrings.loadedmetadata
-import typings.electron.electronStrings.loadend
 import typings.electron.electronStrings.loadstart
 import typings.electron.electronStrings.lostpointercapture
-import typings.electron.electronStrings.mousedown
-import typings.electron.electronStrings.mouseenter
-import typings.electron.electronStrings.mouseleave
-import typings.electron.electronStrings.mousemove
+import typings.electron.electronStrings.mousedown_
+import typings.electron.electronStrings.mouseenter_
+import typings.electron.electronStrings.mouseleave_
+import typings.electron.electronStrings.mousemove_
 import typings.electron.electronStrings.mouseout
 import typings.electron.electronStrings.mouseover
-import typings.electron.electronStrings.mouseup
+import typings.electron.electronStrings.mouseup_
 import typings.electron.electronStrings.paste
 import typings.electron.electronStrings.pause
 import typings.electron.electronStrings.play
@@ -124,11 +123,9 @@ import typings.electron.electronStrings.transitionstart
 import typings.electron.electronStrings.volumechange
 import typings.electron.electronStrings.waiting
 import typings.electron.electronStrings.wheel
-import typings.node.Buffer
 import typings.std.AnimationEvent
 import typings.std.ClipboardEvent
 import typings.std.DragEvent
-import typings.std.Error
 import typings.std.ErrorEvent
 import typings.std.EventTarget
 import typings.std.Event_
@@ -141,6 +138,7 @@ import typings.std.SecurityPolicyViolationEvent
 import typings.std.TouchEvent
 import typings.std.TransitionEvent
 import typings.std.UIEvent
+import typings.std.Uint8Array
 import typings.std.WheelEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -149,95 +147,109 @@ import scala.scalajs.js.annotation._
 @js.native
 trait WebviewTag_ extends HTMLElement {
   /**
-    * When this attribute is present the guest page will be allowed to open new
-    * windows. Popups are disabled by default.
+    * A `Boolean`. When this attribute is present the guest page will be allowed to
+    * open new windows. Popups are disabled by default.
     */
-  var allowpopups: js.UndefOr[String] = js.native
+  var allowpopups: Boolean = js.native
   /**
-    * A list of strings which specifies the blink features to be disabled separated by
-    * ,. The full list of supported feature strings can be found in the
-    * RuntimeEnabledFeatures.json5 file.
+    * A `String` which is a list of strings which specifies the blink features to be
+    * disabled separated by `,`. The full list of supported feature strings can be
+    * found in the RuntimeEnabledFeatures.json5 file.
     */
-  var disableblinkfeatures: js.UndefOr[String] = js.native
+  var disableblinkfeatures: String = js.native
   /**
-    * When this attribute is present the guest page will have web security disabled.
-    * Web security is enabled by default.
+    * A `Boolean`. When this attribute is present the guest page will have web
+    * security disabled. Web security is enabled by default.
     */
-  var disablewebsecurity: js.UndefOr[String] = js.native
+  var disablewebsecurity: Boolean = js.native
   /**
-    * A list of strings which specifies the blink features to be enabled separated by
-    * ,. The full list of supported feature strings can be found in the
-    * RuntimeEnabledFeatures.json5 file.
+    * A `String` which is a list of strings which specifies the blink features to be
+    * enabled separated by `,`. The full list of supported feature strings can be
+    * found in the RuntimeEnabledFeatures.json5 file.
     */
-  var enableblinkfeatures: js.UndefOr[String] = js.native
+  var enableblinkfeatures: String = js.native
   /**
-    * When this attribute is false the guest page in webview will not have access to
-    * the remote module. The remote module is available by default.
+    * A `Boolean`. When this attribute is `false` the guest page in `webview` will not
+    * have access to the `remote` module. The remote module is available by default.
     */
-  var enableremotemodule: js.UndefOr[String] = js.native
+  var enableremotemodule: Boolean = js.native
   /**
-    * Sets the referrer URL for the guest page.
+    * A `String` that sets the referrer URL for the guest page.
     */
-  var httpreferrer: js.UndefOr[String] = js.native
+  var httpreferrer: String = js.native
   /**
-    * When this attribute is present the guest page in webview will have node
-    * integration and can use node APIs like require and process to access low level
-    * system resources. Node integration is disabled by default in the guest page.
+    * A `Boolean`. When this attribute is present the guest page in `webview` will
+    * have node integration and can use node APIs like `require` and `process` to
+    * access low level system resources. Node integration is disabled by default in
+    * the guest page.
     */
-  var nodeintegration: js.UndefOr[String] = js.native
+  var nodeintegration: Boolean = js.native
   /**
-    * Experimental option for enabling NodeJS support in sub-frames such as iframes
-    * inside the webview. All your preloads will load for every iframe, you can use
-    * process.isMainFrame to determine if you are in the main frame or not. This
-    * option is disabled by default in the guest page.
+    * A `Boolean` for the experimental option for enabling NodeJS support in
+    * sub-frames such as iframes inside the `webview`. All your preloads will load for
+    * every iframe, you can use `process.isMainFrame` to determine if you are in the
+    * main frame or not. This option is disabled by default in the guest page.
     */
-  var nodeintegrationinsubframes: js.UndefOr[String] = js.native
+  var nodeintegrationinsubframes: Boolean = js.native
   /**
-    * Sets the session used by the page. If partition starts with persist:, the page
-    * will use a persistent session available to all pages in the app with the same
-    * partition. if there is no persist: prefix, the page will use an in-memory
-    * session. By assigning the same partition, multiple pages can share the same
-    * session. If the partition is unset then default session of the app will be used.
+    * A `String` that sets the session used by the page. If `partition` starts with
+    * `persist:`, the page will use a persistent session available to all pages in the
+    * app with the same `partition`. if there is no `persist:` prefix, the page will
+    * use an in-memory session. By assigning the same `partition`, multiple pages can
+    * share the same session. If the `partition` is unset then default session of the
+    * app will be used.
+    *
     * This value can only be modified before the first navigation, since the session
     * of an active renderer process cannot change. Subsequent attempts to modify the
     * value will fail with a DOM exception.
     */
-  var partition: js.UndefOr[String] = js.native
+  var partition: String = js.native
   /**
-    * When this attribute is present the guest page in webview will be able to use
-    * browser plugins. Plugins are disabled by default.
+    * A `Boolean`. When this attribute is present the guest page in `webview` will be
+    * able to use browser plugins. Plugins are disabled by default.
     */
-  var plugins: js.UndefOr[String] = js.native
+  var plugins: Boolean = js.native
   /**
-    * Specifies a script that will be loaded before other scripts run in the guest
-    * page. The protocol of script's URL must be either file: or asar:, because it
-    * will be loaded by require in guest page under the hood. When the guest page
-    * doesn't have node integration this script will still have access to all Node
-    * APIs, but global objects injected by Node will be deleted after this script has
-    * finished executing. Note: This option will be appear as preloadURL (not preload)
-    * in the webPreferences specified to the will-attach-webview event.
+    * A `String` that specifies a script that will be loaded before other scripts run
+    * in the guest page. The protocol of script's URL must be either `file:` or
+    * `asar:`, because it will be loaded by `require` in guest page under the hood.
+    *
+    * When the guest page doesn't have node integration this script will still have
+    * access to all Node APIs, but global objects injected by Node will be deleted
+    * after this script has finished executing.
+    *
+    * **Note:** This option will appear as `preloadURL` (not `preload`) in the
+    * `webPreferences` specified to the `will-attach-webview` event.
     */
-  var preload: js.UndefOr[String] = js.native
+  var preload: String = js.native
   /**
-    * Returns the visible URL. Writing to this attribute initiates top-level
-    * navigation. Assigning src its own value will reload the current page. The src
-    * attribute can also accept data URLs, such as data:text/plain,Hello, world!.
+    * A `String` representing the visible URL. Writing to this attribute initiates
+    * top-level navigation.
+    *
+    * Assigning `src` its own value will reload the current page.
+    *
+    * The `src` attribute can also accept data URLs, such as `data:text/plain,Hello,
+    * world!`.
     */
-  var src: js.UndefOr[String] = js.native
+  var src: String = js.native
   /**
-    * Sets the user agent for the guest page before the page is navigated to. Once the
-    * page is loaded, use the setUserAgent method to change the user agent.
+    * A `String` that sets the user agent for the guest page before the page is
+    * navigated to. Once the page is loaded, use the `setUserAgent` method to change
+    * the user agent.
     */
-  var useragent: js.UndefOr[String] = js.native
+  var useragent: String = js.native
   /**
-    * A list of strings which specifies the web preferences to be set on the webview,
-    * separated by ,. The full list of supported preference strings can be found in
-    * BrowserWindow. The string follows the same format as the features string in
-    * window.open. A name by itself is given a true boolean value. A preference can be
-    * set to another value by including an =, followed by the value. Special values
-    * yes and 1 are interpreted as true, while no and 0 are interpreted as false.
+    * A `String` which is a comma separated list of strings which specifies the web
+    * preferences to be set on the webview. The full list of supported preference
+    * strings can be found in BrowserWindow.
+    *
+    * The string follows the same format as the features string in `window.open`. A
+    * name by itself is given a `true` boolean value. A preference can be set to
+    * another value by including an `=`, followed by the value. Special values `yes`
+    * and `1` are interpreted as `true`, while `no` and `0` are interpreted as
+    * `false`.
     */
-  var webpreferences: js.UndefOr[String] = js.native
+  var webpreferences: String = js.native
   @JSName("addEventListener")
   def addEventListener_abort(`type`: abort, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ UIEvent, _]): Unit = js.native
   @JSName("addEventListener")
@@ -347,8 +359,10 @@ trait WebviewTag_ extends HTMLElement {
     useCapture: Boolean
   ): Unit = js.native
   /**
-    * Fired when the guest page attempts to close itself. The following example code
-    * navigates the webview to about:blank when the guest attempts to close itself.
+    * Fired when the guest page attempts to close itself.
+    *
+    * The following example code navigates the `webview` to `about:blank` when the
+    * guest attempts to close itself.
     */
   @JSName("addEventListener")
   def addEventListener_close(event: close, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
@@ -363,9 +377,10 @@ trait WebviewTag_ extends HTMLElement {
     useCapture: Boolean
   ): Unit = js.native
   /**
-    * Fired when the guest window logs a console message. The following example code
-    * forwards all log messages to the embedder's console without regard for log level
-    * or other properties.
+    * Fired when the guest window logs a console message.
+    *
+    * The following example code forwards all log messages to the embedder's console
+    * without regard for log level or other properties.
     */
   @JSName("addEventListener")
   def addEventListener_consolemessage(event: `console-message`, listener: js.Function1[/* event */ ConsoleMessageEvent, Unit]): this.type = js.native
@@ -376,10 +391,10 @@ trait WebviewTag_ extends HTMLElement {
     useCapture: Boolean
   ): this.type = js.native
   @JSName("addEventListener")
-  def addEventListener_contextmenu(`type`: contextmenu, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, _]): Unit = js.native
+  def addEventListener_contextmenu(`type`: contextmenu_, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_contextmenu(
-    `type`: contextmenu,
+    `type`: contextmenu_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, _],
     useCapture: Boolean
   ): Unit = js.native
@@ -466,8 +481,8 @@ trait WebviewTag_ extends HTMLElement {
     useCapture: Boolean
   ): this.type = js.native
   /**
-    * This event is like did-finish-load, but fired when the load failed or was
-    * cancelled, e.g. window.stop() is invoked.
+    * This event is like `did-finish-load`, but fired when the load failed or was
+    * cancelled, e.g. `window.stop()` is invoked.
     */
   @JSName("addEventListener")
   def addEventListener_didfailload(event: `did-fail-load`, listener: js.Function1[/* event */ DidFailLoadEvent, Unit]): this.type = js.native
@@ -479,7 +494,7 @@ trait WebviewTag_ extends HTMLElement {
   ): this.type = js.native
   /**
     * Fired when the navigation is done, i.e. the spinner of the tab will stop
-    * spinning, and the onload event is dispatched.
+    * spinning, and the `onload` event is dispatched.
     */
   @JSName("addEventListener")
   def addEventListener_didfinishload(event: `did-finish-load`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
@@ -497,9 +512,11 @@ trait WebviewTag_ extends HTMLElement {
     useCapture: Boolean
   ): this.type = js.native
   /**
-    * Emitted when a navigation is done. This event is not emitted for in-page
-    * navigations, such as clicking anchor links or updating the window.location.hash.
-    * Use did-navigate-in-page event for this purpose.
+    * Emitted when a navigation is done.
+    *
+    * This event is not emitted for in-page navigations, such as clicking anchor links
+    * or updating the `window.location.hash`. Use `did-navigate-in-page` event for
+    * this purpose.
     */
   @JSName("addEventListener")
   def addEventListener_didnavigate(event: `did-navigate`, listener: js.Function1[/* event */ DidNavigateEvent, Unit]): this.type = js.native
@@ -510,10 +527,11 @@ trait WebviewTag_ extends HTMLElement {
     useCapture: Boolean
   ): this.type = js.native
   /**
-    * Emitted when an in-page navigation happened. When in-page navigation happens,
-    * the page URL changes but does not cause navigation outside of the page. Examples
-    * of this occurring are when anchor links are clicked or when the DOM hashchange
-    * event is triggered.
+    * Emitted when an in-page navigation happened.
+    *
+    * When in-page navigation happens, the page URL changes but does not cause
+    * navigation outside of the page. Examples of this occurring are when anchor links
+    * are clicked or when the DOM `hashchange` event is triggered.
     */
   @JSName("addEventListener")
   def addEventListener_didnavigateinpage(event: `did-navigate-in-page`, listener: js.Function1[/* event */ DidNavigateInPageEvent, Unit]): this.type = js.native
@@ -676,7 +694,7 @@ trait WebviewTag_ extends HTMLElement {
     useCapture: Boolean
   ): Unit = js.native
   /**
-    * Fired when a result is available for webview.findInPage request.
+    * Fired when a result is available for `webview.findInPage` request.
     */
   @JSName("addEventListener")
   def addEventListener_foundinpage(event: `found-in-page`, listener: js.Function1[/* event */ FoundInPageEvent, Unit]): this.type = js.native
@@ -731,8 +749,9 @@ trait WebviewTag_ extends HTMLElement {
   ): Unit = js.native
   /**
     * Fired when the guest page has sent an asynchronous message to embedder page.
-    * With sendToHost method and ipc-message event you can communicate between guest
-    * page and embedder page:
+    *
+    * With `sendToHost` method and `ipc-message` event you can communicate between
+    * guest page and embedder page:
     */
   @JSName("addEventListener")
   def addEventListener_ipcmessage(event: `ipc-message`, listener: js.Function1[/* event */ IpcMessageEvent, Unit]): this.type = js.native
@@ -744,12 +763,12 @@ trait WebviewTag_ extends HTMLElement {
   ): this.type = js.native
   @JSName("addEventListener")
   def addEventListener_keydown(
-    `type`: keydown,
+    `type`: keydown_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ typings.std.KeyboardEvent, _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_keydown(
-    `type`: keydown,
+    `type`: keydown_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ typings.std.KeyboardEvent, _],
     useCapture: Boolean
   ): Unit = js.native
@@ -766,12 +785,12 @@ trait WebviewTag_ extends HTMLElement {
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_keyup(
-    `type`: keyup,
+    `type`: keyup_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ typings.std.KeyboardEvent, _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_keyup(
-    `type`: keyup,
+    `type`: keyup_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ typings.std.KeyboardEvent, _],
     useCapture: Boolean
   ): Unit = js.native
@@ -825,17 +844,6 @@ trait WebviewTag_ extends HTMLElement {
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_loadend(
-    `type`: loadend,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent[EventTarget], _]
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_loadend(
-    `type`: loadend,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent[EventTarget], _],
-    useCapture: Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
   def addEventListener_loadstart(`type`: loadstart, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event_, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_loadstart(
@@ -873,34 +881,34 @@ trait WebviewTag_ extends HTMLElement {
     useCapture: Boolean
   ): this.type = js.native
   @JSName("addEventListener")
-  def addEventListener_mousedown(`type`: mousedown, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, _]): Unit = js.native
+  def addEventListener_mousedown(`type`: mousedown_, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_mousedown(
-    `type`: mousedown,
+    `type`: mousedown_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_mouseenter(`type`: mouseenter, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, _]): Unit = js.native
+  def addEventListener_mouseenter(`type`: mouseenter_, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_mouseenter(
-    `type`: mouseenter,
+    `type`: mouseenter_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_mouseleave(`type`: mouseleave, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, _]): Unit = js.native
+  def addEventListener_mouseleave(`type`: mouseleave_, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_mouseleave(
-    `type`: mouseleave,
+    `type`: mouseleave_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_mousemove(`type`: mousemove, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, _]): Unit = js.native
+  def addEventListener_mousemove(`type`: mousemove_, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_mousemove(
-    `type`: mousemove,
+    `type`: mousemove_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, _],
     useCapture: Boolean
   ): Unit = js.native
@@ -921,16 +929,17 @@ trait WebviewTag_ extends HTMLElement {
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_mouseup(`type`: mouseup, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, _]): Unit = js.native
+  def addEventListener_mouseup(`type`: mouseup_, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_mouseup(
-    `type`: mouseup,
+    `type`: mouseup_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, _],
     useCapture: Boolean
   ): Unit = js.native
   /**
-    * Fired when the guest page attempts to open a new browser window. The following
-    * example code opens the new url in system's default browser.
+    * Fired when the guest page attempts to open a new browser window.
+    * 
+  The following example code opens the new url in system's default browser.
     */
   @JSName("addEventListener")
   def addEventListener_newwindow(event: `new-window`, listener: js.Function1[/* event */ NewWindowEvent, Unit]): this.type = js.native
@@ -948,8 +957,8 @@ trait WebviewTag_ extends HTMLElement {
     useCapture: Boolean
   ): this.type = js.native
   /**
-    * Fired when page title is set during navigation. explicitSet is false when title
-    * is synthesized from file url.
+    * Fired when page title is set during navigation. `explicitSet` is false when
+    * title is synthesized from file url.
     */
   @JSName("addEventListener")
   def addEventListener_pagetitleupdated(event: `page-title-updated`, listener: js.Function1[/* event */ PageTitleUpdatedEvent, Unit]): this.type = js.native
@@ -1316,12 +1325,15 @@ trait WebviewTag_ extends HTMLElement {
   ): Unit = js.native
   /**
     * Emitted when a user or the page wants to start navigation. It can happen when
-    * the window.location object is changed or a user clicks a link in the page. This
-    * event will not emit when the navigation is started programmatically with APIs
-    * like <webview>.loadURL and <webview>.back. It is also not emitted during in-page
-    * navigation, such as clicking anchor links or updating the window.location.hash.
-    * Use did-navigate-in-page event for this purpose. Calling event.preventDefault()
-    * does NOT have any effect.
+    * the `window.location` object is changed or a user clicks a link in the page.
+    *
+    * This event will not emit when the navigation is started programmatically with
+    * APIs like `<webview>.loadURL` and `<webview>.back`.
+    *
+    * It is also not emitted during in-page navigation, such as clicking anchor links
+    * or updating the `window.location.hash`. Use `did-navigate-in-page` event for
+    * this purpose.
+  Calling `event.preventDefault()` does __NOT__ have any effect.
     */
   @JSName("addEventListener")
   def addEventListener_willnavigate(event: `will-navigate`, listener: js.Function1[/* event */ WillNavigateEvent, Unit]): this.type = js.native
@@ -1331,29 +1343,26 @@ trait WebviewTag_ extends HTMLElement {
     listener: js.Function1[/* event */ WillNavigateEvent, Unit],
     useCapture: Boolean
   ): this.type = js.native
+  /**
+    * Whether the guest page can go back.
+    */
   def canGoBack(): Boolean = js.native
+  /**
+    * Whether the guest page can go forward.
+    */
   def canGoForward(): Boolean = js.native
+  /**
+    * Whether the guest page can go to `offset`.
+    */
   def canGoToOffset(offset: Double): Boolean = js.native
   /**
-    * Captures a snapshot of the page within rect. Omitting rect will capture the
+    * Resolves with a NativeImage
+    *
+    * Captures a snapshot of the page within `rect`. Omitting `rect` will capture the
     * whole visible page.
     */
   def capturePage(): js.Promise[NativeImage_] = js.native
-  /**
-    * Captures a snapshot of the page within rect. Upon completion callback will be
-    * called with callback(image). The image is an instance of NativeImage that stores
-    * data of the snapshot. Omitting rect will capture the whole visible page.
-    * Deprecated Soon
-    */
-  def capturePage(callback: js.Function1[/* image */ NativeImage_, Unit]): Unit = js.native
   def capturePage(rect: Rectangle): js.Promise[NativeImage_] = js.native
-  /**
-    * Captures a snapshot of the page within rect. Upon completion callback will be
-    * called with callback(image). The image is an instance of NativeImage that stores
-    * data of the snapshot. Omitting rect will capture the whole visible page.
-    * Deprecated Soon
-    */
-  def capturePage(rect: Rectangle, callback: js.Function1[/* image */ NativeImage_, Unit]): Unit = js.native
   /**
     * Clears the navigation history.
     */
@@ -1363,45 +1372,71 @@ trait WebviewTag_ extends HTMLElement {
     */
   def closeDevTools(): Unit = js.native
   /**
-    * Executes editing command copy in page.
+    * Executes editing command `copy` in page.
     */
   def copy(): Unit = js.native
   /**
-    * Executes editing command cut in page.
+    * Executes editing command `cut` in page.
     */
   def cut(): Unit = js.native
   /**
-    * Executes editing command delete in page.
+    * Executes editing command `delete` in page.
     */
   def delete(): Unit = js.native
   /**
-    * Initiates a download of the resource at url without navigating.
+    * Initiates a download of the resource at `url` without navigating.
     */
   def downloadURL(url: String): Unit = js.native
   /**
-    * Evaluates code in page. If userGesture is set, it will create the user gesture
-    * context in the page. HTML APIs like requestFullScreen, which require user
-    * action, can take advantage of this option for automation. Deprecated Soon
+    * A promise that resolves with the result of the executed code or is rejected if
+    * the result of the code is a rejected promise.
+    *
+    * Evaluates `code` in page. If `userGesture` is set, it will create the user
+    * gesture context in the page. HTML APIs like `requestFullScreen`, which require
+    * user action, can take advantage of this option for automation.
     */
   def executeJavaScript(code: String): js.Promise[_] = js.native
   def executeJavaScript(code: String, userGesture: Boolean): js.Promise[_] = js.native
-  def executeJavaScript(code: String, userGesture: Boolean, callback: js.Function1[/* result */ js.Any, Unit]): js.Promise[_] = js.native
   /**
-    * Starts a request to find all matches for the text in the web page. The result of
-    * the request can be obtained by subscribing to found-in-page event.
+    * The request id used for the request.
+    *
+    * Starts a request to find all matches for the `text` in the web page. The result
+    * of the request can be obtained by subscribing to `found-in-page` event.
     */
   def findInPage(text: String): Double = js.native
   def findInPage(text: String, options: FindInPageOptions): Double = js.native
+  /**
+    * The title of guest page.
+    */
   def getTitle(): String = js.native
+  /**
+    * The URL of guest page.
+    */
   def getURL(): String = js.native
+  /**
+    * The user agent for guest page.
+    */
   def getUserAgent(): String = js.native
   /**
-    * It depends on the remote module, it is therefore not available when this module
-    * is disabled.
+    * The web contents associated with this `webview`.
+    *
+    * It depends on the `remote` module, it is therefore not available when this
+    * module is disabled.
+    *
+    * @deprecated
     */
   def getWebContents(): WebContents_ = js.native
+  /**
+    * The WebContents ID of this `webview`.
+    */
   def getWebContentsId(): Double = js.native
+  /**
+    * the current zoom factor.
+    */
   def getZoomFactor(): Double = js.native
+  /**
+    * the current zoom level.
+    */
   def getZoomLevel(): Double = js.native
   /**
     * Makes the guest page go back.
@@ -1420,15 +1455,19 @@ trait WebviewTag_ extends HTMLElement {
     */
   def goToOffset(offset: Double): Unit = js.native
   /**
-    * Injects CSS into the guest page.
+    * A promise that resolves with a key for the inserted CSS that can later be used
+    * to remove the CSS via `<webview>.removeInsertedCSS(key)`.
+    *
+    * Injects CSS into the current web page and returns a unique key for the inserted
+    * stylesheet.
     */
-  def insertCSS(css: String): Unit = js.native
+  def insertCSS(css: String): js.Promise[String] = js.native
   /**
-    * Inserts text to the focused element.
+    * Inserts `text` to the focused element.
     */
-  def insertText(text: String): Unit = js.native
+  def insertText(text: String): js.Promise[Unit] = js.native
   /**
-    * Starts inspecting element at position (x, y) of guest page.
+    * Starts inspecting element at position (`x`, `y`) of guest page.
     */
   def inspectElement(x: Double, y: Double): Unit = js.native
   /**
@@ -1439,17 +1478,46 @@ trait WebviewTag_ extends HTMLElement {
     * Opens the DevTools for the shared worker context present in the guest page.
     */
   def inspectSharedWorker(): Unit = js.native
+  /**
+    * Whether guest page has been muted.
+    */
   def isAudioMuted(): Boolean = js.native
+  /**
+    * Whether the renderer process has crashed.
+    */
   def isCrashed(): Boolean = js.native
+  /**
+    * Whether audio is currently playing.
+    */
   def isCurrentlyAudible(): Boolean = js.native
+  /**
+    * Whether DevTools window of guest page is focused.
+    */
   def isDevToolsFocused(): Boolean = js.native
+  /**
+    * Whether guest page has a DevTools window attached.
+    */
   def isDevToolsOpened(): Boolean = js.native
+  /**
+    * Whether guest page is still loading resources.
+    */
   def isLoading(): Boolean = js.native
+  /**
+    * Whether the main frame (and not just iframes or frames within it) is still
+    * loading.
+    */
   def isLoadingMainFrame(): Boolean = js.native
+  /**
+    * Whether the guest page is waiting for a first-response for the main resource of
+    * the page.
+    */
   def isWaitingForResponse(): Boolean = js.native
   /**
-    * Loads the url in the webview, the url must contain the protocol prefix, e.g. the
-    * http:// or file://.
+    * The promise will resolve when the page has finished loading (see
+    * `did-finish-load`), and rejects if the page fails to load (see `did-fail-load`).
+    *
+    * Loads the `url` in the webview, the `url` must contain the protocol prefix, e.g.
+    * the `http://` or `file://`.
     */
   def loadURL(url: String): js.Promise[Unit] = js.native
   def loadURL(url: String, options: LoadURLOptions): js.Promise[Unit] = js.native
@@ -1458,29 +1526,26 @@ trait WebviewTag_ extends HTMLElement {
     */
   def openDevTools(): Unit = js.native
   /**
-    * Executes editing command paste in page.
+    * Executes editing command `paste` in page.
     */
   def paste(): Unit = js.native
   /**
-    * Executes editing command pasteAndMatchStyle in page.
+    * Executes editing command `pasteAndMatchStyle` in page.
     */
   def pasteAndMatchStyle(): Unit = js.native
   /**
-    * Prints webview's web page. Same as webContents.print([options]).
+    * Prints `webview`'s web page. Same as `webContents.print([options])`.
     */
-  def print(): Unit = js.native
-  def print(options: PrintOptions): Unit = js.native
+  def print(): js.Promise[Unit] = js.native
+  def print(options: WebviewTagPrintOptions): js.Promise[Unit] = js.native
   /**
-    * Prints webview's web page as PDF, Same as webContents.printToPDF(options).
+    * Resolves with the generated PDF data.
+    * 
+  Prints `webview`'s web page as PDF, Same as `webContents.printToPDF(options)`.
     */
-  def printToPDF(options: PrintToPDFOptions): js.Promise[Buffer] = js.native
+  def printToPDF(options: PrintToPDFOptions): js.Promise[Uint8Array] = js.native
   /**
-    * Prints webview's web page as PDF, Same as webContents.printToPDF(options,
-    * callback). Deprecated Soon
-    */
-  def printToPDF(options: PrintToPDFOptions, callback: js.Function2[/* error */ Error, /* data */ Buffer, Unit]): Unit = js.native
-  /**
-    * Executes editing command redo in page.
+    * Executes editing command `redo` in page.
     */
   def redo(): Unit = js.native
   /**
@@ -1612,10 +1677,10 @@ trait WebviewTag_ extends HTMLElement {
   @JSName("removeEventListener")
   def removeEventListener_consolemessage(event: `console-message`, listener: js.Function1[/* event */ ConsoleMessageEvent, Unit]): this.type = js.native
   @JSName("removeEventListener")
-  def removeEventListener_contextmenu(`type`: contextmenu, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, _]): Unit = js.native
+  def removeEventListener_contextmenu(`type`: contextmenu_, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, _]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_contextmenu(
-    `type`: contextmenu,
+    `type`: contextmenu_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, _],
     useCapture: Boolean
   ): Unit = js.native
@@ -1853,12 +1918,12 @@ trait WebviewTag_ extends HTMLElement {
   def removeEventListener_ipcmessage(event: `ipc-message`, listener: js.Function1[/* event */ IpcMessageEvent, Unit]): this.type = js.native
   @JSName("removeEventListener")
   def removeEventListener_keydown(
-    `type`: keydown,
+    `type`: keydown_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ typings.std.KeyboardEvent, _]
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_keydown(
-    `type`: keydown,
+    `type`: keydown_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ typings.std.KeyboardEvent, _],
     useCapture: Boolean
   ): Unit = js.native
@@ -1875,12 +1940,12 @@ trait WebviewTag_ extends HTMLElement {
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_keyup(
-    `type`: keyup,
+    `type`: keyup_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ typings.std.KeyboardEvent, _]
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_keyup(
-    `type`: keyup,
+    `type`: keyup_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ typings.std.KeyboardEvent, _],
     useCapture: Boolean
   ): Unit = js.native
@@ -1913,17 +1978,6 @@ trait WebviewTag_ extends HTMLElement {
     useCapture: Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_loadend(
-    `type`: loadend,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent[EventTarget], _]
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_loadend(
-    `type`: loadend,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent[EventTarget], _],
-    useCapture: Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
   def removeEventListener_loadstart(`type`: loadstart, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event_, _]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_loadstart(
@@ -1947,34 +2001,34 @@ trait WebviewTag_ extends HTMLElement {
   @JSName("removeEventListener")
   def removeEventListener_mediastartedplaying(event: `media-started-playing`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
   @JSName("removeEventListener")
-  def removeEventListener_mousedown(`type`: mousedown, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, _]): Unit = js.native
+  def removeEventListener_mousedown(`type`: mousedown_, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, _]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_mousedown(
-    `type`: mousedown,
+    `type`: mousedown_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_mouseenter(`type`: mouseenter, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, _]): Unit = js.native
+  def removeEventListener_mouseenter(`type`: mouseenter_, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, _]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_mouseenter(
-    `type`: mouseenter,
+    `type`: mouseenter_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_mouseleave(`type`: mouseleave, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, _]): Unit = js.native
+  def removeEventListener_mouseleave(`type`: mouseleave_, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, _]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_mouseleave(
-    `type`: mouseleave,
+    `type`: mouseleave_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_mousemove(`type`: mousemove, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, _]): Unit = js.native
+  def removeEventListener_mousemove(`type`: mousemove_, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, _]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_mousemove(
-    `type`: mousemove,
+    `type`: mousemove_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, _],
     useCapture: Boolean
   ): Unit = js.native
@@ -1995,10 +2049,10 @@ trait WebviewTag_ extends HTMLElement {
     useCapture: Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_mouseup(`type`: mouseup, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, _]): Unit = js.native
+  def removeEventListener_mouseup(`type`: mouseup_, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, _]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_mouseup(
-    `type`: mouseup,
+    `type`: mouseup_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, _],
     useCapture: Boolean
   ): Unit = js.native
@@ -2348,37 +2402,52 @@ trait WebviewTag_ extends HTMLElement {
   @JSName("removeEventListener")
   def removeEventListener_willnavigate(event: `will-navigate`, listener: js.Function1[/* event */ WillNavigateEvent, Unit]): this.type = js.native
   /**
-    * Executes editing command replace in page.
+    * Resolves if the removal was successful.
+    *
+    * Removes the inserted CSS from the current web page. The stylesheet is identified
+    * by its key, which is returned from `<webview>.insertCSS(css)`.
+    */
+  def removeInsertedCSS(key: String): js.Promise[Unit] = js.native
+  /**
+    * Executes editing command `replace` in page.
     */
   def replace(text: String): Unit = js.native
   /**
-    * Executes editing command replaceMisspelling in page.
+    * Executes editing command `replaceMisspelling` in page.
     */
   def replaceMisspelling(text: String): Unit = js.native
   /**
-    * Executes editing command selectAll in page.
+    * Executes editing command `selectAll` in page.
     */
   def selectAll(): Unit = js.native
   /**
-    * Send an asynchronous message to renderer process via channel, you can also send
-    * arbitrary arguments. The renderer process can handle the message by listening to
-    * the channel event with the ipcRenderer module. See webContents.send for
-    * examples.
+    * Send an asynchronous message to renderer process via `channel`, you can also
+    * send arbitrary arguments. The renderer process can handle the message by
+    * listening to the `channel` event with the `ipcRenderer` module.
+    * 
+  See webContents.send for examples.
     */
-  def send(channel: String, args: js.Any*): Unit = js.native
+  def send(channel: String, args: js.Any*): js.Promise[Unit] = js.native
+  def sendInputEvent(event: KeyboardInputEvent): js.Promise[Unit] = js.native
   /**
-    * Sends an input event to the page. See webContents.sendInputEvent for detailed
-    * description of event object.
+    * Sends an input `event` to the page.
+    * 
+  See webContents.sendInputEvent for detailed description of `event` object.
     */
-  def sendInputEvent(event: js.Any): Unit = js.native
+  def sendInputEvent(event: MouseInputEvent): js.Promise[Unit] = js.native
+  def sendInputEvent(event: MouseWheelInputEvent): js.Promise[Unit] = js.native
   /**
     * Set guest page muted.
     */
   def setAudioMuted(muted: Boolean): Unit = js.native
   /**
     * Sets the maximum and minimum layout-based (i.e. non-visual) zoom level.
+    * 
+  **Deprecated:** This API is no longer supported by Chromium.
+    *
+    * @deprecated
     */
-  def setLayoutZoomLevelLimits(minimumLevel: Double, maximumLevel: Double): Unit = js.native
+  def setLayoutZoomLevelLimits(minimumLevel: Double, maximumLevel: Double): js.Promise[Unit] = js.native
   /**
     * Overrides the user agent for the guest page.
     */
@@ -2386,7 +2455,7 @@ trait WebviewTag_ extends HTMLElement {
   /**
     * Sets the maximum and minimum pinch-to-zoom level.
     */
-  def setVisualZoomLevelLimits(minimumLevel: Double, maximumLevel: Double): Unit = js.native
+  def setVisualZoomLevelLimits(minimumLevel: Double, maximumLevel: Double): js.Promise[Unit] = js.native
   /**
     * Changes the zoom factor to the specified factor. Zoom factor is zoom percent
     * divided by 100, so 300% = 3.0.
@@ -2396,11 +2465,13 @@ trait WebviewTag_ extends HTMLElement {
     * Changes the zoom level to the specified level. The original size is 0 and each
     * increment above or below represents zooming 20% larger or smaller to default
     * limits of 300% and 50% of original size, respectively. The formula for this is
-    * scale := 1.2 ^ level.
+    * `scale := 1.2 ^ level`.
     */
   def setZoomLevel(level: Double): Unit = js.native
   /**
     * Shows pop-up dictionary that searches the selected word on the page.
+    *
+    * @platform darwin
     */
   def showDefinitionForSelection(): Unit = js.native
   /**
@@ -2410,18 +2481,18 @@ trait WebviewTag_ extends HTMLElement {
   @JSName("stopFindInPage")
   def stopFindInPage_activateSelection(action: activateSelection): Unit = js.native
   /**
-    * Stops any findInPage request for the webview with the provided action.
+    * Stops any `findInPage` request for the `webview` with the provided `action`.
     */
   @JSName("stopFindInPage")
   def stopFindInPage_clearSelection(action: clearSelection): Unit = js.native
   @JSName("stopFindInPage")
   def stopFindInPage_keepSelection(action: keepSelection): Unit = js.native
   /**
-    * Executes editing command undo in page.
+    * Executes editing command `undo` in page.
     */
   def undo(): Unit = js.native
   /**
-    * Executes editing command unselect in page.
+    * Executes editing command `unselect` in page.
     */
   def unselect(): Unit = js.native
 }

@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import typings.debug.mod.Debugger
 import typings.debug.mod.IDebug
-import typings.pouchdbCore.AnonName
+import typings.pouchdbCore.AnonInstantiable
 import typings.pouchdbCore.EventEmitter
 import typings.pouchdbCore.Fetch
 import typings.pouchdbCore.PouchDB.Configuration.DatabaseConfiguration
@@ -34,7 +34,7 @@ trait Static
     * The returned object is a constructor function that works the same as PouchDB,
     * except that whenever you invoke it (e.g. with new), the given options will be passed in by default.
     */
-  def defaults(options: DatabaseConfiguration): AnonName = js.native
+  def defaults(options: DatabaseConfiguration): AnonInstantiable = js.native
   def fetch(url: String): js.Promise[Response] = js.native
   def fetch(url: String, opts: RequestInit): js.Promise[Response] = js.native
   def fetch(url: Request): js.Promise[Response] = js.native

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("uniqid", JSImport.Namespace)
 @js.native
 object mod
-  extends TopLevel[AnonPrefix with (js.Function1[/* prefix */ js.UndefOr[String], String])]
+  extends TopLevel[AnonProcess with (js.Function1[/* prefix */ js.UndefOr[String], String])]
 

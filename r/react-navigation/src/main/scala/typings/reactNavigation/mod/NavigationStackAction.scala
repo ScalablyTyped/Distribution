@@ -30,24 +30,6 @@ trait NavigationStackAction extends _NavigationAction
 
 object NavigationStackAction {
   @scala.inline
-  def NavigationCompleteTransitionAction(key: String, `type`: NavigationSlashCOMPLETE_TRANSITION): NavigationStackAction = {
-    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[NavigationStackAction]
-  }
-  @scala.inline
-  def NavigationPopToTopAction(
-    `type`: NavigationSlashPOP_TO_TOP,
-    immediate: js.UndefOr[Boolean] = js.undefined,
-    key: String = null
-  ): NavigationStackAction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(immediate)) __obj.updateDynamic("immediate")(immediate.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    __obj.asInstanceOf[NavigationStackAction]
-  }
-  @scala.inline
   def NavigationPushAction(
     routeName: String,
     `type`: NavigationSlashPUSH,
@@ -78,11 +60,17 @@ object NavigationStackAction {
     __obj.asInstanceOf[NavigationStackAction]
   }
   @scala.inline
-  def NavigationInitAction(`type`: NavigationSlashINIT, key: String = null, params: NavigationParams = null): NavigationStackAction = {
+  def NavigationCompleteTransitionAction(key: String, `type`: NavigationSlashCOMPLETE_TRANSITION): NavigationStackAction = {
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NavigationStackAction]
+  }
+  @scala.inline
+  def NavigationBackAction(`type`: NavigationSlashBACK, immediate: js.UndefOr[Boolean] = js.undefined, key: String = null): NavigationStackAction = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(immediate)) __obj.updateDynamic("immediate")(immediate.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationStackAction]
   }
   @scala.inline
@@ -106,6 +94,26 @@ object NavigationStackAction {
     __obj.asInstanceOf[NavigationStackAction]
   }
   @scala.inline
+  def NavigationInitAction(`type`: NavigationSlashINIT, key: String = null, params: NavigationParams = null): NavigationStackAction = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NavigationStackAction]
+  }
+  @scala.inline
+  def NavigationPopToTopAction(
+    `type`: NavigationSlashPOP_TO_TOP,
+    immediate: js.UndefOr[Boolean] = js.undefined,
+    key: String = null
+  ): NavigationStackAction = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(immediate)) __obj.updateDynamic("immediate")(immediate.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NavigationStackAction]
+  }
+  @scala.inline
   def NavigationResetAction(
     actions: js.Array[NavigationNavigateAction],
     index: Double,
@@ -114,14 +122,6 @@ object NavigationStackAction {
   ): NavigationStackAction = {
     val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    __obj.asInstanceOf[NavigationStackAction]
-  }
-  @scala.inline
-  def NavigationBackAction(`type`: NavigationSlashBACK, immediate: js.UndefOr[Boolean] = js.undefined, key: String = null): NavigationStackAction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(immediate)) __obj.updateDynamic("immediate")(immediate.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationStackAction]
   }

@@ -9,6 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class LiteralMap_ protected ()
   extends typings.angularCompiler.publicApiMod.LiteralMap_ {
-  def this(span: typings.angularCompiler.astMod.ParseSpan, keys: js.Array[LiteralMapKey], values: js.Array[_]) = this()
+  def this(
+    span: typings.angularCompiler.astMod.ParseSpan,
+    sourceSpan: typings.angularCompiler.astMod.AbsoluteSourceSpan,
+    keys: js.Array[LiteralMapKey],
+    values: js.Array[_]
+  ) = this()
 }
 

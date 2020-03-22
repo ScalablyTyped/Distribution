@@ -25,7 +25,7 @@ object mod extends js.Object {
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type T is not an array type */ args: T
   ): /* import warning: importer.ImportType#apply Failed type conversion: T[number] */ js.Any = js.native
   def validate(config: Record[String, _], options: ValidationOptions): AnonHasDeprecationWarnings = js.native
-  def validateCLIOptions(argv: Argv, options: AnonDeprecationEntries): Boolean = js.native
-  def validateCLIOptions(argv: Argv, options: AnonDeprecationEntries, rawArgv: js.Array[String]): Boolean = js.native
+  def validateCLIOptions(argv: Argv, options: AnonDicts): Boolean = js.native
+  def validateCLIOptions(argv: Argv, options: AnonDicts, rawArgv: js.Array[String]): Boolean = js.native
 }
 

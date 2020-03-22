@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact.calendarMonthMod
 
-import typings.officeUiFabricReact.AnonKeyNavigatedMonth
+import typings.officeUiFabricReact.AnonDictkey
 import typings.officeUiFabricReact.utilitiesMod.BaseComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -36,7 +36,7 @@ class CalendarMonth protected () extends BaseComponent[ICalendarMonthProps, ICal
     * @deprecated unused, prefer 'ref' and 'componentRef' of ICalendarMonthProps.
     */
   @JSName("refs")
-  var refs_CalendarMonth: AnonKeyNavigatedMonth = js.native
+  var refs_CalendarMonth: AnonDictkey = js.native
   @JSName("componentDidUpdate")
   def componentDidUpdate_MCalendarMonth(): Unit = js.native
   def focus(): Unit = js.native

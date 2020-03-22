@@ -6,8 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait reactRouterParamLinkProps {
-  @scala.inline
-  def ParamLinkProps: LinkProps.type = typings.reactRouterDom.mod.LinkProps
   type ParamLinkProps[S] = LinkProps[S]
 }
 

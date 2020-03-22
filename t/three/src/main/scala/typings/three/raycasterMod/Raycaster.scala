@@ -2,6 +2,7 @@ package typings.three.raycasterMod
 
 import typings.three.AnonX
 import typings.three.cameraMod.Camera
+import typings.three.layersMod.Layers
 import typings.three.object3DMod.Object3D
 import typings.three.rayMod.Ray
 import typings.three.vector3Mod.Vector3
@@ -34,9 +35,9 @@ class Raycaster () extends js.Object {
   	 */
   var far: Double = js.native
   /**
-  	 * The precision factor of the raycaster when intersecting Line objects.
+  	 * Used by Raycaster to selectively ignore 3D objects when performing intersection tests.
   	 */
-  var linePrecision: Double = js.native
+  var layers: Layers = js.native
   /**
   	 * The near factor of the raycaster. This value indicates which objects can be discarded based on the
   	 * distance. This value shouldn't be negative and should be smaller than the far property.

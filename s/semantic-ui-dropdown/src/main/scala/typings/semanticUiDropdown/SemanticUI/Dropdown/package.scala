@@ -13,6 +13,6 @@ package object Dropdown {
   type LabelSettings = typings.semanticUiDropdown.SemanticUI.Dropdown.LabelSettings.Param
   type MessageSettings = typings.semanticUiDropdown.SemanticUI.Dropdown.MessageSettings.Param
   type MetadataSettings = typings.semanticUiDropdown.SemanticUI.Dropdown.MetadataSettings.Param
-  type RegExpSettings = typings.semanticUiDropdown.SemanticUI.Dropdown.RegExpSettings.Param
+  type RegExpSettings = typings.semanticUiDropdown.SemanticUI.Dropdown.RegExpSettings_
   type SelectorSettings = typings.semanticUiDropdown.SemanticUI.Dropdown.SelectorSettings.Param
 }

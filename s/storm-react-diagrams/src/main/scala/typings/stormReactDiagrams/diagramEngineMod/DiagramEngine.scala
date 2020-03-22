@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Element
 import typings.stormReactDiagrams.AnonHAdjustmentFactor
 import typings.stormReactDiagrams.AnonHeight
-import typings.stormReactDiagrams.AnonHeightWidth
+import typings.stormReactDiagrams.AnonWidth
 import typings.stormReactDiagrams.AnonX
 import typings.stormReactDiagrams.abstractLabelFactoryMod.AbstractLabelFactory
 import typings.stormReactDiagrams.abstractLinkFactoryMod.AbstractLinkFactory
@@ -80,7 +80,7 @@ class DiagramEngine () extends BaseEntity[DiagramEngineListener] {
     * Determine the width and height of the node passed in.
     * It currently assumes nodes have a rectangular shape, can be overriden for customised shapes.
     */
-  def getNodeDimensions(node: NodeModel): AnonHeightWidth = js.native
+  def getNodeDimensions(node: NodeModel): AnonWidth = js.native
   def getNodeElement(node: NodeModel): Element = js.native
   def getNodeFactories(): StringDictionary[AbstractNodeFactory[NodeModel]] = js.native
   def getNodeFactory(`type`: String): AbstractNodeFactory[NodeModel] = js.native

@@ -1,25 +1,14 @@
 package typings.antDesignIcons
 
-import typings.antDesignIcons.typesMod.ThemeType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object antDesignIconsStrings {
   @js.native
-  sealed trait fill extends ThemeType
-  
-  @js.native
-  sealed trait outline extends ThemeType
-  
-  @js.native
-  sealed trait twotone extends ThemeType
+  sealed trait `LinefeedDotanticon LeftcurlybracketLinefeed  displayColon inline-blockSemicolonLinefeed  colorColon inheritSemicolonLinefeed  font-styleColon normalSemicolonLinefeed  line-heightColon 0SemicolonLinefeed  text-alignColon centerSemicolonLinefeed  text-transformColon noneSemicolonLinefeed  vertical-alignColon -0Dot125emSemicolonLinefeed  text-renderingColon optimizeLegibilitySemicolonLinefeed  -webkit-font-smoothingColon antialiasedSemicolonLinefeed  -moz-osx-font-smoothingColon grayscaleSemicolonL` extends js.Object
   
   @scala.inline
-  def fill: fill = "fill".asInstanceOf[fill]
-  @scala.inline
-  def outline: outline = "outline".asInstanceOf[outline]
-  @scala.inline
-  def twotone: twotone = "twotone".asInstanceOf[twotone]
+  def `LinefeedDotanticon LeftcurlybracketLinefeed  displayColon inline-blockSemicolonLinefeed  colorColon inheritSemicolonLinefeed  font-styleColon normalSemicolonLinefeed  line-heightColon 0SemicolonLinefeed  text-alignColon centerSemicolonLinefeed  text-transformColon noneSemicolonLinefeed  vertical-alignColon -0Dot125emSemicolonLinefeed  text-renderingColon optimizeLegibilitySemicolonLinefeed  -webkit-font-smoothingColon antialiasedSemicolonLinefeed  -moz-osx-font-smoothingColon grayscaleSemicolonL`: `LinefeedDotanticon LeftcurlybracketLinefeed  displayColon inline-blockSemicolonLinefeed  colorColon inheritSemicolonLinefeed  font-styleColon normalSemicolonLinefeed  line-heightColon 0SemicolonLinefeed  text-alignColon centerSemicolonLinefeed  text-transformColon noneSemicolonLinefeed  vertical-alignColon -0Dot125emSemicolonLinefeed  text-renderingColon optimizeLegibilitySemicolonLinefeed  -webkit-font-smoothingColon antialiasedSemicolonLinefeed  -moz-osx-font-smoothingColon grayscaleSemicolonL` = "\n.anticon {\n  display: inline-block;\n  color: inherit;\n  font-style: normal;\n  line-height: 0;\n  text-align: center;\n  text-transform: none;\n  vertical-align: -0.125em;\n  text-rendering: optimizeLegibility;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n\n.anticon > * {\n  line-height: 1;\n}\n\n.anticon svg {\n  display: inline-block;\n}\n\n.anticon::before {\n  display: none;\n}\n\n.anticon .anticon-icon {\n  display: block;\n}\n\n.anticon[tabindex] {\n  cursor: pointer;\n}\n\n.anticon-spin::before,\n.anticon-spin {\n  display: inline-block;\n  -webkit-animation: loadingCircle 1s infinite linear;\n  animation: loadingCircle 1s infinite linear;\n}\n\n@-webkit-keyframes loadingCircle {\n  100% {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg);\n  }\n}\n\n@keyframes loadingCircle {\n  100% {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg);\n  }\n}\n".asInstanceOf[`LinefeedDotanticon LeftcurlybracketLinefeed  displayColon inline-blockSemicolonLinefeed  colorColon inheritSemicolonLinefeed  font-styleColon normalSemicolonLinefeed  line-heightColon 0SemicolonLinefeed  text-alignColon centerSemicolonLinefeed  text-transformColon noneSemicolonLinefeed  vertical-alignColon -0Dot125emSemicolonLinefeed  text-renderingColon optimizeLegibilitySemicolonLinefeed  -webkit-font-smoothingColon antialiasedSemicolonLinefeed  -moz-osx-font-smoothingColon grayscaleSemicolonL`]
 }
 

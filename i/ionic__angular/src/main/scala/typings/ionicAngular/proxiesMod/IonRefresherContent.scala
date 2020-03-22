@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ionic/angular/dist/directives/proxies", "IonRefresherContent")
+@JSImport("@ionic/angular/directives/proxies", "IonRefresherContent")
 @js.native
 class IonRefresherContent protected ()
   extends typings.ionicCore.componentsMod.Components.IonRefresherContent {

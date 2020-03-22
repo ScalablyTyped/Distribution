@@ -17,9 +17,6 @@ object ionicUtilsSubprocessStrings {
   @js.native
   sealed trait SubprocessError extends js.Object
   
-  @js.native
-  sealed trait stdio extends js.Object
-  
   @scala.inline
   def ERR_SUBPROCESS_COMMAND_NOT_FOUND: ERR_SUBPROCESS_COMMAND_NOT_FOUND = "ERR_SUBPROCESS_COMMAND_NOT_FOUND".asInstanceOf[ERR_SUBPROCESS_COMMAND_NOT_FOUND]
   @scala.inline
@@ -28,7 +25,5 @@ object ionicUtilsSubprocessStrings {
   def ERR_SUBPROCESS_SIGNAL_EXIT: ERR_SUBPROCESS_SIGNAL_EXIT = "ERR_SUBPROCESS_SIGNAL_EXIT".asInstanceOf[ERR_SUBPROCESS_SIGNAL_EXIT]
   @scala.inline
   def SubprocessError: SubprocessError = "SubprocessError".asInstanceOf[SubprocessError]
-  @scala.inline
-  def stdio: stdio = "stdio".asInstanceOf[stdio]
 }
 

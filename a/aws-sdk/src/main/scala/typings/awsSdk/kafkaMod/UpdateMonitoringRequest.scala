@@ -24,6 +24,7 @@ trait UpdateMonitoringRequest extends js.Object {
     
     */
   var EnhancedMonitoring: js.UndefOr[typings.awsSdk.kafkaMod.EnhancedMonitoring] = js.native
+  var LoggingInfo: js.UndefOr[typings.awsSdk.kafkaMod.LoggingInfo] = js.native
   /**
     * 
     The settings for open monitoring.
@@ -38,10 +39,12 @@ object UpdateMonitoringRequest {
     ClusterArn: string,
     CurrentVersion: string,
     EnhancedMonitoring: EnhancedMonitoring = null,
+    LoggingInfo: LoggingInfo = null,
     OpenMonitoring: OpenMonitoringInfo = null
   ): UpdateMonitoringRequest = {
     val __obj = js.Dynamic.literal(ClusterArn = ClusterArn.asInstanceOf[js.Any], CurrentVersion = CurrentVersion.asInstanceOf[js.Any])
     if (EnhancedMonitoring != null) __obj.updateDynamic("EnhancedMonitoring")(EnhancedMonitoring.asInstanceOf[js.Any])
+    if (LoggingInfo != null) __obj.updateDynamic("LoggingInfo")(LoggingInfo.asInstanceOf[js.Any])
     if (OpenMonitoring != null) __obj.updateDynamic("OpenMonitoring")(OpenMonitoring.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateMonitoringRequest]
   }

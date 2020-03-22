@@ -40,6 +40,7 @@ object LineProps {
     showInfo: js.UndefOr[Boolean] = js.undefined,
     size: ProgressSize = null,
     status: normal | exception | active | success = null,
+    steps: Int | Double = null,
     strokeColor: String | ProgressGradient = null,
     strokeLinecap: butt | square | round = null,
     strokeWidth: Int | Double = null,
@@ -59,6 +60,7 @@ object LineProps {
     if (!js.isUndefined(showInfo)) __obj.updateDynamic("showInfo")(showInfo.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (steps != null) __obj.updateDynamic("steps")(steps.asInstanceOf[js.Any])
     if (strokeColor != null) __obj.updateDynamic("strokeColor")(strokeColor.asInstanceOf[js.Any])
     if (strokeLinecap != null) __obj.updateDynamic("strokeLinecap")(strokeLinecap.asInstanceOf[js.Any])
     if (strokeWidth != null) __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])

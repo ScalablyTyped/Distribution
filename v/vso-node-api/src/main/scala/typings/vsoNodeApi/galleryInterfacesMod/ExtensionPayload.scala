@@ -1,6 +1,6 @@
 package typings.vsoNodeApi.galleryInterfacesMod
 
-import typings.vsoNodeApi.AnonKeyValueString
+import typings.vsoNodeApi.AnonKeyValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ trait ExtensionPayload extends js.Object {
   var installationTargets: js.Array[InstallationTarget]
   var isSignedByMicrosoft: Boolean
   var isValid: Boolean
-  var metadata: js.Array[AnonKeyValueString]
+  var metadata: js.Array[AnonKeyValue]
   var `type`: ExtensionDeploymentTechnology
 }
 
@@ -25,7 +25,7 @@ object ExtensionPayload {
     installationTargets: js.Array[InstallationTarget],
     isSignedByMicrosoft: Boolean,
     isValid: Boolean,
-    metadata: js.Array[AnonKeyValueString],
+    metadata: js.Array[AnonKeyValue],
     `type`: ExtensionDeploymentTechnology
   ): ExtensionPayload = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], fileName = fileName.asInstanceOf[js.Any], installationTargets = installationTargets.asInstanceOf[js.Any], isSignedByMicrosoft = isSignedByMicrosoft.asInstanceOf[js.Any], isValid = isValid.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any])

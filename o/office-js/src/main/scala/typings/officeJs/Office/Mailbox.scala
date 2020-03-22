@@ -1,6 +1,6 @@
 package typings.officeJs.Office
 
-import typings.officeJs.AnonIsRest
+import typings.officeJs.AsyncContextOptionsisRest
 import typings.officeJs.Office.MailboxEnums.RestVersion
 import typings.std.Date
 import scala.scalajs.js
@@ -481,7 +481,7 @@ trait Mailbox extends js.Object {
     *                 If there was an error, the `asyncResult.error` and `asyncResult.diagnostics` properties may provide additional information.
     */
   def getCallbackTokenAsync(
-    options: AsyncContextOptions with AnonIsRest,
+    options: AsyncContextOptionsisRest,
     callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]
   ): Unit = js.native
   /**

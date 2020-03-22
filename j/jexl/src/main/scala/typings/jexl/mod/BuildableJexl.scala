@@ -1,6 +1,6 @@
 package typings.jexl.mod
 
-import typings.jexl.AnonJexl
+import typings.jexl.AnonInstantiable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait BuildableJexl extends Jexl {
-  var Jexl: AnonJexl = js.native
+  var Jexl: AnonInstantiable = js.native
 }
 

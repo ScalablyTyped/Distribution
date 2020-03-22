@@ -1,9 +1,9 @@
 package typings.ionicCore.componentsMod.LocalJSX
 
+import typings.ionicCore.animationInterfaceMod.Animation
+import typings.ionicCore.animationInterfaceMod.AnimationBuilder
 import typings.ionicCore.mod.ComponentProps
 import typings.ionicCore.navInterfaceMod.NavComponent
-import typings.ionicCore.oldAnimationAnimationInterfaceMod.Animation
-import typings.ionicCore.oldAnimationAnimationInterfaceMod.AnimationBuilder
 import typings.std.CustomEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -44,7 +44,7 @@ object IonNav {
   @scala.inline
   def apply(
     animated: js.UndefOr[Boolean] = js.undefined,
-    animation: (/* Animation */ Animation, /* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => js.Promise[Animation] = null,
+    animation: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation = null,
     onIonNavDidChange: /* event */ CustomEvent[Unit] => Unit = null,
     onIonNavWillChange: /* event */ CustomEvent[Unit] => Unit = null,
     root: NavComponent = null,
@@ -53,7 +53,7 @@ object IonNav {
   ): IonNav = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.asInstanceOf[js.Any])
-    if (animation != null) __obj.updateDynamic("animation")(js.Any.fromFunction3(animation))
+    if (animation != null) __obj.updateDynamic("animation")(js.Any.fromFunction2(animation))
     if (onIonNavDidChange != null) __obj.updateDynamic("onIonNavDidChange")(js.Any.fromFunction1(onIonNavDidChange))
     if (onIonNavWillChange != null) __obj.updateDynamic("onIonNavWillChange")(js.Any.fromFunction1(onIonNavWillChange))
     if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])

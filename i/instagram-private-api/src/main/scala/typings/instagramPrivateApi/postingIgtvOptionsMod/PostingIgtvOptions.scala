@@ -1,7 +1,7 @@
 package typings.instagramPrivateApi.postingIgtvOptionsMod
 
 import typings.instagramPrivateApi.AnonBottom
-import typings.instagramPrivateApi.PartialMediaConfigureToIgtvOptions
+import typings.instagramPrivateApi.PartialMediaConfigureToIg
 import typings.instagramPrivateApi.PartialUploadVideoOptions
 import typings.node.Buffer
 import scala.scalajs.js
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 trait PostingIgtvOptions extends js.Object {
   var audioMuted: js.UndefOr[Boolean] = js.undefined
   var caption: js.UndefOr[String] = js.undefined
-  var configureOptions: js.UndefOr[PartialMediaConfigureToIgtvOptions] = js.undefined
+  var configureOptions: js.UndefOr[PartialMediaConfigureToIg] = js.undefined
   var coverFrame: Buffer
   var feedPreviewCrop: js.UndefOr[AnonBottom] = js.undefined
   var maxTranscodeTries: js.UndefOr[Double] = js.undefined
@@ -30,7 +30,7 @@ object PostingIgtvOptions {
     video: Buffer,
     audioMuted: js.UndefOr[Boolean] = js.undefined,
     caption: String = null,
-    configureOptions: PartialMediaConfigureToIgtvOptions = null,
+    configureOptions: PartialMediaConfigureToIg = null,
     feedPreviewCrop: AnonBottom = null,
     maxTranscodeTries: Int | Double = null,
     shareToFeed: js.UndefOr[Boolean] = js.undefined,

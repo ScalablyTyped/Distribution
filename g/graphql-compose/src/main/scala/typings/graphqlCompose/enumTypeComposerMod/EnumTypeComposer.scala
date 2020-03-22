@@ -3,6 +3,7 @@ package typings.graphqlCompose.enumTypeComposerMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.graphql.definitionMod.GraphQLList
 import typings.graphql.definitionMod.GraphQLNonNull
+import typings.graphqlCompose.PartialComposeEnumValueCo
 import typings.graphqlCompose.definitionsMod.DirectiveArgs
 import typings.graphqlCompose.definitionsMod.Extensions
 import typings.graphqlCompose.definitionsMod.ExtensionsDirective
@@ -11,7 +12,6 @@ import typings.graphqlCompose.objectTypeComposerMod._ComposeOutputType
 import typings.graphqlCompose.schemaComposerMod.SchemaComposer
 import typings.graphqlCompose.schemaComposerMod._AnyComposeType
 import typings.graphqlCompose.schemaComposerMod._AnyType
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,7 +39,7 @@ class EnumTypeComposer[TContext] protected ()
     */
   def deprecateFields(fields: StringDictionary[String]): this.type = js.native
   def extendExtensions(extensions: Extensions): this.type = js.native
-  def extendField(name: String, partialValueConfig: Partial[ComposeEnumValueConfig]): this.type = js.native
+  def extendField(name: String, partialValueConfig: PartialComposeEnumValueCo): this.type = js.native
   def extendFieldExtensions(fieldName: String, extensions: Extensions): this.type = js.native
   def getDescription(): String = js.native
   def getDirectiveById(idx: Double): DirectiveArgs | Unit = js.native

@@ -21,6 +21,7 @@ object JWTOptions {
     additionalClaims: js.Object = null,
     eagerRefreshThresholdMillis: Int | Double = null,
     email: String = null,
+    forceRefreshOnFailure: js.UndefOr[Boolean] = js.undefined,
     key: String = null,
     keyFile: String = null,
     keyId: String = null,
@@ -31,6 +32,7 @@ object JWTOptions {
     if (additionalClaims != null) __obj.updateDynamic("additionalClaims")(additionalClaims.asInstanceOf[js.Any])
     if (eagerRefreshThresholdMillis != null) __obj.updateDynamic("eagerRefreshThresholdMillis")(eagerRefreshThresholdMillis.asInstanceOf[js.Any])
     if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceRefreshOnFailure)) __obj.updateDynamic("forceRefreshOnFailure")(forceRefreshOnFailure.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (keyFile != null) __obj.updateDynamic("keyFile")(keyFile.asInstanceOf[js.Any])
     if (keyId != null) __obj.updateDynamic("keyId")(keyId.asInstanceOf[js.Any])

@@ -36,52 +36,52 @@ object baconjsMod extends js.Object {
   @js.native
   object default extends js.Object {
     @JSName("all")
-    var all_Original: FnFXXs = js.native
+    var all_Original: Fn7 = js.native
     @JSName("always")
-    var always_Original: FnXA = js.native
+    var always_Original: FnCallX = js.native
     var any: js.Any = js.native
     @JSName("bind")
-    var bind_Original: FnFn = js.native
+    var bind_Original: FnCallFnMe = js.native
     @JSName("contains")
-    var contains_Original: FnXXs = js.native
+    var contains_Original: FnCallXsX = js.native
     @JSName("each")
-    var each_Original: FnFKey = js.native
+    var each_Original: Fn3 = js.native
     @JSName("empty")
-    var empty_Original: FnXsA = js.native
+    var empty_Original: Fn0 = js.native
     @JSName("filter")
-    var filter_Original: FnA = js.native
+    var filter_Original: FnCallFXs = js.native
     @JSName("flatMap")
-    var flatMap_Original: FnFXXsA = js.native
+    var flatMap_Original: Fn9 = js.native
     @JSName("fold")
-    var fold_Original: FnAcc = js.native
+    var fold_Original: FnCallXsSeedF = js.native
     @JSName("head")
-    var head_Original: FnXs = js.native
+    var head_Original: FnCallXs = js.native
     @JSName("id")
-    var id_Original: FnXA1483268902 = js.native
+    var id_Original: Fn5 = js.native
     @JSName("indexOf")
-    var indexOf_Original: FnX = js.native
+    var indexOf_Original: FnCall = js.native
     @JSName("indexWhere")
-    var indexWhere_Original: FnF = js.native
+    var indexWhere_Original: FnCallXsF = js.native
     @JSName("isFunction")
     var isFunction_Original: js.Function1[/* f */ js.Any, /* is std.Function */ Boolean] = js.native
     @JSName("last")
-    var last_Original: FnXsAArray1891462469 = js.native
+    var last_Original: Fn6 = js.native
     @JSName("map")
-    var map_Original: FnAF = js.native
+    var map_Original: Fn2 = js.native
     @JSName("negate")
-    var negate_Original: FnFX = js.native
+    var negate_Original: FnCallF = js.native
     @JSName("remove")
-    var remove_Original: FnXXsArray = js.native
+    var remove_Original: Fn8 = js.native
     @JSName("tail")
-    var tail_Original: FnXsArray = js.native
+    var tail_Original: Fn1 = js.native
     @JSName("toArray")
-    var toArray_Original: FnXsAArray = js.native
+    var toArray_Original: Fn4 = js.native
     @JSName("toFunction")
-    var toFunction_Original: FnFXV = js.native
+    var toFunction_Original: Fn10 = js.native
     @JSName("toString")
     var toString_Original: js.Function1[/* obj */ js.Any, String] = js.native
     @JSName("without")
-    var without_Original: FnXXsA = js.native
+    var without_Original: FnCallXXs = js.native
     def all[A](xs: js.Array[A], f: js.Function1[/* x */ A, Boolean]): Boolean = js.native
     def always[A](x: A): js.Function0[A] = js.native
     def bind[F /* <: js.Function */](fn: F, me: js.Any): F = js.native

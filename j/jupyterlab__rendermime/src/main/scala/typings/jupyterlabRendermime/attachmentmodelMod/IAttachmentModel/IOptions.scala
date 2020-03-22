@@ -1,6 +1,6 @@
 package typings.jupyterlabRendermime.attachmentmodelMod.IAttachmentModel
 
-import typings.jupyterlabCoreutils.nbformatMod.nbformat.IMimeBundle
+import typings.jupyterlabNbformat.mod.IMimeBundle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,7 +1,7 @@
 package typings.grommet.gridMod
 
-import typings.grommet.Anon12
 import typings.grommet.AnonColumn
+import typings.grommet.AnonCount
 import typings.grommet.AnonEnd
 import typings.grommet.grommetStrings.`1Slash2`
 import typings.grommet.grommetStrings.`1Slash3`
@@ -29,6 +29,7 @@ import typings.grommet.utilsMod.GapType
 import typings.grommet.utilsMod.GridAreaType
 import typings.grommet.utilsMod.JustifyContentType
 import typings.grommet.utilsMod.MarginType
+import typings.grommet.utilsMod.PadType
 import typings.grommet.utilsMod.PolymorphicType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -44,7 +45,7 @@ trait GridProps extends js.Object {
   var columns: js.UndefOr[
     (js.Array[
       xsmall | small | medium | large | xlarge | full | `1Slash2` | `1Slash3` | `2Slash3` | `1Slash4` | `2Slash4` | `3Slash4` | flex | auto | String | js.Array[String]
-    ]) | xsmall | small | medium | large | xlarge | Anon12 | String
+    ]) | xsmall | small | medium | large | xlarge | AnonCount | String
   ] = js.undefined
   var fill: js.UndefOr[FillType] = js.undefined
   var gap: js.UndefOr[GapType | AnonColumn] = js.undefined
@@ -52,6 +53,7 @@ trait GridProps extends js.Object {
   var justify: js.UndefOr[start | center | end | stretch] = js.undefined
   var justifyContent: js.UndefOr[JustifyContentType] = js.undefined
   var margin: js.UndefOr[MarginType] = js.undefined
+  var pad: js.UndefOr[PadType] = js.undefined
   var rows: js.UndefOr[
     (js.Array[
       xsmall | small | medium | large | xlarge | full | `1Slash2` | `1Slash3` | `2Slash3` | `1Slash4` | `2Slash4` | `3Slash4` | flex | auto | String | js.Array[String]
@@ -71,13 +73,14 @@ object GridProps {
     as: PolymorphicType = null,
     columns: (js.Array[
       xsmall | small | medium | large | xlarge | full | `1Slash2` | `1Slash3` | `2Slash3` | `1Slash4` | `2Slash4` | `3Slash4` | flex | auto | String | js.Array[String]
-    ]) | xsmall | small | medium | large | xlarge | Anon12 | String = null,
+    ]) | xsmall | small | medium | large | xlarge | AnonCount | String = null,
     fill: FillType = null,
     gap: GapType | AnonColumn = null,
     gridArea: GridAreaType = null,
     justify: start | center | end | stretch = null,
     justifyContent: JustifyContentType = null,
     margin: MarginType = null,
+    pad: PadType = null,
     rows: (js.Array[
       xsmall | small | medium | large | xlarge | full | `1Slash2` | `1Slash3` | `2Slash3` | `1Slash4` | `2Slash4` | `3Slash4` | flex | auto | String | js.Array[String]
     ]) | xsmall | small | medium | large | xlarge | String = null,
@@ -97,6 +100,7 @@ object GridProps {
     if (justify != null) __obj.updateDynamic("justify")(justify.asInstanceOf[js.Any])
     if (justifyContent != null) __obj.updateDynamic("justifyContent")(justifyContent.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
+    if (pad != null) __obj.updateDynamic("pad")(pad.asInstanceOf[js.Any])
     if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
     if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridProps]

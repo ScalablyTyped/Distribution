@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "saywhen"
-version := "1.1-dt-20190926Z-1594e3"
+version := "1.1-dt-20190926Z-d6fe78"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "jasmine" % "3.5-dt-20200214Z-1fbe73",
-  "org.scalablytyped" %%% "std" % "3.7-1b8369")
+  "org.scalablytyped" %%% "jasmine" % "3.5-dt-20200214Z-cdff5d",
+  "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

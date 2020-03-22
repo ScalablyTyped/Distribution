@@ -4,11 +4,10 @@ import typings.jupyterlabDocmanager.tokensMod.IDocumentManager
 import typings.jupyterlabFilebrowser.modelMod.FileBrowserModel.IOptions
 import typings.jupyterlabServices.contentsMod.Contents.IChangedArgs
 import typings.jupyterlabServices.contentsMod.Contents.IModel
-import typings.jupyterlabServices.kernelKernelMod.Kernel.ISpecModels
-import typings.jupyterlabUiComponents.interfacesMod.IIconRegistry
-import typings.phosphorAlgorithm.iterMod.IIterator
-import typings.phosphorDisposable.mod.IDisposable
-import typings.phosphorSignaling.mod.ISignal
+import typings.jupyterlabServices.restapiMod.ISpecModels
+import typings.luminoAlgorithm.iterMod.IIterator
+import typings.luminoDisposable.mod.IDisposable
+import typings.luminoSignaling.mod.ISignal
 import typings.std.Error
 import typings.std.File
 import scala.scalajs.js
@@ -64,22 +63,6 @@ class FileBrowserModel_ protected () extends IDisposable {
   var _uploadCheckDisposed: js.Any = js.native
   var _uploads: js.Any = js.native
   /**
-    * A signal emitted when the file browser model loses connection.
-    */
-  val connectionFailure: ISignal[this.type, Error] = js.native
-  /**
-    * The drive name that gets prepended to the path.
-    */
-  val driveName: String = js.native
-  /**
-    * Get the file path changed signal.
-    */
-  val fileChanged: ISignal[this.type, IChangedArgs] = js.native
-  /**
-    * The icon registry instance used by the file browser model.
-    */
-  val iconRegistry: IIconRegistry = js.native
-  /**
     * Test whether the object has been disposed.
     *
     * #### Notes
@@ -92,33 +75,6 @@ class FileBrowserModel_ protected () extends IDisposable {
     */
   val manager: IDocumentManager = js.native
   /**
-    * Get the current path.
-    */
-  val path: String = js.native
-  /**
-    * A signal emitted when the path changes.
-    */
-  val pathChanged: ISignal[this.type, typings.jupyterlabCoreutils.interfacesMod.IChangedArgs[String, String]] = js.native
-  /**
-    * A signal emitted when the directory listing is refreshed.
-    */
-  val refreshed: ISignal[this.type, Unit] = js.native
-  /**
-    * A promise that resolves when the model is first restored.
-    */
-  val restored: js.Promise[Unit] = js.native
-  /**
-    * Get the kernel spec models.
-    */
-  val specs: ISpecModels | Null = js.native
-  /**
-    * A signal emitted when an upload progresses.
-    */
-  val uploadChanged: ISignal[
-    this.type, 
-    typings.jupyterlabCoreutils.interfacesMod.IChangedArgs[IUploadModel, String]
-  ] = js.native
-  /**
     * Change directory.
     *
     * @param path - The path to the file or directory.
@@ -127,6 +83,10 @@ class FileBrowserModel_ protected () extends IDisposable {
     */
   def cd(): js.Promise[Unit] = js.native
   def cd(newValue: String): js.Promise[Unit] = js.native
+  /**
+    * A signal emitted when the file browser model loses connection.
+    */
+  def connectionFailure(): ISignal[this.type, Error] = js.native
   /**
     * Dispose of the resources held by the object.
     *
@@ -150,19 +110,50 @@ class FileBrowserModel_ protected () extends IDisposable {
     */
   def download(path: String): js.Promise[Unit] = js.native
   /**
+    * The drive name that gets prepended to the path.
+    */
+  def driveName(): String = js.native
+  /**
+    * Get the file path changed signal.
+    */
+  def fileChanged(): ISignal[this.type, IChangedArgs] = js.native
+  /**
+    * Get whether the model is disposed.
+    */
+  @JSName("isDisposed")
+  def isDisposed_MFileBrowserModel_(): Boolean = js.native
+  /**
     * Create an iterator over the model's items.
     *
     * @returns A new iterator over the model's items.
     */
   def items(): IIterator[IModel] = js.native
   /**
+    * Get the current path.
+    */
+  def path(): String = js.native
+  /**
+    * A signal emitted when the path changes.
+    */
+  def pathChanged(): ISignal[
+    this.type, 
+    typings.jupyterlabCoreutils.interfacesMod.IChangedArgs[String, String, String]
+  ] = js.native
+  /**
     * Force a refresh of the directory contents.
     */
   def refresh(): js.Promise[Unit] = js.native
   /**
+    * A signal emitted when the directory listing is refreshed.
+    */
+  def refreshed(): ISignal[this.type, Unit] = js.native
+  /**
     * Restore the state of the file browser.
     *
     * @param id - The unique ID that is used to construct a state database key.
+    *
+    * @param populate - If `false`, the restoration ID will be set but the file
+    * browser state will not be fetched from the state database.
     *
     * @returns A promise when restoration is complete.
     *
@@ -171,12 +162,21 @@ class FileBrowserModel_ protected () extends IDisposable {
     * times, all subsequent invocations are no-ops.
     */
   def restore(id: String): js.Promise[Unit] = js.native
+  def restore(id: String, populate: Boolean): js.Promise[Unit] = js.native
+  /**
+    * A promise that resolves when the model is first restored.
+    */
+  def restored(): js.Promise[Unit] = js.native
   /**
     * Create an iterator over the active sessions in the directory.
     *
     * @returns A new iterator over the model's active sessions.
     */
-  def sessions(): IIterator[typings.jupyterlabServices.sessionSessionMod.Session.IModel] = js.native
+  def sessions(): IIterator[typings.jupyterlabServices.sessionSessionMod.IModel] = js.native
+  /**
+    * Get the kernel spec models.
+    */
+  def specs(): ISpecModels | Null = js.native
   /**
     * Upload a `File` object.
     *
@@ -190,6 +190,13 @@ class FileBrowserModel_ protected () extends IDisposable {
     * ask for confirmation then upload the file in 1 MB chunks.
     */
   def upload(file: File): js.Promise[IModel] = js.native
+  /**
+    * A signal emitted when an upload progresses.
+    */
+  def uploadChanged(): ISignal[
+    this.type, 
+    typings.jupyterlabCoreutils.interfacesMod.IChangedArgs[IUploadModel | Null, IUploadModel | Null, String]
+  ] = js.native
   /**
     * Create an iterator over the status of all in progress uploads.
     */

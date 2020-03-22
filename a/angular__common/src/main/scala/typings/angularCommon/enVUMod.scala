@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 object enVUMod extends js.Object {
   val default: js.Array[
     js.UndefOr[
-      String | Double | (js.Array[js.UndefOr[js.Array[String] | Double | String]]) | (js.Function1[/* n */ Double, Double]) | AnonJPYUSDVUV
+      String | Double | (js.Array[js.UndefOr[js.Array[String] | Double | String]]) | (js.Function1[/* n */ Double, Double]) | AnonVUV
     ]
   ] = js.native
 }

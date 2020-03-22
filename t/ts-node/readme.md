@@ -1,7 +1,7 @@
 
 # Scala.js typings for ts-node
 
-Typings are for version 7.0.1
+Typings are for version 8.5.4
 
 ## Library description:
 TypeScript execution environment and REPL for node.js, with source map support

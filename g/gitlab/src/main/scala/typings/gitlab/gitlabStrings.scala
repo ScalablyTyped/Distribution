@@ -1,5 +1,6 @@
 package typings.gitlab
 
+import typings.gitlab.deploymentsMod.DeploymentStatus
 import typings.gitlab.jobsMod.JobScope
 import typings.gitlab.notificationSettingsMod.NotificationSettingLevel
 import typings.gitlab.servicesServicesMod.SupportedService
@@ -278,6 +279,9 @@ object gitlabStrings {
   sealed trait Version extends js.Object
   
   @js.native
+  sealed trait VulnerabilityFindings extends js.Object
+  
+  @js.native
   sealed trait Wikis extends js.Object
   
   @js.native
@@ -302,7 +306,9 @@ object gitlabStrings {
   sealed trait campfire extends SupportedService
   
   @js.native
-  sealed trait canceled extends JobScope
+  sealed trait canceled
+    extends DeploymentStatus
+       with JobScope
   
   @js.native
   sealed trait closed extends js.Object
@@ -314,7 +320,9 @@ object gitlabStrings {
   sealed trait create extends js.Object
   
   @js.native
-  sealed trait created extends JobScope
+  sealed trait created
+    extends DeploymentStatus
+       with JobScope
   
   @js.native
   sealed trait custom extends NotificationSettingLevel
@@ -338,6 +346,9 @@ object gitlabStrings {
   sealed trait `emails-on-push` extends SupportedService
   
   @js.native
+  sealed trait env_var extends js.Object
+  
+  @js.native
   sealed trait execution extends js.Object
   
   @js.native
@@ -347,7 +358,12 @@ object gitlabStrings {
   sealed trait `external-wiki` extends SupportedService
   
   @js.native
-  sealed trait failed extends JobScope
+  sealed trait failed
+    extends DeploymentStatus
+       with JobScope
+  
+  @js.native
+  sealed trait file extends js.Object
   
   @js.native
   sealed trait flowdock extends SupportedService
@@ -467,7 +483,9 @@ object gitlabStrings {
   sealed trait reopened extends js.Object
   
   @js.native
-  sealed trait running extends JobScope
+  sealed trait running
+    extends DeploymentStatus
+       with JobScope
   
   @js.native
   sealed trait skipped extends JobScope
@@ -482,7 +500,9 @@ object gitlabStrings {
   sealed trait snippet extends js.Object
   
   @js.native
-  sealed trait success extends JobScope
+  sealed trait success
+    extends DeploymentStatus
+       with JobScope
   
   @js.native
   sealed trait teamcity extends SupportedService
@@ -678,6 +698,8 @@ object gitlabStrings {
   @scala.inline
   def Version: Version = "Version".asInstanceOf[Version]
   @scala.inline
+  def VulnerabilityFindings: VulnerabilityFindings = "VulnerabilityFindings".asInstanceOf[VulnerabilityFindings]
+  @scala.inline
   def Wikis: Wikis = "Wikis".asInstanceOf[Wikis]
   @scala.inline
   def api: api = "api".asInstanceOf[api]
@@ -718,6 +740,8 @@ object gitlabStrings {
   @scala.inline
   def `emails-on-push`: `emails-on-push` = "emails-on-push".asInstanceOf[`emails-on-push`]
   @scala.inline
+  def env_var: env_var = "env_var".asInstanceOf[env_var]
+  @scala.inline
   def execution: execution = "execution".asInstanceOf[execution]
   @scala.inline
   def expired: expired = "expired".asInstanceOf[expired]
@@ -725,6 +749,8 @@ object gitlabStrings {
   def `external-wiki`: `external-wiki` = "external-wiki".asInstanceOf[`external-wiki`]
   @scala.inline
   def failed: failed = "failed".asInstanceOf[failed]
+  @scala.inline
+  def file: file = "file".asInstanceOf[file]
   @scala.inline
   def flowdock: flowdock = "flowdock".asInstanceOf[flowdock]
   @scala.inline

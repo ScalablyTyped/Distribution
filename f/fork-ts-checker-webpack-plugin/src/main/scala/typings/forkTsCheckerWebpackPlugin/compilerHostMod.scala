@@ -2,6 +2,7 @@ package typings.forkTsCheckerWebpackPlugin
 
 import typings.forkTsCheckerWebpackPlugin.resolutionMod.ResolveModuleName
 import typings.forkTsCheckerWebpackPlugin.resolutionMod.ResolveTypeReferenceDirective
+import typings.forkTsCheckerWebpackPlugin.vueOptionsMod.VueOptions
 import typings.std.Set
 import typings.typescript.mod.BuilderProgramHost
 import typings.typescript.mod.CompilerOptions
@@ -23,12 +24,14 @@ object compilerHostMod extends js.Object {
   class CompilerHost protected () extends WatchCompilerHostOfConfigFile[EmitAndSemanticDiagnosticsBuilderProgram] {
     def this(
       typescript: Typeofts,
+      vueOptions: VueOptions,
       programConfigFile: String,
       compilerOptions: CompilerOptions,
       checkSyntacticErrors: Boolean
     ) = this()
     def this(
       typescript: Typeofts,
+      vueOptions: VueOptions,
       programConfigFile: String,
       compilerOptions: CompilerOptions,
       checkSyntacticErrors: Boolean,
@@ -36,6 +39,7 @@ object compilerHostMod extends js.Object {
     ) = this()
     def this(
       typescript: Typeofts,
+      vueOptions: VueOptions,
       programConfigFile: String,
       compilerOptions: CompilerOptions,
       checkSyntacticErrors: Boolean,
@@ -45,13 +49,13 @@ object compilerHostMod extends js.Object {
     var afterCompile: js.Any = js.native
     var compilationStarted: js.Any = js.native
     @JSName("createProgram")
-    var createProgram_Original_CompilerHost: FnConfigFileParsingDiagnostics = js.native
+    var createProgram_Original_CompilerHost: FnCall = js.native
     var directoryWatchers: js.Any = js.native
     var fileWatchers: js.Any = js.native
     var gatheredDiagnostic: js.Any = js.native
     var knownFiles: js.Any = js.native
     var lastProcessing: js.UndefOr[js.Promise[js.Array[Diagnostic]]] = js.native
-    var onCachedDirectoryStructureHostCreate: js.UndefOr[js.Function1[/* _host */ js.Any, Unit]] = js.native
+    var onCachedDirectoryStructureHostCreate: js.UndefOr[js.Function0[Unit]] = js.native
     @JSName("optionsToExtend")
     var optionsToExtend_CompilerHost: CompilerOptions = js.native
     var program: js.UndefOr[js.Any] = js.native
@@ -76,11 +80,12 @@ object compilerHostMod extends js.Object {
       ] = js.native
     val tsHost: js.Any = js.native
     var typescript: js.Any = js.native
+    var vueOptions: js.Any = js.native
     @JSName("afterProgramCreate")
     def afterProgramCreate_MCompilerHost(program: EmitAndSemanticDiagnosticsBuilderProgram): Unit = js.native
     @JSName("clearTimeout")
     def clearTimeout_MCompilerHost(timeoutId: js.Any): Unit = js.native
-    def createDirectory(_path: String): Unit = js.native
+    def createDirectory(): Unit = js.native
     def createProgram(newProgram: Program, host: BuilderProgramHost): EmitAndSemanticDiagnosticsBuilderProgram = js.native
     def createProgram(
       newProgram: Program,
@@ -101,8 +106,9 @@ object compilerHostMod extends js.Object {
     @JSName("getEnvironmentVariable")
     def getEnvironmentVariable_MCompilerHost(name: String): js.UndefOr[String] = js.native
     def getProgram(): Program = js.native
+    def onUnRecoverableConfigFileDiagnostic(): Unit = js.native
     @JSName("onWatchStatusChange")
-    def onWatchStatusChange_MCompilerHost(_diagnostic: Diagnostic, _newLine: String, _options: CompilerOptions): Unit = js.native
+    def onWatchStatusChange_MCompilerHost(): Unit = js.native
     def processChanges(): js.Promise[AnonRemovedFiles] = js.native
     @JSName("readDirectory")
     def readDirectory_MCompilerHost(path: String): js.Array[String] = js.native
@@ -123,11 +129,10 @@ object compilerHostMod extends js.Object {
     @JSName("realpath")
     def realpath_MCompilerHost(path: String): String = js.native
     @JSName("setTimeout")
-    def setTimeout_MCompilerHost(callback: js.Function1[/* repeated */ js.Any, Unit], _ms: Double, args: js.Any*): js.Any = js.native
+    def setTimeout_MCompilerHost(callback: js.Function1[/* repeated */ js.Any, Unit], ms: Double, args: js.Any*): js.Any = js.native
     @JSName("trace")
     def trace_MCompilerHost(s: String): Unit = js.native
-    def writeFile(_path: String, _data: String): Unit = js.native
-    def writeFile(_path: String, _data: String, _writeByteOrderMark: Boolean): Unit = js.native
+    def writeFile(): Unit = js.native
   }
   
 }

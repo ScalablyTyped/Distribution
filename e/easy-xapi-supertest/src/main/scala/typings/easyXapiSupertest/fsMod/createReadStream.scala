@@ -1,7 +1,7 @@
 package typings.easyXapiSupertest.fsMod
 
 import typings.easyXapiSupertest.AnonBufferSize
-import typings.easyXapiSupertest.AnonBufferSizeEncoding
+import typings.easyXapiSupertest.AnonFd
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation._
 object createReadStream extends js.Object {
   def apply(path: String): ReadStream = js.native
   def apply(path: String, options: AnonBufferSize): ReadStream = js.native
-  def apply(path: String, options: AnonBufferSizeEncoding): ReadStream = js.native
+  def apply(path: String, options: AnonFd): ReadStream = js.native
 }
 

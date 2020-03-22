@@ -30,9 +30,6 @@ object weixinAppStrings {
   sealed trait `4g` extends networkType
   
   @js.native
-  sealed trait Anon_AuthSetting extends js.Object
-  
-  @js.native
   sealed trait CONNECT extends js.Object
   
   @js.native
@@ -328,8 +325,6 @@ object weixinAppStrings {
   def `3g`: `3g` = "3g".asInstanceOf[`3g`]
   @scala.inline
   def `4g`: `4g` = "4g".asInstanceOf[`4g`]
-  @scala.inline
-  def Anon_AuthSetting: Anon_AuthSetting = "Anon_AuthSetting".asInstanceOf[Anon_AuthSetting]
   @scala.inline
   def CONNECT: CONNECT = "CONNECT".asInstanceOf[CONNECT]
   @scala.inline

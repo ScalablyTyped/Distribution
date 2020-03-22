@@ -1,6 +1,6 @@
 package typings.wegameApi.wx
 
-import typings.wegameApi.AnonAlbum
+import typings.wegameApi.AnonSizeType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,6 +12,6 @@ object chooseImage extends js.Object {
   /**
     * 从本地相册选择图片或使用相机拍照。
     */
-  def apply(param: AnonAlbum): Unit = js.native
+  def apply(param: AnonSizeType): Unit = js.native
 }
 

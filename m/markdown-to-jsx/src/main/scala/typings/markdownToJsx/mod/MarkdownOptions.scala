@@ -1,6 +1,6 @@
 package typings.markdownToJsx.mod
 
-import typings.markdownToJsx.AnonA
+import typings.markdownToJsx.AnonDictkey
 import typings.react.mod.Attributes
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
@@ -26,7 +26,7 @@ trait MarkdownOptions extends js.Object {
   /** Force all input strings to use inline layout. */
   var forceInline: js.UndefOr[Boolean] = js.undefined
   /** Override representation of any HTML tag or custom component. */
-  var overrides: js.UndefOr[AnonA] = js.undefined
+  var overrides: js.UndefOr[AnonDictkey] = js.undefined
   /** Custom function to generate an HTML id from headings. */
   var slugify: js.UndefOr[js.Function1[/* text */ String, String]] = js.undefined
 }
@@ -37,7 +37,7 @@ object MarkdownOptions {
     createElement: (/* type */ SFC[js.Object] | (ComponentClass[js.Object, ComponentState]) | String, /* props */ js.UndefOr[(Attributes with js.Object) | Null], /* repeated */ ReactNode) => ReactElement = null,
     forceBlock: js.UndefOr[Boolean] = js.undefined,
     forceInline: js.UndefOr[Boolean] = js.undefined,
-    overrides: AnonA = null,
+    overrides: AnonDictkey = null,
     slugify: /* text */ String => String = null
   ): MarkdownOptions = {
     val __obj = js.Dynamic.literal()

@@ -1,7 +1,7 @@
 package typings.terminalKit.screenBufferMod
 
-import typings.terminalKit.AnonAttrTransparencyChar
 import typings.terminalKit.AnonShrink
+import typings.terminalKit.AnonTransparencyChar
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +17,7 @@ class ^ protected () extends ScreenBuffer {
 object ^ extends js.Object {
   def attr2object(attrFlags: Double): Unit = js.native
   def create(options: Options): ScreenBuffer = js.native
-  def createFromString(options: AnonAttrTransparencyChar, str: String): ScreenBuffer = js.native
+  def createFromString(options: AnonTransparencyChar, str: String): ScreenBuffer = js.native
   def loadImage(
     url: String,
     calback: js.Function2[/* error */ js.UndefOr[js.Any], /* image */ js.UndefOr[this.type], Unit]

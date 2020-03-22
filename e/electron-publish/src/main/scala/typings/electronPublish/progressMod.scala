@@ -38,7 +38,6 @@ object progressMod extends js.Object {
     var chars: js.Any = js.native
     var complete: js.Any = js.native
     var current: js.Any = js.native
-    var currentAmount: Double = js.native
     val format: js.Any = js.native
     var lastDraw: js.Any = js.native
     var start: js.Any = js.native
@@ -46,6 +45,7 @@ object progressMod extends js.Object {
     var tokens: js.Any = js.native
     var total: Double = js.native
     var width: js.Any = js.native
+    def currentAmount(value: Double): js.Any = js.native
     /**
       * "interrupt" the progress bar and write a message above it.
       */

@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
   - typings.kefir.AnonType[V]
-  - typings.kefir.AnonError[E]
-  - typings.kefir.AnonEnd
+  - typings.kefir.AnonTypeValue[E]
+  - typings.kefir.AnonValueVoid
 */
 trait Event[V, E] extends js.Object
 
@@ -22,13 +22,13 @@ object Event {
     __obj.asInstanceOf[Event[V, E]]
   }
   @scala.inline
-  def AnonError[V, E](`type`: error, value: E): Event[V, E] = {
+  def AnonTypeValue[V, E](`type`: error, value: E): Event[V, E] = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Event[V, E]]
   }
   @scala.inline
-  def AnonEnd[V, E](`type`: end, value: Unit): Event[V, E] = {
+  def AnonValueVoid[V, E](`type`: end, value: Unit): Event[V, E] = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Event[V, E]]

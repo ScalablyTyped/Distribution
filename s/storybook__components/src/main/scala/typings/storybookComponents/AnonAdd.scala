@@ -4,158 +4,159 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AnonAdd extends js.Object {
-  var add: String
-  var admin: String
-  var alert: String
-  var arrowdown: String
-  var arrowleft: String
-  var arrowleftalt: String
-  var arrowright: String
-  var arrowrightalt: String
-  var arrowup: String
-  var back: String
-  var basket: String
-  var batchaccept: String
-  var batchdeny: String
-  var beaker: String
-  var bell: String
-  var bitbucket: String
-  var book: String
-  var bookmark: String
-  var bookmarkhollow: String
-  var bottombar: String
-  var box: String
-  var branch: String
-  var browser: String
-  var button: String
-  var calendar: String
-  var camera: String
-  var category: String
-  var certificate: String
-  var check: String
-  var chevrondown: String
-  var chroma: String
-  var circle: String
-  var circlehollow: String
-  var close: String
-  var closeAlt: String
-  var cog: String
-  var comment: String
-  var commit: String
-  var compass: String
-  var component: String
-  var copy: String
-  var cpu: String
-  var credit: String
-  var cross: String
-  var dashboard: String
-  var database: String
-  var delete: String
-  var discord: String
-  var docchart: String
-  var doclist: String
-  var document: String
-  var download: String
-  var edit: String
-  var ellipsis: String
-  var email: String
-  var expand: String
-  var expandalt: String
-  var eye: String
-  var eyeclose: String
-  var facebook: String
-  var facehappy: String
-  var faceneutral: String
-  var facesad: String
-  var filter: String
-  var flag: String
-  var folder: String
-  var form: String
-  var gdrive: String
-  var github: String
-  var gitlab: String
-  var globe: String
-  var google: String
-  var graphbar: String
-  var graphline: String
-  var graphql: String
-  var grid: String
-  var grow: String
-  var heart: String
-  var hearthollow: String
-  var home: String
-  var hourglass: String
-  var info: String
-  var key: String
-  var lightning: String
-  var link: String
-  var listunordered: String
-  var location: String
-  var lock: String
-  var medium: String
-  var memory: String
-  var menu: String
-  var merge: String
-  var mirror: String
-  var mobile: String
-  var nut: String
-  var outbox: String
-  var paintbrush: String
-  var paperclip: String
-  var paragraph: String
-  var phone: String
-  var photo: String
-  var pin: String
-  var play: String
-  var plus: String
-  var power: String
-  var print: String
-  var proceed: String
-  var profile: String
-  var pullrequest: String
-  var question: String
-  var redirect: String
-  var redux: String
-  var reply: String
-  var repository: String
-  var requestchange: String
-  var rss: String
-  var search: String
-  var share: String
-  var shield: String
-  var sidebar: String
-  var sidebaralt: String
-  var speaker: String
-  var star: String
-  var starhollow: String
-  var stop: String
-  var structure: String
-  var subtract: String
-  var support: String
-  var switchalt: String
-  var sync: String
-  var tablet: String
-  var thumbsup: String
-  var time: String
-  var timer: String
-  var transfer: String
-  var trash: String
-  var twitter: String
-  var undo: String
-  var unlock: String
-  var upload: String
-  var user: String
-  var useradd: String
-  var useralt: String
-  var users: String
-  var video: String
-  var watch: String
-  var wrench: String
-  var youtube: String
-  var zoom: String
-  var zoomout: String
-  var zoomreset: String
+  var add: String = js.native
+  var admin: String = js.native
+  var alert: String = js.native
+  var arrowdown: String = js.native
+  var arrowleft: String = js.native
+  var arrowleftalt: String = js.native
+  var arrowright: String = js.native
+  var arrowrightalt: String = js.native
+  var arrowup: String = js.native
+  var back: String = js.native
+  var basket: String = js.native
+  var batchaccept: String = js.native
+  var batchdeny: String = js.native
+  var beaker: String = js.native
+  var bell: String = js.native
+  var bitbucket: String = js.native
+  var book: String = js.native
+  var bookmark: String = js.native
+  var bookmarkhollow: String = js.native
+  var bottombar: String = js.native
+  var box: String = js.native
+  var branch: String = js.native
+  var browser: String = js.native
+  var button: String = js.native
+  var calendar: String = js.native
+  var camera: String = js.native
+  var category: String = js.native
+  var certificate: String = js.native
+  var check: String = js.native
+  var chevrondown: String = js.native
+  var chroma: String = js.native
+  var circle: String = js.native
+  var circlehollow: String = js.native
+  var close: String = js.native
+  var closeAlt: String = js.native
+  var cog: String = js.native
+  var comment: String = js.native
+  var commit: String = js.native
+  var compass: String = js.native
+  var component: String = js.native
+  var copy: String = js.native
+  var cpu: String = js.native
+  var credit: String = js.native
+  var cross: String = js.native
+  var dashboard: String = js.native
+  var database: String = js.native
+  var delete: String = js.native
+  var discord: String = js.native
+  var docchart: String = js.native
+  var doclist: String = js.native
+  var document: String = js.native
+  var download: String = js.native
+  var edit: String = js.native
+  var ellipsis: String = js.native
+  var email: String = js.native
+  var expand: String = js.native
+  var expandalt: String = js.native
+  var eye: String = js.native
+  var eyeclose: String = js.native
+  var facebook: String = js.native
+  var facehappy: String = js.native
+  var faceneutral: String = js.native
+  var facesad: String = js.native
+  var filter: String = js.native
+  var flag: String = js.native
+  var folder: String = js.native
+  var form: String = js.native
+  var gdrive: String = js.native
+  var github: String = js.native
+  var gitlab: String = js.native
+  var globe: String = js.native
+  var google: String = js.native
+  var graphbar: String = js.native
+  var graphline: String = js.native
+  var graphql: String = js.native
+  var grid: String = js.native
+  var grow: String = js.native
+  var heart: String = js.native
+  var hearthollow: String = js.native
+  var home: String = js.native
+  var hourglass: String = js.native
+  var info: String = js.native
+  var key: String = js.native
+  var lightning: String = js.native
+  var link: String = js.native
+  var listunordered: String = js.native
+  var location: String = js.native
+  var lock: String = js.native
+  var medium: String = js.native
+  var memory: String = js.native
+  var menu: String = js.native
+  var merge: String = js.native
+  var mirror: String = js.native
+  var mobile: String = js.native
+  var nut: String = js.native
+  var outbox: String = js.native
+  var paintbrush: String = js.native
+  var paperclip: String = js.native
+  var paragraph: String = js.native
+  var phone: String = js.native
+  var photo: String = js.native
+  var pin: String = js.native
+  var play: String = js.native
+  var plus: String = js.native
+  var power: String = js.native
+  var print: String = js.native
+  var proceed: String = js.native
+  var profile: String = js.native
+  var pullrequest: String = js.native
+  var question: String = js.native
+  var redirect: String = js.native
+  var redux: String = js.native
+  var reply: String = js.native
+  var repository: String = js.native
+  var requestchange: String = js.native
+  var rss: String = js.native
+  var search: String = js.native
+  var share: String = js.native
+  var shield: String = js.native
+  var sidebar: String = js.native
+  var sidebaralt: String = js.native
+  var speaker: String = js.native
+  var star: String = js.native
+  var starhollow: String = js.native
+  var stop: String = js.native
+  var structure: String = js.native
+  var subtract: String = js.native
+  var support: String = js.native
+  var switchalt: String = js.native
+  var sync: String = js.native
+  var tablet: String = js.native
+  var thumbsup: String = js.native
+  var time: String = js.native
+  var timer: String = js.native
+  var transfer: String = js.native
+  var trash: String = js.native
+  var twitter: String = js.native
+  var undo: String = js.native
+  var unlock: String = js.native
+  var upload: String = js.native
+  var user: String = js.native
+  var useradd: String = js.native
+  var useralt: String = js.native
+  var users: String = js.native
+  var video: String = js.native
+  var watch: String = js.native
+  var wrench: String = js.native
+  var youtube: String = js.native
+  var zoom: String = js.native
+  var zoomout: String = js.native
+  var zoomreset: String = js.native
 }
 
 object AnonAdd {

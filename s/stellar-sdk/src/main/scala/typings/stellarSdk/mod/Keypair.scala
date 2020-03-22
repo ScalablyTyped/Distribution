@@ -2,7 +2,7 @@ package typings.stellarSdk.mod
 
 import typings.node.Buffer
 import typings.stellarBase.AnonPublicKey
-import typings.stellarBase.AnonPublicKeyType
+import typings.stellarBase.AnonType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 class Keypair protected ()
   extends typings.stellarBase.mod.Keypair {
   def this(keys: AnonPublicKey) = this()
-  def this(keys: AnonPublicKeyType) = this()
+  def this(keys: AnonType) = this()
 }
 
 /* static members */

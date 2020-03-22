@@ -10,21 +10,21 @@ import scala.scalajs.js.annotation._
 @js.native
 object updatesMod extends js.Object {
   /* Rewritten from type alias, can be one of: 
-    - typings.expo.AnonFalse
     - typings.expo.AnonIsAvailable
+    - typings.expo.AnonManifest
   */
   trait UpdateCheckResult extends js.Object
   
   /* Rewritten from type alias, can be one of: 
-    - typings.expo.AnonDownloadProgress
-    - typings.expo.AnonDownloadFinished
-    - typings.expo.AnonErrorMessage
+    - typings.expo.Anon0
+    - typings.expo.AnonManifestType
+    - typings.expo.AnonMessage
   */
   trait UpdateEvent extends js.Object
   
   /* Rewritten from type alias, can be one of: 
-    - typings.expo.AnonFalseIsNew
     - typings.expo.AnonIsNew
+    - typings.expo.AnonIsNewManifest
   */
   trait UpdateFetchResult extends js.Object
   

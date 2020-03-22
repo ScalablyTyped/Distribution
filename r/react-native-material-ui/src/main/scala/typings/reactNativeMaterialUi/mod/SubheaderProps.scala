@@ -1,6 +1,6 @@
 package typings.reactNativeMaterialUi.mod
 
-import typings.reactNativeMaterialUi.AnonContainerText
+import typings.reactNativeMaterialUi.AnonText
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait SubheaderProps extends js.Object {
   var inset: js.UndefOr[Boolean] = js.undefined
   var lines: js.UndefOr[Double] = js.undefined
-  var style: js.UndefOr[AnonContainerText] = js.undefined
+  var style: js.UndefOr[AnonText] = js.undefined
   var text: String
 }
 
@@ -18,7 +18,7 @@ object SubheaderProps {
     text: String,
     inset: js.UndefOr[Boolean] = js.undefined,
     lines: Int | Double = null,
-    style: AnonContainerText = null
+    style: AnonText = null
   ): SubheaderProps = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
     if (!js.isUndefined(inset)) __obj.updateDynamic("inset")(inset.asInstanceOf[js.Any])

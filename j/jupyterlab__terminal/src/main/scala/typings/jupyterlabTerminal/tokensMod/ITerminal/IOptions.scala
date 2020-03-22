@@ -15,7 +15,7 @@ trait IOptions extends js.Object {
   /**
     * The font family used to render text.
     */
-  var fontFamily: String | Null
+  var fontFamily: js.UndefOr[String] = js.undefined
   /**
     * The font size of the terminal in pixels.
     */
@@ -27,7 +27,7 @@ trait IOptions extends js.Object {
   /**
     * The line height used to render text.
     */
-  var lineHeight: Double | Null
+  var lineHeight: js.UndefOr[Double] = js.undefined
   /**
     * Whether to enable using Ctrl+V to paste.
     *
@@ -42,7 +42,7 @@ trait IOptions extends js.Object {
     * The amount of buffer scrollback to be used
     * with the terminal
     */
-  var scrollback: Double | Null
+  var scrollback: js.UndefOr[Double] = js.undefined
   /**
     * Whether to shut down the session when closing a terminal or not.
     */

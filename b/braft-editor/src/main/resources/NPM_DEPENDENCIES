@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "braft-editor" : "2.3.8"
+      "braft-editor" : "2.3.9"
     }
   ],
   "test-dependencies" : [
     {
-      "braft-editor" : "2.3.8"
+      "braft-editor" : "2.3.9"
     }
   ],
   "compile-devDependencies" : [

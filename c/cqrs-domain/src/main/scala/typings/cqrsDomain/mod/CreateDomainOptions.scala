@@ -2,7 +2,7 @@ package typings.cqrsDomain.mod
 
 import typings.cqrsDomain.AnonAuthSource
 import typings.cqrsDomain.AnonDb
-import typings.cqrsDomain.AnonDbHost
+import typings.cqrsDomain.AnonHost
 import typings.cqrsDomain.cqrsDomainBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -26,7 +26,7 @@ trait CreateDomainOptions extends js.Object {
     * currently supports: mongodb, redis, tingodb and inmemory
     * hint settings like: [eventstore](https://github.com/adrai/node-eventstore#provide-implementation-for-storage)
     */
-  var deduplication: js.UndefOr[AnonDbHost] = js.undefined
+  var deduplication: js.UndefOr[AnonHost] = js.undefined
   /**
     * the path to the "working directory"
     * can be structured like
@@ -67,7 +67,7 @@ object CreateDomainOptions {
     domainPath: String,
     aggregateLock: AnonDb = null,
     commandRejectedEventName: String = null,
-    deduplication: AnonDbHost = null,
+    deduplication: AnonHost = null,
     eventStore: AnonAuthSource = null,
     retryOnConcurrencyTimeout: Int | Double = null,
     snapshotThreshold: Int | Double = null,

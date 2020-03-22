@@ -1,6 +1,5 @@
 package typings.antDesignReactNative.inputItemMod
 
-import typings.antDesignReactNative.PartialInputItemStyle
 import typings.antDesignReactNative.antDesignReactNativeStrings.URL
 import typings.antDesignReactNative.antDesignReactNativeStrings.`box-none`
 import typings.antDesignReactNative.antDesignReactNativeStrings.`box-only`
@@ -73,9 +72,11 @@ import typings.antDesignReactNative.antDesignReactNativeStrings.username
 import typings.antDesignReactNative.antDesignReactNativeStrings.words
 import typings.antDesignReactNative.antDesignReactNativeStrings.yes
 import typings.antDesignReactNative.antDesignReactNativeStrings.yesExcludeDescendants
-import typings.antDesignReactNative.inputItemPropsTypeMod.InputEventHandler
+import typings.antDesignReactNative.inputItemPropsTypeMod.InputItemPropsType
+import typings.antDesignReactNative.inputItemStyleMod.InputItemStyle
+import typings.antDesignReactNative.libStyleMod.WithThemeStyles
 import typings.react.mod.ReactNode
-import typings.reactNative.AnonEndStart
+import typings.reactNative.AnonStart
 import typings.reactNative.mod.AccessibilityActionEvent
 import typings.reactNative.mod.AccessibilityActionInfo
 import typings.reactNative.mod.AccessibilityRole
@@ -99,14 +100,15 @@ import typings.reactNative.mod.TextInputScrollEventData
 import typings.reactNative.mod.TextInputSelectionChangeEventData
 import typings.reactNative.mod.TextInputSubmitEditingEventData
 import typings.reactNative.mod.TextStyle
+import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined parent @ant-design/react-native.@ant-design/react-native/lib/input-item/PropsType.InputItemPropsType */
-/* Inlined parent @ant-design/react-native.@ant-design/react-native/lib/input-item.TextInputProps */
-/* Inlined parent @ant-design/react-native.@ant-design/react-native/lib/style.WithThemeStyles<@ant-design/react-native.@ant-design/react-native/lib/input-item/style.InputItemStyle> */
-trait InputItemProps extends js.Object {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.antDesignReactNative.inputItemMod.TextInputProps because var conflicts: defaultValue, editable, maxLength, placeholder, value. Inlined onAccessibilityTap, textContentType, pointerEvents, tvParallaxTiltAngle, returnKeyLabel, onResponderGrant, onResponderStart, underlineColorAndroid, placeholderTextColor, accessibilityState, accessibilityRole, textAlignVertical, selectionColor, textBreakStrategy, keyboardType, onStartShouldSetResponder, multiline, accessibilityElementsHidden, onStartShouldSetResponderCapture, tvParallaxMagnification, hitSlop, onTouchStart, selectionState, maxFontSizeMultiplier, style, accessibilityStates, inlineImageLeft, dataDetectorTypes, blurOnSubmit, onScroll, accessibilityTraits, tvParallaxShiftDistanceY, onContentSizeChange, onResponderTerminate, onTouchMove, onTouchEnd, secureTextEntry, onAccessibilityAction, spellCheck, onMoveShouldSetResponderCapture, returnKeyType, onSubmitEditing, rejectResponderTermination, inlineImagePadding, selectTextOnFocus, onEndEditing, autoCapitalize, isTVSelectable, onLayout, onKeyPress, accessibilityLiveRegion, disableFullscreenUI, allowFontScaling, clearTextOnFocus, tvParallaxProperties, onTouchEndCapture, onResponderMove, accessibilityLabel, shouldRasterizeIOS, numberOfLines, contextMenuHidden, collapsable, enablesReturnKeyAutomatically, tvParallaxShiftDistanceX, renderToHardwareTextureAndroid, onResponderReject, onMoveShouldSetResponder, needsOffscreenAlphaCompositing, accessibilityIgnoresInvertColors, keyboardAppearance, onResponderEnd, inputAccessoryViewID, clearButtonMode, removeClippedSubviews, importantForAccessibility, accessibilityHint, importantForAutofill, onMagicTap, autoCompleteType, autoFocus, passwordRules, onResponderRelease, onTouchCancel, hasTVPreferredFocus, onSelectionChange, onChangeText, nativeID, accessibilityComponentType, selection, testID, caretHidden, accessibilityViewIsModal, accessible, scrollEnabled, autoCorrect, onResponderTerminationRequest, accessibilityActions */ trait InputItemProps
+  extends InputItemPropsType
+     with WithThemeStyles[InputItemStyle] {
   var accessibilityActions: js.UndefOr[js.Array[AccessibilityActionInfo]] = js.undefined
   var accessibilityComponentType: js.UndefOr[none | button | radiobutton_checked | radiobutton_unchecked] = js.undefined
   var accessibilityElementsHidden: js.UndefOr[Boolean] = js.undefined
@@ -129,19 +131,13 @@ trait InputItemProps extends js.Object {
   var autoFocus: js.UndefOr[Boolean] = js.undefined
   var blurOnSubmit: js.UndefOr[Boolean] = js.undefined
   var caretHidden: js.UndefOr[Boolean] = js.undefined
-  var clear: js.UndefOr[Boolean] = js.undefined
   var clearButtonMode: js.UndefOr[never | `while-editing` | `unless-editing` | always] = js.undefined
   var clearTextOnFocus: js.UndefOr[Boolean] = js.undefined
   var collapsable: js.UndefOr[Boolean] = js.undefined
   var contextMenuHidden: js.UndefOr[Boolean] = js.undefined
   var dataDetectorTypes: js.UndefOr[DataDetectorTypes | js.Array[DataDetectorTypes]] = js.undefined
-  var defaultValue: js.UndefOr[String] = js.undefined
   var disableFullscreenUI: js.UndefOr[Boolean] = js.undefined
-  var disabled: js.UndefOr[Boolean] = js.undefined
-  var editable: js.UndefOr[Boolean] = js.undefined
   var enablesReturnKeyAutomatically: js.UndefOr[Boolean] = js.undefined
-  var error: js.UndefOr[Boolean] = js.undefined
-  var extra: js.UndefOr[ReactNode] = js.undefined
   var hasTVPreferredFocus: js.UndefOr[Boolean] = js.undefined
   var hitSlop: js.UndefOr[Insets] = js.undefined
   var importantForAccessibility: js.UndefOr[auto | yes | no | `no-hide-descendants`] = js.undefined
@@ -152,21 +148,14 @@ trait InputItemProps extends js.Object {
   var isTVSelectable: js.UndefOr[Boolean] = js.undefined
   var keyboardAppearance: js.UndefOr[typings.antDesignReactNative.antDesignReactNativeStrings.default | light | dark] = js.undefined
   var keyboardType: js.UndefOr[KeyboardTypeOptions] = js.undefined
-  var labelNumber: js.UndefOr[Double] = js.undefined
-  var labelPosition: js.UndefOr[left | top] = js.undefined
   var last: js.UndefOr[Boolean] = js.undefined
-  var locale: js.UndefOr[js.Object] = js.undefined
   var maxFontSizeMultiplier: js.UndefOr[Double] = js.undefined
-  var maxLength: js.UndefOr[Double] = js.undefined
   var multiline: js.UndefOr[Boolean] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
   var nativeID: js.UndefOr[String] = js.undefined
   var needsOffscreenAlphaCompositing: js.UndefOr[Boolean] = js.undefined
   var numberOfLines: js.UndefOr[Double] = js.undefined
   var onAccessibilityAction: js.UndefOr[js.Function1[/* event */ AccessibilityActionEvent, Unit]] = js.undefined
   var onAccessibilityTap: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onBlur: js.UndefOr[InputEventHandler] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.undefined
   var onChangeText: js.UndefOr[js.Function1[/* text */ String, Unit]] = js.undefined
   var onContentSizeChange: js.UndefOr[
     js.Function1[/* e */ NativeSyntheticEvent[TextInputContentSizeChangeEventData], Unit]
@@ -174,7 +163,6 @@ trait InputItemProps extends js.Object {
   var onEndEditing: js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[TextInputEndEditingEventData], Unit]] = js.undefined
   var onErrorClick: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   var onExtraClick: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
-  var onFocus: js.UndefOr[InputEventHandler] = js.undefined
   var onKeyPress: js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[TextInputKeyPressEventData], Unit]] = js.undefined
   var onLayout: js.UndefOr[js.Function1[/* event */ LayoutChangeEvent, Unit]] = js.undefined
   var onMagicTap: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -202,9 +190,7 @@ trait InputItemProps extends js.Object {
   var onTouchEndCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   var onTouchMove: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   var onTouchStart: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
-  var onVirtualKeyboardConfirm: js.UndefOr[InputEventHandler] = js.undefined
   var passwordRules: js.UndefOr[String] = js.undefined
-  var placeholder: js.UndefOr[String] = js.undefined
   var placeholderTextColor: js.UndefOr[String] = js.undefined
   var pointerEvents: js.UndefOr[`box-none` | none | `box-only` | auto] = js.undefined
   var rejectResponderTermination: js.UndefOr[Boolean] = js.undefined
@@ -215,15 +201,13 @@ trait InputItemProps extends js.Object {
   var scrollEnabled: js.UndefOr[Boolean] = js.undefined
   var secureTextEntry: js.UndefOr[Boolean] = js.undefined
   var selectTextOnFocus: js.UndefOr[Boolean] = js.undefined
-  var selection: js.UndefOr[AnonEndStart] = js.undefined
+  var selection: js.UndefOr[AnonStart] = js.undefined
   var selectionColor: js.UndefOr[String] = js.undefined
   var selectionState: js.UndefOr[DocumentSelectionState] = js.undefined
   var shouldRasterizeIOS: js.UndefOr[Boolean] = js.undefined
   var spellCheck: js.UndefOr[Boolean] = js.undefined
   var style: js.UndefOr[StyleProp[TextStyle]] = js.undefined
-  var styles: js.UndefOr[PartialInputItemStyle] = js.undefined
   var testID: js.UndefOr[String] = js.undefined
-  var textAlign: js.UndefOr[left | center] = js.undefined
   var textAlignVertical: js.UndefOr[auto | top | bottom | center] = js.undefined
   var textBreakStrategy: js.UndefOr[simple | highQuality | balanced] = js.undefined
   var textContentType: js.UndefOr[
@@ -234,10 +218,7 @@ trait InputItemProps extends js.Object {
   var tvParallaxShiftDistanceX: js.UndefOr[Double] = js.undefined
   var tvParallaxShiftDistanceY: js.UndefOr[Double] = js.undefined
   var tvParallaxTiltAngle: js.UndefOr[Double] = js.undefined
-  var `type`: js.UndefOr[text | bankCard | phone | password | number | digit | KeyboardTypeOptions] = js.undefined
   var underlineColorAndroid: js.UndefOr[String] = js.undefined
-  var updatePlaceholder: js.UndefOr[Boolean] = js.undefined
-  var value: js.UndefOr[String] = js.undefined
 }
 
 object InputItemProps {
@@ -343,13 +324,13 @@ object InputItemProps {
     scrollEnabled: js.UndefOr[Boolean] = js.undefined,
     secureTextEntry: js.UndefOr[Boolean] = js.undefined,
     selectTextOnFocus: js.UndefOr[Boolean] = js.undefined,
-    selection: AnonEndStart = null,
+    selection: AnonStart = null,
     selectionColor: String = null,
     selectionState: DocumentSelectionState = null,
     shouldRasterizeIOS: js.UndefOr[Boolean] = js.undefined,
     spellCheck: js.UndefOr[Boolean] = js.undefined,
     style: StyleProp[TextStyle] = null,
-    styles: PartialInputItemStyle = null,
+    styles: Partial[InputItemStyle] = null,
     testID: String = null,
     textAlign: left | center = null,
     textAlignVertical: auto | top | bottom | center = null,

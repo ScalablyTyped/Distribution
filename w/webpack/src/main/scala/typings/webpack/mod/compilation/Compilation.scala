@@ -4,7 +4,7 @@ import typings.std.Map
 import typings.tapable.mod.Tapable
 import typings.webpack.AnonBasename
 import typings.webpack.AnonJavascript
-import typings.webpack.TypeofClassDependency
+import typings.webpack.TypeofDependency
 import typings.webpack.mod.Compiler_
 import typings.webpack.mod.Logger
 import typings.webpack.mod.SortableSet
@@ -31,8 +31,8 @@ class Compilation () extends Tapable {
   var context: String = js.native
   var contextDependencies: SortableSet[String] = js.native
   var contextTimestamps: Map[String, Double] = js.native
-  var dependencyFactories: Map[TypeofClassDependency, Tapable] = js.native
-  var dependencyTemplates: Map[TypeofClassDependency, Tapable] = js.native
+  var dependencyFactories: Map[TypeofDependency, Tapable] = js.native
+  var dependencyTemplates: Map[TypeofDependency, Tapable] = js.native
   var entries: js.Array[_] = js.native
   var entrypoints: Map[_, _] = js.native
   var errors: js.Array[_] = js.native

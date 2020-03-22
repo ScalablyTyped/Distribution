@@ -1,23 +1,24 @@
 package typings.antd.selectMod
 
+import typings.antd.antdStrings.SECRET_COMBOBOX_MODE_DO_NOT_USE
+import typings.antd.antdStrings.combobox
+import typings.antd.antdStrings.multiple
+import typings.antd.antdStrings.tags
 import typings.antd.contextMod.ConfigConsumerProps
-import typings.antd.renderEmptyMod.RenderEmptyHandler
 import typings.react.mod.Component
+import typings.react.mod.RefObject
 import typings.react.mod._Global_.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Select[T]
-  extends Component[SelectProps[T], js.Object, js.Any] {
-  var rcSelect: js.Any = js.native
+trait Select[ValueType /* <: SelectValue */]
+  extends Component[SelectProps[ValueType], js.Object, js.Any] {
+  var selectRef: RefObject[typings.rcSelect.mod.default] = js.native
   def blur(): Unit = js.native
   def focus(): Unit = js.native
-  def getNotFoundContent(renderEmpty: RenderEmptyHandler): js.UndefOr[js.Object | Null] = js.native
-  def isCombobox(): Boolean = js.native
-  def renderSelect(hasGetPopupContainerGetPrefixClsRenderEmpty: ConfigConsumerProps): Element = js.native
-  def renderSuffixIcon(prefixCls: String): js.Object = js.native
-  def saveSelect(node: js.Any): Unit = js.native
+  def getMode(): js.UndefOr[multiple | tags | SECRET_COMBOBOX_MODE_DO_NOT_USE | combobox] = js.native
+  def renderSelect(hasGetPopupContainerGetPrefixClsRenderEmptyDirection: ConfigConsumerProps): Element = js.native
 }
 

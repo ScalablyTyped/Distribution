@@ -11,7 +11,7 @@ trait TransitionEvent extends js.Object {
     */
   var actions: js.UndefOr[Actions] = js.native
   /**
-    * [Required] A Boolean expression that when TRUE causes the actions to be performed and the "nextState" to be entered.
+    * Required. A Boolean expression that when TRUE causes the actions to be performed and the nextState to be entered.
     */
   var condition: Condition = js.native
   /**

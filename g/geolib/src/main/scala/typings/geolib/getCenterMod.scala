@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @JSImport("geolib/es/getCenter", JSImport.Namespace)
 @js.native
 object getCenterMod extends js.Object {
-  def default(points: js.Array[GeolibInputCoordinates]): `false` | AnonLatitudeLongitude = js.native
+  def default(points: js.Array[GeolibInputCoordinates]): `false` | AnonLongitude = js.native
 }
 

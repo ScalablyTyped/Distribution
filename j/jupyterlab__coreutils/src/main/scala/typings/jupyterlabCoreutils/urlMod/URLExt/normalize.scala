@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@jupyterlab/coreutils/lib/url", "URLExt.normalize")
 @js.native
 object normalize extends js.Object {
+  def apply(): js.UndefOr[scala.Nothing] = js.native
   /**
     * Normalize a url.
     */

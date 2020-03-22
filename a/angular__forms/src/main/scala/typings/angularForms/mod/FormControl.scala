@@ -1,7 +1,7 @@
 package typings.angularForms.mod
 
 import typings.angularForms.AnonEmitEvent
-import typings.angularForms.AnonEmitEventEmitModelToViewChange
+import typings.angularForms.AnonEmitModelToViewChange
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,7 +43,7 @@ class FormControl () extends AbstractControl {
   def this(formState: js.Any, validatorOrOpts: ValidatorFn, asyncValidator: js.Array[AsyncValidatorFn]) = this()
   def this(formState: js.Any, validatorOrOpts: ValidatorFn, asyncValidator: AsyncValidatorFn) = this()
   var _applyFormState: js.Any = js.native
-  def patchValue(value: js.Any, options: AnonEmitEventEmitModelToViewChange): Unit = js.native
+  def patchValue(value: js.Any, options: AnonEmitModelToViewChange): Unit = js.native
   /**
     * Register a listener for change events.
     *
@@ -57,6 +57,6 @@ class FormControl () extends AbstractControl {
     */
   def registerOnDisabledChange(fn: js.Function1[/* isDisabled */ Boolean, Unit]): Unit = js.native
   def reset(formState: js.Any, options: AnonEmitEvent): Unit = js.native
-  def setValue(value: js.Any, options: AnonEmitEventEmitModelToViewChange): Unit = js.native
+  def setValue(value: js.Any, options: AnonEmitModelToViewChange): Unit = js.native
 }
 

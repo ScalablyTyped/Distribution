@@ -28,7 +28,7 @@ import typings.reactNativeChartsWrapper.AnonAxisDependency
 import typings.reactNativeChartsWrapper.AnonDataIndex
 import typings.reactNativeChartsWrapper.AnonDigits
 import typings.reactNativeChartsWrapper.AnonDurationX
-import typings.reactNativeChartsWrapper.AnonLeftRight
+import typings.reactNativeChartsWrapper.AnonRight
 import typings.reactNativeChartsWrapper.AnonX
 import typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.BAR
 import typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.BUBBLE
@@ -146,7 +146,7 @@ object CombinedChartProps {
     viewPortOffsets: Offsets = null,
     visibleRange: AnonX = null,
     xAxis: xAxis = null,
-    yAxis: AnonLeftRight = null,
+    yAxis: AnonRight = null,
     zoom: AnonAxisDependency = null
   ): CombinedChartProps = {
     val __obj = js.Dynamic.literal()

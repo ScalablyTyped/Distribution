@@ -6,37 +6,33 @@ import scala.scalajs.js.annotation._
 
 trait AnonChannelIdChannelTitle extends js.Object {
   /**
-    * The ID that YouTube uses to uniquely identify the channel associated with the activity.
+    * The ID that YouTube uses to uniquely identify the subscribers channel. The resource_id object identifies the channel that the user subscribed to.
     */
   var channelId: String
   /**
-    * Channel title for the channel responsible for this activity
+    * The title of the channel that the subscription belongs to.
     */
   var channelTitle: String
   /**
-    * The description of the resource primarily associated with the activity.
+    * The subscriptions details.
     */
   var description: String
   /**
-    * The group ID associated with the activity.
-    */
-  var groupId: String
-  /**
-    * The date and time that the activity occurred. The value is specified in ISO 8601 (YYYY-MM-DDThh:mm:ss.sZ) format.
+    * The date and time that the subscription was created. The value is specified in ISO 8601 (YYYY-MM-DDThh:mm:ss.sZ) format.
     */
   var publishedAt: String
   /**
-    * A map of thumbnail images associated with the resource that is primarily associated with the activity.
+    * The id object contains information about the channel that the user subscribed to.
+    */
+  var resourceId: AnonChannelIdString
+  /**
+    * A map of thumbnail images associated with the subscription. For each object in the map, the key is the name of the thumbnail image, and the value is an object that contains other information about the thumbnail.
     */
   var thumbnails: GoogleApiYouTubeThumbnailResource
   /**
-    * The title of the resource primarily associated with the activity.
+    * The subscriptions title.
     */
   var title: String
-  /**
-    * The type of activity that the resource describes.
-    */
-  var `type`: String
 }
 
 object AnonChannelIdChannelTitle {
@@ -45,14 +41,13 @@ object AnonChannelIdChannelTitle {
     channelId: String,
     channelTitle: String,
     description: String,
-    groupId: String,
     publishedAt: String,
+    resourceId: AnonChannelIdString,
     thumbnails: GoogleApiYouTubeThumbnailResource,
-    title: String,
-    `type`: String
+    title: String
   ): AnonChannelIdChannelTitle = {
-    val __obj = js.Dynamic.literal(channelId = channelId.asInstanceOf[js.Any], channelTitle = channelTitle.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], groupId = groupId.asInstanceOf[js.Any], publishedAt = publishedAt.asInstanceOf[js.Any], thumbnails = thumbnails.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(channelId = channelId.asInstanceOf[js.Any], channelTitle = channelTitle.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], publishedAt = publishedAt.asInstanceOf[js.Any], resourceId = resourceId.asInstanceOf[js.Any], thumbnails = thumbnails.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[AnonChannelIdChannelTitle]
   }
 }

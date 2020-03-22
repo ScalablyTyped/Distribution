@@ -27,7 +27,7 @@ object textMod extends js.Object {
   @js.native
   object default extends js.Object {
     var defaultProps: TextTypeProps = js.native
-    var propTypes: AnonKnobOnChange = js.native
+    var propTypes: AnonOnChange = js.native
     def deserialize(value: String): String = js.native
     def serialize(value: String): String = js.native
   }

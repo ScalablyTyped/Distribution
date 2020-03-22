@@ -1,8 +1,5 @@
 package typings.rcTable.interfaceMod
 
-import typings.rcTable.rcTableStrings.center
-import typings.rcTable.rcTableStrings.left
-import typings.rcTable.rcTableStrings.right
 import typings.react.mod.HTMLAttributes
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
@@ -12,56 +9,46 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ColumnType[ValueType] extends js.Object {
-  var align: js.UndefOr[left | center | right] = js.undefined
-  var children: js.UndefOr[js.Array[ColumnType[DefaultValueType]]] = js.undefined
-  var className: js.UndefOr[String] = js.undefined
+trait ColumnType[RecordType] extends ColumnSharedType[RecordType] {
   var colSpan: js.UndefOr[Double] = js.undefined
-  var dataIndex: js.UndefOr[Key] = js.undefined
-  var ellipsis: js.UndefOr[Boolean] = js.undefined
-  var fixed: js.UndefOr[FixedType] = js.undefined
-  var key: js.UndefOr[Key] = js.undefined
-  var onCell: js.UndefOr[GetComponentProps[ValueType]] = js.undefined
+  var dataIndex: js.UndefOr[DataIndex] = js.undefined
+  var onCell: js.UndefOr[GetComponentProps[RecordType]] = js.undefined
   /** @deprecated Please use `onCell` instead */
   var onCellClick: js.UndefOr[
-    js.Function2[/* record */ ValueType, /* e */ MouseEvent[HTMLElement, NativeMouseEvent], Unit]
+    js.Function2[/* record */ RecordType, /* e */ MouseEvent[HTMLElement, NativeMouseEvent], Unit]
   ] = js.undefined
-  var onHeaderCell: js.UndefOr[GetComponentProps[ColumnType[DefaultValueType]]] = js.undefined
   var render: js.UndefOr[
     js.Function3[
       /* value */ js.Any, 
-      /* record */ ValueType, 
+      /* record */ RecordType, 
       /* index */ Double, 
-      ReactNode | RenderedCell
+      ReactNode | RenderedCell[RecordType]
     ]
   ] = js.undefined
   var rowSpan: js.UndefOr[Double] = js.undefined
-  var title: js.UndefOr[ReactNode] = js.undefined
   var width: js.UndefOr[Double | String] = js.undefined
 }
 
 object ColumnType {
   @scala.inline
-  def apply[ValueType](
-    align: left | center | right = null,
-    children: js.Array[ColumnType[DefaultValueType]] = null,
+  def apply[RecordType](
+    align: AlignType = null,
     className: String = null,
     colSpan: Int | Double = null,
-    dataIndex: Key = null,
+    dataIndex: DataIndex = null,
     ellipsis: js.UndefOr[Boolean] = js.undefined,
     fixed: FixedType = null,
     key: Key = null,
-    onCell: (ValueType, /* index */ js.UndefOr[Double]) => HTMLAttributes[HTMLElement] = null,
-    onCellClick: (/* record */ ValueType, /* e */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit = null,
-    onHeaderCell: (ColumnType[DefaultValueType], /* index */ js.UndefOr[Double]) => HTMLAttributes[HTMLElement] = null,
-    render: (/* value */ js.Any, /* record */ ValueType, /* index */ Double) => ReactNode | RenderedCell = null,
+    onCell: (RecordType, /* index */ js.UndefOr[Double]) => HTMLAttributes[HTMLElement] = null,
+    onCellClick: (/* record */ RecordType, /* e */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit = null,
+    onHeaderCell: (/* import warning: importer.ImportType#apply Failed type conversion: rc-table.rc-table/lib/interface.ColumnsType<RecordType>[number] */ js.Any, /* index */ js.UndefOr[Double]) => HTMLAttributes[HTMLElement] = null,
+    render: (/* value */ js.Any, /* record */ RecordType, /* index */ Double) => ReactNode | RenderedCell[RecordType] = null,
     rowSpan: Int | Double = null,
     title: ReactNode = null,
     width: Double | String = null
-  ): ColumnType[ValueType] = {
+  ): ColumnType[RecordType] = {
     val __obj = js.Dynamic.literal()
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (colSpan != null) __obj.updateDynamic("colSpan")(colSpan.asInstanceOf[js.Any])
     if (dataIndex != null) __obj.updateDynamic("dataIndex")(dataIndex.asInstanceOf[js.Any])
@@ -75,7 +62,7 @@ object ColumnType {
     if (rowSpan != null) __obj.updateDynamic("rowSpan")(rowSpan.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ColumnType[ValueType]]
+    __obj.asInstanceOf[ColumnType[RecordType]]
   }
 }
 

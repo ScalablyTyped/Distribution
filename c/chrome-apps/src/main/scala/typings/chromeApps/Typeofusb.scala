@@ -25,7 +25,7 @@ trait Typeofusb extends js.Object {
   val SynchronizationType: AnonADAPTIVE = js.native
   /** Direction, Recipient, RequestType, and TransferType all map to their namesakes within the USB specification. */
   val TransferType: AnonBULK = js.native
-  val UsageType: Anon_DATA = js.native
+  val UsageType: AnonDATA_ = js.native
   /**
     * Event generated when a device is added to the system.
     * Events are only broadcast to apps that have permission to access the device.
@@ -140,7 +140,7 @@ trait Typeofusb extends js.Object {
     *                   If multiple filters are provided, devices matching any filter will be displayed.
     * @param callback Invoked with a list of chosen Devices.
     */
-  def getUserSelectedDevices(options: AnonFiltersMultiple, callback: js.Function1[/* devices */ js.Array[Device], Unit]): Unit = js.native
+  def getUserSelectedDevices(options: AnonMultiple, callback: js.Function1[/* devices */ js.Array[Device], Unit]): Unit = js.native
   /**
     * @description Performs an interrupt transfer on the specified device.
     * @param handle An open connection to the device.

@@ -1,7 +1,7 @@
 package typings.baidumapWebSdk.BMap
 
-import typings.baidumapWebSdk.AnonPoint
 import typings.baidumapWebSdk.AnonTarget
+import typings.baidumapWebSdk.AnonType
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -27,9 +27,9 @@ class InfoWindow protected () extends Overlay {
   def isOpen(): Boolean = js.native
   def maximize(): Unit = js.native
   def onclickclose(event: AnonTarget): Unit = js.native
-  def onclose(event: AnonPoint): Unit = js.native
+  def onclose(event: AnonType): Unit = js.native
   def onmaximize(event: AnonTarget): Unit = js.native
-  def onopen(event: AnonPoint): Unit = js.native
+  def onopen(event: AnonType): Unit = js.native
   def onrestore(event: AnonTarget): Unit = js.native
   def redraw(): Unit = js.native
   def removeEventListener(event: String, handler: Callback): Unit = js.native

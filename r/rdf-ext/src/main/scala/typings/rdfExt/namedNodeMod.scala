@@ -11,7 +11,7 @@ object namedNodeMod extends js.Object {
   @js.native
   trait NamedNodeExt extends NamedNode {
     def toCanonical(): String = js.native
-    def toJSON(): AnonTermTypeValueNamedNode = js.native
+    def toJSON(): AnonTermTypeValue = js.native
   }
   
 }

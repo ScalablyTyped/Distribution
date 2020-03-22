@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
   - typings.pulumiAws.pulumiAwsStrings.java8
   - typings.pulumiAws.pulumiAwsStrings.java11
   - typings.pulumiAws.pulumiAwsStrings.ruby2Dot5
+  - typings.pulumiAws.pulumiAwsStrings.ruby2Dot7
   - typings.pulumiAws.pulumiAwsStrings.`nodejs4Dot3-edge`
   - typings.pulumiAws.pulumiAwsStrings.nodejs4Dot3
   - typings.pulumiAws.pulumiAwsStrings.nodejs6Dot10
@@ -68,5 +69,7 @@ object Runtime {
   def python3Dot8: typings.pulumiAws.pulumiAwsStrings.python3Dot8 = this.cast("python3.8")
   @scala.inline
   def ruby2Dot5: typings.pulumiAws.pulumiAwsStrings.ruby2Dot5 = this.cast("ruby2.5")
+  @scala.inline
+  def ruby2Dot7: typings.pulumiAws.pulumiAwsStrings.ruby2Dot7 = this.cast("ruby2.7")
 }
 

@@ -7,6 +7,10 @@ import typings.iobroker.AnonId
 import typings.iobroker.AnonMode
 import typings.iobroker.AnonRequestEnum
 import typings.iobroker.AnonSorted
+import typings.iobroker.PartialChannelCommon
+import typings.iobroker.PartialObjectCommon
+import typings.iobroker.PartialState
+import typings.iobroker.PartialStateCommon
 import typings.iobroker.iobrokerStrings.message
 import typings.iobroker.iobrokerStrings.objectChange
 import typings.iobroker.iobrokerStrings.ready
@@ -14,7 +18,6 @@ import typings.iobroker.iobrokerStrings.stateChange
 import typings.iobroker.iobrokerStrings.unload
 import typings.node.Buffer
 import typings.std.Date
-import typings.std.Partial
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -193,37 +196,37 @@ trait Adapter extends js.Object {
     options: js.Any,
     callback: SetObjectCallback
   ): Unit = js.native
-  def createChannel(parentDevice: String, channelName: String, roleOrCommon: Partial[ChannelCommon]): Unit = js.native
+  def createChannel(parentDevice: String, channelName: String, roleOrCommon: PartialChannelCommon): Unit = js.native
   def createChannel(
     parentDevice: String,
     channelName: String,
-    roleOrCommon: Partial[ChannelCommon],
+    roleOrCommon: PartialChannelCommon,
     callback: SetObjectCallback
   ): Unit = js.native
   def createChannel(
     parentDevice: String,
     channelName: String,
-    roleOrCommon: Partial[ChannelCommon],
+    roleOrCommon: PartialChannelCommon,
     native: Record[String, _]
   ): Unit = js.native
   def createChannel(
     parentDevice: String,
     channelName: String,
-    roleOrCommon: Partial[ChannelCommon],
+    roleOrCommon: PartialChannelCommon,
     native: Record[String, _],
     callback: SetObjectCallback
   ): Unit = js.native
   def createChannel(
     parentDevice: String,
     channelName: String,
-    roleOrCommon: Partial[ChannelCommon],
+    roleOrCommon: PartialChannelCommon,
     native: Record[String, _],
     options: js.Any
   ): Unit = js.native
   def createChannel(
     parentDevice: String,
     channelName: String,
-    roleOrCommon: Partial[ChannelCommon],
+    roleOrCommon: PartialChannelCommon,
     native: Record[String, _],
     options: js.Any,
     callback: SetObjectCallback
@@ -239,17 +242,17 @@ trait Adapter extends js.Object {
     native: Record[String, _],
     options: js.Any
   ): js.Promise[NonNullCallbackReturnTypeOf[SetObjectCallback]] = js.native
-  def createChannelAsync(parentDevice: String, channelName: String, roleOrCommon: Partial[ChannelCommon]): js.Promise[NonNullCallbackReturnTypeOf[SetObjectCallback]] = js.native
+  def createChannelAsync(parentDevice: String, channelName: String, roleOrCommon: PartialChannelCommon): js.Promise[NonNullCallbackReturnTypeOf[SetObjectCallback]] = js.native
   def createChannelAsync(
     parentDevice: String,
     channelName: String,
-    roleOrCommon: Partial[ChannelCommon],
+    roleOrCommon: PartialChannelCommon,
     native: Record[String, _]
   ): js.Promise[NonNullCallbackReturnTypeOf[SetObjectCallback]] = js.native
   def createChannelAsync(
     parentDevice: String,
     channelName: String,
-    roleOrCommon: Partial[ChannelCommon],
+    roleOrCommon: PartialChannelCommon,
     native: Record[String, _],
     options: js.Any
   ): js.Promise[NonNullCallbackReturnTypeOf[SetObjectCallback]] = js.native
@@ -259,28 +262,28 @@ trait Adapter extends js.Object {
   /** creates an object with type device */
   def createDevice(deviceName: String): Unit = js.native
   def createDevice(deviceName: String, callback: SetObjectCallback): Unit = js.native
-  def createDevice(deviceName: String, common: Partial[ObjectCommon]): Unit = js.native
-  def createDevice(deviceName: String, common: Partial[ObjectCommon], callback: SetObjectCallback): Unit = js.native
-  def createDevice(deviceName: String, common: Partial[ObjectCommon], native: Record[String, _]): Unit = js.native
+  def createDevice(deviceName: String, common: PartialObjectCommon): Unit = js.native
+  def createDevice(deviceName: String, common: PartialObjectCommon, callback: SetObjectCallback): Unit = js.native
+  def createDevice(deviceName: String, common: PartialObjectCommon, native: Record[String, _]): Unit = js.native
   def createDevice(
     deviceName: String,
-    common: Partial[ObjectCommon],
+    common: PartialObjectCommon,
     native: Record[String, _],
     callback: SetObjectCallback
   ): Unit = js.native
-  def createDevice(deviceName: String, common: Partial[ObjectCommon], native: Record[String, _], options: js.Any): Unit = js.native
+  def createDevice(deviceName: String, common: PartialObjectCommon, native: Record[String, _], options: js.Any): Unit = js.native
   def createDevice(
     deviceName: String,
-    common: Partial[ObjectCommon],
+    common: PartialObjectCommon,
     native: Record[String, _],
     options: js.Any,
     callback: SetObjectCallback
   ): Unit = js.native
   /** creates an object with type device */
   def createDeviceAsync(deviceName: String): js.Promise[NonNullCallbackReturnTypeOf[SetObjectCallback]] = js.native
-  def createDeviceAsync(deviceName: String, common: Partial[ObjectCommon]): js.Promise[NonNullCallbackReturnTypeOf[SetObjectCallback]] = js.native
-  def createDeviceAsync(deviceName: String, common: Partial[ObjectCommon], native: Record[String, _]): js.Promise[NonNullCallbackReturnTypeOf[SetObjectCallback]] = js.native
-  def createDeviceAsync(deviceName: String, common: Partial[ObjectCommon], native: Record[String, _], options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetObjectCallback]] = js.native
+  def createDeviceAsync(deviceName: String, common: PartialObjectCommon): js.Promise[NonNullCallbackReturnTypeOf[SetObjectCallback]] = js.native
+  def createDeviceAsync(deviceName: String, common: PartialObjectCommon, native: Record[String, _]): js.Promise[NonNullCallbackReturnTypeOf[SetObjectCallback]] = js.native
+  def createDeviceAsync(deviceName: String, common: PartialObjectCommon, native: Record[String, _], options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetObjectCallback]] = js.native
   /**
     * Creates a state and the corresponding object. It must be located in a channel under a device
     */
@@ -326,26 +329,26 @@ trait Adapter extends js.Object {
     options: js.Any,
     callback: SetObjectCallback
   ): Unit = js.native
-  def createState(parentDevice: String, parentChannel: String, stateName: String, roleOrCommon: Partial[StateCommon]): Unit = js.native
+  def createState(parentDevice: String, parentChannel: String, stateName: String, roleOrCommon: PartialStateCommon): Unit = js.native
   def createState(
     parentDevice: String,
     parentChannel: String,
     stateName: String,
-    roleOrCommon: Partial[StateCommon],
+    roleOrCommon: PartialStateCommon,
     callback: SetObjectCallback
   ): Unit = js.native
   def createState(
     parentDevice: String,
     parentChannel: String,
     stateName: String,
-    roleOrCommon: Partial[StateCommon],
+    roleOrCommon: PartialStateCommon,
     native: Record[String, _]
   ): Unit = js.native
   def createState(
     parentDevice: String,
     parentChannel: String,
     stateName: String,
-    roleOrCommon: Partial[StateCommon],
+    roleOrCommon: PartialStateCommon,
     native: Record[String, _],
     callback: SetObjectCallback
   ): Unit = js.native
@@ -353,7 +356,7 @@ trait Adapter extends js.Object {
     parentDevice: String,
     parentChannel: String,
     stateName: String,
-    roleOrCommon: Partial[StateCommon],
+    roleOrCommon: PartialStateCommon,
     native: Record[String, _],
     options: js.Any
   ): Unit = js.native
@@ -361,7 +364,7 @@ trait Adapter extends js.Object {
     parentDevice: String,
     parentChannel: String,
     stateName: String,
-    roleOrCommon: Partial[StateCommon],
+    roleOrCommon: PartialStateCommon,
     native: Record[String, _],
     options: js.Any,
     callback: SetObjectCallback
@@ -386,19 +389,19 @@ trait Adapter extends js.Object {
     native: Record[String, _],
     options: js.Any
   ): js.Promise[NonNullCallbackReturnTypeOf[SetObjectCallback]] = js.native
-  def createStateAsync(parentDevice: String, parentChannel: String, stateName: String, roleOrCommon: Partial[StateCommon]): js.Promise[NonNullCallbackReturnTypeOf[SetObjectCallback]] = js.native
+  def createStateAsync(parentDevice: String, parentChannel: String, stateName: String, roleOrCommon: PartialStateCommon): js.Promise[NonNullCallbackReturnTypeOf[SetObjectCallback]] = js.native
   def createStateAsync(
     parentDevice: String,
     parentChannel: String,
     stateName: String,
-    roleOrCommon: Partial[StateCommon],
+    roleOrCommon: PartialStateCommon,
     native: Record[String, _]
   ): js.Promise[NonNullCallbackReturnTypeOf[SetObjectCallback]] = js.native
   def createStateAsync(
     parentDevice: String,
     parentChannel: String,
     stateName: String,
-    roleOrCommon: Partial[StateCommon],
+    roleOrCommon: PartialStateCommon,
     native: Record[String, _],
     options: js.Any
   ): js.Promise[NonNullCallbackReturnTypeOf[SetObjectCallback]] = js.native
@@ -1029,6 +1032,14 @@ trait Adapter extends js.Object {
   def setForeignState(id: String, state: Double, callback: SetStateCallback): Unit = js.native
   def setForeignState(id: String, state: Double, options: js.Any): Unit = js.native
   def setForeignState(id: String, state: Double, options: js.Any, callback: SetStateCallback): Unit = js.native
+  def setForeignState(id: String, state: PartialState): Unit = js.native
+  def setForeignState(id: String, state: PartialState, ack: Boolean): Unit = js.native
+  def setForeignState(id: String, state: PartialState, ack: Boolean, callback: SetStateCallback): Unit = js.native
+  def setForeignState(id: String, state: PartialState, ack: Boolean, options: js.Any): Unit = js.native
+  def setForeignState(id: String, state: PartialState, ack: Boolean, options: js.Any, callback: SetStateCallback): Unit = js.native
+  def setForeignState(id: String, state: PartialState, callback: SetStateCallback): Unit = js.native
+  def setForeignState(id: String, state: PartialState, options: js.Any): Unit = js.native
+  def setForeignState(id: String, state: PartialState, options: js.Any, callback: SetStateCallback): Unit = js.native
   def setForeignState(id: String, state: State): Unit = js.native
   def setForeignState(id: String, state: State, ack: Boolean): Unit = js.native
   def setForeignState(id: String, state: State, ack: Boolean, callback: SetStateCallback): Unit = js.native
@@ -1037,14 +1048,6 @@ trait Adapter extends js.Object {
   def setForeignState(id: String, state: State, callback: SetStateCallback): Unit = js.native
   def setForeignState(id: String, state: State, options: js.Any): Unit = js.native
   def setForeignState(id: String, state: State, options: js.Any, callback: SetStateCallback): Unit = js.native
-  def setForeignState(id: String, state: Partial[State]): Unit = js.native
-  def setForeignState(id: String, state: Partial[State], ack: Boolean): Unit = js.native
-  def setForeignState(id: String, state: Partial[State], ack: Boolean, callback: SetStateCallback): Unit = js.native
-  def setForeignState(id: String, state: Partial[State], ack: Boolean, options: js.Any): Unit = js.native
-  def setForeignState(id: String, state: Partial[State], ack: Boolean, options: js.Any, callback: SetStateCallback): Unit = js.native
-  def setForeignState(id: String, state: Partial[State], callback: SetStateCallback): Unit = js.native
-  def setForeignState(id: String, state: Partial[State], options: js.Any): Unit = js.native
-  def setForeignState(id: String, state: Partial[State], options: js.Any, callback: SetStateCallback): Unit = js.native
   /** Writes a value (which might not belong to this adapter) into the states DB. */
   def setForeignStateAsync(id: String, state: String): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
   def setForeignStateAsync(id: String, state: String, ack: Boolean): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
@@ -1058,14 +1061,14 @@ trait Adapter extends js.Object {
   def setForeignStateAsync(id: String, state: Double, ack: Boolean): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
   def setForeignStateAsync(id: String, state: Double, ack: Boolean, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
   def setForeignStateAsync(id: String, state: Double, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
+  def setForeignStateAsync(id: String, state: PartialState): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
+  def setForeignStateAsync(id: String, state: PartialState, ack: Boolean): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
+  def setForeignStateAsync(id: String, state: PartialState, ack: Boolean, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
+  def setForeignStateAsync(id: String, state: PartialState, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
   def setForeignStateAsync(id: String, state: State): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
   def setForeignStateAsync(id: String, state: State, ack: Boolean): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
   def setForeignStateAsync(id: String, state: State, ack: Boolean, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
   def setForeignStateAsync(id: String, state: State, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
-  def setForeignStateAsync(id: String, state: Partial[State]): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
-  def setForeignStateAsync(id: String, state: Partial[State], ack: Boolean): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
-  def setForeignStateAsync(id: String, state: Partial[State], ack: Boolean, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
-  def setForeignStateAsync(id: String, state: Partial[State], options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
   /** Writes a value (which might not belong to this adapter) into the states DB only if it has changed. */
   def setForeignStateChanged(id: String, state: String): Unit = js.native
   def setForeignStateChanged(id: String, state: String, ack: Boolean): Unit = js.native
@@ -1091,6 +1094,14 @@ trait Adapter extends js.Object {
   def setForeignStateChanged(id: String, state: Double, callback: SetStateChangedCallback): Unit = js.native
   def setForeignStateChanged(id: String, state: Double, options: js.Any): Unit = js.native
   def setForeignStateChanged(id: String, state: Double, options: js.Any, callback: SetStateChangedCallback): Unit = js.native
+  def setForeignStateChanged(id: String, state: PartialState): Unit = js.native
+  def setForeignStateChanged(id: String, state: PartialState, ack: Boolean): Unit = js.native
+  def setForeignStateChanged(id: String, state: PartialState, ack: Boolean, callback: SetStateChangedCallback): Unit = js.native
+  def setForeignStateChanged(id: String, state: PartialState, ack: Boolean, options: js.Any): Unit = js.native
+  def setForeignStateChanged(id: String, state: PartialState, ack: Boolean, options: js.Any, callback: SetStateChangedCallback): Unit = js.native
+  def setForeignStateChanged(id: String, state: PartialState, callback: SetStateChangedCallback): Unit = js.native
+  def setForeignStateChanged(id: String, state: PartialState, options: js.Any): Unit = js.native
+  def setForeignStateChanged(id: String, state: PartialState, options: js.Any, callback: SetStateChangedCallback): Unit = js.native
   def setForeignStateChanged(id: String, state: State): Unit = js.native
   def setForeignStateChanged(id: String, state: State, ack: Boolean): Unit = js.native
   def setForeignStateChanged(id: String, state: State, ack: Boolean, callback: SetStateChangedCallback): Unit = js.native
@@ -1099,20 +1110,6 @@ trait Adapter extends js.Object {
   def setForeignStateChanged(id: String, state: State, callback: SetStateChangedCallback): Unit = js.native
   def setForeignStateChanged(id: String, state: State, options: js.Any): Unit = js.native
   def setForeignStateChanged(id: String, state: State, options: js.Any, callback: SetStateChangedCallback): Unit = js.native
-  def setForeignStateChanged(id: String, state: Partial[State]): Unit = js.native
-  def setForeignStateChanged(id: String, state: Partial[State], ack: Boolean): Unit = js.native
-  def setForeignStateChanged(id: String, state: Partial[State], ack: Boolean, callback: SetStateChangedCallback): Unit = js.native
-  def setForeignStateChanged(id: String, state: Partial[State], ack: Boolean, options: js.Any): Unit = js.native
-  def setForeignStateChanged(
-    id: String,
-    state: Partial[State],
-    ack: Boolean,
-    options: js.Any,
-    callback: SetStateChangedCallback
-  ): Unit = js.native
-  def setForeignStateChanged(id: String, state: Partial[State], callback: SetStateChangedCallback): Unit = js.native
-  def setForeignStateChanged(id: String, state: Partial[State], options: js.Any): Unit = js.native
-  def setForeignStateChanged(id: String, state: Partial[State], options: js.Any, callback: SetStateChangedCallback): Unit = js.native
   /** Writes a value (which might not belong to this adapter) into the states DB only if it has changed. */
   def setForeignStateChangedAsync(id: String, state: String): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
   def setForeignStateChangedAsync(id: String, state: String, ack: Boolean): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
@@ -1126,14 +1123,14 @@ trait Adapter extends js.Object {
   def setForeignStateChangedAsync(id: String, state: Double, ack: Boolean): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
   def setForeignStateChangedAsync(id: String, state: Double, ack: Boolean, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
   def setForeignStateChangedAsync(id: String, state: Double, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
+  def setForeignStateChangedAsync(id: String, state: PartialState): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
+  def setForeignStateChangedAsync(id: String, state: PartialState, ack: Boolean): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
+  def setForeignStateChangedAsync(id: String, state: PartialState, ack: Boolean, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
+  def setForeignStateChangedAsync(id: String, state: PartialState, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
   def setForeignStateChangedAsync(id: String, state: State): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
   def setForeignStateChangedAsync(id: String, state: State, ack: Boolean): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
   def setForeignStateChangedAsync(id: String, state: State, ack: Boolean, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
   def setForeignStateChangedAsync(id: String, state: State, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
-  def setForeignStateChangedAsync(id: String, state: Partial[State]): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
-  def setForeignStateChangedAsync(id: String, state: Partial[State], ack: Boolean): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
-  def setForeignStateChangedAsync(id: String, state: Partial[State], ack: Boolean, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
-  def setForeignStateChangedAsync(id: String, state: Partial[State], options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
   /** Creates or overwrites an object in the object db */
   def setObject(id: String, obj: SettableObject): Unit = js.native
   def setObject(id: String, obj: SettableObject, callback: SetObjectCallback): Unit = js.native
@@ -1192,6 +1189,14 @@ trait Adapter extends js.Object {
   def setState(id: String, state: Double, callback: SetStateCallback): Unit = js.native
   def setState(id: String, state: Double, options: js.Any): Unit = js.native
   def setState(id: String, state: Double, options: js.Any, callback: SetStateCallback): Unit = js.native
+  def setState(id: String, state: PartialState): Unit = js.native
+  def setState(id: String, state: PartialState, ack: Boolean): Unit = js.native
+  def setState(id: String, state: PartialState, ack: Boolean, callback: SetStateCallback): Unit = js.native
+  def setState(id: String, state: PartialState, ack: Boolean, options: js.Any): Unit = js.native
+  def setState(id: String, state: PartialState, ack: Boolean, options: js.Any, callback: SetStateCallback): Unit = js.native
+  def setState(id: String, state: PartialState, callback: SetStateCallback): Unit = js.native
+  def setState(id: String, state: PartialState, options: js.Any): Unit = js.native
+  def setState(id: String, state: PartialState, options: js.Any, callback: SetStateCallback): Unit = js.native
   def setState(id: String, state: State): Unit = js.native
   def setState(id: String, state: State, ack: Boolean): Unit = js.native
   def setState(id: String, state: State, ack: Boolean, callback: SetStateCallback): Unit = js.native
@@ -1200,14 +1205,6 @@ trait Adapter extends js.Object {
   def setState(id: String, state: State, callback: SetStateCallback): Unit = js.native
   def setState(id: String, state: State, options: js.Any): Unit = js.native
   def setState(id: String, state: State, options: js.Any, callback: SetStateCallback): Unit = js.native
-  def setState(id: String, state: Partial[State]): Unit = js.native
-  def setState(id: String, state: Partial[State], ack: Boolean): Unit = js.native
-  def setState(id: String, state: Partial[State], ack: Boolean, callback: SetStateCallback): Unit = js.native
-  def setState(id: String, state: Partial[State], ack: Boolean, options: js.Any): Unit = js.native
-  def setState(id: String, state: Partial[State], ack: Boolean, options: js.Any, callback: SetStateCallback): Unit = js.native
-  def setState(id: String, state: Partial[State], callback: SetStateCallback): Unit = js.native
-  def setState(id: String, state: Partial[State], options: js.Any): Unit = js.native
-  def setState(id: String, state: Partial[State], options: js.Any, callback: SetStateCallback): Unit = js.native
   /** Writes a value into the states DB. */
   def setStateAsync(id: String, state: String): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
   def setStateAsync(id: String, state: String, ack: Boolean): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
@@ -1221,14 +1218,14 @@ trait Adapter extends js.Object {
   def setStateAsync(id: String, state: Double, ack: Boolean): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
   def setStateAsync(id: String, state: Double, ack: Boolean, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
   def setStateAsync(id: String, state: Double, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
+  def setStateAsync(id: String, state: PartialState): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
+  def setStateAsync(id: String, state: PartialState, ack: Boolean): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
+  def setStateAsync(id: String, state: PartialState, ack: Boolean, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
+  def setStateAsync(id: String, state: PartialState, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
   def setStateAsync(id: String, state: State): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
   def setStateAsync(id: String, state: State, ack: Boolean): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
   def setStateAsync(id: String, state: State, ack: Boolean, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
   def setStateAsync(id: String, state: State, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
-  def setStateAsync(id: String, state: Partial[State]): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
-  def setStateAsync(id: String, state: Partial[State], ack: Boolean): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
-  def setStateAsync(id: String, state: Partial[State], ack: Boolean, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
-  def setStateAsync(id: String, state: Partial[State], options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
   /** Writes a value into the states DB only if it has changed. */
   def setStateChanged(id: String, state: String): Unit = js.native
   def setStateChanged(id: String, state: String, ack: Boolean): Unit = js.native
@@ -1254,6 +1251,14 @@ trait Adapter extends js.Object {
   def setStateChanged(id: String, state: Double, callback: SetStateChangedCallback): Unit = js.native
   def setStateChanged(id: String, state: Double, options: js.Any): Unit = js.native
   def setStateChanged(id: String, state: Double, options: js.Any, callback: SetStateChangedCallback): Unit = js.native
+  def setStateChanged(id: String, state: PartialState): Unit = js.native
+  def setStateChanged(id: String, state: PartialState, ack: Boolean): Unit = js.native
+  def setStateChanged(id: String, state: PartialState, ack: Boolean, callback: SetStateChangedCallback): Unit = js.native
+  def setStateChanged(id: String, state: PartialState, ack: Boolean, options: js.Any): Unit = js.native
+  def setStateChanged(id: String, state: PartialState, ack: Boolean, options: js.Any, callback: SetStateChangedCallback): Unit = js.native
+  def setStateChanged(id: String, state: PartialState, callback: SetStateChangedCallback): Unit = js.native
+  def setStateChanged(id: String, state: PartialState, options: js.Any): Unit = js.native
+  def setStateChanged(id: String, state: PartialState, options: js.Any, callback: SetStateChangedCallback): Unit = js.native
   def setStateChanged(id: String, state: State): Unit = js.native
   def setStateChanged(id: String, state: State, ack: Boolean): Unit = js.native
   def setStateChanged(id: String, state: State, ack: Boolean, callback: SetStateChangedCallback): Unit = js.native
@@ -1262,20 +1267,6 @@ trait Adapter extends js.Object {
   def setStateChanged(id: String, state: State, callback: SetStateChangedCallback): Unit = js.native
   def setStateChanged(id: String, state: State, options: js.Any): Unit = js.native
   def setStateChanged(id: String, state: State, options: js.Any, callback: SetStateChangedCallback): Unit = js.native
-  def setStateChanged(id: String, state: Partial[State]): Unit = js.native
-  def setStateChanged(id: String, state: Partial[State], ack: Boolean): Unit = js.native
-  def setStateChanged(id: String, state: Partial[State], ack: Boolean, callback: SetStateChangedCallback): Unit = js.native
-  def setStateChanged(id: String, state: Partial[State], ack: Boolean, options: js.Any): Unit = js.native
-  def setStateChanged(
-    id: String,
-    state: Partial[State],
-    ack: Boolean,
-    options: js.Any,
-    callback: SetStateChangedCallback
-  ): Unit = js.native
-  def setStateChanged(id: String, state: Partial[State], callback: SetStateChangedCallback): Unit = js.native
-  def setStateChanged(id: String, state: Partial[State], options: js.Any): Unit = js.native
-  def setStateChanged(id: String, state: Partial[State], options: js.Any, callback: SetStateChangedCallback): Unit = js.native
   /** Writes a value into the states DB only if it has changed. */
   def setStateChangedAsync(id: String, state: String): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
   def setStateChangedAsync(id: String, state: String, ack: Boolean): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
@@ -1289,14 +1280,14 @@ trait Adapter extends js.Object {
   def setStateChangedAsync(id: String, state: Double, ack: Boolean): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
   def setStateChangedAsync(id: String, state: Double, ack: Boolean, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
   def setStateChangedAsync(id: String, state: Double, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
+  def setStateChangedAsync(id: String, state: PartialState): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
+  def setStateChangedAsync(id: String, state: PartialState, ack: Boolean): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
+  def setStateChangedAsync(id: String, state: PartialState, ack: Boolean, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
+  def setStateChangedAsync(id: String, state: PartialState, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
   def setStateChangedAsync(id: String, state: State): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
   def setStateChangedAsync(id: String, state: State, ack: Boolean): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
   def setStateChangedAsync(id: String, state: State, ack: Boolean, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
   def setStateChangedAsync(id: String, state: State, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
-  def setStateChangedAsync(id: String, state: Partial[State]): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
-  def setStateChangedAsync(id: String, state: Partial[State], ack: Boolean): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
-  def setStateChangedAsync(id: String, state: Partial[State], ack: Boolean, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
-  def setStateChangedAsync(id: String, state: Partial[State], options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
   /** Subscribe to changes of objects (which might not belong to this adapter) */
   def subscribeForeignObjects(pattern: String): Unit = js.native
   def subscribeForeignObjects(pattern: String, callback: ErrorCallback): Unit = js.native
@@ -1412,7 +1403,7 @@ trait Adapter extends js.Object {
     *
     * @param newConfig The new config values to be stored
     */
-  def updateConfig(newConfig: Partial[AdapterConfig]): Unit = js.native
+  def updateConfig(newConfig: js.Object): Unit = js.native
   def writeFile(adapterName: String, path: String, data: String, callback: ErrorCallback): Unit = js.native
   def writeFile(adapterName: String, path: String, data: String, options: js.Any, callback: ErrorCallback): Unit = js.native
   def writeFile(adapterName: String, path: String, data: Buffer, callback: ErrorCallback): Unit = js.native

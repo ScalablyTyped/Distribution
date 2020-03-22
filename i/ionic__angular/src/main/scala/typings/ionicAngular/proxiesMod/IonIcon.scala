@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ionic/angular/dist/directives/proxies", "IonIcon")
+@JSImport("@ionic/angular/directives/proxies", "IonIcon")
 @js.native
 class IonIcon protected ()
   extends typings.ionicons.componentsMod.Components.IonIcon {
@@ -19,6 +19,11 @@ class IonIcon protected ()
     */
   /* CompleteClass */
   override var `lazy`: Boolean = js.native
+  /**
+    * The mode determines which platform styles to use.
+    */
+  /* CompleteClass */
+  override var mode: String = js.native
   var z: NgZone = js.native
 }
 

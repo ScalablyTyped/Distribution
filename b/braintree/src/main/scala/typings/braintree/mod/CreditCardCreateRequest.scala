@@ -1,7 +1,7 @@
 package typings.braintree.mod
 
 import typings.braintree.AnonCompany
-import typings.braintree.AnonFailOnDuplicatePaymentMethodMakeDefault
+import typings.braintree.AnonMakeDefault
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ trait CreditCardCreateRequest extends js.Object {
   var expirationMonth: js.UndefOr[String] = js.undefined
   var expirationYear: js.UndefOr[String] = js.undefined
   var number: js.UndefOr[String] = js.undefined
-  var options: js.UndefOr[AnonFailOnDuplicatePaymentMethodMakeDefault] = js.undefined
+  var options: js.UndefOr[AnonMakeDefault] = js.undefined
   var paymentMethodNonce: js.UndefOr[String] = js.undefined
   var token: js.UndefOr[String] = js.undefined
 }
@@ -33,7 +33,7 @@ object CreditCardCreateRequest {
     expirationMonth: String = null,
     expirationYear: String = null,
     number: String = null,
-    options: AnonFailOnDuplicatePaymentMethodMakeDefault = null,
+    options: AnonMakeDefault = null,
     paymentMethodNonce: String = null,
     token: String = null
   ): CreditCardCreateRequest = {

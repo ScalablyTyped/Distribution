@@ -5,15 +5,27 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonHeight extends js.Object {
+  var backgroundColor: String
+  var borderRadius: Double
   var height: Double
-  var paddingLeft: Double
-  var paddingRight: Double
+  var position: String
+  var right: Double
+  var top: Double
+  var width: Double
 }
 
 object AnonHeight {
   @scala.inline
-  def apply(height: Double, paddingLeft: Double, paddingRight: Double): AnonHeight = {
-    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], paddingLeft = paddingLeft.asInstanceOf[js.Any], paddingRight = paddingRight.asInstanceOf[js.Any])
+  def apply(
+    backgroundColor: String,
+    borderRadius: Double,
+    height: Double,
+    position: String,
+    right: Double,
+    top: Double,
+    width: Double
+  ): AnonHeight = {
+    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor.asInstanceOf[js.Any], borderRadius = borderRadius.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AnonHeight]
   }

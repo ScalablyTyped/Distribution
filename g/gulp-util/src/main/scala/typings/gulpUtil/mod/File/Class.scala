@@ -1,7 +1,6 @@
 package typings.gulpUtil.mod.File
 
-import typings.vinyl.AnonContents
-import typings.vinyl.mod.ConstructorOptions
+import typings.vinyl.ConstructorOptionscontent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class Class protected ()
   extends typings.vinyl.mod.Class {
-  def this(options: ConstructorOptions with AnonContents) = this()
+  def this(options: ConstructorOptionscontent) = this()
 }
 

@@ -24,6 +24,7 @@ import scala.scalajs.js.annotation._
   - typings.csstype.csstypeStrings.`Colonnth-last-of-type`
   - typings.csstype.csstypeStrings.`Colonnth-of-type`
   - typings.csstype.csstypeStrings.Colonwhere
+  - typings.csstype.csstypeStrings.`Colon-khtml-any-link`
   - typings.csstype.csstypeStrings.`Colon-moz-any-link`
   - typings.csstype.csstypeStrings.`Colon-moz-focusring`
   - typings.csstype.csstypeStrings.`Colon-moz-full-screen`
@@ -118,6 +119,8 @@ import scala.scalajs.js.annotation._
 trait Pseudos extends js.Object
 
 object Pseudos {
+  @scala.inline
+  def `Colon-khtml-any-link`: typings.csstype.csstypeStrings.`Colon-khtml-any-link` = this.cast(":-khtml-any-link")
   @scala.inline
   def `Colon-moz-any-link`: typings.csstype.csstypeStrings.`Colon-moz-any-link` = this.cast(":-moz-any-link")
   @scala.inline

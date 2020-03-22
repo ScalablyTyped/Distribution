@@ -1,8 +1,6 @@
 package typings.postcss.mod
 
-import typings.postcss.postcssStrings.from
-import typings.postcss.postcssStrings.map
-import typings.std.Pick
+import typings.postcss.PickProcessOptionsmapfrom
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +19,7 @@ trait Syntax extends js.Object {
 object Syntax {
   @scala.inline
   def apply(
-    parse: (/* css */ ParserInput, /* opts */ js.UndefOr[Pick[ProcessOptions, map | from]]) => Root_ = null,
+    parse: (/* css */ ParserInput, /* opts */ js.UndefOr[PickProcessOptionsmapfrom]) => Root_ = null,
     stringify: (/* node */ Node, /* builder */ Builder) => Unit = null
   ): Syntax = {
     val __obj = js.Dynamic.literal()

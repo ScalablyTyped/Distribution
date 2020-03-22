@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 trait NavigationPopAction
   extends NavigationStackAction
      with NavigationPopActionPayload {
-  var key: js.UndefOr[String] = js.undefined
   var `type`: NavigationSlashPOP
 }
 

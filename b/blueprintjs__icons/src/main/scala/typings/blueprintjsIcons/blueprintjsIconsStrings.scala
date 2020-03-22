@@ -1417,6 +1417,12 @@ object blueprintjsIconsStrings {
   sealed trait Privateuseareae90c extends js.Object
   
   @js.native
+  sealed trait Privateuseareae90d extends js.Object
+  
+  @js.native
+  sealed trait Privateuseareae90e extends js.Object
+  
+  @js.native
   sealed trait Questionmark extends js.Object
   
   @js.native
@@ -1760,6 +1766,9 @@ object blueprintjsIconsStrings {
   
   @js.native
   sealed trait desktop extends IconName
+  
+  @js.native
+  sealed trait diagnosis extends IconName
   
   @js.native
   sealed trait `diagram-tree` extends IconName
@@ -2195,6 +2204,9 @@ object blueprintjsIconsStrings {
   
   @js.native
   sealed trait `known-vehicle` extends IconName
+  
+  @js.native
+  sealed trait `lab-test` extends IconName
   
   @js.native
   sealed trait label extends IconName
@@ -3851,6 +3863,10 @@ object blueprintjsIconsStrings {
   @scala.inline
   def Privateuseareae90c: Privateuseareae90c = "\uE90C".asInstanceOf[Privateuseareae90c]
   @scala.inline
+  def Privateuseareae90d: Privateuseareae90d = "\uE90D".asInstanceOf[Privateuseareae90d]
+  @scala.inline
+  def Privateuseareae90e: Privateuseareae90e = "\uE90E".asInstanceOf[Privateuseareae90e]
+  @scala.inline
   def Questionmark: Questionmark = "?".asInstanceOf[Questionmark]
   @scala.inline
   def Rightpointinganglebracket: Rightpointinganglebracket = "\u232A".asInstanceOf[Rightpointinganglebracket]
@@ -4080,6 +4096,8 @@ object blueprintjsIconsStrings {
   def `derive-column`: `derive-column` = "derive-column".asInstanceOf[`derive-column`]
   @scala.inline
   def desktop: desktop = "desktop".asInstanceOf[desktop]
+  @scala.inline
+  def diagnosis: diagnosis = "diagnosis".asInstanceOf[diagnosis]
   @scala.inline
   def `diagram-tree`: `diagram-tree` = "diagram-tree".asInstanceOf[`diagram-tree`]
   @scala.inline
@@ -4370,6 +4388,8 @@ object blueprintjsIconsStrings {
   def `key-tab`: `key-tab` = "key-tab".asInstanceOf[`key-tab`]
   @scala.inline
   def `known-vehicle`: `known-vehicle` = "known-vehicle".asInstanceOf[`known-vehicle`]
+  @scala.inline
+  def `lab-test`: `lab-test` = "lab-test".asInstanceOf[`lab-test`]
   @scala.inline
   def label: label = "label".asInstanceOf[label]
   @scala.inline

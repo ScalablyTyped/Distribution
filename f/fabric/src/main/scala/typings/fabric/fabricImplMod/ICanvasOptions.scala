@@ -1,6 +1,6 @@
 package typings.fabric.fabricImplMod
 
-import typings.fabric.AnonBlBrTl
+import typings.fabric.AnonTl
 import typings.std.CanvasRenderingContext2D
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -264,7 +264,7 @@ object ICanvasOptions {
     uniScaleKey: String = null,
     uniScaleTransform: js.UndefOr[Boolean] = js.undefined,
     viewportTransform: js.Array[Double] = null,
-    vptCoords: AnonBlBrTl = null
+    vptCoords: AnonTl = null
   ): ICanvasOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(allowTouchScrolling)) __obj.updateDynamic("allowTouchScrolling")(allowTouchScrolling.asInstanceOf[js.Any])

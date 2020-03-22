@@ -1,6 +1,6 @@
 package typings.primereact.editorMod
 
-import typings.primereact.AnonDeltaHtmlValue
+import typings.primereact.AnonHtmlValue
 import typings.primereact.AnonOldRange
 import typings.react.mod._Global_.JSX.Element
 import scala.scalajs.js
@@ -14,7 +14,7 @@ trait EditorProps extends js.Object {
   var id: js.UndefOr[String] = js.undefined
   var modules: js.UndefOr[js.Any] = js.undefined
   var onSelectionChange: js.UndefOr[js.Function1[/* e */ AnonOldRange, Unit]] = js.undefined
-  var onTextChange: js.UndefOr[js.Function1[/* e */ AnonDeltaHtmlValue, Unit]] = js.undefined
+  var onTextChange: js.UndefOr[js.Function1[/* e */ AnonHtmlValue, Unit]] = js.undefined
   var placeholder: js.UndefOr[String] = js.undefined
   var readonly: js.UndefOr[Boolean] = js.undefined
   var style: js.UndefOr[js.Object] = js.undefined
@@ -31,7 +31,7 @@ object EditorProps {
     id: String = null,
     modules: js.Any = null,
     onSelectionChange: /* e */ AnonOldRange => Unit = null,
-    onTextChange: /* e */ AnonDeltaHtmlValue => Unit = null,
+    onTextChange: /* e */ AnonHtmlValue => Unit = null,
     placeholder: String = null,
     readonly: js.UndefOr[Boolean] = js.undefined,
     style: js.Object = null,

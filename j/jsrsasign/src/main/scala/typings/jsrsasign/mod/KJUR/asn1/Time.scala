@@ -1,7 +1,6 @@
 package typings.jsrsasign.mod.KJUR.asn1
 
-import typings.jsrsasign.AnonGen
-import typings.jsrsasign.jsrsasign.KJUR.asn1.StringParam
+import typings.jsrsasign.StringParamtypegen
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,6 +16,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class Time ()
   extends typings.jsrsasign.jsrsasign.KJUR.asn1.Time {
-  def this(params: StringParam with AnonGen) = this()
+  def this(params: StringParamtypegen) = this()
 }
 

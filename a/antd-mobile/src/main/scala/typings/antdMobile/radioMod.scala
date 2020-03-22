@@ -15,7 +15,7 @@ object radioMod extends js.Object {
   @js.native
   object default extends js.Object {
     var RadioItem: js.Any = js.native
-    var defaultProps: AnonPrefixClsWrapLabel = js.native
+    var defaultProps: AnonWrapLabel = js.native
   }
   
 }

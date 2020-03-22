@@ -1,7 +1,7 @@
 package typings.memcached.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.memcached.AnonCas
+import typings.memcached.AnonDictkey
 import typings.node.eventsMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -111,7 +111,7 @@ trait Memcached extends EventEmitter {
     */
   def gets(
     key: String,
-    cb: js.ThisFunction2[/* this */ CommandData, /* err */ js.Any, /* data */ AnonCas, Unit]
+    cb: js.ThisFunction2[/* this */ CommandData, /* err */ js.Any, /* data */ AnonDictkey, Unit]
   ): Unit = js.native
   /**
     * Increment a given key.

@@ -2,7 +2,7 @@ package typings.rmcTabs.defaultTabBarMod
 
 import typings.react.mod.Component
 import typings.react.mod._Global_.JSX.Element
-import typings.rmcTabs.AnonOffset
+import typings.rmcTabs.AnonOnPanEnd
 import typings.rmcTabs.AnonShowNext
 import typings.rmcTabs.modelsMod.Models.TabData
 import typings.rmcTabs.rmcTabsStrings.bottom
@@ -20,7 +20,7 @@ class DefaultTabBar protected ()
   extends Component[PropsType, StateType, js.Any] {
   def this(props: PropsType) = this()
   var layout: HTMLDivElement = js.native
-  var onPan: AnonOffset = js.native
+  var onPan: AnonOnPanEnd = js.native
   @JSName("componentWillReceiveProps")
   def componentWillReceiveProps_MDefaultTabBar(nextProps: PropsType): Unit = js.native
   def getTabSize(page: Double, tabLength: Double): Double = js.native

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "external-editor" : "3.1.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "external-editor" : "3.1.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

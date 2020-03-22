@@ -1,7 +1,6 @@
 package typings.screeps
 
 import org.scalablytyped.runtime.TopLevel
-import typings.screeps.screepsBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -47,7 +46,7 @@ trait StructureSpawn
   /**
     * A Store object that contains cargo of this structure.
     */
-  var store: Store[RESOURCE_ENERGY, `false`] = js.native
+  var store: StoreRESOURCEENERGYfalse = js.native
   /**
     * Check if a creep can be created.
     *

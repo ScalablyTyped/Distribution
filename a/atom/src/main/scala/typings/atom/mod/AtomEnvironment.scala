@@ -1,7 +1,7 @@
 package typings.atom.mod
 
 import typings.atom.AnonButtons
-import typings.atom.AnonButtonsDetailedMessage
+import typings.atom.AnonDetailedMessage
 import typings.atom.AnonDevMode
 import typings.atom.AnonHeight
 import typings.atom.AnonX
@@ -82,7 +82,7 @@ trait AtomEnvironment extends js.Object {
     *
     *  Returns the chosen button index number if the buttons option was an array.
     */
-  def confirm(options: AnonButtonsDetailedMessage): Double = js.native
+  def confirm(options: AnonDetailedMessage): Double = js.native
   /**
     *  A flexible way to open a dialog akin to an alert dialog. If a callback
     *  is provided, then the confirmation will work asynchronously, which is

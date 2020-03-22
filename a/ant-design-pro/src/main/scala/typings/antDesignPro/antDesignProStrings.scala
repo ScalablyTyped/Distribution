@@ -37,9 +37,6 @@ object antDesignProStrings {
   sealed trait error extends js.Object
   
   @js.native
-  sealed trait form extends js.Object
-  
-  @js.native
   sealed trait horizontal extends js.Object
   
   @js.native
@@ -61,13 +58,7 @@ object antDesignProStrings {
   sealed trait topRight extends js.Object
   
   @js.native
-  sealed trait `type` extends js.Object
-  
-  @js.native
   sealed trait up extends js.Object
-  
-  @js.native
-  sealed trait updateActive extends js.Object
   
   @js.native
   sealed trait vertical extends js.Object
@@ -93,8 +84,6 @@ object antDesignProStrings {
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   @scala.inline
-  def form: form = "form".asInstanceOf[form]
-  @scala.inline
   def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   @scala.inline
   def large: large = "large".asInstanceOf[large]
@@ -109,11 +98,7 @@ object antDesignProStrings {
   @scala.inline
   def topRight: topRight = "topRight".asInstanceOf[topRight]
   @scala.inline
-  def `type`: `type` = "type".asInstanceOf[`type`]
-  @scala.inline
   def up: up = "up".asInstanceOf[up]
-  @scala.inline
-  def updateActive: updateActive = "updateActive".asInstanceOf[updateActive]
   @scala.inline
   def vertical: vertical = "vertical".asInstanceOf[vertical]
 }

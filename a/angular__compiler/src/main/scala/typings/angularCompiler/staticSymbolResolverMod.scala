@@ -47,7 +47,6 @@ object staticSymbolResolverMod extends js.Object {
     var metadataCache: js.Any = js.native
     var reportError: js.Any = js.native
     var resolveModule: js.Any = js.native
-    var resolvedFilePaths: js.Any = js.native
     var resolvedSymbols: js.Any = js.native
     var staticSymbolCache: js.Any = js.native
     var summaryResolver: js.Any = js.native
@@ -98,11 +97,12 @@ object staticSymbolResolverMod extends js.Object {
       */
     def hasDecorators(filePath: String): Boolean = js.native
     /**
-      * Invalidate all information derived from the given file.
+      * Invalidate all information derived from the given file and return the
+      * static symbols contained in the file.
       *
       * @param fileName the file to invalidate
       */
-    def invalidateFile(fileName: String): Unit = js.native
+    def invalidateFile(fileName: String): js.Array[StaticSymbol] = js.native
     def recordImportAs(sourceSymbol: StaticSymbol, targetSymbol: StaticSymbol): Unit = js.native
     def recordModuleNameForFileName(fileName: String, moduleName: String): Unit = js.native
     def resolveSymbol(staticSymbol: StaticSymbol): ResolvedStaticSymbol = js.native

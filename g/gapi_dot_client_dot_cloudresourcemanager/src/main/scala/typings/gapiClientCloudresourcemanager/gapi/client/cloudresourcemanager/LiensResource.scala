@@ -1,9 +1,9 @@
 package typings.gapiClientCloudresourcemanager.gapi.client.cloudresourcemanager
 
 import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientCloudresourcemanager.AnonAccesstokenAlt
-import typings.gapiClientCloudresourcemanager.AnonAccesstokenAltBearertoken
-import typings.gapiClientCloudresourcemanager.AnonAccesstokenAltBearertokenCallback
+import typings.gapiClientCloudresourcemanager.AnonAlt
+import typings.gapiClientCloudresourcemanager.AnonBearertoken
+import typings.gapiClientCloudresourcemanager.AnonCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +18,7 @@ trait LiensResource extends js.Object {
     *
     * NOTE: Some resources may limit the number of Liens which may be applied.
     */
-  def create(request: AnonAccesstokenAlt): Request_[Lien]
+  def create(request: AnonAlt): Request_[Lien]
   /**
     * Delete a Lien by `name`.
     *
@@ -26,7 +26,7 @@ trait LiensResource extends js.Object {
     * For example, a Lien with a `parent` of `projects/1234` requires permission
     * `resourcemanager.projects.updateLiens`.
     */
-  def delete(request: AnonAccesstokenAltBearertoken): Request_[js.Object]
+  def delete(request: AnonBearertoken): Request_[js.Object]
   /**
     * List all Liens applied to the `parent` resource.
     *
@@ -34,15 +34,15 @@ trait LiensResource extends js.Object {
     * For example, a Lien with a `parent` of `projects/1234` requires permission
     * `resourcemanager.projects.get`.
     */
-  def list(request: AnonAccesstokenAltBearertokenCallback): Request_[ListLiensResponse]
+  def list(request: AnonCallback): Request_[ListLiensResponse]
 }
 
 object LiensResource {
   @scala.inline
   def apply(
-    create: AnonAccesstokenAlt => Request_[Lien],
-    delete: AnonAccesstokenAltBearertoken => Request_[js.Object],
-    list: AnonAccesstokenAltBearertokenCallback => Request_[ListLiensResponse]
+    create: AnonAlt => Request_[Lien],
+    delete: AnonBearertoken => Request_[js.Object],
+    list: AnonCallback => Request_[ListLiensResponse]
   ): LiensResource = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), list = js.Any.fromFunction1(list))
   

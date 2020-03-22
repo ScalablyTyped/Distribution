@@ -1,8 +1,8 @@
 package typings.jupyterlabRendermime.mod
 
-import typings.jupyterlabCoreutils.nbformatMod.nbformat.IOutput
+import typings.jupyterlabNbformat.mod.IOutput
 import typings.jupyterlabRendermime.outputmodelMod.IOutputModel.IOptions
-import typings.phosphorCoreutils.jsonMod.JSONObject
+import typings.luminoCoreutils.jsonMod.PartialJSONObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,7 +27,7 @@ object OutputModel extends js.Object {
     *
     * @returns - The data for the payload.
     */
-  def getData(output: IOutput): JSONObject = js.native
+  def getData(output: IOutput): PartialJSONObject = js.native
   /**
     * Get the metadata from an output message.
     *
@@ -35,6 +35,6 @@ object OutputModel extends js.Object {
     *
     * @returns - The metadata for the payload.
     */
-  def getMetadata(output: IOutput): JSONObject = js.native
+  def getMetadata(output: IOutput): PartialJSONObject = js.native
 }
 

@@ -58,5 +58,51 @@ object semaphoreMod extends js.Object {
     def try_acquire_until(at: Date): js.Promise[Boolean] = js.native
   }
   
+  @js.native
+  object Semaphore extends js.Object {
+    /**
+      * @internal
+      */
+    @js.native
+    class Lockable protected () extends ITimedLockable {
+      def this(semaphore: Semaphore[Double]) = this()
+      var semahpore_ : js.Any = js.native
+      /**
+        * Lock until be unlocked.
+        */
+      /* CompleteClass */
+      override def lock(): js.Promise[Unit] = js.native
+      /**
+        * Try {@link lock}.
+        *
+        * @return Whether succeeded to lock or not.
+        */
+      /* CompleteClass */
+      override def try_lock(): js.Promise[Boolean] = js.native
+      /**
+        * Try lock until timeout.
+        *
+        * @param ms The maximum miliseconds for waiting.
+        * @return Whether succeded to lock or not.
+        */
+      /* CompleteClass */
+      override def try_lock_for(ms: Double): js.Promise[Boolean] = js.native
+      /**
+        * Try lock until time expiration.
+        *
+        * @param at The maximum time point to wait.
+        * @return Whether succeded to lock or not.
+        */
+      /* CompleteClass */
+      override def try_lock_until(at: Date): js.Promise[Boolean] = js.native
+      /**
+        * Unlock.
+        */
+      /* CompleteClass */
+      override def unlock(): js.Promise[Unit] = js.native
+    }
+    
+  }
+  
 }
 

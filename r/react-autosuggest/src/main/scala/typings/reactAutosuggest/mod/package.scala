@@ -43,5 +43,5 @@ package object mod {
     /* request */ typings.reactAutosuggest.mod.SuggestionsFetchRequestedParams, 
     scala.Unit
   ]
-  type Theme = (typings.std.Record[java.lang.String, java.lang.String | typings.react.mod.CSSProperties]) | typings.reactAutosuggest.PartialRecordThemeKeystringCSSProperties
+  type Theme = (typings.std.Record[java.lang.String, java.lang.String | typings.react.mod.CSSProperties]) | typings.reactAutosuggest.PartialRecordThemeKeystri
 }

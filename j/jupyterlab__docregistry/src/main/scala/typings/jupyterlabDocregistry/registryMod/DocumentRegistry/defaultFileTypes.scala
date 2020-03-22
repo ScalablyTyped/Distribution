@@ -1,7 +1,7 @@
 package typings.jupyterlabDocregistry.registryMod.DocumentRegistry
 
 import org.scalablytyped.runtime.TopLevel
-import typings.std.Partial
+import typings.jupyterlabDocregistry.PartialIFileType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,5 +12,5 @@ import scala.scalajs.js.annotation._
 @JSImport("@jupyterlab/docregistry/lib/registry", "DocumentRegistry.defaultFileTypes")
 @js.native
 object defaultFileTypes
-  extends TopLevel[js.Array[Partial[IFileType]]]
+  extends TopLevel[js.Array[PartialIFileType]]
 

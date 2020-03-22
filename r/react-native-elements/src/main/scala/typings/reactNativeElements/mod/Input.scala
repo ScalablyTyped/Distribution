@@ -1,8 +1,7 @@
 package typings.reactNativeElements.mod
 
 import typings.react.mod.Component
-import typings.reactNative.mod.TextInputProps
-import typings.std.Partial
+import typings.reactNativeElements.PartialTextInputProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,7 +39,7 @@ class Input ()
     *
     * eg `this.inputRef.setNativeProps({ text: 'any text' })`
     */
-  def setNativeProps(nativeProps: Partial[TextInputProps]): Unit = js.native
+  def setNativeProps(nativeProps: PartialTextInputProps): Unit = js.native
   /**
     * Shakes the Input
     *

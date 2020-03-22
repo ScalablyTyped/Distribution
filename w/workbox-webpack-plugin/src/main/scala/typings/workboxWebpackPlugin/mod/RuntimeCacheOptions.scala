@@ -1,7 +1,7 @@
 package typings.workboxWebpackPlugin.mod
 
 import typings.workboxWebpackPlugin.AnonChannelName
-import typings.workboxWebpackPlugin.AnonHeader
+import typings.workboxWebpackPlugin.AnonHeaders
 import typings.workboxWebpackPlugin.AnonMaxAgeSeconds
 import typings.workboxWebpackPlugin.AnonName
 import scala.scalajs.js
@@ -24,7 +24,7 @@ trait RuntimeCacheOptions extends js.Object {
   /**
   	 * Configure which responses are considered cacheable.
   	 */
-  var cacheableResponse: js.UndefOr[AnonHeader] = js.undefined
+  var cacheableResponse: js.UndefOr[AnonHeaders] = js.undefined
   /**
   	 * Custom cache expiration.
   	 */
@@ -53,7 +53,7 @@ object RuntimeCacheOptions {
     backgroundSync: AnonName = null,
     broadcastUpdate: AnonChannelName = null,
     cacheName: String = null,
-    cacheableResponse: AnonHeader = null,
+    cacheableResponse: AnonHeaders = null,
     expiration: AnonMaxAgeSeconds = null,
     fetchOptions: js.Any = null,
     matchOptions: js.Any = null,

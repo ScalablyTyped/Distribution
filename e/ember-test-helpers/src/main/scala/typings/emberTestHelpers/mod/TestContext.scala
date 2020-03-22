@@ -2,12 +2,11 @@ package typings.emberTestHelpers.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.ember.mod.default.Application
-import typings.ember.mod.default.ApplicationInstance
 import typings.ember.mod.default.Container
 import typings.ember.mod.default.EventDispatcher
 import typings.ember.mod.default.Registry
 import typings.emberTestHelpers.AnonController
-import typings.emberTestHelpers.AnonFactoryFor
+import typings.emberTestHelpers.ApplicationInstancefactor
 import typings.jquery.JQueryStatic
 import typings.jquery.JQuery_
 import typings.jquery.JQuery_.PlainObject
@@ -33,7 +32,7 @@ trait TestContext extends js.Object {
   var dispatcher: EventDispatcher = js.native
   var element: Element = js.native
   var inject: AnonController = js.native
-  var owner: ApplicationInstance with AnonFactoryFor = js.native
+  var owner: ApplicationInstancefactor = js.native
   var registry: Registry = js.native
   /**
     * Return a collection of matched elements either found in the DOM based on passed argument(s) or created by passing an HTML string.

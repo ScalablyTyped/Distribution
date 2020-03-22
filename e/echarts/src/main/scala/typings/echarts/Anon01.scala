@@ -6,24 +6,24 @@ import scala.scalajs.js.annotation._
 
 trait Anon01 extends js.Object {
   /**
-    * Specify the left-top point.
+    * Data of the starting point.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-scatter.markArea.data.0
+    * @see https://echarts.apache.org/en/option.html#series-pie.markLine.data.0
     */
-  var `0`: js.UndefOr[AnonCoordItemStyle] = js.undefined
+  var `0`: js.UndefOr[AnonSymbolKeepAspect] = js.undefined
   /**
-    * Specify the right-bottom point.
+    * Data of the ending point.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-scatter.markArea.data.1
+    * @see https://echarts.apache.org/en/option.html#series-pie.markLine.data.1
     */
-  var `1`: js.UndefOr[AnonCoordItemStyle] = js.undefined
+  var `1`: js.UndefOr[AnonSymbolKeepAspect] = js.undefined
 }
 
 object Anon01 {
   @scala.inline
-  def apply(`0`: AnonCoordItemStyle = null, `1`: AnonCoordItemStyle = null): Anon01 = {
+  def apply(`0`: AnonSymbolKeepAspect = null, `1`: AnonSymbolKeepAspect = null): Anon01 = {
     val __obj = js.Dynamic.literal()
     if (`0` != null) __obj.updateDynamic("0")(`0`.asInstanceOf[js.Any])
     if (`1` != null) __obj.updateDynamic("1")(`1`.asInstanceOf[js.Any])

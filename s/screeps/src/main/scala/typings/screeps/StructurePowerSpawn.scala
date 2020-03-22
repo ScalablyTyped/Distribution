@@ -1,7 +1,6 @@
 package typings.screeps
 
 import org.scalablytyped.runtime.TopLevel
-import typings.screeps.screepsBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,7 +36,7 @@ trait StructurePowerSpawn
   /**
     *
     */
-  var store: Store[RESOURCE_ENERGY | RESOURCE_POWER, `false`]
+  var store: StoreRESOURCEENERGYRESOUR
   /**
     * Register power resource units into your account. Registered power allows to develop power creeps skills. Consumes 1 power resource unit and 50 energy resource units.
     */

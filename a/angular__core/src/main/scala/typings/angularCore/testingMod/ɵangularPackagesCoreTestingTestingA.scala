@@ -3,6 +3,7 @@ package typings.angularCore.testingMod
 import typings.angularCore.AnonDeps
 import typings.angularCore.AnonProviders
 import typings.angularCore.AnonUseValue
+import typings.angularCore.mod.AbstractType
 import typings.angularCore.mod.Component
 import typings.angularCore.mod.Directive
 import typings.angularCore.mod.InjectFlags
@@ -45,7 +46,7 @@ object ɵangularPackagesCoreTestingTestingA extends js.Object {
   def configureTestingModule(moduleDef: TestModuleMetadata): TestBedStatic = js.native
   def createComponent[T](component: Type[T]): typings.angularCore.testingTestingMod.ComponentFixture[T] = js.native
   /**
-    * @deprecated from v8.0.0 use Type<T> or InjectionToken<T>
+    * @deprecated from v9.0.0 use TestBed.inject
     * @suppress {duplicate}
     */
   def get(token: js.Any): js.Any = js.native
@@ -53,6 +54,7 @@ object ɵangularPackagesCoreTestingTestingA extends js.Object {
   def get[T](token: InjectionToken[T]): js.Any = js.native
   def get[T](token: InjectionToken[T], notFoundValue: T): js.Any = js.native
   def get[T](token: InjectionToken[T], notFoundValue: T, flags: InjectFlags): js.Any = js.native
+  /** @deprecated from v9.0.0 use TestBed.inject */
   def get[T](token: Type[T]): js.Any = js.native
   def get[T](token: Type[T], notFoundValue: T): js.Any = js.native
   def get[T](token: Type[T], notFoundValue: T, flags: InjectFlags): js.Any = js.native
@@ -71,6 +73,24 @@ object ɵangularPackagesCoreTestingTestingA extends js.Object {
     */
   def initTestEnvironment(ngModule: Type[_], platform: PlatformRef): typings.angularCore.testingTestingMod.ɵangularPackagesCoreTestingTestingA = js.native
   def initTestEnvironment(ngModule: Type[_], platform: PlatformRef, aotSummaries: js.Function0[js.Array[_]]): typings.angularCore.testingTestingMod.ɵangularPackagesCoreTestingTestingA = js.native
+  def inject[T](token: AbstractType[T]): T | Null = js.native
+  def inject[T](token: AbstractType[T], notFoundValue: T): T = js.native
+  def inject[T](token: AbstractType[T], notFoundValue: T, flags: InjectFlags): T = js.native
+  def inject[T](token: AbstractType[T], notFoundValue: Null, flags: InjectFlags): T | Null = js.native
+  def inject[T](token: InjectionToken[T]): T | Null = js.native
+  def inject[T](token: InjectionToken[T], notFoundValue: T): T = js.native
+  def inject[T](token: InjectionToken[T], notFoundValue: T, flags: InjectFlags): T = js.native
+  def inject[T](token: InjectionToken[T], notFoundValue: Null, flags: InjectFlags): T | Null = js.native
+  def inject[T](token: Type[T]): T | Null = js.native
+  def inject[T](token: Type[T], notFoundValue: T): T = js.native
+  def inject[T](token: Type[T], notFoundValue: T, flags: InjectFlags): T = js.native
+  def inject[T](token: Type[T], notFoundValue: Null, flags: InjectFlags): T | Null = js.native
+  @JSName("inject")
+  def inject_T_T[T](token: AbstractType[T]): T = js.native
+  @JSName("inject")
+  def inject_T_T[T](token: InjectionToken[T]): T = js.native
+  @JSName("inject")
+  def inject_T_T[T](token: Type[T]): T = js.native
   def overrideComponent(component: Type[_], `override`: MetadataOverride[Component]): TestBedStatic = js.native
   def overrideDirective(directive: Type[_], `override`: MetadataOverride[Directive]): TestBedStatic = js.native
   def overrideModule(ngModule: Type[_], `override`: MetadataOverride[NgModule]): TestBedStatic = js.native

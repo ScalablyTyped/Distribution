@@ -1,6 +1,7 @@
 package typings.jupyterlabApputils.dialogMod.Dialog
 
-import typings.std.Partial
+import typings.jupyterlabApputils.PartialIButton
+import typings.jupyterlabApputils.ReadonlyIButton
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,6 +12,6 @@ object createButton extends js.Object {
   /**
     * Create a button item.
     */
-  def apply(value: Partial[IButton]): IButton = js.native
+  def apply(value: PartialIButton): ReadonlyIButton = js.native
 }
 

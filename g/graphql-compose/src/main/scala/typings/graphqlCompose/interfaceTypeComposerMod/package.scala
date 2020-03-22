@@ -6,7 +6,6 @@ import scala.scalajs.js.annotation._
 
 package object interfaceTypeComposerMod {
   type ComposeInterfaceType = (typings.graphqlCompose.interfaceTypeComposerMod.InterfaceTypeComposer[js.Any, js.Any]) | typings.graphql.mod.GraphQLInterfaceType | typings.graphqlCompose.typeMapperMod.TypeDefinitionString | typings.graphqlCompose.typeMapperMod.TypeAsString
-  type GraphQLInterfaceTypeExtended[TSource, TContext] = typings.graphql.mod.GraphQLInterfaceType with (typings.graphqlCompose.AnonGqcExtensionsGqcFieldsGqcInputTypeComposer[TSource, TContext])
   type InterfaceTypeComposeDefinition[TSource, TContext] = typings.graphqlCompose.typeMapperMod.TypeAsString | (typings.graphqlCompose.interfaceTypeComposerMod.ComposeInterfaceTypeConfig[TSource, TContext])
   type InterfaceTypeResolverCheckFn[TSource, TContext] = js.Function3[
     /* value */ TSource, 

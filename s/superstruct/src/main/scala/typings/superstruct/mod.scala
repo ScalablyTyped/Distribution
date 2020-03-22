@@ -1,8 +1,6 @@
 package typings.superstruct
 
-import typings.std.Partial
 import typings.superstruct.structErrorMod.Failure
-import typings.superstruct.superstructMod.SuperstructSettings
 import typings.superstruct.superstructMod.Superstruct_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -28,7 +26,7 @@ object mod extends js.Object {
   val struct: Superstruct_ = js.native
   def isStruct(value: js.Any): /* is superstruct.superstruct/lib/struct.Struct */ Boolean = js.native
   def superstruct(): Superstruct_ = js.native
-  def superstruct(settings: Partial[SuperstructSettings]): Superstruct_ = js.native
+  def superstruct(settings: PartialSuperstructSetting): Superstruct_ = js.native
   @js.native
   object Types extends js.Object {
     /**

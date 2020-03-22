@@ -6,7 +6,8 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("StaticRange")
 @js.native
-class StaticRangeCls () extends AbstractRange {
+class StaticRangeCls protected () extends AbstractRange {
+  def this(init: StaticRangeInit) = this()
   /**
     * Returns true if range is collapsed, and false otherwise.
     */

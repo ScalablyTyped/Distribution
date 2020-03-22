@@ -7,7 +7,7 @@ import typings.prosemirrorModel.mod.Node
 import typings.prosemirrorModel.mod.ResolvedPos
 import typings.prosemirrorModel.mod.Schema
 import typings.prosemirrorModel.mod.Slice
-import typings.prosemirrorView.AnonBottomLeft
+import typings.prosemirrorView.AnonRight
 import typings.std.Event_
 import typings.std.KeyboardEvent
 import typings.std.MouseEvent
@@ -257,13 +257,13 @@ trait EditorProps[S /* <: Schema[_, _] */] extends js.Object {
     * Determines the extra space (in pixels) that is left above or
     * below the cursor when it is scrolled into view. Defaults to 5.
     */
-  var scrollMargin: js.UndefOr[Double | AnonBottomLeft | Null] = js.undefined
+  var scrollMargin: js.UndefOr[Double | AnonRight | Null] = js.undefined
   /**
     * Determines the distance (in pixels) between the cursor and the
     * end of the visible viewport at which point, when scrolling the
     * cursor into view, scrolling takes place. Defaults to 0.
     */
-  var scrollThreshold: js.UndefOr[Double | AnonBottomLeft | Null] = js.undefined
+  var scrollThreshold: js.UndefOr[Double | AnonRight | Null] = js.undefined
   /**
     * Can be used to transform pasted content before it is applied to
     * the document.
@@ -317,8 +317,8 @@ object EditorProps {
         NodeView[S]
       ]
     ] = null,
-    scrollMargin: Double | AnonBottomLeft = null,
-    scrollThreshold: Double | AnonBottomLeft = null,
+    scrollMargin: Double | AnonRight = null,
+    scrollThreshold: Double | AnonRight = null,
     transformPasted: /* p */ Slice[S] => Slice[S] = null,
     transformPastedHTML: /* html */ String => String = null,
     transformPastedText: /* text */ String => String = null

@@ -1,6 +1,6 @@
 package typings.antdMobile.checkboxCheckboxMod
 
-import typings.antdMobile.AnonPrefixClsWrapLabel
+import typings.antdMobile.AnonWrapLabel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,6 +15,6 @@ class default () extends Checkbox
 object default extends js.Object {
   var AgreeItem: js.Any = js.native
   var CheckboxItem: js.Any = js.native
-  var defaultProps: AnonPrefixClsWrapLabel = js.native
+  var defaultProps: AnonWrapLabel = js.native
 }
 

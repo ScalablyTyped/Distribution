@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 /** Properties of an Agent. */
 trait IAgent extends js.Object {
   /** Agent apiVersion */
-  var apiVersion: js.UndefOr[ApiVersion | Null] = js.undefined
+  var apiVersion: js.UndefOr[ApiVersion | String | Null] = js.undefined
   /** Agent avatarUri */
   var avatarUri: js.UndefOr[String | Null] = js.undefined
   /** Agent classificationThreshold */
@@ -24,13 +24,13 @@ trait IAgent extends js.Object {
   /** Agent enableLogging */
   var enableLogging: js.UndefOr[Boolean | Null] = js.undefined
   /** Agent matchMode */
-  var matchMode: js.UndefOr[MatchMode | Null] = js.undefined
+  var matchMode: js.UndefOr[MatchMode | String | Null] = js.undefined
   /** Agent parent */
   var parent: js.UndefOr[String | Null] = js.undefined
   /** Agent supportedLanguageCodes */
   var supportedLanguageCodes: js.UndefOr[js.Array[String] | Null] = js.undefined
   /** Agent tier */
-  var tier: js.UndefOr[Tier | Null] = js.undefined
+  var tier: js.UndefOr[Tier | String | Null] = js.undefined
   /** Agent timeZone */
   var timeZone: js.UndefOr[String | Null] = js.undefined
 }
@@ -38,17 +38,17 @@ trait IAgent extends js.Object {
 object IAgent {
   @scala.inline
   def apply(
-    apiVersion: ApiVersion = null,
+    apiVersion: ApiVersion | String = null,
     avatarUri: String = null,
     classificationThreshold: Int | Double = null,
     defaultLanguageCode: String = null,
     description: String = null,
     displayName: String = null,
     enableLogging: js.UndefOr[Boolean] = js.undefined,
-    matchMode: MatchMode = null,
+    matchMode: MatchMode | String = null,
     parent: String = null,
     supportedLanguageCodes: js.Array[String] = null,
-    tier: Tier = null,
+    tier: Tier | String = null,
     timeZone: String = null
   ): IAgent = {
     val __obj = js.Dynamic.literal()

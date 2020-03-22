@@ -24,30 +24,6 @@ trait Force extends js.Object
 
 object Force {
   @scala.inline
-  def ForceCenter(force: center, x: Double | SignalRef = null, y: Double | SignalRef = null): Force = {
-    val __obj = js.Dynamic.literal(force = force.asInstanceOf[js.Any])
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Force]
-  }
-  @scala.inline
-  def ForceLink(
-    force: link,
-    distance: Double | SignalRef | ExprRef = null,
-    id: FieldRef = null,
-    iterations: Double | SignalRef = null,
-    links: DataName = null,
-    strength: Double | SignalRef | ExprRef = null
-  ): Force = {
-    val __obj = js.Dynamic.literal(force = force.asInstanceOf[js.Any])
-    if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (iterations != null) __obj.updateDynamic("iterations")(iterations.asInstanceOf[js.Any])
-    if (links != null) __obj.updateDynamic("links")(links.asInstanceOf[js.Any])
-    if (strength != null) __obj.updateDynamic("strength")(strength.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Force]
-  }
-  @scala.inline
   def ForceX(force: x, strength: Double | SignalRef = null, x: FieldRef = null): Force = {
     val __obj = js.Dynamic.literal(force = force.asInstanceOf[js.Any])
     if (strength != null) __obj.updateDynamic("strength")(strength.asInstanceOf[js.Any])
@@ -55,9 +31,9 @@ object Force {
     __obj.asInstanceOf[Force]
   }
   @scala.inline
-  def ForceY(force: y, strength: Double | SignalRef = null, y: FieldRef = null): Force = {
+  def ForceCenter(force: center, x: Double | SignalRef = null, y: Double | SignalRef = null): Force = {
     val __obj = js.Dynamic.literal(force = force.asInstanceOf[js.Any])
-    if (strength != null) __obj.updateDynamic("strength")(strength.asInstanceOf[js.Any])
+    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
     if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     __obj.asInstanceOf[Force]
   }
@@ -75,6 +51,13 @@ object Force {
     __obj.asInstanceOf[Force]
   }
   @scala.inline
+  def ForceY(force: y, strength: Double | SignalRef = null, y: FieldRef = null): Force = {
+    val __obj = js.Dynamic.literal(force = force.asInstanceOf[js.Any])
+    if (strength != null) __obj.updateDynamic("strength")(strength.asInstanceOf[js.Any])
+    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Force]
+  }
+  @scala.inline
   def ForceNBody(
     force: nbody,
     distanceMax: Double | SignalRef = null,
@@ -87,6 +70,23 @@ object Force {
     if (distanceMin != null) __obj.updateDynamic("distanceMin")(distanceMin.asInstanceOf[js.Any])
     if (strength != null) __obj.updateDynamic("strength")(strength.asInstanceOf[js.Any])
     if (theta != null) __obj.updateDynamic("theta")(theta.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Force]
+  }
+  @scala.inline
+  def ForceLink(
+    force: link,
+    distance: Double | SignalRef | ExprRef = null,
+    id: FieldRef = null,
+    iterations: Double | SignalRef = null,
+    links: DataName = null,
+    strength: Double | SignalRef | ExprRef = null
+  ): Force = {
+    val __obj = js.Dynamic.literal(force = force.asInstanceOf[js.Any])
+    if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (iterations != null) __obj.updateDynamic("iterations")(iterations.asInstanceOf[js.Any])
+    if (links != null) __obj.updateDynamic("links")(links.asInstanceOf[js.Any])
+    if (strength != null) __obj.updateDynamic("strength")(strength.asInstanceOf[js.Any])
     __obj.asInstanceOf[Force]
   }
 }

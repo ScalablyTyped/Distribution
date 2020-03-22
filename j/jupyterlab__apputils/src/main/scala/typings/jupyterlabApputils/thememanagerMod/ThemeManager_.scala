@@ -4,8 +4,8 @@ import typings.jupyterlabApputils.thememanagerMod.ThemeManager.IOptions
 import typings.jupyterlabApputils.tokensMod.IThemeManager
 import typings.jupyterlabApputils.tokensMod.IThemeManager.ITheme
 import typings.jupyterlabCoreutils.interfacesMod.IChangedArgs
-import typings.phosphorDisposable.mod.IDisposable
-import typings.phosphorSignaling.mod.ISignal
+import typings.luminoDisposable.mod.IDisposable
+import typings.luminoSignaling.mod.ISignal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -62,7 +62,7 @@ class ThemeManager_ protected () extends IThemeManager {
     * A signal fired when the application theme changes.
     */
   /* CompleteClass */
-  override val themeChanged: ISignal[this.type, IChangedArgs[String, String]] = js.native
+  override val themeChanged: ISignal[this.type, IChangedArgs[String, String | Null, String]] = js.native
   /**
     * The names of the registered themes.
     */
@@ -130,11 +130,26 @@ class ThemeManager_ protected () extends IThemeManager {
   /* CompleteClass */
   override def setTheme(name: String): js.Promise[Unit] = js.native
   /**
+    * A signal fired when the application theme changes.
+    */
+  @JSName("themeChanged")
+  def themeChanged_MThemeManager_(): ISignal[this.type, IChangedArgs[String, String | Null, String]] = js.native
+  /**
     * Test whether a given theme styles scrollbars,
     * and if the user has scrollbar styling enabled.
     */
   /* CompleteClass */
   override def themeScrollbars(name: String): Boolean = js.native
+  /**
+    * Get the name of the current theme.
+    */
+  @JSName("theme")
+  def theme_MThemeManager_(): String | Null = js.native
+  /**
+    * The names of the registered themes.
+    */
+  @JSName("themes")
+  def themes_MThemeManager_(): js.Array[String] = js.native
   /**
     * Toggle the `theme-scrollbbars` setting.
     */

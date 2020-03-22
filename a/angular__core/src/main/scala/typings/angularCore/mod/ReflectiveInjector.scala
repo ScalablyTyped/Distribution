@@ -8,13 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class ReflectiveInjector () extends Injector {
   /**
-    * Parent of this injector.
-    *
-    * <!-- TODO: Add a link to the section of the user guide talking about hierarchical injection.
-    * -->
-    */
-  val parent: Injector | Null = js.native
-  /**
     * Creates a child injector from previously resolved providers.
     *
     * <!-- TODO: Add a link to the section of the user guide talking about hierarchical injection.
@@ -67,6 +60,13 @@ abstract class ReflectiveInjector () extends Injector {
     * ```
     */
   def instantiateResolved(provider: ResolvedReflectiveProvider): js.Any = js.native
+  /**
+    * Parent of this injector.
+    *
+    * <!-- TODO: Add a link to the section of the user guide talking about hierarchical injection.
+    * -->
+    */
+  def parent(): Injector | Null = js.native
   /**
     * Resolves an array of providers and creates a child injector from those providers.
     *

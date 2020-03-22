@@ -2,7 +2,7 @@ package typings.jupyterlabLogconsoleExtension.statusMod.LogConsoleStatus
 
 import typings.jupyterlabApputils.vdomMod.VDomModel
 import typings.jupyterlabLogconsole.tokensMod.ILoggerRegistry
-import typings.phosphorSignaling.mod.Signal
+import typings.luminoSignaling.mod.Signal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,33 +35,22 @@ class Model protected () extends VDomModel {
     */
   var _sourceVersion: js.Any = js.native
   /**
-    * Flag to toggle flashing when new logs added.
-    */
-  var flashEnabled: Boolean = js.native
-  /**
     * A signal emitted when the flash enablement changes.
     */
   var flashEnabledChanged: Signal[this.type, Unit] = js.native
   /**
+    * Flag to toggle flashing when new logs added.
+    */
+  def flashEnabled(): Boolean = js.native
+  def flashEnabled(enabled: Boolean): js.Any = js.native
+  /**
     * Number of messages currently in the current source.
     */
-  val messages: Double = js.native
-  /**
-    * The name of the active log source
-    */
-  var source: String | Null = js.native
-  /**
-    * The number of messages ever stored by the current source.
-    */
-  val version: Double = js.native
-  /**
-    * The last source version that was displayed.
-    */
-  val versionDisplayed: Double = js.native
-  /**
-    * The last source version we notified the user about.
-    */
-  val versionNotified: Double = js.native
+  def messages(): Double = js.native
+  def source(): js.Any = js.native
+  def source(name: String): js.Any = js.native
+  def sourceDisplayed(): Unit = js.native
+  def sourceDisplayed(source: String): Unit = js.native
   /**
     * Record the last source version displayed to the user.
     *
@@ -82,5 +71,22 @@ class Model protected () extends VDomModel {
     */
   def sourceNotified(source: String, version: Double): Unit = js.native
   def sourceNotified(source: Null, version: Double): Unit = js.native
+  /**
+    * The name of the active log source
+    */
+  @JSName("source")
+  def source_Union(): String | Null = js.native
+  /**
+    * The number of messages ever stored by the current source.
+    */
+  def version(): Double = js.native
+  /**
+    * The last source version that was displayed.
+    */
+  def versionDisplayed(): Double = js.native
+  /**
+    * The last source version we notified the user about.
+    */
+  def versionNotified(): Double = js.native
 }
 

@@ -1,6 +1,6 @@
 package typings.jupyterlabServices.mod
 
-import typings.jupyterlabServices.managerMod.KernelManager.IOptions
+import typings.jupyterlabServices.kernelManagerMod.KernelManager.IOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

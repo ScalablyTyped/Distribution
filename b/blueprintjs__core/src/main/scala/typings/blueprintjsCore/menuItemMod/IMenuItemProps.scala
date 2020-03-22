@@ -1,7 +1,7 @@
 package typings.blueprintjsCore.menuItemMod
 
+import typings.blueprintjsCore.PartialIPopoverProps
 import typings.blueprintjsCore.intentMod.Intent
-import typings.blueprintjsCore.popoverMod.IPopoverProps
 import typings.blueprintjsCore.propsMod.IActionProps
 import typings.blueprintjsCore.propsMod.ILinkProps
 import typings.blueprintjsCore.propsMod.MaybeElement
@@ -10,7 +10,6 @@ import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
 import typings.std.HTMLElement
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -53,7 +52,7 @@ trait IMenuItemProps
     * changed and `usePortal` defaults to `false` so all submenus will live in
     * the same container.
     */
-  var popoverProps: js.UndefOr[Partial[IPopoverProps]] = js.undefined
+  var popoverProps: js.UndefOr[PartialIPopoverProps] = js.undefined
   /**
     * Whether an enabled item without a submenu should automatically close its parent popover when clicked.
     * @default true
@@ -90,7 +89,7 @@ object IMenuItemProps {
     labelElement: ReactNode = null,
     multiline: js.UndefOr[Boolean] = js.undefined,
     onClick: /* event */ MouseEvent[HTMLElement, NativeMouseEvent] => Unit = null,
-    popoverProps: Partial[IPopoverProps] = null,
+    popoverProps: PartialIPopoverProps = null,
     shouldDismissPopover: js.UndefOr[Boolean] = js.undefined,
     tagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any = null,
     target: String = null,

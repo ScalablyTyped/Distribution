@@ -44,7 +44,7 @@ object MonacoEditorProps {
     context: js.Any = null,
     defaultValue: String = null,
     editorDidMount: (/* editor */ IStandaloneCodeEditor, /* monaco */ TypeofmonacoEditor) => Unit = null,
-    editorWillMount: /* monaco */ TypeofmonacoEditor => Unit | IEditorConstructionOptions = null,
+    editorWillMount: /* monaco */ TypeofmonacoEditor => Unit | EditorConstructionOptions = null,
     height: String | Double = null,
     language: String = null,
     onChange: (/* value */ String, /* event */ IModelContentChangedEvent) => Unit = null,

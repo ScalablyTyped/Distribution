@@ -3,7 +3,6 @@ package typings.materialSwitch
 import typings.materialBase.foundationMod.MDCFoundation
 import typings.materialSwitch.adapterMod.MDCSwitchAdapter
 import typings.std.Event_
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +12,7 @@ import scala.scalajs.js.annotation._
 object foundationMod extends js.Object {
   @js.native
   class MDCSwitchFoundation () extends MDCFoundation[MDCSwitchAdapter] {
-    def this(adapter: Partial[MDCSwitchAdapter]) = this()
+    def this(adapter: PartialMDCSwitchAdapter) = this()
     // Subclasses should override this method to perform de-initialization routines (de-registering events, etc.)
     /* CompleteClass */
     override def destroy(): Unit = js.native
@@ -30,7 +29,7 @@ object foundationMod extends js.Object {
   
   @js.native
   class default () extends MDCSwitchFoundation {
-    def this(adapter: Partial[MDCSwitchAdapter]) = this()
+    def this(adapter: PartialMDCSwitchAdapter) = this()
   }
   
   /* static members */
@@ -41,7 +40,7 @@ object foundationMod extends js.Object {
     /** The default Adapter for the switch. */
     val defaultAdapter: MDCSwitchAdapter = js.native
     /** The string constants used by the switch. */
-    val strings: AnonNATIVECONTROLSELECTOR = js.native
+    val strings: AnonARIACHECKEDATTR = js.native
   }
   
   /* static members */
@@ -52,7 +51,7 @@ object foundationMod extends js.Object {
     /** The default Adapter for the switch. */
     val defaultAdapter: MDCSwitchAdapter = js.native
     /** The string constants used by the switch. */
-    val strings: AnonNATIVECONTROLSELECTOR = js.native
+    val strings: AnonARIACHECKEDATTR = js.native
   }
   
 }

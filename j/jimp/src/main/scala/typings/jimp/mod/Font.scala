@@ -5,6 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * @deprecated Jimp typings for TS <3.1 are being depreciated. Please upgrade your TypeScript version
+  */
 trait Font extends js.Object {
   var chars: StringDictionary[FontChar]
   var common: FontCommon

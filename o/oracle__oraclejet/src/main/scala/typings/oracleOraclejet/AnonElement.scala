@@ -1,21 +1,28 @@
 package typings.oracleOraclejet
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait AnonElement extends js.Object {
+trait AnonElement
+  extends /* propName */ StringDictionary[js.Any] {
+  var action: String
   var element: Element
-  var height: Double
-  var width: Double
+  def endCallback(): Unit
 }
 
 object AnonElement {
   @scala.inline
-  def apply(element: Element, height: Double, width: Double): AnonElement = {
-    val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-  
+  def apply(
+    action: String,
+    element: Element,
+    endCallback: () => Unit,
+    StringDictionary: /* propName */ StringDictionary[js.Any] = null
+  ): AnonElement = {
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any], endCallback = js.Any.fromFunction0(endCallback))
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[AnonElement]
   }
 }

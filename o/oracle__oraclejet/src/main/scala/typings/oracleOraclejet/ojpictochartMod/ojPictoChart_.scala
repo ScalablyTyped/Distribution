@@ -1,7 +1,7 @@
 package typings.oracleOraclejet.ojpictochartMod
 
-import typings.oracleOraclejet.AnonComponentNameLabelAndValue
-import typings.oracleOraclejet.AnonContextRendererAnonInsertAnonPreventDefaultKNull
+import typings.oracleOraclejet.Anon14
+import typings.oracleOraclejet.AnonLabelAndValue
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.ojdataproviderMod.DataProvider
 import typings.oracleOraclejet.ojdvtBaseMod.dvtBaseComponent
@@ -110,17 +110,14 @@ trait ojPictoChart_[K, D] extends dvtBaseComponent[ojPictoChartSettablePropertie
   var onRowHeightChanged: (js.Function1[/* event */ JetElementCustomEvent[Double | Null], _]) | Null = js.native
   var onSelectionChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[K]], _]) | Null = js.native
   var onSelectionModeChanged: (js.Function1[/* event */ JetElementCustomEvent[single | multiple | none], _]) | Null = js.native
-  var onTooltipChanged: (js.Function1[
-    /* event */ JetElementCustomEvent[AnonContextRendererAnonInsertAnonPreventDefaultKNull[K]], 
-    _
-  ]) | Null = js.native
+  var onTooltipChanged: (js.Function1[/* event */ JetElementCustomEvent[Anon14[K]], _]) | Null = js.native
   var rowCount: Double | Null = js.native
   var rowHeight: Double | Null = js.native
   var selection: js.Array[K] = js.native
   var selectionMode: single | multiple | none = js.native
-  var tooltip: AnonContextRendererAnonInsertAnonPreventDefaultKNull[K] = js.native
+  var tooltip: Anon14[K] = js.native
   @JSName("translations")
-  var translations_ojPictoChart_ : AnonComponentNameLabelAndValue = js.native
+  var translations_ojPictoChart_ : AnonLabelAndValue = js.native
   def addEventListener(
     `type`: animationOnDataChangeChanged,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | none], _]
@@ -352,20 +349,12 @@ trait ojPictoChart_[K, D] extends dvtBaseComponent[ojPictoChartSettablePropertie
   @JSName("addEventListener")
   def addEventListener_tooltipChanged(
     `type`: tooltipChanged,
-    listener: js.ThisFunction1[
-      /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[AnonContextRendererAnonInsertAnonPreventDefaultKNull[K]], 
-      _
-    ]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Anon14[K]], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_tooltipChanged(
     `type`: tooltipChanged,
-    listener: js.ThisFunction1[
-      /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[AnonContextRendererAnonInsertAnonPreventDefaultKNull[K]], 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Anon14[K]], _],
     useCapture: Boolean
   ): Unit = js.native
   def getContextByNode(node: Element): NodeContext | Null = js.native
@@ -410,7 +399,7 @@ trait ojPictoChart_[K, D] extends dvtBaseComponent[ojPictoChartSettablePropertie
   @JSName("getProperty")
   def getProperty_selectionMode(property: selectionMode): single | multiple | none = js.native
   @JSName("getProperty")
-  def getProperty_tooltip(property: tooltip): AnonContextRendererAnonInsertAnonPreventDefaultKNull[K] = js.native
+  def getProperty_tooltip(property: tooltip): Anon14[K] = js.native
   def setProperties(properties: ojPictoChartSettablePropertiesLenient[K, D]): Unit = js.native
   def setProperty(property: animationOnDataChange, value: auto): Unit = js.native
   def setProperty(property: animationOnDataChange, value: none): Unit = js.native
@@ -467,8 +456,8 @@ trait ojPictoChart_[K, D] extends dvtBaseComponent[ojPictoChartSettablePropertie
   @JSName("setProperty")
   def setProperty_selection(property: selection, value: js.Array[K]): Unit = js.native
   @JSName("setProperty")
-  def setProperty_tooltip(property: tooltip, value: AnonContextRendererAnonInsertAnonPreventDefaultKNull[K]): Unit = js.native
+  def setProperty_tooltip(property: tooltip, value: Anon14[K]): Unit = js.native
   @JSName("setProperty")
-  def setProperty_translations(property: translations, value: AnonComponentNameLabelAndValue): Unit = js.native
+  def setProperty_translations(property: translations, value: AnonLabelAndValue): Unit = js.native
 }
 

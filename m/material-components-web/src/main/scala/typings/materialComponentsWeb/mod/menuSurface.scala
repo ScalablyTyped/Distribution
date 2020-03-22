@@ -3,10 +3,10 @@ package typings.materialComponentsWeb.mod
 import typings.materialMenuSurface.AnonANCHOR
 import typings.materialMenuSurface.AnonANCHORTOMENUSURFACEWIDTHRATIO
 import typings.materialMenuSurface.AnonCLOSEDEVENT
+import typings.materialMenuSurface.PartialMDCMenuSurfaceAdap
 import typings.materialMenuSurface.adapterMod.MDCMenuSurfaceAdapter
 import typings.materialMenuSurface.utilMod.CssTransformPropertyName
 import typings.std.Element
-import typings.std.Partial
 import typings.std.Window_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -22,7 +22,7 @@ object menuSurface extends js.Object {
   @js.native
   class MDCMenuSurfaceFoundation ()
     extends typings.materialMenuSurface.mod.MDCMenuSurfaceFoundation {
-    def this(adapter: Partial[MDCMenuSurfaceAdapter]) = this()
+    def this(adapter: PartialMDCMenuSurfaceAdap) = this()
   }
   
   /**

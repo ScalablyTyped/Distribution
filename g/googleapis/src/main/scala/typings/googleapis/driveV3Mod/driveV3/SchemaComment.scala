@@ -1,6 +1,6 @@
 package typings.googleapis.driveV3Mod.driveV3
 
-import typings.googleapis.AnonMimeType
+import typings.googleapis.AnonMimeTypeValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -56,7 +56,7 @@ trait SchemaComment extends js.Object {
     * region. For a text file, for example, this would be the text at the
     * location of the comment.
     */
-  var quotedFileContent: js.UndefOr[AnonMimeType] = js.native
+  var quotedFileContent: js.UndefOr[AnonMimeTypeValue] = js.native
   /**
     * The full list of replies to the comment in chronological order.
     */
@@ -79,7 +79,7 @@ object SchemaComment {
     id: String = null,
     kind: String = null,
     modifiedTime: String = null,
-    quotedFileContent: AnonMimeType = null,
+    quotedFileContent: AnonMimeTypeValue = null,
     replies: js.Array[SchemaReply] = null,
     resolved: js.UndefOr[Boolean] = js.undefined
   ): SchemaComment = {

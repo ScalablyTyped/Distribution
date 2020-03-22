@@ -1,8 +1,11 @@
 package typings.ionicCore
 
 import typings.ionicCore.componentsMod._Global_.HTMLIonSearchbarElement
+import typings.ionicCore.ionicCoreStrings.always
 import typings.ionicCore.ionicCoreStrings.decimal
 import typings.ionicCore.ionicCoreStrings.email
+import typings.ionicCore.ionicCoreStrings.focus
+import typings.ionicCore.ionicCoreStrings.never
 import typings.ionicCore.ionicCoreStrings.none
 import typings.ionicCore.ionicCoreStrings.number
 import typings.ionicCore.ionicCoreStrings.numeric
@@ -43,6 +46,7 @@ object searchbarMod extends js.Object {
     var autocorrect: on | off = js.native
     /**
       * Set the cancel button icon. Only applies to `md` mode.
+      * Defaults to `"arrow-back-sharp"`.
       */
     var cancelButtonIcon: String = js.native
     /**
@@ -50,7 +54,7 @@ object searchbarMod extends js.Object {
       */
     var cancelButtonText: String = js.native
     /**
-      * Set the clear icon. Defaults to `"close-circle"` for `ios` and `"close"` for `md`.
+      * Set the clear icon. Defaults to `"close-circle"` for `ios` and `"close-sharp"` for `md`.
       */
     var clearIcon: js.UndefOr[String] = js.native
     /**
@@ -77,7 +81,7 @@ object searchbarMod extends js.Object {
       * Possible values: `"none"`, `"text"`, `"tel"`, `"url"`,
       * `"email"`, `"numeric"`, `"decimal"`, and `"search"`.
       */
-    var inputmode: none | text | tel | url | email | numeric | decimal | search = js.native
+    var inputmode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.native
     /**
       * Emitted when the input loses focus.
       */
@@ -99,7 +103,7 @@ object searchbarMod extends js.Object {
       */
     var ionFocus: EventEmitter[Unit] = js.native
     /**
-      * Emitted when a keyboard input ocurred.
+      * Emitted when a keyboard input occurred.
       */
     var ionInput: EventEmitter[KeyboardEvent] = js.native
     /**
@@ -157,9 +161,10 @@ object searchbarMod extends js.Object {
       */
     var positionPlaceholder: js.Any = js.native
     /**
-      * The icon to use as the search icon.
+      * The icon to use as the search icon. Defaults to `"search-outline"` in
+      * `ios` mode and `"search-sharp"` in `md` mode.
       */
-    var searchIcon: String = js.native
+    var searchIcon: js.UndefOr[String] = js.native
     var shouldAlignLeft: js.Any = js.native
     /**
       * Determines whether or not the cancel button should be visible onscreen.
@@ -175,7 +180,7 @@ object searchbarMod extends js.Object {
       * Setting to `"always"` shows the cancel button regardless
       * of focus state.
       */
-    var showCancelButton: Boolean | String = js.native
+    var showCancelButton: never | focus | always = js.native
     /**
       * If `true`, enable spellcheck on the input.
       */

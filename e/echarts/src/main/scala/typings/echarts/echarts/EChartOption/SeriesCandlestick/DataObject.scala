@@ -1,8 +1,8 @@
 package typings.echarts.echarts.EChartOption.SeriesCandlestick
 
-import typings.echarts.AnonBackgroundColorBorderColor
-import typings.echarts.AnonBorderColorBorderColor0
-import typings.echarts.AnonItemStyleAnonBorderColorBorderColor0
+import typings.echarts.AnonBorderColor0
+import typings.echarts.AnonExtraCssText
+import typings.echarts.AnonItemStyleAnonBorderColor0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,14 +14,14 @@ trait DataObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-candlestick.data.emphasis
     */
-  var emphasis: js.UndefOr[AnonItemStyleAnonBorderColorBorderColor0] = js.undefined
+  var emphasis: js.UndefOr[AnonItemStyleAnonBorderColor0] = js.undefined
   /**
     * Style of a candle box.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-candlestick.data.itemStyle
     */
-  var itemStyle: js.UndefOr[AnonBorderColorBorderColor0] = js.undefined
+  var itemStyle: js.UndefOr[AnonBorderColor0] = js.undefined
   /**
     * Name of data item.
     *
@@ -35,7 +35,7 @@ trait DataObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-candlestick.data.tooltip
     */
-  var tooltip: js.UndefOr[AnonBackgroundColorBorderColor] = js.undefined
+  var tooltip: js.UndefOr[AnonExtraCssText] = js.undefined
   /**
     * Value of data item.
     *
@@ -50,10 +50,10 @@ trait DataObject extends js.Object {
 object DataObject {
   @scala.inline
   def apply(
-    emphasis: AnonItemStyleAnonBorderColorBorderColor0 = null,
-    itemStyle: AnonBorderColorBorderColor0 = null,
+    emphasis: AnonItemStyleAnonBorderColor0 = null,
+    itemStyle: AnonBorderColor0 = null,
     name: String = null,
-    tooltip: AnonBackgroundColorBorderColor = null,
+    tooltip: AnonExtraCssText = null,
     value: js.Array[_] = null
   ): DataObject = {
     val __obj = js.Dynamic.literal()

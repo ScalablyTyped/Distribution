@@ -23,6 +23,10 @@ trait Product extends js.Object {
     */
   var Description: js.UndefOr[NonEmptyString] = js.native
   /**
+    * The types of integration that the product supports. Available values are the following.    SEND_FINDINGS_TO_SECURITY_HUB - Indicates that the integration sends findings to Security Hub.    RECEIVE_FINDINGS_FROM_SECURITY_HUB - Indicates that the integration receives findings from Security Hub.  
+    */
+  var IntegrationTypes: js.UndefOr[IntegrationTypeList] = js.native
+  /**
     * The URL for the page that contains more information about the product.
     */
   var MarketplaceUrl: js.UndefOr[NonEmptyString] = js.native
@@ -48,6 +52,7 @@ object Product {
     Categories: CategoryList = null,
     CompanyName: NonEmptyString = null,
     Description: NonEmptyString = null,
+    IntegrationTypes: IntegrationTypeList = null,
     MarketplaceUrl: NonEmptyString = null,
     ProductName: NonEmptyString = null,
     ProductSubscriptionResourcePolicy: NonEmptyString = null
@@ -57,6 +62,7 @@ object Product {
     if (Categories != null) __obj.updateDynamic("Categories")(Categories.asInstanceOf[js.Any])
     if (CompanyName != null) __obj.updateDynamic("CompanyName")(CompanyName.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
+    if (IntegrationTypes != null) __obj.updateDynamic("IntegrationTypes")(IntegrationTypes.asInstanceOf[js.Any])
     if (MarketplaceUrl != null) __obj.updateDynamic("MarketplaceUrl")(MarketplaceUrl.asInstanceOf[js.Any])
     if (ProductName != null) __obj.updateDynamic("ProductName")(ProductName.asInstanceOf[js.Any])
     if (ProductSubscriptionResourcePolicy != null) __obj.updateDynamic("ProductSubscriptionResourcePolicy")(ProductSubscriptionResourcePolicy.asInstanceOf[js.Any])

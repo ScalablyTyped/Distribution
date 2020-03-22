@@ -1,5 +1,6 @@
 package typings.inputMoment.mod
 
+import typings.inputMoment.ReadonlyInputMomentProps
 import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,6 +10,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class default protected ()
   extends Component[InputMomentProps, js.Object, js.Any] {
-  def this(props: InputMomentProps) = this()
+  def this(props: ReadonlyInputMomentProps) = this()
 }
 

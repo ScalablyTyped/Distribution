@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ionic/angular/dist/directives/proxies", "IonBadge")
+@JSImport("@ionic/angular/directives/proxies", "IonBadge")
 @js.native
 class IonBadge protected ()
   extends typings.ionicCore.componentsMod.Components.IonBadge {

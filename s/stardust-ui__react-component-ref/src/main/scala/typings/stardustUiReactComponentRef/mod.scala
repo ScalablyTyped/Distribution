@@ -37,14 +37,14 @@ object mod extends js.Object {
   @js.native
   object RefFindNode extends js.Object {
     var displayName: String = js.native
-    var propTypes: AnonChildren | AnonChildrenInnerRef = js.native
+    var propTypes: AnonChildren | AnonInnerRef = js.native
   }
   
   /* static members */
   @js.native
   object RefForward extends js.Object {
     var displayName: String = js.native
-    var propTypes: AnonChildren | AnonChildrenInnerRef = js.native
+    var propTypes: AnonChildren | AnonInnerRef = js.native
   }
   
 }

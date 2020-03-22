@@ -9,6 +9,9 @@ import scala.scalajs.js.annotation._
 class Tray protected ()
   extends typings.electron.Electron.Tray {
   def this(image: String) = this()
+  /**
+    * Tray
+    */
   def this(image: typings.electron.Electron.NativeImage_) = this()
 }
 

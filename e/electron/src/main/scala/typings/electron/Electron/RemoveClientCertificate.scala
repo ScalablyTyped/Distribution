@@ -12,7 +12,7 @@ trait RemoveClientCertificate extends js.Object {
     */
   var origin: String
   /**
-    * clientCertificate.
+    * `clientCertificate`.
     */
   var `type`: String
 }

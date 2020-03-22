@@ -39,6 +39,7 @@ abstract class ClientAction protected () extends Element {
   def containerAsMenuItem(): MenuItem = js.native
   def containerAsReferenceSetSelector(): ReferenceSetSelector = js.native
   def containerAsStaticImageViewer(): StaticImageViewer = js.native
+  def containerAsTextBox(): TextBox = js.native
   def containerAsWidgetValue(): WidgetValue = js.native
 }
 

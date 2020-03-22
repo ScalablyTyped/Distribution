@@ -8,7 +8,7 @@ trait AnonHasNewVersion extends js.Object {
   var hasNewVersion: Boolean
   var latestVersion: String
   var localVersion: String
-  var lookupInfo: AnonKey
+  var lookupInfo: AnonDictkey
   var trackViewUrl: String
 }
 
@@ -18,7 +18,7 @@ object AnonHasNewVersion {
     hasNewVersion: Boolean,
     latestVersion: String,
     localVersion: String,
-    lookupInfo: AnonKey,
+    lookupInfo: AnonDictkey,
     trackViewUrl: String
   ): AnonHasNewVersion = {
     val __obj = js.Dynamic.literal(hasNewVersion = hasNewVersion.asInstanceOf[js.Any], latestVersion = latestVersion.asInstanceOf[js.Any], localVersion = localVersion.asInstanceOf[js.Any], lookupInfo = lookupInfo.asInstanceOf[js.Any], trackViewUrl = trackViewUrl.asInstanceOf[js.Any])

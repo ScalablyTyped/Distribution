@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "assert-options" : "0.6.0"
+      "assert-options" : "0.6.1"
     }
   ],
   "test-dependencies" : [
     {
-      "assert-options" : "0.6.0"
+      "assert-options" : "0.6.1"
     }
   ],
   "compile-devDependencies" : [

@@ -1,6 +1,6 @@
 package typings.sumoLogger.mod
 
-import typings.std.Partial
+import typings.sumoLogger.PartialPerMessageOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -44,7 +44,7 @@ trait SumoLogger extends js.Object {
     * If you call the function with a JSON object, each field in the object is included as a separate field.
     * Fields called `sessionId`, `url`, and `timestamp` are sent in both cases.
     */
-  def log[T /* <: js.Object */](event: Partial[PerMessageOptions] with T): Unit = js.native
+  def log[T /* <: js.Object */](event: PartialPerMessageOptions with T): Unit = js.native
   /**
     * Start sending batched logs at the preconfigured interval
     */

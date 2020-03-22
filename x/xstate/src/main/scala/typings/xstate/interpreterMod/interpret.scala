@@ -1,8 +1,7 @@
 package typings.xstate.interpreterMod
 
-import typings.std.Partial
+import typings.xstate.PartialInterpreterOptions
 import typings.xstate.typesMod.EventObject
-import typings.xstate.typesMod.InterpreterOptions
 import typings.xstate.typesMod.StateMachine
 import typings.xstate.typesMod.StateSchema
 import typings.xstate.typesMod.Typestate
@@ -16,7 +15,7 @@ object interpret extends js.Object {
   def apply[TContext, TStateSchema /* <: StateSchema[_] */, TEvent /* <: EventObject */, TTypestate /* <: Typestate[TContext] */](machine: StateMachine[TContext, TStateSchema, TEvent, TTypestate]): Interpreter[TContext, TStateSchema, TEvent, TTypestate] = js.native
   def apply[TContext, TStateSchema /* <: StateSchema[_] */, TEvent /* <: EventObject */, TTypestate /* <: Typestate[TContext] */](
     machine: StateMachine[TContext, TStateSchema, TEvent, TTypestate],
-    options: Partial[InterpreterOptions]
+    options: PartialInterpreterOptions
   ): Interpreter[TContext, TStateSchema, TEvent, TTypestate] = js.native
 }
 

@@ -18,16 +18,22 @@ class default[T /* <: Response */] protected () extends Reader[T] {
   /* CompleteClass */
   override var decoder: js.Any = js.native
   /* CompleteClass */
+  override var findAddressInTree: js.Any = js.native
+  /* CompleteClass */
+  override var ipv4Start: js.Any = js.native
+  /* CompleteClass */
+  override var ipv4StartNodeNumber: js.Any = js.native
+  /* CompleteClass */
   override var metadata: Metadata = js.native
+  /* CompleteClass */
+  override var resolveDataPointer: js.Any = js.native
   /* CompleteClass */
   override var walker: js.Any = js.native
   /* CompleteClass */
-  override def findAddressInTree(ipAddress: String): Double | Null = js.native
-  /* CompleteClass */
   override def get(ipAddress: String): T | Null = js.native
   /* CompleteClass */
-  override def load(db: Buffer, opts: js.Object): Unit = js.native
+  override def getWithPrefixLength(ipAddress: String): js.Tuple2[T | Null, Double] = js.native
   /* CompleteClass */
-  override def resolveDataPointer(pointer: Double): js.Any = js.native
+  override def load(db: Buffer, opts: js.Object): Unit = js.native
 }
 

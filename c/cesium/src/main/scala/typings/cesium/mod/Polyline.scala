@@ -1,6 +1,6 @@
 package typings.cesium.mod
 
-import typings.cesium.AnonIdLoop
+import typings.cesium.AnonWidth
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("cesium", "Polyline")
 @js.native
 class Polyline () extends js.Object {
-  def this(options: AnonIdLoop) = this()
+  def this(options: AnonWidth) = this()
   var id: js.Any = js.native
   var loop: Boolean = js.native
   var material: Material = js.native

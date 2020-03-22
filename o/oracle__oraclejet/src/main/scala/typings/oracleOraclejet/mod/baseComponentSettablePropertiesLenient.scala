@@ -5,15 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in keyof @oracle/oraclejet.@oracle/oraclejet.baseComponentSettableProperties ]:? @oracle/oraclejet.@oracle/oraclejet.baseComponentSettableProperties[P]} */ trait baseComponentSettablePropertiesLenient
-  extends /* key */ StringDictionary[js.Any]
+/* Inlined parent std.Partial<@oracle/oraclejet.@oracle/oraclejet.baseComponentSettableProperties> */
+trait baseComponentSettablePropertiesLenient
+  extends /* key */ StringDictionary[js.Any] {
+  var translations: js.UndefOr[js.Object] = js.undefined
+}
 
 object baseComponentSettablePropertiesLenient {
   @scala.inline
-  def apply(StringDictionary: /* key */ StringDictionary[js.Any] = null): baseComponentSettablePropertiesLenient = {
+  def apply(StringDictionary: /* key */ StringDictionary[js.Any] = null, translations: js.Object = null): baseComponentSettablePropertiesLenient = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (translations != null) __obj.updateDynamic("translations")(translations.asInstanceOf[js.Any])
     __obj.asInstanceOf[baseComponentSettablePropertiesLenient]
   }
 }

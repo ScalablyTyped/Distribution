@@ -1,8 +1,8 @@
 package typings.easyXHeaders.NodeJS
 
-import typings.easyXHeaders.AnonArray
-import typings.easyXHeaders.FnRadix
-import typings.easyXHeaders.FnUriComponent
+import typings.easyXHeaders.AnonInstantiable
+import typings.easyXHeaders.FnCall
+import typings.easyXHeaders.FnCallSRadix
 import typings.easyXHeaders.TypeofIntl
 import typings.std.ArrayBufferConstructor
 import typings.std.ArrayConstructor
@@ -10,7 +10,9 @@ import typings.std.BooleanConstructor
 import typings.std.Console_
 import typings.std.DataViewConstructor
 import typings.std.DateConstructor
+import typings.std.Error
 import typings.std.ErrorConstructor
+import typings.std.EvalError
 import typings.std.EvalErrorConstructor
 import typings.std.Float32ArrayConstructor
 import typings.std.Float64ArrayConstructor
@@ -22,12 +24,15 @@ import typings.std.MapConstructor
 import typings.std.NumberConstructor
 import typings.std.ObjectConstructor
 import typings.std.RangeErrorConstructor
+import typings.std.ReferenceError
 import typings.std.ReferenceErrorConstructor
 import typings.std.RegExpConstructor
 import typings.std.SetConstructor
 import typings.std.StringConstructor
 import typings.std.SyntaxErrorConstructor
+import typings.std.TypeError
 import typings.std.TypeErrorConstructor
+import typings.std.URIError
 import typings.std.URIErrorConstructor
 import typings.std.Uint16ArrayConstructor
 import typings.std.Uint32ArrayConstructor
@@ -44,7 +49,7 @@ trait Global extends js.Object {
   var Array_Original: ArrayConstructor = js.native
   @JSName("Boolean")
   var Boolean_Original: BooleanConstructor = js.native
-  var Buffer: AnonArray = js.native
+  var Buffer: AnonInstantiable = js.native
   var DataView: DataViewConstructor = js.native
   @JSName("Date")
   var Date_Original: DateConstructor = js.native
@@ -99,7 +104,7 @@ trait Global extends js.Object {
   @JSName("decodeURI")
   var decodeURI_Original: js.Function1[/* encodedURI */ String, String] = js.native
   @JSName("encodeURIComponent")
-  var encodeURIComponent_Original: FnUriComponent = js.native
+  var encodeURIComponent_Original: FnCall = js.native
   @JSName("encodeURI")
   var encodeURI_Original: js.Function1[/* uri */ String, String] = js.native
   @JSName("eval")
@@ -112,7 +117,7 @@ trait Global extends js.Object {
   @JSName("parseFloat")
   var parseFloat_Original: js.Function1[/* string */ String, Double] = js.native
   @JSName("parseInt")
-  var parseInt_Original: FnRadix = js.native
+  var parseInt_Original: FnCallSRadix = js.native
   var process: Process = js.native
   var root: Global = js.native
   var undefined: js.UndefOr[scala.Nothing] = js.native
@@ -126,8 +131,12 @@ trait Global extends js.Object {
   def Date(): String = js.native
   def Error(): typings.std.Error = js.native
   def Error(message: String): typings.std.Error = js.native
-  def EvalError(): typings.std.EvalError = js.native
-  def EvalError(message: String): typings.std.EvalError = js.native
+  def EvalError(): Error = js.native
+  def EvalError(message: String): Error = js.native
+  @JSName("EvalError")
+  def EvalError_EvalError(): EvalError = js.native
+  @JSName("EvalError")
+  def EvalError_EvalError(message: String): EvalError = js.native
   def Function(args: String*): js.Function = js.native
   def Number(): Double = js.native
   def Number(value: js.Any): Double = js.native
@@ -135,8 +144,16 @@ trait Global extends js.Object {
   def Object(value: js.Any): js.Any = js.native
   def RangeError(): typings.std.RangeError = js.native
   def RangeError(message: String): typings.std.RangeError = js.native
-  def ReferenceError(): typings.std.ReferenceError = js.native
-  def ReferenceError(message: String): typings.std.ReferenceError = js.native
+  @JSName("RangeError")
+  def RangeError_Error(): Error = js.native
+  @JSName("RangeError")
+  def RangeError_Error(message: String): Error = js.native
+  def ReferenceError(): Error = js.native
+  def ReferenceError(message: String): Error = js.native
+  @JSName("ReferenceError")
+  def ReferenceError_ReferenceError(): ReferenceError = js.native
+  @JSName("ReferenceError")
+  def ReferenceError_ReferenceError(message: String): ReferenceError = js.native
   def RegExp(pattern: String): typings.std.RegExp = js.native
   def RegExp(pattern: String, flags: String): typings.std.RegExp = js.native
   def RegExp(pattern: typings.std.RegExp): typings.std.RegExp = js.native
@@ -145,10 +162,22 @@ trait Global extends js.Object {
   def String(value: js.Any): java.lang.String = js.native
   def SyntaxError(): typings.std.SyntaxError = js.native
   def SyntaxError(message: String): typings.std.SyntaxError = js.native
-  def TypeError(): typings.std.TypeError = js.native
-  def TypeError(message: String): typings.std.TypeError = js.native
-  def URIError(): typings.std.URIError = js.native
-  def URIError(message: String): typings.std.URIError = js.native
+  @JSName("SyntaxError")
+  def SyntaxError_Error(): Error = js.native
+  @JSName("SyntaxError")
+  def SyntaxError_Error(message: String): Error = js.native
+  def TypeError(): Error = js.native
+  def TypeError(message: String): Error = js.native
+  @JSName("TypeError")
+  def TypeError_TypeError(): TypeError = js.native
+  @JSName("TypeError")
+  def TypeError_TypeError(message: String): TypeError = js.native
+  def URIError(): Error = js.native
+  def URIError(message: String): Error = js.native
+  @JSName("URIError")
+  def URIError_URIError(): URIError = js.native
+  @JSName("URIError")
+  def URIError_URIError(message: String): URIError = js.native
   def clearImmediate(immediateId: js.Any): Unit = js.native
   def clearInterval(intervalId: Timer): Unit = js.native
   def clearTimeout(timeoutId: Timer): Unit = js.native

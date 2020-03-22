@@ -1,6 +1,7 @@
 package typings.builderUtilRuntime.publishOptionsMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.node.httpMod.OutgoingHttpHeaders
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,12 +18,14 @@ object CustomPublishOptions {
     StringDictionary: /* index */ StringDictionary[js.Any] = null,
     publishAutoUpdate: js.UndefOr[Boolean] = js.undefined,
     publisherName: js.Array[String] = null,
+    requestHeaders: OutgoingHttpHeaders = null,
     updaterCacheDirName: String = null
   ): CustomPublishOptions = {
     val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (!js.isUndefined(publishAutoUpdate)) __obj.updateDynamic("publishAutoUpdate")(publishAutoUpdate.asInstanceOf[js.Any])
     if (publisherName != null) __obj.updateDynamic("publisherName")(publisherName.asInstanceOf[js.Any])
+    if (requestHeaders != null) __obj.updateDynamic("requestHeaders")(requestHeaders.asInstanceOf[js.Any])
     if (updaterCacheDirName != null) __obj.updateDynamic("updaterCacheDirName")(updaterCacheDirName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomPublishOptions]
   }

@@ -1,7 +1,7 @@
 package typings.d3Collection.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.d3Collection.AnonKeyValueValuesAny
+import typings.d3Collection.AnonKeyValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,7 +37,7 @@ trait Nest_[Datum, RollupType] extends js.Object {
     *
     * @param array An array to create a nested data structure from.
     */
-  def entries(array: js.Array[Datum]): js.Array[AnonKeyValueValuesAny[RollupType]]
+  def entries(array: js.Array[Datum]): js.Array[AnonKeyValue[RollupType]]
   /**
     * Registers a new key function and returns this nest operator.
     * The key function will be invoked for each element in the input array and must return a string identifier to assign the element to its group.
@@ -150,7 +150,7 @@ trait Nest_[Datum, RollupType] extends js.Object {
 object Nest_ {
   @scala.inline
   def apply[Datum, RollupType](
-    entries: js.Array[Datum] => js.Array[AnonKeyValueValuesAny[RollupType]],
+    entries: js.Array[Datum] => js.Array[AnonKeyValue[RollupType]],
     key: js.Function1[/* datum */ Datum, String] => Nest_[Datum, RollupType],
     map: js.Array[Datum] => Map_[_],
     `object`: js.Array[Datum] => StringDictionary[js.Any],

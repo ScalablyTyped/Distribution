@@ -2,7 +2,7 @@ package typings.exceljs.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.exceljs.AnonIncludeEmpty
-import typings.std.Partial
+import typings.exceljs.PartialRowModel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,7 +31,7 @@ trait Row extends Style {
   	 * Make row hidden
   	 */
   var hidden: Boolean = js.native
-  var model: Partial[RowModel] | Null = js.native
+  var model: PartialRowModel | Null = js.native
   /**
   	 * The row number
   	 */

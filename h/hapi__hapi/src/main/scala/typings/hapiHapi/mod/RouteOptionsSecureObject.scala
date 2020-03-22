@@ -1,7 +1,7 @@
 package typings.hapiHapi.mod
 
-import typings.hapiHapi.AnonAllowfrom
 import typings.hapiHapi.AnonIncludeSubDomains
+import typings.hapiHapi.AnonRule
 import typings.hapiHapi.hapiHapiBooleans.`false`
 import typings.hapiHapi.hapiHapiBooleans.`true`
 import typings.hapiHapi.hapiHapiStrings.deny
@@ -31,7 +31,7 @@ trait RouteOptionsSecureObject extends js.Object {
   /**
     * controls the 'X-Frame-Options' header
     */
-  var xframe: js.UndefOr[`true` | deny | sameorigin | AnonAllowfrom] = js.undefined
+  var xframe: js.UndefOr[`true` | deny | sameorigin | AnonRule] = js.undefined
   /**
     * boolean that controls the 'X-XSS-PROTECTION' header for Internet Explorer. Defaults to true which sets the header to equal '1; mode=block'.
     * Note: this setting can create a security vulnerability in versions of Internet Exploere below 8, as well as unpatched versions of IE8. See here and here for more information. If you actively
@@ -48,7 +48,7 @@ object RouteOptionsSecureObject {
     noOpen: js.UndefOr[Boolean] = js.undefined,
     noSniff: js.UndefOr[Boolean] = js.undefined,
     referrer: `false` | ReferrerPolicy = null,
-    xframe: `true` | deny | sameorigin | AnonAllowfrom = null
+    xframe: `true` | deny | sameorigin | AnonRule = null
   ): RouteOptionsSecureObject = {
     val __obj = js.Dynamic.literal(xss = xss.asInstanceOf[js.Any])
     if (hsts != null) __obj.updateDynamic("hsts")(hsts.asInstanceOf[js.Any])

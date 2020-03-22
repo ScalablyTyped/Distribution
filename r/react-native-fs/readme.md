@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-fs
 
-Typings are for version 2.16.4
+Typings are for version 2.16.6
 
 ## Library description:
 Native filesystem access for react-native

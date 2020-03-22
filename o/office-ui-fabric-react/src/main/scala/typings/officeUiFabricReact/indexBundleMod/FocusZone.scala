@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact.indexBundleMod
 
-import typings.officeUiFabricReact.focusZoneTypesMod.IFocusZoneProps
+import typings.fluentuiReactFocus.focusZoneTypesMod.IFocusZoneProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

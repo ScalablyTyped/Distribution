@@ -1,7 +1,6 @@
 package typings.reactabularTable.mod
 
-import typings.std.CSSStyleDeclaration
-import typings.std.Partial
+import typings.reactabularTable.PartialCSSStyleDeclaratio
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +9,7 @@ trait ProviderProps extends js.Object {
   var className: js.UndefOr[String] = js.undefined
   var columns: js.Array[Column]
   var renderers: js.UndefOr[Renderers] = js.undefined
-  var style: js.UndefOr[Partial[CSSStyleDeclaration]] = js.undefined
+  var style: js.UndefOr[PartialCSSStyleDeclaratio] = js.undefined
 }
 
 object ProviderProps {
@@ -19,7 +18,7 @@ object ProviderProps {
     columns: js.Array[Column],
     className: String = null,
     renderers: Renderers = null,
-    style: Partial[CSSStyleDeclaration] = null
+    style: PartialCSSStyleDeclaratio = null
   ): ProviderProps = {
     val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])

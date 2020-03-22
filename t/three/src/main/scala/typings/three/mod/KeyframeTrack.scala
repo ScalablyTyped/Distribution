@@ -21,7 +21,6 @@ class KeyframeTrack protected ()
 @JSImport("three", "KeyframeTrack")
 @js.native
 object KeyframeTrack extends js.Object {
-  def parse(json: js.Any): typings.three.keyframeTrackMod.KeyframeTrack = js.native
   def toJSON(track: typings.three.keyframeTrackMod.KeyframeTrack): js.Any = js.native
 }
 

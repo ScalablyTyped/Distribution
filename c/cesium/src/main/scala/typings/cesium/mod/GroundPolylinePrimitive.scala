@@ -1,6 +1,6 @@
 package typings.cesium.mod
 
-import typings.cesium.AnonAllowPickingAppearanceAsynchronousClassificationType
+import typings.cesium.AnonDebugShowShadowVolume
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("cesium", "GroundPolylinePrimitive")
 @js.native
 class GroundPolylinePrimitive protected () extends js.Object {
-  def this(options: AnonAllowPickingAppearanceAsynchronousClassificationType) = this()
+  def this(options: AnonDebugShowShadowVolume) = this()
   val allowPicking: Boolean = js.native
   var appearance: Appearance = js.native
   val asynchronous: Boolean = js.native

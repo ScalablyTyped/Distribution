@@ -1,7 +1,7 @@
 package typings.saslPlain.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.saslPlain.TypeofClassPlainMechanism
+import typings.saslPlain.TypeofPlainMechanism
 import typings.saslPlain.saslPlainBooleans.`true`
 import typings.saslPlain.saslPlainStrings.PLAIN
 import scala.scalajs.js
@@ -29,6 +29,6 @@ class ^ () extends PlainMechanism {
 @JSImport("sasl-plain", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  var Mechanism: TypeofClassPlainMechanism = js.native
+  var Mechanism: TypeofPlainMechanism = js.native
 }
 

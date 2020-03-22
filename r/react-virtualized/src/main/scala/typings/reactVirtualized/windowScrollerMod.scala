@@ -16,7 +16,7 @@ object windowScrollerMod extends js.Object {
   /* static members */
   @js.native
   object WindowScroller extends js.Object {
-    var defaultProps: Anon0150OnResize = js.native
+    var defaultProps: AnonOnResize = js.native
   }
   
 }

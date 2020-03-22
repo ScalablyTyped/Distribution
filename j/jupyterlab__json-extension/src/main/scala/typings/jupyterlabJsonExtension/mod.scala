@@ -6,12 +6,12 @@ import typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.IExtension
 import typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.IRenderer
 import typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.IRendererFactory
 import typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.IRendererOptions
-import typings.phosphorAlgorithm.iterMod.IIterator
-import typings.phosphorMessaging.mod.Message
-import typings.phosphorWidgets.widgetMod.Widget
-import typings.phosphorWidgets.widgetMod.Widget.ChildMessage
-import typings.phosphorWidgets.widgetMod.Widget.Flag
-import typings.phosphorWidgets.widgetMod.Widget.ResizeMessage
+import typings.luminoAlgorithm.iterMod.IIterator
+import typings.luminoMessaging.mod.Message
+import typings.luminoWidgets.widgetMod.Widget
+import typings.luminoWidgets.widgetMod.Widget.ChildMessage
+import typings.luminoWidgets.widgetMod.Widget.Flag
+import typings.luminoWidgets.widgetMod.Widget.ResizeMessage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -96,6 +96,7 @@ object mod extends js.Object {
       * It is undefined behavior to use any functionality of the object
       * after it has been disposed unless otherwise explicitly noted.
       */
+    /* CompleteClass */
     /* InferMemberOverrides */
     override def dispose(): Unit = js.native
     /**
@@ -262,6 +263,7 @@ object mod extends js.Object {
       *
       * @param msg - The message to be processed.
       */
+    /* CompleteClass */
     /* InferMemberOverrides */
     override def processMessage(msg: Message): Unit = js.native
     /**

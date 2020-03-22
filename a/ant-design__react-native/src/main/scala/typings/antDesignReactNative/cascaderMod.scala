@@ -14,7 +14,7 @@ object cascaderMod extends js.Object {
   /* static members */
   @js.native
   object default extends js.Object {
-    var defaultProps: AnonColsData = js.native
+    var defaultProps: AnonData = js.native
   }
   
 }

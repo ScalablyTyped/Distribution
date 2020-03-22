@@ -2,8 +2,8 @@ package typings.svgJs.mod
 
 import typings.std.HTMLElement
 import typings.svgJs.Anon
-import typings.svgJs.AnonArray
 import typings.svgJs.AnonAttrs
+import typings.svgJs.AnonDegrees
 import typings.svgJs.AnonDelimiter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -68,7 +68,7 @@ trait Library extends js.Object {
   var regex: AnonDelimiter = js.native
   var supported: Boolean = js.native
   var svgjs: String = js.native
-  var utils: AnonArray = js.native
+  var utils: AnonDegrees = js.native
   var xlink: String = js.native
   var xmlns: String = js.native
   def apply(domElement: HTMLElement): Doc = js.native

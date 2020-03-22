@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "sourcemap-codec" : "1.4.6"
+      "sourcemap-codec" : "1.4.8"
     }
   ],
   "test-dependencies" : [
     {
-      "sourcemap-codec" : "1.4.6"
+      "sourcemap-codec" : "1.4.8"
     }
   ],
   "compile-devDependencies" : [

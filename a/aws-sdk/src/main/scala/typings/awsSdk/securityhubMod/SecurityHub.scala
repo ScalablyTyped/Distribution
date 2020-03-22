@@ -26,12 +26,12 @@ trait SecurityHub extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ AcceptInvitationResponse, Unit]
   ): Request[AcceptInvitationResponse, AWSError] = js.native
   /**
-    * Disables the standards specified by the provided StandardsSubscriptionArns. For more information, see Compliance Standards section of the AWS Security Hub User Guide.
+    * Disables the standards specified by the provided StandardsSubscriptionArns. For more information, see Security Standards section of the AWS Security Hub User Guide.
     */
   def batchDisableStandards(): Request[BatchDisableStandardsResponse, AWSError] = js.native
   def batchDisableStandards(callback: js.Function2[/* err */ AWSError, /* data */ BatchDisableStandardsResponse, Unit]): Request[BatchDisableStandardsResponse, AWSError] = js.native
   /**
-    * Disables the standards specified by the provided StandardsSubscriptionArns. For more information, see Compliance Standards section of the AWS Security Hub User Guide.
+    * Disables the standards specified by the provided StandardsSubscriptionArns. For more information, see Security Standards section of the AWS Security Hub User Guide.
     */
   def batchDisableStandards(params: BatchDisableStandardsRequest): Request[BatchDisableStandardsResponse, AWSError] = js.native
   def batchDisableStandards(
@@ -39,12 +39,12 @@ trait SecurityHub extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ BatchDisableStandardsResponse, Unit]
   ): Request[BatchDisableStandardsResponse, AWSError] = js.native
   /**
-    * Enables the standards specified by the provided StandardsArn. To obtain the ARN for a standard, use the  DescribeStandards  operation. For more information, see the Compliance Standards section of the AWS Security Hub User Guide.
+    * Enables the standards specified by the provided StandardsArn. To obtain the ARN for a standard, use the  DescribeStandards  operation. For more information, see the Security Standards section of the AWS Security Hub User Guide.
     */
   def batchEnableStandards(): Request[BatchEnableStandardsResponse, AWSError] = js.native
   def batchEnableStandards(callback: js.Function2[/* err */ AWSError, /* data */ BatchEnableStandardsResponse, Unit]): Request[BatchEnableStandardsResponse, AWSError] = js.native
   /**
-    * Enables the standards specified by the provided StandardsArn. To obtain the ARN for a standard, use the  DescribeStandards  operation. For more information, see the Compliance Standards section of the AWS Security Hub User Guide.
+    * Enables the standards specified by the provided StandardsArn. To obtain the ARN for a standard, use the  DescribeStandards  operation. For more information, see the Security Standards section of the AWS Security Hub User Guide.
     */
   def batchEnableStandards(params: BatchEnableStandardsRequest): Request[BatchEnableStandardsResponse, AWSError] = js.native
   def batchEnableStandards(
@@ -221,12 +221,12 @@ trait SecurityHub extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeStandardsResponse, Unit]
   ): Request[DescribeStandardsResponse, AWSError] = js.native
   /**
-    * Returns a list of compliance standards controls. For each control, the results include information about whether it is currently enabled, the severity, and a link to remediation information.
+    * Returns a list of security standards controls. For each control, the results include information about whether it is currently enabled, the severity, and a link to remediation information.
     */
   def describeStandardsControls(): Request[DescribeStandardsControlsResponse, AWSError] = js.native
   def describeStandardsControls(callback: js.Function2[/* err */ AWSError, /* data */ DescribeStandardsControlsResponse, Unit]): Request[DescribeStandardsControlsResponse, AWSError] = js.native
   /**
-    * Returns a list of compliance standards controls. For each control, the results include information about whether it is currently enabled, the severity, and a link to remediation information.
+    * Returns a list of security standards controls. For each control, the results include information about whether it is currently enabled, the severity, and a link to remediation information.
     */
   def describeStandardsControls(params: DescribeStandardsControlsRequest): Request[DescribeStandardsControlsResponse, AWSError] = js.native
   def describeStandardsControls(
@@ -537,12 +537,12 @@ trait SecurityHub extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateInsightResponse, Unit]
   ): Request[UpdateInsightResponse, AWSError] = js.native
   /**
-    * Used to control whether an individual compliance standard control is enabled or disabled.
+    * Used to control whether an individual security standard control is enabled or disabled.
     */
   def updateStandardsControl(): Request[UpdateStandardsControlResponse, AWSError] = js.native
   def updateStandardsControl(callback: js.Function2[/* err */ AWSError, /* data */ UpdateStandardsControlResponse, Unit]): Request[UpdateStandardsControlResponse, AWSError] = js.native
   /**
-    * Used to control whether an individual compliance standard control is enabled or disabled.
+    * Used to control whether an individual security standard control is enabled or disabled.
     */
   def updateStandardsControl(params: UpdateStandardsControlRequest): Request[UpdateStandardsControlResponse, AWSError] = js.native
   def updateStandardsControl(

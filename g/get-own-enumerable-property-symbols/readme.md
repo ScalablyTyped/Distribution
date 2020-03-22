@@ -1,7 +1,7 @@
 
 # Scala.js typings for get-own-enumerable-property-symbols
 
-Typings are for version 3.0.0
+Typings are for version 3.0.2
 
 ## Library description:
 Returns an array of all enumerable symbol properties found directly upon a given object

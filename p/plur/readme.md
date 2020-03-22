@@ -1,7 +1,7 @@
 
 # Scala.js typings for plur
 
-Typings are for version 3.1.1
+Typings are for version 4.0.0
 
 ## Library description:
 Pluralize a word

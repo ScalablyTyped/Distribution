@@ -13,12 +13,12 @@ trait DeleteFlowLogsRequest extends js.Object {
   /**
     * One or more flow log IDs. Constraint: Maximum of 1000 flow log IDs.
     */
-  var FlowLogIds: ValueStringList = js.native
+  var FlowLogIds: FlowLogIdList = js.native
 }
 
 object DeleteFlowLogsRequest {
   @scala.inline
-  def apply(FlowLogIds: ValueStringList, DryRun: js.UndefOr[scala.Boolean] = js.undefined): DeleteFlowLogsRequest = {
+  def apply(FlowLogIds: FlowLogIdList, DryRun: js.UndefOr[scala.Boolean] = js.undefined): DeleteFlowLogsRequest = {
     val __obj = js.Dynamic.literal(FlowLogIds = FlowLogIds.asInstanceOf[js.Any])
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteFlowLogsRequest]

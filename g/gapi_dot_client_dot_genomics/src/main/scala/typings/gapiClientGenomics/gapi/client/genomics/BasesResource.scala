@@ -1,7 +1,7 @@
 package typings.gapiClientGenomics.gapi.client.genomics
 
 import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientGenomics.AnonAccesstokenAltBearertokenCallbackEndFields
+import typings.gapiClientGenomics.AnonPageSize
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,12 +17,12 @@ trait BasesResource extends js.Object {
     * Implements
     * [GlobalAllianceApi.getReferenceBases](https://github.com/ga4gh/schemas/blob/v0.5.1/src/main/resources/avro/referencemethods.avdl#L221).
     */
-  def list(request: AnonAccesstokenAltBearertokenCallbackEndFields): Request_[ListBasesResponse]
+  def list(request: AnonPageSize): Request_[ListBasesResponse]
 }
 
 object BasesResource {
   @scala.inline
-  def apply(list: AnonAccesstokenAltBearertokenCallbackEndFields => Request_[ListBasesResponse]): BasesResource = {
+  def apply(list: AnonPageSize => Request_[ListBasesResponse]): BasesResource = {
     val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[BasesResource]

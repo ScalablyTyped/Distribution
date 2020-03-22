@@ -2,7 +2,6 @@ package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.announcedTypesMod.IAnnouncedProps
 import typings.react.mod.FunctionComponent
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +17,7 @@ object announcedMod extends js.Object {
   /* static members */
   @js.native
   object AnnouncedBase extends js.Object {
-    var defaultProps: Partial[IAnnouncedProps] = js.native
+    var defaultProps: PartialIAnnouncedProps = js.native
   }
   
 }

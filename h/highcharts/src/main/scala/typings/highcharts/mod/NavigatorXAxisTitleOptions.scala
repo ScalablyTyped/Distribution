@@ -81,7 +81,7 @@ trait NavigatorXAxisTitleOptions extends js.Object {
   var style: js.UndefOr[CSSObject] = js.undefined
   /**
     * (Highstock, Gantt) The actual text of the axis title. It can contain
-    * basic HTML text markup like <b>, <i> and spans with style.
+    * basic HTML tags like `b`, `i` and `span` with style.
     */
   var text: js.UndefOr[String | Null] = js.undefined
   /**

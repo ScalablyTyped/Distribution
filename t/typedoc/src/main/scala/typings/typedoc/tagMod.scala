@@ -15,7 +15,6 @@ object tagMod extends js.Object {
     var paramName: String = js.native
     var tagName: String = js.native
     var text: String = js.native
-    def toObject(): js.Any = js.native
   }
   
 }

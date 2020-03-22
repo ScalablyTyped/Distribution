@@ -24,6 +24,6 @@ trait Progress
   def renderProcessInfo_normal(prefixCls: String, progressStatus: normal): Element | Null = js.native
   @JSName("renderProcessInfo")
   def renderProcessInfo_success(prefixCls: String, progressStatus: success): Element | Null = js.native
-  def renderProgress(hasGetPrefixCls: ConfigConsumerProps): Element = js.native
+  def renderProgress(hasGetPrefixClsDirection: ConfigConsumerProps): Element = js.native
 }
 

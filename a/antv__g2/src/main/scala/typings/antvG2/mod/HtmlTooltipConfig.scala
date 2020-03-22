@@ -1,6 +1,6 @@
 package typings.antvG2.mod
 
-import typings.antvG2.AnonCross
+import typings.antvG2.AnonStyle
 import typings.antvG2.antvG2Booleans.`true`
 import typings.antvG2.antvG2Strings.bottom
 import typings.antvG2.antvG2Strings.click
@@ -38,7 +38,7 @@ object HtmlTooltipConfig {
   @scala.inline
   def apply(
     containerTpl: String = null,
-    crosshairs: AnonCross = null,
+    crosshairs: AnonStyle = null,
     enterable: js.UndefOr[Boolean] = js.undefined,
     follow: js.UndefOr[Boolean] = js.undefined,
     `g2-tooltip`: Record[String, _] = null,

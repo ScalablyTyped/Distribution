@@ -1,11 +1,11 @@
 package typings.exceljs.mod
 
 import typings.exceljs.AnonLeft
+import typings.exceljs.PartialColor
 import typings.exceljs.exceljsStrings.angle
 import typings.exceljs.exceljsStrings.gradient
 import typings.exceljs.exceljsStrings.path
 import typings.exceljs.exceljsStrings.pattern
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +19,7 @@ trait Fill extends js.Object
 
 object Fill {
   @scala.inline
-  def FillPattern(fgColor: Partial[Color], pattern: FillPatterns, `type`: pattern, bgColor: Partial[Color] = null): Fill = {
+  def FillPattern(fgColor: PartialColor, pattern: FillPatterns, `type`: pattern, bgColor: PartialColor = null): Fill = {
     val __obj = js.Dynamic.literal(fgColor = fgColor.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (bgColor != null) __obj.updateDynamic("bgColor")(bgColor.asInstanceOf[js.Any])

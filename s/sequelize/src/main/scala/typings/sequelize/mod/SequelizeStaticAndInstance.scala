@@ -1,6 +1,6 @@
 package typings.sequelize.mod
 
-import typings.sequelize.AnonA1
+import typings.sequelize.AnonInstantiable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,7 +28,7 @@ trait SequelizeStaticAndInstance extends Errors {
   /**
     * A modified version of bluebird promises, that allows listening for sql events
     */
-  var Promise: AnonA1 = js.native
+  var Promise: AnonInstantiable = js.native
   /**
     * Available query types for use with `sequelize.query`
     */

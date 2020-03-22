@@ -11,11 +11,11 @@ trait CreateStateMachineInput extends js.Object {
     */
   var definition: Definition = js.native
   /**
-    * Defines what execution history events are logged and where they are logged.
+    * Defines what execution history events are logged and where they are logged.  By default, the level is set to OFF. For more information see Log Levels in the AWS Step Functions User Guide. 
     */
   var loggingConfiguration: js.UndefOr[LoggingConfiguration] = js.native
   /**
-    * The name of the state machine.  A name must not contain:   white space   brackets &lt; &gt; { } [ ]    wildcard characters ? *    special characters " # % \ ^ | ~ ` $ &amp; , ; : /    control characters (U+0000-001F, U+007F-009F)  
+    * The name of the state machine.  A name must not contain:   white space   brackets &lt; &gt; { } [ ]    wildcard characters ? *    special characters " # % \ ^ | ~ ` $ &amp; , ; : /    control characters (U+0000-001F, U+007F-009F)   To enable logging with CloudWatch Logs, the name should only contain 0-9, A-Z, a-z, - and _.
     */
   var name: Name = js.native
   /**
@@ -27,7 +27,7 @@ trait CreateStateMachineInput extends js.Object {
     */
   var tags: js.UndefOr[TagList] = js.native
   /**
-    * Determines whether a Standard or Express state machine is created. If not set, Standard is created.
+    * Determines whether a Standard or Express state machine is created. The default is STANDARD. You cannot update the type of a state machine once it has been created.
     */
   var `type`: js.UndefOr[StateMachineType] = js.native
 }

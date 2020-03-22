@@ -14,8 +14,6 @@ trait reactSimpleMapsProps {
   @scala.inline
   def GeographiesProps: typings.reactSimpleMaps.mod.GeographiesProps.type = typings.reactSimpleMaps.mod.GeographiesProps
   type GeographiesProps = typings.reactSimpleMaps.mod.GeographiesProps
-  @scala.inline
-  def GeographyProps: typings.reactSimpleMaps.mod.GeographyProps.type = typings.reactSimpleMaps.mod.GeographyProps
   type GeographyProps = typings.reactSimpleMaps.mod.GeographyProps
   @scala.inline
   def GraticuleProps: typings.reactSimpleMaps.mod.GraticuleProps.type = typings.reactSimpleMaps.mod.GraticuleProps
@@ -23,8 +21,6 @@ trait reactSimpleMapsProps {
   @scala.inline
   def LineProps: typings.reactSimpleMaps.mod.LineProps.type = typings.reactSimpleMaps.mod.LineProps
   type LineProps = typings.reactSimpleMaps.mod.LineProps
-  @scala.inline
-  def MarkerProps: typings.reactSimpleMaps.mod.MarkerProps.type = typings.reactSimpleMaps.mod.MarkerProps
   type MarkerProps = typings.reactSimpleMaps.mod.MarkerProps
   @scala.inline
   def SphereProps: typings.reactSimpleMaps.mod.SphereProps.type = typings.reactSimpleMaps.mod.SphereProps

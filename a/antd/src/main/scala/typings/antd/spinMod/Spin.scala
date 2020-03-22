@@ -21,7 +21,7 @@ trait Spin
   def debouncifyUpdateSpinning(props: SpinProps): Unit = js.native
   def isNestedPattern(): Boolean = js.native
   def originalUpdateSpinning(): Unit = js.native
-  def renderSpin(hasGetPrefixCls: ConfigConsumerProps): Element = js.native
+  def renderSpin(hasGetPrefixClsDirection: ConfigConsumerProps): Element = js.native
   def updateSpinning(): Unit = js.native
 }
 

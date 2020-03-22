@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 trait KnockoutStatic extends js.Object {
   var bindingHandlers: KnockoutBindingHandlers = js.native
   /////////////////////////////////
-  var bindingProvider: AnonInstanceKnockoutBindingProvider = js.native
+  var bindingProvider: AnonInstantiableInstance = js.native
   var components: KnockoutComponents = js.native
   var computedContext: KnockoutComputedContext = js.native
   @JSName("computed")
@@ -35,12 +35,12 @@ trait KnockoutStatic extends js.Object {
   /////////////////////////////////
   // selectExtensions.js
   /////////////////////////////////
-  var selectExtensions: AnonElement = js.native
+  var selectExtensions: AnonReadValue = js.native
   var subscribable: KnockoutSubscribableStatic = js.native
   //////////////////////////////////
   // templateEngine.js
   //////////////////////////////////
-  var templateEngine: AnonKnockoutTemplateEngine = js.native
+  var templateEngine: AnonInstantiable = js.native
   //////////////////////////////////
   // templateRewriting.js
   //////////////////////////////////

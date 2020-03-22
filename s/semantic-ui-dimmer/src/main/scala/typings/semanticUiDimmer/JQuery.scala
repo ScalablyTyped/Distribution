@@ -1,7 +1,13 @@
 package typings.semanticUiDimmer
 
 import typings.semanticUiDimmer.SemanticUI.Dimmer
+import typings.semanticUiDimmer.SemanticUI.Dimmer.ClassNameSettings
+import typings.semanticUiDimmer.SemanticUI.Dimmer.DurationSettings
+import typings.semanticUiDimmer.SemanticUI.Dimmer.ErrorSettings
+import typings.semanticUiDimmer.SemanticUI.Dimmer.SelectorSettings
+import typings.semanticUiDimmer.SemanticUI.Dimmer.TemplateSettings
 import typings.semanticUiDimmer.SemanticUI.DimmerSettings
+import typings.semanticUiDimmer.semanticUiDimmerBooleans.`false`
 import typings.semanticUiDimmer.semanticUiDimmerStrings.`add content`
 import typings.semanticUiDimmer.semanticUiDimmerStrings.`get dimmer`
 import typings.semanticUiDimmer.semanticUiDimmerStrings.`get duration`
@@ -20,12 +26,36 @@ import typings.semanticUiDimmer.semanticUiDimmerStrings.`set dimmed`
 import typings.semanticUiDimmer.semanticUiDimmerStrings.`set disabled`
 import typings.semanticUiDimmer.semanticUiDimmerStrings.`set opacity`
 import typings.semanticUiDimmer.semanticUiDimmerStrings.`set page dimmer`
+import typings.semanticUiDimmer.semanticUiDimmerStrings.auto
+import typings.semanticUiDimmer.semanticUiDimmerStrings.className
+import typings.semanticUiDimmer.semanticUiDimmerStrings.click
+import typings.semanticUiDimmer.semanticUiDimmerStrings.closable
 import typings.semanticUiDimmer.semanticUiDimmerStrings.create
+import typings.semanticUiDimmer.semanticUiDimmerStrings.debug
 import typings.semanticUiDimmer.semanticUiDimmerStrings.destroy
+import typings.semanticUiDimmer.semanticUiDimmerStrings.dimmerName
+import typings.semanticUiDimmer.semanticUiDimmerStrings.duration
+import typings.semanticUiDimmer.semanticUiDimmerStrings.error
 import typings.semanticUiDimmer.semanticUiDimmerStrings.hide
+import typings.semanticUiDimmer.semanticUiDimmerStrings.hover
+import typings.semanticUiDimmer.semanticUiDimmerStrings.name
+import typings.semanticUiDimmer.semanticUiDimmerStrings.namespace
+import typings.semanticUiDimmer.semanticUiDimmerStrings.on
+import typings.semanticUiDimmer.semanticUiDimmerStrings.onChange
+import typings.semanticUiDimmer.semanticUiDimmerStrings.onHide
+import typings.semanticUiDimmer.semanticUiDimmerStrings.onShow
+import typings.semanticUiDimmer.semanticUiDimmerStrings.opacity
+import typings.semanticUiDimmer.semanticUiDimmerStrings.performance
+import typings.semanticUiDimmer.semanticUiDimmerStrings.selector
 import typings.semanticUiDimmer.semanticUiDimmerStrings.setting
 import typings.semanticUiDimmer.semanticUiDimmerStrings.show
+import typings.semanticUiDimmer.semanticUiDimmerStrings.silent
+import typings.semanticUiDimmer.semanticUiDimmerStrings.template
 import typings.semanticUiDimmer.semanticUiDimmerStrings.toggle
+import typings.semanticUiDimmer.semanticUiDimmerStrings.transition
+import typings.semanticUiDimmer.semanticUiDimmerStrings.useCSS
+import typings.semanticUiDimmer.semanticUiDimmerStrings.variation
+import typings.semanticUiDimmer.semanticUiDimmerStrings.verbose
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,6 +65,55 @@ trait JQuery extends js.Object {
   @JSName("dimmer")
   var dimmer_Original: Dimmer = js.native
   def dimmer(): JQuery = js.native
+  def dimmer(behavior: setting, name: className): ClassNameSettings = js.native
+  def dimmer(behavior: setting, name: className, value: ClassNameSettings): JQuery = js.native
+  def dimmer(behavior: setting, name: closable): auto | Boolean = js.native
+  def dimmer(behavior: setting, name: closable, value: Boolean): JQuery = js.native
+  def dimmer(behavior: setting, name: closable, value: auto): JQuery = js.native
+  def dimmer(behavior: setting, name: debug): Boolean = js.native
+  def dimmer(behavior: setting, name: debug, value: Boolean): JQuery = js.native
+  def dimmer(behavior: setting, name: dimmerName): `false` | String = js.native
+  def dimmer(behavior: setting, name: dimmerName, value: String): JQuery = js.native
+  def dimmer(behavior: setting, name: dimmerName, value: `false`): JQuery = js.native
+  def dimmer(behavior: setting, name: duration): Double | DurationSettings = js.native
+  def dimmer(behavior: setting, name: duration, value: Double): JQuery = js.native
+  def dimmer(behavior: setting, name: duration, value: DurationSettings): JQuery = js.native
+  def dimmer(behavior: setting, name: error): ErrorSettings = js.native
+  def dimmer(behavior: setting, name: error, value: ErrorSettings): JQuery = js.native
+  def dimmer(behavior: setting, name: name): String = js.native
+  def dimmer(behavior: setting, name: namespace): String = js.native
+  def dimmer(behavior: setting, name: namespace, value: String): JQuery = js.native
+  def dimmer(behavior: setting, name: name, value: String): JQuery = js.native
+  def dimmer(behavior: setting, name: on): `false` | hover | click = js.native
+  def dimmer(behavior: setting, name: onChange): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+  def dimmer(behavior: setting, name: onChange, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
+  def dimmer(behavior: setting, name: onHide): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+  def dimmer(behavior: setting, name: onHide, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
+  def dimmer(behavior: setting, name: onShow): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+  def dimmer(behavior: setting, name: onShow, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
+  def dimmer(behavior: setting, name: on, value: `false`): JQuery = js.native
+  def dimmer(behavior: setting, name: on, value: click): JQuery = js.native
+  def dimmer(behavior: setting, name: on, value: hover): JQuery = js.native
+  def dimmer(behavior: setting, name: opacity): auto | Double = js.native
+  def dimmer(behavior: setting, name: opacity, value: Double): JQuery = js.native
+  def dimmer(behavior: setting, name: opacity, value: auto): JQuery = js.native
+  def dimmer(behavior: setting, name: performance): Boolean = js.native
+  def dimmer(behavior: setting, name: performance, value: Boolean): JQuery = js.native
+  def dimmer(behavior: setting, name: selector): SelectorSettings = js.native
+  def dimmer(behavior: setting, name: selector, value: SelectorSettings): JQuery = js.native
+  def dimmer(behavior: setting, name: silent): Boolean = js.native
+  def dimmer(behavior: setting, name: silent, value: Boolean): JQuery = js.native
+  def dimmer(behavior: setting, name: template): TemplateSettings = js.native
+  def dimmer(behavior: setting, name: template, value: TemplateSettings): JQuery = js.native
+  def dimmer(behavior: setting, name: transition): String = js.native
+  def dimmer(behavior: setting, name: transition, value: String): JQuery = js.native
+  def dimmer(behavior: setting, name: useCSS): Boolean = js.native
+  def dimmer(behavior: setting, name: useCSS, value: Boolean): JQuery = js.native
+  def dimmer(behavior: setting, name: variation): `false` | String = js.native
+  def dimmer(behavior: setting, name: variation, value: String): JQuery = js.native
+  def dimmer(behavior: setting, name: variation, value: `false`): JQuery = js.native
+  def dimmer(behavior: setting, name: verbose): Boolean = js.native
+  def dimmer(behavior: setting, name: verbose, value: Boolean): JQuery = js.native
   def dimmer(settings: DimmerSettings): JQuery = js.native
   /**
     * Detaches a given element from DOM and reattaches element inside dimmer
@@ -142,14 +221,6 @@ trait JQuery extends js.Object {
   def dimmer_setpagedimmer(behavior: `set page dimmer`): JQuery = js.native
   @JSName("dimmer")
   def dimmer_setting(behavior: setting, value: DimmerSettings): JQuery = js.native
-  @JSName("dimmer")
-  def dimmer_setting[K /* <: String */](behavior: setting, name: K): /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-dimmer.SemanticUI.DimmerSettings._Impl[K] */ js.Any = js.native
-  @JSName("dimmer")
-  def dimmer_setting[K /* <: String */](
-    behavior: setting,
-    name: K,
-    value: /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-dimmer.SemanticUI.DimmerSettings._Impl[K] */ js.Any
-  ): JQuery = js.native
   /**
     * Shows dimmer
     */

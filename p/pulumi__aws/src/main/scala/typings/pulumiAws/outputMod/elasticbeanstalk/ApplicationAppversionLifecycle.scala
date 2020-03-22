@@ -11,11 +11,11 @@ trait ApplicationAppversionLifecycle extends js.Object {
     */
   var deleteSourceFromS3: js.UndefOr[Boolean] = js.native
   /**
-    * The number of days to retain an application version.
+    * The number of days to retain an application version ('max_age_in_days' and 'max_count' cannot be enabled simultaneously.).
     */
   var maxAgeInDays: js.UndefOr[Double] = js.native
   /**
-    * The maximum number of application versions to retain.
+    * The maximum number of application versions to retain ('max_age_in_days' and 'max_count' cannot be enabled simultaneously.).
     */
   var maxCount: js.UndefOr[Double] = js.native
   /**

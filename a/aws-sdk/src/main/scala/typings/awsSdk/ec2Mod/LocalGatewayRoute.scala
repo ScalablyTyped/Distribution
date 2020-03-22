@@ -13,11 +13,11 @@ trait LocalGatewayRoute extends js.Object {
   /**
     * The ID of the local gateway route table.
     */
-  var LocalGatewayRouteTableId: js.UndefOr[String] = js.native
+  var LocalGatewayRouteTableId: js.UndefOr[LocalGatewayRoutetableId] = js.native
   /**
     * The ID of the virtual interface group.
     */
-  var LocalGatewayVirtualInterfaceGroupId: js.UndefOr[String] = js.native
+  var LocalGatewayVirtualInterfaceGroupId: js.UndefOr[typings.awsSdk.ec2Mod.LocalGatewayVirtualInterfaceGroupId] = js.native
   /**
     * The state of the route.
     */
@@ -32,8 +32,8 @@ object LocalGatewayRoute {
   @scala.inline
   def apply(
     DestinationCidrBlock: String = null,
-    LocalGatewayRouteTableId: String = null,
-    LocalGatewayVirtualInterfaceGroupId: String = null,
+    LocalGatewayRouteTableId: LocalGatewayRoutetableId = null,
+    LocalGatewayVirtualInterfaceGroupId: LocalGatewayVirtualInterfaceGroupId = null,
     State: LocalGatewayRouteState = null,
     Type: LocalGatewayRouteType = null
   ): LocalGatewayRoute = {

@@ -2,7 +2,7 @@ package typings.jupyterlabMainmenu
 
 import typings.jupyterlabMainmenu.labmenuMod.IJupyterLabMenu
 import typings.jupyterlabMainmenu.labmenuMod.JupyterLabMenu
-import typings.phosphorWidgets.menuMod.Menu.IOptions
+import typings.luminoWidgets.menuMod.Menu.IOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

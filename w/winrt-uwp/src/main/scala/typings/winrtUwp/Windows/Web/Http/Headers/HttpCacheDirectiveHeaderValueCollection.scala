@@ -2,7 +2,7 @@ package typings.winrtUwp.Windows.Web.Http.Headers
 
 import typings.std.Array
 import typings.winrtUwp.AnonIndex
-import typings.winrtUwp.AnonItemsReturnValueHttpNameValueHeaderValue
+import typings.winrtUwp.AnonItemsHttpNameValueHeaderValue
 import typings.winrtUwp.Windows.Foundation.Collections.IIterator
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import scala.scalajs.js
@@ -45,7 +45,7 @@ abstract class HttpCacheDirectiveHeaderValueCollection () extends Array[HttpName
     * Retrieves the HttpNameValueHeaderValue items that start at the specified index in the collection.
     * @param startIndex The zero-based index of the start of the HttpNameValueHeaderValue items in the HttpCacheDirectiveHeaderValueCollection .
     */
-  def getMany(startIndex: Double): AnonItemsReturnValueHttpNameValueHeaderValue = js.native
+  def getMany(startIndex: Double): AnonItemsHttpNameValueHeaderValue = js.native
   /**
     * Returns an immutable view of the HttpCacheDirectiveHeaderValueCollection .
     * @return The view of the HttpCacheDirectiveHeaderValueCollection .

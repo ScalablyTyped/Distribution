@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 package object mod {
   type CustomAttrs = org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | scala.Boolean]
   type EditCheckboxOptionValue = java.lang.String
-  type EditSelectOptionValue = js.Array[typings.reactBootstrapTable.AnonTextValue | scala.Double | java.lang.String]
+  type EditSelectOptionValue = js.Array[typings.reactBootstrapTable.AnonValue | scala.Double | java.lang.String]
   /* Rewritten from type alias, can be one of: 
     - typings.reactBootstrapTable.mod.TextFilter
     - typings.reactBootstrapTable.mod.SelectFilter

@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 trait CreateValidationErrorArgs extends js.Object {
   var data: js.UndefOr[ErrorHash | js.Any] = js.undefined
   var message: js.UndefOr[String] = js.undefined
+  var statusCode: js.UndefOr[Double] = js.undefined
   // This can be any string for custom errors. ValidationErrorType is there
   // only to document the default values objection uses internally.
   var `type`: ValidationErrorType | String
@@ -14,11 +15,17 @@ trait CreateValidationErrorArgs extends js.Object {
 
 object CreateValidationErrorArgs {
   @scala.inline
-  def apply(`type`: ValidationErrorType | String, data: ErrorHash | js.Any = null, message: String = null): CreateValidationErrorArgs = {
+  def apply(
+    `type`: ValidationErrorType | String,
+    data: ErrorHash | js.Any = null,
+    message: String = null,
+    statusCode: Int | Double = null
+  ): CreateValidationErrorArgs = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateValidationErrorArgs]
   }
 }

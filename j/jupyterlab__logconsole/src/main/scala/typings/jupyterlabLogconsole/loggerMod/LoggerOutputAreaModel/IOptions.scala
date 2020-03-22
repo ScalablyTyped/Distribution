@@ -1,6 +1,6 @@
 package typings.jupyterlabLogconsole.loggerMod.LoggerOutputAreaModel
 
-import typings.jupyterlabCoreutils.nbformatMod.nbformat.IOutput
+import typings.jupyterlabNbformat.mod.IOutput
 import typings.jupyterlabOutputarea.modelMod.IOutputAreaModel.IContentFactory
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -3,7 +3,7 @@ package typings.jupyterlabNotebook.tokensMod
 import typings.jupyterlabCells.mod.Cell
 import typings.jupyterlabNotebook.notebooktoolsMod.NotebookTools.IAddOptions
 import typings.jupyterlabNotebook.panelMod.NotebookPanel
-import typings.phosphorWidgets.mod.Widget
+import typings.luminoWidgets.mod.Widget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

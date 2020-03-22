@@ -2,9 +2,9 @@ package typings.apolloCacheControl.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.apolloCacheControl.AnonGraphqlResponse
+import typings.apolloCacheControl.RequiredCacheHint
 import typings.graphql.definitionMod.GraphQLResolveInfo
 import typings.graphqlExtensions.mod.GraphQLExtension
-import typings.std.Required
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +23,10 @@ class CacheControlExtension[TContext] () extends GraphQLExtension[TContext] {
     path: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ResponsePath */ js.Any,
     hint: CacheHint
   ): Unit = js.native
-  def computeOverallCachePolicy(): js.UndefOr[Required[CacheHint]] = js.native
+  def computeOverallCachePolicy(): js.UndefOr[RequiredCacheHint] = js.native
   @JSName("format")
   def format_MCacheControlExtension(): js.UndefOr[js.Tuple2[String, CacheControlFormat]] = js.native
-  def overrideOverallCachePolicy(overallCachePolicy: Required[CacheHint]): Unit = js.native
+  def overrideOverallCachePolicy(overallCachePolicy: RequiredCacheHint): Unit = js.native
   @JSName("willResolveField")
   def willResolveField_MCacheControlExtension(_source: js.Any, _args: StringDictionary[js.Any], _context: TContext, info: GraphQLResolveInfo): Unit = js.native
 }

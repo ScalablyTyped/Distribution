@@ -2,6 +2,7 @@ package typings.three
 
 import typings.three.colorMod.Color
 import typings.three.lightMod.Light
+import typings.three.threeBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,6 +25,7 @@ object rectAreaLightMod extends js.Object {
     def this(color: Double, intensity: Double, width: Double, height: Double) = this()
     def this(color: Color, intensity: Double, width: Double, height: Double) = this()
     var height: Double = js.native
+    val isRectAreaLight: `true` = js.native
     var width: Double = js.native
   }
   

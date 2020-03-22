@@ -24,7 +24,7 @@ class Agent () extends IAgent {
   def this(properties: IAgent) = this()
   /** Agent apiVersion. */
   @JSName("apiVersion")
-  var apiVersion_Agent: ApiVersion = js.native
+  var apiVersion_Agent: ApiVersion | String = js.native
   /** Agent avatarUri. */
   @JSName("avatarUri")
   var avatarUri_Agent: String = js.native
@@ -45,7 +45,7 @@ class Agent () extends IAgent {
   var enableLogging_Agent: Boolean = js.native
   /** Agent matchMode. */
   @JSName("matchMode")
-  var matchMode_Agent: MatchMode = js.native
+  var matchMode_Agent: MatchMode | String = js.native
   /** Agent parent. */
   @JSName("parent")
   var parent_Agent: String = js.native
@@ -54,7 +54,7 @@ class Agent () extends IAgent {
   var supportedLanguageCodes_Agent: js.Array[String] = js.native
   /** Agent tier. */
   @JSName("tier")
-  var tier_Agent: Tier = js.native
+  var tier_Agent: Tier | String = js.native
   /** Agent timeZone. */
   @JSName("timeZone")
   var timeZone_Agent: String = js.native

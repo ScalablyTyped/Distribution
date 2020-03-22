@@ -1,7 +1,7 @@
 
 # Scala.js typings for antv__g2
 
-Typings are for version 3.5.9
+Typings are for version 3.5.11
 
 ## Library description:
 the Grammar of Graphics in Javascript

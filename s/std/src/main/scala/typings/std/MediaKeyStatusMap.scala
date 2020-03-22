@@ -19,7 +19,7 @@ trait MediaKeyStatusMap extends js.Object {
     callbackfn: js.Function3[/* value */ MediaKeyStatus, /* key */ BufferSource, /* parent */ this.type, Unit],
     thisArg: js.Any
   ): Unit = js.native
-  def get(keyId: BufferSource): js.Any = js.native
+  def get(keyId: BufferSource): js.UndefOr[MediaKeyStatus] = js.native
   def has(keyId: BufferSource): scala.Boolean = js.native
   def keys(): IterableIterator[BufferSource] = js.native
   def values(): IterableIterator[MediaKeyStatus] = js.native

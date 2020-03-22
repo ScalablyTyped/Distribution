@@ -9,5 +9,5 @@ package object Tab {
   type ErrorSettings = typings.semanticUiTab.SemanticUI.Tab.ErrorSettings.Param
   type MetadataSettings = typings.semanticUiTab.SemanticUI.Tab.MetadataSettings.Param
   type SelectorSettings = typings.semanticUiTab.SemanticUI.Tab.SelectorSettings.Param
-  type TemplatesSettings = typings.semanticUiTab.SemanticUI.Tab.TemplatesSettings.Param
+  type TemplatesSettings = typings.semanticUiTab.SemanticUI.Tab.TemplatesSettings_
 }

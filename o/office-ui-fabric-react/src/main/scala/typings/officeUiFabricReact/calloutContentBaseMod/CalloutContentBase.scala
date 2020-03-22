@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact.calloutContentBaseMod
 
-import typings.officeUiFabricReact.Anon7
+import typings.officeUiFabricReact.AnonDirectionalHint
 import typings.officeUiFabricReact.calloutTypesMod.ICalloutProps
 import typings.react.mod.Component
 import typings.react.mod.KeyboardEvent
@@ -74,6 +74,6 @@ class CalloutContentBase protected ()
 @JSImport("office-ui-fabric-react/lib/components/Callout/CalloutContent.base", "CalloutContentBase")
 @js.native
 object CalloutContentBase extends js.Object {
-  var defaultProps: Anon7 = js.native
+  var defaultProps: AnonDirectionalHint = js.native
 }
 

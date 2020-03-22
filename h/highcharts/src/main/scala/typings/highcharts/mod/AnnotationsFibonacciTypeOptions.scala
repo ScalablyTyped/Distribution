@@ -9,7 +9,7 @@ trait AnnotationsFibonacciTypeOptions extends js.Object {
     * (Highstock) An array of background colors: Default to: (see online
     * documentation for example)
     */
-  var backgroundColors: js.UndefOr[js.Any] = js.undefined
+  var backgroundColors: js.UndefOr[js.Object] = js.undefined
   /**
     * (Highstock) The height of the fibonacci in terms of yAxis.
     */
@@ -29,7 +29,7 @@ trait AnnotationsFibonacciTypeOptions extends js.Object {
   /**
     * (Highstock) An array of colors for the lines.
     */
-  var lineColors: js.UndefOr[js.Any] = js.undefined
+  var lineColors: js.UndefOr[js.Object] = js.undefined
   var points: js.UndefOr[js.Array[AnnotationsFibonacciTypePointsOptions]] = js.undefined
   /**
     * (Highstock) This number defines which xAxis the point is connected to. It
@@ -46,12 +46,12 @@ trait AnnotationsFibonacciTypeOptions extends js.Object {
 object AnnotationsFibonacciTypeOptions {
   @scala.inline
   def apply(
-    backgroundColors: js.Any = null,
+    backgroundColors: js.Object = null,
     height: Int | Double = null,
     labels: AnnotationsFibonacciTypeLabelsOptions | js.Array[js.Object] = null,
     line: AnnotationsFibonacciTypeLineOptions = null,
     lineColor: String = null,
-    lineColors: js.Any = null,
+    lineColors: js.Object = null,
     points: js.Array[AnnotationsFibonacciTypePointsOptions] = null,
     xAxis: Int | Double = null,
     yAxis: Int | Double = null

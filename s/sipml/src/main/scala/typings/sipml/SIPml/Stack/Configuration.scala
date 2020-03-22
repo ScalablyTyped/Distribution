@@ -1,7 +1,7 @@
 package typings.sipml.SIPml.Stack
 
 import typings.sipml.AnonAudio
-import typings.sipml.AnonEEvents
+import typings.sipml.AnonListener
 import typings.sipml.AnonMaxHeight
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,7 +14,7 @@ trait Configuration extends js.Object {
   var enable_early_ims: js.UndefOr[Boolean] = js.undefined
   var enable_media_stream_cache: js.UndefOr[Boolean] = js.undefined
   var enable_rtcweb_breaker: js.UndefOr[Boolean] = js.undefined
-  var events_listener: js.UndefOr[AnonEEvents] = js.undefined
+  var events_listener: js.UndefOr[AnonListener] = js.undefined
   var ice_servers: js.UndefOr[js.Array[js.Object]] = js.undefined
   var impi: js.UndefOr[String] = js.undefined
   var impu: js.UndefOr[String] = js.undefined
@@ -35,7 +35,7 @@ object Configuration {
     enable_early_ims: js.UndefOr[Boolean] = js.undefined,
     enable_media_stream_cache: js.UndefOr[Boolean] = js.undefined,
     enable_rtcweb_breaker: js.UndefOr[Boolean] = js.undefined,
-    events_listener: AnonEEvents = null,
+    events_listener: AnonListener = null,
     ice_servers: js.Array[js.Object] = null,
     impi: String = null,
     impu: String = null,

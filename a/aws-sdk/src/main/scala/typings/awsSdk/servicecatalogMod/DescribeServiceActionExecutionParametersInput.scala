@@ -6,8 +6,17 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait DescribeServiceActionExecutionParametersInput extends js.Object {
+  /**
+    * The language code.    en - English (default)    jp - Japanese    zh - Chinese  
+    */
   var AcceptLanguage: js.UndefOr[typings.awsSdk.servicecatalogMod.AcceptLanguage] = js.native
+  /**
+    * The identifier of the provisioned product.
+    */
   var ProvisionedProductId: Id = js.native
+  /**
+    * The self-service action identifier.
+    */
   var ServiceActionId: Id = js.native
 }
 

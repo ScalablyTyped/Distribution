@@ -1,7 +1,7 @@
 package typings.cacheManager.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.cacheManager.AnonArgs
+import typings.cacheManager.AnonCreate
 import typings.cacheManager.cacheManagerStrings.memory
 import typings.cacheManager.cacheManagerStrings.none
 import scala.scalajs.js
@@ -16,13 +16,13 @@ trait StoreConfig
   */
 /* key */ StringDictionary[js.Any] {
   var max: js.UndefOr[Double] = js.undefined
-  var store: memory | none | Store | AnonArgs
+  var store: memory | none | Store | AnonCreate
 }
 
 object StoreConfig {
   @scala.inline
   def apply(
-    store: memory | none | Store | AnonArgs,
+    store: memory | none | Store | AnonCreate,
     ttl: Double | TtlFunction,
     StringDictionary: /**
     * You may pass in any other arguments these will be passed on to the `create` method of your store,

@@ -14,11 +14,13 @@ object r3IdentifiersMod extends js.Object {
   /* static members */
   @js.native
   object Identifiers extends js.Object {
-    var BaseDef: ExternalReference = js.native
     var ComponentDefWithMeta: ExternalReference = js.native
+    var CopyDefinitionFeature: ExternalReference = js.native
     var DirectiveDefWithMeta: ExternalReference = js.native
+    var FactoryDef: ExternalReference = js.native
     var InheritDefinitionFeature: ExternalReference = js.native
     var InjectorDef: ExternalReference = js.native
+    var ModuleWithProviders: ExternalReference = js.native
     var NEW_METHOD: String = js.native
     var NgModuleDefWithMeta: ExternalReference = js.native
     var NgOnChangesFeature: ExternalReference = js.native
@@ -26,7 +28,7 @@ object r3IdentifiersMod extends js.Object {
     var PipeDefWithMeta: ExternalReference = js.native
     var ProvidersFeature: ExternalReference = js.native
     var TRANSFORM_METHOD: String = js.native
-    var allocHostVars: ExternalReference = js.native
+    var advance: ExternalReference = js.native
     var attribute: ExternalReference = js.native
     var attributeInterpolate1: ExternalReference = js.native
     var attributeInterpolate2: ExternalReference = js.native
@@ -52,7 +54,6 @@ object r3IdentifiersMod extends js.Object {
     var containerCreate: ExternalReference = js.native
     var contentQuery: ExternalReference = js.native
     var defaultStyleSanitizer: ExternalReference = js.native
-    var defineBase: ExternalReference = js.native
     var defineComponent: ExternalReference = js.native
     var defineDirective: ExternalReference = js.native
     var defineInjector: ExternalReference = js.native
@@ -65,7 +66,6 @@ object r3IdentifiersMod extends js.Object {
     var elementContainerEnd: ExternalReference = js.native
     var elementContainerStart: ExternalReference = js.native
     var elementEnd: ExternalReference = js.native
-    var elementHostAttrs: ExternalReference = js.native
     var elementStart: ExternalReference = js.native
     var enableBindings: ExternalReference = js.native
     var getCurrentView: ExternalReference = js.native
@@ -77,16 +77,15 @@ object r3IdentifiersMod extends js.Object {
     var i18nAttributes: ExternalReference = js.native
     var i18nEnd: ExternalReference = js.native
     var i18nExp: ExternalReference = js.native
-    var i18nLocalize: ExternalReference = js.native
     var i18nPostprocess: ExternalReference = js.native
     var i18nStart: ExternalReference = js.native
     var inject: ExternalReference = js.native
     var injectAttribute: ExternalReference = js.native
     var injectPipeChangeDetectorRef: ExternalReference = js.native
+    var invalidFactory: ExternalReference = js.native
+    var invalidFactoryDep: ExternalReference = js.native
     var listener: ExternalReference = js.native
-    var load: ExternalReference = js.native
-    var loadContentQuery: ExternalReference = js.native
-    var loadViewQuery: ExternalReference = js.native
+    var loadQuery: ExternalReference = js.native
     var namespaceHTML: ExternalReference = js.native
     var namespaceMathML: ExternalReference = js.native
     var namespaceSVG: ExternalReference = js.native
@@ -138,6 +137,15 @@ object r3IdentifiersMod extends js.Object {
     var staticContentQuery: ExternalReference = js.native
     var staticViewQuery: ExternalReference = js.native
     var styleMap: ExternalReference = js.native
+    var styleMapInterpolate1: ExternalReference = js.native
+    var styleMapInterpolate2: ExternalReference = js.native
+    var styleMapInterpolate3: ExternalReference = js.native
+    var styleMapInterpolate4: ExternalReference = js.native
+    var styleMapInterpolate5: ExternalReference = js.native
+    var styleMapInterpolate6: ExternalReference = js.native
+    var styleMapInterpolate7: ExternalReference = js.native
+    var styleMapInterpolate8: ExternalReference = js.native
+    var styleMapInterpolateV: ExternalReference = js.native
     var styleProp: ExternalReference = js.native
     var stylePropInterpolate1: ExternalReference = js.native
     var stylePropInterpolate2: ExternalReference = js.native
@@ -148,13 +156,9 @@ object r3IdentifiersMod extends js.Object {
     var stylePropInterpolate7: ExternalReference = js.native
     var stylePropInterpolate8: ExternalReference = js.native
     var stylePropInterpolateV: ExternalReference = js.native
-    var styleSanitizer: ExternalReference = js.native
-    var styling: ExternalReference = js.native
-    var stylingApply: ExternalReference = js.native
     var templateCreate: ExternalReference = js.native
     var templateRefExtractor: ExternalReference = js.native
     var text: ExternalReference = js.native
-    var textBinding: ExternalReference = js.native
     var textInterpolate: ExternalReference = js.native
     var textInterpolate1: ExternalReference = js.native
     var textInterpolate2: ExternalReference = js.native

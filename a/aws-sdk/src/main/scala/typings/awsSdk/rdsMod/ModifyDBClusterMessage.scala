@@ -47,6 +47,14 @@ trait ModifyDBClusterMessage extends js.Object {
     */
   var DeletionProtection: js.UndefOr[BooleanOptional] = js.native
   /**
+    * The Active Directory directory ID to move the DB cluster to. Specify none to remove the cluster from its current domain. The domain must be created prior to this operation. 
+    */
+  var Domain: js.UndefOr[String] = js.native
+  /**
+    * Specify the name of the IAM role to be used when making API calls to the Directory Service.
+    */
+  var DomainIAMRoleName: js.UndefOr[String] = js.native
+  /**
     * A value that indicates whether to enable the HTTP endpoint for an Aurora Serverless DB cluster. By default, the HTTP endpoint is disabled. When enabled, the HTTP endpoint provides a connectionless web service API for running SQL queries on the Aurora Serverless DB cluster. You can also query your database from inside the RDS console with the query editor. For more information, see Using the Data API for Aurora Serverless in the Amazon Aurora User Guide.
     */
   var EnableHttpEndpoint: js.UndefOr[BooleanOptional] = js.native
@@ -105,6 +113,8 @@ object ModifyDBClusterMessage {
     DBClusterParameterGroupName: String = null,
     DBInstanceParameterGroupName: String = null,
     DeletionProtection: js.UndefOr[scala.Boolean] = js.undefined,
+    Domain: String = null,
+    DomainIAMRoleName: String = null,
     EnableHttpEndpoint: js.UndefOr[scala.Boolean] = js.undefined,
     EnableIAMDatabaseAuthentication: js.UndefOr[scala.Boolean] = js.undefined,
     EngineVersion: String = null,
@@ -127,6 +137,8 @@ object ModifyDBClusterMessage {
     if (DBClusterParameterGroupName != null) __obj.updateDynamic("DBClusterParameterGroupName")(DBClusterParameterGroupName.asInstanceOf[js.Any])
     if (DBInstanceParameterGroupName != null) __obj.updateDynamic("DBInstanceParameterGroupName")(DBInstanceParameterGroupName.asInstanceOf[js.Any])
     if (!js.isUndefined(DeletionProtection)) __obj.updateDynamic("DeletionProtection")(DeletionProtection.asInstanceOf[js.Any])
+    if (Domain != null) __obj.updateDynamic("Domain")(Domain.asInstanceOf[js.Any])
+    if (DomainIAMRoleName != null) __obj.updateDynamic("DomainIAMRoleName")(DomainIAMRoleName.asInstanceOf[js.Any])
     if (!js.isUndefined(EnableHttpEndpoint)) __obj.updateDynamic("EnableHttpEndpoint")(EnableHttpEndpoint.asInstanceOf[js.Any])
     if (!js.isUndefined(EnableIAMDatabaseAuthentication)) __obj.updateDynamic("EnableIAMDatabaseAuthentication")(EnableIAMDatabaseAuthentication.asInstanceOf[js.Any])
     if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion.asInstanceOf[js.Any])

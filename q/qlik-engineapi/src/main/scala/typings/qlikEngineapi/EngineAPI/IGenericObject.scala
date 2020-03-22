@@ -1,7 +1,7 @@
 package typings.qlikEngineapi.EngineAPI
 
 import typings.qlikEngineapi.AnonQAxisData
-import typings.qlikEngineapi.AnonQAxisDataQDataPages
+import typings.qlikEngineapi.AnonQDataPages
 import typings.qlikEngineapi.enigmaJS.IGeneratedAPI
 import typings.std.Range
 import scala.scalajs.js
@@ -501,7 +501,7 @@ trait IGenericObject extends IGeneratedAPI {
     * - Options.MaxNbrTicks - maximum number of ticks.
     * @returns - A data set Array of (NxDataPage) or (NxAxisData)
     */
-  def getListObjectContinuousData(qPath: String, qOptions: IContinuousDataOptions): js.Promise[AnonQAxisDataQDataPages] = js.native
+  def getListObjectContinuousData(qPath: String, qOptions: IContinuousDataOptions): js.Promise[AnonQDataPages] = js.native
   /**
     * Retrieves the values of a list object.
     * @param qPath - Path to the definition of the object to be selected.

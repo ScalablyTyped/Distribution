@@ -1,7 +1,7 @@
 package typings.jqueryUiLayout.JQueryUILayout
 
 import typings.jqueryUiLayout.AnonEast
-import typings.jqueryUiLayout.AnonEastNorth
+import typings.jqueryUiLayout.AnonNorth
 import typings.jqueryUiLayout.JQuery
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 trait Layout extends js.Object {
   var options: Options = js.native
   var panes: AnonEast = js.native
-  var state: AnonEastNorth = js.native
+  var state: AnonNorth = js.native
   def addCloseBtn(selector: String, pane: String): JQuery = js.native
   def addOpenBtn(selector: String, pane: String): JQuery = js.native
   def addPinBtn(selector: String, pane: String): JQuery = js.native

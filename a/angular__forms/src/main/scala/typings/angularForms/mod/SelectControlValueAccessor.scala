@@ -19,7 +19,7 @@ class SelectControlValueAccessor protected () extends ControlValueAccessor {
     * Tracks the option comparison algorithm for tracking identities when
     * checking for changes.
     */
-  def compareWith(o1: js.Any, o2: js.Any): Boolean = js.native
+  def compareWith(fn: js.Function2[/* o1 */ js.Any, /* o2 */ js.Any, Boolean]): js.Any = js.native
   /**
     * @description
     * The registered callback function called when a change event occurs on the input element.

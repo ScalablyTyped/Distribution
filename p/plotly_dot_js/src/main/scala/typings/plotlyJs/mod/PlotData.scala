@@ -1,7 +1,15 @@
 package typings.plotlyJs.mod
 
-import typings.plotlyJs.AnonColumns
 import typings.plotlyJs.AnonEnd
+import typings.plotlyJs.PartialDataTitle
+import typings.plotlyJs.PartialDelta
+import typings.plotlyJs.PartialGauge
+import typings.plotlyJs.PartialHoverLabel
+import typings.plotlyJs.PartialPlotMarker
+import typings.plotlyJs.PartialPlotNumber
+import typings.plotlyJs.PartialScatterLine
+import typings.plotlyJs.PartialScatterMarkerLine
+import typings.plotlyJs.Partialrowsnumbercolumnsn
 import typings.plotlyJs.plotlyJsBooleans.`false`
 import typings.plotlyJs.plotlyJsStrings.`bottom center`
 import typings.plotlyJs.plotlyJsStrings.`bottom left`
@@ -122,7 +130,6 @@ import typings.plotlyJs.plotlyJsStrings.zPlussignyPlussignx
 import typings.plotlyJs.plotlyJsStrings.zPlussignyPlussignxPlussignname
 import typings.plotlyJs.plotlyJsStrings.zPlussignyPlussignxPlussigntext
 import typings.std.Float32Array
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -133,22 +140,22 @@ trait PlotData extends js.Object {
   var colorscale: ColorScale
   var connectgaps: Boolean
   var customdata: js.Array[Datum]
-  var delta: Partial[Delta]
+  var delta: PartialDelta
   var direction: clockwise | counterclockwise
-  var domain: Partial[AnonColumns]
+  var domain: Partialrowsnumbercolumnsn
   var error_x: ErrorBar
   var error_y: ErrorBar
   var fill: none | tozeroy | tozerox | tonexty | tonextx | toself | tonext
   var fillcolor: String
-  var gauge: Partial[Gauge]
+  var gauge: PartialGauge
   var hole: Double
   var hoverinfo: all | name | none | skip | text | x | xPlussigntext | xPlussignname | xPlussigny | xPlussignyPlussigntext | xPlussignyPlussignname | xPlussignyPlussignz | xPlussignyPlussignzPlussigntext | xPlussignyPlussignzPlussignname | yPlussignname | yPlussignx | yPlussigntext | yPlussignxPlussigntext | yPlussignxPlussignname | yPlussignz | yPlussignzPlussigntext | yPlussignzPlussignname | yPlussignxPlussignz | yPlussignxPlussignzPlussigntext | yPlussignxPlussignzPlussignname | zPlussignx | zPlussignxPlussigntext | zPlussignxPlussignname | zPlussignyPlussignx | zPlussignyPlussignxPlussigntext | zPlussignyPlussignxPlussignname | zPlussignxPlussigny | zPlussignxPlussignyPlussigntext | zPlussignxPlussignyPlussignname
-  var hoverlabel: Partial[HoverLabel]
+  var hoverlabel: PartialHoverLabel
   var hoveron: points | fills
   var hovertemplate: String | js.Array[String]
   var labels: js.Array[Datum]
   var legendgroup: String
-  var line: Partial[ScatterLine]
+  var line: PartialScatterLine
   @JSName("line.color")
   var lineDotcolor: Color
   @JSName("line.dash")
@@ -161,13 +168,13 @@ trait PlotData extends js.Object {
   var lineDotsmoothing: Double
   @JSName("line.width")
   var lineDotwidth: Double
-  var marker: Partial[PlotMarker]
+  var marker: PartialPlotMarker
   @JSName("marker.color")
   var markerDotcolor: Color
   @JSName("marker.colorscale")
   var markerDotcolorscale: ColorScale | js.Array[ColorScale]
   @JSName("marker.line")
-  var markerDotline: Partial[ScatterMarkerLine]
+  var markerDotline: PartialScatterMarkerLine
   @JSName("marker.line.color")
   var markerDotlineDotcolor: Color
   @JSName("marker.line.colorscale")
@@ -201,7 +208,7 @@ trait PlotData extends js.Object {
   var markerDotsymbol: MarkerSymbol | js.Array[MarkerSymbol]
   var mode: lines | markers | text | linesPlussignmarkers | textPlussignmarkers | textPlussignlines | textPlussignlinesPlussignmarkers | none | gauge | number | delta | numberPlussigndelta | gaugePlussignnumber | gaugePlussignnumberPlussigndelta | gaugePlussigndelta
   var name: String
-  var number: Partial[PlotNumber]
+  var number: PartialPlotNumber
   var orientation: v | h
   var parents: js.Array[String]
   var r: js.Array[Datum]
@@ -212,7 +219,7 @@ trait PlotData extends js.Object {
   var textinfo: label | labelPlussigntext | labelPlussignvalue | labelPlussignpercent | labelPlussigntextPlussignvalue | labelPlussigntextPlussignpercent | labelPlussignvaluePlussignpercent | text | textPlussignvalue | textPlussignpercent | textPlussignvaluePlussignpercent | value | valuePlussignpercent | percent | none
   var textposition: (`top left`) | (`top center`) | (`top right`) | (`middle left`) | (`middle center`) | (`middle right`) | (`bottom left`) | (`bottom center`) | (`bottom right`) | inside
   var theta: js.Array[Datum]
-  var title: Partial[DataTitle]
+  var title: PartialDataTitle
   var transforms: js.Array[DataTransform]
   var transpose: Boolean
   var `type`: bar | box | candlestick | choropleth | contour | heatmap | histogram | indicator | mesh3d | ohlc | parcoords | pie | pointcloud | scatter | scatter3d | scattergeo | scattergl | scatterpolar | scatterternary | surface | treemap | waterfall | funnel | funnelarea
@@ -240,32 +247,32 @@ object PlotData {
     colorscale: ColorScale,
     connectgaps: Boolean,
     customdata: js.Array[Datum],
-    delta: Partial[Delta],
+    delta: PartialDelta,
     direction: clockwise | counterclockwise,
-    domain: Partial[AnonColumns],
+    domain: Partialrowsnumbercolumnsn,
     error_x: ErrorBar,
     error_y: ErrorBar,
     fill: none | tozeroy | tozerox | tonexty | tonextx | toself | tonext,
     fillcolor: String,
-    gauge: Partial[Gauge],
+    gauge: PartialGauge,
     hole: Double,
     hoverinfo: all | name | none | skip | text | x | xPlussigntext | xPlussignname | xPlussigny | xPlussignyPlussigntext | xPlussignyPlussignname | xPlussignyPlussignz | xPlussignyPlussignzPlussigntext | xPlussignyPlussignzPlussignname | yPlussignname | yPlussignx | yPlussigntext | yPlussignxPlussigntext | yPlussignxPlussignname | yPlussignz | yPlussignzPlussigntext | yPlussignzPlussignname | yPlussignxPlussignz | yPlussignxPlussignzPlussigntext | yPlussignxPlussignzPlussignname | zPlussignx | zPlussignxPlussigntext | zPlussignxPlussignname | zPlussignyPlussignx | zPlussignyPlussignxPlussigntext | zPlussignyPlussignxPlussignname | zPlussignxPlussigny | zPlussignxPlussignyPlussigntext | zPlussignxPlussignyPlussignname,
-    hoverlabel: Partial[HoverLabel],
+    hoverlabel: PartialHoverLabel,
     hoveron: points | fills,
     hovertemplate: String | js.Array[String],
     labels: js.Array[Datum],
     legendgroup: String,
-    line: Partial[ScatterLine],
+    line: PartialScatterLine,
     lineDotcolor: Color,
     lineDotdash: Dash,
     lineDotshape: linear | spline | hv | vh | hvh | vhv,
     lineDotsimplify: Boolean,
     lineDotsmoothing: Double,
     lineDotwidth: Double,
-    marker: Partial[PlotMarker],
+    marker: PartialPlotMarker,
     markerDotcolor: Color,
     markerDotcolorscale: ColorScale | js.Array[ColorScale],
-    markerDotline: Partial[ScatterMarkerLine],
+    markerDotline: PartialScatterMarkerLine,
     markerDotlineDotcolor: Color,
     markerDotlineDotcolorscale: ColorScale | js.Array[ColorScale],
     markerDotmaxdisplayed: Double,
@@ -283,7 +290,7 @@ object PlotData {
     markerDotsymbol: MarkerSymbol | js.Array[MarkerSymbol],
     mode: lines | markers | text | linesPlussignmarkers | textPlussignmarkers | textPlussignlines | textPlussignlinesPlussignmarkers | none | gauge | number | delta | numberPlussigndelta | gaugePlussignnumber | gaugePlussignnumberPlussigndelta | gaugePlussigndelta,
     name: String,
-    number: Partial[PlotNumber],
+    number: PartialPlotNumber,
     orientation: v | h,
     parents: js.Array[String],
     r: js.Array[Datum],
@@ -294,7 +301,7 @@ object PlotData {
     textinfo: label | labelPlussigntext | labelPlussignvalue | labelPlussignpercent | labelPlussigntextPlussignvalue | labelPlussigntextPlussignpercent | labelPlussignvaluePlussignpercent | text | textPlussignvalue | textPlussignpercent | textPlussignvaluePlussignpercent | value | valuePlussignpercent | percent | none,
     textposition: (`top left`) | (`top center`) | (`top right`) | (`middle left`) | (`middle center`) | (`middle right`) | (`bottom left`) | (`bottom center`) | (`bottom right`) | inside,
     theta: js.Array[Datum],
-    title: Partial[DataTitle],
+    title: PartialDataTitle,
     transforms: js.Array[DataTransform],
     transpose: Boolean,
     `type`: bar | box | candlestick | choropleth | contour | heatmap | histogram | indicator | mesh3d | ohlc | parcoords | pie | pointcloud | scatter | scatter3d | scattergeo | scattergl | scatterpolar | scatterternary | surface | treemap | waterfall | funnel | funnelarea,

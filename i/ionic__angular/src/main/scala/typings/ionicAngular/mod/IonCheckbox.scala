@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/angular", "IonCheckbox")
 @js.native
 class IonCheckbox protected ()
-  extends typings.ionicAngular.distMod.IonCheckbox {
+  extends typings.ionicAngular.proxiesMod.IonCheckbox {
   def this(c: ChangeDetectorRef, r: ElementRef[_], z: NgZone) = this()
 }
 

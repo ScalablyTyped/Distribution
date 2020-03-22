@@ -1,7 +1,7 @@
 
 # Scala.js typings for fecha
 
-Typings are for version 3.0.3
+Typings are for version 4.1.0
 
 ## Library description:
 Date formatting and parsing

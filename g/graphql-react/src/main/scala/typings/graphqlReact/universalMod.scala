@@ -24,6 +24,6 @@ object universalMod extends js.Object {
     node: ReactNode,
     render: js.Function1[/* element */ ReactNode, String]
   ): Unit = js.native
-  def useGraphQL[T, V](options: AnonFetchOptionsOverrideLoadOnMount[V]): GraphQLOperationStatus[T] = js.native
+  def useGraphQL[T, V](options: AnonLoadOnMount[V]): GraphQLOperationStatus[T] = js.native
 }
 

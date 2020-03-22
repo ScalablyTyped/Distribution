@@ -1,6 +1,6 @@
 package typings.instagramPrivateApi.mediaConfigureSidecarOptionsMod
 
-import typings.instagramPrivateApi.AnonAndroidreleaseAndroidversion
+import typings.instagramPrivateApi.AnonAndroidversion
 import typings.instagramPrivateApi.mediaConfigureOptionsMod.MediaLocation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,7 +13,7 @@ trait MediaConfigureSidecarOptions extends js.Object {
   var caption: js.UndefOr[String] = js.undefined
   var children_metadata: js.Array[MediaConfigureSidecarItem]
   var client_sidecar_id: js.UndefOr[String] = js.undefined
-  var device: js.UndefOr[AnonAndroidreleaseAndroidversion] = js.undefined
+  var device: js.UndefOr[AnonAndroidversion] = js.undefined
   var device_id: js.UndefOr[String] = js.undefined
   var location: js.UndefOr[MediaLocation | String] = js.undefined
   var source_type: js.UndefOr[String] = js.undefined
@@ -30,7 +30,7 @@ object MediaConfigureSidecarOptions {
     _uuid: String = null,
     caption: String = null,
     client_sidecar_id: String = null,
-    device: AnonAndroidreleaseAndroidversion = null,
+    device: AnonAndroidversion = null,
     device_id: String = null,
     location: MediaLocation | String = null,
     source_type: String = null,

@@ -1,8 +1,17 @@
 package typings.semanticUiApi.SemanticUI
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.jquery.JQueryDeferred
+import typings.jquery.JQuery_.Deferred
+import typings.jquery.JQuery_.jqXHR
 import typings.semanticUiApi.JQuery
+import typings.semanticUiApi.SemanticUI.Api.ClassNameSettings
+import typings.semanticUiApi.SemanticUI.Api.ErrorSettings
+import typings.semanticUiApi.SemanticUI.Api.MetadataSettings
+import typings.semanticUiApi.SemanticUI.Api.RegExpSettings
+import typings.semanticUiApi.SemanticUI.Api.SelectorSettings
 import typings.semanticUiApi.semanticUiApiBooleans.`false`
+import typings.semanticUiApi.semanticUiApiBooleans.`true`
 import typings.semanticUiApi.semanticUiApiStrings.`add url data`
 import typings.semanticUiApi.semanticUiApiStrings.`create cache`
 import typings.semanticUiApi.semanticUiApiStrings.`get event`
@@ -22,10 +31,69 @@ import typings.semanticUiApi.semanticUiApiStrings.`was failure`
 import typings.semanticUiApi.semanticUiApiStrings.`was successful`
 import typings.semanticUiApi.semanticUiApiStrings.`write cached response`
 import typings.semanticUiApi.semanticUiApiStrings.abort
+import typings.semanticUiApi.semanticUiApiStrings.action
+import typings.semanticUiApi.semanticUiApiStrings.api
+import typings.semanticUiApi.semanticUiApiStrings.auto
+import typings.semanticUiApi.semanticUiApiStrings.beforeSend
+import typings.semanticUiApi.semanticUiApiStrings.beforeXHR
+import typings.semanticUiApi.semanticUiApiStrings.cache
+import typings.semanticUiApi.semanticUiApiStrings.className
+import typings.semanticUiApi.semanticUiApiStrings.data
+import typings.semanticUiApi.semanticUiApiStrings.dataType
+import typings.semanticUiApi.semanticUiApiStrings.debug
+import typings.semanticUiApi.semanticUiApiStrings.defaultData
+import typings.semanticUiApi.semanticUiApiStrings.delete
 import typings.semanticUiApi.semanticUiApiStrings.destroy
+import typings.semanticUiApi.semanticUiApiStrings.encodeParameters
+import typings.semanticUiApi.semanticUiApiStrings.error
+import typings.semanticUiApi.semanticUiApiStrings.errorDuration
+import typings.semanticUiApi.semanticUiApiStrings.get
+import typings.semanticUiApi.semanticUiApiStrings.head
+import typings.semanticUiApi.semanticUiApiStrings.hideError
+import typings.semanticUiApi.semanticUiApiStrings.html
+import typings.semanticUiApi.semanticUiApiStrings.interruptRequests
+import typings.semanticUiApi.semanticUiApiStrings.json
+import typings.semanticUiApi.semanticUiApiStrings.jsonp
+import typings.semanticUiApi.semanticUiApiStrings.loadingDuration
+import typings.semanticUiApi.semanticUiApiStrings.local
+import typings.semanticUiApi.semanticUiApiStrings.metadata
+import typings.semanticUiApi.semanticUiApiStrings.method
+import typings.semanticUiApi.semanticUiApiStrings.mockResponse
+import typings.semanticUiApi.semanticUiApiStrings.mockResponseAsync
+import typings.semanticUiApi.semanticUiApiStrings.name
+import typings.semanticUiApi.semanticUiApiStrings.namespace
+import typings.semanticUiApi.semanticUiApiStrings.on
+import typings.semanticUiApi.semanticUiApiStrings.onAbort
+import typings.semanticUiApi.semanticUiApiStrings.onComplete
+import typings.semanticUiApi.semanticUiApiStrings.onError
+import typings.semanticUiApi.semanticUiApiStrings.onFailure
+import typings.semanticUiApi.semanticUiApiStrings.onRequest
+import typings.semanticUiApi.semanticUiApiStrings.onResponse
+import typings.semanticUiApi.semanticUiApiStrings.onSuccess
+import typings.semanticUiApi.semanticUiApiStrings.options
+import typings.semanticUiApi.semanticUiApiStrings.patch
+import typings.semanticUiApi.semanticUiApiStrings.performance
+import typings.semanticUiApi.semanticUiApiStrings.post
+import typings.semanticUiApi.semanticUiApiStrings.put
 import typings.semanticUiApi.semanticUiApiStrings.query
+import typings.semanticUiApi.semanticUiApiStrings.regExp
 import typings.semanticUiApi.semanticUiApiStrings.reset
+import typings.semanticUiApi.semanticUiApiStrings.response
+import typings.semanticUiApi.semanticUiApiStrings.responseAsync
+import typings.semanticUiApi.semanticUiApiStrings.script
+import typings.semanticUiApi.semanticUiApiStrings.selector
+import typings.semanticUiApi.semanticUiApiStrings.serializeForm
 import typings.semanticUiApi.semanticUiApiStrings.setting
+import typings.semanticUiApi.semanticUiApiStrings.silent
+import typings.semanticUiApi.semanticUiApiStrings.stateContext
+import typings.semanticUiApi.semanticUiApiStrings.successTest
+import typings.semanticUiApi.semanticUiApiStrings.text
+import typings.semanticUiApi.semanticUiApiStrings.throttle
+import typings.semanticUiApi.semanticUiApiStrings.throttleFirstRequest
+import typings.semanticUiApi.semanticUiApiStrings.url
+import typings.semanticUiApi.semanticUiApiStrings.urlData
+import typings.semanticUiApi.semanticUiApiStrings.verbose
+import typings.semanticUiApi.semanticUiApiStrings.xml
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -122,13 +190,169 @@ trait Api_ extends js.Object {
     * Removes loading and error state from element
     */
   def apply(behavior: reset): JQuery = js.native
+  def apply(behavior: setting, name: action): String | `false` = js.native
+  def apply(behavior: setting, name: action, value: String): JQuery = js.native
+  def apply(behavior: setting, name: action, value: `false`): JQuery = js.native
+  def apply(behavior: setting, name: api): StringDictionary[String] = js.native
+  def apply(behavior: setting, name: api, value: StringDictionary[String]): JQuery = js.native
+  def apply(behavior: setting, name: beforeSend): js.Function1[/* settings */ ApiSettings, _] = js.native
+  def apply(behavior: setting, name: beforeSend, value: js.Function1[/* settings */ ApiSettings, _]): JQuery = js.native
+  def apply(behavior: setting, name: beforeXHR): js.Function1[/* xhrObject */ jqXHR[_], _] = js.native
+  def apply(behavior: setting, name: beforeXHR, value: js.Function1[/* xhrObject */ jqXHR[_], _]): JQuery = js.native
+  def apply(behavior: setting, name: cache): local | Boolean = js.native
+  def apply(behavior: setting, name: cache, value: Boolean): JQuery = js.native
+  def apply(behavior: setting, name: cache, value: local): JQuery = js.native
+  def apply(behavior: setting, name: className): ClassNameSettings = js.native
+  def apply(behavior: setting, name: className, value: ClassNameSettings): JQuery = js.native
+  def apply(behavior: setting, name: data): /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-api.SemanticUI.ApiSettings._Impl['data'] */ js.Any = js.native
+  def apply(behavior: setting, name: dataType): xml | json | jsonp | script | html | text = js.native
+  def apply(behavior: setting, name: dataType, value: html): JQuery = js.native
+  def apply(behavior: setting, name: dataType, value: json): JQuery = js.native
+  def apply(behavior: setting, name: dataType, value: jsonp): JQuery = js.native
+  def apply(behavior: setting, name: dataType, value: script): JQuery = js.native
+  def apply(behavior: setting, name: dataType, value: text): JQuery = js.native
+  def apply(behavior: setting, name: dataType, value: xml): JQuery = js.native
+  def apply(
+    behavior: setting,
+    name: data,
+    value: /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-api.SemanticUI.ApiSettings._Impl['data'] */ js.Any
+  ): JQuery = js.native
+  def apply(behavior: setting, name: debug): Boolean = js.native
+  def apply(behavior: setting, name: debug, value: Boolean): JQuery = js.native
+  def apply(behavior: setting, name: defaultData): Boolean = js.native
+  def apply(behavior: setting, name: defaultData, value: Boolean): JQuery = js.native
+  def apply(behavior: setting, name: encodeParameters): Boolean = js.native
+  def apply(behavior: setting, name: encodeParameters, value: Boolean): JQuery = js.native
+  def apply(behavior: setting, name: error): ErrorSettings = js.native
+  def apply(behavior: setting, name: errorDuration): `true` | Double = js.native
+  def apply(behavior: setting, name: errorDuration, value: Double): JQuery = js.native
+  def apply(behavior: setting, name: errorDuration, value: `true`): JQuery = js.native
+  def apply(behavior: setting, name: error, value: ErrorSettings): JQuery = js.native
+  def apply(behavior: setting, name: hideError): auto | Boolean = js.native
+  def apply(behavior: setting, name: hideError, value: Boolean): JQuery = js.native
+  def apply(behavior: setting, name: hideError, value: auto): JQuery = js.native
+  def apply(behavior: setting, name: interruptRequests): Boolean = js.native
+  def apply(behavior: setting, name: interruptRequests, value: Boolean): JQuery = js.native
+  def apply(behavior: setting, name: loadingDuration): Double = js.native
+  def apply(behavior: setting, name: loadingDuration, value: Double): JQuery = js.native
+  def apply(behavior: setting, name: metadata): MetadataSettings = js.native
+  def apply(behavior: setting, name: metadata, value: MetadataSettings): JQuery = js.native
+  def apply(behavior: setting, name: method): post | get | put | delete | head | options | patch = js.native
+  def apply(behavior: setting, name: method, value: delete): JQuery = js.native
+  def apply(behavior: setting, name: method, value: get): JQuery = js.native
+  def apply(behavior: setting, name: method, value: head): JQuery = js.native
+  def apply(behavior: setting, name: method, value: options): JQuery = js.native
+  def apply(behavior: setting, name: method, value: patch): JQuery = js.native
+  def apply(behavior: setting, name: method, value: post): JQuery = js.native
+  def apply(behavior: setting, name: method, value: put): JQuery = js.native
+  def apply(behavior: setting, name: mockResponse): js.Any | `false` = js.native
+  def apply(behavior: setting, name: mockResponseAsync): (js.Function2[
+    /* settings */ ApiSettings, 
+    /* callback */ js.Function1[/* response */ js.Any, Unit], 
+    Unit
+  ]) | `false` = js.native
+  def apply(
+    behavior: setting,
+    name: mockResponseAsync,
+    value: js.Function2[
+      /* settings */ ApiSettings, 
+      /* callback */ js.Function1[/* response */ js.Any, Unit], 
+      Unit
+    ]
+  ): JQuery = js.native
+  def apply(behavior: setting, name: mockResponseAsync, value: `false`): JQuery = js.native
+  def apply(behavior: setting, name: mockResponse, value: js.Any): JQuery = js.native
+  def apply(behavior: setting, name: mockResponse, value: `false`): JQuery = js.native
+  def apply(behavior: setting, name: name): String = js.native
+  def apply(behavior: setting, name: namespace): String = js.native
+  def apply(behavior: setting, name: namespace, value: String): JQuery = js.native
+  def apply(behavior: setting, name: name, value: String): JQuery = js.native
+  def apply(behavior: setting, name: on): String = js.native
+  def apply(behavior: setting, name: onAbort): js.Function3[/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[_], Unit] = js.native
+  def apply(
+    behavior: setting,
+    name: onAbort,
+    value: js.Function3[/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[_], Unit]
+  ): JQuery = js.native
+  def apply(behavior: setting, name: onComplete): js.Function3[/* response */ js.Any, /* element */ JQuery, /* xhr */ jqXHR[_], Unit] = js.native
+  def apply(
+    behavior: setting,
+    name: onComplete,
+    value: js.Function3[/* response */ js.Any, /* element */ JQuery, /* xhr */ jqXHR[_], Unit]
+  ): JQuery = js.native
+  def apply(behavior: setting, name: onError): js.Function3[/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[_], Unit] = js.native
+  def apply(
+    behavior: setting,
+    name: onError,
+    value: js.Function3[/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[_], Unit]
+  ): JQuery = js.native
+  def apply(behavior: setting, name: onFailure): js.Function2[/* response */ js.Any, /* element */ JQuery, Unit] = js.native
+  def apply(
+    behavior: setting,
+    name: onFailure,
+    value: js.Function2[/* response */ js.Any, /* element */ JQuery, Unit]
+  ): JQuery = js.native
+  def apply(behavior: setting, name: onRequest): js.Function2[/* promise */ Deferred[_, _, _], /* xhr */ jqXHR[_], Unit] = js.native
+  def apply(
+    behavior: setting,
+    name: onRequest,
+    value: js.Function2[/* promise */ Deferred[_, _, _], /* xhr */ jqXHR[_], Unit]
+  ): JQuery = js.native
+  def apply(behavior: setting, name: onResponse): js.Function1[/* response */ js.Any, Unit] = js.native
+  def apply(behavior: setting, name: onResponse, value: js.Function1[/* response */ js.Any, Unit]): JQuery = js.native
+  def apply(behavior: setting, name: onSuccess): js.Function3[/* response */ js.Any, /* element */ JQuery, /* xhr */ jqXHR[_], Unit] = js.native
+  def apply(
+    behavior: setting,
+    name: onSuccess,
+    value: js.Function3[/* response */ js.Any, /* element */ JQuery, /* xhr */ jqXHR[_], Unit]
+  ): JQuery = js.native
+  def apply(behavior: setting, name: on, value: String): JQuery = js.native
+  def apply(behavior: setting, name: performance): Boolean = js.native
+  def apply(behavior: setting, name: performance, value: Boolean): JQuery = js.native
+  def apply(behavior: setting, name: regExp): RegExpSettings = js.native
+  def apply(behavior: setting, name: regExp, value: RegExpSettings): JQuery = js.native
+  def apply(behavior: setting, name: response): js.Any | `false` = js.native
+  def apply(behavior: setting, name: responseAsync): (js.Function2[
+    /* settings */ ApiSettings, 
+    /* callback */ js.Function1[/* response */ js.Any, Unit], 
+    Unit
+  ]) | `false` = js.native
+  def apply(
+    behavior: setting,
+    name: responseAsync,
+    value: js.Function2[
+      /* settings */ ApiSettings, 
+      /* callback */ js.Function1[/* response */ js.Any, Unit], 
+      Unit
+    ]
+  ): JQuery = js.native
+  def apply(behavior: setting, name: responseAsync, value: `false`): JQuery = js.native
+  def apply(behavior: setting, name: response, value: js.Any): JQuery = js.native
+  def apply(behavior: setting, name: response, value: `false`): JQuery = js.native
+  def apply(behavior: setting, name: selector): SelectorSettings = js.native
+  def apply(behavior: setting, name: selector, value: SelectorSettings): JQuery = js.native
+  def apply(behavior: setting, name: serializeForm): Boolean = js.native
+  def apply(behavior: setting, name: serializeForm, value: Boolean): JQuery = js.native
+  def apply(behavior: setting, name: silent): Boolean = js.native
+  def apply(behavior: setting, name: silent, value: Boolean): JQuery = js.native
+  def apply(behavior: setting, name: stateContext): String | JQuery = js.native
+  def apply(behavior: setting, name: stateContext, value: String): JQuery = js.native
+  def apply(behavior: setting, name: stateContext, value: JQuery): JQuery = js.native
+  def apply(behavior: setting, name: successTest): js.Function1[/* response */ js.Any, Boolean] = js.native
+  def apply(behavior: setting, name: successTest, value: js.Function1[/* response */ js.Any, Boolean]): JQuery = js.native
+  def apply(behavior: setting, name: throttle): Double = js.native
+  def apply(behavior: setting, name: throttleFirstRequest): Boolean = js.native
+  def apply(behavior: setting, name: throttleFirstRequest, value: Boolean): JQuery = js.native
+  def apply(behavior: setting, name: throttle, value: Double): JQuery = js.native
+  def apply(behavior: setting, name: url): String | `false` = js.native
+  def apply(behavior: setting, name: urlData): js.Any | `false` = js.native
+  def apply(behavior: setting, name: urlData, value: js.Any): JQuery = js.native
+  def apply(behavior: setting, name: urlData, value: `false`): JQuery = js.native
+  def apply(behavior: setting, name: url, value: String): JQuery = js.native
+  def apply(behavior: setting, name: url, value: `false`): JQuery = js.native
+  def apply(behavior: setting, name: verbose): Boolean = js.native
+  def apply(behavior: setting, name: verbose, value: Boolean): JQuery = js.native
   def apply(behavior: setting, value: ApiSettings): JQuery = js.native
   def apply(settings: ApiSettings): JQuery = js.native
-  def apply[K /* <: String */](behavior: setting, name: K): /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-api.SemanticUI.ApiSettings._Impl[K] */ js.Any = js.native
-  def apply[K /* <: String */](
-    behavior: setting,
-    name: K,
-    value: /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-api.SemanticUI.ApiSettings._Impl[K] */ js.Any
-  ): JQuery = js.native
 }
 

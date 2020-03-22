@@ -11,5 +11,4 @@ package object dndListMod {
     /* currentState */ typings.baseui.dndListMod.State, 
     typings.baseui.dndListMod.State
   ]
-  type StatefulComponentContainerProps = typings.baseui.dndListMod.StatefulListProps with typings.baseui.AnonChildrenInitialState
 }

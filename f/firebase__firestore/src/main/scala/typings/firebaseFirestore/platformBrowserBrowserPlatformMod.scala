@@ -2,8 +2,6 @@ package typings.firebaseFirestore
 
 import typings.firebaseFirestore.coreDatabaseInfoMod.DatabaseId
 import typings.firebaseFirestore.coreDatabaseInfoMod.DatabaseInfo
-import typings.firebaseFirestore.coreTypesMod.ProtoByteString
-import typings.firebaseFirestore.firebaseFirestoreStrings._empty
 import typings.firebaseFirestore.platformPlatformMod.Platform
 import typings.firebaseFirestore.remoteConnectionMod.Connection
 import typings.firebaseFirestore.remoteConnectivityMonitorMod.ConnectivityMonitor
@@ -25,10 +23,6 @@ object platformBrowserBrowserPlatformMod extends js.Object {
     /** The Platform's 'document' implementation or null if not available. */
     /* CompleteClass */
     override val document: Document_ | Null = js.native
-    /* CompleteClass */
-    override val emptyByteString: ProtoByteString = js.native
-    @JSName("emptyByteString")
-    val emptyByteString_BrowserPlatform: _empty = js.native
     /** The Platform's 'window' implementation or null if not available. */
     /* CompleteClass */
     override val window: Window_ | Null = js.native

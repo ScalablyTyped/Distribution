@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+// Deprecated
 @JSImport("objection", "lit")
 @js.native
-object lit extends TopLevel[LiteralBuilder]
+object lit extends TopLevel[ValueFunction]
 

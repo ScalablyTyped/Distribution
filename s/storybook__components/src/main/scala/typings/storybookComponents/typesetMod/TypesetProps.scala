@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TypesetProps extends js.Object {
-  var fontFamily: js.UndefOr[String] = js.undefined
-  var fontSizes: js.Array[String]
-  var fontWeight: js.UndefOr[Double] = js.undefined
-  var sampleText: js.UndefOr[String] = js.undefined
+  var fontFamily: js.UndefOr[String] = js.native
+  var fontSizes: js.Array[String] = js.native
+  var fontWeight: js.UndefOr[Double] = js.native
+  var sampleText: js.UndefOr[String] = js.native
 }
 
 object TypesetProps {

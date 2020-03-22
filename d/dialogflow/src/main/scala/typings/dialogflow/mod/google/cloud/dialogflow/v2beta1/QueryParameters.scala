@@ -33,6 +33,9 @@ class QueryParameters () extends IQueryParameters {
   /** QueryParameters timeZone. */
   @JSName("timeZone")
   var timeZone_QueryParameters: String = js.native
+  /** QueryParameters webhookHeaders. */
+  @JSName("webhookHeaders")
+  var webhookHeaders_QueryParameters: StringDictionary[String] = js.native
   /**
     * Converts this QueryParameters to JSON.
     * @returns JSON object

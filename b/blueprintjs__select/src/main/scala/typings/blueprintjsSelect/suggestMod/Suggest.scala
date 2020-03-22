@@ -1,8 +1,8 @@
 package typings.blueprintjsSelect.suggestMod
 
 import org.scalablytyped.runtime.Instantiable1
+import typings.blueprintjsSelect.PartialISuggestPropsany
 import typings.react.mod.Component
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,6 +21,7 @@ class Suggest[T] ()
   var handlePopoverOpened: js.Any = js.native
   var handlePopoverOpening: js.Any = js.native
   var input: js.Any = js.native
+  var maybeResetActiveItemToSelectedItem: js.Any = js.native
   var queryList: js.Any = js.native
   var refHandlers: js.Any = js.native
   var renderQueryList: js.Any = js.native
@@ -33,7 +34,7 @@ class Suggest[T] ()
 @JSImport("@blueprintjs/select/lib/esm/components/select/suggest", "Suggest")
 @js.native
 object Suggest extends js.Object {
-  var defaultProps: Partial[ISuggestProps[_]] = js.native
+  var defaultProps: PartialISuggestPropsany = js.native
   var displayName: String = js.native
   def ofType[T](): Instantiable1[/* props */ ISuggestProps[T], Suggest[T]] = js.native
 }

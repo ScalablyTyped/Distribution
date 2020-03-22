@@ -21,6 +21,7 @@ import typings.vscodeLanguageserverTypes.mod.CompletionItem
 import typings.vscodeLanguageserverTypes.mod.DeclarationLink
 import typings.vscodeLanguageserverTypes.mod.DefinitionLink
 import typings.vscodeLanguageserverTypes.mod.Diagnostic
+import typings.vscodeLanguageserverTypes.mod.DiagnosticTag
 import typings.vscodeLanguageserverTypes.mod.DocumentHighlight
 import typings.vscodeLanguageserverTypes.mod.DocumentLink
 import typings.vscodeLanguageserverTypes.mod.DocumentSymbol
@@ -29,9 +30,12 @@ import typings.vscodeLanguageserverTypes.mod.Hover
 import typings.vscodeLanguageserverTypes.mod.ParameterInformation
 import typings.vscodeLanguageserverTypes.mod.Position
 import typings.vscodeLanguageserverTypes.mod.Range
+import typings.vscodeLanguageserverTypes.mod.SelectionRange
 import typings.vscodeLanguageserverTypes.mod.SignatureHelp
 import typings.vscodeLanguageserverTypes.mod.SignatureInformation
 import typings.vscodeLanguageserverTypes.mod.SymbolInformation
+import typings.vscodeLanguageserverTypes.mod.SymbolKind
+import typings.vscodeLanguageserverTypes.mod.SymbolTag
 import typings.vscodeLanguageserverTypes.mod.TextEdit
 import typings.vscodeLanguageserverTypes.mod.WorkspaceEdit
 import scala.scalajs.js
@@ -102,6 +106,7 @@ object protocolConverterMod extends js.Object {
     def asDiagnostic(diagnostic: Diagnostic): typings.vscode.mod.Diagnostic = js.native
     def asDiagnosticSeverity(): DiagnosticSeverity = js.native
     def asDiagnosticSeverity(value: Double): DiagnosticSeverity = js.native
+    def asDiagnosticTag(tag: DiagnosticTag): js.UndefOr[typings.vscode.mod.DiagnosticTag] = js.native
     def asDiagnostics(diagnostics: js.Array[Diagnostic]): js.Array[typings.vscode.mod.Diagnostic] = js.native
     def asDocumentHighlight(item: DocumentHighlight): typings.vscode.mod.DocumentHighlight = js.native
     def asDocumentHighlightKind(item: Double): DocumentHighlightKind = js.native
@@ -144,10 +149,16 @@ object protocolConverterMod extends js.Object {
     def asRange(value: Range): js.UndefOr[typings.vscode.mod.Range] = js.native
     @JSName("asRange")
     def asRange_Range(value: Range): typings.vscode.mod.Range = js.native
+    def asRanges(values: js.Array[Range]): js.Array[typings.vscode.mod.Range] = js.native
     def asReferences(): js.UndefOr[js.Array[Location]] = js.native
     def asReferences(values: js.Array[typings.vscodeLanguageserverTypes.mod.Location]): js.UndefOr[js.Array[Location]] = js.native
     @JSName("asReferences")
     def asReferences_Array(values: js.Array[typings.vscodeLanguageserverTypes.mod.Location]): js.Array[Location] = js.native
+    def asSelectionRange(selectionRange: SelectionRange): typings.vscode.mod.SelectionRange = js.native
+    def asSelectionRanges(): js.UndefOr[scala.Nothing] = js.native
+    def asSelectionRanges(selectionRanges: js.Array[SelectionRange]): js.UndefOr[js.Array[typings.vscode.mod.SelectionRange]] = js.native
+    @JSName("asSelectionRanges")
+    def asSelectionRanges_Array(selectionRanges: js.Array[SelectionRange]): js.Array[typings.vscode.mod.SelectionRange] = js.native
     def asSignatureHelp(): js.UndefOr[scala.Nothing] = js.native
     def asSignatureHelp(item: SignatureHelp): typings.vscode.mod.SignatureHelp = js.native
     @JSName("asSignatureHelp")
@@ -165,6 +176,12 @@ object protocolConverterMod extends js.Object {
     def asSymbolInformations_Array(values: js.Array[SymbolInformation]): js.Array[typings.vscode.mod.SymbolInformation] = js.native
     @JSName("asSymbolInformations")
     def asSymbolInformations_Array(values: js.Array[SymbolInformation], uri: Uri): js.Array[typings.vscode.mod.SymbolInformation] = js.native
+    def asSymbolKind(item: SymbolKind): typings.vscode.mod.SymbolKind = js.native
+    def asSymbolTag(item: SymbolTag): typings.vscode.mod.SymbolTag = js.native
+    def asSymbolTags(): js.UndefOr[scala.Nothing] = js.native
+    def asSymbolTags(items: js.Array[SymbolTag]): js.UndefOr[js.Array[typings.vscode.mod.SymbolTag]] = js.native
+    @JSName("asSymbolTags")
+    def asSymbolTags_Array(items: js.Array[SymbolTag]): js.Array[typings.vscode.mod.SymbolTag] = js.native
     def asTextEdit(): js.UndefOr[scala.Nothing] = js.native
     def asTextEdit(edit: TextEdit): js.UndefOr[typings.vscode.mod.TextEdit] = js.native
     @JSName("asTextEdit")

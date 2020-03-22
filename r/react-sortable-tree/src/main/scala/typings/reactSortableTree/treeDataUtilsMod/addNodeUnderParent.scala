@@ -1,0 +1,15 @@
+package typings.reactSortableTree.treeDataUtilsMod
+
+import typings.reactSortableTree.FullTreenewNodeTreeItempa
+import typings.reactSortableTree.mod.FullTree
+import typings.reactSortableTree.mod.TreeIndex
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("react-sortable-tree/utils/tree-data-utils", "addNodeUnderParent")
+@js.native
+object addNodeUnderParent extends js.Object {
+  def apply(data: FullTreenewNodeTreeItempa): FullTree with TreeIndex = js.native
+}
+

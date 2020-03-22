@@ -1,8 +1,8 @@
 package typings.requestretry.mod
 
 import typings.request.mod.Request
-import typings.requestretry.FnOnfulfilled
-import typings.requestretry.FnOnrejected
+import typings.requestretry.FnCall
+import typings.requestretry.FnCallOnrejected
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 @js.native
 trait RequestPromise extends Request {
   @JSName("catch")
-  var catch_Original: FnOnrejected = js.native
+  var catch_Original: FnCallOnrejected = js.native
   @JSName("then")
-  var then_Original: FnOnfulfilled = js.native
+  var then_Original: FnCall = js.native
   def `catch`[TResult](): js.Promise[_ | TResult] = js.native
   def `catch`[TResult](onrejected: js.Function1[/* reason */ js.Any, TResult | js.Thenable[TResult]]): js.Promise[_ | TResult] = js.native
   def promise(): js.Promise[_] = js.native

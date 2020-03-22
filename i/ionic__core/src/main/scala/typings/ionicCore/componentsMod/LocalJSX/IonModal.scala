@@ -1,13 +1,14 @@
 package typings.ionicCore.componentsMod.LocalJSX
 
+import typings.ionicCore.animationInterfaceMod.Animation
+import typings.ionicCore.animationInterfaceMod.AnimationBuilder
 import typings.ionicCore.ionicCoreStrings.ios
 import typings.ionicCore.ionicCoreStrings.md
 import typings.ionicCore.mod.ComponentProps
 import typings.ionicCore.mod.ComponentRef
-import typings.ionicCore.oldAnimationAnimationInterfaceMod.Animation
-import typings.ionicCore.oldAnimationAnimationInterfaceMod.AnimationBuilder
 import typings.ionicCore.overlaysInterfaceMod.OverlayEventDetail
 import typings.std.CustomEvent
+import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -66,9 +67,17 @@ trait IonModal extends js.Object {
     */
   var onIonModalWillPresent: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.undefined
   /**
+    * The element that presented the modal. This is used for card presentation effects and for stacking multiple modals on top of each other. Only applies in iOS mode.
+    */
+  var presentingElement: js.UndefOr[HTMLElement] = js.undefined
+  /**
     * If `true`, a backdrop will be displayed behind the modal.
     */
   var showBackdrop: js.UndefOr[Boolean] = js.undefined
+  /**
+    * If `true`, the modal can be swiped to dismiss. Only applies in iOS mode.
+    */
+  var swipeToClose: js.UndefOr[Boolean] = js.undefined
 }
 
 object IonModal {
@@ -79,15 +88,17 @@ object IonModal {
     component: ComponentRef = null,
     componentProps: ComponentProps[Null] = null,
     cssClass: String | js.Array[String] = null,
-    enterAnimation: (/* Animation */ Animation, /* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => js.Promise[Animation] = null,
+    enterAnimation: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation = null,
     keyboardClose: js.UndefOr[Boolean] = js.undefined,
-    leaveAnimation: (/* Animation */ Animation, /* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => js.Promise[Animation] = null,
+    leaveAnimation: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation = null,
     mode: ios | md = null,
     onIonModalDidDismiss: /* event */ CustomEvent[OverlayEventDetail[_]] => Unit = null,
     onIonModalDidPresent: /* event */ CustomEvent[Unit] => Unit = null,
     onIonModalWillDismiss: /* event */ CustomEvent[OverlayEventDetail[_]] => Unit = null,
     onIonModalWillPresent: /* event */ CustomEvent[Unit] => Unit = null,
-    showBackdrop: js.UndefOr[Boolean] = js.undefined
+    presentingElement: HTMLElement = null,
+    showBackdrop: js.UndefOr[Boolean] = js.undefined,
+    swipeToClose: js.UndefOr[Boolean] = js.undefined
   ): IonModal = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.asInstanceOf[js.Any])
@@ -95,15 +106,17 @@ object IonModal {
     if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
     if (componentProps != null) __obj.updateDynamic("componentProps")(componentProps.asInstanceOf[js.Any])
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
-    if (enterAnimation != null) __obj.updateDynamic("enterAnimation")(js.Any.fromFunction3(enterAnimation))
+    if (enterAnimation != null) __obj.updateDynamic("enterAnimation")(js.Any.fromFunction2(enterAnimation))
     if (!js.isUndefined(keyboardClose)) __obj.updateDynamic("keyboardClose")(keyboardClose.asInstanceOf[js.Any])
-    if (leaveAnimation != null) __obj.updateDynamic("leaveAnimation")(js.Any.fromFunction3(leaveAnimation))
+    if (leaveAnimation != null) __obj.updateDynamic("leaveAnimation")(js.Any.fromFunction2(leaveAnimation))
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (onIonModalDidDismiss != null) __obj.updateDynamic("onIonModalDidDismiss")(js.Any.fromFunction1(onIonModalDidDismiss))
     if (onIonModalDidPresent != null) __obj.updateDynamic("onIonModalDidPresent")(js.Any.fromFunction1(onIonModalDidPresent))
     if (onIonModalWillDismiss != null) __obj.updateDynamic("onIonModalWillDismiss")(js.Any.fromFunction1(onIonModalWillDismiss))
     if (onIonModalWillPresent != null) __obj.updateDynamic("onIonModalWillPresent")(js.Any.fromFunction1(onIonModalWillPresent))
+    if (presentingElement != null) __obj.updateDynamic("presentingElement")(presentingElement.asInstanceOf[js.Any])
     if (!js.isUndefined(showBackdrop)) __obj.updateDynamic("showBackdrop")(showBackdrop.asInstanceOf[js.Any])
+    if (!js.isUndefined(swipeToClose)) __obj.updateDynamic("swipeToClose")(swipeToClose.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonModal]
   }
 }

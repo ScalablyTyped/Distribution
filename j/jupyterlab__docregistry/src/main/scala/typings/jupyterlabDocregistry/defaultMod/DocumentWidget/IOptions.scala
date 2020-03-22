@@ -3,7 +3,7 @@ package typings.jupyterlabDocregistry.defaultMod.DocumentWidget
 import typings.jupyterlabApputils.toolbarMod.Toolbar
 import typings.jupyterlabDocregistry.registryMod.DocumentRegistry.IContext
 import typings.jupyterlabDocregistry.registryMod.DocumentRegistry.IModel
-import typings.phosphorWidgets.mod.Widget
+import typings.luminoWidgets.mod.Widget
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

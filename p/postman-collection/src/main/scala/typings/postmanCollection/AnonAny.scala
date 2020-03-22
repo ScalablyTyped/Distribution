@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait AnonAny extends js.Object {
-  var any: AnonInOut = js.native
+  var any: AnonOut = js.native
   @JSName("boolean")
   var boolean_Original: BooleanConstructor = js.native
   var json: AnonIn = js.native

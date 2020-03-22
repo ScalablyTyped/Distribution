@@ -1,6 +1,6 @@
 package typings.kiiCloudSdk.KiiCloud
 
-import typings.kiiCloudSdk.AnonAnErrorStringArgument
+import typings.kiiCloudSdk.Anon26
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -78,7 +78,7 @@ class KiiServerCodeEntry () extends js.Object {
     *     );
     */
   def execute[T](argument: T): js.Promise[js.Tuple3[KiiServerCodeEntry, T, KiiServerCodeExecResult]] = js.native
-  def execute[T](argument: T, callbacks: AnonAnErrorStringArgument[T]): js.Promise[js.Tuple3[KiiServerCodeEntry, T, KiiServerCodeExecResult]] = js.native
+  def execute[T](argument: T, callbacks: Anon26[T]): js.Promise[js.Tuple3[KiiServerCodeEntry, T, KiiServerCodeExecResult]] = js.native
   /**
     * Get the entryName of this server code entry.
     *

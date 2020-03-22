@@ -12,12 +12,15 @@ import scala.scalajs.js.annotation._
 @js.native
 class CurrencyPipe protected () extends PipeTransform {
   def this(_locale: String) = this()
+  def this(_locale: String, _defaultCurrencyCode: String) = this()
+  var _defaultCurrencyCode: js.Any = js.native
   var _locale: js.Any = js.native
   /**
     *
     * @param value The number to be formatted as currency.
     * @param currencyCode The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code,
-    * such as `USD` for the US dollar and `EUR` for the euro.
+    * such as `USD` for the US dollar and `EUR` for the euro. The default currency code can be
+    * configured using the `DEFAULT_CURRENCY_CODE` injection token.
     * @param display The format for the currency indicator. One of the following:
     *   - `code`: Show the code (such as `USD`).
     *   - `symbol`(default): Show the symbol (such as `$`).

@@ -1,21 +1,21 @@
 package typings.baseui
 
-import typings.baseui.baseuiStrings.CN
-import typings.baseui.baseuiStrings.Plussign86
-import typings.baseui.baseuiStrings.`China Leftparenthesis中国Rightparenthesis`
+import typings.baseui.baseuiStrings.HT
+import typings.baseui.baseuiStrings.Haiti
+import typings.baseui.baseuiStrings.Plussign509
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon86 extends js.Object {
-  var dialCode: Plussign86
-  var id: CN
-  var label: `China Leftparenthesis中国Rightparenthesis`
+  var dialCode: Plussign509
+  var id: HT
+  var label: Haiti
 }
 
 object Anon86 {
   @scala.inline
-  def apply(dialCode: Plussign86, id: CN, label: `China Leftparenthesis中国Rightparenthesis`): Anon86 = {
+  def apply(dialCode: Plussign509, id: HT, label: Haiti): Anon86 = {
     val __obj = js.Dynamic.literal(dialCode = dialCode.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon86]

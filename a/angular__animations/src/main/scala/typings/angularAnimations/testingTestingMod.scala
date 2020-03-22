@@ -1,7 +1,7 @@
 package typings.angularAnimations
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.angularAnimations.browserMod.ɵAnimationDriver
+import typings.angularAnimations.browserMod.AnimationDriver
 import typings.angularAnimations.mod.AnimationPlayer
 import typings.angularAnimations.mod.NoopAnimationPlayer
 import typings.angularAnimations.mod.ɵStyleData
@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object testingTestingMod extends js.Object {
   @js.native
-  class MockAnimationDriver () extends ɵAnimationDriver
+  class MockAnimationDriver () extends AnimationDriver
   
   @js.native
   class MockAnimationPlayer protected () extends NoopAnimationPlayer {

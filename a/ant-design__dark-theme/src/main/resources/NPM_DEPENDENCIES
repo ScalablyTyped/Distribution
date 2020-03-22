@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@ant-design/dark-theme" : "1.0.3"
+      "@ant-design/dark-theme" : "2.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@ant-design/dark-theme" : "1.0.3"
+      "@ant-design/dark-theme" : "2.0.1"
     }
   ],
   "compile-devDependencies" : [

@@ -1,7 +1,7 @@
 package typings.frctlFractal.mod.fractal.web
 
 import typings.frctlFractal.AnonServer
-import typings.frctlFractal.AnonServerSync
+import typings.frctlFractal.AnonSync
 import typings.node.eventsMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,7 +14,7 @@ class Server () extends EventEmitter {
   val port: js.UndefOr[Double] = js.native
   val ports: AnonServer = js.native
   val url: js.UndefOr[String] = js.native
-  val urls: AnonServerSync = js.native
+  val urls: AnonSync = js.native
   def start(): js.Promise[typings.node.httpMod.Server] = js.native
   def start(sync: Boolean): js.Promise[typings.node.httpMod.Server] = js.native
   def stop(): Unit = js.native

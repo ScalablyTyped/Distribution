@@ -81,14 +81,42 @@ object colorsMod extends js.Object {
     def title(text: String*): String = js.native
   }
   
+  /* Inlined {[ G in std.Exclude<@ionic/cli-framework.@ionic/cli-framework/definitions.MetadataGroup, @ionic/cli-framework.@ionic/cli-framework/definitions.MetadataGroup.HIDDEN | @ionic/cli-framework.@ionic/cli-framework/definitions.MetadataGroup.ADVANCED> ]: @ionic/cli-framework.@ionic/cli-framework/lib/colors.ColorFunction} */
+  @js.native
+  trait HelpGroupColors extends js.Object {
+    @JSName("beta")
+    var beta_Original: ColorFunction = js.native
+    @JSName("deprecated")
+    var deprecated_Original: ColorFunction = js.native
+    @JSName("experimental")
+    var experimental_Original: ColorFunction = js.native
+    @JSName("paid")
+    var paid_Original: ColorFunction = js.native
+    def beta(text: String*): String = js.native
+    def deprecated(text: String*): String = js.native
+    def experimental(text: String*): String = js.native
+    def paid(text: String*): String = js.native
+  }
+  
+  /* Inlined {[ L in @ionic/cli-framework.@ionic/cli-framework/lib/logger.LoggerLevel ]: @ionic/cli-framework.@ionic/cli-framework/lib/colors.ColorFunction} */
+  @js.native
+  trait LoggerColors extends js.Object {
+    @JSName("DEBUG")
+    var DEBUG_Original: ColorFunction = js.native
+    @JSName("ERROR")
+    var ERROR_Original: ColorFunction = js.native
+    @JSName("INFO")
+    var INFO_Original: ColorFunction = js.native
+    @JSName("WARN")
+    var WARN_Original: ColorFunction = js.native
+    def DEBUG(text: String*): String = js.native
+    def ERROR(text: String*): String = js.native
+    def INFO(text: String*): String = js.native
+    def WARN(text: String*): String = js.native
+  }
+  
   val DEFAULT_COLORS: Colors = js.native
   val NO_COLORS: Colors = js.native
   type ColorFunction = js.Function1[/* repeated */ String, String]
-  type HelpGroupColors = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ G in std.Exclude<@ionic/cli-framework.@ionic/cli-framework/definitions.MetadataGroup, 'hidden' | 'advanced'> ]: @ionic/cli-framework.@ionic/cli-framework/lib/colors.ColorFunction}
-    */ typings.ionicCliFramework.ionicCliFrameworkStrings.HelpGroupColors with js.Any
-  type LoggerColors = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ L in @ionic/cli-framework.@ionic/cli-framework/lib/logger.LoggerLevel ]: @ionic/cli-framework.@ionic/cli-framework/lib/colors.ColorFunction}
-    */ typings.ionicCliFramework.ionicCliFrameworkStrings.LoggerColors with js.Any
 }
 

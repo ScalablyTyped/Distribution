@@ -1,7 +1,5 @@
 package typings.ionicons.componentsMod.Components
 
-import typings.ionicons.ioniconsStrings.ios
-import typings.ionicons.ioniconsStrings.md
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -38,7 +36,7 @@ trait IonIcon extends js.Object {
   /**
     * The mode determines which platform styles to use.
     */
-  var mode: js.UndefOr[ios | md] = js.undefined
+  var mode: String
   /**
     * Specifies which icon to use from the built-in set of icons.
     */
@@ -57,18 +55,18 @@ object IonIcon {
   @scala.inline
   def apply(
     `lazy`: Boolean,
+    mode: String,
     ariaLabel: String = null,
     color: String = null,
     flipRtl: js.UndefOr[Boolean] = js.undefined,
     icon: js.Any = null,
     ios: String = null,
     md: String = null,
-    mode: ios | md = null,
     name: String = null,
     size: String = null,
     src: String = null
   ): IonIcon = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
     __obj.updateDynamic("lazy")(`lazy`.asInstanceOf[js.Any])
     if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
@@ -76,7 +74,6 @@ object IonIcon {
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (ios != null) __obj.updateDynamic("ios")(ios.asInstanceOf[js.Any])
     if (md != null) __obj.updateDynamic("md")(md.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (src != null) __obj.updateDynamic("src")(src.asInstanceOf[js.Any])

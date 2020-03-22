@@ -15,5 +15,6 @@ trait WatchCompilerHostOfFilesAndCompilerOptions[T /* <: BuilderProgram */] exte
   var projectReferences: js.UndefOr[js.Array[ProjectReference]] = js.native
   /** root files to use to generate program */
   var rootFiles: js.Array[java.lang.String] = js.native
+  var watchOptions: js.UndefOr[WatchOptions] = js.native
 }
 

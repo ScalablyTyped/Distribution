@@ -42,7 +42,7 @@ trait Title extends BaseTitle {
     */
   var text: Text | SignalRef
   /**
-    * 	The integer z-index indicating the layering of the title group relative to other axis, mark and legend groups.
+    * 	The integer z-index indicating the layering of the title group relative to other axis, mark, and legend groups.
     *
     * __Default value:__ `0`.
     *

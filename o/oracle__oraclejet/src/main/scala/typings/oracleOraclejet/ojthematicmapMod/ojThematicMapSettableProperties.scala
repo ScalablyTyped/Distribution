@@ -1,10 +1,10 @@
 package typings.oracleOraclejet.ojthematicmapMod
 
+import typings.oracleOraclejet.Anon25
 import typings.oracleOraclejet.AnonAreaSvgStyle
-import typings.oracleOraclejet.AnonComponentNameLabelAndValue
-import typings.oracleOraclejet.AnonContextRendererAnonInsertAnonPreventDefaultD1
 import typings.oracleOraclejet.AnonGeo
 import typings.oracleOraclejet.AnonInsertSVGElement
+import typings.oracleOraclejet.AnonLabelAndValue
 import typings.oracleOraclejet.ojdataproviderMod.DataProvider
 import typings.oracleOraclejet.ojdvtBaseMod.dvtBaseComponentSettableProperties
 import typings.oracleOraclejet.ojthematicmapMod.ojThematicMap.RendererContext
@@ -54,11 +54,11 @@ trait ojThematicMapSettableProperties[K1, K2, K3, D1, D2, D3] extends dvtBaseCom
   var selectionMode: single | multiple | none
   var selectionRenderer: (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], AnonInsertSVGElement | Unit]) | Null
   var styleDefaults: AnonAreaSvgStyle
-  var tooltip: AnonContextRendererAnonInsertAnonPreventDefaultD1[K1, K2, K3, D1, D2, D3]
+  var tooltip: Anon25[K1, K2, K3, D1, D2, D3]
   var tooltipDisplay: auto | labelAndShortDesc | none | shortDesc
   var touchResponse: touchStart | auto
   @JSName("translations")
-  var translations_ojThematicMapSettableProperties: AnonComponentNameLabelAndValue
+  var translations_ojThematicMapSettableProperties: AnonLabelAndValue
   var zooming: auto | none
 }
 
@@ -83,11 +83,11 @@ object ojThematicMapSettableProperties {
     selection: js.Array[K1 | K2 | K3],
     selectionMode: single | multiple | none,
     styleDefaults: AnonAreaSvgStyle,
-    tooltip: AnonContextRendererAnonInsertAnonPreventDefaultD1[K1, K2, K3, D1, D2, D3],
+    tooltip: Anon25[K1, K2, K3, D1, D2, D3],
     tooltipDisplay: auto | labelAndShortDesc | none | shortDesc,
     touchResponse: touchStart | auto,
     trackResize: on | off,
-    translations: AnonComponentNameLabelAndValue,
+    translations: AnonLabelAndValue,
     zooming: auto | none,
     areaData: DataProvider[K1, D1] = null,
     focusRenderer: /* context */ RendererContext[K1, K2, K3, D1, D2, D3] => AnonInsertSVGElement | Unit = null,

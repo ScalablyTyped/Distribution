@@ -1,9 +1,8 @@
 package typings.reactSortableTree.mod
 
 import typings.react.mod.CSSProperties
-import typings.reactVirtualized.esListMod.ListProps
+import typings.reactSortableTree.PartialListProps
 import typings.reactVirtualized.mod.Index
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +17,7 @@ object ThemeProps {
     innerStyle: CSSProperties = null,
     nodeContentRenderer: NodeRenderer = null,
     placeholderRenderer: PlaceholderRenderer = null,
-    reactVirtualizedListProps: Partial[ListProps] = null,
+    reactVirtualizedListProps: PartialListProps = null,
     rowHeight: (js.Function1[/* info */ Index, Double]) | Double = null,
     scaffoldBlockPxWidth: Int | Double = null,
     slideRegionSize: Int | Double = null,

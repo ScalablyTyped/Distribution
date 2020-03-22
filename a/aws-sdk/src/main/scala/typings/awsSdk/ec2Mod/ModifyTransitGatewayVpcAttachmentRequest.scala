@@ -9,7 +9,7 @@ trait ModifyTransitGatewayVpcAttachmentRequest extends js.Object {
   /**
     * The IDs of one or more subnets to add. You can specify at most one subnet per Availability Zone.
     */
-  var AddSubnetIds: js.UndefOr[ValueStringList] = js.native
+  var AddSubnetIds: js.UndefOr[TransitGatewaySubnetIdList] = js.native
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
@@ -21,21 +21,21 @@ trait ModifyTransitGatewayVpcAttachmentRequest extends js.Object {
   /**
     * The IDs of one or more subnets to remove.
     */
-  var RemoveSubnetIds: js.UndefOr[ValueStringList] = js.native
+  var RemoveSubnetIds: js.UndefOr[TransitGatewaySubnetIdList] = js.native
   /**
     * The ID of the attachment.
     */
-  var TransitGatewayAttachmentId: String = js.native
+  var TransitGatewayAttachmentId: typings.awsSdk.ec2Mod.TransitGatewayAttachmentId = js.native
 }
 
 object ModifyTransitGatewayVpcAttachmentRequest {
   @scala.inline
   def apply(
-    TransitGatewayAttachmentId: String,
-    AddSubnetIds: ValueStringList = null,
+    TransitGatewayAttachmentId: TransitGatewayAttachmentId,
+    AddSubnetIds: TransitGatewaySubnetIdList = null,
     DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     Options: ModifyTransitGatewayVpcAttachmentRequestOptions = null,
-    RemoveSubnetIds: ValueStringList = null
+    RemoveSubnetIds: TransitGatewaySubnetIdList = null
   ): ModifyTransitGatewayVpcAttachmentRequest = {
     val __obj = js.Dynamic.literal(TransitGatewayAttachmentId = TransitGatewayAttachmentId.asInstanceOf[js.Any])
     if (AddSubnetIds != null) __obj.updateDynamic("AddSubnetIds")(AddSubnetIds.asInstanceOf[js.Any])

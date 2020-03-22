@@ -1,6 +1,6 @@
 package typings.prosemirrorDevTools.mod
 
-import typings.prosemirrorDevTools.TypeofClassEditorState
+import typings.prosemirrorDevTools.TypeofEditorState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,12 +15,12 @@ trait ApplyDevToolsOptions extends js.Object {
     * snapshot due to EditorState classes were different in UMD bundle and in
     * actual client code.
     */
-  var EditorState: TypeofClassEditorState
+  var EditorState: TypeofEditorState
 }
 
 object ApplyDevToolsOptions {
   @scala.inline
-  def apply(EditorState: TypeofClassEditorState): ApplyDevToolsOptions = {
+  def apply(EditorState: TypeofEditorState): ApplyDevToolsOptions = {
     val __obj = js.Dynamic.literal(EditorState = EditorState.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ApplyDevToolsOptions]

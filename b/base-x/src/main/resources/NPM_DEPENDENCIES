@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "base-x" : "3.0.7"
+      "base-x" : "3.0.8"
     }
   ],
   "test-dependencies" : [
     {
-      "base-x" : "3.0.7"
+      "base-x" : "3.0.8"
     }
   ],
   "compile-devDependencies" : [

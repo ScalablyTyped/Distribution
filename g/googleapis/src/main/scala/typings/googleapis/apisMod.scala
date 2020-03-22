@@ -206,311 +206,311 @@ object apisMod extends js.Object {
   @js.native
   class GeneratedAPIs () extends js.Object {
     @JSName("abusiveexperiencereport")
-    var abusiveexperiencereport_Original: FnOptions = js.native
+    var abusiveexperiencereport_Original: FnCall = js.native
     @JSName("acceleratedmobilepageurl")
-    var acceleratedmobilepageurl_Original: FnOptionsV1 = js.native
+    var acceleratedmobilepageurl_Original: FnCallOptions = js.native
     @JSName("accesscontextmanager")
-    var accesscontextmanager_Original: FnOptionsV1V1beta = js.native
+    var accesscontextmanager_Original: Fn0 = js.native
     @JSName("adexchangebuyer2")
-    var adexchangebuyer2_Original: FnOptionsV2beta1 = js.native
+    var adexchangebuyer2_Original: Fn2 = js.native
     @JSName("adexchangebuyer")
-    var adexchangebuyer_Original: FnOptionsV12 = js.native
+    var adexchangebuyer_Original: Fn1 = js.native
     @JSName("adexperiencereport")
-    var adexperiencereport_Original: FnOptionsV1Version = js.native
+    var adexperiencereport_Original: Fn3 = js.native
     @JSName("admin")
-    var admin_Original: FnDatatransferv1 = js.native
+    var admin_Original: Fn4 = js.native
     @JSName("adsense")
-    var adsense_Original: FnOptionsV14 = js.native
+    var adsense_Original: Fn5 = js.native
     @JSName("adsensehost")
-    var adsensehost_Original: FnOptionsV41 = js.native
+    var adsensehost_Original: Fn6 = js.native
     @JSName("alertcenter")
-    var alertcenter_Original: FnOptionsV1beta1 = js.native
+    var alertcenter_Original: Fn7 = js.native
     @JSName("analytics")
-    var analytics_Original: FnOptionsV24 = js.native
+    var analytics_Original: Fn8 = js.native
     @JSName("analyticsreporting")
-    var analyticsreporting_Original: FnOptionsV4 = js.native
+    var analyticsreporting_Original: Fn9 = js.native
     @JSName("androiddeviceprovisioning")
-    var androiddeviceprovisioning_Original: FnOptionsV1VersionAndroiddeviceprovisioning = js.native
+    var androiddeviceprovisioning_Original: Fn10 = js.native
     @JSName("androidenterprise")
-    var androidenterprise_Original: FnOptionsV1VersionAndroidenterprise = js.native
+    var androidenterprise_Original: Fn11 = js.native
     @JSName("androidmanagement")
-    var androidmanagement_Original: FnOptionsV1VersionAndroidmanagement = js.native
+    var androidmanagement_Original: Fn12 = js.native
     @JSName("androidpublisher")
-    var androidpublisher_Original: FnOptionsV1V11 = js.native
+    var androidpublisher_Original: Fn13 = js.native
     @JSName("appengine")
-    var appengine_Original: FnOptionsV1V1alpha = js.native
+    var appengine_Original: Fn14 = js.native
     @JSName("appsactivity")
-    var appsactivity_Original: FnOptionsV1VersionAppsactivity = js.native
+    var appsactivity_Original: Fn15 = js.native
     @JSName("appstate")
-    var appstate_Original: FnOptionsV1VersionAppstate = js.native
+    var appstate_Original: Fn16 = js.native
     @JSName("bigquery")
-    var bigquery_Original: FnOptionsV2 = js.native
+    var bigquery_Original: Fn17 = js.native
     @JSName("bigquerydatatransfer")
-    var bigquerydatatransfer_Original: FnOptionsV1VersionBigquerydatatransfer = js.native
+    var bigquerydatatransfer_Original: Fn18 = js.native
     @JSName("bigtableadmin")
-    var bigtableadmin_Original: FnOptionsV1V2 = js.native
+    var bigtableadmin_Original: Fn19 = js.native
     @JSName("binaryauthorization")
-    var binaryauthorization_Original: FnOptionsV1beta1Version = js.native
+    var binaryauthorization_Original: Fn20 = js.native
     @JSName("blogger")
-    var blogger_Original: FnOptionsV2V3 = js.native
+    var blogger_Original: Fn21 = js.native
     @JSName("books")
-    var books_Original: FnOptionsV1VersionBooks = js.native
+    var books_Original: Fn22 = js.native
     @JSName("calendar")
-    var calendar_Original: FnOptionsV3 = js.native
+    var calendar_Original: Fn23 = js.native
     @JSName("chat")
-    var chat_Original: FnOptionsV1VersionChat = js.native
+    var chat_Original: Fn24 = js.native
     @JSName("civicinfo")
-    var civicinfo_Original: FnOptionsV2Version = js.native
+    var civicinfo_Original: Fn25 = js.native
     @JSName("classroom")
-    var classroom_Original: FnOptionsV1VersionClassroom = js.native
+    var classroom_Original: Fn26 = js.native
     @JSName("cloudasset")
-    var cloudasset_Original: FnOptionsV1V1beta1 = js.native
+    var cloudasset_Original: Fn27 = js.native
     @JSName("cloudbilling")
-    var cloudbilling_Original: FnOptionsV1VersionCloudbilling = js.native
+    var cloudbilling_Original: Fn28 = js.native
     @JSName("cloudbuild")
-    var cloudbuild_Original: FnOptionsV1V1alpha1 = js.native
+    var cloudbuild_Original: Fn29 = js.native
     @JSName("clouddebugger")
-    var clouddebugger_Original: FnOptionsV2VersionClouddebugger = js.native
+    var clouddebugger_Original: Fn30 = js.native
     @JSName("clouderrorreporting")
-    var clouderrorreporting_Original: FnOptionsV1beta1VersionClouderrorreporting = js.native
+    var clouderrorreporting_Original: Fn31 = js.native
     @JSName("cloudfunctions")
-    var cloudfunctions_Original: FnOptionsV1V1beta2 = js.native
+    var cloudfunctions_Original: Fn32 = js.native
     @JSName("cloudidentity")
-    var cloudidentity_Original: FnOptionsV1V1beta1Version = js.native
+    var cloudidentity_Original: Fn33 = js.native
     @JSName("cloudiot")
-    var cloudiot_Original: FnOptionsV1VersionCloudiot = js.native
+    var cloudiot_Original: Fn34 = js.native
     @JSName("cloudkms")
-    var cloudkms_Original: FnOptionsV1VersionCloudkms = js.native
+    var cloudkms_Original: Fn35 = js.native
     @JSName("cloudprivatecatalog")
-    var cloudprivatecatalog_Original: FnOptionsV1beta1VersionCloudprivatecatalog = js.native
+    var cloudprivatecatalog_Original: Fn36 = js.native
     @JSName("cloudprivatecatalogproducer")
-    var cloudprivatecatalogproducer_Original: FnOptionsV1beta1VersionCloudprivatecatalogproducer = js.native
+    var cloudprivatecatalogproducer_Original: Fn37 = js.native
     @JSName("cloudprofiler")
-    var cloudprofiler_Original: FnOptionsV2VersionCloudprofiler = js.native
+    var cloudprofiler_Original: Fn38 = js.native
     @JSName("cloudresourcemanager")
-    var cloudresourcemanager_Original: FnOptionsV1V1beta1V2 = js.native
+    var cloudresourcemanager_Original: Fn39 = js.native
     @JSName("cloudscheduler")
-    var cloudscheduler_Original: FnOptionsV1beta1VersionCloudscheduler = js.native
+    var cloudscheduler_Original: Fn40 = js.native
     @JSName("cloudsearch")
-    var cloudsearch_Original: FnOptionsV1VersionCloudsearch = js.native
+    var cloudsearch_Original: Fn41 = js.native
     @JSName("cloudshell")
-    var cloudshell_Original: FnOptionsV1V1alpha1Version = js.native
+    var cloudshell_Original: Fn42 = js.native
     @JSName("cloudtasks")
-    var cloudtasks_Original: FnOptionsV2V2beta2 = js.native
+    var cloudtasks_Original: Fn43 = js.native
     @JSName("cloudtrace")
-    var cloudtrace_Original: FnOptionsV1V2Version = js.native
+    var cloudtrace_Original: Fn44 = js.native
     @JSName("composer")
-    var composer_Original: FnOptionsV1V1beta1VersionComposer = js.native
+    var composer_Original: Fn45 = js.native
     @JSName("compute")
-    var compute_Original: FnAlpha = js.native
+    var compute_Original: Fn46 = js.native
     @JSName("container")
-    var container_Original: FnOptionsV1V1beta1VersionContainer = js.native
+    var container_Original: Fn47 = js.native
     @JSName("containeranalysis")
-    var containeranalysis_Original: FnOptionsV1alpha1 = js.native
+    var containeranalysis_Original: Fn48 = js.native
     @JSName("content")
-    var content_Original: FnOptionsV2V21 = js.native
+    var content_Original: Fn49 = js.native
     @JSName("customsearch")
-    var customsearch_Original: FnOptionsV1VersionCustomsearch = js.native
+    var customsearch_Original: Fn50 = js.native
     @JSName("dataflow")
-    var dataflow_Original: FnOptionsV1b3 = js.native
+    var dataflow_Original: Fn51 = js.native
     @JSName("dataproc")
-    var dataproc_Original: FnOptionsV1V1beta2Version = js.native
+    var dataproc_Original: Fn52 = js.native
     @JSName("datastore")
-    var datastore_Original: FnOptionsV1V1beta1V1beta3 = js.native
+    var datastore_Original: Fn53 = js.native
     @JSName("deploymentmanager")
-    var deploymentmanager_Original: FnAlphaOptions = js.native
+    var deploymentmanager_Original: Fn54 = js.native
     @JSName("dfareporting")
-    var dfareporting_Original: FnOptionsV31 = js.native
+    var dfareporting_Original: Fn55 = js.native
     @JSName("dialogflow")
-    var dialogflow_Original: FnOptionsV2V2beta1 = js.native
+    var dialogflow_Original: Fn56 = js.native
     @JSName("digitalassetlinks")
-    var digitalassetlinks_Original: FnOptionsV1VersionDigitalassetlinks = js.native
+    var digitalassetlinks_Original: Fn57 = js.native
     @JSName("discovery")
-    var discovery_Original: FnOptionsV1VersionDiscovery = js.native
+    var discovery_Original: Fn58 = js.native
     @JSName("dlp")
-    var dlp_Original: FnOptionsV2VersionDlp = js.native
+    var dlp_Original: Fn59 = js.native
     @JSName("dns")
-    var dns_Original: FnOptionsV1V1beta2V2beta1 = js.native
+    var dns_Original: Fn60 = js.native
     @JSName("docs")
-    var docs_Original: FnOptionsV1VersionDocs = js.native
+    var docs_Original: Fn61 = js.native
     @JSName("doubleclickbidmanager")
-    var doubleclickbidmanager_Original: FnOptionsV1VersionDoubleclickbidmanager = js.native
+    var doubleclickbidmanager_Original: Fn62 = js.native
     @JSName("doubleclicksearch")
-    var doubleclicksearch_Original: FnOptionsV2VersionDoubleclicksearch = js.native
+    var doubleclicksearch_Original: Fn63 = js.native
     @JSName("drive")
-    var drive_Original: FnOptionsV2V3Version = js.native
+    var drive_Original: Fn64 = js.native
     @JSName("driveactivity")
-    var driveactivity_Original: FnOptionsV2VersionDriveactivity = js.native
+    var driveactivity_Original: Fn65 = js.native
     @JSName("factchecktools")
-    var factchecktools_Original: FnOptionsV1alpha1Version = js.native
+    var factchecktools_Original: Fn66 = js.native
     @JSName("file")
-    var file_Original: FnOptionsV1V1beta1VersionFile = js.native
+    var file_Original: Fn67 = js.native
     @JSName("firebasedynamiclinks")
-    var firebasedynamiclinks_Original: FnOptionsV1VersionFirebasedynamiclinks = js.native
+    var firebasedynamiclinks_Original: Fn68 = js.native
     @JSName("firebasehosting")
-    var firebasehosting_Original: FnOptionsV1beta1VersionFirebasehosting = js.native
+    var firebasehosting_Original: Fn69 = js.native
     @JSName("firebaserules")
-    var firebaserules_Original: FnOptionsV1VersionFirebaserules = js.native
+    var firebaserules_Original: Fn70 = js.native
     @JSName("firestore")
-    var firestore_Original: FnOptionsV1V1beta1V1beta2 = js.native
+    var firestore_Original: Fn71 = js.native
     @JSName("fitness")
-    var fitness_Original: FnOptionsV1VersionFitness = js.native
+    var fitness_Original: Fn72 = js.native
     @JSName("fusiontables")
-    var fusiontables_Original: FnOptionsV1V2VersionFusiontables = js.native
+    var fusiontables_Original: Fn73 = js.native
     @JSName("gamesConfiguration")
-    var gamesConfiguration_Original: FnOptionsV1configuration = js.native
+    var gamesConfiguration_Original: Fn75 = js.native
     @JSName("gamesManagement")
-    var gamesManagement_Original: FnOptionsV1management = js.native
+    var gamesManagement_Original: Fn76 = js.native
     @JSName("games")
-    var games_Original: FnOptionsV1VersionGames = js.native
+    var games_Original: Fn74 = js.native
     @JSName("genomics")
-    var genomics_Original: FnOptionsV1V1alpha2 = js.native
+    var genomics_Original: Fn77 = js.native
     @JSName("gmail")
-    var gmail_Original: FnOptionsV1VersionGmail = js.native
+    var gmail_Original: Fn78 = js.native
     @JSName("groupsmigration")
-    var groupsmigration_Original: FnOptionsV1VersionGroupsmigration = js.native
+    var groupsmigration_Original: Fn79 = js.native
     @JSName("groupssettings")
-    var groupssettings_Original: FnOptionsV1VersionGroupssettings = js.native
+    var groupssettings_Original: Fn80 = js.native
     @JSName("healthcare")
-    var healthcare_Original: FnOptionsV1alpha = js.native
+    var healthcare_Original: Fn81 = js.native
     @JSName("iam")
-    var iam_Original: FnOptionsV1VersionIam = js.native
+    var iam_Original: Fn82 = js.native
     @JSName("iamcredentials")
-    var iamcredentials_Original: FnOptionsV1VersionIamcredentials = js.native
+    var iamcredentials_Original: Fn83 = js.native
     @JSName("iap")
-    var iap_Original: FnOptionsV1V1beta1VersionIap = js.native
+    var iap_Original: Fn84 = js.native
     @JSName("identitytoolkit")
-    var identitytoolkit_Original: FnOptionsV3Version = js.native
+    var identitytoolkit_Original: Fn85 = js.native
     @JSName("indexing")
-    var indexing_Original: FnOptionsV3VersionIndexing = js.native
+    var indexing_Original: Fn86 = js.native
     @JSName("jobs")
-    var jobs_Original: FnOptionsV2V3V3p1beta1 = js.native
+    var jobs_Original: Fn87 = js.native
     @JSName("kgsearch")
-    var kgsearch_Original: FnOptionsV1VersionKgsearch = js.native
+    var kgsearch_Original: Fn88 = js.native
     @JSName("language")
-    var language_Original: FnOptionsV1V1beta1V1beta2Version = js.native
+    var language_Original: Fn89 = js.native
     @JSName("libraryagent")
-    var libraryagent_Original: FnOptionsV1VersionLibraryagent = js.native
+    var libraryagent_Original: Fn90 = js.native
     @JSName("licensing")
-    var licensing_Original: FnOptionsV1VersionLicensing = js.native
+    var licensing_Original: Fn91 = js.native
     @JSName("logging")
-    var logging_Original: FnOptionsV2V2beta1Version = js.native
+    var logging_Original: Fn92 = js.native
     @JSName("manufacturers")
-    var manufacturers_Original: FnOptionsV1VersionManufacturers = js.native
+    var manufacturers_Original: Fn93 = js.native
     @JSName("mirror")
-    var mirror_Original: FnOptionsV1VersionMirror = js.native
+    var mirror_Original: Fn94 = js.native
     @JSName("ml")
-    var ml_Original: FnOptionsV1VersionMl = js.native
+    var ml_Original: Fn95 = js.native
     @JSName("monitoring")
-    var monitoring_Original: FnOptionsV3VersionMonitoring = js.native
+    var monitoring_Original: Fn96 = js.native
     @JSName("oauth2")
-    var oauth2_Original: FnOptionsV1V2VersionOauth2 = js.native
+    var oauth2_Original: Fn97 = js.native
     @JSName("oslogin")
-    var oslogin_Original: FnOptionsV1V1alphaV1beta = js.native
+    var oslogin_Original: Fn98 = js.native
     @JSName("pagespeedonline")
-    var pagespeedonline_Original: FnOptionsV1V2V4 = js.native
+    var pagespeedonline_Original: Fn99 = js.native
     @JSName("people")
-    var people_Original: FnOptionsV1VersionPeople = js.native
+    var people_Original: Fn100 = js.native
     @JSName("playcustomapp")
-    var playcustomapp_Original: FnOptionsV1VersionPlaycustomapp = js.native
+    var playcustomapp_Original: Fn101 = js.native
     @JSName("plusDomains")
-    var plusDomains_Original: FnOptionsV1VersionPlusdomains = js.native
+    var plusDomains_Original: Fn103 = js.native
     @JSName("plus")
-    var plus_Original: FnOptionsV1VersionPlus = js.native
+    var plus_Original: Fn102 = js.native
     @JSName("poly")
-    var poly_Original: FnOptionsV1VersionPoly = js.native
+    var poly_Original: Fn104 = js.native
     @JSName("proximitybeacon")
-    var proximitybeacon_Original: FnOptionsV1beta1VersionProximitybeacon = js.native
+    var proximitybeacon_Original: Fn105 = js.native
     @JSName("pubsub")
-    var pubsub_Original: FnOptionsV1V1beta1a = js.native
+    var pubsub_Original: Fn106 = js.native
     @JSName("redis")
-    var redis_Original: FnOptionsV1V1beta1VersionRedis = js.native
+    var redis_Original: Fn107 = js.native
     @JSName("remotebuildexecution")
-    var remotebuildexecution_Original: FnOptionsV1V1alphaV2 = js.native
+    var remotebuildexecution_Original: Fn108 = js.native
     @JSName("replicapool")
-    var replicapool_Original: FnOptionsV1beta1VersionReplicapool = js.native
+    var replicapool_Original: Fn109 = js.native
     @JSName("reseller")
-    var reseller_Original: FnOptionsV1VersionReseller = js.native
+    var reseller_Original: Fn110 = js.native
     @JSName("run")
-    var run_Original: FnOptionsV1V1alpha1VersionRun = js.native
+    var run_Original: Fn111 = js.native
     @JSName("runtimeconfig")
-    var runtimeconfig_Original: FnOptionsV1V1beta1VersionRuntimeconfig = js.native
+    var runtimeconfig_Original: Fn112 = js.native
     @JSName("safebrowsing")
-    var safebrowsing_Original: FnOptionsV4Version = js.native
+    var safebrowsing_Original: Fn113 = js.native
     @JSName("script")
-    var script_Original: FnOptionsV1VersionScript = js.native
+    var script_Original: Fn114 = js.native
     @JSName("searchconsole")
-    var searchconsole_Original: FnOptionsV1VersionSearchconsole = js.native
+    var searchconsole_Original: Fn115 = js.native
     @JSName("securitycenter")
-    var securitycenter_Original: FnOptionsV1V1beta1VersionSecuritycenter = js.native
+    var securitycenter_Original: Fn116 = js.native
     @JSName("servicebroker")
-    var servicebroker_Original: FnOptionsV1V1alpha1V1beta1 = js.native
+    var servicebroker_Original: Fn117 = js.native
     @JSName("serviceconsumermanagement")
-    var serviceconsumermanagement_Original: FnOptionsV1VersionServiceconsumermanagement = js.native
+    var serviceconsumermanagement_Original: Fn118 = js.native
     @JSName("servicecontrol")
-    var servicecontrol_Original: FnOptionsV1VersionServicecontrol = js.native
+    var servicecontrol_Original: Fn119 = js.native
     @JSName("servicemanagement")
-    var servicemanagement_Original: FnOptionsV1VersionServicemanagement = js.native
+    var servicemanagement_Original: Fn120 = js.native
     @JSName("servicenetworking")
-    var servicenetworking_Original: FnOptionsV1V1betaVersion = js.native
+    var servicenetworking_Original: Fn121 = js.native
     @JSName("serviceusage")
-    var serviceusage_Original: FnOptionsV1V1beta1VersionServiceusage = js.native
+    var serviceusage_Original: Fn122 = js.native
     @JSName("sheets")
-    var sheets_Original: FnOptionsV4VersionSheets = js.native
+    var sheets_Original: Fn123 = js.native
     @JSName("siteVerification")
-    var siteVerification_Original: FnOptionsV1VersionSiteverification = js.native
+    var siteVerification_Original: Fn124 = js.native
     @JSName("slides")
-    var slides_Original: FnOptionsV1VersionSlides = js.native
+    var slides_Original: Fn125 = js.native
     @JSName("sourcerepo")
-    var sourcerepo_Original: FnOptionsV1VersionSourcerepo = js.native
+    var sourcerepo_Original: Fn126 = js.native
     @JSName("spanner")
-    var spanner_Original: FnOptionsV1VersionSpanner = js.native
+    var spanner_Original: Fn127 = js.native
     @JSName("speech")
-    var speech_Original: FnOptionsV1V1p1beta1 = js.native
+    var speech_Original: Fn128 = js.native
     @JSName("sqladmin")
-    var sqladmin_Original: FnOptionsV1beta4 = js.native
+    var sqladmin_Original: Fn129 = js.native
     @JSName("storage")
-    var storage_Original: FnOptionsV1V1beta1V1beta2VersionStorage = js.native
+    var storage_Original: Fn130 = js.native
     @JSName("storagetransfer")
-    var storagetransfer_Original: FnOptionsV1VersionStoragetransfer = js.native
+    var storagetransfer_Original: Fn131 = js.native
     @JSName("streetviewpublish")
-    var streetviewpublish_Original: FnOptionsV1VersionStreetviewpublish = js.native
+    var streetviewpublish_Original: Fn132 = js.native
     @JSName("surveys")
-    var surveys_Original: FnOptionsV2VersionSurveys = js.native
+    var surveys_Original: Fn133 = js.native
     @JSName("tagmanager")
-    var tagmanager_Original: FnOptionsV1V2VersionTagmanager = js.native
+    var tagmanager_Original: Fn134 = js.native
     @JSName("tasks")
-    var tasks_Original: FnOptionsV1VersionTasks = js.native
+    var tasks_Original: Fn135 = js.native
     @JSName("testing")
-    var testing_Original: FnOptionsV1VersionTesting = js.native
+    var testing_Original: Fn136 = js.native
     @JSName("texttospeech")
-    var texttospeech_Original: FnOptionsV1V1beta1VersionTexttospeech = js.native
+    var texttospeech_Original: Fn137 = js.native
     @JSName("toolresults")
-    var toolresults_Original: FnOptionsV1beta3 = js.native
+    var toolresults_Original: Fn138 = js.native
     @JSName("tpu")
-    var tpu_Original: FnOptionsV1V1alpha1VersionTpu = js.native
+    var tpu_Original: Fn139 = js.native
     @JSName("translate")
-    var translate_Original: FnOptionsV2VersionTranslate = js.native
+    var translate_Original: Fn140 = js.native
     @JSName("urlshortener")
-    var urlshortener_Original: FnOptionsV1VersionUrlshortener = js.native
+    var urlshortener_Original: Fn141 = js.native
     @JSName("vault")
-    var vault_Original: FnOptionsV1VersionVault = js.native
+    var vault_Original: Fn142 = js.native
     @JSName("videointelligence")
-    var videointelligence_Original: FnOptionsV1V1beta2V1p1beta1 = js.native
+    var videointelligence_Original: Fn143 = js.native
     @JSName("vision")
-    var vision_Original: FnOptionsV1V1p1beta1V1p2beta1 = js.native
+    var vision_Original: Fn144 = js.native
     @JSName("webfonts")
-    var webfonts_Original: FnOptionsV1VersionWebfonts = js.native
+    var webfonts_Original: Fn145 = js.native
     @JSName("webmasters")
-    var webmasters_Original: FnOptionsV3VersionWebmasters = js.native
+    var webmasters_Original: Fn146 = js.native
     @JSName("websecurityscanner")
-    var websecurityscanner_Original: FnOptionsV1alphaV1beta = js.native
+    var websecurityscanner_Original: Fn147 = js.native
     @JSName("youtubeAnalytics")
-    var youtubeAnalytics_Original: FnOptionsV1V1beta1V2Version = js.native
+    var youtubeAnalytics_Original: Fn149 = js.native
     @JSName("youtube")
-    var youtube_Original: FnOptionsV3VersionYoutube = js.native
+    var youtube_Original: Fn148 = js.native
     @JSName("youtubereporting")
-    var youtubereporting_Original: FnOptionsV1VersionYoutubereporting = js.native
+    var youtubereporting_Original: Fn150 = js.native
     def abusiveexperiencereport(options: Options): Abusiveexperiencereport = js.native
     @JSName("abusiveexperiencereport")
     def abusiveexperiencereport_v1(version: v1): Abusiveexperiencereport = js.native

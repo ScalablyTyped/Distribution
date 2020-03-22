@@ -17,7 +17,6 @@ package object mod {
     /* result */ js.UndefOr[js.Any], 
     scala.Unit
   ]
-  type ProgressActivityTracker = (typings.std.Omit[typings.gatsby.mod.ActivityTracker, typings.gatsby.gatsbyStrings.end]) with typings.gatsby.AnonDone
   type ReactProps[T /* <: typings.std.Element */] = typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[T], T]
   type RenderCallback[T] = js.Function1[/* data */ T, typings.react.mod.ReactNode]
 }

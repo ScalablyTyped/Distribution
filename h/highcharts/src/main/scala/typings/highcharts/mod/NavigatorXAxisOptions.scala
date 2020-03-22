@@ -9,7 +9,7 @@ trait NavigatorXAxisOptions extends js.Object {
     * (Highstock, Gantt) Accessibility options for an axis. Requires the
     * accessibility module.
     */
-  var accessibility: js.UndefOr[js.Object | NavigatorXAxisAccessibilityOptions] = js.undefined
+  var accessibility: js.UndefOr[AxisAccessibilityOptionsObject] = js.undefined
   /**
     * (Highcharts, Highstock, Gantt) When using multiple axis, the ticks of two
     * or more opposite axes will automatically be aligned by adding ticks to
@@ -37,6 +37,14 @@ trait NavigatorXAxisOptions extends js.Object {
     */
   var alternateGridColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
+    * (Highcharts) In a polar chart, this is the angle of the Y axis in
+    * degrees, where 0 is up and 90 is right. The angle determines the position
+    * of the axis line and the labels, though the coordinate system is
+    * unaffected. Since v8.0.0 this option is also applicable for X axis
+    * (inverted polar).
+    */
+  var angle: js.UndefOr[Double] = js.undefined
+  /**
     * (Highcharts, Highstock, Gantt) An array defining breaks in the axis, the
     * sections defined will be left out and all the points shifted closer to
     * each other.
@@ -44,14 +52,13 @@ trait NavigatorXAxisOptions extends js.Object {
   var breaks: js.UndefOr[js.Array[NavigatorXAxisBreaksOptions]] = js.undefined
   /**
     * (Highcharts, Gantt) If categories are present for the xAxis, names are
-    * used instead of numbers for that axis. Since Highcharts 3.0, categories
-    * can also be extracted by giving each point a name and setting axis type
-    * to `category`. However, if you have multiple series, best practice
-    * remains defining the `categories` array.
+    * used instead of numbers for that axis.
     *
-    * Example:
+    * Since Highcharts 3.0, categories can also be extracted by giving each
+    * point a name and setting axis type to `category`. However, if you have
+    * multiple series, best practice remains defining the `categories` array.
     *
-    *  (see online documentation for example)
+    * Example: `categories: ['Apples', 'Bananas', 'Oranges']`
     */
   var categories: js.UndefOr[js.Array[String]] = js.undefined
   /**
@@ -72,12 +79,12 @@ trait NavigatorXAxisOptions extends js.Object {
     * In styled mode, the crosshairs are styled in the `.highcharts-crosshair`,
     * `.highcharts-crosshair-thin` or `.highcharts-xaxis-category` classes.
     */
-  var crosshair: js.UndefOr[Boolean | NavigatorXAxisCrosshairOptions] = js.undefined
+  var crosshair: js.UndefOr[Boolean | AxisCrosshairOptions] = js.undefined
   /**
     * (Gantt) Show an indicator on the axis for the current date and time. Can
     * be a boolean or a configuration object similar to xAxis.plotLines.
     */
-  var currentDateIndicator: js.UndefOr[Boolean | NavigatorXAxisCurrentDateIndicatorOptions] = js.undefined
+  var currentDateIndicator: js.UndefOr[Boolean | AxisCurrentDateIndicatorOptions] = js.undefined
   /**
     * (Highcharts, Highstock, Gantt) For a datetime axis, the scale will
     * automatically adjust to the appropriate unit. This member gives the
@@ -85,11 +92,10 @@ trait NavigatorXAxisOptions extends js.Object {
     * values, different units may be used, for example the `day` unit can be
     * used on midnight and `hour` unit be used for intermediate values on the
     * same axis. For an overview of the replacement codes, see dateFormat.
-    * Defaults to:
     *
-    *  (see online documentation for example)
+    * Defaults to: (see online documentation for example)
     */
-  var dateTimeLabelFormats: js.UndefOr[NavigatorXAxisDateTimeLabelFormatsOptions] = js.undefined
+  var dateTimeLabelFormats: js.UndefOr[AxisDateTimeLabelFormatsOptions] = js.undefined
   /**
     * (Highstock, Gantt) Whether to force the axis to end on a tick. Use this
     * option with the `maxPadding` option to control the axis end.
@@ -121,6 +127,13 @@ trait NavigatorXAxisOptions extends js.Object {
     */
   var gridLineDashStyle: js.UndefOr[DashStyleValue] = js.undefined
   /**
+    * (Highcharts) Polar charts only. Whether the grid lines should draw as a
+    * polygon with straight lines between categories, or as circles. Can be
+    * either `circle` or `polygon`. Since v8.0.0 this option is also applicable
+    * for X axis (inverted polar).
+    */
+  var gridLineInterpolation: js.UndefOr[OptionsGridLineInterpolationValue] = js.undefined
+  /**
     * (Highstock, Gantt) The width of the grid lines extending the ticks across
     * the plot area.
     *
@@ -133,6 +146,14 @@ trait NavigatorXAxisOptions extends js.Object {
     */
   var gridZIndex: js.UndefOr[Double] = js.undefined
   /**
+    * (Highcharts, Highstock) The height as the vertical axis. If it's a
+    * number, it is interpreted as pixels.
+    *
+    * Since Highcharts 2: If it's a percentage string, it is interpreted as
+    * percentages of the total plot height.
+    */
+  var height: js.UndefOr[Double | String] = js.undefined
+  /**
     * (Highstock, Gantt) An id for the axis. This can be used after render time
     * to get a pointer to the axis object through `chart.get()`.
     */
@@ -140,8 +161,19 @@ trait NavigatorXAxisOptions extends js.Object {
   /**
     * (Highstock, Gantt) The axis labels show the number or category for each
     * tick.
+    *
+    * Since v8.0.0: Labels are animated in categorized x-axis with updating
+    * data if `tickInterval` and `step` is set to 1.
     */
   var labels: js.UndefOr[NavigatorXAxisLabelsOptions] = js.undefined
+  /**
+    * (Highcharts, Highstock) The left position as the horizontal axis. If it's
+    * a number, it is interpreted as pixel position relative to the chart.
+    *
+    * Since Highcharts v5.0.13: If it's a percentage string, it is interpreted
+    * as percentages of the plot width, offset from plot area left.
+    */
+  var left: js.UndefOr[Double | String] = js.undefined
   /**
     * (Highstock, Gantt) The color of the line marking the axis itself.
     *
@@ -458,6 +490,14 @@ trait NavigatorXAxisOptions extends js.Object {
     */
   var title: js.UndefOr[NavigatorXAxisTitleOptions] = js.undefined
   /**
+    * (Highcharts, Highstock) The top position as the vertical axis. If it's a
+    * number, it is interpreted as pixel position relative to the chart.
+    *
+    * Since Highcharts 2: If it's a percentage string, it is interpreted as
+    * percentages of the plot height, offset from plot area top.
+    */
+  var top: js.UndefOr[Double | String] = js.undefined
+  /**
     * (Highcharts, Gantt) The type of axis. Can be one of `linear`,
     * `logarithmic`, `datetime` or `category`. In a datetime axis, the numbers
     * are given in milliseconds, and tick marks are placed on appropriate
@@ -480,9 +520,9 @@ trait NavigatorXAxisOptions extends js.Object {
     * (Highcharts, Highstock, Gantt) Datetime axis only. An array determining
     * what time intervals the ticks are allowed to fall on. Each array item is
     * an array where the first value is the time unit and the second value
-    * another array of allowed multiples. Defaults to:
+    * another array of allowed multiples.
     *
-    *  (see online documentation for example)
+    * Defaults to: (see online documentation for example)
     */
   var units: js.UndefOr[js.Array[js.Tuple2[String, js.Array[Double] | Null]]] = js.undefined
   /**
@@ -490,6 +530,14 @@ trait NavigatorXAxisOptions extends js.Object {
     * ticks and labels, should be visible.
     */
   var visible: js.UndefOr[Boolean] = js.undefined
+  /**
+    * (Highcharts, Highstock) The width as the horizontal axis. If it's a
+    * number, it is interpreted as pixels.
+    *
+    * Since Highcharts v5.0.13: If it's a percentage string, it is interpreted
+    * as percentages of the total plot width.
+    */
+  var width: js.UndefOr[Double | String] = js.undefined
   /**
     * (Highstock, Gantt) Whether to zoom axis. If `chart.zoomType` is set, the
     * option allows to disable zooming on an individual axis.
@@ -500,27 +548,31 @@ trait NavigatorXAxisOptions extends js.Object {
 object NavigatorXAxisOptions {
   @scala.inline
   def apply(
-    accessibility: js.Object | NavigatorXAxisAccessibilityOptions = null,
+    accessibility: AxisAccessibilityOptionsObject = null,
     alignTicks: js.UndefOr[Boolean] = js.undefined,
     allowDecimals: js.UndefOr[Boolean] = js.undefined,
     alternateGridColor: ColorString | GradientColorObject | PatternObject = null,
+    angle: Int | Double = null,
     breaks: js.Array[NavigatorXAxisBreaksOptions] = null,
     categories: js.Array[String] = null,
     ceiling: Int | Double = null,
     className: String = null,
-    crosshair: Boolean | NavigatorXAxisCrosshairOptions = null,
-    currentDateIndicator: Boolean | NavigatorXAxisCurrentDateIndicatorOptions = null,
-    dateTimeLabelFormats: NavigatorXAxisDateTimeLabelFormatsOptions = null,
+    crosshair: Boolean | AxisCrosshairOptions = null,
+    currentDateIndicator: Boolean | AxisCurrentDateIndicatorOptions = null,
+    dateTimeLabelFormats: AxisDateTimeLabelFormatsOptions = null,
     endOnTick: js.UndefOr[Boolean] = js.undefined,
     events: NavigatorXAxisEventsOptions = null,
     floor: Int | Double = null,
     grid: NavigatorXAxisGridOptions = null,
     gridLineColor: String = null,
     gridLineDashStyle: DashStyleValue = null,
+    gridLineInterpolation: OptionsGridLineInterpolationValue = null,
     gridLineWidth: Int | Double = null,
     gridZIndex: Int | Double = null,
+    height: Double | String = null,
     id: String = null,
     labels: NavigatorXAxisLabelsOptions = null,
+    left: Double | String = null,
     lineColor: ColorString | GradientColorObject | PatternObject = null,
     lineWidth: Int | Double = null,
     margin: Int | Double = null,
@@ -563,10 +615,12 @@ object NavigatorXAxisOptions {
     tickWidth: Int | Double = null,
     tickmarkPlacement: OptionsTickmarkPlacementValue = null,
     title: NavigatorXAxisTitleOptions = null,
+    top: Double | String = null,
     `type`: AxisTypeValue = null,
     uniqueNames: js.UndefOr[Boolean] = js.undefined,
     units: js.Array[js.Tuple2[String, js.Array[Double] | Null]] = null,
     visible: js.UndefOr[Boolean] = js.undefined,
+    width: Double | String = null,
     zoomEnabled: js.UndefOr[Boolean] = js.undefined
   ): NavigatorXAxisOptions = {
     val __obj = js.Dynamic.literal()
@@ -574,6 +628,7 @@ object NavigatorXAxisOptions {
     if (!js.isUndefined(alignTicks)) __obj.updateDynamic("alignTicks")(alignTicks.asInstanceOf[js.Any])
     if (!js.isUndefined(allowDecimals)) __obj.updateDynamic("allowDecimals")(allowDecimals.asInstanceOf[js.Any])
     if (alternateGridColor != null) __obj.updateDynamic("alternateGridColor")(alternateGridColor.asInstanceOf[js.Any])
+    if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
     if (breaks != null) __obj.updateDynamic("breaks")(breaks.asInstanceOf[js.Any])
     if (categories != null) __obj.updateDynamic("categories")(categories.asInstanceOf[js.Any])
     if (ceiling != null) __obj.updateDynamic("ceiling")(ceiling.asInstanceOf[js.Any])
@@ -587,10 +642,13 @@ object NavigatorXAxisOptions {
     if (grid != null) __obj.updateDynamic("grid")(grid.asInstanceOf[js.Any])
     if (gridLineColor != null) __obj.updateDynamic("gridLineColor")(gridLineColor.asInstanceOf[js.Any])
     if (gridLineDashStyle != null) __obj.updateDynamic("gridLineDashStyle")(gridLineDashStyle.asInstanceOf[js.Any])
+    if (gridLineInterpolation != null) __obj.updateDynamic("gridLineInterpolation")(gridLineInterpolation.asInstanceOf[js.Any])
     if (gridLineWidth != null) __obj.updateDynamic("gridLineWidth")(gridLineWidth.asInstanceOf[js.Any])
     if (gridZIndex != null) __obj.updateDynamic("gridZIndex")(gridZIndex.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
+    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
     if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor.asInstanceOf[js.Any])
     if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
@@ -633,10 +691,12 @@ object NavigatorXAxisOptions {
     if (tickWidth != null) __obj.updateDynamic("tickWidth")(tickWidth.asInstanceOf[js.Any])
     if (tickmarkPlacement != null) __obj.updateDynamic("tickmarkPlacement")(tickmarkPlacement.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (!js.isUndefined(uniqueNames)) __obj.updateDynamic("uniqueNames")(uniqueNames.asInstanceOf[js.Any])
     if (units != null) __obj.updateDynamic("units")(units.asInstanceOf[js.Any])
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     if (!js.isUndefined(zoomEnabled)) __obj.updateDynamic("zoomEnabled")(zoomEnabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigatorXAxisOptions]
   }

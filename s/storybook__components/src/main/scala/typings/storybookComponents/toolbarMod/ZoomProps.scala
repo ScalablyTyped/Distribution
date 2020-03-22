@@ -4,9 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ZoomProps extends js.Object {
-  def resetZoom(): Unit
-  def zoom(`val`: Double): Unit
+  def resetZoom(): Unit = js.native
+  def zoom(`val`: Double): Unit = js.native
 }
 
 object ZoomProps {

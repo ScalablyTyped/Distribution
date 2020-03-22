@@ -1,6 +1,6 @@
 package typings.awsSdk.elbMod
 
-import typings.awsSdk.AnonWaiter
+import typings.awsSdk.DescribeEndPointStateInpu
 import typings.awsSdk.awsSdkStrings.anyInstanceInService
 import typings.awsSdk.awsSdkStrings.instanceDeregistered
 import typings.awsSdk.awsSdkStrings.instanceInService
@@ -412,11 +412,11 @@ trait ELB extends Service {
     * Waits for the anyInstanceInService state by periodically calling the underlying ELB.describeInstanceHealthoperation every 15 seconds (at most 40 times).
     */
   @JSName("waitFor")
-  def waitFor_anyInstanceInService(state: anyInstanceInService, params: DescribeEndPointStateInput with AnonWaiter): Request[DescribeEndPointStateOutput, AWSError] = js.native
+  def waitFor_anyInstanceInService(state: anyInstanceInService, params: DescribeEndPointStateInpu): Request[DescribeEndPointStateOutput, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_anyInstanceInService(
     state: anyInstanceInService,
-    params: DescribeEndPointStateInput with AnonWaiter,
+    params: DescribeEndPointStateInpu,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeEndPointStateOutput, Unit]
   ): Request[DescribeEndPointStateOutput, AWSError] = js.native
   /**
@@ -433,11 +433,11 @@ trait ELB extends Service {
     * Waits for the instanceDeregistered state by periodically calling the underlying ELB.describeInstanceHealthoperation every 15 seconds (at most 40 times).
     */
   @JSName("waitFor")
-  def waitFor_instanceDeregistered(state: instanceDeregistered, params: DescribeEndPointStateInput with AnonWaiter): Request[DescribeEndPointStateOutput, AWSError] = js.native
+  def waitFor_instanceDeregistered(state: instanceDeregistered, params: DescribeEndPointStateInpu): Request[DescribeEndPointStateOutput, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_instanceDeregistered(
     state: instanceDeregistered,
-    params: DescribeEndPointStateInput with AnonWaiter,
+    params: DescribeEndPointStateInpu,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeEndPointStateOutput, Unit]
   ): Request[DescribeEndPointStateOutput, AWSError] = js.native
   /**
@@ -454,11 +454,11 @@ trait ELB extends Service {
     * Waits for the instanceInService state by periodically calling the underlying ELB.describeInstanceHealthoperation every 15 seconds (at most 40 times).
     */
   @JSName("waitFor")
-  def waitFor_instanceInService(state: instanceInService, params: DescribeEndPointStateInput with AnonWaiter): Request[DescribeEndPointStateOutput, AWSError] = js.native
+  def waitFor_instanceInService(state: instanceInService, params: DescribeEndPointStateInpu): Request[DescribeEndPointStateOutput, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_instanceInService(
     state: instanceInService,
-    params: DescribeEndPointStateInput with AnonWaiter,
+    params: DescribeEndPointStateInpu,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeEndPointStateOutput, Unit]
   ): Request[DescribeEndPointStateOutput, AWSError] = js.native
 }

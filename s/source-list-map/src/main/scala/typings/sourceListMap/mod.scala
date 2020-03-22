@@ -82,6 +82,6 @@ object mod extends js.Object {
     def mapGeneratedCode(fn: js.Function1[/* code */ String, String]): Unit = js.native
   }
   
-  def fromStringWithSourceMap(code: String, map: AnonMappings): SourceListMap = js.native
+  def fromStringWithSourceMap(code: String, map: AnonSources): SourceListMap = js.native
 }
 

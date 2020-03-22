@@ -8,10 +8,9 @@ import scala.scalajs.js.annotation._
 
 trait PlotSupertrendOptions extends js.Object {
   /**
-    * (Highstock) Accessibility options for a series. Requires the
-    * accessibility module.
+    * (Highstock) Accessibility options for a series.
     */
-  var accessibility: js.UndefOr[js.Object | PlotSupertrendAccessibilityOptions] = js.undefined
+  var accessibility: js.UndefOr[SeriesAccessibilityOptionsObject] = js.undefined
   /**
     * (Highstock) Allow this series' points to be selected by clicking on the
     * graphic (columns, point markers, pie slices, map areas etc).
@@ -38,7 +37,7 @@ trait PlotSupertrendOptions extends js.Object {
     * Due to poor performance, animation is disabled in old IE browsers for
     * several chart types.
     */
-  var animation: js.UndefOr[Boolean | AnimationOptionsObject | PlotSupertrendAnimationOptions] = js.undefined
+  var animation: js.UndefOr[Boolean | AnimationOptionsObject] = js.undefined
   /**
     * (Highstock) For some series, there is a limit that shuts down initial
     * animation by default when the total number of points in the chart is too
@@ -100,6 +99,19 @@ trait PlotSupertrendOptions extends js.Object {
     */
   var clip: js.UndefOr[Boolean] = js.undefined
   /**
+    * (Highstock) The main color of the series. In line type series it applies
+    * to the line and the point markers unless otherwise specified. In bar type
+    * series it applies to the bars unless a color is specified per point. The
+    * default value is pulled from the `options.colors` array.
+    *
+    * In styled mode, the color can be defined by the colorIndex option. Also,
+    * the series color can be set with the `.highcharts-series`,
+    * `.highcharts-color-{n}`, `.highcharts-{type}-series` or
+    * `.highcharts-series-{n}` class, or individual classes given by the
+    * `className` option.
+    */
+  var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
+  /**
     * (Highstock) Styled mode only. A specific color index to use for the
     * series, so its graphic representations are given the class name
     * `highcharts-color-{n}`.
@@ -128,11 +140,12 @@ trait PlotSupertrendOptions extends js.Object {
   var compareBase: js.UndefOr[`0` | `100`] = js.undefined
   /**
     * (Highstock) Defines if comparison should start from the first point
-    * within the visible range or should start from the first point (see online
-    * documentation for example) the range. In other words, this flag
-    * determines if first point within the visible range will have 0%
-    * (`compareStart=true`) or should have been already calculated according to
-    * the previous point (`compareStart=false`).
+    * within the visible range or should start from the first point **before**
+    * the range.
+    *
+    * In other words, this flag determines if first point within the visible
+    * range will have 0% (`compareStart=true`) or should have been already
+    * calculated according to the previous point (`compareStart=false`).
     */
   var compareStart: js.UndefOr[Boolean] = js.undefined
   /**
@@ -155,7 +168,7 @@ trait PlotSupertrendOptions extends js.Object {
     * (Gantt) Override Pathfinder connector options for a series. Requires
     * Highcharts Gantt to be loaded.
     */
-  var connectors: js.UndefOr[PlotSupertrendConnectorsOptions] = js.undefined
+  var connectors: js.UndefOr[SeriesConnectorsOptionsObject] = js.undefined
   /**
     * (Highstock) You can set the cursor to "pointer" if you have click events
     * attached to the series, to signal to the user that the points and lines
@@ -187,10 +200,10 @@ trait PlotSupertrendOptions extends js.Object {
     * of the first point instance are copied over to the group point. This can
     * be altered through a custom `approximation` callback function.
     */
-  var dataGrouping: js.UndefOr[PlotSupertrendDataGroupingOptions] = js.undefined
+  var dataGrouping: js.UndefOr[DataGroupingOptionsObject] = js.undefined
   /**
-    * (Highstock) Options for the series data labels, appearing next to each
-    * data point.
+    * (Highcharts, Highstock, Highmaps, Gantt) Options for the series data
+    * labels, appearing next to each data point.
     *
     * Since v6.2.0, multiple data labels can be applied to each single point by
     * defining them as an array of configs.
@@ -200,6 +213,10 @@ trait PlotSupertrendOptions extends js.Object {
     * (see example).
     */
   var dataLabels: js.UndefOr[DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject]] = js.undefined
+  /**
+    * (Highcharts, Highstock) Options for the series data sorting.
+    */
+  var dataSorting: js.UndefOr[DataSortingOptionsObject | PlotSupertrendDataSortingOptions] = js.undefined
   /**
     * (Highstock) A description of the series to add to the screen reader
     * information about the series.
@@ -216,12 +233,12 @@ trait PlotSupertrendOptions extends js.Object {
     * hooks can also be attached to the series at run time using the
     * `Highcharts.addEvent` function.
     */
-  var events: js.UndefOr[PlotSupertrendEventsOptions] = js.undefined
+  var events: js.UndefOr[SeriesEventsOptionsObject] = js.undefined
   /**
     * (Highstock) Color of the Supertrend series line that is above the main
     * series.
     */
-  var fallingTrendColor: js.UndefOr[ColorString] = js.undefined
+  var fallingTrendColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * (Highstock) Determines whether the series should look for the nearest
     * point in both dimensions or just the x-dimension when hovering the
@@ -286,15 +303,15 @@ trait PlotSupertrendOptions extends js.Object {
     * The series labels currently work with series types having a `graph` or an
     * `area`.
     */
-  var label: js.UndefOr[PlotSupertrendLabelOptions] = js.undefined
+  var label: js.UndefOr[SeriesLabelOptionsObject] = js.undefined
   /**
     * (Highstock) The line marks the last price from all points.
     */
-  var lastPrice: js.UndefOr[PlotSupertrendLastPriceOptions] = js.undefined
+  var lastPrice: js.UndefOr[SeriesLastPriceOptionsObject] = js.undefined
   /**
     * (Highstock) The line marks the last price from visible range of points.
     */
-  var lastVisiblePrice: js.UndefOr[PlotSupertrendLastVisiblePriceOptions] = js.undefined
+  var lastVisiblePrice: js.UndefOr[SeriesLastVisiblePriceOptionsObject] = js.undefined
   /**
     * (Highcharts, Highstock) Pixel width of the graph line.
     */
@@ -319,7 +336,7 @@ trait PlotSupertrendOptions extends js.Object {
     * In styled mode, the markers can be styled with the `.highcharts-point`,
     * `.highcharts-point-hover` and `.highcharts-point-select` class names.
     */
-  var marker: js.UndefOr[PlotSupertrendMarkerOptions] = js.undefined
+  var marker: js.UndefOr[PointMarkerOptionsObject] = js.undefined
   /**
     * (Highstock) The name of the series as shown in the legend, tooltip etc.
     * If not set, it will be based on a technical indicator type and default
@@ -339,7 +356,7 @@ trait PlotSupertrendOptions extends js.Object {
   /**
     * (Highstock) Properties for each single point.
     */
-  var point: js.UndefOr[PlotSupertrendPointOptions] = js.undefined
+  var point: js.UndefOr[PlotSeriesPointOptions] = js.undefined
   /**
     * (Highstock) Same as accessibility.pointDescriptionFormatter, but for an
     * individual series. Overrides the chart wide configuration.
@@ -349,7 +366,7 @@ trait PlotSupertrendOptions extends js.Object {
     * (Highstock) Color of the Supertrend series line that is beneath the main
     * series.
     */
-  var risingTrendColor: js.UndefOr[ColorString] = js.undefined
+  var risingTrendColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * (Highstock) Whether to select the series initially. If `showCheckbox` is
     * true, the checkbox next to the series name in the legend will be checked
@@ -390,7 +407,7 @@ trait PlotSupertrendOptions extends js.Object {
     * option. If `softThreshold` is `true`, the Y axis starts at 0.
     */
   var softThreshold: js.UndefOr[Boolean] = js.undefined
-  var states: js.UndefOr[PlotSupertrendStatesOptions] = js.undefined
+  var states: js.UndefOr[SeriesStatesOptionsObject] = js.undefined
   /**
     * (Highcharts, Highstock) Whether to apply steps to the line. Possible
     * values are `left`, `center` and `right`.
@@ -415,7 +432,7 @@ trait PlotSupertrendOptions extends js.Object {
     * single series. Properties are inherited from tooltip, but only the
     * following properties can be defined on a series level.
     */
-  var tooltip: js.UndefOr[PlotSupertrendTooltipOptions] = js.undefined
+  var tooltip: js.UndefOr[SeriesTooltipOptionsObject] = js.undefined
   /**
     * (Highcharts, Highstock, Gantt) When a series contains a data array that
     * is longer than this, only one dimensional arrays of numbers, or two
@@ -450,15 +467,15 @@ trait PlotSupertrendOptions extends js.Object {
     * `.highcharts-zone-{n}` class, or custom classed from the `className`
     * option (view live demo).
     */
-  var zones: js.UndefOr[js.Array[PlotSupertrendZonesOptions]] = js.undefined
+  var zones: js.UndefOr[js.Array[SeriesZonesOptionsObject]] = js.undefined
 }
 
 object PlotSupertrendOptions {
   @scala.inline
   def apply(
-    accessibility: js.Object | PlotSupertrendAccessibilityOptions = null,
+    accessibility: SeriesAccessibilityOptionsObject = null,
     allowPointSelect: js.UndefOr[Boolean] = js.undefined,
-    animation: Boolean | AnimationOptionsObject | PlotSupertrendAnimationOptions = null,
+    animation: Boolean | AnimationOptionsObject = null,
     animationLimit: Int | Double = null,
     boostBlending: OptionsBoostBlendingValue = null,
     boostThreshold: Int | Double = null,
@@ -467,6 +484,7 @@ object PlotSupertrendOptions {
     changeTrendLine: PlotSupertrendChangeTrendLineOptions = null,
     className: String = null,
     clip: js.UndefOr[Boolean] = js.undefined,
+    color: ColorString | GradientColorObject | PatternObject = null,
     colorIndex: Int | Double = null,
     colorKey: String = null,
     compare: String = null,
@@ -475,48 +493,49 @@ object PlotSupertrendOptions {
     compareToMain: js.UndefOr[Boolean] = js.undefined,
     connectEnds: js.UndefOr[Boolean] = js.undefined,
     connectNulls: js.UndefOr[Boolean] = js.undefined,
-    connectors: PlotSupertrendConnectorsOptions = null,
+    connectors: SeriesConnectorsOptionsObject = null,
     cursor: String | CursorValue = null,
     dashStyle: DashStyleValue = null,
-    dataGrouping: PlotSupertrendDataGroupingOptions = null,
+    dataGrouping: DataGroupingOptionsObject = null,
     dataLabels: DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject] = null,
+    dataSorting: DataSortingOptionsObject | PlotSupertrendDataSortingOptions = null,
     description: String = null,
     enableMouseTracking: js.UndefOr[Boolean] = js.undefined,
-    events: PlotSupertrendEventsOptions = null,
-    fallingTrendColor: ColorString = null,
+    events: SeriesEventsOptionsObject = null,
+    fallingTrendColor: ColorString | GradientColorObject | PatternObject = null,
     findNearestPointBy: OptionsFindNearestPointByValue = null,
     gapSize: Int | Double = null,
     gapUnit: OptionsGapUnitValue = null,
     getExtremesFromAll: js.UndefOr[Boolean] = js.undefined,
     includeInDataExport: js.UndefOr[Boolean] = js.undefined,
-    label: PlotSupertrendLabelOptions = null,
-    lastPrice: PlotSupertrendLastPriceOptions = null,
-    lastVisiblePrice: PlotSupertrendLastVisiblePriceOptions = null,
+    label: SeriesLabelOptionsObject = null,
+    lastPrice: SeriesLastPriceOptionsObject = null,
+    lastVisiblePrice: SeriesLastVisiblePriceOptionsObject = null,
     lineWidth: Int | Double = null,
     linecap: SeriesLinecapValue = null,
     linkedTo: String = null,
-    marker: PlotSupertrendMarkerOptions = null,
+    marker: PointMarkerOptionsObject = null,
     name: String = null,
     opacity: Int | Double = null,
     params: PlotSupertrendParamsOptions = null,
-    point: PlotSupertrendPointOptions = null,
+    point: PlotSeriesPointOptions = null,
     pointDescriptionFormatter: js.Function = null,
-    risingTrendColor: ColorString = null,
+    risingTrendColor: ColorString | GradientColorObject | PatternObject = null,
     selected: js.UndefOr[Boolean] = js.undefined,
     shadow: Boolean | ShadowOptionsObject = null,
     showCheckbox: js.UndefOr[Boolean] = js.undefined,
     showInLegend: js.UndefOr[Boolean] = js.undefined,
     skipKeyboardNavigation: js.UndefOr[Boolean] = js.undefined,
     softThreshold: js.UndefOr[Boolean] = js.undefined,
-    states: PlotSupertrendStatesOptions = null,
+    states: SeriesStatesOptionsObject = null,
     step: OptionsStepValue = null,
     stickyTracking: js.UndefOr[Boolean] = js.undefined,
-    tooltip: PlotSupertrendTooltipOptions = null,
+    tooltip: SeriesTooltipOptionsObject = null,
     turboThreshold: Int | Double = null,
     visible: js.UndefOr[Boolean] = js.undefined,
     zIndex: Int | Double = null,
     zoneAxis: String = null,
-    zones: js.Array[PlotSupertrendZonesOptions] = null
+    zones: js.Array[SeriesZonesOptionsObject] = null
   ): PlotSupertrendOptions = {
     val __obj = js.Dynamic.literal()
     if (accessibility != null) __obj.updateDynamic("accessibility")(accessibility.asInstanceOf[js.Any])
@@ -530,6 +549,7 @@ object PlotSupertrendOptions {
     if (changeTrendLine != null) __obj.updateDynamic("changeTrendLine")(changeTrendLine.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (!js.isUndefined(clip)) __obj.updateDynamic("clip")(clip.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (colorIndex != null) __obj.updateDynamic("colorIndex")(colorIndex.asInstanceOf[js.Any])
     if (colorKey != null) __obj.updateDynamic("colorKey")(colorKey.asInstanceOf[js.Any])
     if (compare != null) __obj.updateDynamic("compare")(compare.asInstanceOf[js.Any])
@@ -543,6 +563,7 @@ object PlotSupertrendOptions {
     if (dashStyle != null) __obj.updateDynamic("dashStyle")(dashStyle.asInstanceOf[js.Any])
     if (dataGrouping != null) __obj.updateDynamic("dataGrouping")(dataGrouping.asInstanceOf[js.Any])
     if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
+    if (dataSorting != null) __obj.updateDynamic("dataSorting")(dataSorting.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (!js.isUndefined(enableMouseTracking)) __obj.updateDynamic("enableMouseTracking")(enableMouseTracking.asInstanceOf[js.Any])
     if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])

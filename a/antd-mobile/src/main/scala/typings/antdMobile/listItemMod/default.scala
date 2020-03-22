@@ -1,7 +1,7 @@
 package typings.antdMobile.listItemMod
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.std.Partial
+import typings.antdMobile.PartialListItemProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,6 +17,6 @@ class default protected () extends ListItem {
 @js.native
 object default extends js.Object {
   var Brief: Instantiable0[typings.antdMobile.listItemMod.Brief] = js.native
-  var defaultProps: Partial[ListItemProps] = js.native
+  var defaultProps: PartialListItemProps = js.native
 }
 

@@ -1,6 +1,6 @@
 package typings.pusherJs.mod
 
-import typings.pusherJs.AnonAuthInfo
+import typings.pusherJs.AnonAuthorize
 import typings.pusherJs.pusherJsStrings.ajax
 import typings.pusherJs.pusherJsStrings.jsonp
 import scala.scalajs.js
@@ -89,7 +89,7 @@ object Config {
     auth: AuthConfig = null,
     authEndpoint: String = null,
     authTransport: ajax | jsonp = null,
-    authorizer: (/* channel */ Channel, /* options */ Config) => AnonAuthInfo = null,
+    authorizer: (/* channel */ Channel, /* options */ Config) => AnonAuthorize = null,
     cluster: String = null,
     disableStats: js.UndefOr[Boolean] = js.undefined,
     disabledTransports: js.Array[Transport] = null,

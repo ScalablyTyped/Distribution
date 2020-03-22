@@ -1,6 +1,6 @@
 package typings.jupyterlabServices
 
-import typings.jupyterlabServices.kernelKernelMod.Kernel.Status
+import typings.jupyterlabServices.messagesMod.Status
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

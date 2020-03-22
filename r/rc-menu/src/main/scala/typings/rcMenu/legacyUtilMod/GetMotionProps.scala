@@ -1,15 +1,15 @@
 package typings.rcMenu.legacyUtilMod
 
-import typings.rcMenu.interfaceMod.AnimationType
-import typings.rcMenu.interfaceMod.MotionType
-import typings.rcMenu.interfaceMod.TransitionNameType
+import typings.rcMenu.interfaceMod.OpenAnimation
+import typings.rcTrigger.interfaceMod.MotionType
+import typings.rcTrigger.interfaceMod.TransitionNameType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GetMotionProps extends js.Object {
   var motion: js.UndefOr[MotionType] = js.undefined
-  var openAnimation: js.UndefOr[AnimationType] = js.undefined
+  var openAnimation: js.UndefOr[OpenAnimation] = js.undefined
   var openTransitionName: js.UndefOr[TransitionNameType] = js.undefined
   var prefixCls: js.UndefOr[String] = js.undefined
 }
@@ -18,7 +18,7 @@ object GetMotionProps {
   @scala.inline
   def apply(
     motion: MotionType = null,
-    openAnimation: AnimationType = null,
+    openAnimation: OpenAnimation = null,
     openTransitionName: TransitionNameType = null,
     prefixCls: String = null
   ): GetMotionProps = {

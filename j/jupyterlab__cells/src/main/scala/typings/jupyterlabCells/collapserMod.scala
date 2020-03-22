@@ -19,7 +19,7 @@ object collapserMod extends js.Object {
     /**
       * Is the input/output of the parent collapsed.
       */
-    val collapsed: Boolean = js.native
+    def collapsed(): Boolean = js.native
     /**
       * Handle the click event.
       */

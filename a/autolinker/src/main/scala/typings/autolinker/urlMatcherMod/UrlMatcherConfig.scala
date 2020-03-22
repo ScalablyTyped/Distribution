@@ -1,16 +1,15 @@
 package typings.autolinker.urlMatcherMod
 
+import typings.autolinker.RequiredStripPrefixConfig
 import typings.autolinker.anchorTagBuilderMod.AnchorTagBuilder
-import typings.autolinker.autolinkerMod.StripPrefixConfigObj
 import typings.autolinker.matcherMatcherMod.MatcherConfig
-import typings.std.Required
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait UrlMatcherConfig extends MatcherConfig {
   var decodePercentEncoding: Boolean
-  var stripPrefix: Required[StripPrefixConfigObj]
+  var stripPrefix: RequiredStripPrefixConfig
   var stripTrailingSlash: Boolean
 }
 
@@ -18,7 +17,7 @@ object UrlMatcherConfig {
   @scala.inline
   def apply(
     decodePercentEncoding: Boolean,
-    stripPrefix: Required[StripPrefixConfigObj],
+    stripPrefix: RequiredStripPrefixConfig,
     stripTrailingSlash: Boolean,
     tagBuilder: AnchorTagBuilder
   ): UrlMatcherConfig = {

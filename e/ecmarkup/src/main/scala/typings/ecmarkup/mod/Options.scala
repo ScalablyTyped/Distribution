@@ -17,6 +17,7 @@ trait Options extends js.Object {
   var copyright: js.UndefOr[Boolean] = js.undefined
   var cssOut: js.UndefOr[String] = js.undefined
   var date: js.UndefOr[Date] = js.undefined
+  var ecma262Biblio: js.UndefOr[Boolean] = js.undefined
   var jsOut: js.UndefOr[String] = js.undefined
   var location: js.UndefOr[String] = js.undefined
   var oldToc: js.UndefOr[Boolean] = js.undefined
@@ -39,6 +40,7 @@ object Options {
     copyright: js.UndefOr[Boolean] = js.undefined,
     cssOut: String = null,
     date: Date = null,
+    ecma262Biblio: js.UndefOr[Boolean] = js.undefined,
     jsOut: String = null,
     location: String = null,
     oldToc: js.UndefOr[Boolean] = js.undefined,
@@ -58,6 +60,7 @@ object Options {
     if (!js.isUndefined(copyright)) __obj.updateDynamic("copyright")(copyright.asInstanceOf[js.Any])
     if (cssOut != null) __obj.updateDynamic("cssOut")(cssOut.asInstanceOf[js.Any])
     if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
+    if (!js.isUndefined(ecma262Biblio)) __obj.updateDynamic("ecma262Biblio")(ecma262Biblio.asInstanceOf[js.Any])
     if (jsOut != null) __obj.updateDynamic("jsOut")(jsOut.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (!js.isUndefined(oldToc)) __obj.updateDynamic("oldToc")(oldToc.asInstanceOf[js.Any])

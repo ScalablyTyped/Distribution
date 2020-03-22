@@ -1,9 +1,9 @@
 package typings.googleapis.v14Mod.adexchangebuyerV14
 
-import typings.googleapis.AnonAdvertiserAppIcon
+import typings.googleapis.AnonAppIcon
 import typings.googleapis.AnonContexts
-import typings.googleapis.AnonContextsDisapprovalReasons
 import typings.googleapis.AnonDate
+import typings.googleapis.AnonDisapprovalReasons
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -117,7 +117,7 @@ trait SchemaCreative extends js.Object {
     * If nativeAd is set, HTMLSnippet, videoVastXML, and the videoURL outside
     * of nativeAd should not be set. (The videoURL inside nativeAd can be set.)
     */
-  var nativeAd: js.UndefOr[AnonAdvertiserAppIcon] = js.native
+  var nativeAd: js.UndefOr[AnonAppIcon] = js.native
   /**
     * Top-level open auction status. Read-only. This field should not be set in
     * requests. If disapproved, an entry for auctionType=OPEN_AUCTION (or ALL)
@@ -151,7 +151,7 @@ trait SchemaCreative extends js.Object {
     * Read-only. This field should not be set in requests. See the examples in
     * the Creatives guide for more details.
     */
-  var servingRestrictions: js.UndefOr[js.Array[AnonContextsDisapprovalReasons]] = js.native
+  var servingRestrictions: js.UndefOr[js.Array[AnonDisapprovalReasons]] = js.native
   /**
     * List of vendor types for the ads that may be shown from this snippet.
     * Each vendor type is represented by an integer as defined in vendors.txt.
@@ -202,12 +202,12 @@ object SchemaCreative {
     impressionTrackingUrl: js.Array[String] = null,
     kind: String = null,
     languages: js.Array[String] = null,
-    nativeAd: AnonAdvertiserAppIcon = null,
+    nativeAd: AnonAppIcon = null,
     openAuctionStatus: String = null,
     productCategories: js.Array[Double] = null,
     restrictedCategories: js.Array[Double] = null,
     sensitiveCategories: js.Array[Double] = null,
-    servingRestrictions: js.Array[AnonContextsDisapprovalReasons] = null,
+    servingRestrictions: js.Array[AnonDisapprovalReasons] = null,
     vendorType: js.Array[Double] = null,
     version: Int | Double = null,
     videoURL: String = null,

@@ -7,7 +7,17 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/core", "\u0275\u0275attributeInterpolate2")
 @js.native
 object ɵɵattributeInterpolate2 extends js.Object {
-  def apply(attrName: String, prefix: String, v0: js.Any, i0: String, v1: js.Any, suffix: String): TsickleIssue1009 = js.native
+  def apply(attrName: String, prefix: String, v0: js.Any, i0: String, v1: js.Any, suffix: String): js.Function8[
+    /* attrName */ String, 
+    /* prefix */ String, 
+    /* v0 */ js.Any, 
+    /* i0 */ String, 
+    /* v1 */ js.Any, 
+    /* suffix */ String, 
+    /* sanitizer */ js.UndefOr[SanitizerFn], 
+    /* namespace */ js.UndefOr[String], 
+    /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate2 */ js.Any
+  ] = js.native
   def apply(
     attrName: String,
     prefix: String,
@@ -16,7 +26,17 @@ object ɵɵattributeInterpolate2 extends js.Object {
     v1: js.Any,
     suffix: String,
     sanitizer: SanitizerFn
-  ): TsickleIssue1009 = js.native
+  ): js.Function8[
+    /* attrName */ String, 
+    /* prefix */ String, 
+    /* v0 */ js.Any, 
+    /* i0 */ String, 
+    /* v1 */ js.Any, 
+    /* suffix */ String, 
+    /* sanitizer */ js.UndefOr[SanitizerFn], 
+    /* namespace */ js.UndefOr[String], 
+    /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate2 */ js.Any
+  ] = js.native
   def apply(
     attrName: String,
     prefix: String,
@@ -26,6 +46,16 @@ object ɵɵattributeInterpolate2 extends js.Object {
     suffix: String,
     sanitizer: SanitizerFn,
     namespace: String
-  ): TsickleIssue1009 = js.native
+  ): js.Function8[
+    /* attrName */ String, 
+    /* prefix */ String, 
+    /* v0 */ js.Any, 
+    /* i0 */ String, 
+    /* v1 */ js.Any, 
+    /* suffix */ String, 
+    /* sanitizer */ js.UndefOr[SanitizerFn], 
+    /* namespace */ js.UndefOr[String], 
+    /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate2 */ js.Any
+  ] = js.native
 }
 

@@ -10,6 +10,9 @@ object graphqlToolsStrings {
   sealed trait CHILDREN extends js.Object
   
   @js.native
+  sealed trait Document extends js.Object
+  
+  @js.native
   sealed trait Mutation extends js.Object
   
   @js.native
@@ -41,6 +44,8 @@ object graphqlToolsStrings {
   
   @scala.inline
   def CHILDREN: CHILDREN = "CHILDREN".asInstanceOf[CHILDREN]
+  @scala.inline
+  def Document: Document = "Document".asInstanceOf[Document]
   @scala.inline
   def Mutation: Mutation = "Mutation".asInstanceOf[Mutation]
   @scala.inline

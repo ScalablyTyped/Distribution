@@ -14,10 +14,10 @@ trait ResponseMessage extends Message {
     */
   var id: Double | String | Null
   /**
-    * The result of a request. This can be omitted in
-    * the case of an error.
+    * The result of a request. This member is REQUIRED on success.
+    * This member MUST NOT exist if there was an error invoking the method.
     */
-  var result: js.UndefOr[js.Any] = js.undefined
+  var result: js.UndefOr[String | Double | Boolean | js.Object | Null] = js.undefined
 }
 
 object ResponseMessage {
@@ -26,7 +26,7 @@ object ResponseMessage {
     jsonrpc: String,
     error: ResponseErrorLiteral[_] = null,
     id: Double | String = null,
-    result: js.Any = null
+    result: String | Double | Boolean | js.Object = null
   ): ResponseMessage = {
     val __obj = js.Dynamic.literal(jsonrpc = jsonrpc.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])

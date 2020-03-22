@@ -13,8 +13,8 @@ trait CanvasCameraOptions extends js.Object {
     * String, optional, default: file, file to use files for rendering (lower CPU / higher storage) or data to use base64 jpg data for rendering (higher cpu / lower storage).
     */
   var cameraFacing: js.UndefOr[front | back] = js.undefined
-  var canvas: js.UndefOr[AnonHeightWidth] = js.undefined
-  var capture: js.UndefOr[AnonHeightWidth] = js.undefined
+  var canvas: js.UndefOr[AnonWidth] = js.undefined
+  var capture: js.UndefOr[AnonWidth] = js.undefined
   /**
     * Boolean, optional, default: false, a boolean to set flash mode on/off.
     */
@@ -55,8 +55,8 @@ object CanvasCameraOptions {
   @scala.inline
   def apply(
     cameraFacing: front | back = null,
-    canvas: AnonHeightWidth = null,
-    capture: AnonHeightWidth = null,
+    canvas: AnonWidth = null,
+    capture: AnonWidth = null,
     flashMode: js.UndefOr[Boolean] = js.undefined,
     fps: Int | Double = null,
     height: Int | Double = null,

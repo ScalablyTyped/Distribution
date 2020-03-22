@@ -12,12 +12,11 @@ package object encodeMod {
   type BooleanValueRef = typings.vegaTypings.encodeMod.ScaledValueRef[scala.Boolean]
   /* Rewritten from type alias, can be one of: 
     - typings.vegaTypings.encodeMod.ScaledValueRef[typings.vegaTypings.colorMod.Color]
-    - typings.vegaTypings.AnonValueLinearGradient
+    - typings.vegaTypings.Anon0
     - typings.vegaTypings.AnonCount
     - typings.vegaTypings.AnonColor
   */
   type ColorValueRef = typings.vegaTypings.encodeMod._ColorValueRef | typings.vegaTypings.encodeMod.ScaledValueRef[typings.vegaTypings.colorMod.Color]
-  type Encode[T] = typings.std.Partial[typings.std.Record[typings.vegaTypings.encodeMod.EncodeEntryName, T]]
   /* Rewritten from type alias, can be one of: 
     - java.lang.String
     - typings.vegaTypings.signalMod.SignalRef

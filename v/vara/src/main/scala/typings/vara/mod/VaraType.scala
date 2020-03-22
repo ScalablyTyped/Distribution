@@ -5,7 +5,7 @@ import typings.std.SVGElement
 import typings.std.SVGGElement
 import typings.vara.AnonBreakPoints
 import typings.vara.AnonXY
-import typings.vara.AnonXYBoolean
+import typings.vara.AnonY
 import typings.vara.varaBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -59,7 +59,7 @@ trait VaraType extends js.Object {
     * @param onReady callback
     */
   def ready(onReady: js.Function0[Unit]): Unit = js.native
-  def setPosition(element: SVGGElement, obj: AnonXY): Unit = js.native
-  def setPosition(element: SVGGElement, obj: AnonXY, relative: AnonXYBoolean): Unit = js.native
+  def setPosition(element: SVGGElement, obj: AnonY): Unit = js.native
+  def setPosition(element: SVGGElement, obj: AnonY, relative: AnonXY): Unit = js.native
 }
 

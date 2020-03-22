@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
   - typings.expoFileSystem.AnonExists
-  - typings.expoFileSystem.AnonExistsFalse
+  - typings.expoFileSystem.AnonIsDirectory
 */
 trait FileInfo extends js.Object
 
@@ -27,7 +27,7 @@ object FileInfo {
     __obj.asInstanceOf[FileInfo]
   }
   @scala.inline
-  def AnonExistsFalse(
+  def AnonIsDirectory(
     exists: `false`,
     isDirectory: `false`,
     uri: String,

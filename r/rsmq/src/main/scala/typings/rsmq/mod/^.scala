@@ -48,9 +48,9 @@ class ^ protected () extends RedisSMQ {
   /* CompleteClass */
   override def receiveMessageAsync(opts: ReceiveMessageOptions): js.Promise[QueueMessage | js.Object] = js.native
   /* CompleteClass */
-  override def sendMessage(opts: SendMessageOptions, cb: Callback[Double]): Unit = js.native
+  override def sendMessage(opts: SendMessageOptions, cb: Callback[String]): Unit = js.native
   /* CompleteClass */
-  override def sendMessageAsync(opts: SendMessageOptions): js.Promise[Double] = js.native
+  override def sendMessageAsync(opts: SendMessageOptions): js.Promise[String] = js.native
   /* CompleteClass */
   override def setQueueAttributes(opts: SetQueueAttributesOptions, cb: Callback[QueueAttributes]): Unit = js.native
   /* CompleteClass */

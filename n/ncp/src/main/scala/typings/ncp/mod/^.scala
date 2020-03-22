@@ -1,8 +1,8 @@
 package typings.ncp.mod
 
-import typings.ncp.AnonErrs
-import typings.ncp.AnonErrsPathLike
-import typings.ncp.AnonStopOnErr
+import typings.ncp.OptionserrsPathLike
+import typings.ncp.Optionserrsundefined
+import typings.ncp.OptionsstopOnErrtrue
 import typings.node.fsMod.WriteStream
 import typings.std.Error
 import scala.scalajs.js
@@ -21,8 +21,26 @@ object ^ extends js.Object {
   def apply(
     source: String,
     destination: String,
-    options: (Options with AnonStopOnErr with AnonErrs with AnonErrsPathLike) | Options,
-    callback: js.Function1[js.Array[Error] | Error | Null | WriteStream, Unit]
+    options: OptionserrsPathLike,
+    callback: js.Function1[/* err */ WriteStream | Null, Unit]
+  ): Unit = js.native
+  def apply(
+    source: String,
+    destination: String,
+    options: Optionserrsundefined,
+    callback: js.Function1[/* err */ js.Array[Error] | Null, Unit]
+  ): Unit = js.native
+  def apply(
+    source: String,
+    destination: String,
+    options: OptionsstopOnErrtrue,
+    callback: js.Function1[/* err */ Error | Null, Unit]
+  ): Unit = js.native
+  def apply(
+    source: String,
+    destination: String,
+    options: Options,
+    callback: js.Function1[/* err */ Error | js.Array[Error] | WriteStream | Null, Unit]
   ): Unit = js.native
   /**
   	 * **NOTE:** This function provides design-time support for util.promisify.

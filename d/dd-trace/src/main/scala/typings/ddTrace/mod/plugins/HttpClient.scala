@@ -1,6 +1,7 @@
 package typings.ddTrace.mod.plugins
 
-import typings.ddTrace.AnonReqRequest
+import org.scalablytyped.runtime.StringDictionary
+import typings.ddTrace.Anon0
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,7 +12,7 @@ trait HttpClient extends Http_ {
   /**
     * Hooks to run before spans are finished.
     */
-  var hooks: js.UndefOr[AnonReqRequest] = js.undefined
+  var hooks: js.UndefOr[Anon0] = js.undefined
   /**
     * Use the remote endpoint host as the service name instead of the default.
     *
@@ -23,11 +24,11 @@ trait HttpClient extends Http_ {
 object HttpClient {
   @scala.inline
   def apply(
-    analytics: Boolean | Double = null,
+    analytics: Boolean | Double | (StringDictionary[Boolean | Double]) = null,
     blacklist: String | RegExp | (js.Function1[/* url */ String, Boolean]) | (js.Array[String | RegExp | (js.Function1[/* url */ String, Boolean])]) = null,
     enabled: js.UndefOr[Boolean] = js.undefined,
     headers: js.Array[String] = null,
-    hooks: AnonReqRequest = null,
+    hooks: Anon0 = null,
     service: String = null,
     splitByDomain: js.UndefOr[Boolean] = js.undefined,
     validateStatus: /* code */ Double => Boolean = null,

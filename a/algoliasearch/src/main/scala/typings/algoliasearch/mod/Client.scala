@@ -1,8 +1,8 @@
 package typings.algoliasearch.mod
 
 import typings.algoliasearch.AnonIndexName
-import typings.algoliasearch.AnonIndexNameParams
 import typings.algoliasearch.AnonLogs
+import typings.algoliasearch.AnonParams
 import typings.algoliasearch.algoliasearchStrings.rules
 import typings.algoliasearch.algoliasearchStrings.settings
 import typings.algoliasearch.algoliasearchStrings.synonyms
@@ -153,7 +153,7 @@ trait Client extends js.Object {
   /**
     * Query for facet values of a specific facet
     */
-  def searchForFacetValues(queries: js.Array[AnonIndexNameParams]): js.Promise[js.Array[typings.algoliasearch.mod.SearchForFacetValues.Response]] = js.native
+  def searchForFacetValues(queries: js.Array[AnonParams]): js.Promise[js.Array[typings.algoliasearch.mod.SearchForFacetValues.Response]] = js.native
   /**
     * Add a header to be sent with all upcoming requests
     */

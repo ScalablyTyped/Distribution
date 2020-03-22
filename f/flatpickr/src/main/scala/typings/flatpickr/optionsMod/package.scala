@@ -14,7 +14,6 @@ package object optionsMod {
     /* data */ js.UndefOr[js.Any], 
     scala.Unit
   ]
-  type Options = typings.std.Partial[typings.flatpickr.optionsMod.BaseOptions]
   type Plugin[E] = js.Function1[
     /* fp */ typings.flatpickr.instanceMod.Instance with E, 
     typings.flatpickr.optionsMod.Options

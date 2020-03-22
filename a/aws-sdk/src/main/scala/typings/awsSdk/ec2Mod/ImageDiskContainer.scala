@@ -21,7 +21,7 @@ trait ImageDiskContainer extends js.Object {
   /**
     * The ID of the EBS snapshot to be used for importing the snapshot.
     */
-  var SnapshotId: js.UndefOr[String] = js.native
+  var SnapshotId: js.UndefOr[typings.awsSdk.ec2Mod.SnapshotId] = js.native
   /**
     * The URL to the Amazon S3-based disk image being imported. The URL can either be a https URL (https://..) or an Amazon S3 URL (s3://..)
     */
@@ -38,7 +38,7 @@ object ImageDiskContainer {
     Description: String = null,
     DeviceName: String = null,
     Format: String = null,
-    SnapshotId: String = null,
+    SnapshotId: SnapshotId = null,
     Url: String = null,
     UserBucket: UserBucket = null
   ): ImageDiskContainer = {

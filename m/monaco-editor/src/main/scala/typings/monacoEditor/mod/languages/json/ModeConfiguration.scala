@@ -38,6 +38,10 @@ trait ModeConfiguration extends js.Object {
     */
   val hovers: js.UndefOr[Boolean] = js.undefined
   /**
+    * Defines whether the built-in selection range provider is enabled.
+    */
+  val selectionRanges: js.UndefOr[Boolean] = js.undefined
+  /**
     * Defines whether the built-in tokens provider is enabled.
     */
   val tokens: js.UndefOr[Boolean] = js.undefined
@@ -54,6 +58,7 @@ object ModeConfiguration {
     documentSymbols: js.UndefOr[Boolean] = js.undefined,
     foldingRanges: js.UndefOr[Boolean] = js.undefined,
     hovers: js.UndefOr[Boolean] = js.undefined,
+    selectionRanges: js.UndefOr[Boolean] = js.undefined,
     tokens: js.UndefOr[Boolean] = js.undefined
   ): ModeConfiguration = {
     val __obj = js.Dynamic.literal()
@@ -65,6 +70,7 @@ object ModeConfiguration {
     if (!js.isUndefined(documentSymbols)) __obj.updateDynamic("documentSymbols")(documentSymbols.asInstanceOf[js.Any])
     if (!js.isUndefined(foldingRanges)) __obj.updateDynamic("foldingRanges")(foldingRanges.asInstanceOf[js.Any])
     if (!js.isUndefined(hovers)) __obj.updateDynamic("hovers")(hovers.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectionRanges)) __obj.updateDynamic("selectionRanges")(selectionRanges.asInstanceOf[js.Any])
     if (!js.isUndefined(tokens)) __obj.updateDynamic("tokens")(tokens.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModeConfiguration]
   }

@@ -1,16 +1,16 @@
 package typings.analyticsNode.mod.AnalyticsNode
 
-import typings.analyticsNode.AnonKey
-import typings.analyticsNode.AnonKeyNodeVersion
+import typings.analyticsNode.AnonDictkey
+import typings.analyticsNode.AnonNodeVersion
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Message extends js.Object {
-  var _metadata: AnonKeyNodeVersion
+  var _metadata: AnonNodeVersion
   var anonymousId: js.UndefOr[String | Double] = js.undefined
-  var context: AnonKey
+  var context: AnonDictkey
   var messageId: js.UndefOr[String] = js.undefined
   var timestamp: js.UndefOr[Date] = js.undefined
   var `type`: String
@@ -20,8 +20,8 @@ trait Message extends js.Object {
 object Message {
   @scala.inline
   def apply(
-    _metadata: AnonKeyNodeVersion,
-    context: AnonKey,
+    _metadata: AnonNodeVersion,
+    context: AnonDictkey,
     `type`: String,
     anonymousId: String | Double = null,
     messageId: String = null,

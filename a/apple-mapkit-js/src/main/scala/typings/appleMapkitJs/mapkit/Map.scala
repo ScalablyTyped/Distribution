@@ -2,12 +2,12 @@ package typings.appleMapkitJs.mapkit
 
 import typings.appleMapkitJs.AnonAdaptive
 import typings.appleMapkitJs.AnonAnnotation
-import typings.appleMapkitJs.AnonAnnotation56480231
-import typings.appleMapkitJs.AnonAnnotationCoordinate
+import typings.appleMapkitJs.AnonAnnotationAnnotation
 import typings.appleMapkitJs.AnonCode
 import typings.appleMapkitJs.AnonCoordinate
 import typings.appleMapkitJs.AnonDark
 import typings.appleMapkitJs.AnonHybrid
+import typings.appleMapkitJs.AnonTimestamp
 import typings.appleMapkitJs.appleMapkitJsStrings.`double-tap`
 import typings.appleMapkitJs.appleMapkitJsStrings.`drag-end`
 import typings.appleMapkitJs.appleMapkitJsStrings.`drag-start`
@@ -208,34 +208,34 @@ class Map protected () extends js.Object {
   @JSName("addEventListener")
   def addEventListener_dragend[T](
     `type`: `drag-end`,
-    listener: js.ThisFunction1[/* this */ T, /* event */ EventBase[this.type] with AnonAnnotation56480231, Unit]
+    listener: js.ThisFunction1[/* this */ T, /* event */ EventBase[this.type] with AnonAnnotationAnnotation, Unit]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_dragend[T](
     `type`: `drag-end`,
-    listener: js.ThisFunction1[/* this */ T, /* event */ EventBase[this.type] with AnonAnnotation56480231, Unit],
+    listener: js.ThisFunction1[/* this */ T, /* event */ EventBase[this.type] with AnonAnnotationAnnotation, Unit],
     thisObject: T
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_dragging[T](
     `type`: dragging,
-    listener: js.ThisFunction1[/* this */ T, /* event */ EventBase[this.type] with AnonAnnotationCoordinate, Unit]
+    listener: js.ThisFunction1[/* this */ T, /* event */ EventBase[this.type] with AnonCoordinate, Unit]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_dragging[T](
     `type`: dragging,
-    listener: js.ThisFunction1[/* this */ T, /* event */ EventBase[this.type] with AnonAnnotationCoordinate, Unit],
+    listener: js.ThisFunction1[/* this */ T, /* event */ EventBase[this.type] with AnonCoordinate, Unit],
     thisObject: T
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_dragstart[T](
     `type`: `drag-start`,
-    listener: js.ThisFunction1[/* this */ T, /* event */ EventBase[this.type] with AnonAnnotation56480231, Unit]
+    listener: js.ThisFunction1[/* this */ T, /* event */ EventBase[this.type] with AnonAnnotationAnnotation, Unit]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_dragstart[T](
     `type`: `drag-start`,
-    listener: js.ThisFunction1[/* this */ T, /* event */ EventBase[this.type] with AnonAnnotation56480231, Unit],
+    listener: js.ThisFunction1[/* this */ T, /* event */ EventBase[this.type] with AnonAnnotationAnnotation, Unit],
     thisObject: T
   ): Unit = js.native
   @JSName("addEventListener")
@@ -339,12 +339,12 @@ class Map protected () extends js.Object {
   @JSName("addEventListener")
   def addEventListener_userlocationchange[T](
     `type`: `user-location-change`,
-    listener: js.ThisFunction1[/* this */ T, /* event */ EventBase[this.type] with AnonCoordinate, Unit]
+    listener: js.ThisFunction1[/* this */ T, /* event */ EventBase[this.type] with AnonTimestamp, Unit]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_userlocationchange[T](
     `type`: `user-location-change`,
-    listener: js.ThisFunction1[/* this */ T, /* event */ EventBase[this.type] with AnonCoordinate, Unit],
+    listener: js.ThisFunction1[/* this */ T, /* event */ EventBase[this.type] with AnonTimestamp, Unit],
     thisObject: T
   ): Unit = js.native
   @JSName("addEventListener")
@@ -454,34 +454,34 @@ class Map protected () extends js.Object {
   @JSName("removeEventListener")
   def removeEventListener_dragend[T](
     `type`: `drag-end`,
-    listener: js.Function2[/* type */ T, /* event */ EventBase[this.type] with AnonAnnotation56480231, Unit]
+    listener: js.Function2[/* type */ T, /* event */ EventBase[this.type] with AnonAnnotationAnnotation, Unit]
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_dragend[T](
     `type`: `drag-end`,
-    listener: js.Function2[/* type */ T, /* event */ EventBase[this.type] with AnonAnnotation56480231, Unit],
+    listener: js.Function2[/* type */ T, /* event */ EventBase[this.type] with AnonAnnotationAnnotation, Unit],
     thisObject: T
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_dragging[T](
     `type`: dragging,
-    listener: js.Function2[/* type */ T, /* event */ EventBase[this.type] with AnonAnnotationCoordinate, Unit]
+    listener: js.Function2[/* type */ T, /* event */ EventBase[this.type] with AnonCoordinate, Unit]
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_dragging[T](
     `type`: dragging,
-    listener: js.Function2[/* type */ T, /* event */ EventBase[this.type] with AnonAnnotationCoordinate, Unit],
+    listener: js.Function2[/* type */ T, /* event */ EventBase[this.type] with AnonCoordinate, Unit],
     thisObject: T
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_dragstart[T](
     `type`: `drag-start`,
-    listener: js.Function2[/* type */ T, /* event */ EventBase[this.type] with AnonAnnotation56480231, Unit]
+    listener: js.Function2[/* type */ T, /* event */ EventBase[this.type] with AnonAnnotationAnnotation, Unit]
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_dragstart[T](
     `type`: `drag-start`,
-    listener: js.Function2[/* type */ T, /* event */ EventBase[this.type] with AnonAnnotation56480231, Unit],
+    listener: js.Function2[/* type */ T, /* event */ EventBase[this.type] with AnonAnnotationAnnotation, Unit],
     thisObject: T
   ): Unit = js.native
   @JSName("removeEventListener")
@@ -569,12 +569,12 @@ class Map protected () extends js.Object {
   @JSName("removeEventListener")
   def removeEventListener_userlocationchange[T](
     `type`: `user-location-change`,
-    listener: js.Function2[/* type */ T, /* event */ EventBase[this.type] with AnonCoordinate, Unit]
+    listener: js.Function2[/* type */ T, /* event */ EventBase[this.type] with AnonTimestamp, Unit]
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_userlocationchange[T](
     `type`: `user-location-change`,
-    listener: js.Function2[/* type */ T, /* event */ EventBase[this.type] with AnonCoordinate, Unit],
+    listener: js.Function2[/* type */ T, /* event */ EventBase[this.type] with AnonTimestamp, Unit],
     thisObject: T
   ): Unit = js.native
   @JSName("removeEventListener")

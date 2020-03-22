@@ -28,21 +28,21 @@ object enumerableMod extends js.Object {
       * enumeration. This corresponds with the `every()` method in JavaScript 1.6.
       */
     @JSName("every")
-    var every_Original: FnArrayCallbackfnIndexThisArg[T] = js.native
+    var every_Original: Fn1[T] = js.native
     /**
       * Returns an array with all of the items in the enumeration that the passed
       * function returns true for. This method corresponds to `filter()` defined in
       * JavaScript 1.6.
       */
     @JSName("filter")
-    var filter_Original: FnArrayCallbackfnIndex[T] = js.native
+    var filter_Original: Fn0[T] = js.native
     /**
       * Returns the first item in the array for which the callback returns true.
       * This method works similar to the `filter()` method defined in JavaScript 1.6
       * except that it will stop working on the array once a match is found.
       */
     @JSName("find")
-    var find_Original: FnIndex[T] = js.native
+    var find_Original: FnCallPredicateThisArg[T] = js.native
     /**
       * Helper method returns the first object from a collection. This is usually
       * used by bindings and other parts of the framework to extract a single
@@ -55,7 +55,7 @@ object enumerableMod extends js.Object {
       * JavaScript 1.6.
       */
     @JSName("forEach")
-    var forEach_Original: FnArray[T] = js.native
+    var forEach_Original: FnCall[T] = js.native
     /**
       * Helper method returns the last object from a collection. If your enumerable
       * contains only one object, this method should always return that object.
@@ -67,14 +67,14 @@ object enumerableMod extends js.Object {
       * a new array. This method corresponds to `map()` defined in JavaScript 1.6.
       */
     @JSName("map")
-    var map_Original: FnArrayCallbackfn[T] = js.native
+    var map_Original: FnCallCallbackfnThisArg[T] = js.native
     /**
       * This will combine the values of the enumerator into a single value. It
       * is a useful way to collect a summary value from an enumeration. This
       * corresponds to the `reduce()` method defined in JavaScript 1.8.
       */
     @JSName("reduce")
-    var reduce_Original: FnArrayCallbackfnCurrentIndex[T] = js.native
+    var reduce_Original: FnCallCallbackfnInitialValue[T] = js.native
     /**
       * Returns `true` if the passed function returns true for any item in the
       * enumeration.

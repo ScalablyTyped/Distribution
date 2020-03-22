@@ -1,9 +1,8 @@
 package typings.jsrsasign.mod.KJUR.asn1.x509
 
 import typings.jsrsasign.AnonCertissuer
-import typings.jsrsasign.AnonCertissuerCertsubject
-import typings.jsrsasign.jsrsasign.KJUR.asn1.StringParam
-import typings.jsrsasign.jsrsasign.KJUR.asn1.x509.X500NameParam
+import typings.jsrsasign.StringParamcertissuerstri
+import typings.jsrsasign.X500NameParamcertissuerst
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -45,9 +44,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class X500Name protected ()
   extends typings.jsrsasign.jsrsasign.KJUR.asn1.x509.X500Name {
-  def this(params: X500NameParam with AnonCertissuer) = this()
-  def this(params: StringParam with AnonCertissuer) = this()
-  def this(params: AnonCertissuerCertsubject) = this()
+  def this(params: AnonCertissuer) = this()
+  def this(params: StringParamcertissuerstri) = this()
+  def this(params: X500NameParamcertissuerst) = this()
 }
 
 /* static members */

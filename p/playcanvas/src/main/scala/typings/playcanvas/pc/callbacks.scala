@@ -178,5 +178,11 @@ object callbacks extends js.Object {
     * @description Callback used by {@link pc.VrDisplay#requestAnimationFrame}.
     */
   type VrFrame = js.Function0[Unit]
+  /**
+    * @callback pc.callbacks.XrError
+    * @description Callback used by {@link pc.XrManager#endXr} and {@link pc.XrManager#startXr}.
+    * @param {Error|null} err - The Error object or null if operation was successfull.
+    */
+  type XrError = js.Function1[/* err */ Error | Null, Unit]
 }
 

@@ -1,9 +1,14 @@
 package typings.antd
 
-import typings.antd.formFormMod.FormComponentProps
-import typings.antd.formFormMod.FormCreateOption
+import typings.antd.formContextMod.FormProviderProps
 import typings.antd.formFormMod.FormProps
-import typings.antd.formInterfaceMod.FormWrappedProps
+import typings.antd.formItemMod.FormItemProps
+import typings.antd.formListMod.FormListProps
+import typings.antd.formUtilMod.FormInstance
+import typings.react.mod.FC
+import typings.react.mod.ForwardRefExoticComponent
+import typings.react.mod.ReactElement
+import typings.react.mod.RefAttributes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,21 +17,16 @@ import scala.scalajs.js.annotation._
 @js.native
 object formMod extends js.Object {
   @js.native
-  class default protected ()
-    extends typings.antd.formFormMod.default {
-    def this(props: FormProps) = this()
+  trait Form extends ForwardRefExoticComponent[FormProps with RefAttributes[FormInstance]] {
+    var Item: js.Function1[/* props */ FormItemProps, ReactElement] = js.native
+    var List: FC[FormListProps] = js.native
+    var Provider: FC[FormProviderProps] = js.native
+    var useForm: js.Function1[/* form */ js.UndefOr[FormInstance], js.Array[FormInstance]] = js.native
+    /** @deprecated Only for warning usage. Do not use. */
+    def create(): Unit = js.native
   }
   
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    var Item: TypeofClassFormItem = js.native
-    var createFormField: js.Any = js.native
-    var defaultProps: AnonColon = js.native
-    var propTypes: AnonArgsChildren = js.native
-    def create[TOwnProps /* <: FormComponentProps[_] */](): FormWrappedProps[TOwnProps] = js.native
-    def create[TOwnProps /* <: FormComponentProps[_] */](options: FormCreateOption[TOwnProps]): FormWrappedProps[TOwnProps] = js.native
-  }
-  
+  val default: Form = js.native
+  type InternalForm = ForwardRefExoticComponent[FormProps with RefAttributes[FormInstance]]
 }
 

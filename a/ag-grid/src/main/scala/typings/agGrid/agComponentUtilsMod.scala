@@ -16,7 +16,7 @@ object agComponentUtilsMod extends js.Object {
   @js.native
   class AgComponentUtils () extends js.Object {
     var componentMetadataProvider: js.Any = js.native
-    def adaptCellRendererFunction(callback: AgGridComponentFunctionInput): AnonAny = js.native
+    def adaptCellRendererFunction(callback: AgGridComponentFunctionInput): AnonInstantiableIComponent = js.native
     def adaptFunction[A /* <: IComponent[_] with B */, B](
       propertyName: String,
       hardcodedJsFunction: AgGridComponentFunctionInput,

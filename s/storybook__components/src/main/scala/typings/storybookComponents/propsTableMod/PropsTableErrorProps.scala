@@ -4,8 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PropsTableErrorProps extends PropsTableProps {
-  var error: PropsTableError
+  var error: PropsTableError = js.native
 }
 
 object PropsTableErrorProps {

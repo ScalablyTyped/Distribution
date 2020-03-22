@@ -5,8 +5,8 @@ import typings.discordRpc.AnonCapacity
 import typings.discordRpc.AnonCode
 import typings.discordRpc.AnonDescription
 import typings.discordRpc.AnonForce
-import typings.discordRpc.AnonForceTimeout
 import typings.discordRpc.AnonId
+import typings.discordRpc.AnonTimeout
 import typings.discordRpc.discordRpcStrings.connected
 import typings.discordRpc.discordRpcStrings.ready
 import typings.node.eventsMod.EventEmitter
@@ -58,7 +58,7 @@ class Client protected () extends EventEmitter {
   @JSName("once")
   def once_ready(event: ready, listener: js.Function0[Unit]): this.type = js.native
   def selectTextChannel(id: String): js.Promise[Channel] = js.native
-  def selectTextChannel(id: String, options: AnonForceTimeout): js.Promise[Channel] = js.native
+  def selectTextChannel(id: String, options: AnonTimeout): js.Promise[Channel] = js.native
   def selectVoiceChannel(id: String): js.Promise[Channel] = js.native
   def selectVoiceChannel(id: String, options: AnonForce): js.Promise[Channel] = js.native
   def sendJoinInvite(user: String): js.Promise[_] = js.native

@@ -1,7 +1,7 @@
 
 # Scala.js typings for xmlbuilder
 
-Typings are for version 13.0.2
+Typings are for version 14.0.0
 
 ## Library description:
 An XML builder for node.js

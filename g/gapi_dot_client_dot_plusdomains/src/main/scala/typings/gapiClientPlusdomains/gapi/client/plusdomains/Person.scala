@@ -2,11 +2,11 @@ package typings.gapiClientPlusdomains.gapi.client.plusdomains
 
 import typings.gapiClientPlusdomains.AnonCoverInfo
 import typings.gapiClientPlusdomains.AnonDepartment
-import typings.gapiClientPlusdomains.AnonFamilyNameFormatted
+import typings.gapiClientPlusdomains.AnonFormatted
 import typings.gapiClientPlusdomains.AnonIsDefault
 import typings.gapiClientPlusdomains.AnonLabel
 import typings.gapiClientPlusdomains.AnonPrimary
-import typings.gapiClientPlusdomains.AnonTypeValue
+import typings.gapiClientPlusdomains.AnonValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -36,7 +36,7 @@ trait Person extends js.Object {
     * profile. The plus.profile.emails.read scope is needed to retrieve these email addresses, or the email scope can be used to retrieve just the Google
     * account email address.
     */
-  var emails: js.UndefOr[js.Array[AnonTypeValue]] = js.undefined
+  var emails: js.UndefOr[js.Array[AnonValue]] = js.undefined
   /** ETag of this response for caching purposes. */
   var etag: js.UndefOr[String] = js.undefined
   /**
@@ -55,7 +55,7 @@ trait Person extends js.Object {
   /** Identifies this resource as a person. Value: "plus#person". */
   var kind: js.UndefOr[String] = js.undefined
   /** An object representation of the individual components of a person's name. */
-  var name: js.UndefOr[AnonFamilyNameFormatted] = js.undefined
+  var name: js.UndefOr[AnonFormatted] = js.undefined
   /** The nickname of this person. */
   var nickname: js.UndefOr[String] = js.undefined
   /**
@@ -108,14 +108,14 @@ object Person {
     currentLocation: String = null,
     displayName: String = null,
     domain: String = null,
-    emails: js.Array[AnonTypeValue] = null,
+    emails: js.Array[AnonValue] = null,
     etag: String = null,
     gender: String = null,
     id: String = null,
     image: AnonIsDefault = null,
     isPlusUser: js.UndefOr[Boolean] = js.undefined,
     kind: String = null,
-    name: AnonFamilyNameFormatted = null,
+    name: AnonFormatted = null,
     nickname: String = null,
     objectType: String = null,
     occupation: String = null,

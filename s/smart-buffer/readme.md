@@ -1,7 +1,7 @@
 
 # Scala.js typings for smart-buffer
 
-Typings are for version 4.0.2
+Typings are for version 4.1.0
 
 ## Library description:
 smart-buffer is a Buffer wrapper that adds automatic read & write offset tracking, string operations, data insertions, and more.

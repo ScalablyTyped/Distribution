@@ -7,41 +7,16 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript", "parseJsonConfigFileContent")
 @js.native
 object parseJsonConfigFileContent extends js.Object {
-  def apply(json: js.Any, host: ParseConfigHost, basePath: java.lang.String): ParsedCommandLine = js.native
-  def apply(json: js.Any, host: ParseConfigHost, basePath: java.lang.String, existingOptions: CompilerOptions): ParsedCommandLine = js.native
   def apply(
     json: js.Any,
     host: ParseConfigHost,
     basePath: java.lang.String,
-    existingOptions: CompilerOptions,
-    configFileName: java.lang.String
-  ): ParsedCommandLine = js.native
-  def apply(
-    json: js.Any,
-    host: ParseConfigHost,
-    basePath: java.lang.String,
-    existingOptions: CompilerOptions,
-    configFileName: java.lang.String,
-    resolutionStack: js.Array[Path]
-  ): ParsedCommandLine = js.native
-  def apply(
-    json: js.Any,
-    host: ParseConfigHost,
-    basePath: java.lang.String,
-    existingOptions: CompilerOptions,
-    configFileName: java.lang.String,
-    resolutionStack: js.Array[Path],
-    extraFileExtensions: js.Array[FileExtensionInfo]
-  ): ParsedCommandLine = js.native
-  def apply(
-    json: js.Any,
-    host: ParseConfigHost,
-    basePath: java.lang.String,
-    existingOptions: CompilerOptions,
-    configFileName: java.lang.String,
-    resolutionStack: js.Array[Path],
-    extraFileExtensions: js.Array[FileExtensionInfo],
-    extendedConfigCache: Map[ExtendedConfigCacheEntry]
+    existingOptions: js.UndefOr[CompilerOptions],
+    configFileName: js.UndefOr[java.lang.String],
+    resolutionStack: js.UndefOr[js.Array[Path]],
+    extraFileExtensions: js.UndefOr[js.Array[FileExtensionInfo]],
+    extendedConfigCache: js.UndefOr[Map[ExtendedConfigCacheEntry]],
+    existingWatchOptions: js.UndefOr[WatchOptions]
   ): ParsedCommandLine = js.native
 }
 

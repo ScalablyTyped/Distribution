@@ -64,7 +64,7 @@ object formStateMod extends js.Object {
       * Composible fields (fields that work in conjuction with FormState)
       */
     def compose(): this.type = js.native
-    def enableAutoValidationAndValidate(): js.Promise[AnonHasError | AnonFalseHasError[TValue]] = js.native
+    def enableAutoValidationAndValidate(): js.Promise[AnonHasError | AnonHasErrorValue[TValue]] = js.native
     /** Get validatable objects from $ */
     /* protected */ def getValues(): js.Array[ComposibleValidatable[_]] = js.native
     def validators(validators: Validator[TValue]*): this.type = js.native

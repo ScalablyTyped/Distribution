@@ -1,6 +1,6 @@
 package typings.istanbulLibSourceMaps.mod
 
-import typings.std.Partial
+import typings.istanbulLibSourceMaps.PartialMapStoreOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object createSourceMapStore extends js.Object {
   def apply(): MapStore = js.native
-  def apply(options: Partial[MapStoreOptions]): MapStore = js.native
+  def apply(options: PartialMapStoreOptions): MapStore = js.native
 }
 

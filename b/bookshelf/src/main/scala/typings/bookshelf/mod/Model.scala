@@ -1,9 +1,8 @@
 package typings.bookshelf.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.bookshelf.AnonArgs
+import typings.bookshelf.AnonInstantiable
 import typings.knex.mod.QueryBuilder
-import typings.knex.mod.SafePartial
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,16 +11,22 @@ import scala.scalajs.js.annotation._
 @JSImport("bookshelf", "Model")
 @js.native
 class Model[T /* <: Model[_] */] () extends ModelBase[T] {
-  def belongsTo[R /* <: Model[_] */](target: AnonArgs[R]): R = js.native
-  def belongsTo[R /* <: Model[_] */](target: AnonArgs[R], foreignKey: String): R = js.native
-  def belongsTo[R /* <: Model[_] */](target: AnonArgs[R], foreignKey: String, foreignKeyTarget: String): R = js.native
-  def belongsToMany[R /* <: Model[_] */](target: AnonArgs[R]): Collection[R] = js.native
-  def belongsToMany[R /* <: Model[_] */](target: AnonArgs[R], table: String): Collection[R] = js.native
-  def belongsToMany[R /* <: Model[_] */](target: AnonArgs[R], table: String, foreignKey: String): Collection[R] = js.native
-  def belongsToMany[R /* <: Model[_] */](target: AnonArgs[R], table: String, foreignKey: String, otherKey: String): Collection[R] = js.native
-  def belongsToMany[R /* <: Model[_] */](target: AnonArgs[R], table: String, foreignKey: String, otherKey: String, foreignKeyTarget: String): Collection[R] = js.native
+  def belongsTo[R /* <: Model[_] */](target: AnonInstantiable[R]): R = js.native
+  def belongsTo[R /* <: Model[_] */](target: AnonInstantiable[R], foreignKey: String): R = js.native
+  def belongsTo[R /* <: Model[_] */](target: AnonInstantiable[R], foreignKey: String, foreignKeyTarget: String): R = js.native
+  def belongsToMany[R /* <: Model[_] */](target: AnonInstantiable[R]): Collection[R] = js.native
+  def belongsToMany[R /* <: Model[_] */](target: AnonInstantiable[R], table: String): Collection[R] = js.native
+  def belongsToMany[R /* <: Model[_] */](target: AnonInstantiable[R], table: String, foreignKey: String): Collection[R] = js.native
+  def belongsToMany[R /* <: Model[_] */](target: AnonInstantiable[R], table: String, foreignKey: String, otherKey: String): Collection[R] = js.native
   def belongsToMany[R /* <: Model[_] */](
-    target: AnonArgs[R],
+    target: AnonInstantiable[R],
+    table: String,
+    foreignKey: String,
+    otherKey: String,
+    foreignKeyTarget: String
+  ): Collection[R] = js.native
+  def belongsToMany[R /* <: Model[_] */](
+    target: AnonInstantiable[R],
     table: String,
     foreignKey: String,
     otherKey: String,
@@ -43,32 +48,32 @@ class Model[T /* <: Model[_] */] () extends ModelBase[T] {
   def fetch(options: FetchOptions): typings.bluebird.mod.^[T] = js.native
   def fetchAll(): typings.bluebird.mod.^[Collection[T]] = js.native
   def fetchAll(options: FetchAllOptions): typings.bluebird.mod.^[Collection[T]] = js.native
-  def hasMany[R /* <: Model[_] */](target: AnonArgs[R]): Collection[R] = js.native
-  def hasMany[R /* <: Model[_] */](target: AnonArgs[R], foreignKey: String): Collection[R] = js.native
-  def hasMany[R /* <: Model[_] */](target: AnonArgs[R], foreignKey: String, foreignKeyTarget: String): Collection[R] = js.native
-  def hasOne[R /* <: Model[_] */](target: AnonArgs[R]): R = js.native
-  def hasOne[R /* <: Model[_] */](target: AnonArgs[R], foreignKey: String): R = js.native
-  def hasOne[R /* <: Model[_] */](target: AnonArgs[R], foreignKey: String, foreignKeyTarget: String): R = js.native
+  def hasMany[R /* <: Model[_] */](target: AnonInstantiable[R]): Collection[R] = js.native
+  def hasMany[R /* <: Model[_] */](target: AnonInstantiable[R], foreignKey: String): Collection[R] = js.native
+  def hasMany[R /* <: Model[_] */](target: AnonInstantiable[R], foreignKey: String, foreignKeyTarget: String): Collection[R] = js.native
+  def hasOne[R /* <: Model[_] */](target: AnonInstantiable[R]): R = js.native
+  def hasOne[R /* <: Model[_] */](target: AnonInstantiable[R], foreignKey: String): R = js.native
+  def hasOne[R /* <: Model[_] */](target: AnonInstantiable[R], foreignKey: String, foreignKeyTarget: String): R = js.native
   def load(relations: String): typings.bluebird.mod.^[T] = js.native
   def load(relations: String, options: LoadOptions): typings.bluebird.mod.^[T] = js.native
   def load(relations: js.Array[String]): typings.bluebird.mod.^[T] = js.native
   def load(relations: js.Array[String], options: LoadOptions): typings.bluebird.mod.^[T] = js.native
-  def morphMany[R /* <: Model[_] */](target: AnonArgs[R]): Collection[R] = js.native
-  def morphMany[R /* <: Model[_] */](target: AnonArgs[R], name: String): Collection[R] = js.native
-  def morphMany[R /* <: Model[_] */](target: AnonArgs[R], name: String, columnNames: js.Array[String]): Collection[R] = js.native
-  def morphMany[R /* <: Model[_] */](target: AnonArgs[R], name: String, columnNames: js.Array[String], morphValue: String): Collection[R] = js.native
-  def morphOne[R /* <: Model[_] */](target: AnonArgs[R]): R = js.native
-  def morphOne[R /* <: Model[_] */](target: AnonArgs[R], name: String): R = js.native
-  def morphOne[R /* <: Model[_] */](target: AnonArgs[R], name: String, columnNames: js.Array[String]): R = js.native
-  def morphOne[R /* <: Model[_] */](target: AnonArgs[R], name: String, columnNames: js.Array[String], morphValue: String): R = js.native
+  def morphMany[R /* <: Model[_] */](target: AnonInstantiable[R]): Collection[R] = js.native
+  def morphMany[R /* <: Model[_] */](target: AnonInstantiable[R], name: String): Collection[R] = js.native
+  def morphMany[R /* <: Model[_] */](target: AnonInstantiable[R], name: String, columnNames: js.Array[String]): Collection[R] = js.native
+  def morphMany[R /* <: Model[_] */](target: AnonInstantiable[R], name: String, columnNames: js.Array[String], morphValue: String): Collection[R] = js.native
+  def morphOne[R /* <: Model[_] */](target: AnonInstantiable[R]): R = js.native
+  def morphOne[R /* <: Model[_] */](target: AnonInstantiable[R], name: String): R = js.native
+  def morphOne[R /* <: Model[_] */](target: AnonInstantiable[R], name: String, columnNames: js.Array[String]): R = js.native
+  def morphOne[R /* <: Model[_] */](target: AnonInstantiable[R], name: String, columnNames: js.Array[String], morphValue: String): R = js.native
   def morphTo(name: String): T = js.native
   def morphTo(name: String, columnNames: js.Array[String], target: ModelSubclass*): T = js.native
   def morphTo(name: String, target: ModelSubclass*): T = js.native
   def orderBy(column: String): T = js.native
   def orderBy(column: String, order: SortOrder): T = js.native
   // Declaration order matters otherwise TypeScript gets confused between query() and query(...query: string[])
-  def query(): QueryBuilder[_, js.Array[SafePartial[_]]] = js.native
-  def query(callback: js.Function1[/* qb */ QueryBuilder[_, js.Array[SafePartial[_]]], Unit]): T = js.native
+  def query(): QueryBuilder[_, _] = js.native
+  def query(callback: js.Function1[/* qb */ QueryBuilder[_, _], Unit]): T = js.native
   def query(query: String*): T = js.native
   def query(query: StringDictionary[js.Any]): T = js.native
   def refresh(): typings.bluebird.mod.^[T] = js.native

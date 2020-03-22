@@ -4,14 +4,12 @@ import typings.expressValidator.baseMod.Location
 import typings.expressValidator.baseMod.Middleware
 import typings.expressValidator.baseMod.Request
 import typings.expressValidator.baseMod.ValidationError
-import typings.expressValidator.matchedDataMod.MatchedDataOptions
 import typings.expressValidator.oneOfMod.OneOfCustomMessageBuilder
 import typings.expressValidator.sanitizationChainMod.SanitizationChain
 import typings.expressValidator.schemaMod.Schema
 import typings.expressValidator.validationChainMod.ValidationChain
 import typings.expressValidator.validationResultMod.ErrorFormatter
 import typings.expressValidator.validationResultMod.ResultFactory
-import typings.std.Partial
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -60,7 +58,7 @@ object mod extends js.Object {
   def header(fields: js.Array[String]): ValidationChain = js.native
   def header(fields: js.Array[String], message: js.Any): ValidationChain = js.native
   def matchedData(req: Request): Record[String, _] = js.native
-  def matchedData(req: Request, options: Partial[MatchedDataOptions]): Record[String, _] = js.native
+  def matchedData(req: Request, options: PartialMatchedDataOptions): Record[String, _] = js.native
   def oneOf(chains: js.Array[js.Array[ValidationChain] | ValidationChain]): Middleware = js.native
   def oneOf(chains: js.Array[ValidationChain | js.Array[ValidationChain]], message: js.Any): Middleware = js.native
   def oneOf(chains: js.Array[ValidationChain | js.Array[ValidationChain]], message: OneOfCustomMessageBuilder): Middleware = js.native

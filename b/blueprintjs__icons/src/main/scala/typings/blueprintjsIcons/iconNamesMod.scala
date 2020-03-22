@@ -149,6 +149,7 @@ import typings.blueprintjsIcons.blueprintjsIconsStrings.`key-option`
 import typings.blueprintjsIcons.blueprintjsIconsStrings.`key-shift`
 import typings.blueprintjsIcons.blueprintjsIconsStrings.`key-tab`
 import typings.blueprintjsIcons.blueprintjsIconsStrings.`known-vehicle`
+import typings.blueprintjsIcons.blueprintjsIconsStrings.`lab-test`
 import typings.blueprintjsIcons.blueprintjsIconsStrings.`layout-auto`
 import typings.blueprintjsIcons.blueprintjsIconsStrings.`layout-balloon`
 import typings.blueprintjsIcons.blueprintjsIconsStrings.`layout-circle`
@@ -326,6 +327,7 @@ import typings.blueprintjsIcons.blueprintjsIconsStrings.database
 import typings.blueprintjsIcons.blueprintjsIconsStrings.delete
 import typings.blueprintjsIcons.blueprintjsIconsStrings.delta
 import typings.blueprintjsIcons.blueprintjsIconsStrings.desktop
+import typings.blueprintjsIcons.blueprintjsIconsStrings.diagnosis
 import typings.blueprintjsIcons.blueprintjsIconsStrings.disable
 import typings.blueprintjsIcons.blueprintjsIconsStrings.document
 import typings.blueprintjsIcons.blueprintjsIconsStrings.dollar
@@ -594,6 +596,7 @@ object iconNamesMod extends js.Object {
   val DELTA: delta = js.native
   val DERIVE_COLUMN: `derive-column` = js.native
   val DESKTOP: desktop = js.native
+  val DIAGNOSIS: diagnosis = js.native
   val DIAGRAM_TREE: `diagram-tree` = js.native
   val DIRECTION_LEFT: `direction-left` = js.native
   val DIRECTION_RIGHT: `direction-right` = js.native
@@ -740,6 +743,7 @@ object iconNamesMod extends js.Object {
   val KEY_TAB: `key-tab` = js.native
   val KNOWN_VEHICLE: `known-vehicle` = js.native
   val LABEL: label = js.native
+  val LAB_TEST: `lab-test` = js.native
   val LAYER: layer = js.native
   val LAYERS: layers = js.native
   val LAYOUT: layout = js.native

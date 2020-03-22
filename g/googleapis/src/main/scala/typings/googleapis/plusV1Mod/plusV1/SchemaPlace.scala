@@ -1,6 +1,6 @@
 package typings.googleapis.plusV1Mod.plusV1
 
-import typings.googleapis.AnonFormatted
+import typings.googleapis.AnonFormattedString
 import typings.googleapis.AnonLatitude
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,7 +11,7 @@ trait SchemaPlace extends js.Object {
   /**
     * The physical address of the place.
     */
-  var address: js.UndefOr[AnonFormatted] = js.native
+  var address: js.UndefOr[AnonFormattedString] = js.native
   /**
     * The display name of the place.
     */
@@ -33,7 +33,7 @@ trait SchemaPlace extends js.Object {
 object SchemaPlace {
   @scala.inline
   def apply(
-    address: AnonFormatted = null,
+    address: AnonFormattedString = null,
     displayName: String = null,
     id: String = null,
     kind: String = null,

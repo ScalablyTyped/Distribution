@@ -21,7 +21,7 @@ object listMod extends js.Object {
   /* static members */
   @js.native
   object List extends js.Object {
-    var defaultProps: AnonContainsFocus = js.native
+    var defaultProps: AnonOnRenderCell = js.native
   }
   
   @js.native

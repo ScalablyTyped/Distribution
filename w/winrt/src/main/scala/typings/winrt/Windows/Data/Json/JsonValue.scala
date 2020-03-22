@@ -1,6 +1,6 @@
 package typings.winrt.Windows.Data.Json
 
-import typings.winrt.AnonResultSucceededBoolean
+import typings.winrt.AnonResultSucceeded
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,6 +32,6 @@ object JsonValue extends js.Object {
   def createNumberValue(input: Double): JsonValue = js.native
   def createStringValue(input: String): JsonValue = js.native
   def parse(input: String): JsonValue = js.native
-  def tryParse(input: String): AnonResultSucceededBoolean = js.native
+  def tryParse(input: String): AnonResultSucceeded = js.native
 }
 

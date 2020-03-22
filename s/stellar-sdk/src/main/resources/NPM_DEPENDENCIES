@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "stellar-sdk" : "3.3.0"
+      "stellar-sdk" : "4.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "stellar-sdk" : "3.3.0"
+      "stellar-sdk" : "4.0.1"
     }
   ],
   "compile-devDependencies" : [

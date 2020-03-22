@@ -1,76 +1,75 @@
 package typings.rxjsCompat.neverMod
 
-import typings.rxjsCompat.FnA
-import typings.rxjsCompat.FnAcc
-import typings.rxjsCompat.FnAccAccumulator
-import typings.rxjsCompat.FnArray
-import typings.rxjsCompat.FnArrayObservables
-import typings.rxjsCompat.FnArrayObservablesProject
-import typings.rxjsCompat.FnArrayObservablesProjectThis
-import typings.rxjsCompat.FnArrayScheduler
-import typings.rxjsCompat.FnBufferCreationInterval
-import typings.rxjsCompat.FnBufferSize
-import typings.rxjsCompat.FnBufferSizeConfig
-import typings.rxjsCompat.FnBufferSizeScheduler
-import typings.rxjsCompat.FnCallback
-import typings.rxjsCompat.FnCaught
-import typings.rxjsCompat.FnClosingNotifier
-import typings.rxjsCompat.FnClosingSelector
-import typings.rxjsCompat.FnClosingSelectorThis
-import typings.rxjsCompat.FnCompare
-import typings.rxjsCompat.FnCompareKey
-import typings.rxjsCompat.FnComparer
-import typings.rxjsCompat.FnComplete
-import typings.rxjsCompat.FnConcurrent
-import typings.rxjsCompat.FnConcurrentIndex
-import typings.rxjsCompat.FnConcurrentInnerObservable
-import typings.rxjsCompat.FnConcurrentObservables
-import typings.rxjsCompat.FnConcurrentThis
-import typings.rxjsCompat.FnConfig
-import typings.rxjsCompat.FnConfigDuration
-import typings.rxjsCompat.FnCount
-import typings.rxjsCompat.FnCountThis
-import typings.rxjsCompat.FnDefaultValue
-import typings.rxjsCompat.FnDefaultValueIndex
-import typings.rxjsCompat.FnDefaultValueIndexPredicate
-import typings.rxjsCompat.FnDelay
-import typings.rxjsCompat.FnDelayDurationSelector
-import typings.rxjsCompat.FnDelayScheduler
-import typings.rxjsCompat.FnDue
-import typings.rxjsCompat.FnDueScheduler
-import typings.rxjsCompat.FnDueTime
-import typings.rxjsCompat.FnDuration
-import typings.rxjsCompat.FnDurationSelector
-import typings.rxjsCompat.FnDurationSelectorElementSelector
-import typings.rxjsCompat.FnErrors
-import typings.rxjsCompat.FnFlushes
-import typings.rxjsCompat.FnFunc
-import typings.rxjsCompat.FnIndex
-import typings.rxjsCompat.FnIndexPredicate
-import typings.rxjsCompat.FnIndexPredicateSource
-import typings.rxjsCompat.FnIndexPredicateThis
-import typings.rxjsCompat.FnIndexPredicateThisThisArg
-import typings.rxjsCompat.FnIndexPredicateThisValue
-import typings.rxjsCompat.FnIndexProject
-import typings.rxjsCompat.FnInnerIndex
-import typings.rxjsCompat.FnInnerObservable
-import typings.rxjsCompat.FnMaxWindowSize
-import typings.rxjsCompat.FnNotifications
-import typings.rxjsCompat.FnNotifier
-import typings.rxjsCompat.FnObservables
-import typings.rxjsCompat.FnObservablesThis
-import typings.rxjsCompat.FnPeriod
-import typings.rxjsCompat.FnProject
-import typings.rxjsCompat.FnProperties
-import typings.rxjsCompat.FnScheduler
-import typings.rxjsCompat.FnSelector
-import typings.rxjsCompat.FnSelectorSource
-import typings.rxjsCompat.FnStartWindowEvery
-import typings.rxjsCompat.FnThis
-import typings.rxjsCompat.FnThisAny
-import typings.rxjsCompat.FnThisValue
-import typings.rxjsCompat.FnThisValueAny
-import typings.rxjsCompat.FnThisWindowBoundaries
+import typings.rxjsCompat.Fn0
+import typings.rxjsCompat.Fn1
+import typings.rxjsCompat.Fn10
+import typings.rxjsCompat.Fn2
+import typings.rxjsCompat.Fn3
+import typings.rxjsCompat.Fn4
+import typings.rxjsCompat.Fn5
+import typings.rxjsCompat.Fn6
+import typings.rxjsCompat.Fn7
+import typings.rxjsCompat.Fn8
+import typings.rxjsCompat.Fn9
+import typings.rxjsCompat.FnCall
+import typings.rxjsCompat.FnCallSubjectFactorySelector
+import typings.rxjsCompat.FnCallThis
+import typings.rxjsCompat.FnCallThisAccumulatorSeed
+import typings.rxjsCompat.FnCallThisAccumulatorSeedConcurrent
+import typings.rxjsCompat.FnCallThisBufferSizeStartBufferEvery
+import typings.rxjsCompat.FnCallThisBufferSizeWindowTimeScheduler
+import typings.rxjsCompat.FnCallThisBufferSizeWindowTimeSelectorScheduler
+import typings.rxjsCompat.FnCallThisBufferTimeSpanBufferCreationIntervalMaxBufferSizeScheduler
+import typings.rxjsCompat.FnCallThisCallback
+import typings.rxjsCompat.FnCallThisClosingNotifier
+import typings.rxjsCompat.FnCallThisClosingSelector
+import typings.rxjsCompat.FnCallThisCompareKeySelector
+import typings.rxjsCompat.FnCallThisCompareToComparor
+import typings.rxjsCompat.FnCallThisComparer
+import typings.rxjsCompat.FnCallThisConcurrent
+import typings.rxjsCompat.FnCallThisCount
+import typings.rxjsCompat.FnCallThisDefaultValue
+import typings.rxjsCompat.FnCallThisDelayDurationSelectorSubscriptionDelay
+import typings.rxjsCompat.FnCallThisDelayScheduler
+import typings.rxjsCompat.FnCallThisDueScheduler
+import typings.rxjsCompat.FnCallThisDueTimeScheduler
+import typings.rxjsCompat.FnCallThisDueWithObservableScheduler
+import typings.rxjsCompat.FnCallThisDurationScheduler
+import typings.rxjsCompat.FnCallThisDurationSchedulerConfig
+import typings.rxjsCompat.FnCallThisDurationSelectorConfig
+import typings.rxjsCompat.FnCallThisFunc
+import typings.rxjsCompat.FnCallThisIndexDefaultValue
+import typings.rxjsCompat.FnCallThisInnerObservable
+import typings.rxjsCompat.FnCallThisInnerObservableConcurrent
+import typings.rxjsCompat.FnCallThisKeyCompare
+import typings.rxjsCompat.FnCallThisKeySelectorElementSelectorDurationSelectorSubjectSelector
+import typings.rxjsCompat.FnCallThisKeySelectorFlushes
+import typings.rxjsCompat.FnCallThisNextErrorComplete
+import typings.rxjsCompat.FnCallThisNotifier
+import typings.rxjsCompat.FnCallThisObservableResultSelector
+import typings.rxjsCompat.FnCallThisObservables
+import typings.rxjsCompat.FnCallThisOpeningsClosingSelector
+import typings.rxjsCompat.FnCallThisPeriodScheduler
+import typings.rxjsCompat.FnCallThisPredicate
+import typings.rxjsCompat.FnCallThisPredicateDefaultValue
+import typings.rxjsCompat.FnCallThisPredicateThisArg
+import typings.rxjsCompat.FnCallThisProject
+import typings.rxjsCompat.FnCallThisProjectConcurrent
+import typings.rxjsCompat.FnCallThisProjectConcurrentScheduler
+import typings.rxjsCompat.FnCallThisProjectThisArg
+import typings.rxjsCompat.FnCallThisProperties
+import typings.rxjsCompat.FnCallThisScheduler
+import typings.rxjsCompat.FnCallThisSchedulerDelay
+import typings.rxjsCompat.FnCallThisSelector
+import typings.rxjsCompat.FnCallThisV1V2V3V4V5V6Scheduler
+import typings.rxjsCompat.FnCallThisV2V3V4V5V6
+import typings.rxjsCompat.FnCallThisV2V3V4V5V6ConcurrentScheduler
+import typings.rxjsCompat.FnCallThisV2V3V4V5V6Project
+import typings.rxjsCompat.FnCallThisV2V3V4V5V6Scheduler
+import typings.rxjsCompat.FnCallThisValue
+import typings.rxjsCompat.FnCallThisWindowBoundaries
+import typings.rxjsCompat.FnCallThisWindowSizeStartWindowEvery
+import typings.rxjsCompat.FnCallThisWindowTimeSpanWindowCreationIntervalMaxWindowSizeScheduler
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -82,224 +81,224 @@ object internalObservableMod extends js.Object {
   @js.native
   trait Observable[T] extends js.Object {
     @JSName("_catch")
-    var _catch_Original: FnCaught = js.native
+    var _catch_Original: FnCallThisSelector = js.native
     @JSName("_do")
-    var _do_Original: FnComplete = js.native
+    var _do_Original: FnCallThisNextErrorComplete = js.native
     @JSName("_finally")
-    var _finally_Original: FnCallback = js.native
+    var _finally_Original: FnCallThisCallback = js.native
     @JSName("_switch")
-    var _switch_Original: FnThis = js.native
+    var _switch_Original: FnCallThis = js.native
     @JSName("auditTime")
-    var auditTime_Original: FnDuration = js.native
+    var auditTime_Original: FnCallThisDurationScheduler = js.native
     @JSName("audit")
-    var audit_Original: FnDurationSelector = js.native
+    var audit_Original: FnCall = js.native
     @JSName("bufferCount")
-    var bufferCount_Original: FnBufferSize = js.native
+    var bufferCount_Original: FnCallThisBufferSizeStartBufferEvery = js.native
     @JSName("bufferTime")
-    var bufferTime_Original: FnBufferCreationInterval = js.native
+    var bufferTime_Original: FnCallThisBufferTimeSpanBufferCreationIntervalMaxBufferSizeScheduler = js.native
     @JSName("bufferToggle")
-    var bufferToggle_Original: FnClosingSelector = js.native
+    var bufferToggle_Original: FnCallThisOpeningsClosingSelector = js.native
     @JSName("bufferWhen")
-    var bufferWhen_Original: FnClosingSelectorThis = js.native
+    var bufferWhen_Original: FnCallThisClosingSelector = js.native
     @JSName("buffer")
-    var buffer_Original: FnClosingNotifier = js.native
+    var buffer_Original: FnCallThisClosingNotifier = js.native
     @JSName("catch")
-    var catch_Original: FnCaught = js.native
+    var catch_Original: FnCallThisSelector = js.native
     @JSName("combineAll")
-    var combineAll_Original: FnProject = js.native
+    var combineAll_Original: FnCallThisProject = js.native
     @JSName("combineLatest")
-    var combineLatest_Original: FnArray = js.native
+    var combineLatest_Original: FnCallThisV2V3V4V5V6Project = js.native
     @JSName("concatAll")
-    var concatAll_Original: FnThis = js.native
+    var concatAll_Original: FnCallThis = js.native
     @JSName("concatMapTo")
-    var concatMapTo_Original: FnInnerObservable = js.native
+    var concatMapTo_Original: FnCallThisInnerObservable = js.native
     @JSName("concatMap")
-    var concatMap_Original: FnIndex = js.native
+    var concatMap_Original: Fn0 = js.native
     @JSName("concat")
-    var concat_Original: FnObservables = js.native
+    var concat_Original: FnCallThisV2V3V4V5V6Scheduler = js.native
     @JSName("count")
-    var count_Original: FnIndexPredicate = js.native
+    var count_Original: FnCallThisPredicate = js.native
     @JSName("debounceTime")
-    var debounceTime_Original: FnDueTime = js.native
+    var debounceTime_Original: FnCallThisDueTimeScheduler = js.native
     @JSName("debounce")
-    var debounce_Original: FnDurationSelector = js.native
+    var debounce_Original: FnCall = js.native
     @JSName("defaultIfEmpty")
-    var defaultIfEmpty_Original: FnDefaultValue = js.native
+    var defaultIfEmpty_Original: FnCallThisDefaultValue = js.native
     @JSName("delayWhen")
-    var delayWhen_Original: FnDelayDurationSelector = js.native
+    var delayWhen_Original: FnCallThisDelayDurationSelectorSubscriptionDelay = js.native
     @JSName("delay")
-    var delay_Original: FnDelay = js.native
+    var delay_Original: FnCallThisDelayScheduler = js.native
     @JSName("dematerialize")
-    var dematerialize_Original: FnThisAny = js.native
+    var dematerialize_Original: Fn1 = js.native
     @JSName("distinctUntilChanged")
-    var distinctUntilChanged_Original: FnCompare = js.native
+    var distinctUntilChanged_Original: FnCallThisCompareKeySelector = js.native
     @JSName("distinctUntilKeyChanged")
-    var distinctUntilKeyChanged_Original: FnCompareKey = js.native
+    var distinctUntilKeyChanged_Original: FnCallThisKeyCompare = js.native
     @JSName("distinct")
-    var distinct_Original: FnFlushes = js.native
+    var distinct_Original: FnCallThisKeySelectorFlushes = js.native
     @JSName("do")
-    var do_Original: FnComplete = js.native
+    var do_Original: FnCallThisNextErrorComplete = js.native
     @JSName("elementAt")
-    var elementAt_Original: FnDefaultValueIndex = js.native
+    var elementAt_Original: FnCallThisIndexDefaultValue = js.native
     @JSName("every")
-    var every_Original: FnIndexPredicateSource = js.native
+    var every_Original: FnCallThisPredicateThisArg = js.native
     @JSName("exhaustMap")
-    var exhaustMap_Original: FnIndex = js.native
+    var exhaustMap_Original: Fn0 = js.native
     @JSName("exhaust")
-    var exhaust_Original: FnThis = js.native
+    var exhaust_Original: FnCallThis = js.native
     @JSName("expand")
-    var expand_Original: FnConcurrent = js.native
+    var expand_Original: FnCallThisProjectConcurrentScheduler = js.native
     @JSName("filter")
-    var filter_Original: FnIndexPredicateThis = js.native
+    var filter_Original: Fn2 = js.native
     @JSName("finally")
-    var finally_Original: FnCallback = js.native
+    var finally_Original: FnCallThisCallback = js.native
     @JSName("findIndex")
-    var findIndex_Original: FnIndexPredicateSource = js.native
+    var findIndex_Original: FnCallThisPredicateThisArg = js.native
     @JSName("find")
-    var find_Original: FnIndexPredicateThis = js.native
+    var find_Original: Fn2 = js.native
     @JSName("first")
-    var first_Original: FnDefaultValueIndexPredicate = js.native
+    var first_Original: FnCallThisPredicateDefaultValue = js.native
     @JSName("flatMapTo")
-    var flatMapTo_Original: FnConcurrentInnerObservable = js.native
+    var flatMapTo_Original: FnCallThisInnerObservableConcurrent = js.native
     @JSName("flatMap")
-    var flatMap_Original: FnConcurrentIndex = js.native
+    var flatMap_Original: FnCallThisProjectConcurrent = js.native
     @JSName("groupBy")
-    var groupBy_Original: FnDurationSelectorElementSelector = js.native
+    var groupBy_Original: FnCallThisKeySelectorElementSelectorDurationSelectorSubjectSelector = js.native
     @JSName("ignoreElements")
     var ignoreElements_Original: js.ThisFunction0[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ /* this */ js.Any, 
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<never> */ _
       ] = js.native
     @JSName("isEmpty")
-    var isEmpty_Original: FnThisAny = js.native
+    var isEmpty_Original: Fn1 = js.native
     @JSName("last")
-    var last_Original: FnDefaultValueIndexPredicate = js.native
+    var last_Original: FnCallThisPredicateDefaultValue = js.native
     @JSName("letBind")
-    var letBind_Original: FnFunc = js.native
+    var letBind_Original: FnCallThisFunc = js.native
     @JSName("let")
-    var let_Original: FnFunc = js.native
+    var let_Original: FnCallThisFunc = js.native
     @JSName("mapTo")
-    var mapTo_Original: FnThisValue = js.native
+    var mapTo_Original: FnCallThisValue = js.native
     @JSName("map")
-    var map_Original: FnIndexProject = js.native
+    var map_Original: FnCallThisProjectThisArg = js.native
     @JSName("materialize")
-    var materialize_Original: FnThisAny = js.native
+    var materialize_Original: Fn1 = js.native
     @JSName("max")
-    var max_Original: FnComparer = js.native
+    var max_Original: FnCallThisComparer = js.native
     @JSName("mergeAll")
-    var mergeAll_Original: FnConcurrentThis = js.native
+    var mergeAll_Original: FnCallThisConcurrent = js.native
     @JSName("mergeMapTo")
-    var mergeMapTo_Original: FnConcurrentInnerObservable = js.native
+    var mergeMapTo_Original: FnCallThisInnerObservableConcurrent = js.native
     @JSName("mergeMap")
-    var mergeMap_Original: FnConcurrentIndex = js.native
+    var mergeMap_Original: FnCallThisProjectConcurrent = js.native
     @JSName("mergeScan")
-    var mergeScan_Original: FnAcc = js.native
+    var mergeScan_Original: FnCallThisAccumulatorSeedConcurrent = js.native
     @JSName("merge")
-    var merge_Original: FnConcurrentObservables = js.native
+    var merge_Original: FnCallThisV2V3V4V5V6ConcurrentScheduler = js.native
     @JSName("min")
-    var min_Original: FnComparer = js.native
+    var min_Original: FnCallThisComparer = js.native
     @JSName("multicast")
-    var multicast_Original: FnSelector = js.native
+    var multicast_Original: FnCallSubjectFactorySelector = js.native
     @JSName("observeOn")
-    var observeOn_Original: FnDelayScheduler = js.native
+    var observeOn_Original: FnCallThisSchedulerDelay = js.native
     @JSName("onErrorResumeNext")
-    var onErrorResumeNext_Original: FnArrayObservables = js.native
+    var onErrorResumeNext_Original: FnCallThisV2V3V4V5V6 = js.native
     @JSName("pairwise")
-    var pairwise_Original: FnThisAny = js.native
+    var pairwise_Original: Fn1 = js.native
     @JSName("partition")
-    var partition_Original: FnIndexPredicateThisThisArg = js.native
+    var partition_Original: Fn3 = js.native
     @JSName("pluck")
-    var pluck_Original: FnProperties = js.native
+    var pluck_Original: FnCallThisProperties = js.native
     @JSName("publishBehavior")
-    var publishBehavior_Original: FnThisValueAny = js.native
+    var publishBehavior_Original: Fn5 = js.native
     @JSName("publishLast")
-    var publishLast_Original: FnThisAny = js.native
+    var publishLast_Original: Fn1 = js.native
     @JSName("publishReplay")
-    var publishReplay_Original: FnBufferSizeScheduler = js.native
+    var publishReplay_Original: FnCallThisBufferSizeWindowTimeSelectorScheduler = js.native
     @JSName("publish")
-    var publish_Original: FnSelectorSource = js.native
+    var publish_Original: Fn4 = js.native
     @JSName("race")
-    var race_Original: FnObservablesThis = js.native
+    var race_Original: FnCallThisObservables = js.native
     @JSName("reduce")
-    var reduce_Original: FnAccAccumulator = js.native
+    var reduce_Original: FnCallThisAccumulatorSeed = js.native
     @JSName("repeatWhen")
-    var repeatWhen_Original: FnNotifications = js.native
+    var repeatWhen_Original: FnCallThisNotifier = js.native
     @JSName("repeat")
-    var repeat_Original: FnCount = js.native
+    var repeat_Original: FnCallThisCount = js.native
     @JSName("retryWhen")
-    var retryWhen_Original: FnErrors = js.native
+    var retryWhen_Original: FnCallThisNotifier = js.native
     @JSName("retry")
-    var retry_Original: FnCount = js.native
+    var retry_Original: FnCallThisCount = js.native
     @JSName("sampleTime")
-    var sampleTime_Original: FnPeriod = js.native
+    var sampleTime_Original: FnCallThisPeriodScheduler = js.native
     @JSName("sample")
-    var sample_Original: FnNotifier = js.native
+    var sample_Original: Fn6 = js.native
     @JSName("scan")
-    var scan_Original: FnAccAccumulator = js.native
+    var scan_Original: FnCallThisAccumulatorSeed = js.native
     @JSName("sequenceEqual")
-    var sequenceEqual_Original: FnA = js.native
+    var sequenceEqual_Original: FnCallThisCompareToComparor = js.native
     @JSName("shareReplay")
-    var shareReplay_Original: FnBufferSizeConfig = js.native
+    var shareReplay_Original: FnCallThisBufferSizeWindowTimeScheduler = js.native
     @JSName("share")
-    var share_Original: FnThisAny = js.native
+    var share_Original: Fn1 = js.native
     @JSName("single")
-    var single_Original: FnIndexPredicate = js.native
+    var single_Original: FnCallThisPredicate = js.native
     @JSName("skipLast")
-    var skipLast_Original: FnCountThis = js.native
+    var skipLast_Original: Fn7 = js.native
     @JSName("skipUntil")
-    var skipUntil_Original: FnNotifier = js.native
+    var skipUntil_Original: Fn6 = js.native
     @JSName("skipWhile")
-    var skipWhile_Original: FnIndexPredicateThisValue = js.native
+    var skipWhile_Original: Fn8 = js.native
     @JSName("skip")
-    var skip_Original: FnCountThis = js.native
+    var skip_Original: Fn7 = js.native
     @JSName("startWith")
-    var startWith_Original: FnArrayScheduler = js.native
+    var startWith_Original: FnCallThisV1V2V3V4V5V6Scheduler = js.native
     @JSName("subscribeOn")
-    var subscribeOn_Original: FnDelayScheduler = js.native
+    var subscribeOn_Original: FnCallThisSchedulerDelay = js.native
     @JSName("switchMapTo")
-    var switchMapTo_Original: FnInnerIndex = js.native
+    var switchMapTo_Original: FnCallThisObservableResultSelector = js.native
     @JSName("switchMap")
-    var switchMap_Original: FnIndex = js.native
+    var switchMap_Original: Fn0 = js.native
     @JSName("switch")
-    var switch_Original: FnThis = js.native
+    var switch_Original: FnCallThis = js.native
     @JSName("takeLast")
-    var takeLast_Original: FnCountThis = js.native
+    var takeLast_Original: Fn7 = js.native
     @JSName("takeUntil")
-    var takeUntil_Original: FnNotifier = js.native
+    var takeUntil_Original: Fn6 = js.native
     @JSName("takeWhile")
-    var takeWhile_Original: FnIndexPredicateThisValue = js.native
+    var takeWhile_Original: Fn8 = js.native
     @JSName("take")
-    var take_Original: FnCountThis = js.native
+    var take_Original: Fn7 = js.native
     @JSName("throttleTime")
-    var throttleTime_Original: FnConfigDuration = js.native
+    var throttleTime_Original: FnCallThisDurationSchedulerConfig = js.native
     @JSName("throttle")
-    var throttle_Original: FnConfig = js.native
+    var throttle_Original: FnCallThisDurationSelectorConfig = js.native
     @JSName("timeInterval")
-    var timeInterval_Original: FnScheduler = js.native
+    var timeInterval_Original: FnCallThisScheduler = js.native
     @JSName("timeoutWith")
-    var timeoutWith_Original: FnDueScheduler = js.native
+    var timeoutWith_Original: FnCallThisDueWithObservableScheduler = js.native
     @JSName("timeout")
-    var timeout_Original: FnDue = js.native
+    var timeout_Original: FnCallThisDueScheduler = js.native
     @JSName("timestamp")
-    var timestamp_Original: FnScheduler = js.native
+    var timestamp_Original: FnCallThisScheduler = js.native
     @JSName("toArray")
-    var toArray_Original: FnThisAny = js.native
+    var toArray_Original: Fn1 = js.native
     @JSName("windowCount")
-    var windowCount_Original: FnStartWindowEvery = js.native
+    var windowCount_Original: FnCallThisWindowSizeStartWindowEvery = js.native
     @JSName("windowTime")
-    var windowTime_Original: FnMaxWindowSize = js.native
+    var windowTime_Original: FnCallThisWindowTimeSpanWindowCreationIntervalMaxWindowSizeScheduler = js.native
     @JSName("windowToggle")
-    var windowToggle_Original: FnClosingSelector = js.native
+    var windowToggle_Original: FnCallThisOpeningsClosingSelector = js.native
     @JSName("windowWhen")
-    var windowWhen_Original: FnClosingSelectorThis = js.native
+    var windowWhen_Original: FnCallThisClosingSelector = js.native
     @JSName("window")
-    var window_Original: FnThisWindowBoundaries = js.native
+    var window_Original: FnCallThisWindowBoundaries = js.native
     @JSName("withLatestFrom")
-    var withLatestFrom_Original: FnArrayObservablesProject = js.native
+    var withLatestFrom_Original: Fn9 = js.native
     @JSName("zipAll")
-    var zipAll_Original: FnProject = js.native
+    var zipAll_Original: FnCallThisProject = js.native
     @JSName("zip")
-    var zip_Original: FnArrayObservablesProjectThis = js.native
+    var zip_Original: Fn10 = js.native
     def _catch[T, R](
       selector: js.Function2[
           /* err */ js.Any, 
@@ -1243,7 +1242,7 @@ object internalObservableMod extends js.Object {
     def repeat[T](count: Double): js.Any = js.native
     def repeatWhen[T](
       notifier: js.Function1[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ /* notifications */ js.Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ /* errors */ js.Any, 
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ _
         ]
     ): js.Any = js.native

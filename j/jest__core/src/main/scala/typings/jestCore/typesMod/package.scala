@@ -10,6 +10,5 @@ package object typesMod {
     js.Promise[typings.jestCore.AnonFiltered]
   ]
   type TestPathCases = js.Array[typings.jestCore.AnonIsMatch]
-  type TestPathCasesWithPathPattern = typings.jestCore.typesMod.TestPathCases with typings.jestCore.AnonPath
-  type TestRunData = js.Array[typings.jestCore.AnonContextMatches]
+  type TestRunData = js.Array[typings.jestCore.AnonMatches]
 }

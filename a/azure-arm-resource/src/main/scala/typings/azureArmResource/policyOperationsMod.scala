@@ -760,8 +760,8 @@ object policyOperationsMod extends js.Object {
       */
     def list(): js.Promise[PolicyAssignmentListResult] = js.native
     def list(callback: ServiceCallback[PolicyAssignmentListResult]): Unit = js.native
-    def list(options: AnonCustomHeadersFilter): js.Promise[PolicyAssignmentListResult] = js.native
-    def list(options: AnonCustomHeadersFilter, callback: ServiceCallback[PolicyAssignmentListResult]): Unit = js.native
+    def list(options: AnonFilter): js.Promise[PolicyAssignmentListResult] = js.native
+    def list(options: AnonFilter, callback: ServiceCallback[PolicyAssignmentListResult]): Unit = js.native
     /**
       * @summary Retrieves all policy assignments that apply to a resource.
       *
@@ -861,7 +861,7 @@ object policyOperationsMod extends js.Object {
       parentResourcePath: String,
       resourceType: String,
       resourceName: String,
-      options: AnonCustomHeadersFilter
+      options: AnonFilter
     ): js.Promise[PolicyAssignmentListResult] = js.native
     def listForResource(
       resourceGroupName: String,
@@ -869,7 +869,7 @@ object policyOperationsMod extends js.Object {
       parentResourcePath: String,
       resourceType: String,
       resourceName: String,
-      options: AnonCustomHeadersFilter,
+      options: AnonFilter,
       callback: ServiceCallback[PolicyAssignmentListResult]
     ): Unit = js.native
     /**
@@ -926,10 +926,10 @@ object policyOperationsMod extends js.Object {
       */
     def listForResourceGroup(resourceGroupName: String): js.Promise[PolicyAssignmentListResult] = js.native
     def listForResourceGroup(resourceGroupName: String, callback: ServiceCallback[PolicyAssignmentListResult]): Unit = js.native
-    def listForResourceGroup(resourceGroupName: String, options: AnonCustomHeadersFilter): js.Promise[PolicyAssignmentListResult] = js.native
+    def listForResourceGroup(resourceGroupName: String, options: AnonFilter): js.Promise[PolicyAssignmentListResult] = js.native
     def listForResourceGroup(
       resourceGroupName: String,
-      options: AnonCustomHeadersFilter,
+      options: AnonFilter,
       callback: ServiceCallback[PolicyAssignmentListResult]
     ): Unit = js.native
     /**
@@ -1057,7 +1057,7 @@ object policyOperationsMod extends js.Object {
       * @reject {Error|ServiceError} - The error object.
       */
     def listForResourceGroupWithHttpOperationResponse(resourceGroupName: String): js.Promise[HttpOperationResponse[PolicyAssignmentListResult]] = js.native
-    def listForResourceGroupWithHttpOperationResponse(resourceGroupName: String, options: AnonCustomHeadersFilter): js.Promise[HttpOperationResponse[PolicyAssignmentListResult]] = js.native
+    def listForResourceGroupWithHttpOperationResponse(resourceGroupName: String, options: AnonFilter): js.Promise[HttpOperationResponse[PolicyAssignmentListResult]] = js.native
     /**
       * @summary Retrieves all policy assignments that apply to a resource.
       *
@@ -1249,7 +1249,7 @@ object policyOperationsMod extends js.Object {
       parentResourcePath: String,
       resourceType: String,
       resourceName: String,
-      options: AnonCustomHeadersFilter
+      options: AnonFilter
     ): js.Promise[HttpOperationResponse[PolicyAssignmentListResult]] = js.native
     /**
       * @summary Retrieves all policy assignments that apply to a subscription.
@@ -1373,7 +1373,7 @@ object policyOperationsMod extends js.Object {
       * @reject {Error|ServiceError} - The error object.
       */
     def listWithHttpOperationResponse(): js.Promise[HttpOperationResponse[PolicyAssignmentListResult]] = js.native
-    def listWithHttpOperationResponse(options: AnonCustomHeadersFilter): js.Promise[HttpOperationResponse[PolicyAssignmentListResult]] = js.native
+    def listWithHttpOperationResponse(options: AnonFilter): js.Promise[HttpOperationResponse[PolicyAssignmentListResult]] = js.native
   }
   
   @js.native

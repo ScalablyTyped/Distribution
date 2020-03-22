@@ -57,12 +57,7 @@ object minMod extends js.Object {
   def formatIncompletePhoneNumber(number: String, countryCode: CountryCode): String = js.native
   def getCountries(): js.Array[CountryCode] = js.native
   def getCountryCallingCode(countryCode: CountryCode): CountryCallingCode = js.native
-  def getExampleNumber(
-    country: CountryCode,
-    examples: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ country in libphonenumber-js.libphonenumber-js/types.CountryCode ]: libphonenumber-js.libphonenumber-js/types.NationalNumber}
-    */ typings.libphonenumberJs.libphonenumberJsStrings.getExampleNumber with js.Any
-  ): js.UndefOr[typings.libphonenumberJs.typesMod.PhoneNumber] = js.native
+  def getExampleNumber(country: CountryCode, examples: countryinCountryCodeNatio): js.UndefOr[typings.libphonenumberJs.typesMod.PhoneNumber] = js.native
   def getExtPrefix(countryCode: CountryCode): String = js.native
   def isSupportedCountry(countryCode: CountryCode): Boolean = js.native
   def parseDigits(character: String): String = js.native

@@ -1,7 +1,7 @@
 package typings.playcanvas.pc
 
 import typings.playcanvas.pc.callbacks.CalculateMatrix
-import typings.playcanvas.pc.callbacks.VrCamera
+import typings.playcanvas.pc.callbacks.XrError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -211,26 +211,6 @@ class CameraComponent protected () extends Component {
     */
   val viewMatrix: Mat4 = js.native
   /**
-    * @name pc.CameraComponent#vrDisplay
-    * @type {pc.VrDisplay}
-    * @description The {@link pc.VrDisplay} that the camera is current displaying to. This is set automatically by calls to {@link pc.CameraComponent#enterVr}
-    * or {@link pc.CameraComponent#exitVr}. Setting this property to a display directly enables the camera to use the transformation information
-    * from a display without rendering stereo to it, e.g. for "magic window" style experiences.
-    * @example
-    * // enable magic window style interface
-    * var display = this.app.vr.display;
-    * if (display) {
-    *     this.entity.camera.vrDisplay = display;
-    * }
-    *
-    * var camera = this.entity.camera;
-    * camera.enterVr(function (err) {
-    *     if (err) return;
-    *     var display = camera.vrDisplay; // access presenting pc.VrDisplay
-    * });
-    */
-  var vrDisplay: VrDisplay = js.native
-  /**
     * @function
     * @name pc.CameraComponent#calculateAspectRatio
     * @description Calculates aspect ratio value for a given render target.
@@ -255,56 +235,17 @@ class CameraComponent protected () extends Component {
   def calculateTransform(transformMatrix: Mat4, view: Double): Unit = js.native
   /**
     * @function
-    * @name pc.CameraComponent#enterVr
-    * @description Attempt to start presenting this camera to a {@link pc.VrDisplay}.
-    * @param {pc.callbacks.VrCamera} callback - Function called once to indicate success of failure. The callback takes one argument (err).
-    * On success it returns null on failure it returns the error message.
+    * @name pc.CameraComponent#endXr
+    * @description Attempt to end XR session of this camera
+    * @param {pc.callbacks.XrError} [callback] - Optional callback function called once session is ended. The callback has one argument Error - it is null if successfully ended XR session.
     * @example
     * // On an entity with a camera component
-    * this.entity.camera.enterVr(function (err) {
-    *     if (err) {
-    *         console.error(err);
-    *     } else {
-    *         // in VR!
-    *     }
+    * this.entity.camera.endXr(function (err) {
+    *     // not anymore in XR
     * });
     */
-  def enterVr(callback: VrCamera): Unit = js.native
-  /**
-    * @function
-    * @name pc.CameraComponent#enterVr
-    * @variation 2
-    * @description Attempt to start presenting this camera to a {@link pc.VrDisplay}.
-    * @param {pc.VrDisplay} display - The VrDisplay to present. If not supplied this uses {@link pc.VrManager#display} as the default.
-    * @param {pc.callbacks.VrCamera} callback - Function called once to indicate success of failure. The callback takes one argument (err).
-    * On success it returns null on failure it returns the error message.
-    * @example
-    * // On an entity with a camera component
-    * this.entity.camera.enterVr(function (err) {
-    *     if (err) {
-    *         console.error(err);
-    *     } else {
-    *         // in VR!
-    *     }
-    * });
-    */
-  def enterVr(display: VrDisplay, callback: VrCamera): Unit = js.native
-  /**
-    * @function
-    * @name pc.CameraComponent#exitVr
-    * @description Attempt to stop presenting this camera.
-    * @param {pc.callbacks.VrCamera} callback - Function called once to indicate success of failure. The callback takes one argument (err).
-    * On success it returns null on failure it returns the error message.
-    * @example
-    * this.entity.camera.exitVr(function (err) {
-    *     if (err) {
-    *         console.error(err);
-    *     } else {
-    *         // exited successfully
-    *     }
-    * });
-    */
-  def exitVr(callback: VrCamera): Unit = js.native
+  def endXr(): Unit = js.native
+  def endXr(callback: XrError): Unit = js.native
   /**
     * @function
     * @name pc.CameraComponent#screenToWorld
@@ -326,6 +267,37 @@ class CameraComponent protected () extends Component {
     */
   def screenToWorld(screenx: Double, screeny: Double, cameraz: Double): Vec3 = js.native
   def screenToWorld(screenx: Double, screeny: Double, cameraz: Double, worldCoord: Vec3): Vec3 = js.native
+  /**
+    * @function
+    * @name pc.CameraComponent#startXr
+    * @description Attempt to start XR session with this camera
+    * @param {string} type - The type of session. Can be one of the following:
+    *
+    * * {@link pc.XRTYPE_INLINE}: Inline - always available type of session. It has limited feature availability and is rendered into HTML element.
+    * * {@link pc.XRTYPE_VR}: Immersive VR - session that provides exclusive access to the VR device with the best available tracking features.
+    * * {@link pc.XRTYPE_AR}: Immersive AR - session that provides exclusive access to the VR/AR device that is intended to be blended with the real-world environment.
+    *
+    * @param {string} spaceType - reference space type. Can be one of the following:
+    *
+    * * {@link pc.XRSPACE_VIEWER}: Viewer - always supported space with some basic tracking capabilities.
+    * * {@link pc.XRSPACE_LOCAL}: Local - represents a tracking space with a native origin near the viewer at the time of creation. It is meant for seated or basic local XR sessions.
+    * * {@link pc.XRSPACE_LOCALFLOOR}: Local Floor - represents a tracking space with a native origin at the floor in a safe position for the user to stand. The y axis equals 0 at floor level. Floor level value might be estimated by the underlying platform. It is meant for seated or basic local XR sessions.
+    * * {@link pc.XRSPACE_BOUNDEDFLOOR}: Bounded Floor - represents a tracking space with its native origin at the floor, where the user is expected to move within a pre-established boundary.
+    * * {@link pc.XRSPACE_UNBOUNDED}: Unbounded - represents a tracking space where the user is expected to move freely around their environment, potentially long distances from their starting point.
+    *
+    * @param {pc.callbacks.XrError} [callback] - Optional callback function called once the session is started. The callback has one argument Error - it is null if the XR session started successfully.
+    * @example
+    * // On an entity with a camera component
+    * this.entity.camera.startXr(pc.XRTYPE_VR, pc.XRSPACE_LOCAL, function (err) {
+    *     if (err) {
+    *         // failed to start XR session
+    *     } else {
+    *         // in XR
+    *     }
+    * });
+    */
+  def startXr(`type`: String, spaceType: String): Unit = js.native
+  def startXr(`type`: String, spaceType: String, callback: XrError): Unit = js.native
   /**
     * @function
     * @name pc.CameraComponent#worldToScreen

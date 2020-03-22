@@ -6,24 +6,25 @@ import scala.scalajs.js.annotation._
 
 trait AppDetailsOptions extends js.Object {
   /**
-    * Index of the icon in appIconPath. Ignored when appIconPath is not set. Default
-    * is 0.
+    * Index of the icon in `appIconPath`. Ignored when `appIconPath` is not set.
+    * Default is `0`.
     */
   var appIconIndex: js.UndefOr[Double] = js.undefined
   /**
-    * Window's .
+    * Window's Relaunch Icon.
     */
   var appIconPath: js.UndefOr[String] = js.undefined
   /**
-    * Window's . It has to be set, otherwise the other options will have no effect.
+    * Window's App User Model ID. It has to be set, otherwise the other options will
+    * have no effect.
     */
   var appId: js.UndefOr[String] = js.undefined
   /**
-    * Window's .
+    * Window's Relaunch Command.
     */
   var relaunchCommand: js.UndefOr[String] = js.undefined
   /**
-    * Window's .
+    * Window's Relaunch Display Name.
     */
   var relaunchDisplayName: js.UndefOr[String] = js.undefined
 }

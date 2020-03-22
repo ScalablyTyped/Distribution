@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 object datePickerLocaleZhCNMod extends js.Object {
   @js.native
   object default extends js.Object {
-    var DatePickerLocale: AnonAmDay = js.native
+    var DatePickerLocale: AnonDay = js.native
     var dismissText: String = js.native
     var extra: String = js.native
     var okText: String = js.native

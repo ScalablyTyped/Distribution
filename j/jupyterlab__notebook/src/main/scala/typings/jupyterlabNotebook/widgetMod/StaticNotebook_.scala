@@ -9,9 +9,9 @@ import typings.jupyterlabNotebook.widgetMod.StaticNotebook.IOptions
 import typings.jupyterlabObservables.observablemapMod.IObservableMap
 import typings.jupyterlabObservables.observablemapMod.IObservableMap.IChangedArgs
 import typings.jupyterlabRendermime.tokensMod.IRenderMimeRegistry
-import typings.phosphorCoreutils.jsonMod.JSONValue
-import typings.phosphorSignaling.mod.ISignal
-import typings.phosphorWidgets.mod.Widget
+import typings.luminoCoreutils.jsonMod.ReadonlyPartialJSONValue
+import typings.luminoSignaling.mod.ISignal
+import typings.luminoWidgets.mod.Widget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -79,44 +79,45 @@ class StaticNotebook_ protected () extends Widget {
     */
   var _updateNotebookConfig: js.Any = js.native
   /**
-    * Get the mimetype for code cells.
-    */
-  val codeMimetype: String = js.native
-  /**
     * The cell factory used by the widget.
     */
   val contentFactory: IContentFactory = js.native
   /**
+    * The Rendermime instance used by the widget.
+    */
+  val rendermime: IRenderMimeRegistry = js.native
+  /**
+    * Get the mimetype for code cells.
+    */
+  def codeMimetype(): String = js.native
+  /**
     * A configuration object for cell editor settings.
     */
-  var editorConfig: IEditorConfig = js.native
-  /**
-    * The model for the widget.
-    */
-  var model: INotebookModel = js.native
+  def editorConfig(): IEditorConfig = js.native
+  def editorConfig(value: IEditorConfig): js.Any = js.native
+  def model(): js.Any = js.native
+  def model(newValue: INotebookModel): js.Any = js.native
   /**
     * A signal emitted when the model of the notebook changes.
     */
-  val modelChanged: ISignal[this.type, Unit] = js.native
+  def modelChanged(): ISignal[this.type, Unit] = js.native
   /**
     * A signal emitted when the model content changes.
     *
     * #### Notes
     * This is a convenience signal that follows the current model.
     */
-  val modelContentChanged: ISignal[this.type, Unit] = js.native
+  def modelContentChanged(): ISignal[this.type, Unit] = js.native
+  /**
+    * The model for the widget.
+    */
+  @JSName("model")
+  def model_Union(): INotebookModel | Null = js.native
   /**
     * A configuration object for notebook settings.
     */
-  var notebookConfig: INotebookConfig = js.native
-  /**
-    * The Rendermime instance used by the widget.
-    */
-  val rendermime: IRenderMimeRegistry = js.native
-  /**
-    * A read-only sequence of the widgets in the notebook.
-    */
-  val widgets: js.Array[Cell] = js.native
+  def notebookConfig(): INotebookConfig = js.native
+  def notebookConfig(value: INotebookConfig): js.Any = js.native
   /**
     * Handle a cell being inserted.
     *
@@ -142,7 +143,13 @@ class StaticNotebook_ protected () extends Widget {
     * The default implementation updates the mimetypes of the code cells
     * when the `language_info` metadata changes.
     */
-  /* protected */ def onMetadataChanged(sender: IObservableMap[JSONValue], args: IChangedArgs[JSONValue]): Unit = js.native
+  /* protected */ def onMetadataChanged(
+    sender: IObservableMap[js.UndefOr[ReadonlyPartialJSONValue]],
+    args: IChangedArgs[ReadonlyPartialJSONValue]
+  ): Unit = js.native
+  /* protected */ def onModelChanged(): Unit = js.native
+  /* protected */ def onModelChanged(oldValue: Null, newValue: INotebookModel): Unit = js.native
+  /* protected */ def onModelChanged(oldValue: INotebookModel): Unit = js.native
   /**
     * Handle a new model.
     *
@@ -159,5 +166,9 @@ class StaticNotebook_ protected () extends Widget {
     * The default implementation emits the `modelContentChanged` signal.
     */
   /* protected */ def onModelContentChanged(model: INotebookModel, args: Unit): Unit = js.native
+  /**
+    * A read-only sequence of the widgets in the notebook.
+    */
+  def widgets(): js.Array[Cell] = js.native
 }
 

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.highcharts.mod.SeriesOptions because var conflicts: zIndex. Inlined id, index, legendIndex, mapData, name, stack, treemap, `type`, xAxis, yAxis */ trait SeriesWordcloudOptions
+- typings.highcharts.mod.SeriesOptions because var conflicts: zIndex. Inlined id, index, legendIndex, mapData, name, stack, `type`, xAxis, yAxis */ trait SeriesWordcloudOptions
   extends PlotWordcloudOptions
      with SeriesOptionsType {
   /**
@@ -29,7 +29,7 @@ import scala.scalajs.js.annotation._
     * number of data points exceeds the series' turboThreshold, this option is
     * not available. (see online documentation for example)
     */
-  var data: js.UndefOr[js.Array[(js.Tuple2[String, Double]) | SeriesWordcloudDataOptions]] = js.undefined
+  var data: js.UndefOr[js.Array[(js.Tuple2[String, Double]) | PointOptionsObject]] = js.undefined
   /**
     * Not available
     */
@@ -101,7 +101,6 @@ import scala.scalajs.js.annotation._
     * string.
     */
   var stack: js.UndefOr[Double | String] = js.undefined
-  var treemap: js.UndefOr[SeriesTreemapOptions] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) This property is only in
     * TypeScript non-optional and might be `undefined` in series objects from
@@ -128,10 +127,10 @@ object SeriesWordcloudOptions {
   @scala.inline
   def apply(
     `type`: String | wordcloud,
-    accessibility: js.Object | PlotWordcloudAccessibilityOptions = null,
+    accessibility: SeriesAccessibilityOptionsObject = null,
     allowExtendPlayingField: js.UndefOr[Boolean] = js.undefined,
     allowPointSelect: js.UndefOr[Boolean] = js.undefined,
-    animation: PlotWordcloudAnimationOptions = null,
+    animation: Boolean | AnimationOptionsObject = null,
     animationLimit: Int | Double = null,
     boostBlending: OptionsBoostBlendingValue = null,
     borderColor: ColorString | GradientColorObject | PatternObject = null,
@@ -145,18 +144,19 @@ object SeriesWordcloudOptions {
     colorKey: String = null,
     colors: js.Array[ColorString | GradientColorObject | PatternObject] = null,
     compareStart: js.UndefOr[Boolean] = js.undefined,
-    connectors: PlotWordcloudConnectorsOptions = null,
+    connectors: SeriesConnectorsOptionsObject = null,
     crisp: js.UndefOr[scala.Nothing] = js.undefined,
     cropThreshold: Int | Double = null,
     cropTreshold: js.UndefOr[scala.Nothing] = js.undefined,
     cursor: String | CursorValue = null,
-    data: js.Array[(js.Tuple2[String, Double]) | SeriesWordcloudDataOptions] = null,
+    data: js.Array[(js.Tuple2[String, Double]) | PointOptionsObject] = null,
+    dataSorting: DataSortingOptionsObject | PlotWordcloudDataSortingOptions = null,
     depth: js.UndefOr[scala.Nothing] = js.undefined,
     description: String = null,
     edgeColor: js.UndefOr[scala.Nothing] = js.undefined,
     edgeWidth: Int | Double = null,
     enableMouseTracking: js.UndefOr[Boolean] = js.undefined,
-    events: PlotWordcloudEventsOptions = null,
+    events: SeriesEventsOptionsObject = null,
     groupPadding: js.UndefOr[scala.Nothing] = js.undefined,
     groupZPadding: js.UndefOr[scala.Nothing] = js.undefined,
     grouping: js.UndefOr[scala.Nothing] = js.undefined,
@@ -164,9 +164,9 @@ object SeriesWordcloudOptions {
     includeInDataExport: js.UndefOr[Boolean] = js.undefined,
     index: Int | Double = null,
     keys: js.Array[String] = null,
-    label: PlotWordcloudLabelOptions = null,
-    lastPrice: PlotWordcloudLastPriceOptions = null,
-    lastVisiblePrice: PlotWordcloudLastVisiblePriceOptions = null,
+    label: SeriesLabelOptionsObject = null,
+    lastPrice: SeriesLastPriceOptionsObject = null,
+    lastVisiblePrice: SeriesLastVisiblePriceOptionsObject = null,
     legendIndex: Int | Double = null,
     linkedTo: String = null,
     mapData: js.Array[SeriesMapDataOptions] | js.Any = null,
@@ -177,7 +177,7 @@ object SeriesWordcloudOptions {
     name: String = null,
     opacity: Int | Double = null,
     placementStrategy: String = null,
-    point: PlotWordcloudPointOptions = null,
+    point: PlotSeriesPointOptions = null,
     pointDescriptionFormatter: js.Function = null,
     pointPadding: js.UndefOr[scala.Nothing] = js.undefined,
     pointWidth: js.UndefOr[scala.Nothing] = js.undefined,
@@ -187,11 +187,10 @@ object SeriesWordcloudOptions {
     skipKeyboardNavigation: js.UndefOr[Boolean] = js.undefined,
     spiral: String = null,
     stack: Double | String = null,
-    states: PlotWordcloudStatesOptions = null,
+    states: SeriesStatesOptionsObject = null,
     stickyTracking: js.UndefOr[Boolean] = js.undefined,
     style: CSSObject = null,
-    tooltip: PlotWordcloudTooltipOptions = null,
-    treemap: SeriesTreemapOptions = null,
+    tooltip: SeriesTooltipOptionsObject = null,
     turboThreshold: Int | Double = null,
     visible: js.UndefOr[Boolean] = js.undefined,
     xAxis: Double | String = null,
@@ -223,6 +222,7 @@ object SeriesWordcloudOptions {
     if (!js.isUndefined(cropTreshold)) __obj.updateDynamic("cropTreshold")(cropTreshold.asInstanceOf[js.Any])
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (dataSorting != null) __obj.updateDynamic("dataSorting")(dataSorting.asInstanceOf[js.Any])
     if (!js.isUndefined(depth)) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (!js.isUndefined(edgeColor)) __obj.updateDynamic("edgeColor")(edgeColor.asInstanceOf[js.Any])
@@ -263,7 +263,6 @@ object SeriesWordcloudOptions {
     if (!js.isUndefined(stickyTracking)) __obj.updateDynamic("stickyTracking")(stickyTracking.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (treemap != null) __obj.updateDynamic("treemap")(treemap.asInstanceOf[js.Any])
     if (turboThreshold != null) __obj.updateDynamic("turboThreshold")(turboThreshold.asInstanceOf[js.Any])
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     if (xAxis != null) __obj.updateDynamic("xAxis")(xAxis.asInstanceOf[js.Any])

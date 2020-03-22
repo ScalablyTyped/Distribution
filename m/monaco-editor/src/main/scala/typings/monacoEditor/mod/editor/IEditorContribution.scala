@@ -17,21 +17,16 @@ trait IEditorContribution extends js.Object {
     * Dispose this contribution.
     */
   def dispose(): Unit
-  /**
-    * Get a unique identifier for this contribution.
-    */
-  def getId(): String
 }
 
 object IEditorContribution {
   @scala.inline
   def apply(
     dispose: () => Unit,
-    getId: () => String,
     restoreViewState: /* state */ js.Any => Unit = null,
     saveViewState: () => _ = null
   ): IEditorContribution = {
-    val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), getId = js.Any.fromFunction0(getId))
+    val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose))
     if (restoreViewState != null) __obj.updateDynamic("restoreViewState")(js.Any.fromFunction1(restoreViewState))
     if (saveViewState != null) __obj.updateDynamic("saveViewState")(js.Any.fromFunction0(saveViewState))
     __obj.asInstanceOf[IEditorContribution]

@@ -18,7 +18,7 @@ object Arm64CimmOperand {
     `type`: cimm,
     value: Int64_,
     ext: Arm64Extender = null,
-    shift: AnonTypeValue = null,
+    shift: AnonValue = null,
     vas: Arm64Vas = null,
     vectorIndex: Int | Double = null
   ): Arm64CimmOperand = {

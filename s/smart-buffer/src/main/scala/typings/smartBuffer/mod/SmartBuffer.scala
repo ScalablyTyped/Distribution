@@ -2,6 +2,7 @@ package typings.smartBuffer.mod
 
 import typings.node.Buffer
 import typings.node.BufferEncoding
+import typings.std.BigInt
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +18,74 @@ class SmartBuffer () extends js.Object {
   def this(options: SmartBufferOptions) = this()
   var _buff: js.Any = js.native
   var _encoding: js.Any = js.native
+  /**
+    * Ensures that the internal Buffer is large enough to write at least the given amount of data.
+    *
+    * @param minLength { Number } The minimum length of the data needs to be written.
+    */
+  var _ensureCapacity: js.Any = js.native
+  /**
+    * Ensures that the internal Buffer is large enough to write data.
+    *
+    * @param dataLength { Number } The length of the data that needs to be written.
+    * @param offset { Number } The offset of the data to be written (defaults to writeOffset).
+    */
+  var _ensureWriteable: js.Any = js.native
+  /**
+    * Handles writing or insert of a Buffer.
+    *
+    * @param value { Buffer } The Buffer to write.
+    * @param offset { Number } The offset to write the Buffer to.
+    */
+  var _handleBuffer: js.Any = js.native
+  /**
+    * Handles inserting and writing strings.
+    *
+    * @param value { String } The String value to insert.
+    * @param isInsert { Boolean } True if inserting a string, false if writing.
+    * @param arg2 { Number | String } The offset to insert the string at, or the BufferEncoding to use.
+    * @param encoding { String } The BufferEncoding to use for writing strings (defaults to instance encoding).
+    */
+  var _handleString: js.Any = js.native
+  /**
+    * Inserts a numeric number value based on the given offset and value.
+    *
+    * @typeparam T { number | bigint } The type of the value to be written
+    *
+    * @param func { Function(offset: T, offset?) => number} The function to write data on the internal Buffer with.
+    * @param byteSize { Number } The number of bytes written.
+    * @param value { T } The number value to write.
+    * @param offset { Number } the offset to write the number at (REQUIRED).
+    *
+    * @returns SmartBuffer this buffer
+    */
+  var _insertNumberValue: js.Any = js.native
+  /**
+    * Reads a numeric number value using the provided function.
+    *
+    * @typeparam T { number | bigint } The type of the value to be read
+    *
+    * @param func { Function(offset: number) => number } The function to read data on the internal Buffer with.
+    * @param byteSize { Number } The number of bytes read.
+    * @param offset { Number } The offset to read from (optional). When this is not provided, the managed readOffset is used instead.
+    *
+    * @returns { T } the number value
+    */
+  var _readNumberValue: js.Any = js.native
   var _readOffset: js.Any = js.native
+  /**
+    * Writes a numeric number value based on the given offset and value.
+    *
+    * @typeparam T { number | bigint } The type of the value to be written
+    *
+    * @param func { Function(offset: T, offset?) => number} The function to write data on the internal Buffer with.
+    * @param byteSize { Number } The number of bytes written.
+    * @param value { T } The number value to write.
+    * @param offset { Number } the offset to write the number at (REQUIRED).
+    *
+    * @returns SmartBuffer this buffer
+    */
+  var _writeNumberValue: js.Any = js.native
   var _writeOffset: js.Any = js.native
   /**
     * Gets the currently set string encoding of the SmartBuffer instance.
@@ -30,6 +98,20 @@ class SmartBuffer () extends js.Object {
     * @param encoding { BufferEncoding } The string Buffer encoding to set.
     */
   var encoding: BufferEncoding = js.native
+  /**
+    * Ensures that the internal Buffer is large enough to insert data.
+    *
+    * @param dataLength { Number } The length of the data that needs to be written.
+    * @param offset { Number } The offset of the data to be written.
+    */
+  var ensureInsertable: js.Any = js.native
+  /**
+    * Ensures that the internal Buffer is large enough to read data.
+    *
+    * @param length { Number } The length of the data that needs to be read.
+    * @param offset { Number } The offset of the data that needs to be read.
+    */
+  var ensureReadable: js.Any = js.native
   /**
     * Gets the underlying internal Buffer. (This includes unmanaged data in the Buffer)
     *
@@ -60,71 +142,6 @@ class SmartBuffer () extends js.Object {
     */
   var writeOffset: Double = js.native
   /**
-    * Ensures that the internal Buffer is large enough to write at least the given amount of data.
-    *
-    * @param minLength { Number } The minimum length of the data needs to be written.
-    */
-  /* private */ def _ensureCapacity(minLength: js.Any): js.Any = js.native
-  /**
-    * Ensures that the internal Buffer is large enough to write data.
-    *
-    * @param dataLength { Number } The length of the data that needs to be written.
-    * @param offset { Number } The offset of the data to be written (defaults to writeOffset).
-    */
-  /* private */ def _ensureWriteable(dataLength: js.Any): js.Any = js.native
-  /* private */ def _ensureWriteable(dataLength: js.Any, offset: js.Any): js.Any = js.native
-  /**
-    * Handles writing or insert of a Buffer.
-    *
-    * @param value { Buffer } The Buffer to write.
-    * @param offset { Number } The offset to write the Buffer to.
-    */
-  /* private */ def _handleBuffer(value: js.Any, isInsert: js.Any): js.Any = js.native
-  /* private */ def _handleBuffer(value: js.Any, isInsert: js.Any, offset: js.Any): js.Any = js.native
-  /**
-    * Handles inserting and writing strings.
-    *
-    * @param value { String } The String value to insert.
-    * @param isInsert { Boolean } True if inserting a string, false if writing.
-    * @param arg2 { Number | String } The offset to insert the string at, or the BufferEncoding to use.
-    * @param encoding { String } The BufferEncoding to use for writing strings (defaults to instance encoding).
-    */
-  /* private */ def _handleString(value: js.Any, isInsert: js.Any): js.Any = js.native
-  /* private */ def _handleString(value: js.Any, isInsert: js.Any, arg3: js.Any): js.Any = js.native
-  /* private */ def _handleString(value: js.Any, isInsert: js.Any, arg3: js.Any, encoding: js.Any): js.Any = js.native
-  /**
-    * Inserts a numeric number value based on the given offset and value.
-    *
-    * @param func { Function(offset: number, offset?) => number} The function to write data on the internal Buffer with.
-    * @param byteSize { Number } The number of bytes written.
-    * @param value { Number } The number value to write.
-    * @param offset { Number } the offset to write the number at (REQUIRED).
-    *
-    */
-  /* private */ def _insertNumberValue(func: js.Any, byteSize: js.Any, value: js.Any, offset: js.Any): js.Any = js.native
-  /**
-    * Reads a numeric number value using the provided function.
-    *
-    * @param func { Function(offset: number) => number } The function to read data on the internal Buffer with.
-    * @param byteSize { Number } The number of bytes read.
-    * @param offset { Number } The offset to read from (optional). When this is not provided, the managed readOffset is used instead.
-    *
-    * @param { Number }
-    */
-  /* private */ def _readNumberValue(func: js.Any, byteSize: js.Any): js.Any = js.native
-  /* private */ def _readNumberValue(func: js.Any, byteSize: js.Any, offset: js.Any): js.Any = js.native
-  /**
-    * Writes a numeric number value based on the given offset and value.
-    *
-    * @param func { Function(offset: number, offset?) => number} The function to write data on the internal Buffer with.
-    * @param byteSize { Number } The number of bytes written.
-    * @param value { Number } The number value to write.
-    * @param offset { Number } the offset to write the number at (REQUIRED).
-    *
-    */
-  /* private */ def _writeNumberValue(func: js.Any, byteSize: js.Any, value: js.Any): js.Any = js.native
-  /* private */ def _writeNumberValue(func: js.Any, byteSize: js.Any, value: js.Any, offset: js.Any): js.Any = js.native
-  /**
     * Clears the SmartBuffer instance to its original empty state.
     */
   def clear(): SmartBuffer = js.native
@@ -133,20 +150,41 @@ class SmartBuffer () extends js.Object {
     */
   def destroy(): SmartBuffer = js.native
   /**
-    * Ensures that the internal Buffer is large enough to insert data.
+    * Inserts a BigInt64BE value at the given offset value.
     *
-    * @param dataLength { Number } The length of the data that needs to be written.
-    * @param offset { Number } The offset of the data to be written.
+    * @param value { BigInt } The value to insert.
+    * @param offset { Number } The offset to insert the value at.
+    *
+    * @return this
     */
-  /* private */ def ensureInsertable(dataLength: js.Any, offset: js.Any): js.Any = js.native
+  def insertBigInt64BE(value: BigInt, offset: Double): SmartBuffer = js.native
   /**
-    * Ensures that the internal Buffer is large enough to read data.
+    * Inserts a Int64LE value at the given offset value.
     *
-    * @param length { Number } The length of the data that needs to be read.
-    * @param offset { Number } The offset of the data that needs to be read.
+    * @param value { BigInt } The value to insert.
+    * @param offset { Number } The offset to insert the value at.
+    *
+    * @return this
     */
-  /* private */ def ensureReadable(length: js.Any): js.Any = js.native
-  /* private */ def ensureReadable(length: js.Any, offset: js.Any): js.Any = js.native
+  def insertBigInt64LE(value: BigInt, offset: Double): SmartBuffer = js.native
+  /**
+    * Inserts a BigUInt64BE value at the given offset value.
+    *
+    * @param value { Number } The value to insert.
+    * @param offset { Number } The offset to insert the value at.
+    *
+    * @return this
+    */
+  def insertBigUInt64BE(value: BigInt, offset: Double): SmartBuffer = js.native
+  /**
+    * Inserts a BigUInt64LE value at the given offset value.
+    *
+    * @param value { Number } The value to insert.
+    * @param offset { Number } The offset to insert the value at.
+    *
+    * @return this
+    */
+  def insertBigUInt64LE(value: BigInt, offset: Double): SmartBuffer = js.native
   /**
     * Writes a Buffer to the current write position.
     *
@@ -314,6 +352,38 @@ class SmartBuffer () extends js.Object {
     */
   def insertUInt8(value: Double, offset: Double): SmartBuffer = js.native
   /**
+    * Reads a BigInt64BE value from the current read position or an optionally provided offset.
+    *
+    * @param offset { Number } The offset to read data from (optional)
+    * @return { BigInt }
+    */
+  def readBigInt64BE(): BigInt = js.native
+  def readBigInt64BE(offset: Double): BigInt = js.native
+  /**
+    * Reads a BigInt64LE value from the current read position or an optionally provided offset.
+    *
+    * @param offset { Number } The offset to read data from (optional)
+    * @return { BigInt }
+    */
+  def readBigInt64LE(): BigInt = js.native
+  def readBigInt64LE(offset: Double): BigInt = js.native
+  /**
+    * Reads a BigUInt64BE value from the current read position or an optionally provided offset.
+    *
+    * @param offset { Number } The offset to read data from (optional)
+    * @return { BigInt }
+    */
+  def readBigUInt64BE(): BigInt = js.native
+  def readBigUInt64BE(offset: Double): BigInt = js.native
+  /**
+    * Reads a BigUInt64LE value from the current read position or an optionally provided offset.
+    *
+    * @param offset { Number } The offset to read data from (optional)
+    * @return { BigInt }
+    */
+  def readBigUInt64LE(): BigInt = js.native
+  def readBigUInt64LE(offset: Double): BigInt = js.native
+  /**
     * Reads a Buffer from the internal read position.
     *
     * @param length { Number } The length of data to read as a Buffer.
@@ -476,6 +546,46 @@ class SmartBuffer () extends js.Object {
     */
   def toBuffer(): Buffer = js.native
   def toString(encoding: BufferEncoding): String = js.native
+  /**
+    * Writes a BigInt64BE value to the current write position (or at optional offset).
+    *
+    * @param value { BigInt } The value to write.
+    * @param offset { Number } The offset to write the value at.
+    *
+    * @return this
+    */
+  def writeBigInt64BE(value: BigInt): SmartBuffer = js.native
+  def writeBigInt64BE(value: BigInt, offset: Double): SmartBuffer = js.native
+  /**
+    * Writes a BigInt64LE value to the current write position (or at optional offset).
+    *
+    * @param value { BigInt } The value to write.
+    * @param offset { Number } The offset to write the value at.
+    *
+    * @return this
+    */
+  def writeBigInt64LE(value: BigInt): SmartBuffer = js.native
+  def writeBigInt64LE(value: BigInt, offset: Double): SmartBuffer = js.native
+  /**
+    * Writes a BigUInt64BE value to the current write position (or at optional offset).
+    *
+    * @param value { Number } The value to write.
+    * @param offset { Number } The offset to write the value at.
+    *
+    * @return this
+    */
+  def writeBigUInt64BE(value: BigInt): SmartBuffer = js.native
+  def writeBigUInt64BE(value: BigInt, offset: Double): SmartBuffer = js.native
+  /**
+    * Writes a BigUInt64LE value to the current write position (or at optional offset).
+    *
+    * @param value { Number } The value to write.
+    * @param offset { Number } The offset to write the value at.
+    *
+    * @return this
+    */
+  def writeBigUInt64LE(value: BigInt): SmartBuffer = js.native
+  def writeBigUInt64LE(value: BigInt, offset: Double): SmartBuffer = js.native
   /**
     * Writes a Buffer to the current write position.
     *

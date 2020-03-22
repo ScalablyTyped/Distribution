@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ionic/angular/dist/providers/picker-controller", JSImport.Namespace)
+@JSImport("@ionic/angular/providers/picker-controller", JSImport.Namespace)
 @js.native
 object pickerControllerMod extends js.Object {
   @js.native

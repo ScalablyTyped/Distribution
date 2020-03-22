@@ -13,12 +13,12 @@ trait InstanceCreditSpecificationRequest extends js.Object {
   /**
     * The ID of the instance.
     */
-  var InstanceId: js.UndefOr[String] = js.native
+  var InstanceId: js.UndefOr[typings.awsSdk.ec2Mod.InstanceId] = js.native
 }
 
 object InstanceCreditSpecificationRequest {
   @scala.inline
-  def apply(CpuCredits: String = null, InstanceId: String = null): InstanceCreditSpecificationRequest = {
+  def apply(CpuCredits: String = null, InstanceId: InstanceId = null): InstanceCreditSpecificationRequest = {
     val __obj = js.Dynamic.literal()
     if (CpuCredits != null) __obj.updateDynamic("CpuCredits")(CpuCredits.asInstanceOf[js.Any])
     if (InstanceId != null) __obj.updateDynamic("InstanceId")(InstanceId.asInstanceOf[js.Any])

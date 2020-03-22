@@ -1,7 +1,7 @@
 package typings.ionicReact.createControllerComponentMod
 
 import typings.ionicReact.AnonCreate
-import typings.ionicReact.AnonForwardedRefOverlayType
+import typings.ionicReact.AnonForwardedRef
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.PropsWithoutRef
 import typings.react.mod.RefAttributes
@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object createControllerComponent extends js.Object {
   def apply[OptionsType /* <: js.Object */, OverlayType /* <: OverlayBase */](displayName: String, controller: AnonCreate[OptionsType, OverlayType]): ForwardRefExoticComponent[
-    (PropsWithoutRef[
-      OptionsType with ReactControllerProps with AnonForwardedRefOverlayType[OverlayType]
-    ]) with RefAttributes[OverlayType]
+    (PropsWithoutRef[OptionsType with ReactControllerProps with AnonForwardedRef[OverlayType]]) with RefAttributes[OverlayType]
   ] = js.native
 }
 

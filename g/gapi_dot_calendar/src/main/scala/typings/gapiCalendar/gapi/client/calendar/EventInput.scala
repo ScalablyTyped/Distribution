@@ -2,11 +2,11 @@ package typings.gapiCalendar.gapi.client.calendar
 
 import typings.gapiCalendar.AnonAdditionalGuests
 import typings.gapiCalendar.AnonDate
-import typings.gapiCalendar.AnonDateDateTime
+import typings.gapiCalendar.AnonDateTime
 import typings.gapiCalendar.AnonDisplay
 import typings.gapiCalendar.AnonFileUrl
-import typings.gapiCalendar.AnonKey
 import typings.gapiCalendar.AnonOverrides
+import typings.gapiCalendar.AnonPrivate
 import typings.gapiCalendar.AnonTitle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -21,13 +21,13 @@ trait EventInput extends js.Object {
   var colorId: js.UndefOr[String] = js.undefined
   var description: js.UndefOr[String] = js.undefined
   var end: AnonDate
-  var extendedProperties: js.UndefOr[AnonKey] = js.undefined
+  var extendedProperties: js.UndefOr[AnonPrivate] = js.undefined
   var gadget: js.UndefOr[AnonDisplay] = js.undefined
   var guestsCanInviteOthers: js.UndefOr[Boolean] = js.undefined
   var guestsCanSeeOtherGuests: js.UndefOr[Boolean] = js.undefined
   var id: js.UndefOr[String] = js.undefined
   var location: js.UndefOr[String] = js.undefined
-  var originalStartTime: js.UndefOr[AnonDateDateTime] = js.undefined
+  var originalStartTime: js.UndefOr[AnonDateTime] = js.undefined
   var recurrence: js.UndefOr[js.Array[String]] = js.undefined
   var reminders: js.UndefOr[AnonOverrides] = js.undefined
   var sequence: js.UndefOr[integer] = js.undefined
@@ -49,13 +49,13 @@ object EventInput {
     attendees: js.Array[AnonAdditionalGuests] = null,
     colorId: String = null,
     description: String = null,
-    extendedProperties: AnonKey = null,
+    extendedProperties: AnonPrivate = null,
     gadget: AnonDisplay = null,
     guestsCanInviteOthers: js.UndefOr[Boolean] = js.undefined,
     guestsCanSeeOtherGuests: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
     location: String = null,
-    originalStartTime: AnonDateDateTime = null,
+    originalStartTime: AnonDateTime = null,
     recurrence: js.Array[String] = null,
     reminders: AnonOverrides = null,
     sequence: Int | Double = null,

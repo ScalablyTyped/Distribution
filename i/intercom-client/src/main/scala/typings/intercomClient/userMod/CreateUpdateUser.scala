@@ -1,17 +1,15 @@
 package typings.intercomClient.userMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.intercomClient.AnonRemove
-import typings.intercomClient.companyMod.Company
+import typings.intercomClient.PartialCompanyremoveboole
 import typings.intercomClient.intercomClientStrings.contact
 import typings.intercomClient.intercomClientStrings.user
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CreateUpdateUser extends BaseUser {
-  var companies: js.Array[Partial[Company] with AnonRemove]
+  var companies: js.Array[PartialCompanyremoveboole]
 }
 
 object CreateUpdateUser {
@@ -19,7 +17,7 @@ object CreateUpdateUser {
   def apply(
     anonymous: Boolean,
     avatar: Avatar,
-    companies: js.Array[Partial[Company] with AnonRemove],
+    companies: js.Array[PartialCompanyremoveboole],
     created_at: Double,
     custom_attributes: StringDictionary[js.Any],
     id: String,

@@ -2,7 +2,7 @@ package typings.reactNativeMaterialUi.mod
 
 import typings.react.mod._Global_.JSX.Element
 import typings.reactNativeMaterialUi.AnonColor
-import typings.reactNativeMaterialUi.AnonContainerContentStrokeContainer
+import typings.reactNativeMaterialUi.AnonStrokeContainer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ trait BadgeProps extends js.Object {
   var icon: js.UndefOr[String | AnonColor] = js.undefined
   var size: js.UndefOr[Double] = js.undefined
   var stroke: js.UndefOr[Double] = js.undefined
-  var style: js.UndefOr[AnonContainerContentStrokeContainer] = js.undefined
+  var style: js.UndefOr[AnonStrokeContainer] = js.undefined
   var text: js.UndefOr[String] = js.undefined
 }
 
@@ -25,7 +25,7 @@ object BadgeProps {
     icon: String | AnonColor = null,
     size: Int | Double = null,
     stroke: Int | Double = null,
-    style: AnonContainerContentStrokeContainer = null,
+    style: AnonStrokeContainer = null,
     text: String = null
   ): BadgeProps = {
     val __obj = js.Dynamic.literal()

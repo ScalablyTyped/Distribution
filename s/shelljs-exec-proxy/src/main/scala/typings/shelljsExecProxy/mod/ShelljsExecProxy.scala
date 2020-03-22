@@ -3,8 +3,8 @@ package typings.shelljsExecProxy.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.node.NodeJS.ProcessEnv
 import typings.node.childProcessMod.ChildProcess
-import typings.shelljs.AnonAsync
-import typings.shelljs.AnonAsyncTrue
+import typings.shelljs.ExecOptionsasyncfalse
+import typings.shelljs.ExecOptionsasynctrue
 import typings.shelljs.mod.ExecCallback
 import typings.shelljs.mod.ExecOptions
 import typings.shelljs.mod.HeadOptions
@@ -24,6 +24,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/* Inlined {[k: string] : shelljs-exec-proxy.shelljs-exec-proxy.Exec} & { readonly head  :shelljs.shelljs.HeadFunction, readonly exit (): never, readonly exit (code : number): never,  readonly env  :node.NodeJS.ProcessEnv,  readonly popd  :shelljs.shelljs.PopDirFunction,  readonly grep  :shelljs.shelljs.GrepFunction,  readonly pushd  :shelljs.shelljs.PushDirFunction,  readonly sort  :shelljs.shelljs.SortFunction,  readonly sed  :shelljs.shelljs.SedFunction,  readonly chmod  :shelljs.shelljs.ChmodFunction, readonly error (): shelljs.shelljs.ShellString, readonly which (command : string): shelljs.shelljs.ShellString,  readonly mv  :shelljs.shelljs.MoveFunction,  readonly touch  :shelljs.shelljs.TouchFunction,  readonly uniq  :shelljs.shelljs.UniqFunction,  readonly ls  :shelljs.shelljs.ListFunction,  readonly ln  :shelljs.shelljs.LinkFunction,  readonly echo  :shelljs.shelljs.EchoFunction,  readonly rm  :shelljs.shelljs.RemoveFunction,  readonly find  :shelljs.shelljs.FindFunction,  readonly cat  :shelljs.shelljs.CatFunction,  readonly dirs  :shelljs.shelljs.DirsFunction,  readonly mkdir  :shelljs.shelljs.MkdirFunction, readonly tempdir (): shelljs.shelljs.ShellString,  readonly tail  :shelljs.shelljs.TailFunction,  readonly exec  :shelljs.shelljs.ExecFunction,  readonly cp  :shelljs.shelljs.CopyFunction,  readonly ShellString  :shelljs.shelljs.ShellStringConstructor, readonly test (option : shelljs.shelljs.TestOptions, path : string): boolean,  readonly config  :shelljs.shelljs.ShellConfig, readonly set (options : string): void, readonly cd (): shelljs.shelljs.ShellString, readonly cd (dir : string): shelljs.shelljs.ShellString, readonly pwd (): shelljs.shelljs.ShellString} */
 @js.native
 trait ShelljsExecProxy extends /* k */ StringDictionary[Exec] {
   @JSName("ShellString")
@@ -192,6 +193,24 @@ trait ShelljsExecProxy extends /* k */ StringDictionary[Exec] {
   	 */
   def exec(command: String, callback: ExecCallback): ChildProcess = js.native
   /**
+  	 * Executes the given command synchronously.
+  	 *
+  	 * @param command The command to execute.
+  	 * @param options Silence and synchronous options.
+  	 * @return        Returns an object containing the return code and output as string,
+  	 *                or if `{async: true}` was passed, a `ChildProcess`.
+  	 */
+  def exec(command: String, options: ExecOptionsasyncfalse): ShellString = js.native
+  /**
+  	 * Executes the given command asynchronously.
+  	 *
+  	 * @param command The command to execute.
+  	 * @param options Silence and synchronous options.
+  	 * @return        Returns an object containing the return code and output as string,
+  	 *                or if `{async: true}` was passed, a `ChildProcess`.
+  	 */
+  def exec(command: String, options: ExecOptionsasynctrue): ChildProcess = js.native
+  /**
   	 * Executes the given command.
   	 *
   	 * @param command The command to execute.
@@ -208,26 +227,6 @@ trait ShelljsExecProxy extends /* k */ StringDictionary[Exec] {
   	 * @param callback Receives code and output asynchronously.
   	 */
   def exec(command: String, options: ExecOptions, callback: ExecCallback): ChildProcess = js.native
-  /**
-  	 * Executes the given command asynchronously.
-  	 *
-  	 * @param command The command to execute.
-  	 * @param options Silence and synchronous options.
-  	 * @return        Returns an object containing the return code and output as string,
-  	 *                or if `{async: true}` was passed, a `ChildProcess`.
-  	 */
-  @JSName("exec")
-  def exec_ChildProcess(command: String, options: ExecOptions with AnonAsyncTrue): ChildProcess = js.native
-  /**
-  	 * Executes the given command synchronously.
-  	 *
-  	 * @param command The command to execute.
-  	 * @param options Silence and synchronous options.
-  	 * @return        Returns an object containing the return code and output as string,
-  	 *                or if `{async: true}` was passed, a `ChildProcess`.
-  	 */
-  @JSName("exec")
-  def exec_ShellString(command: String, options: ExecOptions with AnonAsync): ShellString = js.native
   def exit(): scala.Nothing = js.native
   def exit(code: Double): scala.Nothing = js.native
   def find(path: String*): ShellArray = js.native

@@ -1,6 +1,6 @@
 package typings.angularCore.testingTestingMod
 
-import typings.angularCore.AnonOptions
+import typings.angularCore.AnonInstantiableC
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,6 +13,6 @@ class ɵMetadataOverrider () extends js.Object {
     * Creates a new instance for the given metadata class
     * based on an old instance and overrides.
     */
-  def overrideMetadata[C /* <: T */, T](metadataClass: AnonOptions[T, C], oldMetadata: C, `override`: MetadataOverride[T]): C = js.native
+  def overrideMetadata[C /* <: T */, T](metadataClass: AnonInstantiableC[T, C], oldMetadata: C, `override`: MetadataOverride[T]): C = js.native
 }
 

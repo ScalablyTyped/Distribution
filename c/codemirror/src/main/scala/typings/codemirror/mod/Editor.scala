@@ -3,13 +3,13 @@ package typings.codemirror.mod
 import typings.codemirror.AnonAnchor
 import typings.codemirror.AnonBgClass
 import typings.codemirror.AnonBottom
-import typings.codemirror.AnonBottomLeft
-import typings.codemirror.AnonBottomLeftRight
 import typings.codemirror.AnonCh
-import typings.codemirror.AnonChLine
 import typings.codemirror.AnonFrom
-import typings.codemirror.AnonFromTo
 import typings.codemirror.AnonLeft
+import typings.codemirror.AnonLine
+import typings.codemirror.AnonRight
+import typings.codemirror.AnonTo
+import typings.codemirror.AnonTop
 import typings.codemirror.codemirrorStrings.autoCloseBrackets
 import typings.codemirror.codemirrorStrings.autoCloseTags
 import typings.codemirror.codemirrorStrings.autofocus
@@ -135,25 +135,25 @@ trait Editor extends Doc {
     If it is "page" or not given, they are relative to the top-left corner of the page.
     This differs from cursorCoords in that it'll give the size of the whole character,
     rather than just the position that the cursor would have when it would sit at that position. */
-  def charCoords(pos: Position): AnonBottomLeftRight = js.native
-  def charCoords(pos: Position, mode: CoordsMode): AnonBottomLeftRight = js.native
+  def charCoords(pos: Position): AnonRight = js.native
+  def charCoords(pos: Position, mode: CoordsMode): AnonRight = js.native
   /** Remove all gutter markers in the gutter with the given ID. */
   def clearGutter(gutterID: String): Unit = js.native
   /** Given an { left , top } object , returns the { line , ch } position that corresponds to it.
     The optional mode parameter determines relative to what the coordinates are interpreted.
     It may be "window", "page" (the default), or "local". */
-  def coordsChar(`object`: AnonLeft): Position = js.native
-  def coordsChar(`object`: AnonLeft, mode: CoordsMode): Position = js.native
+  def coordsChar(`object`: AnonTop): Position = js.native
+  def coordsChar(`object`: AnonTop, mode: CoordsMode): Position = js.native
   /** Returns an { left , top , bottom } object containing the coordinates of the cursor position.
     If mode is "local", they will be relative to the top-left corner of the editable document.
     If it is "page" or not given, they are relative to the top-left corner of the page.
     where is a boolean indicating whether you want the start(true) or the end(false) of the selection. */
-  def cursorCoords(): AnonBottomLeft = js.native
-  def cursorCoords(where: Boolean): AnonBottomLeft = js.native
-  def cursorCoords(where: Boolean, mode: CoordsMode): AnonBottomLeft = js.native
-  def cursorCoords(where: Null, mode: CoordsMode): AnonBottomLeft = js.native
-  def cursorCoords(where: Position): AnonBottomLeft = js.native
-  def cursorCoords(where: Position, mode: CoordsMode): AnonBottomLeft = js.native
+  def cursorCoords(): AnonLeft = js.native
+  def cursorCoords(where: Boolean): AnonLeft = js.native
+  def cursorCoords(where: Boolean, mode: CoordsMode): AnonLeft = js.native
+  def cursorCoords(where: Null, mode: CoordsMode): AnonLeft = js.native
+  def cursorCoords(where: Position): AnonLeft = js.native
+  def cursorCoords(where: Position, mode: CoordsMode): AnonLeft = js.native
   /** Returns the pixel width of an 'x' in the default font for the editor.
     (Note that for non - monospace fonts , this is mostly useless, and even for monospace fonts, non - ascii characters might have a different width). */
   def defaultCharWidth(): Double = js.native
@@ -303,7 +303,7 @@ trait Editor extends Doc {
   /** Returns a { from , to } object indicating the start (inclusive) and end (exclusive) of the currently rendered part of the document.
     In big documents, when most content is scrolled out of view, CodeMirror will only render the visible part, and a margin around it.
     See also the viewportChange event. */
-  def getViewport(): AnonFromTo = js.native
+  def getViewport(): AnonTo = js.native
   /** Returns the DOM node that represents the editor, and controls its size. Remove this from your tree to delete an editor instance. */
   def getWrapperElement(): HTMLElement = js.native
   /** Tells you whether the editor currently has focus. */
@@ -336,7 +336,7 @@ trait Editor extends Doc {
   def lineInfo(line: js.Any): AnonBgClass = js.native
   def off(eventName: String, handler: js.Function1[/* instance */ this.type, Unit]): Unit = js.native
   def off(eventName: String, handler: js.Function2[/* doc */ Doc, /* event */ js.Any, Unit]): Unit = js.native
-  def off[K /* <: DOMEvent with (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 88 */ js.Any) */](
+  def off[K /* <: DOMEvent with (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 87 */ js.Any) */](
     eventName: K,
     handler: js.Function2[
       /* instance */ this.type, 
@@ -439,7 +439,7 @@ trait Editor extends Doc {
   /** An extension of the existing CodeMirror typings for the Editor.on("keyup", func) syntax */
   def on(eventName: String, handler: js.Function2[/* doc */ Doc, /* event */ js.Any, Unit]): Unit = js.native
   /** Fires when one of the DOM events fires. */
-  def on[K /* <: DOMEvent with (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 88 */ js.Any) */](
+  def on[K /* <: DOMEvent with (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 87 */ js.Any) */](
     eventName: K,
     handler: js.Function2[
       /* instance */ this.type, 
@@ -601,14 +601,14 @@ trait Editor extends Doc {
     The margin parameter is optional. When given, it indicates the amount of pixels around the given area that should be made visible as well. */
   def scrollIntoView(pos: AnonBottom): Unit = js.native
   def scrollIntoView(pos: AnonBottom, margin: Double): Unit = js.native
-  /** Scrolls the given element into view. pos is a { line, ch } object, in editor-local coordinates.
-    The margin parameter is optional. When given, it indicates the amount of pixels around the given area that should be made visible as well. */
-  def scrollIntoView(pos: AnonChLine): Unit = js.native
-  def scrollIntoView(pos: AnonChLine, margin: Double): Unit = js.native
   /** Scrolls the given element into view. pos is a { from, to } object, in editor-local coordinates.
     The margin parameter is optional. When given, it indicates the amount of pixels around the given area that should be made visible as well. */
   def scrollIntoView(pos: AnonFrom): Unit = js.native
   def scrollIntoView(pos: AnonFrom, margin: Double): Unit = js.native
+  /** Scrolls the given element into view. pos is a { line, ch } object, in editor-local coordinates.
+    The margin parameter is optional. When given, it indicates the amount of pixels around the given area that should be made visible as well. */
+  def scrollIntoView(pos: AnonLine): Unit = js.native
+  def scrollIntoView(pos: AnonLine, margin: Double): Unit = js.native
   /** Scrolls the given element into view. pos is a { line , ch } position, referring to a given character, null, to refer to the cursor.
     The margin parameter is optional. When given, it indicates the amount of pixels around the given area that should be made visible as well. */
   def scrollIntoView(pos: Position): Unit = js.native

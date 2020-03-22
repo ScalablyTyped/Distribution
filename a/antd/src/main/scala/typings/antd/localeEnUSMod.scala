@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 object localeEnUSMod extends js.Object {
   @js.native
   object default extends js.Object {
-    var lang: js.Any = js.native
+    var lang: AnonBackToToday = js.native
     var timePickerLocale: AnonPlaceholder = js.native
   }
   

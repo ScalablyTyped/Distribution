@@ -7,10 +7,9 @@ import scala.scalajs.js.annotation._
 trait AnonAlignItemsBackgroundColor extends js.Object {
   var alignItems: String
   var backgroundColor: String
-  var borderRadius: Double
+  var flexDirection: String
   var height: Double
-  var justifyContent: String
-  var width: Double
+  var overflow: String
 }
 
 object AnonAlignItemsBackgroundColor {
@@ -18,12 +17,11 @@ object AnonAlignItemsBackgroundColor {
   def apply(
     alignItems: String,
     backgroundColor: String,
-    borderRadius: Double,
+    flexDirection: String,
     height: Double,
-    justifyContent: String,
-    width: Double
+    overflow: String
   ): AnonAlignItemsBackgroundColor = {
-    val __obj = js.Dynamic.literal(alignItems = alignItems.asInstanceOf[js.Any], backgroundColor = backgroundColor.asInstanceOf[js.Any], borderRadius = borderRadius.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], justifyContent = justifyContent.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(alignItems = alignItems.asInstanceOf[js.Any], backgroundColor = backgroundColor.asInstanceOf[js.Any], flexDirection = flexDirection.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], overflow = overflow.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AnonAlignItemsBackgroundColor]
   }

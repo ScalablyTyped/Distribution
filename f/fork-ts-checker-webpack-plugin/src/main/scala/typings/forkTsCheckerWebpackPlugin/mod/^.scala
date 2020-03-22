@@ -1,17 +1,15 @@
 package typings.forkTsCheckerWebpackPlugin.mod
 
-import typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginNumbers.`1`
+import typings.forkTsCheckerWebpackPlugin.PartialOptions
+import typings.forkTsCheckerWebpackPlugin.RecordForkTsCheckerHooksS
 import typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginNumbers.`2048`
-import typings.forkTsCheckerWebpackPlugin.hooksMod.ForkTsCheckerHooks
-import typings.std.Partial
-import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
   * ForkTsCheckerWebpackPlugin
-  * Runs typescript type checker and linter (tslint) on separate process.
+  * Runs typescript type checker and linter on separate process.
   * This speed-ups build a lot.
   *
   * Options description in README.md
@@ -19,7 +17,7 @@ import scala.scalajs.js.annotation._
 @JSImport("fork-ts-checker-webpack-plugin", JSImport.Namespace)
 @js.native
 class ^ () extends ForkTsCheckerWebpackPlugin {
-  def this(options: Partial[Options]) = this()
+  def this(options: PartialOptions) = this()
   /* CompleteClass */
   override var async: js.Any = js.native
   /* CompleteClass */
@@ -28,8 +26,6 @@ class ^ () extends ForkTsCheckerWebpackPlugin {
   override var checkDone: js.Any = js.native
   /* CompleteClass */
   override var checkSyntacticErrors: js.Any = js.native
-  /* CompleteClass */
-  override var colors: js.Any = js.native
   /* CompleteClass */
   override var compilationDone: js.Any = js.native
   /* CompleteClass */
@@ -85,7 +81,7 @@ class ^ () extends ForkTsCheckerWebpackPlugin {
   /* CompleteClass */
   override var nodeArgs: js.Array[String] = js.native
   /* CompleteClass */
-  override val options: Partial[Options] = js.native
+  override val options: PartialOptions = js.native
   /* CompleteClass */
   override var performance: js.Any = js.native
   /* CompleteClass */
@@ -100,6 +96,8 @@ class ^ () extends ForkTsCheckerWebpackPlugin {
   override var pluginStop: js.Any = js.native
   /* CompleteClass */
   override var printLoggerMessage: js.Any = js.native
+  /* CompleteClass */
+  override var rawFormatter: js.Any = js.native
   /* CompleteClass */
   override var reportFiles: js.Any = js.native
   /* CompleteClass */
@@ -119,37 +117,19 @@ class ^ () extends ForkTsCheckerWebpackPlugin {
   /* CompleteClass */
   override var tsconfigPath: js.Any = js.native
   /* CompleteClass */
-  override var tslint: js.Any = js.native
-  /* CompleteClass */
-  override var tslintAutoFix: js.Any = js.native
-  /* CompleteClass */
-  override var tslintPath: js.Any = js.native
-  /* CompleteClass */
-  override var tslintVersion: js.Any = js.native
-  /* CompleteClass */
   override var typescript: js.Any = js.native
   /* CompleteClass */
   override var typescriptPath: js.Any = js.native
   /* CompleteClass */
   override var typescriptVersion: js.Any = js.native
   /* CompleteClass */
-  override var useColors: js.Any = js.native
-  /* CompleteClass */
   override var useTypescriptIncrementalApi: js.Any = js.native
   /* CompleteClass */
   override var validateEslint: js.Any = js.native
   /* CompleteClass */
-  override var validateTslint: js.Any = js.native
-  /* CompleteClass */
   override var validateTypeScript: js.Any = js.native
   /* CompleteClass */
   override var vue: js.Any = js.native
-  /* CompleteClass */
-  override var watch: js.Any = js.native
-  /* CompleteClass */
-  override var watchPaths: js.Any = js.native
-  /* CompleteClass */
-  override var workersNumber: js.Any = js.native
   /* CompleteClass */
   @JSName("apply")
   override def apply(compiler: js.Any): Unit = js.native
@@ -158,12 +138,8 @@ class ^ () extends ForkTsCheckerWebpackPlugin {
 @JSImport("fork-ts-checker-webpack-plugin", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val ALL_CPUS: Double = js.native
   val DEFAULT_MEMORY_LIMIT: `2048` = js.native
-  val ONE_CPU: `1` = js.native
-  val ONE_CPU_FREE: Double = js.native
-  val TWO_CPUS_FREE: Double = js.native
-  var createFormatter: js.Any = js.native
-  def getCompilerHooks(compiler: js.Any): Record[ForkTsCheckerHooks, _] = js.native
+  var prepareVueOptions: js.Any = js.native
+  def getCompilerHooks(compiler: js.Any): RecordForkTsCheckerHooksS = js.native
 }
 

@@ -1,7 +1,7 @@
 package typings.reactNativeZssRichTextEditor.mod
 
 import typings.react.mod.Component
-import typings.std.Partial
+import typings.reactNativeZssRichTextEditor.PartialRichTextEditorProp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-native-zss-rich-text-editor", "RichTextEditor")
 @js.native
 class RichTextEditor ()
-  extends Component[Partial[RichTextEditorProps], js.Object, js.Any] {
+  extends Component[PartialRichTextEditorProp, js.Object, js.Any] {
   var alignCenter: FunctionWithZeroArgs = js.native
   var alignFull: FunctionWithZeroArgs = js.native
   var alignLeft: FunctionWithZeroArgs = js.native

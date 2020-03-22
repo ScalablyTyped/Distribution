@@ -11,7 +11,6 @@ object typesAbstractMod extends js.Object {
   abstract class Type () extends js.Object {
     val `type`: String = js.native
     def equals(`type`: Type): Boolean = js.native
-    def toObject(): js.Any = js.native
   }
   
   /* static members */

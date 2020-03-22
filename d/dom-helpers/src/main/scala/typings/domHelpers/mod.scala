@@ -46,7 +46,6 @@ import typings.domHelpers.domHelpersStrings.keyup
 import typings.domHelpers.domHelpersStrings.load
 import typings.domHelpers.domHelpersStrings.loadeddata
 import typings.domHelpers.domHelpersStrings.loadedmetadata
-import typings.domHelpers.domHelpersStrings.loadend
 import typings.domHelpers.domHelpersStrings.loadstart
 import typings.domHelpers.domHelpersStrings.lostpointercapture
 import typings.domHelpers.domHelpersStrings.mousedown
@@ -97,15 +96,12 @@ import typings.domHelpers.domHelpersStrings.waiting
 import typings.domHelpers.domHelpersStrings.wheel
 import typings.domHelpers.typesMod.CamelProperty
 import typings.domHelpers.typesMod.HyphenProperty
-import typings.domHelpers.typesMod.Property
 import typings.std.AddEventListenerOptions
 import typings.std.Document_
 import typings.std.Element
 import typings.std.EventListenerOptions
 import typings.std.FrameRequestCallback
 import typings.std.HTMLElement
-import typings.std.Partial
-import typings.std.Record
 import typings.std.SVGElement
 import typings.std.Window_
 import scala.scalajs.js
@@ -665,17 +661,6 @@ object mod extends js.Object {
     node: HTMLElement,
     eventName: loadedmetadata,
     handler: TaggedEventHandler[loadedmetadata],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_loadend(node: HTMLElement, eventName: loadend, handler: TaggedEventHandler[loadend]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_loadend(node: HTMLElement, eventName: loadend, handler: TaggedEventHandler[loadend], options: Boolean): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_loadend(
-    node: HTMLElement,
-    eventName: loadend,
-    handler: TaggedEventHandler[loadend],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
@@ -1413,8 +1398,6 @@ object mod extends js.Object {
   @JSName("filter")
   def filter_loadedmetadata(selector: String, handler: EventHandler[loadedmetadata]): EventHandler[loadedmetadata] = js.native
   @JSName("filter")
-  def filter_loadend(selector: String, handler: EventHandler[loadend]): EventHandler[loadend] = js.native
-  @JSName("filter")
   def filter_loadstart(selector: String, handler: EventHandler[loadstart]): EventHandler[loadstart] = js.native
   @JSName("filter")
   def filter_lostpointercapture(selector: String, handler: EventHandler[lostpointercapture]): EventHandler[lostpointercapture] = js.native
@@ -2011,17 +1994,6 @@ object mod extends js.Object {
     node: HTMLElement,
     eventName: loadedmetadata,
     handler: EventHandler[loadedmetadata],
-    options: AddEventListenerOptions
-  ): js.Function0[Unit] = js.native
-  @JSName("listen")
-  def listen_loadend(node: HTMLElement, eventName: loadend, handler: EventHandler[loadend]): js.Function0[Unit] = js.native
-  @JSName("listen")
-  def listen_loadend(node: HTMLElement, eventName: loadend, handler: EventHandler[loadend], options: Boolean): js.Function0[Unit] = js.native
-  @JSName("listen")
-  def listen_loadend(
-    node: HTMLElement,
-    eventName: loadend,
-    handler: EventHandler[loadend],
     options: AddEventListenerOptions
   ): js.Function0[Unit] = js.native
   @JSName("listen")
@@ -3144,17 +3116,6 @@ object mod extends js.Object {
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_loadend(node: HTMLElement, eventName: loadend, handler: TaggedEventHandler[loadend]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_loadend(node: HTMLElement, eventName: loadend, handler: TaggedEventHandler[loadend], options: Boolean): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_loadend(
-    node: HTMLElement,
-    eventName: loadend,
-    handler: TaggedEventHandler[loadend],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
   def removeEventListener_loadstart(node: HTMLElement, eventName: loadstart, handler: TaggedEventHandler[loadstart]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_loadstart(node: HTMLElement, eventName: loadstart, handler: TaggedEventHandler[loadstart], options: Boolean): Unit = js.native
@@ -3800,7 +3761,7 @@ object mod extends js.Object {
   def scrollParent(element: HTMLElement, firstPossible: Boolean): Document_ | HTMLElement = js.native
   def scrollTop(node: Element): Double = js.native
   def scrollTop(node: Element, `val`: Double): js.UndefOr[scala.Nothing] = js.native
-  def style(node: HTMLElement, property: Partial[Record[Property, String]]): Unit = js.native
+  def style(node: HTMLElement, property: PartialRecordPropertystri): Unit = js.native
   def style[T /* <: CamelProperty */](node: HTMLElement, property: T): /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Properties<string | 0>[T] */ js.Any = js.native
   @JSName("style")
   def style_T_HyphenProperty[T /* <: HyphenProperty */](node: HTMLElement, property: T): /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.PropertiesHyphen<string | 0>[T] */ js.Any = js.native
@@ -3815,7 +3776,7 @@ object mod extends js.Object {
     @JSName("addClass")
     var addClass_Original: js.Function2[/* element */ Element | SVGElement, /* className */ String, Unit] = js.native
     @JSName("addEventListener")
-    var addEventListener_Original: FnAbort = js.native
+    var addEventListener_Original: FnCallNodeEventNameHandlerOptions = js.native
     @JSName("closest")
     var closest_Original: js.Function3[
         /* node */ Element, 
@@ -3826,13 +3787,13 @@ object mod extends js.Object {
     @JSName("contains")
     var contains_Original: js.Function2[/* context */ Element, /* node */ Element, js.UndefOr[Boolean]] = js.native
     @JSName("filter")
-    var filter_Original: FnAbortAnimationcancelAnimationend = js.native
+    var filter_Original: FnCallSelectorHandler = js.native
     @JSName("hasClass")
     var hasClass_Original: js.Function2[/* element */ Element | SVGElement, /* className */ String, Boolean] = js.native
     @JSName("height")
     var height_Original: js.Function2[/* node */ HTMLElement, /* client */ js.UndefOr[Boolean], Double] = js.native
     @JSName("listen")
-    var listen_Original: FnAbortAnimationcancelAnimationendAnimationiteration = js.native
+    var listen_Original: Fn1 = js.native
     @JSName("matches")
     var matches_Original: js.Function2[/* node */ Element, /* selector */ String, Boolean] = js.native
     @JSName("offsetParent")
@@ -3850,7 +3811,7 @@ object mod extends js.Object {
     @JSName("removeClass")
     var removeClass_Original: js.Function2[/* element */ Element | SVGElement, /* className */ String, Unit] = js.native
     @JSName("removeEventListener")
-    var removeEventListener_Original: FnAbortAnimationcancel = js.native
+    var removeEventListener_Original: Fn0 = js.native
     @JSName("scrollParent")
     var scrollParent_Original: js.Function2[
         /* element */ HTMLElement, 
@@ -3858,7 +3819,7 @@ object mod extends js.Object {
         Document_ | HTMLElement
       ] = js.native
     @JSName("style")
-    var style_Original: Fn0 = js.native
+    var style_Original: FnCallNodeProperty = js.native
     @JSName("toggleClass")
     var toggleClass_Original: js.Function2[/* element */ Element | SVGElement, /* className */ String, Unit] = js.native
     @JSName("width")
@@ -4409,17 +4370,6 @@ object mod extends js.Object {
       node: HTMLElement,
       eventName: loadedmetadata,
       handler: TaggedEventHandler[loadedmetadata],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    @JSName("addEventListener")
-    def addEventListener_loadend(node: HTMLElement, eventName: loadend, handler: TaggedEventHandler[loadend]): Unit = js.native
-    @JSName("addEventListener")
-    def addEventListener_loadend(node: HTMLElement, eventName: loadend, handler: TaggedEventHandler[loadend], options: Boolean): Unit = js.native
-    @JSName("addEventListener")
-    def addEventListener_loadend(
-      node: HTMLElement,
-      eventName: loadend,
-      handler: TaggedEventHandler[loadend],
       options: AddEventListenerOptions
     ): Unit = js.native
     @JSName("addEventListener")
@@ -5157,8 +5107,6 @@ object mod extends js.Object {
     @JSName("filter")
     def filter_loadedmetadata(selector: String, handler: EventHandler[loadedmetadata]): EventHandler[loadedmetadata] = js.native
     @JSName("filter")
-    def filter_loadend(selector: String, handler: EventHandler[loadend]): EventHandler[loadend] = js.native
-    @JSName("filter")
     def filter_loadstart(selector: String, handler: EventHandler[loadstart]): EventHandler[loadstart] = js.native
     @JSName("filter")
     def filter_lostpointercapture(selector: String, handler: EventHandler[lostpointercapture]): EventHandler[lostpointercapture] = js.native
@@ -5755,17 +5703,6 @@ object mod extends js.Object {
       node: HTMLElement,
       eventName: loadedmetadata,
       handler: EventHandler[loadedmetadata],
-      options: AddEventListenerOptions
-    ): js.Function0[Unit] = js.native
-    @JSName("listen")
-    def listen_loadend(node: HTMLElement, eventName: loadend, handler: EventHandler[loadend]): js.Function0[Unit] = js.native
-    @JSName("listen")
-    def listen_loadend(node: HTMLElement, eventName: loadend, handler: EventHandler[loadend], options: Boolean): js.Function0[Unit] = js.native
-    @JSName("listen")
-    def listen_loadend(
-      node: HTMLElement,
-      eventName: loadend,
-      handler: EventHandler[loadend],
       options: AddEventListenerOptions
     ): js.Function0[Unit] = js.native
     @JSName("listen")
@@ -6888,17 +6825,6 @@ object mod extends js.Object {
       options: EventListenerOptions
     ): Unit = js.native
     @JSName("removeEventListener")
-    def removeEventListener_loadend(node: HTMLElement, eventName: loadend, handler: TaggedEventHandler[loadend]): Unit = js.native
-    @JSName("removeEventListener")
-    def removeEventListener_loadend(node: HTMLElement, eventName: loadend, handler: TaggedEventHandler[loadend], options: Boolean): Unit = js.native
-    @JSName("removeEventListener")
-    def removeEventListener_loadend(
-      node: HTMLElement,
-      eventName: loadend,
-      handler: TaggedEventHandler[loadend],
-      options: EventListenerOptions
-    ): Unit = js.native
-    @JSName("removeEventListener")
     def removeEventListener_loadstart(node: HTMLElement, eventName: loadstart, handler: TaggedEventHandler[loadstart]): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_loadstart(node: HTMLElement, eventName: loadstart, handler: TaggedEventHandler[loadstart], options: Boolean): Unit = js.native
@@ -7545,7 +7471,7 @@ object mod extends js.Object {
     def scrollParent(element: HTMLElement, firstPossible: Boolean): Document_ | HTMLElement = js.native
     def scrollTop(node: Element): Double = js.native
     def scrollTop(node: Element, `val`: Double): js.UndefOr[scala.Nothing] = js.native
-    def style(node: HTMLElement, property: Partial[Record[Property, String]]): Unit = js.native
+    def style(node: HTMLElement, property: PartialRecordPropertystri): Unit = js.native
     def style[T /* <: CamelProperty */](node: HTMLElement, property: T): /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Properties<string | 0>[T] */ js.Any = js.native
     @JSName("style")
     def style_T_HyphenProperty[T /* <: HyphenProperty */](node: HTMLElement, property: T): /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.PropertiesHyphen<string | 0>[T] */ js.Any = js.native

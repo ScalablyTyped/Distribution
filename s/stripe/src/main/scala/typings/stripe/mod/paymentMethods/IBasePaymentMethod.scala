@@ -1,6 +1,6 @@
 package typings.stripe.mod.paymentMethods
 
-import typings.stripe.AnonAddressEmail
+import typings.stripe.AnonEmail
 import typings.stripe.mod.IMetadata
 import typings.stripe.mod.IResourceObject
 import typings.stripe.mod.customers.ICustomer
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 
 trait IBasePaymentMethod extends IResourceObject {
   /** Billing information associated with the PaymentMethod that may be used or required by particular types of payment methods. */
-  var billing_details: Null | AnonAddressEmail
+  var billing_details: Null | AnonEmail
   /** Time at which the object was created. Measured in seconds since the Unix epoch. */
   var created: Double
   /** The ID of the Customer to which this PaymentMethod is saved. This will not be set when the PaymentMethod has not been saved to a Customer. [Expandable] */
@@ -32,7 +32,7 @@ object IBasePaymentMethod {
     livemode: Boolean,
     metadata: IMetadata,
     `object`: payment_method,
-    billing_details: AnonAddressEmail = null,
+    billing_details: AnonEmail = null,
     customer: String | ICustomer = null
   ): IBasePaymentMethod = {
     val __obj = js.Dynamic.literal(created = created.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any])

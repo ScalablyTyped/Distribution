@@ -5,7 +5,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object configMod {
-  type Argv = typings.yargs.mod.Arguments[typings.std.Partial[typings.jestTypes.AnonAll]]
   type ConfigGlobals = typings.std.Record[java.lang.String, js.Any]
   type DisplayName = java.lang.String | typings.jestTypes.AnonColor
   type Glob = java.lang.String

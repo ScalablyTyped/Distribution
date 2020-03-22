@@ -1,10 +1,9 @@
 package typings.blueprintjsSelect.multiSelectMod
 
-import typings.blueprintjsCore.popoverMod.IPopoverProps
-import typings.blueprintjsCore.tagInputMod.ITagInputProps
+import typings.blueprintjsSelect.PartialIPopoverProps
+import typings.blueprintjsSelect.PartialITagInputProps
 import typings.blueprintjsSelect.listItemsPropsMod.IListItemsProps
 import typings.react.mod.ReactNode
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,11 +26,11 @@ trait IMultiSelectProps[T] extends IListItemsProps[T] {
     */
   var placeholder: js.UndefOr[String] = js.native
   /** Props to spread to `Popover`. Note that `content` cannot be changed. */
-  var popoverProps: js.UndefOr[Partial[IPopoverProps] with js.Object] = js.native
+  var popoverProps: js.UndefOr[PartialIPopoverProps with js.Object] = js.native
   /** Controlled selected values. */
   var selectedItems: js.UndefOr[js.Array[T]] = js.native
   /** Props to spread to `TagInput`. Use `query` and `onQueryChange` to control the input. */
-  var tagInputProps: js.UndefOr[Partial[ITagInputProps] with js.Object] = js.native
+  var tagInputProps: js.UndefOr[PartialITagInputProps with js.Object] = js.native
   /** Custom renderer to transform an item into tag content. */
   def tagRenderer(item: T): ReactNode = js.native
 }

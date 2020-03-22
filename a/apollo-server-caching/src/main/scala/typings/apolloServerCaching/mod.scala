@@ -11,7 +11,7 @@ object mod extends js.Object {
   @js.native
   class InMemoryLRUCache[V] ()
     extends typings.apolloServerCaching.inMemoryLRUCacheMod.InMemoryLRUCache[V] {
-    def this(hasMaxSizeSizeCalculatorOnDispose: AnonKey[V]) = this()
+    def this(hasMaxSizeSizeCalculatorOnDispose: AnonMaxSize[V]) = this()
   }
   
   @js.native

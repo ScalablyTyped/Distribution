@@ -3,7 +3,7 @@ package typings.inversifyExpressUtils.mod
 import typings.express.mod.Application_
 import typings.express.mod.Router
 import typings.inversify.interfacesMod.interfaces.Container
-import typings.inversifyExpressUtils.AnonAuthProvider
+import typings.inversifyExpressUtils.AnonInstantiable
 import typings.inversifyExpressUtils.interfacesMod.interfaces.RoutingConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -36,56 +36,56 @@ class InversifyExpressServer protected ()
     customRouter: Null,
     routingConfig: Null,
     customApp: Null,
-    authProvider: AnonAuthProvider
+    authProvider: AnonInstantiable
   ) = this()
   def this(
     container: Container,
     customRouter: Null,
     routingConfig: Null,
     customApp: Application_,
-    authProvider: AnonAuthProvider
+    authProvider: AnonInstantiable
   ) = this()
   def this(
     container: Container,
     customRouter: Null,
     routingConfig: RoutingConfig,
     customApp: Null,
-    authProvider: AnonAuthProvider
+    authProvider: AnonInstantiable
   ) = this()
   def this(
     container: Container,
     customRouter: Null,
     routingConfig: RoutingConfig,
     customApp: Application_,
-    authProvider: AnonAuthProvider
+    authProvider: AnonInstantiable
   ) = this()
   def this(
     container: Container,
     customRouter: Router,
     routingConfig: Null,
     customApp: Null,
-    authProvider: AnonAuthProvider
+    authProvider: AnonInstantiable
   ) = this()
   def this(
     container: Container,
     customRouter: Router,
     routingConfig: Null,
     customApp: Application_,
-    authProvider: AnonAuthProvider
+    authProvider: AnonInstantiable
   ) = this()
   def this(
     container: Container,
     customRouter: Router,
     routingConfig: RoutingConfig,
     customApp: Null,
-    authProvider: AnonAuthProvider
+    authProvider: AnonInstantiable
   ) = this()
   def this(
     container: Container,
     customRouter: Router,
     routingConfig: RoutingConfig,
     customApp: Application_,
-    authProvider: AnonAuthProvider
+    authProvider: AnonInstantiable
   ) = this()
   def this(
     container: Container,
@@ -100,7 +100,7 @@ class InversifyExpressServer protected ()
     customRouter: Null,
     routingConfig: Null,
     customApp: Null,
-    authProvider: AnonAuthProvider,
+    authProvider: AnonInstantiable,
     forceControllers: Boolean
   ) = this()
   def this(
@@ -116,7 +116,7 @@ class InversifyExpressServer protected ()
     customRouter: Null,
     routingConfig: Null,
     customApp: Application_,
-    authProvider: AnonAuthProvider,
+    authProvider: AnonInstantiable,
     forceControllers: Boolean
   ) = this()
   def this(
@@ -132,7 +132,7 @@ class InversifyExpressServer protected ()
     customRouter: Null,
     routingConfig: RoutingConfig,
     customApp: Null,
-    authProvider: AnonAuthProvider,
+    authProvider: AnonInstantiable,
     forceControllers: Boolean
   ) = this()
   def this(
@@ -148,7 +148,7 @@ class InversifyExpressServer protected ()
     customRouter: Null,
     routingConfig: RoutingConfig,
     customApp: Application_,
-    authProvider: AnonAuthProvider,
+    authProvider: AnonInstantiable,
     forceControllers: Boolean
   ) = this()
   def this(
@@ -164,7 +164,7 @@ class InversifyExpressServer protected ()
     customRouter: Router,
     routingConfig: Null,
     customApp: Null,
-    authProvider: AnonAuthProvider,
+    authProvider: AnonInstantiable,
     forceControllers: Boolean
   ) = this()
   def this(
@@ -180,7 +180,7 @@ class InversifyExpressServer protected ()
     customRouter: Router,
     routingConfig: Null,
     customApp: Application_,
-    authProvider: AnonAuthProvider,
+    authProvider: AnonInstantiable,
     forceControllers: Boolean
   ) = this()
   def this(
@@ -196,7 +196,7 @@ class InversifyExpressServer protected ()
     customRouter: Router,
     routingConfig: RoutingConfig,
     customApp: Null,
-    authProvider: AnonAuthProvider,
+    authProvider: AnonInstantiable,
     forceControllers: Boolean
   ) = this()
   def this(
@@ -212,7 +212,7 @@ class InversifyExpressServer protected ()
     customRouter: Router,
     routingConfig: RoutingConfig,
     customApp: Application_,
-    authProvider: AnonAuthProvider,
+    authProvider: AnonInstantiable,
     forceControllers: Boolean
   ) = this()
 }

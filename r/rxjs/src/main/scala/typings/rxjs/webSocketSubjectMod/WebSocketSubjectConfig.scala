@@ -1,6 +1,6 @@
 package typings.rxjs.webSocketSubjectMod
 
-import typings.rxjs.AnonProtocols
+import typings.rxjs.AnonInstantiable
 import typings.rxjs.rxjsStrings.arraybuffer
 import typings.rxjs.rxjsStrings.blob
 import typings.rxjs.typesMod.NextObserver
@@ -17,7 +17,7 @@ trait WebSocketSubjectConfig[T] extends js.Object {
     * WebSocket impl in Node (WebSocket is a DOM API), or for mocking a WebSocket
     * for testing purposes
     */
-  var WebSocketCtor: js.UndefOr[AnonProtocols] = js.undefined
+  var WebSocketCtor: js.UndefOr[AnonInstantiable] = js.undefined
   /** Sets the `binaryType` property of the underlying WebSocket. */
   var binaryType: js.UndefOr[blob | arraybuffer] = js.undefined
   /**
@@ -55,7 +55,7 @@ object WebSocketSubjectConfig {
   @scala.inline
   def apply[T](
     url: String,
-    WebSocketCtor: AnonProtocols = null,
+    WebSocketCtor: AnonInstantiable = null,
     binaryType: blob | arraybuffer = null,
     closeObserver: NextObserver[CloseEvent] = null,
     closingObserver: NextObserver[Unit] = null,

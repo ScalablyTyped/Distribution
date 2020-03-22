@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.authmosphere.oauthconfigMod.TokenCacheOAuthConfig
 import typings.authmosphere.tokenCacheConfigMod.CacheConfig
 import typings.authmosphere.tokenCacheConfigMod.TokenCacheOptions
-import typings.authmosphere.tokenMod.Token
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -60,7 +59,7 @@ object tokenCacheMod extends js.Object {
       * @param tokenName
       * @returns {Promise<Token>}
       */
-    def get(tokenName: String): js.Promise[Token[js.Object]] = js.native
+    def get(tokenName: String): js.Promise[Token] = js.native
     /**
       * Forces the cache to delete present tokens and request new ones.
       * Will resolve with an hashmap of the newly requested tokens if the request was successful.
@@ -77,7 +76,7 @@ object tokenCacheMod extends js.Object {
       * @param tokenName
       * @returns {Promise<Token>}
       */
-    def refreshToken(tokenName: String): js.Promise[Token[js.Object]] = js.native
+    def refreshToken(tokenName: String): js.Promise[Token] = js.native
     /**
       * The resolveAccessTokenFactory function, creates a function,
       * which resolves a specific access_token.
@@ -89,6 +88,6 @@ object tokenCacheMod extends js.Object {
   }
   
   val defaultCacheConfig: CacheConfig = js.native
-  type TokenMap = StringDictionary[js.UndefOr[Token[js.Object]]]
+  type TokenMap = StringDictionary[js.UndefOr[Token]]
 }
 

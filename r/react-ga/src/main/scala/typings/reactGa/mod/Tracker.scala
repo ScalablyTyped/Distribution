@@ -1,0 +1,42 @@
+package typings.reactGa.mod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Inlined {  trackingId  :string} & react-ga.react-ga.InitializeOptions */
+trait Tracker extends js.Object {
+  var alwaysSendToDefaultTracker: js.UndefOr[Boolean] = js.undefined
+  var debug: js.UndefOr[Boolean] = js.undefined
+  var gaAddress: js.UndefOr[String] = js.undefined
+  var gaOptions: js.UndefOr[GaOptions] = js.undefined
+  var standardImplementation: js.UndefOr[Boolean] = js.undefined
+  var testMode: js.UndefOr[Boolean] = js.undefined
+  var titleCase: js.UndefOr[Boolean] = js.undefined
+  var trackingId: String
+}
+
+object Tracker {
+  @scala.inline
+  def apply(
+    trackingId: String,
+    alwaysSendToDefaultTracker: js.UndefOr[Boolean] = js.undefined,
+    debug: js.UndefOr[Boolean] = js.undefined,
+    gaAddress: String = null,
+    gaOptions: GaOptions = null,
+    standardImplementation: js.UndefOr[Boolean] = js.undefined,
+    testMode: js.UndefOr[Boolean] = js.undefined,
+    titleCase: js.UndefOr[Boolean] = js.undefined
+  ): Tracker = {
+    val __obj = js.Dynamic.literal(trackingId = trackingId.asInstanceOf[js.Any])
+    if (!js.isUndefined(alwaysSendToDefaultTracker)) __obj.updateDynamic("alwaysSendToDefaultTracker")(alwaysSendToDefaultTracker.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (gaAddress != null) __obj.updateDynamic("gaAddress")(gaAddress.asInstanceOf[js.Any])
+    if (gaOptions != null) __obj.updateDynamic("gaOptions")(gaOptions.asInstanceOf[js.Any])
+    if (!js.isUndefined(standardImplementation)) __obj.updateDynamic("standardImplementation")(standardImplementation.asInstanceOf[js.Any])
+    if (!js.isUndefined(testMode)) __obj.updateDynamic("testMode")(testMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(titleCase)) __obj.updateDynamic("titleCase")(titleCase.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Tracker]
+  }
+}
+

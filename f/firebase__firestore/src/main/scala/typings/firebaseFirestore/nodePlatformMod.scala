@@ -7,9 +7,7 @@ import typings.firebaseFirestore.databaseInfoMod.DatabaseInfo
 import typings.firebaseFirestore.firebaseFirestoreBooleans.`true`
 import typings.firebaseFirestore.platformMod.Platform
 import typings.firebaseFirestore.serializerMod.JsonProtoSerializer
-import typings.firebaseFirestore.typesMod.ProtoByteString
 import typings.std.Document_
-import typings.std.Uint8Array
 import typings.std.Window_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -30,10 +28,6 @@ object nodePlatformMod extends js.Object {
     override val document: Document_ | Null = js.native
     @JSName("document")
     val document_NodePlatform: Null = js.native
-    /* CompleteClass */
-    override val emptyByteString: ProtoByteString = js.native
-    @JSName("emptyByteString")
-    val emptyByteString_NodePlatform: Uint8Array = js.native
     /** The Platform's 'window' implementation or null if not available. */
     /* CompleteClass */
     override val window: Window_ | Null = js.native

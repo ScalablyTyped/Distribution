@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ionic/angular/dist/util/overlay", JSImport.Namespace)
+@JSImport("@ionic/angular/util/overlay", JSImport.Namespace)
 @js.native
 object overlayMod extends js.Object {
   @js.native

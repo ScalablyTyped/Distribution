@@ -31,7 +31,7 @@ object mod extends js.Object {
     * - `event`: the string event name that fired
     * - `args`: an array of the arguments that were emitted on the event
     */
-  def apply[TEmitter /* <: EventEmitter */](eventSpec: js.Array[js.Array[TEmitter | String]], listener: Listener[TEmitter]): Thunk[TEmitter] = js.native
+  def apply[TEmitter /* <: EventEmitter */](eventSpec: js.Array[Array[TEmitter | String]], listener: Listener[TEmitter]): Thunk[TEmitter] = js.native
   type Listener[TEmitter /* <: EventEmitter */] = js.Function4[
     /* err */ js.Any, 
     /* ee */ TEmitter, 

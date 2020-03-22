@@ -44,14 +44,11 @@ trait Window_
   extends EventTarget
      with AnimationFrameProvider
      with GlobalEventHandlers
-     with IDBEnvironment
-     with WindowBase64
      with WindowConsole
      with WindowEventHandlers
      with WindowLocalStorage
      with WindowOrWorkerGlobalScope
      with WindowSessionStorage
-     with WindowTimers
      with /* index */ NumberDictionary[Window_] {
   val applicationCache: ApplicationCache_ = js.native
   val clientInformation: Navigator_ = js.native
@@ -68,8 +65,6 @@ trait Window_
   val frameElement: Element = js.native
   val frames: Window_ = js.native
   val history: History_ = js.native
-  /* InferMemberOverrides */
-  override val indexedDB: IDBFactory = js.native
   val innerHeight: Double = js.native
   val innerWidth: Double = js.native
   val isSecureContext: scala.Boolean = js.native
@@ -146,7 +141,7 @@ trait Window_
     * 
     * When set to true, options's capture prevents callback from being invoked when the event's eventPhase attribute value is BUBBLING_PHASE. When false (or not present), callback will not be invoked when event's eventPhase attribute value is CAPTURING_PHASE. Either way, callback will be invoked if event's eventPhase attribute value is AT_TARGET.
     * 
-    * When set to true, options's passive indicates that the callback will not cancel the event by invoking preventDefault(). This is used to enable performance optimizations described in §2.8 Observing event listeners.
+    * When set to true, options's passive indicates that the callback will not cancel the event by invoking preventDefault(). This is used to enable performance optimizations described in § 2.8 Observing event listeners.
     * 
     * When set to true, options's once indicates that the callback will only be invoked once after which the event listener will be removed.
     * 
@@ -639,11 +634,7 @@ trait Window_
   ): Unit = js.native
   def alert(): Unit = js.native
   def alert(message: js.Any): Unit = js.native
-  /* InferMemberOverrides */
-  override def atob(data: java.lang.String): java.lang.String = js.native
   def blur(): Unit = js.native
-  /* InferMemberOverrides */
-  override def btoa(data: java.lang.String): java.lang.String = js.native
   /** @deprecated */
   def captureEvents(): Unit = js.native
   def close(): Unit = js.native

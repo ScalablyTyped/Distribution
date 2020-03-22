@@ -1,6 +1,6 @@
 package typings.stripe.mod.charges
 
-import typings.stripe.AnonFraudulentSafe
+import typings.stripe.AnonUserreport
 import typings.stripe.mod.IDataOptionsWithMetadata
 import typings.stripe.mod.IOptionsMetadata
 import typings.stripe.mod.IShippingInformation
@@ -18,7 +18,7 @@ trait IChargeUpdateOptions extends IDataOptionsWithMetadata {
   /**
     * A set of key/value pairs you can attach to a charge giving information about its riskiness.
     */
-  var fraud_details: js.UndefOr[AnonFraudulentSafe] = js.undefined
+  var fraud_details: js.UndefOr[AnonUserreport] = js.undefined
   /**
     * This is the email address that the receipt for this charge will be sent to.
     * If this field is updated, then a new email receipt will be sent to the updated address.
@@ -43,7 +43,7 @@ object IChargeUpdateOptions {
   def apply(
     description: String = null,
     expand: js.Array[String] = null,
-    fraud_details: AnonFraudulentSafe = null,
+    fraud_details: AnonUserreport = null,
     include: js.Array[String] = null,
     metadata: IOptionsMetadata = null,
     receipt_email: String = null,

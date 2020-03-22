@@ -1,6 +1,5 @@
 package typings.typedoc.modelsMod
 
-import typings.typedoc.intersectionUnionMod.IntersectionUnion
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,8 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("typedoc/dist/lib/models", "UnionType")
 @js.native
 class UnionType protected ()
-  extends typings.typedoc.modelsTypesMod.UnionType
-     with IntersectionUnion {
+  extends typings.typedoc.modelsTypesMod.UnionType {
   def this(types: js.Array[typings.typedoc.typesAbstractMod.Type]) = this()
 }
 

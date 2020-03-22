@@ -18,6 +18,9 @@ trait reactNativeSvgProps {
   def EllipseProps: typings.reactNativeSvg.mod.EllipseProps.type = typings.reactNativeSvg.mod.EllipseProps
   type EllipseProps = typings.reactNativeSvg.mod.EllipseProps
   @scala.inline
+  def ForeignObjectProps: typings.reactNativeSvg.mod.ForeignObjectProps.type = typings.reactNativeSvg.mod.ForeignObjectProps
+  type ForeignObjectProps = typings.reactNativeSvg.mod.ForeignObjectProps
+  @scala.inline
   def GProps: typings.reactNativeSvg.mod.GProps.type = typings.reactNativeSvg.mod.GProps
   type GProps = typings.reactNativeSvg.mod.GProps
   @scala.inline

@@ -15,8 +15,6 @@ trait storybookRouterProps {
   @scala.inline
   def LocationProps: QueryLocationProps.type = typings.storybookRouter.routerMod.QueryLocationProps
   type LocationProps = QueryLocationProps
-  @scala.inline
-  def LocationProviderProps: typings.reachRouter.mod.LocationProviderProps.type = typings.reachRouter.mod.LocationProviderProps
   type LocationProviderProps = typings.reachRouter.mod.LocationProviderProps
   @scala.inline
   def MatchProps: QueryMatchProps.type = typings.storybookRouter.routerMod.QueryMatchProps

@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class PointsMaterial () extends Material {
   def this(parameters: PointsMaterialParameters) = this()
+  var alphaMap: Texture | Null = js.native
   var color: Color = js.native
   var map: Texture | Null = js.native
   var size: Double = js.native

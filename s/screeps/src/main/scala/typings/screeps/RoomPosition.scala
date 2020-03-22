@@ -85,7 +85,7 @@ trait RoomPosition extends js.Object {
     * @returns One of the supplied objects
     */
   def findClosestByPath[T /* <: HasRoomPosition | RoomPosition */](objects: js.Array[T]): T | Null = js.native
-  def findClosestByPath[T /* <: HasRoomPosition | RoomPosition */](objects: js.Array[T], opts: FindPathOpts with AnonAlgorithmFilter): T | Null = js.native
+  def findClosestByPath[T /* <: HasRoomPosition | RoomPosition */](objects: js.Array[T], opts: FindPathOptsfilteranystri): T | Null = js.native
   /**
     * Find the object with the shortest path from the given position. Uses A* search algorithm and Dijkstra's algorithm.
     * @param type Any of the FIND_* constants.
@@ -95,17 +95,11 @@ trait RoomPosition extends js.Object {
   def findClosestByPath[K /* <: FindConstant */](`type`: K): (/* import warning: importer.ImportType#apply Failed type conversion: screeps.FindTypes[K] */ js.Any) | Null = js.native
   def findClosestByPath[K /* <: FindConstant */](`type`: K, opts: FindPathOpts with FilterOptions[K] with AnonAlgorithm): (/* import warning: importer.ImportType#apply Failed type conversion: screeps.FindTypes[K] */ js.Any) | Null = js.native
   def findClosestByPath[T /* <: Structure[StructureConstant] */](`type`: FIND_HOSTILE_STRUCTURES): T | Null = js.native
-  def findClosestByPath[T /* <: Structure[StructureConstant] */](
-    `type`: FIND_HOSTILE_STRUCTURES,
-    opts: FindPathOpts with FilterOptions[FIND_STRUCTURES] with AnonAlgorithm
-  ): T | Null = js.native
+  def findClosestByPath[T /* <: Structure[StructureConstant] */](`type`: FIND_HOSTILE_STRUCTURES, opts: FindPathOptsFilterOptions): T | Null = js.native
   def findClosestByPath[T /* <: Structure[StructureConstant] */](`type`: FIND_MY_STRUCTURES): T | Null = js.native
-  def findClosestByPath[T /* <: Structure[StructureConstant] */](
-    `type`: FIND_MY_STRUCTURES,
-    opts: FindPathOpts with FilterOptions[FIND_STRUCTURES] with AnonAlgorithm
-  ): T | Null = js.native
+  def findClosestByPath[T /* <: Structure[StructureConstant] */](`type`: FIND_MY_STRUCTURES, opts: FindPathOptsFilterOptions): T | Null = js.native
   def findClosestByPath[T /* <: Structure[StructureConstant] */](`type`: FIND_STRUCTURES): T | Null = js.native
-  def findClosestByPath[T /* <: Structure[StructureConstant] */](`type`: FIND_STRUCTURES, opts: FindPathOpts with FilterOptions[FIND_STRUCTURES] with AnonAlgorithm): T | Null = js.native
+  def findClosestByPath[T /* <: Structure[StructureConstant] */](`type`: FIND_STRUCTURES, opts: FindPathOptsFilterOptions): T | Null = js.native
   /**
     * Find the object with the shortest linear distance from the given position.
     * @param objects An array of RoomPositions or objects with a RoomPosition.
@@ -133,7 +127,7 @@ trait RoomPosition extends js.Object {
     * @param opts See Room.find.
     */
   def findInRange[T /* <: HasRoomPosition | RoomPosition */](objects: js.Array[T], range: Double): js.Array[T] = js.native
-  def findInRange[T /* <: HasRoomPosition | RoomPosition */](objects: js.Array[T], range: Double, opts: AnonFilterAny): js.Array[T] = js.native
+  def findInRange[T /* <: HasRoomPosition | RoomPosition */](objects: js.Array[T], range: Double, opts: Anon32): js.Array[T] = js.native
   /**
     * Find all objects in the specified linear range.
     * @param type Any of the FIND_* constants.
@@ -238,7 +232,7 @@ trait RoomPosition extends js.Object {
   /**
     * Get the list of objects at the specified room position.
     */
-  def look(): js.Array[LookAtResult[LookConstant]] = js.native
+  def look(): js.Array[LookAtResultLookConstant] = js.native
   /**
     * Get an object with the given type at the specified room position.
     * @param type One of the following string constants: constructionSite, creep, exit, flag, resource, source, structure, terrain

@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait NgModuleFactory2[T] extends js.Object {
-  val moduleType: Type[T] = js.native
   def create(): NgModuleRef[T] = js.native
   def create(parentInjector: Injector): NgModuleRef[T] = js.native
+  def moduleType(): Type[T] = js.native
 }
 

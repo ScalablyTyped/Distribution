@@ -6,10 +6,10 @@ import typings.jupyterlabCells.widgetMod.Cell.IContentFactory
 import typings.jupyterlabCells.widgetMod.Cell.IOptions
 import typings.jupyterlabCodeeditor.editorMod.CodeEditor.IEditor
 import typings.jupyterlabCodeeditor.mod.CodeEditorWrapper
-import typings.jupyterlabObservables.observablemapMod.IObservableMap
+import typings.jupyterlabObservables.observablejsonMod.IObservableJSON
 import typings.jupyterlabObservables.observablemapMod.IObservableMap.IChangedArgs
-import typings.phosphorCoreutils.jsonMod.JSONValue
-import typings.phosphorWidgets.mod.Widget
+import typings.luminoCoreutils.jsonMod.PartialJSONValue
+import typings.luminoWidgets.mod.Widget
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -37,43 +37,11 @@ class Cell_ protected () extends Widget {
   /**
     * Get the CodeEditor used by the cell.
     */
-  val editor: IEditor = js.native
+  def editor(): IEditor = js.native
   /**
     * Get the CodeEditorWrapper used by the cell.
     */
-  val editorWidget: CodeEditorWrapper = js.native
-  /**
-    * Get the input area for the cell.
-    */
-  val inputArea: InputArea = js.native
-  /**
-    * The view state of input being hidden.
-    */
-  var inputHidden: Boolean = js.native
-  /**
-    * Get the model used by the cell.
-    */
-  val model: ICellModel = js.native
-  /**
-    * Get the prompt node used by the cell.
-    */
-  val promptNode: HTMLElement = js.native
-  /**
-    * The read only state of the cell.
-    */
-  var readOnly: Boolean = js.native
-  /**
-    * A promise that resolves when the widget renders for the first time.
-    */
-  val ready: js.Promise[Unit] = js.native
-  /**
-    * Whether to sync the collapse state to the cell model.
-    */
-  var syncCollapse: Boolean = js.native
-  /**
-    * Whether to sync the editable state to the cell model.
-    */
-  var syncEditable: Boolean = js.native
+  def editorWidget(): CodeEditorWrapper = js.native
   /**
     * Handle the input being hidden.
     *
@@ -92,6 +60,15 @@ class Cell_ protected () extends Widget {
     */
   def initializeState(): this.type = js.native
   /**
+    * Get the input area for the cell.
+    */
+  def inputArea(): InputArea = js.native
+  /**
+    * The view state of input being hidden.
+    */
+  def inputHidden(): Boolean = js.native
+  def inputHidden(value: Boolean): js.Any = js.native
+  /**
     * Revert view collapse state from model.
     */
   def loadCollapseState(): Unit = js.native
@@ -100,9 +77,26 @@ class Cell_ protected () extends Widget {
     */
   def loadEditableState(): Unit = js.native
   /**
+    * Get the model used by the cell.
+    */
+  def model(): ICellModel = js.native
+  /**
     * Handle changes in the metadata.
     */
-  /* protected */ def onMetadataChanged(model: IObservableMap[JSONValue], args: IChangedArgs[JSONValue]): Unit = js.native
+  /* protected */ def onMetadataChanged(model: IObservableJSON, args: IChangedArgs[js.UndefOr[PartialJSONValue]]): Unit = js.native
+  /**
+    * Get the prompt node used by the cell.
+    */
+  def promptNode(): HTMLElement = js.native
+  /**
+    * The read only state of the cell.
+    */
+  def readOnly(): Boolean = js.native
+  def readOnly(value: Boolean): js.Any = js.native
+  /**
+    * A promise that resolves when the widget renders for the first time.
+    */
+  def ready(): js.Promise[Unit] = js.native
   /**
     * Save view collapse state to model
     */
@@ -115,5 +109,15 @@ class Cell_ protected () extends Widget {
     * Set the prompt for the widget.
     */
   def setPrompt(value: String): Unit = js.native
+  /**
+    * Whether to sync the collapse state to the cell model.
+    */
+  def syncCollapse(): Boolean = js.native
+  def syncCollapse(value: Boolean): js.Any = js.native
+  /**
+    * Whether to sync the editable state to the cell model.
+    */
+  def syncEditable(): Boolean = js.native
+  def syncEditable(value: Boolean): js.Any = js.native
 }
 

@@ -40,14 +40,32 @@ trait IPaymentMethodDetails extends js.Object
 
 object IPaymentMethodDetails {
   @scala.inline
+  def IStripeAccountPaymentMethodDetails(`type`: stripe_account): IPaymentMethodDetails = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IPaymentMethodDetails]
+  }
+  @scala.inline
+  def IWechatPaymentMethodDetails(`type`: wechat): IPaymentMethodDetails = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IPaymentMethodDetails]
+  }
+  @scala.inline
+  def IP24PaymentMethodDetails(`type`: p24): IPaymentMethodDetails = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IPaymentMethodDetails]
+  }
+  @scala.inline
   def ICardPresentPaymentMethodDetails(`type`: card_present): IPaymentMethodDetails = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPaymentMethodDetails]
   }
   @scala.inline
-  def IEpsPaymentMethodDetails(`type`: eps): IPaymentMethodDetails = {
-    val __obj = js.Dynamic.literal()
+  def ICardPaymentMethodDetails(card: AnonBrand, `type`: card): IPaymentMethodDetails = {
+    val __obj = js.Dynamic.literal(card = card.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPaymentMethodDetails]
   }
@@ -58,25 +76,19 @@ object IPaymentMethodDetails {
     __obj.asInstanceOf[IPaymentMethodDetails]
   }
   @scala.inline
-  def ISofortPaymentMethodDetails(`type`: sofort): IPaymentMethodDetails = {
+  def IAchDebitPaymentMethodDetails(`type`: ach_debit): IPaymentMethodDetails = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPaymentMethodDetails]
   }
   @scala.inline
-  def IGiropayPaymentMethodDetails(`type`: giropay): IPaymentMethodDetails = {
-    val __obj = js.Dynamic.literal()
+  def IAchCreditTransferPaymentMethodDetails(ach_credit_transfer: AnonAccountnumber, `type`: ach_credit_transfer): IPaymentMethodDetails = {
+    val __obj = js.Dynamic.literal(ach_credit_transfer = ach_credit_transfer.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPaymentMethodDetails]
   }
   @scala.inline
-  def IStripeAccountPaymentMethodDetails(`type`: stripe_account): IPaymentMethodDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[IPaymentMethodDetails]
-  }
-  @scala.inline
-  def IAlipayPaymentMethodDetails(`type`: alipay): IPaymentMethodDetails = {
+  def IEpsPaymentMethodDetails(`type`: eps): IPaymentMethodDetails = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPaymentMethodDetails]
@@ -94,31 +106,19 @@ object IPaymentMethodDetails {
     __obj.asInstanceOf[IPaymentMethodDetails]
   }
   @scala.inline
-  def IAchCreditTransferPaymentMethodDetails(ach_credit_transfer: AnonAccountnumber, `type`: ach_credit_transfer): IPaymentMethodDetails = {
-    val __obj = js.Dynamic.literal(ach_credit_transfer = ach_credit_transfer.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[IPaymentMethodDetails]
-  }
-  @scala.inline
-  def IAchDebitPaymentMethodDetails(`type`: ach_debit): IPaymentMethodDetails = {
+  def IAlipayPaymentMethodDetails(`type`: alipay): IPaymentMethodDetails = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPaymentMethodDetails]
   }
   @scala.inline
-  def ICardPaymentMethodDetails(card: AnonBrand, `type`: card): IPaymentMethodDetails = {
-    val __obj = js.Dynamic.literal(card = card.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[IPaymentMethodDetails]
-  }
-  @scala.inline
-  def IP24PaymentMethodDetails(`type`: p24): IPaymentMethodDetails = {
+  def IGiropayPaymentMethodDetails(`type`: giropay): IPaymentMethodDetails = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPaymentMethodDetails]
   }
   @scala.inline
-  def IWechatPaymentMethodDetails(`type`: wechat): IPaymentMethodDetails = {
+  def ISofortPaymentMethodDetails(`type`: sofort): IPaymentMethodDetails = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPaymentMethodDetails]

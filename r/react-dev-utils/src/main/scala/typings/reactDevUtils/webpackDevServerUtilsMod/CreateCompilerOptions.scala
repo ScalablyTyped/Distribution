@@ -1,6 +1,6 @@
 package typings.reactDevUtils.webpackDevServerUtilsMod
 
-import typings.reactDevUtils.AnonBannerPlugin
+import typings.reactDevUtils.AnonCall
 import typings.webpack.mod.Compiler_
 import typings.webpack.mod.Compiler_.Watching
 import typings.webpack.mod.Configuration
@@ -35,7 +35,7 @@ trait CreateCompilerOptions extends js.Object {
     * Takes the `require('webpack')` entry point.
     */
   @JSName("webpack")
-  var webpack_Original: AnonBannerPlugin = js.native
+  var webpack_Original: AnonCall = js.native
   /**
     * Takes the `require('webpack')` entry point.
     */

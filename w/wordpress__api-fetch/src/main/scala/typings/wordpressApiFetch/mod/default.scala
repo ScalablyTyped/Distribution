@@ -2,7 +2,7 @@ package typings.wordpressApiFetch.mod
 
 import typings.std.Record
 import typings.std.Response
-import typings.wordpressApiFetch.AnonFalse
+import typings.wordpressApiFetch.APIFetchOptionsparsefalse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object default extends js.Object {
   val fetchAllMiddleware: Middleware = js.native
-  def apply(options: APIFetchOptions with AnonFalse): js.Promise[Response] = js.native
+  def apply(options: APIFetchOptionsparsefalse): js.Promise[Response] = js.native
+  def apply[T](options: APIFetchOptions): js.Promise[T] = js.native
   //
   // Built-in middleware
   //

@@ -13,12 +13,6 @@ object reduxFormStrings {
   sealed trait FieldArray extends FieldType
   
   @js.native
-  sealed trait FormErrors extends js.Object
-  
-  @js.native
-  sealed trait FormWarnings extends js.Object
-  
-  @js.native
   sealed trait blur extends js.Object
   
   @js.native
@@ -43,10 +37,6 @@ object reduxFormStrings {
   def Field: Field = "Field".asInstanceOf[Field]
   @scala.inline
   def FieldArray: FieldArray = "FieldArray".asInstanceOf[FieldArray]
-  @scala.inline
-  def FormErrors: FormErrors = "FormErrors".asInstanceOf[FormErrors]
-  @scala.inline
-  def FormWarnings: FormWarnings = "FormWarnings".asInstanceOf[FormWarnings]
   @scala.inline
   def blur: blur = "blur".asInstanceOf[blur]
   @scala.inline

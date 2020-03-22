@@ -2,7 +2,6 @@ package typings.reactNativeModalPopover
 
 import typings.reactNativeModalPopover.popoverMod.PopoverProps
 import typings.reactNativeModalPopover.popoverTouchableMod.Props
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,29 +34,29 @@ object mod extends js.Object {
   /* static members */
   @js.native
   object Popover extends js.Object {
-    var defaultProps: Partial[PopoverProps] = js.native
+    var defaultProps: PartialPopoverProps = js.native
     var displayName: String = js.native
-    var propTypes: AnonArgs = js.native
+    var propTypes: AnonArrowSize = js.native
   }
   
   /* static members */
   @js.native
   object PopoverController extends js.Object {
-    var propTypes: AnonArgsChildren = js.native
+    var propTypes: AnonChildren = js.native
   }
   
   /* static members */
   @js.native
   object PopoverTouchable extends js.Object {
-    var propTypes: AnonArgsOnPopoverDisplayed = js.native
+    var propTypes: AnonOnPopoverDisplayed = js.native
   }
   
   /* static members */
   @js.native
   object default extends js.Object {
-    var defaultProps: Partial[PopoverProps] = js.native
+    var defaultProps: PartialPopoverProps = js.native
     var displayName: String = js.native
-    var propTypes: AnonArgs = js.native
+    var propTypes: AnonArrowSize = js.native
   }
   
 }

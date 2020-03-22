@@ -1,6 +1,6 @@
 package typings.wegameApi.wx.types
 
-import typings.wegameApi.AnonDataArrayBuffer
+import typings.wegameApi.Anon0
 import typings.wegameApi.AnonErrMsg
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,7 +11,7 @@ trait ReadfileParams extends js.Object {
   var encoding: js.UndefOr[FileContentEncoding] = js.undefined
   var fail: js.UndefOr[js.Function1[/* res */ AnonErrMsg, Unit]] = js.undefined
   var filePath: String
-  var success: js.UndefOr[js.Function1[/* res */ AnonDataArrayBuffer, Unit]] = js.undefined
+  var success: js.UndefOr[js.Function1[/* res */ Anon0, Unit]] = js.undefined
 }
 
 object ReadfileParams {
@@ -21,7 +21,7 @@ object ReadfileParams {
     complete: () => Unit = null,
     encoding: FileContentEncoding = null,
     fail: /* res */ AnonErrMsg => Unit = null,
-    success: /* res */ AnonDataArrayBuffer => Unit = null
+    success: /* res */ Anon0 => Unit = null
   ): ReadfileParams = {
     val __obj = js.Dynamic.literal(filePath = filePath.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))

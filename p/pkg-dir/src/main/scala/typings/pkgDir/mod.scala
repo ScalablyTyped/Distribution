@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 object mod extends js.Object {
   // TODO: Remove this for the next major release
   @JSName("default")
-  var default_Original: AnonCwd = js.native
+  var default_Original: AnonCall = js.native
   /**
   	Find the root directory of a Node.js project or npm package.
   	@param cwd - Directory to start from. Default: `process.cwd()`.

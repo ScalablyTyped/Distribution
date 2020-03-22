@@ -1,9 +1,9 @@
 package typings.oracleOraclejet.ojcolorpaletteMod
 
-import typings.oracleOraclejet.AnonColorLabel
 import typings.oracleOraclejet.AnonConverterHint
 import typings.oracleOraclejet.AnonDefinition
 import typings.oracleOraclejet.AnonInstruction
+import typings.oracleOraclejet.AnonLabel
 import typings.oracleOraclejet.AnonLabelNone
 import typings.oracleOraclejet.ojcolorMod.^
 import typings.oracleOraclejet.ojeditablevalueMod.editableValueSettableProperties
@@ -26,7 +26,7 @@ trait ojColorPaletteSettableProperties extends editableValueSettableProperties[^
   var labelDisplay: auto | off
   var labelledBy: String | Null
   var layout: grid | list
-  var palette: js.Array[AnonColorLabel]
+  var palette: js.Array[AnonLabel]
   var swatchSize: xs | sm | lg
   @JSName("translations")
   var translations_ojColorPaletteSettableProperties: AnonLabelNone
@@ -43,7 +43,7 @@ object ojColorPaletteSettableProperties {
     labelHint: String,
     layout: grid | list,
     messagesCustom: js.Array[typings.oracleOraclejet.ojmessagingMod.^],
-    palette: js.Array[AnonColorLabel],
+    palette: js.Array[AnonLabel],
     swatchSize: xs | sm | lg,
     translations: AnonLabelNone,
     valid: valid | pending | invalidHidden | invalidShown,

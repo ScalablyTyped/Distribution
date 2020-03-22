@@ -5,9 +5,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mod {
-  type AuxiliaryCommentObject = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in webpack.webpack.LibraryTarget ]: string}
-    */ typings.webpack.webpackStrings.AuxiliaryCommentObject with js.Any
   type BannerPlugin = typings.webpack.mod.BannerPlugin_
   /**
     * @deprecated Use RuleSetCondition instead

@@ -1,8 +1,8 @@
 package typings.leaflet.mod
 
 import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.StringDictionary
 import typings.leaflet.mod.Control_.Attribution
+import typings.leaflet.namestringHTMLElementDefa
 import typings.std.HTMLElement
 import typings.std.MouseEvent
 import scala.scalajs.js
@@ -65,7 +65,7 @@ class Map_ protected () extends Evented {
     */
   def getPane(pane: String): js.UndefOr[HTMLElement] = js.native
   def getPane(pane: HTMLElement): js.UndefOr[HTMLElement] = js.native
-  def getPanes(): StringDictionary[HTMLElement] with DefaultMapPanes = js.native
+  def getPanes(): namestringHTMLElementDefa = js.native
   def getPixelBounds(): Bounds_ = js.native
   def getPixelOrigin(): Point_ = js.native
   def getPixelWorldBounds(): Bounds_ = js.native

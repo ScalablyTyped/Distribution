@@ -1,21 +1,20 @@
 package typings.yargs
 
 import typings.yargs.yargsBooleans.`true`
-import typings.yargs.yargsStrings.array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonArrayNumber extends js.Object {
+  var array: `true`
   var number: `true`
-  var `type`: array
 }
 
 object AnonArrayNumber {
   @scala.inline
-  def apply(number: `true`, `type`: array): AnonArrayNumber = {
-    val __obj = js.Dynamic.literal(number = number.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(array: `true`, number: `true`): AnonArrayNumber = {
+    val __obj = js.Dynamic.literal(array = array.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[AnonArrayNumber]
   }
 }

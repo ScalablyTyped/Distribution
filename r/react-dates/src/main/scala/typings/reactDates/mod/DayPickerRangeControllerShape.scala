@@ -1,7 +1,7 @@
 package typings.reactDates.mod
 
 import typings.reactDates.AnonEndDate
-import typings.reactDates.AnonEndDateStartDate
+import typings.reactDates.AnonStartDate
 import typings.reactDates.mod.momentPropTypes.momentObj
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -19,7 +19,7 @@ trait DayPickerRangeControllerShape extends DayPickerShape {
   var isOutsideRange: js.UndefOr[js.Function1[/* day */ js.Any, Boolean]] = js.native
   var keepOpenOnDateSelect: js.UndefOr[Boolean] = js.native
   var minimumNights: js.UndefOr[Double] = js.native
-  var onClose: js.UndefOr[js.Function1[/* final */ AnonEndDateStartDate, Unit]] = js.native
+  var onClose: js.UndefOr[js.Function1[/* final */ AnonStartDate, Unit]] = js.native
   // REQUIRED props
   var startDate: momentObj | Null = js.native
   var startDateOffset: js.UndefOr[js.Function1[/* day */ js.Any, _]] = js.native

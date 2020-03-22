@@ -3,14 +3,13 @@ package typings.divaJs.mod
 import typings.divaJs.AnonHeight
 import typings.divaJs.AnonIncludePadding
 import typings.divaJs.AnonLeft
-import typings.divaJs.AnonObjectData
+import typings.divaJs.PartialOptionsobjectDatas
 import typings.divaJs.interfacesMod.Dimensions
 import typings.divaJs.interfacesMod.Options
 import typings.divaJs.interfacesMod.Settings
 import typings.divaJs.interfacesMod.State
 import typings.divaJs.interfacesMod.ViewerState
 import typings.std.HTMLElement
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,7 +22,7 @@ class Diva protected () extends js.Object {
     * @param element - The ID of an HTMLElement to attach an instance of Diva to.
     * @param options - Options to be set by the user for the instance of Diva.
     */
-  def this(element: String, options: Partial[Options] with AnonObjectData) = this()
+  def this(element: String, options: PartialOptionsobjectDatas) = this()
    // | Toolbar
   var divaState: DivaState = js.native
   var element: HTMLElement = js.native

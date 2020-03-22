@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
   - typings.awsCryptoIe11Detection.awsCryptoIe11DetectionStrings.decrypt
   - typings.awsCryptoIe11Detection.awsCryptoIe11DetectionStrings.sign
   - typings.awsCryptoIe11Detection.awsCryptoIe11DetectionStrings.verify
-  - typings.awsCryptoIe11Detection.awsCryptoIe11DetectionStrings.deriveKey
-  - typings.awsCryptoIe11Detection.awsCryptoIe11DetectionStrings.deriveBits
+  - typings.awsCryptoIe11Detection.awsCryptoIe11DetectionStrings.derive
   - typings.awsCryptoIe11Detection.awsCryptoIe11DetectionStrings.wrapKey
   - typings.awsCryptoIe11Detection.awsCryptoIe11DetectionStrings.unwrapKey
+  - typings.awsCryptoIe11Detection.awsCryptoIe11DetectionStrings.importKey
 */
 trait KeyUsage extends js.Object
 
@@ -22,11 +22,11 @@ object KeyUsage {
   @scala.inline
   def decrypt: typings.awsCryptoIe11Detection.awsCryptoIe11DetectionStrings.decrypt = this.cast("decrypt")
   @scala.inline
-  def deriveBits: typings.awsCryptoIe11Detection.awsCryptoIe11DetectionStrings.deriveBits = this.cast("deriveBits")
-  @scala.inline
-  def deriveKey: typings.awsCryptoIe11Detection.awsCryptoIe11DetectionStrings.deriveKey = this.cast("deriveKey")
+  def derive: typings.awsCryptoIe11Detection.awsCryptoIe11DetectionStrings.derive = this.cast("derive")
   @scala.inline
   def encrypt: typings.awsCryptoIe11Detection.awsCryptoIe11DetectionStrings.encrypt = this.cast("encrypt")
+  @scala.inline
+  def importKey: typings.awsCryptoIe11Detection.awsCryptoIe11DetectionStrings.importKey = this.cast("importKey")
   @scala.inline
   def sign: typings.awsCryptoIe11Detection.awsCryptoIe11DetectionStrings.sign = this.cast("sign")
   @scala.inline

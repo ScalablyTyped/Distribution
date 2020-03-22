@@ -88,6 +88,9 @@ object builderUtilRuntimeStrings {
   sealed trait s3 extends PublishProvider
   
   @js.native
+  sealed trait snapStore extends PublishProvider
+  
+  @js.native
   sealed trait spaces extends PublishProvider
   
   @scala.inline
@@ -144,6 +147,8 @@ object builderUtilRuntimeStrings {
   def release: release = "release".asInstanceOf[release]
   @scala.inline
   def s3: s3 = "s3".asInstanceOf[s3]
+  @scala.inline
+  def snapStore: snapStore = "snapStore".asInstanceOf[snapStore]
   @scala.inline
   def spaces: spaces = "spaces".asInstanceOf[spaces]
 }

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@nivo/waffle" : "0.59.1"
+      "@nivo/waffle" : "0.61.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@nivo/waffle" : "0.59.1"
+      "@nivo/waffle" : "0.61.1"
     }
   ],
   "compile-devDependencies" : [

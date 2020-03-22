@@ -1,8 +1,8 @@
 package typings.jupyterlabApputils.vdomMod
 
 import typings.jupyterlabApputils.vdomMod.VDomRenderer.IModel
-import typings.phosphorSignaling.mod.ISignal
-import typings.phosphorSignaling.mod.Signal
+import typings.luminoSignaling.mod.ISignal
+import typings.luminoSignaling.mod.Signal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -42,5 +42,10 @@ class VDomModel () extends IModel {
     */
   /* CompleteClass */
   override def dispose(): Unit = js.native
+  /**
+    * Test whether the model is disposed.
+    */
+  @JSName("isDisposed")
+  def isDisposed_MVDomModel(): Boolean = js.native
 }
 

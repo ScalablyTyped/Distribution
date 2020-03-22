@@ -20,7 +20,7 @@ object `32TypeMod` extends js.Object {
   def isObjectType(`type`: Type): /* is typescript.typescript.ObjectType */ Boolean = js.native
   def isSubstitutionType(`type`: Type): /* is typescript.typescript.SubstitutionType */ Boolean = js.native
   def isTupleType(`type`: Type): /* is typescript.typescript.TupleType */ Boolean = js.native
-  def isTupleTypeReference(`type`: Type): Boolean = js.native
+  def isTupleTypeReference(`type`: Type): /* is tsutils.TypeReferencetargetTupleT */ Boolean = js.native
   def isTypeParameter(`type`: Type): /* is typescript.typescript.TypeParameter */ Boolean = js.native
   def isTypeReference(`type`: Type): /* is typescript.typescript.TypeReference */ Boolean = js.native
   def isTypeVariable(`type`: Type): Boolean = js.native

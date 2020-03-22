@@ -1,6 +1,8 @@
 package typings.three.colorMod
 
 import typings.std.ArrayLike
+import typings.std.Record
+import typings.three.threeBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,7 +22,7 @@ class Color () extends js.Object {
   	 * Green channel value between 0 and 1. Default is 1.
   	 */
   var g: Double = js.native
-  var isColor: Boolean = js.native
+  val isColor: `true` = js.native
   /**
   	 * Red channel value between 0 and 1. Default is 1.
   	 */
@@ -111,6 +113,12 @@ class Color () extends js.Object {
   def set(color: Double): Color = js.native
   def set(color: Color): Color = js.native
   /**
+  	 * Sets this color from a color name.
+  	 * Faster than {@link Color#setStyle .setStyle()} method if you don't need the other CSS-style formats.
+  	 * @param style Color name in X11 format.
+  	 */
+  def setColorName(style: String): Color = js.native
+  /**
   	 * Sets this color from HSL values.
   	 * Based on MochiKit implementation by Bob Ippolito.
   	 *
@@ -151,5 +159,15 @@ class Color () extends js.Object {
   	 */
   def toArray(xyz: ArrayLike[Double]): ArrayLike[Double] = js.native
   def toArray(xyz: ArrayLike[Double], offset: Double): ArrayLike[Double] = js.native
+}
+
+/* static members */
+@JSImport("three/src/math/Color", "Color")
+@js.native
+object Color extends js.Object {
+  /**
+  	 * List of X11 color names.
+  	 */
+  var NAMES: Record[String, Double] = js.native
 }
 

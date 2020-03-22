@@ -12,6 +12,7 @@ trait ParsedTsconfig extends js.Object {
   var options: js.UndefOr[CompilerOptions] = js.undefined
   var raw: js.Any
   var typeAcquisition: js.UndefOr[TypeAcquisition] = js.undefined
+  var watchOptions: js.UndefOr[WatchOptions] = js.undefined
 }
 
 object ParsedTsconfig {
@@ -20,12 +21,14 @@ object ParsedTsconfig {
     raw: js.Any,
     extendedConfigPath: java.lang.String = null,
     options: CompilerOptions = null,
-    typeAcquisition: TypeAcquisition = null
+    typeAcquisition: TypeAcquisition = null,
+    watchOptions: WatchOptions = null
   ): ParsedTsconfig = {
     val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any])
     if (extendedConfigPath != null) __obj.updateDynamic("extendedConfigPath")(extendedConfigPath.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (typeAcquisition != null) __obj.updateDynamic("typeAcquisition")(typeAcquisition.asInstanceOf[js.Any])
+    if (watchOptions != null) __obj.updateDynamic("watchOptions")(watchOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParsedTsconfig]
   }
 }

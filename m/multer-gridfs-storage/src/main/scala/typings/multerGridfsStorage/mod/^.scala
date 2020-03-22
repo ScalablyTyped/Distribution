@@ -2,10 +2,10 @@ package typings.multerGridfsStorage.mod
 
 import typings.express.mod.Request_
 import typings.expressServeStaticCore.mod.ParamsDictionary
+import typings.multer.PartialFile
 import typings.multer.mod._Global_.Express.Multer.File
 import typings.multerGridfsStorage.AnonFilename
 import typings.std.Error
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,7 +31,7 @@ class ^ protected () extends MulterGridfsStorage {
   override def _handleFile(
     req: Request_[ParamsDictionary],
     file: File,
-    callback: js.Function2[/* error */ js.UndefOr[js.Any], /* info */ js.UndefOr[Partial[File]], Unit]
+    callback: js.Function2[/* error */ js.UndefOr[js.Any], /* info */ js.UndefOr[PartialFile], Unit]
   ): Unit = js.native
   /**
     * Remove the file described by `file`, then invoke the callback with.

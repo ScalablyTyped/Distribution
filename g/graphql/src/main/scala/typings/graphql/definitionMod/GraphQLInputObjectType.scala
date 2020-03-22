@@ -1,6 +1,6 @@
 package typings.graphql.definitionMod
 
-import typings.graphql.AnonExtensionASTNodesExtensionsFields
+import typings.graphql.GraphQLInputObjectTypeCon
 import typings.graphql.astMod.InputObjectTypeDefinitionNode
 import typings.graphql.astMod.InputObjectTypeExtensionNode
 import typings.graphql.maybeMod.Maybe
@@ -24,7 +24,7 @@ class GraphQLInputObjectType protected ()
   var name: String = js.native
   def getFields(): GraphQLInputFieldMap = js.native
   def inspect(): String = js.native
-  def toConfig(): GraphQLInputObjectTypeConfig with AnonExtensionASTNodesExtensionsFields = js.native
+  def toConfig(): GraphQLInputObjectTypeCon = js.native
   def toJSON(): String = js.native
 }
 

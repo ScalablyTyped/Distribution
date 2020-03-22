@@ -23,7 +23,7 @@ class VoiceSelectionParams () extends IVoiceSelectionParams {
   var name_VoiceSelectionParams: String = js.native
   /** VoiceSelectionParams ssmlGender. */
   @JSName("ssmlGender")
-  var ssmlGender_VoiceSelectionParams: SsmlVoiceGender = js.native
+  var ssmlGender_VoiceSelectionParams: SsmlVoiceGender | String = js.native
   /**
     * Converts this VoiceSelectionParams to JSON.
     * @returns JSON object

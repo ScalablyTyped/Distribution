@@ -17,8 +17,4 @@ package object mod {
     scala.Unit
   ]
   type OperatorEvaluator[A, B] = js.Function2[/* factValue */ A, /* compareToValue */ B, scala.Boolean]
-  type RuleSerializable = typings.std.Pick[
-    typings.std.Required[typings.jsonRulesEngine.mod.RuleProperties], 
-    typings.jsonRulesEngine.jsonRulesEngineStrings.conditions | typings.jsonRulesEngine.jsonRulesEngineStrings.event | typings.jsonRulesEngine.jsonRulesEngineStrings.name | typings.jsonRulesEngine.jsonRulesEngineStrings.priority
-  ]
 }

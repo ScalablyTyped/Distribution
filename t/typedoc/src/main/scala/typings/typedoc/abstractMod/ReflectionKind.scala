@@ -78,6 +78,9 @@ object ReflectionKind extends js.Object {
   sealed trait Property extends ReflectionKind
   
   @js.native
+  sealed trait Reference extends ReflectionKind
+  
+  @js.native
   sealed trait SetSignature extends ReflectionKind
   
   @js.native
@@ -174,6 +177,9 @@ object ReflectionKind extends js.Object {
   
   /* 1024 */ @js.native
   object Property extends TopLevel[Property with Double]
+  
+  /* 16777216 */ @js.native
+  object Reference extends TopLevel[Reference with Double]
   
   /* 1048576 */ @js.native
   object SetSignature extends TopLevel[SetSignature with Double]

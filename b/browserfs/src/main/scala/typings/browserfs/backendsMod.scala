@@ -12,20 +12,20 @@ object backendsMod extends js.Object {
     */
   @js.native
   object default extends js.Object {
-    var AsyncMirror: TypeofClassAsyncMirror = js.native
-    var Dropbox: TypeofClassDropbox = js.native
-    var Emscripten: TypeofClassEmscripten = js.native
-    var FolderAdapter: TypeofClassFolderAdapter = js.native
-    var HTML5FS: TypeofClassHTML5FS = js.native
-    var InMemory: TypeofClassInMemory = js.native
-    var IndexedDB: TypeofClassIndexedDB = js.native
-    var IsoFS: TypeofClassIsoFS = js.native
-    var LocalStorage: TypeofClassLocalStorage = js.native
-    var MountableFileSystem: TypeofClassMountableFileSystem = js.native
-    var OverlayFS: TypeofClassOverlayFS = js.native
-    var WorkerFS: TypeofClassWorkerFS = js.native
-    var XmlHttpRequest: TypeofClassXmlHttpRequest = js.native
-    var ZipFS: TypeofClassZipFS = js.native
+    var AsyncMirror: TypeofAsyncMirror = js.native
+    var Dropbox: TypeofDropbox = js.native
+    var Emscripten: TypeofEmscripten = js.native
+    var FolderAdapter: TypeofFolderAdapter = js.native
+    var HTML5FS: TypeofHTML5FS = js.native
+    var InMemory: TypeofInMemory = js.native
+    var IndexedDB: TypeofIndexedDB = js.native
+    var IsoFS: TypeofIsoFS = js.native
+    var LocalStorage: TypeofLocalStorage = js.native
+    var MountableFileSystem: TypeofMountableFileSystem = js.native
+    var OverlayFS: TypeofOverlayFS = js.native
+    var WorkerFS: TypeofWorkerFS = js.native
+    var XmlHttpRequest: TypeofXmlHttpRequest = js.native
+    var ZipFS: TypeofZipFS = js.native
   }
   
 }

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@uifabric/foundation" : "7.5.9"
+      "@uifabric/foundation" : "7.5.14"
     }
   ],
   "test-dependencies" : [
     {
-      "@uifabric/foundation" : "7.5.9"
+      "@uifabric/foundation" : "7.5.14"
     }
   ],
   "compile-devDependencies" : [

@@ -1,6 +1,6 @@
 package typings.antvG2.mod
 
-import typings.antvG2.AnonCross
+import typings.antvG2.AnonStyle
 import typings.antvG2.antvG2Strings.bottom
 import typings.antvG2.antvG2Strings.click
 import typings.antvG2.antvG2Strings.default
@@ -15,7 +15,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CommonTooltipConfig extends js.Object {
-  var crosshairs: js.UndefOr[AnonCross] = js.undefined
+  var crosshairs: js.UndefOr[AnonStyle] = js.undefined
   var follow: js.UndefOr[Boolean] = js.undefined
   var hideMarkers: js.UndefOr[Boolean] = js.undefined
   var inPlot: js.UndefOr[Boolean] = js.undefined
@@ -32,7 +32,7 @@ trait CommonTooltipConfig extends js.Object {
 object CommonTooltipConfig {
   @scala.inline
   def apply(
-    crosshairs: AnonCross = null,
+    crosshairs: AnonStyle = null,
     follow: js.UndefOr[Boolean] = js.undefined,
     hideMarkers: js.UndefOr[Boolean] = js.undefined,
     inPlot: js.UndefOr[Boolean] = js.undefined,

@@ -35,9 +35,7 @@ object mod extends js.Object {
     * Pipe data through a number of `pull-stream`s
     */
   def apply(): js.UndefOr[scala.Nothing] = js.native
-  def apply(
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param pullStreams because its type ReadonlyArray<pull.Source<any> | pull.Sink<any> | pull.Through<any, any>> is not an array type */ pullStreams: js.Array[Source[_] | Sink[_] | (Through_[_, _])]
-  ): js.UndefOr[Source[_] | Sink[_] | (Through_[_, _])] = js.native
+  def apply(pullStreams: (Source[_] | Sink[_] | (Through_[_, _]))*): js.UndefOr[Source[_] | Sink[_] | (Through_[_, _])] = js.native
   def apply[In](sink: Sink[In]): Sink[In] = js.native
   def apply[Out](source: Source[Out]): Source[Out] = js.native
   def apply[InOut](source: Source[InOut], sink: Sink[InOut]): js.UndefOr[scala.Nothing] = js.native

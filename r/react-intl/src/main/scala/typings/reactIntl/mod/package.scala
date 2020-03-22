@@ -30,12 +30,6 @@ package object mod {
     typings.reactIntl.reactIntlStrings.localeMatcher
   ]) with typings.reactIntl.mod.CustomFormatConfig
   type Omit[T, K /* <: java.lang.String */] = typings.std.Pick[T, typings.std.Exclude[java.lang.String, K]]
-  type OptionalIntlConfig = (typings.reactIntl.mod.Omit[typings.reactIntl.mod.IntlConfig, java.lang.String]) with (typings.std.Partial[
-    typings.std.Pick[
-      typings.reactIntl.mod.IntlConfig, 
-      typings.reactIntl.reactIntlStrings.formats | typings.reactIntl.reactIntlStrings.messages | typings.reactIntl.reactIntlStrings.timeZone | typings.reactIntl.reactIntlStrings.textComponent | typings.reactIntl.reactIntlStrings.defaultLocale | typings.reactIntl.reactIntlStrings.defaultFormats | typings.reactIntl.reactIntlStrings.onError
-    ]
-  ])
   type WithIntlProps[P] = (typings.reactIntl.mod.Omit[P, java.lang.String]) with typings.reactIntl.AnonForwardedRef
   type WrappedComponentProps[IntlPropName /* <: java.lang.String */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ k in IntlPropName ]: react-intl.react-intl.IntlShape}

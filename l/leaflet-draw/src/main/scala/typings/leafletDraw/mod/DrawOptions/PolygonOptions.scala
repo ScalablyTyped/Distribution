@@ -3,7 +3,7 @@ package typings.leafletDraw.mod.DrawOptions
 import typings.leaflet.mod.DivIcon_
 import typings.leaflet.mod.IconOptions
 import typings.leaflet.mod.Icon_
-import typings.leafletDraw.AnonClickable
+import typings.leafletDraw.PolylineOptionsclickableb
 import typings.leafletDraw.mod.PrecisionOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -40,7 +40,7 @@ object PolygonOptions {
     nautic: js.UndefOr[Boolean] = js.undefined,
     precision: PrecisionOptions = null,
     repeatMode: js.UndefOr[Boolean] = js.undefined,
-    shapeOptions: typings.leaflet.mod.PolylineOptions with AnonClickable = null,
+    shapeOptions: PolylineOptionsclickableb = null,
     showArea: js.UndefOr[Boolean] = js.undefined,
     showLength: js.UndefOr[Boolean] = js.undefined,
     touchIcon: Icon_[IconOptions] | DivIcon_ = null,

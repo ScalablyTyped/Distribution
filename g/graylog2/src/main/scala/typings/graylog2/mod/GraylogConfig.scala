@@ -1,6 +1,6 @@
 package typings.graylog2.mod
 
-import typings.graylog2.AnonHost
+import typings.graylog2.Readonlyhoststringportnum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,13 +33,13 @@ trait GraylogConfig extends js.Object {
   /**
     * The list of graylog servers
     */
-  var servers: js.Array[AnonHost]
+  var servers: js.Array[Readonlyhoststringportnum]
 }
 
 object GraylogConfig {
   @scala.inline
   def apply(
-    servers: js.Array[AnonHost],
+    servers: js.Array[Readonlyhoststringportnum],
     bufferSize: Int | Double = null,
     deflate: GraylogDeflate = null,
     facility: String = null,

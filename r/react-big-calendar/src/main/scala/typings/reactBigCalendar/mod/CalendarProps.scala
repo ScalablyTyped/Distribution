@@ -8,7 +8,7 @@ import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
 import typings.reactBigCalendar.AnonAction
 import typings.reactBigCalendar.AnonClassName
-import typings.reactBigCalendar.AnonEndStart
+import typings.reactBigCalendar.AnonStart
 import typings.reactBigCalendar.AnonX
 import typings.reactBigCalendar.reactBigCalendarStrings.ignoreEvents
 import typings.std.Date
@@ -55,12 +55,12 @@ trait CalendarProps[TEvent /* <: js.Object */, TResource /* <: js.Object */] ext
   var onNavigate: js.UndefOr[
     js.Function3[/* newDate */ Date, /* view */ View, /* action */ NavigateAction, Unit]
   ] = js.undefined
-  var onRangeChange: js.UndefOr[js.Function1[/* range */ js.Array[Date] | AnonEndStart, Unit]] = js.undefined
+  var onRangeChange: js.UndefOr[js.Function1[/* range */ js.Array[Date] | AnonStart, Unit]] = js.undefined
   var onSelectEvent: js.UndefOr[
     js.Function2[/* event */ TEvent, /* e */ SyntheticEvent[HTMLElement, Event_], Unit]
   ] = js.undefined
   var onSelectSlot: js.UndefOr[js.Function1[/* slotInfo */ AnonAction, Unit]] = js.undefined
-  var onSelecting: js.UndefOr[js.Function1[/* range */ AnonEndStart, js.UndefOr[Boolean | Null]]] = js.undefined
+  var onSelecting: js.UndefOr[js.Function1[/* range */ AnonStart, js.UndefOr[Boolean | Null]]] = js.undefined
   var onShowMore: js.UndefOr[js.Function2[/* events */ js.Array[TEvent], /* date */ Date, Unit]] = js.undefined
   var onView: js.UndefOr[js.Function1[/* view */ View, Unit]] = js.undefined
   var popup: js.UndefOr[Boolean] = js.undefined
@@ -115,10 +115,10 @@ object CalendarProps {
     onDoubleClickEvent: (/* event */ TEvent, /* e */ SyntheticEvent[HTMLElement, Event_]) => Unit = null,
     onDrillDown: (/* date */ Date, /* view */ View) => Unit = null,
     onNavigate: (/* newDate */ Date, /* view */ View, /* action */ NavigateAction) => Unit = null,
-    onRangeChange: /* range */ js.Array[Date] | AnonEndStart => Unit = null,
+    onRangeChange: /* range */ js.Array[Date] | AnonStart => Unit = null,
     onSelectEvent: (/* event */ TEvent, /* e */ SyntheticEvent[HTMLElement, Event_]) => Unit = null,
     onSelectSlot: /* slotInfo */ AnonAction => Unit = null,
-    onSelecting: /* range */ AnonEndStart => js.UndefOr[Boolean | Null] = null,
+    onSelecting: /* range */ AnonStart => js.UndefOr[Boolean | Null] = null,
     onShowMore: (/* events */ js.Array[TEvent], /* date */ Date) => Unit = null,
     onView: /* view */ View => Unit = null,
     popup: js.UndefOr[Boolean] = js.undefined,

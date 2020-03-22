@@ -24,10 +24,10 @@ object winPackagerMod extends js.Object {
     val computedPublisherName: Lazy[js.Array[String] | Null] = js.native
     val cscInfo: Lazy[FileCodeSigningInfo | CertificateFromStoreInfo | Null] = js.native
     var doSign: js.Any = js.native
-    val isForceCodeSigningVerification: Boolean = js.native
     var isSignDlls: js.Any = js.native
     val lazyCertInfo: Lazy[CertificateInfo | Null] = js.native
     val vm: Lazy[VmManager] = js.native
+    def isForceCodeSigningVerification(): Boolean = js.native
     def sign(file: String): js.Promise[Unit] = js.native
     def sign(file: String, logMessagePrefix: String): js.Promise[Unit] = js.native
     def signAndEditResources(file: String, arch: Arch, outDir: String): js.Promise[Unit] = js.native

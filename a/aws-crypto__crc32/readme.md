@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-crypto__crc32
 
-Typings are for version 0.1.0-preview.1
+Typings are for version 0.1.0-preview.4
 
 ## Library description:
 Pure JS implementation of CRC32 https://en.wikipedia.org/wiki/Cyclic_redundancy_check

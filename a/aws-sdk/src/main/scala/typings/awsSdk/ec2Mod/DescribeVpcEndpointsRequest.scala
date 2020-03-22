@@ -25,7 +25,7 @@ trait DescribeVpcEndpointsRequest extends js.Object {
   /**
     * One or more endpoint IDs.
     */
-  var VpcEndpointIds: js.UndefOr[ValueStringList] = js.native
+  var VpcEndpointIds: js.UndefOr[VpcEndpointIdList] = js.native
 }
 
 object DescribeVpcEndpointsRequest {
@@ -35,7 +35,7 @@ object DescribeVpcEndpointsRequest {
     Filters: FilterList = null,
     MaxResults: Int | scala.Double = null,
     NextToken: String = null,
-    VpcEndpointIds: ValueStringList = null
+    VpcEndpointIds: VpcEndpointIdList = null
   ): DescribeVpcEndpointsRequest = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])

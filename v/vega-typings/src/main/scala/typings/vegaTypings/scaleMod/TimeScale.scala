@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 trait TimeScale
   extends ContinuousScale
      with Scale {
-  var nice: js.UndefOr[Boolean | TimeInterval | SignalRef] = js.undefined
+  var nice: js.UndefOr[Boolean | TimeInterval | TimeIntervalStep | SignalRef] = js.undefined
   @JSName("type")
   var type_TimeScale: time | utc
 }
@@ -28,7 +28,7 @@ object TimeScale {
     domainMin: Double | SignalRef = null,
     domainRaw: js.Array[_] | SignalRef = null,
     interpolate: ScaleInterpolate = null,
-    nice: Boolean | TimeInterval | SignalRef = null,
+    nice: Boolean | TimeInterval | TimeIntervalStep | SignalRef = null,
     padding: Double | SignalRef = null,
     range: RangeScheme = null,
     reverse: Boolean | SignalRef = null,

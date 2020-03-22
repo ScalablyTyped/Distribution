@@ -1,7 +1,7 @@
 package typings.gatsby.mod
 
-import typings.gatsby.AnonInitialcreatePages
-import typings.gatsby.AnonInitialcreatePagesStatefully
+import typings.gatsby.CreatePagesArgstraceIdini
+import typings.gatsby.CreatePagesArgstraceIdiniDictkey
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,7 +17,7 @@ trait GatsbyNode extends js.Object {
     */
   var createPages: js.UndefOr[
     js.Function3[
-      /* args */ CreatePagesArgs with AnonInitialcreatePages, 
+      /* args */ CreatePagesArgstraceIdini, 
       /* options */ js.UndefOr[PluginOptions], 
       /* callback */ js.UndefOr[PluginCallback], 
       Unit
@@ -39,7 +39,7 @@ trait GatsbyNode extends js.Object {
     */
   var createPagesStatefully: js.UndefOr[
     js.Function3[
-      /* args */ CreatePagesArgs with AnonInitialcreatePagesStatefully, 
+      /* args */ CreatePagesArgstraceIdiniDictkey, 
       /* options */ js.UndefOr[PluginOptions], 
       /* callback */ js.UndefOr[PluginCallback], 
       Unit
@@ -323,8 +323,8 @@ trait GatsbyNode extends js.Object {
 object GatsbyNode {
   @scala.inline
   def apply(
-    createPages: (/* args */ CreatePagesArgs with AnonInitialcreatePages, /* options */ js.UndefOr[PluginOptions], /* callback */ js.UndefOr[PluginCallback]) => Unit = null,
-    createPagesStatefully: (/* args */ CreatePagesArgs with AnonInitialcreatePagesStatefully, /* options */ js.UndefOr[PluginOptions], /* callback */ js.UndefOr[PluginCallback]) => Unit = null,
+    createPages: (/* args */ CreatePagesArgstraceIdini, /* options */ js.UndefOr[PluginOptions], /* callback */ js.UndefOr[PluginCallback]) => Unit = null,
+    createPagesStatefully: (/* args */ CreatePagesArgstraceIdiniDictkey, /* options */ js.UndefOr[PluginOptions], /* callback */ js.UndefOr[PluginCallback]) => Unit = null,
     createResolvers: (js.Function2[/* args */ CreateResolversArgs, /* options */ PluginOptions, _]) with (js.Function2[/* args */ CreateResolversArgs, /* options */ PluginOptions, js.Promise[_]]) with (js.Function3[
       /* args */ CreateResolversArgs, 
       /* options */ PluginOptions, 

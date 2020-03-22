@@ -58,7 +58,7 @@ trait PlotPackedbubbleLayoutAlgorithmParentNodeOptions extends js.Object {
     * (Highcharts) Styling options for parentNodes markers. Similar to
     * line.marker options.
     */
-  var marker: js.UndefOr[PlotPackedbubbleLayoutAlgorithmParentNodeMarkerOptions] = js.undefined
+  var marker: js.UndefOr[PointMarkerOptionsObject] = js.undefined
   /**
     * (Highcharts) Max number of iterations before algorithm will stop. In
     * general, algorithm should find positions sooner, but when rendering huge
@@ -90,7 +90,7 @@ object PlotPackedbubbleLayoutAlgorithmParentNodeOptions {
     initialPositions: circle | random | js.Function = null,
     integration: OptionsIntegrationValue = null,
     linkLength: Int | Double = null,
-    marker: PlotPackedbubbleLayoutAlgorithmParentNodeMarkerOptions = null,
+    marker: PointMarkerOptionsObject = null,
     maxIterations: Int | Double = null,
     maxSpeed: Int | Double = null,
     seriesInteraction: js.UndefOr[Boolean] = js.undefined,

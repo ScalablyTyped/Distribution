@@ -1,9 +1,9 @@
 package typings.flexmonster.mod
 
 import typings.flexmonster.AnonBlocking
-import typings.flexmonster.AnonCallbackHandler
-import typings.flexmonster.AnonCallbackHandlerError
-import typings.flexmonster.AnonCallbackHandlerErrorFormat
+import typings.flexmonster.AnonGetAxisFormat
+import typings.flexmonster.AnonGetData
+import typings.flexmonster.AnonGetNumberFormat
 import typings.flexmonster.AnonIgnoreScroll
 import typings.flexmonster.AnonIsRemoved
 import typings.flexmonster.AnonSlice
@@ -13,9 +13,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Pivot extends js.Object {
-  var fusioncharts: js.UndefOr[AnonCallbackHandler] = js.native
-  var googlecharts: js.UndefOr[AnonCallbackHandlerError] = js.native
-  var highcharts: js.UndefOr[AnonCallbackHandlerErrorFormat] = js.native
+  var fusioncharts: js.UndefOr[AnonGetData] = js.native
+  var googlecharts: js.UndefOr[AnonGetNumberFormat] = js.native
+  var highcharts: js.UndefOr[AnonGetAxisFormat] = js.native
   var toolbar: Toolbar = js.native
   var version: String = js.native
   def addCalculatedMeasure(measure: Measure): Unit = js.native

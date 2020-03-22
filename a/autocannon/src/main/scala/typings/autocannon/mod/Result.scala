@@ -1,6 +1,6 @@
 package typings.autocannon.mod
 
-import typings.autocannon.AnonSent
+import typings.autocannon.Histogramsentnumber
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -35,7 +35,7 @@ trait Result extends js.Object {
   /** The number of pipelined requests used per connection (value of `options.pipelining`). */
   var pipelining: Double
   /** A histogram object containing statistics about the amount of requests that were sent per second. */
-  var requests: Histogram with AnonSent
+  var requests: Histogramsentnumber
   /** The UNIX Domain Socket or Windows Named Pipe that was targeted, or `undefined`. */
   var socketPath: js.UndefOr[String] = js.undefined
   /** A Date object representing when the test started. */
@@ -65,7 +65,7 @@ object Result {
     latency: Histogram,
     non2xx: Double,
     pipelining: Double,
-    requests: Histogram with AnonSent,
+    requests: Histogramsentnumber,
     start: Date,
     throughput: Histogram,
     timeouts: Double,

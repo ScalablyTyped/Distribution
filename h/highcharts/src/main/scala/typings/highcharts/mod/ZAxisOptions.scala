@@ -9,7 +9,7 @@ trait ZAxisOptions extends AxisOptions {
     * (Highcharts) Accessibility options for an axis. Requires the
     * accessibility module.
     */
-  var accessibility: js.UndefOr[js.Object | ZAxisAccessibilityOptions] = js.undefined
+  var accessibility: js.UndefOr[AxisAccessibilityOptionsObject] = js.undefined
   /**
     * (Highcharts, Highstock, Gantt) When using multiple axis, the ticks of two
     * or more opposite axes will automatically be aligned by adding ticks to
@@ -37,15 +37,22 @@ trait ZAxisOptions extends AxisOptions {
     */
   var alternateGridColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
+    * (Highcharts) In a polar chart, this is the angle of the Y axis in
+    * degrees, where 0 is up and 90 is right. The angle determines the position
+    * of the axis line and the labels, though the coordinate system is
+    * unaffected. Since v8.0.0 this option is also applicable for X axis
+    * (inverted polar).
+    */
+  var angle: js.UndefOr[Double] = js.undefined
+  /**
     * (Highcharts, Gantt) If categories are present for the xAxis, names are
-    * used instead of numbers for that axis. Since Highcharts 3.0, categories
-    * can also be extracted by giving each point a name and setting axis type
-    * to `category`. However, if you have multiple series, best practice
-    * remains defining the `categories` array.
+    * used instead of numbers for that axis.
     *
-    * Example:
+    * Since Highcharts 3.0, categories can also be extracted by giving each
+    * point a name and setting axis type to `category`. However, if you have
+    * multiple series, best practice remains defining the `categories` array.
     *
-    *  (see online documentation for example)
+    * Example: `categories: ['Apples', 'Bananas', 'Oranges']`
     */
   var categories: js.UndefOr[js.Array[String]] = js.undefined
   /**
@@ -63,7 +70,7 @@ trait ZAxisOptions extends AxisOptions {
     * (Gantt) Show an indicator on the axis for the current date and time. Can
     * be a boolean or a configuration object similar to xAxis.plotLines.
     */
-  var currentDateIndicator: js.UndefOr[Boolean | ZAxisCurrentDateIndicatorOptions] = js.undefined
+  var currentDateIndicator: js.UndefOr[Boolean | AxisCurrentDateIndicatorOptions] = js.undefined
   /**
     * (Highcharts, Highstock, Gantt) For a datetime axis, the scale will
     * automatically adjust to the appropriate unit. This member gives the
@@ -71,11 +78,10 @@ trait ZAxisOptions extends AxisOptions {
     * values, different units may be used, for example the `day` unit can be
     * used on midnight and `hour` unit be used for intermediate values on the
     * same axis. For an overview of the replacement codes, see dateFormat.
-    * Defaults to:
     *
-    *  (see online documentation for example)
+    * Defaults to: (see online documentation for example)
     */
-  var dateTimeLabelFormats: js.UndefOr[ZAxisDateTimeLabelFormatsOptions] = js.undefined
+  var dateTimeLabelFormats: js.UndefOr[AxisDateTimeLabelFormatsOptions] = js.undefined
   /**
     * (Highcharts) Whether to force the axis to end on a tick. Use this option
     * with the `maxPadding` option to control the axis end.
@@ -107,6 +113,13 @@ trait ZAxisOptions extends AxisOptions {
     */
   var gridLineDashStyle: js.UndefOr[DashStyleValue] = js.undefined
   /**
+    * (Highcharts) Polar charts only. Whether the grid lines should draw as a
+    * polygon with straight lines between categories, or as circles. Can be
+    * either `circle` or `polygon`. Since v8.0.0 this option is also applicable
+    * for X axis (inverted polar).
+    */
+  var gridLineInterpolation: js.UndefOr[OptionsGridLineInterpolationValue] = js.undefined
+  /**
     * (Highcharts) The width of the grid lines extending the ticks across the
     * plot area.
     *
@@ -125,6 +138,9 @@ trait ZAxisOptions extends AxisOptions {
   var id: js.UndefOr[String] = js.undefined
   /**
     * (Highcharts) The axis labels show the number or category for each tick.
+    *
+    * Since v8.0.0: Labels are animated in categorized x-axis with updating
+    * data if `tickInterval` and `step` is set to 1.
     */
   var labels: js.UndefOr[ZAxisLabelsOptions] = js.undefined
   /**
@@ -502,9 +518,9 @@ trait ZAxisOptions extends AxisOptions {
     * (Highcharts, Highstock, Gantt) Datetime axis only. An array determining
     * what time intervals the ticks are allowed to fall on. Each array item is
     * an array where the first value is the time unit and the second value
-    * another array of allowed multiples. Defaults to:
+    * another array of allowed multiples.
     *
-    *  (see online documentation for example)
+    * Defaults to: (see online documentation for example)
     */
   var units: js.UndefOr[js.Array[js.Tuple2[String, js.Array[Double] | Null]]] = js.undefined
   /**
@@ -522,21 +538,23 @@ trait ZAxisOptions extends AxisOptions {
 object ZAxisOptions {
   @scala.inline
   def apply(
-    accessibility: js.Object | ZAxisAccessibilityOptions = null,
+    accessibility: AxisAccessibilityOptionsObject = null,
     alignTicks: js.UndefOr[Boolean] = js.undefined,
     allowDecimals: js.UndefOr[Boolean] = js.undefined,
     alternateGridColor: ColorString | GradientColorObject | PatternObject = null,
+    angle: Int | Double = null,
     categories: js.Array[String] = null,
     ceiling: Int | Double = null,
     className: String = null,
-    currentDateIndicator: Boolean | ZAxisCurrentDateIndicatorOptions = null,
-    dateTimeLabelFormats: ZAxisDateTimeLabelFormatsOptions = null,
+    currentDateIndicator: Boolean | AxisCurrentDateIndicatorOptions = null,
+    dateTimeLabelFormats: AxisDateTimeLabelFormatsOptions = null,
     endOnTick: js.UndefOr[Boolean] = js.undefined,
     events: ZAxisEventsOptions = null,
     floor: Int | Double = null,
     grid: ZAxisGridOptions = null,
     gridLineColor: ColorString | GradientColorObject | PatternObject = null,
     gridLineDashStyle: DashStyleValue = null,
+    gridLineInterpolation: OptionsGridLineInterpolationValue = null,
     gridLineWidth: Int | Double = null,
     gridZIndex: Int | Double = null,
     id: String = null,
@@ -598,6 +616,7 @@ object ZAxisOptions {
     if (!js.isUndefined(alignTicks)) __obj.updateDynamic("alignTicks")(alignTicks.asInstanceOf[js.Any])
     if (!js.isUndefined(allowDecimals)) __obj.updateDynamic("allowDecimals")(allowDecimals.asInstanceOf[js.Any])
     if (alternateGridColor != null) __obj.updateDynamic("alternateGridColor")(alternateGridColor.asInstanceOf[js.Any])
+    if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
     if (categories != null) __obj.updateDynamic("categories")(categories.asInstanceOf[js.Any])
     if (ceiling != null) __obj.updateDynamic("ceiling")(ceiling.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
@@ -609,6 +628,7 @@ object ZAxisOptions {
     if (grid != null) __obj.updateDynamic("grid")(grid.asInstanceOf[js.Any])
     if (gridLineColor != null) __obj.updateDynamic("gridLineColor")(gridLineColor.asInstanceOf[js.Any])
     if (gridLineDashStyle != null) __obj.updateDynamic("gridLineDashStyle")(gridLineDashStyle.asInstanceOf[js.Any])
+    if (gridLineInterpolation != null) __obj.updateDynamic("gridLineInterpolation")(gridLineInterpolation.asInstanceOf[js.Any])
     if (gridLineWidth != null) __obj.updateDynamic("gridLineWidth")(gridLineWidth.asInstanceOf[js.Any])
     if (gridZIndex != null) __obj.updateDynamic("gridZIndex")(gridZIndex.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])

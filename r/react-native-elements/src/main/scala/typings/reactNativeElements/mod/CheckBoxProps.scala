@@ -4,10 +4,9 @@ import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import typings.react.mod.ReactElement
 import typings.reactNative.mod.StyleProp
-import typings.reactNative.mod.TextProperties
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
-import typings.std.Partial
+import typings.reactNativeElements.PartialTextProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -105,7 +104,7 @@ trait CheckBoxProps extends js.Object {
   /**
     * Additional props for the title
     */
-  var titleProps: js.UndefOr[Partial[TextProperties]] = js.undefined
+  var titleProps: js.UndefOr[PartialTextProperties] = js.undefined
   /**
     * Default unchecked color
     * @default '#bfbfbf'
@@ -144,7 +143,7 @@ object CheckBoxProps {
     size: Int | Double = null,
     textStyle: StyleProp[TextStyle] = null,
     title: String | ReactElement = null,
-    titleProps: Partial[TextProperties] = null,
+    titleProps: PartialTextProperties = null,
     uncheckedColor: String = null,
     uncheckedIcon: String | ReactElement = null,
     wrapperStyle: StyleProp[ViewStyle] = null

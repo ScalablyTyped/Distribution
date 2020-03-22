@@ -1,7 +1,6 @@
 package typings.reactNativeFirebaseApp.mod.ReactNativeFirebase
 
-import typings.reactNativeFirebaseApp.ReactNativeFirebase.FirebaseModuleWithStatics
-import typings.reactNativeFirebaseApp.Utils.Statics
+import typings.reactNativeFirebaseApp.FirebaseModuleWithStatics
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,12 +11,12 @@ trait Module extends js.Object {
     * and related services inside React Native, e.g. Test Lab helpers
     * and Google Play Services version helpers.
     */
-  var utils: FirebaseModuleWithStatics[typings.reactNativeFirebaseApp.Utils.Module, Statics]
+  var utils: FirebaseModuleWithStatics
 }
 
 object Module {
   @scala.inline
-  def apply(utils: FirebaseModuleWithStatics[typings.reactNativeFirebaseApp.Utils.Module, Statics]): Module = {
+  def apply(utils: FirebaseModuleWithStatics): Module = {
     val __obj = js.Dynamic.literal(utils = utils.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Module]

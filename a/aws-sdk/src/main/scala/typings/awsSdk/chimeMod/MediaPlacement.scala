@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait MediaPlacement extends js.Object {
   /**
+    * The audio fallback URL.
+    */
+  var AudioFallbackUrl: js.UndefOr[UriType] = js.native
+  /**
     * The audio host URL.
     */
   var AudioHostUrl: js.UndefOr[UriType] = js.native
@@ -35,6 +39,7 @@ trait MediaPlacement extends js.Object {
 object MediaPlacement {
   @scala.inline
   def apply(
+    AudioFallbackUrl: UriType = null,
     AudioHostUrl: UriType = null,
     ScreenDataUrl: UriType = null,
     ScreenSharingUrl: UriType = null,
@@ -43,6 +48,7 @@ object MediaPlacement {
     TurnControlUrl: UriType = null
   ): MediaPlacement = {
     val __obj = js.Dynamic.literal()
+    if (AudioFallbackUrl != null) __obj.updateDynamic("AudioFallbackUrl")(AudioFallbackUrl.asInstanceOf[js.Any])
     if (AudioHostUrl != null) __obj.updateDynamic("AudioHostUrl")(AudioHostUrl.asInstanceOf[js.Any])
     if (ScreenDataUrl != null) __obj.updateDynamic("ScreenDataUrl")(ScreenDataUrl.asInstanceOf[js.Any])
     if (ScreenSharingUrl != null) __obj.updateDynamic("ScreenSharingUrl")(ScreenSharingUrl.asInstanceOf[js.Any])

@@ -1,7 +1,7 @@
 
 # Scala.js typings for jimp__types
 
-Typings are for version 0.8.5
+Typings are for version 0.9.3
 
 ## Library description:
 Default Jimp encoder/decoders.

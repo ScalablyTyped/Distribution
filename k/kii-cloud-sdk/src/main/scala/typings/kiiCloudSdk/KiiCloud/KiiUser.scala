@@ -1,18 +1,12 @@
 package typings.kiiCloudSdk.KiiCloud
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.kiiCloudSdk.AnonAnErrorString
-import typings.kiiCloudSdk.AnonAnErrorStringFailureGroupList
-import typings.kiiCloudSdk.AnonAnErrorStringFailureSuccessAny
-import typings.kiiCloudSdk.AnonAnErrorStringFailureSuccessTheAuthenticatedUser
-import typings.kiiCloudSdk.AnonAnErrorStringFailureSuccessTheDeletedUser
-import typings.kiiCloudSdk.AnonAnErrorStringFailureSuccessTheMatchedUser
-import typings.kiiCloudSdk.AnonAnErrorStringFailureSuccessTheRefreshedUser
-import typings.kiiCloudSdk.AnonAnErrorStringFailureSuccessTheSavedUser
-import typings.kiiCloudSdk.AnonAnErrorStringFailureSuccessTheUser
-import typings.kiiCloudSdk.AnonErrString
-import typings.kiiCloudSdk.AnonErrorFailure
-import typings.kiiCloudSdk.AnonErrorString
+import typings.kiiCloudSdk.Anon2
+import typings.kiiCloudSdk.Anon35
+import typings.kiiCloudSdk.Anon36
+import typings.kiiCloudSdk.Anon37
+import typings.kiiCloudSdk.Anon38
+import typings.kiiCloudSdk.AnonSuccess
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -85,7 +79,7 @@ class KiiUser () extends KiiACLSubject {
     *     );
     */
   def changeEmail(newEmail: String): js.Promise[KiiUser] = js.native
-  def changeEmail(newEmail: String, callbacks: AnonAnErrorStringFailureSuccessTheUser): js.Promise[KiiUser] = js.native
+  def changeEmail(newEmail: String, callbacks: Anon35): js.Promise[KiiUser] = js.native
   /**
     * Change phone number of logged in user.
     * If the phone number verification is required by your app configuration,
@@ -133,7 +127,7 @@ class KiiUser () extends KiiACLSubject {
     *     );
     */
   def changePhone(newPhoneNumber: String): js.Promise[KiiUser] = js.native
-  def changePhone(newPhoneNumber: String, callbacks: AnonAnErrorStringFailureSuccessTheUser): js.Promise[KiiUser] = js.native
+  def changePhone(newPhoneNumber: String, callbacks: Anon35): js.Promise[KiiUser] = js.native
   /**
     * Delete the user from the server
     *
@@ -175,7 +169,7 @@ class KiiUser () extends KiiACLSubject {
     *     );
     */
   def delete(): js.Promise[KiiUser] = js.native
-  def delete(callbacks: AnonAnErrorStringFailureSuccessTheDeletedUser): js.Promise[KiiUser] = js.native
+  def delete(callbacks: Anon35): js.Promise[KiiUser] = js.native
   /**
     * Return true if the user is disabled, false when enabled and undefined
     * when user is not refreshed.
@@ -414,8 +408,8 @@ class KiiUser () extends KiiACLSubject {
     *     );
     */
   def listTopics(): js.Promise[js.Tuple2[js.Array[KiiTopic], String]] = js.native
-  def listTopics(callbacks: AnonAnErrorString): js.Promise[js.Tuple2[js.Array[KiiTopic], String]] = js.native
-  def listTopics(callbacks: AnonAnErrorString, paginationKey: String): js.Promise[js.Tuple2[js.Array[KiiTopic], String]] = js.native
+  def listTopics(callbacks: AnonSuccess): js.Promise[js.Tuple2[js.Array[KiiTopic], String]] = js.native
+  def listTopics(callbacks: AnonSuccess, paginationKey: String): js.Promise[js.Tuple2[js.Array[KiiTopic], String]] = js.native
   /**
     * Retrieve a list of groups which the user is a member of
     *
@@ -470,7 +464,7 @@ class KiiUser () extends KiiACLSubject {
     *     );
     */
   def memberOfGroups(): js.Promise[js.Tuple2[KiiUser, js.Array[KiiGroup]]] = js.native
-  def memberOfGroups(callbacks: AnonAnErrorStringFailureGroupList): js.Promise[js.Tuple2[KiiUser, js.Array[KiiGroup]]] = js.native
+  def memberOfGroups(callbacks: Anon37): js.Promise[js.Tuple2[KiiUser, js.Array[KiiGroup]]] = js.native
   /**
     * Get a specifically formatted string referencing the user
     *
@@ -539,7 +533,7 @@ class KiiUser () extends KiiACLSubject {
     *     );
     */
   def ownerOfGroups(): js.Promise[js.Tuple2[KiiUser, js.Array[KiiGroup]]] = js.native
-  def ownerOfGroups(callbacks: AnonAnErrorStringFailureGroupList): js.Promise[js.Tuple2[KiiUser, js.Array[KiiGroup]]] = js.native
+  def ownerOfGroups(callbacks: Anon37): js.Promise[js.Tuple2[KiiUser, js.Array[KiiGroup]]] = js.native
   /**
     * Instantiate push installation for this user.
     *
@@ -616,12 +610,12 @@ class KiiUser () extends KiiACLSubject {
     *     );
     */
   def putIdentity(identityData: identityData, password: String): js.Promise[KiiUser] = js.native
-  def putIdentity(identityData: identityData, password: String, callbacks: AnonErrorString): js.Promise[KiiUser] = js.native
-  def putIdentity(identityData: identityData, password: String, callbacks: AnonErrorString, userFields: js.Any): js.Promise[KiiUser] = js.native
+  def putIdentity(identityData: identityData, password: String, callbacks: Anon35): js.Promise[KiiUser] = js.native
+  def putIdentity(identityData: identityData, password: String, callbacks: Anon35, userFields: js.Any): js.Promise[KiiUser] = js.native
   def putIdentity(
     identityData: identityData,
     password: String,
-    callbacks: AnonErrorString,
+    callbacks: Anon35,
     userFields: js.Any,
     removeFields: js.Array[String]
   ): js.Promise[KiiUser] = js.native
@@ -668,7 +662,7 @@ class KiiUser () extends KiiACLSubject {
     *     );
     */
   def refresh(): js.Promise[KiiUser] = js.native
-  def refresh(callbacks: AnonAnErrorStringFailureSuccessTheRefreshedUser): js.Promise[KiiUser] = js.native
+  def refresh(callbacks: Anon35): js.Promise[KiiUser] = js.native
   /**
     * Registers a user with the server
     *
@@ -712,7 +706,7 @@ class KiiUser () extends KiiACLSubject {
     *     );
     */
   def register(): js.Promise[KiiUser] = js.native
-  def register(callbacks: AnonAnErrorStringFailureSuccessTheAuthenticatedUser): js.Promise[KiiUser] = js.native
+  def register(callbacks: Anon35): js.Promise[KiiUser] = js.native
   /**
     * Resend the email verification code to the user
     *
@@ -756,7 +750,7 @@ class KiiUser () extends KiiACLSubject {
     *     );
     */
   def resendEmailVerification(): js.Promise[KiiUser] = js.native
-  def resendEmailVerification(callbacks: AnonAnErrorStringFailureSuccessTheUser): js.Promise[KiiUser] = js.native
+  def resendEmailVerification(callbacks: Anon35): js.Promise[KiiUser] = js.native
   /**
     * Resend the SMS verification code to the user
     *
@@ -800,7 +794,7 @@ class KiiUser () extends KiiACLSubject {
     *     );
     */
   def resendPhoneNumberVerification(): js.Promise[KiiUser] = js.native
-  def resendPhoneNumberVerification(callbacks: AnonAnErrorStringFailureSuccessTheUser): js.Promise[KiiUser] = js.native
+  def resendPhoneNumberVerification(callbacks: Anon35): js.Promise[KiiUser] = js.native
   /**
     * Saves the latest user values to the server
     *
@@ -844,7 +838,7 @@ class KiiUser () extends KiiACLSubject {
     *     );
     */
   def save(): js.Promise[KiiUser] = js.native
-  def save(callbacks: AnonAnErrorStringFailureSuccessTheSavedUser): js.Promise[KiiUser] = js.native
+  def save(callbacks: Anon35): js.Promise[KiiUser] = js.native
   /**
     * Sets a key/value pair to a KiiUser
     *
@@ -953,14 +947,9 @@ class KiiUser () extends KiiACLSubject {
     *     );
     */
   def update(identityData: identityData): js.Promise[KiiUser] = js.native
-  def update(identityData: identityData, callbacks: AnonErrorString): js.Promise[KiiUser] = js.native
-  def update(identityData: identityData, callbacks: AnonErrorString, userFields: js.Any): js.Promise[KiiUser] = js.native
-  def update(
-    identityData: identityData,
-    callbacks: AnonErrorString,
-    userFields: js.Any,
-    removeFields: js.Array[String]
-  ): js.Promise[KiiUser] = js.native
+  def update(identityData: identityData, callbacks: Anon35): js.Promise[KiiUser] = js.native
+  def update(identityData: identityData, callbacks: Anon35, userFields: js.Any): js.Promise[KiiUser] = js.native
+  def update(identityData: identityData, callbacks: Anon35, userFields: js.Any, removeFields: js.Array[String]): js.Promise[KiiUser] = js.native
   /**
     * Update a user's password on the server
     *
@@ -1006,7 +995,7 @@ class KiiUser () extends KiiACLSubject {
     *     );
     */
   def updatePassword(fromPassword: String, toPassword: String): js.Promise[KiiUser] = js.native
-  def updatePassword(fromPassword: String, toPassword: String, callbacks: AnonAnErrorStringFailureSuccessTheUser): js.Promise[KiiUser] = js.native
+  def updatePassword(fromPassword: String, toPassword: String, callbacks: Anon35): js.Promise[KiiUser] = js.native
   /**
     * Verify the current user's phone number
     * <br><br>This method is used to verify the phone number of user currently
@@ -1062,7 +1051,7 @@ class KiiUser () extends KiiACLSubject {
     *     );
     */
   def verifyPhoneNumber(verificationCode: String): js.Promise[KiiUser] = js.native
-  def verifyPhoneNumber(verificationCode: String, callbacks: AnonAnErrorStringFailureSuccessTheUser): js.Promise[KiiUser] = js.native
+  def verifyPhoneNumber(verificationCode: String, callbacks: Anon35): js.Promise[KiiUser] = js.native
 }
 
 /* static members */
@@ -1115,11 +1104,7 @@ object KiiUser extends js.Object {
     *     );
     */
   def authenticate(userIdentifier: String, password: String): js.Promise[KiiUser] = js.native
-  def authenticate(
-    userIdentifier: String,
-    password: String,
-    callbacks: AnonAnErrorStringFailureSuccessTheAuthenticatedUser
-  ): js.Promise[KiiUser] = js.native
+  def authenticate(userIdentifier: String, password: String, callbacks: Anon35): js.Promise[KiiUser] = js.native
   /**
     * Asynchronously authenticates a user with the server using specified access token.
     * This method is non-blocking.<br><br>
@@ -1185,12 +1170,8 @@ object KiiUser extends js.Object {
     *     );
     */
   def authenticateWithToken(accessToken: String): js.Promise[KiiUser] = js.native
-  def authenticateWithToken(accessToken: String, callbacks: AnonAnErrorStringFailureSuccessTheAuthenticatedUser): js.Promise[KiiUser] = js.native
-  def authenticateWithToken(
-    accessToken: String,
-    callbacks: AnonAnErrorStringFailureSuccessTheAuthenticatedUser,
-    expiresAt: Date
-  ): js.Promise[KiiUser] = js.native
+  def authenticateWithToken(accessToken: String, callbacks: Anon35): js.Promise[KiiUser] = js.native
+  def authenticateWithToken(accessToken: String, callbacks: Anon35, expiresAt: Date): js.Promise[KiiUser] = js.native
   /**
     * Reset password with the PIN code in receipt SMS
     * After {@link KiiUser.resetPasswordWithNotificationMethod} is called with
@@ -1240,7 +1221,7 @@ object KiiUser extends js.Object {
     */
   def completeResetPassword(userIdentifier: String, pinCode: String): js.Promise[Unit] = js.native
   def completeResetPassword(userIdentifier: String, pinCode: String, newPassword: String): js.Promise[Unit] = js.native
-  def completeResetPassword(userIdentifier: String, pinCode: String, newPassword: String, callbacks: AnonErrorFailure): js.Promise[Unit] = js.native
+  def completeResetPassword(userIdentifier: String, pinCode: String, newPassword: String, callbacks: Anon2): js.Promise[Unit] = js.native
   /**
     * Find registered KiiUser with the email.<br>
     * If there are no user registers with the specified email or if there are but not verified email yet,
@@ -1289,7 +1270,7 @@ object KiiUser extends js.Object {
     *     );
     */
   def findUserByEmail(email: String): js.Promise[KiiUser] = js.native
-  def findUserByEmail(email: String, callbacks: AnonAnErrorStringFailureSuccessTheMatchedUser): js.Promise[KiiUser] = js.native
+  def findUserByEmail(email: String, callbacks: Anon38): js.Promise[KiiUser] = js.native
   /**
     * Find registered KiiUser with the phone.<br>
     * If there are no user registers with the specified phone or if there are but not verified phone yet,
@@ -1338,7 +1319,7 @@ object KiiUser extends js.Object {
     *     );
     */
   def findUserByPhone(phone: String): js.Promise[KiiUser] = js.native
-  def findUserByPhone(phone: String, callbacks: AnonAnErrorStringFailureSuccessTheMatchedUser): js.Promise[KiiUser] = js.native
+  def findUserByPhone(phone: String, callbacks: Anon38): js.Promise[KiiUser] = js.native
   /**
     * Find registered KiiUser with the user name.<br>
     * If there are no user registers with the specified user name, callbacks.failure or reject callback of promise will be called.
@@ -1386,7 +1367,7 @@ object KiiUser extends js.Object {
     *     );
     */
   def findUserByUsername(username: String): js.Promise[KiiUser] = js.native
-  def findUserByUsername(username: String, callbacks: AnonAnErrorStringFailureSuccessTheMatchedUser): js.Promise[KiiUser] = js.native
+  def findUserByUsername(username: String, callbacks: Anon38): js.Promise[KiiUser] = js.native
   /**
     * The currently authenticated user
     *
@@ -1452,8 +1433,8 @@ object KiiUser extends js.Object {
     *     );
     */
   def registerAsPseudoUser(): js.Promise[KiiUser] = js.native
-  def registerAsPseudoUser(callbacks: AnonAnErrorStringFailureSuccessTheAuthenticatedUser): js.Promise[KiiUser] = js.native
-  def registerAsPseudoUser(callbacks: AnonAnErrorStringFailureSuccessTheAuthenticatedUser, userFields: js.Any): js.Promise[KiiUser] = js.native
+  def registerAsPseudoUser(callbacks: Anon35): js.Promise[KiiUser] = js.native
+  def registerAsPseudoUser(callbacks: Anon35, userFields: js.Any): js.Promise[KiiUser] = js.native
   /**
     * Reset a user's password on the server
     *
@@ -1497,7 +1478,7 @@ object KiiUser extends js.Object {
     *     );
     */
   def resetPassword(userIdentifier: String): js.Promise[Unit] = js.native
-  def resetPassword(userIdentifier: String, callbacks: AnonAnErrorStringFailureSuccessAny): js.Promise[Unit] = js.native
+  def resetPassword(userIdentifier: String, callbacks: Anon36): js.Promise[Unit] = js.native
   /**
     * Reset the password of user <br>
     * Reset the password of user specified by given identifier. <br>
@@ -1550,7 +1531,7 @@ object KiiUser extends js.Object {
     *     );
     */
   def resetPasswordWithNotificationMethod(userIdentifier: String, notificationMethod: String): js.Promise[Unit] = js.native
-  def resetPasswordWithNotificationMethod(userIdentifier: String, notificationMethod: String, callbacks: AnonErrString): js.Promise[Unit] = js.native
+  def resetPasswordWithNotificationMethod(userIdentifier: String, notificationMethod: String, callbacks: Anon36): js.Promise[Unit] = js.native
   /**
     * Create a user object to prepare for registration with credentials pre-filled
     *

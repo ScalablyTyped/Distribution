@@ -1,9 +1,8 @@
 package typings.materializeCss.mod
 
-import typings.materializeCss.M.PushpinOptions
 import typings.materializeCss.MElements
+import typings.materializeCss.PartialPushpinOptions
 import typings.std.Element
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,11 +24,11 @@ object Pushpin extends js.Object {
     * Init Pushpins
     */
   def init(els: MElements): js.Array[typings.materializeCss.M.Pushpin] = js.native
-  def init(els: MElements, options: Partial[PushpinOptions]): js.Array[typings.materializeCss.M.Pushpin] = js.native
+  def init(els: MElements, options: PartialPushpinOptions): js.Array[typings.materializeCss.M.Pushpin] = js.native
   /**
     * Init Pushpin
     */
   def init(els: Element): typings.materializeCss.M.Pushpin = js.native
-  def init(els: Element, options: Partial[PushpinOptions]): typings.materializeCss.M.Pushpin = js.native
+  def init(els: Element, options: PartialPushpinOptions): typings.materializeCss.M.Pushpin = js.native
 }
 

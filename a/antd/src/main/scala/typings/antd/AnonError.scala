@@ -1,21 +1,20 @@
 package typings.antd
 
+import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonError extends js.Object {
-  var error: String
-  var info: String
-  var success: String
-  var warning: String
+  var error: js.UndefOr[Error | Null] = js.undefined
+  var info: AnonComponentStack
 }
 
 object AnonError {
   @scala.inline
-  def apply(error: String, info: String, success: String, warning: String): AnonError = {
-    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any], warning = warning.asInstanceOf[js.Any])
-  
+  def apply(info: AnonComponentStack, error: Error = null): AnonError = {
+    val __obj = js.Dynamic.literal(info = info.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnonError]
   }
 }

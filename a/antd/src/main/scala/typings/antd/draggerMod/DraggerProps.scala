@@ -16,6 +16,7 @@ import typings.antd.uploadInterfaceMod.UploadListType
 import typings.antd.uploadInterfaceMod.UploadLocale
 import typings.antd.uploadInterfaceMod.UploadType
 import typings.react.mod.CSSProperties
+import typings.react.mod.ReactNode
 import typings.std.Blob
 import typings.std.File
 import scala.scalajs.js
@@ -38,6 +39,9 @@ trait DraggerProps extends js.Object {
   var fileList: js.UndefOr[js.Array[UploadFile[_]]] = js.undefined
   var headers: js.UndefOr[HttpRequestHeader] = js.undefined
   var height: js.UndefOr[Double] = js.undefined
+  var iconRender: js.UndefOr[
+    js.Function2[/* file */ UploadFile[_], /* listType */ js.UndefOr[UploadListType], ReactNode]
+  ] = js.undefined
   var id: js.UndefOr[String] = js.undefined
   var listType: js.UndefOr[UploadListType] = js.undefined
   var locale: js.UndefOr[UploadLocale] = js.undefined
@@ -76,6 +80,7 @@ object DraggerProps {
     fileList: js.Array[UploadFile[_]] = null,
     headers: HttpRequestHeader = null,
     height: Int | Double = null,
+    iconRender: (/* file */ UploadFile[_], /* listType */ js.UndefOr[UploadListType]) => ReactNode = null,
     id: String = null,
     listType: UploadListType = null,
     locale: UploadLocale = null,
@@ -109,6 +114,7 @@ object DraggerProps {
     if (fileList != null) __obj.updateDynamic("fileList")(fileList.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (iconRender != null) __obj.updateDynamic("iconRender")(js.Any.fromFunction2(iconRender))
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (listType != null) __obj.updateDynamic("listType")(listType.asInstanceOf[js.Any])
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])

@@ -1,11 +1,17 @@
 package typings.gridstack
 
+import typings.std.CustomEvent
+import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
 trait GridStack extends js.Object {
+  /** the HTML element tied to this grid after it's been initialized */
+  var el: GridStackHTMLElement = js.native
+  /** engine used to implement non DOM grid functionality */
+  var engine: GridStackEngine = js.native
   /**
     * Creates new widget and returns it.
     *
@@ -14,22 +20,20 @@ trait GridStack extends js.Object {
     * See also `makeWidget()`.
     *
     * @example
-    * $('.grid-stack').gridstack();
-    * var grid = $('.grid-stack').data('gridstack');
+    * var grid = GridStack.init();
     * grid.addWidget(el, {width: 3, autoPosition: true});
     *
     * @param el widget to add
     * @param options widget position/size options (optional)
     */
-  def addWidget(el: GridStackElement): JQuery = js.native
-  def addWidget(el: GridStackElement, options: GridstackWidget): JQuery = js.native
+  def addWidget(el: GridStackElement): HTMLElement = js.native
+  def addWidget(el: GridStackElement, options: GridstackWidget): HTMLElement = js.native
   /**
     * Creates new widget and returns it. 
     * Legacy: Spelled out version of the widgets options, recommend use new version instead.
     *
     * @example
-    * $('.grid-stack').gridstack();
-    * var grid = $('.grid-stack').data('gridstack');
+    * var grid = GridStack.init();
     * grid.addWidget(el, 0, 0, 3, 2, true);
     *
     * @param el widget to add
@@ -56,9 +60,9 @@ trait GridStack extends js.Object {
     minHeight: js.UndefOr[Double],
     maxHeight: js.UndefOr[Double],
     id: js.UndefOr[Double | String]
-  ): JQuery = js.native
+  ): HTMLElement = js.native
   /**
-    * Initializes batch updates. You will see no changes until commit method is called.
+    * Initializes batch updates. You will see no changes until `commit()` method is called.
     */
   def batchUpdate(): Unit = js.native
   /**
@@ -84,6 +88,20 @@ trait GridStack extends js.Object {
     * Gets current cell width.
     */
   def cellWidth(): Double = js.native
+  /**
+    * get the number of columns in the grid (default 12)
+    */
+  def column(): Double = js.native
+  /**
+    * set the number of columns in the grid. Will update existing widgets to conform to new number of columns,
+    * as well as cache the original layout so you can revert back to previous positions without loss.
+    * Requires `gridstack-extra.css` or `gridstack-extra.min.css` for [1-11],
+    * else you will need to generate correct CSS (see https://github.com/gridstack/gridstack.js#change-grid-columns)
+    * @param column - Integer > 0 (default 12).
+    * @param doNotPropagate if true existing widgets will not be updated (optional) 
+    */
+  def column(column: Double): Unit = js.native
+  def column(column: Double, doNotPropagate: Boolean): Unit = js.native
   /**
     * Finishes batch updates. Updates DOM nodes. You must call it after batchUpdate.
     */
@@ -114,9 +132,6 @@ trait GridStack extends js.Object {
   def enable(): Unit = js.native
   /**
     * Enables/disables widget moving.
-    * This is a shortcut for:
-    * @example
-    * grid.movable(this.container.children('.' + this.opts.itemClass), doEnable);
     *
     * @param doEnable
     * @param includeNewWidgets will force new widgets to be draggable as per
@@ -128,10 +143,6 @@ trait GridStack extends js.Object {
     * @param doEnable
     * @param includeNewWidgets will force new widgets to be draggable as per
     * doEnable`s value by changing the disableResize grid option.
-    *
-    * This is a shortcut for:
-    * @example
-    *  grid.resizable(this.container.children('.' + this.opts.itemClass), doEnable);
     */
   def enableResize(doEnable: Boolean, includeNewWidgets: Boolean): Unit = js.native
   /**
@@ -154,6 +165,35 @@ trait GridStack extends js.Object {
     */
   def getCellFromPixel(position: MousePosition): CellPosition = js.native
   def getCellFromPixel(position: MousePosition, useOffset: Boolean): CellPosition = js.native
+  /** returns the current number of rows */
+  def getRow(): Double = js.native
+  /**
+    * initializing the HTML element, or selector string, into a grid will return the grid. Calling it again will
+    * simply return the existing instance (ignore any passed options). There is also a version that support
+    * multiple grids initialization.
+    * @param options grid options (optional)
+    * @param el element to convert to a grid (default to '.grid-stack' class selector)
+    * 
+    * @example
+    * var grid = window.GridStack.init();
+    * // Note: the HTMLElement (of type GridStackHTMLElement) will itself store a `gridstack: GridStack` value that can be retrieve later
+    * var grid = document.querySelector('.grid-stack').gridstack;
+    */
+  def init(): GridStack = js.native
+  def init(options: GridstackOptions): GridStack = js.native
+  def init(options: GridstackOptions, el: GridStackElement): GridStack = js.native
+  /**
+    * Will initialize a list of elements (given a selector) and return an array of grids.
+    * @param options grid options (optional)
+    * @param selector element to convert to grids (default to '.grid-stack' class selector)
+    * 
+    * @example
+    * var grids = window.GridStack.initAll();
+    * grids.forEach(...)
+    */
+  def initAll(): js.Array[GridStack] = js.native
+  def initAll(options: GridstackOptions): js.Array[GridStack] = js.native
+  def initAll(options: GridstackOptions, selector: String): js.Array[GridStack] = js.native
   /**
     * Checks if specified area is empty.
     * @param x the position x.
@@ -169,19 +209,18 @@ trait GridStack extends js.Object {
     */
   def locked(el: GridStackElement, `val`: Boolean): Unit = js.native
   /**
-    * If you add elements to your gridstack container by hand, you have to tell gridstack afterwards to make them widgets.
+    * If you add elements to your grid by hand, you have to tell gridstack afterwards to make them widgets.
     * If you want gridstack to add the elements for you, use addWidget instead.
     * Makes the given element a widget and returns it.
     * @param el widget to convert.
     *
     * @example
-    * $('.grid-stack').gridstack();
-    * $('.grid-stack').append('<div id="gsi-1" data-gs-x="0" data-gs-y="0" data-gs-width="3" data-gs-height="2"
+    * var grid = GridStack.init();
+    * grid.el.appendChild('<div id="gsi-1" data-gs-x="0" data-gs-y="0" data-gs-width="3" data-gs-height="2"
     *                     data-gs-auto-position="true"></div>')
-    * var grid = $('.grid-stack').data('gridstack');
     * grid.makeWidget('gsi-1');
     */
-  def makeWidget(el: GridStackElement): JQuery = js.native
+  def makeWidget(el: GridStackElement): HTMLElement = js.native
   /**
     * Set the maxHeight for a widget.
     * @param el widget to modify.
@@ -220,6 +259,35 @@ trait GridStack extends js.Object {
     */
   def move(el: GridStackElement, x: Double, y: Double): Unit = js.native
   /**
+    * unsubscribe from the 'on' event below
+    * @param name of the event (see possible values)
+    */
+  def off(name: GridStackEvent): Unit = js.native
+  /**
+    * Event handler that extracts our CustomEvent data out automatically for receiving custom
+    * notifications (see doc for supported events)
+    * @param name of the event (see possible values) or list of names space separated
+    * @param callback function called with event and optional second/third param
+    * (see README documentation for each signature).
+    * 
+    * @example
+    * grid.on('added', function(e, items) { log('added ', items)} );
+    * or
+    * grid.on('added removed change', function(e, items) { log(e.type, items)} );
+    * 
+    * Note: in some cases it is the same as calling native handler and parsing the event.
+    * grid.el.addEventListener('added', function(event) { log('added ', event.detail)} );
+    */
+  def on(
+    name: GridStackEvent,
+    callback: js.Function3[
+      /* event */ CustomEvent[_], 
+      /* arg2 */ js.UndefOr[js.Array[GridStackNode] | js.Object], 
+      /* arg3 */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Unit = js.native
+  /**
     * Removes all widgets from the grid.
     * @param detachNode if false DOM nodes won't be removed from the tree (Default? true).
     */
@@ -250,16 +318,6 @@ trait GridStack extends js.Object {
     * @param doAnimate if true the grid will animate.
     */
   def setAnimation(doAnimate: Boolean): Unit = js.native
-  /**
-    * Modify number of columns in the grid. Will update existing widgets to conform to new number of columns,
-    * as well as cache the original layout so you can revert back to previous positions without loss.
-    * Requires `gridstack-extra.css` or `gridstack-extra.min.css` for [1-11],
-    * else you will need to generate correct CSS (see https://github.com/gridstack/gridstack.js#change-grid-columns)
-    * @param column - Integer > 0 (default 12).
-    * @param doNotPropagate if true existing widgets will not be updated (optional) 
-    */
-  def setColumn(column: Double): Unit = js.native
-  def setColumn(column: Double, doNotPropagate: Boolean): Unit = js.native
   /**
     * Toggle the grid static state. Also toggle the grid-stack-static class.
     * @param staticValue if true the grid become static.

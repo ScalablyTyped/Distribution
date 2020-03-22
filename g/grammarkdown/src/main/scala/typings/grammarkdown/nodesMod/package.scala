@@ -22,11 +22,10 @@ package object nodesMod {
   type PrimarySymbolTypes = typings.grammarkdown.nodesMod.OptionalSymbolTypes
   type ProductionBody = typings.grammarkdown.nodesMod.RightHandSide
   type ProductionBodyKind = java.lang.String
-  type ProseFragment = /* import warning: importer.ImportType#apply Failed type conversion: grammarkdown.grammarkdown/dist/nodes.ProseFragmentTypes[grammarkdown.grammarkdown/dist/nodes.ProseFragmentKind] */ js.Any
+  type ProseFragment = typings.grammarkdown.nodesMod.ProseFragmentLiteral[
+    typings.grammarkdown.grammarkdownNumbers.`52` | typings.grammarkdown.grammarkdownNumbers.`49` | typings.grammarkdown.grammarkdownNumbers.`50` | typings.grammarkdown.grammarkdownNumbers.`51`
+  ]
   type ProseFragmentKind = java.lang.String
-  type ProseFragmentLiteralTypes = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in grammarkdown.grammarkdown/dist/tokens.ProseFragmentLiteralKind ]: grammarkdown.grammarkdown/dist/nodes.ProseFragmentLiteral<P>}
-    */ typings.grammarkdown.grammarkdownStrings.ProseFragmentLiteralTypes with js.Any
   type SourceElement = typings.grammarkdown.nodesMod.Production
   type SourceElementKind = java.lang.String
   type Trivia = /* import warning: importer.ImportType#apply Failed type conversion: grammarkdown.grammarkdown/dist/nodes.TriviaTypes[grammarkdown.grammarkdown/dist/tokens.TriviaKind] */ js.Any

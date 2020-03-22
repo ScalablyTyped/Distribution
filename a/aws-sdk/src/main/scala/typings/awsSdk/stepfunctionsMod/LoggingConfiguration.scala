@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait LoggingConfiguration extends js.Object {
   /**
-    * An object that describes where your execution history events will be logged. Limited to size 1. Required, if your log level is not set to OFF.
+    * An array of objects that describes where your execution history events will be logged. Limited to size 1. Required, if your log level is not set to OFF.
     */
   var destinations: js.UndefOr[LogDestinationList] = js.native
   /**
-    * Determines whether execution history data is included in your log. When set to FALSE, data is excluded.
+    * Determines whether execution data is included in your log. When set to FALSE, data is excluded.
     */
   var includeExecutionData: js.UndefOr[IncludeExecutionData] = js.native
   /**

@@ -10,6 +10,7 @@ trait Duration extends js.Object {
   var minutes: js.UndefOr[Double] = js.undefined
   var months: js.UndefOr[Double] = js.undefined
   var seconds: js.UndefOr[Double] = js.undefined
+  var weeks: js.UndefOr[Double] = js.undefined
   var years: js.UndefOr[Double] = js.undefined
 }
 
@@ -21,6 +22,7 @@ object Duration {
     minutes: Int | Double = null,
     months: Int | Double = null,
     seconds: Int | Double = null,
+    weeks: Int | Double = null,
     years: Int | Double = null
   ): Duration = {
     val __obj = js.Dynamic.literal()
@@ -29,6 +31,7 @@ object Duration {
     if (minutes != null) __obj.updateDynamic("minutes")(minutes.asInstanceOf[js.Any])
     if (months != null) __obj.updateDynamic("months")(months.asInstanceOf[js.Any])
     if (seconds != null) __obj.updateDynamic("seconds")(seconds.asInstanceOf[js.Any])
+    if (weeks != null) __obj.updateDynamic("weeks")(weeks.asInstanceOf[js.Any])
     if (years != null) __obj.updateDynamic("years")(years.asInstanceOf[js.Any])
     __obj.asInstanceOf[Duration]
   }

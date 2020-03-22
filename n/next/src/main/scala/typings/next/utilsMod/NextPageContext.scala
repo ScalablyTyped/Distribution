@@ -1,10 +1,9 @@
 package typings.next.utilsMod
 
-import typings.next.AnonStatusCode
+import typings.next.ErrorstatusCodenumber
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import typings.node.querystringMod.ParsedUrlQuery
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +20,7 @@ trait NextPageContext extends js.Object {
   /**
     * Error object if encountered during rendering
     */
-  var err: js.UndefOr[(Error with AnonStatusCode) | Null] = js.undefined
+  var err: js.UndefOr[ErrorstatusCodenumber | Null] = js.undefined
   /**
     * Path section of `URL`.
     */
@@ -47,7 +46,7 @@ object NextPageContext {
     pathname: String,
     query: ParsedUrlQuery,
     asPath: String = null,
-    err: Error with AnonStatusCode = null,
+    err: ErrorstatusCodenumber = null,
     req: IncomingMessage = null,
     res: ServerResponse = null
   ): NextPageContext = {

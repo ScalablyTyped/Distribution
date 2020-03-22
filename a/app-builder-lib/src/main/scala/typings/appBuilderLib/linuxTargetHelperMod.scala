@@ -18,15 +18,15 @@ object linuxTargetHelperMod extends js.Object {
     var computeDesktopIcons: js.Any = js.native
     var computeMimeTypeFiles: js.Any = js.native
     val iconPromise: js.Any = js.native
-    val icons: js.Promise[js.Array[IconInfo]] = js.native
     var maxIconPath: String | Null = js.native
-    val mimeTypeFiles: js.Promise[String | Null] = js.native
     val mimeTypeFilesPromise: js.Any = js.native
     var packager: js.Any = js.native
     def computeDesktopEntry(targetSpecificOptions: LinuxTargetSpecificOptions): js.Promise[String] = js.native
     def computeDesktopEntry(targetSpecificOptions: LinuxTargetSpecificOptions, exec: String): js.Promise[String] = js.native
     def computeDesktopEntry(targetSpecificOptions: LinuxTargetSpecificOptions, exec: String, extra: StringDictionary[String]): js.Promise[String] = js.native
     def getDescription(options: LinuxTargetSpecificOptions): String = js.native
+    def icons(): js.Promise[js.Array[IconInfo]] = js.native
+    def mimeTypeFiles(): js.Promise[String | Null] = js.native
     def writeDesktopEntry(targetSpecificOptions: LinuxTargetSpecificOptions): js.Promise[String] = js.native
     def writeDesktopEntry(targetSpecificOptions: LinuxTargetSpecificOptions, exec: String): js.Promise[String] = js.native
     def writeDesktopEntry(targetSpecificOptions: LinuxTargetSpecificOptions, exec: String, destination: String): js.Promise[String] = js.native

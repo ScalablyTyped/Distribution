@@ -1,6 +1,6 @@
 package typings.evernote.mod.Evernote
 
-import typings.evernote.AnonBusinessIdBusinessName
+import typings.evernote.AnonBusinessName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,7 +30,7 @@ import scala.scalajs.js.annotation._
 @JSImport("evernote", "Evernote.BusinessUserInfo")
 @js.native
 class BusinessUserInfo () extends js.Object {
-  def this(args: AnonBusinessIdBusinessName) = this()
+  def this(args: AnonBusinessName) = this()
   var businessId: Double = js.native
   var businessName: String = js.native
   var email: String = js.native

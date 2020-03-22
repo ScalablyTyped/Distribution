@@ -1,9 +1,9 @@
 package typings.sdpTransform.mod
 
 import typings.sdpTransform.AnonAddressTypes
-import typings.sdpTransform.AnonConfig
 import typings.sdpTransform.AnonHash
-import typings.sdpTransform.AnonValue
+import typings.sdpTransform.AnonUri
+import typings.sdpTransform.AnonValueString
 import typings.sdpTransform.sdpTransformStrings.inactive
 import typings.sdpTransform.sdpTransformStrings.recvonly
 import typings.sdpTransform.sdpTransformStrings.sendonly
@@ -21,11 +21,11 @@ trait SharedAttributes extends js.Object {
   // a=inactive
   var direction: js.UndefOr[sendrecv | recvonly | sendonly | inactive] = js.undefined
   // a=extmap
-  var ext: js.UndefOr[js.Array[AnonConfig]] = js.undefined
+  var ext: js.UndefOr[js.Array[AnonUri]] = js.undefined
   var fingerprint: js.UndefOr[AnonHash] = js.undefined
   var icePwd: js.UndefOr[String] = js.undefined
   var iceUfrag: js.UndefOr[String] = js.undefined
-  var invalid: js.UndefOr[js.Array[AnonValue]] = js.undefined
+  var invalid: js.UndefOr[js.Array[AnonValueString]] = js.undefined
   // a=setup
   var setup: js.UndefOr[String] = js.undefined
   // a=source-filter: incl IN IP4 239.5.2.31 10.1.15.5
@@ -37,11 +37,11 @@ object SharedAttributes {
   def apply(
     control: String = null,
     direction: sendrecv | recvonly | sendonly | inactive = null,
-    ext: js.Array[AnonConfig] = null,
+    ext: js.Array[AnonUri] = null,
     fingerprint: AnonHash = null,
     icePwd: String = null,
     iceUfrag: String = null,
-    invalid: js.Array[AnonValue] = null,
+    invalid: js.Array[AnonValueString] = null,
     setup: String = null,
     sourceFilter: AnonAddressTypes = null
   ): SharedAttributes = {

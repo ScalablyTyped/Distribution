@@ -9,9 +9,9 @@ trait VNode extends js.Object {
   @JSName("$attrs$")
   var DollarattrsDollar: js.UndefOr[js.Any] = js.native
   @JSName("$children$")
-  var DollarchildrenDollar: js.UndefOr[js.Array[VNode]] = js.native
+  var DollarchildrenDollar: js.Array[VNode] = js.native
   @JSName("$elm$")
-  var DollarelmDollar: js.UndefOr[js.Any] = js.native
+  var DollarelmDollar: js.Any = js.native
   @JSName("$flags$")
   var DollarflagsDollar: Double = js.native
   @JSName("$key$")
@@ -19,8 +19,8 @@ trait VNode extends js.Object {
   @JSName("$name$")
   var DollarnameDollar: js.UndefOr[String] = js.native
   @JSName("$tag$")
-  var DollartagDollar: js.UndefOr[String | Double | js.Function] = js.native
+  var DollartagDollar: String | Double | js.Function = js.native
   @JSName("$text$")
-  var DollartextDollar: js.UndefOr[String] = js.native
+  var DollartextDollar: String = js.native
 }
 

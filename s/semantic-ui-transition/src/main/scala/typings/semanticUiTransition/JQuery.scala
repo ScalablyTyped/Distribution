@@ -1,7 +1,10 @@
 package typings.semanticUiTransition
 
 import typings.semanticUiTransition.SemanticUI.Transition
+import typings.semanticUiTransition.SemanticUI.Transition.ClassNameSettings
+import typings.semanticUiTransition.SemanticUI.Transition.ErrorSettings
 import typings.semanticUiTransition.SemanticUI.TransitionSettings
+import typings.semanticUiTransition.semanticUiTransitionBooleans.`false`
 import typings.semanticUiTransition.semanticUiTransitionStrings.`clear queue`
 import typings.semanticUiTransition.semanticUiTransitionStrings.`force repaint`
 import typings.semanticUiTransition.semanticUiTransitionStrings.`get animation event`
@@ -15,17 +18,38 @@ import typings.semanticUiTransition.semanticUiTransitionStrings.`restore conditi
 import typings.semanticUiTransition.semanticUiTransitionStrings.`save conditions`
 import typings.semanticUiTransition.semanticUiTransitionStrings.`set duration`
 import typings.semanticUiTransition.semanticUiTransitionStrings.`stop all`
+import typings.semanticUiTransition.semanticUiTransitionStrings.allowRepeats
+import typings.semanticUiTransition.semanticUiTransitionStrings.animation
+import typings.semanticUiTransition.semanticUiTransitionStrings.auto
+import typings.semanticUiTransition.semanticUiTransitionStrings.className
+import typings.semanticUiTransition.semanticUiTransitionStrings.debug
 import typings.semanticUiTransition.semanticUiTransitionStrings.destroy
 import typings.semanticUiTransition.semanticUiTransitionStrings.disable
+import typings.semanticUiTransition.semanticUiTransitionStrings.displayType
+import typings.semanticUiTransition.semanticUiTransitionStrings.duration
 import typings.semanticUiTransition.semanticUiTransitionStrings.enable
+import typings.semanticUiTransition.semanticUiTransitionStrings.error
 import typings.semanticUiTransition.semanticUiTransitionStrings.hide
+import typings.semanticUiTransition.semanticUiTransitionStrings.interval
 import typings.semanticUiTransition.semanticUiTransitionStrings.looping
+import typings.semanticUiTransition.semanticUiTransitionStrings.name
+import typings.semanticUiTransition.semanticUiTransitionStrings.namespace
+import typings.semanticUiTransition.semanticUiTransitionStrings.onComplete
+import typings.semanticUiTransition.semanticUiTransitionStrings.onHide
+import typings.semanticUiTransition.semanticUiTransitionStrings.onShow
+import typings.semanticUiTransition.semanticUiTransitionStrings.onStart
+import typings.semanticUiTransition.semanticUiTransitionStrings.performance
+import typings.semanticUiTransition.semanticUiTransitionStrings.queue
 import typings.semanticUiTransition.semanticUiTransitionStrings.repaint
 import typings.semanticUiTransition.semanticUiTransitionStrings.reset
+import typings.semanticUiTransition.semanticUiTransitionStrings.reverse
 import typings.semanticUiTransition.semanticUiTransitionStrings.setting
 import typings.semanticUiTransition.semanticUiTransitionStrings.show
+import typings.semanticUiTransition.semanticUiTransitionStrings.silent
 import typings.semanticUiTransition.semanticUiTransitionStrings.stop
 import typings.semanticUiTransition.semanticUiTransitionStrings.toggle
+import typings.semanticUiTransition.semanticUiTransitionStrings.useFailSafe
+import typings.semanticUiTransition.semanticUiTransitionStrings.verbose
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,6 +59,48 @@ trait JQuery extends js.Object {
   @JSName("transition")
   var transition_Original: Transition = js.native
   def transition(): JQuery = js.native
+  def transition(behavior: setting, name: allowRepeats): Boolean = js.native
+  def transition(behavior: setting, name: allowRepeats, value: Boolean): JQuery = js.native
+  def transition(behavior: setting, name: animation): String = js.native
+  def transition(behavior: setting, name: animation, value: String): JQuery = js.native
+  def transition(behavior: setting, name: className): ClassNameSettings = js.native
+  def transition(behavior: setting, name: className, value: ClassNameSettings): JQuery = js.native
+  def transition(behavior: setting, name: debug): Boolean = js.native
+  def transition(behavior: setting, name: debug, value: Boolean): JQuery = js.native
+  def transition(behavior: setting, name: displayType): `false` | String = js.native
+  def transition(behavior: setting, name: displayType, value: String): JQuery = js.native
+  def transition(behavior: setting, name: displayType, value: `false`): JQuery = js.native
+  def transition(behavior: setting, name: duration): Double = js.native
+  def transition(behavior: setting, name: duration, value: Double): JQuery = js.native
+  def transition(behavior: setting, name: error): ErrorSettings = js.native
+  def transition(behavior: setting, name: error, value: ErrorSettings): JQuery = js.native
+  def transition(behavior: setting, name: interval): Double = js.native
+  def transition(behavior: setting, name: interval, value: Double): JQuery = js.native
+  def transition(behavior: setting, name: name): String = js.native
+  def transition(behavior: setting, name: namespace): String = js.native
+  def transition(behavior: setting, name: namespace, value: String): JQuery = js.native
+  def transition(behavior: setting, name: name, value: String): JQuery = js.native
+  def transition(behavior: setting, name: onComplete): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+  def transition(behavior: setting, name: onComplete, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
+  def transition(behavior: setting, name: onHide): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+  def transition(behavior: setting, name: onHide, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
+  def transition(behavior: setting, name: onShow): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+  def transition(behavior: setting, name: onShow, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
+  def transition(behavior: setting, name: onStart): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+  def transition(behavior: setting, name: onStart, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
+  def transition(behavior: setting, name: performance): Boolean = js.native
+  def transition(behavior: setting, name: performance, value: Boolean): JQuery = js.native
+  def transition(behavior: setting, name: queue): Boolean = js.native
+  def transition(behavior: setting, name: queue, value: Boolean): JQuery = js.native
+  def transition(behavior: setting, name: reverse): auto | Boolean = js.native
+  def transition(behavior: setting, name: reverse, value: Boolean): JQuery = js.native
+  def transition(behavior: setting, name: reverse, value: auto): JQuery = js.native
+  def transition(behavior: setting, name: silent): Boolean = js.native
+  def transition(behavior: setting, name: silent, value: Boolean): JQuery = js.native
+  def transition(behavior: setting, name: useFailSafe): Boolean = js.native
+  def transition(behavior: setting, name: useFailSafe, value: Boolean): JQuery = js.native
+  def transition(behavior: setting, name: verbose): Boolean = js.native
+  def transition(behavior: setting, name: verbose, value: Boolean): JQuery = js.native
   def transition(settings: TransitionSettings): JQuery = js.native
   def transition(transition: String): JQuery = js.native
   /**
@@ -131,14 +197,6 @@ trait JQuery extends js.Object {
   def transition_setduration(behavior: `set duration`, duration: Double): JQuery = js.native
   @JSName("transition")
   def transition_setting(behavior: setting, value: TransitionSettings): JQuery = js.native
-  @JSName("transition")
-  def transition_setting[K /* <: String */](behavior: setting, name: K): /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-transition.SemanticUI.TransitionSettings._Impl[K] */ js.Any = js.native
-  @JSName("transition")
-  def transition_setting[K /* <: String */](
-    behavior: setting,
-    name: K,
-    value: /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-transition.SemanticUI.TransitionSettings._Impl[K] */ js.Any
-  ): JQuery = js.native
   /**
     * Stop current animation and show element
     */

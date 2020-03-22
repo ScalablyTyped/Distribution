@@ -1,6 +1,6 @@
 package typings.antd.buttonGroupMod
 
-import typings.antd.buttonButtonMod.ButtonSize
+import typings.antd.sizeContextMod.SizeType
 import typings.react.mod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait ButtonGroupProps extends js.Object {
   var className: js.UndefOr[String] = js.undefined
   var prefixCls: js.UndefOr[String] = js.undefined
-  var size: js.UndefOr[ButtonSize] = js.undefined
+  var size: js.UndefOr[SizeType] = js.undefined
   var style: js.UndefOr[CSSProperties] = js.undefined
 }
 
@@ -18,7 +18,7 @@ object ButtonGroupProps {
   def apply(
     className: String = null,
     prefixCls: String = null,
-    size: ButtonSize = null,
+    size: SizeType = null,
     style: CSSProperties = null
   ): ButtonGroupProps = {
     val __obj = js.Dynamic.literal()

@@ -10,20 +10,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.jimpCore.AnonBeforechangeBeforeclone[T]
-  - typings.jimpCore.AnonBeforechange[T]
+  - typings.jimpCore.AnonEventName[T]
+  - typings.jimpCore.AnonDictkey[T]
 */
 trait ListenerData[T /* <: ListenableName */] extends js.Object
 
 object ListenerData {
   @scala.inline
-  def AnonBeforechangeBeforeclone[T /* <: ListenableName */](eventName: T, methodName: clone | ChangeName | constructor): ListenerData[T] = {
+  def AnonEventName[T /* <: ListenableName */](eventName: T, methodName: clone | ChangeName | constructor): ListenerData[T] = {
     val __obj = js.Dynamic.literal(eventName = eventName.asInstanceOf[js.Any], methodName = methodName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ListenerData[T]]
   }
   @scala.inline
-  def AnonBeforechange[T /* <: ListenableName */](
+  def AnonDictkey[T /* <: ListenableName */](
     eventName: `before-change` | changed,
     methodName: T,
     StringDictionary: /* key */ StringDictionary[js.Any] = null

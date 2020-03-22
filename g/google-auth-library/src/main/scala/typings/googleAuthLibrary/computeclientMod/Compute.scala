@@ -25,6 +25,11 @@ class Compute () extends OAuth2Client {
     * @return Boolean indicating if scope is required.
     */
   def createScopedRequired(): Boolean = js.native
+  /**
+    * Fetches an ID token.
+    * @param targetAudience the audience for the fetched ID token.
+    */
+  def fetchIdToken(targetAudience: String): js.Promise[String] = js.native
   /* protected */ def wrapError(e: GaxiosError[_]): Unit = js.native
 }
 

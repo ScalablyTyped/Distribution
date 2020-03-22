@@ -4,7 +4,6 @@ import typings.react.mod.ComponentType
 import typings.react.mod.InputHTMLAttributes
 import typings.react.mod.TextareaHTMLAttributes
 import typings.reactForm.mod.FieldProps
-import typings.reactForm.mod.FormProps
 import typings.reactForm.mod.StyledProps
 import typings.std.HTMLInputElement
 import typings.std.HTMLSelectElement
@@ -18,24 +17,21 @@ object reactFormComponents extends reactFormProps {
   def Checkbox: ComponentType[FieldProps with InputHTMLAttributes[HTMLInputElement]] = typings.reactForm.mod.Checkbox.asInstanceOf[typings.react.mod.ComponentType[
   typings.reactForm.mod.FieldProps with typings.react.mod.InputHTMLAttributes[typings.std.HTMLInputElement]]]
   @scala.inline
-  def Form: ComponentType[FormProps with AnonChildren] = js.constructorOf[typings.reactForm.mod.Form].asInstanceOf[typings.react.mod.ComponentType[typings.reactForm.mod.FormProps with typings.reactForm.AnonChildren]]
+  def Form: ComponentType[FormProps] = js.constructorOf[typings.reactForm.mod.Form].asInstanceOf[typings.react.mod.ComponentType[FormProps]]
   @scala.inline
   def NestedForm: ComponentType[NestedFormProps] = typings.reactForm.mod.NestedForm.asInstanceOf[typings.react.mod.ComponentType[NestedFormProps]]
   @scala.inline
-  def Radio: ComponentType[FieldProps with InputHTMLAttributes[HTMLInputElement] with AnonGroup] = typings.reactForm.mod.Radio.asInstanceOf[typings.react.mod.ComponentType[
-  typings.reactForm.mod.FieldProps with typings.react.mod.InputHTMLAttributes[typings.std.HTMLInputElement] with typings.reactForm.AnonGroup]]
+  def Radio: ComponentType[RadioProps] = typings.reactForm.mod.Radio.asInstanceOf[typings.react.mod.ComponentType[RadioProps]]
   @scala.inline
-  def RadioGroup: ComponentType[FieldProps with AnonChildrenProps] = js.constructorOf[typings.reactForm.mod.RadioGroup].asInstanceOf[typings.react.mod.ComponentType[typings.reactForm.mod.FieldProps with typings.reactForm.AnonChildrenProps]]
+  def RadioGroup: ComponentType[RadioGroupProps] = js.constructorOf[typings.reactForm.mod.RadioGroup].asInstanceOf[typings.react.mod.ComponentType[RadioGroupProps]]
   @scala.inline
   def Select: ComponentType[SelectProps] = typings.reactForm.mod.Select.asInstanceOf[typings.react.mod.ComponentType[SelectProps]]
   @scala.inline
-  def StyledCheckbox: ComponentType[StyledProps with InputHTMLAttributes[HTMLInputElement] with AnonLabelString] = typings.reactForm.mod.StyledCheckbox.asInstanceOf[typings.react.mod.ComponentType[
-  typings.reactForm.mod.StyledProps with typings.react.mod.InputHTMLAttributes[typings.std.HTMLInputElement] with typings.reactForm.AnonLabelString]]
+  def StyledCheckbox: ComponentType[StyledCheckboxProps] = typings.reactForm.mod.StyledCheckbox.asInstanceOf[typings.react.mod.ComponentType[StyledCheckboxProps]]
   @scala.inline
-  def StyledRadio: ComponentType[StyledProps with InputHTMLAttributes[HTMLInputElement] with AnonGroupLabel] = typings.reactForm.mod.StyledRadio.asInstanceOf[typings.react.mod.ComponentType[
-  typings.reactForm.mod.StyledProps with typings.react.mod.InputHTMLAttributes[typings.std.HTMLInputElement] with typings.reactForm.AnonGroupLabel]]
+  def StyledRadio: ComponentType[StyledRadioProps] = typings.reactForm.mod.StyledRadio.asInstanceOf[typings.react.mod.ComponentType[StyledRadioProps]]
   @scala.inline
-  def StyledRadioGroup: ComponentType[StyledProps with AnonChildrenProps] = js.constructorOf[typings.reactForm.mod.StyledRadioGroup].asInstanceOf[typings.react.mod.ComponentType[typings.reactForm.mod.StyledProps with typings.reactForm.AnonChildrenProps]]
+  def StyledRadioGroup: ComponentType[StyledRadioGroupProps] = js.constructorOf[typings.reactForm.mod.StyledRadioGroup].asInstanceOf[typings.react.mod.ComponentType[StyledRadioGroupProps]]
   @scala.inline
   def StyledSelect: ComponentType[
     StyledProps with typings.reactForm.mod.SelectProps with InputHTMLAttributes[HTMLSelectElement]

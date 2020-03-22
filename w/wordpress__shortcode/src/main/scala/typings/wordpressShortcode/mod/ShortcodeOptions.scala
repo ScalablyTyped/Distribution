@@ -1,6 +1,6 @@
 package typings.wordpressShortcode.mod
 
-import typings.std.Partial
+import typings.wordpressShortcode.PartialShortcodeAttrs
 import typings.wordpressShortcode.wordpressShortcodeStrings.`self-closing`
 import typings.wordpressShortcode.wordpressShortcodeStrings.closed
 import typings.wordpressShortcode.wordpressShortcodeStrings.single
@@ -9,7 +9,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ShortcodeOptions extends js.Object {
-  var attrs: js.UndefOr[Partial[ShortcodeAttrs] | String] = js.undefined
+  var attrs: js.UndefOr[PartialShortcodeAttrs | String] = js.undefined
   var content: js.UndefOr[String] = js.undefined
   var tag: String
   var `type`: js.UndefOr[closed | `self-closing` | single] = js.undefined
@@ -19,7 +19,7 @@ object ShortcodeOptions {
   @scala.inline
   def apply(
     tag: String,
-    attrs: Partial[ShortcodeAttrs] | String = null,
+    attrs: PartialShortcodeAttrs | String = null,
     content: String = null,
     `type`: closed | `self-closing` | single = null
   ): ShortcodeOptions = {

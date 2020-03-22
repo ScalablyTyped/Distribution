@@ -4,8 +4,9 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.next.AnonAmphtml
 import typings.next.AnonAssetPrefix
 import typings.next.AnonCatchAllRoute
-import typings.next.AnonFalse
 import typings.next.AnonHeaders
+import typings.next.AnonMatch
+import typings.next.apiUtilsMod.ApiPreviewProps
 import typings.next.serverRouterMod.DynamicRoutes
 import typings.next.serverRouterMod.Params
 import typings.next.serverRouterMod.Route_
@@ -21,6 +22,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Server extends js.Object {
   var __sendPayload: js.Any = js.native
+  var _cachedPreviewProps: js.Any = js.native
   var buildId: String = js.native
   var compression: js.UndefOr[js.Any] = js.native
   var customRoutes: js.UndefOr[AnonHeaders] = js.native
@@ -60,7 +62,8 @@ trait Server extends js.Object {
   /* protected */ def generatePublicRoutes(): js.Array[Route_] = js.native
   /* protected */ def generateRoutes(): AnonCatchAllRoute = js.native
   /* protected */ def getCustomRoutes(): js.Any = js.native
-  /* protected */ def getDynamicRoutes(): js.Array[AnonFalse] = js.native
+  /* protected */ def getDynamicRoutes(): js.Array[AnonMatch] = js.native
+  /* protected */ def getPreviewProps(): ApiPreviewProps = js.native
   def getRequestHandler(): js.Function3[
     /* req */ IncomingMessage, 
     /* res */ ServerResponse, 

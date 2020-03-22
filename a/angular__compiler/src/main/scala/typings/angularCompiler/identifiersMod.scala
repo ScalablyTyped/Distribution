@@ -50,6 +50,7 @@ object identifiersMod extends js.Object {
     var createModuleFactory: ExternalReference = js.native
     var createRendererType2: ExternalReference = js.native
     var directiveDef: ExternalReference = js.native
+    var directiveInject: ExternalReference = js.native
     var elementDef: ExternalReference = js.native
     var inject: ExternalReference = js.native
     var inlineInterpolate: ExternalReference = js.native

@@ -1,7 +1,7 @@
 package typings.jupyterlabLogconsole.widgetMod
 
 import typings.jupyterlabLogconsole.widgetMod.ScrollingWidget.IOptions
-import typings.phosphorWidgets.mod.Widget
+import typings.luminoWidgets.mod.Widget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,6 +19,6 @@ class ScrollingWidget_[T /* <: Widget */] protected () extends Widget {
   /**
     * The content widget.
     */
-  val content: T = js.native
+  def content(): T = js.native
 }
 

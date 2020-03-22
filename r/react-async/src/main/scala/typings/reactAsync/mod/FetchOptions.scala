@@ -24,7 +24,7 @@ object FetchOptions {
     onResolve: T => Unit = null,
     promise: js.Promise[T] = null,
     promiseFn: (/* props */ AsyncProps[T], /* controller */ AbortController) => js.Promise[T] = null,
-    reducer: (/* state */ AsyncState[T], /* action */ AsyncAction[T], /* internalReducer */ js.Function2[/* state */ AsyncState[T], /* action */ AsyncAction[T], AsyncState[T]]) => AsyncState[T] = null,
+    reducer: (/* state */ ReducerAsyncState[T], /* action */ AsyncAction[T], /* internalReducer */ js.Function2[/* state */ ReducerAsyncState[T], /* action */ AsyncAction[T], ReducerAsyncState[T]]) => AsyncState[T, AbstractState[T]] = null,
     watch: js.Any = null,
     watchFn: (/* props */ AsyncProps[T], /* prevProps */ AsyncProps[T]) => _ = null
   ): FetchOptions[T] = {

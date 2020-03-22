@@ -1,6 +1,6 @@
 package typings.antvG2.mod
 
-import typings.antvG2.AnonCross
+import typings.antvG2.AnonStyle
 import typings.antvG2.antvG2Strings.bottom
 import typings.antvG2.antvG2Strings.click
 import typings.antvG2.antvG2Strings.left
@@ -31,7 +31,7 @@ object MiniTooltipConfig {
   def apply(
     `type`: mini,
     boardStyle: background = null,
-    crosshairs: AnonCross = null,
+    crosshairs: AnonStyle = null,
     follow: js.UndefOr[Boolean] = js.undefined,
     hideMarkers: js.UndefOr[Boolean] = js.undefined,
     inPlot: js.UndefOr[Boolean] = js.undefined,

@@ -1,10 +1,10 @@
 package typings.echarts.echarts.EChartOption.SeriesPie
 
-import typings.echarts.AnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyFontSizeFontStyle
-import typings.echarts.AnonBackgroundColorBorderColor
-import typings.echarts.AnonBorderColorBorderType
-import typings.echarts.AnonEmphasisLengthLength2LineStyle
-import typings.echarts.AnonItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyFontSizeFontStyleFontWeight
+import typings.echarts.AnonBorderType
+import typings.echarts.AnonExtraCssText
+import typings.echarts.AnonLabelAnonPadding
+import typings.echarts.AnonLineHeight
+import typings.echarts.AnonSmooth
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,9 +13,7 @@ trait DataObject extends js.Object {
   /**
     * @see https://echarts.apache.org/en/option.html#series-pie.data.emphasis
     */
-  var emphasis: js.UndefOr[
-    AnonItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyFontSizeFontStyleFontWeight
-  ] = js.undefined
+  var emphasis: js.UndefOr[AnonLabelAnonPadding] = js.undefined
   /**
     * Graphic style of , `emphasis` is the style when it is highlighted,
     * like being hovered by mouse, or highlighted via legend connect.
@@ -23,23 +21,21 @@ trait DataObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-pie.data.itemStyle
     */
-  var itemStyle: js.UndefOr[AnonBorderColorBorderType] = js.undefined
+  var itemStyle: js.UndefOr[AnonBorderType] = js.undefined
   /**
     * The label configuration of a single sector.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-pie.data.label
     */
-  var label: js.UndefOr[
-    AnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyFontSizeFontStyle
-  ] = js.undefined
+  var label: js.UndefOr[AnonLineHeight] = js.undefined
   /**
     * The style of visual guide line.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-pie.data.labelLine
     */
-  var labelLine: js.UndefOr[AnonEmphasisLengthLength2LineStyle] = js.undefined
+  var labelLine: js.UndefOr[AnonSmooth] = js.undefined
   /**
     * The name of data item.
     *
@@ -60,7 +56,7 @@ trait DataObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-pie.data.tooltip
     */
-  var tooltip: js.UndefOr[AnonBackgroundColorBorderColor] = js.undefined
+  var tooltip: js.UndefOr[AnonExtraCssText] = js.undefined
   /**
     * Data value.
     *
@@ -73,13 +69,13 @@ trait DataObject extends js.Object {
 object DataObject {
   @scala.inline
   def apply(
-    emphasis: AnonItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyFontSizeFontStyleFontWeight = null,
-    itemStyle: AnonBorderColorBorderType = null,
-    label: AnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyFontSizeFontStyle = null,
-    labelLine: AnonEmphasisLengthLength2LineStyle = null,
+    emphasis: AnonLabelAnonPadding = null,
+    itemStyle: AnonBorderType = null,
+    label: AnonLineHeight = null,
+    labelLine: AnonSmooth = null,
     name: String = null,
     selected: js.UndefOr[Boolean] = js.undefined,
-    tooltip: AnonBackgroundColorBorderColor = null,
+    tooltip: AnonExtraCssText = null,
     value: Int | Double = null
   ): DataObject = {
     val __obj = js.Dynamic.literal()

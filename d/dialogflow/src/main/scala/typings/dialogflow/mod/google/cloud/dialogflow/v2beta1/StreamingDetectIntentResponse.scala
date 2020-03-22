@@ -23,7 +23,7 @@ class StreamingDetectIntentResponse () extends IStreamingDetectIntentResponse {
   var alternativeQueryResults_StreamingDetectIntentResponse: js.Array[IQueryResult] = js.native
   /** StreamingDetectIntentResponse outputAudio. */
   @JSName("outputAudio")
-  var outputAudio_StreamingDetectIntentResponse: Uint8Array = js.native
+  var outputAudio_StreamingDetectIntentResponse: Uint8Array | String = js.native
   /** StreamingDetectIntentResponse responseId. */
   @JSName("responseId")
   var responseId_StreamingDetectIntentResponse: String = js.native

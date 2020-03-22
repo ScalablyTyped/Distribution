@@ -22,10 +22,10 @@ object fadeLoaderMod extends js.Object {
     var f: StyleFunction = js.native
     var g: StyleFunction = js.native
     var h: StyleFunction = js.native
-    var quarter: Double = js.native
-    var radius: Double = js.native
     var style: StyleFunctionWithIndex = js.native
     var wrapper: StyleFunction = js.native
+    def quarter(): Double = js.native
+    def radius(): Double = js.native
   }
   
   @js.native

@@ -89,7 +89,7 @@ trait Buffer
   def swap16(): Buffer = js.native
   def swap32(): Buffer = js.native
   def swap64(): Buffer = js.native
-  def toJSON(): AnonBuffer = js.native
+  def toJSON(): AnonData = js.native
   def toString(encoding: String): String = js.native
   def toString(encoding: String, start: Double): String = js.native
   def toString(encoding: String, start: Double, end: Double): String = js.native

@@ -4,7 +4,7 @@ import typings.jupyterlabLogconsole.registryMod.LoggerRegistry.IOptions
 import typings.jupyterlabLogconsole.tokensMod.ILogger
 import typings.jupyterlabLogconsole.tokensMod.ILoggerRegistry
 import typings.jupyterlabLogconsole.tokensMod.ILoggerRegistryChange
-import typings.phosphorSignaling.mod.ISignal
+import typings.luminoSignaling.mod.ISignal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,10 +32,6 @@ class LoggerRegistry_ protected () extends ILoggerRegistry {
     */
   /* CompleteClass */
   override val isDisposed: Boolean = js.native
-  /**
-    * The max length for loggers.
-    */
-  var maxLength: Double = js.native
   /**
     * A signal emitted when the logger registry changes.
     */
@@ -70,5 +66,20 @@ class LoggerRegistry_ protected () extends ILoggerRegistry {
     */
   /* CompleteClass */
   override def getLoggers(): js.Array[ILogger] = js.native
+  /**
+    * Whether the register is disposed.
+    */
+  @JSName("isDisposed")
+  def isDisposed_MLoggerRegistry_(): Boolean = js.native
+  /**
+    * The max length for loggers.
+    */
+  def maxLength(): Double = js.native
+  def maxLength(value: Double): js.Any = js.native
+  /**
+    * A signal emitted when the logger registry changes.
+    */
+  @JSName("registryChanged")
+  def registryChanged_MLoggerRegistry_(): ISignal[this.type, ILoggerRegistryChange] = js.native
 }
 

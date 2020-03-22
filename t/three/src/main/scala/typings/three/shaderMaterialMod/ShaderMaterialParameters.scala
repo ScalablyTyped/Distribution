@@ -5,7 +5,6 @@ import typings.three.constantsMod.Blending
 import typings.three.constantsMod.BlendingDstFactor
 import typings.three.constantsMod.BlendingEquation
 import typings.three.constantsMod.BlendingSrcFactor
-import typings.three.constantsMod.Colors
 import typings.three.constantsMod.DepthModes
 import typings.three.constantsMod.Side
 import typings.three.constantsMod.StencilFunc
@@ -21,7 +20,6 @@ import scala.scalajs.js.annotation._
 
 trait ShaderMaterialParameters extends MaterialParameters {
   var clipping: js.UndefOr[Boolean] = js.undefined
-  var defines: js.UndefOr[js.Any] = js.undefined
   var extensions: js.UndefOr[AnonDerivatives] = js.undefined
   var fragmentShader: js.UndefOr[String] = js.undefined
   var lights: js.UndefOr[Boolean] = js.undefined
@@ -66,7 +64,6 @@ object ShaderMaterialParameters {
     morphTargets: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
     opacity: Int | Double = null,
-    overdraw: Int | Double = null,
     polygonOffset: js.UndefOr[Boolean] = js.undefined,
     polygonOffsetFactor: Int | Double = null,
     polygonOffsetUnits: Int | Double = null,
@@ -85,9 +82,8 @@ object ShaderMaterialParameters {
     toneMapped: js.UndefOr[Boolean] = js.undefined,
     transparent: js.UndefOr[Boolean] = js.undefined,
     uniforms: js.Any = null,
-    vertexColors: Colors = null,
+    vertexColors: js.UndefOr[Boolean] = js.undefined,
     vertexShader: String = null,
-    vertexTangents: js.UndefOr[Boolean] = js.undefined,
     visible: js.UndefOr[Boolean] = js.undefined,
     wireframe: js.UndefOr[Boolean] = js.undefined,
     wireframeLinewidth: Int | Double = null
@@ -121,7 +117,6 @@ object ShaderMaterialParameters {
     if (!js.isUndefined(morphTargets)) __obj.updateDynamic("morphTargets")(morphTargets.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (overdraw != null) __obj.updateDynamic("overdraw")(overdraw.asInstanceOf[js.Any])
     if (!js.isUndefined(polygonOffset)) __obj.updateDynamic("polygonOffset")(polygonOffset.asInstanceOf[js.Any])
     if (polygonOffsetFactor != null) __obj.updateDynamic("polygonOffsetFactor")(polygonOffsetFactor.asInstanceOf[js.Any])
     if (polygonOffsetUnits != null) __obj.updateDynamic("polygonOffsetUnits")(polygonOffsetUnits.asInstanceOf[js.Any])
@@ -140,9 +135,8 @@ object ShaderMaterialParameters {
     if (!js.isUndefined(toneMapped)) __obj.updateDynamic("toneMapped")(toneMapped.asInstanceOf[js.Any])
     if (!js.isUndefined(transparent)) __obj.updateDynamic("transparent")(transparent.asInstanceOf[js.Any])
     if (uniforms != null) __obj.updateDynamic("uniforms")(uniforms.asInstanceOf[js.Any])
-    if (vertexColors != null) __obj.updateDynamic("vertexColors")(vertexColors.asInstanceOf[js.Any])
+    if (!js.isUndefined(vertexColors)) __obj.updateDynamic("vertexColors")(vertexColors.asInstanceOf[js.Any])
     if (vertexShader != null) __obj.updateDynamic("vertexShader")(vertexShader.asInstanceOf[js.Any])
-    if (!js.isUndefined(vertexTangents)) __obj.updateDynamic("vertexTangents")(vertexTangents.asInstanceOf[js.Any])
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     if (!js.isUndefined(wireframe)) __obj.updateDynamic("wireframe")(wireframe.asInstanceOf[js.Any])
     if (wireframeLinewidth != null) __obj.updateDynamic("wireframeLinewidth")(wireframeLinewidth.asInstanceOf[js.Any])

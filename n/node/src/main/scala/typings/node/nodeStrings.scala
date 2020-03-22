@@ -507,9 +507,6 @@ object nodeStrings {
   sealed trait SchemaDotgetDomains extends js.Object
   
   @js.native
-  sealed trait SignalConstants extends js.Object
-  
-  @js.native
   sealed trait TLSv1 extends SecureVersion
   
   @js.native
@@ -1291,8 +1288,6 @@ object nodeStrings {
   def SRV: SRV = "SRV".asInstanceOf[SRV]
   @scala.inline
   def SchemaDotgetDomains: SchemaDotgetDomains = "Schema.getDomains".asInstanceOf[SchemaDotgetDomains]
-  @scala.inline
-  def SignalConstants: SignalConstants = "SignalConstants".asInstanceOf[SignalConstants]
   @scala.inline
   def TLSv1: TLSv1 = "TLSv1".asInstanceOf[TLSv1]
   @scala.inline

@@ -46,7 +46,7 @@ trait Typeofframework extends js.Object {
     /* status */ String, 
     typings.chromecastCafSender.cast.framework.ApplicationStatusEventData
   ]
-  var CastContext: TypeofClassCastContext
+  var CastContext: TypeofCastContext
   var CastSession: Instantiable2[
     /* sessionObj */ Session, 
     /* state */ SessionState, 
@@ -94,7 +94,7 @@ object Typeofframework {
     ApplicationMetadata: Instantiable1[/* sessionObj */ Session, ApplicationMetadata],
     ApplicationMetadataEventData: Instantiable1[/* metadata */ ApplicationMetadata, ApplicationMetadataEventData],
     ApplicationStatusEventData: Instantiable1[/* status */ String, ApplicationStatusEventData],
-    CastContext: TypeofClassCastContext,
+    CastContext: TypeofCastContext,
     CastSession: Instantiable2[/* sessionObj */ Session, /* state */ SessionState, CastSession],
     CastStateEventData: Instantiable1[/* castState */ CastState, CastStateEventData],
     EventData: Instantiable1[/* type */ String, EventData],

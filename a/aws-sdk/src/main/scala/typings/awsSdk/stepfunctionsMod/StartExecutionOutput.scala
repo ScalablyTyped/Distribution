@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait StartExecutionOutput extends js.Object {
   /**
-    * The Amazon Resource Name (ARN) that identifies the execution.
+    * The Amazon Resource Name (ARN) that id entifies the execution.
     */
   var executionArn: Arn = js.native
   /**

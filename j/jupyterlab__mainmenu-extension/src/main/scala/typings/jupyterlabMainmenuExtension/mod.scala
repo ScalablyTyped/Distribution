@@ -20,6 +20,7 @@ import typings.jupyterlabMainmenuExtension.jupyterlabMainmenuExtensionStrings.`f
 import typings.jupyterlabMainmenuExtension.jupyterlabMainmenuExtensionStrings.`filemenuColoncreate-console`
 import typings.jupyterlabMainmenuExtension.jupyterlabMainmenuExtensionStrings.`kernelmenuColonrestart-and-clear`
 import typings.jupyterlabMainmenuExtension.jupyterlabMainmenuExtensionStrings.`mainmenuColonopen-first`
+import typings.jupyterlabMainmenuExtension.jupyterlabMainmenuExtensionStrings.`notebookColonrestart-and-run-to-selected`
 import typings.jupyterlabMainmenuExtension.jupyterlabMainmenuExtensionStrings.`runmenuColonrestart-and-run-all`
 import typings.jupyterlabMainmenuExtension.jupyterlabMainmenuExtensionStrings.`runmenuColonrun-above`
 import typings.jupyterlabMainmenuExtension.jupyterlabMainmenuExtensionStrings.`runmenuColonrun-all`
@@ -93,6 +94,7 @@ object mod extends js.Object {
     val openView: viewmenuColonopen = js.native
     val redo: editmenuColonredo = js.native
     val restartAndRunAll: `runmenuColonrestart-and-run-all` = js.native
+    val restartAndRunToSelected: `notebookColonrestart-and-run-to-selected` = js.native
     val restartKernel: kernelmenuColonrestart = js.native
     val restartKernelAndClear: `kernelmenuColonrestart-and-clear` = js.native
     val run: runmenuColonrun = js.native

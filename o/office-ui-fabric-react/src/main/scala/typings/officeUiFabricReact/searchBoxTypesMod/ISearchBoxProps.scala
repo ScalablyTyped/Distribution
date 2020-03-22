@@ -1,8 +1,7 @@
 package typings.officeUiFabricReact.searchBoxTypesMod
 
+import typings.officeUiFabricReact.PickIIconPropsExcludekeyo
 import typings.officeUiFabricReact.buttonTypesMod.IButtonProps
-import typings.officeUiFabricReact.iconTypesMod.IIconProps
-import typings.officeUiFabricReact.officeUiFabricReactStrings.className
 import typings.react.AnonHtml
 import typings.react.mod.AnimationEvent
 import typings.react.mod.Booleanish
@@ -70,9 +69,7 @@ import typings.react.reactStrings.url
 import typings.react.reactStrings.vertical
 import typings.react.reactStrings.yes
 import typings.std.Event_
-import typings.std.Exclude
 import typings.std.HTMLInputElement
-import typings.std.Pick
 import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricStyling.ithemeMod.ITheme
 import typings.uifabricUtilities.createRefMod.IRefObject
@@ -109,7 +106,7 @@ trait ISearchBoxProps extends InputHTMLAttributes[HTMLInputElement] {
   /**
     * The props for the icon.
     */
-  var iconProps: js.UndefOr[Pick[IIconProps, Exclude[String, className]]] = js.undefined
+  var iconProps: js.UndefOr[PickIIconPropsExcludekeyo] = js.undefined
   /**
     * Deprecated. Use `placeholder` instead.
     * @deprecated Use `placeholder` instead.
@@ -250,7 +247,7 @@ object ISearchBoxProps {
     formTarget: String = null,
     height: Double | String = null,
     hidden: js.UndefOr[Boolean] = js.undefined,
-    iconProps: Pick[IIconProps, Exclude[String, className]] = null,
+    iconProps: PickIIconPropsExcludekeyo = null,
     id: String = null,
     inlist: js.Any = null,
     inputMode: none | text | tel | url | email | numeric | decimal | search = null,

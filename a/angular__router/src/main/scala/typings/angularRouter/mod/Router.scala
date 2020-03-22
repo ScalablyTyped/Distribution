@@ -115,8 +115,6 @@ class Router protected () extends js.Object {
   var setTransition: js.Any = js.native
   var setupNavigations: js.Any = js.native
   val transitions: js.Any = js.native
-  /** The current URL. */
-  val url: String = js.native
   /**
     * A strategy for extracting and merging URLs.
     * Used for AngularJS to Angular migrations.
@@ -138,7 +136,8 @@ class Router protected () extends js.Object {
     * Otherwise, applies the given command starting from the root.
     *
     * @param commands An array of commands to apply.
-    * @param navigationExtras Options that control the navigation strategy.
+    * @param navigationExtras Options that control the navigation strategy. This function
+    * only utilizes properties in `NavigationExtras` that would change the provided URL.
     * @returns The new URL tree.
     *
     * @usageNotes
@@ -280,5 +279,7 @@ class Router protected () extends js.Object {
     * Sets up the location change listener.
     */
   def setUpLocationChangeListener(): Unit = js.native
+  /** The current URL. */
+  def url(): String = js.native
 }
 

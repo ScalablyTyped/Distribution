@@ -1,12 +1,12 @@
 package typings.atom.mod
 
-import typings.atom.AnonExclusive
-import typings.atom.AnonExclusiveInside
-import typings.atom.AnonGroupingInterval
+import typings.atom.AnonExclusiveBoolean
+import typings.atom.AnonExclusiveInvalidate
 import typings.atom.AnonHistory
-import typings.atom.AnonMaintainHistoryPersistent
 import typings.atom.AnonNewExtent
+import typings.atom.AnonRole
 import typings.atom.AnonShouldDestroyOnFileDelete
+import typings.atom.groupingIntervalnumberHis
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -34,7 +34,7 @@ class TextBuffer () extends js.Object {
   // Markers
   /** Create a layer to contain a set of related markers. */
   def addMarkerLayer(): MarkerLayer = js.native
-  def addMarkerLayer(options: AnonMaintainHistoryPersistent): MarkerLayer = js.native
+  def addMarkerLayer(options: AnonRole): MarkerLayer = js.native
   /** Append text to the end of the buffer. */
   def append(text: String): Range = js.native
   def append(text: String, options: TextEditOptions): Range = js.native
@@ -220,10 +220,10 @@ class TextBuffer () extends js.Object {
   def lineLengthForRow(row: Double): Double = js.native
   /** Create a marker at the given position with no tail in the default marker layer. */
   def markPosition(position: PointCompatible): Marker = js.native
-  def markPosition(position: PointCompatible, options: AnonExclusiveInside): Marker = js.native
+  def markPosition(position: PointCompatible, options: AnonExclusiveBoolean): Marker = js.native
   /** Create a marker with the given range in the default marker layer. */
   def markRange(range: RangeCompatible): Marker = js.native
-  def markRange(range: RangeCompatible, properties: AnonExclusive): Marker = js.native
+  def markRange(range: RangeCompatible, properties: AnonExclusiveInvalidate): Marker = js.native
   /**
     *  Given a row, find the next row that's not blank.
     *  Returns a number or null if there's no next non-blank row.
@@ -393,9 +393,9 @@ class TextBuffer () extends js.Object {
   def setTextViaDiff(text: String): Unit = js.native
   /** Batch multiple operations as a single undo/redo step. */
   def transact[T](fn: js.Function0[T]): T = js.native
-  def transact[T](optionsOrInterval: AnonGroupingInterval with HistoryTransactionOptions, fn: js.Function0[T]): T = js.native
   /** Batch multiple operations as a single undo/redo step. */
   def transact[T](optionsOrInterval: Double, fn: js.Function0[T]): T = js.native
+  def transact[T](optionsOrInterval: groupingIntervalnumberHis, fn: js.Function0[T]): T = js.native
   // History
   /**
     *  Undo the last operation. If a transaction is in progress, aborts it.

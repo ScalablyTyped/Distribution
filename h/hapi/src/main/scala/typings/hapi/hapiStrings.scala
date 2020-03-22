@@ -56,9 +56,6 @@ object hapiStrings {
        with HTTP_METHODS_PARTIAL
   
   @js.native
-  sealed trait RouteOptions extends js.Object
-  
-  @js.native
   sealed trait Strict extends js.Object
   
   @js.native
@@ -343,8 +340,6 @@ object hapiStrings {
   def POST: POST = "POST".asInstanceOf[POST]
   @scala.inline
   def PUT: PUT = "PUT".asInstanceOf[PUT]
-  @scala.inline
-  def RouteOptions: RouteOptions = "RouteOptions".asInstanceOf[RouteOptions]
   @scala.inline
   def Strict: Strict = "Strict".asInstanceOf[Strict]
   @scala.inline

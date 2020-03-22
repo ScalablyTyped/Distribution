@@ -14,11 +14,6 @@ object jupyterlabStatusbarComponents extends jupyterlabStatusbarProps {
   def GroupItem: ComponentType[IProps with HTMLAttributes[HTMLDivElement]] = typings.jupyterlabStatusbar.mod.GroupItem.asInstanceOf[typings.react.mod.ComponentType[
   typings.jupyterlabStatusbar.groupMod.GroupItem.IProps with typings.react.mod.HTMLAttributes[typings.std.HTMLDivElement]]]
   @scala.inline
-  def IconItem: ComponentType[
-    typings.jupyterlabStatusbar.deprecatedMod.IconItem.IProps with HTMLAttributes[HTMLDivElement]
-  ] = typings.jupyterlabStatusbar.mod.IconItem.asInstanceOf[typings.react.mod.ComponentType[
-  typings.jupyterlabStatusbar.deprecatedMod.IconItem.IProps with typings.react.mod.HTMLAttributes[typings.std.HTMLDivElement]]]
-  @scala.inline
   def ProgressBar: ComponentType[ProgressBarProps] = typings.jupyterlabStatusbar.mod.ProgressBar.asInstanceOf[typings.react.mod.ComponentType[ProgressBarProps]]
   @scala.inline
   def TextItem: ComponentType[

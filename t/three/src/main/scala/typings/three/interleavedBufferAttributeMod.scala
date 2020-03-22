@@ -1,6 +1,9 @@
 package typings.three
 
+import typings.std.ArrayLike
 import typings.three.interleavedBufferMod.InterleavedBuffer
+import typings.three.matrix4Mod.Matrix4
+import typings.three.threeBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,17 +15,14 @@ object interleavedBufferAttributeMod extends js.Object {
   class InterleavedBufferAttribute protected () extends js.Object {
     def this(interleavedBuffer: InterleavedBuffer, itemSize: Double, offset: Double) = this()
     def this(interleavedBuffer: InterleavedBuffer, itemSize: Double, offset: Double, normalized: Boolean) = this()
-    var array: js.Array[_] = js.native
-    var count: Double = js.native
     var data: InterleavedBuffer = js.native
+    val isInterleavedBufferAttribute: `true` = js.native
     var itemSize: Double = js.native
-    /**
-    	 * @deprecated Use {@link InterleavedBufferAttribute#count .count} instead.
-    	 */
-    var length: Double = js.native
     var normalized: Boolean = js.native
     var offset: Double = js.native
-    var uuid: String = js.native
+    def applyMatrix4(m: Matrix4): this.type = js.native
+    def array(): ArrayLike[Double] = js.native
+    def count(): Double = js.native
     def getW(index: Double): Double = js.native
     def getX(index: Double): Double = js.native
     def getY(index: Double): Double = js.native

@@ -1,6 +1,8 @@
 package typings.awsSdk.iamMod
 
-import typings.awsSdk.AnonWaiter
+import typings.awsSdk.GetPolicyRequestwaiterWai
+import typings.awsSdk.GetRoleRequestwaiterWaite
+import typings.awsSdk.GetUserRequestwaiterWaite
 import typings.awsSdk.awsSdkStrings.instanceProfileExists
 import typings.awsSdk.awsSdkStrings.policyExists
 import typings.awsSdk.awsSdkStrings.roleExists
@@ -1810,11 +1812,11 @@ trait IAM extends Service {
     * Waits for the instanceProfileExists state by periodically calling the underlying IAM.getInstanceProfileoperation every 1 seconds (at most 40 times).
     */
   @JSName("waitFor")
-  def waitFor_instanceProfileExists(state: instanceProfileExists, params: GetInstanceProfileRequest with AnonWaiter): Request[GetInstanceProfileResponse, AWSError] = js.native
+  def waitFor_instanceProfileExists(state: instanceProfileExists, params: typings.awsSdk.GetInstanceProfileRequest): Request[GetInstanceProfileResponse, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_instanceProfileExists(
     state: instanceProfileExists,
-    params: GetInstanceProfileRequest with AnonWaiter,
+    params: typings.awsSdk.GetInstanceProfileRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetInstanceProfileResponse, Unit]
   ): Request[GetInstanceProfileResponse, AWSError] = js.native
   /**
@@ -1831,11 +1833,11 @@ trait IAM extends Service {
     * Waits for the policyExists state by periodically calling the underlying IAM.getPolicyoperation every 1 seconds (at most 20 times).
     */
   @JSName("waitFor")
-  def waitFor_policyExists(state: policyExists, params: GetPolicyRequest with AnonWaiter): Request[GetPolicyResponse, AWSError] = js.native
+  def waitFor_policyExists(state: policyExists, params: GetPolicyRequestwaiterWai): Request[GetPolicyResponse, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_policyExists(
     state: policyExists,
-    params: GetPolicyRequest with AnonWaiter,
+    params: GetPolicyRequestwaiterWai,
     callback: js.Function2[/* err */ AWSError, /* data */ GetPolicyResponse, Unit]
   ): Request[GetPolicyResponse, AWSError] = js.native
   /**
@@ -1849,11 +1851,11 @@ trait IAM extends Service {
     * Waits for the roleExists state by periodically calling the underlying IAM.getRoleoperation every 1 seconds (at most 20 times).
     */
   @JSName("waitFor")
-  def waitFor_roleExists(state: roleExists, params: GetRoleRequest with AnonWaiter): Request[GetRoleResponse, AWSError] = js.native
+  def waitFor_roleExists(state: roleExists, params: GetRoleRequestwaiterWaite): Request[GetRoleResponse, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_roleExists(
     state: roleExists,
-    params: GetRoleRequest with AnonWaiter,
+    params: GetRoleRequestwaiterWaite,
     callback: js.Function2[/* err */ AWSError, /* data */ GetRoleResponse, Unit]
   ): Request[GetRoleResponse, AWSError] = js.native
   /**
@@ -1867,11 +1869,11 @@ trait IAM extends Service {
     * Waits for the userExists state by periodically calling the underlying IAM.getUseroperation every 1 seconds (at most 20 times).
     */
   @JSName("waitFor")
-  def waitFor_userExists(state: userExists, params: GetUserRequest with AnonWaiter): Request[GetUserResponse, AWSError] = js.native
+  def waitFor_userExists(state: userExists, params: GetUserRequestwaiterWaite): Request[GetUserResponse, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_userExists(
     state: userExists,
-    params: GetUserRequest with AnonWaiter,
+    params: GetUserRequestwaiterWaite,
     callback: js.Function2[/* err */ AWSError, /* data */ GetUserResponse, Unit]
   ): Request[GetUserResponse, AWSError] = js.native
 }

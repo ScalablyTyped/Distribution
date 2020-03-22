@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonAuthorizationCode extends js.Object {
-  var authorizationCode: js.UndefOr[AnonAuthorizationUrlRefreshUrl] = js.undefined
+  var authorizationCode: js.UndefOr[AnonScopes] = js.undefined
   var clientCredentials: js.UndefOr[AnonRefreshUrl] = js.undefined
   var `implicit`: js.UndefOr[AnonAuthorizationUrl] = js.undefined
   var password: js.UndefOr[AnonRefreshUrl] = js.undefined
@@ -14,7 +14,7 @@ trait AnonAuthorizationCode extends js.Object {
 object AnonAuthorizationCode {
   @scala.inline
   def apply(
-    authorizationCode: AnonAuthorizationUrlRefreshUrl = null,
+    authorizationCode: AnonScopes = null,
     clientCredentials: AnonRefreshUrl = null,
     `implicit`: AnonAuthorizationUrl = null,
     password: AnonRefreshUrl = null

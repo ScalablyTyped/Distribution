@@ -14,6 +14,10 @@ trait MDCSwitchAdapter extends js.Object {
     */
   def removeClass(className: String): Unit
   /**
+    * Sets an attribute value of the native HTML control underlying the switch.
+    */
+  def setNativeControlAttr(attr: String, value: String): Unit
+  /**
     * Sets checked state of the native HTML control underlying the switch.
     */
   def setNativeControlChecked(checked: Boolean): Unit
@@ -28,10 +32,11 @@ object MDCSwitchAdapter {
   def apply(
     addClass: String => Unit,
     removeClass: String => Unit,
+    setNativeControlAttr: (String, String) => Unit,
     setNativeControlChecked: Boolean => Unit,
     setNativeControlDisabled: Boolean => Unit
   ): MDCSwitchAdapter = {
-    val __obj = js.Dynamic.literal(addClass = js.Any.fromFunction1(addClass), removeClass = js.Any.fromFunction1(removeClass), setNativeControlChecked = js.Any.fromFunction1(setNativeControlChecked), setNativeControlDisabled = js.Any.fromFunction1(setNativeControlDisabled))
+    val __obj = js.Dynamic.literal(addClass = js.Any.fromFunction1(addClass), removeClass = js.Any.fromFunction1(removeClass), setNativeControlAttr = js.Any.fromFunction2(setNativeControlAttr), setNativeControlChecked = js.Any.fromFunction1(setNativeControlChecked), setNativeControlDisabled = js.Any.fromFunction1(setNativeControlDisabled))
   
     __obj.asInstanceOf[MDCSwitchAdapter]
   }

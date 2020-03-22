@@ -24,14 +24,29 @@ trait Selection extends js.Object
 
 object Selection {
   @scala.inline
-  def InlineDataFragmentSpread(
-    kind: typings.relayCompiler.relayCompilerStrings.InlineDataFragmentSpread,
+  def ModuleImport(
+    documentName: String,
+    id: String,
+    kind: typings.relayCompiler.relayCompilerStrings.ModuleImport,
     loc: Location,
+    module: String,
     name: String,
+    selections: js.Array[Selection]
+  ): Selection = {
+    val __obj = js.Dynamic.literal(documentName = documentName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], module = module.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[Selection]
+  }
+  @scala.inline
+  def InlineFragment(
+    directives: js.Array[Directive],
+    kind: typings.relayCompiler.relayCompilerStrings.InlineFragment,
+    loc: Location,
     selections: js.Array[Selection],
+    typeCondition: CompositeTypeID,
     metadata: Metadata = null
   ): Selection = {
-    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(directives = directives.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any], typeCondition = typeCondition.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[Selection]
   }
@@ -56,6 +71,17 @@ object Selection {
     __obj.asInstanceOf[Selection]
   }
   @scala.inline
+  def ClientExtension(
+    kind: typings.relayCompiler.relayCompilerStrings.ClientExtension,
+    loc: Location,
+    selections: js.Array[Selection],
+    metadata: Metadata = null
+  ): Selection = {
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Selection]
+  }
+  @scala.inline
   def Defer(
     kind: typings.relayCompiler.relayCompilerStrings.Defer,
     label: String,
@@ -70,6 +96,31 @@ object Selection {
     __obj.asInstanceOf[Selection]
   }
   @scala.inline
+  def Condition(
+    condition: Literal | Variable,
+    kind: typings.relayCompiler.relayCompilerStrings.Condition,
+    loc: Location,
+    passingValue: Boolean,
+    selections: js.Array[Selection],
+    metadata: Metadata = null
+  ): Selection = {
+    val __obj = js.Dynamic.literal(condition = condition.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], passingValue = passingValue.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Selection]
+  }
+  @scala.inline
+  def InlineDataFragmentSpread(
+    kind: typings.relayCompiler.relayCompilerStrings.InlineDataFragmentSpread,
+    loc: Location,
+    name: String,
+    selections: js.Array[Selection],
+    metadata: Metadata = null
+  ): Selection = {
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Selection]
+  }
+  @scala.inline
   def FragmentSpread(
     args: js.Array[Argument],
     directives: js.Array[Directive],
@@ -80,61 +131,6 @@ object Selection {
   ): Selection = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], directives = directives.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Selection]
-  }
-  @scala.inline
-  def InlineFragment(
-    directives: js.Array[Directive],
-    kind: typings.relayCompiler.relayCompilerStrings.InlineFragment,
-    loc: Location,
-    selections: js.Array[Selection],
-    typeCondition: CompositeTypeID,
-    metadata: Metadata = null
-  ): Selection = {
-    val __obj = js.Dynamic.literal(directives = directives.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any], typeCondition = typeCondition.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Selection]
-  }
-  @scala.inline
-  def ModuleImport(
-    documentName: String,
-    id: String,
-    kind: typings.relayCompiler.relayCompilerStrings.ModuleImport,
-    loc: Location,
-    module: String,
-    name: String,
-    selections: js.Array[Selection]
-  ): Selection = {
-    val __obj = js.Dynamic.literal(documentName = documentName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], module = module.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[Selection]
-  }
-  @scala.inline
-  def ClientExtension(
-    kind: typings.relayCompiler.relayCompilerStrings.ClientExtension,
-    loc: Location,
-    selections: js.Array[Selection],
-    metadata: Metadata = null
-  ): Selection = {
-    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Selection]
-  }
-  @scala.inline
-  def Stream(
-    initialCount: ArgumentValue,
-    kind: typings.relayCompiler.relayCompilerStrings.Stream,
-    label: String,
-    loc: Location,
-    selections: js.Array[Selection],
-    `if`: ArgumentValue = null,
-    metadata: Metadata = null,
-    useCustomizedBatch: ArgumentValue = null
-  ): Selection = {
-    val __obj = js.Dynamic.literal(initialCount = initialCount.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
-    if (`if` != null) __obj.updateDynamic("if")(`if`.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (useCustomizedBatch != null) __obj.updateDynamic("useCustomizedBatch")(useCustomizedBatch.asInstanceOf[js.Any])
     __obj.asInstanceOf[Selection]
   }
   @scala.inline
@@ -156,16 +152,20 @@ object Selection {
     __obj.asInstanceOf[Selection]
   }
   @scala.inline
-  def Condition(
-    condition: Literal | Variable,
-    kind: typings.relayCompiler.relayCompilerStrings.Condition,
+  def Stream(
+    initialCount: ArgumentValue,
+    kind: typings.relayCompiler.relayCompilerStrings.Stream,
+    label: String,
     loc: Location,
-    passingValue: Boolean,
     selections: js.Array[Selection],
-    metadata: Metadata = null
+    `if`: ArgumentValue = null,
+    metadata: Metadata = null,
+    useCustomizedBatch: ArgumentValue = null
   ): Selection = {
-    val __obj = js.Dynamic.literal(condition = condition.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], passingValue = passingValue.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(initialCount = initialCount.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
+    if (`if` != null) __obj.updateDynamic("if")(`if`.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (useCustomizedBatch != null) __obj.updateDynamic("useCustomizedBatch")(useCustomizedBatch.asInstanceOf[js.Any])
     __obj.asInstanceOf[Selection]
   }
 }

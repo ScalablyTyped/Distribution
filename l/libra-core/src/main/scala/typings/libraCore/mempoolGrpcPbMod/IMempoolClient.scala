@@ -1,9 +1,9 @@
 package typings.libraCore.mempoolGrpcPbMod
 
-import typings.grpc.mod.CallOptions
 import typings.grpc.mod.ClientUnaryCall
 import typings.grpc.mod.Metadata
 import typings.grpc.mod.ServiceError
+import typings.libraCore.PartialCallOptions
 import typings.libraCore.mempoolPbMod.AddTransactionWithValidationRequest
 import typings.libraCore.mempoolPbMod.AddTransactionWithValidationResponse
 import typings.libraCore.mempoolPbMod.CommitTransactionsRequest
@@ -12,7 +12,6 @@ import typings.libraCore.mempoolPbMod.GetBlockRequest
 import typings.libraCore.mempoolPbMod.GetBlockResponse
 import typings.libraCore.mempoolPbMod.HealthCheckRequest
 import typings.libraCore.mempoolPbMod.HealthCheckResponse
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,7 +38,7 @@ trait IMempoolClient extends js.Object {
   def addTransactionWithValidation(
     request: AddTransactionWithValidationRequest,
     metadata: Metadata,
-    options: Partial[CallOptions],
+    options: PartialCallOptions,
     callback: js.Function2[
       /* error */ ServiceError | Null, 
       /* response */ AddTransactionWithValidationResponse, 
@@ -58,7 +57,7 @@ trait IMempoolClient extends js.Object {
   def commitTransactions(
     request: CommitTransactionsRequest,
     metadata: Metadata,
-    options: Partial[CallOptions],
+    options: PartialCallOptions,
     callback: js.Function2[/* error */ ServiceError | Null, /* response */ CommitTransactionsResponse, Unit]
   ): ClientUnaryCall = js.native
   def getBlock(
@@ -73,7 +72,7 @@ trait IMempoolClient extends js.Object {
   def getBlock(
     request: GetBlockRequest,
     metadata: Metadata,
-    options: Partial[CallOptions],
+    options: PartialCallOptions,
     callback: js.Function2[/* error */ ServiceError | Null, /* response */ GetBlockResponse, Unit]
   ): ClientUnaryCall = js.native
   def healthCheck(
@@ -88,7 +87,7 @@ trait IMempoolClient extends js.Object {
   def healthCheck(
     request: HealthCheckRequest,
     metadata: Metadata,
-    options: Partial[CallOptions],
+    options: PartialCallOptions,
     callback: js.Function2[/* error */ ServiceError | Null, /* response */ HealthCheckResponse, Unit]
   ): ClientUnaryCall = js.native
 }

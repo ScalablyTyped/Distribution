@@ -4,14 +4,9 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.mongodb.mod.CollectionCreateOptions
 import typings.mongodb.mod.Db
 import typings.mongodb.mod.DefaultSchema
-import typings.mongoose.AnonCatch
-import typings.mongoose.mongooseStrings.autoCreate
-import typings.mongoose.mongooseStrings.autoIndex
-import typings.mongoose.mongooseStrings.bufferCommands
-import typings.mongoose.mongooseStrings.useCreateIndex
-import typings.mongoose.mongooseStrings.useFindAndModify
+import typings.mongoose.ConnectionthenPromiseConnCatch
+import typings.mongoose.PickConnectionOptionsauto
 import typings.node.eventsMod.EventEmitter
-import typings.std.Pick
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -32,10 +27,7 @@ trait ConnectionBase extends EventEmitter {
   /** A hash of the collections associated with this connection */
   var collections: StringDictionary[Collection] = js.native
   /** A hash of the global options that are associated with this connection */
-  var config: Pick[
-    ConnectionOptions, 
-    autoIndex | autoCreate | useCreateIndex | useFindAndModify | bufferCommands
-  ] = js.native
+  var config: PickConnectionOptionsauto = js.native
   /** The mongodb.Db instance, set when the connection is opened */
   var db: Db = js.native
   /** Connected host */
@@ -134,12 +126,12 @@ trait ConnectionBase extends EventEmitter {
     */
   def openUri(uri: String): js.Promise[Connection_] = js.native
   def openUri(uri: String, callback: js.Function2[/* err */ js.Any, /* conn */ js.UndefOr[Connection_], Unit]): Connection_ = js.native
-  def openUri(uri: String, options: ConnectionOptions): Connection_ with AnonCatch = js.native
+  def openUri(uri: String, options: ConnectionOptions): ConnectionthenPromiseConnCatch = js.native
   def openUri(
     uri: String,
     options: ConnectionOptions,
     callback: js.Function2[/* err */ js.Any, /* conn */ js.UndefOr[Connection_], Unit]
-  ): Connection_ with AnonCatch = js.native
+  ): ConnectionthenPromiseConnCatch = js.native
   @JSName("openUri")
   def openUri_Promise(uri: String, options: ConnectionOptions): js.Promise[Connection_] = js.native
 }

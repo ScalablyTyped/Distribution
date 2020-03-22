@@ -18,13 +18,13 @@ import typings.pulumiAws.TypeofAPIGateway
 import typings.pulumiAws.TypeofAccessAnalyzer
 import typings.pulumiAws.TypeofAlexaForBusiness
 import typings.pulumiAws.TypeofAmplify
-import typings.pulumiAws.TypeofApiGatewayManagementApi
+import typings.pulumiAws.TypeofApiGatewayManagemen
 import typings.pulumiAws.TypeofApiGatewayV2
 import typings.pulumiAws.TypeofAppConfig
 import typings.pulumiAws.TypeofAppMesh
 import typings.pulumiAws.TypeofAppStream
 import typings.pulumiAws.TypeofAppSync
-import typings.pulumiAws.TypeofApplicationAutoScaling
+import typings.pulumiAws.TypeofApplicationAutoScal
 import typings.pulumiAws.TypeofApplicationInsights
 import typings.pulumiAws.TypeofAthena
 import typings.pulumiAws.TypeofAugmentedAIRuntime
@@ -35,9 +35,6 @@ import typings.pulumiAws.TypeofBatch
 import typings.pulumiAws.TypeofBudgets
 import typings.pulumiAws.TypeofCUR
 import typings.pulumiAws.TypeofChime
-import typings.pulumiAws.TypeofClassCredentialProviderChain
-import typings.pulumiAws.TypeofClassCredentials
-import typings.pulumiAws.TypeofClassMetadataService
 import typings.pulumiAws.TypeofCloud9
 import typings.pulumiAws.TypeofCloudDirectory
 import typings.pulumiAws.TypeofCloudFormation
@@ -57,10 +54,10 @@ import typings.pulumiAws.TypeofCodeGuruProfiler
 import typings.pulumiAws.TypeofCodeGuruReviewer
 import typings.pulumiAws.TypeofCodePipeline
 import typings.pulumiAws.TypeofCodeStar
-import typings.pulumiAws.TypeofCodeStarNotifications
+import typings.pulumiAws.TypeofCodeStarNotificatio
 import typings.pulumiAws.TypeofCodeStarconnections
 import typings.pulumiAws.TypeofCognitoIdentity
-import typings.pulumiAws.TypeofCognitoIdentityServiceProvider
+import typings.pulumiAws.TypeofCognitoIdentityServ
 import typings.pulumiAws.TypeofCognitoSync
 import typings.pulumiAws.TypeofComprehend
 import typings.pulumiAws.TypeofComprehendMedical
@@ -69,6 +66,8 @@ import typings.pulumiAws.TypeofConfigService
 import typings.pulumiAws.TypeofConnect
 import typings.pulumiAws.TypeofConnectParticipant
 import typings.pulumiAws.TypeofCostExplorer
+import typings.pulumiAws.TypeofCredentialProviderC
+import typings.pulumiAws.TypeofCredentials
 import typings.pulumiAws.TypeofDAX
 import typings.pulumiAws.TypeofDLM
 import typings.pulumiAws.TypeofDMS
@@ -103,7 +102,7 @@ import typings.pulumiAws.TypeofEventListeners
 import typings.pulumiAws.TypeofFMS
 import typings.pulumiAws.TypeofFSx
 import typings.pulumiAws.TypeofFirehose
-import typings.pulumiAws.TypeofForecastQueryService
+import typings.pulumiAws.TypeofForecastQueryServic
 import typings.pulumiAws.TypeofForecastService
 import typings.pulumiAws.TypeofFraudDetector
 import typings.pulumiAws.TypeofGameLift
@@ -118,7 +117,7 @@ import typings.pulumiAws.TypeofIAM
 import typings.pulumiAws.TypeofImagebuilder
 import typings.pulumiAws.TypeofImportExport
 import typings.pulumiAws.TypeofInspector
-import typings.pulumiAws.TypeofIoT1ClickDevicesService
+import typings.pulumiAws.TypeofIoT1ClickDevicesSer
 import typings.pulumiAws.TypeofIoT1ClickProjects
 import typings.pulumiAws.TypeofIoTAnalytics
 import typings.pulumiAws.TypeofIoTEvents
@@ -135,12 +134,12 @@ import typings.pulumiAws.TypeofKinesis
 import typings.pulumiAws.TypeofKinesisAnalytics
 import typings.pulumiAws.TypeofKinesisAnalyticsV2
 import typings.pulumiAws.TypeofKinesisVideo
-import typings.pulumiAws.TypeofKinesisVideoArchivedMedia
+import typings.pulumiAws.TypeofKinesisVideoArchive
 import typings.pulumiAws.TypeofKinesisVideoMedia
-import typings.pulumiAws.TypeofKinesisVideoSignalingChannels
+import typings.pulumiAws.TypeofKinesisVideoSignali
 import typings.pulumiAws.TypeofLakeFormation
 import typings.pulumiAws.TypeofLambda
-import typings.pulumiAws.TypeofLexModelBuildingService
+import typings.pulumiAws.TypeofLexModelBuildingSer
 import typings.pulumiAws.TypeofLexRuntime
 import typings.pulumiAws.TypeofLicenseManager
 import typings.pulumiAws.TypeofLightsail
@@ -150,8 +149,8 @@ import typings.pulumiAws.TypeofMachineLearning
 import typings.pulumiAws.TypeofMacie
 import typings.pulumiAws.TypeofManagedBlockchain
 import typings.pulumiAws.TypeofMarketplaceCatalog
-import typings.pulumiAws.TypeofMarketplaceCommerceAnalytics
-import typings.pulumiAws.TypeofMarketplaceEntitlementService
+import typings.pulumiAws.TypeofMarketplaceCommerce
+import typings.pulumiAws.TypeofMarketplaceEntitlem
 import typings.pulumiAws.TypeofMarketplaceMetering
 import typings.pulumiAws.TypeofMediaConnect
 import typings.pulumiAws.TypeofMediaConvert
@@ -161,6 +160,7 @@ import typings.pulumiAws.TypeofMediaPackageVod
 import typings.pulumiAws.TypeofMediaStore
 import typings.pulumiAws.TypeofMediaStoreData
 import typings.pulumiAws.TypeofMediaTailor
+import typings.pulumiAws.TypeofMetadataService
 import typings.pulumiAws.TypeofMigrationHub
 import typings.pulumiAws.TypeofMigrationHubConfig
 import typings.pulumiAws.TypeofMobile
@@ -189,7 +189,7 @@ import typings.pulumiAws.TypeofRDSDataService
 import typings.pulumiAws.TypeofRedshift
 import typings.pulumiAws.TypeofRekognition
 import typings.pulumiAws.TypeofResourceGroups
-import typings.pulumiAws.TypeofResourceGroupsTaggingAPI
+import typings.pulumiAws.TypeofResourceGroupsTaggi
 import typings.pulumiAws.TypeofRoboMaker
 import typings.pulumiAws.TypeofRoute53
 import typings.pulumiAws.TypeofRoute53Domains
@@ -212,7 +212,7 @@ import typings.pulumiAws.TypeofSavingsPlans
 import typings.pulumiAws.TypeofSchemas
 import typings.pulumiAws.TypeofSecretsManager
 import typings.pulumiAws.TypeofSecurityHub
-import typings.pulumiAws.TypeofServerlessApplicationRepository
+import typings.pulumiAws.TypeofServerlessApplicati
 import typings.pulumiAws.TypeofServiceCatalog
 import typings.pulumiAws.TypeofServiceDiscovery
 import typings.pulumiAws.TypeofServiceQuotas
@@ -270,13 +270,13 @@ object pulumiAwsAugmentingMod extends js.Object {
     var AccessAnalyzer: Instantiable0[typings.awsSdk.mod.AccessAnalyzer] | TypeofAccessAnalyzer = js.native
     var AlexaForBusiness: Instantiable0[typings.awsSdk.mod.AlexaForBusiness] | TypeofAlexaForBusiness = js.native
     var Amplify: Instantiable0[typings.awsSdk.mod.Amplify] | TypeofAmplify = js.native
-    var ApiGatewayManagementApi: Instantiable0[typings.awsSdk.mod.ApiGatewayManagementApi] | TypeofApiGatewayManagementApi = js.native
+    var ApiGatewayManagementApi: Instantiable0[typings.awsSdk.mod.ApiGatewayManagementApi] | TypeofApiGatewayManagemen = js.native
     var ApiGatewayV2: Instantiable0[typings.awsSdk.mod.ApiGatewayV2] | TypeofApiGatewayV2 = js.native
     var AppConfig: Instantiable0[typings.awsSdk.mod.AppConfig] | TypeofAppConfig = js.native
     var AppMesh: Instantiable0[typings.awsSdk.mod.AppMesh] | TypeofAppMesh = js.native
     var AppStream: Instantiable0[typings.awsSdk.mod.AppStream] | TypeofAppStream = js.native
     var AppSync: Instantiable0[typings.awsSdk.mod.AppSync] | TypeofAppSync = js.native
-    var ApplicationAutoScaling: Instantiable0[typings.awsSdk.mod.ApplicationAutoScaling] | TypeofApplicationAutoScaling = js.native
+    var ApplicationAutoScaling: Instantiable0[typings.awsSdk.mod.ApplicationAutoScaling] | TypeofApplicationAutoScal = js.native
     var ApplicationInsights: Instantiable0[typings.awsSdk.mod.ApplicationInsights] | TypeofApplicationInsights = js.native
     var Athena: Instantiable0[typings.awsSdk.mod.Athena] | TypeofAthena = js.native
     var AugmentedAIRuntime: Instantiable0[typings.awsSdk.mod.AugmentedAIRuntime] | TypeofAugmentedAIRuntime = js.native
@@ -311,7 +311,7 @@ object pulumiAwsAugmentingMod extends js.Object {
     var CodeGuruReviewer: Instantiable0[typings.awsSdk.mod.CodeGuruReviewer] | TypeofCodeGuruReviewer = js.native
     var CodePipeline: Instantiable0[typings.awsSdk.mod.CodePipeline] | TypeofCodePipeline = js.native
     var CodeStar: Instantiable0[typings.awsSdk.mod.CodeStar] | TypeofCodeStar = js.native
-    var CodeStarNotifications: Instantiable0[typings.awsSdk.mod.CodeStarNotifications] | TypeofCodeStarNotifications = js.native
+    var CodeStarNotifications: Instantiable0[typings.awsSdk.mod.CodeStarNotifications] | TypeofCodeStarNotificatio = js.native
     var CodeStarconnections: Instantiable0[typings.awsSdk.mod.CodeStarconnections] | TypeofCodeStarconnections = js.native
     var CognitoIdentity: Instantiable0[typings.awsSdk.mod.CognitoIdentity] | TypeofCognitoIdentity = js.native
     // Needed to expose interfaces on the class
@@ -319,7 +319,7 @@ object pulumiAwsAugmentingMod extends js.Object {
         /* options */ CognitoIdentityOptions, 
         typings.awsSdk.mod.CognitoIdentityCredentials
       ]) = js.native
-    var CognitoIdentityServiceProvider: Instantiable0[typings.awsSdk.mod.CognitoIdentityServiceProvider] | TypeofCognitoIdentityServiceProvider = js.native
+    var CognitoIdentityServiceProvider: Instantiable0[typings.awsSdk.mod.CognitoIdentityServiceProvider] | TypeofCognitoIdentityServ = js.native
     var CognitoSync: Instantiable0[typings.awsSdk.mod.CognitoSync] | TypeofCognitoSync = js.native
     var Comprehend: Instantiable0[typings.awsSdk.mod.Comprehend] | TypeofComprehend = js.native
     var ComprehendMedical: Instantiable0[typings.awsSdk.mod.ComprehendMedical] | TypeofComprehendMedical = js.native
@@ -329,8 +329,8 @@ object pulumiAwsAugmentingMod extends js.Object {
     var Connect: Instantiable0[typings.awsSdk.mod.Connect] | TypeofConnect = js.native
     var ConnectParticipant: Instantiable0[typings.awsSdk.mod.ConnectParticipant] | TypeofConnectParticipant = js.native
     var CostExplorer: Instantiable0[typings.awsSdk.mod.CostExplorer] | TypeofCostExplorer = js.native
-    var CredentialProviderChain: TypeofClassCredentialProviderChain = js.native
-    var Credentials: TypeofClassCredentials = js.native
+    var CredentialProviderChain: TypeofCredentialProviderC = js.native
+    var Credentials: TypeofCredentials = js.native
     var DAX: Instantiable0[typings.awsSdk.mod.DAX] | TypeofDAX = js.native
     var DLM: Instantiable0[typings.awsSdk.mod.DLM] | TypeofDLM = js.native
     var DMS: Instantiable0[typings.awsSdk.mod.DMS] | TypeofDMS = js.native
@@ -370,7 +370,7 @@ object pulumiAwsAugmentingMod extends js.Object {
     var FSx: Instantiable0[typings.awsSdk.mod.FSx] | TypeofFSx = js.native
     var FileSystemCredentials: Instantiable1[/* filename */ String, typings.awsSdk.mod.FileSystemCredentials] = js.native
     var Firehose: Instantiable0[typings.awsSdk.mod.Firehose] | TypeofFirehose = js.native
-    var ForecastQueryService: Instantiable0[typings.awsSdk.mod.ForecastQueryService] | TypeofForecastQueryService = js.native
+    var ForecastQueryService: Instantiable0[typings.awsSdk.mod.ForecastQueryService] | TypeofForecastQueryServic = js.native
     var ForecastService: Instantiable0[typings.awsSdk.mod.ForecastService] | TypeofForecastService = js.native
     var FraudDetector: Instantiable0[typings.awsSdk.mod.FraudDetector] | TypeofFraudDetector = js.native
     var GameLift: Instantiable0[typings.awsSdk.mod.GameLift] | TypeofGameLift = js.native
@@ -388,7 +388,7 @@ object pulumiAwsAugmentingMod extends js.Object {
     var ImportExport: Instantiable0[typings.awsSdk.mod.ImportExport] | TypeofImportExport = js.native
     var IniLoader: Instantiable0[typings.awsSdk.mod.IniLoader] = js.native
     var Inspector: Instantiable0[typings.awsSdk.mod.Inspector] | TypeofInspector = js.native
-    var IoT1ClickDevicesService: Instantiable0[typings.awsSdk.mod.IoT1ClickDevicesService] | TypeofIoT1ClickDevicesService = js.native
+    var IoT1ClickDevicesService: Instantiable0[typings.awsSdk.mod.IoT1ClickDevicesService] | TypeofIoT1ClickDevicesSer = js.native
     var IoT1ClickProjects: Instantiable0[typings.awsSdk.mod.IoT1ClickProjects] | TypeofIoT1ClickProjects = js.native
     var IoTAnalytics: Instantiable0[typings.awsSdk.mod.IoTAnalytics] | TypeofIoTAnalytics = js.native
     var IoTEvents: Instantiable0[typings.awsSdk.mod.IoTEvents] | TypeofIoTEvents = js.native
@@ -405,12 +405,12 @@ object pulumiAwsAugmentingMod extends js.Object {
     var KinesisAnalytics: Instantiable0[typings.awsSdk.mod.KinesisAnalytics] | TypeofKinesisAnalytics = js.native
     var KinesisAnalyticsV2: Instantiable0[typings.awsSdk.mod.KinesisAnalyticsV2] | TypeofKinesisAnalyticsV2 = js.native
     var KinesisVideo: Instantiable0[typings.awsSdk.mod.KinesisVideo] | TypeofKinesisVideo = js.native
-    var KinesisVideoArchivedMedia: Instantiable0[typings.awsSdk.mod.KinesisVideoArchivedMedia] | TypeofKinesisVideoArchivedMedia = js.native
+    var KinesisVideoArchivedMedia: Instantiable0[typings.awsSdk.mod.KinesisVideoArchivedMedia] | TypeofKinesisVideoArchive = js.native
     var KinesisVideoMedia: Instantiable0[typings.awsSdk.mod.KinesisVideoMedia] | TypeofKinesisVideoMedia = js.native
-    var KinesisVideoSignalingChannels: Instantiable0[typings.awsSdk.mod.KinesisVideoSignalingChannels] | TypeofKinesisVideoSignalingChannels = js.native
+    var KinesisVideoSignalingChannels: Instantiable0[typings.awsSdk.mod.KinesisVideoSignalingChannels] | TypeofKinesisVideoSignali = js.native
     var LakeFormation: Instantiable0[typings.awsSdk.mod.LakeFormation] | TypeofLakeFormation = js.native
     var Lambda: Instantiable0[typings.awsSdk.mod.Lambda] | TypeofLambda = js.native
-    var LexModelBuildingService: Instantiable0[typings.awsSdk.mod.LexModelBuildingService] | TypeofLexModelBuildingService = js.native
+    var LexModelBuildingService: Instantiable0[typings.awsSdk.mod.LexModelBuildingService] | TypeofLexModelBuildingSer = js.native
     var LexRuntime: Instantiable0[typings.awsSdk.mod.LexRuntime] | TypeofLexRuntime = js.native
     var LicenseManager: Instantiable0[typings.awsSdk.mod.LicenseManager] | TypeofLicenseManager = js.native
     var Lightsail: Instantiable0[typings.awsSdk.mod.Lightsail] | TypeofLightsail = js.native
@@ -420,8 +420,8 @@ object pulumiAwsAugmentingMod extends js.Object {
     var Macie: Instantiable0[typings.awsSdk.mod.Macie] | TypeofMacie = js.native
     var ManagedBlockchain: Instantiable0[typings.awsSdk.mod.ManagedBlockchain] | TypeofManagedBlockchain = js.native
     var MarketplaceCatalog: Instantiable0[typings.awsSdk.mod.MarketplaceCatalog] | TypeofMarketplaceCatalog = js.native
-    var MarketplaceCommerceAnalytics: Instantiable0[typings.awsSdk.mod.MarketplaceCommerceAnalytics] | TypeofMarketplaceCommerceAnalytics = js.native
-    var MarketplaceEntitlementService: Instantiable0[typings.awsSdk.mod.MarketplaceEntitlementService] | TypeofMarketplaceEntitlementService = js.native
+    var MarketplaceCommerceAnalytics: Instantiable0[typings.awsSdk.mod.MarketplaceCommerceAnalytics] | TypeofMarketplaceCommerce = js.native
+    var MarketplaceEntitlementService: Instantiable0[typings.awsSdk.mod.MarketplaceEntitlementService] | TypeofMarketplaceEntitlem = js.native
     var MarketplaceMetering: Instantiable0[typings.awsSdk.mod.MarketplaceMetering] | TypeofMarketplaceMetering = js.native
     var MediaConnect: Instantiable0[typings.awsSdk.mod.MediaConnect] | TypeofMediaConnect = js.native
     var MediaConvert: Instantiable0[typings.awsSdk.mod.MediaConvert] | TypeofMediaConvert = js.native
@@ -431,7 +431,7 @@ object pulumiAwsAugmentingMod extends js.Object {
     var MediaStore: Instantiable0[typings.awsSdk.mod.MediaStore] | TypeofMediaStore = js.native
     var MediaStoreData: Instantiable0[typings.awsSdk.mod.MediaStoreData] | TypeofMediaStoreData = js.native
     var MediaTailor: Instantiable0[typings.awsSdk.mod.MediaTailor] | TypeofMediaTailor = js.native
-    var MetadataService: TypeofClassMetadataService = js.native
+    var MetadataService: TypeofMetadataService = js.native
     var MigrationHub: Instantiable0[typings.awsSdk.mod.MigrationHub] | TypeofMigrationHub = js.native
     var MigrationHubConfig: Instantiable0[typings.awsSdk.mod.MigrationHubConfig] | TypeofMigrationHubConfig = js.native
     var Mobile: Instantiable0[typings.awsSdk.mod.Mobile] | TypeofMobile = js.native
@@ -467,7 +467,7 @@ object pulumiAwsAugmentingMod extends js.Object {
         typings.awsSdk.mod.Request[js.Object, js.Object]
       ] = js.native
     var ResourceGroups: Instantiable0[typings.awsSdk.mod.ResourceGroups] | TypeofResourceGroups = js.native
-    var ResourceGroupsTaggingAPI: Instantiable0[typings.awsSdk.mod.ResourceGroupsTaggingAPI] | TypeofResourceGroupsTaggingAPI = js.native
+    var ResourceGroupsTaggingAPI: Instantiable0[typings.awsSdk.mod.ResourceGroupsTaggingAPI] | TypeofResourceGroupsTaggi = js.native
     var Response: Instantiable0[typings.awsSdk.mod.Response[js.Object, js.Object]] = js.native
     var RoboMaker: Instantiable0[typings.awsSdk.mod.RoboMaker] | TypeofRoboMaker = js.native
     var Route53: Instantiable0[typings.awsSdk.mod.Route53] | TypeofRoute53 = js.native
@@ -492,7 +492,7 @@ object pulumiAwsAugmentingMod extends js.Object {
     var Schemas: Instantiable0[typings.awsSdk.mod.Schemas] | TypeofSchemas = js.native
     var SecretsManager: Instantiable0[typings.awsSdk.mod.SecretsManager] | TypeofSecretsManager = js.native
     var SecurityHub: Instantiable0[typings.awsSdk.mod.SecurityHub] | TypeofSecurityHub = js.native
-    var ServerlessApplicationRepository: Instantiable0[typings.awsSdk.mod.ServerlessApplicationRepository] | TypeofServerlessApplicationRepository = js.native
+    var ServerlessApplicationRepository: Instantiable0[typings.awsSdk.mod.ServerlessApplicationRepository] | TypeofServerlessApplicati = js.native
     var Service: Instantiable0[typings.awsSdk.mod.Service] = js.native
     var ServiceCatalog: Instantiable0[typings.awsSdk.mod.ServiceCatalog] | TypeofServiceCatalog = js.native
     var ServiceDiscovery: Instantiable0[typings.awsSdk.mod.ServiceDiscovery] | TypeofServiceDiscovery = js.native

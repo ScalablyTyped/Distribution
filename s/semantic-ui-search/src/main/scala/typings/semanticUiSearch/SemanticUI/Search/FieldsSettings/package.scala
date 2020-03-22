@@ -5,13 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object FieldsSettings {
-  type Param = (typings.std.Pick[
-    typings.semanticUiSearch.SemanticUI.Search.FieldsSettings.Impl, 
-    typings.semanticUiSearch.semanticUiSearchStrings.categories | typings.semanticUiSearch.semanticUiSearchStrings.categoryName | typings.semanticUiSearch.semanticUiSearchStrings.categoryResults | typings.semanticUiSearch.semanticUiSearchStrings.description | typings.semanticUiSearch.semanticUiSearchStrings.image | typings.semanticUiSearch.semanticUiSearchStrings.price | typings.semanticUiSearch.semanticUiSearchStrings.results | typings.semanticUiSearch.semanticUiSearchStrings.title | typings.semanticUiSearch.semanticUiSearchStrings.action | typings.semanticUiSearch.semanticUiSearchStrings.actionText | typings.semanticUiSearch.semanticUiSearchStrings.actionURL
-  ]) with (typings.std.Partial[
-    typings.std.Pick[
-      typings.semanticUiSearch.SemanticUI.Search.FieldsSettings.Impl, 
-      typings.semanticUiSearch.semanticUiSearchStrings.categories | typings.semanticUiSearch.semanticUiSearchStrings.categoryName | typings.semanticUiSearch.semanticUiSearchStrings.categoryResults | typings.semanticUiSearch.semanticUiSearchStrings.description | typings.semanticUiSearch.semanticUiSearchStrings.image | typings.semanticUiSearch.semanticUiSearchStrings.price | typings.semanticUiSearch.semanticUiSearchStrings.results | typings.semanticUiSearch.semanticUiSearchStrings.title | typings.semanticUiSearch.semanticUiSearchStrings.action | typings.semanticUiSearch.semanticUiSearchStrings.actionText | typings.semanticUiSearch.semanticUiSearchStrings.actionURL
-    ]
-  ])
+  type Param = (typings.semanticUiSearch.PickImplcategories | typings.semanticUiSearch.PickImplcategoryName | typings.semanticUiSearch.PickImplcategoryResults | typings.semanticUiSearch.PickImpldescription | typings.semanticUiSearch.PickImplimage | typings.semanticUiSearch.PickImplprice | typings.semanticUiSearch.PickImplresults | typings.semanticUiSearch.PickImpltitle | typings.semanticUiSearch.PickImplaction | typings.semanticUiSearch.PickImplactionText | typings.semanticUiSearch.PickImplactionURL) with typings.semanticUiSearch.PartialPickImplkeyofImplAction
 }

@@ -10,7 +10,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object serializersTypesPredicateMod extends js.Object {
   @js.native
-  class PredicateTypeSerializer () extends TypeSerializerComponent[PredicateType]
+  class PredicateTypeSerializer () extends TypeSerializerComponent[PredicateType] {
+    def toObject(`type`: PredicateType, obj: js.Any): js.Any = js.native
+  }
   
 }
 

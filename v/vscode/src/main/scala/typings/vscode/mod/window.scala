@@ -1,8 +1,8 @@
 package typings.vscode.mod
 
-import typings.vscode.AnonCanPickMany
 import typings.vscode.AnonIncrement
 import typings.vscode.AnonPreserveFocus
+import typings.vscode.QuickPickOptionscanPickMa
 import typings.vscode.Thenable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -78,42 +78,35 @@ object window extends js.Object {
   def showInputBox(options: InputBoxOptions, token: CancellationToken): Thenable[js.UndefOr[String]] = js.native
   def showOpenDialog(options: OpenDialogOptions): Thenable[js.UndefOr[js.Array[Uri]]] = js.native
   def showQuickPick(items: js.Array[String]): Thenable[js.UndefOr[String]] = js.native
-  def showQuickPick(items: js.Array[String], options: (QuickPickOptions with AnonCanPickMany) | QuickPickOptions): Thenable[js.UndefOr[js.Array[String]]] = js.native
-  def showQuickPick(
-    items: js.Array[String],
-    options: (QuickPickOptions with AnonCanPickMany) | QuickPickOptions,
-    token: CancellationToken
-  ): Thenable[js.UndefOr[js.Array[String]]] = js.native
+  def showQuickPick(items: js.Array[String], options: QuickPickOptionscanPickMa): Thenable[js.UndefOr[js.Array[String]]] = js.native
+  def showQuickPick(items: js.Array[String], options: QuickPickOptionscanPickMa, token: CancellationToken): Thenable[js.UndefOr[js.Array[String]]] = js.native
+  def showQuickPick(items: js.Array[String], options: QuickPickOptions): Thenable[js.UndefOr[String]] = js.native
+  def showQuickPick(items: js.Array[String], options: QuickPickOptions, token: CancellationToken): Thenable[js.UndefOr[String]] = js.native
   def showQuickPick(items: Thenable[js.Array[String]]): Thenable[js.UndefOr[String]] = js.native
-  def showQuickPick(
-    items: Thenable[js.Array[String]],
-    options: (QuickPickOptions with AnonCanPickMany) | QuickPickOptions
-  ): Thenable[js.UndefOr[js.Array[String]]] = js.native
-  def showQuickPick(
-    items: Thenable[js.Array[String]],
-    options: (QuickPickOptions with AnonCanPickMany) | QuickPickOptions,
-    token: CancellationToken
-  ): Thenable[js.UndefOr[js.Array[String]]] = js.native
+  def showQuickPick(items: Thenable[js.Array[String]], options: QuickPickOptionscanPickMa): Thenable[js.UndefOr[js.Array[String]]] = js.native
+  def showQuickPick(items: Thenable[js.Array[String]], options: QuickPickOptionscanPickMa, token: CancellationToken): Thenable[js.UndefOr[js.Array[String]]] = js.native
+  def showQuickPick(items: Thenable[js.Array[String]], options: QuickPickOptions): Thenable[js.UndefOr[String]] = js.native
+  def showQuickPick(items: Thenable[js.Array[String]], options: QuickPickOptions, token: CancellationToken): Thenable[js.UndefOr[String]] = js.native
   @JSName("showQuickPick")
   def showQuickPick_T_QuickPickItem[T /* <: QuickPickItem */](items: js.Array[T]): Thenable[js.UndefOr[T]] = js.native
   @JSName("showQuickPick")
-  def showQuickPick_T_QuickPickItem[T /* <: QuickPickItem */](items: js.Array[T], options: (QuickPickOptions with AnonCanPickMany) | QuickPickOptions): Thenable[js.UndefOr[js.Array[T]]] = js.native
+  def showQuickPick_T_QuickPickItem[T /* <: QuickPickItem */](items: js.Array[T], options: QuickPickOptionscanPickMa): Thenable[js.UndefOr[js.Array[T]]] = js.native
   @JSName("showQuickPick")
-  def showQuickPick_T_QuickPickItem[T /* <: QuickPickItem */](
-    items: js.Array[T],
-    options: (QuickPickOptions with AnonCanPickMany) | QuickPickOptions,
-    token: CancellationToken
-  ): Thenable[js.UndefOr[js.Array[T]]] = js.native
+  def showQuickPick_T_QuickPickItem[T /* <: QuickPickItem */](items: js.Array[T], options: QuickPickOptionscanPickMa, token: CancellationToken): Thenable[js.UndefOr[js.Array[T]]] = js.native
+  @JSName("showQuickPick")
+  def showQuickPick_T_QuickPickItem[T /* <: QuickPickItem */](items: js.Array[T], options: QuickPickOptions): Thenable[js.UndefOr[T]] = js.native
+  @JSName("showQuickPick")
+  def showQuickPick_T_QuickPickItem[T /* <: QuickPickItem */](items: js.Array[T], options: QuickPickOptions, token: CancellationToken): Thenable[js.UndefOr[T]] = js.native
   @JSName("showQuickPick")
   def showQuickPick_T_QuickPickItem[T /* <: QuickPickItem */](items: Thenable[js.Array[T]]): Thenable[js.UndefOr[T]] = js.native
   @JSName("showQuickPick")
-  def showQuickPick_T_QuickPickItem[T /* <: QuickPickItem */](items: Thenable[js.Array[T]], options: (QuickPickOptions with AnonCanPickMany) | QuickPickOptions): Thenable[js.UndefOr[js.Array[T]]] = js.native
+  def showQuickPick_T_QuickPickItem[T /* <: QuickPickItem */](items: Thenable[js.Array[T]], options: QuickPickOptionscanPickMa): Thenable[js.UndefOr[js.Array[T]]] = js.native
   @JSName("showQuickPick")
-  def showQuickPick_T_QuickPickItem[T /* <: QuickPickItem */](
-    items: Thenable[js.Array[T]],
-    options: (QuickPickOptions with AnonCanPickMany) | QuickPickOptions,
-    token: CancellationToken
-  ): Thenable[js.UndefOr[js.Array[T]]] = js.native
+  def showQuickPick_T_QuickPickItem[T /* <: QuickPickItem */](items: Thenable[js.Array[T]], options: QuickPickOptionscanPickMa, token: CancellationToken): Thenable[js.UndefOr[js.Array[T]]] = js.native
+  @JSName("showQuickPick")
+  def showQuickPick_T_QuickPickItem[T /* <: QuickPickItem */](items: Thenable[js.Array[T]], options: QuickPickOptions): Thenable[js.UndefOr[T]] = js.native
+  @JSName("showQuickPick")
+  def showQuickPick_T_QuickPickItem[T /* <: QuickPickItem */](items: Thenable[js.Array[T]], options: QuickPickOptions, token: CancellationToken): Thenable[js.UndefOr[T]] = js.native
   def showSaveDialog(options: SaveDialogOptions): Thenable[js.UndefOr[Uri]] = js.native
   def showTextDocument(document: TextDocument): Thenable[TextEditor] = js.native
   def showTextDocument(document: TextDocument, column: ViewColumn): Thenable[TextEditor] = js.native

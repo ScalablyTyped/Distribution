@@ -6,9 +6,9 @@ import typings.angularCore.mod.Renderer2
 import typings.angularCore.mod.RendererFactory2
 import typings.angularPlatformBrowser.mod.DomSanitizer
 import typings.antDesignIconsAngular.antDesignIconsAngularStrings.`[@ant-designSlashicons-angular]Colon`
-import typings.antDesignIconsAngular.antDesignIconsAngularTypesMod.IconDefinition
-import typings.antDesignIconsAngular.antDesignIconsAngularTypesMod.Manifest
-import typings.antDesignIconsAngular.antDesignIconsAngularTypesMod.ThemeType
+import typings.antDesignIconsAngular.typesMod.IconDefinition
+import typings.antDesignIconsAngular.typesMod.Manifest
+import typings.antDesignIconsAngular.typesMod.ThemeType
 import typings.std.Error
 import typings.std.SVGElement
 import scala.scalajs.js

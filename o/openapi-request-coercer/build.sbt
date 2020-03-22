@@ -1,12 +1,13 @@
 organization := "org.scalablytyped"
 name := "openapi-request-coercer"
-version := "2.3.0-b31319"
+version := "2.4.0-8f91ee"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "openapi-types" % "1.3.5-775339",
-  "org.scalablytyped" %%% "std" % "3.7-1b8369")
+  "org.scalablytyped" %%% "openapi-types" % "1.3.5-6a4209",
+  "org.scalablytyped" %%% "std" % "3.8-a0108c",
+  "org.scalablytyped" %%% "ts-log" % "2.1.4-ef4bf4")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -2,7 +2,7 @@ package typings.stripeV3.stripe.elements
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.stripeV3.AnonBase
-import typings.stripeV3.AnonBaseComplete
+import typings.stripeV3.AnonComplete
 import typings.stripeV3.stripe.paymentRequest.StripePaymentRequest
 import typings.stripeV3.stripeV3Strings.default
 import typings.stripeV3.stripeV3Strings.solid
@@ -19,7 +19,7 @@ trait ElementsOptions extends js.Object {
   var paymentRequest: js.UndefOr[StripePaymentRequest] = js.undefined
   var placeholder: js.UndefOr[String] = js.undefined
   var placeholderCountry: js.UndefOr[String] = js.undefined
-  var style: js.UndefOr[AnonBaseComplete] = js.undefined
+  var style: js.UndefOr[AnonComplete] = js.undefined
   var supportedCountries: js.UndefOr[js.Array[String]] = js.undefined
   var value: js.UndefOr[String | StringDictionary[String]] = js.undefined
 }
@@ -35,7 +35,7 @@ object ElementsOptions {
     paymentRequest: StripePaymentRequest = null,
     placeholder: String = null,
     placeholderCountry: String = null,
-    style: AnonBaseComplete = null,
+    style: AnonComplete = null,
     supportedCountries: js.Array[String] = null,
     value: String | StringDictionary[String] = null
   ): ElementsOptions = {

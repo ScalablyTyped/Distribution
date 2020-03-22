@@ -1,5 +1,6 @@
 package typings.keycloakJs.keycloakAuthzMod
 
+import typings.keycloakJs.keycloakJsStrings.legacy
 import typings.keycloakJs.mod.KeycloakInstance
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,6 +13,6 @@ object ^ extends js.Object {
     * Creates a new Keycloak client instance.
     * @param config Path to a JSON config file or a plain config object.
     */
-  def apply(keycloak: KeycloakInstance[js.UndefOr[scala.Nothing]]): KeycloakAuthorizationInstance = js.native
+  def apply(keycloak: KeycloakInstance[legacy]): KeycloakAuthorizationInstance = js.native
 }
 

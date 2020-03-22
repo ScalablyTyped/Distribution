@@ -47,6 +47,7 @@ import typings.expoLinearGradient.expoLinearGradientStrings.toolbar
 import typings.expoLinearGradient.expoLinearGradientStrings.yes
 import typings.propTypes.mod.Requireable
 import typings.propTypes.mod.Validator
+import typings.reactNative.mod.AccessibilityActionEvent
 import typings.reactNative.mod.AccessibilityState
 import typings.reactNative.mod.AccessibilityStates
 import typings.reactNative.mod.AccessibilityTrait
@@ -61,7 +62,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonAccessibilityActions extends js.Object {
-  var accessibilityActions: js.UndefOr[Validator[js.UndefOr[js.Array[String]]]] = js.undefined
+  var accessibilityActions: js.UndefOr[Validator[js.UndefOr[js.Array[ReadonlynameAccessibility]]]] = js.undefined
   var accessibilityComponentType: js.UndefOr[
     Validator[js.UndefOr[button | none | radiobutton_checked | radiobutton_unchecked]]
   ] = js.undefined
@@ -98,7 +99,7 @@ trait AnonAccessibilityActions extends js.Object {
   var locations: Requireable[js.Array[js.UndefOr[Double | Null]]]
   var nativeID: js.UndefOr[Validator[js.UndefOr[String]]] = js.undefined
   var needsOffscreenAlphaCompositing: js.UndefOr[Validator[js.UndefOr[Boolean]]] = js.undefined
-  var onAccessibilityAction: js.UndefOr[Validator[js.UndefOr[js.Function0[Unit]]]] = js.undefined
+  var onAccessibilityAction: js.UndefOr[Validator[js.UndefOr[js.Function1[/* event */ AccessibilityActionEvent, Unit]]]] = js.undefined
   var onAccessibilityTap: js.UndefOr[Validator[js.UndefOr[js.Function0[Unit]]]] = js.undefined
   var onLayout: js.UndefOr[Validator[js.UndefOr[js.Function1[/* event */ LayoutChangeEvent, Unit]]]] = js.undefined
   var onMagicTap: js.UndefOr[Validator[js.UndefOr[js.Function0[Unit]]]] = js.undefined
@@ -140,7 +141,7 @@ object AnonAccessibilityActions {
     end: Requireable[js.Object],
     locations: Requireable[js.Array[js.UndefOr[Double | Null]]],
     start: Requireable[js.Object],
-    accessibilityActions: Validator[js.UndefOr[js.Array[String]]] = null,
+    accessibilityActions: Validator[js.UndefOr[js.Array[ReadonlynameAccessibility]]] = null,
     accessibilityComponentType: Validator[js.UndefOr[button | none | radiobutton_checked | radiobutton_unchecked]] = null,
     accessibilityElementsHidden: Validator[js.UndefOr[Boolean]] = null,
     accessibilityHint: Validator[js.UndefOr[String]] = null,
@@ -168,7 +169,7 @@ object AnonAccessibilityActions {
     isTVSelectable: Validator[js.UndefOr[Boolean]] = null,
     nativeID: Validator[js.UndefOr[String]] = null,
     needsOffscreenAlphaCompositing: Validator[js.UndefOr[Boolean]] = null,
-    onAccessibilityAction: Validator[js.UndefOr[js.Function0[Unit]]] = null,
+    onAccessibilityAction: Validator[js.UndefOr[js.Function1[/* event */ AccessibilityActionEvent, Unit]]] = null,
     onAccessibilityTap: Validator[js.UndefOr[js.Function0[Unit]]] = null,
     onLayout: Validator[js.UndefOr[js.Function1[/* event */ LayoutChangeEvent, Unit]]] = null,
     onMagicTap: Validator[js.UndefOr[js.Function0[Unit]]] = null,

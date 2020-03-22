@@ -1,8 +1,7 @@
 package typings.ravenJs.mod
 
-import typings.ravenJs.AnonRequest
 import typings.ravenJs.AnonSentryclient
-import typings.std.Error
+import typings.ravenJs.ErrorrequestXMLHttpReques
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +10,7 @@ trait RavenTransportOptions extends js.Object {
   var auth: AnonSentryclient
   var data: js.Any
   var url: String
-  def onError(error: Error with AnonRequest): Unit
+  def onError(error: ErrorrequestXMLHttpReques): Unit
   def onSuccess(): Unit
 }
 
@@ -20,7 +19,7 @@ object RavenTransportOptions {
   def apply(
     auth: AnonSentryclient,
     data: js.Any,
-    onError: Error with AnonRequest => Unit,
+    onError: ErrorrequestXMLHttpReques => Unit,
     onSuccess: () => Unit,
     url: String
   ): RavenTransportOptions = {

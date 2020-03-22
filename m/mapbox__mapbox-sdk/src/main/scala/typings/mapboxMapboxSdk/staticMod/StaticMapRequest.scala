@@ -1,6 +1,6 @@
 package typings.mapboxMapboxSdk.staticMod
 
-import typings.mapboxMapboxSdk.AnonAuto
+import typings.mapboxMapboxSdk.AnonBearing
 import typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.auto
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,7 +14,7 @@ trait StaticMapRequest extends js.Object {
   var logo: js.UndefOr[Boolean] = js.undefined
   var overlays: js.UndefOr[js.Array[CustomMarkerOverlay | GeoJsonOverlay | PathOverlay]] = js.undefined
   var ownerId: String
-  var position: AnonAuto | auto
+  var position: AnonBearing | auto
   var styleId: String
   var width: Double
 }
@@ -24,7 +24,7 @@ object StaticMapRequest {
   def apply(
     height: Double,
     ownerId: String,
-    position: AnonAuto | auto,
+    position: AnonBearing | auto,
     styleId: String,
     width: Double,
     attribution: js.UndefOr[Boolean] = js.undefined,

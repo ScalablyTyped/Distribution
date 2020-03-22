@@ -6,16 +6,7 @@ import scala.scalajs.js.annotation._
 
 object semanticUiAccordionStrings {
   @js.native
-  sealed trait accordion extends js.Object
-  
-  @js.native
-  sealed trait active extends js.Object
-  
-  @js.native
   sealed trait animateChildren extends js.Object
-  
-  @js.native
-  sealed trait animating extends js.Object
   
   @js.native
   sealed trait className extends js.Object
@@ -31,9 +22,6 @@ object semanticUiAccordionStrings {
   
   @js.native
   sealed trait collapsible extends js.Object
-  
-  @js.native
-  sealed trait content extends js.Object
   
   @js.native
   sealed trait debug extends js.Object
@@ -52,9 +40,6 @@ object semanticUiAccordionStrings {
   
   @js.native
   sealed trait exclusive extends js.Object
-  
-  @js.native
-  sealed trait method extends js.Object
   
   @js.native
   sealed trait name extends js.Object
@@ -102,25 +87,13 @@ object semanticUiAccordionStrings {
   sealed trait silent extends js.Object
   
   @js.native
-  sealed trait title extends js.Object
-  
-  @js.native
   sealed trait toggle extends js.Object
-  
-  @js.native
-  sealed trait trigger extends js.Object
   
   @js.native
   sealed trait verbose extends js.Object
   
   @scala.inline
-  def accordion: accordion = "accordion".asInstanceOf[accordion]
-  @scala.inline
-  def active: active = "active".asInstanceOf[active]
-  @scala.inline
   def animateChildren: animateChildren = "animateChildren".asInstanceOf[animateChildren]
-  @scala.inline
-  def animating: animating = "animating".asInstanceOf[animating]
   @scala.inline
   def className: className = "className".asInstanceOf[className]
   @scala.inline
@@ -131,8 +104,6 @@ object semanticUiAccordionStrings {
   def closeNested: closeNested = "closeNested".asInstanceOf[closeNested]
   @scala.inline
   def collapsible: collapsible = "collapsible".asInstanceOf[collapsible]
-  @scala.inline
-  def content: content = "content".asInstanceOf[content]
   @scala.inline
   def debug: debug = "debug".asInstanceOf[debug]
   @scala.inline
@@ -145,8 +116,6 @@ object semanticUiAccordionStrings {
   def error: error = "error".asInstanceOf[error]
   @scala.inline
   def exclusive: exclusive = "exclusive".asInstanceOf[exclusive]
-  @scala.inline
-  def method: method = "method".asInstanceOf[method]
   @scala.inline
   def name: name = "name".asInstanceOf[name]
   @scala.inline
@@ -178,11 +147,7 @@ object semanticUiAccordionStrings {
   @scala.inline
   def silent: silent = "silent".asInstanceOf[silent]
   @scala.inline
-  def title: title = "title".asInstanceOf[title]
-  @scala.inline
   def toggle: toggle = "toggle".asInstanceOf[toggle]
-  @scala.inline
-  def trigger: trigger = "trigger".asInstanceOf[trigger]
   @scala.inline
   def verbose: verbose = "verbose".asInstanceOf[verbose]
 }

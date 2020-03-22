@@ -45,6 +45,8 @@ trait IButtonProps extends IActionProps {
   var loading: js.UndefOr[Boolean] = js.undefined
   /** Whether this button should use minimal styles. */
   var minimal: js.UndefOr[Boolean] = js.undefined
+  /** Whether this button should use outlined styles. */
+  var outlined: js.UndefOr[Boolean] = js.undefined
   /** Name of a Blueprint UI icon (or an icon element) to render after the text. */
   var rightIcon: js.UndefOr[IconName | MaybeElement] = js.undefined
   /** Whether this button should use small styles. */
@@ -72,6 +74,7 @@ object IButtonProps {
     loading: js.UndefOr[Boolean] = js.undefined,
     minimal: js.UndefOr[Boolean] = js.undefined,
     onClick: /* event */ MouseEvent[HTMLElement, NativeMouseEvent] => Unit = null,
+    outlined: js.UndefOr[Boolean] = js.undefined,
     rightIcon: IconName | MaybeElement = null,
     small: js.UndefOr[Boolean] = js.undefined,
     text: ReactNode = null,
@@ -90,6 +93,7 @@ object IButtonProps {
     if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
     if (!js.isUndefined(minimal)) __obj.updateDynamic("minimal")(minimal.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
+    if (!js.isUndefined(outlined)) __obj.updateDynamic("outlined")(outlined.asInstanceOf[js.Any])
     if (rightIcon != null) __obj.updateDynamic("rightIcon")(rightIcon.asInstanceOf[js.Any])
     if (!js.isUndefined(small)) __obj.updateDynamic("small")(small.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])

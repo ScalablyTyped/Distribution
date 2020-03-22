@@ -1,8 +1,8 @@
 package typings.googleapis.v14Mod.adexchangebuyerV14
 
 import typings.googleapis.AnonAspectRatio
-import typings.googleapis.AnonHeightWidth
 import typings.googleapis.AnonToken
+import typings.googleapis.AnonWidth
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,7 +32,7 @@ trait SchemaPretargetingConfig extends js.Object {
     * Requests which allow one of these (width, height) pairs will match. All
     * pairs must be supported ad dimensions.
     */
-  var dimensions: js.UndefOr[js.Array[AnonHeightWidth]] = js.native
+  var dimensions: js.UndefOr[js.Array[AnonWidth]] = js.native
   /**
     * Requests with any of these content labels will not match. Values are from
     * content-labels.txt in the downloadable files section.
@@ -146,7 +146,7 @@ object SchemaPretargetingConfig {
     configId: String = null,
     configName: String = null,
     creativeType: js.Array[String] = null,
-    dimensions: js.Array[AnonHeightWidth] = null,
+    dimensions: js.Array[AnonWidth] = null,
     excludedContentLabels: js.Array[String] = null,
     excludedGeoCriteriaIds: js.Array[String] = null,
     excludedPlacements: js.Array[AnonToken] = null,

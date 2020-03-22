@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 object progressStyleIndexNativeMod extends js.Object {
   @js.native
   object default extends js.Object {
-    var progressBar: AnonBorderBottomWidth = js.native
+    var progressBar: AnonBorderBottomWidthBorderColor = js.native
     var progressOuter: AnonBackgroundColorFlex = js.native
   }
   

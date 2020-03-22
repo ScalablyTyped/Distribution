@@ -8,7 +8,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.highcharts.mod.SeriesOptions because var conflicts: zIndex. Inlined id, index, legendIndex, mapData, name, stack, treemap, `type`, xAxis, yAxis */ trait SeriesNetworkgraphOptions
+- typings.highcharts.mod.SeriesOptions because var conflicts: zIndex. Inlined id, index, legendIndex, mapData, name, stack, `type`, xAxis, yAxis */ trait SeriesNetworkgraphOptions
   extends PlotNetworkgraphOptions
      with SeriesOptionsType {
   /**
@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation._
     * data points exceeds the series' turboThreshold, this option is not
     * available. (see online documentation for example)
     */
-  var data: js.UndefOr[SeriesNetworkgraphDataOptions | (js.Array[js.Object | js.Array[_] | Double])] = js.undefined
+  var data: js.UndefOr[PointOptionsObject | (js.Array[js.Object | js.Array[_] | Double])] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) An id for the series. This can
     * be used after render time to get a pointer to the series object through
@@ -60,7 +60,6 @@ import scala.scalajs.js.annotation._
     * Not available
     */
   var stack: js.UndefOr[Double | String] = js.undefined
-  var treemap: js.UndefOr[SeriesTreemapOptions] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) This property is only in
     * TypeScript non-optional and might be `undefined` in series objects from
@@ -81,7 +80,7 @@ object SeriesNetworkgraphOptions {
   @scala.inline
   def apply(
     `type`: String | networkgraph,
-    accessibility: js.Object | PlotNetworkgraphAccessibilityOptions = null,
+    accessibility: SeriesAccessibilityOptionsObject = null,
     allAreas: js.UndefOr[Boolean] = js.undefined,
     allowPointSelect: js.UndefOr[Boolean] = js.undefined,
     boostBlending: OptionsBoostBlendingValue = null,
@@ -94,17 +93,18 @@ object SeriesNetworkgraphOptions {
     compare: String = null,
     compareBase: `0` | `100` = null,
     compareStart: js.UndefOr[Boolean] = js.undefined,
-    connectors: PlotNetworkgraphConnectorsOptions = null,
+    connectors: SeriesConnectorsOptionsObject = null,
     cropThreshold: Int | Double = null,
     cursor: String | CursorValue = null,
     dashStyle: DashStyleValue = null,
-    data: SeriesNetworkgraphDataOptions | (js.Array[js.Object | js.Array[_] | Double]) = null,
-    dataGrouping: PlotNetworkgraphDataGroupingOptions = null,
+    data: PointOptionsObject | (js.Array[js.Object | js.Array[_] | Double]) = null,
+    dataGrouping: DataGroupingOptionsObject = null,
     dataLabels: SeriesNetworkgraphDataLabelsOptionsObject | js.Array[SeriesNetworkgraphDataLabelsOptionsObject] = null,
+    dataSorting: DataSortingOptionsObject | PlotNetworkgraphDataSortingOptions = null,
     description: String = null,
     draggable: js.UndefOr[Boolean] = js.undefined,
     enableMouseTracking: js.UndefOr[Boolean] = js.undefined,
-    events: PlotNetworkgraphEventsOptions = null,
+    events: SeriesEventsOptionsObject = null,
     findNearestPointBy: OptionsFindNearestPointByValue = null,
     gapSize: Int | Double = null,
     gapUnit: OptionsGapUnitValue = null,
@@ -113,20 +113,20 @@ object SeriesNetworkgraphOptions {
     index: Int | Double = null,
     joinBy: String | js.Array[String] = null,
     keys: js.Array[String] = null,
-    lastPrice: PlotNetworkgraphLastPriceOptions = null,
-    lastVisiblePrice: PlotNetworkgraphLastVisiblePriceOptions = null,
+    lastPrice: SeriesLastPriceOptionsObject = null,
+    lastVisiblePrice: SeriesLastVisiblePriceOptionsObject = null,
     layoutAlgorithm: PlotNetworkgraphLayoutAlgorithmOptions = null,
     legendIndex: Int | Double = null,
     lineWidth: Int | Double = null,
     link: PlotNetworkgraphLinkOptions = null,
     linkedTo: String = null,
     mapData: js.Array[SeriesMapDataOptions] | js.Any = null,
-    marker: PlotNetworkgraphMarkerOptions = null,
+    marker: PointMarkerOptionsObject = null,
     name: String = null,
     navigatorOptions: PlotSeriesOptions = null,
     nodes: js.Array[SeriesNetworkgraphNodesOptions] = null,
     opacity: Int | Double = null,
-    point: PlotNetworkgraphPointOptions = null,
+    point: PlotSeriesPointOptions = null,
     pointDescriptionFormatter: js.Function = null,
     pointRange: Int | Double = null,
     selected: js.UndefOr[Boolean] = js.undefined,
@@ -136,17 +136,16 @@ object SeriesNetworkgraphOptions {
     showInNavigator: js.UndefOr[Boolean] = js.undefined,
     skipKeyboardNavigation: js.UndefOr[Boolean] = js.undefined,
     stack: Double | scala.Nothing | String = null,
-    states: PlotNetworkgraphStatesOptions = null,
+    states: SeriesStatesOptionsObject = null,
     stickyTracking: js.UndefOr[Boolean] = js.undefined,
-    tooltip: PlotNetworkgraphTooltipOptions = null,
-    treemap: SeriesTreemapOptions = null,
+    tooltip: SeriesTooltipOptionsObject = null,
     turboThreshold: Int | Double = null,
     useOhlcData: js.UndefOr[Boolean] = js.undefined,
     visible: js.UndefOr[Boolean] = js.undefined,
     xAxis: Double | scala.Nothing | String = null,
     yAxis: Double | scala.Nothing | String = null,
     zIndex: Int | Double = null,
-    zones: js.Array[PlotNetworkgraphZonesOptions] = null
+    zones: js.Array[SeriesZonesOptionsObject] = null
   ): SeriesNetworkgraphOptions = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -170,6 +169,7 @@ object SeriesNetworkgraphOptions {
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (dataGrouping != null) __obj.updateDynamic("dataGrouping")(dataGrouping.asInstanceOf[js.Any])
     if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
+    if (dataSorting != null) __obj.updateDynamic("dataSorting")(dataSorting.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
     if (!js.isUndefined(enableMouseTracking)) __obj.updateDynamic("enableMouseTracking")(enableMouseTracking.asInstanceOf[js.Any])
@@ -208,7 +208,6 @@ object SeriesNetworkgraphOptions {
     if (states != null) __obj.updateDynamic("states")(states.asInstanceOf[js.Any])
     if (!js.isUndefined(stickyTracking)) __obj.updateDynamic("stickyTracking")(stickyTracking.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (treemap != null) __obj.updateDynamic("treemap")(treemap.asInstanceOf[js.Any])
     if (turboThreshold != null) __obj.updateDynamic("turboThreshold")(turboThreshold.asInstanceOf[js.Any])
     if (!js.isUndefined(useOhlcData)) __obj.updateDynamic("useOhlcData")(useOhlcData.asInstanceOf[js.Any])
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])

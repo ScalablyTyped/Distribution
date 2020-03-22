@@ -37,6 +37,14 @@ object InputDialog extends js.Object {
     */
   def getNumber(options: INumberOptions): js.Promise[IResult[Double]] = js.native
   /**
+    * Create and show a input dialog for a password.
+    *
+    * @param options - The dialog setup options.
+    *
+    * @returns A promise that resolves with whether the dialog was accepted
+    */
+  def getPassword(options: ITextOptions): js.Promise[IResult[String]] = js.native
+  /**
     * Create and show a input dialog for a text.
     *
     * @param options - The dialog setup options.

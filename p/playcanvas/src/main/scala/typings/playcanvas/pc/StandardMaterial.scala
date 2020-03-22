@@ -221,6 +221,7 @@ import scala.scalajs.js.annotation._
   * * refraction: if refraction is used.
   * * skyboxIntensity: if reflected skybox intensity should be modulated.
   * * useTexCubeLod: if textureCubeLodEXT function should be used to read prefiltered cubemaps. Usually true of iOS, false on other devices due to quality/performance balance.
+  * * useInstancing: if hardware instancing compatible shader should be generated. Transform is read from per-instance {@link pc.VertexBuffer} instead of shader's uniforms.
   * @example
   * // Create a new Standard material
   * var material = new pc.StandardMaterial();
@@ -594,6 +595,7 @@ class StandardMaterial () extends Material {
     * * refraction: if refraction is used.
     * * skyboxIntensity: if reflected skybox intensity should be modulated.
     * * useTexCubeLod: if textureCubeLodEXT function should be used to read prefiltered cubemaps. Usually true of iOS, false on other devices due to quality/performance balance.
+    * * useInstancing: if hardware instancing compatible shader should be generated. Transform is read from per-instance {@link pc.VertexBuffer} instead of shader's uniforms.
     */
   @JSName("onUpdateShader")
   var onUpdateShader_Original: UpdateShader = js.native
@@ -795,6 +797,7 @@ class StandardMaterial () extends Material {
     * * refraction: if refraction is used.
     * * skyboxIntensity: if reflected skybox intensity should be modulated.
     * * useTexCubeLod: if textureCubeLodEXT function should be used to read prefiltered cubemaps. Usually true of iOS, false on other devices due to quality/performance balance.
+    * * useInstancing: if hardware instancing compatible shader should be generated. Transform is read from per-instance {@link pc.VertexBuffer} instead of shader's uniforms.
     */
   def onUpdateShader(options: js.Any): js.Any = js.native
 }

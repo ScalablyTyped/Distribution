@@ -1,7 +1,8 @@
 package typings.officeUiFabricReact.spinButtonTypesMod
 
+import typings.officeUiFabricReact.PartialIButtonStyles
+import typings.officeUiFabricReact.PartialISpinButtonStyles
 import typings.officeUiFabricReact.buttonTypesMod.IButtonProps
-import typings.officeUiFabricReact.buttonTypesMod.IButtonStyles
 import typings.officeUiFabricReact.iconTypesMod.IIconProps
 import typings.officeUiFabricReact.keytipTypesMod.IKeytipProps
 import typings.officeUiFabricReact.positioningTypesMod.Position
@@ -78,7 +79,6 @@ import typings.std.Event_
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import typings.std.HTMLInputElement
-import typings.std.Partial
 import typings.uifabricStyling.ithemeMod.ITheme
 import typings.uifabricUtilities.createRefMod.IRefObject
 import scala.scalajs.js
@@ -139,7 +139,7 @@ trait ISpinButtonProps extends HTMLAttributes[HTMLDivElement] {
     * incremenent/decrement the spinButton. Use rootChecked instead of rootPressed
     * for styling when that is the case.
     */
-  var downArrowButtonStyles: js.UndefOr[Partial[IButtonStyles]] = js.undefined
+  var downArrowButtonStyles: js.UndefOr[PartialIButtonStyles] = js.undefined
   /**
     * Custom function for providing the classNames for the spinbutton. Can be used to provide
     * all styles for the component instead of applying them on top of the default styles.
@@ -249,7 +249,7 @@ trait ISpinButtonProps extends HTMLAttributes[HTMLDivElement] {
   /**
     * Custom styling for individual elements within the button DOM.
     */
-  var styles: js.UndefOr[Partial[ISpinButtonStyles]] = js.undefined
+  var styles: js.UndefOr[PartialISpinButtonStyles] = js.undefined
   /**
     * Theme provided by HOC.
     */
@@ -261,7 +261,7 @@ trait ISpinButtonProps extends HTMLAttributes[HTMLDivElement] {
     * incremenent/decrement the spinButton. Use rootChecked instead of rootPressed
     * for styling when that is the case.
     */
-  var upArrowButtonStyles: js.UndefOr[Partial[IButtonStyles]] = js.undefined
+  var upArrowButtonStyles: js.UndefOr[PartialIButtonStyles] = js.undefined
   /**
     * The value of the SpinButton. Use this if you intend to pass in a new value as a result of onChange events.
     * This value is mutually exclusive to defaultValue. Use one or the other.
@@ -345,7 +345,7 @@ object ISpinButtonProps {
     defaultValue: String = null,
     dir: String = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
-    downArrowButtonStyles: Partial[IButtonStyles] = null,
+    downArrowButtonStyles: PartialIButtonStyles = null,
     draggable: js.UndefOr[Boolean] = js.undefined,
     getClassNames: (/* theme */ ITheme, /* disabled */ Boolean, /* isFocused */ Boolean, /* keyboardSpinDirection */ KeyboardSpinDirection, /* labelPosition */ js.UndefOr[Position], /* className */ js.UndefOr[String]) => ISpinButtonClassNames = null,
     hidden: js.UndefOr[Boolean] = js.undefined,
@@ -464,7 +464,7 @@ object ISpinButtonProps {
     spellCheck: js.UndefOr[Boolean] = js.undefined,
     step: Int | Double = null,
     style: CSSProperties = null,
-    styles: Partial[ISpinButtonStyles] = null,
+    styles: PartialISpinButtonStyles = null,
     suppressContentEditableWarning: js.UndefOr[Boolean] = js.undefined,
     suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined,
     tabIndex: Int | Double = null,
@@ -473,7 +473,7 @@ object ISpinButtonProps {
     translate: yes | no = null,
     typeof: String = null,
     unselectable: on | off = null,
-    upArrowButtonStyles: Partial[IButtonStyles] = null,
+    upArrowButtonStyles: PartialIButtonStyles = null,
     value: String = null,
     vocab: String = null
   ): ISpinButtonProps = {

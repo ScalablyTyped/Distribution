@@ -24,16 +24,10 @@ object massiveStrings {
   sealed trait desc_ extends js.Object
   
   @js.native
-  sealed trait fields extends js.Object
-  
-  @js.native
   sealed trait first_ extends js.Object
   
   @js.native
   sealed trait last_ extends js.Object
-  
-  @js.native
-  sealed trait term extends js.Object
   
   @scala.inline
   def ASC: ASC = "ASC".asInstanceOf[ASC]
@@ -48,12 +42,8 @@ object massiveStrings {
   @scala.inline
   def desc_ : desc_ = "desc".asInstanceOf[desc_]
   @scala.inline
-  def fields: fields = "fields".asInstanceOf[fields]
-  @scala.inline
   def first_ : first_ = "first".asInstanceOf[first_]
   @scala.inline
   def last_ : last_ = "last".asInstanceOf[last_]
-  @scala.inline
-  def term: term = "term".asInstanceOf[term]
 }
 

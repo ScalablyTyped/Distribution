@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/core", "\u0275\u0275textInterpolateV")
 @js.native
 object ɵɵtextInterpolateV extends js.Object {
-  def apply(values: js.Array[_]): TsickleIssue1009 = js.native
+  def apply(values: js.Array[_]): js.Function1[
+    /* values */ js.Array[_], 
+    /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵtextInterpolateV */ js.Any
+  ] = js.native
 }
 

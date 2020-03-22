@@ -1,7 +1,7 @@
 package typings.athenajs.mod
 
-import typings.athenajs.Anon110
-import typings.athenajs.Anon13
+import typings.athenajs.Anon32
+import typings.athenajs.AnonCTRL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,11 +11,11 @@ trait _InputManager extends js.Object {
   /**
     * A list of common keyCodes
     */
-  var KEYS: Anon13 = js.native
+  var KEYS: AnonCTRL = js.native
   /**
     * List of common pad buttons
     */
-  var PAD_BUTTONS: Anon110 = js.native
+  var PAD_BUTTONS: Anon32 = js.native
   var axes: JSObject = js.native
   // virtual joystick instance
   var dPadJoystick: Null = js.native

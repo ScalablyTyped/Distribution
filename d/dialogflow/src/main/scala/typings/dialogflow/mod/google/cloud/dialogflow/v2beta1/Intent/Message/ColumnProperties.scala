@@ -25,7 +25,7 @@ class ColumnProperties () extends IColumnProperties {
   var header_ColumnProperties: String = js.native
   /** ColumnProperties horizontalAlignment. */
   @JSName("horizontalAlignment")
-  var horizontalAlignment_ColumnProperties: HorizontalAlignment = js.native
+  var horizontalAlignment_ColumnProperties: HorizontalAlignment | String = js.native
   /**
     * Converts this ColumnProperties to JSON.
     * @returns JSON object

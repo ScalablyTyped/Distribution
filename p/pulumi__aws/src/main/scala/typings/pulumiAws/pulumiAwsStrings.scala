@@ -1160,6 +1160,9 @@ object pulumiAwsStrings {
   sealed trait ruby2Dot5 extends Runtime
   
   @js.native
+  sealed trait ruby2Dot7 extends Runtime
+  
+  @js.native
   sealed trait `sa-east-1` extends Region
   
   @js.native
@@ -2038,6 +2041,8 @@ object pulumiAwsStrings {
   def rttime: rttime = "rttime".asInstanceOf[rttime]
   @scala.inline
   def ruby2Dot5: ruby2Dot5 = "ruby2.5".asInstanceOf[ruby2Dot5]
+  @scala.inline
+  def ruby2Dot7: ruby2Dot7 = "ruby2.7".asInstanceOf[ruby2Dot7]
   @scala.inline
   def `sa-east-1`: `sa-east-1` = "sa-east-1".asInstanceOf[`sa-east-1`]
   @scala.inline

@@ -1,7 +1,8 @@
 package typings.qiniuJs.mod
 
+import typings.qiniuJs.PartialConfig
+import typings.qiniuJs.PartialExtra
 import typings.std.Blob
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,10 +14,10 @@ object upload extends js.Object {
     file: Blob,
     key: js.UndefOr[scala.Nothing],
     token: String,
-    putExtra: Partial[Extra],
-    config: Partial[Config]
+    putExtra: PartialExtra,
+    config: PartialConfig
   ): Observable = js.native
-  def apply(file: Blob, key: String, token: String, putExtra: Partial[Extra], config: Partial[Config]): Observable = js.native
-  def apply(file: Blob, key: Null, token: String, putExtra: Partial[Extra], config: Partial[Config]): Observable = js.native
+  def apply(file: Blob, key: String, token: String, putExtra: PartialExtra, config: PartialConfig): Observable = js.native
+  def apply(file: Blob, key: Null, token: String, putExtra: PartialExtra, config: PartialConfig): Observable = js.native
 }
 

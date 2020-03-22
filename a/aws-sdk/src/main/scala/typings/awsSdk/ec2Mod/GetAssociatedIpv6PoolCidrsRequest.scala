@@ -21,13 +21,13 @@ trait GetAssociatedIpv6PoolCidrsRequest extends js.Object {
   /**
     * The ID of the IPv6 address pool.
     */
-  var PoolId: String = js.native
+  var PoolId: Ipv6PoolEc2Id = js.native
 }
 
 object GetAssociatedIpv6PoolCidrsRequest {
   @scala.inline
   def apply(
-    PoolId: String,
+    PoolId: Ipv6PoolEc2Id,
     DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     MaxResults: Int | scala.Double = null,
     NextToken: NextToken = null

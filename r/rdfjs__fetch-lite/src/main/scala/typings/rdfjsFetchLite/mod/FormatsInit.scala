@@ -1,12 +1,10 @@
 package typings.rdfjsFetchLite.mod
 
-import typings.rdfjsFetchLite.AnonParsers
-import typings.rdfjsFetchLite.FnInit
-import typings.rdfjsFetchLite.rdfjsFetchLiteStrings.parsers
+import typings.rdfjsFetchLite.FnCall
+import typings.rdfjsFetchLite.PickparsersSinkMapEventEm
 import typings.std.AbortSignal
 import typings.std.BodyInit
 import typings.std.HeadersInit
-import typings.std.Pick
 import typings.std.ReferrerPolicy
 import typings.std.RequestCache
 import typings.std.RequestCredentials
@@ -18,18 +16,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait FormatsInit extends RequestInit {
-  var fetch: js.UndefOr[FnInit] = js.undefined
-  var formats: Pick[AnonParsers, parsers]
+  var fetch: js.UndefOr[FnCall] = js.undefined
+  var formats: PickparsersSinkMapEventEm
 }
 
 object FormatsInit {
   @scala.inline
   def apply(
-    formats: Pick[AnonParsers, parsers],
+    formats: PickparsersSinkMapEventEm,
     body: BodyInit = null,
     cache: RequestCache = null,
     credentials: RequestCredentials = null,
-    fetch: FnInit = null,
+    fetch: FnCall = null,
     headers: HeadersInit = null,
     integrity: String = null,
     keepalive: js.UndefOr[Boolean] = js.undefined,

@@ -1,7 +1,6 @@
 package typings.weixinApp.wx
 
-import typings.std.Partial
-import typings.weixinApp.AnonBubbles
+import typings.weixinApp.Partialbubblesbooleancomp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -84,6 +83,6 @@ trait Component[D, P, B /* <: js.Array[(Behavior[js.Object, js.Object, js.Object
   		 */
   def triggerEvent(name: String): Unit = js.native
   def triggerEvent(name: String, details: js.Any): Unit = js.native
-  def triggerEvent(name: String, details: js.Any, options: Partial[AnonBubbles]): Unit = js.native
+  def triggerEvent(name: String, details: js.Any, options: Partialbubblesbooleancomp): Unit = js.native
 }
 

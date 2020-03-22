@@ -1,15 +1,15 @@
 package typings.mapsjs.mod
 
 import typings.mapsjs.AnonBackgroundColorStr
-import typings.mapsjs.AnonBleed
 import typings.mapsjs.AnonBleedRatio
-import typings.mapsjs.AnonBleedRatioGeometryFieldName
 import typings.mapsjs.AnonBounds
 import typings.mapsjs.AnonColor
 import typings.mapsjs.AnonData
 import typings.mapsjs.AnonDataFormat
 import typings.mapsjs.AnonDescriptor
 import typings.mapsjs.AnonEndpointCollection
+import typings.mapsjs.AnonGeometryFieldName
+import typings.mapsjs.AnonRenderBitmap
 import typings.std.CanvasRenderingContext2D
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation._
 object tile extends js.Object {
   @js.native
   class descriptorLocal protected () extends js.Object {
-    def this(options: AnonBleedRatioGeometryFieldName) = this()
+    def this(options: AnonGeometryFieldName) = this()
   }
   
   @js.native
@@ -580,7 +580,7 @@ object tile extends js.Object {
   
   @js.native
   class renderer () extends js.Object {
-    def this(options: AnonBleed) = this()
+    def this(options: AnonRenderBitmap) = this()
     /**
     		 * Sets the render bitmap function which takes a bitmap image and
     		 * a canvas context and renders the image to the canvas context.

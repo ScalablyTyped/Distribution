@@ -1,6 +1,5 @@
 package typings.wiredep
 
-import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,19 +7,19 @@ import scala.scalajs.js.annotation._
 trait AnonCssStyl extends js.Object {
   /**
     * @example:
-    *  /@import\s['"](.+css)['"]/gi
+    *  '@import "{{filePath}}"'
     */
-  var css: RegExp
+  var css: String
   /**
     * @example:
-    *   /@import\s['"](.+styl)['"]/gi
+    *  '@import "{{filePath}}"'
     */
-  var styl: RegExp
+  var styl: String
 }
 
 object AnonCssStyl {
   @scala.inline
-  def apply(css: RegExp, styl: RegExp): AnonCssStyl = {
+  def apply(css: String, styl: String): AnonCssStyl = {
     val __obj = js.Dynamic.literal(css = css.asInstanceOf[js.Any], styl = styl.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AnonCssStyl]

@@ -351,7 +351,7 @@ trait Document_
     * Fires when the state of the object has changed.
     * @param ev The event
     */
-  var onreadystatechange: (js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], _]) | Null = js.native
+  var onreadystatechange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]) | Null = js.native
   var onvisibilitychange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]) | Null = js.native
   /**
     * Returns document's origin.
@@ -392,7 +392,7 @@ trait Document_
     * 
     * When set to true, options's capture prevents callback from being invoked when the event's eventPhase attribute value is BUBBLING_PHASE. When false (or not present), callback will not be invoked when event's eventPhase attribute value is CAPTURING_PHASE. Either way, callback will be invoked if event's eventPhase attribute value is AT_TARGET.
     * 
-    * When set to true, options's passive indicates that the callback will not cancel the event by invoking preventDefault(). This is used to enable performance optimizations described in §2.8 Observing event listeners.
+    * When set to true, options's passive indicates that the callback will not cancel the event by invoking preventDefault(). This is used to enable performance optimizations described in § 2.8 Observing event listeners.
     * 
     * When set to true, options's once indicates that the callback will only be invoked once after which the event listener will be removed.
     * 
@@ -465,20 +465,17 @@ trait Document_
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_readystatechange(
-    `type`: readystatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], _]
-  ): Unit = js.native
+  def addEventListener_readystatechange(`type`: readystatechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_readystatechange(
     `type`: readystatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_readystatechange(
     `type`: readystatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
@@ -1242,8 +1239,6 @@ trait Document_
   @JSName("createEvent")
   def createEvent_ServiceWorkerMessageEvent(eventInterface: typings.std.stdStrings.ServiceWorkerMessageEvent): ServiceWorkerMessageEvent = js.native
   @JSName("createEvent")
-  def createEvent_SpeechRecognitionError(eventInterface: typings.std.stdStrings.SpeechRecognitionError): SpeechRecognitionError = js.native
-  @JSName("createEvent")
   def createEvent_SpeechRecognitionEvent(eventInterface: typings.std.stdStrings.SpeechRecognitionEvent): SpeechRecognitionEvent = js.native
   @JSName("createEvent")
   def createEvent_SpeechSynthesisErrorEvent(eventInterface: typings.std.stdStrings.SpeechSynthesisErrorEvent): SpeechSynthesisErrorEvent = js.native
@@ -1812,20 +1807,17 @@ trait Document_
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_readystatechange(
-    `type`: readystatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], _]
-  ): Unit = js.native
+  def removeEventListener_readystatechange(`type`: readystatechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_readystatechange(
     `type`: readystatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_readystatechange(
     `type`: readystatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")

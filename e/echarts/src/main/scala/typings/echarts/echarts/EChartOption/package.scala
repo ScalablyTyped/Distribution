@@ -15,8 +15,8 @@ package object EChartOption {
     */
   /* Rewritten from type alias, can be one of: 
     - java.lang.String
-    - typings.echarts.AnonColorStopsGlobalLinear
-    - typings.echarts.AnonColorStopsGlobalR
+    - typings.echarts.AnonType
+    - typings.echarts.AnonX
     - typings.echarts.AnonImage
   */
   type Color = typings.echarts.echarts.EChartOption._Color | java.lang.String

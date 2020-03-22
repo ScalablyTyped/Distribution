@@ -4,9 +4,10 @@ import typings.antd.buttonButtonMod.ButtonType
 import typings.antd.buttonButtonMod.NativeButtonProps
 import typings.antd.placementsMod.AdjustOverflow
 import typings.antd.tooltipMod.AbstractTooltipProps
-import typings.antd.tooltipMod.TooltipAlignConfig
 import typings.antd.tooltipMod.TooltipPlacement
-import typings.antd.tooltipMod.TooltipTrigger
+import typings.rcTrigger.interfaceMod.ActionType
+import typings.rcTrigger.interfaceMod.AlignType
+import typings.rcTrigger.interfaceMod.BuildInPlacements
 import typings.react.mod.CSSProperties
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
@@ -44,10 +45,10 @@ trait PopconfirmProps extends AbstractTooltipProps {
 object PopconfirmProps {
   @scala.inline
   def apply(
-    align: TooltipAlignConfig = null,
+    align: AlignType = null,
     arrowPointAtCenter: js.UndefOr[Boolean] = js.undefined,
     autoAdjustOverflow: Boolean | AdjustOverflow = null,
-    builtinPlacements: js.Object = null,
+    builtinPlacements: BuildInPlacements = null,
     cancelButtonProps: NativeButtonProps = null,
     cancelText: ReactNode = null,
     children: ReactNode = null,
@@ -74,7 +75,7 @@ object PopconfirmProps {
     style: CSSProperties = null,
     title: ReactNode = null,
     transitionName: String = null,
-    trigger: TooltipTrigger = null,
+    trigger: ActionType = null,
     visible: js.UndefOr[Boolean] = js.undefined
   ): PopconfirmProps = {
     val __obj = js.Dynamic.literal()

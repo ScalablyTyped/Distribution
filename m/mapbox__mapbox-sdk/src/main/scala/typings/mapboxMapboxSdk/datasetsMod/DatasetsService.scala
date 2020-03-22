@@ -1,12 +1,12 @@
 package typings.mapboxMapboxSdk.datasetsMod
 
 import typings.mapboxMapboxSdk.AnonDatasetId
-import typings.mapboxMapboxSdk.AnonDatasetIdDescription
-import typings.mapboxMapboxSdk.AnonDatasetIdFeature
-import typings.mapboxMapboxSdk.AnonDatasetIdFeatureId
-import typings.mapboxMapboxSdk.AnonDatasetIdLimit
 import typings.mapboxMapboxSdk.AnonDatasetIdString
 import typings.mapboxMapboxSdk.AnonDescription
+import typings.mapboxMapboxSdk.AnonFeature
+import typings.mapboxMapboxSdk.AnonFeatureId
+import typings.mapboxMapboxSdk.AnonLimit
+import typings.mapboxMapboxSdk.AnonName
 import typings.mapboxMapboxSdk.mapiRequestMod.MapiRequest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -28,13 +28,13 @@ trait DatasetsService extends js.Object {
     * @param config
     */
   // implicit any
-  def deleteFeature(config: AnonDatasetIdFeatureId): js.Any
+  def deleteFeature(config: AnonFeatureId): js.Any
   /**
     * Get a feature in a dataset.
     * @param config
     */
   // implicit any
-  def getFeature(config: AnonDatasetIdFeatureId): js.Any
+  def getFeature(config: AnonFeatureId): js.Any
   /**
     * Get metadata about a dataset.
     * @param config
@@ -50,17 +50,17 @@ trait DatasetsService extends js.Object {
     * @param config
     */
   // implicit any
-  def listFeatures(config: AnonDatasetIdLimit): js.Any
+  def listFeatures(config: AnonLimit): js.Any
   /**
     * Add a feature to a dataset or update an existing one.
     * @param config
     */
-  def putFeature(config: AnonDatasetIdFeature): MapiRequest
+  def putFeature(config: AnonFeature): MapiRequest
   /**
     * Update user-defined properties of a dataset's metadata.
     * @param config
     */
-  def updateMetadata(config: AnonDatasetIdDescription): MapiRequest
+  def updateMetadata(config: AnonName): MapiRequest
 }
 
 object DatasetsService {
@@ -68,13 +68,13 @@ object DatasetsService {
   def apply(
     createDataset: AnonDescription => MapiRequest,
     deleteDataset: AnonDatasetIdString => MapiRequest,
-    deleteFeature: AnonDatasetIdFeatureId => js.Any,
-    getFeature: AnonDatasetIdFeatureId => js.Any,
+    deleteFeature: AnonFeatureId => js.Any,
+    getFeature: AnonFeatureId => js.Any,
     getMetadata: AnonDatasetId => MapiRequest,
     listDatasets: () => MapiRequest,
-    listFeatures: AnonDatasetIdLimit => js.Any,
-    putFeature: AnonDatasetIdFeature => MapiRequest,
-    updateMetadata: AnonDatasetIdDescription => MapiRequest
+    listFeatures: AnonLimit => js.Any,
+    putFeature: AnonFeature => MapiRequest,
+    updateMetadata: AnonName => MapiRequest
   ): DatasetsService = {
     val __obj = js.Dynamic.literal(createDataset = js.Any.fromFunction1(createDataset), deleteDataset = js.Any.fromFunction1(deleteDataset), deleteFeature = js.Any.fromFunction1(deleteFeature), getFeature = js.Any.fromFunction1(getFeature), getMetadata = js.Any.fromFunction1(getMetadata), listDatasets = js.Any.fromFunction0(listDatasets), listFeatures = js.Any.fromFunction1(listFeatures), putFeature = js.Any.fromFunction1(putFeature), updateMetadata = js.Any.fromFunction1(updateMetadata))
   

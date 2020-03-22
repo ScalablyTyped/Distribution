@@ -17,6 +17,6 @@ class MarkdownCellModel protected () extends AttachmentsCellModel {
     * The type of the cell.
     */
   @JSName("type")
-  val type_MarkdownCellModel: markdown = js.native
+  def type_MMarkdownCellModel(): markdown = js.native
 }
 

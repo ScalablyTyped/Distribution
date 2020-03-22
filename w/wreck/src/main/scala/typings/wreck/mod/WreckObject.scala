@@ -3,7 +3,7 @@ package typings.wreck.mod
 import typings.node.httpMod.IncomingMessage
 import typings.node.streamMod.Readable
 import typings.wreck.AnonHttp
-import typings.wreck.AnonReqClientRequest
+import typings.wreck.PromiseIncomingMessagereq
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,7 +20,7 @@ trait WreckObject extends js.Object {
   def post(uri: String, options: RequestOptions with ReadOptions): js.Promise[RequestResponse] = js.native
   def put(uri: String, options: RequestOptions with ReadOptions): js.Promise[RequestResponse] = js.native
   def read(response: IncomingMessage, options: ReadOptions): js.Promise[_] = js.native
-  def request(method: String, uri: String, options: RequestOptions): js.Promise[IncomingMessage] with AnonReqClientRequest = js.native
+  def request(method: String, uri: String, options: RequestOptions): PromiseIncomingMessagereq = js.native
   def toReadableStream(payload: js.Any): Readable = js.native
   def toReadableStream(payload: js.Any, encoding: String): Readable = js.native
 }

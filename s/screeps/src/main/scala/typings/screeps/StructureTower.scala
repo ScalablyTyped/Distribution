@@ -1,7 +1,6 @@
 package typings.screeps
 
 import org.scalablytyped.runtime.TopLevel
-import typings.screeps.screepsBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,7 +27,7 @@ trait StructureTower
   /**
     * A Store object that contains cargo of this structure.
     */
-  var store: Store[RESOURCE_ENERGY, `false`]
+  var store: StoreRESOURCEENERGYfalse
   /**
     * Remotely attack any creep in the room. Consumes 10 energy units per tick. Attack power depends on the distance to the target: from 600 hits at range 10 to 300 hits at range 40.
     * @param target The target creep.

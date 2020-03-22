@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "hdr-histogram-js" : "1.2.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "hdr-histogram-js" : "1.2.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

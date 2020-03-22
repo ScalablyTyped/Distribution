@@ -4,7 +4,7 @@ import typings.jupyterlabObservables.modeldbMod.ModelDB.ICreateOptions
 import typings.jupyterlabObservables.observablejsonMod.IObservableJSON
 import typings.jupyterlabObservables.observablestringMod.IObservableString
 import typings.jupyterlabObservables.undoablelistMod.IObservableUndoableList
-import typings.phosphorCoreutils.jsonMod.JSONValue
+import typings.luminoCoreutils.jsonMod.JSONValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -57,6 +57,13 @@ class ModelDB_ () extends IModelDB {
     */
   /* CompleteClass */
   override val isPrepopulated: Boolean = js.native
+  /**
+    * The base path for the `ModelDB`. This is prepended
+    * to all the paths that are passed in to the member
+    * functions of the object.
+    */
+  @JSName("basePath")
+  def basePath_MModelDB_(): String = js.native
   /**
     * Create an undoable list and insert it in the database.
     *
@@ -140,6 +147,11 @@ class ModelDB_ () extends IModelDB {
     */
   /* CompleteClass */
   override def has(path: String): Boolean = js.native
+  /**
+    * Whether the database is disposed.
+    */
+  @JSName("isDisposed")
+  def isDisposed_MModelDB_(): Boolean = js.native
   /**
     * Set a value at a path. Not intended to
     * be called by user code, instead use the

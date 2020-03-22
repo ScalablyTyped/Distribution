@@ -1,8 +1,7 @@
 package typings.sipJs.apiMod
 
+import typings.sipJs.PartialUserAgentOptions
 import typings.sipJs.coreMod.URI
-import typings.sipJs.userAgentOptionsMod.UserAgentOptions
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +14,7 @@ import scala.scalajs.js.annotation._
   */
 class UserAgent ()
   extends typings.sipJs.userAgentMod.UserAgent {
-  def this(options: Partial[UserAgentOptions]) = this()
+  def this(options: PartialUserAgentOptions) = this()
 }
 
 /* static members */

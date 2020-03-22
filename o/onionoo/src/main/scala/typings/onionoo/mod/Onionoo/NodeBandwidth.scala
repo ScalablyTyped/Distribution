@@ -1,13 +1,6 @@
 package typings.onionoo.mod.Onionoo
 
-import typings.onionoo.onionooStrings.`1_month`
-import typings.onionoo.onionooStrings.`1_week`
-import typings.onionoo.onionooStrings.`1_year`
-import typings.onionoo.onionooStrings.`3_days`
-import typings.onionoo.onionooStrings.`5_years`
-import typings.onionoo.onionooStrings.`6_months`
-import typings.std.Partial
-import typings.std.Record
+import typings.onionoo.PartialRecord3days1week1m
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,11 +14,7 @@ trait NodeBandwidth extends js.Object {
     * Object containing graph history objects with read bytes for different time periods. The specification
     * of graph history objects is similar to those in the `write_history` field.
     */
-  var read_history: js.UndefOr[
-    Partial[
-      Record[`3_days` | `1_week` | `1_month` | `6_months` | `1_year` | `5_years`, Histogram]
-    ]
-  ] = js.undefined
+  var read_history: js.UndefOr[PartialRecord3days1week1m] = js.undefined
   /**
     * Object containing graph history objects with written bytes for different time periods. Keys are string
     * representation of the time period covered by the graph history object. Keys are fixed strings `3_days`,
@@ -37,23 +26,15 @@ trait NodeBandwidth extends js.Object {
     * graph history objects may contain null values if the node did not provide any bandwidth data or only data
     * for less than 20% of a given time period.
     */
-  var write_history: js.UndefOr[
-    Partial[
-      Record[`3_days` | `1_week` | `1_month` | `6_months` | `1_year` | `5_years`, Histogram]
-    ]
-  ] = js.undefined
+  var write_history: js.UndefOr[PartialRecord3days1week1m] = js.undefined
 }
 
 object NodeBandwidth {
   @scala.inline
   def apply(
     fingerprint: String,
-    read_history: Partial[
-      Record[`3_days` | `1_week` | `1_month` | `6_months` | `1_year` | `5_years`, Histogram]
-    ] = null,
-    write_history: Partial[
-      Record[`3_days` | `1_week` | `1_month` | `6_months` | `1_year` | `5_years`, Histogram]
-    ] = null
+    read_history: PartialRecord3days1week1m = null,
+    write_history: PartialRecord3days1week1m = null
   ): NodeBandwidth = {
     val __obj = js.Dynamic.literal(fingerprint = fingerprint.asInstanceOf[js.Any])
     if (read_history != null) __obj.updateDynamic("read_history")(read_history.asInstanceOf[js.Any])

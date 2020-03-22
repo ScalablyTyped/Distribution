@@ -4,8 +4,8 @@ import typings.mongodb.mod.Binary
 import typings.mongodb.mod.ObjectID_
 import typings.mongoose.AnonFlattenMaps
 import typings.mongoose.AnonNoop
-import typings.mongoose.TypeofClassObjectID_
-import typings.node.TypeofClassBuffer
+import typings.mongoose.TypeofObjectID_
+import typings.node.TypeofBuffer
 import typings.std.ArrayConstructor
 import typings.std.MapConstructor
 import typings.std.Record
@@ -119,7 +119,7 @@ object Types extends js.Object {
     * http://mongoosejs.com/docs/api.html#types-buffer-js
     */
   @js.native
-  trait Buffer extends TypeofClassBuffer {
+  trait Buffer extends TypeofBuffer {
     /**
       * Copies the buffer.
       * Buffer#copy does not mark target as modified so you must copy
@@ -217,6 +217,6 @@ object Types extends js.Object {
   //   commonly used in mongoose and is found in an example in the docs:
   //   http://mongoosejs.com/docs/api.html#aggregate_Aggregate
   // constructor exposes static methods of mongodb.ObjectID and ObjectId(id)
-  type ObjectIdConstructor = TypeofClassObjectID_ with (js.Function1[/* s */ js.UndefOr[String | Double], ObjectID_])
+  type ObjectIdConstructor = TypeofObjectID_ with (js.Function1[/* s */ js.UndefOr[String | Double], ObjectID_])
 }
 

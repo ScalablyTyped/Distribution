@@ -1,18 +1,18 @@
 package typings.jestCore
 
-import typings.jestChangedFiles.typesMod.ChangedFiles
+import typings.jestChangedFiles.typesMod.ChangedFilesPromise
 import typings.jestCore.failedTestsCacheMod.default
 import typings.jestCore.typesMod.Filter
-import typings.jestRuntime.typesMod.Context
+import typings.jestRuntime.mod.Context
 import typings.jestTestResult.typesMod.AggregatedResult
 import typings.jestTypes.configMod.GlobalConfig
-import typings.node.NodeJS.WritableStream
+import typings.node.processMod._Global_.NodeJS.WriteStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonChangedFilesPromise extends js.Object {
-  var changedFilesPromise: js.UndefOr[js.Promise[ChangedFiles]] = js.undefined
+  var changedFilesPromise: js.UndefOr[ChangedFilesPromise] = js.undefined
   var contexts: js.Array[Context]
   var failedTestsCache: js.UndefOr[default] = js.undefined
   var filter: js.UndefOr[Filter] = js.undefined
@@ -20,7 +20,7 @@ trait AnonChangedFilesPromise extends js.Object {
   var jestHooks: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JestHookEmitter */ js.Any
   ] = js.undefined
-  var outputStream: WritableStream
+  var outputStream: WriteStream
   var testWatcher: typings.jestCore.testWatcherMod.default
   def onComplete(testResults: AggregatedResult): Unit
   def startRun(globalConfig: GlobalConfig): Unit
@@ -32,10 +32,10 @@ object AnonChangedFilesPromise {
     contexts: js.Array[Context],
     globalConfig: GlobalConfig,
     onComplete: AggregatedResult => Unit,
-    outputStream: WritableStream,
+    outputStream: WriteStream,
     startRun: GlobalConfig => Unit,
     testWatcher: typings.jestCore.testWatcherMod.default,
-    changedFilesPromise: js.Promise[ChangedFiles] = null,
+    changedFilesPromise: ChangedFilesPromise = null,
     failedTestsCache: default = null,
     filter: /* testPaths */ js.Array[String] => js.Promise[AnonFiltered] = null,
     jestHooks: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JestHookEmitter */ js.Any = null

@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("jest-haste-map/build/crawlers/watchman", JSImport.Namespace)
 @js.native
 object watchmanMod extends js.Object {
-  def apply(options: CrawlerOptions): js.Promise[Anon01] = js.native
+  def apply(options: CrawlerOptions): js.Promise[AnonChangedFiles] = js.native
 }
 

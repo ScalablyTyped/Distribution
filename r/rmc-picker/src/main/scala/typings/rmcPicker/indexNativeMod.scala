@@ -13,12 +13,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object indexNativeMod extends js.Object {
   @js.native
-  class Popup protected () extends AnonCallBackCallbackComponentDidMount {
+  class Popup protected () extends AnonComponentWillMount {
     def this(props: js.Any) = this()
   }
   
   @js.native
-  class default () extends AnonCallBackCallback {
+  class default () extends AnonComponentDidUpdate {
     def this(props: IPickerProps) = this()
     def this(props: IPickerProps, context: js.Any) = this()
   }
@@ -26,15 +26,15 @@ object indexNativeMod extends js.Object {
   val PopupStyles: js.Any = js.native
   @js.native
   object Popup
-    extends Instantiable1[/* props */ js.Any, AnonCallBackCallbackComponentDidMount] {
+    extends Instantiable1[/* props */ js.Any, AnonComponentWillMount] {
     var defaultProps: js.Any = js.native
   }
   
   @js.native
   object default
-    extends Instantiable0[AnonCallBackCallback]
-       with Instantiable1[/* props */ IPickerProps, AnonCallBackCallback]
-       with Instantiable2[/* props */ IPickerProps, /* context */ js.Any, AnonCallBackCallback] {
+    extends Instantiable0[AnonComponentDidUpdate]
+       with Instantiable1[/* props */ IPickerProps, AnonComponentDidUpdate]
+       with Instantiable2[/* props */ IPickerProps, /* context */ js.Any, AnonComponentDidUpdate] {
     def Item(_props: IItemProps): js.Any = js.native
   }
   

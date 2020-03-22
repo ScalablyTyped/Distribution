@@ -1,8 +1,8 @@
 package typings.memjs.mod
 
 import typings.memjs.AnonExpires
-import typings.memjs.AnonExpiresInitial
 import typings.memjs.AnonFlags
+import typings.memjs.AnonInitial
 import typings.memjs.AnonSuccess
 import typings.node.Buffer
 import typings.std.Error
@@ -102,11 +102,11 @@ class Client protected () extends js.Object {
     * @param options
     * @param callback
     */
-  def decrement(key: String, amount: Double, options: AnonExpiresInitial): js.Promise[AnonSuccess] = js.native
+  def decrement(key: String, amount: Double, options: AnonInitial): js.Promise[AnonSuccess] = js.native
   def decrement(
     key: String,
     amount: Double,
-    options: AnonExpiresInitial,
+    options: AnonInitial,
     callback: js.Function3[
       /* err */ Error | Null, 
       /* success */ Boolean | Null, 
@@ -179,11 +179,11 @@ class Client protected () extends js.Object {
     * @param options
     * @param callback
     */
-  def increment(key: String, amount: Double, options: AnonExpiresInitial): js.Promise[AnonSuccess] = js.native
+  def increment(key: String, amount: Double, options: AnonInitial): js.Promise[AnonSuccess] = js.native
   def increment(
     key: String,
     amount: Double,
-    options: AnonExpiresInitial,
+    options: AnonInitial,
     callback: js.Function3[
       /* err */ Error | Null, 
       /* success */ Boolean | Null, 

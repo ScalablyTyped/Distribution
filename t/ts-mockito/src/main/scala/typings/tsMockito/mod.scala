@@ -103,7 +103,7 @@ object mod extends js.Object {
     @JSName("anyNumber")
     var anyNumber_Original: js.Function0[_] = js.native
     @JSName("anyOfClass")
-    var anyOfClass_Original: FnArgsExpectedClass = js.native
+    var anyOfClass_Original: FnCallExpectedClass = js.native
     @JSName("anyString")
     var anyString_Original: js.Function0[_] = js.native
     @JSName("anything")
@@ -111,31 +111,31 @@ object mod extends js.Object {
     @JSName("between")
     var between_Original: js.Function2[/* min */ Double, /* max */ Double, _] = js.native
     @JSName("capture")
-    var capture_Original: FnA = js.native
+    var capture_Original: Fn1 = js.native
     @JSName("deepEqual")
-    var deepEqual_Original: FnExpectedValue = js.native
+    var deepEqual_Original: FnCall = js.native
     @JSName("instance")
-    var instance_Original: FnMockedValue = js.native
+    var instance_Original: FnCall = js.native
     @JSName("match")
     var match_Original: js.Function1[/* expectedValue */ RegExp | String, _] = js.native
     @JSName("mock")
-    var mock_Original: FnArgs = js.native
+    var mock_Original: FnCallClazz = js.native
     @JSName("notNull")
     var notNull_Original: js.Function0[_] = js.native
     @JSName("objectContaining")
     var objectContaining_Original: js.Function1[/* expectedValue */ js.Object, _] = js.native
     @JSName("resetCalls")
-    var resetCalls_Original: FnMockedValueT = js.native
+    var resetCalls_Original: FnCallMockedValue = js.native
     @JSName("reset")
-    var reset_Original: FnMockedValueT = js.native
+    var reset_Original: FnCallMockedValue = js.native
     @JSName("spy")
-    var spy_Original: FnInstanceToSpy = js.native
+    var spy_Original: FnCall = js.native
     @JSName("strictEqual")
     var strictEqual_Original: js.Function1[/* expectedValue */ js.Any, _] = js.native
     @JSName("verify")
-    var verify_Original: FnMethod = js.native
+    var verify_Original: FnCallMethod = js.native
     @JSName("when")
-    var when_Original: FnMethodError = js.native
+    var when_Original: Fn0 = js.native
     def anyFunction(): js.Any = js.native
     def anyNumber(): js.Any = js.native
     def anyOfClass[T](expectedClass: Instantiable1[/* args (repeated) */ js.Any, T]): js.Any = js.native
@@ -194,7 +194,7 @@ object mod extends js.Object {
         ]
     ): ArgCaptor10[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9] = js.native
     def deepEqual[T](expectedValue: T): T = js.native
-    def instance[T](mockedValue: T): T = js.native
+    def instance[T](expectedValue: T): T = js.native
     def `match`(expectedValue: String): js.Any = js.native
     def `match`(expectedValue: RegExp): js.Any = js.native
     def mock[T](): T = js.native
@@ -205,7 +205,7 @@ object mod extends js.Object {
     def objectContaining(expectedValue: js.Object): js.Any = js.native
     def reset[T](mockedValue: T): Unit = js.native
     def resetCalls[T](mockedValue: T): Unit = js.native
-    def spy[T](instanceToSpy: T): T = js.native
+    def spy[T](expectedValue: T): T = js.native
     def strictEqual(expectedValue: js.Any): js.Any = js.native
     def verify[T](method: T): MethodStubVerificator[T] = js.native
     def when[T](method: T): MethodStubSetter[T, Unit, Error] = js.native

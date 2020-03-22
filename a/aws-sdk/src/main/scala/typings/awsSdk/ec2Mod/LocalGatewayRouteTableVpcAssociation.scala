@@ -17,7 +17,7 @@ trait LocalGatewayRouteTableVpcAssociation extends js.Object {
   /**
     * The ID of the association.
     */
-  var LocalGatewayRouteTableVpcAssociationId: js.UndefOr[String] = js.native
+  var LocalGatewayRouteTableVpcAssociationId: js.UndefOr[typings.awsSdk.ec2Mod.LocalGatewayRouteTableVpcAssociationId] = js.native
   /**
     * The state of the association.
     */
@@ -37,7 +37,7 @@ object LocalGatewayRouteTableVpcAssociation {
   def apply(
     LocalGatewayId: String = null,
     LocalGatewayRouteTableId: String = null,
-    LocalGatewayRouteTableVpcAssociationId: String = null,
+    LocalGatewayRouteTableVpcAssociationId: LocalGatewayRouteTableVpcAssociationId = null,
     State: String = null,
     Tags: TagList = null,
     VpcId: String = null

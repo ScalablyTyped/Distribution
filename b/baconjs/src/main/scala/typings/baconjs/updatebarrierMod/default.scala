@@ -1,6 +1,6 @@
 package typings.baconjs.updatebarrierMod
 
-import typings.baconjs.FnObs
+import typings.baconjs.FnCallObsSubscribeSink
 import typings.baconjs.eventMod.Event
 import typings.baconjs.typesMod.Subscribe
 import scala.scalajs.js
@@ -33,7 +33,7 @@ object default extends js.Object {
   @JSName("whenDoneWith")
   var whenDoneWith_Original: js.Function2[/* obs */ Observable, /* f */ Call, _] = js.native
   @JSName("wrappedSubscribe")
-  var wrappedSubscribe_Original: FnObs = js.native
+  var wrappedSubscribe_Original: FnCallObsSubscribeSink = js.native
   def afterTransaction(obs: Observable, f: Call): Unit = js.native
   def currentEventId(): js.UndefOr[Double] = js.native
   def hasWaiters(): Boolean = js.native

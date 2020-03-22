@@ -1,7 +1,7 @@
 package typings.evernote.mod.Evernote
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.evernote.AnonK
+import typings.evernote.AnonNotebookCounts
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,7 +35,7 @@ import scala.scalajs.js.annotation._
 @JSImport("evernote", "Evernote.NoteCollectionCounts")
 @js.native
 class NoteCollectionCounts () extends js.Object {
-  def this(args: AnonK) = this()
+  def this(args: AnonNotebookCounts) = this()
   var notebookCounts: StringDictionary[Double] = js.native
   var tagCounts: StringDictionary[Double] = js.native
   var trashCount: Double = js.native

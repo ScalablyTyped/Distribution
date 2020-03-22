@@ -41,8 +41,9 @@ trait OptionsBottomTab extends js.Object {
   var fontWeight: js.UndefOr[FontWeight] = js.undefined
   /**
     * Set the tab icon
+    * Note: On Android `icon` is required
     */
-  var icon: js.UndefOr[ImageRequireSource] = js.undefined
+  var icon: js.UndefOr[ImageRequireSource | ImageResource] = js.undefined
   /**
     * Set the icon tint
     */
@@ -52,6 +53,11 @@ trait OptionsBottomTab extends js.Object {
     * #### (iOS specific)
     */
   var iconInsets: js.UndefOr[Insets] = js.undefined
+  /**
+    * If it's set to false, pressing a tab won't select the tab
+    * instead it will emit a bottomTabPressedEvent
+    */
+  var selectTabOnPress: js.UndefOr[Boolean] = js.undefined
   /**
     * Set the font size for selected tabs
     * #### (Android specific)
@@ -95,9 +101,10 @@ object OptionsBottomTab {
     fontFamily: FontFamily = null,
     fontSize: Int | Double = null,
     fontWeight: FontWeight = null,
-    icon: Int | Double = null,
+    icon: ImageRequireSource | ImageResource = null,
     iconColor: Color = null,
     iconInsets: Insets = null,
+    selectTabOnPress: js.UndefOr[Boolean] = js.undefined,
     selectedFontSize: Int | Double = null,
     selectedIcon: Int | Double = null,
     selectedIconColor: Color = null,
@@ -118,6 +125,7 @@ object OptionsBottomTab {
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (iconColor != null) __obj.updateDynamic("iconColor")(iconColor.asInstanceOf[js.Any])
     if (iconInsets != null) __obj.updateDynamic("iconInsets")(iconInsets.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectTabOnPress)) __obj.updateDynamic("selectTabOnPress")(selectTabOnPress.asInstanceOf[js.Any])
     if (selectedFontSize != null) __obj.updateDynamic("selectedFontSize")(selectedFontSize.asInstanceOf[js.Any])
     if (selectedIcon != null) __obj.updateDynamic("selectedIcon")(selectedIcon.asInstanceOf[js.Any])
     if (selectedIconColor != null) __obj.updateDynamic("selectedIconColor")(selectedIconColor.asInstanceOf[js.Any])

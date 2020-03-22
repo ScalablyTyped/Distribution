@@ -1,9 +1,7 @@
 package typings.shopifyPrime
 
 import typings.shopifyPrime.infrastructureMod.BaseService
-import typings.shopifyPrime.optionsBaseMod.DateOptions
 import typings.shopifyPrime.optionsBaseMod.FieldOptions
-import typings.shopifyPrime.optionsBaseMod.PublishedOptions
 import typings.shopifyPrime.optionsProductCollectionMod.CollectionListOptions
 import typings.shopifyPrime.productCollectionMod.CustomCollection
 import scala.scalajs.js
@@ -22,7 +20,7 @@ object customCollectionsMod extends js.Object {
       * @see https://help.shopify.com/api/reference/customcollection#count
       */
     def count(): js.Promise[Double] = js.native
-    def count(options: AnonProductid with DateOptions with PublishedOptions): js.Promise[Double] = js.native
+    def count(options: titlestringproductidnumbe): js.Promise[Double] = js.native
     /**
       * Creates an collection.
       * @param collection The collection being created.

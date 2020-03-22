@@ -7,13 +7,16 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GetProfileResponse extends js.Object {
   /**
-    * The content encoding of the profile in the payload.
+    * The content encoding of the profile.
     */
   var contentEncoding: js.UndefOr[String] = js.native
   /**
-    * The content type of the profile in the payload. Will be application/json or application/x-amzn-ion based on Accept header in the request.
+    * The content type of the profile in the payload. It is either application/json or the default application/x-amzn-ion.
     */
   var contentType: String = js.native
+  /**
+    * Information about the profile.
+    */
   var profile: AggregatedProfile = js.native
 }
 

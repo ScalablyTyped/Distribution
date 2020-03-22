@@ -12,12 +12,6 @@ class PlatformRef () extends js.Object {
   var _injector: js.Any = js.native
   var _moduleDoBootstrap: js.Any = js.native
   var _modules: js.Any = js.native
-  val destroyed: Boolean = js.native
-  /**
-    * Retrieve the platform {@link Injector}, which is the parent injector for
-    * every Angular application on the page and provides singleton providers.
-    */
-  val injector: Injector = js.native
   /**
     * Creates an instance of an `@NgModule` for a given platform using the given runtime compiler.
     *
@@ -65,6 +59,12 @@ class PlatformRef () extends js.Object {
     * Destroy the Angular platform and all Angular applications on the page.
     */
   def destroy(): Unit = js.native
+  def destroyed(): Boolean = js.native
+  /**
+    * Retrieve the platform {@link Injector}, which is the parent injector for
+    * every Angular application on the page and provides singleton providers.
+    */
+  def injector(): Injector = js.native
   /**
     * Register a listener to be called when the platform is disposed.
     */

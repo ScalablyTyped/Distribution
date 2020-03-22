@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "eol" : "0.8.1"
+      "eol" : "0.9.1"
     }
   ],
   "test-dependencies" : [
     {
-      "eol" : "0.8.1"
+      "eol" : "0.9.1"
     }
   ],
   "compile-devDependencies" : [

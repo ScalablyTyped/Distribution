@@ -179,7 +179,22 @@ object fundamentalReactStrings {
   sealed trait TreeViewDotTree extends js.Object
   
   @js.native
+  sealed trait additions extends js.Object
+  
+  @js.native
+  sealed trait `additions text` extends js.Object
+  
+  @js.native
   sealed trait after extends InputGroupAddonPosition
+  
+  @js.native
+  sealed trait all extends js.Object
+  
+  @js.native
+  sealed trait ascending extends js.Object
+  
+  @js.native
+  sealed trait assertive extends js.Object
   
   @js.native
   sealed trait available extends StatusType
@@ -189,6 +204,9 @@ object fundamentalReactStrings {
   
   @js.native
   sealed trait before extends InputGroupAddonPosition
+  
+  @js.native
+  sealed trait both extends js.Object
   
   @js.native
   sealed trait bottom extends PopperPlacement
@@ -218,10 +236,22 @@ object fundamentalReactStrings {
   sealed trait circle extends IdentifierModifiers
   
   @js.native
-  sealed trait className extends js.Object
+  sealed trait copy extends js.Object
+  
+  @js.native
+  sealed trait date extends js.Object
+  
+  @js.native
+  sealed trait decimal extends js.Object
+  
+  @js.native
+  sealed trait descending extends js.Object
   
   @js.native
   sealed trait dialog extends PopoverTypes
+  
+  @js.native
+  sealed trait email extends js.Object
   
   @js.native
   sealed trait emphasized extends ButtonOptions
@@ -235,7 +265,13 @@ object fundamentalReactStrings {
        with StatusType
   
   @js.native
+  sealed trait execute extends js.Object
+  
+  @js.native
   sealed trait filled extends BadgeModifiers
+  
+  @js.native
+  sealed trait grammar extends js.Object
   
   @js.native
   sealed trait grid extends PopoverTypes
@@ -244,7 +280,16 @@ object fundamentalReactStrings {
   sealed trait help extends FormMessageType
   
   @js.native
+  sealed trait horizontal extends js.Object
+  
+  @js.native
   sealed trait information extends AlertType
+  
+  @js.native
+  sealed trait inherit extends js.Object
+  
+  @js.native
+  sealed trait `inline` extends js.Object
   
   @js.native
   sealed trait invalid extends InputType
@@ -271,7 +316,16 @@ object fundamentalReactStrings {
   sealed trait light extends ButtonOptions
   
   @js.native
+  sealed trait link_ extends js.Object
+  
+  @js.native
+  sealed trait list extends js.Object
+  
+  @js.native
   sealed trait listbox extends PopoverTypes
+  
+  @js.native
+  sealed trait location extends js.Object
   
   @js.native
   sealed trait m
@@ -296,7 +350,16 @@ object fundamentalReactStrings {
   sealed trait minTarget extends PopperSizingTypes
   
   @js.native
+  sealed trait mixed extends js.Object
+  
+  @js.native
+  sealed trait move extends js.Object
+  
+  @js.native
   sealed trait negative extends ButtonTypes
+  
+  @js.native
+  sealed trait no extends js.Object
   
   @js.native
   sealed trait none extends PopperSizingTypes
@@ -308,13 +371,37 @@ object fundamentalReactStrings {
   sealed trait number extends InputGroupTypes
   
   @js.native
+  sealed trait numeric extends js.Object
+  
+  @js.native
+  sealed trait off extends js.Object
+  
+  @js.native
   sealed trait offline extends StatusType
+  
+  @js.native
+  sealed trait on extends js.Object
+  
+  @js.native
+  sealed trait other extends js.Object
+  
+  @js.native
+  sealed trait page extends js.Object
   
   @js.native
   sealed trait pill extends BadgeModifiers
   
   @js.native
+  sealed trait polite extends js.Object
+  
+  @js.native
+  sealed trait popup extends js.Object
+  
+  @js.native
   sealed trait positive extends ButtonTypes
+  
+  @js.native
+  sealed trait removals extends js.Object
   
   @js.native
   sealed trait reset extends js.Object
@@ -341,7 +428,13 @@ object fundamentalReactStrings {
   sealed trait search extends InputGroupTypes
   
   @js.native
+  sealed trait spelling extends js.Object
+  
+  @js.native
   sealed trait standard extends ButtonTypes
+  
+  @js.native
+  sealed trait step extends js.Object
   
   @js.native
   sealed trait submit extends js.Object
@@ -354,7 +447,13 @@ object fundamentalReactStrings {
        with StatusType
   
   @js.native
+  sealed trait tel extends js.Object
+  
+  @js.native
   sealed trait text extends InputGroupTypes
+  
+  @js.native
+  sealed trait time_ extends js.Object
   
   @js.native
   sealed trait top extends PopperPlacement
@@ -372,7 +471,13 @@ object fundamentalReactStrings {
   sealed trait tree extends PopoverTypes
   
   @js.native
+  sealed trait url extends js.Object
+  
+  @js.native
   sealed trait valid extends InputType
+  
+  @js.native
+  sealed trait vertical extends js.Object
   
   @js.native
   sealed trait warning
@@ -398,6 +503,9 @@ object fundamentalReactStrings {
   
   @js.native
   sealed trait xxs extends IdentifierSizes
+  
+  @js.native
+  sealed trait yes extends js.Object
   
   @scala.inline
   def ActionBar: ActionBar = "ActionBar".asInstanceOf[ActionBar]
@@ -502,13 +610,25 @@ object fundamentalReactStrings {
   @scala.inline
   def TreeViewDotTree: TreeViewDotTree = "TreeView.Tree".asInstanceOf[TreeViewDotTree]
   @scala.inline
+  def additions: additions = "additions".asInstanceOf[additions]
+  @scala.inline
+  def `additions text`: `additions text` = "additions text".asInstanceOf[`additions text`]
+  @scala.inline
   def after: after = "after".asInstanceOf[after]
+  @scala.inline
+  def all: all = "all".asInstanceOf[all]
+  @scala.inline
+  def ascending: ascending = "ascending".asInstanceOf[ascending]
+  @scala.inline
+  def assertive: assertive = "assertive".asInstanceOf[assertive]
   @scala.inline
   def available: available = "available".asInstanceOf[available]
   @scala.inline
   def away: away = "away".asInstanceOf[away]
   @scala.inline
   def before: before = "before".asInstanceOf[before]
+  @scala.inline
+  def both: both = "both".asInstanceOf[both]
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
   @scala.inline
@@ -528,21 +648,39 @@ object fundamentalReactStrings {
   @scala.inline
   def circle: circle = "circle".asInstanceOf[circle]
   @scala.inline
-  def className: className = "className".asInstanceOf[className]
+  def copy: copy = "copy".asInstanceOf[copy]
+  @scala.inline
+  def date: date = "date".asInstanceOf[date]
+  @scala.inline
+  def decimal: decimal = "decimal".asInstanceOf[decimal]
+  @scala.inline
+  def descending: descending = "descending".asInstanceOf[descending]
   @scala.inline
   def dialog: dialog = "dialog".asInstanceOf[dialog]
+  @scala.inline
+  def email: email = "email".asInstanceOf[email]
   @scala.inline
   def emphasized: emphasized = "emphasized".asInstanceOf[emphasized]
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   @scala.inline
+  def execute: execute = "execute".asInstanceOf[execute]
+  @scala.inline
   def filled: filled = "filled".asInstanceOf[filled]
+  @scala.inline
+  def grammar: grammar = "grammar".asInstanceOf[grammar]
   @scala.inline
   def grid: grid = "grid".asInstanceOf[grid]
   @scala.inline
   def help: help = "help".asInstanceOf[help]
   @scala.inline
+  def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
+  @scala.inline
   def information: information = "information".asInstanceOf[information]
+  @scala.inline
+  def inherit: inherit = "inherit".asInstanceOf[inherit]
+  @scala.inline
+  def `inline`: `inline` = "inline".asInstanceOf[`inline`]
   @scala.inline
   def invalid: invalid = "invalid".asInstanceOf[invalid]
   @scala.inline
@@ -556,7 +694,13 @@ object fundamentalReactStrings {
   @scala.inline
   def light: light = "light".asInstanceOf[light]
   @scala.inline
+  def link_ : link_ = "link".asInstanceOf[link_]
+  @scala.inline
+  def list: list = "list".asInstanceOf[list]
+  @scala.inline
   def listbox: listbox = "listbox".asInstanceOf[listbox]
+  @scala.inline
+  def location: location = "location".asInstanceOf[location]
   @scala.inline
   def m: m = "m".asInstanceOf[m]
   @scala.inline
@@ -570,7 +714,13 @@ object fundamentalReactStrings {
   @scala.inline
   def minTarget: minTarget = "minTarget".asInstanceOf[minTarget]
   @scala.inline
+  def mixed: mixed = "mixed".asInstanceOf[mixed]
+  @scala.inline
+  def move: move = "move".asInstanceOf[move]
+  @scala.inline
   def negative: negative = "negative".asInstanceOf[negative]
+  @scala.inline
+  def no: no = "no".asInstanceOf[no]
   @scala.inline
   def none: none = "none".asInstanceOf[none]
   @scala.inline
@@ -578,11 +728,27 @@ object fundamentalReactStrings {
   @scala.inline
   def number: number = "number".asInstanceOf[number]
   @scala.inline
+  def numeric: numeric = "numeric".asInstanceOf[numeric]
+  @scala.inline
+  def off: off = "off".asInstanceOf[off]
+  @scala.inline
   def offline: offline = "offline".asInstanceOf[offline]
+  @scala.inline
+  def on: on = "on".asInstanceOf[on]
+  @scala.inline
+  def other: other = "other".asInstanceOf[other]
+  @scala.inline
+  def page: page = "page".asInstanceOf[page]
   @scala.inline
   def pill: pill = "pill".asInstanceOf[pill]
   @scala.inline
+  def polite: polite = "polite".asInstanceOf[polite]
+  @scala.inline
+  def popup: popup = "popup".asInstanceOf[popup]
+  @scala.inline
   def positive: positive = "positive".asInstanceOf[positive]
+  @scala.inline
+  def removals: removals = "removals".asInstanceOf[removals]
   @scala.inline
   def reset: reset = "reset".asInstanceOf[reset]
   @scala.inline
@@ -596,13 +762,21 @@ object fundamentalReactStrings {
   @scala.inline
   def search: search = "search".asInstanceOf[search]
   @scala.inline
+  def spelling: spelling = "spelling".asInstanceOf[spelling]
+  @scala.inline
   def standard: standard = "standard".asInstanceOf[standard]
+  @scala.inline
+  def step: step = "step".asInstanceOf[step]
   @scala.inline
   def submit: submit = "submit".asInstanceOf[submit]
   @scala.inline
   def success: success = "success".asInstanceOf[success]
   @scala.inline
+  def tel: tel = "tel".asInstanceOf[tel]
+  @scala.inline
   def text: text = "text".asInstanceOf[text]
+  @scala.inline
+  def time_ : time_ = "time".asInstanceOf[time_]
   @scala.inline
   def top: top = "top".asInstanceOf[top]
   @scala.inline
@@ -614,7 +788,11 @@ object fundamentalReactStrings {
   @scala.inline
   def tree: tree = "tree".asInstanceOf[tree]
   @scala.inline
+  def url: url = "url".asInstanceOf[url]
+  @scala.inline
   def valid: valid = "valid".asInstanceOf[valid]
+  @scala.inline
+  def vertical: vertical = "vertical".asInstanceOf[vertical]
   @scala.inline
   def warning: warning = "warning".asInstanceOf[warning]
   @scala.inline
@@ -625,5 +803,7 @@ object fundamentalReactStrings {
   def xxl: xxl = "xxl".asInstanceOf[xxl]
   @scala.inline
   def xxs: xxs = "xxs".asInstanceOf[xxs]
+  @scala.inline
+  def yes: yes = "yes".asInstanceOf[yes]
 }
 

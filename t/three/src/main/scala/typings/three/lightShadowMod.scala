@@ -29,7 +29,8 @@ object lightShadowMod extends js.Object {
     def getFrustum(): Double = js.native
     def getViewport(viewportIndex: Double): Vector4 = js.native
     def toJSON(): js.Any = js.native
-    def updateMatrices(light: Light, viewCamera: Camera, viewportIndex: Double): Unit = js.native
+    def updateMatrices(light: Light): Unit = js.native
+    def updateMatrices(light: Light, viewportIndex: Double): Unit = js.native
   }
   
 }

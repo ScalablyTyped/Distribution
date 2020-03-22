@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "readable-web-to-node-stream" : "2.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "readable-web-to-node-stream" : "2.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

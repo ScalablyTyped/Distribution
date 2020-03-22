@@ -11,5 +11,4 @@ package object tabsMod {
     /* currentState */ typings.baseui.tabsMod.State, 
     typings.baseui.tabsMod.State
   ]
-  type StatefulTabsProps = typings.baseui.tabsMod.TabsProps with typings.baseui.AnonInitialStateRenderAll
 }

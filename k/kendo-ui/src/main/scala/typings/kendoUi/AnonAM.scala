@@ -13,7 +13,7 @@ trait AnonAM extends js.Object {
   var Slash: String
   var days: AnonNames
   var firstDay: String
-  var months: AnonNamesNamesAbbr
+  var months: AnonNamesAbbr
   var patterns: AnonD
   var twoDigitYearMax: Double
 }
@@ -27,7 +27,7 @@ object AnonAM {
     Slash: String,
     days: AnonNames,
     firstDay: String,
-    months: AnonNamesNamesAbbr,
+    months: AnonNamesAbbr,
     patterns: AnonD,
     twoDigitYearMax: Double
   ): AnonAM = {

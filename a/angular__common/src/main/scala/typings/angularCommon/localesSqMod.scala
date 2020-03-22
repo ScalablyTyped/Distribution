@@ -8,7 +8,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object localesSqMod extends js.Object {
   val default: js.Array[
-    String | Double | (js.Array[js.UndefOr[js.Array[String] | Double | String]]) | (js.Function1[/* n */ Double, Double]) | AnonALLJPY
+    js.UndefOr[
+      String | Double | (js.Array[js.UndefOr[js.Array[String] | Double | String]]) | (js.Function1[/* n */ Double, Double]) | AnonCZK
+    ]
   ] = js.native
 }
 

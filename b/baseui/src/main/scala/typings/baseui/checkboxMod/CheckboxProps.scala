@@ -22,6 +22,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CheckboxProps extends js.Object {
+  var `aria-describedby`: js.UndefOr[String] = js.undefined
+  var `aria-errormessage`: js.UndefOr[String] = js.undefined
   var autoFocus: js.UndefOr[Boolean] = js.undefined
   var checked: js.UndefOr[Boolean] = js.undefined
   var checkmarkType: js.UndefOr[default_ | toggle | toggle_round] = js.undefined
@@ -49,6 +51,8 @@ trait CheckboxProps extends js.Object {
 object CheckboxProps {
   @scala.inline
   def apply(
+    `aria-describedby`: String = null,
+    `aria-errormessage`: String = null,
     autoFocus: js.UndefOr[Boolean] = js.undefined,
     checked: js.UndefOr[Boolean] = js.undefined,
     checkmarkType: default_ | toggle | toggle_round = null,
@@ -73,6 +77,8 @@ object CheckboxProps {
     value: String = null
   ): CheckboxProps = {
     val __obj = js.Dynamic.literal()
+    if (`aria-describedby` != null) __obj.updateDynamic("aria-describedby")(`aria-describedby`.asInstanceOf[js.Any])
+    if (`aria-errormessage` != null) __obj.updateDynamic("aria-errormessage")(`aria-errormessage`.asInstanceOf[js.Any])
     if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.asInstanceOf[js.Any])
     if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
     if (checkmarkType != null) __obj.updateDynamic("checkmarkType")(checkmarkType.asInstanceOf[js.Any])

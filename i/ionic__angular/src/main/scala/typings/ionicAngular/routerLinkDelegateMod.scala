@@ -11,7 +11,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ionic/angular/dist/directives/navigation/router-link-delegate", JSImport.Namespace)
+@JSImport("@ionic/angular/directives/navigation/router-link-delegate", JSImport.Namespace)
 @js.native
 object routerLinkDelegateMod extends js.Object {
   @js.native

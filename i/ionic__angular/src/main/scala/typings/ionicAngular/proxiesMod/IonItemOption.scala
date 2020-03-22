@@ -11,7 +11,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ionic/angular/dist/directives/proxies", "IonItemOption")
+@JSImport("@ionic/angular/directives/proxies", "IonItemOption")
 @js.native
 class IonItemOption protected ()
   extends typings.ionicCore.componentsMod.Components.IonItemOption {

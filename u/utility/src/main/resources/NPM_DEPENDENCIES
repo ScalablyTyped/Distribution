@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "utility" : "1.16.1"
+      "utility" : "1.16.3"
     }
   ],
   "test-dependencies" : [
     {
-      "utility" : "1.16.1"
+      "utility" : "1.16.3"
     }
   ],
   "compile-devDependencies" : [

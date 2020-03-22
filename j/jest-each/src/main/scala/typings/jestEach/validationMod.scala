@@ -1,5 +1,6 @@
 package typings.jestEach
 
+import typings.jestTypes.globalMod.TemplateData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object validationMod extends js.Object {
   def validateArrayTable(table: js.Any): Unit = js.native
-  def validateTemplateTableHeadings(headings: js.Array[String], data: js.Array[_]): Unit = js.native
+  def validateTemplateTableHeadings(headings: js.Array[String], data: TemplateData): Unit = js.native
 }
 

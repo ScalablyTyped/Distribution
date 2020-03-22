@@ -56,9 +56,6 @@ object formatjsIntlUtilsStrings {
   sealed trait `100000000000000` extends DecimalFormatNum
   
   @js.native
-  sealed trait RelativeTimeData extends js.Object
-  
-  @js.native
   sealed trait accounting extends UnifiedNumberFormatOptionsCurrencySign
   
   @js.native
@@ -288,8 +285,6 @@ object formatjsIntlUtilsStrings {
   def `10000000000000`: `10000000000000` = "10000000000000".asInstanceOf[`10000000000000`]
   @scala.inline
   def `100000000000000`: `100000000000000` = "100000000000000".asInstanceOf[`100000000000000`]
-  @scala.inline
-  def RelativeTimeData: RelativeTimeData = "RelativeTimeData".asInstanceOf[RelativeTimeData]
   @scala.inline
   def accounting: accounting = "accounting".asInstanceOf[accounting]
   @scala.inline

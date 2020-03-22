@@ -39,6 +39,9 @@ object mobxStrings {
   sealed trait never extends js.Object
   
   @js.native
+  sealed trait observable extends js.Object
+  
+  @js.native
   sealed trait observed extends js.Object
   
   @js.native
@@ -75,6 +78,8 @@ object mobxStrings {
   def extendObservable: extendObservable = "extendObservable".asInstanceOf[extendObservable]
   @scala.inline
   def never: never = "never".asInstanceOf[never]
+  @scala.inline
+  def observable: observable = "observable".asInstanceOf[observable]
   @scala.inline
   def observed: observed = "observed".asInstanceOf[observed]
   @scala.inline

@@ -3,7 +3,7 @@ package typings.dockerode.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.dockerode.AnonDestination
 import typings.dockerode.AnonNetworkMode
-import typings.dockerode.AnonNetworkType
+import typings.dockerode.AnonNetworks
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +18,7 @@ trait ContainerInfo extends js.Object {
   var Labels: StringDictionary[String]
   var Mounts: js.Array[AnonDestination]
   var Names: js.Array[String]
-  var NetworkSettings: AnonNetworkType
+  var NetworkSettings: AnonNetworks
   var Ports: js.Array[Port]
   var State: String
   var Status: String
@@ -36,7 +36,7 @@ object ContainerInfo {
     Labels: StringDictionary[String],
     Mounts: js.Array[AnonDestination],
     Names: js.Array[String],
-    NetworkSettings: AnonNetworkType,
+    NetworkSettings: AnonNetworks,
     Ports: js.Array[Port],
     State: String,
     Status: String

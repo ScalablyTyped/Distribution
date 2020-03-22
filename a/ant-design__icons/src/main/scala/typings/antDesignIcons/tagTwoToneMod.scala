@@ -1,13 +1,16 @@
 package typings.antDesignIcons
 
-import typings.antDesignIcons.typesMod.IconDefinition
+import typings.antDesignIcons.antdIconMod.AntdIconProps
+import typings.react.mod.ForwardRefExoticComponent
+import typings.react.mod.RefAttributes
+import typings.std.HTMLSpanElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ant-design/icons/lib/twotone/TagTwoTone", JSImport.Namespace)
+@JSImport("@ant-design/icons/dist/icons/TagTwoTone", JSImport.Namespace)
 @js.native
 object tagTwoToneMod extends js.Object {
-  val default: IconDefinition = js.native
+  val default: ForwardRefExoticComponent[AntdIconProps with RefAttributes[HTMLSpanElement]] = js.native
 }
 

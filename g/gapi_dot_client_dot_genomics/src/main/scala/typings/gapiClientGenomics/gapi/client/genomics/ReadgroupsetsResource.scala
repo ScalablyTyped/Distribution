@@ -2,8 +2,8 @@ package typings.gapiClientGenomics.gapi.client.genomics
 
 import typings.gapiClient.gapi.client.Request_
 import typings.gapiClientGenomics.AnonAccesstoken
-import typings.gapiClientGenomics.AnonAccesstokenAltBearertokenCallbackFieldsKeyOauthtoken
-import typings.gapiClientGenomics.AnonAccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPp
+import typings.gapiClientGenomics.AnonPp
+import typings.gapiClientGenomics.AnonPrettyPrint
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +17,7 @@ trait ReadgroupsetsResource extends js.Object {
     * [Fundamentals of Google
     * Genomics](https://cloud.google.com/genomics/fundamentals-of-google-genomics)
     */
-  def delete(request: AnonAccesstokenAltBearertokenCallbackFieldsKeyOauthtoken): Request_[js.Object]
+  def delete(request: AnonPp): Request_[js.Object]
   /**
     * Exports a read group set to a BAM file in Google Cloud Storage.
     *
@@ -30,7 +30,7 @@ trait ReadgroupsetsResource extends js.Object {
     * ImportReadGroupSets
     * for caveats.
     */
-  def export(request: AnonAccesstokenAltBearertokenCallbackFieldsKeyOauthtoken): Request_[Operation]
+  def export(request: AnonPp): Request_[Operation]
   /**
     * Gets a read group set by ID.
     *
@@ -38,7 +38,7 @@ trait ReadgroupsetsResource extends js.Object {
     * [Fundamentals of Google
     * Genomics](https://cloud.google.com/genomics/fundamentals-of-google-genomics)
     */
-  def get(request: AnonAccesstokenAltBearertokenCallbackFieldsKeyOauthtoken): Request_[ReadGroupSet]
+  def get(request: AnonPp): Request_[ReadGroupSet]
   /**
     * Creates read group sets by asynchronously importing the provided
     * information.
@@ -69,7 +69,7 @@ trait ReadgroupsetsResource extends js.Object {
     *
     * This method supports patch semantics.
     */
-  def patch(request: AnonAccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPp): Request_[ReadGroupSet]
+  def patch(request: AnonPrettyPrint): Request_[ReadGroupSet]
   /**
     * Searches for read group sets matching the criteria.
     *
@@ -87,11 +87,11 @@ object ReadgroupsetsResource {
   @scala.inline
   def apply(
     coveragebuckets: CoveragebucketsResource,
-    delete: AnonAccesstokenAltBearertokenCallbackFieldsKeyOauthtoken => Request_[js.Object],
-    export: AnonAccesstokenAltBearertokenCallbackFieldsKeyOauthtoken => Request_[Operation],
-    get: AnonAccesstokenAltBearertokenCallbackFieldsKeyOauthtoken => Request_[ReadGroupSet],
+    delete: AnonPp => Request_[js.Object],
+    export: AnonPp => Request_[Operation],
+    get: AnonPp => Request_[ReadGroupSet],
     `import`: AnonAccesstoken => Request_[Operation],
-    patch: AnonAccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPp => Request_[ReadGroupSet],
+    patch: AnonPrettyPrint => Request_[ReadGroupSet],
     search: AnonAccesstoken => Request_[SearchReadGroupSetsResponse]
   ): ReadgroupsetsResource = {
     val __obj = js.Dynamic.literal(coveragebuckets = coveragebuckets.asInstanceOf[js.Any], delete = js.Any.fromFunction1(delete), export = js.Any.fromFunction1(export), get = js.Any.fromFunction1(get), patch = js.Any.fromFunction1(patch), search = js.Any.fromFunction1(search))

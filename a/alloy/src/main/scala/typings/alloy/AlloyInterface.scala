@@ -12,7 +12,7 @@ trait AlloyInterface extends js.Object {
   /**
     * An object for storing globally accessible Alloy collections. Singleton collections created via markup will be stored on this object.
     */
-  var Collections: AnonInstance = js.native
+  var Collections: AnonDictk = js.native
   /**
     * An object for storing globally accessible Alloy models. Singleton models created via markup will be stored on this object.
     */

@@ -1,5 +1,7 @@
 package typings.plotlyJs.mod
 
+import typings.plotlyJs.PartialFont
+import typings.plotlyJs.PartialHoverLabel
 import typings.plotlyJs.plotlyJsBooleans.`false`
 import typings.plotlyJs.plotlyJsStrings.auto
 import typings.plotlyJs.plotlyJsStrings.bottom
@@ -16,7 +18,6 @@ import typings.plotlyJs.plotlyJsStrings.start
 import typings.plotlyJs.plotlyJsStrings.top
 import typings.plotlyJs.plotlyJsStrings.x
 import typings.plotlyJs.plotlyJsStrings.y
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -106,7 +107,7 @@ trait Annotations extends Label {
   	 * text set the box height. Taller text will be clipped.
   	 */
   var height: Double
-  var hoverlabel: Partial[HoverLabel]
+  var hoverlabel: PartialHoverLabel
   /**
   	 * Sets text to appear when hovering over this annotation.
   	 * If omitted or blank, no hover label will appear.
@@ -260,9 +261,9 @@ object Annotations {
     borderwidth: Double,
     captureevents: Boolean,
     clicktoshow: `false` | onoff | onout,
-    font: Partial[Font],
+    font: PartialFont,
     height: Double,
-    hoverlabel: Partial[HoverLabel],
+    hoverlabel: PartialHoverLabel,
     hovertext: String,
     opacity: Double,
     showarrow: Boolean,

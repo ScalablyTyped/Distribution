@@ -30,7 +30,7 @@ object htmlMod extends js.Object {
     var className: js.Any = js.native
     var element: js.Any = js.native
     /* private */ def createHtmlLinePen(textBlock: js.Any): js.Any = js.native
-    def createPen(text: String, transform: ITransform, element: Element): AnonLine = js.native
+    def createPen(text: String, transform: ITransform, element: Element): AnonWrite = js.native
     def setAddTitle(addTitle: Boolean): Unit = js.native
   }
   

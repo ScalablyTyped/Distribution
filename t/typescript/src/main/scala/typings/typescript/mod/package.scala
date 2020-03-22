@@ -149,7 +149,6 @@ package object mod {
   type ModifiersArray = typings.typescript.mod.NodeArray[typings.typescript.mod.Modifier]
   type MultiplicativeOperatorOrHigher = typings.typescript.mod.ExponentiationOperator | typings.typescript.mod.MultiplicativeOperator
   type OrganizeImportsScope = typings.typescript.mod.CombinedCodeFixScope
-  type ParameterPropertyDeclaration = typings.typescript.mod.ParameterDeclaration with typings.typescript.AnonName
   type Path = java.lang.String with typings.typescript.AnonPathBrand
   type PlusToken = typings.typescript.mod.Token[typings.typescript.mod.SyntaxKind.PlusToken]
   type QuestionDotToken = typings.typescript.mod.Token[typings.typescript.mod.SyntaxKind.QuestionDotToken]

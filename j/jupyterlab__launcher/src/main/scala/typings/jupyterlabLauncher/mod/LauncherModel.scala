@@ -2,8 +2,8 @@ package typings.jupyterlabLauncher.mod
 
 import typings.jupyterlabApputils.vdomMod.VDomModel
 import typings.jupyterlabLauncher.mod.ILauncher.IItemOptions
-import typings.phosphorAlgorithm.iterMod.IIterator
-import typings.phosphorDisposable.mod.IDisposable
+import typings.luminoAlgorithm.iterMod.IIterator
+import typings.luminoDisposable.mod.IDisposable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

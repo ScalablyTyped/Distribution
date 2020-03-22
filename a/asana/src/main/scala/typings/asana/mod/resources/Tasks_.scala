@@ -1,6 +1,6 @@
 package typings.asana.mod.resources
 
-import typings.asana.AnonWorkspaceString
+import typings.asana.CreateParamsworkspacestri
 import typings.asana.mod.resources.Stories.Type
 import typings.asana.mod.resources.Tasks.AddProjectParams
 import typings.asana.mod.resources.Tasks.CommentParams
@@ -137,8 +137,8 @@ trait Tasks_ extends Resource {
     * @param dispatchOptions?
     * @return
     */
-  def create(data: CreateParams with AnonWorkspaceString): typings.bluebird.mod.^[typings.asana.mod.resources.Tasks.Type] = js.native
-  def create(data: CreateParams with AnonWorkspaceString, dispatchOptions: js.Any): typings.bluebird.mod.^[typings.asana.mod.resources.Tasks.Type] = js.native
+  def create(data: CreateParamsworkspacestri): typings.bluebird.mod.^[typings.asana.mod.resources.Tasks.Type] = js.native
+  def create(data: CreateParamsworkspacestri, dispatchOptions: js.Any): typings.bluebird.mod.^[typings.asana.mod.resources.Tasks.Type] = js.native
   /**
     * * Creating a new task is as easy as POSTing to the `/tasks` endpoint
     * * with a data block containing the fields you'd like to set on the task.

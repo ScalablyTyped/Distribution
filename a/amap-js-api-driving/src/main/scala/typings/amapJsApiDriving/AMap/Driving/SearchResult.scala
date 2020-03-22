@@ -2,6 +2,7 @@ package typings.amapJsApiDriving.AMap.Driving
 
 import typings.amapJsApi.AMap.LngLat
 import typings.amapJsApiDriving.AnonIsWaypoint
+import typings.amapJsApiDriving.PoiisWaypointboolean
 import typings.amapJsApiPlaceSearch.AMap.PlaceSearch.PoiExt
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -22,7 +23,7 @@ object SearchResult {
     origin: LngLat,
     routes: js.Array[DriveRoute],
     start: Poi,
-    waypoints: js.Array[Poi with AnonIsWaypoint],
+    waypoints: js.Array[PoiisWaypointboolean],
     taxi_cost: Int | Double = null
   ): SearchResult = {
     val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], waypoints = waypoints.asInstanceOf[js.Any])

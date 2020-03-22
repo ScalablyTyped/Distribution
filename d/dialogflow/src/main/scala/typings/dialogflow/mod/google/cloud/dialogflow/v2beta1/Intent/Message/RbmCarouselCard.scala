@@ -25,7 +25,7 @@ class RbmCarouselCard () extends IRbmCarouselCard {
   var cardContents_RbmCarouselCard: js.Array[IRbmCardContent] = js.native
   /** RbmCarouselCard cardWidth. */
   @JSName("cardWidth")
-  var cardWidth_RbmCarouselCard: CardWidth = js.native
+  var cardWidth_RbmCarouselCard: CardWidth | String = js.native
   /**
     * Converts this RbmCarouselCard to JSON.
     * @returns JSON object

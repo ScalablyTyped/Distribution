@@ -6,52 +6,41 @@ import scala.scalajs.js.annotation._
 
 trait AnonLengthLineStyle extends js.Object {
   /**
-    * The length of tick line, can be a pecentage value relative
+    * The length of split line, can be a pecentage value relative
     * to radius.
     *
     *
     * @default
-    * 8
-    * @see https://echarts.apache.org/en/option.html#series-gauge.axisTick.length
+    * 30
+    * @see https://echarts.apache.org/en/option.html#series-gauge.splitLine.length
     */
   var length: js.UndefOr[Double | String] = js.undefined
   /**
-    * @see https://echarts.apache.org/en/option.html#series-gauge.axisTick.lineStyle
+    * @see https://echarts.apache.org/en/option.html#series-gauge.splitLine.lineStyle
     */
-  var lineStyle: js.UndefOr[AnonColorOpacityShadowBlur] = js.undefined
+  var lineStyle: js.UndefOr[AnonShadowBlur] = js.undefined
   /**
-    * Whether to show the scale.
+    * Whether to show the split line.
     *
     *
     * @default
     * "true"
-    * @see https://echarts.apache.org/en/option.html#series-gauge.axisTick.show
+    * @see https://echarts.apache.org/en/option.html#series-gauge.splitLine.show
     */
   var show: js.UndefOr[Boolean] = js.undefined
-  /**
-    * The split scale number between split line.
-    *
-    *
-    * @default
-    * 5
-    * @see https://echarts.apache.org/en/option.html#series-gauge.axisTick.splitNumber
-    */
-  var splitNumber: js.UndefOr[Double] = js.undefined
 }
 
 object AnonLengthLineStyle {
   @scala.inline
   def apply(
     length: Double | String = null,
-    lineStyle: AnonColorOpacityShadowBlur = null,
-    show: js.UndefOr[Boolean] = js.undefined,
-    splitNumber: Int | Double = null
+    lineStyle: AnonShadowBlur = null,
+    show: js.UndefOr[Boolean] = js.undefined
   ): AnonLengthLineStyle = {
     val __obj = js.Dynamic.literal()
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
     if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle.asInstanceOf[js.Any])
     if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
-    if (splitNumber != null) __obj.updateDynamic("splitNumber")(splitNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnonLengthLineStyle]
   }
 }

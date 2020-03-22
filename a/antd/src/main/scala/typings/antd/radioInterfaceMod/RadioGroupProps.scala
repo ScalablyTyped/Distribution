@@ -1,10 +1,8 @@
 package typings.antd.radioInterfaceMod
 
-import typings.antd.antdStrings.default
-import typings.antd.antdStrings.large
-import typings.antd.antdStrings.small
 import typings.antd.groupMod.AbstractCheckboxGroupProps
 import typings.antd.groupMod.CheckboxOptionType
+import typings.antd.sizeContextMod.SizeType
 import typings.react.mod.CSSProperties
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
@@ -24,7 +22,7 @@ trait RadioGroupProps extends AbstractCheckboxGroupProps {
   var onChange: js.UndefOr[js.Function1[/* e */ RadioChangeEvent, Unit]] = js.undefined
   var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
   var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
-  var size: js.UndefOr[large | default | small] = js.undefined
+  var size: js.UndefOr[SizeType] = js.undefined
   var value: js.UndefOr[js.Any] = js.undefined
 }
 
@@ -43,7 +41,7 @@ object RadioGroupProps {
     onMouseLeave: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit = null,
     options: js.Array[CheckboxOptionType | String] = null,
     prefixCls: String = null,
-    size: large | default | small = null,
+    size: SizeType = null,
     style: CSSProperties = null,
     value: js.Any = null
   ): RadioGroupProps = {

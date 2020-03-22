@@ -1,7 +1,7 @@
 package typings.reactDates.mod
 
 import typings.react.mod._Global_.JSX.Element
-import typings.reactDates.AnonCurrentMonth
+import typings.reactDates.AnonIsVisible
 import typings.reactDates.mod.momentPropTypes.momentObj
 import typings.reactDates.reactDatesNumbers.`0`
 import typings.reactDates.reactDatesNumbers.`1`
@@ -41,7 +41,7 @@ trait DayPickerShape extends js.Object {
   var renderCalendarDay: js.UndefOr[js.Function1[/* day */ momentObj, String | Element]] = js.undefined
   var renderCalendarInfo: js.UndefOr[js.Function0[String | Element]] = js.undefined
   var renderDayContents: js.UndefOr[js.Function1[/* day */ momentObj, String | Element]] = js.undefined
-  var renderMonthElement: js.UndefOr[js.Function1[/* props */ AnonCurrentMonth, String | Element]] = js.undefined
+  var renderMonthElement: js.UndefOr[js.Function1[/* props */ AnonIsVisible, String | Element]] = js.undefined
   var renderMonthText: js.UndefOr[js.Function1[/* day */ momentObj, String | Element]] = js.undefined
   var showKeyboardShortcuts: js.UndefOr[Boolean] = js.undefined
   var transitionDuration: js.UndefOr[Double] = js.undefined
@@ -76,7 +76,7 @@ object DayPickerShape {
     renderCalendarDay: /* day */ momentObj => String | Element = null,
     renderCalendarInfo: () => String | Element = null,
     renderDayContents: /* day */ momentObj => String | Element = null,
-    renderMonthElement: /* props */ AnonCurrentMonth => String | Element = null,
+    renderMonthElement: /* props */ AnonIsVisible => String | Element = null,
     renderMonthText: /* day */ momentObj => String | Element = null,
     showKeyboardShortcuts: js.UndefOr[Boolean] = js.undefined,
     transitionDuration: Int | Double = null,

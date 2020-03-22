@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object gitignoreTemplatesMod extends js.Object {
   @js.native
-  class GitignoreTemplates () extends ResourceTemplates {
+  class GitignoreTemplates protected () extends ResourceTemplates {
     def this(options: BaseServiceOptions) = this()
   }
   

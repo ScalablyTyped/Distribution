@@ -13,16 +13,16 @@ import scala.scalajs.js.annotation._
 trait TypeofIntl extends js.Object {
   var CollatorCls: Instantiable0[typings.std.Intl.CollatorCls] = js.native
   @JSName("Collator")
-  var Collator_Original: AnonLocalesOptionsSupportedLocalesOfArray = js.native
+  var Collator_Original: AnonCallInstantiable = js.native
   var DateTimeFormatCls: Instantiable0[typings.std.Intl.DateTimeFormatCls] = js.native
   @JSName("DateTimeFormat")
-  var DateTimeFormat_Original: AnonLocales = js.native
+  var DateTimeFormat_Original: AnonCall = js.native
   var NumberFormatCls: Instantiable0[typings.std.Intl.NumberFormatCls] = js.native
   @JSName("NumberFormat")
-  var NumberFormat_Original: AnonLocalesOptions = js.native
+  var NumberFormat_Original: AnonInstantiable = js.native
   var PluralRulesCls: Instantiable0[typings.std.Intl.PluralRulesCls] = js.native
   @JSName("PluralRules")
-  val PluralRules_Original: AnonLocalesOptionsSupportedLocalesOf = js.native
+  val PluralRules_Original: AnonSupportedLocalesOf = js.native
   def Collator(): typings.std.Intl.Collator = js.native
   def Collator(locales: java.lang.String): typings.std.Intl.Collator = js.native
   def Collator(locales: java.lang.String, options: CollatorOptions): typings.std.Intl.Collator = js.native

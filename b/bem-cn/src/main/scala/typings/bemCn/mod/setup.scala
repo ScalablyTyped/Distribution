@@ -1,6 +1,6 @@
 package typings.bemCn.mod
 
-import typings.std.Partial
+import typings.bemCn.PartialBemSettings
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object setup extends js.Object {
   def apply(): BemCn = js.native
-  def apply(settings: Partial[BemSettings]): BemCn = js.native
+  def apply(settings: PartialBemSettings): BemCn = js.native
 }
 

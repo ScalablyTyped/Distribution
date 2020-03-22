@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 trait AnonPayloaduuidv4 extends js.Object {
   var payload_uuidv4: String
   var reference_call_uuidv4: String
-  var return_url: AnonAppWeb
+  var return_url: AnonWeb
   var signed: Boolean
   var user_token: Boolean
 }
@@ -17,7 +17,7 @@ object AnonPayloaduuidv4 {
   def apply(
     payload_uuidv4: String,
     reference_call_uuidv4: String,
-    return_url: AnonAppWeb,
+    return_url: AnonWeb,
     signed: Boolean,
     user_token: Boolean
   ): AnonPayloaduuidv4 = {

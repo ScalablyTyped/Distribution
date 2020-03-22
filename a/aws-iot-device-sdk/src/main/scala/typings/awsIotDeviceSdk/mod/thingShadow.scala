@@ -1,6 +1,6 @@
 package typings.awsIotDeviceSdk.mod
 
-import typings.awsIotDeviceSdk.Anon0
+import typings.awsIotDeviceSdk.AnonQos
 import typings.awsIotDeviceSdk.awsIotDeviceSdkStrings.accepted
 import typings.awsIotDeviceSdk.awsIotDeviceSdkStrings.close
 import typings.awsIotDeviceSdk.awsIotDeviceSdkStrings.connect
@@ -171,11 +171,11 @@ class thingShadow () extends EventEmitter {
     * @param callback fired on suback
     */
   def subscribe(topic: String): Client = js.native
-  def subscribe(topic: String, options: Anon0): Client = js.native
-  def subscribe(topic: String, options: Anon0, callback: ClientSubscribeCallback): Client = js.native
+  def subscribe(topic: String, options: AnonQos): Client = js.native
+  def subscribe(topic: String, options: AnonQos, callback: ClientSubscribeCallback): Client = js.native
   def subscribe(topic: js.Array[String]): Client = js.native
-  def subscribe(topic: js.Array[String], options: Anon0): Client = js.native
-  def subscribe(topic: js.Array[String], options: Anon0, callback: ClientSubscribeCallback): Client = js.native
+  def subscribe(topic: js.Array[String], options: AnonQos): Client = js.native
+  def subscribe(topic: js.Array[String], options: AnonQos, callback: ClientSubscribeCallback): Client = js.native
   /**
     * Unregister interest in the Thing Shadow named thingName.
     *

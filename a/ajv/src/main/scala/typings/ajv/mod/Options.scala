@@ -29,10 +29,11 @@ trait Options extends js.Object {
   var coerceTypes: js.UndefOr[Boolean | array] = js.native
   var errorDataPath: js.UndefOr[String] = js.native
   var extendRefs: js.UndefOr[`true` | ignore | fail] = js.native
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[`false` | String] = js.native
   var formats: js.UndefOr[js.Object] = js.native
   var inlineRefs: js.UndefOr[Boolean | Double] = js.native
   var jsonPointers: js.UndefOr[Boolean] = js.native
+  var keywords: js.UndefOr[js.Object] = js.native
   var loadSchema: js.UndefOr[
     js.Function2[
       /* uri */ String, 

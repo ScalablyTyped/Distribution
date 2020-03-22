@@ -1,6 +1,6 @@
 package typings.rdflib.mod
 
-import typings.rdflib.FnInit
+import typings.rdflib.FnCall
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +18,7 @@ trait FetchOptions extends js.Object {
     * Provided content type (for writes).
     */
   var contentType: js.UndefOr[String] = js.undefined
-  var fetch: js.UndefOr[FnInit] = js.undefined
+  var fetch: js.UndefOr[FnCall] = js.undefined
   /**
     * Load the data even if loaded before. Also sets the `Cache-Control:` header to `no-cache`.
     */
@@ -52,7 +52,7 @@ object FetchOptions {
     baseUri: Node | String = null,
     clearPreviousData: js.UndefOr[Boolean] = js.undefined,
     contentType: String = null,
-    fetch: FnInit = null,
+    fetch: FnCall = null,
     force: js.UndefOr[Boolean] = js.undefined,
     forceContentType: String = null,
     noMeta: js.UndefOr[Boolean] = js.undefined,

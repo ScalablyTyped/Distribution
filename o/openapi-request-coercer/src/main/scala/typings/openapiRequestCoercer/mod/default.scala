@@ -18,8 +18,6 @@ class default protected () extends OpenAPIRequestCoercer {
   /* CompleteClass */
   override var coerceQuery: js.Any = js.native
   /* CompleteClass */
-  override var enableObjectCoercion: js.Any = js.native
-  /* CompleteClass */
   override def coerce(request: js.Any): Unit = js.native
   /* CompleteClass */
   override def coerce(request: Request): Unit = js.native

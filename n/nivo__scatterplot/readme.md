@@ -1,7 +1,7 @@
 
 # Scala.js typings for nivo__scatterplot
 
-Typings are for version 0.59.3
+Typings are for version 0.61.1
 
 ## Library description:
 [![version](https://img.shields.io/npm/v/@nivo/scatterplot.svg?style=flat-square)](https://www.npmjs.com/package/@nivo/scatterplot)

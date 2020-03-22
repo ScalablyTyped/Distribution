@@ -863,13 +863,13 @@ object mod extends js.Object {
       T
     ]
   ] = js.native
-  def createSelectorCreator(memoize: js.Function1[/* func */ js.Function, js.Function]): FnCombiner = js.native
-  def createSelectorCreator[O1](memoize: js.Function2[/* func */ js.Function, /* option1 */ O1, js.Function], option1: O1): FnCombiner = js.native
+  def createSelectorCreator(memoize: js.Function1[/* func */ js.Function, js.Function]): FnCall = js.native
+  def createSelectorCreator[O1](memoize: js.Function2[/* func */ js.Function, /* option1 */ O1, js.Function], option1: O1): FnCall = js.native
   def createSelectorCreator[O1, O2](
     memoize: js.Function3[/* func */ js.Function, /* option1 */ O1, /* option2 */ O2, js.Function],
     option1: O1,
     option2: O2
-  ): FnCombiner = js.native
+  ): FnCall = js.native
   def createSelectorCreator[O1, O2, O3](
     memoize: js.Function5[
       /* func */ js.Function, 
@@ -883,7 +883,7 @@ object mod extends js.Object {
     option2: O2,
     option3: O3,
     rest: js.Any*
-  ): FnCombiner = js.native
+  ): FnCall = js.native
   @JSName("createSelector")
   def createSelector_S1P1R1T[S1, P1, R1, T](selector1: ParametricSelector[S1, P1, R1], combiner: js.Function1[/* res1 */ R1, T]): OutputParametricSelector[S1, P1, T, js.Function1[/* res1 */ R1, T]] = js.native
   @JSName("createSelector")
@@ -2456,7 +2456,7 @@ object mod extends js.Object {
     selectors: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]: reselect.reselect.Selector<S, T[K]>}
     */ typings.reselect.reselectStrings.createStructuredSelector with T,
-    selectorCreator: FnCombiner
+    selectorCreator: FnCall
   ): Selector[S, T] = js.native
   @JSName("createStructuredSelector")
   def createStructuredSelector_SPT_ParametricSelector[S, P, T](
@@ -2469,7 +2469,7 @@ object mod extends js.Object {
     selectors: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]: reselect.reselect.ParametricSelector<S, P, T[K]>}
     */ createStructuredSelector with T,
-    selectorCreator: FnCombiner
+    selectorCreator: FnCall
   ): ParametricSelector[S, P, T] = js.native
   def defaultMemoize[F /* <: js.Function */](func: F): F = js.native
   def defaultMemoize[F /* <: js.Function */](func: F, equalityCheck: js.Function3[/* a */ js.Any, /* b */ js.Any, /* index */ Double, Boolean]): F = js.native

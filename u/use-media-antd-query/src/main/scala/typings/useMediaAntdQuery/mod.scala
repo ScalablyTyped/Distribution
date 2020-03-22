@@ -17,12 +17,12 @@ object mod extends js.Object {
   def getScreenClassName(): xs | sm | md | lg | xl | xxl = js.native
   @js.native
   object MediaQueryEnum extends js.Object {
-    var lg: AnonMatchMediaMaxWidth = js.native
-    var md: AnonMatchMediaMaxWidth = js.native
-    var sm: AnonMatchMediaMaxWidth = js.native
-    var xl: AnonMatchMediaMaxWidth = js.native
+    var lg: AnonMaxWidth = js.native
+    var md: AnonMaxWidth = js.native
+    var sm: AnonMaxWidth = js.native
+    var xl: AnonMaxWidth = js.native
     var xs: AnonMatchMedia = js.native
-    var xxl: AnonMatchMediaMinWidth = js.native
+    var xxl: AnonMinWidth = js.native
   }
   
   type MediaQueryKey = String

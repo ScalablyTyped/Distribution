@@ -1,8 +1,6 @@
 package typings.wegameApi.wx
 
-import typings.wegameApi.AnonErrCodeErrMsg
-import typings.wegameApi.AnonGroupId
-import typings.wegameApi.wx.types.CallbacksWithType
+import typings.wegameApi.CallbacksWithTypeopenIdLi
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,6 +17,6 @@ object joinVoIPChat extends js.Object {
     *    -1000 系统错误
     * @param param 加入语音聊天时的初始化参数
     */
-  def apply(param: CallbacksWithType[AnonErrCodeErrMsg] with AnonGroupId): Unit = js.native
+  def apply(param: CallbacksWithTypeopenIdLi): Unit = js.native
 }
 

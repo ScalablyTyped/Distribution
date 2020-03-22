@@ -21,6 +21,7 @@ trait Runtime extends js.Object {
   var _environment: js.Any = js.native
   var _execModule: js.Any = js.native
   var _explicitShouldMock: js.Any = js.native
+  var _fileTransforms: js.Any = js.native
   var _generateMock: js.Any = js.native
   var _getFullTransformationOptions: js.Any = js.native
   var _internalModuleRegistry: js.Any = js.native
@@ -48,9 +49,16 @@ trait Runtime extends js.Object {
   var _sourceMapRegistry: js.Any = js.native
   var _transitiveShouldMock: js.Any = js.native
   var _unmockList: js.Any = js.native
+  var _v8CoverageInstrumenter: js.Any = js.native
+  var _v8CoverageResult: js.Any = js.native
   var _virtualMocks: js.Any = js.native
+  var constructInjectedModuleParameters: js.Any = js.native
+  var createScriptFromCode: js.Any = js.native
+  var wrapCodeInModuleWrapper: js.Any = js.native
   def clearAllMocks(): Unit = js.native
+  def collectV8Coverage(): js.Promise[Unit] = js.native
   def getAllCoverageInfoCopy(): CoverageMapData = js.native
+  def getAllV8CoverageInfoCopy(): js.Any = js.native
   def getSourceMapInfo(coveredFiles: Set[String]): StringDictionary[String] = js.native
   def getSourceMaps(): SourceMapRegistry = js.native
   def isolateModules(fn: js.Function0[Unit]): Unit = js.native
@@ -68,5 +76,6 @@ trait Runtime extends js.Object {
   def restoreAllMocks(): Unit = js.native
   def setMock(from: String, moduleName: String, mockFactory: js.Function0[_]): Unit = js.native
   def setMock(from: String, moduleName: String, mockFactory: js.Function0[_], options: AnonVirtual): Unit = js.native
+  def stopCollectingV8Coverage(): js.Promise[Unit] = js.native
 }
 

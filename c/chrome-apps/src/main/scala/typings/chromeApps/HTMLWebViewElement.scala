@@ -84,7 +84,6 @@ import typings.chromeApps.chromeAppsStrings.loadabort
 import typings.chromeApps.chromeAppsStrings.loadcommit
 import typings.chromeApps.chromeAppsStrings.loadeddata
 import typings.chromeApps.chromeAppsStrings.loadedmetadata
-import typings.chromeApps.chromeAppsStrings.loadend
 import typings.chromeApps.chromeAppsStrings.loadredirect
 import typings.chromeApps.chromeAppsStrings.loadstart
 import typings.chromeApps.chromeAppsStrings.loadstop
@@ -1128,23 +1127,6 @@ class HTMLWebViewElement () extends HTMLElement {
   def addEventListener_loadedmetadata(
     `type`: loadedmetadata,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event_, _],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_loadend(
-    `type`: loadend,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent[EventTarget], _]
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_loadend(
-    `type`: loadend,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent[EventTarget], _],
-    options: Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_loadend(
-    `type`: loadend,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent[EventTarget], _],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
@@ -2895,23 +2877,6 @@ class HTMLWebViewElement () extends HTMLElement {
   def removeEventListener_loadedmetadata(
     `type`: loadedmetadata,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event_, _],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_loadend(
-    `type`: loadend,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent[EventTarget], _]
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_loadend(
-    `type`: loadend,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent[EventTarget], _],
-    options: Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_loadend(
-    `type`: loadend,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent[EventTarget], _],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")

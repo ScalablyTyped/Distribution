@@ -5,14 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonRowIndex extends js.Object {
-  var rowIndex: Double
+  var columnIndex: js.UndefOr[Double] = js.undefined
+  var rowIndex: js.UndefOr[Double] = js.undefined
 }
 
 object AnonRowIndex {
   @scala.inline
-  def apply(rowIndex: Double): AnonRowIndex = {
-    val __obj = js.Dynamic.literal(rowIndex = rowIndex.asInstanceOf[js.Any])
-  
+  def apply(columnIndex: Int | Double = null, rowIndex: Int | Double = null): AnonRowIndex = {
+    val __obj = js.Dynamic.literal()
+    if (columnIndex != null) __obj.updateDynamic("columnIndex")(columnIndex.asInstanceOf[js.Any])
+    if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnonRowIndex]
   }
 }

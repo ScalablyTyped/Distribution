@@ -1,5 +1,27 @@
 package typings.iabVpaid.iab.vpaid
 
+import typings.iabVpaid.iabVpaidStrings.AdDurationChange
+import typings.iabVpaid.iabVpaidStrings.AdExpandedChange
+import typings.iabVpaid.iabVpaidStrings.AdImpression
+import typings.iabVpaid.iabVpaidStrings.AdLinearChange
+import typings.iabVpaid.iabVpaidStrings.AdLoaded
+import typings.iabVpaid.iabVpaidStrings.AdPaused
+import typings.iabVpaid.iabVpaidStrings.AdPlaying
+import typings.iabVpaid.iabVpaidStrings.AdRemainingTimeChange
+import typings.iabVpaid.iabVpaidStrings.AdSizeChange
+import typings.iabVpaid.iabVpaidStrings.AdSkippableStateChange
+import typings.iabVpaid.iabVpaidStrings.AdSkipped
+import typings.iabVpaid.iabVpaidStrings.AdStarted
+import typings.iabVpaid.iabVpaidStrings.AdStopped
+import typings.iabVpaid.iabVpaidStrings.AdUserAcceptInvitation
+import typings.iabVpaid.iabVpaidStrings.AdUserClose
+import typings.iabVpaid.iabVpaidStrings.AdUserMinimize
+import typings.iabVpaid.iabVpaidStrings.AdVideoComplete
+import typings.iabVpaid.iabVpaidStrings.AdVideoFirstQuartile
+import typings.iabVpaid.iabVpaidStrings.AdVideoMidPoint
+import typings.iabVpaid.iabVpaidStrings.AdVideoStart
+import typings.iabVpaid.iabVpaidStrings.AdVideoThirdQuartile
+import typings.iabVpaid.iabVpaidStrings.AdVolumeChange
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -390,6 +412,54 @@ trait VpaidCreative extends js.Object {
     * "Error Handling and Timeouts" for more information on error reporting and timeouts.
     */
   def stopAd(): Unit = js.native
+  @JSName("subscribe")
+  def subscribe_AdDurationChange(fn: js.Function0[Unit], event: AdDurationChange): Unit = js.native
+  @JSName("subscribe")
+  def subscribe_AdDurationChange(fn: js.Function0[Unit], event: AdDurationChange, listenerScope: js.Object): Unit = js.native
+  @JSName("subscribe")
+  def subscribe_AdExpandedChange(fn: js.Function0[Unit], event: AdExpandedChange): Unit = js.native
+  @JSName("subscribe")
+  def subscribe_AdExpandedChange(fn: js.Function0[Unit], event: AdExpandedChange, listenerScope: js.Object): Unit = js.native
+  @JSName("subscribe")
+  def subscribe_AdImpression(fn: js.Function0[Unit], event: AdImpression): Unit = js.native
+  @JSName("subscribe")
+  def subscribe_AdImpression(fn: js.Function0[Unit], event: AdImpression, listenerScope: js.Object): Unit = js.native
+  @JSName("subscribe")
+  def subscribe_AdLinearChange(fn: js.Function0[Unit], event: AdLinearChange): Unit = js.native
+  @JSName("subscribe")
+  def subscribe_AdLinearChange(fn: js.Function0[Unit], event: AdLinearChange, listenerScope: js.Object): Unit = js.native
+  @JSName("subscribe")
+  def subscribe_AdLoaded(fn: js.Function0[Unit], event: AdLoaded): Unit = js.native
+  @JSName("subscribe")
+  def subscribe_AdLoaded(fn: js.Function0[Unit], event: AdLoaded, listenerScope: js.Object): Unit = js.native
+  @JSName("subscribe")
+  def subscribe_AdPaused(fn: js.Function0[Unit], event: AdPaused): Unit = js.native
+  @JSName("subscribe")
+  def subscribe_AdPaused(fn: js.Function0[Unit], event: AdPaused, listenerScope: js.Object): Unit = js.native
+  @JSName("subscribe")
+  def subscribe_AdPlaying(fn: js.Function0[Unit], event: AdPlaying): Unit = js.native
+  @JSName("subscribe")
+  def subscribe_AdPlaying(fn: js.Function0[Unit], event: AdPlaying, listenerScope: js.Object): Unit = js.native
+  @JSName("subscribe")
+  def subscribe_AdRemainingTimeChange(fn: js.Function0[Unit], event: AdRemainingTimeChange): Unit = js.native
+  @JSName("subscribe")
+  def subscribe_AdRemainingTimeChange(fn: js.Function0[Unit], event: AdRemainingTimeChange, listenerScope: js.Object): Unit = js.native
+  @JSName("subscribe")
+  def subscribe_AdSizeChange(fn: js.Function0[Unit], event: AdSizeChange): Unit = js.native
+  @JSName("subscribe")
+  def subscribe_AdSizeChange(fn: js.Function0[Unit], event: AdSizeChange, listenerScope: js.Object): Unit = js.native
+  @JSName("subscribe")
+  def subscribe_AdSkippableStateChange(fn: js.Function0[Unit], event: AdSkippableStateChange): Unit = js.native
+  @JSName("subscribe")
+  def subscribe_AdSkippableStateChange(fn: js.Function0[Unit], event: AdSkippableStateChange, listenerScope: js.Object): Unit = js.native
+  @JSName("subscribe")
+  def subscribe_AdSkipped(fn: js.Function0[Unit], event: AdSkipped): Unit = js.native
+  @JSName("subscribe")
+  def subscribe_AdSkipped(fn: js.Function0[Unit], event: AdSkipped, listenerScope: js.Object): Unit = js.native
+  @JSName("subscribe")
+  def subscribe_AdStarted(fn: js.Function0[Unit], event: AdStarted): Unit = js.native
+  @JSName("subscribe")
+  def subscribe_AdStarted(fn: js.Function0[Unit], event: AdStarted, listenerScope: js.Object): Unit = js.native
   /**
     * The video player calls this method to register a listener to a particular event
     *
@@ -397,24 +467,95 @@ trait VpaidCreative extends js.Object {
     * @param event is the name of the event that the video player is subscribing to
     * @param listenerScope [optional] is a reference to the object in which the function is defined
     */
-  def subscribe[E /* <: String */](
-    fn: /* import warning: importer.ImportType#apply Failed type conversion: iab-vpaid.iab.vpaid.EventsMap[E] */ js.Any,
-    event: E
-  ): Unit = js.native
-  def subscribe[E /* <: String */](
-    fn: /* import warning: importer.ImportType#apply Failed type conversion: iab-vpaid.iab.vpaid.EventsMap[E] */ js.Any,
-    event: E,
-    listenerScope: js.Object
-  ): Unit = js.native
+  @JSName("subscribe")
+  def subscribe_AdStopped(fn: js.Function0[Unit], event: AdStopped): Unit = js.native
+  @JSName("subscribe")
+  def subscribe_AdStopped(fn: js.Function0[Unit], event: AdStopped, listenerScope: js.Object): Unit = js.native
+  @JSName("subscribe")
+  def subscribe_AdUserAcceptInvitation(fn: js.Function0[Unit], event: AdUserAcceptInvitation): Unit = js.native
+  @JSName("subscribe")
+  def subscribe_AdUserAcceptInvitation(fn: js.Function0[Unit], event: AdUserAcceptInvitation, listenerScope: js.Object): Unit = js.native
+  @JSName("subscribe")
+  def subscribe_AdUserClose(fn: js.Function0[Unit], event: AdUserClose): Unit = js.native
+  @JSName("subscribe")
+  def subscribe_AdUserClose(fn: js.Function0[Unit], event: AdUserClose, listenerScope: js.Object): Unit = js.native
+  @JSName("subscribe")
+  def subscribe_AdUserMinimize(fn: js.Function0[Unit], event: AdUserMinimize): Unit = js.native
+  @JSName("subscribe")
+  def subscribe_AdUserMinimize(fn: js.Function0[Unit], event: AdUserMinimize, listenerScope: js.Object): Unit = js.native
+  @JSName("subscribe")
+  def subscribe_AdVideoComplete(fn: js.Function0[Unit], event: AdVideoComplete): Unit = js.native
+  @JSName("subscribe")
+  def subscribe_AdVideoComplete(fn: js.Function0[Unit], event: AdVideoComplete, listenerScope: js.Object): Unit = js.native
+  @JSName("subscribe")
+  def subscribe_AdVideoFirstQuartile(fn: js.Function0[Unit], event: AdVideoFirstQuartile): Unit = js.native
+  @JSName("subscribe")
+  def subscribe_AdVideoFirstQuartile(fn: js.Function0[Unit], event: AdVideoFirstQuartile, listenerScope: js.Object): Unit = js.native
+  @JSName("subscribe")
+  def subscribe_AdVideoMidPoint(fn: js.Function0[Unit], event: AdVideoMidPoint): Unit = js.native
+  @JSName("subscribe")
+  def subscribe_AdVideoMidPoint(fn: js.Function0[Unit], event: AdVideoMidPoint, listenerScope: js.Object): Unit = js.native
+  @JSName("subscribe")
+  def subscribe_AdVideoStart(fn: js.Function0[Unit], event: AdVideoStart): Unit = js.native
+  @JSName("subscribe")
+  def subscribe_AdVideoStart(fn: js.Function0[Unit], event: AdVideoStart, listenerScope: js.Object): Unit = js.native
+  @JSName("subscribe")
+  def subscribe_AdVideoThirdQuartile(fn: js.Function0[Unit], event: AdVideoThirdQuartile): Unit = js.native
+  @JSName("subscribe")
+  def subscribe_AdVideoThirdQuartile(fn: js.Function0[Unit], event: AdVideoThirdQuartile, listenerScope: js.Object): Unit = js.native
+  @JSName("subscribe")
+  def subscribe_AdVolumeChange(fn: js.Function0[Unit], event: AdVolumeChange): Unit = js.native
+  @JSName("subscribe")
+  def subscribe_AdVolumeChange(fn: js.Function0[Unit], event: AdVolumeChange, listenerScope: js.Object): Unit = js.native
+  @JSName("unsubscribe")
+  def unsubscribe_AdDurationChange(fn: js.Function0[Unit], event: AdDurationChange): Unit = js.native
+  @JSName("unsubscribe")
+  def unsubscribe_AdExpandedChange(fn: js.Function0[Unit], event: AdExpandedChange): Unit = js.native
+  @JSName("unsubscribe")
+  def unsubscribe_AdImpression(fn: js.Function0[Unit], event: AdImpression): Unit = js.native
+  @JSName("unsubscribe")
+  def unsubscribe_AdLinearChange(fn: js.Function0[Unit], event: AdLinearChange): Unit = js.native
+  @JSName("unsubscribe")
+  def unsubscribe_AdLoaded(fn: js.Function0[Unit], event: AdLoaded): Unit = js.native
+  @JSName("unsubscribe")
+  def unsubscribe_AdPaused(fn: js.Function0[Unit], event: AdPaused): Unit = js.native
+  @JSName("unsubscribe")
+  def unsubscribe_AdPlaying(fn: js.Function0[Unit], event: AdPlaying): Unit = js.native
+  @JSName("unsubscribe")
+  def unsubscribe_AdRemainingTimeChange(fn: js.Function0[Unit], event: AdRemainingTimeChange): Unit = js.native
+  @JSName("unsubscribe")
+  def unsubscribe_AdSizeChange(fn: js.Function0[Unit], event: AdSizeChange): Unit = js.native
+  @JSName("unsubscribe")
+  def unsubscribe_AdSkippableStateChange(fn: js.Function0[Unit], event: AdSkippableStateChange): Unit = js.native
+  @JSName("unsubscribe")
+  def unsubscribe_AdSkipped(fn: js.Function0[Unit], event: AdSkipped): Unit = js.native
+  @JSName("unsubscribe")
+  def unsubscribe_AdStarted(fn: js.Function0[Unit], event: AdStarted): Unit = js.native
   /**
     * The video player calls this method to remove a listener for a particular event
     *
     * @param event is the name of the event that the video player is unsubscribing from
     * @param fn is the event listener that is being removed
     */
-  def unsubscribe[E /* <: String */](
-    fn: /* import warning: importer.ImportType#apply Failed type conversion: iab-vpaid.iab.vpaid.EventsMap[E] */ js.Any,
-    event: E
-  ): Unit = js.native
+  @JSName("unsubscribe")
+  def unsubscribe_AdStopped(fn: js.Function0[Unit], event: AdStopped): Unit = js.native
+  @JSName("unsubscribe")
+  def unsubscribe_AdUserAcceptInvitation(fn: js.Function0[Unit], event: AdUserAcceptInvitation): Unit = js.native
+  @JSName("unsubscribe")
+  def unsubscribe_AdUserClose(fn: js.Function0[Unit], event: AdUserClose): Unit = js.native
+  @JSName("unsubscribe")
+  def unsubscribe_AdUserMinimize(fn: js.Function0[Unit], event: AdUserMinimize): Unit = js.native
+  @JSName("unsubscribe")
+  def unsubscribe_AdVideoComplete(fn: js.Function0[Unit], event: AdVideoComplete): Unit = js.native
+  @JSName("unsubscribe")
+  def unsubscribe_AdVideoFirstQuartile(fn: js.Function0[Unit], event: AdVideoFirstQuartile): Unit = js.native
+  @JSName("unsubscribe")
+  def unsubscribe_AdVideoMidPoint(fn: js.Function0[Unit], event: AdVideoMidPoint): Unit = js.native
+  @JSName("unsubscribe")
+  def unsubscribe_AdVideoStart(fn: js.Function0[Unit], event: AdVideoStart): Unit = js.native
+  @JSName("unsubscribe")
+  def unsubscribe_AdVideoThirdQuartile(fn: js.Function0[Unit], event: AdVideoThirdQuartile): Unit = js.native
+  @JSName("unsubscribe")
+  def unsubscribe_AdVolumeChange(fn: js.Function0[Unit], event: AdVolumeChange): Unit = js.native
 }
 

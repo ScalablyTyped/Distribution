@@ -9,7 +9,7 @@ trait _Encode[T] extends js.Object
 
 object _Encode {
   @scala.inline
-  def AnonDate[T](__type: Date, iso: String): _Encode[T] = {
+  def AnonIso[T](__type: Date, iso: String): _Encode[T] = {
     val __obj = js.Dynamic.literal(__type = __type.asInstanceOf[js.Any], iso = iso.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_Encode[T]]

@@ -1,9 +1,9 @@
 package typings.firebaseFirestore.databaseMod
 
 import org.scalablytyped.runtime.Instantiable2
-import typings.firebaseAppTypes.mod.FirebaseApp
 import typings.firebaseAuthInteropTypes.mod.FirebaseAuthInternalName
 import typings.firebaseComponent.mod.Provider
+import typings.firebaseFirestore.mod.FirebaseApp
 import typings.firebaseFirestoreTypes.mod.LogLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,8 +12,8 @@ import scala.scalajs.js.annotation._
 @JSImport("@firebase/firestore/dist/lib/src/api/database", "PublicFirestore")
 @js.native
 class PublicFirestore protected () extends Firestore {
-  def this(databaseIdOrApp: FirebaseApp, authProvider: Provider[FirebaseAuthInternalName]) = this()
   def this(databaseIdOrApp: FirestoreDatabase, authProvider: Provider[FirebaseAuthInternalName]) = this()
+  def this(databaseIdOrApp: FirebaseApp, authProvider: Provider[FirebaseAuthInternalName]) = this()
 }
 
 @JSImport("@firebase/firestore/dist/lib/src/api/database", "PublicFirestore")

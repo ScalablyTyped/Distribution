@@ -5,9 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonAttrParamMapper extends js.Object {
-  var AttrParamMapper: AnonAdditionalPropertiesPropertiesRequired
+  var AttrParamMapper: AnonRequired
   var Category: AnonEnum
-  var InputParamMapper: AnonAdditionalPropertiesProperties
+  var InputParamMapper: AnonProperties
   var OpExecutor: AnonAdditionalPropertiesType
   var OpMapper: AnonAdditionalProperties
   var ParamTypes: AnonEnum
@@ -16,9 +16,9 @@ trait AnonAttrParamMapper extends js.Object {
 object AnonAttrParamMapper {
   @scala.inline
   def apply(
-    AttrParamMapper: AnonAdditionalPropertiesPropertiesRequired,
+    AttrParamMapper: AnonRequired,
     Category: AnonEnum,
-    InputParamMapper: AnonAdditionalPropertiesProperties,
+    InputParamMapper: AnonProperties,
     OpExecutor: AnonAdditionalPropertiesType,
     OpMapper: AnonAdditionalProperties,
     ParamTypes: AnonEnum

@@ -24,6 +24,25 @@ trait Delta extends js.Object
 
 object Delta {
   @scala.inline
+  def ICreateUnitTreeDelta(
+    containerId: String,
+    containmentName: String,
+    contentType: String,
+    deltaType: CREATE_UNIT_TREE,
+    unitId: String,
+    unitTree: IStructureJSON
+  ): Delta = {
+    val __obj = js.Dynamic.literal(containerId = containerId.asInstanceOf[js.Any], containmentName = containmentName.asInstanceOf[js.Any], contentType = contentType.asInstanceOf[js.Any], deltaType = deltaType.asInstanceOf[js.Any], unitId = unitId.asInstanceOf[js.Any], unitTree = unitTree.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[Delta]
+  }
+  @scala.inline
+  def IDeleteElementDelta(deltaType: DELETE_ELEMENT, elementId: String, unitId: String): Delta = {
+    val __obj = js.Dynamic.literal(deltaType = deltaType.asInstanceOf[js.Any], elementId = elementId.asInstanceOf[js.Any], unitId = unitId.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[Delta]
+  }
+  @scala.inline
   def ICreateElementTreeDelta(
     deltaType: CREATE_ELEMENT_TREE,
     elementTree: IStructureJSON,
@@ -37,7 +56,7 @@ object Delta {
     __obj.asInstanceOf[Delta]
   }
   @scala.inline
-  def IDeleteElementDelta(deltaType: DELETE_ELEMENT, elementId: String, unitId: String): Delta = {
+  def IDetachElementDelta(deltaType: DETACH_ELEMENT, elementId: String, unitId: String): Delta = {
     val __obj = js.Dynamic.literal(deltaType = deltaType.asInstanceOf[js.Any], elementId = elementId.asInstanceOf[js.Any], unitId = unitId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Delta]
@@ -51,12 +70,6 @@ object Delta {
     unitId: String
   ): Delta = {
     val __obj = js.Dynamic.literal(deltaType = deltaType.asInstanceOf[js.Any], elementId = elementId.asInstanceOf[js.Any], mutator = mutator.asInstanceOf[js.Any], propertyName = propertyName.asInstanceOf[js.Any], unitId = unitId.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[Delta]
-  }
-  @scala.inline
-  def IDetachElementDelta(deltaType: DETACH_ELEMENT, elementId: String, unitId: String): Delta = {
-    val __obj = js.Dynamic.literal(deltaType = deltaType.asInstanceOf[js.Any], elementId = elementId.asInstanceOf[js.Any], unitId = unitId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Delta]
   }
@@ -77,19 +90,6 @@ object Delta {
   ): Delta = {
     val __obj = js.Dynamic.literal(deltaType = deltaType.asInstanceOf[js.Any], elementId = elementId.asInstanceOf[js.Any], newParentId = newParentId.asInstanceOf[js.Any], newParentPropertyName = newParentPropertyName.asInstanceOf[js.Any], unitId = unitId.asInstanceOf[js.Any])
     if (newIndex != null) __obj.updateDynamic("newIndex")(newIndex.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Delta]
-  }
-  @scala.inline
-  def ICreateUnitTreeDelta(
-    containerId: String,
-    containmentName: String,
-    contentType: String,
-    deltaType: CREATE_UNIT_TREE,
-    unitId: String,
-    unitTree: IStructureJSON
-  ): Delta = {
-    val __obj = js.Dynamic.literal(containerId = containerId.asInstanceOf[js.Any], containmentName = containmentName.asInstanceOf[js.Any], contentType = contentType.asInstanceOf[js.Any], deltaType = deltaType.asInstanceOf[js.Any], unitId = unitId.asInstanceOf[js.Any], unitTree = unitTree.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Delta]
   }
 }

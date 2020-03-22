@@ -1,11 +1,7 @@
 package typings.vsoNodeApi.gitInterfacesMod
 
-import typings.vsoNodeApi.AnonEnumValuesAnonAbandonedActive
-import typings.vsoNodeApi.AnonEnumValuesAnonAbandonedCompleted
 import typings.vsoNodeApi.AnonEnumValuesAnonActive
 import typings.vsoNodeApi.AnonEnumValuesAnonAddAdd
-import typings.vsoNodeApi.AnonEnumValuesAnonAddAll
-import typings.vsoNodeApi.AnonEnumValuesAnonAddDelete
 import typings.vsoNodeApi.AnonEnumValuesAnonAllOrNone
 import typings.vsoNodeApi.AnonEnumValuesAnonAndroidStudio
 import typings.vsoNodeApi.AnonEnumValuesAnonAsyncOperationNotFound
@@ -22,18 +18,22 @@ import typings.vsoNodeApi.AnonEnumValuesAnonCommit
 import typings.vsoNodeApi.AnonEnumValuesAnonConflicts
 import typings.vsoNodeApi.AnonEnumValuesAnonContains
 import typings.vsoNodeApi.AnonEnumValuesAnonCreateBranchPermissionRequired
-import typings.vsoNodeApi.AnonEnumValuesAnonCreateForcePush
-import typings.vsoNodeApi.AnonEnumValuesAnonErrorFailed
+import typings.vsoNodeApi.AnonEnumValuesAnonEncoding
 import typings.vsoNodeApi.AnonEnumValuesAnonFirstParent
-import typings.vsoNodeApi.AnonEnumValuesAnonFirstParentNone
 import typings.vsoNodeApi.AnonEnumValuesAnonFolder
+import typings.vsoNodeApi.AnonEnumValuesAnonForcePush
 import typings.vsoNodeApi.AnonEnumValuesAnonFull
+import typings.vsoNodeApi.AnonEnumValuesAnonInProgress_
 import typings.vsoNodeApi.AnonEnumValuesAnonInvalidPath
 import typings.vsoNodeApi.AnonEnumValuesAnonKeepBothFiles
 import typings.vsoNodeApi.AnonEnumValuesAnonKeepSourceDeleteTarget
-import typings.vsoNodeApi.AnonEnumValuesAnonNonePrevious
+import typings.vsoNodeApi.AnonEnumValuesAnonNotApplicable
+import typings.vsoNodeApi.AnonEnumValuesAnonNotSet
 import typings.vsoNodeApi.AnonEnumValuesAnonPartiallyResolved
 import typings.vsoNodeApi.AnonEnumValuesAnonPickSourceAction
+import typings.vsoNodeApi.AnonEnumValuesAnonPrevious
+import typings.vsoNodeApi.AnonEnumValuesAnonPreviousChange
+import typings.vsoNodeApi.AnonEnumValuesAnonRename
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -49,7 +49,7 @@ object TypeInfo extends js.Object {
   var CommentThreadStatus: AnonEnumValuesAnonActive = js.native
   var CommentType: AnonEnumValuesAnonCodeChange = js.native
   var GitAnnotatedTag: js.Any = js.native
-  var GitAsyncOperationStatus: AnonEnumValuesAnonAbandonedCompleted = js.native
+  var GitAsyncOperationStatus: AnonEnumValuesAnonInProgress_ = js.native
   var GitAsyncRefOperation: js.Any = js.native
   var GitAsyncRefOperationDetail: js.Any = js.native
   var GitAsyncRefOperationFailureStatus: AnonEnumValuesAnonAsyncOperationNotFound = js.native
@@ -95,7 +95,7 @@ object TypeInfo extends js.Object {
   var GitObject: js.Any = js.native
   var GitObjectType: AnonEnumValuesAnonBad = js.native
   var GitPathAction: js.Any = js.native
-  var GitPathActions: AnonEnumValuesAnonAddDelete = js.native
+  var GitPathActions: AnonEnumValuesAnonRename = js.native
   var GitPathToItemsCollection: js.Any = js.native
   var GitPullRequest: js.Any = js.native
   var GitPullRequestChange: js.Any = js.native
@@ -136,7 +136,7 @@ object TypeInfo extends js.Object {
   var GitResolutionWhichAction: AnonEnumValuesAnonPickSourceAction = js.native
   var GitRevert: js.Any = js.native
   var GitStatus: js.Any = js.native
-  var GitStatusState: AnonEnumValuesAnonErrorFailed = js.native
+  var GitStatusState: AnonEnumValuesAnonNotApplicable = js.native
   var GitTargetVersionDescriptor: js.Any = js.native
   var GitTreeDiff: js.Any = js.native
   var GitTreeDiffEntry: js.Any = js.native
@@ -145,17 +145,17 @@ object TypeInfo extends js.Object {
   var GitTreeRef: js.Any = js.native
   var GitUserDate: js.Any = js.native
   var GitVersionDescriptor: js.Any = js.native
-  var GitVersionOptions: AnonEnumValuesAnonFirstParentNone = js.native
+  var GitVersionOptions: AnonEnumValuesAnonPreviousChange = js.native
   var GitVersionType: AnonEnumValuesAnonBranch = js.native
   var HistoryEntry: js.Any = js.native
   var IncludedGitCommit: js.Any = js.native
   var ItemContent: js.Any = js.native
   var ItemContentType: AnonEnumValuesAnonBase64Encoded = js.native
   var ItemDetailsOptions: js.Any = js.native
-  var IterationReason: AnonEnumValuesAnonCreateForcePush = js.native
+  var IterationReason: AnonEnumValuesAnonForcePush = js.native
   var PullRequestAsyncStatus: AnonEnumValuesAnonConflicts = js.native
   var PullRequestMergeFailureType: AnonEnumValuesAnonCaseSensitive = js.native
-  var PullRequestStatus: AnonEnumValuesAnonAbandonedActive = js.native
+  var PullRequestStatus: AnonEnumValuesAnonNotSet = js.native
   var RefFavoriteType: AnonEnumValuesAnonFolder = js.native
   var SupportedIde: js.Any = js.native
   var SupportedIdeType: AnonEnumValuesAnonAndroidStudio = js.native
@@ -174,10 +174,10 @@ object TypeInfo extends js.Object {
   var TfvcShelveset: js.Any = js.native
   var TfvcShelvesetRef: js.Any = js.native
   var TfvcVersionDescriptor: js.Any = js.native
-  var TfvcVersionOption: AnonEnumValuesAnonNonePrevious = js.native
+  var TfvcVersionOption: AnonEnumValuesAnonPrevious = js.native
   var TfvcVersionType: AnonEnumValuesAnonChange = js.native
   var UpdateRefsRequest: js.Any = js.native
-  var VersionControlChangeType: AnonEnumValuesAnonAddAll = js.native
+  var VersionControlChangeType: AnonEnumValuesAnonEncoding = js.native
   var VersionControlProjectInfo: js.Any = js.native
   var VersionControlRecursionType: AnonEnumValuesAnonFull = js.native
 }

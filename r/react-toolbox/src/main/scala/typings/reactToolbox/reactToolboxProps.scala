@@ -167,8 +167,6 @@ trait reactToolboxProps {
   @scala.inline
   def TabsProps: typings.reactToolbox.libTabsTabsMod.TabsProps.type = typings.reactToolbox.libTabsTabsMod.TabsProps
   type TabsProps = typings.reactToolbox.libTabsTabsMod.TabsProps
-  @scala.inline
-  def ThemeProviderProps: typings.reactCssThemr.mod.ThemeProviderProps.type = typings.reactCssThemr.mod.ThemeProviderProps
   type ThemeProviderProps = typings.reactCssThemr.mod.ThemeProviderProps
   @scala.inline
   def TimePickerProps: typings.reactToolbox.libTimePickerTimePickerMod.TimePickerProps.type = typings.reactToolbox.libTimePickerTimePickerMod.TimePickerProps

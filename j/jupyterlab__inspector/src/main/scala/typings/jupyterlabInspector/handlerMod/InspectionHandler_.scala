@@ -3,8 +3,8 @@ package typings.jupyterlabInspector.handlerMod
 import typings.jupyterlabCodeeditor.editorMod.CodeEditor.IEditor
 import typings.jupyterlabInspector.handlerMod.InspectionHandler.IOptions
 import typings.jupyterlabInspector.tokensMod.IInspector.IInspectorUpdate
-import typings.phosphorDisposable.mod.IDisposable
-import typings.phosphorSignaling.mod.ISignal
+import typings.luminoDisposable.mod.IDisposable
+import typings.luminoSignaling.mod.ISignal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,19 +34,18 @@ class InspectionHandler_ protected () extends IDisposable {
   /**
     * A signal emitted when the inspector should clear all items.
     */
-  val cleared: ISignal[_ | InspectionHandler, Unit] = js.native
+  @JSName("cleared")
+  var cleared_FInspectionHandler_ : ISignal[_, Unit] = js.native
   /**
-    * A signal emitted when the handler is disposed.
+    * A signal emitted when the inspectable is disposed.
     */
-  val disposed: ISignal[_ | InspectionHandler, Unit] = js.native
-  /**
-    * The editor widget used by the inspection handler.
-    */
-  var editor: IEditor | Null = js.native
+  @JSName("disposed")
+  var disposed_FInspectionHandler_ : ISignal[_, Unit] = js.native
   /**
     * A signal emitted when an inspector value is generated.
     */
-  val inspected: ISignal[_ | InspectionHandler, IInspectorUpdate] = js.native
+  @JSName("inspected")
+  var inspected_FInspectionHandler_ : ISignal[_, IInspectorUpdate] = js.native
   /**
     * Test whether the object has been disposed.
     *
@@ -56,13 +55,18 @@ class InspectionHandler_ protected () extends IDisposable {
   /* CompleteClass */
   override val isDisposed: Boolean = js.native
   /**
-    * Indicates whether the handler makes API inspection requests or stands by.
+    * Indicates whether the inspectable source emits signals.
     *
     * #### Notes
     * The use case for this attribute is to limit the API traffic when no
-    * inspector is visible.
+    * inspector is visible. It can be modified by the consumer of the source.
     */
-  var standby: Boolean = js.native
+  @JSName("standby")
+  var standby_FInspectionHandler_ : Boolean = js.native
+  /**
+    * A signal emitted when the inspector should clear all items.
+    */
+  def cleared(): ISignal[InspectionHandler, Unit] = js.native
   /**
     * Dispose of the resources held by the object.
     *
@@ -77,11 +81,43 @@ class InspectionHandler_ protected () extends IDisposable {
   /* CompleteClass */
   override def dispose(): Unit = js.native
   /**
+    * A signal emitted when the handler is disposed.
+    */
+  def disposed(): ISignal[InspectionHandler, Unit] = js.native
+  def editor(): js.Any = js.native
+  def editor(newValue: IEditor): js.Any = js.native
+  /**
+    * The editor widget used by the inspection handler.
+    */
+  @JSName("editor")
+  def editor_Union(): IEditor | Null = js.native
+  /**
+    * A signal emitted when an inspector value is generated.
+    */
+  def inspected(): ISignal[InspectionHandler, IInspectorUpdate] = js.native
+  /**
+    * Get whether the inspection handler is disposed.
+    *
+    * #### Notes
+    * This is a read-only property.
+    */
+  @JSName("isDisposed")
+  def isDisposed_MInspectionHandler_(): Boolean = js.native
+  /**
     * Handle a text changed signal from an editor.
     *
     * #### Notes
     * Update the hints inspector based on a text change.
     */
   /* protected */ def onEditorChange(): Unit = js.native
+  /**
+    * Indicates whether the handler makes API inspection requests or stands by.
+    *
+    * #### Notes
+    * The use case for this attribute is to limit the API traffic when no
+    * inspector is visible.
+    */
+  def standby(): Boolean = js.native
+  def standby(value: Boolean): js.Any = js.native
 }
 

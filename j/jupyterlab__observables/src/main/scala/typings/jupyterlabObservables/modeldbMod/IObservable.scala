@@ -1,6 +1,6 @@
 package typings.jupyterlabObservables.modeldbMod
 
-import typings.phosphorDisposable.mod.IDisposable
+import typings.luminoDisposable.mod.IDisposable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

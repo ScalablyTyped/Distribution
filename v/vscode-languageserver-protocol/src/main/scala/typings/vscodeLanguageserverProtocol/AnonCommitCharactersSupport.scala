@@ -32,6 +32,15 @@ trait AnonCommitCharactersSupport extends js.Object {
     * that is typing in one will update others too.
     */
   var snippetSupport: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Client supports the tag property on a completion item. Clients supporting
+    * tags have to handle unknown tags gracefully. Clients especially need to
+    * preserve unknown tags when sending a completion item back to the server in
+    * a resolve call.
+    *
+    * @since 3.15.0
+    */
+  var tagSupport: js.UndefOr[AnonValueSetArray] = js.undefined
 }
 
 object AnonCommitCharactersSupport {
@@ -41,7 +50,8 @@ object AnonCommitCharactersSupport {
     deprecatedSupport: js.UndefOr[Boolean] = js.undefined,
     documentationFormat: js.Array[MarkupKind] = null,
     preselectSupport: js.UndefOr[Boolean] = js.undefined,
-    snippetSupport: js.UndefOr[Boolean] = js.undefined
+    snippetSupport: js.UndefOr[Boolean] = js.undefined,
+    tagSupport: AnonValueSetArray = null
   ): AnonCommitCharactersSupport = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(commitCharactersSupport)) __obj.updateDynamic("commitCharactersSupport")(commitCharactersSupport.asInstanceOf[js.Any])
@@ -49,6 +59,7 @@ object AnonCommitCharactersSupport {
     if (documentationFormat != null) __obj.updateDynamic("documentationFormat")(documentationFormat.asInstanceOf[js.Any])
     if (!js.isUndefined(preselectSupport)) __obj.updateDynamic("preselectSupport")(preselectSupport.asInstanceOf[js.Any])
     if (!js.isUndefined(snippetSupport)) __obj.updateDynamic("snippetSupport")(snippetSupport.asInstanceOf[js.Any])
+    if (tagSupport != null) __obj.updateDynamic("tagSupport")(tagSupport.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnonCommitCharactersSupport]
   }
 }

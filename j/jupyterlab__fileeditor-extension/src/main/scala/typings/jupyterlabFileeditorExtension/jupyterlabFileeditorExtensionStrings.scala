@@ -44,12 +44,6 @@ object jupyterlabFileeditorExtensionStrings {
   @js.native
   sealed trait `fileeditorColontoggle-match-brackets` extends js.Object
   
-  @js.native
-  sealed trait `jp-MarkdownIcon` extends js.Object
-  
-  @js.native
-  sealed trait `jp-MaterialIcon jp-TextEditorIcon` extends js.Object
-  
   @scala.inline
   def Editor: Editor = "Editor".asInstanceOf[Editor]
   @scala.inline
@@ -76,9 +70,5 @@ object jupyterlabFileeditorExtensionStrings {
   def `fileeditorColontoggle-line-wrap`: `fileeditorColontoggle-line-wrap` = "fileeditor:toggle-line-wrap".asInstanceOf[`fileeditorColontoggle-line-wrap`]
   @scala.inline
   def `fileeditorColontoggle-match-brackets`: `fileeditorColontoggle-match-brackets` = "fileeditor:toggle-match-brackets".asInstanceOf[`fileeditorColontoggle-match-brackets`]
-  @scala.inline
-  def `jp-MarkdownIcon`: `jp-MarkdownIcon` = "jp-MarkdownIcon".asInstanceOf[`jp-MarkdownIcon`]
-  @scala.inline
-  def `jp-MaterialIcon jp-TextEditorIcon`: `jp-MaterialIcon jp-TextEditorIcon` = "jp-MaterialIcon jp-TextEditorIcon".asInstanceOf[`jp-MaterialIcon jp-TextEditorIcon`]
 }
 

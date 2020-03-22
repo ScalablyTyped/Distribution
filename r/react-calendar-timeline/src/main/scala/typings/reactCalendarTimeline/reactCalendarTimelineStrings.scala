@@ -10,16 +10,10 @@ object reactCalendarTimelineStrings {
   sealed trait both extends js.Object
   
   @js.native
-  sealed trait date extends js.Object
-  
-  @js.native
   sealed trait day extends Unit
   
   @js.native
   sealed trait hour extends Unit
-  
-  @js.native
-  sealed trait key extends js.Object
   
   @js.native
   sealed trait left extends js.Object
@@ -35,9 +29,6 @@ object reactCalendarTimelineStrings {
   
   @js.native
   sealed trait primaryHeader extends js.Object
-  
-  @js.native
-  sealed trait ref extends js.Object
   
   @js.native
   sealed trait resize extends js.Object
@@ -57,13 +48,9 @@ object reactCalendarTimelineStrings {
   @scala.inline
   def both: both = "both".asInstanceOf[both]
   @scala.inline
-  def date: date = "date".asInstanceOf[date]
-  @scala.inline
   def day: day = "day".asInstanceOf[day]
   @scala.inline
   def hour: hour = "hour".asInstanceOf[hour]
-  @scala.inline
-  def key: key = "key".asInstanceOf[key]
   @scala.inline
   def left: left = "left".asInstanceOf[left]
   @scala.inline
@@ -74,8 +61,6 @@ object reactCalendarTimelineStrings {
   def move: move = "move".asInstanceOf[move]
   @scala.inline
   def primaryHeader: primaryHeader = "primaryHeader".asInstanceOf[primaryHeader]
-  @scala.inline
-  def ref: ref = "ref".asInstanceOf[ref]
   @scala.inline
   def resize: resize = "resize".asInstanceOf[resize]
   @scala.inline

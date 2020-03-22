@@ -1,6 +1,6 @@
 package typings.favicons.mod
 
-import typings.favicons.AnonAndroid
+import typings.favicons.PartialandroidbooleanIcon
 import typings.favicons.faviconsStrings.`black-translucent`
 import typings.favicons.faviconsStrings.`minimal-ui`
 import typings.favicons.faviconsStrings.any
@@ -12,7 +12,6 @@ import typings.favicons.faviconsStrings.landscape
 import typings.favicons.faviconsStrings.natural
 import typings.favicons.faviconsStrings.portrait
 import typings.favicons.faviconsStrings.standalone
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -47,7 +46,7 @@ trait Configuration extends js.Object {
     * - overlayGlow - apply glow effect after mask has been applied (applied by default for firefox)
     * - overlayShadow - apply drop shadow after mask has been applied
     */
-  var icons: Partial[AnonAndroid]
+  var icons: PartialandroidbooleanIcon
   /** Primary language for name and short_name @default 'en-US' */
   var lang: String
   /** Browsers don't send cookies when fetching a manifest, enable this to fix that @default false */
@@ -81,7 +80,7 @@ object Configuration {
     background: String,
     dir: String,
     display: fullscreen | standalone | `minimal-ui` | browser,
-    icons: Partial[AnonAndroid],
+    icons: PartialandroidbooleanIcon,
     lang: String,
     loadManifestWithCredentials: Boolean,
     logging: Boolean,

@@ -31,7 +31,4 @@ package object mod {
     /* options */ typings.lifeomicAttempt.mod.AttemptOptions[T], 
     js.Promise[T]
   ]
-  type PartialAttemptOptions[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ P in keyof @lifeomic/attempt.@lifeomic/attempt.AttemptOptions<T> ]:? @lifeomic/attempt.@lifeomic/attempt.AttemptOptions<T>[P]}
-    */ typings.lifeomicAttempt.lifeomicAttemptStrings.PartialAttemptOptions with typings.lifeomicAttempt.mod.AttemptOptions[T]
 }

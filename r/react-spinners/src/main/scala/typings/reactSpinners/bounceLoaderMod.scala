@@ -24,7 +24,7 @@ object bounceLoaderMod extends js.Object {
   /* static members */
   @js.native
   object default extends js.Object {
-    var defaultProps: LoaderSizeProps = js.native
+    var defaultProps: RequiredLoaderSizeProps = js.native
   }
   
 }

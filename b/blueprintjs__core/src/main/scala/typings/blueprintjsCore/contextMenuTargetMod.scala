@@ -20,6 +20,6 @@ object contextMenuTargetMod extends js.Object {
     def renderContextMenu(e: MouseEvent[HTMLElement, NativeMouseEvent]): js.UndefOr[Element] = js.native
   }
   
-  def ContextMenuTarget[T /* <: IConstructor[IContextMenuTargetComponent] */](WrappedComponent: T): AnonArgs with T = js.native
+  def ContextMenuTarget[T /* <: IConstructor[IContextMenuTargetComponent] */](WrappedComponent: T): AnonInstantiable with T = js.native
 }
 

@@ -12,17 +12,17 @@ object localeHyAMMod extends js.Object {
     var Calendar: AnonLangTimePickerLocale = js.native
     var DatePicker: AnonLangTimePickerLocale = js.native
     var Empty: AnonDescription = js.native
-    var Icon: AnonIcon = js.native
+    var Icon: AnonIconString = js.native
     var Modal: AnonCancelText = js.native
     var PageHeader: AnonBack = js.native
     var Pagination: AnonItemsperpage = js.native
-    var Popconfirm: AnonCancelTextOkText = js.native
-    var Table: AnonCollapse = js.native
+    var Popconfirm: AnonOkText = js.native
+    var Table: AnonExpand = js.native
     var Text: AnonCopied = js.native
-    var TimePicker: AnonPlaceholder = js.native
-    var Transfer: AnonItemUnitItemsUnit = js.native
+    var TimePicker: AnonPlaceholderString = js.native
+    var Transfer: AnonSearchPlaceholder = js.native
     var Upload: AnonDownloadFile = js.native
-    var global: AnonPlaceholder = js.native
+    var global: AnonPlaceholderString = js.native
     var locale: String = js.native
   }
   

@@ -1,9 +1,8 @@
 package typings.blueprintjsTimezone.timezonePickerMod
 
 import typings.blueprintjsCore.mod.AbstractPureComponent2
-import typings.blueprintjsCore.popoverMod.IPopoverProps
-import typings.blueprintjsTimezone.AnonChildren
-import typings.std.Partial
+import typings.blueprintjsTimezone.IPopoverPropschildrenReac
+import typings.blueprintjsTimezone.PartialITimezonePickerPro
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,14 +24,14 @@ class TimezonePicker protected ()
   def componentDidUpdate_MTimezonePicker(prevProps: ITimezonePickerProps, prevState: ITimezonePickerState): Unit = js.native
   @JSName("componentDidUpdate")
   def componentDidUpdate_MTimezonePicker(prevProps: ITimezonePickerProps, prevState: ITimezonePickerState, snapshot: js.Object): Unit = js.native
-  /* protected */ def validateProps(props: IPopoverProps with AnonChildren): Unit = js.native
+  /* protected */ def validateProps(props: IPopoverPropschildrenReac): Unit = js.native
 }
 
 /* static members */
 @JSImport("@blueprintjs/timezone/lib/esm/components/timezone-picker/timezonePicker", "TimezonePicker")
 @js.native
 object TimezonePicker extends js.Object {
-  var defaultProps: Partial[ITimezonePickerProps] = js.native
+  var defaultProps: PartialITimezonePickerPro = js.native
   var displayName: String = js.native
 }
 

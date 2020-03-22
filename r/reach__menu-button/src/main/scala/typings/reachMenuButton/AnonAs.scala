@@ -8,7 +8,6 @@ import typings.react.mod.KeyboardEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.std.HTMLElement
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,7 +19,7 @@ trait AnonAs[T /* <: SupportedMenuLinkComponent */] extends js.Object {
   var index: js.UndefOr[Double] = js.undefined
   var onClick: js.UndefOr[js.Function1[/* e */ MouseEvent[HTMLElement, NativeMouseEvent], Unit]] = js.undefined
   var onKeyDown: js.UndefOr[js.Function1[/* e */ KeyboardEvent[HTMLElement], Unit]] = js.undefined
-  var setState: js.UndefOr[js.Function1[/* s */ State, Partial[State]]] = js.undefined
+  var setState: js.UndefOr[js.Function1[/* s */ State, PartialState]] = js.undefined
   var state: js.UndefOr[State] = js.undefined
   var style: js.UndefOr[CSSProperties] = js.undefined
   var to: js.UndefOr[String] = js.undefined
@@ -35,7 +34,7 @@ object AnonAs {
     index: Int | Double = null,
     onClick: /* e */ MouseEvent[HTMLElement, NativeMouseEvent] => Unit = null,
     onKeyDown: /* e */ KeyboardEvent[HTMLElement] => Unit = null,
-    setState: /* s */ State => Partial[State] = null,
+    setState: /* s */ State => PartialState = null,
     state: State = null,
     style: CSSProperties = null,
     to: String = null

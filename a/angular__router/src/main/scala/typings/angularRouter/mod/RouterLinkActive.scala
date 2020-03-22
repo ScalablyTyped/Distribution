@@ -45,7 +45,6 @@ class RouterLinkActive protected ()
   var linksWithHrefs: QueryList[RouterLinkWithHref] = js.native
   var renderer: js.Any = js.native
   var router: js.Any = js.native
-  var routerLinkActive: js.Array[String] | String = js.native
   var routerLinkActiveOptions: AnonExact = js.native
   var subscription: js.Any = js.native
   var update: js.Any = js.native
@@ -68,9 +67,11 @@ class RouterLinkActive protected ()
   override def ngOnChanges(changes: SimpleChanges): Unit = js.native
   /**
     * A callback method that performs custom clean-up, invoked immediately
-    * after a directive, pipe, or service instance is destroyed.
+    * before a directive, pipe, or service instance is destroyed.
     */
   /* CompleteClass */
   override def ngOnDestroy(): Unit = js.native
+  def routerLinkActive(data: String): js.Any = js.native
+  def routerLinkActive(data: js.Array[String]): js.Any = js.native
 }
 

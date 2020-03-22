@@ -1,6 +1,7 @@
 package typings.plotlyJs.mod
 
-import typings.plotlyJs.AnonFilename
+import typings.plotlyJs.PartialEdits
+import typings.plotlyJs.Partialfilenamestringscal
 import typings.plotlyJs.plotlyJsBooleans.`false`
 import typings.plotlyJs.plotlyJsNumbers.`0`
 import typings.plotlyJs.plotlyJsNumbers.`1`
@@ -11,7 +12,6 @@ import typings.plotlyJs.plotlyJsStrings.opaque
 import typings.plotlyJs.plotlyJsStrings.reset
 import typings.plotlyJs.plotlyJsStrings.resetPlussignautosize
 import typings.plotlyJs.plotlyJsStrings.transparent
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,7 +27,7 @@ trait Config extends js.Object {
   var doubleClick: resetPlussignautosize | reset | autosize | `false`
   /** we can edit titles, move annotations, etc */
   var editable: Boolean
-  var edits: Partial[Edits]
+  var edits: PartialEdits
   /** if we DO autosize, do we fill the container or the screen? */
   var fillFrame: Boolean
   /** if we DO autosize, set the frame margins in percents of plot size */
@@ -83,7 +83,7 @@ trait Config extends js.Object {
   /** no interactivity, for export or image generation */
   var staticPlot: Boolean
   /** override the defaults for the toImageButton */
-  var toImageButtonOptions: Partial[AnonFilename]
+  var toImageButtonOptions: Partialfilenamestringscal
   /** URL to topojson files used in geo charts */
   var topojsonURL: String
   /**
@@ -101,7 +101,7 @@ object Config {
     displaylogo: Boolean,
     doubleClick: resetPlussignautosize | reset | autosize | `false`,
     editable: Boolean,
-    edits: Partial[Edits],
+    edits: PartialEdits,
     fillFrame: Boolean,
     frameMargins: Double,
     globalTransforms: js.Array[_],
@@ -124,7 +124,7 @@ object Config {
     showSources: Boolean,
     showTips: Boolean,
     staticPlot: Boolean,
-    toImageButtonOptions: Partial[AnonFilename],
+    toImageButtonOptions: Partialfilenamestringscal,
     topojsonURL: String
   ): Config = {
     val __obj = js.Dynamic.literal(autosizable = autosizable.asInstanceOf[js.Any], displayModeBar = displayModeBar.asInstanceOf[js.Any], displaylogo = displaylogo.asInstanceOf[js.Any], doubleClick = doubleClick.asInstanceOf[js.Any], editable = editable.asInstanceOf[js.Any], edits = edits.asInstanceOf[js.Any], fillFrame = fillFrame.asInstanceOf[js.Any], frameMargins = frameMargins.asInstanceOf[js.Any], globalTransforms = globalTransforms.asInstanceOf[js.Any], linkText = linkText.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], logging = logging.asInstanceOf[js.Any], mapboxAccessToken = mapboxAccessToken.asInstanceOf[js.Any], modeBarButtons = modeBarButtons.asInstanceOf[js.Any], modeBarButtonsToAdd = modeBarButtonsToAdd.asInstanceOf[js.Any], modeBarButtonsToRemove = modeBarButtonsToRemove.asInstanceOf[js.Any], plotGlPixelRatio = plotGlPixelRatio.asInstanceOf[js.Any], queueLength = queueLength.asInstanceOf[js.Any], responsive = responsive.asInstanceOf[js.Any], scrollZoom = scrollZoom.asInstanceOf[js.Any], sendData = sendData.asInstanceOf[js.Any], setBackground = js.Any.fromFunction0(setBackground), showAxisDragHandles = showAxisDragHandles.asInstanceOf[js.Any], showAxisRangeEntryBoxes = showAxisRangeEntryBoxes.asInstanceOf[js.Any], showLink = showLink.asInstanceOf[js.Any], showSources = showSources.asInstanceOf[js.Any], showTips = showTips.asInstanceOf[js.Any], staticPlot = staticPlot.asInstanceOf[js.Any], toImageButtonOptions = toImageButtonOptions.asInstanceOf[js.Any], topojsonURL = topojsonURL.asInstanceOf[js.Any])

@@ -1,36 +1,36 @@
 package typings.gapiClientAdexchangebuyer.gapi.client.adexchangebuyer
 
 import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientAdexchangebuyer.AnonAccountIdAltConfigId
-import typings.gapiClientAdexchangebuyer.AnonAccountIdAltFields
+import typings.gapiClientAdexchangebuyer.AnonConfigId
+import typings.gapiClientAdexchangebuyer.AnonQuotaUser
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PretargetingConfigResource extends js.Object {
   /** Deletes an existing pretargeting config. */
-  def delete(request: AnonAccountIdAltConfigId): Request_[Unit]
+  def delete(request: AnonConfigId): Request_[Unit]
   /** Gets a specific pretargeting configuration */
-  def get(request: AnonAccountIdAltConfigId): Request_[PretargetingConfig]
+  def get(request: AnonConfigId): Request_[PretargetingConfig]
   /** Inserts a new pretargeting configuration. */
-  def insert(request: AnonAccountIdAltFields): Request_[PretargetingConfig]
+  def insert(request: AnonQuotaUser): Request_[PretargetingConfig]
   /** Retrieves a list of the authenticated user's pretargeting configurations. */
-  def list(request: AnonAccountIdAltFields): Request_[PretargetingConfigList]
+  def list(request: AnonQuotaUser): Request_[PretargetingConfigList]
   /** Updates an existing pretargeting config. This method supports patch semantics. */
-  def patch(request: AnonAccountIdAltConfigId): Request_[PretargetingConfig]
+  def patch(request: AnonConfigId): Request_[PretargetingConfig]
   /** Updates an existing pretargeting config. */
-  def update(request: AnonAccountIdAltConfigId): Request_[PretargetingConfig]
+  def update(request: AnonConfigId): Request_[PretargetingConfig]
 }
 
 object PretargetingConfigResource {
   @scala.inline
   def apply(
-    delete: AnonAccountIdAltConfigId => Request_[Unit],
-    get: AnonAccountIdAltConfigId => Request_[PretargetingConfig],
-    insert: AnonAccountIdAltFields => Request_[PretargetingConfig],
-    list: AnonAccountIdAltFields => Request_[PretargetingConfigList],
-    patch: AnonAccountIdAltConfigId => Request_[PretargetingConfig],
-    update: AnonAccountIdAltConfigId => Request_[PretargetingConfig]
+    delete: AnonConfigId => Request_[Unit],
+    get: AnonConfigId => Request_[PretargetingConfig],
+    insert: AnonQuotaUser => Request_[PretargetingConfig],
+    list: AnonQuotaUser => Request_[PretargetingConfigList],
+    patch: AnonConfigId => Request_[PretargetingConfig],
+    update: AnonConfigId => Request_[PretargetingConfig]
   ): PretargetingConfigResource = {
     val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update))
   

@@ -4,9 +4,10 @@ import typings.mongodb.AnonBatchSize
 import typings.mongodb.AnonDropTarget
 import typings.mongodb.AnonFull
 import typings.mongodb.AnonReadPreference
-import typings.mongodb.AnonReadPreferenceSession
 import typings.mongodb.AnonScale
 import typings.mongodb.AnonSession
+import typings.mongodb.AnonSessionClientSession
+import typings.mongodb.ChangeStreamOptionssessio
 import typings.node.eventsMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -71,8 +72,8 @@ class Db protected () extends EventEmitter {
   def executeDbAdminCommand(command: js.Object): js.Promise[_] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Db.html#executeDbAdminCommand */
   def executeDbAdminCommand(command: js.Object, callback: MongoCallback[_]): Unit = js.native
-  def executeDbAdminCommand(command: js.Object, options: AnonReadPreferenceSession): js.Promise[_] = js.native
-  def executeDbAdminCommand(command: js.Object, options: AnonReadPreferenceSession, callback: MongoCallback[_]): Unit = js.native
+  def executeDbAdminCommand(command: js.Object, options: AnonSession): js.Promise[_] = js.native
+  def executeDbAdminCommand(command: js.Object, options: AnonSession, callback: MongoCallback[_]): Unit = js.native
   def indexInformation(name: String): js.Promise[_] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Db.html#indexInformation */
   def indexInformation(name: String, callback: MongoCallback[_]): Unit = js.native
@@ -86,13 +87,13 @@ class Db protected () extends EventEmitter {
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Db.html#profilingInfo */
   /** @deprecated Query the system.profile collection directly. */
   def profilingInfo(callback: MongoCallback[_]): Unit = js.native
-  def profilingInfo(options: AnonSession): js.Promise[Unit] = js.native
-  def profilingInfo(options: AnonSession, callback: MongoCallback[Unit]): Unit = js.native
+  def profilingInfo(options: AnonSessionClientSession): js.Promise[Unit] = js.native
+  def profilingInfo(options: AnonSessionClientSession, callback: MongoCallback[Unit]): Unit = js.native
   def profilingLevel(): js.Promise[ProfilingLevel] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Db.html#profilingLevel */
   def profilingLevel(callback: MongoCallback[ProfilingLevel]): Unit = js.native
-  def profilingLevel(options: AnonSession): js.Promise[ProfilingLevel] = js.native
-  def profilingLevel(options: AnonSession, callback: MongoCallback[ProfilingLevel]): Unit = js.native
+  def profilingLevel(options: AnonSessionClientSession): js.Promise[ProfilingLevel] = js.native
+  def profilingLevel(options: AnonSessionClientSession, callback: MongoCallback[ProfilingLevel]): Unit = js.native
   def removeUser(username: String): js.Promise[_] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Db.html#removeUser */
   def removeUser(username: String, callback: MongoCallback[_]): Unit = js.native
@@ -111,8 +112,8 @@ class Db protected () extends EventEmitter {
   def setProfilingLevel(level: ProfilingLevel): js.Promise[ProfilingLevel] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Db.html#setProfilingLevel */
   def setProfilingLevel(level: ProfilingLevel, callback: MongoCallback[ProfilingLevel]): Unit = js.native
-  def setProfilingLevel(level: ProfilingLevel, options: AnonSession): js.Promise[ProfilingLevel] = js.native
-  def setProfilingLevel(level: ProfilingLevel, options: AnonSession, callback: MongoCallback[ProfilingLevel]): Unit = js.native
+  def setProfilingLevel(level: ProfilingLevel, options: AnonSessionClientSession): js.Promise[ProfilingLevel] = js.native
+  def setProfilingLevel(level: ProfilingLevel, options: AnonSessionClientSession, callback: MongoCallback[ProfilingLevel]): Unit = js.native
   def stats(): js.Promise[_] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Db.html#stats */
   def stats(callback: MongoCallback[_]): Unit = js.native
@@ -121,6 +122,6 @@ class Db protected () extends EventEmitter {
   /** http://mongodb.github.io/node-mongodb-native/3.3/api/Db.html#watch */
   def watch(): ChangeStream = js.native
   def watch(pipeline: js.Array[js.Object]): ChangeStream = js.native
-  def watch(pipeline: js.Array[js.Object], options: ChangeStreamOptions with AnonSession): ChangeStream = js.native
+  def watch(pipeline: js.Array[js.Object], options: ChangeStreamOptionssessio): ChangeStream = js.native
 }
 

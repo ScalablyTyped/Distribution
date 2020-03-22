@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 /** Properties of an EntityType. */
 trait IEntityType extends js.Object {
   /** EntityType autoExpansionMode */
-  var autoExpansionMode: js.UndefOr[AutoExpansionMode | Null] = js.undefined
+  var autoExpansionMode: js.UndefOr[AutoExpansionMode | String | Null] = js.undefined
   /** EntityType displayName */
   var displayName: js.UndefOr[String | Null] = js.undefined
   /** EntityType enableFuzzyExtraction */
@@ -18,7 +18,7 @@ trait IEntityType extends js.Object {
   /** EntityType entities */
   var entities: js.UndefOr[js.Array[IEntity] | Null] = js.undefined
   /** EntityType kind */
-  var kind: js.UndefOr[Kind | Null] = js.undefined
+  var kind: js.UndefOr[Kind | String | Null] = js.undefined
   /** EntityType name */
   var name: js.UndefOr[String | Null] = js.undefined
 }
@@ -26,11 +26,11 @@ trait IEntityType extends js.Object {
 object IEntityType {
   @scala.inline
   def apply(
-    autoExpansionMode: AutoExpansionMode = null,
+    autoExpansionMode: AutoExpansionMode | String = null,
     displayName: String = null,
     enableFuzzyExtraction: js.UndefOr[Boolean] = js.undefined,
     entities: js.Array[IEntity] = null,
-    kind: Kind = null,
+    kind: Kind | String = null,
     name: String = null
   ): IEntityType = {
     val __obj = js.Dynamic.literal()

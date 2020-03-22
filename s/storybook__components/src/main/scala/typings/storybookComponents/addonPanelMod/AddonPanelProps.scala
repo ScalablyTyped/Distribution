@@ -5,9 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AddonPanelProps extends js.Object {
-  var active: Boolean
-  var children: ReactNode
+  var active: Boolean = js.native
+  var children: ReactNode = js.native
 }
 
 object AddonPanelProps {

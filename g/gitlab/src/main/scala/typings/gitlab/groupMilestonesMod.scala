@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object groupMilestonesMod extends js.Object {
   @js.native
-  class GroupMilestones () extends ResourceMilestones {
+  class GroupMilestones protected () extends ResourceMilestones {
     def this(options: BaseServiceOptions) = this()
   }
   

@@ -12,6 +12,7 @@ import typings.csstype.mod.AnimationPlayStateProperty
 import typings.csstype.mod.AnimationProperty
 import typings.csstype.mod.AnimationTimingFunctionProperty
 import typings.csstype.mod.AppearanceProperty
+import typings.csstype.mod.AspectRatioProperty
 import typings.csstype.mod.BackdropFilterProperty
 import typings.csstype.mod.BackfaceVisibilityProperty
 import typings.csstype.mod.BackgroundAttachmentProperty
@@ -321,9 +322,9 @@ import typings.csstype.mod.ObjectPositionProperty
 import typings.csstype.mod.OffsetAnchorProperty
 import typings.csstype.mod.OffsetDistanceProperty
 import typings.csstype.mod.OffsetPathProperty
-import typings.csstype.mod.OffsetPositionProperty
 import typings.csstype.mod.OffsetProperty
 import typings.csstype.mod.OffsetRotateProperty
+import typings.csstype.mod.OpacityProperty
 import typings.csstype.mod.OutlineColorProperty
 import typings.csstype.mod.OutlineOffsetProperty
 import typings.csstype.mod.OutlineProperty
@@ -337,6 +338,8 @@ import typings.csstype.mod.OverflowProperty
 import typings.csstype.mod.OverflowWrapProperty
 import typings.csstype.mod.OverflowXProperty
 import typings.csstype.mod.OverflowYProperty
+import typings.csstype.mod.OverscrollBehaviorBlockProperty
+import typings.csstype.mod.OverscrollBehaviorInlineProperty
 import typings.csstype.mod.OverscrollBehaviorProperty
 import typings.csstype.mod.OverscrollBehaviorXProperty
 import typings.csstype.mod.OverscrollBehaviorYProperty
@@ -405,6 +408,7 @@ import typings.csstype.mod.ScrollSnapTypeXProperty
 import typings.csstype.mod.ScrollSnapTypeYProperty
 import typings.csstype.mod.ScrollbarColorProperty
 import typings.csstype.mod.ScrollbarWidthProperty
+import typings.csstype.mod.ShapeImageThresholdProperty
 import typings.csstype.mod.ShapeMarginProperty
 import typings.csstype.mod.ShapeOutsideProperty
 import typings.csstype.mod.ShapeRenderingProperty
@@ -427,6 +431,7 @@ import typings.csstype.mod.TextDecorationProperty
 import typings.csstype.mod.TextDecorationSkipInkProperty
 import typings.csstype.mod.TextDecorationSkipProperty
 import typings.csstype.mod.TextDecorationStyleProperty
+import typings.csstype.mod.TextDecorationThicknessProperty
 import typings.csstype.mod.TextEmphasisColorProperty
 import typings.csstype.mod.TextEmphasisProperty
 import typings.csstype.mod.TextEmphasisStyleProperty
@@ -438,6 +443,7 @@ import typings.csstype.mod.TextRenderingProperty
 import typings.csstype.mod.TextShadowProperty
 import typings.csstype.mod.TextSizeAdjustProperty
 import typings.csstype.mod.TextTransformProperty
+import typings.csstype.mod.TextUnderlineOffsetProperty
 import typings.csstype.mod.TextUnderlinePositionProperty
 import typings.csstype.mod.TopProperty
 import typings.csstype.mod.TouchActionProperty
@@ -506,7 +512,7 @@ trait PartialCSSProperties extends js.Object {
   var KhtmlBoxOrient: js.UndefOr[BoxOrientProperty] = js.undefined
   var KhtmlBoxPack: js.UndefOr[BoxPackProperty] = js.undefined
   var KhtmlLineBreak: js.UndefOr[LineBreakProperty] = js.undefined
-  var KhtmlOpacity: js.UndefOr[GlobalsNumber] = js.undefined
+  var KhtmlOpacity: js.UndefOr[OpacityProperty] = js.undefined
   var KhtmlUserSelect: js.UndefOr[UserSelectProperty] = js.undefined
   var MozAnimation: js.UndefOr[AnimationProperty] = js.undefined
   var MozAnimationDelay: js.UndefOr[GlobalsString] = js.undefined
@@ -565,7 +571,7 @@ trait PartialCSSProperties extends js.Object {
   var MozImageRegion: js.UndefOr[MozImageRegionProperty] = js.undefined
   var MozMarginEnd: js.UndefOr[MarginInlineEndProperty[String | Double]] = js.undefined
   var MozMarginStart: js.UndefOr[MarginInlineStartProperty[String | Double]] = js.undefined
-  var MozOpacity: js.UndefOr[GlobalsNumber] = js.undefined
+  var MozOpacity: js.UndefOr[OpacityProperty] = js.undefined
   var MozOrient: js.UndefOr[MozOrientProperty] = js.undefined
   var MozOutline: js.UndefOr[OutlineProperty[String | Double]] = js.undefined
   var MozOutlineColor: js.UndefOr[OutlineColorProperty] = js.undefined
@@ -760,6 +766,7 @@ trait PartialCSSProperties extends js.Object {
   var animationPlayState: js.UndefOr[AnimationPlayStateProperty] = js.undefined
   var animationTimingFunction: js.UndefOr[AnimationTimingFunctionProperty] = js.undefined
   var appearance: js.UndefOr[AppearanceProperty] = js.undefined
+  var aspectRatio: js.UndefOr[AspectRatioProperty] = js.undefined
   var backdropFilter: js.UndefOr[BackdropFilterProperty] = js.undefined
   var backfaceVisibility: js.UndefOr[BackfaceVisibilityProperty] = js.undefined
   var background: js.UndefOr[BackgroundProperty[String | Double]] = js.undefined
@@ -1096,10 +1103,9 @@ trait PartialCSSProperties extends js.Object {
   var offsetInlineEnd: js.UndefOr[InsetInlineEndProperty[String | Double]] = js.undefined
   var offsetInlineStart: js.UndefOr[InsetInlineStartProperty[String | Double]] = js.undefined
   var offsetPath: js.UndefOr[OffsetPathProperty] = js.undefined
-  var offsetPosition: js.UndefOr[OffsetPositionProperty[String | Double]] = js.undefined
   var offsetRotate: js.UndefOr[OffsetRotateProperty] = js.undefined
   var offsetRotation: js.UndefOr[OffsetRotateProperty] = js.undefined
-  var opacity: js.UndefOr[GlobalsNumber] = js.undefined
+  var opacity: js.UndefOr[OpacityProperty] = js.undefined
   var order: js.UndefOr[GlobalsNumber] = js.undefined
   var orphans: js.UndefOr[GlobalsNumber] = js.undefined
   var outline: js.UndefOr[OutlineProperty[String | Double]] = js.undefined
@@ -1116,6 +1122,8 @@ trait PartialCSSProperties extends js.Object {
   var overflowX: js.UndefOr[OverflowXProperty] = js.undefined
   var overflowY: js.UndefOr[OverflowYProperty] = js.undefined
   var overscrollBehavior: js.UndefOr[OverscrollBehaviorProperty] = js.undefined
+  var overscrollBehaviorBlock: js.UndefOr[OverscrollBehaviorBlockProperty] = js.undefined
+  var overscrollBehaviorInline: js.UndefOr[OverscrollBehaviorInlineProperty] = js.undefined
   var overscrollBehaviorX: js.UndefOr[OverscrollBehaviorXProperty] = js.undefined
   var overscrollBehaviorY: js.UndefOr[OverscrollBehaviorYProperty] = js.undefined
   var padding: js.UndefOr[PaddingProperty[String | Double]] = js.undefined
@@ -1182,8 +1190,9 @@ trait PartialCSSProperties extends js.Object {
   var scrollSnapTypeX: js.UndefOr[ScrollSnapTypeXProperty] = js.undefined
   var scrollSnapTypeY: js.UndefOr[ScrollSnapTypeYProperty] = js.undefined
   var scrollbarColor: js.UndefOr[ScrollbarColorProperty] = js.undefined
+  var scrollbarTrackColor: js.UndefOr[MsScrollbarTrackColorProperty] = js.undefined
   var scrollbarWidth: js.UndefOr[ScrollbarWidthProperty] = js.undefined
-  var shapeImageThreshold: js.UndefOr[GlobalsNumber] = js.undefined
+  var shapeImageThreshold: js.UndefOr[ShapeImageThresholdProperty] = js.undefined
   var shapeMargin: js.UndefOr[ShapeMarginProperty[String | Double]] = js.undefined
   var shapeOutside: js.UndefOr[ShapeOutsideProperty] = js.undefined
   var shapeRendering: js.UndefOr[ShapeRenderingProperty] = js.undefined
@@ -1204,12 +1213,14 @@ trait PartialCSSProperties extends js.Object {
   var textAnchor: js.UndefOr[TextAnchorProperty] = js.undefined
   var textCombineHorizontal: js.UndefOr[TextCombineUprightProperty] = js.undefined
   var textCombineUpright: js.UndefOr[TextCombineUprightProperty] = js.undefined
-  var textDecoration: js.UndefOr[TextDecorationProperty] = js.undefined
+  var textDecoration: js.UndefOr[TextDecorationProperty[String | Double]] = js.undefined
   var textDecorationColor: js.UndefOr[TextDecorationColorProperty] = js.undefined
   var textDecorationLine: js.UndefOr[TextDecorationLineProperty] = js.undefined
   var textDecorationSkip: js.UndefOr[TextDecorationSkipProperty] = js.undefined
   var textDecorationSkipInk: js.UndefOr[TextDecorationSkipInkProperty] = js.undefined
   var textDecorationStyle: js.UndefOr[TextDecorationStyleProperty] = js.undefined
+  var textDecorationThickness: js.UndefOr[TextDecorationThicknessProperty[String | Double]] = js.undefined
+  var textDecorationWidth: js.UndefOr[TextDecorationThicknessProperty[String | Double]] = js.undefined
   var textEmphasis: js.UndefOr[TextEmphasisProperty] = js.undefined
   var textEmphasisColor: js.UndefOr[TextEmphasisColorProperty] = js.undefined
   var textEmphasisPosition: js.UndefOr[GlobalsString] = js.undefined
@@ -1222,6 +1233,7 @@ trait PartialCSSProperties extends js.Object {
   var textShadow: js.UndefOr[TextShadowProperty] = js.undefined
   var textSizeAdjust: js.UndefOr[TextSizeAdjustProperty] = js.undefined
   var textTransform: js.UndefOr[TextTransformProperty] = js.undefined
+  var textUnderlineOffset: js.UndefOr[TextUnderlineOffsetProperty[String | Double]] = js.undefined
   var textUnderlinePosition: js.UndefOr[TextUnderlinePositionProperty] = js.undefined
   var top: js.UndefOr[TopProperty[String | Double]] = js.undefined
   var touchAction: js.UndefOr[TouchActionProperty] = js.undefined
@@ -1264,7 +1276,7 @@ object PartialCSSProperties {
     KhtmlBoxOrient: BoxOrientProperty = null,
     KhtmlBoxPack: BoxPackProperty = null,
     KhtmlLineBreak: LineBreakProperty = null,
-    KhtmlOpacity: GlobalsNumber = null,
+    KhtmlOpacity: OpacityProperty = null,
     KhtmlUserSelect: UserSelectProperty = null,
     MozAnimation: AnimationProperty = null,
     MozAnimationDelay: GlobalsString = null,
@@ -1323,7 +1335,7 @@ object PartialCSSProperties {
     MozImageRegion: MozImageRegionProperty = null,
     MozMarginEnd: MarginInlineEndProperty[String | Double] = null,
     MozMarginStart: MarginInlineStartProperty[String | Double] = null,
-    MozOpacity: GlobalsNumber = null,
+    MozOpacity: OpacityProperty = null,
     MozOrient: MozOrientProperty = null,
     MozOutline: OutlineProperty[String | Double] = null,
     MozOutlineColor: OutlineColorProperty = null,

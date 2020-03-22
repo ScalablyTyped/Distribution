@@ -10,15 +10,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object pickerPopupMod extends js.Object {
   @js.native
-  class default protected () extends AnonCallBackCallbackComponentWillReceiveProps {
+  class default protected () extends AnonComponentWillReceiveProps {
     def this(props: ReadonlyPopupPickerProps) = this()
   }
   
   @js.native
-  object default extends Instantiable1[
-          /* props */ ReadonlyPopupPickerProps, 
-          AnonCallBackCallbackComponentWillReceiveProps
-        ] {
+  object default extends Instantiable1[/* props */ ReadonlyPopupPickerProps, AnonComponentWillReceiveProps] {
     var contextType: js.UndefOr[Context[_]] = js.native
     var defaultProps: AnonActionTextActiveOpacity = js.native
   }

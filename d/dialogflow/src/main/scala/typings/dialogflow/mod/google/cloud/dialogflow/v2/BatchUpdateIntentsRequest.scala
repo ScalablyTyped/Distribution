@@ -27,7 +27,7 @@ class BatchUpdateIntentsRequest () extends IBatchUpdateIntentsRequest {
   var intentBatchUri_BatchUpdateIntentsRequest: String = js.native
   /** BatchUpdateIntentsRequest intentView. */
   @JSName("intentView")
-  var intentView_BatchUpdateIntentsRequest: IntentView = js.native
+  var intentView_BatchUpdateIntentsRequest: IntentView | String = js.native
   /** BatchUpdateIntentsRequest languageCode. */
   @JSName("languageCode")
   var languageCode_BatchUpdateIntentsRequest: String = js.native

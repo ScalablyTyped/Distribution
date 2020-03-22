@@ -25,7 +25,12 @@ object implementationMod extends js.Object {
   def apply[A0, A1, A2, A3, A /* <: js.Array[_] */, R](thisArg: js.Any, arg0: A0, arg1: A1, arg2: A2, arg3: A3): Instantiable1[/* args */ A, R] = js.native
   def apply[T, A0, A1, A2, A3, A /* <: js.Array[_] */, R](thisArg: T, arg0: A0, arg1: A1, arg2: A2, arg3: A3): js.Function1[/* args */ A, R] = js.native
   @JSName("apply")
-  def apply[AX, R](func: Instantiable1[/* args (repeated) */ AX, R], args: js.Array[_ | AX]): Instantiable1[/* args (repeated) */ AX, R] = js.native
+  def apply[AX, R](func: Instantiable1[/* args (repeated) */ AX, R], args: Array[js.Any | AX]): Instantiable1[/* args (repeated) */ AX, R] = js.native
+  // NewableFunction:
+  @JSName("apply")
+  def apply[A /* <: js.Array[_] */, R](func: Instantiable1[/* args */ A, R], args: js.Array[_]): Instantiable1[/* args */ A, R] = js.native
+  @JSName("apply")
+  def apply[T, AX, R](func: js.ThisFunction1[/* this */ T, /* repeated */ AX, R], args: Array[T | AX]): js.Function1[/* repeated */ AX, R] = js.native
   //#endregion
   //#region bind.apply():
   /**
@@ -67,11 +72,6 @@ object implementationMod extends js.Object {
     func: js.ThisFunction5[/* this */ T, /* arg0 */ A0, /* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* args */ A, R],
     args: js.Tuple5[T, A0, A1, A2, A3]
   ): js.Function1[/* args */ A, R] = js.native
-  // NewableFunction:
-  @JSName("apply")
-  def apply_A_ArrayWildcardR[A /* <: js.Array[_] */, R](func: Instantiable1[/* args */ A, R], args: js.Array[_]): Instantiable1[/* args */ A, R] = js.native
-  @JSName("apply")
-  def apply_TAXR[T, AX, R](func: js.ThisFunction1[/* this */ T, /* repeated */ AX, R], args: js.Array[T | AX]): js.Function1[/* repeated */ AX, R] = js.native
   // NewableFunction:
   def call[A /* <: js.Array[_] */, R](func: Instantiable1[/* args */ A, R], thisArg: js.Any): Instantiable1[/* args */ A, R] = js.native
   def call[AX, R](func: Instantiable1[/* args (repeated) */ AX, R], thisArg: js.Any, args: AX*): Instantiable1[/* args (repeated) */ AX, R] = js.native

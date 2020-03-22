@@ -1,7 +1,7 @@
 package typings.reactDragtastic.mod
 
 import typings.react.mod.ReactNode
-import typings.reactDragtastic.AnonEvents
+import typings.reactDragtastic.StateisActivebooleanevent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,13 +26,13 @@ trait DraggableProps extends js.Object {
   var subscribeTo: js.UndefOr[js.Array[String] | Null] = js.undefined
   /** A string, or array of strings, used to limit which droppable zones will accept <DragComponent/>'s attached to this draggable. */
   var `type`: js.UndefOr[Type] = js.undefined
-  def children(arg: State with AnonEvents): ReactNode
+  def children(arg: StateisActivebooleanevent): ReactNode
 }
 
 object DraggableProps {
   @scala.inline
   def apply(
-    children: State with AnonEvents => ReactNode,
+    children: StateisActivebooleanevent => ReactNode,
     data: js.Any = null,
     delay: Int | Double = null,
     id: Id = null,

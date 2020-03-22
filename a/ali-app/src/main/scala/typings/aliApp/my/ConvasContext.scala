@@ -1,5 +1,6 @@
 package typings.aliApp.my
 
+import typings.aliApp.PartialToTempFilePathOpti
 import typings.aliApp.aliAppStrings.alphabetic
 import typings.aliApp.aliAppStrings.bevel
 import typings.aliApp.aliAppStrings.bottom
@@ -16,7 +17,6 @@ import typings.aliApp.aliAppStrings.round
 import typings.aliApp.aliAppStrings.square
 import typings.aliApp.aliAppStrings.start
 import typings.aliApp.aliAppStrings.top
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -323,7 +323,7 @@ trait ConvasContext extends js.Object {
   		 * 把当前画布的内容导出生成图片，并返回文件路径。
   		 */
   def toTempFilePath(): Unit = js.native
-  def toTempFilePath(options: Partial[ToTempFilePathOptions]): Unit = js.native
+  def toTempFilePath(options: PartialToTempFilePathOpti): Unit = js.native
   /**
   		 * 使用矩阵多次叠加当前变换的方法，矩阵由方法的参数进行描述。你可以缩放、旋转、移动和倾斜上下文。
   		 *

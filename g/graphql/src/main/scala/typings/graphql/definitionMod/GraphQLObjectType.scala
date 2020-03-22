@@ -1,7 +1,6 @@
 package typings.graphql.definitionMod
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.graphql.AnonExtensionASTNodesFields
+import typings.graphql.GraphQLObjectTypeConfigan
 import typings.graphql.astMod.ObjectTypeDefinitionNode
 import typings.graphql.astMod.ObjectTypeExtensionNode
 import typings.graphql.maybeMod.Maybe
@@ -23,7 +22,7 @@ class GraphQLObjectType[TSource, TContext, TArgs] protected () extends js.Object
   def getFields(): GraphQLFieldMap[_, TContext, TArgs] = js.native
   def getInterfaces(): js.Array[GraphQLInterfaceType] = js.native
   def inspect(): String = js.native
-  def toConfig(): (GraphQLObjectTypeConfig[_, _, StringDictionary[_]]) with AnonExtensionASTNodesFields = js.native
+  def toConfig(): GraphQLObjectTypeConfigan = js.native
   def toJSON(): String = js.native
 }
 

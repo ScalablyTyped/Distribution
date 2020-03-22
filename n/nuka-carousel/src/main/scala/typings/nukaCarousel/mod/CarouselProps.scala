@@ -2,6 +2,7 @@ package typings.nukaCarousel.mod
 
 import typings.nukaCarousel.AnonContainerClassName
 import typings.nukaCarousel.nukaCarouselStrings.zoom
+import typings.nukaCarousel.slideActioninCarouselSlid
 import typings.react.mod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -127,11 +128,7 @@ trait CarouselProps extends js.Object {
   /**
     * When enableKeyboardControls is enabled, Configure keyCodes for corresponding slide actions as array of keyCodes
     */
-  var keyCodeConfig: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ slideAction in nuka-carousel.nuka-carousel.CarouselSlideActions ]:? std.Array<number>}
-    */ typings.nukaCarousel.nukaCarouselStrings.CarouselProps with js.Any
-  ] = js.undefined
+  var keyCodeConfig: js.UndefOr[slideActioninCarouselSlid] = js.undefined
   /**
     * optional callback function
     */
@@ -271,9 +268,7 @@ object CarouselProps {
     heightMode: CarouselHeightModeProp = null,
     initialSlideHeight: Int | Double = null,
     initialSlideWidth: Int | Double = null,
-    keyCodeConfig: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ slideAction in nuka-carousel.nuka-carousel.CarouselSlideActions ]:? std.Array<number>}
-    */ typings.nukaCarousel.nukaCarouselStrings.CarouselProps with js.Any = null,
+    keyCodeConfig: slideActioninCarouselSlid = null,
     onDragStart: () => Unit = null,
     onResize: () => Unit = null,
     pauseOnHover: js.UndefOr[Boolean] = js.undefined,

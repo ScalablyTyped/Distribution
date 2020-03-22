@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Validator extends js.Object {
   /**
-    * Either the JSON Schema content or an AWS Lambda function name.
+    * Either the JSON Schema content or the Amazon Resource Name (ARN) of an AWS Lambda function.
     */
   var Content: StringWithLengthBetween0And32768 = js.native
   /**

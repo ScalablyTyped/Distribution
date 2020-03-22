@@ -1,18 +1,18 @@
 package typings.grommet
 
-import typings.grommet.themeContextMod.ThemeValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonValue extends js.Object {
-  var value: ThemeValue
+  var color: String
+  var value: Double | js.Array[Double]
 }
 
 object AnonValue {
   @scala.inline
-  def apply(value: ThemeValue): AnonValue = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+  def apply(color: String, value: Double | js.Array[Double]): AnonValue = {
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AnonValue]
   }

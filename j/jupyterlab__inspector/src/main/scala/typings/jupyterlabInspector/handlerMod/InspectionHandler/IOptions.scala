@@ -1,7 +1,7 @@
 package typings.jupyterlabInspector.handlerMod.InspectionHandler
 
-import typings.jupyterlabCoreutils.interfacesMod.IDataConnector
 import typings.jupyterlabRendermime.tokensMod.IRenderMimeRegistry
+import typings.jupyterlabStatedb.interfacesMod.IDataConnector
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +18,7 @@ trait IOptions extends js.Object {
     * it is acceptable for the other methods to be simple functions that return
     * rejected promises.
     */
-  var connector: IDataConnector[IReply, Unit, IRequest]
+  var connector: IDataConnector[IReply, Unit, IRequest, String]
   /**
     * The mime renderer for the inspection handler.
     */
@@ -27,7 +27,7 @@ trait IOptions extends js.Object {
 
 object IOptions {
   @scala.inline
-  def apply(connector: IDataConnector[IReply, Unit, IRequest], rendermime: IRenderMimeRegistry): IOptions = {
+  def apply(connector: IDataConnector[IReply, Unit, IRequest, String], rendermime: IRenderMimeRegistry): IOptions = {
     val __obj = js.Dynamic.literal(connector = connector.asInstanceOf[js.Any], rendermime = rendermime.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IOptions]

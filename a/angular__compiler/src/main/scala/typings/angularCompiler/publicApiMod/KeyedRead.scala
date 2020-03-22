@@ -10,6 +10,7 @@ class KeyedRead protected ()
   extends typings.angularCompiler.srcCompilerMod.KeyedRead {
   def this(
     span: typings.angularCompiler.astMod.ParseSpan,
+    sourceSpan: typings.angularCompiler.astMod.AbsoluteSourceSpan,
     obj: typings.angularCompiler.astMod.AST,
     key: typings.angularCompiler.astMod.AST
   ) = this()

@@ -1,7 +1,9 @@
 package typings.vscodeLanguageclient.mod
 
+import typings.vscodeLanguageclient.vscodeLanguageclientStrings.textDocumentSlashsignatureHelp
+import typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType
+import typings.vscodeLanguageserverProtocol.protocolMod.SignatureHelpParams
 import typings.vscodeLanguageserverProtocol.protocolMod.SignatureHelpRegistrationOptions
-import typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentPositionParams
 import typings.vscodeLanguageserverTypes.mod.SignatureHelp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,9 +12,11 @@ import scala.scalajs.js.annotation._
 @JSImport("vscode-languageclient", "SignatureHelpRequest")
 @js.native
 object SignatureHelpRequest extends js.Object {
-  val `type`: typings.vscodeJsonrpc.mod.RequestType[
-    TextDocumentPositionParams, 
+  val method: textDocumentSlashsignatureHelp = js.native
+  val `type`: ProtocolRequestType[
+    SignatureHelpParams, 
     SignatureHelp | Null, 
+    scala.Nothing, 
     Unit, 
     SignatureHelpRegistrationOptions
   ] = js.native

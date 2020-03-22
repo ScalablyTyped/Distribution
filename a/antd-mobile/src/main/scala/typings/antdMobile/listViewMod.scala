@@ -34,7 +34,7 @@ object listViewMod extends js.Object {
   @js.native
   object default extends js.Object {
     var DataSource: js.Any = js.native
-    var IndexedList: TypeofClassIndexedList = js.native
+    var IndexedList: TypeofIndexedList = js.native
     var defaultProps: AnonListPrefixCls = js.native
   }
   

@@ -11,11 +11,11 @@ trait Action extends js.Object {
     */
   var clearTimer: js.UndefOr[ClearTimerAction] = js.native
   /**
-    * Sends information about the detector model instance and the event that triggered the action to a Kinesis Data Firehose delivery stream.
+    * Sends information about the detector model instance and the event that triggered the action to an Amazon Kinesis Data Firehose delivery stream.
     */
   var firehose: js.UndefOr[FirehoseAction] = js.native
   /**
-    * Sends an IoT Events input, passing in information about the detector model instance and the event that triggered the action.
+    * Sends an AWS IoT Events input, passing in information about the detector model instance and the event that triggered the action.
     */
   var iotEvents: js.UndefOr[IotEventsAction] = js.native
   /**

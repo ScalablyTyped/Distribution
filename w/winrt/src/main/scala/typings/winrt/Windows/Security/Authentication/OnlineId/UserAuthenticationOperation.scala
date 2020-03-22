@@ -1,6 +1,6 @@
 package typings.winrt.Windows.Security.Authentication.OnlineId
 
-import typings.winrt.AnonCompletedGetResultsAsyncOperationCompletedHandlerUserIdentity
+import typings.winrt.Anon6
 import typings.winrt.Windows.Foundation.AsyncOperationCompletedHandler
 import typings.winrt.Windows.Foundation.AsyncStatus
 import typings.winrt.Windows.Foundation.IAsyncInfo
@@ -21,7 +21,7 @@ class UserAuthenticationOperation ()
   /* CompleteClass */
   override var id: Double = js.native
   @JSName("operation")
-  var operation_UserAuthenticationOperation: AnonCompletedGetResultsAsyncOperationCompletedHandlerUserIdentity = js.native
+  var operation_UserAuthenticationOperation: Anon6 = js.native
   /* CompleteClass */
   override var status: AsyncStatus = js.native
   /* InferMemberOverrides */

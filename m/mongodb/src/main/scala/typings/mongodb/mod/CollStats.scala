@@ -1,6 +1,6 @@
 package typings.mongodb.mod
 
-import typings.mongodb.AnonId
+import typings.mongodb.AnonDictindex
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,7 +22,7 @@ trait CollStats extends js.Object {
   /**
     * Size of specific indexes in bytes.
     */
-  var indexSizes: AnonId
+  var indexSizes: AnonDictindex
   /**
     * Size of the most recently created extent in bytes.
     */
@@ -77,7 +77,7 @@ object CollStats {
     avgObjSize: scala.Double,
     capped: Boolean,
     count: scala.Double,
-    indexSizes: AnonId,
+    indexSizes: AnonDictindex,
     lastExtentSize: scala.Double,
     max: scala.Double,
     maxSize: scala.Double,

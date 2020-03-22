@@ -9,9 +9,10 @@ import scala.scalajs.js.annotation._
 object webGLPropertiesMod extends js.Object {
   @js.native
   class WebGLProperties () extends js.Object {
-    def clear(): Unit = js.native
-    def delete(`object`: js.Any): Unit = js.native
+    def dispose(): Unit = js.native
     def get(`object`: js.Any): js.Any = js.native
+    def remove(`object`: js.Any): Unit = js.native
+    def update(`object`: js.Any, key: js.Any, value: js.Any): js.Any = js.native
   }
   
 }

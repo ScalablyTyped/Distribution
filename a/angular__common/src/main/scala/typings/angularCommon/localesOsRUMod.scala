@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object localesOsRUMod extends js.Object {
   val default: js.Array[
-    String | Double | (js.Array[js.UndefOr[js.Array[String] | Double | String]]) | (js.Function1[/* n */ Double, Double]) | AnonJPYRUBArray
+    String | Double | (js.Array[js.UndefOr[js.Array[String] | Double | String]]) | (js.Function1[/* n */ Double, Double]) | AnonRUBArray
   ] = js.native
 }
 

@@ -2,9 +2,9 @@ package typings.elasticElasticsearch.mod
 
 import org.scalablytyped.runtime.Instantiable0
 import typings.elasticElasticsearch.AnonId
-import typings.elasticElasticsearch.AnonOpts
-import typings.elasticElasticsearch.AnonOptsResurrectStrategies
-import typings.elasticElasticsearch.AnonOptsSniffReasons
+import typings.elasticElasticsearch.AnonInstantiable
+import typings.elasticElasticsearch.AnonResurrectStrategies
+import typings.elasticElasticsearch.AnonSniffReasons
 import typings.elasticElasticsearch.connectionMod.AgentOptions
 import typings.elasticElasticsearch.connectionMod.agentFn
 import typings.elasticElasticsearch.elasticElasticsearchStrings.gzip
@@ -25,10 +25,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ClientOptions extends js.Object {
-  var Connection: js.UndefOr[AnonOpts] = js.undefined
-  var ConnectionPool: js.UndefOr[AnonOptsResurrectStrategies] = js.undefined
+  var Connection: js.UndefOr[AnonInstantiable] = js.undefined
+  var ConnectionPool: js.UndefOr[AnonResurrectStrategies] = js.undefined
   var Serializer: js.UndefOr[Instantiable0[default]] = js.undefined
-  var Transport: js.UndefOr[AnonOptsSniffReasons] = js.undefined
+  var Transport: js.UndefOr[AnonSniffReasons] = js.undefined
   var agent: js.UndefOr[AgentOptions | agentFn] = js.undefined
   var auth: js.UndefOr[BasicAuth | ApiKeyAuth] = js.undefined
   var cloud: js.UndefOr[AnonId] = js.undefined
@@ -56,10 +56,10 @@ trait ClientOptions extends js.Object {
 object ClientOptions {
   @scala.inline
   def apply(
-    Connection: AnonOpts = null,
-    ConnectionPool: AnonOptsResurrectStrategies = null,
+    Connection: AnonInstantiable = null,
+    ConnectionPool: AnonResurrectStrategies = null,
     Serializer: Instantiable0[default] = null,
-    Transport: AnonOptsSniffReasons = null,
+    Transport: AnonSniffReasons = null,
     agent: AgentOptions | agentFn = null,
     auth: BasicAuth | ApiKeyAuth = null,
     cloud: AnonId = null,

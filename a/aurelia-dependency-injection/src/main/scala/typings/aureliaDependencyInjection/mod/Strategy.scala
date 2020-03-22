@@ -1,39 +1,55 @@
 package typings.aureliaDependencyInjection.mod
 
-import typings.aureliaDependencyInjection.aureliaDependencyInjectionNumbers.`0`
-import typings.aureliaDependencyInjection.aureliaDependencyInjectionNumbers.`1`
-import typings.aureliaDependencyInjection.aureliaDependencyInjectionNumbers.`2`
-import typings.aureliaDependencyInjection.aureliaDependencyInjectionNumbers.`3`
-import typings.aureliaDependencyInjection.aureliaDependencyInjectionNumbers.`4`
-import typings.aureliaDependencyInjection.aureliaDependencyInjectionNumbers.`5`
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Rewritten from type alias, can be one of: 
-  - typings.aureliaDependencyInjection.aureliaDependencyInjectionNumbers.`0`
-  - typings.aureliaDependencyInjection.aureliaDependencyInjectionNumbers.`1`
-  - typings.aureliaDependencyInjection.aureliaDependencyInjectionNumbers.`2`
-  - typings.aureliaDependencyInjection.aureliaDependencyInjectionNumbers.`3`
-  - typings.aureliaDependencyInjection.aureliaDependencyInjectionNumbers.`4`
-  - typings.aureliaDependencyInjection.aureliaDependencyInjectionNumbers.`5`
-*/
-trait Strategy extends js.Object
+@js.native
+sealed trait Strategy extends js.Object
 
-object Strategy {
-  @scala.inline
-  def alias: `5` = this.cast(5)
-  @scala.inline
-  def array: `4` = this.cast(4)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def function: `3` = this.cast(3)
-  @scala.inline
-  def instance: `0` = this.cast(0)
-  @scala.inline
-  def singleton: `1` = this.cast(1)
-  @scala.inline
-  def transient: `2` = this.cast(2)
+@JSImport("aurelia-dependency-injection", "Strategy")
+@js.native
+object Strategy extends js.Object {
+  @js.native
+  sealed trait alias extends Strategy
+  
+  @js.native
+  sealed trait array extends Strategy
+  
+  @js.native
+  sealed trait function extends Strategy
+  
+  @js.native
+  sealed trait instance extends Strategy
+  
+  @js.native
+  sealed trait singleton extends Strategy
+  
+  @js.native
+  sealed trait transient extends Strategy
+  
+  @JSBracketAccess
+  def apply(value: Double): js.UndefOr[Strategy with Double] = js.native
+  /* 5 */ @js.native
+  object alias extends TopLevel[alias with Double]
+  
+  /* 4 */ @js.native
+  object array extends TopLevel[array with Double]
+  
+  /* 3 */ @js.native
+  object function extends TopLevel[function with Double]
+  
+  /* 0 */ @js.native
+  object instance extends TopLevel[instance with Double]
+  
+  /* 1 */ @js.native
+  object singleton
+    extends TopLevel[typings.aureliaDependencyInjection.mod.Strategy.singleton with Double]
+  
+  /* 2 */ @js.native
+  object transient
+    extends TopLevel[typings.aureliaDependencyInjection.mod.Strategy.transient with Double]
+  
 }
 

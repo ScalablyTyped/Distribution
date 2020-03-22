@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "jest-get-type" : "24.9.0"
+      "jest-get-type" : "25.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "jest-get-type" : "24.9.0"
+      "jest-get-type" : "25.1.0"
     }
   ],
   "compile-devDependencies" : [

@@ -5,15 +5,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonWindowIdNumber extends js.Object {
-  /** The ID of the window the selected tab changed inside of. */
-  var windowId: Double
+  /** Specify the window to get the openness from. */
+  var windowId: js.UndefOr[Double] = js.undefined
 }
 
 object AnonWindowIdNumber {
   @scala.inline
-  def apply(windowId: Double): AnonWindowIdNumber = {
-    val __obj = js.Dynamic.literal(windowId = windowId.asInstanceOf[js.Any])
-  
+  def apply(windowId: Int | Double = null): AnonWindowIdNumber = {
+    val __obj = js.Dynamic.literal()
+    if (windowId != null) __obj.updateDynamic("windowId")(windowId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnonWindowIdNumber]
   }
 }

@@ -11,6 +11,7 @@ trait Context extends js.Object {
   var app: Mali = js.native
   var call: GrpcCall = js.native
   var fullName: String = js.native
+  var locals: js.Object = js.native
   var metadata: js.Any = js.native
   var name: String = js.native
   var req: GrpcRequest = js.native

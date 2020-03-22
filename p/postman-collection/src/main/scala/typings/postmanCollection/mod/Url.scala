@@ -1,7 +1,7 @@
 package typings.postmanCollection.mod
 
-import typings.postmanCollection.AnonEncodeIgnoredDisabled
 import typings.postmanCollection.AnonForcePort
+import typings.postmanCollection.AnonIgnoredDisabled
 import typings.postmanCollection.AnonPassword
 import typings.postmanCollection.AnonUnresolved
 import scala.scalajs.js
@@ -32,7 +32,7 @@ class Url protected () extends PropertyBase[UrlDefinition] {
   def getPath(options: AnonUnresolved): String = js.native
   def getPathWithQuery(): String = js.native
   def getQueryString(): String = js.native
-  def getQueryString(options: AnonEncodeIgnoredDisabled): String = js.native
+  def getQueryString(options: AnonIgnoredDisabled): String = js.native
   def getRaw(): String = js.native
   def getRemote(): String = js.native
   def getRemote(options: AnonForcePort): String = js.native

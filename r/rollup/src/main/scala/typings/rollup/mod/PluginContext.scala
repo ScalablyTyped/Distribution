@@ -3,8 +3,8 @@ package typings.rollup.mod
 import typings.estree.mod.Program
 import typings.node.Buffer
 import typings.node.eventsMod.EventEmitter
-import typings.rollup.AnonColumnLine
 import typings.rollup.AnonHasModuleSideEffects
+import typings.rollup.AnonLine
 import typings.rollup.AnonName
 import typings.rollup.AnonSkipSelf
 import typings.std.IterableIterator
@@ -40,10 +40,10 @@ trait PluginContext extends MinimalPluginContext {
   def emitFile(emittedFile: EmittedFile): String = js.native
   def error(err: String): scala.Nothing = js.native
   def error(err: String, pos: Double): scala.Nothing = js.native
-  def error(err: String, pos: AnonColumnLine): scala.Nothing = js.native
+  def error(err: String, pos: AnonLine): scala.Nothing = js.native
   def error(err: RollupError): scala.Nothing = js.native
   def error(err: RollupError, pos: Double): scala.Nothing = js.native
-  def error(err: RollupError, pos: AnonColumnLine): scala.Nothing = js.native
+  def error(err: RollupError, pos: AnonLine): scala.Nothing = js.native
   /** @deprecated Use `this.getFileName` instead */
   def getAssetFileName(assetReferenceId: String): String = js.native
   /** @deprecated Use `this.getFileName` instead */
@@ -61,9 +61,9 @@ trait PluginContext extends MinimalPluginContext {
   def setAssetSource(assetReferenceId: String, source: Buffer): Unit = js.native
   def warn(warning: String): Unit = js.native
   def warn(warning: String, pos: Double): Unit = js.native
-  def warn(warning: String, pos: AnonColumnLine): Unit = js.native
+  def warn(warning: String, pos: AnonLine): Unit = js.native
   def warn(warning: RollupWarning): Unit = js.native
   def warn(warning: RollupWarning, pos: Double): Unit = js.native
-  def warn(warning: RollupWarning, pos: AnonColumnLine): Unit = js.native
+  def warn(warning: RollupWarning, pos: AnonLine): Unit = js.native
 }
 

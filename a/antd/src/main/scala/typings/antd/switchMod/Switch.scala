@@ -13,7 +13,7 @@ trait Switch
   var rcSwitch: js.Any = js.native
   def blur(): Unit = js.native
   def focus(): Unit = js.native
-  def renderSwitch(hasGetPrefixCls: ConfigConsumerProps): Element = js.native
+  def renderSwitch(hasGetPrefixClsDirection: ConfigConsumerProps): Element = js.native
   def saveSwitch(node: js.Any): Unit = js.native
 }
 

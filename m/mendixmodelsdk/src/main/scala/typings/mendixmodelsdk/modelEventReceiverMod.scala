@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 object modelEventReceiverMod extends js.Object {
   @js.native
   class ModelEventReceiver protected () extends js.Object {
-    def this(workingCopyId: String, client: IModelServerClient, errorHandler: AnonErrorCallback) = this()
+    def this(workingCopyId: String, client: IModelServerClient, errorHandler: AnonHandleError) = this()
     var client: js.Any = js.native
     var deltaEventEmitter: js.Any = js.native
     var errorHandler: js.Any = js.native

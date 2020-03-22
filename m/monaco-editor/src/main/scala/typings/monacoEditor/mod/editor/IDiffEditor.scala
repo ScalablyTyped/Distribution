@@ -52,5 +52,9 @@ trait IDiffEditor extends IEditor {
     * It is safe to call setModel(null) to simply detach the current model from the editor.
     */
   def setModel(model: IDiffEditorModel): Unit = js.native
+  /**
+    * Update the editor's options after the editor has been created.
+    */
+  def updateOptions(newOptions: IDiffEditorOptions): Unit = js.native
 }
 

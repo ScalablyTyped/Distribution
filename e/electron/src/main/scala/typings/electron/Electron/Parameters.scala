@@ -9,16 +9,16 @@ import scala.scalajs.js.annotation._
 trait Parameters extends js.Object {
   /**
     * Set the device scale factor (if zero defaults to original device scale factor)
-    * (default: 0).
+    * (default: `0`).
     */
   var deviceScaleFactor: Double
   /**
     * Scale of emulated view inside available space (not in fit to view mode)
-    * (default: 1).
+    * (default: `1`).
     */
   var scale: Double
   /**
-    * Specify the screen type to emulate (default: desktop):
+    * Specify the screen type to emulate (default: `desktop`):
     */
   var screenPosition: desktop | mobile
   /**
@@ -26,8 +26,8 @@ trait Parameters extends js.Object {
     */
   var screenSize: Size
   /**
-    * Position the view on the screen (screenPosition == mobile) (default: { x: 0, y:
-    * 0 }).
+    * Position the view on the screen (screenPosition == mobile) (default: `{ x: 0, y:
+    * 0 }`).
     */
   var viewPosition: Point
   /**

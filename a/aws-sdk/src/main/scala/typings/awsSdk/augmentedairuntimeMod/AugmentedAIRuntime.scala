@@ -39,12 +39,12 @@ trait AugmentedAIRuntime extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeHumanLoopResponse, Unit]
   ): Request[DescribeHumanLoopResponse, AWSError] = js.native
   /**
-    * Returns information about human loops, given the specified parameters.
+    * Returns information about human loops, given the specified parameters. If a human loop was deleted, it will not be included.
     */
   def listHumanLoops(): Request[ListHumanLoopsResponse, AWSError] = js.native
   def listHumanLoops(callback: js.Function2[/* err */ AWSError, /* data */ ListHumanLoopsResponse, Unit]): Request[ListHumanLoopsResponse, AWSError] = js.native
   /**
-    * Returns information about human loops, given the specified parameters.
+    * Returns information about human loops, given the specified parameters. If a human loop was deleted, it will not be included.
     */
   def listHumanLoops(params: ListHumanLoopsRequest): Request[ListHumanLoopsResponse, AWSError] = js.native
   def listHumanLoops(

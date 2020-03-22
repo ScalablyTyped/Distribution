@@ -6,10 +6,9 @@ import scala.scalajs.js.annotation._
 
 trait PlotSunburstOptions extends js.Object {
   /**
-    * (Highcharts) Accessibility options for a series. Requires the
-    * accessibility module.
+    * (Highcharts) Accessibility options for a series.
     */
-  var accessibility: js.UndefOr[js.Object | PlotSunburstAccessibilityOptions] = js.undefined
+  var accessibility: js.UndefOr[SeriesAccessibilityOptionsObject] = js.undefined
   /**
     * (Highcharts) Allow this series' points to be selected by clicking on the
     * graphic (columns, point markers, pie slices, map areas etc).
@@ -41,7 +40,7 @@ trait PlotSunburstOptions extends js.Object {
     * Due to poor performance, animation is disabled in old IE browsers for
     * several chart types.
     */
-  var animation: js.UndefOr[Boolean | AnimationOptionsObject | PlotSunburstAnimationOptions] = js.undefined
+  var animation: js.UndefOr[Boolean | AnimationOptionsObject] = js.undefined
   /**
     * (Highcharts) Sets the color blending in the boost module.
     */
@@ -104,18 +103,19 @@ trait PlotSunburstOptions extends js.Object {
   var colors: js.UndefOr[js.Array[ColorString | GradientColorObject | PatternObject]] = js.undefined
   /**
     * (Highstock) Defines if comparison should start from the first point
-    * within the visible range or should start from the first point (see online
-    * documentation for example) the range. In other words, this flag
-    * determines if first point within the visible range will have 0%
-    * (`compareStart=true`) or should have been already calculated according to
-    * the previous point (`compareStart=false`).
+    * within the visible range or should start from the first point **before**
+    * the range.
+    *
+    * In other words, this flag determines if first point within the visible
+    * range will have 0% (`compareStart=true`) or should have been already
+    * calculated according to the previous point (`compareStart=false`).
     */
   var compareStart: js.UndefOr[Boolean] = js.undefined
   /**
     * (Gantt) Override Pathfinder connector options for a series. Requires
     * Highcharts Gantt to be loaded.
     */
-  var connectors: js.UndefOr[PlotSunburstConnectorsOptions] = js.undefined
+  var connectors: js.UndefOr[SeriesConnectorsOptionsObject] = js.undefined
   /**
     * (Highcharts) You can set the cursor to "pointer" if you have click events
     * attached to the series, to signal to the user that the points and lines
@@ -126,8 +126,8 @@ trait PlotSunburstOptions extends js.Object {
     */
   var cursor: js.UndefOr[String | CursorValue] = js.undefined
   /**
-    * (Highcharts) Options for the series data labels, appearing next to each
-    * data point.
+    * (Highcharts, Highstock, Highmaps, Gantt) Options for the series data
+    * labels, appearing next to each data point.
     *
     * Since v6.2.0, multiple data labels can be applied to each single point by
     * defining them as an array of configs.
@@ -155,7 +155,7 @@ trait PlotSunburstOptions extends js.Object {
     * hooks can also be attached to the series at run time using the
     * `Highcharts.addEvent` function.
     */
-  var events: js.UndefOr[PlotSunburstEventsOptions] = js.undefined
+  var events: js.UndefOr[SeriesEventsOptionsObject] = js.undefined
   /**
     * (Highcharts) If the total sum of the pie's values is 0, the series is
     * represented as an empty circle . The `fillColor` option defines the color
@@ -179,11 +179,11 @@ trait PlotSunburstOptions extends js.Object {
   /**
     * (Highstock) The line marks the last price from all points.
     */
-  var lastPrice: js.UndefOr[PlotSunburstLastPriceOptions] = js.undefined
+  var lastPrice: js.UndefOr[SeriesLastPriceOptionsObject] = js.undefined
   /**
     * (Highstock) The line marks the last price from visible range of points.
     */
-  var lastVisiblePrice: js.UndefOr[PlotSunburstLastVisiblePriceOptions] = js.undefined
+  var lastVisiblePrice: js.UndefOr[SeriesLastVisiblePriceOptionsObject] = js.undefined
   /**
     * (Highcharts) Used together with the levels and `allowDrillToNode`
     * options. When set to false the first level visible when drilling is
@@ -205,6 +205,10 @@ trait PlotSunburstOptions extends js.Object {
     * Additionally, the value can be ":previous" to link to the previous
     * series. When two series are linked, only the first one appears in the
     * legend. Toggling the visibility of this also toggles the linked series.
+    *
+    * If master series uses data sorting and linked series does not have its
+    * own sorting definition, the linked series will be sorted in the same
+    * order as the master one.
     */
   var linkedTo: js.UndefOr[String] = js.undefined
   /**
@@ -215,7 +219,7 @@ trait PlotSunburstOptions extends js.Object {
   /**
     * (Highcharts) Properties for each single point.
     */
-  var point: js.UndefOr[PlotSunburstPointOptions] = js.undefined
+  var point: js.UndefOr[PlotSeriesPointOptions] = js.undefined
   /**
     * (Highcharts) Same as accessibility.pointDescriptionFormatter, but for an
     * individual series. Overrides the chart wide configuration.
@@ -278,7 +282,7 @@ trait PlotSunburstOptions extends js.Object {
     * and 90 right.
     */
   var startAngle: js.UndefOr[Double] = js.undefined
-  var states: js.UndefOr[PlotSunburstStatesOptions] = js.undefined
+  var states: js.UndefOr[SeriesStatesOptionsObject] = js.undefined
   /**
     * (Highcharts) Sticky tracking of mouse events. When true, the `mouseOut`
     * event on a series isn't triggered until the mouse moves over another
@@ -294,7 +298,7 @@ trait PlotSunburstOptions extends js.Object {
     * single series. Properties are inherited from tooltip, but only the
     * following properties can be defined on a series level.
     */
-  var tooltip: js.UndefOr[PlotSunburstTooltipOptions] = js.undefined
+  var tooltip: js.UndefOr[SeriesTooltipOptionsObject] = js.undefined
   /**
     * (Highcharts) Options for the button appearing when traversing down in a
     * treemap.
@@ -318,10 +322,10 @@ trait PlotSunburstOptions extends js.Object {
 object PlotSunburstOptions {
   @scala.inline
   def apply(
-    accessibility: js.Object | PlotSunburstAccessibilityOptions = null,
+    accessibility: SeriesAccessibilityOptionsObject = null,
     allowPointSelect: js.UndefOr[Boolean] = js.undefined,
     allowTraversingTree: js.UndefOr[Boolean] = js.undefined,
-    animation: Boolean | AnimationOptionsObject | PlotSunburstAnimationOptions = null,
+    animation: Boolean | AnimationOptionsObject = null,
     boostBlending: OptionsBoostBlendingValue = null,
     borderColor: ColorString | GradientColorObject | PatternObject = null,
     borderWidth: Int | Double = null,
@@ -332,23 +336,23 @@ object PlotSunburstOptions {
     colorIndex: Int | Double = null,
     colors: js.Array[ColorString | GradientColorObject | PatternObject] = null,
     compareStart: js.UndefOr[Boolean] = js.undefined,
-    connectors: PlotSunburstConnectorsOptions = null,
+    connectors: SeriesConnectorsOptionsObject = null,
     cursor: String | CursorValue = null,
     dataLabels: SeriesSunburstDataLabelsOptionsObject | js.Array[SeriesSunburstDataLabelsOptionsObject] = null,
     description: String = null,
     enableMouseTracking: js.UndefOr[Boolean] = js.undefined,
-    events: PlotSunburstEventsOptions = null,
+    events: SeriesEventsOptionsObject = null,
     fillColor: ColorString | GradientColorObject | PatternObject = null,
     includeInDataExport: js.UndefOr[Boolean] = js.undefined,
     keys: js.Array[String] = null,
-    lastPrice: PlotSunburstLastPriceOptions = null,
-    lastVisiblePrice: PlotSunburstLastVisiblePriceOptions = null,
+    lastPrice: SeriesLastPriceOptionsObject = null,
+    lastVisiblePrice: SeriesLastVisiblePriceOptionsObject = null,
     levelIsConstant: js.UndefOr[Boolean] = js.undefined,
     levelSize: PlotSunburstLevelSizeOptions = null,
     levels: js.Array[PlotSunburstLevelsOptions] = null,
     linkedTo: String = null,
     opacity: Int | Double = null,
-    point: PlotSunburstPointOptions = null,
+    point: PlotSeriesPointOptions = null,
     pointDescriptionFormatter: js.Function = null,
     rootId: String = null,
     selected: js.UndefOr[Boolean] = js.undefined,
@@ -360,9 +364,9 @@ object PlotSunburstOptions {
     skipKeyboardNavigation: js.UndefOr[Boolean] = js.undefined,
     slicedOffset: Int | Double = null,
     startAngle: Int | Double = null,
-    states: PlotSunburstStatesOptions = null,
+    states: SeriesStatesOptionsObject = null,
     stickyTracking: js.UndefOr[Boolean] = js.undefined,
-    tooltip: PlotSunburstTooltipOptions = null,
+    tooltip: SeriesTooltipOptionsObject = null,
     traverseUpButton: PlotSunburstTraverseUpButtonOptions = null,
     useOhlcData: js.UndefOr[Boolean] = js.undefined,
     visible: js.UndefOr[Boolean] = js.undefined,

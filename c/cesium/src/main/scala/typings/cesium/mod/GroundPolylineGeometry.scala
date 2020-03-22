@@ -1,6 +1,6 @@
 package typings.cesium.mod
 
-import typings.cesium.AnonArcTypeGranularity
+import typings.cesium.AnonLoop
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("cesium", "GroundPolylineGeometry")
 @js.native
 class GroundPolylineGeometry protected () extends Packable {
-  def this(options: AnonArcTypeGranularity) = this()
+  def this(options: AnonLoop) = this()
   var arcType: ArcType = js.native
   var granularity: Boolean = js.native
   var loop: Boolean = js.native

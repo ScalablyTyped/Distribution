@@ -83,7 +83,7 @@ object specsSpecBuilderMod extends js.Object {
     def enableNetwork(): this.type = js.native
     /** Overrides the currently expected set of active targets. */
     def expectActiveTargets(targets: AnonQueryResumeToken*): this.type = js.native
-    def expectEvents(query: Query, events: AnonAddedErrorCode): this.type = js.native
+    def expectEvents(query: Query, events: AnonErrorCode): this.type = js.native
     def expectIsShutdown(): this.type = js.native
     /**
       * Expects a document to be in limbo. A targetId is assigned if it's not in
@@ -138,7 +138,7 @@ object specsSpecBuilderMod extends js.Object {
     /**
       * Exports the spec steps as a JSON object that be used in the spec runner.
       */
-    def toJSON(): AnonConfigSteps = js.native
+    def toJSON(): AnonSteps = js.native
     def userAddsSnapshotsInSyncListener(): this.type = js.native
     def userDeletes(key: String): this.type = js.native
     def userListens(query: Query): this.type = js.native
@@ -189,7 +189,7 @@ object specsSpecBuilderMod extends js.Object {
     var queryToSpec: js.Any = js.native
   }
   
-  type ActiveTargetMap = StringDictionary[AnonQueriesResumeToken]
+  type ActiveTargetMap = StringDictionary[AnonResumeToken]
   type LimboMap = StringDictionary[TargetId]
 }
 

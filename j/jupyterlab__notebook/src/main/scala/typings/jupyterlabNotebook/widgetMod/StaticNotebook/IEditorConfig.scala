@@ -1,7 +1,6 @@
 package typings.jupyterlabNotebook.widgetMod.StaticNotebook
 
-import typings.jupyterlabCodeeditor.editorMod.CodeEditor.IConfig
-import typings.std.Partial
+import typings.jupyterlabNotebook.PartialIConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,20 +12,20 @@ trait IEditorConfig extends js.Object {
   /**
     * Config options for code cells.
     */
-  val code: Partial[IConfig]
+  val code: PartialIConfig
   /**
     * Config options for markdown cells.
     */
-  val markdown: Partial[IConfig]
+  val markdown: PartialIConfig
   /**
     * Config options for raw cells.
     */
-  val raw: Partial[IConfig]
+  val raw: PartialIConfig
 }
 
 object IEditorConfig {
   @scala.inline
-  def apply(code: Partial[IConfig], markdown: Partial[IConfig], raw: Partial[IConfig]): IEditorConfig = {
+  def apply(code: PartialIConfig, markdown: PartialIConfig, raw: PartialIConfig): IEditorConfig = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], markdown = markdown.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IEditorConfig]

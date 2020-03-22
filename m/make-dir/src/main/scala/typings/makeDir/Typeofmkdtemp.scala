@@ -1,9 +1,9 @@
 package typings.makeDir
 
 import typings.makeDir.makeDirStrings.buffer
-import typings.node.AnonBufferEncoding
-import typings.node.AnonEncodingBufferEncoding
-import typings.node.AnonEncodingNull
+import typings.node.Anon2
+import typings.node.Anon3
+import typings.node.AnonEncoding
 import typings.node.Buffer
 import typings.node.BufferEncoding
 import typings.node.NodeJS.ErrnoException
@@ -45,7 +45,7 @@ trait Typeofmkdtemp extends js.Object {
   ): Unit = js.native
   def apply(
     prefix: String,
-    options: AnonBufferEncoding,
+    options: Anon2,
     callback: js.Function2[/* err */ ErrnoException | Null, /* folder */ Buffer, Unit]
   ): Unit = js.native
   /**
@@ -55,8 +55,8 @@ trait Typeofmkdtemp extends js.Object {
     */
   def apply(
     prefix: String,
-    options: AnonEncodingBufferEncoding,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* folder */ String, Unit]
+    options: Anon3,
+    callback: js.Function2[/* err */ ErrnoException | Null, /* folder */ String | Buffer, Unit]
   ): Unit = js.native
   /**
     * Asynchronously creates a unique temporary directory.
@@ -65,8 +65,8 @@ trait Typeofmkdtemp extends js.Object {
     */
   def apply(
     prefix: String,
-    options: AnonEncodingNull,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* folder */ String | Buffer, Unit]
+    options: AnonEncoding,
+    callback: js.Function2[/* err */ ErrnoException | Null, /* folder */ String, Unit]
   ): Unit = js.native
   def apply(
     prefix: String,
@@ -85,9 +85,9 @@ trait Typeofmkdtemp extends js.Object {
     * Generates six random characters to be appended behind a required prefix to create a unique temporary directory.
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
-  def __promisify__(prefix: String, options: AnonBufferEncoding): js.Promise[Buffer] = js.native
-  def __promisify__(prefix: String, options: AnonEncodingBufferEncoding): js.Promise[String] = js.native
-  def __promisify__(prefix: String, options: AnonEncodingNull): js.Promise[String | Buffer] = js.native
+  def __promisify__(prefix: String, options: Anon2): js.Promise[Buffer] = js.native
+  def __promisify__(prefix: String, options: Anon3): js.Promise[String | Buffer] = js.native
+  def __promisify__(prefix: String, options: AnonEncoding): js.Promise[String] = js.native
   def __promisify__(prefix: String, options: BufferEncoding): js.Promise[String] = js.native
   @JSName("__promisify__")
   def __promisify___buffer(prefix: String, options: buffer): js.Promise[Buffer] = js.native

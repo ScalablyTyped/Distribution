@@ -1,6 +1,6 @@
 package typings.dispatchr.mod
 
-import typings.dispatchr.FnName
+import typings.dispatchr.FnCall
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DispatcherInterface extends js.Object {
   @JSName("getStore")
-  var getStore_Original: FnName = js.native
+  var getStore_Original: FnCall = js.native
   @JSName("waitFor")
   var waitFor_Original: js.Function2[/* stores */ js.Array[String | StoreClass], /* callback */ js.Function0[Unit], Unit] = js.native
   def getContext(): DispatcherContext = js.native

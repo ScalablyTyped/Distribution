@@ -2,7 +2,7 @@ package typings.dragselect.mod
 
 import typings.dragselect.AnonBottom
 import typings.dragselect.AnonX
-import typings.dragselect.AnonXY
+import typings.dragselect.AnonY
 import typings.dragselect.dragselectBooleans.`false`
 import typings.dragselect.dragselectStrings.altKey
 import typings.dragselect.dragselectStrings.bottom
@@ -149,9 +149,9 @@ trait DragSelect extends js.Object {
     * @param [area]
     * @return scroll X/Y
     */
-  def getScroll(): AnonXY = js.native
-  def getScroll(area: HTMLElement): AnonXY = js.native
-  def getScroll(area: SVGElement): AnonXY = js.native
+  def getScroll(): AnonY = js.native
+  def getScroll(area: HTMLElement): AnonY = js.native
+  def getScroll(area: SVGElement): AnonY = js.native
   /**
     * Gets all nodes that can be selected
     * @return this.selectables

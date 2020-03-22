@@ -25,7 +25,7 @@ trait DescribeTrafficMirrorFiltersRequest extends js.Object {
   /**
     * The ID of the Traffic Mirror filter.
     */
-  var TrafficMirrorFilterIds: js.UndefOr[ValueStringList] = js.native
+  var TrafficMirrorFilterIds: js.UndefOr[TrafficMirrorFilterIdList] = js.native
 }
 
 object DescribeTrafficMirrorFiltersRequest {
@@ -35,7 +35,7 @@ object DescribeTrafficMirrorFiltersRequest {
     Filters: FilterList = null,
     MaxResults: Int | scala.Double = null,
     NextToken: NextToken = null,
-    TrafficMirrorFilterIds: ValueStringList = null
+    TrafficMirrorFilterIds: TrafficMirrorFilterIdList = null
   ): DescribeTrafficMirrorFiltersRequest = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])

@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 @JSImport("util.promisify/polyfill", JSImport.Namespace)
 @js.native
 object polyfillMod extends js.Object {
-  def apply(): AnonArg1 | Typeofpromisify = js.native
+  def apply(): AnonCall | Typeofpromisify = js.native
 }
 

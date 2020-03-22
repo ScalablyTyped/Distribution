@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 class BareFontInfo () extends js.Object {
   val _bareFontInfoBrand: Unit = js.native
   val fontFamily: String = js.native
+  val fontFeatureSettings: String = js.native
   val fontSize: Double = js.native
   val fontWeight: String = js.native
   val letterSpacing: Double = js.native

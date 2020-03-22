@@ -1,6 +1,5 @@
 package typings.reactBootstrap
 
-import typings.react.mod.HTMLProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -123,8 +122,6 @@ trait reactBootstrapProps {
   @scala.inline
   def MediaLeftProps: typings.reactBootstrap.mediaLeftMod.MediaLeftProps.type = typings.reactBootstrap.mediaLeftMod.MediaLeftProps
   type MediaLeftProps = typings.reactBootstrap.mediaLeftMod.MediaLeftProps
-  @scala.inline
-  def MediaListProps: HTMLProps.type = typings.react.mod.HTMLProps
   type MediaListProps = typings.reactBootstrap.mediaListMod.MediaListProps
   @scala.inline
   def MediaListItemProps: typings.reactBootstrap.mediaListItemMod.MediaListItemProps.type = typings.reactBootstrap.mediaListItemMod.MediaListItemProps
@@ -163,14 +160,8 @@ trait reactBootstrapProps {
   @scala.inline
   def NavbarProps: typings.reactBootstrap.navbarMod.NavbarProps.type = typings.reactBootstrap.navbarMod.NavbarProps
   type NavbarProps = typings.reactBootstrap.navbarMod.NavbarProps
-  @scala.inline
-  def NavbarBrandProps: HTMLProps.type = typings.react.mod.HTMLProps
   type NavbarBrandProps = typings.reactBootstrap.navbarBrandMod.NavbarBrandProps
-  @scala.inline
-  def NavbarCollapseProps: HTMLProps.type = typings.react.mod.HTMLProps
   type NavbarCollapseProps = typings.reactBootstrap.navbarCollapseMod.NavbarCollapseProps
-  @scala.inline
-  def NavbarHeaderProps: HTMLProps.type = typings.react.mod.HTMLProps
   type NavbarHeaderProps = typings.reactBootstrap.navbarHeaderMod.NavbarHeaderProps
   @scala.inline
   def NavbarToggleProps: typings.reactBootstrap.navbarToggleMod.NavbarToggleProps.type = typings.reactBootstrap.navbarToggleMod.NavbarToggleProps

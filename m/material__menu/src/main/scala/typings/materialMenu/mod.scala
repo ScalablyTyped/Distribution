@@ -35,7 +35,7 @@ object mod extends js.Object {
     def setAnchorCorner(corner: Double): Unit = js.native
     def setAnchorMargin(margin: AnchorMargin): Unit = js.native
     def show(): Unit = js.native
-    def show(options: AnonFocusIndexNull): Unit = js.native
+    def show(options: Anon0): Unit = js.native
   }
   
   @js.native

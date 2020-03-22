@@ -1,11 +1,11 @@
 package typings.jupyterlabConsole.panelMod.ConsolePanel
 
-import typings.jupyterlabApputils.clientsessionMod.IClientSession.IKernelPreference
+import typings.jupyterlabApputils.sessioncontextMod.ISessionContext.IKernelPreference
 import typings.jupyterlabCodeeditor.mimetypeMod.IEditorMimeTypeService
 import typings.jupyterlabConsole.widgetMod.CodeConsole.IModelFactory
 import typings.jupyterlabRendermime.tokensMod.IRenderMimeRegistry
 import typings.jupyterlabServices.libManagerMod.ServiceManager.IManager
-import typings.phosphorDisposable.mod.IDisposable
+import typings.luminoDisposable.mod.IDisposable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

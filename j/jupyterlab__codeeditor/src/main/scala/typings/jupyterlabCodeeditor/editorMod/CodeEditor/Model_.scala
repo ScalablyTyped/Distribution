@@ -4,7 +4,7 @@ import typings.jupyterlabCoreutils.interfacesMod.IChangedArgs
 import typings.jupyterlabObservables.modeldbMod.IModelDB
 import typings.jupyterlabObservables.observablemapMod.IObservableMap
 import typings.jupyterlabObservables.observablestringMod.IObservableString
-import typings.phosphorSignaling.mod.ISignal
+import typings.luminoSignaling.mod.ISignal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -42,12 +42,7 @@ class Model_ () extends IModel {
     * A signal emitted when a property changes.
     */
   /* CompleteClass */
-  override var mimeTypeChanged: ISignal[IModel, IChangedArgs[String, String]] = js.native
-  /**
-    * A signal emitted when a mimetype changes.
-    */
-  @JSName("mimeTypeChanged")
-  val mimeTypeChanged_Model_ : ISignal[this.type, IChangedArgs[String, String]] = js.native
+  override var mimeTypeChanged: ISignal[IModel, IChangedArgs[String, String, String]] = js.native
   /**
     * The underlying `IModelDB` instance in which model
     * data is stored.
@@ -77,5 +72,32 @@ class Model_ () extends IModel {
     */
   /* CompleteClass */
   override def dispose(): Unit = js.native
+  /**
+    * Whether the model is disposed.
+    */
+  @JSName("isDisposed")
+  def isDisposed_MModel_(): Boolean = js.native
+  /**
+    * A signal emitted when a mimetype changes.
+    */
+  @JSName("mimeTypeChanged")
+  def mimeTypeChanged_MModel_(): ISignal[this.type, IChangedArgs[String, String, String]] = js.native
+  /**
+    * A mime type of the model.
+    */
+  @JSName("mimeType")
+  def mimeType_MModel_(): String = js.native
+  @JSName("mimeType")
+  def mimeType_MModel_(newValue: String): js.Any = js.native
+  /**
+    * Get the selections for the model.
+    */
+  @JSName("selections")
+  def selections_MModel_(): IObservableMap[js.Array[ITextSelection]] = js.native
+  /**
+    * Get the value of the model.
+    */
+  @JSName("value")
+  def value_MModel_(): IObservableString = js.native
 }
 

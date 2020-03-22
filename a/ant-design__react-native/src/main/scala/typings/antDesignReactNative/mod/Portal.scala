@@ -1,6 +1,6 @@
 package typings.antDesignReactNative.mod
 
-import typings.antDesignReactNative.TypeofClassPortalHost
+import typings.antDesignReactNative.TypeofPortalHost
 import typings.antDesignReactNative.portalMod.default
 import typings.react.mod.ReactNode
 import scala.scalajs.js
@@ -37,7 +37,7 @@ class Portal () extends default
 @JSImport("@ant-design/react-native", "Portal")
 @js.native
 object Portal extends js.Object {
-  var Host: TypeofClassPortalHost = js.native
+  var Host: TypeofPortalHost = js.native
   def add(e: ReactNode): Double = js.native
   def remove(key: Double): Unit = js.native
 }

@@ -1,6 +1,6 @@
 package typings.runJxa
 
-import typings.typeFest.mod.JsonValue
+import typings.typeFest.basicMod.JsonValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

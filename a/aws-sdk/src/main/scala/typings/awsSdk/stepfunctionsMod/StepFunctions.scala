@@ -26,12 +26,12 @@ trait StepFunctions extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateActivityOutput, Unit]
   ): Request[CreateActivityOutput, AWSError] = js.native
   /**
-    * Creates a state machine. A state machine consists of a collection of states that can do work (Task states), determine to which states to transition next (Choice states), stop an execution with an error (Fail states), and so on. State machines are specified using a JSON-based, structured language.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes.    CreateStateMachine is an idempotent API. Subsequent requests won’t create a duplicate resource if it was already created. CreateStateMachine's idempotency check is based on the state machine name and definition. If a following request has a different roleArn or tags, Step Functions will ignore these differences and treat it as an idempotent request of the previous. In this case, roleArn and tags will not be updated, even if they are different. 
+    * Creates a state machine. A state machine consists of a collection of states that can do work (Task states), determine to which states to transition next (Choice states), stop an execution with an error (Fail states), and so on. State machines are specified using a JSON-based, structured language. For more information, see Amazon States Language in the AWS Step Functions User Guide.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes.    CreateStateMachine is an idempotent API. Subsequent requests won’t create a duplicate resource if it was already created. CreateStateMachine's idempotency check is based on the state machine name, definition, type, and LoggingConfiguration. If a following request has a different roleArn or tags, Step Functions will ignore these differences and treat it as an idempotent request of the previous. In this case, roleArn and tags will not be updated, even if they are different. 
     */
   def createStateMachine(): Request[CreateStateMachineOutput, AWSError] = js.native
   def createStateMachine(callback: js.Function2[/* err */ AWSError, /* data */ CreateStateMachineOutput, Unit]): Request[CreateStateMachineOutput, AWSError] = js.native
   /**
-    * Creates a state machine. A state machine consists of a collection of states that can do work (Task states), determine to which states to transition next (Choice states), stop an execution with an error (Fail states), and so on. State machines are specified using a JSON-based, structured language.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes.    CreateStateMachine is an idempotent API. Subsequent requests won’t create a duplicate resource if it was already created. CreateStateMachine's idempotency check is based on the state machine name and definition. If a following request has a different roleArn or tags, Step Functions will ignore these differences and treat it as an idempotent request of the previous. In this case, roleArn and tags will not be updated, even if they are different. 
+    * Creates a state machine. A state machine consists of a collection of states that can do work (Task states), determine to which states to transition next (Choice states), stop an execution with an error (Fail states), and so on. State machines are specified using a JSON-based, structured language. For more information, see Amazon States Language in the AWS Step Functions User Guide.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes.    CreateStateMachine is an idempotent API. Subsequent requests won’t create a duplicate resource if it was already created. CreateStateMachine's idempotency check is based on the state machine name, definition, type, and LoggingConfiguration. If a following request has a different roleArn or tags, Step Functions will ignore these differences and treat it as an idempotent request of the previous. In this case, roleArn and tags will not be updated, even if they are different. 
     */
   def createStateMachine(params: CreateStateMachineInput): Request[CreateStateMachineOutput, AWSError] = js.native
   def createStateMachine(
@@ -52,12 +52,12 @@ trait StepFunctions extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteActivityOutput, Unit]
   ): Request[DeleteActivityOutput, AWSError] = js.native
   /**
-    * Deletes a state machine. This is an asynchronous operation: It sets the state machine's status to DELETING and begins the deletion process. Each state machine execution is deleted the next time it makes a state transition.  The state machine itself is deleted after all executions are completed or deleted. 
+    * Deletes a state machine. This is an asynchronous operation: It sets the state machine's status to DELETING and begins the deletion process.   For EXPRESSstate machines, the deletion will happen eventually (usually less than a minute). Running executions may emit logs after DeleteStateMachine API is called. 
     */
   def deleteStateMachine(): Request[DeleteStateMachineOutput, AWSError] = js.native
   def deleteStateMachine(callback: js.Function2[/* err */ AWSError, /* data */ DeleteStateMachineOutput, Unit]): Request[DeleteStateMachineOutput, AWSError] = js.native
   /**
-    * Deletes a state machine. This is an asynchronous operation: It sets the state machine's status to DELETING and begins the deletion process. Each state machine execution is deleted the next time it makes a state transition.  The state machine itself is deleted after all executions are completed or deleted. 
+    * Deletes a state machine. This is an asynchronous operation: It sets the state machine's status to DELETING and begins the deletion process.   For EXPRESSstate machines, the deletion will happen eventually (usually less than a minute). Running executions may emit logs after DeleteStateMachine API is called. 
     */
   def deleteStateMachine(params: DeleteStateMachineInput): Request[DeleteStateMachineOutput, AWSError] = js.native
   def deleteStateMachine(
@@ -78,12 +78,12 @@ trait StepFunctions extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeActivityOutput, Unit]
   ): Request[DescribeActivityOutput, AWSError] = js.native
   /**
-    * Describes an execution.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
+    * Describes an execution.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes.  This API action is not supported by EXPRESS state machines.
     */
   def describeExecution(): Request[DescribeExecutionOutput, AWSError] = js.native
   def describeExecution(callback: js.Function2[/* err */ AWSError, /* data */ DescribeExecutionOutput, Unit]): Request[DescribeExecutionOutput, AWSError] = js.native
   /**
-    * Describes an execution.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
+    * Describes an execution.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes.  This API action is not supported by EXPRESS state machines.
     */
   def describeExecution(params: DescribeExecutionInput): Request[DescribeExecutionOutput, AWSError] = js.native
   def describeExecution(
@@ -104,14 +104,14 @@ trait StepFunctions extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeStateMachineOutput, Unit]
   ): Request[DescribeStateMachineOutput, AWSError] = js.native
   /**
-    * Describes the state machine associated with a specific execution.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
+    * Describes the state machine associated with a specific execution.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes.  This API action is not supported by EXPRESS state machines.
     */
   def describeStateMachineForExecution(): Request[DescribeStateMachineForExecutionOutput, AWSError] = js.native
   def describeStateMachineForExecution(
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeStateMachineForExecutionOutput, Unit]
   ): Request[DescribeStateMachineForExecutionOutput, AWSError] = js.native
   /**
-    * Describes the state machine associated with a specific execution.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
+    * Describes the state machine associated with a specific execution.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes.  This API action is not supported by EXPRESS state machines.
     */
   def describeStateMachineForExecution(params: DescribeStateMachineForExecutionInput): Request[DescribeStateMachineForExecutionOutput, AWSError] = js.native
   def describeStateMachineForExecution(
@@ -132,12 +132,12 @@ trait StepFunctions extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetActivityTaskOutput, Unit]
   ): Request[GetActivityTaskOutput, AWSError] = js.native
   /**
-    * Returns the history of the specified execution as a list of events. By default, the results are returned in ascending order of the timeStamp of the events. Use the reverseOrder parameter to get the latest events first. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 24 hours. Using an expired pagination token will return an HTTP 400 InvalidToken error.
+    * Returns the history of the specified execution as a list of events. By default, the results are returned in ascending order of the timeStamp of the events. Use the reverseOrder parameter to get the latest events first. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 24 hours. Using an expired pagination token will return an HTTP 400 InvalidToken error. This API action is not supported by EXPRESS state machines.
     */
   def getExecutionHistory(): Request[GetExecutionHistoryOutput, AWSError] = js.native
   def getExecutionHistory(callback: js.Function2[/* err */ AWSError, /* data */ GetExecutionHistoryOutput, Unit]): Request[GetExecutionHistoryOutput, AWSError] = js.native
   /**
-    * Returns the history of the specified execution as a list of events. By default, the results are returned in ascending order of the timeStamp of the events. Use the reverseOrder parameter to get the latest events first. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 24 hours. Using an expired pagination token will return an HTTP 400 InvalidToken error.
+    * Returns the history of the specified execution as a list of events. By default, the results are returned in ascending order of the timeStamp of the events. Use the reverseOrder parameter to get the latest events first. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 24 hours. Using an expired pagination token will return an HTTP 400 InvalidToken error. This API action is not supported by EXPRESS state machines.
     */
   def getExecutionHistory(params: GetExecutionHistoryInput): Request[GetExecutionHistoryOutput, AWSError] = js.native
   def getExecutionHistory(
@@ -158,12 +158,12 @@ trait StepFunctions extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListActivitiesOutput, Unit]
   ): Request[ListActivitiesOutput, AWSError] = js.native
   /**
-    * Lists the executions of a state machine that meet the filtering criteria. Results are sorted by time, with the most recent execution first. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 24 hours. Using an expired pagination token will return an HTTP 400 InvalidToken error.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
+    * Lists the executions of a state machine that meet the filtering criteria. Results are sorted by time, with the most recent execution first. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 24 hours. Using an expired pagination token will return an HTTP 400 InvalidToken error.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes.  This API action is not supported by EXPRESS state machines.
     */
   def listExecutions(): Request[ListExecutionsOutput, AWSError] = js.native
   def listExecutions(callback: js.Function2[/* err */ AWSError, /* data */ ListExecutionsOutput, Unit]): Request[ListExecutionsOutput, AWSError] = js.native
   /**
-    * Lists the executions of a state machine that meet the filtering criteria. Results are sorted by time, with the most recent execution first. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 24 hours. Using an expired pagination token will return an HTTP 400 InvalidToken error.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
+    * Lists the executions of a state machine that meet the filtering criteria. Results are sorted by time, with the most recent execution first. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 24 hours. Using an expired pagination token will return an HTTP 400 InvalidToken error.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes.  This API action is not supported by EXPRESS state machines.
     */
   def listExecutions(params: ListExecutionsInput): Request[ListExecutionsOutput, AWSError] = js.native
   def listExecutions(
@@ -249,12 +249,12 @@ trait StepFunctions extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ StartExecutionOutput, Unit]
   ): Request[StartExecutionOutput, AWSError] = js.native
   /**
-    * Stops an execution.
+    * Stops an execution. This API action is not supported by EXPRESS state machines.
     */
   def stopExecution(): Request[StopExecutionOutput, AWSError] = js.native
   def stopExecution(callback: js.Function2[/* err */ AWSError, /* data */ StopExecutionOutput, Unit]): Request[StopExecutionOutput, AWSError] = js.native
   /**
-    * Stops an execution.
+    * Stops an execution. This API action is not supported by EXPRESS state machines.
     */
   def stopExecution(params: StopExecutionInput): Request[StopExecutionOutput, AWSError] = js.native
   def stopExecution(
@@ -288,12 +288,12 @@ trait StepFunctions extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceOutput, Unit]
   ): Request[UntagResourceOutput, AWSError] = js.native
   /**
-    * Updates an existing state machine by modifying its definition and/or roleArn. Running executions will continue to use the previous definition and roleArn. You must include at least one of definition or roleArn or you will receive a MissingRequiredParameter error.  All StartExecution calls within a few seconds will use the updated definition and roleArn. Executions started immediately after calling UpdateStateMachine may use the previous state machine definition and roleArn.  
+    * Updates an existing state machine by modifying its definition, roleArn, or loggingConfiguration. Running executions will continue to use the previous definition and roleArn. You must include at least one of definition or roleArn or you will receive a MissingRequiredParameter error.  All StartExecution calls within a few seconds will use the updated definition and roleArn. Executions started immediately after calling UpdateStateMachine may use the previous state machine definition and roleArn.  
     */
   def updateStateMachine(): Request[UpdateStateMachineOutput, AWSError] = js.native
   def updateStateMachine(callback: js.Function2[/* err */ AWSError, /* data */ UpdateStateMachineOutput, Unit]): Request[UpdateStateMachineOutput, AWSError] = js.native
   /**
-    * Updates an existing state machine by modifying its definition and/or roleArn. Running executions will continue to use the previous definition and roleArn. You must include at least one of definition or roleArn or you will receive a MissingRequiredParameter error.  All StartExecution calls within a few seconds will use the updated definition and roleArn. Executions started immediately after calling UpdateStateMachine may use the previous state machine definition and roleArn.  
+    * Updates an existing state machine by modifying its definition, roleArn, or loggingConfiguration. Running executions will continue to use the previous definition and roleArn. You must include at least one of definition or roleArn or you will receive a MissingRequiredParameter error.  All StartExecution calls within a few seconds will use the updated definition and roleArn. Executions started immediately after calling UpdateStateMachine may use the previous state machine definition and roleArn.  
     */
   def updateStateMachine(params: UpdateStateMachineInput): Request[UpdateStateMachineOutput, AWSError] = js.native
   def updateStateMachine(

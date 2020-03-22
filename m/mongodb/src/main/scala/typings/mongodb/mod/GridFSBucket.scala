@@ -1,7 +1,7 @@
 package typings.mongodb.mod
 
 import typings.mongodb.AnonEnd
-import typings.mongodb.AnonEndRevision
+import typings.mongodb.AnonRevision
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,7 +26,7 @@ class GridFSBucket protected () extends js.Object {
   def openDownloadStream(id: typings.bson.mod.ObjectId, options: AnonEnd): GridFSBucketReadStream = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/GridFSBucket.html#openDownloadStreamByName */
   def openDownloadStreamByName(filename: String): GridFSBucketReadStream = js.native
-  def openDownloadStreamByName(filename: String, options: AnonEndRevision): GridFSBucketReadStream = js.native
+  def openDownloadStreamByName(filename: String, options: AnonRevision): GridFSBucketReadStream = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/GridFSBucket.html#openUploadStream */
   def openUploadStream(filename: String): GridFSBucketWriteStream = js.native
   def openUploadStream(filename: String, options: GridFSBucketOpenUploadStreamOptions): GridFSBucketWriteStream = js.native

@@ -53,31 +53,15 @@ trait Options extends js.Object {
     * Configure the bottom tabs
     */
   var bottomTabs: js.UndefOr[OptionsBottomTabs] = js.undefined
-  /**
-    * Custom Transition used for animate shared element between two screens
-    * Example:
-    ```js
-    Navigation.push(this.props.componentId, {
-    component: {
-    name: 'second.screen',
-    options: {
-    customTransition: {
-    animations: [
-    { type: 'sharedElement', fromId: 'image1', toId: 'image2', startDelay: 0, springVelocity: 0.2, duration: 0.5 }
-    ],
-    duration: 0.8
-    }
-    }
-    }
-    });
-    ```
-    */
-  var customTransition: js.UndefOr[OptionsCustomTransition] = js.undefined
   var fab: js.UndefOr[OptionsFab] = js.undefined
   /**
     * Configure the layout
     */
   var layout: js.UndefOr[OptionsLayout] = js.undefined
+  /**
+    * Configure the modal
+    */
+  var modal: js.UndefOr[ModalOptions] = js.undefined
   /**
     * Configure the presentation style of the modal
     */
@@ -138,9 +122,9 @@ object Options {
     blurOnUnmount: js.UndefOr[Boolean] = js.undefined,
     bottomTab: OptionsBottomTab = null,
     bottomTabs: OptionsBottomTabs = null,
-    customTransition: OptionsCustomTransition = null,
     fab: OptionsFab = null,
     layout: OptionsLayout = null,
+    modal: ModalOptions = null,
     modalPresentationStyle: OptionsModalPresentationStyle = null,
     modalTransitionStyle: OptionsModalTransitionStyle = null,
     overlay: OverlayOptions = null,
@@ -159,9 +143,9 @@ object Options {
     if (!js.isUndefined(blurOnUnmount)) __obj.updateDynamic("blurOnUnmount")(blurOnUnmount.asInstanceOf[js.Any])
     if (bottomTab != null) __obj.updateDynamic("bottomTab")(bottomTab.asInstanceOf[js.Any])
     if (bottomTabs != null) __obj.updateDynamic("bottomTabs")(bottomTabs.asInstanceOf[js.Any])
-    if (customTransition != null) __obj.updateDynamic("customTransition")(customTransition.asInstanceOf[js.Any])
     if (fab != null) __obj.updateDynamic("fab")(fab.asInstanceOf[js.Any])
     if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
+    if (modal != null) __obj.updateDynamic("modal")(modal.asInstanceOf[js.Any])
     if (modalPresentationStyle != null) __obj.updateDynamic("modalPresentationStyle")(modalPresentationStyle.asInstanceOf[js.Any])
     if (modalTransitionStyle != null) __obj.updateDynamic("modalTransitionStyle")(modalTransitionStyle.asInstanceOf[js.Any])
     if (overlay != null) __obj.updateDynamic("overlay")(overlay.asInstanceOf[js.Any])

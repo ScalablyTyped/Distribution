@@ -1,7 +1,7 @@
 package typings.buble.mod
 
-import typings.buble.Anon010
 import typings.buble.AnonArrow
+import typings.buble.AnonChrome
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +21,7 @@ trait TransformOptions extends js.Object {
   // used for sourcemaps
   var source: js.UndefOr[String] = js.undefined
   // source: https://github.com/Rich-Harris/buble/blob/master/src/support.js
-  var target: js.UndefOr[Anon010] = js.undefined
+  var target: js.UndefOr[AnonChrome] = js.undefined
   // transforms
   var transforms: js.UndefOr[AnonArrow] = js.undefined
 }
@@ -35,7 +35,7 @@ object TransformOptions {
     namedFunctionExpressions: js.UndefOr[Boolean] = js.undefined,
     objectAssign: String | Boolean = null,
     source: String = null,
-    target: Anon010 = null,
+    target: AnonChrome = null,
     transforms: AnonArrow = null
   ): TransformOptions = {
     val __obj = js.Dynamic.literal()

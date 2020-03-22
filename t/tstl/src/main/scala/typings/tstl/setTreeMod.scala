@@ -35,5 +35,14 @@ object setTreeMod extends js.Object {
     def value_comp(): Comparator[Key, Key] = js.native
   }
   
+  /* static members */
+  @js.native
+  object SetTree extends js.Object {
+    /**
+      * @internal
+      */
+    def _Swap_source[Key, Unique /* <: Boolean */, Source /* <: ITreeSet[Key, Unique, Source, Iterator[Key, Unique, Source], ReverseIterator[Key, Unique, Source]] */](x: SetTree[Key, Unique, Source], y: SetTree[Key, Unique, Source]): Unit = js.native
+  }
+  
 }
 

@@ -12,7 +12,6 @@ package object mod {
     /* prevVal */ scala.Double, 
     scala.Unit
   ]
-  type Logger = typings.pino.mod.BaseLogger with org.scalablytyped.runtime.StringDictionary[typings.pino.mod.LogFn]
   type MixinFn = js.Function0[js.Object]
   type SerializedError = typings.pinoStdSerializers.mod.SerializedError
   type SerializedRequest = typings.pinoStdSerializers.mod.SerializedRequest

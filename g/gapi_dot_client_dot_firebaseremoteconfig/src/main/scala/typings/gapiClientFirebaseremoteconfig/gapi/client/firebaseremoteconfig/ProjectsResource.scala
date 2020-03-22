@@ -2,7 +2,7 @@ package typings.gapiClientFirebaseremoteconfig.gapi.client.firebaseremoteconfig
 
 import typings.gapiClient.gapi.client.Request_
 import typings.gapiClientFirebaseremoteconfig.AnonAccesstoken
-import typings.gapiClientFirebaseremoteconfig.AnonAccesstokenAlt
+import typings.gapiClientFirebaseremoteconfig.AnonAlt
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,14 +34,14 @@ trait ProjectsResource extends js.Object {
     * &#42; Internal error (HTTP status 500) for Database problems or other internal
     * errors.
     */
-  def updateRemoteConfig(request: AnonAccesstokenAlt): Request_[RemoteConfig]
+  def updateRemoteConfig(request: AnonAlt): Request_[RemoteConfig]
 }
 
 object ProjectsResource {
   @scala.inline
   def apply(
     getRemoteConfig: AnonAccesstoken => Request_[RemoteConfig],
-    updateRemoteConfig: AnonAccesstokenAlt => Request_[RemoteConfig]
+    updateRemoteConfig: AnonAlt => Request_[RemoteConfig]
   ): ProjectsResource = {
     val __obj = js.Dynamic.literal(getRemoteConfig = js.Any.fromFunction1(getRemoteConfig), updateRemoteConfig = js.Any.fromFunction1(updateRemoteConfig))
   

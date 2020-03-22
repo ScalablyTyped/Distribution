@@ -10,6 +10,7 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.ClipboardEvent
 import typings.react.mod.CompositionEvent
 import typings.react.mod.DragEvent
+import typings.react.mod.ElementType
 import typings.react.mod.FocusEvent
 import typings.react.mod.FormEvent
 import typings.react.mod.HTMLAttributes
@@ -18,7 +19,6 @@ import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.ReactNode
-import typings.react.mod.ReactType
 import typings.react.mod.SyntheticEvent
 import typings.react.mod.TouchEvent
 import typings.react.mod.TransitionEvent
@@ -74,7 +74,6 @@ import typings.uifabricFoundation.AnonSlots
 import typings.uifabricFoundation.ihtmlslotsMod.IHTMLSlot
 import typings.uifabricFoundation.libIcomponentMod.IStylesFunctionOrObject
 import typings.uifabricFoundation.libIcomponentMod.ITokenFunctionOrObject
-import typings.uifabricFoundation.uifabricFoundationStrings.Anon_Slots
 import typings.uifabricStyling.ithemeMod.ITheme
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -88,7 +87,7 @@ import scala.scalajs.js.annotation._
   /**
     * Defines how to render the Stack.
     */
-  var as: js.UndefOr[ReactType[HTMLAttributes[HTMLElement]]] = js.undefined
+  var as: js.UndefOr[ElementType[HTMLAttributes[HTMLElement]]] = js.undefined
   /**
     * Defines whether Stack children should not shrink to fit the available space.
     * @defaultvalue false
@@ -210,7 +209,7 @@ object IStackProps {
     `aria-valuemin`: Int | Double = null,
     `aria-valuenow`: Int | Double = null,
     `aria-valuetext`: String = null,
-    as: ReactType[HTMLAttributes[HTMLElement]] = null,
+    as: ElementType[HTMLAttributes[HTMLElement]] = null,
     autoCapitalize: String = null,
     autoCorrect: String = null,
     autoSave: String = null,
@@ -337,7 +336,7 @@ object IStackProps {
     slot: String = null,
     slots: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof TSlots ]:? @uifabric/foundation.@uifabric/foundation/lib/ISlots.ISlotOptions<@uifabric/foundation.@uifabric/foundation/lib/ISlots.ExtractProps<TSlots[key]>>}
-    */ Anon_Slots with IStackSlots = null,
+    */ typings.uifabricFoundation.uifabricFoundationStrings.AnonSlots with IStackSlots = null,
     spellCheck: js.UndefOr[Boolean] = js.undefined,
     style: CSSProperties = null,
     styles: IStylesFunctionOrObject[IStackProps, IStackTokens, IStackStyles] = null,

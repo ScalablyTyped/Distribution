@@ -1,6 +1,6 @@
 package typings.baiduApp.swan
 
-import typings.baiduApp.AnonLatitudeLongitude
+import typings.baiduApp.AnonLongitude
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ trait TranslateMarkerOptions
   	// 指定marker移动到的目标点
   var autoRotate: Boolean
   	// 指定 marker
-  var destination: AnonLatitudeLongitude
+  var destination: AnonLongitude
   	// marker 的旋转角度
   var duration: js.UndefOr[Double] = js.undefined
   var markerId: Double
@@ -24,7 +24,7 @@ object TranslateMarkerOptions {
   @scala.inline
   def apply(
     autoRotate: Boolean,
-    destination: AnonLatitudeLongitude,
+    destination: AnonLongitude,
     markerId: Double,
     rotate: Double,
     animationEnd: () => Unit = null,

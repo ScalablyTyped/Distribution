@@ -1,12 +1,13 @@
 package typings.blueprintjsTable.contextMod
 
-import org.scalablytyped.runtime.TopLevel
-import typings.react.mod.ValidationMap
+import typings.propTypes.mod.Validator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("@blueprintjs/table/lib/esm/common/context", "columnInteractionBarContextTypes")
 @js.native
-object columnInteractionBarContextTypes extends TopLevel[ValidationMap[IColumnInteractionBarContextTypes]]
+object columnInteractionBarContextTypes extends js.Object {
+  var enableColumnInteractionBar: js.UndefOr[Validator[Boolean]] = js.native
+}
 

@@ -75,7 +75,7 @@ trait SpotFleetRequestConfigData extends js.Object {
     */
   var SpotPrice: js.UndefOr[String] = js.native
   /**
-    * The key-value pair for tagging the Spot Fleet request on creation. The value for ResourceType must be spot-fleet-request, otherwise the Spot Fleet request fails. To tag instances at launch, specify the tags in the launch template. For information about tagging after launch, see Tagging Your Resources.
+    * The key-value pair for tagging the Spot Fleet request on creation. The value for ResourceType must be spot-fleet-request, otherwise the Spot Fleet request fails. To tag instances at launch, specify the tags in the launch template (valid only if you use LaunchTemplateConfigs) or in the  SpotFleetTagSpecification  (valid only if you use LaunchSpecifications). For information about tagging after launch, see Tagging Your Resources.
     */
   var TagSpecifications: js.UndefOr[TagSpecificationList] = js.native
   /**

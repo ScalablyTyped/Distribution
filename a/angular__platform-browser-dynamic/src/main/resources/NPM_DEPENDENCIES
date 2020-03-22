@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@angular/platform-browser-dynamic" : "8.2.14"
+      "@angular/platform-browser-dynamic" : "9.0.4"
     }
   ],
   "test-dependencies" : [
     {
-      "@angular/platform-browser-dynamic" : "8.2.14"
+      "@angular/platform-browser-dynamic" : "9.0.4"
     }
   ],
   "compile-devDependencies" : [

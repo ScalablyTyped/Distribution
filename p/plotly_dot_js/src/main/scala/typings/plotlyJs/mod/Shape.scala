@@ -1,5 +1,6 @@
 package typings.plotlyJs.mod
 
+import typings.plotlyJs.PartialShapeLine
 import typings.plotlyJs.plotlyJsStrings.above
 import typings.plotlyJs.plotlyJsStrings.below
 import typings.plotlyJs.plotlyJsStrings.circle
@@ -11,7 +12,6 @@ import typings.plotlyJs.plotlyJsStrings.rect
 import typings.plotlyJs.plotlyJsStrings.scaled
 import typings.plotlyJs.plotlyJsStrings.x
 import typings.plotlyJs.plotlyJsStrings.y
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation._
 trait Shape extends js.Object {
   var fillcolor: String
   var layer: below | above
-  var line: Partial[ShapeLine]
+  var line: PartialShapeLine
   var name: String
   var opacity: Double
   var path: String
@@ -45,7 +45,7 @@ object Shape {
   def apply(
     fillcolor: String,
     layer: below | above,
-    line: Partial[ShapeLine],
+    line: PartialShapeLine,
     name: String,
     opacity: Double,
     path: String,

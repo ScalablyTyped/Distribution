@@ -1,6 +1,6 @@
 package typings.apolloReact.apolloProviderMod
 
-import typings.apolloReact.AnonClientStore
+import typings.apolloReact.AnonStore
 import typings.react.mod.Component
 import typings.redux.mod.AnyAction
 import typings.redux.mod.Store
@@ -15,6 +15,6 @@ trait ApolloProvider
     /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for TCacheShape */ _
   ] = js.native
   var store: Store[_, AnyAction] = js.native
-  def getChildContext(): AnonClientStore = js.native
+  def getChildContext(): AnonStore = js.native
 }
 

@@ -7,7 +7,6 @@ import typings.firebaseFirestore.coreQueryMod.Bound
 import typings.firebaseFirestore.coreQueryMod.FieldFilter
 import typings.firebaseFirestore.coreQueryMod.OrderBy
 import typings.firebaseFirestore.coreSnapshotVersionMod.SnapshotVersion
-import typings.firebaseFirestore.coreTypesMod.ProtoByteString
 import typings.firebaseFirestore.coreTypesMod.TargetId
 import typings.firebaseFirestore.coreViewMod.LimboDocumentChange
 import typings.firebaseFirestore.coreViewMod.View
@@ -40,6 +39,7 @@ import typings.firebaseFirestore.remoteRemoteEventMod.TargetChange
 import typings.firebaseFirestore.srcModelFieldValueMod.FieldValue
 import typings.firebaseFirestore.srcModelFieldValueMod.JsonObject
 import typings.firebaseFirestore.srcModelFieldValueMod.ObjectValue
+import typings.firebaseFirestore.utilByteStringMod.ByteString
 import typings.firebaseFirestore.utilObjMod.Dict
 import typings.firebaseFirestore.utilSortedMapMod.SortedMap
 import typings.firebaseFirestore.utilSortedSetMod.SortedSet
@@ -61,6 +61,7 @@ object testUtilHelpersMod extends js.Object {
   def applyDocChanges(view: View, docsOrKeys: (Document | DocumentKey)*): ViewChange = js.native
   def blob(bytes: Double*): Blob = js.native
   def bound(values: js.Array[js.Tuple3[String, js.Object, OrderByDirection]], before: Boolean): Bound = js.native
+  def byteStringFromString(value: String): ByteString = js.native
   def dbId(project: String): DatabaseId = js.native
   def dbId(project: String, database: String): DatabaseId = js.native
   def deleteMutation(keyStr: String): DeleteMutation = js.native
@@ -123,13 +124,13 @@ object testUtilHelpersMod extends js.Object {
   def key(path: String): DocumentKey = js.native
   def keySet(keys: DocumentKey*): DocumentKeySet_ = js.native
   def keys(documents: (MaybeDocument | String)*): DocumentKeySet_ = js.native
-  def limboChanges(changes: AnonAddedRemovedArrayDocument): js.Array[LimboDocumentChange] = js.native
-  def localViewChanges(targetId: TargetId, fromCache: Boolean, changes: AnonAddedRemovedArray): LocalViewChanges = js.native
+  def limboChanges(changes: AnonAddedArray): js.Array[LimboDocumentChange] = js.native
+  def localViewChanges(targetId: TargetId, fromCache: Boolean, changes: AnonAddedRemoved): LocalViewChanges = js.native
   def mapAsArray[K, V](sortedMap: SortedMap[K, V]): js.Array[AnonKey[K, V]] = js.native
   def mask(paths: String*): FieldMask = js.native
   def mutationResult(testVersion: TestSnapshotVersion): MutationResult = js.native
   def noChangeEvent(targetId: Double, snapshotVersion: Double): RemoteEvent = js.native
-  def noChangeEvent(targetId: Double, snapshotVersion: Double, resumeToken: ProtoByteString): RemoteEvent = js.native
+  def noChangeEvent(targetId: Double, snapshotVersion: Double, resumeToken: ByteString): RemoteEvent = js.native
   def orderBy(path: String): OrderBy = js.native
   def orderBy(path: String, op: String): OrderBy = js.native
   def patchMutation(keyStr: String, json: JsonObject[_]): PatchMutation = js.native
@@ -139,7 +140,7 @@ object testUtilHelpersMod extends js.Object {
   def ref(dbIdStr: String, keyStr: String): DocumentKeyReference = js.native
   def ref(dbIdStr: String, keyStr: String, offset: Double): DocumentKeyReference = js.native
   def removedDoc(keyStr: String): NoDocument = js.native
-  def resumeTokenForSnapshot(snapshotVersion: SnapshotVersion): ProtoByteString = js.native
+  def resumeTokenForSnapshot(snapshotVersion: SnapshotVersion): ByteString = js.native
   def setMutation(keyStr: String, json: JsonObject[_]): SetMutation = js.native
   def size(obj: JsonObject[_]): Double = js.native
   def targetData(targetId: TargetId, queryPurpose: TargetPurpose, path: String): TargetData = js.native

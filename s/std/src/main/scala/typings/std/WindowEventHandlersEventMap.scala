@@ -17,7 +17,7 @@ trait WindowEventHandlersEventMap extends js.Object {
   var pagehide: PageTransitionEvent
   var pageshow: PageTransitionEvent
   var popstate: PopStateEvent
-  var rejectionhandled: Event_
+  var rejectionhandled: PromiseRejectionEvent
   var storage: StorageEvent
   var unhandledrejection: PromiseRejectionEvent
   var unload: Event_
@@ -38,7 +38,7 @@ object WindowEventHandlersEventMap {
     pagehide: PageTransitionEvent,
     pageshow: PageTransitionEvent,
     popstate: PopStateEvent,
-    rejectionhandled: Event_,
+    rejectionhandled: PromiseRejectionEvent,
     storage: StorageEvent,
     unhandledrejection: PromiseRejectionEvent,
     unload: Event_

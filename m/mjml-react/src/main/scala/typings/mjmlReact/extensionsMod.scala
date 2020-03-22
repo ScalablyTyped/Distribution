@@ -14,7 +14,7 @@ object extensionsMod extends js.Object {
   
   @js.native
   class MjmlConditionalComment ()
-    extends Component[AnonChildrenCondition, js.Object, js.Any]
+    extends Component[AnonCondition, js.Object, js.Any]
   
   @js.native
   class MjmlTrackingPixel ()

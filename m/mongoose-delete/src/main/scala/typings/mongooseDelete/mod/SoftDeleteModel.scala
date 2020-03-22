@@ -1,21 +1,27 @@
 package typings.mongooseDelete.mod
 
 import typings.mongodb.mod.FindAndModifyWriteOpResultObject
-import typings.mongoose.AnonNew
-import typings.mongoose.AnonNewTrue
-import typings.mongoose.AnonRawResult
 import typings.mongoose.mod.Document
-import typings.mongoose.mod.DocumentQuery
 import typings.mongoose.mod.ModelUpdateOptions
 import typings.mongoose.mod.Model_
 import typings.mongoose.mod.Query
 import typings.mongoose.mod.QueryFindOneAndUpdateOptions
 import typings.mongoose.mod.Types.ObjectId
-import typings.mongooseDelete.FnCallback
-import typings.mongooseDelete.FnCallbackConditions
-import typings.mongooseDelete.FnCallbackConditionsDoc
-import typings.mongooseDelete.FnCallbackConditionsDocErr
-import typings.mongooseDelete.FnCallbackConditionsErr
+import typings.mongoose.rawResulttrueQueryFindOneContext
+import typings.mongoose.rawResulttrueupserttruene
+import typings.mongoose.upserttruenewtrueQueryFin
+import typings.mongooseDelete.DocumentQueryArrayanyanyAll
+import typings.mongooseDelete.DocumentQueryanyanyAll
+import typings.mongooseDelete.DocumentQueryanynullanyAll
+import typings.mongooseDelete.Fn0
+import typings.mongooseDelete.FnCall
+import typings.mongooseDelete.FnCallConditionsDocOptionsCallback
+import typings.mongooseDelete.FnCallConditionsProjectionOptionsCallback
+import typings.mongooseDelete.FnCallConditionsUpdateOptionsCallback
+import typings.mongooseDelete.QueryFindAndModifyWriteOpAnd
+import typings.mongooseDelete.QueryFindAndModifyWriteOpBatchSize
+import typings.mongooseDelete.Queryany
+import typings.mongooseDelete.QuerynumberAll
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,42 +30,42 @@ import scala.scalajs.js.annotation._
 trait SoftDeleteModel[T /* <: Document */, QueryHelpers] extends Model_[T, QueryHelpers] {
   /** Count only deleted documents */
   @JSName("countDeleted")
-  var countDeleted_Original: FnCallback = js.native
+  var countDeleted_Original: FnCall = js.native
   /** Count all documents including deleted */
   @JSName("countWithDeleted")
-  var countWithDeleted_Original: FnCallback = js.native
+  var countWithDeleted_Original: FnCall = js.native
   /** Find only deleted documents */
   @JSName("findDeleted")
-  var findDeleted_Original: FnCallbackConditions = js.native
+  var findDeleted_Original: FnCallConditionsProjectionOptionsCallback = js.native
   /** Find One And Update only deleted documents */
   @JSName("findOneAndUpdateDeleted")
-  var findOneAndUpdateDeleted_Original: FnCallbackConditionsDoc = js.native
+  var findOneAndUpdateDeleted_Original: FnCallConditionsUpdateOptionsCallback = js.native
   /** Find One And Update all documents including deleted */
   @JSName("findOneAndUpdateWithDeleted")
-  var findOneAndUpdateWithDeleted_Original: FnCallbackConditionsDoc = js.native
+  var findOneAndUpdateWithDeleted_Original: FnCallConditionsUpdateOptionsCallback = js.native
   /** Find One only deleted documents */
   @JSName("findOneDeleted")
-  var findOneDeleted_Original: FnCallbackConditionsErr = js.native
+  var findOneDeleted_Original: Fn0 = js.native
   /** Find One all documents including deleted */
   @JSName("findOneWithDeleted")
-  var findOneWithDeleted_Original: FnCallbackConditionsErr = js.native
+  var findOneWithDeleted_Original: Fn0 = js.native
   /** Find all documents including deleted */
   @JSName("findWithDeleted")
-  var findWithDeleted_Original: FnCallbackConditions = js.native
+  var findWithDeleted_Original: FnCallConditionsProjectionOptionsCallback = js.native
   /** Update only deleted documents */
   @JSName("updateDeleted")
-  var updateDeleted_Original: FnCallbackConditionsDocErr = js.native
+  var updateDeleted_Original: FnCallConditionsDocOptionsCallback = js.native
   /** Update all documents including deleted */
   @JSName("updateWithDeleted")
-  var updateWithDeleted_Original: FnCallbackConditionsDocErr = js.native
+  var updateWithDeleted_Original: FnCallConditionsDocOptionsCallback = js.native
   /** Count only deleted documents */
-  def countDeleted(conditions: js.Any): Query[Double] with js.Object = js.native
+  def countDeleted(conditions: js.Any): QuerynumberAll = js.native
   /** Count only deleted documents */
-  def countDeleted(conditions: js.Any, callback: js.Function2[/* err */ js.Any, /* count */ Double, Unit]): Query[Double] with js.Object = js.native
+  def countDeleted(conditions: js.Any, callback: js.Function2[/* err */ js.Any, /* count */ Double, Unit]): QuerynumberAll = js.native
   /** Count all documents including deleted */
-  def countWithDeleted(conditions: js.Any): Query[Double] with js.Object = js.native
+  def countWithDeleted(conditions: js.Any): QuerynumberAll = js.native
   /** Count all documents including deleted */
-  def countWithDeleted(conditions: js.Any, callback: js.Function2[/* err */ js.Any, /* count */ Double, Unit]): Query[Double] with js.Object = js.native
+  def countWithDeleted(conditions: js.Any, callback: js.Function2[/* err */ js.Any, /* count */ Double, Unit]): QuerynumberAll = js.native
   /**
     * Delete documents by conditions
     */
@@ -99,271 +105,271 @@ trait SoftDeleteModel[T /* <: Document */, QueryHelpers] extends Model_[T, Query
   def deleteById(id: Callback[T, this.type], deleteBy: Callback[T, this.type]): Query[T] with QueryHelpers = js.native
   def deleteById(id: Callback[T, this.type], deleteBy: Callback[T, this.type], fn: Callback[T, this.type]): Query[T] with QueryHelpers = js.native
   /** Find only deleted documents */
-  def findDeleted(): (DocumentQuery[js.Array[_], _, js.Object]) with js.Object = js.native
+  def findDeleted(): DocumentQueryArrayanyanyAll = js.native
   /** Find only deleted documents */
-  def findDeleted(callback: js.Function2[/* err */ js.Any, /* res */ js.Array[_], Unit]): (DocumentQuery[js.Array[_], _, js.Object]) with js.Object = js.native
+  def findDeleted(callback: js.Function2[/* err */ js.Any, /* res */ js.Array[_], Unit]): DocumentQueryArrayanyanyAll = js.native
   /** Find only deleted documents */
-  def findDeleted(conditions: js.Any): (DocumentQuery[js.Array[_], _, js.Object]) with js.Object = js.native
+  def findDeleted(conditions: js.Any): DocumentQueryArrayanyanyAll = js.native
   /** Find only deleted documents */
-  def findDeleted(conditions: js.Any, callback: js.Function2[/* err */ js.Any, /* res */ js.Array[_], Unit]): (DocumentQuery[js.Array[_], _, js.Object]) with js.Object = js.native
+  def findDeleted(conditions: js.Any, callback: js.Function2[/* err */ js.Any, /* res */ js.Array[_], Unit]): DocumentQueryArrayanyanyAll = js.native
   /** Find only deleted documents */
-  def findDeleted(conditions: js.Any, projection: js.Any): (DocumentQuery[js.Array[_], _, js.Object]) with js.Object = js.native
+  def findDeleted(conditions: js.Any, projection: js.Any): DocumentQueryArrayanyanyAll = js.native
   /** Find only deleted documents */
   def findDeleted(
     conditions: js.Any,
     projection: js.Any,
     callback: js.Function2[/* err */ js.Any, /* res */ js.Array[_], Unit]
-  ): (DocumentQuery[js.Array[_], _, js.Object]) with js.Object = js.native
+  ): DocumentQueryArrayanyanyAll = js.native
   /** Find only deleted documents */
-  def findDeleted(conditions: js.Any, projection: js.Any, options: js.Any): (DocumentQuery[js.Array[_], _, js.Object]) with js.Object = js.native
+  def findDeleted(conditions: js.Any, projection: js.Any, options: js.Any): DocumentQueryArrayanyanyAll = js.native
   /** Find only deleted documents */
   def findDeleted(
     conditions: js.Any,
     projection: js.Any,
     options: js.Any,
     callback: js.Function2[/* err */ js.Any, /* res */ js.Array[_], Unit]
-  ): (DocumentQuery[js.Array[_], _, js.Object]) with js.Object = js.native
+  ): DocumentQueryArrayanyanyAll = js.native
   /** Find only deleted documents */
   def findDeleted(
     conditions: js.Any,
     projection: js.Any,
     options: Null,
     callback: js.Function2[/* err */ js.Any, /* res */ js.Array[_], Unit]
-  ): (DocumentQuery[js.Array[_], _, js.Object]) with js.Object = js.native
+  ): DocumentQueryArrayanyanyAll = js.native
   /** Find only deleted documents */
   def findDeleted(
     conditions: js.Any,
     projection: Null,
     callback: js.Function2[/* err */ js.Any, /* res */ js.Array[_], Unit]
-  ): (DocumentQuery[js.Array[_], _, js.Object]) with js.Object = js.native
+  ): DocumentQueryArrayanyanyAll = js.native
   /** Find only deleted documents */
-  def findDeleted(conditions: js.Any, projection: Null, options: js.Any): (DocumentQuery[js.Array[_], _, js.Object]) with js.Object = js.native
+  def findDeleted(conditions: js.Any, projection: Null, options: js.Any): DocumentQueryArrayanyanyAll = js.native
   /** Find only deleted documents */
   def findDeleted(
     conditions: js.Any,
     projection: Null,
     options: js.Any,
     callback: js.Function2[/* err */ js.Any, /* res */ js.Array[_], Unit]
-  ): (DocumentQuery[js.Array[_], _, js.Object]) with js.Object = js.native
+  ): DocumentQueryArrayanyanyAll = js.native
   /** Find only deleted documents */
   def findDeleted(
     conditions: js.Any,
     projection: Null,
     options: Null,
     callback: js.Function2[/* err */ js.Any, /* res */ js.Array[_], Unit]
-  ): (DocumentQuery[js.Array[_], _, js.Object]) with js.Object = js.native
+  ): DocumentQueryArrayanyanyAll = js.native
   /** Find One And Update only deleted documents */
-  def findOneAndUpdateDeleted(): (DocumentQuery[_ | Null, _, js.Object]) with js.Object = js.native
+  def findOneAndUpdateDeleted(): DocumentQueryanynullanyAll = js.native
   /** Find One And Update only deleted documents */
-  def findOneAndUpdateDeleted(conditions: js.Any, update: js.Any): (DocumentQuery[_ | Null, _, js.Object]) with js.Object = js.native
+  def findOneAndUpdateDeleted(conditions: js.Any, update: js.Any): DocumentQueryanynullanyAll = js.native
   /** Find One And Update only deleted documents */
   def findOneAndUpdateDeleted(
     conditions: js.Any,
     update: js.Any,
     callback: js.Function3[/* err */ js.Any, /* doc */ js.Any | Null, /* res */ js.Any, Unit]
-  ): (DocumentQuery[_ | Null, _, js.Object]) with js.Object = js.native
+  ): DocumentQueryanynullanyAll = js.native
   /** Find One And Update only deleted documents */
-  def findOneAndUpdateDeleted(conditions: js.Any, update: js.Any, options: AnonNewTrue with QueryFindOneAndUpdateOptions): (DocumentQuery[_, _, js.Object]) with js.Object = js.native
-  /** Find One And Update only deleted documents */
-  def findOneAndUpdateDeleted(conditions: js.Any, update: js.Any, options: AnonNew with QueryFindOneAndUpdateOptions): Query[FindAndModifyWriteOpResultObject[_]] with js.Object = js.native
-  /** Find One And Update only deleted documents */
-  def findOneAndUpdateDeleted(conditions: js.Any, update: js.Any, options: AnonRawResult with QueryFindOneAndUpdateOptions): (Query[FindAndModifyWriteOpResultObject[_ | Null]]) with js.Object = js.native
-  /** Find One And Update only deleted documents */
-  def findOneAndUpdateDeleted(
-    conditions: js.Any,
-    update: js.Any,
-    options: AnonNewTrue with QueryFindOneAndUpdateOptions,
-    callback: js.Function3[/* err */ js.Any, /* doc */ js.Any, /* res */ js.Any, Unit]
-  ): (DocumentQuery[_, _, js.Object]) with js.Object = js.native
-  /** Find One And Update only deleted documents */
-  def findOneAndUpdateDeleted(
-    conditions: js.Any,
-    update: js.Any,
-    options: AnonRawResult with QueryFindOneAndUpdateOptions,
-    callback: js.Function3[
-      /* err */ js.Any, 
-      /* doc */ FindAndModifyWriteOpResultObject[_ | Null], 
-      /* res */ js.Any, 
-      Unit
-    ]
-  ): (Query[FindAndModifyWriteOpResultObject[_ | Null]]) with js.Object = js.native
-  /** Find One And Update only deleted documents */
-  def findOneAndUpdateDeleted(
-    conditions: js.Any,
-    update: js.Any,
-    options: AnonNew with QueryFindOneAndUpdateOptions,
-    callback: js.Function3[
-      /* err */ js.Any, 
-      /* doc */ FindAndModifyWriteOpResultObject[_], 
-      /* res */ js.Any, 
-      Unit
-    ]
-  ): Query[FindAndModifyWriteOpResultObject[_]] with js.Object = js.native
-  /** Find One And Update only deleted documents */
-  def findOneAndUpdateDeleted(conditions: js.Any, update: js.Any, options: QueryFindOneAndUpdateOptions): (DocumentQuery[_ | Null, _, js.Object]) with js.Object = js.native
+  def findOneAndUpdateDeleted(conditions: js.Any, update: js.Any, options: QueryFindOneAndUpdateOptions): DocumentQueryanynullanyAll = js.native
   /** Find One And Update only deleted documents */
   def findOneAndUpdateDeleted(
     conditions: js.Any,
     update: js.Any,
     options: QueryFindOneAndUpdateOptions,
     callback: js.Function3[/* err */ js.Any, /* doc */ js.Any | Null, /* res */ js.Any, Unit]
-  ): (DocumentQuery[_ | Null, _, js.Object]) with js.Object = js.native
-  /** Find One And Update all documents including deleted */
-  def findOneAndUpdateWithDeleted(): (DocumentQuery[_ | Null, _, js.Object]) with js.Object = js.native
-  /** Find One And Update all documents including deleted */
-  def findOneAndUpdateWithDeleted(conditions: js.Any, update: js.Any): (DocumentQuery[_ | Null, _, js.Object]) with js.Object = js.native
-  /** Find One And Update all documents including deleted */
-  def findOneAndUpdateWithDeleted(
+  ): DocumentQueryanynullanyAll = js.native
+  /** Find One And Update only deleted documents */
+  def findOneAndUpdateDeleted(conditions: js.Any, update: js.Any, options: rawResulttrueQueryFindOneContext): QueryFindAndModifyWriteOpBatchSize = js.native
+  /** Find One And Update only deleted documents */
+  def findOneAndUpdateDeleted(
     conditions: js.Any,
     update: js.Any,
-    callback: js.Function3[/* err */ js.Any, /* doc */ js.Any | Null, /* res */ js.Any, Unit]
-  ): (DocumentQuery[_ | Null, _, js.Object]) with js.Object = js.native
-  /** Find One And Update all documents including deleted */
-  def findOneAndUpdateWithDeleted(conditions: js.Any, update: js.Any, options: AnonNew with QueryFindOneAndUpdateOptions): Query[FindAndModifyWriteOpResultObject[_]] with js.Object = js.native
-  /** Find One And Update all documents including deleted */
-  def findOneAndUpdateWithDeleted(conditions: js.Any, update: js.Any, options: AnonNewTrue with QueryFindOneAndUpdateOptions): (DocumentQuery[_, _, js.Object]) with js.Object = js.native
-  /** Find One And Update all documents including deleted */
-  def findOneAndUpdateWithDeleted(conditions: js.Any, update: js.Any, options: AnonRawResult with QueryFindOneAndUpdateOptions): (Query[FindAndModifyWriteOpResultObject[_ | Null]]) with js.Object = js.native
-  /** Find One And Update all documents including deleted */
-  def findOneAndUpdateWithDeleted(
-    conditions: js.Any,
-    update: js.Any,
-    options: AnonRawResult with QueryFindOneAndUpdateOptions,
+    options: rawResulttrueQueryFindOneContext,
     callback: js.Function3[
       /* err */ js.Any, 
       /* doc */ FindAndModifyWriteOpResultObject[_ | Null], 
       /* res */ js.Any, 
       Unit
     ]
-  ): (Query[FindAndModifyWriteOpResultObject[_ | Null]]) with js.Object = js.native
-  /** Find One And Update all documents including deleted */
-  def findOneAndUpdateWithDeleted(
+  ): QueryFindAndModifyWriteOpBatchSize = js.native
+  /** Find One And Update only deleted documents */
+  def findOneAndUpdateDeleted(conditions: js.Any, update: js.Any, options: rawResulttrueupserttruene): QueryFindAndModifyWriteOpAnd = js.native
+  /** Find One And Update only deleted documents */
+  def findOneAndUpdateDeleted(
     conditions: js.Any,
     update: js.Any,
-    options: AnonNewTrue with QueryFindOneAndUpdateOptions,
-    callback: js.Function3[/* err */ js.Any, /* doc */ js.Any, /* res */ js.Any, Unit]
-  ): (DocumentQuery[_, _, js.Object]) with js.Object = js.native
-  /** Find One And Update all documents including deleted */
-  def findOneAndUpdateWithDeleted(
-    conditions: js.Any,
-    update: js.Any,
-    options: AnonNew with QueryFindOneAndUpdateOptions,
+    options: rawResulttrueupserttruene,
     callback: js.Function3[
       /* err */ js.Any, 
       /* doc */ FindAndModifyWriteOpResultObject[_], 
       /* res */ js.Any, 
       Unit
     ]
-  ): Query[FindAndModifyWriteOpResultObject[_]] with js.Object = js.native
+  ): QueryFindAndModifyWriteOpAnd = js.native
+  /** Find One And Update only deleted documents */
+  def findOneAndUpdateDeleted(conditions: js.Any, update: js.Any, options: upserttruenewtrueQueryFin): DocumentQueryanyanyAll = js.native
+  /** Find One And Update only deleted documents */
+  def findOneAndUpdateDeleted(
+    conditions: js.Any,
+    update: js.Any,
+    options: upserttruenewtrueQueryFin,
+    callback: js.Function3[/* err */ js.Any, /* doc */ js.Any, /* res */ js.Any, Unit]
+  ): DocumentQueryanyanyAll = js.native
   /** Find One And Update all documents including deleted */
-  def findOneAndUpdateWithDeleted(conditions: js.Any, update: js.Any, options: QueryFindOneAndUpdateOptions): (DocumentQuery[_ | Null, _, js.Object]) with js.Object = js.native
+  def findOneAndUpdateWithDeleted(): DocumentQueryanynullanyAll = js.native
+  /** Find One And Update all documents including deleted */
+  def findOneAndUpdateWithDeleted(conditions: js.Any, update: js.Any): DocumentQueryanynullanyAll = js.native
+  /** Find One And Update all documents including deleted */
+  def findOneAndUpdateWithDeleted(
+    conditions: js.Any,
+    update: js.Any,
+    callback: js.Function3[/* err */ js.Any, /* doc */ js.Any | Null, /* res */ js.Any, Unit]
+  ): DocumentQueryanynullanyAll = js.native
+  /** Find One And Update all documents including deleted */
+  def findOneAndUpdateWithDeleted(conditions: js.Any, update: js.Any, options: QueryFindOneAndUpdateOptions): DocumentQueryanynullanyAll = js.native
   /** Find One And Update all documents including deleted */
   def findOneAndUpdateWithDeleted(
     conditions: js.Any,
     update: js.Any,
     options: QueryFindOneAndUpdateOptions,
     callback: js.Function3[/* err */ js.Any, /* doc */ js.Any | Null, /* res */ js.Any, Unit]
-  ): (DocumentQuery[_ | Null, _, js.Object]) with js.Object = js.native
+  ): DocumentQueryanynullanyAll = js.native
+  /** Find One And Update all documents including deleted */
+  def findOneAndUpdateWithDeleted(conditions: js.Any, update: js.Any, options: rawResulttrueQueryFindOneContext): QueryFindAndModifyWriteOpBatchSize = js.native
+  /** Find One And Update all documents including deleted */
+  def findOneAndUpdateWithDeleted(
+    conditions: js.Any,
+    update: js.Any,
+    options: rawResulttrueQueryFindOneContext,
+    callback: js.Function3[
+      /* err */ js.Any, 
+      /* doc */ FindAndModifyWriteOpResultObject[_ | Null], 
+      /* res */ js.Any, 
+      Unit
+    ]
+  ): QueryFindAndModifyWriteOpBatchSize = js.native
+  /** Find One And Update all documents including deleted */
+  def findOneAndUpdateWithDeleted(conditions: js.Any, update: js.Any, options: rawResulttrueupserttruene): QueryFindAndModifyWriteOpAnd = js.native
+  /** Find One And Update all documents including deleted */
+  def findOneAndUpdateWithDeleted(
+    conditions: js.Any,
+    update: js.Any,
+    options: rawResulttrueupserttruene,
+    callback: js.Function3[
+      /* err */ js.Any, 
+      /* doc */ FindAndModifyWriteOpResultObject[_], 
+      /* res */ js.Any, 
+      Unit
+    ]
+  ): QueryFindAndModifyWriteOpAnd = js.native
+  /** Find One And Update all documents including deleted */
+  def findOneAndUpdateWithDeleted(conditions: js.Any, update: js.Any, options: upserttruenewtrueQueryFin): DocumentQueryanyanyAll = js.native
+  /** Find One And Update all documents including deleted */
+  def findOneAndUpdateWithDeleted(
+    conditions: js.Any,
+    update: js.Any,
+    options: upserttruenewtrueQueryFin,
+    callback: js.Function3[/* err */ js.Any, /* doc */ js.Any, /* res */ js.Any, Unit]
+  ): DocumentQueryanyanyAll = js.native
   /** Find One only deleted documents */
-  def findOneDeleted(): (DocumentQuery[_ | Null, _, js.Object]) with js.Object = js.native
+  def findOneDeleted(): DocumentQueryanynullanyAll = js.native
   /** Find One only deleted documents */
-  def findOneDeleted(conditions: js.Any): (DocumentQuery[_ | Null, _, js.Object]) with js.Object = js.native
+  def findOneDeleted(conditions: js.Any): DocumentQueryanynullanyAll = js.native
   /** Find One only deleted documents */
-  def findOneDeleted(conditions: js.Any, callback: js.Function2[/* err */ js.Any, /* res */ js.Any | Null, Unit]): (DocumentQuery[_ | Null, _, js.Object]) with js.Object = js.native
+  def findOneDeleted(conditions: js.Any, callback: js.Function2[/* err */ js.Any, /* res */ js.Any | Null, Unit]): DocumentQueryanynullanyAll = js.native
   /** Find One only deleted documents */
-  def findOneDeleted(conditions: js.Any, projection: js.Any): (DocumentQuery[_ | Null, _, js.Object]) with js.Object = js.native
+  def findOneDeleted(conditions: js.Any, projection: js.Any): DocumentQueryanynullanyAll = js.native
   /** Find One only deleted documents */
   def findOneDeleted(
     conditions: js.Any,
     projection: js.Any,
     callback: js.Function2[/* err */ js.Any, /* res */ js.Any | Null, Unit]
-  ): (DocumentQuery[_ | Null, _, js.Object]) with js.Object = js.native
+  ): DocumentQueryanynullanyAll = js.native
   /** Find One only deleted documents */
-  def findOneDeleted(conditions: js.Any, projection: js.Any, options: js.Any): (DocumentQuery[_ | Null, _, js.Object]) with js.Object = js.native
+  def findOneDeleted(conditions: js.Any, projection: js.Any, options: js.Any): DocumentQueryanynullanyAll = js.native
   /** Find One only deleted documents */
   def findOneDeleted(
     conditions: js.Any,
     projection: js.Any,
     options: js.Any,
     callback: js.Function2[/* err */ js.Any, /* res */ js.Any | Null, Unit]
-  ): (DocumentQuery[_ | Null, _, js.Object]) with js.Object = js.native
+  ): DocumentQueryanynullanyAll = js.native
   /** Find One all documents including deleted */
-  def findOneWithDeleted(): (DocumentQuery[_ | Null, _, js.Object]) with js.Object = js.native
+  def findOneWithDeleted(): DocumentQueryanynullanyAll = js.native
   /** Find One all documents including deleted */
-  def findOneWithDeleted(conditions: js.Any): (DocumentQuery[_ | Null, _, js.Object]) with js.Object = js.native
+  def findOneWithDeleted(conditions: js.Any): DocumentQueryanynullanyAll = js.native
   /** Find One all documents including deleted */
-  def findOneWithDeleted(conditions: js.Any, callback: js.Function2[/* err */ js.Any, /* res */ js.Any | Null, Unit]): (DocumentQuery[_ | Null, _, js.Object]) with js.Object = js.native
+  def findOneWithDeleted(conditions: js.Any, callback: js.Function2[/* err */ js.Any, /* res */ js.Any | Null, Unit]): DocumentQueryanynullanyAll = js.native
   /** Find One all documents including deleted */
-  def findOneWithDeleted(conditions: js.Any, projection: js.Any): (DocumentQuery[_ | Null, _, js.Object]) with js.Object = js.native
+  def findOneWithDeleted(conditions: js.Any, projection: js.Any): DocumentQueryanynullanyAll = js.native
   /** Find One all documents including deleted */
   def findOneWithDeleted(
     conditions: js.Any,
     projection: js.Any,
     callback: js.Function2[/* err */ js.Any, /* res */ js.Any | Null, Unit]
-  ): (DocumentQuery[_ | Null, _, js.Object]) with js.Object = js.native
+  ): DocumentQueryanynullanyAll = js.native
   /** Find One all documents including deleted */
-  def findOneWithDeleted(conditions: js.Any, projection: js.Any, options: js.Any): (DocumentQuery[_ | Null, _, js.Object]) with js.Object = js.native
+  def findOneWithDeleted(conditions: js.Any, projection: js.Any, options: js.Any): DocumentQueryanynullanyAll = js.native
   /** Find One all documents including deleted */
   def findOneWithDeleted(
     conditions: js.Any,
     projection: js.Any,
     options: js.Any,
     callback: js.Function2[/* err */ js.Any, /* res */ js.Any | Null, Unit]
-  ): (DocumentQuery[_ | Null, _, js.Object]) with js.Object = js.native
+  ): DocumentQueryanynullanyAll = js.native
   /** Find all documents including deleted */
-  def findWithDeleted(): (DocumentQuery[js.Array[_], _, js.Object]) with js.Object = js.native
+  def findWithDeleted(): DocumentQueryArrayanyanyAll = js.native
   /** Find all documents including deleted */
-  def findWithDeleted(callback: js.Function2[/* err */ js.Any, /* res */ js.Array[_], Unit]): (DocumentQuery[js.Array[_], _, js.Object]) with js.Object = js.native
+  def findWithDeleted(callback: js.Function2[/* err */ js.Any, /* res */ js.Array[_], Unit]): DocumentQueryArrayanyanyAll = js.native
   /** Find all documents including deleted */
-  def findWithDeleted(conditions: js.Any): (DocumentQuery[js.Array[_], _, js.Object]) with js.Object = js.native
+  def findWithDeleted(conditions: js.Any): DocumentQueryArrayanyanyAll = js.native
   /** Find all documents including deleted */
-  def findWithDeleted(conditions: js.Any, callback: js.Function2[/* err */ js.Any, /* res */ js.Array[_], Unit]): (DocumentQuery[js.Array[_], _, js.Object]) with js.Object = js.native
+  def findWithDeleted(conditions: js.Any, callback: js.Function2[/* err */ js.Any, /* res */ js.Array[_], Unit]): DocumentQueryArrayanyanyAll = js.native
   /** Find all documents including deleted */
-  def findWithDeleted(conditions: js.Any, projection: js.Any): (DocumentQuery[js.Array[_], _, js.Object]) with js.Object = js.native
+  def findWithDeleted(conditions: js.Any, projection: js.Any): DocumentQueryArrayanyanyAll = js.native
   /** Find all documents including deleted */
   def findWithDeleted(
     conditions: js.Any,
     projection: js.Any,
     callback: js.Function2[/* err */ js.Any, /* res */ js.Array[_], Unit]
-  ): (DocumentQuery[js.Array[_], _, js.Object]) with js.Object = js.native
+  ): DocumentQueryArrayanyanyAll = js.native
   /** Find all documents including deleted */
-  def findWithDeleted(conditions: js.Any, projection: js.Any, options: js.Any): (DocumentQuery[js.Array[_], _, js.Object]) with js.Object = js.native
+  def findWithDeleted(conditions: js.Any, projection: js.Any, options: js.Any): DocumentQueryArrayanyanyAll = js.native
   /** Find all documents including deleted */
   def findWithDeleted(
     conditions: js.Any,
     projection: js.Any,
     options: js.Any,
     callback: js.Function2[/* err */ js.Any, /* res */ js.Array[_], Unit]
-  ): (DocumentQuery[js.Array[_], _, js.Object]) with js.Object = js.native
+  ): DocumentQueryArrayanyanyAll = js.native
   /** Find all documents including deleted */
   def findWithDeleted(
     conditions: js.Any,
     projection: js.Any,
     options: Null,
     callback: js.Function2[/* err */ js.Any, /* res */ js.Array[_], Unit]
-  ): (DocumentQuery[js.Array[_], _, js.Object]) with js.Object = js.native
+  ): DocumentQueryArrayanyanyAll = js.native
   /** Find all documents including deleted */
   def findWithDeleted(
     conditions: js.Any,
     projection: Null,
     callback: js.Function2[/* err */ js.Any, /* res */ js.Array[_], Unit]
-  ): (DocumentQuery[js.Array[_], _, js.Object]) with js.Object = js.native
+  ): DocumentQueryArrayanyanyAll = js.native
   /** Find all documents including deleted */
-  def findWithDeleted(conditions: js.Any, projection: Null, options: js.Any): (DocumentQuery[js.Array[_], _, js.Object]) with js.Object = js.native
+  def findWithDeleted(conditions: js.Any, projection: Null, options: js.Any): DocumentQueryArrayanyanyAll = js.native
   /** Find all documents including deleted */
   def findWithDeleted(
     conditions: js.Any,
     projection: Null,
     options: js.Any,
     callback: js.Function2[/* err */ js.Any, /* res */ js.Array[_], Unit]
-  ): (DocumentQuery[js.Array[_], _, js.Object]) with js.Object = js.native
+  ): DocumentQueryArrayanyanyAll = js.native
   /** Find all documents including deleted */
   def findWithDeleted(
     conditions: js.Any,
     projection: Null,
     options: Null,
     callback: js.Function2[/* err */ js.Any, /* res */ js.Array[_], Unit]
-  ): (DocumentQuery[js.Array[_], _, js.Object]) with js.Object = js.native
+  ): DocumentQueryArrayanyanyAll = js.native
   /**
     * Restore documents by conditions
     */
@@ -371,30 +377,30 @@ trait SoftDeleteModel[T /* <: Document */, QueryHelpers] extends Model_[T, Query
   def restore(conditions: js.Any): Query[T] with QueryHelpers = js.native
   def restore(conditions: js.Any, fn: Callback[T, this.type]): Query[T] with QueryHelpers = js.native
   /** Update only deleted documents */
-  def updateDeleted(conditions: js.Any, doc: js.Any): Query[_] with js.Object = js.native
+  def updateDeleted(conditions: js.Any, doc: js.Any): Queryany = js.native
   /** Update only deleted documents */
-  def updateDeleted(conditions: js.Any, doc: js.Any, callback: js.Function2[/* err */ js.Any, /* raw */ js.Any, Unit]): Query[_] with js.Object = js.native
+  def updateDeleted(conditions: js.Any, doc: js.Any, callback: js.Function2[/* err */ js.Any, /* raw */ js.Any, Unit]): Queryany = js.native
   /** Update only deleted documents */
-  def updateDeleted(conditions: js.Any, doc: js.Any, options: ModelUpdateOptions): Query[_] with js.Object = js.native
+  def updateDeleted(conditions: js.Any, doc: js.Any, options: ModelUpdateOptions): Queryany = js.native
   /** Update only deleted documents */
   def updateDeleted(
     conditions: js.Any,
     doc: js.Any,
     options: ModelUpdateOptions,
     callback: js.Function2[/* err */ js.Any, /* raw */ js.Any, Unit]
-  ): Query[_] with js.Object = js.native
+  ): Queryany = js.native
   /** Update all documents including deleted */
-  def updateWithDeleted(conditions: js.Any, doc: js.Any): Query[_] with js.Object = js.native
+  def updateWithDeleted(conditions: js.Any, doc: js.Any): Queryany = js.native
   /** Update all documents including deleted */
-  def updateWithDeleted(conditions: js.Any, doc: js.Any, callback: js.Function2[/* err */ js.Any, /* raw */ js.Any, Unit]): Query[_] with js.Object = js.native
+  def updateWithDeleted(conditions: js.Any, doc: js.Any, callback: js.Function2[/* err */ js.Any, /* raw */ js.Any, Unit]): Queryany = js.native
   /** Update all documents including deleted */
-  def updateWithDeleted(conditions: js.Any, doc: js.Any, options: ModelUpdateOptions): Query[_] with js.Object = js.native
+  def updateWithDeleted(conditions: js.Any, doc: js.Any, options: ModelUpdateOptions): Queryany = js.native
   /** Update all documents including deleted */
   def updateWithDeleted(
     conditions: js.Any,
     doc: js.Any,
     options: ModelUpdateOptions,
     callback: js.Function2[/* err */ js.Any, /* raw */ js.Any, Unit]
-  ): Query[_] with js.Object = js.native
+  ): Queryany = js.native
 }
 

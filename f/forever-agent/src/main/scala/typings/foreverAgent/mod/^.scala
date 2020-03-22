@@ -1,8 +1,8 @@
 package typings.foreverAgent.mod
 
+import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.TopLevel
-import typings.foreverAgent.AnonOptions
-import typings.foreverAgent.TypeofClassForeverAgent
 import typings.node.httpMod.Agent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,5 +16,10 @@ class ^ () extends Agent {
 
 @JSImport("forever-agent", JSImport.Namespace)
 @js.native
-object ^ extends TopLevel[TypeofClassForeverAgent with AnonOptions]
+object ^ extends TopLevel[
+      Instantiable0[ForeverAgent] with (Instantiable1[/* options */ ForeverAgentOptions, ForeverAgent])
+    ] {
+  var SSL: Instantiable1[js.UndefOr[/* options */ ForeverAgentOptions], ForeverAgentSSL] = js.native
+  var defaultMinSockets: Double = js.native
+}
 

@@ -2,7 +2,7 @@ package typings.backlogJs.mod
 
 import typings.backlogJs.AnonCode
 import typings.backlogJs.AnonHost
-import typings.backlogJs.AnonHostRefreshToken
+import typings.backlogJs.AnonRefreshToken
 import typings.backlogJs.mod.Entity.OAuth2.AccessToken
 import typings.backlogJs.mod.Option.OAuth2.Credentials
 import scala.scalajs.js
@@ -18,6 +18,6 @@ class OAuth2 protected () extends js.Object {
   var timeout: js.Any = js.native
   def getAccessToken(options: AnonCode): js.Promise[AccessToken] = js.native
   def getAuthorizationURL(options: AnonHost): String = js.native
-  def refreshAccessToken(options: AnonHostRefreshToken): js.Promise[AccessToken] = js.native
+  def refreshAccessToken(options: AnonRefreshToken): js.Promise[AccessToken] = js.native
 }
 

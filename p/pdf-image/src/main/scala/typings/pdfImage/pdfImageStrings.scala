@@ -732,9 +732,6 @@ object pdfImageStrings {
   @js.native
   sealed trait `-write-mask` extends ConvertOptionKey
   
-  @js.native
-  sealed trait ConvertOptions extends js.Object
-  
   @scala.inline
   def `-adaptive-blur`: `-adaptive-blur` = "-adaptive-blur".asInstanceOf[`-adaptive-blur`]
   @scala.inline
@@ -1219,7 +1216,5 @@ object pdfImageStrings {
   def `-write`: `-write` = "-write".asInstanceOf[`-write`]
   @scala.inline
   def `-write-mask`: `-write-mask` = "-write-mask".asInstanceOf[`-write-mask`]
-  @scala.inline
-  def ConvertOptions: ConvertOptions = "ConvertOptions".asInstanceOf[ConvertOptions]
 }
 

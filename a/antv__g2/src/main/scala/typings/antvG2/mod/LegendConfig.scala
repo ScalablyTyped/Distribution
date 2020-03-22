@@ -1,7 +1,7 @@
 package typings.antvG2.mod
 
 import typings.antvG2.AnonFill
-import typings.antvG2.AnonFillMarker
+import typings.antvG2.AnonMarker
 import typings.antvG2.antvG2Strings.`bottom-center`
 import typings.antvG2.antvG2Strings.`bottom-left`
 import typings.antvG2.antvG2Strings.`bottom-right`
@@ -11,9 +11,9 @@ import typings.antvG2.antvG2Strings.`left-top`
 import typings.antvG2.antvG2Strings.`right-bottom`
 import typings.antvG2.antvG2Strings.`right-center`
 import typings.antvG2.antvG2Strings.`right-top`
-import typings.antvG2.antvG2Strings.`top-bottom`
 import typings.antvG2.antvG2Strings.`top-center`
 import typings.antvG2.antvG2Strings.`top-left`
+import typings.antvG2.antvG2Strings.`top-right`
 import typings.antvG2.antvG2Strings.bottom
 import typings.antvG2.antvG2Strings.horizontal
 import typings.antvG2.antvG2Strings.left
@@ -43,7 +43,7 @@ trait LegendConfig extends js.Object {
   var itemMarginBottom: js.UndefOr[Double] = js.undefined
   var itemTpl: js.UndefOr[String] = js.undefined
   var itemWidth: js.UndefOr[Double] = js.undefined
-  var items: js.UndefOr[js.Array[AnonFillMarker]] = js.undefined
+  var items: js.UndefOr[js.Array[AnonMarker]] = js.undefined
   var layout: js.UndefOr[vertica | horizontal] = js.undefined
   var marker: js.UndefOr[String | js.Function] = js.undefined
   var offsetX: js.UndefOr[Double] = js.undefined
@@ -51,7 +51,7 @@ trait LegendConfig extends js.Object {
   var onClick: js.UndefOr[js.Function1[/* e */ MouseEvent, Unit]] = js.undefined
   var onHover: js.UndefOr[js.Function1[/* e */ MouseEvent, Unit]] = js.undefined
   var position: js.UndefOr[
-    top | bottom | left | right | `left-top` | `left-center` | `left-bottom` | `right-top` | `right-center` | `right-bottom` | `top-left` | `top-center` | `top-bottom` | `bottom-left` | `bottom-center` | `bottom-right`
+    top | bottom | left | right | `left-top` | `left-center` | `left-bottom` | `right-top` | `right-center` | `right-bottom` | `top-left` | `top-center` | `top-right` | `bottom-left` | `bottom-center` | `bottom-right`
   ] = js.undefined
   var selectedMode: js.UndefOr[single | multiple] = js.undefined
   var slidable: js.UndefOr[Boolean] = js.undefined
@@ -79,14 +79,14 @@ object LegendConfig {
     itemMarginBottom: Int | Double = null,
     itemTpl: String = null,
     itemWidth: Int | Double = null,
-    items: js.Array[AnonFillMarker] = null,
+    items: js.Array[AnonMarker] = null,
     layout: vertica | horizontal = null,
     marker: String | js.Function = null,
     offsetX: Int | Double = null,
     offsetY: Int | Double = null,
     onClick: /* e */ MouseEvent => Unit = null,
     onHover: /* e */ MouseEvent => Unit = null,
-    position: top | bottom | left | right | `left-top` | `left-center` | `left-bottom` | `right-top` | `right-center` | `right-bottom` | `top-left` | `top-center` | `top-bottom` | `bottom-left` | `bottom-center` | `bottom-right` = null,
+    position: top | bottom | left | right | `left-top` | `left-center` | `left-bottom` | `right-top` | `right-center` | `right-bottom` | `top-left` | `top-center` | `top-right` | `bottom-left` | `bottom-center` | `bottom-right` = null,
     selectedMode: single | multiple = null,
     slidable: js.UndefOr[Boolean] = js.undefined,
     textStyle: text = null,

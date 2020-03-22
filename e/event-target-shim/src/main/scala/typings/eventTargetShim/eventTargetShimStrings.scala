@@ -1,73 +1,86 @@
 package typings.eventTargetShim
 
 import typings.eventTargetShim.mod.EventTarget.Mode
+import typings.eventTargetShim.mod.EventTarget.OmittableEventKeys
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object eventTargetShimStrings {
   @js.native
-  sealed trait AT_TARGET extends js.Object
+  sealed trait AT_TARGET extends OmittableEventKeys
   
   @js.native
-  sealed trait BUBBLING_PHASE extends js.Object
+  sealed trait BUBBLING_PHASE extends OmittableEventKeys
   
   @js.native
-  sealed trait CAPTURING_PHASE extends js.Object
+  sealed trait CAPTURING_PHASE extends OmittableEventKeys
   
   @js.native
   sealed trait EventAttributes extends js.Object
   
   @js.native
-  sealed trait NONE extends js.Object
+  sealed trait NONE extends OmittableEventKeys
   
   @js.native
-  sealed trait bubbles extends js.Object
+  sealed trait bubbles extends OmittableEventKeys
   
   @js.native
-  sealed trait cancelBubble extends js.Object
+  sealed trait cancelBubble extends OmittableEventKeys
   
   @js.native
-  sealed trait cancelable extends js.Object
+  sealed trait cancelable extends OmittableEventKeys
   
   @js.native
-  sealed trait composed extends js.Object
+  sealed trait composed extends OmittableEventKeys
   
   @js.native
-  sealed trait currentTarget extends js.Object
+  sealed trait composedPath extends OmittableEventKeys
   
   @js.native
-  sealed trait defaultPrevented extends js.Object
+  sealed trait currentTarget extends OmittableEventKeys
   
   @js.native
-  sealed trait eventPhase extends js.Object
+  sealed trait defaultPrevented extends OmittableEventKeys
   
   @js.native
-  sealed trait isTrusted extends js.Object
+  sealed trait eventPhase extends OmittableEventKeys
+  
+  @js.native
+  sealed trait initEvent extends OmittableEventKeys
+  
+  @js.native
+  sealed trait isTrusted extends OmittableEventKeys
   
   @js.native
   sealed trait loose extends Mode
   
   @js.native
-  sealed trait returnValue extends js.Object
+  sealed trait preventDefault extends OmittableEventKeys
   
   @js.native
-  sealed trait srcElement extends js.Object
+  sealed trait returnValue extends OmittableEventKeys
+  
+  @js.native
+  sealed trait srcElement extends OmittableEventKeys
   
   @js.native
   sealed trait standard extends Mode
   
   @js.native
+  sealed trait stopImmediatePropagation extends OmittableEventKeys
+  
+  @js.native
+  sealed trait stopPropagation extends OmittableEventKeys
+  
+  @js.native
   sealed trait strict extends Mode
   
   @js.native
-  sealed trait target extends js.Object
+  sealed trait target extends OmittableEventKeys
   
   @js.native
-  sealed trait timeStamp extends js.Object
-  
-  @js.native
-  sealed trait `type` extends js.Object
+  sealed trait timeStamp extends OmittableEventKeys
   
   @scala.inline
   def AT_TARGET: AT_TARGET = "AT_TARGET".asInstanceOf[AT_TARGET]
@@ -88,15 +101,21 @@ object eventTargetShimStrings {
   @scala.inline
   def composed: composed = "composed".asInstanceOf[composed]
   @scala.inline
+  def composedPath: composedPath = "composedPath".asInstanceOf[composedPath]
+  @scala.inline
   def currentTarget: currentTarget = "currentTarget".asInstanceOf[currentTarget]
   @scala.inline
   def defaultPrevented: defaultPrevented = "defaultPrevented".asInstanceOf[defaultPrevented]
   @scala.inline
   def eventPhase: eventPhase = "eventPhase".asInstanceOf[eventPhase]
   @scala.inline
+  def initEvent: initEvent = "initEvent".asInstanceOf[initEvent]
+  @scala.inline
   def isTrusted: isTrusted = "isTrusted".asInstanceOf[isTrusted]
   @scala.inline
   def loose: loose = "loose".asInstanceOf[loose]
+  @scala.inline
+  def preventDefault: preventDefault = "preventDefault".asInstanceOf[preventDefault]
   @scala.inline
   def returnValue: returnValue = "returnValue".asInstanceOf[returnValue]
   @scala.inline
@@ -104,12 +123,14 @@ object eventTargetShimStrings {
   @scala.inline
   def standard: standard = "standard".asInstanceOf[standard]
   @scala.inline
+  def stopImmediatePropagation: stopImmediatePropagation = "stopImmediatePropagation".asInstanceOf[stopImmediatePropagation]
+  @scala.inline
+  def stopPropagation: stopPropagation = "stopPropagation".asInstanceOf[stopPropagation]
+  @scala.inline
   def strict: strict = "strict".asInstanceOf[strict]
   @scala.inline
   def target: target = "target".asInstanceOf[target]
   @scala.inline
   def timeStamp: timeStamp = "timeStamp".asInstanceOf[timeStamp]
-  @scala.inline
-  def `type`: `type` = "type".asInstanceOf[`type`]
 }
 

@@ -6,7 +6,6 @@ import typings.queryString.queryStringStrings.comma
 import typings.queryString.queryStringStrings.index
 import typings.queryString.queryStringStrings.none
 import typings.queryString.queryStringStrings.separator
-import typings.queryString.queryStringStrings.string
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -50,7 +49,7 @@ trait ParseOptions extends js.Object {
   	The character used to separate array elements when using `{arrayFormat: 'separator'}`.
   	@default ,
   	*/
-  val arrayFormatSeparator: js.UndefOr[string] = js.undefined
+  val arrayFormatSeparator: js.UndefOr[String] = js.undefined
   /**
   	Decode the keys and values. URI components are decoded with [`decode-uri-component`](https://github.com/SamVerschueren/decode-uri-component).
   	@default true
@@ -105,7 +104,7 @@ object ParseOptions {
   @scala.inline
   def apply(
     arrayFormat: bracket | index | comma | separator | none = null,
-    arrayFormatSeparator: string = null,
+    arrayFormatSeparator: String = null,
     decode: js.UndefOr[Boolean] = js.undefined,
     parseBooleans: js.UndefOr[Boolean] = js.undefined,
     parseNumbers: js.UndefOr[Boolean] = js.undefined,

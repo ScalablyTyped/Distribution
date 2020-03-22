@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
   - typings.std.ArrayBuffer
   - typings.std.MessagePort
   - typings.std.ImageBitmap
+  - typings.std.OffscreenCanvas
 */
 trait Transferable extends js.Object
 

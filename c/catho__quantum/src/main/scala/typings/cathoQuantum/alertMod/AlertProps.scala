@@ -1,6 +1,6 @@
 package typings.cathoQuantum.alertMod
 
-import typings.cathoQuantum.AnonBaseFontSizeColors
+import typings.cathoQuantum.AnonColors
 import typings.cathoQuantum.cathoQuantumStrings.error
 import typings.cathoQuantum.cathoQuantumStrings.neutral
 import typings.cathoQuantum.cathoQuantumStrings.primary
@@ -19,7 +19,7 @@ trait AlertProps[T] extends js.Object {
   var icon: js.UndefOr[String] = js.undefined
   var onClose: MouseEventHandler[T]
   var skin: js.UndefOr[primary | success | error | neutral | warning] = js.undefined
-  var theme: js.UndefOr[AnonBaseFontSizeColors] = js.undefined
+  var theme: js.UndefOr[AnonColors] = js.undefined
 }
 
 object AlertProps {
@@ -29,7 +29,7 @@ object AlertProps {
     children: ReactNode = null,
     icon: String = null,
     skin: primary | success | error | neutral | warning = null,
-    theme: AnonBaseFontSizeColors = null
+    theme: AnonColors = null
   ): AlertProps[T] = {
     val __obj = js.Dynamic.literal(onClose = js.Any.fromFunction1(onClose))
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])

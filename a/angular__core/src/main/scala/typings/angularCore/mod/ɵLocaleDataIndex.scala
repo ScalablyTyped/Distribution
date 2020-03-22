@@ -15,6 +15,9 @@ object ɵLocaleDataIndex extends js.Object {
   sealed trait Currencies extends ɵLocaleDataIndex
   
   @js.native
+  sealed trait CurrencyCode extends ɵLocaleDataIndex
+  
+  @js.native
   sealed trait CurrencyName extends ɵLocaleDataIndex
   
   @js.native
@@ -73,13 +76,16 @@ object ɵLocaleDataIndex extends js.Object {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ɵLocaleDataIndex with Double] = js.native
-  /* 17 */ @js.native
+  /* 18 */ @js.native
   object Currencies extends TopLevel[Currencies with Double]
   
-  /* 16 */ @js.native
+  /* 15 */ @js.native
+  object CurrencyCode extends TopLevel[CurrencyCode with Double]
+  
+  /* 17 */ @js.native
   object CurrencyName extends TopLevel[CurrencyName with Double]
   
-  /* 15 */ @js.native
+  /* 16 */ @js.native
   object CurrencySymbol extends TopLevel[CurrencySymbol with Double]
   
   /* 10 */ @js.native
@@ -103,7 +109,7 @@ object ɵLocaleDataIndex extends js.Object {
   /* 7 */ @js.native
   object Eras extends TopLevel[Eras with Double]
   
-  /* 19 */ @js.native
+  /* 20 */ @js.native
   object ExtraData extends TopLevel[ExtraData with Double]
   
   /* 8 */ @js.native
@@ -124,7 +130,7 @@ object ɵLocaleDataIndex extends js.Object {
   /* 13 */ @js.native
   object NumberSymbols extends TopLevel[NumberSymbols with Double]
   
-  /* 18 */ @js.native
+  /* 19 */ @js.native
   object PluralCase extends TopLevel[PluralCase with Double]
   
   /* 11 */ @js.native

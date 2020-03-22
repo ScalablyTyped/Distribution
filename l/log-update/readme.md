@@ -1,7 +1,7 @@
 
 # Scala.js typings for log-update
 
-Typings are for version 3.4.0
+Typings are for version 4.0.0
 
 ## Library description:
 Log by overwriting the previous output in the terminal. Useful for rendering progress bars, animations, etc.

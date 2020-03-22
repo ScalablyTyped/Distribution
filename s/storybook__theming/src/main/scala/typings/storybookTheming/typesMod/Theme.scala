@@ -1,7 +1,7 @@
 package typings.storybookTheming.typesMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.storybookTheming.AnonBackgroundBorder
+import typings.storybookTheming.AnonBorder
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +19,7 @@ trait Theme
   var code: StringDictionary[String | js.Object]
   var color: Color
   var easing: Easing
-  var input: AnonBackgroundBorder
+  var input: AnonBorder
   var layoutMargin: Double
   var typography: Typography
 }
@@ -38,7 +38,7 @@ object Theme {
     code: StringDictionary[String | js.Object],
     color: Color,
     easing: Easing,
-    input: AnonBackgroundBorder,
+    input: AnonBorder,
     layoutMargin: Double,
     typography: Typography,
     StringDictionary: /* key */ StringDictionary[js.Any] = null

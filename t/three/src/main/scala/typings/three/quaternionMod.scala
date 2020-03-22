@@ -3,6 +3,7 @@ package typings.three
 import typings.std.ArrayLike
 import typings.three.eulerMod.Euler
 import typings.three.matrix4Mod.Matrix4
+import typings.three.threeBooleans.`true`
 import typings.three.vector3Mod.Vector3
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -24,6 +25,7 @@ object quaternionMod extends js.Object {
     def this(x: Double, y: Double, z: Double) = this()
     def this(x: Double, y: Double, z: Double, w: Double) = this()
     var _onChangeCallback: js.Function = js.native
+    val isQuaternion: `true` = js.native
     var w: Double = js.native
     var x: Double = js.native
     var y: Double = js.native

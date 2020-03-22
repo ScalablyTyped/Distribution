@@ -1,7 +1,5 @@
 package typings.sweetalert
 
-import typings.std.Partial
-import typings.sweetalert.optionsMod.SwalOptions
 import typings.sweetalert.stateMod.ActionOptions
 import typings.sweetalert.stateMod.SwalState
 import scala.scalajs.js
@@ -24,6 +22,6 @@ object coreMod extends js.Object {
   }
   
   val default: SweetAlert = js.native
-  type SwalParams = js.Array[String | Partial[SwalOptions]]
+  type SwalParams = js.Array[String | PartialSwalOptions]
 }
 

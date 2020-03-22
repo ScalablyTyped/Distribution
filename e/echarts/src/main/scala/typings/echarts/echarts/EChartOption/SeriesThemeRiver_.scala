@@ -1,9 +1,9 @@
 package typings.echarts.echarts.EChartOption
 
-import typings.echarts.AnonBackgroundColorBorderColor
-import typings.echarts.AnonBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamily
-import typings.echarts.AnonBorderColorBorderType
-import typings.echarts.AnonItemStyleLabelAnonBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSize
+import typings.echarts.AnonBorderType
+import typings.echarts.AnonExtraCssText
+import typings.echarts.AnonLabelAnonTextShadowColor
+import typings.echarts.AnonTextShadowBlur
 import typings.echarts.echarts.EChartOption.SeriesThemeRiver.DataObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -206,9 +206,7 @@ trait SeriesThemeRiver_ extends js.Object {
   /**
     * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis
     */
-  var emphasis: js.UndefOr[
-    AnonItemStyleLabelAnonBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSize
-  ] = js.undefined
+  var emphasis: js.UndefOr[AnonLabelAnonTextShadowColor] = js.undefined
   /**
     * Height of thmemRiver component.
     *
@@ -235,7 +233,7 @@ trait SeriesThemeRiver_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-themeRiver.itemStyle
     */
-  var itemStyle: js.UndefOr[AnonBorderColorBorderType] = js.undefined
+  var itemStyle: js.UndefOr[AnonBorderType] = js.undefined
   /**
     * `label` describes style of text labels with which each ribbon-shape
     * river branch corresponds in theme river.
@@ -243,7 +241,7 @@ trait SeriesThemeRiver_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-themeRiver.label
     */
-  var label: js.UndefOr[AnonBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamily] = js.undefined
+  var label: js.UndefOr[AnonTextShadowBlur] = js.undefined
   /**
     * Distance between thmemRiver component and the left side of the
     * container.
@@ -288,7 +286,7 @@ trait SeriesThemeRiver_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-themeRiver.tooltip
     */
-  var tooltip: js.UndefOr[AnonBackgroundColorBorderColor] = js.undefined
+  var tooltip: js.UndefOr[AnonExtraCssText] = js.undefined
   /**
     * Distance between thmemRiver component and the top side of the
     * container.
@@ -363,15 +361,15 @@ object SeriesThemeRiver_ {
     data: js.Array[
       (js.Array[Unit | Double | String | DataObject]) | DataObject | Double | String | Unit
     ] = null,
-    emphasis: AnonItemStyleLabelAnonBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSize = null,
+    emphasis: AnonLabelAnonTextShadowColor = null,
     height: Double | String = null,
     id: String = null,
-    itemStyle: AnonBorderColorBorderType = null,
-    label: AnonBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamily = null,
+    itemStyle: AnonBorderType = null,
+    label: AnonTextShadowBlur = null,
     left: Double | String = null,
     right: Double | String = null,
     singleAxisIndex: Int | Double = null,
-    tooltip: AnonBackgroundColorBorderColor = null,
+    tooltip: AnonExtraCssText = null,
     top: Double | String = null,
     `type`: String = null,
     width: Double | String = null,

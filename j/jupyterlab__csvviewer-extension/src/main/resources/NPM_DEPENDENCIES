@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jupyterlab/csvviewer-extension" : "1.2.2"
+      "@jupyterlab/csvviewer-extension" : "2.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@jupyterlab/csvviewer-extension" : "1.2.2"
+      "@jupyterlab/csvviewer-extension" : "2.0.0"
     }
   ],
   "compile-devDependencies" : [

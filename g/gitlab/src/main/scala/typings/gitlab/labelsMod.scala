@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object labelsMod extends js.Object {
   @js.native
-  class Labels () extends ResourceLabels {
+  class Labels protected () extends ResourceLabels {
     def this(options: BaseServiceOptions) = this()
   }
   

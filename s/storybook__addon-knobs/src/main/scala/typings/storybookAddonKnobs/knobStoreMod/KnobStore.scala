@@ -1,12 +1,9 @@
 package typings.storybookAddonKnobs.knobStoreMod
 
 import typings.std.Partial
-import typings.std.Pick
 import typings.std.Record
-import typings.storybookAddonKnobs.AnonCallbackDefaultValue
-import typings.storybookAddonKnobs.AnonCallbackDefaultValueGroupId
-import typings.storybookAddonKnobs.objectMod.ObjectTypeKnob
-import typings.storybookAddonKnobs.storybookAddonKnobsStrings.value
+import typings.storybookAddonKnobs.AnonDefaultValue
+import typings.storybookAddonKnobs.typeanygroupIdstringundef
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +12,7 @@ trait KnobStore extends js.Object {
   var callbacks: js.Array[Callback]
   var store: Record[String, KnobStoreKnob]
   var timer: js.UndefOr[Double] = js.undefined
-  def get(key: String): (AnonCallbackDefaultValue with (Pick[ObjectTypeKnob[_], value])) | AnonCallbackDefaultValueGroupId
+  def get(key: String): typeanygroupIdstringundef | AnonDefaultValue
   def getAll(): Record[String, KnobStoreKnob]
   def has(key: String): Boolean
   def markAllUnused(): Unit
@@ -30,7 +27,7 @@ object KnobStore {
   @scala.inline
   def apply(
     callbacks: js.Array[Callback],
-    get: String => (AnonCallbackDefaultValue with (Pick[ObjectTypeKnob[_], value])) | AnonCallbackDefaultValueGroupId,
+    get: String => typeanygroupIdstringundef | AnonDefaultValue,
     getAll: () => Record[String, KnobStoreKnob],
     has: String => Boolean,
     markAllUnused: () => Unit,

@@ -2,9 +2,9 @@ package typings.muiDatatables.mod
 
 import typings.muiDatatables.AnonColIndex
 import typings.muiDatatables.AnonDataDataIndex
-import typings.muiDatatables.AnonDataIndexRowIndex
-import typings.muiDatatables.AnonDataKey
 import typings.muiDatatables.AnonFilename
+import typings.muiDatatables.AnonLookup
+import typings.muiDatatables.AnonRowIndex
 import typings.muiDatatables.AnonXAxis
 import typings.muiDatatables.muiDatatablesStrings.chip
 import typings.muiDatatables.muiDatatablesStrings.reset
@@ -55,7 +55,7 @@ trait MUIDataTableOptions extends js.Object {
   var customToolbar: js.UndefOr[js.Function0[ReactNode]] = js.undefined
   var customToolbarSelect: js.UndefOr[
     js.Function3[
-      /* selectedRows */ AnonDataKey, 
+      /* selectedRows */ AnonLookup, 
       /* displayData */ js.Array[AnonDataDataIndex], 
       /* setSelectedRows */ js.Function1[/* rows */ js.Array[Double], Unit], 
       ReactNode
@@ -114,9 +114,7 @@ trait MUIDataTableOptions extends js.Object {
   ] = js.undefined
   var onFilterDialogClose: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onFilterDialogOpen: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onRowClick: js.UndefOr[
-    js.Function2[/* rowData */ js.Array[String], /* rowMeta */ AnonDataIndexRowIndex, Unit]
-  ] = js.undefined
+  var onRowClick: js.UndefOr[js.Function2[/* rowData */ js.Array[String], /* rowMeta */ AnonRowIndex, Unit]] = js.undefined
   var onRowsDelete: js.UndefOr[js.Function1[/* rowsDeleted */ js.Array[_], Unit]] = js.undefined
   var onRowsExpand: js.UndefOr[
     js.Function2[/* currentRowsExpanded */ js.Array[_], /* allRowsExpanded */ js.Array[_], Unit]
@@ -133,7 +131,7 @@ trait MUIDataTableOptions extends js.Object {
   var pagination: js.UndefOr[Boolean] = js.undefined
   var print: js.UndefOr[Boolean] = js.undefined
   var renderExpandableRow: js.UndefOr[
-    js.Function2[/* rowData */ js.Array[String], /* rowMeta */ AnonDataIndexRowIndex, ReactNode]
+    js.Function2[/* rowData */ js.Array[String], /* rowMeta */ AnonRowIndex, ReactNode]
   ] = js.undefined
   var resizableColumns: js.UndefOr[Boolean] = js.undefined
   var responsive: js.UndefOr[Responsive] = js.undefined
@@ -171,7 +169,7 @@ object MUIDataTableOptions {
     customSearchRender: (/* searchText */ String, /* handleSearch */ js.Any, /* hideSearch */ js.Any, /* options */ js.Any) => (Component[js.Object, js.Object, _]) | Element = null,
     customSort: (/* data */ js.Array[_], /* colIndex */ Double, /* order */ String) => js.Array[_] = null,
     customToolbar: () => ReactNode = null,
-    customToolbarSelect: (/* selectedRows */ AnonDataKey, /* displayData */ js.Array[AnonDataDataIndex], /* setSelectedRows */ js.Function1[/* rows */ js.Array[Double], Unit]) => ReactNode = null,
+    customToolbarSelect: (/* selectedRows */ AnonLookup, /* displayData */ js.Array[AnonDataDataIndex], /* setSelectedRows */ js.Function1[/* rows */ js.Array[Double], Unit]) => ReactNode = null,
     disableToolbarSelect: js.UndefOr[Boolean] = js.undefined,
     download: js.UndefOr[Boolean] = js.undefined,
     downloadOptions: AnonFilename = null,
@@ -193,7 +191,7 @@ object MUIDataTableOptions {
     onFilterChange: (/* changedColumn */ String, /* filterList */ js.Array[_], /* type */ FilterType | chip | reset) => Unit = null,
     onFilterDialogClose: () => Unit = null,
     onFilterDialogOpen: () => Unit = null,
-    onRowClick: (/* rowData */ js.Array[String], /* rowMeta */ AnonDataIndexRowIndex) => Unit = null,
+    onRowClick: (/* rowData */ js.Array[String], /* rowMeta */ AnonRowIndex) => Unit = null,
     onRowsDelete: /* rowsDeleted */ js.Array[_] => Unit = null,
     onRowsExpand: (/* currentRowsExpanded */ js.Array[_], /* allRowsExpanded */ js.Array[_]) => Unit = null,
     onRowsSelect: (/* currentRowsSelected */ js.Array[_], /* rowsSelected */ js.Array[_]) => Unit = null,
@@ -205,7 +203,7 @@ object MUIDataTableOptions {
     page: Int | Double = null,
     pagination: js.UndefOr[Boolean] = js.undefined,
     print: js.UndefOr[Boolean] = js.undefined,
-    renderExpandableRow: (/* rowData */ js.Array[String], /* rowMeta */ AnonDataIndexRowIndex) => ReactNode = null,
+    renderExpandableRow: (/* rowData */ js.Array[String], /* rowMeta */ AnonRowIndex) => ReactNode = null,
     resizableColumns: js.UndefOr[Boolean] = js.undefined,
     responsive: Responsive = null,
     rowHover: js.UndefOr[Boolean] = js.undefined,

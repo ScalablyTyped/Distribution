@@ -1,7 +1,7 @@
 package typings.oracledb.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.oracledb.AnonTypeTypeClass
+import typings.oracledb.AnonTypeClass
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -19,7 +19,7 @@ class DBObject ()
   /**
     * When dbObject.isCollection is false, this will be an object containing attributes corresponding to the Oracle Database object attributes. 
     */
-  var attributes: Record[String, AnonTypeTypeClass] = js.native
+  var attributes: Record[String, AnonTypeClass] = js.native
   /** When dbObject.isCollection is true, this will be one of the DB_TYPE constants. */
   val elementType: Double = js.native
   val elementTypeClass: DBObjectClass = js.native

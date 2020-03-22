@@ -27,7 +27,7 @@ class TrainingPhrase_ () extends ITrainingPhrase {
   var timesAddedCount_TrainingPhrase_ : Double = js.native
   /** TrainingPhrase type. */
   @JSName("type")
-  var type_TrainingPhrase_ : Type = js.native
+  var type_TrainingPhrase_ : Type | String = js.native
   /**
     * Converts this TrainingPhrase to JSON.
     * @returns JSON object

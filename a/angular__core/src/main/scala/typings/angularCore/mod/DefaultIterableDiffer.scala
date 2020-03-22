@@ -27,18 +27,8 @@ class DefaultIterableDiffer[V] ()
   var _trackByFn: js.Any = js.native
   var _unlinkedRecords: js.Any = js.native
   val collection: js.Array[V] | Iterable[V] | Null = js.native
-  val isDirty: Boolean = js.native
   val length: Double = js.native
   def check(collection: NgIterable[V]): Boolean = js.native
-  /**
-    * Compute a difference between the previous state and the new `object` state.
-    *
-    * @param object containing the new value.
-    * @returns an object describing the difference. The return value is only valid until the next
-    * `diff()` invocation.
-    */
-  /* CompleteClass */
-  override def diff(`object`: NgIterable[V]): IterableChanges[V] | Null = js.native
   /** Iterate over all added items. */
   /* CompleteClass */
   override def forEachAddedItem(fn: js.Function1[/* record */ IterableChangeRecord[V], Unit]): Unit = js.native
@@ -89,6 +79,7 @@ class DefaultIterableDiffer[V] ()
   /** Iterate over all removed items. */
   /* CompleteClass */
   override def forEachRemovedItem(fn: js.Function1[/* record */ IterableChangeRecord[V], Unit]): Unit = js.native
+  def isDirty(): Boolean = js.native
   def onDestroy(): Unit = js.native
 }
 

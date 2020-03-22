@@ -4,7 +4,6 @@ import typings.materialBase.foundationMod.MDCFoundation
 import typings.materialDataTable.adapterMod.MDCDataTableAdapter
 import typings.std.Element
 import typings.std.Event_
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +13,7 @@ import scala.scalajs.js.annotation._
 object foundationMod extends js.Object {
   @js.native
   class MDCDataTableFoundation () extends MDCFoundation[MDCDataTableAdapter] {
-    def this(adapter: Partial[MDCDataTableAdapter]) = this()
+    def this(adapter: PartialMDCDataTableAdapte) = this()
     // Subclasses should override this method to perform de-initialization routines (de-registering events, etc.)
     /* CompleteClass */
     override def destroy(): Unit = js.native

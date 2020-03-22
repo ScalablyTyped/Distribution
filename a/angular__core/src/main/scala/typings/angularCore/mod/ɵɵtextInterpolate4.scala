@@ -17,6 +17,17 @@ object ɵɵtextInterpolate4 extends js.Object {
     i2: String,
     v3: js.Any,
     suffix: String
-  ): TsickleIssue1009 = js.native
+  ): js.Function9[
+    /* prefix */ String, 
+    /* v0 */ js.Any, 
+    /* i0 */ String, 
+    /* v1 */ js.Any, 
+    /* i1 */ String, 
+    /* v2 */ js.Any, 
+    /* i2 */ String, 
+    /* v3 */ js.Any, 
+    /* suffix */ String, 
+    /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵtextInterpolate4 */ js.Any
+  ] = js.native
 }
 

@@ -10,7 +10,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object serializersTypesUnknownMod extends js.Object {
   @js.native
-  class UnknownTypeSerializer () extends TypeSerializerComponent[UnknownType]
+  class UnknownTypeSerializer () extends TypeSerializerComponent[UnknownType] {
+    def toObject(`type`: UnknownType, obj: PickUnknownTypetype): typings.typedoc.schemaMod.UnknownType = js.native
+  }
   
 }
 

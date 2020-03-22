@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object fpFormatISO9075WithOptionsMod extends js.Object {
   @js.native
-  object default extends TopLevel[CurriedFn2[AnonBasicComplete, Date | Double, String]]
+  object default extends TopLevel[CurriedFn2[AnonRepresentation, Date | Double, String]]
   
 }
 

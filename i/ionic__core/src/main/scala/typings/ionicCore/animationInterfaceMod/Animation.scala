@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
 trait Animation extends js.Object {
   var childAnimations: js.Array[Animation] = js.native
   var elements: js.Array[HTMLElement] = js.native
+  var id: js.UndefOr[String] = js.native
   var parentAnimation: js.UndefOr[Animation] = js.native
   def addAnimation(animationToAdd: js.Array[Animation]): Animation = js.native
   /**
@@ -195,10 +196,6 @@ trait Animation extends js.Object {
     */
   def play(): js.Promise[Unit] = js.native
   def play(opts: AnimationPlayOptions): js.Promise[Unit] = js.native
-  /** @deprecated */
-  def playAsync(): js.Promise[Unit] = js.native
-  /** @deprecated */
-  def playSync(): Unit = js.native
   def progressEnd(playTo: js.UndefOr[scala.Nothing], step: Double): Unit = js.native
   def progressEnd(playTo: js.UndefOr[scala.Nothing], step: Double, dur: Double): Unit = js.native
   @JSName("progressEnd")
@@ -210,6 +207,7 @@ trait Animation extends js.Object {
   @JSName("progressEnd")
   def progressEnd_1(playTo: `1`, step: Double, dur: Double): Unit = js.native
   def progressStart(forceLinearEasing: Boolean): Unit = js.native
+  def progressStart(forceLinearEasing: Boolean, step: Double): Unit = js.native
   def progressStep(step: Double): Unit = js.native
   /**
     * Stop the animation and reset

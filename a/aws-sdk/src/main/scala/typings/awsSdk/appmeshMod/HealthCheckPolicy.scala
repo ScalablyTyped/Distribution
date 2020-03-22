@@ -16,8 +16,8 @@ trait HealthCheckPolicy extends js.Object {
     */
   var intervalMillis: HealthCheckIntervalMillis = js.native
   /**
-    * The destination path for the health check request. This is required only if the
-    specified protocol is HTTP. If the protocol is TCP, this parameter is ignored.
+    * The destination path for the health check request. This value is only used if the specified 
+    protocol is HTTP or HTTP/2. For any other protocol, this value is ignored.
     */
   var path: js.UndefOr[String] = js.native
   /**
@@ -26,7 +26,7 @@ trait HealthCheckPolicy extends js.Object {
     */
   var port: js.UndefOr[PortNumber] = js.native
   /**
-    * The protocol for the health check request.
+    * The protocol for the health check request. If you specify grpc, then your service must conform to the GRPC Health Checking Protocol.
     */
   var protocol: PortProtocol = js.native
   /**

@@ -1,9 +1,9 @@
 package typings.echarts.echarts.EChartOption.SeriesLine
 
-import typings.echarts.AnonAlignBackgroundColorBorderColorBorderRadiusBorderWidth
-import typings.echarts.AnonBackgroundColorBorderColor
-import typings.echarts.AnonBarBorderColorBarBorderWidth
-import typings.echarts.AnonItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthAnonBarBorderColorBarBorderWidth
+import typings.echarts.AnonBarBorderWidth
+import typings.echarts.AnonDistance
+import typings.echarts.AnonExtraCssText
+import typings.echarts.AnonItemStyleAnonBarBorderWidth
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,23 +12,21 @@ trait DataObject extends js.Object {
   /**
     * @see https://echarts.apache.org/en/option.html#series-line.data.emphasis
     */
-  var emphasis: js.UndefOr[
-    AnonItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthAnonBarBorderColorBarBorderWidth
-  ] = js.undefined
+  var emphasis: js.UndefOr[AnonItemStyleAnonBarBorderWidth] = js.undefined
   /**
     * The style of the symbol of single data point.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-line.data.itemStyle
     */
-  var itemStyle: js.UndefOr[AnonBarBorderColorBarBorderWidth] = js.undefined
+  var itemStyle: js.UndefOr[AnonBarBorderWidth] = js.undefined
   /**
     * The style of the text of single data point.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-line.data.label
     */
-  var label: js.UndefOr[AnonAlignBackgroundColorBorderColorBorderRadiusBorderWidth] = js.undefined
+  var label: js.UndefOr[AnonDistance] = js.undefined
   /**
     * The name of data item.
     *
@@ -136,7 +134,7 @@ trait DataObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-line.data.tooltip
     */
-  var tooltip: js.UndefOr[AnonBackgroundColorBorderColor] = js.undefined
+  var tooltip: js.UndefOr[AnonExtraCssText] = js.undefined
   /**
     * The value of a single data item.
     *
@@ -149,16 +147,16 @@ trait DataObject extends js.Object {
 object DataObject {
   @scala.inline
   def apply(
-    emphasis: AnonItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthAnonBarBorderColorBarBorderWidth = null,
-    itemStyle: AnonBarBorderColorBarBorderWidth = null,
-    label: AnonAlignBackgroundColorBorderColorBorderRadiusBorderWidth = null,
+    emphasis: AnonItemStyleAnonBarBorderWidth = null,
+    itemStyle: AnonBarBorderWidth = null,
+    label: AnonDistance = null,
     name: String = null,
     symbol: String = null,
     symbolKeepAspect: js.UndefOr[Boolean] = js.undefined,
     symbolOffset: js.Array[_] = null,
     symbolRotate: Int | Double = null,
     symbolSize: js.Array[_] | Double = null,
-    tooltip: AnonBackgroundColorBorderColor = null,
+    tooltip: AnonExtraCssText = null,
     value: Int | Double = null
   ): DataObject = {
     val __obj = js.Dynamic.literal()

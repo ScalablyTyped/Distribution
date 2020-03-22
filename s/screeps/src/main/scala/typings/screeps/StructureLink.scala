@@ -1,7 +1,6 @@
 package typings.screeps
 
 import org.scalablytyped.runtime.TopLevel
-import typings.screeps.screepsBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,7 +30,7 @@ trait StructureLink
   /**
     * A Store object that contains cargo of this structure.
     */
-  var store: Store[RESOURCE_ENERGY, `false`] = js.native
+  var store: StoreRESOURCEENERGYfalse = js.native
   /**
     * Transfer energy from the link to another link or a creep.
     *

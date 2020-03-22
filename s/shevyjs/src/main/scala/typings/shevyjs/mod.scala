@@ -1,15 +1,8 @@
 package typings.shevyjs
 
-import typings.shevyjs.shevyjsStrings.fontSize
-import typings.shevyjs.shevyjsStrings.lineHeight
-import typings.shevyjs.shevyjsStrings.marginBottom
 import typings.shevyjs.typesMod.Factor
-import typings.shevyjs.typesMod.Options
 import typings.shevyjs.typesMod.RhythmProperties
 import typings.shevyjs.typesMod.Scale
-import typings.std.Exclude
-import typings.std.Partial
-import typings.std.Pick
 import typings.std.ReturnType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -25,7 +18,7 @@ object mod extends js.Object {
     var baseFontSize: String = js.native
     var baseFontUnit: ReturnType[js.Function1[/* size */ String, String]] = js.native
     var baseLineHeight: Double = js.native
-    var body: Pick[RhythmProperties, Exclude[fontSize | lineHeight | marginBottom, marginBottom]] = js.native
+    var body: PickRhythmPropertiesExclu = js.native
     var content: RhythmProperties = js.native
     var h1: RhythmProperties = js.native
     var h2: RhythmProperties = js.native
@@ -43,7 +36,7 @@ object mod extends js.Object {
   
   @js.native
   class default () extends Shevy {
-    def this(options: Partial[Options]) = this()
+    def this(options: PartialOptions) = this()
   }
   
 }

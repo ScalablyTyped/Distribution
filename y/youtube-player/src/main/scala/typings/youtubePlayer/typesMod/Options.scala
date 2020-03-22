@@ -1,18 +1,15 @@
 package typings.youtubePlayer.typesMod
 
-import typings.youtubePlayer.Anon0
+import typings.youtubePlayer.AnonAutoplay
+import typings.youtubePlayer.eventTypeinEventTypeevent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
-  var events: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ eventType in youtube-player.youtube-player/dist/eventNames.EventType ]:? (event : std.CustomEvent<any>): void}
-    */ typings.youtubePlayer.youtubePlayerStrings.Options with js.Any
-  ] = js.undefined
+  var events: js.UndefOr[eventTypeinEventTypeevent] = js.undefined
   var height: js.UndefOr[Double] = js.undefined
-  var playerVars: js.UndefOr[Anon0] = js.undefined
+  var playerVars: js.UndefOr[AnonAutoplay] = js.undefined
   var videoId: js.UndefOr[String] = js.undefined
   var width: js.UndefOr[Double] = js.undefined
 }
@@ -20,11 +17,9 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    events: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ eventType in youtube-player.youtube-player/dist/eventNames.EventType ]:? (event : std.CustomEvent<any>): void}
-    */ typings.youtubePlayer.youtubePlayerStrings.Options with js.Any = null,
+    events: eventTypeinEventTypeevent = null,
     height: Int | Double = null,
-    playerVars: Anon0 = null,
+    playerVars: AnonAutoplay = null,
     videoId: String = null,
     width: Int | Double = null
   ): Options = {

@@ -10,6 +10,7 @@ import typings.antDesignColors.antDesignColorsNumbers.`4`
 import typings.antDesignColors.antDesignColorsNumbers.`5`
 import typings.antDesignColors.antDesignColorsNumbers.`6`
 import typings.antDesignColors.antDesignColorsNumbers.`7`
+import typings.antDesignColors.generateMod.Opts
 import typings.std.AnonCopyWithin
 import typings.std.IterableIterator
 import scala.scalajs.js
@@ -19,8 +20,10 @@ import scala.scalajs.js.annotation._
 @JSImport("@ant-design/colors/lib", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  val presetDarkPalettes: PalettesProps = js.native
   val presetPalettes: PalettesProps = js.native
   def generate(color: String): js.Array[String] = js.native
+  def generate(color: String, opts: Opts): js.Array[String] = js.native
   @js.native
   object blue extends /* n */ NumberDictionary[String] {
     /** Iterator */

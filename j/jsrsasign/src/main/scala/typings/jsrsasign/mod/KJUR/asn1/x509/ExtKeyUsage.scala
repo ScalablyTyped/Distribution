@@ -1,6 +1,6 @@
 package typings.jsrsasign.mod.KJUR.asn1.x509
 
-import typings.jsrsasign.AnonArrayHexParam
+import typings.jsrsasign.AnonArrayArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,6 +24,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class ExtKeyUsage ()
   extends typings.jsrsasign.jsrsasign.KJUR.asn1.x509.ExtKeyUsage {
-  def this(params: AnonArrayHexParam) = this()
+  def this(params: AnonArrayArray) = this()
 }
 

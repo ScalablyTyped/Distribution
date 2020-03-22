@@ -2,7 +2,7 @@ package typings.jupyterlabMainmenu.helpMod
 
 import typings.jupyterlabMainmenu.helpMod.IHelpMenu.IKernelUser
 import typings.jupyterlabMainmenu.labmenuMod.IJupyterLabMenu
-import typings.phosphorWidgets.mod.Widget
+import typings.luminoWidgets.mod.Widget
 import typings.std.Set
 import scala.scalajs.js
 import scala.scalajs.js.`|`

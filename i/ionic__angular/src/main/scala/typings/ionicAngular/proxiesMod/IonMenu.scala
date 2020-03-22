@@ -10,7 +10,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ionic/angular/dist/directives/proxies", "IonMenu")
+@JSImport("@ionic/angular/directives/proxies", "IonMenu")
 @js.native
 class IonMenu protected ()
   extends typings.ionicCore.componentsMod.Components.IonMenu {

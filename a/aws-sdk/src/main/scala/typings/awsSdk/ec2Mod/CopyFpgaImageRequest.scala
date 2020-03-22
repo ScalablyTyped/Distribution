@@ -25,7 +25,7 @@ trait CopyFpgaImageRequest extends js.Object {
   /**
     * The ID of the source AFI.
     */
-  var SourceFpgaImageId: String = js.native
+  var SourceFpgaImageId: FpgaImageId = js.native
   /**
     * The Region that contains the source AFI.
     */
@@ -35,7 +35,7 @@ trait CopyFpgaImageRequest extends js.Object {
 object CopyFpgaImageRequest {
   @scala.inline
   def apply(
-    SourceFpgaImageId: String,
+    SourceFpgaImageId: FpgaImageId,
     SourceRegion: String,
     ClientToken: String = null,
     Description: String = null,

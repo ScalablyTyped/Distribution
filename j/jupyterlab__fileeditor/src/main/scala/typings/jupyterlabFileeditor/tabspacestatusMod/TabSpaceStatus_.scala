@@ -1,6 +1,6 @@
 package typings.jupyterlabFileeditor.tabspacestatusMod
 
-import typings.jupyterlabApputils.vdomMod.VDomRenderer
+import typings.jupyterlabApputils.mod.VDomRenderer
 import typings.jupyterlabFileeditor.tabspacestatusMod.TabSpaceStatus.IOptions
 import typings.jupyterlabFileeditor.tabspacestatusMod.TabSpaceStatus.Model
 import scala.scalajs.js

@@ -7,8 +7,26 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/core", "\u0275\u0275attributeInterpolateV")
 @js.native
 object ɵɵattributeInterpolateV extends js.Object {
-  def apply(attrName: String, values: js.Array[_]): TsickleIssue1009 = js.native
-  def apply(attrName: String, values: js.Array[_], sanitizer: SanitizerFn): TsickleIssue1009 = js.native
-  def apply(attrName: String, values: js.Array[_], sanitizer: SanitizerFn, namespace: String): TsickleIssue1009 = js.native
+  def apply(attrName: String, values: js.Array[_]): js.Function4[
+    /* attrName */ String, 
+    /* values */ js.Array[_], 
+    /* sanitizer */ js.UndefOr[SanitizerFn], 
+    /* namespace */ js.UndefOr[String], 
+    /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolateV */ js.Any
+  ] = js.native
+  def apply(attrName: String, values: js.Array[_], sanitizer: SanitizerFn): js.Function4[
+    /* attrName */ String, 
+    /* values */ js.Array[_], 
+    /* sanitizer */ js.UndefOr[SanitizerFn], 
+    /* namespace */ js.UndefOr[String], 
+    /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolateV */ js.Any
+  ] = js.native
+  def apply(attrName: String, values: js.Array[_], sanitizer: SanitizerFn, namespace: String): js.Function4[
+    /* attrName */ String, 
+    /* values */ js.Array[_], 
+    /* sanitizer */ js.UndefOr[SanitizerFn], 
+    /* namespace */ js.UndefOr[String], 
+    /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolateV */ js.Any
+  ] = js.native
 }
 

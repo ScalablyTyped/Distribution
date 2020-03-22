@@ -1,7 +1,7 @@
 package typings.gestalt.mod
 
-import typings.gestalt.AnonEventValue
 import typings.gestalt.AnonLabel
+import typings.gestalt.AnonValue
 import typings.gestalt.gestaltStrings.down
 import typings.gestalt.gestaltStrings.left
 import typings.gestalt.gestaltStrings.right
@@ -19,14 +19,14 @@ trait SelectListProps extends js.Object {
   var options: js.Array[AnonLabel]
   var placeholder: js.UndefOr[String] = js.undefined
   var value: js.UndefOr[String] = js.undefined
-  def onChange(args: AnonEventValue): Unit
+  def onChange(args: AnonValue): Unit
 }
 
 object SelectListProps {
   @scala.inline
   def apply(
     id: String,
-    onChange: AnonEventValue => Unit,
+    onChange: AnonValue => Unit,
     options: js.Array[AnonLabel],
     disabled: js.UndefOr[Boolean] = js.undefined,
     errorMessage: String = null,

@@ -9,7 +9,7 @@ trait AnonActor extends js.Object {
     * If this activity's object is itself another activity, such as when a person reshares an activity, this property specifies the original activity's
     * actor.
     */
-  var actor: js.UndefOr[AnonClientSpecificActorInfoDisplayName] = js.undefined
+  var actor: js.UndefOr[AnonDisplayName] = js.undefined
   /** The media objects attached to this activity. */
   var attachments: js.UndefOr[js.Array[AnonContent]] = js.undefined
   /** The HTML-formatted content, which is suitable for display. */
@@ -40,7 +40,7 @@ trait AnonActor extends js.Object {
 object AnonActor {
   @scala.inline
   def apply(
-    actor: AnonClientSpecificActorInfoDisplayName = null,
+    actor: AnonDisplayName = null,
     attachments: js.Array[AnonContent] = null,
     content: String = null,
     id: String = null,

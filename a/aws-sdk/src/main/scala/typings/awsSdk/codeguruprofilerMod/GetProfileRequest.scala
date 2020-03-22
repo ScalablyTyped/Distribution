@@ -7,21 +7,27 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GetProfileRequest extends js.Object {
   /**
-    * The format of the profile to return. Supports application/json or application/x-amzn-ion. Defaults to application/x-amzn-ion.
+    * The format of the profile to return. You can choose application/json or the default application/x-amzn-ion. 
     */
   var accept: js.UndefOr[String] = js.native
   /**
-    * The end time of the profile to get. Either period or endTime must be specified. Must be greater than start and the overall time range to be in the past and not larger than a week.
+    *  You must specify exactly two of the following parameters: startTime, period, and endTime. 
     */
   var endTime: js.UndefOr[Timestamp] = js.native
+  /**
+    * The maximum depth of the graph.
+    */
   var maxDepth: js.UndefOr[MaxDepth] = js.native
   /**
-    * The period of the profile to get. Exactly two of startTime, period and endTime must be specified. Must be positive and the overall time range to be in the past and not larger than a week.
+    * The period of the profile to get. The time range must be in the past and not longer than one week.  You must specify exactly two of the following parameters: startTime, period, and endTime. 
     */
   var period: js.UndefOr[Period] = js.native
+  /**
+    * The name of the profiling group to get.
+    */
   var profilingGroupName: ProfilingGroupName = js.native
   /**
-    * The start time of the profile to get.
+    * The start time of the profile to get. You must specify exactly two of the following parameters: startTime, period, and endTime. 
     */
   var startTime: js.UndefOr[Timestamp] = js.native
 }

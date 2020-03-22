@@ -1,6 +1,6 @@
 package typings.echarts.echarts.EChartOption.Tooltip
 
-import typings.echarts.AnonColorOpacity
+import typings.echarts.AnonOpacity
 import typings.echarts.echarts.EChartOption.BasicComponents.CartesianAxis.PointerLabel
 import typings.echarts.echarts.EChartOption.LineStyle
 import typings.echarts.echartsStrings.angle
@@ -30,7 +30,7 @@ trait AxisPointer extends js.Object {
   var crossStyle: js.UndefOr[LineStyle] = js.undefined
   var label: js.UndefOr[PointerLabel] = js.undefined
   var lineStyle: js.UndefOr[LineStyle] = js.undefined
-  var shadowStyle: js.UndefOr[AnonColorOpacity] = js.undefined
+  var shadowStyle: js.UndefOr[AnonOpacity] = js.undefined
   var show: js.UndefOr[Boolean] = js.undefined
   var snap: js.UndefOr[Boolean] = js.undefined
   var `type`: js.UndefOr[line | shadow | none | cross] = js.undefined
@@ -52,7 +52,7 @@ object AxisPointer {
     crossStyle: LineStyle = null,
     label: PointerLabel = null,
     lineStyle: LineStyle = null,
-    shadowStyle: AnonColorOpacity = null,
+    shadowStyle: AnonOpacity = null,
     show: js.UndefOr[Boolean] = js.undefined,
     snap: js.UndefOr[Boolean] = js.undefined,
     `type`: line | shadow | none | cross = null,

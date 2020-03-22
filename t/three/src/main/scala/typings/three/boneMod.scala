@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 object boneMod extends js.Object {
   @js.native
   class Bone () extends Object3D {
-    var isBone: `true` = js.native
+    val isBone: `true` = js.native
     @JSName("type")
     var type_Bone: typings.three.threeStrings.Bone = js.native
   }

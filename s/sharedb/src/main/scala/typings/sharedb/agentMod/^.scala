@@ -1,7 +1,6 @@
 package typings.sharedb.agentMod
 
-import typings.node.streamMod.Duplex
-import typings.sharedb.AnonIsServer
+import typings.sharedb.DuplexisServerboolean
 import typings.sharedb.sharedbMod.JSONObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -32,7 +31,7 @@ class ^ () extends Agent {
   /* CompleteClass */
   override var custom: Custom = js.native
   /* CompleteClass */
-  override var stream: Duplex with AnonIsServer = js.native
+  override var stream: DuplexisServerboolean = js.native
   /**
     * Sends a JSON-compatible message to the client for this agent.
     *

@@ -23,10 +23,10 @@ class RbmStandaloneCard () extends IRbmStandaloneCard {
   def this(properties: IRbmStandaloneCard) = this()
   /** RbmStandaloneCard cardOrientation. */
   @JSName("cardOrientation")
-  var cardOrientation_RbmStandaloneCard: CardOrientation = js.native
+  var cardOrientation_RbmStandaloneCard: CardOrientation | String = js.native
   /** RbmStandaloneCard thumbnailImageAlignment. */
   @JSName("thumbnailImageAlignment")
-  var thumbnailImageAlignment_RbmStandaloneCard: ThumbnailImageAlignment = js.native
+  var thumbnailImageAlignment_RbmStandaloneCard: ThumbnailImageAlignment | String = js.native
   /**
     * Converts this RbmStandaloneCard to JSON.
     * @returns JSON object

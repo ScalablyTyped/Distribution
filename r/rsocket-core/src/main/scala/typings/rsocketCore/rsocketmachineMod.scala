@@ -4,10 +4,8 @@ import typings.rsocketCore.rsocketleaseMod.RequesterLeaseHandler
 import typings.rsocketCore.rsocketleaseMod.ResponderLeaseHandler
 import typings.rsocketCore.rsocketserializationMod.PayloadSerializers
 import typings.rsocketTypes.reactiveSocketTypesMod.DuplexConnection
-import typings.rsocketTypes.reactiveSocketTypesMod.Frame
 import typings.rsocketTypes.reactiveSocketTypesMod.ReactiveSocket
 import typings.rsocketTypes.reactiveSocketTypesMod.Responder
-import typings.rsocketTypes.reactiveStreamTypesMod.ISubscriber
 import typings.std.Error
 import typings.std.Partial
 import scala.scalajs.js
@@ -25,25 +23,25 @@ object rsocketmachineMod extends js.Object {
   
   def createClientMachine[D, M](
     connection: DuplexConnection,
-    connectionPublisher: js.Function1[/* partialSubscriber */ Partial[ISubscriber[Frame]], Unit],
+    connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
     keepAliveTimeout: Double
   ): RSocketMachine[D, M] = js.native
   def createClientMachine[D, M](
     connection: DuplexConnection,
-    connectionPublisher: js.Function1[/* partialSubscriber */ Partial[ISubscriber[Frame]], Unit],
+    connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
     keepAliveTimeout: Double,
     serializers: PayloadSerializers[D, M]
   ): RSocketMachine[D, M] = js.native
   def createClientMachine[D, M](
     connection: DuplexConnection,
-    connectionPublisher: js.Function1[/* partialSubscriber */ Partial[ISubscriber[Frame]], Unit],
+    connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
     keepAliveTimeout: Double,
     serializers: PayloadSerializers[D, M],
     requestHandler: Partial[Responder[D, M]]
   ): RSocketMachine[D, M] = js.native
   def createClientMachine[D, M](
     connection: DuplexConnection,
-    connectionPublisher: js.Function1[/* partialSubscriber */ Partial[ISubscriber[Frame]], Unit],
+    connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
     keepAliveTimeout: Double,
     serializers: PayloadSerializers[D, M],
     requestHandler: Partial[Responder[D, M]],
@@ -51,7 +49,7 @@ object rsocketmachineMod extends js.Object {
   ): RSocketMachine[D, M] = js.native
   def createClientMachine[D, M](
     connection: DuplexConnection,
-    connectionPublisher: js.Function1[/* partialSubscriber */ Partial[ISubscriber[Frame]], Unit],
+    connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
     keepAliveTimeout: Double,
     serializers: PayloadSerializers[D, M],
     requestHandler: Partial[Responder[D, M]],
@@ -60,7 +58,7 @@ object rsocketmachineMod extends js.Object {
   ): RSocketMachine[D, M] = js.native
   def createClientMachine[D, M](
     connection: DuplexConnection,
-    connectionPublisher: js.Function1[/* partialSubscriber */ Partial[ISubscriber[Frame]], Unit],
+    connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
     keepAliveTimeout: Double,
     serializers: PayloadSerializers[D, M],
     requestHandler: Partial[Responder[D, M]],
@@ -70,25 +68,25 @@ object rsocketmachineMod extends js.Object {
   ): RSocketMachine[D, M] = js.native
   def createServerMachine[D, M](
     connection: DuplexConnection,
-    connectionPublisher: js.Function1[/* partialSubscriber */ Partial[ISubscriber[Frame]], Unit],
+    connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
     keepAliveTimeout: Double
   ): RSocketMachine[D, M] = js.native
   def createServerMachine[D, M](
     connection: DuplexConnection,
-    connectionPublisher: js.Function1[/* partialSubscriber */ Partial[ISubscriber[Frame]], Unit],
+    connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
     keepAliveTimeout: Double,
     serializers: PayloadSerializers[D, M]
   ): RSocketMachine[D, M] = js.native
   def createServerMachine[D, M](
     connection: DuplexConnection,
-    connectionPublisher: js.Function1[/* partialSubscriber */ Partial[ISubscriber[Frame]], Unit],
+    connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
     keepAliveTimeout: Double,
     serializers: PayloadSerializers[D, M],
     errorHandler: js.Function1[/* e */ Error, Unit]
   ): RSocketMachine[D, M] = js.native
   def createServerMachine[D, M](
     connection: DuplexConnection,
-    connectionPublisher: js.Function1[/* partialSubscriber */ Partial[ISubscriber[Frame]], Unit],
+    connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
     keepAliveTimeout: Double,
     serializers: PayloadSerializers[D, M],
     errorHandler: js.Function1[/* e */ Error, Unit],
@@ -96,7 +94,7 @@ object rsocketmachineMod extends js.Object {
   ): RSocketMachine[D, M] = js.native
   def createServerMachine[D, M](
     connection: DuplexConnection,
-    connectionPublisher: js.Function1[/* partialSubscriber */ Partial[ISubscriber[Frame]], Unit],
+    connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
     keepAliveTimeout: Double,
     serializers: PayloadSerializers[D, M],
     errorHandler: js.Function1[/* e */ Error, Unit],

@@ -14,7 +14,7 @@ trait TouchBarColorPickerConstructorOptions extends js.Object {
     */
   var change: js.UndefOr[js.Function1[/* color */ String, Unit]] = js.undefined
   /**
-    * The selected hex color in the picker, i.e #ABCDEF.
+    * The selected hex color in the picker, i.e `#ABCDEF`.
     */
   var selectedColor: js.UndefOr[String] = js.undefined
 }

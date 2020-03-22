@@ -60,6 +60,10 @@ trait Configuration extends PlatformSpecificBuildOptions {
   val appImage: js.UndefOr[AppImageOptions | Null] = js.undefined
   val appx: js.UndefOr[AppXOptions | Null] = js.undefined
   /**
+    * Appx manifest created on disk - not packed into .appx package yet.
+    */
+  val appxManifestCreated: js.UndefOr[(js.Function1[/* path */ String, js.Promise[_] | _]) | String | Null] = js.undefined
+  /**
     * The function (or path to file or module id) to be run on artifact build completed.
     */
   val artifactBuildCompleted: js.UndefOr[(js.Function1[/* context */ ArtifactCreated, js.Promise[_] | _]) | String | Null] = js.undefined
@@ -233,6 +237,7 @@ object Configuration {
     appId: String = null,
     appImage: AppImageOptions = null,
     appx: AppXOptions = null,
+    appxManifestCreated: (js.Function1[/* path */ String, js.Promise[_] | _]) | String = null,
     artifactBuildCompleted: (js.Function1[/* context */ ArtifactCreated, js.Promise[_] | _]) | String = null,
     artifactBuildStarted: (js.Function1[/* context */ ArtifactBuildStarted, js.Promise[_] | _]) | String = null,
     artifactName: String = null,
@@ -304,6 +309,7 @@ object Configuration {
     if (appId != null) __obj.updateDynamic("appId")(appId.asInstanceOf[js.Any])
     if (appImage != null) __obj.updateDynamic("appImage")(appImage.asInstanceOf[js.Any])
     if (appx != null) __obj.updateDynamic("appx")(appx.asInstanceOf[js.Any])
+    if (appxManifestCreated != null) __obj.updateDynamic("appxManifestCreated")(appxManifestCreated.asInstanceOf[js.Any])
     if (artifactBuildCompleted != null) __obj.updateDynamic("artifactBuildCompleted")(artifactBuildCompleted.asInstanceOf[js.Any])
     if (artifactBuildStarted != null) __obj.updateDynamic("artifactBuildStarted")(artifactBuildStarted.asInstanceOf[js.Any])
     if (artifactName != null) __obj.updateDynamic("artifactName")(artifactName.asInstanceOf[js.Any])

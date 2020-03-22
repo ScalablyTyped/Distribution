@@ -1,8 +1,8 @@
 package typings.maquette.interfacesMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.maquette.PartialCSSStyleDeclaratio
 import typings.maquette.maquetteStrings.`HintColon do not use GraveaccentclassNameGraveaccentComma use GraveaccentclassGraveaccent instead`
-import typings.std.CSSStyleDeclaration
 import typings.std.DragEvent
 import typings.std.Element
 import typings.std.Event_
@@ -10,7 +10,6 @@ import typings.std.FocusEvent
 import typings.std.KeyboardEvent
 import typings.std.MouseEvent
 import typings.std.MouseWheelEvent
-import typings.std.Partial
 import typings.std.TouchEvent
 import typings.std.UIEvent
 import typings.std.WheelEvent
@@ -177,7 +176,7 @@ trait VNodeProperties
   /**
     * An object literal like `{height:'100px'}` which allows styles to be changed dynamically. All values must be strings.
     */
-  val styles: js.UndefOr[Partial[CSSStyleDeclaration]] = js.undefined
+  val styles: js.UndefOr[PartialCSSStyleDeclaratio] = js.undefined
   val tabIndex: js.UndefOr[Double] = js.undefined
   val target: js.UndefOr[String] = js.undefined
   val title: js.UndefOr[String] = js.undefined
@@ -269,7 +268,7 @@ object VNodeProperties {
     spellcheck: js.UndefOr[Boolean] = js.undefined,
     src: String = null,
     srcset: String = null,
-    styles: Partial[CSSStyleDeclaration] = null,
+    styles: PartialCSSStyleDeclaratio = null,
     tabIndex: Int | Double = null,
     target: String = null,
     title: String = null,

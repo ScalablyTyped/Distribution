@@ -1,7 +1,7 @@
 package typings.jupyterlabServices.mod
 
+import typings.jupyterlabServices.PartialISettings
 import typings.jupyterlabServices.serverconnectionMod.ServerConnection.ISettings
-import typings.std.Partial
 import typings.std.RequestInit
 import typings.std.Response
 import typings.std.TypeError
@@ -70,6 +70,6 @@ object ServerConnection extends js.Object {
     * @returns The full settings object.
     */
   def makeSettings(): ISettings = js.native
-  def makeSettings(options: Partial[ISettings]): ISettings = js.native
+  def makeSettings(options: PartialISettings): ISettings = js.native
 }
 

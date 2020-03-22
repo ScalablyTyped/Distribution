@@ -15,32 +15,32 @@ trait ComponentRef[C] extends js.Object {
   /**
     * The change detector for this component instance.
     */
-  val changeDetectorRef: ChangeDetectorRef
+  def changeDetectorRef(): ChangeDetectorRef
   /**
     * The type of this component (as created by a `ComponentFactory` class).
     */
-  val componentType: Type[_]
-  /**
-    * The [host view](guide/glossary#view-tree) defined by the template
-    * for this component instance.
-    */
-  val hostView: ViewRef
-  /**
-    * The [dependency injector](guide/glossary#injector) for this component instance.
-    */
-  val injector: Injector
-  /**
-    * This component instance.
-    */
-  val instance: C
-  /**
-    * The host or anchor [element](guide/glossary#element) for this component instance.
-    */
-  val location: ElementRef[_]
+  def componentType(): Type[_]
   /**
     * Destroys the component instance and all of the data structures associated with it.
     */
   def destroy(): Unit
+  /**
+    * The [host view](guide/glossary#view-tree) defined by the template
+    * for this component instance.
+    */
+  def hostView(): ViewRef
+  /**
+    * The [dependency injector](guide/glossary#injector) for this component instance.
+    */
+  def injector(): Injector
+  /**
+    * This component instance.
+    */
+  def instance(): C
+  /**
+    * The host or anchor [element](guide/glossary#element) for this component instance.
+    */
+  def location(): ElementRef[_]
   /**
     * A lifecycle hook that provides additional developer-defined cleanup
     * functionality for the component.
@@ -53,16 +53,16 @@ trait ComponentRef[C] extends js.Object {
 object ComponentRef {
   @scala.inline
   def apply[C](
-    changeDetectorRef: ChangeDetectorRef,
-    componentType: Type[_],
+    changeDetectorRef: () => ChangeDetectorRef,
+    componentType: () => Type[_],
     destroy: () => Unit,
-    hostView: ViewRef,
-    injector: Injector,
-    instance: C,
-    location: ElementRef[_],
+    hostView: () => ViewRef,
+    injector: () => Injector,
+    instance: () => C,
+    location: () => ElementRef[_],
     onDestroy: js.Function => Unit
   ): ComponentRef[C] = {
-    val __obj = js.Dynamic.literal(changeDetectorRef = changeDetectorRef.asInstanceOf[js.Any], componentType = componentType.asInstanceOf[js.Any], destroy = js.Any.fromFunction0(destroy), hostView = hostView.asInstanceOf[js.Any], injector = injector.asInstanceOf[js.Any], instance = instance.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], onDestroy = js.Any.fromFunction1(onDestroy))
+    val __obj = js.Dynamic.literal(changeDetectorRef = js.Any.fromFunction0(changeDetectorRef), componentType = js.Any.fromFunction0(componentType), destroy = js.Any.fromFunction0(destroy), hostView = js.Any.fromFunction0(hostView), injector = js.Any.fromFunction0(injector), instance = js.Any.fromFunction0(instance), location = js.Any.fromFunction0(location), onDestroy = js.Any.fromFunction1(onDestroy))
   
     __obj.asInstanceOf[ComponentRef[C]]
   }

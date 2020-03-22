@@ -3,6 +3,7 @@ package typings.antd
 import typings.antd.textMod.TextProps
 import typings.antd.typographyParagraphMod.ParagraphProps
 import typings.antd.typographyTitleMod.TitleProps
+import typings.react.mod.PropsWithChildren
 import typings.react.mod.ReactElement
 import typings.react.mod.SFC
 import typings.react.mod.ValidationMap
@@ -22,9 +23,9 @@ object typographyMod extends js.Object {
     var contextTypes: js.UndefOr[ValidationMap[_]] = js.native
     var defaultProps: js.UndefOr[PartialTypographyProps] = js.native
     var displayName: js.UndefOr[String] = js.native
-    var propTypes: js.UndefOr[WeakValidationMapTypographyProps] = js.native
-    def apply(props: PropsWithChildrenTypographyProps): ReactElement | Null = js.native
-    def apply(props: PropsWithChildrenTypographyProps, context: js.Any): ReactElement | Null = js.native
+    var propTypes: js.UndefOr[WeakValidationMapTypograp] = js.native
+    def apply(props: PropsWithChildren[typings.antd.typographyTypographyMod.TypographyProps]): ReactElement | Null = js.native
+    def apply(props: PropsWithChildren[typings.antd.typographyTypographyMod.TypographyProps], context: js.Any): ReactElement | Null = js.native
   }
   
   val default: TypographyProps = js.native

@@ -1,7 +1,7 @@
 
 # Scala.js typings for highcharts-react-official
 
-Typings are for version 2.2.2
+Typings are for version 3.0.0
 
 ## Library description:
 Official minimal [Highcharts](https://www.highcharts.com/) wrapper for React.

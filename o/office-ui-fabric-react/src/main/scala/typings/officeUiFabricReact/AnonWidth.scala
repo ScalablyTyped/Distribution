@@ -5,14 +5,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonWidth extends js.Object {
-  var width: js.UndefOr[Double] = js.undefined
+  var height: Double
+  var width: Double
 }
 
 object AnonWidth {
   @scala.inline
-  def apply(width: Int | Double = null): AnonWidth = {
-    val __obj = js.Dynamic.literal()
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+  def apply(height: Double, width: Double): AnonWidth = {
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[AnonWidth]
   }
 }

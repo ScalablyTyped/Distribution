@@ -6,9 +6,9 @@ import typings.jupyterlabDocregistry.defaultMod.DocumentWidget.IOptionsOptionalC
 import typings.jupyterlabDocregistry.mod.ABCWidgetFactory
 import typings.jupyterlabDocregistry.mod.DocumentWidget
 import typings.jupyterlabDocregistry.registryMod.DocumentRegistry.IModel
-import typings.phosphorCoreutils.mod.Token
-import typings.phosphorSignaling.mod.ISignal
-import typings.phosphorWidgets.mod.Widget
+import typings.luminoCoreutils.mod.Token
+import typings.luminoSignaling.mod.ISignal
+import typings.luminoWidgets.mod.Widget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,12 +17,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object mod extends js.Object {
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - typings.phosphorDisposable.mod.IDisposable because Already inherited
-  - typings.phosphorMessaging.mod.IMessageHandler because Already inherited
-  - typings.phosphorDisposable.mod.IObservableDisposable because Already inherited
-  - typings.phosphorWidgets.widgetMod.Widget because Already inherited
-  - typings.phosphorWidgets.mod.Widget because Already inherited
-  - typings.jupyterlabDocregistry.registryMod.IDocumentWidget because var conflicts: _disposed, _flags, _layout, _parent, id, layout, parent. Inlined  */ @js.native
+  - typings.luminoDisposable.mod.IDisposable because Already inherited
+  - typings.luminoMessaging.mod.IMessageHandler because Already inherited
+  - typings.luminoDisposable.mod.IObservableDisposable because Already inherited
+  - typings.luminoWidgets.widgetMod.Widget because Already inherited
+  - typings.luminoWidgets.mod.Widget because Already inherited
+  - typings.jupyterlabDocregistry.registryMod.IDocumentWidget because var conflicts: _disposed, _flags, _layout, _parent, content, id, layout, parent, revealed, toolbar. Inlined  */ @js.native
   class HTMLViewer protected () extends DocumentWidget[IFrame, IModel] {
     /**
       * Create a new widget for rendering HTML.
@@ -43,18 +43,19 @@ object mod extends js.Object {
     var _setBase: js.Any = js.native
     var _trustedChanged: js.Any = js.native
     /**
-      * Whether the HTML document is trusted. If trusted,
-      * it can execute Javascript in the iframe sandbox.
-      */
-    var trusted: Boolean = js.native
-    /**
-      * Emitted when the trust state of the document changes.
-      */
-    val trustedChanged: ISignal[this.type, Boolean] = js.native
-    /**
       * Handle and update request.
       */
     /* protected */ def onUpdateRequest(): Unit = js.native
+    /**
+      * Whether the HTML document is trusted. If trusted,
+      * it can execute Javascript in the iframe sandbox.
+      */
+    def trusted(): Boolean = js.native
+    def trusted(value: Boolean): js.Any = js.native
+    /**
+      * Emitted when the trust state of the document changes.
+      */
+    def trustedChanged(): ISignal[this.type, Boolean] = js.native
   }
   
   @js.native

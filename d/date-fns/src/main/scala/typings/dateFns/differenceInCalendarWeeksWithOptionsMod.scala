@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object differenceInCalendarWeeksWithOptionsMod extends js.Object {
   @js.native
-  object default extends TopLevel[CurriedFn3[Anon012345, Date | Double, Date | Double, Double]]
+  object default extends TopLevel[CurriedFn3[AnonLocaleWeekStartsOn, Date | Double, Date | Double, Double]]
   
 }
 

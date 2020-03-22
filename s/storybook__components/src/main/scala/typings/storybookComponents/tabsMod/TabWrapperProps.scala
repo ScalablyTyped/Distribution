@@ -6,10 +6,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TabWrapperProps extends js.Object {
-  var active: Boolean
-  var children: js.UndefOr[ReactNode] = js.undefined
-  var render: js.UndefOr[js.Function0[Element]] = js.undefined
+  var active: Boolean = js.native
+  var children: js.UndefOr[ReactNode] = js.native
+  var render: js.UndefOr[js.Function0[Element]] = js.native
 }
 
 object TabWrapperProps {

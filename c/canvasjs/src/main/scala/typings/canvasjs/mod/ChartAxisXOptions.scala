@@ -1,6 +1,6 @@
 package typings.canvasjs.mod
 
-import typings.canvasjs.AnonAxisChart
+import typings.canvasjs.AnonLabel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -103,7 +103,7 @@ trait ChartAxisXOptions extends ChartAxisOptions {
     * 1.labelFormatter function should return a string.
     * 2.You can use formatNumber and formatDate functions to format number/date values inside the formatter function.
     */
-  var labelFormatter: js.UndefOr[js.Function1[/* e */ AnonAxisChart, String]] = js.undefined
+  var labelFormatter: js.UndefOr[js.Function1[/* e */ AnonLabel, String]] = js.undefined
   /**
     * Sets the maximum width of label after which it gets wrapped or clipped depending on whether labelWrap is set to true (default) or false.
     * Default: Automatically calculated based on the length of label.
@@ -206,7 +206,7 @@ object ChartAxisXOptions {
     labelFontSize: Int | Double = null,
     labelFontStyle: String = null,
     labelFontWeight: String = null,
-    labelFormatter: /* e */ AnonAxisChart => String = null,
+    labelFormatter: /* e */ AnonLabel => String = null,
     labelMaxWidth: Int | Double = null,
     labelWrap: js.UndefOr[Boolean] = js.undefined,
     lineColor: String = null,

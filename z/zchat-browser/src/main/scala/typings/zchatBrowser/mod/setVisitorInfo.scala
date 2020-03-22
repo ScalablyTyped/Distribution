@@ -1,7 +1,7 @@
 package typings.zchatBrowser.mod
 
 import typings.std.Error
-import typings.std.Partial
+import typings.zchatBrowser.PartialVisitorInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("zchat-browser", "setVisitorInfo")
 @js.native
 object setVisitorInfo extends js.Object {
-  def apply(options: Partial[VisitorInfo]): Unit = js.native
-  def apply(options: Partial[VisitorInfo], callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def apply(options: PartialVisitorInfo): Unit = js.native
+  def apply(options: PartialVisitorInfo, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
 }
 

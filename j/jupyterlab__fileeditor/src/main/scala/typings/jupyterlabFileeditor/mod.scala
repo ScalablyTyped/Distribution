@@ -1,7 +1,7 @@
 package typings.jupyterlabFileeditor
 
 import typings.jupyterlabFileeditor.widgetMod.FileEditor.IOptions
-import typings.phosphorCoreutils.mod.Token
+import typings.luminoCoreutils.mod.Token
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

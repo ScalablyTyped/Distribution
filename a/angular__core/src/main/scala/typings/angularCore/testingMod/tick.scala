@@ -1,5 +1,6 @@
 package typings.angularCore.testingMod
 
+import typings.angularCore.AnonProcessNewMacroTasksSynchronously
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,5 +10,6 @@ import scala.scalajs.js.annotation._
 object tick extends js.Object {
   def apply(): Unit = js.native
   def apply(millis: Double): Unit = js.native
+  def apply(millis: Double, tickOptions: AnonProcessNewMacroTasksSynchronously): Unit = js.native
 }
 

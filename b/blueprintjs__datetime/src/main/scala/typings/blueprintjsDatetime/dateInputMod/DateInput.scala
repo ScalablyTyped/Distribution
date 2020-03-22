@@ -1,7 +1,7 @@
 package typings.blueprintjsDatetime.dateInputMod
 
 import typings.blueprintjsCore.mod.AbstractPureComponent2
-import typings.std.Partial
+import typings.blueprintjsDatetime.PartialIDateInputProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -44,7 +44,7 @@ class DateInput ()
 @JSImport("@blueprintjs/datetime/lib/esm/dateInput", "DateInput")
 @js.native
 object DateInput extends js.Object {
-  var defaultProps: Partial[IDateInputProps] = js.native
+  var defaultProps: PartialIDateInputProps = js.native
   var displayName: String = js.native
 }
 

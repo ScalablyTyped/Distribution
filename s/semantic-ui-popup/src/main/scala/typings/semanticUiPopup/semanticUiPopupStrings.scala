@@ -27,9 +27,6 @@ object semanticUiPopupStrings {
   sealed trait boundary extends js.Object
   
   @js.native
-  sealed trait cannotPlace extends js.Object
-  
-  @js.native
   sealed trait `change content` extends js.Object
   
   @js.native
@@ -99,9 +96,6 @@ object semanticUiPopupStrings {
   sealed trait `inline` extends js.Object
   
   @js.native
-  sealed trait invalidPosition extends js.Object
-  
-  @js.native
   sealed trait `is hidden` extends js.Object
   
   @js.native
@@ -114,9 +108,6 @@ object semanticUiPopupStrings {
   sealed trait lastResort extends js.Object
   
   @js.native
-  sealed trait loading extends js.Object
-  
-  @js.native
   sealed trait manual extends js.Object
   
   @js.native
@@ -126,9 +117,6 @@ object semanticUiPopupStrings {
   sealed trait metadata extends js.Object
   
   @js.native
-  sealed trait method extends js.Object
-  
-  @js.native
   sealed trait movePopup extends js.Object
   
   @js.native
@@ -136,12 +124,6 @@ object semanticUiPopupStrings {
   
   @js.native
   sealed trait namespace extends js.Object
-  
-  @js.native
-  sealed trait noTransition extends js.Object
-  
-  @js.native
-  sealed trait notFound extends js.Object
   
   @js.native
   sealed trait observeChanges extends js.Object
@@ -181,9 +163,6 @@ object semanticUiPopupStrings {
   
   @js.native
   sealed trait popup extends js.Object
-  
-  @js.native
-  sealed trait popupVisible extends js.Object
   
   @js.native
   sealed trait position extends js.Object
@@ -239,9 +218,6 @@ object semanticUiPopupStrings {
   @js.native
   sealed trait verbose extends js.Object
   
-  @js.native
-  sealed trait visible extends js.Object
-  
   @scala.inline
   def addTouchEvents: addTouchEvents = "addTouchEvents".asInstanceOf[addTouchEvents]
   @scala.inline
@@ -256,8 +232,6 @@ object semanticUiPopupStrings {
   def `bind touch close`: `bind touch close` = "bind touch close".asInstanceOf[`bind touch close`]
   @scala.inline
   def boundary: boundary = "boundary".asInstanceOf[boundary]
-  @scala.inline
-  def cannotPlace: cannotPlace = "cannotPlace".asInstanceOf[cannotPlace]
   @scala.inline
   def `change content`: `change content` = "change content".asInstanceOf[`change content`]
   @scala.inline
@@ -305,8 +279,6 @@ object semanticUiPopupStrings {
   @scala.inline
   def `inline`: `inline` = "inline".asInstanceOf[`inline`]
   @scala.inline
-  def invalidPosition: invalidPosition = "invalidPosition".asInstanceOf[invalidPosition]
-  @scala.inline
   def `is hidden`: `is hidden` = "is hidden".asInstanceOf[`is hidden`]
   @scala.inline
   def `is visible`: `is visible` = "is visible".asInstanceOf[`is visible`]
@@ -315,25 +287,17 @@ object semanticUiPopupStrings {
   @scala.inline
   def lastResort: lastResort = "lastResort".asInstanceOf[lastResort]
   @scala.inline
-  def loading: loading = "loading".asInstanceOf[loading]
-  @scala.inline
   def manual: manual = "manual".asInstanceOf[manual]
   @scala.inline
   def maxSearchDepth: maxSearchDepth = "maxSearchDepth".asInstanceOf[maxSearchDepth]
   @scala.inline
   def metadata: metadata = "metadata".asInstanceOf[metadata]
   @scala.inline
-  def method: method = "method".asInstanceOf[method]
-  @scala.inline
   def movePopup: movePopup = "movePopup".asInstanceOf[movePopup]
   @scala.inline
   def name: name = "name".asInstanceOf[name]
   @scala.inline
   def namespace: namespace = "namespace".asInstanceOf[namespace]
-  @scala.inline
-  def noTransition: noTransition = "noTransition".asInstanceOf[noTransition]
-  @scala.inline
-  def notFound: notFound = "notFound".asInstanceOf[notFound]
   @scala.inline
   def observeChanges: observeChanges = "observeChanges".asInstanceOf[observeChanges]
   @scala.inline
@@ -360,8 +324,6 @@ object semanticUiPopupStrings {
   def performance: performance = "performance".asInstanceOf[performance]
   @scala.inline
   def popup: popup = "popup".asInstanceOf[popup]
-  @scala.inline
-  def popupVisible: popupVisible = "popupVisible".asInstanceOf[popupVisible]
   @scala.inline
   def position: position = "position".asInstanceOf[position]
   @scala.inline
@@ -398,7 +360,5 @@ object semanticUiPopupStrings {
   def variation: variation = "variation".asInstanceOf[variation]
   @scala.inline
   def verbose: verbose = "verbose".asInstanceOf[verbose]
-  @scala.inline
-  def visible: visible = "visible".asInstanceOf[visible]
 }
 

@@ -617,7 +617,7 @@ object libraryEs6Mod extends js.Object {
       *  }
       * ```
       */
-    def metadata(metadataKey: js.Any, metadataValue: js.Any): FnTarget = js.native
+    def metadata(metadataKey: js.Any, metadataValue: js.Any): FnCall = js.native
     def ownKeys(target: js.Any): Array[PropertyKey] = js.native
     def preventExtensions(target: js.Any): Boolean = js.native
     def set(target: js.Any, propertyKey: PropertyKey, value: js.Any): Boolean = js.native

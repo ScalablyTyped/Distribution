@@ -1,7 +1,6 @@
 package typings.sharedb.agentMod
 
-import typings.node.streamMod.Duplex
-import typings.sharedb.AnonIsServer
+import typings.sharedb.DuplexisServerboolean
 import typings.sharedb.sharedbMod.JSONObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -27,7 +26,7 @@ trait Agent extends js.Object {
     * active, and it is passed to each middleware call.
     */
   var custom: Custom
-  var stream: Duplex with AnonIsServer
+  var stream: DuplexisServerboolean
   /**
     * Sends a JSON-compatible message to the client for this agent.
     *
@@ -42,7 +41,7 @@ object Agent {
     backend: typings.sharedb.mod.^,
     custom: Custom,
     send: JSONObject => Unit,
-    stream: Duplex with AnonIsServer
+    stream: DuplexisServerboolean
   ): Agent = {
     val __obj = js.Dynamic.literal(backend = backend.asInstanceOf[js.Any], custom = custom.asInstanceOf[js.Any], send = js.Any.fromFunction1(send), stream = stream.asInstanceOf[js.Any])
   

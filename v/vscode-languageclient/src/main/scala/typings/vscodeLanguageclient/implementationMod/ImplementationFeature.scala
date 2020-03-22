@@ -1,15 +1,21 @@
 package typings.vscodeLanguageclient.implementationMod
 
+import typings.vscode.mod.ImplementationProvider
 import typings.vscodeLanguageclient.clientMod.BaseLanguageClient
 import typings.vscodeLanguageclient.clientMod.TextDocumentFeature
-import typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions
+import typings.vscodeLanguageserverProtocol.protocolImplementationMod.ImplementationOptions
+import typings.vscodeLanguageserverProtocol.protocolImplementationMod.ImplementationRegistrationOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("vscode-languageclient/lib/implementation", "ImplementationFeature")
 @js.native
-class ImplementationFeature protected () extends TextDocumentFeature[TextDocumentRegistrationOptions] {
+class ImplementationFeature protected () extends TextDocumentFeature[
+      Boolean | ImplementationOptions, 
+      ImplementationRegistrationOptions, 
+      ImplementationProvider
+    ] {
   def this(client: BaseLanguageClient) = this()
 }
 

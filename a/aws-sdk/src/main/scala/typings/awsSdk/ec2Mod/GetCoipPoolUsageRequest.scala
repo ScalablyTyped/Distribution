@@ -25,13 +25,13 @@ trait GetCoipPoolUsageRequest extends js.Object {
   /**
     * The ID of the address pool.
     */
-  var PoolId: String = js.native
+  var PoolId: CoipPoolId = js.native
 }
 
 object GetCoipPoolUsageRequest {
   @scala.inline
   def apply(
-    PoolId: String,
+    PoolId: CoipPoolId,
     DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     Filters: FilterList = null,
     MaxResults: Int | scala.Double = null,

@@ -1,6 +1,7 @@
 package typings.awsSdk.ecsMod
 
-import typings.awsSdk.AnonWaiter
+import typings.awsSdk.DescribeServicesRequestwa
+import typings.awsSdk.DescribeTasksRequestwaite
 import typings.awsSdk.awsSdkStrings.servicesInactive
 import typings.awsSdk.awsSdkStrings.servicesStable
 import typings.awsSdk.awsSdkStrings.tasksRunning
@@ -653,11 +654,11 @@ trait ECS extends Service {
     * Waits for the servicesInactive state by periodically calling the underlying ECS.describeServicesoperation every 15 seconds (at most 40 times).
     */
   @JSName("waitFor")
-  def waitFor_servicesInactive(state: servicesInactive, params: DescribeServicesRequest with AnonWaiter): Request[DescribeServicesResponse, AWSError] = js.native
+  def waitFor_servicesInactive(state: servicesInactive, params: DescribeServicesRequestwa): Request[DescribeServicesResponse, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_servicesInactive(
     state: servicesInactive,
-    params: DescribeServicesRequest with AnonWaiter,
+    params: DescribeServicesRequestwa,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeServicesResponse, Unit]
   ): Request[DescribeServicesResponse, AWSError] = js.native
   /**
@@ -674,11 +675,11 @@ trait ECS extends Service {
     * Waits for the servicesStable state by periodically calling the underlying ECS.describeServicesoperation every 15 seconds (at most 40 times).
     */
   @JSName("waitFor")
-  def waitFor_servicesStable(state: servicesStable, params: DescribeServicesRequest with AnonWaiter): Request[DescribeServicesResponse, AWSError] = js.native
+  def waitFor_servicesStable(state: servicesStable, params: DescribeServicesRequestwa): Request[DescribeServicesResponse, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_servicesStable(
     state: servicesStable,
-    params: DescribeServicesRequest with AnonWaiter,
+    params: DescribeServicesRequestwa,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeServicesResponse, Unit]
   ): Request[DescribeServicesResponse, AWSError] = js.native
   /**
@@ -695,11 +696,11 @@ trait ECS extends Service {
     * Waits for the tasksRunning state by periodically calling the underlying ECS.describeTasksoperation every 6 seconds (at most 100 times).
     */
   @JSName("waitFor")
-  def waitFor_tasksRunning(state: tasksRunning, params: DescribeTasksRequest with AnonWaiter): Request[DescribeTasksResponse, AWSError] = js.native
+  def waitFor_tasksRunning(state: tasksRunning, params: DescribeTasksRequestwaite): Request[DescribeTasksResponse, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_tasksRunning(
     state: tasksRunning,
-    params: DescribeTasksRequest with AnonWaiter,
+    params: DescribeTasksRequestwaite,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeTasksResponse, Unit]
   ): Request[DescribeTasksResponse, AWSError] = js.native
   /**
@@ -716,11 +717,11 @@ trait ECS extends Service {
     * Waits for the tasksStopped state by periodically calling the underlying ECS.describeTasksoperation every 6 seconds (at most 100 times).
     */
   @JSName("waitFor")
-  def waitFor_tasksStopped(state: tasksStopped, params: DescribeTasksRequest with AnonWaiter): Request[DescribeTasksResponse, AWSError] = js.native
+  def waitFor_tasksStopped(state: tasksStopped, params: DescribeTasksRequestwaite): Request[DescribeTasksResponse, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_tasksStopped(
     state: tasksStopped,
-    params: DescribeTasksRequest with AnonWaiter,
+    params: DescribeTasksRequestwaite,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeTasksResponse, Unit]
   ): Request[DescribeTasksResponse, AWSError] = js.native
 }

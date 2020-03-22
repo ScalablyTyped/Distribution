@@ -1,7 +1,7 @@
 
 # Scala.js typings for iterall
 
-Typings are for version 1.2.2
+Typings are for version 1.3.0
 
 ## Library description:
 Minimal zero-dependency utilities for using JavaScript Iterables in all environments.

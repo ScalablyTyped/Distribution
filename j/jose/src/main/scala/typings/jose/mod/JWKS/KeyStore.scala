@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class KeyStore () extends _ConsumeKeyInput {
   def this(keys: js.Array[Key]) = this()
-  var size: Double = js.native
+  val size: Double = js.native
   def add(key: Key): Unit = js.native
   def all(): js.Array[Key] = js.native
   def all(parameters: KeyQuery): js.Array[Key] = js.native

@@ -2,7 +2,7 @@ package typings.jupyterlabMarkdownviewer
 
 import typings.jupyterlabApputils.widgettrackerMod.IWidgetTracker
 import typings.jupyterlabMarkdownviewer.widgetMod.MarkdownDocument
-import typings.phosphorCoreutils.mod.Token
+import typings.luminoCoreutils.mod.Token
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

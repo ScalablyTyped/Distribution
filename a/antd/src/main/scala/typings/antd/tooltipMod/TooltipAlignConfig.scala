@@ -1,13 +1,13 @@
 package typings.antd.tooltipMod
 
-import typings.antd.AnonAdjustXAdjustY
+import typings.antd.AnonAdjustY
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TooltipAlignConfig extends js.Object {
   var offset: js.UndefOr[js.Tuple2[Double | String, Double | String]] = js.undefined
-  var overflow: js.UndefOr[AnonAdjustXAdjustY] = js.undefined
+  var overflow: js.UndefOr[AnonAdjustY] = js.undefined
   var points: js.UndefOr[js.Tuple2[String, String]] = js.undefined
   var targetOffset: js.UndefOr[js.Tuple2[Double | String, Double | String]] = js.undefined
   var useCssBottom: js.UndefOr[Boolean] = js.undefined
@@ -19,7 +19,7 @@ object TooltipAlignConfig {
   @scala.inline
   def apply(
     offset: js.Tuple2[Double | String, Double | String] = null,
-    overflow: AnonAdjustXAdjustY = null,
+    overflow: AnonAdjustY = null,
     points: js.Tuple2[String, String] = null,
     targetOffset: js.Tuple2[Double | String, Double | String] = null,
     useCssBottom: js.UndefOr[Boolean] = js.undefined,

@@ -9,8 +9,8 @@ import typings.ecol.ieventdispatcherMod.IEventDispatcher
 import typings.tstl.arrayContainerMod.ArrayContainer
 import typings.tstl.arrayIteratorMod.ArrayIterator
 import typings.tstl.arrayReverseIteratorMod.ArrayReverseIterator
+import typings.tstl.icontainerMod.IContainer
 import typings.tstl.iforwarditeratorMod.IForwardIterator
-import typings.tstl.mod.base.Container
 import typings.tstl.vectorMod.Vector
 import typings.tstl.vectorMod.Vector.Iterator
 import typings.tstl.vectorMod.Vector.ReverseIterator
@@ -29,7 +29,6 @@ object vectorCollectionMod extends js.Object {
   - typings.std.Iterable because Already inherited
   - typings.tstl.ibidirectionalcontainerMod.IBidirectionalContainer because Already inherited
   - typings.tstl.icontainerMod.IContainer because Already inherited
-  - typings.tstl.containerContainerMod.Container because Already inherited
   - typings.ecol.icollectionMod.ICollection because var conflicts: iterator, iterator_IContainer_. Inlined refresh, refresh, refresh */ @js.native
   class ArrayCollection[T] ()
     extends Vector[T]
@@ -196,19 +195,27 @@ object vectorCollectionMod extends js.Object {
         /* import warning: RewrittenClass.unapply cls was tparam IteratorT */ /* last */ js.Any, 
         CollectionEvent[
           js.Object, 
-          Container[
+          IContainer[
             /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
             /* import warning: RewrittenClass.unapply cls was tparam SourceT */ js.Any, 
             /* import warning: RewrittenClass.unapply cls was tparam IteratorT */ js.Any, 
             /* import warning: RewrittenClass.unapply cls was tparam ReverseT */ js.Any, 
             /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any
           ], 
-          typings.std.Iterator[
+          typings.tstl.icontainerMod.IContainer.Iterator[
             /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
             /* import warning: RewrittenClass.unapply cls was tparam SourceT */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls was tparam IteratorT */ js.Any
+            /* import warning: RewrittenClass.unapply cls was tparam IteratorT */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls was tparam ReverseT */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any
           ], 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.ReverseIterator<T, SourceT, IteratorT, ReverseT> */ js.Any
+          typings.tstl.icontainerMod.IContainer.ReverseIterator[
+            /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls was tparam SourceT */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls was tparam IteratorT */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls was tparam ReverseT */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any
+          ]
         ]
       ] = js.native
     val Iterator: Instantiable0[

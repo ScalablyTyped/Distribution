@@ -66,9 +66,6 @@ object semanticUiVisibilityStrings {
   sealed trait `is on screen` extends js.Object
   
   @js.native
-  sealed trait method extends js.Object
-  
-  @js.native
   sealed trait name extends js.Object
   
   @js.native
@@ -207,8 +204,6 @@ object semanticUiVisibilityStrings {
   def `is off screen`: `is off screen` = "is off screen".asInstanceOf[`is off screen`]
   @scala.inline
   def `is on screen`: `is on screen` = "is on screen".asInstanceOf[`is on screen`]
-  @scala.inline
-  def method: method = "method".asInstanceOf[method]
   @scala.inline
   def name: name = "name".asInstanceOf[name]
   @scala.inline

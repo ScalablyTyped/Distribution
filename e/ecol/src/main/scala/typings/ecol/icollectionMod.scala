@@ -1,9 +1,10 @@
 package typings.ecol
 
 import typings.ecol.ieventdispatcherMod.IEventDispatcher
-import typings.std.Iterator
+import typings.tstl.icontainerMod.IContainer
+import typings.tstl.icontainerMod.IContainer.Iterator
+import typings.tstl.icontainerMod.IContainer.ReverseIterator
 import typings.tstl.iforwarditeratorMod.IForwardIterator
-import typings.tstl.mod.base.Container
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,8 +13,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object icollectionMod extends js.Object {
   @js.native
-  trait ICollection[T, SourceT /* <: Container[T, SourceT, IteratorT, ReverseT, T] */, IteratorT /* <: Iterator[T, SourceT, IteratorT] */, ReverseT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.ReverseIterator<T, SourceT, IteratorT, ReverseT> */ js.Any */]
-    extends typings.tstl.containerContainerMod.Container[T, SourceT, IteratorT, ReverseT, T]
+  trait ICollection[T, SourceT /* <: IContainer[T, SourceT, IteratorT, ReverseT, T] */, IteratorT /* <: Iterator[T, SourceT, IteratorT, ReverseT, T] */, ReverseT /* <: ReverseIterator[T, SourceT, IteratorT, ReverseT, T] */]
+    extends IContainer[T, SourceT, IteratorT, ReverseT, T]
        with IEventDispatcher[T, SourceT, IteratorT, ReverseT] {
     /**
       * Range Assigner.
@@ -24,30 +25,10 @@ object icollectionMod extends js.Object {
     /* InferMemberOverrides */
     override def assign[InputIterator /* <: IForwardIterator[T, InputIterator] */](first: InputIterator, last: InputIterator): Unit = js.native
     /**
-      * Iterator to the first element.
-      *
-      * @return Iterator to the first element.
-      */
-    /* InferMemberOverrides */
-    override def begin(): typings.tstl.icontainerMod.IContainer.Iterator[T, SourceT, IteratorT, ReverseT, T] = js.native
-    /**
       * @inheritDoc
       */
     /* InferMemberOverrides */
     override def clear(): Unit = js.native
-    /**
-      * Test whether container is empty.
-      */
-    /* CompleteClass */
-    /* InferMemberOverrides */
-    override def empty(): Boolean = js.native
-    /**
-      * Iterator to the end.
-      *
-      * @return Iterator to the end.
-      */
-    /* InferMemberOverrides */
-    override def end(): typings.tstl.icontainerMod.IContainer.Iterator[T, SourceT, IteratorT, ReverseT, T] = js.native
     /**
       * Erase elements in range.
       *
@@ -65,40 +46,9 @@ object icollectionMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def erase(pos: IteratorT): IteratorT = js.native
-    /**
-      * Insert items at the end.
-      *
-      * @param items Items to insert.
-      * @return Number of elements in the container after insertion.
-      */
-    /* CompleteClass */
-    /* InferMemberOverrides */
-    override def push(items: T*): Double = js.native
-    /**
-      * Reverse iterator to the first element in reverse.
-      *
-      * @return Reverse iterator to the first.
-      */
-    /* CompleteClass */
-    /* InferMemberOverrides */
-    override def rbegin(): ReverseT = js.native
     def refresh(): Unit = js.native
     def refresh(first: IteratorT, last: IteratorT): Unit = js.native
     def refresh(it: IteratorT): Unit = js.native
-    /**
-      * Reverse iterator to the reverse end.
-      *
-      * @return Reverse iterator to the end.
-      */
-    /* CompleteClass */
-    /* InferMemberOverrides */
-    override def rend(): ReverseT = js.native
-    /**
-      * Number of elements in the container.
-      */
-    /* CompleteClass */
-    /* InferMemberOverrides */
-    override def size(): Double = js.native
     /**
       * Swap elements.
       *

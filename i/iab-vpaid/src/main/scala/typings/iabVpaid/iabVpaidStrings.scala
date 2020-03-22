@@ -1,5 +1,6 @@
 package typings.iabVpaid
 
+import typings.iabVpaid.iab.vpaid.EventsNames
 import typings.iabVpaid.iab.vpaid.SimpleEvents
 import typings.iabVpaid.iab.vpaid.ViewMode
 import scala.scalajs.js
@@ -8,73 +9,126 @@ import scala.scalajs.js.annotation._
 
 object iabVpaidStrings {
   @js.native
-  sealed trait AdDurationChange extends SimpleEvents
+  sealed trait AdClickThru extends EventsNames
   
   @js.native
-  sealed trait AdExpandedChange extends SimpleEvents
+  sealed trait AdDurationChange
+    extends EventsNames
+       with SimpleEvents
   
   @js.native
-  sealed trait AdImpression extends SimpleEvents
+  sealed trait AdError extends EventsNames
   
   @js.native
-  sealed trait AdLinearChange extends SimpleEvents
+  sealed trait AdExpandedChange
+    extends EventsNames
+       with SimpleEvents
   
   @js.native
-  sealed trait AdLoaded extends SimpleEvents
+  sealed trait AdImpression
+    extends EventsNames
+       with SimpleEvents
   
   @js.native
-  sealed trait AdPaused extends SimpleEvents
+  sealed trait AdInteraction extends EventsNames
   
   @js.native
-  sealed trait AdPlaying extends SimpleEvents
+  sealed trait AdLinearChange
+    extends EventsNames
+       with SimpleEvents
   
   @js.native
-  sealed trait AdRemainingTimeChange extends SimpleEvents
+  sealed trait AdLoaded
+    extends EventsNames
+       with SimpleEvents
   
   @js.native
-  sealed trait AdSizeChange extends SimpleEvents
+  sealed trait AdLog extends EventsNames
   
   @js.native
-  sealed trait AdSkippableStateChange extends SimpleEvents
+  sealed trait AdPaused
+    extends EventsNames
+       with SimpleEvents
   
   @js.native
-  sealed trait AdSkipped extends SimpleEvents
+  sealed trait AdPlaying
+    extends EventsNames
+       with SimpleEvents
   
   @js.native
-  sealed trait AdStarted extends SimpleEvents
+  sealed trait AdRemainingTimeChange
+    extends EventsNames
+       with SimpleEvents
   
   @js.native
-  sealed trait AdStopped extends SimpleEvents
+  sealed trait AdSizeChange
+    extends EventsNames
+       with SimpleEvents
   
   @js.native
-  sealed trait AdUserAcceptInvitation extends SimpleEvents
+  sealed trait AdSkippableStateChange
+    extends EventsNames
+       with SimpleEvents
   
   @js.native
-  sealed trait AdUserClose extends SimpleEvents
+  sealed trait AdSkipped
+    extends EventsNames
+       with SimpleEvents
   
   @js.native
-  sealed trait AdUserMinimize extends SimpleEvents
+  sealed trait AdStarted
+    extends EventsNames
+       with SimpleEvents
   
   @js.native
-  sealed trait AdVideoComplete extends SimpleEvents
+  sealed trait AdStopped
+    extends EventsNames
+       with SimpleEvents
   
   @js.native
-  sealed trait AdVideoFirstQuartile extends SimpleEvents
+  sealed trait AdUserAcceptInvitation
+    extends EventsNames
+       with SimpleEvents
   
   @js.native
-  sealed trait AdVideoMidPoint extends SimpleEvents
+  sealed trait AdUserClose
+    extends EventsNames
+       with SimpleEvents
   
   @js.native
-  sealed trait AdVideoStart extends SimpleEvents
+  sealed trait AdUserMinimize
+    extends EventsNames
+       with SimpleEvents
   
   @js.native
-  sealed trait AdVideoThirdQuartile extends SimpleEvents
+  sealed trait AdVideoComplete
+    extends EventsNames
+       with SimpleEvents
   
   @js.native
-  sealed trait AdVolumeChange extends SimpleEvents
+  sealed trait AdVideoFirstQuartile
+    extends EventsNames
+       with SimpleEvents
   
   @js.native
-  sealed trait SimpleEventsMap extends js.Object
+  sealed trait AdVideoMidPoint
+    extends EventsNames
+       with SimpleEvents
+  
+  @js.native
+  sealed trait AdVideoStart
+    extends EventsNames
+       with SimpleEvents
+  
+  @js.native
+  sealed trait AdVideoThirdQuartile
+    extends EventsNames
+       with SimpleEvents
+  
+  @js.native
+  sealed trait AdVolumeChange
+    extends EventsNames
+       with SimpleEvents
   
   @js.native
   sealed trait fullscreen extends ViewMode
@@ -86,15 +140,23 @@ object iabVpaidStrings {
   sealed trait thumbnail extends ViewMode
   
   @scala.inline
+  def AdClickThru: AdClickThru = "AdClickThru".asInstanceOf[AdClickThru]
+  @scala.inline
   def AdDurationChange: AdDurationChange = "AdDurationChange".asInstanceOf[AdDurationChange]
+  @scala.inline
+  def AdError: AdError = "AdError".asInstanceOf[AdError]
   @scala.inline
   def AdExpandedChange: AdExpandedChange = "AdExpandedChange".asInstanceOf[AdExpandedChange]
   @scala.inline
   def AdImpression: AdImpression = "AdImpression".asInstanceOf[AdImpression]
   @scala.inline
+  def AdInteraction: AdInteraction = "AdInteraction".asInstanceOf[AdInteraction]
+  @scala.inline
   def AdLinearChange: AdLinearChange = "AdLinearChange".asInstanceOf[AdLinearChange]
   @scala.inline
   def AdLoaded: AdLoaded = "AdLoaded".asInstanceOf[AdLoaded]
+  @scala.inline
+  def AdLog: AdLog = "AdLog".asInstanceOf[AdLog]
   @scala.inline
   def AdPaused: AdPaused = "AdPaused".asInstanceOf[AdPaused]
   @scala.inline
@@ -129,8 +191,6 @@ object iabVpaidStrings {
   def AdVideoThirdQuartile: AdVideoThirdQuartile = "AdVideoThirdQuartile".asInstanceOf[AdVideoThirdQuartile]
   @scala.inline
   def AdVolumeChange: AdVolumeChange = "AdVolumeChange".asInstanceOf[AdVolumeChange]
-  @scala.inline
-  def SimpleEventsMap: SimpleEventsMap = "SimpleEventsMap".asInstanceOf[SimpleEventsMap]
   @scala.inline
   def fullscreen: fullscreen = "fullscreen".asInstanceOf[fullscreen]
   @scala.inline

@@ -19,7 +19,7 @@ object checkboxIndexNativeMod extends js.Object {
   object default extends js.Object {
     var AgreeItem: js.Any = js.native
     var CheckboxItem: js.Any = js.native
-    var defaultProps: AnonStylesX = js.native
+    var defaultProps: Anon0 = js.native
   }
   
 }

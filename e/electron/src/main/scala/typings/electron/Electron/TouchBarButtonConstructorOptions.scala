@@ -9,7 +9,11 @@ import scala.scalajs.js.annotation._
 
 trait TouchBarButtonConstructorOptions extends js.Object {
   /**
-    * Button background color in hex format, i.e #ABCDEF.
+    * A short description of the button for use by screenreaders like VoiceOver.
+    */
+  var accessibilityLabel: js.UndefOr[String] = js.undefined
+  /**
+    * Button background color in hex format, i.e `#ABCDEF`.
     */
   var backgroundColor: js.UndefOr[String] = js.undefined
   /**
@@ -19,9 +23,9 @@ trait TouchBarButtonConstructorOptions extends js.Object {
   /**
     * Button icon.
     */
-  var icon: js.UndefOr[NativeImage_] = js.undefined
+  var icon: js.UndefOr[NativeImage_ | String] = js.undefined
   /**
-    * Can be left, right or overlay.
+    * Can be `left`, `right` or `overlay`. Defaults to `overlay`.
     */
   var iconPosition: js.UndefOr[left | right | overlay] = js.undefined
   /**
@@ -33,13 +37,15 @@ trait TouchBarButtonConstructorOptions extends js.Object {
 object TouchBarButtonConstructorOptions {
   @scala.inline
   def apply(
+    accessibilityLabel: String = null,
     backgroundColor: String = null,
     click: () => Unit = null,
-    icon: NativeImage_ = null,
+    icon: NativeImage_ | String = null,
     iconPosition: left | right | overlay = null,
     label: String = null
   ): TouchBarButtonConstructorOptions = {
     val __obj = js.Dynamic.literal()
+    if (accessibilityLabel != null) __obj.updateDynamic("accessibilityLabel")(accessibilityLabel.asInstanceOf[js.Any])
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (click != null) __obj.updateDynamic("click")(js.Any.fromFunction0(click))
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "path-parser" : "4.2.0"
+      "path-parser" : "6.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "path-parser" : "4.2.0"
+      "path-parser" : "6.1.0"
     }
   ],
   "compile-devDependencies" : [

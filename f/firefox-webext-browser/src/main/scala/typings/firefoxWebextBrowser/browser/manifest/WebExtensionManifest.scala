@@ -5,10 +5,9 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.firefoxWebextBrowser.AnonApiscript
 import typings.firefoxWebextBrowser.AnonBookmarks
 import typings.firefoxWebextBrowser.AnonBrowserstyle
-import typings.firefoxWebextBrowser.AnonBrowserstyleDefaultarea
-import typings.firefoxWebextBrowser.AnonBrowserstyleDefaulticon
-import typings.firefoxWebextBrowser.AnonBrowserstyleDefaulticonDefaultpanel
-import typings.firefoxWebextBrowser.AnonDescriptionSuggestedkey
+import typings.firefoxWebextBrowser.AnonDefaultarea
+import typings.firefoxWebextBrowser.AnonDefaulticon
+import typings.firefoxWebextBrowser.AnonDefaultpanel
 import typings.firefoxWebextBrowser.AnonEdge
 import typings.firefoxWebextBrowser.AnonGecko
 import typings.firefoxWebextBrowser.AnonHomepage
@@ -16,6 +15,7 @@ import typings.firefoxWebextBrowser.AnonKeyword
 import typings.firefoxWebextBrowser.AnonNameUrl
 import typings.firefoxWebextBrowser.AnonPage
 import typings.firefoxWebextBrowser.AnonPersistent
+import typings.firefoxWebextBrowser.AnonSuggestedkey
 import typings.firefoxWebextBrowser.browser.experiments.ExperimentAPI
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -26,11 +26,11 @@ trait WebExtensionManifest extends js.Object {
   var applications: js.UndefOr[AnonGecko] = js.undefined
   var author: js.UndefOr[String] = js.undefined
   var background: js.UndefOr[AnonPage | AnonPersistent] = js.undefined
-  var browser_action: js.UndefOr[AnonBrowserstyleDefaultarea] = js.undefined
+  var browser_action: js.UndefOr[AnonDefaultarea] = js.undefined
   var browser_specific_settings: js.UndefOr[AnonEdge] = js.undefined
   var chrome_settings_overrides: js.UndefOr[AnonHomepage] = js.undefined
   var chrome_url_overrides: js.UndefOr[AnonBookmarks] = js.undefined
-  var commands: js.UndefOr[StringDictionary[AnonDescriptionSuggestedkey]] = js.undefined
+  var commands: js.UndefOr[StringDictionary[AnonSuggestedkey]] = js.undefined
   var content_scripts: js.UndefOr[js.Array[ContentScript]] = js.undefined
   var content_security_policy: js.UndefOr[String] = js.undefined
   var default_locale: js.UndefOr[String] = js.undefined
@@ -49,12 +49,12 @@ trait WebExtensionManifest extends js.Object {
   var omnibox: js.UndefOr[AnonKeyword] = js.undefined
   var optional_permissions: js.UndefOr[js.Array[OptionalPermissionOrOrigin]] = js.undefined
   var options_ui: js.UndefOr[AnonBrowserstyle] = js.undefined
-  var page_action: js.UndefOr[AnonBrowserstyleDefaulticon] = js.undefined
+  var page_action: js.UndefOr[AnonDefaulticon] = js.undefined
   var permissions: js.UndefOr[js.Array[PermissionOrOrigin]] = js.undefined
   /** A list of protocol handler definitions. */
   var protocol_handlers: js.UndefOr[js.Array[ProtocolHandler]] = js.undefined
   var short_name: js.UndefOr[String] = js.undefined
-  var sidebar_action: js.UndefOr[AnonBrowserstyleDefaulticonDefaultpanel] = js.undefined
+  var sidebar_action: js.UndefOr[AnonDefaultpanel] = js.undefined
   var theme_experiment: js.UndefOr[ThemeExperiment] = js.undefined
   var user_scripts: js.UndefOr[AnonApiscript] = js.undefined
   var version: String
@@ -70,11 +70,11 @@ object WebExtensionManifest {
     applications: AnonGecko = null,
     author: String = null,
     background: AnonPage | AnonPersistent = null,
-    browser_action: AnonBrowserstyleDefaultarea = null,
+    browser_action: AnonDefaultarea = null,
     browser_specific_settings: AnonEdge = null,
     chrome_settings_overrides: AnonHomepage = null,
     chrome_url_overrides: AnonBookmarks = null,
-    commands: StringDictionary[AnonDescriptionSuggestedkey] = null,
+    commands: StringDictionary[AnonSuggestedkey] = null,
     content_scripts: js.Array[ContentScript] = null,
     content_security_policy: String = null,
     default_locale: String = null,
@@ -91,11 +91,11 @@ object WebExtensionManifest {
     omnibox: AnonKeyword = null,
     optional_permissions: js.Array[OptionalPermissionOrOrigin] = null,
     options_ui: AnonBrowserstyle = null,
-    page_action: AnonBrowserstyleDefaulticon = null,
+    page_action: AnonDefaulticon = null,
     permissions: js.Array[PermissionOrOrigin] = null,
     protocol_handlers: js.Array[ProtocolHandler] = null,
     short_name: String = null,
-    sidebar_action: AnonBrowserstyleDefaulticonDefaultpanel = null,
+    sidebar_action: AnonDefaultpanel = null,
     theme_experiment: ThemeExperiment = null,
     user_scripts: AnonApiscript = null,
     web_accessible_resources: js.Array[String] = null

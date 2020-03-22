@@ -1,8 +1,6 @@
 package typings.massive.mod
 
-import typings.massive.massiveStrings.fields
-import typings.massive.massiveStrings.term
-import typings.std.Pick
+import typings.massive.PickSearchDefinitionfield
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -55,8 +53,8 @@ class Readable protected () extends Entity {
   def search(plan: SearchDefinition): js.Promise[js.Array[_]] = js.native
   def search(plan: SearchDefinition, options: RetrievalOptions): js.Promise[js.Array[_]] = js.native
   /** Shortcut to perform a full text search on a document table. */
-  def searchDoc(plan: Pick[SearchDefinition, fields | term]): js.Promise[js.Array[_]] = js.native
-  def searchDoc(plan: Pick[SearchDefinition, fields | term], options: RetrievalOptions): js.Promise[js.Array[_]] = js.native
+  def searchDoc(plan: PickSearchDefinitionfield): js.Promise[js.Array[_]] = js.native
+  def searchDoc(plan: PickSearchDefinitionfield, options: RetrievalOptions): js.Promise[js.Array[_]] = js.native
   /** Run a query with a raw SQL predicate, eg: db.mytable.where('id=$1', [123]).then(...); */
   def where(conditions: String): js.Promise[js.Array[_]] = js.native
   def where(conditions: String, params: js.Array[_]): js.Promise[js.Array[_]] = js.native

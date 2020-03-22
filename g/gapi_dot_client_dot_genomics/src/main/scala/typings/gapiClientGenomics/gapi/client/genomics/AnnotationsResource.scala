@@ -2,8 +2,8 @@ package typings.gapiClientGenomics.gapi.client.genomics
 
 import typings.gapiClient.gapi.client.Request_
 import typings.gapiClientGenomics.AnonAccesstoken
-import typings.gapiClientGenomics.AnonAccesstokenAlt
-import typings.gapiClientGenomics.AnonAccesstokenAltAnnotationId
+import typings.gapiClientGenomics.AnonAlt
+import typings.gapiClientGenomics.AnonAnnotationId
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -55,12 +55,12 @@ trait AnnotationsResource extends js.Object {
     * Deletes an annotation. Caller must have WRITE permission for
     * the associated annotation set.
     */
-  def delete(request: AnonAccesstokenAlt): Request_[js.Object]
+  def delete(request: AnonAlt): Request_[js.Object]
   /**
     * Gets an annotation. Caller must have READ permission
     * for the associated annotation set.
     */
-  def get(request: AnonAccesstokenAlt): Request_[Annotation]
+  def get(request: AnonAlt): Request_[Annotation]
   /**
     * Searches for annotations that match the given criteria. Results are
     * ordered by genomic coordinate (by reference sequence, then position).
@@ -75,7 +75,7 @@ trait AnnotationsResource extends js.Object {
     * Updates an annotation. Caller must have
     * WRITE permission for the associated dataset.
     */
-  def update(request: AnonAccesstokenAltAnnotationId): Request_[Annotation]
+  def update(request: AnonAnnotationId): Request_[Annotation]
 }
 
 object AnnotationsResource {
@@ -83,10 +83,10 @@ object AnnotationsResource {
   def apply(
     batchCreate: AnonAccesstoken => Request_[BatchCreateAnnotationsResponse],
     create: AnonAccesstoken => Request_[Annotation],
-    delete: AnonAccesstokenAlt => Request_[js.Object],
-    get: AnonAccesstokenAlt => Request_[Annotation],
+    delete: AnonAlt => Request_[js.Object],
+    get: AnonAlt => Request_[Annotation],
     search: AnonAccesstoken => Request_[SearchAnnotationsResponse],
-    update: AnonAccesstokenAltAnnotationId => Request_[Annotation]
+    update: AnonAnnotationId => Request_[Annotation]
   ): AnnotationsResource = {
     val __obj = js.Dynamic.literal(batchCreate = js.Any.fromFunction1(batchCreate), create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), search = js.Any.fromFunction1(search), update = js.Any.fromFunction1(update))
   

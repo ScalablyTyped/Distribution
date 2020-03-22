@@ -1,8 +1,8 @@
 package typings.materializeCss.M
 
 import typings.materializeCss.MElements
+import typings.materializeCss.PartialTooltipOptions
 import typings.std.Element
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -36,11 +36,11 @@ object Tooltip extends js.Object {
     * Init Tooltips
     */
   def init(els: MElements): js.Array[Tooltip] = js.native
-  def init(els: MElements, options: Partial[TooltipOptions]): js.Array[Tooltip] = js.native
+  def init(els: MElements, options: PartialTooltipOptions): js.Array[Tooltip] = js.native
   /**
     * Init Tooltip
     */
   def init(els: Element): Tooltip = js.native
-  def init(els: Element, options: Partial[TooltipOptions]): Tooltip = js.native
+  def init(els: Element, options: PartialTooltipOptions): Tooltip = js.native
 }
 

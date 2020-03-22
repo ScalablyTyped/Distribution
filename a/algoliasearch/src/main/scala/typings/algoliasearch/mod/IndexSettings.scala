@@ -88,11 +88,7 @@ trait IndexSettings extends js.Object {
     * each of the languages supported (German, Dutch, and Finnish as of 05/2018)
     * default: {de: [], nl: [], fi: []}
     */
-  var decompoundedAttributes: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in std.Partial<'nl' | 'de' | 'fi'> ]: std.Array<string>}
-    */ typings.algoliasearch.algoliasearchStrings.IndexSettings with js.Any
-  ] = js.undefined
+  var decompoundedAttributes: js.UndefOr[js.Object] = js.undefined
   /**
     * List of attributes on which you want to disable the computation of exact criteria
     * default: []
@@ -281,9 +277,7 @@ object IndexSettings {
     attributesToSnippet: js.Array[String] = null,
     camelCaseAttributes: js.Array[String] = null,
     customRanking: js.Array[String] = null,
-    decompoundedAttributes: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in std.Partial<'nl' | 'de' | 'fi'> ]: std.Array<string>}
-    */ typings.algoliasearch.algoliasearchStrings.IndexSettings with js.Any = null,
+    decompoundedAttributes: js.Object = null,
     disableExactOnAttributes: js.Array[String] = null,
     disablePrefixOnAttributes: js.Array[String] = null,
     disableTypoToleranceOnAttributes: String = null,

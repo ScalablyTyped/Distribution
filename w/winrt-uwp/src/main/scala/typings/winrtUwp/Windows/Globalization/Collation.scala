@@ -2,7 +2,7 @@ package typings.winrtUwp.Windows.Globalization
 
 import typings.std.Array
 import typings.winrtUwp.AnonIndex
-import typings.winrtUwp.AnonItemsReturnValueCharacterGrouping
+import typings.winrtUwp.AnonItemsCharacterGrouping
 import typings.winrtUwp.Windows.Foundation.Collections.IIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -42,7 +42,7 @@ object Collation extends js.Object {
       * Returns the CharacterGrouping objects that start at the specified index in the set of character groups.
       * @param startIndex The zero-based index of the start of the CharacterGrouping objects in the set to return.
       */
-    def getMany(startIndex: Double): AnonItemsReturnValueCharacterGrouping = js.native
+    def getMany(startIndex: Double): AnonItemsCharacterGrouping = js.native
     def indexOf(value: CharacterGrouping, extra: js.Any*): AnonIndex = js.native
     /* hack */
     @JSName("indexOf")

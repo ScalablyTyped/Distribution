@@ -1,12 +1,12 @@
 package typings.formatjsIntlUnifiedNumberformat.dataMod
 
+import typings.formatjsIntlUnifiedNumberformat.RecordDecimalFormatNumSig
 import typings.formatjsIntlUnifiedNumberformat.formatjsIntlUnifiedNumberformatStrings.compactLong
 import typings.formatjsIntlUnifiedNumberformat.formatjsIntlUnifiedNumberformatStrings.compactShort
 import typings.formatjsIntlUtils.numberTypesMod.DecimalFormatNum
 import typings.formatjsIntlUtils.numberTypesMod.NotationPattern
 import typings.formatjsIntlUtils.numberTypesMod.SignDisplayPattern
 import typings.formatjsIntlUtils.numberTypesMod.SignPattern
-import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -56,8 +56,8 @@ object CurrencySignDisplayPatterns {
     `100000000000000`: () => SignPattern,
     always: () => NotationPattern,
     auto: () => NotationPattern,
-    compactLong: () => Record[DecimalFormatNum, SignPattern],
-    compactShort: () => Record[DecimalFormatNum, SignPattern],
+    compactLong: () => RecordDecimalFormatNumSig,
+    compactShort: () => RecordDecimalFormatNumSig,
     currency: js.Any,
     currencySlotToken: js.Any,
     exceptZero: () => NotationPattern,

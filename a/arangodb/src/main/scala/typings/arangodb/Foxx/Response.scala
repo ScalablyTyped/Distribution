@@ -1,8 +1,8 @@
 package typings.arangodb.Foxx
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.arangodb.AnonAlgorithmDomain
 import typings.arangodb.AnonCause
+import typings.arangodb.AnonDomain
 import typings.arangodb.AnonLastModified
 import typings.arangodb.ArangoDB.HttpStatus
 import typings.node.Buffer
@@ -20,7 +20,7 @@ trait Response extends js.Object {
   def attachment(): this.type = js.native
   def attachment(filename: String): this.type = js.native
   def cookie(name: String, value: String): this.type = js.native
-  def cookie(name: String, value: String, options: AnonAlgorithmDomain): this.type = js.native
+  def cookie(name: String, value: String, options: AnonDomain): this.type = js.native
   def download(path: String): this.type = js.native
   def download(path: String, filename: String): this.type = js.native
   def getHeader(name: String): js.UndefOr[String] = js.native

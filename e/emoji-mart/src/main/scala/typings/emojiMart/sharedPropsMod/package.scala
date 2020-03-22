@@ -10,10 +10,4 @@ package object sharedPropsMod {
     /* sheetSize */ typings.emojiMart.sharedPropsMod.EmojiSheetSize, 
     java.lang.String
   ]
-  type PartialI18n = typings.std.Partial[
-    (typings.std.Pick[
-      typings.emojiMart.sharedPropsMod.I18n, 
-      typings.emojiMart.emojiMartStrings.search | typings.emojiMart.emojiMartStrings.notfound
-    ]) with typings.emojiMart.AnonCategories
-  ]
 }

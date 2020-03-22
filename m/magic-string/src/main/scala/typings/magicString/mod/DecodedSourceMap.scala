@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait DecodedSourceMap extends js.Object {
   var file: String
-  var mappings: js.Array[js.Array[js.Array[Double]]]
+  var mappings: js.Array[js.Array[SourceMapSegment]]
   var names: js.Array[String]
   var sources: js.Array[String]
   var sourcesContent: js.Array[String]
@@ -16,7 +16,7 @@ object DecodedSourceMap {
   @scala.inline
   def apply(
     file: String,
-    mappings: js.Array[js.Array[js.Array[Double]]],
+    mappings: js.Array[js.Array[SourceMapSegment]],
     names: js.Array[String],
     sources: js.Array[String],
     sourcesContent: js.Array[String]

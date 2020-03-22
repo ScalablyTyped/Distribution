@@ -1,11 +1,11 @@
 package typings.antdMobileRn.styleIndexDotnativeMod
 
 import typings.antdMobileRn.AnonAlignItems
-import typings.antdMobileRn.AnonAlignItemsBackgroundColor
-import typings.antdMobileRn.AnonAlignItemsFlexDirection
 import typings.antdMobileRn.AnonBackgroundColor
+import typings.antdMobileRn.AnonBorderRadius
 import typings.antdMobileRn.AnonColor
-import typings.antdMobileRn.AnonColorFontSize
+import typings.antdMobileRn.AnonFlexDirection
+import typings.antdMobileRn.AnonFontSize
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,9 +15,9 @@ import scala.scalajs.js.annotation._
 object default extends js.Object {
   var container: AnonBackgroundColor = js.native
   var innerContainer: AnonAlignItems = js.native
-  var spinner: AnonAlignItemsFlexDirection = js.native
+  var spinner: AnonFlexDirection = js.native
   var tip: AnonColor = js.native
-  var toast: AnonColorFontSize = js.native
-  var wrapper: AnonAlignItemsBackgroundColor = js.native
+  var toast: AnonFontSize = js.native
+  var wrapper: AnonBorderRadius = js.native
 }
 

@@ -20,12 +20,12 @@ trait GoogleApiYouTubeVideoCategoryResource extends js.Object {
   /**
     * The snippet object contains basic details about the video category, including its title.
     */
-  var snippet: AnonChannelIdTitle
+  var snippet: AnonTitle
 }
 
 object GoogleApiYouTubeVideoCategoryResource {
   @scala.inline
-  def apply(etag: String, id: String, kind: String, snippet: AnonChannelIdTitle): GoogleApiYouTubeVideoCategoryResource = {
+  def apply(etag: String, id: String, kind: String, snippet: AnonTitle): GoogleApiYouTubeVideoCategoryResource = {
     val __obj = js.Dynamic.literal(etag = etag.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], snippet = snippet.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GoogleApiYouTubeVideoCategoryResource]

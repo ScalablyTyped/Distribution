@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ionic/angular/dist/directives/proxies", "IonTabButton")
+@JSImport("@ionic/angular/directives/proxies", "IonTabButton")
 @js.native
 class IonTabButton protected ()
   extends typings.ionicCore.componentsMod.Components.IonTabButton {

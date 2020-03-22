@@ -2,7 +2,7 @@ package typings.reactStripeElements.mod.ReactStripeElements
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.stripeV3.AnonBase
-import typings.stripeV3.AnonBaseComplete
+import typings.stripeV3.AnonComplete
 import typings.stripeV3.stripe.paymentRequest.StripePaymentRequest
 import typings.stripeV3.stripeV3Strings.default
 import typings.stripeV3.stripeV3Strings.solid
@@ -39,7 +39,7 @@ object ElementProps {
     paymentRequest: StripePaymentRequest = null,
     placeholder: String = null,
     placeholderCountry: String = null,
-    style: AnonBaseComplete = null,
+    style: AnonComplete = null,
     supportedCountries: js.Array[String] = null,
     value: String | StringDictionary[String] = null
   ): ElementProps = {

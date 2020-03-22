@@ -1,6 +1,6 @@
 package typings.meteor
 
-import typings.std.Console
+import typings.std.Console_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,6 +11,6 @@ object ^ extends js.Object {
   var MailComposer: MailComposerStatic = js.native
   var ReactiveVar: ReactiveVarStatic = js.native
   var Template: TemplateStatic = js.native
-  var console: Console = js.native
+  var console: Console_ = js.native
 }
 

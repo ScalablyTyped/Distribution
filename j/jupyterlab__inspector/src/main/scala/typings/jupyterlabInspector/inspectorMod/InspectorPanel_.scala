@@ -5,13 +5,13 @@ import typings.jupyterlabInspector.inspectorMod.InspectorPanel.IOptions
 import typings.jupyterlabInspector.tokensMod.IInspector
 import typings.jupyterlabInspector.tokensMod.IInspector.IInspectable
 import typings.jupyterlabInspector.tokensMod.IInspector.IInspectorUpdate
-import typings.phosphorAlgorithm.iterMod.IIterator
-import typings.phosphorMessaging.mod.Message
-import typings.phosphorWidgets.mod.Panel
-import typings.phosphorWidgets.widgetMod.Widget
-import typings.phosphorWidgets.widgetMod.Widget.ChildMessage
-import typings.phosphorWidgets.widgetMod.Widget.Flag
-import typings.phosphorWidgets.widgetMod.Widget.ResizeMessage
+import typings.luminoAlgorithm.iterMod.IIterator
+import typings.luminoMessaging.mod.Message
+import typings.luminoWidgets.mod.Panel
+import typings.luminoWidgets.widgetMod.Widget
+import typings.luminoWidgets.widgetMod.Widget.ChildMessage
+import typings.luminoWidgets.widgetMod.Widget.Flag
+import typings.luminoWidgets.widgetMod.Widget.ResizeMessage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -111,6 +111,7 @@ class InspectorPanel_ ()
     * It is undefined behavior to use any functionality of the object
     * after it has been disposed unless otherwise explicitly noted.
     */
+  /* CompleteClass */
   /* InferMemberOverrides */
   override def dispose(): Unit = js.native
   /**
@@ -297,6 +298,7 @@ class InspectorPanel_ ()
     *
     * @param msg - The message to be processed.
     */
+  /* CompleteClass */
   /* InferMemberOverrides */
   override def processMessage(msg: Message): Unit = js.native
   /**
@@ -339,6 +341,15 @@ class InspectorPanel_ ()
     */
   /* InferMemberOverrides */
   override def show(): Unit = js.native
+  @JSName("source")
+  def source_MInspectorPanel_(): js.Any = js.native
+  @JSName("source")
+  def source_MInspectorPanel_(source: IInspectable): js.Any = js.native
+  /**
+    * The source of events the inspector panel listens for.
+    */
+  @JSName("source")
+  def source_Union(): IInspectable | Null = js.native
   /**
     * Test whether the given widget flag is set.
     *

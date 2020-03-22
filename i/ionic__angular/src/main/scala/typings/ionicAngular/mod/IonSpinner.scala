@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/angular", "IonSpinner")
 @js.native
 class IonSpinner protected ()
-  extends typings.ionicAngular.distMod.IonSpinner {
+  extends typings.ionicAngular.proxiesMod.IonSpinner {
   def this(c: ChangeDetectorRef, r: ElementRef[_], z: NgZone) = this()
 }
 

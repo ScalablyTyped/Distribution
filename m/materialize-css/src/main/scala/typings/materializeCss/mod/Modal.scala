@@ -1,9 +1,8 @@
 package typings.materializeCss.mod
 
-import typings.materializeCss.M.ModalOptions
 import typings.materializeCss.MElements
+import typings.materializeCss.PartialModalOptions
 import typings.std.Element
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,11 +24,11 @@ object Modal extends js.Object {
     * Init Modals
     */
   def init(els: MElements): js.Array[typings.materializeCss.M.Modal] = js.native
-  def init(els: MElements, options: Partial[ModalOptions]): js.Array[typings.materializeCss.M.Modal] = js.native
+  def init(els: MElements, options: PartialModalOptions): js.Array[typings.materializeCss.M.Modal] = js.native
   /**
     * Init Modal
     */
   def init(els: Element): typings.materializeCss.M.Modal = js.native
-  def init(els: Element, options: Partial[ModalOptions]): typings.materializeCss.M.Modal = js.native
+  def init(els: Element, options: PartialModalOptions): typings.materializeCss.M.Modal = js.native
 }
 

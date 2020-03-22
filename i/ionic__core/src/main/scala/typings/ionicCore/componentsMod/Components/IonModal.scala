@@ -1,12 +1,13 @@
 package typings.ionicCore.componentsMod.Components
 
+import typings.ionicCore.animationInterfaceMod.AnimationBuilder
 import typings.ionicCore.ionicCoreStrings.ios
 import typings.ionicCore.ionicCoreStrings.md
 import typings.ionicCore.mod.ComponentProps
 import typings.ionicCore.mod.ComponentRef
 import typings.ionicCore.mod.FrameworkDelegate
-import typings.ionicCore.oldAnimationAnimationInterfaceMod.AnimationBuilder
 import typings.ionicCore.overlaysInterfaceMod.OverlayEventDetail
+import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -52,9 +53,17 @@ trait IonModal extends js.Object {
   var mode: js.UndefOr[ios | md] = js.native
   var overlayIndex: Double = js.native
   /**
+    * The element that presented the modal. This is used for card presentation effects and for stacking multiple modals on top of each other. Only applies in iOS mode.
+    */
+  var presentingElement: js.UndefOr[HTMLElement] = js.native
+  /**
     * If `true`, a backdrop will be displayed behind the modal.
     */
   var showBackdrop: Boolean = js.native
+  /**
+    * If `true`, the modal can be swiped to dismiss. Only applies in iOS mode.
+    */
+  var swipeToClose: Boolean = js.native
   /**
     * Dismiss the modal overlay after it has been presented.
     * @param data Any data to emit in the dismiss events.

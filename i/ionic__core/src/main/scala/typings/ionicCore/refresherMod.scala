@@ -1,9 +1,9 @@
 package typings.ionicCore
 
+import typings.ionicCore.componentsMod._Global_.HTMLIonRefresherElement
 import typings.ionicCore.refresherInterfaceMod.RefresherEventDetail
 import typings.ionicCore.stencilCoreMod.ComponentInterface
 import typings.ionicCore.stencilCoreMod.EventEmitter
-import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,20 +13,28 @@ import scala.scalajs.js.annotation._
 object refresherMod extends js.Object {
   @js.native
   class Refresher () extends ComponentInterface {
+    var animations: js.Any = js.native
     var appliedStyles: js.Any = js.native
+    var backgroundContentEl: js.UndefOr[js.Any] = js.native
     var beginRefresh: js.Any = js.native
     var canStart: js.Any = js.native
+    var checkNativeRefresher: js.Any = js.native
     var close: js.Any = js.native
     /**
       * Time it takes to close the refresher.
+      * Does not apply when the refresher content uses a spinner,
+      * enabling the native refresher.
       */
     var closeDuration: String = js.native
+    var destroyNativeRefresher: js.Any = js.native
+    var didRefresh: js.Any = js.native
     var didStart: js.Any = js.native
     /**
       * If `true`, the refresher will be hidden.
       */
     var disabled: Boolean = js.native
-    var el: HTMLElement = js.native
+    var el: HTMLIonRefresherElement = js.native
+    var elementToTransform: js.UndefOr[js.Any] = js.native
     var gesture: js.UndefOr[js.Any] = js.native
     /**
       * Emitted while the user is pulling down the content and exposing the refresher.
@@ -43,9 +51,13 @@ object refresherMod extends js.Object {
       * Emitted when the user begins to start pulling down.
       */
     var ionStart: EventEmitter[Unit] = js.native
+    var lastVelocityY: js.Any = js.native
+    var nativeRefresher: js.Any = js.native
+    var needsCompletion: js.Any = js.native
     var onEnd: js.Any = js.native
     var onMove: js.Any = js.native
     var onStart: js.Any = js.native
+    var pointerDown: js.Any = js.native
     var progress: js.Any = js.native
     /**
       * How much to multiply the pull speed by. To slow the pull animation down,
@@ -57,23 +69,37 @@ object refresherMod extends js.Object {
       * `10` pixels, instead of `10` pixels the content will be pulled by `12` pixels
       * (an increase of 20 percent). If the value passed is `0.8`, the dragged amount
       * will be `8` pixels, less than the amount the cursor has moved.
+      *
+      * Does not apply when the refresher content uses a spinner,
+      * enabling the native refresher.
       */
     var pullFactor: Double = js.native
     /**
       * The maximum distance of the pull until the refresher
       * will automatically go into the `refreshing` state.
       * Defaults to the result of `pullMin + 60`.
+      * Does not apply when  the refresher content uses a spinner,
+      * enabling the native refresher.
       */
     var pullMax: Double = js.native
     /**
       * The minimum distance the user must pull down until the
       * refresher will go into the `refreshing` state.
+      * Does not apply when the refresher content uses a spinner,
+      * enabling the native refresher.
       */
     var pullMin: Double = js.native
+    var resetNativeRefresher: js.Any = js.native
     var scrollEl: js.UndefOr[js.Any] = js.native
+    var scrollListenerCallback: js.UndefOr[js.Any] = js.native
     var setCss: js.Any = js.native
+    var setupMDNativeRefresher: js.Any = js.native
+    var setupNativeRefresher: js.Any = js.native
+    var setupiOSNativeRefresher: js.Any = js.native
     /**
       * Time it takes the refresher to to snap back to the `refreshing` state.
+      * Does not apply when the refresher content uses a spinner,
+      * enabling the native refresher.
       */
     var snapbackDuration: String = js.native
     /**
@@ -101,6 +127,8 @@ object refresherMod extends js.Object {
       * `refreshing` to `completing`.
       */
     def complete(): js.Promise[Unit] = js.native
+    @JSName("componentDidUpdate")
+    def componentDidUpdate_MRefresher(): Unit = js.native
     @JSName("connectedCallback")
     def connectedCallback_MRefresher(): js.Promise[Unit] = js.native
     def disabledChanged(): Unit = js.native

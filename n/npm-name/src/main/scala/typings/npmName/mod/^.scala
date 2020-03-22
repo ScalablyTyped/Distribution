@@ -10,8 +10,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   var InvalidNameError: Instantiable0[InvalidNameErrorClass] = js.native
-  // TODO: remove this in the next major version
-  var default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof npmName */ js.Any = js.native
   /**
   	Check whether a package/organization name is available (not registered) on npm.
   	An organization name should start with `@` and should not be a scoped package.

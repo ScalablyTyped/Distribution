@@ -15,7 +15,7 @@ object mod extends js.Object {
   trait SsecMiddlewareConfiguration[Input /* <: js.Object */] extends js.Object {
     @JSName("base64Encoder")
     var base64Encoder_Original: Encoder = js.native
-    var hashConstructor: AnonHash = js.native
+    var hashConstructor: AnonInstantiable = js.native
     var ssecProperties: SsecPropertiesConfiguration[Input] = js.native
     @JSName("utf8Decoder")
     var utf8Decoder_Original: Decoder = js.native

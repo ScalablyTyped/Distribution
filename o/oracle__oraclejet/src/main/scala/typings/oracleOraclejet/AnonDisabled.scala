@@ -1,20 +1,22 @@
 package typings.oracleOraclejet
 
-import typings.oracleOraclejet.oracleOraclejetStrings.disabled
-import typings.oracleOraclejet.oracleOraclejetStrings.enabled
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonDisabled extends js.Object {
-  var tasks: js.UndefOr[disabled | enabled] = js.undefined
+  var className: js.UndefOr[String] = js.undefined
+  var disabled: js.UndefOr[Boolean] = js.undefined
+  var tooltip: js.UndefOr[String] = js.undefined
 }
 
 object AnonDisabled {
   @scala.inline
-  def apply(tasks: disabled | enabled = null): AnonDisabled = {
+  def apply(className: String = null, disabled: js.UndefOr[Boolean] = js.undefined, tooltip: String = null): AnonDisabled = {
     val __obj = js.Dynamic.literal()
-    if (tasks != null) __obj.updateDynamic("tasks")(tasks.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnonDisabled]
   }
 }

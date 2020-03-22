@@ -2,9 +2,9 @@ package typings.pgPromise.mod
 
 import typings.node.NodeJS.ReadableStream
 import typings.pgPromise.AnonCnd
-import typings.pgPromise.AnonCndMode
 import typings.pgPromise.AnonDuration
 import typings.pgPromise.AnonMode
+import typings.pgPromise.AnonReusable
 import typings.pgPromise.AnonTag
 import typings.pgPromise.pgSubsetMod.IResult
 import scala.scalajs.js
@@ -73,10 +73,10 @@ trait IBaseProtocol[Ext] extends js.Object {
   def oneOrNone[T](query: QueryParam, values: js.Any, cb: js.Function1[/* value */ js.Any, T]): XPromise[T | Null] = js.native
   def oneOrNone[T](query: QueryParam, values: js.Any, cb: js.Function1[/* value */ js.Any, T], thisArg: js.Any): XPromise[T | Null] = js.native
   // API: http://vitaly-t.github.io/pg-promise/Database.html#proc
-  def proc[T](procName: String): XPromise[T] = js.native
-  def proc[T](procName: String, values: js.Any): XPromise[T] = js.native
-  def proc[T](procName: String, values: js.Any, cb: js.Function1[/* value */ js.Any, T]): XPromise[T] = js.native
-  def proc[T](procName: String, values: js.Any, cb: js.Function1[/* value */ js.Any, T], thisArg: js.Any): XPromise[T] = js.native
+  def proc[T](procName: String): XPromise[T | Null] = js.native
+  def proc[T](procName: String, values: js.Any): XPromise[T | Null] = js.native
+  def proc[T](procName: String, values: js.Any, cb: js.Function1[/* value */ js.Any, T]): XPromise[T | Null] = js.native
+  def proc[T](procName: String, values: js.Any, cb: js.Function1[/* value */ js.Any, T], thisArg: js.Any): XPromise[T | Null] = js.native
   // API: http://vitaly-t.github.io/pg-promise/Database.html#query
   def query[T](query: QueryParam): XPromise[T] = js.native
   def query[T](query: QueryParam, values: js.Any): XPromise[T] = js.native
@@ -109,7 +109,7 @@ trait IBaseProtocol[Ext] extends js.Object {
   // Conditional Transactions;
   // API: http://vitaly-t.github.io/pg-promise/Database.html#txIf
   def txIf[T](cb: js.Function1[/* t */ ITask[Ext] with Ext, T | XPromise[T]]): XPromise[T] = js.native
-  def txIf[T](options: AnonCndMode[Ext], cb: js.Function1[/* t */ ITask[Ext] with Ext, T | XPromise[T]]): XPromise[T] = js.native
+  def txIf[T](options: AnonReusable[Ext], cb: js.Function1[/* t */ ITask[Ext] with Ext, T | XPromise[T]]): XPromise[T] = js.native
   def txIf[T](tag: String, cb: js.Function1[/* t */ ITask[Ext] with Ext, T | XPromise[T]]): XPromise[T] = js.native
   def txIf[T](tag: Double, cb: js.Function1[/* t */ ITask[Ext] with Ext, T | XPromise[T]]): XPromise[T] = js.native
 }

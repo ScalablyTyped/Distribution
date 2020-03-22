@@ -21,6 +21,7 @@ trait Scanner extends js.Object {
   def isUnterminated(): Boolean = js.native
   def lookAhead[T](callback: js.Function0[T]): T = js.native
   def reScanGreaterToken(): SyntaxKind = js.native
+  def reScanJsxAttributeValue(): SyntaxKind = js.native
   def reScanJsxToken(): JsxTokenSyntaxKind = js.native
   def reScanLessThanToken(): SyntaxKind = js.native
   def reScanQuestionToken(): SyntaxKind = js.native

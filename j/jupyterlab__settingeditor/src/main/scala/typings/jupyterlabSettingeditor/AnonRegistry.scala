@@ -1,6 +1,6 @@
 package typings.jupyterlabSettingeditor
 
-import typings.phosphorCommands.mod.CommandRegistry
+import typings.luminoCommands.mod.CommandRegistry
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

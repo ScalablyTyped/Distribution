@@ -1,17 +1,24 @@
 package typings.grommet
 
+import typings.grommet.grommetStrings.auto
+import typings.grommet.grommetStrings.hidden
+import typings.grommet.grommetStrings.scroll
+import typings.grommet.grommetStrings.visible
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonHorizontal extends js.Object {
-  var horizontal: js.UndefOr[String] = js.undefined
-  var vertical: js.UndefOr[String] = js.undefined
+  var horizontal: js.UndefOr[auto | hidden | scroll | visible] = js.undefined
+  var vertical: js.UndefOr[auto | hidden | scroll | visible] = js.undefined
 }
 
 object AnonHorizontal {
   @scala.inline
-  def apply(horizontal: String = null, vertical: String = null): AnonHorizontal = {
+  def apply(
+    horizontal: auto | hidden | scroll | visible = null,
+    vertical: auto | hidden | scroll | visible = null
+  ): AnonHorizontal = {
     val __obj = js.Dynamic.literal()
     if (horizontal != null) __obj.updateDynamic("horizontal")(horizontal.asInstanceOf[js.Any])
     if (vertical != null) __obj.updateDynamic("vertical")(vertical.asInstanceOf[js.Any])

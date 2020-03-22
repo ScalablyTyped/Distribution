@@ -21,12 +21,12 @@ class ReflectiveKey protected () extends js.Object {
 @js.native
 object ReflectiveKey extends js.Object {
   /**
-    * @returns the number of keys registered in the system.
-    */
-  val numberOfKeys: Double = js.native
-  /**
     * Retrieves a `Key` for a token.
     */
   def get(token: js.Object): ReflectiveKey = js.native
+  /**
+    * @returns the number of keys registered in the system.
+    */
+  def numberOfKeys(): Double = js.native
 }
 

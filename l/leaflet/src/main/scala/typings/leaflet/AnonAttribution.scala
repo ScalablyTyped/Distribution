@@ -30,6 +30,6 @@ trait AnonAttribution
   ] = js.native
   var Scale: Instantiable1[js.UndefOr[/* options */ ScaleOptions], typings.leaflet.mod.Control_.Scale] = js.native
   var Zoom: Instantiable1[js.UndefOr[/* options */ ZoomOptions], typings.leaflet.mod.Control_.Zoom] = js.native
-  def extend[T /* <: js.Object */](props: T): AnonArgsAny[T] with (/* import warning: importer.ImportType#apply Failed type conversion: typeof Control */ js.Any) = js.native
+  def extend[T /* <: js.Object */](props: T): AnonInstantiableT[T] with (/* import warning: importer.ImportType#apply Failed type conversion: typeof Control */ js.Any) = js.native
 }
 

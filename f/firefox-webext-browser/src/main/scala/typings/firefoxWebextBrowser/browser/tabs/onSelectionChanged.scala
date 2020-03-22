@@ -1,7 +1,7 @@
 package typings.firefoxWebextBrowser.browser.tabs
 
 import org.scalablytyped.runtime.TopLevel
-import typings.firefoxWebextBrowser.AnonWindowIdNumber
+import typings.firefoxWebextBrowser.Anon0
 import typings.firefoxWebextBrowser.WebExtEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,8 +16,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object onSelectionChanged
   extends TopLevel[
-      js.UndefOr[
-        WebExtEvent[js.Function2[/* tabId */ Double, /* selectInfo */ AnonWindowIdNumber, Unit]]
-      ]
+      js.UndefOr[WebExtEvent[js.Function2[/* tabId */ Double, /* selectInfo */ Anon0, Unit]]]
     ]
 

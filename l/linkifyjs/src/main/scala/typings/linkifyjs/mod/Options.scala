@@ -1,10 +1,13 @@
 package typings.linkifyjs.mod
 
+import typings.linkifyjs.PartialRecordLinkEntityTy
+import typings.linkifyjs.PartialRecordLinkEntityTyEmail
+import typings.linkifyjs.PartialRecordLinkEntityTyHashtag
+import typings.linkifyjs.PartialRecordLinkEntityTyMention
 import typings.linkifyjs.linkifyjsStrings.ftp
 import typings.linkifyjs.linkifyjsStrings.ftps
 import typings.linkifyjs.linkifyjsStrings.http
 import typings.linkifyjs.linkifyjsStrings.https
-import typings.std.Partial
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -33,7 +36,7 @@ trait Options extends js.Object {
     * string or function to use for that type.
     */
   var className: js.UndefOr[
-    String | (Partial[Record[LinkEntityType, String | (js.Function1[/* href */ String, String])]]) | (js.Function2[/* href */ String, /* type */ LinkEntityType, String])
+    String | PartialRecordLinkEntityTy | (js.Function2[/* href */ String, /* type */ LinkEntityType, String])
   ] = js.undefined
   /**
     * Protocol that should be used in href attributes for URLs without a
@@ -51,7 +54,7 @@ trait Options extends js.Object {
     * @default null
     */
   var format: js.UndefOr[
-    (js.Function2[/* value */ String, /* type */ LinkEntityType, String]) | (Partial[Record[LinkEntityType, js.Function1[/* value */ String, String]]]) | Null
+    (js.Function2[/* value */ String, /* type */ LinkEntityType, String]) | PartialRecordLinkEntityTyEmail | Null
   ] = js.undefined
   /**
     * Similar to format, except the result of this function will be used as the
@@ -66,7 +69,7 @@ trait Options extends js.Object {
     * @default null
     */
   var formatHref: js.UndefOr[
-    (js.Function2[/* href */ String, /* type */ LinkEntityType, String]) | (Partial[Record[LinkEntityType, js.Function1[/* href */ String, String]]]) | Null
+    (js.Function2[/* href */ String, /* type */ LinkEntityType, String]) | PartialRecordLinkEntityTyEmail | Null
   ] = js.undefined
   /**
     * If `true`, \n line breaks will automatically be converted to `<br>` tags.
@@ -87,7 +90,7 @@ trait Options extends js.Object {
     * @default a
     */
   var tagName: js.UndefOr[
-    String | (js.Function2[/* href */ String, /* type */ LinkEntityType, String]) | (Partial[Record[LinkEntityType, String]])
+    String | (js.Function2[/* href */ String, /* type */ LinkEntityType, String]) | PartialRecordLinkEntityTyHashtag
   ] = js.undefined
   /**
     * target attribute for generated link.
@@ -101,7 +104,7 @@ trait Options extends js.Object {
     * @default { url: '_blank' }
     */
   var target: js.UndefOr[
-    String | (js.Function2[/* href */ String, /* type */ LinkEntityType, String]) | (Partial[Record[LinkEntityType, String | Null]])
+    String | (js.Function2[/* href */ String, /* type */ LinkEntityType, String]) | PartialRecordLinkEntityTyHashtag
   ] = js.undefined
   /**
     * validate
@@ -121,7 +124,7 @@ trait Options extends js.Object {
     * @default null
     */
   var validate: js.UndefOr[
-    Boolean | (js.Function2[/* href */ String, /* type */ LinkEntityType, Boolean]) | (Partial[Record[LinkEntityType, js.Function1[/* href */ String, Boolean]]]) | Null
+    Boolean | (js.Function2[/* href */ String, /* type */ LinkEntityType, Boolean]) | PartialRecordLinkEntityTyMention | Null
   ] = js.undefined
 }
 
@@ -129,14 +132,14 @@ object Options {
   @scala.inline
   def apply(
     attributes: (Record[String, String]) | (js.Function2[/* href */ String, /* type */ LinkEntityType, Record[String, String]]) = null,
-    className: String | (Partial[Record[LinkEntityType, String | (js.Function1[/* href */ String, String])]]) | (js.Function2[/* href */ String, /* type */ LinkEntityType, String]) = null,
+    className: String | PartialRecordLinkEntityTy | (js.Function2[/* href */ String, /* type */ LinkEntityType, String]) = null,
     defaultProtocol: http | https | ftp | ftps | String = null,
-    format: (js.Function2[/* value */ String, /* type */ LinkEntityType, String]) | (Partial[Record[LinkEntityType, js.Function1[/* value */ String, String]]]) = null,
-    formatHref: (js.Function2[/* href */ String, /* type */ LinkEntityType, String]) | (Partial[Record[LinkEntityType, js.Function1[/* href */ String, String]]]) = null,
+    format: (js.Function2[/* value */ String, /* type */ LinkEntityType, String]) | PartialRecordLinkEntityTyEmail = null,
+    formatHref: (js.Function2[/* href */ String, /* type */ LinkEntityType, String]) | PartialRecordLinkEntityTyEmail = null,
     nl2br: js.UndefOr[Boolean] = js.undefined,
-    tagName: String | (js.Function2[/* href */ String, /* type */ LinkEntityType, String]) | (Partial[Record[LinkEntityType, String]]) = null,
-    target: String | (js.Function2[/* href */ String, /* type */ LinkEntityType, String]) | (Partial[Record[LinkEntityType, String | Null]]) = null,
-    validate: Boolean | (js.Function2[/* href */ String, /* type */ LinkEntityType, Boolean]) | (Partial[Record[LinkEntityType, js.Function1[/* href */ String, Boolean]]]) = null
+    tagName: String | (js.Function2[/* href */ String, /* type */ LinkEntityType, String]) | PartialRecordLinkEntityTyHashtag = null,
+    target: String | (js.Function2[/* href */ String, /* type */ LinkEntityType, String]) | PartialRecordLinkEntityTyHashtag = null,
+    validate: Boolean | (js.Function2[/* href */ String, /* type */ LinkEntityType, Boolean]) | PartialRecordLinkEntityTyMention = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])

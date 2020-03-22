@@ -36,13 +36,37 @@ object antdMobileRnStrings {
   sealed trait `Tabs example` extends js.Object
   
   @js.native
+  sealed trait URL extends js.Object
+  
+  @js.native
   sealed trait _empty extends js.Object
+  
+  @js.native
+  sealed trait addressCity extends js.Object
+  
+  @js.native
+  sealed trait addressCityAndState extends js.Object
+  
+  @js.native
+  sealed trait addressState extends js.Object
+  
+  @js.native
+  sealed trait always extends js.Object
   
   @js.native
   sealed trait android extends js.Object
   
   @js.native
   sealed trait around extends js.Object
+  
+  @js.native
+  sealed trait assertive extends js.Object
+  
+  @js.native
+  sealed trait auto extends js.Object
+  
+  @js.native
+  sealed trait balanced extends js.Object
   
   @js.native
   sealed trait bankCard extends js.Object
@@ -57,10 +81,34 @@ object antdMobileRnStrings {
   sealed trait bottom extends js.Object
   
   @js.native
+  sealed trait `box-none` extends js.Object
+  
+  @js.native
+  sealed trait `box-only` extends js.Object
+  
+  @js.native
   sealed trait button extends js.Object
   
   @js.native
+  sealed trait `cc-csc` extends js.Object
+  
+  @js.native
+  sealed trait `cc-exp` extends js.Object
+  
+  @js.native
+  sealed trait `cc-exp-month` extends js.Object
+  
+  @js.native
+  sealed trait `cc-exp-year` extends js.Object
+  
+  @js.native
+  sealed trait `cc-number` extends js.Object
+  
+  @js.native
   sealed trait center extends js.Object
+  
+  @js.native
+  sealed trait characters extends js.Object
   
   @js.native
   sealed trait closable extends js.Object
@@ -70,6 +118,15 @@ object antdMobileRnStrings {
   
   @js.native
   sealed trait `column-reverse` extends js.Object
+  
+  @js.native
+  sealed trait countryName extends js.Object
+  
+  @js.native
+  sealed trait creditCardNumber extends js.Object
+  
+  @js.native
+  sealed trait dark extends js.Object
   
   @js.native
   sealed trait date extends js.Object
@@ -87,22 +144,43 @@ object antdMobileRnStrings {
   sealed trait down extends js.Object
   
   @js.native
+  sealed trait email extends js.Object
+  
+  @js.native
+  sealed trait emailAddress extends js.Object
+  
+  @js.native
   sealed trait empty extends js.Object
   
   @js.native
   sealed trait end extends js.Object
   
   @js.native
+  sealed trait familyName extends js.Object
+  
+  @js.native
   sealed trait fixed extends js.Object
   
   @js.native
+  sealed trait fullStreetAddress extends js.Object
+  
+  @js.native
   sealed trait ghost extends js.Object
+  
+  @js.native
+  sealed trait givenName extends js.Object
+  
+  @js.native
+  sealed trait highQuality extends js.Object
   
   @js.native
   sealed trait horizontal extends js.Object
   
   @js.native
   sealed trait ios extends js.Object
+  
+  @js.native
+  sealed trait jobTitle extends js.Object
   
   @js.native
   sealed trait large extends js.Object
@@ -114,7 +192,13 @@ object antdMobileRnStrings {
   sealed trait lg extends js.Object
   
   @js.native
+  sealed trait light extends js.Object
+  
+  @js.native
   sealed trait link extends js.Object
+  
+  @js.native
+  sealed trait location extends js.Object
   
   @js.native
   sealed trait `login-password` extends js.Object
@@ -126,7 +210,40 @@ object antdMobileRnStrings {
   sealed trait middle extends js.Object
   
   @js.native
+  sealed trait middleName extends js.Object
+  
+  @js.native
   sealed trait month extends js.Object
+  
+  @js.native
+  sealed trait name extends js.Object
+  
+  @js.native
+  sealed trait namePrefix extends js.Object
+  
+  @js.native
+  sealed trait nameSuffix extends js.Object
+  
+  @js.native
+  sealed trait never extends js.Object
+  
+  @js.native
+  sealed trait newPassword extends js.Object
+  
+  @js.native
+  sealed trait nickname extends js.Object
+  
+  @js.native
+  sealed trait no extends js.Object
+  
+  @js.native
+  sealed trait `no-hide-descendants` extends js.Object
+  
+  @js.native
+  sealed trait noExcludeDescendants extends js.Object
+  
+  @js.native
+  sealed trait none extends js.Object
   
   @js.native
   sealed trait normal extends js.Object
@@ -138,13 +255,13 @@ object antdMobileRnStrings {
   sealed trait number extends js.Object
   
   @js.native
-  sealed trait onBlur extends js.Object
+  sealed trait off extends js.Object
   
   @js.native
-  sealed trait onChange extends js.Object
+  sealed trait oneTimeCode extends js.Object
   
   @js.native
-  sealed trait onFocus extends js.Object
+  sealed trait organizationName extends js.Object
   
   @js.native
   sealed trait password extends js.Object
@@ -156,7 +273,22 @@ object antdMobileRnStrings {
   sealed trait pointer extends js.Object
   
   @js.native
+  sealed trait polite extends js.Object
+  
+  @js.native
+  sealed trait `postal-code` extends js.Object
+  
+  @js.native
+  sealed trait postalCode extends js.Object
+  
+  @js.native
   sealed trait primary extends js.Object
+  
+  @js.native
+  sealed trait radiobutton_checked extends js.Object
+  
+  @js.native
+  sealed trait radiobutton_unchecked extends js.Object
   
   @js.native
   sealed trait right extends js.Object
@@ -171,6 +303,12 @@ object antdMobileRnStrings {
   sealed trait `secure-text` extends js.Object
   
   @js.native
+  sealed trait sentences extends js.Object
+  
+  @js.native
+  sealed trait simple extends js.Object
+  
+  @js.native
   sealed trait sm extends js.Object
   
   @js.native
@@ -180,7 +318,25 @@ object antdMobileRnStrings {
   sealed trait start extends js.Object
   
   @js.native
+  sealed trait `street-address` extends js.Object
+  
+  @js.native
+  sealed trait streetAddressLine1 extends js.Object
+  
+  @js.native
+  sealed trait streetAddressLine2 extends js.Object
+  
+  @js.native
   sealed trait stretch extends js.Object
+  
+  @js.native
+  sealed trait sublocality extends js.Object
+  
+  @js.native
+  sealed trait tel extends js.Object
+  
+  @js.native
+  sealed trait telephoneNumber extends js.Object
   
   @js.native
   sealed trait text extends js.Object
@@ -192,13 +348,25 @@ object antdMobileRnStrings {
   sealed trait top extends js.Object
   
   @js.native
+  sealed trait `unless-editing` extends js.Object
+  
+  @js.native
   sealed trait up extends js.Object
+  
+  @js.native
+  sealed trait username extends js.Object
   
   @js.native
   sealed trait vertical extends js.Object
   
   @js.native
   sealed trait warning extends js.Object
+  
+  @js.native
+  sealed trait `while-editing` extends js.Object
+  
+  @js.native
+  sealed trait words extends js.Object
   
   @js.native
   sealed trait wrap extends js.Object
@@ -217,6 +385,12 @@ object antdMobileRnStrings {
   
   @js.native
   sealed trait year extends js.Object
+  
+  @js.native
+  sealed trait yes extends js.Object
+  
+  @js.native
+  sealed trait yesExcludeDescendants extends js.Object
   
   @scala.inline
   def ActionSheet: ActionSheet = "ActionSheet".asInstanceOf[ActionSheet]
@@ -239,11 +413,27 @@ object antdMobileRnStrings {
   @scala.inline
   def `Tabs example`: `Tabs example` = "Tabs example".asInstanceOf[`Tabs example`]
   @scala.inline
+  def URL: URL = "URL".asInstanceOf[URL]
+  @scala.inline
   def _empty: _empty = "".asInstanceOf[_empty]
+  @scala.inline
+  def addressCity: addressCity = "addressCity".asInstanceOf[addressCity]
+  @scala.inline
+  def addressCityAndState: addressCityAndState = "addressCityAndState".asInstanceOf[addressCityAndState]
+  @scala.inline
+  def addressState: addressState = "addressState".asInstanceOf[addressState]
+  @scala.inline
+  def always: always = "always".asInstanceOf[always]
   @scala.inline
   def android: android = "android".asInstanceOf[android]
   @scala.inline
   def around: around = "around".asInstanceOf[around]
+  @scala.inline
+  def assertive: assertive = "assertive".asInstanceOf[assertive]
+  @scala.inline
+  def auto: auto = "auto".asInstanceOf[auto]
+  @scala.inline
+  def balanced: balanced = "balanced".asInstanceOf[balanced]
   @scala.inline
   def bankCard: bankCard = "bankCard".asInstanceOf[bankCard]
   @scala.inline
@@ -253,15 +443,37 @@ object antdMobileRnStrings {
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
   @scala.inline
+  def `box-none`: `box-none` = "box-none".asInstanceOf[`box-none`]
+  @scala.inline
+  def `box-only`: `box-only` = "box-only".asInstanceOf[`box-only`]
+  @scala.inline
   def button: button = "button".asInstanceOf[button]
   @scala.inline
+  def `cc-csc`: `cc-csc` = "cc-csc".asInstanceOf[`cc-csc`]
+  @scala.inline
+  def `cc-exp`: `cc-exp` = "cc-exp".asInstanceOf[`cc-exp`]
+  @scala.inline
+  def `cc-exp-month`: `cc-exp-month` = "cc-exp-month".asInstanceOf[`cc-exp-month`]
+  @scala.inline
+  def `cc-exp-year`: `cc-exp-year` = "cc-exp-year".asInstanceOf[`cc-exp-year`]
+  @scala.inline
+  def `cc-number`: `cc-number` = "cc-number".asInstanceOf[`cc-number`]
+  @scala.inline
   def center: center = "center".asInstanceOf[center]
+  @scala.inline
+  def characters: characters = "characters".asInstanceOf[characters]
   @scala.inline
   def closable: closable = "closable".asInstanceOf[closable]
   @scala.inline
   def column: column = "column".asInstanceOf[column]
   @scala.inline
   def `column-reverse`: `column-reverse` = "column-reverse".asInstanceOf[`column-reverse`]
+  @scala.inline
+  def countryName: countryName = "countryName".asInstanceOf[countryName]
+  @scala.inline
+  def creditCardNumber: creditCardNumber = "creditCardNumber".asInstanceOf[creditCardNumber]
+  @scala.inline
+  def dark: dark = "dark".asInstanceOf[dark]
   @scala.inline
   def date: date = "date".asInstanceOf[date]
   @scala.inline
@@ -273,17 +485,31 @@ object antdMobileRnStrings {
   @scala.inline
   def down: down = "down".asInstanceOf[down]
   @scala.inline
+  def email: email = "email".asInstanceOf[email]
+  @scala.inline
+  def emailAddress: emailAddress = "emailAddress".asInstanceOf[emailAddress]
+  @scala.inline
   def empty: empty = "empty".asInstanceOf[empty]
   @scala.inline
   def end: end = "end".asInstanceOf[end]
   @scala.inline
+  def familyName: familyName = "familyName".asInstanceOf[familyName]
+  @scala.inline
   def fixed: fixed = "fixed".asInstanceOf[fixed]
   @scala.inline
+  def fullStreetAddress: fullStreetAddress = "fullStreetAddress".asInstanceOf[fullStreetAddress]
+  @scala.inline
   def ghost: ghost = "ghost".asInstanceOf[ghost]
+  @scala.inline
+  def givenName: givenName = "givenName".asInstanceOf[givenName]
+  @scala.inline
+  def highQuality: highQuality = "highQuality".asInstanceOf[highQuality]
   @scala.inline
   def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   @scala.inline
   def ios: ios = "ios".asInstanceOf[ios]
+  @scala.inline
+  def jobTitle: jobTitle = "jobTitle".asInstanceOf[jobTitle]
   @scala.inline
   def large: large = "large".asInstanceOf[large]
   @scala.inline
@@ -291,7 +517,11 @@ object antdMobileRnStrings {
   @scala.inline
   def lg: lg = "lg".asInstanceOf[lg]
   @scala.inline
+  def light: light = "light".asInstanceOf[light]
+  @scala.inline
   def link: link = "link".asInstanceOf[link]
+  @scala.inline
+  def location: location = "location".asInstanceOf[location]
   @scala.inline
   def `login-password`: `login-password` = "login-password".asInstanceOf[`login-password`]
   @scala.inline
@@ -299,7 +529,29 @@ object antdMobileRnStrings {
   @scala.inline
   def middle: middle = "middle".asInstanceOf[middle]
   @scala.inline
+  def middleName: middleName = "middleName".asInstanceOf[middleName]
+  @scala.inline
   def month: month = "month".asInstanceOf[month]
+  @scala.inline
+  def name: name = "name".asInstanceOf[name]
+  @scala.inline
+  def namePrefix: namePrefix = "namePrefix".asInstanceOf[namePrefix]
+  @scala.inline
+  def nameSuffix: nameSuffix = "nameSuffix".asInstanceOf[nameSuffix]
+  @scala.inline
+  def never: never = "never".asInstanceOf[never]
+  @scala.inline
+  def newPassword: newPassword = "newPassword".asInstanceOf[newPassword]
+  @scala.inline
+  def nickname: nickname = "nickname".asInstanceOf[nickname]
+  @scala.inline
+  def no: no = "no".asInstanceOf[no]
+  @scala.inline
+  def `no-hide-descendants`: `no-hide-descendants` = "no-hide-descendants".asInstanceOf[`no-hide-descendants`]
+  @scala.inline
+  def noExcludeDescendants: noExcludeDescendants = "noExcludeDescendants".asInstanceOf[noExcludeDescendants]
+  @scala.inline
+  def none: none = "none".asInstanceOf[none]
   @scala.inline
   def normal: normal = "normal".asInstanceOf[normal]
   @scala.inline
@@ -307,11 +559,11 @@ object antdMobileRnStrings {
   @scala.inline
   def number: number = "number".asInstanceOf[number]
   @scala.inline
-  def onBlur: onBlur = "onBlur".asInstanceOf[onBlur]
+  def off: off = "off".asInstanceOf[off]
   @scala.inline
-  def onChange: onChange = "onChange".asInstanceOf[onChange]
+  def oneTimeCode: oneTimeCode = "oneTimeCode".asInstanceOf[oneTimeCode]
   @scala.inline
-  def onFocus: onFocus = "onFocus".asInstanceOf[onFocus]
+  def organizationName: organizationName = "organizationName".asInstanceOf[organizationName]
   @scala.inline
   def password: password = "password".asInstanceOf[password]
   @scala.inline
@@ -319,7 +571,17 @@ object antdMobileRnStrings {
   @scala.inline
   def pointer: pointer = "pointer".asInstanceOf[pointer]
   @scala.inline
+  def polite: polite = "polite".asInstanceOf[polite]
+  @scala.inline
+  def `postal-code`: `postal-code` = "postal-code".asInstanceOf[`postal-code`]
+  @scala.inline
+  def postalCode: postalCode = "postalCode".asInstanceOf[postalCode]
+  @scala.inline
   def primary: primary = "primary".asInstanceOf[primary]
+  @scala.inline
+  def radiobutton_checked: radiobutton_checked = "radiobutton_checked".asInstanceOf[radiobutton_checked]
+  @scala.inline
+  def radiobutton_unchecked: radiobutton_unchecked = "radiobutton_unchecked".asInstanceOf[radiobutton_unchecked]
   @scala.inline
   def right: right = "right".asInstanceOf[right]
   @scala.inline
@@ -329,13 +591,29 @@ object antdMobileRnStrings {
   @scala.inline
   def `secure-text`: `secure-text` = "secure-text".asInstanceOf[`secure-text`]
   @scala.inline
+  def sentences: sentences = "sentences".asInstanceOf[sentences]
+  @scala.inline
+  def simple: simple = "simple".asInstanceOf[simple]
+  @scala.inline
   def sm: sm = "sm".asInstanceOf[sm]
   @scala.inline
   def small: small = "small".asInstanceOf[small]
   @scala.inline
   def start: start = "start".asInstanceOf[start]
   @scala.inline
+  def `street-address`: `street-address` = "street-address".asInstanceOf[`street-address`]
+  @scala.inline
+  def streetAddressLine1: streetAddressLine1 = "streetAddressLine1".asInstanceOf[streetAddressLine1]
+  @scala.inline
+  def streetAddressLine2: streetAddressLine2 = "streetAddressLine2".asInstanceOf[streetAddressLine2]
+  @scala.inline
   def stretch: stretch = "stretch".asInstanceOf[stretch]
+  @scala.inline
+  def sublocality: sublocality = "sublocality".asInstanceOf[sublocality]
+  @scala.inline
+  def tel: tel = "tel".asInstanceOf[tel]
+  @scala.inline
+  def telephoneNumber: telephoneNumber = "telephoneNumber".asInstanceOf[telephoneNumber]
   @scala.inline
   def text: text = "text".asInstanceOf[text]
   @scala.inline
@@ -343,11 +621,19 @@ object antdMobileRnStrings {
   @scala.inline
   def top: top = "top".asInstanceOf[top]
   @scala.inline
+  def `unless-editing`: `unless-editing` = "unless-editing".asInstanceOf[`unless-editing`]
+  @scala.inline
   def up: up = "up".asInstanceOf[up]
+  @scala.inline
+  def username: username = "username".asInstanceOf[username]
   @scala.inline
   def vertical: vertical = "vertical".asInstanceOf[vertical]
   @scala.inline
   def warning: warning = "warning".asInstanceOf[warning]
+  @scala.inline
+  def `while-editing`: `while-editing` = "while-editing".asInstanceOf[`while-editing`]
+  @scala.inline
+  def words: words = "words".asInstanceOf[words]
   @scala.inline
   def wrap: wrap = "wrap".asInstanceOf[wrap]
   @scala.inline
@@ -360,5 +646,9 @@ object antdMobileRnStrings {
   def xxs: xxs = "xxs".asInstanceOf[xxs]
   @scala.inline
   def year: year = "year".asInstanceOf[year]
+  @scala.inline
+  def yes: yes = "yes".asInstanceOf[yes]
+  @scala.inline
+  def yesExcludeDescendants: yesExcludeDescendants = "yesExcludeDescendants".asInstanceOf[yesExcludeDescendants]
 }
 

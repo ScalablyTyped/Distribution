@@ -17,12 +17,12 @@ trait DescribeImageAttributeRequest extends js.Object {
   /**
     * The ID of the AMI.
     */
-  var ImageId: String = js.native
+  var ImageId: typings.awsSdk.ec2Mod.ImageId = js.native
 }
 
 object DescribeImageAttributeRequest {
   @scala.inline
-  def apply(Attribute: ImageAttributeName, ImageId: String, DryRun: js.UndefOr[scala.Boolean] = js.undefined): DescribeImageAttributeRequest = {
+  def apply(Attribute: ImageAttributeName, ImageId: ImageId, DryRun: js.UndefOr[scala.Boolean] = js.undefined): DescribeImageAttributeRequest = {
     val __obj = js.Dynamic.literal(Attribute = Attribute.asInstanceOf[js.Any], ImageId = ImageId.asInstanceOf[js.Any])
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeImageAttributeRequest]

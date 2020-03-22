@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "csw-aas-js" : "1.0.0"
+      "csw-aas-js" : "2.0.0-RC2"
     }
   ],
   "test-dependencies" : [
     {
-      "csw-aas-js" : "1.0.0"
+      "csw-aas-js" : "2.0.0-RC2"
     }
   ],
   "compile-devDependencies" : [

@@ -1,7 +1,7 @@
 
 # Scala.js typings for app-builder-lib
 
-Typings are for version 21.2.0
+Typings are for version 22.3.2
 
 ## Library description:
 electron-builder lib

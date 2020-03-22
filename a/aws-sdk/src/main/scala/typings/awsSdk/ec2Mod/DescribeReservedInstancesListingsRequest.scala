@@ -13,19 +13,19 @@ trait DescribeReservedInstancesListingsRequest extends js.Object {
   /**
     * One or more Reserved Instance IDs.
     */
-  var ReservedInstancesId: js.UndefOr[String] = js.native
+  var ReservedInstancesId: js.UndefOr[ReservationId] = js.native
   /**
     * One or more Reserved Instance listing IDs.
     */
-  var ReservedInstancesListingId: js.UndefOr[String] = js.native
+  var ReservedInstancesListingId: js.UndefOr[typings.awsSdk.ec2Mod.ReservedInstancesListingId] = js.native
 }
 
 object DescribeReservedInstancesListingsRequest {
   @scala.inline
   def apply(
     Filters: FilterList = null,
-    ReservedInstancesId: String = null,
-    ReservedInstancesListingId: String = null
+    ReservedInstancesId: ReservationId = null,
+    ReservedInstancesListingId: ReservedInstancesListingId = null
   ): DescribeReservedInstancesListingsRequest = {
     val __obj = js.Dynamic.literal()
     if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])

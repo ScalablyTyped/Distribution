@@ -1,6 +1,5 @@
 package typings.formatjsIntlUtils
 
-import typings.formatjsIntlUtils.diffMod.Thresholds
 import typings.formatjsIntlUtils.formatjsIntlUtilsStrings.boolean
 import typings.formatjsIntlUtils.formatjsIntlUtilsStrings.string
 import typings.formatjsIntlUtils.numberTypesMod.NumberFormatDigitInternalSlots
@@ -12,7 +11,6 @@ import typings.std.Date
 import typings.std.Error
 import typings.std.Exclude
 import typings.std.NonNullable
-import typings.std.Partial
 import typings.std.Pick
 import typings.std.Record
 import typings.std.WeakMap
@@ -29,7 +27,7 @@ object mod extends js.Object {
     */ typings.formatjsIntlUtils.formatjsIntlUtilsStrings.createResolveLocale with js.Any */](getDefaultLocale: js.Function0[String]): js.Function5[
     /* availableLocales */ js.Array[String], 
     /* requestedLocales */ js.Array[String], 
-    /* options */ AnonK, 
+    /* options */ AnonDictk, 
     /* relevantExtensionKeys */ js.Array[K], 
     /* localeData */ Record[String, D], 
     ResolveLocaleResult
@@ -87,18 +85,18 @@ object mod extends js.Object {
   def isMissingLocaleDataError(e: Error): /* is @formatjs/intl-utils.@formatjs/intl-utils/dist/resolve-locale.MissingLocaleDataError */ Boolean = js.native
   def isWellFormedCurrencyCode(currency: String): Boolean = js.native
   def objectIs(x: js.Any, y: js.Any): Boolean = js.native
-  def partitionPattern(pattern: String): js.Array[AnonTypeValue | AnonTypeValueString] = js.native
+  def partitionPattern(pattern: String): js.Array[AnonValue | AnonTypeValue] = js.native
   def removeUnitNamespace(unit: String): String = js.native
   def selectUnit(from: Double): AnonUnit = js.native
   def selectUnit(from: Double, to: Double): AnonUnit = js.native
-  def selectUnit(from: Double, to: Double, thresholds: Partial[Thresholds]): AnonUnit = js.native
+  def selectUnit(from: Double, to: Double, thresholds: PartialThresholds): AnonUnit = js.native
   def selectUnit(from: Double, to: Date): AnonUnit = js.native
-  def selectUnit(from: Double, to: Date, thresholds: Partial[Thresholds]): AnonUnit = js.native
+  def selectUnit(from: Double, to: Date, thresholds: PartialThresholds): AnonUnit = js.native
   def selectUnit(from: Date): AnonUnit = js.native
   def selectUnit(from: Date, to: Double): AnonUnit = js.native
-  def selectUnit(from: Date, to: Double, thresholds: Partial[Thresholds]): AnonUnit = js.native
+  def selectUnit(from: Date, to: Double, thresholds: PartialThresholds): AnonUnit = js.native
   def selectUnit(from: Date, to: Date): AnonUnit = js.native
-  def selectUnit(from: Date, to: Date, thresholds: Partial[Thresholds]): AnonUnit = js.native
+  def selectUnit(from: Date, to: Date, thresholds: PartialThresholds): AnonUnit = js.native
   def setInternalSlot[Instance /* <: js.Object */, Internal /* <: js.Object */, Field /* <: String */](
     map: WeakMap[Instance, Internal],
     pl: Instance,
@@ -114,7 +112,7 @@ object mod extends js.Object {
     mxfdDefault: Double
   ): Unit = js.native
   def supportedLocales(availableLocales: js.Array[String], requestedLocales: js.Array[String]): js.Array[String] = js.native
-  def supportedLocales(availableLocales: js.Array[String], requestedLocales: js.Array[String], options: AnonBestfit): js.Array[String] = js.native
+  def supportedLocales(availableLocales: js.Array[String], requestedLocales: js.Array[String], options: AnonLocaleMatcher): js.Array[String] = js.native
   def toObject[T](arg: T): T = js.native
   def toString(o: js.Any): String = js.native
   def unpackData[T /* <: Record[String, _] */](locale: String, localeData: LocaleData[T]): T = js.native

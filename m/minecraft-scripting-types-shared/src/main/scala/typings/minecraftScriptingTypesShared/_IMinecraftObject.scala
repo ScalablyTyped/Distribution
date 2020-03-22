@@ -16,32 +16,8 @@ trait _IMinecraftObject extends js.Object
 
 object _IMinecraftObject {
   @scala.inline
-  def IEntityTickingArea(__type__ : entity_ticking_area, entity_ticking_area_id: Int64): _IMinecraftObject = {
-    val __obj = js.Dynamic.literal(__type__ = __type__.asInstanceOf[js.Any], entity_ticking_area_id = entity_ticking_area_id.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[_IMinecraftObject]
-  }
-  @scala.inline
-  def IBlock(__identifier__ : String, __type__ : block, block_position: VectorXYZ, ticking_area: ITickingArea): _IMinecraftObject = {
-    val __obj = js.Dynamic.literal(__identifier__ = __identifier__.asInstanceOf[js.Any], __type__ = __type__.asInstanceOf[js.Any], block_position = block_position.asInstanceOf[js.Any], ticking_area = ticking_area.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[_IMinecraftObject]
-  }
-  @scala.inline
-  def IQuery(__type__ : query, query_id: Double): _IMinecraftObject = {
-    val __obj = js.Dynamic.literal(__type__ = __type__.asInstanceOf[js.Any], query_id = query_id.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[_IMinecraftObject]
-  }
-  @scala.inline
-  def IEntity(__identifier__ : String, __type__ : entity | item_entity, id: Double): _IMinecraftObject = {
-    val __obj = js.Dynamic.literal(__identifier__ = __identifier__.asInstanceOf[js.Any], __type__ = __type__.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[_IMinecraftObject]
-  }
-  @scala.inline
-  def ILevel(__type__ : level, level_id: Double): _IMinecraftObject = {
-    val __obj = js.Dynamic.literal(__type__ = __type__.asInstanceOf[js.Any], level_id = level_id.asInstanceOf[js.Any])
+  def ILevelTickingArea(__type__ : level_ticking_area, level_ticking_area_id: String): _IMinecraftObject = {
+    val __obj = js.Dynamic.literal(__type__ = __type__.asInstanceOf[js.Any], level_ticking_area_id = level_ticking_area_id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_IMinecraftObject]
   }
@@ -52,8 +28,32 @@ object _IMinecraftObject {
     __obj.asInstanceOf[_IMinecraftObject]
   }
   @scala.inline
-  def ILevelTickingArea(__type__ : level_ticking_area, level_ticking_area_id: String): _IMinecraftObject = {
-    val __obj = js.Dynamic.literal(__type__ = __type__.asInstanceOf[js.Any], level_ticking_area_id = level_ticking_area_id.asInstanceOf[js.Any])
+  def IEntity(__identifier__ : String, __type__ : entity | item_entity, id: Double): _IMinecraftObject = {
+    val __obj = js.Dynamic.literal(__identifier__ = __identifier__.asInstanceOf[js.Any], __type__ = __type__.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[_IMinecraftObject]
+  }
+  @scala.inline
+  def IEntityTickingArea(__type__ : entity_ticking_area, entity_ticking_area_id: Int64): _IMinecraftObject = {
+    val __obj = js.Dynamic.literal(__type__ = __type__.asInstanceOf[js.Any], entity_ticking_area_id = entity_ticking_area_id.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[_IMinecraftObject]
+  }
+  @scala.inline
+  def IQuery(__type__ : query, query_id: Double): _IMinecraftObject = {
+    val __obj = js.Dynamic.literal(__type__ = __type__.asInstanceOf[js.Any], query_id = query_id.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[_IMinecraftObject]
+  }
+  @scala.inline
+  def IBlock(__identifier__ : String, __type__ : block, block_position: VectorXYZ, ticking_area: ITickingArea): _IMinecraftObject = {
+    val __obj = js.Dynamic.literal(__identifier__ = __identifier__.asInstanceOf[js.Any], __type__ = __type__.asInstanceOf[js.Any], block_position = block_position.asInstanceOf[js.Any], ticking_area = ticking_area.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[_IMinecraftObject]
+  }
+  @scala.inline
+  def ILevel(__type__ : level, level_id: Double): _IMinecraftObject = {
+    val __obj = js.Dynamic.literal(__type__ = __type__.asInstanceOf[js.Any], level_id = level_id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_IMinecraftObject]
   }

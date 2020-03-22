@@ -1,7 +1,7 @@
 package typings.firefoxWebextBrowser.browser.webRequest
 
 import org.scalablytyped.runtime.TopLevel
-import typings.firefoxWebextBrowser.AnonCookieStoreIdDocumentUrlFrameIdFromCacheIncognito
+import typings.firefoxWebextBrowser.AnonIp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,9 +10,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("browser.webRequest.onBeforeRedirect")
 @js.native
 object onBeforeRedirect
-  extends TopLevel[
-      WebRequestOnBeforeRedirectEvent[
-        js.Function1[/* details */ AnonCookieStoreIdDocumentUrlFrameIdFromCacheIncognito, Unit]
-      ]
-    ]
+  extends TopLevel[WebRequestOnBeforeRedirectEvent[js.Function1[/* details */ AnonIp, Unit]]]
 

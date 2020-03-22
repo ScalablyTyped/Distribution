@@ -2,7 +2,7 @@ package typings.winrtUwp.Windows.ApplicationModel.Resources.Core
 
 import typings.std.Array
 import typings.winrtUwp.AnonIndex
-import typings.winrtUwp.AnonItemsReturnValueArray
+import typings.winrtUwp.AnonItemsArray
 import typings.winrtUwp.Windows.Foundation.Collections.IIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -29,7 +29,7 @@ abstract class ResourceContextLanguagesVectorView () extends Array[String] {
     * Returns the ResourceContext language qualifiers that start at the specified index in the set.
     * @param startIndex The zero-based index of the start of the ResourceContext language qualifiers in the set to return.
     */
-  def getMany(startIndex: Double): AnonItemsReturnValueArray = js.native
+  def getMany(startIndex: Double): AnonItemsArray = js.native
   def indexOf(value: String, extra: js.Any*): AnonIndex = js.native
   /* hack */
   @JSName("indexOf")

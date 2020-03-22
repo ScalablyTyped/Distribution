@@ -2,7 +2,7 @@ package typings.googleapis.customsearchV1Mod.customsearchV1
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.googleapis.AnonByteSize
-import typings.googleapis.AnonDisplayNameLabelwithop
+import typings.googleapis.AnonLabelwithop
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +18,7 @@ trait SchemaResult extends js.Object {
   var htmlTitle: js.UndefOr[String] = js.native
   var image: js.UndefOr[AnonByteSize] = js.native
   var kind: js.UndefOr[String] = js.native
-  var labels: js.UndefOr[js.Array[AnonDisplayNameLabelwithop]] = js.native
+  var labels: js.UndefOr[js.Array[AnonLabelwithop]] = js.native
   var link: js.UndefOr[String] = js.native
   var mime: js.UndefOr[String] = js.native
   var pagemap: js.UndefOr[StringDictionary[js.Array[StringDictionary[_]]]] = js.native
@@ -38,7 +38,7 @@ object SchemaResult {
     htmlTitle: String = null,
     image: AnonByteSize = null,
     kind: String = null,
-    labels: js.Array[AnonDisplayNameLabelwithop] = null,
+    labels: js.Array[AnonLabelwithop] = null,
     link: String = null,
     mime: String = null,
     pagemap: StringDictionary[js.Array[StringDictionary[_]]] = null,

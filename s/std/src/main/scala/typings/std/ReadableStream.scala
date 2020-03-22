@@ -14,7 +14,7 @@ trait ReadableStream[R] extends js.Object {
   def cancel(): js.Promise[Unit] = js.native
   def cancel(reason: js.Any): js.Promise[Unit] = js.native
   def getReader(): ReadableStreamDefaultReader[R] = js.native
-  def getReader(options: AnonByob): ReadableStreamBYOBReader = js.native
+  def getReader(options: AnonMode): ReadableStreamBYOBReader = js.native
   def pipeThrough[T](hasWritableReadable: AnonReadable[R, T]): ReadableStream[T] = js.native
   def pipeThrough[T](hasWritableReadable: AnonReadable[R, T], options: PipeOptions): ReadableStream[T] = js.native
   def pipeTo(dest: WritableStream[R]): js.Promise[Unit] = js.native
@@ -32,7 +32,7 @@ object ReadableStream
     ]
      with Instantiable2[
       (/* underlyingSource */ UnderlyingByteSource) | (/* underlyingSource */ UnderlyingSource[js.Object]), 
-      (/* strategy */ AnonHighWaterMarkSize) | (/* strategy */ QueuingStrategy[js.Object]), 
+      (/* strategy */ AnonSize) | (/* strategy */ QueuingStrategy[js.Object]), 
       ReadableStream[js.Object | Uint8Array]
     ]
 

@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ProfilingStatus extends js.Object {
   /**
-    * Timestamp of when the last interaction of the agent with configureAgent API for orchestration.
+    * The time, in milliseconds since the epoch, when the latest agent was orchestrated.
     */
   var latestAgentOrchestratedAt: js.UndefOr[Timestamp] = js.native
   /**
-    * Timestamp of when the latest agent profile was successfully reported.
+    * The time, in milliseconds since the epoch, when the latest agent was reported..
     */
   var latestAgentProfileReportedAt: js.UndefOr[Timestamp] = js.native
   /**
-    * The time range of latest aggregated profile available.
+    * The latest aggregated profile
     */
   var latestAggregatedProfile: js.UndefOr[AggregatedProfileTime] = js.native
 }

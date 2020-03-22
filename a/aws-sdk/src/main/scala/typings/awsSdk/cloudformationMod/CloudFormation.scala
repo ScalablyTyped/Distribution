@@ -1,6 +1,8 @@
 package typings.awsSdk.cloudformationMod
 
-import typings.awsSdk.AnonWaiter
+import typings.awsSdk.DescribeChangeSetInputwai
+import typings.awsSdk.DescribeStacksInputwaiter
+import typings.awsSdk.DescribeTypeRegistrationI
 import typings.awsSdk.awsSdkStrings.changeSetCreateComplete
 import typings.awsSdk.awsSdkStrings.stackCreateComplete
 import typings.awsSdk.awsSdkStrings.stackDeleteComplete
@@ -748,11 +750,11 @@ trait CloudFormation extends Service {
     * Waits for the changeSetCreateComplete state by periodically calling the underlying CloudFormation.describeChangeSetoperation every 30 seconds (at most 120 times). Wait until change set status is CREATE_COMPLETE.
     */
   @JSName("waitFor")
-  def waitFor_changeSetCreateComplete(state: changeSetCreateComplete, params: DescribeChangeSetInput with AnonWaiter): Request[DescribeChangeSetOutput, AWSError] = js.native
+  def waitFor_changeSetCreateComplete(state: changeSetCreateComplete, params: DescribeChangeSetInputwai): Request[DescribeChangeSetOutput, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_changeSetCreateComplete(
     state: changeSetCreateComplete,
-    params: DescribeChangeSetInput with AnonWaiter,
+    params: DescribeChangeSetInputwai,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeChangeSetOutput, Unit]
   ): Request[DescribeChangeSetOutput, AWSError] = js.native
   /**
@@ -769,11 +771,11 @@ trait CloudFormation extends Service {
     * Waits for the stackCreateComplete state by periodically calling the underlying CloudFormation.describeStacksoperation every 30 seconds (at most 120 times). Wait until stack status is CREATE_COMPLETE.
     */
   @JSName("waitFor")
-  def waitFor_stackCreateComplete(state: stackCreateComplete, params: DescribeStacksInput with AnonWaiter): Request[DescribeStacksOutput, AWSError] = js.native
+  def waitFor_stackCreateComplete(state: stackCreateComplete, params: DescribeStacksInputwaiter): Request[DescribeStacksOutput, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_stackCreateComplete(
     state: stackCreateComplete,
-    params: DescribeStacksInput with AnonWaiter,
+    params: DescribeStacksInputwaiter,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeStacksOutput, Unit]
   ): Request[DescribeStacksOutput, AWSError] = js.native
   /**
@@ -790,11 +792,11 @@ trait CloudFormation extends Service {
     * Waits for the stackDeleteComplete state by periodically calling the underlying CloudFormation.describeStacksoperation every 30 seconds (at most 120 times). Wait until stack status is DELETE_COMPLETE.
     */
   @JSName("waitFor")
-  def waitFor_stackDeleteComplete(state: stackDeleteComplete, params: DescribeStacksInput with AnonWaiter): Request[DescribeStacksOutput, AWSError] = js.native
+  def waitFor_stackDeleteComplete(state: stackDeleteComplete, params: DescribeStacksInputwaiter): Request[DescribeStacksOutput, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_stackDeleteComplete(
     state: stackDeleteComplete,
-    params: DescribeStacksInput with AnonWaiter,
+    params: DescribeStacksInputwaiter,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeStacksOutput, Unit]
   ): Request[DescribeStacksOutput, AWSError] = js.native
   /**
@@ -811,11 +813,11 @@ trait CloudFormation extends Service {
     * Waits for the stackExists state by periodically calling the underlying CloudFormation.describeStacksoperation every 5 seconds (at most 20 times).
     */
   @JSName("waitFor")
-  def waitFor_stackExists(state: stackExists, params: DescribeStacksInput with AnonWaiter): Request[DescribeStacksOutput, AWSError] = js.native
+  def waitFor_stackExists(state: stackExists, params: DescribeStacksInputwaiter): Request[DescribeStacksOutput, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_stackExists(
     state: stackExists,
-    params: DescribeStacksInput with AnonWaiter,
+    params: DescribeStacksInputwaiter,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeStacksOutput, Unit]
   ): Request[DescribeStacksOutput, AWSError] = js.native
   /**
@@ -832,11 +834,11 @@ trait CloudFormation extends Service {
     * Waits for the stackImportComplete state by periodically calling the underlying CloudFormation.describeStacksoperation every 30 seconds (at most 120 times). Wait until stack status is IMPORT_COMPLETE.
     */
   @JSName("waitFor")
-  def waitFor_stackImportComplete(state: stackImportComplete, params: DescribeStacksInput with AnonWaiter): Request[DescribeStacksOutput, AWSError] = js.native
+  def waitFor_stackImportComplete(state: stackImportComplete, params: DescribeStacksInputwaiter): Request[DescribeStacksOutput, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_stackImportComplete(
     state: stackImportComplete,
-    params: DescribeStacksInput with AnonWaiter,
+    params: DescribeStacksInputwaiter,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeStacksOutput, Unit]
   ): Request[DescribeStacksOutput, AWSError] = js.native
   /**
@@ -853,11 +855,11 @@ trait CloudFormation extends Service {
     * Waits for the stackUpdateComplete state by periodically calling the underlying CloudFormation.describeStacksoperation every 30 seconds (at most 120 times). Wait until stack status is UPDATE_COMPLETE.
     */
   @JSName("waitFor")
-  def waitFor_stackUpdateComplete(state: stackUpdateComplete, params: DescribeStacksInput with AnonWaiter): Request[DescribeStacksOutput, AWSError] = js.native
+  def waitFor_stackUpdateComplete(state: stackUpdateComplete, params: DescribeStacksInputwaiter): Request[DescribeStacksOutput, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_stackUpdateComplete(
     state: stackUpdateComplete,
-    params: DescribeStacksInput with AnonWaiter,
+    params: DescribeStacksInputwaiter,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeStacksOutput, Unit]
   ): Request[DescribeStacksOutput, AWSError] = js.native
   /**
@@ -874,11 +876,11 @@ trait CloudFormation extends Service {
     * Waits for the typeRegistrationComplete state by periodically calling the underlying CloudFormation.describeTypeRegistrationoperation every 30 seconds (at most 120 times). Wait until type registration is COMPLETE.
     */
   @JSName("waitFor")
-  def waitFor_typeRegistrationComplete(state: typeRegistrationComplete, params: DescribeTypeRegistrationInput with AnonWaiter): Request[DescribeTypeRegistrationOutput, AWSError] = js.native
+  def waitFor_typeRegistrationComplete(state: typeRegistrationComplete, params: DescribeTypeRegistrationI): Request[DescribeTypeRegistrationOutput, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_typeRegistrationComplete(
     state: typeRegistrationComplete,
-    params: DescribeTypeRegistrationInput with AnonWaiter,
+    params: DescribeTypeRegistrationI,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeTypeRegistrationOutput, Unit]
   ): Request[DescribeTypeRegistrationOutput, AWSError] = js.native
 }

@@ -1,6 +1,6 @@
 package typings.officeJsPreview.Excel
 
-import typings.officeJsPreview.AnonColumnWidthNumber
+import typings.officeJsPreview.CellPropertiesFormatcolum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,14 +26,14 @@ trait SettableColumnProperties extends SettableCellProperties {
     * [Api set: ExcelApi 1.9]
     */
   @JSName("format")
-  var format_SettableColumnProperties: js.UndefOr[CellPropertiesFormat with AnonColumnWidthNumber] = js.undefined
+  var format_SettableColumnProperties: js.UndefOr[CellPropertiesFormatcolum] = js.undefined
 }
 
 object SettableColumnProperties {
   @scala.inline
   def apply(
     columnHidden: js.UndefOr[Boolean] = js.undefined,
-    format: CellPropertiesFormat with AnonColumnWidthNumber = null,
+    format: CellPropertiesFormatcolum = null,
     hyperlink: RangeHyperlink = null,
     style: String = null
   ): SettableColumnProperties = {

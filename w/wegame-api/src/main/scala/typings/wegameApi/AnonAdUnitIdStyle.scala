@@ -1,23 +1,24 @@
 package typings.wegameApi
 
+import typings.wegameApi.wx.types.AdStyle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonAdUnitIdStyle extends js.Object {
   /**
-    * 推荐单元 id
+    * 广告单元 id
     */
   var adUnitId: String
   /**
-    * 小游戏推荐banner组件样式
+    * banner 广告组件的样式
     */
-  var style: AnonLeft
+  var style: AdStyle
 }
 
 object AnonAdUnitIdStyle {
   @scala.inline
-  def apply(adUnitId: String, style: AnonLeft): AnonAdUnitIdStyle = {
+  def apply(adUnitId: String, style: AdStyle): AnonAdUnitIdStyle = {
     val __obj = js.Dynamic.literal(adUnitId = adUnitId.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AnonAdUnitIdStyle]

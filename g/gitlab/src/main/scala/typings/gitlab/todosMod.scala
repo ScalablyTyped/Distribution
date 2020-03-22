@@ -19,7 +19,7 @@ object todosMod extends js.Object {
     def create(projectId: String, mergerequestId: Double, options: Sudo): js.Promise[js.Object] = js.native
     def create(projectId: Double, mergerequestId: Double): js.Promise[js.Object] = js.native
     def create(projectId: Double, mergerequestId: Double, options: Sudo): js.Promise[js.Object] = js.native
-    def done(hasTodoIdOptions: AnonTodoId with Sudo): js.Promise[js.Object] = js.native
+    def done(hasTodoIdOptions: todoIdnumberSudo): js.Promise[js.Object] = js.native
   }
   
 }

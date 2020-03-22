@@ -1,7 +1,6 @@
 package typings.officeUiFabricReact.mod
 
-import typings.officeUiFabricReact.AnonKey
-import typings.officeUiFabricReact.peoplePickerMod.IGenericItem
+import typings.officeUiFabricReact.IGenericItemkeyKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,6 +11,6 @@ object createGenericItem extends js.Object {
   def apply(
     name: String,
     currentValidationState: typings.officeUiFabricReact.basePickerTypesMod.ValidationState
-  ): IGenericItem with AnonKey = js.native
+  ): IGenericItemkeyKey = js.native
 }
 

@@ -10,8 +10,8 @@ object functionStateMapMod extends js.Object {
   @js.native
   object default extends js.Object {
     var pauseVideo: AnonAcceptableStates = js.native
-    var playVideo: AnonAcceptableStatesFalse = js.native
-    var seekTo: Anon3000 = js.native
+    var playVideo: AnonStateChangeRequired = js.native
+    var seekTo: AnonTimeout = js.native
   }
   
 }

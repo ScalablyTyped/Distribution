@@ -20,7 +20,8 @@ import typings.gaxios.gaxiosStrings.json
 import typings.gaxios.gaxiosStrings.stream
 import typings.gaxios.gaxiosStrings.text
 import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.node.httpsMod.Agent
+import typings.node.httpMod.Agent
+import typings.node.urlMod.URL_
 import typings.std.AbortSignal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -34,7 +35,7 @@ object ServiceOptions {
   @scala.inline
   def apply(
     adapter: /* options */ GaxiosOptions => GaxiosPromise[_] = null,
-    agent: Agent = null,
+    agent: Agent | (js.Function1[/* parsedUrl */ URL_, Agent]) = null,
     auth: OAuth2Client | String = null,
     baseURL: String = null,
     baseUrl: String = null,

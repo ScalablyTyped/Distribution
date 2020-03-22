@@ -1,6 +1,6 @@
 package typings.firefoxWebextBrowser.browser.contextualIdentities
 
-import typings.firefoxWebextBrowser.AnonColorIcon
+import typings.firefoxWebextBrowser.AnonIcon
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,6 +13,6 @@ object update extends js.Object {
     * @param cookieStoreId The ID of the contextual identity cookie store.
     * @param details Details about the contextual identity being created.
     */
-  def apply(cookieStoreId: String, details: AnonColorIcon): js.Promise[ContextualIdentity] = js.native
+  def apply(cookieStoreId: String, details: AnonIcon): js.Promise[ContextualIdentity] = js.native
 }
 

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object mod {
   type TypeCast = scala.Boolean | (js.Function2[
-    /* field */ typings.mysql.mod.FieldInfo with typings.mysql.AnonBuffer, 
+    /* field */ typings.mysql.FieldInfotypestringlength, 
     /* next */ js.Function0[scala.Unit], 
     js.Any
   ])

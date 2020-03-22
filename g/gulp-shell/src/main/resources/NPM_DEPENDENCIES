@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "gulp-shell" : "0.7.1"
+      "gulp-shell" : "0.8.0"
     }
   ],
   "test-dependencies" : [
     {
-      "gulp-shell" : "0.7.1"
+      "gulp-shell" : "0.8.0"
     }
   ],
   "compile-devDependencies" : [

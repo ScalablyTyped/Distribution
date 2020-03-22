@@ -10,7 +10,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object serializersTypesStringLiteralMod extends js.Object {
   @js.native
-  class StringLiteralTypeSerializer () extends TypeSerializerComponent[StringLiteralType]
+  class StringLiteralTypeSerializer () extends TypeSerializerComponent[StringLiteralType] {
+    def toObject(`type`: StringLiteralType, obj: PickStringLiteralTypetype): typings.typedoc.schemaMod.StringLiteralType = js.native
+  }
   
 }
 

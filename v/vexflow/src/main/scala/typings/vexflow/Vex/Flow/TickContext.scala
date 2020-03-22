@@ -1,7 +1,7 @@
 package typings.vexflow.Vex.Flow
 
 import typings.vexflow.AnonExtraLeft
-import typings.vexflow.AnonExtraLeftPxExtraRightPx
+import typings.vexflow.AnonExtraRightPx
 import typings.vexflow.Vex.IRenderContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,7 +16,7 @@ class TickContext () extends js.Object {
   def getCurrentTick(): Fraction = js.native
   def getExtraPx(): AnonExtraLeft = js.native
   def getMaxTicks(): Double = js.native
-  def getMetrics(): AnonExtraLeftPxExtraRightPx = js.native
+  def getMetrics(): AnonExtraRightPx = js.native
   def getMinTicks(): Double = js.native
   def getPixelsUsed(): Double = js.native
   def getTickables(): js.Array[Tickable] = js.native

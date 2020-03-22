@@ -1,5 +1,6 @@
 package typings.ionicCore
 
+import typings.ionicCore.componentsMod._Global_.HTMLIonSegmentElement
 import typings.ionicCore.elementInterfaceMod.ButtonInterface
 import typings.ionicCore.ionicCoreStrings.button
 import typings.ionicCore.ionicCoreStrings.reset
@@ -29,6 +30,7 @@ object menuButtonMod extends js.Object {
     var color: js.UndefOr[Color] = js.native
     /* CompleteClass */
     override var disabled: Boolean = js.native
+    var el: HTMLIonSegmentElement = js.native
     /**
       * Optional property that maps to a Menu's `menuId` prop. Can also be `start` or `end` for the menu side. This is used to find the correct menu to toggle
       */

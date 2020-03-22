@@ -4,8 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SeparatorProps extends js.Object {
-  var force: js.UndefOr[Boolean] = js.undefined
+  var force: js.UndefOr[Boolean] = js.native
 }
 
 object SeparatorProps {

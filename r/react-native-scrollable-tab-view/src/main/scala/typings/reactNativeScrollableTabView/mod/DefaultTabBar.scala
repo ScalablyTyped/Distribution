@@ -1,6 +1,7 @@
 package typings.reactNativeScrollableTabView.mod
 
 import typings.react.mod.Component
+import typings.reactNativeScrollableTabView.TabBarPropsDefaultTabBarP
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,5 +9,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-native-scrollable-tab-view", "DefaultTabBar")
 @js.native
 class DefaultTabBar ()
-  extends Component[TabBarProps[DefaultTabBarProps], js.Object, js.Any]
+  extends Component[TabBarPropsDefaultTabBarP, js.Object, js.Any]
 

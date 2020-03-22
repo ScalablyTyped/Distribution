@@ -4,8 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AnonDisabled extends js.Object {
-  var disabled: Boolean
+  var disabled: Boolean = js.native
 }
 
 object AnonDisabled {

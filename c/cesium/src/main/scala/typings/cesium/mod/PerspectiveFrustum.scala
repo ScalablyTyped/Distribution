@@ -1,6 +1,6 @@
 package typings.cesium.mod
 
-import typings.cesium.AnonAspectRatioFar
+import typings.cesium.AnonFar
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("cesium", "PerspectiveFrustum")
 @js.native
 class PerspectiveFrustum () extends Frustum {
-  def this(options: AnonAspectRatioFar) = this()
+  def this(options: AnonFar) = this()
   var aspectRatio: Double = js.native
   var fov: Double = js.native
   val fovy: Double = js.native

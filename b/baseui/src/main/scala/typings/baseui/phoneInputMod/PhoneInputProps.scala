@@ -5,6 +5,7 @@ import typings.baseui.baseuiStrings.compact
 import typings.baseui.baseuiStrings.default_
 import typings.baseui.baseuiStrings.large_
 import typings.baseui.baseuiStrings.left
+import typings.baseui.baseuiStrings.mini
 import typings.baseui.baseuiStrings.none
 import typings.baseui.baseuiStrings.right
 import typings.baseui.inputMod.InputProps
@@ -70,7 +71,7 @@ object PhoneInputProps {
     positive: js.UndefOr[Boolean] = js.undefined,
     required: js.UndefOr[Boolean] = js.undefined,
     rows: Int | Double = null,
-    size: default_ | compact | large_ = null,
+    size: mini | default_ | compact | large_ = null,
     startEnhancer: (js.Function1[/* args */ SharedProps, ReactNode]) | ReactNode = null,
     text: String = null,
     `type`: String = null,

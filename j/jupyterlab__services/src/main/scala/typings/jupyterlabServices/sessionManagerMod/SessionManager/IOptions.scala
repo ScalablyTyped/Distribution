@@ -1,7 +1,8 @@
 package typings.jupyterlabServices.sessionManagerMod.SessionManager
 
-import typings.jupyterlabCoreutils.pollMod.Poll.Standby
+import typings.jupyterlabServices.kernelKernelMod.IManager
 import typings.jupyterlabServices.serverconnectionMod.ServerConnection.ISettings
+import typings.luminoPolling.pollMod.Poll.Standby
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,11 +10,12 @@ import scala.scalajs.js.annotation._
 /**
   * The options used to initialize a SessionManager.
   */
-trait IOptions extends js.Object {
+trait IOptions
+  extends typings.jupyterlabServices.basemanagerMod.BaseManager.IOptions {
   /**
-    * The server settings for the manager.
+    * Kernel Manager
     */
-  var serverSettings: js.UndefOr[ISettings] = js.undefined
+  var kernelManager: IManager
   /**
     * When the manager stops polling the API. Defaults to `when-hidden`.
     */
@@ -22,8 +24,8 @@ trait IOptions extends js.Object {
 
 object IOptions {
   @scala.inline
-  def apply(serverSettings: ISettings = null, standby: Standby = null): IOptions = {
-    val __obj = js.Dynamic.literal()
+  def apply(kernelManager: IManager, serverSettings: ISettings = null, standby: Standby = null): IOptions = {
+    val __obj = js.Dynamic.literal(kernelManager = kernelManager.asInstanceOf[js.Any])
     if (serverSettings != null) __obj.updateDynamic("serverSettings")(serverSettings.asInstanceOf[js.Any])
     if (standby != null) __obj.updateDynamic("standby")(standby.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]

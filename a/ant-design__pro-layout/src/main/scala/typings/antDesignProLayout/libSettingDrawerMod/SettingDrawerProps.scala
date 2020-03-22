@@ -1,6 +1,6 @@
 package typings.antDesignProLayout.libSettingDrawerMod
 
-import typings.antDesignProLayout.MergerSettingsTypeSettings
+import typings.antDesignProLayout.MergerSettingsTypeSetting
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,9 +13,9 @@ trait SettingDrawerProps extends js.Object {
   var hideHintAlert: js.UndefOr[Boolean] = js.undefined
   var hideLoading: js.UndefOr[Boolean] = js.undefined
   var onCollapseChange: js.UndefOr[js.Function1[/* collapse */ Boolean, Unit]] = js.undefined
-  var onSettingChange: js.UndefOr[js.Function1[/* settings */ MergerSettingsTypeSettings, Unit]] = js.undefined
+  var onSettingChange: js.UndefOr[js.Function1[/* settings */ MergerSettingsTypeSetting, Unit]] = js.undefined
   var publicPath: js.UndefOr[String] = js.undefined
-  var settings: js.UndefOr[MergerSettingsTypeSettings] = js.undefined
+  var settings: js.UndefOr[MergerSettingsTypeSetting] = js.undefined
 }
 
 object SettingDrawerProps {
@@ -28,9 +28,9 @@ object SettingDrawerProps {
     hideHintAlert: js.UndefOr[Boolean] = js.undefined,
     hideLoading: js.UndefOr[Boolean] = js.undefined,
     onCollapseChange: /* collapse */ Boolean => Unit = null,
-    onSettingChange: /* settings */ MergerSettingsTypeSettings => Unit = null,
+    onSettingChange: /* settings */ MergerSettingsTypeSetting => Unit = null,
     publicPath: String = null,
-    settings: MergerSettingsTypeSettings = null
+    settings: MergerSettingsTypeSetting = null
   ): SettingDrawerProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(collapse)) __obj.updateDynamic("collapse")(collapse.asInstanceOf[js.Any])

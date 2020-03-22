@@ -6,10 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object mod {
   type DefaultParams = org.scalablytyped.runtime.StringDictionary[java.lang.String]
-  type LinkProps = (typings.std.Omit[
-    typings.react.mod.AnchorHTMLAttributes[typings.std.HTMLAnchorElement], 
-    typings.wouter.wouterStrings.href
-  ]) with typings.wouter.mod.NavigationalProps
+  type LinkProps = typings.wouter.OmitAnchorHTMLAttributesH with typings.wouter.mod.NavigationalProps
   type LocationHook = js.Function1[
     /* options */ js.UndefOr[typings.wouter.mod.LocationHookOptions], 
     typings.wouter.mod.LocationTuple

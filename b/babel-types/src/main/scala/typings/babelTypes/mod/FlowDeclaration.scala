@@ -26,21 +26,17 @@ trait FlowDeclaration extends js.Object
 
 object FlowDeclaration {
   @scala.inline
-  def DeclareClass_(
-    body: ObjectTypeAnnotation_,
+  def DeclareVariable_(
     end: Double,
-    `extends`: js.Array[InterfaceExtends_],
     id: Identifier_,
     loc: SourceLocation,
     start: Double,
-    `type`: DeclareClass,
-    typeParameters: TypeParameterDeclaration_,
+    `type`: DeclareVariable,
     innerComments: js.Array[Comment] = null,
     leadingComments: js.Array[Comment] = null,
     trailingComments: js.Array[Comment] = null
   ): FlowDeclaration = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], typeParameters = typeParameters.asInstanceOf[js.Any])
-    __obj.updateDynamic("extends")(`extends`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
@@ -72,24 +68,6 @@ object FlowDeclaration {
     __obj.asInstanceOf[FlowDeclaration]
   }
   @scala.inline
-  def DeclareFunction_(
-    end: Double,
-    id: Identifier_,
-    loc: SourceLocation,
-    start: Double,
-    `type`: DeclareFunction,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    trailingComments: js.Array[Comment] = null
-  ): FlowDeclaration = {
-    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FlowDeclaration]
-  }
-  @scala.inline
   def DeclareModule_(
     body: BlockStatement_,
     end: Double,
@@ -109,17 +87,61 @@ object FlowDeclaration {
     __obj.asInstanceOf[FlowDeclaration]
   }
   @scala.inline
-  def DeclareVariable_(
+  def DeclareFunction_(
     end: Double,
     id: Identifier_,
     loc: SourceLocation,
     start: Double,
-    `type`: DeclareVariable,
+    `type`: DeclareFunction,
     innerComments: js.Array[Comment] = null,
     leadingComments: js.Array[Comment] = null,
     trailingComments: js.Array[Comment] = null
   ): FlowDeclaration = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
+    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
+    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FlowDeclaration]
+  }
+  @scala.inline
+  def DeclareClass_(
+    body: ObjectTypeAnnotation_,
+    end: Double,
+    `extends`: js.Array[InterfaceExtends_],
+    id: Identifier_,
+    loc: SourceLocation,
+    start: Double,
+    `type`: DeclareClass,
+    typeParameters: TypeParameterDeclaration_,
+    innerComments: js.Array[Comment] = null,
+    leadingComments: js.Array[Comment] = null,
+    trailingComments: js.Array[Comment] = null
+  ): FlowDeclaration = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], typeParameters = typeParameters.asInstanceOf[js.Any])
+    __obj.updateDynamic("extends")(`extends`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
+    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
+    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FlowDeclaration]
+  }
+  @scala.inline
+  def DeclareInterface_(
+    body: ObjectTypeAnnotation_,
+    end: Double,
+    `extends`: js.Array[InterfaceExtends_],
+    id: Identifier_,
+    loc: SourceLocation,
+    start: Double,
+    `type`: DeclareInterface,
+    typeParameters: TypeParameterDeclaration_,
+    innerComments: js.Array[Comment] = null,
+    leadingComments: js.Array[Comment] = null,
+    trailingComments: js.Array[Comment] = null
+  ): FlowDeclaration = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], typeParameters = typeParameters.asInstanceOf[js.Any])
+    __obj.updateDynamic("extends")(`extends`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
@@ -160,28 +182,6 @@ object FlowDeclaration {
     trailingComments: js.Array[Comment] = null
   ): FlowDeclaration = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], typeParameters = typeParameters.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FlowDeclaration]
-  }
-  @scala.inline
-  def DeclareInterface_(
-    body: ObjectTypeAnnotation_,
-    end: Double,
-    `extends`: js.Array[InterfaceExtends_],
-    id: Identifier_,
-    loc: SourceLocation,
-    start: Double,
-    `type`: DeclareInterface,
-    typeParameters: TypeParameterDeclaration_,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    trailingComments: js.Array[Comment] = null
-  ): FlowDeclaration = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], typeParameters = typeParameters.asInstanceOf[js.Any])
-    __obj.updateDynamic("extends")(`extends`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])

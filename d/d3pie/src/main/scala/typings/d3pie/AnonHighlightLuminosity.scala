@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 trait AnonHighlightLuminosity extends js.Object {
   var highlightLuminosity: js.UndefOr[Double] = js.undefined
   var highlightSegmentOnMouseover: js.UndefOr[Boolean] = js.undefined
-  var load: js.UndefOr[AnonDefault] = js.undefined
-  var pullOutSegmentOnClick: js.UndefOr[AnonBack] = js.undefined
+  var load: js.UndefOr[AnonEffect] = js.undefined
+  var pullOutSegmentOnClick: js.UndefOr[AnonSize] = js.undefined
 }
 
 object AnonHighlightLuminosity {
@@ -16,8 +16,8 @@ object AnonHighlightLuminosity {
   def apply(
     highlightLuminosity: Int | Double = null,
     highlightSegmentOnMouseover: js.UndefOr[Boolean] = js.undefined,
-    load: AnonDefault = null,
-    pullOutSegmentOnClick: AnonBack = null
+    load: AnonEffect = null,
+    pullOutSegmentOnClick: AnonSize = null
   ): AnonHighlightLuminosity = {
     val __obj = js.Dynamic.literal()
     if (highlightLuminosity != null) __obj.updateDynamic("highlightLuminosity")(highlightLuminosity.asInstanceOf[js.Any])

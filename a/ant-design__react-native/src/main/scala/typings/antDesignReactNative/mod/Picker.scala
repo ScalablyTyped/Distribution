@@ -1,7 +1,7 @@
 package typings.antDesignReactNative.mod
 
 import typings.antDesignReactNative.AnonAntLocale
-import typings.antDesignReactNative.AnonCascadeCols
+import typings.antDesignReactNative.AnonFormat
 import typings.antDesignReactNative.pickerMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,6 +16,6 @@ class Picker () extends default
 @js.native
 object Picker extends js.Object {
   var contextTypes: AnonAntLocale = js.native
-  var defaultProps: AnonCascadeCols = js.native
+  var defaultProps: AnonFormat = js.native
 }
 

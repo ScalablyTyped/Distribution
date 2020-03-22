@@ -1,6 +1,6 @@
 package typings.winrtUwp.Windows.Media.Protection.PlayReady
 
-import typings.winrtUwp.AnonItemsReturnValueIPlayReadyDomain
+import typings.winrtUwp.AnonItemsIPlayReadyDomain
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ abstract class PlayReadyDomainIterator () extends js.Object {
   /**
     * Retrieves all items in the PlayReady domain collection.
     */
-  def getMany(): AnonItemsReturnValueIPlayReadyDomain = js.native
+  def getMany(): AnonItemsIPlayReadyDomain = js.native
   /**
     * Advances the enumerator to the next item in the collection.
     * @return true if the iterator refers to a valid item that is in the collection or false if the iterator is at the end of the collection.

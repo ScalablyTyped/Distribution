@@ -44,5 +44,21 @@ object mapTreeMod extends js.Object {
     def value_comp(): Comparator[IPair[Key, T], IPair[Key, T]] = js.native
   }
   
+  /* static members */
+  @js.native
+  object MapTree extends js.Object {
+    /**
+      * @internal
+      */
+    def _Swap_source[Key, T, Unique /* <: Boolean */, Source /* <: ITreeMap[
+        Key, 
+        T, 
+        Unique, 
+        Source, 
+        Iterator[Key, T, Unique, Source], 
+        ReverseIterator[Key, T, Unique, Source]
+      ] */](x: MapTree[Key, T, Unique, Source], y: MapTree[Key, T, Unique, Source]): Unit = js.native
+  }
+  
 }
 

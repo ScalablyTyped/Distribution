@@ -1,19 +1,20 @@
 package typings.gapiClientClassroom.gapi.client.classroom
 
 import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientClassroom.AnonAccesstokenAlt
-import typings.gapiClientClassroom.AnonAccesstokenAltAnnouncementStates
-import typings.gapiClientClassroom.AnonAccesstokenAltCallbackCourseId
-import typings.gapiClientClassroom.AnonAccesstokenAltCallbackCourseIdFields
-import typings.gapiClientClassroom.AnonAccesstokenAltCallbackCourseIdFieldsId
-import typings.gapiClientClassroom.AnonAccesstokenAltCallbackCourseIdFieldsIdKey
-import typings.gapiClientClassroom.AnonAccesstokenAltCallbackCourseIdFieldsIdKeyOauthtoken
+import typings.gapiClientClassroom.AnonAlt
+import typings.gapiClientClassroom.AnonAnnouncementStates
+import typings.gapiClientClassroom.AnonCourseId
+import typings.gapiClientClassroom.AnonFields
+import typings.gapiClientClassroom.AnonId
+import typings.gapiClientClassroom.AnonKey
+import typings.gapiClientClassroom.AnonOauthtoken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
 trait AnnouncementsResource extends js.Object {
+  def create(request: AnonAlt, body: Announcement): Request_[Announcement] = js.native
   /**
     * Creates an announcement.
     *
@@ -27,8 +28,7 @@ trait AnnouncementsResource extends js.Object {
     * &#42; `FAILED_PRECONDITION` for the following request error:
     * &#42; AttachmentNotVisible
     */
-  def create(request: AnonAccesstokenAltCallbackCourseId): Request_[Announcement] = js.native
-  def create(request: AnonAccesstokenAlt, body: Announcement): Request_[Announcement] = js.native
+  def create(request: AnonCourseId): Request_[Announcement] = js.native
   /**
     * Deletes an announcement.
     *
@@ -45,7 +45,7 @@ trait AnnouncementsResource extends js.Object {
     * deleted.
     * &#42; `NOT_FOUND` if no course exists with the requested ID.
     */
-  def delete(request: AnonAccesstokenAltCallbackCourseIdFields): Request_[js.Object] = js.native
+  def delete(request: AnonFields): Request_[js.Object] = js.native
   /**
     * Returns an announcement.
     *
@@ -56,7 +56,7 @@ trait AnnouncementsResource extends js.Object {
     * &#42; `INVALID_ARGUMENT` if the request is malformed.
     * &#42; `NOT_FOUND` if the requested course or announcement does not exist.
     */
-  def get(request: AnonAccesstokenAltCallbackCourseIdFields): Request_[Announcement] = js.native
+  def get(request: AnonFields): Request_[Announcement] = js.native
   /**
     * Returns a list of announcements that the requester is permitted to view.
     *
@@ -70,7 +70,8 @@ trait AnnouncementsResource extends js.Object {
     * &#42; `INVALID_ARGUMENT` if the request is malformed.
     * &#42; `NOT_FOUND` if the requested course does not exist.
     */
-  def list(request: AnonAccesstokenAltAnnouncementStates): Request_[ListAnnouncementsResponse] = js.native
+  def list(request: AnonAnnouncementStates): Request_[ListAnnouncementsResponse] = js.native
+  def modifyAssignees(request: AnonFields, body: ModifyAnnouncementAssigneesRequest): Request_[Announcement] = js.native
   /**
     * Modifies assignee mode and options of an announcement.
     *
@@ -84,8 +85,7 @@ trait AnnouncementsResource extends js.Object {
     * &#42; `INVALID_ARGUMENT` if the request is malformed.
     * &#42; `NOT_FOUND` if the requested course or course work does not exist.
     */
-  def modifyAssignees(request: AnonAccesstokenAltCallbackCourseIdFieldsId): Request_[Announcement] = js.native
-  def modifyAssignees(request: AnonAccesstokenAltCallbackCourseIdFields, body: ModifyAnnouncementAssigneesRequest): Request_[Announcement] = js.native
+  def modifyAssignees(request: AnonId): Request_[Announcement] = js.native
   /**
     * Updates one or more fields of an announcement.
     *
@@ -98,7 +98,7 @@ trait AnnouncementsResource extends js.Object {
     * deleted.
     * &#42; `NOT_FOUND` if the requested course or announcement does not exist
     */
-  def patch(request: AnonAccesstokenAltCallbackCourseIdFieldsIdKey): Request_[Announcement] = js.native
-  def patch(request: AnonAccesstokenAltCallbackCourseIdFieldsIdKeyOauthtoken, body: Announcement): Request_[Announcement] = js.native
+  def patch(request: AnonKey): Request_[Announcement] = js.native
+  def patch(request: AnonOauthtoken, body: Announcement): Request_[Announcement] = js.native
 }
 

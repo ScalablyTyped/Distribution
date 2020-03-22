@@ -25,11 +25,11 @@ trait CreateVpcEndpointRequest extends js.Object {
   /**
     * (Gateway endpoint) One or more route table IDs.
     */
-  var RouteTableIds: js.UndefOr[ValueStringList] = js.native
+  var RouteTableIds: js.UndefOr[VpcEndpointRouteTableIdList] = js.native
   /**
     * (Interface endpoint) The ID of one or more security groups to associate with the endpoint network interface.
     */
-  var SecurityGroupIds: js.UndefOr[ValueStringList] = js.native
+  var SecurityGroupIds: js.UndefOr[VpcEndpointSecurityGroupIdList] = js.native
   /**
     * The service name. To get a list of available services, use the DescribeVpcEndpointServices request, or get the name from the service provider.
     */
@@ -37,7 +37,7 @@ trait CreateVpcEndpointRequest extends js.Object {
   /**
     * (Interface endpoint) The ID of one or more subnets in which to create an endpoint network interface.
     */
-  var SubnetIds: js.UndefOr[ValueStringList] = js.native
+  var SubnetIds: js.UndefOr[VpcEndpointSubnetIdList] = js.native
   /**
     * The tags to associate with the endpoint.
     */
@@ -61,9 +61,9 @@ object CreateVpcEndpointRequest {
     DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     PolicyDocument: String = null,
     PrivateDnsEnabled: js.UndefOr[scala.Boolean] = js.undefined,
-    RouteTableIds: ValueStringList = null,
-    SecurityGroupIds: ValueStringList = null,
-    SubnetIds: ValueStringList = null,
+    RouteTableIds: VpcEndpointRouteTableIdList = null,
+    SecurityGroupIds: VpcEndpointSecurityGroupIdList = null,
+    SubnetIds: VpcEndpointSubnetIdList = null,
     TagSpecifications: TagSpecificationList = null,
     VpcEndpointType: VpcEndpointType = null
   ): CreateVpcEndpointRequest = {

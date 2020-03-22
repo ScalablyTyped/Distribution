@@ -14,7 +14,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ionic/angular/dist/providers/nav-controller", "NavController")
+@JSImport("@ionic/angular/providers/nav-controller", "NavController")
 @js.native
 class NavController protected () extends js.Object {
   def this(platform: Platform, location: Location, serializer: UrlSerializer) = this()

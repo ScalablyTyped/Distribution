@@ -1,6 +1,6 @@
 package typings.jupyterlabCompleter.handlerMod.CompletionHandler
 
-import typings.phosphorCoreutils.jsonMod.ReadonlyJSONObject
+import typings.luminoCoreutils.jsonMod.ReadonlyJSONObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

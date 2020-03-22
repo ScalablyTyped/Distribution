@@ -6,154 +6,89 @@ import scala.scalajs.js.annotation._
 
 object storybookReactNativeStrings {
   @js.native
-  sealed trait accessibilityComponentType extends js.Object
+  sealed trait assertive extends js.Object
   
   @js.native
-  sealed trait accessibilityElementsHidden extends js.Object
+  sealed trait auto extends js.Object
   
   @js.native
-  sealed trait accessibilityHint extends js.Object
+  sealed trait balanced extends js.Object
   
   @js.native
-  sealed trait accessibilityIgnoresInvertColors extends js.Object
+  sealed trait button extends js.Object
   
   @js.native
-  sealed trait accessibilityLabel extends js.Object
+  sealed trait clip extends js.Object
   
   @js.native
-  sealed trait accessibilityLiveRegion extends js.Object
+  sealed trait head extends js.Object
   
   @js.native
-  sealed trait accessibilityRole extends js.Object
+  sealed trait highQuality extends js.Object
   
   @js.native
-  sealed trait accessibilityStates extends js.Object
+  sealed trait middle extends js.Object
   
   @js.native
-  sealed trait accessibilityTraits extends js.Object
+  sealed trait no extends js.Object
   
   @js.native
-  sealed trait accessible extends js.Object
+  sealed trait `no-hide-descendants` extends js.Object
   
   @js.native
-  sealed trait adjustsFontSizeToFit extends js.Object
+  sealed trait none extends js.Object
   
   @js.native
-  sealed trait allowFontScaling extends js.Object
+  sealed trait polite extends js.Object
   
   @js.native
-  sealed trait ellipsizeMode extends js.Object
+  sealed trait radiobutton_checked extends js.Object
   
   @js.native
-  sealed trait importantForAccessibility extends js.Object
+  sealed trait radiobutton_unchecked extends js.Object
   
   @js.native
-  sealed trait lineBreakMode extends js.Object
+  sealed trait simple extends js.Object
   
   @js.native
-  sealed trait maxFontSizeMultiplier extends js.Object
+  sealed trait tail extends js.Object
   
   @js.native
-  sealed trait minimumFontScale extends js.Object
-  
-  @js.native
-  sealed trait nativeID extends js.Object
-  
-  @js.native
-  sealed trait numberOfLines extends js.Object
-  
-  @js.native
-  sealed trait onAccessibilityTap extends js.Object
-  
-  @js.native
-  sealed trait onLayout extends js.Object
-  
-  @js.native
-  sealed trait onLongPress extends js.Object
-  
-  @js.native
-  sealed trait onMagicTap extends js.Object
-  
-  @js.native
-  sealed trait onPress extends js.Object
-  
-  @js.native
-  sealed trait selectable extends js.Object
-  
-  @js.native
-  sealed trait selectionColor extends js.Object
-  
-  @js.native
-  sealed trait style extends js.Object
-  
-  @js.native
-  sealed trait suppressHighlighting extends js.Object
-  
-  @js.native
-  sealed trait testID extends js.Object
-  
-  @js.native
-  sealed trait textBreakStrategy extends js.Object
+  sealed trait yes extends js.Object
   
   @scala.inline
-  def accessibilityComponentType: accessibilityComponentType = "accessibilityComponentType".asInstanceOf[accessibilityComponentType]
+  def assertive: assertive = "assertive".asInstanceOf[assertive]
   @scala.inline
-  def accessibilityElementsHidden: accessibilityElementsHidden = "accessibilityElementsHidden".asInstanceOf[accessibilityElementsHidden]
+  def auto: auto = "auto".asInstanceOf[auto]
   @scala.inline
-  def accessibilityHint: accessibilityHint = "accessibilityHint".asInstanceOf[accessibilityHint]
+  def balanced: balanced = "balanced".asInstanceOf[balanced]
   @scala.inline
-  def accessibilityIgnoresInvertColors: accessibilityIgnoresInvertColors = "accessibilityIgnoresInvertColors".asInstanceOf[accessibilityIgnoresInvertColors]
+  def button: button = "button".asInstanceOf[button]
   @scala.inline
-  def accessibilityLabel: accessibilityLabel = "accessibilityLabel".asInstanceOf[accessibilityLabel]
+  def clip: clip = "clip".asInstanceOf[clip]
   @scala.inline
-  def accessibilityLiveRegion: accessibilityLiveRegion = "accessibilityLiveRegion".asInstanceOf[accessibilityLiveRegion]
+  def head: head = "head".asInstanceOf[head]
   @scala.inline
-  def accessibilityRole: accessibilityRole = "accessibilityRole".asInstanceOf[accessibilityRole]
+  def highQuality: highQuality = "highQuality".asInstanceOf[highQuality]
   @scala.inline
-  def accessibilityStates: accessibilityStates = "accessibilityStates".asInstanceOf[accessibilityStates]
+  def middle: middle = "middle".asInstanceOf[middle]
   @scala.inline
-  def accessibilityTraits: accessibilityTraits = "accessibilityTraits".asInstanceOf[accessibilityTraits]
+  def no: no = "no".asInstanceOf[no]
   @scala.inline
-  def accessible: accessible = "accessible".asInstanceOf[accessible]
+  def `no-hide-descendants`: `no-hide-descendants` = "no-hide-descendants".asInstanceOf[`no-hide-descendants`]
   @scala.inline
-  def adjustsFontSizeToFit: adjustsFontSizeToFit = "adjustsFontSizeToFit".asInstanceOf[adjustsFontSizeToFit]
+  def none: none = "none".asInstanceOf[none]
   @scala.inline
-  def allowFontScaling: allowFontScaling = "allowFontScaling".asInstanceOf[allowFontScaling]
+  def polite: polite = "polite".asInstanceOf[polite]
   @scala.inline
-  def ellipsizeMode: ellipsizeMode = "ellipsizeMode".asInstanceOf[ellipsizeMode]
+  def radiobutton_checked: radiobutton_checked = "radiobutton_checked".asInstanceOf[radiobutton_checked]
   @scala.inline
-  def importantForAccessibility: importantForAccessibility = "importantForAccessibility".asInstanceOf[importantForAccessibility]
+  def radiobutton_unchecked: radiobutton_unchecked = "radiobutton_unchecked".asInstanceOf[radiobutton_unchecked]
   @scala.inline
-  def lineBreakMode: lineBreakMode = "lineBreakMode".asInstanceOf[lineBreakMode]
+  def simple: simple = "simple".asInstanceOf[simple]
   @scala.inline
-  def maxFontSizeMultiplier: maxFontSizeMultiplier = "maxFontSizeMultiplier".asInstanceOf[maxFontSizeMultiplier]
+  def tail: tail = "tail".asInstanceOf[tail]
   @scala.inline
-  def minimumFontScale: minimumFontScale = "minimumFontScale".asInstanceOf[minimumFontScale]
-  @scala.inline
-  def nativeID: nativeID = "nativeID".asInstanceOf[nativeID]
-  @scala.inline
-  def numberOfLines: numberOfLines = "numberOfLines".asInstanceOf[numberOfLines]
-  @scala.inline
-  def onAccessibilityTap: onAccessibilityTap = "onAccessibilityTap".asInstanceOf[onAccessibilityTap]
-  @scala.inline
-  def onLayout: onLayout = "onLayout".asInstanceOf[onLayout]
-  @scala.inline
-  def onLongPress: onLongPress = "onLongPress".asInstanceOf[onLongPress]
-  @scala.inline
-  def onMagicTap: onMagicTap = "onMagicTap".asInstanceOf[onMagicTap]
-  @scala.inline
-  def onPress: onPress = "onPress".asInstanceOf[onPress]
-  @scala.inline
-  def selectable: selectable = "selectable".asInstanceOf[selectable]
-  @scala.inline
-  def selectionColor: selectionColor = "selectionColor".asInstanceOf[selectionColor]
-  @scala.inline
-  def style: style = "style".asInstanceOf[style]
-  @scala.inline
-  def suppressHighlighting: suppressHighlighting = "suppressHighlighting".asInstanceOf[suppressHighlighting]
-  @scala.inline
-  def testID: testID = "testID".asInstanceOf[testID]
-  @scala.inline
-  def textBreakStrategy: textBreakStrategy = "textBreakStrategy".asInstanceOf[textBreakStrategy]
+  def yes: yes = "yes".asInstanceOf[yes]
 }
 

@@ -4,8 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StorybookLogoProps extends js.Object {
-  var alt: String
+  var alt: String = js.native
 }
 
 object StorybookLogoProps {

@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ionic/angular/dist/directives/navigation/nav-params", JSImport.Namespace)
+@JSImport("@ionic/angular/directives/navigation/nav-params", JSImport.Namespace)
 @js.native
 object navParamsMod extends js.Object {
   @js.native
@@ -28,7 +28,7 @@ object navParamsMod extends js.Object {
       *
       * @param param Which param you want to look up
       */
-    def get(param: String): js.Any = js.native
+    def get[T](param: String): T = js.native
   }
   
 }

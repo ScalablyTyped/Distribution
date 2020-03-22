@@ -1,7 +1,6 @@
 package typings.jupyterlabServices
 
 import typings.std.Error
-import typings.std.Partial
 import typings.std.RequestInfo
 import typings.std.RequestInit
 import typings.std.Response
@@ -25,11 +24,11 @@ object serverconnectionMod extends js.Object {
       /**
         * The `Headers` object constructor.
         */
-      val Headers: AnonInitHeaders = js.native
+      val Headers: AnonInstantiable = js.native
       /**
         * The `Request` object constructor.
         */
-      val Request: AnonInit = js.native
+      val Request: AnonInstantiableRequest = js.native
       /**
         * The `WebSocket` object constructor.
         */
@@ -129,7 +128,7 @@ object serverconnectionMod extends js.Object {
       * @returns The full settings object.
       */
     def makeSettings(): ISettings = js.native
-    def makeSettings(options: Partial[ISettings]): ISettings = js.native
+    def makeSettings(options: PartialISettings): ISettings = js.native
   }
   
 }

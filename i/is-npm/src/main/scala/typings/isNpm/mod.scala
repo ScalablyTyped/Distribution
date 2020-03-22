@@ -8,5 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object mod extends js.Object {
   val isNpm: Boolean = js.native
+  val isNpmOrYarn: Boolean = js.native
+  val isYarn: Boolean = js.native
 }
 

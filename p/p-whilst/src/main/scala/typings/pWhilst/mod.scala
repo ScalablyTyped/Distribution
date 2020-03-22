@@ -14,7 +14,7 @@ object mod extends js.Object {
   // ): Promise<void>;
   // export = pWhilst;
   @JSName("default")
-  var default_Original: AnonAction = js.native
+  var default_Original: AnonCall = js.native
   /**
   	While `condition` returns `true`, executes `action` repeatedly, and then resolves the promise. Rejects if `action` returns a promise that rejects or if an error is thrown anywhere.
   	@param condition - Expected to return a boolean of whether to execute `action`.

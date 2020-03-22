@@ -15,11 +15,13 @@ import typings.angularRouter.mod.OutletContext
 import typings.angularRouter.mod.Router
 import typings.ionicAngular.configMod.Config
 import typings.ionicAngular.navControllerMod.NavController
+import typings.ionicAngular.stackUtilsMod.RouteView
+import typings.ionicCore.componentsMod._Global_.HTMLIonRouterOutletElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ionic/angular/dist/directives/navigation/ion-router-outlet", JSImport.Namespace)
+@JSImport("@ionic/angular/directives/navigation/ion-router-outlet", JSImport.Namespace)
 @js.native
 object ionRouterOutletMod extends js.Object {
   @js.native
@@ -76,7 +78,7 @@ object ionRouterOutletMod extends js.Object {
     val isActivated: Boolean = js.native
     var location: js.Any = js.native
     var name: js.Any = js.native
-    var nativeEl: js.Any = js.native
+    var nativeEl: HTMLIonRouterOutletElement = js.native
     var navCtrl: js.Any = js.native
     var parentContexts: js.Any = js.native
     val parentOutlet: js.UndefOr[IonRouterOutlet] = js.native
@@ -117,13 +119,25 @@ object ionRouterOutletMod extends js.Object {
     def getActiveStackId(): js.UndefOr[String] = js.native
     def getContext(): OutletContext | Null = js.native
     /**
+      * Returns the RouteView of the active page of each stack.
+      * @internal
+      */
+    def getLastRouteView(): js.UndefOr[RouteView] = js.native
+    def getLastRouteView(stackId: String): js.UndefOr[RouteView] = js.native
+    /**
       * Returns the URL of the active page of each stack.
       */
     def getLastUrl(): js.UndefOr[String] = js.native
     def getLastUrl(stackId: String): js.UndefOr[String] = js.native
     /**
+      * Returns the root view in the tab stack.
+      * @internal
+      */
+    def getRootView(): js.UndefOr[RouteView] = js.native
+    def getRootView(stackId: String): js.UndefOr[RouteView] = js.native
+    /**
       * A callback method that performs custom clean-up, invoked immediately
-      * after a directive, pipe, or service instance is destroyed.
+      * before a directive, pipe, or service instance is destroyed.
       */
     /* CompleteClass */
     override def ngOnDestroy(): Unit = js.native

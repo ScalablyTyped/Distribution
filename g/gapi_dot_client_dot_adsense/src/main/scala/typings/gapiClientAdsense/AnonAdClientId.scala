@@ -5,6 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonAdClientId extends js.Object {
+  /** Account to which the ad client belongs. */
+  var accountId: String
   /** Ad client which contains the ad unit. */
   var adClientId: String
   /** Ad unit for which to list custom channels. */
@@ -38,6 +40,7 @@ trait AnonAdClientId extends js.Object {
 object AnonAdClientId {
   @scala.inline
   def apply(
+    accountId: String,
     adClientId: String,
     adUnitId: String,
     alt: String = null,
@@ -50,7 +53,7 @@ object AnonAdClientId {
     quotaUser: String = null,
     userIp: String = null
   ): AnonAdClientId = {
-    val __obj = js.Dynamic.literal(adClientId = adClientId.asInstanceOf[js.Any], adUnitId = adUnitId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any], adClientId = adClientId.asInstanceOf[js.Any], adUnitId = adUnitId.asInstanceOf[js.Any])
     if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])

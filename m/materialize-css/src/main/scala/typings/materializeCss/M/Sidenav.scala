@@ -1,8 +1,8 @@
 package typings.materializeCss.M
 
 import typings.materializeCss.MElements
+import typings.materializeCss.PartialSidenavOptions
 import typings.std.Element
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,11 +40,11 @@ object Sidenav extends js.Object {
     * Init Sidenavs
     */
   def init(els: MElements): js.Array[Sidenav] = js.native
-  def init(els: MElements, options: Partial[SidenavOptions]): js.Array[Sidenav] = js.native
+  def init(els: MElements, options: PartialSidenavOptions): js.Array[Sidenav] = js.native
   /**
     * Init Sidenav
     */
   def init(els: Element): Sidenav = js.native
-  def init(els: Element, options: Partial[SidenavOptions]): Sidenav = js.native
+  def init(els: Element, options: PartialSidenavOptions): Sidenav = js.native
 }
 

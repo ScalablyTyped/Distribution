@@ -8,29 +8,19 @@ import scala.scalajs.js.annotation._
 @js.native
 object readersMod extends js.Object {
   @js.native
-  class ArgumentsReader ()
-    extends typings.typedoc.argumentsMod.ArgumentsReader
+  class ArgumentsReader protected ()
+    extends typings.typedoc.argumentsMod.ArgumentsReader {
+    def this(priority: Double) = this()
+    def this(priority: Double, args: js.Array[String]) = this()
+  }
   
   @js.native
   class TSConfigReader ()
     extends typings.typedoc.tsconfigMod.TSConfigReader
   
   @js.native
-  class TypedocReader ()
-    extends typings.typedoc.typedocMod.TypedocReader
-  
-  /* static members */
-  @js.native
-  object TSConfigReader extends js.Object {
-    var OPTIONS_KEY: js.Any = js.native
-    var PROJECT_KEY: js.Any = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object TypedocReader extends js.Object {
-    var OPTIONS_KEY: js.Any = js.native
-  }
+  class TypeDocReader ()
+    extends typings.typedoc.typedocMod.TypeDocReader
   
 }
 

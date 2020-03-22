@@ -2,7 +2,7 @@ package typings.winrtUwp.Windows.Storage.Search
 
 import typings.std.Array
 import typings.winrtUwp.AnonIndex
-import typings.winrtUwp.AnonItemsReturnValueNumberSortEntry
+import typings.winrtUwp.AnonItemsSortEntry
 import typings.winrtUwp.Windows.Foundation.Collections.IIterator
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import scala.scalajs.js
@@ -37,7 +37,7 @@ abstract class SortEntryVector () extends Array[SortEntry] {
     * Retrieves the sort entries that start at the specified index in the collection.
     * @param startIndex The zero-based index of the start of the sort entries in the collection to retrieve.
     */
-  def getMany(startIndex: Double): AnonItemsReturnValueNumberSortEntry = js.native
+  def getMany(startIndex: Double): AnonItemsSortEntry = js.native
   /**
     * Retrieves an immutable view of the collection of sort entries.
     * @return The view of the collection.

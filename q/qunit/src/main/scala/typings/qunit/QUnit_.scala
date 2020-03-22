@@ -44,7 +44,7 @@ trait QUnit_ extends js.Object {
     * Note: This method used to be in QUnit.jsDump, which was changed to
     * QUnit.dump. The old property will be removed in QUnit 3.0.
     */
-  var dump: AnonData = js.native
+  var dump: AnonMaxDepth = js.native
   /**
     * Are the test running from the server or not.
     */

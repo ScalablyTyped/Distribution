@@ -1,5 +1,6 @@
 package typings.babelCore.mod
 
+import typings.babelCore.ReadonlyPartialConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@babel/core", "loadPartialConfig")
 @js.native
 object loadPartialConfig extends js.Object {
-  def apply(): PartialConfig | Null = js.native
-  def apply(options: TransformOptions): PartialConfig | Null = js.native
+  def apply(): ReadonlyPartialConfig | Null = js.native
+  def apply(options: TransformOptions): ReadonlyPartialConfig | Null = js.native
 }
 

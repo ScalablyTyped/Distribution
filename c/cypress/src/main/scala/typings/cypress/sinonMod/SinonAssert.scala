@@ -1,6 +1,6 @@
 package typings.cypress.sinonMod
 
-import typings.std.Partial
+import typings.cypress.PartialSinonExposeOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -112,7 +112,7 @@ trait SinonAssert extends js.Object {
     * The method accepts an optional options object with two options.
     */
   def expose(obj: js.Any): Unit = js.native
-  def expose(obj: js.Any, options: Partial[SinonExposeOptions]): Unit = js.native
+  def expose(obj: js.Any, options: PartialSinonExposeOptions): Unit = js.native
   /**
     * Every assertion fails by calling this method.
     * By default it throws an error of type sinon.assert.failException.

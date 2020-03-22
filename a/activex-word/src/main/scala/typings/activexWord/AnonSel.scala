@@ -6,13 +6,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonSel extends js.Object {
+  var Cancel: Boolean
   val Sel: Selection
 }
 
 object AnonSel {
   @scala.inline
-  def apply(Sel: Selection): AnonSel = {
-    val __obj = js.Dynamic.literal(Sel = Sel.asInstanceOf[js.Any])
+  def apply(Cancel: Boolean, Sel: Selection): AnonSel = {
+    val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], Sel = Sel.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AnonSel]
   }

@@ -1,13 +1,13 @@
 package typings.ionicCore.componentsMod.LocalJSX
 
+import typings.ionicCore.animationInterfaceMod.Animation
+import typings.ionicCore.animationInterfaceMod.AnimationBuilder
 import typings.ionicCore.ionicCoreStrings.bottom
 import typings.ionicCore.ionicCoreStrings.ios
 import typings.ionicCore.ionicCoreStrings.md
 import typings.ionicCore.ionicCoreStrings.middle
 import typings.ionicCore.ionicCoreStrings.top
 import typings.ionicCore.mod.Color
-import typings.ionicCore.oldAnimationAnimationInterfaceMod.Animation
-import typings.ionicCore.oldAnimationAnimationInterfaceMod.AnimationBuilder
 import typings.ionicCore.overlaysInterfaceMod.OverlayEventDetail
 import typings.ionicCore.toastInterfaceMod.ToastButton
 import typings.std.CustomEvent
@@ -24,10 +24,6 @@ trait IonToast extends js.Object {
     * An array of buttons for the toast.
     */
   var buttons: js.UndefOr[js.Array[ToastButton | String]] = js.undefined
-  /**
-    * @deprecated Use `buttons` instead. Text to display in the close button.
-    */
-  var closeButtonText: js.UndefOr[String] = js.undefined
   /**
     * The color to use from your application's color palette. Default options are: `"primary"`, `"secondary"`, `"tertiary"`, `"success"`, `"warning"`, `"danger"`, `"light"`, `"medium"`, and `"dark"`. For more information on colors, see [theming](/docs/theming/basics).
     */
@@ -85,10 +81,6 @@ trait IonToast extends js.Object {
     */
   var position: js.UndefOr[top | bottom | middle] = js.undefined
   /**
-    * @deprecated Use `buttons` instead. If `true`, the close button will be displayed.
-    */
-  var showCloseButton: js.UndefOr[Boolean] = js.undefined
-  /**
     * If `true`, the toast will be translucent. Only applies when the mode is `"ios"` and the device supports [`backdrop-filter`](https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter#Browser_compatibility).
     */
   var translucent: js.UndefOr[Boolean] = js.undefined
@@ -99,14 +91,13 @@ object IonToast {
   def apply(
     animated: js.UndefOr[Boolean] = js.undefined,
     buttons: js.Array[ToastButton | String] = null,
-    closeButtonText: String = null,
     color: Color = null,
     cssClass: String | js.Array[String] = null,
     duration: Int | Double = null,
-    enterAnimation: (/* Animation */ Animation, /* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => js.Promise[Animation] = null,
+    enterAnimation: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation = null,
     header: String = null,
     keyboardClose: js.UndefOr[Boolean] = js.undefined,
-    leaveAnimation: (/* Animation */ Animation, /* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => js.Promise[Animation] = null,
+    leaveAnimation: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation = null,
     message: String = null,
     mode: ios | md = null,
     onIonToastDidDismiss: /* event */ CustomEvent[OverlayEventDetail[_]] => Unit = null,
@@ -114,20 +105,18 @@ object IonToast {
     onIonToastWillDismiss: /* event */ CustomEvent[OverlayEventDetail[_]] => Unit = null,
     onIonToastWillPresent: /* event */ CustomEvent[Unit] => Unit = null,
     position: top | bottom | middle = null,
-    showCloseButton: js.UndefOr[Boolean] = js.undefined,
     translucent: js.UndefOr[Boolean] = js.undefined
   ): IonToast = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.asInstanceOf[js.Any])
     if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
-    if (closeButtonText != null) __obj.updateDynamic("closeButtonText")(closeButtonText.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (enterAnimation != null) __obj.updateDynamic("enterAnimation")(js.Any.fromFunction3(enterAnimation))
+    if (enterAnimation != null) __obj.updateDynamic("enterAnimation")(js.Any.fromFunction2(enterAnimation))
     if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
     if (!js.isUndefined(keyboardClose)) __obj.updateDynamic("keyboardClose")(keyboardClose.asInstanceOf[js.Any])
-    if (leaveAnimation != null) __obj.updateDynamic("leaveAnimation")(js.Any.fromFunction3(leaveAnimation))
+    if (leaveAnimation != null) __obj.updateDynamic("leaveAnimation")(js.Any.fromFunction2(leaveAnimation))
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (onIonToastDidDismiss != null) __obj.updateDynamic("onIonToastDidDismiss")(js.Any.fromFunction1(onIonToastDidDismiss))
@@ -135,7 +124,6 @@ object IonToast {
     if (onIonToastWillDismiss != null) __obj.updateDynamic("onIonToastWillDismiss")(js.Any.fromFunction1(onIonToastWillDismiss))
     if (onIonToastWillPresent != null) __obj.updateDynamic("onIonToastWillPresent")(js.Any.fromFunction1(onIonToastWillPresent))
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(showCloseButton)) __obj.updateDynamic("showCloseButton")(showCloseButton.asInstanceOf[js.Any])
     if (!js.isUndefined(translucent)) __obj.updateDynamic("translucent")(translucent.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonToast]
   }

@@ -1,6 +1,6 @@
 package typings.highcharts.stockMod
 
-import typings.highcharts.mod.PlotSeriesDataGroupingOptions
+import typings.highcharts.mod.DataGroupingOptionsObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -41,8 +41,8 @@ object highchartsAugmentingMod extends js.Object {
     def setDataGrouping(): Unit = js.native
     def setDataGrouping(dataGrouping: Boolean): Unit = js.native
     def setDataGrouping(dataGrouping: Boolean, redraw: Boolean): Unit = js.native
-    def setDataGrouping(dataGrouping: PlotSeriesDataGroupingOptions): Unit = js.native
-    def setDataGrouping(dataGrouping: PlotSeriesDataGroupingOptions, redraw: Boolean): Unit = js.native
+    def setDataGrouping(dataGrouping: DataGroupingOptionsObject): Unit = js.native
+    def setDataGrouping(dataGrouping: DataGroupingOptionsObject, redraw: Boolean): Unit = js.native
   }
   
   @js.native

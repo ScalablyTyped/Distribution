@@ -2,8 +2,8 @@ package typings.gapiClientCloudresourcemanager.gapi.client.cloudresourcemanager
 
 import typings.gapiClient.gapi.client.Request_
 import typings.gapiClientCloudresourcemanager.AnonAccesstoken
-import typings.gapiClientCloudresourcemanager.AnonAccesstokenAlt
-import typings.gapiClientCloudresourcemanager.AnonAccesstokenAltBearertoken
+import typings.gapiClientCloudresourcemanager.AnonAlt
+import typings.gapiClientCloudresourcemanager.AnonBearertoken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ trait OrganizationsResource extends js.Object {
   /** Clears a `Policy` from a resource. */
   def clearOrgPolicy(request: AnonAccesstoken): Request_[js.Object]
   /** Fetches an Organization resource identified by the specified resource name. */
-  def get(request: AnonAccesstokenAltBearertoken): Request_[Organization]
+  def get(request: AnonBearertoken): Request_[Organization]
   /**
     * Gets the effective `Policy` on a resource. This is the result of merging
     * `Policies` in the resource hierarchy. The returned `Policy` will not have
@@ -50,7 +50,7 @@ trait OrganizationsResource extends js.Object {
     * Search will only return organizations on which the user has the permission
     * `resourcemanager.organizations.get`
     */
-  def search(request: AnonAccesstokenAlt): Request_[SearchOrganizationsResponse]
+  def search(request: AnonAlt): Request_[SearchOrganizationsResponse]
   /**
     * Sets the access control policy on an Organization resource. Replaces any
     * existing policy. The `resource` field should be the organization's resource
@@ -82,13 +82,13 @@ object OrganizationsResource {
   @scala.inline
   def apply(
     clearOrgPolicy: AnonAccesstoken => Request_[js.Object],
-    get: AnonAccesstokenAltBearertoken => Request_[Organization],
+    get: AnonBearertoken => Request_[Organization],
     getEffectiveOrgPolicy: AnonAccesstoken => Request_[OrgPolicy],
     getIamPolicy: AnonAccesstoken => Request_[Policy],
     getOrgPolicy: AnonAccesstoken => Request_[OrgPolicy],
     listAvailableOrgPolicyConstraints: AnonAccesstoken => Request_[ListAvailableOrgPolicyConstraintsResponse],
     listOrgPolicies: AnonAccesstoken => Request_[ListOrgPoliciesResponse],
-    search: AnonAccesstokenAlt => Request_[SearchOrganizationsResponse],
+    search: AnonAlt => Request_[SearchOrganizationsResponse],
     setIamPolicy: AnonAccesstoken => Request_[Policy],
     setOrgPolicy: AnonAccesstoken => Request_[OrgPolicy],
     testIamPermissions: AnonAccesstoken => Request_[TestIamPermissionsResponse]

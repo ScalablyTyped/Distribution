@@ -30,6 +30,8 @@ trait reactBootstrapTypeaheadProps {
   @scala.inline
   def MenuProps: typings.reactBootstrapTypeahead.mod.MenuProps.type = typings.reactBootstrapTypeahead.mod.MenuProps
   type MenuProps = typings.reactBootstrapTypeahead.mod.MenuProps
+  @scala.inline
+  def MenuHeaderProps: typings.reactBootstrapTypeahead.mod.MenuHeaderProps.type = typings.reactBootstrapTypeahead.mod.MenuHeaderProps
   type MenuHeaderProps = typings.reactBootstrapTypeahead.mod.MenuHeaderProps
   @scala.inline
   def MenuItemProps: typings.reactBootstrapTypeahead.mod.MenuItemProps.type = typings.reactBootstrapTypeahead.mod.MenuItemProps

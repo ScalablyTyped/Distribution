@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object mergeRequestAwardEmojisMod extends js.Object {
   @js.native
-  class MergeRequestAwardEmojis () extends ResourceAwardEmojis {
+  class MergeRequestAwardEmojis protected () extends ResourceAwardEmojis {
     def this(options: BaseServiceOptions) = this()
   }
   

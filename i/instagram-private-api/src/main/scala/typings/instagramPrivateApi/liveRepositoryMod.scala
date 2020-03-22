@@ -31,9 +31,9 @@ object liveRepositoryMod extends js.Object {
     def deactivateQuestion(broadcastId: String, questionId: String): js.Promise[_] = js.native
     def endBroadcast(broadcastId: String): js.Promise[_] = js.native
     def endBroadcast(broadcastId: String, endAfterCopyrightWarning: Boolean): js.Promise[_] = js.native
-    def getComment(hasBroadcastIdCommentsRequestedLastCommentTs: Anon_BroadcastId): js.Promise[LiveCommentsResponseRootObject] = js.native
+    def getComment(hasBroadcastIdCommentsRequestedLastCommentTs: AnonBroadcastId_): js.Promise[LiveCommentsResponseRootObject] = js.native
     def getFinalViewerList(broadcastId: String): js.Promise[LiveFinalViewersResponseRootObject] = js.native
-    def getJoinRequestCounts(hasBroadcastIdLastTotalCountLastSeenTsLastFetchTs: AnonBroadcastIdLastFetchTs): js.Promise[LiveJoinRequestCountsResponseRootObject] = js.native
+    def getJoinRequestCounts(hasBroadcastIdLastTotalCountLastSeenTsLastFetchTs: AnonLastFetchTs): js.Promise[LiveJoinRequestCountsResponseRootObject] = js.native
     def getLikeCount(broadcastId: String): js.Promise[LiveLikeCountResponseRootObject] = js.native
     def getLikeCount(broadcastId: String, likeTs: String): js.Promise[LiveLikeCountResponseRootObject] = js.native
     def getLikeCount(broadcastId: String, likeTs: Double): js.Promise[LiveLikeCountResponseRootObject] = js.native

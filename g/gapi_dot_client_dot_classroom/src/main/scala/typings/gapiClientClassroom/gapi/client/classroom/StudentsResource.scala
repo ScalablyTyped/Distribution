@@ -1,16 +1,17 @@
 package typings.gapiClientClassroom.gapi.client.classroom
 
 import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientClassroom.AnonAccesstokenAltCallback
-import typings.gapiClientClassroom.AnonAccesstokenAltCallbackCourseIdEnrollmentCode
-import typings.gapiClientClassroom.AnonAccesstokenAltCallbackCourseIdEnrollmentCodeFields
-import typings.gapiClientClassroom.AnonAccesstokenAltCallbackCourseIdFieldsKeyOauthtoken
+import typings.gapiClientClassroom.AnonCallback
+import typings.gapiClientClassroom.AnonCallbackCourseId
+import typings.gapiClientClassroom.AnonEnrollmentCode
+import typings.gapiClientClassroom.AnonUserId
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
 trait StudentsResource extends js.Object {
+  def create(request: AnonCallbackCourseId, body: Student): Request_[Student] = js.native
   /**
     * Adds a user as a student of a course.
     *
@@ -27,8 +28,7 @@ trait StudentsResource extends js.Object {
     * &#42; `ALREADY_EXISTS` if the user is already a student or teacher in the
     * course.
     */
-  def create(request: AnonAccesstokenAltCallbackCourseIdEnrollmentCode): Request_[Student] = js.native
-  def create(request: AnonAccesstokenAltCallbackCourseIdEnrollmentCodeFields, body: Student): Request_[Student] = js.native
+  def create(request: AnonEnrollmentCode): Request_[Student] = js.native
   /**
     * Deletes a student of a course.
     *
@@ -39,7 +39,7 @@ trait StudentsResource extends js.Object {
     * &#42; `NOT_FOUND` if no student of this course has the requested ID or if the
     * course does not exist.
     */
-  def delete(request: AnonAccesstokenAltCallbackCourseIdFieldsKeyOauthtoken): Request_[js.Object] = js.native
+  def delete(request: AnonUserId): Request_[js.Object] = js.native
   /**
     * Returns a student of a course.
     *
@@ -50,7 +50,7 @@ trait StudentsResource extends js.Object {
     * &#42; `NOT_FOUND` if no student of this course has the requested ID or if the
     * course does not exist.
     */
-  def get(request: AnonAccesstokenAltCallbackCourseIdFieldsKeyOauthtoken): Request_[Student] = js.native
+  def get(request: AnonUserId): Request_[Student] = js.native
   /**
     * Returns a list of students of this course that the requester
     * is permitted to view.
@@ -60,6 +60,6 @@ trait StudentsResource extends js.Object {
     * &#42; `NOT_FOUND` if the course does not exist.
     * &#42; `PERMISSION_DENIED` for access errors.
     */
-  def list(request: AnonAccesstokenAltCallback): Request_[ListStudentsResponse] = js.native
+  def list(request: AnonCallback): Request_[ListStudentsResponse] = js.native
 }
 

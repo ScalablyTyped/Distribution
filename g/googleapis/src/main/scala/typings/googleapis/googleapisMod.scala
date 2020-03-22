@@ -8,7 +8,6 @@ import typings.googleAuthLibrary.mod.GoogleAuth
 import typings.googleapis.apisMod.GeneratedAPIs
 import typings.googleapisCommon.apiMod.APIEndpoint
 import typings.googleapisCommon.apiMod.GlobalOptions
-import typings.googleapisCommon.mod.Endpoint
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -21,7 +20,7 @@ object googleapisMod extends js.Object {
   class AuthPlus () extends GoogleAuth {
     var Compute: Instantiable0[typings.googleAuthLibrary.mod.Compute] = js.native
     var JWT: Instantiable1[/* options */ JWTOptions, typings.googleAuthLibrary.mod.JWT] = js.native
-    var OAuth2: TypeofClassOAuth2Client = js.native
+    var OAuth2: TypeofOAuth2Client = js.native
   }
   
   @js.native
@@ -81,8 +80,8 @@ object googleapisMod extends js.Object {
       * discovery doc.
       * @returns A promise that resolves with the configured endpoint.
       */
-    def discoverAPI(apiPath: String): js.Promise[Endpoint] = js.native
-    def discoverAPI(apiPath: String, options: js.Object): js.Promise[Endpoint] = js.native
+    def discoverAPI(apiPath: String): js.Promise[ReadonlyEndpoint] = js.native
+    def discoverAPI(apiPath: String, options: js.Object): js.Promise[ReadonlyEndpoint] = js.native
     /**
       * Obtain a Map of supported APIs, along with included API versions.
       */

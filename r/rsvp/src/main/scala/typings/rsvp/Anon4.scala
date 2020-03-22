@@ -1,17 +1,17 @@
 package typings.rsvp
 
-import typings.rsvp.rsvpNumbers.`4`
+import typings.rsvp.rsvpNumbers.`5`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon4 extends js.Object {
-  var length: `4`
+  var length: `5`
 }
 
 object Anon4 {
   @scala.inline
-  def apply(length: `4`): Anon4 = {
+  def apply(length: `5`): Anon4 = {
     val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon4]

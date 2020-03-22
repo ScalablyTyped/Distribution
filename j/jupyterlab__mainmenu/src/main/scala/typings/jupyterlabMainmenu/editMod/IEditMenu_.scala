@@ -4,7 +4,7 @@ import typings.jupyterlabMainmenu.editMod.IEditMenu.IClearer
 import typings.jupyterlabMainmenu.editMod.IEditMenu.IGoToLiner
 import typings.jupyterlabMainmenu.editMod.IEditMenu.IUndoer
 import typings.jupyterlabMainmenu.labmenuMod.IJupyterLabMenu
-import typings.phosphorWidgets.mod.Widget
+import typings.luminoWidgets.mod.Widget
 import typings.std.Set
 import scala.scalajs.js
 import scala.scalajs.js.`|`

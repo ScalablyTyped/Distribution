@@ -1,18 +1,19 @@
 package typings.promiseFs
 
-import typings.promiseFs.promiseFsStrings.buffer
+import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonBuffer extends js.Object {
-  var encoding: buffer
+  var buffer: Uint8Array
+  var bytesRead: Double
 }
 
 object AnonBuffer {
   @scala.inline
-  def apply(encoding: buffer): AnonBuffer = {
-    val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any])
+  def apply(buffer: Uint8Array, bytesRead: Double): AnonBuffer = {
+    val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any], bytesRead = bytesRead.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AnonBuffer]
   }

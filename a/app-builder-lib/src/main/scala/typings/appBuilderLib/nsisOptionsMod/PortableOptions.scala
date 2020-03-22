@@ -18,6 +18,10 @@ trait PortableOptions
     */
   val requestExecutionLevel: js.UndefOr[user | highest | admin] = js.undefined
   /**
+    * The image to show while the portable executable is extracting. This image must be a bitmap (`.bmp`) image.
+    */
+  val splashImage: js.UndefOr[String | Null] = js.undefined
+  /**
     * The unpack directory name in [TEMP](https://www.askvg.com/where-does-windows-store-temporary-files-and-how-to-change-temp-folder-location/) directory.
     *
     * Defaults to [uuid](https://github.com/segmentio/ksuid) of build (changed on each build of portable executable).
@@ -32,6 +36,7 @@ object PortableOptions {
     guid: String = null,
     publish: Publish = null,
     requestExecutionLevel: user | highest | admin = null,
+    splashImage: String = null,
     unicode: js.UndefOr[Boolean] = js.undefined,
     unpackDirName: String = null,
     useZip: js.UndefOr[Boolean] = js.undefined,
@@ -42,6 +47,7 @@ object PortableOptions {
     if (guid != null) __obj.updateDynamic("guid")(guid.asInstanceOf[js.Any])
     if (publish != null) __obj.updateDynamic("publish")(publish.asInstanceOf[js.Any])
     if (requestExecutionLevel != null) __obj.updateDynamic("requestExecutionLevel")(requestExecutionLevel.asInstanceOf[js.Any])
+    if (splashImage != null) __obj.updateDynamic("splashImage")(splashImage.asInstanceOf[js.Any])
     if (!js.isUndefined(unicode)) __obj.updateDynamic("unicode")(unicode.asInstanceOf[js.Any])
     if (unpackDirName != null) __obj.updateDynamic("unpackDirName")(unpackDirName.asInstanceOf[js.Any])
     if (!js.isUndefined(useZip)) __obj.updateDynamic("useZip")(useZip.asInstanceOf[js.Any])

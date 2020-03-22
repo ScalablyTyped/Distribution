@@ -1,6 +1,5 @@
 package typings.screeps
 
-import typings.screeps.screepsBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -67,7 +66,7 @@ class StructureExtensionCls protected () extends StructureExtension {
     * A Store object that contains cargo of this structure.
     */
   /* CompleteClass */
-  override var store: Store[RESOURCE_ENERGY, `false`] = js.native
+  override var store: StoreRESOURCEENERGYfalse = js.native
   /**
     * One of the STRUCTURE_* constants.
     */

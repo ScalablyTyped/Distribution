@@ -15,7 +15,7 @@ trait AddRepresentationOptions extends js.Object {
     */
   var dataURL: js.UndefOr[String] = js.undefined
   /**
-    * Defaults to 0. Required if a bitmap buffer is specified as buffer.
+    * Defaults to 0. Required if a bitmap buffer is specified as `buffer`.
     */
   var height: js.UndefOr[Double] = js.undefined
   /**
@@ -23,7 +23,7 @@ trait AddRepresentationOptions extends js.Object {
     */
   var scaleFactor: Double
   /**
-    * Defaults to 0. Required if a bitmap buffer is specified as buffer.
+    * Defaults to 0. Required if a bitmap buffer is specified as `buffer`.
     */
   var width: js.UndefOr[Double] = js.undefined
 }

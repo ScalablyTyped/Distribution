@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/angular", "IonProgressBar")
 @js.native
 class IonProgressBar protected ()
-  extends typings.ionicAngular.distMod.IonProgressBar {
+  extends typings.ionicAngular.proxiesMod.IonProgressBar {
   def this(c: ChangeDetectorRef, r: ElementRef[_], z: NgZone) = this()
 }
 

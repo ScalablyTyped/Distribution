@@ -3,10 +3,10 @@ package typings.jupyterlabAttachments.modelMod
 import typings.jupyterlabAttachments.modelMod.IAttachmentsModel.ChangedArgs
 import typings.jupyterlabAttachments.modelMod.IAttachmentsModel.IContentFactory
 import typings.jupyterlabAttachments.modelMod.IAttachmentsModel.IOptions
-import typings.jupyterlabCoreutils.nbformatMod.nbformat.IAttachments
-import typings.jupyterlabCoreutils.nbformatMod.nbformat.IMimeBundle
+import typings.jupyterlabNbformat.mod.IAttachments
+import typings.jupyterlabNbformat.mod.IMimeBundle
 import typings.jupyterlabRendermime.attachmentmodelMod.IAttachmentModel
-import typings.phosphorSignaling.mod.ISignal
+import typings.luminoSignaling.mod.ISignal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -48,11 +48,6 @@ class AttachmentsModel () extends IAttachmentsModel {
   /* CompleteClass */
   override val changed: ISignal[IAttachmentsModel, ChangedArgs] = js.native
   /**
-    * A signal emitted when the model changes.
-    */
-  @JSName("changed")
-  val changed_AttachmentsModel: ISignal[this.type, ChangedArgs] = js.native
-  /**
     * The attachment content factory used by the model.
     */
   /* CompleteClass */
@@ -80,6 +75,11 @@ class AttachmentsModel () extends IAttachmentsModel {
     */
   /* CompleteClass */
   override val stateChanged: ISignal[IAttachmentsModel, Unit] = js.native
+  /**
+    * A signal emitted when the model changes.
+    */
+  @JSName("changed")
+  def changed_MAttachmentsModel(): ISignal[this.type, ChangedArgs] = js.native
   /**
     * Clear all of the attachments.
     */
@@ -110,22 +110,43 @@ class AttachmentsModel () extends IAttachmentsModel {
     * Get an item for the specified key.
     */
   /* CompleteClass */
-  override def get(key: String): IAttachmentModel = js.native
+  override def get(key: String): js.UndefOr[IAttachmentModel] = js.native
   /**
     * Whether the specified key is set.
     */
   /* CompleteClass */
   override def has(key: String): Boolean = js.native
   /**
-    * Remove the attachment whose name is the specified key
+    * Test whether the model is disposed.
     */
-  @JSName("remove")
-  def remove_MAttachmentsModel(key: String): Unit = js.native
+  @JSName("isDisposed")
+  def isDisposed_MAttachmentsModel(): Boolean = js.native
+  /**
+    * The keys of the attachments in the model.
+    */
+  @JSName("keys")
+  def keys_MAttachmentsModel(): js.Array[String] = js.native
+  /**
+    * Get the length of the items in the model.
+    */
+  @JSName("length")
+  def length_MAttachmentsModel(): Double = js.native
+  /**
+    * Remove the attachment whose name is the specified key.
+    * Note that this is optional only until Jupyterlab 2.0 release.
+    */
+  /* CompleteClass */
+  override def remove(key: String): Unit = js.native
   /**
     * Set the value of the specified key.
     */
   /* CompleteClass */
   override def set(key: String, attachment: IMimeBundle): Unit = js.native
+  /**
+    * A signal emitted when the model state changes.
+    */
+  @JSName("stateChanged")
+  def stateChanged_MAttachmentsModel(): ISignal[IAttachmentsModel, Unit] = js.native
   /**
     * Serialize the model to JSON.
     */

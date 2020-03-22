@@ -1,7 +1,7 @@
 package typings.magicString.mod
 
 import typings.magicString.AnonContent
-import typings.std.Partial
+import typings.magicString.PartialSourceMapOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +16,9 @@ class Bundle () extends js.Object {
   def append(str: String): Bundle = js.native
   def append(str: String, options: BundleOptions): Bundle = js.native
   def generateDecodedMap(): DecodedSourceMap = js.native
-  def generateDecodedMap(options: Partial[SourceMapOptions]): DecodedSourceMap = js.native
+  def generateDecodedMap(options: PartialSourceMapOptions): DecodedSourceMap = js.native
   def generateMap(): SourceMap = js.native
-  def generateMap(options: Partial[SourceMapOptions]): SourceMap = js.native
+  def generateMap(options: PartialSourceMapOptions): SourceMap = js.native
   def getIndentString(): String = js.native
   def indent(): Bundle = js.native
   def indent(indentStr: String): Bundle = js.native

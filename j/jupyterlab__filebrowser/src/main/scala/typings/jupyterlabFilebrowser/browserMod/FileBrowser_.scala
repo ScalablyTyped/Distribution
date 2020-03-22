@@ -4,8 +4,8 @@ import typings.jupyterlabApputils.mod.Toolbar
 import typings.jupyterlabFilebrowser.browserMod.FileBrowser.IOptions
 import typings.jupyterlabFilebrowser.modelMod.FileBrowserModel
 import typings.jupyterlabServices.contentsMod.Contents.IModel
-import typings.phosphorAlgorithm.iterMod.IIterator
-import typings.phosphorWidgets.mod.Widget
+import typings.luminoAlgorithm.iterMod.IIterator
+import typings.luminoWidgets.mod.Widget
 import typings.std.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -33,10 +33,6 @@ class FileBrowser_ protected () extends Widget {
     * The model used by the file browser.
     */
   val model: FileBrowserModel = js.native
-  /**
-    * Whether to show active file in file browser
-    */
-  var navigateToCurrentDirectory: Boolean = js.native
   /**
     * The toolbar used by the file browser.
     */
@@ -78,6 +74,11 @@ class FileBrowser_ protected () extends Widget {
     * @returns The model for the selected file.
     */
   def modelForClick(event: MouseEvent): js.UndefOr[IModel] = js.native
+  /**
+    * Whether to show active file in file browser
+    */
+  def navigateToCurrentDirectory(): Boolean = js.native
+  def navigateToCurrentDirectory(value: Boolean): js.Any = js.native
   /**
     * Paste the items from the clipboard.
     *

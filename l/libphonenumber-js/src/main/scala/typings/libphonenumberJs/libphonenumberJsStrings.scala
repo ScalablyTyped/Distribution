@@ -177,9 +177,6 @@ object libphonenumberJsStrings {
   sealed trait CZ extends CountryCode
   
   @js.native
-  sealed trait Countries extends js.Object
-  
-  @js.native
   sealed trait DE extends CountryCode
   
   @js.native
@@ -803,9 +800,6 @@ object libphonenumberJsStrings {
   @js.native
   sealed trait ZW extends CountryCode
   
-  @js.native
-  sealed trait getExampleNumber extends js.Object
-  
   @scala.inline
   def `001`: `001` = "001".asInstanceOf[`001`]
   @scala.inline
@@ -918,8 +912,6 @@ object libphonenumberJsStrings {
   def CY: CY = "CY".asInstanceOf[CY]
   @scala.inline
   def CZ: CZ = "CZ".asInstanceOf[CZ]
-  @scala.inline
-  def Countries: Countries = "Countries".asInstanceOf[Countries]
   @scala.inline
   def DE: DE = "DE".asInstanceOf[DE]
   @scala.inline
@@ -1336,7 +1328,5 @@ object libphonenumberJsStrings {
   def ZM: ZM = "ZM".asInstanceOf[ZM]
   @scala.inline
   def ZW: ZW = "ZW".asInstanceOf[ZW]
-  @scala.inline
-  def getExampleNumber: getExampleNumber = "getExampleNumber".asInstanceOf[getExampleNumber]
 }
 

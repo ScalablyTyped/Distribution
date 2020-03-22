@@ -1,6 +1,6 @@
 package typings.aliApp.my
 
-import typings.aliApp.Anon4000
+import typings.aliApp.AnonResultStatus
 import typings.aliApp.aliAppStrings.TINYAPP
 import typings.aliApp.aliAppStrings.WINDOWS
 import typings.aliApp.aliAppStrings.alipay
@@ -132,7 +132,7 @@ trait ZMCreditBorrowOptions
   		 */
   var rent_unit: String
   @JSName("success")
-  var success_ZMCreditBorrowOptions: js.UndefOr[js.Function1[/* res */ Anon4000, Unit]] = js.undefined
+  var success_ZMCreditBorrowOptions: js.UndefOr[js.Function1[/* res */ AnonResultStatus, Unit]] = js.undefined
 }
 
 object ZMCreditBorrowOptions {
@@ -160,7 +160,7 @@ object ZMCreditBorrowOptions {
     name: String = null,
     rent_info: String = null,
     rent_settle_type: merchant | alipay | String = null,
-    success: /* res */ Anon4000 => Unit = null
+    success: /* res */ AnonResultStatus => Unit = null
   ): ZMCreditBorrowOptions = {
     val __obj = js.Dynamic.literal(credit_biz = credit_biz.asInstanceOf[js.Any], deposit_amount = deposit_amount.asInstanceOf[js.Any], expiry_time = expiry_time.asInstanceOf[js.Any], goods_name = goods_name.asInstanceOf[js.Any], out_order_no = out_order_no.asInstanceOf[js.Any], product_code = product_code.asInstanceOf[js.Any], rent_amount = rent_amount.asInstanceOf[js.Any], rent_unit = rent_unit.asInstanceOf[js.Any])
     if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])

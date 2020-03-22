@@ -6,8 +6,17 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait CreateProfilingGroupRequest extends js.Object {
+  /**
+    * The agent orchestration configuration.
+    */
   var agentOrchestrationConfig: js.UndefOr[AgentOrchestrationConfig] = js.native
+  /**
+    * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. This parameter specifies a unique identifier for the new profiling group that helps ensure idempotency.
+    */
   var clientToken: ClientToken = js.native
+  /**
+    * The name of the profiling group.
+    */
   var profilingGroupName: ProfilingGroupName = js.native
 }
 

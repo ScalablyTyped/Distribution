@@ -24,9 +24,6 @@ object handsontableStrings {
   sealed trait AutofillDotfill extends ChangeSource
   
   @js.native
-  sealed trait Bucket extends js.Object
-  
-  @js.native
   sealed trait ColumnSummaryDotreset extends ChangeSource
   
   @js.native
@@ -607,8 +604,6 @@ object handsontableStrings {
   def `---------`: `---------` = "---------".asInstanceOf[`---------`]
   @scala.inline
   def AutofillDotfill: AutofillDotfill = "Autofill.fill".asInstanceOf[AutofillDotfill]
-  @scala.inline
-  def Bucket: Bucket = "Bucket".asInstanceOf[Bucket]
   @scala.inline
   def ColumnSummaryDotreset: ColumnSummaryDotreset = "ColumnSummary.reset".asInstanceOf[ColumnSummaryDotreset]
   @scala.inline

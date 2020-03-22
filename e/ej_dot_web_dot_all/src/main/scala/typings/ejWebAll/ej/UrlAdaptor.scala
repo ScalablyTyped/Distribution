@@ -2,8 +2,8 @@ package typings.ejWebAll.ej
 
 import typings.ejWebAll.AnonContentType
 import typings.ejWebAll.AnonData
-import typings.ejWebAll.AnonDataType
-import typings.ejWebAll.AnonDataTypeUrl
+import typings.ejWebAll.AnonType
+import typings.ejWebAll.AnonUrl
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +19,7 @@ class UrlAdaptor () extends Adaptor {
   def onAggregates(e: js.Any): Unit = js.native
   def onGroup(e: js.Any): Unit = js.native
   def processQuery(dm: DataManager, query: Query, hierarchyFilters: js.Any): AnonContentType = js.native
-  def remove(dm: DataManager, keyField: String, value: js.Any, tableName: String): AnonDataType = js.native
-  def update(dm: DataManager, keyField: String, value: js.Any, tableName: String): AnonDataTypeUrl = js.native
+  def remove(dm: DataManager, keyField: String, value: js.Any, tableName: String): AnonType = js.native
+  def update(dm: DataManager, keyField: String, value: js.Any, tableName: String): AnonUrl = js.native
 }
 

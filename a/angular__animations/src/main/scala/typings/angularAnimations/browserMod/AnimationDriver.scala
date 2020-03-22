@@ -4,9 +4,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/**
-  * @publicApi
-  */
 @JSImport("@angular/animations/browser", "AnimationDriver")
 @js.native
 abstract class AnimationDriver ()

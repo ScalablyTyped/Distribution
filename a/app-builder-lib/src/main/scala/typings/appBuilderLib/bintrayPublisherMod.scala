@@ -21,7 +21,7 @@ object bintrayPublisherMod extends js.Object {
     var init: js.Any = js.native
     val options: js.Any = js.native
     @JSName("providerName")
-    val providerName_BintrayPublisher: Bintray = js.native
+    val providerName_FBintrayPublisher: Bintray = js.native
     val version: js.Any = js.native
     def deleteRelease(): js.Promise[Unit] = js.native
     def deleteRelease(isForce: Boolean): js.Promise[Unit] = js.native

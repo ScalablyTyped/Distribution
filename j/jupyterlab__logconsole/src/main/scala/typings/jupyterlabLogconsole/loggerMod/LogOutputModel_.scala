@@ -1,12 +1,12 @@
 package typings.jupyterlabLogconsole.loggerMod
 
-import typings.jupyterlabCoreutils.nbformatMod.nbformat.ExecutionCount
-import typings.jupyterlabCoreutils.nbformatMod.nbformat.IOutput
 import typings.jupyterlabLogconsole.loggerMod.LogOutputModel.IOptions
+import typings.jupyterlabNbformat.mod.ExecutionCount
+import typings.jupyterlabNbformat.mod.IOutput
 import typings.jupyterlabRendermime.mod.OutputModel
 import typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.IMimeModel.ISetDataOptions
-import typings.phosphorCoreutils.jsonMod.ReadonlyJSONObject
-import typings.phosphorSignaling.mod.ISignal
+import typings.luminoCoreutils.jsonMod.ReadonlyPartialJSONObject
+import typings.luminoSignaling.mod.ISignal
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -32,7 +32,7 @@ class LogOutputModel_ protected ()
     * The data associated with the model.
     */
   /* CompleteClass */
-  override val data: ReadonlyJSONObject = js.native
+  override val data: ReadonlyPartialJSONObject = js.native
   /**
     * The execution count of the model.
     */
@@ -50,7 +50,7 @@ class LogOutputModel_ protected ()
     * that stores a URI fragment identifier for the MIME resource.
     */
   /* CompleteClass */
-  override val metadata: ReadonlyJSONObject = js.native
+  override val metadata: ReadonlyPartialJSONObject = js.native
   /**
     * Date & time when output is logged.
     */

@@ -1,26 +1,24 @@
 package typings.angularCompiler.stylingBuilderMod
 
 import typings.angularCompiler.astMod.AST
-import typings.angularCompiler.constantPoolMod.ConstantPool
 import typings.angularCompiler.outputAstMod.Expression
 import typings.angularCompiler.r3AstMod.BoundAttribute
 import typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
 import typings.angularCompiler.templateMod.ValueConverter
+import typings.angularCompiler.viewUtilMod.DefinitionMap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("@angular/compiler/src/render3/view/styling_builder", "StylingBuilder")
 @js.native
-class StylingBuilder protected () extends js.Object {
-  def this(_elementIndexExpr: Expression) = this()
-  def this(_elementIndexExpr: Expression, _directiveExpr: Expression) = this()
-  var _buildApplyFn: js.Any = js.native
+class StylingBuilder () extends js.Object {
+  def this(_directiveExpr: Expression) = this()
   var _buildClassInputs: js.Any = js.native
   var _buildMapBasedInstruction: js.Any = js.native
-  var _buildSanitizerFn: js.Any = js.native
   var _buildSingleInputs: js.Any = js.native
   var _buildStyleInputs: js.Any = js.native
+  var _checkForPipes: js.Any = js.native
   /** the input for [class] (if it exists) */
   var _classMapInput: js.Any = js.native
   /**
@@ -30,7 +28,6 @@ class StylingBuilder protected () extends js.Object {
     */
   var _classesIndex: js.Any = js.native
   var _directiveExpr: js.Any = js.native
-  var _elementIndexExpr: js.Any = js.native
   var _firstStylingInput: js.Any = js.native
   /** Whether or not there are any static styling values present */
   var _hasInitialValues: js.Any = js.native
@@ -49,20 +46,12 @@ class StylingBuilder protected () extends js.Object {
     * that `width=0` and `height=1`)
     */
   var _stylesIndex: js.Any = js.native
-  var _useDefaultSanitizer: js.Any = js.native
   /**
     *  Whether or not there are any styling bindings present
     *  (i.e. `[style]`, `[class]`, `[style.prop]` or `[class.name]`)
     */
   var hasBindings: Boolean = js.native
-  /**
-    * Builds an instruction with all the expressions and parameters for `classMap`.
-    *
-    * The instruction data will contain all expressions for `classMap` to function
-    * which includes the `[class]` expression params.
-    */
-  def buildClassMapInstruction(valueConverter: ValueConverter): StylingInstruction | Null = js.native
-  def buildHostAttrsInstruction(sourceSpan: Null, attrs: js.Array[Expression], constantPool: ConstantPool): StylingInstruction | Null = js.native
+  var hasBindingsWithPipes: Boolean = js.native
   /**
     * Builds an instruction with all the expressions and parameters for `elementHostAttrs`.
     *
@@ -70,7 +59,14 @@ class StylingBuilder protected () extends js.Object {
     * responsible for registering initial styles (within a directive hostBindings' creation block),
     * as well as any of the provided attribute values, to the directive host element.
     */
-  def buildHostAttrsInstruction(sourceSpan: ParseSourceSpan, attrs: js.Array[Expression], constantPool: ConstantPool): StylingInstruction | Null = js.native
+  def assignHostAttrs(attrs: js.Array[Expression], definitionMap: DefinitionMap): Unit = js.native
+  /**
+    * Builds an instruction with all the expressions and parameters for `classMap`.
+    *
+    * The instruction data will contain all expressions for `classMap` to function
+    * which includes the `[class]` expression params.
+    */
+  def buildClassMapInstruction(valueConverter: ValueConverter): StylingInstruction | Null = js.native
   /**
     * Builds an instruction with all the expressions and parameters for `styleMap`.
     *
@@ -78,14 +74,6 @@ class StylingBuilder protected () extends js.Object {
     * which includes the `[style]` expression params.
     */
   def buildStyleMapInstruction(valueConverter: ValueConverter): StylingInstruction | Null = js.native
-  def buildStylingInstruction(sourceSpan: Null, constantPool: ConstantPool): StylingInstruction | Null = js.native
-  /**
-    * Builds an instruction with all the expressions and parameters for `styling`.
-    *
-    * The instruction generation code below is used for producing the AOT statement code which is
-    * responsible for registering style/class bindings to an element.
-    */
-  def buildStylingInstruction(sourceSpan: ParseSourceSpan, constantPool: ConstantPool): StylingInstruction | Null = js.native
   /**
     * Constructs all instructions which contain the expressions that will be placed
     * into the update block of a template function or a directive hostBindings function.

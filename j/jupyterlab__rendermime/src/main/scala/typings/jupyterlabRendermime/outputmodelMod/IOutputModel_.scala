@@ -1,11 +1,11 @@
 package typings.jupyterlabRendermime.outputmodelMod
 
-import typings.jupyterlabCoreutils.nbformatMod.nbformat.ExecutionCount
-import typings.jupyterlabCoreutils.nbformatMod.nbformat.IOutput
+import typings.jupyterlabNbformat.mod.ExecutionCount
+import typings.jupyterlabNbformat.mod.IOutput
 import typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.IMimeModel
 import typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.IMimeModel.ISetDataOptions
-import typings.phosphorCoreutils.jsonMod.ReadonlyJSONObject
-import typings.phosphorSignaling.mod.ISignal
+import typings.luminoCoreutils.jsonMod.ReadonlyPartialJSONObject
+import typings.luminoSignaling.mod.ISignal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,9 +37,9 @@ object IOutputModel_ {
   @scala.inline
   def apply(
     changed: ISignal[IOutputModel_, Unit],
-    data: ReadonlyJSONObject,
+    data: ReadonlyPartialJSONObject,
     dispose: () => Unit,
-    metadata: ReadonlyJSONObject,
+    metadata: ReadonlyPartialJSONObject,
     setData: ISetDataOptions => Unit,
     toJSON: () => IOutput,
     trusted: Boolean,

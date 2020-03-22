@@ -44,6 +44,7 @@ object mod extends js.Object {
   ): typings.expoFileSystem.fileSystemMod.DownloadResumable = js.native
   def deleteAsync(fileUri: String): js.Promise[Unit] = js.native
   def deleteAsync(fileUri: String, options: AnonIdempotent): js.Promise[Unit] = js.native
+  def deleteLegacyDocumentDirectoryAndroid(): js.Promise[Unit] = js.native
   def downloadAsync(uri: String, fileUri: String): js.Promise[DownloadResult] = js.native
   def downloadAsync(uri: String, fileUri: String, options: DownloadOptions): js.Promise[DownloadResult] = js.native
   def getContentUriAsync(fileUri: String): js.Promise[String] = js.native

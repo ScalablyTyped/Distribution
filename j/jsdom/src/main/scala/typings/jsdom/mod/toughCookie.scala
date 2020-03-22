@@ -2,8 +2,8 @@ package typings.jsdom.mod
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.TopLevel
-import typings.jsdom.TypeofClassCookie
-import typings.jsdom.TypeofClassCookieJar
+import typings.jsdom.TypeofCookie
+import typings.jsdom.TypeofCookieJar
 import typings.std.Date
 import typings.toughCookie.mod.Cookie
 import scala.scalajs.js
@@ -21,8 +21,8 @@ object toughCookie extends js.Object {
   class Store ()
     extends typings.toughCookie.mod.Store
   
-  var Cookie: js.Any | TypeofClassCookie = js.native
-  var CookieJar: js.Any | TypeofClassCookieJar = js.native
+  var Cookie: js.Any | TypeofCookie = js.native
+  var CookieJar: js.Any | TypeofCookieJar = js.native
   def canonicalDomain(str: String): String = js.native
   def cookieCompare(a: Cookie, b: Cookie): Double = js.native
   def defaultPath(path: String): String = js.native

@@ -66,6 +66,7 @@ trait ClusterInfo extends js.Object {
     
     */
   var EnhancedMonitoring: js.UndefOr[typings.awsSdk.kafkaMod.EnhancedMonitoring] = js.native
+  var LoggingInfo: js.UndefOr[typings.awsSdk.kafkaMod.LoggingInfo] = js.native
   /**
     * 
     The number of broker nodes in the cluster.
@@ -112,6 +113,7 @@ object ClusterInfo {
     CurrentVersion: string = null,
     EncryptionInfo: EncryptionInfo = null,
     EnhancedMonitoring: EnhancedMonitoring = null,
+    LoggingInfo: LoggingInfo = null,
     NumberOfBrokerNodes: Int | Double = null,
     OpenMonitoring: OpenMonitoring = null,
     State: ClusterState = null,
@@ -130,6 +132,7 @@ object ClusterInfo {
     if (CurrentVersion != null) __obj.updateDynamic("CurrentVersion")(CurrentVersion.asInstanceOf[js.Any])
     if (EncryptionInfo != null) __obj.updateDynamic("EncryptionInfo")(EncryptionInfo.asInstanceOf[js.Any])
     if (EnhancedMonitoring != null) __obj.updateDynamic("EnhancedMonitoring")(EnhancedMonitoring.asInstanceOf[js.Any])
+    if (LoggingInfo != null) __obj.updateDynamic("LoggingInfo")(LoggingInfo.asInstanceOf[js.Any])
     if (NumberOfBrokerNodes != null) __obj.updateDynamic("NumberOfBrokerNodes")(NumberOfBrokerNodes.asInstanceOf[js.Any])
     if (OpenMonitoring != null) __obj.updateDynamic("OpenMonitoring")(OpenMonitoring.asInstanceOf[js.Any])
     if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])

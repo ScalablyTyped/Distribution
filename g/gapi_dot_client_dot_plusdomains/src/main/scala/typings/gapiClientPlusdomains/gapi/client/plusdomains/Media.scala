@@ -1,6 +1,6 @@
 package typings.gapiClientPlusdomains.gapi.client.plusdomains
 
-import typings.gapiClientPlusdomains.AnonDisplayName
+import typings.gapiClientPlusdomains.AnonImage
 import typings.gapiClientPlusdomains.AnonTime
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait Media extends js.Object {
   /** The person who uploaded this media. */
-  var author: js.UndefOr[AnonDisplayName] = js.undefined
+  var author: js.UndefOr[AnonImage] = js.undefined
   /** The display name for this media. */
   var displayName: js.UndefOr[String] = js.undefined
   /** ETag of this response for caching purposes. */
@@ -55,7 +55,7 @@ trait Media extends js.Object {
 object Media {
   @scala.inline
   def apply(
-    author: AnonDisplayName = null,
+    author: AnonImage = null,
     displayName: String = null,
     etag: String = null,
     exif: AnonTime = null,

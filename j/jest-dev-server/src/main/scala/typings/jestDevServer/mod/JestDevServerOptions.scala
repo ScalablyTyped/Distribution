@@ -1,5 +1,6 @@
 package typings.jestDevServer.mod
 
+import typings.jestDevServer.PartialWaitOnOptions
 import typings.jestDevServer.jestDevServerStrings.ask
 import typings.jestDevServer.jestDevServerStrings.error
 import typings.jestDevServer.jestDevServerStrings.http
@@ -8,8 +9,6 @@ import typings.jestDevServer.jestDevServerStrings.ignore
 import typings.jestDevServer.jestDevServerStrings.kill
 import typings.jestDevServer.jestDevServerStrings.socket
 import typings.jestDevServer.jestDevServerStrings.tcp
-import typings.std.Partial
-import typings.waitOn.mod.WaitOnOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -115,7 +114,7 @@ trait JestDevServerOptions extends js.Object {
     *   },
     * }
     */
-  var waitOnScheme: js.UndefOr[Partial[WaitOnOptions]] = js.undefined
+  var waitOnScheme: js.UndefOr[PartialWaitOnOptions] = js.undefined
 }
 
 object JestDevServerOptions {
@@ -128,7 +127,7 @@ object JestDevServerOptions {
     port: Int | Double = null,
     protocol: https | http | tcp | socket = null,
     usedPortAction: ask | error | ignore | kill = null,
-    waitOnScheme: Partial[WaitOnOptions] = null
+    waitOnScheme: PartialWaitOnOptions = null
   ): JestDevServerOptions = {
     val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any])
     if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])

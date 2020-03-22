@@ -11,7 +11,9 @@ import typings.ddTrace.mod.plugins.dns
 import typings.ddTrace.mod.plugins.elasticsearch
 import typings.ddTrace.mod.plugins.express
 import typings.ddTrace.mod.plugins.fastify
+import typings.ddTrace.mod.plugins.fs
 import typings.ddTrace.mod.plugins.genericPool
+import typings.ddTrace.mod.plugins.googleCloudPubsub
 import typings.ddTrace.mod.plugins.graphql
 import typings.ddTrace.mod.plugins.grpc
 import typings.ddTrace.mod.plugins.hapi
@@ -34,6 +36,7 @@ import typings.ddTrace.mod.plugins.promiseJs
 import typings.ddTrace.mod.plugins.q
 import typings.ddTrace.mod.plugins.redis
 import typings.ddTrace.mod.plugins.restify
+import typings.ddTrace.mod.plugins.rhea
 import typings.ddTrace.mod.plugins.router
 import typings.ddTrace.mod.plugins.tedious
 import typings.ddTrace.mod.plugins.when
@@ -55,7 +58,9 @@ trait Plugins_ extends js.Object {
   var elasticsearch: typings.ddTrace.mod.plugins.elasticsearch
   var express: typings.ddTrace.mod.plugins.express
   var fastify: typings.ddTrace.mod.plugins.fastify
+  var fs: typings.ddTrace.mod.plugins.fs
   var `generic-pool`: genericPool
+  var `google-cloud-pubsub`: googleCloudPubsub
   var graphql: typings.ddTrace.mod.plugins.graphql
   var grpc: typings.ddTrace.mod.plugins.grpc
   var hapi: typings.ddTrace.mod.plugins.hapi
@@ -78,6 +83,7 @@ trait Plugins_ extends js.Object {
   var q: typings.ddTrace.mod.plugins.q
   var redis: typings.ddTrace.mod.plugins.redis
   var restify: typings.ddTrace.mod.plugins.restify
+  var rhea: typings.ddTrace.mod.plugins.rhea
   var router: typings.ddTrace.mod.plugins.router
   var tedious: typings.ddTrace.mod.plugins.tedious
   var when: typings.ddTrace.mod.plugins.when
@@ -98,7 +104,9 @@ object Plugins_ {
     elasticsearch: elasticsearch,
     express: express,
     fastify: fastify,
+    fs: fs,
     `generic-pool`: genericPool,
+    `google-cloud-pubsub`: googleCloudPubsub,
     graphql: graphql,
     grpc: grpc,
     hapi: hapi,
@@ -121,14 +129,16 @@ object Plugins_ {
     q: q,
     redis: redis,
     restify: restify,
+    rhea: rhea,
     router: router,
     tedious: tedious,
     when: when,
     winston: winston
   ): Plugins_ = {
-    val __obj = js.Dynamic.literal(amqp10 = amqp10.asInstanceOf[js.Any], amqplib = amqplib.asInstanceOf[js.Any], bluebird = bluebird.asInstanceOf[js.Any], bunyan = bunyan.asInstanceOf[js.Any], connect = connect.asInstanceOf[js.Any], couchbase = couchbase.asInstanceOf[js.Any], dns = dns.asInstanceOf[js.Any], elasticsearch = elasticsearch.asInstanceOf[js.Any], express = express.asInstanceOf[js.Any], fastify = fastify.asInstanceOf[js.Any], graphql = graphql.asInstanceOf[js.Any], grpc = grpc.asInstanceOf[js.Any], hapi = hapi.asInstanceOf[js.Any], http = http.asInstanceOf[js.Any], http2 = http2.asInstanceOf[js.Any], ioredis = ioredis.asInstanceOf[js.Any], knex = knex.asInstanceOf[js.Any], koa = koa.asInstanceOf[js.Any], memcached = memcached.asInstanceOf[js.Any], mysql = mysql.asInstanceOf[js.Any], mysql2 = mysql2.asInstanceOf[js.Any], net = net.asInstanceOf[js.Any], paperplane = paperplane.asInstanceOf[js.Any], pg = pg.asInstanceOf[js.Any], pino = pino.asInstanceOf[js.Any], promise = promise.asInstanceOf[js.Any], q = q.asInstanceOf[js.Any], redis = redis.asInstanceOf[js.Any], restify = restify.asInstanceOf[js.Any], router = router.asInstanceOf[js.Any], tedious = tedious.asInstanceOf[js.Any], when = when.asInstanceOf[js.Any], winston = winston.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(amqp10 = amqp10.asInstanceOf[js.Any], amqplib = amqplib.asInstanceOf[js.Any], bluebird = bluebird.asInstanceOf[js.Any], bunyan = bunyan.asInstanceOf[js.Any], connect = connect.asInstanceOf[js.Any], couchbase = couchbase.asInstanceOf[js.Any], dns = dns.asInstanceOf[js.Any], elasticsearch = elasticsearch.asInstanceOf[js.Any], express = express.asInstanceOf[js.Any], fastify = fastify.asInstanceOf[js.Any], fs = fs.asInstanceOf[js.Any], graphql = graphql.asInstanceOf[js.Any], grpc = grpc.asInstanceOf[js.Any], hapi = hapi.asInstanceOf[js.Any], http = http.asInstanceOf[js.Any], http2 = http2.asInstanceOf[js.Any], ioredis = ioredis.asInstanceOf[js.Any], knex = knex.asInstanceOf[js.Any], koa = koa.asInstanceOf[js.Any], memcached = memcached.asInstanceOf[js.Any], mysql = mysql.asInstanceOf[js.Any], mysql2 = mysql2.asInstanceOf[js.Any], net = net.asInstanceOf[js.Any], paperplane = paperplane.asInstanceOf[js.Any], pg = pg.asInstanceOf[js.Any], pino = pino.asInstanceOf[js.Any], promise = promise.asInstanceOf[js.Any], q = q.asInstanceOf[js.Any], redis = redis.asInstanceOf[js.Any], restify = restify.asInstanceOf[js.Any], rhea = rhea.asInstanceOf[js.Any], router = router.asInstanceOf[js.Any], tedious = tedious.asInstanceOf[js.Any], when = when.asInstanceOf[js.Any], winston = winston.asInstanceOf[js.Any])
     __obj.updateDynamic("cassandra-driver")(`cassandra-driver`.asInstanceOf[js.Any])
     __obj.updateDynamic("generic-pool")(`generic-pool`.asInstanceOf[js.Any])
+    __obj.updateDynamic("google-cloud-pubsub")(`google-cloud-pubsub`.asInstanceOf[js.Any])
     __obj.updateDynamic("limitd-client")(`limitd-client`.asInstanceOf[js.Any])
     __obj.updateDynamic("mongodb-core")(`mongodb-core`.asInstanceOf[js.Any])
     __obj.updateDynamic("promise-js")(`promise-js`.asInstanceOf[js.Any])

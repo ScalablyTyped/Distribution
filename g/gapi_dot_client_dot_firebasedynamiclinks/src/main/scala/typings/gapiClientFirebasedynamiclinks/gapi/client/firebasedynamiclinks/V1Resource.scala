@@ -2,7 +2,7 @@ package typings.gapiClientFirebasedynamiclinks.gapi.client.firebasedynamiclinks
 
 import typings.gapiClient.gapi.client.Request_
 import typings.gapiClientFirebasedynamiclinks.AnonAccesstoken
-import typings.gapiClientFirebasedynamiclinks.AnonAccesstokenAlt
+import typings.gapiClientFirebasedynamiclinks.AnonAlt
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ trait V1Resource extends js.Object {
     * duration. Metrics include number of clicks, redirects, installs,
     * app first opens, and app reopens.
     */
-  def getLinkStats(request: AnonAccesstokenAlt): Request_[DynamicLinkStats]
+  def getLinkStats(request: AnonAlt): Request_[DynamicLinkStats]
   /** Get iOS strong/weak-match info for post-install attribution. */
   def installAttribution(request: AnonAccesstoken): Request_[GetIosPostInstallAttributionResponse]
 }
@@ -21,7 +21,7 @@ trait V1Resource extends js.Object {
 object V1Resource {
   @scala.inline
   def apply(
-    getLinkStats: AnonAccesstokenAlt => Request_[DynamicLinkStats],
+    getLinkStats: AnonAlt => Request_[DynamicLinkStats],
     installAttribution: AnonAccesstoken => Request_[GetIosPostInstallAttributionResponse]
   ): V1Resource = {
     val __obj = js.Dynamic.literal(getLinkStats = js.Any.fromFunction1(getLinkStats), installAttribution = js.Any.fromFunction1(installAttribution))

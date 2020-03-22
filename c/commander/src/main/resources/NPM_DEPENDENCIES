@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "commander" : "3.0.2"
+      "commander" : "4.1.1"
     }
   ],
   "test-dependencies" : [
     {
-      "commander" : "3.0.2"
+      "commander" : "4.1.1"
     }
   ],
   "compile-devDependencies" : [

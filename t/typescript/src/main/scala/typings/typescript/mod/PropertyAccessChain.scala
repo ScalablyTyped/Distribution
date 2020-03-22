@@ -9,5 +9,7 @@ trait PropertyAccessChain
   extends PropertyAccessExpression
      with OptionalChain {
   var _optionalChainBrand: js.Any = js.native
+  @JSName("name")
+  var name_PropertyAccessChain: Identifier = js.native
 }
 

@@ -21,7 +21,7 @@ trait IStaticResourceConfig extends js.Object {
   /**
     * List of bindable properties of this custom element / custom attribute, by name or full config object
     */
-  var bindables: js.UndefOr[String | js.Array[IBindablePropertyConfig]] = js.undefined
+  var bindables: js.UndefOr[js.Array[String | IBindablePropertyConfig]] = js.undefined
   /**
     * Flag a custom element as containerless. Which will remove their render target
     */
@@ -90,7 +90,7 @@ trait IStaticResourceConfig extends js.Object {
 object IStaticResourceConfig {
   @scala.inline
   def apply(
-    bindables: String | js.Array[IBindablePropertyConfig] = null,
+    bindables: js.Array[String | IBindablePropertyConfig] = null,
     containerless: js.UndefOr[Boolean] = js.undefined,
     defaultBindingMode: bindingMode | oneTime | oneWay | twoWay | fromView | toView = null,
     hasDynamicOptions: js.UndefOr[Boolean] = js.undefined,

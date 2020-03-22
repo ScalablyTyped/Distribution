@@ -7,21 +7,21 @@ import scala.scalajs.js.annotation._
 @js.native
 trait PutPartnerEventsRequestEntry extends js.Object {
   /**
-    * A valid JSON object. There is no other schema imposed. The JSON object can contain fields and nested subobjects. This field is required.
+    * A valid JSON string. There is no other schema imposed. The JSON string may contain fields and nested subobjects.
     */
   var Detail: js.UndefOr[String] = js.native
   /**
-    * A free-form string used to decide which fields to expect in the event detail. This field is required.
+    * A free-form string used to decide what fields to expect in the event detail.
     */
   var DetailType: js.UndefOr[String] = js.native
   /**
-    * AWS resources, identified by Amazon Resource Name (ARN), that the event primarily concerns. Any number, including zero, can be present.
+    * AWS resources, identified by Amazon Resource Name (ARN), which the event primarily concerns. Any number, including zero, may be present.
     */
   var Resources: js.UndefOr[EventResourceList] = js.native
   /**
-    * The event source that is generating the evntry. This field is required.
+    * The event source that is generating the evntry.
     */
-  var Source: js.UndefOr[String] = js.native
+  var Source: js.UndefOr[EventSourceName] = js.native
   /**
     * The date and time of the event.
     */
@@ -34,7 +34,7 @@ object PutPartnerEventsRequestEntry {
     Detail: String = null,
     DetailType: String = null,
     Resources: EventResourceList = null,
-    Source: String = null,
+    Source: EventSourceName = null,
     Time: EventTime = null
   ): PutPartnerEventsRequestEntry = {
     val __obj = js.Dynamic.literal()

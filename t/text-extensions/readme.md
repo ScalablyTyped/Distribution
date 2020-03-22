@@ -1,7 +1,7 @@
 
 # Scala.js typings for text-extensions
 
-Typings are for version 2.0.0
+Typings are for version 2.1.0
 
 ## Library description:
 List of text file extensions

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/angular", "TextValueAccessor")
 @js.native
 class TextValueAccessor protected ()
-  extends typings.ionicAngular.distMod.TextValueAccessor {
+  extends typings.ionicAngular.textValueAccessorMod.TextValueAccessor {
   def this(el: ElementRef[_]) = this()
 }
 

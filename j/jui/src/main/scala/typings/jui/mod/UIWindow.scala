@@ -1,6 +1,6 @@
 package typings.jui.mod
 
-import typings.jui.AnonBottomEvent
+import typings.jui.AnonBottom
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait UIWindow extends js.Object {
   def apply(selector: js.Any): this.type = js.native
-  def apply(selector: js.Any, options: AnonBottomEvent): this.type = js.native
+  def apply(selector: js.Any, options: AnonBottom): this.type = js.native
   def hide(): Unit = js.native
   /**
     * Moves a window at specified coordinates

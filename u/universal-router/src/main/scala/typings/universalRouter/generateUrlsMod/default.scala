@@ -1,6 +1,5 @@
 package typings.universalRouter.generateUrlsMod
 
-import typings.universalRouter.mod.Context
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,14 +7,15 @@ import scala.scalajs.js.annotation._
 @JSImport("universal-router/src/generateUrls", JSImport.Default)
 @js.native
 object default extends js.Object {
-  def apply(router: typings.universalRouter.mod.default[Context, _]): js.Function2[/* routeName */ String, /* params */ js.UndefOr[Params], String] = js.native
-  def apply(router: typings.universalRouter.mod.default[Context, _], options: GenerateUrlsOptions): js.Function2[/* routeName */ String, /* params */ js.UndefOr[Params], String] = js.native
+  /**
+    * Create a function to generate urls by route names.
+    */
   def apply(
-    router: typings.universalRouter.universalRouterSyncMod.default[typings.universalRouter.universalRouterSyncMod.Context, _]
-  ): js.Function2[/* routeName */ String, /* params */ js.UndefOr[Params], String] = js.native
+    router: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify UniversalRouter */ js.Any
+  ): GenerateUrl = js.native
   def apply(
-    router: typings.universalRouter.universalRouterSyncMod.default[typings.universalRouter.universalRouterSyncMod.Context, _],
+    router: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify UniversalRouter */ js.Any,
     options: GenerateUrlsOptions
-  ): js.Function2[/* routeName */ String, /* params */ js.UndefOr[Params], String] = js.native
+  ): GenerateUrl = js.native
 }
 

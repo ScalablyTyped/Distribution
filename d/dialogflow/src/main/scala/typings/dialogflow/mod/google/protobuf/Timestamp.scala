@@ -1,6 +1,7 @@
 package typings.dialogflow.mod.google.protobuf
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.long.mod.Long
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
@@ -23,7 +24,7 @@ class Timestamp () extends ITimestamp {
   var nanos_Timestamp: Double = js.native
   /** Timestamp seconds. */
   @JSName("seconds")
-  var seconds_Timestamp: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) = js.native
+  var seconds_Timestamp: Double | Long | String = js.native
   /**
     * Converts this Timestamp to JSON.
     * @returns JSON object

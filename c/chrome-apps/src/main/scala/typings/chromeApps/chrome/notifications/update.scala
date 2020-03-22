@@ -1,6 +1,6 @@
 package typings.chromeApps.chrome.notifications
 
-import typings.std.Partial
+import typings.chromeApps.PartialNotificationOption
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,10 +14,10 @@ object update extends js.Object {
     * @param options Contents of the notification to update to.
     * @param [callback] Called to indicate whether a matching notification existed.
     */
-  def apply(notificationId: String, options: Partial[NotificationOptions]): Unit = js.native
+  def apply(notificationId: String, options: PartialNotificationOption): Unit = js.native
   def apply(
     notificationId: String,
-    options: Partial[NotificationOptions],
+    options: PartialNotificationOption,
     callback: js.Function1[/* wasUpdated */ Boolean, Unit]
   ): Unit = js.native
 }

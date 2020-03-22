@@ -25,6 +25,7 @@ object setElementVectorMod extends js.Object {
     var associative_ : js.Any = js.native
   }
   
+  /* static members */
   @js.native
   object SetElementVector extends js.Object {
     /**
@@ -36,8 +37,8 @@ object setElementVectorMod extends js.Object {
       *
       * @author Jeongho Nam - https://github.com/samchon
       */
-    /* import warning: RemoveDifficultInheritance.summarizeChanges 
-    - Dropped {readonly [ P in keyof tstl.tstl/base/container/IContainer.IContainer.Iterator<Key, Source, tstl.tstl/internal/container/associative/SetElementVector.SetElementVector.Iterator<Key, Unique, Source>, tstl.tstl/internal/container/associative/SetElementVector.SetElementVector.ReverseIterator<Key, Unique, Source>, Key> ]: tstl.tstl/base/container/IContainer.IContainer.Iterator<Key, Source, tstl.tstl/internal/container/associative/SetElementVector.SetElementVector.Iterator<Key, Unique, Source>, tstl.tstl/internal/container/associative/SetElementVector.SetElementVector.ReverseIterator<Key, Unique, Source>, Key>[P]} */ @js.native
+    /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+    - typings.tstl.itreesetMod.ITreeSet.Iterator because var conflicts: value. Inlined  */ @js.native
     class Iterator[Key, Unique /* <: Boolean */, Source /* <: ITreeSet[Key, Unique, Source, Iterator[Key, Unique, Source], ReverseIterator[Key, Unique, Source]] */] () extends ArrayIteratorBase[
               Key, 
               Source, 
@@ -56,8 +57,8 @@ object setElementVectorMod extends js.Object {
       *
       * @author Jeongho Nam - https://github.com/samchon
       */
-    /* import warning: RemoveDifficultInheritance.summarizeChanges 
-    - Dropped {readonly [ P in keyof tstl.tstl/base/container/IContainer.IContainer.ReverseIterator<Key, Source, tstl.tstl/internal/container/associative/SetElementVector.SetElementVector.Iterator<Key, Unique, Source>, tstl.tstl/internal/container/associative/SetElementVector.SetElementVector.ReverseIterator<Key, Unique, Source>, Key> ]: tstl.tstl/base/container/IContainer.IContainer.ReverseIterator<Key, Source, tstl.tstl/internal/container/associative/SetElementVector.SetElementVector.Iterator<Key, Unique, Source>, tstl.tstl/internal/container/associative/SetElementVector.SetElementVector.ReverseIterator<Key, Unique, Source>, Key>[P]} */ @js.native
+    /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+    - typings.tstl.itreesetMod.ITreeSet.ReverseIterator because var conflicts: value. Inlined  */ @js.native
     class ReverseIterator[Key, Unique /* <: Boolean */, Source /* <: ITreeSet[Key, Unique, Source, Iterator[Key, Unique, Source], ReverseIterator[Key, Unique, Source]] */] () extends ArrayReverseIteratorBase[
               Key, 
               Source, 
@@ -67,6 +68,10 @@ object setElementVectorMod extends js.Object {
               Key
             ]
     
+    /**
+      * @internal
+      */
+    def _Swap_associative[Key, Unique /* <: Boolean */, Source /* <: ITreeSet[Key, Unique, Source, Iterator[Key, Unique, Source], ReverseIterator[Key, Unique, Source]] */](x: SetElementVector[Key, Unique, Source], y: SetElementVector[Key, Unique, Source]): Unit = js.native
   }
   
 }

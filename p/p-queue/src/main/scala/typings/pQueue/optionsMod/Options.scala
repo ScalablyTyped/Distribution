@@ -2,11 +2,12 @@ package typings.pQueue.optionsMod
 
 import org.scalablytyped.runtime.Instantiable0
 import typings.pQueue.queueMod.Queue
+import typings.pQueue.queueMod.RunFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Options[QueueType /* <: Queue[QueueOptions] */, QueueOptions /* <: QueueAddOptions */] extends js.Object {
+trait Options[QueueType /* <: Queue[RunFunction, QueueOptions] */, QueueOptions /* <: QueueAddOptions */] extends js.Object {
   /**
     Whether queue tasks within concurrency limit, are auto-executed as soon as they're added.
     @default true
@@ -52,7 +53,7 @@ trait Options[QueueType /* <: Queue[QueueOptions] */, QueueOptions /* <: QueueAd
 
 object Options {
   @scala.inline
-  def apply[QueueType /* <: Queue[QueueOptions] */, QueueOptions /* <: QueueAddOptions */](
+  def apply[QueueType /* <: Queue[RunFunction, QueueOptions] */, QueueOptions /* <: QueueAddOptions */](
     autoStart: js.UndefOr[Boolean] = js.undefined,
     carryoverConcurrencyCount: js.UndefOr[Boolean] = js.undefined,
     concurrency: Int | Double = null,

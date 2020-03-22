@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@electron/get" : "1.8.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@electron/get" : "1.8.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

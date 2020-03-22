@@ -1,11 +1,7 @@
 package typings.apolloServerTypes.mod
 
-import typings.apolloServerEnv.mod.Response
-import typings.apolloServerTypes.apolloServerTypesStrings.headers
-import typings.apolloServerTypes.apolloServerTypesStrings.status
+import typings.apolloServerTypes.PickResponseheadersPartia
 import typings.graphql.formatErrorMod.GraphQLFormattedError
-import typings.std.Partial
-import typings.std.Pick
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,7 +11,7 @@ trait GraphQLResponse extends js.Object {
   var data: js.UndefOr[(Record[String, _]) | Null] = js.undefined
   var errors: js.UndefOr[js.Array[GraphQLFormattedError[Record[String, _]]]] = js.undefined
   var extensions: js.UndefOr[Record[String, _]] = js.undefined
-  var http: js.UndefOr[(Pick[Response, headers]) with (Partial[Pick[Mutable[Response], status]])] = js.undefined
+  var http: js.UndefOr[PickResponseheadersPartia] = js.undefined
 }
 
 object GraphQLResponse {
@@ -24,7 +20,7 @@ object GraphQLResponse {
     data: Record[String, _] = null,
     errors: js.Array[GraphQLFormattedError[Record[String, _]]] = null,
     extensions: Record[String, _] = null,
-    http: (Pick[Response, headers]) with (Partial[Pick[Mutable[Response], status]]) = null
+    http: PickResponseheadersPartia = null
   ): GraphQLResponse = {
     val __obj = js.Dynamic.literal()
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])

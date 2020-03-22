@@ -33,6 +33,9 @@ object OperationResponseType extends js.Object {
   sealed trait inflation extends OperationResponseType
   
   @js.native
+  sealed trait manageBuyOffer extends OperationResponseType
+  
+  @js.native
   sealed trait manageData extends OperationResponseType
   
   @js.native
@@ -40,6 +43,9 @@ object OperationResponseType extends js.Object {
   
   @js.native
   sealed trait pathPayment extends OperationResponseType
+  
+  @js.native
+  sealed trait pathPaymentStrictSend extends OperationResponseType
   
   @js.native
   sealed trait payment extends OperationResponseType
@@ -64,20 +70,26 @@ object OperationResponseType extends js.Object {
   /* "create_account" */ @js.native
   object createAccount extends TopLevel[createAccount with String]
   
-  /* "create_passive_offer" */ @js.native
+  /* "create_passive_sell_offer" */ @js.native
   object createPassiveOffer extends TopLevel[createPassiveOffer with String]
   
   /* "inflation" */ @js.native
   object inflation extends TopLevel[inflation with String]
   
+  /* "manage_buy_offer" */ @js.native
+  object manageBuyOffer extends TopLevel[manageBuyOffer with String]
+  
   /* "manage_data" */ @js.native
   object manageData extends TopLevel[manageData with String]
   
-  /* "manage_offer" */ @js.native
+  /* "manage_sell_offer" */ @js.native
   object manageOffer extends TopLevel[manageOffer with String]
   
-  /* "path_payment" */ @js.native
+  /* "path_payment_strict_receive" */ @js.native
   object pathPayment extends TopLevel[pathPayment with String]
+  
+  /* "path_payment_strict_send" */ @js.native
+  object pathPaymentStrictSend extends TopLevel[pathPaymentStrictSend with String]
   
   /* "payment" */ @js.native
   object payment extends TopLevel[payment with String]

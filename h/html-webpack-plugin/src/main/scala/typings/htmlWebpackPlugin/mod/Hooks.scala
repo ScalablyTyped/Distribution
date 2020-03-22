@@ -1,9 +1,9 @@
 package typings.htmlWebpackPlugin.mod
 
 import typings.htmlWebpackPlugin.AnonAssets
-import typings.htmlWebpackPlugin.AnonAssetsHtml
 import typings.htmlWebpackPlugin.AnonBody
 import typings.htmlWebpackPlugin.AnonHtml
+import typings.htmlWebpackPlugin.AnonOutputName
 import typings.std.Error
 import typings.tapable.mod.AsyncSeriesHook
 import typings.tapable.mod.AsyncSeriesWaterfallHook
@@ -23,11 +23,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Hooks extends CompilationHooks {
-  var htmlWebpackPluginAfterEmit: AsyncSeriesWaterfallHook[AnonHtml, _, _]
-  var htmlWebpackPluginAfterHtmlProcessing: AsyncSeriesWaterfallHook[AnonAssetsHtml, _, _]
+  var htmlWebpackPluginAfterEmit: AsyncSeriesWaterfallHook[AnonOutputName, _, _]
+  var htmlWebpackPluginAfterHtmlProcessing: AsyncSeriesWaterfallHook[AnonHtml, _, _]
   var htmlWebpackPluginAlterAssetTags: AsyncSeriesWaterfallHook[AnonBody, _, _]
   var htmlWebpackPluginBeforeHtmlGeneration: AsyncSeriesWaterfallHook[AnonAssets, _, _]
-  var htmlWebpackPluginBeforeHtmlProcessing: AsyncSeriesWaterfallHook[AnonAssetsHtml, _, _]
+  var htmlWebpackPluginBeforeHtmlProcessing: AsyncSeriesWaterfallHook[AnonHtml, _, _]
 }
 
 object Hooks {
@@ -61,11 +61,11 @@ object Hooks {
     failedModule: SyncHook[Module, Error, _],
     finishModules: SyncHook[js.Array[Module], _, _],
     finishRebuildingModule: SyncHook[Module, _, _],
-    htmlWebpackPluginAfterEmit: AsyncSeriesWaterfallHook[AnonHtml, _, _],
-    htmlWebpackPluginAfterHtmlProcessing: AsyncSeriesWaterfallHook[AnonAssetsHtml, _, _],
+    htmlWebpackPluginAfterEmit: AsyncSeriesWaterfallHook[AnonOutputName, _, _],
+    htmlWebpackPluginAfterHtmlProcessing: AsyncSeriesWaterfallHook[AnonHtml, _, _],
     htmlWebpackPluginAlterAssetTags: AsyncSeriesWaterfallHook[AnonBody, _, _],
     htmlWebpackPluginBeforeHtmlGeneration: AsyncSeriesWaterfallHook[AnonAssets, _, _],
-    htmlWebpackPluginBeforeHtmlProcessing: AsyncSeriesWaterfallHook[AnonAssetsHtml, _, _],
+    htmlWebpackPluginBeforeHtmlProcessing: AsyncSeriesWaterfallHook[AnonHtml, _, _],
     moduleAsset: SyncHook[Module, String, _],
     moduleIds: SyncHook[js.Array[Module], _, _],
     needAdditionalPass: SyncBailHook[_, _, _, _],

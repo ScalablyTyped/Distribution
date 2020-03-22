@@ -10,6 +10,7 @@ object timePickerLocaleEnUSMod extends js.Object {
   @js.native
   object default extends js.Object {
     var placeholder: String = js.native
+    var rangePlaceholder: js.Array[String] = js.native
   }
   
 }

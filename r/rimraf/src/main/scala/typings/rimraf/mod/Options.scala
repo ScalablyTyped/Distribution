@@ -3,9 +3,9 @@ package typings.rimraf.mod
 import typings.glob.mod.IOptions
 import typings.node.fsMod.PathLike
 import typings.node.fsMod.Stats
-import typings.rimraf.FnBuffer
-import typings.rimraf.FnMode
-import typings.rimraf.FnOptions
+import typings.rimraf.Fn0
+import typings.rimraf.FnCall
+import typings.rimraf.FnCallPathOptions
 import typings.rimraf.Typeofchmod
 import typings.rimraf.Typeoflstat
 import typings.rimraf.Typeofreaddir
@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
   var chmod: js.UndefOr[Typeofchmod] = js.undefined
-  var chmodSync: js.UndefOr[FnMode] = js.undefined
+  var chmodSync: js.UndefOr[FnCall] = js.undefined
   var disableGlob: js.UndefOr[Boolean] = js.undefined
   var emfileWait: js.UndefOr[Double] = js.undefined
   var glob: js.UndefOr[IOptions | `false`] = js.undefined
@@ -27,9 +27,9 @@ trait Options extends js.Object {
   var lstatSync: js.UndefOr[js.Function1[/* path */ PathLike, Stats]] = js.undefined
   var maxBusyTries: js.UndefOr[Double] = js.undefined
   var readdir: js.UndefOr[Typeofreaddir] = js.undefined
-  var readdirSync: js.UndefOr[FnBuffer] = js.undefined
+  var readdirSync: js.UndefOr[Fn0] = js.undefined
   var rmdir: js.UndefOr[Typeofrmdir] = js.undefined
-  var rmdirSync: js.UndefOr[FnOptions] = js.undefined
+  var rmdirSync: js.UndefOr[FnCallPathOptions] = js.undefined
   var stat: js.UndefOr[Typeofstat] = js.undefined
   var statSync: js.UndefOr[js.Function1[/* path */ PathLike, Stats]] = js.undefined
   var unlink: js.UndefOr[Typeofunlink] = js.undefined
@@ -40,7 +40,7 @@ object Options {
   @scala.inline
   def apply(
     chmod: Typeofchmod = null,
-    chmodSync: FnMode = null,
+    chmodSync: FnCall = null,
     disableGlob: js.UndefOr[Boolean] = js.undefined,
     emfileWait: Int | Double = null,
     glob: IOptions | `false` = null,
@@ -48,9 +48,9 @@ object Options {
     lstatSync: /* path */ PathLike => Stats = null,
     maxBusyTries: Int | Double = null,
     readdir: Typeofreaddir = null,
-    readdirSync: FnBuffer = null,
+    readdirSync: Fn0 = null,
     rmdir: Typeofrmdir = null,
-    rmdirSync: FnOptions = null,
+    rmdirSync: FnCallPathOptions = null,
     stat: Typeofstat = null,
     statSync: /* path */ PathLike => Stats = null,
     unlink: Typeofunlink = null,

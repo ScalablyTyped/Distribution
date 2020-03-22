@@ -29,13 +29,5 @@ package object runtime {
     * }
     */
   org.scalablytyped.runtime.NumberDictionary[java.lang.String]
-  /**
-    * Optional permissions
-    * @see NotAllowedAsOptionalPermissions for permissions that you're not allowed to set on demand.
-    */
-  type OptionalPermission = typings.std.Exclude[
-    typings.chromeApps.chrome.runtime.Permission, 
-    typings.chromeApps.chrome.runtime.NotAllowedAsOptionalPermissions
-  ]
   type RuntimeEvent = typings.chromeApps.chrome.events.Event[js.Function0[scala.Unit]]
 }

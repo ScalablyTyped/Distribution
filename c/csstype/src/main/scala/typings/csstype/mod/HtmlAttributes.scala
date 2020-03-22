@@ -109,6 +109,7 @@ import scala.scalajs.js.annotation._
   - typings.csstype.csstypeStrings.`[language]`
   - typings.csstype.csstypeStrings.`[leftmargin]`
   - typings.csstype.csstypeStrings.`[link]`
+  - typings.csstype.csstypeStrings.`[loading]`
   - typings.csstype.csstypeStrings.`[longdesc]`
   - typings.csstype.csstypeStrings.`[loop]`
   - typings.csstype.csstypeStrings.`[low]`
@@ -437,6 +438,8 @@ object HtmlAttributes {
   def `[leftmargin]`: typings.csstype.csstypeStrings.`[leftmargin]` = this.cast("[leftmargin]")
   @scala.inline
   def `[link]`: typings.csstype.csstypeStrings.`[link]` = this.cast("[link]")
+  @scala.inline
+  def `[loading]`: typings.csstype.csstypeStrings.`[loading]` = this.cast("[loading]")
   @scala.inline
   def `[longdesc]`: typings.csstype.csstypeStrings.`[longdesc]` = this.cast("[longdesc]")
   @scala.inline

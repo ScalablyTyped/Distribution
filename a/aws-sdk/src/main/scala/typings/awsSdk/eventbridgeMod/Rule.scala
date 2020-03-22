@@ -19,11 +19,11 @@ trait Rule extends js.Object {
     */
   var EventBusName: js.UndefOr[typings.awsSdk.eventbridgeMod.EventBusName] = js.native
   /**
-    * The event pattern of the rule. For more information, see Event Patterns in the Amazon EventBridge User Guide.
+    * The event pattern of the rule. For more information, see Events and Event Patterns in the Amazon EventBridge User Guide.
     */
   var EventPattern: js.UndefOr[typings.awsSdk.eventbridgeMod.EventPattern] = js.native
   /**
-    * If an AWS service created the rule on behalf of your account, this field displays the principal name of the service that created the rule.
+    * If the rule was created on behalf of your account by an AWS service, this field displays the principal name of the service that created the rule.
     */
   var ManagedBy: js.UndefOr[typings.awsSdk.eventbridgeMod.ManagedBy] = js.native
   /**
@@ -35,7 +35,7 @@ trait Rule extends js.Object {
     */
   var RoleArn: js.UndefOr[typings.awsSdk.eventbridgeMod.RoleArn] = js.native
   /**
-    * The scheduling expression: for example, "cron(0 20 * * ? *)" or "rate(5 minutes)".
+    * The scheduling expression. For example, "cron(0 20 * * ? *)", "rate(5 minutes)".
     */
   var ScheduleExpression: js.UndefOr[typings.awsSdk.eventbridgeMod.ScheduleExpression] = js.native
   /**

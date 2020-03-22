@@ -128,7 +128,7 @@ object Legend {
     symbolSize: NumberValue = null,
     symbolStrokeColor: ColorValue = null,
     symbolStrokeWidth: NumberValue = null,
-    symbolType: SymbolShapeValue = null,
+    symbolType: SymbolShapeValue | SignalRef = null,
     tickCount: TickCount = null,
     tickMinStep: Double | SignalRef = null,
     title: Text | SignalRef = null,

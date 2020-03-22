@@ -13,11 +13,10 @@ package object mod {
   ]
   type CustomParser = js.Function3[
     /* text */ java.lang.String, 
-    /* parsers */ typings.std.Record[typings.prettier.mod.BuiltInParserName, typings.prettier.mod.BuiltInParser], 
+    /* parsers */ typings.prettier.RecordBuiltInParserNameBu, 
     /* options */ typings.prettier.mod.Options, 
     typings.prettier.mod.AST
   ]
   type Doc_ = typings.prettier.mod.doc.builders.Doc
-  type Options = typings.std.Partial[typings.prettier.mod.RequiredOptions]
   type SupportOptionValue = scala.Double | scala.Boolean | java.lang.String
 }

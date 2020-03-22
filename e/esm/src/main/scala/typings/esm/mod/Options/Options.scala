@@ -1,16 +1,16 @@
 package typings.esm.mod.Options
 
+import typings.esm.PartialEsm
 import typings.esm.esmStrings.all
 import typings.esm.esmStrings.auto
 import typings.esm.esmStrings.strict
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
   var await: Boolean
-  var cjs: Boolean | Partial[Esm]
+  var cjs: Boolean | PartialEsm
   var force: Boolean
   var mainFields: js.Array[String]
   var mode: auto | all | strict
@@ -21,7 +21,7 @@ object Options {
   @scala.inline
   def apply(
     await: Boolean,
-    cjs: Boolean | Partial[Esm],
+    cjs: Boolean | PartialEsm,
     force: Boolean,
     mainFields: js.Array[String],
     mode: auto | all | strict,

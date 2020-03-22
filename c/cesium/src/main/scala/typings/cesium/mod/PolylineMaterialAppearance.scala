@@ -1,6 +1,6 @@
 package typings.cesium.mod
 
-import typings.cesium.AnonFragmentShaderSourceMaterial
+import typings.cesium.AnonRenderState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("cesium", "PolylineMaterialAppearance")
 @js.native
 class PolylineMaterialAppearance () extends Appearance {
-  def this(options: AnonFragmentShaderSourceMaterial) = this()
+  def this(options: AnonRenderState) = this()
   val vertexFormat: VertexFormat = js.native
 }
 

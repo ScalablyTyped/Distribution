@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "ionic__react"
-version := "4.11.10-bd7ba4"
+version := "5.0.4-048b14"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "csstype" % "2.6.6-ffacbb",
-  "org.scalablytyped" %%% "ionic__core" % "4.11.10-7ba9ad",
-  "org.scalablytyped" %%% "ionicons" % "4.6.3-de09e2",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-05a52c",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20200122Z-b17eee",
-  "org.scalablytyped" %%% "std" % "3.7-1b8369")
+  "org.scalablytyped" %%% "csstype" % "2.6.9-2d2033",
+  "org.scalablytyped" %%% "ionic__core" % "5.0.4-e24ed6",
+  "org.scalablytyped" %%% "ionicons" % "5.0.0-1672d9",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-ece683",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20200122Z-fc5268",
+  "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

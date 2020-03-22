@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jupyterlab/fileeditor" : "1.2.1"
+      "@jupyterlab/fileeditor" : "2.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@jupyterlab/fileeditor" : "1.2.1"
+      "@jupyterlab/fileeditor" : "2.0.0"
     }
   ],
   "compile-devDependencies" : [

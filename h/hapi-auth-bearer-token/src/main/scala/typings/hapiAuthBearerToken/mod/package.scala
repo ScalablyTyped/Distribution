@@ -11,5 +11,4 @@ package object mod {
     /* h */ typings.hapi.mod.ResponseToolkit, 
     js.Promise[typings.hapiAuthBearerToken.mod.ValidateReturn] | typings.hapiAuthBearerToken.mod.ValidateReturn
   ]
-  type ValidateReturn = typings.hapi.mod.AuthenticationData with typings.hapiAuthBearerToken.AnonIsValid
 }

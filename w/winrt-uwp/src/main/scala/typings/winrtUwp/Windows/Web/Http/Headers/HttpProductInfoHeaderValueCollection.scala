@@ -2,7 +2,7 @@ package typings.winrtUwp.Windows.Web.Http.Headers
 
 import typings.std.Array
 import typings.winrtUwp.AnonIndex
-import typings.winrtUwp.AnonItemsReturnValueHttpProductInfoHeaderValue
+import typings.winrtUwp.AnonItemsHttpProductInfoHeaderValue
 import typings.winrtUwp.Windows.Foundation.Collections.IIterator
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import scala.scalajs.js
@@ -37,7 +37,7 @@ abstract class HttpProductInfoHeaderValueCollection () extends Array[HttpProduct
     * Retrieves the HttpProductInfoHeaderValue items that start at the specified index in the collection.
     * @param startIndex The zero-based index of the start of the HttpProductInfoHeaderValue items in the HttpProductInfoHeaderValueCollection .
     */
-  def getMany(startIndex: Double): AnonItemsReturnValueHttpProductInfoHeaderValue = js.native
+  def getMany(startIndex: Double): AnonItemsHttpProductInfoHeaderValue = js.native
   /**
     * Returns an immutable view of the HttpProductInfoHeaderValueCollection .
     * @return The view of the HttpProductInfoHeaderValueCollection .

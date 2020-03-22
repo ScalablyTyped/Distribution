@@ -1,10 +1,10 @@
 package typings.node.childProcessMod
 
-import typings.node.AnonEncodingNull
 import typings.node.AnonStderr
 import typings.node.AnonStderrStdout
-import typings.node.AnonStderrStdoutBuffer
+import typings.node.AnonStdout
 import typings.node.Buffer
+import typings.node.encodingstringnullExecFil
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,7 +24,6 @@ object execFile extends js.Object {
       Unit
     ]
   ): ChildProcess = js.native
-  def apply(file: String, args: js.UndefOr[scala.Nothing], options: AnonEncodingNull with ExecFileOptions): ChildProcess = js.native
   def apply(
     file: String,
     args: js.UndefOr[scala.Nothing],
@@ -54,24 +53,13 @@ object execFile extends js.Object {
     options: ExecFileOptions,
     callback: js.Function3[/* error */ ExecException | Null, /* stdout */ String, /* stderr */ String, Unit]
   ): ChildProcess = js.native
+  def apply(file: String, args: js.UndefOr[scala.Nothing], options: encodingstringnullExecFil): ChildProcess = js.native
   def apply(file: String, args: js.Array[String]): ChildProcess = js.native
   def apply(
     file: String,
     args: js.Array[String],
     callback: js.Function3[/* error */ ExecException | Null, /* stdout */ String, /* stderr */ String, Unit]
   ): ChildProcess = js.native
-  def apply(file: String, args: js.Array[String], options: AnonEncodingNull with ExecFileOptions): ChildProcess = js.native
-  def apply(
-    file: String,
-    args: js.Array[String],
-    options: AnonEncodingNull with ExecFileOptions,
-    callback: js.Function3[
-      /* error */ ExecException | Null, 
-      /* stdout */ String | Buffer, 
-      /* stderr */ String | Buffer, 
-      Unit
-    ]
-  ): ChildProcess = js.native
   def apply(
     file: String,
     args: js.Array[String],
@@ -100,6 +88,18 @@ object execFile extends js.Object {
     args: js.Array[String],
     options: ExecFileOptions,
     callback: js.Function3[/* error */ ExecException | Null, /* stdout */ String, /* stderr */ String, Unit]
+  ): ChildProcess = js.native
+  def apply(file: String, args: js.Array[String], options: encodingstringnullExecFil): ChildProcess = js.native
+  def apply(
+    file: String,
+    args: js.Array[String],
+    options: encodingstringnullExecFil,
+    callback: js.Function3[
+      /* error */ ExecException | Null, 
+      /* stdout */ String | Buffer, 
+      /* stderr */ String | Buffer, 
+      Unit
+    ]
   ): ChildProcess = js.native
   def apply(
     file: String,
@@ -111,7 +111,6 @@ object execFile extends js.Object {
       Unit
     ]
   ): ChildProcess = js.native
-  def apply(file: String, args: Null, options: AnonEncodingNull with ExecFileOptions): ChildProcess = js.native
   def apply(
     file: String,
     args: Null,
@@ -141,22 +140,11 @@ object execFile extends js.Object {
     options: ExecFileOptions,
     callback: js.Function3[/* error */ ExecException | Null, /* stdout */ String, /* stderr */ String, Unit]
   ): ChildProcess = js.native
+  def apply(file: String, args: Null, options: encodingstringnullExecFil): ChildProcess = js.native
   // no `options` definitely means stdout/stderr are `string`.
   def apply(
     file: String,
     callback: js.Function3[/* error */ ExecException | Null, /* stdout */ String, /* stderr */ String, Unit]
-  ): ChildProcess = js.native
-  def apply(file: String, options: AnonEncodingNull with ExecFileOptions): ChildProcess = js.native
-  // fallback if nothing else matches. Worst case is always `string | Buffer`.
-  def apply(
-    file: String,
-    options: AnonEncodingNull with ExecFileOptions,
-    callback: js.Function3[
-      /* error */ ExecException | Null, 
-      /* stdout */ String | Buffer, 
-      /* stderr */ String | Buffer, 
-      Unit
-    ]
   ): ChildProcess = js.native
   // `options` with `"buffer"` or `null` for `encoding` means stdout/stderr are definitely `Buffer`.
   def apply(
@@ -188,49 +176,61 @@ object execFile extends js.Object {
     options: ExecFileOptions,
     callback: js.Function3[/* error */ ExecException | Null, /* stdout */ String, /* stderr */ String, Unit]
   ): ChildProcess = js.native
+  def apply(file: String, options: encodingstringnullExecFil): ChildProcess = js.native
+  // fallback if nothing else matches. Worst case is always `string | Buffer`.
+  def apply(
+    file: String,
+    options: encodingstringnullExecFil,
+    callback: js.Function3[
+      /* error */ ExecException | Null, 
+      /* stdout */ String | Buffer, 
+      /* stderr */ String | Buffer, 
+      Unit
+    ]
+  ): ChildProcess = js.native
   @JSName("__promisify__")
   def promisify(file: String): PromiseWithChild[AnonStderr] = js.native
   @JSName("__promisify__")
-  def promisify(file: String, args: js.UndefOr[scala.Nothing], options: AnonEncodingNull with ExecFileOptions): PromiseWithChild[AnonStderrStdoutBuffer] = js.native
-  @JSName("__promisify__")
   def promisify(file: String, args: js.UndefOr[scala.Nothing], options: ExecFileOptions): PromiseWithChild[AnonStderr] = js.native
   @JSName("__promisify__")
-  def promisify(file: String, args: js.UndefOr[scala.Nothing], options: ExecFileOptionsWithBufferEncoding): PromiseWithChild[AnonStderrStdout] = js.native
+  def promisify(file: String, args: js.UndefOr[scala.Nothing], options: ExecFileOptionsWithBufferEncoding): PromiseWithChild[AnonStdout] = js.native
   @JSName("__promisify__")
-  def promisify(file: String, args: js.UndefOr[scala.Nothing], options: ExecFileOptionsWithOtherEncoding): PromiseWithChild[AnonStderrStdoutBuffer] = js.native
+  def promisify(file: String, args: js.UndefOr[scala.Nothing], options: ExecFileOptionsWithOtherEncoding): PromiseWithChild[AnonStderrStdout] = js.native
   @JSName("__promisify__")
   def promisify(file: String, args: js.UndefOr[scala.Nothing], options: ExecFileOptionsWithStringEncoding): PromiseWithChild[AnonStderr] = js.native
   @JSName("__promisify__")
-  def promisify(file: String, args: js.Array[String]): PromiseWithChild[AnonStderr] = js.native
+  def promisify(file: String, args: js.UndefOr[scala.Nothing], options: encodingstringnullExecFil): PromiseWithChild[AnonStderrStdout] = js.native
   @JSName("__promisify__")
-  def promisify(file: String, args: js.Array[String], options: AnonEncodingNull with ExecFileOptions): PromiseWithChild[AnonStderrStdoutBuffer] = js.native
+  def promisify(file: String, args: js.Array[String]): PromiseWithChild[AnonStderr] = js.native
   @JSName("__promisify__")
   def promisify(file: String, args: js.Array[String], options: ExecFileOptions): PromiseWithChild[AnonStderr] = js.native
   @JSName("__promisify__")
-  def promisify(file: String, args: js.Array[String], options: ExecFileOptionsWithBufferEncoding): PromiseWithChild[AnonStderrStdout] = js.native
+  def promisify(file: String, args: js.Array[String], options: ExecFileOptionsWithBufferEncoding): PromiseWithChild[AnonStdout] = js.native
   @JSName("__promisify__")
-  def promisify(file: String, args: js.Array[String], options: ExecFileOptionsWithOtherEncoding): PromiseWithChild[AnonStderrStdoutBuffer] = js.native
+  def promisify(file: String, args: js.Array[String], options: ExecFileOptionsWithOtherEncoding): PromiseWithChild[AnonStderrStdout] = js.native
   @JSName("__promisify__")
   def promisify(file: String, args: js.Array[String], options: ExecFileOptionsWithStringEncoding): PromiseWithChild[AnonStderr] = js.native
   @JSName("__promisify__")
-  def promisify(file: String, args: Null, options: AnonEncodingNull with ExecFileOptions): PromiseWithChild[AnonStderrStdoutBuffer] = js.native
+  def promisify(file: String, args: js.Array[String], options: encodingstringnullExecFil): PromiseWithChild[AnonStderrStdout] = js.native
   @JSName("__promisify__")
   def promisify(file: String, args: Null, options: ExecFileOptions): PromiseWithChild[AnonStderr] = js.native
   @JSName("__promisify__")
-  def promisify(file: String, args: Null, options: ExecFileOptionsWithBufferEncoding): PromiseWithChild[AnonStderrStdout] = js.native
+  def promisify(file: String, args: Null, options: ExecFileOptionsWithBufferEncoding): PromiseWithChild[AnonStdout] = js.native
   @JSName("__promisify__")
-  def promisify(file: String, args: Null, options: ExecFileOptionsWithOtherEncoding): PromiseWithChild[AnonStderrStdoutBuffer] = js.native
+  def promisify(file: String, args: Null, options: ExecFileOptionsWithOtherEncoding): PromiseWithChild[AnonStderrStdout] = js.native
   @JSName("__promisify__")
   def promisify(file: String, args: Null, options: ExecFileOptionsWithStringEncoding): PromiseWithChild[AnonStderr] = js.native
   @JSName("__promisify__")
-  def promisify(file: String, options: AnonEncodingNull with ExecFileOptions): PromiseWithChild[AnonStderrStdoutBuffer] = js.native
+  def promisify(file: String, args: Null, options: encodingstringnullExecFil): PromiseWithChild[AnonStderrStdout] = js.native
   @JSName("__promisify__")
   def promisify(file: String, options: ExecFileOptions): PromiseWithChild[AnonStderr] = js.native
   @JSName("__promisify__")
-  def promisify(file: String, options: ExecFileOptionsWithBufferEncoding): PromiseWithChild[AnonStderrStdout] = js.native
+  def promisify(file: String, options: ExecFileOptionsWithBufferEncoding): PromiseWithChild[AnonStdout] = js.native
   @JSName("__promisify__")
-  def promisify(file: String, options: ExecFileOptionsWithOtherEncoding): PromiseWithChild[AnonStderrStdoutBuffer] = js.native
+  def promisify(file: String, options: ExecFileOptionsWithOtherEncoding): PromiseWithChild[AnonStderrStdout] = js.native
   @JSName("__promisify__")
   def promisify(file: String, options: ExecFileOptionsWithStringEncoding): PromiseWithChild[AnonStderr] = js.native
+  @JSName("__promisify__")
+  def promisify(file: String, options: encodingstringnullExecFil): PromiseWithChild[AnonStderrStdout] = js.native
 }
 

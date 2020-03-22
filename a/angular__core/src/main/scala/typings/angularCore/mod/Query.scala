@@ -12,6 +12,6 @@ abstract class Query () extends js.Object {
   var isViewQuery: Boolean = js.native
   var read: js.Any = js.native
   var selector: js.Any = js.native
-  var static: Boolean = js.native
+  var static: js.UndefOr[Boolean] = js.native
 }
 

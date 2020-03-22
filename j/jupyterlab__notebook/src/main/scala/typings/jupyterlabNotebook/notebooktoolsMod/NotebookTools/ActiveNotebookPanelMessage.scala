@@ -1,7 +1,7 @@
 package typings.jupyterlabNotebook.notebooktoolsMod.NotebookTools
 
 import org.scalablytyped.runtime.TopLevel
-import typings.phosphorMessaging.mod.ConflatableMessage
+import typings.luminoMessaging.mod.ConflatableMessage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

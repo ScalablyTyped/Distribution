@@ -46,6 +46,9 @@ object angularCompilerStrings {
   sealed trait desc extends JSDocTagName
   
   @js.native
+  sealed trait directiveInject extends js.Object
+  
+  @js.native
   sealed trait i18n extends js.Object
   
   @js.native
@@ -53,6 +56,9 @@ object angularCompilerStrings {
   
   @js.native
   sealed trait id extends JSDocTagName
+  
+  @js.native
+  sealed trait inject extends js.Object
   
   @js.native
   sealed trait invalid extends js.Object
@@ -77,9 +83,6 @@ object angularCompilerStrings {
   
   @js.native
   sealed trait root extends js.Object
-  
-  @js.native
-  sealed trait tsc extends js.Object
   
   @scala.inline
   def $implicit: $implicit = "$implicit".asInstanceOf[$implicit]
@@ -108,11 +111,15 @@ object angularCompilerStrings {
   @scala.inline
   def desc: desc = "desc".asInstanceOf[desc]
   @scala.inline
+  def directiveInject: directiveInject = "directiveInject".asInstanceOf[directiveInject]
+  @scala.inline
   def i18n: i18n = "i18n".asInstanceOf[i18n]
   @scala.inline
   def `i18n-`: `i18n-` = "i18n-".asInstanceOf[`i18n-`]
   @scala.inline
   def id: id = "id".asInstanceOf[id]
+  @scala.inline
+  def inject: inject = "inject".asInstanceOf[inject]
   @scala.inline
   def invalid: invalid = "invalid".asInstanceOf[invalid]
   @scala.inline
@@ -129,7 +136,5 @@ object angularCompilerStrings {
   def rf: rf = "rf".asInstanceOf[rf]
   @scala.inline
   def root: root = "root".asInstanceOf[root]
-  @scala.inline
-  def tsc: tsc = "tsc".asInstanceOf[tsc]
 }
 

@@ -17,19 +17,19 @@ trait CreateLocalGatewayRouteRequest extends js.Object {
   /**
     * The ID of the local gateway route table.
     */
-  var LocalGatewayRouteTableId: String = js.native
+  var LocalGatewayRouteTableId: LocalGatewayRoutetableId = js.native
   /**
     * The ID of the virtual interface group.
     */
-  var LocalGatewayVirtualInterfaceGroupId: String = js.native
+  var LocalGatewayVirtualInterfaceGroupId: typings.awsSdk.ec2Mod.LocalGatewayVirtualInterfaceGroupId = js.native
 }
 
 object CreateLocalGatewayRouteRequest {
   @scala.inline
   def apply(
     DestinationCidrBlock: String,
-    LocalGatewayRouteTableId: String,
-    LocalGatewayVirtualInterfaceGroupId: String,
+    LocalGatewayRouteTableId: LocalGatewayRoutetableId,
+    LocalGatewayVirtualInterfaceGroupId: LocalGatewayVirtualInterfaceGroupId,
     DryRun: js.UndefOr[scala.Boolean] = js.undefined
   ): CreateLocalGatewayRouteRequest = {
     val __obj = js.Dynamic.literal(DestinationCidrBlock = DestinationCidrBlock.asInstanceOf[js.Any], LocalGatewayRouteTableId = LocalGatewayRouteTableId.asInstanceOf[js.Any], LocalGatewayVirtualInterfaceGroupId = LocalGatewayVirtualInterfaceGroupId.asInstanceOf[js.Any])

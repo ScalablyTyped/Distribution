@@ -15,6 +15,9 @@ object miniprogramWxsStrings {
   sealed trait Readonly extends js.Object
   
   @js.native
+  sealed trait Record extends js.Object
+  
+  @js.native
   sealed trait Required extends js.Object
   
   @scala.inline
@@ -23,6 +26,8 @@ object miniprogramWxsStrings {
   def Pick: Pick = "Pick".asInstanceOf[Pick]
   @scala.inline
   def Readonly: Readonly = "Readonly".asInstanceOf[Readonly]
+  @scala.inline
+  def Record: Record = "Record".asInstanceOf[Record]
   @scala.inline
   def Required: Required = "Required".asInstanceOf[Required]
 }

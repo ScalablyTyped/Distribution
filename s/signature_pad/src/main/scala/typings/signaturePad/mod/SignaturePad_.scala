@@ -2,9 +2,9 @@ package typings.signaturePad.mod
 
 import typings.signaturePad.AnonCallback
 import typings.signaturePad.AnonColor
-import typings.signaturePad.AnonColorCurve
-import typings.signaturePad.AnonColorPoint
+import typings.signaturePad.AnonCurve
 import typings.signaturePad.AnonEnd
+import typings.signaturePad.AnonPoint
 import typings.signaturePad.mod.SignaturePad.Bezier
 import typings.signaturePad.mod.SignaturePad.Point
 import typings.signaturePad.mod.SignaturePad.SignaturePadOptions
@@ -38,13 +38,13 @@ trait SignaturePad_ extends js.Object {
   def _addPoint(point: Point): Bezier | Null = js.native
   def _calculateCurveWidths(startPoint: Point, endPoint: Point): AnonEnd = js.native
   def _createPoint(x: Double, y: Double): Point = js.native
-  def _drawCurve(_a: AnonColorCurve): Unit = js.native
+  def _drawCurve(_a: AnonCurve): Unit = js.native
   def _drawCurveSegment(x: Double, y: Double, width: Double): Unit = js.native
-  def _drawDot(_a: AnonColorPoint): Unit = js.native
+  def _drawDot(_a: AnonPoint): Unit = js.native
   def _fromData(
     pointGroups: js.Array[js.Array[Point]],
-    drawCurve: js.Function1[/* _a */ AnonColorCurve, Unit],
-    drawDot: js.Function1[/* _a */ AnonColorPoint, Unit]
+    drawCurve: js.Function1[/* _a */ AnonCurve, Unit],
+    drawDot: js.Function1[/* _a */ AnonPoint, Unit]
   ): Unit = js.native
   /**
     * Privates

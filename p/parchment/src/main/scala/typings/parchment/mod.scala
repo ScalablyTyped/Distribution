@@ -13,16 +13,16 @@ import scala.scalajs.js.annotation._
 object mod extends js.Object {
   @js.native
   object default extends js.Object {
-    var Attributor: AnonAttributeClass = js.native
-    var Block: TypeofClassBlockBlot = js.native
-    var Container: TypeofClassContainerBlot = js.native
-    var Embed: TypeofClassEmbedBlot = js.native
-    var Format: TypeofClassFormatBlot = js.native
-    var Inline: TypeofClassInlineBlot = js.native
-    var Leaf: TypeofClassLeafBlot = js.native
+    var Attributor: AnonClass = js.native
+    var Block: TypeofBlockBlot = js.native
+    var Container: TypeofContainerBlot = js.native
+    var Embed: TypeofEmbedBlot = js.native
+    var Format: TypeofFormatBlot = js.native
+    var Inline: TypeofInlineBlot = js.native
+    var Leaf: TypeofLeafBlot = js.native
     var Scope: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Registry.Scope */ js.Any = js.native
-    var Scroll: TypeofClassScrollBlot = js.native
-    var Text: TypeofClassTextBlot = js.native
+    var Scroll: TypeofScrollBlot = js.native
+    var Text: TypeofTextBlot = js.native
     @JSName("create")
     var create_Original: js.Function2[/* input */ Node | String | Scope, /* value */ js.UndefOr[js.Any], Blot] = js.native
     @JSName("find")

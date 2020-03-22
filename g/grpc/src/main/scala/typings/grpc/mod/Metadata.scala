@@ -7,7 +7,13 @@ import scala.scalajs.js.annotation._
 
 @JSImport("grpc", "Metadata")
 @js.native
+/**
+  * @param options Boolean options for the beginning of the call.
+  *   These options only have any effect when passed at the beginning of
+  *   a client request.
+  */
 class Metadata () extends js.Object {
+  def this(options: MetadataOptions) = this()
   /**
     * Adds the given value for the given key by appending to a list of previous
     * values associated with that key. Normalizes the key.
@@ -41,5 +47,12 @@ class Metadata () extends js.Object {
     *   if the normalized key ends with '-bin'.
     */
   def set(key: String, value: MetadataValue): Unit = js.native
+  /**
+    * Set options on the metadata object
+    * @param options Boolean options for the beginning of the call.
+    *   These options only have any effect when passed at the beginning of
+    *   a client request.
+    */
+  def setOptions(options: MetadataOptions): Unit = js.native
 }
 

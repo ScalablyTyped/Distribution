@@ -17,14 +17,14 @@ trait DescribeInstanceAttributeRequest extends js.Object {
   /**
     * The ID of the instance.
     */
-  var InstanceId: String = js.native
+  var InstanceId: typings.awsSdk.ec2Mod.InstanceId = js.native
 }
 
 object DescribeInstanceAttributeRequest {
   @scala.inline
   def apply(
     Attribute: InstanceAttributeName,
-    InstanceId: String,
+    InstanceId: InstanceId,
     DryRun: js.UndefOr[scala.Boolean] = js.undefined
   ): DescribeInstanceAttributeRequest = {
     val __obj = js.Dynamic.literal(Attribute = Attribute.asInstanceOf[js.Any], InstanceId = InstanceId.asInstanceOf[js.Any])

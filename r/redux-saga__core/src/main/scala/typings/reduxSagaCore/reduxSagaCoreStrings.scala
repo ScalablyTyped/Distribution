@@ -15,10 +15,10 @@ object reduxSagaCoreStrings {
   sealed trait ALL extends js.Object
   
   @js.native
-  sealed trait Anon_Context extends js.Object
+  sealed trait AnonContext extends js.Object
   
   @js.native
-  sealed trait Anon_ContextFnCtx extends js.Object
+  sealed trait AnonContextFn extends js.Object
   
   @js.native
   sealed trait CALL extends js.Object
@@ -81,9 +81,9 @@ object reduxSagaCoreStrings {
   @scala.inline
   def ALL: ALL = "ALL".asInstanceOf[ALL]
   @scala.inline
-  def Anon_Context: Anon_Context = "Anon_Context".asInstanceOf[Anon_Context]
+  def AnonContext: AnonContext = "AnonContext".asInstanceOf[AnonContext]
   @scala.inline
-  def Anon_ContextFnCtx: Anon_ContextFnCtx = "Anon_ContextFnCtx".asInstanceOf[Anon_ContextFnCtx]
+  def AnonContextFn: AnonContextFn = "AnonContextFn".asInstanceOf[AnonContextFn]
   @scala.inline
   def CALL: CALL = "CALL".asInstanceOf[CALL]
   @scala.inline

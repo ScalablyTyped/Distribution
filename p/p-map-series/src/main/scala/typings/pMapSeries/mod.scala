@@ -18,7 +18,7 @@ object mod extends js.Object {
   // ): Promise<MappedValueType[]>;
   // export = pMapSeries;
   @JSName("default")
-  var default_Original: AnonDefault = js.native
+  var default_Original: AnonCall = js.native
   /**
   	Map over promises serially.
   	@param input - Mapped over serially in the `mapper` function.

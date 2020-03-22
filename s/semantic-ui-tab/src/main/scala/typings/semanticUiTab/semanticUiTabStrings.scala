@@ -9,16 +9,10 @@ object semanticUiTabStrings {
   sealed trait DOM extends js.Object
   
   @js.native
-  sealed trait active extends js.Object
-  
-  @js.native
   sealed trait all extends js.Object
   
   @js.native
   sealed trait alwaysRefresh extends js.Object
-  
-  @js.native
-  sealed trait api extends js.Object
   
   @js.native
   sealed trait apiSettings extends js.Object
@@ -63,9 +57,6 @@ object semanticUiTabStrings {
   sealed trait destroy extends js.Object
   
   @js.native
-  sealed trait determineTitle extends js.Object
-  
-  @js.native
   sealed trait error extends js.Object
   
   @js.native
@@ -96,31 +87,16 @@ object semanticUiTabStrings {
   sealed trait loadOnce extends js.Object
   
   @js.native
-  sealed trait loaded extends js.Object
-  
-  @js.native
-  sealed trait loading extends js.Object
-  
-  @js.native
   sealed trait maxDepth extends js.Object
   
   @js.native
   sealed trait metadata extends js.Object
   
   @js.native
-  sealed trait method extends js.Object
-  
-  @js.native
-  sealed trait missingTab extends js.Object
-  
-  @js.native
   sealed trait name extends js.Object
   
   @js.native
   sealed trait namespace extends js.Object
-  
-  @js.native
-  sealed trait noContent extends js.Object
   
   @js.native
   sealed trait onFirstLoad extends js.Object
@@ -138,19 +114,10 @@ object semanticUiTabStrings {
   sealed trait once extends js.Object
   
   @js.native
-  sealed trait parent extends js.Object
-  
-  @js.native
   sealed trait path extends js.Object
   
   @js.native
   sealed trait performance extends js.Object
-  
-  @js.native
-  sealed trait promise extends js.Object
-  
-  @js.native
-  sealed trait recursion extends js.Object
   
   @js.native
   sealed trait response extends js.Object
@@ -174,12 +141,6 @@ object semanticUiTabStrings {
   sealed trait state extends js.Object
   
   @js.native
-  sealed trait tab extends js.Object
-  
-  @js.native
-  sealed trait tabs extends js.Object
-  
-  @js.native
   sealed trait templates extends js.Object
   
   @js.native
@@ -188,13 +149,9 @@ object semanticUiTabStrings {
   @scala.inline
   def DOM: DOM = "DOM".asInstanceOf[DOM]
   @scala.inline
-  def active: active = "active".asInstanceOf[active]
-  @scala.inline
   def all: all = "all".asInstanceOf[all]
   @scala.inline
   def alwaysRefresh: alwaysRefresh = "alwaysRefresh".asInstanceOf[alwaysRefresh]
-  @scala.inline
-  def api: api = "api".asInstanceOf[api]
   @scala.inline
   def apiSettings: apiSettings = "apiSettings".asInstanceOf[apiSettings]
   @scala.inline
@@ -224,8 +181,6 @@ object semanticUiTabStrings {
   @scala.inline
   def destroy: destroy = "destroy".asInstanceOf[destroy]
   @scala.inline
-  def determineTitle: determineTitle = "determineTitle".asInstanceOf[determineTitle]
-  @scala.inline
   def error: error = "error".asInstanceOf[error]
   @scala.inline
   def evaluateScripts: evaluateScripts = "evaluateScripts".asInstanceOf[evaluateScripts]
@@ -246,23 +201,13 @@ object semanticUiTabStrings {
   @scala.inline
   def loadOnce: loadOnce = "loadOnce".asInstanceOf[loadOnce]
   @scala.inline
-  def loaded: loaded = "loaded".asInstanceOf[loaded]
-  @scala.inline
-  def loading: loading = "loading".asInstanceOf[loading]
-  @scala.inline
   def maxDepth: maxDepth = "maxDepth".asInstanceOf[maxDepth]
   @scala.inline
   def metadata: metadata = "metadata".asInstanceOf[metadata]
   @scala.inline
-  def method: method = "method".asInstanceOf[method]
-  @scala.inline
-  def missingTab: missingTab = "missingTab".asInstanceOf[missingTab]
-  @scala.inline
   def name: name = "name".asInstanceOf[name]
   @scala.inline
   def namespace: namespace = "namespace".asInstanceOf[namespace]
-  @scala.inline
-  def noContent: noContent = "noContent".asInstanceOf[noContent]
   @scala.inline
   def onFirstLoad: onFirstLoad = "onFirstLoad".asInstanceOf[onFirstLoad]
   @scala.inline
@@ -274,15 +219,9 @@ object semanticUiTabStrings {
   @scala.inline
   def once: once = "once".asInstanceOf[once]
   @scala.inline
-  def parent: parent = "parent".asInstanceOf[parent]
-  @scala.inline
   def path: path = "path".asInstanceOf[path]
   @scala.inline
   def performance: performance = "performance".asInstanceOf[performance]
-  @scala.inline
-  def promise: promise = "promise".asInstanceOf[promise]
-  @scala.inline
-  def recursion: recursion = "recursion".asInstanceOf[recursion]
   @scala.inline
   def response: response = "response".asInstanceOf[response]
   @scala.inline
@@ -297,10 +236,6 @@ object semanticUiTabStrings {
   def silent: silent = "silent".asInstanceOf[silent]
   @scala.inline
   def state: state = "state".asInstanceOf[state]
-  @scala.inline
-  def tab: tab = "tab".asInstanceOf[tab]
-  @scala.inline
-  def tabs: tabs = "tabs".asInstanceOf[tabs]
   @scala.inline
   def templates: templates = "templates".asInstanceOf[templates]
   @scala.inline

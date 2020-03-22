@@ -12,9 +12,13 @@ import scala.scalajs.js.annotation._
 @js.native
 object offsetsMod extends js.Object {
   def getEventClientOffset(e: MouseEvent): js.UndefOr[XYCoord] = js.native
+  def getEventClientOffset(e: MouseEvent, lastTargetTouchFallback: Touch): js.UndefOr[XYCoord] = js.native
   def getEventClientOffset(e: Touch): js.UndefOr[XYCoord] = js.native
   def getEventClientOffset(e: TouchEvent): js.UndefOr[XYCoord] = js.native
+  def getEventClientOffset(e: TouchEvent, lastTargetTouchFallback: Touch): js.UndefOr[XYCoord] = js.native
+  def getEventClientOffset(e: Touch, lastTargetTouchFallback: Touch): js.UndefOr[XYCoord] = js.native
   def getEventClientTouchOffset(e: TouchEvent): js.UndefOr[XYCoord] = js.native
+  def getEventClientTouchOffset(e: TouchEvent, lastTargetTouchFallback: Touch): js.UndefOr[XYCoord] = js.native
   def getNodeClientOffset(node: js.Any): js.UndefOr[XYCoord] = js.native
 }
 

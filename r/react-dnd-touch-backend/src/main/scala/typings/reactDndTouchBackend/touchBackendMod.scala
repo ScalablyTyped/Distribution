@@ -33,6 +33,7 @@ object touchBackendMod extends js.Object {
     var handleTopMoveStartCapture: js.Any = js.native
     var handleTopMoveStartDelay: js.Any = js.native
     var installSourceNodeRemovalObserver: js.Any = js.native
+    var lastTargetTouchFallback: js.Any = js.native
     var listenerTypes: js.Any = js.native
     var monitor: js.Any = js.native
     var moveStartSourceIds: js.Any = js.native

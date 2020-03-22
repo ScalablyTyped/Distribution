@@ -18,6 +18,7 @@ trait ExpressionVisitor extends js.Object {
   def visitLiteralArrayExpr(ast: LiteralArrayExpr, context: js.Any): js.Any
   def visitLiteralExpr(ast: LiteralExpr, context: js.Any): js.Any
   def visitLiteralMapExpr(ast: LiteralMapExpr, context: js.Any): js.Any
+  def visitLocalizedString(ast: LocalizedString_, context: js.Any): js.Any
   def visitNotExpr(ast: NotExpr, context: js.Any): js.Any
   def visitReadKeyExpr(ast: ReadKeyExpr, context: js.Any): js.Any
   def visitReadPropExpr(ast: ReadPropExpr, context: js.Any): js.Any
@@ -45,6 +46,7 @@ object ExpressionVisitor {
     visitLiteralArrayExpr: (LiteralArrayExpr, js.Any) => js.Any,
     visitLiteralExpr: (LiteralExpr, js.Any) => js.Any,
     visitLiteralMapExpr: (LiteralMapExpr, js.Any) => js.Any,
+    visitLocalizedString: (LocalizedString_, js.Any) => js.Any,
     visitNotExpr: (NotExpr, js.Any) => js.Any,
     visitReadKeyExpr: (ReadKeyExpr, js.Any) => js.Any,
     visitReadPropExpr: (ReadPropExpr, js.Any) => js.Any,
@@ -55,7 +57,7 @@ object ExpressionVisitor {
     visitWritePropExpr: (WritePropExpr, js.Any) => js.Any,
     visitWriteVarExpr: (WriteVarExpr, js.Any) => js.Any
   ): ExpressionVisitor = {
-    val __obj = js.Dynamic.literal(visitAssertNotNullExpr = js.Any.fromFunction2(visitAssertNotNullExpr), visitBinaryOperatorExpr = js.Any.fromFunction2(visitBinaryOperatorExpr), visitCastExpr = js.Any.fromFunction2(visitCastExpr), visitCommaExpr = js.Any.fromFunction2(visitCommaExpr), visitConditionalExpr = js.Any.fromFunction2(visitConditionalExpr), visitExternalExpr = js.Any.fromFunction2(visitExternalExpr), visitFunctionExpr = js.Any.fromFunction2(visitFunctionExpr), visitInstantiateExpr = js.Any.fromFunction2(visitInstantiateExpr), visitInvokeFunctionExpr = js.Any.fromFunction2(visitInvokeFunctionExpr), visitInvokeMethodExpr = js.Any.fromFunction2(visitInvokeMethodExpr), visitLiteralArrayExpr = js.Any.fromFunction2(visitLiteralArrayExpr), visitLiteralExpr = js.Any.fromFunction2(visitLiteralExpr), visitLiteralMapExpr = js.Any.fromFunction2(visitLiteralMapExpr), visitNotExpr = js.Any.fromFunction2(visitNotExpr), visitReadKeyExpr = js.Any.fromFunction2(visitReadKeyExpr), visitReadPropExpr = js.Any.fromFunction2(visitReadPropExpr), visitReadVarExpr = js.Any.fromFunction2(visitReadVarExpr), visitTypeofExpr = js.Any.fromFunction2(visitTypeofExpr), visitWrappedNodeExpr = js.Any.fromFunction2(visitWrappedNodeExpr), visitWriteKeyExpr = js.Any.fromFunction2(visitWriteKeyExpr), visitWritePropExpr = js.Any.fromFunction2(visitWritePropExpr), visitWriteVarExpr = js.Any.fromFunction2(visitWriteVarExpr))
+    val __obj = js.Dynamic.literal(visitAssertNotNullExpr = js.Any.fromFunction2(visitAssertNotNullExpr), visitBinaryOperatorExpr = js.Any.fromFunction2(visitBinaryOperatorExpr), visitCastExpr = js.Any.fromFunction2(visitCastExpr), visitCommaExpr = js.Any.fromFunction2(visitCommaExpr), visitConditionalExpr = js.Any.fromFunction2(visitConditionalExpr), visitExternalExpr = js.Any.fromFunction2(visitExternalExpr), visitFunctionExpr = js.Any.fromFunction2(visitFunctionExpr), visitInstantiateExpr = js.Any.fromFunction2(visitInstantiateExpr), visitInvokeFunctionExpr = js.Any.fromFunction2(visitInvokeFunctionExpr), visitInvokeMethodExpr = js.Any.fromFunction2(visitInvokeMethodExpr), visitLiteralArrayExpr = js.Any.fromFunction2(visitLiteralArrayExpr), visitLiteralExpr = js.Any.fromFunction2(visitLiteralExpr), visitLiteralMapExpr = js.Any.fromFunction2(visitLiteralMapExpr), visitLocalizedString = js.Any.fromFunction2(visitLocalizedString), visitNotExpr = js.Any.fromFunction2(visitNotExpr), visitReadKeyExpr = js.Any.fromFunction2(visitReadKeyExpr), visitReadPropExpr = js.Any.fromFunction2(visitReadPropExpr), visitReadVarExpr = js.Any.fromFunction2(visitReadVarExpr), visitTypeofExpr = js.Any.fromFunction2(visitTypeofExpr), visitWrappedNodeExpr = js.Any.fromFunction2(visitWrappedNodeExpr), visitWriteKeyExpr = js.Any.fromFunction2(visitWriteKeyExpr), visitWritePropExpr = js.Any.fromFunction2(visitWritePropExpr), visitWriteVarExpr = js.Any.fromFunction2(visitWriteVarExpr))
   
     __obj.asInstanceOf[ExpressionVisitor]
   }

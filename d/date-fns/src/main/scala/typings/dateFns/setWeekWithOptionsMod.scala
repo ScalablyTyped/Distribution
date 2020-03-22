@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object setWeekWithOptionsMod extends js.Object {
   @js.native
-  object default extends TopLevel[CurriedFn3[Anon01234567, Double, Date | Double, Date]]
+  object default extends TopLevel[CurriedFn3[AnonFirstWeekContainsDateLocale, Double, Date | Double, Date]]
   
 }
 

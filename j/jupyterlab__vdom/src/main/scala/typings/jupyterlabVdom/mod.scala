@@ -6,8 +6,8 @@ import typings.jupyterlabDocregistry.registryMod.DocumentRegistry.IContext
 import typings.jupyterlabDocregistry.registryMod.DocumentRegistry.IModel
 import typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.IRenderer
 import typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.IRendererOptions
+import typings.luminoCoreutils.mod.Token
 import typings.nteractTransformVdom.eventToObjectMod.SerializedEvent
-import typings.phosphorCoreutils.mod.Token
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,7 +24,7 @@ object mod extends js.Object {
     def this(options: IRendererOptions, context: IContext[IModel]) = this()
     var _comms: js.Any = js.native
     var _mimeType: js.Any = js.native
-    var _session: js.UndefOr[js.Any] = js.native
+    var _sessionContext: js.UndefOr[js.Any] = js.native
     var _timer: js.Any = js.native
     /**
       * Handle events for VDOM element.

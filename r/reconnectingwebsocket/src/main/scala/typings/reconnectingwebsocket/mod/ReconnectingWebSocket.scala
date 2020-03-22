@@ -1,7 +1,7 @@
 package typings.reconnectingwebsocket.mod
 
-import typings.reconnectingwebsocket.FnCode
-import typings.reconnectingwebsocket.FnData
+import typings.reconnectingwebsocket.FnCall
+import typings.reconnectingwebsocket.FnCallData
 import typings.reconnectingwebsocket.reconnectingwebsocketStrings.close
 import typings.reconnectingwebsocket.reconnectingwebsocketStrings.connecting
 import typings.reconnectingwebsocket.reconnectingwebsocketStrings.error
@@ -66,7 +66,7 @@ trait ReconnectingWebSocket extends EventTarget {
     * If the connection is already `CLOSED`, this method does nothing.
     */
   @JSName("close")
-  var close_Original: FnCode = js.native
+  var close_Original: FnCall = js.native
   /**
     * Whether this instance should log debug messages.
     */
@@ -102,7 +102,7 @@ trait ReconnectingWebSocket extends EventTarget {
   var reconnectInterval: NonNullable[js.UndefOr[Double]] = js.native
   /** Transmits data to the server over the WebSocket connection. */
   @JSName("send")
-  var send_Original: FnData = js.native
+  var send_Original: FnCallData = js.native
   /**
     * The maximum time in milliseconds to wait for a connection to succeed before closing and retrying.
     * Accepts integer.

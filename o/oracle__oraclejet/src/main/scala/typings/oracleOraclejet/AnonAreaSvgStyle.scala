@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation._
 
 trait AnonAreaSvgStyle extends js.Object {
   var areaSvgStyle: js.UndefOr[js.Object] = js.undefined
-  var dataAreaDefaults: js.UndefOr[AnonBorderColorHoverColor] = js.undefined
-  var dataMarkerDefaults: js.UndefOr[AnonBorderColorBorderStyle] = js.undefined
+  var dataAreaDefaults: js.UndefOr[AnonSelectedInnerColor] = js.undefined
+  var dataMarkerDefaults: js.UndefOr[AnonBorderStyle] = js.undefined
   var hoverBehaviorDelay: js.UndefOr[Double] = js.undefined
   var labelStyle: js.UndefOr[js.Object] = js.undefined
   var linkDefaults: js.UndefOr[AnonColorWidth] = js.undefined
@@ -17,8 +17,8 @@ object AnonAreaSvgStyle {
   @scala.inline
   def apply(
     areaSvgStyle: js.Object = null,
-    dataAreaDefaults: AnonBorderColorHoverColor = null,
-    dataMarkerDefaults: AnonBorderColorBorderStyle = null,
+    dataAreaDefaults: AnonSelectedInnerColor = null,
+    dataMarkerDefaults: AnonBorderStyle = null,
     hoverBehaviorDelay: Int | Double = null,
     labelStyle: js.Object = null,
     linkDefaults: AnonColorWidth = null

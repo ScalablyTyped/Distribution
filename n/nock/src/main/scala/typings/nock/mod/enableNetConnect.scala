@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 object enableNetConnect extends js.Object {
   def apply(): Unit = js.native
   def apply(matcher: String): Unit = js.native
+  def apply(matcher: js.Function1[/* host */ String, Boolean]): Unit = js.native
   def apply(matcher: RegExp): Unit = js.native
 }
 

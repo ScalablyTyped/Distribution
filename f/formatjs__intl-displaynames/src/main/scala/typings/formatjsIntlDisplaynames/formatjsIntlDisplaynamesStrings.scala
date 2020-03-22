@@ -18,9 +18,6 @@ object formatjsIntlDisplaynamesStrings {
   sealed trait language extends js.Object
   
   @js.native
-  sealed trait localeMatcher extends js.Object
-  
-  @js.native
   sealed trait long extends js.Object
   
   @js.native
@@ -49,8 +46,6 @@ object formatjsIntlDisplaynamesStrings {
   def currency: currency = "currency".asInstanceOf[currency]
   @scala.inline
   def language: language = "language".asInstanceOf[language]
-  @scala.inline
-  def localeMatcher: localeMatcher = "localeMatcher".asInstanceOf[localeMatcher]
   @scala.inline
   def long: long = "long".asInstanceOf[long]
   @scala.inline

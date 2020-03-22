@@ -30,9 +30,6 @@ package object jest {
   type EmptyFunction = js.Function0[scala.Unit]
   type EqualityTester = js.Function2[/* a */ js.Any, /* b */ js.Any, js.UndefOr[scala.Boolean]]
   type ExpectExtendMap = org.scalablytyped.runtime.StringDictionary[typings.jest.mod.jest.CustomMatcher]
-  type ExpectProperties = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in 'not' ]: jest.jest.jest.Expect[K]}
-    */ typings.jest.jestStrings.ExpectProperties with typings.jest.mod.jest.Expect
   type ExtendedExpect[TMatchers /* <: typings.jest.mod.jest.ExpectExtendMap */] = typings.jest.mod.jest.ExpectProperties with typings.jest.mod.jest.AndNot[typings.jest.mod.jest.CustomAsyncMatchers[TMatchers]] with typings.jest.mod.jest.ExtendedExpectFunction[TMatchers]
   // when have called expect.extend
   type ExtendedExpectFunction[TMatchers /* <: typings.jest.mod.jest.ExpectExtendMap */] = js.Function1[/* actual */ js.Any, typings.jest.mod.jest.JestExtendedMatchers[TMatchers, js.Any]]
@@ -45,18 +42,12 @@ package object jest {
     typings.jest.mod.jest.ExtendedMatchers[TMatchers, scala.Unit, TActual], 
     typings.jest.mod.jest.ExtendedMatchers[TMatchers, js.Promise[scala.Unit], TActual]
   ]
-  type JestMatchers[T] = typings.jest.mod.jest.JestMatchersShape[
-    typings.jest.mod.jest.Matchers[scala.Unit, T], 
-    typings.jest.mod.jest.Matchers[js.Promise[scala.Unit], T]
-  ]
   type JestMatchersShape[TNonPromise /* <: js.Object */, TPromise /* <: js.Object */] = typings.jest.AnonRejects[TPromise] with typings.jest.mod.jest.AndNot[TNonPromise]
   type Lifecycle = js.Function2[
     /* fn */ typings.jest.mod.jest.ProvidesCallback, 
     /* timeout */ js.UndefOr[scala.Double], 
     js.Any
   ]
-  type MatcherColorFn = typings.jest.mod.jest.ChalkFunction with typings.jest.AnonSupportsColor
-  type MatcherContext = typings.jest.mod.jest.MatcherUtils with typings.jest.mod.jest.MatcherState
   type MatcherHintColor = js.Function1[/* arg */ java.lang.String, java.lang.String]
   /**
     * Wrap an object or a module with mock definitions
@@ -99,7 +90,7 @@ package object jest {
   type NonAsyncMatchers[TMatchers /* <: typings.jest.mod.jest.ExpectExtendMap */] = /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof TMatchers ]: std.ReturnType<TMatchers[K]> extends std.Promise<jest.jest.jest.CustomMatcherResult>? never : K}[keyof TMatchers] */ js.Any
   // see https://github.com/Microsoft/TypeScript/issues/25215
   type NonFunctionPropertyNames[T] = (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: T[K] extends (args : ...any): any? never : K}[keyof T] */ js.Any) with java.lang.String
-  type NonPromiseMatchers[T /* <: typings.jest.mod.jest.JestMatchersShape[js.Object, js.Object] */] = typings.jest.mod.jest.Omit[
+  type NonPromiseMatchers[T /* <: typings.jest.JestMatchersShape */] = typings.jest.mod.jest.Omit[
     T, 
     typings.jest.jestStrings.resolves | typings.jest.jestStrings.rejects | typings.jest.jestStrings.not
   ]
@@ -109,7 +100,7 @@ package object jest {
   type Omit[T, K /* <: java.lang.String */] = typings.std.Pick[T, typings.std.Exclude[java.lang.String, K]]
   type Parameters[T /* <: js.Function1[/* repeated */ js.Any, _] */] = js.Any
   type PrintLabel = js.Function1[/* string */ java.lang.String, java.lang.String]
-  type PromiseMatchers[T /* <: typings.jest.mod.jest.JestMatchersShape[js.Object, js.Object] */] = typings.jest.mod.jest.Omit[
+  type PromiseMatchers[T /* <: typings.jest.JestMatchersShape */] = typings.jest.mod.jest.Omit[
     /* import warning: importer.ImportType#apply Failed type conversion: T['resolves'] */ js.Any, 
     typings.jest.jestStrings.not
   ]

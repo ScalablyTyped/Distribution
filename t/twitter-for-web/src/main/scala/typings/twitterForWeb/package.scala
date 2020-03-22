@@ -19,8 +19,4 @@ package object twitterForWeb {
     - java.lang.String
   */
   type TwitterTimelineWidgetDataSource = typings.twitterForWeb._TwitterTimelineWidgetDataSource | java.lang.String
-  /**
-    * The interface for additional options for embedded Timelines.
-    */
-  type TwitterTimelineWidgetOptions = typings.twitterForWeb.TwitterTimelineWidgetBaseOptions with typings.twitterForWeb.AnonAriaPolite
 }

@@ -15,6 +15,8 @@ trait IEditOperationBuilder extends js.Object {
     * @param text The text to replace with. May be null to represent a simple delete.
     */
   def addEditOperation(range: Range, text: String): Unit = js.native
+  def addEditOperation(range: Range, text: String, forceMoveMarkers: Boolean): Unit = js.native
+  def addEditOperation(range: Range, text: Null, forceMoveMarkers: Boolean): Unit = js.native
   def addTrackedEditOperation(range: Range): Unit = js.native
   /**
     * Add a new edit operation (a replace operation).
@@ -23,6 +25,8 @@ trait IEditOperationBuilder extends js.Object {
     * @param text The text to replace with. May be null to represent a simple delete.
     */
   def addTrackedEditOperation(range: Range, text: String): Unit = js.native
+  def addTrackedEditOperation(range: Range, text: String, forceMoveMarkers: Boolean): Unit = js.native
+  def addTrackedEditOperation(range: Range, text: Null, forceMoveMarkers: Boolean): Unit = js.native
   /**
     * Track `selection` when applying edit operations.
     * A best effort will be made to not grow/expand the selection.

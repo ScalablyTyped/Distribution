@@ -1,6 +1,6 @@
 package typings.onfleetNodeOnfleet.tasksMod
 
-import typings.std.Partial
+import typings.onfleetNodeOnfleet.PartialCreateTaskProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,6 +18,6 @@ trait Task extends js.Object {
   def get(queryOrId: String): js.Promise[OnfleetTask] = js.native
   def get(queryOrId: String, queryKey: TaskQueryKey): js.Promise[OnfleetTask] = js.native
   def get(queryParams: TaskQueryParam): js.Promise[js.Array[OnfleetTask]] = js.native
-  def update(id: String, task: Partial[CreateTaskProps]): js.Promise[UpdateTaskResult] = js.native
+  def update(id: String, task: PartialCreateTaskProps): js.Promise[UpdateTaskResult] = js.native
 }
 

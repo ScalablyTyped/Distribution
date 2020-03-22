@@ -1,9 +1,9 @@
 package typings.reactAce.aceMod
 
-import typings.brace.mod.Annotation
 import typings.react.mod.CSSProperties
 import typings.reactAce.aceEditorClassMod.AceEditorClass
 import typings.reactAce.typesMod.IAceOptions
+import typings.reactAce.typesMod.IAnnotation
 import typings.reactAce.typesMod.ICommand
 import typings.reactAce.typesMod.IEditorProps
 import typings.reactAce.typesMod.IMarker
@@ -12,7 +12,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IAceEditorProps extends js.Object {
-  var annotations: js.UndefOr[js.Array[Annotation]] = js.undefined
+  var annotations: js.UndefOr[js.Array[IAnnotation]] = js.undefined
   var className: js.UndefOr[String] = js.undefined
   var commands: js.UndefOr[js.Array[ICommand]] = js.undefined
   var cursorStart: js.UndefOr[Double] = js.undefined
@@ -46,7 +46,7 @@ trait IAceEditorProps extends js.Object {
   var onScroll: js.UndefOr[js.Function1[/* editor */ IEditorProps, Unit]] = js.undefined
   var onSelection: js.UndefOr[js.Function2[/* selectedText */ String, /* event */ js.UndefOr[js.Any], Unit]] = js.undefined
   var onSelectionChange: js.UndefOr[js.Function2[/* value */ js.Any, /* event */ js.UndefOr[js.Any], Unit]] = js.undefined
-  var onValidate: js.UndefOr[js.Function1[/* annotations */ js.Array[Annotation], Unit]] = js.undefined
+  var onValidate: js.UndefOr[js.Function1[/* annotations */ js.Array[IAnnotation], Unit]] = js.undefined
   var placeholder: js.UndefOr[String] = js.undefined
   var readOnly: js.UndefOr[Boolean] = js.undefined
   var scrollMargin: js.UndefOr[js.Array[Double]] = js.undefined
@@ -65,7 +65,7 @@ trait IAceEditorProps extends js.Object {
 object IAceEditorProps {
   @scala.inline
   def apply(
-    annotations: js.Array[Annotation] = null,
+    annotations: js.Array[IAnnotation] = null,
     className: String = null,
     commands: js.Array[ICommand] = null,
     cursorStart: Int | Double = null,
@@ -98,7 +98,7 @@ object IAceEditorProps {
     onScroll: /* editor */ IEditorProps => Unit = null,
     onSelection: (/* selectedText */ String, /* event */ js.UndefOr[js.Any]) => Unit = null,
     onSelectionChange: (/* value */ js.Any, /* event */ js.UndefOr[js.Any]) => Unit = null,
-    onValidate: /* annotations */ js.Array[Annotation] => Unit = null,
+    onValidate: /* annotations */ js.Array[IAnnotation] => Unit = null,
     placeholder: String = null,
     readOnly: js.UndefOr[Boolean] = js.undefined,
     scrollMargin: js.Array[Double] = null,

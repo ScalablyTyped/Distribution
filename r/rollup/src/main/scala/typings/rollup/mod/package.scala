@@ -97,7 +97,7 @@ package object mod {
     - typings.rollup.mod.ExistingRawSourceMap
     - java.lang.String
     - scala.Null
-    - typings.rollup.Anon
+    - typings.rollup.AnonMappings
   */
   type SourceMapInput = typings.rollup.mod._SourceMapInput | java.lang.String | scala.Null
   type SourceMapSegment = js.Array[scala.Double] | (js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double]) | (js.Tuple5[scala.Double, scala.Double, scala.Double, scala.Double, scala.Double])

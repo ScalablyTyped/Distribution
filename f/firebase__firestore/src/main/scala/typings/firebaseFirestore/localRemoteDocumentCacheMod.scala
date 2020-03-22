@@ -58,7 +58,7 @@ object localRemoteDocumentCacheMod extends js.Object {
       * Returns the set of documents that have changed since the specified read
       * time.
       */
-    def getNewDocumentChanges(transaction: PersistenceTransaction, sinceReadTime: SnapshotVersion): PersistencePromise[AnonChangedDocsReadTime] = js.native
+    def getNewDocumentChanges(transaction: PersistenceTransaction, sinceReadTime: SnapshotVersion): PersistencePromise[AnonReadTime] = js.native
     /**
       * Get an estimate of the size of the document cache. Note that for eager
       * garbage collection, we don't track sizes so this will return 0.

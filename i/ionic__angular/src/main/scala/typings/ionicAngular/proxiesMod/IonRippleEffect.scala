@@ -10,7 +10,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ionic/angular/dist/directives/proxies", "IonRippleEffect")
+@JSImport("@ionic/angular/directives/proxies", "IonRippleEffect")
 @js.native
 class IonRippleEffect protected ()
   extends typings.ionicCore.componentsMod.Components.IonRippleEffect {

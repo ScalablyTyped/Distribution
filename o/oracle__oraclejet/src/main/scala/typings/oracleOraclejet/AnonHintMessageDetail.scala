@@ -5,16 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonHintMessageDetail extends js.Object {
-  var hint: js.UndefOr[AnonInRange] = js.undefined
-  var messageDetail: js.UndefOr[AnonRangeOverflow] = js.undefined
+  var hint: js.UndefOr[AnonExact] = js.undefined
+  var messageDetail: js.UndefOr[AnonRangeUnderflow] = js.undefined
   var messageSummary: js.UndefOr[AnonRangeOverflow] = js.undefined
 }
 
 object AnonHintMessageDetail {
   @scala.inline
   def apply(
-    hint: AnonInRange = null,
-    messageDetail: AnonRangeOverflow = null,
+    hint: AnonExact = null,
+    messageDetail: AnonRangeUnderflow = null,
     messageSummary: AnonRangeOverflow = null
   ): AnonHintMessageDetail = {
     val __obj = js.Dynamic.literal()

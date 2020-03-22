@@ -7,7 +7,6 @@ import typings.blueprintjsTimezone.blueprintjsTimezoneStrings.offset
 import typings.blueprintjsTimezone.timezoneMetadataMod.ITimezoneMetadata
 import typings.blueprintjsTimezone.timezonePickerMod.ITimezonePickerProps
 import typings.std.Date
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -45,7 +44,7 @@ object mod extends js.Object {
   /* static members */
   @js.native
   object TimezonePicker extends js.Object {
-    var defaultProps: Partial[ITimezonePickerProps] = js.native
+    var defaultProps: PartialITimezonePickerPro = js.native
     var displayName: String = js.native
   }
   

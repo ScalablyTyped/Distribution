@@ -1,22 +1,33 @@
 package typings.vscodeLanguageserverProtocol.protocolTypeDefinitionMod
 
-import typings.vscodeLanguageserverProtocol.AnonTypeDefinition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TypeDefinitionClientCapabilities extends js.Object {
   /**
-    * The text document client capabilities
+    * Whether implementation supports dynamic registration. If this is set to `true`
+    * the client supports the new `TypeDefinitionRegistrationOptions` return value
+    * for the corresponding server capability as well.
     */
-  var textDocument: js.UndefOr[AnonTypeDefinition] = js.undefined
+  var dynamicRegistration: js.UndefOr[Boolean] = js.undefined
+  /**
+    * The client supports additional metadata in the form of definition links.
+    *
+    * Since 3.14.0
+    */
+  var linkSupport: js.UndefOr[Boolean] = js.undefined
 }
 
 object TypeDefinitionClientCapabilities {
   @scala.inline
-  def apply(textDocument: AnonTypeDefinition = null): TypeDefinitionClientCapabilities = {
+  def apply(
+    dynamicRegistration: js.UndefOr[Boolean] = js.undefined,
+    linkSupport: js.UndefOr[Boolean] = js.undefined
+  ): TypeDefinitionClientCapabilities = {
     val __obj = js.Dynamic.literal()
-    if (textDocument != null) __obj.updateDynamic("textDocument")(textDocument.asInstanceOf[js.Any])
+    if (!js.isUndefined(dynamicRegistration)) __obj.updateDynamic("dynamicRegistration")(dynamicRegistration.asInstanceOf[js.Any])
+    if (!js.isUndefined(linkSupport)) __obj.updateDynamic("linkSupport")(linkSupport.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeDefinitionClientCapabilities]
   }
 }

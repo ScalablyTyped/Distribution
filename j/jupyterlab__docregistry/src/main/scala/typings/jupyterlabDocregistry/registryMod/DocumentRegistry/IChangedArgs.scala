@@ -21,7 +21,7 @@ trait IChangedArgs extends js.Object {
   /**
     * The name of the item or the widget factory being extended.
     */
-  val name: String
+  val name: js.UndefOr[String] = js.undefined
   /**
     * The type of the changed item.
     */
@@ -32,11 +32,12 @@ object IChangedArgs {
   @scala.inline
   def apply(
     change: added | removed,
-    name: String,
-    `type`: widgetFactory | modelFactory | widgetExtension | fileType
+    `type`: widgetFactory | modelFactory | widgetExtension | fileType,
+    name: String = null
   ): IChangedArgs = {
-    val __obj = js.Dynamic.literal(change = change.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(change = change.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[IChangedArgs]
   }
 }

@@ -1,10 +1,11 @@
 package typings.baseui.selectMod
 
-import typings.baseui.AnonEventItem
-import typings.baseui.AnonOptionOptionState
+import typings.baseui.AnonItem
+import typings.baseui.AnonOptionState
 import typings.baseui.baseuiStrings.compact
 import typings.baseui.baseuiStrings.default_
 import typings.baseui.baseuiStrings.large_
+import typings.baseui.baseuiStrings.mini
 import typings.baseui.baseuiStrings.search
 import typings.baseui.baseuiStrings.select
 import typings.baseui.menuMod.OnItemSelect
@@ -16,7 +17,7 @@ import scala.scalajs.js.annotation._
 
 trait DropdownProps extends js.Object {
   var error: js.UndefOr[Boolean] = js.undefined
-  var getOptionLabel: js.UndefOr[js.Function1[/* args */ AnonOptionOptionState, ReactNode]] = js.undefined
+  var getOptionLabel: js.UndefOr[js.Function1[/* args */ AnonOptionState, ReactNode]] = js.undefined
   var innerRef: js.UndefOr[Ref[_]] = js.undefined
   var isLoading: js.UndefOr[Boolean] = js.undefined
   var labelKey: js.UndefOr[String] = js.undefined
@@ -28,7 +29,7 @@ trait DropdownProps extends js.Object {
   var overrides: js.UndefOr[DropdownOverrides] = js.undefined
   var required: js.UndefOr[Boolean] = js.undefined
   var searchable: js.UndefOr[Boolean] = js.undefined
-  var size: js.UndefOr[default_ | compact | large_] = js.undefined
+  var size: js.UndefOr[mini | default_ | compact | large_] = js.undefined
   var `type`: js.UndefOr[select | search] = js.undefined
   var value: js.UndefOr[Value] = js.undefined
   var valueKey: js.UndefOr[String] = js.undefined
@@ -39,19 +40,19 @@ object DropdownProps {
   @scala.inline
   def apply(
     error: js.UndefOr[Boolean] = js.undefined,
-    getOptionLabel: /* args */ AnonOptionOptionState => ReactNode = null,
+    getOptionLabel: /* args */ AnonOptionState => ReactNode = null,
     innerRef: Ref[_] = null,
     isLoading: js.UndefOr[Boolean] = js.undefined,
     labelKey: String = null,
     maxDropdownHeight: String = null,
     multi: js.UndefOr[Boolean] = js.undefined,
     noResultsMsg: ReactNode = null,
-    onItemSelect: /* args */ AnonEventItem => js.Any = null,
+    onItemSelect: /* args */ AnonItem => js.Any = null,
     options: Value = null,
     overrides: DropdownOverrides = null,
     required: js.UndefOr[Boolean] = js.undefined,
     searchable: js.UndefOr[Boolean] = js.undefined,
-    size: default_ | compact | large_ = null,
+    size: mini | default_ | compact | large_ = null,
     `type`: select | search = null,
     value: Value = null,
     valueKey: String = null,

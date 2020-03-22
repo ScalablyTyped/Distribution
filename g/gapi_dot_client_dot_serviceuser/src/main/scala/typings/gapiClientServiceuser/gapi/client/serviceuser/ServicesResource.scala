@@ -2,8 +2,8 @@ package typings.gapiClientServiceuser.gapi.client.serviceuser
 
 import typings.gapiClient.gapi.client.Request_
 import typings.gapiClientServiceuser.AnonAccesstoken
-import typings.gapiClientServiceuser.AnonAccesstokenAlt
-import typings.gapiClientServiceuser.AnonAccesstokenAltBearertoken
+import typings.gapiClientServiceuser.AnonAlt
+import typings.gapiClientServiceuser.AnonBearertoken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,7 +26,7 @@ trait ServicesResource extends js.Object {
     */
   def enable(request: AnonAccesstoken): Request_[Operation]
   /** List enabled services for the specified consumer. */
-  def list(request: AnonAccesstokenAlt): Request_[ListEnabledServicesResponse]
+  def list(request: AnonAlt): Request_[ListEnabledServicesResponse]
   /**
     * Search available services.
     *
@@ -34,7 +34,7 @@ trait ServicesResource extends js.Object {
     * authenticated users, also returns all services the calling user has
     * "servicemanagement.services.bind" permission for.
     */
-  def search(request: AnonAccesstokenAltBearertoken): Request_[SearchServicesResponse]
+  def search(request: AnonBearertoken): Request_[SearchServicesResponse]
 }
 
 object ServicesResource {
@@ -42,8 +42,8 @@ object ServicesResource {
   def apply(
     disable: AnonAccesstoken => Request_[Operation],
     enable: AnonAccesstoken => Request_[Operation],
-    list: AnonAccesstokenAlt => Request_[ListEnabledServicesResponse],
-    search: AnonAccesstokenAltBearertoken => Request_[SearchServicesResponse]
+    list: AnonAlt => Request_[ListEnabledServicesResponse],
+    search: AnonBearertoken => Request_[SearchServicesResponse]
   ): ServicesResource = {
     val __obj = js.Dynamic.literal(disable = js.Any.fromFunction1(disable), enable = js.Any.fromFunction1(enable), list = js.Any.fromFunction1(list), search = js.Any.fromFunction1(search))
   

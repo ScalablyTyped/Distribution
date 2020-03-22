@@ -1,8 +1,8 @@
 package typings.materialComponentsWeb.mod
 
+import typings.materialDataTable.PartialMDCDataTableAdapte
 import typings.materialDataTable.adapterMod.MDCDataTableAdapter
 import typings.std.Element
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +17,7 @@ object dataTable extends js.Object {
   @js.native
   class MDCDataTableFoundation ()
     extends typings.materialDataTable.mod.MDCDataTableFoundation {
-    def this(adapter: Partial[MDCDataTableAdapter]) = this()
+    def this(adapter: PartialMDCDataTableAdapte) = this()
   }
   
   /* static members */

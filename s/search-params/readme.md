@@ -1,7 +1,7 @@
 
 # Scala.js typings for search-params
 
-Typings are for version 2.1.3
+Typings are for version 3.0.0
 
 ## Library description:
 A module to manipulate search part of URLs (querystring)

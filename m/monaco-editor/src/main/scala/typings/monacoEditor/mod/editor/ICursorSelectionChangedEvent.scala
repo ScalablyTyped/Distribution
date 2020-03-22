@@ -7,6 +7,18 @@ import scala.scalajs.js.annotation._
 
 trait ICursorSelectionChangedEvent extends js.Object {
   /**
+    * The model version id.
+    */
+  val modelVersionId: Double
+  /**
+    * The model version id the that `oldSelections` refer to.
+    */
+  val oldModelVersionId: Double
+  /**
+    * The old selections.
+    */
+  val oldSelections: js.Array[Selection] | Null
+  /**
     * Reason.
     */
   val reason: CursorChangeReason
@@ -27,13 +39,16 @@ trait ICursorSelectionChangedEvent extends js.Object {
 object ICursorSelectionChangedEvent {
   @scala.inline
   def apply(
+    modelVersionId: Double,
+    oldModelVersionId: Double,
     reason: CursorChangeReason,
     secondarySelections: js.Array[Selection],
     selection: Selection,
-    source: String
+    source: String,
+    oldSelections: js.Array[Selection] = null
   ): ICursorSelectionChangedEvent = {
-    val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any], secondarySelections = secondarySelections.asInstanceOf[js.Any], selection = selection.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
-  
+    val __obj = js.Dynamic.literal(modelVersionId = modelVersionId.asInstanceOf[js.Any], oldModelVersionId = oldModelVersionId.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], secondarySelections = secondarySelections.asInstanceOf[js.Any], selection = selection.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
+    if (oldSelections != null) __obj.updateDynamic("oldSelections")(oldSelections.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICursorSelectionChangedEvent]
   }
 }

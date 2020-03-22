@@ -23,9 +23,6 @@ object coinbaseCommerceNodeStrings {
   sealed trait CONFIRMED extends PaymentStatus
   
   @js.native
-  sealed trait CryptoPricing extends js.Object
-  
-  @js.native
   sealed trait DELAYED extends js.Object
   
   @js.native
@@ -162,8 +159,6 @@ object coinbaseCommerceNodeStrings {
   def CANCELED: CANCELED = "CANCELED".asInstanceOf[CANCELED]
   @scala.inline
   def CONFIRMED: CONFIRMED = "CONFIRMED".asInstanceOf[CONFIRMED]
-  @scala.inline
-  def CryptoPricing: CryptoPricing = "CryptoPricing".asInstanceOf[CryptoPricing]
   @scala.inline
   def DELAYED: DELAYED = "DELAYED".asInstanceOf[DELAYED]
   @scala.inline

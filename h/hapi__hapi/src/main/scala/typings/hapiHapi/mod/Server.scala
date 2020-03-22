@@ -2,10 +2,10 @@ package typings.hapiHapi.mod
 
 import typings.hapiCatbox.mod.Policy
 import typings.hapiHapi.AnonApply
+import typings.hapiHapi.AnonApplyBoolean
 import typings.hapiHapi.AnonApplyExtend
-import typings.hapiHapi.AnonApplyExtendTrue
-import typings.hapiHapi.AnonApplyExtendTrueBoolean
 import typings.hapiHapi.AnonEventLoopDelay
+import typings.hapiHapi.AnonExtend
 import typings.hapiHapi.AnonMethod
 import typings.hapiHapi.AnonRequest
 import typings.hapiHapi.AnonTimeout
@@ -238,18 +238,18 @@ class Server () extends js.Object {
   def decorate_request(
     `type`: request,
     property: DecorateName,
-    method: js.Function1[
-      /* existing */ js.Function1[/* repeated */ js.Any, _], 
-      js.Function1[/* request */ Request, DecorationMethod[Request]]
-    ],
+    method: js.Function1[/* request */ Request, DecorationMethod[Request]],
     options: AnonApplyExtend
   ): Unit = js.native
   @JSName("decorate")
   def decorate_request(
     `type`: request,
     property: DecorateName,
-    method: js.Function1[/* request */ Request, DecorationMethod[Request]],
-    options: AnonApplyExtendTrue
+    method: js.Function1[
+      /* existing */ js.Function1[/* repeated */ js.Any, _], 
+      js.Function1[/* request */ Request, DecorationMethod[Request]]
+    ],
+    options: AnonExtend
   ): Unit = js.native
   @JSName("decorate")
   def decorate_request(`type`: request, property: DecorateName, method: DecorationMethod[Request]): Unit = js.native
@@ -260,7 +260,7 @@ class Server () extends js.Object {
     `type`: server,
     property: DecorateName,
     method: js.Function1[/* existing */ js.Function1[/* repeated */ js.Any, _], DecorationMethod[this.type]],
-    options: AnonApplyExtendTrueBoolean
+    options: AnonApplyBoolean
   ): Unit = js.native
   @JSName("decorate")
   def decorate_server(`type`: server, property: DecorateName, method: DecorationMethod[Server]): Unit = js.native
@@ -274,7 +274,7 @@ class Server () extends js.Object {
       /* existing */ js.Function1[/* repeated */ js.Any, _], 
       DecorationMethod[ResponseToolkit]
     ],
-    options: AnonApplyExtendTrueBoolean
+    options: AnonApplyBoolean
   ): Unit = js.native
   @JSName("decorate")
   def decorate_toolkit(`type`: toolkit, property: DecorateName, method: DecorationMethod[ResponseToolkit]): Unit = js.native

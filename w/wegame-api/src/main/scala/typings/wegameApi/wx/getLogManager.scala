@@ -1,6 +1,6 @@
 package typings.wegameApi.wx
 
-import typings.wegameApi.Anon0
+import typings.wegameApi.Anon3
 import typings.wegameApi.LogManager
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,6 +14,6 @@ object getLogManager extends js.Object {
     * @param param 初始化时的参数
     */
   def apply(): LogManager = js.native
-  def apply(param: Anon0): LogManager = js.native
+  def apply(param: Anon3): LogManager = js.native
 }
 

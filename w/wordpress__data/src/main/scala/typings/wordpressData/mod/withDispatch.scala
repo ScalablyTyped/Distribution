@@ -1,6 +1,6 @@
 package typings.wordpressData.mod
 
-import typings.wordpressData.AnonKey
+import typings.wordpressData.AnonSelect
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ object withDispatch extends js.Object {
     mapDispatchToProps: js.Function3[
       /* disp */ js.Function1[/* key */ String, DispatcherMap], 
       /* ownProps */ P with IP, 
-      /* registry */ AnonKey, 
+      /* registry */ AnonSelect, 
       DP
     ]
   ): js.Function1[

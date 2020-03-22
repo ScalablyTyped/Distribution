@@ -8,13 +8,13 @@ trait _ValHook[TElement] extends js.Object
 
 object _ValHook {
   @scala.inline
-  def AnonElem[TElement](get: TElement => js.Any): _ValHook[TElement] = {
+  def Anon0[TElement](get: TElement => js.Any): _ValHook[TElement] = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
   
     __obj.asInstanceOf[_ValHook[TElement]]
   }
   @scala.inline
-  def AnonElemSet[TElement](set: (TElement, js.Any) => js.Any): _ValHook[TElement] = {
+  def Anon1[TElement](set: (TElement, js.Any) => js.Any): _ValHook[TElement] = {
     val __obj = js.Dynamic.literal(set = js.Any.fromFunction2(set))
   
     __obj.asInstanceOf[_ValHook[TElement]]

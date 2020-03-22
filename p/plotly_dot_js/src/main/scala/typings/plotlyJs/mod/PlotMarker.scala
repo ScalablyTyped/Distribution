@@ -1,9 +1,11 @@
 package typings.plotlyJs.mod
 
-import typings.plotlyJs.AnonColorColorsrc
+import typings.plotlyJs.AnonColorsrc
+import typings.plotlyJs.PartialColorBar
+import typings.plotlyJs.PartialPadding
+import typings.plotlyJs.PartialScatterMarkerLine
 import typings.plotlyJs.plotlyJsStrings.area
 import typings.plotlyJs.plotlyJsStrings.diameter
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,14 +16,14 @@ trait PlotMarker extends js.Object {
   var cmax: Double
   var cmin: Double
   var color: Color | js.Array[Color]
-  var colorbar: Partial[ColorBar]
+  var colorbar: PartialColorBar
   var colors: js.Array[Color]
   var colorscale: ColorScale
-  var gradient: AnonColorColorsrc
-  var line: Partial[ScatterMarkerLine]
+  var gradient: AnonColorsrc
+  var line: PartialScatterMarkerLine
   var maxdisplayed: Double
   var opacity: Double | js.Array[Double]
-  var pad: Partial[Padding]
+  var pad: PartialPadding
   var reversescale: Boolean
   var showscale: Boolean
   var size: Double | js.Array[Double]
@@ -41,14 +43,14 @@ object PlotMarker {
     cmax: Double,
     cmin: Double,
     color: Color | js.Array[Color],
-    colorbar: Partial[ColorBar],
+    colorbar: PartialColorBar,
     colors: js.Array[Color],
     colorscale: ColorScale,
-    gradient: AnonColorColorsrc,
-    line: Partial[ScatterMarkerLine],
+    gradient: AnonColorsrc,
+    line: PartialScatterMarkerLine,
     maxdisplayed: Double,
     opacity: Double | js.Array[Double],
-    pad: Partial[Padding],
+    pad: PartialPadding,
     reversescale: Boolean,
     showscale: Boolean,
     size: Double | js.Array[Double],

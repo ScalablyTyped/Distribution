@@ -32,5 +32,10 @@ class ContentFactory_ () extends IContentFactory {
     */
   /* CompleteClass */
   override def createInputPrompt(): IInputPrompt = js.native
+  /**
+    * Return the `CodeEditor.Factory` being used.
+    */
+  @JSName("editorFactory")
+  def editorFactory_MContentFactory_(): Factory = js.native
 }
 

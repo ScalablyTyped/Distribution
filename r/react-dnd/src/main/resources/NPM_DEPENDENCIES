@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-dnd" : "9.5.1"
+      "react-dnd" : "10.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "react-dnd" : "9.5.1"
+      "react-dnd" : "10.0.2"
     }
   ],
   "compile-devDependencies" : [

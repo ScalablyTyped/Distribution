@@ -1,8 +1,8 @@
 package typings.sequelize.mod
 
 import typings.lodash.mod.LoDashImplicitWrapper
-import typings.sequelize.AnonA1
-import typings.sequelize.FnObject
+import typings.sequelize.AnonInstantiable
+import typings.sequelize.FnCall
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Utils extends js.Object {
-  var Promise: AnonA1 = js.native
+  var Promise: AnonInstantiable = js.native
   @JSName("_")
   var _underscore_Original: SequelizeLoDash = js.native
   var and: andStatic = js.native
@@ -23,7 +23,7 @@ trait Utils extends js.Object {
     * Same concept as _.merge, but don't overwrite properties that have already been assigned
     */
   @JSName("mergeDefaults")
-  var mergeDefaults_Original: FnObject = js.native
+  var mergeDefaults_Original: FnCall = js.native
   var or: orStatic = js.native
   var where: whereStatic = js.native
   /**

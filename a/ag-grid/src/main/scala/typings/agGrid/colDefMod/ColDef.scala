@@ -1,11 +1,11 @@
 package typings.agGrid.colDefMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.agGrid.AnonAny1238347583
-import typings.agGrid.AnonAnyIFloatingFilterComp
-import typings.agGrid.AnonICellEditorComp
-import typings.agGrid.AnonICellRendererComp
-import typings.agGrid.AnonIFilterComp
+import typings.agGrid.AnonInstantiableAny
+import typings.agGrid.AnonInstantiableICellEditorComp
+import typings.agGrid.AnonInstantiableICellRendererComp
+import typings.agGrid.AnonInstantiableIFilterComp
+import typings.agGrid.AnonInstantiableIFloatingFilterComp
 import typings.agGrid.columnMod.Column
 import typings.agGrid.componentResolverMod.ComponentHolder
 import typings.agGrid.componentResolverMod.DynamicComponentDef
@@ -36,12 +36,12 @@ trait ColDef
   /** Rules for applying css classes */
   var cellClassRules: js.UndefOr[StringDictionary[js.Function | String]] = js.undefined
   /** Cell editor */
-  var cellEditor: js.UndefOr[AnonICellEditorComp | String] = js.undefined
+  var cellEditor: js.UndefOr[AnonInstantiableICellEditorComp | String] = js.undefined
   var cellEditorFramework: js.UndefOr[js.Any] = js.undefined
   var cellEditorParams: js.UndefOr[js.Any] = js.undefined
   var cellEditorSelector: js.UndefOr[js.Function1[/* params */ DynamicComponentParams, DynamicComponentDef]] = js.undefined
   /** A function for rendering a cell. */
-  var cellRenderer: js.UndefOr[AnonICellRendererComp | ICellRendererFunc | String] = js.undefined
+  var cellRenderer: js.UndefOr[AnonInstantiableICellRendererComp | ICellRendererFunc | String] = js.undefined
   var cellRendererFramework: js.UndefOr[js.Any] = js.undefined
   var cellRendererParams: js.UndefOr[js.Any] = js.undefined
   var cellRendererSelector: js.UndefOr[js.Function1[/* params */ DynamicComponentParams, DynamicComponentDef]] = js.undefined
@@ -81,15 +81,15 @@ trait ColDef
   /** The field of the row to get the cells data from */
   var field: js.UndefOr[String] = js.undefined
   /** one of the built in filter names: [set, number, text], or a filter function*/
-  var filter: js.UndefOr[String | AnonIFilterComp] = js.undefined
+  var filter: js.UndefOr[String | AnonInstantiableIFilterComp] = js.undefined
   var filterFramework: js.UndefOr[js.Any] = js.undefined
   /** The filter params are specific to each filter! */
   var filterParams: js.UndefOr[js.Any] = js.undefined
   /** Expression or function to get the cells value for filtering. */
   var filterValueGetter: js.UndefOr[(js.Function1[/* params */ ValueGetterParams, _]) | String] = js.undefined
   /** The custom header component to be used for rendering the floating filter. If none specified the default ag-Grid is used**/
-  var floatingFilterComponent: js.UndefOr[AnonAnyIFloatingFilterComp] = js.undefined
-  var floatingFilterComponentFramework: js.UndefOr[AnonAny1238347583] = js.undefined
+  var floatingFilterComponent: js.UndefOr[AnonInstantiableIFloatingFilterComp] = js.undefined
+  var floatingFilterComponentFramework: js.UndefOr[AnonInstantiableAny] = js.undefined
   var floatingFilterComponentParams: js.UndefOr[js.Any] = js.undefined
   /** To create the quick filter text for this column, if toString is not good enough on the value. */
   var getQuickFilterText: js.UndefOr[js.Function1[/* params */ GetQuickFilterTextParams, String]] = js.undefined
@@ -98,9 +98,9 @@ trait ColDef
   /** If true, the header checkbox selection will work on filtered items*/
   var headerCheckboxSelectionFilteredOnly: js.UndefOr[Boolean] = js.undefined
   /** The custom header component to be used for rendering the component header. If none specified the default ag-Grid is used**/
-  var headerComponent: js.UndefOr[String | AnonAny1238347583] = js.undefined
+  var headerComponent: js.UndefOr[String | AnonInstantiableAny] = js.undefined
   /** The custom header component to be used for rendering the component header in the hosting framework (ie: React/Angular). If none specified the default ag-Grid is used**/
-  var headerComponentFramework: js.UndefOr[AnonAny1238347583] = js.undefined
+  var headerComponentFramework: js.UndefOr[AnonInstantiableAny] = js.undefined
   /** The custom header component parameters**/
   var headerComponentParams: js.UndefOr[js.Any] = js.undefined
   /** Set to true for this column to be hidden. Naturally you might think, it would make more sense to call this field 'visible' and mark it false to hide,
@@ -140,7 +140,7 @@ trait ColDef
   /** Whether this column is pinned or not. */
   var pinned: js.UndefOr[Boolean | String] = js.undefined
   /** A function for rendering a pinned row cell. */
-  var pinnedRowCellRenderer: js.UndefOr[AnonICellRendererComp | ICellRendererFunc | String] = js.undefined
+  var pinnedRowCellRenderer: js.UndefOr[AnonInstantiableICellRendererComp | ICellRendererFunc | String] = js.undefined
   var pinnedRowCellRendererFramework: js.UndefOr[js.Any] = js.undefined
   var pinnedRowCellRendererParams: js.UndefOr[js.Any] = js.undefined
   /** A function to format a pinned row value, should return a string. Not used for CSV export or copy to clipboard, only for UI cell rendering. */
@@ -226,11 +226,11 @@ object ColDef {
     autoHeight: js.UndefOr[Boolean] = js.undefined,
     cellClass: String | js.Array[String] | (js.Function1[/* cellClassParams */ CellClassParams, String | js.Array[String]]) = null,
     cellClassRules: StringDictionary[js.Function | String] = null,
-    cellEditor: AnonICellEditorComp | String = null,
+    cellEditor: AnonInstantiableICellEditorComp | String = null,
     cellEditorFramework: js.Any = null,
     cellEditorParams: js.Any = null,
     cellEditorSelector: /* params */ DynamicComponentParams => DynamicComponentDef = null,
-    cellRenderer: AnonICellRendererComp | ICellRendererFunc | String = null,
+    cellRenderer: AnonInstantiableICellRendererComp | ICellRendererFunc | String = null,
     cellRendererFramework: js.Any = null,
     cellRendererParams: js.Any = null,
     cellRendererSelector: /* params */ DynamicComponentParams => DynamicComponentDef = null,
@@ -247,19 +247,19 @@ object ColDef {
     enableValue: js.UndefOr[Boolean] = js.undefined,
     equals: (/* valueA */ js.Any, /* valueB */ js.Any) => Boolean = null,
     field: String = null,
-    filter: String | AnonIFilterComp = null,
+    filter: String | AnonInstantiableIFilterComp = null,
     filterFramework: js.Any = null,
     filterParams: js.Any = null,
     filterValueGetter: (js.Function1[/* params */ ValueGetterParams, _]) | String = null,
-    floatingFilterComponent: AnonAnyIFloatingFilterComp = null,
-    floatingFilterComponentFramework: AnonAny1238347583 = null,
+    floatingFilterComponent: AnonInstantiableIFloatingFilterComp = null,
+    floatingFilterComponentFramework: AnonInstantiableAny = null,
     floatingFilterComponentParams: js.Any = null,
     getQuickFilterText: /* params */ GetQuickFilterTextParams => String = null,
     headerCheckboxSelection: Boolean | (js.Function1[/* params */ js.Any, Boolean]) = null,
     headerCheckboxSelectionFilteredOnly: js.UndefOr[Boolean] = js.undefined,
     headerClass: String | js.Array[String] | (js.Function1[/* params */ js.Any, String | js.Array[String]]) = null,
-    headerComponent: String | AnonAny1238347583 = null,
-    headerComponentFramework: AnonAny1238347583 = null,
+    headerComponent: String | AnonInstantiableAny = null,
+    headerComponentFramework: AnonInstantiableAny = null,
     headerComponentParams: js.Any = null,
     headerName: String = null,
     headerTooltip: String = null,
@@ -279,7 +279,7 @@ object ColDef {
     onCellDoubleClicked: /* event */ CellDoubleClickedEvent => Unit = null,
     onCellValueChanged: js.Function = null,
     pinned: Boolean | String = null,
-    pinnedRowCellRenderer: AnonICellRendererComp | ICellRendererFunc | String = null,
+    pinnedRowCellRenderer: AnonInstantiableICellRendererComp | ICellRendererFunc | String = null,
     pinnedRowCellRendererFramework: js.Any = null,
     pinnedRowCellRendererParams: js.Any = null,
     pinnedRowValueFormatter: /* params */ ValueFormatterParams => String = null,

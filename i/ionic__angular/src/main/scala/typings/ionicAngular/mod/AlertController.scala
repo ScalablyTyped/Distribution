@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/angular", "AlertController")
 @js.native
 class AlertController ()
-  extends typings.ionicAngular.distMod.AlertController
+  extends typings.ionicAngular.alertControllerMod.AlertController
 

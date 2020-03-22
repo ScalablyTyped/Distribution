@@ -25,7 +25,7 @@ trait SearchTransitGatewayMulticastGroupsRequest extends js.Object {
   /**
     * The ID of the transit gateway multicast domain.
     */
-  var TransitGatewayMulticastDomainId: js.UndefOr[String] = js.native
+  var TransitGatewayMulticastDomainId: js.UndefOr[typings.awsSdk.ec2Mod.TransitGatewayMulticastDomainId] = js.native
 }
 
 object SearchTransitGatewayMulticastGroupsRequest {
@@ -35,7 +35,7 @@ object SearchTransitGatewayMulticastGroupsRequest {
     Filters: FilterList = null,
     MaxResults: Int | scala.Double = null,
     NextToken: String = null,
-    TransitGatewayMulticastDomainId: String = null
+    TransitGatewayMulticastDomainId: TransitGatewayMulticastDomainId = null
   ): SearchTransitGatewayMulticastGroupsRequest = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])

@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.TopLevel
 import typings.jupyterlabApplication.frontendMod.JupyterFrontEnd.IOptions
 import typings.jupyterlabApplication.frontendMod.JupyterFrontEnd.IPaths
 import typings.jupyterlabApplication.frontendMod.JupyterFrontEnd.IShell
-import typings.phosphorCoreutils.mod.Token
+import typings.luminoCoreutils.mod.Token
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -74,6 +74,13 @@ object mod extends js.Object {
       * The application paths dictionary token.
       */
     val IPaths: Token[typings.jupyterlabApplication.frontendMod.JupyterFrontEnd.IPaths] = js.native
+    /**
+      * A namespace for tree resolver types.
+      */
+    @js.native
+    object ITreeResolver
+      extends TopLevel[Token[typings.jupyterlabApplication.frontendMod.JupyterFrontEnd.ITreeResolver]]
+    
   }
   
   @js.native

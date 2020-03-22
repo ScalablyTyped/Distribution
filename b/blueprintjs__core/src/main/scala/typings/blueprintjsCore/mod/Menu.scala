@@ -1,7 +1,7 @@
 package typings.blueprintjsCore.mod
 
-import typings.blueprintjsCore.TypeofClassMenuDivider
-import typings.blueprintjsCore.TypeofClassMenuItem
+import typings.blueprintjsCore.TypeofMenuDivider
+import typings.blueprintjsCore.TypeofMenuItem
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,8 +15,8 @@ class Menu ()
 @JSImport("@blueprintjs/core", "Menu")
 @js.native
 object Menu extends js.Object {
-  var Divider: TypeofClassMenuDivider = js.native
-  var Item: TypeofClassMenuItem = js.native
+  var Divider: TypeofMenuDivider = js.native
+  var Item: TypeofMenuItem = js.native
   var displayName: String = js.native
 }
 

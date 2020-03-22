@@ -1,6 +1,6 @@
 package typings.pako.mod
 
-import typings.pako.AnonString
+import typings.pako.InflateFunctionOptionstos
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,6 +14,7 @@ object inflate extends js.Object {
     * Decompress data with inflate/ungzip and options. Autodetect format via wrapper header
     * by default. That's why we don't provide separate ungzip method.
     */
-  def apply(data: Data, options: InflateFunctionOptions with AnonString): String = js.native
+  def apply(data: Data, options: InflateFunctionOptionstos): String = js.native
+  def apply(data: Data, options: InflateFunctionOptions): Uint8Array = js.native
 }
 

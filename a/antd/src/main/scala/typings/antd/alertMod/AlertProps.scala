@@ -26,7 +26,6 @@ trait AlertProps extends js.Object {
   /** Additional content of Alert */
   var description: js.UndefOr[ReactNode] = js.undefined
   var icon: js.UndefOr[ReactNode] = js.undefined
-  var iconType: js.UndefOr[String] = js.undefined
   /** Content of Alert */
   var message: ReactNode
   /** Callback when close Alert */
@@ -51,7 +50,6 @@ object AlertProps {
     closeText: ReactNode = null,
     description: ReactNode = null,
     icon: ReactNode = null,
-    iconType: String = null,
     message: ReactNode = null,
     onClose: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit = null,
     prefixCls: String = null,
@@ -67,7 +65,6 @@ object AlertProps {
     if (closeText != null) __obj.updateDynamic("closeText")(closeText.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (iconType != null) __obj.updateDynamic("iconType")(iconType.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction1(onClose))
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])

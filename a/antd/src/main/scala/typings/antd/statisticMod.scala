@@ -1,7 +1,8 @@
 package typings.antd
 
-import typings.react.mod.ReactElement
-import typings.react.mod.ValidationMap
+import typings.antd.statisticStatisticMod.StatisticComponent
+import typings.antd.statisticStatisticMod.StatisticProps
+import typings.react.mod.SFC
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,16 +10,6 @@ import scala.scalajs.js.annotation._
 @JSImport("antd/lib/statistic", JSImport.Namespace)
 @js.native
 object statisticMod extends js.Object {
-  @js.native
-  object default extends js.Object {
-    var Countdown: TypeofClassCountdown = js.native
-    var contextTypes: js.UndefOr[ValidationMap[_]] = js.native
-    var defaultProps: js.UndefOr[PartialStatisticProps] = js.native
-    var displayName: js.UndefOr[String] = js.native
-    var propTypes: js.UndefOr[WeakValidationMapStatisticProps] = js.native
-    def apply(props: PropsWithChildrenStatisticProps): ReactElement | Null = js.native
-    def apply(props: PropsWithChildrenStatisticProps, context: js.Any): ReactElement | Null = js.native
-  }
-  
+  val default: SFC[StatisticProps] with StatisticComponent = js.native
 }
 

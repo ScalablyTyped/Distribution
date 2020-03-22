@@ -1,15 +1,15 @@
 package typings.oracleOraclejet.ojtableMod
 
-import typings.oracleOraclejet.AnonAutoClassName
-import typings.oracleOraclejet.AnonAutoClassNameContext
-import typings.oracleOraclejet.AnonColumnIndexColumnKey
+import typings.oracleOraclejet.Anon19
 import typings.oracleOraclejet.AnonColumnIndexKey
-import typings.oracleOraclejet.AnonColumnMultiple
+import typings.oracleOraclejet.AnonColumnKey
 import typings.oracleOraclejet.AnonDataIndex
-import typings.oracleOraclejet.AnonDragDropReorderAnonColumns
-import typings.oracleOraclejet.AnonFetchSizeMaxCount
-import typings.oracleOraclejet.AnonIndexOjtablefooter
+import typings.oracleOraclejet.AnonDropReorder
+import typings.oracleOraclejet.AnonField
+import typings.oracleOraclejet.AnonFooterClassName
+import typings.oracleOraclejet.AnonIndexSubId
 import typings.oracleOraclejet.AnonLabelAccSelectionAffordanceBottom
+import typings.oracleOraclejet.AnonMaxCount
 import typings.oracleOraclejet.AnonRowHeader
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.mod.baseComponent
@@ -82,23 +82,23 @@ import scala.scalajs.js.annotation._
 trait ojTable_[K, D] extends baseComponent[ojTableSettableProperties[K, D]] {
   var accessibility: AnonRowHeader = js.native
   var as: String = js.native
-  var columns: (js.Array[AnonAutoClassName[K, D]]) | Null = js.native
-  var columnsDefault: AnonAutoClassNameContext[K, D] = js.native
+  var columns: (js.Array[AnonField[K, D]]) | Null = js.native
+  var columnsDefault: AnonFooterClassName[K, D] = js.native
   var currentRow: CurrentRow[K] | Null = js.native
   var data: (DataProvider[K, D]) | Null = js.native
   var display: list | grid = js.native
-  var dnd: AnonDragDropReorderAnonColumns[K, D] = js.native
+  var dnd: AnonDropReorder[K, D] = js.native
   var editMode: none | rowEdit = js.native
   val firstSelectedRow: js.Object = js.native
   var horizontalGridVisible: auto | enabled | disabled = js.native
   var onAccessibilityChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonRowHeader], _]) | Null = js.native
   var onAsChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
-  var onColumnsChanged: (js.Function1[/* event */ JetElementCustomEvent[(js.Array[AnonAutoClassName[K, D]]) | Null], _]) | Null = js.native
-  var onColumnsDefaultChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonAutoClassNameContext[K, D]], _]) | Null = js.native
+  var onColumnsChanged: (js.Function1[/* event */ JetElementCustomEvent[(js.Array[AnonField[K, D]]) | Null], _]) | Null = js.native
+  var onColumnsDefaultChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonFooterClassName[K, D]], _]) | Null = js.native
   var onCurrentRowChanged: (js.Function1[/* event */ JetElementCustomEvent[CurrentRow[K] | Null], _]) | Null = js.native
   var onDataChanged: (js.Function1[/* event */ JetElementCustomEvent[(DataProvider[K, D]) | Null], _]) | Null = js.native
   var onDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[list | grid], _]) | Null = js.native
-  var onDndChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonDragDropReorderAnonColumns[K, D]], _]) | Null = js.native
+  var onDndChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonDropReorder[K, D]], _]) | Null = js.native
   var onEditModeChanged: (js.Function1[/* event */ JetElementCustomEvent[none | rowEdit], _]) | Null = js.native
   var onFirstSelectedRowChanged: (js.Function1[
     /* event */ JetElementCustomEvent[
@@ -120,8 +120,8 @@ trait ojTable_[K, D] extends baseComponent[ojTableSettableProperties[K, D]] {
     _
   ]) | Null = js.native
   var onScrollPolicyChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | loadMoreOnScroll], _]) | Null = js.native
-  var onScrollPolicyOptionsChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonFetchSizeMaxCount], _]) | Null = js.native
-  var onScrollPositionChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonColumnIndexColumnKey], _]) | Null = js.native
+  var onScrollPolicyOptionsChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonMaxCount], _]) | Null = js.native
+  var onScrollPositionChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonColumnKey], _]) | Null = js.native
   var onSelectionChanged: (js.Function1[
     /* event */ JetElementCustomEvent[
       js.Array[
@@ -130,17 +130,17 @@ trait ojTable_[K, D] extends baseComponent[ojTableSettableProperties[K, D]] {
     ], 
     _
   ]) | Null = js.native
-  var onSelectionModeChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonColumnMultiple], _]) | Null = js.native
+  var onSelectionModeChanged: (js.Function1[/* event */ JetElementCustomEvent[Anon19], _]) | Null = js.native
   var onSelectionRequiredChanged: (js.Function1[/* event */ JetElementCustomEvent[Boolean], _]) | Null = js.native
   var onVerticalGridVisibleChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | enabled | disabled], _]) | Null = js.native
   var rowRenderer: (js.Function1[/* context */ RowRendererContext[K, D], String | HTMLElement | Unit]) | Null = js.native
   var scrollPolicy: auto | loadMoreOnScroll = js.native
-  var scrollPolicyOptions: AnonFetchSizeMaxCount = js.native
-  var scrollPosition: AnonColumnIndexColumnKey = js.native
+  var scrollPolicyOptions: AnonMaxCount = js.native
+  var scrollPosition: AnonColumnKey = js.native
   var selection: js.Array[
     (RowSelectionStart[K] with RowSelectionEnd[K]) | (ColumnSelectionStart[K] with ColumnSelectionEnd[K])
   ] = js.native
-  var selectionMode: AnonColumnMultiple = js.native
+  var selectionMode: Anon19 = js.native
   var selectionRequired: Boolean = js.native
   @JSName("translations")
   var translations_ojTable_ : AnonLabelAccSelectionAffordanceBottom = js.native
@@ -238,7 +238,7 @@ trait ojTable_[K, D] extends baseComponent[ojTableSettableProperties[K, D]] {
     `type`: columnsChanged,
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[(js.Array[AnonAutoClassName[K, D]]) | Null], 
+      /* ev */ JetElementCustomEvent[(js.Array[AnonField[K, D]]) | Null], 
       _
     ]
   ): Unit = js.native
@@ -247,7 +247,7 @@ trait ojTable_[K, D] extends baseComponent[ojTableSettableProperties[K, D]] {
     `type`: columnsChanged,
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[(js.Array[AnonAutoClassName[K, D]]) | Null], 
+      /* ev */ JetElementCustomEvent[(js.Array[AnonField[K, D]]) | Null], 
       _
     ],
     useCapture: Boolean
@@ -255,20 +255,12 @@ trait ojTable_[K, D] extends baseComponent[ojTableSettableProperties[K, D]] {
   @JSName("addEventListener")
   def addEventListener_columnsDefaultChanged(
     `type`: columnsDefaultChanged,
-    listener: js.ThisFunction1[
-      /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[AnonAutoClassNameContext[K, D]], 
-      _
-    ]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonFooterClassName[K, D]], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_columnsDefaultChanged(
     `type`: columnsDefaultChanged,
-    listener: js.ThisFunction1[
-      /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[AnonAutoClassNameContext[K, D]], 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonFooterClassName[K, D]], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -304,20 +296,12 @@ trait ojTable_[K, D] extends baseComponent[ojTableSettableProperties[K, D]] {
   @JSName("addEventListener")
   def addEventListener_dndChanged(
     `type`: dndChanged,
-    listener: js.ThisFunction1[
-      /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[AnonDragDropReorderAnonColumns[K, D]], 
-      _
-    ]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonDropReorder[K, D]], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_dndChanged(
     `type`: dndChanged,
-    listener: js.ThisFunction1[
-      /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[AnonDragDropReorderAnonColumns[K, D]], 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonDropReorder[K, D]], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -412,23 +396,23 @@ trait ojTable_[K, D] extends baseComponent[ojTableSettableProperties[K, D]] {
   @JSName("addEventListener")
   def addEventListener_scrollPolicyOptionsChanged(
     `type`: scrollPolicyOptionsChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonFetchSizeMaxCount], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonMaxCount], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_scrollPolicyOptionsChanged(
     `type`: scrollPolicyOptionsChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonFetchSizeMaxCount], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonMaxCount], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_scrollPositionChanged(
     `type`: scrollPositionChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonColumnIndexColumnKey], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonColumnKey], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_scrollPositionChanged(
     `type`: scrollPositionChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonColumnIndexColumnKey], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonColumnKey], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -461,12 +445,12 @@ trait ojTable_[K, D] extends baseComponent[ojTableSettableProperties[K, D]] {
   @JSName("addEventListener")
   def addEventListener_selectionModeChanged(
     `type`: selectionModeChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonColumnMultiple], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Anon19], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_selectionModeChanged(
     `type`: selectionModeChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonColumnMultiple], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Anon19], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -480,16 +464,16 @@ trait ojTable_[K, D] extends baseComponent[ojTableSettableProperties[K, D]] {
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean], _],
     useCapture: Boolean
   ): Unit = js.native
-  def getContextByNode(node: Element): AnonColumnIndexKey | AnonIndexOjtablefooter = js.native
+  def getContextByNode(node: Element): AnonColumnIndexKey | AnonIndexSubId = js.native
   def getDataForVisibleRow(rowIndex: Double): (AnonDataIndex[D, K]) | Null = js.native
   @JSName("getProperty")
   def getProperty_accessibility(property: accessibility): AnonRowHeader = js.native
   @JSName("getProperty")
   def getProperty_as(property: as): String = js.native
   @JSName("getProperty")
-  def getProperty_columns(property: columns): (js.Array[AnonAutoClassName[K, D]]) | Null = js.native
+  def getProperty_columns(property: columns): (js.Array[AnonField[K, D]]) | Null = js.native
   @JSName("getProperty")
-  def getProperty_columnsDefault(property: columnsDefault): AnonAutoClassNameContext[K, D] = js.native
+  def getProperty_columnsDefault(property: columnsDefault): AnonFooterClassName[K, D] = js.native
   @JSName("getProperty")
   def getProperty_currentRow(property: currentRow): CurrentRow[K] | Null = js.native
   @JSName("getProperty")
@@ -497,7 +481,7 @@ trait ojTable_[K, D] extends baseComponent[ojTableSettableProperties[K, D]] {
   @JSName("getProperty")
   def getProperty_display(property: display): list | grid = js.native
   @JSName("getProperty")
-  def getProperty_dnd(property: dnd): AnonDragDropReorderAnonColumns[K, D] = js.native
+  def getProperty_dnd(property: dnd): AnonDropReorder[K, D] = js.native
   @JSName("getProperty")
   def getProperty_editMode(property: editMode): none | rowEdit = js.native
   @JSName("getProperty")
@@ -509,15 +493,15 @@ trait ojTable_[K, D] extends baseComponent[ojTableSettableProperties[K, D]] {
   @JSName("getProperty")
   def getProperty_scrollPolicy(property: scrollPolicy): auto | loadMoreOnScroll = js.native
   @JSName("getProperty")
-  def getProperty_scrollPolicyOptions(property: scrollPolicyOptions): AnonFetchSizeMaxCount = js.native
+  def getProperty_scrollPolicyOptions(property: scrollPolicyOptions): AnonMaxCount = js.native
   @JSName("getProperty")
-  def getProperty_scrollPosition(property: scrollPosition): AnonColumnIndexColumnKey = js.native
+  def getProperty_scrollPosition(property: scrollPosition): AnonColumnKey = js.native
   @JSName("getProperty")
   def getProperty_selection(property: selection): js.Array[
     (RowSelectionStart[K] with RowSelectionEnd[K]) | (ColumnSelectionStart[K] with ColumnSelectionEnd[K])
   ] = js.native
   @JSName("getProperty")
-  def getProperty_selectionMode(property: selectionMode): AnonColumnMultiple = js.native
+  def getProperty_selectionMode(property: selectionMode): Anon19 = js.native
   @JSName("getProperty")
   def getProperty_selectionRequired(property: selectionRequired): Boolean = js.native
   @JSName("getProperty")
@@ -543,9 +527,9 @@ trait ojTable_[K, D] extends baseComponent[ojTableSettableProperties[K, D]] {
   @JSName("setProperty")
   def setProperty_columns(property: columns): Unit = js.native
   @JSName("setProperty")
-  def setProperty_columns(property: columns, value: js.Array[AnonAutoClassName[K, D]]): Unit = js.native
+  def setProperty_columns(property: columns, value: js.Array[AnonField[K, D]]): Unit = js.native
   @JSName("setProperty")
-  def setProperty_columnsDefault(property: columnsDefault, value: AnonAutoClassNameContext[K, D]): Unit = js.native
+  def setProperty_columnsDefault(property: columnsDefault, value: AnonFooterClassName[K, D]): Unit = js.native
   @JSName("setProperty")
   def setProperty_currentRow(property: currentRow): Unit = js.native
   @JSName("setProperty")
@@ -555,7 +539,7 @@ trait ojTable_[K, D] extends baseComponent[ojTableSettableProperties[K, D]] {
   @JSName("setProperty")
   def setProperty_data(property: data, value: DataProvider[K, D]): Unit = js.native
   @JSName("setProperty")
-  def setProperty_dnd(property: dnd, value: AnonDragDropReorderAnonColumns[K, D]): Unit = js.native
+  def setProperty_dnd(property: dnd, value: AnonDropReorder[K, D]): Unit = js.native
   @JSName("setProperty")
   def setProperty_firstSelectedRow(property: typings.oracleOraclejet.oracleOraclejetStrings.firstSelectedRow, value: js.Object): Unit = js.native
   @JSName("setProperty")
@@ -566,9 +550,9 @@ trait ojTable_[K, D] extends baseComponent[ojTableSettableProperties[K, D]] {
     value: js.Function1[/* context */ RowRendererContext[K, D], String | HTMLElement | Unit]
   ): Unit = js.native
   @JSName("setProperty")
-  def setProperty_scrollPolicyOptions(property: scrollPolicyOptions, value: AnonFetchSizeMaxCount): Unit = js.native
+  def setProperty_scrollPolicyOptions(property: scrollPolicyOptions, value: AnonMaxCount): Unit = js.native
   @JSName("setProperty")
-  def setProperty_scrollPosition(property: scrollPosition, value: AnonColumnIndexColumnKey): Unit = js.native
+  def setProperty_scrollPosition(property: scrollPosition, value: AnonColumnKey): Unit = js.native
   @JSName("setProperty")
   def setProperty_selection(
     property: selection,
@@ -577,7 +561,7 @@ trait ojTable_[K, D] extends baseComponent[ojTableSettableProperties[K, D]] {
     ]
   ): Unit = js.native
   @JSName("setProperty")
-  def setProperty_selectionMode(property: selectionMode, value: AnonColumnMultiple): Unit = js.native
+  def setProperty_selectionMode(property: selectionMode, value: Anon19): Unit = js.native
   @JSName("setProperty")
   def setProperty_selectionRequired(property: selectionRequired, value: Boolean): Unit = js.native
   @JSName("setProperty")

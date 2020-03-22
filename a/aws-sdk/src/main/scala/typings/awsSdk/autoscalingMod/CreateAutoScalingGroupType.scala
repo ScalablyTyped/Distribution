@@ -51,7 +51,7 @@ trait CreateAutoScalingGroupType extends js.Object {
     */
   var LoadBalancerNames: js.UndefOr[typings.awsSdk.autoscalingMod.LoadBalancerNames] = js.native
   /**
-    * The maximum amount of time, in seconds, that an instance can be in service. Valid Range: Minimum value of 604800.
+    * The maximum amount of time, in seconds, that an instance can be in service. For more information, see Replacing Auto Scaling Instances Based on Maximum Instance Lifetime in the Amazon EC2 Auto Scaling User Guide. Valid Range: Minimum value of 604800.
     */
   var MaxInstanceLifetime: js.UndefOr[typings.awsSdk.autoscalingMod.MaxInstanceLifetime] = js.native
   /**

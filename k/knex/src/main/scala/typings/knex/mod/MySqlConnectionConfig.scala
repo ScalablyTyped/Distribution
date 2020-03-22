@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // Config object for mysql: https://github.com/mysqljs/mysql#connection-options
-trait MySqlConnectionConfig extends js.Object {
+trait MySqlConnectionConfig extends _StaticConnectionConfig {
   var bigNumberStrings: js.UndefOr[Boolean] = js.undefined
   var charset: js.UndefOr[String] = js.undefined
   var connectTimeout: js.UndefOr[Double] = js.undefined
@@ -13,6 +13,7 @@ trait MySqlConnectionConfig extends js.Object {
   var dateStrings: js.UndefOr[Boolean] = js.undefined
   var debug: js.UndefOr[Boolean] = js.undefined
   var decimalNumbers: js.UndefOr[Boolean] = js.undefined
+  var expirationChecker: js.UndefOr[js.Function0[Boolean]] = js.undefined
   var flags: js.UndefOr[String] = js.undefined
   var host: js.UndefOr[String] = js.undefined
   var insecureAuth: js.UndefOr[Boolean] = js.undefined
@@ -41,6 +42,7 @@ object MySqlConnectionConfig {
     dateStrings: js.UndefOr[Boolean] = js.undefined,
     debug: js.UndefOr[Boolean] = js.undefined,
     decimalNumbers: js.UndefOr[Boolean] = js.undefined,
+    expirationChecker: () => Boolean = null,
     flags: String = null,
     host: String = null,
     insecureAuth: js.UndefOr[Boolean] = js.undefined,
@@ -66,6 +68,7 @@ object MySqlConnectionConfig {
     if (!js.isUndefined(dateStrings)) __obj.updateDynamic("dateStrings")(dateStrings.asInstanceOf[js.Any])
     if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
     if (!js.isUndefined(decimalNumbers)) __obj.updateDynamic("decimalNumbers")(decimalNumbers.asInstanceOf[js.Any])
+    if (expirationChecker != null) __obj.updateDynamic("expirationChecker")(js.Any.fromFunction0(expirationChecker))
     if (flags != null) __obj.updateDynamic("flags")(flags.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     if (!js.isUndefined(insecureAuth)) __obj.updateDynamic("insecureAuth")(insecureAuth.asInstanceOf[js.Any])

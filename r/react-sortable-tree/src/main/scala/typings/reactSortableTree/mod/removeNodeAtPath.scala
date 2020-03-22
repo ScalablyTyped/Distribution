@@ -1,6 +1,6 @@
 package typings.reactSortableTree.mod
 
-import typings.reactSortableTree.AnonGetNodeKeyIgnoreCollapsedBoolean
+import typings.reactSortableTree.FullTreeTreePathgetNodeKe
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("react-sortable-tree", "removeNodeAtPath")
 @js.native
 object removeNodeAtPath extends js.Object {
-  def apply(data: FullTree with TreePath with AnonGetNodeKeyIgnoreCollapsedBoolean): js.Array[TreeItem] = js.native
+  def apply(data: FullTreeTreePathgetNodeKe): js.Array[TreeItem] = js.native
 }
 

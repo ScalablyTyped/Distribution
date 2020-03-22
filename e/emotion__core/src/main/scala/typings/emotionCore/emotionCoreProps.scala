@@ -6,8 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait emotionCoreProps {
-  @scala.inline
-  def CacheProviderProps: ProviderProps.type = typings.react.mod.ProviderProps
   type CacheProviderProps[T] = ProviderProps[T]
   @scala.inline
   def ClassNamesProps: typings.emotionCore.mod.ClassNamesProps.type = typings.emotionCore.mod.ClassNamesProps

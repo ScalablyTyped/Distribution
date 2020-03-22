@@ -1,9 +1,9 @@
 package typings.rcMentions.mentionsMod
 
 import typings.rcMentions.AnonFilterOption
+import typings.rcMentions.PartialMentionsState
 import typings.rcMentions.optionMod.OptionProps
 import typings.react.mod.FunctionComponent
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,6 +20,6 @@ class default protected () extends Mentions {
 object default extends js.Object {
   var Option: FunctionComponent[OptionProps] = js.native
   var defaultProps: AnonFilterOption = js.native
-  def getDerivedStateFromProps(props: MentionsProps, prevState: MentionsState): Partial[MentionsState] = js.native
+  def getDerivedStateFromProps(props: MentionsProps, prevState: MentionsState): PartialMentionsState = js.native
 }
 

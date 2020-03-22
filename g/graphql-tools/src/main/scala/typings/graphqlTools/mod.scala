@@ -187,7 +187,7 @@ object mod extends js.Object {
   def delegateToSchema(options: GraphQLSchema, args: js.Any*): js.Promise[_] = js.native
   def delegateToSchema(options: IDelegateToSchemaOptions[StringDictionary[_]], args: js.Any*): js.Promise[_] = js.native
   def extendResolversFromInterfaces(schema: GraphQLSchema, resolvers: IResolvers[_, _]): IResolvers[_, _] = js.native
-  def extractExtensionDefinitions(ast: DocumentNode): DocumentNode with AnonDefinitions = js.native
+  def extractExtensionDefinitions(ast: DocumentNode): DocumentNodedefinitionsAr = js.native
   def forEachField(schema: GraphQLSchema, fn: IFieldIteratorFn): Unit = js.native
   def introspectSchema(fetcher: ApolloLink): js.Promise[GraphQLSchema] = js.native
   def introspectSchema(fetcher: ApolloLink, linkContext: StringDictionary[js.Any]): js.Promise[GraphQLSchema] = js.native
@@ -196,7 +196,7 @@ object mod extends js.Object {
   def makeExecutableSchema[TContext](
     hasTypeDefsResolversConnectorsLoggerAllowUndefinedInResolveResolverValidationOptionsDirectiveResolversSchemaDirectivesParseOptionsInheritResolversFromInterfaces: IExecutableSchemaDefinition[TContext]
   ): GraphQLSchema = js.native
-  def makeRemoteExecutableSchema(hasSchemaLinkFetcherCreateResolverBuildSchemaOptionsPrintSchemaOptions: AnonArgName): GraphQLSchema = js.native
+  def makeRemoteExecutableSchema(hasSchemaLinkFetcherCreateResolverBuildSchemaOptionsPrintSchemaOptions: AnonBuildSchemaOptions): GraphQLSchema = js.native
   def mergeSchemas(
     hasSchemasOnTypeConflictResolversSchemaDirectivesInheritResolversFromInterfacesMergeDirectives: AnonInheritResolversFromInterfaces
   ): GraphQLSchema = js.native
@@ -204,16 +204,16 @@ object mod extends js.Object {
   def mockServer(schema: GraphQLSchema, mocks: IMocks, preserveResolvers: Boolean): IMockServer = js.native
   def mockServer(schema: ITypeDefinitions, mocks: IMocks): IMockServer = js.native
   def mockServer(schema: ITypeDefinitions, mocks: IMocks, preserveResolvers: Boolean): IMockServer = js.native
-  def transformSchema(targetSchema: GraphQLSchema, transforms: js.Array[Transform]): GraphQLSchema with AnonTransforms = js.native
+  def transformSchema(targetSchema: GraphQLSchema, transforms: js.Array[Transform]): GraphQLSchematransformsAr = js.native
   /* static members */
   @js.native
   object SchemaDirectiveVisitor extends js.Object {
-    /* protected */ def getDeclaredDirectives(schema: GraphQLSchema, directiveVisitors: StringDictionary[TypeofClassSchemaDirectiveVisitor]): StringDictionary[GraphQLDirective] = js.native
+    /* protected */ def getDeclaredDirectives(schema: GraphQLSchema, directiveVisitors: StringDictionary[TypeofSchemaDirectiveVisi]): StringDictionary[GraphQLDirective] = js.native
     def getDirectiveDeclaration(directiveName: String, schema: GraphQLSchema): GraphQLDirective = js.native
-    def visitSchemaDirectives(schema: GraphQLSchema, directiveVisitors: StringDictionary[TypeofClassSchemaDirectiveVisitor]): StringDictionary[js.Array[typings.graphqlTools.schemaVisitorMod.SchemaDirectiveVisitor]] = js.native
+    def visitSchemaDirectives(schema: GraphQLSchema, directiveVisitors: StringDictionary[TypeofSchemaDirectiveVisi]): StringDictionary[js.Array[typings.graphqlTools.schemaVisitorMod.SchemaDirectiveVisitor]] = js.native
     def visitSchemaDirectives(
       schema: GraphQLSchema,
-      directiveVisitors: StringDictionary[TypeofClassSchemaDirectiveVisitor],
+      directiveVisitors: StringDictionary[TypeofSchemaDirectiveVisi],
       context: StringDictionary[js.Any]
     ): StringDictionary[js.Array[typings.graphqlTools.schemaVisitorMod.SchemaDirectiveVisitor]] = js.native
   }

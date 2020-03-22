@@ -1,10 +1,10 @@
 package typings.oracleOraclejet.ojgaugeMod
 
-import typings.oracleOraclejet.AnonAutoBillionCenter
-import typings.oracleOraclejet.AnonAutoBorderColor
-import typings.oracleOraclejet.AnonAutoCenter
-import typings.oracleOraclejet.AnonContextRendererAnonInsertAnonPreventDefaultCenterContext
-import typings.oracleOraclejet.AnonContextRendererAnonInsertAnonPreventDefaultTooltipContext848864392
+import typings.oracleOraclejet.Anon10
+import typings.oracleOraclejet.Anon11
+import typings.oracleOraclejet.AnonBorderColorBorderRadius
+import typings.oracleOraclejet.AnonConverterPosition
+import typings.oracleOraclejet.AnonPositionStyle
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.ojgaugeMod.ojStatusMeterGauge.ReferenceLine
 import typings.oracleOraclejet.ojgaugeMod.ojStatusMeterGauge.Threshold
@@ -84,13 +84,13 @@ trait ojStatusMeterGauge_ extends dvtBaseGauge[ojStatusMeterGaugeSettablePropert
   var animationOnDisplay: auto | none = js.native
   var borderColor: String = js.native
   var borderRadius: String = js.native
-  var center: AnonContextRendererAnonInsertAnonPreventDefaultCenterContext = js.native
+  var center: Anon10 = js.native
   var color: String = js.native
   var indicatorSize: Double = js.native
   var innerRadius: Double = js.native
-  var label: AnonAutoCenter = js.native
+  var label: AnonPositionStyle = js.native
   var max: Double = js.native
-  var metricLabel: AnonAutoBillionCenter = js.native
+  var metricLabel: AnonConverterPosition = js.native
   var min: Double = js.native
   var onAngleExtentChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
   var onAnimationDurationChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[Double]], _]) | Null = js.native
@@ -98,19 +98,16 @@ trait ojStatusMeterGauge_ extends dvtBaseGauge[ojStatusMeterGaugeSettablePropert
   var onAnimationOnDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none], _]) | Null = js.native
   var onBorderColorChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
   var onBorderRadiusChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
-  var onCenterChanged: (js.Function1[
-    /* event */ JetElementCustomEvent[AnonContextRendererAnonInsertAnonPreventDefaultCenterContext], 
-    _
-  ]) | Null = js.native
+  var onCenterChanged: (js.Function1[/* event */ JetElementCustomEvent[Anon10], _]) | Null = js.native
   var onColorChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
   var onIndicatorSizeChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
   var onInnerRadiusChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
-  var onLabelChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonAutoCenter], _]) | Null = js.native
+  var onLabelChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonPositionStyle], _]) | Null = js.native
   var onMaxChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
-  var onMetricLabelChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonAutoBillionCenter], _]) | Null = js.native
+  var onMetricLabelChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonConverterPosition], _]) | Null = js.native
   var onMinChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
   var onOrientationChanged: (js.Function1[/* event */ JetElementCustomEvent[circular | vertical | horizontal], _]) | Null = js.native
-  var onPlotAreaChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonAutoBorderColor], _]) | Null = js.native
+  var onPlotAreaChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonBorderColorBorderRadius], _]) | Null = js.native
   var onReadonlyChanged: (js.Function1[/* event */ JetElementCustomEvent[Boolean], _]) | Null = js.native
   var onReferenceLinesChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[ReferenceLine]], _]) | Null = js.native
   var onStartAngleChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
@@ -124,15 +121,12 @@ trait ojStatusMeterGauge_ extends dvtBaseGauge[ojStatusMeterGaugeSettablePropert
   ]) | Null = js.native
   var onThresholdDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[currentOnly | all | onIndicator], _]) | Null = js.native
   var onThresholdsChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[Threshold]], _]) | Null = js.native
-  var onTooltipChanged: (js.Function1[
-    /* event */ JetElementCustomEvent[AnonContextRendererAnonInsertAnonPreventDefaultTooltipContext848864392], 
-    _
-  ]) | Null = js.native
+  var onTooltipChanged: (js.Function1[/* event */ JetElementCustomEvent[Anon11], _]) | Null = js.native
   var onTransientValueChanged: (js.Function1[/* event */ JetElementCustomEvent[Double | Null], _]) | Null = js.native
   var onValueChanged: (js.Function1[/* event */ JetElementCustomEvent[Double | Null], _]) | Null = js.native
   var onVisualEffectsChanged: (js.Function1[/* event */ JetElementCustomEvent[none | auto], _]) | Null = js.native
   var orientation: circular | vertical | horizontal = js.native
-  var plotArea: AnonAutoBorderColor = js.native
+  var plotArea: AnonBorderColorBorderRadius = js.native
   var readonly: Boolean = js.native
   var referenceLines: js.Array[ReferenceLine] = js.native
   var startAngle: Double = js.native
@@ -141,7 +135,7 @@ trait ojStatusMeterGauge_ extends dvtBaseGauge[ojStatusMeterGaugeSettablePropert
   var svgStyle: js.Object = js.native
   var thresholdDisplay: currentOnly | all | onIndicator = js.native
   var thresholds: js.Array[Threshold] = js.native
-  var tooltip: AnonContextRendererAnonInsertAnonPreventDefaultTooltipContext848864392 = js.native
+  var tooltip: Anon11 = js.native
   val transientValue: Double | Null = js.native
   var value: Double | Null = js.native
   var visualEffects: none | auto = js.native
@@ -274,20 +268,12 @@ trait ojStatusMeterGauge_ extends dvtBaseGauge[ojStatusMeterGaugeSettablePropert
   @JSName("addEventListener")
   def addEventListener_centerChanged(
     `type`: centerChanged,
-    listener: js.ThisFunction1[
-      /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[AnonContextRendererAnonInsertAnonPreventDefaultCenterContext], 
-      _
-    ]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Anon10], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_centerChanged(
     `type`: centerChanged,
-    listener: js.ThisFunction1[
-      /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[AnonContextRendererAnonInsertAnonPreventDefaultCenterContext], 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Anon10], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -326,12 +312,12 @@ trait ojStatusMeterGauge_ extends dvtBaseGauge[ojStatusMeterGaugeSettablePropert
   @JSName("addEventListener")
   def addEventListener_labelChanged(
     `type`: labelChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonAutoCenter], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonPositionStyle], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_labelChanged(
     `type`: labelChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonAutoCenter], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonPositionStyle], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -348,12 +334,12 @@ trait ojStatusMeterGauge_ extends dvtBaseGauge[ojStatusMeterGaugeSettablePropert
   @JSName("addEventListener")
   def addEventListener_metricLabelChanged(
     `type`: metricLabelChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonAutoBillionCenter], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonConverterPosition], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_metricLabelChanged(
     `type`: metricLabelChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonAutoBillionCenter], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonConverterPosition], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -370,12 +356,20 @@ trait ojStatusMeterGauge_ extends dvtBaseGauge[ojStatusMeterGaugeSettablePropert
   @JSName("addEventListener")
   def addEventListener_plotAreaChanged(
     `type`: plotAreaChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonAutoBorderColor], _]
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ JetElementCustomEvent[AnonBorderColorBorderRadius], 
+      _
+    ]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_plotAreaChanged(
     `type`: plotAreaChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonAutoBorderColor], _],
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ JetElementCustomEvent[AnonBorderColorBorderRadius], 
+      _
+    ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -447,20 +441,12 @@ trait ojStatusMeterGauge_ extends dvtBaseGauge[ojStatusMeterGaugeSettablePropert
   @JSName("addEventListener")
   def addEventListener_tooltipChanged(
     `type`: tooltipChanged,
-    listener: js.ThisFunction1[
-      /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[AnonContextRendererAnonInsertAnonPreventDefaultTooltipContext848864392], 
-      _
-    ]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Anon11], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_tooltipChanged(
     `type`: tooltipChanged,
-    listener: js.ThisFunction1[
-      /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[AnonContextRendererAnonInsertAnonPreventDefaultTooltipContext848864392], 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Anon11], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -499,7 +485,7 @@ trait ojStatusMeterGauge_ extends dvtBaseGauge[ojStatusMeterGaugeSettablePropert
   @JSName("getProperty")
   def getProperty_borderRadius(property: borderRadius): String = js.native
   @JSName("getProperty")
-  def getProperty_center(property: center): AnonContextRendererAnonInsertAnonPreventDefaultCenterContext = js.native
+  def getProperty_center(property: center): Anon10 = js.native
   @JSName("getProperty")
   def getProperty_color(property: color): String = js.native
   @JSName("getProperty")
@@ -507,17 +493,17 @@ trait ojStatusMeterGauge_ extends dvtBaseGauge[ojStatusMeterGaugeSettablePropert
   @JSName("getProperty")
   def getProperty_innerRadius(property: innerRadius): Double = js.native
   @JSName("getProperty")
-  def getProperty_label(property: label): AnonAutoCenter = js.native
+  def getProperty_label(property: label): AnonPositionStyle = js.native
   @JSName("getProperty")
   def getProperty_max(property: max): Double = js.native
   @JSName("getProperty")
-  def getProperty_metricLabel(property: metricLabel): AnonAutoBillionCenter = js.native
+  def getProperty_metricLabel(property: metricLabel): AnonConverterPosition = js.native
   @JSName("getProperty")
   def getProperty_min(property: min): Double = js.native
   @JSName("getProperty")
   def getProperty_orientation(property: orientation): circular | vertical | horizontal = js.native
   @JSName("getProperty")
-  def getProperty_plotArea(property: plotArea): AnonAutoBorderColor = js.native
+  def getProperty_plotArea(property: plotArea): AnonBorderColorBorderRadius = js.native
   @JSName("getProperty")
   def getProperty_readonly(property: readonly_): Boolean = js.native
   @JSName("getProperty")
@@ -535,7 +521,7 @@ trait ojStatusMeterGauge_ extends dvtBaseGauge[ojStatusMeterGaugeSettablePropert
   @JSName("getProperty")
   def getProperty_thresholds(property: thresholds): js.Array[Threshold] = js.native
   @JSName("getProperty")
-  def getProperty_tooltip(property: tooltip): AnonContextRendererAnonInsertAnonPreventDefaultTooltipContext848864392 = js.native
+  def getProperty_tooltip(property: tooltip): Anon11 = js.native
   @JSName("getProperty")
   def getProperty_transientValue(property: typings.oracleOraclejet.oracleOraclejetStrings.transientValue): Double | Null = js.native
   @JSName("getProperty")
@@ -564,7 +550,7 @@ trait ojStatusMeterGauge_ extends dvtBaseGauge[ojStatusMeterGaugeSettablePropert
   @JSName("setProperty")
   def setProperty_borderRadius(property: borderRadius, value: String): Unit = js.native
   @JSName("setProperty")
-  def setProperty_center(property: center, value: AnonContextRendererAnonInsertAnonPreventDefaultCenterContext): Unit = js.native
+  def setProperty_center(property: center, value: Anon10): Unit = js.native
   @JSName("setProperty")
   def setProperty_color(property: color, value: String): Unit = js.native
   @JSName("setProperty")
@@ -572,15 +558,15 @@ trait ojStatusMeterGauge_ extends dvtBaseGauge[ojStatusMeterGaugeSettablePropert
   @JSName("setProperty")
   def setProperty_innerRadius(property: innerRadius, value: Double): Unit = js.native
   @JSName("setProperty")
-  def setProperty_label(property: label, value: AnonAutoCenter): Unit = js.native
+  def setProperty_label(property: label, value: AnonPositionStyle): Unit = js.native
   @JSName("setProperty")
   def setProperty_max(property: max, value: Double): Unit = js.native
   @JSName("setProperty")
-  def setProperty_metricLabel(property: metricLabel, value: AnonAutoBillionCenter): Unit = js.native
+  def setProperty_metricLabel(property: metricLabel, value: AnonConverterPosition): Unit = js.native
   @JSName("setProperty")
   def setProperty_min(property: min, value: Double): Unit = js.native
   @JSName("setProperty")
-  def setProperty_plotArea(property: plotArea, value: AnonAutoBorderColor): Unit = js.native
+  def setProperty_plotArea(property: plotArea, value: AnonBorderColorBorderRadius): Unit = js.native
   @JSName("setProperty")
   def setProperty_readonly(property: readonly_, value: Boolean): Unit = js.native
   @JSName("setProperty")
@@ -598,7 +584,7 @@ trait ojStatusMeterGauge_ extends dvtBaseGauge[ojStatusMeterGaugeSettablePropert
   @JSName("setProperty")
   def setProperty_thresholds(property: thresholds, value: js.Array[Threshold]): Unit = js.native
   @JSName("setProperty")
-  def setProperty_tooltip(property: tooltip, value: AnonContextRendererAnonInsertAnonPreventDefaultTooltipContext848864392): Unit = js.native
+  def setProperty_tooltip(property: tooltip, value: Anon11): Unit = js.native
   @JSName("setProperty")
   def setProperty_transientValue(property: typings.oracleOraclejet.oracleOraclejetStrings.transientValue): Unit = js.native
   @JSName("setProperty")

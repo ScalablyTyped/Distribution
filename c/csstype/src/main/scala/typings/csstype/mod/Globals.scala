@@ -22,6 +22,7 @@ trait Globals
      with _AnimationPlayStateProperty
      with _AnimationProperty
      with _AnimationTimingFunctionProperty
+     with _AspectRatioProperty
      with _BackdropFilterProperty
      with _BackgroundAttachmentProperty
      with _BackgroundBlendModeProperty
@@ -215,7 +216,6 @@ trait Globals
      with _ObjectPositionProperty[js.Any]
      with _OffsetAnchorProperty[js.Any]
      with _OffsetPathProperty
-     with _OffsetPositionProperty[js.Any]
      with _OffsetProperty[js.Any]
      with _OffsetRotateProperty
      with _OutlineColorProperty
@@ -260,14 +260,16 @@ trait Globals
      with _TextCombineUprightProperty
      with _TextDecorationColorProperty
      with _TextDecorationLineProperty
-     with _TextDecorationProperty
+     with _TextDecorationProperty[js.Any]
      with _TextDecorationSkipProperty
+     with _TextDecorationThicknessProperty[js.Any]
      with _TextEmphasisColorProperty
      with _TextEmphasisProperty
      with _TextEmphasisStyleProperty
      with _TextOverflowProperty
      with _TextShadowProperty
      with _TextSizeAdjustProperty
+     with _TextUnderlineOffsetProperty[js.Any]
      with _TextUnderlinePositionProperty
      with _TopProperty[js.Any]
      with _TouchActionProperty

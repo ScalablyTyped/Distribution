@@ -71,7 +71,7 @@ trait DescribeAutoMLJobResponse extends js.Object {
     */
   var ProblemType: js.UndefOr[typings.awsSdk.sagemakerMod.ProblemType] = js.native
   /**
-    * This contains ProblemType, AutoMLJobObjective and CompletionCriteria. They’re auto-inferred values, if not provided by you. If you do provide them, then they’ll be the same as provided.
+    * This contains ProblemType, AutoMLJobObjective and CompletionCriteria. They're auto-inferred values, if not provided by you. If you do provide them, then they'll be the same as provided.
     */
   var ResolvedAttributes: js.UndefOr[typings.awsSdk.sagemakerMod.ResolvedAttributes] = js.native
   /**

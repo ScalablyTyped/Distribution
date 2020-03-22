@@ -10,6 +10,6 @@ object polyfillMod extends js.Object {
   /**
     * Gets the optimal `Array.from` implementation to use.
     */
-  def apply(): FnArrayLike = js.native
+  def apply(): FnCall = js.native
 }
 

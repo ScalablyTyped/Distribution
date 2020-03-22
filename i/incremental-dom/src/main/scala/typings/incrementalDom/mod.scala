@@ -76,6 +76,6 @@ object mod extends js.Object {
     def apply[T](node: Element, fn: js.Function1[/* data */ T, Unit], data: T): Node = js.native
   }
   
-  type NameOrCtorDef = String | AnonArgs
+  type NameOrCtorDef = String | AnonInstantiable
 }
 

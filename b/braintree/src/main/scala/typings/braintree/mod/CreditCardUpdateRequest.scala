@@ -1,12 +1,12 @@
 package typings.braintree.mod
 
-import typings.braintree.AnonCompanyCountryCodeAlpha2
+import typings.braintree.AnonCountryCodeAlpha2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CreditCardUpdateRequest extends js.Object {
-  var billingAddress: js.UndefOr[AnonCompanyCountryCodeAlpha2] = js.undefined
+  var billingAddress: js.UndefOr[AnonCountryCodeAlpha2] = js.undefined
   var cardholderName: js.UndefOr[String] = js.undefined
   var cvv: js.UndefOr[String] = js.undefined
   var expirationDate: js.UndefOr[String] = js.undefined
@@ -18,7 +18,7 @@ trait CreditCardUpdateRequest extends js.Object {
 object CreditCardUpdateRequest {
   @scala.inline
   def apply(
-    billingAddress: AnonCompanyCountryCodeAlpha2 = null,
+    billingAddress: AnonCountryCodeAlpha2 = null,
     cardholderName: String = null,
     cvv: String = null,
     expirationDate: String = null,

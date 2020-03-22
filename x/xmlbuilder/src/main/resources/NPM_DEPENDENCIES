@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "xmlbuilder" : "13.0.2"
+      "xmlbuilder" : "14.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "xmlbuilder" : "13.0.2"
+      "xmlbuilder" : "14.0.0"
     }
   ],
   "compile-devDependencies" : [

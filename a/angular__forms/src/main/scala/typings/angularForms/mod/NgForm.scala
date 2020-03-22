@@ -20,26 +20,9 @@ class NgForm protected ()
   var _setUpdateStrategy: js.Any = js.native
   /**
     * @description
-    * The internal `FormGroup` instance.
-    */
-  @JSName("control")
-  val control_NgForm: FormGroup = js.native
-  /**
-    * @description
-    * Returns a map of the controls in this group.
-    */
-  val controls: StringDictionary[AbstractControl] = js.native
-  /**
-    * @description
     * The `FormGroup` instance created for this form.
     */
   var form: FormGroup = js.native
-  /**
-    * @description
-    * The directive instance.
-    */
-  @JSName("formDirective")
-  val formDirective_NgForm: Form = js.native
   /**
     * @description
     * Event emitter for the "ngSubmit" event
@@ -55,13 +38,6 @@ class NgForm protected ()
     *
     */
   var options: AnonUpdateOn = js.native
-  /**
-    * @description
-    * Returns an array representing the path to this group. Because this directive
-    * always lives at the top level of a form, it is always an empty array.
-    */
-  @JSName("path")
-  val path_NgForm: js.Array[String] = js.native
   /**
     * @description
     * Returns whether the form submission has been triggered.
@@ -98,6 +74,11 @@ class NgForm protected ()
     * @param dir The `NgModelGroup` directive instance.
     */
   def addFormGroup(dir: NgModelGroup): Unit = js.native
+  /**
+    * @description
+    * Returns a map of the controls in this group.
+    */
+  def controls(): StringDictionary[AbstractControl] = js.native
   /**
     * @description
     * The control directive from which to get the `FormControl`.

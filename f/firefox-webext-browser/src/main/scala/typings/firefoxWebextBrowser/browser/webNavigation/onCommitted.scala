@@ -1,7 +1,7 @@
 package typings.firefoxWebextBrowser.browser.webNavigation
 
 import org.scalablytyped.runtime.TopLevel
-import typings.firefoxWebextBrowser.AnonFrameIdProcessId
+import typings.firefoxWebextBrowser.AnonTimeStamp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("browser.webNavigation.onCommitted")
 @js.native
 object onCommitted
-  extends TopLevel[
-      WebNavigationOnCommittedEvent[js.Function1[/* details */ AnonFrameIdProcessId, Unit]]
-    ]
+  extends TopLevel[WebNavigationOnCommittedEvent[js.Function1[/* details */ AnonTimeStamp, Unit]]]
 

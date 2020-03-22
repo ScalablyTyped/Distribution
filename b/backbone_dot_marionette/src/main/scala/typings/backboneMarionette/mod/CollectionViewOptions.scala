@@ -3,7 +3,7 @@ package typings.backboneMarionette.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.backbone.mod.Collection
 import typings.backbone.mod.Model
-import typings.backboneMarionette.TypeofClassView
+import typings.backboneMarionette.TypeofView
 import typings.backboneMarionette.backboneMarionetteBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,7 +15,7 @@ trait CollectionViewOptions[TModel /* <: Model */, TCollection /* <: Collection[
   /**
     * Specify a child view to use.
     */
-  var childView: js.UndefOr[(js.Function1[/* model */ TModel, TypeofClassView]) | TypeofClassView] = js.undefined
+  var childView: js.UndefOr[(js.Function1[/* model */ TModel, TypeofView]) | TypeofView] = js.undefined
   /**
     * Define options to pass to the childView constructor.
     */
@@ -23,7 +23,7 @@ trait CollectionViewOptions[TModel /* <: Model */, TCollection /* <: Collection[
   /**
     * Specify a view to use if the collection has no children.
     */
-  var emptyView: js.UndefOr[js.Function0[TypeofClassView] | TypeofClassView] = js.undefined
+  var emptyView: js.UndefOr[js.Function0[TypeofView] | TypeofView] = js.undefined
   /**
     * Define options to pass to the emptyView constructor.
     */
@@ -70,7 +70,7 @@ object CollectionViewOptions {
   def apply[TModel /* <: Model */, TCollection /* <: Collection[TModel] */](
     attributes: StringDictionary[js.Any] = null,
     behaviors: js.Array[Behavior] = null,
-    childView: (js.Function1[/* model */ TModel, TypeofClassView]) | TypeofClassView = null,
+    childView: (js.Function1[/* model */ TModel, TypeofView]) | TypeofView = null,
     childViewEventPrefix: String | `false` = null,
     childViewEvents: EventsHash = null,
     childViewOptions: js.Function0[ViewOptions[TModel]] | ViewOptions[TModel] = null,
@@ -79,7 +79,7 @@ object CollectionViewOptions {
     collection: Collection[_] = null,
     collectionEvents: EventsHash = null,
     el: js.Any = null,
-    emptyView: js.Function0[TypeofClassView] | TypeofClassView = null,
+    emptyView: js.Function0[TypeofView] | TypeofView = null,
     emptyViewOptions: js.Function0[ViewOptions[TModel]] | ViewOptions[TModel] = null,
     events: EventsHash = null,
     filter: (/* child */ js.UndefOr[TModel], /* index */ js.UndefOr[Double], /* collection */ js.UndefOr[TCollection]) => Boolean = null,

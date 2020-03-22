@@ -31,9 +31,9 @@ object notificationsMod extends js.Object {
     def getExpoPushTokenAsync(): js.Promise[String] = js.native
     def presentLocalNotificationAsync(notification: LocalNotification): js.Promise[ReactText] = js.native
     def scheduleLocalNotificationAsync(notification: LocalNotification): js.Promise[ReactText] = js.native
-    def scheduleLocalNotificationAsync(notification: LocalNotification, options: AnonDay): js.Promise[ReactText] = js.native
+    def scheduleLocalNotificationAsync(notification: LocalNotification, options: AnonIntervalMs): js.Promise[ReactText] = js.native
     def scheduleNotificationWithCalendarAsync(notification: LocalNotification): js.Promise[String] = js.native
-    def scheduleNotificationWithCalendarAsync(notification: LocalNotification, options: AnonDayHour): js.Promise[String] = js.native
+    def scheduleNotificationWithCalendarAsync(notification: LocalNotification, options: AnonDay): js.Promise[String] = js.native
     def scheduleNotificationWithTimerAsync(notification: LocalNotification, options: AnonInterval): js.Promise[String] = js.native
     def setBadgeNumberAsync(number: Double): js.Promise[Unit] = js.native
   }

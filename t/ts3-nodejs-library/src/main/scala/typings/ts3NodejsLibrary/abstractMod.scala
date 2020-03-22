@@ -24,7 +24,7 @@ object abstractMod extends js.Object {
       * retrieves a single property value by the given name
       * @param name the name from where the value should be retrieved
       */
-    def getPropertyByName[T /* <: String */](name: T): /* import warning: importer.ImportType#apply Failed type conversion: ts3-nodejs-library.ts3-nodejs-library/lib/types/QueryResponse.QueryResponse[T] */ js.Any = js.native
+    def getPropertyByName[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 324 */ js.Any */](name: T): /* import warning: importer.ImportType#apply Failed type conversion: ts3-nodejs-library.ts3-nodejs-library/lib/types/QueryResponse.QueryResponse[T] */ js.Any = js.native
     /** returns JSONifyable data */
     def toJSON(): Record[String, _] = js.native
     def toJSON(includeNameSpace: Boolean): Record[String, _] = js.native

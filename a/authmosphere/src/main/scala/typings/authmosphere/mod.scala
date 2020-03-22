@@ -8,7 +8,6 @@ import typings.authmosphere.oauthconfigMod.OAuthConfig
 import typings.authmosphere.oauthconfigMod.TokenCacheOAuthConfig
 import typings.authmosphere.tokenCacheConfigMod.CacheConfig
 import typings.authmosphere.tokenCacheConfigMod.TokenCacheOptions
-import typings.authmosphere.tokenMod.Token
 import typings.nock.mod.Scope
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -93,8 +92,8 @@ object mod extends js.Object {
     * @param logger - optional logger
     * @returns {Promise<T>}
     */
-  def getAccessToken(options: OAuthConfig): js.Promise[Token[js.Object]] = js.native
-  def getAccessToken(options: OAuthConfig, logger: Logger): js.Promise[Token[js.Object]] = js.native
+  def getAccessToken(options: OAuthConfig): js.Promise[Token] = js.native
+  def getAccessToken(options: OAuthConfig, logger: Logger): js.Promise[Token] = js.native
   /**
     * Creates a __very basic__ mock of token endpoint as defined in [RFC 6749](https://tools.ietf.org/html/rfc6749).
     *

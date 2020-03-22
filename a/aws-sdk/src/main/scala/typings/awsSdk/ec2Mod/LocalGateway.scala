@@ -9,7 +9,7 @@ trait LocalGateway extends js.Object {
   /**
     * The ID of the local gateway.
     */
-  var LocalGatewayId: js.UndefOr[String] = js.native
+  var LocalGatewayId: js.UndefOr[typings.awsSdk.ec2Mod.LocalGatewayId] = js.native
   /**
     * The Amazon Resource Name (ARN) of the Outpost.
     */
@@ -31,7 +31,7 @@ trait LocalGateway extends js.Object {
 object LocalGateway {
   @scala.inline
   def apply(
-    LocalGatewayId: String = null,
+    LocalGatewayId: LocalGatewayId = null,
     OutpostArn: String = null,
     OwnerId: String = null,
     State: String = null,

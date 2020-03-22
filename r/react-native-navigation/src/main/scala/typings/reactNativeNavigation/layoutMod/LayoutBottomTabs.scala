@@ -9,7 +9,7 @@ trait LayoutBottomTabs extends js.Object {
   /**
     * Set the children screens
     */
-  var children: js.UndefOr[js.Array[LayoutBottomTabsChildren]] = js.undefined
+  var children: js.UndefOr[js.Array[LayoutTabsChildren]] = js.undefined
   /**
     * Set ID of the stack so you can use Navigation.mergeOptions to
     * update options
@@ -23,7 +23,7 @@ trait LayoutBottomTabs extends js.Object {
 
 object LayoutBottomTabs {
   @scala.inline
-  def apply(children: js.Array[LayoutBottomTabsChildren] = null, id: String = null, options: Options = null): LayoutBottomTabs = {
+  def apply(children: js.Array[LayoutTabsChildren] = null, id: String = null, options: Options = null): LayoutBottomTabs = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])

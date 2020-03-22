@@ -10,6 +10,7 @@ package object storiesMod {
   type StoriesHash = org.scalablytyped.runtime.StringDictionary[typings.storybookApi.storiesMod.Group | typings.storybookApi.storiesMod.Story]
   type StoriesList = js.Array[typings.storybookApi.storiesMod.Group | typings.storybookApi.storiesMod.Story]
   type StoriesRaw = org.scalablytyped.runtime.StringDictionary[typings.storybookApi.storiesMod.StoryInput]
+  type Story = typings.storybookApi.storiesMod.StoryInput with typings.storybookApi.storiesMod.Group
   type StoryId = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.storybookApi.storybookApiStrings.story

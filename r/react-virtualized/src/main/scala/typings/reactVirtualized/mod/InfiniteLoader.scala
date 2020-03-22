@@ -1,7 +1,7 @@
 package typings.reactVirtualized.mod
 
-import typings.reactVirtualized.Anon010
-import typings.reactVirtualized.AnonChildrenIsRowLoaded
+import typings.reactVirtualized.AnonIsRowLoaded
+import typings.reactVirtualized.AnonMinimumBatchSize
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ class InfiniteLoader ()
 @JSImport("react-virtualized", "InfiniteLoader")
 @js.native
 object InfiniteLoader extends js.Object {
-  var defaultProps: Anon010 = js.native
-  var propTypes: AnonChildrenIsRowLoaded = js.native
+  var defaultProps: AnonMinimumBatchSize = js.native
+  var propTypes: AnonIsRowLoaded = js.native
 }
 

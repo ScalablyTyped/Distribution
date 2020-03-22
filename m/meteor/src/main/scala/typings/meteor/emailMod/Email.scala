@@ -1,6 +1,6 @@
 package typings.meteor.emailMod
 
-import typings.meteor.Anon_Attachments
+import typings.meteor.AnonAttachments
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("meteor/email", "Email")
 @js.native
 object Email extends js.Object {
-  def send(options: Anon_Attachments): Unit = js.native
+  def send(options: AnonAttachments): Unit = js.native
 }
 

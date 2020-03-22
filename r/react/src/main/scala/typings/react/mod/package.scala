@@ -145,7 +145,7 @@ package object mod {
   ]
   type PropsWithChildren[P] = P with typings.react.AnonChildren
   /** Ensures that the props do not include string ref, which cannot be forwarded */
-  type PropsWithRef[P] = P | (typings.react.mod.PropsWithoutRef[P] with typings.react.AnonRefAny)
+  type PropsWithRef[P] = P | (typings.react.mod.PropsWithoutRef[P] with typings.react.AnonRefExclude)
   /** Ensures that the props do not include ref at all */
   type PropsWithoutRef[P] = P | (typings.std.Pick[P, typings.std.Exclude[java.lang.String, typings.react.reactStrings.ref]])
   // NOTE: only the Context object itself can get a displayName

@@ -75,7 +75,7 @@ trait MQueryResultSetElements extends MQueryResultSet[HTMLElement] {
   def mouseup(handler: js.Function1[/* eventObject */ MQueryEvent, _]): MQueryResultSetElements = js.native
   def not(selector: String): MQueryResultSetElements = js.native
   def offset(): AnonLeft = js.native
-  def offset(coordinates: AnonLeftTop): MQueryResultSetElements = js.native
+  def offset(coordinates: AnonTop): MQueryResultSetElements = js.native
   def offsetParent(): MQueryResultSetElements = js.native
   def offsetParent(selector: String): MQueryResultSetElements = js.native
   def one(eventType: String, handler: js.Function1[/* eventObject */ MQueryEvent, _]): MQueryResultSetElements = js.native
@@ -88,7 +88,7 @@ trait MQueryResultSetElements extends MQueryResultSet[HTMLElement] {
   def parentsUntil(selectorOrElement: String, filter: String): MQueryResultSetElements = js.native
   def parentsUntil(selectorOrElement: HTMLElement): MQueryResultSetElements = js.native
   def parentsUntil(selectorOrElement: HTMLElement, filter: String): MQueryResultSetElements = js.native
-  def position(): AnonLeftTopNumber = js.native
+  def position(): AnonLeftTop = js.native
   def remove(): MQueryResultSetElements = js.native
   def remove(selector: String): MQueryResultSetElements = js.native
   def removeClass(classNames: String): MQueryResultSetElements = js.native

@@ -21,6 +21,9 @@ object ModuleKind extends js.Object {
   sealed trait ES2015 extends ModuleKind
   
   @js.native
+  sealed trait ES2020 extends ModuleKind
+  
+  @js.native
   sealed trait ESNext extends ModuleKind
   
   @js.native
@@ -42,6 +45,9 @@ object ModuleKind extends js.Object {
   
   /* 5 */ @js.native
   object ES2015 extends TopLevel[ES2015 with Double]
+  
+  /* 6 */ @js.native
+  object ES2020 extends TopLevel[ES2020 with Double]
   
   /* 99 */ @js.native
   object ESNext extends TopLevel[ESNext with Double]

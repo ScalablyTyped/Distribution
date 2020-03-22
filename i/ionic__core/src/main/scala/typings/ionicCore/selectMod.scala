@@ -22,7 +22,6 @@ object selectMod extends js.Object {
       * The text to display on the cancel button.
       */
     var cancelText: String = js.native
-    val childOpts: js.Any = js.native
     /**
       * Close the select interface.
       */
@@ -109,12 +108,12 @@ object selectMod extends js.Object {
       */
     var selectedText: js.UndefOr[String | Null] = js.native
     var setFocus: js.Any = js.native
-    var updateOptions: js.Any = js.native
     var updateOverlayOptions: js.Any = js.native
     /**
       * the value of the select.
       */
     var value: js.UndefOr[js.Any | Null] = js.native
+    /* private */ def childOpts(): js.Any = js.native
     @JSName("componentDidLoad")
     def componentDidLoad_MSelect(): Unit = js.native
     @JSName("connectedCallback")

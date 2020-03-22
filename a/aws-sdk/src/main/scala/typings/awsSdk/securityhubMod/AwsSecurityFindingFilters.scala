@@ -15,7 +15,7 @@ trait AwsSecurityFindingFilters extends js.Object {
     */
   var CompanyName: js.UndefOr[StringFilterList] = js.native
   /**
-    * Exclusive to findings that are generated as the result of a check run against a specific rule in a supported standard, such as CIS AWS Foundations. Contains compliance-related finding details.
+    * Exclusive to findings that are generated as the result of a check run against a specific rule in a supported standard, such as CIS AWS Foundations. Contains security standard-related finding details.
     */
   var ComplianceStatus: js.UndefOr[StringFilterList] = js.native
   /**

@@ -56,7 +56,9 @@ object InteractiveMapProps {
   def apply(
     height: Double | String,
     width: Double | String,
+    altitude: Int | Double = null,
     attributionControl: js.UndefOr[Boolean] = js.undefined,
+    bearing: Int | Double = null,
     className: String = null,
     clickRadius: Int | Double = null,
     container: js.Object = null,
@@ -69,6 +71,8 @@ object InteractiveMapProps {
     gl: js.Object = null,
     interactiveLayerIds: js.Array[String] = null,
     keyboard: js.UndefOr[Boolean] = js.undefined,
+    latitude: Int | Double = null,
+    longitude: Int | Double = null,
     mapOptions: js.Object = null,
     mapStyle: String | js.Object = null,
     mapboxApiAccessToken: String = null,
@@ -100,6 +104,7 @@ object InteractiveMapProps {
     onViewStateChange: /* info */ ContextViewStateChangeInfo => Unit = null,
     onViewportChange: (/* viewState */ ViewportProps, /* interactionState */ ExtraState, /* oldViewState */ ViewportProps) => Unit = null,
     onWheel: /* event */ PointerEvent => Unit = null,
+    pitch: Int | Double = null,
     preserveDrawingBuffer: js.UndefOr[Boolean] = js.undefined,
     preventStyleDiffing: js.UndefOr[Boolean] = js.undefined,
     reuseMap: js.UndefOr[Boolean] = js.undefined,
@@ -116,10 +121,13 @@ object InteractiveMapProps {
     transitionInterruption: TRANSITION_EVENTS = null,
     viewState: ViewState = null,
     visibilityConstraints: AnonMaxPitch = null,
-    visible: js.UndefOr[Boolean] = js.undefined
+    visible: js.UndefOr[Boolean] = js.undefined,
+    zoom: Int | Double = null
   ): InteractiveMapProps = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    if (altitude != null) __obj.updateDynamic("altitude")(altitude.asInstanceOf[js.Any])
     if (!js.isUndefined(attributionControl)) __obj.updateDynamic("attributionControl")(attributionControl.asInstanceOf[js.Any])
+    if (bearing != null) __obj.updateDynamic("bearing")(bearing.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (clickRadius != null) __obj.updateDynamic("clickRadius")(clickRadius.asInstanceOf[js.Any])
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
@@ -132,6 +140,8 @@ object InteractiveMapProps {
     if (gl != null) __obj.updateDynamic("gl")(gl.asInstanceOf[js.Any])
     if (interactiveLayerIds != null) __obj.updateDynamic("interactiveLayerIds")(interactiveLayerIds.asInstanceOf[js.Any])
     if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard.asInstanceOf[js.Any])
+    if (latitude != null) __obj.updateDynamic("latitude")(latitude.asInstanceOf[js.Any])
+    if (longitude != null) __obj.updateDynamic("longitude")(longitude.asInstanceOf[js.Any])
     if (mapOptions != null) __obj.updateDynamic("mapOptions")(mapOptions.asInstanceOf[js.Any])
     if (mapStyle != null) __obj.updateDynamic("mapStyle")(mapStyle.asInstanceOf[js.Any])
     if (mapboxApiAccessToken != null) __obj.updateDynamic("mapboxApiAccessToken")(mapboxApiAccessToken.asInstanceOf[js.Any])
@@ -163,6 +173,7 @@ object InteractiveMapProps {
     if (onViewStateChange != null) __obj.updateDynamic("onViewStateChange")(js.Any.fromFunction1(onViewStateChange))
     if (onViewportChange != null) __obj.updateDynamic("onViewportChange")(js.Any.fromFunction3(onViewportChange))
     if (onWheel != null) __obj.updateDynamic("onWheel")(js.Any.fromFunction1(onWheel))
+    if (pitch != null) __obj.updateDynamic("pitch")(pitch.asInstanceOf[js.Any])
     if (!js.isUndefined(preserveDrawingBuffer)) __obj.updateDynamic("preserveDrawingBuffer")(preserveDrawingBuffer.asInstanceOf[js.Any])
     if (!js.isUndefined(preventStyleDiffing)) __obj.updateDynamic("preventStyleDiffing")(preventStyleDiffing.asInstanceOf[js.Any])
     if (!js.isUndefined(reuseMap)) __obj.updateDynamic("reuseMap")(reuseMap.asInstanceOf[js.Any])
@@ -180,6 +191,7 @@ object InteractiveMapProps {
     if (viewState != null) __obj.updateDynamic("viewState")(viewState.asInstanceOf[js.Any])
     if (visibilityConstraints != null) __obj.updateDynamic("visibilityConstraints")(visibilityConstraints.asInstanceOf[js.Any])
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
     __obj.asInstanceOf[InteractiveMapProps]
   }
 }

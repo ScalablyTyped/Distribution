@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-dnd-touch-backend" : "9.5.1"
+      "react-dnd-touch-backend" : "10.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "react-dnd-touch-backend" : "9.5.1"
+      "react-dnd-touch-backend" : "10.0.2"
     }
   ],
   "compile-devDependencies" : [

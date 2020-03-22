@@ -3,7 +3,7 @@ package typings.gapiClientGamesconfiguration.gapi.client.gamesconfiguration
 import typings.gapiClient.gapi.client.Request_
 import typings.gapiClientGamesconfiguration.AnonAchievementId
 import typings.gapiClientGamesconfiguration.AnonAlt
-import typings.gapiClientGamesconfiguration.AnonAltApplicationId
+import typings.gapiClientGamesconfiguration.AnonApplicationId
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ trait AchievementConfigurationsResource extends js.Object {
   /** Insert a new achievement configuration in this application. */
   def insert(request: AnonAlt): Request_[AchievementConfiguration]
   /** Returns a list of the achievement configurations in this application. */
-  def list(request: AnonAltApplicationId): Request_[AchievementConfigurationListResponse]
+  def list(request: AnonApplicationId): Request_[AchievementConfigurationListResponse]
   /** Update the metadata of the achievement configuration with the given ID. This method supports patch semantics. */
   def patch(request: AnonAchievementId): Request_[AchievementConfiguration]
   /** Update the metadata of the achievement configuration with the given ID. */
@@ -29,7 +29,7 @@ object AchievementConfigurationsResource {
     delete: AnonAchievementId => Request_[Unit],
     get: AnonAchievementId => Request_[AchievementConfiguration],
     insert: AnonAlt => Request_[AchievementConfiguration],
-    list: AnonAltApplicationId => Request_[AchievementConfigurationListResponse],
+    list: AnonApplicationId => Request_[AchievementConfigurationListResponse],
     patch: AnonAchievementId => Request_[AchievementConfiguration],
     update: AnonAchievementId => Request_[AchievementConfiguration]
   ): AchievementConfigurationsResource = {

@@ -4,8 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SvgProps extends js.Object {
-  var `inline`: js.UndefOr[Boolean] = js.undefined
+  var `inline`: js.UndefOr[Boolean] = js.native
 }
 
 object SvgProps {

@@ -39,6 +39,10 @@ trait TokenizeOptions extends js.Object {
     */
   var leadingTriviaChars: js.UndefOr[js.Array[String]] = js.undefined
   /**
+    * If true, do not convert CRLF to LF.
+    */
+  var preserveLineEndings: js.UndefOr[Boolean] = js.undefined
+  /**
     * The start and end point of the text to parse within the `source` string.
     * The entire `source` string is parsed if this is not provided.
     * */
@@ -53,6 +57,7 @@ object TokenizeOptions {
     escapedString: js.UndefOr[Boolean] = js.undefined,
     interpolationConfig: InterpolationConfig = null,
     leadingTriviaChars: js.Array[String] = null,
+    preserveLineEndings: js.UndefOr[Boolean] = js.undefined,
     range: LexerRange = null,
     tokenizeExpansionForms: js.UndefOr[Boolean] = js.undefined
   ): TokenizeOptions = {
@@ -60,6 +65,7 @@ object TokenizeOptions {
     if (!js.isUndefined(escapedString)) __obj.updateDynamic("escapedString")(escapedString.asInstanceOf[js.Any])
     if (interpolationConfig != null) __obj.updateDynamic("interpolationConfig")(interpolationConfig.asInstanceOf[js.Any])
     if (leadingTriviaChars != null) __obj.updateDynamic("leadingTriviaChars")(leadingTriviaChars.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveLineEndings)) __obj.updateDynamic("preserveLineEndings")(preserveLineEndings.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     if (!js.isUndefined(tokenizeExpansionForms)) __obj.updateDynamic("tokenizeExpansionForms")(tokenizeExpansionForms.asInstanceOf[js.Any])
     __obj.asInstanceOf[TokenizeOptions]

@@ -17,8 +17,8 @@ object elementSchemaRegistryMod extends js.Object {
     def hasElement(tagName: String, schemaMetas: js.Array[SchemaMetadata]): Boolean = js.native
     def hasProperty(tagName: String, propName: String, schemaMetas: js.Array[SchemaMetadata]): Boolean = js.native
     def normalizeAnimationStyleProperty(propName: String): String = js.native
-    def normalizeAnimationStyleValue(camelCaseProp: String, userProvidedProp: String, `val`: String): AnonErrorValue = js.native
-    def normalizeAnimationStyleValue(camelCaseProp: String, userProvidedProp: String, `val`: Double): AnonErrorValue = js.native
+    def normalizeAnimationStyleValue(camelCaseProp: String, userProvidedProp: String, `val`: String): AnonValue = js.native
+    def normalizeAnimationStyleValue(camelCaseProp: String, userProvidedProp: String, `val`: Double): AnonValue = js.native
     def securityContext(elementName: String, propName: String, isAttribute: Boolean): SecurityContext = js.native
     def validateAttribute(name: String): AnonError = js.native
     def validateProperty(name: String): AnonError = js.native

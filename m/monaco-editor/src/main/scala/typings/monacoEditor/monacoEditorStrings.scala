@@ -4,37 +4,15 @@ import typings.monacoEditor.mod.editor.BuiltinTheme
 import typings.monacoEditor.mod.editor.EditorAutoClosingOvertypeStrategy
 import typings.monacoEditor.mod.editor.EditorAutoClosingStrategy
 import typings.monacoEditor.mod.editor.EditorAutoSurroundStrategy
+import typings.monacoEditor.mod.editor.GoToLocationValues
+import typings.monacoEditor.mod.editor._LineNumbersType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object monacoEditorStrings {
   @js.native
-  sealed trait `100` extends js.Object
-  
-  @js.native
-  sealed trait `200` extends js.Object
-  
-  @js.native
-  sealed trait `300` extends js.Object
-  
-  @js.native
-  sealed trait `400` extends js.Object
-  
-  @js.native
-  sealed trait `500` extends js.Object
-  
-  @js.native
-  sealed trait `600` extends js.Object
-  
-  @js.native
-  sealed trait `700` extends js.Object
-  
-  @js.native
-  sealed trait `800` extends js.Object
-  
-  @js.native
-  sealed trait `900` extends js.Object
+  sealed trait advanced extends js.Object
   
   @js.native
   sealed trait all extends js.Object
@@ -57,10 +35,13 @@ object monacoEditorStrings {
   sealed trait beforeWhitespace extends EditorAutoClosingStrategy
   
   @js.native
-  sealed trait bold extends js.Object
+  sealed trait blink extends js.Object
   
   @js.native
-  sealed trait bolder extends js.Object
+  sealed trait block extends js.Object
+  
+  @js.native
+  sealed trait `block-outline` extends js.Object
   
   @js.native
   sealed trait bottom extends js.Object
@@ -75,13 +56,31 @@ object monacoEditorStrings {
   sealed trait brackets extends EditorAutoSurroundStrategy
   
   @js.native
+  sealed trait copy extends js.Object
+  
+  @js.native
   sealed trait ctrlCmd extends js.Object
   
   @js.native
   sealed trait ctrlKey extends js.Object
   
   @js.native
+  sealed trait deepIndent extends js.Object
+  
+  @js.native
+  sealed trait default extends js.Object
+  
+  @js.native
+  sealed trait editable extends js.Object
+  
+  @js.native
+  sealed trait editor extends js.Object
+  
+  @js.native
   sealed trait error extends js.Object
+  
+  @js.native
+  sealed trait expand extends js.Object
   
   @js.native
   sealed trait first extends js.Object
@@ -96,10 +95,13 @@ object monacoEditorStrings {
   sealed trait `force-expand-multiline` extends js.Object
   
   @js.native
-  sealed trait goto extends js.Object
+  sealed trait full extends js.Object
   
   @js.native
-  sealed trait gotoAndPeek extends js.Object
+  sealed trait goto extends GoToLocationValues
+  
+  @js.native
+  sealed trait gotoAndPeek extends GoToLocationValues
   
   @js.native
   sealed trait gutter extends js.Object
@@ -114,19 +116,22 @@ object monacoEditorStrings {
   sealed trait ignore extends js.Object
   
   @js.native
+  sealed trait indent extends js.Object
+  
+  @js.native
   sealed trait indentation extends js.Object
-  
-  @js.native
-  sealed trait inherit extends js.Object
-  
-  @js.native
-  sealed trait initial extends js.Object
   
   @js.native
   sealed trait `inline` extends js.Object
   
   @js.native
-  sealed trait interval extends js.Object
+  sealed trait insert extends js.Object
+  
+  @js.native
+  sealed trait interval extends _LineNumbersType
+  
+  @js.native
+  sealed trait keep extends js.Object
   
   @js.native
   sealed trait languageDefined
@@ -137,16 +142,22 @@ object monacoEditorStrings {
   sealed trait left extends js.Object
   
   @js.native
-  sealed trait lighter extends js.Object
+  sealed trait line extends js.Object
   
   @js.native
-  sealed trait line extends js.Object
+  sealed trait `line-thin` extends js.Object
   
   @js.native
   sealed trait metaKey extends js.Object
   
   @js.native
   sealed trait mouseover extends js.Object
+  
+  @js.native
+  sealed trait multiline extends js.Object
+  
+  @js.native
+  sealed trait near extends js.Object
   
   @js.native
   sealed trait never
@@ -158,19 +169,19 @@ object monacoEditorStrings {
   sealed trait none extends js.Object
   
   @js.native
-  sealed trait normal extends js.Object
+  sealed trait off extends _LineNumbersType
   
   @js.native
-  sealed trait off extends js.Object
-  
-  @js.native
-  sealed trait on extends js.Object
+  sealed trait on extends _LineNumbersType
   
   @js.native
   sealed trait onlySnippets extends js.Object
   
   @js.native
-  sealed trait peek extends js.Object
+  sealed trait peek extends GoToLocationValues
+  
+  @js.native
+  sealed trait phase extends js.Object
   
   @js.native
   sealed trait quotes extends EditorAutoSurroundStrategy
@@ -182,19 +193,49 @@ object monacoEditorStrings {
   sealed trait recentlyUsedByPrefix extends js.Object
   
   @js.native
-  sealed trait relative extends js.Object
+  sealed trait relative extends _LineNumbersType
+  
+  @js.native
+  sealed trait replace extends js.Object
   
   @js.native
   sealed trait right extends js.Object
   
   @js.native
+  sealed trait same extends js.Object
+  
+  @js.native
   sealed trait selection extends js.Object
+  
+  @js.native
+  sealed trait simple extends js.Object
   
   @js.native
   sealed trait smart extends js.Object
   
   @js.native
+  sealed trait smooth extends js.Object
+  
+  @js.native
+  sealed trait solid extends js.Object
+  
+  @js.native
+  sealed trait spread extends js.Object
+  
+  @js.native
+  sealed trait text extends js.Object
+  
+  @js.native
   sealed trait top extends js.Object
+  
+  @js.native
+  sealed trait tree extends js.Object
+  
+  @js.native
+  sealed trait underline extends js.Object
+  
+  @js.native
+  sealed trait `underline-thin` extends js.Object
   
   @js.native
   sealed trait visible extends js.Object
@@ -212,23 +253,7 @@ object monacoEditorStrings {
   sealed trait wordWrapColumn extends js.Object
   
   @scala.inline
-  def `100`: `100` = "100".asInstanceOf[`100`]
-  @scala.inline
-  def `200`: `200` = "200".asInstanceOf[`200`]
-  @scala.inline
-  def `300`: `300` = "300".asInstanceOf[`300`]
-  @scala.inline
-  def `400`: `400` = "400".asInstanceOf[`400`]
-  @scala.inline
-  def `500`: `500` = "500".asInstanceOf[`500`]
-  @scala.inline
-  def `600`: `600` = "600".asInstanceOf[`600`]
-  @scala.inline
-  def `700`: `700` = "700".asInstanceOf[`700`]
-  @scala.inline
-  def `800`: `800` = "800".asInstanceOf[`800`]
-  @scala.inline
-  def `900`: `900` = "900".asInstanceOf[`900`]
+  def advanced: advanced = "advanced".asInstanceOf[advanced]
   @scala.inline
   def all: all = "all".asInstanceOf[all]
   @scala.inline
@@ -242,9 +267,11 @@ object monacoEditorStrings {
   @scala.inline
   def beforeWhitespace: beforeWhitespace = "beforeWhitespace".asInstanceOf[beforeWhitespace]
   @scala.inline
-  def bold: bold = "bold".asInstanceOf[bold]
+  def blink: blink = "blink".asInstanceOf[blink]
   @scala.inline
-  def bolder: bolder = "bolder".asInstanceOf[bolder]
+  def block: block = "block".asInstanceOf[block]
+  @scala.inline
+  def `block-outline`: `block-outline` = "block-outline".asInstanceOf[`block-outline`]
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
   @scala.inline
@@ -254,11 +281,23 @@ object monacoEditorStrings {
   @scala.inline
   def brackets: brackets = "brackets".asInstanceOf[brackets]
   @scala.inline
+  def copy: copy = "copy".asInstanceOf[copy]
+  @scala.inline
   def ctrlCmd: ctrlCmd = "ctrlCmd".asInstanceOf[ctrlCmd]
   @scala.inline
   def ctrlKey: ctrlKey = "ctrlKey".asInstanceOf[ctrlKey]
   @scala.inline
+  def deepIndent: deepIndent = "deepIndent".asInstanceOf[deepIndent]
+  @scala.inline
+  def default: default = "default".asInstanceOf[default]
+  @scala.inline
+  def editable: editable = "editable".asInstanceOf[editable]
+  @scala.inline
+  def editor: editor = "editor".asInstanceOf[editor]
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
+  @scala.inline
+  def expand: expand = "expand".asInstanceOf[expand]
   @scala.inline
   def first: first = "first".asInstanceOf[first]
   @scala.inline
@@ -267,6 +306,8 @@ object monacoEditorStrings {
   def `force-aligned`: `force-aligned` = "force-aligned".asInstanceOf[`force-aligned`]
   @scala.inline
   def `force-expand-multiline`: `force-expand-multiline` = "force-expand-multiline".asInstanceOf[`force-expand-multiline`]
+  @scala.inline
+  def full: full = "full".asInstanceOf[full]
   @scala.inline
   def goto: goto = "goto".asInstanceOf[goto]
   @scala.inline
@@ -280,33 +321,37 @@ object monacoEditorStrings {
   @scala.inline
   def ignore: ignore = "ignore".asInstanceOf[ignore]
   @scala.inline
+  def indent: indent = "indent".asInstanceOf[indent]
+  @scala.inline
   def indentation: indentation = "indentation".asInstanceOf[indentation]
-  @scala.inline
-  def inherit: inherit = "inherit".asInstanceOf[inherit]
-  @scala.inline
-  def initial: initial = "initial".asInstanceOf[initial]
   @scala.inline
   def `inline`: `inline` = "inline".asInstanceOf[`inline`]
   @scala.inline
+  def insert: insert = "insert".asInstanceOf[insert]
+  @scala.inline
   def interval: interval = "interval".asInstanceOf[interval]
+  @scala.inline
+  def keep: keep = "keep".asInstanceOf[keep]
   @scala.inline
   def languageDefined: languageDefined = "languageDefined".asInstanceOf[languageDefined]
   @scala.inline
   def left: left = "left".asInstanceOf[left]
   @scala.inline
-  def lighter: lighter = "lighter".asInstanceOf[lighter]
-  @scala.inline
   def line: line = "line".asInstanceOf[line]
+  @scala.inline
+  def `line-thin`: `line-thin` = "line-thin".asInstanceOf[`line-thin`]
   @scala.inline
   def metaKey: metaKey = "metaKey".asInstanceOf[metaKey]
   @scala.inline
   def mouseover: mouseover = "mouseover".asInstanceOf[mouseover]
   @scala.inline
+  def multiline: multiline = "multiline".asInstanceOf[multiline]
+  @scala.inline
+  def near: near = "near".asInstanceOf[near]
+  @scala.inline
   def never: never = "never".asInstanceOf[never]
   @scala.inline
   def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def normal: normal = "normal".asInstanceOf[normal]
   @scala.inline
   def off: off = "off".asInstanceOf[off]
   @scala.inline
@@ -316,6 +361,8 @@ object monacoEditorStrings {
   @scala.inline
   def peek: peek = "peek".asInstanceOf[peek]
   @scala.inline
+  def phase: phase = "phase".asInstanceOf[phase]
+  @scala.inline
   def quotes: quotes = "quotes".asInstanceOf[quotes]
   @scala.inline
   def recentlyUsed: recentlyUsed = "recentlyUsed".asInstanceOf[recentlyUsed]
@@ -324,13 +371,33 @@ object monacoEditorStrings {
   @scala.inline
   def relative: relative = "relative".asInstanceOf[relative]
   @scala.inline
+  def replace: replace = "replace".asInstanceOf[replace]
+  @scala.inline
   def right: right = "right".asInstanceOf[right]
+  @scala.inline
+  def same: same = "same".asInstanceOf[same]
   @scala.inline
   def selection: selection = "selection".asInstanceOf[selection]
   @scala.inline
+  def simple: simple = "simple".asInstanceOf[simple]
+  @scala.inline
   def smart: smart = "smart".asInstanceOf[smart]
   @scala.inline
+  def smooth: smooth = "smooth".asInstanceOf[smooth]
+  @scala.inline
+  def solid: solid = "solid".asInstanceOf[solid]
+  @scala.inline
+  def spread: spread = "spread".asInstanceOf[spread]
+  @scala.inline
+  def text: text = "text".asInstanceOf[text]
+  @scala.inline
   def top: top = "top".asInstanceOf[top]
+  @scala.inline
+  def tree: tree = "tree".asInstanceOf[tree]
+  @scala.inline
+  def underline: underline = "underline".asInstanceOf[underline]
+  @scala.inline
+  def `underline-thin`: `underline-thin` = "underline-thin".asInstanceOf[`underline-thin`]
   @scala.inline
   def visible: visible = "visible".asInstanceOf[visible]
   @scala.inline

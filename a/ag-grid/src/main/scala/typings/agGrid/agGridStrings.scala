@@ -21,9 +21,6 @@ object agGridStrings {
   sealed trait Number extends ExcelDataType
   
   @js.native
-  sealed trait RowContainerComponents extends js.Object
-  
-  @js.native
   sealed trait String extends ExcelDataType
   
   @js.native
@@ -130,8 +127,6 @@ object agGridStrings {
   def Error: Error = "Error".asInstanceOf[Error]
   @scala.inline
   def Number: Number = "Number".asInstanceOf[Number]
-  @scala.inline
-  def RowContainerComponents: RowContainerComponents = "RowContainerComponents".asInstanceOf[RowContainerComponents]
   @scala.inline
   def String: String = "String".asInstanceOf[String]
   @scala.inline

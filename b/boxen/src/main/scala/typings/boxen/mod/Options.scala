@@ -21,7 +21,7 @@ import typings.boxen.boxenStrings.white
 import typings.boxen.boxenStrings.whiteBright
 import typings.boxen.boxenStrings.yellow
 import typings.boxen.boxenStrings.yellowBright
-import typings.typeFest.mod.LiteralUnion
+import typings.typeFest.literalUnionMod.LiteralUnion
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

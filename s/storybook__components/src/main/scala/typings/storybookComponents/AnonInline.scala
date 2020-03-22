@@ -4,8 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AnonInline extends js.Object {
-  var `inline`: Boolean
+  var `inline`: Boolean = js.native
 }
 
 object AnonInline {

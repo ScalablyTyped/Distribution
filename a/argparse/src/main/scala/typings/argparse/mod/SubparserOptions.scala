@@ -1,6 +1,6 @@
 package typings.argparse.mod
 
-import typings.argparse.AnonAny
+import typings.argparse.AnonInstantiable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ trait SubparserOptions extends js.Object {
   var dest: js.UndefOr[String] = js.undefined
   var help: js.UndefOr[String] = js.undefined
   var metavar: js.UndefOr[String] = js.undefined
-  var parserClass: js.UndefOr[AnonAny] = js.undefined
+  var parserClass: js.UndefOr[AnonInstantiable] = js.undefined
   var prog: js.UndefOr[String] = js.undefined
   var title: js.UndefOr[String] = js.undefined
 }
@@ -24,7 +24,7 @@ object SubparserOptions {
     dest: String = null,
     help: String = null,
     metavar: String = null,
-    parserClass: AnonAny = null,
+    parserClass: AnonInstantiable = null,
     prog: String = null,
     title: String = null
   ): SubparserOptions = {

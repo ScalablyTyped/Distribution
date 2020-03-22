@@ -1,6 +1,6 @@
 package typings.primereact.inputMaskMod
 
-import typings.primereact.AnonOriginalEventValue
+import typings.primereact.AnonValue
 import typings.primereact.tooltipOptionsMod.TooltipOptions
 import typings.std.Event_
 import scala.scalajs.js
@@ -16,7 +16,7 @@ trait InputMaskProps extends js.Object {
   var mask: js.UndefOr[String] = js.undefined
   var maxlength: js.UndefOr[Double] = js.undefined
   var name: js.UndefOr[String] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* e */ AnonOriginalEventValue, Unit]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* e */ AnonValue, Unit]] = js.undefined
   var onComplete: js.UndefOr[js.Function1[/* e */ Event_, Unit]] = js.undefined
   var placeholder: js.UndefOr[String] = js.undefined
   var readonly: js.UndefOr[Boolean] = js.undefined
@@ -43,7 +43,7 @@ object InputMaskProps {
     mask: String = null,
     maxlength: Int | Double = null,
     name: String = null,
-    onChange: /* e */ AnonOriginalEventValue => Unit = null,
+    onChange: /* e */ AnonValue => Unit = null,
     onComplete: /* e */ Event_ => Unit = null,
     placeholder: String = null,
     readonly: js.UndefOr[Boolean] = js.undefined,

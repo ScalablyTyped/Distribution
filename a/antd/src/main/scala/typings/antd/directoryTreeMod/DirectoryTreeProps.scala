@@ -1,23 +1,26 @@
 package typings.antd.directoryTreeMod
 
-import typings.antd.AnonCheckedHalfChecked
-import typings.antd.AnonEvent
+import typings.antd.AnonChecked
 import typings.antd.treeTreeMod.AntTreeNode
-import typings.antd.treeTreeMod.AntTreeNodeCheckedEvent
-import typings.antd.treeTreeMod.AntTreeNodeDragEnterEvent
-import typings.antd.treeTreeMod.AntTreeNodeDropEvent
-import typings.antd.treeTreeMod.AntTreeNodeExpandedEvent
-import typings.antd.treeTreeMod.AntTreeNodeMouseEvent
-import typings.antd.treeTreeMod.AntTreeNodeSelectedEvent
 import typings.antd.treeTreeMod.AntdTreeNodeAttribute
 import typings.antd.treeTreeMod.TreeNodeNormal
 import typings.antd.treeTreeMod.TreeProps
+import typings.rcTree.mod.CheckData
+import typings.rcTree.mod.ExpandData
+import typings.rcTree.mod.InternalTreeNode
+import typings.rcTree.mod.OnDragEndData
+import typings.rcTree.mod.OnDragEnterData
+import typings.rcTree.mod.OnDragLeaveData
+import typings.rcTree.mod.OnDragOverData
+import typings.rcTree.mod.OnDragStartData
+import typings.rcTree.mod.OnDropData
+import typings.rcTree.mod.OnMouseEnterData
+import typings.rcTree.mod.OnMouseLeaveData
+import typings.rcTree.mod.OnRightClickData
+import typings.rcTree.mod.SelectData
 import typings.react.mod.CSSProperties
-import typings.react.mod.MouseEvent
-import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
-import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,7 +36,7 @@ object DirectoryTreeProps {
     blockNode: js.UndefOr[Boolean] = js.undefined,
     checkStrictly: js.UndefOr[Boolean] = js.undefined,
     checkable: js.UndefOr[Boolean] = js.undefined,
-    checkedKeys: js.Array[String] | AnonCheckedHalfChecked = null,
+    checkedKeys: js.Array[String] | AnonChecked = null,
     children: ReactNode = null,
     className: String = null,
     defaultCheckedKeys: js.Array[String] = null,
@@ -46,26 +49,23 @@ object DirectoryTreeProps {
     expandAction: ExpandAction = null,
     expandedKeys: js.Array[String] = null,
     filterAntTreeNode: /* node */ AntTreeNode => Boolean = null,
-    filterTreeNode: /* node */ AntTreeNode => Boolean = null,
+    filterTreeNode: /* node */ InternalTreeNode => Boolean = null,
     icon: (js.Function1[/* nodeProps */ AntdTreeNodeAttribute, ReactNode]) | ReactNode = null,
-    loadData: /* node */ AntTreeNode => js.Thenable[Unit] = null,
+    loadData: /* node */ InternalTreeNode => js.Promise[_] = null,
     loadedKeys: js.Array[String] = null,
     multiple: js.UndefOr[Boolean] = js.undefined,
-    onCheck: (/* checkedKeys */ js.Array[String] | AnonCheckedHalfChecked, /* e */ AntTreeNodeCheckedEvent) => Unit = null,
-    onClick: (/* e */ MouseEvent[HTMLElement, NativeMouseEvent], /* node */ AntTreeNode) => Unit = null,
-    onDoubleClick: (/* e */ MouseEvent[HTMLElement, NativeMouseEvent], /* node */ AntTreeNode) => Unit = null,
-    onDragEnd: /* options */ AntTreeNodeMouseEvent => Unit = null,
-    onDragEnter: /* options */ AntTreeNodeDragEnterEvent => Unit = null,
-    onDragLeave: /* options */ AntTreeNodeMouseEvent => Unit = null,
-    onDragOver: /* options */ AntTreeNodeMouseEvent => Unit = null,
-    onDragStart: /* options */ AntTreeNodeMouseEvent => Unit = null,
-    onDrop: /* options */ AntTreeNodeDropEvent => Unit = null,
-    onExpand: (/* expandedKeys */ js.Array[String], /* info */ AntTreeNodeExpandedEvent) => Unit | js.Thenable[Unit] = null,
-    onLoad: (/* loadedKeys */ js.Array[String], /* info */ AnonEvent) => Unit = null,
-    onMouseEnter: /* options */ AntTreeNodeMouseEvent => Unit = null,
-    onMouseLeave: /* options */ AntTreeNodeMouseEvent => Unit = null,
-    onRightClick: /* options */ AntTreeNodeMouseEvent => Unit = null,
-    onSelect: (/* selectedKeys */ js.Array[String], /* e */ AntTreeNodeSelectedEvent) => Unit = null,
+    onCheck: (/* checkedKeys */ js.Array[String], /* e */ CheckData) => Unit = null,
+    onDragEnd: /* props */ OnDragEndData => Unit = null,
+    onDragEnter: /* props */ OnDragEnterData => Unit = null,
+    onDragLeave: /* props */ OnDragLeaveData => Unit = null,
+    onDragOver: /* props */ OnDragOverData => Unit = null,
+    onDragStart: /* props */ OnDragStartData => Unit = null,
+    onDrop: /* props */ OnDropData => Unit = null,
+    onExpand: (/* expandedKeys */ js.Array[String], /* e */ ExpandData) => Unit = null,
+    onMouseEnter: /* props */ OnMouseEnterData => Unit = null,
+    onMouseLeave: /* props */ OnMouseLeaveData => Unit = null,
+    onRightClick: /* props */ OnRightClickData => Unit = null,
+    onSelect: (/* selectedKeys */ js.Array[String], /* e */ SelectData) => Unit = null,
     prefixCls: String = null,
     selectable: js.UndefOr[Boolean] = js.undefined,
     selectedKeys: js.Array[String] = null,
@@ -99,8 +99,6 @@ object DirectoryTreeProps {
     if (loadedKeys != null) __obj.updateDynamic("loadedKeys")(loadedKeys.asInstanceOf[js.Any])
     if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.asInstanceOf[js.Any])
     if (onCheck != null) __obj.updateDynamic("onCheck")(js.Any.fromFunction2(onCheck))
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction2(onClick))
-    if (onDoubleClick != null) __obj.updateDynamic("onDoubleClick")(js.Any.fromFunction2(onDoubleClick))
     if (onDragEnd != null) __obj.updateDynamic("onDragEnd")(js.Any.fromFunction1(onDragEnd))
     if (onDragEnter != null) __obj.updateDynamic("onDragEnter")(js.Any.fromFunction1(onDragEnter))
     if (onDragLeave != null) __obj.updateDynamic("onDragLeave")(js.Any.fromFunction1(onDragLeave))
@@ -108,7 +106,6 @@ object DirectoryTreeProps {
     if (onDragStart != null) __obj.updateDynamic("onDragStart")(js.Any.fromFunction1(onDragStart))
     if (onDrop != null) __obj.updateDynamic("onDrop")(js.Any.fromFunction1(onDrop))
     if (onExpand != null) __obj.updateDynamic("onExpand")(js.Any.fromFunction2(onExpand))
-    if (onLoad != null) __obj.updateDynamic("onLoad")(js.Any.fromFunction2(onLoad))
     if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1(onMouseEnter))
     if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1(onMouseLeave))
     if (onRightClick != null) __obj.updateDynamic("onRightClick")(js.Any.fromFunction1(onRightClick))

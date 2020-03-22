@@ -1,18 +1,13 @@
 organization := "org.scalablytyped"
 name := "external-editor"
-version := "3.0.3-c36b9e"
-scalaVersion := "2.12.8"
+version := "3.1.0-f17740"
+scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
-  "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "chardet" % "0.5-dt-20180426Z-e8db17",
-  "org.scalablytyped" %%% "iconv-lite" % "0.4.24-9813e6",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190330Z-7c1cfd",
-  "org.scalablytyped" %%% "std" % "3.4-d52857",
-  "org.scalablytyped" %%% "tmp" % "0.1-dt-20190327Z-58e817")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
+  "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false
-scalacOptions += "-P:scalajs:sjsDefinedByDefault"
+scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
-        
+resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

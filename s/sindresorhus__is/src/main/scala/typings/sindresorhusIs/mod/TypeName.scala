@@ -12,6 +12,9 @@ import scala.scalajs.js.annotation._
   - typings.sindresorhusIs.sindresorhusIsStrings.number
   - typings.sindresorhusIs.sindresorhusIsStrings.symbol
   - typings.sindresorhusIs.sindresorhusIsStrings.Function
+  - typings.sindresorhusIs.sindresorhusIsStrings.GeneratorFunction
+  - typings.sindresorhusIs.sindresorhusIsStrings.AsyncFunction
+  - typings.sindresorhusIs.sindresorhusIsStrings.Observable
   - typings.sindresorhusIs.sindresorhusIsStrings.Array
   - typings.sindresorhusIs.sindresorhusIsStrings.Buffer
   - typings.sindresorhusIs.sindresorhusIsStrings.Object
@@ -35,6 +38,7 @@ import scala.scalajs.js.annotation._
   - typings.sindresorhusIs.sindresorhusIsStrings.SharedArrayBuffer
   - typings.sindresorhusIs.sindresorhusIsStrings.DataView
   - typings.sindresorhusIs.sindresorhusIsStrings.Promise
+  - typings.sindresorhusIs.sindresorhusIsStrings.URL
 */
 trait TypeName extends js.Object
 
@@ -43,6 +47,8 @@ object TypeName {
   def Array: typings.sindresorhusIs.sindresorhusIsStrings.Array = this.cast("Array")
   @scala.inline
   def ArrayBuffer: typings.sindresorhusIs.sindresorhusIsStrings.ArrayBuffer = this.cast("ArrayBuffer")
+  @scala.inline
+  def AsyncFunction: typings.sindresorhusIs.sindresorhusIsStrings.AsyncFunction = this.cast("AsyncFunction")
   @scala.inline
   def Buffer: typings.sindresorhusIs.sindresorhusIsStrings.Buffer = this.cast("Buffer")
   @scala.inline
@@ -58,6 +64,8 @@ object TypeName {
   @scala.inline
   def Function: typings.sindresorhusIs.sindresorhusIsStrings.Function = this.cast("Function")
   @scala.inline
+  def GeneratorFunction: typings.sindresorhusIs.sindresorhusIsStrings.GeneratorFunction = this.cast("GeneratorFunction")
+  @scala.inline
   def Int16Array: typings.sindresorhusIs.sindresorhusIsStrings.Int16Array = this.cast("Int16Array")
   @scala.inline
   def Int32Array: typings.sindresorhusIs.sindresorhusIsStrings.Int32Array = this.cast("Int32Array")
@@ -68,6 +76,8 @@ object TypeName {
   @scala.inline
   def Object: typings.sindresorhusIs.sindresorhusIsStrings.Object = this.cast("Object")
   @scala.inline
+  def Observable: typings.sindresorhusIs.sindresorhusIsStrings.Observable = this.cast("Observable")
+  @scala.inline
   def Promise: typings.sindresorhusIs.sindresorhusIsStrings.Promise = this.cast("Promise")
   @scala.inline
   def RegExp: typings.sindresorhusIs.sindresorhusIsStrings.RegExp = this.cast("RegExp")
@@ -75,6 +85,8 @@ object TypeName {
   def Set: typings.sindresorhusIs.sindresorhusIsStrings.Set = this.cast("Set")
   @scala.inline
   def SharedArrayBuffer: typings.sindresorhusIs.sindresorhusIsStrings.SharedArrayBuffer = this.cast("SharedArrayBuffer")
+  @scala.inline
+  def URL: typings.sindresorhusIs.sindresorhusIsStrings.URL = this.cast("URL")
   @scala.inline
   def Uint16Array: typings.sindresorhusIs.sindresorhusIsStrings.Uint16Array = this.cast("Uint16Array")
   @scala.inline

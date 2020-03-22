@@ -2,8 +2,8 @@ package typings.jupyterlabMainmenu.helpMod.IHelpMenu
 
 import typings.jupyterlabApputils.widgettrackerMod.IWidgetTracker
 import typings.jupyterlabMainmenu.labmenuMod.IMenuExtender
-import typings.jupyterlabServices.kernelKernelMod.Kernel.IKernelConnection
-import typings.phosphorWidgets.mod.Widget
+import typings.jupyterlabServices.kernelKernelMod.IKernelConnection
+import typings.luminoWidgets.mod.Widget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

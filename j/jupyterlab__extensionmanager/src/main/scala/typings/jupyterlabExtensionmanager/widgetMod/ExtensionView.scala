@@ -1,6 +1,6 @@
 package typings.jupyterlabExtensionmanager.widgetMod
 
-import typings.jupyterlabApputils.vdomMod.VDomRenderer
+import typings.jupyterlabApputils.mod.VDomRenderer
 import typings.jupyterlabExtensionmanager.modelMod.Action
 import typings.jupyterlabExtensionmanager.modelMod.IEntry
 import typings.jupyterlabExtensionmanager.modelMod.ListModel
@@ -20,10 +20,6 @@ class ExtensionView protected () extends VDomRenderer[ListModel] {
     */
   var _toggleFocused: js.Any = js.native
   /**
-    * The search input node.
-    */
-  val inputNode: HTMLInputElement = js.native
-  /**
     * Handle the DOM events for the command palette.
     *
     * @param event - The DOM event sent to the command palette.
@@ -34,6 +30,10 @@ class ExtensionView protected () extends VDomRenderer[ListModel] {
     * It should not be called directly by user code.
     */
   def handleEvent(event: Event_): Unit = js.native
+  /**
+    * The search input node.
+    */
+  def inputNode(): HTMLInputElement = js.native
   /**
     * Callback handler for when the user wants to perform an action on an extension.
     *

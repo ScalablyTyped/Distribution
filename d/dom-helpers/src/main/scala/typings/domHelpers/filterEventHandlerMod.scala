@@ -45,7 +45,6 @@ import typings.domHelpers.domHelpersStrings.keyup
 import typings.domHelpers.domHelpersStrings.load
 import typings.domHelpers.domHelpersStrings.loadeddata
 import typings.domHelpers.domHelpersStrings.loadedmetadata
-import typings.domHelpers.domHelpersStrings.loadend
 import typings.domHelpers.domHelpersStrings.loadstart
 import typings.domHelpers.domHelpersStrings.lostpointercapture
 import typings.domHelpers.domHelpersStrings.mousedown
@@ -189,8 +188,6 @@ object filterEventHandlerMod extends js.Object {
   def default_loadeddata(selector: String, handler: EventHandler[loadeddata]): EventHandler[loadeddata] = js.native
   @JSName("default")
   def default_loadedmetadata(selector: String, handler: EventHandler[loadedmetadata]): EventHandler[loadedmetadata] = js.native
-  @JSName("default")
-  def default_loadend(selector: String, handler: EventHandler[loadend]): EventHandler[loadend] = js.native
   @JSName("default")
   def default_loadstart(selector: String, handler: EventHandler[loadstart]): EventHandler[loadstart] = js.native
   @JSName("default")

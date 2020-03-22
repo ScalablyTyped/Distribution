@@ -1,6 +1,6 @@
 package typings.colornames.mod
 
-import typings.colornames.AnonAll
+import typings.colornames.AnonCall
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ trait GlobalResolver extends js.Object {
     * Provides the functionality to query colors.
     */
   @JSName("get")
-  var get_Original: AnonAll = js.native
+  var get_Original: AnonCall = js.native
   /**
     * Gets the color with the specified name.
     */

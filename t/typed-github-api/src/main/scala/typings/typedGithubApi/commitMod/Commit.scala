@@ -1,14 +1,14 @@
 package typings.typedGithubApi.commitMod
 
 import typings.typedGithubApi.AnonAdditions
-import typings.typedGithubApi.AnonAdditionsBloburl
+import typings.typedGithubApi.AnonBloburl
 import typings.typedGithubApi.userMod.UserSummary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Commit extends CommitSummary {
-  var files: js.Array[AnonAdditionsBloburl]
+  var files: js.Array[AnonBloburl]
   var stats: AnonAdditions
 }
 
@@ -19,7 +19,7 @@ object Commit {
     comments_url: String,
     commit: GitCommitSummary,
     committer: UserSummary,
-    files: js.Array[AnonAdditionsBloburl],
+    files: js.Array[AnonBloburl],
     html_url: String,
     parents: js.Array[CommitRef],
     sha: String,

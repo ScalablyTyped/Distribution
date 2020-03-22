@@ -1,7 +1,7 @@
 package typings.reactNative.mod
 
 import typings.reactNative.AnonKey
-import typings.reactNative.AnonUrl
+import typings.reactNative.AnonUrlString
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ trait LinkingStatic extends EventEmitter {
     * Add a handler to Linking changes by listening to the `url` event type
     * and providing the handler
     */
-  def addEventListener(`type`: String, handler: js.Function1[/* event */ AnonUrl, Unit]): Unit = js.native
+  def addEventListener(`type`: String, handler: js.Function1[/* event */ AnonUrlString, Unit]): Unit = js.native
   /**
     * Determine whether or not an installed app can handle a given URL.
     * NOTE: For web URLs, the protocol ("http://", "https://") must be set accordingly!
@@ -39,7 +39,7 @@ trait LinkingStatic extends EventEmitter {
   /**
     * Remove a handler by passing the `url` event type and the handler
     */
-  def removeEventListener(`type`: String, handler: js.Function1[/* event */ AnonUrl, Unit]): Unit = js.native
+  def removeEventListener(`type`: String, handler: js.Function1[/* event */ AnonUrlString, Unit]): Unit = js.native
   /**
     * Sends an Android Intent - a broad surface to express Android functions.  Useful for deep-linking to settings pages,
     * opening an SMS app with a message draft in place, and more.  See https://developer.android.com/reference/kotlin/android/content/Intent?hl=en

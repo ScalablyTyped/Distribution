@@ -10,7 +10,6 @@ trait RTCRtpEncodingParameters extends RTCRtpCodingParameters {
   var dtx: js.UndefOr[RTCDtxStatus] = js.undefined
   var maxBitrate: js.UndefOr[Double] = js.undefined
   var maxFramerate: js.UndefOr[Double] = js.undefined
-  var priority: js.UndefOr[RTCPriorityType] = js.undefined
   var ptime: js.UndefOr[Double] = js.undefined
   var scaleResolutionDownBy: js.UndefOr[Double] = js.undefined
 }
@@ -23,7 +22,6 @@ object RTCRtpEncodingParameters {
     dtx: RTCDtxStatus = null,
     maxBitrate: Int | Double = null,
     maxFramerate: Int | Double = null,
-    priority: RTCPriorityType = null,
     ptime: Int | Double = null,
     rid: java.lang.String = null,
     scaleResolutionDownBy: Int | Double = null
@@ -34,7 +32,6 @@ object RTCRtpEncodingParameters {
     if (dtx != null) __obj.updateDynamic("dtx")(dtx.asInstanceOf[js.Any])
     if (maxBitrate != null) __obj.updateDynamic("maxBitrate")(maxBitrate.asInstanceOf[js.Any])
     if (maxFramerate != null) __obj.updateDynamic("maxFramerate")(maxFramerate.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
     if (ptime != null) __obj.updateDynamic("ptime")(ptime.asInstanceOf[js.Any])
     if (rid != null) __obj.updateDynamic("rid")(rid.asInstanceOf[js.Any])
     if (scaleResolutionDownBy != null) __obj.updateDynamic("scaleResolutionDownBy")(scaleResolutionDownBy.asInstanceOf[js.Any])

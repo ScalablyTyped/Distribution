@@ -1,7 +1,7 @@
 package typings.hexoUtil.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.hexoUtil.AnonName
+import typings.hexoUtil.AnonSegments
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Permalink protected () extends js.Object {
   def this(rule: String) = this()
-  def this(rule: String, options: AnonName) = this()
+  def this(rule: String, options: AnonSegments) = this()
   var params: js.Array[String] = js.native
   var regex: RegExp = js.native
   var rule: String = js.native

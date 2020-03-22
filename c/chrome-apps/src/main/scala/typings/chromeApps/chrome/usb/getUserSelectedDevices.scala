@@ -1,6 +1,6 @@
 package typings.chromeApps.chrome.usb
 
-import typings.chromeApps.AnonFiltersMultiple
+import typings.chromeApps.AnonMultiple
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,6 +20,6 @@ object getUserSelectedDevices extends js.Object {
     *                   If multiple filters are provided, devices matching any filter will be displayed.
     * @param callback Invoked with a list of chosen Devices.
     */
-  def apply(options: AnonFiltersMultiple, callback: js.Function1[/* devices */ js.Array[Device], Unit]): Unit = js.native
+  def apply(options: AnonMultiple, callback: js.Function1[/* devices */ js.Array[Device], Unit]): Unit = js.native
 }
 

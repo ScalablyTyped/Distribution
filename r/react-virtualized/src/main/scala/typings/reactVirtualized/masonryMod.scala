@@ -21,7 +21,7 @@ object masonryMod extends js.Object {
   /* static members */
   @js.native
   object Masonry extends js.Object {
-    var defaultProps: Anon0150 = js.native
+    var defaultProps: AnonKeyMapper = js.native
     def getDerivedStateFromProps(nextProps: MasonryProps, prevState: MasonryState): MasonryState | Null = js.native
   }
   

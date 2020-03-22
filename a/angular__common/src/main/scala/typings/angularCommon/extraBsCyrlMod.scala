@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/common/locales/extra/bs-Cyrl", JSImport.Namespace)
 @js.native
 object extraBsCyrlMod extends js.Object {
-  val default: js.Array[scala.Nothing] = js.native
+  val default: js.Array[js.Array[js.UndefOr[js.Array[String] | String]]] = js.native
 }
 

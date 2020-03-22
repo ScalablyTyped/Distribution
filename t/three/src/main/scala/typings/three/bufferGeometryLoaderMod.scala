@@ -1,6 +1,10 @@
 package typings.three
 
+import typings.std.ErrorEvent
+import typings.std.EventTarget
+import typings.std.ProgressEvent
 import typings.three.bufferGeometryMod.BufferGeometry
+import typings.three.instancedBufferGeometryMod.InstancedBufferGeometry
 import typings.three.loaderMod.Loader
 import typings.three.loadingManagerMod.LoadingManager
 import scala.scalajs.js
@@ -13,19 +17,22 @@ object bufferGeometryLoaderMod extends js.Object {
   @js.native
   class BufferGeometryLoader () extends Loader {
     def this(manager: LoadingManager) = this()
-    def load(url: String, onLoad: js.Function1[/* bufferGeometry */ BufferGeometry, Unit]): Unit = js.native
     def load(
       url: String,
-      onLoad: js.Function1[/* bufferGeometry */ BufferGeometry, Unit],
-      onProgress: js.Function1[/* event */ js.Any, Unit]
+      onLoad: js.Function1[/* bufferGeometry */ InstancedBufferGeometry | BufferGeometry, Unit]
     ): Unit = js.native
     def load(
       url: String,
-      onLoad: js.Function1[/* bufferGeometry */ BufferGeometry, Unit],
-      onProgress: js.Function1[/* event */ js.Any, Unit],
-      onError: js.Function1[/* event */ js.Any, Unit]
+      onLoad: js.Function1[/* bufferGeometry */ InstancedBufferGeometry | BufferGeometry, Unit],
+      onProgress: js.Function1[/* request */ ProgressEvent[EventTarget], Unit]
     ): Unit = js.native
-    def parse(json: js.Any): BufferGeometry = js.native
+    def load(
+      url: String,
+      onLoad: js.Function1[/* bufferGeometry */ InstancedBufferGeometry | BufferGeometry, Unit],
+      onProgress: js.Function1[/* request */ ProgressEvent[EventTarget], Unit],
+      onError: js.Function1[/* event */ ErrorEvent, Unit]
+    ): Unit = js.native
+    def parse(json: js.Any): InstancedBufferGeometry | BufferGeometry = js.native
   }
   
 }

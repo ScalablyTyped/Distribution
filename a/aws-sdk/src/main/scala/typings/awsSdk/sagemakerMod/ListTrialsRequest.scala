@@ -34,6 +34,10 @@ trait ListTrialsRequest extends js.Object {
     * The sort order. The default value is Descending.
     */
   var SortOrder: js.UndefOr[typings.awsSdk.sagemakerMod.SortOrder] = js.native
+  /**
+    * A filter that returns only trials that are associated with the specified trial component.
+    */
+  var TrialComponentName: js.UndefOr[ExperimentEntityName] = js.native
 }
 
 object ListTrialsRequest {
@@ -45,7 +49,8 @@ object ListTrialsRequest {
     MaxResults: Int | Double = null,
     NextToken: NextToken = null,
     SortBy: SortTrialsBy = null,
-    SortOrder: SortOrder = null
+    SortOrder: SortOrder = null,
+    TrialComponentName: ExperimentEntityName = null
   ): ListTrialsRequest = {
     val __obj = js.Dynamic.literal()
     if (CreatedAfter != null) __obj.updateDynamic("CreatedAfter")(CreatedAfter.asInstanceOf[js.Any])
@@ -55,6 +60,7 @@ object ListTrialsRequest {
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (SortBy != null) __obj.updateDynamic("SortBy")(SortBy.asInstanceOf[js.Any])
     if (SortOrder != null) __obj.updateDynamic("SortOrder")(SortOrder.asInstanceOf[js.Any])
+    if (TrialComponentName != null) __obj.updateDynamic("TrialComponentName")(TrialComponentName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTrialsRequest]
   }
 }

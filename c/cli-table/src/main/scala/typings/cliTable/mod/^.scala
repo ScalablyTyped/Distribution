@@ -1,6 +1,6 @@
 package typings.cliTable.mod
 
-import typings.std.Partial
+import typings.cliTable.PartialTableOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("cli-table", JSImport.Namespace)
 @js.native
 class ^ () extends Table {
-  def this(options: Partial[TableOptions]) = this()
+  def this(options: PartialTableOptions) = this()
 }
 
 @JSImport("cli-table", JSImport.Namespace)

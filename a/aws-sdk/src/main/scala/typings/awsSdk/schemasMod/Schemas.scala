@@ -1,6 +1,6 @@
 package typings.awsSdk.schemasMod
 
-import typings.awsSdk.AnonWaiter
+import typings.awsSdk.DescribeCodeBindingReques
 import typings.awsSdk.awsSdkStrings.codeBindingExists
 import typings.awsSdk.configMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
@@ -402,11 +402,11 @@ trait Schemas extends Service {
     * Waits for the codeBindingExists state by periodically calling the underlying Schemas.describeCodeBindingoperation every 2 seconds (at most 30 times). Wait until code binding is generated
     */
   @JSName("waitFor")
-  def waitFor_codeBindingExists(state: codeBindingExists, params: DescribeCodeBindingRequest with AnonWaiter): Request[DescribeCodeBindingResponse, AWSError] = js.native
+  def waitFor_codeBindingExists(state: codeBindingExists, params: DescribeCodeBindingReques): Request[DescribeCodeBindingResponse, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_codeBindingExists(
     state: codeBindingExists,
-    params: DescribeCodeBindingRequest with AnonWaiter,
+    params: DescribeCodeBindingReques,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeCodeBindingResponse, Unit]
   ): Request[DescribeCodeBindingResponse, AWSError] = js.native
 }

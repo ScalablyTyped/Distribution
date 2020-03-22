@@ -1,5 +1,6 @@
 package typings.jupyterlabApputils.toolbarMod.ToolbarButtonComponent
 
+import typings.jupyterlabUiComponents.labiconMod.LabIcon.IMaybeResolvable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +11,8 @@ import scala.scalajs.js.annotation._
 trait IProps extends js.Object {
   var className: js.UndefOr[String] = js.undefined
   var enabled: js.UndefOr[Boolean] = js.undefined
-  var iconClassName: js.UndefOr[String] = js.undefined
+  var icon: js.UndefOr[IMaybeResolvable] = js.undefined
+  var iconClass: js.UndefOr[String] = js.undefined
   var iconLabel: js.UndefOr[String] = js.undefined
   var label: js.UndefOr[String] = js.undefined
   var onClick: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -22,7 +24,8 @@ object IProps {
   def apply(
     className: String = null,
     enabled: js.UndefOr[Boolean] = js.undefined,
-    iconClassName: String = null,
+    icon: IMaybeResolvable = null,
+    iconClass: String = null,
     iconLabel: String = null,
     label: String = null,
     onClick: () => Unit = null,
@@ -31,7 +34,8 @@ object IProps {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (iconClassName != null) __obj.updateDynamic("iconClassName")(iconClassName.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass.asInstanceOf[js.Any])
     if (iconLabel != null) __obj.updateDynamic("iconLabel")(iconLabel.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction0(onClick))

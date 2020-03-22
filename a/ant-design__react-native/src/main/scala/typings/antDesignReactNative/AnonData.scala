@@ -5,14 +5,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonData extends js.Object {
-  var data: js.Any
-  var value: js.Any
+  var cols: Double
+  var data: js.Array[scala.Nothing]
+  var disabled: Boolean
 }
 
 object AnonData {
   @scala.inline
-  def apply(data: js.Any, value: js.Any): AnonData = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+  def apply(cols: Double, data: js.Array[scala.Nothing], disabled: Boolean): AnonData = {
+    val __obj = js.Dynamic.literal(cols = cols.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AnonData]
   }

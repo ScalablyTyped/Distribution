@@ -8,10 +8,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ActionItem extends js.Object {
-  var disabled: js.UndefOr[Boolean] = js.undefined
-  var title: String | Element
-  def onClick(e: MouseEvent[HTMLButtonElement, NativeMouseEvent]): Unit
+  var disabled: js.UndefOr[Boolean] = js.native
+  var title: String | Element = js.native
+  def onClick(e: MouseEvent[HTMLButtonElement, NativeMouseEvent]): Unit = js.native
 }
 
 object ActionItem {

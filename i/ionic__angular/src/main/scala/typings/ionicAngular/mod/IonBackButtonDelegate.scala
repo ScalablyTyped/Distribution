@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/angular", "IonBackButtonDelegate")
 @js.native
 class IonBackButtonDelegate protected ()
-  extends typings.ionicAngular.distMod.IonBackButtonDelegate {
+  extends typings.ionicAngular.ionBackButtonMod.IonBackButtonDelegate {
   def this(
     routerOutlet: typings.ionicAngular.ionRouterOutletMod.IonRouterOutlet,
     navCtrl: typings.ionicAngular.navControllerMod.NavController

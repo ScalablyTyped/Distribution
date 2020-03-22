@@ -5,7 +5,7 @@ import typings.googleapis.AnonAperture
 import typings.googleapis.AnonCanAddChildren
 import typings.googleapis.AnonDurationMillis
 import typings.googleapis.AnonHidden
-import typings.googleapis.AnonImage
+import typings.googleapis.AnonMimeType
 import typings.googleapis.AnonText
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -288,7 +288,7 @@ trait SchemaFile extends js.Object {
     * A thumbnail for the file. This will only be used if Drive cannot generate
     * a standard thumbnail.
     */
-  var thumbnail: js.UndefOr[AnonImage] = js.native
+  var thumbnail: js.UndefOr[AnonMimeType] = js.native
   /**
     * A short-lived link to the file&#39;s thumbnail. Typically lasts on the
     * order of hours. Only populated when the requesting app can access the
@@ -405,7 +405,7 @@ object SchemaFile {
     sharingUser: SchemaUser = null,
     spaces: js.Array[String] = null,
     teamDriveId: String = null,
-    thumbnail: AnonImage = null,
+    thumbnail: AnonMimeType = null,
     thumbnailLink: String = null,
     thumbnailVersion: String = null,
     title: String = null,

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/angular", "ModalController")
 @js.native
 class ModalController protected ()
-  extends typings.ionicAngular.distMod.ModalController {
+  extends typings.ionicAngular.modalControllerMod.ModalController {
   def this(
     angularDelegate: typings.ionicAngular.angularDelegateMod.AngularDelegate,
     resolver: ComponentFactoryResolver,

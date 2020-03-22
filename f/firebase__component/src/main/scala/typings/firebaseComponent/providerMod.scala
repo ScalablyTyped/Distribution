@@ -35,7 +35,6 @@ object providerMod extends js.Object {
       ] = js.native
     def getComponent(): Component[T] | Null = js.native
     def getImmediate(): /* import warning: importer.ImportType#apply Failed type conversion: @firebase/component.@firebase/component/dist/src/types.NameServiceMapping[T] */ js.Any = js.native
-    def getImmediate(options: AnonFalse): /* import warning: importer.ImportType#apply Failed type conversion: @firebase/component.@firebase/component/dist/src/types.NameServiceMapping[T] */ js.Any = js.native
     /**
       *
       * @param options.identifier A provider can provide mulitple instances of a service
@@ -45,6 +44,7 @@ object providerMod extends js.Object {
       * If optional is true, the method returns null if the service is not immediately available.
       */
     def getImmediate(options: AnonIdentifier): (/* import warning: importer.ImportType#apply Failed type conversion: @firebase/component.@firebase/component/dist/src/types.NameServiceMapping[T] */ js.Any) | Null = js.native
+    def getImmediate(options: AnonOptional): /* import warning: importer.ImportType#apply Failed type conversion: @firebase/component.@firebase/component/dist/src/types.NameServiceMapping[T] */ js.Any = js.native
     def isComponentSet(): Boolean = js.native
     def setComponent(component: Component[T]): Unit = js.native
   }

@@ -1,7 +1,7 @@
 package typings.primereact.autocompleteAutoCompleteMod
 
 import typings.primereact.AnonOriginalEvent
-import typings.primereact.AnonOriginalEventValue
+import typings.primereact.AnonValue
 import typings.primereact.tooltipOptionsMod.TooltipOptions
 import typings.react.mod._Global_.JSX.Element
 import typings.std.Event_
@@ -30,7 +30,7 @@ trait AutoCompleteProps extends js.Object {
   var multiple: js.UndefOr[Boolean] = js.undefined
   var name: js.UndefOr[String] = js.undefined
   var onBlur: js.UndefOr[js.Function1[/* event */ Event_, Unit]] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* e */ AnonOriginalEventValue, Unit]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* e */ AnonValue, Unit]] = js.undefined
   var onClear: js.UndefOr[js.Function1[/* event */ Event_, Unit]] = js.undefined
   var onClick: js.UndefOr[js.Function1[/* event */ Event_, Unit]] = js.undefined
   var onContextMenu: js.UndefOr[js.Function1[/* event */ Event_, Unit]] = js.undefined
@@ -40,8 +40,8 @@ trait AutoCompleteProps extends js.Object {
   var onKeyPress: js.UndefOr[js.Function1[/* event */ Event_, Unit]] = js.undefined
   var onKeyUp: js.UndefOr[js.Function1[/* event */ Event_, Unit]] = js.undefined
   var onMouseDown: js.UndefOr[js.Function1[/* event */ Event_, Unit]] = js.undefined
-  var onSelect: js.UndefOr[js.Function1[/* e */ AnonOriginalEventValue, Unit]] = js.undefined
-  var onUnselect: js.UndefOr[js.Function1[/* e */ AnonOriginalEventValue, Unit]] = js.undefined
+  var onSelect: js.UndefOr[js.Function1[/* e */ AnonValue, Unit]] = js.undefined
+  var onUnselect: js.UndefOr[js.Function1[/* e */ AnonValue, Unit]] = js.undefined
   var placeholder: js.UndefOr[String] = js.undefined
   var readonly: js.UndefOr[Boolean] = js.undefined
   var scrollHeight: js.UndefOr[String] = js.undefined
@@ -79,7 +79,7 @@ object AutoCompleteProps {
     multiple: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
     onBlur: /* event */ Event_ => Unit = null,
-    onChange: /* e */ AnonOriginalEventValue => Unit = null,
+    onChange: /* e */ AnonValue => Unit = null,
     onClear: /* event */ Event_ => Unit = null,
     onClick: /* event */ Event_ => Unit = null,
     onContextMenu: /* event */ Event_ => Unit = null,
@@ -89,8 +89,8 @@ object AutoCompleteProps {
     onKeyPress: /* event */ Event_ => Unit = null,
     onKeyUp: /* event */ Event_ => Unit = null,
     onMouseDown: /* event */ Event_ => Unit = null,
-    onSelect: /* e */ AnonOriginalEventValue => Unit = null,
-    onUnselect: /* e */ AnonOriginalEventValue => Unit = null,
+    onSelect: /* e */ AnonValue => Unit = null,
+    onUnselect: /* e */ AnonValue => Unit = null,
     placeholder: String = null,
     readonly: js.UndefOr[Boolean] = js.undefined,
     scrollHeight: String = null,

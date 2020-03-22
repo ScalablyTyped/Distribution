@@ -15,8 +15,8 @@ trait UploadProgress extends js.Object {
     */
   var current: Double
   /**
-    * Whether the upload has started. If this is false both current and total will be
-    * set to 0.
+    * Whether the upload has started. If this is false both `current` and `total` will
+    * be set to 0.
     */
   var started: Boolean
   /**

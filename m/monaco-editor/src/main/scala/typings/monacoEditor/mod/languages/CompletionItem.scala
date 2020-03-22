@@ -1,5 +1,6 @@
 package typings.monacoEditor.mod.languages
 
+import typings.monacoEditor.AnonInsert
 import typings.monacoEditor.mod.IMarkdownString
 import typings.monacoEditor.mod.IRange
 import typings.monacoEditor.mod.editor.ISingleEditOperation
@@ -41,7 +42,7 @@ trait CompletionItem extends js.Object {
   var filterText: js.UndefOr[String] = js.undefined
   /**
     * A string or snippet that should be inserted in a document when selecting
-    * this completion.
+    * this completion. When `falsy` the [label](#CompletionItem.label)
     * is used.
     */
   var insertText: String
@@ -60,7 +61,7 @@ trait CompletionItem extends js.Object {
     * this is also the text that is inserted when selecting
     * this completion.
     */
-  var label: String
+  var label: String | CompletionItemLabel
   /**
     * Select this item when showing. *Note* that only one completion item can be selected and
     * that the editor decides which item that is. The rule is that the *first* item of those
@@ -76,7 +77,7 @@ trait CompletionItem extends js.Object {
     * *Note:* The range must be a [single line](#Range.isSingleLine) and it must
     * [contain](#Range.contains) the position at which completion has been [requested](#CompletionItemProvider.provideCompletionItems).
     */
-  var range: IRange
+  var range: IRange | AnonInsert
   /**
     * A string that should be used when comparing this item
     * with other items. When `falsy` the [label](#CompletionItem.label)
@@ -95,8 +96,8 @@ object CompletionItem {
   def apply(
     insertText: String,
     kind: CompletionItemKind,
-    label: String,
-    range: IRange,
+    label: String | CompletionItemLabel,
+    range: IRange | AnonInsert,
     additionalTextEdits: js.Array[ISingleEditOperation] = null,
     command: Command = null,
     commitCharacters: js.Array[String] = null,

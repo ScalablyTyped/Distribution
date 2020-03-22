@@ -1,9 +1,9 @@
 package typings.antdMobileRn.cardIndexNativeMod
 
 import typings.antdMobileRn.AnonFull
-import typings.antdMobileRn.TypeofClassCardBody
-import typings.antdMobileRn.TypeofClassCardFooter
-import typings.antdMobileRn.TypeofClassCardHeader
+import typings.antdMobileRn.TypeofCardBody
+import typings.antdMobileRn.TypeofCardFooter
+import typings.antdMobileRn.TypeofCardHeader
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +16,9 @@ class default () extends Card
 @JSImport("antd-mobile-rn/lib/card/index.native", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var Body: TypeofClassCardBody = js.native
-  var Footer: TypeofClassCardFooter = js.native
-  var Header: TypeofClassCardHeader = js.native
+  var Body: TypeofCardBody = js.native
+  var Footer: TypeofCardFooter = js.native
+  var Header: TypeofCardHeader = js.native
   var defaultProps: AnonFull = js.native
 }
 

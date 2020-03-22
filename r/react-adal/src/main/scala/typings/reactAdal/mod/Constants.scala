@@ -1,8 +1,8 @@
 package typings.reactAdal.mod
 
 import typings.reactAdal.Anon0
-import typings.reactAdal.Anon01
 import typings.reactAdal.AnonACCESSTOKENKEY
+import typings.reactAdal.AnonERROR
 import typings.reactAdal.reactAdalNumbers.`483`
 import typings.reactAdal.reactAdalNumbers.`600`
 import typings.reactAdal.reactAdalStrings.Canceled
@@ -24,9 +24,9 @@ trait Constants extends js.Object {
   var ERROR_DESCRIPTION: error_description
   var EXPIRES_IN: expires_in
   var ID_TOKEN: id_token
-  var LEVEL_STRING_MAP: Anon01
+  var LEVEL_STRING_MAP: Anon0
   var LOADFRAME_TIMEOUT: `6000`
-  var LOGGING_LEVEL: Anon0
+  var LOGGING_LEVEL: AnonERROR
   var POPUP_HEIGHT: `600`
   var POPUP_WIDTH: `483`
   var RESOURCE_DELIMETER: Verticalline
@@ -44,9 +44,9 @@ object Constants {
     ERROR_DESCRIPTION: error_description,
     EXPIRES_IN: expires_in,
     ID_TOKEN: id_token,
-    LEVEL_STRING_MAP: Anon01,
+    LEVEL_STRING_MAP: Anon0,
     LOADFRAME_TIMEOUT: `6000`,
-    LOGGING_LEVEL: Anon0,
+    LOGGING_LEVEL: AnonERROR,
     POPUP_HEIGHT: `600`,
     POPUP_WIDTH: `483`,
     RESOURCE_DELIMETER: Verticalline,

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/angular", "Platform")
 @js.native
 class Platform protected ()
-  extends typings.ionicAngular.distMod.Platform {
+  extends typings.ionicAngular.platformMod.Platform {
   def this(doc: js.Any, zone: NgZone) = this()
 }
 

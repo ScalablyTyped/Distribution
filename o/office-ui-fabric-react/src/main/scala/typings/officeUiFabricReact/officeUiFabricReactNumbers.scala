@@ -1,7 +1,6 @@
 package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.directionalHintMod.DirectionalHint
-import typings.officeUiFabricReact.focusZoneTypesMod.FocusZoneTabbableElements
 import typings.officeUiFabricReact.listTypesMod.ScrollToMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,13 +10,11 @@ object officeUiFabricReactNumbers {
   @js.native
   sealed trait `0`
     extends DirectionalHint
-       with FocusZoneTabbableElements
        with ScrollToMode
   
   @js.native
   sealed trait `1`
     extends DirectionalHint
-       with FocusZoneTabbableElements
        with ScrollToMode
   
   @js.native
@@ -155,7 +152,6 @@ object officeUiFabricReactNumbers {
   @js.native
   sealed trait `2`
     extends DirectionalHint
-       with FocusZoneTabbableElements
        with ScrollToMode
   
   @js.native

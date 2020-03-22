@@ -6,12 +6,13 @@ import typings.std.HTMLVideoElement
 import typings.std.ImageData
 import typings.three.constantsMod.Mapping
 import typings.three.constantsMod.PixelFormat
+import typings.three.constantsMod.PixelFormatGPU
 import typings.three.constantsMod.TextureDataType
 import typings.three.constantsMod.TextureEncoding
 import typings.three.constantsMod.TextureFilter
 import typings.three.constantsMod.Wrapping
 import typings.three.eventDispatcherMod.EventDispatcher
-import typings.three.vector2Mod.Vector
+import typings.three.threeBooleans.`true`
 import typings.three.vector2Mod.Vector2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -42,6 +43,8 @@ object textureMod extends js.Object {
     var generateMipmaps: Boolean = js.native
     var id: Double = js.native
     var image: js.Any = js.native
+    var internalFormat: PixelFormatGPU | Null = js.native
+    val isTexture: `true` = js.native
     var magFilter: TextureFilter = js.native
     var mapping: Mapping = js.native
     var minFilter: TextureFilter = js.native
@@ -64,7 +67,7 @@ object textureMod extends js.Object {
     def dispose(): Unit = js.native
     def onUpdate(): Unit = js.native
     def toJSON(meta: js.Any): js.Any = js.native
-    def transformUv(uv: Vector): Unit = js.native
+    def transformUv(uv: Vector2): Vector2 = js.native
   }
   
   var TextureIdCount: Double = js.native

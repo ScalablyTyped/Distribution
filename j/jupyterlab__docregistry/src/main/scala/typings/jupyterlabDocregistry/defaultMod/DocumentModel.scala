@@ -1,11 +1,15 @@
 package typings.jupyterlabDocregistry.defaultMod
 
+import typings.jupyterlabCodeeditor.editorMod.CodeEditor.ITextSelection
 import typings.jupyterlabCodeeditor.mod.CodeEditor.Model
 import typings.jupyterlabCoreutils.interfacesMod.IChangedArgs
 import typings.jupyterlabDocregistry.registryMod.DocumentRegistry.IModel
 import typings.jupyterlabObservables.modeldbMod.IModelDB
-import typings.phosphorCoreutils.jsonMod.JSONValue
-import typings.phosphorSignaling.mod.ISignal
+import typings.jupyterlabObservables.observablemapMod.IObservableMap
+import typings.jupyterlabObservables.observablestringMod.IObservableString
+import typings.luminoCoreutils.jsonMod.PartialJSONValue
+import typings.luminoCoreutils.jsonMod.ReadonlyPartialJSONValue
+import typings.luminoSignaling.mod.ISignal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -76,7 +80,35 @@ class DocumentModel ()
     * A signal emitted when the model state changes.
     */
   /* CompleteClass */
-  override var stateChanged: ISignal[this.type, IChangedArgs[_, String]] = js.native
+  override var stateChanged: ISignal[this.type, IChangedArgs[_, _, String]] = js.native
+  /**
+    * A signal emitted when the document content changes.
+    */
+  @JSName("contentChanged")
+  def contentChanged_MDocumentModel(): ISignal[this.type, Unit] = js.native
+  /**
+    * The default kernel language of the document.
+    *
+    * #### Notes
+    * This is a read-only property.
+    */
+  @JSName("defaultKernelLanguage")
+  def defaultKernelLanguage_MDocumentModel(): String = js.native
+  /**
+    * The default kernel name of the document.
+    *
+    * #### Notes
+    * This is a read-only property.
+    */
+  @JSName("defaultKernelName")
+  def defaultKernelName_MDocumentModel(): String = js.native
+  /**
+    * The dirty state of the document.
+    */
+  @JSName("dirty")
+  def dirty_MDocumentModel(): Boolean = js.native
+  @JSName("dirty")
+  def dirty_MDocumentModel(newValue: Boolean): js.Any = js.native
   /**
     * Dispose of the resources held by the object.
     *
@@ -97,14 +129,7 @@ class DocumentModel ()
     * Should emit a [contentChanged] signal.
     */
   /* CompleteClass */
-  override def fromJSON(value: js.Any): Unit = js.native
-  /**
-    * Deserialize the model from JSON.
-    *
-    * #### Notes
-    * Should emit a [contentChanged] signal.
-    */
-  def fromJSON(value: JSONValue): Unit = js.native
+  override def fromJSON(value: ReadonlyPartialJSONValue): Unit = js.native
   /**
     * Deserialize the model from a string.
     *
@@ -123,10 +148,49 @@ class DocumentModel ()
   /* CompleteClass */
   override def initialize(): Unit = js.native
   /**
+    * Whether the model is disposed.
+    */
+  /* InferMemberOverrides */
+  @JSName("isDisposed")
+  override def isDisposed_MModel_(): Boolean = js.native
+  /**
+    * A signal emitted when a mimetype changes.
+    */
+  /* InferMemberOverrides */
+  @JSName("mimeTypeChanged")
+  override def mimeTypeChanged_MModel_(): ISignal[this.type, IChangedArgs[String, String, String]] = js.native
+  /**
+    * A mime type of the model.
+    */
+  /* InferMemberOverrides */
+  @JSName("mimeType")
+  override def mimeType_MModel_(): String = js.native
+  /* InferMemberOverrides */
+  @JSName("mimeType")
+  override def mimeType_MModel_(newValue: String): js.Any = js.native
+  /**
+    * The read only state of the document.
+    */
+  @JSName("readOnly")
+  def readOnly_MDocumentModel(): Boolean = js.native
+  @JSName("readOnly")
+  def readOnly_MDocumentModel(newValue: Boolean): js.Any = js.native
+  /**
+    * Get the selections for the model.
+    */
+  /* InferMemberOverrides */
+  @JSName("selections")
+  override def selections_MModel_(): IObservableMap[js.Array[ITextSelection]] = js.native
+  /**
+    * A signal emitted when the document state changes.
+    */
+  @JSName("stateChanged")
+  def stateChanged_MDocumentModel(): ISignal[this.type, IChangedArgs[_, _, String]] = js.native
+  /**
     * Serialize the model to JSON.
     */
   /* CompleteClass */
-  override def toJSON(): JSONValue = js.native
+  override def toJSON(): PartialJSONValue = js.native
   /**
     * Trigger a content changed signal.
     */
@@ -134,6 +198,12 @@ class DocumentModel ()
   /**
     * Trigger a state change signal.
     */
-  /* protected */ def triggerStateChange(args: IChangedArgs[_, String]): Unit = js.native
+  /* protected */ def triggerStateChange(args: IChangedArgs[_, _, String]): Unit = js.native
+  /**
+    * Get the value of the model.
+    */
+  /* InferMemberOverrides */
+  @JSName("value")
+  override def value_MModel_(): IObservableString = js.native
 }
 

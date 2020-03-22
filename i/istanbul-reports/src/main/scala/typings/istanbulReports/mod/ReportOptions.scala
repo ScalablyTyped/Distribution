@@ -1,7 +1,7 @@
 package typings.istanbulReports.mod
 
-import typings.istanbulReports.AnonBlockName
-import typings.istanbulReports.AnonMaxCols
+import typings.istanbulReports.OptionsblockNamestring
+import typings.istanbulReports.OptionsmaxColsnumber
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,8 +14,8 @@ trait ReportOptions extends js.Object {
   var `json-summary`: Options
   var lcovonly: Options
   var none: RootedOptions
-  var teamcity: Options with AnonBlockName
-  var text: Options with AnonMaxCols
+  var teamcity: OptionsblockNamestring
+  var text: OptionsmaxColsnumber
   var `text-lcov`: Options
   var `text-summary`: Options
 }
@@ -30,8 +30,8 @@ object ReportOptions {
     `json-summary`: Options,
     lcovonly: Options,
     none: RootedOptions,
-    teamcity: Options with AnonBlockName,
-    text: Options with AnonMaxCols,
+    teamcity: OptionsblockNamestring,
+    text: OptionsmaxColsnumber,
     `text-lcov`: Options,
     `text-summary`: Options
   ): ReportOptions = {

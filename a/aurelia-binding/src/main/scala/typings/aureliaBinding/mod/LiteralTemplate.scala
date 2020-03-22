@@ -1,6 +1,6 @@
 package typings.aureliaBinding.mod
 
-import typings.aureliaBinding.AnonRaw
+import typings.aureliaBinding.ArraystringrawArraystring
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,7 +35,7 @@ class LiteralTemplate protected () extends Expression {
     * then this counts as a NoSubstituteTemplate - functionally equivalent
     * to a LiteralString, unless it's tagged.
     */
-  var cooked: js.Array[String] with AnonRaw = js.native
+  var cooked: ArraystringrawArraystring = js.native
   /**
     * The expressions within the template (the parts between `${` and `}`)
     */

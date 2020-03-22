@@ -1,6 +1,6 @@
 package typings.cathoQuantum.radioGroupMod
 
-import typings.cathoQuantum.AnonColors
+import typings.cathoQuantum.AnonColorsSpacing
 import typings.react.mod.ChangeEvent
 import typings.react.mod.ChangeEventHandler
 import scala.scalajs.js
@@ -13,7 +13,7 @@ trait RadioProps[T] extends js.Object {
   var error: js.UndefOr[Boolean] = js.undefined
   var label: js.UndefOr[String] = js.undefined
   var onChange: js.UndefOr[ChangeEventHandler[T]] = js.undefined
-  var theme: js.UndefOr[AnonColors] = js.undefined
+  var theme: js.UndefOr[AnonColorsSpacing] = js.undefined
   var value: String
 }
 
@@ -26,7 +26,7 @@ object RadioProps {
     error: js.UndefOr[Boolean] = js.undefined,
     label: String = null,
     onChange: ChangeEvent[T] => Unit = null,
-    theme: AnonColors = null
+    theme: AnonColorsSpacing = null
   ): RadioProps[T] = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])

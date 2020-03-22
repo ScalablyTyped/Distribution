@@ -1,6 +1,6 @@
 package typings.fabric.fabricImplMod
 
-import typings.fabric.AnonHeightLeft
+import typings.fabric.AnonTop
 import typings.fabric.AnonX
 import typings.std.SVGElement
 import scala.scalajs.js
@@ -34,7 +34,7 @@ class Polyline protected () extends Object {
   	 * @return {Object} object.width distance between X coordinates of the polygon leftmost and rightmost point
   	 * @return {Object} object.height distance between Y coordinates of the polygon topmost and bottommost point
   	 */
-  def _calcDimensions(): AnonHeightLeft = js.native
+  def _calcDimensions(): AnonTop = js.native
 }
 
 /* static members */

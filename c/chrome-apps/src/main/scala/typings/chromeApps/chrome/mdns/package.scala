@@ -6,11 +6,6 @@ import scala.scalajs.js.annotation._
 
 package object mdns {
   /**
-    * Dictionary
-    * [key in ValidServiceTypes]: string
-    */
-  type ServiceTypes = typings.std.Record[typings.chromeApps.chrome.mdns.ValidServiceTypes, java.lang.String]
-  /**
     * Locked to this because it's the only one that can be used.
     *
     * const char kEventFilterServiceTypeKey[] = "serviceType";

@@ -1,7 +1,7 @@
 package typings.gapiClientClouderrorreporting.gapi.client.clouderrorreporting
 
 import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientClouderrorreporting.AnonAccesstokenAlt
+import typings.gapiClientClouderrorreporting.AnonAlt
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,13 +11,13 @@ trait ProjectsResource extends js.Object {
   var groupStats: GroupStatsResource
   var groups: GroupsResource
   /** Deletes all error events of a given project. */
-  def deleteEvents(request: AnonAccesstokenAlt): Request_[js.Object]
+  def deleteEvents(request: AnonAlt): Request_[js.Object]
 }
 
 object ProjectsResource {
   @scala.inline
   def apply(
-    deleteEvents: AnonAccesstokenAlt => Request_[js.Object],
+    deleteEvents: AnonAlt => Request_[js.Object],
     events: EventsResource,
     groupStats: GroupStatsResource,
     groups: GroupsResource

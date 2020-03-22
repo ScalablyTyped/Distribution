@@ -6,8 +6,9 @@ import scala.scalajs.js.annotation._
 
 trait AnonName extends js.Object {
   /**
+  			Filename.
+  			Mutually exclusive with the `extension` option.
   			_You usually won't need this option. Specify it only when actually needed._
-  			Filename. Mutually exclusive with the `extension` option.
   			*/
   val name: js.UndefOr[String] = js.undefined
 }

@@ -7,6 +7,7 @@ import typings.reactNativeNavigation.reactNativeNavigationStrings.black
 import typings.reactNativeNavigation.reactNativeNavigationStrings.default
 import typings.reactNativeNavigation.reactNativeNavigationStrings.onSwitchToTab
 import typings.reactNativeNavigation.reactNativeNavigationStrings.showWhenActive
+import typings.reactNativeNavigation.reactNativeNavigationStrings.showWhenActiveForce
 import typings.reactNativeNavigation.reactNativeNavigationStrings.together
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -51,6 +52,12 @@ trait OptionsBottomTabs extends js.Object {
     */
   var hideShadow: js.UndefOr[Boolean] = js.undefined
   /**
+    * Use large icons when possible, even when three tabs without titles are displayed
+    * #### (android specific)
+    * @default false
+    */
+  var preferLargeIcons: js.UndefOr[Boolean] = js.undefined
+  /**
     * Set when tabs are attached to hierarchy consequently when the
     * RootView's constructor is called.
     */
@@ -63,7 +70,7 @@ trait OptionsBottomTabs extends js.Object {
     * Control the text display mode below the tab icon
     * #### (Android specific)
     */
-  var titleDisplayMode: js.UndefOr[alwaysShow | showWhenActive | alwaysHide] = js.undefined
+  var titleDisplayMode: js.UndefOr[alwaysShow | showWhenActive | alwaysHide | showWhenActiveForce] = js.undefined
   /**
     * Allows the Bottom Tabs to be translucent (blurred)
     * #### (iOS specific)
@@ -86,9 +93,10 @@ object OptionsBottomTabs {
     drawBehind: js.UndefOr[Boolean] = js.undefined,
     elevation: Int | Double = null,
     hideShadow: js.UndefOr[Boolean] = js.undefined,
+    preferLargeIcons: js.UndefOr[Boolean] = js.undefined,
     tabsAttachMode: together | afterInitialTab | onSwitchToTab = null,
     testID: String = null,
-    titleDisplayMode: alwaysShow | showWhenActive | alwaysHide = null,
+    titleDisplayMode: alwaysShow | showWhenActive | alwaysHide | showWhenActiveForce = null,
     translucent: js.UndefOr[Boolean] = js.undefined,
     visible: js.UndefOr[Boolean] = js.undefined
   ): OptionsBottomTabs = {
@@ -101,6 +109,7 @@ object OptionsBottomTabs {
     if (!js.isUndefined(drawBehind)) __obj.updateDynamic("drawBehind")(drawBehind.asInstanceOf[js.Any])
     if (elevation != null) __obj.updateDynamic("elevation")(elevation.asInstanceOf[js.Any])
     if (!js.isUndefined(hideShadow)) __obj.updateDynamic("hideShadow")(hideShadow.asInstanceOf[js.Any])
+    if (!js.isUndefined(preferLargeIcons)) __obj.updateDynamic("preferLargeIcons")(preferLargeIcons.asInstanceOf[js.Any])
     if (tabsAttachMode != null) __obj.updateDynamic("tabsAttachMode")(tabsAttachMode.asInstanceOf[js.Any])
     if (testID != null) __obj.updateDynamic("testID")(testID.asInstanceOf[js.Any])
     if (titleDisplayMode != null) __obj.updateDynamic("titleDisplayMode")(titleDisplayMode.asInstanceOf[js.Any])

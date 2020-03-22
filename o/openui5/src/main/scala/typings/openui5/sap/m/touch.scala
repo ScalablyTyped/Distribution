@@ -1,7 +1,7 @@
 package typings.openui5.sap.m
 
 import typings.jquery.JQueryStatic
-import typings.openui5.AnonTouchInitDict
+import typings.openui5.AnonInstantiable
 import typings.openui5.sap.ui.core.Element
 import typings.std.TouchList
 import scala.scalajs.js
@@ -28,6 +28,6 @@ object touch extends js.Object {
     * finger in the touch session.
     * @returns The touch matching if any.
     */
-  def find(oTouchList: TouchList, oTouch: AnonTouchInitDict): js.Any = js.native
+  def find(oTouchList: TouchList, oTouch: AnonInstantiable): js.Any = js.native
 }
 

@@ -21,12 +21,12 @@ object utilMod extends js.Object {
   def noop(): Unit = js.native
   def setStyle(
     elem: HTMLElement,
-    styleProperty: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 756 */ js.Any,
+    styleProperty: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 759 */ js.Any,
     value: String
   ): Unit = js.native
   def setStyle(
     elem: HTMLElement,
-    styleProperty: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 756 */ js.Any,
+    styleProperty: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 759 */ js.Any,
     value: Double
   ): Unit = js.native
 }

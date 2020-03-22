@@ -1,9 +1,8 @@
 package typings.jupyterlabServices.libManagerMod.ServiceManager
 
-import typings.jupyterlabServices.kernelKernelMod.Kernel.ISpecModels
 import typings.jupyterlabServices.serverconnectionMod.ServerConnection.ISettings
-import typings.phosphorDisposable.mod.IDisposable
-import typings.phosphorSignaling.mod.ISignal
+import typings.luminoDisposable.mod.IDisposable
+import typings.luminoSignaling.mod.ISignal
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -30,6 +29,10 @@ trait IManager extends IDisposable {
     */
   val isReady: Boolean
   /**
+    * The session manager for the manager.
+    */
+  val kernelspecs: typings.jupyterlabServices.kernelspecKernelspecMod.IManager
+  /**
     * The nbconvert manager for the manager.
     */
   val nbconvert: typings.jupyterlabServices.nbconvertMod.NbConvert.IManager
@@ -44,23 +47,15 @@ trait IManager extends IDisposable {
   /**
     * The session manager for the manager.
     */
-  val sessions: typings.jupyterlabServices.sessionSessionMod.Session.IManager
+  val sessions: typings.jupyterlabServices.sessionSessionMod.IManager
   /**
     * The setting manager for the manager.
     */
   val settings: typings.jupyterlabServices.settingMod.Setting.IManager
   /**
-    * The kernel spec models.
-    */
-  val specs: ISpecModels | Null
-  /**
-    * A signal emitted when the kernel specs change.
-    */
-  val specsChanged: ISignal[IManager, ISpecModels]
-  /**
     * The terminals manager for the manager.
     */
-  val terminals: typings.jupyterlabServices.terminalTerminalMod.TerminalSession.IManager
+  val terminals: typings.jupyterlabServices.terminalTerminalMod.IManager
   /**
     * The workspace manager for the manager.
     */
@@ -76,18 +71,17 @@ object IManager {
     dispose: () => Unit,
     isDisposed: Boolean,
     isReady: Boolean,
+    kernelspecs: typings.jupyterlabServices.kernelspecKernelspecMod.IManager,
     nbconvert: typings.jupyterlabServices.nbconvertMod.NbConvert.IManager,
     ready: js.Promise[Unit],
     serverSettings: ISettings,
-    sessions: typings.jupyterlabServices.sessionSessionMod.Session.IManager,
+    sessions: typings.jupyterlabServices.sessionSessionMod.IManager,
     settings: typings.jupyterlabServices.settingMod.Setting.IManager,
-    specsChanged: ISignal[IManager, ISpecModels],
-    terminals: typings.jupyterlabServices.terminalTerminalMod.TerminalSession.IManager,
-    workspaces: typings.jupyterlabServices.workspaceMod.Workspace.IManager,
-    specs: ISpecModels = null
+    terminals: typings.jupyterlabServices.terminalTerminalMod.IManager,
+    workspaces: typings.jupyterlabServices.workspaceMod.Workspace.IManager
   ): IManager = {
-    val __obj = js.Dynamic.literal(builder = builder.asInstanceOf[js.Any], connectionFailure = connectionFailure.asInstanceOf[js.Any], contents = contents.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), isDisposed = isDisposed.asInstanceOf[js.Any], isReady = isReady.asInstanceOf[js.Any], nbconvert = nbconvert.asInstanceOf[js.Any], ready = ready.asInstanceOf[js.Any], serverSettings = serverSettings.asInstanceOf[js.Any], sessions = sessions.asInstanceOf[js.Any], settings = settings.asInstanceOf[js.Any], specsChanged = specsChanged.asInstanceOf[js.Any], terminals = terminals.asInstanceOf[js.Any], workspaces = workspaces.asInstanceOf[js.Any])
-    if (specs != null) __obj.updateDynamic("specs")(specs.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(builder = builder.asInstanceOf[js.Any], connectionFailure = connectionFailure.asInstanceOf[js.Any], contents = contents.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), isDisposed = isDisposed.asInstanceOf[js.Any], isReady = isReady.asInstanceOf[js.Any], kernelspecs = kernelspecs.asInstanceOf[js.Any], nbconvert = nbconvert.asInstanceOf[js.Any], ready = ready.asInstanceOf[js.Any], serverSettings = serverSettings.asInstanceOf[js.Any], sessions = sessions.asInstanceOf[js.Any], settings = settings.asInstanceOf[js.Any], terminals = terminals.asInstanceOf[js.Any], workspaces = workspaces.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[IManager]
   }
 }

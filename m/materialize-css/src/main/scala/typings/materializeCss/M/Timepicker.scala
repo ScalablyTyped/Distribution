@@ -1,10 +1,10 @@
 package typings.materializeCss.M
 
 import typings.materializeCss.MElements
+import typings.materializeCss.PartialTimepickerOptions
 import typings.materializeCss.materializeCssStrings.hours
 import typings.materializeCss.materializeCssStrings.minutes
 import typings.std.Element
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -50,11 +50,11 @@ object Timepicker extends js.Object {
     * Init Timepickers
     */
   def init(els: MElements): js.Array[Timepicker] = js.native
-  def init(els: MElements, options: Partial[TimepickerOptions]): js.Array[Timepicker] = js.native
+  def init(els: MElements, options: PartialTimepickerOptions): js.Array[Timepicker] = js.native
   /**
     * Init Timepicker
     */
   def init(els: Element): Timepicker = js.native
-  def init(els: Element, options: Partial[TimepickerOptions]): Timepicker = js.native
+  def init(els: Element, options: PartialTimepickerOptions): Timepicker = js.native
 }
 

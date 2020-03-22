@@ -18,7 +18,6 @@ package object mod {
     scala.Unit
   ]
   type PropIdCallback = js.Function0[java.lang.String]
-  type RouteConfiguration = typings.reactRouter.mod.RouteProps with typings.rrc.AnonInject
   type WhenActiveReturnType[Props] = js.Function1[
     /* component */ typings.rrc.mod.ComponentConstructor[Props], 
     typings.rrc.mod.ComponentConstructor[Props]

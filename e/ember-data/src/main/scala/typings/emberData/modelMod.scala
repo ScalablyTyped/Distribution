@@ -81,8 +81,8 @@ object modelMod extends js.Object {
       * Iterates through the attributes of the model, calling the passed function on each
       * attribute.
       */
-    def eachAttribute[Class /* <: TypeofClassModelAttributes */, M /* <: InstanceType[Class] */](callback: js.Function2[/* name */ ModelKeys[M], /* meta */ AttributeMeta[M], Unit]): Unit = js.native
-    def eachAttribute[Class /* <: TypeofClassModelAttributes */, M /* <: InstanceType[Class] */](
+    def eachAttribute[Class /* <: TypeofModelInstantiable */, M /* <: InstanceType[Class] */](callback: js.Function2[/* name */ ModelKeys[M], /* meta */ AttributeMeta[M], Unit]): Unit = js.native
+    def eachAttribute[Class /* <: TypeofModelInstantiable */, M /* <: InstanceType[Class] */](
       callback: js.Function2[/* name */ ModelKeys[M], /* meta */ AttributeMeta[M], Unit],
       binding: js.Any
     ): Unit = js.native
@@ -109,8 +109,8 @@ object modelMod extends js.Object {
       * the passed function on each attribute. Note the callback will not be
       * called for any attributes that do not have an transformation type.
       */
-    def eachTransformedAttribute[Class /* <: TypeofClassModelAttributes */](callback: js.Function2[/* name */ ModelKeys[InstanceType[Class]], /* type */ String, Unit]): Unit = js.native
-    def eachTransformedAttribute[Class /* <: TypeofClassModelAttributes */](
+    def eachTransformedAttribute[Class /* <: TypeofModelInstantiable */](callback: js.Function2[/* name */ ModelKeys[InstanceType[Class]], /* type */ String, Unit]): Unit = js.native
+    def eachTransformedAttribute[Class /* <: TypeofModelInstantiable */](
       callback: js.Function2[/* name */ ModelKeys[InstanceType[Class]], /* type */ String, Unit],
       binding: js.Any
     ): Unit = js.native

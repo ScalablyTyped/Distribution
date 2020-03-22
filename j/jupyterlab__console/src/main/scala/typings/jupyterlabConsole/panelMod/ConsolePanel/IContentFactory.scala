@@ -2,7 +2,7 @@ package typings.jupyterlabConsole.panelMod.ConsolePanel
 
 import org.scalablytyped.runtime.TopLevel
 import typings.jupyterlabConsole.widgetMod.CodeConsole
-import typings.phosphorCoreutils.mod.Token
+import typings.luminoCoreutils.mod.Token
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

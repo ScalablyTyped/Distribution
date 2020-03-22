@@ -1,7 +1,7 @@
 
 # Scala.js typings for lower-case
 
-Typings are for version 1.1.4
+Typings are for version 2.0.1
 
 ## Library description:
 Transforms the string to lower case

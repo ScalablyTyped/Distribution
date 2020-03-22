@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@nivo/pie" : "0.59.1"
+      "@nivo/pie" : "0.61.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@nivo/pie" : "0.59.1"
+      "@nivo/pie" : "0.61.1"
     }
   ],
   "compile-devDependencies" : [

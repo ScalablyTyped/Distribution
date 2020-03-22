@@ -5,14 +5,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonMode extends js.Object {
+  var minuteStep: Double
   var mode: String
-  def onPress(): Unit
+  var triggerType: String
 }
 
 object AnonMode {
   @scala.inline
-  def apply(mode: String, onPress: () => Unit): AnonMode = {
-    val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any], onPress = js.Any.fromFunction0(onPress))
+  def apply(minuteStep: Double, mode: String, triggerType: String): AnonMode = {
+    val __obj = js.Dynamic.literal(minuteStep = minuteStep.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], triggerType = triggerType.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AnonMode]
   }

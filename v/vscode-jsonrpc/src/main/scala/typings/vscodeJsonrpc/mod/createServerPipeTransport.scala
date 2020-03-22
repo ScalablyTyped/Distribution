@@ -1,5 +1,6 @@
 package typings.vscodeJsonrpc.mod
 
+import typings.node.BufferEncoding
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +12,7 @@ object createServerPipeTransport extends js.Object {
     typings.vscodeJsonrpc.messageReaderMod.MessageReader, 
     typings.vscodeJsonrpc.messageWriterMod.MessageWriter
   ] = js.native
-  def apply(pipeName: String, encoding: String): js.Tuple2[
+  def apply(pipeName: String, encoding: BufferEncoding): js.Tuple2[
     typings.vscodeJsonrpc.messageReaderMod.MessageReader, 
     typings.vscodeJsonrpc.messageWriterMod.MessageWriter
   ] = js.native

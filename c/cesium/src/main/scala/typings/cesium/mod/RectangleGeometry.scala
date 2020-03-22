@@ -1,6 +1,6 @@
 package typings.cesium.mod
 
-import typings.cesium.AnonEllipsoidExtrudedHeightGranularityHeightRectangle
+import typings.cesium.AnonRectangle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("cesium", "RectangleGeometry")
 @js.native
 class RectangleGeometry protected () extends Packable {
-  def this(options: AnonEllipsoidExtrudedHeightGranularityHeightRectangle) = this()
+  def this(options: AnonRectangle) = this()
 }
 
 /* static members */

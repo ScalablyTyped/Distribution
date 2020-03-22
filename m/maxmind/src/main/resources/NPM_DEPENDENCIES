@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "maxmind" : "3.1.2"
+      "maxmind" : "4.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "maxmind" : "3.1.2"
+      "maxmind" : "4.1.0"
     }
   ],
   "compile-devDependencies" : [

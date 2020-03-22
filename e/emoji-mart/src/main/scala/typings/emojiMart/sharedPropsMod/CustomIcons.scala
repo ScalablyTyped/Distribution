@@ -1,18 +1,17 @@
 package typings.emojiMart.sharedPropsMod
 
-import typings.react.mod.ReactNode
-import typings.std.Record
+import typings.emojiMart.RecordCategoryNameReactNo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CustomIcons extends js.Object {
-  var categories: Record[CategoryName, js.Function0[ReactNode]]
+  var categories: RecordCategoryNameReactNo
 }
 
 object CustomIcons {
   @scala.inline
-  def apply(categories: Record[CategoryName, js.Function0[ReactNode]]): CustomIcons = {
+  def apply(categories: RecordCategoryNameReactNo): CustomIcons = {
     val __obj = js.Dynamic.literal(categories = categories.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CustomIcons]

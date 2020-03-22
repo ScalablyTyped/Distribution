@@ -40,7 +40,7 @@ object buttonMod extends js.Object {
     var size: js.UndefOr[xsmall | small | medium | large | xlarge] = js.native
     var skin: js.UndefOr[neutral | primary | secondary | success | warning | error] = js.native
     var stroked: js.UndefOr[Boolean] = js.native
-    var theme: js.UndefOr[AnonBaseFontSizeBreakpoints] = js.native
+    var theme: js.UndefOr[AnonBreakpoints] = js.native
     var `type`: js.UndefOr[button | reset | submit] = js.native
   }
   

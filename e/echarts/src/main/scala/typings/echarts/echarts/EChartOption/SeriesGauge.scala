@@ -1,18 +1,18 @@
 package typings.echarts.echarts.EChartOption
 
-import typings.echarts.AnonAnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdate
-import typings.echarts.AnonAnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasing
-import typings.echarts.AnonAnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdate
-import typings.echarts.AnonBackgroundColorBorderColor
-import typings.echarts.AnonBackgroundColorBorderColorBorderRadius
-import typings.echarts.AnonBackgroundColorBorderColorBorderRadiusBorderWidth
-import typings.echarts.AnonBackgroundColorBorderColorBorderRadiusBorderWidthColor
-import typings.echarts.AnonBorderColorBorderType
-import typings.echarts.AnonItemStyleAnonBorderColorBorderType
-import typings.echarts.AnonLength
+import typings.echarts.AnonAnimationDurationUpdate
+import typings.echarts.AnonAnimationEasing
+import typings.echarts.AnonAnimationEasingUpdate
+import typings.echarts.AnonBorderType
+import typings.echarts.AnonExtraCssText
+import typings.echarts.AnonItemStyleAnonBorderType
 import typings.echarts.AnonLengthLineStyle
 import typings.echarts.AnonLengthShow
-import typings.echarts.AnonLineStyleShowAnonColorOpacityShadowBlurShadowColor
+import typings.echarts.AnonLineStyleShow
+import typings.echarts.AnonOffsetCenter
+import typings.echarts.AnonRich
+import typings.echarts.AnonSplitNumber
+import typings.echarts.AnonTextBorderColor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -131,21 +131,21 @@ trait SeriesGauge extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-gauge.axisLabel
     */
-  var axisLabel: js.UndefOr[AnonBackgroundColorBorderColorBorderRadius] = js.undefined
+  var axisLabel: js.UndefOr[AnonRich] = js.undefined
   /**
     * The related configuration about the axis line of gauge chart.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-gauge.axisLine
     */
-  var axisLine: js.UndefOr[AnonLineStyleShowAnonColorOpacityShadowBlurShadowColor] = js.undefined
+  var axisLine: js.UndefOr[AnonLineStyleShow] = js.undefined
   /**
     * The tick line style.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-gauge.axisTick
     */
-  var axisTick: js.UndefOr[AnonLengthLineStyle] = js.undefined
+  var axisTick: js.UndefOr[AnonSplitNumber] = js.undefined
   /**
     * Whether the scale in gauge chart increases clockwise.
     *
@@ -161,11 +161,11 @@ trait SeriesGauge extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-gauge.detail
     */
-  var detail: js.UndefOr[AnonBackgroundColorBorderColorBorderRadiusBorderWidthColor] = js.undefined
+  var detail: js.UndefOr[AnonTextBorderColor] = js.undefined
   /**
     * @see https://echarts.apache.org/en/option.html#series-gauge.emphasis
     */
-  var emphasis: js.UndefOr[AnonItemStyleAnonBorderColorBorderType] = js.undefined
+  var emphasis: js.UndefOr[AnonItemStyleAnonBorderType] = js.undefined
   /**
     * The end angle of gauge chart.
     *
@@ -190,7 +190,7 @@ trait SeriesGauge extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-gauge.itemStyle
     */
-  var itemStyle: js.UndefOr[AnonBorderColorBorderType] = js.undefined
+  var itemStyle: js.UndefOr[AnonBorderType] = js.undefined
   /**
     * Used to mark an area in chart.
     * For example, mark a time interval.
@@ -198,27 +198,21 @@ trait SeriesGauge extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-gauge.markArea
     */
-  var markArea: js.UndefOr[
-    AnonAnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdate
-  ] = js.undefined
+  var markArea: js.UndefOr[AnonAnimationEasingUpdate] = js.undefined
   /**
     * Use a line in the chart to illustrate.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-gauge.markLine
     */
-  var markLine: js.UndefOr[
-    AnonAnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasing
-  ] = js.undefined
+  var markLine: js.UndefOr[AnonAnimationEasing] = js.undefined
   /**
     * Mark point in a chart.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-gauge.markPoint
     */
-  var markPoint: js.UndefOr[
-    AnonAnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdate
-  ] = js.undefined
+  var markPoint: js.UndefOr[AnonAnimationDurationUpdate] = js.undefined
   /**
     * The maximum data value which map to
     * [maxAngle](https://echarts.apache.org/en/option.html#series-gauge.maxAngle)
@@ -276,7 +270,7 @@ trait SeriesGauge extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-gauge.splitLine
     */
-  var splitLine: js.UndefOr[AnonLength] = js.undefined
+  var splitLine: js.UndefOr[AnonLengthLineStyle] = js.undefined
   /**
     * The number of split segments of gauge chart scale.
     *
@@ -304,14 +298,14 @@ trait SeriesGauge extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-gauge.title
     */
-  var title: js.UndefOr[AnonBackgroundColorBorderColorBorderRadiusBorderWidth] = js.undefined
+  var title: js.UndefOr[AnonOffsetCenter] = js.undefined
   /**
     * tooltip settings in this series.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-gauge.tooltip
     */
-  var tooltip: js.UndefOr[AnonBackgroundColorBorderColor] = js.undefined
+  var tooltip: js.UndefOr[AnonExtraCssText] = js.undefined
   /**
     * @default
     * "gauge"
@@ -331,28 +325,28 @@ object SeriesGauge {
     animationEasing: String = null,
     animationEasingUpdate: String = null,
     animationThreshold: Int | Double = null,
-    axisLabel: AnonBackgroundColorBorderColorBorderRadius = null,
-    axisLine: AnonLineStyleShowAnonColorOpacityShadowBlurShadowColor = null,
-    axisTick: AnonLengthLineStyle = null,
+    axisLabel: AnonRich = null,
+    axisLine: AnonLineStyleShow = null,
+    axisTick: AnonSplitNumber = null,
     clockwise: js.UndefOr[Boolean] = js.undefined,
-    detail: AnonBackgroundColorBorderColorBorderRadiusBorderWidthColor = null,
-    emphasis: AnonItemStyleAnonBorderColorBorderType = null,
+    detail: AnonTextBorderColor = null,
+    emphasis: AnonItemStyleAnonBorderType = null,
     endAngle: Int | Double = null,
     id: String = null,
-    itemStyle: AnonBorderColorBorderType = null,
-    markArea: AnonAnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdate = null,
-    markLine: AnonAnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasing = null,
-    markPoint: AnonAnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdate = null,
+    itemStyle: AnonBorderType = null,
+    markArea: AnonAnimationEasingUpdate = null,
+    markLine: AnonAnimationEasing = null,
+    markPoint: AnonAnimationDurationUpdate = null,
     max: Int | Double = null,
     min: Int | Double = null,
     name: String = null,
     pointer: AnonLengthShow = null,
     radius: Double | String = null,
-    splitLine: AnonLength = null,
+    splitLine: AnonLengthLineStyle = null,
     splitNumber: Int | Double = null,
     startAngle: Int | Double = null,
-    title: AnonBackgroundColorBorderColorBorderRadiusBorderWidth = null,
-    tooltip: AnonBackgroundColorBorderColor = null,
+    title: AnonOffsetCenter = null,
+    tooltip: AnonExtraCssText = null,
     `type`: String = null
   ): SeriesGauge = {
     val __obj = js.Dynamic.literal()

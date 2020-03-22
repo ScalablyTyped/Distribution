@@ -8,6 +8,15 @@ import scala.scalajs.js.annotation._
 
 trait ParseTemplateOptions extends js.Object {
   /**
+    * Render `$localize` message ids with additional legacy message ids.
+    *
+    * This option defaults to `true` but in the future the defaul will be flipped.
+    *
+    * For now set this option to false if you have migrated the translation files to use the new
+    * `$localize` message id format and you are not using compile time translation merging.
+    */
+  var enableI18nLegacyMessageIdFormat: js.UndefOr[Boolean] = js.undefined
+  /**
     * If this text is stored in a JavaScript string, then we have to deal with escape sequences.
     *
     * **Example 1:**
@@ -55,6 +64,7 @@ trait ParseTemplateOptions extends js.Object {
 object ParseTemplateOptions {
   @scala.inline
   def apply(
+    enableI18nLegacyMessageIdFormat: js.UndefOr[Boolean] = js.undefined,
     escapedString: js.UndefOr[Boolean] = js.undefined,
     interpolationConfig: InterpolationConfig = null,
     leadingTriviaChars: js.Array[String] = null,
@@ -62,6 +72,7 @@ object ParseTemplateOptions {
     range: LexerRange = null
   ): ParseTemplateOptions = {
     val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(enableI18nLegacyMessageIdFormat)) __obj.updateDynamic("enableI18nLegacyMessageIdFormat")(enableI18nLegacyMessageIdFormat.asInstanceOf[js.Any])
     if (!js.isUndefined(escapedString)) __obj.updateDynamic("escapedString")(escapedString.asInstanceOf[js.Any])
     if (interpolationConfig != null) __obj.updateDynamic("interpolationConfig")(interpolationConfig.asInstanceOf[js.Any])
     if (leadingTriviaChars != null) __obj.updateDynamic("leadingTriviaChars")(leadingTriviaChars.asInstanceOf[js.Any])

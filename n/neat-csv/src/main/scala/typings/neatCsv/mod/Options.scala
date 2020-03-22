@@ -1,7 +1,7 @@
 package typings.neatCsv.mod
 
 import typings.neatCsv.AnonHeader
-import typings.neatCsv.AnonHeaderIndex
+import typings.neatCsv.AnonIndex
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ trait Options extends js.Object {
   var escape: js.UndefOr[String] = js.undefined
   var headers: js.UndefOr[js.Array[String] | Boolean] = js.undefined
   var mapHeaders: js.UndefOr[js.Function1[/* args */ AnonHeader, String | Null]] = js.undefined
-  var mapValues: js.UndefOr[js.Function1[/* args */ AnonHeaderIndex, _]] = js.undefined
+  var mapValues: js.UndefOr[js.Function1[/* args */ AnonIndex, _]] = js.undefined
   var maxRowBytes: js.UndefOr[Double] = js.undefined
   var newline: js.UndefOr[String] = js.undefined
   var quote: js.UndefOr[String] = js.undefined
@@ -27,7 +27,7 @@ object Options {
     escape: String = null,
     headers: js.Array[String] | Boolean = null,
     mapHeaders: /* args */ AnonHeader => String | Null = null,
-    mapValues: /* args */ AnonHeaderIndex => _ = null,
+    mapValues: /* args */ AnonIndex => _ = null,
     maxRowBytes: Int | Double = null,
     newline: String = null,
     quote: String = null,

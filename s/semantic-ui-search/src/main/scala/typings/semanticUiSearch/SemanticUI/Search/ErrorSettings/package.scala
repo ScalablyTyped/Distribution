@@ -5,13 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object ErrorSettings {
-  type Param = (typings.std.Pick[
-    typings.semanticUiSearch.SemanticUI.Search.ErrorSettings.Impl, 
-    typings.semanticUiSearch.semanticUiSearchStrings.source | typings.semanticUiSearch.semanticUiSearchStrings.noResults | typings.semanticUiSearch.semanticUiSearchStrings.logging | typings.semanticUiSearch.semanticUiSearchStrings.noTemplate | typings.semanticUiSearch.semanticUiSearchStrings.serverError | typings.semanticUiSearch.semanticUiSearchStrings.maxResults | typings.semanticUiSearch.semanticUiSearchStrings.method
-  ]) with (typings.std.Partial[
-    typings.std.Pick[
-      typings.semanticUiSearch.SemanticUI.Search.ErrorSettings.Impl, 
-      typings.semanticUiSearch.semanticUiSearchStrings.source | typings.semanticUiSearch.semanticUiSearchStrings.noResults | typings.semanticUiSearch.semanticUiSearchStrings.logging | typings.semanticUiSearch.semanticUiSearchStrings.noTemplate | typings.semanticUiSearch.semanticUiSearchStrings.serverError | typings.semanticUiSearch.semanticUiSearchStrings.maxResults | typings.semanticUiSearch.semanticUiSearchStrings.method
-    ]
-  ])
+  type Param = (typings.semanticUiSearch.PickImplsourceSource | typings.semanticUiSearch.PickImplnoResults | typings.semanticUiSearch.PickImpllogging | typings.semanticUiSearch.PickImplnoTemplate | typings.semanticUiSearch.PickImplserverError | typings.semanticUiSearch.PickImplmaxResultsMaxResults | typings.semanticUiSearch.PickImplmethod) with typings.semanticUiSearch.PartialPickImplkeyofImplLogging
 }

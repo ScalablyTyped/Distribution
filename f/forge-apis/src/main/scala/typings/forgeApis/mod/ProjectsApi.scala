@@ -1,6 +1,6 @@
 package typings.forgeApis.mod
 
-import typings.forgeApis.AnonFilterExtensionTypeFilterIdArray
+import typings.forgeApis.AnonFilterExtensionTypeFilterId
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ class ProjectsApi () extends js.Object {
     */
   def getHubProjects(
     hubId: String,
-    opts: AnonFilterExtensionTypeFilterIdArray,
+    opts: AnonFilterExtensionTypeFilterId,
     oauth2Client: AuthClient,
     credentials: AuthToken
   ): js.Promise[ApiResponse] = js.native

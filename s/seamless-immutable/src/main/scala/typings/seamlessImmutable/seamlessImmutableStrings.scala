@@ -1,5 +1,7 @@
 package typings.seamlessImmutable
 
+import typings.seamlessImmutable.mod.ImmutableArray.AdditionalMutatingArrayMethods
+import typings.seamlessImmutable.mod.ImmutableDate.MutatingDateMethods
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,10 +17,10 @@ object seamlessImmutableStrings {
   sealed trait ImmutableObjectMixin extends js.Object
   
   @js.native
-  sealed trait copyWithin extends js.Object
+  sealed trait copyWithin extends AdditionalMutatingArrayMethods
   
   @js.native
-  sealed trait fill extends js.Object
+  sealed trait fill extends AdditionalMutatingArrayMethods
   
   @js.native
   sealed trait merge extends js.Object
@@ -36,52 +38,49 @@ object seamlessImmutableStrings {
   sealed trait reverse extends js.Object
   
   @js.native
-  sealed trait setDate extends js.Object
+  sealed trait setDate extends MutatingDateMethods
   
   @js.native
-  sealed trait setFullYear extends js.Object
+  sealed trait setFullYear extends MutatingDateMethods
   
   @js.native
-  sealed trait setHours extends js.Object
+  sealed trait setHours extends MutatingDateMethods
   
   @js.native
-  sealed trait setMilliseconds extends js.Object
+  sealed trait setMilliseconds extends MutatingDateMethods
   
   @js.native
-  sealed trait setMinutes extends js.Object
+  sealed trait setMinutes extends MutatingDateMethods
   
   @js.native
-  sealed trait setMonth extends js.Object
+  sealed trait setMonth extends MutatingDateMethods
   
   @js.native
-  sealed trait setSeconds extends js.Object
+  sealed trait setSeconds extends MutatingDateMethods
   
   @js.native
-  sealed trait setTime extends js.Object
+  sealed trait setTime extends MutatingDateMethods
   
   @js.native
-  sealed trait setUTCDate extends js.Object
+  sealed trait setUTCDate extends MutatingDateMethods
   
   @js.native
-  sealed trait setUTCFullYear extends js.Object
+  sealed trait setUTCFullYear extends MutatingDateMethods
   
   @js.native
-  sealed trait setUTCHours extends js.Object
+  sealed trait setUTCHours extends MutatingDateMethods
   
   @js.native
-  sealed trait setUTCMilliseconds extends js.Object
+  sealed trait setUTCMilliseconds extends MutatingDateMethods
   
   @js.native
-  sealed trait setUTCMinutes extends js.Object
+  sealed trait setUTCMinutes extends MutatingDateMethods
   
   @js.native
-  sealed trait setUTCMonth extends js.Object
+  sealed trait setUTCMonth extends MutatingDateMethods
   
   @js.native
-  sealed trait setUTCSeconds extends js.Object
-  
-  @js.native
-  sealed trait setYear extends js.Object
+  sealed trait setUTCSeconds extends MutatingDateMethods
   
   @js.native
   sealed trait shift extends js.Object
@@ -145,8 +144,6 @@ object seamlessImmutableStrings {
   def setUTCMonth: setUTCMonth = "setUTCMonth".asInstanceOf[setUTCMonth]
   @scala.inline
   def setUTCSeconds: setUTCSeconds = "setUTCSeconds".asInstanceOf[setUTCSeconds]
-  @scala.inline
-  def setYear: setYear = "setYear".asInstanceOf[setYear]
   @scala.inline
   def shift: shift = "shift".asInstanceOf[shift]
   @scala.inline

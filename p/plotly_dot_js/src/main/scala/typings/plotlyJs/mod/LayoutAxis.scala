@@ -1,5 +1,8 @@
 package typings.plotlyJs.mod
 
+import typings.plotlyJs.PartialFont
+import typings.plotlyJs.PartialRangeSelectorActivecolor
+import typings.plotlyJs.PartialRangeSlider
 import typings.plotlyJs.plotlyJsBooleans.`false`
 import typings.plotlyJs.plotlyJsBooleans.`true`
 import typings.plotlyJs.plotlyJsStrings.B
@@ -37,7 +40,6 @@ import typings.plotlyJs.plotlyJsStrings.ticks
 import typings.plotlyJs.plotlyJsStrings.top
 import typings.plotlyJs.plotlyJsStrings.tozero
 import typings.plotlyJs.plotlyJsStrings.trace
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -53,8 +55,8 @@ trait LayoutAxis extends Axis {
   var layer: (`above traces`) | (`below traces`)
   var overlaying: free | AxisName
   var position: Double
-  var rangeselector: Partial[RangeSelector]
-  var rangeslider: Partial[RangeSlider]
+  var rangeselector: PartialRangeSelectorActivecolor
+  var rangeslider: PartialRangeSlider
   var scaleanchor: AxisName
   var scaleratio: Double
   var side: top | bottom | left | right
@@ -91,8 +93,8 @@ object LayoutAxis {
     position: Double,
     range: js.Array[_],
     rangemode: normal | tozero | nonnegative,
-    rangeselector: Partial[RangeSelector],
-    rangeslider: Partial[RangeSlider],
+    rangeselector: PartialRangeSelectorActivecolor,
+    rangeslider: PartialRangeSlider,
     scaleanchor: AxisName,
     scaleratio: Double,
     separatethousands: Boolean,
@@ -111,7 +113,7 @@ object LayoutAxis {
     tick0: Double | String,
     tickangle: Double,
     tickcolor: Color,
-    tickfont: Partial[Font],
+    tickfont: PartialFont,
     tickformat: String,
     ticklen: Double,
     tickmode: auto | linear | array,
@@ -122,7 +124,7 @@ object LayoutAxis {
     tickvals: js.Array[_],
     tickwidth: Double,
     title: String,
-    titlefont: Partial[Font],
+    titlefont: PartialFont,
     `type`: AxisType,
     visible: Boolean,
     zeroline: Boolean,

@@ -1,6 +1,5 @@
 package typings.ipaddrJs.mod
 
-import typings.ipaddrJs.ipaddrJsBooleans.`false`
 import typings.ipaddrJs.ipaddrJsStrings.ipv6
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,13 +8,15 @@ import scala.scalajs.js.annotation._
 @JSImport("ipaddr.js", "IPv6")
 @js.native
 class IPv6 protected () extends IP {
-  def this(octets: js.Array[Double]) = this()
+  def this(parts: js.Array[Double]) = this()
+  var parts: js.Array[Double] = js.native
+  var zoneId: js.UndefOr[String] = js.native
   def isIPv4MappedAddress(): Boolean = js.native
   def kind(): ipv6 = js.native
   def `match`(addr: IPv6, bits: Double): Boolean = js.native
   def `match`(mask: js.Tuple2[IPv6, Double]): Boolean = js.native
   /* CompleteClass */
-  override def prefixLengthFromSubnetMask(): Double | `false` = js.native
+  override def prefixLengthFromSubnetMask(): Double | Null = js.native
   def range(): IPv6Range = js.native
   def subnetMatch(rangeList: RangeList[IPv6]): String = js.native
   def subnetMatch(rangeList: RangeList[IPv6], defaultName: String): String = js.native

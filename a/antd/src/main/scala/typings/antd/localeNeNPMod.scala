@@ -14,10 +14,10 @@ object localeNeNPMod extends js.Object {
     var Empty: AnonDescription = js.native
     var Modal: AnonCancelText = js.native
     var Pagination: js.Any = js.native
-    var Popconfirm: AnonCancelTextOkText = js.native
+    var Popconfirm: AnonOkText = js.native
     var Table: AnonFilterConfirm = js.native
     var TimePicker: AnonPlaceholder = js.native
-    var Transfer: AnonItemUnitItemsUnit = js.native
+    var Transfer: AnonSearchPlaceholder = js.native
     var Upload: AnonDownloadFile = js.native
     var locale: String = js.native
   }

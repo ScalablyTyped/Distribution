@@ -1,7 +1,6 @@
 package typings.ethereumjsCommon.mod
 
-import typings.ethereumjsCommon.typesMod.Chain
-import typings.std.Partial
+import typings.ethereumjsCommon.PartialChain
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -44,31 +43,31 @@ object default extends js.Object {
     * @param hardfork String identifier ('byzantium') for hardfork (optional)
     * @param supportedHardforks Limit parameter returns to the given hardforks (optional)
     */
-  def forCustomChain(baseChain: String, customChainParams: Partial[Chain]): Common = js.native
-  def forCustomChain(baseChain: String, customChainParams: Partial[Chain], hardfork: String): Common = js.native
+  def forCustomChain(baseChain: String, customChainParams: PartialChain): Common = js.native
+  def forCustomChain(baseChain: String, customChainParams: PartialChain, hardfork: String): Common = js.native
   def forCustomChain(
     baseChain: String,
-    customChainParams: Partial[Chain],
+    customChainParams: PartialChain,
     hardfork: String,
     supportedHardforks: js.Array[String]
   ): Common = js.native
   def forCustomChain(
     baseChain: String,
-    customChainParams: Partial[Chain],
+    customChainParams: PartialChain,
     hardfork: Null,
     supportedHardforks: js.Array[String]
   ): Common = js.native
-  def forCustomChain(baseChain: Double, customChainParams: Partial[Chain]): Common = js.native
-  def forCustomChain(baseChain: Double, customChainParams: Partial[Chain], hardfork: String): Common = js.native
+  def forCustomChain(baseChain: Double, customChainParams: PartialChain): Common = js.native
+  def forCustomChain(baseChain: Double, customChainParams: PartialChain, hardfork: String): Common = js.native
   def forCustomChain(
     baseChain: Double,
-    customChainParams: Partial[Chain],
+    customChainParams: PartialChain,
     hardfork: String,
     supportedHardforks: js.Array[String]
   ): Common = js.native
   def forCustomChain(
     baseChain: Double,
-    customChainParams: Partial[Chain],
+    customChainParams: PartialChain,
     hardfork: Null,
     supportedHardforks: js.Array[String]
   ): Common = js.native

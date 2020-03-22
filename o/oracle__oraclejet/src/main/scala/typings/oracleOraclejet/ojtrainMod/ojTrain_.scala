@@ -1,6 +1,6 @@
 package typings.oracleOraclejet.ojtrainMod
 
-import typings.oracleOraclejet.AnonDisabledError
+import typings.oracleOraclejet.AnonMessageType
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.mod.baseComponent
 import typings.oracleOraclejet.ojtrainMod.ojTrain.Step
@@ -105,6 +105,6 @@ trait ojTrain_ extends baseComponent[ojTrainSettableProperties] {
   def setProperty_selectedStep(property: selectedStep, value: String): Unit = js.native
   @JSName("setProperty")
   def setProperty_steps(property: steps, value: js.Array[Step]): Unit = js.native
-  def updateStep(id: String, stepProperties: AnonDisabledError): Unit = js.native
+  def updateStep(id: String, stepProperties: AnonMessageType): Unit = js.native
 }
 

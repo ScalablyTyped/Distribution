@@ -1,5 +1,7 @@
 package typings.uifabricFoundation
 
+import typings.react.mod.DetailedHTMLProps
+import typings.react.mod.HTMLAttributes
 import typings.uifabricFoundation.libIslotsMod.ISlotProp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,6 +14,6 @@ object ihtmlslotsMod extends js.Object {
     /* import warning: importer.ImportType#apply Failed type conversion: react.react._Global_.JSX.IntrinsicElements[TElement] */ js.Any, 
     scala.Nothing
   ]
-  type IHTMLSlot = ISlotProp[DetailedHTMLPropsHTMLAttributesanyany, scala.Nothing]
+  type IHTMLSlot = ISlotProp[DetailedHTMLProps[HTMLAttributes[js.Any], js.Any], scala.Nothing]
 }
 

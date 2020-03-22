@@ -3,9 +3,10 @@ package typings.jupyterlabNotebook.widgetMod
 import typings.jupyterlabCells.mod.Cell
 import typings.jupyterlabCoreutils.interfacesMod.IChangedArgs
 import typings.jupyterlabNotebook.AnonAnchor
+import typings.jupyterlabNotebook.AnonHead
 import typings.jupyterlabNotebook.widgetMod.Notebook.IOptions
-import typings.phosphorSignaling.mod.ISignal
-import typings.phosphorWidgets.mod.Widget.ResizeMessage
+import typings.luminoSignaling.mod.ISignal
+import typings.luminoWidgets.mod.Widget.ResizeMessage
 import typings.std.Event_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -46,19 +47,19 @@ class Notebook protected () extends StaticNotebook {
     */
   var _evtDocumentMouseup: js.Any = js.native
   /**
-    * Handle the `'p-dragenter'` event for the widget.
+    * Handle the `'lm-dragenter'` event for the widget.
     */
   var _evtDragEnter: js.Any = js.native
   /**
-    * Handle the `'p-dragleave'` event for the widget.
+    * Handle the `'lm-dragleave'` event for the widget.
     */
   var _evtDragLeave: js.Any = js.native
   /**
-    * Handle the `'p-dragover'` event for the widget.
+    * Handle the `'lm-dragover'` event for the widget.
     */
   var _evtDragOver: js.Any = js.native
   /**
-    * Handle the `'p-drop'` event for the widget.
+    * Handle the `'lm-drop'` event for the widget.
     */
   var _evtDrop: js.Any = js.native
   /**
@@ -108,7 +109,7 @@ class Notebook protected () extends StaticNotebook {
     * #### Notes
     * This is a cell or `null` if there is no active cell.
     */
-  val activeCell: Cell | Null = js.native
+  def activeCell(): Cell | Null = js.native
   /**
     * A signal emitted when the active cell changes.
     *
@@ -116,26 +117,15 @@ class Notebook protected () extends StaticNotebook {
     * This can be due to the active index changing or the
     * cell at the active index changing.
     */
-  val activeCellChanged: ISignal[this.type, Cell] = js.native
+  def activeCellChanged(): ISignal[this.type, Cell] = js.native
   /**
     * The active cell index of the notebook.
     *
     * #### Notes
     * The index will be clamped to the bounds of the notebook cells.
     */
-  var activeCellIndex: Double = js.native
-  /**
-    * The interactivity mode of the notebook.
-    */
-  var mode: NotebookMode = js.native
-  /**
-    * A signal emitted when the selection state of the notebook changes.
-    */
-  val selectionChanged: ISignal[this.type, Unit] = js.native
-  /**
-    * A signal emitted when the state of the notebook changes.
-    */
-  val stateChanged: ISignal[this.type, IChangedArgs[_, String]] = js.native
+  def activeCellIndex(): Double = js.native
+  def activeCellIndex(newValue: Double): js.Any = js.native
   /**
     * Deselect a cell widget.
     *
@@ -173,7 +163,7 @@ class Notebook protected () extends StaticNotebook {
     * Throws an error if the currently selected cells do not form a contiguous
     * selection.
     */
-  def getContiguousSelection(): AnonAnchor = js.native
+  def getContiguousSelection(): AnonAnchor | AnonHead = js.native
   /**
     * Handle the DOM events for the widget.
     *
@@ -193,6 +183,11 @@ class Notebook protected () extends StaticNotebook {
     * Whether a cell is selected or is the active cell.
     */
   def isSelectedOrActive(widget: Cell): Boolean = js.native
+  /**
+    * The interactivity mode of the notebook.
+    */
+  def mode(): NotebookMode = js.native
+  def mode(newValue: NotebookMode): js.Any = js.native
   /**
     * A message handler invoked on a `'resize'` message.
     */
@@ -223,9 +218,17 @@ class Notebook protected () extends StaticNotebook {
     */
   def select(widget: Cell): Unit = js.native
   /**
+    * A signal emitted when the selection state of the notebook changes.
+    */
+  def selectionChanged(): ISignal[this.type, Unit] = js.native
+  /**
     * Set URI fragment identifier.
     */
   def setFragment(fragment: String): Unit = js.native
+  /**
+    * A signal emitted when the state of the notebook changes.
+    */
+  def stateChanged(): ISignal[this.type, IChangedArgs[_, _, String]] = js.native
 }
 
 @JSImport("@jupyterlab/notebook/lib/widget", "Notebook")

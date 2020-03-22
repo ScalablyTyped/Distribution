@@ -1,7 +1,7 @@
 package typings.awsLambda.lexMod
 
-import typings.awsLambda.AnonApplicationvndamazonawscardgeneric
 import typings.awsLambda.AnonContent
+import typings.awsLambda.AnonContentType
 import typings.awsLambda.awsLambdaStrings.ElicitIntent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,11 +16,7 @@ trait LexDialogActionElicitIntent
 
 object LexDialogActionElicitIntent {
   @scala.inline
-  def apply(
-    `type`: ElicitIntent,
-    message: AnonContent = null,
-    responseCard: AnonApplicationvndamazonawscardgeneric = null
-  ): LexDialogActionElicitIntent = {
+  def apply(`type`: ElicitIntent, message: AnonContent = null, responseCard: AnonContentType = null): LexDialogActionElicitIntent = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])

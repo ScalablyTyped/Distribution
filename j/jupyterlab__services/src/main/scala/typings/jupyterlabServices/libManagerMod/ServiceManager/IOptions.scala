@@ -1,8 +1,8 @@
 package typings.jupyterlabServices.libManagerMod.ServiceManager
 
-import typings.jupyterlabCoreutils.pollMod.Poll.Standby
 import typings.jupyterlabServices.contentsMod.Contents.IDrive
 import typings.jupyterlabServices.serverconnectionMod.ServerConnection.ISettings
+import typings.luminoPolling.pollMod.Poll.Standby
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

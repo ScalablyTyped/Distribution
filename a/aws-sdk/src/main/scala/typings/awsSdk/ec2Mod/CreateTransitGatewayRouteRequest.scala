@@ -21,21 +21,21 @@ trait CreateTransitGatewayRouteRequest extends js.Object {
   /**
     * The ID of the attachment.
     */
-  var TransitGatewayAttachmentId: js.UndefOr[String] = js.native
+  var TransitGatewayAttachmentId: js.UndefOr[typings.awsSdk.ec2Mod.TransitGatewayAttachmentId] = js.native
   /**
     * The ID of the transit gateway route table.
     */
-  var TransitGatewayRouteTableId: String = js.native
+  var TransitGatewayRouteTableId: typings.awsSdk.ec2Mod.TransitGatewayRouteTableId = js.native
 }
 
 object CreateTransitGatewayRouteRequest {
   @scala.inline
   def apply(
     DestinationCidrBlock: String,
-    TransitGatewayRouteTableId: String,
+    TransitGatewayRouteTableId: TransitGatewayRouteTableId,
     Blackhole: js.UndefOr[scala.Boolean] = js.undefined,
     DryRun: js.UndefOr[scala.Boolean] = js.undefined,
-    TransitGatewayAttachmentId: String = null
+    TransitGatewayAttachmentId: TransitGatewayAttachmentId = null
   ): CreateTransitGatewayRouteRequest = {
     val __obj = js.Dynamic.literal(DestinationCidrBlock = DestinationCidrBlock.asInstanceOf[js.Any], TransitGatewayRouteTableId = TransitGatewayRouteTableId.asInstanceOf[js.Any])
     if (!js.isUndefined(Blackhole)) __obj.updateDynamic("Blackhole")(Blackhole.asInstanceOf[js.Any])

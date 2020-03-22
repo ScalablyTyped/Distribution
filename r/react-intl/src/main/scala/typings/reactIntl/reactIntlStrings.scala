@@ -42,6 +42,9 @@ object reactIntlStrings {
   sealed trait bdo extends js.Object
   
   @js.native
+  sealed trait `best fit` extends js.Object
+  
+  @js.native
   sealed trait big extends js.Object
   
   @js.native
@@ -63,7 +66,7 @@ object reactIntlStrings {
   sealed trait caption extends js.Object
   
   @js.native
-  sealed trait children extends js.Object
+  sealed trait cardinal extends js.Object
   
   @js.native
   sealed trait cite extends js.Object
@@ -78,6 +81,12 @@ object reactIntlStrings {
   sealed trait colgroup extends js.Object
   
   @js.native
+  sealed trait conjunction extends js.Object
+  
+  @js.native
+  sealed trait currency extends js.Object
+  
+  @js.native
   sealed trait data extends js.Object
   
   @js.native
@@ -90,12 +99,6 @@ object reactIntlStrings {
   sealed trait dd extends js.Object
   
   @js.native
-  sealed trait defaultFormats extends js.Object
-  
-  @js.native
-  sealed trait defaultLocale extends js.Object
-  
-  @js.native
   sealed trait del extends js.Object
   
   @js.native
@@ -106,6 +109,9 @@ object reactIntlStrings {
   
   @js.native
   sealed trait dialog extends js.Object
+  
+  @js.native
+  sealed trait disjunction extends js.Object
   
   @js.native
   sealed trait div extends js.Object
@@ -123,9 +129,6 @@ object reactIntlStrings {
   sealed trait embed extends js.Object
   
   @js.native
-  sealed trait few extends js.Object
-  
-  @js.native
   sealed trait fieldset extends js.Object
   
   @js.native
@@ -141,9 +144,6 @@ object reactIntlStrings {
   sealed trait form extends js.Object
   
   @js.native
-  sealed trait format extends js.Object
-  
-  @js.native
   sealed trait formatDate extends js.Object
   
   @js.native
@@ -157,9 +157,6 @@ object reactIntlStrings {
   
   @js.native
   sealed trait formatTime extends js.Object
-  
-  @js.native
-  sealed trait formats extends js.Object
   
   @js.native
   sealed trait h1 extends js.Object
@@ -219,6 +216,9 @@ object reactIntlStrings {
   sealed trait label extends js.Object
   
   @js.native
+  sealed trait language extends js.Object
+  
+  @js.native
   sealed trait legend extends js.Object
   
   @js.native
@@ -228,16 +228,16 @@ object reactIntlStrings {
   sealed trait link extends js.Object
   
   @js.native
-  sealed trait locale extends js.Object
-  
-  @js.native
   sealed trait localeMatcher extends js.Object
   
   @js.native
-  sealed trait main extends js.Object
+  sealed trait long extends js.Object
   
   @js.native
-  sealed trait many extends js.Object
+  sealed trait lookup extends js.Object
+  
+  @js.native
+  sealed trait main extends js.Object
   
   @js.native
   sealed trait map extends js.Object
@@ -252,19 +252,25 @@ object reactIntlStrings {
   sealed trait menuitem extends js.Object
   
   @js.native
-  sealed trait messages extends js.Object
-  
-  @js.native
   sealed trait meta extends js.Object
   
   @js.native
   sealed trait meter extends js.Object
   
   @js.native
+  sealed trait narrow extends js.Object
+  
+  @js.native
   sealed trait nav extends js.Object
   
   @js.native
+  sealed trait none extends js.Object
+  
+  @js.native
   sealed trait noscript extends js.Object
+  
+  @js.native
+  sealed trait number extends js.Object
   
   @js.native
   sealed trait `object` extends js.Object
@@ -273,19 +279,13 @@ object reactIntlStrings {
   sealed trait ol extends js.Object
   
   @js.native
-  sealed trait onError extends js.Object
-  
-  @js.native
-  sealed trait one extends js.Object
-  
-  @js.native
   sealed trait optgroup extends js.Object
   
   @js.native
   sealed trait option extends js.Object
   
   @js.native
-  sealed trait other extends js.Object
+  sealed trait ordinal extends js.Object
   
   @js.native
   sealed trait output extends js.Object
@@ -307,6 +307,9 @@ object reactIntlStrings {
   
   @js.native
   sealed trait q extends js.Object
+  
+  @js.native
+  sealed trait region extends js.Object
   
   @js.native
   sealed trait relative extends js.Object
@@ -334,6 +337,9 @@ object reactIntlStrings {
   
   @js.native
   sealed trait select extends js.Object
+  
+  @js.native
+  sealed trait short extends js.Object
   
   @js.native
   sealed trait small extends js.Object
@@ -372,9 +378,6 @@ object reactIntlStrings {
   sealed trait template extends js.Object
   
   @js.native
-  sealed trait textComponent extends js.Object
-  
-  @js.native
   sealed trait textarea extends js.Object
   
   @js.native
@@ -390,9 +393,6 @@ object reactIntlStrings {
   sealed trait time extends js.Object
   
   @js.native
-  sealed trait timeZone extends js.Object
-  
-  @js.native
   sealed trait title extends js.Object
   
   @js.native
@@ -402,12 +402,6 @@ object reactIntlStrings {
   sealed trait track extends js.Object
   
   @js.native
-  sealed trait two extends js.Object
-  
-  @js.native
-  sealed trait `type` extends js.Object
-  
-  @js.native
   sealed trait u extends js.Object
   
   @js.native
@@ -415,9 +409,6 @@ object reactIntlStrings {
   
   @js.native
   sealed trait unit extends js.Object
-  
-  @js.native
-  sealed trait value extends js.Object
   
   @js.native
   sealed trait `var` extends js.Object
@@ -430,9 +421,6 @@ object reactIntlStrings {
   
   @js.native
   sealed trait webview extends js.Object
-  
-  @js.native
-  sealed trait zero extends js.Object
   
   @scala.inline
   def WrappedComponentProps: WrappedComponentProps = "WrappedComponentProps".asInstanceOf[WrappedComponentProps]
@@ -459,6 +447,8 @@ object reactIntlStrings {
   @scala.inline
   def bdo: bdo = "bdo".asInstanceOf[bdo]
   @scala.inline
+  def `best fit`: `best fit` = "best fit".asInstanceOf[`best fit`]
+  @scala.inline
   def big: big = "big".asInstanceOf[big]
   @scala.inline
   def blockquote: blockquote = "blockquote".asInstanceOf[blockquote]
@@ -473,7 +463,7 @@ object reactIntlStrings {
   @scala.inline
   def caption: caption = "caption".asInstanceOf[caption]
   @scala.inline
-  def children: children = "children".asInstanceOf[children]
+  def cardinal: cardinal = "cardinal".asInstanceOf[cardinal]
   @scala.inline
   def cite: cite = "cite".asInstanceOf[cite]
   @scala.inline
@@ -483,6 +473,10 @@ object reactIntlStrings {
   @scala.inline
   def colgroup: colgroup = "colgroup".asInstanceOf[colgroup]
   @scala.inline
+  def conjunction: conjunction = "conjunction".asInstanceOf[conjunction]
+  @scala.inline
+  def currency: currency = "currency".asInstanceOf[currency]
+  @scala.inline
   def data: data = "data".asInstanceOf[data]
   @scala.inline
   def datalist: datalist = "datalist".asInstanceOf[datalist]
@@ -491,10 +485,6 @@ object reactIntlStrings {
   @scala.inline
   def dd: dd = "dd".asInstanceOf[dd]
   @scala.inline
-  def defaultFormats: defaultFormats = "defaultFormats".asInstanceOf[defaultFormats]
-  @scala.inline
-  def defaultLocale: defaultLocale = "defaultLocale".asInstanceOf[defaultLocale]
-  @scala.inline
   def del: del = "del".asInstanceOf[del]
   @scala.inline
   def details: details = "details".asInstanceOf[details]
@@ -502,6 +492,8 @@ object reactIntlStrings {
   def dfn: dfn = "dfn".asInstanceOf[dfn]
   @scala.inline
   def dialog: dialog = "dialog".asInstanceOf[dialog]
+  @scala.inline
+  def disjunction: disjunction = "disjunction".asInstanceOf[disjunction]
   @scala.inline
   def div: div = "div".asInstanceOf[div]
   @scala.inline
@@ -513,8 +505,6 @@ object reactIntlStrings {
   @scala.inline
   def embed: embed = "embed".asInstanceOf[embed]
   @scala.inline
-  def few: few = "few".asInstanceOf[few]
-  @scala.inline
   def fieldset: fieldset = "fieldset".asInstanceOf[fieldset]
   @scala.inline
   def figcaption: figcaption = "figcaption".asInstanceOf[figcaption]
@@ -525,8 +515,6 @@ object reactIntlStrings {
   @scala.inline
   def form: form = "form".asInstanceOf[form]
   @scala.inline
-  def format: format = "format".asInstanceOf[format]
-  @scala.inline
   def formatDate: formatDate = "formatDate".asInstanceOf[formatDate]
   @scala.inline
   def formatDisplayName: formatDisplayName = "formatDisplayName".asInstanceOf[formatDisplayName]
@@ -536,8 +524,6 @@ object reactIntlStrings {
   def formatNumber: formatNumber = "formatNumber".asInstanceOf[formatNumber]
   @scala.inline
   def formatTime: formatTime = "formatTime".asInstanceOf[formatTime]
-  @scala.inline
-  def formats: formats = "formats".asInstanceOf[formats]
   @scala.inline
   def h1: h1 = "h1".asInstanceOf[h1]
   @scala.inline
@@ -577,19 +563,21 @@ object reactIntlStrings {
   @scala.inline
   def label: label = "label".asInstanceOf[label]
   @scala.inline
+  def language: language = "language".asInstanceOf[language]
+  @scala.inline
   def legend: legend = "legend".asInstanceOf[legend]
   @scala.inline
   def li: li = "li".asInstanceOf[li]
   @scala.inline
   def link: link = "link".asInstanceOf[link]
   @scala.inline
-  def locale: locale = "locale".asInstanceOf[locale]
-  @scala.inline
   def localeMatcher: localeMatcher = "localeMatcher".asInstanceOf[localeMatcher]
   @scala.inline
-  def main: main = "main".asInstanceOf[main]
+  def long: long = "long".asInstanceOf[long]
   @scala.inline
-  def many: many = "many".asInstanceOf[many]
+  def lookup: lookup = "lookup".asInstanceOf[lookup]
+  @scala.inline
+  def main: main = "main".asInstanceOf[main]
   @scala.inline
   def map: map = "map".asInstanceOf[map]
   @scala.inline
@@ -599,29 +587,29 @@ object reactIntlStrings {
   @scala.inline
   def menuitem: menuitem = "menuitem".asInstanceOf[menuitem]
   @scala.inline
-  def messages: messages = "messages".asInstanceOf[messages]
-  @scala.inline
   def meta: meta = "meta".asInstanceOf[meta]
   @scala.inline
   def meter: meter = "meter".asInstanceOf[meter]
   @scala.inline
+  def narrow: narrow = "narrow".asInstanceOf[narrow]
+  @scala.inline
   def nav: nav = "nav".asInstanceOf[nav]
   @scala.inline
+  def none: none = "none".asInstanceOf[none]
+  @scala.inline
   def noscript: noscript = "noscript".asInstanceOf[noscript]
+  @scala.inline
+  def number: number = "number".asInstanceOf[number]
   @scala.inline
   def `object`: `object` = "object".asInstanceOf[`object`]
   @scala.inline
   def ol: ol = "ol".asInstanceOf[ol]
   @scala.inline
-  def onError: onError = "onError".asInstanceOf[onError]
-  @scala.inline
-  def one: one = "one".asInstanceOf[one]
-  @scala.inline
   def optgroup: optgroup = "optgroup".asInstanceOf[optgroup]
   @scala.inline
   def option: option = "option".asInstanceOf[option]
   @scala.inline
-  def other: other = "other".asInstanceOf[other]
+  def ordinal: ordinal = "ordinal".asInstanceOf[ordinal]
   @scala.inline
   def output: output = "output".asInstanceOf[output]
   @scala.inline
@@ -636,6 +624,8 @@ object reactIntlStrings {
   def progress: progress = "progress".asInstanceOf[progress]
   @scala.inline
   def q: q = "q".asInstanceOf[q]
+  @scala.inline
+  def region: region = "region".asInstanceOf[region]
   @scala.inline
   def relative: relative = "relative".asInstanceOf[relative]
   @scala.inline
@@ -654,6 +644,8 @@ object reactIntlStrings {
   def section: section = "section".asInstanceOf[section]
   @scala.inline
   def select: select = "select".asInstanceOf[select]
+  @scala.inline
+  def short: short = "short".asInstanceOf[short]
   @scala.inline
   def small: small = "small".asInstanceOf[small]
   @scala.inline
@@ -679,8 +671,6 @@ object reactIntlStrings {
   @scala.inline
   def template: template = "template".asInstanceOf[template]
   @scala.inline
-  def textComponent: textComponent = "textComponent".asInstanceOf[textComponent]
-  @scala.inline
   def textarea: textarea = "textarea".asInstanceOf[textarea]
   @scala.inline
   def tfoot: tfoot = "tfoot".asInstanceOf[tfoot]
@@ -691,25 +681,17 @@ object reactIntlStrings {
   @scala.inline
   def time: time = "time".asInstanceOf[time]
   @scala.inline
-  def timeZone: timeZone = "timeZone".asInstanceOf[timeZone]
-  @scala.inline
   def title: title = "title".asInstanceOf[title]
   @scala.inline
   def tr: tr = "tr".asInstanceOf[tr]
   @scala.inline
   def track: track = "track".asInstanceOf[track]
   @scala.inline
-  def two: two = "two".asInstanceOf[two]
-  @scala.inline
-  def `type`: `type` = "type".asInstanceOf[`type`]
-  @scala.inline
   def u: u = "u".asInstanceOf[u]
   @scala.inline
   def ul: ul = "ul".asInstanceOf[ul]
   @scala.inline
   def unit: unit = "unit".asInstanceOf[unit]
-  @scala.inline
-  def value: value = "value".asInstanceOf[value]
   @scala.inline
   def `var`: `var` = "var".asInstanceOf[`var`]
   @scala.inline
@@ -718,7 +700,5 @@ object reactIntlStrings {
   def wbr: wbr = "wbr".asInstanceOf[wbr]
   @scala.inline
   def webview: webview = "webview".asInstanceOf[webview]
-  @scala.inline
-  def zero: zero = "zero".asInstanceOf[zero]
 }
 

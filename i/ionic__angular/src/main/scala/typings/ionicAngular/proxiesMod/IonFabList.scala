@@ -12,7 +12,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ionic/angular/dist/directives/proxies", "IonFabList")
+@JSImport("@ionic/angular/directives/proxies", "IonFabList")
 @js.native
 class IonFabList protected ()
   extends typings.ionicCore.componentsMod.Components.IonFabList {

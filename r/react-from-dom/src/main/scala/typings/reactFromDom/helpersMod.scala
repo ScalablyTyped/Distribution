@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object helpersMod extends js.Object {
   val noTextChildNodes: js.Array[String] = js.native
-  val possibleStandardNames: IObject = js.native
-  def styleToObject(input: String): IObject = js.native
-  type IObject = StringDictionary[js.Any]
+  val possibleStandardNames: PlainObject = js.native
+  def styleToObject(input: String): PlainObject = js.native
+  type PlainObject = StringDictionary[js.Any]
 }
 

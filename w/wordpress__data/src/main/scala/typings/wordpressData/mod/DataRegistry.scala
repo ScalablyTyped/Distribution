@@ -1,6 +1,6 @@
 package typings.wordpressData.mod
 
-import typings.wordpressData.FnConfig
+import typings.wordpressData.FnCall
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait DataRegistry extends js.Object {
   var dispatch: js.Function1[/* key */ String, DispatcherMap]
   var registerGenericStore: js.Function2[/* key */ String, /* config */ GenericStoreConfig, Unit]
-  var registerStore: FnConfig
+  var registerStore: FnCall
   var select: js.Function1[/* key */ String, SelectorMap]
   var subscribe: Subscriber
 }
@@ -18,7 +18,7 @@ object DataRegistry {
   def apply(
     dispatch: /* key */ String => DispatcherMap,
     registerGenericStore: (/* key */ String, /* config */ GenericStoreConfig) => Unit,
-    registerStore: FnConfig,
+    registerStore: FnCall,
     select: /* key */ String => SelectorMap,
     subscribe: /* callback */ js.Function0[Unit] => js.Function0[Unit]
   ): DataRegistry = {

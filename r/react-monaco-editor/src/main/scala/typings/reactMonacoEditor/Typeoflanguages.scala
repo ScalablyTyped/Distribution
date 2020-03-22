@@ -11,6 +11,8 @@ import typings.monacoEditor.mod.languages.DocumentColorProvider
 import typings.monacoEditor.mod.languages.DocumentFormattingEditProvider
 import typings.monacoEditor.mod.languages.DocumentHighlightProvider
 import typings.monacoEditor.mod.languages.DocumentRangeFormattingEditProvider
+import typings.monacoEditor.mod.languages.DocumentRangeSemanticTokensProvider
+import typings.monacoEditor.mod.languages.DocumentSemanticTokensProvider
 import typings.monacoEditor.mod.languages.DocumentSymbolProvider
 import typings.monacoEditor.mod.languages.EncodedTokensProvider
 import typings.monacoEditor.mod.languages.FoldingRangeProvider
@@ -33,7 +35,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Typeoflanguages extends js.Object {
-  var FoldingRangeKind: TypeofClassFoldingRangeKind = js.native
+  var FoldingRangeKind: TypeofFoldingRangeKind = js.native
   val css: Typeofcss = js.native
   val html: Typeofhtml = js.native
   val json: Typeofjson = js.native
@@ -51,6 +53,8 @@ trait Typeoflanguages extends js.Object {
   def registerDocumentFormattingEditProvider(languageId: String, provider: DocumentFormattingEditProvider): IDisposable = js.native
   def registerDocumentHighlightProvider(languageId: String, provider: DocumentHighlightProvider): IDisposable = js.native
   def registerDocumentRangeFormattingEditProvider(languageId: String, provider: DocumentRangeFormattingEditProvider): IDisposable = js.native
+  def registerDocumentRangeSemanticTokensProvider(languageId: String, provider: DocumentRangeSemanticTokensProvider): IDisposable = js.native
+  def registerDocumentSemanticTokensProvider(languageId: String, provider: DocumentSemanticTokensProvider): IDisposable = js.native
   def registerDocumentSymbolProvider(languageId: String, provider: DocumentSymbolProvider): IDisposable = js.native
   def registerFoldingRangeProvider(languageId: String, provider: FoldingRangeProvider): IDisposable = js.native
   def registerHoverProvider(languageId: String, provider: HoverProvider): IDisposable = js.native

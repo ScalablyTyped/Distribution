@@ -1,6 +1,6 @@
 package typings.winrtUwp.Windows.Media.Protection.PlayReady
 
-import typings.winrtUwp.AnonItemsReturnValueIPlayReadySecureStopServiceRequest
+import typings.winrtUwp.AnonItemsIPlayReadySecureStopServiceRequest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ abstract class PlayReadySecureStopIterator () extends js.Object {
   /**
     * Retrieves all items in the PlayReady secure stop collection.
     */
-  def getMany(): AnonItemsReturnValueIPlayReadySecureStopServiceRequest = js.native
+  def getMany(): AnonItemsIPlayReadySecureStopServiceRequest = js.native
   /**
     * Advances the enumerator to the next item in the collection.
     * @return true if the iterator refers to a valid item that is in the collection or false if the iterator is at the end of the collection.

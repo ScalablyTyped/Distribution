@@ -64,25 +64,22 @@ trait NavigatorOptions extends js.Object {
     * Unless data is explicitly defined on navigator.series, the data is
     * borrowed from the first series in the chart.
     *
-    * Default series options for the navigator series are:
-    *
-    *  (see online documentation for example)
+    * Default series options for the navigator series are: (see online
+    * documentation for example)
     */
   var series: js.UndefOr[
     NavigatorSeriesOptions | SeriesOptionsType | (js.Array[NavigatorSeriesOptions | SeriesOptionsType])
   ] = js.undefined
   /**
     * (Highstock, Gantt) Options for the navigator X axis. Default series
-    * options for the navigator xAxis are:
-    *
-    *  (see online documentation for example)
+    * options for the navigator xAxis are: (see online documentation for
+    * example)
     */
   var xAxis: js.UndefOr[NavigatorXAxisOptions | js.Array[NavigatorXAxisOptions]] = js.undefined
   /**
     * (Highstock, Gantt) Options for the navigator Y axis. Default series
-    * options for the navigator yAxis are:
-    *
-    *  (see online documentation for example)
+    * options for the navigator yAxis are: (see online documentation for
+    * example)
     */
   var yAxis: js.UndefOr[NavigatorYAxisOptions | js.Array[NavigatorYAxisOptions]] = js.undefined
 }

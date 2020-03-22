@@ -1,12 +1,8 @@
 package typings.googleCloudTasks.mod
 
-import typings.googleCloudTasks.googleCloudTasksStrings.appEngineHttpQueue
-import typings.googleCloudTasks.googleCloudTasksStrings.name
-import typings.googleCloudTasks.googleCloudTasksStrings.queue
-import typings.googleCloudTasks.googleCloudTasksStrings.rateLimits
-import typings.googleCloudTasks.googleCloudTasksStrings.retryConfig
+import typings.googleCloudTasks.CreateNamedRequestqueuePa
+import typings.googleCloudTasks.UpdateNamedRequestqueueEn
 import typings.node.streamMod.Transform
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -80,7 +76,7 @@ trait CloudTasksClient extends js.Object {
     *   });
     */
   @JSName("createQueue")
-  var createQueue_Original: MethodOverload[CreateNamedRequest[queue, Partial[Queue]], Queue] = js.native
+  var createQueue_Original: MethodOverload[CreateNamedRequestqueuePa, Queue] = js.native
   /**
     * Creates a task and adds it to a queue.
     *
@@ -1028,10 +1024,7 @@ trait CloudTasksClient extends js.Object {
     *   });
     */
   @JSName("updateQueue")
-  var updateQueue_Original: MethodOverload[
-    UpdateNamedRequest[queue, EnhancedPick[Queue, name, appEngineHttpQueue | rateLimits | retryConfig]], 
-    Queue
-  ] = js.native
+  var updateQueue_Original: MethodOverload[UpdateNamedRequestqueueEn, Queue] = js.native
   /**
     * Creates a queue.
     *
@@ -1097,8 +1090,7 @@ trait CloudTasksClient extends js.Object {
     *     console.error(err);
     *   });
     */
-  @JSName("createQueue")
-  def createQueue_queue(data: CreateNamedRequest[queue, Partial[Queue]]): PromiseLike[js.Array[Queue]] = js.native
+  def createQueue(data: CreateNamedRequestqueuePa): PromiseLike[js.Array[Queue]] = js.native
   /**
     * Creates a queue.
     *
@@ -1164,10 +1156,8 @@ trait CloudTasksClient extends js.Object {
     *     console.error(err);
     *   });
     */
-  @JSName("createQueue")
-  def createQueue_queue(data: CreateNamedRequest[queue, Partial[Queue]], callback: APICallback[Queue]): Unit = js.native
-  @JSName("createQueue")
-  def createQueue_queue(data: CreateNamedRequest[queue, Partial[Queue]], options: CallOptions): PromiseLike[js.Array[Queue]] = js.native
+  def createQueue(data: CreateNamedRequestqueuePa, callback: APICallback[Queue]): Unit = js.native
+  def createQueue(data: CreateNamedRequestqueuePa, options: CallOptions): PromiseLike[js.Array[Queue]] = js.native
   /**
     * Creates a queue.
     *
@@ -1233,12 +1223,7 @@ trait CloudTasksClient extends js.Object {
     *     console.error(err);
     *   });
     */
-  @JSName("createQueue")
-  def createQueue_queue(
-    data: CreateNamedRequest[queue, Partial[Queue]],
-    options: CallOptions,
-    callback: APICallback[Queue]
-  ): Unit = js.native
+  def createQueue(data: CreateNamedRequestqueuePa, options: CallOptions, callback: APICallback[Queue]): Unit = js.native
   /**
     * Creates a task and adds it to a queue.
     *
@@ -4591,9 +4576,7 @@ trait CloudTasksClient extends js.Object {
     *     console.error(err);
     *   });
     */
-  def updateQueue(
-    data: UpdateNamedRequest[queue, EnhancedPick[Queue, name, appEngineHttpQueue | rateLimits | retryConfig]]
-  ): PromiseLike[js.Array[Queue]] = js.native
+  def updateQueue(data: UpdateNamedRequestqueueEn): PromiseLike[js.Array[Queue]] = js.native
   /**
     * Updates a queue.
     *
@@ -4658,14 +4641,8 @@ trait CloudTasksClient extends js.Object {
     *     console.error(err);
     *   });
     */
-  def updateQueue(
-    data: UpdateNamedRequest[queue, EnhancedPick[Queue, name, appEngineHttpQueue | rateLimits | retryConfig]],
-    callback: APICallback[Queue]
-  ): Unit = js.native
-  def updateQueue(
-    data: UpdateNamedRequest[queue, EnhancedPick[Queue, name, appEngineHttpQueue | rateLimits | retryConfig]],
-    options: CallOptions
-  ): PromiseLike[js.Array[Queue]] = js.native
+  def updateQueue(data: UpdateNamedRequestqueueEn, callback: APICallback[Queue]): Unit = js.native
+  def updateQueue(data: UpdateNamedRequestqueueEn, options: CallOptions): PromiseLike[js.Array[Queue]] = js.native
   /**
     * Updates a queue.
     *
@@ -4730,10 +4707,6 @@ trait CloudTasksClient extends js.Object {
     *     console.error(err);
     *   });
     */
-  def updateQueue(
-    data: UpdateNamedRequest[queue, EnhancedPick[Queue, name, appEngineHttpQueue | rateLimits | retryConfig]],
-    options: CallOptions,
-    callback: APICallback[Queue]
-  ): Unit = js.native
+  def updateQueue(data: UpdateNamedRequestqueueEn, options: CallOptions, callback: APICallback[Queue]): Unit = js.native
 }
 

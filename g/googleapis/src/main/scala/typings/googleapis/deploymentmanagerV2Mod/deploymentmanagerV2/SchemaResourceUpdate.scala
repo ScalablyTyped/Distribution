@@ -1,7 +1,7 @@
 package typings.googleapis.deploymentmanagerV2Mod.deploymentmanagerV2
 
 import typings.googleapis.AnonCode
-import typings.googleapis.AnonErrorsAnonCodeLocation
+import typings.googleapis.AnonErrorsArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +17,7 @@ trait SchemaResourceUpdate extends js.Object {
     * Output only. If errors are generated during update of the resource, this
     * field will be populated.
     */
-  var error: js.UndefOr[AnonErrorsAnonCodeLocation] = js.native
+  var error: js.UndefOr[AnonErrorsArray] = js.native
   /**
     * Output only. The expanded properties of the resource with reference
     * values expanded. Returned as serialized YAML.
@@ -52,7 +52,7 @@ object SchemaResourceUpdate {
   @scala.inline
   def apply(
     accessControl: SchemaResourceAccessControl = null,
-    error: AnonErrorsAnonCodeLocation = null,
+    error: AnonErrorsArray = null,
     finalProperties: String = null,
     intent: String = null,
     manifest: String = null,

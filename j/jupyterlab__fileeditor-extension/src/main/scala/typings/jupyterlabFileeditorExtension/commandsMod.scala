@@ -4,9 +4,8 @@ import typings.jupyterlabApplication.frontendMod.JupyterFrontEnd.IShell
 import typings.jupyterlabApplication.mod.JupyterFrontEnd
 import typings.jupyterlabApputils.commandpaletteMod.ICommandPalette
 import typings.jupyterlabApputils.mod.WidgetTracker
+import typings.jupyterlabApputils.tokensMod.ISessionContextDialogs
 import typings.jupyterlabConsole.tokensMod.IConsoleTracker
-import typings.jupyterlabCoreutils.tokensMod.ISettingRegistry
-import typings.jupyterlabCoreutils.tokensMod.ISettingRegistry.ISettings
 import typings.jupyterlabDocregistry.registryMod.DocumentRegistry.IModel
 import typings.jupyterlabDocregistry.registryMod.IDocumentWidget
 import typings.jupyterlabFilebrowser.tokensMod.IFileBrowserFactory
@@ -24,11 +23,11 @@ import typings.jupyterlabFileeditorExtension.jupyterlabFileeditorExtensionString
 import typings.jupyterlabFileeditorExtension.jupyterlabFileeditorExtensionStrings.`fileeditorColontoggle-line-numbers`
 import typings.jupyterlabFileeditorExtension.jupyterlabFileeditorExtensionStrings.`fileeditorColontoggle-line-wrap`
 import typings.jupyterlabFileeditorExtension.jupyterlabFileeditorExtensionStrings.`fileeditorColontoggle-match-brackets`
-import typings.jupyterlabFileeditorExtension.jupyterlabFileeditorExtensionStrings.`jp-MarkdownIcon`
-import typings.jupyterlabFileeditorExtension.jupyterlabFileeditorExtensionStrings.`jp-MaterialIcon jp-TextEditorIcon`
 import typings.jupyterlabLauncher.mod.ILauncher
 import typings.jupyterlabMainmenu.tokensMod.IMainMenu
-import typings.phosphorCommands.mod.CommandRegistry
+import typings.jupyterlabSettingregistry.tokensMod.ISettingRegistry
+import typings.jupyterlabSettingregistry.tokensMod.ISettingRegistry.ISettings
+import typings.luminoCommands.mod.CommandRegistry
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -36,9 +35,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@jupyterlab/fileeditor-extension/lib/commands", JSImport.Namespace)
 @js.native
 object commandsMod extends js.Object {
-  val EDITOR_ICON_CLASS: `jp-MaterialIcon jp-TextEditorIcon` = js.native
   val FACTORY: Editor = js.native
-  val MARKDOWN_ICON_CLASS: `jp-MarkdownIcon` = js.native
   @js.native
   object CommandIDs extends js.Object {
     val autoClosingBrackets: `fileeditorColontoggle-autoclosing-brackets` = js.native
@@ -77,6 +74,12 @@ object commandsMod extends js.Object {
       * Add commands to change the tab indentation to the File Editor palette
       */
     def addChangeTabsCommandsToPalette(palette: ICommandPalette): Unit = js.native
+    def addCodeRunnersToRunMenu(
+      menu: IMainMenu,
+      commands: CommandRegistry,
+      tracker: WidgetTracker[IDocumentWidget[FileEditor, IModel]],
+      consoleTracker: IConsoleTracker
+    ): Unit = js.native
     /**
       * Add a File Editor code runner to the Run menu
       */
@@ -84,7 +87,8 @@ object commandsMod extends js.Object {
       menu: IMainMenu,
       commands: CommandRegistry,
       tracker: WidgetTracker[IDocumentWidget[FileEditor, IModel]],
-      consoleTracker: IConsoleTracker
+      consoleTracker: IConsoleTracker,
+      sessionDialogs: ISessionContextDialogs
     ): Unit = js.native
     /**
       * Wrapper function for adding the default File Editor commands
@@ -192,6 +196,12 @@ object commandsMod extends js.Object {
       id: String,
       isEnabled: js.Function0[Boolean]
     ): Unit = js.native
+    def addMenuItems(
+      menu: IMainMenu,
+      commands: CommandRegistry,
+      tracker: WidgetTracker[IDocumentWidget[FileEditor, IModel]],
+      consoleTracker: IConsoleTracker
+    ): Unit = js.native
     /**
       * Wrapper function for adding the default menu items for File Editor
       */
@@ -199,7 +209,8 @@ object commandsMod extends js.Object {
       menu: IMainMenu,
       commands: CommandRegistry,
       tracker: WidgetTracker[IDocumentWidget[FileEditor, IModel]],
-      consoleTracker: IConsoleTracker
+      consoleTracker: IConsoleTracker,
+      sessionDialogs: ISessionContextDialogs
     ): Unit = js.native
     /**
       * Wrapper function for adding the default items to the File Editor palette
@@ -244,6 +255,7 @@ object commandsMod extends js.Object {
     def updateTracker(tracker: WidgetTracker[IDocumentWidget[FileEditor, IModel]]): Unit = js.native
     /**
       * Update the settings of a widget.
+      * Skip global settings for transient editor specific configs.
       */
     def updateWidget(widget: FileEditor): Unit = js.native
   }

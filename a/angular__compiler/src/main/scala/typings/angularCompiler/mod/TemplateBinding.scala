@@ -8,9 +8,16 @@ import scala.scalajs.js.annotation._
 @js.native
 class TemplateBinding protected ()
   extends typings.angularCompiler.publicApiMod.TemplateBinding {
-  def this(span: typings.angularCompiler.astMod.ParseSpan, key: String, keyIsVar: Boolean, name: String) = this()
   def this(
     span: typings.angularCompiler.astMod.ParseSpan,
+    sourceSpan: typings.angularCompiler.astMod.AbsoluteSourceSpan,
+    key: String,
+    keyIsVar: Boolean,
+    name: String
+  ) = this()
+  def this(
+    span: typings.angularCompiler.astMod.ParseSpan,
+    sourceSpan: typings.angularCompiler.astMod.AbsoluteSourceSpan,
     key: String,
     keyIsVar: Boolean,
     name: String,

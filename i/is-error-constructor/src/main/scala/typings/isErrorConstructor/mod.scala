@@ -11,7 +11,7 @@ object mod extends js.Object {
   // declare function isErrorConstructor(value: unknown): value is ErrorConstructor;
   // export = isErrorConstructor;
   @JSName("default")
-  var default_Original: AnonDefault = js.native
+  var default_Original: AnonCall = js.native
   /**
   	Check if a value is an error constructor.
   	@example

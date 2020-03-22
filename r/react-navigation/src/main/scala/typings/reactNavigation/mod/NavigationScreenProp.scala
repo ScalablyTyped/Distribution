@@ -1,6 +1,6 @@
 package typings.reactNavigation.mod
 
-import typings.reactNavigation.AnonActionKey
+import typings.reactNavigation.AnonKey
 import typings.reactNavigation.AnonParamsP
 import typings.reactNavigation.reactNavigationStrings.refocus
 import typings.std.NonNullable
@@ -32,7 +32,7 @@ trait NavigationScreenProp[S, P] extends js.Object {
   def goBack(routeKey: String): Boolean = js.native
   def isFirstRouteInParent(): Boolean = js.native
   def isFocused(): Boolean = js.native
-  def navigate[T /* <: NavigationParams */](options: AnonActionKey[T]): Boolean = js.native
+  def navigate[T /* <: NavigationParams */](options: AnonKey[T]): Boolean = js.native
   def navigate[T /* <: NavigationParams */](routeNameOrOptions: String): Boolean = js.native
   def navigate[T /* <: NavigationParams */](routeNameOrOptions: String, params: T): Boolean = js.native
   def navigate[T /* <: NavigationParams */](routeNameOrOptions: String, params: T, action: NavigationAction): Boolean = js.native

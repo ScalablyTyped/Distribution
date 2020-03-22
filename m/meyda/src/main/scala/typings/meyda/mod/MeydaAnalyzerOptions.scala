@@ -1,8 +1,8 @@
 package typings.meyda.mod
 
+import typings.meyda.PartialMeydaFeaturesObjec
 import typings.std.AudioContext
 import typings.std.AudioNode
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 trait MeydaAnalyzerOptions extends js.Object {
   var audioContext: AudioContext
   var bufferSize: Double
-  var callback: js.UndefOr[js.Function1[/* features */ Partial[MeydaFeaturesObject], Unit]] = js.undefined
+  var callback: js.UndefOr[js.Function1[/* features */ PartialMeydaFeaturesObjec, Unit]] = js.undefined
   var featureExtractors: js.UndefOr[MeydaAudioFeature | js.Array[MeydaAudioFeature]] = js.undefined
   var hopSize: js.UndefOr[Double] = js.undefined
   var numberOfMFCCCoefficients: js.UndefOr[Double] = js.undefined
@@ -24,7 +24,7 @@ object MeydaAnalyzerOptions {
     audioContext: AudioContext,
     bufferSize: Double,
     source: AudioNode,
-    callback: /* features */ Partial[MeydaFeaturesObject] => Unit = null,
+    callback: /* features */ PartialMeydaFeaturesObjec => Unit = null,
     featureExtractors: MeydaAudioFeature | js.Array[MeydaAudioFeature] = null,
     hopSize: Int | Double = null,
     numberOfMFCCCoefficients: Int | Double = null,

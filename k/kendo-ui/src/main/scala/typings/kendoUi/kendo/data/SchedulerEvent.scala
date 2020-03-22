@@ -1,6 +1,6 @@
 package typings.kendoUi.kendo.data
 
-import typings.kendoUi.TypeofClassSchedulerEvent
+import typings.kendoUi.TypeofSchedulerEvent
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -39,7 +39,7 @@ class SchedulerEvent () extends Model {
 object SchedulerEvent extends js.Object {
   var fields: DataSourceSchemaModelFields = js.native
   var idField: String = js.native
-  def define(options: DataSourceSchemaModelWithFieldsArray): TypeofClassSchedulerEvent = js.native
-  def define(options: DataSourceSchemaModelWithFieldsObject): TypeofClassSchedulerEvent = js.native
+  def define(options: DataSourceSchemaModelWithFieldsArray): TypeofSchedulerEvent = js.native
+  def define(options: DataSourceSchemaModelWithFieldsObject): TypeofSchedulerEvent = js.native
 }
 

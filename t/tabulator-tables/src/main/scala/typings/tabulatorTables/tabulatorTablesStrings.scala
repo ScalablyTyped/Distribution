@@ -162,9 +162,6 @@ object tabulatorTablesStrings {
   sealed trait exists extends js.Object
   
   @js.native
-  sealed trait field extends js.Object
-  
-  @js.native
   sealed trait filter extends js.Object
   
   @js.native
@@ -413,9 +410,6 @@ object tabulatorTablesStrings {
   sealed trait update extends js.Object
   
   @js.native
-  sealed trait value extends js.Object
-  
-  @js.native
   sealed trait visible extends VisibleRowRangeLookup
   
   @js.native
@@ -519,8 +513,6 @@ object tabulatorTablesStrings {
   def editor: editor = "editor".asInstanceOf[editor]
   @scala.inline
   def exists: exists = "exists".asInstanceOf[exists]
-  @scala.inline
-  def field: field = "field".asInstanceOf[field]
   @scala.inline
   def filter: filter = "filter".asInstanceOf[filter]
   @scala.inline
@@ -677,8 +669,6 @@ object tabulatorTablesStrings {
   def unique: unique = "unique".asInstanceOf[unique]
   @scala.inline
   def update: update = "update".asInstanceOf[update]
-  @scala.inline
-  def value: value = "value".asInstanceOf[value]
   @scala.inline
   def visible: visible = "visible".asInstanceOf[visible]
   @scala.inline

@@ -78,7 +78,7 @@ trait TypeofReact extends js.Object {
   val Children: ReactChildren = js.native
   // Base component for plain JS classes
   // tslint:disable-next-line:no-empty-interface
-  var Component: TypeofClassComponent = js.native
+  var Component: TypeofComponent = js.native
   val Fragment: ExoticComponent[AnonChildren] = js.native
   val Profiler: ExoticComponent[ProfilerProps] = js.native
   var PureComponent: Instantiable0[typings.react.mod.PureComponent[js.Object, js.Object, js.Object]] = js.native

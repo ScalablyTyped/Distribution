@@ -1,6 +1,7 @@
 package typings.awsSdk.medialiveMod
 
-import typings.awsSdk.AnonWaiter
+import typings.awsSdk.DescribeChannelRequestwai
+import typings.awsSdk.DescribeMultiplexRequestw
 import typings.awsSdk.awsSdkStrings.channelCreated
 import typings.awsSdk.awsSdkStrings.channelDeleted
 import typings.awsSdk.awsSdkStrings.channelRunning
@@ -588,11 +589,11 @@ trait MediaLive extends Service {
     * Waits for the channelCreated state by periodically calling the underlying MediaLive.describeChanneloperation every 3 seconds (at most 5 times). Wait until a channel has been created
     */
   @JSName("waitFor")
-  def waitFor_channelCreated(state: channelCreated, params: DescribeChannelRequest with AnonWaiter): Request[DescribeChannelResponse, AWSError] = js.native
+  def waitFor_channelCreated(state: channelCreated, params: DescribeChannelRequestwai): Request[DescribeChannelResponse, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_channelCreated(
     state: channelCreated,
-    params: DescribeChannelRequest with AnonWaiter,
+    params: DescribeChannelRequestwai,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeChannelResponse, Unit]
   ): Request[DescribeChannelResponse, AWSError] = js.native
   /**
@@ -609,11 +610,11 @@ trait MediaLive extends Service {
     * Waits for the channelDeleted state by periodically calling the underlying MediaLive.describeChanneloperation every 5 seconds (at most 20 times). Wait until a channel has been deleted
     */
   @JSName("waitFor")
-  def waitFor_channelDeleted(state: channelDeleted, params: DescribeChannelRequest with AnonWaiter): Request[DescribeChannelResponse, AWSError] = js.native
+  def waitFor_channelDeleted(state: channelDeleted, params: DescribeChannelRequestwai): Request[DescribeChannelResponse, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_channelDeleted(
     state: channelDeleted,
-    params: DescribeChannelRequest with AnonWaiter,
+    params: DescribeChannelRequestwai,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeChannelResponse, Unit]
   ): Request[DescribeChannelResponse, AWSError] = js.native
   /**
@@ -630,11 +631,11 @@ trait MediaLive extends Service {
     * Waits for the channelRunning state by periodically calling the underlying MediaLive.describeChanneloperation every 5 seconds (at most 120 times). Wait until a channel is running
     */
   @JSName("waitFor")
-  def waitFor_channelRunning(state: channelRunning, params: DescribeChannelRequest with AnonWaiter): Request[DescribeChannelResponse, AWSError] = js.native
+  def waitFor_channelRunning(state: channelRunning, params: DescribeChannelRequestwai): Request[DescribeChannelResponse, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_channelRunning(
     state: channelRunning,
-    params: DescribeChannelRequest with AnonWaiter,
+    params: DescribeChannelRequestwai,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeChannelResponse, Unit]
   ): Request[DescribeChannelResponse, AWSError] = js.native
   /**
@@ -651,11 +652,11 @@ trait MediaLive extends Service {
     * Waits for the channelStopped state by periodically calling the underlying MediaLive.describeChanneloperation every 5 seconds (at most 28 times). Wait until a channel has is stopped
     */
   @JSName("waitFor")
-  def waitFor_channelStopped(state: channelStopped, params: DescribeChannelRequest with AnonWaiter): Request[DescribeChannelResponse, AWSError] = js.native
+  def waitFor_channelStopped(state: channelStopped, params: DescribeChannelRequestwai): Request[DescribeChannelResponse, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_channelStopped(
     state: channelStopped,
-    params: DescribeChannelRequest with AnonWaiter,
+    params: DescribeChannelRequestwai,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeChannelResponse, Unit]
   ): Request[DescribeChannelResponse, AWSError] = js.native
   /**
@@ -672,11 +673,11 @@ trait MediaLive extends Service {
     * Waits for the multiplexCreated state by periodically calling the underlying MediaLive.describeMultiplexoperation every 3 seconds (at most 5 times). Wait until a multiplex has been created
     */
   @JSName("waitFor")
-  def waitFor_multiplexCreated(state: multiplexCreated, params: DescribeMultiplexRequest with AnonWaiter): Request[DescribeMultiplexResponse, AWSError] = js.native
+  def waitFor_multiplexCreated(state: multiplexCreated, params: DescribeMultiplexRequestw): Request[DescribeMultiplexResponse, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_multiplexCreated(
     state: multiplexCreated,
-    params: DescribeMultiplexRequest with AnonWaiter,
+    params: DescribeMultiplexRequestw,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeMultiplexResponse, Unit]
   ): Request[DescribeMultiplexResponse, AWSError] = js.native
   /**
@@ -693,11 +694,11 @@ trait MediaLive extends Service {
     * Waits for the multiplexDeleted state by periodically calling the underlying MediaLive.describeMultiplexoperation every 5 seconds (at most 20 times). Wait until a multiplex has been deleted
     */
   @JSName("waitFor")
-  def waitFor_multiplexDeleted(state: multiplexDeleted, params: DescribeMultiplexRequest with AnonWaiter): Request[DescribeMultiplexResponse, AWSError] = js.native
+  def waitFor_multiplexDeleted(state: multiplexDeleted, params: DescribeMultiplexRequestw): Request[DescribeMultiplexResponse, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_multiplexDeleted(
     state: multiplexDeleted,
-    params: DescribeMultiplexRequest with AnonWaiter,
+    params: DescribeMultiplexRequestw,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeMultiplexResponse, Unit]
   ): Request[DescribeMultiplexResponse, AWSError] = js.native
   /**
@@ -714,11 +715,11 @@ trait MediaLive extends Service {
     * Waits for the multiplexRunning state by periodically calling the underlying MediaLive.describeMultiplexoperation every 5 seconds (at most 120 times). Wait until a multiplex is running
     */
   @JSName("waitFor")
-  def waitFor_multiplexRunning(state: multiplexRunning, params: DescribeMultiplexRequest with AnonWaiter): Request[DescribeMultiplexResponse, AWSError] = js.native
+  def waitFor_multiplexRunning(state: multiplexRunning, params: DescribeMultiplexRequestw): Request[DescribeMultiplexResponse, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_multiplexRunning(
     state: multiplexRunning,
-    params: DescribeMultiplexRequest with AnonWaiter,
+    params: DescribeMultiplexRequestw,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeMultiplexResponse, Unit]
   ): Request[DescribeMultiplexResponse, AWSError] = js.native
   /**
@@ -735,11 +736,11 @@ trait MediaLive extends Service {
     * Waits for the multiplexStopped state by periodically calling the underlying MediaLive.describeMultiplexoperation every 5 seconds (at most 28 times). Wait until a multiplex has is stopped
     */
   @JSName("waitFor")
-  def waitFor_multiplexStopped(state: multiplexStopped, params: DescribeMultiplexRequest with AnonWaiter): Request[DescribeMultiplexResponse, AWSError] = js.native
+  def waitFor_multiplexStopped(state: multiplexStopped, params: DescribeMultiplexRequestw): Request[DescribeMultiplexResponse, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_multiplexStopped(
     state: multiplexStopped,
-    params: DescribeMultiplexRequest with AnonWaiter,
+    params: DescribeMultiplexRequestw,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeMultiplexResponse, Unit]
   ): Request[DescribeMultiplexResponse, AWSError] = js.native
 }

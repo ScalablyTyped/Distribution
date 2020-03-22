@@ -3,6 +3,7 @@ package typings.ionicCore
 import typings.ionicCore.actionSheetInterfaceMod.ActionSheetOptions
 import typings.ionicCore.alertInterfaceMod.AlertOptions
 import typings.ionicCore.animationInterfaceMod.Animation
+import typings.ionicCore.animationInterfaceMod.AnimationBuilder
 import typings.ionicCore.componentsMod._Global_.HTMLIonActionSheetElement
 import typings.ionicCore.componentsMod._Global_.HTMLIonAlertElement
 import typings.ionicCore.componentsMod._Global_.HTMLIonLoadingElement
@@ -37,7 +38,6 @@ import typings.ionicCore.loadingInterfaceMod.LoadingOptions
 import typings.ionicCore.menuInterfaceMod.MenuI
 import typings.ionicCore.mod.ComponentRef
 import typings.ionicCore.modalInterfaceMod.ModalOptions
-import typings.ionicCore.oldAnimationAnimationInterfaceMod.AnimationBuilder
 import typings.ionicCore.pickerInterfaceMod.PickerOptions
 import typings.ionicCore.platformMod.IsPlatformSignature
 import typings.ionicCore.popoverInterfaceMod.PopoverOptions
@@ -57,11 +57,19 @@ object typesMod extends js.Object {
   val LIFECYCLE_WILL_UNLOAD: ionViewWillUnload = js.native
   val isPlatform: IsPlatformSignature = js.native
   def createAnimation(): Animation = js.native
+  def createAnimation(animationId: String): Animation = js.native
   def createGesture(config: GestureConfig): Gesture = js.native
   def getMode(): ios | md = js.native
   def getPlatforms(win: js.Any): js.Array[
     ios | ipad | iphone | android | phablet | tablet | cordova | capacitor | electron | pwa | mobile | mobileweb | desktop | hybrid
   ] = js.native
+  def getTimeGivenProgression(
+    p0: js.Array[Double],
+    p1: js.Array[Double],
+    p2: js.Array[Double],
+    p3: js.Array[Double],
+    progression: Double
+  ): js.Array[Double] = js.native
   def setupConfig(config: IonicConfig): js.Any = js.native
   @js.native
   object actionSheetController extends js.Object {
@@ -119,7 +127,6 @@ object typesMod extends js.Object {
     def isOpen(menu: String): js.Promise[Boolean] = js.native
     def open(): js.Promise[Boolean] = js.native
     def open(menu: String): js.Promise[Boolean] = js.native
-    def registerAnimation(name: String, animation: js.Function1[/* menu */ MenuI, Animation]): Unit = js.native
     def registerAnimation(name: String, animation: AnimationBuilder): Unit = js.native
     def swipeGesture(shouldEnable: Boolean): js.Promise[js.UndefOr[HTMLIonMenuElement]] = js.native
     def swipeGesture(shouldEnable: Boolean, menu: String): js.Promise[js.UndefOr[HTMLIonMenuElement]] = js.native

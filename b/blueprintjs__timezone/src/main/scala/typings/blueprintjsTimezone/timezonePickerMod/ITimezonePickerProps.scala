@@ -1,12 +1,11 @@
 package typings.blueprintjsTimezone.timezonePickerMod
 
-import typings.blueprintjsCore.abstractButtonMod.IButtonProps
 import typings.blueprintjsCore.inputGroupMod.IInputGroupProps
-import typings.blueprintjsCore.popoverMod.IPopoverProps
 import typings.blueprintjsCore.propsMod.HTMLInputProps
 import typings.blueprintjsCore.propsMod.IProps
+import typings.blueprintjsTimezone.PartialIButtonProps
+import typings.blueprintjsTimezone.PartialIPopoverProps
 import typings.std.Date
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +15,7 @@ trait ITimezonePickerProps extends IProps {
     * Props to spread to the target `Button`.
     * This prop will be ignored if `children` is provided.
     */
-  var buttonProps: js.UndefOr[Partial[IButtonProps]] = js.undefined
+  var buttonProps: js.UndefOr[PartialIButtonProps] = js.undefined
   /**
     * The date to use when formatting timezone offsets.
     * An offset date is necessary to account for DST, but typically the default value of `now` will be sufficient.
@@ -43,7 +42,7 @@ trait ITimezonePickerProps extends IProps {
     */
   var placeholder: js.UndefOr[String] = js.undefined
   /** Props to spread to `Popover`. Note that `content` cannot be changed. */
-  var popoverProps: js.UndefOr[Partial[IPopoverProps]] = js.undefined
+  var popoverProps: js.UndefOr[PartialIPopoverProps] = js.undefined
   /**
     * Whether to show the local timezone at the top of the list of initial timezone suggestions.
     * @default true
@@ -70,13 +69,13 @@ object ITimezonePickerProps {
   @scala.inline
   def apply(
     onChange: String => Unit,
-    buttonProps: Partial[IButtonProps] = null,
+    buttonProps: PartialIButtonProps = null,
     className: String = null,
     date: Date = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     inputProps: IInputGroupProps with HTMLInputProps = null,
     placeholder: String = null,
-    popoverProps: Partial[IPopoverProps] = null,
+    popoverProps: PartialIPopoverProps = null,
     showLocalTimezone: js.UndefOr[Boolean] = js.undefined,
     value: String = null,
     valueDisplayFormat: typings.blueprintjsTimezone.timezoneDisplayFormatMod.TimezoneDisplayFormat = null

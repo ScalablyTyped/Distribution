@@ -30,5 +30,14 @@ object mapHashBucketsMod extends js.Object {
     def key_eq(): Comparator[Key, Key] = js.native
   }
   
+  /* static members */
+  @js.native
+  object MapHashBuckets extends js.Object {
+    /**
+      * @internal
+      */
+    def _Swap_source[Key, T, Unique /* <: Boolean */, Source /* <: IHashMap[Key, T, Unique, Source] */](x: MapHashBuckets[Key, T, Unique, Source], y: MapHashBuckets[Key, T, Unique, Source]): Unit = js.native
+  }
+  
 }
 

@@ -11,10 +11,10 @@ trait Kik_ extends js.Object {
   var formHelpers: AnonHide = js.native
   var linkData: String = js.native
   var message: KikMessage = js.native
-  var metrics: AnonDomain = js.native
-  var photo: AnonCallback = js.native
+  var metrics: AnonEnableGoogleAnalytics = js.native
+  var photo: AnonGet = js.native
   @JSName("picker")
-  var picker_Original: AnonCallbackData = js.native
+  var picker_Original: AnonCall = js.native
   var utils: AnonPlatform = js.native
   def anonymousSign(
     data: String,

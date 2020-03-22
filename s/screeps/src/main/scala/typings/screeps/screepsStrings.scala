@@ -18,145 +18,142 @@ object screepsStrings {
   sealed trait `7` extends ExitKey
   
   @js.native
-  sealed trait G extends js.Object
+  sealed trait G extends ResourceConstantSansEnergy
   
   @js.native
-  sealed trait GH extends js.Object
+  sealed trait GH extends ResourceConstantSansEnergy
   
   @js.native
-  sealed trait GH2O extends js.Object
+  sealed trait GH2O extends ResourceConstantSansEnergy
   
   @js.native
-  sealed trait GHO2 extends js.Object
+  sealed trait GHO2 extends ResourceConstantSansEnergy
   
   @js.native
-  sealed trait GO extends js.Object
+  sealed trait GO extends ResourceConstantSansEnergy
   
   @js.native
-  sealed trait GenericStore extends js.Object
+  sealed trait H extends ResourceConstantSansEnergy
   
   @js.native
-  sealed trait H extends js.Object
+  sealed trait K extends ResourceConstantSansEnergy
   
   @js.native
-  sealed trait K extends js.Object
+  sealed trait KH extends ResourceConstantSansEnergy
   
   @js.native
-  sealed trait KH extends js.Object
+  sealed trait KH2O extends ResourceConstantSansEnergy
   
   @js.native
-  sealed trait KH2O extends js.Object
+  sealed trait KHO2 extends ResourceConstantSansEnergy
   
   @js.native
-  sealed trait KHO2 extends js.Object
+  sealed trait KO extends ResourceConstantSansEnergy
   
   @js.native
-  sealed trait KO extends js.Object
+  sealed trait L extends ResourceConstantSansEnergy
   
   @js.native
-  sealed trait L extends js.Object
+  sealed trait LH extends ResourceConstantSansEnergy
   
   @js.native
-  sealed trait LH extends js.Object
+  sealed trait LH2O extends ResourceConstantSansEnergy
   
   @js.native
-  sealed trait LH2O extends js.Object
+  sealed trait LHO2 extends ResourceConstantSansEnergy
   
   @js.native
-  sealed trait LHO2 extends js.Object
+  sealed trait LO extends ResourceConstantSansEnergy
   
   @js.native
-  sealed trait LO extends js.Object
+  sealed trait O extends ResourceConstantSansEnergy
   
   @js.native
-  sealed trait O extends js.Object
-  
-  @js.native
-  sealed trait OH extends js.Object
+  sealed trait OH extends ResourceConstantSansEnergy
   
   @js.native
   sealed trait Store extends js.Object
   
   @js.native
-  sealed trait U extends js.Object
+  sealed trait U extends ResourceConstantSansEnergy
   
   @js.native
-  sealed trait UH extends js.Object
+  sealed trait UH extends ResourceConstantSansEnergy
   
   @js.native
-  sealed trait UH2O extends js.Object
+  sealed trait UH2O extends ResourceConstantSansEnergy
   
   @js.native
-  sealed trait UHO2 extends js.Object
+  sealed trait UHO2 extends ResourceConstantSansEnergy
   
   @js.native
-  sealed trait UL extends js.Object
+  sealed trait UL extends ResourceConstantSansEnergy
   
   @js.native
-  sealed trait UO extends js.Object
+  sealed trait UO extends ResourceConstantSansEnergy
   
   @js.native
-  sealed trait X extends js.Object
+  sealed trait X extends ResourceConstantSansEnergy
   
   @js.native
-  sealed trait XGH2O extends js.Object
+  sealed trait XGH2O extends ResourceConstantSansEnergy
   
   @js.native
-  sealed trait XGHO2 extends js.Object
+  sealed trait XGHO2 extends ResourceConstantSansEnergy
   
   @js.native
-  sealed trait XKH2O extends js.Object
+  sealed trait XKH2O extends ResourceConstantSansEnergy
   
   @js.native
-  sealed trait XKHO2 extends js.Object
+  sealed trait XKHO2 extends ResourceConstantSansEnergy
   
   @js.native
-  sealed trait XLH2O extends js.Object
+  sealed trait XLH2O extends ResourceConstantSansEnergy
   
   @js.native
-  sealed trait XLHO2 extends js.Object
+  sealed trait XLHO2 extends ResourceConstantSansEnergy
   
   @js.native
-  sealed trait XUH2O extends js.Object
+  sealed trait XUH2O extends ResourceConstantSansEnergy
   
   @js.native
-  sealed trait XUHO2 extends js.Object
+  sealed trait XUHO2 extends ResourceConstantSansEnergy
   
   @js.native
-  sealed trait XZH2O extends js.Object
+  sealed trait XZH2O extends ResourceConstantSansEnergy
   
   @js.native
-  sealed trait XZHO2 extends js.Object
+  sealed trait XZHO2 extends ResourceConstantSansEnergy
   
   @js.native
-  sealed trait Z extends js.Object
+  sealed trait Z extends ResourceConstantSansEnergy
   
   @js.native
-  sealed trait ZH extends js.Object
+  sealed trait ZH extends ResourceConstantSansEnergy
   
   @js.native
-  sealed trait ZH2O extends js.Object
+  sealed trait ZH2O extends ResourceConstantSansEnergy
   
   @js.native
-  sealed trait ZHO2 extends js.Object
+  sealed trait ZHO2 extends ResourceConstantSansEnergy
   
   @js.native
-  sealed trait ZK extends js.Object
+  sealed trait ZK extends ResourceConstantSansEnergy
   
   @js.native
-  sealed trait ZO extends js.Object
+  sealed trait ZO extends ResourceConstantSansEnergy
   
   @js.native
-  sealed trait alloy extends js.Object
+  sealed trait alloy extends ResourceConstantSansEnergy
   
   @js.native
   sealed trait attack extends js.Object
   
   @js.native
-  sealed trait battery extends js.Object
+  sealed trait battery extends ResourceConstantSansEnergy
   
   @js.native
-  sealed trait biomass extends js.Object
+  sealed trait biomass extends ResourceConstantSansEnergy
   
   @js.native
   sealed trait buy extends js.Object
@@ -165,25 +162,25 @@ object screepsStrings {
   sealed trait carry extends js.Object
   
   @js.native
-  sealed trait cell extends js.Object
+  sealed trait cell extends ResourceConstantSansEnergy
   
   @js.native
   sealed trait center extends js.Object
   
   @js.native
-  sealed trait circuit extends js.Object
+  sealed trait circuit extends ResourceConstantSansEnergy
   
   @js.native
   sealed trait claim extends js.Object
   
   @js.native
-  sealed trait composite extends js.Object
+  sealed trait composite extends ResourceConstantSansEnergy
   
   @js.native
-  sealed trait concentrate extends js.Object
+  sealed trait concentrate extends ResourceConstantSansEnergy
   
   @js.native
-  sealed trait condensate extends js.Object
+  sealed trait condensate extends ResourceConstantSansEnergy
   
   @js.native
   sealed trait constructedWall extends js.Object
@@ -201,7 +198,7 @@ object screepsStrings {
   sealed trait creep extends js.Object
   
   @js.native
-  sealed trait crystal extends js.Object
+  sealed trait crystal extends ResourceConstantSansEnergy
   
   @js.native
   sealed trait dashed extends js.Object
@@ -210,19 +207,19 @@ object screepsStrings {
   sealed trait deposit extends js.Object
   
   @js.native
-  sealed trait device extends js.Object
+  sealed trait device extends ResourceConstantSansEnergy
   
   @js.native
   sealed trait dotted extends js.Object
   
   @js.native
-  sealed trait emanation extends js.Object
+  sealed trait emanation extends ResourceConstantSansEnergy
   
   @js.native
   sealed trait energy extends js.Object
   
   @js.native
-  sealed trait essence extends js.Object
+  sealed trait essence extends ResourceConstantSansEnergy
   
   @js.native
   sealed trait exit extends js.Object
@@ -231,7 +228,7 @@ object screepsStrings {
   sealed trait extension extends js.Object
   
   @js.native
-  sealed trait extract extends js.Object
+  sealed trait extract extends ResourceConstantSansEnergy
   
   @js.native
   sealed trait extractor extends js.Object
@@ -240,28 +237,28 @@ object screepsStrings {
   sealed trait factory extends js.Object
   
   @js.native
-  sealed trait fixtures extends js.Object
+  sealed trait fixtures extends ResourceConstantSansEnergy
   
   @js.native
   sealed trait flag extends js.Object
   
   @js.native
-  sealed trait frame extends js.Object
+  sealed trait frame extends ResourceConstantSansEnergy
   
   @js.native
-  sealed trait ghodium_melt extends js.Object
+  sealed trait ghodium_melt extends ResourceConstantSansEnergy
   
   @js.native
   sealed trait heal extends js.Object
   
   @js.native
-  sealed trait hydraulics extends js.Object
+  sealed trait hydraulics extends ResourceConstantSansEnergy
   
   @js.native
   sealed trait invaderCore extends js.Object
   
   @js.native
-  sealed trait keanium_bar extends js.Object
+  sealed trait keanium_bar extends ResourceConstantSansEnergy
   
   @js.native
   sealed trait keeperLair extends js.Object
@@ -273,34 +270,34 @@ object screepsStrings {
   sealed trait left extends js.Object
   
   @js.native
-  sealed trait lemergium_bar extends js.Object
+  sealed trait lemergium_bar extends ResourceConstantSansEnergy
   
   @js.native
   sealed trait link extends js.Object
   
   @js.native
-  sealed trait liquid extends js.Object
+  sealed trait liquid extends ResourceConstantSansEnergy
   
   @js.native
-  sealed trait machine extends js.Object
+  sealed trait machine extends ResourceConstantSansEnergy
   
   @js.native
-  sealed trait metal extends js.Object
+  sealed trait metal extends ResourceConstantSansEnergy
   
   @js.native
-  sealed trait microchip extends js.Object
+  sealed trait microchip extends ResourceConstantSansEnergy
   
   @js.native
   sealed trait mineral extends js.Object
   
   @js.native
-  sealed trait mist extends js.Object
+  sealed trait mist extends ResourceConstantSansEnergy
   
   @js.native
   sealed trait move extends js.Object
   
   @js.native
-  sealed trait muscle extends js.Object
+  sealed trait muscle extends ResourceConstantSansEnergy
   
   @js.native
   sealed trait normal extends js.Object
@@ -318,19 +315,19 @@ object screepsStrings {
   sealed trait operator extends js.Object
   
   @js.native
-  sealed trait ops extends js.Object
+  sealed trait ops extends ResourceConstantSansEnergy
   
   @js.native
-  sealed trait organism extends js.Object
+  sealed trait organism extends ResourceConstantSansEnergy
   
   @js.native
-  sealed trait organoid extends js.Object
+  sealed trait organoid extends ResourceConstantSansEnergy
   
   @js.native
-  sealed trait oxidant extends js.Object
+  sealed trait oxidant extends ResourceConstantSansEnergy
   
   @js.native
-  sealed trait phlegm extends js.Object
+  sealed trait phlegm extends ResourceConstantSansEnergy
   
   @js.native
   sealed trait plain extends Terrain
@@ -339,7 +336,7 @@ object screepsStrings {
   sealed trait portal extends js.Object
   
   @js.native
-  sealed trait power extends js.Object
+  sealed trait power extends ResourceConstantSansEnergy
   
   @js.native
   sealed trait powerBank extends js.Object
@@ -351,7 +348,7 @@ object screepsStrings {
   sealed trait powerSpawn extends js.Object
   
   @js.native
-  sealed trait purifier extends js.Object
+  sealed trait purifier extends ResourceConstantSansEnergy
   
   @js.native
   sealed trait rampart extends js.Object
@@ -360,7 +357,7 @@ object screepsStrings {
   sealed trait ranged_attack extends js.Object
   
   @js.native
-  sealed trait reductant extends js.Object
+  sealed trait reductant extends ResourceConstantSansEnergy
   
   @js.native
   sealed trait resource extends js.Object
@@ -378,7 +375,7 @@ object screepsStrings {
   sealed trait sell extends js.Object
   
   @js.native
-  sealed trait silicon extends js.Object
+  sealed trait silicon extends ResourceConstantSansEnergy
   
   @js.native
   sealed trait solid extends js.Object
@@ -390,7 +387,7 @@ object screepsStrings {
   sealed trait spawn extends js.Object
   
   @js.native
-  sealed trait spirit extends js.Object
+  sealed trait spirit extends ResourceConstantSansEnergy
   
   @js.native
   sealed trait storage extends js.Object
@@ -402,7 +399,7 @@ object screepsStrings {
   sealed trait swamp extends Terrain
   
   @js.native
-  sealed trait switch extends js.Object
+  sealed trait switch extends ResourceConstantSansEnergy
   
   @js.native
   sealed trait terminal extends js.Object
@@ -411,7 +408,7 @@ object screepsStrings {
   sealed trait terrain extends js.Object
   
   @js.native
-  sealed trait tissue extends js.Object
+  sealed trait tissue extends ResourceConstantSansEnergy
   
   @js.native
   sealed trait token extends js.Object
@@ -426,25 +423,25 @@ object screepsStrings {
   sealed trait tower extends js.Object
   
   @js.native
-  sealed trait transistor extends js.Object
+  sealed trait transistor extends ResourceConstantSansEnergy
   
   @js.native
-  sealed trait tube extends js.Object
+  sealed trait tube extends ResourceConstantSansEnergy
   
   @js.native
-  sealed trait utrium_bar extends js.Object
+  sealed trait utrium_bar extends ResourceConstantSansEnergy
   
   @js.native
   sealed trait wall extends Terrain
   
   @js.native
-  sealed trait wire extends js.Object
+  sealed trait wire extends ResourceConstantSansEnergy
   
   @js.native
   sealed trait work extends js.Object
   
   @js.native
-  sealed trait zynthium_bar extends js.Object
+  sealed trait zynthium_bar extends ResourceConstantSansEnergy
   
   @scala.inline
   def `1`: `1` = "1".asInstanceOf[`1`]
@@ -464,8 +461,6 @@ object screepsStrings {
   def GHO2: GHO2 = "GHO2".asInstanceOf[GHO2]
   @scala.inline
   def GO: GO = "GO".asInstanceOf[GO]
-  @scala.inline
-  def GenericStore: GenericStore = "GenericStore".asInstanceOf[GenericStore]
   @scala.inline
   def H: H = "H".asInstanceOf[H]
   @scala.inline

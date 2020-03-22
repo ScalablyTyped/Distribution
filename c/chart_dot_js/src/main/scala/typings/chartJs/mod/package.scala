@@ -5,9 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mod {
-  type BorderWidth = scala.Double | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in chart.js.chart.js.PositionType ]:? number}
-    */ typings.chartJs.chartJsStrings.BorderWidth with js.Any)
+  type BorderWidth = scala.Double | typings.chartJs.keyinPositionTypenumber
   type ChartColor = java.lang.String | typings.std.CanvasGradient | typings.std.CanvasPattern | js.Array[java.lang.String]
   // NOTE: declare plugin options as interface instead of inline '{ [plugin: string]: any }'
   // to allow module augmentation in case some plugins want to strictly type their options.

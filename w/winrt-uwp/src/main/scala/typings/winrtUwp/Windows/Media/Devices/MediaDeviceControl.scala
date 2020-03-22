@@ -1,7 +1,7 @@
 package typings.winrtUwp.Windows.Media.Devices
 
-import typings.winrtUwp.AnonReturnValue
 import typings.winrtUwp.AnonReturnValueValue
+import typings.winrtUwp.AnonValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ abstract class MediaDeviceControl () extends js.Object {
   /**
     * Indicates whether automatic adjustment of the camera setting is enabled.
     */
-  def tryGetAuto(): AnonReturnValue = js.native
+  def tryGetAuto(): AnonValue = js.native
   /**
     * Gets the value of the camera setting.
     */

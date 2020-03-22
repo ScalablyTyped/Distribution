@@ -1,7 +1,7 @@
 
 # Scala.js typings for p-progress
 
-Typings are for version 0.4.1
+Typings are for version 0.4.2
 
 ## Library description:
 Create a promise that reports progress

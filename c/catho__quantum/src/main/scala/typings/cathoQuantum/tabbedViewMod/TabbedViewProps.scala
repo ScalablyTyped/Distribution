@@ -1,6 +1,6 @@
 package typings.cathoQuantum.tabbedViewMod
 
-import typings.cathoQuantum.AnonBaseFontSizeBreakpointsComponents
+import typings.cathoQuantum.AnonComponentsSpacing
 import typings.cathoQuantum.cathoQuantumStrings.neutral
 import typings.cathoQuantum.cathoQuantumStrings.primary
 import typings.react.mod.ReactNode
@@ -13,7 +13,7 @@ trait TabbedViewProps extends js.Object {
   var children: js.Array[ReactNode] | ReactNode
   var fluid: js.UndefOr[Boolean] = js.undefined
   var skin: js.UndefOr[neutral | primary] = js.undefined
-  var theme: js.UndefOr[AnonBaseFontSizeBreakpointsComponents] = js.undefined
+  var theme: js.UndefOr[AnonComponentsSpacing] = js.undefined
 }
 
 object TabbedViewProps {
@@ -23,7 +23,7 @@ object TabbedViewProps {
     children: js.Array[ReactNode] | ReactNode = null,
     fluid: js.UndefOr[Boolean] = js.undefined,
     skin: neutral | primary = null,
-    theme: AnonBaseFontSizeBreakpointsComponents = null
+    theme: AnonComponentsSpacing = null
   ): TabbedViewProps = {
     val __obj = js.Dynamic.literal()
     if (activeTab != null) __obj.updateDynamic("activeTab")(activeTab.asInstanceOf[js.Any])

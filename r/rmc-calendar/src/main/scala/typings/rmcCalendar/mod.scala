@@ -23,7 +23,7 @@ object mod extends js.Object {
   /* static members */
   @js.native
   object Calendar extends js.Object {
-    var DefaultHeader: TypeofClassHeader = js.native
+    var DefaultHeader: TypeofHeader = js.native
     var DefaultShortcut: Instantiable0[typings.rmcCalendar.shortcutPanelMod.default] = js.native
     var defaultProps: PropsType = js.native
   }

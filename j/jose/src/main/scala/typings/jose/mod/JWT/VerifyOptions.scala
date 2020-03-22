@@ -23,6 +23,7 @@ trait VerifyOptions[komplet] extends js.Object {
   var now: js.UndefOr[Date] = js.undefined
   var profile: js.UndefOr[JWTProfiles] = js.undefined
   var subject: js.UndefOr[String] = js.undefined
+  var typ: js.UndefOr[String] = js.undefined
 }
 
 object VerifyOptions {
@@ -43,7 +44,8 @@ object VerifyOptions {
     nonce: String = null,
     now: Date = null,
     profile: JWTProfiles = null,
-    subject: String = null
+    subject: String = null,
+    typ: String = null
   ): VerifyOptions[komplet] = {
     val __obj = js.Dynamic.literal()
     if (algorithms != null) __obj.updateDynamic("algorithms")(algorithms.asInstanceOf[js.Any])
@@ -62,6 +64,7 @@ object VerifyOptions {
     if (now != null) __obj.updateDynamic("now")(now.asInstanceOf[js.Any])
     if (profile != null) __obj.updateDynamic("profile")(profile.asInstanceOf[js.Any])
     if (subject != null) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
+    if (typ != null) __obj.updateDynamic("typ")(typ.asInstanceOf[js.Any])
     __obj.asInstanceOf[VerifyOptions[komplet]]
   }
 }

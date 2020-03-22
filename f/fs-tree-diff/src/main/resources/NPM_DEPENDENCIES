@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "fs-tree-diff" : "0.5.9"
+      "fs-tree-diff" : "2.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "fs-tree-diff" : "0.5.9"
+      "fs-tree-diff" : "2.0.1"
     }
   ],
   "compile-devDependencies" : [

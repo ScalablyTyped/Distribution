@@ -1,7 +1,7 @@
 package typings.reactBootstrapTable.mod
 
 import typings.react.mod.CSSProperties
-import typings.reactBootstrapTable.AnonRow
+import typings.reactBootstrapTable.AnonValues
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,7 +31,7 @@ trait Editable[TRow /* <: js.Object */, K /* <: String */] extends js.Object {
   	 * If the array is an array of objects, the fields 'text' can be used for the display text and 'value' to specify
   	 * the option's value.
   	 */
-  var options: js.UndefOr[AnonRow[TRow]] = js.undefined
+  var options: js.UndefOr[AnonValues[TRow]] = js.undefined
   /**
   	 * @deprecated Use placeholder inside the attrs field instead.
   	 * Text to display as placeholder text in the editor component.
@@ -74,7 +74,7 @@ object Editable {
     className: String = null,
     cols: Int | Double = null,
     defaultValue: /* import warning: importer.ImportType#apply Failed type conversion: TRow[K] */ js.Any = null,
-    options: AnonRow[TRow] = null,
+    options: AnonValues[TRow] = null,
     placeholder: String = null,
     readOnly: js.UndefOr[Boolean] = js.undefined,
     rows: Int | Double = null,

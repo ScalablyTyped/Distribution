@@ -1,5 +1,7 @@
 package typings.typedoc
 
+import typings.typedoc.optionsDeclarationMod.DeclarationOption
+import typings.typedoc.optionsMod.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -7,19 +9,13 @@ import scala.scalajs.js.annotation._
 @JSImport("typedoc/dist/lib/utils/options/sources", JSImport.Namespace)
 @js.native
 object optionsSourcesMod extends js.Object {
-  @js.native
-  class ComponentSource ()
-    extends typings.typedoc.sourcesComponentMod.ComponentSource
-  
-  @js.native
-  class TypeScriptSource ()
-    extends typings.typedoc.typescriptMod.TypeScriptSource
-  
-  /* static members */
-  @js.native
-  object TypeScriptSource extends js.Object {
-    var IGNORED: js.Array[String] = js.native
-  }
-  
+  def Option(option: DeclarationOption): js.Function2[
+    /* target */ AnonApplication | AnonOptions, 
+    /* key */ String | Double | js.Symbol, 
+    Unit
+  ] = js.native
+  def addDecoratedOptions(options: Options): Unit = js.native
+  def addTSOptions(container: typings.typedoc.optionsOptionsMod.Options): Unit = js.native
+  def addTypeDocOptions(options: Options): Unit = js.native
 }
 

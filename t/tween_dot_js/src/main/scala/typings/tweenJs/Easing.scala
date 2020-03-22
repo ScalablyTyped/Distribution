@@ -11,7 +11,7 @@ trait Easing extends js.Object {
   var Cubic: AnonIn
   var Elastic: AnonIn
   var Exponential: AnonIn
-  var Linear: AnonK
+  var Linear: AnonNone
   var Quadratic: AnonIn
   var Quartic: AnonIn
   var Quintic: AnonIn
@@ -27,7 +27,7 @@ object Easing {
     Cubic: AnonIn,
     Elastic: AnonIn,
     Exponential: AnonIn,
-    Linear: AnonK,
+    Linear: AnonNone,
     Quadratic: AnonIn,
     Quartic: AnonIn,
     Quintic: AnonIn,

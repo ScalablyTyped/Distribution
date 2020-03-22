@@ -17,7 +17,7 @@ trait ConfigRuleEvaluationStatus extends js.Object {
   /**
     * The name of the AWS Config rule.
     */
-  var ConfigRuleName: js.UndefOr[StringWithCharLimit64] = js.native
+  var ConfigRuleName: js.UndefOr[typings.awsSdk.configserviceMod.ConfigRuleName] = js.native
   /**
     * The time that you first activated the AWS Config rule.
     */
@@ -26,6 +26,7 @@ trait ConfigRuleEvaluationStatus extends js.Object {
     * Indicates whether AWS Config has evaluated your resources against the rule at least once.    true - AWS Config has evaluated your AWS resources against the rule at least once.    false - AWS Config has not once finished evaluating your AWS resources against the rule.  
     */
   var FirstEvaluationStarted: js.UndefOr[Boolean] = js.native
+  var LastDeactivatedTime: js.UndefOr[Date] = js.native
   /**
     * The error code that AWS Config returned when the rule last failed.
     */
@@ -57,9 +58,10 @@ object ConfigRuleEvaluationStatus {
   def apply(
     ConfigRuleArn: String = null,
     ConfigRuleId: String = null,
-    ConfigRuleName: StringWithCharLimit64 = null,
+    ConfigRuleName: ConfigRuleName = null,
     FirstActivatedTime: Date = null,
     FirstEvaluationStarted: js.UndefOr[scala.Boolean] = js.undefined,
+    LastDeactivatedTime: Date = null,
     LastErrorCode: String = null,
     LastErrorMessage: String = null,
     LastFailedEvaluationTime: Date = null,
@@ -73,6 +75,7 @@ object ConfigRuleEvaluationStatus {
     if (ConfigRuleName != null) __obj.updateDynamic("ConfigRuleName")(ConfigRuleName.asInstanceOf[js.Any])
     if (FirstActivatedTime != null) __obj.updateDynamic("FirstActivatedTime")(FirstActivatedTime.asInstanceOf[js.Any])
     if (!js.isUndefined(FirstEvaluationStarted)) __obj.updateDynamic("FirstEvaluationStarted")(FirstEvaluationStarted.asInstanceOf[js.Any])
+    if (LastDeactivatedTime != null) __obj.updateDynamic("LastDeactivatedTime")(LastDeactivatedTime.asInstanceOf[js.Any])
     if (LastErrorCode != null) __obj.updateDynamic("LastErrorCode")(LastErrorCode.asInstanceOf[js.Any])
     if (LastErrorMessage != null) __obj.updateDynamic("LastErrorMessage")(LastErrorMessage.asInstanceOf[js.Any])
     if (LastFailedEvaluationTime != null) __obj.updateDynamic("LastFailedEvaluationTime")(LastFailedEvaluationTime.asInstanceOf[js.Any])

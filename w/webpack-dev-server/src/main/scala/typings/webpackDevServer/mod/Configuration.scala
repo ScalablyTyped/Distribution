@@ -10,8 +10,8 @@ import typings.webpack.mod.Options.Stats
 import typings.webpack.mod.WatchOptions
 import typings.webpackDevServer.AnonClient
 import typings.webpackDevServer.AnonClientServer
-import typings.webpackDevServer.AnonClientServerObject
 import typings.webpackDevServer.AnonErrors
+import typings.webpackDevServer.AnonServer
 import typings.webpackDevServer.AnonTypeMap
 import typings.webpackDevServer.webpackDevServerStrings.debug
 import typings.webpackDevServer.webpackDevServerStrings.error
@@ -290,7 +290,7 @@ trait Configuration extends js.Object {
     * version. This mode uses ws as a server, and native WebSockets on the
     * client.
     */
-  var transportMode: js.UndefOr[sockjs | ws | AnonClient | AnonClientServer | AnonClientServerObject] = js.undefined
+  var transportMode: js.UndefOr[sockjs | ws | AnonClient | AnonServer | AnonClientServer] = js.undefined
   /** This option lets the browser open with your local IP. */
   var useLocalIp: js.UndefOr[Boolean] = js.undefined
   /**
@@ -352,7 +352,7 @@ object Configuration {
     socket: String = null,
     staticOptions: ServeStaticOptions = null,
     stats: Stats = null,
-    transportMode: sockjs | ws | AnonClient | AnonClientServer | AnonClientServerObject = null,
+    transportMode: sockjs | ws | AnonClient | AnonServer | AnonClientServer = null,
     useLocalIp: js.UndefOr[Boolean] = js.undefined,
     watchContentBase: js.UndefOr[Boolean] = js.undefined,
     watchOptions: WatchOptions = null,

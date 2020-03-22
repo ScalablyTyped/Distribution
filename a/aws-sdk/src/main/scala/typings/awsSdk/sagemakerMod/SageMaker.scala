@@ -1,6 +1,10 @@
 package typings.awsSdk.sagemakerMod
 
-import typings.awsSdk.AnonWaiter
+import typings.awsSdk.DescribeEndpointInputwait
+import typings.awsSdk.DescribeNotebookInstanceI
+import typings.awsSdk.DescribeProcessingJobRequ
+import typings.awsSdk.DescribeTrainingJobReques
+import typings.awsSdk.DescribeTransformJobReque
 import typings.awsSdk.awsSdkStrings.endpointDeleted
 import typings.awsSdk.awsSdkStrings.endpointInService
 import typings.awsSdk.awsSdkStrings.notebookInstanceDeleted
@@ -123,12 +127,12 @@ trait SageMaker extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateDomainResponse, Unit]
   ): Request[CreateDomainResponse, AWSError] = js.native
   /**
-    * Creates an endpoint using the endpoint configuration specified in the request. Amazon SageMaker uses the endpoint to provision resources and deploy models. You create the endpoint configuration with the CreateEndpointConfig API.    Use this API only for hosting models using Amazon SageMaker hosting services.   You must not delete an EndpointConfig in use by an endpoint that is live or while the UpdateEndpoint or CreateEndpoint operations are being performed on the endpoint. To update an endpoint, you must create a new EndpointConfig.  The endpoint name must be unique within an AWS Region in your AWS account.  When it receives the request, Amazon SageMaker creates the endpoint, launches the resources (ML compute instances), and deploys the model(s) on them.  When Amazon SageMaker receives the request, it sets the endpoint status to Creating. After it creates the endpoint, it sets the status to InService. Amazon SageMaker can then process incoming requests for inferences. To check the status of an endpoint, use the DescribeEndpoint API. For an example, see Exercise 1: Using the K-Means Algorithm Provided by Amazon SageMaker.  If any of the models hosted at this endpoint get model data from an Amazon S3 location, Amazon SageMaker uses AWS Security Token Service to download model artifacts from the S3 path you provided. AWS STS is activated in your IAM user account by default. If you previously deactivated AWS STS for a region, you need to reactivate AWS STS for that region. For more information, see Activating and Deactivating AWS STS in an AWS Region in the AWS Identity and Access Management User Guide.
+    * Creates an endpoint using the endpoint configuration specified in the request. Amazon SageMaker uses the endpoint to provision resources and deploy models. You create the endpoint configuration with the CreateEndpointConfig API.   Use this API to deploy models using Amazon SageMaker hosting services.  For an example that calls this method when deploying a model to Amazon SageMaker hosting services, see Deploy the Model to Amazon SageMaker Hosting Services (AWS SDK for Python (Boto 3)).    You must not delete an EndpointConfig that is in use by an endpoint that is live or while the UpdateEndpoint or CreateEndpoint operations are being performed on the endpoint. To update an endpoint, you must create a new EndpointConfig.  The endpoint name must be unique within an AWS Region in your AWS account.  When it receives the request, Amazon SageMaker creates the endpoint, launches the resources (ML compute instances), and deploys the model(s) on them.  When Amazon SageMaker receives the request, it sets the endpoint status to Creating. After it creates the endpoint, it sets the status to InService. Amazon SageMaker can then process incoming requests for inferences. To check the status of an endpoint, use the DescribeEndpoint API. If any of the models hosted at this endpoint get model data from an Amazon S3 location, Amazon SageMaker uses AWS Security Token Service to download model artifacts from the S3 path you provided. AWS STS is activated in your IAM user account by default. If you previously deactivated AWS STS for a region, you need to reactivate AWS STS for that region. For more information, see Activating and Deactivating AWS STS in an AWS Region in the AWS Identity and Access Management User Guide.
     */
   def createEndpoint(): Request[CreateEndpointOutput, AWSError] = js.native
   def createEndpoint(callback: js.Function2[/* err */ AWSError, /* data */ CreateEndpointOutput, Unit]): Request[CreateEndpointOutput, AWSError] = js.native
   /**
-    * Creates an endpoint using the endpoint configuration specified in the request. Amazon SageMaker uses the endpoint to provision resources and deploy models. You create the endpoint configuration with the CreateEndpointConfig API.    Use this API only for hosting models using Amazon SageMaker hosting services.   You must not delete an EndpointConfig in use by an endpoint that is live or while the UpdateEndpoint or CreateEndpoint operations are being performed on the endpoint. To update an endpoint, you must create a new EndpointConfig.  The endpoint name must be unique within an AWS Region in your AWS account.  When it receives the request, Amazon SageMaker creates the endpoint, launches the resources (ML compute instances), and deploys the model(s) on them.  When Amazon SageMaker receives the request, it sets the endpoint status to Creating. After it creates the endpoint, it sets the status to InService. Amazon SageMaker can then process incoming requests for inferences. To check the status of an endpoint, use the DescribeEndpoint API. For an example, see Exercise 1: Using the K-Means Algorithm Provided by Amazon SageMaker.  If any of the models hosted at this endpoint get model data from an Amazon S3 location, Amazon SageMaker uses AWS Security Token Service to download model artifacts from the S3 path you provided. AWS STS is activated in your IAM user account by default. If you previously deactivated AWS STS for a region, you need to reactivate AWS STS for that region. For more information, see Activating and Deactivating AWS STS in an AWS Region in the AWS Identity and Access Management User Guide.
+    * Creates an endpoint using the endpoint configuration specified in the request. Amazon SageMaker uses the endpoint to provision resources and deploy models. You create the endpoint configuration with the CreateEndpointConfig API.   Use this API to deploy models using Amazon SageMaker hosting services.  For an example that calls this method when deploying a model to Amazon SageMaker hosting services, see Deploy the Model to Amazon SageMaker Hosting Services (AWS SDK for Python (Boto 3)).    You must not delete an EndpointConfig that is in use by an endpoint that is live or while the UpdateEndpoint or CreateEndpoint operations are being performed on the endpoint. To update an endpoint, you must create a new EndpointConfig.  The endpoint name must be unique within an AWS Region in your AWS account.  When it receives the request, Amazon SageMaker creates the endpoint, launches the resources (ML compute instances), and deploys the model(s) on them.  When Amazon SageMaker receives the request, it sets the endpoint status to Creating. After it creates the endpoint, it sets the status to InService. Amazon SageMaker can then process incoming requests for inferences. To check the status of an endpoint, use the DescribeEndpoint API. If any of the models hosted at this endpoint get model data from an Amazon S3 location, Amazon SageMaker uses AWS Security Token Service to download model artifacts from the S3 path you provided. AWS STS is activated in your IAM user account by default. If you previously deactivated AWS STS for a region, you need to reactivate AWS STS for that region. For more information, see Activating and Deactivating AWS STS in an AWS Region in the AWS Identity and Access Management User Guide.
     */
   def createEndpoint(params: CreateEndpointInput): Request[CreateEndpointOutput, AWSError] = js.native
   def createEndpoint(
@@ -136,12 +140,12 @@ trait SageMaker extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateEndpointOutput, Unit]
   ): Request[CreateEndpointOutput, AWSError] = js.native
   /**
-    * Creates an endpoint configuration that Amazon SageMaker hosting services uses to deploy models. In the configuration, you identify one or more models, created using the CreateModel API, to deploy and the resources that you want Amazon SageMaker to provision. Then you call the CreateEndpoint API.   Use this API only if you want to use Amazon SageMaker hosting services to deploy models into production.   In the request, you define one or more ProductionVariants, each of which identifies a model. Each ProductionVariant parameter also describes the resources that you want Amazon SageMaker to provision. This includes the number and type of ML compute instances to deploy.  If you are hosting multiple models, you also assign a VariantWeight to specify how much traffic you want to allocate to each model. For example, suppose that you want to host two models, A and B, and you assign traffic weight 2 for model A and 1 for model B. Amazon SageMaker distributes two-thirds of the traffic to Model A, and one-third to model B. 
+    * Creates an endpoint configuration that Amazon SageMaker hosting services uses to deploy models. In the configuration, you identify one or more models, created using the CreateModel API, to deploy and the resources that you want Amazon SageMaker to provision. Then you call the CreateEndpoint API.   Use this API if you want to use Amazon SageMaker hosting services to deploy models into production.   In the request, you define a ProductionVariant, for each model that you want to deploy. Each ProductionVariant parameter also describes the resources that you want Amazon SageMaker to provision. This includes the number and type of ML compute instances to deploy.  If you are hosting multiple models, you also assign a VariantWeight to specify how much traffic you want to allocate to each model. For example, suppose that you want to host two models, A and B, and you assign traffic weight 2 for model A and 1 for model B. Amazon SageMaker distributes two-thirds of the traffic to Model A, and one-third to model B.  For an example that calls this method when deploying a model to Amazon SageMaker hosting services, see Deploy the Model to Amazon SageMaker Hosting Services (AWS SDK for Python (Boto 3)). 
     */
   def createEndpointConfig(): Request[CreateEndpointConfigOutput, AWSError] = js.native
   def createEndpointConfig(callback: js.Function2[/* err */ AWSError, /* data */ CreateEndpointConfigOutput, Unit]): Request[CreateEndpointConfigOutput, AWSError] = js.native
   /**
-    * Creates an endpoint configuration that Amazon SageMaker hosting services uses to deploy models. In the configuration, you identify one or more models, created using the CreateModel API, to deploy and the resources that you want Amazon SageMaker to provision. Then you call the CreateEndpoint API.   Use this API only if you want to use Amazon SageMaker hosting services to deploy models into production.   In the request, you define one or more ProductionVariants, each of which identifies a model. Each ProductionVariant parameter also describes the resources that you want Amazon SageMaker to provision. This includes the number and type of ML compute instances to deploy.  If you are hosting multiple models, you also assign a VariantWeight to specify how much traffic you want to allocate to each model. For example, suppose that you want to host two models, A and B, and you assign traffic weight 2 for model A and 1 for model B. Amazon SageMaker distributes two-thirds of the traffic to Model A, and one-third to model B. 
+    * Creates an endpoint configuration that Amazon SageMaker hosting services uses to deploy models. In the configuration, you identify one or more models, created using the CreateModel API, to deploy and the resources that you want Amazon SageMaker to provision. Then you call the CreateEndpoint API.   Use this API if you want to use Amazon SageMaker hosting services to deploy models into production.   In the request, you define a ProductionVariant, for each model that you want to deploy. Each ProductionVariant parameter also describes the resources that you want Amazon SageMaker to provision. This includes the number and type of ML compute instances to deploy.  If you are hosting multiple models, you also assign a VariantWeight to specify how much traffic you want to allocate to each model. For example, suppose that you want to host two models, A and B, and you assign traffic weight 2 for model A and 1 for model B. Amazon SageMaker distributes two-thirds of the traffic to Model A, and one-third to model B.  For an example that calls this method when deploying a model to Amazon SageMaker hosting services, see Deploy the Model to Amazon SageMaker Hosting Services (AWS SDK for Python (Boto 3)). 
     */
   def createEndpointConfig(params: CreateEndpointConfigInput): Request[CreateEndpointConfigOutput, AWSError] = js.native
   def createEndpointConfig(
@@ -214,12 +218,12 @@ trait SageMaker extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateLabelingJobResponse, Unit]
   ): Request[CreateLabelingJobResponse, AWSError] = js.native
   /**
-    * Creates a model in Amazon SageMaker. In the request, you name the model and describe a primary container. For the primary container, you specify the docker image containing inference code, artifacts (from prior training), and custom environment map that the inference code uses when you deploy the model for predictions. Use this API to create a model if you want to use Amazon SageMaker hosting services or run a batch transform job. To host your model, you create an endpoint configuration with the CreateEndpointConfig API, and then create an endpoint with the CreateEndpoint API. Amazon SageMaker then deploys all of the containers that you defined for the model in the hosting environment.  To run a batch transform using your model, you start a job with the CreateTransformJob API. Amazon SageMaker uses your model and your dataset to get inferences which are then saved to a specified S3 location. In the CreateModel request, you must define a container with the PrimaryContainer parameter. In the request, you also provide an IAM role that Amazon SageMaker can assume to access model artifacts and docker image for deployment on ML compute hosting instances or for batch transform jobs. In addition, you also use the IAM role to manage permissions the inference code needs. For example, if the inference code access any other AWS resources, you grant necessary permissions via this role.
+    * Creates a model in Amazon SageMaker. In the request, you name the model and describe a primary container. For the primary container, you specify the Docker image that contains inference code, artifacts (from prior training), and a custom environment map that the inference code uses when you deploy the model for predictions. Use this API to create a model if you want to use Amazon SageMaker hosting services or run a batch transform job. To host your model, you create an endpoint configuration with the CreateEndpointConfig API, and then create an endpoint with the CreateEndpoint API. Amazon SageMaker then deploys all of the containers that you defined for the model in the hosting environment.  For an example that calls this method when deploying a model to Amazon SageMaker hosting services, see Deploy the Model to Amazon SageMaker Hosting Services (AWS SDK for Python (Boto 3)).  To run a batch transform using your model, you start a job with the CreateTransformJob API. Amazon SageMaker uses your model and your dataset to get inferences which are then saved to a specified S3 location. In the CreateModel request, you must define a container with the PrimaryContainer parameter. In the request, you also provide an IAM role that Amazon SageMaker can assume to access model artifacts and docker image for deployment on ML compute hosting instances or for batch transform jobs. In addition, you also use the IAM role to manage permissions the inference code needs. For example, if the inference code access any other AWS resources, you grant necessary permissions via this role.
     */
   def createModel(): Request[CreateModelOutput, AWSError] = js.native
   def createModel(callback: js.Function2[/* err */ AWSError, /* data */ CreateModelOutput, Unit]): Request[CreateModelOutput, AWSError] = js.native
   /**
-    * Creates a model in Amazon SageMaker. In the request, you name the model and describe a primary container. For the primary container, you specify the docker image containing inference code, artifacts (from prior training), and custom environment map that the inference code uses when you deploy the model for predictions. Use this API to create a model if you want to use Amazon SageMaker hosting services or run a batch transform job. To host your model, you create an endpoint configuration with the CreateEndpointConfig API, and then create an endpoint with the CreateEndpoint API. Amazon SageMaker then deploys all of the containers that you defined for the model in the hosting environment.  To run a batch transform using your model, you start a job with the CreateTransformJob API. Amazon SageMaker uses your model and your dataset to get inferences which are then saved to a specified S3 location. In the CreateModel request, you must define a container with the PrimaryContainer parameter. In the request, you also provide an IAM role that Amazon SageMaker can assume to access model artifacts and docker image for deployment on ML compute hosting instances or for batch transform jobs. In addition, you also use the IAM role to manage permissions the inference code needs. For example, if the inference code access any other AWS resources, you grant necessary permissions via this role.
+    * Creates a model in Amazon SageMaker. In the request, you name the model and describe a primary container. For the primary container, you specify the Docker image that contains inference code, artifacts (from prior training), and a custom environment map that the inference code uses when you deploy the model for predictions. Use this API to create a model if you want to use Amazon SageMaker hosting services or run a batch transform job. To host your model, you create an endpoint configuration with the CreateEndpointConfig API, and then create an endpoint with the CreateEndpoint API. Amazon SageMaker then deploys all of the containers that you defined for the model in the hosting environment.  For an example that calls this method when deploying a model to Amazon SageMaker hosting services, see Deploy the Model to Amazon SageMaker Hosting Services (AWS SDK for Python (Boto 3)).  To run a batch transform using your model, you start a job with the CreateTransformJob API. Amazon SageMaker uses your model and your dataset to get inferences which are then saved to a specified S3 location. In the CreateModel request, you must define a container with the PrimaryContainer parameter. In the request, you also provide an IAM role that Amazon SageMaker can assume to access model artifacts and docker image for deployment on ML compute hosting instances or for batch transform jobs. In addition, you also use the IAM role to manage permissions the inference code needs. For example, if the inference code access any other AWS resources, you grant necessary permissions via this role.
     */
   def createModel(params: CreateModelInput): Request[CreateModelOutput, AWSError] = js.native
   def createModel(
@@ -983,12 +987,12 @@ trait SageMaker extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeWorkteamResponse, Unit]
   ): Request[DescribeWorkteamResponse, AWSError] = js.native
   /**
-    * Disassociates a trial component from a trial. This doesn't effect other trials the component is associated with. Before you can delete a component, you must disassociate the component from all trials it is associated with. To associate a trial component with a trial, call the AssociateTrialComponent API.
+    * Disassociates a trial component from a trial. This doesn't effect other trials the component is associated with. Before you can delete a component, you must disassociate the component from all trials it is associated with. To associate a trial component with a trial, call the AssociateTrialComponent API. To get a list of the trials a component is associated with, use the Search API. Specify ExperimentTrialComponent for the Resource parameter. The list appears in the response under Results.TrialComponent.Parents.
     */
   def disassociateTrialComponent(): Request[DisassociateTrialComponentResponse, AWSError] = js.native
   def disassociateTrialComponent(callback: js.Function2[/* err */ AWSError, /* data */ DisassociateTrialComponentResponse, Unit]): Request[DisassociateTrialComponentResponse, AWSError] = js.native
   /**
-    * Disassociates a trial component from a trial. This doesn't effect other trials the component is associated with. Before you can delete a component, you must disassociate the component from all trials it is associated with. To associate a trial component with a trial, call the AssociateTrialComponent API.
+    * Disassociates a trial component from a trial. This doesn't effect other trials the component is associated with. Before you can delete a component, you must disassociate the component from all trials it is associated with. To associate a trial component with a trial, call the AssociateTrialComponent API. To get a list of the trials a component is associated with, use the Search API. Specify ExperimentTrialComponent for the Resource parameter. The list appears in the response under Results.TrialComponent.Parents.
     */
   def disassociateTrialComponent(params: DisassociateTrialComponentRequest): Request[DisassociateTrialComponentResponse, AWSError] = js.native
   def disassociateTrialComponent(
@@ -1382,12 +1386,12 @@ trait SageMaker extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListTrialComponentsResponse, Unit]
   ): Request[ListTrialComponentsResponse, AWSError] = js.native
   /**
-    * Lists the trials in your account. Specify an experiment name to limit the list to the trials that are part of that experiment. The list can be filtered to show only trials that were created in a specific time range. The list can be sorted by trial name or creation time.
+    * Lists the trials in your account. Specify an experiment name to limit the list to the trials that are part of that experiment. Specify a trial component name to limit the list to the trials that associated with that trial component. The list can be filtered to show only trials that were created in a specific time range. The list can be sorted by trial name or creation time.
     */
   def listTrials(): Request[ListTrialsResponse, AWSError] = js.native
   def listTrials(callback: js.Function2[/* err */ AWSError, /* data */ ListTrialsResponse, Unit]): Request[ListTrialsResponse, AWSError] = js.native
   /**
-    * Lists the trials in your account. Specify an experiment name to limit the list to the trials that are part of that experiment. The list can be filtered to show only trials that were created in a specific time range. The list can be sorted by trial name or creation time.
+    * Lists the trials in your account. Specify an experiment name to limit the list to the trials that are part of that experiment. Specify a trial component name to limit the list to the trials that associated with that trial component. The list can be filtered to show only trials that were created in a specific time range. The list can be sorted by trial name or creation time.
     */
   def listTrials(params: ListTrialsRequest): Request[ListTrialsResponse, AWSError] = js.native
   def listTrials(
@@ -1773,11 +1777,11 @@ trait SageMaker extends Service {
     * Waits for the endpointDeleted state by periodically calling the underlying SageMaker.describeEndpointoperation every 30 seconds (at most 60 times).
     */
   @JSName("waitFor")
-  def waitFor_endpointDeleted(state: endpointDeleted, params: DescribeEndpointInput with AnonWaiter): Request[DescribeEndpointOutput, AWSError] = js.native
+  def waitFor_endpointDeleted(state: endpointDeleted, params: DescribeEndpointInputwait): Request[DescribeEndpointOutput, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_endpointDeleted(
     state: endpointDeleted,
-    params: DescribeEndpointInput with AnonWaiter,
+    params: DescribeEndpointInputwait,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeEndpointOutput, Unit]
   ): Request[DescribeEndpointOutput, AWSError] = js.native
   /**
@@ -1794,11 +1798,11 @@ trait SageMaker extends Service {
     * Waits for the endpointInService state by periodically calling the underlying SageMaker.describeEndpointoperation every 30 seconds (at most 120 times).
     */
   @JSName("waitFor")
-  def waitFor_endpointInService(state: endpointInService, params: DescribeEndpointInput with AnonWaiter): Request[DescribeEndpointOutput, AWSError] = js.native
+  def waitFor_endpointInService(state: endpointInService, params: DescribeEndpointInputwait): Request[DescribeEndpointOutput, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_endpointInService(
     state: endpointInService,
-    params: DescribeEndpointInput with AnonWaiter,
+    params: DescribeEndpointInputwait,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeEndpointOutput, Unit]
   ): Request[DescribeEndpointOutput, AWSError] = js.native
   /**
@@ -1815,11 +1819,11 @@ trait SageMaker extends Service {
     * Waits for the notebookInstanceDeleted state by periodically calling the underlying SageMaker.describeNotebookInstanceoperation every 30 seconds (at most 60 times).
     */
   @JSName("waitFor")
-  def waitFor_notebookInstanceDeleted(state: notebookInstanceDeleted, params: DescribeNotebookInstanceInput with AnonWaiter): Request[DescribeNotebookInstanceOutput, AWSError] = js.native
+  def waitFor_notebookInstanceDeleted(state: notebookInstanceDeleted, params: DescribeNotebookInstanceI): Request[DescribeNotebookInstanceOutput, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_notebookInstanceDeleted(
     state: notebookInstanceDeleted,
-    params: DescribeNotebookInstanceInput with AnonWaiter,
+    params: DescribeNotebookInstanceI,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeNotebookInstanceOutput, Unit]
   ): Request[DescribeNotebookInstanceOutput, AWSError] = js.native
   /**
@@ -1836,11 +1840,11 @@ trait SageMaker extends Service {
     * Waits for the notebookInstanceInService state by periodically calling the underlying SageMaker.describeNotebookInstanceoperation every 30 seconds (at most 60 times).
     */
   @JSName("waitFor")
-  def waitFor_notebookInstanceInService(state: notebookInstanceInService, params: DescribeNotebookInstanceInput with AnonWaiter): Request[DescribeNotebookInstanceOutput, AWSError] = js.native
+  def waitFor_notebookInstanceInService(state: notebookInstanceInService, params: DescribeNotebookInstanceI): Request[DescribeNotebookInstanceOutput, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_notebookInstanceInService(
     state: notebookInstanceInService,
-    params: DescribeNotebookInstanceInput with AnonWaiter,
+    params: DescribeNotebookInstanceI,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeNotebookInstanceOutput, Unit]
   ): Request[DescribeNotebookInstanceOutput, AWSError] = js.native
   /**
@@ -1857,11 +1861,11 @@ trait SageMaker extends Service {
     * Waits for the notebookInstanceStopped state by periodically calling the underlying SageMaker.describeNotebookInstanceoperation every 30 seconds (at most 60 times).
     */
   @JSName("waitFor")
-  def waitFor_notebookInstanceStopped(state: notebookInstanceStopped, params: DescribeNotebookInstanceInput with AnonWaiter): Request[DescribeNotebookInstanceOutput, AWSError] = js.native
+  def waitFor_notebookInstanceStopped(state: notebookInstanceStopped, params: DescribeNotebookInstanceI): Request[DescribeNotebookInstanceOutput, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_notebookInstanceStopped(
     state: notebookInstanceStopped,
-    params: DescribeNotebookInstanceInput with AnonWaiter,
+    params: DescribeNotebookInstanceI,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeNotebookInstanceOutput, Unit]
   ): Request[DescribeNotebookInstanceOutput, AWSError] = js.native
   /**
@@ -1878,11 +1882,11 @@ trait SageMaker extends Service {
     * Waits for the processingJobCompletedOrStopped state by periodically calling the underlying SageMaker.describeProcessingJoboperation every 60 seconds (at most 60 times).
     */
   @JSName("waitFor")
-  def waitFor_processingJobCompletedOrStopped(state: processingJobCompletedOrStopped, params: DescribeProcessingJobRequest with AnonWaiter): Request[DescribeProcessingJobResponse, AWSError] = js.native
+  def waitFor_processingJobCompletedOrStopped(state: processingJobCompletedOrStopped, params: DescribeProcessingJobRequ): Request[DescribeProcessingJobResponse, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_processingJobCompletedOrStopped(
     state: processingJobCompletedOrStopped,
-    params: DescribeProcessingJobRequest with AnonWaiter,
+    params: DescribeProcessingJobRequ,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeProcessingJobResponse, Unit]
   ): Request[DescribeProcessingJobResponse, AWSError] = js.native
   /**
@@ -1899,11 +1903,11 @@ trait SageMaker extends Service {
     * Waits for the trainingJobCompletedOrStopped state by periodically calling the underlying SageMaker.describeTrainingJoboperation every 120 seconds (at most 180 times).
     */
   @JSName("waitFor")
-  def waitFor_trainingJobCompletedOrStopped(state: trainingJobCompletedOrStopped, params: DescribeTrainingJobRequest with AnonWaiter): Request[DescribeTrainingJobResponse, AWSError] = js.native
+  def waitFor_trainingJobCompletedOrStopped(state: trainingJobCompletedOrStopped, params: DescribeTrainingJobReques): Request[DescribeTrainingJobResponse, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_trainingJobCompletedOrStopped(
     state: trainingJobCompletedOrStopped,
-    params: DescribeTrainingJobRequest with AnonWaiter,
+    params: DescribeTrainingJobReques,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeTrainingJobResponse, Unit]
   ): Request[DescribeTrainingJobResponse, AWSError] = js.native
   /**
@@ -1920,11 +1924,11 @@ trait SageMaker extends Service {
     * Waits for the transformJobCompletedOrStopped state by periodically calling the underlying SageMaker.describeTransformJoboperation every 60 seconds (at most 60 times).
     */
   @JSName("waitFor")
-  def waitFor_transformJobCompletedOrStopped(state: transformJobCompletedOrStopped, params: DescribeTransformJobRequest with AnonWaiter): Request[DescribeTransformJobResponse, AWSError] = js.native
+  def waitFor_transformJobCompletedOrStopped(state: transformJobCompletedOrStopped, params: DescribeTransformJobReque): Request[DescribeTransformJobResponse, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_transformJobCompletedOrStopped(
     state: transformJobCompletedOrStopped,
-    params: DescribeTransformJobRequest with AnonWaiter,
+    params: DescribeTransformJobReque,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeTransformJobResponse, Unit]
   ): Request[DescribeTransformJobResponse, AWSError] = js.native
 }

@@ -1,7 +1,6 @@
 package typings.i18next.mod
 
 import typings.i18next.i18nextBooleans.`false`
-import typings.i18next.i18nextStrings.default
 import typings.i18next.i18nextStrings.fallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -36,7 +35,7 @@ trait ReactOptions extends js.Object {
     * Set it to fallback to let passed namespaces to translated hoc act as fallbacks
     * @default 'default'
     */
-  var nsMode: js.UndefOr[default | fallback] = js.undefined
+  var nsMode: js.UndefOr[typings.i18next.i18nextStrings.default | fallback] = js.undefined
   /**
     * Set fallback value for Trans components without children
     * @default undefined
@@ -72,7 +71,7 @@ object ReactOptions {
     bindStore: String | `false` = null,
     defaultTransParent: String = null,
     hashTransKey: /* defaultValue */ js.UndefOr[js.Any] => js.UndefOr[_] = null,
-    nsMode: default | fallback = null,
+    nsMode: typings.i18next.i18nextStrings.default | fallback = null,
     transEmptyNodeValue: String = null,
     transKeepBasicHtmlNodesFor: js.Array[String] = null,
     transSupportBasicHtmlNodes: js.UndefOr[Boolean] = js.undefined,

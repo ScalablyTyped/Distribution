@@ -11,7 +11,7 @@ package object esMasonryMod {
   ]
   type OnCellsRenderedCallback = js.Function1[/* params */ typings.reactVirtualized.AnonStartIndex, scala.Unit]
   type OnScrollCallback = js.Function1[/* params */ typings.reactVirtualized.AnonClientHeight, scala.Unit]
-  type Positioner = (js.Function1[/* index */ scala.Double, typings.reactVirtualized.esMasonryMod.Position]) with typings.reactVirtualized.AnonParams
+  type Positioner = (js.Function1[/* index */ scala.Double, typings.reactVirtualized.esMasonryMod.Position]) with typings.reactVirtualized.AnonReset
   type emptyObject = js.Object
   type identity = js.Function1[/* value */ js.Any, js.Any]
   type noop = js.Function0[scala.Unit]

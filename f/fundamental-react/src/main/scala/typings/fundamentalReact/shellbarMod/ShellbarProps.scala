@@ -1,11 +1,11 @@
 package typings.fundamentalReact.shellbarMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.fundamentalReact.AnonArgs
-import typings.fundamentalReact.AnonCallbackEvent
-import typings.fundamentalReact.AnonCallbackEventGlyph
-import typings.fundamentalReact.AnonCallbackEventLabel
-import typings.fundamentalReact.AnonCounterLabelNotificationsButton
+import typings.fundamentalReact.AnonGlyph
+import typings.fundamentalReact.AnonImage
+import typings.fundamentalReact.AnonLabel
+import typings.fundamentalReact.AnonLink
+import typings.fundamentalReact.AnonNotificationsButton
 import typings.react.mod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,25 +14,25 @@ import scala.scalajs.js.annotation._
 trait ShellbarProps
   extends /* x */ StringDictionary[js.Any] {
   /* Holds all product actions and links. */
-  var actions: js.UndefOr[js.Array[AnonCallbackEvent]] = js.undefined
+  var actions: js.UndefOr[js.Array[AnonGlyph]] = js.undefined
   var className: js.UndefOr[String] = js.undefined
   /* For use with applications that utilize CoPilot. */
   var copilot: js.UndefOr[Boolean] = js.undefined
   var customStyles: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   var disableStyles: js.UndefOr[Boolean] = js.undefined
-  var localizedText: js.UndefOr[AnonCounterLabelNotificationsButton] = js.undefined
+  var localizedText: js.UndefOr[AnonNotificationsButton] = js.undefined
   /* Provide an img tag for a logo other than the SAP logo. One of the two props (`logo` or `logoSAP`) should be set. */
   var logo: js.UndefOr[ReactNode] = js.undefined
   /* Renders the SAP logo in the Shellbar. One of the two props (`logo` or `logoSAP`) should be set. */
   var logoSAP: js.UndefOr[Boolean] = js.undefined
   /* Information about pending notifications. */
-  var notifications: js.UndefOr[AnonCallbackEventLabel] = js.undefined
+  var notifications: js.UndefOr[AnonLabel] = js.undefined
   /* Holds product titles and navigation. */
-  var productMenu: js.UndefOr[js.Array[AnonArgs]] = js.undefined
+  var productMenu: js.UndefOr[js.Array[AnonLink]] = js.undefined
   /* For navigating between products. */
   var productSwitcher: js.UndefOr[js.Object] = js.undefined
   /* List of the products. */
-  var productSwitcherList: js.UndefOr[js.Array[AnonCallbackEventGlyph]] = js.undefined
+  var productSwitcherList: js.UndefOr[js.Array[AnonImage]] = js.undefined
   /* Displays the current application when no product menu is used. */
   var productTitle: js.UndefOr[String] = js.undefined
   /* User information (_e.g._ name, initials, etc.) */
@@ -49,18 +49,18 @@ object ShellbarProps {
   @scala.inline
   def apply(
     StringDictionary: /* x */ StringDictionary[js.Any] = null,
-    actions: js.Array[AnonCallbackEvent] = null,
+    actions: js.Array[AnonGlyph] = null,
     className: String = null,
     copilot: js.UndefOr[Boolean] = js.undefined,
     customStyles: StringDictionary[js.Any] = null,
     disableStyles: js.UndefOr[Boolean] = js.undefined,
-    localizedText: AnonCounterLabelNotificationsButton = null,
+    localizedText: AnonNotificationsButton = null,
     logo: ReactNode = null,
     logoSAP: js.UndefOr[Boolean] = js.undefined,
-    notifications: AnonCallbackEventLabel = null,
-    productMenu: js.Array[AnonArgs] = null,
+    notifications: AnonLabel = null,
+    productMenu: js.Array[AnonLink] = null,
     productSwitcher: js.Object = null,
-    productSwitcherList: js.Array[AnonCallbackEventGlyph] = null,
+    productSwitcherList: js.Array[AnonImage] = null,
     productTitle: String = null,
     profile: StringDictionary[js.Any] = null,
     profileMenu: js.Array[StringDictionary[_]] = null,

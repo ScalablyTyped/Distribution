@@ -1,6 +1,6 @@
 package typings.jupyterlabLauncher.mod.ILauncher
 
-import typings.phosphorCoreutils.jsonMod.ReadonlyJSONObject
+import typings.luminoCoreutils.jsonMod.ReadonlyJSONObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -47,6 +47,11 @@ trait IItemOptions extends js.Object {
     */
   var kernelIconUrl: js.UndefOr[String] = js.undefined
   /**
+    * Metadata about the item.  This can be used by the launcher to
+    * affect how the item is displayed.
+    */
+  var metadata: js.UndefOr[ReadonlyJSONObject] = js.undefined
+  /**
     * The rank for the launcher item.
     *
     * The rank is used when ordering launcher items for display. After grouping
@@ -66,12 +71,14 @@ object IItemOptions {
     args: ReadonlyJSONObject = null,
     category: String = null,
     kernelIconUrl: String = null,
+    metadata: ReadonlyJSONObject = null,
     rank: Int | Double = null
   ): IItemOptions = {
     val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any])
     if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
     if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
     if (kernelIconUrl != null) __obj.updateDynamic("kernelIconUrl")(kernelIconUrl.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     if (rank != null) __obj.updateDynamic("rank")(rank.asInstanceOf[js.Any])
     __obj.asInstanceOf[IItemOptions]
   }

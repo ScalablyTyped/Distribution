@@ -1,6 +1,6 @@
 package typings.uirouterCore.mod
 
-import typings.uirouterCore.TypeofClassTransition
+import typings.uirouterCore.TypeofTransition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,6 +33,6 @@ class Transition protected ()
 @js.native
 object Transition extends js.Object {
   /** @hidden */
-  var diToken: TypeofClassTransition = js.native
+  var diToken: TypeofTransition = js.native
 }
 

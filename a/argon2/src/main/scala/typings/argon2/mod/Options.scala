@@ -9,6 +9,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
+  var associatedData: js.UndefOr[Buffer] = js.undefined
   var hashLength: js.UndefOr[Double] = js.undefined
   var memoryCost: js.UndefOr[Double] = js.undefined
   var parallelism: js.UndefOr[Double] = js.undefined
@@ -23,6 +24,7 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
+    associatedData: Buffer = null,
     hashLength: Int | Double = null,
     memoryCost: Int | Double = null,
     parallelism: Int | Double = null,
@@ -34,6 +36,7 @@ object Options {
     version: Int | Double = null
   ): Options = {
     val __obj = js.Dynamic.literal()
+    if (associatedData != null) __obj.updateDynamic("associatedData")(associatedData.asInstanceOf[js.Any])
     if (hashLength != null) __obj.updateDynamic("hashLength")(hashLength.asInstanceOf[js.Any])
     if (memoryCost != null) __obj.updateDynamic("memoryCost")(memoryCost.asInstanceOf[js.Any])
     if (parallelism != null) __obj.updateDynamic("parallelism")(parallelism.asInstanceOf[js.Any])

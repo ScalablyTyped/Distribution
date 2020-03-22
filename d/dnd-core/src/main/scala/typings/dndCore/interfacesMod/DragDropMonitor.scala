@@ -1,6 +1,6 @@
 package typings.dndCore.interfacesMod
 
-import typings.dndCore.AnonHandlerIdsArray
+import typings.dndCore.Anon0
 import typings.dndCore.AnonShallowBoolean
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -74,6 +74,6 @@ trait DragDropMonitor extends js.Object {
   def isSourcePublic(): Boolean | Null = js.native
   def subscribeToOffsetChange(listener: Listener): Unsubscribe = js.native
   def subscribeToStateChange(listener: Listener): Unsubscribe = js.native
-  def subscribeToStateChange(listener: Listener, options: AnonHandlerIdsArray): Unsubscribe = js.native
+  def subscribeToStateChange(listener: Listener, options: Anon0): Unsubscribe = js.native
 }
 

@@ -9,12 +9,12 @@ trait ExportingAccessibilityOptions extends js.Object {
     * (Highcharts, Highstock, Highmaps, Gantt) Enable accessibility support for
     * the export menu.
     */
-  var enabled: js.UndefOr[js.Any] = js.undefined
+  var enabled: js.UndefOr[js.Object] = js.undefined
 }
 
 object ExportingAccessibilityOptions {
   @scala.inline
-  def apply(enabled: js.Any = null): ExportingAccessibilityOptions = {
+  def apply(enabled: js.Object = null): ExportingAccessibilityOptions = {
     val __obj = js.Dynamic.literal()
     if (enabled != null) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportingAccessibilityOptions]

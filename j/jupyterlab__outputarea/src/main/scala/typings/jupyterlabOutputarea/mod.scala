@@ -1,10 +1,10 @@
 package typings.jupyterlabOutputarea
 
-import typings.jupyterlabApputils.clientsessionMod.IClientSession
+import typings.jupyterlabApputils.sessioncontextMod.ISessionContext
 import typings.jupyterlabOutputarea.widgetMod.OutputArea.IOptions
-import typings.jupyterlabServices.messagesMod.KernelMessage.IExecuteReplyMsg
-import typings.phosphorCoreutils.jsonMod.JSONObject
-import typings.phosphorCoreutils.jsonMod.ReadonlyJSONObject
+import typings.jupyterlabServices.messagesMod.IExecuteReplyMsg
+import typings.luminoCoreutils.jsonMod.JSONObject
+import typings.luminoCoreutils.jsonMod.ReadonlyPartialJSONObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -63,14 +63,18 @@ object mod extends js.Object {
     /**
       * Execute code on an output area.
       */
-    def execute(code: String, output: typings.jupyterlabOutputarea.widgetMod.OutputArea, session: IClientSession): js.Promise[IExecuteReplyMsg] = js.native
     def execute(
       code: String,
       output: typings.jupyterlabOutputarea.widgetMod.OutputArea,
-      session: IClientSession,
+      sessionContext: ISessionContext
+    ): js.Promise[js.UndefOr[IExecuteReplyMsg]] = js.native
+    def execute(
+      code: String,
+      output: typings.jupyterlabOutputarea.widgetMod.OutputArea,
+      sessionContext: ISessionContext,
       metadata: JSONObject
-    ): js.Promise[IExecuteReplyMsg] = js.native
-    def isIsolated(mimeType: String, metadata: ReadonlyJSONObject): Boolean = js.native
+    ): js.Promise[js.UndefOr[IExecuteReplyMsg]] = js.native
+    def isIsolated(mimeType: String, metadata: ReadonlyPartialJSONObject): Boolean = js.native
   }
   
   @js.native

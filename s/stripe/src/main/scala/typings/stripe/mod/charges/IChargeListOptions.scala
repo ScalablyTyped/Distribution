@@ -1,6 +1,6 @@
 package typings.stripe.mod.charges
 
-import typings.stripe.AnonAlipayaccountAll
+import typings.stripe.AnonObject
 import typings.stripe.mod.IDateFilter
 import typings.stripe.mod.IListOptionsCreated
 import scala.scalajs.js
@@ -16,7 +16,7 @@ trait IChargeListOptions extends IListOptionsCreated {
     * A filter on the list based on the source of the charge. The value can be a
     * dictionary with the following options:
     */
-  var source: js.UndefOr[AnonAlipayaccountAll] = js.undefined
+  var source: js.UndefOr[AnonObject] = js.undefined
 }
 
 object IChargeListOptions {
@@ -28,7 +28,7 @@ object IChargeListOptions {
     expand: js.Array[String] = null,
     include: js.Array[String] = null,
     limit: Int | Double = null,
-    source: AnonAlipayaccountAll = null,
+    source: AnonObject = null,
     starting_after: String = null
   ): IChargeListOptions = {
     val __obj = js.Dynamic.literal()

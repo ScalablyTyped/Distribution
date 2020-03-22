@@ -8,12 +8,12 @@ trait TypeofLayer extends js.Object {
   /**
     * Represents a connection from one layer to another, and keeps track of its weight and gain.
     */
-  var LayerConnection: TypeofClassLayerConnection
+  var LayerConnection: TypeofLayerConnection
 }
 
 object TypeofLayer {
   @scala.inline
-  def apply(LayerConnection: TypeofClassLayerConnection): TypeofLayer = {
+  def apply(LayerConnection: TypeofLayerConnection): TypeofLayer = {
     val __obj = js.Dynamic.literal(LayerConnection = LayerConnection.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TypeofLayer]

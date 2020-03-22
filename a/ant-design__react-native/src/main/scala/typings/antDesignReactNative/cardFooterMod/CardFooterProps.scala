@@ -1,6 +1,6 @@
 package typings.antDesignReactNative.cardFooterMod
 
-import typings.antDesignReactNative.PickCardStylefooterContentfooterExtrafooterWrap
+import typings.antDesignReactNative.PickCardStylefooterConten
 import typings.antDesignReactNative.libStyleMod.WithThemeStyles
 import typings.react.mod.ReactNode
 import typings.reactNative.mod.StyleProp
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 
 trait CardFooterProps
   extends CardFooterPropsType
-     with WithThemeStyles[PickCardStylefooterContentfooterExtrafooterWrap] {
+     with WithThemeStyles[PickCardStylefooterConten] {
   var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
 }
 
@@ -22,7 +22,7 @@ object CardFooterProps {
     content: ReactNode = null,
     extra: ReactNode = null,
     style: StyleProp[ViewStyle] = null,
-    styles: Partial[PickCardStylefooterContentfooterExtrafooterWrap] = null
+    styles: Partial[PickCardStylefooterConten] = null
   ): CardFooterProps = {
     val __obj = js.Dynamic.literal()
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])

@@ -20,7 +20,7 @@ class CreateIntentRequest () extends ICreateIntentRequest {
   def this(properties: ICreateIntentRequest) = this()
   /** CreateIntentRequest intentView. */
   @JSName("intentView")
-  var intentView_CreateIntentRequest: IntentView = js.native
+  var intentView_CreateIntentRequest: IntentView | String = js.native
   /** CreateIntentRequest languageCode. */
   @JSName("languageCode")
   var languageCode_CreateIntentRequest: String = js.native

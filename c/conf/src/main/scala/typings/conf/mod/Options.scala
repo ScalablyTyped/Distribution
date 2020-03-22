@@ -78,9 +78,9 @@ trait Options[T] extends js.Object {
   		*/
   val fileExtension: js.UndefOr[String] = js.undefined
   /*
-  		_Don't use this feature until [this issue](https://github.com/sindresorhus/conf/issues/92) has been fixed._
   		You can use migrations to perform operations to the store whenever a version is changed.
   		The `migrations` object should consist of a key-value pair of `'version': handler`. The `version` can also be a [semver range](https://github.com/npm/node-semver#ranges).
+  		Note: The version the migrations use refers to the __project version__ by default. If you want to change this behavior, specify the `projectVersion` option.
   		@example
   		```
   		import Conf = require('conf');

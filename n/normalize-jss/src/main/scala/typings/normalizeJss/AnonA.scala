@@ -13,7 +13,7 @@ trait AnonA extends js.Object {
   @JSName("[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button")
   var `[typeEqualssignnumber]ColonColon-webkit-inner-spin-buttonComma [typeEqualssignnumber]ColonColon-webkit-outer-spin-button`: AnonHeight
   @JSName("[type=search]")
-  var `[typeEqualssignsearch]`: AnonAppearanceOutlineOffset
+  var `[typeEqualssignsearch]`: AnonOutlineOffset
   @JSName("[type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration")
   var `[typeEqualssignsearch]ColonColon-webkit-search-cancel-buttonComma [typeEqualssignsearch]ColonColon-webkit-search-decoration`: AnonAppearanceString
   var a: AnonBackground
@@ -43,23 +43,23 @@ trait AnonA extends js.Object {
   var `buttonComma select`: AnonTextTransform
   var canvas: AnonDisplay
   @JSName("code, kbp, samp")
-  var `codeComma kbpComma samp`: AnonFontFamilyFontSize
+  var `codeComma kbpComma samp`: AnonFontSize
   @JSName("details, menu")
   var `detailsComma menu`: AnonDisplay
   var dfn: AnonFontStyle
   var fieldset: AnonBorder
-  var h1: AnonFontSize
+  var h1: AnonFontSizeMargin
   var hr: AnonBoxSizingHeight
-  var html: AnonFontFamilyLineHeight
-  var img: AnonBorderStyleVerticalAlign
-  var legend: AnonBoxSizingColor
+  var html: AnonLineHeight
+  var img: AnonVerticalAlign
+  var legend: AnonColor
   var mark: AnonBackgroundColor
-  var pre: AnonFontFamilyFontSize
+  var pre: AnonFontSize
   var progress: AnonDisplayVerticalAlign
   var small: AnonFontSizeString
   var sub: AnonBottom
   @JSName("sub, sup")
-  var `subComma sup`: AnonFontSizeLineHeight
+  var `subComma sup`: AnonPosition
   var summary: AnonDisplay
   var sup: AnonTop
   @JSName("svg:not(:root)")
@@ -75,7 +75,7 @@ object AnonA {
     `[hidden]`: AnonDisplay,
     `[typeEqualssigncheckbox]Comma [typeEqualssignradio]`: AnonBoxSizing,
     `[typeEqualssignnumber]ColonColon-webkit-inner-spin-buttonComma [typeEqualssignnumber]ColonColon-webkit-outer-spin-button`: AnonHeight,
-    `[typeEqualssignsearch]`: AnonAppearanceOutlineOffset,
+    `[typeEqualssignsearch]`: AnonOutlineOffset,
     `[typeEqualssignsearch]ColonColon-webkit-search-cancel-buttonComma [typeEqualssignsearch]ColonColon-webkit-search-decoration`: AnonAppearanceString,
     a: AnonBackground,
     `aColonactiveComma aColonhover`: AnonOutlineWidth,
@@ -92,21 +92,21 @@ object AnonA {
     `buttonComma inputComma optgroupComma selectComma textarea`: AnonFontFamily,
     `buttonComma select`: AnonTextTransform,
     canvas: AnonDisplay,
-    `codeComma kbpComma samp`: AnonFontFamilyFontSize,
+    `codeComma kbpComma samp`: AnonFontSize,
     `detailsComma menu`: AnonDisplay,
     dfn: AnonFontStyle,
     fieldset: AnonBorder,
-    h1: AnonFontSize,
+    h1: AnonFontSizeMargin,
     hr: AnonBoxSizingHeight,
-    html: AnonFontFamilyLineHeight,
-    img: AnonBorderStyleVerticalAlign,
-    legend: AnonBoxSizingColor,
+    html: AnonLineHeight,
+    img: AnonVerticalAlign,
+    legend: AnonColor,
     mark: AnonBackgroundColor,
-    pre: AnonFontFamilyFontSize,
+    pre: AnonFontSize,
     progress: AnonDisplayVerticalAlign,
     small: AnonFontSizeString,
     sub: AnonBottom,
-    `subComma sup`: AnonFontSizeLineHeight,
+    `subComma sup`: AnonPosition,
     summary: AnonDisplay,
     sup: AnonTop,
     svgColonnotLeftparenthesisColonrootRightparenthesis: AnonOverflow,

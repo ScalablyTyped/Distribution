@@ -1,19 +1,19 @@
 package typings.oracleOraclejet.ojchartMod
 
-import typings.oracleOraclejet.AnonAboveMarker
 import typings.oracleOraclejet.AnonAlignTickMarks
-import typings.oracleOraclejet.AnonAsNeeded
-import typings.oracleOraclejet.AnonAuto
-import typings.oracleOraclejet.AnonAutoAxisLine
+import typings.oracleOraclejet.AnonAnimationDownColor
 import typings.oracleOraclejet.AnonAxisLine
 import typings.oracleOraclejet.AnonBackgroundColor
+import typings.oracleOraclejet.AnonBaselineScaling
+import typings.oracleOraclejet.AnonBorderWidth
 import typings.oracleOraclejet.AnonClose
 import typings.oracleOraclejet.AnonComponentName
 import typings.oracleOraclejet.AnonContent
-import typings.oracleOraclejet.AnonContext
+import typings.oracleOraclejet.AnonConverter
 import typings.oracleOraclejet.AnonDrag
 import typings.oracleOraclejet.AnonInsert
 import typings.oracleOraclejet.AnonPreventDefault
+import typings.oracleOraclejet.AnonRenderer
 import typings.oracleOraclejet.AnonX
 import typings.oracleOraclejet.ojchartMod.ojChart.DataLabelContext
 import typings.oracleOraclejet.ojdataproviderMod.DataProvider
@@ -96,12 +96,12 @@ trait ojChartSettableProperties[K, D] extends dvtBaseComponentSettableProperties
   var highlightedCategories: js.Array[String]
   var hoverBehavior: dim | none
   var initialZooming: first | last | none
-  var legend: AnonAsNeeded
+  var legend: AnonBackgroundColor
   var orientation: horizontal | vertical
   var otherThreshold: Double
   var overview: AnonContent
-  var pieCenter: AnonAuto
-  var plotArea: AnonBackgroundColor
+  var pieCenter: AnonConverter
+  var plotArea: AnonBorderWidth
   var polarGridShape: polygon | circle
   var selection: js.Array[K]
   var selectionMode: single | multiple | none
@@ -111,9 +111,9 @@ trait ojChartSettableProperties[K, D] extends dvtBaseComponentSettableProperties
   var splitterPosition: Double
   var stack: on | off
   var stackLabel: on | off
-  var styleDefaults: AnonAboveMarker
+  var styleDefaults: AnonAnimationDownColor
   var timeAxisType: enabled | mixedFrequency | skipGaps | disabled | auto
-  var tooltip: AnonContext
+  var tooltip: AnonRenderer
   var touchResponse: touchStart | auto
   @JSName("translations")
   var translations_ojChartSettableProperties: AnonComponentName
@@ -121,7 +121,7 @@ trait ojChartSettableProperties[K, D] extends dvtBaseComponentSettableProperties
   var valueFormats: AnonClose
   var xAxis: AnonAxisLine
   var y2Axis: AnonAlignTickMarks
-  var yAxis: AnonAutoAxisLine
+  var yAxis: AnonBaselineScaling
   var zoomAndScroll: delayedScrollOnly | liveScrollOnly | delayed | live | off
   var zoomDirection: x | y | auto
   def dataLabel(context: DataLabelContext): AnonInsert | AnonPreventDefault
@@ -147,12 +147,12 @@ object ojChartSettableProperties {
     highlightedCategories: js.Array[String],
     hoverBehavior: dim | none,
     initialZooming: first | last | none,
-    legend: AnonAsNeeded,
+    legend: AnonBackgroundColor,
     orientation: horizontal | vertical,
     otherThreshold: Double,
     overview: AnonContent,
-    pieCenter: AnonAuto,
-    plotArea: AnonBackgroundColor,
+    pieCenter: AnonConverter,
+    plotArea: AnonBorderWidth,
     polarGridShape: polygon | circle,
     selection: js.Array[K],
     selectionMode: single | multiple | none,
@@ -161,9 +161,9 @@ object ojChartSettableProperties {
     splitterPosition: Double,
     stack: on | off,
     stackLabel: on | off,
-    styleDefaults: AnonAboveMarker,
+    styleDefaults: AnonAnimationDownColor,
     timeAxisType: enabled | mixedFrequency | skipGaps | disabled | auto,
-    tooltip: AnonContext,
+    tooltip: AnonRenderer,
     touchResponse: touchStart | auto,
     trackResize: on | off,
     translations: AnonComponentName,
@@ -171,7 +171,7 @@ object ojChartSettableProperties {
     valueFormats: AnonClose,
     xAxis: AnonAxisLine,
     y2Axis: AnonAlignTickMarks,
-    yAxis: AnonAutoAxisLine,
+    yAxis: AnonBaselineScaling,
     zoomAndScroll: delayedScrollOnly | liveScrollOnly | delayed | live | off,
     zoomDirection: x | y | auto,
     data: DataProvider[K, D] = null,

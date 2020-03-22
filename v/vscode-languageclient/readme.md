@@ -1,7 +1,7 @@
 
 # Scala.js typings for vscode-languageclient
 
-Typings are for version 5.2.1
+Typings are for version 6.1.1
 
 ## Library description:
 VSCode Language client implementation

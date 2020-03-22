@@ -5,7 +5,6 @@ import typings.firebaseFirestore.coreQueryMod.Query
 import typings.firebaseFirestore.coreSnapshotVersionMod.SnapshotVersion
 import typings.firebaseFirestore.coreTargetMod.Target
 import typings.firebaseFirestore.coreTypesMod.BatchId
-import typings.firebaseFirestore.coreTypesMod.ProtoByteString
 import typings.firebaseFirestore.coreTypesMod.TargetId
 import typings.firebaseFirestore.localLocalViewChangesMod.LocalViewChanges
 import typings.firebaseFirestore.localLruGarbageCollectorMod.LruGarbageCollector
@@ -24,6 +23,7 @@ import typings.firebaseFirestore.modelMutationBatchMod.MutationBatch
 import typings.firebaseFirestore.modelMutationBatchMod.MutationBatchResult
 import typings.firebaseFirestore.modelMutationMod.Mutation
 import typings.firebaseFirestore.remoteRemoteEventMod.RemoteEvent
+import typings.firebaseFirestore.utilByteStringMod.ByteString
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -129,7 +129,7 @@ class LocalStore protected () extends js.Object {
     */
   def getLastRemoteSnapshotVersion(): js.Promise[SnapshotVersion] = js.native
   /** Returns the last recorded stream token for the current user. */
-  def getLastStreamToken(): js.Promise[ProtoByteString] = js.native
+  def getLastStreamToken(): js.Promise[ByteString] = js.native
   /**
     * Returns the set of documents that have been updated since the last call.
     * If this is the first call, returns the set of changes since client
@@ -196,7 +196,7 @@ class LocalStore protected () extends js.Object {
     * mutation batch. This is usually only useful after a stream handshake or in
     * response to an error that requires clearing the stream token.
     */
-  def setLastStreamToken(streamToken: ProtoByteString): js.Promise[Unit] = js.native
+  def setLastStreamToken(streamToken: ByteString): js.Promise[Unit] = js.native
   def setNetworkEnabled(networkEnabled: Boolean): Unit = js.native
   /** Starts the LocalStore. */
   def start(): js.Promise[Unit] = js.native

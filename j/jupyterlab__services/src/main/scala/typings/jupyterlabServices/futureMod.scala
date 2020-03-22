@@ -1,21 +1,21 @@
 package typings.jupyterlabServices
 
-import typings.jupyterlabServices.kernelKernelMod.Kernel.IFuture
-import typings.jupyterlabServices.kernelKernelMod.Kernel.IKernel
-import typings.jupyterlabServices.messagesMod.KernelMessage.ControlMessageType
-import typings.jupyterlabServices.messagesMod.KernelMessage.IControlMessage
-import typings.jupyterlabServices.messagesMod.KernelMessage.IIOPubMessage
-import typings.jupyterlabServices.messagesMod.KernelMessage.IInputReply
-import typings.jupyterlabServices.messagesMod.KernelMessage.IMessage
-import typings.jupyterlabServices.messagesMod.KernelMessage.IOPubMessageType
-import typings.jupyterlabServices.messagesMod.KernelMessage.IShellControlMessage
-import typings.jupyterlabServices.messagesMod.KernelMessage.IShellMessage
-import typings.jupyterlabServices.messagesMod.KernelMessage.IStdinMessage
-import typings.jupyterlabServices.messagesMod.KernelMessage.MessageType
-import typings.jupyterlabServices.messagesMod.KernelMessage.ReplyContent
-import typings.jupyterlabServices.messagesMod.KernelMessage.ShellMessageType
-import typings.jupyterlabServices.messagesMod.KernelMessage.StdinMessageType
-import typings.phosphorDisposable.mod.DisposableDelegate
+import typings.jupyterlabServices.kernelKernelMod.IFuture
+import typings.jupyterlabServices.kernelKernelMod.IKernelConnection
+import typings.jupyterlabServices.messagesMod.ControlMessageType
+import typings.jupyterlabServices.messagesMod.IControlMessage
+import typings.jupyterlabServices.messagesMod.IIOPubMessage
+import typings.jupyterlabServices.messagesMod.IInputReply
+import typings.jupyterlabServices.messagesMod.IMessage
+import typings.jupyterlabServices.messagesMod.IOPubMessageType
+import typings.jupyterlabServices.messagesMod.IShellControlMessage
+import typings.jupyterlabServices.messagesMod.IShellMessage
+import typings.jupyterlabServices.messagesMod.IStdinMessage
+import typings.jupyterlabServices.messagesMod.MessageType
+import typings.jupyterlabServices.messagesMod.ReplyContent
+import typings.jupyterlabServices.messagesMod.ShellMessageType
+import typings.jupyterlabServices.messagesMod.StdinMessageType
+import typings.luminoDisposable.mod.DisposableDelegate
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -38,7 +38,7 @@ object futureMod extends js.Object {
       msg: REQUEST,
       expectReply: Boolean,
       disposeOnDone: Boolean,
-      kernel: IKernel
+      kernel: IKernelConnection
     ) = this()
     var _disposeOnDone: js.Any = js.native
     var _done: js.Any = js.native
@@ -75,11 +75,6 @@ object futureMod extends js.Object {
     /* CompleteClass */
     override val done: js.Promise[js.UndefOr[REPLY]] = js.native
     /**
-      * A promise that resolves when the future is done.
-      */
-    @JSName("done")
-    val done_KernelFutureHandler: js.Promise[REPLY] = js.native
-    /**
       * Test whether the object has been disposed.
       *
       * #### Notes
@@ -107,9 +102,27 @@ object futureMod extends js.Object {
     /* InferMemberOverrides */
     override def dispose(): Unit = js.native
     /**
+      * A promise that resolves when the future is done.
+      */
+    @JSName("done")
+    def done_MKernelFutureHandler(): js.Promise[REPLY] = js.native
+    /**
       * Handle an incoming kernel message.
       */
     def handleMsg(msg: IMessage[MessageType]): js.Promise[Unit] = js.native
+    /**
+      * Get the original outgoing message.
+      */
+    @JSName("msg")
+    def msg_MKernelFutureHandler(): REQUEST = js.native
+    /**
+      * Get the iopub handler.
+      */
+    def onIOPub(): js.Function1[/* msg */ IIOPubMessage[IOPubMessageType], Unit | js.Thenable[Unit]] = js.native
+    /**
+      * Set the iopub handler.
+      */
+    def onIOPub(cb: js.Function1[/* msg */ IIOPubMessage[IOPubMessageType], Unit | js.Thenable[Unit]]): Unit | js.Thenable[Unit] = js.native
     /**
       * The iopub handler for the kernel future.
       *
@@ -119,6 +132,14 @@ object futureMod extends js.Object {
       */
     /* CompleteClass */
     override def onIOPub(msg: IIOPubMessage[IOPubMessageType]): Unit | js.Thenable[Unit] = js.native
+    /**
+      * Get the reply handler.
+      */
+    def onReply(): js.Function1[/* msg */ REPLY, Unit | js.Thenable[Unit]] = js.native
+    /**
+      * Set the reply handler.
+      */
+    def onReply(cb: js.Function1[/* msg */ REPLY, Unit | js.Thenable[Unit]]): Unit | js.Thenable[Unit] = js.native
     /**
       * The reply handler for the kernel future.
       *
@@ -130,6 +151,14 @@ object futureMod extends js.Object {
       */
     /* CompleteClass */
     override def onReply(msg: REPLY): Unit | js.Thenable[Unit] = js.native
+    /**
+      * Get the stdin handler.
+      */
+    def onStdin(): js.Function1[/* msg */ IStdinMessage[StdinMessageType], Unit | js.Thenable[Unit]] = js.native
+    /**
+      * Set the stdin handler.
+      */
+    def onStdin(cb: js.Function1[/* msg */ IStdinMessage[StdinMessageType], Unit | js.Thenable[Unit]]): Unit | js.Thenable[Unit] = js.native
     /**
       * The stdin handler for the kernel future.
       *

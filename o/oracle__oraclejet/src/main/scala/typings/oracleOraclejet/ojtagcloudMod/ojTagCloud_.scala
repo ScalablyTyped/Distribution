@@ -1,8 +1,8 @@
 package typings.oracleOraclejet.ojtagcloudMod
 
-import typings.oracleOraclejet.AnonAnimationDurationHoverBehaviorDelay
-import typings.oracleOraclejet.AnonComponentNameLabelAndValue
-import typings.oracleOraclejet.AnonContextRendererAnonInsertAnonPreventDefaultKTooltipContext
+import typings.oracleOraclejet.Anon24
+import typings.oracleOraclejet.AnonHoverBehaviorDelay
+import typings.oracleOraclejet.AnonLabelAndValue
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.ojdataproviderMod.DataProvider
 import typings.oracleOraclejet.ojdvtBaseMod.dvtBaseComponent
@@ -75,19 +75,16 @@ trait ojTagCloud_[K, D] extends dvtBaseComponent[ojTagCloudSettableProperties[K,
   var onLayoutChanged: (js.Function1[/* event */ JetElementCustomEvent[cloud | rectangular], _]) | Null = js.native
   var onSelectionChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[K]], _]) | Null = js.native
   var onSelectionModeChanged: (js.Function1[/* event */ JetElementCustomEvent[single | multiple | none], _]) | Null = js.native
-  var onStyleDefaultsChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonAnimationDurationHoverBehaviorDelay], _]) | Null = js.native
-  var onTooltipChanged: (js.Function1[
-    /* event */ JetElementCustomEvent[AnonContextRendererAnonInsertAnonPreventDefaultKTooltipContext[K]], 
-    _
-  ]) | Null = js.native
+  var onStyleDefaultsChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonHoverBehaviorDelay], _]) | Null = js.native
+  var onTooltipChanged: (js.Function1[/* event */ JetElementCustomEvent[Anon24[K]], _]) | Null = js.native
   var onTouchResponseChanged: (js.Function1[/* event */ JetElementCustomEvent[touchStart | auto], _]) | Null = js.native
   var selection: js.Array[K] = js.native
   var selectionMode: single | multiple | none = js.native
-  var styleDefaults: AnonAnimationDurationHoverBehaviorDelay = js.native
-  var tooltip: AnonContextRendererAnonInsertAnonPreventDefaultKTooltipContext[K] = js.native
+  var styleDefaults: AnonHoverBehaviorDelay = js.native
+  var tooltip: Anon24[K] = js.native
   var touchResponse: touchStart | auto = js.native
   @JSName("translations")
-  var translations_ojTagCloud_ : AnonComponentNameLabelAndValue = js.native
+  var translations_ojTagCloud_ : AnonLabelAndValue = js.native
   def addEventListener(
     `type`: animationOnDataChangeChanged,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | none], _]
@@ -217,39 +214,23 @@ trait ojTagCloud_[K, D] extends dvtBaseComponent[ojTagCloudSettableProperties[K,
   @JSName("addEventListener")
   def addEventListener_styleDefaultsChanged(
     `type`: styleDefaultsChanged,
-    listener: js.ThisFunction1[
-      /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[AnonAnimationDurationHoverBehaviorDelay], 
-      _
-    ]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonHoverBehaviorDelay], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_styleDefaultsChanged(
     `type`: styleDefaultsChanged,
-    listener: js.ThisFunction1[
-      /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[AnonAnimationDurationHoverBehaviorDelay], 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonHoverBehaviorDelay], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_tooltipChanged(
     `type`: tooltipChanged,
-    listener: js.ThisFunction1[
-      /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[AnonContextRendererAnonInsertAnonPreventDefaultKTooltipContext[K]], 
-      _
-    ]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Anon24[K]], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_tooltipChanged(
     `type`: tooltipChanged,
-    listener: js.ThisFunction1[
-      /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[AnonContextRendererAnonInsertAnonPreventDefaultKTooltipContext[K]], 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Anon24[K]], _],
     useCapture: Boolean
   ): Unit = js.native
   def getContextByNode(node: Element): NodeContext | Null = js.native
@@ -278,9 +259,9 @@ trait ojTagCloud_[K, D] extends dvtBaseComponent[ojTagCloudSettableProperties[K,
   @JSName("getProperty")
   def getProperty_selectionMode(property: selectionMode): single | multiple | none = js.native
   @JSName("getProperty")
-  def getProperty_styleDefaults(property: styleDefaults): AnonAnimationDurationHoverBehaviorDelay = js.native
+  def getProperty_styleDefaults(property: styleDefaults): AnonHoverBehaviorDelay = js.native
   @JSName("getProperty")
-  def getProperty_tooltip(property: tooltip): AnonContextRendererAnonInsertAnonPreventDefaultKTooltipContext[K] = js.native
+  def getProperty_tooltip(property: tooltip): Anon24[K] = js.native
   @JSName("getProperty")
   def getProperty_touchResponse(property: touchResponse): touchStart | auto = js.native
   def setProperties(properties: ojTagCloudSettablePropertiesLenient[K, D]): Unit = js.native
@@ -312,10 +293,10 @@ trait ojTagCloud_[K, D] extends dvtBaseComponent[ojTagCloudSettableProperties[K,
   @JSName("setProperty")
   def setProperty_selection(property: selection, value: js.Array[K]): Unit = js.native
   @JSName("setProperty")
-  def setProperty_styleDefaults(property: styleDefaults, value: AnonAnimationDurationHoverBehaviorDelay): Unit = js.native
+  def setProperty_styleDefaults(property: styleDefaults, value: AnonHoverBehaviorDelay): Unit = js.native
   @JSName("setProperty")
-  def setProperty_tooltip(property: tooltip, value: AnonContextRendererAnonInsertAnonPreventDefaultKTooltipContext[K]): Unit = js.native
+  def setProperty_tooltip(property: tooltip, value: Anon24[K]): Unit = js.native
   @JSName("setProperty")
-  def setProperty_translations(property: translations, value: AnonComponentNameLabelAndValue): Unit = js.native
+  def setProperty_translations(property: translations, value: AnonLabelAndValue): Unit = js.native
 }
 

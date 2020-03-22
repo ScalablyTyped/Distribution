@@ -19,6 +19,10 @@ trait PutScalingPolicyType extends js.Object {
     */
   var Cooldown: js.UndefOr[typings.awsSdk.autoscalingMod.Cooldown] = js.native
   /**
+    * Indicates whether the scaling policy is enabled or disabled. The default is enabled. For more information, see Disabling a Scaling Policy for an Auto Scaling Group in the Amazon EC2 Auto Scaling User Guide.
+    */
+  var Enabled: js.UndefOr[ScalingPolicyEnabled] = js.native
+  /**
     * The estimated time, in seconds, until a newly launched instance can contribute to the CloudWatch metrics. The default is to use the value specified for the default cooldown period for the group. Valid only if the policy type is StepScaling or TargetTrackingScaling.
     */
   var EstimatedInstanceWarmup: js.UndefOr[typings.awsSdk.autoscalingMod.EstimatedInstanceWarmup] = js.native
@@ -63,6 +67,7 @@ object PutScalingPolicyType {
     PolicyName: XmlStringMaxLen255,
     AdjustmentType: XmlStringMaxLen255 = null,
     Cooldown: Int | Double = null,
+    Enabled: js.UndefOr[Boolean] = js.undefined,
     EstimatedInstanceWarmup: Int | Double = null,
     MetricAggregationType: XmlStringMaxLen32 = null,
     MinAdjustmentMagnitude: Int | Double = null,
@@ -75,6 +80,7 @@ object PutScalingPolicyType {
     val __obj = js.Dynamic.literal(AutoScalingGroupName = AutoScalingGroupName.asInstanceOf[js.Any], PolicyName = PolicyName.asInstanceOf[js.Any])
     if (AdjustmentType != null) __obj.updateDynamic("AdjustmentType")(AdjustmentType.asInstanceOf[js.Any])
     if (Cooldown != null) __obj.updateDynamic("Cooldown")(Cooldown.asInstanceOf[js.Any])
+    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.asInstanceOf[js.Any])
     if (EstimatedInstanceWarmup != null) __obj.updateDynamic("EstimatedInstanceWarmup")(EstimatedInstanceWarmup.asInstanceOf[js.Any])
     if (MetricAggregationType != null) __obj.updateDynamic("MetricAggregationType")(MetricAggregationType.asInstanceOf[js.Any])
     if (MinAdjustmentMagnitude != null) __obj.updateDynamic("MinAdjustmentMagnitude")(MinAdjustmentMagnitude.asInstanceOf[js.Any])

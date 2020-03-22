@@ -1,7 +1,7 @@
 package typings.firefoxWebextBrowser.browser.webNavigation
 
 import org.scalablytyped.runtime.TopLevel
-import typings.firefoxWebextBrowser.AnonFrameIdProcessIdTabId
+import typings.firefoxWebextBrowser.AnonUrl
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("browser.webNavigation.onDOMContentLoaded")
 @js.native
 object onDOMContentLoaded
-  extends TopLevel[
-      WebNavigationOnDOMContentLoadedEvent[js.Function1[/* details */ AnonFrameIdProcessIdTabId, Unit]]
-    ]
+  extends TopLevel[WebNavigationOnDOMContentLoadedEvent[js.Function1[/* details */ AnonUrl, Unit]]]
 

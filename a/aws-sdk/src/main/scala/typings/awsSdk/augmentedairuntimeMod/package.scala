@@ -5,7 +5,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object augmentedairuntimeMod {
-  type Boolean = scala.Boolean
   type ClientConfiguration = typings.awsSdk.serviceMod.ServiceConfigurationOptions with typings.awsSdk.augmentedairuntimeMod.ClientApiVersions
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.FreeOfPersonallyIdentifiableInformation

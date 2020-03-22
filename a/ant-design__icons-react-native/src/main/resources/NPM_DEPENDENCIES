@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@ant-design/icons-react-native" : "1.0.2"
+      "@ant-design/icons-react-native" : "2.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@ant-design/icons-react-native" : "1.0.2"
+      "@ant-design/icons-react-native" : "2.0.0"
     }
   ],
   "compile-devDependencies" : [

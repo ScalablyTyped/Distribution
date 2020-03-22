@@ -17,7 +17,7 @@ object sphericalMod extends js.Object {
     var radius: Double = js.native
     var theta: Double = js.native
     def copy(other: Spherical): this.type = js.native
-    def makeSafe(): Unit = js.native
+    def makeSafe(): this.type = js.native
     def set(radius: Double, phi: Double, theta: Double): this.type = js.native
     def setFromCartesianCoords(x: Double, y: Double, z: Double): this.type = js.native
     def setFromVector3(v: Vector3): this.type = js.native

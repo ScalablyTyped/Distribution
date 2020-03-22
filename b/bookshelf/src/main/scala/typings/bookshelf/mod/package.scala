@@ -14,8 +14,8 @@ package object mod {
   type FetchAllOptions = typings.bookshelf.mod.FetchOptions
   type WithRelatedQuery = org.scalablytyped.runtime.StringDictionary[
     js.Function1[
-      /* query */ typings.knex.mod.QueryBuilder[js.Any, js.Array[typings.knex.mod.SafePartial[js.Any]]], 
-      typings.knex.mod.QueryBuilder[js.Any, js.Array[typings.knex.mod.SafePartial[js.Any]]]
+      /* query */ typings.knex.mod.QueryBuilder[js.Any, js.Any], 
+      typings.knex.mod.QueryBuilder[js.Any, js.Any]
     ]
   ]
 }

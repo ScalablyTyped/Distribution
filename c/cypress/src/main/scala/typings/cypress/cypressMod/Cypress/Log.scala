@@ -2,12 +2,12 @@ package typings.cypress.cypressMod.Cypress
 
 import typings.cypress.AnonAt
 import typings.cypress.JQuery_
+import typings.cypress.PartialLogConfig
 import typings.cypress.cypressStrings.$el
 import typings.cypress.cypressStrings.displayName
 import typings.cypress.cypressStrings.message
 import typings.cypress.cypressStrings.name
 import typings.std.HTMLElement
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,7 +25,7 @@ trait Log extends js.Object {
   def get_message(attr: message): js.Array[_] = js.native
   @JSName("get")
   def get_name(attr: name): String = js.native
-  def set(options: Partial[LogConfig]): Log = js.native
+  def set(options: PartialLogConfig): Log = js.native
   @JSName("set")
   def set_displayName(key: displayName, value: String): Log = js.native
   @JSName("set")

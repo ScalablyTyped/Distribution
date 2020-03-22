@@ -1,6 +1,6 @@
 package typings.awsSdk.acmMod
 
-import typings.awsSdk.AnonWaiter
+import typings.awsSdk.DescribeCertificateReques
 import typings.awsSdk.awsSdkStrings.certificateValidated
 import typings.awsSdk.configMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
@@ -197,11 +197,11 @@ trait ACM extends Service {
     * Waits for the certificateValidated state by periodically calling the underlying ACM.describeCertificateoperation every 60 seconds (at most 40 times).
     */
   @JSName("waitFor")
-  def waitFor_certificateValidated(state: certificateValidated, params: DescribeCertificateRequest with AnonWaiter): Request[DescribeCertificateResponse, AWSError] = js.native
+  def waitFor_certificateValidated(state: certificateValidated, params: DescribeCertificateReques): Request[DescribeCertificateResponse, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_certificateValidated(
     state: certificateValidated,
-    params: DescribeCertificateRequest with AnonWaiter,
+    params: DescribeCertificateReques,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeCertificateResponse, Unit]
   ): Request[DescribeCertificateResponse, AWSError] = js.native
 }

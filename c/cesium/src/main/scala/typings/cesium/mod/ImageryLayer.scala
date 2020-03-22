@@ -1,6 +1,6 @@
 package typings.cesium.mod
 
-import typings.cesium.AnonAlphaBrightness
+import typings.cesium.AnonBrightness
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ImageryLayer protected () extends js.Object {
   def this(imageryProvider: ImageryProvider) = this()
-  def this(imageryProvider: ImageryProvider, options: AnonAlphaBrightness) = this()
+  def this(imageryProvider: ImageryProvider, options: AnonBrightness) = this()
   var alpha: Double = js.native
   var brightness: Double = js.native
   var contrast: Double = js.native

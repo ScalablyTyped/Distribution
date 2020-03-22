@@ -1,6 +1,6 @@
 package typings.winrtUwp.Windows.Devices.Perception
 
-import typings.winrtUwp.AnonReturnValueTargetCoordinates
+import typings.winrtUwp.AnonTargetCoordinates
 import typings.winrtUwp.Windows.Foundation.Point
 import typings.winrtUwp.Windows.Foundation.Rect
 import scala.scalajs.js
@@ -15,7 +15,7 @@ abstract class PerceptionDepthCorrelatedCoordinateMapper () extends js.Object {
     * Maps all pixels in an image from camera image space to depth image space.
     * @param depthFrame The depth frame to map the pixels to.
     */
-  def mapAllPixelsToTargetAsync(depthFrame: PerceptionDepthFrame): AnonReturnValueTargetCoordinates = js.native
+  def mapAllPixelsToTargetAsync(depthFrame: PerceptionDepthFrame): AnonTargetCoordinates = js.native
   /**
     * Maps a pixel from camera image space to depth image space.
     * @param sourcePixelCoordinate A pixel coordinate, in camera image space.
@@ -35,6 +35,6 @@ abstract class PerceptionDepthCorrelatedCoordinateMapper () extends js.Object {
     * @param region The region of pixels to map from camera image space to depth image space.
     * @param depthFrame The depth frame to map the region of pixels to.
     */
-  def mapRegionOfPixelsToTargetAsync(region: Rect, depthFrame: PerceptionDepthFrame): AnonReturnValueTargetCoordinates = js.native
+  def mapRegionOfPixelsToTargetAsync(region: Rect, depthFrame: PerceptionDepthFrame): AnonTargetCoordinates = js.native
 }
 

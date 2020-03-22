@@ -1,6 +1,6 @@
 package typings.materialUi.MaterialUI.DatePicker
 
-import typings.materialUi.AnonLocales
+import typings.materialUi.AnonCall
 import typings.materialUi.MaterialUI.Popover.PopoverAnimationProps
 import typings.materialUi.MaterialUI.propTypes.utils
 import typings.materialUi.materialUiStrings.`inline`
@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation._
 
 trait DatePickerDialogProps extends js.Object {
   // <Container/> is the element that get the 'other' properties
-  var DateTimeFormat: js.UndefOr[AnonLocales] = js.undefined
+  var DateTimeFormat: js.UndefOr[AnonCall] = js.undefined
   var animation: js.UndefOr[ComponentClass[PopoverAnimationProps, ComponentState]] = js.undefined
   var autoOk: js.UndefOr[Boolean] = js.undefined
   var cancelLabel: js.UndefOr[ReactNode] = js.undefined
@@ -42,7 +42,7 @@ trait DatePickerDialogProps extends js.Object {
 object DatePickerDialogProps {
   @scala.inline
   def apply(
-    DateTimeFormat: AnonLocales = null,
+    DateTimeFormat: AnonCall = null,
     animation: ComponentClass[PopoverAnimationProps, ComponentState] = null,
     autoOk: js.UndefOr[Boolean] = js.undefined,
     cancelLabel: ReactNode = null,

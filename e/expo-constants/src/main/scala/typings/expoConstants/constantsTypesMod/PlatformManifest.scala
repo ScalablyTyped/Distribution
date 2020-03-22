@@ -1,7 +1,7 @@
 package typings.expoConstants.constantsTypesMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.expoConstants.AnonKeyScheme
+import typings.expoConstants.AnonScheme
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait PlatformManifest
   extends /* key */ StringDictionary[js.Any] {
   var android: js.UndefOr[AndroidManifest] = js.undefined
-  var detach: js.UndefOr[AnonKeyScheme] = js.undefined
+  var detach: js.UndefOr[AnonScheme] = js.undefined
   var developer: js.UndefOr[String] = js.undefined
   var hostUri: js.UndefOr[String] = js.undefined
   var ios: js.UndefOr[IOSManifest] = js.undefined
@@ -23,7 +23,7 @@ object PlatformManifest {
   def apply(
     StringDictionary: /* key */ StringDictionary[js.Any] = null,
     android: AndroidManifest = null,
-    detach: AnonKeyScheme = null,
+    detach: AnonScheme = null,
     developer: String = null,
     hostUri: String = null,
     ios: IOSManifest = null,

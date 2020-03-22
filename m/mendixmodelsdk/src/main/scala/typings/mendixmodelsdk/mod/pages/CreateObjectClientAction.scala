@@ -178,6 +178,15 @@ object CreateObjectClientAction extends js.Object {
   def createInStaticImageViewerUnderClickAction(container: typings.mendixmodelsdk.pagesMod.pages.StaticImageViewer): typings.mendixmodelsdk.pagesMod.pages.CreateObjectClientAction = js.native
   /**
     * Creates and returns a new CreateObjectClientAction instance in the SDK and on the server.
+    * The new CreateObjectClientAction will be automatically stored in the 'onEnterKeyPressAction' property
+    * of the parent TextBox element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.7.0 and higher
+    */
+  def createInTextBoxUnderOnEnterKeyPressAction(container: typings.mendixmodelsdk.pagesMod.pages.TextBox): typings.mendixmodelsdk.pagesMod.pages.CreateObjectClientAction = js.native
+  /**
+    * Creates and returns a new CreateObjectClientAction instance in the SDK and on the server.
     * The new CreateObjectClientAction will be automatically stored in the 'action' property
     * of the parent customwidgets.WidgetValue element passed as argument.
     *

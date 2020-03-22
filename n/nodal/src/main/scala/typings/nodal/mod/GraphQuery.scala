@@ -1,7 +1,7 @@
 package typings.nodal.mod
 
 import typings.nodal.AnonJoins
-import typings.nodal.TypeofClassModel
+import typings.nodal.TypeofModel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,8 +16,8 @@ class GraphQuery protected () extends js.Object {
     * @param {Nodal.Model} [Model=null] The Model to base your query around (used for testing)
     */
   def this(str: String, maxDepth: Double) = this()
-  def this(str: String, maxDepth: Double, mModel: TypeofClassModel) = this()
-  var Model: TypeofClassModel = js.native
+  def this(str: String, maxDepth: Double, mModel: TypeofModel) = this()
+  var Model: TypeofModel = js.native
   var constructor: js.Any = js.native
   var identifier: String = js.native
   var joins: js.Any = js.native

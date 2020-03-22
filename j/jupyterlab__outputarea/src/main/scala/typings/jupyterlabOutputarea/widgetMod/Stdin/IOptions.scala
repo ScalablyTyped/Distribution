@@ -1,8 +1,8 @@
 package typings.jupyterlabOutputarea.widgetMod.Stdin
 
-import typings.jupyterlabServices.kernelKernelMod.Kernel.IShellFuture
-import typings.jupyterlabServices.messagesMod.KernelMessage.IShellMessage
-import typings.jupyterlabServices.messagesMod.KernelMessage.ShellMessageType
+import typings.jupyterlabServices.kernelKernelMod.IShellFuture
+import typings.jupyterlabServices.messagesMod.IShellMessage
+import typings.jupyterlabServices.messagesMod.ShellMessageType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

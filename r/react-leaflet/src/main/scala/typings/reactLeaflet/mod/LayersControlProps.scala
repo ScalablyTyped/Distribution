@@ -3,16 +3,16 @@ package typings.reactLeaflet.mod
 import typings.leaflet.mod.ControlPosition
 import typings.leaflet.mod.Control_.LayersOptions
 import typings.leaflet.mod.LayersControlEvent
-import typings.reactLeaflet.AnonLeaflet
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait LayersControlProps
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.reactLeaflet.mod.MapControlProps because var conflicts: position. Inlined leaflet */ trait LayersControlProps
   extends LayersOptions
-     with AnonLeaflet
      with LayersControlEvents {
   var children: Children
+  var leaflet: js.UndefOr[LeafletContext] = js.undefined
 }
 
 object LayersControlProps {

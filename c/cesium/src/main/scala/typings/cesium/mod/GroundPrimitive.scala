@@ -1,6 +1,6 @@
 package typings.cesium.mod
 
-import typings.cesium.AnonAllowPickingAppearanceAsynchronous
+import typings.cesium.AnonCompressVertices
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("cesium", "GroundPrimitive")
 @js.native
 class GroundPrimitive protected () extends js.Object {
-  def this(options: AnonAllowPickingAppearanceAsynchronous) = this()
+  def this(options: AnonCompressVertices) = this()
   val allowPicking: Boolean = js.native
   var appearance: Appearance = js.native
   val asynchronous: Boolean = js.native

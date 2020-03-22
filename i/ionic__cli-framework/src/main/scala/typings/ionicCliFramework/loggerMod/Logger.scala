@@ -1,7 +1,7 @@
 package typings.ionicCliFramework.loggerMod
 
+import typings.ionicCliFramework.PartialLoggerOptions
 import typings.node.NodeJS.WritableStream
-import typings.std.Partial
 import typings.std.ReadonlySet
 import typings.std.Set
 import scala.scalajs.js
@@ -14,7 +14,7 @@ class Logger () extends js.Object {
   def this(hasLevelHandlers: LoggerOptions) = this()
   var handlers: Set[LoggerHandler] = js.native
   var level: LoggerLevelWeight = js.native
-  def clone(opts: Partial[LoggerOptions]): Logger = js.native
+  def clone(opts: PartialLoggerOptions): Logger = js.native
   def createRecord(msg: String): LogRecord = js.native
   def createRecord(msg: String, level: LoggerLevelWeight): LogRecord = js.native
   def createRecord(msg: String, level: LoggerLevelWeight, format: Boolean): LogRecord = js.native

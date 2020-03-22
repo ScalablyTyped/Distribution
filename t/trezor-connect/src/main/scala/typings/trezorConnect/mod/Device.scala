@@ -8,15 +8,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.trezorConnect.AnonAcquired
+  - typings.trezorConnect.AnonFeatures
   - typings.trezorConnect.AnonLabel
-  - typings.trezorConnect.AnonLabelPath
+  - typings.trezorConnect.AnonPath
 */
 trait Device extends js.Object
 
 object Device {
   @scala.inline
-  def AnonAcquired(
+  def AnonFeatures(
     features: Features,
     firmware: DeviceFirmwareStatus,
     firmwareRelease: FirmwareRelease,
@@ -39,7 +39,7 @@ object Device {
     __obj.asInstanceOf[Device]
   }
   @scala.inline
-  def AnonLabelPath(label: String, path: String, `type`: unreadable): Device = {
+  def AnonPath(label: String, path: String, `type`: unreadable): Device = {
     val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Device]

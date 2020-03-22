@@ -14,11 +14,11 @@ import typings.elasticElasticsearch.AnonCloseJob
 import typings.elasticElasticsearch.AnonDelete
 import typings.elasticElasticsearch.AnonDeleteAutoFollowPattern
 import typings.elasticElasticsearch.AnonDeleteJob
-import typings.elasticElasticsearch.AnonDeleteLifecycle
-import typings.elasticElasticsearch.AnonDeleteLifecycleDeletelifecycle
+import typings.elasticElasticsearch.AnonDeleteLifecycle_
 import typings.elasticElasticsearch.AnonDeletePipeline
 import typings.elasticElasticsearch.AnonDeletePolicy
 import typings.elasticElasticsearch.AnonDeleteTransform
+import typings.elasticElasticsearch.AnonDeletelifecycle
 import typings.elasticElasticsearch.AnonDeprecations
 import typings.elasticElasticsearch.AnonExplore
 import typings.elasticElasticsearch.AnonForce
@@ -138,7 +138,7 @@ class Client () extends EventEmitter {
   @JSName("get_source")
   var get_source_Original: ApiMethod[GetSource, _] = js.native
   var graph: AnonExplore = js.native
-  var ilm: AnonDeleteLifecycle = js.native
+  var ilm: AnonDeleteLifecycle_ = js.native
   @JSName("index")
   var index_Original: ApiMethod[Index[_], _] = js.native
   var indices: AnonAnalyze = js.native
@@ -199,7 +199,7 @@ class Client () extends EventEmitter {
   var search_template_Original: ApiMethod[SearchTemplate[_], _] = js.native
   var security: AnonAuthenticate = js.native
   var serializer: default = js.native
-  var slm: AnonDeleteLifecycleDeletelifecycle = js.native
+  var slm: AnonDeletelifecycle = js.native
   var snapshot: AnonCleanupRepository = js.native
   var sql: AnonClearCursor = js.native
   var ssl: AnonCertificates = js.native

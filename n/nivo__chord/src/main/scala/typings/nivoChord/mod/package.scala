@@ -17,7 +17,7 @@ package object mod {
   ]
   type LabelAccessor = js.Function1[/* datum */ typings.nivoChord.OmitArcDatalabel, java.lang.String]
   type ValueFormatter = js.Function1[
-    /* datum */ typings.nivoChord.OmitArcDataformattedValuelabel, 
+    /* datum */ typings.nivoChord.OmitArcDataformattedValue, 
     java.lang.String | scala.Double
   ]
 }

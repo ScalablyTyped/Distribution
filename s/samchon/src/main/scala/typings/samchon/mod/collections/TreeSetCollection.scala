@@ -2,8 +2,12 @@ package typings.samchon.mod.collections
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable3
-import typings.tstl.mod.base.Container
+import typings.tstl.IteratoranyanyanyConstructor
+import typings.tstl.IteratoranyanyanyCreate
+import typings.tstl.icontainerMod.IContainer
+import typings.tstl.icontainerMod.IContainer.Iterator
 import typings.tstl.setContainerMod.SetContainer
+import typings.tstl.setElementListMod.SetElementList
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,45 +20,46 @@ class TreeSetCollection[T] ()
 @JSImport("samchon", "collections.TreeSetCollection")
 @js.native
 object TreeSetCollection extends js.Object {
+  @js.native
+  class IteratorCls[Key, Unique /* <: Boolean */, Source /* <: SetContainer[
+    /* import warning: RewrittenClass.unapply cls was tparam Key */ _, 
+    /* import warning: RewrittenClass.unapply cls was tparam Unique */ _, 
+    /* import warning: RewrittenClass.unapply cls was tparam Source */ _, 
+    IteratoranyanyanyConstructor, 
+    typings.tstl.setElementListMod.SetElementList.ReverseIterator[
+      /* import warning: RewrittenClass.unapply cls was tparam Key */ _, 
+      /* import warning: RewrittenClass.unapply cls was tparam Unique */ _, 
+      /* import warning: RewrittenClass.unapply cls was tparam Source */ _
+    ]
+  ] */] ()
+    extends typings.samchon.collectionsMod.TreeSetCollection.IteratorCls[Key, Unique, Source]
+  
   val Event: Instantiable3[
     /* type */ String, 
     /* import warning: RewrittenClass.unapply cls was tparam IteratorT */ /* first */ js.Any, 
     /* import warning: RewrittenClass.unapply cls was tparam IteratorT */ /* last */ js.Any, 
     typings.ecol.collectionEventMod.CollectionEvent[
       js.Object, 
-      Container[
+      IContainer[
         /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
         /* import warning: RewrittenClass.unapply cls was tparam SourceT */ js.Any, 
         /* import warning: RewrittenClass.unapply cls was tparam IteratorT */ js.Any, 
         /* import warning: RewrittenClass.unapply cls was tparam ReverseT */ js.Any, 
         /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any
       ], 
-      typings.std.Iterator[
+      Iterator[
         /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
         /* import warning: RewrittenClass.unapply cls was tparam SourceT */ js.Any, 
-        /* import warning: RewrittenClass.unapply cls was tparam IteratorT */ js.Any
+        /* import warning: RewrittenClass.unapply cls was tparam IteratorT */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls was tparam ReverseT */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any
       ], 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.ReverseIterator<T, SourceT, IteratorT, ReverseT> */ js.Any
-    ]
-  ] = js.native
-  val Iterator: Instantiable0[
-    typings.tstl.setElementListMod.SetElementList.Iterator[
-      js.Object, 
-      Boolean, 
-      SetContainer[
-        /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-        /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-        /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any, 
-        typings.tstl.setElementListMod.SetElementList.Iterator[
-          /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-          /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-          /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
-        ], 
-        typings.tstl.setElementListMod.SetElementList.ReverseIterator[
-          /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-          /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-          /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
-        ]
+      typings.tstl.icontainerMod.IContainer.ReverseIterator[
+        /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls was tparam SourceT */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls was tparam IteratorT */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls was tparam ReverseT */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any
       ]
     ]
   ] = js.native
@@ -66,11 +71,7 @@ object TreeSetCollection extends js.Object {
         /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
         /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
         /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any, 
-        typings.tstl.setElementListMod.SetElementList.Iterator[
-          /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-          /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-          /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
-        ], 
+        IteratoranyanyanyCreate, 
         typings.tstl.setElementListMod.SetElementList.ReverseIterator[
           /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
           /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
@@ -79,5 +80,41 @@ object TreeSetCollection extends js.Object {
       ]
     ]
   ] = js.native
+  @js.native
+  object Iterator
+    extends Instantiable0[
+          typings.tstl.setElementListMod.SetElementList.Iterator[
+            js.Object, 
+            Boolean, 
+            SetContainer[
+              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any, 
+              IteratoranyanyanyConstructor, 
+              typings.tstl.setElementListMod.SetElementList.ReverseIterator[
+                /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
+                /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
+                /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
+              ]
+            ]
+          ]
+        ] {
+    /**
+      * @internal
+      */
+    def create[Key, Unique /* <: Boolean */, Source /* <: SetContainer[
+        Key, 
+        Unique, 
+        Source, 
+        typings.tstl.setElementListMod.SetElementList.Iterator[Key, Unique, Source], 
+        typings.tstl.setElementListMod.SetElementList.ReverseIterator[Key, Unique, Source]
+      ] */](
+      list: SetElementList[Key, Unique, Source],
+      prev: typings.tstl.setElementListMod.SetElementList.Iterator[Key, Unique, Source],
+      next: typings.tstl.setElementListMod.SetElementList.Iterator[Key, Unique, Source],
+      `val`: Key
+    ): typings.tstl.setElementListMod.SetElementList.Iterator[Key, Unique, Source] = js.native
+  }
+  
 }
 

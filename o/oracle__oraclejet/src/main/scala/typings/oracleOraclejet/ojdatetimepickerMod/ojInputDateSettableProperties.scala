@@ -1,12 +1,12 @@
 package typings.oracleOraclejet.ojdatetimepickerMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.oracleOraclejet.Anon
+import typings.oracleOraclejet.AnonChangeMonth
 import typings.oracleOraclejet.AnonClass
-import typings.oracleOraclejet.AnonClassNameDisabled
 import typings.oracleOraclejet.AnonConverterHint
 import typings.oracleOraclejet.AnonCurrentText
 import typings.oracleOraclejet.AnonDefinition
+import typings.oracleOraclejet.AnonDisabled
 import typings.oracleOraclejet.AnonInstruction
 import typings.oracleOraclejet.ojdatetimepickerMod.ojInputDate.DayFormatterInput
 import typings.oracleOraclejet.ojdatetimepickerMod.ojInputDate.DayFormatterOutput
@@ -34,8 +34,8 @@ import scala.scalajs.js.annotation._
 
 trait ojInputDateSettableProperties extends inputBaseSettableProperties[String, String, String] {
   var converter: Converter[String] | RegisteredConverter
-  var datePicker: Anon
-  var dayMetaData: StringDictionary[StringDictionary[StringDictionary[AnonClassNameDisabled]]]
+  var datePicker: AnonChangeMonth
+  var dayMetaData: StringDictionary[StringDictionary[StringDictionary[AnonDisabled]]]
   var keyboardEdit: enabled | disabled
   var max: String | Null
   var min: String | Null
@@ -53,9 +53,9 @@ object ojInputDateSettableProperties {
     autocomplete: on | off | String,
     autofocus: Boolean,
     converter: Converter[String] | RegisteredConverter,
-    datePicker: Anon,
+    datePicker: AnonChangeMonth,
     dayFormatter: DayFormatterInput => Null | all | DayFormatterOutput,
-    dayMetaData: StringDictionary[StringDictionary[StringDictionary[AnonClassNameDisabled]]],
+    dayMetaData: StringDictionary[StringDictionary[StringDictionary[AnonDisabled]]],
     disabled: Boolean,
     displayOptions: AnonConverterHint,
     help: AnonInstruction,

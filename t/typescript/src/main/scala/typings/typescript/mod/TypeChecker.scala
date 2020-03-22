@@ -38,6 +38,7 @@ trait TypeChecker extends js.Object {
   def getJsxIntrinsicTagNamesAt(location: Node): js.Array[Symbol] = js.native
   def getNonNullableType(`type`: Type): Type = js.native
   def getNullableType(`type`: Type, flags: TypeFlags): Type = js.native
+  def getPrivateIdentifierPropertyOfType(leftType: Type, name: java.lang.String, location: Node): js.UndefOr[Symbol] = js.native
   def getPropertiesOfType(`type`: Type): js.Array[Symbol] = js.native
   def getPropertyOfType(`type`: Type, propertyName: java.lang.String): js.UndefOr[Symbol] = js.native
   def getPropertySymbolOfDestructuringAssignment(location: Identifier): js.UndefOr[Symbol] = js.native

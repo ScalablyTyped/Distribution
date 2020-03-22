@@ -1,7 +1,7 @@
 package typings.jupyterlabFilebrowser.tokensMod.IFileBrowserFactory
 
-import typings.jupyterlabCoreutils.tokensMod.IStateDB
-import typings.phosphorCoreutils.jsonMod.ReadonlyJSONValue
+import typings.jupyterlabStatedb.tokensMod.IStateDB
+import typings.luminoCoreutils.jsonMod.ReadonlyPartialJSONValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,6 +18,13 @@ import scala.scalajs.js.annotation._
   */
 trait IOptions extends js.Object {
   /**
+    * Whether a file browser automatically loads its initial path.
+    *
+    * #### Notes
+    * The default is `true`.
+    */
+  var auto: js.UndefOr[Boolean] = js.undefined
+  /**
     * An optional `Contents.IDrive` name for the model.
     * If given, the model will prepend `driveName:` to
     * all paths used in file operations.
@@ -28,25 +35,38 @@ trait IOptions extends js.Object {
     */
   var refreshInterval: js.UndefOr[Double] = js.undefined
   /**
+    * Whether a file browser automatically restores state when instantiated.
+    * The default is `true`.
+    *
+    * #### Notes
+    * The file browser model will need to be restored before for the file
+    * browser to start saving its state.
+    */
+  var restore: js.UndefOr[Boolean] = js.undefined
+  /**
     * The state database to use for saving file browser state and restoring it.
     *
     * #### Notes
     * Unless the value `null` is set for this option, the application state
     * database will be automatically passed in and used for state restoration.
     */
-  var state: js.UndefOr[IStateDB[ReadonlyJSONValue] | Null] = js.undefined
+  var state: js.UndefOr[IStateDB[ReadonlyPartialJSONValue] | Null] = js.undefined
 }
 
 object IOptions {
   @scala.inline
   def apply(
+    auto: js.UndefOr[Boolean] = js.undefined,
     driveName: String = null,
     refreshInterval: Int | Double = null,
-    state: IStateDB[ReadonlyJSONValue] = null
+    restore: js.UndefOr[Boolean] = js.undefined,
+    state: IStateDB[ReadonlyPartialJSONValue] = null
   ): IOptions = {
     val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(auto)) __obj.updateDynamic("auto")(auto.asInstanceOf[js.Any])
     if (driveName != null) __obj.updateDynamic("driveName")(driveName.asInstanceOf[js.Any])
     if (refreshInterval != null) __obj.updateDynamic("refreshInterval")(refreshInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(restore)) __obj.updateDynamic("restore")(restore.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }

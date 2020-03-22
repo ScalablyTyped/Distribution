@@ -1,10 +1,10 @@
 package typings.stripe.mod.sources
 
 import typings.stripe.AnonAcceptance
-import typings.stripe.AnonAddressEmailNamePhone
+import typings.stripe.AnonAddressEmail
 import typings.stripe.AnonBank
-import typings.stripe.AnonEmail
 import typings.stripe.AnonIban
+import typings.stripe.AnonRefundattributesmethod
 import typings.stripe.AnonReturnurlString
 import typings.stripe.mod.IDataOptionsWithMetadata
 import typings.stripe.mod.IMetadata
@@ -41,8 +41,8 @@ trait ISourceCreationOptions extends IDataOptionsWithMetadata {
   var mandate: js.UndefOr[AnonAcceptance] = js.undefined
   @JSName("metadata")
   var metadata_ISourceCreationOptions: js.UndefOr[IMetadata] = js.undefined
-  var owner: js.UndefOr[AnonAddressEmailNamePhone] = js.undefined
-  var receiver: js.UndefOr[AnonEmail] = js.undefined
+  var owner: js.UndefOr[AnonAddressEmail] = js.undefined
+  var receiver: js.UndefOr[AnonRefundattributesmethod] = js.undefined
   var redirect: js.UndefOr[AnonReturnurlString] = js.undefined
   var sepa_debit: js.UndefOr[AnonIban] = js.undefined
   var statement_descriptor: js.UndefOr[String] = js.undefined
@@ -63,8 +63,8 @@ object ISourceCreationOptions {
     include: js.Array[String] = null,
     mandate: AnonAcceptance = null,
     metadata: IMetadata = null,
-    owner: AnonAddressEmailNamePhone = null,
-    receiver: AnonEmail = null,
+    owner: AnonAddressEmail = null,
+    receiver: AnonRefundattributesmethod = null,
     redirect: AnonReturnurlString = null,
     sepa_debit: AnonIban = null,
     statement_descriptor: String = null,

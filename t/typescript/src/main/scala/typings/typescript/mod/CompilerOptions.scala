@@ -13,6 +13,7 @@ trait CompilerOptions
   var allowUnreachableCode: js.UndefOr[Boolean] = js.undefined
   var allowUnusedLabels: js.UndefOr[Boolean] = js.undefined
   var alwaysStrict: js.UndefOr[Boolean] = js.undefined
+  var assumeChangesOnlyAffectDirectDependencies: js.UndefOr[Boolean] = js.undefined
   var baseUrl: js.UndefOr[java.lang.String] = js.undefined
   var charset: js.UndefOr[java.lang.String] = js.undefined
   var checkJs: js.UndefOr[Boolean] = js.undefined
@@ -21,6 +22,7 @@ trait CompilerOptions
   var declarationDir: js.UndefOr[java.lang.String] = js.undefined
   var declarationMap: js.UndefOr[Boolean] = js.undefined
   var disableSizeLimit: js.UndefOr[Boolean] = js.undefined
+  var disableSolutionSearching: js.UndefOr[Boolean] = js.undefined
   var disableSourceOfProjectReferenceRedirect: js.UndefOr[Boolean] = js.undefined
   var downlevelIteration: js.UndefOr[Boolean] = js.undefined
   var emitBOM: js.UndefOr[Boolean] = js.undefined
@@ -30,6 +32,7 @@ trait CompilerOptions
   var experimentalDecorators: js.UndefOr[Boolean] = js.undefined
   var forceConsistentCasingInFileNames: js.UndefOr[Boolean] = js.undefined
   var importHelpers: js.UndefOr[Boolean] = js.undefined
+  var importsNotUsedAsValues: js.UndefOr[ImportsNotUsedAsValues] = js.undefined
   var incremental: js.UndefOr[Boolean] = js.undefined
   var inlineSourceMap: js.UndefOr[Boolean] = js.undefined
   var inlineSources: js.UndefOr[Boolean] = js.undefined
@@ -101,6 +104,7 @@ object CompilerOptions {
     allowUnreachableCode: js.UndefOr[Boolean] = js.undefined,
     allowUnusedLabels: js.UndefOr[Boolean] = js.undefined,
     alwaysStrict: js.UndefOr[Boolean] = js.undefined,
+    assumeChangesOnlyAffectDirectDependencies: js.UndefOr[Boolean] = js.undefined,
     baseUrl: java.lang.String = null,
     charset: java.lang.String = null,
     checkJs: js.UndefOr[Boolean] = js.undefined,
@@ -109,6 +113,7 @@ object CompilerOptions {
     declarationDir: java.lang.String = null,
     declarationMap: js.UndefOr[Boolean] = js.undefined,
     disableSizeLimit: js.UndefOr[Boolean] = js.undefined,
+    disableSolutionSearching: js.UndefOr[Boolean] = js.undefined,
     disableSourceOfProjectReferenceRedirect: js.UndefOr[Boolean] = js.undefined,
     downlevelIteration: js.UndefOr[Boolean] = js.undefined,
     emitBOM: js.UndefOr[Boolean] = js.undefined,
@@ -118,6 +123,7 @@ object CompilerOptions {
     experimentalDecorators: js.UndefOr[Boolean] = js.undefined,
     forceConsistentCasingInFileNames: js.UndefOr[Boolean] = js.undefined,
     importHelpers: js.UndefOr[Boolean] = js.undefined,
+    importsNotUsedAsValues: ImportsNotUsedAsValues = null,
     incremental: js.UndefOr[Boolean] = js.undefined,
     inlineSourceMap: js.UndefOr[Boolean] = js.undefined,
     inlineSources: js.UndefOr[Boolean] = js.undefined,
@@ -185,6 +191,7 @@ object CompilerOptions {
     if (!js.isUndefined(allowUnreachableCode)) __obj.updateDynamic("allowUnreachableCode")(allowUnreachableCode.asInstanceOf[js.Any])
     if (!js.isUndefined(allowUnusedLabels)) __obj.updateDynamic("allowUnusedLabels")(allowUnusedLabels.asInstanceOf[js.Any])
     if (!js.isUndefined(alwaysStrict)) __obj.updateDynamic("alwaysStrict")(alwaysStrict.asInstanceOf[js.Any])
+    if (!js.isUndefined(assumeChangesOnlyAffectDirectDependencies)) __obj.updateDynamic("assumeChangesOnlyAffectDirectDependencies")(assumeChangesOnlyAffectDirectDependencies.asInstanceOf[js.Any])
     if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl.asInstanceOf[js.Any])
     if (charset != null) __obj.updateDynamic("charset")(charset.asInstanceOf[js.Any])
     if (!js.isUndefined(checkJs)) __obj.updateDynamic("checkJs")(checkJs.asInstanceOf[js.Any])
@@ -193,6 +200,7 @@ object CompilerOptions {
     if (declarationDir != null) __obj.updateDynamic("declarationDir")(declarationDir.asInstanceOf[js.Any])
     if (!js.isUndefined(declarationMap)) __obj.updateDynamic("declarationMap")(declarationMap.asInstanceOf[js.Any])
     if (!js.isUndefined(disableSizeLimit)) __obj.updateDynamic("disableSizeLimit")(disableSizeLimit.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableSolutionSearching)) __obj.updateDynamic("disableSolutionSearching")(disableSolutionSearching.asInstanceOf[js.Any])
     if (!js.isUndefined(disableSourceOfProjectReferenceRedirect)) __obj.updateDynamic("disableSourceOfProjectReferenceRedirect")(disableSourceOfProjectReferenceRedirect.asInstanceOf[js.Any])
     if (!js.isUndefined(downlevelIteration)) __obj.updateDynamic("downlevelIteration")(downlevelIteration.asInstanceOf[js.Any])
     if (!js.isUndefined(emitBOM)) __obj.updateDynamic("emitBOM")(emitBOM.asInstanceOf[js.Any])
@@ -202,6 +210,7 @@ object CompilerOptions {
     if (!js.isUndefined(experimentalDecorators)) __obj.updateDynamic("experimentalDecorators")(experimentalDecorators.asInstanceOf[js.Any])
     if (!js.isUndefined(forceConsistentCasingInFileNames)) __obj.updateDynamic("forceConsistentCasingInFileNames")(forceConsistentCasingInFileNames.asInstanceOf[js.Any])
     if (!js.isUndefined(importHelpers)) __obj.updateDynamic("importHelpers")(importHelpers.asInstanceOf[js.Any])
+    if (importsNotUsedAsValues != null) __obj.updateDynamic("importsNotUsedAsValues")(importsNotUsedAsValues.asInstanceOf[js.Any])
     if (!js.isUndefined(incremental)) __obj.updateDynamic("incremental")(incremental.asInstanceOf[js.Any])
     if (!js.isUndefined(inlineSourceMap)) __obj.updateDynamic("inlineSourceMap")(inlineSourceMap.asInstanceOf[js.Any])
     if (!js.isUndefined(inlineSources)) __obj.updateDynamic("inlineSources")(inlineSources.asInstanceOf[js.Any])

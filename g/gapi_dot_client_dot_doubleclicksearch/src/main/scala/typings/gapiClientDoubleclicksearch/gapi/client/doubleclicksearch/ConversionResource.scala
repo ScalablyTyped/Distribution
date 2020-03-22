@@ -1,7 +1,7 @@
 package typings.gapiClientDoubleclicksearch.gapi.client.doubleclicksearch
 
 import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientDoubleclicksearch.AnonAdGroupIdAdId
+import typings.gapiClientDoubleclicksearch.AnonAdId
 import typings.gapiClientDoubleclicksearch.AnonAdvertiserId
 import typings.gapiClientDoubleclicksearch.AnonAlt
 import scala.scalajs.js
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 
 trait ConversionResource extends js.Object {
   /** Retrieves a list of conversions from a DoubleClick Search engine account. */
-  def get(request: AnonAdGroupIdAdId): Request_[ConversionList]
+  def get(request: AnonAdId): Request_[ConversionList]
   /** Inserts a batch of new conversions into DoubleClick Search. */
   def insert(request: AnonAlt): Request_[ConversionList]
   /** Updates a batch of conversions in DoubleClick Search. This method supports patch semantics. */
@@ -24,7 +24,7 @@ trait ConversionResource extends js.Object {
 object ConversionResource {
   @scala.inline
   def apply(
-    get: AnonAdGroupIdAdId => Request_[ConversionList],
+    get: AnonAdId => Request_[ConversionList],
     insert: AnonAlt => Request_[ConversionList],
     patch: AnonAdvertiserId => Request_[ConversionList],
     update: AnonAlt => Request_[ConversionList],

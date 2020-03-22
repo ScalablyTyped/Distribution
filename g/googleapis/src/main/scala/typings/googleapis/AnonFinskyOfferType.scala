@@ -9,7 +9,7 @@ trait AnonFinskyOfferType extends js.Object {
   var finskyOfferType: js.UndefOr[Double] = js.native
   var giftable: js.UndefOr[Boolean] = js.native
   var listPrice: js.UndefOr[AnonAmountInMicros] = js.native
-  var rentalDuration: js.UndefOr[AnonCountUnit] = js.native
+  var rentalDuration: js.UndefOr[AnonUnit] = js.native
   var retailPrice: js.UndefOr[AnonAmountInMicros] = js.native
 }
 
@@ -19,7 +19,7 @@ object AnonFinskyOfferType {
     finskyOfferType: Int | Double = null,
     giftable: js.UndefOr[Boolean] = js.undefined,
     listPrice: AnonAmountInMicros = null,
-    rentalDuration: AnonCountUnit = null,
+    rentalDuration: AnonUnit = null,
     retailPrice: AnonAmountInMicros = null
   ): AnonFinskyOfferType = {
     val __obj = js.Dynamic.literal()

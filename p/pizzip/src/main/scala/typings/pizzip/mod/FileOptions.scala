@@ -1,6 +1,6 @@
 package typings.pizzip.mod
 
-import typings.pizzip.Anon1
+import typings.pizzip.AnonLevel
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -35,7 +35,7 @@ trait FileOptions extends js.Object {
     * With `STORE` (no compression), this parameter is ignored.
     * With `DEFLATE`, you can give the compression level with `compressionOptions : {level:6}` (or any level between 1 (best speed) and 9 (best compression)).
     */
-  var compressionOptions: js.UndefOr[Anon1 | Null] = js.undefined
+  var compressionOptions: js.UndefOr[AnonLevel | Null] = js.undefined
   /**
     * Set to true if folders in the file path should be automatically created,
     * otherwise there will only be virtual folders that represent the path to the file.
@@ -77,7 +77,7 @@ object FileOptions {
     binary: js.UndefOr[Boolean] = js.undefined,
     comment: String = null,
     compression: Compression = null,
-    compressionOptions: Anon1 = null,
+    compressionOptions: AnonLevel = null,
     createFolders: js.UndefOr[Boolean] = js.undefined,
     date: Date = null,
     dir: js.UndefOr[Boolean] = js.undefined,

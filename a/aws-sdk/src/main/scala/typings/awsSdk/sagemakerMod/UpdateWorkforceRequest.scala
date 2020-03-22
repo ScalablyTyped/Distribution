@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait UpdateWorkforceRequest extends js.Object {
   /**
-    * A list of one to four worker IP address ranges (CIDRs) that can be used to access tasks assigned to this workforce. Maximum: 4 CIDR values
+    * A list of one to four worker IP address ranges (CIDRs) that can be used to access tasks assigned to this workforce. Maximum: Four CIDR values
     */
   var SourceIpConfig: js.UndefOr[typings.awsSdk.sagemakerMod.SourceIpConfig] = js.native
   /**
-    * The name of the private workforce whose access you want to restrict. WorkforceName is automatically set to "default" when a workforce is created and cannot be modified. 
+    * The name of the private workforce whose access you want to restrict. WorkforceName is automatically set to default when a workforce is created and cannot be modified. 
     */
   var WorkforceName: typings.awsSdk.sagemakerMod.WorkforceName = js.native
 }

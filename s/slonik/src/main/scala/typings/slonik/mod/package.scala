@@ -8,10 +8,6 @@ package object mod {
   type ClientConfigurationInputType = typings.slonik.mod.ClientConfigurationType
   type ConnectionRoutineType[T] = js.Function1[/* connection */ typings.slonik.mod.DatabasePoolConnectionType, js.Promise[T]]
   type DatabaseConfigurationType = java.lang.String | typings.slonik.AnonDatabase
-  type DatabaseConnectionType = typings.slonik.mod.DatabasePoolConnectionType with typings.slonik.mod.DatabasePoolType
-  type DatabasePoolConnectionType = typings.slonik.mod.CommonQueryMethodsType with typings.slonik.AnonHandlerSql
-  type DatabasePoolType = typings.slonik.mod.CommonQueryMethodsType with typings.slonik.AnonConnect
-  type DatabaseTransactionConnectionType = typings.slonik.mod.CommonQueryMethodsType with typings.slonik.AnonHandler
   type IdentifierNormalizerType = js.Function1[/* identifierName */ java.lang.String, java.lang.String]
   type LoggerType = js.Function1[/* repeated */ java.lang.String, scala.Nothing]
   type MaybePromiseType[T] = T | js.Promise[T]

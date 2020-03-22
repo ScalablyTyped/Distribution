@@ -2,10 +2,10 @@ package typings.gapiClientMl.gapi.client.ml
 
 import typings.gapiClient.gapi.client.Request_
 import typings.gapiClientMl.AnonAccesstoken
-import typings.gapiClientMl.AnonAccesstokenAlt
-import typings.gapiClientMl.AnonAccesstokenAltBearertoken
-import typings.gapiClientMl.AnonAccesstokenAltBearertokenCallbackFields
-import typings.gapiClientMl.AnonAccesstokenAltBearertokenCallbackFieldsKey
+import typings.gapiClientMl.AnonAlt
+import typings.gapiClientMl.AnonBearertoken
+import typings.gapiClientMl.AnonFields
+import typings.gapiClientMl.AnonKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +19,7 @@ trait ModelsResource extends js.Object {
     * the model. Add versions by calling
     * [projects.models.versions.create](/ml-engine/reference/rest/v1/projects.models.versions/create).
     */
-  def create(request: AnonAccesstokenAlt): Request_[GoogleCloudMlV1Model]
+  def create(request: AnonAlt): Request_[GoogleCloudMlV1Model]
   /**
     * Deletes a model.
     *
@@ -39,26 +39,26 @@ trait ModelsResource extends js.Object {
     * Returns an empty policy if the resource exists and does not have a policy
     * set.
     */
-  def getIamPolicy(request: AnonAccesstokenAltBearertoken): Request_[GoogleIamV1Policy]
+  def getIamPolicy(request: AnonBearertoken): Request_[GoogleIamV1Policy]
   /**
     * Lists the models in a project.
     *
     * Each project can contain multiple models, and each model can have multiple
     * versions.
     */
-  def list(request: AnonAccesstokenAltBearertokenCallbackFields): Request_[GoogleCloudMlV1ListModelsResponse]
+  def list(request: AnonFields): Request_[GoogleCloudMlV1ListModelsResponse]
   /**
     * Updates a specific model resource.
     *
     * Currently the only supported fields to update are `description` and
     * `default_version.name`.
     */
-  def patch(request: AnonAccesstokenAltBearertokenCallbackFieldsKey): Request_[GoogleLongrunningOperation]
+  def patch(request: AnonKey): Request_[GoogleLongrunningOperation]
   /**
     * Sets the access control policy on the specified resource. Replaces any
     * existing policy.
     */
-  def setIamPolicy(request: AnonAccesstokenAltBearertoken): Request_[GoogleIamV1Policy]
+  def setIamPolicy(request: AnonBearertoken): Request_[GoogleIamV1Policy]
   /**
     * Returns permissions that a caller has on the specified resource.
     * If the resource does not exist, this will return an empty set of
@@ -68,20 +68,20 @@ trait ModelsResource extends js.Object {
     * UIs and command-line tools, not for authorization checking. This operation
     * may "fail open" without warning.
     */
-  def testIamPermissions(request: AnonAccesstokenAltBearertoken): Request_[GoogleIamV1TestIamPermissionsResponse]
+  def testIamPermissions(request: AnonBearertoken): Request_[GoogleIamV1TestIamPermissionsResponse]
 }
 
 object ModelsResource {
   @scala.inline
   def apply(
-    create: AnonAccesstokenAlt => Request_[GoogleCloudMlV1Model],
+    create: AnonAlt => Request_[GoogleCloudMlV1Model],
     delete: AnonAccesstoken => Request_[GoogleLongrunningOperation],
     get: AnonAccesstoken => Request_[GoogleCloudMlV1Model],
-    getIamPolicy: AnonAccesstokenAltBearertoken => Request_[GoogleIamV1Policy],
-    list: AnonAccesstokenAltBearertokenCallbackFields => Request_[GoogleCloudMlV1ListModelsResponse],
-    patch: AnonAccesstokenAltBearertokenCallbackFieldsKey => Request_[GoogleLongrunningOperation],
-    setIamPolicy: AnonAccesstokenAltBearertoken => Request_[GoogleIamV1Policy],
-    testIamPermissions: AnonAccesstokenAltBearertoken => Request_[GoogleIamV1TestIamPermissionsResponse],
+    getIamPolicy: AnonBearertoken => Request_[GoogleIamV1Policy],
+    list: AnonFields => Request_[GoogleCloudMlV1ListModelsResponse],
+    patch: AnonKey => Request_[GoogleLongrunningOperation],
+    setIamPolicy: AnonBearertoken => Request_[GoogleIamV1Policy],
+    testIamPermissions: AnonBearertoken => Request_[GoogleIamV1TestIamPermissionsResponse],
     versions: VersionsResource
   ): ModelsResource = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), getIamPolicy = js.Any.fromFunction1(getIamPolicy), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), setIamPolicy = js.Any.fromFunction1(setIamPolicy), testIamPermissions = js.Any.fromFunction1(testIamPermissions), versions = versions.asInstanceOf[js.Any])

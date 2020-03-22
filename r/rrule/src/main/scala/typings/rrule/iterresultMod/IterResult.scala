@@ -1,16 +1,16 @@
 package typings.rrule.iterresultMod
 
+import typings.rrule.PartialIterArgs
 import typings.rrule.typesMod.IterResultType
 import typings.rrule.typesMod.QueryMethodTypes
 import typings.std.Date
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IterResult[M /* <: QueryMethodTypes */] extends js.Object {
   var _result: js.Array[Date]
-  val args: Partial[IterArgs]
+  val args: PartialIterArgs
   val maxDate: Date | Null
   val method: M
   val minDate: Date | Null
@@ -44,7 +44,7 @@ object IterResult {
     _result: js.Array[Date],
     accept: Date => Boolean,
     add: Date => Boolean,
-    args: Partial[IterArgs],
+    args: PartialIterArgs,
     getValue: () => IterResultType[M],
     method: M,
     total: Double,

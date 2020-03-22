@@ -2,6 +2,7 @@ package typings.builderUtilRuntime.publishOptionsMod
 
 import typings.builderUtilRuntime.builderUtilRuntimeStrings.`private`
 import typings.builderUtilRuntime.builderUtilRuntimeStrings.`public-read`
+import typings.node.httpMod.OutgoingHttpHeaders
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,6 +35,7 @@ object BaseS3Options {
     path: String = null,
     publishAutoUpdate: js.UndefOr[Boolean] = js.undefined,
     publisherName: js.Array[String] = null,
+    requestHeaders: OutgoingHttpHeaders = null,
     updaterCacheDirName: String = null
   ): BaseS3Options = {
     val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any])
@@ -42,6 +44,7 @@ object BaseS3Options {
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (!js.isUndefined(publishAutoUpdate)) __obj.updateDynamic("publishAutoUpdate")(publishAutoUpdate.asInstanceOf[js.Any])
     if (publisherName != null) __obj.updateDynamic("publisherName")(publisherName.asInstanceOf[js.Any])
+    if (requestHeaders != null) __obj.updateDynamic("requestHeaders")(requestHeaders.asInstanceOf[js.Any])
     if (updaterCacheDirName != null) __obj.updateDynamic("updaterCacheDirName")(updaterCacheDirName.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseS3Options]
   }

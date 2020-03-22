@@ -4,7 +4,7 @@ import typings.ember.mod.Ember.Array
 import typings.ember.mod.Ember.NativeArray
 import typings.ember.mod.default.ComputedProperty
 import typings.ember.mod.default.Map
-import typings.emberData.TypeofClassModel
+import typings.emberData.TypeofModel
 import typings.emberData.mod.AttributeMeta
 import typings.emberData.mod.DS.Async
 import typings.emberData.mod.DS.AttrOptions
@@ -166,8 +166,8 @@ object mod extends js.Object {
       * Iterates through the attributes of the model, calling the passed function on each
       * attribute.
       */
-    def eachAttribute[Class /* <: TypeofClassModel */, M /* <: InstanceType[Class] */](callback: js.Function2[/* name */ ModelKeys[M], /* meta */ AttributeMeta[M], Unit]): Unit = js.native
-    def eachAttribute[Class /* <: TypeofClassModel */, M /* <: InstanceType[Class] */](
+    def eachAttribute[Class /* <: TypeofModel */, M /* <: InstanceType[Class] */](callback: js.Function2[/* name */ ModelKeys[M], /* meta */ AttributeMeta[M], Unit]): Unit = js.native
+    def eachAttribute[Class /* <: TypeofModel */, M /* <: InstanceType[Class] */](
       callback: js.Function2[/* name */ ModelKeys[M], /* meta */ AttributeMeta[M], Unit],
       binding: js.Any
     ): Unit = js.native
@@ -194,14 +194,14 @@ object mod extends js.Object {
       * the passed function on each attribute. Note the callback will not be
       * called for any attributes that do not have an transformation type.
       */
-    def eachTransformedAttribute[Class /* <: TypeofClassModel */](
+    def eachTransformedAttribute[Class /* <: TypeofModel */](
       callback: js.Function2[
           /* name */ ModelKeys[InstanceType[Class]], 
           /* type */ string | boolean | number | date, 
           Unit
         ]
     ): Unit = js.native
-    def eachTransformedAttribute[Class /* <: TypeofClassModel */](
+    def eachTransformedAttribute[Class /* <: TypeofModel */](
       callback: js.Function2[
           /* name */ ModelKeys[InstanceType[Class]], 
           /* type */ string | boolean | number | date, 

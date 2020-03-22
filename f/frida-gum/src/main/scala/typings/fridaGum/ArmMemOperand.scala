@@ -9,7 +9,7 @@ trait ArmMemOperand
   extends ArmBaseOperand
      with ArmOperand {
   var `type`: mem
-  var value: AnonBaseDisp
+  var value: AnonDisp
 }
 
 object ArmMemOperand {
@@ -17,7 +17,7 @@ object ArmMemOperand {
   def apply(
     subtracted: Boolean,
     `type`: mem,
-    value: AnonBaseDisp,
+    value: AnonDisp,
     shift: AnonType = null,
     vectorIndex: Int | Double = null
   ): ArmMemOperand = {

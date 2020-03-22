@@ -1,7 +1,7 @@
 package typings.antdMobile.mod
 
 import typings.antdMobile.AnonAntLocale
-import typings.antdMobile.AnonPrefixClsTimePickerPickerPrefixCls
+import typings.antdMobile.AnonTimePickerPickerPrefixCls
 import typings.antdMobile.calendarMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,6 +16,6 @@ class Calendar () extends default
 @js.native
 object Calendar extends js.Object {
   var contextTypes: AnonAntLocale = js.native
-  var defaultProps: AnonPrefixClsTimePickerPickerPrefixCls = js.native
+  var defaultProps: AnonTimePickerPickerPrefixCls = js.native
 }
 

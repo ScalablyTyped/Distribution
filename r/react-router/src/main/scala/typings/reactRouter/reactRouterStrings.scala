@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation._
 
 object reactRouterStrings {
   @js.native
-  sealed trait Anon_History extends js.Object
+  sealed trait AnonHistory extends js.Object
   
   @js.native
-  sealed trait Anon_Location extends js.Object
+  sealed trait AnonLocation extends js.Object
   
   @js.native
   sealed trait PUSH extends js.Object
@@ -39,9 +39,9 @@ object reactRouterStrings {
   sealed trait useRouteMatch extends js.Object
   
   @scala.inline
-  def Anon_History: Anon_History = "Anon_History".asInstanceOf[Anon_History]
+  def AnonHistory: AnonHistory = "AnonHistory".asInstanceOf[AnonHistory]
   @scala.inline
-  def Anon_Location: Anon_Location = "Anon_Location".asInstanceOf[Anon_Location]
+  def AnonLocation: AnonLocation = "AnonLocation".asInstanceOf[AnonLocation]
   @scala.inline
   def PUSH: PUSH = "PUSH".asInstanceOf[PUSH]
   @scala.inline

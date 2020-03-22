@@ -1,6 +1,6 @@
 package typings.ldapjs.mod
 
-import typings.ldapjs.AnonAttributes
+import typings.ldapjs.LDAPMessageJsonObjectobje
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class SearchEntry () extends LDAPMessage {
   var attributes: js.Array[Attribute] = js.native
   @JSName("json")
-  val json_SearchEntry: LDAPMessageJsonObject with AnonAttributes = js.native
+  val json_SearchEntry: LDAPMessageJsonObjectobje = js.native
   /**
     * Retrieve an object with `dn`, `controls` and every `Atttribute` as a property with their value(s)
     */

@@ -17,11 +17,11 @@ trait DeregisterTransitGatewayMulticastGroupMembersRequest extends js.Object {
   /**
     * The IDs of the group members' network interfaces.
     */
-  var NetworkInterfaceIds: js.UndefOr[ValueStringList] = js.native
+  var NetworkInterfaceIds: js.UndefOr[TransitGatewayNetworkInterfaceIdList] = js.native
   /**
     * The ID of the transit gateway multicast domain.
     */
-  var TransitGatewayMulticastDomainId: js.UndefOr[String] = js.native
+  var TransitGatewayMulticastDomainId: js.UndefOr[typings.awsSdk.ec2Mod.TransitGatewayMulticastDomainId] = js.native
 }
 
 object DeregisterTransitGatewayMulticastGroupMembersRequest {
@@ -29,8 +29,8 @@ object DeregisterTransitGatewayMulticastGroupMembersRequest {
   def apply(
     DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     GroupIpAddress: String = null,
-    NetworkInterfaceIds: ValueStringList = null,
-    TransitGatewayMulticastDomainId: String = null
+    NetworkInterfaceIds: TransitGatewayNetworkInterfaceIdList = null,
+    TransitGatewayMulticastDomainId: TransitGatewayMulticastDomainId = null
   ): DeregisterTransitGatewayMulticastGroupMembersRequest = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])

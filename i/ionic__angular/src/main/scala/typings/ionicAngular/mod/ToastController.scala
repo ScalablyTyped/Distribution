@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/angular", "ToastController")
 @js.native
 class ToastController ()
-  extends typings.ionicAngular.distMod.ToastController
+  extends typings.ionicAngular.toastControllerMod.ToastController
 

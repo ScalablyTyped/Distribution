@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation._
 
 object reactRelayStrings {
   @js.native
-  sealed trait Anon_EntryPointsExtraProps extends js.Object
+  sealed trait MappedFragmentProps extends js.Object
   
   @js.native
-  sealed trait MappedFragmentProps extends js.Object
+  sealed trait PreloadProps extends js.Object
   
   @js.native
   sealed trait backward extends Direction
@@ -40,9 +40,6 @@ object reactRelayStrings {
   sealed trait partial extends RenderPolicy
   
   @js.native
-  sealed trait props extends js.Object
-  
-  @js.native
   sealed trait queries extends js.Object
   
   @js.native
@@ -63,9 +60,9 @@ object reactRelayStrings {
        with PreloadFetchPolicy
   
   @scala.inline
-  def Anon_EntryPointsExtraProps: Anon_EntryPointsExtraProps = "Anon_EntryPointsExtraProps".asInstanceOf[Anon_EntryPointsExtraProps]
-  @scala.inline
   def MappedFragmentProps: MappedFragmentProps = "MappedFragmentProps".asInstanceOf[MappedFragmentProps]
+  @scala.inline
+  def PreloadProps: PreloadProps = "PreloadProps".asInstanceOf[PreloadProps]
   @scala.inline
   def backward: backward = "backward".asInstanceOf[backward]
   @scala.inline
@@ -80,8 +77,6 @@ object reactRelayStrings {
   def `network-only`: `network-only` = "network-only".asInstanceOf[`network-only`]
   @scala.inline
   def partial: partial = "partial".asInstanceOf[partial]
-  @scala.inline
-  def props: props = "props".asInstanceOf[props]
   @scala.inline
   def queries: queries = "queries".asInstanceOf[queries]
   @scala.inline

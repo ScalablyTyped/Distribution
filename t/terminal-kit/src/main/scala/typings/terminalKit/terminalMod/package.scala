@@ -20,7 +20,6 @@ package object terminalMod {
   type CTerminal = typings.terminalKit.terminalMod.Terminal with (js.Function1[/* repeated */ js.Any, typings.terminalKit.terminalMod.Terminal])
   type Callback[T] = (js.Function1[/* err */ js.Any, scala.Unit]) | (js.Function2[/* err */ js.UndefOr[scala.Nothing], /* arg */ T, scala.Unit])
   type Chainable[T] = T with typings.terminalKit.terminalMod.ChainableInterface[T]
-  type IFileInputOptions = typings.terminalKit.terminalMod.InputFieldOptions with typings.terminalKit.AnonBaseDir
-  type Palette = js.Array[typings.terminalKit.AnonBG]
+  type Palette = js.Array[typings.terminalKit.AnonG]
   type Terminal = typings.terminalKit.terminalMod.Impl with typings.nextgenEvents.mod.^ 
 }

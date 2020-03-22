@@ -4,8 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in keyof exceljs.exceljs.TableProperties ]: -? exceljs.exceljs.TableProperties[P]} */ trait Table extends js.Object {
+/* Inlined parent std.Required<exceljs.exceljs.TableProperties> */
+trait Table extends js.Object {
+  var columns: js.Array[TableColumnProperties]
+  var displayName: String
+  var headerRow: Boolean
+  var name: String
+  var ref: String
+  var rows: js.Array[js.Array[_]]
+  var style: TableStyleProperties
+  var totalsRow: Boolean
   /**
   	 * Add a new column, including column defn and values
   	 * inserts at colNumber or adds to the right
@@ -38,12 +46,20 @@ object Table {
   def apply(
     addColumn: (TableColumnProperties, js.Array[_], Double) => Unit,
     addRow: (js.Array[_], Double) => Unit,
+    columns: js.Array[TableColumnProperties],
     commit: () => Unit,
+    displayName: String,
     getColumn: Double => TableColumn,
+    headerRow: Boolean,
+    name: String,
+    ref: String,
     removeColumns: (Double, Double) => Unit,
-    removeRows: (Double, Double) => Unit
+    removeRows: (Double, Double) => Unit,
+    rows: js.Array[js.Array[_]],
+    style: TableStyleProperties,
+    totalsRow: Boolean
   ): Table = {
-    val __obj = js.Dynamic.literal(addColumn = js.Any.fromFunction3(addColumn), addRow = js.Any.fromFunction2(addRow), commit = js.Any.fromFunction0(commit), getColumn = js.Any.fromFunction1(getColumn), removeColumns = js.Any.fromFunction2(removeColumns), removeRows = js.Any.fromFunction2(removeRows))
+    val __obj = js.Dynamic.literal(addColumn = js.Any.fromFunction3(addColumn), addRow = js.Any.fromFunction2(addRow), columns = columns.asInstanceOf[js.Any], commit = js.Any.fromFunction0(commit), displayName = displayName.asInstanceOf[js.Any], getColumn = js.Any.fromFunction1(getColumn), headerRow = headerRow.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], removeColumns = js.Any.fromFunction2(removeColumns), removeRows = js.Any.fromFunction2(removeRows), rows = rows.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], totalsRow = totalsRow.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Table]
   }

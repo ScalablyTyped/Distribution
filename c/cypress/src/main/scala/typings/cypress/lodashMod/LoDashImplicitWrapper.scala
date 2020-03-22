@@ -1,6 +1,6 @@
 package typings.cypress.lodashMod
 
-import typings.cypress.TypeofcypressTypesLodash
+import typings.cypress.TypeofcypressTypesLodas
 import typings.cypress.cypressBooleans.`false`
 import typings.cypress.cypressBooleans.`true`
 import typings.cypress.cypressStrings.asc
@@ -1962,7 +1962,7 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
   /**
     * @see _.noConflict
     */
-  def noConflict(): TypeofcypressTypesLodash = js.native
+  def noConflict(): TypeofcypressTypesLodas = js.native
   /**
     * @see _.noop
     */

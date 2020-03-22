@@ -1,9 +1,6 @@
 package typings.wegameApi.wx
 
-import typings.wegameApi.AnonAccept
-import typings.wegameApi.AnonErrCode
-import typings.wegameApi.AnonTmplIds
-import typings.wegameApi.wx.types.CallbacksWithType2
+import typings.wegameApi.tmplIdsReadonlyArraystrin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,6 +12,6 @@ object requestSubscribeMessage extends js.Object {
   /**
     * 调起小游戏订阅消息界面，返回用户订阅消息的操作结果。（需要在 touchend 事件的回调中调用）
     */
-  def apply(param: AnonTmplIds with (CallbacksWithType2[AnonAccept, AnonErrCode])): Unit = js.native
+  def apply(param: tmplIdsReadonlyArraystrin): Unit = js.native
 }
 

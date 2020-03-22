@@ -1,13 +1,13 @@
 package typings.babelPluginMacros
 
 import org.scalablytyped.runtime.Instantiable2
+import typings.babelCore.ReadonlyPartialConfig
 import typings.babelCore.mod.BabelFileResult
 import typings.babelCore.mod.ConfigItem
 import typings.babelCore.mod.CreateConfigItemOptions
 import typings.babelCore.mod.FileParseCallback
 import typings.babelCore.mod.FileResultCallback
 import typings.babelCore.mod.ParseResult
-import typings.babelCore.mod.PartialConfig
 import typings.babelCore.mod.PluginOptions
 import typings.babelCore.mod.PluginTarget
 import typings.babelCore.mod.TransformOptions
@@ -50,8 +50,8 @@ trait TypeofBabel extends js.Object {
   def createConfigItem(value: PluginTarget, options: CreateConfigItemOptions): ConfigItem = js.native
   def loadOptions(): js.Object | Null = js.native
   def loadOptions(options: TransformOptions): js.Object | Null = js.native
-  def loadPartialConfig(): PartialConfig | Null = js.native
-  def loadPartialConfig(options: TransformOptions): PartialConfig | Null = js.native
+  def loadPartialConfig(): ReadonlyPartialConfig | Null = js.native
+  def loadPartialConfig(options: TransformOptions): ReadonlyPartialConfig | Null = js.native
   def parse(code: String): ParseResult | Null = js.native
   def parse(code: String, callback: FileParseCallback): Unit = js.native
   def parse(code: String, options: js.UndefOr[scala.Nothing], callback: FileParseCallback): Unit = js.native

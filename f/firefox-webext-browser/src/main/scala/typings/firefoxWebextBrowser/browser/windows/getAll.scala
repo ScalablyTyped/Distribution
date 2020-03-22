@@ -1,6 +1,6 @@
 package typings.firefoxWebextBrowser.browser.windows
 
-import typings.firefoxWebextBrowser.AnonPopulateWindowTypes
+import typings.firefoxWebextBrowser.AnonWindowTypes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,6 +14,6 @@ object getAll extends js.Object {
     *     should contain a list of the `tabs.Tab` objects.
     */
   def apply(): js.Promise[js.Array[Window]] = js.native
-  def apply(getInfo: AnonPopulateWindowTypes): js.Promise[js.Array[Window]] = js.native
+  def apply(getInfo: AnonWindowTypes): js.Promise[js.Array[Window]] = js.native
 }
 

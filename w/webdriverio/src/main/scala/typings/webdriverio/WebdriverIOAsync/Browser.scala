@@ -1,14 +1,15 @@
 package typings.webdriverio.WebdriverIOAsync
 
-import typings.webdriverio.AsyncSelectors
+import typings.webdriverio.BrowserAsync
+import typings.webdriverio.BrowserStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ K in keyof webdriverio.BrowserPromise ]: (args : std.Parameters<webdriverio.BrowserPromise[K]>): std.Promise<std.ReturnType<webdriverio.BrowserPromise[K]>>}
-- Dropped {[ P in 'addCommand' | 'overwriteCommand' | 'options' | 'config' ]: webdriverio.WebdriverIO.Browser[P]} */ @js.native
-trait Browser extends AsyncSelectors {
+@js.native
+trait Browser
+  extends BrowserAsync
+     with BrowserStatic {
   // there is no way to wrap generic functions, like `<T>(arg: T) => T`
   // have to declare explicitly for sync and async typings.
   // https://github.com/microsoft/TypeScript/issues/5453

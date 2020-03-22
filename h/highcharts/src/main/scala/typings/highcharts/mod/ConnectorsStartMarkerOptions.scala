@@ -8,7 +8,7 @@ trait ConnectorsStartMarkerOptions extends js.Object {
   /**
     * (Gantt) Horizontal alignment of the markers relative to the points.
     */
-  var align: js.UndefOr[AlignValue] = js.undefined
+  var align: js.UndefOr[String | AlignValue] = js.undefined
   /**
     * (Gantt) Set the color of the connector markers. By default this is the
     * same as the connector color.
@@ -18,6 +18,7 @@ trait ConnectorsStartMarkerOptions extends js.Object {
     * (Gantt) Enable markers for the connectors.
     */
   var enabled: js.UndefOr[Boolean] = js.undefined
+  var fill: js.UndefOr[String] = js.undefined
   /**
     * (Gantt) Set the height of the connector markers. If not supplied, this is
     * inferred from the marker radius.
@@ -61,9 +62,10 @@ trait ConnectorsStartMarkerOptions extends js.Object {
 object ConnectorsStartMarkerOptions {
   @scala.inline
   def apply(
-    align: AlignValue = null,
+    align: String | AlignValue = null,
     color: ColorString | GradientColorObject | PatternObject = null,
     enabled: js.UndefOr[Boolean] = js.undefined,
+    fill: String = null,
     height: Int | Double = null,
     inside: js.UndefOr[Boolean] = js.undefined,
     lineColor: ColorString = null,
@@ -77,6 +79,7 @@ object ConnectorsStartMarkerOptions {
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (!js.isUndefined(inside)) __obj.updateDynamic("inside")(inside.asInstanceOf[js.Any])
     if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor.asInstanceOf[js.Any])

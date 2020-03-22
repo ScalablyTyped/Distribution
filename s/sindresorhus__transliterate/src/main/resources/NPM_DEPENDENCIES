@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@sindresorhus/transliterate" : "0.1.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@sindresorhus/transliterate" : "0.1.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

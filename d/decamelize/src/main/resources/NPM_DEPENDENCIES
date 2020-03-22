@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "decamelize" : "3.2.0"
+      "decamelize" : "4.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "decamelize" : "3.2.0"
+      "decamelize" : "4.0.0"
     }
   ],
   "compile-devDependencies" : [

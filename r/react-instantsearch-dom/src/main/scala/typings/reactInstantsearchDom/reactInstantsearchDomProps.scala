@@ -15,7 +15,7 @@ trait reactInstantsearchDomProps {
   def SearchBoxProps: typings.reactInstantsearchDom.mod.SearchBoxProps.type = typings.reactInstantsearchDom.mod.SearchBoxProps
   type SearchBoxProps = typings.reactInstantsearchDom.mod.SearchBoxProps
   @scala.inline
-  def StatsProps: AnonKey.type = typings.reactInstantsearchDom.AnonKey
-  type StatsProps = AnonKey
+  def StatsProps: AnonTranslations.type = typings.reactInstantsearchDom.AnonTranslations
+  type StatsProps = AnonTranslations
 }
 

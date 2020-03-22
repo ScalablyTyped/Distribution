@@ -1,23 +1,23 @@
 organization := "org.scalablytyped"
 name := "vue-loader"
-version := "15.9.0-a13a6b"
+version := "15.9.0-e61ec4"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "anymatch" % "1.3-dt-20190212Z-562662",
-  "org.scalablytyped" %%% "node" % "13.7-dt-20200211Z-d6af7e",
-  "org.scalablytyped" %%% "postcss" % "7.0.18-b0c294",
-  "org.scalablytyped" %%% "source-list-map" % "v0.1.6-dt-20190322Z-a63dfc",
-  "org.scalablytyped" %%% "source-map" % "0.7.3-4d8ff1",
-  "org.scalablytyped" %%% "std" % "3.7-1b8369",
-  "org.scalablytyped" %%% "tapable" % "v1.0.0-dt-20200111Z-934b96",
-  "org.scalablytyped" %%% "uglify-js" % "3.0-dt-20181015Z-ed6d57",
-  "org.scalablytyped" %%% "vue" % "2.6.11-08548b",
-  "org.scalablytyped" %%% "vue-template-compiler" % "2.6.11-09dd8d",
-  "org.scalablytyped" %%% "vue__component-compiler-utils" % "3.1.1-eade61",
-  "org.scalablytyped" %%% "webpack" % "4.41-dt-20200209Z-7b3b5d",
-  "org.scalablytyped" %%% "webpack-sources" % "0.1-dt-20200116Z-120b1c")
+  "org.scalablytyped" %%% "anymatch" % "1.3-dt-20190212Z-d40bf1",
+  "org.scalablytyped" %%% "node" % "13.7-dt-20200211Z-b30bde",
+  "org.scalablytyped" %%% "postcss" % "7.0.27-c4fd81",
+  "org.scalablytyped" %%% "source-list-map" % "v0.1.6-dt-20190322Z-4dbc49",
+  "org.scalablytyped" %%% "source-map" % "0.7.3-020e14",
+  "org.scalablytyped" %%% "std" % "3.8-a0108c",
+  "org.scalablytyped" %%% "tapable" % "v1.0.0-dt-20200111Z-acd615",
+  "org.scalablytyped" %%% "uglify-js" % "3.0-dt-20181015Z-1b173b",
+  "org.scalablytyped" %%% "vue" % "2.6.11-d66de9",
+  "org.scalablytyped" %%% "vue-template-compiler" % "2.6.11-2e0c3b",
+  "org.scalablytyped" %%% "vue__component-compiler-utils" % "3.1.1-b7e1f6",
+  "org.scalablytyped" %%% "webpack" % "4.41-dt-20200209Z-2b8189",
+  "org.scalablytyped" %%% "webpack-sources" % "0.1-dt-20200116Z-452939")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

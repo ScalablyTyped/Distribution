@@ -9,14 +9,20 @@ trait solidReactProps {
   def AuthButtonProps: typings.solidReact.mod.AuthButtonProps.type = typings.solidReact.mod.AuthButtonProps
   type AuthButtonProps = typings.solidReact.mod.AuthButtonProps
   @scala.inline
+  def ImageProps: srcstringdefaultSrcstring.type = typings.solidReact.srcstringdefaultSrcstring
+  type ImageProps = srcstringdefaultSrcstring
+  @scala.inline
   def LabelProps: AnonSrc.type = typings.solidReact.AnonSrc
   type LabelProps = AnonSrc
+  @scala.inline
+  def LinkProps: hrefstringHTMLAttributesH.type = typings.solidReact.hrefstringHTMLAttributesH
+  type LinkProps = hrefstringHTMLAttributesH
   @scala.inline
   def ListProps: typings.solidReact.mod.ListProps.type = typings.solidReact.mod.ListProps
   type ListProps = typings.solidReact.mod.ListProps
   @scala.inline
-  def LiveUpdateProps: Anon.type = typings.solidReact.Anon
-  type LiveUpdateProps = Anon
+  def LiveUpdateProps: AnonSubscribe.type = typings.solidReact.AnonSubscribe
+  type LiveUpdateProps = AnonSubscribe
   @scala.inline
   def LoginButtonProps: typings.solidReact.mod.LoginButtonProps.type = typings.solidReact.mod.LoginButtonProps
   type LoginButtonProps = typings.solidReact.mod.LoginButtonProps

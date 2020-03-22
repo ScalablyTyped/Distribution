@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 package object mod {
   type RequestCallback = js.Function2[
     /* uri */ java.lang.String, 
-    /* options */ typings.wreck.mod.RequestOptions with typings.wreck.AnonPayload, 
+    /* options */ typings.wreck.RequestOptionspayloadany, 
     scala.Unit
   ]
   type ResponseCallback = js.Function2[

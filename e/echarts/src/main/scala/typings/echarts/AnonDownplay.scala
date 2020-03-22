@@ -13,9 +13,7 @@ trait AnonDownplay extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-sunburst.levels.downplay
     */
-  var downplay: js.UndefOr[
-    AnonItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance
-  ] = js.undefined
+  var downplay: js.UndefOr[AnonLabelAnonMinAngle] = js.undefined
   /**
     * Item style when mouse is hovering. See
     * [highlightPolicy](https://echarts.apache.org/en/option.html#series-sunburst.highlightPolicy)
@@ -24,9 +22,7 @@ trait AnonDownplay extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-sunburst.levels.emphasis
     */
-  var emphasis: js.UndefOr[
-    AnonItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance
-  ] = js.undefined
+  var emphasis: js.UndefOr[AnonLabelAnonMinAngle] = js.undefined
   /**
     * Item style when mouse is hovering related items. See
     * [highlightPolicy](https://echarts.apache.org/en/option.html#series-sunburst.highlightPolicy)
@@ -35,9 +31,7 @@ trait AnonDownplay extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-sunburst.levels.highlight
     */
-  var highlight: js.UndefOr[
-    AnonItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance
-  ] = js.undefined
+  var highlight: js.UndefOr[AnonLabelAnonMinAngle] = js.undefined
   /**
     * Style of Sunburst sectors.
     *
@@ -73,7 +67,7 @@ trait AnonDownplay extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-sunburst.levels.itemStyle
     */
-  var itemStyle: js.UndefOr[AnonBorderColorBorderType] = js.undefined
+  var itemStyle: js.UndefOr[AnonBorderType] = js.undefined
   /**
     * `label` sets the text style for every sectors.
     *
@@ -95,17 +89,17 @@ trait AnonDownplay extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-sunburst.levels.label
     */
-  var label: js.UndefOr[AnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance] = js.undefined
+  var label: js.UndefOr[AnonMinAngle] = js.undefined
 }
 
 object AnonDownplay {
   @scala.inline
   def apply(
-    downplay: AnonItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance = null,
-    emphasis: AnonItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance = null,
-    highlight: AnonItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance = null,
-    itemStyle: AnonBorderColorBorderType = null,
-    label: AnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance = null
+    downplay: AnonLabelAnonMinAngle = null,
+    emphasis: AnonLabelAnonMinAngle = null,
+    highlight: AnonLabelAnonMinAngle = null,
+    itemStyle: AnonBorderType = null,
+    label: AnonMinAngle = null
   ): AnonDownplay = {
     val __obj = js.Dynamic.literal()
     if (downplay != null) __obj.updateDynamic("downplay")(downplay.asInstanceOf[js.Any])

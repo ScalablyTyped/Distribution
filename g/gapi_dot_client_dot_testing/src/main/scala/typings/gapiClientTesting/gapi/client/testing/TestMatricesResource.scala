@@ -2,7 +2,7 @@ package typings.gapiClientTesting.gapi.client.testing
 
 import typings.gapiClient.gapi.client.Request_
 import typings.gapiClientTesting.AnonAccesstoken
-import typings.gapiClientTesting.AnonAccesstokenAlt
+import typings.gapiClientTesting.AnonAlt
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,7 +31,7 @@ trait TestMatricesResource extends js.Object {
     * - INVALID_ARGUMENT - if the request is malformed or if the matrix expands
     * to more than 200 supported executions
     */
-  def create(request: AnonAccesstokenAlt): Request_[TestMatrix]
+  def create(request: AnonAlt): Request_[TestMatrix]
   /**
     * Check the status of a test matrix.
     *
@@ -48,7 +48,7 @@ object TestMatricesResource {
   @scala.inline
   def apply(
     cancel: AnonAccesstoken => Request_[CancelTestMatrixResponse],
-    create: AnonAccesstokenAlt => Request_[TestMatrix],
+    create: AnonAlt => Request_[TestMatrix],
     get: AnonAccesstoken => Request_[TestMatrix]
   ): TestMatricesResource = {
     val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction1(cancel), create = js.Any.fromFunction1(create), get = js.Any.fromFunction1(get))

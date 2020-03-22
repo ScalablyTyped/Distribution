@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@aws-crypto/supports-web-crypto" : "0.1.0-preview.1"
+      "@aws-crypto/supports-web-crypto" : "0.1.0-preview.4"
     }
   ],
   "test-dependencies" : [
     {
-      "@aws-crypto/supports-web-crypto" : "0.1.0-preview.1"
+      "@aws-crypto/supports-web-crypto" : "0.1.0-preview.4"
     }
   ],
   "compile-devDependencies" : [

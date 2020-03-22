@@ -4,8 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AnonScale extends js.Object {
-  var scale: Double
+  var scale: Double = js.native
 }
 
 object AnonScale {

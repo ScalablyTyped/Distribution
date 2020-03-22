@@ -1,9 +1,9 @@
 package typings.jupyterlabMainmenu
 
 import org.scalablytyped.runtime.TopLevel
-import typings.phosphorCommands.mod.CommandRegistry
-import typings.phosphorCoreutils.mod.Token
-import typings.phosphorWidgets.menuMod.Menu.IOptions
+import typings.luminoCommands.mod.CommandRegistry
+import typings.luminoCoreutils.mod.Token
+import typings.luminoWidgets.menuMod.Menu.IOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

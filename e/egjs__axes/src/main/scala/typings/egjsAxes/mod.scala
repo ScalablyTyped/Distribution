@@ -33,7 +33,7 @@ object mod extends js.Object {
     var DIRECTION_RIGHT: DIRECTION = js.native
     var DIRECTION_UP: DIRECTION = js.native
     var DIRECTION_VERTICAL: DIRECTION = js.native
-    var PanInput: TypeofClassPanInput = js.native
+    var PanInput: TypeofPanInput = js.native
     var PinchInput: Instantiable2[
         /* el */ js.Any, 
         js.UndefOr[/* options */ PinchInputOption], 

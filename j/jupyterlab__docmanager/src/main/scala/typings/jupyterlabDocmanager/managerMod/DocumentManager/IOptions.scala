@@ -1,8 +1,9 @@
 package typings.jupyterlabDocmanager.managerMod.DocumentManager
 
+import typings.jupyterlabApputils.sessioncontextMod.ISessionContext.IDialogs
 import typings.jupyterlabDocregistry.mod.DocumentRegistry
 import typings.jupyterlabServices.libManagerMod.ServiceManager.IManager
-import typings.phosphorDisposable.mod.IDisposable
+import typings.luminoDisposable.mod.IDisposable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,6 +25,10 @@ trait IOptions extends js.Object {
     */
   var registry: DocumentRegistry
   /**
+    * The provider for session dialogs.
+    */
+  var sessionDialogs: js.UndefOr[IDialogs] = js.undefined
+  /**
     * A function called when a kernel is busy.
     */
   var setBusy: js.UndefOr[js.Function0[IDisposable]] = js.undefined
@@ -39,10 +44,12 @@ object IOptions {
     manager: IManager,
     opener: IWidgetOpener,
     registry: DocumentRegistry,
+    sessionDialogs: IDialogs = null,
     setBusy: () => IDisposable = null,
     when: js.Promise[Unit] = null
   ): IOptions = {
     val __obj = js.Dynamic.literal(manager = manager.asInstanceOf[js.Any], opener = opener.asInstanceOf[js.Any], registry = registry.asInstanceOf[js.Any])
+    if (sessionDialogs != null) __obj.updateDynamic("sessionDialogs")(sessionDialogs.asInstanceOf[js.Any])
     if (setBusy != null) __obj.updateDynamic("setBusy")(js.Any.fromFunction0(setBusy))
     if (when != null) __obj.updateDynamic("when")(when.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]

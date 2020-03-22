@@ -3,7 +3,7 @@ package typings.jupyterlabCompleter
 import typings.jupyterlabCompleter.connectorMod.CompletionConnector.IOptions
 import typings.jupyterlabCompleter.handlerMod.CompletionHandler.IReply
 import typings.jupyterlabCompleter.handlerMod.CompletionHandler.IRequest
-import typings.jupyterlabCoreutils.dataconnectorMod.DataConnector
+import typings.jupyterlabStatedb.dataconnectorMod.DataConnector
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object connectorMod extends js.Object {
   @js.native
-  class CompletionConnector protected () extends DataConnector[IReply, Unit, IRequest] {
+  class CompletionConnector protected () extends DataConnector[IReply, Unit, IRequest, String] {
     /**
       * Create a new connector for completion requests.
       *

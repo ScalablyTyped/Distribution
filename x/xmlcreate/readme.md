@@ -1,7 +1,7 @@
 
 # Scala.js typings for xmlcreate
 
-Typings are for version 1.0.2
+Typings are for version 2.0.3
 
 ## Library description:
 Simple XML builder for Node.js

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object gitLabCIYMLTemplatesMod extends js.Object {
   @js.native
-  class GitLabCIYMLTemplates () extends ResourceTemplates {
+  class GitLabCIYMLTemplates protected () extends ResourceTemplates {
     def this(options: BaseServiceOptions) = this()
   }
   

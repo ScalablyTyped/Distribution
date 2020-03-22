@@ -1,9 +1,9 @@
 package typings.echarts.echarts.EChartOption
 
-import typings.echarts.AnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance
-import typings.echarts.AnonBorderColorBorderType
+import typings.echarts.AnonBorderType
 import typings.echarts.AnonDownplay
-import typings.echarts.AnonItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance
+import typings.echarts.AnonLabelAnonMinAngle
+import typings.echarts.AnonMinAngle
 import typings.echarts.echarts.EChartOption.SeriesSunburst.DataObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -172,9 +172,7 @@ trait SeriesSunburst_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-sunburst.downplay
     */
-  var downplay: js.UndefOr[
-    AnonItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance
-  ] = js.undefined
+  var downplay: js.UndefOr[AnonLabelAnonMinAngle] = js.undefined
   /**
     * Item style when mouse is hovering. See
     * [highlightPolicy](https://echarts.apache.org/en/option.html#series-sunburst.highlightPolicy)
@@ -183,9 +181,7 @@ trait SeriesSunburst_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-sunburst.emphasis
     */
-  var emphasis: js.UndefOr[
-    AnonItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance
-  ] = js.undefined
+  var emphasis: js.UndefOr[AnonLabelAnonMinAngle] = js.undefined
   /**
     * Item style when mouse is hovering related items. See
     * [highlightPolicy](https://echarts.apache.org/en/option.html#series-sunburst.highlightPolicy)
@@ -194,9 +190,7 @@ trait SeriesSunburst_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-sunburst.highlight
     */
-  var highlight: js.UndefOr[
-    AnonItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance
-  ] = js.undefined
+  var highlight: js.UndefOr[AnonLabelAnonMinAngle] = js.undefined
   /**
     * When mouse hovers a sector, the sector is emphasized.
     * **If `highlightPolicy` is set to be `'descendant'`, then the
@@ -273,7 +267,7 @@ trait SeriesSunburst_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-sunburst.itemStyle
     */
-  var itemStyle: js.UndefOr[AnonBorderColorBorderType] = js.undefined
+  var itemStyle: js.UndefOr[AnonBorderType] = js.undefined
   /**
     * `label` sets the text style for every sectors.
     *
@@ -295,7 +289,7 @@ trait SeriesSunburst_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-sunburst.label
     */
-  var label: js.UndefOr[AnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance] = js.undefined
+  var label: js.UndefOr[AnonMinAngle] = js.undefined
   /**
     * **Multiple levels**
     *
@@ -439,13 +433,13 @@ object SeriesSunburst_ {
     animationThreshold: Int | Double = null,
     center: js.Array[_] = null,
     data: js.Array[DataObject] = null,
-    downplay: AnonItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance = null,
-    emphasis: AnonItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance = null,
-    highlight: AnonItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance = null,
+    downplay: AnonLabelAnonMinAngle = null,
+    emphasis: AnonLabelAnonMinAngle = null,
+    highlight: AnonLabelAnonMinAngle = null,
     highlightPolicy: String = null,
     id: String = null,
-    itemStyle: AnonBorderColorBorderType = null,
-    label: AnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance = null,
+    itemStyle: AnonBorderType = null,
+    label: AnonMinAngle = null,
     levels: AnonDownplay = null,
     name: String = null,
     nodeClick: Boolean | String = null,

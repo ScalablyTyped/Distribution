@@ -1,12 +1,12 @@
 package typings.googleapis.v32Mod.dfareportingV32
 
 import typings.googleapis.AnonActive
-import typings.googleapis.AnonActivitiesCustomRichMediaEventsDateRange
-import typings.googleapis.AnonActivitiesCustomRichMediaEventsDateRangeDimensionFilters
-import typings.googleapis.AnonActivityFiltersConversionDimensions
-import typings.googleapis.AnonBreakdownDateRange
-import typings.googleapis.AnonCustomRichMediaEventsDateRange
-import typings.googleapis.AnonEmailOwnerEmailOwnerDeliveryType
+import typings.googleapis.AnonConversionDimensions
+import typings.googleapis.AnonDimension
+import typings.googleapis.AnonDimensionFilters
+import typings.googleapis.AnonEmailOwnerDeliveryType
+import typings.googleapis.AnonEnableAllDimensionCombinations
+import typings.googleapis.AnonFloodlightConfigId
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,16 +23,16 @@ trait SchemaReport extends js.Object {
   /**
     * The report criteria for a report of type &quot;STANDARD&quot;.
     */
-  var criteria: js.UndefOr[AnonActivitiesCustomRichMediaEventsDateRange] = js.native
+  var criteria: js.UndefOr[AnonDimensionFilters] = js.native
   /**
     * The report criteria for a report of type
     * &quot;CROSS_DIMENSION_REACH&quot;.
     */
-  var crossDimensionReachCriteria: js.UndefOr[AnonBreakdownDateRange] = js.native
+  var crossDimensionReachCriteria: js.UndefOr[AnonDimension] = js.native
   /**
     * The report&#39;s email delivery settings.
     */
-  var delivery: js.UndefOr[AnonEmailOwnerEmailOwnerDeliveryType] = js.native
+  var delivery: js.UndefOr[AnonEmailOwnerDeliveryType] = js.native
   /**
     * The eTag of this response for caching purposes.
     */
@@ -44,7 +44,7 @@ trait SchemaReport extends js.Object {
   /**
     * The report criteria for a report of type &quot;FLOODLIGHT&quot;.
     */
-  var floodlightCriteria: js.UndefOr[AnonCustomRichMediaEventsDateRange] = js.native
+  var floodlightCriteria: js.UndefOr[AnonFloodlightConfigId] = js.native
   /**
     * The output format of the report. If not specified, default format is
     * &quot;CSV&quot;. Note that the actual format in the completed report file
@@ -77,11 +77,11 @@ trait SchemaReport extends js.Object {
   /**
     * The report criteria for a report of type &quot;PATH_TO_CONVERSION&quot;.
     */
-  var pathToConversionCriteria: js.UndefOr[AnonActivityFiltersConversionDimensions] = js.native
+  var pathToConversionCriteria: js.UndefOr[AnonConversionDimensions] = js.native
   /**
     * The report criteria for a report of type &quot;REACH&quot;.
     */
-  var reachCriteria: js.UndefOr[AnonActivitiesCustomRichMediaEventsDateRangeDimensionFilters] = js.native
+  var reachCriteria: js.UndefOr[AnonEnableAllDimensionCombinations] = js.native
   /**
     * The report&#39;s schedule. Can only be set if the report&#39;s
     * &#39;dateRange&#39; is a relative date range and the relative date range
@@ -102,20 +102,20 @@ object SchemaReport {
   @scala.inline
   def apply(
     accountId: String = null,
-    criteria: AnonActivitiesCustomRichMediaEventsDateRange = null,
-    crossDimensionReachCriteria: AnonBreakdownDateRange = null,
-    delivery: AnonEmailOwnerEmailOwnerDeliveryType = null,
+    criteria: AnonDimensionFilters = null,
+    crossDimensionReachCriteria: AnonDimension = null,
+    delivery: AnonEmailOwnerDeliveryType = null,
     etag: String = null,
     fileName: String = null,
-    floodlightCriteria: AnonCustomRichMediaEventsDateRange = null,
+    floodlightCriteria: AnonFloodlightConfigId = null,
     format: String = null,
     id: String = null,
     kind: String = null,
     lastModifiedTime: String = null,
     name: String = null,
     ownerProfileId: String = null,
-    pathToConversionCriteria: AnonActivityFiltersConversionDimensions = null,
-    reachCriteria: AnonActivitiesCustomRichMediaEventsDateRangeDimensionFilters = null,
+    pathToConversionCriteria: AnonConversionDimensions = null,
+    reachCriteria: AnonEnableAllDimensionCombinations = null,
     schedule: AnonActive = null,
     subAccountId: String = null,
     `type`: String = null

@@ -1,6 +1,6 @@
 package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
-import typings.googleapis.AnonNameSlotMsString
+import typings.googleapis.AnonNameSlotMs
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -69,7 +69,7 @@ trait SchemaJobStatistics2 extends js.Object {
   /**
     * [Output-only] Job resource usage breakdown by reservation.
     */
-  var reservationUsage: js.UndefOr[js.Array[AnonNameSlotMsString]] = js.native
+  var reservationUsage: js.UndefOr[js.Array[AnonNameSlotMs]] = js.native
   /**
     * [Output-only] The schema of the results. Present only for successful dry
     * run of non-legacy SQL queries.
@@ -147,7 +147,7 @@ object SchemaJobStatistics2 {
     numDmlAffectedRows: String = null,
     queryPlan: js.Array[SchemaExplainQueryStage] = null,
     referencedTables: js.Array[SchemaTableReference] = null,
-    reservationUsage: js.Array[AnonNameSlotMsString] = null,
+    reservationUsage: js.Array[AnonNameSlotMs] = null,
     schema: SchemaTableSchema = null,
     statementType: String = null,
     timeline: js.Array[SchemaQueryTimelineSample] = null,

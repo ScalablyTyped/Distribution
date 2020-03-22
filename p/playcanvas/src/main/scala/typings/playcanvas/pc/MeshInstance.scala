@@ -75,6 +75,12 @@ class MeshInstance protected () extends js.Object {
     */
   var drawOrder: Double = js.native
   /**
+    * @name pc.MeshInstance#instancingCount
+    * @type {number}
+    * @description Number of instances when using hardware instancing to render the mesh.
+    */
+  var instancingCount: Double = js.native
+  /**
     * @name pc.MeshInstance#mask
     * @type {number}
     * @description Mask controlling which {@link pc.LightComponent}s light this mesh instance, which {@link pc.CameraComponent} sees it and in which {@link pc.Layer} it is rendered.
@@ -116,5 +122,14 @@ class MeshInstance protected () extends js.Object {
     * the center of the mesh instance's axis-aligned bounding box. This option can be particularly useful for rendering transparent meshes in a better order than default.
     */
   def calculateSortDistance(meshInstance: MeshInstance, cameraPosition: Vec3, cameraForward: Vec3): Unit = js.native
+  def setInstancing(): Unit = js.native
+  /**
+    * @function
+    * @name pc.MeshInstance#setInstancing
+    * @description Sets up {@link pc.MeshInstance} to be rendered using Hardware Instancing.
+    * @param {pc.VertexBuffer|null} vertexBuffer - Vertex buffer to hold per-instance vertex data (usually world matrices).
+    * Pass null to turn off hardware instancing.
+    */
+  def setInstancing(vertexBuffer: VertexBuffer): Unit = js.native
 }
 

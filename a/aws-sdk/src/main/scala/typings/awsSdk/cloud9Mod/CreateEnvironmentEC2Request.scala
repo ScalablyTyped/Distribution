@@ -34,6 +34,10 @@ trait CreateEnvironmentEC2Request extends js.Object {
     * The ID of the subnet in Amazon VPC that AWS Cloud9 will use to communicate with the Amazon EC2 instance.
     */
   var subnetId: js.UndefOr[SubnetId] = js.native
+  /**
+    * An array of key-value pairs that will be associated with the new AWS Cloud9 development environment.
+    */
+  var tags: js.UndefOr[TagList] = js.native
 }
 
 object CreateEnvironmentEC2Request {
@@ -45,7 +49,8 @@ object CreateEnvironmentEC2Request {
     clientRequestToken: ClientRequestToken = null,
     description: EnvironmentDescription = null,
     ownerArn: UserArn = null,
-    subnetId: SubnetId = null
+    subnetId: SubnetId = null,
+    tags: TagList = null
   ): CreateEnvironmentEC2Request = {
     val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     if (automaticStopTimeMinutes != null) __obj.updateDynamic("automaticStopTimeMinutes")(automaticStopTimeMinutes.asInstanceOf[js.Any])
@@ -53,6 +58,7 @@ object CreateEnvironmentEC2Request {
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (ownerArn != null) __obj.updateDynamic("ownerArn")(ownerArn.asInstanceOf[js.Any])
     if (subnetId != null) __obj.updateDynamic("subnetId")(subnetId.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateEnvironmentEC2Request]
   }
 }

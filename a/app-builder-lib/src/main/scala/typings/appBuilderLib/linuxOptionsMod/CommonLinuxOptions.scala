@@ -18,6 +18,10 @@ trait CommonLinuxOptions extends js.Object {
     */
   val desktop: js.UndefOr[js.Any | Null] = js.undefined
   /**
+    * The executable parameters. Pass to executableName
+    */
+  val executableArgs: js.UndefOr[js.Array[String] | Null] = js.undefined
+  /**
     * The mime types in addition to specified in the file associations. Use it if you don't want to register a new mime type, but reuse existing.
     */
   val mimeTypes: js.UndefOr[js.Array[String] | Null] = js.undefined
@@ -33,6 +37,7 @@ object CommonLinuxOptions {
     category: String = null,
     description: String = null,
     desktop: js.Any = null,
+    executableArgs: js.Array[String] = null,
     mimeTypes: js.Array[String] = null,
     synopsis: String = null
   ): CommonLinuxOptions = {
@@ -40,6 +45,7 @@ object CommonLinuxOptions {
     if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (desktop != null) __obj.updateDynamic("desktop")(desktop.asInstanceOf[js.Any])
+    if (executableArgs != null) __obj.updateDynamic("executableArgs")(executableArgs.asInstanceOf[js.Any])
     if (mimeTypes != null) __obj.updateDynamic("mimeTypes")(mimeTypes.asInstanceOf[js.Any])
     if (synopsis != null) __obj.updateDynamic("synopsis")(synopsis.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommonLinuxOptions]

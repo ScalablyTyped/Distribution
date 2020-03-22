@@ -1,6 +1,6 @@
 package typings.dargs.mod
 
-import typings.dargs.Anon
+import typings.dargs.AnonDictkey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -68,7 +68,7 @@ object ^ extends js.Object {
   // ]
   ```
   */
-  def apply(`object`: Anon): js.Array[String] = js.native
-  def apply(`object`: Anon, options: Options): js.Array[String] = js.native
+  def apply(`object`: AnonDictkey): js.Array[String] = js.native
+  def apply(`object`: AnonDictkey, options: Options): js.Array[String] = js.native
 }
 

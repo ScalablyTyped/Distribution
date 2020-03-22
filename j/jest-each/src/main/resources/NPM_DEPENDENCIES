@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "jest-each" : "24.9.0"
+      "jest-each" : "25.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "jest-each" : "24.9.0"
+      "jest-each" : "25.1.0"
     }
   ],
   "compile-devDependencies" : [

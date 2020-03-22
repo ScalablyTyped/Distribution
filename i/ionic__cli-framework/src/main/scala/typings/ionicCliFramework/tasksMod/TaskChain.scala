@@ -1,10 +1,10 @@
 package typings.ionicCliFramework.tasksMod
 
+import typings.ionicCliFramework.PartialTaskOptions
 import typings.ionicCliFramework.ionicCliFrameworkStrings.end
 import typings.ionicCliFramework.ionicCliFrameworkStrings.failure
 import typings.ionicCliFramework.ionicCliFrameworkStrings.next
 import typings.node.eventsMod.EventEmitter
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 class TaskChain () extends EventEmitter {
   def this(hasTaskOptions: TaskChainOptions) = this()
   var current: js.UndefOr[Task] = js.native
-  val taskOptions: Partial[TaskOptions] = js.native
+  val taskOptions: PartialTaskOptions = js.native
   val tasks: js.Array[Task] = js.native
   def cleanup(): this.type = js.native
   def createTask(options: TaskOptions): Task = js.native

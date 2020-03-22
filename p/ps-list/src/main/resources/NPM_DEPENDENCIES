@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ps-list" : "6.3.0"
+      "ps-list" : "7.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "ps-list" : "6.3.0"
+      "ps-list" : "7.0.0"
     }
   ],
   "compile-devDependencies" : [

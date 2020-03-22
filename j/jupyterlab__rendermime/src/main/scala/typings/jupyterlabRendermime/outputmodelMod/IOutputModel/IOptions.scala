@@ -1,6 +1,6 @@
 package typings.jupyterlabRendermime.outputmodelMod.IOutputModel
 
-import typings.jupyterlabCoreutils.nbformatMod.nbformat.IOutput
+import typings.jupyterlabNbformat.mod.IOutput
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

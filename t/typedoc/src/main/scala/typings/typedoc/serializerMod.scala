@@ -1,9 +1,9 @@
 package typings.typedoc
 
-import typings.typedoc.applicationMod.Application
-import typings.typedoc.libUtilsMod.ChildableComponent
 import typings.typedoc.modelsMod.ProjectReflection
+import typings.typedoc.schemaMod.ModelToObject
 import typings.typedoc.serializationComponentsMod.SerializerComponent
+import typings.typedoc.utilsEventsMod.EventDispatcher
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,15 +12,14 @@ import scala.scalajs.js.annotation._
 @js.native
 object serializerMod extends js.Object {
   @js.native
-  class Serializer ()
-    extends ChildableComponent[Application, SerializerComponent[js.Any]] {
-    var findRoutes: js.Any = js.native
-    var router: js.Any = js.native
-    var routes: js.Any = js.native
-    def projectToObject(value: ProjectReflection): js.Any = js.native
-    def projectToObject(value: ProjectReflection, eventData: AnonBegin): js.Any = js.native
-    def toObject(value: js.Any): js.Any = js.native
-    def toObject(value: js.Any, obj: js.Any): js.Any = js.native
+  class Serializer () extends EventDispatcher {
+    var findSerializers: js.Any = js.native
+    var serializers: js.Any = js.native
+    def addSerializer(serializer: SerializerComponent[_]): Unit = js.native
+    def projectToObject(value: ProjectReflection): ModelToObject[ProjectReflection] = js.native
+    def projectToObject(value: ProjectReflection, eventData: AnonBegin): ModelToObject[ProjectReflection] = js.native
+    def toObject[T](value: T): ModelToObject[T] = js.native
+    def toObject[T](value: T, init: js.Object): ModelToObject[T] = js.native
   }
   
   /* static members */

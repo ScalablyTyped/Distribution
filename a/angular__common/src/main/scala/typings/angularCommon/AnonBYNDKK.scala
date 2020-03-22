@@ -15,7 +15,6 @@ trait AnonBYNDKK extends js.Object {
   var SEK: js.Array[js.UndefOr[String]]
   var THB: js.Array[String]
   var TWD: js.Array[String]
-  var USD: js.Array[String]
   var ZAR: js.Array[String]
 }
 
@@ -32,10 +31,9 @@ object AnonBYNDKK {
     SEK: js.Array[js.UndefOr[String]],
     THB: js.Array[String],
     TWD: js.Array[String],
-    USD: js.Array[String],
     ZAR: js.Array[String]
   ): AnonBYNDKK = {
-    val __obj = js.Dynamic.literal(BYN = BYN.asInstanceOf[js.Any], DKK = DKK.asInstanceOf[js.Any], HRK = HRK.asInstanceOf[js.Any], ISK = ISK.asInstanceOf[js.Any], JPY = JPY.asInstanceOf[js.Any], NOK = NOK.asInstanceOf[js.Any], PLN = PLN.asInstanceOf[js.Any], SEK = SEK.asInstanceOf[js.Any], THB = THB.asInstanceOf[js.Any], TWD = TWD.asInstanceOf[js.Any], USD = USD.asInstanceOf[js.Any], ZAR = ZAR.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(BYN = BYN.asInstanceOf[js.Any], DKK = DKK.asInstanceOf[js.Any], HRK = HRK.asInstanceOf[js.Any], ISK = ISK.asInstanceOf[js.Any], JPY = JPY.asInstanceOf[js.Any], NOK = NOK.asInstanceOf[js.Any], PLN = PLN.asInstanceOf[js.Any], SEK = SEK.asInstanceOf[js.Any], THB = THB.asInstanceOf[js.Any], TWD = TWD.asInstanceOf[js.Any], ZAR = ZAR.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AnonBYNDKK]
   }

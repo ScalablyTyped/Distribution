@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "sentence-case" : "2.1.1"
+      "sentence-case" : "3.0.3"
     }
   ],
   "test-dependencies" : [
     {
-      "sentence-case" : "2.1.1"
+      "sentence-case" : "3.0.3"
     }
   ],
   "compile-devDependencies" : [

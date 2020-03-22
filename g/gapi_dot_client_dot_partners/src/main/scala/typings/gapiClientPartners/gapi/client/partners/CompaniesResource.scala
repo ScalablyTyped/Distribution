@@ -1,8 +1,8 @@
 package typings.gapiClientPartners.gapi.client.partners
 
 import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientPartners.AnonAccesstokenAddress
-import typings.gapiClientPartners.AnonAccesstokenAddressAlt
+import typings.gapiClientPartners.AnonAddress
+import typings.gapiClientPartners.AnonCompanyName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,17 +10,17 @@ import scala.scalajs.js.annotation._
 trait CompaniesResource extends js.Object {
   var leads: LeadsResource
   /** Gets a company. */
-  def get(request: AnonAccesstokenAddress): Request_[GetCompanyResponse]
+  def get(request: AnonAddress): Request_[GetCompanyResponse]
   /** Lists companies. */
-  def list(request: AnonAccesstokenAddressAlt): Request_[ListCompaniesResponse]
+  def list(request: AnonCompanyName): Request_[ListCompaniesResponse]
 }
 
 object CompaniesResource {
   @scala.inline
   def apply(
-    get: AnonAccesstokenAddress => Request_[GetCompanyResponse],
+    get: AnonAddress => Request_[GetCompanyResponse],
     leads: LeadsResource,
-    list: AnonAccesstokenAddressAlt => Request_[ListCompaniesResponse]
+    list: AnonCompanyName => Request_[ListCompaniesResponse]
   ): CompaniesResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), leads = leads.asInstanceOf[js.Any], list = js.Any.fromFunction1(list))
   

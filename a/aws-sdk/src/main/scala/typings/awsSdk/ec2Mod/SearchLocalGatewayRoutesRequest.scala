@@ -17,7 +17,7 @@ trait SearchLocalGatewayRoutesRequest extends js.Object {
   /**
     * The ID of the local gateway route table.
     */
-  var LocalGatewayRouteTableId: String = js.native
+  var LocalGatewayRouteTableId: LocalGatewayRoutetableId = js.native
   /**
     * The maximum number of results to return with a single call. To retrieve the remaining results, make another call with the returned nextToken value.
     */
@@ -32,7 +32,7 @@ object SearchLocalGatewayRoutesRequest {
   @scala.inline
   def apply(
     Filters: FilterList,
-    LocalGatewayRouteTableId: String,
+    LocalGatewayRouteTableId: LocalGatewayRoutetableId,
     DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     MaxResults: Int | scala.Double = null,
     NextToken: String = null

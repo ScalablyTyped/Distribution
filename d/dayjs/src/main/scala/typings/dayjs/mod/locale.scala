@@ -1,7 +1,7 @@
 package typings.dayjs.mod
 
 import typings.dayjs.ILocale
-import typings.std.Partial
+import typings.dayjs.PartialILocale
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object locale extends js.Object {
   def apply(preset: String): String = js.native
-  def apply(preset: String, `object`: Partial[ILocale]): String = js.native
-  def apply(preset: String, `object`: Partial[ILocale], isLocal: Boolean): String = js.native
+  def apply(preset: String, `object`: PartialILocale): String = js.native
+  def apply(preset: String, `object`: PartialILocale, isLocal: Boolean): String = js.native
   def apply(preset: ILocale): String = js.native
-  def apply(preset: ILocale, `object`: Partial[ILocale]): String = js.native
-  def apply(preset: ILocale, `object`: Partial[ILocale], isLocal: Boolean): String = js.native
+  def apply(preset: ILocale, `object`: PartialILocale): String = js.native
+  def apply(preset: ILocale, `object`: PartialILocale, isLocal: Boolean): String = js.native
 }
 

@@ -11,7 +11,7 @@ import typings.applicationinsightsJs.AnonDomProcessing
 import typings.applicationinsightsJs.AnonDuration
 import typings.applicationinsightsJs.AnonExceptions
 import typings.applicationinsightsJs.AnonMeasurements
-import typings.applicationinsightsJs.AnonMeasurementsMessage
+import typings.applicationinsightsJs.AnonMessage
 import typings.applicationinsightsJs.AnonMetrics
 import typings.std.Error
 import typings.std.PerformanceTiming
@@ -212,7 +212,7 @@ object Telemetry extends js.Object {
     /* CompleteClass */
     override var aiDataContract: js.Any = js.native
     @JSName("aiDataContract")
-    var aiDataContract_Trace: AnonMeasurementsMessage = js.native
+    var aiDataContract_Trace: AnonMessage = js.native
   }
   
   @js.native

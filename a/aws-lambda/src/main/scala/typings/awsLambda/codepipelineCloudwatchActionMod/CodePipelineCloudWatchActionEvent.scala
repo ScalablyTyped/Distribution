@@ -1,6 +1,6 @@
 package typings.awsLambda.codepipelineCloudwatchActionMod
 
-import typings.awsLambda.AnonActionExecutionid
+import typings.awsLambda.AnonExecutionid
 import typings.awsLambda.awsLambdaStrings.`CodePipeline Action Execution State Change`
 import typings.awsLambda.awsLambdaStrings.awsDotcodepipeline
 import typings.awsLambda.codepipelineCloudwatchMod.CodePipelineCloudWatchEvent
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 
 trait CodePipelineCloudWatchActionEvent extends CodePipelineCloudWatchEvent {
   var account: String
-  var detail: AnonActionExecutionid
+  var detail: AnonExecutionid
   var `detail-type`: `CodePipeline Action Execution State Change`
   var id: String
   var region: String
@@ -24,7 +24,7 @@ object CodePipelineCloudWatchActionEvent {
   @scala.inline
   def apply(
     account: String,
-    detail: AnonActionExecutionid,
+    detail: AnonExecutionid,
     `detail-type`: `CodePipeline Action Execution State Change`,
     id: String,
     region: String,

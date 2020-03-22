@@ -9,6 +9,6 @@ trait With[TRecord, TResult]
   extends WithRaw[TRecord, TResult]
      with WithWrapped[TRecord, TResult] {
   /* InferMemberOverrides */
-  override def apply(alias: String, raw: QueryBuilder[_, js.Array[SafePartial[_]]]): QueryBuilder[TRecord, TResult] = js.native
+  override def apply(alias: String, raw: QueryBuilder[_, _]): QueryBuilder[TRecord, TResult] = js.native
 }
 

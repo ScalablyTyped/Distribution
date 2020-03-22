@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   /**
   	Copy a file.
-  	@param source - File you want to copy.
+  	@param source - The file you want to copy.
   	@param destination - Where you want the file copied.
   	@returns A `Promise` that resolves when the file is copied.
   	@example
@@ -25,8 +25,13 @@ object ^ extends js.Object {
   def apply(source: String, destination: String, options: Options): js.Promise[Unit] with ProgressEmitter = js.native
   /**
   	Copy a file synchronously.
-  	@param source - File you want to copy.
+  	@param source - The file you want to copy.
   	@param destination - Where you want the file copied.
+  	@example
+  	```
+  	import cpFile = require('cp-file');
+  	cpFile.sync('source/unicorn.png', 'destination/unicorn.png');
+  	```
   	*/
   def sync(source: String, destination: String): Unit = js.native
   def sync(source: String, destination: String, options: Options): Unit = js.native

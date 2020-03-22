@@ -3,8 +3,8 @@ package typings.antd.modalModalMod
 import typings.antd.antdBooleans.`false`
 import typings.antd.antdStrings.cancel
 import typings.antd.antdStrings.ok
-import typings.antd.buttonButtonMod.ButtonProps
 import typings.antd.buttonButtonMod.ButtonType
+import typings.antd.buttonButtonMod.NativeButtonProps
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
 import typings.std.HTMLElement
@@ -14,21 +14,19 @@ import scala.scalajs.js.annotation._
 
 trait ModalFuncProps extends js.Object {
   var autoFocusButton: js.UndefOr[Null | ok | cancel] = js.undefined
-  var cancelButtonProps: js.UndefOr[ButtonProps] = js.undefined
+  var cancelButtonProps: js.UndefOr[NativeButtonProps] = js.undefined
   var cancelText: js.UndefOr[ReactNode] = js.undefined
   var centered: js.UndefOr[Boolean] = js.undefined
   var className: js.UndefOr[String] = js.undefined
   var content: js.UndefOr[ReactNode] = js.undefined
   var getContainer: js.UndefOr[String | HTMLElement | getContainerFunc | `false` | Null] = js.undefined
   var icon: js.UndefOr[ReactNode] = js.undefined
-  var iconClassName: js.UndefOr[String] = js.undefined
-  var iconType: js.UndefOr[String] = js.undefined
   var keyboard: js.UndefOr[Boolean] = js.undefined
   var mask: js.UndefOr[Boolean] = js.undefined
   var maskClosable: js.UndefOr[Boolean] = js.undefined
   var maskStyle: js.UndefOr[CSSProperties] = js.undefined
   var maskTransitionName: js.UndefOr[String] = js.undefined
-  var okButtonProps: js.UndefOr[ButtonProps] = js.undefined
+  var okButtonProps: js.UndefOr[NativeButtonProps] = js.undefined
   var okCancel: js.UndefOr[Boolean] = js.undefined
   var okText: js.UndefOr[ReactNode] = js.undefined
   var okType: js.UndefOr[ButtonType] = js.undefined
@@ -48,21 +46,19 @@ object ModalFuncProps {
   @scala.inline
   def apply(
     autoFocusButton: ok | cancel = null,
-    cancelButtonProps: ButtonProps = null,
+    cancelButtonProps: NativeButtonProps = null,
     cancelText: ReactNode = null,
     centered: js.UndefOr[Boolean] = js.undefined,
     className: String = null,
     content: ReactNode = null,
     getContainer: String | HTMLElement | getContainerFunc | `false` = null,
     icon: ReactNode = null,
-    iconClassName: String = null,
-    iconType: String = null,
     keyboard: js.UndefOr[Boolean] = js.undefined,
     mask: js.UndefOr[Boolean] = js.undefined,
     maskClosable: js.UndefOr[Boolean] = js.undefined,
     maskStyle: CSSProperties = null,
     maskTransitionName: String = null,
-    okButtonProps: ButtonProps = null,
+    okButtonProps: NativeButtonProps = null,
     okCancel: js.UndefOr[Boolean] = js.undefined,
     okText: ReactNode = null,
     okType: ButtonType = null,
@@ -86,8 +82,6 @@ object ModalFuncProps {
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     if (getContainer != null) __obj.updateDynamic("getContainer")(getContainer.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (iconClassName != null) __obj.updateDynamic("iconClassName")(iconClassName.asInstanceOf[js.Any])
-    if (iconType != null) __obj.updateDynamic("iconType")(iconType.asInstanceOf[js.Any])
     if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard.asInstanceOf[js.Any])
     if (!js.isUndefined(mask)) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
     if (!js.isUndefined(maskClosable)) __obj.updateDynamic("maskClosable")(maskClosable.asInstanceOf[js.Any])

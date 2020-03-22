@@ -8,12 +8,12 @@ trait SeriesHeatmapDataDragDropGuideBoxOptions extends js.Object {
   /**
     * (Highcharts, Highmaps) Style options for the guide box default state.
     */
-  var default: js.UndefOr[SeriesHeatmapDataDragDropGuideBoxDefaultOptions] = js.undefined
+  var default: js.UndefOr[DragDropGuideBoxOptionsObject] = js.undefined
 }
 
 object SeriesHeatmapDataDragDropGuideBoxOptions {
   @scala.inline
-  def apply(default: SeriesHeatmapDataDragDropGuideBoxDefaultOptions = null): SeriesHeatmapDataDragDropGuideBoxOptions = {
+  def apply(default: DragDropGuideBoxOptionsObject = null): SeriesHeatmapDataDragDropGuideBoxOptions = {
     val __obj = js.Dynamic.literal()
     if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesHeatmapDataDragDropGuideBoxOptions]

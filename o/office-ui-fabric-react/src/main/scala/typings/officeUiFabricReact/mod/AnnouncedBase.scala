@@ -1,7 +1,6 @@
 package typings.officeUiFabricReact.mod
 
-import typings.officeUiFabricReact.announcedTypesMod.IAnnouncedProps
-import typings.std.Partial
+import typings.officeUiFabricReact.PartialIAnnouncedProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,6 +14,6 @@ class AnnouncedBase ()
 @JSImport("office-ui-fabric-react", "AnnouncedBase")
 @js.native
 object AnnouncedBase extends js.Object {
-  var defaultProps: Partial[IAnnouncedProps] = js.native
+  var defaultProps: PartialIAnnouncedProps = js.native
 }
 

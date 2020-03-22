@@ -18,6 +18,13 @@ trait Options extends js.Object {
   		*/
   val background: js.UndefOr[Boolean] = js.undefined
   /**
+  		Uses `encodeURI` to encode the `target` before executing it.
+  		The use with targets that are not URLs is not recommended.
+  		Especially useful when dealing with the [double-quotes on Windows](https://github.com/sindresorhus/open#double-quotes-on-windows) caveat.
+  		@default false
+  		*/
+  val url: js.UndefOr[Boolean] = js.undefined
+  /**
   		Wait for the opened app to exit before fulfilling the promise. If `false` it's fulfilled immediately when opening the app.
   		Note that it waits for the app to exit, not just for the window to close.
   		On Windows, you have to explicitly specify an app for it to be able to wait.
@@ -32,11 +39,13 @@ object Options {
   def apply(
     app: String | js.Array[String] = null,
     background: js.UndefOr[Boolean] = js.undefined,
+    url: js.UndefOr[Boolean] = js.undefined,
     wait: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (app != null) __obj.updateDynamic("app")(app.asInstanceOf[js.Any])
     if (!js.isUndefined(background)) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
+    if (!js.isUndefined(url)) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     if (!js.isUndefined(wait)) __obj.updateDynamic("wait")(wait.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

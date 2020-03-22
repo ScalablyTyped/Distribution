@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object projectAccessRequestsMod extends js.Object {
   @js.native
-  class ProjectAccessRequests () extends ResourceAccessRequests {
+  class ProjectAccessRequests protected () extends ResourceAccessRequests {
     def this(options: BaseServiceOptions) = this()
   }
   

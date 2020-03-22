@@ -11,7 +11,7 @@ trait PutPartnerEventsResponse extends js.Object {
     */
   var Entries: js.UndefOr[PutPartnerEventsResultEntryList] = js.native
   /**
-    * The number of events from this operation that couldn't be written to the partner event bus.
+    * The number of events from this operation that could not be written to the partner event bus.
     */
   var FailedEntryCount: js.UndefOr[Integer] = js.native
 }

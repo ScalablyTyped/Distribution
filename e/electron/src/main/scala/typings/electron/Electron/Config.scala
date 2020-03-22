@@ -8,22 +8,24 @@ trait Config extends js.Object {
   /**
     * The URL associated with the PAC file.
     */
-  var pacScript: String
+  var pacScript: js.UndefOr[String] = js.undefined
   /**
     * Rules indicating which URLs should bypass the proxy settings.
     */
-  var proxyBypassRules: String
+  var proxyBypassRules: js.UndefOr[String] = js.undefined
   /**
     * Rules indicating which proxies to use.
     */
-  var proxyRules: String
+  var proxyRules: js.UndefOr[String] = js.undefined
 }
 
 object Config {
   @scala.inline
-  def apply(pacScript: String, proxyBypassRules: String, proxyRules: String): Config = {
-    val __obj = js.Dynamic.literal(pacScript = pacScript.asInstanceOf[js.Any], proxyBypassRules = proxyBypassRules.asInstanceOf[js.Any], proxyRules = proxyRules.asInstanceOf[js.Any])
-  
+  def apply(pacScript: String = null, proxyBypassRules: String = null, proxyRules: String = null): Config = {
+    val __obj = js.Dynamic.literal()
+    if (pacScript != null) __obj.updateDynamic("pacScript")(pacScript.asInstanceOf[js.Any])
+    if (proxyBypassRules != null) __obj.updateDynamic("proxyBypassRules")(proxyBypassRules.asInstanceOf[js.Any])
+    if (proxyRules != null) __obj.updateDynamic("proxyRules")(proxyRules.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }
 }

@@ -1,9 +1,7 @@
 package typings.smoothScrollbar
 
-import typings.smoothScrollbar.scrollbarMod.ScrollIntoViewOptions
 import typings.smoothScrollbar.scrollbarMod.Scrollbar
 import typings.std.HTMLElement
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +13,7 @@ object scrollIntoViewMod extends js.Object {
   def scrollIntoView(
     scrollbar: Scrollbar,
     elem: HTMLElement,
-    hasAlignToTopOnlyScrollIfNeededOffsetTopOffsetLeftOffsetBottom: Partial[ScrollIntoViewOptions]
+    hasAlignToTopOnlyScrollIfNeededOffsetTopOffsetLeftOffsetBottom: PartialScrollIntoViewOpti
   ): Unit = js.native
 }
 

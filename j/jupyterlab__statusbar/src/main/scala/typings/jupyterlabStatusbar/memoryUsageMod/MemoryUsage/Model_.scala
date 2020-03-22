@@ -30,18 +30,18 @@ class Model_ protected () extends VDomModel {
   /**
     * The current memory usage/
     */
-  val currentMemory: Double = js.native
+  def currentMemory(): Double = js.native
   /**
     * The current memory limit, or null if not specified.
     */
-  val memoryLimit: Double | Null = js.native
+  def memoryLimit(): Double | Null = js.native
   /**
     * Whether the metrics server extension is available.
     */
-  val metricsAvailable: Boolean = js.native
+  def metricsAvailable(): Boolean = js.native
   /**
     * The units for memory usages and limits.
     */
-  val units: MemoryUnit = js.native
+  def units(): MemoryUnit = js.native
 }
 

@@ -9,7 +9,6 @@ import typings.ionicCore.ionicCoreStrings.middle
 import typings.ionicCore.ionicCoreStrings.start
 import typings.ionicCore.ionicCoreStrings.top
 import typings.ionicCore.mod.Color
-import typings.ionicCore.oldAnimationAnimationInterfaceMod.Animation
 import typings.ionicCore.overlaysInterfaceMod.OverlayEventDetail
 import typings.ionicCore.overlaysInterfaceMod.OverlayInterface
 import typings.ionicCore.stencilCoreMod.ComponentInterface
@@ -25,18 +24,12 @@ object toastMod extends js.Object {
   class Toast ()
     extends ComponentInterface
        with OverlayInterface {
-    @JSName("animation")
-    var animation_Toast: js.UndefOr[Animation] = js.native
     var buttonClick: js.Any = js.native
     /**
       * An array of buttons for the toast.
       */
     var buttons: js.UndefOr[js.Array[ToastButton | String]] = js.native
     var callButtonHandler: js.Any = js.native
-    /**
-      * @deprecated Use `buttons` instead. Text to display in the close button.
-      */
-    var closeButtonText: js.UndefOr[String] = js.native
     /**
       * The color to use from your application's color palette.
       * Default options are: `"primary"`, `"secondary"`, `"tertiary"`, `"success"`, `"warning"`, `"danger"`, `"light"`, `"medium"`, and `"dark"`.
@@ -48,6 +41,7 @@ object toastMod extends js.Object {
       * provided they should be separated by spaces.
       */
     var cssClass: js.UndefOr[String | js.Array[String]] = js.native
+    var dispatchCancelHandler: js.Any = js.native
     /**
       * How many milliseconds to wait before hiding the toast. By default, it will show
       * until `dismiss()` is called.
@@ -71,10 +65,6 @@ object toastMod extends js.Object {
       * The position of the toast on the screen.
       */
     var position: top | bottom | middle = js.native
-    /**
-      * @deprecated Use `buttons` instead. If `true`, the close button will be displayed.
-      */
-    var showCloseButton: Boolean = js.native
     /**
       * If `true`, the toast will be translucent.
       * Only applies when the mode is `"ios"` and the device supports

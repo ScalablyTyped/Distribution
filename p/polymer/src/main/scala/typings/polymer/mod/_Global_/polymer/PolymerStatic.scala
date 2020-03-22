@@ -1,6 +1,7 @@
 package typings.polymer.mod._Global_.polymer
 
-import typings.polymer.AnonBase
+import typings.polymer.AnonInstantiable
+import typings.std.CustomElementConstructor
 import typings.std.Event_
 import typings.std.Node
 import scala.scalajs.js
@@ -18,10 +19,10 @@ trait PolymerStatic extends js.Object {
   var Templatizer: typings.polymer.mod._Global_.polymer.Templatizer = js.native
   @JSName("dom")
   var dom_Original: DomApiStatic = js.native
-  def apply(prototype: AnonBase): js.Any = js.native
-  def apply(prototype: Base): js.Any = js.native
-  def Class(prototype: AnonBase): js.Any = js.native
-  def Class(prototype: Base): js.Any = js.native
+  def apply(prototype: AnonInstantiable): CustomElementConstructor = js.native
+  def apply(prototype: Base): CustomElementConstructor = js.native
+  def Class(prototype: AnonInstantiable): CustomElementConstructor = js.native
+  def Class(prototype: Base): CustomElementConstructor = js.native
   def dom(obj: Base): DomApi = js.native
   def dom(obj: Event_): EventApi = js.native
   def dom(obj: Node): DomApi = js.native

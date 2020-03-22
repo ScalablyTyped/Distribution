@@ -1,6 +1,6 @@
 package typings.antDesignReactNative.listItemMod
 
-import typings.antDesignReactNative.PickListStyleBriefBriefText
+import typings.antDesignReactNative.PickListStyleBriefBriefTe
 import typings.antDesignReactNative.libStyleMod.WithThemeStyles
 import typings.react.mod.ReactNode
 import typings.reactNative.mod.StyleProp
@@ -12,14 +12,14 @@ import scala.scalajs.js.annotation._
 
 trait BriefProps
   extends typings.antDesignReactNative.listPropsTypeMod.BriefProps
-     with WithThemeStyles[PickListStyleBriefBriefText]
+     with WithThemeStyles[PickListStyleBriefBriefTe]
 
 object BriefProps {
   @scala.inline
   def apply(
     children: ReactNode = null,
     style: StyleProp[TextStyle] = null,
-    styles: Partial[PickListStyleBriefBriefText] = null,
+    styles: Partial[PickListStyleBriefBriefTe] = null,
     wrap: js.UndefOr[Boolean] = js.undefined
   ): BriefProps = {
     val __obj = js.Dynamic.literal()

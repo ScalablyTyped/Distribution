@@ -1,8 +1,8 @@
 package typings.grommet.worldMapMod
 
-import typings.grommet.AnonAfrica
-import typings.grommet.AnonArgsColorLocation
-import typings.grommet.AnonDark
+import typings.grommet.AnonLight
+import typings.grommet.AnonLocation
+import typings.grommet.AnonName
 import typings.grommet.utilsMod.A11yTitleType
 import typings.grommet.utilsMod.AlignSelfType
 import typings.grommet.utilsMod.ColorType
@@ -17,13 +17,13 @@ trait WorldMapProps extends js.Object {
   var a11yTitle: js.UndefOr[A11yTitleType] = js.undefined
   var alignSelf: js.UndefOr[AlignSelfType] = js.undefined
   var color: js.UndefOr[ColorType] = js.undefined
-  var continents: js.UndefOr[js.Array[AnonAfrica]] = js.undefined
+  var continents: js.UndefOr[js.Array[AnonName]] = js.undefined
   var fill: js.UndefOr[FillType] = js.undefined
   var gridArea: js.UndefOr[GridAreaType] = js.undefined
-  var hoverColor: js.UndefOr[String | AnonDark] = js.undefined
+  var hoverColor: js.UndefOr[String | AnonLight] = js.undefined
   var margin: js.UndefOr[MarginType] = js.undefined
   var onSelectPlace: js.UndefOr[js.Function1[/* place */ js.Array[Double], Unit]] = js.undefined
-  var places: js.UndefOr[js.Array[AnonArgsColorLocation]] = js.undefined
+  var places: js.UndefOr[js.Array[AnonLocation]] = js.undefined
 }
 
 object WorldMapProps {
@@ -32,13 +32,13 @@ object WorldMapProps {
     a11yTitle: A11yTitleType = null,
     alignSelf: AlignSelfType = null,
     color: ColorType = null,
-    continents: js.Array[AnonAfrica] = null,
+    continents: js.Array[AnonName] = null,
     fill: FillType = null,
     gridArea: GridAreaType = null,
-    hoverColor: String | AnonDark = null,
+    hoverColor: String | AnonLight = null,
     margin: MarginType = null,
     onSelectPlace: /* place */ js.Array[Double] => Unit = null,
-    places: js.Array[AnonArgsColorLocation] = null
+    places: js.Array[AnonLocation] = null
   ): WorldMapProps = {
     val __obj = js.Dynamic.literal()
     if (a11yTitle != null) __obj.updateDynamic("a11yTitle")(a11yTitle.asInstanceOf[js.Any])

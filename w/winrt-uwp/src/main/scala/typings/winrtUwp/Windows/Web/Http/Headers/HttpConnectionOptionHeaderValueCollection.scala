@@ -2,7 +2,7 @@ package typings.winrtUwp.Windows.Web.Http.Headers
 
 import typings.std.Array
 import typings.winrtUwp.AnonIndex
-import typings.winrtUwp.AnonItemsReturnValueHttpConnectionOptionHeaderValue
+import typings.winrtUwp.AnonItemsHttpConnectionOptionHeaderValue
 import typings.winrtUwp.Windows.Foundation.Collections.IIterator
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import scala.scalajs.js
@@ -37,7 +37,7 @@ abstract class HttpConnectionOptionHeaderValueCollection () extends Array[HttpCo
     * Retrieves the HttpConnectionOptionHeaderValue items that start at the specified index in the collection.
     * @param startIndex The zero-based index of the start of the HttpConnectionOptionHeaderValue items in the HttpConnectionOptionHeaderValueCollection .
     */
-  def getMany(startIndex: Double): AnonItemsReturnValueHttpConnectionOptionHeaderValue = js.native
+  def getMany(startIndex: Double): AnonItemsHttpConnectionOptionHeaderValue = js.native
   /**
     * Returns an immutable view of the HttpConnectionOptionHeaderValueCollection .
     * @return The view of the HttpConnectionOptionHeaderValueCollection .

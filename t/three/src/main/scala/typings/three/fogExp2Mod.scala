@@ -2,6 +2,7 @@ package typings.three
 
 import typings.three.colorMod.Color
 import typings.three.fogMod.IFog
+import typings.three.threeBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,6 +23,7 @@ object fogExp2Mod extends js.Object {
     	 * Default is 0.00025.
     	 */
     var density: Double = js.native
+    val isFogExp2: `true` = js.native
     /* CompleteClass */
     override var name: String = js.native
     /* CompleteClass */

@@ -10,7 +10,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ionic/angular/dist/directives/proxies", "IonSlides")
+@JSImport("@ionic/angular/directives/proxies", "IonSlides")
 @js.native
 class IonSlides protected ()
   extends typings.ionicCore.componentsMod.Components.IonSlides {

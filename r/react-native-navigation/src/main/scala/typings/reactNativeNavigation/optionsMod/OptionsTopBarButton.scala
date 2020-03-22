@@ -1,7 +1,7 @@
 package typings.reactNativeNavigation.optionsMod
 
 import typings.reactNative.mod.ImageRequireSource
-import typings.reactNativeNavigation.AnonNamePassProps
+import typings.reactNativeNavigation.AnonPassProps
 import typings.reactNativeNavigation.reactNativeNavigationStrings.always
 import typings.reactNativeNavigation.reactNativeNavigationStrings.ifRoom
 import typings.reactNativeNavigation.reactNativeNavigationStrings.never
@@ -12,13 +12,17 @@ import scala.scalajs.js.annotation._
 
 trait OptionsTopBarButton extends js.Object {
   /**
+    * Overrides the text that's read by the screen reader when the user interacts with the element
+    */
+  var accessibilityLabel: js.UndefOr[String] = js.undefined
+  /**
     * Set text color
     */
   var color: js.UndefOr[Color] = js.undefined
   /**
     * Set the button as a custom component
     */
-  var component: js.UndefOr[AnonNamePassProps] = js.undefined
+  var component: js.UndefOr[AnonPassProps] = js.undefined
   /**
     * Disable icon tinting
     */
@@ -76,8 +80,9 @@ object OptionsTopBarButton {
   @scala.inline
   def apply(
     id: String,
+    accessibilityLabel: String = null,
     color: Color = null,
-    component: AnonNamePassProps = null,
+    component: AnonPassProps = null,
     disableIconTint: js.UndefOr[Boolean] = js.undefined,
     disabledColor: Color = null,
     enabled: js.UndefOr[Boolean] = js.undefined,
@@ -91,6 +96,7 @@ object OptionsTopBarButton {
     text: String = null
   ): OptionsTopBarButton = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    if (accessibilityLabel != null) __obj.updateDynamic("accessibilityLabel")(accessibilityLabel.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
     if (!js.isUndefined(disableIconTint)) __obj.updateDynamic("disableIconTint")(disableIconTint.asInstanceOf[js.Any])

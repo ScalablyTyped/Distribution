@@ -1,6 +1,6 @@
 package typings.grommet.selectMod
 
-import typings.grommet.AnonBottomLeft
+import typings.grommet.AnonLeft
 import typings.grommet.AnonMultiple
 import typings.grommet.dropMod.DropProps
 import typings.grommet.grommetStrings.large
@@ -26,7 +26,7 @@ trait SelectProps extends js.Object {
   var closeOnChange: js.UndefOr[Boolean] = js.undefined
   var disabled: js.UndefOr[Boolean | (js.Array[Double | String | js.Object])] = js.undefined
   var disabledKey: js.UndefOr[String | (js.Function1[/* repeated */ js.Any, _])] = js.undefined
-  var dropAlign: js.UndefOr[AnonBottomLeft] = js.undefined
+  var dropAlign: js.UndefOr[AnonLeft] = js.undefined
   var dropHeight: js.UndefOr[xsmall | small | medium | large | xlarge | String] = js.undefined
   var dropProps: js.UndefOr[DropProps] = js.undefined
   var dropTarget: js.UndefOr[js.Object] = js.undefined
@@ -68,7 +68,7 @@ object SelectProps {
     closeOnChange: js.UndefOr[Boolean] = js.undefined,
     disabled: Boolean | (js.Array[Double | String | js.Object]) = null,
     disabledKey: String | (js.Function1[/* repeated */ js.Any, _]) = null,
-    dropAlign: AnonBottomLeft = null,
+    dropAlign: AnonLeft = null,
     dropHeight: xsmall | small | medium | large | xlarge | String = null,
     dropProps: DropProps = null,
     dropTarget: js.Object = null,

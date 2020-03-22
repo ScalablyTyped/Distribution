@@ -10,19 +10,15 @@ trait AnonErrCodeErrMsg extends js.Object {
     */
   var errCode: Double
   /**
-    * 调用结果
+    * 调用结果（错误原因）
     */
   var errMsg: String
-  /**
-    * 在此通话中的成员 openId 名单
-    */
-  var openIdList: js.Array[String]
 }
 
 object AnonErrCodeErrMsg {
   @scala.inline
-  def apply(errCode: Double, errMsg: String, openIdList: js.Array[String]): AnonErrCodeErrMsg = {
-    val __obj = js.Dynamic.literal(errCode = errCode.asInstanceOf[js.Any], errMsg = errMsg.asInstanceOf[js.Any], openIdList = openIdList.asInstanceOf[js.Any])
+  def apply(errCode: Double, errMsg: String): AnonErrCodeErrMsg = {
+    val __obj = js.Dynamic.literal(errCode = errCode.asInstanceOf[js.Any], errMsg = errMsg.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AnonErrCodeErrMsg]
   }

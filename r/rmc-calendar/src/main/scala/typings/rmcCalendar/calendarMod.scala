@@ -26,10 +26,10 @@ object calendarMod extends js.Object {
     def selectDate(date: Date): StateType = js.native
     def selectDate(date: Date, useDateTime: Boolean): StateType = js.native
     def selectDate(date: Date, useDateTime: Boolean, oldState: AnonEndDate): StateType = js.native
-    def selectDate(date: Date, useDateTime: Boolean, oldState: AnonEndDate, props: AnonChildren with PropsType): StateType = js.native
+    def selectDate(date: Date, useDateTime: Boolean, oldState: AnonEndDate, props: ReadonlychildrenReactNode): StateType = js.native
     def setClientHeight(height: Double): Unit = js.native
     def shortcutSelect(startDate: Date, endDate: Date): Unit = js.native
-    def shortcutSelect(startDate: Date, endDate: Date, props: AnonChildren with PropsType): Unit = js.native
+    def shortcutSelect(startDate: Date, endDate: Date, props: ReadonlychildrenReactNode): Unit = js.native
   }
   
   @js.native
@@ -50,7 +50,7 @@ object calendarMod extends js.Object {
   /* static members */
   @js.native
   object default extends js.Object {
-    var DefaultHeader: TypeofClassHeader = js.native
+    var DefaultHeader: TypeofHeader = js.native
     var DefaultShortcut: Instantiable0[typings.rmcCalendar.shortcutPanelMod.default] = js.native
     var defaultProps: PropsType = js.native
   }

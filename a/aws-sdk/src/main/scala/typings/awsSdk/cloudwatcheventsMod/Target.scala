@@ -15,7 +15,7 @@ trait Target extends js.Object {
     */
   var BatchParameters: js.UndefOr[typings.awsSdk.cloudwatcheventsMod.BatchParameters] = js.native
   /**
-    * Contains the Amazon ECS task definition and task count to be used if the event target is an Amazon ECS task. For more information about Amazon ECS tasks, see Task Definitions  in the Amazon EC2 Container Service Developer Guide.
+    * Contains the Amazon ECS task definition and task count to be used, if the event target is an Amazon ECS task. For more information about Amazon ECS tasks, see Task Definitions  in the Amazon EC2 Container Service Developer Guide.
     */
   var EcsParameters: js.UndefOr[typings.awsSdk.cloudwatcheventsMod.EcsParameters] = js.native
   /**
@@ -35,7 +35,7 @@ trait Target extends js.Object {
     */
   var InputTransformer: js.UndefOr[typings.awsSdk.cloudwatcheventsMod.InputTransformer] = js.native
   /**
-    * The custom parameter that you can use to control the shard assignment when the target is a Kinesis data stream. If you don't include this parameter, the default is to use the eventId as the partition key.
+    * The custom parameter you can use to control the shard assignment, when the target is a Kinesis data stream. If you do not include this parameter, the default is to use the eventId as the partition key.
     */
   var KinesisParameters: js.UndefOr[typings.awsSdk.cloudwatcheventsMod.KinesisParameters] = js.native
   /**

@@ -1,13 +1,13 @@
 package typings.uiGrid.mod.expandable
 
-import typings.uiGrid.AnonHandlerRowExpandedStateChanged
+import typings.uiGrid.AnonRowExpandedStateChanged
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IGridExpandableApi[TEntity] extends js.Object {
   // Events
-  var on: AnonHandlerRowExpandedStateChanged[TEntity]
+  var on: AnonRowExpandedStateChanged[TEntity]
   // Methods
   /**
     * Collapse all subgrids.
@@ -33,7 +33,7 @@ object IGridExpandableApi {
   def apply[TEntity](
     collapseAllRows: () => Unit,
     expandAllRows: () => Unit,
-    on: AnonHandlerRowExpandedStateChanged[TEntity],
+    on: AnonRowExpandedStateChanged[TEntity],
     toggleAllRows: () => Unit,
     toggleRowExpansion: TEntity => Unit
   ): IGridExpandableApi[TEntity] = {

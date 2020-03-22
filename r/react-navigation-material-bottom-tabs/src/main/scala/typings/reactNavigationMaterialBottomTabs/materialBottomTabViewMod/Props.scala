@@ -9,7 +9,7 @@ import typings.reactNavigation.mod.NavigationParams
 import typings.reactNavigation.mod.NavigationProp
 import typings.reactNavigation.mod.NavigationRoute
 import typings.reactNavigation.mod.NavigationScreenProp
-import typings.reactNavigationMaterialBottomTabs.AnonFocusedRoute
+import typings.reactNavigationMaterialBottomTabs.AnonTintColor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,7 +31,7 @@ trait Props extends js.Object {
   var inactiveColorLight: js.UndefOr[String] = js.undefined
   var navigation: NavigationProp[_]
   var screenProps: js.UndefOr[js.Any] = js.undefined
-  def renderIcon(options: AnonFocusedRoute): ReactNode
+  def renderIcon(options: AnonTintColor): ReactNode
 }
 
 object Props {
@@ -45,7 +45,7 @@ object Props {
       ]
     ],
     navigation: NavigationProp[_],
-    renderIcon: AnonFocusedRoute => ReactNode,
+    renderIcon: AnonTintColor => ReactNode,
     activeColorDark: String = null,
     activeColorLight: String = null,
     barStyleDark: StyleProp[ViewStyle] = null,

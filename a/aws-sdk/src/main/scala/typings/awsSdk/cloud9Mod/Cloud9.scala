@@ -117,6 +117,45 @@ trait Cloud9 extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListEnvironmentsResult, Unit]
   ): Request[ListEnvironmentsResult, AWSError] = js.native
   /**
+    * Gets a list of the tags associated with an AWS Cloud9 development environment.
+    */
+  def listTagsForResource(): Request[ListTagsForResourceResponse, AWSError] = js.native
+  def listTagsForResource(callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]): Request[ListTagsForResourceResponse, AWSError] = js.native
+  /**
+    * Gets a list of the tags associated with an AWS Cloud9 development environment.
+    */
+  def listTagsForResource(params: ListTagsForResourceRequest): Request[ListTagsForResourceResponse, AWSError] = js.native
+  def listTagsForResource(
+    params: ListTagsForResourceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]
+  ): Request[ListTagsForResourceResponse, AWSError] = js.native
+  /**
+    * Adds tags to an AWS Cloud9 development environment.  Tags that you add to an AWS Cloud9 environment by using this method will NOT be automatically propagated to underlying resources. 
+    */
+  def tagResource(): Request[TagResourceResponse, AWSError] = js.native
+  def tagResource(callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResponse, Unit]): Request[TagResourceResponse, AWSError] = js.native
+  /**
+    * Adds tags to an AWS Cloud9 development environment.  Tags that you add to an AWS Cloud9 environment by using this method will NOT be automatically propagated to underlying resources. 
+    */
+  def tagResource(params: TagResourceRequest): Request[TagResourceResponse, AWSError] = js.native
+  def tagResource(
+    params: TagResourceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResponse, Unit]
+  ): Request[TagResourceResponse, AWSError] = js.native
+  /**
+    * Removes tags from an AWS Cloud9 development environment.
+    */
+  def untagResource(): Request[UntagResourceResponse, AWSError] = js.native
+  def untagResource(callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResponse, Unit]): Request[UntagResourceResponse, AWSError] = js.native
+  /**
+    * Removes tags from an AWS Cloud9 development environment.
+    */
+  def untagResource(params: UntagResourceRequest): Request[UntagResourceResponse, AWSError] = js.native
+  def untagResource(
+    params: UntagResourceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResponse, Unit]
+  ): Request[UntagResourceResponse, AWSError] = js.native
+  /**
     * Changes the settings of an existing AWS Cloud9 development environment.
     */
   def updateEnvironment(): Request[UpdateEnvironmentResult, AWSError] = js.native

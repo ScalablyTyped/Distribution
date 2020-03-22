@@ -98,7 +98,7 @@ object inputMod extends js.Object {
       */
     var ionFocus: EventEmitter[Unit] = js.native
     /**
-      * Emitted when a keyboard input ocurred.
+      * Emitted when a keyboard input occurred.
       */
     var ionInput: EventEmitter[KeyboardEvent] = js.native
     /**
@@ -182,7 +182,7 @@ object inputMod extends js.Object {
     /**
       * The value of the input.
       */
-    var value: js.UndefOr[String | Null] = js.native
+    var value: js.UndefOr[String | Double | Null] = js.native
     @JSName("connectedCallback")
     def connectedCallback_MInput(): Unit = js.native
     /* protected */ def debounceChanged(): Unit = js.native

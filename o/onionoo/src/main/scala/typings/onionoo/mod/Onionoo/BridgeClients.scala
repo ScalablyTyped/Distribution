@@ -1,10 +1,6 @@
 package typings.onionoo.mod.Onionoo
 
-import typings.onionoo.onionooStrings.`1_year`
-import typings.onionoo.onionooStrings.`5_years`
-import typings.onionoo.onionooStrings.`6_months`
-import typings.std.Partial
-import typings.std.Record
+import typings.onionoo.PartialRecord6months1year
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +15,7 @@ trait BridgeClients extends js.Object {
     * data resolution. The unit is number of clients. Contained graph history objects may contain null values
     * if the bridge did not report client statistics for at least 50% of a given time period.
     */
-  var average_clients: js.UndefOr[Partial[Record[`6_months` | `1_year` | `5_years`, Histogram]]] = js.undefined
+  var average_clients: js.UndefOr[PartialRecord6months1year] = js.undefined
   /**
     * SHA-1 hash of the bridge fingerprint consisting of 40 upper-case hexadecimal characters.
     */
@@ -28,10 +24,7 @@ trait BridgeClients extends js.Object {
 
 object BridgeClients {
   @scala.inline
-  def apply(
-    fingerprint: String,
-    average_clients: Partial[Record[`6_months` | `1_year` | `5_years`, Histogram]] = null
-  ): BridgeClients = {
+  def apply(fingerprint: String, average_clients: PartialRecord6months1year = null): BridgeClients = {
     val __obj = js.Dynamic.literal(fingerprint = fingerprint.asInstanceOf[js.Any])
     if (average_clients != null) __obj.updateDynamic("average_clients")(average_clients.asInstanceOf[js.Any])
     __obj.asInstanceOf[BridgeClients]

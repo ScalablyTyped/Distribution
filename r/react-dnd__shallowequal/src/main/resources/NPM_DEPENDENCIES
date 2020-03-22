@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@react-dnd/shallowequal" : "2.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@react-dnd/shallowequal" : "2.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -11,7 +11,6 @@ import typings.react.mod.WheelEvent
 import typings.react.mod._Global_.JSX.Element
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -141,7 +140,7 @@ object tableQuadrantMod extends js.Object {
   /* static members */
   @js.native
   object TableQuadrant extends js.Object {
-    var defaultProps: Partial[ITableQuadrantProps] with js.Object = js.native
+    var defaultProps: PartialITableQuadrantProp with js.Object = js.native
   }
   
 }

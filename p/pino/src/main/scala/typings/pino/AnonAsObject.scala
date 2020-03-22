@@ -124,7 +124,7 @@ trait AnonAsObject extends js.Object {
     *   }
     * })
     */
-  var write: js.UndefOr[WriteFn | AnonDebug] = js.undefined
+  var write: js.UndefOr[WriteFn | AnonDictlogLevel] = js.undefined
 }
 
 object AnonAsObject {
@@ -133,7 +133,7 @@ object AnonAsObject {
     asObject: js.UndefOr[Boolean] = js.undefined,
     serialize: Boolean | js.Array[String] = null,
     transmit: AnonLevel = null,
-    write: WriteFn | AnonDebug = null
+    write: WriteFn | AnonDictlogLevel = null
   ): AnonAsObject = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(asObject)) __obj.updateDynamic("asObject")(asObject.asInstanceOf[js.Any])

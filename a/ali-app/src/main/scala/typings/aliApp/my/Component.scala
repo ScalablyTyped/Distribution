@@ -1,7 +1,6 @@
 package typings.aliApp.my
 
-import typings.aliApp.AnonBubbles
-import typings.std.Partial
+import typings.aliApp.Partialbubblesbooleancomp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -54,6 +53,6 @@ trait Component extends js.Object {
   def setData(data: js.Any, callback: js.Function0[Unit]): Unit = js.native
   def triggerEvent(name: String): Unit = js.native
   def triggerEvent(name: String, details: js.Any): Unit = js.native
-  def triggerEvent(name: String, details: js.Any, options: Partial[AnonBubbles]): Unit = js.native
+  def triggerEvent(name: String, details: js.Any, options: Partialbubblesbooleancomp): Unit = js.native
 }
 

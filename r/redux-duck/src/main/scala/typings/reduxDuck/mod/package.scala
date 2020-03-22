@@ -16,5 +16,4 @@ package object mod {
   type ActionType = java.lang.String
   type AppName = java.lang.String
   type DuckName = java.lang.String
-  type FSAHack = typings.redux.mod.Action[java.lang.String] with typings.reduxDuck.AnonPayload
 }

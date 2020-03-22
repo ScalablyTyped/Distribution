@@ -24,7 +24,7 @@ trait ChromeWindow extends js.Object {
   ///
   /// Other APIs
   ///
-  var AudioContext: AnonContextOptions = js.native
+  var AudioContext: AnonInstantiableAudioContext = js.native
   /**
     * ❗ window.history is not available in packaged apps. ❗
     * Links open up with the system web browser.

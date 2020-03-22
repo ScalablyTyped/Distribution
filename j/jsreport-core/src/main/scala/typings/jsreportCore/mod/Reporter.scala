@@ -1,6 +1,6 @@
 package typings.jsreportCore.mod
 
-import typings.std.Partial
+import typings.jsreportCore.PartialRequest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,7 +20,7 @@ trait Reporter extends js.Object {
   def createListenerCollection(): ListenerCollection = js.native
   def discover(): Reporter = js.native
   def init(): js.Promise[Reporter] = js.native
-  def render(options: Partial[Request]): js.Promise[Response] = js.native
+  def render(options: PartialRequest): js.Promise[Response] = js.native
   def use(extension: Extension): Reporter = js.native
   def use(extension: ExtensionDefinition): Reporter = js.native
 }

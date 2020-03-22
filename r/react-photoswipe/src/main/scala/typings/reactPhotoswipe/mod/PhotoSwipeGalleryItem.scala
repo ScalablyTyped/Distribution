@@ -1,6 +1,6 @@
 package typings.reactPhotoswipe.mod
 
-import typings.photoswipe.AnonBottomTop
+import typings.photoswipe.AnonTop
 import typings.photoswipe.mod.Item
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -23,7 +23,7 @@ object PhotoSwipeGalleryItem {
     loadError: js.UndefOr[Boolean] = js.undefined,
     msrc: String = null,
     src: String = null,
-    vGap: AnonBottomTop = null,
+    vGap: AnonTop = null,
     w: Int | Double = null
   ): PhotoSwipeGalleryItem = {
     val __obj = js.Dynamic.literal(thumbnail = thumbnail.asInstanceOf[js.Any])

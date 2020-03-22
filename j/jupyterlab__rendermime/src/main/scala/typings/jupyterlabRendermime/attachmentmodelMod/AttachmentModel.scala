@@ -1,11 +1,11 @@
 package typings.jupyterlabRendermime.attachmentmodelMod
 
-import typings.jupyterlabCoreutils.nbformatMod.nbformat.IMimeBundle
+import typings.jupyterlabNbformat.mod.IMimeBundle
 import typings.jupyterlabRendermime.attachmentmodelMod.IAttachmentModel.IOptions
 import typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.IMimeModel.ISetDataOptions
-import typings.phosphorCoreutils.jsonMod.JSONObject
-import typings.phosphorCoreutils.jsonMod.ReadonlyJSONObject
-import typings.phosphorSignaling.mod.ISignal
+import typings.luminoCoreutils.jsonMod.PartialJSONObject
+import typings.luminoCoreutils.jsonMod.ReadonlyPartialJSONObject
+import typings.luminoSignaling.mod.ISignal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,7 +34,7 @@ class AttachmentModel protected () extends IAttachmentModel {
     * The data associated with the model.
     */
   /* CompleteClass */
-  override val data: ReadonlyJSONObject = js.native
+  override val data: ReadonlyPartialJSONObject = js.native
   /**
     * The metadata associated with the model.
     *
@@ -42,17 +42,32 @@ class AttachmentModel protected () extends IAttachmentModel {
     * that stores a URI fragment identifier for the MIME resource.
     */
   /* CompleteClass */
-  override val metadata: ReadonlyJSONObject = js.native
+  override val metadata: ReadonlyPartialJSONObject = js.native
   /**
     * Whether the data in the model is trusted.
     */
   /* CompleteClass */
   override val trusted: Boolean = js.native
   /**
+    * A signal emitted when the attachment model changes.
+    */
+  @JSName("changed")
+  def changed_MAttachmentModel(): ISignal[this.type, Unit] = js.native
+  /**
+    * The data associated with the model.
+    */
+  @JSName("data")
+  def data_MAttachmentModel(): ReadonlyPartialJSONObject = js.native
+  /**
     * Dispose of the resources used by the attachment model.
     */
   /* CompleteClass */
   override def dispose(): Unit = js.native
+  /**
+    * The metadata associated with the model.
+    */
+  @JSName("metadata")
+  def metadata_MAttachmentModel(): ReadonlyPartialJSONObject = js.native
   /**
     * Set the data associated with the model.
     *
@@ -80,6 +95,6 @@ object AttachmentModel extends js.Object {
     *
     * @returns - The data for the payload.
     */
-  def getData(bundle: IMimeBundle): JSONObject = js.native
+  def getData(bundle: IMimeBundle): PartialJSONObject = js.native
 }
 

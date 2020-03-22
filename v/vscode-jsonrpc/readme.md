@@ -1,7 +1,7 @@
 
 # Scala.js typings for vscode-jsonrpc
 
-Typings are for version 4.0.0
+Typings are for version 5.0.1
 
 ## Library description:
 A json rpc implementation over streams

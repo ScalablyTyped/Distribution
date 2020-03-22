@@ -1,26 +1,27 @@
 package typings.storybookComponents.tabsMod
 
 import typings.react.mod.ReactNode
-import typings.storybookComponents.AnonId
+import typings.storybookComponents.AnonOnSelect
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TabsProps extends js.Object {
-  var absolute: js.UndefOr[Boolean] = js.undefined
-  var actions: js.UndefOr[AnonId] = js.undefined
-  var backgroundColor: js.UndefOr[String] = js.undefined
-  var bordered: js.UndefOr[Boolean] = js.undefined
-  var id: js.UndefOr[String] = js.undefined
-  var selected: js.UndefOr[String] = js.undefined
-  var tools: js.UndefOr[ReactNode] = js.undefined
+  var absolute: js.UndefOr[Boolean] = js.native
+  var actions: js.UndefOr[AnonOnSelect] = js.native
+  var backgroundColor: js.UndefOr[String] = js.native
+  var bordered: js.UndefOr[Boolean] = js.native
+  var id: js.UndefOr[String] = js.native
+  var selected: js.UndefOr[String] = js.native
+  var tools: js.UndefOr[ReactNode] = js.native
 }
 
 object TabsProps {
   @scala.inline
   def apply(
     absolute: js.UndefOr[Boolean] = js.undefined,
-    actions: AnonId = null,
+    actions: AnonOnSelect = null,
     backgroundColor: String = null,
     bordered: js.UndefOr[Boolean] = js.undefined,
     id: String = null,

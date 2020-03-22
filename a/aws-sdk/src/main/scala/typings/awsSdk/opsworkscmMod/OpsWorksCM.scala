@@ -1,6 +1,6 @@
 package typings.awsSdk.opsworkscmMod
 
-import typings.awsSdk.AnonWaiter
+import typings.awsSdk.DescribeNodeAssociationSt
 import typings.awsSdk.awsSdkStrings.nodeAssociated
 import typings.awsSdk.configMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
@@ -275,11 +275,11 @@ trait OpsWorksCM extends Service {
     * Waits for the nodeAssociated state by periodically calling the underlying OpsWorksCM.describeNodeAssociationStatusoperation every 15 seconds (at most 15 times). Wait until node is associated or disassociated.
     */
   @JSName("waitFor")
-  def waitFor_nodeAssociated(state: nodeAssociated, params: DescribeNodeAssociationStatusRequest with AnonWaiter): Request[DescribeNodeAssociationStatusResponse, AWSError] = js.native
+  def waitFor_nodeAssociated(state: nodeAssociated, params: DescribeNodeAssociationSt): Request[DescribeNodeAssociationStatusResponse, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_nodeAssociated(
     state: nodeAssociated,
-    params: DescribeNodeAssociationStatusRequest with AnonWaiter,
+    params: DescribeNodeAssociationSt,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeNodeAssociationStatusResponse, Unit]
   ): Request[DescribeNodeAssociationStatusResponse, AWSError] = js.native
 }

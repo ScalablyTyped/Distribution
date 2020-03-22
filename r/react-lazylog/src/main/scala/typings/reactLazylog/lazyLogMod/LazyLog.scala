@@ -1,7 +1,7 @@
 package typings.reactLazylog.lazyLogMod
 
 import typings.react.mod.Component
-import typings.std.Partial
+import typings.reactLazylog.PartialLazyLogProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,6 +15,6 @@ class LazyLog ()
 @JSImport("react-lazylog/build/LazyLog", "LazyLog")
 @js.native
 object LazyLog extends js.Object {
-  var defaultProps: Partial[LazyLogProps] = js.native
+  var defaultProps: PartialLazyLogProps = js.native
 }
 

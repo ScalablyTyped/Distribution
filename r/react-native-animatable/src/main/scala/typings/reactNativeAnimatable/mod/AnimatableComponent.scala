@@ -6,11 +6,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in keyof {[ k in react-native-animatable.react-native-animatable.Animation ]: (duration? : number): std.Promise<{  finished  :boolean}>} ]:? {[ k in react-native-animatable.react-native-animatable.Animation ]: (duration? : number): std.Promise<{  finished  :boolean}>}[P]} */ @js.native
+@js.native
 trait AnimatableComponent[P /* <: js.Object */, S /* <: js.Object */]
   extends ClassicComponentClass[AnimatableProperties[S] with P]
-     with NativeMethodsMixinStatic {
+     with NativeMethodsMixinStatic
+     with AnimatableAnimationMethods {
   def stopAnimation(): Unit = js.native
   def transition[T /* <: S */](fromValues: T, toValues: T): Unit = js.native
   def transition[T /* <: S */](fromValues: T, toValues: T, duration: Double): Unit = js.native

@@ -2,7 +2,7 @@ package typings.jupyterlabExtensionmanager.queryMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.jupyterlabExtensionmanager.AnonDeprecated
-import typings.jupyterlabExtensionmanager.AnonKey
+import typings.jupyterlabExtensionmanager.AnonDictkey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ trait IPackageMetadata extends js.Object {
   /**
     * A mapping of dist tags to the versions they point to.
     */
-  var `dist-tags`: AnonKey
+  var `dist-tags`: AnonDictkey
   /**
     * ISO string of the last time this package was modified.
     */
@@ -34,7 +34,7 @@ object IPackageMetadata {
   @scala.inline
   def apply(
     description: String,
-    `dist-tags`: AnonKey,
+    `dist-tags`: AnonDictkey,
     modified: String,
     name: String,
     versions: StringDictionary[AnonDeprecated]

@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation._
 
 object jsdomStrings {
   @js.native
+  sealed trait abort extends js.Object
+  
+  @js.native
   sealed trait dangerously extends js.Object
   
   @js.native
@@ -20,6 +23,8 @@ object jsdomStrings {
   @js.native
   sealed trait usable extends js.Object
   
+  @scala.inline
+  def abort: abort = "abort".asInstanceOf[abort]
   @scala.inline
   def dangerously: dangerously = "dangerously".asInstanceOf[dangerously]
   @scala.inline

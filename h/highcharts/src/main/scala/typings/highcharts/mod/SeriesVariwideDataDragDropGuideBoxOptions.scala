@@ -8,12 +8,12 @@ trait SeriesVariwideDataDragDropGuideBoxOptions extends js.Object {
   /**
     * (Highcharts) Style options for the guide box default state.
     */
-  var default: js.UndefOr[SeriesVariwideDataDragDropGuideBoxDefaultOptions] = js.undefined
+  var default: js.UndefOr[DragDropGuideBoxOptionsObject] = js.undefined
 }
 
 object SeriesVariwideDataDragDropGuideBoxOptions {
   @scala.inline
-  def apply(default: SeriesVariwideDataDragDropGuideBoxDefaultOptions = null): SeriesVariwideDataDragDropGuideBoxOptions = {
+  def apply(default: DragDropGuideBoxOptionsObject = null): SeriesVariwideDataDragDropGuideBoxOptions = {
     val __obj = js.Dynamic.literal()
     if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesVariwideDataDragDropGuideBoxOptions]

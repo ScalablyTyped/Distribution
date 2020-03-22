@@ -4,7 +4,7 @@ import typings.frecency.AnonExactQueryMatchWeight
 import typings.frecency.AnonFrecencyScore
 import typings.frecency.AnonKeepScores
 import typings.frecency.AnonSearchQuery
-import typings.frecency.AnonSearchQuerySearchResults
+import typings.frecency.AnonSearchResults
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ class default[T] protected () extends Frecency[T] {
   def this(constructOpts: AnonExactQueryMatchWeight) = this()
   /* CompleteClass */
   override var sort: js.Function1[
-    (/* arg */ AnonKeepScores[T]) | (/* arg */ AnonSearchQuerySearchResults[T]), 
+    (/* arg */ AnonKeepScores[T]) | (/* arg */ AnonSearchResults[T]), 
     js.Array[(T with AnonFrecencyScore) | T]
   ] = js.native
   /* CompleteClass */

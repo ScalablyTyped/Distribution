@@ -1,6 +1,6 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.Instantiable2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,5 +12,10 @@ trait SpeechSynthesisErrorEvent extends SpeechSynthesisEvent {
 
 @JSGlobal("SpeechSynthesisErrorEvent")
 @js.native
-object SpeechSynthesisErrorEvent extends Instantiable0[SpeechSynthesisErrorEvent]
+object SpeechSynthesisErrorEvent
+  extends Instantiable2[
+      /* type */ java.lang.String, 
+      /* eventInitDict */ SpeechSynthesisErrorEventInit, 
+      SpeechSynthesisErrorEvent
+    ]
 

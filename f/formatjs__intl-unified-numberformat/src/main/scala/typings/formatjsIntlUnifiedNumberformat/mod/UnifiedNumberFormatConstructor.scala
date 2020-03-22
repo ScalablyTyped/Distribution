@@ -3,10 +3,9 @@ package typings.formatjsIntlUnifiedNumberformat.mod
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.formatjsIntlUnifiedNumberformat.formatjsIntlUnifiedNumberformatStrings.localeMatcher
+import typings.formatjsIntlUnifiedNumberformat.PickUnifiedNumberFormatOp
 import typings.formatjsIntlUtils.numberTypesMod.NumberLocaleInternalData
 import typings.formatjsIntlUtils.numberTypesMod.RawNumberLocaleData
-import typings.std.Pick
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -33,10 +32,8 @@ trait UnifiedNumberFormatConstructor
   def __addLocaleData(data: RawNumberLocaleData*): scala.Unit = js.native
   def getDefaultLocale(): String = js.native
   def supportedLocalesOf(locales: String): js.Array[String] = js.native
+  def supportedLocalesOf(locales: String, options: PickUnifiedNumberFormatOp): js.Array[String] = js.native
   def supportedLocalesOf(locales: js.Array[String]): js.Array[String] = js.native
-  @JSName("supportedLocalesOf")
-  def supportedLocalesOf_localeMatcher(locales: String, options: Pick[UnifiedNumberFormatOptions, localeMatcher]): js.Array[String] = js.native
-  @JSName("supportedLocalesOf")
-  def supportedLocalesOf_localeMatcher(locales: js.Array[String], options: Pick[UnifiedNumberFormatOptions, localeMatcher]): js.Array[String] = js.native
+  def supportedLocalesOf(locales: js.Array[String], options: PickUnifiedNumberFormatOp): js.Array[String] = js.native
 }
 

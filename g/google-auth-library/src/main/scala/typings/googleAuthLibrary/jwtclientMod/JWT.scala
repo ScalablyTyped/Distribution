@@ -3,6 +3,7 @@ package typings.googleAuthLibrary.jwtclientMod
 import typings.googleAuthLibrary.credentialsMod.CredentialBody
 import typings.googleAuthLibrary.credentialsMod.Credentials
 import typings.googleAuthLibrary.credentialsMod.JWTInput
+import typings.googleAuthLibrary.idtokenclientMod.IdTokenProvider
 import typings.googleAuthLibrary.oauth2clientMod.OAuth2Client
 import typings.gtoken.mod.GoogleToken
 import typings.node.streamMod.Readable
@@ -13,7 +14,9 @@ import scala.scalajs.js.annotation._
 
 @JSImport("google-auth-library/build/src/auth/jwtclient", "JWT")
 @js.native
-class JWT protected () extends OAuth2Client {
+class JWT protected ()
+  extends OAuth2Client
+     with IdTokenProvider {
   /**
     * JWT service account credentials.
     *
@@ -77,6 +80,8 @@ class JWT protected () extends OAuth2Client {
     * @return false if createScoped does not need to be called.
     */
   def createScopedRequired(): Boolean = js.native
+  /* CompleteClass */
+  override def fetchIdToken(targetAudience: String): js.Promise[String] = js.native
   /**
     * Creates a JWT credentials instance using an API Key for authentication.
     * @param apiKey The API Key in string form.

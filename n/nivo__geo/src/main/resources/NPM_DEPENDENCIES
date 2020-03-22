@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@nivo/geo" : "0.59.2"
+      "@nivo/geo" : "0.61.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@nivo/geo" : "0.59.2"
+      "@nivo/geo" : "0.61.1"
     }
   ],
   "compile-devDependencies" : [

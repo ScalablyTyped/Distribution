@@ -16,6 +16,6 @@ object compilerFactoryMod extends js.Object {
     options: AotCompilerOptions,
     errorCollector: js.Function2[/* error */ js.Any, /* type */ js.UndefOr[js.Any], Unit]
   ): AnonCompiler = js.native
-  def createAotUrlResolver(host: AnonContainingFileName): UrlResolver = js.native
+  def createAotUrlResolver(host: AnonResourceNameToFileName): UrlResolver = js.native
 }
 

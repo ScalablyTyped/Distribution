@@ -1,7 +1,7 @@
 package typings.bnJs.mod
 
 import typings.bnJs.AnonA
-import typings.bnJs.TypeofClassBuffer
+import typings.bnJs.TypeofBuffer
 import typings.bnJs.bnJsNumbers.`-1`
 import typings.bnJs.bnJsNumbers.`0`
 import typings.bnJs.bnJsNumbers.`1`
@@ -302,9 +302,9 @@ trait BN extends js.Object {
   /**
     * @description convert to an instance of `type`, which must behave like an Array
     */
-  def toArrayLike(ArrayType: TypeofClassBuffer): Buffer = js.native
-  def toArrayLike(ArrayType: TypeofClassBuffer, endian: Endianness): Buffer = js.native
-  def toArrayLike(ArrayType: TypeofClassBuffer, endian: Endianness, length: Double): Buffer = js.native
+  def toArrayLike(ArrayType: TypeofBuffer): Buffer = js.native
+  def toArrayLike(ArrayType: TypeofBuffer, endian: Endianness): Buffer = js.native
+  def toArrayLike(ArrayType: TypeofBuffer, endian: Endianness, length: Double): Buffer = js.native
   /**
     * @description  convert to Node.js Buffer (if available). For compatibility with browserify and similar tools, use this instead: a.toArrayLike(Buffer, endian, length)
     */

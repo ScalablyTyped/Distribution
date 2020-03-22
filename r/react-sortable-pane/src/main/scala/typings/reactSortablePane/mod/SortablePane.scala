@@ -1,6 +1,5 @@
 package typings.reactSortablePane.mod
 
-import typings.reResizable.mod.ResizableDirection
 import typings.react.mod.Component
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
@@ -75,19 +74,27 @@ class SortablePane protected ()
   def handleMouseUp(e: typings.std.MouseEvent): Unit = js.native
   def handleMouseUp(e: typings.std.TouchEvent): Unit = js.native
   def handleMove(hasPageXPageY: AnonPageX): Unit = js.native
-  def handleResizeStart(i: Double, e: MouseEvent[HTMLElement, NativeMouseEvent], dir: ResizableDirection): Unit = js.native
-  def handleResizeStart(i: Double, e: TouchEvent[HTMLElement], dir: ResizableDirection): Unit = js.native
+  def handleResizeStart(
+    i: Double,
+    e: MouseEvent[HTMLElement, NativeMouseEvent],
+    dir: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ResizableDirection */ js.Any
+  ): Unit = js.native
+  def handleResizeStart(
+    i: Double,
+    e: TouchEvent[HTMLElement],
+    dir: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ResizableDirection */ js.Any
+  ): Unit = js.native
   def handleResizeStop(
     i: Double,
     e: typings.std.MouseEvent,
-    dir: ResizableDirection,
+    dir: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ResizableDirection */ js.Any,
     elementRef: HTMLElement,
     delta: PaneSize
   ): Unit = js.native
   def handleResizeStop(
     i: Double,
     e: typings.std.TouchEvent,
-    dir: ResizableDirection,
+    dir: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ResizableDirection */ js.Any,
     elementRef: HTMLElement,
     delta: PaneSize
   ): Unit = js.native
@@ -97,14 +104,14 @@ class SortablePane protected ()
   def onResize(
     i: Double,
     e: typings.std.MouseEvent,
-    dir: ResizableDirection,
+    dir: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ResizableDirection */ js.Any,
     elementRef: HTMLElement,
     delta: PaneSize
   ): Unit = js.native
   def onResize(
     i: Double,
     e: typings.std.TouchEvent,
-    dir: ResizableDirection,
+    dir: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ResizableDirection */ js.Any,
     elementRef: HTMLElement,
     delta: PaneSize
   ): Unit = js.native

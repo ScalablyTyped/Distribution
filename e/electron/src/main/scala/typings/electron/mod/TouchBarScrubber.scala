@@ -10,6 +10,9 @@ import scala.scalajs.js.annotation._
 class TouchBarScrubber protected ()
   extends typings.electron.Electron.TouchBarScrubber {
   // Docs: http://electronjs.org/docs/api/touch-bar-scrubber
+  /**
+    * TouchBarScrubber
+    */
   def this(options: TouchBarScrubberConstructorOptions) = this()
 }
 

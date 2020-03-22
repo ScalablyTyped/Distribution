@@ -25,7 +25,7 @@ trait RequestSpotLaunchSpecification extends js.Object {
   /**
     * The ID of the AMI.
     */
-  var ImageId: js.UndefOr[String] = js.native
+  var ImageId: js.UndefOr[typings.awsSdk.ec2Mod.ImageId] = js.native
   /**
     * The instance type.
     */
@@ -33,11 +33,11 @@ trait RequestSpotLaunchSpecification extends js.Object {
   /**
     * The ID of the kernel.
     */
-  var KernelId: js.UndefOr[String] = js.native
+  var KernelId: js.UndefOr[typings.awsSdk.ec2Mod.KernelId] = js.native
   /**
     * The name of the key pair.
     */
-  var KeyName: js.UndefOr[String] = js.native
+  var KeyName: js.UndefOr[KeyPairName] = js.native
   /**
     * Indicates whether basic or detailed monitoring is enabled for the instance. Default: Disabled
     */
@@ -53,19 +53,19 @@ trait RequestSpotLaunchSpecification extends js.Object {
   /**
     * The ID of the RAM disk.
     */
-  var RamdiskId: js.UndefOr[String] = js.native
+  var RamdiskId: js.UndefOr[typings.awsSdk.ec2Mod.RamdiskId] = js.native
   /**
     * One or more security group IDs.
     */
-  var SecurityGroupIds: js.UndefOr[ValueStringList] = js.native
+  var SecurityGroupIds: js.UndefOr[RequestSpotLaunchSpecificationSecurityGroupIdList] = js.native
   /**
     * One or more security groups. When requesting instances in a VPC, you must specify the IDs of the security groups. When requesting instances in EC2-Classic, you can specify the names or the IDs of the security groups.
     */
-  var SecurityGroups: js.UndefOr[ValueStringList] = js.native
+  var SecurityGroups: js.UndefOr[RequestSpotLaunchSpecificationSecurityGroupList] = js.native
   /**
     * The IDs of the subnets in which to launch the instance. To specify multiple subnets, separate them using commas; for example, "subnet-1234abcdeexample1, subnet-0987cdef6example2".
     */
-  var SubnetId: js.UndefOr[String] = js.native
+  var SubnetId: js.UndefOr[typings.awsSdk.ec2Mod.SubnetId] = js.native
   /**
     * The Base64-encoded user data for the instance. User data is limited to 16 KB.
     */
@@ -79,17 +79,17 @@ object RequestSpotLaunchSpecification {
     BlockDeviceMappings: BlockDeviceMappingList = null,
     EbsOptimized: js.UndefOr[scala.Boolean] = js.undefined,
     IamInstanceProfile: IamInstanceProfileSpecification = null,
-    ImageId: String = null,
+    ImageId: ImageId = null,
     InstanceType: InstanceType = null,
-    KernelId: String = null,
-    KeyName: String = null,
+    KernelId: KernelId = null,
+    KeyName: KeyPairName = null,
     Monitoring: RunInstancesMonitoringEnabled = null,
     NetworkInterfaces: InstanceNetworkInterfaceSpecificationList = null,
     Placement: SpotPlacement = null,
-    RamdiskId: String = null,
-    SecurityGroupIds: ValueStringList = null,
-    SecurityGroups: ValueStringList = null,
-    SubnetId: String = null,
+    RamdiskId: RamdiskId = null,
+    SecurityGroupIds: RequestSpotLaunchSpecificationSecurityGroupIdList = null,
+    SecurityGroups: RequestSpotLaunchSpecificationSecurityGroupList = null,
+    SubnetId: SubnetId = null,
     UserData: String = null
   ): RequestSpotLaunchSpecification = {
     val __obj = js.Dynamic.literal()

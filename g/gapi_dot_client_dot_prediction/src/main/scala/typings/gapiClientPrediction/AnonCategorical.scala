@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation._
 
 trait AnonCategorical extends js.Object {
   /** Description of the categorical values of this feature. */
-  var categorical: js.UndefOr[AnonCountValues] = js.undefined
+  var categorical: js.UndefOr[AnonValues] = js.undefined
   /** The feature index. */
   var index: js.UndefOr[String] = js.undefined
   /** Description of the numeric values of this feature. */
-  var numeric: js.UndefOr[AnonCountMean] = js.undefined
+  var numeric: js.UndefOr[AnonMean] = js.undefined
   /** Description of multiple-word text values of this feature. */
   var text: js.UndefOr[AnonCountString] = js.undefined
 }
@@ -18,9 +18,9 @@ trait AnonCategorical extends js.Object {
 object AnonCategorical {
   @scala.inline
   def apply(
-    categorical: AnonCountValues = null,
+    categorical: AnonValues = null,
     index: String = null,
-    numeric: AnonCountMean = null,
+    numeric: AnonMean = null,
     text: AnonCountString = null
   ): AnonCategorical = {
     val __obj = js.Dynamic.literal()

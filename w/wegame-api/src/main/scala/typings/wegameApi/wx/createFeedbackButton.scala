@@ -1,6 +1,6 @@
 package typings.wegameApi.wx
 
-import typings.wegameApi.AnonImage
+import typings.wegameApi.AnonText
 import typings.wegameApi.FeedbackButton
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,6 +13,6 @@ object createFeedbackButton extends js.Object {
   /**
     * 用户点击后打开意见反馈页面的按钮
     */
-  def apply(param: AnonImage): FeedbackButton = js.native
+  def apply(param: AnonText): FeedbackButton = js.native
 }
 

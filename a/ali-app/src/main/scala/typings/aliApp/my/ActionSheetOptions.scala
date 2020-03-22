@@ -1,7 +1,7 @@
 package typings.aliApp.my
 
 import typings.aliApp.AnonIndex
-import typings.std.Partial
+import typings.aliApp.PartialBadge
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ trait ActionSheetOptions
   /**
   		 * 需飘红选项的数组，数组内部对象字段见下表
   		 */
-  var badges: js.UndefOr[js.Array[Partial[Badge]]] = js.undefined
+  var badges: js.UndefOr[js.Array[PartialBadge]] = js.undefined
   /**
   		 * 取消按钮文案。默认为‘取消’。注：Android平台此字段无效，不会显示取消按钮。
   		 */
@@ -37,7 +37,7 @@ object ActionSheetOptions {
   @scala.inline
   def apply(
     items: js.Array[String],
-    badges: js.Array[Partial[Badge]] = null,
+    badges: js.Array[PartialBadge] = null,
     cancelButtonText: String = null,
     complete: /* res */ js.Any => Unit = null,
     destructiveBtnIndex: Int | Double = null,

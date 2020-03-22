@@ -1,5 +1,6 @@
 package typings.echarts
 
+import typings.echarts.echarts.EChartOption.Color
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,33 +17,33 @@ trait AnonColorCurveness extends js.Object {
     * Gradient color and texture are also supported besides
     * single colors.
     * >
-    * > [see doc](https://echarts.apache.org/en/option.html#series-scatter.scatter.markLine.lineStyle)
+    * > [see doc](https://echarts.apache.org/en/option.html#series-line.line.markLine.lineStyle)
     *
     *
     * @default
     * "#000"
-    * @see https://echarts.apache.org/en/option.html#series-scatter.markLine.lineStyle.color
+    * @see https://echarts.apache.org/en/option.html#series-line.markLine.lineStyle.color
     */
-  var color: js.UndefOr[String] = js.undefined
+  var color: js.UndefOr[Color] = js.undefined
   /**
     * Edge curvature, which supports value from 0 to 1.
     * The larger the value, the greater the curvature.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-scatter.markLine.lineStyle.curveness
+    * @see https://echarts.apache.org/en/option.html#series-line.markLine.lineStyle.curveness
     */
   var curveness: js.UndefOr[Double] = js.undefined
   /**
-    * @see https://echarts.apache.org/en/option.html#series-scatter.markLine.lineStyle.emphasis
+    * @see https://echarts.apache.org/en/option.html#series-line.markLine.lineStyle.emphasis
     */
-  var emphasis: js.UndefOr[AnonColorOpacityShadowBlur] = js.undefined
+  var emphasis: js.UndefOr[AnonShadowBlur] = js.undefined
   /**
     * Opacity of the component.
     * Supports value from 0 to 1, and the component will not
     * be drawn when set to 0.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-scatter.markLine.lineStyle.opacity
+    * @see https://echarts.apache.org/en/option.html#series-line.markLine.lineStyle.opacity
     */
   var opacity: js.UndefOr[Double] = js.undefined
   /**
@@ -52,31 +53,31 @@ trait AnonColorCurveness extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://echarts.apache.org/en/option.html#series-scatter.scatter.markLine.lineStyle)
+    * [see doc](https://echarts.apache.org/en/option.html#series-line.line.markLine.lineStyle)
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-scatter.markLine.lineStyle.shadowBlur
+    * @see https://echarts.apache.org/en/option.html#series-line.markLine.lineStyle.shadowBlur
     */
   var shadowBlur: js.UndefOr[Double] = js.undefined
   /**
     * Shadow color. Support same format as `color`.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-scatter.markLine.lineStyle.shadowColor
+    * @see https://echarts.apache.org/en/option.html#series-line.markLine.lineStyle.shadowColor
     */
   var shadowColor: js.UndefOr[String] = js.undefined
   /**
     * Offset distance on the horizontal direction of shadow.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-scatter.markLine.lineStyle.shadowOffsetX
+    * @see https://echarts.apache.org/en/option.html#series-line.markLine.lineStyle.shadowOffsetX
     */
   var shadowOffsetX: js.UndefOr[Double] = js.undefined
   /**
     * Offset distance on the vertical direction of shadow.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-scatter.markLine.lineStyle.shadowOffsetY
+    * @see https://echarts.apache.org/en/option.html#series-line.markLine.lineStyle.shadowOffsetY
     */
   var shadowOffsetY: js.UndefOr[Double] = js.undefined
   /**
@@ -91,14 +92,14 @@ trait AnonColorCurveness extends js.Object {
     *
     * @default
     * "solid"
-    * @see https://echarts.apache.org/en/option.html#series-scatter.markLine.lineStyle.type
+    * @see https://echarts.apache.org/en/option.html#series-line.markLine.lineStyle.type
     */
   var `type`: js.UndefOr[String] = js.undefined
   /**
     * line width.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-scatter.markLine.lineStyle.width
+    * @see https://echarts.apache.org/en/option.html#series-line.markLine.lineStyle.width
     */
   var width: js.UndefOr[Double] = js.undefined
 }
@@ -106,9 +107,9 @@ trait AnonColorCurveness extends js.Object {
 object AnonColorCurveness {
   @scala.inline
   def apply(
-    color: String = null,
+    color: Color = null,
     curveness: Int | Double = null,
-    emphasis: AnonColorOpacityShadowBlur = null,
+    emphasis: AnonShadowBlur = null,
     opacity: Int | Double = null,
     shadowBlur: Int | Double = null,
     shadowColor: String = null,

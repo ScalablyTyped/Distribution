@@ -5,12 +5,12 @@ import typings.jupyterlabDocregistry.mod.ABCWidgetFactory
 import typings.jupyterlabDocregistry.registryMod.DocumentRegistry.Context
 import typings.jupyterlabDocregistry.registryMod.DocumentRegistry.IModel
 import typings.jupyterlabDocregistry.registryMod.IDocumentWidget
-import typings.phosphorAlgorithm.iterMod.IIterator
-import typings.phosphorMessaging.mod.Message
-import typings.phosphorWidgets.mod.Widget
-import typings.phosphorWidgets.widgetMod.Widget.ChildMessage
-import typings.phosphorWidgets.widgetMod.Widget.Flag
-import typings.phosphorWidgets.widgetMod.Widget.ResizeMessage
+import typings.luminoAlgorithm.iterMod.IIterator
+import typings.luminoMessaging.mod.Message
+import typings.luminoWidgets.mod.Widget
+import typings.luminoWidgets.widgetMod.Widget.ChildMessage
+import typings.luminoWidgets.widgetMod.Widget.Flag
+import typings.luminoWidgets.widgetMod.Widget.ResizeMessage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,21 +46,9 @@ object widgetMod extends js.Object {
       */
     var _updateStyle: js.Any = js.native
     /**
-      * The color inversion of the image.
-      */
-    var colorinversion: Double = js.native
-    /**
       * The image widget's context.
       */
     val context: Context = js.native
-    /**
-      * A promise that resolves when the image viewer is ready.
-      */
-    val ready: js.Promise[Unit] = js.native
-    /**
-      * The scale factor for the image.
-      */
-    var scale: Double = js.native
     /**
       * Post an `'activate-request'` message to the widget.
       *
@@ -92,7 +80,7 @@ object widgetMod extends js.Object {
       * If a layout is not installed, the returned iterator will be empty.
       */
     /* InferMemberOverrides */
-    override def children(): IIterator[typings.phosphorWidgets.widgetMod.Widget] = js.native
+    override def children(): IIterator[typings.luminoWidgets.widgetMod.Widget] = js.native
     /**
       * Clear the given widget flag.
       *
@@ -110,6 +98,11 @@ object widgetMod extends js.Object {
     /* InferMemberOverrides */
     override def close(): Unit = js.native
     /**
+      * The color inversion of the image.
+      */
+    def colorinversion(): Double = js.native
+    def colorinversion(value: Double): js.Any = js.native
+    /**
       * Test whether a widget is a descendant of this widget.
       *
       * @param widget - The descendant widget of interest.
@@ -117,7 +110,7 @@ object widgetMod extends js.Object {
       * @returns `true` if the widget is a descendant, `false` otherwise.
       */
     /* InferMemberOverrides */
-    override def contains(widget: typings.phosphorWidgets.widgetMod.Widget): Boolean = js.native
+    override def contains(widget: typings.luminoWidgets.widgetMod.Widget): Boolean = js.native
     /**
       * Dispose of the resources held by the object.
       *
@@ -129,6 +122,7 @@ object widgetMod extends js.Object {
       * It is undefined behavior to use any functionality of the object
       * after it has been disposed unless otherwise explicitly noted.
       */
+    /* CompleteClass */
     /* InferMemberOverrides */
     override def dispose(): Unit = js.native
     /**
@@ -303,8 +297,13 @@ object widgetMod extends js.Object {
       *
       * @param msg - The message to be processed.
       */
+    /* CompleteClass */
     /* InferMemberOverrides */
     override def processMessage(msg: Message): Unit = js.native
+    /**
+      * A promise that resolves when the image viewer is ready.
+      */
+    def ready(): js.Promise[Unit] = js.native
     /**
       * Remove a class name from the widget's DOM node.
       *
@@ -329,6 +328,11 @@ object widgetMod extends js.Object {
       * Rotate the image counter-clockwise (left).
       */
     def rotateCounterclockwise(): Unit = js.native
+    /**
+      * The scale factor for the image.
+      */
+    def scale(): Double = js.native
+    def scale(value: Double): js.Any = js.native
     /**
       * Set the given widget flag.
       *

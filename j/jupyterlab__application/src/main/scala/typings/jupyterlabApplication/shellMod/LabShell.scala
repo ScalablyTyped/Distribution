@@ -5,10 +5,10 @@ import typings.jupyterlabApplication.shellMod.ILabShell.Area
 import typings.jupyterlabApplication.shellMod.ILabShell.IChangedArgs
 import typings.jupyterlabApplication.shellMod.ILabShell.ILayout
 import typings.jupyterlabDocregistry.registryMod.DocumentRegistry.IOpenOptions
-import typings.phosphorAlgorithm.iterMod.IIterator
-import typings.phosphorSignaling.mod.ISignal
-import typings.phosphorWidgets.dockpanelMod.DockPanel.Mode
-import typings.phosphorWidgets.mod.Widget
+import typings.luminoAlgorithm.iterMod.IIterator
+import typings.luminoSignaling.mod.ISignal
+import typings.luminoWidgets.dockpanelMod.DockPanel.Mode
+import typings.luminoWidgets.mod.Widget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -98,57 +98,20 @@ class LabShell () extends IShell {
   var _restored: js.Any = js.native
   var _rightHandler: js.Any = js.native
   var _sideOptionsCache: js.Any = js.native
-  var _topPanel: js.Any = js.native
+  var _topHandler: js.Any = js.native
   var _tracker: js.Any = js.native
+  def activateNextTab(): Unit = js.native
+  def activateNextTabBar(): Unit = js.native
+  def activatePreviousTab(): Unit = js.native
+  def activatePreviousTabBar(): Unit = js.native
   /**
     * A signal emitted when main area's active focus changes.
     */
-  val activeChanged: ISignal[this.type, IChangedArgs] = js.native
+  def activeChanged(): ISignal[this.type, IChangedArgs] = js.native
   /**
     * The active widget in the shell's main area.
     */
-  val activeWidget: Widget | Null = js.native
-  /**
-    * A signal emitted when main area's current focus changes.
-    */
-  val currentChanged: ISignal[this.type, IChangedArgs] = js.native
-  /**
-    * The current widget in the shell's main area.
-    */
-  @JSName("currentWidget")
-  val currentWidget_LabShell: Widget | Null = js.native
-  /**
-    * A signal emitted when the main area's layout is modified.
-    */
-  val layoutModified: ISignal[this.type, Unit] = js.native
-  /**
-    * Whether the left area is collapsed.
-    */
-  val leftCollapsed: Boolean = js.native
-  /**
-    * The main dock area's user interface mode.
-    */
-  var mode: Mode = js.native
-  /**
-    * Whether JupyterLab is in presentation mode with the
-    * `jp-mod-presentationMode` CSS class.
-    */
-  /**
-    * Enable/disable presentation mode (`jp-mod-presentationMode` CSS class) with
-    * a boolean.
-    */
-  var presentationMode: Boolean = js.native
-  /**
-    * Promise that resolves when state is first restored, returning layout
-    * description.
-    */
-  val restored: js.Promise[ILayout] = js.native
-  /**
-    * Whether the left area is collapsed.
-    */
-  val rightCollapsed: Boolean = js.native
-  def activateNextTab(): Unit = js.native
-  def activatePreviousTab(): Unit = js.native
+  def activeWidget(): Widget | Null = js.native
   def add(widget: Widget, area: Area): Unit = js.native
   def add(widget: Widget, area: Area, options: IOpenOptions): Unit = js.native
   /**
@@ -163,6 +126,15 @@ class LabShell () extends IShell {
     * Collapse the right area.
     */
   def collapseRight(): Unit = js.native
+  /**
+    * A signal emitted when main area's current focus changes.
+    */
+  def currentChanged(): ISignal[this.type, IChangedArgs] = js.native
+  /**
+    * The current widget in the shell's main area.
+    */
+  @JSName("currentWidget")
+  def currentWidget_MLabShell(): Widget | Null = js.native
   /**
     * Expand the left area.
     *
@@ -184,9 +156,41 @@ class LabShell () extends IShell {
     */
   def isEmpty(area: Area): Boolean = js.native
   /**
+    * A signal emitted when the main area's layout is modified.
+    */
+  def layoutModified(): ISignal[this.type, Unit] = js.native
+  /**
+    * Whether the left area is collapsed.
+    */
+  def leftCollapsed(): Boolean = js.native
+  /**
+    * The main dock area's user interface mode.
+    */
+  def mode(): Mode = js.native
+  def mode(mode: Mode): js.Any = js.native
+  /**
+    * Whether JupyterLab is in presentation mode with the
+    * `jp-mod-presentationMode` CSS class.
+    */
+  def presentationMode(): Boolean = js.native
+  /**
+    * Enable/disable presentation mode (`jp-mod-presentationMode` CSS class) with
+    * a boolean.
+    */
+  def presentationMode(value: Boolean): js.Any = js.native
+  /**
     * Restore the layout state for the application shell.
     */
   def restoreLayout(layout: ILayout): Unit = js.native
+  /**
+    * Promise that resolves when state is first restored, returning layout
+    * description.
+    */
+  def restored(): js.Promise[ILayout] = js.native
+  /**
+    * Whether the left area is collapsed.
+    */
+  def rightCollapsed(): Boolean = js.native
   /**
     * Save the dehydrated state of the application shell.
     */

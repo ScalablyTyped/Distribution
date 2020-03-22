@@ -4,6 +4,10 @@ import typings.std.ArrayBuffer
 import typings.std.ArrayBufferView
 import typings.std.ArrayLike
 import typings.std.Iterable
+import typings.three.constantsMod.Usage
+import typings.three.matrix3Mod.Matrix3
+import typings.three.matrix4Mod.Matrix4
+import typings.three.threeBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,42 +21,45 @@ object bufferAttributeMod extends js.Object {
     def this(array: ArrayLike[Double], itemSize: Double, normalized: Boolean) = this()
     var array: ArrayLike[Double] = js.native
     var count: Double = js.native
-    var dynamic: Boolean = js.native
+    val isBufferAttribute: `true` = js.native
     var itemSize: Double = js.native
-    /**
-    	 * @deprecated Use {@link BufferAttribute#count .count} instead.
-    	 */
-    var length: Double = js.native
      // array parameter should be TypedArray.
     var name: String = js.native
-    var needsUpdate: Boolean = js.native
     var normalized: Boolean = js.native
-    var onUpload: js.Function = js.native
     var updateRange: AnonCount = js.native
+    var usage: Usage = js.native
     var version: Double = js.native
+    def applyMatrix3(m: Matrix3): this.type = js.native
+    def applyMatrix4(m: Matrix4): this.type = js.native
+    def applyNormalMatrix(m: Matrix3): this.type = js.native
     def copy(source: BufferAttribute): this.type = js.native
-    def copyArray(array: ArrayLike[Double]): BufferAttribute = js.native
-    def copyAt(index1: Double, attribute: BufferAttribute, index2: Double): BufferAttribute = js.native
-    def copyColorsArray(colors: js.Array[AnonB]): BufferAttribute = js.native
-    def copyVector2sArray(vectors: js.Array[AnonX]): BufferAttribute = js.native
-    def copyVector3sArray(vectors: js.Array[AnonXY]): BufferAttribute = js.native
-    def copyVector4sArray(vectors: js.Array[AnonW]): BufferAttribute = js.native
+    def copyArray(array: ArrayLike[Double]): this.type = js.native
+    def copyAt(index1: Double, attribute: BufferAttribute, index2: Double): this.type = js.native
+    def copyColorsArray(colors: js.Array[AnonB]): this.type = js.native
+    def copyVector2sArray(vectors: js.Array[AnonX]): this.type = js.native
+    def copyVector3sArray(vectors: js.Array[AnonY]): this.type = js.native
+    def copyVector4sArray(vectors: js.Array[AnonW]): this.type = js.native
     def getW(index: Double): Double = js.native
     def getX(index: Double): Double = js.native
     def getY(index: Double): Double = js.native
     def getZ(index: Double): Double = js.native
-    def set(value: ArrayBufferView): BufferAttribute = js.native
-    def set(value: ArrayBufferView, offset: Double): BufferAttribute = js.native
-    def set(value: ArrayLike[Double]): BufferAttribute = js.native
-    def set(value: ArrayLike[Double], offset: Double): BufferAttribute = js.native
-    def setDynamic(dynamic: Boolean): BufferAttribute = js.native
-    def setW(index: Double, z: Double): BufferAttribute = js.native
-    def setX(index: Double, x: Double): BufferAttribute = js.native
-    def setXY(index: Double, x: Double, y: Double): BufferAttribute = js.native
-    def setXYZ(index: Double, x: Double, y: Double, z: Double): BufferAttribute = js.native
-    def setXYZW(index: Double, x: Double, y: Double, z: Double, w: Double): BufferAttribute = js.native
-    def setY(index: Double, y: Double): BufferAttribute = js.native
-    def setZ(index: Double, z: Double): BufferAttribute = js.native
+    def needsUpdate(value: Boolean): js.Any = js.native
+    def onUpload(callback: js.Function0[Unit]): this.type = js.native
+    def onUploadCallback(): Unit = js.native
+    def set(value: ArrayBufferView): this.type = js.native
+    def set(value: ArrayBufferView, offset: Double): this.type = js.native
+    def set(value: ArrayLike[Double]): this.type = js.native
+    def set(value: ArrayLike[Double], offset: Double): this.type = js.native
+    def setUsage(usage: Usage): this.type = js.native
+    def setW(index: Double, z: Double): this.type = js.native
+    def setX(index: Double, x: Double): this.type = js.native
+    def setXY(index: Double, x: Double, y: Double): this.type = js.native
+    def setXYZ(index: Double, x: Double, y: Double, z: Double): this.type = js.native
+    def setXYZW(index: Double, x: Double, y: Double, z: Double, w: Double): this.type = js.native
+    def setY(index: Double, y: Double): this.type = js.native
+    def setZ(index: Double, z: Double): this.type = js.native
+    def toJSON(): AnonArray = js.native
+    def transformDirection(m: Matrix4): this.type = js.native
   }
   
   @js.native
@@ -62,9 +69,11 @@ object bufferAttributeMod extends js.Object {
   
   @js.native
   class Float32BufferAttribute protected () extends BufferAttribute {
+    def this(array: Double, itemSize: Double) = this()
     def this(array: ArrayBuffer, itemSize: Double) = this()
     def this(array: ArrayLike[Double], itemSize: Double) = this()
     def this(array: Iterable[Double], itemSize: Double) = this()
+    def this(array: Double, itemSize: Double, normalized: Boolean) = this()
     def this(array: ArrayBuffer, itemSize: Double, normalized: Boolean) = this()
     def this(array: ArrayLike[Double], itemSize: Double, normalized: Boolean) = this()
     def this(array: Iterable[Double], itemSize: Double, normalized: Boolean) = this()
@@ -77,9 +86,11 @@ object bufferAttributeMod extends js.Object {
   
   @js.native
   class Float64BufferAttribute protected () extends BufferAttribute {
+    def this(array: Double, itemSize: Double) = this()
     def this(array: ArrayBuffer, itemSize: Double) = this()
     def this(array: ArrayLike[Double], itemSize: Double) = this()
     def this(array: Iterable[Double], itemSize: Double) = this()
+    def this(array: Double, itemSize: Double, normalized: Boolean) = this()
     def this(array: ArrayBuffer, itemSize: Double, normalized: Boolean) = this()
     def this(array: ArrayLike[Double], itemSize: Double, normalized: Boolean) = this()
     def this(array: Iterable[Double], itemSize: Double, normalized: Boolean) = this()
@@ -92,9 +103,11 @@ object bufferAttributeMod extends js.Object {
   
   @js.native
   class Int16BufferAttribute protected () extends BufferAttribute {
+    def this(array: Double, itemSize: Double) = this()
     def this(array: ArrayBuffer, itemSize: Double) = this()
     def this(array: ArrayLike[Double], itemSize: Double) = this()
     def this(array: Iterable[Double], itemSize: Double) = this()
+    def this(array: Double, itemSize: Double, normalized: Boolean) = this()
     def this(array: ArrayBuffer, itemSize: Double, normalized: Boolean) = this()
     def this(array: ArrayLike[Double], itemSize: Double, normalized: Boolean) = this()
     def this(array: Iterable[Double], itemSize: Double, normalized: Boolean) = this()
@@ -107,9 +120,11 @@ object bufferAttributeMod extends js.Object {
   
   @js.native
   class Int32BufferAttribute protected () extends BufferAttribute {
+    def this(array: Double, itemSize: Double) = this()
     def this(array: ArrayBuffer, itemSize: Double) = this()
     def this(array: ArrayLike[Double], itemSize: Double) = this()
     def this(array: Iterable[Double], itemSize: Double) = this()
+    def this(array: Double, itemSize: Double, normalized: Boolean) = this()
     def this(array: ArrayBuffer, itemSize: Double, normalized: Boolean) = this()
     def this(array: ArrayLike[Double], itemSize: Double, normalized: Boolean) = this()
     def this(array: Iterable[Double], itemSize: Double, normalized: Boolean) = this()
@@ -122,9 +137,11 @@ object bufferAttributeMod extends js.Object {
   
   @js.native
   class Int8BufferAttribute protected () extends BufferAttribute {
+    def this(array: Double, itemSize: Double) = this()
     def this(array: ArrayBuffer, itemSize: Double) = this()
     def this(array: ArrayLike[Double], itemSize: Double) = this()
     def this(array: Iterable[Double], itemSize: Double) = this()
+    def this(array: Double, itemSize: Double, normalized: Boolean) = this()
     def this(array: ArrayBuffer, itemSize: Double, normalized: Boolean) = this()
     def this(array: ArrayLike[Double], itemSize: Double, normalized: Boolean) = this()
     def this(array: Iterable[Double], itemSize: Double, normalized: Boolean) = this()
@@ -137,9 +154,11 @@ object bufferAttributeMod extends js.Object {
   
   @js.native
   class Uint16BufferAttribute protected () extends BufferAttribute {
+    def this(array: Double, itemSize: Double) = this()
     def this(array: ArrayBuffer, itemSize: Double) = this()
     def this(array: ArrayLike[Double], itemSize: Double) = this()
     def this(array: Iterable[Double], itemSize: Double) = this()
+    def this(array: Double, itemSize: Double, normalized: Boolean) = this()
     def this(array: ArrayBuffer, itemSize: Double, normalized: Boolean) = this()
     def this(array: ArrayLike[Double], itemSize: Double, normalized: Boolean) = this()
     def this(array: Iterable[Double], itemSize: Double, normalized: Boolean) = this()
@@ -152,9 +171,11 @@ object bufferAttributeMod extends js.Object {
   
   @js.native
   class Uint32BufferAttribute protected () extends BufferAttribute {
+    def this(array: Double, itemSize: Double) = this()
     def this(array: ArrayBuffer, itemSize: Double) = this()
     def this(array: ArrayLike[Double], itemSize: Double) = this()
     def this(array: Iterable[Double], itemSize: Double) = this()
+    def this(array: Double, itemSize: Double, normalized: Boolean) = this()
     def this(array: ArrayBuffer, itemSize: Double, normalized: Boolean) = this()
     def this(array: ArrayLike[Double], itemSize: Double, normalized: Boolean) = this()
     def this(array: Iterable[Double], itemSize: Double, normalized: Boolean) = this()
@@ -167,9 +188,11 @@ object bufferAttributeMod extends js.Object {
   
   @js.native
   class Uint8BufferAttribute protected () extends BufferAttribute {
+    def this(array: Double, itemSize: Double) = this()
     def this(array: ArrayBuffer, itemSize: Double) = this()
     def this(array: ArrayLike[Double], itemSize: Double) = this()
     def this(array: Iterable[Double], itemSize: Double) = this()
+    def this(array: Double, itemSize: Double, normalized: Boolean) = this()
     def this(array: ArrayBuffer, itemSize: Double, normalized: Boolean) = this()
     def this(array: ArrayLike[Double], itemSize: Double, normalized: Boolean) = this()
     def this(array: Iterable[Double], itemSize: Double, normalized: Boolean) = this()
@@ -182,9 +205,11 @@ object bufferAttributeMod extends js.Object {
   
   @js.native
   class Uint8ClampedBufferAttribute protected () extends BufferAttribute {
+    def this(array: Double, itemSize: Double) = this()
     def this(array: ArrayBuffer, itemSize: Double) = this()
     def this(array: ArrayLike[Double], itemSize: Double) = this()
     def this(array: Iterable[Double], itemSize: Double) = this()
+    def this(array: Double, itemSize: Double, normalized: Boolean) = this()
     def this(array: ArrayBuffer, itemSize: Double, normalized: Boolean) = this()
     def this(array: ArrayLike[Double], itemSize: Double, normalized: Boolean) = this()
     def this(array: Iterable[Double], itemSize: Double, normalized: Boolean) = this()

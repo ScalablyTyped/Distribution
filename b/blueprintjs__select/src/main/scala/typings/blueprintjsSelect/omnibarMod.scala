@@ -2,14 +2,12 @@ package typings.blueprintjsSelect
 
 import org.scalablytyped.runtime.Instantiable1
 import typings.blueprintjsCore.inputGroupMod.IInputGroupProps
-import typings.blueprintjsCore.overlayMod.IOverlayProps
 import typings.blueprintjsCore.propsMod.HTMLInputProps
 import typings.blueprintjsSelect.listItemsPropsMod.IListItemsProps
 import typings.react.mod.Component
 import typings.react.mod.SyntheticEvent
 import typings.std.Event_
 import typings.std.HTMLElement
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -42,7 +40,7 @@ object omnibarMod extends js.Object {
       */
     var onClose: js.UndefOr[js.Function1[/* event */ js.UndefOr[SyntheticEvent[HTMLElement, Event_]], Unit]] = js.native
     /** Props to spread to `Overlay`. */
-    var overlayProps: js.UndefOr[Partial[IOverlayProps]] = js.native
+    var overlayProps: js.UndefOr[PartialIOverlayProps] = js.native
   }
   
   @js.native

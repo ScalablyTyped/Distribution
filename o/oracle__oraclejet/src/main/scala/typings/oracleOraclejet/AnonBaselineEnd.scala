@@ -12,7 +12,7 @@ trait AnonBaselineEnd[K2, D2]
   var end: String
   var rowContext: AnonComponentElement[K2]
   var start: String
-  var taskContexts: js.Array[AnonColorData[K2, D2]]
+  var taskContexts: js.Array[AnonItemData[K2, D2]]
   var value: String
 }
 
@@ -24,7 +24,7 @@ object AnonBaselineEnd {
     end: String,
     rowContext: AnonComponentElement[K2],
     start: String,
-    taskContexts: js.Array[AnonColorData[K2, D2]],
+    taskContexts: js.Array[AnonItemData[K2, D2]],
     value: String,
     StringDictionary: /* propName */ StringDictionary[js.Any] = null
   ): AnonBaselineEnd[K2, D2] = {

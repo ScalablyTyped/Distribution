@@ -1,6 +1,6 @@
 package typings.forceGraph.mod.ForceGraph
 
-import typings.forceGraph.AnonX
+import typings.forceGraph.ForceGraphInstancexnumberBackgroundColor
 import typings.forceGraph.forceGraphStrings.center
 import typings.forceGraph.forceGraphStrings.charge
 import typings.forceGraph.forceGraphStrings.link
@@ -27,10 +27,10 @@ trait ForceGraphInstance extends js.Object {
   def _destructor(): Unit = js.native
   def backgroundColor(): ForceGraphInstance with String = js.native
   def backgroundColor(color: String): ForceGraphInstance with String = js.native
-  def centerAt(): ForceGraphInstance with AnonX = js.native
-  def centerAt(x: Double): ForceGraphInstance with AnonX = js.native
-  def centerAt(x: Double, y: Double): ForceGraphInstance with AnonX = js.native
-  def centerAt(x: Double, y: Double, milliseconds: Double): ForceGraphInstance with AnonX = js.native
+  def centerAt(): ForceGraphInstancexnumberBackgroundColor = js.native
+  def centerAt(x: Double): ForceGraphInstancexnumberBackgroundColor = js.native
+  def centerAt(x: Double, y: Double): ForceGraphInstancexnumberBackgroundColor = js.native
+  def centerAt(x: Double, y: Double, milliseconds: Double): ForceGraphInstancexnumberBackgroundColor = js.native
   def cooldownTicks(): ForceGraphInstance with Double = js.native
   def cooldownTicks(ticks: Double): ForceGraphInstance with Double = js.native
   def cooldownTime(): ForceGraphInstance with Double = js.native

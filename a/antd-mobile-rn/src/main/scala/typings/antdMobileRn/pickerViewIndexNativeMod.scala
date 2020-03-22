@@ -14,7 +14,7 @@ object pickerViewIndexNativeMod extends js.Object {
   /* static members */
   @js.native
   object default extends js.Object {
-    var defaultProps: AnonCascadeCols = js.native
+    var defaultProps: AnonCols = js.native
   }
   
 }

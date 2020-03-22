@@ -53,6 +53,7 @@ trait NgModule extends js.Object {
     * using one of the imperative techniques, such as `ViewContainerRef.createComponent()`.
     *
     * @see [Entry Components](guide/entry-components)
+    * @deprecated Since 9.0.0. With Ivy, this property is no longer necessary.
     */
   var entryComponents: js.UndefOr[js.Array[Type[_] | js.Array[_]]] = js.undefined
   /**

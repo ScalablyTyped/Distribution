@@ -11,17 +11,17 @@ object astPathMod extends js.Object {
   class AstPath[T] protected () extends js.Object {
     def this(path: js.Array[T]) = this()
     def this(path: js.Array[T], position: Double) = this()
-    val empty: Boolean = js.native
-    val head: js.UndefOr[T] = js.native
     var path: js.Any = js.native
     var position: Double = js.native
-    val tail: js.UndefOr[T] = js.native
     def childOf(node: T): js.UndefOr[T] = js.native
-    def first[N /* <: T */](ctor: AnonArgs[N]): js.UndefOr[N] = js.native
+    def empty(): Boolean = js.native
+    def first[N /* <: T */](ctor: AnonInstantiable[N]): js.UndefOr[N] = js.native
+    def head(): js.UndefOr[T] = js.native
     def parentOf(): js.UndefOr[T] = js.native
     def parentOf(node: T): js.UndefOr[T] = js.native
     def pop(): T = js.native
     def push(node: T): Unit = js.native
+    def tail(): js.UndefOr[T] = js.native
   }
   
 }

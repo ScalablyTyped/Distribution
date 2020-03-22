@@ -2,8 +2,8 @@ package typings.gapiClientStreetviewpublish.gapi.client.streetviewpublish
 
 import typings.gapiClient.gapi.client.Request_
 import typings.gapiClientStreetviewpublish.AnonAccesstoken
-import typings.gapiClientStreetviewpublish.AnonAccesstokenAltBearertokenCallbackFields
-import typings.gapiClientStreetviewpublish.AnonAccesstokenAltBearertokenCallbackFieldsFilter
+import typings.gapiClientStreetviewpublish.AnonFields
+import typings.gapiClientStreetviewpublish.AnonFilter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,7 +46,7 @@ trait PhotosResource extends js.Object {
     * GetPhoto
     * for specific failures that can occur per photo.
     */
-  def batchGet(request: AnonAccesstokenAltBearertokenCallbackFields): Request_[BatchGetPhotosResponse]
+  def batchGet(request: AnonFields): Request_[BatchGetPhotosResponse]
   /**
     * Updates the metadata of Photos, such
     * as pose, place association, connections, etc. Changing the pixels of photos
@@ -81,16 +81,16 @@ trait PhotosResource extends js.Object {
     * Lists all the Photos that belong to
     * the user.
     */
-  def list(request: AnonAccesstokenAltBearertokenCallbackFieldsFilter): Request_[ListPhotosResponse]
+  def list(request: AnonFilter): Request_[ListPhotosResponse]
 }
 
 object PhotosResource {
   @scala.inline
   def apply(
     batchDelete: AnonAccesstoken => Request_[BatchDeletePhotosResponse],
-    batchGet: AnonAccesstokenAltBearertokenCallbackFields => Request_[BatchGetPhotosResponse],
+    batchGet: AnonFields => Request_[BatchGetPhotosResponse],
     batchUpdate: AnonAccesstoken => Request_[BatchUpdatePhotosResponse],
-    list: AnonAccesstokenAltBearertokenCallbackFieldsFilter => Request_[ListPhotosResponse]
+    list: AnonFilter => Request_[ListPhotosResponse]
   ): PhotosResource = {
     val __obj = js.Dynamic.literal(batchDelete = js.Any.fromFunction1(batchDelete), batchGet = js.Any.fromFunction1(batchGet), batchUpdate = js.Any.fromFunction1(batchUpdate), list = js.Any.fromFunction1(list))
   

@@ -1,16 +1,16 @@
 package typings.remarkable.libMod
 
+import typings.remarkable.Anon0
+import typings.remarkable.Anon1
 import typings.remarkable.AnonRuler
-import typings.remarkable.AnonRulerBlockParsingRule
-import typings.remarkable.AnonRulerCoreParsingRule
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
 trait Remarkable extends js.Object {
-  var block: AnonRulerBlockParsingRule = js.native
-  var core: AnonRulerCoreParsingRule = js.native
+  var block: Anon0 = js.native
+  var core: Anon1 = js.native
   var `inline`: AnonRuler = js.native
   var renderer: typings.remarkable.rendererMod.^ = js.native
   /**

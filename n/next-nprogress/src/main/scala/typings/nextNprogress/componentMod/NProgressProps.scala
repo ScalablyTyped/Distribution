@@ -1,14 +1,13 @@
 package typings.nextNprogress.componentMod
 
-import typings.nprogress.mod.NProgressOptions
-import typings.std.Partial
+import typings.nextNprogress.PartialNProgressOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait NProgressProps extends js.Object {
   var color: js.UndefOr[String] = js.undefined
-  var options: js.UndefOr[Partial[NProgressOptions]] = js.undefined
+  var options: js.UndefOr[PartialNProgressOptions] = js.undefined
   var showAfterMs: js.UndefOr[Double] = js.undefined
   var spinner: js.UndefOr[Boolean] = js.undefined
 }
@@ -17,7 +16,7 @@ object NProgressProps {
   @scala.inline
   def apply(
     color: String = null,
-    options: Partial[NProgressOptions] = null,
+    options: PartialNProgressOptions = null,
     showAfterMs: Int | Double = null,
     spinner: js.UndefOr[Boolean] = js.undefined
   ): NProgressProps = {

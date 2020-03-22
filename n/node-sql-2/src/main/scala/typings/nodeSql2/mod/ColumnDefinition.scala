@@ -1,6 +1,6 @@
 package typings.nodeSql2.mod
 
-import typings.nodeSql2.AnonCascade
+import typings.nodeSql2.AnonColumn
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ trait ColumnDefinition[Name /* <: String */, Type] extends Named[Name] {
   var jsType: js.UndefOr[Type] = js.undefined
   var notNull: js.UndefOr[Boolean] = js.undefined
   var primaryKey: js.UndefOr[Boolean] = js.undefined
-  var references: js.UndefOr[AnonCascade] = js.undefined
+  var references: js.UndefOr[AnonColumn] = js.undefined
   var unique: js.UndefOr[Boolean] = js.undefined
 }
 
@@ -24,7 +24,7 @@ object ColumnDefinition {
     name: Name = null,
     notNull: js.UndefOr[Boolean] = js.undefined,
     primaryKey: js.UndefOr[Boolean] = js.undefined,
-    references: AnonCascade = null,
+    references: AnonColumn = null,
     unique: js.UndefOr[Boolean] = js.undefined
   ): ColumnDefinition[Name, Type] = {
     val __obj = js.Dynamic.literal(dataType = dataType.asInstanceOf[js.Any])

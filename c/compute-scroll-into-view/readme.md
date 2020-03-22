@@ -1,7 +1,7 @@
 
 # Scala.js typings for compute-scroll-into-view
 
-Typings are for version 1.0.11
+Typings are for version 1.0.13
 
 ## Library description:
 The engine that powers scroll-into-view-if-needed

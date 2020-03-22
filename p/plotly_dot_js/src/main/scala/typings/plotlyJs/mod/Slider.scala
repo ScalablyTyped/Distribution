@@ -1,6 +1,8 @@
 package typings.plotlyJs.mod
 
-import typings.plotlyJs.AnonCenter
+import typings.plotlyJs.AnonOffset
+import typings.plotlyJs.PartialPadding
+import typings.plotlyJs.PartialSliderStep
 import typings.plotlyJs.plotlyJsStrings.auto
 import typings.plotlyJs.plotlyJsStrings.bottom
 import typings.plotlyJs.plotlyJsStrings.center
@@ -10,7 +12,6 @@ import typings.plotlyJs.plotlyJsStrings.middle
 import typings.plotlyJs.plotlyJsStrings.pixels
 import typings.plotlyJs.plotlyJsStrings.right
 import typings.plotlyJs.plotlyJsStrings.top
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -38,7 +39,7 @@ trait Slider extends js.Object {
   	 * Sets the width (in px) of the border enclosing the slider.
   	 */
   var borderwidth: Double
-  var currentvalue: AnonCenter
+  var currentvalue: AnonOffset
   /**
   	 * Sets the font of the slider step labels.
   	 */
@@ -63,8 +64,8 @@ trait Slider extends js.Object {
   /**
   	 * Set the padding of the slider component along each side.
   	 */
-  var pad: Partial[Padding]
-  var steps: js.Array[Partial[SliderStep]]
+  var pad: PartialPadding
+  var steps: js.Array[PartialSliderStep]
   /**
   	 * Sets the color of the border enclosing the slider.
   	 */
@@ -112,13 +113,13 @@ object Slider {
     bgcolor: Color,
     bordercolor: Color,
     borderwidth: Double,
-    currentvalue: AnonCenter,
+    currentvalue: AnonOffset,
     font: Font,
     len: Double,
     lenmode: fraction | pixels,
     minorticklen: Double,
-    pad: Partial[Padding],
-    steps: js.Array[Partial[SliderStep]],
+    pad: PartialPadding,
+    steps: js.Array[PartialSliderStep],
     tickcolor: Color,
     ticklen: Double,
     tickwidth: Double,

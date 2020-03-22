@@ -5,10 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/**
-  * Override the built-in console logger.
-  * Do not need to be a prototype function.
-  */
 trait LoggerModule extends Module {
   @JSName("type")
   var type_LoggerModule: logger

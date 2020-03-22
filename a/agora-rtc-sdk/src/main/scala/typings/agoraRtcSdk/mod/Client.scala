@@ -1,16 +1,16 @@
 package typings.agoraRtcSdk.mod
 
 import typings.agoraRtcSdk.AnonAttr
-import typings.agoraRtcSdk.AnonAudioVideo
 import typings.agoraRtcSdk.AnonBitrate
 import typings.agoraRtcSdk.AnonCode
 import typings.agoraRtcSdk.AnonCurState
 import typings.agoraRtcSdk.AnonForceturn
 import typings.agoraRtcSdk.AnonReason
 import typings.agoraRtcSdk.AnonRole
-import typings.agoraRtcSdk.AnonStream1130974660
+import typings.agoraRtcSdk.AnonStreamStream
 import typings.agoraRtcSdk.AnonUid
 import typings.agoraRtcSdk.AnonUidString
+import typings.agoraRtcSdk.AnonVideo
 import typings.agoraRtcSdk.agoraRtcSdkNumbers.`0`
 import typings.agoraRtcSdk.agoraRtcSdkNumbers.`1`
 import typings.agoraRtcSdk.agoraRtcSdkNumbers.`2`
@@ -1035,7 +1035,7 @@ trait Client extends js.Object {
     * When a remote stream calls the [[addTrack]] or [[removeTrack]] method, the SDK triggers this callback.
     */
   @JSName("on")
-  def on_streamupdated(event: `stream-updated`, callback: js.Function1[/* evt */ AnonStream1130974660, Unit]): Unit = js.native
+  def on_streamupdated(event: `stream-updated`, callback: js.Function1[/* evt */ AnonStreamStream, Unit]): Unit = js.native
   /**
     * Occurs when the peer user unmutes the audio.
     * @example **Sample Code**
@@ -1393,8 +1393,8 @@ trait Client extends js.Object {
     * ```
     */
   def subscribe(stream: Stream): Unit = js.native
-  def subscribe(stream: Stream, options: AnonAudioVideo): Unit = js.native
-  def subscribe(stream: Stream, options: AnonAudioVideo, onFailure: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
+  def subscribe(stream: Stream, options: AnonVideo): Unit = js.native
+  def subscribe(stream: Stream, options: AnonVideo, onFailure: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
   /**
     * Unpublishes the Local Stream
     *

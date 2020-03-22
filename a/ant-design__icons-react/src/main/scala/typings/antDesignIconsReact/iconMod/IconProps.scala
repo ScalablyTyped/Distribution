@@ -1,6 +1,5 @@
 package typings.antDesignIconsReact.iconMod
 
-import typings.antDesignIcons.typesMod.IconDefinition
 import typings.react.mod.CSSProperties
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
@@ -17,13 +16,13 @@ trait IconProps extends js.Object {
   var primaryColor: js.UndefOr[String] = js.undefined
   var secondaryColor: js.UndefOr[String] = js.undefined
   var style: js.UndefOr[CSSProperties] = js.undefined
-  var `type`: String | IconDefinition
+  var `type`: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconDefinition */ js.Any)
 }
 
 object IconProps {
   @scala.inline
   def apply(
-    `type`: String | IconDefinition,
+    `type`: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconDefinition */ js.Any),
     className: String = null,
     focusable: String = null,
     onClick: MouseEvent[SVGSVGElement, NativeMouseEvent] => Unit = null,

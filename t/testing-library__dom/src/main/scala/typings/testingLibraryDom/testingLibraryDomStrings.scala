@@ -10,12 +10,6 @@ object testingLibraryDomStrings {
   sealed trait BoundFunctions extends js.Object
   
   @js.native
-  sealed trait CreateObject extends js.Object
-  
-  @js.native
-  sealed trait FireObject extends js.Object
-  
-  @js.native
   sealed trait abort extends EventType
   
   @js.native
@@ -266,10 +260,6 @@ object testingLibraryDomStrings {
   
   @scala.inline
   def BoundFunctions: BoundFunctions = "BoundFunctions".asInstanceOf[BoundFunctions]
-  @scala.inline
-  def CreateObject: CreateObject = "CreateObject".asInstanceOf[CreateObject]
-  @scala.inline
-  def FireObject: FireObject = "FireObject".asInstanceOf[FireObject]
   @scala.inline
   def abort: abort = "abort".asInstanceOf[abort]
   @scala.inline

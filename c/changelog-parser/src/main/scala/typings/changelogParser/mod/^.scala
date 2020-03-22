@@ -1,6 +1,6 @@
 package typings.changelogParser.mod
 
-import typings.std.Partial
+import typings.changelogParser.PartialOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,9 +13,9 @@ object ^ extends js.Object {
   /**
     * Change log parser for node.
     */
-  def apply(options: Partial[Options]): js.Promise[js.Object] = js.native
+  def apply(options: PartialOptions): js.Promise[js.Object] = js.native
   def apply(
-    options: Partial[Options],
+    options: PartialOptions,
     callback: js.Function2[/* error */ String | Null, /* result */ js.Object, Unit]
   ): js.Promise[js.Object] = js.native
 }

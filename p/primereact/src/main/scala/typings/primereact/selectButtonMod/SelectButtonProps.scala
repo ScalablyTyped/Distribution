@@ -1,6 +1,6 @@
 package typings.primereact.selectButtonMod
 
-import typings.primereact.AnonOriginalEventValue
+import typings.primereact.AnonValue
 import typings.primereact.tooltipOptionsMod.TooltipOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,7 +13,7 @@ trait SelectButtonProps extends js.Object {
   var disabled: js.UndefOr[Boolean] = js.undefined
   var id: js.UndefOr[String] = js.undefined
   var multiple: js.UndefOr[Boolean] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* e */ AnonOriginalEventValue, Unit]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* e */ AnonValue, Unit]] = js.undefined
   var optionLabel: js.UndefOr[String] = js.undefined
   var options: js.UndefOr[js.Array[_]] = js.undefined
   var style: js.UndefOr[js.Object] = js.undefined
@@ -32,7 +32,7 @@ object SelectButtonProps {
     disabled: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
     multiple: js.UndefOr[Boolean] = js.undefined,
-    onChange: /* e */ AnonOriginalEventValue => Unit = null,
+    onChange: /* e */ AnonValue => Unit = null,
     optionLabel: String = null,
     options: js.Array[_] = null,
     style: js.Object = null,

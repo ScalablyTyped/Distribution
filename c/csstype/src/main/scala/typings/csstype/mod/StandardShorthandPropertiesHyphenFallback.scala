@@ -53,7 +53,7 @@ trait StandardShorthandPropertiesHyphenFallback[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * |  n/a   | **66**  |   No   |  No  | No  |
+    * | **69** | **66**  |   No   |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/border-block
     */
@@ -114,7 +114,7 @@ trait StandardShorthandPropertiesHyphenFallback[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * |  n/a   | **66**  |   No   |  No  | No  |
+    * | **69** | **66**  |   No   |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/border-inline
     */
@@ -205,10 +205,10 @@ trait StandardShorthandPropertiesHyphenFallback[TLength] extends js.Object {
   /**
     * The **`column-rule`** CSS property sets the width, style, and color of the rule (line) drawn between columns in a multi-column layout.
     *
-    * | Chrome |  Firefox  | Safari  |  Edge  |   IE   |
-    * | :----: | :-------: | :-----: | :----: | :----: |
-    * | **50** |  **52**   |  **9**  | **12** | **10** |
-    * |        | 3.5 _-x-_ | 3 _-x-_ |        |        |
+    * | Chrome  | Firefox | Safari  |  Edge  |   IE   |
+    * | :-----: | :-----: | :-----: | :----: | :----: |
+    * | **50**  | **52**  |  **9**  | **12** | **10** |
+    * | 1 _-x-_ |         | 3 _-x-_ |        |        |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/column-rule
     */
@@ -219,7 +219,7 @@ trait StandardShorthandPropertiesHyphenFallback[TLength] extends js.Object {
     * | Chrome | Firefox | Safari  |  Edge  |   IE   |
     * | :----: | :-----: | :-----: | :----: | :----: |
     * | **50** | **52**  |  **9**  | **12** | **10** |
-    * |        | 9 _-x-_ | 3 _-x-_ |        |        |
+    * |        |         | 3 _-x-_ |        |        |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/columns
     */
@@ -378,7 +378,7 @@ trait StandardShorthandPropertiesHyphenFallback[TLength] extends js.Object {
     *
     * |    Chrome     | Firefox | Safari | Edge | IE  |
     * | :-----------: | :-----: | :----: | :--: | :-: |
-    * |    **55**     |   No    |   No   |  No  | No  |
+    * |    **55**     | **72**  |   No   |  No  | No  |
     * | 46 _(motion)_ |         |        |      |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/offset
@@ -389,7 +389,7 @@ trait StandardShorthandPropertiesHyphenFallback[TLength] extends js.Object {
     *
     * |    Chrome     | Firefox | Safari | Edge | IE  |
     * | :-----------: | :-----: | :----: | :--: | :-: |
-    * |    **55**     |   No    |   No   |  No  | No  |
+    * |    **55**     | **72**  |   No   |  No  | No  |
     * | 46 _(motion)_ |         |        |      |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/offset
@@ -424,7 +424,7 @@ trait StandardShorthandPropertiesHyphenFallback[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * | **59** | **45**  |  n/a   |  No  | No  |
+    * | **59** | **45**  | **11** |  No  | No  |
     *
     * ---
     *
@@ -432,7 +432,7 @@ trait StandardShorthandPropertiesHyphenFallback[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * | **59** | **45**  |  n/a   |  No  | No  |
+    * | **59** | **45**  | **11** |  No  | No  |
     *
     * ---
     *
@@ -472,13 +472,13 @@ trait StandardShorthandPropertiesHyphenFallback[TLength] extends js.Object {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/text-decoration
     */
-  var `text-decoration`: js.UndefOr[TextDecorationProperty | js.Array[TextDecorationProperty]] = js.undefined
+  var `text-decoration`: js.UndefOr[TextDecorationProperty[TLength] | js.Array[TextDecorationProperty[TLength]]] = js.undefined
   /**
     * The **`text-emphasis`** CSS property applies emphasis marks to text (except spaces and control characters). It is a shorthand for `text-emphasis-style` and `text-emphasis-color`.
     *
-    * |    Chrome    | Firefox |    Safari     | Edge | IE  |
-    * | :----------: | :-----: | :-----------: | :--: | :-: |
-    * | **25** _-x-_ | **46**  | **6.1** _-x-_ |  No  | No  |
+    * | Chrome | Firefox | Safari  | Edge | IE  |
+    * | :----: | :-----: | :-----: | :--: | :-: |
+    * | **25** | **46**  | **6.1** |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/text-emphasis
     */
@@ -540,7 +540,7 @@ object StandardShorthandPropertiesHyphenFallback {
     padding: PaddingProperty[TLength] | js.Array[PaddingProperty[TLength]] = null,
     `place-items`: PlaceItemsProperty | js.Array[PlaceItemsProperty] = null,
     `place-self`: PlaceSelfProperty | js.Array[PlaceSelfProperty] = null,
-    `text-decoration`: TextDecorationProperty | js.Array[TextDecorationProperty] = null,
+    `text-decoration`: TextDecorationProperty[TLength] | js.Array[TextDecorationProperty[TLength]] = null,
     `text-emphasis`: TextEmphasisProperty | js.Array[TextEmphasisProperty] = null,
     transition: TransitionProperty | js.Array[TransitionProperty] = null
   ): StandardShorthandPropertiesHyphenFallback[TLength] = {

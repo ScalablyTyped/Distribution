@@ -16,12 +16,12 @@ trait AnonReason extends js.Object {
   /**
     * The seedResourceId object contains information about the resource that caused the recommendation.
     */
-  var seedResourceId: AnonChannelIdKindPlaylistId
+  var seedResourceId: AnonKindPlaylistId
 }
 
 object AnonReason {
   @scala.inline
-  def apply(reason: String, resourceId: AnonChannelIdKind, seedResourceId: AnonChannelIdKindPlaylistId): AnonReason = {
+  def apply(reason: String, resourceId: AnonChannelIdKind, seedResourceId: AnonKindPlaylistId): AnonReason = {
     val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any], resourceId = resourceId.asInstanceOf[js.Any], seedResourceId = seedResourceId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AnonReason]

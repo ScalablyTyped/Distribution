@@ -13,7 +13,7 @@ trait AnonCsp extends js.Object {
   var methodnoallow: AnonEnableBoolean
   var noopen: AnonEnableBoolean
   var protocolWhiteList: js.Array[String]
-  var xframe: AnonALLOWFROM
+  var xframe: AnonValue
   var xssProtection: js.Any
 }
 
@@ -28,7 +28,7 @@ object AnonCsp {
     methodnoallow: AnonEnableBoolean,
     noopen: AnonEnableBoolean,
     protocolWhiteList: js.Array[String],
-    xframe: AnonALLOWFROM,
+    xframe: AnonValue,
     xssProtection: js.Any
   ): AnonCsp = {
     val __obj = js.Dynamic.literal(csp = csp.asInstanceOf[js.Any], csrf = csrf.asInstanceOf[js.Any], defaultMiddleware = defaultMiddleware.asInstanceOf[js.Any], domainWhiteList = domainWhiteList.asInstanceOf[js.Any], hsts = hsts.asInstanceOf[js.Any], methodnoallow = methodnoallow.asInstanceOf[js.Any], noopen = noopen.asInstanceOf[js.Any], protocolWhiteList = protocolWhiteList.asInstanceOf[js.Any], xframe = xframe.asInstanceOf[js.Any], xssProtection = xssProtection.asInstanceOf[js.Any])

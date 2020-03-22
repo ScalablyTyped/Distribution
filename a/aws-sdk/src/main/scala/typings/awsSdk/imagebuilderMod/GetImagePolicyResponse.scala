@@ -9,7 +9,7 @@ trait GetImagePolicyResponse extends js.Object {
   /**
     *  The image policy object. 
     */
-  var policy: js.UndefOr[NonEmptyString] = js.native
+  var policy: js.UndefOr[ResourcePolicyDocument] = js.native
   /**
     *  The request ID that uniquely identifies this request. 
     */
@@ -18,7 +18,7 @@ trait GetImagePolicyResponse extends js.Object {
 
 object GetImagePolicyResponse {
   @scala.inline
-  def apply(policy: NonEmptyString = null, requestId: NonEmptyString = null): GetImagePolicyResponse = {
+  def apply(policy: ResourcePolicyDocument = null, requestId: NonEmptyString = null): GetImagePolicyResponse = {
     val __obj = js.Dynamic.literal()
     if (policy != null) __obj.updateDynamic("policy")(policy.asInstanceOf[js.Any])
     if (requestId != null) __obj.updateDynamic("requestId")(requestId.asInstanceOf[js.Any])

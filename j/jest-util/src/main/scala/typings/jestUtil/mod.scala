@@ -51,15 +51,15 @@ object mod extends js.Object {
   class NullConsole ()
     extends typings.jestConsole.mod.NullConsole
   
-  var BufferedConsole: TypeofClassBufferedConsole = js.native
+  var BufferedConsole: TypeofBufferedConsole = js.native
   @JSName("convertDescriptorToString")
-  var convertDescriptorToString_Original: FnDescriptor = js.native
+  var convertDescriptorToString_Original: FnCall = js.native
   @JSName("createDirectory")
   var createDirectory_Original: js.Function1[/* path */ Path, Unit] = js.native
   @JSName("deepCyclicCopy")
-  var deepCyclicCopy_Original: FnCycles = js.native
+  var deepCyclicCopy_Original: FnCallValueOptionsCycles = js.native
   @JSName("formatTestResults")
-  var formatTestResults_Original: FnCodeCoverageFormatter = js.native
+  var formatTestResults_Original: FnCallResultsCodeCoverageFormatterReporter = js.native
   @JSName("getFailedSnapshotTests")
   var getFailedSnapshotTests_Original: js.Function1[/* testResults */ AggregatedResult, js.Array[String]] = js.native
   @JSName("installCommonGlobals")

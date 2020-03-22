@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@material/data-table" : "3.2.0"
+      "@material/data-table" : "5.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@material/data-table" : "3.2.0"
+      "@material/data-table" : "5.1.0"
     }
   ],
   "compile-devDependencies" : [

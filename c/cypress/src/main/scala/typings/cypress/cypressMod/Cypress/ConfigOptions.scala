@@ -1,6 +1,8 @@
 package typings.cypress.cypressMod.Cypress
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.cypress.AnonOpenMode
+import typings.cypress.cypressMod.Nullable
 import typings.cypress.cypressStrings.bundled
 import typings.cypress.cypressStrings.system
 import scala.scalajs.js
@@ -43,6 +45,13 @@ trait ConfigOptions extends js.Object {
     * @default root project folder
     */
   var fileServerFolder: String
+  /**
+    * Firefox-only: The number of tests that will run between forced garbage collections.
+    * If a number is supplied, it will apply to `run` mode and `open` mode.
+    * Set the interval to `null` or 0 to disable forced garbage collections.
+    * @default { runMode: 1, openMode: null }
+    */
+  var firefoxGcInterval: Nullable[Double | AnonOpenMode]
   /**
     * Path to folder containing fixture files (Pass false to disable)
     * @default "cypress/fixtures"
@@ -198,10 +207,12 @@ object ConfigOptions {
     waitForAnimations: Boolean,
     watchForFileChanges: Boolean,
     baseUrl: String = null,
+    firefoxGcInterval: Nullable[Double | AnonOpenMode] = null,
     port: Int | Double = null
   ): ConfigOptions = {
     val __obj = js.Dynamic.literal(animationDistanceThreshold = animationDistanceThreshold.asInstanceOf[js.Any], chromeWebSecurity = chromeWebSecurity.asInstanceOf[js.Any], defaultCommandTimeout = defaultCommandTimeout.asInstanceOf[js.Any], env = env.asInstanceOf[js.Any], execTimeout = execTimeout.asInstanceOf[js.Any], fileServerFolder = fileServerFolder.asInstanceOf[js.Any], fixturesFolder = fixturesFolder.asInstanceOf[js.Any], ignoreTestFiles = ignoreTestFiles.asInstanceOf[js.Any], integrationFolder = integrationFolder.asInstanceOf[js.Any], nodeVersion = nodeVersion.asInstanceOf[js.Any], numTestsKeptInMemory = numTestsKeptInMemory.asInstanceOf[js.Any], pageLoadTimeout = pageLoadTimeout.asInstanceOf[js.Any], pluginsFile = pluginsFile.asInstanceOf[js.Any], reporter = reporter.asInstanceOf[js.Any], requestTimeout = requestTimeout.asInstanceOf[js.Any], resolvedNodePath = resolvedNodePath.asInstanceOf[js.Any], resolvedNodeVersion = resolvedNodeVersion.asInstanceOf[js.Any], responseTimeout = responseTimeout.asInstanceOf[js.Any], screenshotsFolder = screenshotsFolder.asInstanceOf[js.Any], supportFile = supportFile.asInstanceOf[js.Any], trashAssetsBeforeRuns = trashAssetsBeforeRuns.asInstanceOf[js.Any], video = video.asInstanceOf[js.Any], videoCompression = videoCompression.asInstanceOf[js.Any], videoUploadOnPasses = videoUploadOnPasses.asInstanceOf[js.Any], videosFolder = videosFolder.asInstanceOf[js.Any], viewportHeight = viewportHeight.asInstanceOf[js.Any], viewportWidth = viewportWidth.asInstanceOf[js.Any], waitForAnimations = waitForAnimations.asInstanceOf[js.Any], watchForFileChanges = watchForFileChanges.asInstanceOf[js.Any])
     if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl.asInstanceOf[js.Any])
+    if (firefoxGcInterval != null) __obj.updateDynamic("firefoxGcInterval")(firefoxGcInterval.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigOptions]
   }

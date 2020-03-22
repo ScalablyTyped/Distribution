@@ -1,7 +1,7 @@
 
 # Scala.js typings for storybook__channel-websocket
 
-Typings are for version 5.3.13
+Typings are for version 5.3.14
 
 ## Library description:
 Storybook Websocket Channel is a channel for Storybook that can be used when the Storybook Renderer should communicate with the Storybook Manager over the network. A channel can be created using the `createChannel` function.

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "search-params" : "2.1.3"
+      "search-params" : "3.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "search-params" : "2.1.3"
+      "search-params" : "3.0.0"
     }
   ],
   "compile-devDependencies" : [

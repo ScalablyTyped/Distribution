@@ -4,7 +4,7 @@ import typings.oracleOraclejet.AnonAmpmWheelLabel
 import typings.oracleOraclejet.AnonClass
 import typings.oracleOraclejet.AnonConverterHint
 import typings.oracleOraclejet.AnonDefinition
-import typings.oracleOraclejet.AnonFocus
+import typings.oracleOraclejet.AnonFooterLayout
 import typings.oracleOraclejet.AnonInstruction
 import typings.oracleOraclejet.ojinputtextMod.inputBaseSettableProperties
 import typings.oracleOraclejet.ojmessagingMod.^
@@ -34,7 +34,7 @@ trait ojInputTimeSettableProperties extends inputBaseSettableProperties[String, 
   var min: String | Null
   var pickerAttributes: AnonClass
   var renderMode: jet | native
-  var timePicker: AnonFocus
+  var timePicker: AnonFooterLayout
   @JSName("translations")
   var translations_ojInputTimeSettableProperties: AnonAmpmWheelLabel
 }
@@ -59,7 +59,7 @@ object ojInputTimeSettableProperties {
     readonly: Boolean,
     renderMode: jet | native,
     required: Boolean,
-    timePicker: AnonFocus,
+    timePicker: AnonFooterLayout,
     translations: AnonAmpmWheelLabel,
     valid: valid | pending | invalidHidden | invalidShown,
     value: String,

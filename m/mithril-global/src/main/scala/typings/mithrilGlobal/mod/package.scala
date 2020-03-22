@@ -25,7 +25,6 @@ package object mod {
   type RouteDefs = typings.mithril.mod.RouteDefs
   type RouteOptions = typings.mithril.mod.RouteOptions
   type RouteResolver[A, S] = typings.mithril.mod.RouteResolver[A, S]
-  type Static = typings.mithril.mod.Static with typings.mithrilGlobal.AnonStream
   type Stream[T] = typings.mithril.streamMod.Stream[T]
   type Vnode[A, S /* <: typings.mithril.mod.Lifecycle[A, S] */] = typings.mithril.mod.Vnode[A, S]
   type VnodeDOM[A, S /* <: typings.mithril.mod.Lifecycle[A, S] */] = typings.mithril.mod.VnodeDOM[A, S]

@@ -21,7 +21,8 @@ object ^ extends js.Object {
   }, {wait: 100});
   ```
   */
-  def apply[ArgumentsType /* <: js.Array[_] */, ReturnType](input: js.Function1[/* arguments */ ArgumentsType, ReturnType], options: ImmediateOptions): DebouncedFunction[ArgumentsType, ReturnType] = js.native
+  def apply[ArgumentsType /* <: js.Array[_] */, ReturnType](input: js.Function1[/* arguments */ ArgumentsType, ReturnType], options: BeforeOptions): DebouncedFunction[ArgumentsType, ReturnType] = js.native
+  def apply[ArgumentsType /* <: js.Array[_] */, ReturnType](input: js.Function1[/* arguments */ ArgumentsType, ReturnType], options: NoBeforeNoAfterOptions): DebouncedFunction[ArgumentsType, js.UndefOr[scala.Nothing]] = js.native
   def apply[ArgumentsType /* <: js.Array[_] */, ReturnType](input: js.Function1[/* arguments */ ArgumentsType, ReturnType], options: Options): DebouncedFunction[ArgumentsType, js.UndefOr[ReturnType]] = js.native
 }
 

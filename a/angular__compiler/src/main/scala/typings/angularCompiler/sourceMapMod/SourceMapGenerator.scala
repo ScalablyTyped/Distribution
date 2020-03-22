@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class SourceMapGenerator () extends js.Object {
   def this(file: String) = this()
-  val currentLine: js.Any = js.native
   var file: js.Any = js.native
   var hasMappings: js.Any = js.native
   var lastCol0: js.Any = js.native

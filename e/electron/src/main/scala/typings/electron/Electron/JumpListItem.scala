@@ -10,13 +10,13 @@ import scala.scalajs.js.annotation._
 trait JumpListItem extends js.Object {
   // Docs: http://electronjs.org/docs/api/structures/jump-list-item
   /**
-    * The command line arguments when program is executed. Should only be set if type
-    * is task.
+    * The command line arguments when `program` is executed. Should only be set if
+    * `type` is `task`.
     */
   var args: js.UndefOr[String] = js.undefined
   /**
-    * Description of the task (displayed in a tooltip). Should only be set if type is
-    * task.
+    * Description of the task (displayed in a tooltip). Should only be set if `type`
+    * is `task`.
     */
   var description: js.UndefOr[String] = js.undefined
   /**
@@ -28,22 +28,22 @@ trait JumpListItem extends js.Object {
   var iconIndex: js.UndefOr[Double] = js.undefined
   /**
     * The absolute path to an icon to be displayed in a Jump List, which can be an
-    * arbitrary resource file that contains an icon (e.g. .ico, .exe, .dll). You can
-    * usually specify process.execPath to show the program icon.
+    * arbitrary resource file that contains an icon (e.g. `.ico`, `.exe`, `.dll`). You
+    * can usually specify `process.execPath` to show the program icon.
     */
   var iconPath: js.UndefOr[String] = js.undefined
   /**
-    * Path of the file to open, should only be set if type is file.
+    * Path of the file to open, should only be set if `type` is `file`.
     */
   var path: js.UndefOr[String] = js.undefined
   /**
-    * Path of the program to execute, usually you should specify process.execPath
-    * which opens the current program. Should only be set if type is task.
+    * Path of the program to execute, usually you should specify `process.execPath`
+    * which opens the current program. Should only be set if `type` is `task`.
     */
   var program: js.UndefOr[String] = js.undefined
   /**
     * The text to be displayed for the item in the Jump List. Should only be set if
-    * type is task.
+    * `type` is `task`.
     */
   var title: js.UndefOr[String] = js.undefined
   /**

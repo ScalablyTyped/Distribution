@@ -33,7 +33,7 @@ trait CreateVpcRequest extends js.Object {
   /**
     * The ID of an IPv6 address pool from which to allocate the IPv6 CIDR block.
     */
-  var Ipv6Pool: js.UndefOr[String] = js.native
+  var Ipv6Pool: js.UndefOr[Ipv6PoolEc2Id] = js.native
 }
 
 object CreateVpcRequest {
@@ -45,7 +45,7 @@ object CreateVpcRequest {
     InstanceTenancy: Tenancy = null,
     Ipv6CidrBlock: String = null,
     Ipv6CidrBlockNetworkBorderGroup: String = null,
-    Ipv6Pool: String = null
+    Ipv6Pool: Ipv6PoolEc2Id = null
   ): CreateVpcRequest = {
     val __obj = js.Dynamic.literal(CidrBlock = CidrBlock.asInstanceOf[js.Any])
     if (!js.isUndefined(AmazonProvidedIpv6CidrBlock)) __obj.updateDynamic("AmazonProvidedIpv6CidrBlock")(AmazonProvidedIpv6CidrBlock.asInstanceOf[js.Any])

@@ -2,7 +2,7 @@ package typings.forgeApis.mod
 
 import typings.forgeApis.AnonFilterDirection
 import typings.forgeApis.AnonFilterExtensionType
-import typings.forgeApis.AnonFilterExtensionTypeFilterId
+import typings.forgeApis.AnonFilterId
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,7 +37,7 @@ class FoldersApi () extends js.Object {
   def getFolderRefs(
     projectId: String,
     folderId: String,
-    opts: AnonFilterExtensionTypeFilterId,
+    opts: AnonFilterId,
     oauth2Client: AuthClient,
     credentials: AuthToken
   ): js.Promise[ApiResponse] = js.native

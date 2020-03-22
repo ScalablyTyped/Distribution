@@ -1,12 +1,14 @@
 package typings.vegaTypings.configMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.vegaTypings.encodeMod.SymbolShape
 import typings.vegaTypings.scaleMod.RangeScheme
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait RangeConfig extends js.Object {
+trait RangeConfig
+  extends /* name */ StringDictionary[RangeScheme | (js.Array[Boolean | Double | String | SymbolShape])] {
   /**
     * Default [color scheme](https://vega.github.io/vega/docs/schemes/) for categorical data.
     */
@@ -36,6 +38,7 @@ trait RangeConfig extends js.Object {
 object RangeConfig {
   @scala.inline
   def apply(
+    StringDictionary: /* name */ StringDictionary[RangeScheme | (js.Array[Boolean | Double | String | SymbolShape])] = null,
     category: RangeScheme | js.Array[String] = null,
     diverging: RangeScheme | js.Array[String] = null,
     heatmap: RangeScheme | js.Array[String] = null,
@@ -44,6 +47,7 @@ object RangeConfig {
     symbol: js.Array[SymbolShape] = null
   ): RangeConfig = {
     val __obj = js.Dynamic.literal()
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
     if (diverging != null) __obj.updateDynamic("diverging")(diverging.asInstanceOf[js.Any])
     if (heatmap != null) __obj.updateDynamic("heatmap")(heatmap.asInstanceOf[js.Any])

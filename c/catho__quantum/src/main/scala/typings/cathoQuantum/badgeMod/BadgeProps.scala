@@ -1,6 +1,6 @@
 package typings.cathoQuantum.badgeMod
 
-import typings.cathoQuantum.AnonBaseFontSizeComponents
+import typings.cathoQuantum.AnonComponents
 import typings.cathoQuantum.cathoQuantumStrings.error
 import typings.cathoQuantum.cathoQuantumStrings.neutral
 import typings.cathoQuantum.cathoQuantumStrings.primary
@@ -16,7 +16,7 @@ trait BadgeProps extends js.Object {
   var inverted: js.UndefOr[Boolean] = js.undefined
   var number: js.UndefOr[Double] = js.undefined
   var skin: js.UndefOr[primary | secondary | success | error | neutral] = js.undefined
-  var theme: js.UndefOr[AnonBaseFontSizeComponents] = js.undefined
+  var theme: js.UndefOr[AnonComponents] = js.undefined
 }
 
 object BadgeProps {
@@ -26,7 +26,7 @@ object BadgeProps {
     inverted: js.UndefOr[Boolean] = js.undefined,
     number: Int | Double = null,
     skin: primary | secondary | success | error | neutral = null,
-    theme: AnonBaseFontSizeComponents = null
+    theme: AnonComponents = null
   ): BadgeProps = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])

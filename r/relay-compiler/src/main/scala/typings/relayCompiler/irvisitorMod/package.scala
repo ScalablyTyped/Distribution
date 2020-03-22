@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object irvisitorMod {
-  type NodeVisitor = typings.relayCompiler.irvisitorMod.EnterLeave[typings.relayCompiler.AnonArgument] | typings.relayCompiler.AnonArgumentClientExtension
+  type NodeVisitor = typings.relayCompiler.irvisitorMod.EnterLeave[typings.relayCompiler.AnonArgument] | typings.relayCompiler.AnonClientExtension
   type NodeVisitorObject[T /* <: typings.relayCompiler.irvisitorMod.VisitNode */] = typings.relayCompiler.irvisitorMod.EnterLeave[typings.relayCompiler.irvisitorMod.VisitFn[T]] | typings.relayCompiler.irvisitorMod.VisitFn[T]
   type VisitFn[T /* <: typings.relayCompiler.irvisitorMod.VisitNode */] = js.Function5[
     /* node */ T, 

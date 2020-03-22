@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object projectVariablesMod extends js.Object {
   @js.native
-  class ProjectVariables () extends ResourceVariables {
+  class ProjectVariables protected () extends ResourceVariables {
     def this(options: BaseServiceOptions) = this()
   }
   

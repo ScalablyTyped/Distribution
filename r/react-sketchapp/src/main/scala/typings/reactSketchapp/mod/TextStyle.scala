@@ -1,7 +1,7 @@
 package typings.reactSketchapp.mod
 
 import typings.reactSketchapp.AnonHeight
-import typings.reactSketchapp.AnonHeightWidth
+import typings.reactSketchapp.AnonWidth
 import typings.reactSketchapp.reactSketchappStrings.`column-reverse`
 import typings.reactSketchapp.reactSketchappStrings.`flex-end`
 import typings.reactSketchapp.reactSketchappStrings.`flex-start`
@@ -50,7 +50,7 @@ trait TextStyle extends Style {
   var textAlign: js.UndefOr[auto | left | right | center | justify] = js.undefined
   var textDecorationLine: js.UndefOr[none | underline | double | `line-through`] = js.undefined
   var textShadowColor: js.UndefOr[Color] = js.undefined
-  var textShadowOffset: js.UndefOr[AnonHeightWidth] = js.undefined
+  var textShadowOffset: js.UndefOr[AnonWidth] = js.undefined
   var textShadowRadius: js.UndefOr[Double] = js.undefined
   var writingDirection: js.UndefOr[auto | ltr | rtl] = js.undefined
 }
@@ -125,7 +125,7 @@ object TextStyle {
     textAlign: auto | left | right | center | justify = null,
     textDecorationLine: none | underline | double | `line-through` = null,
     textShadowColor: Color = null,
-    textShadowOffset: AnonHeightWidth = null,
+    textShadowOffset: AnonWidth = null,
     textShadowRadius: Int | Double = null,
     top: Int | Double = null,
     width: Int | Double = null,

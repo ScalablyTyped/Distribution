@@ -10,5 +10,5 @@ package object view {
   type MatcherPattern = (js.Function1[
     /* element */ typings.ckeditorCkeditor5Engine.mod.view.Element, 
     scala.Null | typings.ckeditorCkeditor5Engine.AnonAttribute
-  ]) | java.lang.String | typings.std.RegExp | typings.ckeditorCkeditor5Engine.AnonAttributesClasses
+  ]) | java.lang.String | typings.std.RegExp | typings.ckeditorCkeditor5Engine.AnonClasses
 }

@@ -11,9 +11,9 @@ object dateFnsSetDayMod extends js.Object {
   @js.native
   object default extends js.Object {
     def apply(date: Double, day: Double): Date = js.native
-    def apply(date: Double, day: Double, options: Anon0): Date = js.native
+    def apply(date: Double, day: Double, options: AnonLocale): Date = js.native
     def apply(date: Date, day: Double): Date = js.native
-    def apply(date: Date, day: Double, options: Anon0): Date = js.native
+    def apply(date: Date, day: Double, options: AnonLocale): Date = js.native
   }
   
 }

@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("expect/build/print", JSImport.Namespace)
 @js.native
 object printMod extends js.Object {
+  def printCloseTo(receivedDiff: Double, expectedDiff: Double, precision: Double, isNot: Boolean): String = js.native
   def printExpectedConstructorName(label: String, expected: js.Function): String = js.native
   def printExpectedConstructorNameNot(label: String, expected: js.Function): String = js.native
   def printReceivedArrayContainExpectedItem(received: js.Array[_], index: Double): String = js.native

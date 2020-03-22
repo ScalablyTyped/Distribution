@@ -1,7 +1,8 @@
 package typings.jupyterlabNotebook.mod
 
+import typings.jupyterlabApputils.tokensMod.ISessionContextDialogs
 import typings.jupyterlabDocregistry.registryMod.DocumentRegistry.IToolbarItem
-import typings.phosphorWidgets.mod.Widget
+import typings.luminoWidgets.mod.Widget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -49,5 +50,6 @@ object ToolbarItems extends js.Object {
     * Get the default toolbar items for panel
     */
   def getDefaultItems(panel: typings.jupyterlabNotebook.panelMod.NotebookPanel): js.Array[IToolbarItem] = js.native
+  def getDefaultItems(panel: typings.jupyterlabNotebook.panelMod.NotebookPanel, sessionDialogs: ISessionContextDialogs): js.Array[IToolbarItem] = js.native
 }
 

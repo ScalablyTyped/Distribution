@@ -8,7 +8,7 @@ import typings.jsrsasign.AnonHex
 import typings.jsrsasign.AnonIsValid
 import typings.jsrsasign.AnonIssuer
 import typings.jsrsasign.AnonName
-import typings.jsrsasign.AnonOid
+import typings.jsrsasign.AnonOidString
 import typings.jsrsasign.AnonSorted
 import typings.jsrsasign.jsrsasign.KJUR.asn1.ASN1ObjectParam
 import typings.jsrsasign.jsrsasign.KJUR.asn1.ArrayParam
@@ -134,7 +134,7 @@ object cms extends js.Object {
   class ContentType ()
     extends typings.jsrsasign.jsrsasign.KJUR.asn1.cms.ContentType {
     def this(params: AnonName) = this()
-    def this(params: AnonOid) = this()
+    def this(params: AnonOidString) = this()
   }
   
   /**

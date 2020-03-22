@@ -21,7 +21,7 @@ object directionalLightHelperMod extends js.Object {
     var color: js.UndefOr[Color | String | Double] = js.native
     var light: DirectionalLight = js.native
     var lightPlane: Line = js.native
-    var targetPlane: Line = js.native
+    var targetLine: Line = js.native
     def dispose(): Unit = js.native
     def update(): Unit = js.native
   }

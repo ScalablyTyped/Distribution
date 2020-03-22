@@ -6,13 +6,13 @@ import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.Instantiable4
 import org.scalablytyped.runtime.Instantiable6
-import typings.firebaseAppTypes.mod.FirebaseApp
 import typings.firebaseAuthInteropTypes.mod.FirebaseAuthInternalName
 import typings.firebaseComponent.mod.Provider
 import typings.firebaseFirestore.apiDatabaseMod.FirestoreDatabase
 import typings.firebaseFirestore.apiFieldValueMod.FieldValueImpl
 import typings.firebaseFirestore.coreQueryMod.Query
 import typings.firebaseFirestore.coreViewSnapshotMod.ViewSnapshot
+import typings.firebaseFirestore.mod.FirebaseApp
 import typings.firebaseFirestore.modelDocumentKeyMod.DocumentKey
 import typings.firebaseFirestore.modelDocumentMod.Document
 import typings.firebaseFirestore.modelPathMod.ResourcePath
@@ -62,8 +62,8 @@ object indexConsoleMod extends js.Object {
   @js.native
   class Firestore protected ()
     extends typings.firebaseFirestore.apiDatabaseMod.Firestore {
-    def this(databaseIdOrApp: FirebaseApp, authProvider: Provider[FirebaseAuthInternalName]) = this()
     def this(databaseIdOrApp: FirestoreDatabase, authProvider: Provider[FirebaseAuthInternalName]) = this()
+    def this(databaseIdOrApp: FirebaseApp, authProvider: Provider[FirebaseAuthInternalName]) = this()
   }
   
   @js.native

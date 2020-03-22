@@ -21,7 +21,7 @@ object ^ extends js.Object {
   var isServer: Boolean = js.native
   var isTest: Boolean = js.native
   var release: String = js.native
-  var settings: Settings = js.native
-  var users: Collection[User] = js.native
+  var settings: Settings_ = js.native
+  var users: Collection[User_] = js.native
 }
 

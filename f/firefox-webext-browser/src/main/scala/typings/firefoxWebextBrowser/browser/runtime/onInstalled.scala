@@ -1,7 +1,7 @@
 package typings.firefoxWebextBrowser.browser.runtime
 
 import org.scalablytyped.runtime.TopLevel
-import typings.firefoxWebextBrowser.AnonIdPreviousVersion
+import typings.firefoxWebextBrowser.AnonPreviousVersion
 import typings.firefoxWebextBrowser.WebExtEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,5 +14,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("browser.runtime.onInstalled")
 @js.native
 object onInstalled
-  extends TopLevel[WebExtEvent[js.Function1[/* details */ AnonIdPreviousVersion, Unit]]]
+  extends TopLevel[WebExtEvent[js.Function1[/* details */ AnonPreviousVersion, Unit]]]
 

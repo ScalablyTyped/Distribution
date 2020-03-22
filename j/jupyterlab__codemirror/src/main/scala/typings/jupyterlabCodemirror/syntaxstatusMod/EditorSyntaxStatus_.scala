@@ -1,6 +1,6 @@
 package typings.jupyterlabCodemirror.syntaxstatusMod
 
-import typings.jupyterlabApputils.vdomMod.VDomRenderer
+import typings.jupyterlabApputils.mod.VDomRenderer
 import typings.jupyterlabCodemirror.syntaxstatusMod.EditorSyntaxStatus.IOptions
 import typings.jupyterlabCodemirror.syntaxstatusMod.EditorSyntaxStatus.Model
 import scala.scalajs.js

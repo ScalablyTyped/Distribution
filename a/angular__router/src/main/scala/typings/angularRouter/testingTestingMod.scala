@@ -34,10 +34,11 @@ object testingTestingMod extends js.Object {
     /**
       * @docsNotRequired
       */
+    def stubbedModules(): StringDictionary[js.Any] = js.native
     /**
       * @docsNotRequired
       */
-    var stubbedModules: StringDictionary[js.Any] = js.native
+    def stubbedModules(modules: StringDictionary[js.Any]): js.Any = js.native
   }
   
   def setupTestingRouter(

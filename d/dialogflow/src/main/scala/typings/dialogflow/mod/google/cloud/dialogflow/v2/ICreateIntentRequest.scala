@@ -9,7 +9,7 @@ trait ICreateIntentRequest extends js.Object {
   /** CreateIntentRequest intent */
   var intent: js.UndefOr[IIntent | Null] = js.undefined
   /** CreateIntentRequest intentView */
-  var intentView: js.UndefOr[IntentView | Null] = js.undefined
+  var intentView: js.UndefOr[IntentView | String | Null] = js.undefined
   /** CreateIntentRequest languageCode */
   var languageCode: js.UndefOr[String | Null] = js.undefined
   /** CreateIntentRequest parent */
@@ -20,7 +20,7 @@ object ICreateIntentRequest {
   @scala.inline
   def apply(
     intent: IIntent = null,
-    intentView: IntentView = null,
+    intentView: IntentView | String = null,
     languageCode: String = null,
     parent: String = null
   ): ICreateIntentRequest = {

@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait JsxSelfClosingElement
   extends PrimaryExpression
+     with HasTypeArguments
      with JsxChild
      with JsxOpeningLikeElement {
   var attributes: JsxAttributes = js.native

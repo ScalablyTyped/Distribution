@@ -1,6 +1,6 @@
 package typings.firefoxWebextBrowser.browser.types
 
-import typings.firefoxWebextBrowser.AnonIncognito
+import typings.firefoxWebextBrowser.AnonIncognitoBoolean
 import typings.firefoxWebextBrowser.AnonIncognitoSpecific
 import typings.firefoxWebextBrowser.AnonScope
 import typings.firefoxWebextBrowser.AnonScopeSettingScope
@@ -24,7 +24,7 @@ trait Setting extends js.Object {
     * Gets the value of a setting.
     * @param details Which setting to consider.
     */
-  def get(details: AnonIncognito): js.Promise[AnonIncognitoSpecific]
+  def get(details: AnonIncognitoBoolean): js.Promise[AnonIncognitoSpecific]
   /**
     * Sets the value of a setting.
     * @param details Which setting to change.
@@ -36,7 +36,7 @@ object Setting {
   @scala.inline
   def apply(
     clear: AnonScopeSettingScope => js.Promise[Unit],
-    get: AnonIncognito => js.Promise[AnonIncognitoSpecific],
+    get: AnonIncognitoBoolean => js.Promise[AnonIncognitoSpecific],
     onChange: WebExtEvent[js.Function1[/* details */ AnonIncognitoSpecific, Unit]],
     set: AnonScope => js.Promise[Unit]
   ): Setting = {

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CreateInstancesResult extends js.Object {
   /**
-    * An array of key-value pairs containing information about the results of your create instances request.
+    * An array of objects that describe the result of the action, such as the status of the request, the time stamp of the request, and the resources affected by the request.
     */
   var operations: js.UndefOr[OperationList] = js.native
 }

@@ -1,7 +1,7 @@
 package typings.mithril.mod
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.mithril.AnonKey
+import typings.mithril.Lifecycleanyanykeystringa
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +21,7 @@ trait Hyperscript extends js.Object {
     args: Children*
   ): Vnode[Attrs, State] = js.native
   /** Creates a fragment virtual element (Vnode). */
-  def fragment(attrs: (Lifecycle[_, _]) with StringDictionary[js.Any], children: ChildArrayOrPrimitive): Vnode[_, _] = js.native
+  def fragment(attrs: Lifecycleanyanykeystringa, children: ChildArrayOrPrimitive): Vnode[_, _] = js.native
   /** Turns an HTML string into a virtual element (Vnode). Do not use trust on unsanitized user input. */
   def trust(html: String): Vnode[_, _] = js.native
 }

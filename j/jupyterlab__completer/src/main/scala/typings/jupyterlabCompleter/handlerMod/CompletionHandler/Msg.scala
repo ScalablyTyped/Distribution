@@ -1,6 +1,6 @@
 package typings.jupyterlabCompleter.handlerMod.CompletionHandler
 
-import typings.phosphorMessaging.mod.Message
+import typings.luminoMessaging.mod.Message
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

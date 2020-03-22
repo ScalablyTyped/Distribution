@@ -1,7 +1,6 @@
 package typings.three
 
 import typings.std.ArrayLike
-import typings.three.bufferAttributeMod.BufferAttribute
 import typings.three.matrix4Mod.Matrix4
 import typings.three.vector3Mod.Vector3
 import scala.scalajs.js
@@ -46,15 +45,9 @@ object matrix3Mod extends js.Object {
   	 * Creates an identity matrix.
   	 */
   class Matrix3 () extends Matrix {
-    /**
-    	 * @deprecated Use {@link Matrix3#applyToBufferAttribute matrix3.applyToBufferAttribute( attribute )} instead.
-    	 */
-    def applyToBuffer(buffer: BufferAttribute): BufferAttribute = js.native
-    def applyToBuffer(buffer: BufferAttribute, offset: Double): BufferAttribute = js.native
-    def applyToBuffer(buffer: BufferAttribute, offset: Double, length: Double): BufferAttribute = js.native
-    def applyToBufferAttribute(attribute: BufferAttribute): BufferAttribute = js.native
     def copy(m: Matrix3): this.type = js.native
     def equals(matrix: Matrix3): Boolean = js.native
+    def extractBasis(xAxis: Vector3, yAxis: Vector3, zAxis: Vector3): Matrix3 = js.native
     /**
     	 * @deprecated Use {@link Matrix3#toArray .toArray()} instead.
     	 */
@@ -133,7 +126,7 @@ object matrix3Mod extends js.Object {
     /**
     	 * Transposes this matrix into the supplied array r, and returns itself.
     	 */
-    def transposeIntoArray(r: js.Array[Double]): js.Array[Double] = js.native
+    def transposeIntoArray(r: js.Array[Double]): Matrix3 = js.native
   }
   
 }

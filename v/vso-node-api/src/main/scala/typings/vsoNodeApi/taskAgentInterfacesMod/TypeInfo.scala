@@ -2,20 +2,20 @@ package typings.vsoNodeApi.taskAgentInterfacesMod
 
 import typings.vsoNodeApi.AnonEnumValuesAnonAbandoned
 import typings.vsoNodeApi.AnonEnumValuesAnonAdd
-import typings.vsoNodeApi.AnonEnumValuesAnonAllFriday
-import typings.vsoNodeApi.AnonEnumValuesAnonAllQueued
 import typings.vsoNodeApi.AnonEnumValuesAnonAlreadyUpToDate
 import typings.vsoNodeApi.AnonEnumValuesAnonAutomation
-import typings.vsoNodeApi.AnonEnumValuesAnonCanceledFailedSucceeded
-import typings.vsoNodeApi.AnonEnumValuesAnonCancelling
+import typings.vsoNodeApi.AnonEnumValuesAnonCanceledFailed
+import typings.vsoNodeApi.AnonEnumValuesAnonCancellingCompleted
 import typings.vsoNodeApi.AnonEnumValuesAnonCompleted
 import typings.vsoNodeApi.AnonEnumValuesAnonCompletedInProgress
 import typings.vsoNodeApi.AnonEnumValuesAnonContainer
 import typings.vsoNodeApi.AnonEnumValuesAnonError
 import typings.vsoNodeApi.AnonEnumValuesAnonFreshLogin
+import typings.vsoNodeApi.AnonEnumValuesAnonFriday
 import typings.vsoNodeApi.AnonEnumValuesAnonMachines
 import typings.vsoNodeApi.AnonEnumValuesAnonManage
-import typings.vsoNodeApi.AnonEnumValuesAnonOfflineOnline
+import typings.vsoNodeApi.AnonEnumValuesAnonOnline
+import typings.vsoNodeApi.AnonEnumValuesAnonQueued
 import typings.vsoNodeApi.AnonEnumValuesAnonRegex
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -51,7 +51,7 @@ object TypeInfo extends js.Object {
   var MaskType: AnonEnumValuesAnonRegex = js.native
   var PackageMetadata: js.Any = js.native
   var PlanEnvironment: js.Any = js.native
-  var PlanGroupStatusFilter: AnonEnumValuesAnonAllQueued = js.native
+  var PlanGroupStatusFilter: AnonEnumValuesAnonQueued = js.native
   var SecureFile: js.Any = js.native
   var SecureFileActionFilter: AnonEnumValuesAnonManage = js.native
   var ServerJobRequestMessage: js.Any = js.native
@@ -64,17 +64,17 @@ object TypeInfo extends js.Object {
   var TaskAgentPoolActionFilter: AnonEnumValuesAnonManage = js.native
   var TaskAgentPoolMaintenanceDefinition: js.Any = js.native
   var TaskAgentPoolMaintenanceJob: js.Any = js.native
-  var TaskAgentPoolMaintenanceJobResult: AnonEnumValuesAnonCanceledFailedSucceeded = js.native
-  var TaskAgentPoolMaintenanceJobStatus: AnonEnumValuesAnonCancelling = js.native
+  var TaskAgentPoolMaintenanceJobResult: AnonEnumValuesAnonCanceledFailed = js.native
+  var TaskAgentPoolMaintenanceJobStatus: AnonEnumValuesAnonCancellingCompleted = js.native
   var TaskAgentPoolMaintenanceSchedule: js.Any = js.native
-  var TaskAgentPoolMaintenanceScheduleDays: AnonEnumValuesAnonAllFriday = js.native
+  var TaskAgentPoolMaintenanceScheduleDays: AnonEnumValuesAnonFriday = js.native
   var TaskAgentPoolReference: js.Any = js.native
   var TaskAgentPoolType: AnonEnumValuesAnonAutomation = js.native
   var TaskAgentQueue: js.Any = js.native
   var TaskAgentQueueActionFilter: AnonEnumValuesAnonManage = js.native
   var TaskAgentReference: js.Any = js.native
   var TaskAgentSession: js.Any = js.native
-  var TaskAgentStatus: AnonEnumValuesAnonOfflineOnline = js.native
+  var TaskAgentStatus: AnonEnumValuesAnonOnline = js.native
   var TaskAgentUpdate: js.Any = js.native
   var TaskAttachment: js.Any = js.native
   var TaskDefinitionStatus: AnonEnumValuesAnonAlreadyUpToDate = js.native

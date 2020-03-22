@@ -7,13 +7,15 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait StackView
-  extends Component[Props, js.Object, js.Any] {
-  var configureTransition: js.Any = js.native
-  var getCardOverlayEnabled: js.Any = js.native
-  var getShadowEnabled: js.Any = js.native
+  extends Component[Props, State, js.Any] {
+  var getGesturesEnabled: js.Any = js.native
+  var getPreviousRoute: js.Any = js.native
+  var handleCloseRoute: js.Any = js.native
+  var handleOpenRoute: js.Any = js.native
+  var handleTransitionComplete: js.Any = js.native
   var handleTransitionEnd: js.Any = js.native
-  var renderStackviewLayout: js.Any = js.native
-  @JSName("componentDidMount")
-  def componentDidMount_MStackView(): Unit = js.native
+  var handleTransitionStart: js.Any = js.native
+  var renderHeader: js.Any = js.native
+  var renderScene: js.Any = js.native
 }
 

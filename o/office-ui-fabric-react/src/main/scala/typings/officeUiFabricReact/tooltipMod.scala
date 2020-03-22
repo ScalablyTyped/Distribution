@@ -17,7 +17,6 @@ import typings.officeUiFabricReact.officeUiFabricReactNumbers.`9`
 import typings.officeUiFabricReact.tooltipHostTypesMod.ITooltipHostProps
 import typings.officeUiFabricReact.tooltipTypesMod.ITooltipProps
 import typings.react.mod.FunctionComponent
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -100,7 +99,7 @@ object tooltipMod extends js.Object {
   /* static members */
   @js.native
   object TooltipBase extends js.Object {
-    var defaultProps: Partial[ITooltipProps] = js.native
+    var defaultProps: PartialITooltipProps = js.native
   }
   
   @js.native

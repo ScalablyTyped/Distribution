@@ -6,7 +6,6 @@ import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
   - typings.csstype.csstypeStrings.auto
-  - typings.csstype.csstypeStrings.clip
   - typings.csstype.csstypeStrings.hidden
   - typings.csstype.csstypeStrings.scroll
   - typings.csstype.csstypeStrings.visible
@@ -25,8 +24,6 @@ object OverflowXProperty {
   def auto: typings.csstype.csstypeStrings.auto = this.cast("auto")
   @scala.inline
   /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def clip: typings.csstype.csstypeStrings.clip = this.cast("clip")
   @scala.inline
   def hidden: typings.csstype.csstypeStrings.hidden = this.cast("hidden")
   @scala.inline

@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 object federatedExtensionMod extends js.Object {
   @js.native
   class EngineFederatedTracingExtension[TContext] protected () extends GraphQLExtension[TContext] {
-    def this(options: AnonErr) = this()
+    def this(options: AnonRewriteError) = this()
     var done: js.Any = js.native
     var enabled: js.Any = js.native
     var treeBuilder: js.Any = js.native

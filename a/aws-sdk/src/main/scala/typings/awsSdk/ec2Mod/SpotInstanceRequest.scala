@@ -29,7 +29,7 @@ trait SpotInstanceRequest extends js.Object {
   /**
     * The instance ID, if an instance has been launched to fulfill the Spot Instance request.
     */
-  var InstanceId: js.UndefOr[String] = js.native
+  var InstanceId: js.UndefOr[typings.awsSdk.ec2Mod.InstanceId] = js.native
   /**
     * The behavior when a Spot Instance is interrupted.
     */
@@ -92,7 +92,7 @@ object SpotInstanceRequest {
     BlockDurationMinutes: Int | scala.Double = null,
     CreateTime: DateTime = null,
     Fault: SpotInstanceStateFault = null,
-    InstanceId: String = null,
+    InstanceId: InstanceId = null,
     InstanceInterruptionBehavior: InstanceInterruptionBehavior = null,
     LaunchGroup: String = null,
     LaunchSpecification: LaunchSpecification = null,

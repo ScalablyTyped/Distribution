@@ -1,6 +1,6 @@
 package typings.winrtUwp.Windows.Media.Devices
 
-import typings.winrtUwp.AnonReturnValueValueBoolean
+import typings.winrtUwp.AnonReturnValueBoolean
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
 import typings.winrtUwp.Windows.Media.Capture.MediaStreamType
@@ -111,7 +111,7 @@ abstract class VideoDeviceController () extends js.Object {
   /**
     * Gets the local power line frequency.
     */
-  def tryGetPowerlineFrequency(): AnonReturnValueValueBoolean = js.native
+  def tryGetPowerlineFrequency(): AnonReturnValueBoolean = js.native
   /**
     * Sets the local power line frequency.
     * @param value The power line frequency.

@@ -67,8 +67,6 @@ trait reactNativeProps {
   @scala.inline
   def MaskedViewIOSProps: typings.reactNative.mod.MaskedViewIOSProps.type = typings.reactNative.mod.MaskedViewIOSProps
   type MaskedViewIOSProps = typings.reactNative.mod.MaskedViewIOSProps
-  @scala.inline
-  def ModalProps: typings.reactNative.mod.ModalProps.type = typings.reactNative.mod.ModalProps
   type ModalProps = typings.reactNative.mod.ModalProps
   @scala.inline
   def NavigatorIOSProps: typings.reactNative.mod.NavigatorIOSProps.type = typings.reactNative.mod.NavigatorIOSProps

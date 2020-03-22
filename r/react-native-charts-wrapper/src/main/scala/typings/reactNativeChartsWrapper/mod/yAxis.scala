@@ -1,7 +1,7 @@
 package typings.reactNativeChartsWrapper.mod
 
 import typings.reactNativeChartsWrapper.AnonEnabled
-import typings.reactNativeChartsWrapper.AnonLEFTBOTTOM
+import typings.reactNativeChartsWrapper.AnonLabel
 import typings.reactNativeChartsWrapper.AnonLineLength
 import typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.DAYS
 import typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.HOURS
@@ -48,7 +48,7 @@ object yAxis {
     inverted: js.UndefOr[Boolean] = js.undefined,
     labelCount: Int | Double = null,
     labelCountForce: js.UndefOr[Boolean] = js.undefined,
-    limitLines: js.Array[AnonLEFTBOTTOM] = null,
+    limitLines: js.Array[AnonLabel] = null,
     maxWidth: Int | Double = null,
     minWidth: Int | Double = null,
     position: OUTSIDE_CHART | INSIDE_CHART = null,

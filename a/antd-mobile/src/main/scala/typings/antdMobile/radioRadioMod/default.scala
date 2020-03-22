@@ -1,6 +1,6 @@
 package typings.antdMobile.radioRadioMod
 
-import typings.antdMobile.AnonPrefixClsWrapLabel
+import typings.antdMobile.AnonWrapLabel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,6 +14,6 @@ class default () extends Radio
 @js.native
 object default extends js.Object {
   var RadioItem: js.Any = js.native
-  var defaultProps: AnonPrefixClsWrapLabel = js.native
+  var defaultProps: AnonWrapLabel = js.native
 }
 

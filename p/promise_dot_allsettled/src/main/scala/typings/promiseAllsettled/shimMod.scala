@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 @JSImport("promise.allsettled/shim", JSImport.Namespace)
 @js.native
 object shimMod extends js.Object {
-  def apply(): FnIterable = js.native
+  def apply(): FnCall = js.native
 }
 

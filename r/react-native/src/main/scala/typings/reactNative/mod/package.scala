@@ -104,6 +104,8 @@ package object mod {
     /* pageY */ scala.Double, 
     scala.Unit
   ]
+  type ModalProperties = typings.reactNative.mod.ModalProps
+  type ModalProps = typings.reactNative.mod.ModalBaseProps with typings.reactNative.mod.ModalPropsIOS with typings.reactNative.mod.ModalPropsAndroid
   type NativeComponent = typings.reactNative.mod.NativeMethodsMixinStatic
   type NativeEventEmitter = typings.reactNative.mod.EventEmitter
   type NativeMethodsMixin = typings.reactNative.mod.NativeMethodsMixinStatic

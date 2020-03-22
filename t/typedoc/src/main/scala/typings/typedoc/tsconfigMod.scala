@@ -1,8 +1,8 @@
 package typings.typedoc
 
-import typings.typedoc.componentMod.AbstractComponent
-import typings.typedoc.optionsOptionsMod.DiscoverEvent
+import typings.typedoc.loggersMod.Logger
 import typings.typedoc.optionsOptionsMod.Options
+import typings.typedoc.optionsOptionsMod.OptionsReader
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,17 +11,14 @@ import scala.scalajs.js.annotation._
 @js.native
 object tsconfigMod extends js.Object {
   @js.native
-  class TSConfigReader () extends AbstractComponent[Options] {
-    var options: String = js.native
-    def load(event: DiscoverEvent, fileName: String): Unit = js.native
-    def onDiscover(event: DiscoverEvent): Unit = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object TSConfigReader extends js.Object {
-    var OPTIONS_KEY: js.Any = js.native
-    var PROJECT_KEY: js.Any = js.native
+  class TSConfigReader () extends OptionsReader {
+    var _tryReadOptions: js.Any = js.native
+    /* CompleteClass */
+    override var name: String = js.native
+    /* CompleteClass */
+    override var priority: Double = js.native
+    /* CompleteClass */
+    override def read(container: Options, logger: Logger): Unit = js.native
   }
   
 }

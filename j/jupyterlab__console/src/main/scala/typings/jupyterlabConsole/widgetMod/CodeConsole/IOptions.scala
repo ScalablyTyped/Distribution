@@ -1,6 +1,6 @@
 package typings.jupyterlabConsole.widgetMod.CodeConsole
 
-import typings.jupyterlabApputils.clientsessionMod.IClientSession
+import typings.jupyterlabApputils.sessioncontextMod.ISessionContext
 import typings.jupyterlabCodeeditor.mimetypeMod.IEditorMimeTypeService
 import typings.jupyterlabRendermime.tokensMod.IRenderMimeRegistry
 import scala.scalajs.js
@@ -30,7 +30,7 @@ trait IOptions extends js.Object {
   /**
     * The client session for the console widget.
     */
-  var session: IClientSession
+  var sessionContext: ISessionContext
 }
 
 object IOptions {
@@ -39,10 +39,10 @@ object IOptions {
     contentFactory: IContentFactory,
     mimeTypeService: IEditorMimeTypeService,
     rendermime: IRenderMimeRegistry,
-    session: IClientSession,
+    sessionContext: ISessionContext,
     modelFactory: IModelFactory = null
   ): IOptions = {
-    val __obj = js.Dynamic.literal(contentFactory = contentFactory.asInstanceOf[js.Any], mimeTypeService = mimeTypeService.asInstanceOf[js.Any], rendermime = rendermime.asInstanceOf[js.Any], session = session.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(contentFactory = contentFactory.asInstanceOf[js.Any], mimeTypeService = mimeTypeService.asInstanceOf[js.Any], rendermime = rendermime.asInstanceOf[js.Any], sessionContext = sessionContext.asInstanceOf[js.Any])
     if (modelFactory != null) __obj.updateDynamic("modelFactory")(modelFactory.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }

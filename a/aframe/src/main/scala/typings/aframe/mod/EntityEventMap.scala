@@ -3,7 +3,7 @@ package typings.aframe.mod
 import typings.aframe.AnonComponentName
 import typings.aframe.AnonEl
 import typings.aframe.AnonId
-import typings.aframe.AnonIdName
+import typings.aframe.AnonName
 import typings.aframe.AnonState
 import typings.std.EventListener
 import typings.std.Event_
@@ -16,7 +16,7 @@ trait EntityEventMap extends js.Object {
   var `child-attached`: DetailEvent[AnonEl] = js.native
   var `child-detached`: DetailEvent[AnonEl] = js.native
   var componentchanged: DetailEvent[AnonId] = js.native
-  var componentremoved: DetailEvent[AnonIdName] = js.native
+  var componentremoved: DetailEvent[AnonName] = js.native
   @JSName("loaded")
   var loaded_Original: EventListener = js.native
   @JSName("pause")

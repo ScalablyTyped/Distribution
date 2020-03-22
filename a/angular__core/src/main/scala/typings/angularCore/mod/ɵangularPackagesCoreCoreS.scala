@@ -7,5 +7,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@angular/core", "\u0275angular_packages_core_core_s")
 @js.native
-object ɵangularPackagesCoreCoreS extends TopLevel[Boolean]
+object ɵangularPackagesCoreCoreS
+  extends TopLevel[js.Array[StaticProvider]]
 

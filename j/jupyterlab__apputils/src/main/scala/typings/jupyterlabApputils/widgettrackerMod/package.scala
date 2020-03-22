@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object widgettrackerMod {
-  type WidgetTracker[T /* <: typings.phosphorWidgets.mod.Widget */] = typings.jupyterlabApputils.widgettrackerMod.WidgetTracker_[T]
+  type WidgetTracker[T /* <: typings.luminoWidgets.mod.Widget */] = typings.jupyterlabApputils.widgettrackerMod.WidgetTracker_[T]
 }

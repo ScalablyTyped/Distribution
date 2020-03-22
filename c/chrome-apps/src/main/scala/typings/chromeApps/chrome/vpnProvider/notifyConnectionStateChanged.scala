@@ -1,6 +1,6 @@
 package typings.chromeApps.chrome.vpnProvider
 
-import typings.chromeApps.AnonCONNECTEDConnected
+import typings.chromeApps.AnonCONNECTEDFAILURE
 import typings.chromeApps.chrome.ToStringLiteral
 import typings.chromeApps.chromeAppsStrings.connected_
 import typings.chromeApps.chromeAppsStrings.failure
@@ -20,9 +20,9 @@ object notifyConnectionStateChanged extends js.Object {
     * @see enum VpnConnectionState
     * @param callback Called when the notification is complete or if there is an error.
     */
-  def apply(state: ToStringLiteral[AnonCONNECTEDConnected, String, Exclude[String, connected_ | failure]]): Unit = js.native
+  def apply(state: ToStringLiteral[AnonCONNECTEDFAILURE, String, Exclude[String, connected_ | failure]]): Unit = js.native
   def apply(
-    state: ToStringLiteral[AnonCONNECTEDConnected, String, Exclude[String, connected_ | failure]],
+    state: ToStringLiteral[AnonCONNECTEDFAILURE, String, Exclude[String, connected_ | failure]],
     callback: js.Function0[Unit]
   ): Unit = js.native
 }

@@ -22,8 +22,8 @@ trait Operation extends js.Object
 
 object Operation {
   @scala.inline
-  def ReplaceOperation(op: replace, path: String, value: js.Any): Operation = {
-    val __obj = js.Dynamic.literal(op = op.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+  def RemoveOperation(op: remove, path: String): Operation = {
+    val __obj = js.Dynamic.literal(op = op.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Operation]
   }
@@ -34,26 +34,26 @@ object Operation {
     __obj.asInstanceOf[Operation]
   }
   @scala.inline
+  def CopyOperation(from: String, op: copy, path: String): Operation = {
+    val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], op = op.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[Operation]
+  }
+  @scala.inline
   def MoveOperation(from: String, op: move, path: String): Operation = {
     val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], op = op.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Operation]
   }
   @scala.inline
-  def RemoveOperation(op: remove, path: String): Operation = {
-    val __obj = js.Dynamic.literal(op = op.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+  def ReplaceOperation(op: replace, path: String, value: js.Any): Operation = {
+    val __obj = js.Dynamic.literal(op = op.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Operation]
   }
   @scala.inline
   def TestOperation(op: test, path: String, value: js.Any): Operation = {
     val __obj = js.Dynamic.literal(op = op.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[Operation]
-  }
-  @scala.inline
-  def CopyOperation(from: String, op: copy, path: String): Operation = {
-    val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], op = op.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Operation]
   }

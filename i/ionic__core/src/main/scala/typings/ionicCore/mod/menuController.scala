@@ -1,9 +1,8 @@
 package typings.ionicCore.mod
 
-import typings.ionicCore.animationInterfaceMod.Animation
+import typings.ionicCore.animationInterfaceMod.AnimationBuilder
 import typings.ionicCore.componentsMod._Global_.HTMLIonMenuElement
 import typings.ionicCore.menuInterfaceMod.MenuI
-import typings.ionicCore.oldAnimationAnimationInterfaceMod.AnimationBuilder
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,7 +31,6 @@ object menuController extends js.Object {
   def isOpen(menu: String): js.Promise[Boolean] = js.native
   def open(): js.Promise[Boolean] = js.native
   def open(menu: String): js.Promise[Boolean] = js.native
-  def registerAnimation(name: String, animation: js.Function1[/* menu */ MenuI, Animation]): Unit = js.native
   def registerAnimation(name: String, animation: AnimationBuilder): Unit = js.native
   def swipeGesture(shouldEnable: Boolean): js.Promise[js.UndefOr[HTMLIonMenuElement]] = js.native
   def swipeGesture(shouldEnable: Boolean, menu: String): js.Promise[js.UndefOr[HTMLIonMenuElement]] = js.native

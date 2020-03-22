@@ -1,6 +1,6 @@
 package typings.googleapis.pagespeedonlineV4Mod.pagespeedonlineV4
 
-import typings.googleapis.AnonHeightLeft
+import typings.googleapis.AnonLeft
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,7 +23,7 @@ trait SchemaPagespeedApiImageV4 extends js.Object {
     * Mime type of image data (e.g. &quot;image/jpeg&quot;).
     */
   var mime_type: js.UndefOr[String] = js.native
-  var page_rect: js.UndefOr[AnonHeightLeft] = js.native
+  var page_rect: js.UndefOr[AnonLeft] = js.native
   /**
     * Width of screenshot in pixels.
     */
@@ -37,7 +37,7 @@ object SchemaPagespeedApiImageV4 {
     height: Int | Double = null,
     key: String = null,
     mime_type: String = null,
-    page_rect: AnonHeightLeft = null,
+    page_rect: AnonLeft = null,
     width: Int | Double = null
   ): SchemaPagespeedApiImageV4 = {
     val __obj = js.Dynamic.literal()

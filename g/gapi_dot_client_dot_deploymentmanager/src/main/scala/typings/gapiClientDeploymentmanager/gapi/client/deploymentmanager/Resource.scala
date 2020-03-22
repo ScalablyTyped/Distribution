@@ -1,6 +1,6 @@
 package typings.gapiClientDeploymentmanager.gapi.client.deploymentmanager
 
-import typings.gapiClientDeploymentmanager.AnonCodeData
+import typings.gapiClientDeploymentmanager.AnonData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,7 +29,7 @@ trait Resource extends js.Object {
   /** Output only. The URL of the actual resource. */
   var url: js.UndefOr[String] = js.undefined
   /** Output only. If warning messages are generated during processing of this resource, this field will be populated. */
-  var warnings: js.UndefOr[js.Array[AnonCodeData]] = js.undefined
+  var warnings: js.UndefOr[js.Array[AnonData]] = js.undefined
 }
 
 object Resource {
@@ -46,7 +46,7 @@ object Resource {
     update: ResourceUpdate = null,
     updateTime: String = null,
     url: String = null,
-    warnings: js.Array[AnonCodeData] = null
+    warnings: js.Array[AnonData] = null
   ): Resource = {
     val __obj = js.Dynamic.literal()
     if (accessControl != null) __obj.updateDynamic("accessControl")(accessControl.asInstanceOf[js.Any])

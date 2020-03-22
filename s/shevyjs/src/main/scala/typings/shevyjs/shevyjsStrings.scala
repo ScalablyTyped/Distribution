@@ -10,9 +10,6 @@ object shevyjsStrings {
   sealed trait augmentedFourth extends js.Object
   
   @js.native
-  sealed trait fontSize extends js.Object
-  
-  @js.native
   sealed trait h1 extends Heading
   
   @js.native
@@ -31,16 +28,10 @@ object shevyjsStrings {
   sealed trait h6 extends Heading
   
   @js.native
-  sealed trait lineHeight extends js.Object
-  
-  @js.native
   sealed trait majorSecond extends js.Object
   
   @js.native
   sealed trait majorThird extends js.Object
-  
-  @js.native
-  sealed trait marginBottom extends js.Object
   
   @js.native
   sealed trait minorThird extends js.Object
@@ -50,8 +41,6 @@ object shevyjsStrings {
   
   @scala.inline
   def augmentedFourth: augmentedFourth = "augmentedFourth".asInstanceOf[augmentedFourth]
-  @scala.inline
-  def fontSize: fontSize = "fontSize".asInstanceOf[fontSize]
   @scala.inline
   def h1: h1 = "h1".asInstanceOf[h1]
   @scala.inline
@@ -65,13 +54,9 @@ object shevyjsStrings {
   @scala.inline
   def h6: h6 = "h6".asInstanceOf[h6]
   @scala.inline
-  def lineHeight: lineHeight = "lineHeight".asInstanceOf[lineHeight]
-  @scala.inline
   def majorSecond: majorSecond = "majorSecond".asInstanceOf[majorSecond]
   @scala.inline
   def majorThird: majorThird = "majorThird".asInstanceOf[majorThird]
-  @scala.inline
-  def marginBottom: marginBottom = "marginBottom".asInstanceOf[marginBottom]
   @scala.inline
   def minorThird: minorThird = "minorThird".asInstanceOf[minorThird]
   @scala.inline

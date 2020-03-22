@@ -1,12 +1,12 @@
 package typings.primereact.rowRadioButtonMod
 
-import typings.primereact.AnonDataOriginalEventEvent
+import typings.primereact.AnonDataObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RowRadioButtonProps extends js.Object {
-  var onClick: js.UndefOr[js.Function1[/* e */ AnonDataOriginalEventEvent, Unit]] = js.undefined
+  var onClick: js.UndefOr[js.Function1[/* e */ AnonDataObject, Unit]] = js.undefined
   var rowData: js.UndefOr[js.Object] = js.undefined
   var selected: js.UndefOr[Boolean] = js.undefined
 }
@@ -14,7 +14,7 @@ trait RowRadioButtonProps extends js.Object {
 object RowRadioButtonProps {
   @scala.inline
   def apply(
-    onClick: /* e */ AnonDataOriginalEventEvent => Unit = null,
+    onClick: /* e */ AnonDataObject => Unit = null,
     rowData: js.Object = null,
     selected: js.UndefOr[Boolean] = js.undefined
   ): RowRadioButtonProps = {

@@ -3,7 +3,9 @@ package typings.yazl.mod
 import typings.node.NodeJS.ReadableStream
 import typings.node.bufferMod.Buffer
 import typings.std.Date
-import typings.std.Partial
+import typings.yazl.PartialDirectoryOptions
+import typings.yazl.PartialOptions
+import typings.yazl.PartialReadStreamOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,13 +15,13 @@ import scala.scalajs.js.annotation._
 class ZipFile () extends js.Object {
   var outputStream: ReadableStream = js.native
   def addBuffer(buffer: Buffer, metadataPath: String): Unit = js.native
-  def addBuffer(buffer: Buffer, metadataPath: String, options: Partial[Options]): Unit = js.native
+  def addBuffer(buffer: Buffer, metadataPath: String, options: PartialOptions): Unit = js.native
   def addEmptyDirectory(metadataPath: String): Unit = js.native
-  def addEmptyDirectory(metadataPath: String, options: Partial[DirectoryOptions]): Unit = js.native
+  def addEmptyDirectory(metadataPath: String, options: PartialDirectoryOptions): Unit = js.native
   def addFile(realPath: String, metadataPath: String): Unit = js.native
-  def addFile(realPath: String, metadataPath: String, options: Partial[Options]): Unit = js.native
+  def addFile(realPath: String, metadataPath: String, options: PartialOptions): Unit = js.native
   def addReadStream(input: ReadableStream, metadataPath: String): Unit = js.native
-  def addReadStream(input: ReadableStream, metadataPath: String, options: Partial[ReadStreamOptions]): Unit = js.native
+  def addReadStream(input: ReadableStream, metadataPath: String, options: PartialReadStreamOptions): Unit = js.native
   def dateToDosDateTime(jsDate: Date): DosDateTime = js.native
   def end(): Unit = js.native
   def end(options: EndOptions): Unit = js.native

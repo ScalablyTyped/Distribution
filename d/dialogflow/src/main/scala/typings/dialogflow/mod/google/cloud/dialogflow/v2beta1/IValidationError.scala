@@ -12,12 +12,12 @@ trait IValidationError extends js.Object {
   /** ValidationError errorMessage */
   var errorMessage: js.UndefOr[String | Null] = js.undefined
   /** ValidationError severity */
-  var severity: js.UndefOr[Severity | Null] = js.undefined
+  var severity: js.UndefOr[Severity | String | Null] = js.undefined
 }
 
 object IValidationError {
   @scala.inline
-  def apply(entries: js.Array[String] = null, errorMessage: String = null, severity: Severity = null): IValidationError = {
+  def apply(entries: js.Array[String] = null, errorMessage: String = null, severity: Severity | String = null): IValidationError = {
     val __obj = js.Dynamic.literal()
     if (entries != null) __obj.updateDynamic("entries")(entries.asInstanceOf[js.Any])
     if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage.asInstanceOf[js.Any])

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object licenceTemplatesMod extends js.Object {
   @js.native
-  class LicenceTemplates () extends ResourceTemplates {
+  class LicenceTemplates protected () extends ResourceTemplates {
     def this(options: BaseServiceOptions) = this()
   }
   

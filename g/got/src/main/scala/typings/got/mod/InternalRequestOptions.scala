@@ -1,24 +1,20 @@
 package typings.got.mod
 
-import typings.node.AnonRejectUnauthorized
 import typings.node.Buffer
 import typings.node.httpMod.Agent
 import typings.node.httpMod.ClientRequestArgs
 import typings.node.httpMod.OutgoingHttpHeaders
+import typings.node.httpsMod.RequestOptions
 import typings.node.netMod.Socket
 import typings.node.tlsMod.KeyObject
 import typings.node.tlsMod.PxfObject
-import typings.node.tlsMod.SecureContextOptions
 import typings.node.tlsMod.SecureVersion
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait InternalRequestOptions
-  extends ClientRequestArgs
-     with SecureContextOptions
-     with AnonRejectUnauthorized {
+trait InternalRequestOptions extends RequestOptions {
   @JSName("agent")
   var agent_InternalRequestOptions: js.UndefOr[js.Any] = js.undefined
   // Redeclare options with `any` type for allow specify types incompatible with http.RequestOptions.

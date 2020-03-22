@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object mod extends js.Object {
   def htmlEscape(string: String): String = js.native
-  def htmlEscapeTag(template: TemplateStringsArray, substitutions: js.Any*): String = js.native
+  def htmlEscape(template: TemplateStringsArray, substitutions: js.Any*): String = js.native
   def htmlUnescape(htmlString: String): String = js.native
-  def htmlUnescapeTag(template: TemplateStringsArray, substitutions: js.Any*): String = js.native
+  def htmlUnescape(template: TemplateStringsArray, substitutions: js.Any*): String = js.native
 }
 

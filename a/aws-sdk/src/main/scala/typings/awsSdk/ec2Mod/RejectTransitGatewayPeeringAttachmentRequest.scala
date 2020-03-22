@@ -13,12 +13,15 @@ trait RejectTransitGatewayPeeringAttachmentRequest extends js.Object {
   /**
     * The ID of the transit gateway peering attachment.
     */
-  var TransitGatewayAttachmentId: String = js.native
+  var TransitGatewayAttachmentId: typings.awsSdk.ec2Mod.TransitGatewayAttachmentId = js.native
 }
 
 object RejectTransitGatewayPeeringAttachmentRequest {
   @scala.inline
-  def apply(TransitGatewayAttachmentId: String, DryRun: js.UndefOr[scala.Boolean] = js.undefined): RejectTransitGatewayPeeringAttachmentRequest = {
+  def apply(
+    TransitGatewayAttachmentId: TransitGatewayAttachmentId,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined
+  ): RejectTransitGatewayPeeringAttachmentRequest = {
     val __obj = js.Dynamic.literal(TransitGatewayAttachmentId = TransitGatewayAttachmentId.asInstanceOf[js.Any])
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
     __obj.asInstanceOf[RejectTransitGatewayPeeringAttachmentRequest]

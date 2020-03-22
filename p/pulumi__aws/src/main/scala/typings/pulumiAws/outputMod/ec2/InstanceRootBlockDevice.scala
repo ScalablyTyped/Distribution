@@ -34,7 +34,7 @@ trait InstanceRootBlockDevice extends js.Object {
   var volumeSize: Double = js.native
   /**
     * The type of volume. Can be `"standard"`, `"gp2"`,
-    * or `"io1"`. (Default: `"standard"`).
+    * or `"io1"`. (Default: `"gp2"`).
     */
   var volumeType: String = js.native
 }

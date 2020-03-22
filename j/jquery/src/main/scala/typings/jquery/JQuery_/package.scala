@@ -29,10 +29,12 @@ package object JQuery_ {
     typings.jquery.JQuery_.Callbacks[js.Function]
   ]
   // Workaround for TypeScript 2.3 which does not have support for weak types handling.
-  type CoordinatesPartial = (typings.std.Pick[
-    typings.jquery.JQuery_.Coordinates, 
-    typings.jquery.jqueryStrings.left | typings.jquery.jqueryStrings.top
-  ]) | org.scalablytyped.runtime.StringDictionary[scala.Nothing]
+  /* Rewritten from type alias, can be one of: 
+    - typings.jquery.PickCoordinatesleft
+    - typings.jquery.PickCoordinatestop
+    - org.scalablytyped.runtime.StringDictionary[scala.Nothing]
+  */
+  type CoordinatesPartial = typings.jquery.JQuery_._CoordinatesPartial | org.scalablytyped.runtime.StringDictionary[scala.Nothing]
   // #endregion
   // region Effects
   // #region Effects
@@ -114,11 +116,6 @@ package object JQuery_ {
     * @since 1.8
     */
   type PropHooks = org.scalablytyped.runtime.StringDictionary[typings.jquery.JQuery_.PropHook[typings.jquery.JQuery_.Node]]
-  // #endregion
-  // region Queue
-  // #region Queue
-  // TODO: Is the first element always a string or is that specific to the 'fx' queue?
-  type Queue[TElement] = typings.jquery.Anon0 with js.Array[typings.jquery.JQuery_.QueueFunction[TElement]]
   type QueueFunction[TElement] = js.ThisFunction1[/* this */ TElement, /* next */ js.Function0[scala.Unit], scala.Unit]
   /**
     * A selector is used in jQuery to select DOM elements from a DOM document. That document is, in most cases, the DOM document present in all browsers, but can also be an XML document received via Ajax.
@@ -137,15 +134,15 @@ package object JQuery_ {
     - typings.jquery.AnonNoBubble
     - typings.jquery.AnonBindType
     - typings.jquery.AnonDelegateType
-    - typings.jquery.AnonData[TTarget, TData]
-    - typings.jquery.AnonFalse[TTarget]
+    - typings.jquery.AnonSetup[TTarget, TData]
+    - typings.jquery.AnonTeardown[TTarget]
     - typings.jquery.AnonAdd[TTarget, TData]
-    - typings.jquery.AnonHandleObj[TTarget, TData]
-    - typings.jquery.AnonDataEvent[TTarget, TData]
-    - typings.jquery.AnonDataDefault[TTarget, TData]
-    - typings.jquery.AnonDataEventHandle[TTarget, TData]
-    - typings.jquery.AnonEvent[TTarget]
-    - typings.jquery.AnonEventPostDispatch[TTarget]
+    - typings.jquery.AnonRemove[TTarget, TData]
+    - typings.jquery.AnonTrigger[TTarget, TData]
+    - typings.jquery.AnonDefault[TTarget, TData]
+    - typings.jquery.AnonHandle[TTarget, TData]
+    - typings.jquery.AnonPreDispatch[TTarget]
+    - typings.jquery.AnonPostDispatch[TTarget]
     - org.scalablytyped.runtime.StringDictionary[scala.Nothing]
   */
   type SpecialEventHook[TTarget, TData] = (typings.jquery.JQuery_._SpecialEventHook[TTarget, TData]) | org.scalablytyped.runtime.StringDictionary[scala.Nothing]
@@ -189,16 +186,13 @@ package object JQuery_ {
   // #region Val hooks
   // Workaround for TypeScript 2.3 which does not have support for weak types handling.
   /* Rewritten from type alias, can be one of: 
-    - typings.jquery.AnonElem[TElement]
-    - typings.jquery.AnonElemSet[TElement]
+    - typings.jquery.Anon0[TElement]
+    - typings.jquery.Anon1[TElement]
     - org.scalablytyped.runtime.StringDictionary[scala.Nothing]
   */
   type ValHook[TElement] = typings.jquery.JQuery_._ValHook[TElement] | org.scalablytyped.runtime.StringDictionary[scala.Nothing]
   type ValHooks = // Set to HTMLElement to minimize breaks but should probably be Element.
   org.scalablytyped.runtime.StringDictionary[typings.jquery.JQuery_.ValHook[typings.std.HTMLElement]]
-  type _TypeEventHandlers[TDelegateTarget, TData, TCurrentTarget, TTarget] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ TType in keyof jquery.JQuery.TypeToTriggeredEventMap<TDelegateTarget, TData, TCurrentTarget, TTarget> ]:? jquery.JQuery.TypeEventHandler<TDelegateTarget, TData, TCurrentTarget, TTarget, TType> | false | object}
-    */ typings.jquery.jqueryStrings._TypeEventHandlers with js.Any
   /**
     * A string is designated htmlString in jQuery documentation when it is used to represent one or more DOM elements, typically to be created and inserted in the document. When passed as an argument of the jQuery() function, the string is identified as HTML if it starts with <tag ... >) and is parsed as such until the final > character. Prior to jQuery 1.9, a string was considered to be HTML if it contained <tag ... > anywhere within the string.
     */

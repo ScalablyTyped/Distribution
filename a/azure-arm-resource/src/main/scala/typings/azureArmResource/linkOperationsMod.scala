@@ -371,8 +371,8 @@ object linkOperationsMod extends js.Object {
       */
     def listAtSourceScope(scope: String): js.Promise[ResourceLinkResult] = js.native
     def listAtSourceScope(scope: String, callback: ServiceCallback[ResourceLinkResult]): Unit = js.native
-    def listAtSourceScope(scope: String, options: AnonCustomHeadersFilter): js.Promise[ResourceLinkResult] = js.native
-    def listAtSourceScope(scope: String, options: AnonCustomHeadersFilter, callback: ServiceCallback[ResourceLinkResult]): Unit = js.native
+    def listAtSourceScope(scope: String, options: AnonFilter): js.Promise[ResourceLinkResult] = js.native
+    def listAtSourceScope(scope: String, options: AnonFilter, callback: ServiceCallback[ResourceLinkResult]): Unit = js.native
     /**
       * Gets a list of resource links at and below the specified source scope.
       *
@@ -453,7 +453,7 @@ object linkOperationsMod extends js.Object {
       * @reject {Error|ServiceError} - The error object.
       */
     def listAtSourceScopeWithHttpOperationResponse(scope: String): js.Promise[HttpOperationResponse[ResourceLinkResult]] = js.native
-    def listAtSourceScopeWithHttpOperationResponse(scope: String, options: AnonCustomHeadersFilter): js.Promise[HttpOperationResponse[ResourceLinkResult]] = js.native
+    def listAtSourceScopeWithHttpOperationResponse(scope: String, options: AnonFilter): js.Promise[HttpOperationResponse[ResourceLinkResult]] = js.native
     /**
       * Gets all the linked resources for the subscription.
       *
@@ -490,8 +490,8 @@ object linkOperationsMod extends js.Object {
       */
     def listAtSubscription(): js.Promise[ResourceLinkResult] = js.native
     def listAtSubscription(callback: ServiceCallback[ResourceLinkResult]): Unit = js.native
-    def listAtSubscription(options: AnonCustomHeadersFilter): js.Promise[ResourceLinkResult] = js.native
-    def listAtSubscription(options: AnonCustomHeadersFilter, callback: ServiceCallback[ResourceLinkResult]): Unit = js.native
+    def listAtSubscription(options: AnonFilter): js.Promise[ResourceLinkResult] = js.native
+    def listAtSubscription(options: AnonFilter, callback: ServiceCallback[ResourceLinkResult]): Unit = js.native
     /**
       * Gets all the linked resources for the subscription.
       *
@@ -567,7 +567,7 @@ object linkOperationsMod extends js.Object {
       * @reject {Error|ServiceError} - The error object.
       */
     def listAtSubscriptionWithHttpOperationResponse(): js.Promise[HttpOperationResponse[ResourceLinkResult]] = js.native
-    def listAtSubscriptionWithHttpOperationResponse(options: AnonCustomHeadersFilter): js.Promise[HttpOperationResponse[ResourceLinkResult]] = js.native
+    def listAtSubscriptionWithHttpOperationResponse(options: AnonFilter): js.Promise[HttpOperationResponse[ResourceLinkResult]] = js.native
   }
   
 }

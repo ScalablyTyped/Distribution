@@ -2,7 +2,7 @@ package typings.reactSelect.controlMod
 
 import typings.react.mod.ReactNode
 import typings.react.mod.Ref
-import typings.reactSelect.AnonEventOnMouseDown
+import typings.reactSelect.AnonOnMouseDown
 import typings.reactSelect.selectMod.Props
 import typings.reactSelect.typesMod.ActionTypes
 import typings.reactSelect.typesMod.ClassNamesState
@@ -21,7 +21,7 @@ trait ControlProps[OptionType /* <: OptionTypeBase */] extends js.Object {
   var className: js.UndefOr[String] = js.native
   var hasValue: Boolean = js.native
   /** The mouse down event and the innerRef to pass down to the controller element. */
-  var innerProps: AnonEventOnMouseDown = js.native
+  var innerProps: AnonOnMouseDown = js.native
   var innerRef: Ref[_] = js.native
   /** Whether the select is disabled. */
   var isDisabled: Boolean = js.native

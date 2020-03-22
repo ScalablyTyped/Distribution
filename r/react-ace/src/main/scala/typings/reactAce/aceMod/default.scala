@@ -1,7 +1,7 @@
 package typings.reactAce.aceMod
 
-import typings.propTypes.mod.ValidationMap
-import typings.std.Partial
+import typings.reactAce.PartialIAceEditorProps
+import typings.reactAce.ValidationMapIAceEditorPr
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ class default protected () extends ReactAce {
 @JSImport("react-ace/lib/ace", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: Partial[IAceEditorProps] = js.native
-  var propTypes: ValidationMap[IAceEditorProps] = js.native
+  var defaultProps: PartialIAceEditorProps = js.native
+  var propTypes: ValidationMapIAceEditorPr = js.native
 }
 

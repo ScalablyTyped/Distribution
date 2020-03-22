@@ -19,9 +19,14 @@ object _ColorType {
     __obj.asInstanceOf[_ColorType]
   }
   @scala.inline
-  def PatternObject(pattern: PatternOptionsObject, animation: Boolean | AnimationOptionsObject = null): _ColorType = {
+  def PatternObject(
+    pattern: PatternOptionsObject,
+    animation: Boolean | AnimationOptionsObject = null,
+    patternIndex: Int | Double = null
+  ): _ColorType = {
     val __obj = js.Dynamic.literal(pattern = pattern.asInstanceOf[js.Any])
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
+    if (patternIndex != null) __obj.updateDynamic("patternIndex")(patternIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[_ColorType]
   }
 }

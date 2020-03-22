@@ -7,7 +7,6 @@ import typings.blueprintjsSelect.omnibarMod.IOmnibarProps
 import typings.blueprintjsSelect.queryListMod.IQueryListProps
 import typings.blueprintjsSelect.selectMod.ISelectProps
 import typings.blueprintjsSelect.suggestMod.ISuggestProps
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -93,7 +92,7 @@ object componentsMod extends js.Object {
   /* static members */
   @js.native
   object Suggest extends js.Object {
-    var defaultProps: Partial[ISuggestProps[_]] = js.native
+    var defaultProps: PartialISuggestPropsany = js.native
     var displayName: String = js.native
     def ofType[T](): Instantiable1[/* props */ ISuggestProps[T], typings.blueprintjsSelect.suggestMod.Suggest[T]] = js.native
   }

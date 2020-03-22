@@ -1,6 +1,6 @@
 package typings.klawSync.mod
 
-import typings.klawSync.AnonPath
+import typings.klawSync.AnonReaddirSync
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,7 +24,7 @@ trait Options extends js.Object {
     * @default graceful-fs
     * @since v4.0.0
     */
-  var fs: js.UndefOr[AnonPath] = js.undefined
+  var fs: js.UndefOr[AnonReaddirSync] = js.undefined
   /**
     * @description True to only return files (ignore directories).
     *              Defaults to false if not specified.
@@ -54,7 +54,7 @@ object Options {
   def apply(
     depthLimit: Int | Double = null,
     filter: /* item */ Item => Boolean = null,
-    fs: AnonPath = null,
+    fs: AnonReaddirSync = null,
     nodir: js.UndefOr[Boolean] = js.undefined,
     nofile: js.UndefOr[Boolean] = js.undefined,
     traverseAll: js.UndefOr[Boolean] = js.undefined

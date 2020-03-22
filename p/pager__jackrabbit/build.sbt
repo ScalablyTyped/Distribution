@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "pager__jackrabbit"
-version := "4.8-dt-20200102Z-845b7d"
+version := "4.8-dt-20200102Z-8ba33c"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "amqplib" % "0.5-dt-20191126Z-ff5231",
-  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20191111Z-26a703",
-  "org.scalablytyped" %%% "node" % "13.7-dt-20200211Z-d6af7e",
-  "org.scalablytyped" %%% "std" % "3.7-1b8369")
+  "org.scalablytyped" %%% "amqplib" % "0.5-dt-20191126Z-89e2e5",
+  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20191111Z-2fc7af",
+  "org.scalablytyped" %%% "node" % "13.7-dt-20200211Z-b30bde",
+  "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

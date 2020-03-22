@@ -1,10 +1,10 @@
 package typings.oracleOraclejet.ojdatetimepickerMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.oracleOraclejet.Anon
+import typings.oracleOraclejet.AnonChangeMonth
 import typings.oracleOraclejet.AnonClass
-import typings.oracleOraclejet.AnonClassNameDisabled
 import typings.oracleOraclejet.AnonCurrentText
+import typings.oracleOraclejet.AnonDisabled
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.ojdatetimepickerMod.ojInputDate.DayFormatterInput
 import typings.oracleOraclejet.ojdatetimepickerMod.ojInputDate.DayFormatterOutput
@@ -44,19 +44,19 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ojInputDate_[SP /* <: ojInputDateSettableProperties */] extends inputBase[String, SP, String, String] {
   var converter: Converter[String] | RegisteredConverter = js.native
-  var datePicker: Anon = js.native
-  var dayMetaData: StringDictionary[StringDictionary[StringDictionary[AnonClassNameDisabled]]] = js.native
+  var datePicker: AnonChangeMonth = js.native
+  var dayMetaData: StringDictionary[StringDictionary[StringDictionary[AnonDisabled]]] = js.native
   var keyboardEdit: enabled | disabled = js.native
   var max: String | Null = js.native
   var min: String | Null = js.native
   var onConverterChanged: (js.Function1[/* event */ JetElementCustomEvent[Converter[String] | RegisteredConverter], _]) | Null = js.native
-  var onDatePickerChanged: (js.Function1[/* event */ JetElementCustomEvent[Anon], _]) | Null = js.native
+  var onDatePickerChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonChangeMonth], _]) | Null = js.native
   var onDayFormatterChanged: (js.Function1[
     /* event */ JetElementCustomEvent[js.Function1[/* param */ DayFormatterInput, Null | all | DayFormatterOutput]], 
     _
   ]) | Null = js.native
   var onDayMetaDataChanged: (js.Function1[
-    /* event */ JetElementCustomEvent[StringDictionary[StringDictionary[StringDictionary[AnonClassNameDisabled]]]], 
+    /* event */ JetElementCustomEvent[StringDictionary[StringDictionary[StringDictionary[AnonDisabled]]]], 
     _
   ]) | Null = js.native
   var onKeyboardEditChanged: (js.Function1[/* event */ JetElementCustomEvent[enabled | disabled], _]) | Null = js.native
@@ -129,12 +129,12 @@ trait ojInputDate_[SP /* <: ojInputDateSettableProperties */] extends inputBase[
   @JSName("addEventListener")
   def addEventListener_datePickerChanged(
     `type`: datePickerChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Anon], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonChangeMonth], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_datePickerChanged(
     `type`: datePickerChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Anon], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonChangeMonth], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -142,7 +142,7 @@ trait ojInputDate_[SP /* <: ojInputDateSettableProperties */] extends inputBase[
     `type`: dayMetaDataChanged,
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[StringDictionary[StringDictionary[StringDictionary[AnonClassNameDisabled]]]], 
+      /* ev */ JetElementCustomEvent[StringDictionary[StringDictionary[StringDictionary[AnonDisabled]]]], 
       _
     ]
   ): Unit = js.native
@@ -151,7 +151,7 @@ trait ojInputDate_[SP /* <: ojInputDateSettableProperties */] extends inputBase[
     `type`: dayMetaDataChanged,
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[StringDictionary[StringDictionary[StringDictionary[AnonClassNameDisabled]]]], 
+      /* ev */ JetElementCustomEvent[StringDictionary[StringDictionary[StringDictionary[AnonDisabled]]]], 
       _
     ],
     useCapture: Boolean
@@ -193,9 +193,9 @@ trait ojInputDate_[SP /* <: ojInputDateSettableProperties */] extends inputBase[
   @JSName("getProperty")
   def getProperty_converter(property: converter): Converter[String] | RegisteredConverter = js.native
   @JSName("getProperty")
-  def getProperty_datePicker(property: datePicker): Anon = js.native
+  def getProperty_datePicker(property: datePicker): AnonChangeMonth = js.native
   @JSName("getProperty")
-  def getProperty_dayMetaData(property: dayMetaData): StringDictionary[StringDictionary[StringDictionary[AnonClassNameDisabled]]] = js.native
+  def getProperty_dayMetaData(property: dayMetaData): StringDictionary[StringDictionary[StringDictionary[AnonDisabled]]] = js.native
   @JSName("getProperty")
   def getProperty_keyboardEdit(property: keyboardEdit): enabled | disabled = js.native
   @JSName("getProperty")
@@ -217,12 +217,9 @@ trait ojInputDate_[SP /* <: ojInputDateSettableProperties */] extends inputBase[
   @JSName("setProperty")
   def setProperty_converter(property: converter, value: RegisteredConverter): Unit = js.native
   @JSName("setProperty")
-  def setProperty_datePicker(property: datePicker, value: Anon): Unit = js.native
+  def setProperty_datePicker(property: datePicker, value: AnonChangeMonth): Unit = js.native
   @JSName("setProperty")
-  def setProperty_dayMetaData(
-    property: dayMetaData,
-    value: StringDictionary[StringDictionary[StringDictionary[AnonClassNameDisabled]]]
-  ): Unit = js.native
+  def setProperty_dayMetaData(property: dayMetaData, value: StringDictionary[StringDictionary[StringDictionary[AnonDisabled]]]): Unit = js.native
   @JSName("setProperty")
   def setProperty_max(property: max): Unit = js.native
   @JSName("setProperty")

@@ -1,6 +1,6 @@
 package typings.firefoxWebextBrowser.browser.menus
 
-import typings.firefoxWebextBrowser.AnonCheckedCommand
+import typings.firefoxWebextBrowser.AnonCommand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ object create extends js.Object {
     *     item, details will be available in `runtime.lastError`.
     * @returns The ID of the newly created item.
     */
-  def apply(createProperties: AnonCheckedCommand): Double | String = js.native
-  def apply(createProperties: AnonCheckedCommand, callback: js.Function0[Unit]): Double | String = js.native
+  def apply(createProperties: AnonCommand): Double | String = js.native
+  def apply(createProperties: AnonCommand, callback: js.Function0[Unit]): Double | String = js.native
 }
 

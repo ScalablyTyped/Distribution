@@ -1,7 +1,7 @@
 package typings.loopback.mod
 
 import typings.loopback.AnonConnector
-import typings.loopback.AnonDataSourceRelations
+import typings.loopback.AnonRelations
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -73,7 +73,7 @@ object loopback extends js.Object {
     * @property {any} [relations] Model relations to add/update
     * @header loopback.configureModel(ModelCtor, config
     */
-  def configureModel(ModelCtor: Model, config: AnonDataSourceRelations): Unit = js.native
+  def configureModel(ModelCtor: Model, config: AnonRelations): Unit = js.native
   /**
     * Create a data source with passing the provided options to the connector
     * @param {string} name Optional name.

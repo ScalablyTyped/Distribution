@@ -3,7 +3,7 @@ package typings.jupyterlabMainmenu.fileMod
 import typings.jupyterlabMainmenu.fileMod.IFileMenu.ICloseAndCleaner
 import typings.jupyterlabMainmenu.fileMod.IFileMenu.IConsoleCreator
 import typings.jupyterlabMainmenu.labmenuMod.IJupyterLabMenu
-import typings.phosphorWidgets.mod.Widget
+import typings.luminoWidgets.mod.Widget
 import typings.std.Set
 import scala.scalajs.js
 import scala.scalajs.js.`|`

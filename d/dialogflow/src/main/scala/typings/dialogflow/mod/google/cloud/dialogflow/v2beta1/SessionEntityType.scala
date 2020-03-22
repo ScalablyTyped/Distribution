@@ -26,7 +26,7 @@ class SessionEntityType () extends ISessionEntityType {
   var entities_SessionEntityType: js.Array[IEntity] = js.native
   /** SessionEntityType entityOverrideMode. */
   @JSName("entityOverrideMode")
-  var entityOverrideMode_SessionEntityType: EntityOverrideMode = js.native
+  var entityOverrideMode_SessionEntityType: EntityOverrideMode | String = js.native
   /** SessionEntityType name. */
   @JSName("name")
   var name_SessionEntityType: String = js.native

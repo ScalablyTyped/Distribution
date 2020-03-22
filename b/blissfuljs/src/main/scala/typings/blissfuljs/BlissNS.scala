@@ -1346,9 +1346,9 @@ object BlissNS extends js.Object {
     def $_T_BlissDecoratedElement[T](selector: String, context: Element): BlissDecoratedElement[T] = js.native
     def apply[T](selector: String): BlissDecoratedElement[T] = js.native
     def apply[T](selector: String, context: Element): BlissDecoratedElement[T] = js.native
-    def Class(options: AnonAbstract): js.Object = js.native
+    def Class(options: AnonDictpropertyName): js.Object = js.native
     @JSName("Class")
-    def Class_T_T[T](options: AnonAbstract): T = js.native
+    def Class_T_T[T](options: AnonDictpropertyName): T = js.native
     def add(callbacks: StringDictionary[js.Function]): Unit = js.native
     def add(callbacks: StringDictionary[js.Function], on: Array[_]): Unit = js.native
     def add(callbacks: StringDictionary[js.Function], on: BlissStatic): Unit = js.native

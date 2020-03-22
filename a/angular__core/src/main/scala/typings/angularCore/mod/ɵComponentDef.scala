@@ -7,18 +7,20 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ɵComponentDef[T] extends ɵDirectiveDef[T] {
+  /** Constants associated with the component's view. */
+  val consts: TConstants | Null = js.native
+  /**
+    * Defines arbitrary developer-defined data to be stored on a renderer instance.
+    * This is useful for renderers that delegate to other renderers.
+    */
+  val data: StringDictionary[js.Any] = js.native
   /**
     * The number of nodes, local refs, and pipes in this component template.
     *
     * Used to calculate the length of the component's LView array, so we
     * can pre-fill the array and set the binding start index.
     */
-  val consts: Double = js.native
-  /**
-    * Defines arbitrary developer-defined data to be stored on a renderer instance.
-    * This is useful for renderers that delegate to other renderers.
-    */
-  val data: StringDictionary[js.Any] = js.native
+  val decls: Double = js.native
   /**
     * Registry of directives and components that may be found in this view.
     *

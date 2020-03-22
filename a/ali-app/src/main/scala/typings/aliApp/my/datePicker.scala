@@ -1,6 +1,6 @@
 package typings.aliApp.my
 
-import typings.std.Partial
+import typings.aliApp.PartialDatePickerOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,6 +11,6 @@ object datePicker extends js.Object {
   /**
   	 * 打开日期选择列表
   	 */
-  def apply(optiosn: Partial[DatePickerOptions]): Unit = js.native
+  def apply(optiosn: PartialDatePickerOptions): Unit = js.native
 }
 

@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait DescribeServiceActionExecutionParametersOutput extends js.Object {
+  /**
+    * The parameters of the self-service action.
+    */
   var ServiceActionParameters: js.UndefOr[ExecutionParameters] = js.native
 }
 

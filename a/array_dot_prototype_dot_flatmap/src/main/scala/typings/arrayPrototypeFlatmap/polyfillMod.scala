@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 @JSImport("array.prototype.flatmap/polyfill", JSImport.Namespace)
 @js.native
 object polyfillMod extends js.Object {
-  def apply(): FnArray = js.native
+  def apply(): FnCall = js.native
 }
 

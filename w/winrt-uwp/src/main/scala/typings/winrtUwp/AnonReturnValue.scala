@@ -1,18 +1,19 @@
 package typings.winrtUwp
 
+import typings.winrtUwp.Windows.Foundation.IWwwFormUrlDecoderEntry
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonReturnValue extends js.Object {
-  /** Returns true if the method succeeds, or false otherwise. */ var returnValue: Boolean
-  /** True if automatic adjustment is enabled; false otherwise. */ var value: Boolean
+  /** The name-value pairs. */ var items: IWwwFormUrlDecoderEntry
+  /** The number of name-value pairs in items. */ var returnValue: Double
 }
 
 object AnonReturnValue {
   @scala.inline
-  def apply(returnValue: Boolean, value: Boolean): AnonReturnValue = {
-    val __obj = js.Dynamic.literal(returnValue = returnValue.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+  def apply(items: IWwwFormUrlDecoderEntry, returnValue: Double): AnonReturnValue = {
+    val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AnonReturnValue]
   }

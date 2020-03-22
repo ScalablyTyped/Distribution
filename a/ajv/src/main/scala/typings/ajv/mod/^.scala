@@ -3,7 +3,7 @@ package typings.ajv.mod
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.TopLevel
-import typings.ajv.TypeofClassMissingRefError
+import typings.ajv.TypeofMissingRefError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +19,7 @@ class ^ () extends Ajv {
 object ^ extends TopLevel[Instantiable0[Ajv] with (Instantiable1[/* options */ Options, Ajv])] {
   @JSName("$dataMetaSchema")
   var $dataMetaSchema: js.Object = js.native
-  var MissingRefError: TypeofClassMissingRefError = js.native
+  var MissingRefError: TypeofMissingRefError = js.native
   var ValidationError: Instantiable1[/* errors */ js.Array[ErrorObject], typings.ajv.mod.AjvErrors.ValidationError] = js.native
   def apply(): Ajv = js.native
   def apply(options: Options): Ajv = js.native

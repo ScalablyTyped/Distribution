@@ -1,6 +1,6 @@
 package typings.pdf2image.mod
 
-import typings.std.Partial
+import typings.pdf2image.PartialOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object compileConverter extends js.Object {
   def apply(): Converter = js.native
-  def apply(options: Partial[Options]): Converter = js.native
+  def apply(options: PartialOptions): Converter = js.native
 }
 

@@ -12,6 +12,7 @@ object imageUtilsMod extends js.Object {
   @js.native
   object ImageUtils extends js.Object {
     var crossOrigin: String = js.native
+    def getDataURL(image: js.Any): String = js.native
     def loadTexture(url: String): Texture = js.native
     def loadTexture(url: String, mapping: Mapping): Texture = js.native
     def loadTexture(url: String, mapping: Mapping, onLoad: js.Function1[/* texture */ Texture, Unit]): Texture = js.native

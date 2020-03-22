@@ -2,7 +2,7 @@ package typings.jupyterlabCsvviewer
 
 import typings.jupyterlabCsvviewer.parseMod.IParser.IResults
 import typings.jupyterlabCsvviewer.toolbarMod.CSVToolbar.IOptions
-import typings.phosphorDatagrid.mod.DataGrid
+import typings.luminoDatagrid.mod.DataGrid
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

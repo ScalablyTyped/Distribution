@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@catho/quantum/components/Card/Thumbnail", JSImport.Namespace)
 @js.native
 object thumbnailMod extends js.Object {
-  type Thumbnail = ComponentType[AnonAlt] with AnonCardThumbnail
+  type Thumbnail = ComponentType[AnonAlt] with Anon5
 }
 

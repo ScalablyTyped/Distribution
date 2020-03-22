@@ -1,6 +1,6 @@
 package typings.mlLevenbergMarquardt.mod
 
-import typings.std.Partial
+import typings.mlLevenbergMarquardt.PartialOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   /** Implementation of the Levenberg-Marquardt curve fitting method. */
   def apply(d: Data, fn: FittedFunction): Result = js.native
-  def apply(d: Data, fn: FittedFunction, o: Partial[Options]): Result = js.native
+  def apply(d: Data, fn: FittedFunction, o: PartialOptions): Result = js.native
 }
 

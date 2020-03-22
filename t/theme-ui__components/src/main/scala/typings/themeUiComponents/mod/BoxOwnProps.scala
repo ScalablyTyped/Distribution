@@ -1,5 +1,6 @@
 package typings.themeUiComponents.mod
 
+import typings.csstype.mod.OpacityProperty
 import typings.emotionCore.mod.InterpolationWithTheme
 import typings.react.mod.ElementType
 import typings.styledSystem.mod.BackgroundColorProps
@@ -50,10 +51,7 @@ object BoxOwnProps {
     mt: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
     mx: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
     my: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
-    opacity: ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.OpacityProperty */ _, 
-      RequiredTheme
-    ] = null,
+    opacity: ResponsiveValue[OpacityProperty, RequiredTheme] = null,
     p: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
     padding: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
     paddingBottom: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,

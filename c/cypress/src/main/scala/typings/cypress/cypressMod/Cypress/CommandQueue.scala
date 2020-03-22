@@ -1,32 +1,17 @@
 package typings.cypress.cypressMod.Cypress
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // $CommandQueue from `command_queue.coffee` - a lot to type. Might be more useful if it was written in TS
+@js.native
 trait CommandQueue extends ObjectLike {
-  def add(obj: js.Any): js.Any
-  def create(): CommandQueue
-  def get(): js.Any
-  def logs(filters: js.Any): js.Any
-  def toJSON(): js.Array[String]
-}
-
-object CommandQueue {
-  @scala.inline
-  def apply(
-    add: js.Any => js.Any,
-    create: () => CommandQueue,
-    get: () => js.Any,
-    logs: js.Any => js.Any,
-    toJSON: () => js.Array[String],
-    StringDictionary: StringDictionary[js.Any] = null
-  ): CommandQueue = {
-    val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), create = js.Any.fromFunction0(create), get = js.Any.fromFunction0(get), logs = js.Any.fromFunction1(logs), toJSON = js.Any.fromFunction0(toJSON))
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    __obj.asInstanceOf[CommandQueue]
-  }
+  def add(obj: js.Any): js.Any = js.native
+  def create(): CommandQueue = js.native
+  def get(): js.Any = js.native
+  def get[K /* <: String */](key: String): /* import warning: importer.ImportType#apply Failed type conversion: cypress.cypress.Cypress.CommandQueue[K] */ js.Any = js.native
+  def logs(filters: js.Any): js.Any = js.native
+  def toJSON(): js.Array[String] = js.native
 }
 

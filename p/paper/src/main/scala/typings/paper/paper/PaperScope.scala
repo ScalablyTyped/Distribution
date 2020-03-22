@@ -5,15 +5,15 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.Instantiable6
-import typings.paper.TypeofClassColor
-import typings.paper.TypeofClassKey
-import typings.paper.TypeofClassPaperScope
-import typings.paper.TypeofClassPaperScript
-import typings.paper.TypeofClassPathItem
-import typings.paper.TypeofClassPoint
-import typings.paper.TypeofClassSize
+import typings.paper.TypeofColor
+import typings.paper.TypeofKey
+import typings.paper.TypeofPaperScope
+import typings.paper.TypeofPaperScript
 import typings.paper.TypeofPath
+import typings.paper.TypeofPathItem
+import typings.paper.TypeofPoint
 import typings.paper.TypeofShape
+import typings.paper.TypeofSize
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import scala.scalajs.js
@@ -46,7 +46,7 @@ import scala.scalajs.js.annotation._
   * Creates a PaperScope object.
   */
 class PaperScope () extends js.Object {
-  var Color: TypeofClassColor = js.native
+  var Color: TypeofColor = js.native
   var CompoundPath: Instantiable1[/* pathData */ String, typings.paper.paper.CompoundPath] = js.native
   var Curve: Instantiable2[/* segment1 */ Segment, /* segment2 */ Segment, typings.paper.paper.Curve] = js.native
   var CurveLocation: Instantiable3[
@@ -65,16 +65,16 @@ class PaperScope () extends js.Object {
   var Group: Instantiable1[js.UndefOr[/* children */ js.Array[Item]], typings.paper.paper.Group] = js.native
   var HitResult: Instantiable0[typings.paper.paper.HitResult] = js.native
   var Item: Instantiable0[typings.paper.paper.Item] = js.native
-  var Key: TypeofClassKey = js.native
+  var Key: TypeofKey = js.native
   var KeyEvent: Instantiable0[typings.paper.paper.KeyEvent] = js.native
   var Layer: Instantiable1[js.UndefOr[/* children */ js.Array[Item]], typings.paper.paper.Layer] = js.native
   var Matrix: Instantiable0[typings.paper.paper.Matrix] = js.native
   var MouseEvent: Instantiable0[typings.paper.paper.MouseEvent] = js.native
-  var PaperScope: TypeofClassPaperScope = js.native
-  var PaperScript: TypeofClassPaperScript = js.native
+  var PaperScope: TypeofPaperScope = js.native
+  var PaperScript: TypeofPaperScript = js.native
   var Path: TypeofPath with (Instantiable1[js.UndefOr[/* segments */ js.Array[Segment]], typings.paper.paper.Path]) = js.native
-  var PathItem: TypeofClassPathItem = js.native
-  var Point: TypeofClassPoint = js.native
+  var PathItem: TypeofPathItem = js.native
+  var Point: TypeofPoint = js.native
   var PointText: Instantiable1[/* point */ Point, typings.paper.paper.PointText] = js.native
   var Project: Instantiable1[/* element */ HTMLCanvasElement | String | Size, typings.paper.paper.Project] = js.native
   var Raster: Instantiable2[
@@ -90,7 +90,7 @@ class PaperScope () extends js.Object {
     typings.paper.paper.Segment
   ] = js.native
   var Shape: TypeofShape with Instantiable0[typings.paper.paper.Shape] = js.native
-  var Size: TypeofClassSize = js.native
+  var Size: TypeofSize = js.native
   var Style: Instantiable1[/* style */ js.Object, typings.paper.paper.Style] = js.native
   var SymbolDefinition: Instantiable2[
     /* item */ Item, 

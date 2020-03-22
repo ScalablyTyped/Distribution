@@ -1,5 +1,6 @@
 package typings.highcharts.mod
 
+import typings.highcharts.highchartsStrings._empty
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,6 +38,10 @@ class Point () extends js.Object {
     * Range series only. The high or maximum value for each data point.
     */
   var high: js.UndefOr[Double] = js.native
+  /**
+    * Contains the point's index in the `Series.points` array.
+    */
+  val index: Double = js.native
   /**
     * Range series only. The low or minimum value for each data point.
     */
@@ -135,7 +140,7 @@ class Point () extends js.Object {
     *
     * @return The zone item.
     */
-  def getZone(): PlotSeriesZonesOptions = js.native
+  def getZone(): SeriesZonesOptionsObject = js.native
   /**
     * Get the path definition for the halo, which is usually a shadow-like
     * circle around the currently hovered point.
@@ -259,8 +264,9 @@ class Point () extends js.Object {
     * Set the point's state.
     *
     * @param state
-    *        The new state, can be one of `''` (an empty string), `hover`,
-    *        `select` or `inactive`.
+    *        The new state, can be one of `'hover'`, `'select'`, `'inactive'`,
+    *        or `''` (an empty string), `'normal'` or `undefined` to set to
+    *        normal state.
     *
     * @param move
     *        State for animation.
@@ -268,8 +274,10 @@ class Point () extends js.Object {
     * @fires Highcharts.Point#afterSetState
     */
   def setState(): Unit = js.native
-  def setState(state: String): Unit = js.native
-  def setState(state: String, move: Boolean): Unit = js.native
+  def setState(state: _empty): Unit = js.native
+  def setState(state: _empty, move: Boolean): Unit = js.native
+  def setState(state: PointStateValue): Unit = js.native
+  def setState(state: PointStateValue, move: Boolean): Unit = js.native
   /**
     * Sonify a single point.
     *

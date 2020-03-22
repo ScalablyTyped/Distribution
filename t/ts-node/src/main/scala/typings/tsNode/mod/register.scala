@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object register extends js.Object {
   def apply(): Register_ = js.native
-  def apply(opts: Options): Register_ = js.native
+  def apply(opts: RegisterOptions): Register_ = js.native
 }
 

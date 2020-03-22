@@ -9,9 +9,9 @@ import typings.seneca.AnonAdd
 import typings.seneca.AnonBasic
 import typings.seneca.AnonHost
 import typings.seneca.AnonInterval
-import typings.seneca.AnonIntervalRunning
 import typings.seneca.AnonLevel
 import typings.seneca.AnonLocal
+import typings.seneca.AnonRunning
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -45,7 +45,7 @@ trait Options
   // Action statistics settings. See rolling-stats module.
   var stats: js.UndefOr[AnonInterval] = js.undefined
   // Log status at periodic intervals.
-  var status: js.UndefOr[AnonIntervalRunning] = js.undefined
+  var status: js.UndefOr[AnonRunning] = js.undefined
   // Enforce strict behaviours. Relax when backwards compatibility needed.
   var strict: js.UndefOr[AnonAdd] = js.undefined
   var tag: js.UndefOr[String] = js.undefined
@@ -73,7 +73,7 @@ object Options {
     plugin: js.Any = null,
     repl: AnonHost = null,
     stats: AnonInterval = null,
-    status: AnonIntervalRunning = null,
+    status: AnonRunning = null,
     strict: AnonAdd = null,
     tag: String = null,
     timeout: Int | Double = null,

@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact.overflowSetTypesMod
 
-import typings.officeUiFabricReact.focusZoneTypesMod.IFocusZoneProps
+import typings.fluentuiReactFocus.focusZoneTypesMod.IFocusZoneProps
 import typings.officeUiFabricReact.overflowSetBaseMod.OverflowSetBase
 import typings.react.mod.ClassAttributes
 import typings.react.mod.Key

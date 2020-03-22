@@ -4,24 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait DocumentFetchRevsResponse extends js.Object {
+trait DocumentFetchRevsResponse[D] extends js.Object {
   var offset: Double
-  var rows: js.Array[DocumentResponseRowMeta]
+  var rows: js.Array[DocumentResponseRow[D] | DocumentLookupFailure]
   var total_rows: Double
   var update_seq: js.UndefOr[Double] = js.undefined
 }
 
 object DocumentFetchRevsResponse {
   @scala.inline
-  def apply(
+  def apply[D](
     offset: Double,
-    rows: js.Array[DocumentResponseRowMeta],
+    rows: js.Array[DocumentResponseRow[D] | DocumentLookupFailure],
     total_rows: Double,
     update_seq: Int | Double = null
-  ): DocumentFetchRevsResponse = {
+  ): DocumentFetchRevsResponse[D] = {
     val __obj = js.Dynamic.literal(offset = offset.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any], total_rows = total_rows.asInstanceOf[js.Any])
     if (update_seq != null) __obj.updateDynamic("update_seq")(update_seq.asInstanceOf[js.Any])
-    __obj.asInstanceOf[DocumentFetchRevsResponse]
+    __obj.asInstanceOf[DocumentFetchRevsResponse[D]]
   }
 }
 

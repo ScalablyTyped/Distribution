@@ -10,6 +10,8 @@ trait Migrator extends js.Object {
   def currentVersion(config: MigratorConfig): js.Promise[String] = js.native
   def down(): js.Promise[_] = js.native
   def down(config: MigratorConfig): js.Promise[_] = js.native
+  def forceFreeMigrationsLock(): js.Promise[_] = js.native
+  def forceFreeMigrationsLock(config: MigratorConfig): js.Promise[_] = js.native
   def latest(): js.Promise[_] = js.native
   def latest(config: MigratorConfig): js.Promise[_] = js.native
   def list(): js.Promise[_] = js.native

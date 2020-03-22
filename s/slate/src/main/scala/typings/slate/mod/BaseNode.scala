@@ -5,8 +5,8 @@ import typings.immutable.Immutable.List
 import typings.immutable.Immutable.OrderedSet
 import typings.immutable.Immutable.Set_
 import typings.slate.AnonEnd
-import typings.slate.AnonOnlyLeaves
-import typings.slate.AnonOnlyTypes
+import typings.slate.IterableOptionsonlyLeaves
+import typings.slate.IterableOptionsonlyTypesA
 import typings.slate.slateStrings.`inline`
 import typings.slate.slateStrings.block
 import typings.slate.slateStrings.document
@@ -40,7 +40,7 @@ trait BaseNode extends js.Object {
   def assertParent(path: Path): Node = js.native
   def assertPath(key: Path): List[Double] = js.native
   def blocks(): Iterable[js.Tuple2[Block, List[Double]]] = js.native
-  def blocks(options: IterableOptions with AnonOnlyLeaves): Iterable[js.Tuple2[Block, List[Double]]] = js.native
+  def blocks(options: IterableOptionsonlyLeaves): Iterable[js.Tuple2[Block, List[Double]]] = js.native
   def createAnnotation(properties: Annotation): Annotation = js.native
   def createAnnotation(properties: AnnotationJSON): Annotation = js.native
   def createAnnotation(properties: AnnotationProperties): Annotation = js.native
@@ -243,7 +243,7 @@ trait BaseNode extends js.Object {
   def hasNode(path: Path): Boolean = js.native
   def hasVoidParent(path: Path, editor: Editor): Boolean = js.native
   def inlines(): Iterable[js.Tuple2[Inline, List[Double]]] = js.native
-  def inlines(options: IterableOptions with AnonOnlyLeaves): Iterable[js.Tuple2[Inline, List[Double]]] = js.native
+  def inlines(options: IterableOptionsonlyLeaves): Iterable[js.Tuple2[Inline, List[Double]]] = js.native
   def insertNode(path: Path, node: Node): Node = js.native
   def insertText(path: Path, offset: Double, text: String): Node = js.native
   def isInRange(path: Path, range: RangeType): Boolean = js.native
@@ -259,7 +259,7 @@ trait BaseNode extends js.Object {
   def mapDescendants(): Node | Unit = js.native
   def mapDescendants(predicate: js.Function3[/* node */ Node, /* index */ Double, /* nodes */ List[Node], Node]): Node | Unit = js.native
   def marks(): Iterable[js.Tuple3[Mark, Node, List[Double]]] = js.native
-  def marks(options: IterableOptions with AnonOnlyTypes): Iterable[js.Tuple3[Mark, Node, List[Double]]] = js.native
+  def marks(options: IterableOptionsonlyTypesA): Iterable[js.Tuple3[Mark, Node, List[Double]]] = js.native
   def mergeNode(path: Path): Node = js.native
   def moveNode(path: Path, newPath: Path): Node = js.native
   def moveNode(path: Path, newPath: Path, newIndex: Double): Node = js.native

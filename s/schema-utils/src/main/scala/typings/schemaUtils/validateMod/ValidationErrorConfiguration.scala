@@ -1,6 +1,6 @@
 package typings.schemaUtils.validateMod
 
-import typings.schemaUtils.AnonChildren
+import typings.schemaUtils.ErrorObjectchildrenArrayE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ object ValidationErrorConfiguration {
   def apply(
     baseDataPath: String = null,
     name: String = null,
-    postFormatter: (/* formattedError */ String, /* error */ typings.ajv.mod.ErrorObject with AnonChildren) => String = null
+    postFormatter: (/* formattedError */ String, /* error */ ErrorObjectchildrenArrayE) => String = null
   ): ValidationErrorConfiguration = {
     val __obj = js.Dynamic.literal()
     if (baseDataPath != null) __obj.updateDynamic("baseDataPath")(baseDataPath.asInstanceOf[js.Any])

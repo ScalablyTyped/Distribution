@@ -2,8 +2,8 @@ package typings.gapiClientMirror.gapi.client.mirror
 
 import typings.gapiClient.gapi.client.Request_
 import typings.gapiClientMirror.AnonAlt
-import typings.gapiClientMirror.AnonAltBundleId
-import typings.gapiClientMirror.AnonAltFields
+import typings.gapiClientMirror.AnonBundleId
+import typings.gapiClientMirror.AnonFields
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,9 +15,9 @@ trait TimelineResource extends js.Object {
   /** Gets a single timeline item by ID. */
   def get(request: AnonAlt): Request_[TimelineItem]
   /** Inserts a new item into the timeline. */
-  def insert(request: AnonAltFields): Request_[TimelineItem]
+  def insert(request: AnonFields): Request_[TimelineItem]
   /** Retrieves a list of timeline items for the authenticated user. */
-  def list(request: AnonAltBundleId): Request_[TimelineListResponse]
+  def list(request: AnonBundleId): Request_[TimelineListResponse]
   /** Updates a timeline item in place. This method supports patch semantics. */
   def patch(request: AnonAlt): Request_[TimelineItem]
   /** Updates a timeline item in place. */
@@ -30,8 +30,8 @@ object TimelineResource {
     attachments: AttachmentsResource,
     delete: AnonAlt => Request_[Unit],
     get: AnonAlt => Request_[TimelineItem],
-    insert: AnonAltFields => Request_[TimelineItem],
-    list: AnonAltBundleId => Request_[TimelineListResponse],
+    insert: AnonFields => Request_[TimelineItem],
+    list: AnonBundleId => Request_[TimelineListResponse],
     patch: AnonAlt => Request_[TimelineItem],
     update: AnonAlt => Request_[TimelineItem]
   ): TimelineResource = {

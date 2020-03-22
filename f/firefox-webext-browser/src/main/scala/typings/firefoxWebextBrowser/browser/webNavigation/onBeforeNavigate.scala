@@ -1,7 +1,7 @@
 package typings.firefoxWebextBrowser.browser.webNavigation
 
 import org.scalablytyped.runtime.TopLevel
-import typings.firefoxWebextBrowser.AnonFrameIdParentFrameId
+import typings.firefoxWebextBrowser.AnonProcessId
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object onBeforeNavigate
   extends TopLevel[
-      WebNavigationOnBeforeNavigateEvent[js.Function1[/* details */ AnonFrameIdParentFrameId, Unit]]
+      WebNavigationOnBeforeNavigateEvent[js.Function1[/* details */ AnonProcessId, Unit]]
     ]
 

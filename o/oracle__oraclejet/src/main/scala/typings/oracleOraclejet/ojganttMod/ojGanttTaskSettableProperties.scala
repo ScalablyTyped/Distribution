@@ -1,7 +1,7 @@
 package typings.oracleOraclejet.ojganttMod
 
-import typings.oracleOraclejet.AnonBorderRadiusEnd
-import typings.oracleOraclejet.AnonBorderRadiusHeightSvgClassName
+import typings.oracleOraclejet.AnonEnd
+import typings.oracleOraclejet.AnonValue
 import typings.oracleOraclejet.mod.JetSettableProperties
 import typings.oracleOraclejet.oracleOraclejetStrings.auto
 import typings.oracleOraclejet.oracleOraclejetStrings.end
@@ -18,14 +18,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ojGanttTaskSettableProperties extends JetSettableProperties {
-  var baseline: AnonBorderRadiusEnd
+  var baseline: AnonEnd
   var borderRadius: String
   var end: String
   var height: Double | Null
   var label: String
   var labelPosition: start | innerCenter | innerStart | innerEnd | end | none
   var labelStyle: js.Object
-  var progress: AnonBorderRadiusHeightSvgClassName
+  var progress: AnonValue
   var rowId: js.UndefOr[js.Any] = js.undefined
   var shortDesc: String | Null
   var start: String
@@ -37,13 +37,13 @@ trait ojGanttTaskSettableProperties extends JetSettableProperties {
 object ojGanttTaskSettableProperties {
   @scala.inline
   def apply(
-    baseline: AnonBorderRadiusEnd,
+    baseline: AnonEnd,
     borderRadius: String,
     end: String,
     label: String,
     labelPosition: start | innerCenter | innerStart | innerEnd | end | none,
     labelStyle: js.Object,
-    progress: AnonBorderRadiusHeightSvgClassName,
+    progress: AnonValue,
     start: String,
     svgClassName: String,
     svgStyle: js.Object,

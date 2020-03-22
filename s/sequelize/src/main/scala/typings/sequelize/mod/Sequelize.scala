@@ -1,6 +1,6 @@
 package typings.sequelize.mod
 
-import typings.sequelize.AnonLoggingBoolean
+import typings.sequelize.Anon1
 import typings.sequelize.AnonQuery
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -60,7 +60,7 @@ trait Sequelize
     * @param options Options supplied
     * @param options.logging A function that logs sql queries, or false for no logging
     */
-  def createSchema(schema: String, options: AnonLoggingBoolean): typings.bluebird.mod.^[_] = js.native
+  def createSchema(schema: String, options: Anon1): typings.bluebird.mod.^[_] = js.native
   /**
     * Returns the database version
     */
@@ -141,7 +141,7 @@ trait Sequelize
     * @param options Options supplied
     * @param options.logging A function that logs sql queries, or false for no logging
     */
-  def dropAllSchemas(options: AnonLoggingBoolean): typings.bluebird.mod.^[_] = js.native
+  def dropAllSchemas(options: Anon1): typings.bluebird.mod.^[_] = js.native
   /**
     * Drop a single schema
     *
@@ -153,7 +153,7 @@ trait Sequelize
     * @param options Options supplied
     * @param options.logging A function that logs sql queries, or false for no logging
     */
-  def dropSchema(schema: String, options: AnonLoggingBoolean): typings.bluebird.mod.^[_] = js.native
+  def dropSchema(schema: String, options: Anon1): typings.bluebird.mod.^[_] = js.native
   /**
     * Escape value.
     *
@@ -255,7 +255,7 @@ trait Sequelize
     * @param options Options supplied
     * @param options.logging A function that logs sql queries, or false for no logging
     */
-  def showAllSchemas(options: AnonLoggingBoolean): typings.bluebird.mod.^[_] = js.native
+  def showAllSchemas(options: Anon1): typings.bluebird.mod.^[_] = js.native
   /**
     * Sync all defined models to the DB.
     *

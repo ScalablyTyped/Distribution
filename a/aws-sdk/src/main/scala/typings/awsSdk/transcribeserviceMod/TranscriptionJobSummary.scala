@@ -11,6 +11,10 @@ trait TranscriptionJobSummary extends js.Object {
     */
   var CompletionTime: js.UndefOr[DateTime] = js.native
   /**
+    * The content redaction settings of the transcription job.
+    */
+  var ContentRedaction: js.UndefOr[typings.awsSdk.transcribeserviceMod.ContentRedaction] = js.native
+  /**
     * A timestamp that shows when the job was created.
     */
   var CreationTime: js.UndefOr[DateTime] = js.native
@@ -44,6 +48,7 @@ object TranscriptionJobSummary {
   @scala.inline
   def apply(
     CompletionTime: DateTime = null,
+    ContentRedaction: ContentRedaction = null,
     CreationTime: DateTime = null,
     FailureReason: FailureReason = null,
     LanguageCode: LanguageCode = null,
@@ -54,6 +59,7 @@ object TranscriptionJobSummary {
   ): TranscriptionJobSummary = {
     val __obj = js.Dynamic.literal()
     if (CompletionTime != null) __obj.updateDynamic("CompletionTime")(CompletionTime.asInstanceOf[js.Any])
+    if (ContentRedaction != null) __obj.updateDynamic("ContentRedaction")(ContentRedaction.asInstanceOf[js.Any])
     if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime.asInstanceOf[js.Any])
     if (FailureReason != null) __obj.updateDynamic("FailureReason")(FailureReason.asInstanceOf[js.Any])
     if (LanguageCode != null) __obj.updateDynamic("LanguageCode")(LanguageCode.asInstanceOf[js.Any])

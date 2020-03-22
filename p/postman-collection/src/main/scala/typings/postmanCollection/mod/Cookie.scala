@@ -1,6 +1,6 @@
 package typings.postmanCollection.mod
 
-import typings.postmanCollection.AnonKeyValue
+import typings.postmanCollection.AnonValue
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -27,6 +27,6 @@ class Cookie ()
 object Cookie extends js.Object {
   def isCookie(obj: js.Any): Boolean = js.native
   def parse(str: String): CookieDefinition = js.native
-  def splitParam(param: String): AnonKeyValue = js.native
+  def splitParam(param: String): AnonValue = js.native
 }
 

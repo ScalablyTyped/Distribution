@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
   - typings.emojiMart.nimbleEmojiIndexMod.BaseEmoji
   - typings.emojiMart.nimbleEmojiIndexMod.CustomEmoji
 */
-trait EmojiData extends js.Object
+trait EmojiData extends EmojiEntry
 
 object EmojiData {
   @scala.inline

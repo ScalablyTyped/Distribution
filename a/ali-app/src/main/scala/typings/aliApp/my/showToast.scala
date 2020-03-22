@@ -1,6 +1,6 @@
 package typings.aliApp.my
 
-import typings.std.Partial
+import typings.aliApp.PartialToastOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,6 +11,6 @@ object showToast extends js.Object {
   /**
   	 * 显示消息提示框
   	 */
-  def apply(options: Partial[ToastOptions]): Unit = js.native
+  def apply(options: PartialToastOptions): Unit = js.native
 }
 

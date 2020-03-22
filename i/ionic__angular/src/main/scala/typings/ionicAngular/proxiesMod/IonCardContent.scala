@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ionic/angular/dist/directives/proxies", "IonCardContent")
+@JSImport("@ionic/angular/directives/proxies", "IonCardContent")
 @js.native
 class IonCardContent protected ()
   extends typings.ionicCore.componentsMod.Components.IonCardContent {

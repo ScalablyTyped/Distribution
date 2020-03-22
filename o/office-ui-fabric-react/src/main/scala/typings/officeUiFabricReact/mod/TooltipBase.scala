@@ -1,7 +1,6 @@
 package typings.officeUiFabricReact.mod
 
-import typings.officeUiFabricReact.tooltipTypesMod.ITooltipProps
-import typings.std.Partial
+import typings.officeUiFabricReact.PartialITooltipProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,6 +14,6 @@ class TooltipBase ()
 @JSImport("office-ui-fabric-react", "TooltipBase")
 @js.native
 object TooltipBase extends js.Object {
-  var defaultProps: Partial[ITooltipProps] = js.native
+  var defaultProps: PartialITooltipProps = js.native
 }
 

@@ -1,6 +1,6 @@
 package typings.cesium.mod
 
-import typings.cesium.AnonFillGranularity
+import typings.cesium.AnonShow
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("cesium", "WallGraphics")
 @js.native
 class WallGraphics () extends js.Object {
-  def this(options: AnonFillGranularity) = this()
+  def this(options: AnonShow) = this()
   val definitionChanged: Event[js.Array[_]] = js.native
   var fill: Property = js.native
   var granularity: Property = js.native

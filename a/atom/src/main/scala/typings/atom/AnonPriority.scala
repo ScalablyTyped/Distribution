@@ -4,18 +4,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait AnonPriority extends js.Object {
+trait AnonPriority[T] extends js.Object {
+  var item: T
   var priority: js.UndefOr[Double] = js.undefined
-  var watch: js.UndefOr[Boolean] = js.undefined
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 
 object AnonPriority {
   @scala.inline
-  def apply(priority: Int | Double = null, watch: js.UndefOr[Boolean] = js.undefined): AnonPriority = {
-    val __obj = js.Dynamic.literal()
+  def apply[T](item: T, priority: Int | Double = null, visible: js.UndefOr[Boolean] = js.undefined): AnonPriority[T] = {
+    val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any])
     if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
-    if (!js.isUndefined(watch)) __obj.updateDynamic("watch")(watch.asInstanceOf[js.Any])
-    __obj.asInstanceOf[AnonPriority]
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AnonPriority[T]]
   }
 }
 

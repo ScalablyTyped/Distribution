@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "v8-to-istanbul" : "4.1.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "v8-to-istanbul" : "4.1.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

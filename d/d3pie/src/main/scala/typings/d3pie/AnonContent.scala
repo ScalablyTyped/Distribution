@@ -11,7 +11,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonContent extends js.Object {
-  var content: js.Array[AnonColorLabel]
+  var content: js.Array[AnonLabel]
   var smallSegmentGrouping: js.UndefOr[AnonColor] = js.undefined
   var sortOrder: js.UndefOr[none | random | `value-asc` | `value-desc` | `label-asc` | `label-desc`] = js.undefined
 }
@@ -19,7 +19,7 @@ trait AnonContent extends js.Object {
 object AnonContent {
   @scala.inline
   def apply(
-    content: js.Array[AnonColorLabel],
+    content: js.Array[AnonLabel],
     smallSegmentGrouping: AnonColor = null,
     sortOrder: none | random | `value-asc` | `value-desc` | `label-asc` | `label-desc` = null
   ): AnonContent = {

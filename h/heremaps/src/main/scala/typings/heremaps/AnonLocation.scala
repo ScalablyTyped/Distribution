@@ -5,9 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonLocation extends js.Object {
-  var Location: AnonAddressDisplayPosition
+  var Location: AnonDisplayPosition
   var MatchLevel: String
-  var MatchQuality: AnonCityHouseNumber
+  var MatchQuality: AnonHouseNumber
   var MatchType: String
   var Relevance: Double
 }
@@ -15,9 +15,9 @@ trait AnonLocation extends js.Object {
 object AnonLocation {
   @scala.inline
   def apply(
-    Location: AnonAddressDisplayPosition,
+    Location: AnonDisplayPosition,
     MatchLevel: String,
-    MatchQuality: AnonCityHouseNumber,
+    MatchQuality: AnonHouseNumber,
     MatchType: String,
     Relevance: Double
   ): AnonLocation = {

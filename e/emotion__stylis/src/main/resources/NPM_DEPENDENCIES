@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@emotion/stylis" : "0.8.4"
+      "@emotion/stylis" : "0.8.5"
     }
   ],
   "test-dependencies" : [
     {
-      "@emotion/stylis" : "0.8.4"
+      "@emotion/stylis" : "0.8.5"
     }
   ],
   "compile-devDependencies" : [

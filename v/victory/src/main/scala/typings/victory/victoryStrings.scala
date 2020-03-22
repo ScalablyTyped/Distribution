@@ -15,12 +15,6 @@ import scala.scalajs.js.annotation._
 
 object victoryStrings {
   @js.native
-  sealed trait Anon_AxisAxisLabel extends js.Object
-  
-  @js.native
-  sealed trait VictoryStyleObject extends js.Object
-  
-  @js.native
   sealed trait all extends js.Object
   
   @js.native
@@ -361,10 +355,6 @@ object victoryStrings {
   @js.native
   sealed trait zoom extends ContainerType
   
-  @scala.inline
-  def Anon_AxisAxisLabel: Anon_AxisAxisLabel = "Anon_AxisAxisLabel".asInstanceOf[Anon_AxisAxisLabel]
-  @scala.inline
-  def VictoryStyleObject: VictoryStyleObject = "VictoryStyleObject".asInstanceOf[VictoryStyleObject]
   @scala.inline
   def all: all = "all".asInstanceOf[all]
   @scala.inline

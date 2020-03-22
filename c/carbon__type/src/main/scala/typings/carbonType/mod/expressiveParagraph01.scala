@@ -1,6 +1,6 @@
 package typings.carbonType.mod
 
-import typings.carbonType.AnonFontSizeLineHeight
+import typings.carbonType.AnonLineHeight
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,8 +12,8 @@ object expressiveParagraph01 extends js.Object {
   var fontSize: String = js.native
   var fontWeight: Double = js.native
   var letterSpacing: Double = js.native
-  var lg: AnonFontSizeLineHeight = js.native
+  var lg: AnonLineHeight = js.native
   var lineHeight: String = js.native
-  var max: AnonFontSizeLineHeight = js.native
+  var max: AnonLineHeight = js.native
 }
 

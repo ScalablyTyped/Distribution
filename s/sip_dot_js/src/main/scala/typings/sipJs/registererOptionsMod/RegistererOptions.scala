@@ -1,6 +1,6 @@
 package typings.sipJs.registererOptionsMod
 
-import typings.sipJs.AnonFromDisplayNameFromTag
+import typings.sipJs.AnonFromTag
 import typings.sipJs.coreMod.URI
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -24,7 +24,7 @@ trait RegistererOptions extends js.Object {
     */
   var logConfiguration: js.UndefOr[Boolean] = js.undefined
   /** @deprecated TODO: provide alternative. */
-  var params: js.UndefOr[AnonFromDisplayNameFromTag] = js.undefined
+  var params: js.UndefOr[AnonFromTag] = js.undefined
   /**
     * Value to provide with "reg-id" Contact parameter.
     * @defaultValue 1
@@ -45,7 +45,7 @@ object RegistererOptions {
     extraHeaders: js.Array[String] = null,
     instanceId: String = null,
     logConfiguration: js.UndefOr[Boolean] = js.undefined,
-    params: AnonFromDisplayNameFromTag = null,
+    params: AnonFromTag = null,
     regId: Int | Double = null,
     registrar: URI = null
   ): RegistererOptions = {

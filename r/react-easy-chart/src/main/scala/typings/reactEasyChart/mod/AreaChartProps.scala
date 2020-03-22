@@ -1,7 +1,7 @@
 package typings.reactEasyChart.mod
 
 import typings.reactEasyChart.AnonBottom
-import typings.reactEasyChart.AnonXY
+import typings.reactEasyChart.AnonY
 import typings.reactEasyChart.reactEasyChartStrings.`basis-closed`
 import typings.reactEasyChart.reactEasyChartStrings.`basis-open`
 import typings.reactEasyChart.reactEasyChartStrings.`cardinal-closed`
@@ -33,7 +33,7 @@ object AreaChartProps {
   def apply(
     data: js.Array[js.Array[LineData]],
     axes: js.UndefOr[Boolean] = js.undefined,
-    axisLabels: AnonXY = null,
+    axisLabels: AnonY = null,
     clickHandler: (/* data */ LineData, /* mouseEvent */ MouseEvent) => _ = null,
     dataPoints: js.UndefOr[Boolean] = js.undefined,
     grid: js.UndefOr[Boolean] = js.undefined,

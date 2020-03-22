@@ -1,6 +1,7 @@
 package typings.jupyterlabRunningExtension
 
 import typings.jupyterlabApplication.frontendMod.JupyterFrontEndPlugin
+import typings.jupyterlabRunning.mod.IRunningSessionManagers
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,6 +12,6 @@ object mod extends js.Object {
   /**
     * The default running sessions extension.
     */
-  val default: JupyterFrontEndPlugin[Unit] = js.native
+  val default: JupyterFrontEndPlugin[IRunningSessionManagers] = js.native
 }
 

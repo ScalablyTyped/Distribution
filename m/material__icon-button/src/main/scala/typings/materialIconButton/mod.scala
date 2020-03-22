@@ -2,7 +2,6 @@ package typings.materialIconButton
 
 import typings.materialIconButton.adapterMod.MDCIconButtonToggleAdapter
 import typings.std.HTMLElement
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +16,7 @@ object mod extends js.Object {
   @js.native
   class MDCIconButtonToggleFoundation ()
     extends typings.materialIconButton.foundationMod.MDCIconButtonToggleFoundation {
-    def this(adapter: Partial[MDCIconButtonToggleAdapter]) = this()
+    def this(adapter: PartialMDCIconButtonToggl) = this()
   }
   
   /* static members */

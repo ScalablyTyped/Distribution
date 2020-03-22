@@ -2,6 +2,7 @@ package typings.antDesignProLayout.basicLayoutMod
 
 import typings.antDesignProLayout.AnonDefaultOpenAll
 import typings.antDesignProLayout.AnonId
+import typings.antDesignProLayout.AnonPathname
 import typings.antDesignProLayout.MenuDataItemisUrlboolean
 import typings.antDesignProLayout.antDesignProLayoutBooleans.`false`
 import typings.antDesignProLayout.antDesignProLayoutStrings.realDark
@@ -27,7 +28,7 @@ import scala.scalajs.js.annotation._
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped {[ P in keyof @ant-design/pro-layout.@ant-design/pro-layout/lib/typings.RouterTypes<@ant-design/pro-layout.@ant-design/pro-layout/lib/typings.Route> ]:? @ant-design/pro-layout.@ant-design/pro-layout/lib/typings.RouterTypes<@ant-design/pro-layout.@ant-design/pro-layout/lib/typings.Route>[P]}
 - Dropped {[ P in keyof @ant-design/pro-layout.@ant-design/pro-layout/lib/defaultSettings.Settings ]:? @ant-design/pro-layout.@ant-design/pro-layout/lib/defaultSettings.Settings[P]} */ /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.antDesignProLayout.headerMod.HeaderViewProps because var conflicts: className, logo, menuHeaderRender, siderWidth, style. Inlined isMobile, collapsed, menuRender, headerRender, rightContentRender, hasSiderMenu, menu, navTheme, colorWeak, contentWidth, layout, title, fixedHeader, iconfontUrl, fixSiderbar, primaryColor, collapsedButtonRender, onCollapse */ trait BasicLayoutProps extends SiderMenuProps {
+- typings.antDesignProLayout.headerMod.HeaderViewProps because var conflicts: className, logo, menuHeaderRender, siderWidth, style. Inlined isMobile, collapsed, menuRender, headerRender, rightContentRender, hasSiderMenu, fixSiderbar, layout, fixedHeader, menu, contentWidth, iconfontUrl, primaryColor, colorWeak, navTheme, title, collapsedButtonRender, onCollapse */ trait BasicLayoutProps extends SiderMenuProps {
   var breadcrumbRender: js.UndefOr[
     js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AntdBreadcrumbProps * / any['routes'] */ /* routers */ js.Any, 
@@ -85,6 +86,17 @@ import scala.scalajs.js.annotation._
     (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MenuTheme */ js.Any) | realDark
   ] = js.undefined
   var onCollapse: js.UndefOr[js.Function1[/* collapsed */ Boolean, Unit]] = js.undefined
+  /**
+    * 页面切换的时候触发
+    */
+  var onPageChange: js.UndefOr[
+    js.Function1[
+      /* location */ js.UndefOr[
+        (/* import warning: importer.ImportType#apply Failed type conversion: react-router.react-router.RouteComponentProps<{}, react-router.react-router.StaticContext, history.history.LocationState>['location'] */ js.Any) | AnonPathname
+      ], 
+      Unit
+    ]
+  ] = js.undefined
   var pageTitleRender: js.UndefOr[
     WithFalse[
       js.Function3[
@@ -147,6 +159,9 @@ object BasicLayoutProps {
     onCollapse: /* collapsed */ Boolean => Unit = null,
     onMenuHeaderClick: /* e */ MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit = null,
     onOpenChange: /* openKeys */ WithFalse[js.Array[String]] => Unit = null,
+    onPageChange: /* location */ js.UndefOr[
+      (/* import warning: importer.ImportType#apply Failed type conversion: react-router.react-router.RouteComponentProps<{}, react-router.react-router.StaticContext, history.history.LocationState>['location'] */ js.Any) | AnonPathname
+    ] => Unit = null,
     pageTitleRender: WithFalse[
       js.Function3[
         /* props */ GetPageTitleProps, 
@@ -197,6 +212,7 @@ object BasicLayoutProps {
     if (onCollapse != null) __obj.updateDynamic("onCollapse")(js.Any.fromFunction1(onCollapse))
     if (onMenuHeaderClick != null) __obj.updateDynamic("onMenuHeaderClick")(js.Any.fromFunction1(onMenuHeaderClick))
     if (onOpenChange != null) __obj.updateDynamic("onOpenChange")(js.Any.fromFunction1(onOpenChange))
+    if (onPageChange != null) __obj.updateDynamic("onPageChange")(js.Any.fromFunction1(onPageChange))
     if (pageTitleRender != null) __obj.updateDynamic("pageTitleRender")(pageTitleRender.asInstanceOf[js.Any])
     if (primaryColor != null) __obj.updateDynamic("primaryColor")(primaryColor.asInstanceOf[js.Any])
     if (rightContentRender != null) __obj.updateDynamic("rightContentRender")(rightContentRender.asInstanceOf[js.Any])

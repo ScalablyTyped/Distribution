@@ -6,13 +6,12 @@ import scala.scalajs.js.annotation._
 
 trait AnonAmountDestination extends js.Object {
   /**
-    * The amount transferred to the destination account, if specified. By
-    * default, the entire charge amount is transferred to the destination account.
+    * The amount transferred to the destination account, if specified.
+    * By default, the entire charge amount is transferred to the destination account.
     */
-  var amount: js.UndefOr[Double | Null] = js.undefined
+  var amount: js.UndefOr[Double] = js.undefined
   /**
-    * ID of an existing, connected Stripe account to transfer funds to if
-    * transfer_data was specified in the charge request.
+    * ID of an existing, connected Stripe account.
     */
   var destination: String
 }

@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 package object mod {
   type AnyFindOptions = typings.sequelize.mod.FindOptions[js.Any]
   /**
+    * A hash of attributes to describe your search, accepting any field names. See `WhereOptions` for details.
+    */
+  type AnyWhereOptions = org.scalablytyped.runtime.StringDictionary[js.Array[typings.sequelize.mod.WhereOptions[js.Any]] | js.Object]
+  /**
     * Options for Association Scope
     *
     * @see AssociationOptionsManyToMany
@@ -859,7 +863,6 @@ package object mod {
   type Models = org.scalablytyped.runtime.StringDictionary[typings.sequelize.mod.Model[js.Any, js.Any, js.Any]]
   type ModelsHashInterface = org.scalablytyped.runtime.StringDictionary[typings.sequelize.mod.Model[js.Any, js.Any, js.Any]]
   type Omit[T, K /* <: java.lang.String */] = typings.std.Pick[T, typings.std.Exclude[java.lang.String, K]]
-  type OperatorsAliases = typings.std.Partial[typings.sequelize.AnonAdjacent]
   /**
     * A hash of attributes to describe your search. See above for examples.
     *
@@ -881,10 +884,6 @@ package object mod {
   type TransactionTypeDeferred = typings.sequelize.sequelizeStrings.DEFERRED
   type TransactionTypeExclusive = typings.sequelize.sequelizeStrings.EXCLUSIVE
   type TransactionTypeImmediate = typings.sequelize.sequelizeStrings.IMMEDIATE
-  /**
-    * Logic of where statement
-    */
-  type WhereLogic = typings.std.Partial[typings.sequelize.Anon]
   type WhereOptions[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]:? sequelize.sequelize.Primitives | std.Array<sequelize.sequelize.Primitives> | sequelize.sequelize.WhereLogic | T[P] extends sequelize.sequelize.Primitives? null : / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias sequelize.sequelize.WhereOptions<T[P]> * / object | sequelize.sequelize.col | sequelize.sequelize.and | sequelize.sequelize.or | sequelize.sequelize.WhereGeometryOptions | sequelize.sequelize.WhereNested | sequelize.sequelize.where | null}
     */ typings.sequelize.sequelizeStrings.WhereOptions with T

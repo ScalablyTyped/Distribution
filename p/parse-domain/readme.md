@@ -1,7 +1,7 @@
 
 # Scala.js typings for parse-domain
 
-Typings are for version 2.3.2
+Typings are for version 2.3.4
 
 ## Library description:
 Splits an url into sub-domain, domain and effective top-level-domain

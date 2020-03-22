@@ -7,15 +7,14 @@ import scala.scalajs.js.annotation._
 trait AnonFailedInProgress extends js.Object {
   var failed: Double
   var inProgress: Double
-  var none: Double
-  var pending: Double
+  var queued: Double
   var succeeded: Double
 }
 
 object AnonFailedInProgress {
   @scala.inline
-  def apply(failed: Double, inProgress: Double, none: Double, pending: Double, succeeded: Double): AnonFailedInProgress = {
-    val __obj = js.Dynamic.literal(failed = failed.asInstanceOf[js.Any], inProgress = inProgress.asInstanceOf[js.Any], none = none.asInstanceOf[js.Any], pending = pending.asInstanceOf[js.Any], succeeded = succeeded.asInstanceOf[js.Any])
+  def apply(failed: Double, inProgress: Double, queued: Double, succeeded: Double): AnonFailedInProgress = {
+    val __obj = js.Dynamic.literal(failed = failed.asInstanceOf[js.Any], inProgress = inProgress.asInstanceOf[js.Any], queued = queued.asInstanceOf[js.Any], succeeded = succeeded.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AnonFailedInProgress]
   }

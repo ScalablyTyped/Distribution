@@ -1,10 +1,10 @@
 package typings.oracleOraclejet.ojgaugeMod
 
-import typings.oracleOraclejet.AnonAutoBillionCenter
-import typings.oracleOraclejet.AnonAutoBorderColor
-import typings.oracleOraclejet.AnonAutoCenter
-import typings.oracleOraclejet.AnonContextRendererAnonInsertAnonPreventDefaultCenterContext
-import typings.oracleOraclejet.AnonContextRendererAnonInsertAnonPreventDefaultTooltipContext848864392
+import typings.oracleOraclejet.Anon10
+import typings.oracleOraclejet.Anon11
+import typings.oracleOraclejet.AnonBorderColorBorderRadius
+import typings.oracleOraclejet.AnonConverterPosition
+import typings.oracleOraclejet.AnonPositionStyle
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.ojdvtBaseMod.dvtBaseComponentEventMap
 import typings.oracleOraclejet.ojgaugeMod.ojStatusMeterGauge.ReferenceLine
@@ -46,16 +46,16 @@ trait ojStatusMeterGaugeEventMap extends dvtBaseComponentEventMap[ojStatusMeterG
   var animationOnDisplayChanged: JetElementCustomEvent[auto | none]
   var borderColorChanged: JetElementCustomEvent[String]
   var borderRadiusChanged: JetElementCustomEvent[String]
-  var centerChanged: JetElementCustomEvent[AnonContextRendererAnonInsertAnonPreventDefaultCenterContext]
+  var centerChanged: JetElementCustomEvent[Anon10]
   var colorChanged: JetElementCustomEvent[String]
   var indicatorSizeChanged: JetElementCustomEvent[Double]
   var innerRadiusChanged: JetElementCustomEvent[Double]
-  var labelChanged: JetElementCustomEvent[AnonAutoCenter]
+  var labelChanged: JetElementCustomEvent[AnonPositionStyle]
   var maxChanged: JetElementCustomEvent[Double]
-  var metricLabelChanged: JetElementCustomEvent[AnonAutoBillionCenter]
+  var metricLabelChanged: JetElementCustomEvent[AnonConverterPosition]
   var minChanged: JetElementCustomEvent[Double]
   var orientationChanged: JetElementCustomEvent[circular | vertical | horizontal]
-  var plotAreaChanged: JetElementCustomEvent[AnonAutoBorderColor]
+  var plotAreaChanged: JetElementCustomEvent[AnonBorderColorBorderRadius]
   var readonlyChanged: JetElementCustomEvent[Boolean]
   var referenceLinesChanged: JetElementCustomEvent[js.Array[ReferenceLine]]
   var startAngleChanged: JetElementCustomEvent[Double]
@@ -66,7 +66,7 @@ trait ojStatusMeterGaugeEventMap extends dvtBaseComponentEventMap[ojStatusMeterG
   ]
   var thresholdDisplayChanged: JetElementCustomEvent[currentOnly | all | onIndicator]
   var thresholdsChanged: JetElementCustomEvent[js.Array[Threshold]]
-  var tooltipChanged: JetElementCustomEvent[AnonContextRendererAnonInsertAnonPreventDefaultTooltipContext848864392]
+  var tooltipChanged: JetElementCustomEvent[Anon11]
   var transientValueChanged: JetElementCustomEvent[Double | Null]
   var valueChanged: JetElementCustomEvent[Double | Null]
   var visualEffectsChanged: JetElementCustomEvent[none | auto]
@@ -91,7 +91,7 @@ object ojStatusMeterGaugeEventMap {
     cancel: Event_,
     canplay: Event_,
     canplaythrough: Event_,
-    centerChanged: JetElementCustomEvent[AnonContextRendererAnonInsertAnonPreventDefaultCenterContext],
+    centerChanged: JetElementCustomEvent[Anon10],
     change: Event_,
     click: MouseEvent,
     close: Event_,
@@ -126,15 +126,14 @@ object ojStatusMeterGaugeEventMap {
     keydown: KeyboardEvent,
     keypress: KeyboardEvent,
     keyup: KeyboardEvent,
-    labelChanged: JetElementCustomEvent[AnonAutoCenter],
+    labelChanged: JetElementCustomEvent[AnonPositionStyle],
     load: Event_,
     loadeddata: Event_,
     loadedmetadata: Event_,
-    loadend: ProgressEvent[EventTarget],
     loadstart: Event_,
     lostpointercapture: PointerEvent,
     maxChanged: JetElementCustomEvent[Double],
-    metricLabelChanged: JetElementCustomEvent[AnonAutoBillionCenter],
+    metricLabelChanged: JetElementCustomEvent[AnonConverterPosition],
     minChanged: JetElementCustomEvent[Double],
     mousedown: MouseEvent,
     mouseenter: MouseEvent,
@@ -148,7 +147,7 @@ object ojStatusMeterGaugeEventMap {
     pause: Event_,
     play: Event_,
     playing: Event_,
-    plotAreaChanged: JetElementCustomEvent[AnonAutoBorderColor],
+    plotAreaChanged: JetElementCustomEvent[AnonBorderColorBorderRadius],
     pointercancel: PointerEvent,
     pointerdown: PointerEvent,
     pointerenter: PointerEvent,
@@ -183,7 +182,7 @@ object ojStatusMeterGaugeEventMap {
     thresholdsChanged: JetElementCustomEvent[js.Array[Threshold]],
     timeupdate: Event_,
     toggle: Event_,
-    tooltipChanged: JetElementCustomEvent[AnonContextRendererAnonInsertAnonPreventDefaultTooltipContext848864392],
+    tooltipChanged: JetElementCustomEvent[Anon11],
     touchcancel: TouchEvent,
     touchend: TouchEvent,
     touchmove: TouchEvent,
@@ -201,7 +200,7 @@ object ojStatusMeterGaugeEventMap {
     waiting: Event_,
     wheel: WheelEvent
   ): ojStatusMeterGaugeEventMap = {
-    val __obj = js.Dynamic.literal(abort = abort.asInstanceOf[js.Any], angleExtentChanged = angleExtentChanged.asInstanceOf[js.Any], animationDurationChanged = animationDurationChanged.asInstanceOf[js.Any], animationOnDataChangeChanged = animationOnDataChangeChanged.asInstanceOf[js.Any], animationOnDisplayChanged = animationOnDisplayChanged.asInstanceOf[js.Any], animationcancel = animationcancel.asInstanceOf[js.Any], animationend = animationend.asInstanceOf[js.Any], animationiteration = animationiteration.asInstanceOf[js.Any], animationstart = animationstart.asInstanceOf[js.Any], auxclick = auxclick.asInstanceOf[js.Any], blur = blur.asInstanceOf[js.Any], borderColorChanged = borderColorChanged.asInstanceOf[js.Any], borderRadiusChanged = borderRadiusChanged.asInstanceOf[js.Any], cancel = cancel.asInstanceOf[js.Any], canplay = canplay.asInstanceOf[js.Any], canplaythrough = canplaythrough.asInstanceOf[js.Any], centerChanged = centerChanged.asInstanceOf[js.Any], change = change.asInstanceOf[js.Any], click = click.asInstanceOf[js.Any], close = close.asInstanceOf[js.Any], colorChanged = colorChanged.asInstanceOf[js.Any], contextmenu = contextmenu.asInstanceOf[js.Any], copy = copy.asInstanceOf[js.Any], cuechange = cuechange.asInstanceOf[js.Any], cut = cut.asInstanceOf[js.Any], dblclick = dblclick.asInstanceOf[js.Any], drag = drag.asInstanceOf[js.Any], dragend = dragend.asInstanceOf[js.Any], dragenter = dragenter.asInstanceOf[js.Any], dragexit = dragexit.asInstanceOf[js.Any], dragleave = dragleave.asInstanceOf[js.Any], dragover = dragover.asInstanceOf[js.Any], dragstart = dragstart.asInstanceOf[js.Any], drop = drop.asInstanceOf[js.Any], durationchange = durationchange.asInstanceOf[js.Any], emptied = emptied.asInstanceOf[js.Any], ended = ended.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], focus = focus.asInstanceOf[js.Any], focusin = focusin.asInstanceOf[js.Any], focusout = focusout.asInstanceOf[js.Any], fullscreenchange = fullscreenchange.asInstanceOf[js.Any], fullscreenerror = fullscreenerror.asInstanceOf[js.Any], gotpointercapture = gotpointercapture.asInstanceOf[js.Any], indicatorSizeChanged = indicatorSizeChanged.asInstanceOf[js.Any], innerRadiusChanged = innerRadiusChanged.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], invalid = invalid.asInstanceOf[js.Any], keydown = keydown.asInstanceOf[js.Any], keypress = keypress.asInstanceOf[js.Any], keyup = keyup.asInstanceOf[js.Any], labelChanged = labelChanged.asInstanceOf[js.Any], load = load.asInstanceOf[js.Any], loadeddata = loadeddata.asInstanceOf[js.Any], loadedmetadata = loadedmetadata.asInstanceOf[js.Any], loadend = loadend.asInstanceOf[js.Any], loadstart = loadstart.asInstanceOf[js.Any], lostpointercapture = lostpointercapture.asInstanceOf[js.Any], maxChanged = maxChanged.asInstanceOf[js.Any], metricLabelChanged = metricLabelChanged.asInstanceOf[js.Any], minChanged = minChanged.asInstanceOf[js.Any], mousedown = mousedown.asInstanceOf[js.Any], mouseenter = mouseenter.asInstanceOf[js.Any], mouseleave = mouseleave.asInstanceOf[js.Any], mousemove = mousemove.asInstanceOf[js.Any], mouseout = mouseout.asInstanceOf[js.Any], mouseover = mouseover.asInstanceOf[js.Any], mouseup = mouseup.asInstanceOf[js.Any], orientationChanged = orientationChanged.asInstanceOf[js.Any], paste = paste.asInstanceOf[js.Any], pause = pause.asInstanceOf[js.Any], play = play.asInstanceOf[js.Any], playing = playing.asInstanceOf[js.Any], plotAreaChanged = plotAreaChanged.asInstanceOf[js.Any], pointercancel = pointercancel.asInstanceOf[js.Any], pointerdown = pointerdown.asInstanceOf[js.Any], pointerenter = pointerenter.asInstanceOf[js.Any], pointerleave = pointerleave.asInstanceOf[js.Any], pointermove = pointermove.asInstanceOf[js.Any], pointerout = pointerout.asInstanceOf[js.Any], pointerover = pointerover.asInstanceOf[js.Any], pointerup = pointerup.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], ratechange = ratechange.asInstanceOf[js.Any], readonlyChanged = readonlyChanged.asInstanceOf[js.Any], referenceLinesChanged = referenceLinesChanged.asInstanceOf[js.Any], reset = reset.asInstanceOf[js.Any], resize = resize.asInstanceOf[js.Any], scroll = scroll.asInstanceOf[js.Any], securitypolicyviolation = securitypolicyviolation.asInstanceOf[js.Any], seeked = seeked.asInstanceOf[js.Any], seeking = seeking.asInstanceOf[js.Any], select = select.asInstanceOf[js.Any], selectionchange = selectionchange.asInstanceOf[js.Any], selectstart = selectstart.asInstanceOf[js.Any], stalled = stalled.asInstanceOf[js.Any], startAngleChanged = startAngleChanged.asInstanceOf[js.Any], stepChanged = stepChanged.asInstanceOf[js.Any], submit = submit.asInstanceOf[js.Any], suspend = suspend.asInstanceOf[js.Any], svgClassNameChanged = svgClassNameChanged.asInstanceOf[js.Any], svgStyleChanged = svgStyleChanged.asInstanceOf[js.Any], thresholdDisplayChanged = thresholdDisplayChanged.asInstanceOf[js.Any], thresholdsChanged = thresholdsChanged.asInstanceOf[js.Any], timeupdate = timeupdate.asInstanceOf[js.Any], toggle = toggle.asInstanceOf[js.Any], tooltipChanged = tooltipChanged.asInstanceOf[js.Any], touchcancel = touchcancel.asInstanceOf[js.Any], touchend = touchend.asInstanceOf[js.Any], touchmove = touchmove.asInstanceOf[js.Any], touchstart = touchstart.asInstanceOf[js.Any], trackResizeChanged = trackResizeChanged.asInstanceOf[js.Any], transientValueChanged = transientValueChanged.asInstanceOf[js.Any], transitioncancel = transitioncancel.asInstanceOf[js.Any], transitionend = transitionend.asInstanceOf[js.Any], transitionrun = transitionrun.asInstanceOf[js.Any], transitionstart = transitionstart.asInstanceOf[js.Any], translationsChanged = translationsChanged.asInstanceOf[js.Any], valueChanged = valueChanged.asInstanceOf[js.Any], visualEffectsChanged = visualEffectsChanged.asInstanceOf[js.Any], volumechange = volumechange.asInstanceOf[js.Any], waiting = waiting.asInstanceOf[js.Any], wheel = wheel.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(abort = abort.asInstanceOf[js.Any], angleExtentChanged = angleExtentChanged.asInstanceOf[js.Any], animationDurationChanged = animationDurationChanged.asInstanceOf[js.Any], animationOnDataChangeChanged = animationOnDataChangeChanged.asInstanceOf[js.Any], animationOnDisplayChanged = animationOnDisplayChanged.asInstanceOf[js.Any], animationcancel = animationcancel.asInstanceOf[js.Any], animationend = animationend.asInstanceOf[js.Any], animationiteration = animationiteration.asInstanceOf[js.Any], animationstart = animationstart.asInstanceOf[js.Any], auxclick = auxclick.asInstanceOf[js.Any], blur = blur.asInstanceOf[js.Any], borderColorChanged = borderColorChanged.asInstanceOf[js.Any], borderRadiusChanged = borderRadiusChanged.asInstanceOf[js.Any], cancel = cancel.asInstanceOf[js.Any], canplay = canplay.asInstanceOf[js.Any], canplaythrough = canplaythrough.asInstanceOf[js.Any], centerChanged = centerChanged.asInstanceOf[js.Any], change = change.asInstanceOf[js.Any], click = click.asInstanceOf[js.Any], close = close.asInstanceOf[js.Any], colorChanged = colorChanged.asInstanceOf[js.Any], contextmenu = contextmenu.asInstanceOf[js.Any], copy = copy.asInstanceOf[js.Any], cuechange = cuechange.asInstanceOf[js.Any], cut = cut.asInstanceOf[js.Any], dblclick = dblclick.asInstanceOf[js.Any], drag = drag.asInstanceOf[js.Any], dragend = dragend.asInstanceOf[js.Any], dragenter = dragenter.asInstanceOf[js.Any], dragexit = dragexit.asInstanceOf[js.Any], dragleave = dragleave.asInstanceOf[js.Any], dragover = dragover.asInstanceOf[js.Any], dragstart = dragstart.asInstanceOf[js.Any], drop = drop.asInstanceOf[js.Any], durationchange = durationchange.asInstanceOf[js.Any], emptied = emptied.asInstanceOf[js.Any], ended = ended.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], focus = focus.asInstanceOf[js.Any], focusin = focusin.asInstanceOf[js.Any], focusout = focusout.asInstanceOf[js.Any], fullscreenchange = fullscreenchange.asInstanceOf[js.Any], fullscreenerror = fullscreenerror.asInstanceOf[js.Any], gotpointercapture = gotpointercapture.asInstanceOf[js.Any], indicatorSizeChanged = indicatorSizeChanged.asInstanceOf[js.Any], innerRadiusChanged = innerRadiusChanged.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], invalid = invalid.asInstanceOf[js.Any], keydown = keydown.asInstanceOf[js.Any], keypress = keypress.asInstanceOf[js.Any], keyup = keyup.asInstanceOf[js.Any], labelChanged = labelChanged.asInstanceOf[js.Any], load = load.asInstanceOf[js.Any], loadeddata = loadeddata.asInstanceOf[js.Any], loadedmetadata = loadedmetadata.asInstanceOf[js.Any], loadstart = loadstart.asInstanceOf[js.Any], lostpointercapture = lostpointercapture.asInstanceOf[js.Any], maxChanged = maxChanged.asInstanceOf[js.Any], metricLabelChanged = metricLabelChanged.asInstanceOf[js.Any], minChanged = minChanged.asInstanceOf[js.Any], mousedown = mousedown.asInstanceOf[js.Any], mouseenter = mouseenter.asInstanceOf[js.Any], mouseleave = mouseleave.asInstanceOf[js.Any], mousemove = mousemove.asInstanceOf[js.Any], mouseout = mouseout.asInstanceOf[js.Any], mouseover = mouseover.asInstanceOf[js.Any], mouseup = mouseup.asInstanceOf[js.Any], orientationChanged = orientationChanged.asInstanceOf[js.Any], paste = paste.asInstanceOf[js.Any], pause = pause.asInstanceOf[js.Any], play = play.asInstanceOf[js.Any], playing = playing.asInstanceOf[js.Any], plotAreaChanged = plotAreaChanged.asInstanceOf[js.Any], pointercancel = pointercancel.asInstanceOf[js.Any], pointerdown = pointerdown.asInstanceOf[js.Any], pointerenter = pointerenter.asInstanceOf[js.Any], pointerleave = pointerleave.asInstanceOf[js.Any], pointermove = pointermove.asInstanceOf[js.Any], pointerout = pointerout.asInstanceOf[js.Any], pointerover = pointerover.asInstanceOf[js.Any], pointerup = pointerup.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], ratechange = ratechange.asInstanceOf[js.Any], readonlyChanged = readonlyChanged.asInstanceOf[js.Any], referenceLinesChanged = referenceLinesChanged.asInstanceOf[js.Any], reset = reset.asInstanceOf[js.Any], resize = resize.asInstanceOf[js.Any], scroll = scroll.asInstanceOf[js.Any], securitypolicyviolation = securitypolicyviolation.asInstanceOf[js.Any], seeked = seeked.asInstanceOf[js.Any], seeking = seeking.asInstanceOf[js.Any], select = select.asInstanceOf[js.Any], selectionchange = selectionchange.asInstanceOf[js.Any], selectstart = selectstart.asInstanceOf[js.Any], stalled = stalled.asInstanceOf[js.Any], startAngleChanged = startAngleChanged.asInstanceOf[js.Any], stepChanged = stepChanged.asInstanceOf[js.Any], submit = submit.asInstanceOf[js.Any], suspend = suspend.asInstanceOf[js.Any], svgClassNameChanged = svgClassNameChanged.asInstanceOf[js.Any], svgStyleChanged = svgStyleChanged.asInstanceOf[js.Any], thresholdDisplayChanged = thresholdDisplayChanged.asInstanceOf[js.Any], thresholdsChanged = thresholdsChanged.asInstanceOf[js.Any], timeupdate = timeupdate.asInstanceOf[js.Any], toggle = toggle.asInstanceOf[js.Any], tooltipChanged = tooltipChanged.asInstanceOf[js.Any], touchcancel = touchcancel.asInstanceOf[js.Any], touchend = touchend.asInstanceOf[js.Any], touchmove = touchmove.asInstanceOf[js.Any], touchstart = touchstart.asInstanceOf[js.Any], trackResizeChanged = trackResizeChanged.asInstanceOf[js.Any], transientValueChanged = transientValueChanged.asInstanceOf[js.Any], transitioncancel = transitioncancel.asInstanceOf[js.Any], transitionend = transitionend.asInstanceOf[js.Any], transitionrun = transitionrun.asInstanceOf[js.Any], transitionstart = transitionstart.asInstanceOf[js.Any], translationsChanged = translationsChanged.asInstanceOf[js.Any], valueChanged = valueChanged.asInstanceOf[js.Any], visualEffectsChanged = visualEffectsChanged.asInstanceOf[js.Any], volumechange = volumechange.asInstanceOf[js.Any], waiting = waiting.asInstanceOf[js.Any], wheel = wheel.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ojStatusMeterGaugeEventMap]
   }

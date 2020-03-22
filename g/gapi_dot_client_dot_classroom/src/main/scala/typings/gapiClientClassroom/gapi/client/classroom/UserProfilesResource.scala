@@ -1,7 +1,7 @@
 package typings.gapiClientClassroom.gapi.client.classroom
 
 import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientClassroom.AnonAccesstokenAltCallbackFieldsKeyOauthtokenPrettyPrintQuotaUserUploadType
+import typings.gapiClientClassroom.AnonQuotaUserUploadType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,13 +18,13 @@ trait UserProfilesResource extends js.Object {
     * this user profile, if no profile exists with the requested ID, or for
     * access errors.
     */
-  def get(request: AnonAccesstokenAltCallbackFieldsKeyOauthtokenPrettyPrintQuotaUserUploadType): Request_[UserProfile]
+  def get(request: AnonQuotaUserUploadType): Request_[UserProfile]
 }
 
 object UserProfilesResource {
   @scala.inline
   def apply(
-    get: AnonAccesstokenAltCallbackFieldsKeyOauthtokenPrettyPrintQuotaUserUploadType => Request_[UserProfile],
+    get: AnonQuotaUserUploadType => Request_[UserProfile],
     guardianInvitations: GuardianInvitationsResource,
     guardians: GuardiansResource
   ): UserProfilesResource = {

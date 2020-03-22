@@ -1,7 +1,7 @@
 package typings.glShader.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.glShader.AnonAttributesFragment
+import typings.glShader.AnonFragment
 import typings.std.WebGLProgram
 import typings.std.WebGLRenderingContext
 import typings.std.WebGLShader
@@ -19,7 +19,7 @@ trait Shader extends js.Object {
   val vertShader: WebGLShader = js.native
   def bind(): Unit = js.native
   def dispose(): Unit = js.native
-  def update(obj: AnonAttributesFragment): Unit = js.native
+  def update(obj: AnonFragment): Unit = js.native
   def update(vertex: String, fragment: String): Unit = js.native
   def update(vertex: String, fragment: String, uniforms: js.Array[Parameter]): Unit = js.native
   def update(vertex: String, fragment: String, uniforms: js.Array[Parameter], attributes: js.Array[Parameter]): Unit = js.native

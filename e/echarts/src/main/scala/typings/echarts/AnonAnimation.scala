@@ -146,14 +146,14 @@ trait AnonAnimation extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-bar.markPoint.itemStyle
     */
-  var itemStyle: js.UndefOr[AnonBorderColorBorderTypeBorderWidth] = js.undefined
+  var itemStyle: js.UndefOr[AnonEmphasis] = js.undefined
   /**
     * Label of mark point.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-bar.markPoint.label
     */
-  var label: js.UndefOr[AnonAlignBackgroundColorBorderColorBorderRadius] = js.undefined
+  var label: js.UndefOr[AnonBorderWidth] = js.undefined
   /**
     * Whether to ignore mouse events.
     * Default value is false, for triggering and responding to
@@ -284,8 +284,8 @@ object AnonAnimation {
     animationEasingUpdate: String = null,
     animationThreshold: Int | Double = null,
     data: js.Array[AnonCoord] = null,
-    itemStyle: AnonBorderColorBorderTypeBorderWidth = null,
-    label: AnonAlignBackgroundColorBorderColorBorderRadius = null,
+    itemStyle: AnonEmphasis = null,
+    label: AnonBorderWidth = null,
     silent: js.UndefOr[Boolean] = js.undefined,
     symbol: String = null,
     symbolKeepAspect: js.UndefOr[Boolean] = js.undefined,

@@ -5,10 +5,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object typesMod {
-  type BaseConfig = typings.std.Pick[
-    typings.apolloServerCore.graphqlOptionsMod.GraphQLServerOptions[typings.apolloServerCore.typesMod.Context[js.Object], js.Any], 
-    typings.apolloServerCore.apolloServerCoreStrings.formatError | typings.apolloServerCore.apolloServerCoreStrings.debug | typings.apolloServerCore.apolloServerCoreStrings.rootValue | typings.apolloServerCore.apolloServerCoreStrings.validationRules | typings.apolloServerCore.apolloServerCoreStrings.executor | typings.apolloServerCore.apolloServerCoreStrings.formatResponse | typings.apolloServerCore.apolloServerCoreStrings.fieldResolver | typings.apolloServerCore.apolloServerCoreStrings.tracing | typings.apolloServerCore.apolloServerCoreStrings.dataSources | typings.apolloServerCore.apolloServerCoreStrings.cache
-  ]
   type Context[T] = T
   type ContextFunction[FunctionParams, ProducedContext] = js.Function1[
     /* context */ FunctionParams, 

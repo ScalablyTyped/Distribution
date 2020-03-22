@@ -15,6 +15,23 @@ trait BindingData extends js.Object
 
 object BindingData {
   @scala.inline
+  def TagBindingData(
+    attributes: js.Array[AttributeExpressionData],
+    getComponent: String => TemplateChunk[_, _],
+    slots: js.Array[SlotBindingData],
+    evaluate: /* scope */ js.Any => _ = null,
+    redundantAttribute: String = null,
+    selector: String = null,
+    `type`: BindingType = null
+  ): BindingData = {
+    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], getComponent = js.Any.fromFunction1(getComponent), slots = slots.asInstanceOf[js.Any])
+    if (evaluate != null) __obj.updateDynamic("evaluate")(js.Any.fromFunction1(evaluate))
+    if (redundantAttribute != null) __obj.updateDynamic("redundantAttribute")(redundantAttribute.asInstanceOf[js.Any])
+    if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BindingData]
+  }
+  @scala.inline
   def SlotBindingData(
     bindings: BindingData,
     html: String,
@@ -47,21 +64,6 @@ object BindingData {
     __obj.asInstanceOf[BindingData]
   }
   @scala.inline
-  def SimpleBindingData(
-    expressions: js.Array[ExpressionData],
-    evaluate: /* scope */ js.Any => _ = null,
-    redundantAttribute: String = null,
-    selector: String = null,
-    `type`: BindingType = null
-  ): BindingData = {
-    val __obj = js.Dynamic.literal(expressions = expressions.asInstanceOf[js.Any])
-    if (evaluate != null) __obj.updateDynamic("evaluate")(js.Any.fromFunction1(evaluate))
-    if (redundantAttribute != null) __obj.updateDynamic("redundantAttribute")(redundantAttribute.asInstanceOf[js.Any])
-    if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[BindingData]
-  }
-  @scala.inline
   def EachBindingData(
     itemName: String,
     template: TemplateChunk[_, _],
@@ -84,16 +86,14 @@ object BindingData {
     __obj.asInstanceOf[BindingData]
   }
   @scala.inline
-  def TagBindingData(
-    attributes: js.Array[AttributeExpressionData],
-    getComponent: String => TemplateChunk[_, _],
-    slots: js.Array[SlotBindingData],
+  def SimpleBindingData(
+    expressions: js.Array[ExpressionData],
     evaluate: /* scope */ js.Any => _ = null,
     redundantAttribute: String = null,
     selector: String = null,
     `type`: BindingType = null
   ): BindingData = {
-    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], getComponent = js.Any.fromFunction1(getComponent), slots = slots.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(expressions = expressions.asInstanceOf[js.Any])
     if (evaluate != null) __obj.updateDynamic("evaluate")(js.Any.fromFunction1(evaluate))
     if (redundantAttribute != null) __obj.updateDynamic("redundantAttribute")(redundantAttribute.asInstanceOf[js.Any])
     if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])

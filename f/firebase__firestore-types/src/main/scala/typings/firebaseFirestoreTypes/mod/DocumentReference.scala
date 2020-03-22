@@ -1,7 +1,7 @@
 package typings.firebaseFirestoreTypes.mod
 
-import typings.firebaseFirestoreTypes.AnonCompleteError
-import typings.firebaseFirestoreTypes.AnonCompleteErrorNext
+import typings.firebaseFirestoreTypes.AnonError
+import typings.firebaseFirestoreTypes.AnonNext
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -19,7 +19,7 @@ class DocumentReference[T] protected () extends js.Object {
   def get(): js.Promise[DocumentSnapshot[T]] = js.native
   def get(options: GetOptions): js.Promise[DocumentSnapshot[T]] = js.native
   def isEqual(other: DocumentReference[T]): Boolean = js.native
-  def onSnapshot(observer: AnonCompleteError[T]): js.Function0[Unit] = js.native
+  def onSnapshot(observer: AnonError[T]): js.Function0[Unit] = js.native
   def onSnapshot(onNext: js.Function1[/* snapshot */ DocumentSnapshot[T], Unit]): js.Function0[Unit] = js.native
   def onSnapshot(
     onNext: js.Function1[/* snapshot */ DocumentSnapshot[T], Unit],
@@ -30,7 +30,7 @@ class DocumentReference[T] protected () extends js.Object {
     onError: js.Function1[/* error */ Error, Unit],
     onCompletion: js.Function0[Unit]
   ): js.Function0[Unit] = js.native
-  def onSnapshot(options: SnapshotListenOptions, observer: AnonCompleteErrorNext[T]): js.Function0[Unit] = js.native
+  def onSnapshot(options: SnapshotListenOptions, observer: AnonNext[T]): js.Function0[Unit] = js.native
   def onSnapshot(options: SnapshotListenOptions, onNext: js.Function1[/* snapshot */ DocumentSnapshot[T], Unit]): js.Function0[Unit] = js.native
   def onSnapshot(
     options: SnapshotListenOptions,

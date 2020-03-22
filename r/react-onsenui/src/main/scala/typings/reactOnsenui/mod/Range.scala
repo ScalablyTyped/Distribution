@@ -1,6 +1,6 @@
 package typings.reactOnsenui.mod
 
-import typings.reactOnsenui.HTMLAttributesidclassNamestylemodifierstringonChan
+import typings.reactOnsenui.HTMLAttributesidclassNameOnChange
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-onsenui", "Range")
 @js.native
 class Range ()
-  extends typings.react.mod.Component[HTMLAttributesidclassNamestylemodifierstringonChan, js.Any, js.Any]
+  extends typings.react.mod.Component[HTMLAttributesidclassNameOnChange, js.Any, js.Any]
 

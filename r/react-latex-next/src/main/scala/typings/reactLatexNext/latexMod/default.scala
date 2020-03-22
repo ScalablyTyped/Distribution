@@ -1,6 +1,6 @@
 package typings.reactLatexNext.latexMod
 
-import typings.std.Partial
+import typings.reactLatexNext.PartialLatexProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,6 +13,6 @@ class default () extends Latex
 @JSImport("react-latex-next/dist/Latex", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: Partial[LatexProps] = js.native
+  var defaultProps: PartialLatexProps = js.native
 }
 

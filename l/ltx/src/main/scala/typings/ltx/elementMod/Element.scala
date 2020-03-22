@@ -1,7 +1,7 @@
 package typings.ltx.elementMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.ltx.FnEl
+import typings.ltx.FnCall
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ class Element protected () extends js.Object {
   var attrs: StringDictionary[js.Any] = js.native
   var children: js.Array[Element] = js.native
   @JSName("clone")
-  var clone_Original: FnEl = js.native
+  var clone_Original: FnCall = js.native
   var name: String = js.native
   var parent: Element | Null = js.native
   def attr(attr: String): js.Any = js.native

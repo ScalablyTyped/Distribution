@@ -60,7 +60,7 @@ object stateObjectMod extends js.Object {
     /** The parent [[StateObject]] objects from this state up to the root */
     var path: js.Array[StateObject] = js.native
     /** Prototypally inherits from [[StateDeclaration.redirectTo]] */
-    var redirectTo: String | (js.Function1[/* $transition$ */ Transition, TargetState]) | AnonKey = js.native
+    var redirectTo: String | (js.Function1[/* $transition$ */ Transition, TargetState]) | AnonState = js.native
     /** A list of [[Resolvable]] objects.  The internal representation of [[resolve]]. */
     var resolvables: js.Array[Resolvable] = js.native
     /** Prototypally inherits from [[StateDeclaration.resolve]] */

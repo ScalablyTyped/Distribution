@@ -6,7 +6,7 @@ import typings.storybookAddons.typesMod.Parameters
 import typings.storybookAddons.typesMod.StoryApi
 import typings.storybookClientApi.AnonFileName
 import typings.storybookClientApi.AnonHierarchyRootSeparator
-import typings.storybookClientApi.AnonHierarchyRootSeparatorHierarchySeparator
+import typings.storybookClientApi.AnonHierarchySeparator
 import typings.storybookClientApi.typesMod.StoreItem
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,7 +20,7 @@ trait ClientApi extends js.Object {
   def addParameters(parameters: Parameters): Unit
   def clearDecorators(): Unit
   def clearParameters(): Unit
-  def getSeparators(): AnonHierarchyRootSeparator | AnonHierarchyRootSeparatorHierarchySeparator
+  def getSeparators(): AnonHierarchyRootSeparator | AnonHierarchySeparator
   def getStorybook(): js.Array[AnonFileName]
   def raw(): js.Array[StoreItem]
   def setAddon(addon: js.Any): Unit
@@ -38,7 +38,7 @@ object ClientApi {
     addParameters: Parameters => Unit,
     clearDecorators: () => Unit,
     clearParameters: () => Unit,
-    getSeparators: () => AnonHierarchyRootSeparator | AnonHierarchyRootSeparatorHierarchySeparator,
+    getSeparators: () => AnonHierarchyRootSeparator | AnonHierarchySeparator,
     getStorybook: () => js.Array[AnonFileName],
     raw: () => js.Array[StoreItem],
     setAddon: js.Any => Unit,

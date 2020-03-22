@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "sinon-stub-promise"
-version := "v2.1.0-dt-20190322Z-3f69cc"
+version := "v2.1.0-dt-20190322Z-dbcd90"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "sinon" % "7.5-dt-20191120Z-c2571b",
-  "org.scalablytyped" %%% "std" % "3.7-1b8369")
+  "org.scalablytyped" %%% "sinon" % "7.5-dt-20191120Z-d72a6c",
+  "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

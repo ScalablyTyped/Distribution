@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object commitDiscussionsMod extends js.Object {
   @js.native
-  class CommitDiscussions () extends ResourceDiscussions {
+  class CommitDiscussions protected () extends ResourceDiscussions {
     def this(options: BaseServiceOptions) = this()
   }
   

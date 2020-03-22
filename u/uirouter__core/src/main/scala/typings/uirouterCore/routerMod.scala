@@ -98,8 +98,8 @@ object routerMod extends js.Object {
       options: js.Any
     ): T = js.native
     /** Add plugin (as ES6 class) */
-    def plugin[T /* <: UIRouterPlugin */](plugin: AnonOptions[T]): T = js.native
-    def plugin[T /* <: UIRouterPlugin */](plugin: AnonOptions[T], options: js.Any): T = js.native
+    def plugin[T /* <: UIRouterPlugin */](plugin: AnonInstantiableT[T]): T = js.native
+    def plugin[T /* <: UIRouterPlugin */](plugin: AnonInstantiableT[T], options: js.Any): T = js.native
   }
   
   type PluginFactory[T] = js.Function2[/* router */ UIRouter, /* options */ js.UndefOr[js.Any], T]

@@ -1,6 +1,6 @@
 package typings.fullcalendar.srcMainMod
 
-import typings.fullcalendar.AnonLeft
+import typings.fullcalendar.AnonTop
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("fullcalendar/src/main", "constrainPoint")
 @js.native
 object constrainPoint extends js.Object {
-  def apply(point: js.Any, rect: js.Any): AnonLeft = js.native
+  def apply(point: js.Any, rect: js.Any): AnonTop = js.native
 }
 

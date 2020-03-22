@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/angular", "IonBackdrop")
 @js.native
 class IonBackdrop protected ()
-  extends typings.ionicAngular.distMod.IonBackdrop {
+  extends typings.ionicAngular.proxiesMod.IonBackdrop {
   def this(c: ChangeDetectorRef, r: ElementRef[_], z: NgZone) = this()
 }
 

@@ -1,6 +1,6 @@
 package typings.googleapis.driveV2Mod.driveV2
 
-import typings.googleapis.AnonTypeValue
+import typings.googleapis.AnonValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,7 +33,7 @@ trait SchemaComment extends js.Object {
   /**
     * The context of the file which is being commented on.
     */
-  var context: js.UndefOr[AnonTypeValue] = js.native
+  var context: js.UndefOr[AnonValue] = js.native
   /**
     * The date when this comment was first created.
     */
@@ -88,7 +88,7 @@ object SchemaComment {
     author: SchemaUser = null,
     commentId: String = null,
     content: String = null,
-    context: AnonTypeValue = null,
+    context: AnonValue = null,
     createdDate: String = null,
     deleted: js.UndefOr[Boolean] = js.undefined,
     fileId: String = null,

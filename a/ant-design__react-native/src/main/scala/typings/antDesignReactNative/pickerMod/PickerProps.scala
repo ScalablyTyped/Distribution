@@ -1,53 +1,24 @@
 package typings.antDesignReactNative.pickerMod
 
-import typings.antDesignReactNative.PartialPickerStyle
 import typings.antDesignReactNative.cascaderTypesMod.CascaderValue
+import typings.antDesignReactNative.libStyleMod.WithThemeStyles
 import typings.antDesignReactNative.pickerPropsTypeMod.PickerData
+import typings.antDesignReactNative.pickerPropsTypeMod.PickerPropsType
+import typings.antDesignReactNative.pickerStyleMod.PickerStyle
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactElement
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
+import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined parent @ant-design/react-native.@ant-design/react-native/lib/picker/PropsType.PickerPropsType */
-/* Inlined parent @ant-design/react-native.@ant-design/react-native/lib/style.WithThemeStyles<@ant-design/react-native.@ant-design/react-native/lib/picker/style.PickerStyle> */
-trait PickerProps extends js.Object {
-  var WrapComponent: js.UndefOr[js.Any] = js.undefined
-  var actionTextActiveOpacity: js.UndefOr[Double] = js.undefined
-  var actionTextUnderlayColor: js.UndefOr[String] = js.undefined
-  var cascade: js.UndefOr[Boolean] = js.undefined
-  var cols: js.UndefOr[Double] = js.undefined
-  var content: js.UndefOr[ReactElement | String] = js.undefined
-  var data: js.Array[js.Array[PickerData] | PickerData]
-  var disabled: js.UndefOr[Boolean] = js.undefined
-  var dismissText: js.UndefOr[String | ReactElement] = js.undefined
-  var extra: js.UndefOr[String] = js.undefined
-  var format: js.UndefOr[js.Function1[/* values */ js.Array[String], String]] = js.undefined
-  var indicatorStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
-  var itemStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
-  var maskTransitionName: js.UndefOr[String] = js.undefined
-  var okText: js.UndefOr[String | ReactElement] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* date */ js.UndefOr[CascaderValue], Unit]] = js.undefined
-  var onDismiss: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onOk: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.undefined
-  var onPickerChange: js.UndefOr[js.Function1[/* value */ CascaderValue, Unit]] = js.undefined
-  var onVisibleChange: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.undefined
-  var picker: js.UndefOr[js.Any] = js.undefined
+trait PickerProps
+  extends PickerPropsType
+     with WithThemeStyles[PickerStyle] {
   var pickerPrefixCls: js.UndefOr[String] = js.undefined
-  var pickerValueChangeProp: js.UndefOr[String] = js.undefined
-  var pickerValueProp: js.UndefOr[String] = js.undefined
   var popupPrefixCls: js.UndefOr[String] = js.undefined
-  var popupTransitionName: js.UndefOr[String] = js.undefined
-  var style: js.UndefOr[js.Any] = js.undefined
-  var styles: js.UndefOr[PartialPickerStyle] = js.undefined
-  var title: js.UndefOr[String | ReactElement] = js.undefined
-  var transitionName: js.UndefOr[String] = js.undefined
-  var triggerType: js.UndefOr[String] = js.undefined
-  var value: js.UndefOr[js.Array[String | Double]] = js.undefined
-  var visible: js.UndefOr[Boolean] = js.undefined
-  var wrapStyle: js.UndefOr[CSSProperties] = js.undefined
 }
 
 object PickerProps {
@@ -80,7 +51,7 @@ object PickerProps {
     popupPrefixCls: String = null,
     popupTransitionName: String = null,
     style: js.Any = null,
-    styles: PartialPickerStyle = null,
+    styles: Partial[PickerStyle] = null,
     title: String | ReactElement = null,
     transitionName: String = null,
     triggerType: String = null,

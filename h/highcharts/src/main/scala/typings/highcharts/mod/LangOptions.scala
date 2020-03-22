@@ -151,7 +151,7 @@ trait LangOptions extends js.Object {
     * (Highstock) Configure the stockTools GUI titles(hints) in the chart.
     * Requires the `stock-tools.js` module to be loaded.
     */
-  var stockTools: js.UndefOr[js.Object | LangStockToolsOptions] = js.undefined
+  var stockTools: js.UndefOr[LangStockToolsOptions] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The default thousands separator
     * used in the `Highcharts.numberFormat` method unless otherwise specified
@@ -215,7 +215,7 @@ object LangOptions {
     resetZoomTitle: String = null,
     shortMonths: js.Array[String] = null,
     shortWeekdays: js.Array[String] = null,
-    stockTools: js.Object | LangStockToolsOptions = null,
+    stockTools: LangStockToolsOptions = null,
     thousandsSep: String = null,
     viewData: String = null,
     viewFullscreen: String = null,

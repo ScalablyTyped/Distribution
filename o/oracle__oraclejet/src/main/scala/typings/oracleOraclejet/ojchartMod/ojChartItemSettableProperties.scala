@@ -1,6 +1,6 @@
 package typings.oracleOraclejet.ojchartMod
 
-import typings.oracleOraclejet.AnonMedianSvgClassNameMedianSvgStyle
+import typings.oracleOraclejet.AnonMedianSvgStyle
 import typings.oracleOraclejet.mod.JetSettableProperties
 import typings.oracleOraclejet.oracleOraclejetStrings.aboveMarker
 import typings.oracleOraclejet.oracleOraclejetStrings.afterMarker
@@ -42,7 +42,7 @@ import scala.scalajs.js.annotation._
 trait ojChartItemSettableProperties extends JetSettableProperties {
   var borderColor: js.UndefOr[String] = js.undefined
   var borderWidth: js.UndefOr[Double] = js.undefined
-  var boxPlot: js.UndefOr[AnonMedianSvgClassNameMedianSvgStyle] = js.undefined
+  var boxPlot: js.UndefOr[AnonMedianSvgStyle] = js.undefined
   var categories: js.UndefOr[js.Array[String]] = js.undefined
   var close: js.UndefOr[Double] = js.undefined
   var color: js.UndefOr[String] = js.undefined
@@ -91,7 +91,7 @@ object ojChartItemSettableProperties {
     seriesId: String | Double,
     borderColor: String = null,
     borderWidth: Int | Double = null,
-    boxPlot: AnonMedianSvgClassNameMedianSvgStyle = null,
+    boxPlot: AnonMedianSvgStyle = null,
     categories: js.Array[String] = null,
     close: Int | Double = null,
     color: String = null,

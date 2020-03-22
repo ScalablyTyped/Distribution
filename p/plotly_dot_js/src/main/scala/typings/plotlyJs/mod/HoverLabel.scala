@@ -1,9 +1,9 @@
 package typings.plotlyJs.mod
 
+import typings.plotlyJs.PartialFont
 import typings.plotlyJs.plotlyJsStrings.auto
 import typings.plotlyJs.plotlyJsStrings.left
 import typings.plotlyJs.plotlyJsStrings.right
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,7 +25,7 @@ object HoverLabel {
     align: left | right | auto,
     bgcolor: String,
     bordercolor: String,
-    font: Partial[Font],
+    font: PartialFont,
     namelength: Double
   ): HoverLabel = {
     val __obj = js.Dynamic.literal(align = align.asInstanceOf[js.Any], bgcolor = bgcolor.asInstanceOf[js.Any], bordercolor = bordercolor.asInstanceOf[js.Any], font = font.asInstanceOf[js.Any], namelength = namelength.asInstanceOf[js.Any])

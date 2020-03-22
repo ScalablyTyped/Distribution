@@ -14,7 +14,7 @@ object reactStrings {
   sealed trait A extends js.Object
   
   @js.native
-  sealed trait Fn_TypeAny extends js.Object
+  sealed trait Fn1 extends js.Object
   
   @js.native
   sealed trait I extends js.Object
@@ -835,7 +835,7 @@ object reactStrings {
   @scala.inline
   def A: A = "A".asInstanceOf[A]
   @scala.inline
-  def Fn_TypeAny: Fn_TypeAny = "Fn_TypeAny".asInstanceOf[Fn_TypeAny]
+  def Fn1: Fn1 = "Fn1".asInstanceOf[Fn1]
   @scala.inline
   def I: I = "I".asInstanceOf[I]
   @scala.inline

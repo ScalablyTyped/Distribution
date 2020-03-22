@@ -1,9 +1,12 @@
 package typings.ionicCore.componentsMod.LocalJSX
 
+import typings.ionicCore.ionicCoreStrings.always
 import typings.ionicCore.ionicCoreStrings.decimal
 import typings.ionicCore.ionicCoreStrings.email
+import typings.ionicCore.ionicCoreStrings.focus
 import typings.ionicCore.ionicCoreStrings.ios
 import typings.ionicCore.ionicCoreStrings.md
+import typings.ionicCore.ionicCoreStrings.never
 import typings.ionicCore.ionicCoreStrings.none
 import typings.ionicCore.ionicCoreStrings.number
 import typings.ionicCore.ionicCoreStrings.numeric
@@ -36,7 +39,7 @@ trait IonSearchbar extends js.Object {
     */
   var autocorrect: js.UndefOr[on | off] = js.undefined
   /**
-    * Set the cancel button icon. Only applies to `md` mode.
+    * Set the cancel button icon. Only applies to `md` mode. Defaults to `"arrow-back-sharp"`.
     */
   var cancelButtonIcon: js.UndefOr[String] = js.undefined
   /**
@@ -44,7 +47,7 @@ trait IonSearchbar extends js.Object {
     */
   var cancelButtonText: js.UndefOr[String] = js.undefined
   /**
-    * Set the clear icon. Defaults to `"close-circle"` for `ios` and `"close"` for `md`.
+    * Set the clear icon. Defaults to `"close-circle"` for `ios` and `"close-sharp"` for `md`.
     */
   var clearIcon: js.UndefOr[String] = js.undefined
   /**
@@ -88,7 +91,7 @@ trait IonSearchbar extends js.Object {
     */
   var onIonFocus: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.undefined
   /**
-    * Emitted when a keyboard input ocurred.
+    * Emitted when a keyboard input occurred.
     */
   var onIonInput: js.UndefOr[js.Function1[/* event */ CustomEvent[KeyboardEvent], Unit]] = js.undefined
   /**
@@ -96,13 +99,13 @@ trait IonSearchbar extends js.Object {
     */
   var placeholder: js.UndefOr[String] = js.undefined
   /**
-    * The icon to use as the search icon.
+    * The icon to use as the search icon. Defaults to `"search-outline"` in `ios` mode and `"search-sharp"` in `md` mode.
     */
   var searchIcon: js.UndefOr[String] = js.undefined
   /**
     * Sets the behavior for the cancel button. Defaults to `"never"`. Setting to `"focus"` shows the cancel button on focus. Setting to `"never"` hides the cancel button. Setting to `"always"` shows the cancel button regardless of focus state.
     */
-  var showCancelButton: js.UndefOr[Boolean | String] = js.undefined
+  var showCancelButton: js.UndefOr[never | focus | always] = js.undefined
   /**
     * If `true`, enable spellcheck on the input.
     */
@@ -139,7 +142,7 @@ object IonSearchbar {
     onIonInput: /* event */ CustomEvent[KeyboardEvent] => Unit = null,
     placeholder: String = null,
     searchIcon: String = null,
-    showCancelButton: Boolean | String = null,
+    showCancelButton: never | focus | always = null,
     spellcheck: js.UndefOr[Boolean] = js.undefined,
     `type`: text | password | email | number | search | tel | url = null,
     value: String = null

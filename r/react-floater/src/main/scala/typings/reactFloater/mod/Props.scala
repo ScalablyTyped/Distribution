@@ -4,13 +4,13 @@ import typings.popperJs.mod.Data
 import typings.popperJs.mod.Modifiers
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
-import typings.reactFloater.AnonCenter
+import typings.reactFloater.AnonOffset
+import typings.reactFloater.PartialStyles
 import typings.reactFloater.reactFloaterStrings.click
 import typings.reactFloater.reactFloaterStrings.floater
 import typings.reactFloater.reactFloaterStrings.hover
 import typings.reactFloater.reactFloaterStrings.wrapper
 import typings.std.HTMLElement
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -95,7 +95,7 @@ trait Props extends js.Object {
   /**
     * Customize the default UI.
     */
-  var styles: js.UndefOr[Partial[Styles]] = js.undefined
+  var styles: js.UndefOr[PartialStyles] = js.undefined
   /**
     * The target used to calculate the Floater position. If it's not set, it will use the `children` as the target.
     */
@@ -107,7 +107,7 @@ trait Props extends js.Object {
   /**
     * Position the wrapper relative to the target.
     */
-  var wrapperOptions: js.UndefOr[AnonCenter] = js.undefined
+  var wrapperOptions: js.UndefOr[AnonOffset] = js.undefined
 }
 
 object Props {
@@ -132,10 +132,10 @@ object Props {
     placement: Placement = null,
     showCloseButton: js.UndefOr[Boolean] = js.undefined,
     style: CSSProperties = null,
-    styles: Partial[Styles] = null,
+    styles: PartialStyles = null,
     target: String | HTMLElement = null,
     title: ReactNode = null,
-    wrapperOptions: AnonCenter = null
+    wrapperOptions: AnonOffset = null
   ): Props = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(autoOpen)) __obj.updateDynamic("autoOpen")(autoOpen.asInstanceOf[js.Any])

@@ -10,6 +10,7 @@ trait DescribeStateMachineForExecutionOutput extends js.Object {
     * The Amazon States Language definition of the state machine. See Amazon States Language.
     */
   var definition: Definition = js.native
+  var loggingConfiguration: js.UndefOr[LoggingConfiguration] = js.native
   /**
     * The name of the state machine associated with the execution.
     */
@@ -30,9 +31,16 @@ trait DescribeStateMachineForExecutionOutput extends js.Object {
 
 object DescribeStateMachineForExecutionOutput {
   @scala.inline
-  def apply(definition: Definition, name: Name, roleArn: Arn, stateMachineArn: Arn, updateDate: Timestamp): DescribeStateMachineForExecutionOutput = {
+  def apply(
+    definition: Definition,
+    name: Name,
+    roleArn: Arn,
+    stateMachineArn: Arn,
+    updateDate: Timestamp,
+    loggingConfiguration: LoggingConfiguration = null
+  ): DescribeStateMachineForExecutionOutput = {
     val __obj = js.Dynamic.literal(definition = definition.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any], stateMachineArn = stateMachineArn.asInstanceOf[js.Any], updateDate = updateDate.asInstanceOf[js.Any])
-  
+    if (loggingConfiguration != null) __obj.updateDynamic("loggingConfiguration")(loggingConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeStateMachineForExecutionOutput]
   }
 }

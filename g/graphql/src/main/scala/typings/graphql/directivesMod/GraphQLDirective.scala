@@ -1,6 +1,6 @@
 package typings.graphql.directivesMod
 
-import typings.graphql.AnonArgs
+import typings.graphql.GraphQLDirectiveConfigarg
 import typings.graphql.astMod.DirectiveDefinitionNode
 import typings.graphql.definitionMod.GraphQLArgument
 import typings.graphql.directiveLocationMod.DirectiveLocationEnum
@@ -21,6 +21,6 @@ class GraphQLDirective protected () extends js.Object {
   var isRepeatable: Boolean = js.native
   var locations: js.Array[DirectiveLocationEnum] = js.native
   var name: String = js.native
-  def toConfig(): GraphQLDirectiveConfig with AnonArgs = js.native
+  def toConfig(): GraphQLDirectiveConfigarg = js.native
 }
 

@@ -31,5 +31,6 @@ class Transaction[TMemo /* <: Memo[MemoType] */, TOps /* <: js.Array[Operation] 
   def signHashX(preimage: Buffer): Unit = js.native
   def signatureBase(): Buffer = js.native
   def toEnvelope(): TransactionEnvelope = js.native
+  def toXDR(): String = js.native
 }
 

@@ -10,9 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object formatDistanceWithOptionsMod extends js.Object {
   @js.native
-  object default extends TopLevel[
-          CurriedFn3[AnonAddSuffixIncludeSecondsLocale, Date | Double, Date | Double, String]
-        ]
+  object default extends TopLevel[CurriedFn3[AnonAddSuffixIncludeSeconds, Date | Double, Date | Double, String]]
   
 }
 

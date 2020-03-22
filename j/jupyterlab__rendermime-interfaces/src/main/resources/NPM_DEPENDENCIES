@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jupyterlab/rendermime-interfaces" : "1.5.0"
+      "@jupyterlab/rendermime-interfaces" : "2.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@jupyterlab/rendermime-interfaces" : "1.5.0"
+      "@jupyterlab/rendermime-interfaces" : "2.0.0"
     }
   ],
   "compile-devDependencies" : [

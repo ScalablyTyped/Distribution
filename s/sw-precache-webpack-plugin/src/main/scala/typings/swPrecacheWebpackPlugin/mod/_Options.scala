@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.node.Buffer
 import typings.std.RegExp
 import typings.swPrecache.AnonHandler
-import typings.swPrecache.FnMessage
+import typings.swPrecache.FnCall
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,7 +27,7 @@ object _Options {
     handleFetch: js.UndefOr[Boolean] = js.undefined,
     ignoreUrlParametersMatching: js.Array[RegExp] = null,
     importScripts: js.Any = null,
-    logger: FnMessage = null,
+    logger: FnCall = null,
     maximumFileSizeToCacheInBytes: Int | Double = null,
     navigateFallback: String = null,
     navigateFallbackWhitelist: js.Array[RegExp] = null,

@@ -10,7 +10,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object serializersTypesIndexedAccessMod extends js.Object {
   @js.native
-  class IndexedAccessTypeSerializer () extends TypeSerializerComponent[IndexedAccessType]
+  class IndexedAccessTypeSerializer () extends TypeSerializerComponent[IndexedAccessType] {
+    def toObject(`type`: IndexedAccessType, obj: PickIndexedAccessTypetype): typings.typedoc.schemaMod.IndexedAccessType = js.native
+  }
   
 }
 

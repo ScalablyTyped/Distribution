@@ -1,6 +1,6 @@
 package typings.cathoQuantum.tooltipMod
 
-import typings.cathoQuantum.AnonBaseFontSizeColorsSpacing
+import typings.cathoQuantum.AnonBaseFontSizeColors
 import typings.cathoQuantum.cathoQuantumStrings.bottom
 import typings.cathoQuantum.cathoQuantumStrings.left
 import typings.cathoQuantum.cathoQuantumStrings.right
@@ -14,7 +14,7 @@ trait TooltipProps extends js.Object {
   var children: js.Array[ReactNode] | ReactNode
   var placement: js.UndefOr[top | right | bottom | left] = js.undefined
   var text: String
-  var theme: js.UndefOr[AnonBaseFontSizeColorsSpacing] = js.undefined
+  var theme: js.UndefOr[AnonBaseFontSizeColors] = js.undefined
   var visible: js.UndefOr[Boolean] = js.undefined
 }
 
@@ -24,7 +24,7 @@ object TooltipProps {
     text: String,
     children: js.Array[ReactNode] | ReactNode = null,
     placement: top | right | bottom | left = null,
-    theme: AnonBaseFontSizeColorsSpacing = null,
+    theme: AnonBaseFontSizeColors = null,
     visible: js.UndefOr[Boolean] = js.undefined
   ): TooltipProps = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])

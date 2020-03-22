@@ -2,8 +2,8 @@ package typings.jupyterlabTooltip.widgetMod.Tooltip
 
 import typings.jupyterlabCodeeditor.editorMod.CodeEditor.IEditor
 import typings.jupyterlabRendermime.tokensMod.IRenderMimeRegistry
-import typings.phosphorCoreutils.jsonMod.JSONObject
-import typings.phosphorWidgets.mod.Widget
+import typings.luminoCoreutils.jsonMod.JSONObject
+import typings.luminoWidgets.mod.Widget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

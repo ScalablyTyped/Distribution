@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object groupLabelsMod extends js.Object {
   @js.native
-  class GroupLabels () extends ResourceLabels {
+  class GroupLabels protected () extends ResourceLabels {
     def this(options: BaseServiceOptions) = this()
   }
   

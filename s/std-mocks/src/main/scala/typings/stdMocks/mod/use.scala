@@ -1,6 +1,6 @@
 package typings.stdMocks.mod
 
-import typings.stdMocks.AnonPrint
+import typings.stdMocks.Optionsprintboolean
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object use extends js.Object {
   def apply(): Unit = js.native
-  def apply(opts: Options with AnonPrint): Unit = js.native
+  def apply(opts: Optionsprintboolean): Unit = js.native
 }
 

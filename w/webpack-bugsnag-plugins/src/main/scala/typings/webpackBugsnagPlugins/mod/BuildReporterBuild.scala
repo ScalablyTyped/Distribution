@@ -1,6 +1,6 @@
 package typings.webpackBugsnagPlugins.mod
 
-import typings.webpackBugsnagPlugins.AnonBitbucket
+import typings.webpackBugsnagPlugins.AnonProvider
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -38,7 +38,7 @@ trait BuildReporterBuild extends js.Object {
     * the module will attempt to detect source control information from .git, .
     * hg and the nearest package.json)
     */
-  var sourceControl: js.UndefOr[AnonBitbucket] = js.undefined
+  var sourceControl: js.UndefOr[AnonProvider] = js.undefined
 }
 
 object BuildReporterBuild {
@@ -49,7 +49,7 @@ object BuildReporterBuild {
     autoAssignRelease: js.UndefOr[Boolean] = js.undefined,
     builderName: String = null,
     releaseStage: String = null,
-    sourceControl: AnonBitbucket = null
+    sourceControl: AnonProvider = null
   ): BuildReporterBuild = {
     val __obj = js.Dynamic.literal(apiKey = apiKey.asInstanceOf[js.Any], appVersion = appVersion.asInstanceOf[js.Any])
     if (!js.isUndefined(autoAssignRelease)) __obj.updateDynamic("autoAssignRelease")(autoAssignRelease.asInstanceOf[js.Any])

@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonHtml extends js.Object {
+  var assets: AnonCss
   var html: String
   var outputName: String
   var plugin: HtmlWebpackPlugin
@@ -13,8 +14,8 @@ trait AnonHtml extends js.Object {
 
 object AnonHtml {
   @scala.inline
-  def apply(html: String, outputName: String, plugin: HtmlWebpackPlugin): AnonHtml = {
-    val __obj = js.Dynamic.literal(html = html.asInstanceOf[js.Any], outputName = outputName.asInstanceOf[js.Any], plugin = plugin.asInstanceOf[js.Any])
+  def apply(assets: AnonCss, html: String, outputName: String, plugin: HtmlWebpackPlugin): AnonHtml = {
+    val __obj = js.Dynamic.literal(assets = assets.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], outputName = outputName.asInstanceOf[js.Any], plugin = plugin.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AnonHtml]
   }

@@ -27,9 +27,7 @@ trait Typeoftabs extends js.Object {
     * @param tabId The ID of the tab that has become active.
     * @deprecated Please use `tabs.onActivated`.
     */
-  val onActiveChanged: js.UndefOr[
-    WebExtEvent[js.Function2[/* tabId */ Double, /* selectInfo */ AnonWindowIdNumber, Unit]]
-  ] = js.native
+  val onActiveChanged: js.UndefOr[WebExtEvent[js.Function2[/* tabId */ Double, /* selectInfo */ Anon0, Unit]]] = js.native
   /** Fired when a tab is attached to a window, for example because it was moved between windows. */
   val onAttached: WebExtEvent[js.Function2[/* tabId */ Double, /* attachInfo */ AnonNewPosition, Unit]] = js.native
   /* tabs events */
@@ -63,16 +61,14 @@ trait Typeoftabs extends js.Object {
     * @param tabId The ID of the tab that has become active.
     * @deprecated Please use `tabs.onActivated`.
     */
-  val onSelectionChanged: js.UndefOr[
-    WebExtEvent[js.Function2[/* tabId */ Double, /* selectInfo */ AnonWindowIdNumber, Unit]]
-  ] = js.native
+  val onSelectionChanged: js.UndefOr[WebExtEvent[js.Function2[/* tabId */ Double, /* selectInfo */ Anon0, Unit]]] = js.native
   /**
     * Fired when a tab is updated.
     * @param changeInfo Lists the changes to the state of the tab that was updated.
     * @param tab Gives the state of the tab that was updated.
     */
   val onUpdated: TabsOnUpdatedEvent[
-    js.Function3[/* tabId */ Double, /* changeInfo */ AnonAttention, /* tab */ Tab, Unit]
+    js.Function3[/* tabId */ Double, /* changeInfo */ AnonAudible, /* tab */ Tab, Unit]
   ] = js.native
   /** Fired when a tab is zoomed. */
   val onZoomChange: WebExtEvent[js.Function1[/* ZoomChangeInfo */ AnonNewZoomFactor, Unit]] = js.native
@@ -212,7 +208,7 @@ trait Typeoftabs extends js.Object {
   /** Shows print preview for page in active tab. */
   def printPreview(): js.Promise[Unit] = js.native
   /** Gets all tabs that have the specified properties, or all tabs if no properties are specified. */
-  def query(queryInfo: AnonActiveAttention): js.Promise[js.Array[Tab]] = js.native
+  def query(queryInfo: AnonAttention): js.Promise[js.Array[Tab]] = js.native
   /**
     * Reload a tab.
     * @param [tabId] The ID of the tab to reload; defaults to the selected tab of the current window.
@@ -302,10 +298,10 @@ trait Typeoftabs extends js.Object {
     * Modifies the properties of a tab. Properties that are not specified in `updateProperties` are not modified.
     * @param tabId Defaults to the selected tab of the current window.
     */
-  def update(tabId: Double, updateProperties: AnonActiveHighlighted): js.Promise[Tab] = js.native
+  def update(tabId: Double, updateProperties: AnonHighlighted): js.Promise[Tab] = js.native
   /**
     * Modifies the properties of a tab. Properties that are not specified in `updateProperties` are not modified.
     */
-  def update(updateProperties: AnonActiveHighlighted): js.Promise[Tab] = js.native
+  def update(updateProperties: AnonHighlighted): js.Promise[Tab] = js.native
 }
 

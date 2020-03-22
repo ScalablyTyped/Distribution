@@ -1,6 +1,6 @@
 package typings.googleapis.plusDomainsV1Mod.plusDomainsV1
 
-import typings.googleapis.AnonDisplayNameId
+import typings.googleapis.AnonImage
 import typings.googleapis.AnonTime
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,7 +11,7 @@ trait SchemaMedia extends js.Object {
   /**
     * The person who uploaded this media.
     */
-  var author: js.UndefOr[AnonDisplayNameId] = js.native
+  var author: js.UndefOr[AnonImage] = js.native
   /**
     * The display name for this media.
     */
@@ -94,7 +94,7 @@ trait SchemaMedia extends js.Object {
 object SchemaMedia {
   @scala.inline
   def apply(
-    author: AnonDisplayNameId = null,
+    author: AnonImage = null,
     displayName: String = null,
     etag: String = null,
     exif: AnonTime = null,

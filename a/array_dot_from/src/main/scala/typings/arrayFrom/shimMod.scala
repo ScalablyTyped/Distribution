@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 @JSImport("array.from/shim", JSImport.Namespace)
 @js.native
 object shimMod extends js.Object {
-  def apply(): FnArrayLike = js.native
+  def apply(): FnCall = js.native
 }
 

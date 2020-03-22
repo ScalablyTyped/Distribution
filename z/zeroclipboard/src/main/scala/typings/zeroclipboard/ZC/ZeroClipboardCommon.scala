@@ -1,7 +1,7 @@
 package typings.zeroclipboard.ZC
 
 import typings.zeroclipboard.AnonAftercopy
-import typings.zeroclipboard.AnonAftercopyBeforecopy
+import typings.zeroclipboard.AnonBeforecopy
 import typings.zeroclipboard.AnonName
 import typings.zeroclipboard.zeroclipboardStrings.aftercopy
 import typings.zeroclipboard.zeroclipboardStrings.beforecopy
@@ -66,7 +66,7 @@ trait ZeroClipboardCommon extends js.Object {
     * Retrieves a copy of the map of registered listener functions/objects for ALL event types.
     * @return {Object}
     */
-  def handlers(): AnonAftercopyBeforecopy = js.native
+  def handlers(): AnonBeforecopy = js.native
   /**
     * Retrieves a copy of the registered listener functions/objects for the given eventType.
     * @param  {string} eventType

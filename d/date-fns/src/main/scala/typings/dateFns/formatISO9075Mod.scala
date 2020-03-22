@@ -11,9 +11,9 @@ object formatISO9075Mod extends js.Object {
   @js.native
   object default extends js.Object {
     def apply(date: Double): String = js.native
-    def apply(date: Double, options: AnonBasic): String = js.native
+    def apply(date: Double, options: AnonFormat): String = js.native
     def apply(date: Date): String = js.native
-    def apply(date: Date, options: AnonBasic): String = js.native
+    def apply(date: Date, options: AnonFormat): String = js.native
   }
   
 }

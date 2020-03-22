@@ -1,8 +1,8 @@
 package typings.i18next.mod
 
-import typings.i18next.AnonKey
 import typings.i18next.AnonKeySeparator
-import typings.i18next.AnonKeySeparatorSilent
+import typings.i18next.AnonSilent
+import typings.i18next.AnonTranslation
 import typings.i18next.i18nextStrings.added
 import typings.i18next.i18nextStrings.failedLoading
 import typings.i18next.i18nextStrings.initialized
@@ -60,7 +60,7 @@ trait i18n extends js.Object {
     * Adds one key/value.
     */
   def addResource(lng: String, ns: String, key: String, value: String): Unit = js.native
-  def addResource(lng: String, ns: String, key: String, value: String, options: AnonKeySeparatorSilent): Unit = js.native
+  def addResource(lng: String, ns: String, key: String, value: String, options: AnonSilent): Unit = js.native
   /**
     * Adds a complete bundle.
     * Setting deep param to true will extend existing translations in that file.
@@ -120,7 +120,7 @@ trait i18n extends js.Object {
   /**
     * Returns a resource data by language.
     */
-  def getDataByLanguage(lng: String): AnonKey = js.native
+  def getDataByLanguage(lng: String): AnonTranslation = js.native
   /**
     * Returns a t function that defaults to given language or namespace.
     * Both params could be arrays of languages or namespaces and will be treated as fallbacks in that case.

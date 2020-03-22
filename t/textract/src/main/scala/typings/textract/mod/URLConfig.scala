@@ -1,8 +1,8 @@
 package typings.textract.mod
 
 import typings.node.childProcessMod.ExecException
-import typings.textract.AnonASCII7
 import typings.textract.AnonCmd
+import typings.textract.AnonCrop
 import typings.textract.AnonLang
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -23,7 +23,7 @@ object URLConfig {
     exec: ExecException = null,
     images: extractorExecOpts = null,
     includeAltText: js.UndefOr[Boolean] = js.undefined,
-    pdftotextOptions: AnonASCII7 = null,
+    pdftotextOptions: AnonCrop = null,
     preserveLineBreaks: js.UndefOr[Boolean] = js.undefined,
     preserveOnlyMultipleLineBreaks: js.UndefOr[Boolean] = js.undefined,
     rtf: extractorExecOpts = null,

@@ -27,7 +27,7 @@ trait NotificationRuleArgs extends js.Object {
     */
   val resource: Input[String] = js.native
   /**
-    * The status of the notification rule. Possible balues are `ENABLED` and `DISABLED`, default is `ENABLED`.
+    * The status of the notification rule. Possible values are `ENABLED` and `DISABLED`, default is `ENABLED`.
     */
   val status: js.UndefOr[Input[String]] = js.native
   /**

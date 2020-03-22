@@ -1,7 +1,7 @@
 package typings.terminalKit.mod
 
-import typings.terminalKit.AnonAttrTransparencyChar
 import typings.terminalKit.AnonShrink
+import typings.terminalKit.AnonTransparencyChar
 import typings.terminalKit.screenBufferMod.Attributes
 import typings.terminalKit.screenBufferMod.Options
 import typings.terminalKit.screenBufferMod.^
@@ -21,7 +21,7 @@ class ScreenBuffer protected () extends ^ {
 object ScreenBuffer extends js.Object {
   def attr2object(attrFlags: Double): Unit = js.native
   def create(options: Options): typings.terminalKit.screenBufferMod.ScreenBuffer = js.native
-  def createFromString(options: AnonAttrTransparencyChar, str: String): typings.terminalKit.screenBufferMod.ScreenBuffer = js.native
+  def createFromString(options: AnonTransparencyChar, str: String): typings.terminalKit.screenBufferMod.ScreenBuffer = js.native
   def loadImage(
     url: String,
     calback: js.Function2[

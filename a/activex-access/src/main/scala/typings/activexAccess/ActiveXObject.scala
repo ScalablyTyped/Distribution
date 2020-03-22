@@ -229,7 +229,7 @@ trait ActiveXObject extends js.Object {
     obj: FieldList,
     event: FldListKeyDown,
     argNames: js.Tuple3[typings.activexAccess.activexAccessStrings.FieldList, KeyCode, Shift],
-    handler: js.ThisFunction1[/* this */ FieldList, /* parameter */ AnonFieldListKeyCode, Unit]
+    handler: js.ThisFunction1[/* this */ FieldList, /* parameter */ AnonShift, Unit]
   ): Unit = js.native
   def on(
     obj: FieldList,
@@ -241,7 +241,7 @@ trait ActiveXObject extends js.Object {
     obj: FieldList,
     event: FldListKeyUp,
     argNames: js.Tuple3[typings.activexAccess.activexAccessStrings.FieldList, KeyCode, Shift],
-    handler: js.ThisFunction1[/* this */ FieldList, /* parameter */ AnonFieldListKeyCode, Unit]
+    handler: js.ThisFunction1[/* this */ FieldList, /* parameter */ AnonShift, Unit]
   ): Unit = js.native
   def on(
     obj: FieldList,
@@ -253,19 +253,19 @@ trait ActiveXObject extends js.Object {
     obj: FieldList,
     event: FldListMouseDown,
     argNames: js.Tuple5[typings.activexAccess.activexAccessStrings.FieldList, Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ FieldList, /* parameter */ AnonButtonFieldList, Unit]
+    handler: js.ThisFunction1[/* this */ FieldList, /* parameter */ AnonX, Unit]
   ): Unit = js.native
   def on(
     obj: FieldList,
     event: FldListMouseMove,
     argNames: js.Tuple5[typings.activexAccess.activexAccessStrings.FieldList, Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ FieldList, /* parameter */ AnonButtonFieldList, Unit]
+    handler: js.ThisFunction1[/* this */ FieldList, /* parameter */ AnonX, Unit]
   ): Unit = js.native
   def on(
     obj: FieldList,
     event: FldListMouseUp,
     argNames: js.Tuple5[typings.activexAccess.activexAccessStrings.FieldList, Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ FieldList, /* parameter */ AnonButtonFieldList, Unit]
+    handler: js.ThisFunction1[/* this */ FieldList, /* parameter */ AnonX, Unit]
   ): Unit = js.native
   def on(
     obj: ImexGrid,
@@ -696,7 +696,7 @@ trait ActiveXObject extends js.Object {
     obj: Form,
     event: BeforeDelConfirm,
     argNames: js.Tuple2[Cancel, Response],
-    handler: js.ThisFunction1[/* this */ Form, /* parameter */ AnonCancelResponse, Unit]
+    handler: js.ThisFunction1[/* this */ Form, /* parameter */ AnonResponse, Unit]
   ): Unit = js.native
   def on(
     obj: Form,
@@ -714,7 +714,7 @@ trait ActiveXObject extends js.Object {
     obj: Form,
     event: CommandBeforeExecute,
     argNames: js.Tuple2[Command, Cancel],
-    handler: js.ThisFunction1[/* this */ Form, /* parameter */ AnonCancelCommand, Unit]
+    handler: js.ThisFunction1[/* this */ Form, /* parameter */ AnonCommand, Unit]
   ): Unit = js.native
   def on(
     obj: Form,
@@ -726,7 +726,7 @@ trait ActiveXObject extends js.Object {
     obj: Form,
     event: CommandEnabled,
     argNames: js.Tuple2[Command, Enabled],
-    handler: js.ThisFunction1[/* this */ Form, /* parameter */ AnonCommand, Unit]
+    handler: js.ThisFunction1[/* this */ Form, /* parameter */ AnonEnabled, Unit]
   ): Unit = js.native
   def on(
     obj: Form,
@@ -750,7 +750,7 @@ trait ActiveXObject extends js.Object {
     obj: Form,
     event: Filter,
     argNames: js.Tuple2[Cancel, FilterType],
-    handler: js.ThisFunction1[/* this */ Form, /* parameter */ AnonCancelFilterType, Unit]
+    handler: js.ThisFunction1[/* this */ Form, /* parameter */ AnonFilterType, Unit]
   ): Unit = js.native
   def on(
     obj: Form,
@@ -1212,7 +1212,7 @@ trait ActiveXObject extends js.Object {
     obj: PageHdrFtrInReport,
     event: Format,
     argNames: js.Tuple2[Cancel, FormatCount],
-    handler: js.ThisFunction1[/* this */ PageHdrFtrInReport, /* parameter */ AnonCancelFormatCount, Unit]
+    handler: js.ThisFunction1[/* this */ PageHdrFtrInReport, /* parameter */ AnonFormatCount, Unit]
   ): Unit = js.native
   def on(
     obj: PageHdrFtrInReport,
@@ -1236,7 +1236,7 @@ trait ActiveXObject extends js.Object {
     obj: PageHdrFtrInReport,
     event: Print,
     argNames: js.Tuple2[Cancel, PrintCount],
-    handler: js.ThisFunction1[/* this */ PageHdrFtrInReport, /* parameter */ AnonCancelPrintCount, Unit]
+    handler: js.ThisFunction1[/* this */ PageHdrFtrInReport, /* parameter */ AnonPrintCount, Unit]
   ): Unit = js.native
   def on(
     obj: typings.activexAccess.Access.Page,
@@ -1379,7 +1379,7 @@ trait ActiveXObject extends js.Object {
     obj: Report,
     event: Filter,
     argNames: js.Tuple2[Cancel, FilterType],
-    handler: js.ThisFunction1[/* this */ Report, /* parameter */ AnonCancelFilterType, Unit]
+    handler: js.ThisFunction1[/* this */ Report, /* parameter */ AnonFilterType, Unit]
   ): Unit = js.native
   def on(
     obj: Report,
@@ -1451,7 +1451,7 @@ trait ActiveXObject extends js.Object {
     obj: SectionInReport,
     event: Format,
     argNames: js.Tuple2[Cancel, FormatCount],
-    handler: js.ThisFunction1[/* this */ SectionInReport, /* parameter */ AnonCancelFormatCount, Unit]
+    handler: js.ThisFunction1[/* this */ SectionInReport, /* parameter */ AnonFormatCount, Unit]
   ): Unit = js.native
   def on(
     obj: SectionInReport,
@@ -1475,7 +1475,7 @@ trait ActiveXObject extends js.Object {
     obj: SectionInReport,
     event: Print,
     argNames: js.Tuple2[Cancel, PrintCount],
-    handler: js.ThisFunction1[/* this */ SectionInReport, /* parameter */ AnonCancelPrintCount, Unit]
+    handler: js.ThisFunction1[/* this */ SectionInReport, /* parameter */ AnonPrintCount, Unit]
   ): Unit = js.native
   def on(
     obj: Section,
@@ -1799,7 +1799,7 @@ trait ActiveXObject extends js.Object {
     obj: WebBrowserControl,
     event: NavigateError,
     argNames: js.Tuple5[pDisp, URL, TargetFrameName, StatusCode, Cancel],
-    handler: js.ThisFunction1[/* this */ WebBrowserControl, /* parameter */ AnonCancelPDisp, Unit]
+    handler: js.ThisFunction1[/* this */ WebBrowserControl, /* parameter */ AnonStatusCode, Unit]
   ): Unit = js.native
   def on(
     obj: WebBrowserControl,

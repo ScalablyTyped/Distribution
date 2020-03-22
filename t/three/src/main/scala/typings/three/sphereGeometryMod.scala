@@ -20,7 +20,7 @@ object sphereGeometryMod extends js.Object {
       thetaStart: js.UndefOr[Double],
       thetaLength: js.UndefOr[Double]
     ) = this()
-    var parameters: AnonHeightSegments = js.native
+    var parameters: AnonPhiStart = js.native
   }
   
   @js.native
@@ -45,7 +45,7 @@ object sphereGeometryMod extends js.Object {
       thetaStart: js.UndefOr[Double],
       thetaLength: js.UndefOr[Double]
     ) = this()
-    var parameters: AnonHeightSegments = js.native
+    var parameters: AnonPhiStart = js.native
   }
   
 }

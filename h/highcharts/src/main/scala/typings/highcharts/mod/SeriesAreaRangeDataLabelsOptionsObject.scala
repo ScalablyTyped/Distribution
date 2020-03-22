@@ -4,7 +4,195 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SeriesAreaRangeDataLabelsOptionsObject extends DataLabelsOptionsObject {
+trait SeriesAreaRangeDataLabelsOptionsObject extends js.Object {
+  /**
+    * (Highcharts, Highstock) The alignment of the data label compared to the
+    * point. If `right`, the right side of the label should be touching the
+    * point. For points with an extent, like columns, the alignments also
+    * dictates how to align it inside the box, as given with the inside option.
+    * Can be one of `left`, `center` or `right`.
+    */
+  var align: js.UndefOr[AlignValue | Null] = js.undefined
+  /**
+    * (Highcharts, Highstock) Whether to allow data labels to overlap. To make
+    * the labels less sensitive for overlapping, the dataLabels.padding can be
+    * set to 0.
+    */
+  var allowOverlap: js.UndefOr[Boolean] = js.undefined
+  /**
+    * (Highcharts, Highstock) The background color or gradient for the data
+    * label.
+    */
+  var backgroundColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
+  /**
+    * (Highcharts, Highstock) The border color for the data label. Defaults to
+    * `undefined`.
+    */
+  var borderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
+  /**
+    * (Highcharts, Highstock) The border radius in pixels for the data label.
+    */
+  var borderRadius: js.UndefOr[Double] = js.undefined
+  /**
+    * (Highcharts, Highstock) The border width in pixels for the data label.
+    */
+  var borderWidth: js.UndefOr[Double] = js.undefined
+  /**
+    * (Highcharts, Highstock) A class name for the data label. Particularly in
+    * styled mode, this can be used to give each series' or point's data label
+    * unique styling. In addition to this option, a default color class name is
+    * added so that we can give the labels a contrast text shadow.
+    */
+  var className: js.UndefOr[String] = js.undefined
+  /**
+    * (Highcharts, Highstock) The text color for the data labels. Defaults to
+    * `undefined`. For certain series types, like column or map, the data
+    * labels can be drawn inside the points. In this case the data label will
+    * be drawn with maximum contrast by default. Additionally, it will be given
+    * a `text-outline` style with the opposite color, to further increase the
+    * contrast. This can be overridden by setting the `text-outline` style to
+    * `none` in the `dataLabels.style` option.
+    */
+  var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
+  /**
+    * (Highcharts, Highstock) Whether to hide data labels that are outside the
+    * plot area. By default, the data label is moved inside the plot area
+    * according to the overflow option.
+    */
+  var crop: js.UndefOr[Boolean] = js.undefined
+  /**
+    * (Highcharts, Highstock, Gantt) Whether to defer displaying the data
+    * labels until the initial series animation has finished.
+    */
+  var defer: js.UndefOr[Boolean] = js.undefined
+  /**
+    * (Highcharts, Highstock) Enable or disable the data labels.
+    */
+  var enabled: js.UndefOr[Boolean] = js.undefined
+  /**
+    * (Highcharts, Highstock) A declarative filter to control of which data
+    * labels to display. The declarative filter is designed for use when
+    * callback functions are not available, like when the chart options require
+    * a pure JSON structure or for use with graphical editors. For programmatic
+    * control, use the `formatter` instead, and return `undefined` to disable a
+    * single data label.
+    */
+  var filter: js.UndefOr[DataLabelsFilterOptionsObject] = js.undefined
+  /**
+    * (Highcharts, Highstock) A format string for the data label. Available
+    * variables are the same as for `formatter`.
+    */
+  var format: js.UndefOr[String] = js.undefined
+  /**
+    * (Highcharts, Highstock) Callback JavaScript function to format the data
+    * label. Note that if a `format` is defined, the format takes precedence
+    * and the formatter is ignored.
+    */
+  var formatter: js.UndefOr[DataLabelsFormatterCallbackFunction] = js.undefined
+  /**
+    * (Highcharts, Highstock) For points with an extent, like columns or map
+    * areas, whether to align the data label inside the box or to the actual
+    * value point. Defaults to `false` in most cases, `true` in stacked
+    * columns.
+    */
+  var inside: js.UndefOr[Boolean] = js.undefined
+  /**
+    * (Highcharts, Highstock) Format for points with the value of null. Works
+    * analogously to format. `nullFormat` can be applied only to series which
+    * support displaying null points.
+    */
+  var nullFormat: js.UndefOr[Boolean | String] = js.undefined
+  /**
+    * (Highcharts, Highstock) Callback JavaScript function that defines
+    * formatting for points with the value of null. Works analogously to
+    * formatter. `nullPointFormatter` can be applied only to series which
+    * support displaying null points.
+    */
+  var nullFormatter: js.UndefOr[DataLabelsFormatterCallbackFunction] = js.undefined
+  /**
+    * (Highcharts, Highstock) How to handle data labels that flow outside the
+    * plot area. The default is `"justify"`, which aligns them inside the plot
+    * area. For columns and bars, this means it will be moved inside the bar.
+    * To display data labels outside the plot area, set `crop` to `false` and
+    * `overflow` to `"allow"`.
+    */
+  var overflow: js.UndefOr[DataLabelsOverflowValue] = js.undefined
+  /**
+    * (Highcharts, Highstock) When either the `borderWidth` or the
+    * `backgroundColor` is set, this is the padding within the box.
+    */
+  var padding: js.UndefOr[Double] = js.undefined
+  /**
+    * (Highcharts, Highstock) Aligns data labels relative to points. If
+    * `center` alignment is not possible, it defaults to `right`.
+    */
+  var position: js.UndefOr[AlignValue] = js.undefined
+  /**
+    * (Highcharts, Highstock) Text rotation in degrees. Note that due to a more
+    * complex structure, backgrounds, borders and padding will be lost on a
+    * rotated data label.
+    */
+  var rotation: js.UndefOr[Double] = js.undefined
+  /**
+    * (Highcharts, Highstock) The shadow of the box. Works best with
+    * `borderWidth` or `backgroundColor`. Since 2.3 the shadow can be an object
+    * configuration containing `color`, `offsetX`, `offsetY`, `opacity` and
+    * `width`.
+    */
+  var shadow: js.UndefOr[Boolean | ShadowOptionsObject] = js.undefined
+  /**
+    * (Highcharts, Highstock) The name of a symbol to use for the border around
+    * the label. Symbols are predefined functions on the Renderer object.
+    */
+  var shape: js.UndefOr[String] = js.undefined
+  /**
+    * (Highcharts, Highstock) Styles for the label. The default `color` setting
+    * is `"contrast"`, which is a pseudo color that Highcharts picks up and
+    * applies the maximum contrast to the underlying point item, for example
+    * the bar in a bar chart.
+    *
+    * The `textOutline` is a pseudo property that applies an outline of the
+    * given width with the given color, which by default is the maximum
+    * contrast to the text. So a bright text color will result in a black text
+    * outline for maximum readability on a mixed background. In some cases,
+    * especially with grayscale text, the text outline doesn't work well, in
+    * which cases it can be disabled by setting it to `"none"`. When `useHTML`
+    * is true, the `textOutline` will not be picked up. In this, case, the same
+    * effect can be acheived through the `text-shadow` CSS property.
+    *
+    * For some series types, where each point has an extent, like for example
+    * tree maps, the data label may overflow the point. There are two
+    * strategies for handling overflow. By default, the text will wrap to
+    * multiple lines. The other strategy is to set `style.textOverflow` to
+    * `ellipsis`, which will keep the text on one line plus it will break
+    * inside long words.
+    */
+  var style: js.UndefOr[CSSObject] = js.undefined
+  /**
+    * (Highcharts, Highstock) Options for a label text which should follow
+    * marker's shape. Border and background are disabled for a label that
+    * follows a path.
+    *
+    * **Note:** Only SVG-based renderer supports this option. Setting `useHTML`
+    * to true will disable this option.
+    */
+  var textPath: js.UndefOr[DataLabelsTextPathOptionsObject] = js.undefined
+  /**
+    * (Highcharts, Highstock) Whether to use HTML to render the labels.
+    */
+  var useHTML: js.UndefOr[Boolean] = js.undefined
+  /**
+    * (Highcharts, Highstock) The vertical alignment of a data label. Can be
+    * one of `top`, `middle` or `bottom`. The default value depends on the
+    * data, for instance in a column chart, the label is above positive values
+    * and below negative values.
+    */
+  var verticalAlign: js.UndefOr[VerticalAlignValue | Null] = js.undefined
+  /**
+    * (Highcharts, Highstock) The x position offset of the label relative to
+    * the point in pixels.
+    */
+  var x: js.UndefOr[Double] = js.undefined
   /**
     * (Highcharts, Highstock) X offset of the higher data labels relative to
     * the point value.
@@ -16,6 +204,11 @@ trait SeriesAreaRangeDataLabelsOptionsObject extends DataLabelsOptionsObject {
     */
   var xLow: js.UndefOr[Double] = js.undefined
   /**
+    * (Highcharts, Highstock) The y position offset of the label relative to
+    * the point in pixels.
+    */
+  var y: js.UndefOr[Double] = js.undefined
+  /**
     * (Highcharts, Highstock) Y offset of the higher data labels relative to
     * the point value.
     */
@@ -25,6 +218,12 @@ trait SeriesAreaRangeDataLabelsOptionsObject extends DataLabelsOptionsObject {
     * point value.
     */
   var yLow: js.UndefOr[Double] = js.undefined
+  /**
+    * (Highcharts, Highstock) The Z index of the data labels. The default Z
+    * index puts it above the series. Use a Z index of 2 to display it behind
+    * the series.
+    */
+  var z: js.UndefOr[Double] = js.undefined
 }
 
 object SeriesAreaRangeDataLabelsOptionsObject {
@@ -49,6 +248,7 @@ object SeriesAreaRangeDataLabelsOptionsObject {
     nullFormatter: DataLabelsFormatterCallbackFunction = null,
     overflow: DataLabelsOverflowValue = null,
     padding: Int | Double = null,
+    position: AlignValue = null,
     rotation: Int | Double = null,
     shadow: Boolean | ShadowOptionsObject = null,
     shape: String = null,
@@ -62,7 +262,7 @@ object SeriesAreaRangeDataLabelsOptionsObject {
     y: Int | Double = null,
     yHigh: Int | Double = null,
     yLow: Int | Double = null,
-    zIndex: Int | Double = null
+    z: Int | Double = null
   ): SeriesAreaRangeDataLabelsOptionsObject = {
     val __obj = js.Dynamic.literal()
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
@@ -84,6 +284,7 @@ object SeriesAreaRangeDataLabelsOptionsObject {
     if (nullFormatter != null) __obj.updateDynamic("nullFormatter")(nullFormatter.asInstanceOf[js.Any])
     if (overflow != null) __obj.updateDynamic("overflow")(overflow.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
     if (shadow != null) __obj.updateDynamic("shadow")(shadow.asInstanceOf[js.Any])
     if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
@@ -97,7 +298,7 @@ object SeriesAreaRangeDataLabelsOptionsObject {
     if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     if (yHigh != null) __obj.updateDynamic("yHigh")(yHigh.asInstanceOf[js.Any])
     if (yLow != null) __obj.updateDynamic("yLow")(yLow.asInstanceOf[js.Any])
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    if (z != null) __obj.updateDynamic("z")(z.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesAreaRangeDataLabelsOptionsObject]
   }
 }

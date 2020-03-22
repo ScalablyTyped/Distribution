@@ -1,7 +1,7 @@
 package typings.dockerode.mod
 
 import typings.dockerode.AnonArgsEscaped
-import typings.dockerode.AnonArgsEscapedAttachStderr
+import typings.dockerode.AnonAttachStdin
 import typings.dockerode.AnonBaseLayer
 import typings.dockerode.AnonData
 import scala.scalajs.js
@@ -12,7 +12,7 @@ trait ImageInspectInfo extends js.Object {
   var Architecture: String
   var Author: String
   var Comment: String
-  var Config: AnonArgsEscapedAttachStderr
+  var Config: AnonAttachStdin
   var Container: String
   var ContainerConfig: AnonArgsEscaped
   var Created: String
@@ -34,7 +34,7 @@ object ImageInspectInfo {
     Architecture: String,
     Author: String,
     Comment: String,
-    Config: AnonArgsEscapedAttachStderr,
+    Config: AnonAttachStdin,
     Container: String,
     ContainerConfig: AnonArgsEscaped,
     Created: String,

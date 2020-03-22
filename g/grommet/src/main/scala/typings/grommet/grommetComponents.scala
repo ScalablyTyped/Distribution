@@ -23,7 +23,7 @@ import typings.grommet.gridMod.GridProps
 import typings.grommet.grommetMod.GrommetProps
 import typings.grommet.grommetStrings.color
 import typings.grommet.grommetStrings.controls
-import typings.grommet.grommetStrings.href
+import typings.grommet.grommetStrings.icon
 import typings.grommet.grommetStrings.id
 import typings.grommet.grommetStrings.mask
 import typings.grommet.grommetStrings.name
@@ -45,7 +45,6 @@ import typings.grommet.radioButtonGroupMod.RadioButtonGroupProps
 import typings.grommet.radioButtonMod.RadioButtonProps
 import typings.grommet.rangeInputMod.RangeInputProps
 import typings.grommet.rangeSelectorMod.RangeSelectorProps
-import typings.grommet.routedAnchorMod.RoutedAnchorProps
 import typings.grommet.routedButtonMod.RoutedButtonProps
 import typings.grommet.stackMod.StackProps
 import typings.grommet.tabMod.TabProps
@@ -338,7 +337,8 @@ object grommetComponents extends grommetProps {
     typings.grommet.grommetStrings.id | typings.grommet.grommetStrings.mask | typings.grommet.grommetStrings.name | typings.grommet.grommetStrings.plain | typings.grommet.grommetStrings.size | typings.grommet.grommetStrings.value
   ])]]
   @scala.inline
-  def Menu: ComponentType[MenuProps with ButtonType] = typings.grommet.mod.Menu.asInstanceOf[typings.react.mod.ComponentType[typings.grommet.menuMod.MenuProps with typings.grommet.buttonMod.ButtonType]]
+  def Menu: ComponentType[MenuProps with (Omit[ButtonType, icon])] = typings.grommet.mod.Menu.asInstanceOf[typings.react.mod.ComponentType[
+  typings.grommet.menuMod.MenuProps with (typings.grommet.utilsMod.Omit[typings.grommet.buttonMod.ButtonType, typings.grommet.grommetStrings.icon])]]
   @scala.inline
   def Meter: ComponentType[MeterProps] = js.constructorOf[typings.grommet.mod.Meter].asInstanceOf[typings.react.mod.ComponentType[MeterProps]]
   @scala.inline
@@ -388,8 +388,7 @@ object grommetComponents extends grommetProps {
     typings.grommet.grommetStrings.color
   ])]]
   @scala.inline
-  def RoutedAnchor: ComponentType[RoutedAnchorProps with (Omit[AnchorProps, href])] = js.constructorOf[typings.grommet.mod.RoutedAnchor].asInstanceOf[typings.react.mod.ComponentType[
-  typings.grommet.routedAnchorMod.RoutedAnchorProps with (typings.grommet.utilsMod.Omit[typings.grommet.anchorMod.AnchorProps, typings.grommet.grommetStrings.href])]]
+  def RoutedAnchor: ComponentType[RoutedAnchorProps] = js.constructorOf[typings.grommet.mod.RoutedAnchor].asInstanceOf[typings.react.mod.ComponentType[RoutedAnchorProps]]
   @scala.inline
   def RoutedButton: ComponentType[RoutedButtonProps with ButtonProps] = js.constructorOf[typings.grommet.mod.RoutedButton].asInstanceOf[typings.react.mod.ComponentType[
   typings.grommet.routedButtonMod.RoutedButtonProps with typings.grommet.buttonMod.ButtonProps]]

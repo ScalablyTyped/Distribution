@@ -1,6 +1,6 @@
 package typings.uifabricUtilities.customizerTypesMod
 
-import typings.uifabricUtilities.ReadonlyICustomizerContext
+import typings.uifabricUtilities.ReadonlyICustomizerContex
 import typings.uifabricUtilities.createRefMod.IRefObject
 import typings.uifabricUtilities.customizationsMod.ISettings
 import typings.uifabricUtilities.customizationsMod.ISettingsFunction
@@ -16,7 +16,7 @@ trait ICustomizerProps extends js.Object {
     * Optional transform function for context. Any implementations should take care to return context without
     * mutating it.
     */
-  var contextTransform: js.UndefOr[js.Function1[/* context */ ReadonlyICustomizerContext, ICustomizerContext]] = js.undefined
+  var contextTransform: js.UndefOr[js.Function1[/* context */ ReadonlyICustomizerContex, ICustomizerContext]] = js.undefined
   var scopedSettings: js.UndefOr[ISettings | ISettingsFunction] = js.undefined
   var settings: js.UndefOr[ISettings | ISettingsFunction] = js.undefined
 }
@@ -25,7 +25,7 @@ object ICustomizerProps {
   @scala.inline
   def apply(
     componentRef: IRefObject[_] = null,
-    contextTransform: /* context */ ReadonlyICustomizerContext => ICustomizerContext = null,
+    contextTransform: /* context */ ReadonlyICustomizerContex => ICustomizerContext = null,
     scopedSettings: ISettings | ISettingsFunction = null,
     settings: ISettings | ISettingsFunction = null
   ): ICustomizerProps = {

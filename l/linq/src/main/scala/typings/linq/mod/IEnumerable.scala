@@ -1,11 +1,11 @@
 package typings.linq.mod
 
+import typings.linq.AnonDictx
+import typings.linq.AnonDictxLength
+import typings.linq.AnonDictxNumberTInner
+import typings.linq.AnonDictxNumberTResult
+import typings.linq.AnonDictxNumberU
 import typings.linq.AnonLength
-import typings.linq.AnonLengthX
-import typings.linq.AnonLengthXNumber
-import typings.linq.AnonLengthXNumberTInner
-import typings.linq.AnonLengthXNumberTResult
-import typings.linq.AnonLengthXNumberU
 import typings.std.Iterable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -22,7 +22,7 @@ trait IEnumerable[T] extends Iterable[T] {
   ): TResult = js.native
   def all(predicate: js.Function1[/* element */ T, Boolean]): Boolean = js.native
   def alternate(alternateSequence: js.Array[T]): IEnumerable[T] = js.native
-  def alternate(alternateSequence: AnonLength[T]): IEnumerable[T] = js.native
+  def alternate(alternateSequence: AnonDictx[T]): IEnumerable[T] = js.native
   def alternate(alternateSequence: IEnumerable[T]): IEnumerable[T] = js.native
   def alternate(alternateValue: T): IEnumerable[T] = js.native
   def any(): Boolean = js.native
@@ -34,7 +34,7 @@ trait IEnumerable[T] extends Iterable[T] {
   def cast[TResult](): IEnumerable[TResult] = js.native
   def catchError(handler: js.Function1[/* exception */ js.Any, Unit]): IEnumerable[T] = js.native
   def choose(selector: js.Function2[/* element */ T, /* index */ Double, T]): IEnumerable[T] = js.native
-  def concat(sequences: (AnonLength[T] | IEnumerable[T] | T)*): IEnumerable[T] = js.native
+  def concat(sequences: (AnonDictx[T] | IEnumerable[T] | T)*): IEnumerable[T] = js.native
   def contains(value: T): Boolean = js.native
   def contains[TCompare](value: T, compareSelector: js.Function1[/* element */ T, TCompare]): Boolean = js.native
   @JSName("contains")
@@ -52,10 +52,10 @@ trait IEnumerable[T] extends Iterable[T] {
   def elementAtOrDefault(index: Double): T = js.native
   def elementAtOrDefault(index: Double, defaultValue: T): T = js.native
   def except(second: js.Array[T]): IEnumerable[T] = js.native
-  def except(second: AnonLength[T]): IEnumerable[T] = js.native
+  def except(second: AnonDictx[T]): IEnumerable[T] = js.native
   def except(second: IEnumerable[T]): IEnumerable[T] = js.native
   def except[TCompare](second: js.Array[T], compareSelector: js.Function1[/* element */ T, TCompare]): IEnumerable[T] = js.native
-  def except[TCompare](second: AnonLength[T], compareSelector: js.Function1[/* element */ T, TCompare]): IEnumerable[T] = js.native
+  def except[TCompare](second: AnonDictx[T], compareSelector: js.Function1[/* element */ T, TCompare]): IEnumerable[T] = js.native
   def except[TCompare](second: IEnumerable[T], compareSelector: js.Function1[/* element */ T, TCompare]): IEnumerable[T] = js.native
   def finallyAction(finallyAction: js.Function0[Unit]): IEnumerable[T] = js.native
   def first(): T = js.native
@@ -98,13 +98,13 @@ trait IEnumerable[T] extends Iterable[T] {
     compareSelector: js.Function1[/* obj */ T, TKey]
   ): IEnumerable[TResult] = js.native
   def groupJoin[TInner, TKey, TResult](
-    inner: AnonLengthXNumberTInner[TInner],
+    inner: AnonDictxNumberTInner[TInner],
     outerKeySelector: js.Function1[/* outer */ T, TKey],
     innerKeySelector: js.Function1[/* inner */ TInner, TKey],
     resultSelector: js.Function2[/* outer */ T, /* inner */ IEnumerable[TInner], TResult]
   ): IEnumerable[TResult] = js.native
   def groupJoin[TInner, TKey, TResult](
-    inner: AnonLengthXNumberTInner[TInner],
+    inner: AnonDictxNumberTInner[TInner],
     outerKeySelector: js.Function1[/* outer */ T, TKey],
     innerKeySelector: js.Function1[/* inner */ TInner, TKey],
     resultSelector: js.Function2[/* outer */ T, /* inner */ IEnumerable[TInner], TResult],
@@ -125,13 +125,13 @@ trait IEnumerable[T] extends Iterable[T] {
   ): IEnumerable[TResult] = js.native
   def indexOf(item: T): Double = js.native
   def indexOf(predicate: js.Function2[/* element */ T, /* index */ Double, Boolean]): Double = js.native
-  def insert(index: Double, second: AnonLength[T]): IEnumerable[T] = js.native
+  def insert(index: Double, second: AnonDictx[T]): IEnumerable[T] = js.native
   def insert(index: Double, second: IEnumerable[T]): IEnumerable[T] = js.native
   def intersect(second: js.Array[T]): IEnumerable[T] = js.native
-  def intersect(second: AnonLength[T]): IEnumerable[T] = js.native
+  def intersect(second: AnonDictx[T]): IEnumerable[T] = js.native
   def intersect(second: IEnumerable[T]): IEnumerable[T] = js.native
   def intersect[TCompare](second: js.Array[T], compareSelector: js.Function1[/* element */ T, TCompare]): IEnumerable[T] = js.native
-  def intersect[TCompare](second: AnonLength[T], compareSelector: js.Function1[/* element */ T, TCompare]): IEnumerable[T] = js.native
+  def intersect[TCompare](second: AnonDictx[T], compareSelector: js.Function1[/* element */ T, TCompare]): IEnumerable[T] = js.native
   def intersect[TCompare](second: IEnumerable[T], compareSelector: js.Function1[/* element */ T, TCompare]): IEnumerable[T] = js.native
   def isEmpty(): Boolean = js.native
   def join[TInner, TKey, TResult](
@@ -148,13 +148,13 @@ trait IEnumerable[T] extends Iterable[T] {
     compareSelector: js.Function1[/* obj */ T, TKey]
   ): IEnumerable[TResult] = js.native
   def join[TInner, TKey, TResult](
-    inner: AnonLengthXNumberTInner[TInner],
+    inner: AnonDictxNumberTInner[TInner],
     outerKeySelector: js.Function1[/* outer */ T, TKey],
     innerKeySelector: js.Function1[/* inner */ TInner, TKey],
     resultSelector: js.Function2[/* outer */ T, /* inner */ TInner, TResult]
   ): IEnumerable[TResult] = js.native
   def join[TInner, TKey, TResult](
-    inner: AnonLengthXNumberTInner[TInner],
+    inner: AnonDictxNumberTInner[TInner],
     outerKeySelector: js.Function1[/* outer */ T, TKey],
     innerKeySelector: js.Function1[/* inner */ TInner, TKey],
     resultSelector: js.Function2[/* outer */ T, /* inner */ TInner, TResult],
@@ -184,7 +184,7 @@ trait IEnumerable[T] extends Iterable[T] {
   def letBind[TResult](
     func: js.Function1[
       /* source */ IEnumerable[T], 
-      AnonLengthXNumberTResult[TResult] | js.Array[TResult] | IEnumerable[TResult]
+      AnonDictxNumberTResult[TResult] | js.Array[TResult] | IEnumerable[TResult]
     ]
   ): IEnumerable[TResult] = js.native
   def log(): IEnumerable[T] = js.native
@@ -194,7 +194,7 @@ trait IEnumerable[T] extends Iterable[T] {
   def maxBy[TKey](keySelector: js.Function1[/* element */ T, TKey]): T = js.native
   def memoize(): IDisposableEnumerable[T] = js.native
    // last one is selector
-  def merge[TResult](params: (AnonLength[T] | js.Array[T] | IEnumerable[T])*): IEnumerable[T] = js.native
+  def merge[TResult](params: (AnonDictx[T] | js.Array[T] | IEnumerable[T])*): IEnumerable[T] = js.native
   def min(): Double = js.native
   def min(selector: js.Function1[/* element */ T, Double]): Double = js.native
   def minBy[TKey](keySelector: js.Function1[/* element */ T, TKey]): T = js.native
@@ -228,22 +228,22 @@ trait IEnumerable[T] extends Iterable[T] {
     collectionSelector: js.Function2[
       /* element */ T, 
       /* index */ Double, 
-      AnonLengthX[TOther] | js.Array[TOther] | IEnumerable[TOther]
+      AnonLength[TOther] | js.Array[TOther] | IEnumerable[TOther]
     ]
   ): IEnumerable[TOther] = js.native
   def selectMany[TCollection, TResult](
     collectionSelector: js.Function2[
       /* element */ T, 
       /* index */ Double, 
-      AnonLengthXNumber[TCollection] | js.Array[TCollection] | IEnumerable[TCollection]
+      AnonDictxLength[TCollection] | js.Array[TCollection] | IEnumerable[TCollection]
     ],
     resultSelector: js.Function2[/* outer */ T, /* inner */ TCollection, TResult]
   ): IEnumerable[TResult] = js.native
   def sequenceEqual(second: js.Array[T]): Boolean = js.native
-  def sequenceEqual(second: AnonLength[T]): Boolean = js.native
+  def sequenceEqual(second: AnonDictx[T]): Boolean = js.native
   def sequenceEqual(second: IEnumerable[T]): Boolean = js.native
   def sequenceEqual[TCompare](second: js.Array[T], compareSelector: js.Function1[/* element */ T, TCompare]): Boolean = js.native
-  def sequenceEqual[TCompare](second: AnonLength[T], compareSelector: js.Function1[/* element */ T, TCompare]): Boolean = js.native
+  def sequenceEqual[TCompare](second: AnonDictx[T], compareSelector: js.Function1[/* element */ T, TCompare]): Boolean = js.native
   def sequenceEqual[TCompare](second: IEnumerable[T], compareSelector: js.Function1[/* element */ T, TCompare]): Boolean = js.native
   def share(): IDisposableEnumerable[T] = js.native
   def shuffle(): IEnumerable[T] = js.native
@@ -307,10 +307,10 @@ trait IEnumerable[T] extends Iterable[T] {
     resultSelector: js.Function2[/* element */ T, /* nestLevel */ Double, TResult]
   ): IEnumerable[TResult] = js.native
   def union(second: js.Array[T]): IEnumerable[T] = js.native
-  def union(second: AnonLength[T]): IEnumerable[T] = js.native
+  def union(second: AnonDictx[T]): IEnumerable[T] = js.native
   def union(second: IEnumerable[T]): IEnumerable[T] = js.native
   def union[TCompare](second: js.Array[T], compareSelector: js.Function1[/* element */ T, TCompare]): IEnumerable[T] = js.native
-  def union[TCompare](second: AnonLength[T], compareSelector: js.Function1[/* element */ T, TCompare]): IEnumerable[T] = js.native
+  def union[TCompare](second: AnonDictx[T], compareSelector: js.Function1[/* element */ T, TCompare]): IEnumerable[T] = js.native
   def union[TCompare](second: IEnumerable[T], compareSelector: js.Function1[/* element */ T, TCompare]): IEnumerable[T] = js.native
   def weightedSample(weightSelector: js.Function1[/* element */ T, Double]): IEnumerable[T] = js.native
   def where(predicate: js.Function2[/* element */ T, /* index */ Double, Boolean]): IEnumerable[T] = js.native
@@ -325,7 +325,7 @@ trait IEnumerable[T] extends Iterable[T] {
     resultSelector: js.Function3[/* first */ T, /* second */ U, /* index */ Double, TResult]
   ): IEnumerable[TResult] = js.native
   def zip[U, TResult](
-    second: AnonLengthXNumberU[U],
+    second: AnonDictxNumberU[U],
     resultSelector: js.Function3[/* first */ T, /* second */ U, /* index */ Double, TResult]
   ): IEnumerable[TResult] = js.native
   def zip[U, TResult](

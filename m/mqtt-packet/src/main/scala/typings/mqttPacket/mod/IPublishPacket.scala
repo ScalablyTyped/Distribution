@@ -1,6 +1,6 @@
 package typings.mqttPacket.mod
 
-import typings.mqttPacket.AnonContentTypeCorrelationData
+import typings.mqttPacket.AnonCorrelationData
 import typings.mqttPacket.mqttPacketStrings.publish
 import typings.node.Buffer
 import scala.scalajs.js
@@ -14,7 +14,7 @@ trait IPublishPacket
   var cmd_IPublishPacket: publish
   var dup: Boolean
   var payload: String | Buffer
-  var properties: js.UndefOr[AnonContentTypeCorrelationData] = js.undefined
+  var properties: js.UndefOr[AnonCorrelationData] = js.undefined
   var qos: QoS
   var retain: Boolean
   var topic: String
@@ -31,7 +31,7 @@ object IPublishPacket {
     topic: String,
     length: Int | Double = null,
     messageId: Int | Double = null,
-    properties: AnonContentTypeCorrelationData = null
+    properties: AnonCorrelationData = null
   ): IPublishPacket = {
     val __obj = js.Dynamic.literal(cmd = cmd.asInstanceOf[js.Any], dup = dup.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any], qos = qos.asInstanceOf[js.Any], retain = retain.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any])
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])

@@ -24,18 +24,12 @@ trait GoogleApiYouTubeActivityResource extends js.Object {
   /**
     * The snippet object contains basic details about the activity, including the activitys type and group ID.
     */
-  var snippet: AnonChannelIdChannelTitle
+  var snippet: AnonChannelTitle
 }
 
 object GoogleApiYouTubeActivityResource {
   @scala.inline
-  def apply(
-    contentDetails: AnonBulletin,
-    etag: String,
-    id: String,
-    kind: String,
-    snippet: AnonChannelIdChannelTitle
-  ): GoogleApiYouTubeActivityResource = {
+  def apply(contentDetails: AnonBulletin, etag: String, id: String, kind: String, snippet: AnonChannelTitle): GoogleApiYouTubeActivityResource = {
     val __obj = js.Dynamic.literal(contentDetails = contentDetails.asInstanceOf[js.Any], etag = etag.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], snippet = snippet.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GoogleApiYouTubeActivityResource]

@@ -1,12 +1,12 @@
 package typings.googleapis.v33Mod.dfareportingV33
 
 import typings.googleapis.AnonActive
-import typings.googleapis.AnonActivitiesCustomRichMediaEventsDateRangeDimensionFiltersDimensions
-import typings.googleapis.AnonActivitiesCustomRichMediaEventsDateRangeDimensionFiltersDimensionsEnableAllDimensionCombinations
-import typings.googleapis.AnonActivityFiltersConversionDimensionsCustomFloodlightVariables
-import typings.googleapis.AnonBreakdownDateRangeDimension
-import typings.googleapis.AnonCustomRichMediaEventsDateRangeDimensionFilters
-import typings.googleapis.AnonEmailOwnerEmailOwnerDeliveryTypeMessage
+import typings.googleapis.AnonCustomFloodlightVariables
+import typings.googleapis.AnonMessage
+import typings.googleapis.AnonMetricNames
+import typings.googleapis.AnonOverlapMetricNames
+import typings.googleapis.AnonReachByFrequencyMetricNames
+import typings.googleapis.AnonReportProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,16 +23,16 @@ trait SchemaReport extends js.Object {
   /**
     * The report criteria for a report of type &quot;STANDARD&quot;.
     */
-  var criteria: js.UndefOr[AnonActivitiesCustomRichMediaEventsDateRangeDimensionFiltersDimensions] = js.native
+  var criteria: js.UndefOr[AnonMetricNames] = js.native
   /**
     * The report criteria for a report of type
     * &quot;CROSS_DIMENSION_REACH&quot;.
     */
-  var crossDimensionReachCriteria: js.UndefOr[AnonBreakdownDateRangeDimension] = js.native
+  var crossDimensionReachCriteria: js.UndefOr[AnonOverlapMetricNames] = js.native
   /**
     * The report&#39;s email delivery settings.
     */
-  var delivery: js.UndefOr[AnonEmailOwnerEmailOwnerDeliveryTypeMessage] = js.native
+  var delivery: js.UndefOr[AnonMessage] = js.native
   /**
     * The eTag of this response for caching purposes.
     */
@@ -44,7 +44,7 @@ trait SchemaReport extends js.Object {
   /**
     * The report criteria for a report of type &quot;FLOODLIGHT&quot;.
     */
-  var floodlightCriteria: js.UndefOr[AnonCustomRichMediaEventsDateRangeDimensionFilters] = js.native
+  var floodlightCriteria: js.UndefOr[AnonReportProperties] = js.native
   /**
     * The output format of the report. If not specified, default format is
     * &quot;CSV&quot;. Note that the actual format in the completed report file
@@ -77,13 +77,11 @@ trait SchemaReport extends js.Object {
   /**
     * The report criteria for a report of type &quot;PATH_TO_CONVERSION&quot;.
     */
-  var pathToConversionCriteria: js.UndefOr[AnonActivityFiltersConversionDimensionsCustomFloodlightVariables] = js.native
+  var pathToConversionCriteria: js.UndefOr[AnonCustomFloodlightVariables] = js.native
   /**
     * The report criteria for a report of type &quot;REACH&quot;.
     */
-  var reachCriteria: js.UndefOr[
-    AnonActivitiesCustomRichMediaEventsDateRangeDimensionFiltersDimensionsEnableAllDimensionCombinations
-  ] = js.native
+  var reachCriteria: js.UndefOr[AnonReachByFrequencyMetricNames] = js.native
   /**
     * The report&#39;s schedule. Can only be set if the report&#39;s
     * &#39;dateRange&#39; is a relative date range and the relative date range
@@ -104,20 +102,20 @@ object SchemaReport {
   @scala.inline
   def apply(
     accountId: String = null,
-    criteria: AnonActivitiesCustomRichMediaEventsDateRangeDimensionFiltersDimensions = null,
-    crossDimensionReachCriteria: AnonBreakdownDateRangeDimension = null,
-    delivery: AnonEmailOwnerEmailOwnerDeliveryTypeMessage = null,
+    criteria: AnonMetricNames = null,
+    crossDimensionReachCriteria: AnonOverlapMetricNames = null,
+    delivery: AnonMessage = null,
     etag: String = null,
     fileName: String = null,
-    floodlightCriteria: AnonCustomRichMediaEventsDateRangeDimensionFilters = null,
+    floodlightCriteria: AnonReportProperties = null,
     format: String = null,
     id: String = null,
     kind: String = null,
     lastModifiedTime: String = null,
     name: String = null,
     ownerProfileId: String = null,
-    pathToConversionCriteria: AnonActivityFiltersConversionDimensionsCustomFloodlightVariables = null,
-    reachCriteria: AnonActivitiesCustomRichMediaEventsDateRangeDimensionFiltersDimensionsEnableAllDimensionCombinations = null,
+    pathToConversionCriteria: AnonCustomFloodlightVariables = null,
+    reachCriteria: AnonReachByFrequencyMetricNames = null,
     schedule: AnonActive = null,
     subAccountId: String = null,
     `type`: String = null

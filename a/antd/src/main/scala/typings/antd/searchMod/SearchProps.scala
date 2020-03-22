@@ -18,7 +18,6 @@ import typings.antd.antdStrings.grammar
 import typings.antd.antdStrings.grid
 import typings.antd.antdStrings.horizontal
 import typings.antd.antdStrings.inherit
-import typings.antd.antdStrings.large
 import typings.antd.antdStrings.link
 import typings.antd.antdStrings.list
 import typings.antd.antdStrings.listbox
@@ -37,7 +36,6 @@ import typings.antd.antdStrings.polite
 import typings.antd.antdStrings.popup
 import typings.antd.antdStrings.removals
 import typings.antd.antdStrings.search
-import typings.antd.antdStrings.small
 import typings.antd.antdStrings.spelling
 import typings.antd.antdStrings.step
 import typings.antd.antdStrings.tel
@@ -47,41 +45,28 @@ import typings.antd.antdStrings.tree
 import typings.antd.antdStrings.url
 import typings.antd.antdStrings.vertical
 import typings.antd.antdStrings.yes
+import typings.antd.inputInputMod.InputProps
+import typings.antd.sizeContextMod.SizeType
 import typings.react.AnonHtml
 import typings.react.mod.AnimationEvent
-import typings.react.mod.AnimationEventHandler
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
 import typings.react.mod.ChangeEvent
-import typings.react.mod.ChangeEventHandler
 import typings.react.mod.ClipboardEvent
-import typings.react.mod.ClipboardEventHandler
 import typings.react.mod.CompositionEvent
-import typings.react.mod.CompositionEventHandler
 import typings.react.mod.DragEvent
-import typings.react.mod.DragEventHandler
 import typings.react.mod.FocusEvent
-import typings.react.mod.FocusEventHandler
 import typings.react.mod.FormEvent
-import typings.react.mod.FormEventHandler
 import typings.react.mod.KeyboardEvent
-import typings.react.mod.KeyboardEventHandler
 import typings.react.mod.MouseEvent
-import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.PointerEvent
-import typings.react.mod.PointerEventHandler
-import typings.react.mod.ReactEventHandler
 import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
 import typings.react.mod.TouchEvent
-import typings.react.mod.TouchEventHandler
 import typings.react.mod.TransitionEvent
-import typings.react.mod.TransitionEventHandler
 import typings.react.mod.UIEvent
-import typings.react.mod.UIEventHandler
 import typings.react.mod.WheelEvent
-import typings.react.mod.WheelEventHandler
 import typings.std.Event_
 import typings.std.HTMLElement
 import typings.std.HTMLInputElement
@@ -89,176 +74,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined parent antd.antd/lib/input/Input.InputProps */
-trait SearchProps extends js.Object {
-  var about: js.UndefOr[String] = js.undefined
-  var accept: js.UndefOr[String] = js.undefined
-  var accessKey: js.UndefOr[String] = js.undefined
-  var addonAfter: js.UndefOr[ReactNode] = js.undefined
-  var addonBefore: js.UndefOr[ReactNode] = js.undefined
-  var allowClear: js.UndefOr[Boolean] = js.undefined
-  var alt: js.UndefOr[String] = js.undefined
-  var `aria-activedescendant`: js.UndefOr[String] = js.undefined
-  var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
-  var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
-  var `aria-busy`: js.UndefOr[Boolean] = js.undefined
-  var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
-  var `aria-colcount`: js.UndefOr[Double] = js.undefined
-  var `aria-colindex`: js.UndefOr[Double] = js.undefined
-  var `aria-colspan`: js.UndefOr[Double] = js.undefined
-  var `aria-controls`: js.UndefOr[String] = js.undefined
-  var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.undefined
-  var `aria-describedby`: js.UndefOr[String] = js.undefined
-  var `aria-details`: js.UndefOr[String] = js.undefined
-  var `aria-disabled`: js.UndefOr[Boolean] = js.undefined
-  var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
-  var `aria-errormessage`: js.UndefOr[String] = js.undefined
-  var `aria-expanded`: js.UndefOr[Boolean] = js.undefined
-  var `aria-flowto`: js.UndefOr[String] = js.undefined
-  var `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
-  var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
-  var `aria-hidden`: js.UndefOr[Boolean] = js.undefined
-  var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
-  var `aria-keyshortcuts`: js.UndefOr[String] = js.undefined
-  var `aria-label`: js.UndefOr[String] = js.undefined
-  var `aria-labelledby`: js.UndefOr[String] = js.undefined
-  var `aria-level`: js.UndefOr[Double] = js.undefined
-  var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
-  var `aria-modal`: js.UndefOr[Boolean] = js.undefined
-  var `aria-multiline`: js.UndefOr[Boolean] = js.undefined
-  var `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined
-  var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
-  var `aria-owns`: js.UndefOr[String] = js.undefined
-  var `aria-placeholder`: js.UndefOr[String] = js.undefined
-  var `aria-posinset`: js.UndefOr[Double] = js.undefined
-  var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
-  var `aria-readonly`: js.UndefOr[Boolean] = js.undefined
-  var `aria-relevant`: js.UndefOr[additions | (`additions text`) | all | removals | text] = js.undefined
-  var `aria-required`: js.UndefOr[Boolean] = js.undefined
-  var `aria-roledescription`: js.UndefOr[String] = js.undefined
-  var `aria-rowcount`: js.UndefOr[Double] = js.undefined
-  var `aria-rowindex`: js.UndefOr[Double] = js.undefined
-  var `aria-rowspan`: js.UndefOr[Double] = js.undefined
-  var `aria-selected`: js.UndefOr[Boolean] = js.undefined
-  var `aria-setsize`: js.UndefOr[Double] = js.undefined
-  var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.undefined
-  var `aria-valuemax`: js.UndefOr[Double] = js.undefined
-  var `aria-valuemin`: js.UndefOr[Double] = js.undefined
-  var `aria-valuenow`: js.UndefOr[Double] = js.undefined
-  var `aria-valuetext`: js.UndefOr[String] = js.undefined
-  var autoCapitalize: js.UndefOr[String] = js.undefined
-  var autoComplete: js.UndefOr[String] = js.undefined
-  var autoCorrect: js.UndefOr[String] = js.undefined
-  var autoFocus: js.UndefOr[Boolean] = js.undefined
-  var autoSave: js.UndefOr[String] = js.undefined
-  var capture: js.UndefOr[Boolean | String] = js.undefined
-  var checked: js.UndefOr[Boolean] = js.undefined
-  var children: js.UndefOr[ReactNode] = js.undefined
-  var className: js.UndefOr[String] = js.undefined
-  var color: js.UndefOr[String] = js.undefined
-  var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
-  var contextMenu: js.UndefOr[String] = js.undefined
-  var crossOrigin: js.UndefOr[String] = js.undefined
-  var dangerouslySetInnerHTML: js.UndefOr[AnonHtml] = js.undefined
-  var datatype: js.UndefOr[String] = js.undefined
-  var defaultChecked: js.UndefOr[Boolean] = js.undefined
-  var defaultValue: js.UndefOr[String | Double | js.Array[String]] = js.undefined
-  var dir: js.UndefOr[String] = js.undefined
-  var disabled: js.UndefOr[Boolean] = js.undefined
-  var draggable: js.UndefOr[Booleanish] = js.undefined
+trait SearchProps extends InputProps {
   var enterButton: js.UndefOr[ReactNode] = js.undefined
-  var form: js.UndefOr[String] = js.undefined
-  var formAction: js.UndefOr[String] = js.undefined
-  var formEncType: js.UndefOr[String] = js.undefined
-  var formMethod: js.UndefOr[String] = js.undefined
-  var formNoValidate: js.UndefOr[Boolean] = js.undefined
-  var formTarget: js.UndefOr[String] = js.undefined
-  var height: js.UndefOr[Double | String] = js.undefined
-  var hidden: js.UndefOr[Boolean] = js.undefined
-  var id: js.UndefOr[String] = js.undefined
-  var inlist: js.UndefOr[js.Any] = js.undefined
-  var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
   var inputPrefixCls: js.UndefOr[String] = js.undefined
-  var is: js.UndefOr[String] = js.undefined
-  var itemID: js.UndefOr[String] = js.undefined
-  var itemProp: js.UndefOr[String] = js.undefined
-  var itemRef: js.UndefOr[String] = js.undefined
-  var itemScope: js.UndefOr[Boolean] = js.undefined
-  var itemType: js.UndefOr[String] = js.undefined
-  var lang: js.UndefOr[String] = js.undefined
-  var list: js.UndefOr[String] = js.undefined
   var loading: js.UndefOr[Boolean] = js.undefined
-  var max: js.UndefOr[Double | String] = js.undefined
-  var maxLength: js.UndefOr[Double] = js.undefined
-  var min: js.UndefOr[Double | String] = js.undefined
-  var minLength: js.UndefOr[Double] = js.undefined
-  var multiple: js.UndefOr[Boolean] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var onAbort: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
-  var onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLInputElement]] = js.undefined
-  var onAnimationIteration: js.UndefOr[AnimationEventHandler[HTMLInputElement]] = js.undefined
-  var onAnimationStart: js.UndefOr[AnimationEventHandler[HTMLInputElement]] = js.undefined
-  var onAuxClick: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
-  var onBeforeInput: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.undefined
-  var onBlur: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.undefined
-  var onCanPlay: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
-  var onCanPlayThrough: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
-  var onChange: js.UndefOr[ChangeEventHandler[HTMLInputElement]] = js.undefined
-  var onClick: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
-  var onCompositionEnd: js.UndefOr[CompositionEventHandler[HTMLInputElement]] = js.undefined
-  var onCompositionStart: js.UndefOr[CompositionEventHandler[HTMLInputElement]] = js.undefined
-  var onCompositionUpdate: js.UndefOr[CompositionEventHandler[HTMLInputElement]] = js.undefined
-  var onContextMenu: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
-  var onCopy: js.UndefOr[ClipboardEventHandler[HTMLInputElement]] = js.undefined
-  var onCut: js.UndefOr[ClipboardEventHandler[HTMLInputElement]] = js.undefined
-  var onDoubleClick: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
-  var onDrag: js.UndefOr[DragEventHandler[HTMLInputElement]] = js.undefined
-  var onDragEnd: js.UndefOr[DragEventHandler[HTMLInputElement]] = js.undefined
-  var onDragEnter: js.UndefOr[DragEventHandler[HTMLInputElement]] = js.undefined
-  var onDragExit: js.UndefOr[DragEventHandler[HTMLInputElement]] = js.undefined
-  var onDragLeave: js.UndefOr[DragEventHandler[HTMLInputElement]] = js.undefined
-  var onDragOver: js.UndefOr[DragEventHandler[HTMLInputElement]] = js.undefined
-  var onDragStart: js.UndefOr[DragEventHandler[HTMLInputElement]] = js.undefined
-  var onDrop: js.UndefOr[DragEventHandler[HTMLInputElement]] = js.undefined
-  var onDurationChange: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
-  var onEmptied: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
-  var onEncrypted: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
-  var onEnded: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
-  var onError: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
-  var onFocus: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.undefined
-  var onInput: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.undefined
-  var onInvalid: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.undefined
-  var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.undefined
-  var onKeyPress: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.undefined
-  var onKeyUp: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.undefined
-  var onLoad: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
-  var onLoadStart: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
-  var onLoadedData: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
-  var onLoadedMetadata: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
-  var onMouseDown: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
-  var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
-  var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
-  var onMouseMove: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
-  var onMouseOut: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
-  var onMouseOver: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
-  var onMouseUp: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
-  var onPaste: js.UndefOr[ClipboardEventHandler[HTMLInputElement]] = js.undefined
-  var onPause: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
-  var onPlay: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
-  var onPlaying: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
-  var onPointerCancel: js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.undefined
-  var onPointerDown: js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.undefined
-  var onPointerEnter: js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.undefined
-  var onPointerLeave: js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.undefined
-  var onPointerMove: js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.undefined
-  var onPointerOut: js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.undefined
-  var onPointerOver: js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.undefined
-  var onPointerUp: js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.undefined
-  var onPressEnter: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.undefined
-  var onProgress: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
-  var onRateChange: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
-  var onReset: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.undefined
-  var onScroll: js.UndefOr[UIEventHandler[HTMLInputElement]] = js.undefined
   var onSearch: js.UndefOr[
     js.Function2[
       /* value */ String, 
@@ -268,51 +87,6 @@ trait SearchProps extends js.Object {
       Unit
     ]
   ] = js.undefined
-  var onSeeked: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
-  var onSeeking: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
-  var onSelect: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
-  var onStalled: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
-  var onSubmit: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.undefined
-  var onSuspend: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
-  var onTimeUpdate: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
-  var onTouchCancel: js.UndefOr[TouchEventHandler[HTMLInputElement]] = js.undefined
-  var onTouchEnd: js.UndefOr[TouchEventHandler[HTMLInputElement]] = js.undefined
-  var onTouchMove: js.UndefOr[TouchEventHandler[HTMLInputElement]] = js.undefined
-  var onTouchStart: js.UndefOr[TouchEventHandler[HTMLInputElement]] = js.undefined
-  var onTransitionEnd: js.UndefOr[TransitionEventHandler[HTMLInputElement]] = js.undefined
-  var onVolumeChange: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
-  var onWaiting: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
-  var onWheel: js.UndefOr[WheelEventHandler[HTMLInputElement]] = js.undefined
-  var pattern: js.UndefOr[String] = js.undefined
-  var placeholder: js.UndefOr[String] = js.undefined
-  var prefix: js.UndefOr[ReactNode] = js.undefined
-  var prefixCls: js.UndefOr[String] = js.undefined
-  var property: js.UndefOr[String] = js.undefined
-  var radioGroup: js.UndefOr[String] = js.undefined
-  var readOnly: js.UndefOr[Boolean] = js.undefined
-  var required: js.UndefOr[Boolean] = js.undefined
-  var resource: js.UndefOr[String] = js.undefined
-  var results: js.UndefOr[Double] = js.undefined
-  var role: js.UndefOr[String] = js.undefined
-  var security: js.UndefOr[String] = js.undefined
-  var size: js.UndefOr[small | typings.antd.antdStrings.default | large] = js.undefined
-  var slot: js.UndefOr[String] = js.undefined
-  var spellCheck: js.UndefOr[Booleanish] = js.undefined
-  var src: js.UndefOr[String] = js.undefined
-  var step: js.UndefOr[Double | String] = js.undefined
-  var style: js.UndefOr[CSSProperties] = js.undefined
-  var suffix: js.UndefOr[ReactNode] = js.undefined
-  var suppressContentEditableWarning: js.UndefOr[Boolean] = js.undefined
-  var suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined
-  var tabIndex: js.UndefOr[Double] = js.undefined
-  var title: js.UndefOr[String] = js.undefined
-  var translate: js.UndefOr[yes | no] = js.undefined
-  var `type`: js.UndefOr[String] = js.undefined
-  var typeof: js.UndefOr[String] = js.undefined
-  var unselectable: js.UndefOr[on | off] = js.undefined
-  var value: js.UndefOr[String | js.Array[String] | Double] = js.undefined
-  var vocab: js.UndefOr[String] = js.undefined
-  var width: js.UndefOr[Double | String] = js.undefined
 }
 
 object SearchProps {
@@ -516,7 +290,7 @@ object SearchProps {
     results: Int | Double = null,
     role: String = null,
     security: String = null,
-    size: small | typings.antd.antdStrings.default | large = null,
+    size: SizeType = null,
     slot: String = null,
     spellCheck: js.UndefOr[Boolean] = js.undefined,
     src: String = null,

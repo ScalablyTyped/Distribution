@@ -1,6 +1,6 @@
 package typings.reactInstantsearchDom.mod
 
-import typings.reactInstantsearchDom.AnonArgs
+import typings.reactInstantsearchDom.AnonProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ trait InstantSearchBaseProps extends js.Object {
   var onSearchStateChange: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
   var refresh: js.UndefOr[Boolean] = js.undefined
   var resultsState: js.UndefOr[js.Any] = js.undefined
-  var root: js.UndefOr[AnonArgs] = js.undefined
+  var root: js.UndefOr[AnonProps] = js.undefined
   var searchState: js.UndefOr[js.Any] = js.undefined
   var stalledSearchDelay: js.UndefOr[Double] = js.undefined
 }
@@ -26,7 +26,7 @@ object InstantSearchBaseProps {
     onSearchStateChange: /* repeated */ js.Any => _ = null,
     refresh: js.UndefOr[Boolean] = js.undefined,
     resultsState: js.Any = null,
-    root: AnonArgs = null,
+    root: AnonProps = null,
     searchState: js.Any = null,
     stalledSearchDelay: Int | Double = null
   ): InstantSearchBaseProps = {

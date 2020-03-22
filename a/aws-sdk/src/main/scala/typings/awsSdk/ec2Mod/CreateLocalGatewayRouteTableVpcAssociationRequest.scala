@@ -13,16 +13,20 @@ trait CreateLocalGatewayRouteTableVpcAssociationRequest extends js.Object {
   /**
     * The ID of the local gateway route table.
     */
-  var LocalGatewayRouteTableId: String = js.native
+  var LocalGatewayRouteTableId: LocalGatewayRoutetableId = js.native
   /**
     * The ID of the VPC.
     */
-  var VpcId: String = js.native
+  var VpcId: typings.awsSdk.ec2Mod.VpcId = js.native
 }
 
 object CreateLocalGatewayRouteTableVpcAssociationRequest {
   @scala.inline
-  def apply(LocalGatewayRouteTableId: String, VpcId: String, DryRun: js.UndefOr[scala.Boolean] = js.undefined): CreateLocalGatewayRouteTableVpcAssociationRequest = {
+  def apply(
+    LocalGatewayRouteTableId: LocalGatewayRoutetableId,
+    VpcId: VpcId,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined
+  ): CreateLocalGatewayRouteTableVpcAssociationRequest = {
     val __obj = js.Dynamic.literal(LocalGatewayRouteTableId = LocalGatewayRouteTableId.asInstanceOf[js.Any], VpcId = VpcId.asInstanceOf[js.Any])
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateLocalGatewayRouteTableVpcAssociationRequest]

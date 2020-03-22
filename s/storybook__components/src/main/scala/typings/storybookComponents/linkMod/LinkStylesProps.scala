@@ -4,12 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LinkStylesProps extends js.Object {
-  var inverse: js.UndefOr[Boolean] = js.undefined
-  var isButton: js.UndefOr[Boolean] = js.undefined
-  var nochrome: js.UndefOr[Boolean] = js.undefined
-  var secondary: js.UndefOr[Boolean] = js.undefined
-  var tertiary: js.UndefOr[Boolean] = js.undefined
+  var inverse: js.UndefOr[Boolean] = js.native
+  var isButton: js.UndefOr[Boolean] = js.native
+  var nochrome: js.UndefOr[Boolean] = js.native
+  var secondary: js.UndefOr[Boolean] = js.native
+  var tertiary: js.UndefOr[Boolean] = js.native
 }
 
 object LinkStylesProps {

@@ -11,9 +11,9 @@ object carouselStyleIndexNativeMod extends js.Object {
   object default extends js.Object {
     var pagination: AnonAlignItemsPosition = js.native
     var paginationX: AnonBottom = js.native
-    var paginationY: AnonBottomRight = js.native
+    var paginationY: AnonRight = js.native
     var pointActiveStyle: AnonBackgroundColorString = js.native
-    var pointStyle: AnonBackgroundColorBorderRadiusHeight = js.native
+    var pointStyle: AnonBackgroundColorBorderRadius = js.native
     var spaceStyle: AnonMarginHorizontal = js.native
   }
   

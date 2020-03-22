@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
   - typings.stylelint.AnonActual
-  - typings.stylelint.AnonActualOptional
+  - typings.stylelint.AnonOptional
 */
 trait ValidateOptionsAssertion extends js.Object
 
@@ -21,7 +21,7 @@ object ValidateOptionsAssertion {
     __obj.asInstanceOf[ValidateOptionsAssertion]
   }
   @scala.inline
-  def AnonActualOptional(optional: `true`, possible: js.Any, actual: js.Any = null): ValidateOptionsAssertion = {
+  def AnonOptional(optional: `true`, possible: js.Any, actual: js.Any = null): ValidateOptionsAssertion = {
     val __obj = js.Dynamic.literal(optional = optional.asInstanceOf[js.Any], possible = possible.asInstanceOf[js.Any])
     if (actual != null) __obj.updateDynamic("actual")(actual.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidateOptionsAssertion]

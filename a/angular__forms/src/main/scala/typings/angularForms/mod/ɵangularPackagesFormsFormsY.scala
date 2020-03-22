@@ -1,24 +1,27 @@
 package typings.angularForms.mod
 
-import typings.angularCore.mod.ElementRef
-import typings.angularCore.mod.Renderer2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
   * @description
-  * Marks `<option>` as dynamic, so Angular can be notified when options change.
   *
-  * @see `SelectMultipleControlValueAccessor`
+  * Adds `novalidate` attribute to all forms by default.
   *
+  * `novalidate` is used to disable browser's native form validation.
+  *
+  * If you want to use native validation with Angular forms, just add `ngNativeValidate` attribute:
+  *
+  * ```
+  * <form ngNativeValidate></form>
+  * ```
+  *
+  * @publicApi
   * @ngModule ReactiveFormsModule
   * @ngModule FormsModule
-  * @publicApi
   */
 @JSImport("@angular/forms", "\u0275angular_packages_forms_forms_y")
 @js.native
-class ɵangularPackagesFormsFormsY protected () extends ɵNgSelectMultipleOption {
-  def this(_element: ElementRef[_], _renderer: Renderer2, _select: SelectMultipleControlValueAccessor) = this()
-}
+class ɵangularPackagesFormsFormsY () extends ɵNgNoValidate
 

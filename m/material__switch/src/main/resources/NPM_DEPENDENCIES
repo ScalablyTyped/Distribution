@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@material/switch" : "3.2.0"
+      "@material/switch" : "5.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@material/switch" : "3.2.0"
+      "@material/switch" : "5.1.0"
     }
   ],
   "compile-devDependencies" : [

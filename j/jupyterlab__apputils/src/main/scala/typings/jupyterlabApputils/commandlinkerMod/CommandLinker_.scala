@@ -1,9 +1,9 @@
 package typings.jupyterlabApputils.commandlinkerMod
 
 import typings.jupyterlabApputils.commandlinkerMod.CommandLinker.IOptions
-import typings.phosphorCoreutils.jsonMod.JSONObject
-import typings.phosphorDisposable.mod.IDisposable
-import typings.phosphorVirtualdom.mod.ElementDataset
+import typings.luminoCoreutils.jsonMod.ReadonlyPartialJSONObject
+import typings.luminoDisposable.mod.IDisposable
+import typings.luminoVirtualdom.mod.ElementDataset
 import typings.std.Event_
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -51,7 +51,7 @@ class CommandLinker_ protected () extends IDisposable {
     * 2. The `HTMLElement` passed in should be clickable.
     */
   def connectNode(node: HTMLElement, command: String): HTMLElement = js.native
-  def connectNode(node: HTMLElement, command: String, args: JSONObject): HTMLElement = js.native
+  def connectNode(node: HTMLElement, command: String, args: ReadonlyPartialJSONObject): HTMLElement = js.native
   /**
     * Disconnect a node that has been connected to execute a command on click.
     *
@@ -93,6 +93,11 @@ class CommandLinker_ protected () extends IDisposable {
     */
   def handleEvent(event: Event_): Unit = js.native
   /**
+    * Test whether the linker is disposed.
+    */
+  @JSName("isDisposed")
+  def isDisposed_MCommandLinker_(): Boolean = js.native
+  /**
     * Populate the `dataset` attribute within the collection of attributes used
     * to instantiate a virtual DOM node with the values necessary for its
     * rendered DOM node to respond to clicks by executing a command/argument
@@ -124,6 +129,6 @@ class CommandLinker_ protected () extends IDisposable {
     * ```
     */
   def populateVNodeDataset(command: String): ElementDataset = js.native
-  def populateVNodeDataset(command: String, args: JSONObject): ElementDataset = js.native
+  def populateVNodeDataset(command: String, args: ReadonlyPartialJSONObject): ElementDataset = js.native
 }
 

@@ -4,7 +4,7 @@ import typings.jupyterlabCodeeditor.editorMod.CodeEditor.IEditor
 import typings.jupyterlabCodeeditor.editorMod.CodeEditor.IModel
 import typings.jupyterlabDocregistry.registryMod.DocumentRegistry.Context
 import typings.jupyterlabFileeditor.widgetMod.FileEditor.IOptions
-import typings.phosphorWidgets.mod.Widget
+import typings.luminoWidgets.mod.Widget
 import typings.std.Event_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -27,17 +27,13 @@ class FileEditor_ protected () extends Widget {
     * Handle a change to the path.
     */
   var _onPathChanged: js.Any = js.native
-  /**
-    * Get the context for the editor widget.
-    */
-  val context: Context = js.native
   var editor: IEditor = js.native
   var editorWidget: js.Any = js.native
   var model: IModel = js.native
   /**
-    * A promise that resolves when the file editor is ready.
+    * Get the context for the editor widget.
     */
-  val ready: js.Promise[Unit] = js.native
+  def context(): Context = js.native
   /**
     * Handle the DOM events for the widget.
     *
@@ -49,5 +45,9 @@ class FileEditor_ protected () extends Widget {
     * not be called directly by user code.
     */
   def handleEvent(event: Event_): Unit = js.native
+  /**
+    * A promise that resolves when the file editor is ready.
+    */
+  def ready(): js.Promise[Unit] = js.native
 }
 

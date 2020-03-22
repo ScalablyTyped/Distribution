@@ -6,12 +6,6 @@ import scala.scalajs.js.annotation._
 
 object semanticUiRatingStrings {
   @js.native
-  sealed trait action extends js.Object
-  
-  @js.native
-  sealed trait active extends js.Object
-  
-  @js.native
   sealed trait auto extends js.Object
   
   @js.native
@@ -45,19 +39,10 @@ object semanticUiRatingStrings {
   sealed trait `get rating` extends js.Object
   
   @js.native
-  sealed trait hover extends js.Object
-  
-  @js.native
-  sealed trait icon extends js.Object
-  
-  @js.native
   sealed trait initialRating extends js.Object
   
   @js.native
   sealed trait interactive extends js.Object
-  
-  @js.native
-  sealed trait loading extends js.Object
   
   @js.native
   sealed trait name extends js.Object
@@ -87,10 +72,6 @@ object semanticUiRatingStrings {
   sealed trait verbose extends js.Object
   
   @scala.inline
-  def action: action = "action".asInstanceOf[action]
-  @scala.inline
-  def active: active = "active".asInstanceOf[active]
-  @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
   @scala.inline
   def className: className = "className".asInstanceOf[className]
@@ -113,15 +94,9 @@ object semanticUiRatingStrings {
   @scala.inline
   def `get rating`: `get rating` = "get rating".asInstanceOf[`get rating`]
   @scala.inline
-  def hover: hover = "hover".asInstanceOf[hover]
-  @scala.inline
-  def icon: icon = "icon".asInstanceOf[icon]
-  @scala.inline
   def initialRating: initialRating = "initialRating".asInstanceOf[initialRating]
   @scala.inline
   def interactive: interactive = "interactive".asInstanceOf[interactive]
-  @scala.inline
-  def loading: loading = "loading".asInstanceOf[loading]
   @scala.inline
   def name: name = "name".asInstanceOf[name]
   @scala.inline

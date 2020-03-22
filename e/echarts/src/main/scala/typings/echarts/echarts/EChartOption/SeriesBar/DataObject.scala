@@ -1,8 +1,8 @@
 package typings.echarts.echarts.EChartOption.SeriesBar
 
-import typings.echarts.AnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColor
-import typings.echarts.AnonBackgroundColorBorderColor
-import typings.echarts.AnonBarBorderColorBarBorderRadius
+import typings.echarts.AnonBarBorderRadius
+import typings.echarts.AnonExtraCssText
+import typings.echarts.AnonFontFamily
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,14 +11,14 @@ trait DataObject extends js.Object {
   /**
     * @see https://echarts.apache.org/en/option.html#series-bar.data.itemStyle
     */
-  var itemStyle: js.UndefOr[AnonBarBorderColorBarBorderRadius] = js.undefined
+  var itemStyle: js.UndefOr[AnonBarBorderRadius] = js.undefined
   /**
     * The style setting of the text label in a single bar.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-bar.data.label
     */
-  var label: js.UndefOr[AnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColor] = js.undefined
+  var label: js.UndefOr[AnonFontFamily] = js.undefined
   /**
     * The name of data item.
     *
@@ -32,7 +32,7 @@ trait DataObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-bar.data.tooltip
     */
-  var tooltip: js.UndefOr[AnonBackgroundColorBorderColor] = js.undefined
+  var tooltip: js.UndefOr[AnonExtraCssText] = js.undefined
   /**
     * The value of a single data item.
     *
@@ -45,10 +45,10 @@ trait DataObject extends js.Object {
 object DataObject {
   @scala.inline
   def apply(
-    itemStyle: AnonBarBorderColorBarBorderRadius = null,
-    label: AnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColor = null,
+    itemStyle: AnonBarBorderRadius = null,
+    label: AnonFontFamily = null,
     name: String = null,
-    tooltip: AnonBackgroundColorBorderColor = null,
+    tooltip: AnonExtraCssText = null,
     value: Int | Double = null
   ): DataObject = {
     val __obj = js.Dynamic.literal()

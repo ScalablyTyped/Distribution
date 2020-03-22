@@ -1,6 +1,6 @@
 package typings.antDesignPro.mod
 
-import typings.antDesignPro.TypeofClassTagSelectOption
+import typings.antDesignPro.TypeofTagSelectOption
 import typings.antDesignPro.tagSelectMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,6 +14,6 @@ class TagSelect () extends default
 @JSImport("ant-design-pro", "TagSelect")
 @js.native
 object TagSelect extends js.Object {
-  var Option: TypeofClassTagSelectOption = js.native
+  var Option: TypeofTagSelectOption = js.native
 }
 

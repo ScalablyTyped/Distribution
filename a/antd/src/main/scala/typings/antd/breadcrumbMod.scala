@@ -14,10 +14,9 @@ object breadcrumbMod extends js.Object {
   /* static members */
   @js.native
   object default extends js.Object {
-    var Item: TypeofClassBreadcrumbItem = js.native
-    var Separator: TypeofClassBreadcrumbSeparator = js.native
+    var Item: TypeofBreadcrumbItem = js.native
+    var Separator: TypeofBreadcrumbSeparator = js.native
     var defaultProps: AnonSeparator = js.native
-    var propTypes: AnonPrefixCls = js.native
   }
   
 }

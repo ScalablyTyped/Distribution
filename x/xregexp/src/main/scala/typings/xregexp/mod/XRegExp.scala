@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.RegExp
 import typings.std.RegExpExecArray
 import typings.xregexp.AnonBackref
-import typings.xregexp.AnonBackrefRegex
+import typings.xregexp.AnonRegex
 import typings.xregexp.xregexpStrings.all
 import typings.xregexp.xregexpStrings.one
 import scala.scalajs.js
@@ -54,7 +54,7 @@ object XRegExp extends js.Object {
   def isRegExp(value: js.Any): Boolean = js.native
   def `match`(str: String, regex: RegExp): js.Array[String] = js.native
   def `match`(str: String, regex: RegExp, scope: String): js.Any = js.native
-  def matchChain(str: String, chain: js.Array[AnonBackref | AnonBackrefRegex | RegExp]): js.Array[String] = js.native
+  def matchChain(str: String, chain: js.Array[AnonBackref | AnonRegex | RegExp]): js.Array[String] = js.native
   def matchRecursive(str: String, left: String, right: String): js.Array[String] = js.native
   def matchRecursive(str: String, left: String, right: String, flags: String): js.Array[String] = js.native
   def matchRecursive(str: String, left: String, right: String, flags: String, options: js.Object): js.Array[String] = js.native

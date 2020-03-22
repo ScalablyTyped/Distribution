@@ -11,10 +11,10 @@ import scala.scalajs.js.annotation._
 trait RTCDtlsTransport
   extends EventTarget
      with RTCTransport {
+  val iceTransport: RTCIceTransport = js.native
   var onerror: (js.ThisFunction1[/* this */ this.type, /* ev */ RTCErrorEvent, _]) | Null = js.native
   var onstatechange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]) | Null = js.native
   val state: RTCDtlsTransportState = js.native
-  val transport: RTCIceTransport = js.native
   @JSName("addEventListener")
   def addEventListener_error(`type`: error, listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCErrorEvent, _]): Unit = js.native
   @JSName("addEventListener")

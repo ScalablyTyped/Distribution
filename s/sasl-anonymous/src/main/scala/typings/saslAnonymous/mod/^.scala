@@ -1,7 +1,7 @@
 package typings.saslAnonymous.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.saslAnonymous.TypeofClassAnonymousMechanism
+import typings.saslAnonymous.TypeofAnonymousMechanism
 import typings.saslAnonymous.saslAnonymousBooleans.`true`
 import typings.saslAnonymous.saslAnonymousStrings.ANONYMOUS
 import scala.scalajs.js
@@ -29,6 +29,6 @@ class ^ () extends AnonymousMechanism {
 @JSImport("sasl-anonymous", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  var Mechanism: TypeofClassAnonymousMechanism = js.native
+  var Mechanism: TypeofAnonymousMechanism = js.native
 }
 

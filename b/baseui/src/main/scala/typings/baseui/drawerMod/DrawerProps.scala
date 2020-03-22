@@ -1,6 +1,6 @@
 package typings.baseui.drawerMod
 
-import typings.baseui.AnonBackdrop
+import typings.baseui.AnonCloseSource
 import typings.baseui.baseuiStrings.auto
 import typings.baseui.baseuiStrings.bottom
 import typings.baseui.baseuiStrings.default_
@@ -26,7 +26,7 @@ trait DrawerProps extends js.Object {
   var isOpen: js.UndefOr[Boolean] = js.undefined
   var mountNode: js.UndefOr[HTMLElement] = js.undefined
   var onBackdropClick: js.UndefOr[js.Function1[/* event */ MouseEvent[HTMLElement, NativeMouseEvent], _]] = js.undefined
-  var onClose: js.UndefOr[js.Function1[/* args */ AnonBackdrop, _]] = js.undefined
+  var onClose: js.UndefOr[js.Function1[/* args */ AnonCloseSource, _]] = js.undefined
   var onEscapeKeyDown: js.UndefOr[js.Function1[/* event */ KeyboardEvent[HTMLElement], _]] = js.undefined
   var overrides: js.UndefOr[DrawerOverrides] = js.undefined
   var renderAll: js.UndefOr[Boolean] = js.undefined
@@ -45,7 +45,7 @@ object DrawerProps {
     isOpen: js.UndefOr[Boolean] = js.undefined,
     mountNode: HTMLElement = null,
     onBackdropClick: /* event */ MouseEvent[HTMLElement, NativeMouseEvent] => _ = null,
-    onClose: /* args */ AnonBackdrop => _ = null,
+    onClose: /* args */ AnonCloseSource => _ = null,
     onEscapeKeyDown: /* event */ KeyboardEvent[HTMLElement] => _ = null,
     overrides: DrawerOverrides = null,
     renderAll: js.UndefOr[Boolean] = js.undefined,

@@ -8,12 +8,12 @@ trait SeriesAreasplinerangeDataDragDropGuideBoxOptions extends js.Object {
   /**
     * (Highcharts, Highstock) Style options for the guide box default state.
     */
-  var default: js.UndefOr[SeriesAreasplinerangeDataDragDropGuideBoxDefaultOptions] = js.undefined
+  var default: js.UndefOr[DragDropGuideBoxOptionsObject] = js.undefined
 }
 
 object SeriesAreasplinerangeDataDragDropGuideBoxOptions {
   @scala.inline
-  def apply(default: SeriesAreasplinerangeDataDragDropGuideBoxDefaultOptions = null): SeriesAreasplinerangeDataDragDropGuideBoxOptions = {
+  def apply(default: DragDropGuideBoxOptionsObject = null): SeriesAreasplinerangeDataDragDropGuideBoxOptions = {
     val __obj = js.Dynamic.literal()
     if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesAreasplinerangeDataDragDropGuideBoxOptions]

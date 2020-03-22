@@ -1,7 +1,7 @@
 package typings.materializeCss.M
 
+import typings.materializeCss.PartialInternationalizati
 import typings.std.Element
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,7 +34,7 @@ trait TimepickerOptions extends js.Object {
   /**
     * Internationalization options
     */
-  var i18n: Partial[InternationalizationOptions]
+  var i18n: PartialInternationalizati
   /**
     * Show the clear button in the Timepicker
     * @default false
@@ -85,7 +85,7 @@ object TimepickerOptions {
     defaultTime: String,
     duration: Double,
     fromNow: Double,
-    i18n: Partial[InternationalizationOptions],
+    i18n: PartialInternationalizati,
     onCloseEnd: Element => Unit,
     onCloseStart: Element => Unit,
     onOpenEnd: Element => Unit,

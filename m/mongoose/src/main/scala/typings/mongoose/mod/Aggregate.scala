@@ -2,7 +2,7 @@ package typings.mongoose.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.mongoose.AnonIncludeArrayIndex
-import typings.mongoose.FnOnfulfilledOnrejected
+import typings.mongoose.FnCallOnfulfilledOnrejected
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
 trait Aggregate[T] extends js.Object {
   /** Provides promise for aggregate. */
   @JSName("then")
-  var then_Original: FnOnfulfilledOnrejected[T] = js.native
+  var then_Original: FnCallOnfulfilledOnrejected[T] = js.native
   /** Adds a cursor flag */
   def addCursorFlag(flag: String, value: Boolean): this.type = js.native
   /**

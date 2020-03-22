@@ -31,8 +31,8 @@ object localPersistenceTestHelpersMod extends js.Object {
     existingQueryTargetIds: js.Array[TargetId]
   ): js.Promise[Unit] = js.native
   def testIndexedDbPersistence(): js.Promise[IndexedDbPersistence] = js.native
-  def testIndexedDbPersistence(options: AnonDontPurgeDataQueue): js.Promise[IndexedDbPersistence] = js.native
-  def testIndexedDbPersistence(options: AnonDontPurgeDataQueue, lruParams: LruParams): js.Promise[IndexedDbPersistence] = js.native
+  def testIndexedDbPersistence(options: AnonQueue): js.Promise[IndexedDbPersistence] = js.native
+  def testIndexedDbPersistence(options: AnonQueue, lruParams: LruParams): js.Promise[IndexedDbPersistence] = js.native
   def testMemoryEagerPersistence(): js.Promise[MemoryPersistence] = js.native
   def testMemoryLruPersistence(): js.Promise[MemoryPersistence] = js.native
   def testMemoryLruPersistence(params: LruParams): js.Promise[MemoryPersistence] = js.native

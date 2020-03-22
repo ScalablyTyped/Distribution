@@ -4,24 +4,23 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.StringDictionary
 import typings.kefir.AnonObservable
 import typings.kefir.AnonOff
-import typings.kefir.Fn
-import typings.kefir.FnCallback
-import typings.kefir.FnCallbackError
-import typings.kefir.FnCombinator
-import typings.kefir.FnEmitter
-import typings.kefir.FnEmitterSubscribe
-import typings.kefir.FnError
-import typings.kefir.FnEventName
-import typings.kefir.FnFn
-import typings.kefir.FnGenerator
-import typings.kefir.FnInterval
-import typings.kefir.FnIntervalValues
-import typings.kefir.FnObservable
-import typings.kefir.FnObss
-import typings.kefir.FnPool
-import typings.kefir.FnPromise
-import typings.kefir.FnValue
-import typings.kefir.FnValueNever
+import typings.kefir.Fn0
+import typings.kefir.Fn1
+import typings.kefir.FnCall
+import typings.kefir.FnCallError
+import typings.kefir.FnCallFn
+import typings.kefir.FnCallGenerator
+import typings.kefir.FnCallIntervalFn
+import typings.kefir.FnCallIntervalHandler
+import typings.kefir.FnCallIntervalValues
+import typings.kefir.FnCallObservable
+import typings.kefir.FnCallObss
+import typings.kefir.FnCallObssObssPCombinator
+import typings.kefir.FnCallObssPassiveObssCombinator
+import typings.kefir.FnCallPromise
+import typings.kefir.FnCallSubscribe
+import typings.kefir.FnCallTargetEventNameTransform
+import typings.kefir.FnCallValue
 import typings.kefir.mod.Emitter
 import typings.kefir.mod.Observable
 import typings.kefir.mod.Pool_
@@ -42,44 +41,44 @@ object ^ extends js.Object {
   var Property: Instantiable0[typings.kefir.mod.Property[js.Object, js.Object]] = js.native
   var Stream: Instantiable0[Stream_[js.Object, js.Object]] = js.native
   @JSName("combine")
-  var combine_Original: Fn = js.native
+  var combine_Original: FnCallObssObssPCombinator = js.native
   @JSName("concat")
-  var concat_Original: FnObss = js.native
+  var concat_Original: FnCallObss = js.native
   @JSName("constantError")
-  var constantError_Original: FnError = js.native
+  var constantError_Original: FnCallError = js.native
   @JSName("constant")
-  var constant_Original: FnValueNever = js.native
+  var constant_Original: FnCallValue = js.native
   @JSName("fromCallback")
-  var fromCallback_Original: FnCallback = js.native
+  var fromCallback_Original: FnCallFn = js.native
   @JSName("fromESObservable")
-  var fromESObservable_Original: FnObservable = js.native
+  var fromESObservable_Original: FnCallObservable = js.native
   @JSName("fromEvents")
-  var fromEvents_Original: FnEventName = js.native
+  var fromEvents_Original: FnCallTargetEventNameTransform = js.native
   @JSName("fromNodeCallback")
-  var fromNodeCallback_Original: FnCallbackError = js.native
+  var fromNodeCallback_Original: Fn0 = js.native
   @JSName("fromPoll")
-  var fromPoll_Original: FnFn = js.native
+  var fromPoll_Original: FnCallIntervalFn = js.native
   @JSName("fromPromise")
-  var fromPromise_Original: FnPromise = js.native
+  var fromPromise_Original: FnCallPromise = js.native
   @JSName("interval")
-  var interval_Original: FnInterval = js.native
+  var interval_Original: FnCall = js.native
   @JSName("later")
-  var later_Original: FnValue = js.native
+  var later_Original: FnCall = js.native
   @JSName("merge")
-  var merge_Original: FnObss = js.native
+  var merge_Original: FnCallObss = js.native
   @JSName("pool")
-  var pool_Original: FnPool = js.native
+  var pool_Original: Fn1 = js.native
   @JSName("repeat")
-  var repeat_Original: FnGenerator = js.native
+  var repeat_Original: FnCallGenerator = js.native
   @JSName("sequentially")
-  var sequentially_Original: FnIntervalValues = js.native
+  var sequentially_Original: FnCallIntervalValues = js.native
   var staticLand: AnonObservable = js.native
   @JSName("stream")
-  var stream_Original: FnEmitterSubscribe = js.native
+  var stream_Original: FnCallSubscribe = js.native
   @JSName("withInterval")
-  var withInterval_Original: FnEmitter = js.native
+  var withInterval_Original: FnCallIntervalHandler = js.native
   @JSName("zip")
-  var zip_Original: FnCombinator = js.native
+  var zip_Original: FnCallObssPassiveObssCombinator = js.native
   def combine[T /* <: js.Tuple6[
     Observable[_, _], 
     Observable[_, _], 
@@ -309,7 +308,7 @@ object ^ extends js.Object {
   def fromPoll[T](interval: Double, fn: js.Function0[T]): Stream_[T, scala.Nothing] = js.native
   def fromPromise[T, S](promise: js.Promise[T]): Property[T, S] = js.native
   def interval[T](interval: Double, value: T): Stream_[T, scala.Nothing] = js.native
-  def later[T](wait: Double, value: T): Stream_[T, scala.Nothing] = js.native
+  def later[T](interval: Double, value: T): Stream_[T, scala.Nothing] = js.native
   def merge[T, S](obss: js.Array[Observable[T, S]]): Observable[T, S] = js.native
   def pool[T, S](): Pool_[T, S] = js.native
   def repeat[T, S](generator: js.Function1[/* i */ Double, (Observable[T, S]) | Boolean]): Observable[T, S] = js.native

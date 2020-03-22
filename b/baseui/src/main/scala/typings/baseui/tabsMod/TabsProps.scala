@@ -1,7 +1,7 @@
 package typings.baseui.tabsMod
 
-import typings.baseui.AnonActive
 import typings.baseui.AnonActiveKey
+import typings.baseui.SharedPropsactiveboolean
 import typings.baseui.baseuiStrings.horizontal
 import typings.baseui.baseuiStrings.vertical
 import typings.react.mod.Key
@@ -16,7 +16,7 @@ trait TabsProps extends js.Object {
   var disabled: js.UndefOr[Boolean] = js.undefined
   var onChange: js.UndefOr[js.Function1[/* args */ AnonActiveKey, _]] = js.undefined
   var orientation: js.UndefOr[horizontal | vertical] = js.undefined
-  var overrides: js.UndefOr[TabsOverrides[SharedProps with AnonActive]] = js.undefined
+  var overrides: js.UndefOr[TabsOverrides[SharedPropsactiveboolean]] = js.undefined
   var renderAll: js.UndefOr[Boolean] = js.undefined
 }
 
@@ -28,7 +28,7 @@ object TabsProps {
     disabled: js.UndefOr[Boolean] = js.undefined,
     onChange: /* args */ AnonActiveKey => _ = null,
     orientation: horizontal | vertical = null,
-    overrides: TabsOverrides[SharedProps with AnonActive] = null,
+    overrides: TabsOverrides[SharedPropsactiveboolean] = null,
     renderAll: js.UndefOr[Boolean] = js.undefined
   ): TabsProps = {
     val __obj = js.Dynamic.literal()

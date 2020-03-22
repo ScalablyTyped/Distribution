@@ -10,9 +10,9 @@ The best of both `JSON.stringify(obj)` and `JSON.stringify(obj, null, indent)`.
 | ------------------ | :-------------: |
 | Full name          | json-stringify-pretty-compact |
 | Keywords           | JSON, stringify, pretty, print, pretty-print, compact, indent, format, formatter |
-| # releases         | 5 |
-| # dependents       | 80 |
-| # downloads        | 1977498 |
+| # releases         | 3 |
+| # dependents       | 95 |
+| # downloads        | 5580363 |
 | # stars            | 5 |
 
 ## Links

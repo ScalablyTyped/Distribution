@@ -17,7 +17,12 @@ package object styledComponentsMod {
   ]
   type BaseWithThemeFnInterface[T /* <: js.Object */] = js.Function1[
     /* component */ typings.react.mod.ComponentType[js.Any], 
-    typings.react.mod.ForwardRefExoticComponent[typings.styledComponents.WithOptionalThemeComponentPropsWithRefCT[T]]
+    typings.react.mod.ForwardRefExoticComponent[
+      typings.styledComponents.styledComponentsMod.WithOptionalTheme[
+        typings.react.mod.ComponentPropsWithRef[typings.react.mod.ComponentType[js.Any]], 
+        T
+      ]
+    ]
   ]
   type CSSKeyframes = js.Object with org.scalablytyped.runtime.StringDictionary[typings.styledComponents.styledComponentsMod.CSSObject]
   type CSSProp[T] = java.lang.String | typings.styledComponents.styledComponentsMod.CSSObject | typings.styledComponents.styledComponentsMod.FlattenInterpolation[typings.styledComponents.styledComponentsMod.ThemeProps[T]]
@@ -77,7 +82,7 @@ package object styledComponentsMod {
     ]) with (typings.std.Partial[typings.std.Pick[typings.react.mod.ComponentPropsWithRef[C] with O, A]]), 
     T
   ]) with typings.styledComponents.styledComponentsMod.WithChildrenIfReactComponentClass[C]
-  type StyledComponentPropsWithAs[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */, T /* <: js.Object */, O /* <: js.Object */, A /* <: java.lang.String */] = (typings.styledComponents.styledComponentsMod.StyledComponentProps[C, T, O, A]) with typings.styledComponents.AnonAs[C]
+  type StyledComponentPropsWithAs[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */, T /* <: js.Object */, O /* <: js.Object */, A /* <: java.lang.String */] = (typings.styledComponents.styledComponentsMod.StyledComponentProps[C, T, O, A]) with typings.styledComponents.AnonForwardedAs[C]
   type StyledComponentPropsWithRef[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */] = typings.react.mod.ComponentPropsWithRef[
     C | typings.styledComponents.styledComponentsMod.StyledComponentInnerComponent[C]
   ]

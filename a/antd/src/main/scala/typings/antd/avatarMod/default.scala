@@ -1,6 +1,6 @@
 package typings.antd.avatarMod
 
-import typings.antd.AnonCircle
+import typings.antd.AnonShape
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,6 +13,6 @@ class default () extends Avatar
 @JSImport("antd/lib/avatar", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: AnonCircle = js.native
+  var defaultProps: AnonShape = js.native
 }
 

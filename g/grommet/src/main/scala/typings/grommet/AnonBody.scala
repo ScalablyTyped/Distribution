@@ -5,22 +5,22 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonBody extends js.Object {
-  var body: js.UndefOr[String | AnonColorDark | js.Array[String]] = js.undefined
+  var body: js.UndefOr[String | AnonDark | js.Array[String]] = js.undefined
   var color: js.UndefOr[String] = js.undefined
   var dark: js.UndefOr[String] = js.undefined
-  var footer: js.UndefOr[String | AnonColorDark] = js.undefined
-  var header: js.UndefOr[String | AnonColorDark] = js.undefined
+  var footer: js.UndefOr[String | AnonDark] = js.undefined
+  var header: js.UndefOr[String | AnonDark] = js.undefined
   var light: js.UndefOr[String] = js.undefined
 }
 
 object AnonBody {
   @scala.inline
   def apply(
-    body: String | AnonColorDark | js.Array[String] = null,
+    body: String | AnonDark | js.Array[String] = null,
     color: String = null,
     dark: String = null,
-    footer: String | AnonColorDark = null,
-    header: String | AnonColorDark = null,
+    footer: String | AnonDark = null,
+    header: String | AnonDark = null,
     light: String = null
   ): AnonBody = {
     val __obj = js.Dynamic.literal()

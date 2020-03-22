@@ -2,9 +2,9 @@ package typings.multer.mod
 
 import typings.express.mod.Request_
 import typings.expressServeStaticCore.mod.ParamsDictionary
+import typings.multer.PartialFile
 import typings.multer.mod._Global_.Express.Multer.File
 import typings.std.Error
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,7 +31,7 @@ trait StorageEngine extends js.Object {
   def _handleFile(
     req: Request_[ParamsDictionary],
     file: File,
-    callback: js.Function2[/* error */ js.UndefOr[js.Any], /* info */ js.UndefOr[Partial[File]], Unit]
+    callback: js.Function2[/* error */ js.UndefOr[js.Any], /* info */ js.UndefOr[PartialFile], Unit]
   ): Unit
   /**
     * Remove the file described by `file`, then invoke the callback with.
@@ -49,7 +49,7 @@ trait StorageEngine extends js.Object {
 object StorageEngine {
   @scala.inline
   def apply(
-    _handleFile: (Request_[ParamsDictionary], File, js.Function2[/* error */ js.UndefOr[js.Any], /* info */ js.UndefOr[Partial[File]], Unit]) => Unit,
+    _handleFile: (Request_[ParamsDictionary], File, js.Function2[/* error */ js.UndefOr[js.Any], /* info */ js.UndefOr[PartialFile], Unit]) => Unit,
     _removeFile: (Request_[ParamsDictionary], File, js.Function1[/* error */ Error, Unit]) => Unit
   ): StorageEngine = {
     val __obj = js.Dynamic.literal(_handleFile = js.Any.fromFunction3(_handleFile), _removeFile = js.Any.fromFunction3(_removeFile))

@@ -5,7 +5,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mod {
-  type DvaOption = typings.dva.mod.Hooks with typings.dva.AnonHistory
   type Effect = js.Function2[
     /* action */ typings.redux.mod.AnyAction, 
     /* effects */ typings.dva.mod.EffectsCommandMap, 

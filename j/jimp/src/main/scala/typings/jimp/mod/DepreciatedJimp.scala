@@ -347,11 +347,16 @@ Instantiable1[
   def quality(n: Double): this.type = js.native
   def quality(n: Double, cb: ImageCallback[_]): this.type = js.native
   def read(data: Buffer): js.Promise[this.type] = js.native
+  def read(data: Buffer, cb: ImageCallback[_]): js.Promise[this.type] = js.native
   def read(image: this.type): js.Promise[this.type] = js.native
+  def read(image: this.type, cb: ImageCallback[_]): js.Promise[this.type] = js.native
   def read(path: String): js.Promise[this.type] = js.native
+  def read(path: String, cb: ImageCallback[_]): js.Promise[this.type] = js.native
   def read(w: Double, h: Double): js.Promise[this.type] = js.native
   def read(w: Double, h: Double, background: String): js.Promise[this.type] = js.native
+  def read(w: Double, h: Double, background: String, cb: ImageCallback[_]): js.Promise[this.type] = js.native
   def read(w: Double, h: Double, background: Double): js.Promise[this.type] = js.native
+  def read(w: Double, h: Double, background: Double, cb: ImageCallback[_]): js.Promise[this.type] = js.native
   def resize(w: Double, h: Double): this.type = js.native
   def resize(w: Double, h: Double, cb: ImageCallback[_]): this.type = js.native
   def resize(w: Double, h: Double, mode: String): this.type = js.native

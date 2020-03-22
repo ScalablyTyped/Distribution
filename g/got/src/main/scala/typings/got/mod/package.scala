@@ -41,7 +41,6 @@ package object mod {
     typings.got.gotStrings.get_ | typings.got.gotStrings.post_ | typings.got.gotStrings.put_ | typings.got.gotStrings.patch | typings.got.gotStrings.head_ | typings.got.gotStrings.delete_, 
     T
   ]) with typings.got.AnonCancelError
-  type GotPromise[B /* <: typings.node.Buffer | java.lang.String | js.Object */] = js.Promise[typings.got.mod.Response[B]] with typings.got.AnonCancel
   type GotStreamFn = js.Function2[
     /* url */ typings.got.mod.GotUrl, 
     /* options */ js.UndefOr[typings.got.mod.GotOptions[java.lang.String | scala.Null]], 

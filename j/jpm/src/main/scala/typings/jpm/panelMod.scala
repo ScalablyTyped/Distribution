@@ -57,6 +57,6 @@ object panelMod extends js.Object {
   */
   trait PanelPosition extends js.Object
   
-  def Panel(options: AnonAllowContentScript): Panel = js.native
+  def Panel(options: AnonContentScriptFile): Panel = js.native
 }
 

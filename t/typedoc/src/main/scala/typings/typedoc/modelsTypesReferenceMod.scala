@@ -1,6 +1,7 @@
 package typings.typedoc
 
 import typings.typedoc.abstractMod.Reflection
+import typings.typedoc.typedocStrings.reference
 import typings.typedoc.typesAbstractMod.Type
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,20 +12,22 @@ import scala.scalajs.js.annotation._
 object modelsTypesReferenceMod extends js.Object {
   @js.native
   class ReferenceType protected () extends Type {
-    def this(name: String, symbolID: Double) = this()
-    def this(name: String, symbolID: Double, reflection: Reflection) = this()
+    def this(name: String, symbolFQN: String) = this()
+    def this(name: String, symbolFQN: String, reflection: Reflection) = this()
     var name: String = js.native
     var reflection: js.UndefOr[Reflection] = js.native
-    var symbolID: Double = js.native
+    var symbolFullyQualifiedName: String = js.native
     var typeArguments: js.UndefOr[js.Array[Type]] = js.native
-    def equals(`type`: ReferenceType): Boolean = js.native
+    @JSName("type")
+    val type_ReferenceType: reference = js.native
+    def equals(other: ReferenceType): Boolean = js.native
   }
   
   /* static members */
   @js.native
   object ReferenceType extends js.Object {
-    var SYMBOL_ID_RESOLVED: Double = js.native
-    var SYMBOL_ID_RESOLVE_BY_NAME: Double = js.native
+    var SYMBOL_FQN_RESOLVED: String = js.native
+    var SYMBOL_FQN_RESOLVE_BY_NAME: String = js.native
   }
   
 }

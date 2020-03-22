@@ -45,7 +45,7 @@ package object mod {
   type Omit[T, K] = typings.std.Pick[T, typings.std.Exclude[java.lang.String, K]]
   type OnlyFieldsOfType[TSchema, FieldType, AssignableType] = (typings.mongodb.mod.AcceptedFields[TSchema, FieldType, AssignableType]) with (typings.mongodb.mod.NotAcceptedFields[TSchema, FieldType]) with typings.mongodb.mod.DotAndArrayNotation[AssignableType]
   // this makes _id optional
-  type OptionalId[TSchema /* <: typings.mongodb.AnonIdAnyOptional */] = typings.mongodb.mod.WithId[TSchema] | ((typings.mongodb.mod.EnhancedOmit[TSchema, typings.mongodb.mongodbStrings._id]) with typings.mongodb.AnonIdExtractIdType[TSchema])
+  type OptionalId[TSchema /* <: typings.mongodb.AnonIdAny */] = typings.mongodb.mod.WithId[TSchema] | ((typings.mongodb.mod.EnhancedOmit[TSchema, typings.mongodb.mongodbStrings._id]) with typings.mongodb.AnonIdExtractIdType[TSchema])
   type PullAllOperator[TSchema] = typings.mongodb.mongodbStrings.PullAllOperator with TSchema with (typings.mongodb.mod.NotAcceptedFields[TSchema, js.Array[_]]) with org.scalablytyped.runtime.StringDictionary[js.Array[_]]
   type PullOperator[TSchema] = typings.mongodb.mongodbStrings.PullOperator with js.Any with (typings.mongodb.mod.NotAcceptedFields[TSchema, js.Array[_]]) with (org.scalablytyped.runtime.StringDictionary[typings.mongodb.mod.QuerySelector[_] | js.Any])
   type PushOperator[TSchema] = typings.mongodb.mongodbStrings.PushOperator with js.Any with (typings.mongodb.mod.NotAcceptedFields[TSchema, js.Array[_]]) with (org.scalablytyped.runtime.StringDictionary[typings.mongodb.mod.ArrayOperator[_] | js.Any])
@@ -59,7 +59,7 @@ package object mod {
   type SetFields[TSchema] = typings.mongodb.mongodbStrings.SetFields with js.Any with (typings.mongodb.mod.NotAcceptedFields[TSchema, js.UndefOr[js.Array[_]]]) with (org.scalablytyped.runtime.StringDictionary[typings.mongodb.mod.AddToSetOperators[_] | js.Any])
   type Unpacked[Type] = Type
   // this adds _id as a required property
-  type WithId[TSchema] = (typings.mongodb.mod.EnhancedOmit[TSchema, typings.mongodb.mongodbStrings._id]) with typings.mongodb.AnonIdExtractIdTypeTSchema[TSchema]
+  type WithId[TSchema] = (typings.mongodb.mod.EnhancedOmit[TSchema, typings.mongodb.mongodbStrings._id]) with typings.mongodb.Anon2[TSchema]
   type WithTransactionCallback[T] = js.Function1[/* session */ typings.mongodb.mod.ClientSession, js.Promise[T]]
   type log = js.Function2[
     /* message */ js.UndefOr[java.lang.String], 

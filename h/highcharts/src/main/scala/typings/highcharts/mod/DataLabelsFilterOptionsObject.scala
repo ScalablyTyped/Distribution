@@ -6,26 +6,28 @@ import scala.scalajs.js.annotation._
 
 trait DataLabelsFilterOptionsObject extends js.Object {
   /**
-    * The operator to compare by. Can be one of `>`, `<`, `>=`, `<=`, `==`, and
-    * `===`.
+    * (Highcharts, Highstock, Gantt) The operator to compare by. Can be one of
+    * `>`, `<`, `>=`, `<=`, `==`, and `===`.
     */
-  var operator: DataLabelsFilterOperatorValue
+  var operator: js.UndefOr[OptionsOperatorValue] = js.undefined
   /**
-    * The point property to filter by. Point options are passed directly to
-    * properties, additionally there are `y` value, `percentage` and others
-    * listed under Highcharts.Point members.
+    * (Highcharts, Highstock, Gantt) The point property to filter by. Point
+    * options are passed directly to properties, additionally there are `y`
+    * value, `percentage` and others listed under Highcharts.Point members.
     */
-  var property: String
+  var property: js.UndefOr[String] = js.undefined
   /**
-    * The value to compare against.
+    * (Highcharts, Highstock, Gantt) The value to compare against.
     */
-  var value: Double | Null
+  var value: js.UndefOr[Double] = js.undefined
 }
 
 object DataLabelsFilterOptionsObject {
   @scala.inline
-  def apply(operator: DataLabelsFilterOperatorValue, property: String, value: Int | Double = null): DataLabelsFilterOptionsObject = {
-    val __obj = js.Dynamic.literal(operator = operator.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any])
+  def apply(operator: OptionsOperatorValue = null, property: String = null, value: Int | Double = null): DataLabelsFilterOptionsObject = {
+    val __obj = js.Dynamic.literal()
+    if (operator != null) __obj.updateDynamic("operator")(operator.asInstanceOf[js.Any])
+    if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataLabelsFilterOptionsObject]
   }

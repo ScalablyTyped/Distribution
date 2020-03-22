@@ -24,7 +24,6 @@ class AccessKey protected () extends CustomResource {
   /**
     * The encrypted secret, base64 encoded, if `pgpKey` was specified.
     * > **NOTE:** The encrypted secret may be decrypted using the command line,
-    * for example: `... | base64 --decode | keybase pgp decrypt`.
     */
   val encryptedSecret: Output_[String] = js.native
   /**
@@ -47,11 +46,17 @@ class AccessKey protected () extends CustomResource {
     */
   val secret: Output_[String] = js.native
   /**
-    * The secret access key converted into an SES SMTP
+    * **DEPRECATED** The secret access key converted into an SES SMTP
     * password by applying [AWS's documented conversion
-    * algorithm](https://docs.aws.amazon.com/ses/latest/DeveloperGuide/smtp-credentials.html#smtp-credentials-convert).
     */
   val sesSmtpPassword: Output_[String] = js.native
+  /**
+    * The secret access key converted into an SES SMTP
+    * password by applying [AWS's documented Sigv4 conversion
+    * algorithm](https://docs.aws.amazon.com/ses/latest/DeveloperGuide/smtp-credentials.html#smtp-credentials-convert).
+    * As SigV4 is region specific, valid Provider regions are `ap-south-1`, `ap-southeast-2`, `eu-central-1`, `eu-west-1`, `us-east-1` and `us-west-2`. See current [AWS SES regions](https://docs.aws.amazon.com/general/latest/gr/rande.html#ses_region)
+    */
+  val sesSmtpPasswordV4: Output_[String] = js.native
   /**
     * The access key status to apply. Defaults to `Active`.
     * Valid values are `Active` and `Inactive`.

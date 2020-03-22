@@ -1,12 +1,10 @@
 package typings.antdMobile.modalModalMod
 
+import typings.antdMobile.PartialHTMLPropsHTMLDivEl
 import typings.antdMobile.modalPropsTypeMod.Action
 import typings.antdMobile.modalPropsTypeMod.ModalPropsType
 import typings.react.mod.CSSProperties
-import typings.react.mod.HTMLProps
 import typings.react.mod.ReactNode
-import typings.std.HTMLDivElement
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,7 +18,7 @@ trait ModalProps extends ModalPropsType[CSSProperties] {
   var style: js.UndefOr[CSSProperties] = js.undefined
   var transitionName: js.UndefOr[String] = js.undefined
   var wrapClassName: js.UndefOr[String] = js.undefined
-  var wrapProps: js.UndefOr[Partial[HTMLProps[HTMLDivElement]]] = js.undefined
+  var wrapProps: js.UndefOr[PartialHTMLPropsHTMLDivEl] = js.undefined
 }
 
 object ModalProps {
@@ -47,7 +45,7 @@ object ModalProps {
     transitionName: String = null,
     transparent: js.UndefOr[Boolean] = js.undefined,
     wrapClassName: String = null,
-    wrapProps: Partial[HTMLProps[HTMLDivElement]] = null
+    wrapProps: PartialHTMLPropsHTMLDivEl = null
   ): ModalProps = {
     val __obj = js.Dynamic.literal(visible = visible.asInstanceOf[js.Any])
     if (!js.isUndefined(animateAppear)) __obj.updateDynamic("animateAppear")(animateAppear.asInstanceOf[js.Any])

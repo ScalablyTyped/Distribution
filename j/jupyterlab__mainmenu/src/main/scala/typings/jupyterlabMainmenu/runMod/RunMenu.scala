@@ -1,40 +1,30 @@
 package typings.jupyterlabMainmenu.runMod
 
 import typings.jupyterlabMainmenu.labmenuMod.JupyterLabMenu
-import typings.phosphorWidgets.menuMod.Menu.IOptions
+import typings.jupyterlabMainmenu.runMod.IRunMenu.ICodeRunner
+import typings.luminoWidgets.menuMod.Menu.IOptions
+import typings.luminoWidgets.mod.Widget
+import typings.std.Set
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@jupyterlab/mainmenu/lib/run", "RunMenu")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.luminoDisposable.mod.IDisposable because Already inherited
+- typings.jupyterlabMainmenu.labmenuMod.IJupyterLabMenu because Already inherited
+- typings.jupyterlabMainmenu.runMod.IRunMenu because var conflicts: isDisposed. Inlined codeRunners */ @JSImport("@jupyterlab/mainmenu/lib/run", "RunMenu")
 @js.native
-class RunMenu protected ()
-  extends JupyterLabMenu
-     with IRunMenu {
+class RunMenu protected () extends JupyterLabMenu {
   /**
     * Construct the run menu.
     */
   def this(options: IOptions) = this()
   /**
-    * Test whether the object has been disposed.
+    * A set storing ICodeRunner for the Run menu.
     *
-    * #### Notes
-    * This property is always safe to access.
+    * ### Notes
+    * The key for the set may be used in menu labels.
     */
-  /* CompleteClass */
-  override val isDisposed: Boolean = js.native
-  /**
-    * Dispose of the resources held by the object.
-    *
-    * #### Notes
-    * If the object's `dispose` method is called more than once, all
-    * calls made after the first will be a no-op.
-    *
-    * #### Undefined Behavior
-    * It is undefined behavior to use any functionality of the object
-    * after it has been disposed unless otherwise explicitly noted.
-    */
-  /* CompleteClass */
-  override def dispose(): Unit = js.native
+  val codeRunners: Set[ICodeRunner[Widget]] = js.native
 }
 

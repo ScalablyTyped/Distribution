@@ -1,8 +1,7 @@
 package typings.reactNativeSvgCharts.mod
 
-import typings.reactNativeSvg.mod.PathProps
 import typings.reactNativeSvgCharts.AnonCornerRadius
-import typings.std.Partial
+import typings.reactNativeSvgCharts.PartialPathProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait PieChartData extends js.Object {
   var arc: js.UndefOr[AnonCornerRadius] = js.undefined
   var key: String | Double
-  var svg: js.UndefOr[Partial[PathProps]] = js.undefined
+  var svg: js.UndefOr[PartialPathProps] = js.undefined
   var value: js.UndefOr[Double] = js.undefined
 }
 
@@ -19,7 +18,7 @@ object PieChartData {
   def apply(
     key: String | Double,
     arc: AnonCornerRadius = null,
-    svg: Partial[PathProps] = null,
+    svg: PartialPathProps = null,
     value: Int | Double = null
   ): PieChartData = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])

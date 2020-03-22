@@ -25,10 +25,12 @@ trait PlotSankeyLevelsOptions extends js.Object {
     */
   var colorByPoint: js.UndefOr[Boolean] = js.undefined
   /**
-    * (Highcharts) Can set `dataLabels` on all points which lay on the same
-    * level.
+    * (Highcharts, Highstock, Highmaps, Gantt) Can set `dataLabels` on all
+    * points which lay on the same level.
     */
-  var dataLabels: js.UndefOr[SeriesSankeyDataLabelsOptionsObject] = js.undefined
+  var dataLabels: js.UndefOr[
+    SeriesSankeyDataLabelsOptionsObject | js.Array[SeriesSankeyDataLabelsOptionsObject]
+  ] = js.undefined
   /**
     * (Highcharts) Decides which level takes effect from the options set in the
     * levels object.
@@ -43,7 +45,7 @@ trait PlotSankeyLevelsOptions extends js.Object {
     * (Highcharts) Can set `states` on all nodes and points which lay on the
     * same level.
     */
-  var states: js.UndefOr[PointStatesOptionsObject] = js.undefined
+  var states: js.UndefOr[SeriesStatesOptionsObject] = js.undefined
 }
 
 object PlotSankeyLevelsOptions {
@@ -53,10 +55,10 @@ object PlotSankeyLevelsOptions {
     borderWidth: Int | Double = null,
     color: ColorString | GradientColorObject | PatternObject = null,
     colorByPoint: js.UndefOr[Boolean] = js.undefined,
-    dataLabels: SeriesSankeyDataLabelsOptionsObject = null,
+    dataLabels: SeriesSankeyDataLabelsOptionsObject | js.Array[SeriesSankeyDataLabelsOptionsObject] = null,
     level: Int | Double = null,
     linkOpacity: Int | Double = null,
-    states: PointStatesOptionsObject = null
+    states: SeriesStatesOptionsObject = null
   ): PlotSankeyLevelsOptions = {
     val __obj = js.Dynamic.literal()
     if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])

@@ -1,8 +1,8 @@
 package typings.jupyterlabApputils.commandpaletteMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.phosphorCoreutils.mod.Token
-import typings.phosphorDisposable.mod.IDisposable
+import typings.luminoCoreutils.mod.Token
+import typings.luminoDisposable.mod.IDisposable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

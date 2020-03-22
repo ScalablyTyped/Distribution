@@ -4,6 +4,8 @@ import typings.jupyterlabDocregistry.registryMod.DocumentRegistry.IModelFactory
 import typings.jupyterlabNotebook.modelMod.INotebookModel
 import typings.jupyterlabNotebook.modelMod.NotebookModel.IContentFactory
 import typings.jupyterlabNotebook.modelfactoryMod.NotebookModelFactory.IOptions
+import typings.jupyterlabServices.contentsMod.Contents.ContentType
+import typings.jupyterlabServices.contentsMod.Contents.FileFormat
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,6 +31,11 @@ class NotebookModelFactory_ protected () extends IModelFactory[INotebookModel] {
   /* CompleteClass */
   override val isDisposed: Boolean = js.native
   /**
+    * The content type of the file.
+    */
+  @JSName("contentType")
+  def contentType_MNotebookModelFactory_(): ContentType = js.native
+  /**
     * Dispose of the resources held by the object.
     *
     * #### Notes
@@ -41,5 +48,20 @@ class NotebookModelFactory_ protected () extends IModelFactory[INotebookModel] {
     */
   /* CompleteClass */
   override def dispose(): Unit = js.native
+  /**
+    * The format of the file.
+    */
+  @JSName("fileFormat")
+  def fileFormat_MNotebookModelFactory_(): FileFormat = js.native
+  /**
+    * Get whether the model factory has been disposed.
+    */
+  @JSName("isDisposed")
+  def isDisposed_MNotebookModelFactory_(): Boolean = js.native
+  /**
+    * The name of the model.
+    */
+  @JSName("name")
+  def name_MNotebookModelFactory_(): String = js.native
 }
 

@@ -1,6 +1,5 @@
 package typings.antDesignIconsReact.iconMod
 
-import typings.antDesignIcons.typesMod.IconDefinition
 import typings.antDesignIconsReact.utilsMod.MiniMap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,13 +13,23 @@ class default () extends Icon
 @JSImport("@ant-design/icons-react/lib/components/Icon", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var definitions: MiniMap[IconDefinition] = js.native
+  var definitions: MiniMap[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconDefinition */ _
+  ] = js.native
   var displayName: String = js.native
-  def add(icons: IconDefinition*): Unit = js.native
+  def add(
+    icons: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconDefinition */ js.Any)*
+  ): Unit = js.native
   def clear(): Unit = js.native
-  def get(): js.UndefOr[IconDefinition] = js.native
-  def get(key: String): js.UndefOr[IconDefinition] = js.native
-  def get(key: String, colors: TwoToneColorPalette): js.UndefOr[IconDefinition] = js.native
+  def get(): js.UndefOr[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconDefinition */ js.Any
+  ] = js.native
+  def get(key: String): js.UndefOr[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconDefinition */ js.Any
+  ] = js.native
+  def get(key: String, colors: TwoToneColorPalette): js.UndefOr[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconDefinition */ js.Any
+  ] = js.native
   def getTwoToneColors(): TwoToneColorPalette = js.native
   def setTwoToneColors(hasPrimaryColorSecondaryColor: TwoToneColorPaletteSetter): Unit = js.native
 }

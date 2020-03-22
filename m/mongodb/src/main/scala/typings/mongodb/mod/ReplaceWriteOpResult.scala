@@ -1,7 +1,7 @@
 package typings.mongodb.mod
 
 import typings.mongodb.AnonIdObjectId
-import typings.mongodb.AnonNNModified
+import typings.mongodb.AnonNModified
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +17,7 @@ object ReplaceWriteOpResult {
     matchedCount: scala.Double,
     modifiedCount: scala.Double,
     ops: js.Array[_],
-    result: AnonNNModified,
+    result: AnonNModified,
     upsertedCount: scala.Double,
     upsertedId: AnonIdObjectId
   ): ReplaceWriteOpResult = {

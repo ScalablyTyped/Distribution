@@ -1,10 +1,13 @@
 package typings.ionicCore.componentsMod._Global_
 
 import org.scalablytyped.runtime.Instantiable0
+import typings.ionicCore.ionicCoreStrings.always
 import typings.ionicCore.ionicCoreStrings.decimal
 import typings.ionicCore.ionicCoreStrings.email
+import typings.ionicCore.ionicCoreStrings.focus
 import typings.ionicCore.ionicCoreStrings.ios
 import typings.ionicCore.ionicCoreStrings.md
+import typings.ionicCore.ionicCoreStrings.never
 import typings.ionicCore.ionicCoreStrings.none
 import typings.ionicCore.ionicCoreStrings.number
 import typings.ionicCore.ionicCoreStrings.numeric
@@ -38,7 +41,7 @@ trait HTMLIonSearchbarElement extends HTMLStencilElement {
     */
   var autocorrect: on | off = js.native
   /**
-    * Set the cancel button icon. Only applies to `md` mode.
+    * Set the cancel button icon. Only applies to `md` mode. Defaults to `"arrow-back-sharp"`.
     */
   var cancelButtonIcon: String = js.native
   /**
@@ -46,7 +49,7 @@ trait HTMLIonSearchbarElement extends HTMLStencilElement {
     */
   var cancelButtonText: String = js.native
   /**
-    * Set the clear icon. Defaults to `"close-circle"` for `ios` and `"close"` for `md`.
+    * Set the clear icon. Defaults to `"close-circle"` for `ios` and `"close-sharp"` for `md`.
     */
   var clearIcon: js.UndefOr[String] = js.native
   /**
@@ -64,7 +67,7 @@ trait HTMLIonSearchbarElement extends HTMLStencilElement {
   /**
     * A hint to the browser for which keyboard to display. Possible values: `"none"`, `"text"`, `"tel"`, `"url"`, `"email"`, `"numeric"`, `"decimal"`, and `"search"`.
     */
-  var inputmode: none | text | tel | url | email | numeric | decimal | search = js.native
+  var inputmode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.native
   /**
     * The mode determines which platform styles to use.
     */
@@ -74,13 +77,13 @@ trait HTMLIonSearchbarElement extends HTMLStencilElement {
     */
   var placeholder: String = js.native
   /**
-    * The icon to use as the search icon.
+    * The icon to use as the search icon. Defaults to `"search-outline"` in `ios` mode and `"search-sharp"` in `md` mode.
     */
-  var searchIcon: String = js.native
+  var searchIcon: js.UndefOr[String] = js.native
   /**
     * Sets the behavior for the cancel button. Defaults to `"never"`. Setting to `"focus"` shows the cancel button on focus. Setting to `"never"` hides the cancel button. Setting to `"always"` shows the cancel button regardless of focus state.
     */
-  var showCancelButton: Boolean | String = js.native
+  var showCancelButton: never | focus | always = js.native
   /**
     * Set the type of the input.
     */

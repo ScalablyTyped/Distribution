@@ -206,6 +206,11 @@ trait ITextModel extends IEditorModel {
     */
   def getAlternativeVersionId(): Double = js.native
   /**
+    * Get the character count of text in a certain range.
+    * @param range The range describing what text length to get.
+    */
+  def getCharacterCountInRange(range: IRange): Double = js.native
+  /**
     * Get the options associated with a decoration.
     * @param id The decoration id.
     * @return The decoration options or null if the decoration was not found.

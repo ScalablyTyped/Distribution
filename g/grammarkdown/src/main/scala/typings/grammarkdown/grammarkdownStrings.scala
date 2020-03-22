@@ -7,9 +7,6 @@ import scala.scalajs.js.annotation._
 
 object grammarkdownStrings {
   @js.native
-  sealed trait ProseFragmentLiteralTypes extends js.Object
-  
-  @js.native
   sealed trait TypedObject extends js.Object
   
   @js.native
@@ -45,8 +42,6 @@ object grammarkdownStrings {
   @js.native
   sealed trait uint8 extends TypeHint
   
-  @scala.inline
-  def ProseFragmentLiteralTypes: ProseFragmentLiteralTypes = "ProseFragmentLiteralTypes".asInstanceOf[ProseFragmentLiteralTypes]
   @scala.inline
   def TypedObject: TypedObject = "TypedObject".asInstanceOf[TypedObject]
   @scala.inline

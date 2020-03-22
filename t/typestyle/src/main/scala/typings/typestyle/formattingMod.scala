@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object formattingMod extends js.Object {
   def ensureStringObj(`object`: NestedCSSProperties): AnonDebugName = js.native
-  def explodeKeyframes(frames: KeyFrames): AnonDebugNameKeyframes = js.native
+  def explodeKeyframes(frames: KeyFrames): AnonKeyframes = js.native
   type Dictionary = StringDictionary[js.Any]
 }
 

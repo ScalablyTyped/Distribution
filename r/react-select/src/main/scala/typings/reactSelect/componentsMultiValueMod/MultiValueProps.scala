@@ -1,7 +1,7 @@
 package typings.reactSelect.componentsMultiValueMod
 
 import typings.react.mod.ReactNode
-import typings.reactSelect.AnonEvent
+import typings.reactSelect.AnonOnClick
 import typings.reactSelect.selectMod.Props
 import typings.reactSelect.typesMod.ActionTypes
 import typings.reactSelect.typesMod.ClassNamesState
@@ -26,7 +26,7 @@ trait MultiValueProps[OptionType /* <: OptionTypeBase */] extends js.Object {
   var isFocused: Boolean = js.native
   var isMulti: Boolean = js.native
   var options: OptionsType[OptionType] = js.native
-  var removeProps: AnonEvent = js.native
+  var removeProps: AnonOnClick = js.native
   var selectProps: Props[OptionType] = js.native
   def clearValue(): Unit = js.native
   def cx(): String | Unit = js.native

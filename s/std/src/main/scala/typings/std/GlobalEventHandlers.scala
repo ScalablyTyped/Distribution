@@ -37,7 +37,6 @@ import typings.std.stdStrings.keyup
 import typings.std.stdStrings.load
 import typings.std.stdStrings.loadeddata
 import typings.std.stdStrings.loadedmetadata
-import typings.std.stdStrings.loadend
 import typings.std.stdStrings.loadstart
 import typings.std.stdStrings.lostpointercapture
 import typings.std.stdStrings.mousedown
@@ -224,7 +223,6 @@ trait GlobalEventHandlers extends js.Object {
     * @param ev The event.
     */
   var onloadedmetadata: (js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]) | Null = js.native
-  var onloadend: (js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[EventTarget], _]) | Null = js.native
   /**
     * Occurs when Internet Explorer begins looking for media data.
     * @param ev The event.
@@ -337,10 +335,10 @@ trait GlobalEventHandlers extends js.Object {
     */
   var ontimeupdate: (js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]) | Null = js.native
   var ontoggle: (js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]) | Null = js.native
-  var ontouchcancel: (js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]) | Null = js.native
-  var ontouchend: (js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]) | Null = js.native
-  var ontouchmove: (js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]) | Null = js.native
-  var ontouchstart: (js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]) | Null = js.native
+  var ontouchcancel: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]) | Null] = js.native
+  var ontouchend: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]) | Null] = js.native
+  var ontouchmove: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]) | Null] = js.native
+  var ontouchstart: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]) | Null] = js.native
   var ontransitioncancel: (js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, _]) | Null = js.native
   var ontransitionend: (js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, _]) | Null = js.native
   var ontransitionrun: (js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, _]) | Null = js.native
@@ -942,23 +940,6 @@ trait GlobalEventHandlers extends js.Object {
   def addEventListener_loadedmetadata(
     `type`: loadedmetadata,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_loadend(
-    `type`: loadend,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[EventTarget], _]
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_loadend(
-    `type`: loadend,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[EventTarget], _],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_loadend(
-    `type`: loadend,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[EventTarget], _],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
@@ -2229,23 +2210,6 @@ trait GlobalEventHandlers extends js.Object {
   def removeEventListener_loadedmetadata(
     `type`: loadedmetadata,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_loadend(
-    `type`: loadend,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[EventTarget], _]
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_loadend(
-    `type`: loadend,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[EventTarget], _],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_loadend(
-    `type`: loadend,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[EventTarget], _],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")

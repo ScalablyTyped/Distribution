@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonNumberRange extends js.Object {
-  var numberRange: js.UndefOr[AnonHintMessageDetailMessageSummary] = js.undefined
+  var numberRange: js.UndefOr[AnonHintMessageDetail] = js.undefined
   var required: js.UndefOr[AnonHint] = js.undefined
   var tooltipDecrement: js.UndefOr[String] = js.undefined
   var tooltipIncrement: js.UndefOr[String] = js.undefined
@@ -14,7 +14,7 @@ trait AnonNumberRange extends js.Object {
 object AnonNumberRange {
   @scala.inline
   def apply(
-    numberRange: AnonHintMessageDetailMessageSummary = null,
+    numberRange: AnonHintMessageDetail = null,
     required: AnonHint = null,
     tooltipDecrement: String = null,
     tooltipIncrement: String = null

@@ -1,5 +1,6 @@
 package typings.angularCore.mod
 
+import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,7 +11,8 @@ trait DirectiveDecorator
   extends /**
   * See the `Directive` decorator.
   */
-Instantiable1[/* obj */ Directive, Directive] {
+Instantiable0[Directive]
+     with Instantiable1[/* obj */ Directive, Directive] {
   /**
     * Decorator that marks a class as an Angular directive.
     * You can define your own directives to attach custom behavior to elements in the DOM.
@@ -56,6 +58,7 @@ Instantiable1[/* obj */ Directive, Directive] {
     *
     * @Annotation
     */
+  def apply(): TypeDecorator = js.native
   def apply(obj: Directive): TypeDecorator = js.native
 }
 

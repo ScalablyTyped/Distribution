@@ -6,11 +6,10 @@ import scala.scalajs.js.annotation._
 
 package object mod {
   type DefaultsFunction = js.Function1[/* root */ typings.joi.mod.Schema, typings.joi.mod.Schema]
-  type ExtensionBoundSchema = typings.joi.mod.Schema with typings.joi.AnonContext
+  type ExtensionBoundSchema = typings.joi.mod.Schema with typings.joi.AnonCreateError
   type LanguageOptions = java.lang.String | scala.Boolean | scala.Null | (org.scalablytyped.runtime.StringDictionary[
     /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias joi.joi.LanguageOptions */ js.Object
   ])
-  type LanguageRootOptions = typings.joi.AnonKey with (typings.std.Partial[typings.std.Record[typings.joi.mod.Types, typings.joi.mod.LanguageOptions]])
   type LazySchema = typings.joi.mod.AnySchema
   /* Rewritten from type alias, can be one of: 
     - typings.joi.mod.AnySchema

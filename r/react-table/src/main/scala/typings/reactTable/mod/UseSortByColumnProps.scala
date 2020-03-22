@@ -1,6 +1,5 @@
 package typings.reactTable.mod
 
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +12,7 @@ trait UseSortByColumnProps[D /* <: js.Object */] extends js.Object {
   var sortedIndex: Double = js.native
   def clearSortBy(): Unit = js.native
   def getSortByToggleProps(): TableSortByToggleProps = js.native
-  def getSortByToggleProps(props: Partial[TableSortByToggleProps]): TableSortByToggleProps = js.native
+  def getSortByToggleProps(props: js.Object): TableSortByToggleProps = js.native
   def toggleSortBy(descending: Boolean, multi: Boolean): Unit = js.native
 }
 

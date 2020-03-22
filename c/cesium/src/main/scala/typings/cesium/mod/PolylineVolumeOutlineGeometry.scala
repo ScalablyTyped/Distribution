@@ -1,6 +1,6 @@
 package typings.cesium.mod
 
-import typings.cesium.AnonCornerTypeEllipsoidGranularityPolylinePositions
+import typings.cesium.AnonShapePositions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("cesium", "PolylineVolumeOutlineGeometry")
 @js.native
 class PolylineVolumeOutlineGeometry protected () extends Packable {
-  def this(options: AnonCornerTypeEllipsoidGranularityPolylinePositions) = this()
+  def this(options: AnonShapePositions) = this()
 }
 
 /* static members */

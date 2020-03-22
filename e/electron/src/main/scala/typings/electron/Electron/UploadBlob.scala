@@ -11,7 +11,7 @@ trait UploadBlob extends js.Object {
     */
   var blobUUID: String
   /**
-    * blob.
+    * `blob`.
     */
   var `type`: String
 }

@@ -5,7 +5,6 @@ import typings.forgeDi.argumentsMod.Arguments
 import typings.forgeDi.configMod.Config
 import typings.forgeDi.constructorMod.Constructor
 import typings.forgeDi.dependencyMod.Dependency
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -109,7 +108,7 @@ object mod extends js.Object {
     def this(config: Config) = this()
   }
   
-  def inject[T](hints: StringDictionary[String | Partial[Dependency]]): js.Function1[/* target */ T, T] = js.native
+  def inject[T](hints: StringDictionary[String | Partialdefault]): js.Function1[/* target */ T, T] = js.native
   @js.native
   object Mode extends js.Object {
     /* "All" */ val All: typings.forgeDi.modeMod.Mode.All with String = js.native

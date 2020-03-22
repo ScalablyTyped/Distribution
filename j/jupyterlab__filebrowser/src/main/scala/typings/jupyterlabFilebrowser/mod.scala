@@ -6,8 +6,7 @@ import typings.jupyterlabFilebrowser.crumbsMod.BreadCrumbs.IOptions
 import typings.jupyterlabFilebrowser.opendialogMod.FileDialog.IDirectoryOptions
 import typings.jupyterlabFilebrowser.opendialogMod.FileDialog.IFileOptions
 import typings.jupyterlabServices.contentsMod.Contents.IModel
-import typings.jupyterlabUiComponents.interfacesMod.IIconRegistry
-import typings.phosphorCoreutils.mod.Token
+import typings.luminoCoreutils.mod.Token
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -89,11 +88,13 @@ object mod extends js.Object {
       * The default implementation of an `IRenderer`.
       */
     @js.native
-    class Renderer protected ()
-      extends typings.jupyterlabFilebrowser.listingMod.DirListing.Renderer {
-      def this(icoReg: IIconRegistry) = this()
-    }
+    class Renderer ()
+      extends typings.jupyterlabFilebrowser.listingMod.DirListing.Renderer
     
+    /**
+      * The default `IRenderer` instance.
+      */
+    val defaultRenderer: typings.jupyterlabFilebrowser.listingMod.DirListing.Renderer = js.native
   }
   
   @js.native

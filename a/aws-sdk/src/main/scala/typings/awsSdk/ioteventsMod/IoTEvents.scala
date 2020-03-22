@@ -65,12 +65,12 @@ trait IoTEvents extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteInputResponse, Unit]
   ): Request[DeleteInputResponse, AWSError] = js.native
   /**
-    * Describes a detector model. If the "version" parameter is not specified, information about the latest version is returned.
+    * Describes a detector model. If the version parameter is not specified, information about the latest version is returned.
     */
   def describeDetectorModel(): Request[DescribeDetectorModelResponse, AWSError] = js.native
   def describeDetectorModel(callback: js.Function2[/* err */ AWSError, /* data */ DescribeDetectorModelResponse, Unit]): Request[DescribeDetectorModelResponse, AWSError] = js.native
   /**
-    * Describes a detector model. If the "version" parameter is not specified, information about the latest version is returned.
+    * Describes a detector model. If the version parameter is not specified, information about the latest version is returned.
     */
   def describeDetectorModel(params: DescribeDetectorModelRequest): Request[DescribeDetectorModelResponse, AWSError] = js.native
   def describeDetectorModel(
@@ -156,12 +156,12 @@ trait IoTEvents extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]
   ): Request[ListTagsForResourceResponse, AWSError] = js.native
   /**
-    * Sets or updates the AWS IoT Events logging options. If you update the value of any "loggingOptions" field, it takes up to one minute for the change to take effect. Also, if you change the policy attached to the role you specified in the "roleArn" field (for example, to correct an invalid policy) it takes up to five minutes for that change to take effect.
+    * Sets or updates the AWS IoT Events logging options. If you update the value of any loggingOptions field, it takes up to one minute for the change to take effect. If you change the policy attached to the role you specified in the roleArn field (for example, to correct an invalid policy), it takes up to five minutes for that change to take effect.
     */
   def putLoggingOptions(): Request[js.Object, AWSError] = js.native
   def putLoggingOptions(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Sets or updates the AWS IoT Events logging options. If you update the value of any "loggingOptions" field, it takes up to one minute for the change to take effect. Also, if you change the policy attached to the role you specified in the "roleArn" field (for example, to correct an invalid policy) it takes up to five minutes for that change to take effect.
+    * Sets or updates the AWS IoT Events logging options. If you update the value of any loggingOptions field, it takes up to one minute for the change to take effect. If you change the policy attached to the role you specified in the roleArn field (for example, to correct an invalid policy), it takes up to five minutes for that change to take effect.
     */
   def putLoggingOptions(params: PutLoggingOptionsRequest): Request[js.Object, AWSError] = js.native
   def putLoggingOptions(

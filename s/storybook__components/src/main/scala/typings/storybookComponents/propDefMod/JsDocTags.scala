@@ -4,9 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait JsDocTags extends js.Object {
-  var params: js.UndefOr[js.Array[JsDocParam]] = js.undefined
-  var returns: js.UndefOr[JsDocReturns] = js.undefined
+  var params: js.UndefOr[js.Array[JsDocParam]] = js.native
+  var returns: js.UndefOr[JsDocReturns] = js.native
 }
 
 object JsDocTags {

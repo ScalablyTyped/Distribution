@@ -1,7 +1,7 @@
 package typings.materializeCss.M
 
+import typings.materializeCss.PartialAutocompleteOptionData
 import typings.std.Element
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ trait ChipsOptions extends js.Object {
     * Set autocomplete options
     * @default {}
     */
-  var autocompleteOptions: Partial[AutocompleteOptions]
+  var autocompleteOptions: PartialAutocompleteOptionData
   /**
     * Set the chip data
     * @default []
@@ -52,7 +52,7 @@ trait ChipsOptions extends js.Object {
 object ChipsOptions {
   @scala.inline
   def apply(
-    autocompleteOptions: Partial[AutocompleteOptions],
+    autocompleteOptions: PartialAutocompleteOptionData,
     data: js.Array[ChipData],
     limit: Double,
     onChipAdd: (Element, Element) => Unit,

@@ -1,6 +1,6 @@
 package typings.antd.descriptionsMod
 
-import typings.antd.PartialRecordBreakpointnumber
+import typings.antd.PartialRecordBreakpointnu
 import typings.antd.antdStrings.horizontal
 import typings.antd.antdStrings.middle
 import typings.antd.antdStrings.small
@@ -16,7 +16,7 @@ trait DescriptionsProps extends js.Object {
   var children: js.UndefOr[ReactNode] = js.undefined
   var className: js.UndefOr[String] = js.undefined
   var colon: js.UndefOr[Boolean] = js.undefined
-  var column: js.UndefOr[Double | PartialRecordBreakpointnumber] = js.undefined
+  var column: js.UndefOr[Double | PartialRecordBreakpointnu] = js.undefined
   var layout: js.UndefOr[horizontal | vertical] = js.undefined
   var prefixCls: js.UndefOr[String] = js.undefined
   var size: js.UndefOr[middle | small | typings.antd.antdStrings.default] = js.undefined
@@ -31,7 +31,7 @@ object DescriptionsProps {
     children: ReactNode = null,
     className: String = null,
     colon: js.UndefOr[Boolean] = js.undefined,
-    column: Double | PartialRecordBreakpointnumber = null,
+    column: Double | PartialRecordBreakpointnu = null,
     layout: horizontal | vertical = null,
     prefixCls: String = null,
     size: middle | small | typings.antd.antdStrings.default = null,

@@ -8,11 +8,11 @@ trait CreateInterruptedDownloadOptions extends js.Object {
   /**
     * ETag header value.
     */
-  var eTag: String
+  var eTag: js.UndefOr[String] = js.undefined
   /**
     * Last-Modified header value.
     */
-  var lastModified: String
+  var lastModified: js.UndefOr[String] = js.undefined
   /**
     * Total length of the download.
     */
@@ -39,16 +39,18 @@ trait CreateInterruptedDownloadOptions extends js.Object {
 object CreateInterruptedDownloadOptions {
   @scala.inline
   def apply(
-    eTag: String,
-    lastModified: String,
     length: Double,
     offset: Double,
     path: String,
     urlChain: js.Array[String],
+    eTag: String = null,
+    lastModified: String = null,
     mimeType: String = null,
     startTime: Int | Double = null
   ): CreateInterruptedDownloadOptions = {
-    val __obj = js.Dynamic.literal(eTag = eTag.asInstanceOf[js.Any], lastModified = lastModified.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], urlChain = urlChain.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], urlChain = urlChain.asInstanceOf[js.Any])
+    if (eTag != null) __obj.updateDynamic("eTag")(eTag.asInstanceOf[js.Any])
+    if (lastModified != null) __obj.updateDynamic("lastModified")(lastModified.asInstanceOf[js.Any])
     if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType.asInstanceOf[js.Any])
     if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateInterruptedDownloadOptions]

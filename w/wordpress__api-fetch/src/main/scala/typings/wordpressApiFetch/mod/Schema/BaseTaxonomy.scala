@@ -3,7 +3,7 @@ package typings.wordpressApiFetch.mod.Schema
 import typings.std.Record
 import typings.wordpressApiFetch.AnonAddnewitem
 import typings.wordpressApiFetch.AnonAssignterms
-import typings.wordpressApiFetch.AnonHref
+import typings.wordpressApiFetch.AnonDictk
 import typings.wordpressApiFetch.AnonPublic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -25,7 +25,7 @@ trait BaseTaxonomy[T /* <: Context */] extends BaseResponse {
 object BaseTaxonomy {
   @scala.inline
   def apply[T /* <: Context */](
-    _links: Record[String, js.Array[AnonHref]],
+    _links: Record[String, js.Array[AnonDictk]],
     capabilities: AnonAssignterms,
     description: String,
     hierarchical: Boolean,

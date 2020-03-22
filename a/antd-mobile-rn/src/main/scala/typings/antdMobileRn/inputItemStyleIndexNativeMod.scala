@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation._
 object inputItemStyleIndexNativeMod extends js.Object {
   @js.native
   object default extends js.Object {
-    var clear: AnonBackgroundColorBorderRadiusPadding = js.native
-    var container: AnonAlignItemsBorderBottomColor = js.native
+    var clear: AnonPadding = js.native
+    var container: AnonBorderBottomColor = js.native
     var errorIcon: AnonHeightMarginLeft = js.native
-    var extra: AnonColorFontSizeMarginLeft = js.native
-    var input: AnonBackgroundColorColorFlex = js.native
+    var extra: AnonFontSizeMarginLeft = js.native
+    var input: AnonFontSizeHeight = js.native
     var inputErrorColor: AnonColorString = js.native
-    var text: AnonColorFontSizeMarginRight = js.native
+    var text: AnonTextAlignVertical = js.native
   }
   
 }

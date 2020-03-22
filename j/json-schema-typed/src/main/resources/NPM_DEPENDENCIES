@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "json-schema-typed" : "7.0.2"
+      "json-schema-typed" : "7.0.3"
     }
   ],
   "test-dependencies" : [
     {
-      "json-schema-typed" : "7.0.2"
+      "json-schema-typed" : "7.0.3"
     }
   ],
   "compile-devDependencies" : [

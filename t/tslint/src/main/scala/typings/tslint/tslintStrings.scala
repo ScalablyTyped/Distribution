@@ -41,6 +41,9 @@ object tslintStrings {
   sealed trait classes extends _DocType
   
   @js.native
+  sealed trait constructors extends _DocType
+  
+  @js.native
   sealed trait content extends js.Object
   
   @js.native
@@ -190,6 +193,8 @@ object tslintStrings {
   def before: before = "before".asInstanceOf[before]
   @scala.inline
   def classes: classes = "classes".asInstanceOf[classes]
+  @scala.inline
+  def constructors: constructors = "constructors".asInstanceOf[constructors]
   @scala.inline
   def content: content = "content".asInstanceOf[content]
   @scala.inline

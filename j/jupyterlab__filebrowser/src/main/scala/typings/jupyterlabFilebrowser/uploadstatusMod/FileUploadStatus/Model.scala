@@ -23,13 +23,16 @@ class Model () extends VDomModel {
     * Handle an uploadChanged event in the filebrowser model.
     */
   var _uploadChanged: js.Any = js.native
+  def browserModel(): js.Any = js.native
+  def browserModel(browserModel: FileBrowserModel): js.Any = js.native
   /**
     * The current file browser model.
     */
-  var browserModel: FileBrowserModel | Null = js.native
+  @JSName("browserModel")
+  def browserModel_Union(): FileBrowserModel | Null = js.native
   /**
     * The currently uploading items.
     */
-  val items: js.Array[IFileUploadItem] = js.native
+  def items(): js.Array[IFileUploadItem] = js.native
 }
 

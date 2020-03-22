@@ -1,6 +1,6 @@
 package typings.reactNativeRssParser.mod
 
-import typings.reactNativeRssParser.AnonAuthorsBlock
+import typings.reactNativeRssParser.AnonBlock
 import typings.reactNativeRssParser.AnonDescription
 import typings.reactNativeRssParser.AnonName
 import typings.reactNativeRssParser.AnonRel
@@ -15,7 +15,7 @@ trait Feed extends js.Object {
   var description: String
   var image: AnonDescription
   var items: js.Array[FeedItem]
-  var itunes: AnonAuthorsBlock
+  var itunes: AnonBlock
   var language: String
   var lastPublished: String
   var lastUpdated: String
@@ -32,7 +32,7 @@ object Feed {
     description: String,
     image: AnonDescription,
     items: js.Array[FeedItem],
-    itunes: AnonAuthorsBlock,
+    itunes: AnonBlock,
     language: String,
     lastPublished: String,
     lastUpdated: String,

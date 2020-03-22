@@ -2,7 +2,7 @@ package typings.jupyterlabApputils
 
 import typings.jupyterlabApputils.jupyterlabApputilsStrings.copy
 import typings.jupyterlabApputils.jupyterlabApputilsStrings.cut
-import typings.phosphorCoreutils.mod.MimeData
+import typings.luminoCoreutils.mod.MimeData
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

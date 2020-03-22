@@ -17,7 +17,7 @@ trait DescribeLaunchTemplatesRequest extends js.Object {
   /**
     * One or more launch template IDs.
     */
-  var LaunchTemplateIds: js.UndefOr[ValueStringList] = js.native
+  var LaunchTemplateIds: js.UndefOr[LaunchTemplateIdStringList] = js.native
   /**
     * One or more launch template names.
     */
@@ -37,7 +37,7 @@ object DescribeLaunchTemplatesRequest {
   def apply(
     DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     Filters: FilterList = null,
-    LaunchTemplateIds: ValueStringList = null,
+    LaunchTemplateIds: LaunchTemplateIdStringList = null,
     LaunchTemplateNames: LaunchTemplateNameStringList = null,
     MaxResults: Int | scala.Double = null,
     NextToken: String = null

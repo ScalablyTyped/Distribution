@@ -13,16 +13,20 @@ trait DeleteSecurityGroupRequest extends js.Object {
   /**
     * The ID of the security group. Required for a nondefault VPC.
     */
-  var GroupId: js.UndefOr[String] = js.native
+  var GroupId: js.UndefOr[SecurityGroupId] = js.native
   /**
     * [EC2-Classic, default VPC] The name of the security group. You can specify either the security group name or the security group ID.
     */
-  var GroupName: js.UndefOr[String] = js.native
+  var GroupName: js.UndefOr[SecurityGroupName] = js.native
 }
 
 object DeleteSecurityGroupRequest {
   @scala.inline
-  def apply(DryRun: js.UndefOr[scala.Boolean] = js.undefined, GroupId: String = null, GroupName: String = null): DeleteSecurityGroupRequest = {
+  def apply(
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    GroupId: SecurityGroupId = null,
+    GroupName: SecurityGroupName = null
+  ): DeleteSecurityGroupRequest = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
     if (GroupId != null) __obj.updateDynamic("GroupId")(GroupId.asInstanceOf[js.Any])

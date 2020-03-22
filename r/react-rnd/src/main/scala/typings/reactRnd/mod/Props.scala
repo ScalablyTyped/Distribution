@@ -1,6 +1,7 @@
 package typings.reactRnd.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.reResizable.mod.ResizeDirection
 import typings.react.mod.CSSProperties
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
@@ -11,6 +12,7 @@ import typings.reactRnd.reactRndStrings.both
 import typings.reactRnd.reactRndStrings.none
 import typings.reactRnd.reactRndStrings.x
 import typings.reactRnd.reactRndStrings.y
+import typings.reactRnd.xnumberynumberSize
 import typings.std.HTMLDivElement
 import typings.std.MouseEvent
 import typings.std.TouchEvent
@@ -24,7 +26,7 @@ trait Props
   var cancel: js.UndefOr[String] = js.undefined
   var children: js.UndefOr[ReactNode] = js.undefined
   var className: js.UndefOr[String] = js.undefined
-  var default: js.UndefOr[AnonX with Size] = js.undefined
+  var default: js.UndefOr[xnumberynumberSize] = js.undefined
   var disableDragging: js.UndefOr[Boolean] = js.undefined
   var dragAxis: js.UndefOr[x | y | both | none] = js.undefined
   var dragGrid: js.UndefOr[Grid] = js.undefined
@@ -66,7 +68,7 @@ object Props {
     cancel: String = null,
     children: ReactNode = null,
     className: String = null,
-    default: AnonX with Size = null,
+    default: xnumberynumberSize = null,
     disableDragging: js.UndefOr[Boolean] = js.undefined,
     dragAxis: x | y | both | none = null,
     dragGrid: Grid = null,
@@ -85,9 +87,9 @@ object Props {
     onDragStop: (/* e */ DraggableEvent, /* data */ typings.reactDraggable.mod.DraggableData) => Unit | `false` = null,
     onMouseDown: /* e */ MouseEvent => Unit = null,
     onMouseUp: /* e */ MouseEvent => Unit = null,
-    onResize: (/* e */ MouseEvent | TouchEvent, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ResizeDirection */ /* dir */ js.Any, /* elementRef */ HTMLDivElement, /* delta */ ResizableDelta, /* position */ Position) => Unit = null,
-    onResizeStart: (/* e */ (typings.react.mod.MouseEvent[HTMLDivElement, NativeMouseEvent]) | typings.react.mod.TouchEvent[HTMLDivElement], /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ResizeDirection */ /* dir */ js.Any, /* elementRef */ HTMLDivElement) => Unit = null,
-    onResizeStop: (/* e */ MouseEvent | TouchEvent, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ResizeDirection */ /* dir */ js.Any, /* elementRef */ HTMLDivElement, /* delta */ ResizableDelta, /* position */ Position) => Unit = null,
+    onResize: (/* e */ MouseEvent | TouchEvent, /* dir */ ResizeDirection, /* elementRef */ HTMLDivElement, /* delta */ ResizableDelta, /* position */ Position) => Unit = null,
+    onResizeStart: (/* e */ (typings.react.mod.MouseEvent[HTMLDivElement, NativeMouseEvent]) | typings.react.mod.TouchEvent[HTMLDivElement], /* dir */ ResizeDirection, /* elementRef */ HTMLDivElement) => Unit = null,
+    onResizeStop: (/* e */ MouseEvent | TouchEvent, /* dir */ ResizeDirection, /* elementRef */ HTMLDivElement, /* delta */ ResizableDelta, /* position */ Position) => Unit = null,
     position: AnonX = null,
     resizeGrid: Grid = null,
     resizeHandleClasses: HandleClasses = null,

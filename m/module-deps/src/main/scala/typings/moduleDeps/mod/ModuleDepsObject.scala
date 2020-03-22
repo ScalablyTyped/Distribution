@@ -1,8 +1,8 @@
 package typings.moduleDeps.mod
 
 import typings.moduleDeps.AnonBuiltin
+import typings.moduleDeps.AnonDictprop
 import typings.moduleDeps.AnonEntry
-import typings.moduleDeps.AnonFilename
 import typings.moduleDeps.AnonId
 import typings.moduleDeps.AnonModules
 import typings.moduleDeps.moduleDepsStrings._package
@@ -38,7 +38,7 @@ trait ModuleDepsObject
     * When opts.ignoreMissing is enabled, this event fires for each missing package.
     */
   @JSName("on")
-  def on_missing(event: missing, listener: js.Function2[/* id */ String, /* parent */ AnonFilename, _]): this.type = js.native
+  def on_missing(event: missing, listener: js.Function2[/* id */ String, /* parent */ AnonDictprop, _]): this.type = js.native
   /**
     * Every time a package is read, this event fires. The directory name of the package is available in pkg.__dirname.
     */

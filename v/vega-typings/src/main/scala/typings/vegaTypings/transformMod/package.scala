@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object transformMod {
-  type ContourTransform = typings.vegaTypings.AnonBandwidth with (typings.vegaTypings.AnonCountNice | typings.vegaTypings.AnonThresholds)
+  type ContourTransform = typings.vegaTypings.AnonBandwidth with (typings.vegaTypings.AnonNice | typings.vegaTypings.AnonThresholds)
   type DataName = java.lang.String
   type ExprString = java.lang.String
   type FieldRef = java.lang.String | typings.vegaTypings.transformMod.TransformField

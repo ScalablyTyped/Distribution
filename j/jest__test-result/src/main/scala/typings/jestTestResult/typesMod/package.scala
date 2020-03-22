@@ -5,7 +5,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object typesMod {
-  type AggregatedResult = typings.jestTestResult.typesMod.AggregatedResultWithoutCoverage with typings.jestTestResult.AnonCoverageMap
   type Bytes = scala.Double
   type CodeCoverageFormatter = js.Function2[
     /* coverage */ js.UndefOr[typings.istanbulLibCoverage.mod.CoverageMapData | scala.Null], 

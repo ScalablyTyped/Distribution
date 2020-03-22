@@ -4,6 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * @deprecated Jimp typings for TS <3.1 are being depreciated. Please upgrade your TypeScript version
+  */
 trait FontInfo extends js.Object {
   var aa: Double
   var bold: Double

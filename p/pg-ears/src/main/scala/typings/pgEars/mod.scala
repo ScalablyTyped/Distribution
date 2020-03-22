@@ -1,6 +1,5 @@
 package typings.pgEars
 
-import typings.pg.mod.ClientConfig
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,6 +15,6 @@ object mod extends js.Object {
     def notify(channel: String, payload: js.Any, cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
   }
   
-  def apply(opts: ClientConfig with AnonCheckInterval): PgEars = js.native
+  def apply(opts: ClientConfigmaxAttemptsnu): PgEars = js.native
 }
 

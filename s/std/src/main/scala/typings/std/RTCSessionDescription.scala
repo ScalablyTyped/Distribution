@@ -1,5 +1,6 @@
 package typings.std
 
+import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,5 +15,7 @@ trait RTCSessionDescription extends js.Object {
 
 @JSGlobal("RTCSessionDescription")
 @js.native
-object RTCSessionDescription extends Instantiable1[/* descriptionInitDict */ RTCSessionDescriptionInit, RTCSessionDescription]
+object RTCSessionDescription
+  extends Instantiable0[RTCSessionDescription]
+     with Instantiable1[/* descriptionInitDict */ RTCSessionDescriptionInit, RTCSessionDescription]
 

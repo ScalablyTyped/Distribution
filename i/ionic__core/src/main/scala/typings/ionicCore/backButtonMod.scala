@@ -1,9 +1,13 @@
 package typings.ionicCore
 
 import typings.ionicCore.elementInterfaceMod.ButtonInterface
+import typings.ionicCore.ionicCoreStrings.bounded
 import typings.ionicCore.ionicCoreStrings.button
+import typings.ionicCore.ionicCoreStrings.ios
+import typings.ionicCore.ionicCoreStrings.md
 import typings.ionicCore.ionicCoreStrings.reset
 import typings.ionicCore.ionicCoreStrings.submit
+import typings.ionicCore.ionicCoreStrings.unbounded
 import typings.ionicCore.mod.Color
 import typings.ionicCore.stencilCoreMod.ComponentInterface
 import typings.std.HTMLElement
@@ -18,8 +22,6 @@ object backButtonMod extends js.Object {
   class BackButton ()
     extends ComponentInterface
        with ButtonInterface {
-    val backButtonIcon: js.Any = js.native
-    val backButtonText: js.Any = js.native
     /**
       * The color to use from your application's color palette.
       * Default options are: `"primary"`, `"secondary"`, `"tertiary"`, `"success"`, `"warning"`, `"danger"`, `"light"`, `"medium"`, and `"dark"`.
@@ -33,22 +35,24 @@ object backButtonMod extends js.Object {
     /* CompleteClass */
     override var disabled: Boolean = js.native
     var el: HTMLElement = js.native
-    val hasIconOnly: js.Any = js.native
     /**
       * The icon name to use for the back button.
       */
     var icon: js.UndefOr[String | Null] = js.native
-    var mode: js.Any = js.native
+    var mode: ios | md = js.native
     var onClick: js.Any = js.native
-    val rippleType: js.Any = js.native
     /**
       * The text to display in the back button.
       */
     var text: js.UndefOr[String | Null] = js.native
     /* CompleteClass */
     override var `type`: submit | reset | button = js.native
+    def backButtonIcon(): js.Any = js.native
+    def backButtonText(): js.Any = js.native
+    def hasIconOnly(): Boolean = js.native
     @JSName("render")
     def render_MBackButton(): js.Any = js.native
+    def rippleType(): bounded | unbounded = js.native
   }
   
 }

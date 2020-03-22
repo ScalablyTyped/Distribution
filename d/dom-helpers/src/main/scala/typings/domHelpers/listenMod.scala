@@ -45,7 +45,6 @@ import typings.domHelpers.domHelpersStrings.keyup
 import typings.domHelpers.domHelpersStrings.load
 import typings.domHelpers.domHelpersStrings.loadeddata
 import typings.domHelpers.domHelpersStrings.loadedmetadata
-import typings.domHelpers.domHelpersStrings.loadend
 import typings.domHelpers.domHelpersStrings.loadstart
 import typings.domHelpers.domHelpersStrings.lostpointercapture
 import typings.domHelpers.domHelpersStrings.mousedown
@@ -600,17 +599,6 @@ object listenMod extends js.Object {
     node: HTMLElement,
     eventName: loadedmetadata,
     handler: EventHandler[loadedmetadata],
-    options: AddEventListenerOptions
-  ): js.Function0[Unit] = js.native
-  @JSName("default")
-  def default_loadend(node: HTMLElement, eventName: loadend, handler: EventHandler[loadend]): js.Function0[Unit] = js.native
-  @JSName("default")
-  def default_loadend(node: HTMLElement, eventName: loadend, handler: EventHandler[loadend], options: Boolean): js.Function0[Unit] = js.native
-  @JSName("default")
-  def default_loadend(
-    node: HTMLElement,
-    eventName: loadend,
-    handler: EventHandler[loadend],
     options: AddEventListenerOptions
   ): js.Function0[Unit] = js.native
   @JSName("default")

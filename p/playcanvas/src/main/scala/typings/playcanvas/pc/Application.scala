@@ -233,6 +233,17 @@ class Application protected () extends EventHandler {
     */
   var touch: TouchDevice = js.native
   /**
+    * @name pc.Application#xr
+    * @type {pc.XrManager}
+    * @description The XR Manager that provides ability to start VR/AR sessions.
+    * @example
+    * // check if VR is available
+    * if (app.xr.isAvailable(pc.XRTYPE_VR)) {
+    *     // VR is available
+    * }
+    */
+  var xr: XrManager = js.native
+  /**
     * @function
     * @name pc.Application#applySceneSettings
     * @description Apply scene settings to the current scene. Useful when your scene settings are parsed or generated from a non-URL source.
@@ -317,18 +328,6 @@ class Application protected () extends EventHandler {
     * this.app.destroy();
     */
   def destroy(): Unit = js.native
-  /**
-    * @function
-    * @name pc.Application#disableVr
-    * @description Destroy the {@link pc.VrManager}.
-    */
-  def disableVr(): Unit = js.native
-  /**
-    * @function
-    * @name pc.Application#enableVr
-    * @description Create and assign a {@link pc.VrManager} object to allow this application render in VR.
-    */
-  def enableVr(): Unit = js.native
   /**
     * @function
     * @name pc.Application#getSceneUrl

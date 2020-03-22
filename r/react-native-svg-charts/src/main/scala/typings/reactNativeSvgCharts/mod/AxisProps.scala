@@ -3,8 +3,7 @@ package typings.reactNativeSvgCharts.mod
 import typings.d3Scale.mod.ScaleBand_
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativeSvg.mod.TextProps
-import typings.std.Partial
+import typings.reactNativeSvgCharts.PartialTextProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +16,7 @@ trait AxisProps[T] extends js.Object {
   var spacingInner: js.UndefOr[Double] = js.undefined
   var spacingOuter: js.UndefOr[Double] = js.undefined
   var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
-  var svg: js.UndefOr[Partial[TextProps]] = js.undefined
+  var svg: js.UndefOr[PartialTextProps] = js.undefined
 }
 
 object AxisProps {
@@ -30,7 +29,7 @@ object AxisProps {
     spacingInner: Int | Double = null,
     spacingOuter: Int | Double = null,
     style: StyleProp[ViewStyle] = null,
-    svg: Partial[TextProps] = null
+    svg: PartialTextProps = null
   ): AxisProps[T] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     if (formatLabel != null) __obj.updateDynamic("formatLabel")(js.Any.fromFunction2(formatLabel))

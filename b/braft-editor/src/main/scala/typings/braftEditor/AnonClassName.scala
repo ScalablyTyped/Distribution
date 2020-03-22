@@ -1,6 +1,6 @@
 package typings.braftEditor
 
-import typings.braftEditor.braftEditorStrings.modal
+import typings.braftEditor.braftEditorStrings.button
 import typings.braftEditor.mod.ExtendControlType
 import typings.react.mod.ReactNode
 import scala.scalajs.js
@@ -12,19 +12,17 @@ trait AnonClassName extends ExtendControlType {
   var disabled: js.UndefOr[Boolean] = js.undefined
   var html: js.UndefOr[String | Null] = js.undefined
   var key: String
-  var modal: AnonBottomText
   var onClick: js.UndefOr[js.Function] = js.undefined
   var text: js.UndefOr[String | ReactNode] = js.undefined
   var title: js.UndefOr[String] = js.undefined
-  var `type`: modal
+  var `type`: button
 }
 
 object AnonClassName {
   @scala.inline
   def apply(
     key: String,
-    modal: AnonBottomText,
-    `type`: modal,
+    `type`: button,
     className: String = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     html: String = null,
@@ -32,7 +30,7 @@ object AnonClassName {
     text: String | ReactNode = null,
     title: String = null
   ): AnonClassName = {
-    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], modal = modal.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])

@@ -91,8 +91,8 @@ object mod extends js.Object {
   def and(fn1: Double): js.Function1[/* val2 */ js.Any, Boolean] = js.native
   def and(fn1: Double, val2: js.Any): Boolean = js.native
   def and(fn1: Null, val2: js.Any): Boolean = js.native
-  def and[T /* <: AnonA */](fn1: T): js.Function1[/* val2 */ js.Any, Boolean] = js.native
-  def and[T /* <: AnonA */](fn1: T, val2: js.Any): Boolean = js.native
+  def and[T /* <: AnonAnd */](fn1: T): js.Function1[/* val2 */ js.Any, Boolean] = js.native
+  def and[T /* <: AnonAnd */](fn1: T, val2: js.Any): Boolean = js.native
   def any[T](fn: js.Function1[/* a */ T, Boolean]): js.Function1[/* list */ js.Array[T], Boolean] = js.native
   def any[T](fn: js.Function1[/* a */ T, Boolean], list: js.Array[T]): Boolean = js.native
   def anyPass[T](preds: js.Array[SafePred[T]]): SafePred[T] = js.native
@@ -341,9 +341,9 @@ object mod extends js.Object {
   @JSName("cond")
   def cond_AB[A, B](fns: js.Array[js.Tuple2[SafePred[A], js.Function1[/* repeated */ A, B]]]): js.Function1[/* repeated */ A, B] = js.native
   def construct[A /* <: js.Array[_] */, T](constructor: js.Function1[/* a */ A, T]): js.Function1[/* a */ A, T] = js.native
-  def construct[A /* <: js.Array[_] */, T](constructor: AnonAT[A, T]): js.Function1[/* a */ A, T] = js.native
+  def construct[A /* <: js.Array[_] */, T](constructor: AnonInstantiable[A, T]): js.Function1[/* a */ A, T] = js.native
   def constructN[A /* <: js.Array[_] */, T](n: Double, constructor: js.Function1[/* a */ A, T]): js.Function1[/* a */ Partial[A], T] = js.native
-  def constructN[A /* <: js.Array[_] */, T](n: Double, constructor: AnonAT[A, T]): js.Function1[/* a */ Partial[A], T] = js.native
+  def constructN[A /* <: js.Array[_] */, T](n: Double, constructor: AnonInstantiable[A, T]): js.Function1[/* a */ Partial[A], T] = js.native
   def contains(__ : Placeholder): js.Function2[/* list */ String, /* a */ String, Boolean] = js.native
   def contains(__ : Placeholder, list: String): js.Function1[/* a */ String, Boolean] = js.native
   def contains(a: String): js.Function1[/* list */ String, Boolean] = js.native
@@ -379,10 +379,10 @@ object mod extends js.Object {
   def divide(a: Double): js.Function1[/* b */ Double, Double] = js.native
   def divide(a: Double, b: Double): Double = js.native
   def drop(n: Double, xs: String): String = js.native
-  def drop[T](n: Double): FnXs[T] = js.native
+  def drop[T](n: Double): FnCall[T] = js.native
   def drop[T](n: Double, xs: js.Array[T]): js.Array[T] = js.native
   def dropLast(n: Double, xs: String): String = js.native
-  def dropLast[T](n: Double): FnXsArray[T] = js.native
+  def dropLast[T](n: Double): FnCallXs[T] = js.native
   def dropLast[T](n: Double, xs: js.Array[T]): js.Array[T] = js.native
   def dropLastWhile[T](fn: js.Function1[/* a */ T, Boolean]): js.Function1[/* list */ js.Array[T], js.Array[T]] = js.native
   def dropLastWhile[T](fn: js.Function1[/* a */ T, Boolean], list: js.Array[T]): js.Array[T] = js.native
@@ -550,7 +550,7 @@ object mod extends js.Object {
   def lens[T, U, V](getter: js.Function1[/* s */ T, U], setter: js.Function2[/* a */ U, /* s */ T, V]): Lens = js.native
   def lensIndex(n: Double): Lens = js.native
   def lensPath(path: Path): Lens = js.native
-  def lensProp(str: String): AnonObj = js.native
+  def lensProp(str: String): AnonCall = js.native
   def lift(fn: js.Function1[/* repeated */ js.Any, _], args: js.Any*): js.Any = js.native
   def liftN(n: Double, fn: js.Function1[/* repeated */ js.Any, _], args: js.Any*): js.Any = js.native
   def lt(__ : Placeholder): js.Function2[/* b */ Double, /* a */ Double, Boolean] = js.native
@@ -658,7 +658,7 @@ object mod extends js.Object {
   def modulo(__ : Placeholder, b: Double): js.Function1[/* a */ Double, Double] = js.native
   def modulo(a: Double): js.Function1[/* b */ Double, Double] = js.native
   def modulo(a: Double, b: Double): Double = js.native
-  def move(from: Double): FnList = js.native
+  def move(from: Double): FnCallToList = js.native
   def move(from: Double, to: Double): js.Function1[/* list */ js.Array[_], js.Array[_]] = js.native
   def move[T](from: Double, to: Double, list: js.Array[T]): js.Array[T] = js.native
   def multiply(a: Double): js.Function1[/* b */ Double, Double] = js.native
@@ -672,7 +672,7 @@ object mod extends js.Object {
   def nth(n: Double): js.Function1[/* list */ js.Array[_], js.UndefOr[_]] = js.native
   def nth[T](n: Double, list: js.Array[T]): js.UndefOr[T] = js.native
   def nthArg(n: Double): js.Function1[/* repeated */ js.Any, _] = js.native
-  def o[T2, R](f: js.Function1[/* x */ T2, R]): FnG[T2, R] = js.native
+  def o[T2, R](f: js.Function1[/* x */ T2, R]): FnCallGV[T2, R] = js.native
   def o[T1, T2, R](f: js.Function1[/* x */ T2, R], g: js.Function1[/* x */ T1, T2]): js.Function1[/* v */ T1, R] = js.native
   def o[T1, T2, R](f: js.Function1[/* x */ T2, R], g: js.Function1[/* x */ T1, T2], v: T1): R = js.native
   def objOf[K /* <: String */](key: K): js.Function1[/* value */ js.Any, Record[K, _]] = js.native
@@ -684,11 +684,11 @@ object mod extends js.Object {
   @JSName("once")
   def once_T[T](fn: js.Function1[/* repeated */ js.Any, T]): js.Function1[/* repeated */ js.Any, T] = js.native
   def or[T](a: T): js.Function1[/* b */ js.Any, T | _] = js.native
-  def or[T /* <: AnonAOr */, U](fn1: T, val2: U): T | U = js.native
+  def or[T /* <: AnonOr */, U](fn1: T, val2: U): T | U = js.native
   @JSName("or")
   def or_TU[T, U](a: T, b: U): T | U = js.native
   @JSName("or")
-  def or_T_AnonAOr[T /* <: AnonAOr */](fn1: T): js.Function1[/* val2 */ js.Any, T | _] = js.native
+  def or_T_AnonOr[T /* <: AnonOr */](fn1: T): js.Function1[/* val2 */ js.Any, T | _] = js.native
   def otherwise[A, B](onError: js.Function1[/* error */ js.Any, B | js.Promise[B]]): js.Function1[/* promise */ js.Promise[A], js.Promise[B]] = js.native
   def otherwise[A, B](onError: js.Function1[/* error */ js.Any, B | js.Promise[B]], promise: js.Promise[A]): js.Promise[B] = js.native
   def over(lens: Lens): js.Function2[/* fn */ Arity1Fn, /* value */ js.Any, _] = js.native
@@ -1174,13 +1174,13 @@ object mod extends js.Object {
   ] = js.native
   def prop[P /* <: String */](p: P): js.Function1[/* obj */ Record[P, _], _] = js.native
   def prop[P /* <: String */, T](p: P, obj: T): /* import warning: importer.ImportType#apply Failed type conversion: T[P] */ js.Any = js.native
-  def propEq(name: String): FnObj = js.native
-  def propEq(name: Double): FnObj = js.native
+  def propEq(name: String): FnCallValObj = js.native
+  def propEq(name: Double): FnCallValObj = js.native
   def propEq[T](name: String, `val`: T): js.Function1[/* obj */ js.Any, Boolean] = js.native
   def propEq[T](name: String, `val`: T, obj: js.Any): Boolean = js.native
   def propEq[T](name: Double, `val`: T): js.Function1[/* obj */ js.Any, Boolean] = js.native
   def propEq[T](name: Double, `val`: T, obj: js.Any): Boolean = js.native
-  def propIs(`type`: js.Any): FnName = js.native
+  def propIs(`type`: js.Any): FnCallNameObj = js.native
   def propIs(`type`: js.Any, name: String): js.Function1[/* obj */ js.Any, Boolean] = js.native
   def propIs(`type`: js.Any, name: String, obj: js.Any): Boolean = js.native
   def propOr[U](__ : Placeholder, p: String, obj: U): js.Function1[/* val */ js.Any, _] = js.native
@@ -1276,8 +1276,8 @@ object mod extends js.Object {
   def set(lens: Lens): js.Function2[/* a */ js.Any, /* obj */ js.Any, _] = js.native
   def set[U](lens: Lens, a: U): js.Function1[/* obj */ js.Any, _] = js.native
   def set[T, U](lens: Lens, a: U, obj: T): T = js.native
-  def slice(a: Double): FnB = js.native
-  def slice(a: Double, b: Double): FnListArray = js.native
+  def slice(a: Double): FnCallBList = js.native
+  def slice(a: Double, b: Double): FnCallList = js.native
   def slice(a: Double, b: Double, list: String): String = js.native
   def slice[T](a: Double, b: Double, list: js.Array[T]): js.Array[T] = js.native
   def sort[T](fn: js.Function2[/* a */ T, /* b */ T, Double]): js.Function1[/* list */ js.Array[T], js.Array[T]] = js.native
@@ -1290,10 +1290,10 @@ object mod extends js.Object {
   def split(sep: String, str: String): js.Array[String] = js.native
   def split(sep: RegExp): js.Function1[/* str */ String, js.Array[String]] = js.native
   def split(sep: RegExp, str: String): js.Array[String] = js.native
-  def splitAt(index: Double): FnListArrayString = js.native
+  def splitAt(index: Double): Fn0 = js.native
   def splitAt(index: Double, list: String): js.Tuple2[String, String] = js.native
   def splitAt[T](index: Double, list: js.Array[T]): js.Tuple2[js.Array[T], js.Array[T]] = js.native
-  def splitEvery(a: Double): FnListArrayStringT = js.native
+  def splitEvery(a: Double): Fn1 = js.native
   def splitEvery(a: Double, list: String): js.Array[String] = js.native
   def splitEvery[T](a: Double, list: js.Array[T]): js.Array[js.Array[T]] = js.native
   def splitWhen[T](pred: js.Function1[/* val */ T, Boolean]): js.Function1[/* list */ js.Array[_], js.Array[js.Array[_]]] = js.native
@@ -1315,10 +1315,10 @@ object mod extends js.Object {
   def symmetricDifferenceWith[T](pred: js.Function2[/* a */ T, /* b */ T, Boolean], list1: js.Array[T], list2: js.Array[T]): js.Array[T] = js.native
   def tail(list: String): String = js.native
   def tail[T /* <: js.Any */](list: js.Array[T]): js.Array[T] = js.native
-  def take(n: Double): FnXsArrayString = js.native
+  def take(n: Double): Fn2 = js.native
   def take(n: Double, xs: String): String = js.native
   def take[T](n: Double, xs: js.Array[T]): js.Array[T] = js.native
-  def takeLast(n: Double): FnXsArrayStringT = js.native
+  def takeLast(n: Double): Fn3 = js.native
   def takeLast(n: Double, xs: String): String = js.native
   def takeLast[T](n: Double, xs: js.Array[T]): js.Array[T] = js.native
   def takeLastWhile[T](pred: js.Function1[/* a */ T, Boolean]): js.Function1[/* list */ js.Array[_], js.Array[_]] = js.native

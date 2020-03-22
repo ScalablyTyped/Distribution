@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DescribeAccountLimitsAnswer extends js.Object {
   /**
-    * The maximum number of groups allowed for your AWS account. The default limit is 200 per AWS Region.
+    * The maximum number of groups allowed for your AWS account. The default is 200 groups per AWS Region.
     */
   var MaxNumberOfAutoScalingGroups: js.UndefOr[typings.awsSdk.autoscalingMod.MaxNumberOfAutoScalingGroups] = js.native
   /**
-    * The maximum number of launch configurations allowed for your AWS account. The default limit is 200 per AWS Region.
+    * The maximum number of launch configurations allowed for your AWS account. The default is 200 launch configurations per AWS Region.
     */
   var MaxNumberOfLaunchConfigurations: js.UndefOr[typings.awsSdk.autoscalingMod.MaxNumberOfLaunchConfigurations] = js.native
   /**

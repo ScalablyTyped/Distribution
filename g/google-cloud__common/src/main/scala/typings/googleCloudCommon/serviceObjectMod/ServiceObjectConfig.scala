@@ -27,6 +27,11 @@ trait ServiceObjectConfig extends js.Object {
     * object is Bucket.
     */
   var parent: ServiceObjectParent
+  /**
+    * For long running operations, how often should the client poll
+    * for completion.
+    */
+  var pollIntervalMs: js.UndefOr[Double] = js.undefined
 }
 
 object ServiceObjectConfig {
@@ -36,13 +41,15 @@ object ServiceObjectConfig {
     baseUrl: String = null,
     createMethod: js.Function = null,
     id: String = null,
-    methods: Methods = null
+    methods: Methods = null,
+    pollIntervalMs: Int | Double = null
   ): ServiceObjectConfig = {
     val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any])
     if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl.asInstanceOf[js.Any])
     if (createMethod != null) __obj.updateDynamic("createMethod")(createMethod.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (methods != null) __obj.updateDynamic("methods")(methods.asInstanceOf[js.Any])
+    if (pollIntervalMs != null) __obj.updateDynamic("pollIntervalMs")(pollIntervalMs.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceObjectConfig]
   }
 }

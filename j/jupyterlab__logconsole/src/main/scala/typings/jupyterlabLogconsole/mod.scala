@@ -1,8 +1,8 @@
 package typings.jupyterlabLogconsole
 
 import typings.jupyterlabLogconsole.loggerMod.LogOutputModel.IOptions
-import typings.phosphorCoreutils.mod.Token
-import typings.phosphorWidgets.mod.Widget
+import typings.luminoCoreutils.mod.Token
+import typings.luminoWidgets.mod.Widget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

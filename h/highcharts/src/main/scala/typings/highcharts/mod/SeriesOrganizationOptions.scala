@@ -8,7 +8,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.highcharts.mod.SeriesOptions because var conflicts: zIndex. Inlined id, index, legendIndex, mapData, name, stack, treemap, `type`, xAxis, yAxis */ trait SeriesOrganizationOptions
+- typings.highcharts.mod.SeriesOptions because var conflicts: zIndex. Inlined id, index, legendIndex, mapData, name, stack, `type`, xAxis, yAxis */ trait SeriesOrganizationOptions
   extends PlotOrganizationOptions
      with SeriesOptionsType {
   /**
@@ -24,7 +24,7 @@ import scala.scalajs.js.annotation._
     * data points exceeds the series' turboThreshold, this option is not
     * available. (see online documentation for example)
     */
-  var data: js.UndefOr[js.Array[SeriesOrganizationDataOptions]] = js.undefined
+  var data: js.UndefOr[js.Array[SeriesSankeyPointOptionsObject]] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) An id for the series. This can
     * be used after render time to get a pointer to the series object through
@@ -58,7 +58,7 @@ import scala.scalajs.js.annotation._
     * in an org chart are auto-generated instances of `Highcharts.Point`, but
     * options can be applied here and linked by the `id`.
     */
-  var nodes: js.UndefOr[js.Array[SeriesOrganizationNodesOptions]] = js.undefined
+  var nodes: js.UndefOr[js.Array[SeriesSankeyNodesOptionsObject]] = js.undefined
   /**
     * (Highcharts, Highstock) This option allows grouping series in a stacked
     * chart. The stack option can be a string or anything else, as long as the
@@ -66,7 +66,6 @@ import scala.scalajs.js.annotation._
     * string.
     */
   var stack: js.UndefOr[Double | String] = js.undefined
-  var treemap: js.UndefOr[SeriesTreemapOptions] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) This property is only in
     * TypeScript non-optional and might be `undefined` in series objects from
@@ -93,9 +92,9 @@ object SeriesOrganizationOptions {
   @scala.inline
   def apply(
     `type`: String | organization,
-    accessibility: js.Object | PlotOrganizationAccessibilityOptions = null,
+    accessibility: SeriesAccessibilityOptionsObject = null,
     allAreas: js.UndefOr[Boolean] = js.undefined,
-    animation: Boolean | AnimationOptionsObject | PlotOrganizationAnimationOptions = null,
+    animation: Boolean | AnimationOptionsObject = null,
     boostBlending: OptionsBoostBlendingValue = null,
     borderColor: ColorString = null,
     borderRadius: Int | Double = null,
@@ -109,15 +108,16 @@ object SeriesOrganizationOptions {
     compare: String = null,
     compareBase: `0` | `100` = null,
     compareStart: js.UndefOr[Boolean] = js.undefined,
-    connectors: PlotOrganizationConnectorsOptions = null,
+    connectors: SeriesConnectorsOptionsObject = null,
     cursor: String | CursorValue = null,
     curveFactor: js.UndefOr[scala.Nothing] = js.undefined,
-    data: js.Array[SeriesOrganizationDataOptions] = null,
-    dataGrouping: PlotOrganizationDataGroupingOptions = null,
-    dataLabels: PlotOrganizationDataLabelsOptions | SeriesOrganizationDataLabelsOptionsObject | js.Array[SeriesOrganizationDataLabelsOptionsObject] = null,
+    data: js.Array[SeriesSankeyPointOptionsObject] = null,
+    dataGrouping: DataGroupingOptionsObject = null,
+    dataLabels: SeriesOrganizationDataLabelsOptionsObject | js.Array[SeriesOrganizationDataLabelsOptionsObject] = null,
+    dataSorting: DataSortingOptionsObject | PlotOrganizationDataSortingOptions = null,
     description: String = null,
     enableMouseTracking: js.UndefOr[Boolean] = js.undefined,
-    events: PlotOrganizationEventsOptions = null,
+    events: SeriesEventsOptionsObject = null,
     getExtremesFromAll: js.UndefOr[Boolean] = js.undefined,
     hangingIndent: Int | Double = null,
     id: String = null,
@@ -125,9 +125,9 @@ object SeriesOrganizationOptions {
     index: Int | Double = null,
     joinBy: String | js.Array[String] = null,
     keys: js.Array[String] = null,
-    label: PlotOrganizationLabelOptions = null,
-    lastPrice: PlotOrganizationLastPriceOptions = null,
-    lastVisiblePrice: PlotOrganizationLastVisiblePriceOptions = null,
+    label: SeriesLabelOptionsObject = null,
+    lastPrice: SeriesLastPriceOptionsObject = null,
+    lastVisiblePrice: SeriesLastVisiblePriceOptionsObject = null,
     legendIndex: Int | Double = null,
     levels: js.Array[PlotOrganizationLevelsOptions] = null,
     linkColor: ColorString = null,
@@ -141,9 +141,9 @@ object SeriesOrganizationOptions {
     navigatorOptions: PlotSeriesOptions = null,
     nodePadding: Int | Double = null,
     nodeWidth: Int | Double = null,
-    nodes: js.Array[SeriesOrganizationNodesOptions] = null,
+    nodes: js.Array[SeriesSankeyNodesOptionsObject] = null,
     opacity: Int | Double = null,
-    point: PlotOrganizationPointOptions = null,
+    point: PlotSeriesPointOptions = null,
     pointDescriptionFormatter: js.Function = null,
     selected: js.UndefOr[Boolean] = js.undefined,
     showCheckbox: js.UndefOr[Boolean] = js.undefined,
@@ -151,10 +151,9 @@ object SeriesOrganizationOptions {
     showInNavigator: js.UndefOr[Boolean] = js.undefined,
     skipKeyboardNavigation: js.UndefOr[Boolean] = js.undefined,
     stack: Double | String = null,
-    states: PlotOrganizationStatesOptions = null,
+    states: SeriesStatesOptionsObject = null,
     stickyTracking: js.UndefOr[Boolean] = js.undefined,
-    tooltip: PlotOrganizationTooltipOptions = null,
-    treemap: SeriesTreemapOptions = null,
+    tooltip: SeriesTooltipOptionsObject = null,
     turboThreshold: Int | Double = null,
     visible: js.UndefOr[Boolean] = js.undefined,
     xAxis: Double | String = null,
@@ -185,6 +184,7 @@ object SeriesOrganizationOptions {
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (dataGrouping != null) __obj.updateDynamic("dataGrouping")(dataGrouping.asInstanceOf[js.Any])
     if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
+    if (dataSorting != null) __obj.updateDynamic("dataSorting")(dataSorting.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (!js.isUndefined(enableMouseTracking)) __obj.updateDynamic("enableMouseTracking")(enableMouseTracking.asInstanceOf[js.Any])
     if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
@@ -224,7 +224,6 @@ object SeriesOrganizationOptions {
     if (states != null) __obj.updateDynamic("states")(states.asInstanceOf[js.Any])
     if (!js.isUndefined(stickyTracking)) __obj.updateDynamic("stickyTracking")(stickyTracking.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (treemap != null) __obj.updateDynamic("treemap")(treemap.asInstanceOf[js.Any])
     if (turboThreshold != null) __obj.updateDynamic("turboThreshold")(turboThreshold.asInstanceOf[js.Any])
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     if (xAxis != null) __obj.updateDynamic("xAxis")(xAxis.asInstanceOf[js.Any])

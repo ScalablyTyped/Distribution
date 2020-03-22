@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation._
 @js.native
 object popupMod extends js.Object {
   @js.native
-  class default protected () extends AnonCallBackCallbackComponentDidMount {
+  class default protected () extends AnonComponentWillMount {
     def this(props: js.Any) = this()
   }
   
   @js.native
   object default
-    extends Instantiable1[/* props */ js.Any, AnonCallBackCallbackComponentDidMount] {
+    extends Instantiable1[/* props */ js.Any, AnonComponentWillMount] {
     var defaultProps: js.Any = js.native
   }
   

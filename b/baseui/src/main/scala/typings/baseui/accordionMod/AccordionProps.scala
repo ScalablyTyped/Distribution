@@ -1,6 +1,7 @@
 package typings.baseui.accordionMod
 
 import typings.baseui.AnonExpanded
+import typings.baseui.SharedPropsexpandednever
 import typings.baseui.baseuiStrings.expand
 import typings.react.mod.ReactNode
 import scala.scalajs.js
@@ -13,7 +14,7 @@ trait AccordionProps extends js.Object {
   var disabled: js.UndefOr[Boolean] = js.undefined
   var initialState: js.UndefOr[AccordionState] = js.undefined
   var onChange: js.UndefOr[js.Function1[/* args */ AnonExpanded, _]] = js.undefined
-  var overrides: js.UndefOr[AccordionOverrides[SharedProps with js.Object]] = js.undefined
+  var overrides: js.UndefOr[AccordionOverrides[SharedPropsexpandednever]] = js.undefined
   var renderAll: js.UndefOr[Boolean] = js.undefined
   var renderPanelContent: js.UndefOr[Boolean] = js.undefined
   var stateReducer: js.UndefOr[StateReducer[AccordionState]] = js.undefined
@@ -27,7 +28,7 @@ object AccordionProps {
     disabled: js.UndefOr[Boolean] = js.undefined,
     initialState: AccordionState = null,
     onChange: /* args */ AnonExpanded => _ = null,
-    overrides: AccordionOverrides[SharedProps with js.Object] = null,
+    overrides: AccordionOverrides[SharedPropsexpandednever] = null,
     renderAll: js.UndefOr[Boolean] = js.undefined,
     renderPanelContent: js.UndefOr[Boolean] = js.undefined,
     stateReducer: (expand, AccordionState, AccordionState) => AccordionState = null

@@ -112,6 +112,9 @@ object mendixmodelsdkStrings {
   sealed trait bidi extends LockType
   
   @js.native
+  sealed trait buildResult extends js.Object
+  
+  @js.native
   sealed trait commit extends LockType
   
   @js.native
@@ -193,6 +196,9 @@ object mendixmodelsdkStrings {
   sealed trait updating_ extends IUpdateAppJobStatus
   
   @js.native
+  sealed trait workingCopyData extends js.Object
+  
+  @js.native
   sealed trait zip extends js.Object
   
   @scala.inline
@@ -262,6 +268,8 @@ object mendixmodelsdkStrings {
   @scala.inline
   def bidi: bidi = "bidi".asInstanceOf[bidi]
   @scala.inline
+  def buildResult: buildResult = "buildResult".asInstanceOf[buildResult]
+  @scala.inline
   def commit: commit = "commit".asInstanceOf[commit]
   @scala.inline
   def consistencyerrors: consistencyerrors = "consistencyerrors".asInstanceOf[consistencyerrors]
@@ -315,6 +323,8 @@ object mendixmodelsdkStrings {
   def update: update = "update".asInstanceOf[update]
   @scala.inline
   def updating_ : updating_ = "updating".asInstanceOf[updating_]
+  @scala.inline
+  def workingCopyData: workingCopyData = "workingCopyData".asInstanceOf[workingCopyData]
   @scala.inline
   def zip: zip = "zip".asInstanceOf[zip]
 }

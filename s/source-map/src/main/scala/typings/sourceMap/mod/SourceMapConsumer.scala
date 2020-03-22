@@ -1,7 +1,8 @@
 package typings.sourceMap.mod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sourceMap.AnonBias
+import typings.sourceMap.MappedPositionbiasnumber
+import typings.sourceMap.Positionbiasnumber
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -76,7 +77,7 @@ trait SourceMapConsumer extends js.Object {
     *   - line: The line number in the generated source, or null.
     *   - column: The column number in the generated source, or null.
     */
-  def generatedPositionFor(originalPosition: MappedPosition with AnonBias): NullablePosition = js.native
+  def generatedPositionFor(originalPosition: MappedPositionbiasnumber): NullablePosition = js.native
   /**
     * Return true if we have the source content for every source in the source
     * map, false otherwise.
@@ -102,7 +103,7 @@ trait SourceMapConsumer extends js.Object {
     *   - column: The column number in the original source, or null.
     *   - name: The original identifier, or null.
     */
-  def originalPositionFor(generatedPosition: Position with AnonBias): NullableMappedPosition = js.native
+  def originalPositionFor(generatedPosition: Positionbiasnumber): NullableMappedPosition = js.native
   /**
     * Returns the original source content. The only argument is the url of the
     * original source file. Returns null if no original source content is

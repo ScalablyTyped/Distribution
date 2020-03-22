@@ -17,7 +17,7 @@ trait PropertyAccessExpression
   var expression: LeftHandSideExpression = js.native
   @JSName("kind")
   var kind_PropertyAccessExpression: typings.typescript.mod.SyntaxKind.PropertyAccessExpression = js.native
-  var name: js.UndefOr[DeclarationName | Identifier] = js.native
+  var name: js.UndefOr[DeclarationName | Identifier | PrivateIdentifier] = js.native
   var questionDotToken: js.UndefOr[QuestionDotToken] = js.native
 }
 

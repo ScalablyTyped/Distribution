@@ -11,7 +11,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ionic/angular/dist/directives/proxies", "IonBackButton")
+@JSImport("@ionic/angular/directives/proxies", "IonBackButton")
 @js.native
 class IonBackButton protected ()
   extends typings.ionicCore.componentsMod.Components.IonBackButton {

@@ -1,6 +1,6 @@
 package typings.reactOnsenui.mod
 
-import typings.reactOnsenui.HTMLAttributesidclassNamestyleisOpenbooleananimati
+import typings.reactOnsenui.HTMLAttributesidclassNameOnDeviceBackButton
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-onsenui", "Toast")
 @js.native
 class Toast ()
-  extends typings.react.mod.Component[HTMLAttributesidclassNamestyleisOpenbooleananimati, js.Any, js.Any]
+  extends typings.react.mod.Component[HTMLAttributesidclassNameOnDeviceBackButton, js.Any, js.Any]
 

@@ -1,6 +1,8 @@
 package typings.oracleOraclejet
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.oracleOraclejet.oracleOraclejetStrings.close
+import typings.oracleOraclejet.oracleOraclejetStrings.open
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -8,7 +10,7 @@ import scala.scalajs.js.annotation._
 
 trait AnonActionElement
   extends /* propName */ StringDictionary[js.Any] {
-  var action: String
+  var action: open | close
   var element: Element
   def endCallback(): Unit
 }
@@ -16,7 +18,7 @@ trait AnonActionElement
 object AnonActionElement {
   @scala.inline
   def apply(
-    action: String,
+    action: open | close,
     element: Element,
     endCallback: () => Unit,
     StringDictionary: /* propName */ StringDictionary[js.Any] = null

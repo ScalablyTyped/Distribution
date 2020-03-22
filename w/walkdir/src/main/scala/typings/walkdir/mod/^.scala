@@ -2,9 +2,9 @@ package typings.walkdir.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.node.fsMod.Stats
-import typings.walkdir.AnonFalse
-import typings.walkdir.AnonFalseSync
-import typings.walkdir.AnonReturnobject
+import typings.walkdir.syncfalseWalkOptions
+import typings.walkdir.synctruereturnobjectfalse
+import typings.walkdir.synctruereturnobjecttrueW
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,15 +13,15 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(path: String): WalkEmitter = js.native
-  def apply(path: String, options: AnonReturnobject with WalkOptions): StringDictionary[Stats] = js.native
-  def apply(path: String, options: AnonFalseSync with WalkOptions): WalkEmitter = js.native
-  def apply(path: String, options: AnonFalse with WalkOptions): js.Array[String] = js.native
-  def apply(path: String, options: AnonFalseSync with WalkOptions, eventListener: WalkEventListener): WalkEmitter = js.native
-  def apply(path: String, options: AnonReturnobject with WalkOptions, eventListener: WalkEventListener): StringDictionary[Stats] = js.native
-  def apply(path: String, options: AnonFalse with WalkOptions, eventListener: WalkEventListener): js.Array[String] = js.native
   def apply(path: String, options: WalkEventListener): WalkEmitter = js.native
   def apply(path: String, options: WalkEventListener, eventListener: WalkEventListener): WalkEmitter = js.native
   def apply(path: String, options: WalkOptions): WalkEmitter | js.Array[String] | StringDictionary[Stats] = js.native
   def apply(path: String, options: WalkOptions, eventListener: WalkEventListener): WalkEmitter | js.Array[String] | StringDictionary[Stats] = js.native
+  def apply(path: String, options: syncfalseWalkOptions): WalkEmitter = js.native
+  def apply(path: String, options: syncfalseWalkOptions, eventListener: WalkEventListener): WalkEmitter = js.native
+  def apply(path: String, options: synctruereturnobjectfalse): js.Array[String] = js.native
+  def apply(path: String, options: synctruereturnobjectfalse, eventListener: WalkEventListener): js.Array[String] = js.native
+  def apply(path: String, options: synctruereturnobjecttrueW): StringDictionary[Stats] = js.native
+  def apply(path: String, options: synctruereturnobjecttrueW, eventListener: WalkEventListener): StringDictionary[Stats] = js.native
 }
 

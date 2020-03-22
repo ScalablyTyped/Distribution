@@ -1,7 +1,6 @@
 package typings.three
 
 import typings.std.ArrayLike
-import typings.three.bufferAttributeMod.BufferAttribute
 import typings.three.eulerMod.Euler
 import typings.three.matrix3Mod.Matrix
 import typings.three.quaternionMod.Quaternion
@@ -16,13 +15,6 @@ object matrix4Mod extends js.Object {
   @js.native
   class Matrix4 () extends Matrix {
     /**
-    	 * @deprecated Use {@link Matrix4#applyToBufferAttribute matrix4.applyToBufferAttribute( attribute )} instead.
-    	 */
-    def applyToBuffer(buffer: BufferAttribute): BufferAttribute = js.native
-    def applyToBuffer(buffer: BufferAttribute, offset: Double): BufferAttribute = js.native
-    def applyToBuffer(buffer: BufferAttribute, offset: Double, length: Double): BufferAttribute = js.native
-    def applyToBufferAttribute(attribute: BufferAttribute): BufferAttribute = js.native
-    /**
     	 * Sets this matrix to the transformation composed of translation, rotation and scale.
     	 */
     def compose(translation: Vector3, rotation: Quaternion, scale: Vector3): Matrix4 = js.native
@@ -36,10 +28,10 @@ object matrix4Mod extends js.Object {
     	 * Decomposes this matrix into the translation, rotation and scale components.
     	 * If parameters are not passed, new instances will be created.
     	 */
-    def decompose(): js.Array[js.Object] = js.native
-    def decompose(translation: Vector3): js.Array[js.Object] = js.native
-    def decompose(translation: Vector3, rotation: Quaternion): js.Array[js.Object] = js.native
-    def decompose(translation: Vector3, rotation: Quaternion, scale: Vector3): js.Array[js.Object] = js.native
+    def decompose(): Matrix4 = js.native
+    def decompose(translation: Vector3): Matrix4 = js.native
+    def decompose(translation: Vector3, rotation: Quaternion): Matrix4 = js.native
+    def decompose(translation: Vector3, rotation: Quaternion, scale: Vector3): Matrix4 = js.native
     def equals(matrix: Matrix4): Boolean = js.native
     def extractBasis(xAxis: Vector3, yAxis: Vector3, zAxis: Vector3): Matrix4 = js.native
     /**
@@ -88,7 +80,6 @@ object matrix4Mod extends js.Object {
     	 * Creates a perspective projection matrix.
     	 */
     def makePerspective(fov: Double, aspect: Double, near: Double, far: Double): Matrix4 = js.native
-     // [Vector3, Quaternion, Vector3]
     /**
     	 * Creates a frustum matrix.
     	 */

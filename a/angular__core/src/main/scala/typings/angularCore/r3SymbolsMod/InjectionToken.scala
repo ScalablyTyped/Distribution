@@ -46,14 +46,14 @@ import scala.scalajs.js.annotation._
   */
 trait InjectionToken[T] extends js.Object {
   var _desc: String
-  val ngInjectableDef: js.UndefOr[scala.Nothing] = js.undefined
+  val ɵprov: js.UndefOr[scala.Nothing] = js.undefined
 }
 
 object InjectionToken {
   @scala.inline
-  def apply[T](_desc: String, ngInjectableDef: js.UndefOr[scala.Nothing] = js.undefined): InjectionToken[T] = {
+  def apply[T](_desc: String, ɵprov: js.UndefOr[scala.Nothing] = js.undefined): InjectionToken[T] = {
     val __obj = js.Dynamic.literal(_desc = _desc.asInstanceOf[js.Any])
-    if (!js.isUndefined(ngInjectableDef)) __obj.updateDynamic("ngInjectableDef")(ngInjectableDef.asInstanceOf[js.Any])
+    if (!js.isUndefined(ɵprov)) __obj.updateDynamic("\u0275prov")(ɵprov.asInstanceOf[js.Any])
     __obj.asInstanceOf[InjectionToken[T]]
   }
 }

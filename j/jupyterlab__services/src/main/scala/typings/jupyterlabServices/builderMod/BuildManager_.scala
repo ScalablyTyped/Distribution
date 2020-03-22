@@ -16,17 +16,9 @@ class BuildManager_ () extends js.Object {
   def this(options: IOptions) = this()
   var _url: js.Any = js.native
   /**
-    * Test whether the build service is available.
-    */
-  val isAvailable: Boolean = js.native
-  /**
     * The server settings used to make API requests.
     */
   val serverSettings: ISettings = js.native
-  /**
-    * Test whether to check build status automatically.
-    */
-  val shouldCheck: Boolean = js.native
   /**
     * Build the application.
     */
@@ -39,5 +31,13 @@ class BuildManager_ () extends js.Object {
     * Get whether the application should be built.
     */
   def getStatus(): js.Promise[IStatus] = js.native
+  /**
+    * Test whether the build service is available.
+    */
+  def isAvailable(): Boolean = js.native
+  /**
+    * Test whether to check build status automatically.
+    */
+  def shouldCheck(): Boolean = js.native
 }
 

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "node-sql-parser" : "1.7.1"
+      "node-sql-parser" : "1.7.4"
     }
   ],
   "test-dependencies" : [
     {
-      "node-sql-parser" : "1.7.1"
+      "node-sql-parser" : "1.7.4"
     }
   ],
   "compile-devDependencies" : [

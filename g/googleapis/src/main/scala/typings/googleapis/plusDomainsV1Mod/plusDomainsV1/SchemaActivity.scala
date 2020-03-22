@@ -1,6 +1,6 @@
 package typings.googleapis.plusDomainsV1Mod.plusDomainsV1
 
-import typings.googleapis.AnonActorAttachments
+import typings.googleapis.AnonAttachments
 import typings.googleapis.AnonClientSpecificActorInfo
 import typings.googleapis.AnonTitle
 import scala.scalajs.js
@@ -56,7 +56,7 @@ trait SchemaActivity extends js.Object {
   /**
     * The object of this activity.
     */
-  var `object`: js.UndefOr[AnonActorAttachments] = js.native
+  var `object`: js.UndefOr[AnonAttachments] = js.native
   /**
     * ID of the place where this activity occurred.
     */
@@ -114,7 +114,7 @@ object SchemaActivity {
     id: String = null,
     kind: String = null,
     location: SchemaPlace = null,
-    `object`: AnonActorAttachments = null,
+    `object`: AnonAttachments = null,
     placeId: String = null,
     placeName: String = null,
     provider: AnonTitle = null,

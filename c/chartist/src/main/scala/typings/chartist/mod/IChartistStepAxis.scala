@@ -1,6 +1,6 @@
 package typings.chartist.mod
 
-import typings.chartist.AnonXY
+import typings.chartist.AnonY
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ object IChartistStepAxis {
   @scala.inline
   def apply(
     labelInterpolationFnc: js.Function = null,
-    labelOffset: AnonXY = null,
+    labelOffset: AnonY = null,
     offset: Int | Double = null,
     position: String = null,
     showGrid: js.UndefOr[Boolean] = js.undefined,

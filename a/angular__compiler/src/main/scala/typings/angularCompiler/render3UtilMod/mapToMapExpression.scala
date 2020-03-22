@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler/src/render3/util", "mapToMapExpression")
 @js.native
 object mapToMapExpression extends js.Object {
-  def apply(map: StringDictionary[Expression]): LiteralMapExpr = js.native
+  def apply(map: StringDictionary[js.UndefOr[Expression]]): LiteralMapExpr = js.native
 }
 

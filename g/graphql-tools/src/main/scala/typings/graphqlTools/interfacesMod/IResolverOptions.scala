@@ -8,7 +8,7 @@ import typings.graphql.definitionMod.GraphQLResolveInfo
 import typings.graphql.definitionMod.GraphQLTypeResolver
 import typings.graphql.maybeMod.Maybe
 import typings.graphql.promiseOrValueMod.PromiseOrValue
-import typings.graphqlTools.AnonMergeInfo
+import typings.graphqlTools.GraphQLResolveInfomergeIn
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,8 +27,8 @@ object IResolverOptions {
     __isTypeOf: (TSource, TContext, /* info */ GraphQLResolveInfo) => PromiseOrValue[Boolean] = null,
     __resolveType: (TSource, TContext, /* info */ GraphQLResolveInfo, /* abstractType */ GraphQLAbstractType) => PromiseOrValue[Maybe[(GraphQLObjectType[TSource, TContext, StringDictionary[_]]) | String]] = null,
     fragment: String = null,
-    resolve: (TSource, TArgs, TContext, /* info */ GraphQLResolveInfo with AnonMergeInfo) => js.Any = null,
-    subscribe: (TSource, TArgs, TContext, /* info */ GraphQLResolveInfo with AnonMergeInfo) => js.Any = null
+    resolve: (TSource, TArgs, TContext, /* info */ GraphQLResolveInfomergeIn) => js.Any = null,
+    subscribe: (TSource, TArgs, TContext, /* info */ GraphQLResolveInfomergeIn) => js.Any = null
   ): IResolverOptions[TSource, TContext, TArgs] = {
     val __obj = js.Dynamic.literal()
     if (__isTypeOf != null) __obj.updateDynamic("__isTypeOf")(js.Any.fromFunction3(__isTypeOf))

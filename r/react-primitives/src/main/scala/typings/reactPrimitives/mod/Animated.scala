@@ -4,7 +4,7 @@ import typings.react.mod.Component
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import typings.react.mod.FunctionComponent
-import typings.reactNative.AnonXY
+import typings.reactNative.AnonY
 import typings.reactNative.mod.Animated.AnimatedComponent
 import typings.reactNative.mod.Animated.AnimatedValue
 import typings.reactNative.mod.Animated.AnimatedValueXY
@@ -70,7 +70,7 @@ object Animated extends js.Object {
   @js.native
   class ValueXY ()
     extends typings.reactNative.mod.Animated.ValueXY {
-    def this(valueIn: AnonXY) = this()
+    def this(valueIn: AnonY) = this()
   }
   
   val FlatList: AnimatedComponent[typings.reactNative.mod.FlatList[js.Any]] = js.native

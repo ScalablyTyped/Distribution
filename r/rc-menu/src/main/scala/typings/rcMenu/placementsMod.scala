@@ -23,5 +23,13 @@ object placementsMod extends js.Object {
     var topLeft: AnonOffset = js.native
   }
   
+  @js.native
+  object placementsRtl extends js.Object {
+    var bottomLeft: AnonOffset = js.native
+    var leftTop: AnonOffset = js.native
+    var rightTop: AnonOffset = js.native
+    var topLeft: AnonOffset = js.native
+  }
+  
 }
 

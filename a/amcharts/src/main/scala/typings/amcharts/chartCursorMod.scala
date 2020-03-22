@@ -107,7 +107,7 @@ object chartCursorMod extends js.Object {
       * "selected", "zoomed", "zoomStarted".
       * @param handler The event handler.
       */
-    def addListener(`type`: String, handler: js.Function1[/* e */ AnonChartDelta2X, Unit]): Unit = js.native
+    def addListener(`type`: String, handler: js.Function1[/* e */ AnonDelta2X, Unit]): Unit = js.native
     /**
       * Hides cursor.
       */

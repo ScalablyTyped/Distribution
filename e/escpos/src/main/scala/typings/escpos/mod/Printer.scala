@@ -1,9 +1,9 @@
 package typings.escpos.mod
 
-import typings.escpos.AnonA
 import typings.escpos.AnonAlign
-import typings.escpos.AnonAlignCENTER
+import typings.escpos.AnonCols
 import typings.escpos.AnonEncoding
+import typings.escpos.AnonFont
 import typings.escpos.AnonMode
 import typings.escpos.escposNumbers.`0`
 import typings.escpos.escposNumbers.`1`
@@ -22,7 +22,7 @@ class Printer protected () extends js.Object {
   def this(adapter: Adapter, options: AnonEncoding) = this()
   def align(align: TXT_ALIGN): Printer = js.native
   def barcode(code: String, `type`: BARCODE_TYPE): Printer = js.native
-  def barcode(code: String, `type`: BARCODE_TYPE, options: AnonA): Printer = js.native
+  def barcode(code: String, `type`: BARCODE_TYPE, options: AnonFont): Printer = js.native
   /**
     * Printer Buzzer (Beep sound)
     */
@@ -159,9 +159,9 @@ class Printer protected () extends js.Object {
   def table(data: js.Array[String]): Printer = js.native
   def table(data: js.Array[String], encoding: String): Printer = js.native
   def tableCustom(data: AnonAlign): Printer = js.native
-  def tableCustom(data: AnonAlignCENTER): Printer = js.native
-  def tableCustom(data: AnonAlignCENTER, encoding: String): Printer = js.native
   def tableCustom(data: AnonAlign, encoding: String): Printer = js.native
+  def tableCustom(data: AnonCols): Printer = js.native
+  def tableCustom(data: AnonCols, encoding: String): Printer = js.native
   /**
     * Print text with EOL
     */

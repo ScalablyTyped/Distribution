@@ -1,12 +1,12 @@
 package typings.inversify.interfacesMod.interfaces
 
-import typings.inversify.AnonArgs
+import typings.inversify.AnonInstantiable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait BindingToSyntax[T] extends js.Object {
-  def to(constructor: AnonArgs[T]): BindingInWhenOnSyntax[T]
+  def to(constructor: AnonInstantiable[T]): BindingInWhenOnSyntax[T]
   def toAutoFactory[T2](serviceIdentifier: ServiceIdentifier[T2]): BindingWhenOnSyntax[T]
   def toConstantValue(value: T): BindingWhenOnSyntax[T]
   def toConstructor[T2](constructor: Newable[T2]): BindingWhenOnSyntax[T]
@@ -21,7 +21,7 @@ trait BindingToSyntax[T] extends js.Object {
 object BindingToSyntax {
   @scala.inline
   def apply[T](
-    to: AnonArgs[T] => BindingInWhenOnSyntax[T],
+    to: AnonInstantiable[T] => BindingInWhenOnSyntax[T],
     toAutoFactory: ServiceIdentifier[js.Any] => BindingWhenOnSyntax[T],
     toConstantValue: T => BindingWhenOnSyntax[T],
     toConstructor: Newable[js.Any] => BindingWhenOnSyntax[T],

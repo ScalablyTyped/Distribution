@@ -13,6 +13,7 @@ trait Box
   extends _FinalBgLayer[js.Any]
      with _BackgroundClipProperty
      with _BackgroundOriginProperty
+     with _MaskOriginProperty
      with _ShapeOutsideProperty
      with _WebkitMaskClipProperty
      with _WebkitMaskOriginProperty

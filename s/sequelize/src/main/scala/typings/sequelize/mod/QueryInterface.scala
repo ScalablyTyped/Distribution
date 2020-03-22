@@ -1,10 +1,10 @@
 package typings.sequelize.mod
 
-import typings.sequelize.AnonFieldsArray
 import typings.sequelize.AnonLogging
 import typings.sequelize.AnonSchema
 import typings.sequelize.AnonSchemaTableName
-import typings.sequelize.AnonSchemaTableNameString
+import typings.sequelize.AnonTableName
+import typings.sequelize.DefineIndexOptionsfieldsA
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -40,16 +40,11 @@ trait QueryInterface extends js.Object {
     attribute: DefineAttributeColumnOptions,
     options: QueryInterfaceOptions
   ): typings.bluebird.mod.^[Unit] = js.native
-  def addColumn(tableName: AnonSchemaTableName, key: String, attribute: DataTypeAbstract): typings.bluebird.mod.^[Unit] = js.native
+  def addColumn(tableName: AnonTableName, key: String, attribute: DataTypeAbstract): typings.bluebird.mod.^[Unit] = js.native
+  def addColumn(tableName: AnonTableName, key: String, attribute: DataTypeAbstract, options: QueryInterfaceOptions): typings.bluebird.mod.^[Unit] = js.native
+  def addColumn(tableName: AnonTableName, key: String, attribute: DefineAttributeColumnOptions): typings.bluebird.mod.^[Unit] = js.native
   def addColumn(
-    tableName: AnonSchemaTableName,
-    key: String,
-    attribute: DataTypeAbstract,
-    options: QueryInterfaceOptions
-  ): typings.bluebird.mod.^[Unit] = js.native
-  def addColumn(tableName: AnonSchemaTableName, key: String, attribute: DefineAttributeColumnOptions): typings.bluebird.mod.^[Unit] = js.native
-  def addColumn(
-    tableName: AnonSchemaTableName,
+    tableName: AnonTableName,
     key: String,
     attribute: DefineAttributeColumnOptions,
     options: QueryInterfaceOptions
@@ -66,8 +61,8 @@ trait QueryInterface extends js.Object {
   /**
     * Adds a new index to a table
     */
-  def addIndex(tableName: String, options: DefineIndexOptions with AnonFieldsArray): typings.bluebird.mod.^[Unit] = js.native
-  def addIndex(tableName: String, options: DefineIndexOptions with AnonFieldsArray, rawTablename: String): typings.bluebird.mod.^[Unit] = js.native
+  def addIndex(tableName: String, options: DefineIndexOptionsfieldsA): typings.bluebird.mod.^[Unit] = js.native
+  def addIndex(tableName: String, options: DefineIndexOptionsfieldsA, rawTablename: String): typings.bluebird.mod.^[Unit] = js.native
   def addIndex(tableName: js.Object, attributes: js.Array[String]): typings.bluebird.mod.^[Unit] = js.native
   def addIndex(tableName: js.Object, attributes: js.Array[String], options: DefineIndexOptions): typings.bluebird.mod.^[Unit] = js.native
   def addIndex(
@@ -76,8 +71,8 @@ trait QueryInterface extends js.Object {
     options: DefineIndexOptions,
     rawTablename: String
   ): typings.bluebird.mod.^[Unit] = js.native
-  def addIndex(tableName: js.Object, options: DefineIndexOptions with AnonFieldsArray): typings.bluebird.mod.^[Unit] = js.native
-  def addIndex(tableName: js.Object, options: DefineIndexOptions with AnonFieldsArray, rawTablename: String): typings.bluebird.mod.^[Unit] = js.native
+  def addIndex(tableName: js.Object, options: DefineIndexOptionsfieldsA): typings.bluebird.mod.^[Unit] = js.native
+  def addIndex(tableName: js.Object, options: DefineIndexOptionsfieldsA, rawTablename: String): typings.bluebird.mod.^[Unit] = js.native
   /**
     * Deletes multiple rows at once
     */
@@ -96,16 +91,16 @@ trait QueryInterface extends js.Object {
     options: QueryOptions,
     attributes: js.Array[String]
   ): typings.bluebird.mod.^[js.Object] = js.native
-  def bulkInsert(tableName: AnonSchemaTableNameString, records: js.Array[js.Object]): typings.bluebird.mod.^[js.Object] = js.native
-  def bulkInsert(tableName: AnonSchemaTableNameString, records: js.Array[js.Object], options: QueryOptions): typings.bluebird.mod.^[js.Object] = js.native
+  def bulkInsert(tableName: AnonSchemaTableName, records: js.Array[js.Object]): typings.bluebird.mod.^[js.Object] = js.native
+  def bulkInsert(tableName: AnonSchemaTableName, records: js.Array[js.Object], options: QueryOptions): typings.bluebird.mod.^[js.Object] = js.native
   def bulkInsert(
-    tableName: AnonSchemaTableNameString,
+    tableName: AnonSchemaTableName,
     records: js.Array[js.Object],
     options: QueryOptions,
     attributes: String
   ): typings.bluebird.mod.^[js.Object] = js.native
   def bulkInsert(
-    tableName: AnonSchemaTableNameString,
+    tableName: AnonSchemaTableName,
     records: js.Array[js.Object],
     options: QueryOptions,
     attributes: js.Array[String]
@@ -367,8 +362,8 @@ trait QueryInterface extends js.Object {
     */
   def removeColumn(tableName: String, attribute: String): typings.bluebird.mod.^[Unit] = js.native
   def removeColumn(tableName: String, attribute: String, options: QueryInterfaceOptions): typings.bluebird.mod.^[Unit] = js.native
-  def removeColumn(tableName: AnonSchemaTableName, attribute: String): typings.bluebird.mod.^[Unit] = js.native
-  def removeColumn(tableName: AnonSchemaTableName, attribute: String, options: QueryInterfaceOptions): typings.bluebird.mod.^[Unit] = js.native
+  def removeColumn(tableName: AnonTableName, attribute: String): typings.bluebird.mod.^[Unit] = js.native
+  def removeColumn(tableName: AnonTableName, attribute: String, options: QueryInterfaceOptions): typings.bluebird.mod.^[Unit] = js.native
   /**
     * Removes constraints from a table
     */

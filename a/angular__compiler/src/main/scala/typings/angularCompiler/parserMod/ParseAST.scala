@@ -1,6 +1,7 @@
 package typings.angularCompiler.parserMod
 
 import typings.angularCompiler.astMod.AST
+import typings.angularCompiler.astMod.AbsoluteSourceSpan
 import typings.angularCompiler.astMod.BindingPipe
 import typings.angularCompiler.astMod.LiteralMap
 import typings.angularCompiler.astMod.ParseSpan
@@ -27,17 +28,16 @@ class ParseAST protected () extends js.Object {
   var errors: js.Any = js.native
   var index: Double = js.native
   var input: String = js.native
-  val inputIndex: Double = js.native
   var inputLength: Double = js.native
   var location: js.Any = js.native
   var locationText: js.Any = js.native
-  val next: Token = js.native
   var offset: js.Any = js.native
   var parseAction: Boolean = js.native
   var rbracesExpected: js.Any = js.native
   var rbracketsExpected: js.Any = js.native
   var rparensExpected: js.Any = js.native
   var skip: js.Any = js.native
+  var sourceSpanCache: js.Any = js.native
   var tokens: js.Array[Token] = js.native
   def advance(): Unit = js.native
   def error(message: String): Unit = js.native
@@ -50,6 +50,8 @@ class ParseAST protected () extends js.Object {
     * An identifier, a keyword, a string with an optional `-` in between.
     */
   def expectTemplateBindingKey(): String = js.native
+  def inputIndex(): Double = js.native
+  def next(): Token = js.native
   def optionalCharacter(code: Double): Boolean = js.native
   def optionalOperator(op: String): Boolean = js.native
   def parseAccessMemberOrMethodCall(receiver: AST): AST = js.native
@@ -74,6 +76,7 @@ class ParseAST protected () extends js.Object {
   def peek(offset: Double): Token = js.native
   def peekKeywordAs(): Boolean = js.native
   def peekKeywordLet(): Boolean = js.native
+  def sourceSpan(start: Double): AbsoluteSourceSpan = js.native
   def span(start: Double): ParseSpan = js.native
 }
 

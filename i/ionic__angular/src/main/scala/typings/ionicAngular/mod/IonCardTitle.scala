@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/angular", "IonCardTitle")
 @js.native
 class IonCardTitle protected ()
-  extends typings.ionicAngular.distMod.IonCardTitle {
+  extends typings.ionicAngular.proxiesMod.IonCardTitle {
   def this(c: ChangeDetectorRef, r: ElementRef[_], z: NgZone) = this()
 }
 

@@ -1,5 +1,6 @@
 package typings.antd.cascaderMod
 
+import typings.antd.sizeContextMod.SizeType
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
 import typings.std.HTMLElement
@@ -10,6 +11,8 @@ import scala.scalajs.js.annotation._
 trait CascaderProps extends js.Object {
   /** 是否支持清除 */
   var allowClear: js.UndefOr[Boolean] = js.undefined
+  /** whether has border style */
+  var bordered: js.UndefOr[Boolean] = js.undefined
   /** 当此项为 true 时，点选每级菜单选项值都会发生变化 */
   var changeOnSelect: js.UndefOr[Boolean] = js.undefined
   /** 自定义类名 */
@@ -30,8 +33,6 @@ trait CascaderProps extends js.Object {
   var expandTrigger: js.UndefOr[CascaderExpandTrigger] = js.undefined
   /** use this after antd@3.7.0 */
   var fieldNames: js.UndefOr[FieldNamesType] = js.undefined
-  /** typo props name before antd@3.7.0 */
-  var filedNames: js.UndefOr[FieldNamesType] = js.undefined
   var getPopupContainer: js.UndefOr[js.Function1[/* triggerNode */ HTMLElement, HTMLElement]] = js.undefined
   var inputPrefixCls: js.UndefOr[String] = js.undefined
   var loadData: js.UndefOr[
@@ -60,7 +61,7 @@ trait CascaderProps extends js.Object {
   var prefixCls: js.UndefOr[String] = js.undefined
   var showSearch: js.UndefOr[Boolean | ShowSearchType] = js.undefined
   /** 输入框大小，可选 `large` `default` `small` */
-  var size: js.UndefOr[String] = js.undefined
+  var size: js.UndefOr[SizeType] = js.undefined
   /** 自定义样式 */
   var style: js.UndefOr[CSSProperties] = js.undefined
   var suffixIcon: js.UndefOr[ReactNode] = js.undefined
@@ -73,6 +74,7 @@ object CascaderProps {
   def apply(
     options: js.Array[CascaderOptionType],
     allowClear: js.UndefOr[Boolean] = js.undefined,
+    bordered: js.UndefOr[Boolean] = js.undefined,
     changeOnSelect: js.UndefOr[Boolean] = js.undefined,
     className: String = null,
     defaultValue: js.Array[String] = null,
@@ -80,7 +82,6 @@ object CascaderProps {
     displayRender: (/* label */ js.Array[String], /* selectedOptions */ js.UndefOr[js.Array[CascaderOptionType]]) => ReactNode = null,
     expandTrigger: CascaderExpandTrigger = null,
     fieldNames: FieldNamesType = null,
-    filedNames: FieldNamesType = null,
     getPopupContainer: /* triggerNode */ HTMLElement => HTMLElement = null,
     inputPrefixCls: String = null,
     loadData: /* selectedOptions */ js.UndefOr[js.Array[CascaderOptionType]] => Unit = null,
@@ -93,13 +94,14 @@ object CascaderProps {
     popupVisible: js.UndefOr[Boolean] = js.undefined,
     prefixCls: String = null,
     showSearch: Boolean | ShowSearchType = null,
-    size: String = null,
+    size: SizeType = null,
     style: CSSProperties = null,
     suffixIcon: ReactNode = null,
     value: js.Array[String] = null
   ): CascaderProps = {
     val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
     if (!js.isUndefined(allowClear)) __obj.updateDynamic("allowClear")(allowClear.asInstanceOf[js.Any])
+    if (!js.isUndefined(bordered)) __obj.updateDynamic("bordered")(bordered.asInstanceOf[js.Any])
     if (!js.isUndefined(changeOnSelect)) __obj.updateDynamic("changeOnSelect")(changeOnSelect.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
@@ -107,7 +109,6 @@ object CascaderProps {
     if (displayRender != null) __obj.updateDynamic("displayRender")(js.Any.fromFunction2(displayRender))
     if (expandTrigger != null) __obj.updateDynamic("expandTrigger")(expandTrigger.asInstanceOf[js.Any])
     if (fieldNames != null) __obj.updateDynamic("fieldNames")(fieldNames.asInstanceOf[js.Any])
-    if (filedNames != null) __obj.updateDynamic("filedNames")(filedNames.asInstanceOf[js.Any])
     if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(js.Any.fromFunction1(getPopupContainer))
     if (inputPrefixCls != null) __obj.updateDynamic("inputPrefixCls")(inputPrefixCls.asInstanceOf[js.Any])
     if (loadData != null) __obj.updateDynamic("loadData")(js.Any.fromFunction1(loadData))

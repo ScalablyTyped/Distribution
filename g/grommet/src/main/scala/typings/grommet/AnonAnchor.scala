@@ -1,15 +1,11 @@
 package typings.grommet
 
-import typings.grommet.grommetStrings.center
-import typings.grommet.grommetStrings.curved
-import typings.grommet.grommetStrings.direct
+import typings.grommet.diagramMod.DiagramConnectionAnchor
+import typings.grommet.diagramMod.DiagramConnectionType
 import typings.grommet.grommetStrings.hair
-import typings.grommet.grommetStrings.horizontal
 import typings.grommet.grommetStrings.large
 import typings.grommet.grommetStrings.medium
-import typings.grommet.grommetStrings.rectilinear
 import typings.grommet.grommetStrings.small
-import typings.grommet.grommetStrings.vertical
 import typings.grommet.grommetStrings.xsmall
 import typings.grommet.grommetStrings.xxsmall
 import typings.grommet.utilsMod.ColorType
@@ -18,14 +14,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonAnchor extends js.Object {
-  var anchor: js.UndefOr[center | vertical | horizontal] = js.undefined
+  var anchor: js.UndefOr[DiagramConnectionAnchor] = js.undefined
   var color: js.UndefOr[ColorType] = js.undefined
   var fromTarget: String | js.Object
   var label: js.UndefOr[String] = js.undefined
   var offset: js.UndefOr[xsmall | small | medium | large | String] = js.undefined
   var thickness: js.UndefOr[hair | xxsmall | xsmall | small | medium | large | String] = js.undefined
   var toTarget: String | js.Object
-  var `type`: js.UndefOr[direct | curved | rectilinear] = js.undefined
+  var `type`: js.UndefOr[DiagramConnectionType] = js.undefined
 }
 
 object AnonAnchor {
@@ -33,12 +29,12 @@ object AnonAnchor {
   def apply(
     fromTarget: String | js.Object,
     toTarget: String | js.Object,
-    anchor: center | vertical | horizontal = null,
+    anchor: DiagramConnectionAnchor = null,
     color: ColorType = null,
     label: String = null,
     offset: xsmall | small | medium | large | String = null,
     thickness: hair | xxsmall | xsmall | small | medium | large | String = null,
-    `type`: direct | curved | rectilinear = null
+    `type`: DiagramConnectionType = null
   ): AnonAnchor = {
     val __obj = js.Dynamic.literal(fromTarget = fromTarget.asInstanceOf[js.Any], toTarget = toTarget.asInstanceOf[js.Any])
     if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])

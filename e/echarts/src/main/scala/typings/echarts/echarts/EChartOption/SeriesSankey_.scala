@@ -1,11 +1,11 @@
 package typings.echarts.echarts.EChartOption
 
-import typings.echarts.AnonAlignBackgroundColorBorderColor
-import typings.echarts.AnonBackgroundColorBorderColor
-import typings.echarts.AnonBorderColorBorderType
-import typings.echarts.AnonColorCurvenessOpacityShadowBlur
-import typings.echarts.AnonEmphasisLineStyle
+import typings.echarts.AnonBorderRadius
+import typings.echarts.AnonBorderType
+import typings.echarts.AnonCurvenessOpacity
+import typings.echarts.AnonExtraCssText
 import typings.echarts.AnonItemStyleLabelLineStyle
+import typings.echarts.AnonTarget
 import typings.echarts.echarts.EChartOption.SeriesSankey.DataObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -261,14 +261,14 @@ trait SeriesSankey_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-sankey.itemStyle
     */
-  var itemStyle: js.UndefOr[AnonBorderColorBorderType] = js.undefined
+  var itemStyle: js.UndefOr[AnonBorderType] = js.undefined
   /**
     * `label` describes the text label style in each rectangular node.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-sankey.label
     */
-  var label: js.UndefOr[AnonAlignBackgroundColorBorderColor] = js.undefined
+  var label: js.UndefOr[AnonBorderRadius] = js.undefined
   /**
     * The iterations of layout, which is used to continuously optimize
     * the positions of nodes in graph, decreasing the overlapping between
@@ -311,7 +311,7 @@ trait SeriesSankey_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-sankey.lineStyle
     */
-  var lineStyle: js.UndefOr[AnonColorCurvenessOpacityShadowBlur] = js.undefined
+  var lineStyle: js.UndefOr[AnonCurvenessOpacity] = js.undefined
   /**
     * The links between nodes.
     * **Notes: The Sankey diagram theoretically only supports Directed
@@ -323,7 +323,7 @@ trait SeriesSankey_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-sankey.links
     */
-  var links: js.UndefOr[AnonEmphasisLineStyle] = js.undefined
+  var links: js.UndefOr[AnonTarget] = js.undefined
   /**
     * The gap between any two rectangles in each column from the graph.
     *
@@ -389,7 +389,7 @@ trait SeriesSankey_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-sankey.tooltip
     */
-  var tooltip: js.UndefOr[AnonBackgroundColorBorderColor] = js.undefined
+  var tooltip: js.UndefOr[AnonExtraCssText] = js.undefined
   /**
     * Distance between sankey component and the top side of the container.
     *
@@ -473,19 +473,19 @@ object SeriesSankey_ {
     focusNodeAdjacency: Boolean | String = null,
     height: Double | String = null,
     id: String = null,
-    itemStyle: AnonBorderColorBorderType = null,
-    label: AnonAlignBackgroundColorBorderColor = null,
+    itemStyle: AnonBorderType = null,
+    label: AnonBorderRadius = null,
     layoutIterations: Int | Double = null,
     left: Double | String = null,
-    lineStyle: AnonColorCurvenessOpacityShadowBlur = null,
-    links: AnonEmphasisLineStyle = null,
+    lineStyle: AnonCurvenessOpacity = null,
+    links: AnonTarget = null,
     nodeGap: Int | Double = null,
     nodeWidth: Int | Double = null,
     nodes: js.Array[_] = null,
     orient: String = null,
     right: Double | String = null,
     silent: js.UndefOr[Boolean] = js.undefined,
-    tooltip: AnonBackgroundColorBorderColor = null,
+    tooltip: AnonExtraCssText = null,
     top: Double | String = null,
     `type`: String = null,
     width: Double | String = null,

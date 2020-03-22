@@ -1,6 +1,6 @@
 package typings.phoenix.mod
 
-import typings.std.Partial
+import typings.phoenix.PartialSocketConnectOptio
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Socket protected () extends js.Object {
   def this(endPoint: String) = this()
-  def this(endPoint: String, opts: Partial[SocketConnectOption]) = this()
+  def this(endPoint: String, opts: PartialSocketConnectOptio) = this()
   def channel(topic: String): Channel = js.native
   def channel(topic: String, chanParams: js.Object): Channel = js.native
   def connect(): Unit = js.native

@@ -2,12 +2,12 @@ package typings.googleapis.plusV1Mod.plusV1
 
 import typings.googleapis.AnonCoverInfo
 import typings.googleapis.AnonDepartment
-import typings.googleapis.AnonFamilyNameFormatted
+import typings.googleapis.AnonFormatted
 import typings.googleapis.AnonIsDefault
 import typings.googleapis.AnonLabelType
-import typings.googleapis.AnonMaxMin
+import typings.googleapis.AnonMin
 import typings.googleapis.AnonPrimary
-import typings.googleapis.AnonTypeValue
+import typings.googleapis.AnonValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,7 +23,7 @@ trait SchemaPerson extends js.Object {
     * and 21 or older. Age is determined from the user&#39;s birthday using
     * Western age reckoning.
     */
-  var ageRange: js.UndefOr[AnonMaxMin] = js.native
+  var ageRange: js.UndefOr[AnonMin] = js.native
   /**
     * The person&#39;s date of birth, represented as YYYY-MM-DD.
     */
@@ -62,7 +62,7 @@ trait SchemaPerson extends js.Object {
     * these email addresses, or the email scope can be used to retrieve just
     * the Google account email address.
     */
-  var emails: js.UndefOr[js.Array[AnonTypeValue]] = js.native
+  var emails: js.UndefOr[js.Array[AnonValue]] = js.native
   /**
     * ETag of this response for caching purposes.
     */
@@ -97,7 +97,7 @@ trait SchemaPerson extends js.Object {
     * An object representation of the individual components of a person&#39;s
     * name.
     */
-  var name: js.UndefOr[AnonFamilyNameFormatted] = js.native
+  var name: js.UndefOr[AnonFormatted] = js.native
   /**
     * The nickname of this person.
     */
@@ -163,7 +163,7 @@ object SchemaPerson {
   @scala.inline
   def apply(
     aboutMe: String = null,
-    ageRange: AnonMaxMin = null,
+    ageRange: AnonMin = null,
     birthday: String = null,
     braggingRights: String = null,
     circledByCount: Int | Double = null,
@@ -171,7 +171,7 @@ object SchemaPerson {
     currentLocation: String = null,
     displayName: String = null,
     domain: String = null,
-    emails: js.Array[AnonTypeValue] = null,
+    emails: js.Array[AnonValue] = null,
     etag: String = null,
     gender: String = null,
     id: String = null,
@@ -179,7 +179,7 @@ object SchemaPerson {
     isPlusUser: js.UndefOr[Boolean] = js.undefined,
     kind: String = null,
     language: String = null,
-    name: AnonFamilyNameFormatted = null,
+    name: AnonFormatted = null,
     nickname: String = null,
     objectType: String = null,
     occupation: String = null,

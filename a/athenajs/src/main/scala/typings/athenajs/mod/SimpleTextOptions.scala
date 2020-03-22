@@ -1,6 +1,6 @@
 package typings.athenajs.mod
 
-import typings.athenajs.AnonOptions
+import typings.athenajs.AnonInstantiable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +21,7 @@ object SimpleTextOptions {
   @scala.inline
   def apply(
     align: String = null,
-    behavior: AnonOptions = null,
+    behavior: AnonInstantiable = null,
     canCollide: js.UndefOr[Boolean] = js.undefined,
     canCollideFriendBullet: js.UndefOr[Boolean] = js.undefined,
     collideGroup: Int | Double = null,

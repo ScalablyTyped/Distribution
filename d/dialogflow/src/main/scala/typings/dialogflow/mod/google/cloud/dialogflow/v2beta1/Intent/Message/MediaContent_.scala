@@ -21,7 +21,7 @@ class MediaContent_ () extends IMediaContent {
   var mediaObjects_MediaContent_ : js.Array[IResponseMediaObject] = js.native
   /** MediaContent mediaType. */
   @JSName("mediaType")
-  var mediaType_MediaContent_ : ResponseMediaType = js.native
+  var mediaType_MediaContent_ : ResponseMediaType | String = js.native
   /**
     * Converts this MediaContent to JSON.
     * @returns JSON object

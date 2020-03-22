@@ -1,31 +1,27 @@
 package typings.forkTsCheckerWebpackPlugin.incrementalCheckerInterfaceMod
 
 import typings.forkTsCheckerWebpackPlugin.cancellationTokenMod.CancellationToken
-import typings.forkTsCheckerWebpackPlugin.normalizedMessageMod.NormalizedMessage
+import typings.forkTsCheckerWebpackPlugin.issueIssueMod.Issue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IncrementalCheckerInterface extends js.Object {
-  def getDiagnostics(cancellationToken: CancellationToken): js.Promise[js.Array[NormalizedMessage]]
-  def getEsLints(cancellationToken: CancellationToken): js.Array[NormalizedMessage]
-  def getLints(cancellationToken: CancellationToken): js.Array[NormalizedMessage]
+  def getEsLintIssues(cancellationToken: CancellationToken): js.Promise[js.Array[Issue]]
+  def getTypeScriptIssues(cancellationToken: CancellationToken): js.Promise[js.Array[Issue]]
   def hasEsLinter(): Boolean
-  def hasLinter(): Boolean
   def nextIteration(): Unit
 }
 
 object IncrementalCheckerInterface {
   @scala.inline
   def apply(
-    getDiagnostics: CancellationToken => js.Promise[js.Array[NormalizedMessage]],
-    getEsLints: CancellationToken => js.Array[NormalizedMessage],
-    getLints: CancellationToken => js.Array[NormalizedMessage],
+    getEsLintIssues: CancellationToken => js.Promise[js.Array[Issue]],
+    getTypeScriptIssues: CancellationToken => js.Promise[js.Array[Issue]],
     hasEsLinter: () => Boolean,
-    hasLinter: () => Boolean,
     nextIteration: () => Unit
   ): IncrementalCheckerInterface = {
-    val __obj = js.Dynamic.literal(getDiagnostics = js.Any.fromFunction1(getDiagnostics), getEsLints = js.Any.fromFunction1(getEsLints), getLints = js.Any.fromFunction1(getLints), hasEsLinter = js.Any.fromFunction0(hasEsLinter), hasLinter = js.Any.fromFunction0(hasLinter), nextIteration = js.Any.fromFunction0(nextIteration))
+    val __obj = js.Dynamic.literal(getEsLintIssues = js.Any.fromFunction1(getEsLintIssues), getTypeScriptIssues = js.Any.fromFunction1(getTypeScriptIssues), hasEsLinter = js.Any.fromFunction0(hasEsLinter), nextIteration = js.Any.fromFunction0(nextIteration))
   
     __obj.asInstanceOf[IncrementalCheckerInterface]
   }

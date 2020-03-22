@@ -1,9 +1,9 @@
 package typings.jupyterlabNotebook.notebooktoolsMod.NotebookTools.KeySelector
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.jupyterlabCells.mod.Cell
-import typings.jupyterlabCoreutils.nbformatMod.nbformat.CellType
-import typings.phosphorCoreutils.jsonMod.JSONValue
+import typings.jupyterlabNbformat.mod.CellType
+import typings.luminoCoreutils.jsonMod.ReadonlyPartialJSONObject
+import typings.luminoCoreutils.jsonMod.ReadonlyPartialJSONValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ trait IOptions extends js.Object {
   /**
     * Default value for default setters and getters if value is not found.
     */
-  var default: js.UndefOr[JSONValue] = js.undefined
+  var default: js.UndefOr[ReadonlyPartialJSONValue] = js.undefined
   /**
     * An optional value getter for the selector.
     *
@@ -23,7 +23,7 @@ trait IOptions extends js.Object {
     *
     * @returns The appropriate value for the selector.
     */
-  var getter: js.UndefOr[js.Function1[/* cell */ Cell, JSONValue]] = js.undefined
+  var getter: js.UndefOr[js.Function1[/* cell */ Cell, js.UndefOr[ReadonlyPartialJSONValue]]] = js.undefined
   /**
     * The metadata key of interest.
     */
@@ -35,7 +35,7 @@ trait IOptions extends js.Object {
     * If a value equals the default, choosing it may erase the key from the
     * metadata.
     */
-  var optionsMap: StringDictionary[JSONValue]
+  var optionsMap: ReadonlyPartialJSONObject
   /**
     * An optional value setter for the selector.
     *
@@ -47,7 +47,9 @@ trait IOptions extends js.Object {
     * The setter should set the appropriate metadata value given the value of
     * the selector.
     */
-  var setter: js.UndefOr[js.Function2[/* cell */ Cell, /* value */ JSONValue, Unit]] = js.undefined
+  var setter: js.UndefOr[
+    js.Function2[/* cell */ Cell, /* value */ js.UndefOr[ReadonlyPartialJSONValue], Unit]
+  ] = js.undefined
   /**
     * The optional title of the selector - defaults to capitalized `key`.
     */
@@ -62,10 +64,10 @@ object IOptions {
   @scala.inline
   def apply(
     key: String,
-    optionsMap: StringDictionary[JSONValue],
-    default: JSONValue = null,
-    getter: /* cell */ Cell => JSONValue = null,
-    setter: (/* cell */ Cell, /* value */ JSONValue) => Unit = null,
+    optionsMap: ReadonlyPartialJSONObject,
+    default: ReadonlyPartialJSONValue = null,
+    getter: /* cell */ Cell => js.UndefOr[ReadonlyPartialJSONValue] = null,
+    setter: (/* cell */ Cell, /* value */ js.UndefOr[ReadonlyPartialJSONValue]) => Unit = null,
     title: String = null,
     validCellTypes: js.Array[CellType] = null
   ): IOptions = {

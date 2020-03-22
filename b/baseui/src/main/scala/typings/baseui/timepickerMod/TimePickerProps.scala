@@ -6,6 +6,7 @@ import typings.baseui.baseuiStrings.`24`
 import typings.baseui.baseuiStrings.compact
 import typings.baseui.baseuiStrings.default_
 import typings.baseui.baseuiStrings.large_
+import typings.baseui.baseuiStrings.mini
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -21,7 +22,7 @@ trait TimePickerProps extends js.Object {
   var overrides: js.UndefOr[AnonSelect] = js.undefined
   var placeholder: js.UndefOr[String] = js.undefined
   var positive: js.UndefOr[Boolean] = js.undefined
-  var size: js.UndefOr[default_ | compact | large_] = js.undefined
+  var size: js.UndefOr[mini | default_ | compact | large_] = js.undefined
   var step: js.UndefOr[Double] = js.undefined
   var value: js.UndefOr[Date | Null] = js.undefined
 }
@@ -38,7 +39,7 @@ object TimePickerProps {
     overrides: AnonSelect = null,
     placeholder: String = null,
     positive: js.UndefOr[Boolean] = js.undefined,
-    size: default_ | compact | large_ = null,
+    size: mini | default_ | compact | large_ = null,
     step: Int | Double = null,
     value: Date = null
   ): TimePickerProps = {

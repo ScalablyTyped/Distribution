@@ -1,5 +1,6 @@
 package typings.three
 
+import typings.three.threeBooleans.`true`
 import typings.three.webGLRenderTargetMod.WebGLRenderTarget
 import typings.three.webGLRenderTargetMod.WebGLRenderTargetOptions
 import scala.scalajs.js
@@ -13,6 +14,7 @@ object webGLMultisampleRenderTargetMod extends js.Object {
   class WebGLMultisampleRenderTarget protected () extends WebGLRenderTarget {
     def this(width: Double, height: Double) = this()
     def this(width: Double, height: Double, options: WebGLRenderTargetOptions) = this()
+    val isWebGLMultisampleRenderTarget: `true` = js.native
   }
   
 }

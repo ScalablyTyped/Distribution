@@ -17,14 +17,14 @@ trait DescribeSnapshotAttributeRequest extends js.Object {
   /**
     * The ID of the EBS snapshot.
     */
-  var SnapshotId: String = js.native
+  var SnapshotId: typings.awsSdk.ec2Mod.SnapshotId = js.native
 }
 
 object DescribeSnapshotAttributeRequest {
   @scala.inline
   def apply(
     Attribute: SnapshotAttributeName,
-    SnapshotId: String,
+    SnapshotId: SnapshotId,
     DryRun: js.UndefOr[scala.Boolean] = js.undefined
   ): DescribeSnapshotAttributeRequest = {
     val __obj = js.Dynamic.literal(Attribute = Attribute.asInstanceOf[js.Any], SnapshotId = SnapshotId.asInstanceOf[js.Any])

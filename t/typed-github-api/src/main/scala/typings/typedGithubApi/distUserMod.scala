@@ -22,7 +22,7 @@ object distUserMod extends js.Object {
     def this(data: PrivateUser, options: OptionsOrRef) = this()
     var collaborators: Double = js.native
     var diskUsage: Double = js.native
-    var plan: AnonCollaboratorsName = js.native
+    var plan: AnonName = js.native
     var privateGists: Double = js.native
     var privateReposOwned: Double = js.native
     var privateReposTotal: Double = js.native

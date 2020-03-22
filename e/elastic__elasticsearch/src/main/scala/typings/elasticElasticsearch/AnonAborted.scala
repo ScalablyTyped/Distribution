@@ -11,7 +11,7 @@ trait AnonAborted[C] extends js.Object {
   var connection: default
   var context: C
   var name: String
-  var request: AnonIdOptions
+  var request: AnonOptions
   var sniff: js.UndefOr[AnonHosts] = js.undefined
 }
 
@@ -23,7 +23,7 @@ object AnonAborted {
     connection: default,
     context: C,
     name: String,
-    request: AnonIdOptions,
+    request: AnonOptions,
     sniff: AnonHosts = null
   ): AnonAborted[C] = {
     val __obj = js.Dynamic.literal(aborted = aborted.asInstanceOf[js.Any], attempts = attempts.asInstanceOf[js.Any], connection = connection.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])

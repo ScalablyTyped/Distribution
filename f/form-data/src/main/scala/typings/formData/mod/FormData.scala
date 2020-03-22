@@ -17,6 +17,7 @@ trait FormData extends Readable {
   def getBoundary(): String = js.native
   def getBuffer(): Buffer = js.native
   def getHeaders(): Headers = js.native
+  def getHeaders(userHeaders: Headers): Headers = js.native
   def getLength(callback: js.Function2[/* err */ Error | Null, /* length */ Double, Unit]): Unit = js.native
   def getLengthSync(): Double = js.native
   def hasKnownLength(): Boolean = js.native

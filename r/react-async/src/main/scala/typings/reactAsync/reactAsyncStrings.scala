@@ -9,6 +9,9 @@ object reactAsyncStrings {
   sealed trait cancel extends js.Object
   
   @js.native
+  sealed trait counter extends js.Object
+  
+  @js.native
   sealed trait fulfill extends js.Object
   
   @js.native
@@ -18,7 +21,13 @@ object reactAsyncStrings {
   sealed trait initial extends js.Object
   
   @js.native
+  sealed trait initialValue extends js.Object
+  
+  @js.native
   sealed trait pending extends js.Object
+  
+  @js.native
+  sealed trait promise extends js.Object
   
   @js.native
   sealed trait reject extends js.Object
@@ -27,13 +36,12 @@ object reactAsyncStrings {
   sealed trait rejected extends js.Object
   
   @js.native
-  sealed trait run extends js.Object
-  
-  @js.native
   sealed trait start extends js.Object
   
   @scala.inline
   def cancel: cancel = "cancel".asInstanceOf[cancel]
+  @scala.inline
+  def counter: counter = "counter".asInstanceOf[counter]
   @scala.inline
   def fulfill: fulfill = "fulfill".asInstanceOf[fulfill]
   @scala.inline
@@ -41,13 +49,15 @@ object reactAsyncStrings {
   @scala.inline
   def initial: initial = "initial".asInstanceOf[initial]
   @scala.inline
+  def initialValue: initialValue = "initialValue".asInstanceOf[initialValue]
+  @scala.inline
   def pending: pending = "pending".asInstanceOf[pending]
+  @scala.inline
+  def promise: promise = "promise".asInstanceOf[promise]
   @scala.inline
   def reject: reject = "reject".asInstanceOf[reject]
   @scala.inline
   def rejected: rejected = "rejected".asInstanceOf[rejected]
-  @scala.inline
-  def run: run = "run".asInstanceOf[run]
   @scala.inline
   def start: start = "start".asInstanceOf[start]
 }

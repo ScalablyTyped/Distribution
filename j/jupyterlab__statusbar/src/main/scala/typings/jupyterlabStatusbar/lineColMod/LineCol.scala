@@ -1,7 +1,7 @@
 package typings.jupyterlabStatusbar.lineColMod
 
+import typings.jupyterlabApputils.mod.VDomRenderer
 import typings.jupyterlabApputils.vdomMod.VDomModel
-import typings.jupyterlabApputils.vdomMod.VDomRenderer
 import typings.jupyterlabCodeeditor.editorMod.CodeEditor.IEditor
 import typings.jupyterlabStatusbar.lineColMod.LineCol.Model
 import scala.scalajs.js
@@ -45,15 +45,18 @@ object LineCol extends js.Object {
     /**
       * The current column of the model.
       */
-    val column: Double = js.native
+    def column(): Double = js.native
+    def editor(): js.Any = js.native
+    def editor(editor: IEditor): js.Any = js.native
     /**
       * The current editor of the model.
       */
-    var editor: IEditor | Null = js.native
+    @JSName("editor")
+    def editor_Union(): IEditor | Null = js.native
     /**
       * The current line of the model.
       */
-    val line: Double = js.native
+    def line(): Double = js.native
   }
   
 }

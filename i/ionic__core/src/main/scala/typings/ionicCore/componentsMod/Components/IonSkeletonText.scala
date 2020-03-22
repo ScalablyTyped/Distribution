@@ -9,17 +9,13 @@ trait IonSkeletonText extends js.Object {
     * If `true`, the skeleton text will animate.
     */
   var animated: Boolean
-  /**
-    * @deprecated Use CSS instead. The width of the skeleton text. If supplied, it will override the CSS style.
-    */
-  var width: js.UndefOr[String] = js.undefined
 }
 
 object IonSkeletonText {
   @scala.inline
-  def apply(animated: Boolean, width: String = null): IonSkeletonText = {
+  def apply(animated: Boolean): IonSkeletonText = {
     val __obj = js.Dynamic.literal(animated = animated.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[IonSkeletonText]
   }
 }

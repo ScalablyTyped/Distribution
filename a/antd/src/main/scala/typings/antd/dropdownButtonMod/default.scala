@@ -1,6 +1,6 @@
 package typings.antd.dropdownButtonMod
 
-import typings.antd.AnonBottomCenter
+import typings.antd.AnonButtonsRender
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,6 +13,7 @@ class default () extends DropdownButton
 @JSImport("antd/lib/dropdown/dropdown-button", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: AnonBottomCenter = js.native
+  var __ANT_BUTTON: Boolean = js.native
+  var defaultProps: AnonButtonsRender = js.native
 }
 

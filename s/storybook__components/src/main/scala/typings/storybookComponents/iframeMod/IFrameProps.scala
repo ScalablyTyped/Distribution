@@ -4,14 +4,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IFrameProps extends js.Object {
-  var allowFullScreen: Boolean
-  var id: String
-  var key: js.UndefOr[String] = js.undefined
-  var scale: Double
-  var src: String
-  var style: js.UndefOr[js.Any] = js.undefined
-  var title: String
+  var allowFullScreen: Boolean = js.native
+  var id: String = js.native
+  var key: js.UndefOr[String] = js.native
+  var scale: Double = js.native
+  var src: String = js.native
+  var style: js.UndefOr[js.Any] = js.native
+  var title: String = js.native
 }
 
 object IFrameProps {

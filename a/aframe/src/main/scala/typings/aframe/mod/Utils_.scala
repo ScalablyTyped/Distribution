@@ -1,19 +1,19 @@
 package typings.aframe.mod
 
 import typings.aframe.AnonCheckHasPositionalTracking
-import typings.aframe.AnonComponentNameDelimiter
-import typings.aframe.AnonCoord
-import typings.aframe.AnonData
+import typings.aframe.AnonGetComponentProperty
+import typings.aframe.AnonIsCoordinate
+import typings.aframe.AnonParse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
 trait Utils_ extends js.Object {
-  var coordinates: AnonCoord = js.native
+  var coordinates: AnonIsCoordinate = js.native
   var device: AnonCheckHasPositionalTracking = js.native
-  var entity: AnonComponentNameDelimiter = js.native
-  var styleParser: AnonData = js.native
+  var entity: AnonGetComponentProperty = js.native
+  var styleParser: AnonParse = js.native
   def deepEqual(a: js.Any, b: js.Any): Boolean = js.native
   def diff(a: js.Object, b: js.Object): js.Object = js.native
   def extend(target: js.Object, source: js.Object*): js.Object = js.native

@@ -14,13 +14,13 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Typeofcore extends js.Object {
-  val Array: AnonA = js.native
-  val Date: AnonDate = js.native
+  val Array: AnonConcat = js.native
+  val Date: AnonFormat = js.native
   @JSName("Dict")
   val Dict_Original: DictConstructor = js.native
-  val Function: AnonArgArray = js.native
+  val Function: AnonBind = js.native
   val Map: MapConstructor = js.native
-  val Math: AnonAcoshAsinh = js.native
+  val Math: AnonAsinh = js.native
   val Number: AnonAcosh = js.native
   val Object: AnonAssign = js.native
   val Promise: PromiseConstructor = js.native

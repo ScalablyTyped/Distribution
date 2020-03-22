@@ -14,13 +14,18 @@ trait Listener extends js.Object {
     * The port mapping information for the listener.
     */
   var portMapping: PortMapping = js.native
+  /**
+    * A reference to an object that represents the Transport Layer Security (TLS) properties for a listener.
+    */
+  var tls: js.UndefOr[ListenerTls] = js.native
 }
 
 object Listener {
   @scala.inline
-  def apply(portMapping: PortMapping, healthCheck: HealthCheckPolicy = null): Listener = {
+  def apply(portMapping: PortMapping, healthCheck: HealthCheckPolicy = null, tls: ListenerTls = null): Listener = {
     val __obj = js.Dynamic.literal(portMapping = portMapping.asInstanceOf[js.Any])
     if (healthCheck != null) __obj.updateDynamic("healthCheck")(healthCheck.asInstanceOf[js.Any])
+    if (tls != null) __obj.updateDynamic("tls")(tls.asInstanceOf[js.Any])
     __obj.asInstanceOf[Listener]
   }
 }

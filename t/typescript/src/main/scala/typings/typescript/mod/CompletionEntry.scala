@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 trait CompletionEntry extends js.Object {
   var hasAction: js.UndefOr[`true`] = js.undefined
   var insertText: js.UndefOr[java.lang.String] = js.undefined
+  var isFromUncheckedFile: js.UndefOr[`true`] = js.undefined
   var isRecommended: js.UndefOr[`true`] = js.undefined
   var kind: ScriptElementKind
   var kindModifiers: js.UndefOr[java.lang.String] = js.undefined
@@ -30,6 +31,7 @@ object CompletionEntry {
     sortText: java.lang.String,
     hasAction: `true` = null,
     insertText: java.lang.String = null,
+    isFromUncheckedFile: `true` = null,
     isRecommended: `true` = null,
     kindModifiers: java.lang.String = null,
     replacementSpan: TextSpan = null,
@@ -38,6 +40,7 @@ object CompletionEntry {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], sortText = sortText.asInstanceOf[js.Any])
     if (hasAction != null) __obj.updateDynamic("hasAction")(hasAction.asInstanceOf[js.Any])
     if (insertText != null) __obj.updateDynamic("insertText")(insertText.asInstanceOf[js.Any])
+    if (isFromUncheckedFile != null) __obj.updateDynamic("isFromUncheckedFile")(isFromUncheckedFile.asInstanceOf[js.Any])
     if (isRecommended != null) __obj.updateDynamic("isRecommended")(isRecommended.asInstanceOf[js.Any])
     if (kindModifiers != null) __obj.updateDynamic("kindModifiers")(kindModifiers.asInstanceOf[js.Any])
     if (replacementSpan != null) __obj.updateDynamic("replacementSpan")(replacementSpan.asInstanceOf[js.Any])

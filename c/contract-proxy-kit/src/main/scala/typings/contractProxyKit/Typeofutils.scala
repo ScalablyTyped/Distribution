@@ -27,7 +27,7 @@ trait Typeofutils extends js.Object {
   var AbiCoder: Instantiable0[typings.ethers.mod.ethers.utils.AbiCoder] = js.native
   val RLP: TypeofRLP = js.native
   val base64: Typeofbase64 = js.native
-  val constants: AnonAddressZeroHashZero = js.native
+  val constants: AnonHashZero = js.native
   val defaultAbiCoder: AbiCoder = js.native
   val errors: Typeoferrors = js.native
   val etherSymbol: Ξ = js.native

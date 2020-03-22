@@ -1,9 +1,9 @@
 package typings.dayjs.mod
 
 import typings.dayjs.ILocale
+import typings.dayjs.PartialILocale
 import typings.dayjs.toObjectMod.DayjsObject
 import typings.std.Date
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,6 +22,7 @@ class Dayjs () extends js.Object {
   def day(): Double = js.native
   def day(value: Double): Dayjs = js.native
   def dayOfYear(): Double = js.native
+  def dayOfYear(value: Double): typings.dayjs.dayOfYearMod.dayjsAugmentingMod.Dayjs = js.native
   def daysInMonth(): Double = js.native
   def diff(date: ConfigType): Double = js.native
   def diff(date: ConfigType, unit: OpUnitType): Double = js.native
@@ -63,9 +64,9 @@ class Dayjs () extends js.Object {
   def local(): typings.dayjs.utcMod.dayjsAugmentingMod.Dayjs = js.native
   def locale(): String = js.native
   def locale(preset: String): Dayjs = js.native
-  def locale(preset: String, `object`: Partial[ILocale]): Dayjs = js.native
+  def locale(preset: String, `object`: PartialILocale): Dayjs = js.native
   def locale(preset: ILocale): Dayjs = js.native
-  def locale(preset: ILocale, `object`: Partial[ILocale]): Dayjs = js.native
+  def locale(preset: ILocale, `object`: PartialILocale): Dayjs = js.native
   def localeData(): js.Any = js.native
   def millisecond(): Double = js.native
   def millisecond(value: Double): Dayjs = js.native

@@ -42,6 +42,10 @@ trait Metadata extends js.Object {
     */
   val repository: js.UndefOr[String | RepositoryInfo | Null] = js.undefined
   /** @private */
+  val shortVersion: js.UndefOr[String | Null] = js.undefined
+  /** @private */
+  val shortVersionWindows: js.UndefOr[String | Null] = js.undefined
+  /** @private */
   val version: js.UndefOr[String] = js.undefined
 }
 
@@ -58,6 +62,8 @@ object Metadata {
     name: String = null,
     productName: String = null,
     repository: String | RepositoryInfo = null,
+    shortVersion: String = null,
+    shortVersionWindows: String = null,
     version: String = null
   ): Metadata = {
     val __obj = js.Dynamic.literal()
@@ -71,6 +77,8 @@ object Metadata {
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (productName != null) __obj.updateDynamic("productName")(productName.asInstanceOf[js.Any])
     if (repository != null) __obj.updateDynamic("repository")(repository.asInstanceOf[js.Any])
+    if (shortVersion != null) __obj.updateDynamic("shortVersion")(shortVersion.asInstanceOf[js.Any])
+    if (shortVersionWindows != null) __obj.updateDynamic("shortVersionWindows")(shortVersionWindows.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Metadata]
   }

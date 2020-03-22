@@ -11,6 +11,7 @@ trait JWTInput extends js.Object {
   var private_key: js.UndefOr[String] = js.undefined
   var private_key_id: js.UndefOr[String] = js.undefined
   var project_id: js.UndefOr[String] = js.undefined
+  var quota_project_id: js.UndefOr[String] = js.undefined
   var refresh_token: js.UndefOr[String] = js.undefined
   var `type`: js.UndefOr[String] = js.undefined
 }
@@ -24,6 +25,7 @@ object JWTInput {
     private_key: String = null,
     private_key_id: String = null,
     project_id: String = null,
+    quota_project_id: String = null,
     refresh_token: String = null,
     `type`: String = null
   ): JWTInput = {
@@ -34,6 +36,7 @@ object JWTInput {
     if (private_key != null) __obj.updateDynamic("private_key")(private_key.asInstanceOf[js.Any])
     if (private_key_id != null) __obj.updateDynamic("private_key_id")(private_key_id.asInstanceOf[js.Any])
     if (project_id != null) __obj.updateDynamic("project_id")(project_id.asInstanceOf[js.Any])
+    if (quota_project_id != null) __obj.updateDynamic("quota_project_id")(quota_project_id.asInstanceOf[js.Any])
     if (refresh_token != null) __obj.updateDynamic("refresh_token")(refresh_token.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[JWTInput]

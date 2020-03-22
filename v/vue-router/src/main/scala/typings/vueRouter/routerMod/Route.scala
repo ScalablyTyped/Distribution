@@ -9,7 +9,7 @@ trait Route extends js.Object {
   var hash: String
   var matched: js.Array[RouteRecord]
   var meta: js.UndefOr[js.Any] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
   var params: Dictionary[String]
   var path: String
   var query: Dictionary[String | (js.Array[String | Null])]

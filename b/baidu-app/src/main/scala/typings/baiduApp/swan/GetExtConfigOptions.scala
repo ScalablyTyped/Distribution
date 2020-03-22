@@ -1,6 +1,6 @@
 package typings.baiduApp.swan
 
-import typings.baiduApp.AnonErrMsg
+import typings.baiduApp.errMsgstringExtConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation._
 trait GetExtConfigOptions
   extends BaseOptions[js.Any, js.Any] {
   @JSName("success")
-  def success_MGetExtConfigOptions(res: AnonErrMsg with ExtConfig): Unit
+  def success_MGetExtConfigOptions(res: errMsgstringExtConfig): Unit
 }
 
 object GetExtConfigOptions {
   @scala.inline
   def apply(
-    success: AnonErrMsg with ExtConfig => Unit,
+    success: errMsgstringExtConfig => Unit,
     complete: /* res */ js.Any => Unit = null,
     fail: js.Any => Unit = null
   ): GetExtConfigOptions = {

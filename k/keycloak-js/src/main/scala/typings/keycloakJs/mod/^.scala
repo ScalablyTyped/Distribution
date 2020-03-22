@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   /**
     * Creates a new Keycloak client instance.
-    * @param config Path to a JSON config file or a plain config object.
+    * @param config A configuration object or path to a JSON config file.
     */
-  def apply[TPromise /* <: PromiseType */](): KeycloakInstance[TPromise] = js.native
-  def apply[TPromise /* <: PromiseType */](config: String): KeycloakInstance[TPromise] = js.native
-  def apply[TPromise /* <: PromiseType */](config: js.Object): KeycloakInstance[TPromise] = js.native
+  def apply[TPromise /* <: KeycloakPromiseType */](): KeycloakInstance[TPromise] = js.native
+  def apply[TPromise /* <: KeycloakPromiseType */](config: String): KeycloakInstance[TPromise] = js.native
+  def apply[TPromise /* <: KeycloakPromiseType */](config: KeycloakConfig): KeycloakInstance[TPromise] = js.native
 }
 

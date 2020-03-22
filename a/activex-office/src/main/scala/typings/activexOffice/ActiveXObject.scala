@@ -216,13 +216,13 @@ trait ActiveXObject extends js.Object {
     obj: CustomXMLPart,
     event: NodeAfterInsert,
     argNames: js.Tuple2[NewNode, InUndoRedo],
-    handler: js.ThisFunction1[/* this */ CustomXMLPart, /* parameter */ AnonInUndoRedoNewNode, Unit]
+    handler: js.ThisFunction1[/* this */ CustomXMLPart, /* parameter */ AnonNewNode, Unit]
   ): Unit = js.native
   def on(
     obj: CustomXMLPart,
     event: NodeAfterReplace,
     argNames: js.Tuple3[OldNode, NewNode, InUndoRedo],
-    handler: js.ThisFunction1[/* this */ CustomXMLPart, /* parameter */ AnonInUndoRedoNewNodeOldNode, Unit]
+    handler: js.ThisFunction1[/* this */ CustomXMLPart, /* parameter */ AnonOldNode, Unit]
   ): Unit = js.native
   def on(
     obj: CustomXMLPart,

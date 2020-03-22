@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mainareawidgetMod {
-  type MainAreaWidget[T /* <: typings.phosphorWidgets.mod.Widget */] = typings.jupyterlabApputils.mainareawidgetMod.MainAreaWidget_[T]
+  type MainAreaWidget[T /* <: typings.luminoWidgets.mod.Widget */] = typings.jupyterlabApputils.mainareawidgetMod.MainAreaWidget_[T]
 }

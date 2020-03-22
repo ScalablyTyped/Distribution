@@ -1,5 +1,6 @@
 package typings.jupyterlabRendermimeInterfaces.mod.IRenderMime
 
+import typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.LabIcon.IResolvable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,6 +22,12 @@ trait IFileType extends js.Object {
     * The file format for the file type ('text', 'base64', or 'json').
     */
   val fileFormat: js.UndefOr[String] = js.undefined
+  /**
+    * The icon for the file type. Can either be a string containing the name
+    * of an existing icon, or an object with {name, svgstr} fields, where
+    * svgstr is a string containing the raw contents of an svg file.
+    */
+  val icon: js.UndefOr[IResolvable] = js.undefined
   /**
     * The icon class name for the file type.
     */
@@ -51,6 +58,7 @@ object IFileType {
     name: String,
     displayName: String = null,
     fileFormat: String = null,
+    icon: IResolvable = null,
     iconClass: String = null,
     iconLabel: String = null,
     pattern: String = null
@@ -58,6 +66,7 @@ object IFileType {
     val __obj = js.Dynamic.literal(extensions = extensions.asInstanceOf[js.Any], mimeTypes = mimeTypes.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     if (fileFormat != null) __obj.updateDynamic("fileFormat")(fileFormat.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass.asInstanceOf[js.Any])
     if (iconLabel != null) __obj.updateDynamic("iconLabel")(iconLabel.asInstanceOf[js.Any])
     if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])

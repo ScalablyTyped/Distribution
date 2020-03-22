@@ -107,7 +107,7 @@ trait IonInput extends js.Object {
     */
   var onIonFocus: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.undefined
   /**
-    * Emitted when a keyboard input ocurred.
+    * Emitted when a keyboard input occurred.
     */
   var onIonInput: js.UndefOr[js.Function1[/* event */ CustomEvent[KeyboardEvent], Unit]] = js.undefined
   /**
@@ -145,7 +145,7 @@ trait IonInput extends js.Object {
   /**
     * The value of the input.
     */
-  var value: js.UndefOr[String | Null] = js.undefined
+  var value: js.UndefOr[String | Double | Null] = js.undefined
 }
 
 object IonInput {
@@ -181,7 +181,7 @@ object IonInput {
     spellcheck: js.UndefOr[Boolean] = js.undefined,
     step: String = null,
     `type`: TextFieldTypes = null,
-    value: String = null
+    value: String | Double = null
   ): IonInput = {
     val __obj = js.Dynamic.literal()
     if (accept != null) __obj.updateDynamic("accept")(accept.asInstanceOf[js.Any])

@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 @JSImport("geolib/es/wktToPolygon", JSImport.Namespace)
 @js.native
 object wktToPolygonMod extends js.Object {
-  def default(wkt: String): js.Array[AnonLatitudeLongitude] = js.native
+  def default(wkt: String): js.Array[AnonLongitude] = js.native
 }
 

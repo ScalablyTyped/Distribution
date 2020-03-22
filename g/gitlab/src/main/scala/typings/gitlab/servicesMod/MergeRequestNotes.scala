@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("gitlab/dist/types/core/services", "MergeRequestNotes")
 @js.native
-class MergeRequestNotes ()
+class MergeRequestNotes protected ()
   extends typings.gitlab.mergeRequestNotesMod.MergeRequestNotes {
   def this(options: BaseServiceOptions) = this()
 }

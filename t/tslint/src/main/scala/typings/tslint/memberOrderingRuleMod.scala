@@ -2,6 +2,9 @@ package typings.tslint
 
 import typings.tslint.mod.Rules.AbstractRule
 import typings.tslint.ruleMod.IRuleMetadata
+import typings.tslint.tslintNumbers.`-1`
+import typings.tslint.tslintNumbers.`0`
+import typings.tslint.tslintNumbers.`1`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,6 +20,7 @@ object memberOrderingRuleMod extends js.Object {
   object Rule extends js.Object {
     var metadata: IRuleMetadata = js.native
     def FAILURE_STRING_ALPHABETIZE(prevName: String, curName: String): String = js.native
+    def stringCompare(a: String, b: String): `1` | `-1` | `0` = js.native
   }
   
 }

@@ -1,11 +1,11 @@
 package typings.oracleOraclejet.ojlistviewMod
 
 import typings.oracleOraclejet.AnonAccessibleNavigateSkipItems
-import typings.oracleOraclejet.AnonDataKey
-import typings.oracleOraclejet.AnonDragDropReorder
+import typings.oracleOraclejet.AnonDragDrop
 import typings.oracleOraclejet.AnonFetchSize
 import typings.oracleOraclejet.AnonFocusable
-import typings.oracleOraclejet.AnonIndexKey
+import typings.oracleOraclejet.AnonKey
+import typings.oracleOraclejet.AnonOffsetX
 import typings.oracleOraclejet.mod.baseComponentSettableProperties
 import typings.oracleOraclejet.ojdataproviderMod.DataProvider
 import typings.oracleOraclejet.ojkeysetMod.KeySet
@@ -25,15 +25,15 @@ trait ojListViewSettableProperties[K, D] extends baseComponentSettableProperties
   var as: String
   var currentItem: K
   var data: DataProvider[K, D]
-  var dnd: AnonDragDropReorder
+  var dnd: AnonDragDrop
   var drillMode: collapsible | none
   var expanded: KeySet[K]
-  val firstSelectedItem: AnonDataKey[K, D]
+  val firstSelectedItem: AnonKey[K, D]
   var groupHeaderPosition: static | sticky
   var item: AnonFocusable[K, D]
   var scrollPolicy: auto | loadMoreOnScroll
   var scrollPolicyOptions: AnonFetchSize
-  var scrollPosition: AnonIndexKey[K]
+  var scrollPosition: AnonOffsetX[K]
   var selection: js.Array[K]
   var selectionMode: none | single | multiple
   var selectionRequired: Boolean
@@ -47,15 +47,15 @@ object ojListViewSettableProperties {
     as: String,
     currentItem: K,
     data: DataProvider[K, D],
-    dnd: AnonDragDropReorder,
+    dnd: AnonDragDrop,
     drillMode: collapsible | none,
     expanded: KeySet[K],
-    firstSelectedItem: AnonDataKey[K, D],
+    firstSelectedItem: AnonKey[K, D],
     groupHeaderPosition: static | sticky,
     item: AnonFocusable[K, D],
     scrollPolicy: auto | loadMoreOnScroll,
     scrollPolicyOptions: AnonFetchSize,
-    scrollPosition: AnonIndexKey[K],
+    scrollPosition: AnonOffsetX[K],
     selection: js.Array[K],
     selectionMode: none | single | multiple,
     selectionRequired: Boolean,

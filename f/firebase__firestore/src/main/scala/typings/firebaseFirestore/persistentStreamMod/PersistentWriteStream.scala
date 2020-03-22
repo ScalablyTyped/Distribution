@@ -1,11 +1,11 @@
 package typings.firebaseFirestore.persistentStreamMod
 
 import typings.firebaseFirestore.asyncQueueMod.AsyncQueue
+import typings.firebaseFirestore.byteStringMod.ByteString
 import typings.firebaseFirestore.connectionMod.Connection
 import typings.firebaseFirestore.credentialsMod.CredentialsProvider
 import typings.firebaseFirestore.mutationMod.Mutation
 import typings.firebaseFirestore.serializerMod.JsonProtoSerializer
-import typings.firebaseFirestore.typesMod.ProtoByteString
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,7 +34,7 @@ class PersistentWriteStream protected ()
     * PersistentWriteStream manages propagating this value from responses to the
     * next request.
     */
-  var lastStreamToken: ProtoByteString = js.native
+  var lastStreamToken: ByteString = js.native
   var serializer: js.Any = js.native
   /**
     * Tracks whether or not a handshake has been successfully exchanged and

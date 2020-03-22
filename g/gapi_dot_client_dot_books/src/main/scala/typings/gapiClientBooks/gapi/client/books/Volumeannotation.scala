@@ -1,6 +1,6 @@
 package typings.gapiClientBooks.gapi.client.books
 
-import typings.gapiClientBooks.AnonCfiRangeContentVersion
+import typings.gapiClientBooks.AnonContentVersion
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ trait Volumeannotation extends js.Object {
   /** The type of annotation this is. */
   var annotationType: js.UndefOr[String] = js.undefined
   /** The content ranges to identify the selected text. */
-  var contentRanges: js.UndefOr[AnonCfiRangeContentVersion] = js.undefined
+  var contentRanges: js.UndefOr[AnonContentVersion] = js.undefined
   /** Data for this annotation. */
   var data: js.UndefOr[String] = js.undefined
   /** Indicates that this annotation is deleted. */
@@ -42,7 +42,7 @@ object Volumeannotation {
     annotationDataId: String = null,
     annotationDataLink: String = null,
     annotationType: String = null,
-    contentRanges: AnonCfiRangeContentVersion = null,
+    contentRanges: AnonContentVersion = null,
     data: String = null,
     deleted: js.UndefOr[Boolean] = js.undefined,
     id: String = null,

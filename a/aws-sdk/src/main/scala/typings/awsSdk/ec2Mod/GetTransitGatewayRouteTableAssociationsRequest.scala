@@ -25,13 +25,13 @@ trait GetTransitGatewayRouteTableAssociationsRequest extends js.Object {
   /**
     * The ID of the transit gateway route table.
     */
-  var TransitGatewayRouteTableId: String = js.native
+  var TransitGatewayRouteTableId: typings.awsSdk.ec2Mod.TransitGatewayRouteTableId = js.native
 }
 
 object GetTransitGatewayRouteTableAssociationsRequest {
   @scala.inline
   def apply(
-    TransitGatewayRouteTableId: String,
+    TransitGatewayRouteTableId: TransitGatewayRouteTableId,
     DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     Filters: FilterList = null,
     MaxResults: Int | scala.Double = null,

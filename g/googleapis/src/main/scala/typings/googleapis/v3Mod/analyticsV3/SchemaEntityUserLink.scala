@@ -1,7 +1,7 @@
 package typings.googleapis.v3Mod.analyticsV3
 
 import typings.googleapis.AnonAccountRef
-import typings.googleapis.AnonEffectiveLocal
+import typings.googleapis.AnonLocal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,7 +28,7 @@ trait SchemaEntityUserLink extends js.Object {
   /**
     * Permissions the user has for this entity.
     */
-  var permissions: js.UndefOr[AnonEffectiveLocal] = js.native
+  var permissions: js.UndefOr[AnonLocal] = js.native
   /**
     * Self link for this resource.
     */
@@ -45,7 +45,7 @@ object SchemaEntityUserLink {
     entity: AnonAccountRef = null,
     id: String = null,
     kind: String = null,
-    permissions: AnonEffectiveLocal = null,
+    permissions: AnonLocal = null,
     selfLink: String = null,
     userRef: SchemaUserRef = null
   ): SchemaEntityUserLink = {

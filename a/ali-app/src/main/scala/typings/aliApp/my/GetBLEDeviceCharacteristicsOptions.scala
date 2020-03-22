@@ -1,6 +1,6 @@
 package typings.aliApp.my
 
-import typings.aliApp.AnonCharacteristics
+import typings.aliApp.characteristicsArraychara
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +19,7 @@ trait GetBLEDeviceCharacteristicsOptions
   		 * 成功则返回本机蓝牙适配器状态
   		 */
   @JSName("success")
-  def success_MGetBLEDeviceCharacteristicsOptions(res: AnonCharacteristics with ErrMsgResponse): Unit
+  def success_MGetBLEDeviceCharacteristicsOptions(res: characteristicsArraychara): Unit
 }
 
 object GetBLEDeviceCharacteristicsOptions {
@@ -27,7 +27,7 @@ object GetBLEDeviceCharacteristicsOptions {
   def apply(
     deviceId: String,
     serviceId: String,
-    success: AnonCharacteristics with ErrMsgResponse => Unit,
+    success: characteristicsArraychara => Unit,
     complete: /* res */ js.Any => Unit = null,
     fail: js.Any => Unit = null
   ): GetBLEDeviceCharacteristicsOptions = {

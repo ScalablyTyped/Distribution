@@ -127,7 +127,7 @@ trait IonInput extends js.Object {
   /**
     * The value of the input.
     */
-  var value: js.UndefOr[String | Null] = js.undefined
+  var value: js.UndefOr[String | Double | Null] = js.undefined
   /**
     * Returns the native `<input>` element used under the hood.
     */
@@ -169,7 +169,7 @@ object IonInput {
     placeholder: String = null,
     size: Int | Double = null,
     step: String = null,
-    value: String = null
+    value: String | Double = null
   ): IonInput = {
     val __obj = js.Dynamic.literal(autocapitalize = autocapitalize.asInstanceOf[js.Any], autocomplete = autocomplete.asInstanceOf[js.Any], autocorrect = autocorrect.asInstanceOf[js.Any], autofocus = autofocus.asInstanceOf[js.Any], clearInput = clearInput.asInstanceOf[js.Any], debounce = debounce.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], getInputElement = js.Any.fromFunction0(getInputElement), name = name.asInstanceOf[js.Any], readonly = readonly.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any], setFocus = js.Any.fromFunction0(setFocus), spellcheck = spellcheck.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

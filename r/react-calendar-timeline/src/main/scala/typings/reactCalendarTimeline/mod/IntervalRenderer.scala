@@ -1,7 +1,6 @@
 package typings.reactCalendarTimeline.mod
 
-import typings.reactCalendarTimeline.AnonKey
-import typings.std.Required
+import typings.reactCalendarTimeline.RequiredGetIntervalPropsk
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait IntervalRenderer[Data] extends js.Object {
   var data: js.UndefOr[Data] = js.native
   var intervalContext: IntervalContext = js.native
-  def getIntervalProps(): Required[GetIntervalProps] with AnonKey = js.native
-  def getIntervalProps(props: GetIntervalProps): Required[GetIntervalProps] with AnonKey = js.native
+  def getIntervalProps(): RequiredGetIntervalPropsk = js.native
+  def getIntervalProps(props: GetIntervalProps): RequiredGetIntervalPropsk = js.native
 }
 

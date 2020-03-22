@@ -12,7 +12,7 @@ object typescriptStrings {
   sealed trait `0Dot8` extends js.Object
   
   @js.native
-  sealed trait `3Dot7` extends js.Object
+  sealed trait `3Dot8` extends js.Object
   
   @js.native
   sealed trait `@` extends CompletionsTriggerCharacter
@@ -41,6 +41,9 @@ object typescriptStrings {
     extends CompletionsTriggerCharacter
        with SignatureHelpRetriggerCharacter
        with SignatureHelpTriggerCharacter
+  
+  @js.native
+  sealed trait Numbersign extends CompletionsTriggerCharacter
   
   @js.native
   sealed trait Quotationmark extends CompletionsTriggerCharacter
@@ -138,7 +141,7 @@ object typescriptStrings {
   @scala.inline
   def `0Dot8`: `0Dot8` = "0.8".asInstanceOf[`0Dot8`]
   @scala.inline
-  def `3Dot7`: `3Dot7` = "3.7".asInstanceOf[`3Dot7`]
+  def `3Dot8`: `3Dot8` = "3.8".asInstanceOf[`3Dot8`]
   @scala.inline
   def `@`: `@` = "@".asInstanceOf[`@`]
   @scala.inline
@@ -153,6 +156,8 @@ object typescriptStrings {
   def Leftparenthesis: Leftparenthesis = "(".asInstanceOf[Leftparenthesis]
   @scala.inline
   def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
+  @scala.inline
+  def Numbersign: Numbersign = "#".asInstanceOf[Numbersign]
   @scala.inline
   def Quotationmark: Quotationmark = "\"".asInstanceOf[Quotationmark]
   @scala.inline

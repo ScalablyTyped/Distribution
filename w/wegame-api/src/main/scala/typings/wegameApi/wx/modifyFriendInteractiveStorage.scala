@@ -1,6 +1,6 @@
 package typings.wegameApi.wx
 
-import typings.wegameApi.AnonAdd
+import typings.wegameApi.AnonImageUrl
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -44,6 +44,6 @@ object modifyFriendInteractiveStorage extends js.Object {
     *         }
     *     2.9.0 之后，在 modifyFriendInteractiveStorageTemplates 和 modifyFriendInteractiveStorageConfirmWording 都存在的情况下，会优先使用前者。
     */
-  def apply(param: AnonAdd): Unit = js.native
+  def apply(param: AnonImageUrl): Unit = js.native
 }
 

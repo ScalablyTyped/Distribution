@@ -1,7 +1,7 @@
 
 # Scala.js typings for active-win
 
-Typings are for version 5.1.3
+Typings are for version 6.1.0
 
 ## Library description:
 Get metadata about the active window (title, id, bounds, owner, etc). Works on macOS, Linux, Windows.

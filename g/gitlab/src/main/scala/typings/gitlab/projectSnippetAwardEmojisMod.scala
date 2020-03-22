@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object projectSnippetAwardEmojisMod extends js.Object {
   @js.native
-  class ProjectSnippetAwardEmojis () extends ResourceAwardEmojis {
+  class ProjectSnippetAwardEmojis protected () extends ResourceAwardEmojis {
     def this(options: BaseServiceOptions) = this()
   }
   

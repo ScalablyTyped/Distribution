@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "rollup-plugin-typescript2" : "0.25.2"
+      "rollup-plugin-typescript2" : "0.25.3"
     }
   ],
   "test-dependencies" : [
     {
-      "rollup-plugin-typescript2" : "0.25.2"
+      "rollup-plugin-typescript2" : "0.25.3"
     }
   ],
   "compile-devDependencies" : [

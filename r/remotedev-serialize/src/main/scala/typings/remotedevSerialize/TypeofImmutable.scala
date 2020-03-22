@@ -17,7 +17,7 @@ trait TypeofImmutable extends js.Object {
   val OrderedSet: TypeofOrderedSet = js.native
   val Record: TypeofRecord = js.native
   val Seq: TypeofSeq = js.native
-  val Set: TypeofSetCollectionFromKeys = js.native
+  val Set: TypeofSetFromKeys = js.native
   val Stack: TypeofStack = js.native
   def Range(): Indexed[Double] = js.native
   def Range(start: Double): Indexed[Double] = js.native

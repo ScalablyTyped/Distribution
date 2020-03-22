@@ -59,7 +59,9 @@ package object quicksightMod {
     - java.lang.String
   */
   type DashboardErrorType = typings.awsSdk.quicksightMod._DashboardErrorType | java.lang.String
+  type DashboardFilterAttribute = typings.awsSdk.awsSdkStrings.QUICKSIGHT_USER | java.lang.String
   type DashboardName = java.lang.String
+  type DashboardSearchFilterList = js.Array[typings.awsSdk.quicksightMod.DashboardSearchFilter]
   type DashboardSummaryList = js.Array[typings.awsSdk.quicksightMod.DashboardSummary]
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.EXPANDED
@@ -133,6 +135,7 @@ package object quicksightMod {
     - java.lang.String
   */
   type FileFormat = typings.awsSdk.quicksightMod._FileFormat | java.lang.String
+  type FilterOperator = typings.awsSdk.awsSdkStrings.StringEquals_ | java.lang.String
   type GeoSpatialCountryCode = typings.awsSdk.awsSdkStrings.US | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.COUNTRY

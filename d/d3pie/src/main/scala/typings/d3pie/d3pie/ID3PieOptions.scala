@@ -2,13 +2,13 @@ package typings.d3pie.d3pie
 
 import typings.d3pie.AnonCanvasHeight
 import typings.d3pie.AnonCanvasPadding
-import typings.d3pie.AnonCaption
 import typings.d3pie.AnonContent
-import typings.d3pie.AnonContext
+import typings.d3pie.AnonFormatter
 import typings.d3pie.AnonHighlightLuminosity
-import typings.d3pie.AnonLeft
 import typings.d3pie.AnonLocation
 import typings.d3pie.AnonOnClickSegment
+import typings.d3pie.AnonPlaceholderParser
+import typings.d3pie.locationleftID3PieTextOpt
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,12 +17,12 @@ trait ID3PieOptions extends js.Object {
   var callbacks: js.UndefOr[AnonOnClickSegment] = js.undefined
   var data: AnonContent
   var effects: js.UndefOr[AnonHighlightLuminosity] = js.undefined
-  var footer: js.UndefOr[AnonLeft with ID3PieTextOptions] = js.undefined
+  var footer: js.UndefOr[locationleftID3PieTextOpt] = js.undefined
   var header: js.UndefOr[AnonLocation] = js.undefined
-  var labels: js.UndefOr[AnonContext] = js.undefined
+  var labels: js.UndefOr[AnonFormatter] = js.undefined
   var misc: js.UndefOr[AnonCanvasPadding] = js.undefined
   var size: js.UndefOr[AnonCanvasHeight] = js.undefined
-  var tooltips: js.UndefOr[AnonCaption] = js.undefined
+  var tooltips: js.UndefOr[AnonPlaceholderParser] = js.undefined
 }
 
 object ID3PieOptions {
@@ -31,12 +31,12 @@ object ID3PieOptions {
     data: AnonContent,
     callbacks: AnonOnClickSegment = null,
     effects: AnonHighlightLuminosity = null,
-    footer: AnonLeft with ID3PieTextOptions = null,
+    footer: locationleftID3PieTextOpt = null,
     header: AnonLocation = null,
-    labels: AnonContext = null,
+    labels: AnonFormatter = null,
     misc: AnonCanvasPadding = null,
     size: AnonCanvasHeight = null,
-    tooltips: AnonCaption = null
+    tooltips: AnonPlaceholderParser = null
   ): ID3PieOptions = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     if (callbacks != null) __obj.updateDynamic("callbacks")(callbacks.asInstanceOf[js.Any])

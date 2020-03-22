@@ -24,7 +24,7 @@ trait Carousel
   def next(): Unit = js.native
   def onWindowResized(): Unit = js.native
   def prev(): Unit = js.native
-  def renderCarousel(hasGetPrefixCls: ConfigConsumerProps): Element = js.native
+  def renderCarousel(hasGetPrefixClsDirection: ConfigConsumerProps): Element = js.native
   def saveSlick(node: js.Any): Unit = js.native
 }
 

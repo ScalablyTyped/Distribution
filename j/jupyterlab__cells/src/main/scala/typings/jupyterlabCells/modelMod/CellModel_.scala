@@ -3,18 +3,18 @@ package typings.jupyterlabCells.modelMod
 import typings.jupyterlabCells.modelMod.CellModel.IOptions
 import typings.jupyterlabCodeeditor.mod.CodeEditor.Model
 import typings.jupyterlabCoreutils.interfacesMod.IChangedArgs
-import typings.jupyterlabCoreutils.nbformatMod.nbformat.CellType
-import typings.jupyterlabCoreutils.nbformatMod.nbformat.ICell
+import typings.jupyterlabNbformat.mod.CellType
+import typings.jupyterlabNbformat.mod.ICell
 import typings.jupyterlabObservables.modeldbMod.IObservableValue
 import typings.jupyterlabObservables.observablejsonMod.IObservableJSON
-import typings.phosphorSignaling.mod.ISignal
-import typings.phosphorSignaling.mod.Signal
+import typings.luminoSignaling.mod.ISignal
+import typings.luminoSignaling.mod.Signal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.phosphorDisposable.mod.IDisposable because Already inherited
+- typings.luminoDisposable.mod.IDisposable because Already inherited
 - typings.jupyterlabCodeeditor.editorMod.CodeEditor.IModel because Already inherited
 - typings.jupyterlabCells.modelMod.ICellModel because var conflicts: mimeType, mimeTypeChanged. Inlined `type`, id, contentChanged, stateChanged, trusted, metadata, toJSON */ @JSImport("@jupyterlab/cells/lib/model", "CellModel")
 @js.native
@@ -34,22 +34,25 @@ class CellModel_ protected () extends Model {
   /**
     * The metadata associated with the cell.
     */
-  val metadata: IObservableJSON = js.native
+  @JSName("metadata")
+  val metadata_FCellModel_ : IObservableJSON = js.native
   /**
     * A signal emitted when a model state changes.
     */
-  val stateChanged: (ISignal[ICellModel, IChangedArgs[_, String]]) | (Signal[this.type, IChangedArgs[_, String]]) = js.native
+  val stateChanged: (ISignal[ICellModel, IChangedArgs[_, _, String]]) | (Signal[this.type, IChangedArgs[_, _, String]]) = js.native
   /**
-    * Get the trusted state of the model.
+    * Whether the cell is trusted.
     */
-  /**
-    * Set the trusted state of the model.
-    */
-  var trusted: Boolean = js.native
+  @JSName("trusted")
+  var trusted_FCellModel_ : Boolean = js.native
   /**
     * The type of cell.
     */
   val `type`: CellType = js.native
+  /**
+    * The metadata associated with the cell.
+    */
+  def metadata(): IObservableJSON = js.native
   /**
     * Handle a change to the observable value.
     */
@@ -64,5 +67,13 @@ class CellModel_ protected () extends Model {
     * Serialize the model to JSON.
     */
   def toJSON(): ICell = js.native
+  /**
+    * Get the trusted state of the model.
+    */
+  def trusted(): Boolean = js.native
+  /**
+    * Set the trusted state of the model.
+    */
+  def trusted(newValue: Boolean): js.Any = js.native
 }
 

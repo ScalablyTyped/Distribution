@@ -26,6 +26,7 @@ object DebOptions {
     depends: js.Array[String] = null,
     description: String = null,
     desktop: js.Any = null,
+    executableArgs: js.Array[String] = null,
     fpm: js.Array[String] = null,
     icon: String = null,
     maintainer: String = null,
@@ -45,6 +46,7 @@ object DebOptions {
     if (depends != null) __obj.updateDynamic("depends")(depends.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (desktop != null) __obj.updateDynamic("desktop")(desktop.asInstanceOf[js.Any])
+    if (executableArgs != null) __obj.updateDynamic("executableArgs")(executableArgs.asInstanceOf[js.Any])
     if (fpm != null) __obj.updateDynamic("fpm")(fpm.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (maintainer != null) __obj.updateDynamic("maintainer")(maintainer.asInstanceOf[js.Any])
