@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gapi_dot_client_dot_cloudtasks"
-version := "2.0-dt-20190213Z-b6420e"
+version := "2.0-dt-20190213Z-57f780"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

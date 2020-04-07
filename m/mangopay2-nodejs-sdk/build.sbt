@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mangopay2-nodejs-sdk"
-version := "1.9-dt-20200225Z-99c05e"
+version := "1.9-dt-20200225Z-b24491"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

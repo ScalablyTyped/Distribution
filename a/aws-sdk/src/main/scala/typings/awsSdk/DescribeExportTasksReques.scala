@@ -22,3 +22,18 @@ trait DescribeExportTasksReques extends js.Object {
   var Filters: js.UndefOr[FilterList] = js.native
 }
 
+object DescribeExportTasksReques {
+  @scala.inline
+  def apply(
+    $waiter: WaiterConfiguration = null,
+    ExportTaskIds: ExportTaskIdStringList = null,
+    Filters: FilterList = null
+  ): DescribeExportTasksReques = {
+    val __obj = js.Dynamic.literal()
+    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
+    if (ExportTaskIds != null) __obj.updateDynamic("ExportTaskIds")(ExportTaskIds.asInstanceOf[js.Any])
+    if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DescribeExportTasksReques]
+  }
+}
+

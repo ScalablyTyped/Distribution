@@ -1,7 +1,7 @@
 package typings.tstl.tstlMod
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.tstl.IteratoranyanyanyEquals
+import typings.tstl.Iteratoranyanyany
 import typings.tstl.comparatorMod.Comparator
 import typings.tstl.iforwarditeratorMod.IForwardIterator
 import typings.tstl.setContainerMod.SetContainer
@@ -62,7 +62,7 @@ object TreeMultiSet extends js.Object {
         /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
         /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
         /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any, 
-        IteratoranyanyanyEquals, 
+        Iteratoranyanyany, 
         typings.tstl.setElementListMod.SetElementList.ReverseIterator[
           /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
           /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
@@ -79,7 +79,7 @@ object TreeMultiSet extends js.Object {
         /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
         /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
         /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any, 
-        IteratoranyanyanyEquals, 
+        Iteratoranyanyany, 
         typings.tstl.setElementListMod.SetElementList.ReverseIterator[
           /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
           /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 

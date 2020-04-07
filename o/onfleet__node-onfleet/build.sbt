@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "onfleet__node-onfleet"
-version := "1.0-dt-20191016Z-8fdddc"
+version := "1.0-dt-20191016Z-a32656"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

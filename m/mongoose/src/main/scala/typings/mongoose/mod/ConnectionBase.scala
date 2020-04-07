@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.mongodb.mod.CollectionCreateOptions
 import typings.mongodb.mod.Db
 import typings.mongodb.mod.DefaultSchema
-import typings.mongoose.ConnectionthenPromiseConnCatch
+import typings.mongoose.ConnectionthenPromiseConn
 import typings.mongoose.PickConnectionOptionsauto
 import typings.node.eventsMod.EventEmitter
 import typings.std.RegExp
@@ -126,13 +126,13 @@ trait ConnectionBase extends EventEmitter {
     */
   def openUri(uri: String): js.Promise[Connection_] = js.native
   def openUri(uri: String, callback: js.Function2[/* err */ js.Any, /* conn */ js.UndefOr[Connection_], Unit]): Connection_ = js.native
-  def openUri(uri: String, options: ConnectionOptions): ConnectionthenPromiseConnCatch = js.native
+  def openUri(uri: String, options: ConnectionOptions): js.Promise[Connection_] = js.native
   def openUri(
     uri: String,
     options: ConnectionOptions,
     callback: js.Function2[/* err */ js.Any, /* conn */ js.UndefOr[Connection_], Unit]
-  ): ConnectionthenPromiseConnCatch = js.native
+  ): ConnectionthenPromiseConn = js.native
   @JSName("openUri")
-  def openUri_Promise(uri: String, options: ConnectionOptions): js.Promise[Connection_] = js.native
+  def openUri_ConnectionthenPromiseConn(uri: String, options: ConnectionOptions): ConnectionthenPromiseConn = js.native
 }
 

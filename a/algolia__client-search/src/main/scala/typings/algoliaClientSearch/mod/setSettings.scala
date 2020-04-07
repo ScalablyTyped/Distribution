@@ -1,6 +1,6 @@
 package typings.algoliaClientSearch.mod
 
-import typings.algoliaClientSearch.ReadonlyWaitablePromiseSeFinally
+import typings.algoliaClientSearch.ReadonlyWaitablePromiseSe
 import typings.algoliaTransporter.mod.RequestOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,7 +12,7 @@ object setSettings extends js.Object {
   def apply(base: SearchIndex): js.Function2[
     /* settings */ Settings, 
     /* requestOptions */ js.UndefOr[RequestOptions with SetSettingsOptions], 
-    ReadonlyWaitablePromiseSeFinally
+    ReadonlyWaitablePromiseSe
   ] = js.native
 }
 

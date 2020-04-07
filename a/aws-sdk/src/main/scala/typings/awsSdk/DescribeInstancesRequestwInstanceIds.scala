@@ -26,3 +26,20 @@ trait DescribeInstancesRequestwInstanceIds extends js.Object {
   var StackId: js.UndefOr[String] = js.native
 }
 
+object DescribeInstancesRequestwInstanceIds {
+  @scala.inline
+  def apply(
+    $waiter: WaiterConfiguration = null,
+    InstanceIds: Strings = null,
+    LayerId: String = null,
+    StackId: String = null
+  ): DescribeInstancesRequestwInstanceIds = {
+    val __obj = js.Dynamic.literal()
+    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
+    if (InstanceIds != null) __obj.updateDynamic("InstanceIds")(InstanceIds.asInstanceOf[js.Any])
+    if (LayerId != null) __obj.updateDynamic("LayerId")(LayerId.asInstanceOf[js.Any])
+    if (StackId != null) __obj.updateDynamic("StackId")(StackId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DescribeInstancesRequestwInstanceIds]
+  }
+}
+

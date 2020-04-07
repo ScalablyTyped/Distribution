@@ -17,3 +17,12 @@ trait GetChangeRequestwaiterWai extends js.Object {
   var Id: ResourceId = js.native
 }
 
+object GetChangeRequestwaiterWai {
+  @scala.inline
+  def apply(Id: ResourceId, $waiter: WaiterConfiguration = null): GetChangeRequestwaiterWai = {
+    val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
+    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GetChangeRequestwaiterWai]
+  }
+}
+

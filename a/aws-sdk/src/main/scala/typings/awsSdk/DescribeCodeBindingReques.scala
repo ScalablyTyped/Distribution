@@ -17,3 +17,19 @@ trait DescribeCodeBindingReques extends js.Object {
   var SchemaVersion: js.UndefOr[string] = js.native
 }
 
+object DescribeCodeBindingReques {
+  @scala.inline
+  def apply(
+    Language: string,
+    RegistryName: string,
+    SchemaName: string,
+    $waiter: WaiterConfiguration = null,
+    SchemaVersion: string = null
+  ): DescribeCodeBindingReques = {
+    val __obj = js.Dynamic.literal(Language = Language.asInstanceOf[js.Any], RegistryName = RegistryName.asInstanceOf[js.Any], SchemaName = SchemaName.asInstanceOf[js.Any])
+    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
+    if (SchemaVersion != null) __obj.updateDynamic("SchemaVersion")(SchemaVersion.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DescribeCodeBindingReques]
+  }
+}
+

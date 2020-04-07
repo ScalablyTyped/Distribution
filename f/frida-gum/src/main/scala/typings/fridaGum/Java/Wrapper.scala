@@ -1,7 +1,6 @@
 package typings.fridaGum.Java
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.fridaGum.WrapperDictname
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,11 +45,11 @@ trait Wrapper[T /* <: Members[T] */]
     * Instance used for chaining up to super-class method implementations.
     */
   @JSName("$super")
-  var $super: WrapperDictname = js.native
+  var $super: typings.fridaGum.Wrapper = js.native
   /**
     * Retrieves a `java.lang.Class` wrapper for the current class.
     */
-  var `class`: WrapperDictname = js.native
+  var `class`: typings.fridaGum.Wrapper = js.native
   /**
     * Allocates a new instance without initializing it.
     *

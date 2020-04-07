@@ -33,11 +33,11 @@ import typings.awsSdkClientKmsBrowser.scheduleKeyDeletionExceptionsUnionMod.Sche
 import typings.awsSdkClientKmsBrowser.updateAliasExceptionsUnionMod.UpdateAliasExceptionsUnion
 import typings.awsSdkClientKmsBrowser.updateKeyDescriptionExceptionsUnionMod.UpdateKeyDescriptionExceptionsUnion
 import typings.awsSdkTypes.exceptionMod.ServiceException
+import typings.awsSdkTypes.responseMod.ResponseMetadata
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait DependencyTimeoutException
   extends ServiceException[DependencyTimeoutExceptionDetails]
      with CancelKeyDeletionExceptionsUnion
@@ -73,6 +73,21 @@ trait DependencyTimeoutException
      with UpdateAliasExceptionsUnion
      with UpdateKeyDescriptionExceptionsUnion {
   @JSName("name")
-  var name_DependencyTimeoutException: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.DependencyTimeoutException = js.native
+  var name_DependencyTimeoutException: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.DependencyTimeoutException
+}
+
+object DependencyTimeoutException {
+  @scala.inline
+  def apply(
+    $metadata: ResponseMetadata,
+    details: DependencyTimeoutExceptionDetails,
+    message: String,
+    name: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.DependencyTimeoutException,
+    stack: String = null
+  ): DependencyTimeoutException = {
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DependencyTimeoutException]
+  }
 }
 

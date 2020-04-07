@@ -1,6 +1,6 @@
 package typings.jupyterlabServices.messagesMod
 
-import typings.jupyterlabServices.AnonBody
+import typings.jupyterlabServices.AnonEvent
 import typings.jupyterlabServices.jupyterlabServicesStrings.debug_event
 import typings.jupyterlabServices.jupyterlabServicesStrings.iopub
 import typings.luminoCoreutils.jsonMod.JSONObject
@@ -14,14 +14,14 @@ trait IDebugEventMsg
   extends IIOPubMessage[debug_event]
      with _Message {
   @JSName("content")
-  var content_IDebugEventMsg: AnonBody
+  var content_IDebugEventMsg: AnonEvent
 }
 
 object IDebugEventMsg {
   @scala.inline
   def apply(
     channel: iopub,
-    content: AnonBody,
+    content: AnonEvent,
     header: IHeader[debug_event],
     metadata: JSONObject,
     parent_header: IHeader[MessageType] | js.Object,

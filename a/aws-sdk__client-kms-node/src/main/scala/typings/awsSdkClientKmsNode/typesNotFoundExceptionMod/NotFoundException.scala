@@ -32,11 +32,11 @@ import typings.awsSdkClientKmsNode.untagResourceExceptionsUnionMod.UntagResource
 import typings.awsSdkClientKmsNode.updateAliasExceptionsUnionMod.UpdateAliasExceptionsUnion
 import typings.awsSdkClientKmsNode.updateKeyDescriptionExceptionsUnionMod.UpdateKeyDescriptionExceptionsUnion
 import typings.awsSdkTypes.exceptionMod.ServiceException
+import typings.awsSdkTypes.responseMod.ResponseMetadata
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait NotFoundException
   extends ServiceException[NotFoundExceptionDetails]
      with CancelKeyDeletionExceptionsUnion
@@ -71,6 +71,21 @@ trait NotFoundException
      with UpdateAliasExceptionsUnion
      with UpdateKeyDescriptionExceptionsUnion {
   @JSName("name")
-  var name_NotFoundException: typings.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.NotFoundException = js.native
+  var name_NotFoundException: typings.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.NotFoundException
+}
+
+object NotFoundException {
+  @scala.inline
+  def apply(
+    $metadata: ResponseMetadata,
+    details: NotFoundExceptionDetails,
+    message: String,
+    name: typings.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.NotFoundException,
+    stack: String = null
+  ): NotFoundException = {
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NotFoundException]
+  }
 }
 

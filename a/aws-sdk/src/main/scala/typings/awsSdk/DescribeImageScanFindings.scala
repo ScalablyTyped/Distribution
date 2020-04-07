@@ -34,3 +34,22 @@ trait DescribeImageScanFindings extends js.Object {
   var repositoryName: RepositoryName = js.native
 }
 
+object DescribeImageScanFindings {
+  @scala.inline
+  def apply(
+    imageId: ImageIdentifier,
+    repositoryName: RepositoryName,
+    $waiter: WaiterConfiguration = null,
+    maxResults: Int | Double = null,
+    nextToken: NextToken = null,
+    registryId: RegistryId = null
+  ): DescribeImageScanFindings = {
+    val __obj = js.Dynamic.literal(imageId = imageId.asInstanceOf[js.Any], repositoryName = repositoryName.asInstanceOf[js.Any])
+    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
+    if (registryId != null) __obj.updateDynamic("registryId")(registryId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DescribeImageScanFindings]
+  }
+}
+

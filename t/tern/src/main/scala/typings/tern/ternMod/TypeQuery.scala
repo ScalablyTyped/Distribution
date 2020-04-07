@@ -6,7 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TypeQuery extends BaseQueryWithFile {
+trait TypeQuery
+  extends BaseQueryWithFile
+     with Query {
   /**
     * Determines how deep the type string must be expanded.
     * Nested objects will only display property types up to this depth,

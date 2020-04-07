@@ -1,5 +1,6 @@
 package typings.awsSdk
 
+import typings.awsSdk.sagemakerMod.TrainingJobName
 import typings.awsSdk.serviceMod.WaiterConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,5 +15,14 @@ trait DescribeTrainingJobReques extends js.Object {
     * The name of the training job.
     */
   var TrainingJobName: typings.awsSdk.sagemakerMod.TrainingJobName = js.native
+}
+
+object DescribeTrainingJobReques {
+  @scala.inline
+  def apply(TrainingJobName: TrainingJobName, $waiter: WaiterConfiguration = null): DescribeTrainingJobReques = {
+    val __obj = js.Dynamic.literal(TrainingJobName = TrainingJobName.asInstanceOf[js.Any])
+    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DescribeTrainingJobReques]
+  }
 }
 

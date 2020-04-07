@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "dojo"
-version := "v1.9-dt-20200226Z-b6312c"
+version := "v1.9-dt-20200226Z-5336c2"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

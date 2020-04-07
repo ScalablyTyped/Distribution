@@ -265,7 +265,7 @@
 | [ant-design__icons-vue](./a/ant-design__icons-vue) | Ant Design Icons for Vue | - |
 | [ant-design__pro-layout](./a/ant-design__pro-layout) | ant-design-pro layout, easy to use pro scaffolding | admin, ant, ant-design, ant-design-pro, antd, design, layout, menu, pro |
 | [ant-design__react-native](./a/ant-design__react-native) | 基于蚂蚁金服移动设计规范的 React Native 组件库 | ant, design, react, react-component, component, components, ui, framework, frontend, mobile, react native |
-| [ant-design__react-slick](./a/ant-design__react-slick) | - | - |
+| [ant-design__react-slick](./a/ant-design__react-slick) | React port of slick carousel | slick, carousel, Image slider, orbit, slider, react-component |
 | [antd](./a/antd) | An enterprise-class UI design language and React c | ant, component, components, design, framework, frontend, react, react-component, ui |
 | [antd-mobile](./a/antd-mobile) | 基于 React 的移动设计规范实现 | ant, design, react, react-component, component, components, ui, framework, frontend, mobile |
 | [antd-mobile-rn](./a/antd-mobile-rn) | 基于蚂蚁金服移动设计规范的 React Native 组件库 | ant, design, react, react-component, component, components, ui, framework, frontend, mobile, react native |
@@ -640,6 +640,7 @@
 | [babelify](./b/babelify) | Babel browserify transform | - |
 | [babylon](./b/babylon) | A JavaScript parser | babel, javascript, parser, babylon |
 | [babylon-walk](./b/babylon-walk) | Lightweight Babylon AST traversal | - |
+| [babylonjs](./b/babylonjs) | Babylon.js is a JavaScript 3D engine based on webg | 3D, javascript, html5, webgl |
 | [babyparse](./b/babyparse) | Fast and reliable CSV parser based on PapaParse | csv, parse, parsing, parser, delimited, text, data, auto-detect, comma, tab, stream |
 | [backbone](./b/backbone) | Give your JS App some Backbone with Models, Views, | model, view, controller, router, server, client, browser |
 | [backbone-associations](./b/backbone-associations) | Create object hierarchies with Backbone models. Re | Backbone, association, associated, nested, model, cyclic graph, qualified event paths, relational, relations |
@@ -1990,7 +1991,7 @@
 | [expo](./e/expo) | The Expo SDK | expo |
 | [expo-asset](./e/expo-asset) | An Expo universal module to download assets and pa | react-native, expo, asset |
 | [expo-constants](./e/expo-constants) | Provides system information that remains constant  | react-native, expo, constants |
-| [expo-error-recovery](./e/expo-error-recovery) | - | - |
+| [expo-error-recovery](./e/expo-error-recovery) | Utilities for helping you gracefully handle crashe | react-native, expo, expo-error-recovery, error-recovery |
 | [expo-file-system](./e/expo-file-system) | Provides access to the local file system on the de | react-native, expo, file-system, file |
 | [expo-font](./e/expo-font) | Load fonts at runtime and use them in React Native | react-native, expo, font |
 | [expo-keep-awake](./e/expo-keep-awake) | Provides a React component that prevents the scree | react-native, expo, awake, keep-awake |
@@ -4896,7 +4897,6 @@
 | [mongoose-auto-increment](./m/mongoose-auto-increment) | This plugin allows you to auto-increment any field | mongoose, plugin, auto-increment, auto, increment, automatic, autoincrement, auto_increment, autoinc, auto-inc, auto_inc, pureautoinc, mongoose-pureautoinc |
 | [mongoose-autopopulate](./m/mongoose-autopopulate) | Always populate() certain fields in your mongoose  | mongoose, populate, autopopulate, mongodb |
 | [mongoose-deep-populate](./m/mongoose-deep-populate) | Mongoose plugin to enable deep population of neste | mongo, mongodb, mongoose, populate, population, deep populate, deep population, models, nested models, populate models, model population, documents, nested documents, populate documents, documents population |
-| [mongoose-delete](./m/mongoose-delete) | Mongoose soft delete plugin | mongoose, soft, delete, delete, remove, plugin |
 | [mongoose-geojson-schema](./m/mongoose-geojson-schema) | Schema definitions for GeoJSON types for use with  | mongo, mongoose, mongoosejs, schema, geojson, point, geometry, feature, polygon, linestring |
 | [mongoose-lean-virtuals](./m/mongoose-lean-virtuals) | Attach virtuals to the results of mongoose queries | mongoose, lean, virtuals, mongodb |
 | [mongoose-mock](./m/mongoose-mock) | A replacement for mongoose in tests returning mode | mongoose, test, sinon |
@@ -7975,7 +7975,6 @@
 | [uglify-js](./u/uglify-js) | JavaScript parser, mangler/compressor and beautifi | cli, compress, compressor, ecma, ecmascript, es, es5, javascript, js, jsmin, min, minification, minifier, minify, optimize, optimizer, pack, packer, parse, parser, uglifier, uglify |
 | [uglifycss](./u/uglifycss) | Port of YUI CSS Compressor to NodeJS | css, stylesheet, uglify, minify |
 | [uglifyjs-webpack-plugin](./u/uglifyjs-webpack-plugin) | UglifyJS plugin for webpack | uglify, uglify-js, uglify-es, webpack, webpack-plugin |
-| [ui-box](./u/ui-box) | Blazing Fast React UI Primitive | react |
 | [ui-grid](./u/ui-grid) | Placeholder for Angular UI-Grid | - |
 | [ui-router-extras](./u/ui-router-extras) | UI-Router Extras: Sticky states, Future States, De | - |
 | [ui-select](./u/ui-select) | - | - |

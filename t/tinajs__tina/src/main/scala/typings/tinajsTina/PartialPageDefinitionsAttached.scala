@@ -1,9 +1,10 @@
 package typings.tinajsTina
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.Partial
 import typings.tinajsTina.mod.Component
 import typings.tinajsTina.mod.ComponentProperties
-import typings.tinajsTina.mod.Page
+import typings.tinajsTina.mod.PageDefinitions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation._
 /* Inlined std.Partial<@tinajs/tina.@tinajs/tina.PageDefinitions> */
 trait PartialPageDefinitionsAttached extends js.Object {
   var attached: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var beforeLoad: js.UndefOr[js.ThisFunction0[/* this */ Page, Unit]] = js.undefined
+  var beforeLoad: js.UndefOr[js.ThisFunction0[/* this */ this.type, Unit]] = js.undefined
   var compute: js.UndefOr[js.Function1[/* data */ StringDictionary[js.Any], StringDictionary[_]]] = js.undefined
   var created: js.UndefOr[js.Function0[Unit]] = js.undefined
   var data: js.UndefOr[StringDictionary[js.Any]] = js.undefined
@@ -19,17 +20,17 @@ trait PartialPageDefinitionsAttached extends js.Object {
   var methods: js.UndefOr[
     StringDictionary[js.ThisFunction1[/* this */ Component, /* repeated */ js.Any, _]]
   ] = js.undefined
-  var mixins: js.UndefOr[js.Array[PartialPageDefinitions]] = js.undefined
+  var mixins: js.UndefOr[js.Array[Partial[PageDefinitions]]] = js.undefined
   var moved: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onHide: js.UndefOr[js.ThisFunction0[/* this */ Page, Unit]] = js.undefined
-  var onLoad: js.UndefOr[js.ThisFunction1[/* this */ Page, /* options */ js.UndefOr[js.Any], Unit]] = js.undefined
-  var onPageScroll: js.UndefOr[js.Function1[/* event */ Page, Unit]] = js.undefined
-  var onPullDownRefresh: js.UndefOr[js.Function1[/* event */ Page, Unit]] = js.undefined
-  var onReachBottom: js.UndefOr[js.Function1[/* event */ Page, Unit]] = js.undefined
-  var onReady: js.UndefOr[js.ThisFunction0[/* this */ Page, Unit]] = js.undefined
-  var onShareAppMessage: js.UndefOr[js.Function1[/* event */ Page, Unit]] = js.undefined
-  var onShow: js.UndefOr[js.ThisFunction0[/* this */ Page, Unit]] = js.undefined
-  var onUnload: js.UndefOr[js.ThisFunction0[/* this */ Page, Unit]] = js.undefined
+  var onHide: js.UndefOr[js.ThisFunction0[/* this */ this.type, Unit]] = js.undefined
+  var onLoad: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* options */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var onPageScroll: js.UndefOr[js.Function1[/* event */ this.type, Unit]] = js.undefined
+  var onPullDownRefresh: js.UndefOr[js.Function1[/* event */ this.type, Unit]] = js.undefined
+  var onReachBottom: js.UndefOr[js.Function1[/* event */ this.type, Unit]] = js.undefined
+  var onReady: js.UndefOr[js.ThisFunction0[/* this */ this.type, Unit]] = js.undefined
+  var onShareAppMessage: js.UndefOr[js.Function1[/* event */ this.type, Unit]] = js.undefined
+  var onShow: js.UndefOr[js.ThisFunction0[/* this */ this.type, Unit]] = js.undefined
+  var onUnload: js.UndefOr[js.ThisFunction0[/* this */ this.type, Unit]] = js.undefined
   var properties: js.UndefOr[ComponentProperties] = js.undefined
   var ready: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
@@ -38,23 +39,23 @@ object PartialPageDefinitionsAttached {
   @scala.inline
   def apply(
     attached: () => Unit = null,
-    beforeLoad: js.ThisFunction0[/* this */ Page, Unit] = null,
+    beforeLoad: js.ThisFunction0[PartialPageDefinitionsAttached, Unit] = null,
     compute: /* data */ StringDictionary[js.Any] => StringDictionary[_] = null,
     created: () => Unit = null,
     data: StringDictionary[js.Any] = null,
     detached: () => Unit = null,
     methods: StringDictionary[js.ThisFunction1[/* this */ Component, /* repeated */ js.Any, _]] = null,
-    mixins: js.Array[PartialPageDefinitions] = null,
+    mixins: js.Array[Partial[PageDefinitions]] = null,
     moved: () => Unit = null,
-    onHide: js.ThisFunction0[/* this */ Page, Unit] = null,
-    onLoad: js.ThisFunction1[/* this */ Page, /* options */ js.UndefOr[js.Any], Unit] = null,
-    onPageScroll: /* event */ Page => Unit = null,
-    onPullDownRefresh: /* event */ Page => Unit = null,
-    onReachBottom: /* event */ Page => Unit = null,
-    onReady: js.ThisFunction0[/* this */ Page, Unit] = null,
-    onShareAppMessage: /* event */ Page => Unit = null,
-    onShow: js.ThisFunction0[/* this */ Page, Unit] = null,
-    onUnload: js.ThisFunction0[/* this */ Page, Unit] = null,
+    onHide: js.ThisFunction0[PartialPageDefinitionsAttached, Unit] = null,
+    onLoad: js.ThisFunction1[PartialPageDefinitionsAttached, /* options */ js.UndefOr[js.Any], Unit] = null,
+    onPageScroll: PartialPageDefinitionsAttached => Unit = null,
+    onPullDownRefresh: PartialPageDefinitionsAttached => Unit = null,
+    onReachBottom: PartialPageDefinitionsAttached => Unit = null,
+    onReady: js.ThisFunction0[PartialPageDefinitionsAttached, Unit] = null,
+    onShareAppMessage: PartialPageDefinitionsAttached => Unit = null,
+    onShow: js.ThisFunction0[PartialPageDefinitionsAttached, Unit] = null,
+    onUnload: js.ThisFunction0[PartialPageDefinitionsAttached, Unit] = null,
     properties: ComponentProperties = null,
     ready: () => Unit = null
   ): PartialPageDefinitionsAttached = {

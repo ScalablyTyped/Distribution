@@ -1,49 +1,43 @@
 package typings.broccoliNodeApi.mod
 
-import typings.broccoliNodeApi.AnonCachePath
-import typings.broccoliNodeApi.broccoliNodeApiStrings.source
-import typings.broccoliNodeApi.broccoliNodeApiStrings.transform
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/* Inlined broccoli-node-api.broccoli-node-api.NodeInfoMap[broccoli-node-api.broccoli-node-api.NodeType] */
 /* Rewritten from type alias, can be one of: 
-  - typings.broccoliNodeApi.mod.SourceNodeInfo
-  - typings.broccoliNodeApi.mod.TransformNodeInfo
+  - typings.broccoliNodeApi.broccoliNodeApiStrings.needsCache
+  - typings.broccoliNodeApi.broccoliNodeApiStrings.setup
+  - typings.broccoliNodeApi.broccoliNodeApiStrings.getCallbackObject
+  - typings.broccoliNodeApi.broccoliNodeApiStrings.volatile
+  - typings.broccoliNodeApi.broccoliNodeApiStrings.watched
+  - typings.broccoliNodeApi.broccoliNodeApiStrings.persistentOutput
+  - typings.broccoliNodeApi.broccoliNodeApiStrings.inputNodes
+  - typings.broccoliNodeApi.broccoliNodeApiStrings.trackInputChanges
+  - typings.broccoliNodeApi.broccoliNodeApiStrings.sourceDirectory
 */
 trait NodeInfo extends js.Object
 
 object NodeInfo {
   @scala.inline
-  def SourceNodeInfo(
-    instantiationStack: String,
-    name: String,
-    nodeType: source,
-    sourceDirectory: String,
-    watched: Boolean,
-    annotation: String = null
-  ): NodeInfo = {
-    val __obj = js.Dynamic.literal(instantiationStack = instantiationStack.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nodeType = nodeType.asInstanceOf[js.Any], sourceDirectory = sourceDirectory.asInstanceOf[js.Any], watched = watched.asInstanceOf[js.Any])
-    if (annotation != null) __obj.updateDynamic("annotation")(annotation.asInstanceOf[js.Any])
-    __obj.asInstanceOf[NodeInfo]
-  }
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
   @scala.inline
-  def TransformNodeInfo(
-    getCallbackObject: () => CallbackObject,
-    inputNodes: js.Array[InputNode],
-    instantiationStack: String,
-    name: String,
-    needsCache: Boolean,
-    nodeType: transform,
-    persistentOutput: Boolean,
-    setup: (FeatureSet, AnonCachePath) => Unit,
-    trackInputChanges: Boolean,
-    volatile: Boolean,
-    annotation: String = null
-  ): NodeInfo = {
-    val __obj = js.Dynamic.literal(getCallbackObject = js.Any.fromFunction0(getCallbackObject), inputNodes = inputNodes.asInstanceOf[js.Any], instantiationStack = instantiationStack.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], needsCache = needsCache.asInstanceOf[js.Any], nodeType = nodeType.asInstanceOf[js.Any], persistentOutput = persistentOutput.asInstanceOf[js.Any], setup = js.Any.fromFunction2(setup), trackInputChanges = trackInputChanges.asInstanceOf[js.Any], volatile = volatile.asInstanceOf[js.Any])
-    if (annotation != null) __obj.updateDynamic("annotation")(annotation.asInstanceOf[js.Any])
-    __obj.asInstanceOf[NodeInfo]
-  }
+  def getCallbackObject: typings.broccoliNodeApi.broccoliNodeApiStrings.getCallbackObject = this.cast("getCallbackObject")
+  @scala.inline
+  def inputNodes: typings.broccoliNodeApi.broccoliNodeApiStrings.inputNodes = this.cast("inputNodes")
+  @scala.inline
+  def needsCache: typings.broccoliNodeApi.broccoliNodeApiStrings.needsCache = this.cast("needsCache")
+  @scala.inline
+  def persistentOutput: typings.broccoliNodeApi.broccoliNodeApiStrings.persistentOutput = this.cast("persistentOutput")
+  @scala.inline
+  def setup: typings.broccoliNodeApi.broccoliNodeApiStrings.setup = this.cast("setup")
+  @scala.inline
+  def sourceDirectory: typings.broccoliNodeApi.broccoliNodeApiStrings.sourceDirectory = this.cast("sourceDirectory")
+  @scala.inline
+  def trackInputChanges: typings.broccoliNodeApi.broccoliNodeApiStrings.trackInputChanges = this.cast("trackInputChanges")
+  @scala.inline
+  def volatile: typings.broccoliNodeApi.broccoliNodeApiStrings.volatile = this.cast("volatile")
+  @scala.inline
+  def watched: typings.broccoliNodeApi.broccoliNodeApiStrings.watched = this.cast("watched")
 }
 

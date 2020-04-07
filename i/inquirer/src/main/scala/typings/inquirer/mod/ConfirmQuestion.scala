@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation._
   * @template T
   * The type of the answers.
   */
-trait ConfirmQuestion[T /* <: Answers */]
-  extends Question[T]
-     with DistinctQuestion[T] {
+trait ConfirmQuestion[T /* <: Answers */] extends Question[T] {
   /**
     * @inheritdoc
     */

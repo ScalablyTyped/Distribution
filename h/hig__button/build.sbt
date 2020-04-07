@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "hig__button"
-version := "1.4-dt-20191015Z-d6336a"
+version := "1.4-dt-20191015Z-1ef7fd"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,5 +1,7 @@
 package typings.awsSdk
 
+import typings.awsSdk.cloudformationMod.NextToken
+import typings.awsSdk.cloudformationMod.StackName
 import typings.awsSdk.serviceMod.WaiterConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,5 +20,16 @@ trait DescribeStacksInputwaiter extends js.Object {
     * The name or the unique stack ID that is associated with the stack, which are not always interchangeable:   Running stacks: You can specify either the stack's name or its unique stack ID.   Deleted stacks: You must specify the unique stack ID.   Default: There is no default value.
     */
   var StackName: js.UndefOr[typings.awsSdk.cloudformationMod.StackName] = js.native
+}
+
+object DescribeStacksInputwaiter {
+  @scala.inline
+  def apply($waiter: WaiterConfiguration = null, NextToken: NextToken = null, StackName: StackName = null): DescribeStacksInputwaiter = {
+    val __obj = js.Dynamic.literal()
+    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
+    if (StackName != null) __obj.updateDynamic("StackName")(StackName.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DescribeStacksInputwaiter]
+  }
 }
 

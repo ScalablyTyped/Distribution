@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation._
   * @template T
   * The type of the answers.
   */
-trait ListQuestion[T /* <: Answers */]
-  extends ListQuestionOptionsBase[T, ListChoiceMap[T]]
-     with DistinctQuestion[T] {
+trait ListQuestion[T /* <: Answers */] extends ListQuestionOptionsBase[T, ListChoiceMap[T]] {
   /**
     * @inheritdoc
     */

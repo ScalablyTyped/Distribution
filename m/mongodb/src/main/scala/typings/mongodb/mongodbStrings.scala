@@ -58,9 +58,6 @@ object mongodbStrings {
   sealed trait SetFields extends js.Object
   
   @js.native
-  sealed trait UpdateQuery extends js.Object
-  
-  @js.native
   sealed trait _empty extends js.Object
   
   @js.native
@@ -215,8 +212,6 @@ object mongodbStrings {
   def `SCRAM-SHA-256`: `SCRAM-SHA-256` = "SCRAM-SHA-256".asInstanceOf[`SCRAM-SHA-256`]
   @scala.inline
   def SetFields: SetFields = "SetFields".asInstanceOf[SetFields]
-  @scala.inline
-  def UpdateQuery: UpdateQuery = "UpdateQuery".asInstanceOf[UpdateQuery]
   @scala.inline
   def _empty: _empty = "".asInstanceOf[_empty]
   @scala.inline

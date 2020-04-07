@@ -4,13 +4,21 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Stamp extends js.Object {
   @JSName("$isSync")
-  var $isSync: Boolean = js.native
+  var $isSync: Boolean
   @JSName("$uuid")
-  var $uuid: String = js.native
+  var $uuid: String
   @JSName("$wuid")
-  var $wuid: String = js.native
+  var $wuid: String
+}
+
+object Stamp {
+  @scala.inline
+  def apply($isSync: Boolean, $uuid: String, $wuid: String): Stamp = {
+    val __obj = js.Dynamic.literal($isSync = $isSync.asInstanceOf[js.Any], $uuid = $uuid.asInstanceOf[js.Any], $wuid = $wuid.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[Stamp]
+  }
 }
 

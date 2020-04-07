@@ -2,11 +2,19 @@ package typings.uirouterAngularjs.interfaceMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.uirouterCore.commonCommonMod.IInjectable
+import typings.uirouterCore.paramsInterfaceMod.ParamDeclaration
+import typings.uirouterCore.resolveInterfaceMod.ResolvePolicy
+import typings.uirouterCore.stateInterfaceMod.LazyLoadResult
+import typings.uirouterCore.stateInterfaceMod.RedirectToResult
+import typings.uirouterCore.stateInterfaceMod.ResolveTypes
+import typings.uirouterCore.stateInterfaceMod.StateDeclaration
+import typings.uirouterCore.stateObjectMod.StateObject
+import typings.uirouterCore.transitionTransitionMod.Transition
+import typings.uirouterCore.viewInterfaceMod.ViewContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Ng1StateDeclaration
   extends _Ng1StateDeclaration
      with Ng1ViewDeclaration {
@@ -37,7 +45,7 @@ trait Ng1StateDeclaration
     * ```
     */
   @JSName("onEnter")
-  var onEnter_Ng1StateDeclaration: js.UndefOr[Ng1StateTransitionHook | IInjectable] = js.native
+  var onEnter_Ng1StateDeclaration: js.UndefOr[Ng1StateTransitionHook | IInjectable] = js.undefined
   /**
     * A state hook invoked when a state is being exited.
     *
@@ -65,7 +73,7 @@ trait Ng1StateDeclaration
     * ```
     */
   @JSName("onExit")
-  var onExit_Ng1StateDeclaration: js.UndefOr[Ng1StateTransitionHook | IInjectable] = js.native
+  var onExit_Ng1StateDeclaration: js.UndefOr[Ng1StateTransitionHook | IInjectable] = js.undefined
   /**
     * A state hook invoked when a state is being retained.
     *
@@ -93,7 +101,7 @@ trait Ng1StateDeclaration
     * ```
     */
   @JSName("onRetain")
-  var onRetain_Ng1StateDeclaration: js.UndefOr[Ng1StateTransitionHook | IInjectable] = js.native
+  var onRetain_Ng1StateDeclaration: js.UndefOr[Ng1StateTransitionHook | IInjectable] = js.undefined
   /**
     * An optional object which defines multiple named views.
     *
@@ -242,6 +250,79 @@ trait Ng1StateDeclaration
     * - controllerProvider
     */
   @JSName("views")
-  var views_Ng1StateDeclaration: js.UndefOr[StringDictionary[String | Ng1ViewDeclaration]] = js.native
+  var views_Ng1StateDeclaration: js.UndefOr[StringDictionary[String | Ng1ViewDeclaration]] = js.undefined
+}
+
+object Ng1StateDeclaration {
+  @scala.inline
+  def apply(
+    $context: ViewContext = null,
+    $name: String = null,
+    $type: String = null,
+    $uiViewContextAnchor: String = null,
+    $uiViewName: String = null,
+    DollarDollarstate: () => StateObject = null,
+    `abstract`: js.UndefOr[Boolean] = js.undefined,
+    bindings: StringDictionary[String] = null,
+    component: String = null,
+    componentProvider: IInjectable = null,
+    controller: IInjectable | String = null,
+    controllerAs: String = null,
+    controllerProvider: IInjectable = null,
+    data: js.Any = null,
+    dynamic: js.UndefOr[Boolean] = js.undefined,
+    lazyLoad: (/* transition */ Transition, /* state */ StateDeclaration) => js.Promise[LazyLoadResult] = null,
+    name: String = null,
+    onEnter: Ng1StateTransitionHook | IInjectable = null,
+    onExit: Ng1StateTransitionHook | IInjectable = null,
+    onRetain: Ng1StateTransitionHook | IInjectable = null,
+    params: StringDictionary[ParamDeclaration | js.Any] = null,
+    parent: String | StateDeclaration = null,
+    redirectTo: RedirectToResult | (js.Function1[/* transition */ Transition, js.Promise[RedirectToResult] | RedirectToResult]) = null,
+    reloadOnSearch: js.UndefOr[Boolean] = js.undefined,
+    resolve: js.Array[ResolveTypes] | StringDictionary[IInjectable] = null,
+    resolveAs: String = null,
+    resolvePolicy: ResolvePolicy = null,
+    template: js.Function | String = null,
+    templateProvider: IInjectable = null,
+    templateUrl: String | js.Function = null,
+    url: String = null,
+    views: StringDictionary[String | Ng1ViewDeclaration] = null
+  ): Ng1StateDeclaration = {
+    val __obj = js.Dynamic.literal()
+    if ($context != null) __obj.updateDynamic("$context")($context.asInstanceOf[js.Any])
+    if ($name != null) __obj.updateDynamic("$name")($name.asInstanceOf[js.Any])
+    if ($type != null) __obj.updateDynamic("$type")($type.asInstanceOf[js.Any])
+    if ($uiViewContextAnchor != null) __obj.updateDynamic("$uiViewContextAnchor")($uiViewContextAnchor.asInstanceOf[js.Any])
+    if ($uiViewName != null) __obj.updateDynamic("$uiViewName")($uiViewName.asInstanceOf[js.Any])
+    if (DollarDollarstate != null) __obj.updateDynamic("$$state")(js.Any.fromFunction0(DollarDollarstate))
+    if (!js.isUndefined(`abstract`)) __obj.updateDynamic("abstract")(`abstract`.asInstanceOf[js.Any])
+    if (bindings != null) __obj.updateDynamic("bindings")(bindings.asInstanceOf[js.Any])
+    if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
+    if (componentProvider != null) __obj.updateDynamic("componentProvider")(componentProvider.asInstanceOf[js.Any])
+    if (controller != null) __obj.updateDynamic("controller")(controller.asInstanceOf[js.Any])
+    if (controllerAs != null) __obj.updateDynamic("controllerAs")(controllerAs.asInstanceOf[js.Any])
+    if (controllerProvider != null) __obj.updateDynamic("controllerProvider")(controllerProvider.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (!js.isUndefined(dynamic)) __obj.updateDynamic("dynamic")(dynamic.asInstanceOf[js.Any])
+    if (lazyLoad != null) __obj.updateDynamic("lazyLoad")(js.Any.fromFunction2(lazyLoad))
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (onEnter != null) __obj.updateDynamic("onEnter")(onEnter.asInstanceOf[js.Any])
+    if (onExit != null) __obj.updateDynamic("onExit")(onExit.asInstanceOf[js.Any])
+    if (onRetain != null) __obj.updateDynamic("onRetain")(onRetain.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (redirectTo != null) __obj.updateDynamic("redirectTo")(redirectTo.asInstanceOf[js.Any])
+    if (!js.isUndefined(reloadOnSearch)) __obj.updateDynamic("reloadOnSearch")(reloadOnSearch.asInstanceOf[js.Any])
+    if (resolve != null) __obj.updateDynamic("resolve")(resolve.asInstanceOf[js.Any])
+    if (resolveAs != null) __obj.updateDynamic("resolveAs")(resolveAs.asInstanceOf[js.Any])
+    if (resolvePolicy != null) __obj.updateDynamic("resolvePolicy")(resolvePolicy.asInstanceOf[js.Any])
+    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
+    if (templateProvider != null) __obj.updateDynamic("templateProvider")(templateProvider.asInstanceOf[js.Any])
+    if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    if (views != null) __obj.updateDynamic("views")(views.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Ng1StateDeclaration]
+  }
 }
 

@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "graphql-tag"
-version := "2.10.3-df94b9"
+version := "2.10.3-170422"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "graphql" % "14.6.0-603e55",
+  "org.scalablytyped" %%% "graphql" % "14.6.0-f78e99",
   "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")

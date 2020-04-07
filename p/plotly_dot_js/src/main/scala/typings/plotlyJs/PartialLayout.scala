@@ -34,7 +34,7 @@ import scala.scalajs.js.annotation._
 /* Inlined std.Partial<plotly.js.plotly.js.Layout> */
 trait PartialLayout extends js.Object {
   var angularaxis: js.UndefOr[js.Object] = js.undefined
-  var annotations: js.UndefOr[js.Array[PartialAnnotationsAlign]] = js.undefined
+  var annotations: js.UndefOr[js.Array[PartialAnnotations]] = js.undefined
   var autosize: js.UndefOr[Boolean] = js.undefined
   var bargap: js.UndefOr[`0` | `1`] = js.undefined
   var bargroupgap: js.UndefOr[`0` | `1`] = js.undefined
@@ -126,7 +126,7 @@ object PartialLayout {
   @scala.inline
   def apply(
     angularaxis: js.Object = null,
-    annotations: js.Array[PartialAnnotationsAlign] = null,
+    annotations: js.Array[PartialAnnotations] = null,
     autosize: js.UndefOr[Boolean] = js.undefined,
     bargap: `0` | `1` = null,
     bargroupgap: `0` | `1` = null,

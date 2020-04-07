@@ -9,11 +9,11 @@ import typings.awsSdkClientKmsNode.generateDataKeyExceptionsUnionMod.GenerateDat
 import typings.awsSdkClientKmsNode.generateDataKeyWithoutPlaintextExceptionsUnionMod.GenerateDataKeyWithoutPlaintextExceptionsUnion
 import typings.awsSdkClientKmsNode.reEncryptExceptionsUnionMod.ReEncryptExceptionsUnion
 import typings.awsSdkTypes.exceptionMod.ServiceException
+import typings.awsSdkTypes.responseMod.ResponseMetadata
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait DisabledException
   extends ServiceException[DisabledExceptionDetails]
      with CreateGrantExceptionsUnion
@@ -25,6 +25,21 @@ trait DisabledException
      with GenerateDataKeyWithoutPlaintextExceptionsUnion
      with ReEncryptExceptionsUnion {
   @JSName("name")
-  var name_DisabledException: typings.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.DisabledException = js.native
+  var name_DisabledException: typings.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.DisabledException
+}
+
+object DisabledException {
+  @scala.inline
+  def apply(
+    $metadata: ResponseMetadata,
+    details: DisabledExceptionDetails,
+    message: String,
+    name: typings.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.DisabledException,
+    stack: String = null
+  ): DisabledException = {
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DisabledException]
+  }
 }
 

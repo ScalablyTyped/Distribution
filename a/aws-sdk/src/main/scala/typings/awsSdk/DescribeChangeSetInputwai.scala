@@ -1,6 +1,7 @@
 package typings.awsSdk
 
 import typings.awsSdk.cloudformationMod.ChangeSetNameOrId
+import typings.awsSdk.cloudformationMod.NextToken
 import typings.awsSdk.cloudformationMod.StackNameOrId
 import typings.awsSdk.serviceMod.WaiterConfiguration
 import scala.scalajs.js
@@ -24,5 +25,21 @@ trait DescribeChangeSetInputwai extends js.Object {
     * If you specified the name of a change set, specify the stack name or ID (ARN) of the change set you want to describe.
     */
   var StackName: js.UndefOr[StackNameOrId] = js.native
+}
+
+object DescribeChangeSetInputwai {
+  @scala.inline
+  def apply(
+    ChangeSetName: ChangeSetNameOrId,
+    $waiter: WaiterConfiguration = null,
+    NextToken: NextToken = null,
+    StackName: StackNameOrId = null
+  ): DescribeChangeSetInputwai = {
+    val __obj = js.Dynamic.literal(ChangeSetName = ChangeSetName.asInstanceOf[js.Any])
+    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
+    if (StackName != null) __obj.updateDynamic("StackName")(StackName.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DescribeChangeSetInputwai]
+  }
 }
 

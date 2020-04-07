@@ -12,6 +12,9 @@ object themeUiComponentsStrings {
   sealed trait _empty extends js.Object
   
   @js.native
+  sealed trait a extends js.Object
+  
+  @js.native
   sealed trait additions extends js.Object
   
   @js.native
@@ -28,6 +31,9 @@ object themeUiComponentsStrings {
   
   @js.native
   sealed trait anonymous extends js.Object
+  
+  @js.native
+  sealed trait as extends js.Object
   
   @js.native
   sealed trait ascending extends js.Object
@@ -54,7 +60,13 @@ object themeUiComponentsStrings {
   sealed trait butt extends js.Object
   
   @js.native
+  sealed trait button extends js.Object
+  
+  @js.native
   sealed trait central extends js.Object
+  
+  @js.native
+  sealed trait children extends js.Object
   
   @js.native
   sealed trait colors extends js.Object
@@ -87,6 +99,9 @@ object themeUiComponentsStrings {
   sealed trait grid extends js.Object
   
   @js.native
+  sealed trait h2 extends js.Object
+  
+  @js.native
   sealed trait hanging extends js.Object
   
   @js.native
@@ -94,6 +109,9 @@ object themeUiComponentsStrings {
   
   @js.native
   sealed trait ideographic extends js.Object
+  
+  @js.native
+  sealed trait img extends js.Object
   
   @js.native
   sealed trait inherit extends js.Object
@@ -105,7 +123,13 @@ object themeUiComponentsStrings {
   sealed trait `inline` extends js.Object
   
   @js.native
+  sealed trait input extends js.Object
+  
+  @js.native
   sealed trait isolated extends js.Object
+  
+  @js.native
+  sealed trait label extends js.Object
   
   @js.native
   sealed trait linearRGB extends js.Object
@@ -144,6 +168,9 @@ object themeUiComponentsStrings {
   sealed trait move extends js.Object
   
   @js.native
+  sealed trait name extends js.Object
+  
+  @js.native
   sealed trait no extends js.Object
   
   @js.native
@@ -168,6 +195,9 @@ object themeUiComponentsStrings {
   sealed trait popup extends js.Object
   
   @js.native
+  sealed trait progress extends js.Object
+  
+  @js.native
   sealed trait removals extends js.Object
   
   @js.native
@@ -178,6 +208,9 @@ object themeUiComponentsStrings {
   
   @js.native
   sealed trait sRGB extends js.Object
+  
+  @js.native
+  sealed trait select extends js.Object
   
   @js.native
   sealed trait space extends js.Object
@@ -207,6 +240,9 @@ object themeUiComponentsStrings {
   sealed trait `text-before-edge` extends js.Object
   
   @js.native
+  sealed trait textarea extends js.Object
+  
+  @js.native
   sealed trait time extends js.Object
   
   @js.native
@@ -226,6 +262,8 @@ object themeUiComponentsStrings {
   @scala.inline
   def _empty: _empty = "".asInstanceOf[_empty]
   @scala.inline
+  def a: a = "a".asInstanceOf[a]
+  @scala.inline
   def additions: additions = "additions".asInstanceOf[additions]
   @scala.inline
   def `additions text`: `additions text` = "additions text".asInstanceOf[`additions text`]
@@ -237,6 +275,8 @@ object themeUiComponentsStrings {
   def alphabetic: alphabetic = "alphabetic".asInstanceOf[alphabetic]
   @scala.inline
   def anonymous: anonymous = "anonymous".asInstanceOf[anonymous]
+  @scala.inline
+  def as: as = "as".asInstanceOf[as]
   @scala.inline
   def ascending: ascending = "ascending".asInstanceOf[ascending]
   @scala.inline
@@ -254,7 +294,11 @@ object themeUiComponentsStrings {
   @scala.inline
   def butt: butt = "butt".asInstanceOf[butt]
   @scala.inline
+  def button: button = "button".asInstanceOf[button]
+  @scala.inline
   def central: central = "central".asInstanceOf[central]
+  @scala.inline
+  def children: children = "children".asInstanceOf[children]
   @scala.inline
   def colors: colors = "colors".asInstanceOf[colors]
   @scala.inline
@@ -276,11 +320,15 @@ object themeUiComponentsStrings {
   @scala.inline
   def grid: grid = "grid".asInstanceOf[grid]
   @scala.inline
+  def h2: h2 = "h2".asInstanceOf[h2]
+  @scala.inline
   def hanging: hanging = "hanging".asInstanceOf[hanging]
   @scala.inline
   def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   @scala.inline
   def ideographic: ideographic = "ideographic".asInstanceOf[ideographic]
+  @scala.inline
+  def img: img = "img".asInstanceOf[img]
   @scala.inline
   def inherit: inherit = "inherit".asInstanceOf[inherit]
   @scala.inline
@@ -288,7 +336,11 @@ object themeUiComponentsStrings {
   @scala.inline
   def `inline`: `inline` = "inline".asInstanceOf[`inline`]
   @scala.inline
+  def input: input = "input".asInstanceOf[input]
+  @scala.inline
   def isolated: isolated = "isolated".asInstanceOf[isolated]
+  @scala.inline
+  def label: label = "label".asInstanceOf[label]
   @scala.inline
   def linearRGB: linearRGB = "linearRGB".asInstanceOf[linearRGB]
   @scala.inline
@@ -314,6 +366,8 @@ object themeUiComponentsStrings {
   @scala.inline
   def move: move = "move".asInstanceOf[move]
   @scala.inline
+  def name: name = "name".asInstanceOf[name]
+  @scala.inline
   def no: no = "no".asInstanceOf[no]
   @scala.inline
   def none: none = "none".asInstanceOf[none]
@@ -330,6 +384,8 @@ object themeUiComponentsStrings {
   @scala.inline
   def popup: popup = "popup".asInstanceOf[popup]
   @scala.inline
+  def progress: progress = "progress".asInstanceOf[progress]
+  @scala.inline
   def removals: removals = "removals".asInstanceOf[removals]
   @scala.inline
   def replace: replace = "replace".asInstanceOf[replace]
@@ -337,6 +393,8 @@ object themeUiComponentsStrings {
   def round: round = "round".asInstanceOf[round]
   @scala.inline
   def sRGB: sRGB = "sRGB".asInstanceOf[sRGB]
+  @scala.inline
+  def select: select = "select".asInstanceOf[select]
   @scala.inline
   def space: space = "space".asInstanceOf[space]
   @scala.inline
@@ -355,6 +413,8 @@ object themeUiComponentsStrings {
   def `text-after-edge`: `text-after-edge` = "text-after-edge".asInstanceOf[`text-after-edge`]
   @scala.inline
   def `text-before-edge`: `text-before-edge` = "text-before-edge".asInstanceOf[`text-before-edge`]
+  @scala.inline
+  def textarea: textarea = "textarea".asInstanceOf[textarea]
   @scala.inline
   def time: time = "time".asInstanceOf[time]
   @scala.inline

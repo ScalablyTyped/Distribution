@@ -97,3 +97,58 @@ trait ParamsResourceReportsQuery extends StandardParameters {
   var startIndex: js.UndefOr[Double] = js.native
 }
 
+object ParamsResourceReportsQuery {
+  @scala.inline
+  def apply(
+    $Dotxgafv: String = null,
+    access_token: String = null,
+    alt: String = null,
+    auth: String | OAuth2Client | JWT | Compute | UserRefreshClient = null,
+    callback: String = null,
+    currency: String = null,
+    dimensions: String = null,
+    endDate: String = null,
+    fields: String = null,
+    filters: String = null,
+    ids: String = null,
+    includeHistoricalChannelData: js.UndefOr[Boolean] = js.undefined,
+    key: String = null,
+    maxResults: Int | Double = null,
+    metrics: String = null,
+    oauth_token: String = null,
+    prettyPrint: js.UndefOr[Boolean] = js.undefined,
+    quotaUser: String = null,
+    sort: String = null,
+    startDate: String = null,
+    startIndex: Int | Double = null,
+    uploadType: String = null,
+    upload_protocol: String = null
+  ): ParamsResourceReportsQuery = {
+    val __obj = js.Dynamic.literal()
+    if ($Dotxgafv != null) __obj.updateDynamic("$.xgafv")($Dotxgafv.asInstanceOf[js.Any])
+    if (access_token != null) __obj.updateDynamic("access_token")(access_token.asInstanceOf[js.Any])
+    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
+    if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
+    if (callback != null) __obj.updateDynamic("callback")(callback.asInstanceOf[js.Any])
+    if (currency != null) __obj.updateDynamic("currency")(currency.asInstanceOf[js.Any])
+    if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions.asInstanceOf[js.Any])
+    if (endDate != null) __obj.updateDynamic("endDate")(endDate.asInstanceOf[js.Any])
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
+    if (ids != null) __obj.updateDynamic("ids")(ids.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeHistoricalChannelData)) __obj.updateDynamic("includeHistoricalChannelData")(includeHistoricalChannelData.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (metrics != null) __obj.updateDynamic("metrics")(metrics.asInstanceOf[js.Any])
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
+    if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
+    if (startDate != null) __obj.updateDynamic("startDate")(startDate.asInstanceOf[js.Any])
+    if (startIndex != null) __obj.updateDynamic("startIndex")(startIndex.asInstanceOf[js.Any])
+    if (uploadType != null) __obj.updateDynamic("uploadType")(uploadType.asInstanceOf[js.Any])
+    if (upload_protocol != null) __obj.updateDynamic("upload_protocol")(upload_protocol.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ParamsResourceReportsQuery]
+  }
+}
+

@@ -49,7 +49,6 @@ import typings.officeUiFabricReact.officeUiFabricReactStrings.vertical
 import typings.officeUiFabricReact.officeUiFabricReactStrings.yes
 import typings.officeUiFabricReact.stackTypesMod.Alignment
 import typings.officeUiFabricReact.stackTypesMod.IStackProps
-import typings.officeUiFabricReact.stackTypesMod.IStackSlots
 import typings.officeUiFabricReact.stackTypesMod.IStackStyles
 import typings.officeUiFabricReact.stackTypesMod.IStackTokens
 import typings.react.AnonHtml
@@ -274,11 +273,7 @@ trait PartialIStackProps extends js.Object {
   var root: js.UndefOr[IHTMLSlot] = js.undefined
   var security: js.UndefOr[String] = js.undefined
   var slot: js.UndefOr[String] = js.undefined
-  var slots: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in 'root' | 'inner' ]:? @uifabric/foundation.@uifabric/foundation/lib/ISlots.ISlotOptions<@uifabric/foundation.@uifabric/foundation/lib/ISlots.ExtractProps<office-ui-fabric-react.office-ui-fabric-react/lib/components/Stack/Stack.types.IStackSlots[key]>>}
-    */ typings.officeUiFabricReact.officeUiFabricReactStrings.PartialIStackProps with IStackSlots
-  ] = js.undefined
+  var slots: js.UndefOr[keyinkeyofIStackSlotsISlo] = js.undefined
   var spellCheck: js.UndefOr[Booleanish] = js.undefined
   var style: js.UndefOr[CSSProperties] = js.undefined
   var styles: js.UndefOr[IStylesFunctionOrObject[IStackProps, IStackTokens, IStackStyles]] = js.undefined
@@ -475,9 +470,7 @@ object PartialIStackProps {
     root: IHTMLSlot = null,
     security: String = null,
     slot: String = null,
-    slots: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in 'root' | 'inner' ]:? @uifabric/foundation.@uifabric/foundation/lib/ISlots.ISlotOptions<@uifabric/foundation.@uifabric/foundation/lib/ISlots.ExtractProps<office-ui-fabric-react.office-ui-fabric-react/lib/components/Stack/Stack.types.IStackSlots[key]>>}
-    */ typings.officeUiFabricReact.officeUiFabricReactStrings.PartialIStackProps with IStackSlots = null,
+    slots: keyinkeyofIStackSlotsISlo = null,
     spellCheck: js.UndefOr[Boolean] = js.undefined,
     style: CSSProperties = null,
     styles: IStylesFunctionOrObject[IStackProps, IStackTokens, IStackStyles] = null,

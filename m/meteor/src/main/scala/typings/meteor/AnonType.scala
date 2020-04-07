@@ -7,11 +7,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait AnonType
   extends CurrentDateModifier
      with typings.meteor.mongoMod.Mongo.CurrentDateModifier {
   @JSName("$type")
-  var $type: timestamp | date = js.native
+  var $type: timestamp | date
+}
+
+object AnonType {
+  @scala.inline
+  def apply($type: timestamp | date): AnonType = {
+    val __obj = js.Dynamic.literal($type = $type.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[AnonType]
+  }
 }
 

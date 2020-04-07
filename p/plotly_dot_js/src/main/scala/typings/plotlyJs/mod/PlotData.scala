@@ -1,7 +1,7 @@
 package typings.plotlyJs.mod
 
 import typings.plotlyJs.AnonEnd
-import typings.plotlyJs.PartialDataTitleFont
+import typings.plotlyJs.PartialDataTitle
 import typings.plotlyJs.PartialDelta
 import typings.plotlyJs.PartialGauge
 import typings.plotlyJs.PartialHoverLabel
@@ -220,7 +220,7 @@ trait PlotData extends js.Object {
   var textinfo: label | labelPlussigntext | labelPlussignvalue | labelPlussignpercent | labelPlussigntextPlussignvalue | labelPlussigntextPlussignpercent | labelPlussignvaluePlussignpercent | text | textPlussignvalue | textPlussignpercent | textPlussignvaluePlussignpercent | value | valuePlussignpercent | percent | none
   var textposition: (`top left`) | (`top center`) | (`top right`) | (`middle left`) | (`middle center`) | (`middle right`) | (`bottom left`) | (`bottom center`) | (`bottom right`) | inside
   var theta: js.Array[Datum]
-  var title: PartialDataTitleFont
+  var title: PartialDataTitle
   var transforms: js.Array[DataTransform]
   var transpose: Boolean
   var `type`: bar | box | candlestick | choropleth | contour | heatmap | histogram | indicator | mesh3d | ohlc | parcoords | pie | pointcloud | scatter | scatter3d | scattergeo | scattergl | scatterpolar | scatterternary | surface | treemap | waterfall | funnel | funnelarea
@@ -303,7 +303,7 @@ object PlotData {
     textinfo: label | labelPlussigntext | labelPlussignvalue | labelPlussignpercent | labelPlussigntextPlussignvalue | labelPlussigntextPlussignpercent | labelPlussignvaluePlussignpercent | text | textPlussignvalue | textPlussignpercent | textPlussignvaluePlussignpercent | value | valuePlussignpercent | percent | none,
     textposition: (`top left`) | (`top center`) | (`top right`) | (`middle left`) | (`middle center`) | (`middle right`) | (`bottom left`) | (`bottom center`) | (`bottom right`) | inside,
     theta: js.Array[Datum],
-    title: PartialDataTitleFont,
+    title: PartialDataTitle,
     transforms: js.Array[DataTransform],
     transpose: Boolean,
     `type`: bar | box | candlestick | choropleth | contour | heatmap | histogram | indicator | mesh3d | ohlc | parcoords | pie | pointcloud | scatter | scatter3d | scattergeo | scattergl | scatterpolar | scatterternary | surface | treemap | waterfall | funnel | funnelarea,

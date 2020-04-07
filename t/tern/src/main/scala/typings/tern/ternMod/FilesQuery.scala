@@ -6,7 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait FilesQuery extends BaseQuery {
+trait FilesQuery
+  extends BaseQuery
+     with Query {
   /** Get the files that the server currently holds in its set of analyzed files. */
   @JSName("type")
   var type_FilesQuery: files

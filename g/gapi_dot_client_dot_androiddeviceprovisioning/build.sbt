@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gapi_dot_client_dot_androiddeviceprovisioning"
-version := "1.0-dt-20200225Z-c7cd1c"
+version := "1.0-dt-20200225Z-bacd12"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

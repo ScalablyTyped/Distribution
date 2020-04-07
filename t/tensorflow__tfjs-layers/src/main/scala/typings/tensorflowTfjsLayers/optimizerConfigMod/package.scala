@@ -25,7 +25,6 @@ package object optimizerConfigMod {
     typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Momentum, 
     typings.tensorflowTfjsLayers.optimizerConfigMod.MomentumOptimizerConfig
   ]
-  type OptimizerClassName = /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-layers.@tensorflow/tfjs-layers/dist/keras_format/optimizer_config.OptimizerSerialization['class_name'] */ js.Any
   type OptimizerSerialization = typings.tensorflowTfjsLayers.optimizerConfigMod.AdadeltaSerialization | typings.tensorflowTfjsLayers.optimizerConfigMod.AdagradSerialization | typings.tensorflowTfjsLayers.optimizerConfigMod.AdamSerialization | typings.tensorflowTfjsLayers.optimizerConfigMod.AdamaxSerialization | typings.tensorflowTfjsLayers.optimizerConfigMod.MomentumSerialization | typings.tensorflowTfjsLayers.optimizerConfigMod.RMSPropSerialization | typings.tensorflowTfjsLayers.optimizerConfigMod.SGDSerialization
   type RMSPropSerialization = typings.tensorflowTfjsLayers.typesMod.BaseSerialization[
     typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.RMSProp, 

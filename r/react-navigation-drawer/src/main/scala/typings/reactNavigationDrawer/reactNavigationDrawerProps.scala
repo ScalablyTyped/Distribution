@@ -24,8 +24,6 @@ trait reactNavigationDrawerProps {
   @scala.inline
   def ResourceSavingSceneProps: typings.reactNavigationDrawer.resourceSavingSceneMod.Props.type = typings.reactNavigationDrawer.resourceSavingSceneMod.Props
   type ResourceSavingSceneProps = typings.reactNavigationDrawer.resourceSavingSceneMod.Props
-  @scala.inline
-  def TouchableItemProps: typings.reactNavigationDrawer.touchableItemMod.Props.type = typings.reactNavigationDrawer.touchableItemMod.Props
   type TouchableItemProps = typings.reactNavigationDrawer.touchableItemMod.Props
 }
 

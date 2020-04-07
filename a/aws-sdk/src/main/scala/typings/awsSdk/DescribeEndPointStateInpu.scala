@@ -1,6 +1,7 @@
 package typings.awsSdk
 
 import typings.awsSdk.elbMod.AccessPointName
+import typings.awsSdk.elbMod.Instances
 import typings.awsSdk.serviceMod.WaiterConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -19,5 +20,19 @@ trait DescribeEndPointStateInpu extends js.Object {
     * The name of the load balancer.
     */
   var LoadBalancerName: AccessPointName = js.native
+}
+
+object DescribeEndPointStateInpu {
+  @scala.inline
+  def apply(
+    LoadBalancerName: AccessPointName,
+    $waiter: WaiterConfiguration = null,
+    Instances: Instances = null
+  ): DescribeEndPointStateInpu = {
+    val __obj = js.Dynamic.literal(LoadBalancerName = LoadBalancerName.asInstanceOf[js.Any])
+    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
+    if (Instances != null) __obj.updateDynamic("Instances")(Instances.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DescribeEndPointStateInpu]
+  }
 }
 

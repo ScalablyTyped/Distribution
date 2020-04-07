@@ -17,3 +17,12 @@ trait DescribeCertificateReques extends js.Object {
   var CertificateArn: Arn = js.native
 }
 
+object DescribeCertificateReques {
+  @scala.inline
+  def apply(CertificateArn: Arn, $waiter: WaiterConfiguration = null): DescribeCertificateReques = {
+    val __obj = js.Dynamic.literal(CertificateArn = CertificateArn.asInstanceOf[js.Any])
+    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DescribeCertificateReques]
+  }
+}
+

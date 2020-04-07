@@ -29,11 +29,11 @@ import typings.awsSdkClientKmsBrowser.untagResourceExceptionsUnionMod.UntagResou
 import typings.awsSdkClientKmsBrowser.updateAliasExceptionsUnionMod.UpdateAliasExceptionsUnion
 import typings.awsSdkClientKmsBrowser.updateKeyDescriptionExceptionsUnionMod.UpdateKeyDescriptionExceptionsUnion
 import typings.awsSdkTypes.exceptionMod.ServiceException
+import typings.awsSdkTypes.responseMod.ResponseMetadata
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait KMSInvalidStateException
   extends ServiceException[KMSInvalidStateExceptionDetails]
      with CancelKeyDeletionExceptionsUnion
@@ -65,6 +65,21 @@ trait KMSInvalidStateException
      with UpdateAliasExceptionsUnion
      with UpdateKeyDescriptionExceptionsUnion {
   @JSName("name")
-  var name_KMSInvalidStateException: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.KMSInvalidStateException = js.native
+  var name_KMSInvalidStateException: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.KMSInvalidStateException
+}
+
+object KMSInvalidStateException {
+  @scala.inline
+  def apply(
+    $metadata: ResponseMetadata,
+    details: KMSInvalidStateExceptionDetails,
+    message: String,
+    name: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.KMSInvalidStateException,
+    stack: String = null
+  ): KMSInvalidStateException = {
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
+    __obj.asInstanceOf[KMSInvalidStateException]
+  }
 }
 

@@ -12,9 +12,7 @@ import scala.scalajs.js.annotation._
   * @template T
   * The type of the answers.
   */
-trait PasswordQuestion[T /* <: Answers */]
-  extends PasswordQuestionOptions[T]
-     with DistinctQuestion[T] {
+trait PasswordQuestion[T /* <: Answers */] extends PasswordQuestionOptions[T] {
   /**
     * @inheritdoc
     */

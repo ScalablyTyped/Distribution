@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gapi_dot_client_dot_playmoviespartner"
-version := "1.0-dt-20190213Z-ed991c"
+version := "1.0-dt-20190213Z-b6cc38"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

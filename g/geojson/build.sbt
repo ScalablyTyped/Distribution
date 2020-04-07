@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "geojson"
-version := "7946.0-dt-20190925Z-67022f"
+version := "7946.0-dt-20190925Z-8ecd0a"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

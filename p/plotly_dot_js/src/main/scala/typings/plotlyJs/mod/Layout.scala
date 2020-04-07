@@ -1,17 +1,17 @@
 package typings.plotlyJs.mod
 
-import typings.plotlyJs.PartialAnnotationsArrowcolor
-import typings.plotlyJs.PartialAxisCalendar
+import typings.plotlyJs.PartialAnnotations
+import typings.plotlyJs.PartialAxis
 import typings.plotlyJs.PartialFont
 import typings.plotlyJs.PartialHoverLabel
 import typings.plotlyJs.PartialImage
-import typings.plotlyJs.PartialLayoutAxisAngle
+import typings.plotlyJs.PartialLayoutAxis
 import typings.plotlyJs.PartialLegend
 import typings.plotlyJs.PartialMargin
-import typings.plotlyJs.PartialPolarLayoutBgcolor
-import typings.plotlyJs.PartialSceneAspectmode
+import typings.plotlyJs.PartialPolarLayout
+import typings.plotlyJs.PartialScene
 import typings.plotlyJs.PartialShape
-import typings.plotlyJs.PartialSliderActivebgcolor
+import typings.plotlyJs.PartialSlider
 import typings.plotlyJs.Partialrowsnumberroworder
 import typings.plotlyJs.PartialtextstringfontPart
 import typings.plotlyJs.plotlyJsBooleans.`false`
@@ -42,7 +42,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Layout extends js.Object {
-  var annotations: js.Array[PartialAnnotationsArrowcolor]
+  var annotations: js.Array[PartialAnnotations]
   var autosize: Boolean
   var bargap: `0` | `1`
   var bargroupgap: `0` | `1`
@@ -64,36 +64,36 @@ trait Layout extends js.Object {
   var orientation: Double
   var paper_bgcolor: Color
   var plot_bgcolor: Color
-  var polar: PartialPolarLayoutBgcolor
-  var polar2: PartialPolarLayoutBgcolor
-  var polar3: PartialPolarLayoutBgcolor
-  var polar4: PartialPolarLayoutBgcolor
-  var polar5: PartialPolarLayoutBgcolor
-  var polar6: PartialPolarLayoutBgcolor
-  var polar7: PartialPolarLayoutBgcolor
-  var polar8: PartialPolarLayoutBgcolor
-  var polar9: PartialPolarLayoutBgcolor
+  var polar: PartialPolarLayout
+  var polar2: PartialPolarLayout
+  var polar3: PartialPolarLayout
+  var polar4: PartialPolarLayout
+  var polar5: PartialPolarLayout
+  var polar6: PartialPolarLayout
+  var polar7: PartialPolarLayout
+  var polar8: PartialPolarLayout
+  var polar9: PartialPolarLayout
    // TODO
-  var radialaxis: PartialAxisCalendar
-  var scene: PartialSceneAspectmode
+  var radialaxis: PartialAxis
+  var scene: PartialScene
   var selectdirection: h | v | d | any
   var separators: String
   var shapes: js.Array[PartialShape]
   var showlegend: Boolean
    // TODO
-  var sliders: js.Array[PartialSliderActivebgcolor]
+  var sliders: js.Array[PartialSlider]
   var title: String | PartialtextstringfontPart
   var titlefont: PartialFont
   var width: Double
-  var xaxis: PartialLayoutAxisAngle
-  var xaxis2: PartialLayoutAxisAngle
-  var xaxis3: PartialLayoutAxisAngle
-  var xaxis4: PartialLayoutAxisAngle
-  var xaxis5: PartialLayoutAxisAngle
-  var xaxis6: PartialLayoutAxisAngle
-  var xaxis7: PartialLayoutAxisAngle
-  var xaxis8: PartialLayoutAxisAngle
-  var xaxis9: PartialLayoutAxisAngle
+  var xaxis: PartialLayoutAxis
+  var xaxis2: PartialLayoutAxis
+  var xaxis3: PartialLayoutAxis
+  var xaxis4: PartialLayoutAxis
+  var xaxis5: PartialLayoutAxis
+  var xaxis6: PartialLayoutAxis
+  var xaxis7: PartialLayoutAxis
+  var xaxis8: PartialLayoutAxis
+  var xaxis9: PartialLayoutAxis
   @JSName("xaxis.autorange")
   var xaxisDotautorange: Boolean
   @JSName("xaxis.range")
@@ -106,15 +106,15 @@ trait Layout extends js.Object {
   var xaxisDottitle: String
   @JSName("xaxis.type")
   var xaxisDottype: AxisType
-  var yaxis: PartialLayoutAxisAngle
-  var yaxis2: PartialLayoutAxisAngle
-  var yaxis3: PartialLayoutAxisAngle
-  var yaxis4: PartialLayoutAxisAngle
-  var yaxis5: PartialLayoutAxisAngle
-  var yaxis6: PartialLayoutAxisAngle
-  var yaxis7: PartialLayoutAxisAngle
-  var yaxis8: PartialLayoutAxisAngle
-  var yaxis9: PartialLayoutAxisAngle
+  var yaxis: PartialLayoutAxis
+  var yaxis2: PartialLayoutAxis
+  var yaxis3: PartialLayoutAxis
+  var yaxis4: PartialLayoutAxis
+  var yaxis5: PartialLayoutAxis
+  var yaxis6: PartialLayoutAxis
+  var yaxis7: PartialLayoutAxis
+  var yaxis8: PartialLayoutAxis
+  var yaxis9: PartialLayoutAxis
   @JSName("yaxis.autorange")
   var yaxisDotautorange: Boolean
   @JSName("yaxis.range")
@@ -132,7 +132,7 @@ trait Layout extends js.Object {
 object Layout {
   @scala.inline
   def apply(
-    annotations: js.Array[PartialAnnotationsArrowcolor],
+    annotations: js.Array[PartialAnnotations],
     autosize: Boolean,
     bargap: `0` | `1`,
     bargroupgap: `0` | `1`,
@@ -153,47 +153,47 @@ object Layout {
     orientation: Double,
     paper_bgcolor: Color,
     plot_bgcolor: Color,
-    polar: PartialPolarLayoutBgcolor,
-    polar2: PartialPolarLayoutBgcolor,
-    polar3: PartialPolarLayoutBgcolor,
-    polar4: PartialPolarLayoutBgcolor,
-    polar5: PartialPolarLayoutBgcolor,
-    polar6: PartialPolarLayoutBgcolor,
-    polar7: PartialPolarLayoutBgcolor,
-    polar8: PartialPolarLayoutBgcolor,
-    polar9: PartialPolarLayoutBgcolor,
-    radialaxis: PartialAxisCalendar,
-    scene: PartialSceneAspectmode,
+    polar: PartialPolarLayout,
+    polar2: PartialPolarLayout,
+    polar3: PartialPolarLayout,
+    polar4: PartialPolarLayout,
+    polar5: PartialPolarLayout,
+    polar6: PartialPolarLayout,
+    polar7: PartialPolarLayout,
+    polar8: PartialPolarLayout,
+    polar9: PartialPolarLayout,
+    radialaxis: PartialAxis,
+    scene: PartialScene,
     selectdirection: h | v | d | any,
     separators: String,
     shapes: js.Array[PartialShape],
     showlegend: Boolean,
-    sliders: js.Array[PartialSliderActivebgcolor],
+    sliders: js.Array[PartialSlider],
     title: String | PartialtextstringfontPart,
     titlefont: PartialFont,
     width: Double,
-    xaxis: PartialLayoutAxisAngle,
-    xaxis2: PartialLayoutAxisAngle,
-    xaxis3: PartialLayoutAxisAngle,
-    xaxis4: PartialLayoutAxisAngle,
-    xaxis5: PartialLayoutAxisAngle,
-    xaxis6: PartialLayoutAxisAngle,
-    xaxis7: PartialLayoutAxisAngle,
-    xaxis8: PartialLayoutAxisAngle,
-    xaxis9: PartialLayoutAxisAngle,
+    xaxis: PartialLayoutAxis,
+    xaxis2: PartialLayoutAxis,
+    xaxis3: PartialLayoutAxis,
+    xaxis4: PartialLayoutAxis,
+    xaxis5: PartialLayoutAxis,
+    xaxis6: PartialLayoutAxis,
+    xaxis7: PartialLayoutAxis,
+    xaxis8: PartialLayoutAxis,
+    xaxis9: PartialLayoutAxis,
     xaxisDotautorange: Boolean,
     xaxisDotrange: js.Tuple2[Datum, Datum],
     xaxisDottitle: String,
     xaxisDottype: AxisType,
-    yaxis: PartialLayoutAxisAngle,
-    yaxis2: PartialLayoutAxisAngle,
-    yaxis3: PartialLayoutAxisAngle,
-    yaxis4: PartialLayoutAxisAngle,
-    yaxis5: PartialLayoutAxisAngle,
-    yaxis6: PartialLayoutAxisAngle,
-    yaxis7: PartialLayoutAxisAngle,
-    yaxis8: PartialLayoutAxisAngle,
-    yaxis9: PartialLayoutAxisAngle,
+    yaxis: PartialLayoutAxis,
+    yaxis2: PartialLayoutAxis,
+    yaxis3: PartialLayoutAxis,
+    yaxis4: PartialLayoutAxis,
+    yaxis5: PartialLayoutAxis,
+    yaxis6: PartialLayoutAxis,
+    yaxis7: PartialLayoutAxis,
+    yaxis8: PartialLayoutAxis,
+    yaxis9: PartialLayoutAxis,
     yaxisDotautorange: Boolean,
     yaxisDotrange: js.Tuple2[Datum, Datum],
     yaxisDottitle: String,

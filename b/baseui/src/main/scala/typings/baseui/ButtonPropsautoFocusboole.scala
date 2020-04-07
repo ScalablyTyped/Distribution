@@ -27,26 +27,68 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined baseui.baseui/button.ButtonProps & {  autoFocus ? :boolean} */
-@js.native
 trait ButtonPropsautoFocusboole extends js.Object {
   @JSName("$as")
-  var $as: js.UndefOr[StyletronBase] = js.native
+  var $as: js.UndefOr[StyletronBase] = js.undefined
   @JSName("$style")
-  var $style: js.UndefOr[StyleProp[ButtonProps]] = js.native
-  var autoFocus: js.UndefOr[Boolean] = js.native
-  var children: js.UndefOr[ReactNode] = js.native
-  var disabled: js.UndefOr[Boolean] = js.native
-  var endEnhancer: js.UndefOr[ReactNode] = js.native
-  var href: js.UndefOr[String] = js.native
-  var isLoading: js.UndefOr[Boolean] = js.native
-  var isSelected: js.UndefOr[Boolean] = js.native
-  var kind: js.UndefOr[primary | secondary | tertiary | minimal] = js.native
-  var onClick: js.UndefOr[js.Function1[/* event */ MouseEvent[HTMLButtonElement, NativeMouseEvent], _]] = js.native
-  var overrides: js.UndefOr[ButtonOverrides] = js.native
-  var shape: js.UndefOr[default_ | pill | round | square] = js.native
-  var size: js.UndefOr[compact | default_ | large_ | mini] = js.native
-  var startEnhancer: js.UndefOr[ReactNode] = js.native
-  var target: js.UndefOr[String] = js.native
-  var `type`: js.UndefOr[submit | reset | button] = js.native
+  var $style: js.UndefOr[StyleProp[ButtonProps]] = js.undefined
+  var autoFocus: js.UndefOr[Boolean] = js.undefined
+  var children: js.UndefOr[ReactNode] = js.undefined
+  var disabled: js.UndefOr[Boolean] = js.undefined
+  var endEnhancer: js.UndefOr[ReactNode] = js.undefined
+  var href: js.UndefOr[String] = js.undefined
+  var isLoading: js.UndefOr[Boolean] = js.undefined
+  var isSelected: js.UndefOr[Boolean] = js.undefined
+  var kind: js.UndefOr[primary | secondary | tertiary | minimal] = js.undefined
+  var onClick: js.UndefOr[js.Function1[/* event */ MouseEvent[HTMLButtonElement, NativeMouseEvent], _]] = js.undefined
+  var overrides: js.UndefOr[ButtonOverrides] = js.undefined
+  var shape: js.UndefOr[default_ | pill | round | square] = js.undefined
+  var size: js.UndefOr[compact | default_ | large_ | mini] = js.undefined
+  var startEnhancer: js.UndefOr[ReactNode] = js.undefined
+  var target: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[submit | reset | button] = js.undefined
+}
+
+object ButtonPropsautoFocusboole {
+  @scala.inline
+  def apply(
+    $as: StyletronBase = null,
+    $style: StyleProp[ButtonProps] = null,
+    autoFocus: js.UndefOr[Boolean] = js.undefined,
+    children: ReactNode = null,
+    disabled: js.UndefOr[Boolean] = js.undefined,
+    endEnhancer: ReactNode = null,
+    href: String = null,
+    isLoading: js.UndefOr[Boolean] = js.undefined,
+    isSelected: js.UndefOr[Boolean] = js.undefined,
+    kind: primary | secondary | tertiary | minimal = null,
+    onClick: /* event */ MouseEvent[HTMLButtonElement, NativeMouseEvent] => _ = null,
+    overrides: ButtonOverrides = null,
+    shape: default_ | pill | round | square = null,
+    size: compact | default_ | large_ | mini = null,
+    startEnhancer: ReactNode = null,
+    target: String = null,
+    `type`: submit | reset | button = null
+  ): ButtonPropsautoFocusboole = {
+    val __obj = js.Dynamic.literal()
+    if ($as != null) __obj.updateDynamic("$as")($as.asInstanceOf[js.Any])
+    if ($style != null) __obj.updateDynamic("$style")($style.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (endEnhancer != null) __obj.updateDynamic("endEnhancer")(endEnhancer.asInstanceOf[js.Any])
+    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
+    if (!js.isUndefined(isLoading)) __obj.updateDynamic("isLoading")(isLoading.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSelected)) __obj.updateDynamic("isSelected")(isSelected.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
+    if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
+    if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (startEnhancer != null) __obj.updateDynamic("startEnhancer")(startEnhancer.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ButtonPropsautoFocusboole]
+  }
 }
 

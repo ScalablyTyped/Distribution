@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "objection"
-version := "2.1.3-c7a4a8"
+version := "2.1.3-edadfa"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "ajv" % "6.12.0-eabe0e",
+  "org.scalablytyped" %%% "ajv" % "6.12.0-4a5655",
   "org.scalablytyped" %%% "db-errors" % "0.2.3-618274",
   "org.scalablytyped" %%% "knex" % "0.20.12-3907b5",
   "org.scalablytyped" %%% "node" % "13.9-dt-20200318Z-96a265",

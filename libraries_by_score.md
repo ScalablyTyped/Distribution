@@ -2204,7 +2204,6 @@
 | 0.7071533598907802 | [natural-compare-lite](./n/natural-compare-lite) | Compare strings containing a mix of letters and nu
 | 0.707021056424721 | [lodash_dot_flow](./l/lodash_dot_flow) | The lodash method _.flow exported as a module.
 | 0.7070145180836368 | [p-reflect](./p/p-reflect) | Make a promise always fulfill with its actual fulf
-| 0.7069724112779125 | [ui-box](./u/ui-box) | Blazing Fast React UI Primitive
 | 0.7069524407879777 | [app-builder-lib](./a/app-builder-lib) | electron-builder lib
 | 0.7069419185117605 | [fullname](./f/fullname) | Get the fullname of the current user
 | 0.706863389499556 | [node-json-db](./n/node-json-db) | Database using JSON file as storage for Node.JS
@@ -3803,6 +3802,7 @@
 | 0.6512375828889789 | [karma-webpack](./k/karma-webpack) | Use webpack with karma
 | 0.6511049359306316 | [koa-bouncer](./k/koa-bouncer) | A parameter validation library for Koa routes
 | 0.6510010460829703 | [nunjucks-date](./n/nunjucks-date) | Plugin for nunjucks of momentjs format date
+| 0.6509807240480419 | [ant-design__react-slick](./a/ant-design__react-slick) | React port of slick carousel
 | 0.6509454731441416 | [hedron](./h/hedron) | A no-frills flexbox grid system for React.
 | 0.6509350056922139 | [org-regex](./o/org-regex) | Regular expression for matching npm organization n
 | 0.6508857199747263 | [promise-hash](./p/promise-hash) | Adds an RSVP-like Promise.hash() method for resolv
@@ -5141,7 +5141,6 @@
 | 0.5516033980775545 | [react-cartographer](./r/react-cartographer) | Generic React component for displaying static maps
 | 0.5513621174845845 | [is-my-json-valid](./i/is-my-json-valid) | A 
 | 0.5512514487749349 | [rmc-dialog](./r/rmc-dialog) | mobile dialog ui component for react
-| 0.5510751086061764 | [mongoose-delete](./m/mongoose-delete) | Mongoose soft delete plugin
 | 0.5510282382741296 | [perfect-scrollbar](./p/perfect-scrollbar) | Minimalistic but perfect custom scrollbar plugin
 | 0.5506774160288773 | [turbolinks](./t/turbolinks) | Turbolinks makes navigating your web application f
 | 0.5505474833326205 | [jspdf](./j/jspdf) | PDF Document creation from JavaScript
@@ -7498,6 +7497,7 @@
 | 0.2541192663308792 | [obsolete-web](./o/obsolete-web) | A library that detects browser compatibility and p
 | 0.25350820994528694 | [swiftclick](./s/swiftclick) | Eliminates the 300ms click event delay on touch de
 | 0.2532497878475306 | [seamless](./s/seamless) | Beautiful, seamless iframes with seamless.js -----
+| 0.2532098353902031 | [expo-error-recovery](./e/expo-error-recovery) | Utilities for helping you gracefully handle crashe
 | 0.2527734721215967 | [browser-fingerprint](./b/browser-fingerprint) | Generate a fingerprint of a browser
 | 0.25213741481213653 | [sic-list](./s/sic-list) | Standard industrial classification list based on t
 | 0.25202670487526935 | [derhuerst__cli-on-key](./d/derhuerst__cli-on-key) | Read command line key presses from process.stdin.
@@ -7646,6 +7646,7 @@
 | 0.2260201997302992 | [browser-harness](./b/browser-harness) | Browser Harness ===============
 | 0.2259559844420319 | [androiduix](./a/androiduix) | Framework to make high-performance SPA/WebApp. Ren
 | 0.22574647602170464 | [react-native-privacy-snap](./r/react-native-privacy-snapshot) | Obscure passwords and other sensitive personal inf
+| 0.22547512981454648 | [babylonjs](./b/babylonjs) | Babylon.js is a JavaScript 3D engine based on webg
 | 0.22546130967165434 | [react-native-multi-slider](./r/react-native-multi-slider) | Pure JS slider component with multiple markers for
 | 0.22543038201623727 | [semantic-ui-sidebar](./s/semantic-ui-sidebar) | Single component release of sidebar
 | 0.22542014044269476 | [material__slider](./m/material__slider) | The Material Components for the web slider compone

@@ -6,7 +6,6 @@ import scala.scalajs.js.annotation._
 
 package object distTypesMod {
   type BackendValues = typings.std.Float32Array | typings.std.Int32Array | typings.std.Uint8Array | js.Array[typings.std.Uint8Array]
-  type DataValues = typings.std.Int32Array | js.Array[java.lang.String] | typings.std.Float32Array | typings.std.Uint8Array
   type FlatVector = (js.Array[scala.Boolean | scala.Double]) | typings.tensorflowTfjsCore.distTypesMod.TypedArray
   type RegularArray[T] = js.Array[(js.Array[(js.Array[(js.Array[(js.Array[js.Array[T] | T]) | T]) | T]) | T]) | T]
   type ScalarLike = scala.Double | scala.Boolean | java.lang.String | typings.std.Uint8Array

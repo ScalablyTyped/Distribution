@@ -42,3 +42,26 @@ trait DescribeSecurityGroupsReq extends js.Object {
   var NextToken: js.UndefOr[String] = js.native
 }
 
+object DescribeSecurityGroupsReq {
+  @scala.inline
+  def apply(
+    $waiter: WaiterConfiguration = null,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    Filters: FilterList = null,
+    GroupIds: GroupIdStringList = null,
+    GroupNames: GroupNameStringList = null,
+    MaxResults: Int | Double = null,
+    NextToken: String = null
+  ): DescribeSecurityGroupsReq = {
+    val __obj = js.Dynamic.literal()
+    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
+    if (GroupIds != null) __obj.updateDynamic("GroupIds")(GroupIds.asInstanceOf[js.Any])
+    if (GroupNames != null) __obj.updateDynamic("GroupNames")(GroupNames.asInstanceOf[js.Any])
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DescribeSecurityGroupsReq]
+  }
+}
+

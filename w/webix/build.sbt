@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "webix"
-version := "7.2.0-a518f5"
+version := "7.2.0-295b9b"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

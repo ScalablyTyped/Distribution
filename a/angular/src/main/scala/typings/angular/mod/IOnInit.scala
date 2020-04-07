@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
   * Interface for the $onInit lifecycle hook
   * https://docs.angularjs.org/api/ng/service/$compile#life-cycle-hooks
   */
-@js.native
 trait IOnInit extends js.Object {
   /**
     * Called on each controller after all the controllers on an element have been constructed and had their bindings
@@ -16,6 +15,15 @@ trait IOnInit extends js.Object {
     * place to put initialization code for your controller.
     */
   @JSName("$onInit")
-  def $onInit(): Unit = js.native
+  def $onInit(): Unit
+}
+
+object IOnInit {
+  @scala.inline
+  def apply($onInit: () => Unit): IOnInit = {
+    val __obj = js.Dynamic.literal($onInit = js.Any.fromFunction0($onInit))
+  
+    __obj.asInstanceOf[IOnInit]
+  }
 }
 

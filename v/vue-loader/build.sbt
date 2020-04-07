@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "vue-loader"
-version := "15.9.1-7bfdef"
+version := "15.9.1-366835"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -16,7 +16,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "vue" % "2.6.11-d66de9",
   "org.scalablytyped" %%% "vue-template-compiler" % "2.6.11-2e0c3b",
   "org.scalablytyped" %%% "vue__component-compiler-utils" % "3.1.1-b7e1f6",
-  "org.scalablytyped" %%% "webpack" % "4.41-dt-20200320Z-b7aa26",
+  "org.scalablytyped" %%% "webpack" % "4.41-dt-20200320Z-cabf96",
   "org.scalablytyped" %%% "webpack-sources" % "0.1-dt-20200225Z-fed209")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")

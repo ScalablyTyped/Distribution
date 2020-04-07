@@ -10,9 +10,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait ToasterSharedStylePropsArg extends js.Object {
   @JSName("$placement")
-  var $placement: js.UndefOr[topLeft | topRight | bottomLeft | bottomRight | bottom | top] = js.native
+  var $placement: js.UndefOr[topLeft | topRight | bottomLeft | bottomRight | bottom | top] = js.undefined
+}
+
+object ToasterSharedStylePropsArg {
+  @scala.inline
+  def apply($placement: topLeft | topRight | bottomLeft | bottomRight | bottom | top = null): ToasterSharedStylePropsArg = {
+    val __obj = js.Dynamic.literal()
+    if ($placement != null) __obj.updateDynamic("$placement")($placement.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ToasterSharedStylePropsArg]
+  }
 }
 

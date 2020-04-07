@@ -10,26 +10,40 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.9]
   */
-@js.native
 trait RemoveDuplicatesResultLoadOptions extends js.Object {
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
     */
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.native
+  var $all: js.UndefOr[Boolean] = js.undefined
   /**
     *
     * Number of duplicated rows removed by the operation.
     *
     * [Api set: ExcelApi 1.9]
     */
-  var removed: js.UndefOr[Boolean] = js.native
+  var removed: js.UndefOr[Boolean] = js.undefined
   /**
     *
     * Number of remaining unique rows present in the resulting range.
     *
     * [Api set: ExcelApi 1.9]
     */
-  var uniqueRemaining: js.UndefOr[Boolean] = js.native
+  var uniqueRemaining: js.UndefOr[Boolean] = js.undefined
+}
+
+object RemoveDuplicatesResultLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[Boolean] = js.undefined,
+    removed: js.UndefOr[Boolean] = js.undefined,
+    uniqueRemaining: js.UndefOr[Boolean] = js.undefined
+  ): RemoveDuplicatesResultLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (!js.isUndefined(removed)) __obj.updateDynamic("removed")(removed.asInstanceOf[js.Any])
+    if (!js.isUndefined(uniqueRemaining)) __obj.updateDynamic("uniqueRemaining")(uniqueRemaining.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RemoveDuplicatesResultLoadOptions]
+  }
 }
 

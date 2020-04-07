@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gapi_dot_client_dot_speech"
-version := "1.0-dt-20200225Z-87d8ff"
+version := "1.0-dt-20200225Z-859fff"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

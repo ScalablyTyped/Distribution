@@ -20,3 +20,12 @@ trait GetInvalidationRequestwai extends js.Object {
   var Id: String = js.native
 }
 
+object GetInvalidationRequestwai {
+  @scala.inline
+  def apply(DistributionId: String, Id: String, $waiter: WaiterConfiguration = null): GetInvalidationRequestwai = {
+    val __obj = js.Dynamic.literal(DistributionId = DistributionId.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any])
+    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GetInvalidationRequestwai]
+  }
+}
+

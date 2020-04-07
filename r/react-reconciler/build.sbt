@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-reconciler"
-version := "0.18-dt-20190109Z-ecf9f4"
+version := "0.18-dt-20190109Z-589cd5"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

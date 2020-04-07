@@ -1,6 +1,5 @@
 package typings.fridaGum.Java
 
-import typings.fridaGum.WrapperAlloc
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,6 +12,6 @@ object registerClass extends js.Object {
     *
     * @param spec Object describing the class to be created.
     */
-  def apply(spec: ClassSpec): WrapperAlloc = js.native
+  def apply(spec: ClassSpec): typings.fridaGum.Wrapper = js.native
 }
 

@@ -6,9 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Tag_
-  extends Namespace[String]
-     with Node {
+trait Tag_ extends Namespace[String] {
   @JSName("type")
   var type_Tag_ : typings.postcssSelectorParser.postcssSelectorParserStrings.tag
 }

@@ -1,6 +1,5 @@
 package typings.fridaGum.Java
 
-import typings.fridaGum.WrapperAlloc
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,6 +13,6 @@ object synchronized extends js.Object {
     * @param obj Instance whose lock to hold.
     * @param fn Function to call with lock held.
     */
-  def apply(obj: WrapperAlloc, fn: js.Function0[Unit]): Unit = js.native
+  def apply(obj: typings.fridaGum.Wrapper, fn: js.Function0[Unit]): Unit = js.native
 }
 

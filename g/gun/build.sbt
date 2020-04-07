@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gun"
-version := "0.9-dt-20200225Z-2faaaa"
+version := "0.9-dt-20200225Z-c3b17b"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -106,3 +106,52 @@ trait SchemaJsonSchema extends js.Object {
   var variant: js.UndefOr[AnonDiscriminant] = js.native
 }
 
+object SchemaJsonSchema {
+  @scala.inline
+  def apply(
+    $ref: String = null,
+    additionalProperties: SchemaJsonSchema = null,
+    annotations: AnonRequired = null,
+    default: String = null,
+    description: String = null,
+    enum: js.Array[String] = null,
+    enumDescriptions: js.Array[String] = null,
+    format: String = null,
+    id: String = null,
+    items: SchemaJsonSchema = null,
+    location: String = null,
+    maximum: String = null,
+    minimum: String = null,
+    pattern: String = null,
+    properties: StringDictionary[SchemaJsonSchema] = null,
+    readOnly: js.UndefOr[Boolean] = js.undefined,
+    repeated: js.UndefOr[Boolean] = js.undefined,
+    required: js.UndefOr[Boolean] = js.undefined,
+    `type`: String = null,
+    variant: AnonDiscriminant = null
+  ): SchemaJsonSchema = {
+    val __obj = js.Dynamic.literal()
+    if ($ref != null) __obj.updateDynamic("$ref")($ref.asInstanceOf[js.Any])
+    if (additionalProperties != null) __obj.updateDynamic("additionalProperties")(additionalProperties.asInstanceOf[js.Any])
+    if (annotations != null) __obj.updateDynamic("annotations")(annotations.asInstanceOf[js.Any])
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (enum != null) __obj.updateDynamic("enum")(enum.asInstanceOf[js.Any])
+    if (enumDescriptions != null) __obj.updateDynamic("enumDescriptions")(enumDescriptions.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (maximum != null) __obj.updateDynamic("maximum")(maximum.asInstanceOf[js.Any])
+    if (minimum != null) __obj.updateDynamic("minimum")(minimum.asInstanceOf[js.Any])
+    if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(repeated)) __obj.updateDynamic("repeated")(repeated.asInstanceOf[js.Any])
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (variant != null) __obj.updateDynamic("variant")(variant.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SchemaJsonSchema]
+  }
+}
+

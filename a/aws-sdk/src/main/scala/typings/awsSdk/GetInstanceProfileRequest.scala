@@ -17,3 +17,12 @@ trait GetInstanceProfileRequest extends js.Object {
   var InstanceProfileName: instanceProfileNameType = js.native
 }
 
+object GetInstanceProfileRequest {
+  @scala.inline
+  def apply(InstanceProfileName: instanceProfileNameType, $waiter: WaiterConfiguration = null): GetInstanceProfileRequest = {
+    val __obj = js.Dynamic.literal(InstanceProfileName = InstanceProfileName.asInstanceOf[js.Any])
+    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GetInstanceProfileRequest]
+  }
+}
+

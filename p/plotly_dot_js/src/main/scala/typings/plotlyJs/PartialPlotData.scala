@@ -146,7 +146,7 @@ trait PartialPlotData extends js.Object {
   var error_y: js.UndefOr[ErrorBar] = js.undefined
   var fill: js.UndefOr[none | tozeroy | tozerox | tonexty | tonextx | toself | tonext] = js.undefined
   var fillcolor: js.UndefOr[String] = js.undefined
-  var gauge: js.UndefOr[PartialGaugeAxis] = js.undefined
+  var gauge: js.UndefOr[PartialGauge] = js.undefined
   var hole: js.UndefOr[Double] = js.undefined
   var hoverinfo: js.UndefOr[
     all | name | none | skip | text | x | xPlussigntext | xPlussignname | xPlussigny | xPlussignyPlussigntext | xPlussignyPlussignname | xPlussignyPlussignz | xPlussignyPlussignzPlussigntext | xPlussignyPlussignzPlussignname | yPlussignname | yPlussignx | yPlussigntext | yPlussignxPlussigntext | yPlussignxPlussignname | yPlussignz | yPlussignzPlussigntext | yPlussignzPlussignname | yPlussignxPlussignz | yPlussignxPlussignzPlussigntext | yPlussignxPlussignzPlussignname | zPlussignx | zPlussignxPlussigntext | zPlussignxPlussignname | zPlussignyPlussignx | zPlussignyPlussignxPlussigntext | zPlussignyPlussignxPlussignname | zPlussignxPlussigny | zPlussignxPlussignyPlussigntext | zPlussignxPlussignyPlussignname
@@ -228,7 +228,7 @@ trait PartialPlotData extends js.Object {
     (`top left`) | (`top center`) | (`top right`) | (`middle left`) | (`middle center`) | (`middle right`) | (`bottom left`) | (`bottom center`) | (`bottom right`) | inside
   ] = js.undefined
   var theta: js.UndefOr[js.Array[Datum]] = js.undefined
-  var title: js.UndefOr[PartialDataTitleFont] = js.undefined
+  var title: js.UndefOr[PartialDataTitle] = js.undefined
   var transforms: js.UndefOr[js.Array[DataTransform]] = js.undefined
   var transpose: js.UndefOr[Boolean] = js.undefined
   var `type`: js.UndefOr[
@@ -265,7 +265,7 @@ object PartialPlotData {
     error_y: ErrorBar = null,
     fill: none | tozeroy | tozerox | tonexty | tonextx | toself | tonext = null,
     fillcolor: String = null,
-    gauge: PartialGaugeAxis = null,
+    gauge: PartialGauge = null,
     hole: Int | Double = null,
     hoverinfo: all | name | none | skip | text | x | xPlussigntext | xPlussignname | xPlussigny | xPlussignyPlussigntext | xPlussignyPlussignname | xPlussignyPlussignz | xPlussignyPlussignzPlussigntext | xPlussignyPlussignzPlussignname | yPlussignname | yPlussignx | yPlussigntext | yPlussignxPlussigntext | yPlussignxPlussignname | yPlussignz | yPlussignzPlussigntext | yPlussignzPlussignname | yPlussignxPlussignz | yPlussignxPlussignzPlussigntext | yPlussignxPlussignzPlussignname | zPlussignx | zPlussignxPlussigntext | zPlussignxPlussignname | zPlussignyPlussignx | zPlussignyPlussignxPlussigntext | zPlussignyPlussignxPlussignname | zPlussignxPlussigny | zPlussignxPlussignyPlussigntext | zPlussignxPlussignyPlussignname = null,
     hoverlabel: PartialHoverLabel = null,
@@ -314,7 +314,7 @@ object PartialPlotData {
     textinfo: label | labelPlussigntext | labelPlussignvalue | labelPlussignpercent | labelPlussigntextPlussignvalue | labelPlussigntextPlussignpercent | labelPlussignvaluePlussignpercent | text | textPlussignvalue | textPlussignpercent | textPlussignvaluePlussignpercent | value | valuePlussignpercent | percent | none = null,
     textposition: (`top left`) | (`top center`) | (`top right`) | (`middle left`) | (`middle center`) | (`middle right`) | (`bottom left`) | (`bottom center`) | (`bottom right`) | inside = null,
     theta: js.Array[Datum] = null,
-    title: PartialDataTitleFont = null,
+    title: PartialDataTitle = null,
     transforms: js.Array[DataTransform] = null,
     transpose: js.UndefOr[Boolean] = js.undefined,
     `type`: bar | box | candlestick | choropleth | contour | heatmap | histogram | indicator | mesh3d | ohlc | parcoords | pie | pointcloud | scatter | scatter3d | scattergeo | scattergl | scatterpolar | scatterternary | surface | treemap | waterfall | funnel | funnelarea = null,

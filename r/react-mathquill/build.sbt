@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-mathquill"
-version := "0.1-dt-20200102Z-73bfff"
+version := "0.1-dt-20200102Z-0ceeb5"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

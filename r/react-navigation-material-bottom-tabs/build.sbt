@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-navigation-material-bottom-tabs"
-version := "2.2.5-1c142d"
+version := "2.2.5-2de6e9"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

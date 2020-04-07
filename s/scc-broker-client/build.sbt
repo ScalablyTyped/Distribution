@@ -1,11 +1,12 @@
 organization := "org.scalablytyped"
 name := "scc-broker-client"
-version := "7.0-dt-20200205Z-71e571"
+version := "7.0-dt-20200205Z-044546"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "ag-channel" % "4.0-dt-20200205Z-60de29",
+  "org.scalablytyped" %%% "ag-simple-broker" % "4.0-dt-20200205Z-0dc2f3",
   "org.scalablytyped" %%% "async-stream-emitter" % "3.0-dt-20200205Z-b339e3",
   "org.scalablytyped" %%% "consumable-stream" % "1.0-dt-20200205Z-d59548",
   "org.scalablytyped" %%% "expirymanager" % "0.9-dt-20181130Z-5ff1b8",
@@ -16,8 +17,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "sc-auth" % "5.0-dt-20181130Z-1805ba",
   "org.scalablytyped" %%% "sc-broker" % "8.0-dt-20200205Z-472277",
   "org.scalablytyped" %%% "sc-errors" % "1.4-dt-20200205Z-9fe276",
-  "org.scalablytyped" %%% "socketcluster-client" % "15.1-dt-20200214Z-0948b4",
-  "org.scalablytyped" %%% "socketcluster-server" % "15.0-dt-20200214Z-80a661",
+  "org.scalablytyped" %%% "socketcluster-client" % "15.1-dt-20200214Z-1a1c13",
+  "org.scalablytyped" %%% "socketcluster-server" % "15.0-dt-20200214Z-a36d55",
   "org.scalablytyped" %%% "std" % "3.8-a0108c",
   "org.scalablytyped" %%% "stream-demux" % "7.0-dt-20200205Z-5bc9c9",
   "org.scalablytyped" %%% "writable-consumable-stream" % "1.1-dt-20200205Z-b35dee",

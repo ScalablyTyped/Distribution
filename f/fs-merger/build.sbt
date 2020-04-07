@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "fs-merger"
-version := "3.0.2-ce5b0c"
+version := "3.0.2-cbba47"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "broccoli-node-api" % "1.7.0-8f9f29",
+  "org.scalablytyped" %%% "broccoli-node-api" % "1.7.0-b85e5d",
   "org.scalablytyped" %%% "minimatch" % "3.0-dt-20200226Z-1967d2",
   "org.scalablytyped" %%% "node" % "13.9-dt-20200318Z-96a265",
   "org.scalablytyped" %%% "std" % "3.8-a0108c",

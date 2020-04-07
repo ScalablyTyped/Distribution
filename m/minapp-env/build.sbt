@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "minapp-env"
-version := "1.0-dt-20200227Z-fbf96c"
+version := "1.0-dt-20200227Z-030646"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -27,3 +27,20 @@ trait DescribeBundleTasksReques extends js.Object {
   var Filters: js.UndefOr[FilterList] = js.native
 }
 
+object DescribeBundleTasksReques {
+  @scala.inline
+  def apply(
+    $waiter: WaiterConfiguration = null,
+    BundleIds: BundleIdStringList = null,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    Filters: FilterList = null
+  ): DescribeBundleTasksReques = {
+    val __obj = js.Dynamic.literal()
+    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
+    if (BundleIds != null) __obj.updateDynamic("BundleIds")(BundleIds.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DescribeBundleTasksReques]
+  }
+}
+

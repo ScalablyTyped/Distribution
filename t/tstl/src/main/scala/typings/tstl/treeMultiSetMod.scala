@@ -66,7 +66,7 @@ object treeMultiSetMod extends js.Object {
             /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
             /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
             /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any, 
-            IteratoranyanyanyEquals, 
+            Iteratoranyanyany, 
             typings.tstl.setElementListMod.SetElementList.ReverseIterator[
               /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
               /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
@@ -83,7 +83,7 @@ object treeMultiSetMod extends js.Object {
             /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
             /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
             /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any, 
-            IteratoranyanyanyEquals, 
+            Iteratoranyanyany, 
             typings.tstl.setElementListMod.SetElementList.ReverseIterator[
               /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
               /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 

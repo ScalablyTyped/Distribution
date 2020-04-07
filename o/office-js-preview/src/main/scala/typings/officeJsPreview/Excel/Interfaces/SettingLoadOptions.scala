@@ -10,26 +10,40 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.4]
   */
-@js.native
 trait SettingLoadOptions extends js.Object {
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
     */
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.native
+  var $all: js.UndefOr[Boolean] = js.undefined
   /**
     *
     * Returns the key that represents the id of the Setting. Read-only.
     *
     * [Api set: ExcelApi 1.4]
     */
-  var key: js.UndefOr[Boolean] = js.native
+  var key: js.UndefOr[Boolean] = js.undefined
   /**
     *
     * Represents the value stored for this setting.
     *
     * [Api set: ExcelApi 1.4]
     */
-  var value: js.UndefOr[Boolean] = js.native
+  var value: js.UndefOr[Boolean] = js.undefined
+}
+
+object SettingLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[Boolean] = js.undefined,
+    key: js.UndefOr[Boolean] = js.undefined,
+    value: js.UndefOr[Boolean] = js.undefined
+  ): SettingLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (!js.isUndefined(key)) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SettingLoadOptions]
+  }
 }
 

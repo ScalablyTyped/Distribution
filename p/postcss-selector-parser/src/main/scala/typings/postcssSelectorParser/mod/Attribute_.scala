@@ -16,8 +16,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Attribute_
-  extends Namespace[js.UndefOr[String]]
-     with Node {
+  extends Namespace[js.UndefOr[String]] {
   var attribute: String = js.native
   var insensitive: js.UndefOr[Boolean] = js.native
   /**

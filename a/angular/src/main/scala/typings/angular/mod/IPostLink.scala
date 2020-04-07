@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
   * Interface for the $postLink lifecycle hook
   * https://docs.angularjs.org/api/ng/service/$compile#life-cycle-hooks
   */
-@js.native
 trait IPostLink extends js.Object {
   /**
     * Called after this controller's element and its children have been linked. Similar to the post-link function this
@@ -19,6 +18,15 @@ trait IPostLink extends js.Object {
     * different in Angular 1 there is no direct mapping and care should be taken when upgrading.
     */
   @JSName("$postLink")
-  def $postLink(): Unit = js.native
+  def $postLink(): Unit
+}
+
+object IPostLink {
+  @scala.inline
+  def apply($postLink: () => Unit): IPostLink = {
+    val __obj = js.Dynamic.literal($postLink = js.Any.fromFunction0($postLink))
+  
+    __obj.asInstanceOf[IPostLink]
+  }
 }
 

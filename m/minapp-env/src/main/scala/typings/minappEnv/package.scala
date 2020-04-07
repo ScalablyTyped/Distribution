@@ -8,7 +8,6 @@ package object minappEnv {
   type AnyArray = typings.minappEnv.Array[js.Any]
   type AnyFunction = js.Function1[/* repeated */ js.Any, js.Any]
   type AnyObject = org.scalablytyped.runtime.StringDictionary[js.Any]
-  type ArrayBufferLike = typings.minappEnv.ArrayBuffer
   type ClassDecorator = js.Function1[/* target */ typings.minappEnv.Function, typings.minappEnv.Function | scala.Unit]
   type Exclude[T, U] = T
   type IAPIFunction[T, P /* <: typings.minappEnv.IAPIParam[T] */] = js.Function1[/* param */ P, typings.minappEnv.Promise[T] | js.Any]

@@ -10,16 +10,25 @@ import scala.scalajs.js.annotation._
   *
   * [Api set:  1.1]
   */
-@js.native
 trait ShapeViewLoadOptions extends js.Object {
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.native
+  var $all: js.UndefOr[Boolean] = js.undefined
   /**
     *
     * Represents the highlight around the shape.
     *
     * [Api set:  1.1]
     */
-  var highlight: js.UndefOr[Boolean] = js.native
+  var highlight: js.UndefOr[Boolean] = js.undefined
+}
+
+object ShapeViewLoadOptions {
+  @scala.inline
+  def apply($all: js.UndefOr[Boolean] = js.undefined, highlight: js.UndefOr[Boolean] = js.undefined): ShapeViewLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (!js.isUndefined(highlight)) __obj.updateDynamic("highlight")(highlight.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ShapeViewLoadOptions]
+  }
 }
 

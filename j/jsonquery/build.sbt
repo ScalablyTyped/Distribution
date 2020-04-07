@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jsonquery"
-version := "0.1-dt-20200225Z-48a615"
+version := "0.1-dt-20200225Z-8800ae"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

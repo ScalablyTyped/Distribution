@@ -67,3 +67,38 @@ trait DescribeClusterSnapshotsM extends js.Object {
   var TagValues: js.UndefOr[TagValueList] = js.native
 }
 
+object DescribeClusterSnapshotsM {
+  @scala.inline
+  def apply(
+    $waiter: WaiterConfiguration = null,
+    ClusterExists: js.UndefOr[Boolean] = js.undefined,
+    ClusterIdentifier: String = null,
+    EndTime: TStamp = null,
+    Marker: String = null,
+    MaxRecords: Int | Double = null,
+    OwnerAccount: String = null,
+    SnapshotIdentifier: String = null,
+    SnapshotType: String = null,
+    SortingEntities: SnapshotSortingEntityList = null,
+    StartTime: TStamp = null,
+    TagKeys: TagKeyList = null,
+    TagValues: TagValueList = null
+  ): DescribeClusterSnapshotsM = {
+    val __obj = js.Dynamic.literal()
+    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
+    if (!js.isUndefined(ClusterExists)) __obj.updateDynamic("ClusterExists")(ClusterExists.asInstanceOf[js.Any])
+    if (ClusterIdentifier != null) __obj.updateDynamic("ClusterIdentifier")(ClusterIdentifier.asInstanceOf[js.Any])
+    if (EndTime != null) __obj.updateDynamic("EndTime")(EndTime.asInstanceOf[js.Any])
+    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
+    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
+    if (OwnerAccount != null) __obj.updateDynamic("OwnerAccount")(OwnerAccount.asInstanceOf[js.Any])
+    if (SnapshotIdentifier != null) __obj.updateDynamic("SnapshotIdentifier")(SnapshotIdentifier.asInstanceOf[js.Any])
+    if (SnapshotType != null) __obj.updateDynamic("SnapshotType")(SnapshotType.asInstanceOf[js.Any])
+    if (SortingEntities != null) __obj.updateDynamic("SortingEntities")(SortingEntities.asInstanceOf[js.Any])
+    if (StartTime != null) __obj.updateDynamic("StartTime")(StartTime.asInstanceOf[js.Any])
+    if (TagKeys != null) __obj.updateDynamic("TagKeys")(TagKeys.asInstanceOf[js.Any])
+    if (TagValues != null) __obj.updateDynamic("TagValues")(TagValues.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DescribeClusterSnapshotsM]
+  }
+}
+

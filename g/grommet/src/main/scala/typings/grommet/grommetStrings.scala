@@ -590,6 +590,9 @@ object grommetStrings {
   sealed trait `keep-all` extends js.Object
   
   @js.native
+  sealed trait key extends js.Object
+  
+  @js.native
   sealed trait keygen extends _PolymorphicType
   
   @js.native
@@ -795,6 +798,9 @@ object grommetStrings {
   
   @js.native
   sealed trait rectilinear extends DiagramConnectionType
+  
+  @js.native
+  sealed trait ref extends js.Object
   
   @js.native
   sealed trait repeat extends js.Object
@@ -1445,6 +1451,8 @@ object grommetStrings {
   @scala.inline
   def `keep-all`: `keep-all` = "keep-all".asInstanceOf[`keep-all`]
   @scala.inline
+  def key: key = "key".asInstanceOf[key]
+  @scala.inline
   def keygen: keygen = "keygen".asInstanceOf[keygen]
   @scala.inline
   def label: label = "label".asInstanceOf[label]
@@ -1568,6 +1576,8 @@ object grommetStrings {
   def rect: rect = "rect".asInstanceOf[rect]
   @scala.inline
   def rectilinear: rectilinear = "rectilinear".asInstanceOf[rectilinear]
+  @scala.inline
+  def ref: ref = "ref".asInstanceOf[ref]
   @scala.inline
   def repeat: repeat = "repeat".asInstanceOf[repeat]
   @scala.inline

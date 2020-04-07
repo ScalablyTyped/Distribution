@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("fork-ts-checker-webpack-plugin/lib/issue/IssueOrigin", JSImport.Namespace)
 @js.native
 object issueOriginMod extends js.Object {
+  /* Inlined { readonly TYPESCRIPT  :'typescript',  readonly ESLINT  :'eslint',  readonly INTERNAL  :'internal'}[keyof { readonly TYPESCRIPT  :'typescript',  readonly ESLINT  :'eslint',  readonly INTERNAL  :'internal'}] */
   /* Rewritten from type alias, can be one of: 
     - typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.typescript
     - typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.eslint

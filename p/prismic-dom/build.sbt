@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "prismic-dom"
-version := "2.1-dt-20191111Z-f47c6e"
+version := "2.1-dt-20191111Z-100d2a"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

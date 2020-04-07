@@ -1,6 +1,7 @@
 package typings.socketclusterServer.serverMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.agSimpleBroker.mod.SimpleExchange
 import typings.asyncStreamEmitter.mod.AsyncStreamEmitter
 import typings.jsonwebtoken.mod.Secret
 import typings.node.httpMod.OutgoingHttpHeaders
@@ -47,13 +48,13 @@ trait AGServer
   var ackTimeout: Double = js.native
   var allowClientPublish: Boolean = js.native
   var auth: SCAuthEngine = js.native
-  var brokerEngine: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AGSimpleBroker */ js.Any = js.native
+  var brokerEngine: typings.agSimpleBroker.mod.^ = js.native
   var clients: StringDictionary[typings.socketclusterServer.serversocketMod.^] = js.native
   var clientsCount: Double = js.native
   var codec: CodecEngine = js.native
   var defaultSignatureOptions: AnonAlgorithm = js.native
   var defaultVerificationOptions: AnonAlgorithms = js.native
-  var exchange: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AGSimpleBroker.SimpleExchange */ js.Any = js.native
+  var exchange: SimpleExchange = js.native
   var handshakeTimeout: Double = js.native
   var httpServer: Server = js.native
   var isReady: Boolean = js.native

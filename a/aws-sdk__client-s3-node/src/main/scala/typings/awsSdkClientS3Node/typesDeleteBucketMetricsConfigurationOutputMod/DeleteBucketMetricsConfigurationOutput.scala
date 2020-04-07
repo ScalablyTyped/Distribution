@@ -1,0 +1,22 @@
+package typings.awsSdkClientS3Node.typesDeleteBucketMetricsConfigurationOutputMod
+
+import typings.awsSdkClientS3Node.outputTypesUnionMod._OutputTypesUnion
+import typings.awsSdkTypes.responseMod.MetadataBearer
+import typings.awsSdkTypes.responseMod.ResponseMetadata
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait DeleteBucketMetricsConfigurationOutput
+  extends MetadataBearer
+     with _OutputTypesUnion
+
+object DeleteBucketMetricsConfigurationOutput {
+  @scala.inline
+  def apply($metadata: ResponseMetadata): DeleteBucketMetricsConfigurationOutput = {
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[DeleteBucketMetricsConfigurationOutput]
+  }
+}
+

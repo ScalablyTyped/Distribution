@@ -1,6 +1,8 @@
 package typings.awsSdk
 
+import typings.awsSdk.elbv2Mod.LoadBalancerArns
 import typings.awsSdk.elbv2Mod.LoadBalancerNames
+import typings.awsSdk.elbv2Mod.Marker
 import typings.awsSdk.serviceMod.WaiterConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -27,5 +29,24 @@ trait DescribeLoadBalancersInpu extends js.Object {
     * The maximum number of results to return with this call.
     */
   var PageSize: js.UndefOr[typings.awsSdk.elbv2Mod.PageSize] = js.native
+}
+
+object DescribeLoadBalancersInpu {
+  @scala.inline
+  def apply(
+    $waiter: WaiterConfiguration = null,
+    LoadBalancerArns: LoadBalancerArns = null,
+    Marker: Marker = null,
+    Names: LoadBalancerNames = null,
+    PageSize: Int | Double = null
+  ): DescribeLoadBalancersInpu = {
+    val __obj = js.Dynamic.literal()
+    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
+    if (LoadBalancerArns != null) __obj.updateDynamic("LoadBalancerArns")(LoadBalancerArns.asInstanceOf[js.Any])
+    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
+    if (Names != null) __obj.updateDynamic("Names")(Names.asInstanceOf[js.Any])
+    if (PageSize != null) __obj.updateDynamic("PageSize")(PageSize.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DescribeLoadBalancersInpu]
+  }
 }
 

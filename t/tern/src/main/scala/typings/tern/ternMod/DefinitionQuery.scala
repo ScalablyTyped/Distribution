@@ -6,7 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait DefinitionQuery extends BaseQueryWithFile {
+trait DefinitionQuery
+  extends BaseQueryWithFile
+     with Query {
   /** Specify the location of the expression. */
   var end: Double | Position
   /** Specify the location of the expression. */

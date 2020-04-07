@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "openapi-request-coercer"
-version := "2.4.0-8f91ee"
+version := "2.4.0-fefd5d"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "openapi-types" % "1.3.5-6a4209",
+  "org.scalablytyped" %%% "openapi-types" % "1.3.5-ca8819",
   "org.scalablytyped" %%% "std" % "3.8-a0108c",
   "org.scalablytyped" %%% "ts-log" % "2.1.4-ef4bf4")
 publishArtifact in packageDoc := false

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "frctl__fractal"
-version := "1.x-dt-20200225Z-de4048"
+version := "1.x-dt-20200225Z-02c865"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

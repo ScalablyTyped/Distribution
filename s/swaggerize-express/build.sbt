@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "swaggerize-express"
-version := "4.x-dt-20200227Z-040c37"
+version := "4.x-dt-20200227Z-3eb74e"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

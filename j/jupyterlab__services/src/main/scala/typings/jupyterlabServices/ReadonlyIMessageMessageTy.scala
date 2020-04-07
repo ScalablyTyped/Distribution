@@ -1,8 +1,22 @@
 package typings.jupyterlabServices
 
 import typings.jupyterlabServices.messagesMod.Channel
+import typings.jupyterlabServices.messagesMod.ICommInfoReply
+import typings.jupyterlabServices.messagesMod.ICompleteReply
+import typings.jupyterlabServices.messagesMod.IExecuteCount
+import typings.jupyterlabServices.messagesMod.IExecuteReply
 import typings.jupyterlabServices.messagesMod.IHeader
+import typings.jupyterlabServices.messagesMod.IHistoryReply
+import typings.jupyterlabServices.messagesMod.IHistoryRequestRange
+import typings.jupyterlabServices.messagesMod.IHistoryRequestSearch
+import typings.jupyterlabServices.messagesMod.IHistoryRequestTail
+import typings.jupyterlabServices.messagesMod.IInfoReply
+import typings.jupyterlabServices.messagesMod.IInputReply
+import typings.jupyterlabServices.messagesMod.IInspectReply
+import typings.jupyterlabServices.messagesMod.IIsCompleteReplyIncomplete
+import typings.jupyterlabServices.messagesMod.IIsCompleteReplyOther
 import typings.jupyterlabServices.messagesMod.MessageType
+import typings.jupyterlabServices.messagesMod.ReplyContent
 import typings.luminoCoreutils.jsonMod.JSONObject
 import typings.std.ArrayBuffer
 import typings.std.ArrayBufferView
@@ -14,7 +28,9 @@ import scala.scalajs.js.annotation._
 trait ReadonlyIMessageMessageTy extends js.Object {
   val buffers: js.UndefOr[js.Array[ArrayBuffer | ArrayBufferView]] = js.undefined
   val channel: Channel
-  val content: /* import warning: importer.ImportType#apply Failed type conversion: @jupyterlab/services.@jupyterlab/services/lib/kernel/messages.Message['content'] */ js.Any
+  val content: AnonWait | AnonCommid | (ReplyContent[
+    ICommInfoReply | ICompleteReply | IHistoryReply | IInfoReply | IInputReply | IInspectReply | IIsCompleteReplyIncomplete | IIsCompleteReplyOther
+  ]) | AnonTargetname | AnonData | AnonCode | AnonMetadata | AnonEname | AnonExecutioncount | (ReplyContent[IExecuteReply] with IExecuteCount) | AnonAllowstdin | AnonTransient | IHistoryRequestRange | IHistoryRequestSearch | IHistoryRequestTail | js.Object | AnonPassword | AnonCursorpos | AnonCodeString | AnonExecutionstate | AnonName | (AnonMetadata with AnonTransientAnonDisplayidString) | AnonArguments | AnonBody | AnonEvent
   val header: IHeader[MessageType]
   val metadata: JSONObject
   val parent_header: IHeader[MessageType] | js.Object
@@ -24,7 +40,9 @@ object ReadonlyIMessageMessageTy {
   @scala.inline
   def apply(
     channel: Channel,
-    content: /* import warning: importer.ImportType#apply Failed type conversion: @jupyterlab/services.@jupyterlab/services/lib/kernel/messages.Message['content'] */ js.Any,
+    content: AnonWait | AnonCommid | (ReplyContent[
+      ICommInfoReply | ICompleteReply | IHistoryReply | IInfoReply | IInputReply | IInspectReply | IIsCompleteReplyIncomplete | IIsCompleteReplyOther
+    ]) | AnonTargetname | AnonData | AnonCode | AnonMetadata | AnonEname | AnonExecutioncount | (ReplyContent[IExecuteReply] with IExecuteCount) | AnonAllowstdin | AnonTransient | IHistoryRequestRange | IHistoryRequestSearch | IHistoryRequestTail | js.Object | AnonPassword | AnonCursorpos | AnonCodeString | AnonExecutionstate | AnonName | (AnonMetadata with AnonTransientAnonDisplayidString) | AnonArguments | AnonBody | AnonEvent,
     header: IHeader[MessageType],
     metadata: JSONObject,
     parent_header: IHeader[MessageType] | js.Object,

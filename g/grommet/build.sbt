@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "grommet"
-version := "2.11.2-409f1f"
+version := "2.11.2-68f520"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

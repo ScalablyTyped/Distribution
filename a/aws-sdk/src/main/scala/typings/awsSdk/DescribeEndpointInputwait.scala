@@ -1,5 +1,6 @@
 package typings.awsSdk
 
+import typings.awsSdk.sagemakerMod.EndpointName
 import typings.awsSdk.serviceMod.WaiterConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,5 +15,14 @@ trait DescribeEndpointInputwait extends js.Object {
     * The name of the endpoint.
     */
   var EndpointName: typings.awsSdk.sagemakerMod.EndpointName = js.native
+}
+
+object DescribeEndpointInputwait {
+  @scala.inline
+  def apply(EndpointName: EndpointName, $waiter: WaiterConfiguration = null): DescribeEndpointInputwait = {
+    val __obj = js.Dynamic.literal(EndpointName = EndpointName.asInstanceOf[js.Any])
+    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DescribeEndpointInputwait]
+  }
 }
 

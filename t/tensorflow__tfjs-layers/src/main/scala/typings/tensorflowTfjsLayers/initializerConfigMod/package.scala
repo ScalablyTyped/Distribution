@@ -13,7 +13,6 @@ package object initializerConfigMod {
     typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Identity, 
     typings.tensorflowTfjsLayers.initializerConfigMod.IdentityConfig
   ]
-  type InitializerClassName = /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-layers.@tensorflow/tfjs-layers/dist/keras_format/initializer_config.InitializerSerialization['class_name'] */ js.Any
   type InitializerSerialization = typings.tensorflowTfjsLayers.initializerConfigMod.ZerosSerialization | typings.tensorflowTfjsLayers.initializerConfigMod.OnesSerialization | typings.tensorflowTfjsLayers.initializerConfigMod.ConstantSerialization | typings.tensorflowTfjsLayers.initializerConfigMod.RandomUniformSerialization | typings.tensorflowTfjsLayers.initializerConfigMod.RandomNormalSerialization | typings.tensorflowTfjsLayers.initializerConfigMod.TruncatedNormalSerialization | typings.tensorflowTfjsLayers.initializerConfigMod.IdentitySerialization | typings.tensorflowTfjsLayers.initializerConfigMod.VarianceScalingSerialization | typings.tensorflowTfjsLayers.initializerConfigMod.OrthogonalSerialization
   type OnesSerialization = typings.tensorflowTfjsLayers.typesMod.BaseSerialization[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Ones, js.Object]
   type OrthogonalSerialization = typings.tensorflowTfjsLayers.typesMod.BaseSerialization[

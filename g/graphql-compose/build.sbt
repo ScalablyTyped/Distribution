@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "graphql-compose"
-version := "6.3.8-7a7569"
+version := "6.3.8-0a5b91"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "graphql" % "14.6.0-603e55",
+  "org.scalablytyped" %%% "graphql" % "14.6.0-f78e99",
   "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")

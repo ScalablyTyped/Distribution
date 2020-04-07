@@ -27,3 +27,19 @@ trait DescribeServicesRequestwa extends js.Object {
   var services: StringList = js.native
 }
 
+object DescribeServicesRequestwa {
+  @scala.inline
+  def apply(
+    services: StringList,
+    $waiter: WaiterConfiguration = null,
+    cluster: String = null,
+    include: ServiceFieldList = null
+  ): DescribeServicesRequestwa = {
+    val __obj = js.Dynamic.literal(services = services.asInstanceOf[js.Any])
+    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
+    if (cluster != null) __obj.updateDynamic("cluster")(cluster.asInstanceOf[js.Any])
+    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DescribeServicesRequestwa]
+  }
+}
+

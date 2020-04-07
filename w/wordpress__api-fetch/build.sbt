@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "wordpress__api-fetch"
-version := "3.2-dt-20190726Z-3fd436"
+version := "3.2-dt-20190726Z-985c4f"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

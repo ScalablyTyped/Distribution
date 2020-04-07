@@ -1,6 +1,6 @@
 package typings.algoliaClientSearch.mod
 
-import typings.algoliaClientSearch.ReadonlyWaitablePromiseDeFinally
+import typings.algoliaClientSearch.ReadonlyWaitablePromiseDe
 import typings.algoliaTransporter.mod.RequestOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,7 +12,7 @@ object deleteObject extends js.Object {
   def apply(base: SearchIndex): js.Function2[
     /* objectID */ String, 
     /* requestOptions */ js.UndefOr[RequestOptions], 
-    ReadonlyWaitablePromiseDeFinally
+    ReadonlyWaitablePromiseDe
   ] = js.native
 }
 

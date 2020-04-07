@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@blueprintjs/core/lib/esm/common/boundary", JSImport.Namespace)
 @js.native
 object boundaryMod extends js.Object {
+  /* Inlined {  START  :'start',   END  :'end'}[keyof {  START  :'start',   END  :'end'}] */
   /* Rewritten from type alias, can be one of: 
     - typings.blueprintjsCore.blueprintjsCoreStrings.start
     - typings.blueprintjsCore.blueprintjsCoreStrings.end

@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
   * Interface for the $doCheck lifecycle hook
   * https://docs.angularjs.org/api/ng/service/$compile#life-cycle-hooks
   */
-@js.native
 trait IDoCheck extends js.Object {
   /**
     * Called on each turn of the digest cycle. Provides an opportunity to detect and act on changes.
@@ -19,6 +18,15 @@ trait IDoCheck extends js.Object {
     * you must store the previous value(s) for comparison to the current values.
     */
   @JSName("$doCheck")
-  def $doCheck(): Unit = js.native
+  def $doCheck(): Unit
+}
+
+object IDoCheck {
+  @scala.inline
+  def apply($doCheck: () => Unit): IDoCheck = {
+    val __obj = js.Dynamic.literal($doCheck = js.Any.fromFunction0($doCheck))
+  
+    __obj.asInstanceOf[IDoCheck]
+  }
 }
 

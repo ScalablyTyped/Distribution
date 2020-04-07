@@ -22,3 +22,14 @@ trait DescribeFleetsRequestwait extends js.Object {
   var NextToken: js.UndefOr[String] = js.native
 }
 
+object DescribeFleetsRequestwait {
+  @scala.inline
+  def apply($waiter: WaiterConfiguration = null, Names: StringList = null, NextToken: String = null): DescribeFleetsRequestwait = {
+    val __obj = js.Dynamic.literal()
+    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
+    if (Names != null) __obj.updateDynamic("Names")(Names.asInstanceOf[js.Any])
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DescribeFleetsRequestwait]
+  }
+}
+

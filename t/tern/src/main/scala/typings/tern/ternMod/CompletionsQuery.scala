@@ -6,7 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait CompletionsQuery extends BaseQueryWithFile {
+trait CompletionsQuery
+  extends BaseQueryWithFile
+     with Query {
   /** Whether to use a case-insensitive compare between the current word and potential completions. Default `false` */
   var caseInsensitive: js.UndefOr[Boolean] = js.undefined
   /** Whether to include the distance (in scopes for variables, in prototypes for properties) between the completions and the origin position in the result data. Default `false` */

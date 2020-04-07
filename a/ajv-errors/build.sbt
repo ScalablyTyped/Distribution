@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "ajv-errors"
-version := "1.0-dt-20200225Z-bc81b2"
+version := "1.0-dt-20200225Z-8b0d2a"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "ajv" % "6.12.0-eabe0e",
+  "org.scalablytyped" %%% "ajv" % "6.12.0-4a5655",
   "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")

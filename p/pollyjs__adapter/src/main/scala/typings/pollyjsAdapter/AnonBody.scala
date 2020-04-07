@@ -1,6 +1,6 @@
 package typings.pollyjsAdapter
 
-import typings.pollyjsCore.mod.Headers
+import typings.std.Headers
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

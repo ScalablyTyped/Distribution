@@ -37,3 +37,24 @@ trait DescribeImagesRequestwait extends js.Object {
   var Owners: js.UndefOr[OwnerStringList] = js.native
 }
 
+object DescribeImagesRequestwait {
+  @scala.inline
+  def apply(
+    $waiter: WaiterConfiguration = null,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    ExecutableUsers: ExecutableByStringList = null,
+    Filters: FilterList = null,
+    ImageIds: ImageIdStringList = null,
+    Owners: OwnerStringList = null
+  ): DescribeImagesRequestwait = {
+    val __obj = js.Dynamic.literal()
+    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (ExecutableUsers != null) __obj.updateDynamic("ExecutableUsers")(ExecutableUsers.asInstanceOf[js.Any])
+    if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
+    if (ImageIds != null) __obj.updateDynamic("ImageIds")(ImageIds.asInstanceOf[js.Any])
+    if (Owners != null) __obj.updateDynamic("Owners")(Owners.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DescribeImagesRequestwait]
+  }
+}
+

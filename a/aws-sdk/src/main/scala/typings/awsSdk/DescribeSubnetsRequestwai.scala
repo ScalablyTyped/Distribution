@@ -37,3 +37,24 @@ trait DescribeSubnetsRequestwai extends js.Object {
   var SubnetIds: js.UndefOr[SubnetIdStringList] = js.native
 }
 
+object DescribeSubnetsRequestwai {
+  @scala.inline
+  def apply(
+    $waiter: WaiterConfiguration = null,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    Filters: FilterList = null,
+    MaxResults: Int | Double = null,
+    NextToken: String = null,
+    SubnetIds: SubnetIdStringList = null
+  ): DescribeSubnetsRequestwai = {
+    val __obj = js.Dynamic.literal()
+    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
+    if (SubnetIds != null) __obj.updateDynamic("SubnetIds")(SubnetIds.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DescribeSubnetsRequestwai]
+  }
+}
+

@@ -17,3 +17,12 @@ trait DescribeClusterRequestwai extends js.Object {
   var name: String = js.native
 }
 
+object DescribeClusterRequestwai {
+  @scala.inline
+  def apply(name: String, $waiter: WaiterConfiguration = null): DescribeClusterRequestwai = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DescribeClusterRequestwai]
+  }
+}
+

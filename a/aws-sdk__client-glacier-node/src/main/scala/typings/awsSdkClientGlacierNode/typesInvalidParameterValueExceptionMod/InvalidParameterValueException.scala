@@ -34,11 +34,11 @@ import typings.awsSdkClientGlacierNode.setVaultNotificationsExceptionsUnionMod.S
 import typings.awsSdkClientGlacierNode.uploadArchiveExceptionsUnionMod.UploadArchiveExceptionsUnion
 import typings.awsSdkClientGlacierNode.uploadMultipartPartExceptionsUnionMod.UploadMultipartPartExceptionsUnion
 import typings.awsSdkTypes.exceptionMod.ServiceException
+import typings.awsSdkTypes.responseMod.ResponseMetadata
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait InvalidParameterValueException
   extends ServiceException[InvalidParameterValueExceptionDetails]
      with AbortMultipartUploadExceptionsUnion
@@ -75,6 +75,21 @@ trait InvalidParameterValueException
      with UploadArchiveExceptionsUnion
      with UploadMultipartPartExceptionsUnion {
   @JSName("name")
-  var name_InvalidParameterValueException: typings.awsSdkClientGlacierNode.awsSdkClientGlacierNodeStrings.InvalidParameterValueException = js.native
+  var name_InvalidParameterValueException: typings.awsSdkClientGlacierNode.awsSdkClientGlacierNodeStrings.InvalidParameterValueException
+}
+
+object InvalidParameterValueException {
+  @scala.inline
+  def apply(
+    $metadata: ResponseMetadata,
+    details: InvalidParameterValueExceptionDetails,
+    message: String,
+    name: typings.awsSdkClientGlacierNode.awsSdkClientGlacierNodeStrings.InvalidParameterValueException,
+    stack: String = null
+  ): InvalidParameterValueException = {
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
+    __obj.asInstanceOf[InvalidParameterValueException]
+  }
 }
 

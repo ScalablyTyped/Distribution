@@ -4,19 +4,34 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait SharedProps extends js.Object {
   @JSName("$disabled")
-  var $disabled: Boolean = js.native
+  var $disabled: Boolean
   @JSName("$isDragged")
-  var $isDragged: Boolean = js.native
+  var $isDragged: Boolean
   @JSName("$max")
-  var $max: Double = js.native
+  var $max: Double
   @JSName("$min")
-  var $min: Double = js.native
+  var $min: Double
   @JSName("$thumbIndex")
-  var $thumbIndex: Double = js.native
+  var $thumbIndex: Double
   @JSName("$value")
-  var $value: js.Array[Double] = js.native
+  var $value: js.Array[Double]
+}
+
+object SharedProps {
+  @scala.inline
+  def apply(
+    $disabled: Boolean,
+    $isDragged: Boolean,
+    $max: Double,
+    $min: Double,
+    $thumbIndex: Double,
+    $value: js.Array[Double]
+  ): SharedProps = {
+    val __obj = js.Dynamic.literal($disabled = $disabled.asInstanceOf[js.Any], $isDragged = $isDragged.asInstanceOf[js.Any], $max = $max.asInstanceOf[js.Any], $min = $min.asInstanceOf[js.Any], $thumbIndex = $thumbIndex.asInstanceOf[js.Any], $value = $value.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[SharedProps]
+  }
 }
 

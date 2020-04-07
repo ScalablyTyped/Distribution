@@ -22,12 +22,12 @@ trait SankeyNode extends js.Object {
     * Array of outgoing links which have this node as their source.
     * This property is calculated internally by the Sankey layout generator.
     */
-  var sourceLinks: js.UndefOr[js.Array[typings.d3Sankey.mod.SankeyLink[js.Object, js.Object]]] = js.undefined
+  var sourceLinks: js.UndefOr[js.Array[SankeyLink]] = js.undefined
   /**
     * Array of incoming links which have this node as their target.
     * This property is calculated internally by the Sankey layout generator.
     */
-  var targetLinks: js.UndefOr[js.Array[typings.d3Sankey.mod.SankeyLink[js.Object, js.Object]]] = js.undefined
+  var targetLinks: js.UndefOr[js.Array[SankeyLink]] = js.undefined
   /**
     * Node's value calculated by Sankey layout Generator;
     * the sum of link.value for the node’s incoming links.
@@ -57,8 +57,8 @@ object SankeyNode {
     depth: Int | Double = null,
     height: Int | Double = null,
     index: Int | Double = null,
-    sourceLinks: js.Array[typings.d3Sankey.mod.SankeyLink[js.Object, js.Object]] = null,
-    targetLinks: js.Array[typings.d3Sankey.mod.SankeyLink[js.Object, js.Object]] = null,
+    sourceLinks: js.Array[SankeyLink] = null,
+    targetLinks: js.Array[SankeyLink] = null,
     value: Int | Double = null,
     x0: Int | Double = null,
     x1: Int | Double = null,

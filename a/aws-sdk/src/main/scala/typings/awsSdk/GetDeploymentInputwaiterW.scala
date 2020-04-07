@@ -17,3 +17,12 @@ trait GetDeploymentInputwaiterW extends js.Object {
   var deploymentId: DeploymentId = js.native
 }
 
+object GetDeploymentInputwaiterW {
+  @scala.inline
+  def apply(deploymentId: DeploymentId, $waiter: WaiterConfiguration = null): GetDeploymentInputwaiterW = {
+    val __obj = js.Dynamic.literal(deploymentId = deploymentId.asInstanceOf[js.Any])
+    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GetDeploymentInputwaiterW]
+  }
+}
+

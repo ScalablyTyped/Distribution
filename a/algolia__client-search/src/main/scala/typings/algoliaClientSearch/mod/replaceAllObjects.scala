@@ -1,6 +1,6 @@
 package typings.algoliaClientSearch.mod
 
-import typings.algoliaClientSearch.ReadonlyWaitablePromiseChFinally
+import typings.algoliaClientSearch.ReadonlyWaitablePromiseCh
 import typings.algoliaTransporter.mod.RequestOptions
 import typings.std.Record
 import scala.scalajs.js
@@ -15,7 +15,7 @@ object replaceAllObjects extends js.Object {
     /* requestOptions */ js.UndefOr[
       ReplaceAllObjectsOptions with ChunkOptions with SaveObjectsOptions with RequestOptions
     ], 
-    ReadonlyWaitablePromiseChFinally
+    ReadonlyWaitablePromiseCh
   ] = js.native
 }
 

@@ -13,10 +13,6 @@ package object mod {
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DisplayNamesOptions */ js.Any, 
     typings.reactIntl.reactIntlStrings.localeMatcher
   ]
-  type FormatListOptions = typings.std.Exclude[
-    typings.formatjsIntlListformat.mod.IntlListFormatOptions, 
-    typings.reactIntl.reactIntlStrings.localeMatcher
-  ]
   type FormatNumberOptions = (typings.std.Exclude[
     typings.formatjsIntlUnifiedNumberformat.mod.UnifiedNumberFormatOptions, 
     typings.reactIntl.reactIntlStrings.localeMatcher

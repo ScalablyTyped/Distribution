@@ -1,5 +1,7 @@
 package typings.awsSdk
 
+import typings.awsSdk.emrMod.ClusterId
+import typings.awsSdk.emrMod.StepId
 import typings.awsSdk.serviceMod.WaiterConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,5 +20,14 @@ trait DescribeStepInputwaiterWa extends js.Object {
     * The identifier of the step to describe.
     */
   var StepId: typings.awsSdk.emrMod.StepId = js.native
+}
+
+object DescribeStepInputwaiterWa {
+  @scala.inline
+  def apply(ClusterId: ClusterId, StepId: StepId, $waiter: WaiterConfiguration = null): DescribeStepInputwaiterWa = {
+    val __obj = js.Dynamic.literal(ClusterId = ClusterId.asInstanceOf[js.Any], StepId = StepId.asInstanceOf[js.Any])
+    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DescribeStepInputwaiterWa]
+  }
 }
 

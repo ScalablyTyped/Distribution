@@ -16,3 +16,12 @@ trait GetDistributionRequestwai extends js.Object {
   var Id: String = js.native
 }
 
+object GetDistributionRequestwai {
+  @scala.inline
+  def apply(Id: String, $waiter: WaiterConfiguration = null): GetDistributionRequestwai = {
+    val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
+    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GetDistributionRequestwai]
+  }
+}
+

@@ -1,22 +1,22 @@
 package typings.algoliaClientSearch
 
-import typings.algoliaClientSearch.mod.DeleteResponse
+import typings.algoliaClientSearch.mod.DeleteApiKeyResponse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined std.Readonly<@algolia/client-common.@algolia/client-common.WaitablePromise<@algolia/client-search.@algolia/client-search.DeleteResponse>> */
+/* Inlined std.Readonly<@algolia/client-common.@algolia/client-common.WaitablePromise<@algolia/client-search.@algolia/client-search.DeleteApiKeyResponse>> */
 trait ReadonlyWaitablePromiseDeCatch extends js.Object {
-  def `catch`[TResult](): js.Promise[DeleteResponse | TResult]
-  def `finally`(): js.Promise[DeleteResponse]
+  def `catch`[TResult](): js.Promise[DeleteApiKeyResponse | TResult]
+  def `finally`(): js.Promise[DeleteApiKeyResponse]
   def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2]
 }
 
 object ReadonlyWaitablePromiseDeCatch {
   @scala.inline
   def apply(
-    `catch`: () => js.Promise[DeleteResponse | js.Any],
-    `finally`: () => js.Promise[DeleteResponse],
+    `catch`: () => js.Promise[DeleteApiKeyResponse | js.Any],
+    `finally`: () => js.Promise[DeleteApiKeyResponse],
     `then`: () => js.Promise[js.Any | js.Any]
   ): ReadonlyWaitablePromiseDeCatch = {
     val __obj = js.Dynamic.literal()

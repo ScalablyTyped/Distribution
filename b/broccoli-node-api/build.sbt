@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "broccoli-node-api"
-version := "1.7.0-8f9f29"
+version := "1.7.0-b85e5d"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

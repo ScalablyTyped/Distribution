@@ -51,3 +51,50 @@ trait ParamsResourceStatsIndexDatasourcesGet extends StandardParameters {
   var toDateDotyear: js.UndefOr[Double] = js.native
 }
 
+object ParamsResourceStatsIndexDatasourcesGet {
+  @scala.inline
+  def apply(
+    $Dotxgafv: String = null,
+    access_token: String = null,
+    alt: String = null,
+    auth: String | OAuth2Client | JWT | Compute | UserRefreshClient = null,
+    callback: String = null,
+    fields: String = null,
+    fromDateDotday: Int | Double = null,
+    fromDateDotmonth: Int | Double = null,
+    fromDateDotyear: Int | Double = null,
+    key: String = null,
+    name: String = null,
+    oauth_token: String = null,
+    prettyPrint: js.UndefOr[Boolean] = js.undefined,
+    quotaUser: String = null,
+    toDateDotday: Int | Double = null,
+    toDateDotmonth: Int | Double = null,
+    toDateDotyear: Int | Double = null,
+    uploadType: String = null,
+    upload_protocol: String = null
+  ): ParamsResourceStatsIndexDatasourcesGet = {
+    val __obj = js.Dynamic.literal()
+    if ($Dotxgafv != null) __obj.updateDynamic("$.xgafv")($Dotxgafv.asInstanceOf[js.Any])
+    if (access_token != null) __obj.updateDynamic("access_token")(access_token.asInstanceOf[js.Any])
+    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
+    if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
+    if (callback != null) __obj.updateDynamic("callback")(callback.asInstanceOf[js.Any])
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (fromDateDotday != null) __obj.updateDynamic("fromDate.day")(fromDateDotday.asInstanceOf[js.Any])
+    if (fromDateDotmonth != null) __obj.updateDynamic("fromDate.month")(fromDateDotmonth.asInstanceOf[js.Any])
+    if (fromDateDotyear != null) __obj.updateDynamic("fromDate.year")(fromDateDotyear.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
+    if (toDateDotday != null) __obj.updateDynamic("toDate.day")(toDateDotday.asInstanceOf[js.Any])
+    if (toDateDotmonth != null) __obj.updateDynamic("toDate.month")(toDateDotmonth.asInstanceOf[js.Any])
+    if (toDateDotyear != null) __obj.updateDynamic("toDate.year")(toDateDotyear.asInstanceOf[js.Any])
+    if (uploadType != null) __obj.updateDynamic("uploadType")(uploadType.asInstanceOf[js.Any])
+    if (upload_protocol != null) __obj.updateDynamic("upload_protocol")(upload_protocol.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ParamsResourceStatsIndexDatasourcesGet]
+  }
+}
+

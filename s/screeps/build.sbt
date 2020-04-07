@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "screeps"
-version := "3.0-dt-20200225Z-60b5e3"
+version := "3.0-dt-20200225Z-227dbb"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

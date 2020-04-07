@@ -1,6 +1,6 @@
 package typings.algoliaClientSearch.mod
 
-import typings.algoliaClientSearch.ReadonlyWaitablePromisePaFinally
+import typings.algoliaClientSearch.ReadonlyWaitablePromisePa
 import typings.algoliaTransporter.mod.RequestOptions
 import typings.std.Record
 import scala.scalajs.js
@@ -13,7 +13,7 @@ object partialUpdateObject extends js.Object {
   def apply(base: SearchIndex): js.Function2[
     /* object */ Record[String, _], 
     /* requestOptions */ js.UndefOr[RequestOptions with ChunkOptions with PartialUpdateObjectsOptions], 
-    ReadonlyWaitablePromisePaFinally
+    ReadonlyWaitablePromisePa
   ] = js.native
 }
 

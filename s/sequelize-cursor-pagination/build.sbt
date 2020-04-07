@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "sequelize-cursor-pagination"
-version := "1.2-dt-20190524Z-41993a"
+version := "1.2-dt-20190524Z-9e33c0"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "continuation-local-storage" % "3.2-dt-20200225Z-d06eb6",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20200302Z-8af6d1",
   "org.scalablytyped" %%% "node" % "13.9-dt-20200318Z-96a265",
-  "org.scalablytyped" %%% "sequelize" % "4.28.0-dt-20200225Z-04cf97",
+  "org.scalablytyped" %%% "sequelize" % "4.28.0-dt-20200225Z-735e1c",
   "org.scalablytyped" %%% "std" % "3.8-a0108c",
   "org.scalablytyped" %%% "validator" % "12.0-dt-20191226Z-cee9bb")
 publishArtifact in packageDoc := false

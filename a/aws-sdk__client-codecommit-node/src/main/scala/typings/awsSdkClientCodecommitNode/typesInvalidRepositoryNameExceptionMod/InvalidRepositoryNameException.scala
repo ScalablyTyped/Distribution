@@ -30,11 +30,11 @@ import typings.awsSdkClientCodecommitNode.updateDefaultBranchExceptionsUnionMod.
 import typings.awsSdkClientCodecommitNode.updateRepositoryDescriptionExceptionsUnionMod.UpdateRepositoryDescriptionExceptionsUnion
 import typings.awsSdkClientCodecommitNode.updateRepositoryNameExceptionsUnionMod.UpdateRepositoryNameExceptionsUnion
 import typings.awsSdkTypes.exceptionMod.ServiceException
+import typings.awsSdkTypes.responseMod.ResponseMetadata
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait InvalidRepositoryNameException
   extends ServiceException[InvalidRepositoryNameExceptionDetails]
      with BatchGetRepositoriesExceptionsUnion
@@ -67,6 +67,21 @@ trait InvalidRepositoryNameException
      with UpdateRepositoryDescriptionExceptionsUnion
      with UpdateRepositoryNameExceptionsUnion {
   @JSName("name")
-  var name_InvalidRepositoryNameException: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidRepositoryNameException = js.native
+  var name_InvalidRepositoryNameException: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidRepositoryNameException
+}
+
+object InvalidRepositoryNameException {
+  @scala.inline
+  def apply(
+    $metadata: ResponseMetadata,
+    details: InvalidRepositoryNameExceptionDetails,
+    message: String,
+    name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidRepositoryNameException,
+    stack: String = null
+  ): InvalidRepositoryNameException = {
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
+    __obj.asInstanceOf[InvalidRepositoryNameException]
+  }
 }
 

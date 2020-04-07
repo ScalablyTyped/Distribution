@@ -1,6 +1,6 @@
 name := "sbt-ScalablyTyped"
 organization := "org.scalablytyped"
-version := "202003220941"
+version := "202004071016"
 sbtPlugin := true
 bintrayRepository := "ScalablyTyped"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -1,5 +1,6 @@
 package typings.awsSdk
 
+import typings.awsSdk.elastictranscoderMod.Id
 import typings.awsSdk.serviceMod.WaiterConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,5 +15,14 @@ trait ReadJobRequestwaiterWaite extends js.Object {
     * The identifier of the job for which you want to get detailed information.
     */
   var Id: typings.awsSdk.elastictranscoderMod.Id = js.native
+}
+
+object ReadJobRequestwaiterWaite {
+  @scala.inline
+  def apply(Id: Id, $waiter: WaiterConfiguration = null): ReadJobRequestwaiterWaite = {
+    val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
+    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ReadJobRequestwaiterWaite]
+  }
 }
 

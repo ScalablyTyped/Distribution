@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "blueprintjs__icons"
-version := "3.14.0-719809"
+version := "3.14.0-560d19"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

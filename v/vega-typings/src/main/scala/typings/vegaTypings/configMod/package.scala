@@ -13,5 +13,4 @@ package object configMod {
     typings.vegaTypings.encodeMod.ScaledValueRef[js.Any] | typings.vegaTypings.encodeMod.NumericValueRef | typings.vegaTypings.encodeMod.ColorValueRef
   ]) | typings.vegaTypings.configMod.KeepSignal[T]
   type KeepSignal[T] = typings.vegaTypings.signalMod.SignalRef
-  type MarkConfigKeys = typings.vegaTypings.vegaTypingsStrings.mark | (/* import warning: importer.ImportType#apply Failed type conversion: vega-typings.vega-typings/types/spec/mark.Mark['type'] */ js.Any)
 }

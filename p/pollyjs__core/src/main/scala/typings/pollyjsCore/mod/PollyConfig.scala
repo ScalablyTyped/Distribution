@@ -3,6 +3,7 @@ package typings.pollyjsCore.mod
 import typings.pollyjsCore.AnonBody
 import typings.pollyjsCore.AnonDictkey
 import typings.pollyjsCore.AnonFs
+import typings.pollyjsCore.TypeofAdapter
 import typings.pollyjsCore.TypeofPersister
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,11 +11,7 @@ import scala.scalajs.js.annotation._
 
 trait PollyConfig extends js.Object {
   var adapterOptions: js.UndefOr[AnonDictkey] = js.undefined
-  var adapters: js.UndefOr[
-    js.Array[
-      String | (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Adapter */ _)
-    ]
-  ] = js.undefined
+  var adapters: js.UndefOr[js.Array[String | TypeofAdapter]] = js.undefined
   var expiresIn: js.UndefOr[String | Null] = js.undefined
   var expiryStrategy: js.UndefOr[EXPIRY_STRATEGY] = js.undefined
   var logging: js.UndefOr[Boolean] = js.undefined
@@ -33,9 +30,7 @@ object PollyConfig {
   @scala.inline
   def apply(
     adapterOptions: AnonDictkey = null,
-    adapters: js.Array[
-      String | (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Adapter */ _)
-    ] = null,
+    adapters: js.Array[String | TypeofAdapter] = null,
     expiresIn: String = null,
     expiryStrategy: EXPIRY_STRATEGY = null,
     logging: js.UndefOr[Boolean] = js.undefined,

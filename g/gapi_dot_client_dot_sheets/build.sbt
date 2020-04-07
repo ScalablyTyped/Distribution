@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gapi_dot_client_dot_sheets"
-version := "4.0-dt-20200225Z-6ff47b"
+version := "4.0-dt-20200225Z-572c0b"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

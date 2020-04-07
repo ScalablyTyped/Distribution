@@ -4,29 +4,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait AnonGuardianId extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
-  var $Dotxgafv: js.UndefOr[String] = js.native
+  var $Dotxgafv: js.UndefOr[String] = js.undefined
   /** OAuth access token. */
-  var access_token: js.UndefOr[String] = js.native
+  var access_token: js.UndefOr[String] = js.undefined
   /** Data format for response. */
-  var alt: js.UndefOr[String] = js.native
+  var alt: js.UndefOr[String] = js.undefined
   /** JSONP */
-  var callback: js.UndefOr[String] = js.native
+  var callback: js.UndefOr[String] = js.undefined
   /** Selector specifying which fields to include in a partial response. */
-  var fields: js.UndefOr[String] = js.native
+  var fields: js.UndefOr[String] = js.undefined
   /** The `id` field from a `Guardian`. */
-  var guardianId: String = js.native
+  var guardianId: String
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   /** OAuth 2.0 token for the current user. */
-  var oauth_token: js.UndefOr[String] = js.native
+  var oauth_token: js.UndefOr[String] = js.undefined
   /** Returns response with indentations and line breaks. */
-  var prettyPrint: js.UndefOr[Boolean] = js.native
+  var prettyPrint: js.UndefOr[Boolean] = js.undefined
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
-  var quotaUser: js.UndefOr[String] = js.native
+  var quotaUser: js.UndefOr[String] = js.undefined
   /**
     * The student whose guardian is being requested. One of the following:
     *
@@ -34,10 +33,43 @@ trait AnonGuardianId extends js.Object {
     * &#42; the email address of the user
     * &#42; the string literal `"me"`, indicating the requesting user
     */
-  var studentId: String = js.native
+  var studentId: String
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
-  var uploadType: js.UndefOr[String] = js.native
+  var uploadType: js.UndefOr[String] = js.undefined
   /** Upload protocol for media (e.g. "raw", "multipart"). */
-  var upload_protocol: js.UndefOr[String] = js.native
+  var upload_protocol: js.UndefOr[String] = js.undefined
+}
+
+object AnonGuardianId {
+  @scala.inline
+  def apply(
+    guardianId: String,
+    studentId: String,
+    $Dotxgafv: String = null,
+    access_token: String = null,
+    alt: String = null,
+    callback: String = null,
+    fields: String = null,
+    key: String = null,
+    oauth_token: String = null,
+    prettyPrint: js.UndefOr[Boolean] = js.undefined,
+    quotaUser: String = null,
+    uploadType: String = null,
+    upload_protocol: String = null
+  ): AnonGuardianId = {
+    val __obj = js.Dynamic.literal(guardianId = guardianId.asInstanceOf[js.Any], studentId = studentId.asInstanceOf[js.Any])
+    if ($Dotxgafv != null) __obj.updateDynamic("$.xgafv")($Dotxgafv.asInstanceOf[js.Any])
+    if (access_token != null) __obj.updateDynamic("access_token")(access_token.asInstanceOf[js.Any])
+    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
+    if (callback != null) __obj.updateDynamic("callback")(callback.asInstanceOf[js.Any])
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
+    if (uploadType != null) __obj.updateDynamic("uploadType")(uploadType.asInstanceOf[js.Any])
+    if (upload_protocol != null) __obj.updateDynamic("upload_protocol")(upload_protocol.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AnonGuardianId]
+  }
 }
 

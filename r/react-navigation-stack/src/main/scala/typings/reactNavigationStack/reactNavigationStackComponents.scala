@@ -36,13 +36,11 @@ object reactNavigationStackComponents extends reactNavigationStackProps {
   @scala.inline
   def HeaderSegment: ComponentType[HeaderSegmentProps] = js.constructorOf[typings.reactNavigationStack.headerSegmentMod.default].asInstanceOf[typings.react.mod.ComponentType[HeaderSegmentProps]]
   @scala.inline
-  def HeaderTitle: ComponentType[HeaderTitleProps] = typings.reactNavigationStack.headerTitleMod.default.asInstanceOf[typings.react.mod.ComponentType[HeaderTitleProps]]
+  def HeaderTitle: ComponentType[HeaderTitleProps] = typings.reactNavigationStack.mod.asInstanceOf[js.Dynamic].selectDynamic("HeaderTitle").asInstanceOf[typings.react.mod.ComponentType[HeaderTitleProps]]
   @scala.inline
   def KeyboardManager: ComponentType[KeyboardManagerProps] = js.constructorOf[typings.reactNavigationStack.keyboardManagerMod.default].asInstanceOf[typings.react.mod.ComponentType[KeyboardManagerProps]]
   @scala.inline
   def MaskedView: ComponentType[MaskedViewProps] = typings.reactNavigationStack.maskedViewMod.default.asInstanceOf[typings.react.mod.ComponentType[MaskedViewProps]]
-  @scala.inline
-  def MaskedViewDotnative: ComponentType[MaskedViewDotnativeProps] = typings.reactNavigationStack.maskedViewNativeMod.default.asInstanceOf[typings.react.mod.ComponentType[MaskedViewDotnativeProps]]
   @scala.inline
   def SafeAreaProviderCompat: ComponentType[SafeAreaProviderCompatProps] = typings.reactNavigationStack.safeAreaProviderCompatMod.default.asInstanceOf[typings.react.mod.ComponentType[SafeAreaProviderCompatProps]]
   @scala.inline

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "universal-router"
-version := "9.0.1-85a733"
+version := "9.0.1-f22e35"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

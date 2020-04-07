@@ -1,7 +1,7 @@
 package typings.plotlyJs.mod
 
 import typings.plotlyJs.AnonEnd
-import typings.plotlyJs.PartialDataTitleFont
+import typings.plotlyJs.PartialDataTitle
 import typings.plotlyJs.PartialDelta
 import typings.plotlyJs.PartialGauge
 import typings.plotlyJs.PartialHoverLabel
@@ -230,7 +230,7 @@ trait Data extends js.Object {
     (`top left`) | (`top center`) | (`top right`) | (`middle left`) | (`middle center`) | (`middle right`) | (`bottom left`) | (`bottom center`) | (`bottom right`) | inside
   ] = js.undefined
   var theta: js.UndefOr[js.Array[Datum]] = js.undefined
-  var title: js.UndefOr[PartialDataTitleFont] = js.undefined
+  var title: js.UndefOr[PartialDataTitle] = js.undefined
   var transforms: js.UndefOr[js.Array[DataTransform]] = js.undefined
   var transpose: js.UndefOr[Boolean] = js.undefined
   var `type`: js.UndefOr[
@@ -316,7 +316,7 @@ object Data {
     textinfo: label | labelPlussigntext | labelPlussignvalue | labelPlussignpercent | labelPlussigntextPlussignvalue | labelPlussigntextPlussignpercent | labelPlussignvaluePlussignpercent | text | textPlussignvalue | textPlussignpercent | textPlussignvaluePlussignpercent | value | valuePlussignpercent | percent | none = null,
     textposition: (`top left`) | (`top center`) | (`top right`) | (`middle left`) | (`middle center`) | (`middle right`) | (`bottom left`) | (`bottom center`) | (`bottom right`) | inside = null,
     theta: js.Array[Datum] = null,
-    title: PartialDataTitleFont = null,
+    title: PartialDataTitle = null,
     transforms: js.Array[DataTransform] = null,
     transpose: js.UndefOr[Boolean] = js.undefined,
     `type`: bar | box | candlestick | choropleth | contour | heatmap | histogram | indicator | mesh3d | ohlc | parcoords | pie | pointcloud | scatter | scatter3d | scattergeo | scattergl | scatterpolar | scatterternary | surface | treemap | waterfall | funnel | funnelarea = null,

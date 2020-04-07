@@ -6,7 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait RenameQuery extends BaseQueryWithFile {
+trait RenameQuery
+  extends BaseQueryWithFile
+     with Query {
   /** Specify the location of the variable. */
   var end: Double | Position
   /** The new name of the variable */

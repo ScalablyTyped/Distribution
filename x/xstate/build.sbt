@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "xstate"
-version := "4.8.0-9b3e89"
+version := "4.8.0-4e86fb"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

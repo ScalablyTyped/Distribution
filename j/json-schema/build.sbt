@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "json-schema"
-version := "7.0-dt-20200225Z-c70582"
+version := "7.0-dt-20200225Z-0f312e"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

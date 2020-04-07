@@ -37,3 +37,24 @@ trait DescribeVolumesRequestwai extends js.Object {
   var VolumeIds: js.UndefOr[VolumeIdStringList] = js.native
 }
 
+object DescribeVolumesRequestwai {
+  @scala.inline
+  def apply(
+    $waiter: WaiterConfiguration = null,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    Filters: FilterList = null,
+    MaxResults: Int | Double = null,
+    NextToken: String = null,
+    VolumeIds: VolumeIdStringList = null
+  ): DescribeVolumesRequestwai = {
+    val __obj = js.Dynamic.literal()
+    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
+    if (VolumeIds != null) __obj.updateDynamic("VolumeIds")(VolumeIds.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DescribeVolumesRequestwai]
+  }
+}
+

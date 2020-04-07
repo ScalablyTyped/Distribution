@@ -1,0 +1,23 @@
+package typings.babylonjs.assetsManagerMod
+
+import typings.babylonjs.baseTextureMod.BaseTexture
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ITextureAssetTask[TEX /* <: BaseTexture */] extends js.Object {
+  /**
+    * Gets the loaded texture
+    */
+  var texture: TEX
+}
+
+object ITextureAssetTask {
+  @scala.inline
+  def apply[TEX /* <: BaseTexture */](texture: TEX): ITextureAssetTask[TEX] = {
+    val __obj = js.Dynamic.literal(texture = texture.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[ITextureAssetTask[TEX]]
+  }
+}
+

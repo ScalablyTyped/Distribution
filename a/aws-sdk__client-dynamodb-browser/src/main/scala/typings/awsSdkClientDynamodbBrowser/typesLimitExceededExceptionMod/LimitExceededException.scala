@@ -13,11 +13,11 @@ import typings.awsSdkClientDynamodbBrowser.updateGlobalTableSettingsExceptionsUn
 import typings.awsSdkClientDynamodbBrowser.updateTableExceptionsUnionMod.UpdateTableExceptionsUnion
 import typings.awsSdkClientDynamodbBrowser.updateTimeToLiveExceptionsUnionMod.UpdateTimeToLiveExceptionsUnion
 import typings.awsSdkTypes.exceptionMod.ServiceException
+import typings.awsSdkTypes.responseMod.ResponseMetadata
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait LimitExceededException
   extends ServiceException[LimitExceededExceptionDetails]
      with CreateBackupExceptionsUnion
@@ -33,6 +33,21 @@ trait LimitExceededException
      with UpdateTableExceptionsUnion
      with UpdateTimeToLiveExceptionsUnion {
   @JSName("name")
-  var name_LimitExceededException: typings.awsSdkClientDynamodbBrowser.awsSdkClientDynamodbBrowserStrings.LimitExceededException = js.native
+  var name_LimitExceededException: typings.awsSdkClientDynamodbBrowser.awsSdkClientDynamodbBrowserStrings.LimitExceededException
+}
+
+object LimitExceededException {
+  @scala.inline
+  def apply(
+    $metadata: ResponseMetadata,
+    details: LimitExceededExceptionDetails,
+    message: String,
+    name: typings.awsSdkClientDynamodbBrowser.awsSdkClientDynamodbBrowserStrings.LimitExceededException,
+    stack: String = null
+  ): LimitExceededException = {
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LimitExceededException]
+  }
 }
 

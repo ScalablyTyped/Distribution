@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation._
   * @template T
   * The type of the answers.
   */
-trait EditorQuestion[T /* <: Answers */]
-  extends Question[T]
-     with DistinctQuestion[T] {
+trait EditorQuestion[T /* <: Answers */] extends Question[T] {
   /**
     * @inheritdoc
     */

@@ -37,3 +37,24 @@ trait DescribeNatGatewaysReques extends js.Object {
   var NextToken: js.UndefOr[String] = js.native
 }
 
+object DescribeNatGatewaysReques {
+  @scala.inline
+  def apply(
+    $waiter: WaiterConfiguration = null,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    Filter: FilterList = null,
+    MaxResults: Int | Double = null,
+    NatGatewayIds: NatGatewayIdStringList = null,
+    NextToken: String = null
+  ): DescribeNatGatewaysReques = {
+    val __obj = js.Dynamic.literal()
+    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (Filter != null) __obj.updateDynamic("Filter")(Filter.asInstanceOf[js.Any])
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (NatGatewayIds != null) __obj.updateDynamic("NatGatewayIds")(NatGatewayIds.asInstanceOf[js.Any])
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DescribeNatGatewaysReques]
+  }
+}
+

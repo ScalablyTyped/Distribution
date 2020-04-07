@@ -25,7 +25,7 @@ import typings.reactNative.reactNativeStrings.polite
 import typings.reactNative.reactNativeStrings.radiobutton_checked
 import typings.reactNative.reactNativeStrings.radiobutton_unchecked
 import typings.reactNative.reactNativeStrings.yes
-import typings.reactNativeMaterialDropdown.PartialDropDownPropsAccessibilityActions
+import typings.reactNativeMaterialDropdown.PartialDropDownProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -87,13 +87,7 @@ trait DropDownProps extends TouchableWithoutFeedbackProps {
   /** Set picker styles */
   var pickerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   /** Props extractor function. Extract props from item. */
-  var propsExtractor: js.UndefOr[
-    js.Function2[
-      /* item */ DropDownData, 
-      /* index */ Double, 
-      PartialDropDownPropsAccessibilityActions
-    ]
-  ] = js.undefined
+  var propsExtractor: js.UndefOr[js.Function2[/* item */ DropDownData, /* index */ Double, PartialDropDownProps]] = js.undefined
   /** Render text field accessory */
   var renderAccessory: js.UndefOr[js.Function0[Element]] = js.undefined
   /** Render base component */
@@ -183,7 +177,7 @@ object DropDownProps {
     overlayStyle: StyleProp[ViewStyle] = null,
     pickerStyle: StyleProp[ViewStyle] = null,
     pressRetentionOffset: Insets = null,
-    propsExtractor: (/* item */ DropDownData, /* index */ Double) => PartialDropDownPropsAccessibilityActions = null,
+    propsExtractor: (/* item */ DropDownData, /* index */ Double) => PartialDropDownProps = null,
     renderAccessory: () => Element = null,
     renderBase: /* props */ RenderBaseProps => Element = null,
     rippleCentered: js.UndefOr[Boolean] = js.undefined,

@@ -7,6 +7,7 @@ import typings.vegaTypings.axisMod._LabelOverlap
 import typings.vegaTypings.colorMod.ColorName
 import typings.vegaTypings.configMod.AxisConfigKeys
 import typings.vegaTypings.configMod.Cursor
+import typings.vegaTypings.configMod.MarkConfigKeys
 import typings.vegaTypings.dataMod.DataType
 import typings.vegaTypings.encodeMod.Align
 import typings.vegaTypings.encodeMod.Baseline
@@ -115,13 +116,16 @@ object vegaTypingsStrings {
   @js.native
   sealed trait arc
     extends LinkPathShape
+       with MarkConfigKeys
        with MarkType
   
   @js.native
   sealed trait archimedian extends WordcloudSpiral
   
   @js.native
-  sealed trait area extends MarkType
+  sealed trait area
+    extends MarkConfigKeys
+       with MarkType
   
   @js.native
   sealed trait argmax extends AggregateOp
@@ -939,7 +943,8 @@ object vegaTypingsStrings {
   
   @js.native
   sealed trait group
-    extends MarkType
+    extends MarkConfigKeys
+       with MarkType
        with TitleFrame
   
   @js.native
@@ -1004,7 +1009,9 @@ object vegaTypingsStrings {
        with ScaleType
   
   @js.native
-  sealed trait image extends MarkType
+  sealed trait image
+    extends MarkConfigKeys
+       with MarkType
   
   @js.native
   sealed trait impute extends js.Object
@@ -1167,6 +1174,7 @@ object vegaTypingsStrings {
   @js.native
   sealed trait line
     extends LinkPathShape
+       with MarkConfigKeys
        with MarkType
   
   @js.native
@@ -1227,7 +1235,7 @@ object vegaTypingsStrings {
        with SequentialMultiHue
   
   @js.native
-  sealed trait mark extends js.Object
+  sealed trait mark extends MarkConfigKeys
   
   @js.native
   sealed trait maroon extends ColorName
@@ -1552,7 +1560,9 @@ object vegaTypingsStrings {
        with ColorScheme
   
   @js.native
-  sealed trait path extends MarkType
+  sealed trait path
+    extends MarkConfigKeys
+       with MarkType
   
   @js.native
   sealed trait pdf extends DensityMethod
@@ -1939,7 +1949,9 @@ object vegaTypingsStrings {
   sealed trait rebeccapurple extends ColorName
   
   @js.native
-  sealed trait rect extends MarkType
+  sealed trait rect
+    extends MarkConfigKeys
+       with MarkType
   
   @js.native
   sealed trait rectangular extends WordcloudSpiral
@@ -2232,7 +2244,9 @@ object vegaTypingsStrings {
   sealed trait rtl extends TextDirection
   
   @js.native
-  sealed trait rule extends MarkType
+  sealed trait rule
+    extends MarkConfigKeys
+       with MarkType
   
   @js.native
   sealed trait `s-resize` extends Cursor
@@ -2300,7 +2314,9 @@ object vegaTypingsStrings {
        with ColorScheme
   
   @js.native
-  sealed trait shape extends MarkType
+  sealed trait shape
+    extends MarkConfigKeys
+       with MarkType
   
   @js.native
   sealed trait shared extends KDEResolve
@@ -2458,6 +2474,7 @@ object vegaTypingsStrings {
   sealed trait symbol
     extends RangeEnum
        with LegendType
+       with MarkConfigKeys
        with MarkType
   
   @js.native
@@ -2484,6 +2501,7 @@ object vegaTypingsStrings {
   @js.native
   sealed trait text
     extends Cursor
+       with MarkConfigKeys
        with MarkType
   
   @js.native
@@ -2541,7 +2559,9 @@ object vegaTypingsStrings {
   sealed trait touchstart extends EventType
   
   @js.native
-  sealed trait trail extends MarkType
+  sealed trait trail
+    extends MarkConfigKeys
+       with MarkType
   
   @js.native
   sealed trait transverseMercator extends ProjectionType

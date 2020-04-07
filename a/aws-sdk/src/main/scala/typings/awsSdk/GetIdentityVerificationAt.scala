@@ -17,3 +17,12 @@ trait GetIdentityVerificationAt extends js.Object {
   var Identities: IdentityList = js.native
 }
 
+object GetIdentityVerificationAt {
+  @scala.inline
+  def apply(Identities: IdentityList, $waiter: WaiterConfiguration = null): GetIdentityVerificationAt = {
+    val __obj = js.Dynamic.literal(Identities = Identities.asInstanceOf[js.Any])
+    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GetIdentityVerificationAt]
+  }
+}
+

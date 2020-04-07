@@ -7,20 +7,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Select2 extends js.Object {
   @JSName("$container")
-  var $container: JQuery[HTMLElement] = js.native
+  var $container: JQuery[HTMLElement]
   @JSName("$dropdown")
-  var $dropdown: JQuery[HTMLElement] = js.native
+  var $dropdown: JQuery[HTMLElement]
   @JSName("$results")
-  var $results: JQuery[HTMLElement] = js.native
+  var $results: JQuery[HTMLElement]
   @JSName("$selection")
-  var $selection: JQuery[HTMLElement] = js.native
-  var dropdown: js.Any = js.native
-  var id: String = js.native
-  var options: AnonOptions = js.native
-  var results: js.Any = js.native
-  var selection: js.Any = js.native
+  var $selection: JQuery[HTMLElement]
+  var dropdown: js.Any
+  var id: String
+  var options: AnonOptions
+  var results: js.Any
+  var selection: js.Any
+}
+
+object Select2 {
+  @scala.inline
+  def apply(
+    $container: JQuery[HTMLElement],
+    $dropdown: JQuery[HTMLElement],
+    $results: JQuery[HTMLElement],
+    $selection: JQuery[HTMLElement],
+    dropdown: js.Any,
+    id: String,
+    options: AnonOptions,
+    results: js.Any,
+    selection: js.Any
+  ): Select2 = {
+    val __obj = js.Dynamic.literal($container = $container.asInstanceOf[js.Any], $dropdown = $dropdown.asInstanceOf[js.Any], $results = $results.asInstanceOf[js.Any], $selection = $selection.asInstanceOf[js.Any], dropdown = dropdown.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], results = results.asInstanceOf[js.Any], selection = selection.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[Select2]
+  }
 }
 

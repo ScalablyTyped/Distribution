@@ -87,6 +87,9 @@ object codemirrorStrings {
   sealed trait close extends js.Object
   
   @js.native
+  sealed trait completions extends js.Object
+  
+  @js.native
   sealed trait contenteditable extends InputStyle
   
   @js.native
@@ -120,10 +123,16 @@ object codemirrorStrings {
   sealed trait dblclick extends DOMEvent
   
   @js.native
+  sealed trait definition extends js.Object
+  
+  @js.native
   sealed trait delete extends js.Object
   
   @js.native
   sealed trait div extends CoordsMode
+  
+  @js.native
+  sealed trait documentation extends js.Object
   
   @js.native
   sealed trait drag extends js.Object
@@ -172,6 +181,9 @@ object codemirrorStrings {
   
   @js.native
   sealed trait extraKeys extends js.Object
+  
+  @js.native
+  sealed trait files extends js.Object
   
   @js.native
   sealed trait firstLineNumber extends js.Object
@@ -369,6 +381,9 @@ object codemirrorStrings {
   sealed trait progress extends js.Object
   
   @js.native
+  sealed trait properties extends js.Object
+  
+  @js.native
   sealed trait ratechange extends js.Object
   
   @js.native
@@ -379,6 +394,12 @@ object codemirrorStrings {
   
   @js.native
   sealed trait refresh extends js.Object
+  
+  @js.native
+  sealed trait refs extends js.Object
+  
+  @js.native
+  sealed trait rename extends js.Object
   
   @js.native
   sealed trait renderLine extends js.Object
@@ -492,6 +513,9 @@ object codemirrorStrings {
   sealed trait transitionstart extends js.Object
   
   @js.native
+  sealed trait `type` extends js.Object
+  
+  @js.native
   sealed trait undoDepth extends js.Object
   
   @js.native
@@ -580,6 +604,8 @@ object codemirrorStrings {
   @scala.inline
   def close: close = "close".asInstanceOf[close]
   @scala.inline
+  def completions: completions = "completions".asInstanceOf[completions]
+  @scala.inline
   def contenteditable: contenteditable = "contenteditable".asInstanceOf[contenteditable]
   @scala.inline
   def contextmenu: contextmenu = "contextmenu".asInstanceOf[contextmenu]
@@ -602,9 +628,13 @@ object codemirrorStrings {
   @scala.inline
   def dblclick: dblclick = "dblclick".asInstanceOf[dblclick]
   @scala.inline
+  def definition: definition = "definition".asInstanceOf[definition]
+  @scala.inline
   def delete: delete = "delete".asInstanceOf[delete]
   @scala.inline
   def div: div = "div".asInstanceOf[div]
+  @scala.inline
+  def documentation: documentation = "documentation".asInstanceOf[documentation]
   @scala.inline
   def drag: drag = "drag".asInstanceOf[drag]
   @scala.inline
@@ -637,6 +667,8 @@ object codemirrorStrings {
   def error: error = "error".asInstanceOf[error]
   @scala.inline
   def extraKeys: extraKeys = "extraKeys".asInstanceOf[extraKeys]
+  @scala.inline
+  def files: files = "files".asInstanceOf[files]
   @scala.inline
   def firstLineNumber: firstLineNumber = "firstLineNumber".asInstanceOf[firstLineNumber]
   @scala.inline
@@ -768,6 +800,8 @@ object codemirrorStrings {
   @scala.inline
   def progress: progress = "progress".asInstanceOf[progress]
   @scala.inline
+  def properties: properties = "properties".asInstanceOf[properties]
+  @scala.inline
   def ratechange: ratechange = "ratechange".asInstanceOf[ratechange]
   @scala.inline
   def readOnly: readOnly = "readOnly".asInstanceOf[readOnly]
@@ -775,6 +809,10 @@ object codemirrorStrings {
   def redraw: redraw = "redraw".asInstanceOf[redraw]
   @scala.inline
   def refresh: refresh = "refresh".asInstanceOf[refresh]
+  @scala.inline
+  def refs: refs = "refs".asInstanceOf[refs]
+  @scala.inline
+  def rename: rename = "rename".asInstanceOf[rename]
   @scala.inline
   def renderLine: renderLine = "renderLine".asInstanceOf[renderLine]
   @scala.inline
@@ -849,6 +887,8 @@ object codemirrorStrings {
   def transitionrun: transitionrun = "transitionrun".asInstanceOf[transitionrun]
   @scala.inline
   def transitionstart: transitionstart = "transitionstart".asInstanceOf[transitionstart]
+  @scala.inline
+  def `type`: `type` = "type".asInstanceOf[`type`]
   @scala.inline
   def undoDepth: undoDepth = "undoDepth".asInstanceOf[undoDepth]
   @scala.inline

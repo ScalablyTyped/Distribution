@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "pulumi__kubernetes"
-version := "1.5.8-47767a"
+version := "1.5.8-6ecf92"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

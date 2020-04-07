@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gapi_dot_client_dot_firestore"
-version := "1.0-dt-20190213Z-69e94a"
+version := "1.0-dt-20190213Z-da2902"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

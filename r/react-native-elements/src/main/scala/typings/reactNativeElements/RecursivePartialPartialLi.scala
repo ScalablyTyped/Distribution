@@ -76,7 +76,7 @@ trait RecursivePartialPartialLi extends js.Object {
   var hitSlop: js.UndefOr[RecursivePartial[js.UndefOr[Insets]]] = js.undefined
   var importantForAccessibility: js.UndefOr[RecursivePartial[js.UndefOr[auto | yes | no | `no-hide-descendants`]]] = js.undefined
   var input: js.UndefOr[RecursivePartial[js.UndefOr[InputProps]]] = js.undefined
-  var leftAvatar: js.UndefOr[RecursivePartial[js.UndefOr[PartialAvatarPropsActiveOpacity | ReactElement]]] = js.undefined
+  var leftAvatar: js.UndefOr[RecursivePartial[js.UndefOr[PartialAvatarProps | ReactElement]]] = js.undefined
   var leftElement: js.UndefOr[RecursivePartial[js.UndefOr[ReactElement]]] = js.undefined
   var leftIcon: js.UndefOr[RecursivePartial[js.UndefOr[PartialIconProps | ReactElement]]] = js.undefined
   var onAccessibilityAction: js.UndefOr[
@@ -108,7 +108,7 @@ trait RecursivePartialPartialLi extends js.Object {
   var onShowUnderlay: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.undefined
   var pad: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.undefined
   var pressRetentionOffset: js.UndefOr[RecursivePartial[js.UndefOr[Insets]]] = js.undefined
-  var rightAvatar: js.UndefOr[RecursivePartial[js.UndefOr[PartialAvatarPropsActiveOpacity | ReactElement]]] = js.undefined
+  var rightAvatar: js.UndefOr[RecursivePartial[js.UndefOr[PartialAvatarProps | ReactElement]]] = js.undefined
   var rightContentContainerStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.undefined
   var rightElement: js.UndefOr[RecursivePartial[js.UndefOr[ReactElement]]] = js.undefined
   var rightIcon: js.UndefOr[RecursivePartial[js.UndefOr[PartialIconProps | ReactElement]]] = js.undefined
@@ -169,7 +169,7 @@ object RecursivePartialPartialLi {
     hitSlop: RecursivePartial[js.UndefOr[Insets]] = null,
     importantForAccessibility: RecursivePartial[js.UndefOr[auto | yes | no | `no-hide-descendants`]] = null,
     input: RecursivePartial[js.UndefOr[InputProps]] = null,
-    leftAvatar: RecursivePartial[js.UndefOr[PartialAvatarPropsActiveOpacity | ReactElement]] = null,
+    leftAvatar: RecursivePartial[js.UndefOr[PartialAvatarProps | ReactElement]] = null,
     leftElement: RecursivePartial[js.UndefOr[ReactElement]] = null,
     leftIcon: RecursivePartial[js.UndefOr[PartialIconProps | ReactElement]] = null,
     onAccessibilityAction: RecursivePartial[js.UndefOr[js.Function1[/* event */ AccessibilityActionEvent, Unit]]] = null,
@@ -187,7 +187,7 @@ object RecursivePartialPartialLi {
     onShowUnderlay: RecursivePartial[js.UndefOr[js.Function0[Unit]]] = null,
     pad: RecursivePartial[js.UndefOr[Double]] = null,
     pressRetentionOffset: RecursivePartial[js.UndefOr[Insets]] = null,
-    rightAvatar: RecursivePartial[js.UndefOr[PartialAvatarPropsActiveOpacity | ReactElement]] = null,
+    rightAvatar: RecursivePartial[js.UndefOr[PartialAvatarProps | ReactElement]] = null,
     rightContentContainerStyle: RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]] = null,
     rightElement: RecursivePartial[js.UndefOr[ReactElement]] = null,
     rightIcon: RecursivePartial[js.UndefOr[PartialIconProps | ReactElement]] = null,

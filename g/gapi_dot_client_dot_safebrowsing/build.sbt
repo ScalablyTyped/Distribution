@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gapi_dot_client_dot_safebrowsing"
-version := "4.0-dt-20200225Z-a09f50"
+version := "4.0-dt-20200225Z-8a2357"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

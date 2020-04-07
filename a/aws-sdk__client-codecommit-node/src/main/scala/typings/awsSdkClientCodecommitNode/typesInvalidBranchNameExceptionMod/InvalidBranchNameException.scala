@@ -7,11 +7,11 @@ import typings.awsSdkClientCodecommitNode.getBranchExceptionsUnionMod.GetBranchE
 import typings.awsSdkClientCodecommitNode.putFileExceptionsUnionMod.PutFileExceptionsUnion
 import typings.awsSdkClientCodecommitNode.updateDefaultBranchExceptionsUnionMod.UpdateDefaultBranchExceptionsUnion
 import typings.awsSdkTypes.exceptionMod.ServiceException
+import typings.awsSdkTypes.responseMod.ResponseMetadata
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait InvalidBranchNameException
   extends ServiceException[InvalidBranchNameExceptionDetails]
      with CreateBranchExceptionsUnion
@@ -21,6 +21,21 @@ trait InvalidBranchNameException
      with PutFileExceptionsUnion
      with UpdateDefaultBranchExceptionsUnion {
   @JSName("name")
-  var name_InvalidBranchNameException: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidBranchNameException = js.native
+  var name_InvalidBranchNameException: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidBranchNameException
+}
+
+object InvalidBranchNameException {
+  @scala.inline
+  def apply(
+    $metadata: ResponseMetadata,
+    details: InvalidBranchNameExceptionDetails,
+    message: String,
+    name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidBranchNameException,
+    stack: String = null
+  ): InvalidBranchNameException = {
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
+    __obj.asInstanceOf[InvalidBranchNameException]
+  }
 }
 

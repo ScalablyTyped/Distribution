@@ -1,7 +1,9 @@
 package typings.awsSdk
 
 import typings.awsSdk.rekognitionMod.ExtendedPaginationToken
+import typings.awsSdk.rekognitionMod.ProjectArn
 import typings.awsSdk.rekognitionMod.ProjectVersionsPageSize
+import typings.awsSdk.rekognitionMod.VersionNames
 import typings.awsSdk.serviceMod.WaiterConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -28,5 +30,23 @@ trait DescribeProjectVersionsRe extends js.Object {
     * A list of model version names that you want to describe. You can add up to 10 model version names to the list. If you don't specify a value, all model descriptions are returned.
     */
   var VersionNames: js.UndefOr[typings.awsSdk.rekognitionMod.VersionNames] = js.native
+}
+
+object DescribeProjectVersionsRe {
+  @scala.inline
+  def apply(
+    ProjectArn: ProjectArn,
+    $waiter: WaiterConfiguration = null,
+    MaxResults: Int | Double = null,
+    NextToken: ExtendedPaginationToken = null,
+    VersionNames: VersionNames = null
+  ): DescribeProjectVersionsRe = {
+    val __obj = js.Dynamic.literal(ProjectArn = ProjectArn.asInstanceOf[js.Any])
+    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
+    if (VersionNames != null) __obj.updateDynamic("VersionNames")(VersionNames.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DescribeProjectVersionsRe]
+  }
 }
 

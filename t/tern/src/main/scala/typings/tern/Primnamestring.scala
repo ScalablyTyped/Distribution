@@ -26,7 +26,7 @@ trait Primnamestring extends js.Object {
     */
   var originNode: js.UndefOr[Node] = js.native
   /** The prototype of the object, or null. */
-  var proto: ObjnamestringAddType = js.native
+  var proto: Objnamestring = js.native
   def addType(args: js.Any*): Unit = js.native
   def forAllProps(args: js.Any*): Unit = js.native
   def gatherProperties(args: js.Any*): Unit = js.native

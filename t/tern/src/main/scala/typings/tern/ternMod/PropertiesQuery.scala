@@ -6,7 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait PropertiesQuery extends BaseQuery {
+trait PropertiesQuery
+  extends BaseQuery
+     with Query {
   /** Causes the server to only return properties that start with the given string. */
   var prefix: js.UndefOr[String] = js.undefined
   /** Whether the result should be sorted. Default `true` */

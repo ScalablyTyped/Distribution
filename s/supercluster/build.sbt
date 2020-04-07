@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "supercluster"
-version := "5.0-dt-20200218Z-e01013"
+version := "5.0-dt-20200218Z-855898"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "geojson" % "7946.0-dt-20190925Z-67022f",
+  "org.scalablytyped" %%% "geojson" % "7946.0-dt-20190925Z-8ecd0a",
   "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")

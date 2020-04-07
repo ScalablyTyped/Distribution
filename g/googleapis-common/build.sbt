@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "googleapis-common"
-version := "0.7.2-f64cbc"
+version := "0.7.2-5fa5e5"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

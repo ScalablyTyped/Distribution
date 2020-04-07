@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "express-jsonschema"
-version := "1.1-dt-20190819Z-9a2e20"
+version := "1.1-dt-20190819Z-2c4c2f"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20200226Z-269b22",
   "org.scalablytyped" %%% "express" % "4.17-dt-20200303Z-1c1293",
   "org.scalablytyped" %%% "express-serve-static-core" % "4.17-dt-20200225Z-dbe850",
-  "org.scalablytyped" %%% "json-schema" % "7.0-dt-20200225Z-c70582",
+  "org.scalablytyped" %%% "json-schema" % "7.0-dt-20200225Z-0f312e",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20191126Z-3b5426",
   "org.scalablytyped" %%% "node" % "13.9-dt-20200318Z-96a265",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-6ae0c0",

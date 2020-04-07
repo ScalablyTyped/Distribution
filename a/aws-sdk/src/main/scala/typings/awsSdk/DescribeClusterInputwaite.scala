@@ -1,5 +1,6 @@
 package typings.awsSdk
 
+import typings.awsSdk.emrMod.ClusterId
 import typings.awsSdk.serviceMod.WaiterConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,5 +15,14 @@ trait DescribeClusterInputwaite extends js.Object {
     * The identifier of the cluster to describe.
     */
   var ClusterId: typings.awsSdk.emrMod.ClusterId = js.native
+}
+
+object DescribeClusterInputwaite {
+  @scala.inline
+  def apply(ClusterId: ClusterId, $waiter: WaiterConfiguration = null): DescribeClusterInputwaite = {
+    val __obj = js.Dynamic.literal(ClusterId = ClusterId.asInstanceOf[js.Any])
+    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DescribeClusterInputwaite]
+  }
 }
 

@@ -6,8 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait reactNavigationMaterialBottomTabsProps {
-  @scala.inline
-  def MaterialBottomTabViewProps: Props.type = typings.reactNavigationMaterialBottomTabs.materialBottomTabViewMod.Props
   type MaterialBottomTabViewProps = Props
 }
 

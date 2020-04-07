@@ -32,3 +32,22 @@ trait DescribeReplicationTasksM extends js.Object {
   var WithoutSettings: js.UndefOr[BooleanOptional] = js.native
 }
 
+object DescribeReplicationTasksM {
+  @scala.inline
+  def apply(
+    $waiter: WaiterConfiguration = null,
+    Filters: FilterList = null,
+    Marker: String = null,
+    MaxRecords: Int | Double = null,
+    WithoutSettings: js.UndefOr[Boolean] = js.undefined
+  ): DescribeReplicationTasksM = {
+    val __obj = js.Dynamic.literal()
+    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
+    if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
+    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
+    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
+    if (!js.isUndefined(WithoutSettings)) __obj.updateDynamic("WithoutSettings")(WithoutSettings.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DescribeReplicationTasksM]
+  }
+}
+

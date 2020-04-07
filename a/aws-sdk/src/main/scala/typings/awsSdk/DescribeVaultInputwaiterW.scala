@@ -20,3 +20,12 @@ trait DescribeVaultInputwaiterW extends js.Object {
   var vaultName: String = js.native
 }
 
+object DescribeVaultInputwaiterW {
+  @scala.inline
+  def apply(accountId: String, vaultName: String, $waiter: WaiterConfiguration = null): DescribeVaultInputwaiterW = {
+    val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any], vaultName = vaultName.asInstanceOf[js.Any])
+    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DescribeVaultInputwaiterW]
+  }
+}
+

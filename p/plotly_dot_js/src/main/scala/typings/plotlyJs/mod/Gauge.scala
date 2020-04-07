@@ -1,7 +1,7 @@
 package typings.plotlyJs.mod
 
 import typings.plotlyJs.AnonColor
-import typings.plotlyJs.PartialAxisCalendar
+import typings.plotlyJs.PartialAxis
 import typings.plotlyJs.PartialGaugeBar
 import typings.plotlyJs.PartialThreshold
 import typings.plotlyJs.plotlyJsStrings.angular
@@ -11,7 +11,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Gauge extends js.Object {
-  var axis: PartialAxisCalendar
+  var axis: PartialAxis
   var bar: PartialGaugeBar
   var bgcolor: Color
   var bordercolor: Color
@@ -24,7 +24,7 @@ trait Gauge extends js.Object {
 object Gauge {
   @scala.inline
   def apply(
-    axis: PartialAxisCalendar,
+    axis: PartialAxis,
     bar: PartialGaugeBar,
     bgcolor: Color,
     bordercolor: Color,

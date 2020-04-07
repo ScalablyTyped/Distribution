@@ -1,20 +1,20 @@
 organization := "org.scalablytyped"
 name := "jest-environment-jsdom"
-version := "25.1.0-302436"
+version := "25.1.0-82eec8"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "callsites" % "3.1.0-477967",
   "org.scalablytyped" %%% "istanbul-lib-coverage" % "2.0-dt-20190425Z-9611dd",
-  "org.scalablytyped" %%% "jest-message-util" % "24.9.0-ff8f42",
+  "org.scalablytyped" %%% "jest-message-util" % "24.9.0-63f05c",
   "org.scalablytyped" %%% "jest-mock" % "24.9.0-9f1f0d",
   "org.scalablytyped" %%% "jest__console" % "24.9.0-c8869f",
-  "org.scalablytyped" %%% "jest__environment" % "25.1.0-d01166",
-  "org.scalablytyped" %%% "jest__fake-timers" % "24.9.0-a1a751",
+  "org.scalablytyped" %%% "jest__environment" % "25.1.0-036b8b",
+  "org.scalablytyped" %%% "jest__fake-timers" % "24.9.0-56511f",
   "org.scalablytyped" %%% "jest__source-map" % "24.9.0-87be6f",
-  "org.scalablytyped" %%% "jest__test-result" % "24.9.0-5b1805",
-  "org.scalablytyped" %%% "jest__types" % "24.9.0-9296b6",
+  "org.scalablytyped" %%% "jest__test-result" % "24.9.0-977254",
+  "org.scalablytyped" %%% "jest__types" % "24.9.0-3e0310",
   "org.scalablytyped" %%% "jsdom" % "16.1-dt-20200225Z-0b9d96",
   "org.scalablytyped" %%% "node" % "13.9-dt-20200318Z-96a265",
   "org.scalablytyped" %%% "parse5" % "5.0-dt-20200225Z-3e0786",

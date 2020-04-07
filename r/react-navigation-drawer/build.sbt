@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-navigation-drawer"
-version := "2.4.6-22d0ca"
+version := "2.4.6-ed5375"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

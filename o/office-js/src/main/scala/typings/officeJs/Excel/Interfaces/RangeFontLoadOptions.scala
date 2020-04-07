@@ -10,55 +10,54 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.1]
   */
-@js.native
 trait RangeFontLoadOptions extends js.Object {
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
     */
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.native
+  var $all: js.UndefOr[Boolean] = js.undefined
   /**
     *
     * Represents the bold status of font.
     *
     * [Api set: ExcelApi 1.1]
     */
-  var bold: js.UndefOr[Boolean] = js.native
+  var bold: js.UndefOr[Boolean] = js.undefined
   /**
     *
     * HTML color code representation of the text color. E.g. #FF0000 represents Red.
     *
     * [Api set: ExcelApi 1.1]
     */
-  var color: js.UndefOr[Boolean] = js.native
+  var color: js.UndefOr[Boolean] = js.undefined
   /**
     *
     * Represents the italic status of the font.
     *
     * [Api set: ExcelApi 1.1]
     */
-  var italic: js.UndefOr[Boolean] = js.native
+  var italic: js.UndefOr[Boolean] = js.undefined
   /**
     *
     * Font name (e.g. "Calibri")
     *
     * [Api set: ExcelApi 1.1]
     */
-  var name: js.UndefOr[Boolean] = js.native
+  var name: js.UndefOr[Boolean] = js.undefined
   /**
     *
     * Font size.
     *
     * [Api set: ExcelApi 1.1]
     */
-  var size: js.UndefOr[Boolean] = js.native
+  var size: js.UndefOr[Boolean] = js.undefined
   /**
     *
     * Represents the strikethrough status of font. A null value indicates that the entire range doesn't have uniform Strikethrough setting.
     *
     * [Api set: ExcelApi 1.9]
     */
-  var strikethrough: js.UndefOr[Boolean] = js.native
+  var strikethrough: js.UndefOr[Boolean] = js.undefined
   /**
     *
     * Represents the Subscript status of font.
@@ -68,7 +67,7 @@ trait RangeFontLoadOptions extends js.Object {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var subscript: js.UndefOr[Boolean] = js.native
+  var subscript: js.UndefOr[Boolean] = js.undefined
   /**
     *
     * Represents the Superscript status of font.
@@ -78,7 +77,7 @@ trait RangeFontLoadOptions extends js.Object {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var superscript: js.UndefOr[Boolean] = js.native
+  var superscript: js.UndefOr[Boolean] = js.undefined
   /**
     *
     * Returns or sets a double that lightens or darkens a color for Range Font, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
@@ -86,13 +85,44 @@ trait RangeFontLoadOptions extends js.Object {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var tintAndShade: js.UndefOr[Boolean] = js.native
+  var tintAndShade: js.UndefOr[Boolean] = js.undefined
   /**
     *
     * Type of underline applied to the font. See Excel.RangeUnderlineStyle for details.
     *
     * [Api set: ExcelApi 1.1]
     */
-  var underline: js.UndefOr[Boolean] = js.native
+  var underline: js.UndefOr[Boolean] = js.undefined
+}
+
+object RangeFontLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[Boolean] = js.undefined,
+    bold: js.UndefOr[Boolean] = js.undefined,
+    color: js.UndefOr[Boolean] = js.undefined,
+    italic: js.UndefOr[Boolean] = js.undefined,
+    name: js.UndefOr[Boolean] = js.undefined,
+    size: js.UndefOr[Boolean] = js.undefined,
+    strikethrough: js.UndefOr[Boolean] = js.undefined,
+    subscript: js.UndefOr[Boolean] = js.undefined,
+    superscript: js.UndefOr[Boolean] = js.undefined,
+    tintAndShade: js.UndefOr[Boolean] = js.undefined,
+    underline: js.UndefOr[Boolean] = js.undefined
+  ): RangeFontLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (!js.isUndefined(bold)) __obj.updateDynamic("bold")(bold.asInstanceOf[js.Any])
+    if (!js.isUndefined(color)) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (!js.isUndefined(italic)) __obj.updateDynamic("italic")(italic.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(strikethrough)) __obj.updateDynamic("strikethrough")(strikethrough.asInstanceOf[js.Any])
+    if (!js.isUndefined(subscript)) __obj.updateDynamic("subscript")(subscript.asInstanceOf[js.Any])
+    if (!js.isUndefined(superscript)) __obj.updateDynamic("superscript")(superscript.asInstanceOf[js.Any])
+    if (!js.isUndefined(tintAndShade)) __obj.updateDynamic("tintAndShade")(tintAndShade.asInstanceOf[js.Any])
+    if (!js.isUndefined(underline)) __obj.updateDynamic("underline")(underline.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RangeFontLoadOptions]
+  }
 }
 

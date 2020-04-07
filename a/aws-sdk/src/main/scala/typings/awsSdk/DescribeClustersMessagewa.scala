@@ -36,3 +36,24 @@ trait DescribeClustersMessagewa extends js.Object {
   var TagValues: js.UndefOr[TagValueList] = js.native
 }
 
+object DescribeClustersMessagewa {
+  @scala.inline
+  def apply(
+    $waiter: WaiterConfiguration = null,
+    ClusterIdentifier: String = null,
+    Marker: String = null,
+    MaxRecords: Int | Double = null,
+    TagKeys: TagKeyList = null,
+    TagValues: TagValueList = null
+  ): DescribeClustersMessagewa = {
+    val __obj = js.Dynamic.literal()
+    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
+    if (ClusterIdentifier != null) __obj.updateDynamic("ClusterIdentifier")(ClusterIdentifier.asInstanceOf[js.Any])
+    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
+    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
+    if (TagKeys != null) __obj.updateDynamic("TagKeys")(TagKeys.asInstanceOf[js.Any])
+    if (TagValues != null) __obj.updateDynamic("TagValues")(TagValues.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DescribeClustersMessagewa]
+  }
+}
+

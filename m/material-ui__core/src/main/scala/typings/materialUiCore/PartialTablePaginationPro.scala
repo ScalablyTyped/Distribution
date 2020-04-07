@@ -112,7 +112,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait PartialTablePaginationPro extends js.Object {
   var ActionsComponent: js.UndefOr[ReactType[TablePaginationActionsProps]] = js.native
-  var SelectProps: js.UndefOr[PartialSelectPropsAbout] = js.native
+  var SelectProps: js.UndefOr[PartialSelectProps] = js.native
   var abbr: js.UndefOr[String] = js.native
   var about: js.UndefOr[String] = js.native
   var accessKey: js.UndefOr[String] = js.native
@@ -322,7 +322,7 @@ object PartialTablePaginationPro {
   @scala.inline
   def apply(
     ActionsComponent: ReactType[TablePaginationActionsProps] = null,
-    SelectProps: PartialSelectPropsAbout = null,
+    SelectProps: PartialSelectProps = null,
     abbr: String = null,
     about: String = null,
     accessKey: String = null,

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("fork-ts-checker-webpack-plugin/lib/issue/IssueSeverity", JSImport.Namespace)
 @js.native
 object issueSeverityMod extends js.Object {
+  /* Inlined { readonly ERROR  :'error',  readonly WARNING  :'warning'}[keyof { readonly ERROR  :'error',  readonly WARNING  :'warning'}] */
   /* Rewritten from type alias, can be one of: 
     - typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.error
     - typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.warning

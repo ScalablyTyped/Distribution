@@ -17,3 +17,12 @@ trait DescribeChannelRequestwai extends js.Object {
   var ChannelId: string = js.native
 }
 
+object DescribeChannelRequestwai {
+  @scala.inline
+  def apply(ChannelId: string, $waiter: WaiterConfiguration = null): DescribeChannelRequestwai = {
+    val __obj = js.Dynamic.literal(ChannelId = ChannelId.asInstanceOf[js.Any])
+    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DescribeChannelRequestwai]
+  }
+}
+

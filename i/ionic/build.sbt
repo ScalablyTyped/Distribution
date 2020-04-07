@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ionic"
-version := "5.4.16-6306f8"
+version := "5.4.16-5a9fb9"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,9 +8,9 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "cookiejar" % "2.1-dt-20190116Z-238ced",
   "org.scalablytyped" %%% "debug" % "4.1-dt-20200226Z-552094",
   "org.scalablytyped" %%% "elementtree" % "0.1-dt-20180830Z-b0af52",
-  "org.scalablytyped" %%% "inquirer" % "6.5-dt-20200226Z-00a5a8",
+  "org.scalablytyped" %%% "inquirer" % "6.5-dt-20200226Z-2264c8",
   "org.scalablytyped" %%% "ionic__cli-framework" % "3.0.6-b38207",
-  "org.scalablytyped" %%% "ionic__cli-framework-prompts" % "1.0.4-ee568b",
+  "org.scalablytyped" %%% "ionic__cli-framework-prompts" % "1.0.4-ff4104",
   "org.scalablytyped" %%% "ionic__discover" % "2.0.8-fcd5ec",
   "org.scalablytyped" %%% "ionic__utils-network" % "1.0.6-ab779d",
   "org.scalablytyped" %%% "ionic__utils-object" % "1.0.6-3aba15",

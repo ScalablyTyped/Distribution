@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jupyterlab__completer"
-version := "2.0.2-6519c7"
+version := "2.0.2-3d9f0e"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,8 +9,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "jupyterlab__coreutils" % "4.0.2-5aeb71",
   "org.scalablytyped" %%% "jupyterlab__nbformat" % "2.0.1-03f5a6",
   "org.scalablytyped" %%% "jupyterlab__observables" % "3.0.1-09bcc0",
-  "org.scalablytyped" %%% "jupyterlab__services" % "5.0.2-6da4a2",
-  "org.scalablytyped" %%% "jupyterlab__settingregistry" % "2.0.1-063374",
+  "org.scalablytyped" %%% "jupyterlab__services" % "5.0.2-196ee4",
+  "org.scalablytyped" %%% "jupyterlab__settingregistry" % "2.0.1-608156",
   "org.scalablytyped" %%% "jupyterlab__statedb" % "2.0.1-eadf5c",
   "org.scalablytyped" %%% "lumino__algorithm" % "1.2.3-935244",
   "org.scalablytyped" %%% "lumino__commands" % "1.10.1-857d11",

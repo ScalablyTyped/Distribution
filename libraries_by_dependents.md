@@ -3171,6 +3171,7 @@
 | 41 | [strip-color](./s/strip-color) | Strip ANSI color codes from a string. No dependenc
 | 41 | [tcp-ping](./t/tcp-ping) | A ping utility using TCP connection
 | 41 | [yeast](./y/yeast) | Tiny but linear growing unique id generator
+| 40 | [babylonjs](./b/babylonjs) | Babylon.js is a JavaScript 3D engine based on webg
 | 40 | [date-now](./d/date-now) | A requirable version of Date.now()
 | 40 | [draggabilly](./d/draggabilly) | make that shiz draggable
 | 40 | [eccrypto](./e/eccrypto) | JavaScript Elliptic curve cryptography library
@@ -4181,7 +4182,6 @@
 | 19 | [lodash_dot_tolower](./l/lodash_dot_tolower) | The lodash method _.toLower exported as a module.
 | 19 | [lodash_dot_words](./l/lodash_dot_words) | The lodash method _.words exported as a module.
 | 19 | [min-document](./m/min-document) | A minimal DOM implementation
-| 19 | [mongoose-delete](./m/mongoose-delete) | Mongoose soft delete plugin
 | 19 | [node-easy-cert](./n/node-easy-cert) | A tool for managing self-signed certifications
 | 19 | [node-resque](./n/node-resque) | an opinionated implementation of resque in node
 | 19 | [passport-steam](./p/passport-steam) | Steam (OpenID 2) authentication strategy for Passp
@@ -5023,7 +5023,6 @@
 | 10 | [title](./t/title) | Capitalize your titles properly
 | 10 | [tokenizr](./t/tokenizr) | String Tokenization Library for JavaScript
 | 10 | [torrent-search-api](./t/torrent-search-api) | Yet another node torrent scraper based on x-ray. (
-| 10 | [ui-box](./u/ui-box) | Blazing Fast React UI Primitive
 | 10 | [unist-util-stringify-posi](./u/unist-util-stringify-position) | Stringify a Unist node, position, or point
 | 10 | [use-persisted-state](./u/use-persisted-state) | A custom React Hook that provides a multi-instance
 | 10 | [vega-tooltip](./v/vega-tooltip) | A tooltip plugin for Vega-Lite and Vega visualizat
@@ -5039,6 +5038,7 @@
 | 9 | [angular-scenario](./a/angular-scenario) | AngularJS module for end-to-end testing
 | 9 | [angular-tooltips](./a/angular-tooltips) | Angular.js tooltips module.
 | 9 | [ant-design__pro-layout](./a/ant-design__pro-layout) | ant-design-pro layout, easy to use pro scaffolding
+| 9 | [ant-design__react-slick](./a/ant-design__react-slick) | React port of slick carousel
 | 9 | [antd-mobile-rn](./a/antd-mobile-rn) | 基于蚂蚁金服移动设计规范的 React Native 组件库
 | 9 | [anybar](./a/anybar) | Control the AnyBar app
 | 9 | [apollo-tracing](./a/apollo-tracing) | Collect and expose trace data for GraphQL requests
@@ -6568,6 +6568,7 @@
 | 2 | [ember-qunit](./e/ember-qunit) | QUnit helpers for testing Ember.js applications
 | 2 | [eq_dot_js](./e/eq_dot_js) | Element queries, fast and light
 | 2 | [ethereum-bloom-filters](./e/ethereum-bloom-filters) | Ability to test bloom filters for ethereum.
+| 2 | [expo-error-recovery](./e/expo-error-recovery) | Utilities for helping you gracefully handle crashe
 | 2 | [expo-font](./e/expo-font) | Load fonts at runtime and use them in React Native
 | 2 | [expo-sqlite](./e/expo-sqlite) | Provides access to a database that can be queried 
 | 2 | [express-flash-notificatio](./e/express-flash-notification) | Express.js flash notifications that works with any

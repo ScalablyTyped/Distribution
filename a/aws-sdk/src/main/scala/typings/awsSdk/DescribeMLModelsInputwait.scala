@@ -3,6 +3,7 @@ package typings.awsSdk
 import typings.awsSdk.machinelearningMod.ComparatorValue
 import typings.awsSdk.machinelearningMod.MLModelFilterVariable
 import typings.awsSdk.machinelearningMod.PageLimit
+import typings.awsSdk.machinelearningMod.SortOrder
 import typings.awsSdk.machinelearningMod.StringType
 import typings.awsSdk.serviceMod.WaiterConfiguration
 import scala.scalajs.js
@@ -58,5 +59,38 @@ trait DescribeMLModelsInputwait extends js.Object {
     * A two-value parameter that determines the sequence of the resulting list of MLModel.   asc - Arranges the list in ascending order (A-Z, 0-9).  dsc - Arranges the list in descending order (Z-A, 9-0).  Results are sorted by FilterVariable.
     */
   var SortOrder: js.UndefOr[typings.awsSdk.machinelearningMod.SortOrder] = js.native
+}
+
+object DescribeMLModelsInputwait {
+  @scala.inline
+  def apply(
+    $waiter: WaiterConfiguration = null,
+    EQ: ComparatorValue = null,
+    FilterVariable: MLModelFilterVariable = null,
+    GE: ComparatorValue = null,
+    GT: ComparatorValue = null,
+    LE: ComparatorValue = null,
+    LT: ComparatorValue = null,
+    Limit: Int | Double = null,
+    NE: ComparatorValue = null,
+    NextToken: StringType = null,
+    Prefix: ComparatorValue = null,
+    SortOrder: SortOrder = null
+  ): DescribeMLModelsInputwait = {
+    val __obj = js.Dynamic.literal()
+    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
+    if (EQ != null) __obj.updateDynamic("EQ")(EQ.asInstanceOf[js.Any])
+    if (FilterVariable != null) __obj.updateDynamic("FilterVariable")(FilterVariable.asInstanceOf[js.Any])
+    if (GE != null) __obj.updateDynamic("GE")(GE.asInstanceOf[js.Any])
+    if (GT != null) __obj.updateDynamic("GT")(GT.asInstanceOf[js.Any])
+    if (LE != null) __obj.updateDynamic("LE")(LE.asInstanceOf[js.Any])
+    if (LT != null) __obj.updateDynamic("LT")(LT.asInstanceOf[js.Any])
+    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
+    if (NE != null) __obj.updateDynamic("NE")(NE.asInstanceOf[js.Any])
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
+    if (Prefix != null) __obj.updateDynamic("Prefix")(Prefix.asInstanceOf[js.Any])
+    if (SortOrder != null) __obj.updateDynamic("SortOrder")(SortOrder.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DescribeMLModelsInputwait]
+  }
 }
 

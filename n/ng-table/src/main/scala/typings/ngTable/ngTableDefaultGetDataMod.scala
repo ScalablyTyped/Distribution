@@ -36,6 +36,9 @@ object ngTableDefaultGetDataMod extends js.Object {
   
   @js.native
   class NgTableDefaultGetDataProvider () extends IServiceProvider {
+    /* CompleteClass */
+    @JSName("$get")
+    override var $get: js.Any = js.native
     /**
       * The name of a angular filter that knows how to apply the values returned by
       * `NgTableParams.filter()` to restrict an array of data.

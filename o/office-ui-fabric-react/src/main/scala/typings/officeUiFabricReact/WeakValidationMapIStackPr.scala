@@ -49,7 +49,6 @@ import typings.officeUiFabricReact.officeUiFabricReactStrings.vertical
 import typings.officeUiFabricReact.officeUiFabricReactStrings.yes
 import typings.officeUiFabricReact.stackTypesMod.Alignment
 import typings.officeUiFabricReact.stackTypesMod.IStackProps
-import typings.officeUiFabricReact.stackTypesMod.IStackSlots
 import typings.officeUiFabricReact.stackTypesMod.IStackStyles
 import typings.officeUiFabricReact.stackTypesMod.IStackTokens
 import typings.react.AnonHtml
@@ -263,15 +262,7 @@ trait WeakValidationMapIStackPr extends js.Object {
   var root: js.UndefOr[Validator[js.UndefOr[IHTMLSlot | Null]]] = js.undefined
   var security: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   var slot: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var slots: js.UndefOr[
-    Validator[
-      js.UndefOr[
-        (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in 'root' | 'inner' ]:? @uifabric/foundation.@uifabric/foundation/lib/ISlots.ISlotOptions<@uifabric/foundation.@uifabric/foundation/lib/ISlots.ExtractProps<office-ui-fabric-react.office-ui-fabric-react/lib/components/Stack/Stack.types.IStackSlots[key]>>}
-    */ typings.officeUiFabricReact.officeUiFabricReactStrings.WeakValidationMapIStackPr with IStackSlots) | Null
-      ]
-    ]
-  ] = js.undefined
+  var slots: js.UndefOr[Validator[js.UndefOr[Null | keyinkeyofIStackSlotsISlo]]] = js.undefined
   var spellCheck: js.UndefOr[Validator[js.UndefOr[Booleanish | Null]]] = js.undefined
   var style: js.UndefOr[Validator[js.UndefOr[CSSProperties | Null]]] = js.undefined
   var styles: js.UndefOr[
@@ -474,13 +465,7 @@ object WeakValidationMapIStackPr {
     root: Validator[js.UndefOr[IHTMLSlot | Null]] = null,
     security: Validator[js.UndefOr[Null | String]] = null,
     slot: Validator[js.UndefOr[Null | String]] = null,
-    slots: Validator[
-      js.UndefOr[
-        (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in 'root' | 'inner' ]:? @uifabric/foundation.@uifabric/foundation/lib/ISlots.ISlotOptions<@uifabric/foundation.@uifabric/foundation/lib/ISlots.ExtractProps<office-ui-fabric-react.office-ui-fabric-react/lib/components/Stack/Stack.types.IStackSlots[key]>>}
-    */ typings.officeUiFabricReact.officeUiFabricReactStrings.WeakValidationMapIStackPr with IStackSlots) | Null
-      ]
-    ] = null,
+    slots: Validator[js.UndefOr[Null | keyinkeyofIStackSlotsISlo]] = null,
     spellCheck: Validator[js.UndefOr[Booleanish | Null]] = null,
     style: Validator[js.UndefOr[CSSProperties | Null]] = null,
     styles: Validator[

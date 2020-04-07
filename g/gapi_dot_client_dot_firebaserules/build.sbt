@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gapi_dot_client_dot_firebaserules"
-version := "1.0-dt-20200225Z-ec6711"
+version := "1.0-dt-20200225Z-b00d21"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

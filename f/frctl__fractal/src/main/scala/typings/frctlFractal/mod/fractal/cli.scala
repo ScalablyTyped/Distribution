@@ -3,7 +3,7 @@ package typings.frctlFractal.mod.fractal
 import typings.frctlFractal.AnonCli
 import typings.frctlFractal.AnonCurrent
 import typings.frctlFractal.AnonDescription
-import typings.frctlFractal.ClifractalFractalConsole
+import typings.frctlFractal.ClifractalFractal
 import typings.frctlFractal.mod.CliTheme
 import typings.std.Error
 import scala.scalajs.js
@@ -20,31 +20,16 @@ object cli extends js.Object {
     var notify_FCli: Notifier = js.native
     def command(
       commandString: String,
-      callback: js.ThisFunction2[
-          /* this */ ClifractalFractalConsole, 
-          /* args */ js.Any, 
-          /* done */ js.Function0[Unit], 
-          Unit
-        ]
+      callback: js.ThisFunction2[/* this */ ClifractalFractal, /* args */ js.Any, /* done */ js.Function0[Unit], Unit]
     ): Unit = js.native
     def command(
       commandString: String,
-      callback: js.ThisFunction2[
-          /* this */ ClifractalFractalConsole, 
-          /* args */ js.Any, 
-          /* done */ js.Function0[Unit], 
-          Unit
-        ],
+      callback: js.ThisFunction2[/* this */ ClifractalFractal, /* args */ js.Any, /* done */ js.Function0[Unit], Unit],
       opts: String
     ): Unit = js.native
     def command(
       commandString: String,
-      callback: js.ThisFunction2[
-          /* this */ ClifractalFractalConsole, 
-          /* args */ js.Any, 
-          /* done */ js.Function0[Unit], 
-          Unit
-        ],
+      callback: js.ThisFunction2[/* this */ ClifractalFractal, /* args */ js.Any, /* done */ js.Function0[Unit], Unit],
       opts: AnonDescription
     ): Unit = js.native
     def error(message: String): Unit = js.native

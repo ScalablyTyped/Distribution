@@ -11,13 +11,12 @@ import scala.scalajs.js.annotation._
   * [Api set: ExcelApi BETA (PREVIEW ONLY)]
   * @beta
   */
-@js.native
 trait WorksheetCustomPropertyLoadOptions extends js.Object {
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
     */
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.native
+  var $all: js.UndefOr[Boolean] = js.undefined
   /**
     *
     * Gets the key of the custom property. Read only.
@@ -25,7 +24,7 @@ trait WorksheetCustomPropertyLoadOptions extends js.Object {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var key: js.UndefOr[Boolean] = js.native
+  var key: js.UndefOr[Boolean] = js.undefined
   /**
     *
     * Gets the value of the custom property. Read only.
@@ -33,6 +32,21 @@ trait WorksheetCustomPropertyLoadOptions extends js.Object {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var value: js.UndefOr[Boolean] = js.native
+  var value: js.UndefOr[Boolean] = js.undefined
+}
+
+object WorksheetCustomPropertyLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[Boolean] = js.undefined,
+    key: js.UndefOr[Boolean] = js.undefined,
+    value: js.UndefOr[Boolean] = js.undefined
+  ): WorksheetCustomPropertyLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (!js.isUndefined(key)) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WorksheetCustomPropertyLoadOptions]
+  }
 }
 

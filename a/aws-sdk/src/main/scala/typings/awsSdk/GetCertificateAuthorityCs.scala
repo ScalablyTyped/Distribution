@@ -17,3 +17,12 @@ trait GetCertificateAuthorityCs extends js.Object {
   var CertificateAuthorityArn: Arn = js.native
 }
 
+object GetCertificateAuthorityCs {
+  @scala.inline
+  def apply(CertificateAuthorityArn: Arn, $waiter: WaiterConfiguration = null): GetCertificateAuthorityCs = {
+    val __obj = js.Dynamic.literal(CertificateAuthorityArn = CertificateAuthorityArn.asInstanceOf[js.Any])
+    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GetCertificateAuthorityCs]
+  }
+}
+

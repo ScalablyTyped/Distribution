@@ -11,5 +11,6 @@ package object typesMod {
     /* instanceIdentifier */ js.UndefOr[java.lang.String], 
     /* import warning: importer.ImportType#apply Failed type conversion: @firebase/component.@firebase/component/dist/src/types.NameServiceMapping[T] */ js.Any
   ]
-  type Service = js.Object
+  /* Inlined @firebase/component.@firebase/component/dist/src/types.NameServiceMapping[@firebase/component.@firebase/component/dist/src/types.Name] */
+  type Service = scala.Nothing
 }

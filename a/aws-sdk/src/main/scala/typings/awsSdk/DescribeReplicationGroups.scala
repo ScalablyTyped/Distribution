@@ -26,3 +26,20 @@ trait DescribeReplicationGroups extends js.Object {
   var ReplicationGroupId: js.UndefOr[String] = js.native
 }
 
+object DescribeReplicationGroups {
+  @scala.inline
+  def apply(
+    $waiter: WaiterConfiguration = null,
+    Marker: String = null,
+    MaxRecords: Int | Double = null,
+    ReplicationGroupId: String = null
+  ): DescribeReplicationGroups = {
+    val __obj = js.Dynamic.literal()
+    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
+    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
+    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
+    if (ReplicationGroupId != null) __obj.updateDynamic("ReplicationGroupId")(ReplicationGroupId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DescribeReplicationGroups]
+  }
+}
+

@@ -12,9 +12,7 @@ import scala.scalajs.js.annotation._
   * @template T
   * The type of the answers.
   */
-trait NumberQuestion[T /* <: Answers */]
-  extends InputQuestionOptions[T]
-     with DistinctQuestion[T] {
+trait NumberQuestion[T /* <: Answers */] extends InputQuestionOptions[T] {
   /**
     * @inheritdoc
     */

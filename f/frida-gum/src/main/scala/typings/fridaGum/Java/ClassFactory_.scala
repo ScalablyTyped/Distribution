@@ -1,7 +1,6 @@
 package typings.fridaGum.Java
 
 import typings.fridaGum.NativePointerValue
-import typings.fridaGum.WrapperAlloc
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +17,7 @@ class ClassFactory_ () extends js.Object {
     * Class loader currently being used. For the default class factory this
     * is updated by the first call to `Java.perform()`.
     */
-  val loader: WrapperAlloc | Null = js.native
+  val loader: typings.fridaGum.Wrapper | Null = js.native
   /**
     * Naming convention to use for temporary files.
     *
@@ -64,7 +63,7 @@ class ClassFactory_ () extends js.Object {
     *
     * @param spec Object describing the class to be created.
     */
-  def registerClass(spec: ClassSpec): WrapperAlloc = js.native
+  def registerClass(spec: ClassSpec): typings.fridaGum.Wrapper = js.native
   /**
     * Duplicates a JavaScript wrapper for later use outside replacement method.
     *
@@ -96,6 +95,6 @@ object ClassFactory_ extends js.Object {
     * can be discovered through `Java.enumerateClassLoaders()` and
     * interacted with through this API.
     */
-  def get(classLoader: WrapperAlloc): ClassFactory_ = js.native
+  def get(classLoader: typings.fridaGum.Wrapper): ClassFactory_ = js.native
 }
 

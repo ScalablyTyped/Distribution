@@ -47,3 +47,28 @@ trait DescribeSnapshotsRequestw extends js.Object {
   var SnapshotIds: js.UndefOr[SnapshotIdStringList] = js.native
 }
 
+object DescribeSnapshotsRequestw {
+  @scala.inline
+  def apply(
+    $waiter: WaiterConfiguration = null,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    Filters: FilterList = null,
+    MaxResults: Int | Double = null,
+    NextToken: String = null,
+    OwnerIds: OwnerStringList = null,
+    RestorableByUserIds: RestorableByStringList = null,
+    SnapshotIds: SnapshotIdStringList = null
+  ): DescribeSnapshotsRequestw = {
+    val __obj = js.Dynamic.literal()
+    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
+    if (OwnerIds != null) __obj.updateDynamic("OwnerIds")(OwnerIds.asInstanceOf[js.Any])
+    if (RestorableByUserIds != null) __obj.updateDynamic("RestorableByUserIds")(RestorableByUserIds.asInstanceOf[js.Any])
+    if (SnapshotIds != null) __obj.updateDynamic("SnapshotIds")(SnapshotIds.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DescribeSnapshotsRequestw]
+  }
+}
+

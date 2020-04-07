@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "brainhubeu__react-carousel"
-version := "1.10-dt-20200128Z-d0293a"
+version := "1.10-dt-20200128Z-e5987a"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

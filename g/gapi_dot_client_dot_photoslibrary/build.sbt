@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gapi_dot_client_dot_photoslibrary"
-version := "1.0-dt-20200225Z-6dfe05"
+version := "1.0-dt-20200225Z-af2130"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

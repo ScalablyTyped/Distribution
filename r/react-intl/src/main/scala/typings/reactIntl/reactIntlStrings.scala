@@ -1,5 +1,6 @@
 package typings.reactIntl
 
+import typings.reactIntl.mod.FormatListOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -64,9 +65,6 @@ object reactIntlStrings {
   
   @js.native
   sealed trait caption extends js.Object
-  
-  @js.native
-  sealed trait cardinal extends js.Object
   
   @js.native
   sealed trait cite extends js.Object
@@ -285,9 +283,6 @@ object reactIntlStrings {
   sealed trait option extends js.Object
   
   @js.native
-  sealed trait ordinal extends js.Object
-  
-  @js.native
   sealed trait output extends js.Object
   
   @js.native
@@ -354,7 +349,9 @@ object reactIntlStrings {
   sealed trait strong extends js.Object
   
   @js.native
-  sealed trait style extends js.Object
+  sealed trait style
+    extends FormatListOptions
+       with typings.reactIntl.typesMod.FormatListOptions
   
   @js.native
   sealed trait sub extends js.Object
@@ -400,6 +397,11 @@ object reactIntlStrings {
   
   @js.native
   sealed trait track extends js.Object
+  
+  @js.native
+  sealed trait `type`
+    extends FormatListOptions
+       with typings.reactIntl.typesMod.FormatListOptions
   
   @js.native
   sealed trait u extends js.Object
@@ -462,8 +464,6 @@ object reactIntlStrings {
   def canvas: canvas = "canvas".asInstanceOf[canvas]
   @scala.inline
   def caption: caption = "caption".asInstanceOf[caption]
-  @scala.inline
-  def cardinal: cardinal = "cardinal".asInstanceOf[cardinal]
   @scala.inline
   def cite: cite = "cite".asInstanceOf[cite]
   @scala.inline
@@ -609,8 +609,6 @@ object reactIntlStrings {
   @scala.inline
   def option: option = "option".asInstanceOf[option]
   @scala.inline
-  def ordinal: ordinal = "ordinal".asInstanceOf[ordinal]
-  @scala.inline
   def output: output = "output".asInstanceOf[output]
   @scala.inline
   def p: p = "p".asInstanceOf[p]
@@ -686,6 +684,8 @@ object reactIntlStrings {
   def tr: tr = "tr".asInstanceOf[tr]
   @scala.inline
   def track: track = "track".asInstanceOf[track]
+  @scala.inline
+  def `type`: `type` = "type".asInstanceOf[`type`]
   @scala.inline
   def u: u = "u".asInstanceOf[u]
   @scala.inline

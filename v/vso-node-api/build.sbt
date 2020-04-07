@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "vso-node-api"
-version := "6.5.0-03cace"
+version := "6.5.0-a1690b"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "tape-promise"
-version := "4.0-dt-20191227Z-83ea4b"
+version := "4.0-dt-20191227Z-9e5ee5"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

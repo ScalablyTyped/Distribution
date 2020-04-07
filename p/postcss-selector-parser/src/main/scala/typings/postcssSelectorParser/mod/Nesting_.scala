@@ -6,8 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Nesting_
-  extends Base[String, js.UndefOr[Container[String]]]
-     with Node {
+  extends Base[String, js.UndefOr[Container[String]]] {
   @JSName("type")
   var type_Nesting_ : typings.postcssSelectorParser.postcssSelectorParserStrings.nesting
 }

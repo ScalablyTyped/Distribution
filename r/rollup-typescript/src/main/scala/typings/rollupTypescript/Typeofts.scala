@@ -272,9 +272,15 @@ import typings.typescript.mod.SwitchStatement
 import typings.typescript.mod.Symbol
 import typings.typescript.mod.SymbolDisplayPart
 import typings.typescript.mod.SyntaxKind
+import typings.typescript.mod.SyntaxKind.AbstractKeyword
 import typings.typescript.mod.SyntaxKind.AnyKeyword
+import typings.typescript.mod.SyntaxKind.AsyncKeyword
 import typings.typescript.mod.SyntaxKind.BigIntKeyword
 import typings.typescript.mod.SyntaxKind.BooleanKeyword
+import typings.typescript.mod.SyntaxKind.ConstKeyword
+import typings.typescript.mod.SyntaxKind.DeclareKeyword
+import typings.typescript.mod.SyntaxKind.DefaultKeyword
+import typings.typescript.mod.SyntaxKind.ExportKeyword
 import typings.typescript.mod.SyntaxKind.ExtendsKeyword
 import typings.typescript.mod.SyntaxKind.FalseKeyword
 import typings.typescript.mod.SyntaxKind.ImplementsKeyword
@@ -287,8 +293,12 @@ import typings.typescript.mod.SyntaxKind.NewKeyword
 import typings.typescript.mod.SyntaxKind.NullKeyword
 import typings.typescript.mod.SyntaxKind.NumberKeyword
 import typings.typescript.mod.SyntaxKind.ObjectKeyword
+import typings.typescript.mod.SyntaxKind.PrivateKeyword
+import typings.typescript.mod.SyntaxKind.ProtectedKeyword
+import typings.typescript.mod.SyntaxKind.PublicKeyword
 import typings.typescript.mod.SyntaxKind.ReadonlyKeyword
 import typings.typescript.mod.SyntaxKind.SingleLineCommentTrivia
+import typings.typescript.mod.SyntaxKind.StaticKeyword
 import typings.typescript.mod.SyntaxKind.StringKeyword
 import typings.typescript.mod.SyntaxKind.SymbolKeyword
 import typings.typescript.mod.SyntaxKind.ThisKeyword
@@ -2089,7 +2099,7 @@ trait Typeofts extends js.Object {
     name: PropertyName,
     questionToken: QuestionToken
   ): MethodSignature = js.native
-  def createModifier[T /* <: /* import warning: importer.ImportType#apply Failed type conversion: typescript.typescript.Modifier['kind'] */ js.Any */](kind: T): Token[T] = js.native
+  def createModifier[T /* <: AbstractKeyword | AsyncKeyword | ConstKeyword | DeclareKeyword | DefaultKeyword | ExportKeyword | PublicKeyword | PrivateKeyword | ProtectedKeyword | ReadonlyKeyword | StaticKeyword */](kind: T): Token[T] = js.native
   def createModifiersFromModifierFlags(flags: ModifierFlags): js.Array[Modifier] = js.native
   def createModuleBlock(statements: js.Array[Statement]): ModuleBlock = js.native
   def createModuleDeclaration(decorators: js.UndefOr[scala.Nothing], modifiers: js.UndefOr[scala.Nothing], name: ModuleName): ModuleDeclaration = js.native

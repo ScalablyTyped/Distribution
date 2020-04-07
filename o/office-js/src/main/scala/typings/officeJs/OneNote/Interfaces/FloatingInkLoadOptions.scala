@@ -10,30 +10,46 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: OneNoteApi 1.1]
   */
-@js.native
 trait FloatingInkLoadOptions extends js.Object {
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.native
+  var $all: js.UndefOr[Boolean] = js.undefined
   /**
     *
     * Gets the ID of the FloatingInk object. Read-only.
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var id: js.UndefOr[Boolean] = js.native
+  var id: js.UndefOr[Boolean] = js.undefined
   /**
     *
     * Gets the strokes of the FloatingInk object.
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var inkStrokes: js.UndefOr[InkStrokeCollectionLoadOptions] = js.native
+  var inkStrokes: js.UndefOr[InkStrokeCollectionLoadOptions] = js.undefined
   /**
     *
     * Gets the PageContent parent of the FloatingInk object.
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var pageContent: js.UndefOr[PageContentLoadOptions] = js.native
+  var pageContent: js.UndefOr[PageContentLoadOptions] = js.undefined
+}
+
+object FloatingInkLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[Boolean] = js.undefined,
+    id: js.UndefOr[Boolean] = js.undefined,
+    inkStrokes: InkStrokeCollectionLoadOptions = null,
+    pageContent: PageContentLoadOptions = null
+  ): FloatingInkLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (inkStrokes != null) __obj.updateDynamic("inkStrokes")(inkStrokes.asInstanceOf[js.Any])
+    if (pageContent != null) __obj.updateDynamic("pageContent")(pageContent.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FloatingInkLoadOptions]
+  }
 }
 

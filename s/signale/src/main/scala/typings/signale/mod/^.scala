@@ -1,7 +1,7 @@
 package typings.signale.mod
 
 import typings.signale.AnonLabel
-import typings.signale.SignaleDefaultMethodsAddSecrets
+import typings.signale.SignaleDefaultMethods
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -64,7 +64,7 @@ object ^ extends js.Object {
     *
     * @param configObj Can hold any of the documented options.
     */
-  def config(configObj: SignaleConfig): SignaleDefaultMethodsAddSecrets = js.native
+  def config(configObj: SignaleConfig): SignaleDefaultMethods = js.native
   def debug(): Unit = js.native
   def debug(message: js.Any, optionalArgs: js.Any*): Unit = js.native
   /**
@@ -102,7 +102,7 @@ object ^ extends js.Object {
     *
     * @param name Can be one or more comma delimited strings.
     */
-  def scope(name: String*): SignaleDefaultMethodsAddSecrets = js.native
+  def scope(name: String*): SignaleDefaultMethods = js.native
   def star(): Unit = js.native
   def star(message: js.Any, optionalArgs: js.Any*): Unit = js.native
   def start(): Unit = js.native

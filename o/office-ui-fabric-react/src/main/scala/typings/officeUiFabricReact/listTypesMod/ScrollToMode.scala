@@ -8,6 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/* Inlined {  auto  :0,   top  :1,   bottom  :2,   center  :3}[keyof {  auto  :0,   top  :1,   bottom  :2,   center  :3}] */
 /* Rewritten from type alias, can be one of: 
   - typings.officeUiFabricReact.officeUiFabricReactNumbers.`0`
   - typings.officeUiFabricReact.officeUiFabricReactNumbers.`1`

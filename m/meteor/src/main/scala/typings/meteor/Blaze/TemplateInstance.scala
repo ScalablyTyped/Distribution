@@ -8,19 +8,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait TemplateInstance extends js.Object {
-  var data: js.Object = js.native
-  var firstNode: js.Object = js.native
-  var lastNode: js.Object = js.native
-  var view: js.Object = js.native
+  var data: js.Object
+  var firstNode: js.Object
+  var lastNode: js.Object
+  var view: js.Object
   @JSName("$")
-  def $(selector: String): js.Any = js.native
-  def autorun(runFunc: js.Function1[/* computation */ Computation, Unit]): Computation = js.native
-  def find(selector: String): HTMLElement = js.native
-  def findAll(selector: String): js.Array[HTMLElement] = js.native
-  def subscribe(name: String, args: js.Any*): SubscriptionHandle = js.native
-  def subscriptionsReady(): Boolean = js.native
+  def $(selector: String): js.Any
+  def autorun(runFunc: js.Function1[/* computation */ Computation, Unit]): Computation
+  def find(selector: String): HTMLElement
+  def findAll(selector: String): js.Array[HTMLElement]
+  def subscribe(name: String, args: js.Any*): SubscriptionHandle
+  def subscriptionsReady(): Boolean
 }
 
 @JSGlobal("Blaze.TemplateInstance")

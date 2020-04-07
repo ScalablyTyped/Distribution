@@ -1,0 +1,9 @@
+package typings.tensorflowTfjsLayers
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+package object layerSerializationMod {
+  type LayerSerialization = typings.tensorflowTfjsLayers.advancedActivationSerializationMod.AdvancedActivationLayerSerialization | typings.tensorflowTfjsLayers.convolutionalDepthwiseSerializationMod.ConvolutionalDepthwiseLayerSerialization | typings.tensorflowTfjsLayers.convolutionalSerializationMod.ConvolutionalLayerSerialization | typings.tensorflowTfjsLayers.coreSerializationMod.CoreLayerSerialization | typings.tensorflowTfjsLayers.embeddingsSerializationMod.EmbeddingLayerSerialization | typings.tensorflowTfjsLayers.mergeSerializationMod.MergeLayerSerialization | typings.tensorflowTfjsLayers.normalizationSerializationMod.NormalizationLayerSerialization | typings.tensorflowTfjsLayers.paddingSerializationMod.PaddingLayerSerialization | typings.tensorflowTfjsLayers.poolingSerializationMod.PoolingLayerSerialization | typings.tensorflowTfjsLayers.recurrentSerializationMod.RecurrentLayerSerialization | typings.tensorflowTfjsLayers.inputConfigMod.InputLayerSerialization
+}

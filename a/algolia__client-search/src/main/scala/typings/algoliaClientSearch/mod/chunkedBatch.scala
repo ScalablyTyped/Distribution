@@ -1,6 +1,6 @@
 package typings.algoliaClientSearch.mod
 
-import typings.algoliaClientSearch.ReadonlyWaitablePromiseChFinally
+import typings.algoliaClientSearch.ReadonlyWaitablePromiseCh
 import typings.algoliaTransporter.mod.RequestOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,7 +13,7 @@ object chunkedBatch extends js.Object {
     /* bodies */ js.Array[js.Object], 
     /* action */ BatchActionType, 
     /* requestOptions */ js.UndefOr[RequestOptions with ChunkOptions], 
-    ReadonlyWaitablePromiseChFinally
+    ReadonlyWaitablePromiseCh
   ] = js.native
 }
 

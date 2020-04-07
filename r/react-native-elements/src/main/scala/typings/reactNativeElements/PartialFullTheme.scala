@@ -18,7 +18,7 @@ trait PartialFullTheme extends js.Object {
   var Icon: js.UndefOr[PartialIconProps] = js.undefined
   var Image: js.UndefOr[PartialImageProps] = js.undefined
   var Input: js.UndefOr[PartialInputProps] = js.undefined
-  var ListItem: js.UndefOr[PartialListItemPropsAccessibilityActions] = js.undefined
+  var ListItem: js.UndefOr[PartialListItemProps] = js.undefined
   var Overlay: js.UndefOr[PartialOverlayProps] = js.undefined
   var PricingCard: js.UndefOr[PartialPricingCardProps] = js.undefined
   var Rating: js.UndefOr[PartialRatingProps] = js.undefined
@@ -28,7 +28,7 @@ trait PartialFullTheme extends js.Object {
   var Text: js.UndefOr[PartialTextProps] = js.undefined
   var Tile: js.UndefOr[PartialTileProps] = js.undefined
   var Tooltip: js.UndefOr[PartialTooltipProps] = js.undefined
-  var colors: js.UndefOr[RecursivePartialColorsDisabled] = js.undefined
+  var colors: js.UndefOr[RecursivePartialColors] = js.undefined
 }
 
 object PartialFullTheme {
@@ -46,7 +46,7 @@ object PartialFullTheme {
     Icon: PartialIconProps = null,
     Image: PartialImageProps = null,
     Input: PartialInputProps = null,
-    ListItem: PartialListItemPropsAccessibilityActions = null,
+    ListItem: PartialListItemProps = null,
     Overlay: PartialOverlayProps = null,
     PricingCard: PartialPricingCardProps = null,
     Rating: PartialRatingProps = null,
@@ -56,7 +56,7 @@ object PartialFullTheme {
     Text: PartialTextProps = null,
     Tile: PartialTileProps = null,
     Tooltip: PartialTooltipProps = null,
-    colors: RecursivePartialColorsDisabled = null
+    colors: RecursivePartialColors = null
   ): PartialFullTheme = {
     val __obj = js.Dynamic.literal()
     if (AirbnbRating != null) __obj.updateDynamic("AirbnbRating")(AirbnbRating.asInstanceOf[js.Any])

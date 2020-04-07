@@ -18,6 +18,7 @@ import typings.reactNativeMaterialDropdown.mod.DropDownData
 import typings.reactNativeMaterialDropdown.mod.DropDownInsets
 import typings.reactNativeMaterialDropdown.mod.DropDownMargins
 import typings.reactNativeMaterialDropdown.mod.DropDownOffset
+import typings.reactNativeMaterialDropdown.mod.DropDownProps
 import typings.reactNativeMaterialDropdown.mod.RenderBaseProps
 import typings.reactNativeMaterialDropdown.reactNativeMaterialDropdownStrings.`no-hide-descendants`
 import typings.reactNativeMaterialDropdown.reactNativeMaterialDropdownStrings.assertive
@@ -29,6 +30,7 @@ import typings.reactNativeMaterialDropdown.reactNativeMaterialDropdownStrings.po
 import typings.reactNativeMaterialDropdown.reactNativeMaterialDropdownStrings.radiobutton_checked
 import typings.reactNativeMaterialDropdown.reactNativeMaterialDropdownStrings.radiobutton_unchecked
 import typings.reactNativeMaterialDropdown.reactNativeMaterialDropdownStrings.yes
+import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -71,7 +73,7 @@ trait PartialDropDownPropsAbsoluteRTLLayout extends js.Object {
   var itemPadding: js.UndefOr[Double] = js.undefined
   var itemTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   var label: js.UndefOr[String] = js.undefined
-  var labelExtractor: js.UndefOr[js.Function2[/* item */ DropDownData, /* index */ Double, String]] = js.undefined
+  var labelExtractor: js.UndefOr[js.Function2[/* item */ this.type, /* index */ Double, String]] = js.undefined
   var labelFontSize: js.UndefOr[Double] = js.undefined
   var labelTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   var onAccessibilityAction: js.UndefOr[js.Function1[/* event */ AccessibilityActionEvent, Unit]] = js.undefined
@@ -79,7 +81,7 @@ trait PartialDropDownPropsAbsoluteRTLLayout extends js.Object {
   var onAccessibilityTap: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onBlur: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onChangeText: js.UndefOr[
-    js.Function3[/* value */ String, /* index */ Double, /* data */ js.Array[DropDownData], Unit]
+    js.Function3[/* value */ String, /* index */ Double, /* data */ js.Array[this.type], Unit]
   ] = js.undefined
   var onFocus: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onLayout: js.UndefOr[js.Function1[/* event */ LayoutChangeEvent, Unit]] = js.undefined
@@ -91,7 +93,7 @@ trait PartialDropDownPropsAbsoluteRTLLayout extends js.Object {
   var overlayStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   var pickerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   var pressRetentionOffset: js.UndefOr[Insets] = js.undefined
-  var propsExtractor: js.UndefOr[js.Function2[/* item */ DropDownData, /* index */ Double, PartialDropDownProps]] = js.undefined
+  var propsExtractor: js.UndefOr[js.Function2[/* item */ this.type, /* index */ Double, Partial[DropDownProps]]] = js.undefined
   var renderAccessory: js.UndefOr[js.Function0[Element]] = js.undefined
   var renderBase: js.UndefOr[js.Function1[/* props */ RenderBaseProps, Element]] = js.undefined
   var rippleCentered: js.UndefOr[Boolean] = js.undefined
@@ -109,7 +111,7 @@ trait PartialDropDownPropsAbsoluteRTLLayout extends js.Object {
   var tvParallaxProperties: js.UndefOr[TVParallaxProperties] = js.undefined
   var useNativeDriver: js.UndefOr[Boolean] = js.undefined
   var value: js.UndefOr[String | Double] = js.undefined
-  var valueExtractor: js.UndefOr[js.Function2[/* item */ DropDownData, /* index */ Double, String]] = js.undefined
+  var valueExtractor: js.UndefOr[js.Function2[/* item */ this.type, /* index */ Double, String]] = js.undefined
 }
 
 object PartialDropDownPropsAbsoluteRTLLayout {
@@ -151,14 +153,14 @@ object PartialDropDownPropsAbsoluteRTLLayout {
     itemPadding: Int | Double = null,
     itemTextStyle: StyleProp[TextStyle] = null,
     label: String = null,
-    labelExtractor: (/* item */ DropDownData, /* index */ Double) => String = null,
+    labelExtractor: (PartialDropDownPropsAbsoluteRTLLayout, /* index */ Double) => String = null,
     labelFontSize: Int | Double = null,
     labelTextStyle: StyleProp[TextStyle] = null,
     onAccessibilityAction: /* event */ AccessibilityActionEvent => Unit = null,
     onAccessibilityEscape: () => Unit = null,
     onAccessibilityTap: () => Unit = null,
     onBlur: () => Unit = null,
-    onChangeText: (/* value */ String, /* index */ Double, /* data */ js.Array[DropDownData]) => Unit = null,
+    onChangeText: (/* value */ String, /* index */ Double, /* data */ js.Array[PartialDropDownPropsAbsoluteRTLLayout]) => Unit = null,
     onFocus: () => Unit = null,
     onLayout: /* event */ LayoutChangeEvent => Unit = null,
     onLongPress: /* event */ GestureResponderEvent => Unit = null,
@@ -169,7 +171,7 @@ object PartialDropDownPropsAbsoluteRTLLayout {
     overlayStyle: StyleProp[ViewStyle] = null,
     pickerStyle: StyleProp[ViewStyle] = null,
     pressRetentionOffset: Insets = null,
-    propsExtractor: (/* item */ DropDownData, /* index */ Double) => PartialDropDownProps = null,
+    propsExtractor: (PartialDropDownPropsAbsoluteRTLLayout, /* index */ Double) => Partial[DropDownProps] = null,
     renderAccessory: () => Element = null,
     renderBase: /* props */ RenderBaseProps => Element = null,
     rippleCentered: js.UndefOr[Boolean] = js.undefined,
@@ -187,7 +189,7 @@ object PartialDropDownPropsAbsoluteRTLLayout {
     tvParallaxProperties: TVParallaxProperties = null,
     useNativeDriver: js.UndefOr[Boolean] = js.undefined,
     value: String | Double = null,
-    valueExtractor: (/* item */ DropDownData, /* index */ Double) => String = null
+    valueExtractor: (PartialDropDownPropsAbsoluteRTLLayout, /* index */ Double) => String = null
   ): PartialDropDownPropsAbsoluteRTLLayout = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(absoluteRTLLayout)) __obj.updateDynamic("absoluteRTLLayout")(absoluteRTLLayout.asInstanceOf[js.Any])

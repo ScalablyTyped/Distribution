@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "webpack-blocks"
-version := "2.0-dt-20191016Z-403e57"
+version := "2.0-dt-20191016Z-46205e"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -12,16 +12,16 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "std" % "3.8-a0108c",
   "org.scalablytyped" %%% "tapable" % "v1.0.0-dt-20200225Z-acd615",
   "org.scalablytyped" %%% "uglify-js" % "3.0-dt-20200225Z-1b173b",
-  "org.scalablytyped" %%% "webpack" % "4.41-dt-20200320Z-b7aa26",
+  "org.scalablytyped" %%% "webpack" % "4.41-dt-20200320Z-cabf96",
   "org.scalablytyped" %%% "webpack-blocks__assets" % "2.0-dt-20191016Z-985947",
   "org.scalablytyped" %%% "webpack-blocks__babel" % "2.0-dt-20191016Z-94cb10",
-  "org.scalablytyped" %%% "webpack-blocks__core" % "2.0-dt-20191016Z-1bcc04",
+  "org.scalablytyped" %%% "webpack-blocks__core" % "2.0-dt-20191016Z-71d3d7",
   "org.scalablytyped" %%% "webpack-blocks__dev-server" % "2.0-dt-20191016Z-088b82",
   "org.scalablytyped" %%% "webpack-blocks__postcss" % "2.0-dt-20191016Z-7c5084",
   "org.scalablytyped" %%% "webpack-blocks__sass" % "2.0-dt-20191016Z-a2882d",
   "org.scalablytyped" %%% "webpack-blocks__typescript" % "2.0-dt-20191016Z-ed0c2f",
   "org.scalablytyped" %%% "webpack-blocks__uglify" % "2.0-dt-20191016Z-8ad9a5",
-  "org.scalablytyped" %%% "webpack-blocks__webpack" % "2.0-dt-20191016Z-d567bc",
+  "org.scalablytyped" %%% "webpack-blocks__webpack" % "2.0-dt-20191016Z-ba969e",
   "org.scalablytyped" %%% "webpack-sources" % "0.1-dt-20200225Z-fed209")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")

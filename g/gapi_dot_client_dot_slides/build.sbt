@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gapi_dot_client_dot_slides"
-version := "1.0-dt-20200225Z-3c8c19"
+version := "1.0-dt-20200225Z-14e406"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

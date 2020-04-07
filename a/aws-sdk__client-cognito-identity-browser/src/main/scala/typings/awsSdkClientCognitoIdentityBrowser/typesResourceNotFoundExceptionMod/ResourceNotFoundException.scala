@@ -16,11 +16,11 @@ import typings.awsSdkClientCognitoIdentityBrowser.unlinkDeveloperIdentityExcepti
 import typings.awsSdkClientCognitoIdentityBrowser.unlinkIdentityExceptionsUnionMod.UnlinkIdentityExceptionsUnion
 import typings.awsSdkClientCognitoIdentityBrowser.updateIdentityPoolExceptionsUnionMod.UpdateIdentityPoolExceptionsUnion
 import typings.awsSdkTypes.exceptionMod.ServiceException
+import typings.awsSdkTypes.responseMod.ResponseMetadata
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait ResourceNotFoundException
   extends ServiceException[ResourceNotFoundExceptionDetails]
      with DeleteIdentityPoolExceptionsUnion
@@ -39,6 +39,21 @@ trait ResourceNotFoundException
      with UnlinkIdentityExceptionsUnion
      with UpdateIdentityPoolExceptionsUnion {
   @JSName("name")
-  var name_ResourceNotFoundException: typings.awsSdkClientCognitoIdentityBrowser.awsSdkClientCognitoIdentityBrowserStrings.ResourceNotFoundException = js.native
+  var name_ResourceNotFoundException: typings.awsSdkClientCognitoIdentityBrowser.awsSdkClientCognitoIdentityBrowserStrings.ResourceNotFoundException
+}
+
+object ResourceNotFoundException {
+  @scala.inline
+  def apply(
+    $metadata: ResponseMetadata,
+    details: ResourceNotFoundExceptionDetails,
+    message: String,
+    name: typings.awsSdkClientCognitoIdentityBrowser.awsSdkClientCognitoIdentityBrowserStrings.ResourceNotFoundException,
+    stack: String = null
+  ): ResourceNotFoundException = {
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ResourceNotFoundException]
+  }
 }
 

@@ -13,6 +13,9 @@ object formStateLazyMod extends js.Object {
   class FormStateLazy[TValue /* <: ValidatableArray */] protected () extends Validatable[TValue] {
     def this(/** It is a function as fields can change over time */
     getFields: js.Function0[TValue]) = this()
+    /* CompleteClass */
+    @JSName("$")
+    override var $: TValue = js.native
     var _error: js.UndefOr[String | Null] = js.native
     var _validators: js.Array[Validator[TValue]] = js.native
     /**
@@ -28,6 +31,8 @@ object formStateLazyMod extends js.Object {
       * Error from form if any
       */
     val formError: js.UndefOr[String | Null] = js.native
+    /* CompleteClass */
+    override var hasError: Boolean = js.native
     /**
       * Does any field have an error
       */
@@ -40,12 +45,20 @@ object formStateLazyMod extends js.Object {
       * You should only show the form error if there are no field errors
       */
     val showFormError: Boolean = js.native
+    /* CompleteClass */
+    override var validating: Boolean = js.native
     /**
       * Call it when you are `reinit`ing child fields
       */
     def clearFormError(): Unit = js.native
+    /* CompleteClass */
+    override def disableAutoValidation(): Unit = js.native
+    /* CompleteClass */
+    override def enableAutoValidation(): Unit = js.native
     /** It is a function as fields can change over time */
     /* protected */ def getFields(): TValue = js.native
+    /* CompleteClass */
+    override def validate(): js.Promise[AnonHasError | AnonValue[TValue]] = js.native
     def validators(validators: Validator[TValue]*): this.type = js.native
   }
   

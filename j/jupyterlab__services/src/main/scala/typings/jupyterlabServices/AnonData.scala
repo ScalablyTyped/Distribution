@@ -1,22 +1,22 @@
 package typings.jupyterlabServices
 
-import typings.jupyterlabNbformat.mod.IMimeBundle
-import typings.jupyterlabNbformat.mod.OutputMetadata
+import typings.luminoCoreutils.jsonMod.JSONObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonData extends js.Object {
-  var data: IMimeBundle
-  var metadata: OutputMetadata
-  var transient: js.UndefOr[AnonDisplayid] = js.undefined
+  var comm_id: String
+  var data: JSONObject
+  var target_module: js.UndefOr[String] = js.undefined
+  var target_name: String
 }
 
 object AnonData {
   @scala.inline
-  def apply(data: IMimeBundle, metadata: OutputMetadata, transient: AnonDisplayid = null): AnonData = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any])
-    if (transient != null) __obj.updateDynamic("transient")(transient.asInstanceOf[js.Any])
+  def apply(comm_id: String, data: JSONObject, target_name: String, target_module: String = null): AnonData = {
+    val __obj = js.Dynamic.literal(comm_id = comm_id.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], target_name = target_name.asInstanceOf[js.Any])
+    if (target_module != null) __obj.updateDynamic("target_module")(target_module.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnonData]
   }
 }

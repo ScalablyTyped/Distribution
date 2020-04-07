@@ -21,7 +21,7 @@ object SimpleBlock {
     discarable: Boolean,
     end: Double,
     keyframe: Boolean,
-    name: /* import warning: importer.ImportType#apply Failed type conversion: ebml.ebml.EBMLTagSchema['name'] */ js.Any,
+    name: String,
     payload: Buffer,
     start: Double,
     tag: Double,

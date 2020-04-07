@@ -41,6 +41,14 @@ package object mod {
     */
   type DistinctChoice[TChoiceMap] = java.lang.String | (/* import warning: importer.ImportType#apply Failed type conversion: TChoiceMap[keyof TChoiceMap] */ js.Any)
   /**
+    * Represents one of the available questions.
+    *
+    * @template T
+    * The type of the answers.
+    */
+  /* Inlined inquirer.inquirer.QuestionMap<T>[keyof inquirer.inquirer.QuestionMap<T>] */
+  type DistinctQuestion[T /* <: typings.inquirer.mod.Answers */] = typings.inquirer.inquirerStrings.`type`
+  /**
     * Represents a dynamic property for a question.
     */
   type DynamicQuestionProperty[T, TAnswers /* <: typings.inquirer.mod.Answers */] = T | (js.Function1[/* answers */ TAnswers, T])

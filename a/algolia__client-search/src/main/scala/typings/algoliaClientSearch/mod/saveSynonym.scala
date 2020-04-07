@@ -1,6 +1,6 @@
 package typings.algoliaClientSearch.mod
 
-import typings.algoliaClientSearch.ReadonlyWaitablePromiseSa3
+import typings.algoliaClientSearch.ReadonlyWaitablePromiseSaWait
 import typings.algoliaTransporter.mod.RequestOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,7 +12,7 @@ object saveSynonym extends js.Object {
   def apply(base: SearchIndex): js.Function2[
     /* synonym */ Synonym, 
     /* requestOptions */ js.UndefOr[RequestOptions with SaveSynonymsOptions], 
-    ReadonlyWaitablePromiseSa3
+    ReadonlyWaitablePromiseSaWait
   ] = js.native
 }
 

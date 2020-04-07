@@ -18,7 +18,7 @@ object Tag_ {
     data: Buffer,
     dataSize: Double,
     end: Double,
-    name: /* import warning: importer.ImportType#apply Failed type conversion: ebml.ebml.EBMLTagSchema['name'] */ js.Any,
+    name: String,
     start: Double,
     tag: Double,
     tagStr: String,

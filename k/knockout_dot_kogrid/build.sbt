@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "knockout_dot_kogrid"
-version := "0.0-unknown-dt-20200225Z-5d0ec6"
+version := "0.0-unknown-dt-20200225Z-5e8501"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

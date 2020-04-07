@@ -5,7 +5,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object advancedActivationSerializationMod {
-  type AdvancedActivationLayerClassName = /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-layers.@tensorflow/tfjs-layers/dist/keras_format/layers/advanced_activation_serialization.AdvancedActivationLayerSerialization['class_name'] */ js.Any
   type AdvancedActivationLayerSerialization = typings.tensorflowTfjsLayers.advancedActivationSerializationMod.ReLULayerSerialization | typings.tensorflowTfjsLayers.advancedActivationSerializationMod.LeakyReLULayerSerialization | typings.tensorflowTfjsLayers.advancedActivationSerializationMod.PReLULayerSerialization | typings.tensorflowTfjsLayers.advancedActivationSerializationMod.ELULayerSerialization | typings.tensorflowTfjsLayers.advancedActivationSerializationMod.ThresholdedReLULayerSerialization | typings.tensorflowTfjsLayers.advancedActivationSerializationMod.SoftmaxLayerSerialization
   type ELULayerSerialization = typings.tensorflowTfjsLayers.topologyConfigMod.BaseLayerSerialization[
     typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.ELU, 

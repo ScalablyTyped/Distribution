@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "yog2-kernel"
-version := "1.9-dt-20200225Z-512761"
+version := "1.9-dt-20200225Z-74b658"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -17,7 +17,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "serve-static" % "1.13-dt-20200227Z-dc6343",
   "org.scalablytyped" %%% "std" % "3.8-a0108c",
   "org.scalablytyped" %%% "yog-bigpipe" % "0.4-dt-20190819Z-218ff0",
-  "org.scalablytyped" %%% "yog-log" % "0.1-dt-20200225Z-1afc39")
+  "org.scalablytyped" %%% "yog-log" % "0.1-dt-20200225Z-87913b")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

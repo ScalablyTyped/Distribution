@@ -1,5 +1,6 @@
 package typings.loglevel
 
+import typings.loglevel.mod.LogLevelDesc
 import typings.loglevel.mod.LogLevelNumbers
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -7,22 +8,34 @@ import scala.scalajs.js.annotation._
 
 object loglevelNumbers {
   @js.native
-  sealed trait `0` extends LogLevelNumbers
+  sealed trait `0`
+    extends LogLevelDesc
+       with LogLevelNumbers
   
   @js.native
-  sealed trait `1` extends LogLevelNumbers
+  sealed trait `1`
+    extends LogLevelDesc
+       with LogLevelNumbers
   
   @js.native
-  sealed trait `2` extends LogLevelNumbers
+  sealed trait `2`
+    extends LogLevelDesc
+       with LogLevelNumbers
   
   @js.native
-  sealed trait `3` extends LogLevelNumbers
+  sealed trait `3`
+    extends LogLevelDesc
+       with LogLevelNumbers
   
   @js.native
-  sealed trait `4` extends LogLevelNumbers
+  sealed trait `4`
+    extends LogLevelDesc
+       with LogLevelNumbers
   
   @js.native
-  sealed trait `5` extends LogLevelNumbers
+  sealed trait `5`
+    extends LogLevelDesc
+       with LogLevelNumbers
   
   @scala.inline
   def `0`: `0` = 0.asInstanceOf[`0`]

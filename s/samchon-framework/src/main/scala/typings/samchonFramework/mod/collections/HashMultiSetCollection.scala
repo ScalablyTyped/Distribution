@@ -2,7 +2,7 @@ package typings.samchonFramework.mod.collections
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable3
-import typings.tstl.IteratoranyanyanyEquals
+import typings.tstl.Iteratoranyanyany
 import typings.tstl.icontainerMod.IContainer
 import typings.tstl.setContainerMod.SetContainer
 import scala.scalajs.js
@@ -54,7 +54,7 @@ object HashMultiSetCollection extends js.Object {
         /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
         /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
         /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any, 
-        IteratoranyanyanyEquals, 
+        Iteratoranyanyany, 
         typings.tstl.setElementListMod.SetElementList.ReverseIterator[
           /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
           /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
@@ -71,7 +71,7 @@ object HashMultiSetCollection extends js.Object {
         /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
         /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
         /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any, 
-        IteratoranyanyanyEquals, 
+        Iteratoranyanyany, 
         typings.tstl.setElementListMod.SetElementList.ReverseIterator[
           /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
           /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 

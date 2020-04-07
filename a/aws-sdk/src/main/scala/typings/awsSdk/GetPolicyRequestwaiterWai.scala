@@ -17,3 +17,12 @@ trait GetPolicyRequestwaiterWai extends js.Object {
   var PolicyArn: arnType = js.native
 }
 
+object GetPolicyRequestwaiterWai {
+  @scala.inline
+  def apply(PolicyArn: arnType, $waiter: WaiterConfiguration = null): GetPolicyRequestwaiterWai = {
+    val __obj = js.Dynamic.literal(PolicyArn = PolicyArn.asInstanceOf[js.Any])
+    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GetPolicyRequestwaiterWai]
+  }
+}
+

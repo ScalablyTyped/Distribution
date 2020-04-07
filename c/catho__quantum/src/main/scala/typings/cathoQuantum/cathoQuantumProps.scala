@@ -18,6 +18,8 @@ trait cathoQuantumProps {
   @scala.inline
   def BadgeProps: typings.cathoQuantum.badgeMod.BadgeProps.type = typings.cathoQuantum.badgeMod.BadgeProps
   type BadgeProps = typings.cathoQuantum.badgeMod.BadgeProps
+  @scala.inline
+  def ButtonProps: typings.cathoQuantum.buttonMod.ButtonProps.type = typings.cathoQuantum.buttonMod.ButtonProps
   type ButtonProps = typings.cathoQuantum.buttonMod.ButtonProps
   @scala.inline
   def ButtonIconProps: IconButtonProps.type = typings.cathoQuantum.iconButtonMod.IconButtonProps
@@ -102,6 +104,8 @@ trait cathoQuantumProps {
   @scala.inline
   def SnackBarProps: typings.cathoQuantum.snackBarMod.SnackBarProps.type = typings.cathoQuantum.snackBarMod.SnackBarProps
   type SnackBarProps = typings.cathoQuantum.snackBarMod.SnackBarProps
+  @scala.inline
+  def SocialButtonProps: typings.cathoQuantum.socialButtonMod.SocialButtonProps.type = typings.cathoQuantum.socialButtonMod.SocialButtonProps
   type SocialButtonProps = typings.cathoQuantum.socialButtonMod.SocialButtonProps
   @scala.inline
   def SocialsProps: typings.cathoQuantum.socialsMod.SocialsProps.type = typings.cathoQuantum.socialsMod.SocialsProps

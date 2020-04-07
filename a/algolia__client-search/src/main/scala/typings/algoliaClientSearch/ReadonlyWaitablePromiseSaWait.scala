@@ -1,22 +1,22 @@
 package typings.algoliaClientSearch
 
-import typings.algoliaClientSearch.mod.SaveSynonymsResponse
+import typings.algoliaClientSearch.mod.SaveSynonymResponse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined std.Readonly<@algolia/client-common.@algolia/client-common.WaitablePromise<@algolia/client-search.@algolia/client-search.SaveSynonymsResponse>> */
+/* Inlined std.Readonly<@algolia/client-common.@algolia/client-common.WaitablePromise<@algolia/client-search.@algolia/client-search.SaveSynonymResponse>> */
 trait ReadonlyWaitablePromiseSaWait extends js.Object {
-  def `catch`[TResult](): js.Promise[SaveSynonymsResponse | TResult]
-  def `finally`(): js.Promise[SaveSynonymsResponse]
+  def `catch`[TResult](): js.Promise[SaveSynonymResponse | TResult]
+  def `finally`(): js.Promise[SaveSynonymResponse]
   def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2]
 }
 
 object ReadonlyWaitablePromiseSaWait {
   @scala.inline
   def apply(
-    `catch`: () => js.Promise[SaveSynonymsResponse | js.Any],
-    `finally`: () => js.Promise[SaveSynonymsResponse],
+    `catch`: () => js.Promise[SaveSynonymResponse | js.Any],
+    `finally`: () => js.Promise[SaveSynonymResponse],
     `then`: () => js.Promise[js.Any | js.Any]
   ): ReadonlyWaitablePromiseSaWait = {
     val __obj = js.Dynamic.literal()

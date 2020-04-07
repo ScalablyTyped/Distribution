@@ -36,7 +36,8 @@ package object mod {
     /* state */ typings.reactAsync.mod.AsyncInitial[T, typings.reactAsync.mod.AbstractState[T]], 
     typings.react.mod.ReactNode
   ]) | typings.react.mod.ReactNode
-  type Meta = typings.reactAsync.AnonDictmeta
+  /* Inlined react-async.react-async.AbstractAction['meta'] */
+  type Meta = typings.reactAsync.reactAsyncStrings.counter
   type PendingChildren[T] = (js.Function1[
     /* state */ typings.reactAsync.mod.AsyncPending[T, typings.reactAsync.mod.AbstractState[T]], 
     typings.react.mod.ReactNode

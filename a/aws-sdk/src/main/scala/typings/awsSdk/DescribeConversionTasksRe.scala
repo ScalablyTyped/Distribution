@@ -22,3 +22,18 @@ trait DescribeConversionTasksRe extends js.Object {
   var DryRun: js.UndefOr[Boolean] = js.native
 }
 
+object DescribeConversionTasksRe {
+  @scala.inline
+  def apply(
+    $waiter: WaiterConfiguration = null,
+    ConversionTaskIds: ConversionIdStringList = null,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined
+  ): DescribeConversionTasksRe = {
+    val __obj = js.Dynamic.literal()
+    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
+    if (ConversionTaskIds != null) __obj.updateDynamic("ConversionTaskIds")(ConversionTaskIds.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DescribeConversionTasksRe]
+  }
+}
+

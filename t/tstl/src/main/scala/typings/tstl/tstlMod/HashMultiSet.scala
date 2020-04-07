@@ -1,7 +1,7 @@
 package typings.tstl.tstlMod
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.tstl.IteratoranyanyanyEquals
+import typings.tstl.Iteratoranyanyany
 import typings.tstl.binaryPredicatorMod.BinaryPredicator
 import typings.tstl.hasherMod.Hasher
 import typings.tstl.iforwarditeratorMod.IForwardIterator
@@ -74,7 +74,7 @@ object HashMultiSet extends js.Object {
         /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
         /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
         /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any, 
-        IteratoranyanyanyEquals, 
+        Iteratoranyanyany, 
         typings.tstl.setElementListMod.SetElementList.ReverseIterator[
           /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
           /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
@@ -91,7 +91,7 @@ object HashMultiSet extends js.Object {
         /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
         /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
         /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any, 
-        IteratoranyanyanyEquals, 
+        Iteratoranyanyany, 
         typings.tstl.setElementListMod.SetElementList.ReverseIterator[
           /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
           /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 

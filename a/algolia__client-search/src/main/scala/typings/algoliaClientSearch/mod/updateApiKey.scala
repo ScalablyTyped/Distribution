@@ -1,6 +1,6 @@
 package typings.algoliaClientSearch.mod
 
-import typings.algoliaClientSearch.ReadonlyWaitablePromiseUpFinally
+import typings.algoliaClientSearch.ReadonlyWaitablePromiseUp
 import typings.algoliaTransporter.mod.RequestOptions
 import typings.std.Pick
 import scala.scalajs.js
@@ -13,7 +13,7 @@ object updateApiKey extends js.Object {
   def apply(base: SearchClient): js.Function2[
     /* apiKey */ String, 
     /* requestOptions */ js.UndefOr[UpdateApiKeyOptions with (Pick[RequestOptions, String | Double])], 
-    ReadonlyWaitablePromiseUpFinally
+    ReadonlyWaitablePromiseUp
   ] = js.native
 }
 

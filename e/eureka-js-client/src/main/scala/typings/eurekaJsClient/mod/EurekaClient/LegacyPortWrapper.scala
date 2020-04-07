@@ -4,10 +4,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait LegacyPortWrapper extends js.Object {
   @JSName("$")
-  var $: Double = js.native
-  var `@enabled`: Boolean = js.native
+  var $: Double
+  var `@enabled`: Boolean
+}
+
+object LegacyPortWrapper {
+  @scala.inline
+  def apply($: Double, `@enabled`: Boolean): LegacyPortWrapper = {
+    val __obj = js.Dynamic.literal($ = $.asInstanceOf[js.Any])
+    __obj.updateDynamic("@enabled")(`@enabled`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LegacyPortWrapper]
+  }
 }
 

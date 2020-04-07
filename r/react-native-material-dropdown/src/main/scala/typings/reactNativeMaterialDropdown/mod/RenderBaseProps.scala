@@ -24,7 +24,7 @@ import typings.reactNative.reactNativeStrings.polite
 import typings.reactNative.reactNativeStrings.radiobutton_checked
 import typings.reactNative.reactNativeStrings.radiobutton_unchecked
 import typings.reactNative.reactNativeStrings.yes
-import typings.reactNativeMaterialDropdown.PartialDropDownPropsAccessibilityActions
+import typings.reactNativeMaterialDropdown.PartialDropDownProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -92,7 +92,7 @@ object RenderBaseProps {
     overlayStyle: StyleProp[ViewStyle] = null,
     pickerStyle: StyleProp[ViewStyle] = null,
     pressRetentionOffset: Insets = null,
-    propsExtractor: (/* item */ DropDownData, /* index */ Double) => PartialDropDownPropsAccessibilityActions = null,
+    propsExtractor: (/* item */ DropDownData, /* index */ Double) => PartialDropDownProps = null,
     renderAccessory: () => Element = null,
     renderBase: /* props */ RenderBaseProps => Element = null,
     rippleCentered: js.UndefOr[Boolean] = js.undefined,

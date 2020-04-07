@@ -1,5 +1,6 @@
 package typings.officeUiFabricReact.comboBoxControlledExampleMod
 
+import typings.officeUiFabricReact.comboBoxTypesMod.IComboBoxOption
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,13 +17,9 @@ trait IComboBoxControlledExampleState extends js.Object {
     */
   var initialDisplayValueMulti: js.UndefOr[String] = js.undefined
   /** Current options for the single-select example */
-  var options: js.Array[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IComboBoxOption */ _
-  ]
+  var options: js.Array[IComboBoxOption]
   /** Current options for the multi-select example */
-  var optionsMulti: js.Array[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IComboBoxOption */ _
-  ]
+  var optionsMulti: js.Array[IComboBoxOption]
   /** Current selected option for the single-select example */
   var selectedOptionKey: js.UndefOr[String | Double] = js.undefined
   /** Current selected options for the multi-select example */
@@ -32,12 +29,8 @@ trait IComboBoxControlledExampleState extends js.Object {
 object IComboBoxControlledExampleState {
   @scala.inline
   def apply(
-    options: js.Array[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IComboBoxOption */ _
-    ],
-    optionsMulti: js.Array[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IComboBoxOption */ _
-    ],
+    options: js.Array[IComboBoxOption],
+    optionsMulti: js.Array[IComboBoxOption],
     initialDisplayValue: String = null,
     initialDisplayValueMulti: String = null,
     selectedOptionKey: String | Double = null,

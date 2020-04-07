@@ -7,14 +7,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait AutoTooltip extends js.Object {
   @JSName("$tooltipOut")
-  var $tooltipOut: Unit = js.native
+  var $tooltipOut: Unit
   @JSName("$tooltipIn")
-  def $tooltipIn(node: HTMLElement): HTMLElement = js.native
+  def $tooltipIn(node: HTMLElement): HTMLElement
   @JSName("$tooltipMove")
-  def $tooltipMove(t: HTMLElement, e: Event_, text: String): Unit = js.native
+  def $tooltipMove(t: HTMLElement, e: Event_, text: String): Unit
 }
 
 @JSImport("webix", "AutoTooltip")

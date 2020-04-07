@@ -27,3 +27,19 @@ trait DescribeTasksRequestwaite extends js.Object {
   var tasks: StringList = js.native
 }
 
+object DescribeTasksRequestwaite {
+  @scala.inline
+  def apply(
+    tasks: StringList,
+    $waiter: WaiterConfiguration = null,
+    cluster: String = null,
+    include: TaskFieldList = null
+  ): DescribeTasksRequestwaite = {
+    val __obj = js.Dynamic.literal(tasks = tasks.asInstanceOf[js.Any])
+    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
+    if (cluster != null) __obj.updateDynamic("cluster")(cluster.asInstanceOf[js.Any])
+    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DescribeTasksRequestwaite]
+  }
+}
+

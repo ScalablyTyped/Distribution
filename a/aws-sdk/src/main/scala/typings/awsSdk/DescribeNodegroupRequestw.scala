@@ -21,3 +21,12 @@ trait DescribeNodegroupRequestw extends js.Object {
   var nodegroupName: String = js.native
 }
 
+object DescribeNodegroupRequestw {
+  @scala.inline
+  def apply(clusterName: String, nodegroupName: String, $waiter: WaiterConfiguration = null): DescribeNodegroupRequestw = {
+    val __obj = js.Dynamic.literal(clusterName = clusterName.asInstanceOf[js.Any], nodegroupName = nodegroupName.asInstanceOf[js.Any])
+    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DescribeNodegroupRequestw]
+  }
+}
+

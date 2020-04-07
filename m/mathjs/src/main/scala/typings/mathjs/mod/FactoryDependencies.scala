@@ -1,6 +1,6 @@
 package typings.mathjs.mod
 
-import typings.mathjs.PartialMathJsStaticAbsDependencies
+import typings.mathjs.PartialMathJsStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -332,16 +332,16 @@ trait FactoryDependencies extends js.Object {
   var xgcdDependencies: FactoryFunctionMap = js.native
   var xorDependencies: FactoryFunctionMap = js.native
   var zerosDependencies: FactoryFunctionMap = js.native
-  def create(factories: FactoryFunctionMap, config: ConfigOptions): PartialMathJsStaticAbsDependencies = js.native
+  def create(factories: FactoryFunctionMap, config: ConfigOptions): PartialMathJsStatic = js.native
   def factory[T](
     name: String,
     dependencies: js.Array[MathJsFunctionName],
-    create: js.Function1[/* injected */ PartialMathJsStaticAbsDependencies, T]
+    create: js.Function1[/* injected */ PartialMathJsStatic, T]
   ): FactoryFunction[T] = js.native
   def factory[T](
     name: String,
     dependencies: js.Array[MathJsFunctionName],
-    create: js.Function1[/* injected */ PartialMathJsStaticAbsDependencies, T],
+    create: js.Function1[/* injected */ PartialMathJsStatic, T],
     meta: js.Any
   ): FactoryFunction[T] = js.native
 }

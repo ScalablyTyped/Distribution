@@ -8,8 +8,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait reactNavigationStackProps {
-  @scala.inline
-  def BorderlessButtonProps: Props.type = typings.reactNavigationStack.borderlessButtonMod.Props
   type BorderlessButtonProps = Props
   @scala.inline
   def CardProps: typings.reactNavigationStack.cardMod.Props.type = typings.reactNavigationStack.cardMod.Props
@@ -31,8 +29,6 @@ trait reactNavigationStackProps {
   def HeaderContainerProps: typings.reactNavigationStack.headerContainerMod.Props.type = typings.reactNavigationStack.headerContainerMod.Props
   type HeaderContainerProps = typings.reactNavigationStack.headerContainerMod.Props
   type HeaderSegmentProps = typings.reactNavigationStack.headerSegmentMod.Props
-  @scala.inline
-  def HeaderTitleProps: typings.reactNavigationStack.headerTitleMod.Props.type = typings.reactNavigationStack.headerTitleMod.Props
   type HeaderTitleProps = typings.reactNavigationStack.headerTitleMod.Props
   @scala.inline
   def KeyboardManagerProps: typings.reactNavigationStack.keyboardManagerMod.Props.type = typings.reactNavigationStack.keyboardManagerMod.Props
@@ -40,9 +36,6 @@ trait reactNavigationStackProps {
   @scala.inline
   def MaskedViewProps: typings.reactNavigationStack.maskedViewMod.Props.type = typings.reactNavigationStack.maskedViewMod.Props
   type MaskedViewProps = typings.reactNavigationStack.maskedViewMod.Props
-  @scala.inline
-  def MaskedViewDotnativeProps: typings.reactNavigationStack.maskedViewNativeMod.Props.type = typings.reactNavigationStack.maskedViewNativeMod.Props
-  type MaskedViewDotnativeProps = typings.reactNavigationStack.maskedViewNativeMod.Props
   @scala.inline
   def SafeAreaProviderCompatProps: typings.reactNavigationStack.safeAreaProviderCompatMod.Props.type = typings.reactNavigationStack.safeAreaProviderCompatMod.Props
   type SafeAreaProviderCompatProps = typings.reactNavigationStack.safeAreaProviderCompatMod.Props

@@ -1,6 +1,6 @@
 package typings.tinajsTina.mod
 
-import typings.tinajsTina.PartialPageDefinitionsData
+import typings.tinajsTina.PartialPageDefinitionsAttached
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ class Page () extends Component
 @JSImport("@tinajs/tina", "Page")
 @js.native
 object Page extends js.Object {
-  def define(definitions: PartialPageDefinitionsData): Unit = js.native
-  def mixin(definitions: PartialPageDefinitionsData): Unit = js.native
+  def define(definitions: PartialPageDefinitionsAttached): Unit = js.native
+  def mixin(definitions: PartialPageDefinitionsAttached): Unit = js.native
 }
 

@@ -1,6 +1,5 @@
 package typings.fridaGum.Java
 
-import typings.fridaGum.WrapperAlloc
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,12 +13,12 @@ trait EnumerateClassLoadersCallbacks extends js.Object {
     * Called with a `java.lang.ClassLoader` wrapper for each class loader
     * found in the VM.
     */
-  def onMatch(loader: WrapperAlloc): Unit
+  def onMatch(loader: typings.fridaGum.Wrapper): Unit
 }
 
 object EnumerateClassLoadersCallbacks {
   @scala.inline
-  def apply(onComplete: () => Unit, onMatch: WrapperAlloc => Unit): EnumerateClassLoadersCallbacks = {
+  def apply(onComplete: () => Unit, onMatch: typings.fridaGum.Wrapper => Unit): EnumerateClassLoadersCallbacks = {
     val __obj = js.Dynamic.literal(onComplete = js.Any.fromFunction0(onComplete), onMatch = js.Any.fromFunction1(onMatch))
   
     __obj.asInstanceOf[EnumerateClassLoadersCallbacks]

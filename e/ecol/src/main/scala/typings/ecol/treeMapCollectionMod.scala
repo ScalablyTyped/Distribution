@@ -6,7 +6,7 @@ import typings.ecol.collectionEventMod.CollectionEvent
 import typings.ecol.collectionEventMod.CollectionEvent.Listener
 import typings.ecol.collectionEventMod.CollectionEvent.Type
 import typings.ecol.ieventdispatcherMod.IEventDispatcher
-import typings.tstl.IteratoranyanyanyanyEquals
+import typings.tstl.Iteratoranyanyanyany
 import typings.tstl.entryMod.Entry
 import typings.tstl.icontainerMod.IContainer
 import typings.tstl.iforwarditeratorMod.IForwardIterator
@@ -320,7 +320,7 @@ object treeMapCollectionMod extends js.Object {
             /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
             /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
             /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any, 
-            IteratoranyanyanyanyEquals, 
+            Iteratoranyanyanyany, 
             typings.tstl.mapElementListMod.MapElementList.ReverseIterator[
               /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
               /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
@@ -340,7 +340,7 @@ object treeMapCollectionMod extends js.Object {
             /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
             /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
             /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any, 
-            IteratoranyanyanyanyEquals, 
+            Iteratoranyanyanyany, 
             typings.tstl.mapElementListMod.MapElementList.ReverseIterator[
               /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
               /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 

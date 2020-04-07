@@ -10,6 +10,7 @@ import typings.mangopay2NodejsSdk.mod.bankAccount.DepositAccountType
 import typings.mangopay2NodejsSdk.mod.card.CardStatus
 import typings.mangopay2NodejsSdk.mod.card.CardValidity
 import typings.mangopay2NodejsSdk.mod.client.BusinessType
+import typings.mangopay2NodejsSdk.mod.client.PlatformType
 import typings.mangopay2NodejsSdk.mod.client.Sector
 import typings.mangopay2NodejsSdk.mod.dispute.DisputeReasonType
 import typings.mangopay2NodejsSdk.mod.dispute.DisputeStatus
@@ -24,6 +25,9 @@ import typings.mangopay2NodejsSdk.mod.kycDocument.KYCDocumentRefusedReasonType
 import typings.mangopay2NodejsSdk.mod.kycDocument.KycDocumentType
 import typings.mangopay2NodejsSdk.mod.mandate.MandateCultureCode
 import typings.mangopay2NodejsSdk.mod.mandate.MandateScheme
+import typings.mangopay2NodejsSdk.mod.mandate.MandateStatus
+import typings.mangopay2NodejsSdk.mod.payIn.PayInExecutionType
+import typings.mangopay2NodejsSdk.mod.payIn.PayInPaymentType
 import typings.mangopay2NodejsSdk.mod.refund.RefundReasonType
 import typings.mangopay2NodejsSdk.mod.report.Column
 import typings.mangopay2NodejsSdk.mod.transaction.TransactionNature
@@ -43,7 +47,7 @@ import scala.scalajs.js.annotation._
 
 object mangopay2NodejsSdkStrings {
   @js.native
-  sealed trait ACTIVE extends js.Object
+  sealed trait ACTIVE extends MandateStatus
   
   @js.native
   sealed trait AD extends CountryISO
@@ -163,7 +167,7 @@ object mangopay2NodejsSdkStrings {
   sealed trait BANKACCOUNT_INCORRECT extends RefundReasonType
   
   @js.native
-  sealed trait BANK_WIRE extends js.Object
+  sealed trait BANK_WIRE extends PayInPaymentType
   
   @js.native
   sealed trait BB extends CountryISO
@@ -302,7 +306,7 @@ object mangopay2NodejsSdkStrings {
   sealed trait CANCELED_REOCCURING_TRANSACTION extends DisputeReasonType
   
   @js.native
-  sealed trait CARD extends js.Object
+  sealed trait CARD extends PayInPaymentType
   
   @js.native
   sealed trait CB_VISA_MASTERCARD
@@ -377,6 +381,7 @@ object mangopay2NodejsSdkStrings {
        with DisputeStatus
        with DocumentStatus
        with typings.mangopay2NodejsSdk.mod.kycDocument.DocumentStatus
+       with MandateStatus
        with PreAuthorizationStatus
        with TransactionStatus
   
@@ -389,16 +394,16 @@ object mangopay2NodejsSdkStrings {
   sealed trait CROWDFUNDING extends BusinessType
   
   @js.native
-  sealed trait CROWDFUNDING_DONATION extends js.Object
+  sealed trait CROWDFUNDING_DONATION extends PlatformType
   
   @js.native
-  sealed trait CROWDFUNDING_EQUITY extends js.Object
+  sealed trait CROWDFUNDING_EQUITY extends PlatformType
   
   @js.native
-  sealed trait CROWDFUNDING_LOAN extends js.Object
+  sealed trait CROWDFUNDING_LOAN extends PlatformType
   
   @js.native
-  sealed trait CROWDFUNDING_REWARD extends js.Object
+  sealed trait CROWDFUNDING_REWARD extends PlatformType
   
   @js.native
   sealed trait CSV extends js.Object
@@ -489,10 +494,10 @@ object mangopay2NodejsSdkStrings {
     extends typings.mangopay2NodejsSdk.mod.card.CardType
   
   @js.native
-  sealed trait DIRECT extends js.Object
+  sealed trait DIRECT extends PayInExecutionType
   
   @js.native
-  sealed trait DIRECT_DEBIT extends js.Object
+  sealed trait DIRECT_DEBIT extends PayInPaymentType
   
   @js.native
   sealed trait DISABLED extends HookStatus
@@ -665,7 +670,7 @@ object mangopay2NodejsSdkStrings {
   sealed trait EXPIRED extends PaymentStatus
   
   @js.native
-  sealed trait EXTERNAL_INSTRUCTION extends js.Object
+  sealed trait EXTERNAL_INSTRUCTION extends PayInExecutionType
   
   @js.native
   sealed trait Email
@@ -683,7 +688,8 @@ object mangopay2NodejsSdkStrings {
   
   @js.native
   sealed trait FAILED
-    extends PreAuthorizationStatus
+    extends MandateStatus
+       with PreAuthorizationStatus
        with TransactionStatus
   
   @js.native
@@ -1171,7 +1177,9 @@ object mangopay2NodejsSdkStrings {
   sealed trait MANDATE_SUBMITTED extends EventType
   
   @js.native
-  sealed trait MARKETPLACE extends BusinessType
+  sealed trait MARKETPLACE
+    extends BusinessType
+       with PlatformType
   
   @js.native
   sealed trait MASTERPASS
@@ -1370,7 +1378,7 @@ object mangopay2NodejsSdkStrings {
   sealed trait Nature extends Column
   
   @js.native
-  sealed trait NotSpecified extends js.Object
+  sealed trait NotSpecified extends PlatformType
   
   @js.native
   sealed trait OM extends CountryISO
@@ -1388,6 +1396,7 @@ object mangopay2NodejsSdkStrings {
        with BusinessType
        with DisputeDocumentType
        with DisputeReasonType
+       with PlatformType
        with RefundReasonType
        with RefusedReasonType
   
@@ -1399,7 +1408,7 @@ object mangopay2NodejsSdkStrings {
     extends typings.mangopay2NodejsSdk.mod.card.CardType
   
   @js.native
-  sealed trait P2P_PAYMENT extends js.Object
+  sealed trait P2P_PAYMENT extends PlatformType
   
   @js.native
   sealed trait PA extends CountryISO
@@ -1463,7 +1472,7 @@ object mangopay2NodejsSdkStrings {
   sealed trait PAYOUT_REFUND_SUCCEEDED extends EventType
   
   @js.native
-  sealed trait PAYPAL extends js.Object
+  sealed trait PAYPAL extends PayInPaymentType
   
   @js.native
   sealed trait PE extends CountryISO
@@ -1531,7 +1540,7 @@ object mangopay2NodejsSdkStrings {
   sealed trait PREAUTHORIZATION_PAYMENT_WAITING extends EventType
   
   @js.native
-  sealed trait PREAUTHORIZED extends js.Object
+  sealed trait PREAUTHORIZED extends PayInPaymentType
   
   @js.native
   sealed trait PRODUCT_NOT_PROVIDED extends DisputeReasonType
@@ -1769,7 +1778,9 @@ object mangopay2NodejsSdkStrings {
   sealed trait STORES_FASHION_ACCESSORIES_OBJECTS extends Sector
   
   @js.native
-  sealed trait SUBMITTED extends DisputeStatus
+  sealed trait SUBMITTED
+    extends DisputeStatus
+       with MandateStatus
   
   @js.native
   sealed trait SUCCEEDED
@@ -2042,7 +2053,7 @@ object mangopay2NodejsSdkStrings {
   sealed trait WAITING extends PaymentStatus
   
   @js.native
-  sealed trait WEB extends js.Object
+  sealed trait WEB extends PayInExecutionType
   
   @js.native
   sealed trait WF extends CountryISO

@@ -19,22 +19,23 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/* Inlined {  AUTO  :'auto',   AUTO_END  :'auto-end',   AUTO_START  :'auto-start',   BOTTOM  :'bottom',   BOTTOM_LEFT  :'bottom-left',   BOTTOM_RIGHT  :'bottom-right',   LEFT  :'left',   LEFT_BOTTOM  :'left-bottom',   LEFT_TOP  :'left-top',   RIGHT  :'right',   RIGHT_BOTTOM  :'right-bottom',   RIGHT_TOP  :'right-top',   TOP  :'top',   TOP_LEFT  :'top-left',   TOP_RIGHT  :'top-right'}[keyof {  AUTO  :'auto',   AUTO_END  :'auto-end',   AUTO_START  :'auto-start',   BOTTOM  :'bottom',   BOTTOM_LEFT  :'bottom-left',   BOTTOM_RIGHT  :'bottom-right',   LEFT  :'left',   LEFT_BOTTOM  :'left-bottom',   LEFT_TOP  :'left-top',   RIGHT  :'right',   RIGHT_BOTTOM  :'right-bottom',   RIGHT_TOP  :'right-top',   TOP  :'top',   TOP_LEFT  :'top-left',   TOP_RIGHT  :'top-right'}] */
 /* Rewritten from type alias, can be one of: 
-  - typings.blueprintjsCore.blueprintjsCoreStrings.`right-top`
+  - typings.blueprintjsCore.blueprintjsCoreStrings.left
   - typings.blueprintjsCore.blueprintjsCoreStrings.`bottom-left`
-  - typings.blueprintjsCore.blueprintjsCoreStrings.`left-top`
-  - typings.blueprintjsCore.blueprintjsCoreStrings.right
-  - typings.blueprintjsCore.blueprintjsCoreStrings.auto
   - typings.blueprintjsCore.blueprintjsCoreStrings.`left-bottom`
+  - typings.blueprintjsCore.blueprintjsCoreStrings.`bottom-right`
   - typings.blueprintjsCore.blueprintjsCoreStrings.`top-right`
   - typings.blueprintjsCore.blueprintjsCoreStrings.`top-left`
-  - typings.blueprintjsCore.blueprintjsCoreStrings.`auto-end`
-  - typings.blueprintjsCore.blueprintjsCoreStrings.left
-  - typings.blueprintjsCore.blueprintjsCoreStrings.bottom
-  - typings.blueprintjsCore.blueprintjsCoreStrings.`auto-start`
-  - typings.blueprintjsCore.blueprintjsCoreStrings.`bottom-right`
-  - typings.blueprintjsCore.blueprintjsCoreStrings.top
+  - typings.blueprintjsCore.blueprintjsCoreStrings.auto
+  - typings.blueprintjsCore.blueprintjsCoreStrings.`left-top`
   - typings.blueprintjsCore.blueprintjsCoreStrings.`right-bottom`
+  - typings.blueprintjsCore.blueprintjsCoreStrings.`auto-start`
+  - typings.blueprintjsCore.blueprintjsCoreStrings.right
+  - typings.blueprintjsCore.blueprintjsCoreStrings.top
+  - typings.blueprintjsCore.blueprintjsCoreStrings.`auto-end`
+  - typings.blueprintjsCore.blueprintjsCoreStrings.`right-top`
+  - typings.blueprintjsCore.blueprintjsCoreStrings.bottom
 */
 trait PopoverPosition extends js.Object
 

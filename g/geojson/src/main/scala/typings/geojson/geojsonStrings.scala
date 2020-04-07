@@ -1,36 +1,52 @@
 package typings.geojson
 
+import typings.geojson.mod.GeoJsonGeometryTypes
+import typings.geojson.mod.GeoJsonTypes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object geojsonStrings {
   @js.native
-  sealed trait Feature extends js.Object
+  sealed trait Feature extends GeoJsonTypes
   
   @js.native
-  sealed trait FeatureCollection extends js.Object
+  sealed trait FeatureCollection extends GeoJsonTypes
   
   @js.native
-  sealed trait GeometryCollection extends js.Object
+  sealed trait GeometryCollection
+    extends GeoJsonGeometryTypes
+       with GeoJsonTypes
   
   @js.native
-  sealed trait LineString extends js.Object
+  sealed trait LineString
+    extends GeoJsonGeometryTypes
+       with GeoJsonTypes
   
   @js.native
-  sealed trait MultiLineString extends js.Object
+  sealed trait MultiLineString
+    extends GeoJsonGeometryTypes
+       with GeoJsonTypes
   
   @js.native
-  sealed trait MultiPoint extends js.Object
+  sealed trait MultiPoint
+    extends GeoJsonGeometryTypes
+       with GeoJsonTypes
   
   @js.native
-  sealed trait MultiPolygon extends js.Object
+  sealed trait MultiPolygon
+    extends GeoJsonGeometryTypes
+       with GeoJsonTypes
   
   @js.native
-  sealed trait Point extends js.Object
+  sealed trait Point
+    extends GeoJsonGeometryTypes
+       with GeoJsonTypes
   
   @js.native
-  sealed trait Polygon extends js.Object
+  sealed trait Polygon
+    extends GeoJsonGeometryTypes
+       with GeoJsonTypes
   
   @scala.inline
   def Feature: Feature = "Feature".asInstanceOf[Feature]

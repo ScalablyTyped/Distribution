@@ -6,8 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait String_
-  extends Base[String, js.UndefOr[Container[String]]]
-     with Node {
+  extends Base[String, js.UndefOr[Container[String]]] {
   @JSName("type")
   var type_String_ : typings.postcssSelectorParser.postcssSelectorParserStrings.string
 }

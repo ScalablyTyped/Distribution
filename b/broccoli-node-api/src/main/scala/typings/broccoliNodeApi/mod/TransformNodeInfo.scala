@@ -6,9 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TransformNodeInfo
-  extends NodeInfoCommon[transform]
-     with NodeInfo {
+trait TransformNodeInfo extends NodeInfoCommon[transform] {
   /**
     Zero or more Broccoli nodes to be used as input to this node.
     */

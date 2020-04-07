@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "amap-js-api-overview"
-version := "1.4-dt-20191002Z-1cbc70"
+version := "1.4-dt-20191002Z-2ba6b9"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "amap-js-api" % "1.4-dt-20200129Z-e11e53",
+  "org.scalablytyped" %%% "amap-js-api" % "1.4-dt-20200129Z-97d197",
   "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")

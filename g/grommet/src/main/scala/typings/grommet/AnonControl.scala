@@ -1,8 +1,13 @@
 package typings.grommet
 
 import typings.grommet.baseMod.ExtendType
+import typings.grommet.grommetStrings.key
+import typings.grommet.grommetStrings.ref
 import typings.grommet.utilsMod.BackgroundType
+import typings.react.mod.ComponentProps
 import typings.react.mod.ReactComponentElement
+import typings.std.Exclude
+import typings.std.Pick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +20,7 @@ trait AnonControl extends js.Object {
   var icons: js.UndefOr[AnonDownMargin] = js.undefined
   var options: js.UndefOr[AnonContainerText] = js.undefined
   // https://github.com/DefinitelyTyped/DefinitelyTyped/issues/37506
-  var searchInput: js.UndefOr[ReactComponentElement[_, js.Object]] = js.undefined
+  var searchInput: js.UndefOr[ReactComponentElement[_, Pick[ComponentProps[_], Exclude[String, key | ref]]]] = js.undefined
   var step: js.UndefOr[Double] = js.undefined
 }
 
@@ -28,7 +33,7 @@ object AnonControl {
     extend: ExtendType = null,
     icons: AnonDownMargin = null,
     options: AnonContainerText = null,
-    searchInput: ReactComponentElement[_, js.Object] = null,
+    searchInput: ReactComponentElement[_, Pick[ComponentProps[_], Exclude[String, key | ref]]] = null,
     step: Int | Double = null
   ): AnonControl = {
     val __obj = js.Dynamic.literal()

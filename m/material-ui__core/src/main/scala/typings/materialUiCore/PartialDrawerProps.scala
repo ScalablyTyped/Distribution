@@ -103,7 +103,7 @@ import scala.scalajs.js.annotation._
 trait PartialDrawerProps extends js.Object {
   var BackdropComponent: js.UndefOr[ReactType[BackdropProps]] = js.native
   var BackdropProps: js.UndefOr[PartialBackdropProps] = js.native
-  var ModalProps: js.UndefOr[PartialModalPropsAbout] = js.native
+  var ModalProps: js.UndefOr[PartialModalProps] = js.native
   var PaperProps: js.UndefOr[PartialPaperProps] = js.native
   var SlideProps: js.UndefOr[PartialSlideProps] = js.native
   var about: js.UndefOr[String] = js.native
@@ -316,7 +316,7 @@ object PartialDrawerProps {
   def apply(
     BackdropComponent: ReactType[BackdropProps] = null,
     BackdropProps: PartialBackdropProps = null,
-    ModalProps: PartialModalPropsAbout = null,
+    ModalProps: PartialModalProps = null,
     PaperProps: PartialPaperProps = null,
     SlideProps: PartialSlideProps = null,
     about: String = null,

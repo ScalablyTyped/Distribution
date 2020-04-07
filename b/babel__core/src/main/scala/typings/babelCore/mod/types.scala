@@ -2171,10 +2171,10 @@ object types extends js.Object {
   ): /* is @babel/types.@babel/types.Node */ Boolean = js.native
   def is(`type`: String, n: Null, required: Partial[typings.babelTypes.mod.Node]): /* is @babel/types.@babel/types.Node */ Boolean = js.native
   def is(`type`: String, n: typings.babelTypes.mod.Node): /* is @babel/types.@babel/types.Node */ Boolean = js.native
-  def is[T /* <: /* import warning: importer.ImportType#apply Failed type conversion: @babel/types.@babel/types.Node['type'] */ js.Any */](`type`: T): /* is std.Extract<@babel/types.@babel/types.Node, @babel/types.AnonType<T>> */ Boolean = js.native
-  def is[T /* <: /* import warning: importer.ImportType#apply Failed type conversion: @babel/types.@babel/types.Node['type'] */ js.Any */](`type`: T, n: typings.babelTypes.mod.Node): /* is std.Extract<@babel/types.@babel/types.Node, @babel/types.AnonType<T>> */ Boolean = js.native
-  def is[T /* <: /* import warning: importer.ImportType#apply Failed type conversion: @babel/types.@babel/types.Node['type'] */ js.Any */, P /* <: Extract[typings.babelTypes.mod.Node, AnonType[T]] */](`type`: T, n: js.UndefOr[typings.babelTypes.mod.Node], required: Partial[P]): /* is P */ Boolean = js.native
-  def is[T /* <: /* import warning: importer.ImportType#apply Failed type conversion: @babel/types.@babel/types.Node['type'] */ js.Any */, P /* <: Extract[typings.babelTypes.mod.Node, AnonType[T]] */](`type`: T, n: Null, required: Partial[P]): /* is P */ Boolean = js.native
+  def is[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 237 */ js.Any */](`type`: T): /* is std.Extract<@babel/types.@babel/types.Node, @babel/types.AnonType<T>> */ Boolean = js.native
+  def is[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 237 */ js.Any */](`type`: T, n: typings.babelTypes.mod.Node): /* is std.Extract<@babel/types.@babel/types.Node, @babel/types.AnonType<T>> */ Boolean = js.native
+  def is[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 237 */ js.Any */, P /* <: Extract[typings.babelTypes.mod.Node, AnonType[T]] */](`type`: T, n: js.UndefOr[typings.babelTypes.mod.Node], required: Partial[P]): /* is P */ Boolean = js.native
+  def is[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 237 */ js.Any */, P /* <: Extract[typings.babelTypes.mod.Node, AnonType[T]] */](`type`: T, n: Null, required: Partial[P]): /* is P */ Boolean = js.native
   def isAnyTypeAnnotation(): /* is @babel/types.@babel/types.AnyTypeAnnotation */ Boolean = js.native
   def isAnyTypeAnnotation(node: js.UndefOr[scala.Nothing], opts: js.Object): /* is @babel/types.@babel/types.AnyTypeAnnotation */ Boolean = js.native
   def isAnyTypeAnnotation(node: js.Object): /* is @babel/types.@babel/types.AnyTypeAnnotation */ Boolean = js.native
@@ -3018,10 +3018,9 @@ object types extends js.Object {
   def isPlaceholder(node: js.Object): /* is @babel/types.@babel/types.Placeholder */ Boolean = js.native
   def isPlaceholder(node: js.Object, opts: js.Object): /* is @babel/types.@babel/types.Placeholder */ Boolean = js.native
   def isPlaceholder(node: Null, opts: js.Object): /* is @babel/types.@babel/types.Placeholder */ Boolean = js.native
-  @JSName("isPlaceholderType")
-  def isPlaceholderType_type(
-    placeholderType: /* import warning: importer.ImportType#apply Failed type conversion: @babel/types.@babel/types.Node['type'] */ js.Any,
-    targetType: /* import warning: importer.ImportType#apply Failed type conversion: @babel/types.@babel/types.Node['type'] */ js.Any
+  def isPlaceholderType(
+    placeholderType: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 237 */ js.Any,
+    targetType: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 237 */ js.Any
   ): Boolean = js.native
   def isPrivate(): /* is @babel/types.@babel/types.Private */ Boolean = js.native
   def isPrivate(node: js.UndefOr[scala.Nothing], opts: js.Object): /* is @babel/types.@babel/types.Private */ Boolean = js.native
@@ -3524,7 +3523,7 @@ object types extends js.Object {
   def isType(nodetype: js.UndefOr[scala.Nothing], targetType: String): Boolean = js.native
   def isType(nodetype: String, targetType: String): Boolean = js.native
   def isType(nodetype: Null, targetType: String): Boolean = js.native
-  def isType[T /* <: /* import warning: importer.ImportType#apply Failed type conversion: @babel/types.@babel/types.Node['type'] */ js.Any */](nodetype: String, targetType: T): /* is T */ Boolean = js.native
+  def isType[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 237 */ js.Any */](nodetype: String, targetType: T): /* is T */ Boolean = js.native
   def isTypeAlias(): /* is @babel/types.@babel/types.TypeAlias */ Boolean = js.native
   def isTypeAlias(node: js.UndefOr[scala.Nothing], opts: js.Object): /* is @babel/types.@babel/types.TypeAlias */ Boolean = js.native
   def isTypeAlias(node: js.Object): /* is @babel/types.@babel/types.TypeAlias */ Boolean = js.native

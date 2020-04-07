@@ -1,7 +1,5 @@
 package typings.plotlyJs
 
-import typings.plotlyJs.mod.Font
-import typings.plotlyJs.mod.RangeSelectorButton
 import typings.plotlyJs.plotlyJsStrings.auto
 import typings.plotlyJs.plotlyJsStrings.bottom
 import typings.plotlyJs.plotlyJsStrings.center
@@ -9,7 +7,6 @@ import typings.plotlyJs.plotlyJsStrings.left
 import typings.plotlyJs.plotlyJsStrings.middle
 import typings.plotlyJs.plotlyJsStrings.right
 import typings.plotlyJs.plotlyJsStrings.top
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,8 +17,8 @@ trait PartialRangeSelector extends js.Object {
   var bgcolor: js.UndefOr[String] = js.undefined
   var bordercolor: js.UndefOr[String] = js.undefined
   var borderwidth: js.UndefOr[Double] = js.undefined
-  var buttons: js.UndefOr[js.Array[Partial[RangeSelectorButton]]] = js.undefined
-  var font: js.UndefOr[Partial[Font]] = js.undefined
+  var buttons: js.UndefOr[js.Array[PartialRangeSelectorButto]] = js.undefined
+  var font: js.UndefOr[PartialFont] = js.undefined
   var visible: js.UndefOr[Boolean] = js.undefined
   var x: js.UndefOr[Double] = js.undefined
   var xanchor: js.UndefOr[auto | left | center | right] = js.undefined
@@ -36,8 +33,8 @@ object PartialRangeSelector {
     bgcolor: String = null,
     bordercolor: String = null,
     borderwidth: Int | Double = null,
-    buttons: js.Array[Partial[RangeSelectorButton]] = null,
-    font: Partial[Font] = null,
+    buttons: js.Array[PartialRangeSelectorButto] = null,
+    font: PartialFont = null,
     visible: js.UndefOr[Boolean] = js.undefined,
     x: Int | Double = null,
     xanchor: auto | left | center | right = null,

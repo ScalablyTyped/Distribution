@@ -16,5 +16,4 @@ package object mod {
     /* state */ S, 
     scala.Unit
   ]
-  type Visitor[S] = (typings.babelTraverse.mod.VisitNodeObject[S, typings.babelTraverse.mod.Node]) with typings.babelTraverse.babelTraverseStrings.Visitor with js.Any with typings.babelTypes.mod.Aliases
 }

@@ -3,7 +3,7 @@ package typings.webpack.mod.Stats
 import typings.std.Record
 import typings.webpack.AnonChildren
 import typings.webpack.AnonChunkNames
-import typings.webpack.ToJsonOutputnamestringAssetsByChunkName
+import typings.webpack.ToJsonOutputnamestring
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ trait ToJsonOutput extends js.Object {
   var assets: js.UndefOr[js.Array[AnonChunkNames]] = js.undefined
   var assetsByChunkName: js.UndefOr[Record[String, String | js.Array[String]]] = js.undefined
   var builtAt: js.UndefOr[Double] = js.undefined
-  var children: js.UndefOr[js.Array[ToJsonOutputnamestringAssetsByChunkName]] = js.undefined
+  var children: js.UndefOr[js.Array[ToJsonOutputnamestring]] = js.undefined
   var chunks: js.UndefOr[js.Array[AnonChildren]] = js.undefined
   var entrypoints: js.UndefOr[Record[String, ChunkGroup]] = js.undefined
   var env: js.UndefOr[Record[String, _]] = js.undefined
@@ -42,7 +42,7 @@ object ToJsonOutput {
     assets: js.Array[AnonChunkNames] = null,
     assetsByChunkName: Record[String, String | js.Array[String]] = null,
     builtAt: Int | Double = null,
-    children: js.Array[ToJsonOutputnamestringAssetsByChunkName] = null,
+    children: js.Array[ToJsonOutputnamestring] = null,
     chunks: js.Array[AnonChildren] = null,
     entrypoints: Record[String, ChunkGroup] = null,
     env: Record[String, _] = null,

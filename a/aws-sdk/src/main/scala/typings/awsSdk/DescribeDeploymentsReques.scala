@@ -26,3 +26,20 @@ trait DescribeDeploymentsReques extends js.Object {
   var StackId: js.UndefOr[String] = js.native
 }
 
+object DescribeDeploymentsReques {
+  @scala.inline
+  def apply(
+    $waiter: WaiterConfiguration = null,
+    AppId: String = null,
+    DeploymentIds: Strings = null,
+    StackId: String = null
+  ): DescribeDeploymentsReques = {
+    val __obj = js.Dynamic.literal()
+    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
+    if (AppId != null) __obj.updateDynamic("AppId")(AppId.asInstanceOf[js.Any])
+    if (DeploymentIds != null) __obj.updateDynamic("DeploymentIds")(DeploymentIds.asInstanceOf[js.Any])
+    if (StackId != null) __obj.updateDynamic("StackId")(StackId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DescribeDeploymentsReques]
+  }
+}
+

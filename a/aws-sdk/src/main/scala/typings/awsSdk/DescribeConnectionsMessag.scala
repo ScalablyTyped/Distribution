@@ -27,3 +27,20 @@ trait DescribeConnectionsMessag extends js.Object {
   var MaxRecords: js.UndefOr[IntegerOptional] = js.native
 }
 
+object DescribeConnectionsMessag {
+  @scala.inline
+  def apply(
+    $waiter: WaiterConfiguration = null,
+    Filters: FilterList = null,
+    Marker: String = null,
+    MaxRecords: Int | Double = null
+  ): DescribeConnectionsMessag = {
+    val __obj = js.Dynamic.literal()
+    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
+    if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
+    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
+    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DescribeConnectionsMessag]
+  }
+}
+

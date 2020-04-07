@@ -21,3 +21,12 @@ trait GetCertificateRequestwait extends js.Object {
   var CertificateAuthorityArn: Arn = js.native
 }
 
+object GetCertificateRequestwait {
+  @scala.inline
+  def apply(CertificateArn: Arn, CertificateAuthorityArn: Arn, $waiter: WaiterConfiguration = null): GetCertificateRequestwait = {
+    val __obj = js.Dynamic.literal(CertificateArn = CertificateArn.asInstanceOf[js.Any], CertificateAuthorityArn = CertificateAuthorityArn.asInstanceOf[js.Any])
+    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GetCertificateRequestwait]
+  }
+}
+

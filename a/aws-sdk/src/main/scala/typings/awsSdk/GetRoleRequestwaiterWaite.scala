@@ -17,3 +17,12 @@ trait GetRoleRequestwaiterWaite extends js.Object {
   var RoleName: roleNameType = js.native
 }
 
+object GetRoleRequestwaiterWaite {
+  @scala.inline
+  def apply(RoleName: roleNameType, $waiter: WaiterConfiguration = null): GetRoleRequestwaiterWaite = {
+    val __obj = js.Dynamic.literal(RoleName = RoleName.asInstanceOf[js.Any])
+    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GetRoleRequestwaiterWaite]
+  }
+}
+

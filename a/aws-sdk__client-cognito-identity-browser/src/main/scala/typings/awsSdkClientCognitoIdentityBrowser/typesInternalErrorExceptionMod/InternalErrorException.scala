@@ -19,11 +19,11 @@ import typings.awsSdkClientCognitoIdentityBrowser.unlinkDeveloperIdentityExcepti
 import typings.awsSdkClientCognitoIdentityBrowser.unlinkIdentityExceptionsUnionMod.UnlinkIdentityExceptionsUnion
 import typings.awsSdkClientCognitoIdentityBrowser.updateIdentityPoolExceptionsUnionMod.UpdateIdentityPoolExceptionsUnion
 import typings.awsSdkTypes.exceptionMod.ServiceException
+import typings.awsSdkTypes.responseMod.ResponseMetadata
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait InternalErrorException
   extends ServiceException[InternalErrorExceptionDetails]
      with CreateIdentityPoolExceptionsUnion
@@ -45,6 +45,21 @@ trait InternalErrorException
      with UnlinkIdentityExceptionsUnion
      with UpdateIdentityPoolExceptionsUnion {
   @JSName("name")
-  var name_InternalErrorException: typings.awsSdkClientCognitoIdentityBrowser.awsSdkClientCognitoIdentityBrowserStrings.InternalErrorException = js.native
+  var name_InternalErrorException: typings.awsSdkClientCognitoIdentityBrowser.awsSdkClientCognitoIdentityBrowserStrings.InternalErrorException
+}
+
+object InternalErrorException {
+  @scala.inline
+  def apply(
+    $metadata: ResponseMetadata,
+    details: InternalErrorExceptionDetails,
+    message: String,
+    name: typings.awsSdkClientCognitoIdentityBrowser.awsSdkClientCognitoIdentityBrowserStrings.InternalErrorException,
+    stack: String = null
+  ): InternalErrorException = {
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
+    __obj.asInstanceOf[InternalErrorException]
+  }
 }
 

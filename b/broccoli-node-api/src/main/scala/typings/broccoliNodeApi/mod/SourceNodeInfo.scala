@@ -5,9 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SourceNodeInfo
-  extends NodeInfoCommon[source]
-     with NodeInfo {
+trait SourceNodeInfo extends NodeInfoCommon[source] {
   /**
     A path to an existing directory on disk, relative to the current working directory.
     */

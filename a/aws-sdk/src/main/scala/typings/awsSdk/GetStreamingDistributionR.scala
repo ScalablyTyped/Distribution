@@ -16,3 +16,12 @@ trait GetStreamingDistributionR extends js.Object {
   var Id: String = js.native
 }
 
+object GetStreamingDistributionR {
+  @scala.inline
+  def apply(Id: String, $waiter: WaiterConfiguration = null): GetStreamingDistributionR = {
+    val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
+    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GetStreamingDistributionR]
+  }
+}
+

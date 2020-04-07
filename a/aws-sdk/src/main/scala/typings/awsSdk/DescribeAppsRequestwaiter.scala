@@ -22,3 +22,14 @@ trait DescribeAppsRequestwaiter extends js.Object {
   var StackId: js.UndefOr[String] = js.native
 }
 
+object DescribeAppsRequestwaiter {
+  @scala.inline
+  def apply($waiter: WaiterConfiguration = null, AppIds: Strings = null, StackId: String = null): DescribeAppsRequestwaiter = {
+    val __obj = js.Dynamic.literal()
+    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
+    if (AppIds != null) __obj.updateDynamic("AppIds")(AppIds.asInstanceOf[js.Any])
+    if (StackId != null) __obj.updateDynamic("StackId")(StackId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DescribeAppsRequestwaiter]
+  }
+}
+

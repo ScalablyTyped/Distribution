@@ -12,13 +12,7 @@ import typings.mongoose.mod.Connection_
 import typings.mongoose.mod.Document
 import typings.mongoose.mod.Model_
 import typings.mongoose.mod.Schema
-import typings.mongoose.mongooseStrings.autoCreate
-import typings.mongoose.mongooseStrings.autoIndex
-import typings.mongoose.mongooseStrings.bufferCommands
-import typings.mongoose.mongooseStrings.useCreateIndex
-import typings.mongoose.mongooseStrings.useFindAndModify
 import typings.node.eventsMod.EventEmitterOptions
-import typings.std.Pick
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -32,10 +26,7 @@ trait ConnectionthenPromiseConn extends js.Object {
   /** A hash of the collections associated with this connection */
   var collections: StringDictionary[Collection] = js.native
   /** A hash of the global options that are associated with this connection */
-  var config: Pick[
-    ConnectionOptions, 
-    autoIndex | autoCreate | useCreateIndex | useFindAndModify | bufferCommands
-  ] = js.native
+  var config: PickConnectionOptionsauto = js.native
   /** The mongodb.Db instance, set when the connection is opened */
   var db: Db = js.native
   /** Connected host */

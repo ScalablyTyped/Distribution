@@ -27,3 +27,20 @@ trait DescribeCustomerGatewaysR extends js.Object {
   var Filters: js.UndefOr[FilterList] = js.native
 }
 
+object DescribeCustomerGatewaysR {
+  @scala.inline
+  def apply(
+    $waiter: WaiterConfiguration = null,
+    CustomerGatewayIds: CustomerGatewayIdStringList = null,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    Filters: FilterList = null
+  ): DescribeCustomerGatewaysR = {
+    val __obj = js.Dynamic.literal()
+    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
+    if (CustomerGatewayIds != null) __obj.updateDynamic("CustomerGatewayIds")(CustomerGatewayIds.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DescribeCustomerGatewaysR]
+  }
+}
+

@@ -1,8 +1,17 @@
 package typings.awsSdk
 
 import typings.awsSdk.s3Mod.BucketName
+import typings.awsSdk.s3Mod.IfMatch
+import typings.awsSdk.s3Mod.IfModifiedSince
+import typings.awsSdk.s3Mod.IfNoneMatch
+import typings.awsSdk.s3Mod.IfUnmodifiedSince
 import typings.awsSdk.s3Mod.ObjectKey
 import typings.awsSdk.s3Mod.ObjectVersionId
+import typings.awsSdk.s3Mod.Range
+import typings.awsSdk.s3Mod.RequestPayer
+import typings.awsSdk.s3Mod.SSECustomerAlgorithm
+import typings.awsSdk.s3Mod.SSECustomerKey
+import typings.awsSdk.s3Mod.SSECustomerKeyMD5
 import typings.awsSdk.serviceMod.WaiterConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -62,5 +71,40 @@ trait HeadObjectRequestwaiterWa extends js.Object {
     * VersionId used to reference a specific version of the object.
     */
   var VersionId: js.UndefOr[ObjectVersionId] = js.native
+}
+
+object HeadObjectRequestwaiterWa {
+  @scala.inline
+  def apply(
+    Bucket: BucketName,
+    Key: ObjectKey,
+    $waiter: WaiterConfiguration = null,
+    IfMatch: IfMatch = null,
+    IfModifiedSince: IfModifiedSince = null,
+    IfNoneMatch: IfNoneMatch = null,
+    IfUnmodifiedSince: IfUnmodifiedSince = null,
+    PartNumber: Int | Double = null,
+    Range: Range = null,
+    RequestPayer: RequestPayer = null,
+    SSECustomerAlgorithm: SSECustomerAlgorithm = null,
+    SSECustomerKey: SSECustomerKey = null,
+    SSECustomerKeyMD5: SSECustomerKeyMD5 = null,
+    VersionId: ObjectVersionId = null
+  ): HeadObjectRequestwaiterWa = {
+    val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Key = Key.asInstanceOf[js.Any])
+    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
+    if (IfMatch != null) __obj.updateDynamic("IfMatch")(IfMatch.asInstanceOf[js.Any])
+    if (IfModifiedSince != null) __obj.updateDynamic("IfModifiedSince")(IfModifiedSince.asInstanceOf[js.Any])
+    if (IfNoneMatch != null) __obj.updateDynamic("IfNoneMatch")(IfNoneMatch.asInstanceOf[js.Any])
+    if (IfUnmodifiedSince != null) __obj.updateDynamic("IfUnmodifiedSince")(IfUnmodifiedSince.asInstanceOf[js.Any])
+    if (PartNumber != null) __obj.updateDynamic("PartNumber")(PartNumber.asInstanceOf[js.Any])
+    if (Range != null) __obj.updateDynamic("Range")(Range.asInstanceOf[js.Any])
+    if (RequestPayer != null) __obj.updateDynamic("RequestPayer")(RequestPayer.asInstanceOf[js.Any])
+    if (SSECustomerAlgorithm != null) __obj.updateDynamic("SSECustomerAlgorithm")(SSECustomerAlgorithm.asInstanceOf[js.Any])
+    if (SSECustomerKey != null) __obj.updateDynamic("SSECustomerKey")(SSECustomerKey.asInstanceOf[js.Any])
+    if (SSECustomerKeyMD5 != null) __obj.updateDynamic("SSECustomerKeyMD5")(SSECustomerKeyMD5.asInstanceOf[js.Any])
+    if (VersionId != null) __obj.updateDynamic("VersionId")(VersionId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[HeadObjectRequestwaiterWa]
+  }
 }
 

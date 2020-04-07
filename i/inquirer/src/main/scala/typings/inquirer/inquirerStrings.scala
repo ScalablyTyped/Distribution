@@ -57,6 +57,9 @@ object inquirerStrings {
   sealed trait separator extends js.Object
   
   @js.native
+  sealed trait `type` extends js.Object
+  
+  @js.native
   sealed trait up extends js.Object
   
   @scala.inline
@@ -93,6 +96,8 @@ object inquirerStrings {
   def rawlist: rawlist = "rawlist".asInstanceOf[rawlist]
   @scala.inline
   def separator: separator = "separator".asInstanceOf[separator]
+  @scala.inline
+  def `type`: `type` = "type".asInstanceOf[`type`]
   @scala.inline
   def up: up = "up".asInstanceOf[up]
 }

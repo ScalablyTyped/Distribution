@@ -1,6 +1,6 @@
 package typings.algoliaClientSearch.mod
 
-import typings.algoliaClientSearch.ReadonlyWaitablePromiseReFinally
+import typings.algoliaClientSearch.ReadonlyWaitablePromiseRe
 import typings.algoliaTransporter.mod.RequestOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,7 +12,7 @@ object restoreApiKey extends js.Object {
   def apply(base: SearchClient): js.Function2[
     /* apiKey */ String, 
     /* requestOptions */ js.UndefOr[RequestOptions], 
-    ReadonlyWaitablePromiseReFinally
+    ReadonlyWaitablePromiseRe
   ] = js.native
 }
 

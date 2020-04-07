@@ -11,13 +11,13 @@ trait BaseNode extends js.Object {
   var loc: SourceLocation | Null
   var start: Double | Null
   var trailingComments: js.Array[Comment] | Null
-  var `type`: /* import warning: importer.ImportType#apply Failed type conversion: @babel/types.@babel/types.Node['type'] */ js.Any
+  var `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 237 */ js.Any
 }
 
 object BaseNode {
   @scala.inline
   def apply(
-    `type`: /* import warning: importer.ImportType#apply Failed type conversion: @babel/types.@babel/types.Node['type'] */ js.Any,
+    `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 237 */ js.Any,
     end: Int | Double = null,
     innerComments: js.Array[Comment] = null,
     leadingComments: js.Array[Comment] = null,

@@ -78,13 +78,7 @@ object officeUiFabricReactStrings {
   sealed trait IBaseCardProps extends js.Object
   
   @js.native
-  sealed trait PartialIStackProps extends js.Object
-  
-  @js.native
   sealed trait References extends PageKind
-  
-  @js.native
-  sealed trait WeakValidationMapIStackPr extends js.Object
   
   @js.native
   sealed trait _empty extends js.Object
@@ -1359,11 +1353,7 @@ object officeUiFabricReactStrings {
   @scala.inline
   def IBaseCardProps: IBaseCardProps = "IBaseCardProps".asInstanceOf[IBaseCardProps]
   @scala.inline
-  def PartialIStackProps: PartialIStackProps = "PartialIStackProps".asInstanceOf[PartialIStackProps]
-  @scala.inline
   def References: References = "References".asInstanceOf[References]
-  @scala.inline
-  def WeakValidationMapIStackPr: WeakValidationMapIStackPr = "WeakValidationMapIStackPr".asInstanceOf[WeakValidationMapIStackPr]
   @scala.inline
   def _empty: _empty = "".asInstanceOf[_empty]
   @scala.inline

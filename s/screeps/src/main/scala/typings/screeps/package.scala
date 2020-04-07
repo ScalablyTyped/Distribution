@@ -176,6 +176,7 @@ package object screeps {
   type PWR_REGEN_MINERAL = typings.screeps.screepsNumbers.`14`
   type PWR_REGEN_SOURCE = typings.screeps.screepsNumbers.`13`
   type PWR_SHIELD = typings.screeps.screepsNumbers.`12`
+  /* Inlined screeps.POWER_CLASS['OPERATOR'] */
   type PowerClassConstant = typings.screeps.screepsStrings.operator
   type PowerConstant = typings.screeps.PWR_GENERATE_OPS | typings.screeps.PWR_OPERATE_SPAWN | typings.screeps.PWR_OPERATE_TOWER | typings.screeps.PWR_OPERATE_STORAGE | typings.screeps.PWR_OPERATE_LAB | typings.screeps.PWR_OPERATE_EXTENSION | typings.screeps.PWR_OPERATE_OBSERVER | typings.screeps.PWR_OPERATE_TERMINAL | typings.screeps.PWR_DISRUPT_SPAWN | typings.screeps.PWR_DISRUPT_TOWER | typings.screeps.PWR_DISRUPT_SOURCE | typings.screeps.PWR_SHIELD | typings.screeps.PWR_REGEN_SOURCE | typings.screeps.PWR_REGEN_MINERAL | typings.screeps.PWR_DISRUPT_TERMINAL | typings.screeps.PWR_OPERATE_POWER | typings.screeps.PWR_FORTIFY | typings.screeps.PWR_OPERATE_CONTROLLER
   /**

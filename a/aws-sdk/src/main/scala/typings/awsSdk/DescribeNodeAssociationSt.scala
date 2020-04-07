@@ -1,5 +1,7 @@
 package typings.awsSdk
 
+import typings.awsSdk.opsworkscmMod.NodeAssociationStatusToken
+import typings.awsSdk.opsworkscmMod.ServerName
 import typings.awsSdk.serviceMod.WaiterConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,5 +20,18 @@ trait DescribeNodeAssociationSt extends js.Object {
     * The name of the server from which to disassociate the node. 
     */
   var ServerName: typings.awsSdk.opsworkscmMod.ServerName = js.native
+}
+
+object DescribeNodeAssociationSt {
+  @scala.inline
+  def apply(
+    NodeAssociationStatusToken: NodeAssociationStatusToken,
+    ServerName: ServerName,
+    $waiter: WaiterConfiguration = null
+  ): DescribeNodeAssociationSt = {
+    val __obj = js.Dynamic.literal(NodeAssociationStatusToken = NodeAssociationStatusToken.asInstanceOf[js.Any], ServerName = ServerName.asInstanceOf[js.Any])
+    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DescribeNodeAssociationSt]
+  }
 }
 

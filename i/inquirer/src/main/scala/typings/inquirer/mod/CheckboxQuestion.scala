@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation._
   * @template T
   * The type of the answers.
   */
-trait CheckboxQuestion[T /* <: Answers */]
-  extends ListQuestionOptionsBase[T, CheckboxChoiceMap[T]]
-     with DistinctQuestion[T] {
+trait CheckboxQuestion[T /* <: Answers */] extends ListQuestionOptionsBase[T, CheckboxChoiceMap[T]] {
   /**
     * @inheritdoc
     */

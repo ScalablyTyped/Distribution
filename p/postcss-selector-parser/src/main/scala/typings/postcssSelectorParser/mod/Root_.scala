@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Root_
-  extends Container[js.UndefOr[scala.Nothing]]
-     with Node {
+  extends Container[js.UndefOr[scala.Nothing]] {
   @JSName("type")
   var type_Root_ : typings.postcssSelectorParser.postcssSelectorParserStrings.root = js.native
   /**

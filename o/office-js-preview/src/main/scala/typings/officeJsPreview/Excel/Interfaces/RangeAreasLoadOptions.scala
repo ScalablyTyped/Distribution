@@ -11,69 +11,68 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.9]
   */
-@js.native
 trait RangeAreasLoadOptions extends js.Object {
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
     */
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.native
+  var $all: js.UndefOr[Boolean] = js.undefined
   /**
     *
     * Returns the RageAreas reference in A1-style. Address value will contain the worksheet name for each rectangular block of cells (e.g. "Sheet1!A1:B4, Sheet1!D1:D4"). Read-only.
     *
     * [Api set: ExcelApi 1.9]
     */
-  var address: js.UndefOr[Boolean] = js.native
+  var address: js.UndefOr[Boolean] = js.undefined
   /**
     *
     * Returns the RageAreas reference in the user locale. Read-only.
     *
     * [Api set: ExcelApi 1.9]
     */
-  var addressLocal: js.UndefOr[Boolean] = js.native
+  var addressLocal: js.UndefOr[Boolean] = js.undefined
   /**
     *
     * Returns the number of rectangular ranges that comprise this RangeAreas object.
     *
     * [Api set: ExcelApi 1.9]
     */
-  var areaCount: js.UndefOr[Boolean] = js.native
+  var areaCount: js.UndefOr[Boolean] = js.undefined
   /**
     *
     * Returns the number of cells in the RangeAreas object, summing up the cell counts of all of the individual rectangular ranges. Returns -1 if the cell count exceeds 2^31-1 (2,147,483,647). Read-only.
     *
     * [Api set: ExcelApi 1.9]
     */
-  var cellCount: js.UndefOr[Boolean] = js.native
+  var cellCount: js.UndefOr[Boolean] = js.undefined
   /**
     *
     * Returns a dataValidation object for all ranges in the RangeAreas.
     *
     * [Api set: ExcelApi 1.9]
     */
-  var dataValidation: js.UndefOr[DataValidationLoadOptions] = js.native
+  var dataValidation: js.UndefOr[DataValidationLoadOptions] = js.undefined
   /**
     *
     * Returns a rangeFormat object, encapsulating the the font, fill, borders, alignment, and other properties for all ranges in the RangeAreas object.
     *
     * [Api set: ExcelApi 1.9]
     */
-  var format: js.UndefOr[RangeFormatLoadOptions] = js.native
+  var format: js.UndefOr[RangeFormatLoadOptions] = js.undefined
   /**
     *
     * Indicates whether all the ranges on this RangeAreas object represent entire columns (e.g., "A:C, Q:Z"). Read-only.
     *
     * [Api set: ExcelApi 1.9]
     */
-  var isEntireColumn: js.UndefOr[Boolean] = js.native
+  var isEntireColumn: js.UndefOr[Boolean] = js.undefined
   /**
     *
     * Indicates whether all the ranges on this RangeAreas object represent entire rows (e.g., "1:3, 5:7"). Read-only.
     *
     * [Api set: ExcelApi 1.9]
     */
-  var isEntireRow: js.UndefOr[Boolean] = js.native
+  var isEntireRow: js.UndefOr[Boolean] = js.undefined
   /**
     *
     * Represents the style for all ranges in this RangeAreas object.
@@ -82,13 +81,44 @@ trait RangeAreasLoadOptions extends js.Object {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var style: js.UndefOr[Boolean] = js.native
+  var style: js.UndefOr[Boolean] = js.undefined
   /**
     *
     * Returns the worksheet for the current RangeAreas.
     *
     * [Api set: ExcelApi 1.9]
     */
-  var worksheet: js.UndefOr[WorksheetLoadOptions] = js.native
+  var worksheet: js.UndefOr[WorksheetLoadOptions] = js.undefined
+}
+
+object RangeAreasLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[Boolean] = js.undefined,
+    address: js.UndefOr[Boolean] = js.undefined,
+    addressLocal: js.UndefOr[Boolean] = js.undefined,
+    areaCount: js.UndefOr[Boolean] = js.undefined,
+    cellCount: js.UndefOr[Boolean] = js.undefined,
+    dataValidation: DataValidationLoadOptions = null,
+    format: RangeFormatLoadOptions = null,
+    isEntireColumn: js.UndefOr[Boolean] = js.undefined,
+    isEntireRow: js.UndefOr[Boolean] = js.undefined,
+    style: js.UndefOr[Boolean] = js.undefined,
+    worksheet: WorksheetLoadOptions = null
+  ): RangeAreasLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (!js.isUndefined(address)) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
+    if (!js.isUndefined(addressLocal)) __obj.updateDynamic("addressLocal")(addressLocal.asInstanceOf[js.Any])
+    if (!js.isUndefined(areaCount)) __obj.updateDynamic("areaCount")(areaCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(cellCount)) __obj.updateDynamic("cellCount")(cellCount.asInstanceOf[js.Any])
+    if (dataValidation != null) __obj.updateDynamic("dataValidation")(dataValidation.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (!js.isUndefined(isEntireColumn)) __obj.updateDynamic("isEntireColumn")(isEntireColumn.asInstanceOf[js.Any])
+    if (!js.isUndefined(isEntireRow)) __obj.updateDynamic("isEntireRow")(isEntireRow.asInstanceOf[js.Any])
+    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (worksheet != null) __obj.updateDynamic("worksheet")(worksheet.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RangeAreasLoadOptions]
+  }
 }
 

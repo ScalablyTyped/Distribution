@@ -228,6 +228,9 @@ object minappEnvStrings {
   sealed trait button extends js.Object
   
   @js.native
+  sealed trait byteLength extends ArrayBufferLike
+  
+  @js.native
   sealed trait camcorder extends js.Object
   
   @js.native
@@ -391,6 +394,9 @@ object minappEnvStrings {
   
   @js.native
   sealed trait sha1 extends js.Object
+  
+  @js.native
+  sealed trait slice extends ArrayBufferLike
   
   @js.native
   sealed trait speech extends js.Object
@@ -604,6 +610,8 @@ object minappEnvStrings {
   @scala.inline
   def button: button = "button".asInstanceOf[button]
   @scala.inline
+  def byteLength: byteLength = "byteLength".asInstanceOf[byteLength]
+  @scala.inline
   def camcorder: camcorder = "camcorder".asInstanceOf[camcorder]
   @scala.inline
   def camera: camera = "camera".asInstanceOf[camera]
@@ -713,6 +721,8 @@ object minappEnvStrings {
   def `right-mirrored`: `right-mirrored` = "right-mirrored".asInstanceOf[`right-mirrored`]
   @scala.inline
   def sha1: sha1 = "sha1".asInstanceOf[sha1]
+  @scala.inline
+  def slice: slice = "slice".asInstanceOf[slice]
   @scala.inline
   def speech: speech = "speech".asInstanceOf[speech]
   @scala.inline

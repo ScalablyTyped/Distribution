@@ -1,6 +1,6 @@
 package typings.algoliaClientSearch.mod
 
-import typings.algoliaClientSearch.ReadonlyWaitablePromiseDeFinally
+import typings.algoliaClientSearch.ReadonlyWaitablePromiseDe
 import typings.algoliaTransporter.mod.RequestOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 object clearRules extends js.Object {
   def apply(base: SearchIndex): js.Function1[
     /* requestOptions */ js.UndefOr[RequestOptions with ClearRulesOptions], 
-    ReadonlyWaitablePromiseDeFinally
+    ReadonlyWaitablePromiseDe
   ] = js.native
 }
 

@@ -1,6 +1,6 @@
 package typings.algoliaClientSearch.mod
 
-import typings.algoliaClientSearch.ReadonlyWaitablePromiseChFinally
+import typings.algoliaClientSearch.ReadonlyWaitablePromiseCh
 import typings.algoliaTransporter.mod.RequestOptions
 import typings.std.Record
 import scala.scalajs.js
@@ -13,7 +13,7 @@ object saveObjects extends js.Object {
   def apply(base: SearchIndex): js.Function2[
     /* objects */ js.Array[Record[String, _]], 
     /* requestOptions */ js.UndefOr[RequestOptions with ChunkOptions with SaveObjectsOptions], 
-    ReadonlyWaitablePromiseChFinally
+    ReadonlyWaitablePromiseCh
   ] = js.native
 }
 

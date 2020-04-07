@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "keystonejs__apollo-helpers"
-version := "5.0-dt-20191115Z-4efe90"
+version := "5.0-dt-20191115Z-877cb8"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,9 +10,9 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "2.6.9-2d2033",
   "org.scalablytyped" %%% "express" % "4.17-dt-20200303Z-1c1293",
   "org.scalablytyped" %%% "express-serve-static-core" % "4.17-dt-20200225Z-dbe850",
-  "org.scalablytyped" %%% "graphql" % "14.6.0-603e55",
+  "org.scalablytyped" %%% "graphql" % "14.6.0-f78e99",
   "org.scalablytyped" %%% "keystonejs__fields" % "5.1-dt-20191115Z-c8d778",
-  "org.scalablytyped" %%% "keystonejs__keystone" % "5.2-dt-20191231Z-fff7e2",
+  "org.scalablytyped" %%% "keystonejs__keystone" % "5.2-dt-20191231Z-d6c1c8",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20191126Z-3b5426",
   "org.scalablytyped" %%% "node" % "13.9-dt-20200318Z-96a265",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-ece683",

@@ -17,3 +17,12 @@ trait DescribeSigningJobRequest extends js.Object {
   var jobId: JobId = js.native
 }
 
+object DescribeSigningJobRequest {
+  @scala.inline
+  def apply(jobId: JobId, $waiter: WaiterConfiguration = null): DescribeSigningJobRequest = {
+    val __obj = js.Dynamic.literal(jobId = jobId.asInstanceOf[js.Any])
+    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DescribeSigningJobRequest]
+  }
+}
+

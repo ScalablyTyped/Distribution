@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "yog-log"
-version := "0.1-dt-20200225Z-1afc39"
+version := "0.1-dt-20200225Z-87913b"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

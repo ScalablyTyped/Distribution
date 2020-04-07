@@ -10,47 +10,67 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.9]
   */
-@js.native
 trait ChartErrorBarsLoadOptions extends js.Object {
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
     */
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.native
+  var $all: js.UndefOr[Boolean] = js.undefined
   /**
     *
     * Specifies whether or not the error bars have an end style cap.
     *
     * [Api set: ExcelApi 1.9]
     */
-  var endStyleCap: js.UndefOr[Boolean] = js.native
+  var endStyleCap: js.UndefOr[Boolean] = js.undefined
   /**
     *
     * Specifies the formatting type of the error bars.
     *
     * [Api set: ExcelApi 1.9]
     */
-  var format: js.UndefOr[ChartErrorBarsFormatLoadOptions] = js.native
+  var format: js.UndefOr[ChartErrorBarsFormatLoadOptions] = js.undefined
   /**
     *
     * Specifies which parts of the error bars to include.
     *
     * [Api set: ExcelApi 1.9]
     */
-  var include: js.UndefOr[Boolean] = js.native
+  var include: js.UndefOr[Boolean] = js.undefined
   /**
     *
     * The type of range marked by the error bars.
     *
     * [Api set: ExcelApi 1.9]
     */
-  var `type`: js.UndefOr[Boolean] = js.native
+  var `type`: js.UndefOr[Boolean] = js.undefined
   /**
     *
     * Specifies whether or not the error bars are displayed.
     *
     * [Api set: ExcelApi 1.9]
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
+}
+
+object ChartErrorBarsLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[Boolean] = js.undefined,
+    endStyleCap: js.UndefOr[Boolean] = js.undefined,
+    format: ChartErrorBarsFormatLoadOptions = null,
+    include: js.UndefOr[Boolean] = js.undefined,
+    `type`: js.UndefOr[Boolean] = js.undefined,
+    visible: js.UndefOr[Boolean] = js.undefined
+  ): ChartErrorBarsLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (!js.isUndefined(endStyleCap)) __obj.updateDynamic("endStyleCap")(endStyleCap.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (!js.isUndefined(include)) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
+    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ChartErrorBarsLoadOptions]
+  }
 }
 

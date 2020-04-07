@@ -17,3 +17,13 @@ trait GetUserRequestwaiterWaite extends js.Object {
   var UserName: js.UndefOr[existingUserNameType] = js.native
 }
 
+object GetUserRequestwaiterWaite {
+  @scala.inline
+  def apply($waiter: WaiterConfiguration = null, UserName: existingUserNameType = null): GetUserRequestwaiterWaite = {
+    val __obj = js.Dynamic.literal()
+    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
+    if (UserName != null) __obj.updateDynamic("UserName")(UserName.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GetUserRequestwaiterWaite]
+  }
+}
+

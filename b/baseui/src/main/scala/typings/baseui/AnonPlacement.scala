@@ -10,9 +10,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait AnonPlacement extends js.Object {
   @JSName("$placement")
-  var $placement: topLeft | topRight | bottomLeft | bottomRight | bottom | top = js.native
+  var $placement: topLeft | topRight | bottomLeft | bottomRight | bottom | top
+}
+
+object AnonPlacement {
+  @scala.inline
+  def apply($placement: topLeft | topRight | bottomLeft | bottomRight | bottom | top): AnonPlacement = {
+    val __obj = js.Dynamic.literal($placement = $placement.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[AnonPlacement]
+  }
 }
 

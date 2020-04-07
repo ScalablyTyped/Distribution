@@ -101,7 +101,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait PartialSelectProps extends js.Object {
   var IconComponent: js.UndefOr[ReactType[_]] = js.native
-  var MenuProps: js.UndefOr[PartialMenuPropsAbout] = js.native
+  var MenuProps: js.UndefOr[PartialMenuProps] = js.native
   var SelectDisplayProps: js.UndefOr[HTMLAttributes[HTMLDivElement]] = js.native
   var about: js.UndefOr[String] = js.native
   var accessKey: js.UndefOr[String] = js.native
@@ -329,7 +329,7 @@ object PartialSelectProps {
   @scala.inline
   def apply(
     IconComponent: ReactType[_] = null,
-    MenuProps: PartialMenuPropsAbout = null,
+    MenuProps: PartialMenuProps = null,
     SelectDisplayProps: HTMLAttributes[HTMLDivElement] = null,
     about: String = null,
     accessKey: String = null,

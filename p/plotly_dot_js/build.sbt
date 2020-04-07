@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "plotly_dot_js"
-version := "1.44-dt-20200315Z-20cbed"
+version := "1.44-dt-20200315Z-486cf5"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -11,7 +11,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "d3-chord" % "1.0-dt-20200225Z-038e2f",
   "org.scalablytyped" %%% "d3-collection" % "1.0-dt-20200225Z-d29c36",
   "org.scalablytyped" %%% "d3-color" % "1.2-dt-20200225Z-ea946c",
-  "org.scalablytyped" %%% "d3-contour" % "1.3-dt-20200225Z-d254ef",
+  "org.scalablytyped" %%% "d3-contour" % "1.3-dt-20200225Z-d36a18",
   "org.scalablytyped" %%% "d3-dispatch" % "1.0-dt-20200225Z-cbd695",
   "org.scalablytyped" %%% "d3-drag" % "1.2-dt-20200225Z-1d478e",
   "org.scalablytyped" %%% "d3-dsv" % "1.0-dt-20200225Z-34e806",
@@ -19,7 +19,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "d3-fetch" % "1.1-dt-20200225Z-840dd7",
   "org.scalablytyped" %%% "d3-force" % "1.2-dt-20200225Z-68ef08",
   "org.scalablytyped" %%% "d3-format" % "1.3-dt-20190212Z-239a4c",
-  "org.scalablytyped" %%% "d3-geo" % "1.11-dt-20200225Z-2eed86",
+  "org.scalablytyped" %%% "d3-geo" % "1.11-dt-20200225Z-89af6d",
   "org.scalablytyped" %%% "d3-hierarchy" % "1.1-dt-20200225Z-edb7b1",
   "org.scalablytyped" %%% "d3-interpolate" % "1.3-dt-20200225Z-70e5fa",
   "org.scalablytyped" %%% "d3-path" % "1.0-dt-20190212Z-ab650c",
@@ -34,7 +34,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "d3-transition" % "1.1-dt-20200225Z-afd0c0",
   "org.scalablytyped" %%% "d3-voronoi" % "1.1-dt-20200225Z-572ced",
   "org.scalablytyped" %%% "d3-zoom" % "1.7-dt-20200225Z-bf1aec",
-  "org.scalablytyped" %%% "geojson" % "7946.0-dt-20190925Z-67022f",
+  "org.scalablytyped" %%% "geojson" % "7946.0-dt-20190925Z-8ecd0a",
   "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")

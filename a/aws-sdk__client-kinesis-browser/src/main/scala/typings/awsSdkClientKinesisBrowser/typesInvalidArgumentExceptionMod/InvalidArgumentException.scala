@@ -23,11 +23,11 @@ import typings.awsSdkClientKinesisBrowser.startStreamEncryptionExceptionsUnionMo
 import typings.awsSdkClientKinesisBrowser.stopStreamEncryptionExceptionsUnionMod.StopStreamEncryptionExceptionsUnion
 import typings.awsSdkClientKinesisBrowser.updateShardCountExceptionsUnionMod.UpdateShardCountExceptionsUnion
 import typings.awsSdkTypes.exceptionMod.ServiceException
+import typings.awsSdkTypes.responseMod.ResponseMetadata
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait InvalidArgumentException
   extends ServiceException[InvalidArgumentExceptionDetails]
      with AddTagsToStreamExceptionsUnion
@@ -53,6 +53,21 @@ trait InvalidArgumentException
      with StopStreamEncryptionExceptionsUnion
      with UpdateShardCountExceptionsUnion {
   @JSName("name")
-  var name_InvalidArgumentException: typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.InvalidArgumentException = js.native
+  var name_InvalidArgumentException: typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.InvalidArgumentException
+}
+
+object InvalidArgumentException {
+  @scala.inline
+  def apply(
+    $metadata: ResponseMetadata,
+    details: InvalidArgumentExceptionDetails,
+    message: String,
+    name: typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.InvalidArgumentException,
+    stack: String = null
+  ): InvalidArgumentException = {
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
+    __obj.asInstanceOf[InvalidArgumentException]
+  }
 }
 

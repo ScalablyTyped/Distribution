@@ -5,20 +5,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait ViewDeclaration extends js.Object {
   /**
     * The context that this view is declared within.
     * @internalapi
     */
   @JSName("$context")
-  var $context: js.UndefOr[ViewContext] = js.native
+  var $context: js.UndefOr[ViewContext] = js.undefined
   /**
     * The raw name for the view declaration, i.e., the [[StateDeclaration.views]] property name.
     * @internalapi
     */
   @JSName("$name")
-  var $name: js.UndefOr[String] = js.native
+  var $name: js.UndefOr[String] = js.undefined
   /**
     * A type identifier for the View
     *
@@ -27,7 +26,7 @@ trait ViewDeclaration extends js.Object {
     * @internalapi
     */
   @JSName("$type")
-  var $type: js.UndefOr[String] = js.native
+  var $type: js.UndefOr[String] = js.undefined
   /**
     * The normalized context anchor (state name) for the `uiViewName`
     *
@@ -35,7 +34,7 @@ trait ViewDeclaration extends js.Object {
     * @internalapi
     */
   @JSName("$uiViewContextAnchor")
-  var $uiViewContextAnchor: js.UndefOr[String] = js.native
+  var $uiViewContextAnchor: js.UndefOr[String] = js.undefined
   /**
     * The normalized address for the `ui-view` which this ViewConfig targets.
     *
@@ -48,6 +47,25 @@ trait ViewDeclaration extends js.Object {
     * @internalapi
     */
   @JSName("$uiViewName")
-  var $uiViewName: js.UndefOr[String] = js.native
+  var $uiViewName: js.UndefOr[String] = js.undefined
+}
+
+object ViewDeclaration {
+  @scala.inline
+  def apply(
+    $context: ViewContext = null,
+    $name: String = null,
+    $type: String = null,
+    $uiViewContextAnchor: String = null,
+    $uiViewName: String = null
+  ): ViewDeclaration = {
+    val __obj = js.Dynamic.literal()
+    if ($context != null) __obj.updateDynamic("$context")($context.asInstanceOf[js.Any])
+    if ($name != null) __obj.updateDynamic("$name")($name.asInstanceOf[js.Any])
+    if ($type != null) __obj.updateDynamic("$type")($type.asInstanceOf[js.Any])
+    if ($uiViewContextAnchor != null) __obj.updateDynamic("$uiViewContextAnchor")($uiViewContextAnchor.asInstanceOf[js.Any])
+    if ($uiViewName != null) __obj.updateDynamic("$uiViewName")($uiViewName.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ViewDeclaration]
+  }
 }
 

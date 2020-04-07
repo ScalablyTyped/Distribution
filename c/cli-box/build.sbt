@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cli-box"
-version := "6.0-dt-20181207Z-2b02d4"
+version := "6.0-dt-20181207Z-382fde"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

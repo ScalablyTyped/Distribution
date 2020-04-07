@@ -27,3 +27,20 @@ trait DescribeVpnConnectionsReq extends js.Object {
   var VpnConnectionIds: js.UndefOr[VpnConnectionIdStringList] = js.native
 }
 
+object DescribeVpnConnectionsReq {
+  @scala.inline
+  def apply(
+    $waiter: WaiterConfiguration = null,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    Filters: FilterList = null,
+    VpnConnectionIds: VpnConnectionIdStringList = null
+  ): DescribeVpnConnectionsReq = {
+    val __obj = js.Dynamic.literal()
+    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
+    if (VpnConnectionIds != null) __obj.updateDynamic("VpnConnectionIds")(VpnConnectionIds.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DescribeVpnConnectionsReq]
+  }
+}
+

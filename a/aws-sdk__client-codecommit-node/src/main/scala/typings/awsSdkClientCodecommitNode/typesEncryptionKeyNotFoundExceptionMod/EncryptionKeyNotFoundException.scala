@@ -32,11 +32,11 @@ import typings.awsSdkClientCodecommitNode.updateDefaultBranchExceptionsUnionMod.
 import typings.awsSdkClientCodecommitNode.updatePullRequestStatusExceptionsUnionMod.UpdatePullRequestStatusExceptionsUnion
 import typings.awsSdkClientCodecommitNode.updateRepositoryDescriptionExceptionsUnionMod.UpdateRepositoryDescriptionExceptionsUnion
 import typings.awsSdkTypes.exceptionMod.ServiceException
+import typings.awsSdkTypes.responseMod.ResponseMetadata
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait EncryptionKeyNotFoundException
   extends ServiceException[EncryptionKeyNotFoundExceptionDetails]
      with BatchGetRepositoriesExceptionsUnion
@@ -71,6 +71,21 @@ trait EncryptionKeyNotFoundException
      with UpdatePullRequestStatusExceptionsUnion
      with UpdateRepositoryDescriptionExceptionsUnion {
   @JSName("name")
-  var name_EncryptionKeyNotFoundException: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.EncryptionKeyNotFoundException = js.native
+  var name_EncryptionKeyNotFoundException: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.EncryptionKeyNotFoundException
+}
+
+object EncryptionKeyNotFoundException {
+  @scala.inline
+  def apply(
+    $metadata: ResponseMetadata,
+    details: EncryptionKeyNotFoundExceptionDetails,
+    message: String,
+    name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.EncryptionKeyNotFoundException,
+    stack: String = null
+  ): EncryptionKeyNotFoundException = {
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
+    __obj.asInstanceOf[EncryptionKeyNotFoundException]
+  }
 }
 

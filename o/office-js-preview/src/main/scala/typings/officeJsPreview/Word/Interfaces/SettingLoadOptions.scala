@@ -11,10 +11,9 @@ import scala.scalajs.js.annotation._
   * [Api set: WordApi BETA (PREVIEW ONLY)]
   * @beta
   */
-@js.native
 trait SettingLoadOptions extends js.Object {
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.native
+  var $all: js.UndefOr[Boolean] = js.undefined
   /**
     *
     * Gets the key of the setting. Read only.
@@ -22,7 +21,7 @@ trait SettingLoadOptions extends js.Object {
     * [Api set: WordApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var key: js.UndefOr[Boolean] = js.native
+  var key: js.UndefOr[Boolean] = js.undefined
   /**
     *
     * Gets or sets the value of the setting.
@@ -30,6 +29,21 @@ trait SettingLoadOptions extends js.Object {
     * [Api set: WordApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var value: js.UndefOr[Boolean] = js.native
+  var value: js.UndefOr[Boolean] = js.undefined
+}
+
+object SettingLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[Boolean] = js.undefined,
+    key: js.UndefOr[Boolean] = js.undefined,
+    value: js.UndefOr[Boolean] = js.undefined
+  ): SettingLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (!js.isUndefined(key)) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SettingLoadOptions]
+  }
 }
 

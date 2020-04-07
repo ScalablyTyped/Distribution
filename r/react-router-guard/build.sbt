@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-router-guard"
-version := "2.3-dt-20200102Z-b5c4d9"
+version := "2.3-dt-20200102Z-d34e9a"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -11,7 +11,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "node" % "13.9-dt-20200318Z-96a265",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-ece683",
   "org.scalablytyped" %%% "react" % "16.9-dt-20200320Z-629467",
-  "org.scalablytyped" %%% "react-loadable" % "5.5-dt-20200225Z-06a4e8",
+  "org.scalablytyped" %%% "react-loadable" % "5.5-dt-20200225Z-90cb6e",
   "org.scalablytyped" %%% "react-router" % "5.1-dt-20200227Z-1e5bf7",
   "org.scalablytyped" %%% "react-router-dom" % "5.1-dt-20191125Z-91d977",
   "org.scalablytyped" %%% "source-list-map" % "v0.1.6-dt-20200225Z-4dbc49",
@@ -19,7 +19,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "std" % "3.8-a0108c",
   "org.scalablytyped" %%% "tapable" % "v1.0.0-dt-20200225Z-acd615",
   "org.scalablytyped" %%% "uglify-js" % "3.0-dt-20200225Z-1b173b",
-  "org.scalablytyped" %%% "webpack" % "4.41-dt-20200320Z-b7aa26",
+  "org.scalablytyped" %%% "webpack" % "4.41-dt-20200320Z-cabf96",
   "org.scalablytyped" %%% "webpack-sources" % "0.1-dt-20200225Z-fed209")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")

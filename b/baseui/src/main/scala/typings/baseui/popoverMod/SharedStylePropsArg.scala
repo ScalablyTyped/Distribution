@@ -17,21 +17,41 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait SharedStylePropsArg extends js.Object {
   @JSName("$arrowOffset")
-  var $arrowOffset: js.UndefOr[Offset] = js.native
+  var $arrowOffset: js.UndefOr[Offset] = js.undefined
   @JSName("$isAnimating")
-  var $isAnimating: js.UndefOr[Boolean] = js.native
+  var $isAnimating: js.UndefOr[Boolean] = js.undefined
   @JSName("$isOpen")
-  var $isOpen: js.UndefOr[Boolean] = js.native
+  var $isOpen: js.UndefOr[Boolean] = js.undefined
   @JSName("$placement")
   var $placement: js.UndefOr[
     topLeft | leftBottom | topRight | rightBottom | bottomLeft | right | auto | bottomRight | leftTop | left | bottom | rightTop | top
-  ] = js.native
+  ] = js.undefined
   @JSName("$popoverOffset")
-  var $popoverOffset: js.UndefOr[Offset] = js.native
+  var $popoverOffset: js.UndefOr[Offset] = js.undefined
   @JSName("$showArrow")
-  var $showArrow: js.UndefOr[Boolean] = js.native
+  var $showArrow: js.UndefOr[Boolean] = js.undefined
+}
+
+object SharedStylePropsArg {
+  @scala.inline
+  def apply(
+    $arrowOffset: Offset = null,
+    $isAnimating: js.UndefOr[Boolean] = js.undefined,
+    $isOpen: js.UndefOr[Boolean] = js.undefined,
+    $placement: topLeft | leftBottom | topRight | rightBottom | bottomLeft | right | auto | bottomRight | leftTop | left | bottom | rightTop | top = null,
+    $popoverOffset: Offset = null,
+    $showArrow: js.UndefOr[Boolean] = js.undefined
+  ): SharedStylePropsArg = {
+    val __obj = js.Dynamic.literal()
+    if ($arrowOffset != null) __obj.updateDynamic("$arrowOffset")($arrowOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined($isAnimating)) __obj.updateDynamic("$isAnimating")($isAnimating.asInstanceOf[js.Any])
+    if (!js.isUndefined($isOpen)) __obj.updateDynamic("$isOpen")($isOpen.asInstanceOf[js.Any])
+    if ($placement != null) __obj.updateDynamic("$placement")($placement.asInstanceOf[js.Any])
+    if ($popoverOffset != null) __obj.updateDynamic("$popoverOffset")($popoverOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined($showArrow)) __obj.updateDynamic("$showArrow")($showArrow.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SharedStylePropsArg]
+  }
 }
 

@@ -1,6 +1,6 @@
 package typings.textBuffer.mod._Global_.TextBuffer
 
-import typings.textBuffer.ReadonlyPointCompare
+import typings.textBuffer.ReadonlyPoint
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,7 +25,7 @@ trait Point extends js.Object {
   def copy(): Point
   // Operations
   /** Makes this point immutable and returns itself. */
-  def freeze(): ReadonlyPointCompare
+  def freeze(): ReadonlyPoint
   /**
     *  Returns a boolean indicating whether this point has the same row and
     *  column as the given Point.
@@ -69,7 +69,7 @@ object Point {
     column: Double,
     compare: PointCompatible => Double,
     copy: () => Point,
-    freeze: () => ReadonlyPointCompare,
+    freeze: () => ReadonlyPoint,
     isEqual: PointCompatible => Boolean,
     isGreaterThan: PointCompatible => Boolean,
     isGreaterThanOrEqual: PointCompatible => Boolean,

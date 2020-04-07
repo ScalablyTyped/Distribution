@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "googleapis"
-version := "39.2.0-f39bce"
+version := "39.2.0-328c86"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "gaxios" % "2.3.1-7dc3c2",
   "org.scalablytyped" %%% "google-auth-library" % "5.10.1-000460",
-  "org.scalablytyped" %%% "googleapis-common" % "0.7.2-f64cbc",
+  "org.scalablytyped" %%% "googleapis-common" % "0.7.2-5fa5e5",
   "org.scalablytyped" %%% "gtoken" % "4.1.4-7ee270",
   "org.scalablytyped" %%% "node" % "13.9-dt-20200318Z-96a265",
   "org.scalablytyped" %%% "std" % "3.8-a0108c")

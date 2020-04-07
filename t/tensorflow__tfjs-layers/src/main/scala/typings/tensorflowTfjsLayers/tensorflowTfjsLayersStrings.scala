@@ -1,19 +1,31 @@
 package typings.tensorflowTfjsLayers
 
 import typings.tensorflowTfjsLayers.activationConfigMod.ActivationIdentifier
+import typings.tensorflowTfjsLayers.advancedActivationSerializationMod.AdvancedActivationLayerClassName
 import typings.tensorflowTfjsLayers.baseCallbacksMod._YieldEveryOptions
+import typings.tensorflowTfjsLayers.constraintConfigMod.ConstraintClassName
 import typings.tensorflowTfjsLayers.constraintsMod._ConstraintIdentifier
+import typings.tensorflowTfjsLayers.convolutionalSerializationMod.ConvolutionalLayerClassName
+import typings.tensorflowTfjsLayers.coreSerializationMod.CoreLayerClassName
 import typings.tensorflowTfjsLayers.initializerConfigMod.Distribution
 import typings.tensorflowTfjsLayers.initializerConfigMod.DistributionSerialization
 import typings.tensorflowTfjsLayers.initializerConfigMod.FanMode
 import typings.tensorflowTfjsLayers.initializerConfigMod.FanModeSerialization
+import typings.tensorflowTfjsLayers.initializerConfigMod.InitializerClassName
 import typings.tensorflowTfjsLayers.initializersMod._InitializerIdentifier
+import typings.tensorflowTfjsLayers.kerasClassNamesMod.KerasClassName
 import typings.tensorflowTfjsLayers.kerasFormatCommonMod.BidirectionalMergeMode
 import typings.tensorflowTfjsLayers.kerasFormatCommonMod.DataFormat
 import typings.tensorflowTfjsLayers.kerasFormatCommonMod.DataFormatSerialization
 import typings.tensorflowTfjsLayers.kerasFormatCommonMod.DataType
 import typings.tensorflowTfjsLayers.kerasFormatCommonMod.PaddingMode
 import typings.tensorflowTfjsLayers.kerasFormatCommonMod.PoolMode
+import typings.tensorflowTfjsLayers.layerSerializationMod.LayerClassName
+import typings.tensorflowTfjsLayers.mergeSerializationMod.MergeLayerClassName
+import typings.tensorflowTfjsLayers.optimizerConfigMod.OptimizerClassName
+import typings.tensorflowTfjsLayers.poolingSerializationMod.PoolingLayerClassName
+import typings.tensorflowTfjsLayers.recurrentSerializationMod.RecurrentLayerClassName
+import typings.tensorflowTfjsLayers.wrappersSerializationMod.WrapperLayerClassName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,223 +35,387 @@ object tensorflowTfjsLayersStrings {
   sealed trait `1Dot7Dot0` extends js.Object
   
   @js.native
-  sealed trait Activation extends js.Object
+  sealed trait Activation
+    extends CoreLayerClassName
+       with KerasClassName
+       with LayerClassName
   
   @js.native
-  sealed trait Adadelta extends js.Object
+  sealed trait Adadelta
+    extends KerasClassName
+       with OptimizerClassName
   
   @js.native
-  sealed trait Adagrad extends js.Object
+  sealed trait Adagrad
+    extends KerasClassName
+       with OptimizerClassName
   
   @js.native
-  sealed trait Adam extends js.Object
+  sealed trait Adam
+    extends KerasClassName
+       with OptimizerClassName
   
   @js.native
-  sealed trait Adamax extends js.Object
+  sealed trait Adamax
+    extends KerasClassName
+       with OptimizerClassName
   
   @js.native
-  sealed trait Add extends js.Object
+  sealed trait Add
+    extends KerasClassName
+       with LayerClassName
+       with MergeLayerClassName
   
   @js.native
-  sealed trait Average extends js.Object
+  sealed trait Average
+    extends KerasClassName
+       with LayerClassName
+       with MergeLayerClassName
   
   @js.native
-  sealed trait AveragePooling1D extends js.Object
+  sealed trait AveragePooling1D
+    extends KerasClassName
+       with LayerClassName
+       with PoolingLayerClassName
   
   @js.native
-  sealed trait AveragePooling2D extends js.Object
+  sealed trait AveragePooling2D
+    extends KerasClassName
+       with LayerClassName
+       with PoolingLayerClassName
   
   @js.native
-  sealed trait BatchNormalization extends js.Object
+  sealed trait BatchNormalization
+    extends KerasClassName
+       with LayerClassName
   
   @js.native
-  sealed trait Bidirectional extends js.Object
+  sealed trait Bidirectional extends WrapperLayerClassName
   
   @js.native
-  sealed trait Concatenate extends js.Object
+  sealed trait Concatenate
+    extends KerasClassName
+       with LayerClassName
+       with MergeLayerClassName
   
   @js.native
-  sealed trait Constant extends js.Object
+  sealed trait Constant
+    extends InitializerClassName
+       with KerasClassName
   
   @js.native
-  sealed trait Conv1D extends js.Object
+  sealed trait Conv1D
+    extends ConvolutionalLayerClassName
+       with KerasClassName
+       with LayerClassName
   
   @js.native
-  sealed trait Conv2D extends js.Object
+  sealed trait Conv2D
+    extends ConvolutionalLayerClassName
+       with KerasClassName
+       with LayerClassName
   
   @js.native
-  sealed trait Conv2DTranspose extends js.Object
+  sealed trait Conv2DTranspose
+    extends ConvolutionalLayerClassName
+       with KerasClassName
+       with LayerClassName
   
   @js.native
-  sealed trait Cropping2D extends js.Object
+  sealed trait Cropping2D
+    extends ConvolutionalLayerClassName
+       with KerasClassName
+       with LayerClassName
   
   @js.native
-  sealed trait Dense extends js.Object
+  sealed trait Dense
+    extends CoreLayerClassName
+       with KerasClassName
+       with LayerClassName
   
   @js.native
-  sealed trait DepthwiseConv2D extends js.Object
+  sealed trait DepthwiseConv2D
+    extends KerasClassName
+       with LayerClassName
   
   @js.native
-  sealed trait Dot extends js.Object
+  sealed trait Dot
+    extends KerasClassName
+       with LayerClassName
+       with MergeLayerClassName
   
   @js.native
-  sealed trait Dropout extends js.Object
+  sealed trait Dropout
+    extends CoreLayerClassName
+       with KerasClassName
+       with LayerClassName
   
   @js.native
-  sealed trait ELU extends js.Object
+  sealed trait ELU
+    extends AdvancedActivationLayerClassName
+       with KerasClassName
+       with LayerClassName
   
   @js.native
-  sealed trait Embedding extends js.Object
+  sealed trait Embedding
+    extends KerasClassName
+       with LayerClassName
   
   @js.native
-  sealed trait Flatten extends js.Object
+  sealed trait Flatten
+    extends CoreLayerClassName
+       with KerasClassName
+       with LayerClassName
   
   @js.native
-  sealed trait GRU extends js.Object
+  sealed trait GRU
+    extends KerasClassName
+       with LayerClassName
+       with RecurrentLayerClassName
   
   @js.native
   sealed trait GRUCell extends js.Object
   
   @js.native
-  sealed trait GlobalAveragePooling1D extends js.Object
+  sealed trait GlobalAveragePooling1D
+    extends KerasClassName
+       with LayerClassName
+       with PoolingLayerClassName
   
   @js.native
-  sealed trait GlobalAveragePooling2D extends js.Object
+  sealed trait GlobalAveragePooling2D
+    extends KerasClassName
+       with LayerClassName
+       with PoolingLayerClassName
   
   @js.native
-  sealed trait GlobalMaxPooling1D extends js.Object
+  sealed trait GlobalMaxPooling1D
+    extends KerasClassName
+       with LayerClassName
+       with PoolingLayerClassName
   
   @js.native
-  sealed trait GlobalMaxPooling2D extends js.Object
+  sealed trait GlobalMaxPooling2D
+    extends KerasClassName
+       with LayerClassName
+       with PoolingLayerClassName
   
   @js.native
-  sealed trait Identity extends js.Object
+  sealed trait Identity
+    extends InitializerClassName
+       with KerasClassName
   
   @js.native
-  sealed trait InputLayer extends js.Object
+  sealed trait InputLayer
+    extends KerasClassName
+       with LayerClassName
   
   @js.native
-  sealed trait L1L2 extends js.Object
+  sealed trait L1L2 extends KerasClassName
   
   @js.native
-  sealed trait LSTM extends js.Object
+  sealed trait LSTM
+    extends KerasClassName
+       with LayerClassName
+       with RecurrentLayerClassName
   
   @js.native
   sealed trait LSTMCell extends js.Object
   
   @js.native
-  sealed trait LeakyReLU extends js.Object
+  sealed trait LeakyReLU
+    extends AdvancedActivationLayerClassName
+       with KerasClassName
+       with LayerClassName
   
   @js.native
-  sealed trait Masking extends js.Object
+  sealed trait Masking
+    extends CoreLayerClassName
+       with KerasClassName
+       with LayerClassName
   
   @js.native
-  sealed trait MaxNorm extends js.Object
+  sealed trait MaxNorm
+    extends ConstraintClassName
+       with KerasClassName
   
   @js.native
-  sealed trait MaxPooling1D extends js.Object
+  sealed trait MaxPooling1D
+    extends KerasClassName
+       with LayerClassName
+       with PoolingLayerClassName
   
   @js.native
-  sealed trait MaxPooling2D extends js.Object
+  sealed trait MaxPooling2D
+    extends KerasClassName
+       with LayerClassName
+       with PoolingLayerClassName
   
   @js.native
-  sealed trait Maximum extends js.Object
+  sealed trait Maximum
+    extends KerasClassName
+       with LayerClassName
+       with MergeLayerClassName
   
   @js.native
-  sealed trait MinMaxNorm extends js.Object
+  sealed trait MinMaxNorm
+    extends ConstraintClassName
+       with KerasClassName
   
   @js.native
-  sealed trait Minimum extends js.Object
+  sealed trait Minimum
+    extends KerasClassName
+       with LayerClassName
+       with MergeLayerClassName
   
   @js.native
   sealed trait Model extends js.Object
   
   @js.native
-  sealed trait Momentum extends js.Object
+  sealed trait Momentum
+    extends KerasClassName
+       with OptimizerClassName
   
   @js.native
-  sealed trait Multiply extends js.Object
+  sealed trait Multiply
+    extends KerasClassName
+       with LayerClassName
+       with MergeLayerClassName
   
   @js.native
-  sealed trait NonNeg extends js.Object
+  sealed trait NonNeg
+    extends ConstraintClassName
+       with KerasClassName
   
   @js.native
-  sealed trait Ones extends js.Object
+  sealed trait Ones
+    extends InitializerClassName
+       with KerasClassName
   
   @js.native
-  sealed trait Orthogonal extends js.Object
+  sealed trait Orthogonal
+    extends InitializerClassName
+       with KerasClassName
   
   @js.native
-  sealed trait PReLU extends js.Object
+  sealed trait PReLU
+    extends AdvancedActivationLayerClassName
+       with KerasClassName
+       with LayerClassName
   
   @js.native
-  sealed trait Permute extends js.Object
+  sealed trait Permute
+    extends CoreLayerClassName
+       with KerasClassName
+       with LayerClassName
   
   @js.native
   sealed trait PyJson extends js.Object
   
   @js.native
-  sealed trait RMSProp extends js.Object
+  sealed trait RMSProp
+    extends KerasClassName
+       with OptimizerClassName
   
   @js.native
-  sealed trait RandomNormal extends js.Object
+  sealed trait RandomNormal
+    extends InitializerClassName
+       with KerasClassName
   
   @js.native
-  sealed trait RandomUniform extends js.Object
+  sealed trait RandomUniform
+    extends InitializerClassName
+       with KerasClassName
   
   @js.native
-  sealed trait ReLU extends js.Object
+  sealed trait ReLU
+    extends AdvancedActivationLayerClassName
+       with KerasClassName
+       with LayerClassName
   
   @js.native
-  sealed trait RepeatVector extends js.Object
+  sealed trait RepeatVector
+    extends CoreLayerClassName
+       with KerasClassName
+       with LayerClassName
   
   @js.native
-  sealed trait Reshape extends js.Object
+  sealed trait Reshape
+    extends CoreLayerClassName
+       with KerasClassName
+       with LayerClassName
   
   @js.native
-  sealed trait SGD extends js.Object
+  sealed trait SGD
+    extends KerasClassName
+       with OptimizerClassName
   
   @js.native
-  sealed trait SeparableConv2D extends js.Object
+  sealed trait SeparableConv2D
+    extends ConvolutionalLayerClassName
+       with KerasClassName
+       with LayerClassName
   
   @js.native
   sealed trait Sequential extends js.Object
   
   @js.native
-  sealed trait SimpleRNN extends js.Object
+  sealed trait SimpleRNN
+    extends KerasClassName
+       with LayerClassName
+       with RecurrentLayerClassName
   
   @js.native
   sealed trait SimpleRNNCell extends js.Object
   
   @js.native
-  sealed trait Softmax extends js.Object
+  sealed trait Softmax
+    extends AdvancedActivationLayerClassName
+       with KerasClassName
+       with LayerClassName
   
   @js.native
   sealed trait StackedRNNCells extends js.Object
   
   @js.native
-  sealed trait ThresholdedReLU extends js.Object
+  sealed trait ThresholdedReLU
+    extends AdvancedActivationLayerClassName
+       with KerasClassName
+       with LayerClassName
   
   @js.native
-  sealed trait TimeDistributed extends js.Object
+  sealed trait TimeDistributed extends WrapperLayerClassName
   
   @js.native
-  sealed trait TruncatedNormal extends js.Object
+  sealed trait TruncatedNormal
+    extends InitializerClassName
+       with KerasClassName
   
   @js.native
-  sealed trait UnitNorm extends js.Object
+  sealed trait UnitNorm
+    extends ConstraintClassName
+       with KerasClassName
   
   @js.native
-  sealed trait UpSampling2D extends js.Object
+  sealed trait UpSampling2D
+    extends ConvolutionalLayerClassName
+       with KerasClassName
+       with LayerClassName
   
   @js.native
-  sealed trait VarianceScaling extends js.Object
+  sealed trait VarianceScaling
+    extends InitializerClassName
+       with KerasClassName
   
   @js.native
-  sealed trait ZeroPadding2D extends js.Object
+  sealed trait ZeroPadding2D
+    extends KerasClassName
+       with LayerClassName
   
   @js.native
-  sealed trait Zeros extends js.Object
+  sealed trait Zeros
+    extends InitializerClassName
+       with KerasClassName
   
   @js.native
   sealed trait auto extends _YieldEveryOptions

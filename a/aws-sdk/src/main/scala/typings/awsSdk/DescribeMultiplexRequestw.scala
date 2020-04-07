@@ -17,3 +17,12 @@ trait DescribeMultiplexRequestw extends js.Object {
   var MultiplexId: string = js.native
 }
 
+object DescribeMultiplexRequestw {
+  @scala.inline
+  def apply(MultiplexId: string, $waiter: WaiterConfiguration = null): DescribeMultiplexRequestw = {
+    val __obj = js.Dynamic.literal(MultiplexId = MultiplexId.asInstanceOf[js.Any])
+    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DescribeMultiplexRequestw]
+  }
+}
+

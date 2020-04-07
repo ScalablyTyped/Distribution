@@ -32,11 +32,11 @@ import typings.awsSdkClientCodecommitNode.updateDefaultBranchExceptionsUnionMod.
 import typings.awsSdkClientCodecommitNode.updatePullRequestStatusExceptionsUnionMod.UpdatePullRequestStatusExceptionsUnion
 import typings.awsSdkClientCodecommitNode.updateRepositoryDescriptionExceptionsUnionMod.UpdateRepositoryDescriptionExceptionsUnion
 import typings.awsSdkTypes.exceptionMod.ServiceException
+import typings.awsSdkTypes.responseMod.ResponseMetadata
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait EncryptionKeyAccessDeniedException
   extends ServiceException[EncryptionKeyAccessDeniedExceptionDetails]
      with BatchGetRepositoriesExceptionsUnion
@@ -71,6 +71,21 @@ trait EncryptionKeyAccessDeniedException
      with UpdatePullRequestStatusExceptionsUnion
      with UpdateRepositoryDescriptionExceptionsUnion {
   @JSName("name")
-  var name_EncryptionKeyAccessDeniedException: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.EncryptionKeyAccessDeniedException = js.native
+  var name_EncryptionKeyAccessDeniedException: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.EncryptionKeyAccessDeniedException
+}
+
+object EncryptionKeyAccessDeniedException {
+  @scala.inline
+  def apply(
+    $metadata: ResponseMetadata,
+    details: EncryptionKeyAccessDeniedExceptionDetails,
+    message: String,
+    name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.EncryptionKeyAccessDeniedException,
+    stack: String = null
+  ): EncryptionKeyAccessDeniedException = {
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
+    __obj.asInstanceOf[EncryptionKeyAccessDeniedException]
+  }
 }
 

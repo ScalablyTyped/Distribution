@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jupyterlab__settingregistry"
-version := "2.0.1-063374"
+version := "2.0.1-608156"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

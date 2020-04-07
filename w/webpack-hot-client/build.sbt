@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "webpack-hot-client"
-version := "4.1-dt-20200225Z-ef35a9"
+version := "4.1-dt-20200225Z-8602aa"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -12,7 +12,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "std" % "3.8-a0108c",
   "org.scalablytyped" %%% "tapable" % "v1.0.0-dt-20200225Z-acd615",
   "org.scalablytyped" %%% "uglify-js" % "3.0-dt-20200225Z-1b173b",
-  "org.scalablytyped" %%% "webpack" % "4.41-dt-20200320Z-b7aa26",
+  "org.scalablytyped" %%% "webpack" % "4.41-dt-20200320Z-cabf96",
   "org.scalablytyped" %%% "webpack-sources" % "0.1-dt-20200225Z-fed209",
   "org.scalablytyped" %%% "ws" % "7.2-dt-20200318Z-620d0e")
 publishArtifact in packageDoc := false

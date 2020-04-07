@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-dev-utils"
-version := "9.0-dt-20200213Z-8ec220"
+version := "9.0-dt-20200213Z-0e9484"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,15 +10,15 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "clean-css" % "4.2-dt-20200226Z-350876",
   "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20200226Z-269b22",
   "org.scalablytyped" %%% "connect-history-api-fallback" % "1.3-dt-20190819Z-b07d2c",
-  "org.scalablytyped" %%% "eslint" % "6.1-dt-20200204Z-4695f1",
+  "org.scalablytyped" %%% "eslint" % "6.1-dt-20200204Z-d0a760",
   "org.scalablytyped" %%% "estree" % "0.0-unknown-dt-20200320Z-692182",
   "org.scalablytyped" %%% "express" % "4.17-dt-20200303Z-1c1293",
   "org.scalablytyped" %%% "express-serve-static-core" % "4.17-dt-20200225Z-dbe850",
   "org.scalablytyped" %%% "html-minifier" % "3.5-dt-20200226Z-cfabd4",
-  "org.scalablytyped" %%% "html-webpack-plugin" % "3.2-dt-20200129Z-51a887",
+  "org.scalablytyped" %%% "html-webpack-plugin" % "3.2-dt-20200129Z-517c1e",
   "org.scalablytyped" %%% "http-proxy" % "1.17-dt-20200320Z-9bf6ea",
   "org.scalablytyped" %%% "http-proxy-middleware" % "0.19-dt-20190819Z-892566",
-  "org.scalablytyped" %%% "json-schema" % "7.0-dt-20200225Z-c70582",
+  "org.scalablytyped" %%% "json-schema" % "7.0-dt-20200225Z-0f312e",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20191126Z-3b5426",
   "org.scalablytyped" %%% "node" % "13.9-dt-20200318Z-96a265",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-6ae0c0",
@@ -29,8 +29,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "std" % "3.8-a0108c",
   "org.scalablytyped" %%% "tapable" % "v1.0.0-dt-20200225Z-acd615",
   "org.scalablytyped" %%% "uglify-js" % "3.0-dt-20200225Z-1b173b",
-  "org.scalablytyped" %%% "webpack" % "4.41-dt-20200320Z-b7aa26",
-  "org.scalablytyped" %%% "webpack-dev-server" % "3.10-dt-20200312Z-d0968e",
+  "org.scalablytyped" %%% "webpack" % "4.41-dt-20200320Z-cabf96",
+  "org.scalablytyped" %%% "webpack-dev-server" % "3.10-dt-20200312Z-ce032b",
   "org.scalablytyped" %%% "webpack-sources" % "0.1-dt-20200225Z-fed209")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")

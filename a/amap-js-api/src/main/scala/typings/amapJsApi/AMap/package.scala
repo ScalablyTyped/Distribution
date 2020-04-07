@@ -10,6 +10,7 @@ package object AMap {
   type Circle[ExtraData] = typings.amapJsApi.AMap.Circle_[ExtraData]
   type ContextMenu[ExtraData] = typings.amapJsApi.AMap.ContextMenu_[ExtraData]
   type Ellipse[ExtraData] = typings.amapJsApi.AMap.Ellipse_[ExtraData]
+  type Event_[N /* <: java.lang.String */, V] = typings.amapJsApi.AnonType[N] with (typings.amapJsApi.AnonValue[V] | js.Object | V)
   type GeoJSON[ExtraData] = typings.amapJsApi.AMap.GeoJSON_[ExtraData]
   type Icon = typings.amapJsApi.AMap.Icon_
   type InfoWindow[ExtraData] = typings.amapJsApi.AMap.InfoWindow_[ExtraData]
@@ -18,6 +19,7 @@ package object AMap {
   type Layer = typings.amapJsApi.AMap.Layer_
   type LocationValue = typings.amapJsApi.AMap.LngLat | (js.Tuple2[scala.Double, scala.Double])
   type Map = typings.amapJsApi.AMap.Map_
+  type MapsEvent[N /* <: java.lang.String */, I] = typings.amapJsApi.AMap.Event_[N, typings.amapJsApi.AnonLnglat[I]]
   type Marker[ExtraData] = typings.amapJsApi.AMap.Marker_[ExtraData]
   type MarkerShape = typings.amapJsApi.AMap.MarkerShape_
   type MassMarks[D /* <: typings.amapJsApi.AMap.MassMarks.Data */] = typings.amapJsApi.AMap.MassMarks_[D]

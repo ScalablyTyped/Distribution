@@ -1,6 +1,12 @@
 package typings.awsSdk
 
+import typings.awsSdk.cloudwatchMod.ActionPrefix
 import typings.awsSdk.cloudwatchMod.AlarmName
+import typings.awsSdk.cloudwatchMod.AlarmNamePrefix
+import typings.awsSdk.cloudwatchMod.AlarmNames
+import typings.awsSdk.cloudwatchMod.AlarmTypes
+import typings.awsSdk.cloudwatchMod.NextToken
+import typings.awsSdk.cloudwatchMod.StateValue
 import typings.awsSdk.serviceMod.WaiterConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -47,5 +53,34 @@ trait DescribeAlarmsInputwaiter extends js.Object {
     * Specify this parameter to receive information only about alarms that are currently in the state that you specify.
     */
   var StateValue: js.UndefOr[typings.awsSdk.cloudwatchMod.StateValue] = js.native
+}
+
+object DescribeAlarmsInputwaiter {
+  @scala.inline
+  def apply(
+    $waiter: WaiterConfiguration = null,
+    ActionPrefix: ActionPrefix = null,
+    AlarmNamePrefix: AlarmNamePrefix = null,
+    AlarmNames: AlarmNames = null,
+    AlarmTypes: AlarmTypes = null,
+    ChildrenOfAlarmName: AlarmName = null,
+    MaxRecords: Int | Double = null,
+    NextToken: NextToken = null,
+    ParentsOfAlarmName: AlarmName = null,
+    StateValue: StateValue = null
+  ): DescribeAlarmsInputwaiter = {
+    val __obj = js.Dynamic.literal()
+    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
+    if (ActionPrefix != null) __obj.updateDynamic("ActionPrefix")(ActionPrefix.asInstanceOf[js.Any])
+    if (AlarmNamePrefix != null) __obj.updateDynamic("AlarmNamePrefix")(AlarmNamePrefix.asInstanceOf[js.Any])
+    if (AlarmNames != null) __obj.updateDynamic("AlarmNames")(AlarmNames.asInstanceOf[js.Any])
+    if (AlarmTypes != null) __obj.updateDynamic("AlarmTypes")(AlarmTypes.asInstanceOf[js.Any])
+    if (ChildrenOfAlarmName != null) __obj.updateDynamic("ChildrenOfAlarmName")(ChildrenOfAlarmName.asInstanceOf[js.Any])
+    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
+    if (ParentsOfAlarmName != null) __obj.updateDynamic("ParentsOfAlarmName")(ParentsOfAlarmName.asInstanceOf[js.Any])
+    if (StateValue != null) __obj.updateDynamic("StateValue")(StateValue.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DescribeAlarmsInputwaiter]
+  }
 }
 

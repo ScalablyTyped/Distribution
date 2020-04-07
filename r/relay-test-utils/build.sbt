@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "relay-test-utils"
-version := "6.0-dt-20191003Z-a41846"
+version := "6.0-dt-20191003Z-952216"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,8 +8,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "2.6.9-2d2033",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-ece683",
   "org.scalablytyped" %%% "react" % "16.9-dt-20200320Z-629467",
-  "org.scalablytyped" %%% "react-relay" % "7.0-dt-20191126Z-a77a02",
-  "org.scalablytyped" %%% "relay-runtime" % "8.0-dt-20200318Z-eb03fd",
+  "org.scalablytyped" %%% "react-relay" % "7.0-dt-20191126Z-b01376",
+  "org.scalablytyped" %%% "relay-runtime" % "8.0-dt-20200318Z-c7324d",
   "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")

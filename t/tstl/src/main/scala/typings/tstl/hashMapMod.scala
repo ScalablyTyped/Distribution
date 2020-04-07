@@ -263,7 +263,7 @@ object hashMapMod extends js.Object {
             /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
             /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
             /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any, 
-            IteratoranyanyanyanyEquals, 
+            Iteratoranyanyanyany, 
             typings.tstl.mapElementListMod.MapElementList.ReverseIterator[
               /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
               /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
@@ -283,7 +283,7 @@ object hashMapMod extends js.Object {
             /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
             /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
             /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any, 
-            IteratoranyanyanyanyEquals, 
+            Iteratoranyanyanyany, 
             typings.tstl.mapElementListMod.MapElementList.ReverseIterator[
               /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
               /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 

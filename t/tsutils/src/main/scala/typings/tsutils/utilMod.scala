@@ -57,6 +57,17 @@ import typings.typescript.mod.StringLiteral
 import typings.typescript.mod.Symbol
 import typings.typescript.mod.SymbolFlags
 import typings.typescript.mod.SyntaxKind
+import typings.typescript.mod.SyntaxKind.AbstractKeyword
+import typings.typescript.mod.SyntaxKind.AsyncKeyword
+import typings.typescript.mod.SyntaxKind.ConstKeyword
+import typings.typescript.mod.SyntaxKind.DeclareKeyword
+import typings.typescript.mod.SyntaxKind.DefaultKeyword
+import typings.typescript.mod.SyntaxKind.ExportKeyword
+import typings.typescript.mod.SyntaxKind.PrivateKeyword
+import typings.typescript.mod.SyntaxKind.ProtectedKeyword
+import typings.typescript.mod.SyntaxKind.PublicKeyword
+import typings.typescript.mod.SyntaxKind.ReadonlyKeyword
+import typings.typescript.mod.SyntaxKind.StaticKeyword
 import typings.typescript.mod.Token
 import typings.typescript.mod.Type
 import typings.typescript.mod.TypeChecker
@@ -111,10 +122,9 @@ object utilMod extends js.Object {
   def getLateBoundPropertyNamesOfPropertyName(node: PropertyName, checker: TypeChecker): LateBoundPropertyNames = js.native
   def getLineBreakStyle(sourceFile: SourceFile): Linefeed | CarriagereturnLinefeed = js.native
   def getLineRanges(sourceFile: SourceFile): js.Array[LineRange] = js.native
-  @JSName("getModifier")
-  def getModifier_kind(
+  def getModifier(
     node: Node,
-    kind: /* import warning: importer.ImportType#apply Failed type conversion: typescript.typescript.Modifier['kind'] */ js.Any
+    kind: AbstractKeyword | AsyncKeyword | ConstKeyword | DeclareKeyword | DefaultKeyword | ExportKeyword | PublicKeyword | PrivateKeyword | ProtectedKeyword | ReadonlyKeyword | StaticKeyword
   ): js.UndefOr[Modifier] = js.native
   def getNextStatement(statement: Statement): js.UndefOr[Statement] = js.native
   def getNextToken(node: Node): js.UndefOr[Node] = js.native
@@ -135,14 +145,12 @@ object utilMod extends js.Object {
   def getWrappedNodeAtPosition(wrap: NodeWrap, pos: Double): js.UndefOr[NodeWrap] = js.native
   def hasAccessModifier(node: ClassElement): Boolean = js.native
   def hasAccessModifier(node: ParameterDeclaration): Boolean = js.native
-  @JSName("hasModifier")
-  def hasModifier_kind(
-    kinds: (/* import warning: importer.ImportType#apply Failed type conversion: typescript.typescript.Modifier['kind'] */ js.Any)*
+  def hasModifier(
+    kinds: (AbstractKeyword | AsyncKeyword | ConstKeyword | DeclareKeyword | DefaultKeyword | ExportKeyword | PublicKeyword | PrivateKeyword | ProtectedKeyword | ReadonlyKeyword | StaticKeyword)*
   ): Boolean = js.native
-  @JSName("hasModifier")
-  def hasModifier_kind(
+  def hasModifier(
     modifiers: ModifiersArray,
-    kinds: (/* import warning: importer.ImportType#apply Failed type conversion: typescript.typescript.Modifier['kind'] */ js.Any)*
+    kinds: (AbstractKeyword | AsyncKeyword | ConstKeyword | DeclareKeyword | DefaultKeyword | ExportKeyword | PublicKeyword | PrivateKeyword | ProtectedKeyword | ReadonlyKeyword | StaticKeyword)*
   ): Boolean = js.native
   def hasOwnThisReference(node: Node): Boolean = js.native
   def hasSideEffects(node: Expression): Boolean = js.native

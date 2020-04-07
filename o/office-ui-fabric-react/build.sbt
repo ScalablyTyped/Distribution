@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "office-ui-fabric-react"
-version := "7.105.1-e83243"
+version := "7.105.1-cf512d"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,18 +8,18 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "cheerio" % "v0.22.0-dt-20200320Z-d7fe7f",
   "org.scalablytyped" %%% "csstype" % "2.6.9-2d2033",
   "org.scalablytyped" %%% "enzyme" % "3.10-dt-20200225Z-b6e188",
-  "org.scalablytyped" %%% "fluentui__react-focus" % "7.1.8-4b760a",
+  "org.scalablytyped" %%% "fluentui__react-focus" % "7.1.8-9780c9",
   "org.scalablytyped" %%% "node" % "13.9-dt-20200318Z-96a265",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-ece683",
   "org.scalablytyped" %%% "react" % "16.9-dt-20200320Z-629467",
   "org.scalablytyped" %%% "react-dom" % "16.9-dt-20200227Z-76ab9f",
   "org.scalablytyped" %%% "sinon" % "7.5-dt-20200225Z-c633f6",
   "org.scalablytyped" %%% "std" % "3.8-a0108c",
-  "org.scalablytyped" %%% "uifabric__foundation" % "7.5.21-92281f",
-  "org.scalablytyped" %%% "uifabric__icons" % "7.3.20-3b46ef",
-  "org.scalablytyped" %%% "uifabric__merge-styles" % "7.8.8-82cb0d",
-  "org.scalablytyped" %%% "uifabric__styling" % "7.10.21-5a4a08",
-  "org.scalablytyped" %%% "uifabric__utilities" % "7.15.1-70f055")
+  "org.scalablytyped" %%% "uifabric__foundation" % "7.5.21-92ada9",
+  "org.scalablytyped" %%% "uifabric__icons" % "7.3.20-bcb2ec",
+  "org.scalablytyped" %%% "uifabric__merge-styles" % "7.8.8-b524f2",
+  "org.scalablytyped" %%% "uifabric__styling" % "7.10.21-1a3ae0",
+  "org.scalablytyped" %%% "uifabric__utilities" % "7.15.1-4d646c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -1,5 +1,6 @@
 package typings.awsSdk
 
+import typings.awsSdk.sagemakerMod.NotebookInstanceName
 import typings.awsSdk.serviceMod.WaiterConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,5 +15,14 @@ trait DescribeNotebookInstanceI extends js.Object {
     * The name of the notebook instance that you want information about.
     */
   var NotebookInstanceName: typings.awsSdk.sagemakerMod.NotebookInstanceName = js.native
+}
+
+object DescribeNotebookInstanceI {
+  @scala.inline
+  def apply(NotebookInstanceName: NotebookInstanceName, $waiter: WaiterConfiguration = null): DescribeNotebookInstanceI = {
+    val __obj = js.Dynamic.literal(NotebookInstanceName = NotebookInstanceName.asInstanceOf[js.Any])
+    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DescribeNotebookInstanceI]
+  }
 }
 

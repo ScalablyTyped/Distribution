@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "epilogue"
-version := "0.7-dt-20200227Z-cab433"
+version := "0.7-dt-20200227Z-bb6c9b"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -15,7 +15,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "mime" % "2.0-dt-20191126Z-3b5426",
   "org.scalablytyped" %%% "node" % "13.9-dt-20200318Z-96a265",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-6ae0c0",
-  "org.scalablytyped" %%% "sequelize" % "4.28.0-dt-20200225Z-04cf97",
+  "org.scalablytyped" %%% "sequelize" % "4.28.0-dt-20200225Z-735e1c",
   "org.scalablytyped" %%% "serve-static" % "1.13-dt-20200227Z-dc6343",
   "org.scalablytyped" %%% "std" % "3.8-a0108c",
   "org.scalablytyped" %%% "validator" % "12.0-dt-20191226Z-cee9bb")

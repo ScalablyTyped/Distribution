@@ -37,3 +37,24 @@ trait DescribeVpcPeeringConnect extends js.Object {
   var VpcPeeringConnectionIds: js.UndefOr[VpcPeeringConnectionIdList] = js.native
 }
 
+object DescribeVpcPeeringConnect {
+  @scala.inline
+  def apply(
+    $waiter: WaiterConfiguration = null,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    Filters: FilterList = null,
+    MaxResults: Int | Double = null,
+    NextToken: String = null,
+    VpcPeeringConnectionIds: VpcPeeringConnectionIdList = null
+  ): DescribeVpcPeeringConnect = {
+    val __obj = js.Dynamic.literal()
+    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
+    if (VpcPeeringConnectionIds != null) __obj.updateDynamic("VpcPeeringConnectionIds")(VpcPeeringConnectionIds.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DescribeVpcPeeringConnect]
+  }
+}
+

@@ -17,3 +17,12 @@ trait HeadBucketRequestwaiterWa extends js.Object {
   var Bucket: BucketName = js.native
 }
 
+object HeadBucketRequestwaiterWa {
+  @scala.inline
+  def apply(Bucket: BucketName, $waiter: WaiterConfiguration = null): HeadBucketRequestwaiterWa = {
+    val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
+    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
+    __obj.asInstanceOf[HeadBucketRequestwaiterWa]
+  }
+}
+

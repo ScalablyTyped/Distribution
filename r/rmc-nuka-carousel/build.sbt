@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "rmc-nuka-carousel"
-version := "3.0.1-335a37"
+version := "3.0.1-bba393"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

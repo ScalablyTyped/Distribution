@@ -1,10 +1,12 @@
 organization := "org.scalablytyped"
 name := "socketcluster-server"
-version := "15.0-dt-20200214Z-80a661"
+version := "15.0-dt-20200214Z-a36d55"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
+  "org.scalablytyped" %%% "ag-channel" % "4.0-dt-20200205Z-60de29",
+  "org.scalablytyped" %%% "ag-simple-broker" % "4.0-dt-20200205Z-0dc2f3",
   "org.scalablytyped" %%% "async-stream-emitter" % "3.0-dt-20200205Z-b339e3",
   "org.scalablytyped" %%% "consumable-stream" % "1.0-dt-20200205Z-d59548",
   "org.scalablytyped" %%% "jsonwebtoken" % "8.3-dt-20200228Z-e351e9",

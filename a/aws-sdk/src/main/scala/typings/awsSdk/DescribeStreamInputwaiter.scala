@@ -2,6 +2,7 @@ package typings.awsSdk
 
 import typings.awsSdk.kinesisMod.DescribeStreamInputLimit
 import typings.awsSdk.kinesisMod.ShardId
+import typings.awsSdk.kinesisMod.StreamName
 import typings.awsSdk.serviceMod.WaiterConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -24,5 +25,21 @@ trait DescribeStreamInputwaiter extends js.Object {
     * The name of the stream to describe.
     */
   var StreamName: typings.awsSdk.kinesisMod.StreamName = js.native
+}
+
+object DescribeStreamInputwaiter {
+  @scala.inline
+  def apply(
+    StreamName: StreamName,
+    $waiter: WaiterConfiguration = null,
+    ExclusiveStartShardId: ShardId = null,
+    Limit: Int | Double = null
+  ): DescribeStreamInputwaiter = {
+    val __obj = js.Dynamic.literal(StreamName = StreamName.asInstanceOf[js.Any])
+    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
+    if (ExclusiveStartShardId != null) __obj.updateDynamic("ExclusiveStartShardId")(ExclusiveStartShardId.asInstanceOf[js.Any])
+    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DescribeStreamInputwaiter]
+  }
 }
 

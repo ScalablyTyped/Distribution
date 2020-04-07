@@ -1,6 +1,7 @@
 package typings.awsSdk
 
 import typings.awsSdk.acmpcaMod.Arn
+import typings.awsSdk.acmpcaMod.AuditReportId
 import typings.awsSdk.serviceMod.WaiterConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -19,5 +20,14 @@ trait DescribeCertificateAuthor extends js.Object {
     * The Amazon Resource Name (ARN) of the private CA. This must be of the form:  arn:aws:acm-pca:region:account:certificate-authority/12345678-1234-1234-1234-123456789012 . 
     */
   var CertificateAuthorityArn: Arn = js.native
+}
+
+object DescribeCertificateAuthor {
+  @scala.inline
+  def apply(AuditReportId: AuditReportId, CertificateAuthorityArn: Arn, $waiter: WaiterConfiguration = null): DescribeCertificateAuthor = {
+    val __obj = js.Dynamic.literal(AuditReportId = AuditReportId.asInstanceOf[js.Any], CertificateAuthorityArn = CertificateAuthorityArn.asInstanceOf[js.Any])
+    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DescribeCertificateAuthor]
+  }
 }
 

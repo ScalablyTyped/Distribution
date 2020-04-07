@@ -8,11 +8,11 @@ import typings.awsSdkClientKmsNode.generateDataKeyWithoutPlaintextExceptionsUnio
 import typings.awsSdkClientKmsNode.reEncryptExceptionsUnionMod.ReEncryptExceptionsUnion
 import typings.awsSdkClientKmsNode.retireGrantExceptionsUnionMod.RetireGrantExceptionsUnion
 import typings.awsSdkTypes.exceptionMod.ServiceException
+import typings.awsSdkTypes.responseMod.ResponseMetadata
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait InvalidGrantTokenException
   extends ServiceException[InvalidGrantTokenExceptionDetails]
      with CreateGrantExceptionsUnion
@@ -23,6 +23,21 @@ trait InvalidGrantTokenException
      with ReEncryptExceptionsUnion
      with RetireGrantExceptionsUnion {
   @JSName("name")
-  var name_InvalidGrantTokenException: typings.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.InvalidGrantTokenException = js.native
+  var name_InvalidGrantTokenException: typings.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.InvalidGrantTokenException
+}
+
+object InvalidGrantTokenException {
+  @scala.inline
+  def apply(
+    $metadata: ResponseMetadata,
+    details: InvalidGrantTokenExceptionDetails,
+    message: String,
+    name: typings.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.InvalidGrantTokenException,
+    stack: String = null
+  ): InvalidGrantTokenException = {
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
+    __obj.asInstanceOf[InvalidGrantTokenException]
+  }
 }
 

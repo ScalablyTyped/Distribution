@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "expo"
-version := "36.0.2-d69f9a"
+version := "36.0.2-d46588"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "expo-asset" % "8.0.0-4a477f",
   "org.scalablytyped" %%% "expo-constants" % "8.0.0-5b92b6",
   "org.scalablytyped" %%% "expo-font" % "8.0.0-9411b9",
-  "org.scalablytyped" %%% "expo-linear-gradient" % "8.0.0-532620",
+  "org.scalablytyped" %%% "expo-linear-gradient" % "8.0.0-2a10ad",
   "org.scalablytyped" %%% "expo-sqlite" % "8.0.0-81b03c",
   "org.scalablytyped" %%% "expo__vector-icons" % "9.0-dt-20190213Z-c71613",
   "org.scalablytyped" %%% "fbemitter" % "2.0.0-dt-20200226Z-fc854d",

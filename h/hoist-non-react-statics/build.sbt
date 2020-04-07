@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "hoist-non-react-statics"
-version := "3.3-dt-20190402Z-dae0fa"
+version := "3.3-dt-20190402Z-9ea254"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

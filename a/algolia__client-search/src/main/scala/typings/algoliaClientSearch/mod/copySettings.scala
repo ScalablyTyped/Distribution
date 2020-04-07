@@ -1,6 +1,6 @@
 package typings.algoliaClientSearch.mod
 
-import typings.algoliaClientSearch.ReadonlyWaitablePromiseInFinally
+import typings.algoliaClientSearch.ReadonlyWaitablePromiseIn
 import typings.algoliaTransporter.mod.RequestOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,7 +13,7 @@ object copySettings extends js.Object {
     /* from */ String, 
     /* to */ String, 
     /* requestOptions */ js.UndefOr[RequestOptions], 
-    ReadonlyWaitablePromiseInFinally
+    ReadonlyWaitablePromiseIn
   ] = js.native
 }
 

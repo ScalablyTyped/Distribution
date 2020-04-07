@@ -7,8 +7,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ClassName_
-  extends Base[String, js.UndefOr[Container[String]]]
-     with Node {
+  extends Base[String, js.UndefOr[Container[String]]] {
   @JSName("type")
   var type_ClassName_ : `class`
 }

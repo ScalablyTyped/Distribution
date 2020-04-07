@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "text-buffer"
-version := "13.x-dt-20180214Z-ab5a4b"
+version := "13.x-dt-20180214Z-6cafb1"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

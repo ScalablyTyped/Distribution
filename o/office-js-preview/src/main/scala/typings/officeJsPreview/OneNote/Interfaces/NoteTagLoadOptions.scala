@@ -10,30 +10,46 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: OneNoteApi 1.1]
   */
-@js.native
 trait NoteTagLoadOptions extends js.Object {
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.native
+  var $all: js.UndefOr[Boolean] = js.undefined
   /**
     *
     * Gets the Id of the NoteTag object. Read-only.
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var id: js.UndefOr[Boolean] = js.native
+  var id: js.UndefOr[Boolean] = js.undefined
   /**
     *
     * Gets the status of the NoteTag object. Read-only.
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var status: js.UndefOr[Boolean] = js.native
+  var status: js.UndefOr[Boolean] = js.undefined
   /**
     *
     * Gets the type of the NoteTag object. Read-only.
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var `type`: js.UndefOr[Boolean] = js.native
+  var `type`: js.UndefOr[Boolean] = js.undefined
+}
+
+object NoteTagLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[Boolean] = js.undefined,
+    id: js.UndefOr[Boolean] = js.undefined,
+    status: js.UndefOr[Boolean] = js.undefined,
+    `type`: js.UndefOr[Boolean] = js.undefined
+  ): NoteTagLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NoteTagLoadOptions]
+  }
 }
 

@@ -8,10 +8,23 @@ import scala.scalajs.js.annotation._
 /**
   * Sticky state provider
   */
-@js.native
 trait IStickyStateProvider extends IServiceProvider {
-  def debugMode(): Boolean = js.native
-  def enableDebug(enabled: Boolean): Boolean = js.native
-  def registerStickyState(state: IStickyState): Unit = js.native
+  def debugMode(): Boolean
+  def enableDebug(enabled: Boolean): Boolean
+  def registerStickyState(state: IStickyState): Unit
+}
+
+object IStickyStateProvider {
+  @scala.inline
+  def apply(
+    $get: js.Any,
+    debugMode: () => Boolean,
+    enableDebug: Boolean => Boolean,
+    registerStickyState: IStickyState => Unit
+  ): IStickyStateProvider = {
+    val __obj = js.Dynamic.literal($get = $get.asInstanceOf[js.Any], debugMode = js.Any.fromFunction0(debugMode), enableDebug = js.Any.fromFunction1(enableDebug), registerStickyState = js.Any.fromFunction1(registerStickyState))
+  
+    __obj.asInstanceOf[IStickyStateProvider]
+  }
 }
 

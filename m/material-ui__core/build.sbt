@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "material-ui__core"
-version := "3.9.3-95c87e"
+version := "3.9.3-e27aeb"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

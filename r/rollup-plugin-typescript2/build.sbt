@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "rollup-plugin-typescript2"
-version := "0.25.3-708a7e"
+version := "0.25.3-dc8a63"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "node" % "13.9-dt-20200318Z-96a265",
   "org.scalablytyped" %%% "rollup" % "1.32.1-1c2469",
   "org.scalablytyped" %%% "std" % "3.8-a0108c",
-  "org.scalablytyped" %%% "typescript" % "3.8.3-4c59b2")
+  "org.scalablytyped" %%% "typescript" % "3.8.3-07d300")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

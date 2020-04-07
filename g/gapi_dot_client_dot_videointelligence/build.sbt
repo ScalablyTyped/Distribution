@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gapi_dot_client_dot_videointelligence"
-version := "1.0-dt-20200225Z-6543fd"
+version := "1.0-dt-20200225Z-82163c"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

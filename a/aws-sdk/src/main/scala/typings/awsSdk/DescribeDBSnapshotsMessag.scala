@@ -52,3 +52,32 @@ trait DescribeDBSnapshotsMessag extends js.Object {
   var SnapshotType: js.UndefOr[String] = js.native
 }
 
+object DescribeDBSnapshotsMessag {
+  @scala.inline
+  def apply(
+    $waiter: WaiterConfiguration = null,
+    DBInstanceIdentifier: String = null,
+    DBSnapshotIdentifier: String = null,
+    DbiResourceId: String = null,
+    Filters: FilterList = null,
+    IncludePublic: js.UndefOr[scala.Boolean] = js.undefined,
+    IncludeShared: js.UndefOr[scala.Boolean] = js.undefined,
+    Marker: String = null,
+    MaxRecords: Int | Double = null,
+    SnapshotType: String = null
+  ): DescribeDBSnapshotsMessag = {
+    val __obj = js.Dynamic.literal()
+    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
+    if (DBInstanceIdentifier != null) __obj.updateDynamic("DBInstanceIdentifier")(DBInstanceIdentifier.asInstanceOf[js.Any])
+    if (DBSnapshotIdentifier != null) __obj.updateDynamic("DBSnapshotIdentifier")(DBSnapshotIdentifier.asInstanceOf[js.Any])
+    if (DbiResourceId != null) __obj.updateDynamic("DbiResourceId")(DbiResourceId.asInstanceOf[js.Any])
+    if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
+    if (!js.isUndefined(IncludePublic)) __obj.updateDynamic("IncludePublic")(IncludePublic.asInstanceOf[js.Any])
+    if (!js.isUndefined(IncludeShared)) __obj.updateDynamic("IncludeShared")(IncludeShared.asInstanceOf[js.Any])
+    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
+    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
+    if (SnapshotType != null) __obj.updateDynamic("SnapshotType")(SnapshotType.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DescribeDBSnapshotsMessag]
+  }
+}
+

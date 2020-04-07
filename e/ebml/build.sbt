@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ebml"
-version := "3.0-dt-20190926Z-91d906"
+version := "3.0-dt-20190926Z-cde8b7"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -35,3 +35,24 @@ trait DescribeCacheClustersMess extends js.Object {
   var ShowCacheNodeInfo: js.UndefOr[BooleanOptional] = js.native
 }
 
+object DescribeCacheClustersMess {
+  @scala.inline
+  def apply(
+    $waiter: WaiterConfiguration = null,
+    CacheClusterId: String = null,
+    Marker: String = null,
+    MaxRecords: Int | Double = null,
+    ShowCacheClustersNotInReplicationGroups: js.UndefOr[Boolean] = js.undefined,
+    ShowCacheNodeInfo: js.UndefOr[Boolean] = js.undefined
+  ): DescribeCacheClustersMess = {
+    val __obj = js.Dynamic.literal()
+    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
+    if (CacheClusterId != null) __obj.updateDynamic("CacheClusterId")(CacheClusterId.asInstanceOf[js.Any])
+    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
+    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
+    if (!js.isUndefined(ShowCacheClustersNotInReplicationGroups)) __obj.updateDynamic("ShowCacheClustersNotInReplicationGroups")(ShowCacheClustersNotInReplicationGroups.asInstanceOf[js.Any])
+    if (!js.isUndefined(ShowCacheNodeInfo)) __obj.updateDynamic("ShowCacheNodeInfo")(ShowCacheNodeInfo.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DescribeCacheClustersMess]
+  }
+}
+

@@ -19,7 +19,7 @@ trait SankeyLink extends js.Object {
     * Once the Sankey generator is invoked to return the Sankey graph object,
     * the numeric index will be replaced with the corresponding source node object.
     */
-  var source: Double | String | SankeyNode
+  var source: Double | String | (typings.d3Sankey.mod.SankeyNode[js.Object, js.Object])
   /**
     * Link's target node. For convenience, when initializing a Sankey layout using the default node id accessor,
     * target may be the zero-based index of the corresponding node in the nodes array
@@ -29,7 +29,7 @@ trait SankeyLink extends js.Object {
     * Once the Sankey generator is invoked to return the Sankey graph object,
     * the numeric index will be replaced with the corresponding target node object.
     */
-  var target: Double | String | SankeyNode
+  var target: Double | String | (typings.d3Sankey.mod.SankeyNode[js.Object, js.Object])
   /**
     * Link's numeric value
     */
@@ -51,8 +51,8 @@ trait SankeyLink extends js.Object {
 object SankeyLink {
   @scala.inline
   def apply(
-    source: Double | String | SankeyNode,
-    target: Double | String | SankeyNode,
+    source: Double | String | (typings.d3Sankey.mod.SankeyNode[js.Object, js.Object]),
+    target: Double | String | (typings.d3Sankey.mod.SankeyNode[js.Object, js.Object]),
     value: Double,
     index: Int | Double = null,
     width: Int | Double = null,

@@ -36,11 +36,11 @@ import typings.awsSdkClientKmsBrowser.untagResourceExceptionsUnionMod.UntagResou
 import typings.awsSdkClientKmsBrowser.updateAliasExceptionsUnionMod.UpdateAliasExceptionsUnion
 import typings.awsSdkClientKmsBrowser.updateKeyDescriptionExceptionsUnionMod.UpdateKeyDescriptionExceptionsUnion
 import typings.awsSdkTypes.exceptionMod.ServiceException
+import typings.awsSdkTypes.responseMod.ResponseMetadata
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait KMSInternalException
   extends ServiceException[KMSInternalExceptionDetails]
      with CancelKeyDeletionExceptionsUnion
@@ -79,6 +79,21 @@ trait KMSInternalException
      with UpdateAliasExceptionsUnion
      with UpdateKeyDescriptionExceptionsUnion {
   @JSName("name")
-  var name_KMSInternalException: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.KMSInternalException = js.native
+  var name_KMSInternalException: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.KMSInternalException
+}
+
+object KMSInternalException {
+  @scala.inline
+  def apply(
+    $metadata: ResponseMetadata,
+    details: KMSInternalExceptionDetails,
+    message: String,
+    name: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.KMSInternalException,
+    stack: String = null
+  ): KMSInternalException = {
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
+    __obj.asInstanceOf[KMSInternalException]
+  }
 }
 

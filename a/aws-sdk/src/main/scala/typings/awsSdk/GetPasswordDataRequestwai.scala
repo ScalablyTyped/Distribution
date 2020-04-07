@@ -1,6 +1,7 @@
 package typings.awsSdk
 
 import typings.awsSdk.ec2Mod.Boolean
+import typings.awsSdk.ec2Mod.InstanceId
 import typings.awsSdk.serviceMod.WaiterConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -19,5 +20,19 @@ trait GetPasswordDataRequestwai extends js.Object {
     * The ID of the Windows instance.
     */
   var InstanceId: typings.awsSdk.ec2Mod.InstanceId = js.native
+}
+
+object GetPasswordDataRequestwai {
+  @scala.inline
+  def apply(
+    InstanceId: InstanceId,
+    $waiter: WaiterConfiguration = null,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined
+  ): GetPasswordDataRequestwai = {
+    val __obj = js.Dynamic.literal(InstanceId = InstanceId.asInstanceOf[js.Any])
+    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GetPasswordDataRequestwai]
+  }
 }
 

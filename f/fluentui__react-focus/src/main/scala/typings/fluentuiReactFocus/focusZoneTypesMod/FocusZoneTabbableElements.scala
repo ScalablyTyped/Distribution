@@ -7,6 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/* Inlined {  none  :0,   all  :1,   inputOnly  :2}[keyof {  none  :0,   all  :1,   inputOnly  :2}] */
 /* Rewritten from type alias, can be one of: 
   - typings.fluentuiReactFocus.fluentuiReactFocusNumbers.`0`
   - typings.fluentuiReactFocus.fluentuiReactFocusNumbers.`1`

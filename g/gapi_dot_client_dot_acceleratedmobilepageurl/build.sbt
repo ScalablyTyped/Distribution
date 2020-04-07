@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gapi_dot_client_dot_acceleratedmobilepageurl"
-version := "1.0-dt-20200225Z-384159"
+version := "1.0-dt-20200225Z-280cb9"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

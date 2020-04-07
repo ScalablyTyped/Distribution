@@ -30,11 +30,11 @@ import typings.awsSdkClientDynamodbNode.updateItemExceptionsUnionMod.UpdateItemE
 import typings.awsSdkClientDynamodbNode.updateTableExceptionsUnionMod.UpdateTableExceptionsUnion
 import typings.awsSdkClientDynamodbNode.updateTimeToLiveExceptionsUnionMod.UpdateTimeToLiveExceptionsUnion
 import typings.awsSdkTypes.exceptionMod.ServiceException
+import typings.awsSdkTypes.responseMod.ResponseMetadata
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait InternalServerError
   extends ServiceException[InternalServerErrorDetails]
      with BatchGetItemExceptionsUnion
@@ -67,6 +67,21 @@ trait InternalServerError
      with UpdateTableExceptionsUnion
      with UpdateTimeToLiveExceptionsUnion {
   @JSName("name")
-  var name_InternalServerError: typings.awsSdkClientDynamodbNode.awsSdkClientDynamodbNodeStrings.InternalServerError = js.native
+  var name_InternalServerError: typings.awsSdkClientDynamodbNode.awsSdkClientDynamodbNodeStrings.InternalServerError
+}
+
+object InternalServerError {
+  @scala.inline
+  def apply(
+    $metadata: ResponseMetadata,
+    details: InternalServerErrorDetails,
+    message: String,
+    name: typings.awsSdkClientDynamodbNode.awsSdkClientDynamodbNodeStrings.InternalServerError,
+    stack: String = null
+  ): InternalServerError = {
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
+    __obj.asInstanceOf[InternalServerError]
+  }
 }
 

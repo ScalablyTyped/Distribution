@@ -1,6 +1,7 @@
 package typings.awsSdk
 
 import typings.awsSdk.lambdaMod.NamespacedFunctionName
+import typings.awsSdk.lambdaMod.Qualifier
 import typings.awsSdk.serviceMod.WaiterConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -19,5 +20,19 @@ trait GetFunctionConfigurationR extends js.Object {
     * Specify a version or alias to get details about a published version of the function.
     */
   var Qualifier: js.UndefOr[typings.awsSdk.lambdaMod.Qualifier] = js.native
+}
+
+object GetFunctionConfigurationR {
+  @scala.inline
+  def apply(
+    FunctionName: NamespacedFunctionName,
+    $waiter: WaiterConfiguration = null,
+    Qualifier: Qualifier = null
+  ): GetFunctionConfigurationR = {
+    val __obj = js.Dynamic.literal(FunctionName = FunctionName.asInstanceOf[js.Any])
+    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
+    if (Qualifier != null) __obj.updateDynamic("Qualifier")(Qualifier.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GetFunctionConfigurationR]
+  }
 }
 

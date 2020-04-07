@@ -42,3 +42,25 @@ trait GetLifecyclePolicyPreview extends js.Object {
   var repositoryName: RepositoryName = js.native
 }
 
+object GetLifecyclePolicyPreview {
+  @scala.inline
+  def apply(
+    repositoryName: RepositoryName,
+    $waiter: WaiterConfiguration = null,
+    filter: LifecyclePolicyPreviewFilter = null,
+    imageIds: ImageIdentifierList = null,
+    maxResults: Int | Double = null,
+    nextToken: NextToken = null,
+    registryId: RegistryId = null
+  ): GetLifecyclePolicyPreview = {
+    val __obj = js.Dynamic.literal(repositoryName = repositoryName.asInstanceOf[js.Any])
+    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
+    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
+    if (imageIds != null) __obj.updateDynamic("imageIds")(imageIds.asInstanceOf[js.Any])
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
+    if (registryId != null) __obj.updateDynamic("registryId")(registryId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GetLifecyclePolicyPreview]
+  }
+}
+

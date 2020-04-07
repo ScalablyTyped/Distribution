@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "angular-file-upload"
-version := "2.5-dt-20180214Z-97a9e9"
+version := "2.5-dt-20180214Z-ca409c"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "angular" % "1.6-dt-20200225Z-ea4136",
+  "org.scalablytyped" %%% "angular" % "1.6-dt-20200225Z-7ee1ed",
   "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")

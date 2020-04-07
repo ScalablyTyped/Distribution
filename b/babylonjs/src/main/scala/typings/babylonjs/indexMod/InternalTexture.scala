@@ -1,0 +1,43 @@
+package typings.babylonjs.indexMod
+
+import typings.babylonjs.typesMod.Nullable
+import typings.std.ArrayBufferView
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("babylonjs/index", "InternalTexture")
+@js.native
+class InternalTexture protected ()
+  extends typings.babylonjs.materialsIndexMod.InternalTexture {
+  /**
+    * Creates a new InternalTexture
+    * @param engine defines the engine to use
+    * @param source defines the type of data that will be used
+    * @param delayAllocation if the texture allocation should be delayed (default: false)
+    */
+  def this(
+    engine: typings.babylonjs.thinEngineMod.ThinEngine,
+    source: typings.babylonjs.internalTextureMod.InternalTextureSource
+  ) = this()
+  def this(
+    engine: typings.babylonjs.thinEngineMod.ThinEngine,
+    source: typings.babylonjs.internalTextureMod.InternalTextureSource,
+    delayAllocation: Boolean
+  ) = this()
+}
+
+/* static members */
+@JSImport("babylonjs/index", "InternalTexture")
+@js.native
+object InternalTexture extends js.Object {
+  /** @hidden */
+  def _UpdateRGBDAsync(
+    internalTexture: typings.babylonjs.internalTextureMod.InternalTexture,
+    data: js.Array[js.Array[ArrayBufferView]],
+    sphericalPolynomial: Nullable[typings.babylonjs.sphericalPolynomialMod.SphericalPolynomial],
+    lodScale: Double,
+    lodOffset: Double
+  ): js.Promise[Unit] = js.native
+}
+

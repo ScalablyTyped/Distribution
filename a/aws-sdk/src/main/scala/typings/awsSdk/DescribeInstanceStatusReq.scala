@@ -41,3 +41,26 @@ trait DescribeInstanceStatusReq extends js.Object {
   var NextToken: js.UndefOr[String] = js.native
 }
 
+object DescribeInstanceStatusReq {
+  @scala.inline
+  def apply(
+    $waiter: WaiterConfiguration = null,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    Filters: FilterList = null,
+    IncludeAllInstances: js.UndefOr[scala.Boolean] = js.undefined,
+    InstanceIds: InstanceIdStringList = null,
+    MaxResults: Int | Double = null,
+    NextToken: String = null
+  ): DescribeInstanceStatusReq = {
+    val __obj = js.Dynamic.literal()
+    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
+    if (!js.isUndefined(IncludeAllInstances)) __obj.updateDynamic("IncludeAllInstances")(IncludeAllInstances.asInstanceOf[js.Any])
+    if (InstanceIds != null) __obj.updateDynamic("InstanceIds")(InstanceIds.asInstanceOf[js.Any])
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DescribeInstanceStatusReq]
+  }
+}
+

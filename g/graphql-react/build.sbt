@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "graphql-react"
-version := "8.1-dt-20191126Z-b3782b"
+version := "8.1-dt-20191126Z-f647d0"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
